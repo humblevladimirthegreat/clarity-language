@@ -288,7 +288,7 @@ OpaqueIsland
 
 // ── Free number words (writing + speech) ────────────────────────────────────
 
-// Plural **-x** parses on any number; enforce keeps it to ordinal pronouns (pronouns.md § Ordinal pronouns).
+// Plural **-x** parses on any number; enforce keeps it to plural labels (numbers.md § Labels).
 freeNumber
   = pos:Pos mark:WritingEndingMark? stem:WritingNumberStem ending:Ending? plural:PluralSuffix? {
       return makeWord(text(), {
@@ -522,10 +522,25 @@ prefixedWord
     }
 
 PrefixedBody
-  = xWord
+  = tagWord
+  / xWord
   / plainContent
   / hookCompound
   / joinMarker
+
+// ── Tag pronouns (pronouns.md#tag-pronouns) ─────────────────────────────────
+
+// Role letter + `w` + tag vowel + ending (`zwal` assign, `zwar` recall, `zwam` share). Roots start with a
+// vowel, so a `w` right after the role letter is always this marker. A stacked vowel is two tags at once
+// (`zwaer` *A and E*). enforce.ts keeps the slots and endings.
+tagWord
+  = "w" vowels:("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) ending:Ending plural:PluralSuffix? WordEnd {
+      return {
+        ending,
+        plural: !!plural,
+        family: { kind: "tag", vowels: vowels.split("") },
+      };
+    }
 
 // ── Mid-word x families (decision order steps 2–6) ──────────────────────────
 

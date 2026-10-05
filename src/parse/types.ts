@@ -109,7 +109,15 @@ export type MorphWordFamily =
       payload: string;
       marks: ("^@" | "@" | "~")[];
     }
-  | { kind: "foreign"; payload: string };
+  | { kind: "foreign"; payload: string }
+  /**
+   * Tag pronoun: role letter + `w` + tag vowel (A, E, O, U) + ending (`zwal`, `zwar`, `zwam`; pronouns.md#tag-pronouns).
+   * A stacked vowel is two tags at once (`zwaer` *A and E*), in written order.
+   */
+  | { kind: "tag"; vowels: TagVowel[] };
+
+/** Tag pronoun vowel, named by its letter name: A, E, O, U (pronouns.md#tag-pronouns). */
+export type TagVowel = "a" | "e" | "o" | "u";
 
 /**
  * Stage-1 morphological word (characters → structure).
@@ -252,6 +260,8 @@ export type NpPackage = {
   adjs: GPackage[];
   /** Present when the adjectives form a joined list (`garedel gumuzem gul gelem gal`): order and fences. */
   adjCoord?: GCoord;
+  /** Tag pronoun **-l** right after the phrase in the same role: names it (`zodogal zwal`, pronouns.md#tag-pronouns). */
+  tag?: LexWord;
 };
 
 export type GItem = { kind: "adj"; adj: GPackage } | { kind: "island"; island: IslandUnit };
@@ -286,7 +296,8 @@ export type NpCoord = {
   level: "z" | "d" | "b";
   /** `joinModifiers`: `/w/` words right before the join word (respectively `wazem`). */
   /** `factor`: digit `/h/` number after an equative's shared scale (*twice as … as*). */
-  parts: { items: NpItem[]; join?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord }[];
+  /** `tag`: a tag **-l** right after the fence closed by this part's join names the whole group (pronouns.md#tag-pronouns). */
+  parts: { items: NpItem[]; join?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord; tag?: LexWord }[];
 };
 
 export type VpCoord = {
@@ -390,7 +401,7 @@ export type ParseResult = {
 
 // ── Stage 4 resolve ─────────────────────────────────────────────────────────
 
-export type AnaphorKind = "content" | "number" | "role" | "pointer" | "ordinal" | "topic";
+export type AnaphorKind = "content" | "number" | "role" | "pointer" | "tag" | "topic";
 
 export type AnaphorBind = {
   pronoun: LexWord;
@@ -403,6 +414,8 @@ export type AnaphorBind = {
   ownSlot?: true;
   /** Absent when no prior match. */
   antecedent?: LexWord;
+  /** A tag pair (`zwaer`): each tag's antecedent, in written order; `antecedent` is the first. */
+  antecedents?: LexWord[];
 };
 
 export type AskKind = "yesNo" | "fillAsk" | "rhetorical" | "none";

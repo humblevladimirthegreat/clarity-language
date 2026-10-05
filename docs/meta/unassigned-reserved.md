@@ -72,10 +72,6 @@ A label is a code, not an amount, so it has no magnitude for an exponent to scal
 - **open:** **`th-N`**, **`th#-N`**, and digitless non-blank **`th#`**. A minus on a likelihood (`th-30`: *30% unlikely*, or *30 points less likely*?) and an end-relative count of tellers have no guessable reading; digitless **`th#`** would say only *passed on to me*, with no depth, and no job has asked for that.
 - **open:** marker stacks **`rao`** (`+_`) and **`rae`** (`+#`). No reading composes: labels carry no sign, and a count and a rank are separate markers on separate words.
 
-### Ordinal pronoun `#0`
-
-- **open:** **`z=#0`** / **`d=#0`** / **`b=#0`** (`zrezor`, …). Introduction starts at 1, so place 0 names no one; the parser rejects it. The people the count leaves out already have words (the topic `zozan`, the speaker and the listener), and a shifting *speaker* is **closed (D-13)**.
-
 ## Numbers — numeric derivation
 
 Source: [numeric-derivation.md](../grammar/numeric-derivation.md). All **open**.
@@ -156,11 +152,22 @@ Source: [pronouns.md](../grammar/pronouns.md#role-pointers)
 - **open:** a share (**-m**) with pointer vowel `e` or with **-x** (`zaxem`, `zaxamx`). A share is a part of an event, so it names no group and cannot be the very event it describes. Parser: `pointerShareSelf`, `pointerSharePlural`.
 - **open:** a share or new-one pointer in a holder seam or as a lateral's facing anchor. A holder and a facing anchor are someone; a share is part of an event, and a new one has nobody in particular to name.
 
+## Tag pronouns
+
+Source: [pronouns.md](../grammar/pronouns.md#tag-pronouns)
+
+- **closed (D-24):** a tag on `/y/` / `/x/` (`ywar`, `xwar`).
+- **open:** a tag on `/v/` / `/ɡ/` / `/h/` / `/w/` / `/th/`, or with `gl-` (`vwar`). A tag names a participant, and these slots take none. Parser: `tagSlot`.
+- **open:** tag + **-n**, and the stand-in endings on a tag (`zwan`, `zwarl`). No job yet. Parser: `tagEnding`.
+- **open:** **-x** on a tag **-l** or **-m** (`zwalx`, `zwamx`). A share is a part, not a group; a group is tagged through its plural phrase (`zodogalx zwal`). Parser: `tagPlural`.
+- **open:** a tag on a word that is already a fixed pronoun: a special pronoun, the generic or topic pronoun, or another tag (`zamagon zwal`, `zozan zwal`, `zwar zwel`). It already has one short form, and a second label for the same pronoun would only rename it. Parser: `tagPronoun`.
+- **open:** a tag pair with **-l** (`zwael`). After a two-item list it could tag the items in order or the group as one, so neither reading is guessable; each tag is assigned on its own. Parser: `tagPairAssign`.
+- **open:** **-x** on a tag pair **-m** (`zwaemx`), as on any share.
+
 ## Pronouns and plurality
 
 Source: [pronouns.md](../grammar/pronouns.md), [plurality.md](../grammar/plurality.md)
 
-- **closed (D-24):** an ordinal pronoun on `/y/` (`yredur`).
 - **open:** **-x** on `/h/` / `/w/` and the six linkers. An adverb, a degree word, or a linker names no group.
 - **closed (D-37):** **-x** on a `/th/` stance word.
 - **open:** **-x** on an interjection (`/y/` **-l** / **-m**). An interjection addresses no one.

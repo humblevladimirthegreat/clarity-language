@@ -47,7 +47,7 @@ import {
 import { scanChunks, toneMarkLength } from "./span-scan.js";
 import { parseWithTables } from "./parse-core.js";
 import { stripFlagSuffix } from "../flag-label.js";
-import { isDigitlessNumberBlank, ordinalPronounPlace } from "./resolve.js";
+import { isDigitlessNumberBlank } from "./resolve.js";
 import { parseWords, WordParseError } from "./word.js";
 import type {
   AnaphorBind,
@@ -976,6 +976,12 @@ function sensePieces(
   ctx: MorphGlossContext,
 ): string[] {
   const family = word.family;
+  // A tag glosses its letter name, never the referent: `tag.A` assigns, `←tag.A` recalls, `←tag.A.part` shares;
+  // a pair is `←tag.A+E` (glosses.md § Anaphors).
+  if (family.kind === "tag") {
+    const name = `tag.${family.vowels.map((vowel) => vowel.toUpperCase()).join("+")}`;
+    return [word.ending === "l" ? name : `←${name}${word.ending === "m" ? ".part" : ""}`];
+  }
   const resume =
     (word.ending === "r" || (family.kind === "x" && family.xFamily === "pointer")) &&
     // A holder or lateral keeps its host or direction; its anchor glosses inside xPieces.
@@ -984,10 +990,6 @@ function sensePieces(
     word.reading !== "ability" &&
     family.kind !== "joinMarker";
   if (resume) {
-    // An ordinal pronoun glosses its place, not the person (glosses.md § Anaphors).
-    if (family.kind === "number" && ordinalPronounPlace(word) !== undefined) {
-      return [`←${numberLabel(family.stem, word.pos)}${numberSurfaceSuffix(word.raw, family.stem, ctx)}`];
-    }
     // A role pointer glosses its role and which event, never the referent (glosses.md § Anaphors).
     if (family.kind === "x" && family.xFamily === "pointer") {
       return [`←${ROLE_VOWEL[family.roleVowel ?? ""] ?? "role"}.${POINTER_VOWEL[family.pointerVowel ?? ""] ?? "pointer"}${POINTER_ENDING[word.ending ?? ""] ?? ""}`];

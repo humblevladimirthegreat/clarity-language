@@ -13,7 +13,7 @@ import { ARROW_ROOTS, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChanne
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { isTopicCompound, isTopicSpan, linkerEnglish } from "./linkers.js";
 import { CLOSED } from "../closed-roots.js";
-import { isGenericPronoun, ordinalPronounPlace, ROLE_PRONOUN_ROOTS } from "./resolve.js";
+import { isGenericPronoun, isTopicPronoun, ROLE_PRONOUN_ROOTS } from "./resolve.js";
 import { parseHookCompoundCite } from "./hook-compounds.js";
 import type { HookJob } from "./hook-jobs.js";
 import { SentenceParseError } from "./sentence-parser.js";
@@ -29,7 +29,7 @@ import {
   Tone,
   type TokenPayload,
 } from "./tokens.js";
-import { isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, visitUnit, type Visitor } from "./ast-walk.js";
+import { isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, visitUnit, type AstNode, type Visitor } from "./ast-walk.js";
 import { forcePairKind, KIND_SERIES, RANK_SERIES } from "./series.js";
 import type {
   AnaphorBind,
@@ -289,13 +289,11 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (nounish && stemRoot === CLOSED.star && (word.ending === "r" || (word.ending === "n" && word.pos === "x"))) {
     throw new ConstructionError("topicOfTopic", word.raw);
   }
-  if (word.pos === "y" && word.family.kind === "number" && word.ending === "r" && word.family.stem.marker === "#") {
-    throw new ConstructionError("ordinalSlot", word.raw);
-  }
+  if (word.family.kind === "tag") enforceTag(word);
   if (word.pos === "th" && word.family.kind === "number") enforceStanceNumber(word, word.family.stem);
   if (word.pos === "w" && word.family.kind === "number") enforceDegreeNumber(word, word.family.stem);
   if (word.plural && isGenericPronoun(word)) throw new ConstructionError("genericPlural", word.raw);
-  if (word.plural && word.family.kind === "number" && ordinalPronounPlace(word) === undefined && !isPluralLabel(word)) {
+  if (word.plural && word.family.kind === "number" && !isPluralLabel(word)) {
     throw new ConstructionError("numberPlural", word.raw);
   }
   if (word.plural && word.pos === "y" && classifyTokenBranch(word).branch === "yInterjection") {
@@ -706,6 +704,31 @@ function enforceVerbPredicate(units: Unit[]): void {
   });
 }
 
+/**
+ * Tag pronouns (pronouns.md#tag-pronouns): `/z/` `/d/` `/b/` only (`/y/` `/x/` closed by D-24, the rest open),
+ * gl- never; **-l** / **-r** / **-m**; **-x** only on **-r** (*A and associates*); a pair (`zwaer`) recalls or shares only.
+ */
+function enforceTag(word: LexWord): void {
+  if (word.gl || !(word.pos === "z" || word.pos === "d" || word.pos === "b")) throw new ConstructionError("tagSlot", word.raw);
+  if (word.ending !== "l" && word.ending !== "r" && word.ending !== "m") throw new ConstructionError("tagEnding", word.raw);
+  if (word.ending === "l" && word.family.kind === "tag" && word.family.vowels.length > 1) throw new ConstructionError("tagPairAssign", word.raw);
+  if (word.plural && word.ending !== "r") throw new ConstructionError("tagPlural", word.raw);
+}
+
+/**
+ * A tag names a phrase that is not already a pronoun with one fixed form (pronouns.md#tag-pronouns): never a special,
+ * generic, or topic pronoun, or another tag. A resume or role pointer may take one.
+ */
+function enforceTagHost(node: AstNode): void {
+  if (node.kind !== "npPackage" || !node.pkg.tag) return;
+  const head = node.pkg.head;
+  const root = head.family.kind === "content" && head.family.roots.length === 1 ? head.family.roots[0]! : undefined;
+  const special = head.ending === "n" && root !== undefined && ROLE_PRONOUN_ROOTS.has(root);
+  if (special || isTopicPronoun(head) || isGenericPronoun(head) || head.family.kind === "tag") {
+    throw new ConstructionError("tagPronoun", `${head.raw} ${node.pkg.tag.raw}`);
+  }
+}
+
 /** A digit-string label with digits takes **-x** for the group English pluralizes: `z_90x` *the ’90s* (numbers-applied.md#plural-labels). */
 function isPluralLabel(word: LexWord): boolean {
   if (word.family.kind !== "number" || !(word.pos === "z" || word.pos === "d" || word.pos === "b")) return false;
@@ -726,13 +749,14 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
   }
   const places = { seen: new Set<LexWord>(), framed: new Set<LexWord>() };
   visitResult(result, structureVisitor(tables, places));
+  visitResult(result, { enter: enforceTagHost });
   for (const word of places.seen) if (!places.framed.has(word)) throw new ConstructionError("degreePlaceFrame", word.raw);
   for (const { bodies } of result.utterances) for (const body of bodies) enforceVerbPredicate(body.clause.units);
   for (const bind of result.resolve?.anaphors ?? []) {
     if (bind.kind === "pointer") enforcePointer(bind);
     if (bind.antecedent) continue;
     if (bind.kind === "number") throw new ConstructionError("numberResumeUnbound", bind.pronoun.raw);
-    if (bind.kind === "ordinal") throw new ConstructionError("ordinalUnbound", bind.pronoun.raw);
+    if (bind.kind === "tag" && bind.pronoun.ending !== "l") throw new ConstructionError("tagUnbound", bind.pronoun.raw);
     if (bind.kind === "topic") throw new ConstructionError("topicUnbound", bind.pronoun.raw);
     if (bind.kind === "content" && !isLexiconStemResume(bind.pronoun, tables)) {
       throw new ConstructionError("resumeUnbound", bind.pronoun.raw);

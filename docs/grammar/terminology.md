@@ -603,12 +603,6 @@ Ending **-ln** (span mark **`^@`**): one thing a name applies to, such as one un
 
 [Word endings](word-endings.md#name-instance--ln)
 
-### Ordinal pronoun
-
-A rank with **-r** on `/z/`, `/d/`, or `/b/` that names a person by the order names entered the conversation (`zredur`, the second person named).
-
-[Pronouns](pronouns.md#ordinal-pronouns)
-
 ### Ordinary compound / lexical compound
 
 FIELD × KIND with mid-word **`x`**; closed stem with join letter and no `x`.
@@ -804,6 +798,12 @@ Utterance setting: statement / question / command / prohibition.
 
 [Questions](questions.md#tags)
 
+### Tag pronoun
+
+Role letter + **`w`** + a tag vowel (A, E, O, U) + ending: a label the speaker assigns to a phrase (`zodogal zwal` *a dog, call it A*) and recalls in any role (`zwar`), or shares with **-m** (`zwam` *what A did*).
+
+[Pronouns](pronouns.md#tag-pronouns)
+
 ### Time horizon
 <a id="contact--contact-channel"></a>
 
@@ -829,7 +829,7 @@ What the talk is about from here on, set only by an `/x/` word: introduce (`xaza
 
 [Pronouns](pronouns.md#topic)
 
-**Compare with:** [as-for](#as-for) frames one sentence and sets no topic. A [topic stretch](#topic-stretch) restarts the ordinal count.
+**Compare with:** [as-for](#as-for) frames one sentence and sets no topic. A [topic stretch](#topic-stretch) restarts the role pointer anchors.
 
 ### Topic pronoun
 
@@ -839,7 +839,7 @@ What the talk is about from here on, set only by an `/x/` word: introduce (`xaza
 
 ### Topic stretch
 
-The talk between two topic changes. Each starts the [ordinal](#ordinal-pronoun) count and the [role pointer](#role-pointer) anchors over.
+The talk between two topic changes. Each starts the [role pointer](#role-pointer) anchors over; [tags](#tag-pronoun) carry across.
 
 [Pronouns](pronouns.md#topic-resets)
 

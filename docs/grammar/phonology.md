@@ -173,7 +173,7 @@ These choices about word shape make Agazan easier to sing:
 
 On high notes, **u** may open toward [ʊ] (as in *book*); that is still **u**.
 
-Legal clusters: left-hanging `gl-`; number-word role letter + `r`; lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`. The lexical join before `r` is the only syllable-final consonant inside a word.
+Legal clusters: left-hanging `gl-`; number-word role letter + `r`; [tag pronoun](pronouns.md#tag-pronouns) role letter + `w` (`zw`, `dw`, `bw`); lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`. The lexical join before `r` is the only syllable-final consonant inside a word.
 
 Try singing a short Agazan line quickly at a high but comfortable pitch:
 

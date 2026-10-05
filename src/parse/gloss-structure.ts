@@ -88,8 +88,8 @@ function shared(cur: Cursor, item: CoordShared): GlossNode | undefined {
 function npPackage(cur: Cursor, pack: NpPackage): GlossNode | undefined {
   const gl = pack.glAdj ? gPackage(cur, pack.glAdj) : undefined;
   const head = cur.take(pack.head);
-  if (pack.adjCoord) return group([gl, head, ...gCoordNodes(cur, pack.adjCoord)]);
-  return group([gl, head, ...pack.adjs.map((adj) => gPackage(cur, adj))]);
+  const adjs = pack.adjCoord ? gCoordNodes(cur, pack.adjCoord) : pack.adjs.map((adj) => gPackage(cur, adj));
+  return group([gl, head, ...adjs, cur.take(pack.tag)]);
 }
 
 function npItem(cur: Cursor, item: NpItem): GlossNode | undefined {
@@ -101,7 +101,7 @@ function npItem(cur: Cursor, item: NpItem): GlossNode | undefined {
 /** Right-close fences nest: each later part wraps the fence before it. Joinless items stay flat. */
 function fences<T>(
   cur: Cursor,
-  parts: { items: T[]; join?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord }[],
+  parts: { items: T[]; join?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord; tag?: LexWord }[],
   item: (x: T) => GlossNode | undefined,
   /** Kind reference (`zuan` + kind) is not a named package; only a noun list can hold one. */
   isKind: (part: (typeof parts)[number]) => boolean = () => false,
@@ -120,7 +120,9 @@ function fences<T>(
     if (named) join.named = true;
     const factor = cur.take(part.factor);
     const node = group([...acc, ...items, ...joinModifiers, join, ...sharedNodes, factor], named ? "NAME" : undefined);
-    acc = node ? [node] : [];
+    // A tag after the fence names the whole group: `[[z-dog | z-cat | z-and.open] | z-tag.A]`.
+    const tagged = part.tag ? group([node, cur.take(part.tag)]) : node;
+    acc = tagged ? [tagged] : [];
   }
   return acc;
 }

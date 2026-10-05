@@ -54,6 +54,8 @@ export type WordSlot =
   | "joinModifier"
   | "factor"
   | "orodo"
+  | "tag"
+  | "groupTag"
   | "unit";
 
 export type CoordNode =
@@ -252,6 +254,7 @@ function visitNpPackage(pkg: NpPackage, v: Visitor): void {
   v.word?.(pkg.head, "head");
   if (pkg.adjCoord) visitGCoord(pkg.adjCoord, v);
   else for (const adj of pkg.adjs) visitGPackage(adj, v);
+  if (pkg.tag) v.word?.(pkg.tag, "tag");
   v.exit?.(node);
 }
 
@@ -280,6 +283,7 @@ function visitNp(coord: NpCoord, v: Visitor): void {
     if (part.join) v.join?.(part.join, { kind: "np", coord, index });
     visitShared(part.join, part.shared, v);
     if (part.factor) v.word?.(part.factor, "factor");
+    if (part.tag) v.word?.(part.tag, "groupTag");
   });
   v.exit?.(node);
 }

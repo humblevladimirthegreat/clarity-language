@@ -310,8 +310,6 @@ Beginner already used exact **-l**. The other endings mark *about*, a convention
 
 A resume needs **at least one digit**: `grarer` = *that three again*; `gredur` = *that second one again*. Use the same marker as the number you repeat. Digitless **-r** (`grar`) is not a resume: like a standalone join **-r**, it is *some number* in a statement and *which number?* in a question ([digitless](#digitless)). **`=`** is never combined with **`~`** or **`@`**.
 
-On `/z/`, `/d/`, and `/b/`, a rank with plain digits and **-r** names a person instead: `zredur` (`z=#2`) is the second person named in the conversation, as subject ([ordinal pronouns](pronouns.md#ordinal-pronouns)).
-
 ### Digitless {#digitless}
 <a id="digitless-numbers"></a>
 <a id="bare-marker"></a>
@@ -1300,14 +1298,6 @@ To count **from the last place** (*penultimate*, *starting with the last one*), 
 | **`g#-`** | unspecified end-relative rank ([zero groups](#digitless)) |
 
 `gredul` = numbered *2nd* (from the start); `gruedul` = *2nd from the end*; `grebal` = last as landmark; `grebul` = start landmark (no mantissa).
-
-On an [ordinal pronoun](pronouns.md#ordinal-pronouns), counting from the end starts at the newest name: `zruewor` (`z=#-1`) is the person introduced most recently, and `druedur` (`d=#-2`) the one before.
-
-> `zazawan vowogal. zahaben vehahel. zruewor vezebal.`
->
-> z-Azawan | v-walk . z-Ahaben | v-sit . z-←1st-from-end | v-sleep
->
-> "Azawan walks. Ahaben sits. Ahaben sleeps."
 
 On `/v/`, `/h/`, `/y/`, and `/x/`:
 

@@ -169,10 +169,12 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("gredul", "g-2nd");
   });
 
-  it("glosses an ordinal pronoun by its place (glosses.md § Anaphors)", () => {
-    expectLine("zazawan dalahen vahahal. zredur drewor vezebel.", "z-Azawan | d-Alahen | v-see . z-←2nd | d-←1st | v-tell");
-    expectLine("zazawan vowogal. zruewor vezebal.", "z-Azawan | v-walk . z-←1st-from-end | v-sleep");
-    expectLine("zazawan vowogal. zreworx vezebal.", "z-Azawan | v-walk . z-←1st-x | v-sleep");
+  it("glosses a tag pronoun by its letter name, never the referent (glosses.md § Anaphors)", () => {
+    expectLine("zodogal zwal dagadul dwel vahahal. zwer vowogal.", "[z-dog | z-tag.A] | [d-cat | d-tag.E] | v-see . z-←tag.E | v-walk");
+    expectLine("zazawan zwal vowogal. zalahen dwam vahahal.", "[z-Azawan | z-tag.A] | v-walk . z-Alahen | d-←tag.A.part | v-see");
+    expectLine("zazawan zwal vowogal. zwarx vezebal.", "[z-Azawan | z-tag.A] | v-walk . z-←tag.A-x | v-sleep");
+    expectLine("zodogal zagadul zam zwal vowogal.", "[[z-dog | z-cat | z-and.open] | z-tag.A] | v-walk");
+    expectLine("zwal bwel vezebel. zwaer vowogal.", "z-tag.A | b-tag.E | v-tell . z-←tag.A+E | v-walk");
   });
 
   it("scientific and percent number writing", () => {
@@ -622,8 +624,8 @@ describe("morphGlossLine — word position, not spelling", () => {
 describe("morphGlossLine — topic and generic pronouns", () => {
   it("glosses the topic pronoun and its topic word", () => {
     expectLine(
-      "xazawan zozan dalahen vahahal. zrewor dozan vezebel.",
-      "x-Azawan | z-TOPIC | d-Alahen | v-see . z-←1st | d-TOPIC | v-tell",
+      "xazawan zozan dalahen vahahal. zalaher dozan vezebel.",
+      "x-Azawan | z-TOPIC | d-Alahen | v-see . z-←Alahen | d-TOPIC | v-tell",
     );
     expectLine("xazawanx zozanx vehahel.", "x-Azawan-x | z-TOPIC-x | v-sit");
     expectLine("xazawar zozan vehahel.", "x-←Azawan | z-TOPIC | v-sit");

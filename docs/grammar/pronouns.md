@@ -189,7 +189,7 @@ When a proper name is available, prefer that name (and its **-r** resume), inclu
 >
 > "I walk." You name yourself rather than saying *I*.
 
-Use **`amago`** (*speaker*) and **`ehodo`** (*listener*) when what matters is the conversation role, not a name. **`ehodo`** is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun, [below](#generic-pronoun). Both are five letters long on purpose, so that naming yourself and the other person stays the easier habit.
+Use **`amago`** (*speaker*) and **`ehodo`** (*listener*) when what matters is the conversation role, not a name. **`ehodo`** is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun, [below](#generic-pronoun).
 
 > `zamagon dehodon vahahal.`
 >
@@ -585,47 +585,76 @@ English *you* does not say whether you are talking to one person or several. Aga
 
 **Compare with:** *you and I* is **`aha`**. *Azawan and associates* is name…**-x** ([plurality](plurality.md#associative)).
 
-### Ordinal pronouns {#ordinal-pronouns}
+### Tag pronouns {#tag-pronouns}
 
-Every person named in the conversation gets a number, in the order they first appear: the first name is 1, the next new name is 2, and so on. To point back at someone by that number, write their [rank](numbers.md#ordinals) with **-r** under `/z/`, `/d/`, or `/b/`. `zrewor` is the first person named, as subject. `dredur` is the second, as object. The number belongs to the person, so they keep the same pronoun in every role; only the role letter changes. (cue: **e** ≈ order: the order they joined the conversation)
+English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells E*. A **tag** is that label. You choose it, and it stays on the same referent however many others come and go. Write the role letter, **`w`**, a tag vowel, and an ending. The four vowels are four tags, named by the vowel's [letter name](phonology.md#letter-names): A, E, O, U. Roots start with a vowel, so a consonant right after the role letter is always a marker: `r` starts a [number word](numbers.md), and `w` starts a tag. (cue: **w** ≈ *we call it*: the label you and the listener agree on)
 
-> `zazawan dalahen vahahal. zalahen drewor vezebel. zrewor varahal.`
+| Agazan | Use | English |
+|--------|-----|---------|
+| `zodogal zwal` | a phrase, then tag + **-l** in the same role: assign | *a dog, call it A* |
+| `zwal` | tag + **-l** with no phrase before it | *someone A*: a new referent with no name |
+| `zwar` / `dwar` / `bwar` | tag + **-r**: the one tagged A, in that role | *A* |
+| `zwam` / `dwam` / `bwam` | tag + **-m**: A's part in the latest event A took part in | *what A did* |
+| `zwarx` | **-r** + **-x** | *A and associates* |
+
+The other tags follow the same pattern: `zwel` / `zwer` / `zwem`, `zwol` / `zwor` / `zwom`, `zwul` / `zwur` / `zwum`.
+
+> `zodogal zwal dugugol dwel vahahal. zagadul dwar vahahal. zwar vowogal.`
 >
-> z-Azawan | d-Alahen | v-see . z-Alahen | d-←1st | v-tell . z-←1st | v-run
+> [z-dog | z-tag.A] | [d-cookie | d-tag.E] | v-see . z-cat | d-←tag.A | v-see . z-←tag.A | v-walk
 >
-> "Azawan sees Alahen. Alahen tells Azawan. Azawan runs."
+> "A dog (A) sees a cookie (E). A cat sees A. A walks."
 
-Who gets a number:
+The last `zwar` is still the dog, though the cat is the newer doer. `zaxar` would pick the cat.
 
-- **Every name.** A word with **-n** takes the next number the first time it appears, in any role. Kinds (**-l** / **-m**), the [special pronouns](#special-pronouns), and the [topic](#topic-ordinals) take none.
-- **Greetings and calls.** A [greeting](word-endings.md#greeting) (`SELFn.`) gives the greeter a number, and a [call](speech-moves.md#vocative) (`yalahen.`) gives one to the person called. In the usual opening, whoever greets first is 1 and whoever answers is 2.
-- **Groups.** A name with **-x** (`zazawanx`, *Azawan and associates*) takes one number for the whole group.
-- **Once each.** Naming someone again, even much later, keeps the number they already have.
-- **The whole stretch.** Everyone in the conversation shares the count, across turns, until a [topic change](#topic-resets) starts it over. A goodbye ends the conversation, and the next one counts from 1 again. Goodbye is your greeting said a second time: once you have greeted, your name said alone again is goodbye.
+- **Assign.** A tag with **-l** right after a phrase in the same role names that phrase: a noun with its `/ɡ/` describers, a name, a resume, or a role pointer. With no phrase before it, it brings in someone new.
+- **Recall.** A tag with **-r** is the ordinary [whole-stem resume](#resume-r): `zwar` resumes `zwal`, so it picks the latest word with that stem, which is the one that assigned the tag.
+- **Reassign.** A newer `zwal` takes A over, by the same rule.
+- **Tag later.** A tag can go on a resume: `dodogar dwel` is *the dog, call it E*.
+- **Lists.** Inside a [join fence](joins.md#right-close), each tag names the item right before it: `zodogal zwal zagadul zwel zam` is *a dog (A) and a cat (E)*. After the join word, a tag names the whole group: `zodogal zagadul zam zwal` is *a dog and a cat, call them A*. A new tag listed with something else goes first: `zwal zodogal zam` is *A and a dog*.
+- **No fallback.** An ordinary **-r** can mean the one you both know. A tag **-r** or **-m** with no assignment earlier in the conversation is not a sentence.
 
-A number with no one at that place yet is not a sentence: after two names, `zrerer` points at nobody.
+With no phrase to tag, a tag holds a placeholder, as in *suppose A tells E*:
 
-Because the count is shared, an ordinal means the same person whoever says it. After Azawan and Alahen greet, *2 sees 1* is *Alahen sees Azawan* from either speaker. The greeting numbers last until the first topic; after that, use `amago` / `ehodo` or names.
-
-> `azawan. alahen. zredur drewor vahahal.`
+> `zwal bwel vezebel. zwer dugugol vagadel.`
 >
-> Azawan . Alahen . z-←2nd | d-←1st | v-see
+> z-tag.A | b-tag.E | v-tell . z-←tag.E | d-cookie | v-eat
 >
-> "Azawan." "Alahen." "Alahen sees Azawan." (from Alahen: *I see you*; from Azawan: *you see me*)
+> "A tells E. E eats a cookie."
 
-**Compare with:** **`amago`** / **`ehodo`** follow the conversation role, so *I* and *you* swap people when the speaker changes. Use them when the role is the point: a name you do not know yet, a reader you have never met, or a whole group you address. Generic *you* is [`oben`](#generic-pronoun), not `ehodo`.
+A tag with **-m** is a [share](#share): A's part in the latest earlier sentence where A filled a part, in whatever role. `zaxam` picks the event by role; `zwam` picks it by who.
 
-Add **-x** for that person and associates, as on any name: `zreworx`.
-
-Ordinals fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`yalahen`).
-
-> `zazawan vowogal. zreworx vezebal.`
+> `zazawan zwal dalahen vabahel. zahaben dwam vahahal.`
 >
-> z-Azawan | v-walk . z-←1st-x | v-sleep
+> [z-Azawan | z-tag.A] | d-Alahen | v-punch . z-Ahaben | d-←tag.A.part | v-see
 >
-> "Azawan walks. Azawan and associates sleep."
+> "Azawan (A) punches Alahen. Ahaben sees what A did."
 
-Ordinals are easiest when only a few people are in the conversation. When the listener would have to stop and count, say the name.
+Tags fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`yalahen`); to make them the topic again, name them (`xazawar`). A word that is already a pronoun with one fixed form takes no tag: the [special pronouns](#special-pronouns), the generic and topic pronouns, and a tag itself. A resume and a role pointer do take one, because a tag keeps them fixed while they would otherwise follow the latest match. **-x** goes only on **-r**: a share is a part, not a group of people, and to tag a group, tag its phrase (`zodogalx zwal`).
+
+A tag lasts until it is assigned again or the conversation ends with a [goodbye](word-endings.md#greeting). A [topic change](#topic-resets) leaves tags alone, so placeholder reasoning can run through a side topic and back. A tag assigned inside a [dependent](dependents.md#dependent-clauses) holds after it, because the dependent is the same talk. A quote keeps its own tags, as it keeps its own topic.
+
+#### Two tags at once {#tag-pairs}
+
+A stacked vowel names two tags together. There are six stacks, one for each pair of tags: `zwaer` is *A and E*, `zwaor` *A and O*, `zwoer` *O and E*, `zwuar` *U and A*, `zwuor` *U and O*, and `zwuer` *U and E*. Each pair has this one spelling, whichever tag you name first.
+
+| Agazan | Use | English |
+|--------|-----|---------|
+| `zwaer` | pair + **-r**: both, together | *A and E* |
+| `zwaem` | pair + **-m**: their parts in the latest earlier event both took part in | *what A and E did* |
+| `zwaerx` | pair **-r** + **-x** | *A, E, and associates* |
+
+> `zodogal zwal zagadul zwel zam vowogal. zwaer varahal. zazawan dwaem vahahal.`
+>
+> [[z-dog | z-tag.A] | [z-cat | z-tag.E] | z-and.open] | v-walk . z-←tag.A+E | v-run . z-Azawan | d-←tag.A+E.part | v-see
+>
+> "A dog (A) and a cat (E) walk. A and E run. Azawan sees what A and E did."
+
+Both tags must already be assigned. A pair never assigns: to tag two things, tag each one (`zodogal zwal zagadul zwel zam`), or tag the group as one (`zodogal zagadul zam zwal`).
+
+**Compare with:** `zwaer` says in one word what a list of `zwar` and `zwer` closed by `zam` says.
+
+**Compare with:** a name already resumes from anywhere (`zazawar`), and two people rarely share a name. Reach for a tag when the referent has no name, when its stem is a long compound, when two of the same kind are in play, or when a role pointer would pick someone newer.
 
 ### Topic {#topic}
 
@@ -659,17 +688,17 @@ A topic-setting `/x/` word takes a **pitch reset**, as a new `/y/` turn does, bu
 
 The topic is referred to with one pronoun: **`oza`** *star* with **-n**, in `/z/`, `/d/`, or `/b/`. It stays the same in every role: `zozan` is the topic as subject, `dozan` as object, `bozan` as extra noun. (cue: ⭐ the star of the talk, what everyone is looking at)
 
-> `xazawan zozan dalahen vahahal. zrewor dozan vezebel. zozan varahal.`
+> `xazawan zozan dalahen vahahal. zalaher dozan vezebel. zozan varahal.`
 >
-> x-Azawan | z-TOPIC | d-Alahen | v-see . z-←1st | d-TOPIC | v-tell . z-TOPIC | v-run
+> x-Azawan | z-TOPIC | d-Alahen | v-see . z-←Alahen | d-TOPIC | v-tell . z-TOPIC | v-run
 >
 > "Now, about Azawan: Azawan sees Alahen. Alahen tells Azawan. Azawan runs."
 
 A thing works as a topic the same way:
 
-> `xodogal zazawan dozan vahahal. zozan varahal. zrewor vehahel.`
+> `xodogal zazawan dozan vahahal. zozan varahal. zazawar vehahel.`
 >
-> x-dog | z-Azawan | d-TOPIC | v-see . z-TOPIC | v-run . z-←1st | v-sit
+> x-dog | z-Azawan | d-TOPIC | v-see . z-TOPIC | v-run . z-←Azawan | v-sit
 >
 > "Now, about a dog: Azawan sees it. It runs. Azawan sits."
 
@@ -699,25 +728,21 @@ A side topic, then an explicit return:
 
 Without `xazawar`, the last sentence would have no topic and `zozan` would not be a sentence.
 
-### Ordinals count everyone else {#topic-ordinals}
-
-The topic never takes an [ordinal](#ordinal-pronouns), even when it is a name and even when it is named again in its stretch. Other names count from 1 in order of entry. So the topic is always `zozan`, and `zrewor` is always the first *other* person: one form for each person or thing, whether or not the topic is a name.
-
 ### What a topic change resets {#topic-resets}
 
 Introduce, return, and clear each start a new **topic stretch**.
 
 | State | Resets? | Why |
 |-------|---------|-----|
-| [Ordinal count](#ordinal-pronouns) | yes | Keeps numbers small. |
 | [Role pointer](#role-pointers) anchors | yes | `zaxar` *the latest doer* and `zaxor` *the other one* never reach into an earlier stretch. Someone from before is picked up by name or whole-stem **-r**. |
 | [Ambient order of magnitude](numbers.md#ambient-magnitude) | yes | A new topic is a new stretch, so bare numbers go back to ones. |
 | Whole-stem **-r** | no | It is the explicit way back (`xazawar`), so it reaches across stretches. |
+| [Tags](#tag-pronouns) | no | A tag is assigned on purpose, so distance does not blur it, and placeholder reasoning often runs through a side topic. |
 | [Tale](knowing.md#evidentiality) now | no | A story moves between characters without leaving the tale. |
 | Agenda numbering (`x#N`, outline depth) | no | Agenda items sit above topics; one item may hold several. |
 | Speech move, line of talk | no | They track the move and the line of talk, not people. |
 
-`xazawar` while Azawan is already the topic is still a topic change: it starts a new stretch with the same topic. That lets you clear a crowded count (*so, Azawan again*) without leaving the topic.
+`xazawar` while Azawan is already the topic is still a topic change: it starts a new stretch with the same topic. That lets you clear the role pointers' anchors (*so, Azawan again*) without leaving the topic.
 
 ### Return versus introduce {#topic-return}
 
@@ -760,11 +785,11 @@ A [dependent](dependents.md#dependent-clauses) is the sentence after a stand-in 
 | Change the topic, then report | the `/x/` word first: `xalahen zazawan vezebel darl zozan vowogal.` *Now, about Alahen: Azawan says that Alahen walks.* |
 | Report someone's own topic change | quote their wording ([quotes](#topic-quotes)) |
 
-Reading the topic from inside a dependent is fine: `zozan`, ordinals, and role pointers inside the content resolve to your current stretch. *Azawan says that the main one runs* means your topic, not Azawan's. A clause join is not a dependent, but it keeps the clauses in one written sentence, so a topic word cannot follow one either: change the topic after a period.
+Reading the topic from inside a dependent is fine: `zozan`, tags, and role pointers inside the content resolve to your current stretch. *Azawan says that the main one runs* means your topic, not Azawan's. A clause join is not a dependent, but it keeps the clauses in one written sentence, so a topic word cannot follow one either: change the topic after a period.
 
 ### Quotes and asides {#topic-quotes}
 
-A quote is someone else's talk, so it keeps its own topic and its own ordinal count, and neither carries over into yours. An aside uses your stretch and never changes the topic ([topics in a quote](spans.md#topic-quotes)). For a real side topic, end the sentence and use `xavazem`.
+A quote is someone else's talk, so it keeps its own topic and its own tags, and neither carries over into yours. An aside uses your stretch and never changes the topic ([topics in a quote](spans.md#topic-quotes)). For a real side topic, end the sentence and use `xavazem`.
 
 ### Me or you as the topic {#topic-participants}
 
@@ -879,12 +904,12 @@ z-interlocutors | v-harvest
 z-Azawan-x | v-punch
 :::
 
-**9.** *Ahaben pours. Alahen harvests. The first person named sees the second.*
+**9.** *Ahaben (A) pours. Alahen (E) harvests. A sees E.*
 
 ::: details Show answer
-`zahaben vobohol. zalahen vegevem. zrewor dredur vahahal.`
+`zahaben zwal vobohol. zalahen zwel vegevem. zwar dwer vahahal.`
 
-z-Ahaben | v-pour . z-Alahen | v-harvest . z-←1st | d-←2nd | v-see
+[z-Ahaben | z-tag.A] | v-pour . [z-Alahen | z-tag.E] | v-harvest . z-←tag.A | d-←tag.E | v-see
 :::
 
 **10.** *Now, about Azawan: Azawan pours. Alahen harvests. Azawan sees a seedling.*
@@ -977,13 +1002,13 @@ z-Alahen-x | v-fight
 *Alahen and associates fight.*
 :::
 
-**9.** `azawan. alahen. zrewor dredur vahahal.`
+**9.** `zalahen zwal dazawan vabahel. zahaben dwar vahahal. zwar vezugel.`
 
 ::: details Show answer
 
-Azawan . Alahen . z-←1st | d-←2nd | v-see
+[z-Alahen | z-tag.A] | d-Azawan | v-punch . z-Ahaben | d-←tag.A | v-see . z-←tag.A | v-scream
 
-*"Azawan." "Alahen." Azawan sees Alahen.*
+*Alahen (A) punches Azawan. Ahaben sees A. A screams.*
 :::
 
 **10.** `xalahen zalahen vobohol. zahaben vegevem. xavazem zazawan vahahal. xalaher zozan vabahel.`

@@ -183,6 +183,7 @@ export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = 
   joinMarker: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "vowel-series join / turn word" },
   writingSpan: { anchor: "spans.md#writing", summary: "written span" },
   foreign: { anchor: "spans.md#loans", summary: "foreign / opaque payload" },
+  tag: { anchor: "pronouns.md#tag-pronouns", summary: "tag pronoun (role letter + w + tag vowel)" },
 };
 
 export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
@@ -245,13 +246,13 @@ export const WORD_MISC_CONSTRUCTIONS = {
 } satisfies Record<string, ConstructionEntry>;
 
 export const RESOLVE_CONSTRUCTIONS: Record<
-  Exclude<`${AnaphorKind}.${"bound" | "unbound"}`, "number.unbound" | "ordinal.unbound" | "pointer.unbound" | "topic.unbound">,
+  Exclude<`${AnaphorKind}.${"bound" | "unbound"}`, "number.unbound" | "tag.unbound" | "pointer.unbound" | "topic.unbound">,
   ConstructionEntry
 > = {
   "content.bound": { anchor: "pronouns.md#resume-r", summary: "-r binds an earlier content word" },
   "content.unbound": { anchor: "pronouns.md#resume-r", summary: "-r with no earlier match (the one you both know)" },
   "number.bound": { anchor: "numbers.md#digitless", summary: "number -r binds an earlier number" },
-  "ordinal.bound": { anchor: "pronouns.md#ordinal-pronouns", summary: "ordinal pronoun: a name by order of introduction" },
+  "tag.bound": { anchor: "pronouns.md#tag-pronouns", summary: "tag pronoun: assigned to a phrase, or recalling or sharing an assigned one" },
   "role.bound": { anchor: "roles.md#role-compounds", summary: "role -r binds an earlier role compound" },
   "role.unbound": { anchor: "roles.md#role-compounds", summary: "role -r with no earlier match" },
   "topic.bound": { anchor: "pronouns.md#topic-pronoun", summary: "topic pronoun: the one the talk is about now" },
@@ -612,8 +613,13 @@ export const REJECTIONS = {
   degreeNumber: { anchor: "numbers.md#number-as-degree", summary: "a number on /w/ is the how-much blank, barely / almost, or an ordinal place on a scale (wredul); a factor goes on /h/" },
   degreePlaceFrame: { anchor: "comparatives.md#place-on-a-scale", summary: "a place on a scale (w#N) needs one name before zel or zuel, then the shared adjective" },
   numberResumeUnbound: { anchor: "numbers.md#digitless", summary: "a number -r needs an earlier number to match" },
-  ordinalUnbound: { anchor: "pronouns.md#ordinal-pronouns", summary: "an ordinal pronoun needs that many names introduced in this conversation" },
-  numberPlural: { anchor: "pronouns.md#ordinal-pronouns", summary: "a number takes -x only as an ordinal pronoun (z=#1x) or a plural label (z_90x)" },
+  tagUnbound: { anchor: "pronouns.md#tag-pronouns", summary: "a tag -r or -m needs that tag assigned earlier in the conversation (zodogal zwal, or zwal alone); -m also needs an earlier event it took part in (for a pair, one event both took part in)" },
+  tagSlot: { anchor: "pronouns.md#tag-pronouns", summary: "a tag pronoun fills /z/, /d/, or /b/; to call someone or return to them as the topic, use their name" },
+  tagEnding: { anchor: "pronouns.md#tag-pronouns", summary: "a tag pronoun takes -l (assign), -r (recall), or -m (share)" },
+  tagPronoun: { anchor: "pronouns.md#tag-pronouns", summary: "a tag names a phrase that is not already a fixed pronoun: never a special (amagon, ehodon, ahan, unan), generic, or topic pronoun, or another tag; a resume or role pointer takes one" },
+  tagPairAssign: { anchor: "pronouns.md#tag-pairs", summary: "a tag pair (zwaer) recalls or shares two tags already assigned; assign each tag on its own (zodogal zwal zagadul zwel zam)" },
+  tagPlural: { anchor: "pronouns.md#tag-pronouns", summary: "a tag takes -x only on -r (zwarx, A and associates); to tag a group, tag its plural phrase (zodogalx zwal)" },
+  numberPlural: { anchor: "numbers-applied.md#plural-labels", summary: "a number takes -x only as a plural label (z_90x)" },
   resumeUnbound: { anchor: "pronouns.md#resume-r", summary: "an -r resume spells an earlier word's whole stem, or a lexicon stem" },
   pointerSlot: { anchor: "pronouns.md#role-pointers", summary: "a role pointer fills /z/, /d/, /b/, a holder seam's holder slot, or a viewpoint lateral's facing anchor" },
   pointerOtherRole: { anchor: "pronouns.md#the-other-one", summary: "the other-one pointer (o) takes every role except the scene (dexor, zexol, and zexom are rejected)" },
@@ -627,7 +633,6 @@ export const REJECTIONS = {
   nonspecificPlural: { anchor: "plurality.md#person-role-x", summary: "someone (unan) names no group to add associates to; some people is obelx" },
   topicNonspecific: { anchor: "pronouns.md#topic-participants", summary: "a topic is someone or something in particular; a nonspecific someone cannot be it" },
   topicOfTopic: { anchor: "pronouns.md#topic-pronoun", summary: "the topic pronoun is the topic itself: it is never its own topic word or a resume (zozan, never xozan or zozar)" },
-  ordinalSlot: { anchor: "pronouns.md#ordinal-pronouns", summary: "an ordinal pronoun fills /z/, /d/, or /b/; to call someone, use their name" },
   pointerOwnSlot: { anchor: "pronouns.md#themself", summary: "a self pointer (e) names another slot of its own clause, not the one it fills" },
   clauseSingleItem: { anchor: "joins.md#clause-joins", summary: "a clause join goes between two clauses; to deny or focus one clause, put the join on its verb or noun (vul, zal)" },
   leftFence: { anchor: "joins.md#right-close", summary: "a join word closes its conjuncts; it never comes before them" },

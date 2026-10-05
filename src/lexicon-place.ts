@@ -23,8 +23,6 @@ const ECHO_W = 100;
 
 /** Rows the dry run forces onto a three-letter root (emoji → position slot). */
 const MARKED: Record<string, string> = { "🤝": "pronoun", "😐": "pronoun", "🎤": "pronoun", "🎧": "pronoun", "⭐": "pronoun", "🧑": "pronoun" };
-/** Rows kept on a five-letter root on purpose (discouraged forms), even if overlay-backed or marked. */
-const FORCE_LONG = new Set(["🎤", "🎧"]);
 /** Lower number is placed earlier. Glasses outranks every frequency rank. */
 const PRIORITY_OVERRIDES: Record<string, number> = { "👓": 0 };
 
@@ -139,7 +137,7 @@ function indexRows(rows: PlaceRow[], overlays: OverlayRow[], pron: Map<string, s
   for (const item of indexed) {
     const slot = MARKED[item.row.emoji];
     if (slot) item.groups.add(`pos:${slot}`);
-    item.eligible = item.groups.size > 0 && !FORCE_LONG.has(item.row.emoji);
+    item.eligible = item.groups.size > 0;
   }
   return indexed;
 }

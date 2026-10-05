@@ -18,13 +18,14 @@ import type {
   RoleVowel,
   SharedRecord,
   SharedRole,
+  TagVowel,
   Unit,
   Utterance,
   VpCoord,
   WritingBracket,
 } from "./types.js";
 import { isDigitless, isRhetorical, KIND_SERIES, SCALE_SERIES } from "./series.js";
-import { isGreeting, isScaleShared, isSharedGPackage, visitResult, type Visitor } from "./ast-walk.js";
+import { isGreeting, isScaleShared, isSharedGPackage, visitResult, type Visitor, type WordSlot } from "./ast-walk.js";
 import { CLOSED } from "../closed-roots.js";
 import { topicEffect } from "./linkers.js";
 
@@ -44,16 +45,22 @@ type Anchor = { predicate: LexWord; fillers: Partial<Record<RoleVowel, Filler>> 
 /** An open clause: its own anchor (absent with no predicate) and how many anchors came before it. */
 type OpenClause = { anchor?: Anchor; before: number };
 
-/** A name in the conversation's introduction order (pronouns.md#ordinal-pronouns). */
-type Introduced = { key: string; word: LexWord };
+/** What a tag names: the phrase it was assigned to (or the tag word itself for a new referent) and its referent key. */
+type TagBinding = { word: LexWord; key: string };
 
 /** What the talk is about now: the `/x/` word that set it, and the referent it names (pronouns.md#topic). */
 type Topic = { word: LexWord; key: string };
 
 type Ctx = {
   antecedents: Antecedent[];
-  /** Names in order of introduction in this topic stretch; ordinal pronouns index into this list. */
-  introduced: Introduced[];
+  /** Names said in this conversation; a greeting from one of them while closing is goodbye too. */
+  named: Set<string>;
+  /** Tags assigned in this conversation (pronouns.md#tag-pronouns); a topic change leaves them alone. */
+  tags: Map<TagVowel, TagBinding>;
+  /** Head of the noun package the walk is in: a tag **-l** riding on the package names it. */
+  packageHead?: LexWord;
+  /** A tag after a closed fence, and the group it names. */
+  groupTags: Map<LexWord, GroupTag>;
   /** The current topic: set only by an `/x/` topic word, cleared by *next*, *by the way*, and goodbye. */
   topic?: Topic;
   /** Names that have greeted; the same greeting again is goodbye. */
@@ -194,30 +201,13 @@ function topicKeyOf(word: LexWord): string {
   return `${wholeStem(word)}${word.plural ? "+x" : ""}`;
 }
 
-/** Identity of a name (`-n`) for introduction order: its roots, plus `-x` for a group. */
+/** Identity of a name (`-n`): its roots, plus `-x` for a group. */
 function nameKey(word: LexWord): string | undefined {
   if (word.ending !== "n" || word.family.kind === "joinMarker") return undefined;
   const roots = contentRoots(word);
   if (roots.length === 0 || roots.some((root) => ROLE_PRONOUN_ROOTS.has(root))) return undefined;
   if (isTopicPronoun(word) || isGenericPronoun(word)) return undefined;
   return `${roots.join("x")}${word.plural ? "+x" : ""}`;
-}
-
-/**
- * Ordinal pronoun: a rank **-r** with plain digits on `/z/` `/d/` `/b/` names a person by
- * order of introduction (pronouns.md#ordinal-pronouns). Returns the place, negative when
- * counted from the end (`z=#-1`), or `undefined` when the word is not an ordinal pronoun.
- */
-export function ordinalPronounPlace(word: LexWord): number | undefined {
-  const family = word.family;
-  if (family.kind !== "number" || word.ending !== "r") return undefined;
-  if (word.pos !== "z" && word.pos !== "d" && word.pos !== "b") return undefined;
-  const { stem } = family;
-  if ((stem.marker !== "#" && stem.marker !== "#-") || stem.calendarOrdinal || stem.digitlessExp) return undefined;
-  const [group, ...rest] = stem.groups;
-  if (!group?.mantissa || rest.length > 0 || group.decimal || group.exponentDigits || group.percent) return undefined;
-  const place = Number(group.mantissa);
-  return stem.marker === "#-" ? -place : place;
 }
 
 function isRoleAnaphor(word: LexWord): boolean {
@@ -278,23 +268,8 @@ function bindNumber(ctx: Ctx, pronoun: LexWord): void {
   ctx.anaphors.push({ pronoun, kind: "number", antecedent });
 }
 
-function bindOrdinal(ctx: Ctx, pronoun: LexWord, place: number): void {
-  const index = place > 0 ? place - 1 : ctx.introduced.length + place;
-  const antecedent = place !== 0 && index >= 0 ? ctx.introduced[index]?.word : undefined;
-  ctx.anaphors.push({ pronoun, kind: "ordinal", antecedent });
-}
-
-/** The topic never takes a number, even when it is a name and is named again in its stretch (pronouns.md#topic-ordinals). */
-function introduce(ctx: Ctx, word: LexWord): void {
-  const key = nameKey(word);
-  if (!key || ctx.introduced.some((item) => item.key === key)) return;
-  if (ctx.topic && ctx.topic.key === topicKeyOf(word)) return;
-  ctx.introduced.push({ key, word });
-}
-
-/** A new topic stretch: the ordinal count and the role-pointer anchors start over (pronouns.md#topic-resets). */
+/** A new topic stretch: the role-pointer anchors start over; tags stay (pronouns.md#topic-resets). */
 function resetStretch(ctx: Ctx): void {
-  ctx.introduced = [];
   ctx.anchors.length = 0;
 }
 
@@ -344,11 +319,11 @@ function greetingName(body: BodyClause): string | undefined {
 }
 
 /**
- * Conversation boundary (pronouns.md#ordinal-pronouns): a greeting from a name that already
- * greeted is goodbye. After a goodbye, the next move that is not one starts the count over.
+ * Conversation boundary (word-endings.md#greeting): a greeting from a name that already greeted is goodbye.
+ * After a goodbye, the next move that is not one starts a new conversation, with no tags (pronouns.md#tag-lifetime).
  */
 function enterMove(ctx: Ctx, greetings: string[]): void {
-  const known = (key: string) => ctx.greeted.has(key) || (ctx.closing && ctx.introduced.some((item) => item.key === key));
+  const known = (key: string) => ctx.greeted.has(key) || (ctx.closing && ctx.named.has(key));
   ctx.goodbye = greetings.length > 0 && greetings.every(known);
   if (ctx.goodbye) {
     ctx.closing = true;
@@ -357,7 +332,8 @@ function enterMove(ctx: Ctx, greetings: string[]): void {
   }
   if (ctx.closing) {
     ctx.topic = undefined;
-    ctx.introduced = [];
+    ctx.named.clear();
+    ctx.tags.clear();
     ctx.greeted.clear();
     ctx.closing = false;
   }
@@ -541,6 +517,84 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
   else ctx.referents.set(pronoun, filler ? fillerKey(ctx, filler) : `${roleVowel}@${anchor.predicate.at ?? -1}`);
 }
 
+// ── Tag pronouns (pronouns.md#tag-pronouns) ────────────────────────────────
+
+type TagWord = LexWord & { family: { kind: "tag"; vowels: TagVowel[] } };
+
+function isTag(word: LexWord): word is TagWord {
+  return word.family.kind === "tag";
+}
+
+/** A tag after a closed fence names the group: the join word, and the members' referents. */
+type GroupTag = { join: LexWord; words: LexWord[] };
+
+/**
+ * Assign: on a package (`zodogal zwal`) a tag names that phrase, after a fence (`… zam zwal`) the whole group, and
+ * alone (`zwal`) a new referent; a newer assignment takes the tag over.
+ */
+function assignTag(ctx: Ctx, word: TagWord, slot: WordSlot | undefined): void {
+  const vowel = word.family.vowels[0]!;
+  const group = slot === "groupTag" ? ctx.groupTags.get(word) : undefined;
+  const named = slot === "tag" ? ctx.packageHead : group?.join;
+  const key = group ? fillerKey(ctx, { words: group.words }) : referentKey(ctx, named ?? word);
+  ctx.referents.set(word, key);
+  if (named) ctx.referents.set(named, key);
+  ctx.tags.set(vowel, { word: named ?? word, key });
+  if (named) ctx.anaphors.push({ pronoun: word, kind: "tag", antecedent: named });
+}
+
+/** Whether a slot's filler is that referent: one of its words, or the whole joined group. */
+function fillerHas(ctx: Ctx, filler: Filler, key: string): LexWord | undefined {
+  if (fillerKey(ctx, filler) === key) return fillerWord(filler);
+  return filler.words.find((item) => referentKey(ctx, item) === key);
+}
+
+/**
+ * **-r** is the tagged referent; **-m** its part in the latest earlier event it filled a part of. A pair (`zwaer`) is
+ * both at once: together on **-r**, and their parts in the latest earlier event both took part in on **-m**.
+ * A recall or share with a tag not assigned stays unbound (enforce rejects it).
+ */
+function recallTag(ctx: Ctx, word: TagWord): void {
+  const bind: AnaphorBind = { pronoun: word, kind: "tag" };
+  ctx.anaphors.push(bind);
+  const bindings = word.family.vowels.map((vowel) => ctx.tags.get(vowel));
+  if (bindings.some((binding) => !binding)) return;
+  const tagged = bindings as TagBinding[];
+  const pair = tagged.length > 1;
+  if (word.ending === "r") {
+    bind.antecedent = tagged[0]!.word;
+    if (pair) bind.antecedents = tagged.map((binding) => binding.word);
+    ctx.referents.set(word, tagged.map((binding) => binding.key).sort().join("&"));
+    return;
+  }
+  if (word.ending !== "m") return;
+  const open = ctx.clauses.at(-1);
+  const earlier = ctx.anchors.slice(0, open?.before ?? ctx.anchors.length).reverse();
+  for (const anchor of earlier) {
+    const fillers = Object.entries(anchor.fillers) as [RoleVowel, Filler][];
+    const found = tagged.map((binding) => {
+      for (const [role, filler] of fillers) {
+        const hit = fillerHas(ctx, filler, binding.key);
+        if (hit) return { role, word: hit };
+      }
+      return undefined;
+    });
+    if (found.some((item) => !item)) continue;
+    const parts = found as { role: RoleVowel; word: LexWord }[];
+    bind.antecedent = parts[0]!.word;
+    if (pair) bind.antecedents = parts.map((part) => part.word);
+    else bind.roleVowel = parts[0]!.role;
+    // A share is the part in that event, its own referent (pronouns.md#share).
+    ctx.referents.set(word, `m:${word.at ?? -1}`);
+    return;
+  }
+}
+
+function considerTag(ctx: Ctx, word: TagWord, slot: WordSlot | undefined): void {
+  if (word.ending === "l") assignTag(ctx, word, slot);
+  else recallTag(ctx, word);
+}
+
 /** Which sense of its stem a word carries: **-l** / **-m**, or a resume's own pin or its antecedent's (pronouns.md#resume-sense). */
 function sensePinned(ctx: Ctx, word: LexWord): "l" | "m" | undefined {
   if (word.ending === "l" || word.ending === "m") return word.ending;
@@ -556,7 +610,7 @@ function sensePinned(ctx: Ctx, word: LexWord): "l" | "m" | undefined {
 }
 
 function harvest(ctx: Ctx, word: LexWord): void {
-  if (word.family.kind === "number" && ordinalPronounPlace(word) === undefined) {
+  if (word.family.kind === "number") {
     ctx.antecedents.push({
       kind: "number",
       word,
@@ -574,10 +628,9 @@ function harvest(ctx: Ctx, word: LexWord): void {
   }
 }
 
-function considerWord(ctx: Ctx, word: LexWord): void {
-  const place = ordinalPronounPlace(word);
+function considerWord(ctx: Ctx, word: LexWord, slot?: WordSlot): void {
   if (isTopicPronoun(word)) bindTopic(ctx, word);
-  else if (place !== undefined) bindOrdinal(ctx, word, place);
+  else if (isTag(word)) considerTag(ctx, word, slot);
   else if (isNumberAnaphor(word)) bindNumber(ctx, word);
   else if (isRoleAnaphor(word)) bindRole(ctx, word);
   else if (isPointer(word)) bindPointer(ctx, word);
@@ -585,7 +638,8 @@ function considerWord(ctx: Ctx, word: LexWord): void {
 
   if (ctx.question && isJoinGap(word)) ctx.gaps.push(word);
 
-  if (!ctx.goodbye) introduce(ctx, word);
+  const name = ctx.goodbye ? undefined : nameKey(word);
+  if (name) ctx.named.add(name);
   harvest(ctx, word);
 }
 
@@ -596,7 +650,7 @@ function resolveVisitor(ctx: Ctx): Visitor {
       if (slot === "boundJoinClose" || slot === "joinModifier" || slot === "factor") return;
       if (slot === "orodo") ctx.standIn = word;
       if (slot === "linker") considerLinker(ctx, word);
-      else considerWord(ctx, word);
+      else considerWord(ctx, word, slot);
     },
     join(join, site) {
       if (!ctx.question || !isJoinGap(join)) return;
@@ -605,6 +659,14 @@ function resolveVisitor(ctx: Ctx): Visitor {
       else ctx.gaps.push(join);
     },
     enter(node) {
+      if (node.kind === "npPackage") ctx.packageHead = node.pkg.head;
+      if (node.kind === "np") {
+        const heads: LexWord[] = [];
+        for (const part of node.coord.parts) {
+          for (const item of part.items) if (item.kind === "package") heads.push(item.package.head);
+          if (part.tag && part.join) ctx.groupTags.set(part.tag, { join: part.join, words: [...heads] });
+        }
+      }
       if (node.kind === "body") enterMove(ctx, [greetingName(node.body) ?? []].flat());
       if (node.kind === "clause") {
         const anchor = anchorOf(node.clause);
@@ -637,7 +699,9 @@ function resolveVisitor(ctx: Ctx): Visitor {
 function buildResolve(result: ParseResult): ResolveInfo {
   const ctx: Ctx = {
     antecedents: [],
-    introduced: [],
+    named: new Set(),
+    tags: new Map(),
+    groupTags: new Map(),
     greeted: new Set(),
     closing: false,
     goodbye: false,

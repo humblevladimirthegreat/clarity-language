@@ -302,7 +302,7 @@ A [resume](../grammar/pronouns.md#resume-r) spells its antecedent's whole stem, 
 | Resume of a prior content word | | `z-←someone` / `d-←tea` |
 | No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
 | Fill-ask / unspecified member | `zar` | `z-wh` / `z-something` (as the docs require for that form) |
-| [Ordinal pronoun](../grammar/pronouns.md#ordinal-pronouns) | `zredur` / `zruewor` | `z-←2nd` / `z-←1st-from-end` (the place, never the person's name) |
+| [Tag pronoun](../grammar/pronouns.md#tag-pronouns) | `zwal` / `zwar` / `dwam` | `z-tag.A` (assign) / `z-←tag.A` (recall) / `d-←tag.A.part` (share): the letter name, never the referent. An assigning tag rides in its phrase's bracket: `[z-dog \| z-tag.A]`, or after a fence's bracket for the whole group. A pair joins the letters with `+`: `z-←tag.A+E` |
 | [Role pointer](../grammar/pronouns.md#role-pointers) | `zaxar` / `zaxor` / `daxer` | `z-←agent.same` / `z-←agent.other` / `d-←agent.self` / `z-←agent.unsaid` (role and event, never the person's name); `d-←patient.same.new` (**-l**), `z-←agent.same.part` (**-m**) |
 
 Do not write `z-←microphone` for a speaker antecedent.

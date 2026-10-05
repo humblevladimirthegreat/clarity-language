@@ -224,47 +224,85 @@ describe("resolve — span and number anaphors", () => {
   });
 });
 
-describe("resolve — ordinal pronouns (pronouns.md#ordinal-pronouns)", () => {
-  function ordinals(text: string): string[] {
+describe("resolve — tag pronouns (pronouns.md#tag-pronouns)", () => {
+  function tags(text: string): string[] {
     return resolveOf(text)
-      .anaphors.filter((a) => a.kind === "ordinal")
+      .anaphors.filter((a) => a.kind === "tag")
       .map((a) => `${a.pronoun.raw}→${a.antecedent?.raw}`);
   }
 
-  it("numbers names by first -n mention, in any role", () => {
-    assert.deepEqual(ordinals("zazawan dalahen vahahal. zalahen drewor vezebel. zrewor varahal."), [
-      "drewor→zazawan",
-      "zrewor→zazawan",
+  it("names the phrase right before it, and recalls it in any role", () => {
+    assert.deepEqual(tags("zodogal zwal dugugol dwel vahahal. zagadul dwar vahahal. zwar vowogal."), [
+      "zwal→zodogal",
+      "dwel→dugugol",
+      "dwar→zodogal",
+      "zwar→zodogal",
     ]);
   });
 
-  it("counts greetings and calls as introductions", () => {
-    assert.deepEqual(ordinals("azawan. alahen. zredur drewor vahahal."), ["zredur→alahen", "drewor→azawan"]);
-    assert.deepEqual(ordinals("yalahen. zrewor vowogal."), ["zrewor→yalahen"]);
+  it("rides on the package, so a tagged phrase is one item and one filler", () => {
+    const result = parseText("zodogal gamadam zwal vowogal.");
+    const unit = result.utterances[0]!.bodies[0]!.clause.units[0]!;
+    assert.equal(unit.kind, "np");
+    if (unit.kind !== "np") return;
+    const [item] = unit.coord.parts[0]!.items;
+    assert.equal(unit.coord.parts[0]!.items.length, 1);
+    assert.equal(item?.kind === "package" ? item.package.tag?.raw : undefined, "zwal");
   });
 
-  it("counts from the end with #-", () => {
-    assert.deepEqual(ordinals("zazawan vowogal. zahaben vehahel. zruewor vezebal."), ["zruewor→zahaben"]);
+  it("introduces a new referent with no phrase before it", () => {
+    assert.deepEqual(tags("zwal bwel vezebel. zwer dugugol vagadel."), ["zwer→bwel"]);
   });
 
-  it("gives a group name its own number, and takes -x", () => {
-    assert.deepEqual(ordinals("zazawan vowogal. zazawanx vowogal. zredur vezebal. z=#1x vezebal."), [
-      "zredur→zazawanx",
-      "z=#1x→zazawan",
-    ]);
+  it("tags each item of a list, and a tag listed first is new", () => {
+    assert.deepEqual(tags("zodogal zwal zagadul zwel zam vowogal. zwer varahal."), ["zwal→zodogal", "zwel→zagadul", "zwer→zagadul"]);
+    assert.deepEqual(tags("zwal zodogal zam vowogal. zwar varahal."), ["zwar→zwal"]);
   });
 
-  it("skips special pronouns", () => {
-    assert.deepEqual(ordinals("zamagon vowogal. zazawan vowogal. zrewor vezebal."), ["zrewor→zazawan"]);
+  it("tags a whole group after a closed fence", () => {
+    assert.deepEqual(tags("zodogal zagadul zam zwal vowogal. zwar varahal."), ["zwal→zam", "zwar→zam"]);
+    const share = resolveOf("zodogal zagadul zam zwal vowogal. zazawan dwam vahahal.").anaphors.find((a) => a.pronoun.raw === "dwam");
+    assert.equal(share?.antecedent?.raw, "zam");
   });
 
-  it("restarts the count after a goodbye", () => {
-    assert.deepEqual(ordinals("azawan. alahen. azawan. alahen. zahaben vowogal. zrewor vezebal."), ["zrewor→zahaben"]);
+  it("tags a role pointer, which then stays put", () => {
+    assert.deepEqual(tags("zazawan vowogal. zaxar zwal varahal. zalahen vowogal. zwar vehahel."), ["zwal→zaxar", "zwar→zaxar"]);
   });
 
-  it("is not a number antecedent", () => {
-    const { anaphors } = resolveOf("zazawan vowogal. zalahen vowogal. zredur vezebal.");
-    assert.equal(anaphors.some((a) => a.kind === "number"), false);
+  it("recalls two tags at once with a stacked vowel, and shares their parts in one event", () => {
+    const { anaphors } = resolveOf("zodogal zwal zagadul zwel zam vowogal. zwaer varahal. zazawan dwaem vahahal.");
+    const pair = anaphors.find((a) => a.pronoun.raw === "zwaer");
+    assert.deepEqual(pair?.antecedents?.map((word) => word.raw), ["zodogal", "zagadul"]);
+    const share = anaphors.find((a) => a.pronoun.raw === "dwaem");
+    assert.deepEqual(share?.antecedents?.map((word) => word.raw), ["zodogal", "zagadul"]);
+    assert.deepEqual(tags("zwal bwel vezebel. zwaerx varahal."), ["zwaerx→zwal"]);
+    assert.throws(() => parseText("zazawan zwal vowogal. zalahen zwel varahal. zahaben dwaem vahahal."), /tag -r or -m/);
+  });
+
+  it("retro-tags a resume, and a newer assignment takes the tag over", () => {
+    assert.deepEqual(tags("zodogal vowogal. dodogar dwel zazawan vahahal. zwer varahal."), ["dwel→dodogar", "zwer→dodogar"]);
+    assert.deepEqual(tags("zodogal zwal vowogal. zagadul zwal varahal. zwar vehahel."), ["zwal→zodogal", "zwal→zagadul", "zwar→zagadul"]);
+  });
+
+  it("shares A's part in the latest earlier event A took part in, in whatever role", () => {
+    const { anaphors } = resolveOf("zazawan zwal dalahen vabahel. zahaben dwam vahahal.");
+    const share = anaphors.find((a) => a.pronoun.raw === "dwam");
+    assert.equal(share?.antecedent?.raw, "zazawan");
+    assert.equal(share?.roleVowel, "a");
+    const object = resolveOf("zazawan zwal vowogal. zalahen dwar vabahel. zahaben dwam vahahal.").anaphors.find((a) => a.pronoun.raw === "dwam");
+    assert.equal(object?.antecedent?.raw, "dwar");
+    assert.equal(object?.roleVowel, "u");
+  });
+
+  it("keeps a tag through a topic change, and drops it after a goodbye", () => {
+    assert.deepEqual(tags("zazawan zwal vowogal. xodogal zodogan vahahal. zwar varahal."), ["zwal→zazawan", "zwar→zazawan"]);
+    assert.deepEqual(tags("zazawan zwal vowogal. xavazem zodogal varahal. zwar vehahel."), ["zwal→zazawan", "zwar→zazawan"]);
+    assert.throws(() => parseText("azawan. alahen. zazawan zwal vowogal. azawan. alahen. zahaben vowogal. zwar vehahel."), /tag -r or -m/);
+  });
+
+  it("rejects a recall or share with no assignment", () => {
+    assert.throws(() => parseText("zwar vowogal."), /tag -r or -m/);
+    assert.throws(() => parseText("zazawan dwam vahahal."), /tag -r or -m/);
   });
 });
 
@@ -274,16 +312,15 @@ describe("resolve — topic (pronouns.md#topic)", () => {
       .anaphors.filter((a) => a.kind === "topic")
       .map((a) => `${a.pronoun.raw}→${a.antecedent?.raw}`);
   }
-  function ordinals(text: string): string[] {
+  function pointers(text: string): string[] {
     return resolveOf(text)
-      .anaphors.filter((a) => a.kind === "ordinal")
+      .anaphors.filter((a) => a.kind === "pointer")
       .map((a) => `${a.pronoun.raw}→${a.antecedent?.raw}`);
   }
 
-  it("keeps one topic pronoun in every role, and counts only the others", () => {
-    const text = "xazawan zozan dalahen vahahal. zrewor dozan vezebel. zozan varahal.";
+  it("keeps one topic pronoun in every role", () => {
+    const text = "xazawan zozan dalahen vahahal. zalaher dozan vezebel. zozan varahal.";
     assert.deepEqual(topics(text), ["zozan→xazawan", "dozan→xazawan", "zozan→xazawan"]);
-    assert.deepEqual(ordinals(text), ["zrewor→dalahen"]);
   });
 
   it("takes a role compound as the topic, and returns to it by whole stem", () => {
@@ -296,9 +333,8 @@ describe("resolve — topic (pronouns.md#topic)", () => {
     assert.deepEqual(topics("xazawaxalahen. zozan varahal."), ["zozan→xazawaxalahen"]);
   });
 
-  it("takes a kind as the topic, and a name inside the stretch gets no number", () => {
+  it("takes a kind as the topic", () => {
     assert.deepEqual(topics("xodogal zazawan dozan vahahal. zozan varahal."), ["dozan→xodogal", "zozan→xodogal"]);
-    assert.deepEqual(ordinals("xazawan zazawan vowogal. zalahen varahal. zrewor vehahel."), ["zrewor→zalahen"]);
   });
 
   it("is not set by being named first, being the subject, or as for", () => {
@@ -317,24 +353,23 @@ describe("resolve — topic (pronouns.md#topic)", () => {
     assert.throws(() => parseText("azawan. alahen. xazawan zozan vowogal. azawan. alahen. zozan vehahel."), /topic pronoun/);
   });
 
-  it("restarts the ordinal count and the role pointers at every topic change", () => {
-    assert.throws(() => parseText("zazawan dalahen vahahal. xalahen zrewor vowogal."), /ordinal pronoun/);
+  it("restarts the role pointers at every topic change", () => {
     assert.throws(() => parseText("zazawan vowogal. xalahen zaxar vehahel."), /role pointer/);
-    assert.deepEqual(ordinals("zazawan vowogal. xazawar zalahen varahal. zrewor vehahel."), ["zrewor→zalahen"]);
+    assert.deepEqual(pointers("zazawan vowogal. xazawar zalahen varahal. zaxar vehahel."), ["zaxar→zalahen"]);
   });
 
   it("starts a new stretch when the current topic is returned to", () => {
-    assert.deepEqual(ordinals("xazawan zalahen vowogal. xazawar zahaben vowogal. zrewor vehahel."), ["zrewor→zahaben"]);
+    assert.throws(() => parseText("xazawan zalahen vowogal. xazawar zaxar vehahel."), /role pointer/);
   });
 
   it("lets a return to a linker stand as that linker again", () => {
-    const text = "xazawan zalahen vowogal. xodum zahaben vowogal. xodur zrewor vehahel.";
-    assert.deepEqual(ordinals(text), ["zrewor→zalahen"]);
+    const text = "xazawan zalahen vowogal. xodum zahaben vowogal. xodur zaxar vehahel.";
+    assert.deepEqual(pointers(text), ["zaxar→zahaben"]);
   });
 
-  it("leaves a written quote's interior out of the topic and the count", () => {
+  it("leaves a written quote's interior out of the topic and the tags", () => {
     assert.deepEqual(topics("xalahen zalahen vezebel d[xazawan zozan zodogal vowogal]. zozan vehahel."), ["zozan→xalahen"]);
-    assert.deepEqual(ordinals("zalahen vezebel d[zazawan vowogal]. zrewor vehahel."), ["zrewor→zalahen"]);
+    assert.throws(() => parseText("zalahen vezebel d[zazawan zwal vowogal]. zwar vehahel."), /tag -r or -m/);
   });
 
   it("takes -x on the topic pronoun, but never on the generic one", () => {
@@ -342,7 +377,6 @@ describe("resolve — topic (pronouns.md#topic)", () => {
     assert.deepEqual(topics("x<odoga> zozan gamazam."), ["zozan→x<odoga>"]);
     assert.deepEqual(topics("x@[onodan alahen] zozan vezehel."), ["zozan→x@[onodan alahen]"]);
     assert.throws(() => parseText("zobenx vowogal."), /generic pronoun/);
-    assert.deepEqual(ordinals("zoben vowogal. zazawan vehahel. zrewor vezebal."), ["zrewor→zazawan"]);
   });
 });
 

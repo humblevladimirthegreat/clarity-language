@@ -223,7 +223,8 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agaza
 | *anyway, Azawan …* (after a side topic) | **`or xazawar …`** | [Return](pronouns.md#topic-return), [resume hooks](hooks.md#hook-resume) |
 | *what are we talking about?* | **`yol zar gahehom.`** | [Asking about the topic](pronouns.md#topic-question) |
 | *one*, generic *you*, *people* (in general) | **`oben`** | [Generic pronoun](pronouns.md#generic-pronoun) |
-| *the latter* / *the former* (of two just named in the same role) | role pointer **`zaxar`** (*the latter*) / **`zaxor`** (*the other one*); for two names, ordinals count by first mention (`zredur`, `zrewor`) | [Role pointers](pronouns.md#role-pointers), [ordinal pronouns](pronouns.md#ordinal-pronouns) |
+| *the latter* / *the former* (of two just named in the same role) | role pointer **`zaxar`** (*the latter*) / **`zaxor`** (*the other one*); to keep two apart for longer, tag them when you name them (`zodogal zwal`, then `zwar`) | [Role pointers](pronouns.md#role-pointers), [tag pronouns](pronouns.md#tag-pronouns) |
+| *call it A*, *let A be a dog*, *suppose A tells E* | tag + **-l** after the phrase (**`zodogal zwal`**) or alone for a placeholder (**`zwal`**); then **`zwar`** | [Tag pronouns](pronouns.md#tag-pronouns) |
 
 ### Greetings {#greetings}
 

@@ -415,7 +415,7 @@ A span fills a role like any noun, so a [role pointer](pronouns.md#role-pointers
 
 The same holds for a loan word or any other span, and `duxal` is [another one](pronouns.md#a-new-one) of what the span holds.
 
-An aside gives role pointers nothing to point back to. Names inside a cite or an aside never count toward an [ordinal](pronouns.md#ordinal-pronouns) outside it, and a pointer outside never reaches a word inside one.
+An aside gives role pointers nothing to point back to. A [tag](pronouns.md#tag-pronouns) assigned inside a cite or an aside does not hold outside it, and a pointer outside never reaches a word inside one.
 
 A span in a `/v/` slot (`v[vazadal]`) has no resume pronoun.
 
@@ -449,7 +449,7 @@ A quoted question or command keeps its own [act word](speech-moves.md#speech-act
 
 ### Topics in a quote {#topic-quotes}
 
-A cite holds someone else's words, so a [topic](pronouns.md#topic) never carries into it or out of it. The inside of a cite starts with no topic, starts its own count for [ordinals](pronouns.md#ordinal-pronouns) and its own targets for [role pointers](pronouns.md#role-pointers), and may open with a topic word of its own. When the cite ends, your own topic and count are as they were.
+A cite holds someone else's words, so a [topic](pronouns.md#topic) never carries into it or out of it. The inside of a cite starts with no topic, no [tags](pronouns.md#tag-pronouns), and its own targets for [role pointers](pronouns.md#role-pointers), and may open with a topic word of its own. When the cite ends, your own topic and tags are as they were.
 
 A cite or opaque span can also be a topic word itself, under `/x/`: a titled work, a word as spelling (with the mention marker before it), or a foreign name.
 

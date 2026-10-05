@@ -1275,17 +1275,49 @@ function npCoordParts(cst: CstNode): CstNode[] {
   return childNodes(cst, "npCoordPart");
 }
 
+/** A bare single tag **-l** (`zwal`): assigns a tag, never a describer stack of its own. */
+function isTagAssign(item: NpItem | undefined): boolean {
+  if (item?.kind !== "package") return false;
+  const { head, adjs, glAdj } = item.package;
+  return head.family.kind === "tag" && head.ending === "l" && !head.plural && adjs.length === 0 && !glAdj;
+}
+
+/**
+ * A tag **-l** right after a phrase in the same role names that phrase, so it rides on the phrase's package and is not
+ * an item of its own (`zodogal zwal zagadul zwel zam`: two items). A tag with no phrase before it is a new referent.
+ */
+function foldTags(items: NpItem[]): NpItem[] {
+  const out: NpItem[] = [];
+  for (const item of items) {
+    const prev = out.at(-1);
+    if (isTagAssign(item) && item.kind === "package" && prev?.kind === "package" && !prev.package.tag && !isTagAssign(prev)) {
+      out[out.length - 1] = { kind: "package", package: { ...prev.package, tag: item.package.head } };
+    } else out.push(item);
+  }
+  return out;
+}
+
 function buildNpCoord(cst: CstNode): NpCoord {
   const parts = npCoordParts(cst);
-  const built = parts.map((part) => {
+  const built: NpCoord["parts"] = parts.map((part) => {
     const close = partJoinClose(part, "npJoinClose");
     const { join, shared, joinModifiers, factor } = joinFromClose(close);
-    const items: NpItem[] = [
+    const items: NpItem[] = foldTags([
       ...childNodes(part, "npConjunct").map(buildNpItem),
       ...childNodes(part, "bar").map((bar): NpItem => ({ kind: "bar", bar: buildHUnit(bar) })),
-    ];
+    ]);
     return { items, join, shared, ...(joinModifiers ? { joinModifiers } : {}), ...(factor ? { factor } : {}) };
   });
+  // A lone tag **-l** after a closed fence names the whole group (`zodogal zagadul zam zwal`).
+  const last = built.at(-1);
+  const closed = built.at(-2);
+  if (last && closed?.join && !last.join && last.items.length === 1 && isTagAssign(last.items[0])) {
+    const item = last.items[0]!;
+    if (item.kind === "package") {
+      built.pop();
+      built[built.length - 1] = { ...closed, tag: item.package.head };
+    }
+  }
   const joinTok = built.find((part) => part.join)?.join;
   let level: NpCoord["level"] = "z";
   if (joinTok) {

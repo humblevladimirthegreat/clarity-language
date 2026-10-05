@@ -35,7 +35,6 @@ When a root's spelling is not yet known (a proposal, a draft page, a planned ove
 
 - **Three letters:** rows backed by an overlay, plus the marked pronouns. These are annealed so short roots stay apart from each other.
 - **Five letters:** every other row, frequent senses first.
-- **Forced long:** `FORCE_LONG` in [`src/lexicon-place.ts`](../../src/lexicon-place.ts) keeps the *speaker* / *listener* pronoun rows at five letters on purpose ([D-13](design-decisions.md)).
 
 So a row that gains its first overlay needs a `convert-word --only` run to get a three-letter root. A row that loses its last overlay keeps its short root until the next full `--lexicon` run, which may lengthen it.
 
