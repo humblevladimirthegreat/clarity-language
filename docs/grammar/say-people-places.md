@@ -714,9 +714,9 @@ Examples:
 >
 > "A radio is big. A studio mic is of that kind."
 
-> `zeredel welavam gelavam. zemegul werer gelavam.`
+> `zeredel welavam gelavam. zemegul wereder gelavam.`
 >
-> z-radio | [w-very | g-big] . z-studio-mic | [w-RECORDED.weak | g-big]
+> z-radio | [w-very | g-big] . z-studio-mic | [w-←radio | g-big]
 >
 > "A radio is very big. A studio mic is that big too."
 
@@ -826,9 +826,9 @@ Examples:
 >
 > "A radio is red. A studio mic is such."
 
-> `zeredel welavam geredal. zemegul werer gelavam.`
+> `zeredel welavam geredal. zemegul wereder gelavam.`
 >
-> z-radio | [w-very | g-red] . z-studio-mic | [w-RECORDED.weak | g-big]
+> z-radio | [w-very | g-red] . z-studio-mic | [w-←radio | g-big]
 >
 > "A radio is very red. A studio mic is big to that degree."
 

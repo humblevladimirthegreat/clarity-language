@@ -718,7 +718,7 @@ export function morphRedundantWithLoose(
   return morphBody === looseNorm;
 }
 
-// The prefix before `←` is a holder host (`th-INFERRED-←agent.same`) or a lateral's direction (`h-west-th-←agent.same`).
+// The prefix before `←` is a holder host (`th-CLUES-←agent.same`) or a lateral's direction (`h-west-th-←agent.same`).
 const MORPH_TOKEN_RE =
   /^(?:(?:th|[zdbvgwhxy])l?-)?(?:[A-Z][A-Za-z.]*-(?=←)|[a-z][A-Za-z.-]*-th-(?=←))?←*[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]*(?:-x-[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]+)*(?:-x)?$|^[<>^]$|^\^-start$|^\^-end$/;
 

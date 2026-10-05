@@ -96,7 +96,7 @@ describe("overlay csv", () => {
   it("parses overlay rows with definition and mnemonic", () => {
     const overlays = parseOverlayCsv(readFileSync(overlayPath, "utf8"));
     assert.ok(overlays.length > 0);
-    const witnessed = overlays.find((row) => /witnessed evidential/i.test(row.definition) && row.pos === "th");
+    const witnessed = overlays.find((row) => /memory evidential/i.test(row.definition) && row.pos === "th");
     assert.ok(witnessed);
     assert.ok(witnessed.mnemonic.length > 0);
   });
@@ -174,7 +174,7 @@ describe("searchLexicon", () => {
     const fishing = rows.find((r) => r.concrete === "fishing");
     assert.ok(fishing);
     const witnessed = overlays.find(
-      (row) => /witnessed evidential/i.test(row.definition) && row.pos === "th",
+      (row) => /memory evidential/i.test(row.definition) && row.pos === "th",
     );
     assert.ok(witnessed);
     const results = searchLexicon(index, rows, witnessed.senseForm, { limit: 10, overlays, overlayIndex });
@@ -211,7 +211,7 @@ describe("searchLexicon", () => {
     const fishing = rows.find((r) => r.concrete === "fishing");
     assert.ok(fishing);
     const witnessed = overlays.find(
-      (row) => /witnessed evidential/i.test(row.definition) && row.pos === "th",
+      (row) => /memory evidential/i.test(row.definition) && row.pos === "th",
     );
     assert.ok(witnessed);
     const spelled = `h${witnessed.senseForm}`;

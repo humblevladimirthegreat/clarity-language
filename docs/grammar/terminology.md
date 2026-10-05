@@ -22,18 +22,19 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thegem` | [Causation](causation.md#cause) |
 | **CIRCUM** | Emotion locus: the atmosphere of the situation | `wulothuraor` | [Sakes](sakes.md#emotion-compose) |
 | **CITE** | A cite span: quoted wording | `d[azawan]` | [Spans](spans.md#writing) |
+| **CLUES** | Evidential: reasoned from clues about this case | `thunem` | [Knowing](knowing.md#evidentiality) |
 | **COLLAPSE** | Emotion locus: out of fight, giving up | `wanathumual` | [Sakes](sakes.md#emotion-compose) |
 | **CONSENT** | Consent of the affected party | `thuxegom` | [Sakes](sakes.md#consent) |
 | **DECISION** | Pick-firmness mood | `thehum` | [Intention](intention.md#decision) |
 | **FAWN** | Emotion locus: placating a target | `wanathumaem` | [Sakes](sakes.md#emotion-compose) |
-| **FELT** | Evidential: gut / body knowing | `thahom` | [Knowing](knowing.md#evidentiality) |
 | **FLOWING** | Emotion motion: steady, a current you can ride | `wanathumem` | [Sakes](sakes.md#emotion-compose) |
 | **FORBID** | Permission, negative | `thedel` | [Sakes](sakes.md#permission) |
 | **FORMER** | Episode standing: not the climate claimed now | `thenom` | [Knowing](knowing.md#residue) |
-| **INFERRED** | Evidential: reasoned from clues | `thunem` | [Knowing](knowing.md#evidentiality) |
 | **INTERNAL** | Emotion locus: mine, held inside | `gulothamar` | [Sakes](sakes.md#emotion-compose) |
-| **LIVE** | Evidential: concurrent / in-view observation | `thodom` | [Knowing](knowing.md#evidentiality) |
+| **INTUITION** | Evidential: gut sense you cannot fully spell out | `thahom` | [Knowing](knowing.md#evidentiality) |
+| **LIVE** | Evidential: sensed now, by any sense | `thodom` | [Knowing](knowing.md#evidentiality) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thovum` | [Knowing](knowing.md#may) |
+| **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevom` | [Knowing](knowing.md#evidentiality) |
 | **MENTION** | Mention marker: the span is a word or phrase as spelling | <code>glelel z&lt;odoga&gt; gamazam.</code> | [Spans](spans.md#mention) |
 | **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `thezum` | [Knowing](knowing.md#mirative) |
 | **NAME** | A package titled with **-n** | `zebevul zabodel zan.` | [Joins](joins.md#named-list) |
@@ -43,7 +44,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **PATTERN** | Evidential: from regularity | `thobam` | [Knowing](knowing.md#evidentiality) |
 | **PERMIT** | Permission, positive | `thegol` | [Sakes](sakes.md#permission) |
 | **PLAN** | Intention-framing mood | `thamam` | [Intention](intention.md#plan-predict) |
-| **RECORDED** | Evidential: documented / playback / scheduled | `therem` | [Knowing](knowing.md#evidentiality) |
+| **REPORTED** | Evidential: said or written by someone else | `thewam` | [Knowing](knowing.md#evidentiality) |
 | **REQUIRE** | Requirement (*must*) without a sake | `thumel` | [Sakes](sakes.md#requirement) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `thamom` | [Knowing](knowing.md#residue) |
 | **RESISTING** | Emotion locus: pushing against a target | `wanathumuer` | [Sakes](sakes.md#emotion-compose) |
@@ -51,12 +52,9 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **SCOPE** | Scope island `{ … }` | `{ hegewem zodogal geredal }` | [Spans](spans.md#scope-islands) |
 | **SEEKING** | Emotion locus: turning to someone for comfort | `wanathumoem` | [Sakes](sakes.md#emotion-compose) |
 | **STILL** | Emotion motion: not moving (held, frozen, numb) | `wanathumol` | [Sakes](sakes.md#emotion-compose) |
-| **STORY** | Evidential: narrative / lore | `thozem` | [Knowing](knowing.md#evidentiality) |
 | **SURGING** | Emotion motion: in waves or spikes | `wulothuraor` | [Sakes](sakes.md#emotion-compose) |
-| **TOLD** | Evidential: hearsay | `thewam` | [Knowing](knowing.md#evidentiality) |
 | **UNPLACED** | Emotion locus: can't place where it comes from | `wulothuruom` | [Sakes](sakes.md#emotion-compose) |
 | **WANT** | Desire mood: lasting / unstated / passing | `thohum` | [Intention](intention.md#want) |
-| **WITNESSED** | Evidential: firsthand memory (reconstructive) | `thevom` | [Knowing](knowing.md#evidentiality) |
 
 **Compare with:** [quasi](#quasi) (`ROOTl-e-`) is not **NOTIONAL**.
 
@@ -348,9 +346,15 @@ Endings on an evidential channel: **-l** strong evidence, **-m** default, **-r**
 
 ### Evidentiality
 
-Closed `/th/` how-you-know roots.
+Closed `/th/` how-you-know roots: six channels, two direct (LIVE, MEMORY), two reasoned (PATTERN, CLUES), one received (REPORTED), one internal (INTUITION).
 
 [Knowing](knowing.md#evidentiality)
+
+### Frame (carried channel)
+
+A channel, NOTIONAL, or holder that keeps covering your later claims with no channel, until a new frame, a written statement word, *by the way*, or a goodbye.
+
+[Knowing](knowing.md#carry-forward)
 
 ### Residue / former climate
 

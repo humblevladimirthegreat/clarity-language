@@ -41,7 +41,8 @@ IDs are stable (code and other meta pages cite them). Retired IDs are not reused
 | D-38 | `th#1` as *first-hand* (`threwol`) | first-hand is a live look or a memory, and the channels keep those apart because a memory can be wrong; a bare *first-hand* would claim the warrant without saying which | knowing.md, numbers.md |
 | D-39 | A single-item clause join (`A xul` *not the case that A*) | said aloud, `A xul.` before a new sentence `B` sounds like `A xul B` (*neither A nor B*) when the pause is missed, which flips the next claim. Deny or single out the verb or noun (`vowogal vul`, `zazawan zal`). Parser: `clauseSingleItem` | joins.md |
 | D-40 | A bare role compound is not a kind or occupation (`zaxedehol` is *someone who teaches*; *a teacher* is `zaxedehothel`) | a kind reading by default turns one act into a claim about someone's nature (*one fight makes a fighter*), the shortcut label scope exists to slow down. The usual role takes practiced-role **`the`**, so the trait is chosen, not implied. Rejected: kind by default with scope only to narrow it, and a kind reading only on `/ɡ/` (the same word would then reach differently by slot) | roles.md |
-| D-41 | `th#N` after LIVE or WITNESSED (`thodom thredul`) | the number counts hands between the event and you, and these channels are first-hand by definition (same reason as D-38), so the pair contradicts itself. The count is of hands on the evidence, never reasoning steps (INFERRED) and never reliability (the channel ending). Parser: `handDepthChannel` | knowing.md, numbers.md |
+| D-41 | `th#N` after LIVE or MEMORY (`thodom thredul`) | the number counts hands between the event and you, and these channels are first-hand by definition (same reason as D-38), so the pair contradicts itself. The count is of hands on the evidence, never reasoning steps (CLUES) and never reliability (the channel ending). Parser: `handDepthChannel` | knowing.md, numbers.md |
+| D-42 | `/th/` on the record or scroll root (`therem`, `thozem`) | either would be read as a channel, and each bundles jobs the six channels keep apart: footage is your own senses (LIVE / MEMORY, and footage you watched can be misremembered), a document is someone else's word (REPORTED), a schedule is a PLAN, and a tale is NOTIONAL when made up or REPORTED when passed on as true. A stance word on these roots would blur exactly those lines. Parser: `retiredChannelRoot` | knowing.md |
 
 ## Rejected alternatives
 
@@ -70,6 +71,13 @@ A plan with both an owner and a date keeps the person in PLAN's hosted `/b/` and
 ### Stand-in dependents
 
 A dependent runs to the end of the written sentence, so `dorl P xol Q` is *whether P or Q*. Rejected: a join that closes everything before it, main clause included. That left *whether P or Q* with different subjects no route except asking the question and pointing back with `dorth`.
+
+### Channel frames
+
+- **No reset at every turn.** A bare answer, a tag, a call, an interjection, and a narrator's own question all sit inside a story. A question or command already keeps the frame off its own body (a channel in a question is the listener's grounds), so it needs no reset to stay clear of it.
+- **No reset at a topic change.** A story moves from one person to the next; topics keep no stack, so a return could not restore the frame; and `xevavem` *next* is how a narrative sequences. Only `xavazem` *by the way*, a digression, ends it.
+- **No frame shared across speakers.** A frame is one speaker's evidence. A reply that ended it would cut off a story the first speaker is still telling, and a reply that inherited it would claim evidence the replier does not have.
+- **No carried frame for a time pole's offset.** A signed offset on a pole still needs a channel in its own clause, so each clause shows its warrant to a reader who starts there.
 
 ### Holders
 

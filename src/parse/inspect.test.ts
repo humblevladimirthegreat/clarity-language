@@ -35,7 +35,7 @@ describe("inspectText", () => {
 
   it("uses overlay definition for closed mood", () => {
     const witnessed = [...tables.overlays.values()].find(
-      (o) => o.pos === "th" && /witnessed evidential/i.test(o.definition),
+      (o) => o.pos === "th" && /memory evidential/i.test(o.definition),
     );
     assert.ok(witnessed);
     const result = inspectText(`th${witnessed.senseForm}`, tables);
@@ -43,7 +43,7 @@ describe("inspectText", () => {
     assert.equal(token?.kind, "word");
     if (token?.kind !== "word") return;
     assert.equal(token.word.reading, "overlay");
-    assert.equal(token.gloss, "WITNESSED");
+    assert.equal(token.gloss, "MEMORY");
   });
 
   it("marks unknown foreign payloads", () => {

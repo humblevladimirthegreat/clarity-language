@@ -132,7 +132,7 @@ function overlaySenseForm(word: MorphWord): string | null {
   return null;
 }
 
-/** True when the word is a closed overlay sense form for its PoS (`therar` TOLD.weak, not a resume). */
+/** True when the word is a closed overlay sense form for its PoS (`thewar` REPORTED.weak, not a resume). */
 export function hasClosedOverlay(word: MorphWord, tables: ClassifyTables): boolean {
   const senseForm = overlaySenseForm(word);
   return Boolean(senseForm && word.pos && tables.overlays.has(overlayKey(word.pos, senseForm)));
@@ -431,9 +431,9 @@ function hostOverlay(word: MorphWord, tables: ClassifyTables): { hostOverlay?: L
 }
 
 /** Channels whose hosted `/b/` may be a clause: the grounds, by inference or by pattern (knowing.md#evidence-clause). */
-const GROUNDS_CHANNELS = new Set(["INFERRED", "PATTERN"]);
+const GROUNDS_CHANNELS = new Set(["CLUES", "PATTERN"]);
 
-/** An INFERRED or PATTERN `/th/` channel, with or without a holder seam (`thevem`, `thabelazawan`). */
+/** A CLUES or PATTERN `/th/` channel, with or without a holder seam (`thevem`, `thabelazawan`). */
 export function isGroundsChannel(word: LexWord, tables: ClassifyTables): boolean {
   if (word.pos !== "th") return false;
   const family = word.family;

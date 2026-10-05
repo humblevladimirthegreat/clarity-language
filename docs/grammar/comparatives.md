@@ -673,16 +673,14 @@ Intermediate ranked against a plan, and [sake bars](sakes.md#sake-bars) rank aga
 |-----|---------------|---------|
 | met sake `thegatham`, `thoyutham`, … ([sake bars](sakes.md#sake-bars)) | what that sake needs | *enough* / *too much* / *not enough* |
 | LIVE `thodom` | how it looks | *than it looks* |
-| WITNESSED `thevom` | how you remember it | *than I remember* / *than last time* |
-| RECORDED `therem` | the record or the schedule | *than scheduled* / *than on paper* |
+| MEMORY `thevom` | how you remember it | *than I remember* / *than last time* |
 | PATTERN `thobam` | the trail of cases | *than usual* / *normal* |
-| INFERRED `thunem` | what was worked out | *than calculated* / *than it should be* |
-| TOLD `thewam` | what was said | *than advertised* / *than they said* |
-| FELT `thahom` | your gut expectation | *than I expected* |
-| STORY `thozem` | the tales | *than the stories say* |
+| CLUES `thunem` | what was worked out | *than calculated* / *than it should be* |
+| REPORTED `thewam` | what was said or written | *than advertised* / *than they said* / *than the stories say* |
+| INTUITION `thahom` | your gut expectation | *than I expected* |
 | FORMER `thenom` | how it used to be | *than it used to be* / *increasingly* |
 | NOTIONAL `thavom` | the imagined case | *than imagined* / *than in theory* |
-| PLAN `thamam` | the plan | *than planned* |
+| PLAN `thamam` | the plan or the schedule | *than planned* / *than scheduled* |
 | WANT `thohul` / `thohum` / `thohur` | the level wanted | *than wanted* / *than I wanted* |
 | ABIL `thezexal` | what can be done | *as … as possible* |
 | REQUIRE `thumel` / `thumem` / `thumer` | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* |
@@ -694,19 +692,19 @@ The bar's ending keeps its own job: on a channel it is [evidence strength](knowi
 
 > `zazawan thevom zel gelavam.`
 >
-> [z-Azawan | th-WITNESSED | z-rank/more | g-big]
+> [z-Azawan | th-MEMORY | z-rank/more | g-big]
 >
 > "Azawan is bigger than I remember."
 
 > `zubugal thewam zuel gagazam.`
 >
-> [z-book | th-TOLD | z-rank/less | g-clarity]
+> [z-book | th-REPORTED | z-rank/less | g-clarity]
 >
 > "The book is less clear than advertised."
 
 > `zazawan thahom zel gezebul.`
 >
-> [z-Azawan | th-FELT | z-rank/more | g-sleepy]
+> [z-Azawan | th-INTUITION | z-rank/more | g-sleepy]
 >
 > "Azawan is sleepier than I expected."
 
@@ -722,11 +720,11 @@ The bar's ending keeps its own job: on a channel it is [evidence strength](knowi
 >
 > "The book is lighter than Alahen wanted."
 
-The bar's `/b/` works as it does on the clause. On TOLD it is the source, and on WANT, REQUIRE, PERMIT, and CONSENT it is the person who wants, demands, grants, or agrees. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
+The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on WANT, REQUIRE, PERMIT, and CONSENT it is the person who wants, demands, grants, or agrees. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
 
 > `zubugal thewam balahen zuel gagazam.`
 >
-> [z-book | [th-TOLD | b-Alahen] | z-rank/less | g-clarity]
+> [z-book | [th-REPORTED | b-Alahen] | z-rank/less | g-clarity]
 >
 > "The book is less clear than Alahen said."
 
@@ -762,7 +760,7 @@ To rank one kind against another, keep one kind as the item and put the other in
 >
 > "Rested people work more successfully than exhausted people."
 
-An INFERRED or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): the next sentence is the grounds you worked the bar out from.
+A CLUES or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): the next sentence is the grounds you worked the bar out from.
 
 **Ability.** The ability word [`eze`](intention.md#ability-fallback) as the bar is the limit of **what can be done**. A tie against **`thezexal`** is *as … as possible*. The ability vowel says how fixed that limit is, so rank **`zel`** against **`thezexel`** is *more than can be done for now*, and against **`thezexul`** *more than could ever be done*.
 
@@ -851,7 +849,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The bar
 | *pattern* | `obam` | `obal` *paw-prints* |
 | *memory* | `evom` | `evol` *fishing* |
 | *hearsay* | `ewam` | `ewal` *ear* |
-| *felt* | `ahom` | `ahol` *heart* |
+| *intuition* | `ahom` | `ahol` *heart* |
 | *former* | `enom` | `enol` *empty-nest* |
 | *hope* | `evegem` | `evegel` *crossed-fingers* |
 | *capacity* | `ezem` | `ezel` *cereal* |
@@ -872,7 +870,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The bar
 ::: details Show answer
 `zalahen thevom zuel gebudam.`
 
-[z-Alahen | th-WITNESSED | z-rank/less | g-artistry]
+[z-Alahen | th-MEMORY | z-rank/less | g-artistry]
 :::
 
 **3.** *Ahaben is showier than advertised.*
@@ -880,7 +878,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The bar
 ::: details Show answer
 `zahaben thewam zel gahudom.`
 
-[z-Ahaben | th-TOLD | z-rank/more | g-showmanship]
+[z-Ahaben | th-REPORTED | z-rank/more | g-showmanship]
 :::
 
 **4.** *Azawan is as showy as possible.*
@@ -896,7 +894,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The bar
 ::: details Show answer
 `zalahen thewam bahaben zel hral vezehel.`
 
-[z-Alahen | [th-TOLD | b-Ahaben] | z-rank/more | h-how-often] | v-sing
+[z-Alahen | [th-REPORTED | b-Ahaben] | z-rank/more | h-how-often] | v-sing
 :::
 
 **6.** *Ahaben is more artistic than they used to be.*
@@ -912,7 +910,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The bar
 ::: details Show answer
 `zazawan zel gahudom thewam.`
 
-[z-Azawan | z-rank/more | g-showmanship] | th-TOLD
+[z-Azawan | z-rank/more | g-showmanship] | th-REPORTED
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
@@ -921,7 +919,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The bar
 
 ::: details Show answer
 
-[z-Alahen | th-FELT | z-rank/more | g-sing]
+[z-Alahen | th-INTUITION | z-rank/more | g-sing]
 
 *Alahen sings better than I expected.*
 :::

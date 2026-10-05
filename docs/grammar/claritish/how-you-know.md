@@ -8,14 +8,14 @@ English doesn't mark whether a claim was seen, remembered, worked out, or heard 
 
 | Drop-in | Channel |
 |---------|---------|
-| `thodom` | live: you're watching it now |
-| `thevom` | from memory (you saw it before) |
-| `therem` | on record, a recording, or a schedule |
+| `thodom` | live: you're seeing, hearing, or feeling it now |
+| `thevom` | from memory (you sensed it before) |
 | `thobam` | from the pattern (similar cases you know of) |
-| `thunem` | worked out from clues |
-| `thewam` | someone told you |
-| `thahom` | a gut feeling |
-| `thozem` | per the tale (a story that gets told) |
+| `thunem` | worked out from clues about this case |
+| `thewam` | reported: someone told you, or you read it |
+| `thahom` | intuition: a gut sense |
+
+A recording counts as your own senses: `thodom` while you watch it, `thevom` once you have. A document counts as a report.
 
 Swap the ending to say **how strong the evidence is**: **-l** strong, **-m** the default, **-r** weak. `thewar` is a rumor, `thevol` is a vivid memory, and `thahor` is a faint hunch. For a pattern, `thobal` is a well-established one and `thobar` rests on a few cases. Strength is how much the claim rests on, not how likely the event is. A solid source can still report something unlikely.
 
@@ -25,11 +25,17 @@ This is the same settled-to-passing scale as in How sure are you?: solid evidenc
 
 > The server is down `thodom`.  
 > Marco quit `thewar`.  
-> The meeting got moved `therel`.  
+> The meeting got moved `thewal`.  
 > I locked the door `thevor`.  
 > This bug is in the parser `thunem`, `thovum`.
 
-`therel` is an official schedule; `thevor` is a hazy memory. The last example says you worked it out from clues **and** it's only a *could be*. How you know and how sure you are are separate questions, so you can answer both.
+`thewal` is a reliable source, like an official notice; `thevor` is a hazy memory. The last example says you worked it out from clues **and** it's only a *could be*. How you know and how sure you are are separate questions, so you can answer both.
+
+When you tell a story, you only need the drop-in on the first sentence. It covers the sentences after it until you name a different one:
+
+> Marco quit `thewam`. He took the stapler. He didn't say goodbye.
+
+All three are what you heard. Plain English loses that by the second sentence.
 
 ## Practice {#practice}
 
@@ -38,7 +44,7 @@ Add the drop-in that fits the note.
 **1.** *The bakery closes at six.* (you read it on their official site)
 
 ::: details Show answer
-The bakery closes at six `therel`.
+The bakery closes at six `thewal`.
 :::
 
 **2.** *Dana's engaged.* (a rumor)
@@ -59,4 +65,4 @@ The bus is late `thobam`.
 Something's wrong `thahom`.
 :::
 
-<!-- Source (editors): knowing.md#evidentiality, knowing.md#evidence-strength. -->
+<!-- Source (editors): knowing.md#evidentiality, knowing.md#evidence-strength, knowing.md#carry-forward. -->

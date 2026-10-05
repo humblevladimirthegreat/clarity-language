@@ -544,7 +544,7 @@ English *will* can state a plan or a forecast. A plan uses [PLAN](#plan-predict)
 
 > `zalahen thamam thunel bral vehahel.`
 >
-> z-Alahen | th-plan-itinerary | [th-INFERRED.strong | b-later] | v-sit
+> z-Alahen | th-plan-itinerary | [th-CLUES.strong | b-later] | v-sit
 >
 > "Alahen plans to sit, and the clues strongly say it will happen."
 

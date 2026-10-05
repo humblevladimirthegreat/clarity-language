@@ -290,6 +290,10 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
     throw new ConstructionError("topicOfTopic", word.raw);
   }
   if (word.family.kind === "tag") enforceTag(word);
+  // The record and scroll roots are no channel: a record is REPORTED, a tale NOTIONAL (knowing.md#evidentiality).
+  if (word.pos === "th" && (stemRoot === CLOSED.record || stemRoot === CLOSED.scroll) && word.ending !== "n") {
+    throw new ConstructionError("retiredChannelRoot", word.raw);
+  }
   if (word.pos === "th" && word.family.kind === "number") enforceStanceNumber(word, word.family.stem);
   if (word.pos === "w" && word.family.kind === "number") enforceDegreeNumber(word, word.family.stem);
   if (word.plural && isGenericPronoun(word)) throw new ConstructionError("genericPlural", word.raw);
@@ -456,23 +460,23 @@ function isWarrant(word: LexWord): boolean {
   return word.pos === "th" && (word.overlay?.kind === "evidential" || word.overlay?.kind === "plan");
 }
 
-/** WITNESSED takes only an earlier offset, LIVE none, and PLAN only a later one (knowing.md#dated-channel). */
+/** MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one (knowing.md#dated-channel). */
 function enforceChannelSign(word: LexWord, hosted: HUnit["hosted"]): void {
   const sign = offsetSign(hosted?.bound, hosted?.amount);
   if (!sign || word.pos !== "th" || !word.overlay) return;
   const base = word.overlay.gloss.split(".")[0];
   const wrong =
-    (word.overlay.kind === "evidential" && base === "WITNESSED" && sign !== "-") ||
+    (word.overlay.kind === "evidential" && base === "MEMORY" && sign !== "-") ||
     (word.overlay.kind === "evidential" && base === "LIVE") ||
     (word.overlay.kind === "plan" && sign !== "+");
   if (wrong) throw new ConstructionError("channelOffsetSign", `${word.raw} ${hosted!.bound.raw}${hosted!.amount ? ` ${hosted!.amount.raw}` : ""}`);
 }
 
-/** A first-hand channel: LIVE or WITNESSED, which no hand count can follow (knowing.md#hand-depth). */
+/** A first-hand channel: LIVE or MEMORY, which no hand count can follow (knowing.md#hand-depth). */
 function isFirstHandChannel(word: LexWord): boolean {
   if (word.pos !== "th" || word.overlay?.kind !== "evidential") return false;
   const base = word.overlay.gloss.split(".")[0];
-  return base === "LIVE" || base === "WITNESSED";
+  return base === "LIVE" || base === "MEMORY";
 }
 
 /** `th#N` counts hands between the event and you, so a first-hand channel in the same clause contradicts it. */

@@ -45,6 +45,9 @@ const CLOSED_ROWS = {
   southwest: { emoji: "↙️", root: "azawe" },
   west: { emoji: "⬅️", root: "eweza" },
   northwest: { emoji: "↖️", root: "onove" },
+  // no channel on `/th/` (knowing.md#evidentiality): a record is REPORTED, a tale NOTIONAL
+  record: { emoji: "⏺️", root: "ere" },
+  scroll: { emoji: "📜", root: "oze" },
   // template sample fillers
   walk: { emoji: "🚶", root: "owoga" },
   ballot: { emoji: "🗳️", root: "ahu" },

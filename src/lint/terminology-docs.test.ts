@@ -33,7 +33,7 @@ describe("lintTerminology", () => {
 
   it("collects overlay and glosser labels", () => {
     const labels = glossLabels(tables.overlays.values());
-    for (const label of ["WITNESSED", "PERMIT", "INTERNAL", "SURGING", "CITE"]) assert.ok(labels.has(label), label);
+    for (const label of ["MEMORY", "PERMIT", "INTERNAL", "SURGING", "CITE"]) assert.ok(labels.has(label), label);
   });
 
   it("flags a printed label with no row", () => {

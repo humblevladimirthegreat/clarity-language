@@ -97,7 +97,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("gagawal", "g-quiet");
     expectLine("gagawam", "g-volume");
     expectLine("hevol", "h-fishing");
-    expectLine("thevom", "th-WITNESSED");
+    expectLine("thevom", "th-MEMORY");
     expectLine("gahazam", "g-home");
   });
 
@@ -275,7 +275,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
   it("resume with in-text antecedent", () => {
     expectLine(
       "yohuxazovan. xezom zohuxazovar thevom zerehel.",
-      "y-Ohu-x-Azovan . x-however | z-←Ohu-x-Azovan | th-WITNESSED | z-rain",
+      "y-Ohu-x-Azovan . x-however | z-←Ohu-x-Azovan | th-MEMORY | z-rain",
     );
   });
 });
@@ -470,8 +470,8 @@ describe("compareMorphGloss", () => {
   });
 
   it("a holder seam glosses its host overlay and the holder", () => {
-    expectLine("zalahen thunemazawan vedabal", "z-Alahen | th-INFERRED-Azawan | v-departure");
-    expectLine("zalahen thewarazawan vedabal", "z-Alahen | th-TOLD.weak-Azawan | v-departure");
+    expectLine("zalahen thunemazawan vedabal", "z-Alahen | th-CLUES-Azawan | v-departure");
+    expectLine("zalahen thewarazawan vedabal", "z-Alahen | th-REPORTED.weak-Azawan | v-departure");
     expectLine("zalahen thovulazawan vedabal", "z-Alahen | th-MAY-find-out-Azawan | v-departure");
     expectLine("zalahen thavomazawan vedabal", "z-Alahen | th-NOTIONAL-Azawan | v-departure");
   });
@@ -479,9 +479,9 @@ describe("compareMorphGloss", () => {
   it("a holder takes resume -r and associative -x like any noun", () => {
     expectLine(
       "zazawan vedabal. zalahen thunemazawar vehahel.",
-      "z-Azawan | v-departure . z-Alahen | th-INFERRED-←Azawan | v-sit",
+      "z-Azawan | v-departure . z-Alahen | th-CLUES-←Azawan | v-sit",
     );
-    expectLine("zalahen thunemazawanx vedabal", "z-Alahen | th-INFERRED-Azawan-x | v-departure");
+    expectLine("zalahen thunemazawanx vedabal", "z-Alahen | th-CLUES-Azawan-x | v-departure");
   });
 
   it("a hook + /b/ after a landmark describes that landmark; after a recipient it is same-role", () => {
@@ -529,7 +529,7 @@ describe("compareMorphGloss", () => {
     expectLine("zazawan vowogal. zaxar vehahel", "z-Azawan | v-walk . z-←agent.same | v-sit");
     expectLine("zazawan vahahal daxer", "z-Azawan | v-see | d-←agent.self");
     expectLine("zazawan vowogal. zaexarx vehahel", "z-Azawan | v-walk . z-←instrument.same-x | v-sit");
-    expectLine("zazawan vowogal. zalahen thunemaxar vedabal", "z-Azawan | v-walk . z-Alahen | th-INFERRED-←agent.same | v-departure");
+    expectLine("zazawan vowogal. zalahen thunemaxar vedabal", "z-Azawan | v-walk . z-Alahen | th-CLUES-←agent.same | v-departure");
   });
 
   it("quasi numeric derivation is English", () => {
@@ -563,7 +563,7 @@ describe("morphGlossLine — th stance letter", () => {
     expectLine("thovum zazawan vehahel.", "th-MAY | z-Azawan | v-sit");
     expectLine("zazawan wezebul thodom vahahal ahahalul.", "z-Azawan | [w-sleepy | th-LIVE] | v-see | eye-leave");
     expectLine("thevem barl zazawan vehahel.", "[th-because | b-that-clause] | z-Azawan | v-sit");
-    expectLine("thunem barl zazawan vehahel.", "[th-INFERRED | b-that-clause] | z-Azawan | v-sit");
+    expectLine("thunem barl zazawan vehahel.", "[th-CLUES | b-that-clause] | z-Azawan | v-sit");
     expectLine("thobal bral barl zazawan vehahel.", "[th-PATTERN.strong | [b-later | b-that-clause]] | z-Azawan | v-sit");
     expectLine("zazawan vehahel th(zalahen vowogal).", "z-Azawan | v-sit | th-ASIDE[z-Alahen | v-walk]");
   });
@@ -575,7 +575,7 @@ describe("morphGlossLine — th stance letter", () => {
 
 describe("morphGlossLine — stance joins and emphatic prohibition", () => {
   it("glosses /th/ join fences", () => {
-    expectLine("zazawan vowogal thevom thul.", "z-Azawan | v-walk | th-WITNESSED | th-not");
+    expectLine("zazawan vowogal thevom thul.", "z-Azawan | v-walk | th-MEMORY | th-not");
     expectLine("zazawan vowogal thevem balahen thul.", "z-Azawan | v-walk | [th-because | b-Alahen] | th-not");
   });
 
@@ -632,8 +632,8 @@ describe("morphGlossLine — topic and generic pronouns", () => {
   });
   it("glosses the generic pronoun, and either one as a holder", () => {
     expectLine("zoben vezebal.", "z-ONE | v-sleep");
-    expectLine("xazawan thunemozan zalahen vedabal.", "x-Azawan | th-INFERRED-TOPIC | z-Alahen | v-departure");
-    expectLine("thunemoben zalahen vedabal.", "th-INFERRED-ONE | z-Alahen | v-departure");
+    expectLine("xazawan thunemozan zalahen vedabal.", "x-Azawan | th-CLUES-TOPIC | z-Alahen | v-departure");
+    expectLine("thunemoben zalahen vedabal.", "th-CLUES-ONE | z-Alahen | v-departure");
   });
   it("keeps the star and person roots ordinary on other endings", () => {
     expectLine("zozal vowogal.", "z-star | v-walk");

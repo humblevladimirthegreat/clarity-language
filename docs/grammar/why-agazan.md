@@ -137,7 +137,7 @@ Keeping cause apart from fault helps you explain what happened without blaming, 
 
 Surface common biases that make self-delusion easy.
 
-Claims can say how you know: memory, record, hearsay, pattern, inference. A general claim says whether it allows exceptions and how many cases it rests on.
+Claims can say how you know: memory, a report, a pattern, clues. A general claim says whether it allows exceptions and how many cases it rests on.
 
 A *because* or an *if* says what kind of link it claims. When the “must” is really an ought, the sentence shows the value behind it instead of treating a wish as necessity.
 
@@ -151,7 +151,7 @@ A guess, a rumor, a hazy memory, or a wish gets treated as settled fact, and a f
 
 It is easy to treat a *could be* that keeps looping in your head as settled fact, and to lump memory, hearsay, gut feel, and *maybe they left* together as if they were equally good grounds.
 
-[Evidentiality](knowing.md#evidentiality) lets a claim about the world name **how you know**: live look, memory, record, pattern, inference, hearsay, gut feeling, or story. Memory (**WITNESSED**) is recalling a scene from earlier, and memory can be wrong. A live look (**LIVE**) is seeing it while it is still in view.
+[Evidentiality](knowing.md#evidentiality) lets a claim about the world name **how you know**: a live look, memory, a pattern, clues, a report, or a gut sense. **MEMORY** is recalling a scene from earlier, and memory can be wrong. A live look (**LIVE**) is sensing it while it is still in view. Name the channel once and it carries over your next claims, so a whole story can rest visibly on one *so they say*.
 
 The [ending](knowing.md#evidence-strength) on that evidence word says how strong the evidence is (a vivid memory or a hazy one, a reliable source or a rumor), separately from how likely the claim is. Marking how you know helps you catch overconfidence and hearsay before you treat a take as settled fact.
 

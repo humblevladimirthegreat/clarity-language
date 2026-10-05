@@ -13,12 +13,12 @@ An English tense bundles up to three questions: **when** the event sits, **how y
 | English | You mean | Agazan |
 |---------|----------|--------|
 | *walks* (now) | you are watching it | LIVE **`thodom`** |
-| *walks* (now) | just a report | bare verb ([this stretch](intention.md#predict-evidentiality)) |
-| *walked* | you remember it | WITNESSED **`thevom`** |
-| *walked* | it is on record | RECORDED **`therem`** plus a `-` [offset](knowing.md#dated-channel) |
-| *walked* | going by clues or cases | INFERRED **`thunem`** / PATTERN **`thobam`** plus a `-` offset |
-| *walked* | they told you | TOLD **`thewam`** plus a `-` offset |
-| *walked* (telling a story) | it is a tale | TALE **`thozem`** on the first sentence; bare verbs after it go on telling the tale ([evidentiality](knowing.md#evidentiality)) |
+| *walks* (now) | no channel named | bare verb ([this stretch](intention.md#predict-evidentiality)), unless an earlier channel is still [carried](knowing.md#carry-forward) |
+| *walked* | you remember it | MEMORY **`thevom`** |
+| *walked* | going by clues or cases | CLUES **`thunem`** / PATTERN **`thobam`** plus a `-` offset |
+| *walked* | they told you, or you read it | REPORTED **`thewam`** plus a `-` [offset](knowing.md#dated-channel) |
+| *walked* (telling what happened) | one ground for the whole story | the channel and offset on the first sentence; bare verbs after it keep them ([carry forward](knowing.md#carry-forward)) |
+| *walked* (a made-up story) | it is fiction | NOTIONAL **`thavom`** on the first sentence; bare verbs after it stay in the story ([carry forward](knowing.md#carry-forward)) |
 | *walked yesterday* / *three hours ago* | a measured time back | channel + signed amount ([dated channel](knowing.md#dated-channel)) |
 | *has walked* | the outcome still counts | RESIDUE **`thamom`** |
 | *has already walked* | the change has come | **`hoham`** |
@@ -30,7 +30,7 @@ An English tense bundles up to three questions: **when** the event sits, **how y
 | *has stopped walking* | the state ended | **`hewem`** |
 | *will walk* | a plan | PLAN **`thamam`** |
 | *will walk* | a forecast | channel + **`bral`** ([forecast](knowing.md#forecast)) |
-| *is going to walk* | a plan, or clues say so | PLAN, or INFERRED + **`bral`** |
+| *is going to walk* | a plan, or clues say so | PLAN, or CLUES + **`bral`** |
 | *is about to walk* / *will walk soon* | a hair / a short while after now | **`brabul`** / **`brabum`** on a channel |
 | *just walked* | a hair before now | **`brubul`** on a channel |
 | *was going to walk* | intention as of a past moment | PLAN + *as-of* |
@@ -44,25 +44,25 @@ Every offset counts from now, or from the *as-of* now when one is set. No row ne
 
 **Needs:** [Live vs memory](knowing.md#live-vs-memory) · [Dated channel](knowing.md#dated-channel)
 
-English *Azawan walked* hides whether you saw it, read it, or were told. Choose the channel. A remembered sighting is WITNESSED. Add a `-` amount to say how long ago.
+English *Azawan walked* hides whether you saw it, read it, or were told. Choose the channel. A remembered sighting is MEMORY. Add a `-` amount to say how long ago.
 
 > `zazawan thevom vowogal.`
 >
-> z-Azawan | th-WITNESSED | v-walk
+> z-Azawan | th-MEMORY | v-walk
 >
 > "Azawan walked (I remember it)."
 
 > `zazawan thevom bazazam gruwol vowogal.`
 >
-> z-Azawan | [th-WITNESSED | [b-day | g-minus-one]] | v-walk
+> z-Azawan | [th-MEMORY | [b-day | g-minus-one]] | v-walk
 >
 > "I saw Azawan walk yesterday."
 
-Hearsay, records, and inference need their own `-` amount, because those channels do not fix the time.
+Reports and reasoning need their own `-` amount, because those channels do not fix the time.
 
 > `zazawan thewam bazazam gruwol vowogal.`
 >
-> z-Azawan | [th-TOLD | [b-day | g-minus-one]] | v-walk
+> z-Azawan | [th-REPORTED | [b-day | g-minus-one]] | v-walk
 >
 > "I hear Azawan walked yesterday."
 
@@ -166,7 +166,7 @@ English *will* is three different claims.
 
 > `zazawan thewam bazazam grawol vowogal.`
 >
-> z-Azawan | [th-TOLD | [b-day | g-one]] | v-walk
+> z-Azawan | [th-REPORTED | [b-day | g-one]] | v-walk
 >
 > "I hear Azawan walks tomorrow."
 
@@ -203,7 +203,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 
 > `zazawan thunem bazazam grazol vowogal.`
 >
-> z-Azawan | [th-INFERRED | [b-day | g-zero]] | v-walk
+> z-Azawan | [th-CLUES | [b-day | g-zero]] | v-walk
 >
 > "Azawan must be walking today."
 
@@ -423,7 +423,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 ::: details Show answer
 `zazawan thevom vowogal.`
 
-z-Azawan | th-WITNESSED | v-walk
+z-Azawan | th-MEMORY | v-walk
 :::
 
 **2.** *I hear Azawan walks tomorrow.*
@@ -431,7 +431,7 @@ z-Azawan | th-WITNESSED | v-walk
 ::: details Show answer
 `zazawan thewam bazazam grawol vowogal.`
 
-z-Azawan | [th-TOLD | [b-day | g-one]] | v-walk
+z-Azawan | [th-REPORTED | [b-day | g-one]] | v-walk
 :::
 
 **3.** *Alahen has already left.*

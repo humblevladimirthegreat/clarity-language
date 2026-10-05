@@ -38,19 +38,19 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *obviously* / *obvious* (it is in plain view) | `thodol` | LIVE, a clear full view |
-| *obviously* (the clues are strong) | `thunel` | INFERRED, strong clues |
-| *apparently* / *apparent* / *it seems* (from clues) | `thunem` | INFERRED, ordinary |
-| *apparently* (so they say) | `thewam` | TOLD |
+| *obviously* (the clues are strong) | `thunel` | CLUES, strong clues |
+| *apparently* / *apparent* / *it seems* (from clues) | `thunem` | CLUES, ordinary |
+| *apparently* (so they say) | `thewam` | REPORTED |
 | *apparently* (a glimpse) | `thodor` | LIVE, a glimpse |
 | *presumably* (by the usual pattern) | `thobam` | PATTERN |
-| *presumably* (a weak clue) | `thuner` | INFERRED, thin |
+| *presumably* (a weak clue) | `thuner` | CLUES, thin |
 | *guess* / *I guess* / *perhaps* / *maybe* / *possibly* | `thovum` | MAY, could be |
 | *guess* (a passing thought) | `thovur` | MAY, who knows |
-| *guess* (a gut hunch) | `thahor` | FELT, faint |
+| *guess* (a gut hunch) | `thahor` | INTUITION, faint |
 | *assume* / *suppose* | `thavor` | NOTIONAL, toy with it for now |
 | *personally* / *in my view* | `hahehom bamagon` | topic: as for me |
 | *by the way* / *aside* (in passing) | `th( … )` | aside fence, any place a stance word may sit |
-| *necessarily* / *it follows* | `thunel` | INFERRED, strong clues |
+| *necessarily* / *it follows* | `thunel` | CLUES, strong clues |
 | *basically* / *fundamentally* | `hadawam` | manner adverb on *fundamental* |
 | *overall* / *on the whole* | `hahehom bual` | as for everything |
 | *automatically* / *by itself* | `zubugal vowogal thegem bubugar.` | CAUSE, with the doer resumed as its own cause |
@@ -60,7 +60,7 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 
 > `zazawan thunel vowogal.`
 >
-> z-Azawan | th-INFERRED.strong | v-walk
+> z-Azawan | th-CLUES.strong | v-walk
 >
 > "Obviously Azawan walks."
 
@@ -216,7 +216,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *exist* | `zodogal.` | a lone noun: *there is a dog* |
 | *happen* / *occur* | the event's own verb: `verehel.` | no helper word |
 | *depend on* | `zazawan vowogal tholum thevem berehel.` | only because of rain |
-| *allege* / *claim* | `thewam` on the clause | TOLD: so they say |
+| *allege* / *claim* | `thewam` on the clause | REPORTED: so they say |
 | *compare* / *exceed* | `zazawan zalahen zel gelavam.` | rank on a shared scale ([comparatives](comparatives.md#comparatives-e)) |
 
 > `zazawan hoham vubugam darl zodogal varahal.`
@@ -253,7 +253,7 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 | *mistake* / *error* | `gegegal gul` or `thevel barl` | not correct, or at fault |
 | *assumption* / *premise* | `thavor` | NOTIONAL, toy with it |
 | *truth* / *to tell the truth* | `thaveham` | revelation |
-| *experience* (first-hand) | `thevom` | WITNESSED, remembered as seen |
+| *experience* (first-hand) | `thevom` | MEMORY, remembered as seen |
 
 > `zazawan vowogal thanathom.`
 >
@@ -273,7 +273,7 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 
 **Needs:** [Motive](sakes.md#sake-preference) · [Want](intention.md#want) · [MAY](knowing.md#may) · [Speech manner](speech-moves.md#speech-manner) · [Every bar](comparatives.md#stance-bars)
 
-English *biased* says a view may be bent by what the holder wants from it. Agazan says that outright: put a [motive](sakes.md#sake-preference) on the thinking, so the view is held *for a stake*. Name the sake when you know which one, or use the unspecified sake **`ega`**. *Wishful thinking* and *I'd like to believe* are a want on the thinking itself. *Overconfident* ranks your trust against what the clues warrant: an INFERRED [bar](comparatives.md#stance-bars) on *trust*.
+English *biased* says a view may be bent by what the holder wants from it. Agazan says that outright: put a [motive](sakes.md#sake-preference) on the thinking, so the view is held *for a stake*. Name the sake when you know which one, or use the unspecified sake **`ega`**. *Wishful thinking* and *I'd like to believe* are a want on the thinking itself. *Overconfident* ranks your trust against what the clues warrant: a CLUES [bar](comparatives.md#stance-bars) on *trust*.
 
 | English | Agazan | Reading |
 |---------|--------|---------|
@@ -292,7 +292,7 @@ English *biased* says a view may be bent by what the holder wants from it. Agaza
 
 > `zamagon thunem zel gegehom.`
 >
-> [z-speaker | th-INFERRED | z-rank/more | g-trust]
+> [z-speaker | th-CLUES | z-rank/more | g-trust]
 >
 > "I'm overconfident."
 
@@ -317,11 +317,11 @@ English *because* and *if* can hide whether you **assert the dependent as a worl
 >
 > "Azawan walks if it rains." Rain is not asserted; the main sentence is under that opportunity.
 
-English *If he'd left, the door would still be locked* is not this pole. Write bookmark [*as-of*](relations.md#as-of) (`huram`) plus [RESIDUE](knowing.md#residue) / a [forecast](knowing.md#forecast) (a channel such as INFERRED plus `bral`) as needed, with **no** `thoyem`. `thoyem` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `thoyem` plus a **date** in *as-of* `/b/`.
+English *If he'd left, the door would still be locked* is not this pole. Write bookmark [*as-of*](relations.md#as-of) (`huram`) plus [RESIDUE](knowing.md#residue) / a [forecast](knowing.md#forecast) (a channel such as CLUES plus `bral`) as needed, with **no** `thoyem`. `thoyem` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `thoyem` plus a **date** in *as-of* `/b/`.
 
 > `zoyel galagal thamom thunem bral huram barl zalahen vedabal.`
 >
-> [z-door | g-locked] | th-RESIDUE | [th-INFERRED | b-later] | [h-as-of.bookmark | b-that-clause] | z-Alahen | v-departure
+> [z-door | g-locked] | th-RESIDUE | [th-CLUES | b-later] | [h-as-of.bookmark | b-that-clause] | z-Alahen | v-departure
 >
 > "If Alahen had left, the door would still be locked."
 
@@ -349,7 +349,7 @@ When the condition is known to be false (*If Alahen had left…*), keep the book
 
 > `zoyel galagal thamom thunem bral huram barl zalahen thavor vedabal.`
 >
-> [z-door | g-locked] | th-RESIDUE | [th-INFERRED | b-later] | [h-as-of.bookmark | b-that-clause] | z-Alahen | th-NOTIONAL-suppose | v-departure
+> [z-door | g-locked] | th-RESIDUE | [th-CLUES | b-later] | [h-as-of.bookmark | b-that-clause] | z-Alahen | th-NOTIONAL-suppose | v-departure
 >
 > "If Alahen had left, the door would still be locked." (Alahen did not leave)
 
@@ -359,7 +359,7 @@ English often uses *because* for **speaker grounds** (*it rained, because the st
 
 > `verehel thunel barl zagavul gegeval.`
 >
-> v-rain | [th-INFERRED.strong | b-that-clause] | [z-cloud | g-gray]
+> v-rain | [th-CLUES.strong | b-that-clause] | [z-cloud | g-gray]
 >
 > "It is raining, judging by the gray clouds."
 
@@ -394,11 +394,11 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 
 **Needs:** [Hopefully](sakes.md#speaker-attitude) · [forecasts](knowing.md#forecast) · [evidentiality](knowing.md#evidentiality) · [soon](knowing.md#dated-channel)
 
-English *I hope X will happen* is two claims: you want it, and you expect it. **`thevegem`** gives the wanting. The *will* is a [forecast](knowing.md#forecast), so it needs a channel plus **`bral`** (or **`brabum`** for *soon*). If nothing backs it but your gut, the honest channel is FELT: faint **`thahor`** for a slim hope, **`thahom`** for an ordinary one.
+English *I hope X will happen* is two claims: you want it, and you expect it. **`thevegem`** gives the wanting. The *will* is a [forecast](knowing.md#forecast), so it needs a channel plus **`bral`** (or **`brabum`** for *soon*). If nothing backs it but your gut, the honest channel is INTUITION: faint **`thahor`** for a slim hope, **`thahom`** for an ordinary one.
 
 > `thevegem thahor brabum hewem verehel.`
 >
-> th-hope | [th-FELT.weak | b-+-e-.about] | h-no-longer | v-rain
+> th-hope | [th-INTUITION.weak | b-+-e-.about] | h-no-longer | v-rain
 >
 > "I hope the rain stops soon."
 
@@ -570,7 +570,7 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 **Needs:** [RESIDUE and FORMER](knowing.md#residue) · [evidentiality](knowing.md#evidentiality) · [*as-of*](relations.md#as-of) · [NOTIONAL](knowing.md#notional)
 
-[RESIDUE](knowing.md#residue) and [FORMER](knowing.md#former-climate) without a hosted pair score against **today’s** books. To score them against a dated now, add [*as-of*](relations.md#as-of). LIVE plus *as-of* puts the camera in that snapshot. WITNESSED plus *as-of* is memory of a scene whose internal now is the snapshot. Write **`thevom`** again on the next memory clause; resume the books with **`huhur`**. [MAY](knowing.md#may) still evaluates from speech-now.
+[RESIDUE](knowing.md#residue) and [FORMER](knowing.md#former-climate) without a hosted pair score against **today’s** books. To score them against a dated now, add [*as-of*](relations.md#as-of). LIVE plus *as-of* puts the camera in that snapshot. MEMORY plus *as-of* is memory of a scene whose internal now is the snapshot. Write **`thevom`** again on the next memory clause; resume the books with **`huhur`**. [MAY](knowing.md#may) still evaluates from speech-now.
 
 > `zalahen thamom huhum b_#22,7 vedabal.`
 >
@@ -586,7 +586,7 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 > `zalahen thevom huhum b_#22,7 thamom vedabal. xazawan thevom huhur vowogal.`
 >
-> z-Alahen | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
+> z-Alahen | th-MEMORY | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-MEMORY | h-as-of.ledger | v-walk
 >
 > "I remember: as of 22 July, Alahen's leaving still counted. Azawan was walking, also from memory, against the same books."
 
@@ -638,21 +638,21 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 A feeling word is how you feel **now**. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`gobum`**, as for any [forecast](knowing.md#forecast) or [dated claim](knowing.md#dated-channel): the offset dates the stimulus, and the channel says how you know it.
 
-> `zezebel wulothuraor gobum therel bral.`
+> `zezebel wulothuraor gobum thewal bral.`
 >
-> [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-RECORDED.strong | b-later]
+> [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-REPORTED.strong | b-later]
 >
-> "Anxious about the dialogue that's scheduled to come."
+> "Anxious about the dialogue that's coming, as a reliable source says."
 
 > `zezebel wulothuraor gobum thahor bral.`
 >
-> [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-FELT.weak | b-later]
+> [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-INTUITION.weak | b-later]
 >
 > "Anxious about a dialogue I only have a hunch is coming."
 
 > `zezebel wanathumol gobum thevom brul.`
 >
-> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | [th-WITNESSED | b-earlier]
+> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | [th-MEMORY | b-earlier]
 >
 > "Stung by the dialogue, which is over; I was there."
 
@@ -670,11 +670,11 @@ A [feeling with no object](sakes.md#feeling-no-object) can take a channel and of
 
 > `thulothuruor thahor bral.`
 >
-> th-competence-unmet-passing-UNPLACED-SURGING | [th-FELT.weak | b-later]
+> th-competence-unmet-passing-UNPLACED-SURGING | [th-INTUITION.weak | b-later]
 >
 > "Anxious about something I sense is coming."
 
-How the stimulus is known matters. A scheduled dialogue (`therel`) and a hunch (`thahor`) can feel the same; the grammar asks which one it is.
+How the stimulus is known matters. A dialogue a reliable source announced (`thewal`) and a hunch (`thahor`) can feel the same; the grammar asks which one it is.
 
 ### Feeling then {#emotion-feeling-time}
 
@@ -691,7 +691,7 @@ To say you **felt** it at another time, date the feeling itself with [stance as-
 
 > `zezebel wanathumol gobum thevom thuhum bezebel.`
 >
-> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | th-WITNESSED | [th-as-of.ledger | b-speech]
+> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | th-MEMORY | [th-as-of.ledger | b-speech]
 >
 > "I remember the dialogue stinging at the time."
 
@@ -786,7 +786,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. **
 | *MAY* | `thovum` | `ovul` *thought* |
 | *CAUSE* | `thegem` | `egel` *gear* |
 | *RESIDUE* | `thamom` | |
-| *INFERRED* | `thunem` | `unel` *investigate* |
+| *CLUES* | `thunem` | `unel` *investigate* |
 | *as-of.bookmark* | `huram` | |
 
 #### English → Agazan {#reasons-causation-english-to-agazan}
@@ -836,7 +836,7 @@ z-Azawan | th-MAY | v-sit | [th-because | b-that-clause] | z-Alahen | v-pour
 ::: details Show answer
 `zudul vemehul thamom thunem bral huram barl zalahen vobohol.`
 
-z-test-tube | v-melt | th-RESIDUE | [th-INFERRED | b-later] | [h-as-of.bookmark | b-that-clause] | z-Alahen | v-pour
+z-test-tube | v-melt | th-RESIDUE | [th-CLUES | b-later] | [h-as-of.bookmark | b-that-clause] | z-Alahen | v-pour
 :::
 
 #### Agazan → English {#reasons-causation-agazan-to-english}
@@ -890,7 +890,7 @@ z-Azawan | v-run | [th-if | b-fire] | h-always
 
 ::: details Show answer
 
-z-test-tube | v-melt | th-RESIDUE | [th-INFERRED | b-later] | [h-as-of.bookmark | b-that-clause] | z-Alahen | v-pour
+z-test-tube | v-melt | th-RESIDUE | [th-CLUES | b-later] | [h-as-of.bookmark | b-that-clause] | z-Alahen | v-pour
 
 *If Alahen had poured, the test-tube would still be melting.*
 :::
@@ -985,7 +985,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *departure* | `vedabal` | | |
 | *walk* | `vowogal` | | |
 | *RESIDUE* | `thamom` | | |
-| *WITNESSED* | `thevom` | | |
+| *MEMORY* | `thevom` | | |
 | *LIVE* | `thodom` | | |
 | *MAY* | `thovum` | | |
 | *as-of.ledger* | `huhum` | | |
@@ -1022,7 +1022,7 @@ z-Alahen | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 
 ::: details Show answer
 
-z-Alahen | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure
+z-Alahen | th-MEMORY | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure
 
 *I remember: as of 22 July, Alahen's leaving still counted.*
 :::
@@ -1031,7 +1031,7 @@ z-Alahen | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure
 
 ::: details Show answer
 
-z-Alahen | th-WITNESSED | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-WITNESSED | h-as-of.ledger | v-walk
+z-Alahen | th-MEMORY | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-MEMORY | h-as-of.ledger | v-walk
 
 *I remember: as of 22 July, Alahen's leaving still counted. Azawan was walking, also from memory, against the same books.*
 :::
@@ -1062,20 +1062,20 @@ Short drills for these recipes. A channel and offset after **`gobum`** date the 
 | *tell* | `vezebel` | `ezebel` *speech* |
 | *rain* | `verehel` | |
 | *stimulus* | `gobum` | |
-| *RECORDED.strong* | `therel` | |
-| *WITNESSED* | `thevom` | |
+| *REPORTED.strong* | `thewal` | |
+| *MEMORY* | `thevom` | |
 | *as-of.ledger* | `thuhum` | |
 | *because* | `thevem` | `evel` *brick* |
 | *because.fault* | `thevel` | `evel` *brick* |
 
 #### English → Agazan {#reasons-feelings-english-to-agazan}
 
-**1.** *Anxious about the dialogue, which is scheduled.* (competence at stake for now; hangs over the room; surging)
+**1.** *Anxious about the dialogue that's coming, as a reliable source says.* (competence at stake for now; hangs over the room; surging)
 
 ::: details Show answer
-`zezebel wulothuraor gobum therel bral.`
+`zezebel wulothuraor gobum thewal bral.`
 
-[z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-RECORDED.strong | b-later]
+[z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-REPORTED.strong | b-later]
 :::
 
 **2.** *Irritated at Azawan about the memo, but the rain caused it.* (unmet relatedness, modifiable; aimed; flowing)

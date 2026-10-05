@@ -132,7 +132,7 @@ When English would deny or weigh **how you stand** toward a claim (*not becauseâ
 
 > `zazawan vowogal thevom thewam thol.`
 >
-> z-Azawan | v-walk | th-WITNESSED | th-TOLD | th-or-exactly-one
+> z-Azawan | v-walk | th-MEMORY | th-REPORTED | th-or-exactly-one
 >
 > "Azawan walks: I either saw it or was told, one of the two."
 
@@ -140,7 +140,7 @@ The other join vowels work on stance words the same way they work on a phrase li
 
 > `zazawan vowogal thevom thewam thel.`
 >
-> z-Azawan | v-walk | th-WITNESSED | th-TOLD | th-rank/more
+> z-Azawan | v-walk | th-MEMORY | th-REPORTED | th-rank/more
 >
 > "Azawan walks: I mainly saw it, and I was also told."
 
@@ -396,7 +396,7 @@ z-Alahen | v-run | [th-because | b-medal] | th-not
 ::: details Show answer
 `zazawan vezugel thevom thewam thol.`
 
-z-Azawan | v-scream | th-WITNESSED | th-TOLD | th-or-exactly-one
+z-Azawan | v-scream | th-MEMORY | th-REPORTED | th-or-exactly-one
 :::
 
 #### Agazan â†’ English {#intermediate-agazan-to-english}
@@ -486,7 +486,7 @@ z-Alahen | [h-anything-but | b-Ahaben] | v-scream
 
 ::: details Show answer
 
-z-Ahaben | v-run | th-WITNESSED | th-TOLD | th-rank/more
+z-Ahaben | v-run | th-MEMORY | th-REPORTED | th-rank/more
 
 *Ahaben runs: I mainly saw it, and I was also told.*
 :::

@@ -118,7 +118,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause pole
 | `ability` | `ability` | hostless **`eze`** |
 | `join_act` | `joinAct` | vowel-series `/v/` **`an`** / **`on`** / … |
 | `join_relation` | `joinRelation` | same stems on `/g/` `/h/` |
-| `evidential` | `mood` | LIVE / WITNESSED / … |
+| `evidential` | `mood` | LIVE / MEMORY / … |
 | `residue` | `mood` | RESIDUE **`amo`** |
 | `former_climate` | `mood` | FORMER **`eno`** |
 | `phasal` | `mood` | *already* **`oha`** / *still* **`age`** / *not yet* **`uze`** / *no longer* **`ewe`** |

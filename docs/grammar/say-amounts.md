@@ -356,7 +356,7 @@ English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an 
 >
 > "Azawan is weak."
 
-**Compare with:** any stance that sets a value can be the bar ([every bar](comparatives.md#stance-bars)). *More expensive than I expected* is FELT, `thahom zel gadahum`, and *too expensive* is a sake bar, `thegatham zel gadahum`. Bare *good* and *bad* have no root ([wrong, ugly](say-reasons.md#wrong-ugly)).
+**Compare with:** any stance that sets a value can be the bar ([every bar](comparatives.md#stance-bars)). *More expensive than I expected* is INTUITION, `thahom zel gadahum`, and *too expensive* is a sake bar, `thegatham zel gadahum`. Bare *good* and *bad* have no root ([wrong, ugly](say-reasons.md#wrong-ugly)).
 
 ### Just, only, also, especially {#focus-words}
 

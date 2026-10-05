@@ -63,13 +63,13 @@ describe("classify", () => {
 
   it("overlay mood on published-shaped evidential", () => {
     const sense = [...tables.overlays.values()].find(
-      (o) => o.pos === "th" && /witnessed evidential/i.test(o.definition),
+      (o) => o.pos === "th" && /memory evidential/i.test(o.definition),
     );
     assert.ok(sense);
     const word = expectOverlay(`th${sense.senseForm}`);
     assert.ok(word.overlay);
     assert.equal(word.overlay!.senseForm, sense.senseForm);
-    assert.match(word.overlay!.definition, /witnessed/i);
+    assert.match(word.overlay!.definition, /memory/i);
   });
 
   it("published ordinary on literal fishing manner", () => {

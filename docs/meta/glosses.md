@@ -138,14 +138,14 @@ Published strings share one phonological root, but **concrete**, **abstract**, a
 | `gagawal` | `g-quiet` | `g-uzumu(quiet)-l` |
 | `gagawam` | `g-volume` | `g-uzumu(quiet→volume)-m`, `g-volume-m` |
 | `hevol` | `h-fishing` | `h-uvuvu(fishing)-l` |
-| `thevom` | `th-WITNESSED` | `h-uvuvu(fishing→WITNESSED)-m` |
+| `thevom` | `th-MEMORY` | `h-uvuvu(fishing→MEMORY)-m` |
 | `gahazam` | `g-home` | `g-ohohu(house→home)-m` |
 
 Same English label for `zamagom` and `zamagon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agazan line and from [word-endings.md](../grammar/word-endings.md). The gloss’s job is the **sense**, not a second orthography.
 
 **Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Agazan letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
 
-**Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zamagon` / `zehodon` / `zahan` / `zunan` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. The topic pronoun and the generic pronoun gloss in capitals on `/z/` `/d/` `/b/` and as a holder (`zozan` → `z-TOPIC`, `zoben` → `z-ONE`, `thunemozan` → `th-INFERRED-TOPIC`); on any other slot they are ordinary names. A topic word glosses as its noun (`xazawan` → `x-Azawan`, `xazawar` → `x-←Azawan`), and `hahehom` as `h-as-for`. **Stand-ins** (`darl` / `dorl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
+**Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zamagon` / `zehodon` / `zahan` / `zunan` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. The topic pronoun and the generic pronoun gloss in capitals on `/z/` `/d/` `/b/` and as a holder (`zozan` → `z-TOPIC`, `zoben` → `z-ONE`, `thunemozan` → `th-CLUES-TOPIC`); on any other slot they are ordinary names. A topic word glosses as its noun (`xazawan` → `x-Azawan`, `xazawar` → `x-←Azawan`), and `hahehom` as `h-as-for`. **Stand-ins** (`darl` / `dorl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
 
 ### Ordinary lexicon plus packed role English
 <a id="no-lexicon-pos-specials"></a>
@@ -244,7 +244,7 @@ A morph line corresponds **one-to-one** with its Agazan. From the gloss alone yo
 - **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](../grammar/numbers.md#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word that prefers shorthand (`grawodul` → `g-twelve.spelled`; `g+12` → `g-twelve`), `.short` on shorthand that prefers spelling — no digit or one digit (`g+3` → `g-three.short`; `grarel` → `g-three`; `g+` → `g-more-than-one.short`).
 - **Ordinals use digits** (`gredul` → `g-2nd`, `gruedul` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
 - **Role-compound resumes** keep their role: `daexaradar` → `d-←instrument-x-write`, `duxaradar` → `d-←patient-x-write`. A bare `d-←write` would merge the doer, scene, undergoer, tool, … of one event.
-- **Role pointers** gloss their role and pointer vowel, never the referent: `zaxar` → `z-←agent.same`, `duxor` → `d-←patient.other`, `daxer` → `d-←agent.self`, `zaxur` → `z-←agent.unsaid`. **-l** adds `.new` and **-m** adds `.part` (`duxal` → `d-←patient.same.new`, `zaxam` → `z-←agent.same.part`, `zoxom` → `z-←recipient.other.part`, `zaxum` → `z-←agent.unsaid.part`). The role label is the role-compound one (`recipient` for **`o`**, `instrument` for **`ae`**, …). A pointer inside a seam keeps the seam's host: holder `thunemaxar` → `th-INFERRED-←agent.same`, lateral anchor `hewezathaxar` → `h-west-th-←agent.same`.
+- **Role pointers** gloss their role and pointer vowel, never the referent: `zaxar` → `z-←agent.same`, `duxor` → `d-←patient.other`, `daxer` → `d-←agent.self`, `zaxur` → `z-←agent.unsaid`. **-l** adds `.new` and **-m** adds `.part` (`duxal` → `d-←patient.same.new`, `zaxam` → `z-←agent.same.part`, `zoxom` → `z-←recipient.other.part`, `zaxum` → `z-←agent.unsaid.part`). The role label is the role-compound one (`recipient` for **`o`**, `instrument` for **`ae`**, …). A pointer inside a seam keeps the seam's host: holder `thunemaxar` → `th-CLUES-←agent.same`, lateral anchor `hewezathaxar` → `h-west-th-←agent.same`.
 - **Unknown words fail.** A content word the lexicon cannot gloss has no morph line: a root missing from the lexicon, or **-m** on a root with no abstract sense (unless a closed overlay defines that **-m** form). `lint:agazan` reports it.
 - **Quoted pass-through.** Raw payloads (opaque interiors, and a resume stem with no known antecedent) go in straight double quotes: `z-OPAQUE["odoga"]`. A `"` inside the payload is written `""`.
 
@@ -263,7 +263,7 @@ Do **not** write `-l` / `-m` / `-n`, **`@`**, or **`~`** after a sense. Named **
 ### Sense labels
 
 - Prefer lexicon / overlay wording when short (`tea`, `speaker`, `witnessed`). Packed role English overrides that wording for the listed role only (`v-see` vs `z-eye`).
-- Prefer **stable tags** for closed inventory (uppercase OK when the docs already use them): `MAY`, `DECISION`, `SAME`, `WITNESSED`, `LIVE`, `ABIL`.
+- Prefer **stable tags** for closed inventory (uppercase OK when the docs already use them): `MAY`, `DECISION`, `SAME`, `MEMORY`, `LIVE`, `ABIL`.
 - Verb senses: [uninflected lemma](#english-lemma) (`walk`, not `walking`).
 - Do **not** use arrows (`→`) or etymology chains.
 - Do **not** put PoS names in the label (`noun`, `proper`). Named reference is the English name, not the word *proper*.
@@ -412,7 +412,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `zamagonx` | `z-speaker-x` | *I and associates* |
 | `zehodonx` | `z-listener-x` | *you-all* (address set) |
 | `gezebul` | `g-sleepy` | *sleepy* |
-| `thevom` | `th-WITNESSED` | *per memory* |
+| `thevom` | `th-MEMORY` | *per memory* |
 | `thodom` | `th-LIVE` | *from the scene* |
 | `thamar` | `th-plan-sketch` | *as a sketch plan* |
 | `gugol` | `g-SAME` | *identical to* (identity host) |
@@ -432,7 +432,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 > `xezom zabur thevom zerehel.`
 >
-> x-however | z-←Ubune-x-Unowen | th-WITNESSED | z-rain
+> x-however | z-←Ubune-x-Unowen | th-MEMORY | z-rain
 >
 > "Still — it's raining, as I remember."
 

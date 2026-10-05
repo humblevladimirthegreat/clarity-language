@@ -148,7 +148,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 You already mark whether a turn is a statement, question, command, or prohibition. The ending of the act word adds **how firmly** you mean it. English softens with extra words (*please*, *perhaps*, *for what it's worth*); Agazan changes only the ending.
 
-The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a** statement, **o** question, **e** command, **u** prohibition). With **-l** you stand behind the act. With **-m** you offer it softly and leave the other person free to take it up or not. **-r** marks an act you hold only [for now](#act-r). Write the act word whenever the turn is not a plain statement; a period still lets you omit **`yal`**.
+The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a** statement, **o** question, **e** command, **u** prohibition). With **-l** you stand behind the act. With **-m** you offer it softly and leave the other person free to take it up or not. **-r** marks an act you hold only [for now](#act-r). Write the act word whenever the turn is not a plain statement; a period still lets you omit **`yal`**. A statement word you do write also ends a [carried channel](knowing.md#carry-forward): the claim after it is in your own voice again.
 
 > `yam zazawan vowogal.`
 >

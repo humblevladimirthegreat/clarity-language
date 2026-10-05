@@ -67,8 +67,8 @@ A label is a code, not an amount, so it has no magnitude for an exponent to scal
 - **open:** **`w+N`**, **`w-N`**, **`w_N`** (a count or fraction on `/w/`). Not guessable: before an adjective a count could be a ratio (*twice as big*) or a difference (*bigger by two*). A factor is `hradul` / `hrudul` on `/h/` ([factor](../grammar/comparatives.md#factor)).
 - **open:** **`w#-N`**, **`w#1`**, and `w#N` outside a single-name `zel` / `zuel` frame. No learner reaches for them: English never says *the first biggest* (first place is the plain superlative) or counts a scale *from the end* (*second smallest* is `zuel` + `w#2`), and `w#N` needs one name before the fence to rank within.
 - **closed (D-38):** **`th#1`** as *first-hand*.
-- **closed (D-41):** **`th#N`** in a clause with LIVE or WITNESSED (`thodom thredul`).
-- **open:** **`th#N`** after FELT (`thahom thredul`). A gut sense is your own, and no learner has a *second-hand gut feeling* to say.
+- **closed (D-41):** **`th#N`** in a clause with LIVE or MEMORY (`thodom thredul`).
+- **open:** **`th#N`** after INTUITION (`thahom thredul`). A gut sense is your own, and no learner has a *second-hand gut feeling* to say.
 - **open:** **`th-N`**, **`th#-N`**, and digitless non-blank **`th#`**. A minus on a likelihood (`th-30`: *30% unlikely*, or *30 points less likely*?) and an end-relative count of tellers have no guessable reading; digitless **`th#`** would say only *passed on to me*, with no depth, and no job has asked for that.
 - **open:** marker stacks **`rao`** (`+_`) and **`rae`** (`+#`). No reading composes: labels carry no sign, and a count and a rank are separate markers on separate words.
 
@@ -128,7 +128,7 @@ Source: [hooks.md](../grammar/hooks.md#spans), [sakes.md](../grammar/sakes.md#co
 - **open:** stacked **-r** at the front of a sentence (`aor …`, `aer …`, `uor …`). Extra-noun point-back is assigned; as sentence glue they have no guess (*For example, anyway?* *In fact, as I said?*). Parser: `hookDiscourseStack`.
 - **open:** discourse **`oel`** / **`ual`** / **`uol`** / **`uel`** (and **-m** / **-n**) at the front of a sentence. *Toward*, *out of*, *through* and *against* give no guessable sentence-to-sentence glue (guesses range from *Alternatively* to *Apart from that*). The parser rejects them.
 - **open:** a hook + `barl` other than `ul` (`hookStandIn`). Most have no guess (*in that…*, *at that…*). *Contrary to* an event is `hezom barl`, and no job has turned up for `uem barl`.
-- **open:** `uem` before a stance with no content an event can contradict (`frameKind`): PERMIT, given CONSENT (they only lift a restriction), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use FELT), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Alahen's interest* is `thegathum balahen`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
+- **open:** `uem` before a stance with no content an event can contradict (`frameKind`): PERMIT, given CONSENT (they only lift a restriction), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Alahen's interest* is `thegathum balahen`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
 
 ## Role compounds
 
@@ -170,6 +170,7 @@ Source: [pronouns.md](../grammar/pronouns.md), [plurality.md](../grammar/plurali
 
 - **open:** **-x** on `/h/` / `/w/` and the six linkers. An adverb, a degree word, or a linker names no group.
 - **closed (D-37):** **-x** on a `/th/` stance word.
+- **closed (D-42):** `/th/` on the record or scroll root (`therem`, `thozem`, any ending but **-n**). Parser: `retiredChannelRoot`.
 - **open:** **-x** on an interjection (`/y/` **-l** / **-m**). An interjection addresses no one.
 - **open:** the nonspecific *someone* `unan` as a topic or with **-x** (`xunan`, `unanx`). `unan` names no particular person or group: a topic is someone in particular, and *some people* is `zobelx`.
 - **open:** the topic pronoun as a topic word or a resume (`xozan`, `zozar`). The topic pronoun is the topic itself, so there is nothing to set or return to.

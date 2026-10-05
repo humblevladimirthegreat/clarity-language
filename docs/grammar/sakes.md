@@ -671,7 +671,7 @@ English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, f
 
 Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To say *hopefully … will*, add a real [evidence channel](knowing.md#forecast) as well. Hope says how you feel about the claim; the channel says what backs it.
 
-**Compare with:** a hunch with no evidence is FELT ([evidentiality](knowing.md#evidentiality)). **`thevegem`** says you want the outcome; FELT says your gut expects it.
+**Compare with:** a hunch with no evidence is INTUITION ([evidentiality](knowing.md#evidentiality)). **`thevegem`** says you want the outcome; INTUITION says your gut expects it.
 
 ### Permission (`thegol` / `thegom` / `thegor`) {#permission}
 

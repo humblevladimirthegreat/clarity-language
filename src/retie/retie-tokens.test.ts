@@ -496,7 +496,7 @@ describe("resume binds after a retie", () => {
 describe("retie fixes (2026-09-28 overlay demotion)", () => {
   it("moves an overlay -r with its root", () => {
     const tables = loadDefaultTables();
-    const told = [...tables.overlays.values()].find((row) => row.gloss === "TOLD.weak" && row.pos === "th")!;
+    const told = [...tables.overlays.values()].find((row) => row.gloss === "REPORTED.weak" && row.pos === "th")!;
     const root = told.senseForm.slice(0, -1);
     const { text } = rewriteMarkdown(`\`zalahen th${root}r vedabal.\``, mapOf([root, "ibibi"]));
     assert.equal(text, "`zalahen thibibir vedabal.`");

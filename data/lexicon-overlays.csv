@@ -17,54 +17,42 @@ adom,th,💡,sake,understanding,understanding sake (sense-making / learning),a l
 adom,w,💡,sake,understanding,understanding sake (sense-making / learning),a lightbulb switches on; understanding is the moment it makes sense,sakes.md#personal-possession
 egam,th,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#word-shape
 egam,w,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#personal-possession
-evom,th,🎣,evidential,WITNESSED,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidentiality
-evol,th,🎣,evidential,WITNESSED.strong,witnessed evidential with strong evidence (vivid memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidence-strength
-evor,th,🎣,evidential,WITNESSED.weak,witnessed evidential with weak evidence (hazy memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidence-strength
-evom,w,🎣,evidential,WITNESSED,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#mood-on-one-adjective
-evol,w,🎣,evidential,WITNESSED.strong,witnessed evidential with strong evidence (vivid memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#mood-on-one-adjective
-evor,w,🎣,evidential,WITNESSED.weak,witnessed evidential with weak evidence (hazy memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#mood-on-one-adjective
-odom,th,👁️‍🗨️,evidential,LIVE,live evidential (present observation / concurrent access),eye-in-speech attests while the scene is in view; live is seeing-and-saying now (not memory),knowing.md#evidentiality
-odol,th,👁️‍🗨️,evidential,LIVE.strong,live evidential with strong evidence (clear full view),eye-in-speech attests while the scene is in view; live is seeing-and-saying now (not memory),knowing.md#evidence-strength
-odor,th,👁️‍🗨️,evidential,LIVE.weak,live evidential with weak evidence (a glimpse),eye-in-speech attests while the scene is in view; live is seeing-and-saying now (not memory),knowing.md#evidence-strength
-odom,w,👁️‍🗨️,evidential,LIVE,live evidential (present observation / concurrent access),eye-in-speech attests while the scene is in view; live is seeing-and-saying now (not memory),knowing.md#mood-on-one-adjective
-odol,w,👁️‍🗨️,evidential,LIVE.strong,live evidential with strong evidence (clear full view),eye-in-speech attests while the scene is in view; live is seeing-and-saying now (not memory),knowing.md#mood-on-one-adjective
-odor,w,👁️‍🗨️,evidential,LIVE.weak,live evidential with weak evidence (a glimpse),eye-in-speech attests while the scene is in view; live is seeing-and-saying now (not memory),knowing.md#mood-on-one-adjective
-erem,th,⏺️,evidential,RECORDED,recorded evidential (on record / captured / scheduled),record button preserves now; record is playback of what was kept,knowing.md#evidentiality
-erel,th,⏺️,evidential,RECORDED.strong,recorded evidential with strong evidence (authoritative record or official schedule),record button preserves now; record is playback of what was kept,knowing.md#evidence-strength
-erer,th,⏺️,evidential,RECORDED.weak,recorded evidential with weak evidence (unofficial or partial record),record button preserves now; record is playback of what was kept,knowing.md#evidence-strength
-erem,w,⏺️,evidential,RECORDED,recorded evidential (on record / captured / scheduled),record button preserves now; record is playback of what was kept,knowing.md#mood-on-one-adjective
-erel,w,⏺️,evidential,RECORDED.strong,recorded evidential with strong evidence (authoritative record or official schedule),record button preserves now; record is playback of what was kept,knowing.md#mood-on-one-adjective
-erer,w,⏺️,evidential,RECORDED.weak,recorded evidential with weak evidence (unofficial or partial record),record button preserves now; record is playback of what was kept,knowing.md#mood-on-one-adjective
+evom,th,🎣,evidential,MEMORY,memory evidential (remembered firsthand / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidentiality
+evol,th,🎣,evidential,MEMORY.strong,memory evidential with strong evidence (vivid memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidence-strength
+evor,th,🎣,evidential,MEMORY.weak,memory evidential with weak evidence (hazy memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidence-strength
+evom,w,🎣,evidential,MEMORY,memory evidential (remembered firsthand / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#mood-on-one-adjective
+evol,w,🎣,evidential,MEMORY.strong,memory evidential with strong evidence (vivid memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#mood-on-one-adjective
+evor,w,🎣,evidential,MEMORY.weak,memory evidential with weak evidence (hazy memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#mood-on-one-adjective
+odom,th,👁️‍🗨️,evidential,LIVE,live evidential (sensed now: in view / in earshot / on the skin),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#evidentiality
+odol,th,👁️‍🗨️,evidential,LIVE.strong,live evidential with strong evidence (clear full view),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#evidence-strength
+odor,th,👁️‍🗨️,evidential,LIVE.weak,live evidential with weak evidence (a glimpse),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#evidence-strength
+odom,w,👁️‍🗨️,evidential,LIVE,live evidential (sensed now: in view / in earshot / on the skin),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#mood-on-one-adjective
+odol,w,👁️‍🗨️,evidential,LIVE.strong,live evidential with strong evidence (clear full view),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#mood-on-one-adjective
+odor,w,👁️‍🗨️,evidential,LIVE.weak,live evidential with weak evidence (a glimpse),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#mood-on-one-adjective
 obam,th,🐾,evidential,PATTERN,pattern evidential (from trail of cases),paw prints mark a trail; trail is regularity left behind,knowing.md#evidentiality
 obal,th,🐾,evidential,PATTERN.strong,pattern evidential with strong evidence (well-established pattern),paw prints mark a trail; trail is regularity left behind,knowing.md#evidence-strength
 obar,th,🐾,evidential,PATTERN.weak,pattern evidential with weak evidence (a few cases),paw prints mark a trail; trail is regularity left behind,knowing.md#evidence-strength
 obam,w,🐾,evidential,PATTERN,pattern evidential (from trail of cases),paw prints mark a trail; trail is regularity left behind,knowing.md#mood-on-one-adjective
 obal,w,🐾,evidential,PATTERN.strong,pattern evidential with strong evidence (well-established pattern),paw prints mark a trail; trail is regularity left behind,knowing.md#mood-on-one-adjective
 obar,w,🐾,evidential,PATTERN.weak,pattern evidential with weak evidence (a few cases),paw prints mark a trail; trail is regularity left behind,knowing.md#mood-on-one-adjective
-unem,th,🕵️,evidential,INFERRED,inferred evidential (from investigation),investigating follows clues; investigation is reasoned inference,knowing.md#evidentiality
-unel,th,🕵️,evidential,INFERRED.strong,inferred evidential with strong evidence (strong clues),investigating follows clues; investigation is reasoned inference,knowing.md#evidence-strength
-uner,th,🕵️,evidential,INFERRED.weak,inferred evidential with weak evidence (a weak clue),investigating follows clues; investigation is reasoned inference,knowing.md#evidence-strength
-unem,w,🕵️,evidential,INFERRED,inferred evidential (from investigation),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
-unel,w,🕵️,evidential,INFERRED.strong,inferred evidential with strong evidence (strong clues),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
-uner,w,🕵️,evidential,INFERRED.weak,inferred evidential with weak evidence (a weak clue),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
-ewam,th,👂,evidential,TOLD,told evidential (hearsay / reportative),ear enables listening; listening under /th/ is hearsay channel,knowing.md#evidentiality
-ewal,th,👂,evidential,TOLD.strong,told evidential with strong evidence (reliable source),ear enables listening; listening under /th/ is hearsay channel,knowing.md#evidence-strength
-ewar,th,👂,evidential,TOLD.weak,told evidential with weak evidence (rumor),ear enables listening; listening under /th/ is hearsay channel,knowing.md#evidence-strength
-ewam,w,👂,evidential,TOLD,told evidential (hearsay / reportative),ear enables listening; listening as a /w/ detail is hearsay channel,knowing.md#mood-on-one-adjective
-ewal,w,👂,evidential,TOLD.strong,told evidential with strong evidence (reliable source),ear enables listening; listening as a /w/ detail is hearsay channel,knowing.md#mood-on-one-adjective
-ewar,w,👂,evidential,TOLD.weak,told evidential with weak evidence (rumor),ear enables listening; listening as a /w/ detail is hearsay channel,knowing.md#mood-on-one-adjective
-ahom,th,❤️,evidential,FELT,felt evidential (gut-known / proprioceptive),heart marks gut feeling; gut-felt is affective knowing channel,knowing.md#evidentiality
-ahol,th,❤️,evidential,FELT.strong,felt evidential with strong evidence (strong gut sense),heart marks gut feeling; gut-felt is affective knowing channel,knowing.md#evidence-strength
-ahor,th,❤️,evidential,FELT.weak,felt evidential with weak evidence (faint hunch),heart marks gut feeling; gut-felt is affective knowing channel,knowing.md#evidence-strength
-ahom,w,❤️,evidential,FELT,felt evidential (gut-known / proprioceptive),heart marks gut feeling; gut-felt is affective knowing channel,knowing.md#mood-on-one-adjective
-ahol,w,❤️,evidential,FELT.strong,felt evidential with strong evidence (strong gut sense),heart marks gut feeling; gut-felt is affective knowing channel,knowing.md#mood-on-one-adjective
-ahor,w,❤️,evidential,FELT.weak,felt evidential with weak evidence (faint hunch),heart marks gut feeling; gut-felt is affective knowing channel,knowing.md#mood-on-one-adjective
-ozem,th,📜,evidential,STORY,story evidential (tale / lore / anecdote),scroll holds a tale; tale is narrative framing channel,knowing.md#evidentiality
-ozel,th,📜,evidential,STORY.strong,story evidential with strong evidence (established lore),scroll holds a tale; tale is narrative framing channel,knowing.md#evidence-strength
-ozer,th,📜,evidential,STORY.weak,story evidential with weak evidence (loose anecdote),scroll holds a tale; tale is narrative framing channel,knowing.md#evidence-strength
-ozem,w,📜,evidential,STORY,story evidential (tale / lore / anecdote),scroll holds a tale; tale is narrative framing channel,knowing.md#mood-on-one-adjective
-ozel,w,📜,evidential,STORY.strong,story evidential with strong evidence (established lore),scroll holds a tale; tale is narrative framing channel,knowing.md#mood-on-one-adjective
-ozer,w,📜,evidential,STORY.weak,story evidential with weak evidence (loose anecdote),scroll holds a tale; tale is narrative framing channel,knowing.md#mood-on-one-adjective
+unem,th,🕵️,evidential,CLUES,clues evidential (reasoned from clues about this case),investigating follows clues; investigation is reasoned inference,knowing.md#evidentiality
+unel,th,🕵️,evidential,CLUES.strong,clues evidential with strong evidence (strong clues),investigating follows clues; investigation is reasoned inference,knowing.md#evidence-strength
+uner,th,🕵️,evidential,CLUES.weak,clues evidential with weak evidence (a weak clue),investigating follows clues; investigation is reasoned inference,knowing.md#evidence-strength
+unem,w,🕵️,evidential,CLUES,clues evidential (reasoned from clues about this case),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
+unel,w,🕵️,evidential,CLUES.strong,clues evidential with strong evidence (strong clues),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
+uner,w,🕵️,evidential,CLUES.weak,clues evidential with weak evidence (a weak clue),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
+ewam,th,👂,evidential,REPORTED,reported evidential (hearsay / said or written by someone else / reportative),ear enables listening; taking in what others pass on under /th/ is the reported channel,knowing.md#evidentiality
+ewal,th,👂,evidential,REPORTED.strong,reported evidential with strong evidence (reliable source),ear enables listening; taking in what others pass on under /th/ is the reported channel,knowing.md#evidence-strength
+ewar,th,👂,evidential,REPORTED.weak,reported evidential with weak evidence (rumor),ear enables listening; taking in what others pass on under /th/ is the reported channel,knowing.md#evidence-strength
+ewam,w,👂,evidential,REPORTED,reported evidential (hearsay / said or written by someone else / reportative),ear enables listening; taking in what others pass on as a /w/ detail is the reported channel,knowing.md#mood-on-one-adjective
+ewal,w,👂,evidential,REPORTED.strong,reported evidential with strong evidence (reliable source),ear enables listening; taking in what others pass on as a /w/ detail is the reported channel,knowing.md#mood-on-one-adjective
+ewar,w,👂,evidential,REPORTED.weak,reported evidential with weak evidence (rumor),ear enables listening; taking in what others pass on as a /w/ detail is the reported channel,knowing.md#mood-on-one-adjective
+ahom,th,❤️,evidential,INTUITION,intuition evidential (gut sense you cannot fully spell out),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#evidentiality
+ahol,th,❤️,evidential,INTUITION.strong,intuition evidential with strong evidence (strong gut sense),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#evidence-strength
+ahor,th,❤️,evidential,INTUITION.weak,intuition evidential with weak evidence (faint hunch),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#evidence-strength
+ahom,w,❤️,evidential,INTUITION,intuition evidential (gut sense you cannot fully spell out),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#mood-on-one-adjective
+ahol,w,❤️,evidential,INTUITION.strong,intuition evidential with strong evidence (strong gut sense),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#mood-on-one-adjective
+ahor,w,❤️,evidential,INTUITION.weak,intuition evidential with weak evidence (faint hunch),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#mood-on-one-adjective
 ezum,th,😮,mirative,MIRATIVE,mirative mood (newly found out and not expected),a surprised face meets what it did not expect; mirative marks news against expectation,knowing.md#mirative
 ezul,th,😮,mirative,MIRATIVE.firm,mirative mood overturning a firm expectation,a surprised face meets what it did not expect; mirative marks news against expectation,knowing.md#mirative
 ezur,th,😮,mirative,MIRATIVE.mild,mirative mood against a loose expectation,a surprised face meets what it did not expect; mirative marks news against expectation,knowing.md#mirative
