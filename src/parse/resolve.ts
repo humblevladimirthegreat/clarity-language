@@ -31,7 +31,7 @@ import { topicEffect } from "./linkers.js";
 const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
 
 type Antecedent =
-  | { kind: "content"; word: LexWord; stem: string }
+  | { kind: "content"; word: LexWord; stem: string; sense?: "l" | "m" }
   | { kind: "number"; word: LexWord; identity: string }
   | { kind: "roleFrame"; word: LexWord; stem: string };
 
@@ -99,7 +99,8 @@ export function wholeStem(word: MorphWord): string {
   const prefix = word.gl ? "gl" : (word.pos ?? "");
   if (body.startsWith(prefix)) body = body.slice(prefix.length);
   if (word.plural && body.endsWith("x")) body = body.slice(0, -1);
-  if (word.ending && body.endsWith(word.ending)) body = body.slice(0, -word.ending.length);
+  const ending = `${word.ending ?? ""}${word.resumeSense ?? ""}`;
+  if (ending && body.endsWith(ending)) body = body.slice(0, -ending.length);
   return body;
 }
 
@@ -258,7 +259,11 @@ function bindLatest(antecedents: Antecedent[], pred: (item: Antecedent) => boole
 function bindContent(ctx: Ctx, pronoun: LexWord): void {
   const holder = holderRoots(pronoun);
   const stem = holder.length > 0 ? holder.join("x") : wholeStem(pronoun);
-  const antecedent = bindLatest(ctx.antecedents, (item) => item.kind === "content" && item.stem === stem);
+  const sense = pronoun.resumeSense;
+  const antecedent = bindLatest(
+    ctx.antecedents,
+    (item) => item.kind === "content" && item.stem === stem && (!sense || item.sense === sense),
+  );
   ctx.anaphors.push({ pronoun, kind: "content", antecedent });
 }
 
@@ -536,6 +541,20 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
   else ctx.referents.set(pronoun, filler ? fillerKey(ctx, filler) : `${roleVowel}@${anchor.predicate.at ?? -1}`);
 }
 
+/** Which sense of its stem a word carries: **-l** / **-m**, or a resume's own pin or its antecedent's (pronouns.md#resume-sense). */
+function sensePinned(ctx: Ctx, word: LexWord): "l" | "m" | undefined {
+  if (word.ending === "l" || word.ending === "m") return word.ending;
+  if (word.ending !== "r") return undefined;
+  if (word.resumeSense) return word.resumeSense;
+  const bound = ctx.anaphors.find((item) => item.pronoun === word)?.antecedent;
+  if (!bound) return undefined;
+  for (let i = ctx.antecedents.length - 1; i >= 0; i--) {
+    const item = ctx.antecedents[i]!;
+    if (item.kind === "content" && item.word === bound) return item.sense;
+  }
+  return undefined;
+}
+
 function harvest(ctx: Ctx, word: LexWord): void {
   if (word.family.kind === "number" && ordinalPronounPlace(word) === undefined) {
     ctx.antecedents.push({
@@ -546,7 +565,7 @@ function harvest(ctx: Ctx, word: LexWord): void {
   }
 
   if (contentRoots(word).length > 0) {
-    ctx.antecedents.push({ kind: "content", word, stem: wholeStem(word) });
+    ctx.antecedents.push({ kind: "content", word, stem: wholeStem(word), sense: sensePinned(ctx, word) });
   }
 
   const rStem = roleStem(word);

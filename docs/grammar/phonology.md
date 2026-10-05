@@ -169,11 +169,11 @@ These choices about word shape make Agazan easier to sing:
 | No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge** or a lexical join (**-l** / **-m**) before a number marker `r` |
 | No lexical stress | Music already places emphasis | Rhythm may stress a beat; spelling does not encode stress |
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
-| Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-ln` / `-r` (optional `-x`); stand-ins end in `-rl` / `-rm` |
+| Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-ln` / `-r` / `-rl` / `-rm` (optional `-x`); stand-ins end in `-rl` / `-rm` / `-rth` |
 
 On high notes, **u** may open toward [ʊ] (as in *book*); that is still **u**.
 
-Legal clusters: left-hanging `gl-`; number-word role letter + `r`; lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in `-rl` / `-rm` / `-rth`. The lexical join before `r` is the only syllable-final consonant inside a word.
+Legal clusters: left-hanging `gl-`; number-word role letter + `r`; lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`. The lexical join before `r` is the only syllable-final consonant inside a word.
 
 Try singing a short Agazan line quickly at a high but comfortable pitch:
 

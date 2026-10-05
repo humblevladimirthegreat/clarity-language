@@ -33,6 +33,19 @@ describe("resolve — content anaphors (pronouns.md#resume-r)", () => {
     assert.equal(anaphors[0]!.antecedent?.raw, "zululon");
   });
 
+  it("pins a resume to one sense with -rl / -rm (pronouns.md#resume-sense)", () => {
+    const { anaphors } = resolveOf("zazawan dodogal vahahal. zalahen dodogam vahahal. zazawan dodogarl vahahal. zalahen dodogarm vahahal. zazawan dodogar vahahal.");
+    assert.deepEqual(
+      anaphors.map((bind) => bind.antecedent?.raw),
+      ["dodogal", "dodogam", "dodogarm"],
+    );
+  });
+
+  it("reads a pinned resume as the one both know when that sense never came up", () => {
+    const { anaphors } = resolveOf("zodogal vawalal. zodogarm vayul.");
+    assert.equal(anaphors[0]?.antecedent, undefined);
+  });
+
   it("never binds a short cut of the root", () => {
     assert.throws(() => parseText("zululon vawalal. zulur vayul."), /whole stem/);
   });

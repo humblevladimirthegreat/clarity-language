@@ -121,6 +121,8 @@ export type MorphWord = {
   /** Left-bound `/ɡ/` only (`gl-`). */
   gl?: boolean;
   ending?: Ending;
+  /** A content resume pinned to one sense of the stem: **-rl** concrete, **-rm** abstract (`ending` is then `r`; pronouns.md#resume-sense). */
+  resumeSense?: "l" | "m";
   plural?: boolean;
   family: MorphWordFamily;
 };

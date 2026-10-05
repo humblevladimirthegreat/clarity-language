@@ -13,10 +13,21 @@ export class WordParseError extends Error {
   }
 }
 
+/**
+ * On a content word or compound, **-rl** / **-rm** is a resume pinned to the root's concrete / abstract
+ * sense (pronouns.md#resume-sense). Read it as **-r** plus `resumeSense`, so every resume rule applies unchanged.
+ */
+function readResumeSense(word: MorphWord): MorphWord {
+  const family = word.family;
+  const content = family.kind === "content" || (family.kind === "x" && family.xFamily === "compound");
+  if (!content || (word.ending !== "rl" && word.ending !== "rm")) return word;
+  return { ...word, ending: "r", resumeSense: word.ending === "rl" ? "l" : "m" };
+}
+
 /** Parse one Agazan word from surface text (Stage 1 Peggy grammar). */
 export function parseWord(input: string): MorphWord {
   try {
-    return peggyParse(input.trim()) as MorphWord;
+    return readResumeSense(peggyParse(input.trim()) as MorphWord);
   } catch (error) {
     if (error instanceof PeggySyntaxError) {
       throw new WordParseError(error);

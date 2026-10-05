@@ -519,6 +519,20 @@ For English *too* / *also*, resume the action. `/v/` **-r** is *the same action 
 
 **Compare with:** English *that* pointing at a quoted title, proverb, or aside uses a [role pointer](#role-pointers) (`duxar`, *that quote*), not whole-stem **-r**.
 
+### Resume one sense (**-rl** / **-rm**) {#resume-sense}
+
+Many roots carry both a concrete **-l** sense and an abstract **-m** sense (`odogal` *dog*, `odogam` *loyalty*), and both share one whole stem. Plain **-r** takes the most recent word with that stem, whichever sense it had. When both senses are in the conversation, pin the one you mean: **-rl** resumes the concrete sense, **-rm** the abstract sense. Everything else about a resume stays the same: the role letter, the whole stem, and the most recent match.
+
+> `zazawan dodogal vahahal. zalahen dodogam vahahal. zazawan dodogarl vahahal. zalahen dodogarm vahahal.`
+>
+> z-Azawan | d-dog | v-see . z-Alahen | d-loyalty | v-see . z-Azawan | d-←dog | v-see . z-Alahen | d-←loyalty | v-see
+>
+> "Azawan sees a dog. Alahen sees loyalty. Azawan sees the dog. Alahen sees the loyalty."
+
+Here plain `dodogar` would mean the loyalty, the most recent match. **-rl** reaches back past it to the dog.
+
+Pinning is optional. Write plain **-r** when only one sense has come up, or when the latest one is the one you mean. A pinned resume with no earlier word of that sense falls back the way plain **-r** does: it means the one you both already know (`zodogarm` alone is *the loyalty* you both know). A name has no sense to pin, and only a content word or a compound takes **-rl** / **-rm**. A [stand-in](dependents.md#stand-in) is a different word: it has a vowel and no root.
+
 ### Cross-role recast
 
 Sometimes you still mean that person or thing, but you need a **different** slot: the doing, the kind, the manner. Change only the first letter; keep the whole stem and **-r**. English then uses a longer phrase (*do the same with him*, *of that kind*) instead of *he* / *him*.

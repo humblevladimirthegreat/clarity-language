@@ -19,7 +19,6 @@ use [skip-cd] for amplify to not deploy.
 -review logical deduction
 -parser can optionally output translation guidance
 -eliminate lexicon retie by default
--allow -rm -rl on content roots if ambiguous referent
 -numbered pronouns can refer to -r
 
 save for near end of limit resets:
