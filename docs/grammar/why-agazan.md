@@ -10,7 +10,7 @@ The design aims at three outcomes: [compassion](#compassion), [rationality](#rat
 
 ### Try it in English first {#try-it-in-english}
 
-Do you have to learn a whole language to use these ideas? No. [Claritish](claritish/index.md) is ten short lessons on dropping single Agazan words into everyday English, where an English adverb or tag would go. In *The package arrives Friday `thovum`*, one word says *it could be so*, and English has no single word for that. Other lessons cover how you know, how far a label reaches, thanks that name the need, and more.
+Do you have to learn a whole language to use these ideas? No. [Claritish](claritish/index.md) is short lessons on dropping single Agazan words into everyday English, where an English adverb or tag would go. In *The package arrives Friday `thovum`*, one word says *it could be so*, and English has no single word for that. Other lessons cover how you know, how far a label reaches, thanks that name the need, and more.
 
 Every word Claritish teaches is already real Agazan, so nothing you learn there is thrown away. [Start with the Claritish introduction](claritish/index.md); each lesson is short.
 
@@ -60,7 +60,7 @@ English *Alahen is angry* can mean one outburst or the kind of person Alahen is.
 
 Marking a label's reach helps you describe what happened without turning it into who someone is, including yourself.
 
-In English: [Claritish Lesson 3, Labels](claritish/labels.md).
+In English: [Claritish: Labels](claritish/labels.md).
 
 ##### Can, can’t, and won’t
 
@@ -99,7 +99,7 @@ Agazan’s [sakes](sakes.md) are a fixed list of things that are good for a pers
 
 Naming the sake and your stance toward it helps you notice gratitude, motive, and oughts instead of blurring them into a vague *want*, *should*, or *good*.
 
-In English: [Claritish Lesson 6, Oughts and motives](claritish/oughts-and-motives.md).
+In English: [Claritish: Oughts and motives](claritish/oughts-and-motives.md).
 
 ##### Emotions as composition {#emotions-as-composition}
 
@@ -109,7 +109,7 @@ Agazan [builds an emotion](sakes.md#emotion-compose) from three parts: a [sake](
 
 Building the feeling from those parts helps you ask for what would actually help instead of stopping at the label.
 
-In English: [Claritish Lesson 11, Feelings in three parts](claritish/feelings.md).
+In English: [Claritish: Feelings in three parts](claritish/feelings.md).
 
 ##### Thanks that name the need {#thanks-that-name-the-need}
 
@@ -119,7 +119,7 @@ Agazan has no set phrase for [thanks](sakes.md#thanks-sorry). You say which of y
 
 Naming the need that was met makes thanks specific, which helps both of you notice what actually helped.
 
-In English: [Claritish Lesson 4, Thanks and sorry that say why](claritish/thanks-and-sorry.md).
+In English: [Claritish: Thanks and sorry that say why](claritish/thanks-and-sorry.md).
 
 #### Treating a cause as a fault {#trap-fault}
 
@@ -155,7 +155,7 @@ It is easy to treat a *could be* that keeps looping in your head as settled fact
 
 The [ending](knowing.md#evidence-strength) on that evidence word says how strong the evidence is (a vivid memory or a hazy one, a reliable source or a rumor), separately from how likely the claim is. Marking how you know helps you catch overconfidence and hearsay before you treat a take as settled fact.
 
-In English: [Claritish Lesson 1, How sure are you?](claritish/could-be.md) and [Lesson 2, How do you know?](claritish/how-you-know.md).
+In English: [Claritish: How sure are you?](claritish/could-be.md) and [How do you know?](claritish/how-you-know.md).
 
 ##### Always, usually, and how many cases {#always-usually-how-many-cases}
 
@@ -215,7 +215,7 @@ A [requirement](sakes.md#requirement) word says where a *must* comes from: a rul
 
 Naming the source helps you notice when a *have to* is only an expectation, so you can decide whether to meet it.
 
-In English: [Claritish Lesson 5, Allowed, required, agreed](claritish/allowed-required-agreed.md).
+In English: [Claritish: Allowed, required, agreed](claritish/allowed-required-agreed.md).
 
 ##### Wanting, planning, and deciding {#wanting-planning-and-deciding}
 
@@ -227,7 +227,7 @@ Splitting these helps you hold a want without owing it to anyone, avoid treating
 
 **Compare with:** English *will*. Use PLAN for intention, an evidence word plus `bral` for a forecast, and DECISION for how firm the pick is.
 
-In English: [Claritish Lesson 7, Wants and plans](claritish/wants-and-plans.md) and [Lesson 8, Decisions and tries](claritish/decisions-and-tries.md).
+In English: [Claritish: Wants and plans](claritish/wants-and-plans.md) and [Decisions and tries](claritish/decisions-and-tries.md).
 
 #### Treating effort as all or nothing {#trap-all-or-nothing}
 
@@ -241,7 +241,7 @@ English *try* does not say whether you are committing to keep going or only test
 
 Calling an attempt a trial run helps you start without betting everything on it: if it fails, finding that out was the point.
 
-In English: [Claritish Lesson 8, Decisions and tries](claritish/decisions-and-tries.md).
+In English: [Claritish: Decisions and tries](claritish/decisions-and-tries.md).
 
 ##### Planning the backup first {#planning-the-backup-first}
 
@@ -259,7 +259,7 @@ English *I can't do it* or *it didn't work* can sound final even when you expect
 
 Saying *not yet* instead of *not* helps you keep a goal open while it is still in progress. (cue: 🌱 a seedling, not grown yet)
 
-In English: [Claritish Lesson 9, Not yet](claritish/not-yet.md).
+In English: [Claritish: Not yet](claritish/not-yet.md).
 
 ##### Good enough {#good-enough}
 

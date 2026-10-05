@@ -1,4 +1,4 @@
-# Lesson 4: Thanks and sorry that say why {#thanks-and-sorry}
+# Thanks and sorry that say why {#thanks-and-sorry}
 
 ## The gap {#gap}
 

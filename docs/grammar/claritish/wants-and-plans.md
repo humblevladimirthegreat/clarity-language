@@ -1,4 +1,4 @@
-# Lesson 7: Wants and plans {#wants-and-plans}
+# Wants and plans {#wants-and-plans}
 
 ## The gap {#gap}
 

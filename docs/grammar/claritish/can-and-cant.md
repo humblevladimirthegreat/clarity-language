@@ -1,4 +1,4 @@
-# Lesson 10: Can and can't {#can-and-cant}
+# Can and can't {#can-and-cant}
 
 ## The gap {#gap}
 

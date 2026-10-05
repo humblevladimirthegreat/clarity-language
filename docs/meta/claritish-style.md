@@ -45,8 +45,8 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 - **Long menus say they are menus.** A locus or channel inventory is followed by *you don't need to memorize it*.
 - **Say when to leave it out.** Every lesson marks at least one place the drop-in is unnecessary, and none of them implies that plain English is a mistake: *none of the three is the "right" one*; *leave the suffix off when the scope doesn't matter*.
 - **Rule out the near miss.** Where the obvious English reading is wrong, deny it in one short sentence (*motion is not strength*).
-- **Endings** are the settled-to-passing scale, with the cue **-l ≈ lasting, -r ≈ right now**, and each lesson notes when the scale comes back. Lesson 5 grades the source instead, as do Lesson 6's prescription endings (invited / offered / trial). Lessons 3 and 10 teach hyphenated suffixes, which take no ending.
-- **Pronunciation** is taught once, in Lesson 1, in English keywords. Later lessons do not repeat it.
+- **Endings** are the settled-to-passing scale, with the cue **-l ≈ lasting, -r ≈ right now**, and each lesson notes when the scale comes back. Allowed, required, agreed grades the source instead, as do the prescription endings in Oughts and motives (invited / offered / trial). Labels and Can and can't teach hyphenated suffixes, which take no ending.
+- **Pronunciation** is taught once, in How sure are you?, in English keywords. Later lessons do not repeat it.
 
 ## The hyphenated English host
 <a id="hyphenated-host"></a>
@@ -64,14 +64,14 @@ About five one-line examples in a single blockquote, two trailing spaces per lin
 
 After the block, one short paragraph unpacks two or three of the examples, not all five, and picks the ones where the ending or the scope does the work.
 
-Practice items give the English sentence in italics, then a parenthesized note saying **what the speaker means**, never which form to write ("(could be; you'll call and check)", not "(use `thovul`)"). A note may name the parts when the word is composed, as in Lesson 7. Answers go in `::: details Show answer`.
+Practice items give the English sentence in italics, then a parenthesized note saying **what the speaker means**, never which form to write ("(could be; you'll call and check)", not "(use `thovul`)"). A note may name the parts when the word is composed, as in Wants and plans. Answers go in `::: details Show answer`.
 
 ## No Agazan sentences, no glosses
 <a id="no-glosses"></a>
 
-Lessons carry no full Agazan sentences and no morph gloss lines. Explain a drop-in by what it means, never by cutting it into Agazan morphemes. Where a word is built from parts, label the parts in plain English in a table (Lesson 7's need / locus / motion row), and that is the ceiling. The single glossed Agazan sentence on the closing page is the only one in the track.
+Lessons carry no full Agazan sentences and no morph gloss lines. Explain a drop-in by what it means, never by cutting it into Agazan morphemes. Where a word is built from parts, label the parts in plain English in a table (the need / locus / motion row), and that is the ceiling. The single glossed Agazan sentence on the closing page is the only one in the track.
 
 ## Back-references
 <a id="back-references"></a>
 
-A lesson may name an earlier lesson by number when it reuses its form ("start from a thanks or sorry word from Lesson 4"), as a reminder of one word, not a recap. No links between lessons, no links into the grammar, and no previews of lessons ahead outside the list on the intro page.
+Lessons carry no numbers. A lesson may name an earlier lesson by title, in plain text, when it reuses its form ("start from a thanks or sorry word from Thanks and sorry that say why"), as a reminder of one word, not a recap. No links between lessons, no links into the grammar, and no previews of lessons ahead outside the list on the intro page.

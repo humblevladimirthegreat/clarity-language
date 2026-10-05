@@ -1,4 +1,4 @@
-# Lesson 1: How sure are you? {#could-be}
+# How sure are you? {#could-be}
 
 ## The gap {#gap}
 

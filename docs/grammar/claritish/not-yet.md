@@ -1,4 +1,4 @@
-# Lesson 9: Not yet {#not-yet}
+# Not yet {#not-yet}
 
 ## The gap {#gap}
 

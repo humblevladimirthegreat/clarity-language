@@ -1,4 +1,4 @@
-# Lesson 5: Allowed, required, agreed {#allowed-required-agreed}
+# Allowed, required, agreed {#allowed-required-agreed}
 
 ## The gap {#gap}
 
