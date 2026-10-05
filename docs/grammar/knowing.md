@@ -1099,7 +1099,7 @@ Some channels only point one way:
 
 The wrong sign on a one-way word (**`thevom`** with **`+`**, **`thamam`** with **`-`**) is not a sentence.
 
-A signed measure in the `/b/` of a [time pole](dependents.md#dependent-clauses) (**`homam`** *until*, **`homal`** *by*, **`habam`** *before*, **`henum`** *after*, **`huwem`** *during*) counts from now, the same way. The pole itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel. So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a pole to slip in a past or future with no warrant. An absolute date in the pole (`homam b_#22,7`) needs none of this.
+A signed measure in the `/b/` of a [time pole](dependents.md#dependent-clauses) (**`homam`** *until*, **`heveham`** *by*, **`habam`** *before*, **`henum`** *after*, **`huwem`** *during*) counts from now, the same way. The pole itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel. So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a pole to slip in a past or future with no warrant. An absolute date in the pole (`homam b_#22,7`) needs none of this.
 
 > `yel zehodon vaheham homam bazazam grawol.`
 > y-command | z-listener | v-confidentiality | [h-until | [b-day | g-one]]

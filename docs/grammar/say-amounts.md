@@ -470,7 +470,7 @@ English *until tomorrow* (also *till tomorrow*), *by tomorrow*, and *before next
 >
 > "Keep the secret until tomorrow."
 
-Use **`homam`** for *until* / *till*, **`homal`** for *by*, **`habam`** for *before*, and **`henum`** for *after*. A negative count runs back from now.
+Use **`homam`** for *until* / *till*, **`heveham`** for *by*, **`habam`** for *before*, and **`henum`** for *after*. A negative count runs back from now.
 
 ### Date as books vs event-when
 <a id="as-of-vs-clock"></a>

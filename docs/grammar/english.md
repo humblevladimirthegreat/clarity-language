@@ -21,8 +21,8 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 | who does the action (*seen by Azawan*) | subject `/z/` (you may front the object) | [Who acts](clause.md#beginner), [word order](clause.md#word-order-emphasis) |
 | tool (*writes by / with a hammer*) | hook **`ael`** (*using*) + `/b/` | [Hooks](hooks.md#extra-noun) |
 | place (*by the station*) | hook **`om`** (*near*) + `/b/` (or **`ol`** *at*) | [Hooks](hooks.md#extra-noun) |
-| deadline (*by 15:30*, *by the storm*) | **`homal`** + `/b/` (or **`homal barl`** + sentence) | [By a deadline](dependents.md#by-deadline) |
-| deadline a day away (*by tomorrow*) | **`homal`** + a signed count in `/b/` | [Count from now](knowing.md#dated-channel) |
+| deadline (*by 15:30*, *by the storm*) | **`heveham`** + `/b/` (or **`heveham barl`** + sentence) | [By a deadline](dependents.md#by-deadline) |
+| deadline a day away (*by tomorrow*) | **`heveham`** + a signed count in `/b/` | [Count from now](knowing.md#dated-channel) |
 | manner (*by walking hastily*) | ordinary adverb `/h/`, no `/b/` | [Adverbs](clause.md#adverbs-h) |
 | origin (*Alahen from the city*) | **`hagum` / `gagum`** + `/b/` | [Of relations](relations.md#of-relations) |
 

@@ -109,8 +109,8 @@ uwem,h,♊,clause_pole,while,WHILE clause pole (concurrent),gemini twins mirror 
 uwem,g,♊,clause_pole,while,WHILE clause pole (concurrent),gemini twins mirror two sides; duality is while both sides at once,dependents.md#time-pole-on-noun
 omam,h,⏲️,clause_pole,until,UNTIL clause pole (endpoint bound),timer counts down to zero; deadline is until the endpoint,dependents.md#dependent-clauses
 omam,g,⏲️,clause_pole,until,UNTIL clause pole (endpoint bound),timer counts down to zero; deadline is until the endpoint,dependents.md#time-pole-on-noun
-omal,h,⏲️,clause_pole,by,BY clause pole (deadline: done at or before the endpoint),timer rings at zero; -l is the hard cutoff the event must beat,dependents.md#dependent-clauses
-omal,g,⏲️,clause_pole,by,BY clause pole (deadline: done at or before the endpoint),timer rings at zero; -l is the hard cutoff the event must beat,dependents.md#time-pole-on-noun
+eveham,h,🏁,clause_pole,by,BY clause pole (deadline: done at or before the endpoint),the checkered flag marks the finish; the event is done by the time it is reached,dependents.md#dependent-clauses
+eveham,g,🏁,clause_pole,by,BY clause pole (deadline: done at or before the endpoint),the checkered flag marks the finish; the event is done by the time it is reached,dependents.md#time-pole-on-noun
 abam,h,🎒,clause_pole,before,BEFORE clause pole (ahead-of),backpack holds what you need ahead; preparation is before the event,dependents.md#dependent-clauses
 abam,g,🎒,clause_pole,before,BEFORE clause pole (ahead-of),backpack holds what you need ahead; preparation is before the event,dependents.md#time-pole-on-noun
 enum,h,⌛,clause_pole,after,AFTER clause pole (just-after),hourglass just emptied; recency is after the prior edge,dependents.md#dependent-clauses

@@ -9,7 +9,7 @@ You already write one clause with [role letters](clause.md#role-letters) and sta
 ### Which person or thing (*who / that / which*)
 <a id="which-noun"></a>
 
-When English hangs *who* / *that* / *which* plus a clause on a noun (*the guard who sits*), write **two sentences**. First say that inner clause as an ordinary sentence. Then use that same person or thing in the next sentence.
+English can describe a noun with a whole clause that starts with *who*, *that*, or *which* (*the guard who sits*). Agazan has no such word. Write **two sentences** instead: first say the inner clause as an ordinary sentence, then use the same person or thing in the next sentence.
 
 > `zagavol vehahel. zazawan bagavol vezebel.`
 >
@@ -21,19 +21,17 @@ That pair is English *Azawan talks to the guard who sits.* Repeat the full word 
 
 **Compare with:** *a blue dog* is still one [adjective](clause.md#adjectives-ɡ) (`gubuhel`). *Azawan tells Alahen **that** a dog runs* is a [dependent clause](#dependent-clauses): *that* packages the next sentence as content, not as a tag on *dog*.
 
-
-
 ### Dependent clauses {#dependent-clauses}
 
-Sometimes a full sentence fills a slot in the sentence before it (*Azawan tells Alahen **that the dog runs***). That inner sentence is a **dependent clause**. The person told is unhosted `/b/`; *that…* is often a direct object.
+Sometimes a whole sentence fills one role in another sentence. In *Azawan tells Alahen **that the dog runs***, the part after *that* is what Azawan tells: the direct object. (Alahen, the person told, is unhosted `/b/`.) That inner sentence is a **dependent clause**.
 
-In the main sentence, a **stand-in** **`darl`** (role letter + **`a`** + **`-rl`**) occupies that slot and stands for whatever sentence follows right away.
+In the main sentence, a **stand-in** holds the dependent clause's place: **`darl`**, which is the role letter + **`a`** + **-rl**. It stands for the sentence that comes right after it, so the main sentence never has to wrap around the inner one.
 
-Put **`darl` last** in its slot in the main sentence, and put the dependent **immediately after** it. Rearrange free word order so **`darl`** stays last in that slot.
+Put **`darl`** last in the main sentence, and start the dependent clause immediately after it. Word order is free, so you can always arrange the other words to leave **`darl`** at the end.
 
-The main sentence stops after **`darl`**; the next full sentence is the content that **`darl`** stands for. Do not open that inner sentence with `/y/`. The stand-in vowel already types it (*that* **`a`**, *whether* **`o`**). With **`darl`**, **`dorl`**, and **`barl`**, the inner sentence names who does the verb (`/z/`). English often drops that person (*wants to walk*); write the name again. The one place the inner `/z/` can be left out is an instruction stand-in with an addressee ([stand-in vowels](#stand-in)). Resume **-r** is [pronouns](pronouns.md).
+The main sentence stops after **`darl`**, and the next full sentence is the content that **`darl`** stands for. Do not open that inner sentence with `/y/`: it is not a new turn, and the stand-in's vowel already says what kind of content it is (**`a`** for *that …*). The inner sentence names who does its verb (`/z/`), even where English drops that person (*wants to walk*): write the name again. The one exception is an instruction stand-in (*to …* or *not to …*) for the person told ([stand-in vowels](#stand-in)).
 
-*That…* content is often a direct object, with **`darl` last** in the main sentence:
+Here the dependent clause is the direct object, so the stand-in is **`darl`**:
 
 > `zazawan balahen vezebel darl zodogal varahal.`
 >
@@ -41,7 +39,7 @@ The main sentence stops after **`darl`**; the next full sentence is the content 
 >
 > "Azawan tells Alahen that the dog runs."
 
-English *whether* is that same object slot, with vowel **`o`**: **`dorl`**. The outer sentence stays a statement. End the whole stretch with a period (the outer act is still a claim).
+For English *whether*, change the vowel to **`o`**: **`dorl`**. The inner sentence is question-like, but the outer sentence is still a statement, so the whole stretch ends with a period.
 
 > `zazawan vahahal dorl zalahen vowogal.`
 >
@@ -49,9 +47,9 @@ English *whether* is that same object slot, with vowel **`o`**: **`dorl`**. The 
 >
 > "Azawan sees whether Alahen walks."
 
-*Because* / *if* and similar use a pole word + `/b/` **`barl`**. Keep that pair together, **last in the main sentence** (**`barl`** last). The abstract ending on the pole word is always **-m**.
+Words like *because*, *if*, and *although* attach a dependent clause as a reason, a condition, a contrast, or a time. Agazan uses a pair for this: a **pole** word that names the link, then the stand-in **`barl`** right after it. The pole is a relation word, so **`barl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`barl`** at the very end.
 
-The pole's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* place the event, so they are adverbs on `/h/`.
+The pole's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* describe the event itself, so they are adverbs on `/h/`.
 
 > `zazawan vezehel thevem barl zalahen vowogal.`
 >
@@ -59,7 +57,7 @@ The pole's role letter follows the clause page. *Because*, *if*, *only if*, and 
 >
 > "Azawan sings because Alahen walks."
 
-These poles use **-m** because they take the abstract sense of the root, not the everyday object. **Same root as** is that root as an everyday kind (citation **-l**). **Cue** only says why the picture maps to the English column.
+A pole uses the abstract sense of its root, not the everyday object, so it ends in **-m**.
 
 You can also say:
 
@@ -72,12 +70,12 @@ You can also say:
 | **`hezom barl`** | *although* / *even though* | `ezol` *zebra* | 🦓: two stripes, still one animal |
 | **`huwem barl`** | *while* (at the same time) | `uwel` *gemini* | ♊: two things at once |
 | **`homam barl`** | *until* | `omal` *timer* | ⏲️: stop when it rings |
-| **`homal barl`** | *by the time* | `omal` *timer* | ⏲️: done before it rings |
+| **`heveham barl`** | *by the time* | `evehal` *finish-line* | 🏁: done by the time you reach the flag |
 | **`habam barl`** | *before* | `abal` *backpack* | 🎒: packed first |
 | **`henum barl`** | *after* | `enul` *hourglass* | ⌛: sand already through |
 | **`hogom barl`** | *so that* / *in order to* | `ogol` *goal* | 🥅: you act so the shot counts |
 
-A command or request makes no claim, so an *if* pole on it limits the instruction instead: do this only in that case. English *if X, do Y* keeps the same order as any other pole, with **`barl`** last.
+A command or request makes no claim, so an *if* pole on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Agazan keeps the usual order, with **`barl`** last.
 
 > `yel vowogal thoyem barl zalahen vehahel.`
 >
@@ -85,7 +83,7 @@ A command or request makes no claim, so an *if* pole on it limits the instructio
 >
 > "If Alahen sits, walk."
 
-When English puts a **noun** after *despite* (*despite Alahen*), keep the same **`hezom`** pole and put that noun in `/b/` instead of **`barl`**. The obstacle is given, as with *although*. Do not write a second concession word. The *although* pole sits on `/h/` (or `/ɡ/` on a noun), never on `/th/`. On a noun host the same pole is **`gezom`**. (cue: 🦓 *zebra*: two stripes, still one animal)
+English *despite* takes a noun instead of a clause (*despite Alahen*). Use the same **`hezom`** pole and put that noun in `/b/` where **`barl`** would go. As with *although*, the obstacle is taken as fact, and you add no second word for it. The pole is on `/h/` because it describes the event, never on `/th/`. To attach it to a noun instead, use `/ɡ/`: **`gezom`**. (cue: 🦓 *zebra*: two stripes, still one animal)
 
 > `zazawan vowogal hezom balahen.`
 >
@@ -113,9 +111,9 @@ The time poles take a noun the same way. Put the event or period in `/b/` right 
 
 <a id="by-deadline"></a>
 
-*Until* and *by* use the same timer root. **`homam`** *until* says this event lasts up to the endpoint. **`homal`** *by* says this event is done at the endpoint or sooner: **-l** is the hard cutoff. (cue: ⏲️ *timer*: done before it rings)
+*Until* and *by* both name an endpoint. **`homam`** *until* says this event lasts up to the endpoint. **`heveham`** *by* says this event is done at the endpoint or sooner. (cue: 🏁 *finish line*: done by the time you reach the flag)
 
-> `zazawan vowogal homal bavodel.`
+> `zazawan vowogal heveham bavodel.`
 >
 > z-Azawan | v-walk | [h-by | b-thunderstorm]
 >
@@ -136,7 +134,7 @@ For *since* (from a starting point up to now), see [the *from* hook on a time](h
 <a id="so-that"></a>
 <a id="event-purpose"></a>
 
-When English names the **intended outcome** of this event (*walks so that Alahen sits*), keep the same hosted pair as *because*. The pole is **`hogom`**. Put the outcome in `/b/` as a following sentence after **`barl`**. The inner event is **not** asserted as a fact (unlike *because*). On a noun host the same pole is **`gogom`**. (cue: 🥅 *goal*: you act so the shot counts)
+English *so that* names the outcome an event aims at (*walks so that Alahen sits*). Use the pole **`hogom`** with **`barl`**, the same pair shape as *because*, and put the outcome in the sentence after **`barl`**. Unlike *because*, this does **not** claim the outcome happened. To attach the pole to a noun, use **`gogom`**. (cue: 🥅 *goal*: you act so the shot counts)
 
 > `zazawan vowogal hogom barl zalahen vehahel.`
 >
@@ -144,7 +142,7 @@ When English names the **intended outcome** of this event (*walks so that Alahen
 >
 > "Azawan walks so that Alahen sits."
 
-When English *to* drops the sitter, keep inner `/z/`:
+English *in order to* drops the person who sits. Agazan still names them in the inner `/z/`:
 
 > `zazawan vowogal hogom barl zazawan vehahel.`
 >
@@ -154,19 +152,17 @@ When English *to* drops the sitter, keep inner `/z/`:
 
 Ordinary `zogol` is still *a goal* (the net).
 
-**Compare with:** *although Alahen walks* is **`hezom barl`** plus the next sentence. Discourse *however* and *therefore* are sentence linkers after a finished claim ([continue](#continue-x)), not *although* or *so that*. *Whether Alahen walks* is **`dorl`**, not **`thoyem`** (*if* is a condition, not polar ignorance). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is a [sake motive](sakes.md#sake-preference) on the sake, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange). *Works for a money-bag* (something you want to get) is an extra-noun [hook](hooks.md#extra-noun); use **`hogom`** when *for* names a result you aim at (*practices for a race*). 
+**Compare with:** *although Alahen walks* is **`hezom barl`** plus the next sentence. Discourse *however* and *therefore* are sentence linkers after a finished claim ([continue](#continue-x)), not *although* or *so that*. *Whether Alahen walks* is **`dorl`**, not **`thoyem`** (*if* sets a condition; *whether* leaves a yes-or-no question open). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is a [sake motive](sakes.md#sake-preference) on the sake, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange). *Works for a money-bag* (something you want to get) is an extra-noun [hook](hooks.md#extra-noun); use **`hogom`** when *for* names a result you aim at (*practices for a race*).
 
-The verb has no past or future letter. *Before* / *after* / *while* / *until* place this event relative to the next sentence. Leftover **result** and **former climate** are standing moods, not time ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
-
-
+Agazan verbs have no past or future form. *Before*, *after*, *while*, and *until* place this event in time relative to the next sentence. A **result** that is still left over, and a **state that used to hold**, are moods rather than times ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
 
 ### Continue (`/x/`): keep the same speech move {#continue-x}
 
-After a statement, question, or command, you may keep going **without** starting a new speech move: the next stretch is still a statement if you were stating (still a question if you were asking, and so on). That is to **continue**. `/x/` marks it.
+Often you want to add another sentence to the same statement, question, or command, such as *therefore …* after a claim. An `/x/` word does that: the new stretch **continues** the speech move you already started, instead of starting a new one. It is still a statement if you were stating, still a question if you were asking, and so on.
 
-Only the first turn (or a default statement body) chooses the speech act. Do not write **`yal`** on the continued stretch: the speech act is already chosen.
+Only the first turn (or a default statement body) chooses the speech act. So the continued stretch needs no act word of its own, not even **`yal`**.
 
-A word that glues two sentences (*therefore*, *however*, …) is an `/x/` **linker**. A period may close the first body; the linker then **starts the next written sentence** under the same speech act:
+A **linker** is an `/x/` word that connects one sentence to the next, like English *therefore* or *however*. The first sentence may end with a period; the linker then **starts the next written sentence**, still under the same speech act:
 
 > `zodogal vowogal. xodum zagadul varahal.`
 >
@@ -175,7 +171,6 @@ A word that glues two sentences (*therefore*, *however*, …) is an `/x/` **link
 > "A dog walks. Therefore a cat runs."
 
 **Compare with:** [`/y/`](speech-moves.md#turn-y) starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
-
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -303,7 +298,6 @@ z-Ahaben | v-sit | [th-because | b-that-clause] | z-Azawan | d-guard | v-see
 *Ahaben sits because Azawan sees a guard.*
 :::
 
-
 ## Intermediate {#intermediate}
 
 ::: tip Reminder:
@@ -317,7 +311,7 @@ A **period** closes the sentence body in writing, whatever the speech act. Speec
 | Writing | Speech | Use | Cue |
 |---------|--------|-----|-----|
 | `.` | Fall on last stress + short pause | Closes the prior **body**. Next stretch still defaults to **`yal`** unless a new `/y/` turn, a written act word, or *yes* / *no* particle sets otherwise | Fall = the claim is done |
-| Next `/y/` turn (*yes* / *no*, vocative, written act word) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`yal`** / **`yam`** | Reset = jump to a new act |
+| Next `/y/` turn (*yes* / *no*, a call, written act word) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`yal`** / **`yam`** | Reset = jump to a new act |
 | Bare body or hook + body after `.` | No full reset required | Implied **`yal`** (or **`yam`** only if a soft particle / written **`yam`** said so) | No jump, so same statement |
 | Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`yam`** (implied or written) | **-m** leaves the hold open |
 | `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener speech act; period after the **whole** joined stretch | Dip extends; no jump |
@@ -329,7 +323,7 @@ A **period** closes the sentence body in writing, whatever the speech act. Speec
 
 ### Sentence linkers {#sentence-linkers}
 
-These words glue one finished sentence to the next (one-way). They are a fixed set of six `/x/` words. Each one means its root's **abstract** sense, so it ends in **-m**. Beginner already used *therefore*.
+Beginner already used *therefore*. It is one of six **sentence linkers**: `/x/` words that connect a finished sentence to the one after it. Each one uses its root's **abstract** sense, so it ends in **-m**.
 
 | English | Agazan | Abstract of | Cue | Example |
 |---------|--------|-------------|-----|---------|
@@ -340,7 +334,7 @@ These words glue one finished sentence to the next (one-way). They are a fixed s
 | *but* | **`xagezam`** | `agezam` *blockage* | 🚧: the expected path is blocked | `xagezam` |
 | *by the way* | **`xavazem`** | `avazem` *accessory* | 🍟: a side dish, not the main course | `xavazem` |
 
-*therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* is concurrent passage; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
+*therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* puts the next claim at the same time; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
 Three linkers also take **-l** for a **firm** link: the link holds with no room for doubt, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). (cue: **-l** ≈ lasting: the link holds)
 
@@ -360,7 +354,7 @@ No other root makes a linker. Any other `/x/` content word sets the [topic](pron
 
 All of these `/x/` words, and the topic words, come only at the **start of a sentence**: only `/y/` turn words or a [fronted discourse hook](hooks.md#discourse-hooks) may come before them. They never follow a [clause join](joins.md#clause-joins), and they never open the sentence after a [stand-in](#dependent-clauses), because that sentence belongs to the dependent.
 
-A linker and a topic word do not share a sentence. To change the topic after a linker's job, write the topic word as its own sentence and then the linker (*Now, about Azawan. However, Alahen runs.*):
+A linker and a topic word do not share a sentence. To change the topic and also use a linker, write the topic word as its own sentence, then start the next sentence with the linker (*Now, about Azawan. However, Alahen runs.*):
 
 > `xazawan. xezom zalahen varahal.`
 >
@@ -394,7 +388,7 @@ In a new turn with its own act word, the act word comes first and the linker sta
 
 ### Result (*so … that*) {#result-pole}
 
-*Therefore* needs two sentences. To tie the result to the degree in one sentence (*so tired that he sleeps*), put the pole **`hodum`** after the degree and the result after **`barl`**. The pole uses the same root as *therefore*. Unlike **`hogom`** *so that*, the result really happened.
+English *so … that* ties a result to how much of something there is (*so tired that they sleep*), all in one sentence. Put the pole **`hodum`** after the word that carries the degree, then **`barl`**, then the result as the next sentence. **`hodum`** uses the same root as *therefore*, which needs two sentences. Unlike **`hogom`** *so that*, the result really happened.
 
 > `zazawan welavam gadadal hodum barl zazawar vezebal.`
 >
@@ -413,7 +407,9 @@ In a new turn with its own act word, the act word comes first and the linker sta
 ### Stand-in vowels (`-rl` / `-rm`) {#stand-in}
 <a id="clause-member"></a>
 
-Beginner used locked **`a`** (`darl` / `barl`) and *whether* **`dorl`**. Stand-ins reuse the [speech-act vowel series](speech-moves.md#speech-act-beginner) (`a` / `o` / `e` / `u`) to type the following sentence's content: statement-like, question-like, instruction-like, or avoidance-like. Unlike `/y/`, a stand-in does not begin a speech act; it makes that kind of sentence content fill a role in the outer sentence. They are not joins. **`-rl`** locks that sentence as the whole filler; **`-rm`** is open (gist / not only that).
+Beginner used **`darl`** / **`barl`** for *that …* and **`dorl`** for *whether …*. A stand-in's vowel says what kind of content the next sentence is, with the same four vowels as the [act words](speech-moves.md#speech-act-beginner): **`a`** a statement, **`o`** a question, **`e`** an instruction, **`u`** something to avoid. So a dependent clause can carry an instruction (*tells Alahen **to sit***) or a warning (*tells Alahen **not to sit***).
+
+Unlike a `/y/` act word, a stand-in does not itself state, ask, or command: it only lets that kind of content fill a role in the outer sentence. Stand-ins are not joins. The ending says how much the next sentence covers: **`-rl`** means it is the whole content (locked); **`-rm`** leaves it open (the gist, or not the only thing).
 
 | Stand-in | Content type | **`-rl`** locked | **`-rm`** open |
 |----------|--------------|------------------|----------------|
@@ -422,7 +418,7 @@ Beginner used locked **`a`** (`darl` / `barl`) and *whether* **`dorl`**. Stand-i
 | **`e`** order | instruction-like (compare **`yel`**) | `derl` *to …* | `derm` *to …* (open) |
 | **`u`** undo | avoidance-like (compare **`yul`**) | `durl` *that not / lest …* | `durm` *lest …* (open) |
 
-The corresponding `/y/` turn makes an assertion, asks a question, gives a command, or prohibits an action. The stand-in puts that kind of content in a dependent slot; it does not assert, ask, command, or prohibit in its own right. You may leave out the dependent `/z/` only when all of these hold:
+You may leave out the dependent clause's `/z/` only when all of these hold:
 
 1. The stand-in is **`derl`** / **`derm`**, or **`durl`** / **`durm`** telling someone *not to*.
 2. It fills the outer sentence's `/d/` slot.
@@ -430,7 +426,7 @@ The corresponding `/y/` turn makes an assertion, asks a question, gives a comman
 
 The missing subject is then that `/b/`. It is never the listener and never the outer `/z/`. In every other case, write the inner `/z/`: after **`darl`** / **`dorl`**, after any pole (**`barl`** / **`burl`**), and when the outer sentence has no unhosted `/b/` (*wants to sit*, *tries to sit*). When the doer is someone other than that `/b/`, write them too, using resume **-r** if the name would repeat.
 
-After a pole, the dependent is **`barl`** (or **`barm`** for gist): *because* / *if* / *although* / *so that* all use it. There are two exceptions, both with **`burl`**: purpose-not **`hogom burl`** (*so that … not*) and **`thoyem burl`** (*unless*). Do not put this family on `/x/` (clause *and* stays `xal` / `xan`).
+After a pole, the dependent is **`barl`** (or **`barm`** for gist): *because* / *if* / *although* / *so that* all use it. There are two exceptions, both with **`burl`**: purpose-not **`hogom burl`** (*so that … not*) and **`thoyem burl`** (*unless*). Stand-ins never take `/x/`; clause *and* is `xal` / `xan`.
 
 > `zazawan balahen vezebel derl vehahel.`
 >
@@ -444,7 +440,9 @@ The person told is unhosted `/b/`, so **`derl vehahel`** can leave out its subje
 >
 > z-Azawan | v-wish | d-to-clause | z-Azawan | v-sit
 >
-> "Azawan wishes to sit." Quotes of wording stay [spans](spans.md).
+> "Azawan wishes to sit."
+
+To quote someone's exact words instead, use a [span](spans.md).
 
 English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl`**. When it tells someone not to act, the person told (`/b/`) can be the missing subject, as with **`derl`**. When it only keeps an outcome off, with no one told, write the inner `/z/`. The outer sentence stays a statement. *Don't sit!* as the whole move is still a [prohibition](speech-moves.md#speech-act-beginner) (**`yul`**), not this stand-in.
 
@@ -486,7 +484,7 @@ To join another clause to the main sentence instead, end the sentence and start 
 
 A stand-in on **`-rl`** / **`-rm`** holds a slot for the sentence that comes **next**. To point **back** at content already said, end the stand-in in **`-rth`**: English *so* in *Azawan says so*, or *that* in *Alahen doubts that*. Nothing follows it; the sentence ends as usual.
 
-The vowel still types the content, and the word stands for the most recent content of that type:
+The vowel still says what kind of content it is, and the word stands for the most recent content of that kind:
 
 | Stand-in | Points back to | English |
 |----------|----------------|---------|
@@ -513,7 +511,7 @@ Other role letters work the same way as the forward stand-in: **`barth`** after 
 
 ### Time poles on a noun {#time-pole-on-noun}
 
-To place a **thing** in time rather than the event (*the walk after the thunderstorm*), put the [time pole](#dependent-clauses) on `/ɡ/` right after that noun: **`guwem`** *during*, **`gabam`** *before*, **`genum`** *after*, **`gomam`** *until*, **`gomal`** *by*. The `/b/` after it is the event or period, as with the `/h/` pole, or a signed [count from now](knowing.md#dated-channel) (`gabam bazazam grawol` *before tomorrow*).
+To place a **thing** in time rather than the event (*the walk after the thunderstorm*), put the [time pole](#dependent-clauses) on `/ɡ/` right after that noun: **`guwem`** *during*, **`gabam`** *before*, **`genum`** *after*, **`gomam`** *until*, **`geveham`** *by*. The `/b/` after it is the event or period, as with the `/h/` pole, or a signed [count from now](knowing.md#dated-channel) (`gabam bazazam grawol` *before tomorrow*).
 
 > `zalahen dowogal genum bavodel vahahal.`
 >
@@ -639,7 +637,7 @@ z-Ahaben | [w-very | h-haste] | v-run | [h-so-result | b-that-clause] | z-Alahen
 
 ### Lexicalized stand-ins in other roles {#stand-in-roles}
 
-The stand-in vowel identifies the kind of sentence content, while the first letter identifies the role that content fills. With **-rn** (or **-n** after a stacked vowel), a stand-in becomes a lexicalized name for that content: statement, question, command, prohibition, and so on. For example, **`darn`** is a statement, **`dorn`** a question, **`dern`** a command, and **`durn`** a prohibition. Use the same vowel choices with another role letter when the following sentence fills that role. `/v/` forms use the same **-rn** / **-n** endings for their lexicalized verb readings.
+A stand-in's vowel says what kind of content follows, and its first letter says which role that content fills. With **-rn** (or **-n** after two vowels, as in **`vaen`**), the stand-in becomes a fixed word for that kind of content: **`darn`** *a statement*, **`dorn`** *a question*, **`dern`** *a command*, **`durn`** *a prohibition*. Use the same vowels with another role letter when the following sentence fills that role. On `/v/`, the same **-rn** / **-n** endings make verbs that take the following sentence as their content.
 
 Each content type has one lexicalized form; there is no closed / open pair here.
 
@@ -677,11 +675,11 @@ A `/z/` stand-in puts the whole following sentence in the subject slot. With a `
 >
 > "It is hard for Azawan to walk."
 
-The sentence after one of these verbs has its own subject when the chosen content type requires one, just as it does after **`darl`** / **`derl`**. The verb’s role letter lets you use the same typed content as an object, a described property, or another role supported by the clause.
+The sentence after one of these verbs has its own subject when the chosen content type requires one, just as it does after **`darl`** / **`derl`**. Changing the role letter lets the same kind of content serve as an object, a described property, or another role the clause allows.
 
 ### Nested dependents {#nested-dependents}
 
-Each clause has at most one **stand-in** at the end of the main sentence. The sentence after it may itself end in **`barl`**, so a further sentence hangs to the **right**.
+A clause has at most one **stand-in**, at its end. But the dependent clause is a clause too, so it may end in its own **`barl`**, and a further sentence follows it on the **right**.
 
 > `zazawan gezebul thevem barl zalahen vowogal thevem barl zahaben vezebal.`
 >

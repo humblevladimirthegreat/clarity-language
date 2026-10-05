@@ -1,14 +1,14 @@
 # Speech moves {#speech-moves}
 
-Start a new turn with `/y/`: call someone, make a conventional call, or set the turn as a statement, question, command, or prohibition.
+How to start a new speech move with `/y/`: call someone, react, or say whether you are stating, asking, commanding, or forbidding.
 
 ## Beginner {#beginner}
 
 ### Turn (`/y/`): start a new speech move {#turn-y}
 
-A **turn** is one speech move: a statement, question, command, or other act, including talking only to yourself. `/y/` starts a new turn.
+A **turn** is one speech move: a statement, question, command, or other act, including talking only to yourself. A `/y/` word starts a new turn.
 
-At the start of a turn, write its act word immediately before the body (subject, object, verb, and so on), when you write one. A `/y/` word that calls someone or makes a conventional call can come first; a `/y/` after a finished body starts the next turn.
+The `/y/` words go at the start of the turn, before its **body** (the subject, object, verb, and the rest of the clause). So a `/y/` word after a finished body never belongs to that body: it starts the next turn.
 
 ### Call someone (`/y/` + name) {#vocative}
 
@@ -47,9 +47,9 @@ The ending tells a reaction from a call: **-n** calls someone (`yalahen`, `yagav
 ### Speech act: statement, question, command
 <a id="speech-act-beginner"></a>
 
-Each turn has one **speech act**: whether you are stating, asking, commanding, or similar. The default statement word is **`yal`**. A period already marks a statement, so you can leave **`yal`** out when it is clear.
+Each turn does one thing: it states, asks, commands, or forbids. That is its **speech act**. An **act word** names it: `y`, a vowel, and **-l**. The statement word is **`yal`**, but a period already marks a statement, so you usually leave **`yal`** out.
 
-When the turn is not a statement, put its `/y/` act word immediately before the body:
+When the turn is not a statement, put its act word immediately before the body:
 
 > `yel vowogal.`
 >
@@ -57,7 +57,7 @@ When the turn is not a statement, put its `/y/` act word immediately before the 
 >
 > "Walk!"
 
-The vowel gives the act word its setting. The same four vowel cues appear in many small word families: **a** add / hold, **o** one / pick, **e** order / instruct, **u** undo / take back. Joins, hooks, restrictors, stand-ins, ability (`xa`), sake and scope words, span fences and presence on a name all reuse them.
+The vowel picks the act. Its cues are **a** add / hold, **o** one / pick, **e** order / instruct, **u** undo / take back. The same four vowels, with the same cues, come back in many small word families later on.
 
 | Agazan | Use | Cue |
 |--------|-----|-----|
@@ -146,9 +146,9 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 ### Speech act: firm and soft {#speech-act}
 
-You already write whether a turn is a statement, question, command, or prohibition. The extra choice here is **how firmly** you mean it.
+You already mark whether a turn is a statement, question, command, or prohibition. The ending of the act word adds **how firmly** you mean it. English softens with extra words (*please*, *perhaps*, *for what it's worth*); Agazan changes only the ending.
 
-The act word is **`y` + vowel + ending**. The vowel sets the act (**a** statement, **o** question, **e** command, **u** prohibition). **-l** stands behind the act; **-m** leaves it open (soft / offered); **-r** marks an act you hold only [for now](#act-r). Write the act word when the setting is not a default statement. A period still lets you omit **`yal`**.
+The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a** statement, **o** question, **e** command, **u** prohibition). With **-l** you stand behind the act. With **-m** you offer it softly and leave the other person free to take it up or not. **-r** marks an act you hold only [for now](#act-r). Write the act word whenever the turn is not a plain statement; a period still lets you omit **`yal`**.
 
 > `yam zazawan vowogal.`
 >
@@ -187,7 +187,7 @@ A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` w
 
 #### For now (**-r**) {#act-r}
 
-**-r** marks an act you hold only **for now**, the same as **-r** on a [polar stance](questions.md#polar-endings): provisional, and you expect to revisit it.
+**-r** marks an act you hold only **for now**: provisional, and you expect to revisit it.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -303,7 +303,7 @@ A mark on a span colors all of it:
 
 ### Speech manner (*frankly* / *to be clear*) {#speech-manner}
 
-A tone mark changes only your voice. To **say** how you are speaking, use a stance word (`/th/`, [clause](clause.md#stance-th)) from an ordinary root. Like any stance word, it may sit anywhere in the sentence; the start is usual.
+English *frankly* and *to be clear* say in words how you are speaking. A tone mark cannot do that, because it changes only your voice. Instead, use a stance word (`/th/`, [clause](clause.md#stance-th)) built on an ordinary root. Like any stance word, it may sit anywhere in the sentence; the start is usual.
 
 | Agazan | English | Root |
 |--------|---------|------|
@@ -326,7 +326,7 @@ A tone mark changes only your voice. To **say** how you are speaking, use a stan
 
 ### Number as interjection {#number-as-interjection}
 
-A number word in `/y/` is a call-out (*Three more!*, a score). It can sit with the other opening `/y/` words, before the act word, or stand alone as its own turn. Readings by marker: [numbers](numbers.md#number-as-interjection-by-marker).
+A number word in `/y/` is a call-out (*Three more!*, a score). It can sit with the other opening `/y/` words, before the act word, or stand alone as its own turn. How each kind of number reads here: [numbers](numbers.md#number-as-interjection-by-marker).
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
