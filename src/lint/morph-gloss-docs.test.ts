@@ -68,6 +68,22 @@ describe("extractTranslationExercises", () => {
     assert.equal(items.length, 1);
     assert.equal(items[0]!.morph, null);
   });
+
+  it("pairs a spoken → written prompt's answer, not the spoken row", () => {
+    const md = `### Translation practice
+
+**1.** 🔊 \`graduzol\`
+
+::: details Show answer
+\`g+20\`
+
+g-20
+:::
+`;
+    const items = extractTranslationExercises(md);
+    assert.equal(items[0]!.agazan, "g+20");
+    assert.equal(items[0]!.morph, "g-20");
+  });
 });
 
 describe("lintMorphGlossMarkdown", () => {

@@ -12,7 +12,7 @@ English needs a **code**: a phone, room, channel, or serial, not a counted amoun
 
 > `zazawan d_555,123,4567 vahahal.`
 >
-> 🔊 *zazawan drovavavathowodurethomovagulel vahahal.*
+> 🔊 `zazawan drovavavathowodurethomovagulel vahahal.`
 >
 > z-Azawan | d-_555,123,4567 | v-see
 >
@@ -30,7 +30,7 @@ English names a **clock time** or a **calendar date**. Both reuse digit-string g
 
 > `h_15,30 zazawan vowogal.`
 >
-> 🔊 *hrowovathorezol zazawan vowogal.*
+> 🔊 `hrowovathorezol zazawan vowogal.`
 >
 > h-_15,30 | z-Azawan | v-walk
 >
@@ -54,7 +54,7 @@ Clock and date together:
 
 > `zazawan vowogal huwem bavawem g_1962.`
 >
-> 🔊 *zazawan vowogal huwem bavawem growonagudul.*
+> 🔊 `zazawan vowogal huwem bavawem growonagudul.`
 >
 > z-Azawan | v-walk | [h-while | [b-year | g-_1962]]
 >
@@ -66,7 +66,7 @@ For *from … to* with clock times, put each time in `/b/` after the hooks **`ul
 
 > `zazawan ul b_9 vowogal oel b_17.`
 >
-> 🔊 *zazawan ul bronal vowogal oel browolel.*
+> 🔊 `zazawan ul bronal vowogal oel browolel.`
 >
 > z-Azawan | [from | b-_9] | v-walk | [toward | b-_17]
 >
@@ -180,7 +180,7 @@ English *25% of the cats* names a **portion of a whole**. Close a **count** (`ra
 
 > `zagadulx g+25%.`
 >
-> 🔊 *zagadulx graduvayol.*
+> 🔊 `zagadulx graduvayol.`
 >
 > z-cat-x | g-25yo
 >
@@ -259,7 +259,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. One
 ::: details Show answer
 `zazawan d_555,123,4567 vahahal.`
 
-🔊 *zazawan drovavavathowodurethomovagulel vahahal.*
+🔊 `zazawan drovavavathowodurethomovagulel vahahal.`
 
 z-Azawan | d-_555,123,4567 | v-see
 :::
@@ -269,7 +269,7 @@ z-Azawan | d-_555,123,4567 | v-see
 ::: details Show answer
 `h_15,30 zazawan dahaben vahahal.`
 
-🔊 *hrowovathorezol zazawan dahaben vahahal.*
+🔊 `hrowovathorezol zazawan dahaben vahahal.`
 
 h-_15,30 | z-Azawan | d-Ahaben | v-see
 :::
@@ -279,7 +279,7 @@ h-_15,30 | z-Azawan | d-Ahaben | v-see
 ::: details Show answer
 `zebezalx g+25%.`
 
-🔊 *zebezalx graduvayol.*
+🔊 `zebezalx graduvayol.`
 
 z-pill-x | g-25yo
 :::
@@ -305,7 +305,7 @@ z-Azawan | [b-meter | g-two] | v-walk
 ::: details Show answer
 `zalahen d_911 vahahal.`
 
-🔊 *zalahen dronawowol vahahal.*
+🔊 `zalahen dronawowol vahahal.`
 
 z-Alahen | d-_911 | v-see
 :::
@@ -323,7 +323,7 @@ z-Alahen | [d-rock | g-five] | v-punch
 ::: details Show answer
 `z+15 al z+16.`
 
-🔊 *zrawoval al zrawogul.*
+🔊 `zrawoval al zrawogul.`
 
 z-15 | through | z-16
 :::
@@ -333,7 +333,7 @@ z-15 | through | z-16
 ::: details Show answer
 `h_#22,7 zahaben vezugel.`
 
-🔊 *hroedudutholel zahaben vezugel.*
+🔊 `hroedudutholel zahaben vezugel.`
 
 h-_22,7 | z-Ahaben | v-scream
 :::
@@ -352,7 +352,7 @@ h-_22,7 | z-Ahaben | v-scream
 
 ::: details Show answer
 
-🔊 *zabadul grolel.*
+🔊 `zabadul grolel.`
 
 z-baby-bottle | g-_7
 
@@ -363,7 +363,7 @@ z-baby-bottle | g-_7
 
 ::: details Show answer
 
-🔊 *hrozonathozozol zahaben vahahal.*
+🔊 `hrozonathozozol zahaben vahahal.`
 
 h-_09,00 | z-Ahaben | v-see
 
@@ -374,7 +374,7 @@ h-_09,00 | z-Ahaben | v-see
 
 ::: details Show answer
 
-🔊 *zabadulx gravazoyol.*
+🔊 `zabadulx gravazoyol.`
 
 z-baby-bottle-x | g-50yo
 
@@ -385,7 +385,7 @@ z-baby-bottle-x | g-50yo
 
 ::: details Show answer
 
-🔊 *zazawan duzubul grawol vahahal.*
+🔊 `zazawan duzubul grawol vahahal.`
 
 z-Azawan | [d-spoon | g-one] | v-see
 
@@ -405,7 +405,7 @@ z-one | through | z-three
 
 ::: details Show answer
 
-🔊 *zalahen drozozozol vahahal.*
+🔊 `zalahen drozozozol vahahal.`
 
 z-Alahen | d-_000 | v-see
 
@@ -416,7 +416,7 @@ z-Alahen | d-_000 | v-see
 
 ::: details Show answer
 
-🔊 *hrodurethovanam zalahen vezugel.*
+🔊 `hrodurethovanam zalahen vezugel.`
 
 h-_23,59.about | z-Alahen | v-scream
 
@@ -427,7 +427,7 @@ h-_23,59.about | z-Alahen | v-scream
 
 ::: details Show answer
 
-🔊 *zrawozol uel zraduzol.*
+🔊 `zrawozol uel zraduzol.`
 
 z-ten | outside | z-20
 
@@ -438,7 +438,7 @@ z-ten | outside | z-20
 
 ::: details Show answer
 
-🔊 *hroewothomol zalahen vowogal.*
+🔊 `hroewothomol zalahen vowogal.`
 
 h-_1,4 | z-Alahen | v-walk
 
@@ -499,7 +499,7 @@ The range hook takes the other hook endings too.
 
 > `z+13 an z+19.`
 >
-> 🔊 *zraworel an zrawonal.*
+> 🔊 `zraworel an zrawonal.`
 >
 > NAME[z-13 | through | z-19]
 >
@@ -570,7 +570,7 @@ With no `/b/` after a joined subject, each member is a sibling of the others.
 
 > `zalahen g#1e0 bazawan vowogal.`
 >
-> 🔊 *zalahen grebazoyawol bazawan vowogal.*
+> 🔊 `zalahen grebazoyawol bazawan vowogal.`
 >
 > [z-Alahen | [g-#-1e0 | b-Azawan]] | v-walk
 >
@@ -578,7 +578,7 @@ With no `/b/` after a joined subject, each member is a sibling of the others.
 
 > `zahadol g#2e1 bazawan vowogal.`
 >
-> 🔊 *zahadol grebawoyadul bazawan vowogal.*
+> 🔊 `zahadol grebawoyadul bazawan vowogal.`
 >
 > [z-child | [g-#-2e1 | b-Azawan]] | v-walk
 >
@@ -588,7 +588,7 @@ For a side branch, nest a second anchor: first step to the relative, then from t
 
 > `zalahen grebazol bobel g#1e-1 bazawan vowogal.`
 >
-> 🔊 *zalahen grebazol bobel grebuwoyawol bazawan vowogal.*
+> 🔊 `zalahen grebazol bobel grebuwoyawol bazawan vowogal.`
 >
 > [z-Alahen | [g-#-e0 | [b-person | [g-#-1e-1 | b-Azawan]]]] | v-walk
 >

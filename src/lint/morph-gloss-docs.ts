@@ -9,6 +9,7 @@ import {
 } from "../parse/morph-gloss.js";
 import { lineNumberAt } from "../retie/tokens.js";
 import type { AmbiguityConflict } from "../parse/types.js";
+import { SPEECH_MARK } from "./number-speech-docs.js";
 
 export type MorphPair = {
   agazan: string;
@@ -268,7 +269,8 @@ function parseExerciseItem(
 ): { agazan: string; morph: string | null; loose: string | null; agazanLineOffset: number } | null {
   const prompt = ITEM_START_RE.exec(itemLines[0] ?? "");
   const promptRest = prompt?.[2] ?? "";
-  const promptCodes = codeSpans(promptRest);
+  // A spoken → written prompt (🔊 row) is not the example; its answer in the details is.
+  const promptCodes = promptRest.trim().startsWith(SPEECH_MARK) ? [] : codeSpans(promptRest);
   const morph = extractExerciseMorph(itemLines, promptCodes.length > 0);
   const loose = looseFromItalic(promptRest) ?? extractExerciseLooseInDetails(itemLines);
 

@@ -7,9 +7,9 @@ import { toSpeechText } from "../tts/plan.js";
  * numeric-derivation.md — the last is spelled out, so it rarely needs rows).
  *
  * Every Agazan example line whose speech differs from its writing (shorthand
- * number words) carries a `🔊 *spoken*` row directly underneath. Spoken →
+ * number words) carries a `🔊 \`spoken\`` row directly underneath. Spoken →
  * written drills put the 🔊 row on the prompt instead. Tables with a written
- * column and a **Spoken** column start each spoken cell with `*spoken*`.
+ * column and a **Spoken** column start each spoken cell with `\`spoken\``.
  * The expected spoken form is computed from the shorthand.
  */
 
@@ -25,7 +25,7 @@ export type NumberSpeechFinding = {
 };
 
 const ITEM_START_RE = /^\*\*\d+\.\*\*\s*/;
-const SPEECH_ROW_RE = new RegExp(`^${SPEECH_MARK}\\s+\\*([^*]+)\\*`);
+const SPEECH_ROW_RE = new RegExp(`^${SPEECH_MARK}\\s+\`([^\`]+)\``);
 const WRITTEN_COL_RE = /^(?:written|writing|preferred writing|agazan)$/i;
 const SPOKEN_COL_RE = /^(?:spoken|speech|pronunciation)$/i;
 
@@ -189,7 +189,7 @@ function lintSpeechTables(lines: string[]): NumberSpeechFinding[] {
         const cells = splitRow(lines[i]!);
         const agazan = singleNumberWord(cells[writtenCol] ?? "");
         if (agazan != null) {
-          const m = (cells[spokenCol] ?? "").match(/^\*([^*]+)\*/);
+          const m = (cells[spokenCol] ?? "").match(/^`([^`]+)`/);
           const documented = m ? m[1]!.trim() : null;
           const expected = spokenForm(agazan);
           if (documented !== expected) {
@@ -206,7 +206,7 @@ function lintSpeechTables(lines: string[]): NumberSpeechFinding[] {
 export function formatNumberSpeechFinding(relpath: string, finding: NumberSpeechFinding): string {
   const loc = `${relpath}:${finding.line}`;
   if (finding.documented == null) {
-    return `${loc}  missing pronunciation row  \`${finding.agazan}\`  (expected ${SPEECH_MARK} *${finding.expected}*)`;
+    return `${loc}  missing pronunciation row  \`${finding.agazan}\`  (expected ${SPEECH_MARK} \`${finding.expected}\`)`;
   }
-  return `${loc}  pronunciation mismatch  \`${finding.agazan}\`  documented *${finding.documented}*, expected *${finding.expected}*`;
+  return `${loc}  pronunciation mismatch  \`${finding.agazan}\`  documented \`${finding.documented}\`, expected \`${finding.expected}\``;
 }

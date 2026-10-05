@@ -115,7 +115,7 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 > `zagadulx g+100% ul g+50% vehahel.`
 >
-> 🔊 *zagadulx grawozozoyol ul gravazoyol vehahel.*
+> 🔊 `zagadulx grawozozoyol ul gravazoyol vehahel.`
 >
 > [z-cat-x | g-100yo] | through-excluding | g-50yo | v-sit
 >

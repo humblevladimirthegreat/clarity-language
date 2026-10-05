@@ -69,7 +69,7 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - [x] **Batch 2.8:** `hooks` (7.7k)
 - [x] **Batch 2.9:** `restrictors` (3.3k), `relations` (5.4k)
 - [x] **Batch 2.10:** `spans` (4.6k)
-- [ ] **Batch 2.11:** `numbers` (10.9k)
+- [x] **Batch 2.11:** `numbers` (10.9k)
 - [ ] **Batch 2.12:** `comparatives` (5.5k), `causation` (2.9k)
 - [ ] **Batch 2.13:** `sakes` (9.4k)
 - [ ] **Batch 2.14:** `intention` (4.5k)
@@ -227,8 +227,19 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - Scope islands example translation *Azawan and (just Alahen) saw ….* keeps its trailing ellipsis (quoted translation).
 - Resolved after review: the Topics in a quote example `x@[onodan alahen] zozan vezehel.` (topic as subject) was translated *it is sung*. It is now `x@[onodan alahen] dozan vezehel.` (morph `d-TOPIC`), so the topic is what gets sung. The parser tests that use the old string only check parsing, so they are unchanged.
 
+### 2026-10-05: Batch 2.11 (`numbers`)
+
+- **Beginner:** Counts no longer says a number word is "built like any other word". The `r` sentence and the **-x** vs **`gral`** sentence in More than one are plain English.
+- **Intermediate:** Word shape glosses *free number* and *PoS* at first use. "**No groups** is digitless of that marker, or digitless **-r** resume" said a digitless **-r** is a resume, which the endings section denies; it now says a word with no groups is [digitless]. *full CV form* / *spelled CV* → *fully spelled*. Parts of speech and the number-as-role sections drop *referential prefixes*, *identity*, and *inherits the marker's identity* for plain statements of what the marker decides on each role letter. The Marker vowel lead said Beginner used **`+`** / **`#`**; Beginner used **`ra`** / **`re`**, so it now names those and says the table gives the shorthand symbol. "One word, one identity" and "**`=`** stands alone" (twice) are spelled out. *second-slot mark after PoS*, *Match the marker to the resumed identity*, *member of an inventory*, *Under question*, *job letter*, *referents*, and *place the identity symbol* reworded. The *Other prefixes use the same empty payload* line (How big) now says what it means: other role letters take the same blank, and **`har`** is a restrictor, not that blank. Exponents gloss *exponent*; Bare OoM lead is job-first (*hundreds*, *thousands*) and glosses *OoM*. Number as discourse lead is job-first (number the points of a list), and the separate *Independence framing* slogan paragraph is folded into it. The *Write free numbers … consistently* and *Not the same job as: derived `NUM`* lines are one plain paragraph. Removed stray blank lines.
+- **Advanced:** the Digitless exponents, Zero × exponent, and Hyperbole leads are job-first (*infinitely many*, *absolutely nothing*, *a gazillion*), with the *Related form* pointer moved after the Zero × exponent lead. *No-mantissa digitless-exp under …*, *inherit freely*, *Same under other referential PoS*, *Mantissa = …*, *cohort*, *decade*, and *Named `e0` asserts OoM 0* replaced. The *just short* Compare-with lists the role-letter forms first and the unrelated *as if* second.
+- **Obvious slips fixed:** the Digitless Compare-with illustrated digitless **`ra`** with `zagadulx grarel` (a count); it now uses `zagadulx gral`, as in Beginner. The Advanced practice intro said "forms with a digit use shorthand (`grawobal`)", but every answer is spelled (one digit or none); it now says so.
+- **Editor question applied (pronunciation in backticks):** every `🔊` row and **Spoken** table cell on `numbers`, `numbers-applied`, and `say-amounts` now puts the spoken form in backticks, so the build parses and lexicon-checks it. `src/lint/number-speech-docs.ts` reads the backtick slot (tests updated). `src/lint/morph-gloss-docs.ts` no longer pairs a spoken → written prompt (``**1.** 🔊 `…` ``) with the answer's morph line; the answer in the details is the example (new test).
+
+**Deferred / kept:**
+- Marker vowel, Number endings, and Digitless tables show shorthand (`g+3`, `g=+`) before the Writing (preferred shorthand) H3 explains it. The Marker vowel lead now says the symbols are shorthand and links ahead; moving the shorthand H3 earlier is structural, left for Phase 3.
+- Advanced tables keep their dense labels (*telos landmark*, *ultimate-descendant pole*, *totalized null quantity*, *hostless total null as act*, *kind morph*): telegraphic tables are allowed.
+- Forward links kept as inventory: [forecasts] and [dated channel] (`knowing`), [superlative] and [factor] (`comparatives`), [measure phrases] / [percent] / [time] / [generation] (`numbers-applied`), [numeric derivation].
+
 ## Questions for the editor
 
 <!-- Suspected grammar problems found during the pass. Not fixed by the pass. One bullet each: page, section, issue, then **Recommendation:** the suggested fix and why. -->
-
-- `numbers.md`, pronunciation rows and the shorthand-to-spelled table: spelled number words are in italics (`🔊 *grarel*`), and the test suite requires that. This conflicts with doc-style's "Agazan forms in backticks, not italics", and retie-safe writing says retie never rewrites italics. Spelled numbers contain no content roots, so retie risk is low. Should the pronunciation convention (and its check) move to backticks? **Recommendation:** yes. Move the pronunciation slot and its test to backticks, so every Agazan form on the page follows one rule, and the build's parse check covers the spelled words too.
