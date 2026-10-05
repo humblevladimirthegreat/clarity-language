@@ -2,7 +2,7 @@
 prev: false
 ---
 
-# Claritish {#claritish}
+# Claritish Introduction {#claritish}
 
 **Claritish** is English with a few Agazan words dropped in. Each drop-in says something English has no word for: how sure you are, how you know, what a thank-you was for. You keep speaking English and add the word where an English adverb or tag would go.
 
@@ -27,7 +27,6 @@ Each lesson is short, with a few examples and a practice set. They build on each
 - [Oughts and motives](oughts-and-motives.md): the need a *should* appeals to, and the need behind what you did.
 - [Wants and plans](wants-and-plans.md): a wish you owe no one, and how much of a plan is drawn.
 - [Decisions and tries](decisions-and-tries.md): how settled a decision is, and a try that is only a trial.
-- [Not yet](not-yet.md): where a change stands now, and *not yet* in place of *I can't*.
 - [Feelings in three parts](feelings.md): a feeling as a need, a place, and a motion.
 
 [Bonus: tone marks](tone-marks.md) adds seven marks that say how you mean a sentence, and the [last page](learn-agazan.md) shows where the words go in the full language.

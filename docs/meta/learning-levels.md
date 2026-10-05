@@ -68,4 +68,4 @@ Read **`docs/grammar/`** only, in stage order. [why-agazan.md](../grammar/why-ag
 17. Every peer’s **[Intermediate](../grammar/clause.md#intermediate)** section (same dependency order as above is fine). Include numbers Intermediate, [numbers-applied.md](../grammar/numbers-applied.md#intermediate), join-across-roles and overlay material, and [intention.md](../grammar/intention.md#intermediate) **DECISION** / forecast source.
 18. Every peer’s **Advanced** section, including numbers Advanced, [relations.md](../grammar/relations.md#as-of) *as-of*, and [numeric-derivation.md](../grammar/numeric-derivation.md). Skip pages with no Advanced.
 
-Learner-facing reading order: site sidebar (**Suggested reading order**); stage notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).
+Learner-facing reading order: site sidebar (**Agazan Lessons**); stage notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).

@@ -1,4 +1,4 @@
-# Introduction to Agazan
+# Agazan Introduction
 
 **Agazan** (`agaza` + the name ending **-n**) translates to English *clarity*.
 
@@ -47,7 +47,7 @@ Role letters, a small fixed set of endings, and spelling that tracks sound mean 
 
 Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections. **Finish all Beginner material across all pages before Intermediate, then Advanced.** Not every page has all three, so skip a page that has no section at your current level.
 
-Follow the **Suggested reading order** in the site sidebar. Read each page’s Beginner section in that order, then go back to the start and read each page’s Intermediate section, then do the same for Advanced.
+Follow the **Agazan Lessons** in the site sidebar. Read each page’s Beginner section in that order, then go back to the start and read each page’s Intermediate section, then do the same for Advanced.
 
 The sidebar **Tools** list includes [Terminology](terminology.md) for the English names these pages use for grammar (with a short gloss and a link to the teaching section), plus Lexicon and [Inspect](inspect.md) for roots and word-by-word breakdowns.
 

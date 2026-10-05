@@ -451,7 +451,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 
 Wording and voice for the track: [claritish-style.md](claritish-style.md).
 
-**Claritish** (`docs/grammar/claritish/`) is an on-ramp for English speakers: an intro page, eleven lessons, a bonus tone-marks lesson, and a closing page that teach closed Agazan words to drop into ordinary English, so the psychological payoff starts on day one and every word learned is already Agazan. It adds no forms and is not design authority. Each lesson's owning grammar section is named in an editor-only `<!-- Source … -->` comment at the foot of the page; when that section changes a form or meaning, update the lesson.
+**Claritish** (`docs/grammar/claritish/`) is an on-ramp for English speakers: an intro page, ten lessons, a bonus tone-marks lesson, and a closing page that teach closed Agazan words to drop into ordinary English, so the psychological payoff starts on day one and every word learned is already Agazan. It adds no forms and is not design authority. Each lesson's owning grammar section is named in an editor-only `<!-- Source … -->` comment at the foot of the page; when that section changes a form or meaning, update the lesson.
 
 **What a drop-in is:** a closed Agazan word spelled exactly as the owning page spells it: a tone mark, a stance word, a sake word (thanks, sorry, feelings), or the set phrase `behodon`. No Agazan syntax around it (role letters, hosted `/b/`, joins, spans, hooks, role compounds, numeric derivation), no numerals or stance numbers, no respelling for English readers.
 

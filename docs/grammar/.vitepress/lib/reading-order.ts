@@ -1,7 +1,7 @@
 /** Grammar reading order: the sidebar, and the learning order the docs lint checks against. */
 export const readingOrder = [
   { text: 'Why Agazan', link: '/' },
-  { text: 'Introduction', link: '/introduction' },
+  { text: 'Agazan Introduction', link: '/introduction' },
   { text: 'Phonology', link: '/phonology' },
   { text: 'Word endings', link: '/word-endings' },
   { text: 'Clause', link: '/clause' },

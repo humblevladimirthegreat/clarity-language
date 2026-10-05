@@ -47,7 +47,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Why Agazan', link: '/' },
-      { text: 'Introduction', link: '/introduction' },
+      { text: 'Agazan Introduction', link: '/introduction' },
       { text: 'Clause', link: '/clause' },
       { text: 'Lexicon', link: '/lexicon' },
       { text: 'Inspect', link: '/inspect' },
@@ -60,7 +60,7 @@ export default defineConfig({
         text: 'Claritish: Agazan in English',
         collapsed: true,
         items: [
-          { text: 'Introduction', link: '/claritish/' },
+          { text: 'Claritish Introduction', link: '/claritish/' },
           { text: 'How sure are you?', link: '/claritish/could-be' },
           { text: 'How do you know?', link: '/claritish/how-you-know' },
           { text: 'Labels', link: '/claritish/labels' },
@@ -70,14 +70,13 @@ export default defineConfig({
           { text: 'Oughts and motives', link: '/claritish/oughts-and-motives' },
           { text: 'Wants and plans', link: '/claritish/wants-and-plans' },
           { text: 'Decisions and tries', link: '/claritish/decisions-and-tries' },
-          { text: 'Not yet', link: '/claritish/not-yet' },
           { text: 'Feelings in three parts', link: '/claritish/feelings' },
           { text: 'Bonus: Tone marks', link: '/claritish/tone-marks' },
           { text: 'Learn the full language', link: '/claritish/learn-agazan' },
         ],
       },
       {
-        text: 'Suggested reading order',
+        text: 'Agazan Lessons',
         items: readingOrder,
       },
       {

@@ -88,14 +88,12 @@ English often blurs *I want*, *I need*, *I should*, and *this is good for me*, s
 
 Agazan’s [sakes](sakes.md) are a fixed list of things that are good for a person (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or unspecified), and each sake word also says how you stand toward that sake:
 
-
 | Stance       | Meaning                                                                                                                                         |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | Met          | This serves the sake, including whether the payoff lasts or is only for now (gratitude / savoring)                                              |
 | Motive       | Acting *for* this sake, including where the reason stands                                                                                       |
 | Prescription | This act ought to be done for this sake; the word’s ending (its last letter) says whether you are inviting it, offering it, or trying it (**invited / offered / trial**) |
 | Unmet        | Costs the sake, including how changeable that is                                                                                                |
-
 
 Naming the sake and your stance toward it helps you notice gratitude, motive, and oughts instead of blurring them into a vague *want*, *should*, or *good*.
 
@@ -250,16 +248,6 @@ A plan made in English often names only the first choice, and either stays vague
 A [fallback](intention.md#fallback) joins an attempt to its backup with `xon`: *try A; failing that, B*. The backup counts only if the attempt before it fails. The [PLAN](intention.md#plan-predict) ending says how much of the plan is drawn: backups included, steps filled in, or only a direction. No level is better, and a sketch is often all a small or early plan needs.
 
 Naming the backup before you start helps a setback turn into the next step instead of a dead end, and matching plan detail to the task keeps planning from becoming a reason not to start.
-
-##### Not yet {#not-yet}
-
-English *I can't do it* or *it didn't work* can sound final even when you expect the change to come.
-
-[Not yet](knowing.md#phasal) (`huzem`) says the change is expected but has not come. It compares now with that change, like *already*, *still*, and *no longer*, and it is not a tense.
-
-Saying *not yet* instead of *not* helps you keep a goal open while it is still in progress. (cue: 🌱 a seedling, not grown yet)
-
-In English: [Claritish: Not yet](claritish/not-yet.md).
 
 ##### Good enough {#good-enough}
 
