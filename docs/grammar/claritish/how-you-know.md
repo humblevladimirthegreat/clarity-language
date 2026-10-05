@@ -11,13 +11,13 @@ English doesn't mark whether a claim was seen, remembered, worked out, or heard 
 | `thodom` | live: you're watching it now |
 | `thevom` | from memory (you saw it before) |
 | `therem` | on record, a recording, or a schedule |
-| `thobam` | from the pattern (it usually goes this way) |
+| `thobam` | from the pattern (similar cases you know of) |
 | `thunem` | worked out from clues |
 | `thewam` | someone told you |
 | `thahom` | a gut feeling |
 | `thozem` | per the tale (a story that gets told) |
 
-Swap the ending to say **how strong the evidence is**: **-l** strong, **-m** the default, **-r** weak. `thewar` is a rumor, `thevol` is a vivid memory, and `thahor` is a faint hunch. Strength is how much the claim rests on, not how likely the event is. A solid source can still report something unlikely.
+Swap the ending to say **how strong the evidence is**: **-l** strong, **-m** the default, **-r** weak. `thewar` is a rumor, `thevol` is a vivid memory, and `thahor` is a faint hunch. For a pattern, `thobal` is a well-established one and `thobar` rests on a few cases. Strength is how much the claim rests on, not how likely the event is. A solid source can still report something unlikely.
 
 This is the same settled-to-passing scale as in How sure are you?: solid evidence is lasting (**-l**), and a rumor could shift at any moment (**-r**).
 
@@ -47,7 +47,7 @@ The bakery closes at six `therel`.
 Dana's engaged `thewar`.
 :::
 
-**3.** *The bus is late.* (it usually is)
+**3.** *The bus is late.* (going by similar cases)
 
 ::: details Show answer
 The bus is late `thobam`.

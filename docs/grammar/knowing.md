@@ -279,18 +279,28 @@ A **tale** sets its own now. Once a sentence frames the passage with STORY (`tho
 
 ### Evidence strength {#evidence-strength}
 
-The ending on a channel says **how strong the evidence is**: how much the claim rests on, not how likely the event is. Use **-m** by default. Use **-l** when the evidence is solid and **-r** when it is thin. Likelihood is a separate [stance number](numbers.md#number-as-stance-by-marker) (`th+70`), so a strong pattern can still give middling odds, and a rumor can claim certainty.
+The ending on a channel says **how strong the evidence is**. Use **-m** by default. The test is what you could offer if someone asked *how do you know?*:
 
-| Channel | **-l** strong | **-m** (default) | **-r** weak |
-|---------|---------------|------------------|-------------|
-| LIVE | `thodol` a clear, full view | `thodom` | `thodor` a glimpse |
-| WITNESSED | `thevol` a vivid memory | `thevom` | `thevor` a hazy memory |
-| RECORDED | `therel` an authoritative record or official schedule | `therem` | `therer` an unofficial or partial record |
-| PATTERN | `thobal` a well-established pattern | `thobam` | `thobar` a few cases |
-| INFERRED | `thunel` strong clues | `thunem` | `thuner` a weak clue |
-| TOLD | `thewal` a reliable source | `thewam` | `thewar` a rumor |
-| FELT | `thahol` a strong gut sense | `thahom` | `thahor` a faint hunch |
-| STORY | `thozel` established lore | `thozem` | `thozer` a loose anecdote |
+- **-l**: you could **show** it. You can hand over something checkable apart from you (the record, the clues, the source), and the hearer can weigh it themselves.
+- **-m**: you could **describe** it. You can say what you saw, were told, or noticed, and the hearer takes your account on trust.
+- **-r**: you could only **gesture** at it. You can point toward it but cannot state it precisely, so a follow-up question would find little behind it.
+
+What counts as showing depends on the channel, so the table names what each channel grades.
+
+Strength grades your evidence, not how sure you feel and not how likely the event is. Likelihood is a separate [stance number](numbers.md#number-as-stance-by-marker) (`th+70`), so a strong pattern can still give middling odds, and a rumor can claim certainty. Strength is also not distance from the event: that is [`th#N`](#hand-depth), so a compiled record that is several hands removed can still be **-l**.
+
+| Channel | Graded on | **-l** show | **-m** (default) describe | **-r** gesture |
+|---------|-----------|-------------|---------------------------|----------------|
+| LIVE | clarity of view | `thodol` a clear, full view | `thodom` | `thodor` a glimpse |
+| WITNESSED | vividness of memory | `thevol` a vivid memory | `thevom` | `thevor` a hazy memory |
+| RECORDED | authority of the record | `therel` an authoritative record or official schedule | `therem` | `therer` an unofficial or partial record |
+| PATTERN | number and consistency of cases | `thobal` a well-established pattern | `thobam` | `thobar` a few cases |
+| INFERRED | strength of clues | `thunel` strong clues | `thunem` | `thuner` a weak clue |
+| TOLD | reliability of the source | `thewal` a reliable source | `thewam` | `thewar` a rumor |
+| FELT | how well you can state the basis | `thahol` a strong gut sense | `thahom` | `thahor` a faint hunch |
+| STORY | canonicity of the version | `thozel` established lore | `thozem` | `thozer` a loose anecdote |
+
+Two rows stretch the word *show*. A live view is gone once the moment passes, so for LIVE and WITNESSED **-l** means you could narrate it in fine detail. FELT is private, so **-l** means you can say what the sense rests on, not that you can hand it over.
 
 > `zalahen thewar vedabal.`
 >
