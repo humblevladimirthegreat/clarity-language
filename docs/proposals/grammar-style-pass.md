@@ -74,7 +74,7 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - [x] **Batch 2.11:** `numbers` (10.9k)
 - [x] **Batch 2.12:** `comparatives` (5.5k), `causation` (2.9k)
 - [x] **Batch 2.13:** `sakes` (9.4k)
-- [ ] **Batch 2.14:** `intention` (4.5k)
+- [x] **Batch 2.14:** `intention` (4.5k)
 - [ ] **Batch 2.15:** `knowing` (10.6k)
 - [ ] **Batch 2.16:** `roles` (6k), `x-compounds` (2.9k)
 - [ ] **Batch 2.17:** `join-across-roles` (3.7k), `numbers-applied` (4.1k)
@@ -271,6 +271,20 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - Resolved after review: the Motive lead listed English *have to* / *need to*, which Requirement (**`thumem`**) also claims (and `say-tense` routes *have to* to **`thumem`**). The lead now names *doing this for …* and *for the sake of …* only.
 - Policy change after review: the pass may now rewrite, move, or add unclear examples (Status line, ground rules, and a **Clear examples** test in Phase 2).
 
+### 2026-10-05: Batch 2.14 (`intention`)
+
+- **Page lead:** now job → shape → consequence; dropped the unglossed *channel* link and the "(taught later)" teaser.
+- **Beginner:** the Plan lead gives the English job (*plans to walk*), names the word **PLAN** at first use (the page used the label unglossed), says what a `/th/` word does by comparing it to the stance word from `clause` (*mood* was never glossed on the path), and says the sentence does not claim the act happens. "Ordinary content stays available" → "As a plain noun or verb, the root keeps its own meaning" (as in earlier batches), here and in Decision and Try. The endings lead had said the same thing twice (*how fully drawn* / *how much of the route is drawn*); it is now one sentence. **-n** is "an ordinary name". The `thamar` example translation lost its commentary "(a sketch is plenty here)", and *a walk* became *walking*. The Compare-with is now a **For *will* about the world, use:** beat (forecast) without *warrant* or *taught later*. The offset sentence is its own paragraph, and it now says where the offset goes (the `/b/` right after PLAN) instead of "a `+` offset".
+- **Intermediate:** Can: the lead is job → shape; *hostless root* and the stacked "(… aside)" are gone; *If you are not talking about ability, leave the word ordinary* (filler) is cut. FORMER's *not today's report* is spelled out. Can be: the lead is job-first (*can be the author*). The sake Compare-with is reworded (the old wording was "joins a sake root with th"). The `eze` example's translation note is now *(no single activity named)*. Decision, Try, and Want leads name **DECISION** / **WANT** at first use and drop *mood*. The redundant last sentence of the Decision lead is folded in. **Compare with PLAN:** (a nonstandard starter) became **Compare with:**. Changeability: *match unmet changeability*, *pick*, *map grain and pick firmness*, *stack this mood* are now plain English. The `uem` leads for decision and want are job-first. The want lead said *when a `/b/` names Alahen*, but its example names Azawan (*against Azawan's wishes*), so it now matches the example. Fallback: *clause sequence join* and *PLAN atlas* are reworded. Two translations were awkward: *tries walking* → *gives walking a try* (as in the table), and *commits to trying singing* → *keeps trying to sing*. The three-sibling Compare-with in Fallback is now a **Compare with:** (ability, PLAN) plus a **Not the same job as:** (`xol`). Someone else's want: *mood word* → *WANT, PLAN, or DECISION word*. The psych payoff moved into the lead, and the closing Compare-with sentence was cut. It said *Azawan is walking because Alahen wants it*, which claims the walk happens, but the section says the clause does not. *A plan has one `/b/` slot* is reworded. Plan or forecast: *warrant* → *evidence*; *channel* is glossed in place; *this stretch* → *now or already so*. The Intermediate practice intro now lists what the drills cover. Removed a doubled blank line.
+
+**Deferred / kept:**
+- Want: the Compare-with still has three siblings (*hopefully*, motive, SEEKING). Cutting one is beyond wording.
+- When there is no single verb: the lead teaches `eze` on `/w/` before an adjective, but there is no example. Adding one would need a reading the page does not give, so none was added.
+- Forward links kept: [FORMER] and [dated channel] (`knowing`), [role compound] (`roles`), [forecast] / [channel] (`knowing`). Each answers an English form the learner reaches for on this page.
+- Roots used here (Intermediate) keeps labels such as *attempt-committed* and **PLAN** (itinerary) in its English column; the build accepts them.
+- Resolved after review: in the Fallback atlas example only the first clause carried PLAN, though the translation read every option as planned. `joins` already says each item of a clause join is a full clause, and the Fallback example `… thudur vowogal xon zazawar vezehel.` reads its backup as a plain *Azawan sings*. So the atlas example now repeats `thamal` on each clause, and Fallback says outright that a `/th/` word covers only its own clause. No rule changed.
+
 ## Questions for the editor
 
 <!-- Suspected grammar problems found during the pass. Not fixed by the pass. One bullet each: page, section, issue, then **Recommendation:** the suggested fix and why. -->
+

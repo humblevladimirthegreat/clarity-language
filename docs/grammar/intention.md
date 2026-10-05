@@ -1,13 +1,13 @@
 # Intention {#intention}
 
-English *will* and *going to* can describe either **intention** (the course someone means to take) or a **forecast** (what someone thinks will happen later). Agazan marks intention with a `/th/` word before an ordinary verb. A forecast has no word of its own: it is a [channel](knowing.md#forecast) that says how you know, plus a later offset (taught later). The distinction lets you show whether you are describing someone's chosen course or making a claim about a future event.
+English *will* and *going to* can state either an **intention** (what someone means to do) or a **forecast** (what someone expects to happen later). Agazan marks intention with a `/th/` word before an ordinary verb, and gives a forecast a different shape that always says what it rests on. So the listener can tell someone's chosen course from a claim about a future event.
 
 ## Beginner {#beginner}
 
 ### Plan
 <a id="plan-predict"></a>
 
-To say what someone **means to do**, put **`thama`** before the ordinary verb, such as *walk* or *write*. The `/th/` marks the mood across the clause; the ending on **`thama`** says how fully the person has planned the course. This separates an intention from English *will* used as a forecast. (Cue: 🗺️ A map charts a course you mean to take.)
+To say what someone **means to do** (*plans to walk*), put **`thama`** plus an ending on `/th/` before the ordinary verb. This `/th/` word is called **PLAN**. Like a [stance](clause.md#stance-th) word, it covers the whole sentence: the sentence now says what the subject intends, not that the walk happens. The ending says how fully the person has planned it. (Cue: 🗺️ A map charts a course you mean to take.)
 
 > `zazawan thamam vowogal.`
 >
@@ -15,13 +15,13 @@ To say what someone **means to do**, put **`thama`** before the ordinary verb, s
 >
 > "Azawan plans to walk."
 
-Ordinary content stays available (`zamal` *a map*; `vamal` *to plan*). Leave PLAN off when you are not framing intention.
+As a plain noun or verb, the root keeps its own meaning (`zamal` *a map*; `vamal` *to plan*). Leave PLAN out when you are only saying what happens.
 
 #### Endings: map resolution
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
-On **`ama`**, **-l / -m / -r** say **how fully drawn** the intention is: a map that already includes backups, steps filled in, or just the direction. That split shows **how much of the route is drawn**. They run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). No level is better: match the detail to the plan, and a sketch is often all a small or early plan needs. **-n** is ordinary [proper](word-endings.md#proper-name--n). When you are unsure how detailed the course is, use **`thamam`**: it claims a plan without saying how much is filled in.
+The ending on PLAN says how much of the plan is worked out: **-l** for a plan with backups ready, **-m** for the steps, **-r** for just the direction. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). No level is better: match the detail to the plan, and a sketch is often all a small or early plan needs. With **-n**, the word is an ordinary [name](word-endings.md#proper-name--n). When you are unsure how detailed the plan is, use **`thamam`**: it claims a plan without saying how much is worked out.
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -33,7 +33,7 @@ On **`ama`**, **-l / -m / -r** say **how fully drawn** the intention is: a map t
 >
 > z-Alahen | th-plan-sketch | v-walk
 >
-> "Alahen is thinking of a walk." (a sketch is plenty here)
+> "Alahen is thinking of walking."
 
 > `zahaben thamal vowogal.`
 >
@@ -43,7 +43,9 @@ On **`ama`**, **-l / -m / -r** say **how fully drawn** the intention is: a map t
 
 Saying *I will* in English can hide whether you have a direction, the steps, or backups too. Picking the ending makes that level of detail audible, so others know how firm the details are.
 
-**Compare with:** a forecast about the world (*it will rain*) is not PLAN. PLAN says what someone means to do, and needs no warrant. A forecast always names how you know it: a channel plus a later offset ([forecasts](knowing.md#forecast), taught later). To say *how much* later someone means to act (*in three hours*), add a `+` [offset](knowing.md#dated-channel) after PLAN.
+**For *will* about the world (*it will rain*), use:** a [forecast](knowing.md#forecast). PLAN says what someone means to do, and needs no evidence. A forecast always says what it rests on.
+
+To say how much later someone means to act (*in three hours*), put a forward time [offset](knowing.md#dated-channel) in the `/b/` right after PLAN.
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -211,12 +213,12 @@ z-Azawan | th-plan-itinerary | v-fight
 ### Ability and incapability {#ability}
 <a id="incapability"></a>
 
-English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Agazan you fold that meaning into the verb or adjective itself. After the root, write **`x`**, then a vowel that means *can* or *how they can't*, then the same [ending](word-endings.md) that word would have had without *can*.
+English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Agazan you fold that meaning into the verb or adjective itself. After the root, write **`x`**, then a vowel for *can* or for which kind of *can't*, then the same [ending](word-endings.md) the word would have without it.
 
 #### Can (`xa`)
 <a id="can"></a>
 
-To say someone **can** do something you name with one verb (*sing*, *walk*), or **can** have a quality you name with one adjective, keep that verb or adjective. After the root, add **`x`** and **`a`**, then the usual ending. Keep the first letter the same: `/v/` for an action, `/ɡ/` for a quality. You do not need a separate helping verb like English *can*. If you are not talking about ability, leave the word ordinary. Ability goes on `/v/` and `/ɡ/` only (the hostless root of [when there is no single verb](#ability-fallback) aside); a noun, name, or `/h/` takes none. (Cue: **a** ≈ add, so capability is in)
+To say someone **can** do something (*can sing*) or can have a quality, keep the verb or adjective and add **`x`** and **`a`** after the root, before the usual ending. The first letter stays `/v/` for an action or `/ɡ/` for a quality, and no separate word for *can* is needed. Only a verb or an adjective takes the ability vowel; a noun, a name, or an `/h/` word does not, apart from the special word in [when there is no single verb](#ability-fallback). (Cue: **a** ≈ add, so capability is in)
 
 > `zazawan vezehexal.`
 >
@@ -224,7 +226,7 @@ To say someone **can** do something you name with one verb (*sing*, *walk*), or 
 >
 > "Azawan can sing."
 
-For English *could* about a skill someone used to have, add [FORMER](knowing.md#former-climate) **`thenom`**: the ability is not today's report.
+For English *could* about a skill someone used to have, add [FORMER](knowing.md#former-climate) **`thenom`**: the ability held before, and you are not claiming it now.
 
 > `zazawan vezehexal thenom.`
 >
@@ -232,9 +234,9 @@ For English *could* about a skill someone used to have, add [FORMER](knowing.md#
 >
 > "Azawan could sing." (as a former ability)
 
-The same idea as a quality uses `/ɡ/`: `zazawan gezehexal` (*Azawan is able to sing*, as a quality). Ordinary action, no *can*: `zazawan vezehel` (*Azawan sings*).
+As a quality, the same word goes on `/ɡ/`: `zazawan gezehexal` (*Azawan is able to sing*). Without the ability vowel, `zazawan vezehel` is just *Azawan sings*.
 
-The ending still belongs to that verb or adjective (**-l** concrete, **-m** abstract, **-n** proper, **-r** resume). It does not change what kind of *can* you mean:
+The ending is the one the verb or adjective would have anyway (**-l** concrete, **-m** abstract, **-n** name, **-r** resume). It does not change what kind of *can* you mean:
 
 > `zalahen vezehexam.`
 >
@@ -253,7 +255,7 @@ For English *so can I* / *can too*, [resume](pronouns.md#resume-r) the verb and 
 #### Can be (role + ability)
 <a id="role-ability"></a>
 
-To say someone **can be** a doer, place, undergoer, or recipient, not that they can do the act, put the ability vowel on a [role compound](roles.md#role-compounds) on `/ɡ/`. Write the role compound, then **`x`** and the ability vowel, then the ending. This works only on `/ɡ/`, the same slot that says *is a teacher* ([classification](predication.md#classification)).
+To say someone **can be** something (*can be the author*, *can be a teacher*) rather than that they can do the act, put the ability vowel on a [role compound](roles.md#role-compounds) on `/ɡ/`. Write the role compound, then **`x`** and the ability vowel, then the ending. This works only on `/ɡ/`, the same slot that says *is a teacher* ([classification](predication.md#classification)).
 
 > `zalahen gaxaradaxam.`
 >
@@ -300,7 +302,7 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 >
 > "Azawan can never run."
 
-**Compare with:** a [sakes](sakes.md) word joins a **sake** root with **`th`**, not **`x`**: **`tha` / `thu`** is met / unmet sake (`thulothum` *competence unmet*). **`xa` / `xu`** after a verb or quality is can / can't.
+**Compare with:** a [sake](sakes.md) word puts **`th`** and a vowel after a sake root: **`tha` / `thu`** is met / unmet (`thulothum` *competence unmet*). **`x`** and a vowel after a verb or adjective root is *can* / *can't*.
 
 ### When there is no single verb (`eze`) {#ability-fallback}
 
@@ -310,15 +312,15 @@ Sometimes English *can* / *can't* is not about one named verb or quality: the ac
 >
 > z-Azawan | th-ABIL-unable-temporary
 >
-> "Azawan can't right now (no single verb / whole clause)."
+> "Azawan can't right now." (no single activity named)
 
 ### Decision (revisability)
 <a id="decision"></a>
 <a id="decision-mood"></a>
 
-To say that someone has decided to do something, put **`thehu`** before the ordinary verb. The ending on **`thehu`** tells you whether the decision is irreversible, still changeable, or temporary. You can keep the action the same and change only the ending to show how open the decision remains. (Cue: ✅ A checkmark confirms a choice.)
+To say that someone has decided to do something, put **`thehu`** plus an ending on `/th/` before the ordinary verb. This word is called **DECISION**. Its ending says whether the decision is final, still open to change, or only for now, so you can say how open a choice is without changing the verb. (Cue: ✅ A checkmark confirms a choice.)
 
-Ordinary content is still available (`zehul` *a checkmark*; `vehul` *to check / tick*).
+As a plain noun or verb, the root keeps its own meaning (`zehul` *a checkmark*; `vehul` *to check / tick*).
 
 > `zalahen thehum vezehel.`
 >
@@ -326,12 +328,12 @@ Ordinary content is still available (`zehul` *a checkmark*; `vehul` *to check / 
 >
 > "Alahen has decided to sing, and can still change that."
 
-**Compare with PLAN:** [PLAN](#plan-predict) says how fully someone has planned a course of action. DECISION says how readily they may change their choice.
+**Compare with:** [PLAN](#plan-predict) says how fully someone has planned what to do. DECISION says how readily they may change their choice.
 
 #### Endings: changeability
 <a id="decision-changeability"></a>
 
-On **`ehu`**, **-l / -m / -r** match unmet [changeability](sakes.md#sake-changeability) on the settled-to-passing scale: irreversible / modifiable / temporary. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know how settled the pick is, use **-m**.
+The endings on DECISION run on the same settled-to-passing scale as [changeability](sakes.md#sake-changeability) on an unmet sake: **-l** irreversible, **-m** modifiable, **-r** temporary. With **-n**, the word is an ordinary [name](word-endings.md#proper-name--n). If you do not know how settled the decision is, use **-m**.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -339,7 +341,7 @@ On **`ehu`**, **-l / -m / -r** match unmet [changeability](sakes.md#sake-changea
 | **`thehum`** | **modifiable** (soft default if unknown) | *has decided to …, and can still change that* | **-m** ≈ open to change |
 | **`thehur`** | **temporary** | *has decided for now to …* | **-r** ≈ right now (for now only) |
 
-You can stack this mood after [PLAN](#plan-predict) when the clause needs both map grain and pick firmness:
+To say both how detailed a plan is and how firm the decision is, put DECISION after [PLAN](#plan-predict):
 
 > `zazawan thamam thehul vowogal.`
 >
@@ -355,7 +357,7 @@ PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** t
 >
 > "Alahen is thinking of walking, and has decided only for now."
 
-A decision can also follow the hook **`uem`**, like a plan ([contrary to a stance](sakes.md#contrary-to-stance)): the event goes against that decision. It is the subject's own decision unless a `/b/` names whose it is.
+To say an event goes against a decision (*though they had decided not to*), put DECISION after the hook **`uem`** ([contrary to a stance](sakes.md#contrary-to-stance)). It is the subject's own decision unless a `/b/` after it names whose it is.
 
 > `zazawan vowogal uem thehum.`
 >
@@ -372,9 +374,9 @@ A decision can also follow the hook **`uem`**, like a plan ([contrary to a stanc
 ### Try {#try}
 <a id="attempt"></a>
 
-To say that someone is trying to do something, put **`thudu`** before the ordinary verb. The outcome stays open: the sentence says the attempt happens, not whether it works. The ending tells you how committed the attempt is. (Cue: 🧪 A test tube tries a sample to see what happens.)
+To say that someone is trying to do something, put **`thudu`** plus an ending on `/th/` before the ordinary verb. The sentence says the attempt happens, not whether it works. The ending says how committed the attempt is. (Cue: 🧪 A test tube tries a sample to see what happens.)
 
-Ordinary content is still available (`zudul` *a test tube*).
+As a plain noun, the root keeps its own meaning (`zudul` *a test tube*).
 
 > `zazawan thudum varadal.`
 >
@@ -410,36 +412,38 @@ A trial run (**-r**) plans for failure: if it fails, that is what the probe was 
 #### Fallback (`xon`) {#fallback}
 <a id="or-else"></a>
 
-For *try A; failing that, B*, join the attempt to the backup with the clause sequence join [**`xon`**](join-across-roles.md#sequence). It goes between the two clauses. The backup comes into play only if the attempt before it fails, and exactly one of them ends up holding.
+For *try A; failing that, B*, put the clause join [**`xon`**](join-across-roles.md#sequence) between the attempt and the backup. The backup comes into play only if the attempt before it fails, so exactly one of them ends up holding.
 
 > `zazawan thudur vowogal xon zazawar vezehel.`
 >
 > [z-Azawan | th-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | v-sing]
 >
-> "Azawan tries walking; failing that, Azawan sings."
+> "Azawan gives walking a try; failing that, Azawan sings."
 
-Each clause keeps its own ending, so you can probe the first option and commit to the backup:
+A `/th/` word covers only its own clause, so the backup above is a plain *Azawan sings*. Each clause takes its own `/th/` words, so you can probe the first option and commit to the backup:
 
 > `zazawan thudur vowogal xon zazawar thudul vezehel.`
 >
 > [z-Azawan | th-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | th-ATTEMPT-committed | v-sing]
 >
-> "Azawan tries walking; failing that, Azawan commits to trying singing."
+> "Azawan gives walking a try; failing that, Azawan keeps trying to sing."
 
-A [PLAN](#plan-predict) atlas (**`thamal`**) already includes backups. Chain them with **`xon`** to name them, first choice first:
+A fully prepared [PLAN](#plan-predict) (**`thamal`**) already has backups. To name them, chain the clauses with **`xon`**, first choice first, and put PLAN on each one:
 
-> `zazawan thamal vowogal xon zazawar vezehel xon zazawar vezebal.`
+> `zazawan thamal vowogal xon zazawar thamal vezehel xon zazawar thamal vezebal.`
 >
-> [z-Azawan | th-plan-atlas | v-walk | x-or-else | z-←Azawan | v-sing | x-or-else | z-←Azawan | v-sleep]
+> [z-Azawan | th-plan-atlas | v-walk | x-or-else | z-←Azawan | th-plan-atlas | v-sing | x-or-else | z-←Azawan | th-plan-atlas | v-sleep]
 >
 > "Azawan's plan is to walk; failing that, to sing; failing that, to sleep."
 
-**Compare with:** [ability](#ability) says whether someone **can** do something; an attempt makes no claim either way. [PLAN](#plan-predict) is intention before acting; an attempt is acting with the outcome open. Unordered *or* is **`xol`** ([clause joins](joins.md#clause-joins)): no first choice and no backup.
+**Compare with:** [ability](#ability) says whether someone **can** do something; an attempt makes no claim either way. [PLAN](#plan-predict) is intention before acting; an attempt is acting with the outcome open.
+
+**Not the same job as:** plain *or*, **`xol`** ([clause joins](joins.md#clause-joins)), which has no first choice and no backup.
 
 ### Want {#want}
 <a id="desire"></a>
 
-To say that someone **wants** to do something, put **`thohu`** before the ordinary verb. The mood says the wanting is theirs. It does not say the act happens, and it does not say they mean to do it. The ending says how long the wanting lasts. (Cue: 🌠 A shooting star is where you make a wish.)
+To say that someone **wants** to do something, put **`thohu`** plus an ending on `/th/` before the ordinary verb. This word is called **WANT**. The sentence says the subject wants the act; it does not say the act happens, or that they mean to do it. The ending says how long the wanting lasts. (Cue: 🌠 A shooting star is where you make a wish.)
 
 > `zazawan thohum vowogal.`
 >
@@ -447,7 +451,7 @@ To say that someone **wants** to do something, put **`thohu`** before the ordina
 >
 > "Azawan wants to walk."
 
-For a wanted person or thing, use the verb that would get it (*see*, *take*) and keep the object in `/d/`.
+To want a person or thing (*wants Azawan*), name the act that would get it (*see*, *take*) and put the person or thing in `/d/` as usual.
 
 > `zalahen thohum vahahal dazawan.`
 >
@@ -479,7 +483,7 @@ A want, a [plan](#plan-predict), and a [decision](#decision) are three different
 >
 > "Azawan has long wanted to walk, and plans to."
 
-After the hook **`uem`**, a want is what the event goes against ([contrary to a stance](sakes.md#contrary-to-stance)). That is English *against their will* when the want is the subject's own, and *against Alahen's wishes* when a `/b/` names Alahen.
+For *against their will*, put WANT after the hook **`uem`** ([contrary to a stance](sakes.md#contrary-to-stance)): the event goes against that want. The want is the subject's own unless a `/b/` after it names whose it is (*against Azawan's wishes*).
 
 > `zazawan vowogal uem thohum.`
 >
@@ -497,7 +501,7 @@ After the hook **`uem`**, a want is what the event goes against ([contrary to a 
 
 ### Someone else's want, plan, or decision {#whose-intention}
 
-English *Alahen wants Azawan to walk*, *Alahen plans for Azawan to walk*, and *Alahen has decided that Azawan walks* give the wanting, planning, or deciding to someone other than the one who acts. Put that person in `/b/` right after the mood word, the same way a person who [allows](sakes.md#permission) or [demands](sakes.md#requirement) something sits after that word. With no `/b/`, the want, plan, or decision is the subject's own. Either way, the clause does not say the act happens.
+English *Alahen wants Azawan to walk*, *Alahen plans for Azawan to walk*, and *Alahen has decided that Azawan walks* give the wanting, planning, or deciding to someone other than the one who acts. Put that person in `/b/` right after the WANT, PLAN, or DECISION word, the same way a person who [allows](sakes.md#permission) or [demands](sakes.md#requirement) something sits after that word. With no `/b/`, the want, plan, or decision is the subject's own. Either way, the clause does not say the act happens. Naming whose it is keeps someone else's wishes from passing as the subject's own.
 
 > `zazawan thohum balahen vowogal.`
 >
@@ -517,7 +521,7 @@ English *Alahen wants Azawan to walk*, *Alahen plans for Azawan to walk*, and *A
 >
 > "Alahen has decided that Azawan walks, and can still change that."
 
-A plan has one `/b/` slot. It holds either whose plan it is or how much later the act comes (`thamam bral`). When you need both, keep the person there and put the time on **`huwem`** *during*:
+The `/b/` right after PLAN holds either whose plan it is or when the act comes (`thamam bral`, *plans to … later*), not both. When you need both, keep the person there and give the time with **`huwem`** *during*:
 
 > `zazawan thamam balahen vowogal huwem bral.`
 >
@@ -525,12 +529,12 @@ A plan has one `/b/` slot. It holds either whose plan it is or how much later th
 >
 > "Alahen plans for Azawan to walk later."
 
-**Compare with:** [requirement](sakes.md#requirement) `zazawan vowogal thumem balahen.` (*Alahen makes Azawan walk*) puts a demand on Azawan, who now owes the walk. **`thehum balahen`** says only that Alahen chose how things go, the way a coach decides who plays, with nothing asked of Azawan. Keeping someone else's want apart from the subject's own is the difference between *Azawan wants to walk* and *Azawan is walking because Alahen wants it*.
+**Compare with:** [requirement](sakes.md#requirement) `zazawan vowogal thumem balahen.` (*Alahen makes Azawan walk*) puts a demand on Azawan, who now owes the walk. **`thehum balahen`** says only that Alahen chose how things go, the way a coach decides who plays, with nothing asked of Azawan.
 
 ### Plan or forecast
 <a id="predict-evidentiality"></a>
 
-English *will* can be a plan or a forecast. A plan uses [PLAN](#plan-predict) and needs no warrant. A forecast about the world uses an [evidential](knowing.md#evidentiality) channel plus the later offset **`bral`** ([forecasts](knowing.md#forecast)): the channel says what the forecast rests on.
+English *will* can state a plan or a forecast. A plan uses [PLAN](#plan-predict) and needs no evidence. A forecast about the world uses a [channel](knowing.md#evidentiality), a `/th/` word that says how you know, plus the later offset **`bral`** ([forecasts](knowing.md#forecast)). So a forecast always says what it rests on.
 
 > `thobam bral verehel.`
 >
@@ -544,12 +548,12 @@ English *will* can be a plan or a forecast. A plan uses [PLAN](#plan-predict) an
 >
 > "Alahen plans to sit, and the clues strongly say it will happen."
 
-**Compare with:** a channel with no offset is a claim about *this stretch* (**`thodom`** if you are observing it now; **`thevom`** if you remember observing it). Add **`bral`** when the claim is about a **later** event, not a guess about what is already so.
+**Compare with:** without an offset, a channel is about what is happening now or already so (**`thodom`** if you are watching it now; **`thevom`** if you remember watching it). Add **`bral`** when the claim is about a **later** event.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. These combine ability with planning, decisions, and attempts.
+Short drills for Intermediate. Try each item before opening **Show answer**. They cover decisions, forecasts, ability, attempts, wants, and someone else's want or plan.
 
 **Setting:** a board meeting
 
@@ -810,7 +814,6 @@ z-Azawan | v-climb
 
 *Azawan climbs.*
 :::
-
 
 **11.** `zalahen thezexul.`
 
