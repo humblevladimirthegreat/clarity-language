@@ -24,6 +24,8 @@
 
 **Sorry:** `th` + sake + `thu` + ending, then `behodon`. The `thu` word says a sake went unmet. `behodon` says whose: *yours*. Learn `thanathum behodon` as a set phrase: *that hurt your sense of connection*.
 
+**Thanks for something you own:** start the thanks word with `g` instead of `th`, and put it right after the English noun. `goyuthal` after *my coat* says the coat itself keeps you well, and the word already says the coat is yours. Use it only for things you own; for anything else, thank the event with the `th` word after the clause.
+
 The ending is the settled-to-passing scale again:
 
 | Ending | Thanks (how long the payoff lasts) | Sorry (how lasting the harm is) |
@@ -38,9 +40,10 @@ The ending is the settled-to-passing scale again:
 > I cancelled again. `thanathum behodon`.  
 > Thanks for teaching me the shortcut, `thulothal`.  
 > You listened all evening. `thadotham`.  
+> My old coat `goyuthal` has lasted ten winters.  
 > I spoiled the ending. `thozothur behodon`.
 
-`thoyutham` thanks someone for the rest. `thozothur behodon` owns a small, passing harm to someone's enjoyment.
+`thoyutham` thanks someone for the rest. `thozothur behodon` owns a small, passing harm to someone's enjoyment. `goyuthal` thanks the coat, not anyone's act, and its **-l** says the care it gives is lasting.
 
 ## Practice {#practice}
 
@@ -64,4 +67,4 @@ I forgot your birthday. `thanathum behodon`.
 You explained the bill to me. `thadothal`.
 :::
 
-<!-- Source (editors): sakes.md#thanks-sorry, sakes.md#sake-inventory, sakes.md#which-sake. -->
+<!-- Source (editors): sakes.md#thanks-sorry, sakes.md#sake-inventory, sakes.md#which-sake, sakes.md#personal-possession. -->

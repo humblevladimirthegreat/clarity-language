@@ -115,7 +115,7 @@ In English: [Claritish Lesson 10, Feelings in three parts](claritish/feelings.md
 
 English *thank you* says you are grateful but not for what.
 
-Agazan has no set phrase for [thanks](sakes.md#thanks-sorry). You say which of your sakes was met, and saying it to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](sakes.md#whose-stake)).
+Agazan has no set phrase for [thanks](sakes.md#thanks-sorry). You say which of your sakes was met, and saying it to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](sakes.md#whose-stake)). Put the sake word right after a thing you own and it thanks that thing, with no separate word for *my*, so appreciating what you already have takes one word ([personal possession](sakes.md#personal-possession)).
 
 Naming the need that was met makes thanks specific, which helps both of you notice what actually helped.
 
