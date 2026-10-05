@@ -1,14 +1,14 @@
 # Causation {#causation}
 
-Name whether one thing is **enough** for an outcome, whether the outcome **needs** it, and whether that condition is a **fact**.
+English *if*, *only if*, and *because* each tie a condition to an outcome. Agazan uses a pole word for each, and the poles keep three questions apart: whether the condition is **enough** for the outcome, whether the outcome **needs** it, and whether you claim the condition is a **fact**.
 
 ## Beginner {#beginner}
 
 ### If {#if}
 
-When you mean *this would get you that* (*if* there are clouds, rain; Azawan walks *if* it rains), write the **outcome** as the host, then **`oye`** on `/th/` or `/ɡ/`, then the condition in `/b/`. Other routes may still work. You are not claiming the condition as a fact. (cue: 🚪 *door*: walk through only if it opens)
+English *if* says a condition is enough to bring about an outcome (*Azawan walks if it rains*). Write the **outcome** first, then the *if* pole (root **`oye`**), then the condition as its `/b/` word. Saying *if* does not claim the condition is true, and other routes to the outcome may still work. (cue: 🚪 *door*: walk through only if it opens)
 
-Use `/th/` when the outcome is an **event** (the verb). Use `/ɡ/` when the outcome is a **noun** (a kind, a generic law). Keep the pole and `/b/` together.
+The pole's role letter follows the outcome. Use `/th/` (**`thoyem`**) when the outcome is an **event** (the verb). Use `/ɡ/` (**`goyem`**) when the outcome is a **noun**. A common noun with a `/ɡ/` word after it says the thing exists ([*there is …*](predication.md#existence)), so a noun outcome says *there is X if there is Y*. Keep the pole and its `/b/` together.
 
 > `zazawan vowogal thoyem berehel.`
 >
@@ -20,15 +20,15 @@ Use `/th/` when the outcome is an **event** (the verb). Use `/ɡ/` when the outc
 >
 > z-rain | [g-if | b-cloud]
 >
-> "Rain comes if there are clouds."
+> "There is rain if there are clouds."
 
-Ordinary content on the same root is still available (`zoyel` *a door*).
+As a plain noun, the same root is `zoyel` *a door*.
 
-**For *X is enough* as a list (*a book will do*), use:** an inclusive [join](joins.md#single-item-phrase).
+**Compare with:** for *X is enough* about one item from a list of options (*a book will do*), use an inclusive [join](joins.md#single-item-phrase), not a pole.
 
 ### Only if {#only-if}
 
-When the outcome cannot happen without this (*only if* / *needs*), write the same two-place shape with **`olu`**. Other things may still be required. You are not claiming the condition as a fact. (cue: 🧻 *paper-roll*: without it the situation does not run)
+English *only if* (or *needs*) says the outcome cannot happen without the condition. Use the same shape with the *only if* pole (root **`olu`**): **`tholum`** after a verb, **`golum`** after a noun. Other things may also be required, and again you do not claim the condition is true. (cue: 🧻 *paper-roll*: without it the situation does not run)
 
 > `zazawan vowogal tholum berehel.`
 >
@@ -40,9 +40,9 @@ When the outcome cannot happen without this (*only if* / *needs*), write the sam
 >
 > z-rain | [g-only-if | b-cloud]
 >
-> "Rain comes only if there are clouds."
+> "There is rain only if there are clouds."
 
-Ordinary content on the same root is still available (`zolul` *a paper-roll*).
+As a plain noun, the same root is `zolul` *a paper-roll*.
 
 **Compare with:** *if* (`thoyem` / `goyem`) leaves other routes possible. *Only if* says the outcome needs this.
 
@@ -55,7 +55,7 @@ Ordinary content on the same root is still available (`zolul` *a paper-roll*).
 
 ### Translation practice {#beginner-translation-practice}
 
-Short drills for Beginner. Try each item before opening **Show answer**. The outcome is the host (`/th/` on an event, `/ɡ/` on a noun). *If* is **`oye`**. *Only if* is **`olu`**. The condition sits in `/b/`.
+Short drills for Beginner. Try each item before opening **Show answer**. The outcome comes first, and the pole after it is `/th/` after a verb and `/ɡ/` after a noun (*there is X if …*). *If* is **`oye`**. *Only if* is **`olu`**. The condition is the pole's `/b/` word.
 
 **Setting:** a greenhouse
 
@@ -83,7 +83,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. The out
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *A seedling grows if there is sun.*
+**1.** *There is a seedling if there is sun.*
 
 ::: details Show answer
 `zuzel goyem bazahel.`
@@ -99,7 +99,7 @@ z-seedling | [g-if | b-sun]
 z-Azawan | v-pour | [th-if | b-bucket]
 :::
 
-**3.** *A house plant thrives only if there is a window.*
+**3.** *There is a house plant only if there is a window.*
 
 ::: details Show answer
 `zahabol golum bewedol.`
@@ -115,7 +115,7 @@ z-house-plant | [g-only-if | b-window]
 z-Ahaben | d-Azawan | v-see | [th-if | b-window]
 :::
 
-**5.** *A flower grows only if there is sun.*
+**5.** *There is a flower only if there is sun.*
 
 ::: details Show answer
 `zavavul golum bazahel.`
@@ -155,7 +155,7 @@ z-Alahen | v-pour | [th-only-if | b-fire]
 
 z-flower | [g-if | b-sun]
 
-*A flower grows if there is sun.*
+*There is a flower if there is sun.*
 :::
 
 **2.** `zahaben vobohol thoyem buzel.`
@@ -173,7 +173,7 @@ z-Ahaben | v-pour | [th-if | b-seedling]
 
 z-seedling | [g-only-if | b-window]
 
-*A seedling grows only if there is a window.*
+*There is a seedling only if there is a window.*
 :::
 
 **4.** `zazawan dahaben vahahal thoyem bewedol.`
@@ -191,7 +191,7 @@ z-Azawan | d-Ahaben | v-see | [th-if | b-window]
 
 z-tomato | [g-if | b-sun]
 
-*A tomato grows if there is sun.*
+*There is a tomato if there is sun.*
 :::
 
 **6.** `zazawan vezebel thoyem bobebem.`
@@ -226,7 +226,7 @@ z-Ahaben | v-tell | [th-only-if | b-fire]
 ### A following sentence
 <a id="dependent"></a>
 
-When the condition is a **full sentence**, keep the same pole and hang that sentence after **`barl`**. Write the pole, then **`barl`**, then the dependent. Keep that pair together, last in the main sentence (**`barl`** last). The inner sentence always names its subject. See [dependent clauses](dependents.md#dependent-clauses).
+When the condition is a **whole sentence** (*if Alahen sleeps*), keep the same pole and use the stand-in **`barl`** as its `/b/` word. The next sentence is the condition that **`barl`** stands for. Keep the pole and **`barl`** together, last in the main sentence. The condition sentence always names its own subject. See [dependent clauses](dependents.md#dependent-clauses).
 
 ```text
 main sentence …  thoyem / tholum / …  barl   [dependent sentence]
@@ -246,14 +246,14 @@ main sentence …  thoyem / tholum / …  barl   [dependent sentence]
 
 Several conditions can sit inside `/b/` as a [join](joins.md) (`thoyem bagavul bozezol baom` *if clouds and/or snow*).
 
-**Related form:** packaging two full sentences as *and also* uses a clause [join](joins.md) (`xam`), not a pole root.
+**Related form:** to join two full sentences with *and also*, use a clause [join](joins.md) (`xam`), not a pole.
 
 ### Because, iff, and only because {#only-because}
 <a id="because"></a>
 <a id="iff"></a>
 <a id="poles"></a>
 
-Beginner used *if* and *only if* without asserting the condition. Pick the pole by **direction** and by whether you **assert** the condition as a world-fact. Clause poles take **-m**. The same roots on `/ɡ/` attach to a noun. Ordinary content still uses ordinary endings (`zevel` *a brick*; `zedam` *reciprocity*).
+Beginner's *if* and *only if* do not claim the condition is true. The table completes the set. Pick the pole by **which way the link runs** (the condition is enough, the outcome needs it, or both) and by whether you **claim** the condition is a fact. Poles take **-m**, on `/th/` after a verb and on `/ɡ/` after a noun. As plain words the roots take ordinary endings (`zevel` *a brick*; `zedam` *reciprocity*).
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -273,7 +273,7 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 >
 > z-rain | [g-because | b-cloud]
 >
-> "Rain comes because of clouds."
+> "There is rain because of clouds."
 
 > `zazawan vowogal thedam barl zalahen vezebal.`
 >
@@ -281,9 +281,7 @@ Beginner used *if* and *only if* without asserting the condition. Pick the pole 
 >
 > "Azawan walks if and only if Alahen sleeps."
 
-A noun after a because pole names an **act or a thing**, not a bare person. For *because of Alahen*, say what Alahen did as a following sentence after **`barl`**. A name there is a named event or place (a storm, a city), never the person.
-
-**Related form:** *not because of X* (the outcome still holds; only the reason is denied) closes the pole with a [stance join](join-across-roles.md#stance-joins). Denying the outcome itself is `vowogal vul`.
+*Only because* stacks two poles: **`tholum`** (the outcome needs it), then **`thevem`** with the condition (and it is a fact).
 
 > `zazawan vowogal tholum thevem berehel.`
 >
@@ -291,7 +289,11 @@ A noun after a because pole names an **act or a thing**, not a bare person. For 
 >
 > "Azawan walks only because there is rain."
 
-*Unless* is *if … not*. Keep **`thoyem`** and type the following sentence with **`burl`** ([stand-in vowels](dependents.md#stand-in)): the outcome holds unless that sentence is true.
+A noun after a because pole names an **act or a thing**, not a person. For *because of Alahen*, say what Alahen did as a sentence after **`barl`**. A name in that `/b/` slot is a named event or place (a storm, a city), never the person.
+
+**Related form:** *not because of X* (the outcome still holds; only the reason is denied) closes the pole with a [stance join](join-across-roles.md#stance-joins). Denying the outcome itself is `vowogal vul`.
+
+English *unless* means *if … not*. Keep **`thoyem`**, but use the stand-in **`burl`** instead of **`barl`** ([stand-in vowels](dependents.md#stand-in)): the outcome holds unless the next sentence is true.
 
 > `zazawan vowogal thoyem burl zalahen vezebal.`
 >
@@ -299,7 +301,7 @@ A noun after a because pole names an **act or a thing**, not a bare person. For 
 >
 > "Azawan walks unless Alahen sleeps."
 
-*Even if* stacks the *although* pole **`hezom`** right before **`thoyem`**. The condition is still not asserted, and the outcome holds either way.
+For *even if*, put the *although* pole **`hezom`** right before **`thoyem`**. You still do not claim the condition is true, and the outcome holds either way.
 
 > `zazawan vowogal hezom thoyem barl zalahen vezebal.`
 >
@@ -314,7 +316,7 @@ A noun after a because pole names an **act or a thing**, not a bare person. For 
 
 ### Fault {#fault}
 
-*Because* names what made the outcome happen. It does not say anyone did wrong. When you mean *it was their fault*, change the ending on the because pole. **-m** stays plain cause. **-l** says the reason broke a norm. **-r** says it was one share among other causes.
+*Because* names what made the outcome happen. It does not say anyone did wrong. When you mean *it was their fault*, change the ending on the because pole. **-m** is the plain cause. **-l** says the reason broke a rule: someone did wrong. **-r** says it was one cause among others.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -340,14 +342,16 @@ A noun after a because pole names an **act or a thing**, not a bare person. For 
 >
 > "The rain is part of why Azawan left."
 
-The rule from [*because*](#only-because) matters most here: the act goes in `/b/`, not the person (`barl zalahen vezebel` *Alahen's telling*, never `balahen`). Fault then lands on what someone did, and it leaves room for *Alahen did a wrong thing* without *Alahen is bad*. A thing or circumstance (`berehel`) is fine, because it has no one to blame.
+The rule from [*because*](#only-because) matters most here: the act goes in `/b/`, not the person (`barl zalahen vezebel` *Alahen's telling*, never `balahen`). So fault lands on what someone did, which leaves room for *Alahen did a wrong thing* without *Alahen is bad*. A thing or circumstance (`berehel`) is fine in `/b/`, because there is no person to blame.
 
 Fault is still a claim. You can hedge it with [MAY](knowing.md#may) right before the pole (`thovum thevel barl …`), or pair **`tholum`** with it for *only because of that fault*.
 
 ### CAUSE {#cause}
 <a id="cause-mood"></a>
 
-To highlight **how** a result comes about (the mechanism, not only that a condition holds), add the closed mood **`ege`** as an `/th/` word. The ending is **-m**: **`thegem`**. Put that mood next to a pole, or give it its own `/b/` causer (below): the pole names the condition, and **CAUSE** says the link is the mechanism. Ordinary content on the same root is still available (`zegel` *a gear*; `vegel` *to mesh / engage*). Optional `/w/` when the mood grades only the `/ɡ/` adjective it sits immediately before. (cue: ⚙️ *gear*: how the mechanism engages)
+English *that is what makes it happen* points at **how** a result comes about (the mechanism), not only at a condition that holds. Add the stance word **`thegem`** (CAUSE, root **`ege`**) right before a pole: the pole names the condition, and CAUSE says that condition is how the result is produced. CAUSE can also take its own `/b/` word for the one who makes it happen (below). (cue: ⚙️ *gear*: how the mechanism engages)
+
+As plain words, the same root is `zegel` *a gear* and `vegel` *to mesh / engage*.
 
 > `zazawan vowogal thegem thoyem berehel.`
 >
@@ -361,7 +365,7 @@ To highlight **how** a result comes about (the mechanism, not only that a condit
 >
 > "Fire is what makes Alahen pour."
 
-On `/w/`, **CAUSE** says the mechanism produces that one property:
+On `/w/` (`wegem`), right before an adjective, CAUSE applies only to that adjective: the mechanism produces that one property.
 
 > `zazawan wegem gelevam vowogal.`
 >
@@ -369,11 +373,11 @@ On `/w/`, **CAUSE** says the mechanism produces that one property:
 >
 > "Azawan walks, exerted — that is how the mechanism works."
 
-**Compare with:** *because* / *if* name the condition (`thevem` / `thoyem`). **CAUSE** names how the link meshes.
+**Compare with:** *because* / *if* name the condition (`thevem` / `thoyem`). CAUSE says that the link is the mechanism.
 
 #### Make someone do it {#make}
 
-English *Azawan makes Alahen tell* has a causer and a causee. Keep the causee as the subject of the event. Put the causer in hosted `/b/` right after **`thegem`**, with no pole. The `/b/` word is the one who makes it happen.
+In English *Azawan makes Alahen tell*, Azawan makes it happen and Alahen does the telling. Keep the one who does it (Alahen) as the subject of the verb. Put the one who makes it happen in a `/b/` word right after **`thegem`**, with no pole.
 
 > `zalahen vezebel thegem bazawan.`
 >
@@ -383,7 +387,7 @@ English *Azawan makes Alahen tell* has a causer and a causee. Keep the causee as
 
 When a pole follows **`thegem`**, the `/b/` belongs to the pole, as above (`thegem thevem bavahel` *because of fire, as mechanism*).
 
-**Compare with:** *let* is [permission](sakes.md#permission), which puts the grantor in the same hosted `/b/` slot. *Get someone to* (ask, persuade) is tell + a *to* [stand-in](dependents.md#stand-in).
+**Compare with:** *let* is [permission](sakes.md#permission), which puts the one who allows it in the same `/b/` slot. *Get someone to* (ask, persuade) is tell + a *to* [stand-in](dependents.md#stand-in).
 
 | Agazan | English |
 |--------|---------|
@@ -392,7 +396,7 @@ When a pole follows **`thegem`**, the `/b/` belongs to the pole, as above (`theg
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. A following sentence hangs after **`barl`**. *Because* asserts the condition. *Iff* is both ways. *Only because* stacks **`tholum thevem`**. Fault is **`thevel`**; a share is **`thever`**. **CAUSE** is **`thegem`**.
+Short drills for Intermediate. Try each item before opening **Show answer**. A whole-sentence condition comes after **`barl`**. *Because* claims the condition is a fact. *Iff* is both ways. *Only because* stacks **`tholum thevem`**. Fault is **`thevel`**; a share is **`thever`**. **CAUSE** is **`thegem`**.
 
 **Setting:** a dam control room
 
@@ -454,7 +458,7 @@ z-Alahen | v-pour | [th-iff | b-that-clause] | z-Azawan | v-sit
 z-Ahaben | v-tell | [th-because | b-that-clause] | z-Alahen | v-pour
 :::
 
-**5.** *A bell because of pressure.*
+**5.** *There is a bell because of pressure.*
 
 ::: details Show answer
 `zebehul gevem bagabem.`
@@ -530,7 +534,7 @@ z-Alahen | v-run | [th-because | b-overwhelm]
 
 z-overwhelm | [g-because | b-pressure]
 
-*The surge is because of pressure.*
+*There is a surge because of pressure.*
 :::
 
 **6.** `zahaben vezebel tholum thevem barl zalahen vobohol.`

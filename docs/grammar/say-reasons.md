@@ -386,7 +386,7 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 >
 > [z-rain | [g-if | b-cloud]] | h-always
 >
-> "Rain comes if there are clouds, as a standing pattern."
+> "There is rain if there are clouds, as a standing pattern."
 
 **Compare with:** to say how you know a general claim, put a channel on it ([channels on a generalization](knowing.md#universality)). **CAUSE** is **`thegem`**.
 

@@ -70,7 +70,7 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - [x] **Batch 2.9:** `restrictors` (3.3k), `relations` (5.4k)
 - [x] **Batch 2.10:** `spans` (4.6k)
 - [x] **Batch 2.11:** `numbers` (10.9k)
-- [ ] **Batch 2.12:** `comparatives` (5.5k), `causation` (2.9k)
+- [x] **Batch 2.12:** `comparatives` (5.5k), `causation` (2.9k)
 - [ ] **Batch 2.13:** `sakes` (9.4k)
 - [ ] **Batch 2.14:** `intention` (4.5k)
 - [ ] **Batch 2.15:** `knowing` (10.6k)
@@ -240,6 +240,20 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - Advanced tables keep their dense labels (*telos landmark*, *ultimate-descendant pole*, *totalized null quantity*, *hostless total null as act*, *kind morph*): telegraphic tables are allowed.
 - Forward links kept as inventory: [forecasts] and [dated channel] (`knowing`), [superlative] and [factor] (`comparatives`), [measure phrases] / [percent] / [time] / [generation] (`numbers-applied`), [numeric derivation].
 
+### 2026-10-05: Batch 2.12 (`comparatives`, `causation`)
+
+- **`comparatives`:** the page lead now ends with the Agazan shape (a rank join plus the shared adjective for the first two jobs, an *and*-list for the third). Equatives: *equality join* → *the tie* (the name `joins` gives **`ae`**), *firm match* → *exact match*; the `zaem` example moved up from under the Compare-with blocks to sit with the other equative examples; *simile* → *like* (the `relations` heading); "not a ranking and not a matching height" and "shared score on a named scale" reworded. Intermediate: the open three-name row (`≻` notation) now has an English reading and says what *open* means; the no-adjective Compare-with now links the [rank join] instead of "ordinary preference (who comes first as an alternative)". Place on a scale: "Only N from 2 is used" and the long frame sentence split into plain statements. Manner, amount: *the ladder is …* → *you rank …* (the ladder picture is kept only in the cue). Frequency and Time leads now start from the English job; *hral* is glossed *multiple times* (as in `numbers`), and Time no longer calls `/b/` **`bral`** a "manner slot". Covarying used *more than once* for **`hral`**; now *multiple times*. Bars: *comparee slot* (three times) → *where the second name would go* / *before the rank join* / *the bar slot*; *what you mean for the whole claim* → *your stance on the whole sentence*; the `/b/` example's *extra noun* → *recipient*. The Intermediate practice intro was a fragment; now a sentence, and it mentions the place-on-scale drills. Advanced: *channel* is glossed in place; "the closed fence is the one item" spelled out. See also: *Measure NPs* → *Measure phrases*.
+- **`causation`:** the page lead was an imperative fragment; it now gives the English job (*if*, *only if*, *because*), names the pole words, then the three distinctions. If and Only if leads are job first: outcome, then the pole (with its `/th/` / `/ɡ/` form named), then the condition as its `/b/`. *Host*, *two-place shape*, and *generic law* are gone. *Ordinary content … still available* → *As a plain noun …*. The odd bold "**For *X is enough* …, use:**" became a Compare-with. Intermediate: *hang that sentence after **`barl`*** → the stand-in **`barl`** as the pole's `/b/`; *direction* and *world-fact* in the Because lead replaced with which way the link runs and whether you claim the condition is a fact. The *only because* example sat after an unrelated Related-form note with no lead; it now has a one-line lead and comes first. *Unless* no longer says "type the following sentence". Fault: *stays plain cause* / *broke a norm* reworded. CAUSE lead was one long paragraph that used *closed mood* (never glossed on the path), *causer*, and a fragment about `/w/`; it is now job → shape (a stance word before a pole) → the optional `/b/`, with the plain-noun note as its own paragraph and the `/w/` rule moved to the `/w/` example. *meshes* (picture) and *causer* / *causee* / *grantor* replaced.
+
+**Deferred / kept:**
+- `comparatives` Intermediate heading *Full comparative arity* uses *arity*, but it carries an `<a id>` anchor, so the heading stays; the lead and table say what the counts mean.
+- `comparatives` Factor: "put a measure noun on the scale instead of a factor" (*two meters taller*) is vague, but the page shows no example; rewording would mean guessing the form.
+- `causation` Fault example translation (*it's on Alahen's telling: that telling was wrong*) is awkward but kept as a quoted translation.
+- Forward links kept: [MAY] (`knowing`), [stance join] (`join-across-roles`), [permission] (`sakes`) in `causation`; [sake bars] and the other mood links in `comparatives` Advanced (Advanced comes after every Intermediate).
+- Resolved after review: *no more challenging than* (below or tied) was read as **`zuel`** (strictly below), the same as *not as challenging as*. It now denies the whole comparison with a **u** join, as for any whole list: `zalahen zazawan zel gamadam zul.` (new example in Full comparative arity). **`zuel`** stays *not as … as*. The parser already read the form this way, so no code changed; `meta/syntax-test-results.md` (G-23) and `meta/syntax-test-corpus.md` (STC-203) are updated.
+- Resolved after review: a noun outcome with a `/ɡ/` pole (`zuzel goyem bazahel.`) was translated with a verb not in the Agazan (*grows*, *thrives*, *comes*). The If section now says a common noun plus a `/ɡ/` word is [existence], so it reads *there is X if there is Y*, and every noun-outcome example and drill on `causation` (and the *rain* example in `say-reasons`) uses that pattern.
+
 ## Questions for the editor
 
 <!-- Suspected grammar problems found during the pass. Not fixed by the pass. One bullet each: page, section, issue, then **Recommendation:** the suggested fix and why. -->
+

@@ -1,7 +1,7 @@
 # Comparatives, superlatives, and equatives
 <a id="comparatives-page"></a>
 
-English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in **order** on that quality. *As … as* says they sit at the **same height**. *Both are challenging* only says **each has** the quality; it does not say who ranks higher or whether they match.
+English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in **order** on that quality. *As … as* says they sit at the **same height**. *Both are challenging* only says **each has** the quality; it does not say who ranks higher or whether they match. Agazan writes the first two with a rank join from [joins](joins.md#rank-joins) followed by the shared adjective, and the third with an ordinary *and*-list.
 
 ## Beginner {#beginner}
 <a id="overview"></a>
@@ -57,7 +57,7 @@ English *much more* / *slightly more* adds **how large the gap is**, without giv
 <a id="equative"></a>
 <a id="as-as"></a>
 
-When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then equality join **`zael`** (vowel **`ae`**), then the same kind of shared adjective (`/ɡ/`). Closed **-l** (`zael`) is a firm match. Open **-m** (`zaem`) is *about as … as*. (cue: **`ae`** ≈ add + order; they share a rank)
+When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then the tie **`zael`** (rank-join vowels **`ae`**), then the shared adjective (`/ɡ/`). Closed **-l** (`zael`) is an exact match. Open **-m** (`zaem`) is *about as … as*. (cue: **`ae`** ≈ add + order; they share a rank)
 
 > `zazawan zalahen zael gamadam.`
 >
@@ -71,15 +71,15 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 >
 > "Alahen is as sleepy as Ahaben."
 
-**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazawan gamadam` *Azawan is challenging*. Use **`ae`** when two people share a height on the quality. *Walks like a duck* is resemblance ([simile](relations.md#similative) `humum`), not a shared score on a named scale.
-
-**Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zazawan zalahen zal gamadam`): each has the quality. That is not a ranking and not a matching height. Use **`ae`** only for *as … as*.
-
 > `zazawan zalahen zaem gabawal.`
 >
 > [z-Azawan | z-Alahen | z-equal-rank.open | g-bright]
 >
 > "Azawan is about as bright as Alahen."
+
+**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazawan gamadam` *Azawan is challenging*. Use **`ae`** when two people share a height on the quality. *Walks like a duck* is resemblance ([*like*](relations.md#similative) `humum`), not the same score on a named quality.
+
+**Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zazawan zalahen zal gamadam`): each has the quality. It does not rank them or say they match. Use **`ae`** only for *as … as*.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -245,7 +245,7 @@ A standalone ladder says only that nothing is on top. It does not say why (a tie
 
 | Example | Reading |
 |---------|---------|
-| `zazawan zalahen zahaben zem gamadam` | *Azawan ≻ Alahen ≻ Ahaben on challenge* (open) |
+| `zazawan zalahen zahaben zem gamadam` | *Azawan is more challenging than Alahen, who is more challenging than Ahaben* (open: others may fit in the ranking too) |
 | `zazawan zalahen zuel gamadam` | *Azawan is less challenging than Alahen* |
 | `zel gamadam` | *there is no most challenging* |
 | `zem gamadam` | *no most challenging comes to mind* |
@@ -254,9 +254,17 @@ A standalone ladder says only that nothing is on top. It does not say why (a tie
 | `zer gamadam` | *whatever ranks highest on challenging* (someone is on top; not saying who) |
 | `zazawan zalahen zer gamadam` | *whichever of Azawan or Alahen ranks higher on challenging* |
 
-**Compare with:** ranking names with no shared adjective is ordinary preference (who comes first as an alternative). Add the shared `/ɡ/` when you mean *more ADJ than*.
+**Compare with:** a rank join with no shared adjective is an ordinary [rank join](joins.md#rank-joins) (*A matters more than B*). Add the shared `/ɡ/` when you mean *more ADJ than*.
 
-English *not as challenging as* and *no more challenging than* both say the first name does not reach the second, and Agazan reads them as **`zuel`**: `zalahen zazawan zuel gamadam` is *Alahen is not as challenging as Azawan*. What English only implies (that neither is challenging) is not said. For a firm tie, use [`zael`](#equatives).
+English *not as challenging as* says the first name is below the second, so it is **`zuel`**: `zalahen zazawan zuel gamadam` is *Alahen is not as challenging as Azawan*. For a firm tie, use [`zael`](#equatives).
+
+English *no more challenging than* says less: the first name is below the second or tied with them. Write the whole comparison as usual, then deny it with **`zul`**, the way you [deny a whole list](joins.md#exclusivity-and-denying-a-whole-list). What English often only hints (that neither is very challenging) is not said.
+
+> `zalahen zazawan zel gamadam zul.`
+>
+> [[z-Alahen | z-Azawan | z-rank/more | g-challenge] | z-not]
+>
+> "Alahen is no more challenging than Azawan."
 
 ### Place on a scale (`w#N`) {#place-on-a-scale}
 
@@ -268,13 +276,13 @@ English *the second biggest* names a place just below the winner. Keep the super
 >
 > "Azawan is the second biggest."
 
-Under **`zuel`** the same place counts from the bottom, so `zazawan zuel wredul gelavam` is *the second smallest*. Only N from 2 is used: first place is the plain superlative. The frame is one name before `zel` or `zuel`; with two names the ordinal has no group to rank within, and outside a rank fence a bare ordinal on `/w/` is not used.
+Under **`zuel`** the same place counts from the bottom, so `zazawan zuel wredul gelavam` is *the second smallest*. Use it from *second* on, because first place is the plain superlative. Write it only with one name before `zel` or `zuel`. With two names, the ordinal has no group to rank within, and outside a rank fence an ordinal on `/w/` has no reading.
 
 **Compare with:** an ordinal after a noun picks the Nth *thing* (`zodogal gredul` *the second dog*), not the Nth on a scale. A [factor](#factor) (*twice as big*) goes on `/h/`, not `/w/`.
 
 ### Manner scale (`/h/`) {#manner-scale}
 
-When English would say *Alahen walks more intensely than Azawan*, the ladder is **how** they walk, not a quality of the people. Keep the same rank join. Write a manner adverb (`/h/`) **immediately after** it, then the verb. The first name sits higher on that manner.
+When English would say *Alahen walks more intensely than Azawan*, you rank **how** they walk, not a quality of the people. Keep the same rank join. Write a manner adverb (`/h/`) **immediately after** it, then the verb. The first name sits higher on that manner.
 
 > `zalahen zazawan zel hahegem vowogal.`
 >
@@ -294,11 +302,11 @@ When English would say *Alahen walks more intensely than Azawan*, the ladder is 
 >
 > "Alahen walks as intensely as Azawan."
 
-**Compare with:** `gahegem` after `zel` (no verb) is *more intense* as a quality of the people. **`hahegem` after the verb** is ordinary *how* they walk, not the ladder.
+**Compare with:** `gahegem` after `zel` (no verb) is *more intense* as a quality of the people. After the verb, `hahegem` is an ordinary *how* they walk and ranks nothing.
 
 ### Amount scale (`gral`) {#amount-scale}
 
-When English would say *more cats than dogs*, the ladder is **how many**, not a quality. Keep the rank join. For the shared word, write the [digitless number](numbers.md#digitless) **`gral`**: after a rank join it means *by amount*.
+When English would say *more cats than dogs*, you rank **how many**, not a quality. Keep the rank join. For the shared word, write the [digitless number](numbers.md#digitless) **`gral`**: after a rank join it means *by amount*.
 
 > `zagadulx zodogalx zel gral.`
 >
@@ -340,7 +348,7 @@ To say **how many more**, put the difference in `/b/` right after **`gral`**. A 
 
 ### Frequency scale (`hral`) {#frequency-scale}
 
-*Walks more often than* ranks how many **times**. Write digitless **`hral`** in the manner slot right after the rank join. Only digitless **`hral`** works here. Other number words are not manner words.
+English *walks more often than* ranks how many **times** something happens. Write digitless **`hral`** (*multiple times*) in the manner slot, right after the rank join. Only digitless **`hral`** sets this scale; other number words do not rank how often.
 
 > `zazawan zalahen zel hral vowogal.`
 >
@@ -350,7 +358,7 @@ To say **how many more**, put the difference in `/b/` right after **`gral`**. A 
 
 ### Time scale (`bral`) {#time-scale}
 
-*Arrives earlier than* ranks **when** something happens. Write digitless **`bral`** (*later*) in the same manner slot. Rank **`e`** is *later than*, and **`ue`** is *earlier than*.
+English *arrives earlier than* ranks **when** something happens. Write digitless **`bral`** (*later*) in the same place, right after the rank join. Rank **`e`** is *later than*, and **`ue`** is *earlier than*.
 
 > `zazawan zalahen zel bral vevahal.`
 >
@@ -366,7 +374,7 @@ To say **how many more**, put the difference in `/b/` right after **`gral`**. A 
 
 ### Covarying clauses (*the more …, the more …*) {#covarying}
 
-English *the more Azawan walks, the more Alahen sleeps* says two amounts rise together. Put digitless **`hral`** (*more than once*) or another amount word in each clause, and join the clauses with **`xael`**. As with the [frequency scale](#frequency-scale), the equal-rank join turns each amount into a scale and says the two scales move in step.
+English *the more Azawan walks, the more Alahen sleeps* says two amounts rise together. Put digitless **`hral`** (*multiple times*) or another amount word in each clause, and join the clauses with **`xael`**. As with the [frequency scale](#frequency-scale), the equal-rank join turns each amount into a scale and says the two scales move in step.
 
 > `zazawan hral vowogal xael zalahen hral vezebal.`
 >
@@ -406,7 +414,7 @@ English *three times bigger* usually means the same ratio: use **`zael`** with `
 
 ### Comparing against a stance (bars) {#bars}
 
-English *more than planned* and *later than planned* rank one thing against a **value a stance sets**, not against another person: the plan sets how much and when. In the comparee slot, right before the rank join, write that `/th/` stance word instead of a second name. That word is the **bar**. The join closes everything before it, so the bar is inside the comparison: it says what you rank against, not what you mean for the whole claim.
+English *more than planned* and *later than planned* rank one thing against a **value a stance sets**, not against another person: the plan sets how much and when. Write that `/th/` stance word where the second name would go, right before the rank join. That word is the **bar**. The join closes everything before it, so the bar is part of the comparison: it says what you rank against. It is not your stance on the whole sentence.
 
 > `zazawan thamam zel bral vevahal.`
 >
@@ -414,7 +422,7 @@ English *more than planned* and *later than planned* rank one thing against a **
 >
 > "Azawan arrives later than planned."
 
-The same stance word **after** the fence keeps its ordinary reading on the whole claim. With one ranked name, the fence is then a [superlative](#superlatives):
+The same stance word **after** the fence has its ordinary reading, a stance on the whole sentence. With one ranked name, the fence is then a [superlative](#superlatives):
 
 > `zazawan zel bral vevahal thamam.`
 >
@@ -422,7 +430,7 @@ The same stance word **after** the fence keeps its ordinary reading on the whole
 >
 > "Azawan plans to arrive last."
 
-A bar fence ranks **one** item against **one** bar: with a bar, there is no second name and no second bar. Any of the rank joins works (**`zel`**, **`zuel`**, **`zael`**, and their open **-m** forms), and the bar keeps its own ending. The fence can rank an object or an extra noun the same way:
+A bar fence ranks **one** item against **one** bar: with a bar, there is no second name and no second bar. Any of the rank joins works (**`zel`**, **`zuel`**, **`zael`**, and their open **-m** forms), and the bar keeps its own ending. The fence can rank an object or a recipient the same way:
 
 > `zazawan dozolx thamam del gral vagadel.`
 >
@@ -451,12 +459,12 @@ A [hook](hooks.md) and its `/b/` on the ranked item go right before the bar, the
 | name + bar + **`zael`** | at the bar | *as planned* |
 | bar after the fence | a stance on the whole claim | *plans to be the most …* |
 
-**Compare with:** a name in the comparee slot is someone you rank against (`zazawan zalahen zel gezebul` *Azawan is sleepier than Alahen*). A stance word there is the value that stance sets.
+**Compare with:** a name before the rank join is someone you rank against (`zazawan zalahen zel gezebul` *Azawan is sleepier than Alahen*). A stance word in that place is the value that stance sets.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. Full arity (**`ue`** / standalone / **`zer`**), manner **`/h/`** right after the join, and a plan bar right before it.
+Short drills for Intermediate. Try each item before opening **Show answer**. They cover **`ue`**, the standalone form and **`zer`**, a place on the scale, a manner `/h/` right after the join, and a plan bar right before it.
 
 **Setting:** a weighing room
 
@@ -647,7 +655,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Ful
 <a id="worse-than"></a>
 <a id="best-effort"></a>
 
-Intermediate ranked against a plan, and [sake bars](sakes.md#sake-bars) rank against what a sake needs. Any stance that **sets a value** can be the [bar](#bars), and each keeps its own endings and meaning. A channel sets **what you expected by that channel**: what you saw, remember, were told, or worked out. So *than usual*, *than I remember*, and *than advertised* are each one channel in the comparee slot.
+Intermediate ranked against a plan, and [sake bars](sakes.md#sake-bars) rank against what a sake needs. Any stance that **sets a value** can be the [bar](#bars), and each keeps its own endings and meaning. A channel word (how you know something: you saw it, remember it, were told it, worked it out) sets **the level that source led you to expect**. So *than usual*, *than I remember*, and *than advertised* each put one channel word in the bar slot.
 
 > `zazawan thobam zel gezebul.`
 >
@@ -738,7 +746,7 @@ An adjective after that `/b/` describes it, as after any [host](clause.md#comple
 >
 > "Azawan sings well for a sleepy learner."
 
-The ranked item can be a whole kind. Write the [universal fence](joins.md#universals-domains-generics) first, then the bar: the closed fence is the one item, the way an inner list sits inside an outer one ([fence nesting](joins.md#fence-nesting)). Open **`zuam`** is *people of that kind, as a rule*.
+The ranked item can be a whole kind. Write the [universal fence](joins.md#universals-domains-generics) first, then the bar: the whole closed fence counts as the one ranked item, the way an inner list sits inside an outer one ([fence nesting](joins.md#fence-nesting)). Open **`zuam`** is *people of that kind, as a rule*.
 
 > `zuam gaxadadal thobam zel hral vabogam.`
 >
@@ -968,4 +976,4 @@ Short drills for Advanced. Try each item before opening **Show answer**. The bar
 - Fence shape, single-item / standalone, SHARED scale: [joins.md](joins.md)
 - Manner adverbs: [clause.md](clause.md#adverbs-h)
 - Kind and identity (*is a dog*, *is Azawan*): [predication.md](predication.md)
-- Measure NPs: [numbers-applied.md](numbers-applied.md#measure-phrases)
+- Measure phrases: [numbers-applied.md](numbers-applied.md#measure-phrases)

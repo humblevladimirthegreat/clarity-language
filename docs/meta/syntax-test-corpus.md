@@ -366,7 +366,7 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 - **STC-198, 199, *hold*, *find*:** *hold* is *seize* (`vevedul`); *find* is role English on *magnify* (`vamagal`, L-12). *Run and get my cap* is a verb list closed by `val` (G-19).
 - **STC-201, *funniest*:** *hear* is the *listening* abstract; *story* is the *tale* abstract, and `zozer` is *that one* with the superlative bar.
 - **STC-202, 206, 216, comparatives:** the second name is a full noun phrase (`glemehel zobel grebazol balahen`). *Enemies* is *people of struggle* (`gavadam`). *Far more* is `wohahal` on the amount scale, as in comparatives.md.
-- **STC-203, *no wiser than*:** reverse rank `zuel`, the reading for *not as … as* / *no more … than* (comparatives.md § Intermediate; G-23). The English implication that neither is wise is not said.
+- **STC-203, *no wiser than*:** the whole comparison denied with a **u** join (`zel gamadam zul`: below or tied), not reverse rank `zuel`, which is *not as … as* (comparatives.md § Intermediate; G-23). The English implication that neither is wise is not said.
 - **STC-204, *faster*:** the manner scale, `hadehum` (*haste*). *Light* is `zabawal` (*bright*); *sound* is *volume* (`zagawam`).
 - **STC-207, *very poor*:** *far fewer than typical* on the amount of money owned. *Wife* is a female partner tie (`gohoham`), and the two `han` hooks keep *his wife* and *five children* apart. *Cabin* is *little hut*; *low* is dropped; *of logs and stones* is `huwum` with a join.
 - **STC-208, *mantle*, *closely*:** *mantle* is *coat*; *traveler* is the agent compound on *walk*. *More closely* is approximated as *more snugly* (`hahagem`), as in STC-168.
