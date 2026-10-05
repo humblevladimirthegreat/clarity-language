@@ -5,7 +5,7 @@ How to **sound out** Agazan. Each letter has one pronunciation. Syllables end wi
 
 ## Beginner {#beginner}
 
-Pronounce each letter the same way every time. A **syllable** is one beat with one vowel. Spell the beats you actually say: a consonant starts a beat, and the last consonant of a content word is where that word ends.
+Pronounce each letter the same way every time. A **syllable** is one beat with one vowel. Spell the beats you actually say: a consonant starts a beat, and the last consonant of a content word (a word built on a root, such as a noun or verb) is where that word ends.
 
 Write native Agazan in **lowercase**. Two vowel letters in a row are two syllables. Say each vowel as its own beat.
 
@@ -13,7 +13,7 @@ Write native Agazan in **lowercase**. Two vowel letters in a row are two syllabl
 
 ### Vowels
 
-Agazan has four vowel letters. Unlike in English where the pronounced sound depends on the surrounding letters, the Agazan vowels are always pronounced the same.
+Agazan has four vowel letters. In English, a vowel letter’s sound depends on the letters around it; each Agazan vowel always has the same sound.
 
 The cue words below are pronounced as in Standard American English.
 
@@ -21,14 +21,14 @@ The cue words below are pronounced as in Standard American English.
 |--------|-----|-----|
 | `e` | /e̞/ <IpaPlay file="Mid_front_unrounded_vowel.ogg" label="e" /> | *bet* |
 | `u` | /u/ <IpaPlay file="Close_back_rounded_vowel.ogg" label="u" /> | *boot* (no glide, like Spanish *tú*) |
-| `o` | /o̞/ <IpaPlay file="Mid_back_rounded_vowel.ogg" label="o" /> | *Cambodia* (no glide, like spanish *todo*) |
+| `o` | /o̞/ <IpaPlay file="Mid_back_rounded_vowel.ogg" label="o" /> | *Cambodia* (no glide, like Spanish *todo*) |
 | `a` | /ä/ <IpaPlay file="Open_central_unrounded_vowel.ogg" label="a" /> | *spa* (like Spanish *casa*) |
 
-Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). /u/ and /ä/ by [Denelson83](https://commons.wikimedia.org/wiki/User:Denelson83) and except /e̞/ and /o̞/ by [TFighterPilot](https://commons.wikimedia.org/wiki/User:TFighterPilot).
+Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). /u/ and /ä/ are by [Denelson83](https://commons.wikimedia.org/wiki/User:Denelson83), and /e̞/ and /o̞/ by [TFighterPilot](https://commons.wikimedia.org/wiki/User:TFighterPilot).
 
 ### Consonants
 
-A consonant starts a syllable. There is no distinction between voiced and unvoiced. Prefer the **voiced** version (with vocal cords buzzing) so you can hold a sung note. You may still use the unvoiced sound for style. 
+A consonant starts a syllable. Many consonants have a **voiced** sound (vocal cords buzzing, as in *zoo*) and an unvoiced one (as in *sea*), and Agazan treats the two as the same letter. Prefer the voiced sound so you can hold a sung note; the unvoiced one is fine for style.
 <!-- Consonant order: lips (b m w v), tongue tip (d n z l r), y (palatal, between tongue tip and back), back (g h, then th as the "other h"), then the English false friend (x). Canonical alphabet / letter-name recitation follows this table (vowels e u o a first). -->
 
 | Agazan | IPA | Cue | Unvoiced variant |
@@ -49,7 +49,7 @@ A consonant starts a syllable. There is no distinction between voiced and unvoic
 | `x` | /ʒ/ <IpaPlay file="Voiced_palato-alveolar_sibilant.ogg" label="x" /> | *vision* (the *si*) | /ʃ/ <IpaPlay file="Voiceless_palato-alveolar_sibilant.ogg" label="unvoiced x" />, *shy* |
 
 ::: tip Remember
-`x` sounds different than English. The rest are familiar. `y` is always a consonant, never a vowel.
+`x` sounds different from English *x*. The rest are familiar. `y` is always a consonant, never a vowel.
 :::
 
 `th` is **one letter** written with two characters. Agazan has no `t`, so `th` never means `t` followed by `h`.
@@ -58,9 +58,10 @@ Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org
 
 ### Word edges
 
-A content word ends with a last consonant `-l` / `-m` / `-n`, or `-r`. That last consonant is the audible end of the word. Inside the word, consonants start syllables. They do not close a syllable in the middle.
+A content word ends in one of four consonants: `-l`, `-m`, `-n`, or `-r`. That last consonant is the audible end of the word. Inside the word, consonants start syllables. They do not close a syllable in the middle.
 
 `azawan` = *a-za-wan*. `odogal` = *o-do-gal*.
+
 ## Intermediate {#intermediate}
 
 ::: tip Reminder:
@@ -86,13 +87,13 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` |
 | Backward stand-in **`-rth`** | [pointing back](dependents.md#stand-in-back) | word-final coda `rth`; the only word-final `th` |
 
-A syllable ends with a consonant only at the **end of the word**. In a fused extra-noun [hook compound](hooks.md#hook-compounds), the cited **-l** / **-m** starts the hook's syllable, because the hook begins with a vowel. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubuhel`: prefix `z`, root `ubuhe`, ending `-l`). Spelling has one pronunciation path. Writing does not mark stress. Musical rhythm may still place emphasis.
+A syllable ends with a consonant only at the **end of the word**. In a fused extra-noun [hook compound](hooks.md#hook-compounds), the cited **-l** / **-m** starts the hook's syllable, because the hook begins with a vowel. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubuhel`: prefix `z`, root `ubuhe`, ending `-l`). Each spelling has only one pronunciation. Writing does not mark stress. Musical rhythm may still place emphasis.
 
 **Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 
 ### Number-word exception {#number-word-exception}
 
-When English says *how many* or *which place*, Agazan writes a [number word](numbers.md). After the role letter, the spoken marker begins with `r`, which makes a cluster ordinary content never uses: a role letter directly followed by `r`. That cluster is how you hear “this is a number.” Content roots start with a vowel, so an `r` that starts a syllable right after a role letter is the number marker (`ra` / `ru` / `re` / `ro`; counting from the end uses written `#-`, spelled and spoken **rue** before the digits). Two vowels in a row stay two separate syllables.
+When English says *how many* or *which place*, Agazan uses a [number word](numbers.md). A number word puts `r` right after the role letter. Ordinary words never have that cluster, because their roots start with a vowel, so a role letter followed directly by `r` tells you a number is coming. The marker is `ra`, `ru`, `re`, or `ro`; counting from the end is written `#-`, spelled and spoken **rue** before the digits. Two vowels in a row stay two separate syllables.
 
 > `zagadulx grarel.`
 >
@@ -100,7 +101,7 @@ When English says *how many* or *which place*, Agazan writes a [number word](num
 >
 > "Three cats."
 
-`grarel` is `g` + `ra` + digit `re` + `-l`. Each written comma is spoken as a [group separator](numbers.md#group-separator), **`th`** plus the marker’s vowel. Inside a content root, `r` still appears only after a vowel (`egeve`).
+`grarel` is `g` + `ra` + digit `re` + `-l`. In a long number, each written comma is spoken as a [group separator](numbers.md#group-separator), **`th`** plus the marker’s vowel.
 
 **Compare with:** ordinary endings on content words use [word ending](word-endings.md) senses. Number words reuse those same four letters with [number-specific endings](word-endings.md#number-word-exception).
 
@@ -125,7 +126,7 @@ When you **spell a word aloud** or **name a letter**, say the Agazan name for it
 | `l` | `lo` | *low* |
 | `r` | `ro` | *row* |
 | `y` | `ya` | *yacht* |
-| `g` | `ga` | *gagaya* |
+| `g` | `ga` | *gaga* |
 | `h` | `hu` | *who* |
 | `th` | `tha` | *that* |
 | `x` | `xe` | *shed* |
@@ -134,7 +135,7 @@ When you **spell a word aloud** or **name a letter**, say the Agazan name for it
 `agadu` → `a` `ga` `a` `da` `a`
 ```
 
-In a clause, a glyph is talked about as a [mention](spans.md#mention); read it aloud as the letter name `ze`.
+In a clause, a letter you talk about (such as `z`) is a [mention](spans.md#mention); read it aloud by its letter name (`ze`).
 
 Ten letters also begin a [digit syllable](numbers.md#counts). The letter name uses the **opposite** vowel (`a`↔`u`, `o`↔`e`), so naming the letter is not the same as counting.
 
@@ -155,7 +156,7 @@ Ten letters also begin a [digit syllable](numbers.md#counts). The letter name us
 
 ### Singability constraints {#singability-constraints}
 
-These shape choices keep ordinary singing easier:
+These choices about word shape make Agazan easier to sing:
 
 | Constraint | Why it helps | How Agazan keeps it |
 |------------|--------------|---------------------|
@@ -174,13 +175,13 @@ On high notes, **u** may open toward [ʊ] (as in *book*); that is still **u**.
 
 Legal clusters: left-hanging `gl-`; number-word role letter + `r`; lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in `-rl` / `-rm` / `-rth`. The lexical join before `r` is the only syllable-final consonant inside a word.
 
-Try a short Agazan line quickly at a high comfortable pitch:
+Try singing a short Agazan line quickly at a high but comfortable pitch:
 
 `zazawan gamadam.`
 
 / zä.zä.wän ɡä.mä.däm /
 
-A line that piles closed vowels, clusters, and mid-word stops is harder to sustain even when it is only a little harder to speak:
+A line that piles up close vowels, clusters, and mid-word stops is harder to sustain even when it is only a little harder to speak:
 
 / seiɹ ˈʈʂuɹt tis ˈheb.ɡiɹn fuofts /
 

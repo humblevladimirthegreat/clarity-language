@@ -58,7 +58,7 @@ These are the tests from [doc-style.md](../meta/doc-style.md), applied to every 
 
 Batches are sized at about 10k words or less. Word counts are approximate.
 
-- [ ] **Batch 2.1:** `why-agazan` (4.5k), `introduction` (1k), `phonology` (2k)
+- [x] **Batch 2.1:** `why-agazan` (4.5k), `introduction` (1k), `phonology` (2k)
 - [ ] **Batch 2.2:** `word-endings` (3k), `clause` (3.5k)
 - [ ] **Batch 2.3:** `speech-moves` (2.5k), `dependents` (5.4k)
 - [ ] **Batch 2.4:** `pronouns` (7.3k)
@@ -107,8 +107,21 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - `sakes.md` still uses *deontic* in the intro, the prescription lead, and the summary table, each glossed in the same breath. Phase 2 (batch 2.13) can decide whether the term earns its place.
 - `pronouns.md` uses *pitch reset* without *prosody*. No change.
 
+### 2026-10-05: Batch 2.1 (`why-agazan`, `introduction`, `phonology`)
+
+- **`why-agazan`:** smoothed the Claritish teaser sentence, the anger/anxiety line in the Compassion overview, and the label-scope list (now parallel: *about this stretch… about one relationship…*). In *What still counts*, the weather cue moved next to FORMER (the rule it pictures), "an event said without it is closed" became plain English, and the *had … would* line now says the as-of moment is a placeholder. Fixed the broken `*[As if* as theater]` link italics. Reworded the Sapir-Whorf sentence, which named the doubt rather than the claim as the hypothesis.
+- **`introduction`:** "proper **-n**" → "the name ending **-n**"; the arrow chain of aims became a list; the role-letter paragraph now says what English makes you guess (position) and why reordering is safe; *stem* glossed as in `pronouns`; *closed endings*, *interlinear*, *clause glue*, and *checkpoint people* replaced with plain English. Grammar fixes in How to learn ("every pages'", the skip sentence) and in the acknowledgments (book title italics, *scientifically validated*, *their feedback*).
+- **`phonology`:** glossed *content word* at first use; rewrote the vowel lead, the voiced/unvoiced paragraph (glossed in the same sentence, with English examples), the garbled audio-credit line, and the number-word cluster lead (split into job, shape, consequence). Missing blank line before `## Intermediate`. "Closed vowels" → "close vowels" to match the singability table.
+
+**Deferred / kept:**
+- `phonology` Intermediate: the hook-compound sentence (*fused extra-noun hook compound … cited **-l** / **-m***) uses terms from much later on the path. It is a finish-the-series inventory note, so it stays; Phase 3 can check whether it should move to `hooks`.
+- `phonology` lead previews the Advanced number-word exception with a link. Kept, since it qualifies the page's one-line job.
+- `why-agazan` Purpose/feature tour uses capitalized labels (RESIDUE, FORMER, PLAN, DECISION, WITNESSED, LIVE), each glossed in place. No change.
+
 ## Questions for the editor
 
 <!-- Suspected grammar problems found during the pass. Not fixed by the pass. One bullet each: page, section, issue. -->
 
 - `numbers.md`, pronunciation rows and the shorthand-to-spelled table: spelled number words are in italics (`🔊 *grarel*`), and the test suite requires that. This conflicts with doc-style's "Agazan forms in backticks, not italics", and retie-safe writing says retie never rewrites italics. Spelled numbers contain no content roots, so retie risk is low. Should the pronunciation convention (and its check) move to backticks?
+- `phonology.md`, Number-word exception: "Inside a content root, `r` still appears only after a vowel (`egeve`)." The example root has no `r` (commit 760fb4d retied it from `ebade`, which also had none). The sentence needs a root that contains `r`, or the example should go.
+- `phonology.md`, Letter names: the cue for `g` / `ga` is *gagaya*, which is not an English word. Is it a stale Agazan spelling, or should it be an English cue such as *gaga*?

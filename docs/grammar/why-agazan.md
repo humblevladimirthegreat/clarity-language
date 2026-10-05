@@ -10,7 +10,7 @@ The design aims at three outcomes: [compassion](#compassion), [rationality](#rat
 
 ### Try it in English first {#try-it-in-english}
 
-Do you have to learn a whole language to use these ideas? No. [Claritish](claritish/index.md) is seven short lessons on dropping single Agazan words into everyday English, where an English adverb or tag would go. *The package arrives Friday `thovum`* says it could be so, in one word English has no equivalent for. Other lessons cover how you know, how far a label reaches, thanks that name the need, and more.
+Do you have to learn a whole language to use these ideas? No. [Claritish](claritish/index.md) is seven short lessons on dropping single Agazan words into everyday English, where an English adverb or tag would go. In *The package arrives Friday `thovum`*, one word says *it could be so*, and English has no single word for that. Other lessons cover how you know, how far a label reaches, thanks that name the need, and more.
 
 Every word Claritish teaches is already real Agazan, so nothing you learn there is thrown away. [Start with the Claritish introduction](claritish/index.md); each lesson is short.
 
@@ -30,7 +30,7 @@ Agazan puts those framings into ordinary words and optional extra pieces on word
 
 ## Criterion for features {#criterion-for-features}
 
-Psychological features fit these criteria:
+A psychological feature must meet these criteria:
 
 - **Helps with language goals.** Supports compassion, rationality, and/or empowerment. Prefer research when it exists; user testing is fine when research is scarce.
 - **Addresses a common problem.** Targets biases or friction that show up for most people. Rare edge cases do not justify heavy machinery.
@@ -46,7 +46,7 @@ This section tours how the three aims show up in vocabulary and grammar. The fea
 
 Support self-acceptance and acceptance of others, and make judgments visible when they arise.
 
-Praise can name the sake a person’s work actually served instead of stopping at a vague *good*. A flash of anger or anxiety can be said as an unmet sake, how strongly it is stirring, and where it sits, so the feeling points at something you can act on instead of stopping at a blank label. And *can’t* comes in kinds: temporary, modifiable, or irreversible. A block never has to read as who someone is. *Because* says what made something happen without claiming anyone is to blame, unless you choose to say so.
+Praise can name the sake a person’s work actually served instead of stopping at a vague *good*. A flash of anger or anxiety can be described by the unmet sake behind it, how strongly it stirs, and where it sits, so the feeling points at something you can act on instead of stopping at a blank label. And *can’t* comes in kinds: temporary, modifiable, or irreversible. A block never has to read as who someone is. *Because* says what made something happen without claiming anyone is to blame, unless you choose to say so.
 
 #### Treating a moment as identity {#trap-identity}
 
@@ -56,7 +56,7 @@ A hard moment, a label, or a past pattern hardens into a fixed fact about a pers
 
 English *Alahen is angry* can mean one outburst or the kind of person Alahen is. One act slides into a verdict on someone's nature, and a name for a problem (*lazy*, *anxious*) starts to sound like its cause.
 
-[Label scope](predication.md#label-scope) lets any label say what kind of claim it is: this stretch of doing, a practiced role, true in one relationship (*a stranger to Azawan*), or a type that follows them across scenes.
+[Label scope](predication.md#label-scope) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Azawan*), or about a type that follows the person across scenes.
 
 Marking a label's reach helps you describe what happened without turning it into who someone is, including yourself.
 
@@ -74,9 +74,9 @@ Saying *can’t right now* or *may yet change* instead of *impossible* helps you
 
 English *has…* and *used to* mix two questions: **when** something happened, and whether it **still matters now**. *Used to* also leaves open whether a habit still describes you today.
 
-[RESIDUE](knowing.md#residue) says the result of a past event still counts now (a debt still unpaid, a door still shut). [FORMER](knowing.md#former-climate) says a pattern was usual but you are **not** claiming it as how things are now. Neither word is a past tense: each can combine with what you see now, what you remember, or a forecast.
+[RESIDUE](knowing.md#residue) says the result of a past event still counts now (a debt still unpaid, a door still shut). [FORMER](knowing.md#former-climate) says a pattern was usual but you are **not** claiming it as how things are now (cue: usual weather vs today’s report). Neither word is a past tense: each can combine with what you see now, what you remember, or a forecast.
 
-Marking residue helps rumination stay optional: an event said without it is closed. Marking a former pattern lets “I always was this way” become a description you can stop giving. [As-of](relations.md#as-of) names the moment that leftovers and patterns are measured from (*as of Friday*), so you can weigh an old situation from its own date instead of against today. English *had … would* uses an as-of moment you are not claiming is real, which is different from pretending. (cue: usual weather vs today’s report)
+Marking residue keeps rumination optional: an event you mention without it counts as closed. Marking a former pattern lets “I always was this way” become a description you can stop giving. [As-of](relations.md#as-of) names the moment that leftovers and patterns are measured from (*as of Friday*), so you can weigh an old situation from its own date instead of against today. For English *if they had … they would*, the as-of moment is a placeholder you do not claim is real, which is not the same as pretending.
 
 #### Treating a feeling as a label {#trap-feeling}
 
@@ -217,7 +217,7 @@ In English: [Claritish Lesson 5, Allowed, required, agreed](claritish/allowed-re
 
 ##### Wanting, planning, and deciding {#wanting-planning-and-deciding}
 
-English *will* mixes plan and prediction together, and *I want to* can sound like a promise. It is easy to talk as if the future were already known (a certain prediction that fuels anxiety or overconfidence), while a pick often sounds more locked than it is.
+English *will* mixes plan and prediction, and *I want to* can sound like a promise. It is easy to talk as if the future were already known (a certain prediction that fuels anxiety or overconfidence), while a pick often sounds more locked than it is.
 
 Agazan splits them: [want](intention.md#want) for what you wish for, without meaning to do it yet; [PLAN](intention.md#plan-predict) for what you mean to do; [DECISION](intention.md#decision) for how revisable a pick is; and a [forecast](knowing.md#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `bral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
 
@@ -294,7 +294,7 @@ Many roots have an **abstract** sense beside a **concrete** one, so an idea you 
 - [Residue as unpaid debt](knowing.md#residue) ([a moment as identity](#trap-identity)): the result still counts, like a balance still owed; not a past tense.
 - [Former climate as an empty nest](knowing.md#former-climate) ([a moment as identity](#trap-identity)): the nesting season is over; a pattern that has ended, not a past tense.
 - [A pattern as paw-prints](knowing.md#universality) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
-- *[As if* as theater](knowing.md#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene; what really happened stays **offstage**.
+- [*As if* as theater](knowing.md#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene; what really happened stays **offstage**.
 - [Mechanism as gears](causation.md#cause) ([a wish as a law](#trap-wish-as-law)): you say *how* a result comes about, like gears meshing, not only that it follows.
 - [Affect as water](sakes.md#emotion-compose) ([a feeling as a label](#trap-feeling)): surging, flowing, or still water (motion) plus where the feeling sits or points, instead of an opaque emotion label that hides the sake.
 
@@ -304,7 +304,7 @@ Conceptual metaphors help you reach and remember the healthier frame by tying it
 
 ### Can a language change how you think?
 
-Some don’t believe it is possible for a language to influence the speaker’s thoughts (called the weak Sapir-Whorf Hypothesis). I make no claims here about whether it happens for natural languages, but for Agazan specifically, I give the following argument:
+Some people doubt that a language can influence its speakers’ thoughts (the claim that it can is the weak Sapir-Whorf hypothesis). I make no claims here about whether it happens for natural languages, but for Agazan specifically, I give the following argument:
 
 1. The way a concept is framed (phrased) affects how people think about it (a well-established phenomenon in [psychology](https://en.wikipedia.org/wiki/Framing_effect_(psychology)) and the [social sciences generally](https://en.wikipedia.org/wiki/Framing_(social_sciences))).
 2. Agazan’s vocabulary and grammar ensure particular frames for certain concepts (using the design laid out on this page and in the linked grammar docs).
