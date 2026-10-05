@@ -1,21 +1,21 @@
 sense_form,pos,emoji,kind,gloss,definition,mnemonic,anchor
-ahum,th,🗳️,sake,autonomy,autonomy sake (choice / agency),ballot records choice; choice is agency and self-direction,sakes.md#prescription-the-ought-this-act-for-this-sake
+ahum,th,🗳️,sake,autonomy,autonomy sake (choice / agency),ballot records choice; choice is agency and self-direction,sakes.md#word-shape
 ahum,w,🗳️,sake,autonomy,autonomy sake (choice / agency),ballot records choice; choice is agency and self-direction,sakes.md#personal-possession
-ulom,th,🧰,sake,competence,competence sake (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,sakes.md#prescription-the-ought-this-act-for-this-sake
+ulom,th,🧰,sake,competence,competence sake (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,sakes.md#word-shape
 ulom,w,🧰,sake,competence,competence sake (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,sakes.md#personal-possession
-amem,th,🧭,sake,purpose,purpose sake (direction / meaning),compass gives a heading; direction is an aim that matters,sakes.md#prescription-the-ought-this-act-for-this-sake
+amem,th,🧭,sake,purpose,purpose sake (direction / meaning),compass gives a heading; direction is an aim that matters,sakes.md#word-shape
 amem,w,🧭,sake,purpose,purpose sake (direction / meaning),compass gives a heading; direction is an aim that matters,sakes.md#personal-possession
-anam,th,🪢,sake,relatedness,relatedness sake (bond / belonging),knot ties two ends; bond is connection and care,sakes.md#prescription-the-ought-this-act-for-this-sake
+anam,th,🪢,sake,relatedness,relatedness sake (bond / belonging),knot ties two ends; bond is connection and care,sakes.md#word-shape
 anam,w,🪢,sake,relatedness,relatedness sake (bond / belonging),knot ties two ends; bond is connection and care,sakes.md#personal-possession
-ebem,th,🎁,sake,beneficence,beneficence sake (making someone better off),a present leaves someone better off; giving pays off the giver,sakes.md#prescription-the-ought-this-act-for-this-sake
+ebem,th,🎁,sake,beneficence,beneficence sake (making someone better off),a present leaves someone better off; giving pays off the giver,sakes.md#word-shape
 ebem,w,🎁,sake,beneficence,beneficence sake (making someone better off),a present leaves someone better off; giving pays off the giver,sakes.md#personal-possession
-ozom,th,🍓,sake,pleasure,pleasure sake (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,sakes.md#prescription-the-ought-this-act-for-this-sake
+ozom,th,🍓,sake,pleasure,pleasure sake (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,sakes.md#word-shape
 ozom,w,🍓,sake,pleasure,pleasure sake (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,sakes.md#personal-possession
-oyum,th,🫁,sake,physical,physical sake (body / health / safety / shelter),lungs keep you breathing; the physical sake is a body that is fed and housed and well and safe,sakes.md#prescription-the-ought-this-act-for-this-sake
+oyum,th,🫁,sake,physical,physical sake (body / health / safety / shelter),lungs keep you breathing; the physical sake is a body that is fed and housed and well and safe,sakes.md#word-shape
 oyum,w,🫁,sake,physical,physical sake (body / health / safety / shelter),lungs keep you breathing; the physical sake is a body that is fed and housed and well and safe,sakes.md#personal-possession
-adom,th,💡,sake,understanding,understanding sake (sense-making / learning),a lightbulb switches on; understanding is the moment it makes sense,sakes.md#prescription-the-ought-this-act-for-this-sake
+adom,th,💡,sake,understanding,understanding sake (sense-making / learning),a lightbulb switches on; understanding is the moment it makes sense,sakes.md#word-shape
 adom,w,💡,sake,understanding,understanding sake (sense-making / learning),a lightbulb switches on; understanding is the moment it makes sense,sakes.md#personal-possession
-egam,th,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#prescription-the-ought-this-act-for-this-sake
+egam,th,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#word-shape
 egam,w,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#personal-possession
 evom,th,🎣,evidential,WITNESSED,witnessed evidential (per memory / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidentiality
 evol,th,🎣,evidential,WITNESSED.strong,witnessed evidential with strong evidence (vivid memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidence-strength

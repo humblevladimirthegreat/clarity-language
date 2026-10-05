@@ -1,7 +1,7 @@
 # Proposal: grammar style pass
 
 **Status:** IN PROGRESS
-**Design authority:** [doc-style.md](../meta/doc-style.md) for wording and voice; [grammar-docs.md](../meta/grammar-docs.md) for teaching policy. This pass changes **wording only**. It adds, removes, or changes no forms, readings, rules, or examples.
+**Design authority:** [doc-style.md](../meta/doc-style.md) for wording and voice; [grammar-docs.md](../meta/grammar-docs.md) for teaching policy. This pass changes **wording and examples only**. It adds, removes, or changes no forms, readings, or rules. It may rewrite, move, or add examples when an example is unclear ([ground rules](#ground-rules-for-every-batch)).
 
 ## Goal
 
@@ -27,7 +27,8 @@ A session starts with something like "do the next batch." The session then:
 
 ### Ground rules for every batch
 
-- **Wording only.** Do not change Agazan in code spans, example sentences, morph glosses, tables' Agazan columns, or translation checkpoint answers. Do not add or drop examples. Rewording an English translation line is fine only when the meaning stays exactly the same.
+- **Wording, plus unclear examples.** Do not change forms, readings, or rules. Rewording an English translation line is fine when the meaning stays exactly the same.
+- **Rewrite unclear examples.** An example is unclear when its translation is awkward or says more or less than the Agazan, when it does not show the rule its section teaches, when it sits under a section it does not illustrate, or when a section teaches a shape with no example of it. Fix it in place: reword the translation, rewrite the example (Agazan, morph line, and translation together), move it to the section it illustrates, or add a missing example or drill. Every new or changed Agazan line must parse with `node scripts/parse.mjs` and use only shapes the owning page already teaches. A new example must not need a reading the docs do not already give. When fixing an example would mean choosing between two readings, it goes under [Questions for the editor](#questions-for-the-editor) instead. Log each example change in the batch log.
 - **Obvious errors may be fixed.** When a mismatch is plainly a slip, with only one possible correct reading (a translation or checkpoint answer that names the wrong person, a typo in an English gloss, a morph line that disagrees with its example), fix it in place and note it in the batch log. Anything that needs a design judgment, such as which of two forms is right or whether a rule is wrong, still goes under [Questions for the editor](#questions-for-the-editor).
 - **Keep anchors.** Do not rename headings that carry `{#id}` or `<a id>` anchors, and do not change those ids. Other pages and the site link to them.
 - **Retie-safe.** Do not hand-spell a content root in new prose where the page currently avoids it. Follow [retie-safe writing](../meta/grammar-docs.md#retie-safe-writing).
@@ -56,6 +57,7 @@ These are the tests from [doc-style.md](../meta/doc-style.md), applied to every 
 - **First-use glosses** for invented labels and [house shorthand](../meta/doc-style.md#house-shorthand) (*job*, *point*, *setting*, *body*, *linker*, *turn*, *role letter*, …), counted along the path order, not just within the page.
 - **Shape:** one idea per H2/H3; short paragraphs plus a table rather than a wall of prose; bold used sparingly; no copula slogans; no filler.
 - **Natural English:** fix awkward compression even where no rule names it ("use a longer sentence when the shorter version depends on awkward phrasing").
+- **Clear examples:** each H3 that teaches a shape has an example of that shape, and each example's translation says what the Agazan says, in natural English ([ground rules](#ground-rules-for-every-batch)).
 
 Batches are sized at about 10k words or less. Word counts are approximate.
 
@@ -71,7 +73,7 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - [x] **Batch 2.10:** `spans` (4.6k)
 - [x] **Batch 2.11:** `numbers` (10.9k)
 - [x] **Batch 2.12:** `comparatives` (5.5k), `causation` (2.9k)
-- [ ] **Batch 2.13:** `sakes` (9.4k)
+- [x] **Batch 2.13:** `sakes` (9.4k)
 - [ ] **Batch 2.14:** `intention` (4.5k)
 - [ ] **Batch 2.15:** `knowing` (10.6k)
 - [ ] **Batch 2.16:** `roles` (6k), `x-compounds` (2.9k)
@@ -253,7 +255,22 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - Resolved after review: *no more challenging than* (below or tied) was read as **`zuel`** (strictly below), the same as *not as challenging as*. It now denies the whole comparison with a **u** join, as for any whole list: `zalahen zazawan zel gamadam zul.` (new example in Full comparative arity). **`zuel`** stays *not as … as*. The parser already read the form this way, so no code changed; `meta/syntax-test-results.md` (G-23) and `meta/syntax-test-corpus.md` (STC-203) are updated.
 - Resolved after review: a noun outcome with a `/ɡ/` pole (`zuzel goyem bazahel.`) was translated with a verb not in the Agazan (*grows*, *thrives*, *comes*). The If section now says a common noun plus a `/ɡ/` word is [existence], so it reads *there is X if there is Y*, and every noun-outcome example and drill on `causation` (and the *rain* example in `say-reasons`) uses that pattern.
 
+### 2026-10-05: Batch 2.13 (`sakes`)
+
+- **Beginner:** the page lead now starts from the English job (*good for me*, *costs me*), glosses *sake* and *stance* in place, and no longer names what Intermediate adds (*deontic* is gone from the page). The Beginner lead says what `/ɡ/` and `/th/` each describe (a noun you keep, the whole event). Met and Unmet leads: "a named belonging" → "a belonging of yours"; the ability Compare-with drops "taught later" and *glues*. Time horizon: the prose cue sentence (already in the Cue column) is gone, and the *settled-to-passing scale* is named after the three endings are explained. The trailing Compare-with that pointed ahead to Unmet became a clause in the Unmet lead; *detriment* → *harm to the sake*. Word shape no longer previews the Intermediate stances (`the` / `tho`) or the emotion locus, and "`gahul` is still ballot-like" became a plain statement. Personal possession: "gratitude and unmet", "speaker possession", and "a bare `/ɡ/` need" reworded; **`gobum`** is now glossed (*as stimulus*: the thing you react to) before the `/w/` rule; *ascribe*, *episode*, *possessed or not*, and "Ordinary `zobul` is still" replaced.
+- **Intermediate:** the Emotion compose lead (one long paragraph, with "an sake stance" and "say the take without smuggling") is now two paragraphs: job → the three pieces on one word, then where the word goes. *Emotion tail* is glossed at first use (it was used unglossed). "Affect is **water**" moved from the motion-ending rule into a cue after it. *evaluative* → *judgment*. Prescription: *deontic* and *host verb* replaced; "stays on `/y/`" (a fence) → a separate choice made by the speech-act word; the nonstandard **Unlike** starter became **Compare with**; *warrant* and *performance claim / report* reworded. Motive: the *hual* habit sentence is plain English; the five-way *for* Compare-with is now one **Not the same job as** beat, a sentence on `/ɡ/` purpose, and a **For other English *for*, use:** list. Attachment sites: *deontic prescription* in the table; the closing paragraph split into three (*table's dimension*, *stacked `th`-additions*, *host … carries concrete vs abstract sense* replaced). Whose stake: the landmark sentence moved out of the Compare-with. *hosted `/b/`* (permission, requirement, consent) → "a `/b/` right after the … word". Permission lead drops the prose cue list (the table has it). *owns a harm* → *owns up to a harm*; *Hope colors the claim* reworded. Sake bars lead says what the bar does.
+- **Obvious slip fixed:** Intermediate English → Agazan #15 (`zebehul wanathumor gobum.`, no `/b/`) said *aimed at them*. A direction with no `/b/` points at the stimulus noun, so it now says *aimed at the bell*.
+
+**Deferred / kept:**
+- Prescription still has three Compare-with beats (command, forecast, motive) against the limit of two. The forecast beat's "or when you want both *is doing* and a norm on that doing" is unclear; rewording it would mean guessing which form it means. Left for the editor.
+- Sake inventory's restrictor Compare-with (*when* / *always* / *never*) names no real mix-up for this English; kept, since cutting a beat is beyond wording.
+- Forward links kept: [ability] (`intention`), [holder] / [MAY] / [forecast] / [evidentiality] (`knowing`), [plan] (`intention`). Each answers an English form the learner reaches for here.
+- The Translation practice intros ("Short drills for …") are terse but pass; unchanged.
+- Resolved after review: the MAY Compare-with in Prescription (a `knowing` form, later on the path) is cut. Met (`tha`) had no example of its own; `zahazal gulotham.` (the **-m** default) moved up from Time horizon into Met.
+- Resolved after review: Beginner taught a sake word on `/th/` but had no `/th/` example, though Intermediate Attachment sites says Beginner already attached it. Word shape now has `zazawan vezebel thulotham.` (*Azawan tells, and that serves competence*), the `tha` / `thu` table rows say *belonging or event*, and Beginner English → Agazan gains #7 (`zazawan vezebal thoyuthal.`), with *Azawan* and *sleep* added to its Roots used here table. Teaching anchors follow: the nine `/th/` sake rows in `data/lexicon-overlays.csv` now point at `sakes.md#word-shape` (they pointed at Prescription), and Met has an explicit `{#met}` id that `src/parse/constructions.ts` uses as home for the sake word, `tha`, and its **-m** (the build's learning-order check flagged both).
+- Resolved after review: the Motive lead listed English *have to* / *need to*, which Requirement (**`thumem`**) also claims (and `say-tense` routes *have to* to **`thumem`**). The lead now names *doing this for …* and *for the sake of …* only.
+- Policy change after review: the pass may now rewrite, move, or add unclear examples (Status line, ground rules, and a **Clear examples** test in Phase 2).
+
 ## Questions for the editor
 
 <!-- Suspected grammar problems found during the pass. Not fixed by the pass. One bullet each: page, section, issue, then **Recommendation:** the suggested fix and why. -->
-

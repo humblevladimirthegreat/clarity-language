@@ -173,7 +173,7 @@ type FamilyKind = MorphWordFamily["kind"];
 export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = {
   content: { anchor: "phonology.md#word-edges", summary: "content word" },
   number: { anchor: "numbers.md#counts", summary: "number word" },
-  x: { anchor: "sakes.md#time-horizon-endings-on-met", summary: "mid-word x compound" },
+  x: { anchor: "sakes.md#met", summary: "mid-word x compound" },
   hook: { anchor: "hooks.md#beginner", summary: "hook" },
   hookCompound: { anchor: "hooks.md#hook-compounds", summary: "fused extra-noun hook compound" },
   joinMarker: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "vowel-series join / turn word" },
@@ -184,7 +184,7 @@ export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = 
 export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
   role: { anchor: "roles.md#role-compounds", summary: "role compound" },
   pointer: { anchor: "pronouns.md#role-pointers", summary: "role pointer" },
-  sake: { anchor: "sakes.md#time-horizon-endings-on-met", summary: "sake word" },
+  sake: { anchor: "sakes.md#met", summary: "sake word" },
   scope: { anchor: "predication.md#label-scope", summary: "label scope" },
   lateral: { anchor: "roles.md#viewpoint-laterals", summary: "viewpoint lateral" },
   holder: { anchor: "knowing.md#holder", summary: "holder seam" },
@@ -203,7 +203,7 @@ type OverlayOnlyReading =
 /** Non-overlay readings (an overlay word traces `overlay.*`, not `word.reading.*`). */
 export const WORD_READING_CONSTRUCTIONS: Record<Exclude<LexReading, OverlayOnlyReading>, ConstructionEntry> = {
   ordinary: { anchor: "phonology.md#word-edges", summary: "ordinary content reading" },
-  sake: { anchor: "sakes.md#time-horizon-endings-on-met", summary: "sake reading" },
+  sake: { anchor: "sakes.md#met", summary: "sake reading" },
   ability: { anchor: "intention.md#ability", summary: "ability reading" },
   greeting: { anchor: "x-compounds.md#conversation-length", summary: "conversation-length bid" },
   restrictor: { anchor: "restrictors.md#beginner", summary: "restrictor" },
@@ -332,12 +332,12 @@ const SCOPE_FEATURE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
 
 /** Sakes: each stance vowel, and the endings on it (sakes.md). */
 export const SAKE_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vowel}.${"l" | "m" | "r"}` | "emotion", ConstructionEntry> = {
-  "stance.a": { anchor: "sakes.md#time-horizon-endings-on-met", summary: "met tha" },
+  "stance.a": { anchor: "sakes.md#met", summary: "met tha" },
   "stance.u": { anchor: "sakes.md#unmet-thu-detracts-from-the-sake", summary: "unmet thu" },
   "stance.e": { anchor: "sakes.md#prescription-the-ought-this-act-for-this-sake", summary: "prescription the" },
   "stance.o": { anchor: "sakes.md#motive-tho-time-horizon", summary: "motive tho" },
   "ending.a.l": { anchor: "sakes.md#time-horizon-endings-on-met", summary: "met time horizon -l" },
-  "ending.a.m": { anchor: "sakes.md#time-horizon-endings-on-met", summary: "met time horizon -m" },
+  "ending.a.m": { anchor: "sakes.md#met", summary: "met time horizon -m" },
   "ending.a.r": { anchor: "sakes.md#time-horizon-endings-on-met", summary: "met time horizon -r" },
   "ending.u.l": { anchor: "sakes.md#unmet-thu-detracts-from-the-sake", summary: "unmet -l" },
   "ending.u.m": { anchor: "sakes.md#unmet-thu-detracts-from-the-sake", summary: "unmet -m" },
