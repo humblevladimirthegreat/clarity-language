@@ -1,6 +1,6 @@
 # Spans
 
-When you set wording apart from the rest of the sentence (a quote, a parenthetical, a loan surface), Agazan packages that chunk in a **span**. You write a role letter, then a pair of brackets around the interior. That first letter is the chunk’s role in the outer sentence (subject, object, verb, or adverb). A span is a written form: it has no spoken open or close.
+Some parts of a sentence are not ordinary Agazan words: a quote of what someone said, a word from another language, a comment in parentheses. Agazan sets such a part apart as a **span**: a role letter, then a pair of brackets around the words. The role letter says what the whole bracketed chunk does in the sentence (subject, object, verb, adverb, and so on), so the rest of the sentence reads as usual. A span is written only: speech has no word for its open or close.
 
 ## Beginner {#beginner}
 
@@ -9,9 +9,9 @@ Start with a quote of what someone said.
 ### Cite (`[…]`) {#writing}
 <a id="writing-vs-speech"></a>
 
-A **cite** holds wording you are quoting: what someone said, a title string, or a proverb **as wording**. Write the role letter, then square brackets around the quoted text. (cue: `[…]` like quote marks)
+To quote wording (what someone said, a title, a proverb as words), write the role letter, then square brackets around the quoted words. That span is a **cite**. The whole quote fills one role, so *said “…”* works like *said something*. (cue: `[…]` like quote marks)
 
-Start with one quoted token as the object of *said*. A [greeting](word-endings.md#greeting) is the named citation, so the quoted hello is that same name:
+Start with a one-word quote as the object of *said*. A [greeting](word-endings.md#greeting) is just your own name, so quoting Azawan’s hello means quoting that name:
 
 > `zazawan d[azawan] vezebel.`
 >
@@ -19,14 +19,16 @@ Start with one quoted token as the object of *said*. A [greeting](word-endings.m
 >
 > "Azawan said “Azawan.”" (hello)
 
-The whole `d[azawan]` is the direct object (who or what is acted on). If the interior is Agazan words in a clause, those inner words still start with their own role letters.
+The whole `d[azawan]` is the direct object (who or what is acted on). When the quote is a whole Agazan sentence, each word inside starts with its own role letter, as in any sentence.
 
 ### Exact, paraphrase, proper
 <a id="when-required"></a>
 
 You can mark how faithful the quote is. Put the mark **after** the role letter, before the opening bracket.
 
-Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gist, not the exact words, write **`~`** (`d~[zazawan vezehel]`). When the chunk is the **work** that bears a **multi-word** title (the song, proverb, or book, not the name-string), write **`@`** (`d@[onodan alahen]`). A one-word work or person is ordinary **-n** (`donodan`), not `d@[onodan]`, unless the role letter or the ending is **part of the title** you are packaging. The mark is on the **fence**; words inside keep their usual endings ([titled phrases](word-endings.md#titled-phrases)).
+A span with no mark is **exact**: the words as they were said (`d[azawan]`). Write **`~`** for a **paraphrase**, when you mean the gist, not the exact words (`d~[zazawan vezehel]`). Write **`@`** for a **proper** span: it names a work with a title of several words, such as a song, proverb, or book (`d@[onodan alahen]`). The span then means the work itself, not its title as a string of words.
+
+A work or person with a one-word name is an ordinary **-n** word (`donodan`), not `d@[onodan]`, unless a role letter or an ending is part of the title itself. The mark belongs to the brackets; the words inside keep their usual endings ([titled phrases](word-endings.md#titled-phrases)).
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -56,32 +58,34 @@ Verbatim wording is **exact**: no extra mark (`d[azawan]`). When you mean the gi
 
 ### Opaque and loan words {#loans}
 
-**Opaque** holds a foreign, code, or raw surface that is not ordinary Agazan words. Write the role letter, then angle brackets around that blob. Do not put an extra letter after `>`. Faithfulness uses the same marks as cite: none / **`~`** / **`@`**.
+To use a word from another language, a bit of code, or any spelling that is not Agazan, write the role letter, then angle brackets around it. That span is **opaque**: the inside is taken exactly as spelled and is not read as Agazan words. Write no letter after the closing `>`. The faithfulness marks are the same as on a cite: none, **`~`**, or **`@`**.
 
 > <code>zazawan d&lt;kimchi&gt; vahahal.</code>
 >
 > z-Azawan | d-OPAQUE["kimchi"] | v-see
 >
-> "Azawan saw kimchi." (opaque surface)
+> "Azawan saw kimchi." (a foreign word)
 
-Keep the source’s **casing** inside <code>&lt;&gt;</code> when that writing system uses case (<code>d&lt;NaCl&gt;</code>, <code>d@&lt;iPhone&gt;</code>). Native Agazan letters stay [lowercase](phonology.md#beginner). **`@`** is the proper mark when that blob is a titled name.
+Inside <code>&lt;&gt;</code>, keep the source’s capital letters when its writing system has them (<code>d&lt;NaCl&gt;</code>, <code>d@&lt;iPhone&gt;</code>). Agazan letters outside the brackets are always [lowercase](phonology.md#beginner). Use **`@`** when the bracketed word is a name or title.
 
-When a published Agazan root already matches, write the ordinary word (`dagadul`, not a fence).
+When the lexicon already has a matching root, write the ordinary word (`dagadul`), not a span.
 
-A span is an ordinary noun for a [role pointer](pronouns.md#role-pointers): `duxar` is that span again, and `duxal` is [another one](pronouns.md#a-new-one) of what the span holds.
+A [role pointer](pronouns.md#role-pointers) treats a span like any noun: `duxar` is that span again, and `duxal` is [another one](pronouns.md#a-new-one) of what the span holds.
 
-Outside a clause, a foreign name or word is a prefix-less fence with the same marks: [citation forms](word-endings.md#citation-forms) (<code>@&lt;Sam&gt;</code>). A span in a sentence still takes a role letter, because it fills a sentence slot (<code>z@&lt;Sam&gt;</code>).
+On its own, outside a sentence, a foreign name or word is written with no role letter: just the marks and the brackets (<code>@&lt;Sam&gt;</code>), like other [citation forms](word-endings.md#citation-forms). In a sentence the span fills a role, so it takes a role letter (<code>z@&lt;Sam&gt;</code>).
 
 ### Calls and reactions (`/y/`) {#y-spans}
 
-Under `/y/`, a span calls someone or reacts, so only an opaque <code>&lt;…&gt;</code> or a cite `[…]` goes there, and it opens the turn, before the act word. The **`@`** mark decides the job, as **-n** does on a native word: a named span calls that person (<code>y@&lt;Sam&gt;</code>, *Sam!*; with **`~`**, <code>y~@&lt;Sam&gt;</code>, by a name you are not sure of), and a span without **`@`** is a foreign [interjection](speech-moves.md#interjections) (<code>y&lt;Amen&gt;</code>, *Amen!*), exact or given as the gist with **`~`** (<code>y~&lt;Amen&gt;</code>). A mention talks about a word and an aside `(…)` comments on the sentence, so neither one calls or reacts: there is no `/y/` mention or aside.
+To call someone by a foreign name (*Sam!*) or react with a foreign word (*Amen!*), put a span under `/y/`. Only an opaque <code>&lt;…&gt;</code> or a cite `[…]` goes there, and it opens the turn, before the act word.
+
+The **`@`** mark decides which, as **-n** does on a native word. With **`@`**, the span calls that person (<code>y@&lt;Sam&gt;</code>, *Sam!*); add **`~`** for a name you are not sure of (<code>y~@&lt;Sam&gt;</code>). Without **`@`**, the span is a foreign [interjection](speech-moves.md#interjections) (<code>y&lt;Amen&gt;</code>, *Amen!*), exact or given as the gist with **`~`** (<code>y~&lt;Amen&gt;</code>).
 
 ### Asides (`th(…)`)
 <a id="asides"></a>
 
-An **aside** is a parenthetical comment. Package it as a [stance](clause.md#stance-th) word: write **`th(`** … **`)`**. Round parentheses mark the side comment. The fence may sit anywhere a stance word may sit.
+To add a side comment in parentheses, write **`th(`** … **`)`**. That span is an **aside**. The `th` makes it a [stance](clause.md#stance-th) word, so it may sit anywhere a stance word may sit. (cue: round parentheses, as in English)
 
-The interior is ordinary Agazan: a fragment, or a clause body that keeps the **same speech act** as the outer sentence (the same statement, question, or command).
+The inside is ordinary Agazan: a fragment, or a clause with the **same speech act** as the outer sentence (both statements, both questions, or both commands). An aside comments on the sentence; it does not call anyone or react, so it never goes under `/y/`.
 
 > `zazawan vowogal th(hagawal).`
 >
@@ -103,7 +107,7 @@ A one-word manner with nothing to package is a plain adverb: `zazawan vowogal ha
 
 ### Outer slot {#pos}
 
-The letter before the bracket is the role of the **entire span** in the outer sentence. Ask what that chunk is doing out there: object of *said*, subject of *is small*, and so on. A cite can be the **verb** when you echo the act as wording:
+A span can fill any role a word can, not only the object. The letter before the bracket is the role of the **whole span** in the outer sentence, so ask what that chunk does there: the object of *said*, the subject of *is small*, and so on. A cite can even be the **verb**, when you echo an act as wording:
 
 > `yul zalahen v[vazadal].`
 >
@@ -123,7 +127,7 @@ The letter before the bracket is the role of the **entire span** in the outer se
 
 Only an aside goes under `/th/`, and every other span fills a content slot: `/z/` `/d/` `/b/` `/v/` `/ɡ/` `/h/`. A degree word (`/w/`) is never a span.
 
-An opaque span in a verb, adjective or adverb slot is a **loan word**: the role letter says what part of speech the foreign word plays, and the blob keeps its own spelling.
+To use a foreign verb, adjective, or adverb (*googled*, *rouge*), put an opaque span in that slot. That is a **loan word**: the role letter says how the foreign word is used, and the inside keeps its own spelling.
 
 > <code>zalahen v&lt;google&gt; dazawan.</code>
 >
@@ -143,7 +147,7 @@ An opaque span in a verb, adjective or adverb slot is a **loan word**: the role 
 >
 > "Azawan tells Sam." (a foreign name as the recipient)
 
-If the interior is Agazan words, those inner words still start with **their** role letters.
+The letter before the bracket belongs to the whole span. Agazan words inside a cite start with **their own** role letters.
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -197,7 +201,7 @@ z-Alahen | d-CITE.about[z-Azawan | v-sing] | v-write
 z-Azawan | d-NAME.CITE[Onodan | Alahen] | v-sing
 :::
 
-**4.** *Azawan saw kimchi.* (foreign surface)
+**4.** *Azawan saw kimchi.* (a foreign word)
 
 ::: details Show answer
 <code>zazawan d&lt;kimchi&gt; vahahal.</code>
@@ -261,7 +265,7 @@ z-Alahen | v-OPAQUE["google"] | d-Azawan
 
 z-Alahen | d-OPAQUE["kimchi"] | v-see
 
-*Alahen saw kimchi.* (opaque surface)
+*Alahen saw kimchi.* (a foreign word)
 :::
 
 **2.** `zahaben d~[zalahen vezehel] varadal.`
@@ -346,13 +350,13 @@ z-Azawan | b-NAME.OPAQUE["Sam"] | v-tell
 
 ### Written only {#written-only}
 
-A span has **no spoken form**: there is no open word, no close word, and no spoken resume for it. Read aloud, you say the words inside the span and the marks as words.
+A span has **no spoken form**: there is no word for its open or close, and no spoken resume for it. When you read a span aloud, you say the words inside it, and say its marks as words.
 
-`[…]` and <code>&lt;…&gt;</code> are **one span** in every other way: the same role letters, the same slots, the same **`~`** / **`@`** marks, the same topic and `/y/` rules. The only difference is whether the parser reads the inside. Use `[…]` when the inside is Agazan, and <code>&lt;…&gt;</code> when it is foreign, code, or a name you do not want read. A mention marker (`glelel`) goes before either one.
+Apart from what is inside, `[…]` and <code>&lt;…&gt;</code> work the same way: the same role letters, the same slots, the same **`~`** / **`@`** marks, the same topic and `/y/` rules. The one difference is whether the inside is read as Agazan. Use `[…]` when the inside is Agazan, and <code>&lt;…&gt;</code> when it is foreign, code, or a name you do not want read as Agazan.
 
 ### Mention {#mention}
 
-A **mention** talks about a **word or phrase as that spelling**, not a quote of speech. Put the **mention marker** before the span. The marker is a [left-bound adjective](clause.md#left-bound-adjectives), so a listener hears *this is a word as spelling* before the whole span arrives. English says *the word …* or *the phrase …* and keeps the Agazan interior (`odoga`, not *dog*). To quote what someone said, use [cite](#writing).
+To talk about a word or phrase itself, as a spelling (*the word “odoga” is small*), put the **mention marker** before a span. That is a **mention**: it is about the letters, not what they mean, and not a quote of what someone said (for that, use a [cite](#writing)). The marker is a [left-bound adjective](clause.md#left-bound-adjectives), so a listener hears *this is a word as spelling* before the span arrives. In English, write *the word …* or *the phrase …* and keep the Agazan spelling (`odoga`, not *dog*).
 
 The marker is the *letters* root `ele` as a `gl-` adjective, on **-l** (`glelel`) or **-n** (`glelen`). (cue: 🔤 a word is its letters)
 
@@ -375,7 +379,7 @@ The span itself is an ordinary [opaque](#loans) <code>&lt;…&gt;</code> (or a c
 >
 > "The phrase “zazawan vezehel” is small."
 
-With **-n** the mention is the **name** (the title-string you could rename), even as **one word**: <code>glelen d&lt;onodan&gt;</code> is not `donodan`. A cite with **`@`** is the **work**; that span is for a **multi-word** title (`d@[onodan alahen]`). One-word *Onodan* as the work is ordinary **-n** (`donodan`).
+With **-n**, the mention is a **name** as spelling (the title, which could be changed), even when it is **one word**: <code>glelen d&lt;onodan&gt;</code> is not `donodan`. A cite with **`@`** is the **work**, and that span is for a title of **several words** (`d@[onodan alahen]`). The one-word *Onodan* as the work is an ordinary **-n** word (`donodan`).
 
 > `zazawan d@[onodan alahen] vogozam.`
 >
@@ -391,7 +395,7 @@ With **-n** the mention is the **name** (the title-string you could rename), eve
 
 **Compare with:** `donodan` is *Onodan* (the work or person). <code>glelen d&lt;onodan&gt;</code> is only the **name**.
 
-The marker is read only when it stands **directly before a span**. Anywhere else the same spelling is the ordinary adjective *lettered*. A mention marker does not go under `/y/` (a call or a reaction is not about a spelling), and `/w/` grades a `/ɡ/`, `/h/` or `/th/` word, never a noun, so it is not a marker either.
+The marker is read as a marker only when it stands **directly before a span**. Anywhere else the same spelling is the ordinary adjective *lettered*. A mention marker does not go under `/y/`: a call or a reaction is not about a spelling. A `/w/` word is never a marker either, because `/w/` grades a `/ɡ/`, `/h/`, or `/th/` word, never a noun.
 
 A marker before a [topic span](#topic-quotes) works the same way:
 
@@ -403,7 +407,7 @@ A marker before a [topic span](#topic-quotes) works the same way:
 
 ### A span is an ordinary noun {#span-noun}
 
-A span fills a role slot and anchors [role pointers](pronouns.md#role-pointers) for that role like any noun. After a cite, `duxar` is *that quote*: the latest thing done to.
+A span fills a role like any noun, so a [role pointer](pronouns.md#role-pointers) for that role can point back to it. After a cite, `duxar` is *that quote*: the latest thing done to.
 
 > `zalahen d[azawan] vezebel. zahaben duxar vahahal.`
 >
@@ -411,13 +415,13 @@ A span fills a role slot and anchors [role pointers](pronouns.md#role-pointers) 
 >
 > "Alahen said “Azawan.” Ahaben saw that."
 
-An aside adds no anchors. Names inside a cite or an aside never count toward an [ordinal](pronouns.md#ordinal-pronouns) outside it, and a pointer never reaches into one.
+An aside gives role pointers nothing to point back to. Names inside a cite or an aside never count toward an [ordinal](pronouns.md#ordinal-pronouns) outside it, and a pointer outside never reaches a word inside one.
 
-A span in a `/v/` slot (`v[vazadal]`) has no resume pronoun, and this page deliberately defines none.
+A span in a `/v/` slot (`v[vazadal]`) has no resume pronoun.
 
 ### One of a title (`^@`) {#one-of-a-title}
 
-A span with **`@`** names the work or product itself: <code>d@&lt;iPhone&gt;</code> is the iPhone as a product. For one thing that name applies to (one phone, one copy of a book, one performance of a song), write **`^@`** in the mark slot instead. It is the span's form of the [**-ln**](word-endings.md#name-instance--ln) ending, and like **-ln** it brings a new thing into the talk. (cue: **^** points up to the name the thing falls under)
+A span with **`@`** names the work or product itself: <code>d@&lt;iPhone&gt;</code> is the iPhone as a product. For one thing that name applies to (one phone, one copy of a book, one performance of a song), write **`^@`** in the mark slot instead. It is the span's form of the [**-ln**](word-endings.md#name-instance--ln) ending, and like **-ln** it brings a new thing into the conversation. (cue: **^** points up to the name the thing falls under)
 
 > <code>zalahen d^@&lt;iPhone&gt; vahahal.</code>
 >
@@ -445,11 +449,13 @@ A quoted question or command keeps its own [act word](speech-moves.md#speech-act
 
 ### Topics in a quote {#topic-quotes}
 
-A cite is someone else's talk, so a [topic](pronouns.md#topic) never carries into it or out of it. The inside of a cite starts with no topic, counts [ordinals](pronouns.md#ordinal-pronouns) and anchors [role pointers](pronouns.md#role-pointers) from scratch, and may open with a topic word of its own. Your own topic and count are untouched when the cite ends. A cite or opaque span under `/x/` is a topic word: a titled work, a word as spelling (with the mention marker before it), or a foreign name.
+A cite holds someone else's words, so a [topic](pronouns.md#topic) never carries into it or out of it. The inside of a cite starts with no topic, starts its own count for [ordinals](pronouns.md#ordinal-pronouns) and its own targets for [role pointers](pronouns.md#role-pointers), and may open with a topic word of its own. When the cite ends, your own topic and count are as they were.
 
-> `x@[onodan alahen] zozan vezehel.`
+A cite or opaque span can also be a topic word itself, under `/x/`: a titled work, a word as spelling (with the mention marker before it), or a foreign name.
+
+> `x@[onodan alahen] dozan vezehel.`
 >
-> x-NAME.CITE[Onodan | Alahen] | z-TOPIC | v-sing
+> x-NAME.CITE[Onodan | Alahen] | d-TOPIC | v-sing
 >
 > "Now, about Onodan Alahen: it is sung."
 
@@ -468,7 +474,7 @@ A **-r** inside a cite cannot find a word outside it: the quoted words were said
 
 ### Scope islands {#scope-islands}
 
-Sometimes *possibility* or a join should apply only to a multi-word chunk, not the whole clause. Braces **`{ … }`** mark that chunk. They are the only use of braces. Speech has no open or close word for those edges: you hear a pause and one tight phrase. The binder **inside** does the work.
+Sometimes a word like *possibly*, or a join, should apply to only part of the sentence, a chunk of several words, not the whole clause. Put that chunk in braces **`{ … }`**, with the word that applies to it **inside**. That word is the island’s **binder**: it reaches only what the braces hold. Braces have no other use. Speech has no word for the edges: you hear a pause, then one tight phrase.
 
 > `zazawan { hegewem zodogal geredal } vahahal.`
 >
@@ -527,7 +533,7 @@ An island can hold part of a phrase. Here only *not small* is grouped, so **`gul
 >
 > "A dog that is red and not small walks."
 
-**Speech:** brief reset into the island, one tight phrase, boundary on the last island stress. In singing, use an ordinary phrase bow. Because an island never runs past one phrase, a listener who misses the closing pause is off by at most part of that phrase.
+**Speech:** reset your pitch briefly as the island starts, say it as one tight phrase, and pause after its last stressed syllable. In singing, shape it like any other phrase. Because an island never runs past one phrase, a listener who misses the closing pause is off by at most part of that phrase.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>
@@ -752,7 +758,7 @@ z-Azawan | d-NAME.OPAQUE.instance["iPhone"] | v-see
 
 ### Editorial close and close-all {#close-forms-complete-editorial-close-all}
 
-A span closes whole with its closing bracket. Two written marks go **inside** the closing bracket. **`#`** keeps the wording as written but marks that the span is cut off, trails off, or is defective. **`|`** closes every span still open around it at once.
+A closing bracket normally ends one span, with its wording complete. Two written marks, placed just **inside** the closing bracket, change that. **`#`** keeps the wording as written but shows that it is cut off, trails off, or is faulty (*Azawan said “bug…”*). **`|`** closes every span still open around it at once.
 
 > `zazawan d[abogam#] vezebel.`
 >

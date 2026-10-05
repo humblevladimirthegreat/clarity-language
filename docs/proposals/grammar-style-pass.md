@@ -68,7 +68,7 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - [x] **Batch 2.7:** `questions` (5.2k)
 - [x] **Batch 2.8:** `hooks` (7.7k)
 - [x] **Batch 2.9:** `restrictors` (3.3k), `relations` (5.4k)
-- [ ] **Batch 2.10:** `spans` (4.6k)
+- [x] **Batch 2.10:** `spans` (4.6k)
 - [ ] **Batch 2.11:** `numbers` (10.9k)
 - [ ] **Batch 2.12:** `comparatives` (5.5k), `causation` (2.9k)
 - [ ] **Batch 2.13:** `sakes` (9.4k)
@@ -215,6 +215,17 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - Resolved after review: the *as-of* `/b/` list now says what extra-noun **-r** looks like on a date (`=`, so `b=_#22,7` is *that 22 July again*) and points at the example that uses it. No form changed.
 - Resolved after review: `restrictors` Intermediate Agazan → English #9 (`hazahol huem`) answered *would rather not climb when there is ice*. It now reads *Alahen climbs as a last resort when there is ice, among other occasions*, matching the table.
 - `say-amounts.md` (out of scope) links `restrictors.md#sometimes--anytime--some-other-time` with a double dash; the build accepts it, so no change.
+
+### 2026-10-05: Batch 2.10 (`spans`)
+
+- **Beginner:** the page lead now names the three kinds of chunk first (a quote, a foreign word, a comment in parentheses), then the shape, then what the role letter does; *packages* and *loan surface* are gone. Cite lead is job-first and says the quote fills one role; *quoted token* and "the greeting is the named citation" became "a greeting is just your own name". The exact / paraphrase / proper paragraph is split in two, glosses each mark in plain words, and drops *fence*, *name-string*, and *packaging*. Opaque lead is job-first; *surface*, *blob*, *casing*, and *fence* replaced, and the checkpoint / example notes *(opaque surface)* / *(foreign surface)* now read *(a foreign word)*. The prefix-less citation sentence says "no role letter" instead of *prefix-less fence*. Calls and reactions split into job + shape and an **`@`** / no-**`@`** paragraph; its closing sentence previewed *mention* (Intermediate), so the aside half moved into Asides and the mention half was already in Mention. Asides lead is job-first, cue last. Outer slot lead says a span can fill any role; loan-word lead is job-first. The duplicated "inner words still start with their role letters" line under Outer slot now separates the span's letter from the inner letters.
+- **Intermediate:** Written only no longer says *the parser reads the inside*, and drops its preview of the mention marker (the next H3). Mention lead is job-first; *Agazan interior*, *title-string*, and the long **`/w/`** sentence reworded. *anchors role pointers*, *adds no anchors*, and the owner fence "this page deliberately defines none" replaced. *the talk* → *the conversation*. Topics in a quote: *someone else's talk*, *from scratch*, *untouched* reworded, and the `/x/` topic-span sentence is its own paragraph. Scope islands lead now glosses *binder* in the lead (it was used undefined in the bullets and table). The **Speech** line is full sentences; the unglossed *phrase bow* is gone.
+- **Advanced:** Editorial close lead says what a plain closing bracket does before the two marks, and gives the English job (*said “bug…”*).
+
+**Deferred / kept:**
+- Beginner forward links kept as inventory: [left-bound adjective] (`clause`, earlier), the [role pointer] / [another one] sentence in Opaque (it repeats the Intermediate *A span is an ordinary noun* H3; Phase 3 can decide whether Beginner needs it), and the scope-islands links to `joins` and `hooks`.
+- Scope islands example translation *Azawan and (just Alahen) saw ….* keeps its trailing ellipsis (quoted translation).
+- Resolved after review: the Topics in a quote example `x@[onodan alahen] zozan vezehel.` (topic as subject) was translated *it is sung*. It is now `x@[onodan alahen] dozan vezehel.` (morph `d-TOPIC`), so the topic is what gets sung. The parser tests that use the old string only check parsing, so they are unchanged.
 
 ## Questions for the editor
 
