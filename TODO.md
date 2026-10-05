@@ -11,7 +11,6 @@ use [skip-cd] for amplify to not deploy.
 -buy domain
 -flash cards for claritish
 -claritish editor
--review unassigned with competing intuitive readings
 -agazan introduction should mention grammar reusability
 -prosody
 -consider Promoting common non-nouns and compound-word parts to be three letter. 

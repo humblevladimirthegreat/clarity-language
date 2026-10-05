@@ -57,6 +57,25 @@ export default defineConfig({
     ],
     sidebar: [
       {
+        text: 'Claritish: Agazan in English',
+        collapsed: true,
+        items: [
+          { text: 'Introduction', link: '/claritish/' },
+          { text: '1. How sure are you?', link: '/claritish/could-be' },
+          { text: '2. How do you know?', link: '/claritish/how-you-know' },
+          { text: '3. Labels', link: '/claritish/labels' },
+          { text: '4. Thanks and sorry', link: '/claritish/thanks-and-sorry' },
+          { text: '5. Allowed, required, agreed', link: '/claritish/allowed-required-agreed' },
+          { text: '6. Oughts and motives', link: '/claritish/oughts-and-motives' },
+          { text: '7. Wants and plans', link: '/claritish/wants-and-plans' },
+          { text: '8. Decisions and tries', link: '/claritish/decisions-and-tries' },
+          { text: '9. Not yet', link: '/claritish/not-yet' },
+          { text: '10. Feelings in three parts', link: '/claritish/feelings' },
+          { text: 'Bonus: Tone marks', link: '/claritish/tone-marks' },
+          { text: 'Learn the full language', link: '/claritish/learn-agazan' },
+        ],
+      },
+      {
         text: 'Suggested reading order',
         items: readingOrder,
       },
@@ -69,21 +88,6 @@ export default defineConfig({
           { text: 'Reasons, knowledge and plans', link: '/say-reasons' },
           { text: 'Asking and answering', link: '/say-questions' },
           { text: 'Tense and modals', link: '/say-tense' },
-        ],
-      },
-      {
-        text: 'Claritish: Agazan in English',
-        items: [
-          { text: 'Introduction', link: '/claritish/' },
-          { text: '1. How sure are you?', link: '/claritish/could-be' },
-          { text: '2. How do you know?', link: '/claritish/how-you-know' },
-          { text: '3. Labels', link: '/claritish/labels' },
-          { text: '4. Thanks and sorry', link: '/claritish/thanks-and-sorry' },
-          { text: '5. Allowed, required, agreed', link: '/claritish/allowed-required-agreed' },
-          { text: '6. Decisions and tries', link: '/claritish/decisions-and-tries' },
-          { text: '7. Feelings in three parts', link: '/claritish/feelings' },
-          { text: 'Bonus: Tone marks', link: '/claritish/tone-marks' },
-          { text: 'Learn the full language', link: '/claritish/learn-agazan' },
         ],
       },
       {

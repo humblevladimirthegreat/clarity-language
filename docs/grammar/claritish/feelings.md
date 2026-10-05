@@ -1,4 +1,4 @@
-# Lesson 7: Feelings in three parts {#feelings}
+# Lesson 10: Feelings in three parts {#feelings}
 
 ## The gap {#gap}
 

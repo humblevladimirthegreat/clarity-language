@@ -45,7 +45,7 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 - **Long menus say they are menus.** A locus or channel inventory is followed by *you don't need to memorize it*.
 - **Say when to leave it out.** Every lesson marks at least one place the drop-in is unnecessary, and none of them implies that plain English is a mistake: *none of the three is the "right" one*; *leave the suffix off when the scope doesn't matter*.
 - **Rule out the near miss.** Where the obvious English reading is wrong, deny it in one short sentence (*motion is not strength*).
-- **Endings** are the settled-to-passing scale, with the cue **-l ≈ lasting, -r ≈ right now**, and each lesson notes when the scale comes back. Lesson 5 grades the source instead.
+- **Endings** are the settled-to-passing scale, with the cue **-l ≈ lasting, -r ≈ right now**, and each lesson notes when the scale comes back. Lesson 5 grades the source instead, as do Lesson 6's prescription endings (invited / offered / trial).
 - **Pronunciation** is taught once, in Lesson 1, in English keywords. Later lessons do not repeat it.
 
 ## The hyphenated English host

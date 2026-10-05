@@ -1,4 +1,4 @@
-# Lesson 6: Decisions and tries {#decisions-and-tries}
+# Lesson 8: Decisions and tries {#decisions-and-tries}
 
 ## The gap {#gap}
 
