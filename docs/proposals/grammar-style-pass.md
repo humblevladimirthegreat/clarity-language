@@ -92,7 +92,7 @@ Four batches, one per session. Phase 3 sessions do **not** read whole pages: the
   - Each term is glossed at its **first** use along the path. Move or add the gloss when it comes late. Later pages may give a short reminder, but do not re-gloss at length.
   - The same idea uses the same plain-English wording across pages. Check at least: *role letter*, statement vs question vs command, *ending* / *PoS letter*, *turn*, *topic*, and the open vs closed join pair. Pick the wording used where the term is first taught and align the later pages to it.
   - If the inventory is too large for one session, split it at `questions` (pages up to and including it, then the rest) and note the split in the log.
-- [ ] **Batch 3.3: deferred judgment items from the batch log**
+- [x] **Batch 3.3: deferred judgment items from the batch log**
   - Work through every **Deferred / kept** entry that names Phase 3 (search this file for "Phase 3"). For each one, decide keep, cut, or reword, and log the decision.
   - Forward-preview links: keep a link only when it answers something a learner will try on that page; otherwise cut it or turn it into an unlinked plain mention ([teach now; don't preview later](../meta/grammar-docs.md#teach-now-dont-preview-later)).
   - Structural moves: the SHARED H3 in `joins` (Invert and Respectively use it before it is taught), the shorthand H3 in `numbers` (tables use the shorthand before it is explained), the hook-compound sentence in `phonology` (move to `hooks`?), and the verb-pair example in `hooks` Parallel chains. Keep anchors when moving sections.
@@ -425,6 +425,38 @@ The inventory came from a script that walks the path in order: `why-agazan`, `in
 - *Host*: kept for the `/ɡ/` / `/h/` / `/th/` word whose `/b/` completes it (and the word a `/w/` sits before). Other senses are reworded: `plurality` *host set* / *host map* → *plural noun or list* / *the words that take it*; `sakes` *every host* → *every placement*, *activity host* → *activity*; `numbers-applied` *on a host* → *after a noun*; `numeric-derivation` join row → "the root's everyday sense / its abstract sense".
 - *telos* in two `numbers` Advanced table cells → *final-place* / *last place*, matching Batch 2.18.
 - *vowel series* (`pronouns` role-pointer cue; never taught under that name) → "the add / pick / order / undo cues of the act words".
+
+`npm run build` passes. No grammar questions came up.
+
+### 2026-10-05: Batch 3.3 (deferred judgment items)
+
+Worked through every **Deferred / kept** entry that names Phase 3, plus the four structural moves. One rule decided most link calls: Intermediate comes after **every** Beginner page on the path, so a link from an Intermediate section to another page's Beginner points back, not forward.
+
+| Item | Decision |
+|------|----------|
+| `phonology` Phonotactics: hook-compound syllable sentence | **Cut.** `hooks` Hook compounds already says the same thing (*the ending starts the hook's syllable, so no consonant closes a syllable mid-word*). Nothing needed to move. |
+| `speech-moves` Call someone: [role compound] pointer | **Kept.** The lead itself offers *Waiter!* / *Doctor!*, which have no root, so the pointer answers what the learner tries there. Checked: the usual-role form cannot be a call (`yaxedehothen` is rejected, since label scope never goes on `/y/`), so the plain role compound is the right target. |
+| `pronouns` Role pointers: [topic change] link | **Unlinked.** The limit is part of the rule and is glossed in place (*an `/x/` word that says what the talk is about from here on*), but nobody sets a topic on a Beginner page. The Intermediate heading is enough. |
+| `pronouns` Role pointers: associative **-x** sentence | **Kept.** `plurality` is the same path step (8), and the sentence states what a pointer accepts. |
+| `pronouns` Asking about the topic: *which X* / join blank | **Reworded.** `zar` is Beginner (`joins`, `questions`), so the shape was not a preview, but *which X shape* is a `questions` Intermediate label. Now "ask *which topic?*: the fill-ask blank `zar`, then `gahehom` *topic*". |
+| `predication` Existence: *someone's* / *every K* / kind-itself pointers | **Cut** (the "Later, …" sentence). `hooks` Whose, `joins` Universals, and `joins` The kind itself each say the `/ɡ/` is a property claim, not *there is …*, where they teach the form. |
+| `predication` Existence: extra-noun *where* pointer | **Moved** to `hooks` Extra noun, which never said it. New paragraph plus example `zodogal al bahazal.` (*There is a dog in a house*), linking back to existence. Parses, no ambiguity. |
+| `joins` Universals: [role compound] for *whoever* | **Kept.** `roles` Beginner precedes `joins` Intermediate. |
+| `joins` Universals: [channel] (`knowing` Advanced) | **Cut.** It previewed a later peer's Advanced stage, and `knowing` Channels on a generalization already links back to `zual` / `zuam`. |
+| `joins` Universals: [cause] note on `zuan` | **Kept.** `causation` Beginner precedes `joins` Intermediate. |
+| `joins` SHARED H3 | **Moved** to the top of Intermediate, before Rank joins, with its anchors. Rank joins (adjective after the tie grades the whole list), Invert, Sequence, Respectively, the inventories, and Universals all use SHARED. The in-place gloss in Invert is now a short link. Its table still names `ue` / `oe` / `ua` / `uo` ahead of their H3s; that is an inventory table. |
+| `questions` forward links | **All kept.** `sakes`, `relations`, `causation`, and `hooks` Beginner precede `questions` Intermediate. The rest each answer a question form the learner tries in that very section: *how many?* (Fill-ask), *if* vs *whether* (Embedded *whether*), *anytime?* (When?), *with what?* (How?), and `thar` (Why?). |
+| `hooks` Parallel chains: verb-pair example | **Moved** to Beginner Instead (`ol`), after a sentence saying A and B can play any role, as long as both play the same one. Rewritten as `zazawan varahal ol vowogal.` (*Azawan walks instead of running*): a subject makes the translation a statement rather than a command, and closed `ol` replaces open `om`, which is not taught until the next H3. |
+| `relations` Like: [social ties] / [kin] parenthetical | **Unlinked** ("Every hosted relation follows this rule."). Social relations and `numbers-applied` Kin each restate the joined-subject rule. |
+| `relations` Proxy: *exclusively for* join-relation | **Cut** from the Compare-with. No learner reaches for proxy to say *exclusively for*, and the beat was one sibling too many. |
+| `relations` Social relations: [role compound]; As-of links | **Kept.** Both point earlier on the path. |
+| `spans` Opaque: role pointer / [another one] sentence | **Moved** into Intermediate *A span is an ordinary noun*, which already taught `duxar`. Only the `duxal` half was new: "The same holds for a loan word or any other span, and `duxal` is another one of what the span holds." |
+| `spans` scope-island links | **Kept.** They now sit in Intermediate Scope islands. `hooks` Spans points earlier; `joins` Scope islands is the page that owns joins inside an island. |
+| `numbers` shorthand H3 | **Kept in place.** Tried moving it after Word shape. The build's learning-order check then flagged 8 constructions (`_` / `-` markers, `~` / `@` / `=` marks, exponent, bare OoM, groups) used before their home sections, because its tables summarize the whole Intermediate series. Reverted. The earlier tables explain themselves: Marker vowel shows each symbol in parentheses, Number endings has Written / Spoken columns, and Word shape introduces the shorthand (`g+12`) before the first table. |
+| `x-compounds` Two roots, one word: three contrast beats | **Cut to two.** The "two people stay two words" beat repeated the One thing or two? table (`zazawaxalahen`, *a hammer and a wrench*). The mid-word **`th`** beat keeps its real sibling (sakes `gulothal`, same path step) and drops the label-scope and viewpoint-laterals previews. `phonology` Phonotactics still lists all three seam uses. |
+| `x-compounds` Words you look up: [hook compound] pointer | **Cut.** It previewed `hooks` Advanced, and See also already lists it. |
+
+Deferred entries that did not name Phase 3 were left as their batches decided.
 
 `npm run build` passes. No grammar questions came up.
 

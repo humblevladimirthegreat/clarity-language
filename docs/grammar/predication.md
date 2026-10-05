@@ -82,9 +82,7 @@ The same holds with a `/ɡ/` word after the noun, when the noun is new: a common
 >
 > "There is a big dog."
 
-With a name or a resumed noun, the listener already knows the thing, so the `/ɡ/` word is a [property](#classification-property): `zazawan gamadam.` is *Azawan is challenging*, and `zodogar gelavam.` is *The dog is big*. Later, a noun marked as [someone's](hooks.md#genitive) counts as known too, so *my dog is big* is a property claim as well. So does [*every K*](joins.md#universals-domains-generics): *every fire is hot* is a property claim, not *there is a hot fire*. The same holds for [the kind itself](joins.md#kind-reference).
-
-Later, an extra-noun [hook](hooks.md#extra-noun) after the noun can say **where** the thing is.
+With a name or a resumed noun, the listener already knows the thing, so the `/ɡ/` word is a [property](#classification-property): `zazawan gamadam.` is *Azawan is challenging*, and `zodogar gelavam.` is *The dog is big*.
 
 An object (`/d/`) needs a verb, so a noun plus a `/d/` word with no verb is not a sentence.
 

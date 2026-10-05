@@ -87,7 +87,7 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` |
 | Backward stand-in **`-rth`** | [pointing back](dependents.md#stand-in-back) | word-final coda `rth`; the only word-final `th` |
 
-A syllable ends with a consonant only at the **end of the word**. In a fused extra-noun [hook compound](hooks.md#hook-compounds), the cited **-l** / **-m** starts the hook's syllable, because the hook begins with a vowel. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubuhel`: prefix `z`, root `ubuhe`, ending `-l`). Each spelling has only one pronunciation. Writing does not mark stress. Musical rhythm may still place emphasis.
+A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubuhel`: prefix `z`, root `ubuhe`, ending `-l`). Each spelling has only one pronunciation. Writing does not mark stress. Musical rhythm may still place emphasis.
 
 **Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 

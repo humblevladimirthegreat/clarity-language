@@ -83,7 +83,7 @@ A sentence with nobody in that part does not count. *It rains* has no doer, so `
 >
 > "Azawan walks. It rains. They sit."
 
-A pointer looks back as far as it needs to: across turns and paragraphs, and through what other speakers said. Only a [topic change](#topic-resets) (an `/x/` word that says what the talk is about from here on) stops it. Only sentences count, not nouns that name an event: a storm named as a noun gives a pointer no doer to find.
+A pointer looks back as far as it needs to: across turns and paragraphs, and through what other speakers said. Only a topic change (an `/x/` word that says what the talk is about from here on) stops it. Only sentences count, not nouns that name an event: a storm named as a noun gives a pointer no doer to find.
 
 A pointer takes [associative **-x**](plurality.md#associative) like a name. If no earlier sentence has someone in that part, the pointer points at nothing, and the whole thing is not a sentence.
 
@@ -758,7 +758,7 @@ A quote is someone else's talk, so it keeps its own topic and its own ordinal co
 
 ### Asking about the topic {#topic-question}
 
-To ask what the talk is about, use the *which X* shape: the join blank `zar` with `gahehom` *topic* after it. The natural answer is a lone `/x/` introduce or return, which sets the topic for both speakers.
+To ask what the talk is about, ask *which topic?*: the fill-ask blank `zar`, then `gahehom` *topic*. The natural answer is a lone `/x/` introduce or return, which sets the topic for both speakers.
 
 > `yol zar gahehom.`
 >

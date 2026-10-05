@@ -70,8 +70,6 @@ Inside <code>&lt;&gt;</code>, keep the source’s capital letters when its writi
 
 When the lexicon already has a matching root, write the ordinary word (`dagadul`), not a span.
 
-A [role pointer](pronouns.md#role-pointers) treats a span like any noun: `duxar` is that span again, and `duxal` is [another one](pronouns.md#a-new-one) of what the span holds.
-
 On its own, outside a sentence, a foreign name or word is written with no role letter: just the marks and the brackets (<code>@&lt;Sam&gt;</code>), like other [citation forms](word-endings.md#citation-forms). In a sentence the span fills a role, so it takes a role letter (<code>z@&lt;Sam&gt;</code>).
 
 ### Calls and reactions (`/y/`) {#y-spans}
@@ -414,6 +412,8 @@ A span fills a role like any noun, so a [role pointer](pronouns.md#role-pointers
 > z-Alahen | d-CITE[Azawan] | v-tell . z-Ahaben | d-←patient.same | v-see
 >
 > "Alahen said “Azawan.” Ahaben saw that."
+
+The same holds for a loan word or any other span, and `duxal` is [another one](pronouns.md#a-new-one) of what the span holds.
 
 An aside gives role pointers nothing to point back to. Names inside a cite or an aside never count toward an [ordinal](pronouns.md#ordinal-pronouns) outside it, and a pointer outside never reaches a word inside one.
 

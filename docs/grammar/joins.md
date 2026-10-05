@@ -452,6 +452,62 @@ z-everything-but
 
 ## Intermediate {#intermediate}
 
+### SHARED after the join
+<a id="scope-fence-p-join"></a>
+
+When an adjective or extra noun is meant for the **whole list** (*both challenging*, *Azawan's dog and cat*), write it **immediately after** the join. Material in that spot is called SHARED: it describes each member of the list. A modifier that belongs to one item only stays on that item (after its head, or `gl-` before it).
+
+> `zodogal zagadul zal gamadam.`
+>
+> [z-dog | z-cat | z-and | g-challenge]
+>
+> "(challenging dog) and (challenging cat)."
+
+A hook belongs to one item the same way. Put the hook and its `/b/` right after that item, before the join word: **`em`** plus a resume gives *Azawan and his dog*.
+
+> `zazawan zodogal em bazawar zal vowogal.`
+>
+> [z-Azawan | [z-dog | [used-by | b-←Azawan]] | z-and] | v-walk
+>
+> "Azawan and his dog walk."
+
+Only the item just before the join word takes a hook this way. A hook anywhere else in the clause is an extra noun of the clause.
+
+> `zodogal zagadul zam gegabem bazawan.`
+>
+> [z-dog | z-cat | z-and.open | [g-ownership | b-Azawan]]
+>
+> "Azawan's dog and cat (and possibly more)."
+
+A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaining](clause.md#complex-chaining).
+
+> `zodogal zagadul zam gegabem bazawan gubuhel.`
+>
+> [z-dog | z-cat | z-and.open | [g-ownership | [b-Azawan | g-blue]]]
+>
+> "Blue Azawan's dog and cat (and possibly more)."
+
+**Compare with:** *part of* / *contents of* / *made of* / origin *from* use [of relations](relations.md#of-relations), not `egabe`. A [sakes](sakes.md) need on `/ɡ/` already means the speaker’s belonging (`gulothal` *my … serves competence*).
+
+| Join family | Use of SHARED `/ɡ/` |
+|-------------|----------------------|
+| **a** | distributive property (*both ADJ*) or bundle description |
+| **a** + `/ɡ/`…**-x** | [collective](plurality.md#adjectives-g) (*ADJ together*) |
+| **ae** + SHARED scale | [equative](comparatives.md#equatives) (`/ɡ/` or `/h/`) |
+| **e** / **ue** on NP | [comparison scale](comparatives.md) (`/ɡ/` or `/h/`) |
+| **oe** on NP | sorted low to high (`/ɡ/` or `/h/`) |
+| **ua** / **uo** | kind / domain for universals |
+
+More items of the same role go *before* the join, not after it.
+
+SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a [scale](comparatives.md#manner-scale) after rank **`e`** / **`ue`**, equative **`ae`**, or sequence **`oe`**. After a verb join, only an `/h/` is SHARED. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
+
+> `zazawan zalahen zal hahegem vowogal.`
+>
+> [z-Azawan | z-Alahen | z-and] | h-intensity | v-walk
+>
+> "Azawan and Alahen walk intensely."
+
 ### Rank joins {#rank-joins}
 <a id="priority-ranking-e"></a>
 
@@ -476,7 +532,7 @@ Beginner already used *everything but* (**`ua`**). A leading **u** inverts **o**
 | **uo** | invert menu | *anything but* the listed (free choice outside) | **u** ≈ undo + **o** ≈ one |
 | **ue** | invert rank | *A after B after C* (last first) | **u** ≈ undo + **e** ≈ order |
 
-What *everything* or *anything* ranges over comes from context, or from a SHARED `/ɡ/`: an adjective right after the join that applies to the whole list ([SHARED after the join](#shared-after-the-join)), here naming the kind ([universals, domains, and generics](#universals-domains-generics)). Only plain **`…om`** means *optional*; on **uo**, **-m** leaves the list open as usual. **-r** still attaches only to one-vowel **a** / **o** / **e** / **u**.
+What *everything* or *anything* ranges over comes from context, or from a [SHARED](#shared-after-the-join) `/ɡ/` that names the kind ([universals, domains, and generics](#universals-domains-generics)). Only plain **`…om`** means *optional*; on **uo**, **-m** leaves the list open as usual. **-r** still attaches only to one-vowel **a** / **o** / **e** / **u**.
 
 > `zedehel zagavel zual.`
 >
@@ -755,7 +811,7 @@ For English *whoever* / *whatever*, use a bare [role compound](roles.md#role-com
 >
 > "Whoever walks sings."
 
-Use closed `zual` plus kind when the claim allows no exceptions, and open `zuam` plus kind when you leave the exceptions open. To say how you know a general claim (*by definition*, *going by the pattern*, *per the rules*), add a [channel](knowing.md#universality). Free-choice *any cat will do* uses `zor`.
+Use closed `zual` plus kind when the claim allows no exceptions, and open `zuam` plus kind when you leave the exceptions open. Free-choice *any cat will do* uses `zor`.
 
 **For *always*, use:** bare habitual **`hual`** ([restrictors](restrictors.md)).
 
@@ -810,62 +866,6 @@ English *one*, generic *you*, and *people* make a claim about people as a rule. 
 | `zuan gobel` | humankind as a kind | *people* (the species) |
 
 For *everyone, no exceptions*, use `zual gobel`. As a topic, `xoben` (*now, about people in general*) makes the [topic pronoun](pronouns.md#topic-pronoun) mean *one*.
-
-### SHARED after the join
-<a id="scope-fence-p-join"></a>
-
-When an adjective or extra noun is meant for the **whole list** (*both challenging*, *Azawan's dog and cat*), write it **immediately after** the join. Material in that spot is called SHARED: it describes each member of the list. A modifier that belongs to one item only stays on that item (after its head, or `gl-` before it).
-
-> `zodogal zagadul zal gamadam.`
->
-> [z-dog | z-cat | z-and | g-challenge]
->
-> "(challenging dog) and (challenging cat)."
-
-A hook belongs to one item the same way. Put the hook and its `/b/` right after that item, before the join word: **`em`** plus a resume gives *Azawan and his dog*.
-
-> `zazawan zodogal em bazawar zal vowogal.`
->
-> [z-Azawan | [z-dog | [used-by | b-←Azawan]] | z-and] | v-walk
->
-> "Azawan and his dog walk."
-
-Only the item just before the join word takes a hook this way. A hook anywhere else in the clause is an extra noun of the clause.
-
-> `zodogal zagadul zam gegabem bazawan.`
->
-> [z-dog | z-cat | z-and.open | [g-ownership | b-Azawan]]
->
-> "Azawan's dog and cat (and possibly more)."
-
-A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaining](clause.md#complex-chaining).
-
-> `zodogal zagadul zam gegabem bazawan gubuhel.`
->
-> [z-dog | z-cat | z-and.open | [g-ownership | [b-Azawan | g-blue]]]
->
-> "Blue Azawan's dog and cat (and possibly more)."
-
-**Compare with:** *part of* / *contents of* / *made of* / origin *from* use [of relations](relations.md#of-relations), not `egabe`. A [sakes](sakes.md) need on `/ɡ/` already means the speaker’s belonging (`gulothal` *my … serves competence*).
-
-| Join family | Use of SHARED `/ɡ/` |
-|-------------|----------------------|
-| **a** | distributive property (*both ADJ*) or bundle description |
-| **a** + `/ɡ/`…**-x** | [collective](plurality.md#adjectives-g) (*ADJ together*) |
-| **ae** + SHARED scale | [equative](comparatives.md#equatives) (`/ɡ/` or `/h/`) |
-| **e** / **ue** on NP | [comparison scale](comparatives.md) (`/ɡ/` or `/h/`) |
-| **oe** on NP | sorted low to high (`/ɡ/` or `/h/`) |
-| **ua** / **uo** | kind / domain for universals |
-
-More items of the same role go *before* the join, not after it.
-
-SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a [scale](comparatives.md#manner-scale) after rank **`e`** / **`ue`**, equative **`ae`**, or sequence **`oe`**. After a verb join, only an `/h/` is SHARED. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
-
-> `zazawan zalahen zal hahegem vowogal.`
->
-> [z-Azawan | z-Alahen | z-and] | h-intensity | v-walk
->
-> "Azawan and Alahen walk intensely."
 
 ### Fence nesting {#fence-nesting}
 

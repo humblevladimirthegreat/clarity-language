@@ -29,11 +29,9 @@ The last root is the kind of thing; the left root specifies it (what field, what
 | full root **`x`** full root | two roots, one word | `zebeyaxabodel` *peanut butter* | **x** ≈ plus |
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxedehol` *someone who teaches* (**-r** *the one teaching*) | **a** doer / **e** scene / **u** undergoer / **o** extra `/b/` party |
 
-**Compare with:** two people stay two words (`zazawan zalahen`). One double name is one word (`zazawaxalahen`).
-
 **Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](dependents.md#continue-x). That **`x`** is not this glue in the middle.
 
-**Not the same job as:** mid-word **`th`**. The [stance](clause.md#stance-th) letter joins pieces when the second piece is **your view** rather than more of the same thing: a sake and how it stands ([sakes](sakes.md): `gulothal`), a label and what kind of claim it is ([label scope](predication.md#label-scope), such as *angry this time*), or a direction and whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals), such as *Azawan’s left*). **`x`** adds; **`th`** says from where you see it. (cue: **th** ≈ *think*)
+**Not the same job as:** mid-word **`th`**. The [stance](clause.md#stance-th) letter joins pieces when the second piece is **your view** rather than more of the same thing, such as a sake and how it stands ([sakes](sakes.md): `gulothal`). **`x`** adds; **`th`** says from where you see it. (cue: **th** ≈ *think*)
 
 ### Words you look up, not build
 <a id="lexical-compounds"></a>
@@ -56,7 +54,7 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 | `zerehelogodul` | rain **-l** coat | raincoat | left piece everyday |
 | `…m…` | left root in its [abstract](word-endings.md#abstract-m) sense | same two roots, join **-m** | **m** ≈ meaning |
 
-If the pairing is not in the dictionary, either glue with **`x`** (`zebeyaxabodel` *peanut butter*) or use two words. Extra-noun *enter* / *leave* fused onto a citation is a [hook compound](hooks.md#hook-compounds), not this two-root join.
+If the pairing is not in the dictionary, either glue with **`x`** (`zebeyaxabodel` *peanut butter*) or use two words.
 
 ### One thing or two?
 <a id="compound-vs-separate"></a>

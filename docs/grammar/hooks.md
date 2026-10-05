@@ -48,6 +48,14 @@ For English *B instead of A*, use the same shape with vowel **o**: `A ol B`. A, 
 >
 > "Coffee instead of tea."
 
+A and B can play any role, as long as both play the same one. They can even be **verbs**:
+
+> `zazawan varahal ol vowogal.`
+>
+> z-Azawan | v-run | instead | v-walk
+>
+> "Azawan walks instead of running."
+
 **Compare with:** *Azawan tells on behalf of Alahen* keeps Azawan as the teller (a [proxy](relations.md#proxy) relation); **`ol`** puts someone else in that slot.
 
 ### Except (`ul`)
@@ -180,6 +188,14 @@ When `/b/` is a person or group, **`el`** names who the act is meant to benefit,
 > "Azawan cooks for Alahen."
 
 These hooks take **-l**: the landmark is the exact place, point, source, or goal.
+
+To say where something is (*there is a dog in a house*), write the noun with no verb, then the hook and its `/b/`. A noun alone says the thing [exists](predication.md#existence), and the hook places it.
+
+> `zodogal al bahazal.`
+>
+> z-dog | [in | b-house]
+>
+> "There is a dog in a house."
 
 **Compare with:** *Additionally, Azawan walks* is a hook at the front whose next word is **not** `/b/` (`al zazawan vowogal`). *Like a duck* is still a hosted [simile](relations.md#similative). *Tells on behalf of Alahen* is [proxy](relations.md#proxy). Naming the **place of an event** as its own noun (*a sleep-place*, *that scream-place*) is a [role compound](roles.md#role-compounds) with vowel **`e`**, not this hook on the same clause.
 
@@ -770,14 +786,6 @@ To say more than one thing about the **same** A (*including B but except C*, or 
 | `A al B al C` | A including B and including C |
 | `A am B ul C` | A including B, and maybe more, except C |
 | `A ul B ul C` | A except B and except C |
-
-A and B can also be **verbs**:
-
-> `varahal om vowogal.`
->
-> v-run | instead.open | v-walk
->
-> "Walk instead of run, or some other replacement."
 
 **Compare with:** a [list join](joins.md) after the hook is finished first, and the whole list becomes B: `zodogal ol zagadul zebedul zam` is *a cat and a bird (and possibly more) instead of a dog*.
 

@@ -42,7 +42,7 @@ When the model is an event (*walks the way a duck swims*), put [**`barl`**](depe
 
 As a plain noun, `zumul` is *a mirror*.
 
-With no `/b/` after a joined subject, the model is the other members: each one resembles the others. That is English *alike* / *similar to each other*. Every hosted relation follows this rule ([social ties](#social-relations), [kin](numbers-applied.md#kin-generations)).
+With no `/b/` after a joined subject, the model is the other members: each one resembles the others. That is English *alike* / *similar to each other*. Every hosted relation follows this rule.
 
 > `zazawan zalahen zal gumum.`
 >
@@ -94,7 +94,7 @@ When English says someone **acts as another person’s agent** (*tells on behalf
 
 A recipient `/b/` can follow once the pair is complete: `zazawan hadem balahen bahaben vezebel` (*tells Ahaben on behalf of Alahen*). On a noun, the same root is **`gadem`** (`dubugal gadem balahen` *a book on behalf of Alahen*). As a plain noun, `zadel` is *an id*.
 
-**Compare with:** a `/b/` word with no relation word before it is who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`). *Exclusively for* is a [join-relation](join-across-roles.md#join-relations), not this pair.
+**Compare with:** a `/b/` word with no relation word before it is who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`).
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
