@@ -1,6 +1,6 @@
 # Grammar doc wording and voice
 
-Wording policies for editors writing learner-facing Agazan grammar pages under **`docs/grammar/`**. For what those pages should teach and how to organize the material, see [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/`; this page is private editor guidance.
+Wording policies for editors writing learner-facing Agazan grammar pages under **`docs/grammar/`**. For what those pages should teach and how to organize the material, see [grammar-docs.md](grammar-docs.md). The [Claritish track](grammar-docs.md#claritish-track) (`docs/grammar/claritish/`) follows this page too; what is different there is in [claritish-style.md](claritish-style.md). Grammar pages must **not** link to or mention `meta/` or any other folder outside `grammar/`; this page is private editor guidance.
 
 ## Punctuation
 

@@ -449,16 +449,18 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 
 ## Claritish track {#claritish-track}
 
+Wording and voice for the track: [claritish-style.md](claritish-style.md).
+
 **Claritish** (`docs/grammar/claritish/`) is an on-ramp for English speakers: an intro page, seven lessons, a bonus tone-marks lesson, and a closing page that teach closed Agazan words to drop into ordinary English, so the psychological payoff starts on day one and every word learned is already Agazan. It adds no forms and is not design authority. Each lesson's owning grammar section is named in an editor-only `<!-- Source … -->` comment at the foot of the page; when that section changes a form or meaning, update the lesson.
 
 **What a drop-in is:** a closed Agazan word spelled exactly as the owning page spells it: a tone mark, a stance word, a sake word (thanks, sorry, feelings), or the set phrase `behodon`. No Agazan syntax around it (role letters, hosted `/b/`, joins, spans, hooks, role compounds, numeric derivation), no numerals or stance numbers, no respelling for English readers.
 
 - **Placement** follows English: where an adverb or tag would sit (after the clause, before it, or beside the word it colors). A stance drop-in covers the English clause it sits in. A lone feeling word with no clause is how the speaker feels right now.
-- **The one suffix on English words** is [label scope](../grammar/predication.md#label-scope), written with a hyphen: English word + `-th` + scope vowel + **-l** (`lied-thal`). The hyphen marks an English host; the letters after it are Agazan. Always **-l**.
+- **The one suffix on English words** is [label scope](../grammar/predication.md#label-scope), written with a hyphen on an English host. The rule and its marking live in [Claritish wording and voice](claritish-style.md#hyphenated-host).
 - **Tone marks** go before what they color, as in Agazan. English punctuation stays English (a sentence-final `!` is English; sentences need no Agazan period).
 - **Endings:** on stance drop-ins, **-l / -m / -r** are taught as the settled-to-passing scale (*-l ≈ lasting, -r ≈ right now*), and each lesson points out when the scale comes back. Lesson 5 (permission, requirement, consent) grades the source instead (*l ≈ law, m ≈ mouth, r ≈ read the room*). Never teach the concrete vs abstract citation split.
 
-**Marking:** in real use drop-ins are written plainly (no italics, quotes, or brackets), and the intro page says so. On the site every drop-in is still a backtick span, so `build` checks it and `retie-docs` keeps it current. A hyphenated English host (`lied-thal`) is an English span. Table rows for the suffix use `-thal`, not `…-thal` (a template that does not parse).
+**Marking:** in real use drop-ins are written plainly (no italics, quotes, or brackets), and the intro page says so. On the site every drop-in is still a backtick span, so `build` checks it and `retie-docs` keeps it current.
 
 **Lesson shape:** H1 *Lesson N: …* (the tone-marks bonus is *Bonus: …*); `## The gap`; the forms (a small table); about five English example sentences with drop-ins, never full Agazan; `## Practice` (English items, answers in `::: details Show answer`). Lessons carry no full Agazan sentences; the closing page shows the words in one. Order runs from the rationality and compassion words to the richest compose (emotion compose last). Tone marks are an unnumbered bonus after the lessons: they color delivery and are not one of the thinking traps, so they do not open the track.
 
@@ -474,7 +476,7 @@ Pages stay dual-role (learner text + source of truth): Intermediate / Advanced i
 | Agazan words to drop into English, for learners not yet in the grammar | [Claritish track](#claritish-track) (`claritish/`) |
 | Gloss format | [glosses.md](glosses.md) |
 | Level rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
-| Doc content / teaching order | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns), [Compare with](#compare-with)); wording and voice: [doc-style.md](doc-style.md) |
+| Doc content / teaching order | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns), [Compare with](#compare-with)); wording and voice: [doc-style.md](doc-style.md), [claritish-style.md](claritish-style.md) |
 | Goals / feature criteria | [why-agazan.md](../grammar/why-agazan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design, [cue tables](../grammar/introduction.md#cues)) |
 | Clause grammar (one clause) | [clause.md](../grammar/clause.md) |
 | Hosted relation catalog | [relations.md](../grammar/relations.md) |

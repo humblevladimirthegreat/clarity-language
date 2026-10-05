@@ -60,6 +60,7 @@ Each row names what the file owns. The file is the authority; this table is only
 |--------|------|
 | `grammar-docs.md` | Content and teaching policy for grammar pages, house cast, retie-safe writing, marking Agazan. |
 | `doc-style.md` | Wording and voice. |
+| `claritish-style.md` | Wording and voice for the Claritish track, and the hyphenated English host. |
 | `glosses.md` | Morph and free gloss rules. |
 | `learning-levels.md` | Beginner / intermediate / advanced rubric and the cross-doc path. |
 | `translation-exercises.md` | Translation checkpoint policy. |

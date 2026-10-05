@@ -10,8 +10,6 @@ use [skip-cd] for amplify to not deploy.
 
 -buy domain
 -flash cards for claritish
--see if other why-agazan features should go to claritish. 
--Move claritish to top of sidebar and have it collapsible
 -claritish editor
 -review unassigned with competing intuitive readings
 -agazan introduction should mention grammar reusability
@@ -21,7 +19,6 @@ use [skip-cd] for amplify to not deploy.
 -finish lexicon fill (partial)
 -finish proposals-mnemonic
 -review logical deduction
--fix output too large for find lexicon
 -parser can optionally output translation guidance
 -eliminate lexicon retie by default
 -allow -rm -rl on content roots if ambiguous referent
@@ -33,9 +30,7 @@ save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
 -review published-lexicon for psychology - are there any abstract roots that are prone to cognitive biases that would benefit from special attention such as carefully choosing the concrete
 -mass lexical compound adding
--do a style pass in grammar-docs. Check for adherence to doc-style and otherwise ensure natural sounding explanations.
 -vocab bank and exercise revamp: introduce new vocabulary, follow standards for language teaching
--find additional applications of th#N to other evidentials.
 
 save for end:
 -add Agazan->English cheat sheet
