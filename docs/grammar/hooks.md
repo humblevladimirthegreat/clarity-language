@@ -492,7 +492,7 @@ To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`a
 
 > `yol zazawan dubugal ael bar varadal.`
 >
-> y-question | z-Azawan | d-book | [using | b-who] | v-write
+> y-question | z-Azawan | d-book | [using | b-wh] | v-write
 >
 > "How does Azawan write the book?"
 

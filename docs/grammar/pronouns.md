@@ -762,7 +762,7 @@ To ask what the talk is about, use the *which X* shape: the join blank `zar` wit
 
 > `yol zar gahehom.`
 >
-> y-question | [z-who | g-topic]
+> y-question | [z-wh | g-topic]
 >
 > "Which topic?" / "What are we talking about?"
 

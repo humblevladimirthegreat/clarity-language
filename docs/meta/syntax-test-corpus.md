@@ -141,7 +141,7 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 | 112 | You and I will go together. | `zahan thamam vuvudelx.` | z-interlocutors \| th-plan-itinerary \| v-go-x | covered |
 | 113 | They opened all the doors and windows. | `zobelx thevom dual goyel voyel xal zoberx dual gewedol voyel.` | [z-person-x \| th-WITNESSED \| [d-everything \| g-door] \| v-open \| x-and \| z-←person-x-x \| [d-everything \| g-window] \| v-open] | covered |
 | 114 | He is small, but strong. | `zazawan gamazam. xagezam zazawar gabezem.` | z-Azawan \| g-small . x-but \| z-←Azawan \| g-strength | covered |
-| 115 | Is this tree an oak or a maple? | `yol zedehur gehazaledehul gemebal ?gar.` | y-question \| z-←tree \| [g-oak \| g-maple \| ?g-who] | covered |
+| 115 | Is this tree an oak or a maple? | `yol zedehur gehazaledehul gemebal ?gar.` | y-question \| z-←tree \| [g-oak \| g-maple \| ?g-wh] | covered |
 | 116 | Does the sky look blue or gray? | `yol zagavum gubuhel gegeval ?gar thodom.` | y-question \| [z-sky \| [g-blue \| g-gray \| ?g-something]] \| th-LIVE | covered |
 | 117 | Come with your father or mother. | `yel han bobel grebuwol behodon vuvudel oel bamagon.` | y-command \| [h-including \| [b-person \| [g-#-e-1 \| b-listener]]] \| v-go \| [toward \| b-speaker] | covered |
 | 118 | I am tired, but very happy. | `zSELFn gadadal. xagezam welavam thozothamam.` | z-SELF \| g-tired . x-but \| [w-very \| th-pleasure-met-any-term-INTERNAL-FLOWING] | covered |

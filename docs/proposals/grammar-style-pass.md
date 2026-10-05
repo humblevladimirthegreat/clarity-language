@@ -65,7 +65,7 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - [x] **Batch 2.4:** `pronouns` (7.3k)
 - [x] **Batch 2.5:** `plurality` (2.9k), `predication` (3.8k)
 - [x] **Batch 2.6:** `joins` (8.5k)
-- [ ] **Batch 2.7:** `questions` (5.2k)
+- [x] **Batch 2.7:** `questions` (5.2k)
 - [ ] **Batch 2.8:** `hooks` (7.7k)
 - [ ] **Batch 2.9:** `restrictors` (3.3k), `relations` (5.4k)
 - [ ] **Batch 2.10:** `spans` (4.6k)
@@ -179,6 +179,18 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - SHARED after the join: the [sakes] Compare-with previews `sakes`. Kept.
 - Invert and Respectively use SHARED before its own H3 later on the page. It is now glossed at first use; moving the H3 earlier would be a structural change, left for Phase 3.
 - Reference tables lead "Most other phrase joins need two or more items" is unclear next to the single-item and standalone tables. Left alone, because rewording it would mean guessing which joins it means.
+
+### 2026-10-05: Batch 2.7 (`questions`)
+
+- **Beginner:** the page lead is no longer "This page is how you ask". The Ask lead now gives the English job (word order moves in English), the Agazan shape (**`yol`** + an unchanged body), and the consequence (nothing moves); the unglossed *setting* is gone. *job letter* → *role letter* in the fill answer. Fill-ask table Use column: *fill the add-inventory* / *fill what remains* → *ask for who or what (else)*. The resume Compare-with says *whole-stem* (as in `pronouns`) and splits the length test into two sentences. Fill-all lead starts from *who sees what?*. The `?` bullet no longer says the mark *colors* the sentence. Polar stance: *receipt* → *got it*; the one-polar-word rule reworded. The confirm paragraphs now say plainly that bare **`yael.`** backs up your own claim and **`yol yael.`** asks the listener, and the word *tag* is glossed there (Intermediate's Tags section relies on it). *Not the same job as* became a plain sentence. Embedded *whether* and its Compare-with were rewritten job-first (*whole stretch*, *outer turn*, *inner `yol`* removed).
+- **Intermediate:** the polar inventory lead is now two sentences for the two vowels, the map items are italics instead of bold, and the first-vowel cue says *add* (to match the table). *option uptake* / *receipt* in the table reworded. *the but… of a premise* (`yuar`), *read as compliance*, *stance-plus-body beat*, *solo run of thought*, *a point you lock*, *polarity said twice*, *unbound*, *queried slot*, *occasion word under `/h/`*, *live with*, and *genitive* were replaced with plain English. Tags lead split into two paragraphs. Fill-ask arity lead and the *Length* column header (now *Items listed*) say what the length counts. Where / Whose / How / Why leads now start with "To ask *X?*" and gloss *extra-noun hook* in passing. A blank inside a dependent now leads with the English pair (*Do you know who walks?* / *Who do you think walks?*). The yes/no single-item lead says what *confirm that singleton* means.
+- **Obvious slip fixed:** the Rhetorical question Compare-with said a bare `…. yael.` tag asks the listener to confirm. Beginner says bare **`yael.`** confirms your own claim and **`yol yael.`** asks the listener, so it now shows `…. yol yael.` and links to the Tags section.
+- Missing blank lines between morph and English in Beginner Agazan → English #6 and Intermediate Agazan → English #6.
+
+**Deferred / kept:**
+- *How many?* (`numbers`), the Three endings pointer to *time horizon* (`sakes`), the extra-noun / genitive / stacked-vowel hook links (`hooks`), `humum` (`relations`), the condition-word links (`causation`), `thar` (`join-across-roles`), and *anytime?* (`restrictors`) all point at later pages. Each answers a question form the learner reaches for on this page, so they stay for Phase 3 to judge.
+- Resolved after review: the fill-ask blank now glosses as role-neutral *wh* (`z-wh`, `b-wh`, `g-wh`) and *wh-else*, not *who* / *who-else*, so the morph line no longer contradicts *what* / *where* translations. Changed in `src/parse/morph-gloss.ts` and its test, `meta/glosses.md`, and the morph lines in `questions`, `hooks`, `pronouns`, `say-questions`, and `meta/syntax-test-corpus.md`. The Beginner Fill-ask section now says what *wh* means in the word-by-word line.
+- Intermediate English → Agazan #1 puts the answer `yael.` on the line after the morph line with no blank line. It renders inside the same paragraph; left as is.
 
 ## Questions for the editor
 

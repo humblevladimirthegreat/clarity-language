@@ -198,8 +198,8 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("gugol", "g-SAME");
   });
 
-  it("fill-ask zar is z-who", () => {
-    expectLine("yol zar vowogal", "y-question | z-who | v-walk");
+  it("fill-ask zar is z-wh", () => {
+    expectLine("yol zar vowogal", "y-question | z-wh | v-walk");
   });
 
   it("stand-in glosses and hostless ABIL", () => {

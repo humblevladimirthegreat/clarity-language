@@ -301,7 +301,7 @@ A [resume](../grammar/pronouns.md#resume-r) spells its antecedent's whole stem, 
 | Resume of one of a name (**-ln**) | `zazawar` after `dazawaln` | `z-←Azawan.instance` |
 | Resume of a prior content word | | `z-←someone` / `d-←tea` |
 | No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
-| Fill-ask / unspecified member | `zar` | `z-who` / `z-something` (as the docs require for that form) |
+| Fill-ask / unspecified member | `zar` | `z-wh` / `z-something` (as the docs require for that form) |
 | [Ordinal pronoun](../grammar/pronouns.md#ordinal-pronouns) | `zredur` / `zruewor` | `z-←2nd` / `z-←1st-from-end` (the place, never the person's name) |
 | [Role pointer](../grammar/pronouns.md#role-pointers) | `zaxar` / `zaxor` / `daxer` | `z-←agent.same` / `z-←agent.other` / `d-←agent.self` / `z-←agent.unsaid` (role and event, never the person's name); `d-←patient.same.new` (**-l**), `z-←agent.same.part` (**-m**) |
 
@@ -372,7 +372,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `zel` | `z-rank/more` |
 | `zael` | `z-equal-rank` |
 | `zaem` | `z-equal-rank.open` |
-| `zar` | `z-who` / `z-something` |
+| `zar` | `z-wh` / `z-something` |
 | `zul` / `gul` | `z-not` / `g-not` |
 | `zual` | `z-everything-but` |
 | `xan` | `x-and-then` |
@@ -501,7 +501,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 2. No `→` etymology chains.
 3. No **-l** / **-m** / **-n**, and no **`@`** / **`~`**, when they only selected the sense-root. Named **-n** is the English name (`z-Azawan`), not `-n`, `@`, or `-proper`.
 4. Compounds / stance / role / span `x` pieces are always hyphenated segments (`y-Ubune-x-Unowen`). Do not fuse a name into one unsegmented English label.
-5. **-r** uses `←…` (no trailing `-r`); **-x** stays as `-x`. Resume of a house name is `z-←Azawan`, not `z-r`. Fill-ask is `z-who`, not `z-ar`.
+5. **-r** uses `←…` (no trailing `-r`); **-x** stays as `-x`. Resume of a house name is `z-←Azawan`, not `z-r`. Fill-ask is `z-wh`, not `z-ar`. `wh` is role-neutral (*who*, *what*, *where*, …), so the gloss never contradicts the translation; `wh-else` for **u**.
 6. Multi-word units are in [phrase brackets](#phrase-brackets), nested by attachment; packages use labeled brackets (`NAME[…]`, `CITE[…]`, `SCOPE[…]`). The line [round-trips](#round-trip) to the exact Agazan.
 7. Free English is on its own **quoted** line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging. Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line only when `lint:agazan` treats parser output as redundant with that loose line).
 

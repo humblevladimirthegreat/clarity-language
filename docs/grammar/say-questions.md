@@ -12,7 +12,7 @@ An echo question repeats what someone just said, because you doubt it or did not
 
 > `yol zehodon vahahal ?!dar.`
 >
-> y-question | z-listener | v-see | ?!d-who
+> y-question | z-listener | v-see | ?!d-wh
 >
 > "You saw WHAT?"
 

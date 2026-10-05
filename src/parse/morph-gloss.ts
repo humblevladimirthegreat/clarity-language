@@ -5,9 +5,9 @@
  *
  * | Surface | Canonical | Notes |
  * |---------|-----------|--------|
- * | `zar` fill-ask | `z-who` | `resolve.asks` fill-ask |
+ * | `zar` fill-ask | `z-wh` | `resolve.asks` fill-ask |
  * | `zar` join `-r` | `z-something` | unspecified member |
- * | `zur` fill-ask | `z-who-else` | |
+ * | `zur` fill-ask | `z-wh-else` | |
  * | `thar` / `thur` fill-ask | `th-why` / `th-why-else` | stance grounds |
  * | `yol` / `yom` / `yam` / `yem` / `yum` | `y-question` / `y-soft-question` / `y-soft-statement` / `y-request` / `y-soft-prohibition` | `-m` act words |
  * | `yar` / `yor` / `yer` / `yur` | `y-provisional-statement` / `y-working-question` / `y-command-for-now` / `y-hold-off` | `-r` act words |
@@ -1173,10 +1173,10 @@ function fenceJoinLabel(
       // Stance fill-ask asks for grounds, not a person.
       if (pos === "th" && series === "a") return "why";
       if (pos === "th" && series === "u") return "why-else";
-      if (series === "u") return "who-else";
+      if (series === "u") return "wh-else";
       if (series === "o") return "which";
       if (series === "e") return "which-rank";
-      return "who";
+      return "wh";
     }
     if (series === "u") return "something-else";
     if (series === "o") return "anything";
