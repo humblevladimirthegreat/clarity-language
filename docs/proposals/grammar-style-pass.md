@@ -61,7 +61,7 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - [x] **Batch 2.1:** `why-agazan` (4.5k), `introduction` (1k), `phonology` (2k)
 - [x] **Batch 2.2:** `word-endings` (3k), `clause` (3.5k)
 - [x] **Batch 2.3:** `speech-moves` (2.5k), `dependents` (5.4k)
-- [ ] **Batch 2.4:** `pronouns` (7.3k)
+- [x] **Batch 2.4:** `pronouns` (7.3k)
 - [ ] **Batch 2.5:** `plurality` (2.9k), `predication` (3.8k)
 - [ ] **Batch 2.6:** `joins` (8.5k)
 - [ ] **Batch 2.7:** `questions` (5.2k)
@@ -140,10 +140,19 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 - `dependents` Compare with after *so that* is a long list that previews `sakes`, `relations`, and `hooks`. Wording kept.
 - Resolved after review: *by* (deadline) was **`homal`** / **`gomal`**, an **-l** pole that broke the all-**-m** rule. It moved to the 🏁 *finish-line* row as **`heveham`** / **`geveham`** (overlay rows, `dependents`, `knowing`, `say-amounts`, `english`, and `meta/syntax-test-results.md`). The Beginner subject exception now says the instruction stand-in includes *not to …* (**`durl`**).
 
+### 2026-10-05: Batch 2.4 (`pronouns`)
+
+- **Beginner:** the page lead calls **-r** the fourth ending and adds "then **-r**" to the shape. *the talk* → *the conversation* where it meant the conversation so far. The *the dog that walked* Compare-with now says what to do (say it as its own sentence, then resume), and drops the *hang* picture. The lexicon-**-r** fallback no longer says "open the talk". Themself and The other one now lead with the English job. Whoever it was: split the long paragraph. The yes/no question line under A new one now says what it means. Share glosses *share* at first use, and the "no reading" sentence pairs each reason with its form. Special pronouns gloss *closed roots* and replace "Person roles default to **-n**". *content **-r*** → *whole-stem **-r***. Generic pronoun: rewrote the "pronoun-sized" sentence.
+- **Intermediate:** the **-r** table lead is a finish-the-series pointer; *too* with the same subject now matches its example (*sees a dog too*). Addressing several people: lead rewritten (job first; *vocative cluster* and *held as addressee* in plain words; *stays* fences dropped), and the stale **`edone…x`** became **`ehodonx`** (the only Agazan change). Ordinal pronouns no longer preview *topic stretch* in the lead. *referent*, "asserts nothing", the *buried* picture in Topic words and dependents, and the semicolon chain in Quotes and asides reworded.
+
+**Deferred / kept:**
+- Role pointers (Beginner): "Only a [topic change](#topic-resets) stops it" links forward to Intermediate, and the **-x** sentence previews `plurality`. Both state a limit a learner can hit now, so they stay for Phase 3 to judge.
+- A new one: "none after a special pronoun" names a later H3 on the same page, and "after a joined list" previews `joins`. Kept as inventory.
+- Asking about the topic uses *which X* and *join blank* from `joins` / `questions`, which come later on the path. Kept; Phase 3 can check.
+- Special pronouns: the *here* / *there* deixis pointer to `hooks` is kept as a Compare-with for English the learner reaches for now.
+
 ## Questions for the editor
 
 <!-- Suspected grammar problems found during the pass. Not fixed by the pass. One bullet each: page, section, issue. -->
 
 - `numbers.md`, pronunciation rows and the shorthand-to-spelled table: spelled number words are in italics (`🔊 *grarel*`), and the test suite requires that. This conflicts with doc-style's "Agazan forms in backticks, not italics", and retie-safe writing says retie never rewrites italics. Spelled numbers contain no content roots, so retie risk is low. Should the pronunciation convention (and its check) move to backticks?
-- `phonology.md`, Number-word exception: "Inside a content root, `r` still appears only after a vowel (`egeve`)." The example root has no `r` (commit 760fb4d retied it from `ebade`, which also had none). The sentence needs a root that contains `r`, or the example should go.
-- `phonology.md`, Letter names: the cue for `g` / `ga` is *gagaya*, which is not an English word. Is it a stale Agazan spelling, or should it be an English cue such as *gaga*?

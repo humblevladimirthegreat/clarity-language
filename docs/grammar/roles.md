@@ -600,7 +600,7 @@ The examples above already used *west* / body *left*. The rest of the rose is th
 | **`azovel`** | compass heading, or back-right on a face | *southeast* / *back-right* | ↘️ *southeast-arrow*: between south and east |
 | **`azawel`** | compass heading, or back-left on a face | *southwest* / *back-left* | ↙️ *southwest-arrow*: between south and west |
 
-Indoor headings may follow a local map (building north). Prefer a named viewpoint or listener frame when you mean a person’s body rose (`…thazawan`, `…thedonen`). For an object, use its design or current use to determine forward; establish the frame when that is ambiguous.
+Indoor headings may follow a local map (building north). Prefer a named viewpoint or listener frame when you mean a person’s body rose (`…thazawan`, `…thehedonen`). For an object, use its design or current use to determine forward; establish the frame when that is ambiguous.
 
 ### Gravity (`abaha` / `adahe`) {#gravity}
 

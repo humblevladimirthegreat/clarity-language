@@ -1,6 +1,6 @@
 # Pronouns
 
-English *he*, *she*, *it*, and *they* point back to someone or something already named. You already write **-l** / **-m** / **-n** on a [citation](word-endings.md) and on content words. The remaining last letter is **-r**: keep the role letter for this sentence’s slot (subject, object, and so on), then the earlier word’s whole stem. For someone in a recent sentence, a shorter **role pointer** names them by the part they played instead.
+English *he*, *she*, *it*, and *they* point back to someone or something already named. You already write the endings **-l** / **-m** / **-n** on a [citation](word-endings.md) and on content words. Agazan points back with the fourth ending, **-r**: write the role letter for the slot the word fills in this sentence (subject, object, and so on), then the earlier word’s whole stem, then **-r**. For someone in a recent sentence, a shorter **role pointer** names them by the part they played instead.
 
 ## Beginner {#beginner}
 
@@ -15,7 +15,7 @@ After you have already named a person or thing, the next sentence can point back
 >
 > "Azawan walks. Azawan sits."
 
-**Compare with:** English often uses *the* for a kind already in the talk (*A dog walks. **The** dog sits.*). Agazan uses **-r** for that job, not a separate article.
+**Compare with:** English often uses *the* for a kind already in the conversation (*A dog walks. **The** dog sits.*). Agazan uses **-r** for that job, not a separate article.
 
 > `zodogal vowogal. zodogar vehahel.`
 >
@@ -23,7 +23,7 @@ After you have already named a person or thing, the next sentence can point back
 >
 > "A dog walks. The dog sits."
 
-**Compare with:** English *the dog that walked* is that same pair of sentences, then **-r** in whatever slot you need. Do not hang a *who / that / which* clause on the noun ([which person or thing](dependents.md#which-noun)).
+**Compare with:** for English *the dog that walked*, say that the dog walks as its own sentence, then resume the dog with **-r** in whatever slot you need. Do not attach a *who / that / which* clause to the noun ([which person or thing](dependents.md#which-noun)).
 
 A word built from two roots resumes with its whole stem too. `debedalahazar` is *the bedroom*; `debedar` is *the bed*, and never points at a bedroom.
 
@@ -33,7 +33,7 @@ A word built from two roots resumes with its whole stem too. `debedalahazar` is 
 >
 > "Azawan sees a bedroom. Alahen sees the bedroom."
 
-With no earlier match, **-r** on a word from the lexicon can open the talk: it means the one you both already know (*the dog*, the household’s dog).
+When nothing earlier matches, **-r** on a word from the lexicon means the one you both already know (*the dog*, meaning the household’s dog). So **-r** can appear even in the first sentence of a conversation.
 
 > `zodogar vowogal.`
 >
@@ -41,7 +41,7 @@ With no earlier match, **-r** on a word from the lexicon can open the talk: it m
 >
 > "The dog walks." (the dog you both know)
 
-**Compare with:** a name the lexicon does not list (a new person, a pet’s name) has nothing to fall back on. Its **-r** needs the name earlier in the talk.
+**Compare with:** a name the lexicon does not list (a new person, a pet’s name) has nothing to fall back on. Its **-r** needs the name earlier in the conversation.
 
 ### Role pointers {#role-pointers}
 
@@ -85,11 +85,11 @@ A sentence with nobody in that part does not count. *It rains* has no doer, so `
 
 A pointer looks back as far as it needs to: across turns and paragraphs, and through what other speakers said. Only a [topic change](#topic-resets) stops it. Only sentences count, not nouns that name an event: a storm named as a noun gives a pointer no doer to find.
 
-A pointer takes [associative **-x**](plurality.md#associative) like a name. A pointer with no earlier sentence that has someone in that part points at nothing, so it is not a sentence.
+A pointer takes [associative **-x**](plurality.md#associative) like a name. If no earlier sentence has someone in that part, the pointer points at nothing, and the whole thing is not a sentence.
 
 ### Themself (`e`) {#themself}
 
-Pointer vowel **`e`** picks **this** sentence’s own event. A pointer in the object slot that names this sentence’s doer is English *herself* / *himself* / *themself* (a reflexive). (cue: **e** ≈ echo (this same sentence))
+English *herself* / *himself* / *themself* (a reflexive) point back to someone in the same sentence. Pointer vowel **`e`** does that: it picks **this** sentence’s own event, so a pointer in the object slot can name this sentence’s doer. (cue: **e** ≈ echo (this same sentence))
 
 > `zazawan vahahal daxer.`
 >
@@ -101,7 +101,7 @@ A pointer never names its own slot: `zaxer` as the subject would be the subject 
 
 ### The other one (`o`) {#the-other-one}
 
-Pointer vowel **`o`** skips whoever had that part last and picks the nearest earlier sentence with someone **else** in it: English *the other one*. (cue: **o** ≈ other)
+English *the other one* skips the person you just mentioned. Pointer vowel **`o`** does the same: it skips whoever had that part last and picks the nearest earlier sentence with someone **else** in that part. (cue: **o** ≈ other)
 
 > `zazawan vowogal. zalahen varahal. zalahen vehahel. zaxor vezebal.`
 >
@@ -121,7 +121,9 @@ Sometimes an earlier sentence has the event but never says who took part. *The c
 >
 > "The cookie is seen. Whoever saw it runs."
 
-This is the **`a`** rule turned around: **`a`** skips a sentence with nobody in that part, and **`u`** looks for exactly that sentence. It does not ask whether the verb could have that part: *it rains* also leaves its doer unsaid, so `zaxur` right after it is *whatever made it rain*. Once used, `zaxur` fills the subject like any noun, so a later `zaxar` reaches it (*they*, still unnamed). **`u`** goes with the same three role vowels: `zuxur` is *whatever it happened to*, when no sentence said what.
+This is the **`a`** rule turned around: **`a`** skips a sentence with nobody in that part, and **`u`** looks for exactly that sentence. It does not ask whether the verb could have that part: *it rains* also leaves its doer unsaid, so `zaxur` right after it is *whatever made it rain*.
+
+Once used, `zaxur` fills the subject like any noun, so a later `zaxar` reaches it (*they*, still unnamed). **`u`** goes with the same three role vowels: `zuxur` is *whatever it happened to*, when no sentence said what.
 
 **Compare with:** `unan` *someone* is tied to no event. `zaxur` is tied to one known event, *whoever did that*.
 
@@ -143,7 +145,7 @@ A pointer with **-r** is the same one again. To say a **new** one of the same ki
 >
 > "Azawan sees a red dog. Alahen sees a blue one."
 
-A pointer is an ordinary noun in a question, so a yes/no question keeps its meaning:
+In a yes/no question, a pointer works like any other noun and keeps the same meaning:
 
 > `zazawan dodogal geredal vahahal. yol zalahen duxal gubuhel vahahal.`
 >
@@ -157,7 +159,7 @@ A pointer is an ordinary noun in a question, so a yes/no question keeps its mean
 
 ### Share (-m) {#share}
 
-English often blurs *what they did* with *who they are*. A pointer with **-m** names the participant's **part** in the event, not the participant. That lets you talk about an act, to praise or criticize it, without making it a claim about the person.
+English often blurs *what they did* with *who they are*. A pointer with **-m** (a **share**) names the participant's **part** in the event, not the participant. That lets you talk about an act, to praise or criticize it, without making it a claim about the person.
 
 > `zazawan dalahen vabahel. zahaben daxar vahahal.`
 >
@@ -171,13 +173,13 @@ English often blurs *what they did* with *who they are*. A pointer with **-m** n
 >
 > "Azawan punches Alahen. Ahaben sees what they did." (sees the punch as Azawan's act, not Azawan)
 
-Each role vowel names a different part: `zaxam` is the doing, `zuxam` what it was for the one it happened to, and `zoxam` what reached the one told. Pointer vowels **`a`**, **`o`** and **`u`** work as before (`zaxom` *what the other one did*; `zaxum` *what was done, by whoever*). **`e`** and **-x** have no reading: a share is not a group of people, and it cannot be a part of the very event being described.
+Each role vowel names a different part: `zaxam` is the doing, `zuxam` what it was for the one it happened to, and `zoxam` what reached the one told. Pointer vowels **`a`**, **`o`** and **`u`** work as before (`zaxom` *what the other one did*; `zaxum` *what was done, by whoever*). **`e`** and **-x** have no reading with **-m**: a share cannot be part of the very event being described (**`e`**), and it is not a group of people (**-x**).
 
 **Compare with:** a resumed event noun names the whole event with everyone in it (*that punch*); `zaxam` names one person's part of it. `zaxar` is the person.
 
 ### Special pronouns {#special-pronouns}
 
-Most of the time you name people with a proper name (`zazawan`, `zalahen`) and resume with **-r**. A few closed roots instead name **roles in this conversation**: who is speaking, who is being spoken to, you-and-I together, or a nonspecific *someone*. They take the usual role letter for the slot they fill in the clause (subject, object, and so on). Person roles default to **-n**.
+Most of the time you name people with a proper name (`zazawan`, `zalahen`) and resume with **-r**. A few roots from a small fixed set (**closed roots**) instead name **roles in this conversation**: who is speaking, who is being spoken to, you-and-I together, or a nonspecific *someone*. They take the usual role letter for the slot they fill in the clause (subject, object, and so on), and in this use they end in **-n**, like a name.
 
 When a proper name is available, prefer that name (and its **-r** resume), including for talking about yourself: [proper name](word-endings.md#proper-name--n).
 
@@ -187,7 +189,7 @@ When a proper name is available, prefer that name (and its **-r** resume), inclu
 >
 > "I walk." You name yourself rather than saying *I*.
 
-Use **`amago`** (*speaker*) and **`ehodo`** (*listener*) when what matters is the conversation role, not a name. **`ehodo`** is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun, [below](#generic-pronoun). Both are five letters on purpose, so naming yourself and the other person stays the easier habit.
+Use **`amago`** (*speaker*) and **`ehodo`** (*listener*) when what matters is the conversation role, not a name. **`ehodo`** is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun, [below](#generic-pronoun). Both are five letters long on purpose, so that naming yourself and the other person stays the easier habit.
 
 > `zamagon dehodon vahahal.`
 >
@@ -209,7 +211,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 >
 > "We (you and I) walk."
 
-**`una`** names a nonspecific **individual** (*someone*), not a particular person you have already named. Once that person is in the talk, resume them with content **-r**.
+**`una`** names a nonspecific **individual** (*someone*), not a particular person you have already named. Once that person is in the conversation, resume them with whole-stem **-r**.
 
 > `zunan vezebal.`
 >
@@ -225,7 +227,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 | **`unan`** | nonspecific individual (`zunan` in subject slot) | *someone* | `unal` *neutral* | 😐: not a particular person |
 | **`oben`** | any person, as a rule (`zoben` in subject slot) | *one*, generic *you*, *people* | `obel` *person* | 🧑: a person in general |
 
-**Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* on this page is **`aha`**. *Here* / *there* and *this* / *that* use these same words as a landmark after a place hook ([deixis](hooks.md#deixis)).
+**Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* is **`aha`**. *Here* / *there* and *this* / *that* use these same words as a landmark after a place hook ([deixis](hooks.md#deixis)).
 
 ### Generic pronoun {#generic-pronoun}
 
@@ -237,7 +239,7 @@ English *one* and generic *you* (*one never knows*, *you feel awful when that ha
 >
 > "One sleeps." / "You sleep."
 
-The generic pronoun takes no number and no **-x**, because it already means people at large. **`obel`** *a person* and **`obem`** *humanity* keep their own senses. English *they say* is [hearsay](knowing.md#evidentiality), not a generic *they*. Next to the every-kind joins it is the pronoun-sized *people in general* ([joins](joins.md#generic-neighbors)).
+The generic pronoun takes no number and no **-x**, because it already means people at large. **`obel`** *a person* and **`obem`** *humanity* keep their own senses. English *they say* is [hearsay](knowing.md#evidentiality), not a generic *they*. The every-kind joins can say *people in general* as a phrase; **`oben`** is the one-word pronoun for it ([joins](joins.md#generic-neighbors)).
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -477,7 +479,7 @@ z-Alahen | d-Azawan | v-punch . z-Ahaben | d-←agent.same.part | v-see
 
 ### How English approximates **-r**
 
-Beginner already used content **-r** in the same slot as the earlier word (*he sits*). Keep that letter match; English wording follows the slot.
+Beginner used whole-stem **-r** in the same slot as the earlier word (*he sits*). The resume keeps the earlier word’s role letter, and the English for it depends on that slot:
 
 | Agazan | Use | English |
 |--------|-----|---------|
@@ -493,7 +495,7 @@ Beginner already used content **-r** in the same slot as the earlier word (*he s
 | `/y/` interjection … `-r` | same exclamation again | repeating that call-out |
 | `/x/` … `-r` after `/x/` | same linker again | *and so* / *likewise* |
 
-A few closed roots give **-r** a meaning of their own: the light end of a scale (`thovur` *may — who knows*, `thamar` *plan-sketch*), or a share of the cause on *because* ([fault](causation.md#fault)). On those, **-r** is that meaning, not a resume. Every other closed root resumes with **-r** like any content root, so `thoyer` after `thoyem` is the same condition again:
+A few [closed roots](#special-pronouns) give **-r** a meaning of their own: the light end of a scale (`thovur` *may — who knows*, `thamar` *plan-sketch*), or a share of the cause on *because* ([fault](causation.md#fault)). On those, **-r** is that meaning, not a resume. Every other closed root resumes with **-r** like any content root, so `thoyer` after `thoyem` is the same condition again:
 
 > `zalahen vowogal thoyem berehel. zazawan vowogal thoyer.`
 >
@@ -501,7 +503,7 @@ A few closed roots give **-r** a meaning of their own: the light end of a scale 
 >
 > "Alahen walks if it rains. In that case, Azawan walks too."
 
-For English *too* / *also*, resume the action. `/v/` **-r** is *the same action again*, so a new subject with a resumed verb reads *does so too*. With the same subject, recast the verb with a new object: *does the same with the dog too*.
+For English *too* / *also*, resume the action. `/v/` **-r** is *the same action again*, so a new subject with a resumed verb reads *does so too*. With the same subject, give the resumed verb a new object: *sees a dog too*.
 
 > `zalahen vowogal. zazawan vowogar.`
 >
@@ -515,7 +517,7 @@ For English *too* / *also*, resume the action. `/v/` **-r** is *the same action 
 >
 > "Azawan sees a cat. Azawan sees a dog too."
 
-**Compare with:** English *that* pointing at a quoted title, proverb, or aside uses a [role pointer](#role-pointers) (`duxar`, *that quote*), not content **-r**.
+**Compare with:** English *that* pointing at a quoted title, proverb, or aside uses a [role pointer](#role-pointers) (`duxar`, *that quote*), not whole-stem **-r**.
 
 ### Cross-role recast
 
@@ -559,7 +561,7 @@ With **-l**, **`hedal`** is strictly pairwise: every one of them does it to ever
 
 ### Addressing several people
 
-When you address several people at once, English *you* does not say how many. The listener root **`ehodo`** plus associative **-x** names everyone this turn addresses: the vocative cluster, plus anyone still held as addressee. One addressee stays singular **`ehodo`**; several take **`edone…x`**. Inclusive *shall we* stays **`aha`**. Soft **`zaham`** hedges whether you really share the act.
+English *you* does not say whether you are talking to one person or several. Agazan does: one addressee is **`ehodo`**, and the listener root plus associative **-x** (**`ehodonx`**) names everyone this turn addresses. That is everyone the turn’s calls named, plus anyone you were already addressing. Inclusive *shall we* is still **`aha`**, and soft **`zaham`** hedges whether you really share the act.
 
 > `zehodonx vehahel.`
 >
@@ -571,7 +573,7 @@ When you address several people at once, English *you* does not say how many. Th
 
 ### Ordinal pronouns {#ordinal-pronouns}
 
-Every person named in a [topic stretch](#topic-resets) gets a number, in the order they enter the talk: the first name is 1, the next new name is 2, and so on. To point back at someone by that number, write their [rank](numbers.md#ordinals) with **-r** under `/z/`, `/d/`, or `/b/`. `zrewor` is the first person named, as subject. `dredur` is the second, as object. The number belongs to the person, so they keep the same pronoun in every role; only the role letter changes. (cue: **e** ≈ order: the order they joined the talk)
+Every person named in the conversation gets a number, in the order they first appear: the first name is 1, the next new name is 2, and so on. To point back at someone by that number, write their [rank](numbers.md#ordinals) with **-r** under `/z/`, `/d/`, or `/b/`. `zrewor` is the first person named, as subject. `dredur` is the second, as object. The number belongs to the person, so they keep the same pronoun in every role; only the role letter changes. (cue: **e** ≈ order: the order they joined the conversation)
 
 > `zazawan dalahen vahahal. zalahen drewor vezebel. zrewor varahal.`
 >
@@ -609,7 +611,7 @@ Ordinals fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`ya
 >
 > "Azawan walks. Azawan and associates sleep."
 
-Ordinals are easiest when only a few people are in the talk. When the listener would have to stop and count, say the name.
+Ordinals are easiest when only a few people are in the conversation. When the listener would have to stop and count, say the name.
 
 ### Topic {#topic}
 
@@ -623,7 +625,7 @@ English *now, about Azawan…*, *speaking of dogs…*, and *so, back to Azawan�
 | `xevavem` / `xavazem` | clear the topic ([linkers](dependents.md#sentence-linkers)) | *next* / *by the way* |
 
 1. **No topic at the start.** A conversation opens with none.
-2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xodogal` *now, about a dog*). Any [compound](x-compounds.md) works the same way: a multipart name (`xazawaxalahen`), a noun pair (`xebeyaxabodel` *now, about peanut butter*), or a [role compound](roles.md#role-compounds) (`xaxedehol` *now, about people who teach*; `xaxedehor` returns to it). It takes the same adjectives and hooks as any noun (`xodogal em bazawan` *now, about Azawan's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it. A [span](spans.md#topic-quotes) in this slot is the same job for a foreign name, a word as spelling, or a titled work (<code>x@&lt;Sam&gt;</code>, `x@[onodan alahen]`, or a word as spelling, which takes the [mention](spans.md#mention) marker before it).
+2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six sentence linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xodogal` *now, about a dog*). Any [compound](x-compounds.md) works the same way: a multipart name (`xazawaxalahen`), a noun pair (`xebeyaxabodel` *now, about peanut butter*), or a [role compound](roles.md#role-compounds) (`xaxedehol` *now, about people who teach*; `xaxedehor` returns to it). It takes the same adjectives and hooks as any noun (`xodogal em bazawan` *now, about Azawan's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it. A [span](spans.md#topic-quotes) in this slot is the same job for a foreign name, a word as spelling, or a titled work (<code>x@&lt;Sam&gt;</code>, `x@[onodan alahen]`, or a word as spelling, which takes the [mention](spans.md#mention) marker before it).
 3. **Return.** `/x/` + the whole stem of an earlier word + **-r** makes that thing the topic again.
 4. **Clear.** `xevavem` and `xavazem` each open a new frame. After either there is no topic until the next introduce or return.
 5. **Persist.** The topic holds until rule 2, 3, or 4 changes it. Clause joins, other linkers, and agenda numbering leave it alone. A goodbye ends the conversation and clears it.
@@ -685,7 +687,7 @@ Without `xazawar`, the last sentence would have no topic and `zozan` would not b
 
 ### Ordinals count everyone else {#topic-ordinals}
 
-The topic never takes an [ordinal](#ordinal-pronouns), even when it is a name and even when it is named again in its stretch. Other names count from 1 in order of entry. So the topic is always `zozan`, and `zrewor` is always the first *other* person: one form per referent, whether or not the topic is a name.
+The topic never takes an [ordinal](#ordinal-pronouns), even when it is a name and even when it is named again in its stretch. Other names count from 1 in order of entry. So the topic is always `zozan`, and `zrewor` is always the first *other* person: one form for each person or thing, whether or not the topic is a name.
 
 ### What a topic change resets {#topic-resets}
 
@@ -716,7 +718,7 @@ Both set the topic. The difference is the ordinary difference between **-r** and
 
 For names, the two pick the same person: choose by what the listener should hear, something new or a way back. For kinds, only the return reaches the earlier thing. A return that resumes a [sentence linker](dependents.md#sentence-linkers) (`xodur` after `xodum`) is only that linker again, and sets no topic.
 
-A return still asserts nothing. It does set the topic, so dropping it changes who `zozan` is, or leaves `zozan` with no topic, which is not a sentence.
+A return makes no claim by itself, but it does set the topic, so leaving it out changes who `zozan` is, or leaves `zozan` with no topic, which is not a sentence.
 
 > `zazawan vowogal. zalahen varahal. xazawar zozan vehahel.`
 >
@@ -736,7 +738,7 @@ A return still asserts nothing. It does set the topic, so dropping it changes wh
 
 ### Topic words and dependents {#topic-dependents}
 
-A [dependent](dependents.md#dependent-clauses) is the sentence after a stand-in (`darl`, `dorl`, `derl`, `durl`, `barl`), and it belongs to the outer sentence. A topic word cannot sit inside one: a topic change is your own act on the conversation, and it would be buried in content you do not assert. Change the topic before the outer sentence, or frame one clause with *as for*:
+A [dependent](dependents.md#dependent-clauses) is the sentence after a stand-in (`darl`, `dorl`, `derl`, `durl`, `barl`), and it belongs to the outer sentence. A topic word cannot sit inside one: a topic change is something you yourself do to the conversation, but the content of a dependent is not something you assert yourself. Change the topic before the outer sentence, or frame one clause with *as for*:
 
 | Want | Use |
 |------|-----|
@@ -748,7 +750,7 @@ Reading the topic from inside a dependent is fine: `zozan`, ordinals, and role p
 
 ### Quotes and asides {#topic-quotes}
 
-A quote is someone else's talk, so it keeps a topic and an ordinal count of its own, and none of it leaks out; an aside uses your stretch and never changes the topic ([topics in a quote](spans.md#topic-quotes)). For a real side topic, end the sentence and use `xavazem`.
+A quote is someone else's talk, so it keeps its own topic and its own ordinal count, and neither carries over into yours. An aside uses your stretch and never changes the topic ([topics in a quote](spans.md#topic-quotes)). For a real side topic, end the sentence and use `xavazem`.
 
 ### Me or you as the topic {#topic-participants}
 
@@ -756,7 +758,7 @@ A quote is someone else's talk, so it keeps a topic and an ordinal count of its 
 
 ### Asking about the topic {#topic-question}
 
-To ask what the talk is about, use the *which X* shape: the join blank `zar` with `gahehom` *topic* shared after it. The natural answer is a lone `/x/` introduce or return, which sets the topic for both speakers.
+To ask what the talk is about, use the *which X* shape: the join blank `zar` with `gahehom` *topic* after it. The natural answer is a lone `/x/` introduce or return, which sets the topic for both speakers.
 
 > `yol zar gahehom.`
 >
