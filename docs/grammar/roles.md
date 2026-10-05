@@ -2,7 +2,7 @@
 
 When English would name a person, place or time from an event (*a teacher* from *teach*, *the one told*, *a sleeping place*, *bedtime*), Agazan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](word-endings.md). **`a`** is the doer, **`e`** is the scene of the event (where or when), **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
 
-The ending picks **any** vs **this instance**. Non-resume (**-l** / **-m** / **-n**) is someone who does it, with no claim about how often: *someone who teaches*. Resume (**-r**) is the person or place of **that** latest matching event: *the one teaching*. Later, a usual role, the kind English names as a job (*a teacher*), adds a scope vowel after the stem ([the usual role](#usual-role)).
+The ending decides whether you mean anyone in that part or the one from a particular event. With **-l**, **-m**, or **-n**, the word is anyone who does it, with no claim about how often: *someone who teaches*. With **-r**, it is the person or place of the latest matching event: *the one teaching*. To say it is their usual role, the kind English names as a job (*a teacher*), add a scope vowel after the stem ([the usual role](#usual-role)).
 
 ## Beginner {#beginner}
 
@@ -17,11 +17,11 @@ English *someone who teaches* names a person from what they do, from the same id
 >
 > "Someone who teaches runs."
 
-The last letter is the ordinary [reference ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** the published abstract. `zaxedehol` is *someone who teaches*; `zaxavadal` is *someone who fights*; `zaxavadam` is *someone who struggles*. You do not need a prior teaching or fight in the talk, and the word says nothing about how often: one lesson is enough.
+The last letter is the ordinary [reference ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** its abstract sense. `zaxedehol` is *someone who teaches*; `zaxavadal` is *someone who fights*; `zaxavadam` is *someone who struggles*. No teaching or fight needs to come up earlier in the conversation, and the word says nothing about how often: one lesson is enough.
 
-When the event is a conventional compound, the role compound takes the whole stem: `zaxubugalahahal` is *someone who reads*, from `ubugalahahal` *read*.
+When the event is a dictionary word built from two roots, the role compound takes the whole word as its stem: `zaxubugalahahal` is *someone who reads*, from `ubugalahahal` *read*.
 
-A noun that specifies the event goes in the same stem, joined with **`x`** like any [ordinary compound](x-compounds.md#ordinary-compound-order): `zaxodogaxowogal` is *someone who walks dogs* (the doer of *dog-walking*). The noun's part in the event is as open as in English (*dog walker*, *coffee maker*); for an exact part, use a [hook](hooks.md#extra-noun) or a second sentence. **-r** resumes the whole stem.
+A noun that specifies the event goes in the same stem, before the event and joined to it with another **`x`**: `zaxodogaxowogal` is *someone who walks dogs* (the doer of *dog-walking*). The noun's part in the event is as open as in English (*dog walker*, *coffee maker*); for an exact part, use a [hook](hooks.md#extra-noun) or a second sentence. **-r** resumes the whole stem.
 
 > `zaxodogaxowogal varahal.`
 >
@@ -31,21 +31,19 @@ A noun that specifies the event goes in the same stem, joined with **`x`** like 
 
 A role compound has one role vowel, left of the first **`x`**. It is never one piece of another compound.
 
-**Compare with:** a role compound puts the role vowel **left** of **`x`**. Later, [ability](intention.md#ability) (*can teach*) puts a vowel **right** of **`x`**, and the two can combine.
-
 ### This instance (`-r`)
 
-Once the talk already has a matching event (*teaches*), **-r** on the same stem means **this** doer of that event (*the one teaching*), not just anyone who teaches.
+English *the one teaching* points at the doer of an event already mentioned. Put **-r** on the role compound: once the conversation has a matching event (*Azawan teaches*), **-r** on the same stem means **that** doer, not just anyone who teaches.
 
 > `zazawan vedehol.`
 > `zaxedehor vezebal.`
 >
 > z-Azawan | v-teach
-> z-←teach | v-sleep
+> z-←agent-x-teach | v-sleep
 >
 > "Azawan teaches. The one teaching sleeps."
 
-A role compound can also continue a pronoun. Keep its role-compound shape, spell the event’s whole stem, and end in **-r**. In `vehahel` (*sit*), the stem is **`ehahe`**. So `zaxehaher` is subject **`z`** + doer role compound **`ax`** + that event stem **`ehahe`** + pronoun **`-r`**.
+To build the **-r** form, take the whole stem of the earlier verb. In `vehahel` (*sit*), the stem is **`ehahe`**, so *the one sitting* is `zaxehaher`: subject **`z`**, doer **`ax`**, the stem **`ehahe`**, and **-r**.
 
 > `zazawan vehahel. zaxehaher vowogal.`
 >
@@ -55,13 +53,13 @@ A role compound can also continue a pronoun. Keep its role-compound shape, spell
 
 ### The undergoer (`u`)
 
-English *the one seen* or *the one fought* names the person the event happens to. Use the same compound shape as the doer, but write **`u`** in the vowel slot. (cue: **u** ≈ undo (the one it happens to)) Non-resume is someone it happens to (*someone seen*); **-r** is **this** undergoer of the latest matching event.
+English *the one seen* or *the one fought* names the person the event happens to. Use the same compound shape as the doer, but write **`u`** in the vowel slot. With **-l**, it is anyone it happens to (*someone seen*); with **-r**, it is the undergoer of the latest matching event. (cue: **u** ≈ undo (the one it happens to))
 
 > `zazawan dagadul vahahal.`
 > `zuxahahar varahal.`
 >
 > z-Azawan | d-cat | v-see
-> z-←see | v-run
+> z-←patient-x-see | v-run
 >
 > "Azawan sees a cat. The one seen runs."
 
@@ -70,7 +68,7 @@ English *the one seen* or *the one fought* names the person the event happens to
 
 English *a sleep-place* or *bedtime* names where or when an event happens, from the same idea as *sleep*. Use the same compound shape as the doer, but write **`e`** in the vowel slot. That named thing is the **scene of the event**: its place or its time, not the sleeper. (cue: **e** ≈ order (the scene the act is ordered in))
 
-You can name such a scene with no prior sleep in the talk:
+You can name such a scene even when no sleep has come up in the conversation:
 
 > `zazawan dexezebal vahahal.`
 >
@@ -80,62 +78,64 @@ You can name such a scene with no prior sleep in the talk:
 
 The same word can be a time. In `/h/`, `hexezebal` is *at bedtime*.
 
-Once the talk already has a matching event, **-r** means **this** scene of that event (where or when it happened), not a kind of scene. The next sentence is a new claim about the place (who sees it, who punches it), not a locative on the first verb.
+Once the conversation has a matching event, **-r** means the scene of **that** event (where or when it happened), not a kind of scene. The sentence with the scene word is a new claim about that place (who sees it, who punches it); it does not add a place to the first verb.
 
 > `zalahen vezugel.`
 > `zazawan dexezuger vahahal.`
 >
 > z-Alahen | v-scream
-> z-Azawan | d-←scream | v-see
+> z-Azawan | d-←scene-x-scream | v-see
 >
-> "Alahen screams. Azawan sees the scream-place."
+> "Alahen screams. Azawan sees the place where Alahen screams."
 
-`zexagozal` is a place where something is constructed (the **-l** sense of *construct*). A construction site as a listed kind, with no event, can stay `dagezal`.
+`zexagozal` is a place where something is constructed (the **-l** sense of *construct*). A construction site as a kind of place, with no event in mind, is the dictionary word `dagezal`.
 
-**Compare with:** `zaxagozal` is who constructs; `duxagozal` is what is constructed. *Constructs in a house* locates **that same** constructing: extra-noun [hook](hooks.md#extra-noun) **`al`** plus `/b/`. Do not write **`exROOT`** when a hook on that clause would do. *Writes with a hammer* is likewise an extra-noun hook plus `/b/`, not this vowel. To name the tool itself as a kind, see [instruments](#instrument).
+**Compare with:** `zaxagozal` is who constructs; `duxagozal` is what is constructed. To say where a constructing in your sentence happens (*constructs in a house*), put the place on that clause with the extra-noun [hook](hooks.md#extra-noun) **`al`** plus `/b/`. The scene word is for naming the place itself.
 
 ### The extra `/b/` party (`o`)
 
-English *the one told* names who gets the telling. That person sits in unhosted `/b/` after the verb ([extra nouns](clause.md#extra-nouns)). To name them from the verb stem, write **`o`** in the vowel slot. That named party is the **recipient**. (cue: **o** ≈ one (that extra one))
+English *the one told* names who gets the telling. In a sentence, that person is the **recipient**: a `/b/` word with no relation word before it ([extra nouns](clause.md#extra-nouns)). To name them from the verb stem, write **`o`** in the vowel slot. (cue: **o** ≈ one (that extra one))
 
 > `zazawan vezebel.`
 > `zoxezeber varahal.`
 >
 > z-Azawan | v-tell
-> z-←tell | v-run
+> z-←recipient-x-tell | v-run
 >
 > "Azawan tells. The one told runs."
 
 You can name that party with no prior telling: `zoxezebel` is someone told something (the **-l** sense of *speech*).
 
-Some stems name a **relation** (who is bound to whom), not an action. The extra person of that relation sits in **hosted** `/b/` after the relation word. The same **`o`** names that person from the relation stem (*the other party of the bond*). That named party is the **reltum**.
+Some stems name a **relation** (who is bound to whom), not an action. The other person of that relation is the `/b/` word right after the relation word. The same **`o`** names that person from the relation stem (*the other party of the bond*).
 
 > `zazawan ganam balahen.`
 > `zoxanar varahal.`
 >
 > z-Azawan | [g-bond | b-Alahen]
-> z-←bond | v-run
+> z-←recipient-x-bond | v-run
 >
 > "Azawan is bound to Alahen. That other party of the bond runs."
 
-**Compare with:** extra-noun *for* (`el` plus `/b/`) is the intended get, not the hearer.
+**Compare with:** *for someone* (who the act is meant to benefit) is the extra-noun hook **`el`** plus `/b/`, not the recipient.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…axROOT…` | names the doer of an event | *someone who teaches* / *the one teaching* | **a** ≈ add (add a doer) |
-| `…exROOT…` | names the scene (place or time) of an event | *a place where someone sleeps* / *that scream-place* | **e** ≈ order (the scene the act is ordered in) |
+| `…exROOT…` | names the scene (place or time) of an event | *a place where someone sleeps* / *the place of that scream* | **e** ≈ order (the scene the act is ordered in) |
 | `…uxROOT…` | names the undergoer of an event | *someone seen* / *the one seen* (this seeing) | **u** ≈ undo (the one it happens to) |
 | `…oxROOT…` | names the extra `/b/` party | *someone told* / *the one told* | **o** ≈ one (that extra one) |
 
-A role compound fills `/z/`, `/d/`, `/b/`, or `/ɡ/`. Under `/x/` it sets a [topic](pronouns.md#topic), as any compound does (`xaxedehol` *now, about people who teach*), and under `/y/` with **-n** or **-r** it calls someone (`yaxebezan` calls the doctor). It names a role of an event, so a [special pronoun](pronouns.md#special-pronouns) (root + **-n**) is never its stem; the same root on **-l** is an ordinary word.
+A role compound fills `/z/`, `/d/`, `/b/`, or `/ɡ/`. Under `/x/` it sets a [topic](pronouns.md#topic), as any compound does (`xaxedehol` *now, about people who teach*), and under `/y/` with **-n** or **-r** it calls someone (`yaxebezan` calls the doctor).
 
-Non-resume is **any** such participant: someone who does it, a place or time where it happens, someone it happens to. Later, a scope vowel after the stem makes it the [usual role](#usual-role). **-r** looks back to the latest verb, event noun, or relation with that whole stem (including a stem already inside a role compound) and names **this instance**. The vowel still picks which part you mean: doer, scene, undergoer, or extra `/b/` party.
+Its stem is always an event. A [special pronoun](pronouns.md#special-pronouns) such as `amagon` (*the speaker*) names a person, not an event, so `zaxamagon` is not a word. The same root on **-l** is an ordinary content word with a verb sense (*perform*), so it can be a stem: `zaxamagol` is *someone who performs*.
+
+With **-l**, **-m**, or **-n**, the word is **any** such participant: someone who does it, a place or time where it happens, someone it happens to. **-r** looks back to the latest verb, event noun, or relation with that whole stem (including a stem already inside a role compound) and names **this instance**. The vowel still picks which part you mean: doer, scene, undergoer, or extra `/b/` party.
 
 ### Without the stem: role pointers {#role-pointers-family}
 
 A [role pointer](pronouns.md#role-pointers) is this same word with the event stem left out: the role vowel, **`x`**, a pointer vowel, and an ending (**-r** the participant itself, **-l** a new one of its kind, **-m** its part in the event). Instead of naming the event, the pointer vowel picks it by position: **`a`** the latest one, **`e`** this sentence’s own, **`o`** the other one, **`u`** the one that left the part unsaid. `zaxehaher` is *the one who sat*; `zaxar` is *whoever did the latest thing*.
 
-The scene works the same way. With a place in the clause (*in a house*), scene **`e`** is that place:
+A scene pointer names the place or time of the latest event. If that clause has a place (*in a house*), the scene is that place:
 
 > `zazawan vezebal al bahazal. zalahen dexar vahahal.`
 >
@@ -145,11 +145,11 @@ The scene works the same way. With a place in the clause (*in a house*), scene *
 
 With no place, a *during* time is the scene (`huwem bavodel`, *during the storm*). With neither, `dexar` is the event’s own place or time, as `dexezebar` would be. A place wins over a time, and with two places the first one is the scene. *Before*, *after*, *until*, *by*, and an [as-of](relations.md#as-of) pair name a time the event is measured from, not its scene.
 
-**Compare with:** for the doer, the undergoer, or the extra party, a pointer looks back to whoever last had that part, skipping events without one ([role pointers](pronouns.md#role-pointers)). For the scene, it takes the latest event, whatever it has. Scene **`u`** (`zexur` *wherever it happened*) says nobody has named the place, where `zexar` is a place the talk already gave.
+**Compare with:** for the doer, the undergoer, or the extra party, a pointer looks back to whoever last had that part, skipping events without one ([role pointers](pronouns.md#role-pointers)). For the scene, it takes the latest event, whatever it has. Scene **`u`** (`zexur` *wherever it happened*) says nobody has named the place, where `zexar` is a place the conversation already gave.
 
 ### The event itself
 
-If you put the event stem on a thing letter with no role vowel (`davadal`), you name the fight itself. Use **`ax`**, **`ex`**, **`ux`**, or **`ox`** when you mean who fights, where or when the fight is, who is fought, or who is told.
+English *a fight* names the event itself, not anyone in it. Put the event root on a thing letter with no role vowel: `davadal` is *a fight*. Use **`ax`**, **`ex`**, **`ux`**, or **`ox`** only when you mean who fights, where or when the fight is, who is fought, or the extra `/b/` party.
 
 > `zazawan davadal vahahal.`
 >
@@ -162,7 +162,7 @@ If you put the event stem on a thing letter with no role vowel (`davadal`), you 
 ### Saying someone does it
 <a id="saying-someone-is-a-teacher"></a>
 
-To say someone **is one who teaches**, put the same role stem on `/ɡ/`, as in [classification](predication.md#classification). The word says only that they do it, with no claim about how often. Resume on `/ɡ/` classifies them as **this** doer of the matching event (*is the one teaching*).
+To say someone **is one who teaches**, put the same role compound on `/ɡ/`, as in [classification](predication.md#classification). The word says only that they do it, with no claim about how often. With **-r** on `/ɡ/`, it says they are the doer of the matching event (*is the one teaching*).
 
 > `zazawan gaxedehol.`
 >
@@ -182,7 +182,7 @@ To say someone **is one who teaches**, put the same role stem on `/ɡ/`, as in [
 >
 > "Azawan is one who struggles."
 
-The same adjective after another noun picks out a host by that role.
+After another noun, the same `/ɡ/` word picks out which one you mean by that role.
 
 > `zazawan dagavol gaxavadal vahahal.`
 >
@@ -190,7 +190,7 @@ The same adjective after another noun picks out a host by that role.
 >
 > "Azawan sees a guard who fights."
 
-**Compare with:** the plain root on `/ɡ/` is the act [in progress](predication.md#in-progress): `dagavol gavadal` is *a fighting guard*, in the middle of a fight. *Is a teacher*, the usual role, comes [later](#usual-role). English *the guard who fought (that time)* with extra participants or a place is [two sentences](dependents.md#which-noun), not this role word.
+**Compare with:** the plain root on `/ɡ/` is the act [in progress](predication.md#in-progress): `dagavol gavadal` is *a fighting guard*, in the middle of a fight. English *the guard who fought (that time)* with extra participants or a place is [two sentences](dependents.md#which-noun), not this role word.
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -239,7 +239,7 @@ z-agent-x-construct | v-sit
 z-Azawan | v-construct . z-←agent-x-construct | d-helmet | v-see
 :::
 
-**3.** *Alahen screams. Azawan sees the scream-place.*
+**3.** *Alahen screams. Azawan sees the place where Alahen screams.*
 
 ::: details Show answer
 `zalahen vezugel. zazawan dexezuger vahahal.`
@@ -261,8 +261,6 @@ z-Azawan | z-Ahaben | v-see . z-←patient-x-see | v-sit
 `zazawan gaxagozam.`
 
 z-Azawan | g-agent-x-fabrication
-
-*Azawan is one who fabricates.*
 :::
 
 **6.** *Azawan sees a construction site.*
@@ -392,7 +390,7 @@ z-agent-x-dog-x-walk | v-sit
 
 ### The usual role (`the`) {#usual-role}
 
-English *a teacher* says more than *someone who teaches*: teaching is that person's usual role, often a job. Write the role compound, then mid-word **`th`**, then **`e`**, then the ending. This is the [practiced role](predication.md#scope-occupation) scope: the role is the office they inhabit. (cue: **e** ≈ order (a sequence of practice))
+English *a teacher* says more than *someone who teaches*: teaching is that person's usual role, often a job. Write the role compound, then mid-word **`th`**, then **`e`**, then the ending. This is the [practiced role](predication.md#scope-occupation) label scope: it says the role is something they regularly do, not one act. (cue: **e** ≈ order (a sequence of practice))
 
 > `zaxedehothel varahal.`
 >
@@ -402,7 +400,7 @@ English *a teacher* says more than *someone who teaches*: teaching is that perso
 
 `zaxavadathel` is *a fighter*, and `zaxodogaxowogathel` is *a dog walker*. A role compound without **`the`** never makes that claim, so one fight does not make someone a fighter.
 
-**Compare with:** **`the`** fills the one seam a role compound has, so a usual role does not also take [ability](intention.md#role-ability). Other [scope vowels](predication.md#scope-role) go in the same spot: **`tha`** is *this time only*, **`thu`** is a teacher type.
+**Compare with:** a role compound takes only one addition after its stem, so a usual role (**`the`**) does not also take [ability](intention.md#role-ability). Other [scope vowels](predication.md#scope-role) go in the same spot: **`tha`** is *this time only*, **`thu`** is a teacher type.
 
 The other role vowels work the same way. With **`the`**, a scene is where the event usually happens: `dexezebathel` is *a sleeping place*. To say someone **is** a teacher, put the same word on `/ɡ/`.
 
@@ -414,7 +412,7 @@ The other role vowels work the same way. With **`the`**, a scene is where the ev
 
 ### Instrument (`ae`) {#instrument}
 
-Beginner already used four role vowels. Stacked vowels name six more parts of an event, the same way.
+Beginner already used four role vowels. Six two-vowel pairs in the same slot name six more parts of an event.
 
 English *a writing tool* or *an opener* names the thing an event is done **with**. Write **`ae`** in the vowel slot. (cue: **ae** is the same pair as the hook **`ael`** *using*)
 
@@ -436,7 +434,7 @@ With **-r**, it is the tool used in **that** event.
 
 ### Goal, source, path (`oe` / `ua` / `uo`) {#goal-source-path}
 
-A movement has three more parts: where it heads, where it comes out of, and the way it goes. Each uses the stacked vowel of the matching [extra-noun hook](hooks.md#extra-noun-intermediate).
+A movement has three more parts: where it heads, where it comes out of, and the way it goes. Each uses the two-vowel pair of the matching [extra-noun hook](hooks.md#extra-noun-intermediate).
 
 | Agazan | Names | English | Cue |
 |--------|-------|---------|-----|
@@ -506,7 +504,7 @@ With **-r**, it is the one who pays for **that** event.
 
 ### Stacked vowels on a pointer {#stacked-pointers}
 
-Each stacked vowel also makes a [role pointer](#role-pointers-family): leave out the stem, and pointer vowel **`a`** reads the latest event. If that clause has the matching hook (**`ael`**, **`oel`**, **`ual`**, **`uol`**, **`uel`**) with its `/b/`, the pointer is that `/b/`; otherwise it is the event’s own tool, goal, and so on.
+Each two-vowel pair also makes a [role pointer](#role-pointers-family): leave out the stem, and pointer vowel **`a`** reads the latest event. If that clause has the matching hook (**`ael`**, **`oel`**, **`ual`**, **`uol`**, **`uel`**) with its `/b/`, the pointer is that `/b/`; otherwise it is the event’s own tool, goal, and so on.
 
 > `zazawan vowogal oel bahazal. zalahen doexar vahahal.`
 >
@@ -529,7 +527,9 @@ Each stacked vowel also makes a [role pointer](#role-pointers-family): leave out
 | `daoxar` | what it made | (always the event’s own) |
 | `zuexar` | the one who paid for it | **`uel`** |
 
-The other endings and pointer vowels of the [pronouns](pronouns.md#role-pointers) page go on these too. **-l** is a new one of that kind (`daexal` *another tool like that one*), and **-m** is that part’s share in the event (`daexam` *what the tool did*, `zuexam` *the cost they bore*, as apart from the theft and the victim). Pointer vowel **`u`** picks the latest event that left that part unsaid (`daexur` *whatever it was done with*). Pointer vowel **`o`** is *the other one*: `daexor` is *the other tool*, the nearest earlier event whose named tool is someone or something else. Only an event that names that tool, goal, source, or path with its `/b/` counts, so events that left it out are skipped, as **`a`** skips an event with nobody in the part.
+The other endings and pointer vowels of the [pronouns](pronouns.md#role-pointers) page go on these too. **-l** is a new one of that kind (`daexal` *another tool like that one*), and **-m** is that part’s share in the event (`daexam` *what the tool did*; `zuexam` *the cost they bore*, rather than the theft or the victim).
+
+Pointer vowel **`u`** picks the latest event that left that part unsaid (`daexur` *whatever it was done with*). Pointer vowel **`o`** is *the other one*: `daexor` is *the other tool*, the nearest earlier event whose named tool is someone or something else. Only an event that names that tool, goal, source, or path with its `/b/` counts, so events that left it out are skipped, as **`a`** skips an event with nobody in the part.
 
 > `zazawan vugugal ael banaval. zalahen vugugal ael buzubul. zazawan daexor vahahal.`
 >
@@ -537,13 +537,17 @@ The other endings and pointer vowels of the [pronouns](pronouns.md#role-pointers
 >
 > "Azawan cooks with a knife. Alahen cooks with a spoon. Azawan sees the other tool (the knife)."
 
-The scene stays out of this: `zexor`, `zexol`, and `zexom` are not words.
+The scene has no such forms: `zexor`, `zexol`, and `zexom` are not words.
 
 ### Viewpoint laterals (`DIR` × anchor) {#viewpoint-laterals}
 <a id="spatial-laterals"></a>
 <a id="my-left-your-left"></a>
 
-English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of a viewpoint (*Azawan’s left*, *the car’s left*). For the viewpoint reading, write the same arrow root, then mid-word **`th`**, then the thing whose facing counts as north, then an ordinary [reference ending](word-endings.md). A person’s front is the direction they face. For an object, use the front its design or current use makes forward; if that does not settle a front, establish the frame in context. You can then say *walk left* without meaning *walk west*. The [sake](sakes.md#sake-inventory) roots are never a direction: after one of them, **`th`** starts a sake word, even when a root-shaped piece follows ([emotion compose](sakes.md#emotion-compose)).
+English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of a viewpoint (*Azawan’s left*, *the car’s left*). For the viewpoint reading, write the same arrow root, then mid-word **`th`**, then the person or thing whose facing counts as north, then an ordinary [reference ending](word-endings.md). You can then say *walk left* without meaning *walk west*.
+
+A person’s front is the direction they face. For an object, use the front its design or current use makes forward; if that does not settle a front, make the frame clear from context.
+
+The [sake](sakes.md#sake-inventory) roots are never a direction: after one of them, **`th`** starts a sake word, even when a root-shaped piece follows ([emotion compose](sakes.md#emotion-compose)).
 
 > `yel vowogal hewezathazawan.`
 >
@@ -587,7 +591,7 @@ For *their left*, put a [role pointer](pronouns.md#role-pointers) on **-r** afte
 
 ### Arrow rose (compass vs face)
 
-The examples above already used *west* / body *left*. The rest of the rose is the same pattern: bare = compass; **`th`** + facing person = that point on their body map.
+The examples above used *west* / *left*. The other seven arrow roots work the same way: alone, each is a compass heading; with **`th`** and a facing person, it is that direction from the person’s body.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -600,11 +604,11 @@ The examples above already used *west* / body *left*. The rest of the rose is th
 | **`azovel`** | compass heading, or back-right on a face | *southeast* / *back-right* | ↘️ *southeast-arrow*: between south and east |
 | **`azawel`** | compass heading, or back-left on a face | *southwest* / *back-left* | ↙️ *southwest-arrow*: between south and west |
 
-Indoor headings may follow a local map (building north). Prefer a named viewpoint or listener frame when you mean a person’s body rose (`…thazawan`, `…thehedonen`). For an object, use its design or current use to determine forward; establish the frame when that is ambiguous.
+Indoor headings may follow a local map (building north). When you mean directions from a person’s body, name the viewpoint or use the listener (`…thazawan`, `…thehodon`).
 
 ### Gravity (`abaha` / `adahe`) {#gravity}
 
-English *up* / *down* here follows the pull of gravity, not a face. Write **`abaha`** (skyward) or **`adahe`** (toward the pull) as ordinary content words, with no **`th`** + facing person. Everyone shares that frame.
+English *up* / *down* usually follows the pull of gravity, not anyone’s facing. Write **`abaha`** (skyward) or **`adahe`** (toward the pull) as ordinary content words, with no **`th`** + facing person. Everyone shares that frame.
 
 > `yel vowogal habahal.`
 >
@@ -626,15 +630,15 @@ English *up* / *down* here follows the pull of gravity, not a face. Write **`aba
 
 ### Viewpoint vs landmark
 
-English *on Azawan’s left of the tree* needs both a facing person and a landmark. Put the facing person after **`th`**; put the tree, door, or wall in `/b/`. `/b/` is the landmark, not whose left.
+English *left of the tree, from Azawan’s view* needs both a facing person and a landmark. Put the facing person after **`th`**; put the tree, door, or wall in `/b/`. The `/b/` word is the landmark, not whose left it is.
 
 > `zubugal gewezathazawan bedehul.`
 >
 > z-book | [g-west-th-Azawan | b-tree]
 >
-> "The book is on Azawan’s left of the tree."
+> "The book is left of the tree, from Azawan’s view."
 
-Bare compass + `/b/` is a region on that heading of the landmark (`gewezal bedehul` *west of the tree*).
+A bare compass word plus `/b/` is the region on that side of the landmark (`gewezal bedehul` *west of the tree*).
 
 Gravity works the same way: bare **`adahe`** + `/b/` is *under* the landmark, and bare **`abaha`** + `/b/` is *above* / *over* it.
 
@@ -657,7 +661,7 @@ Gravity works the same way: bare **`adahe`** + `/b/` is *under* the landmark, an
 | Bare DIR | compass / gravity | `gewezal` *west*; `gabahal` *up* |
 | **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewezathehodon` *listener-left* |
 | DIR + **`th`** + **`o`** + `/b/` | that point on the **landmark’s** own rose | `gazavathol bahazal` *behind the house* |
-| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gewezathazawan bedehul` *on Azawan’s-left of the tree* |
+| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gewezathazawan bedehul` *left of the tree, from Azawan’s view* |
 
 ### The landmark's own front (DIR + `th` + `o`) {#landmark-facing}
 
@@ -684,7 +688,7 @@ The landmark's front is where its design or current use faces (a house's front d
 | `gazavathol bahazal` | *behind the house* (its own back) |
 | `gonovathol bahazal` | *in front of the house* |
 | `gewezathol bahazal` | *on the house's left* |
-| `gewezathazawan bahazal` | *on Azawan's left of the house* |
+| `gewezathazawan bahazal` | *left of the house, from Azawan's view* |
 | `gewezal bahazal` | *west of the house* |
 
 ### Endings and resume
@@ -775,7 +779,7 @@ z-ship | g-east-th-Alahen
 y-command | v-walk | h-down
 :::
 
-**5.** *The life-buoy is on Azawan’s left of the boat.*
+**5.** *The life-buoy is left of the boat, from Azawan’s view.*
 
 ::: details Show answer
 `zalavul gewezathazawan bobodal.`
@@ -875,7 +879,7 @@ y-command | v-walk | h-up
 
 z-life-buoy | [g-west-th-Alahen | b-boat]
 
-*The life-buoy is on Alahen’s left of the boat.*
+*The life-buoy is left of the boat, from Alahen’s view.*
 :::
 
 **6.** `yel zehodon vowogal hoduthehodon.`
@@ -905,7 +909,7 @@ y-command | z-Alahen | v-walk | h-down
 *Alahen, walk down.*
 :::
 
-**8.** `zalahen doexuvudel vahahal.`
+**9.** `zalahen doexuvudel vahahal.`
 
 ::: details Show answer
 
@@ -914,7 +918,7 @@ z-Alahen | d-goal-x-footprints | v-see
 *Alahen sees a destination.*
 :::
 
-**9.** `zazawan vobohol. zalahen duaxobohor vahahal.`
+**10.** `zazawan vobohol. zalahen duaxobohor vahahal.`
 
 ::: details Show answer
 
@@ -923,7 +927,7 @@ z-Azawan | v-pour . z-Alahen | d-←source-x-pour | v-see
 *Azawan pours. Alahen sees where it was poured from.*
 :::
 
-**10.** `zalahen varagum. zazawan duexaragur vahahal.`
+**11.** `zalahen varagum. zazawan duexaragur vahahal.`
 
 ::: details Show answer
 
@@ -932,7 +936,7 @@ z-Alahen | v-steal . z-Azawan | d-←bearer-x-steal | v-see
 *Alahen steals. Azawan sees the one stolen from.*
 :::
 
-**11.** `zalahen vavadal. zazawan daexar vahahal.`
+**12.** `zalahen vavadal. zazawan daexar vahahal.`
 
 ::: details Show answer
 

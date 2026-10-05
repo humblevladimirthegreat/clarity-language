@@ -2,13 +2,13 @@
 <a id="x-compounds"></a>
 <a id="compound-parser"></a>
 
-Sometimes one Agazan word is two smaller meanings with **`x`** in the middle. The last letter (**-l** / **-m** / **-n** / **-r**) still marks the **whole** word. What sits left and right of that **`x`** tells you which kind of word it is.
+Sometimes one Agazan word is two smaller meanings with **`x`** in the middle. The last letter (**-l** / **-m** / **-n** / **-r**) is still the ending of the **whole** word. What sits left and right of that **`x`** tells you which kind of word it is.
 
 ## Beginner {#beginner}
 
 ### Two roots, one word
 
-English often glues two ideas into one word (*peanut butter*) or one hyphenated name. In Agazan you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md#beginner) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
+English often treats two words as one idea (*peanut butter*), or joins two names with a hyphen. In Agazan you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md#beginner) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
 
 > `zebeyaxabodel.`
 >
@@ -27,7 +27,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | full root **`x`** full root | two roots, one word | `zebeyaxabodel` *peanut butter* | **x** ≈ plus |
-| **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxedehol` *someone who teaches* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
+| **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxedehol` *someone who teaches* (**-r** *the one teaching*) | **a** doer / **e** scene / **u** undergoer / **o** extra `/b/` party |
 
 **Compare with:** two people stay two words (`zazawan zalahen`). One double name is one word (`zazawaxalahen`).
 
@@ -40,7 +40,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 
 English *bedroom*, *doorbell*, and *friend* feel like one word. Agazan lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *bed* and *house*.
 
-Inside the dictionary spelling you can still see the two old roots, with a join letter instead of **`x`**. That letter is the [word ending](word-endings.md) of the **left** root: **-l** when that piece is the everyday kind, **-m** when it is the published abstract sense (named **-n** or resume **-r** if that left piece is a name or a resume). The last letter of the word is still the ending of the **whole** entry. In a sentence you add a role letter and that whole-word ending, the same way you do for *dog* or *hammer*.
+Inside the dictionary spelling you can still see the two old roots, with a join letter instead of **`x`**. That letter is the [word ending](word-endings.md) of the **left** root: **-l** when that piece is the everyday kind, **-m** when it is the abstract sense (named **-n** or resume **-r** if that left piece is a name or a resume). The last letter of the word is still the ending of the **whole** entry. In a sentence you add a role letter and that whole-word ending, the same way you do for *dog* or *hammer*.
 
 > `zebedalahazal.`
 >
@@ -69,8 +69,6 @@ Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agaza
 | **`x`** in the middle | one thing; you can still hear both roots | `gagayoxalaval` *love in the crush sense*; `zebeyaxabodel` *peanut butter*; `zazawaxalahen` (one person) | **x** ≈ plus |
 | dictionary word | one familiar kind, listed as a single entry | `zebedalahazal` *bedroom*; `zazoval` *sunflower* | join letter in the entry, not **`x`** |
 
-`zazawan zalahen` is two people. `zazawaxalahen` is one person.
-
 **Compare with:** a property on a noun uses `/ɡ/` (or `/w/`). A list uses a [join](joins.md).
 
 **Related form:** *someone who teaches* (who does / where it happens / who undergoes / who is told; **-r** *the one teaching*) uses a [role compound](roles.md#role-compounds).
@@ -88,10 +86,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| *doorbell* | `zoyelebehul` | |
-| *raincoat* | `zerehelogodul` | |
-| *greenhouse* | `zavavulahazal` | |
-| *friend* | `zanalobel` | |
+| *doorbell* | `oyelebehul` | |
+| *raincoat* | `erehelogodul` | |
+| *greenhouse* | `avavulahazal` | |
+| *friend* | `analobel` | |
 | *hammer* | `ahavol` | |
 | *wrench* | `erevul` | |
 | *axe* | `agezul` | |
@@ -249,18 +247,19 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | role vowel(s) **`x`** **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** | [role pointer](pronouns.md#role-pointers) | `zaxar` *they* (whoever did the latest thing); `zaxal` *another one*; `zaxam` *what they did* | **a** again / **e** echo / **o** other / **u** unsaid |
-| **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxedehol` *someone who teaches* (**-r** *the one teaching*) | **a** agent / **e** place / **u** patient / **o** recipient |
+| **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxedehol` *someone who teaches* (**-r** *the one teaching*) | **a** doer / **e** scene / **u** undergoer / **o** extra `/b/` party |
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | *Azawan — I have time* | vowel on the name |
-| longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [ability](intention.md#ability) | *can’t sing right now* | extra vowel after the host |
+| longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [ability](intention.md#ability) | *can’t sing right now* | extra vowel after the root |
 | full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zebeyaxabodel`; `zohuxaluden` ([multipart names](word-endings.md#phrasal-proper-names)) | **x** ≈ plus |
 | sake root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [sakes](sakes.md) | `gulothal` | **th** ≈ *think* (your view of the sake) |
 | other root **`th`** **`a`** / **`e`** / **`o`** / **`u`** (or a stack) | [label scope](predication.md#label-scope) | *angry this time*; *a teacher* | **th** ≈ *think* (what kind of claim the label is) |
 | direction root **`th`** facing person | [viewpoint lateral](roles.md#viewpoint-laterals) | `gewezathazawan` *Azawan’s left* | **th** ≈ *think* (whose point of view) |
-A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`**, or **`u`** left of **`x`**, you are naming a role (*teacher*), not gluing two full roots. Role compounds still put a full root **after** that vowel.
+
+A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`**, or **`u`** left of **`x`**, you are naming a role (*someone who teaches*), not gluing two full roots. Role compounds still put a full root **after** that vowel.
 
 ### Adding another piece {#ordinary-compound-order}
 
-When English stacks labels left to right (*crush* then *love*; a shop name with a third drink), Agazan keeps that order in **one** word. The **last** root is the kind. Each earlier root specifies it. The ending stays at the end of the whole word. Named lists (people, shops) use the same stack as a list of labels, not as kind-last packing.
+To narrow a compound further, or to build a name from several labels, add another root with another **`x`**. Keep the English order in **one** word (*crush* then *love*; a shop named after three drinks). The **last** root is the kind, and each earlier root narrows it. The ending stays at the end of the whole word. In a name (a person or a shop), the roots are simply labels in order, and none of them is the kind.
 
 > `gagayoxalaval.`
 >
@@ -283,21 +282,19 @@ A [role compound](roles.md#role-compounds) can take such a stack as its stem (`z
 ### Which family is this?
 <a id="decision-order"></a>
 
-Use the table above. If the word has a mid-word **`th`**, it is an [sakes](sakes.md) word (a [sake root](sakes.md#sake-inventory), then a vowel, with an optional [emotion tail](sakes.md#emotion-compose)), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after a sake root, letters that look like a root are always the emotion tail (`gulothamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
+Use the table above. If the word has a mid-word **`th`**, it is a [sake](sakes.md) word (a [sake root](sakes.md#sake-inventory), then a vowel, with an optional [emotion tail](sakes.md#emotion-compose)), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after a sake root, letters that look like a root are always the emotion tail (`gulothamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
 
 - After the role letter: a role vowel (one vowel or a stacked pair), **`x`**, **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** → a **role pointer** ([pronouns](pronouns.md#role-pointers)). A role compound with a stem keeps its own **-l** / **-m** senses; only the stemless pointer takes **-m** as a share.
-- After the role letter: one vowel **`a`** / **`e`** / **`u`** / **`o`**, **`x`**, then a longer root → a **role compound** (who does / where it happens / who undergoes / who is told).
+- After the role letter: a role vowel (one vowel or a two-vowel pair), **`x`**, then a longer root → a **role compound** (who does / where it happens / who undergoes / who is told, or a [two-vowel role](roles.md#instrument) such as the tool, `daexaradal`).
 - A name (one root or a [multipart proper name](word-endings.md#phrasal-proper-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a conversation-length bid → [conversation length](#conversation-length).
 - A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **ability**.
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
 
-Role vowels are **`a`** / **`e`** / **`u`** / **`o`**. Span type and edge letters stay single vowels.
+The role vowels are **`a`** / **`e`** / **`u`** / **`o`** and the two-vowel pairs **`ae`**, **`oe`**, **`ua`**, **`uo`**, **`ao`**, **`ue`**. No other vowel pair goes before **`x`**.
 
 ### Conversation length (name **`x`** vowel) {#conversation-length}
 
-A [greeting](word-endings.md#greeting) is your own name with a period (`SELFn.`). [Calling someone](speech-moves.md#vocative) is their name under **`/y/`** (`yalahen.`). Add **`x`** and one vowel before **-n** to say when the conversation will end. At arrival, this sets the expected length. At departure, the same form updates how soon you are leaving. The vowel is about the conversation, not a grade of the person.
-
-On your own name, it says how long you expect to stay. At departure, use the reduced level that matches how soon you are leaving.
+English *I can stay a while* or *I only have a minute* tells the other person how long you can talk. In Agazan, add **`x`** and one vowel before **-n** on a [greeting](word-endings.md#greeting) (your own name with a period, `SELFn.`) or a [call](speech-moves.md#vocative) (their name under **`/y/`**, `yalahen.`). At arrival, the vowel sets how long you expect the conversation to last. At departure, the same form says how soon you are leaving. The vowel is about the conversation, not a grade of the person.
 
 > `SELFxan.`
 >
@@ -315,7 +312,7 @@ On your own name, it says how long you expect to stay. At departure, use the red
 |------|------------|--------------|-----|
 | `SELFxan` | open-ended: *we can stay* | — | **a** ≈ add (time is in) |
 | `SELFxen` | a few minutes: *I have a little time* | leaving soon | **e** ≈ order (the slot has an end) |
-| `SELFxon` | one slot: *one ask/comment* | about to leave | **o** ≈ one (one last slot) |
+| `SELFxon` | one slot: *one ask or comment* | about to leave | **o** ≈ one (one last slot) |
 | `SELFxun` | passing: *just acknowledging; not opening a talk* | leaving right now | **u** ≈ undo (lift the talk) |
 
 Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](word-endings.md#named-n-beginner) ending.
@@ -332,9 +329,9 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 >
 > Alahen-ask
 >
-> "Alahen — one slot." (the talk lasts for one ask)
+> "Alahen — one slot." (the conversation lasts for one ask)
 
-**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [need](sakes.md) takes **`th`** + vowel instead (`gulothal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**. In a clause body, a name with **`x`**, a vowel, and **-n** is not a word.
+**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [sake](sakes.md) word takes **`th`** + vowel instead (`gulothal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**. In a clause body, a name with **`x`**, a vowel, and **-n** is not a word.
 
 **Compare with:** a plain named citation with a period is the basic hello (`SELFn.`). The bid says how much conversation the person is open to.
 
@@ -373,7 +370,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` | |
 | *Alahen* | `alahen` | |
 | *Ahaben* | `ahaben` | |
-| *doorbell* | `zoyelebehul` | |
+| *doorbell* | `oyelebehul` | |
 | *see* | `vahahal` | `ahahal` *eye* |
 | *scream* | `ezugel` | |
 | *punch* | `abahel` | |
@@ -468,6 +465,7 @@ Ahaben-presence
 ::: details Show answer
 
 y-Alahen-passing
+
 *Alahen — just passing.* (calling)
 :::
 
@@ -485,6 +483,7 @@ Azawan-passing
 ::: details Show answer
 
 y-Ahaben-minutes
+
 *Ahaben — a few minutes.* (calling)
 :::
 
@@ -493,6 +492,7 @@ y-Ahaben-minutes
 ::: details Show answer
 
 y-Alahen-ask
+
 *Alahen — one ask.* (calling)
 :::
 
@@ -501,6 +501,7 @@ y-Alahen-ask
 ::: details Show answer
 
 Azawan-presence | y-Ahaben-ask
+
 *Azawan — I’m here. Ahaben — one ask.* (calling)
 :::
 
@@ -509,6 +510,7 @@ Azawan-presence | y-Ahaben-ask
 ::: details Show answer
 
 Azawan
+
 *Azawan.* (hello — the speaker is Azawan)
 :::
 
