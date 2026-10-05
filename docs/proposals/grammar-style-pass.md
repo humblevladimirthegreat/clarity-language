@@ -84,7 +84,7 @@ Batches are sized at about 10k words or less. Word counts are approximate.
 
 Four batches, one per session. Phase 3 sessions do **not** read whole pages: they grep for a term or open the sections a log entry names, then read only the paragraphs around each hit. The ground rules still apply.
 
-- [ ] **Batch 3.1: regression sweep, all in-scope pages**
+- [x] **Batch 3.1: regression sweep, all in-scope pages**
   - Re-run every Phase 1 check (em dashes in prose, Agazan forms in italics, maintainer *we* / author *I*, throat-clearing, bare jargon from the plain-language list, `*a*/*b*`) and fix what Phase 2 introduced.
   - Run `npm run build` and fix anything it reports.
 - [ ] **Batch 3.2: first-use glosses and shared wording**
@@ -356,6 +356,18 @@ Four batches, one per session. Phase 3 sessions do **not** read whole pages: the
 - Resolved after review: join **-m** marks the root's abstract sense, and a final **-m** after the number means *approximately*. Every derived word on the page whose English uses the root's abstract sense now has join **-m** (*score*, *draft*, *memory*, *adventure*, *commitment*, *hope*, *imprimatur*, *calculation*, *effort*, *challenge*, *tale*, *chance*, *voice*, *institution*, *blockage*, *judgment*, *co-participation*, *harmony*, *teamwork*, *plan*, *debt*, *output*, *disorder*, *reciprocity*, *problem*, *faith*, *message*, *ritual*), including the free `debeyom g#1` and the `/w/` hosts (`gamom`, `gebazem`). Words that ended in **-m** with no approximate reading now end in **-l** (`gevegemruzol`, `hozewemrazol`, `zebeyomredul`, `zehehamral`, `zezegumralel`, …). The Ending row now says what each final ending means and that the join letter carries the sense. `debazemrubul` was glossed *quasi-commitment*, a sense its root (pensive / melancholy) does not have; it is now *a quasi-melancholy*. Morph lines follow the parser (`d-pen-m-two`, `d-pencil-m-1st`). Roots whose English is the everyday picture (*love*, *fear*, *ticket*, *specimen*, *friend*, *toolkit*, *speech*, *room*, *attempt*, *choir*) keep **-l**. Two examples of a final **-m** were added: `zazawan dezebelrarem vahahal.` (*a roughly three-part dialogue*) after the shape table, and `zazawan damomrazom vahahal.` (*a nearly wiped debt*) under Null / anti-null.
 - The PoS tables keep dense labels (*under quasi- framing*, *host graded as …*, *ascribed*): telegraphic tables are allowed.
 - The page has no Beginner or Intermediate, as the path intends (Advanced only).
+
+### 2026-10-05: Batch 3.1 (regression sweep)
+
+Re-ran every Phase 1 check over the 27 in-scope pages. Phase 2 introduced no regressions.
+
+- **Em dashes:** every hit in prose, blockquotes, and tables is an English translation, a checkpoint prompt, an italic gloss that quotes a translation (`*may — who knows*`), or a mention of the `—` empty-cell placeholder (`join-across-roles` stacked-vowel note). All kept.
+- **Agazan in italics:** none. Every italic token shaped like an Agazan word is English (*never*, *however*, *zen* as a sound key, …).
+- **Maintainer *we* / author *I*:** only author *I* in the `why-agazan` Criticisms essay and the `introduction` Acknowledgments (kept, as in Batch 1.1), and content glosses (*you and I*, *as far as I know*, *I don't think so*).
+- **Throat-clearing, `*a*/*b*`:** no hits.
+- **Bare jargon:** *prosody* appears only in the anchor id `#orthography-and-prosody-periods` (`dependents`, and a link to it in `pronouns`). The id stays; the heading text is plain.
+- **Bold Agazan without backticks (fixed):** the three speech-act tables in `speech-moves` wrote the `/y/` words as plain bold (`**yal**`), so they were not marked as Agazan and the build did not parse-check them. All 16 cells are now bold code (**`yal`**). This predates Phase 2 (it came in with the j→y respelling).
+- `npm run build` passes.
 
 ## Questions for the editor
 

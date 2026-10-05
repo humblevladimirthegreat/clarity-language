@@ -61,10 +61,10 @@ The vowel picks the act. Its cues are **a** add / hold, **o** one / pick, **e** 
 
 | Agazan | Use | Cue |
 |--------|-----|-----|
-| **yal** | statement (often omitted) | **a** ≈ add (hold the claim) |
-| **yol** | question: yes/no and fill-in ask | **o** ≈ one (pick from a menu) |
-| **yel** | command / instruction | **e** ≈ order (do this) |
-| **yul** | prohibition: *don’t…* | **u** ≈ undo (take the action back) |
+| **`yal`** | statement (often omitted) | **a** ≈ add (hold the claim) |
+| **`yol`** | question: yes/no and fill-in ask | **o** ≈ one (pick from a menu) |
+| **`yel`** | command / instruction | **e** ≈ order (do this) |
+| **`yul`** | prohibition: *don’t…* | **u** ≈ undo (take the action back) |
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -160,14 +160,14 @@ The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a
 
 | Agazan | Use | Cue |
 |--------|-----|-----|
-| **yal** | **statement**: claim or description | **a** add + **-l**: stand behind |
-| **yam** | **soft statement**: offered, not insisted (*for what it's worth*) | **a** add + **-m**: hold, but leave it open |
-| **yol** | **question**: yes/no and fill-in ask | **o** one / menu + **-l**: pick an answer |
-| **yom** | **soft question**: wonder, gentle ask, offer-like | **o** menu + **-m**: ask without pinning |
-| **yel** | **command**: instruction | **e** order + **-l**: do this |
-| **yem** | **request**: soft directive (*please…*) | **e** order + **-m**: ask, don’t command |
-| **yul** | **prohibition**: *don’t…* (firm) | **u** undo + **-l**: take the action back |
-| **yum** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | **u** undo + **-m**: prefer they don’t |
+| **`yal`** | **statement**: claim or description | **a** add + **-l**: stand behind |
+| **`yam`** | **soft statement**: offered, not insisted (*for what it's worth*) | **a** add + **-m**: hold, but leave it open |
+| **`yol`** | **question**: yes/no and fill-in ask | **o** one / menu + **-l**: pick an answer |
+| **`yom`** | **soft question**: wonder, gentle ask, offer-like | **o** menu + **-m**: ask without pinning |
+| **`yel`** | **command**: instruction | **e** order + **-l**: do this |
+| **`yem`** | **request**: soft directive (*please…*) | **e** order + **-m**: ask, don’t command |
+| **`yul`** | **prohibition**: *don’t…* (firm) | **u** undo + **-l**: take the action back |
+| **`yum`** | **soft prohibition**: *please don’t…* / *I’d rather you not…* | **u** undo + **-m**: prefer they don’t |
 
 For *let's*, make a soft request with inclusive *we*, **`aha`** ([special pronouns](pronouns.md#special-pronouns)), as the subject. *Let's not* is the soft prohibition.
 
@@ -191,10 +191,10 @@ A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` w
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **yar** | **provisional statement**: held until something better comes | *as things stand* / *for now, I take it that…* | **a** add + **-r**: a claim held for now |
-| **yor** | **working question**: asked to proceed, expect to re-ask | *just checking, …?* / *for now, is it…?* | **o** menu + **-r**: an ask for now |
-| **yer** | **command for now**: do this until told otherwise | *for now, …* / *go ahead and … for now* | **e** order + **-r**: an instruction you expect to revisit |
-| **yur** | **hold off**: don't, for now | *hold off on …* / *don't … yet* | **u** undo + **-r**: take the action back, for now |
+| **`yar`** | **provisional statement**: held until something better comes | *as things stand* / *for now, I take it that…* | **a** add + **-r**: a claim held for now |
+| **`yor`** | **working question**: asked to proceed, expect to re-ask | *just checking, …?* / *for now, is it…?* | **o** menu + **-r**: an ask for now |
+| **`yer`** | **command for now**: do this until told otherwise | *for now, …* / *go ahead and … for now* | **e** order + **-r**: an instruction you expect to revisit |
+| **`yur`** | **hold off**: don't, for now | *hold off on …* / *don't … yet* | **u** undo + **-r**: take the action back, for now |
 
 > `yur vowogal.`
 >
