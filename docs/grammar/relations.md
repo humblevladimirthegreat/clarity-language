@@ -646,7 +646,7 @@ An *as-of* pair inside a finished inner clause cannot be resumed later in the ma
 |--------|-----|---------|--------------|-----|
 | **`huhum` / `guhum` / `wuhum`** | asserted whose-now | *as of* (dated ledger) | `uhul` *ledger* | 📒: a dated line in the books |
 | **`huram` / `guram` / `wuram`** | unasserted whose-now | *as of* (placeholder now) | `ural` *bookmark* | 🔖: hold the place without stamping |
-| **`huhur` / `hurar`** | resume that overlay | *same books* | same | **-r** restates the stem; no `/b/` |
+| **`huhur` / `hurar`** | resume that whose-now | *same books* | same | **-r** restates the stem; no `/b/` |
 
 ### Stance as-of {#stance-as-of}
 

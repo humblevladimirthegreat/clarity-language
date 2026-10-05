@@ -390,15 +390,15 @@ English *the boxes are heavy* can mean each box or the pile. Put **-x** on the *
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| host set + singular `/ɡ/` | each member, or don’t care | *the boxes are heavy* |
-| host set + `/ɡ/`…**-x** | collective: the set as one pile | *heavy as a pile* |
+| plural noun or list + singular `/ɡ/` | each member, or don’t care | *the boxes are heavy* |
+| plural noun or list + `/ɡ/`…**-x** | collective: the set as one pile | *heavy as a pile* |
 
 After nouns joined into a list with **`a`** ([joins](joins.md)), one plain `/ɡ/` word applies to **each member**. With **-x**, it applies to the list **as one unit**.
 
 | Agazan | English |
 |--------|---------|
 | `zavabal zulol zal garagam` | *the file-box and the toolbox are (each) heavy* |
-| `zavabal zulol zal garagamx` | *the file-box and the toolbox are heavy together* (collective SHARED) |
+| `zavabal zulol zal garagamx` | *the file-box and the toolbox are heavy together* (collective) |
 | `zavahal gagegem` | *the family is vast* (group-level size) |
 | `zavabalx garagam` | *the file-boxes are heavy* (members / plain) |
 | `zavabalx garagamx` | *the file-boxes are heavy collectively* |
@@ -431,9 +431,9 @@ To call a group at the start of a turn, put **-x** on the call word (the vocativ
 
 ### Where **-x** sits
 
-Beginner already used **-x** on nouns and person-role specials. The rest of the host map:
+Beginner already used **-x** on nouns and person-role specials. The rest of the words that take it:
 
-| Host | Use | English |
+| Word | Use | English |
 |------|-----|---------|
 | nouns `/z/` `/d/` `/b/` | associative group (name / resume); indefinite group (kind **-lx** / **-mx**) | *Azawan and associates*; *some dogs* |
 | vocatives `/y/` | group address | *hey, cats*; *Team Alpha* |

@@ -294,7 +294,7 @@ A mark on a span colors all of it:
 
 **Compare with:** **`yol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling; [emotion compose](sakes.md#emotion-compose) states it as a claim, and the two can share a sentence.
 
-- A mark may go on any word, including act words and [sentence linkers](dependents.md#sentence-linkers). Attached to a [scope island](spans.md#scope-islands), it colors the whole island.
+- A mark may go on any word, including act words and [sentence linkers](dependents.md#sentence-linkers). Attached to a [scope island](spans.md#scope-islands) (a chunk of words in braces `{ … }`), it colors the whole island.
 - Only `!`, `!!`, `?`, `?!`, `%`, `&`, and `;` are marks. Other stacks (`!?`, `??`, `%!`) are not, and neither are marks in a row with a space between (`! !`).
 - `&` stresses by voice alone. To highlight with grammar, move the word to the front ([word order](clause.md)).
 - A mark on a word inside a colored span or sentence overrides it for that word.

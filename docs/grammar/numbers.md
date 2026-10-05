@@ -1028,7 +1028,7 @@ The marker still says amount, rank, or code. Kind compounds may use digitless **
 | **`g+e-`** | **`ra`** + **`bu`∅** + **-l** | **arbitrarily small but finite** |
 | **`g-e`** | **`ru`** + **`ba`∅** + **-l** | **−∞** |
 | **`g~-e`** | **`ru`** + **`ba`∅** + **-m** | **arbitrarily large but finite** (negative / deficit) |
-| **`g#e`** | **`re`** + **`ba`∅** + **-l** | **last place** / telos landmark (ultimate-descendant pole of the [generation](numbers-applied.md#ordinal-generation) axis) |
+| **`g#e`** | **`re`** + **`ba`∅** + **-l** | **last place** / final-place landmark (ultimate-descendant pole of the [generation](numbers-applied.md#ordinal-generation) axis) |
 | **`g~#e`** | **`re`** + **`ba`∅** + **-m** | **near last place** |
 | **`g#e-`** | **`re`** + **`bu`∅** + **-l** | **start / beginning place** / origin landmark: first with emphasis on **onset** (*the starting one*, *at the beginning*). Numbered 1st is `g#1`. Ultimate-ancestor pole |
 | **`g~#e-`** | **`re`** + **`bu`∅** + **-m** | **near first place** |
@@ -1227,7 +1227,7 @@ The mantissa counts how many joke-units **late** (**`ba`**) or **early** (**`bu`
 
 | Form | Reading |
 |------|---------|
-| **`g#1e`** | *the gazillionth* / *umpteenth* (comic late place, toward telos) |
+| **`g#1e`** | *the gazillionth* / *umpteenth* (comic late place, toward last place) |
 | **`g#3e`** | *the three-gazillionth* |
 | **`g~#1e`** | *about the gazillionth* / soft umpteenth |
 | **`g#1e-`** | *the gazillionth-first* / comic early place (toward onset) |

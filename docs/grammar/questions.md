@@ -192,7 +192,7 @@ To back up your own statement with *yes*, give **`yael`** a turn of its own: fin
 >
 > "Azawan walks. Yes."
 
-To ask the listener to confirm instead (*…, right?*), put the question word before it: **`yol yael.`** A short question like this after a statement is a **tag**. Soft **`yom yael.`** is *…, isn't it?*
+To ask the listener to confirm instead (*…, right?*), put the question word **`yol`** before it: **`yol yael.`** A short question like this after a statement is a **tag**. Soft **`yom yael.`** is *…, isn't it?*
 
 > `zazawan vowogal. yol yael.`
 >
@@ -734,7 +734,7 @@ Soft **`yam yol`** muses rather than insists: you lean toward an answer but put 
 >
 > "Who really cares, though?"
 
-The listener may still reply, but no reply is owed. Only **`yal`** or **`yam`** stacks before the question word this way.
+The listener may still reply, but no reply is owed. Only **`yal`** or **`yam`** stacks before the question word **`yol`** / **`yom`** this way.
 
 **Compare with:** a [tag](#tags) after the sentence (`…. yol yael.`) asks the listener to confirm. A rhetorical question asks for nothing.
 

@@ -1,6 +1,6 @@
 # Role compounds {#roles}
 
-When English would name a person, place or time from an event (*a teacher* from *teach*, *the one told*, *a sleeping place*, *bedtime*), Agazan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [reference ending](word-endings.md). **`a`** is the doer, **`e`** is the scene of the event (where or when), **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
+When English would name a person, place or time from an event (*a teacher* from *teach*, *the one told*, *a sleeping place*, *bedtime*), Agazan builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [word ending](word-endings.md). **`a`** is the doer, **`e`** is the scene of the event (where or when), **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
 
 The ending decides whether you mean anyone in that part or the one from a particular event. With **-l**, **-m**, or **-n**, the word is anyone who does it, with no claim about how often: *someone who teaches*. With **-r**, it is the person or place of the latest matching event: *the one teaching*. To say it is their usual role, the kind English names as a job (*a teacher*), add a scope vowel after the stem ([the usual role](#usual-role)).
 
@@ -9,7 +9,7 @@ The ending decides whether you mean anyone in that part or the one from a partic
 ### Role compounds: the doer (`a`) {#role-compounds}
 <a id="agent-place-patient-recipient"></a>
 
-English *someone who teaches* names a person from what they do, from the same idea as *teach*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [reference ending](word-endings.md). The result is one content word (a **role compound**) that you can use as a participant. (cue: **a** ≈ add (add a doer))
+English *someone who teaches* names a person from what they do, from the same idea as *teach*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [word ending](word-endings.md). The result is one content word (a **role compound**) that you can use as a participant. (cue: **a** ≈ add (add a doer))
 
 > `zaxedehol varahal.`
 >
@@ -17,7 +17,7 @@ English *someone who teaches* names a person from what they do, from the same id
 >
 > "Someone who teaches runs."
 
-The last letter is the ordinary [reference ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** its abstract sense. `zaxedehol` is *someone who teaches*; `zaxavadal` is *someone who fights*; `zaxavadam` is *someone who struggles*. No teaching or fight needs to come up earlier in the conversation, and the word says nothing about how often: one lesson is enough.
+The last letter is the ordinary [word ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** its abstract sense. `zaxedehol` is *someone who teaches*; `zaxavadal` is *someone who fights*; `zaxavadam` is *someone who struggles*. No teaching or fight needs to come up earlier in the conversation, and the word says nothing about how often: one lesson is enough.
 
 When the event is a dictionary word built from two roots, the role compound takes the whole word as its stem: `zaxubugalahahal` is *someone who reads*, from `ubugalahahal` *read*.
 
@@ -543,7 +543,7 @@ The scene has no such forms: `zexor`, `zexol`, and `zexom` are not words.
 <a id="spatial-laterals"></a>
 <a id="my-left-your-left"></a>
 
-English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of a viewpoint (*Azawan’s left*, *the car’s left*). For the viewpoint reading, write the same arrow root, then mid-word **`th`**, then the person or thing whose facing counts as north, then an ordinary [reference ending](word-endings.md). You can then say *walk left* without meaning *walk west*.
+English *left* / *right* / *ahead* / *back* can mean a compass heading (*west*) or a side of a viewpoint (*Azawan’s left*, *the car’s left*). For the viewpoint reading, write the same arrow root, then mid-word **`th`**, then the person or thing whose facing counts as north, then an ordinary [word ending](word-endings.md). You can then say *walk left* without meaning *walk west*.
 
 A person’s front is the direction they face. For an object, use the front its design or current use makes forward; if that does not settle a front, make the frame clear from context.
 
@@ -693,7 +693,7 @@ The landmark's front is where its design or current use faces (a house's front d
 
 ### Endings and resume
 
-Write the ordinary [reference ending](word-endings.md) at the end of the whole compound. In a viewpoint lateral, the ending applies to the **viewpoint anchor**, not to DIR: **-l** / **-m** describe the anchor’s reference, **-n** names the anchor, and **-r** resumes it. A bare direction word still takes its ending on the direction itself.
+Write the ordinary [word ending](word-endings.md) at the end of the whole compound. In a viewpoint lateral, the ending applies to the **viewpoint anchor**, not to DIR: **-l** / **-m** describe the anchor’s reference, **-n** names the anchor, and **-r** resumes it. A bare direction word still takes its ending on the direction itself.
 
 | Agazan | Use | English |
 |--------|-----|---------|

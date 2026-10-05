@@ -93,7 +93,7 @@ Agazan’s [sakes](sakes.md) are a fixed list of things that are good for a pers
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | Met          | This serves the sake, including whether the payoff lasts or is only for now (gratitude / savoring)                                              |
 | Motive       | Acting *for* this sake, including where the reason stands                                                                                       |
-| Prescription | This act ought to be done for this sake; the ending says whether you are inviting it, offering it, or trying it (**invited / offered / trial**) |
+| Prescription | This act ought to be done for this sake; the word’s ending (its last letter) says whether you are inviting it, offering it, or trying it (**invited / offered / trial**) |
 | Unmet        | Costs the sake, including how changeable that is                                                                                                |
 
 

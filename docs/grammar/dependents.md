@@ -129,7 +129,7 @@ For *as soon as* / *once*, keep **`henum`** *after* and put the haste word **`wa
 >
 > "Azawan walks as soon as Alahen sits."
 
-For *since* (from a starting point up to now), see [the *from* hook on a time](hooks.md#since). *Since* meaning *because* is **`thevem barl`**.
+For *since* (from a starting point up to now), see [*from* on a time](hooks.md#since). *Since* meaning *because* is **`thevem barl`**.
 
 <a id="so-that"></a>
 <a id="event-purpose"></a>
@@ -152,9 +152,9 @@ English *in order to* drops the person who sits. Agazan still names them in the 
 
 Ordinary `zogol` is still *a goal* (the net).
 
-**Compare with:** *although Alahen walks* is **`hezom barl`** plus the next sentence. Discourse *however* and *therefore* are sentence linkers after a finished claim ([continue](#continue-x)), not *although* or *so that*. *Whether Alahen walks* is **`dorl`**, not **`thoyem`** (*if* sets a condition; *whether* leaves a yes-or-no question open). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is a [sake motive](sakes.md#sake-preference) on the sake, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange). *Works for a money-bag* (something you want to get) is an extra-noun [hook](hooks.md#extra-noun); use **`hogom`** when *for* names a result you aim at (*practices for a race*).
+**Compare with:** *although Alahen walks* is **`hezom barl`** plus the next sentence. Discourse *however* and *therefore* start a new sentence after a finished claim ([continue](#continue-x)); they are not *although* or *so that*. *Whether Alahen walks* is **`dorl`**, not **`thoyem`** (*if* sets a condition; *whether* leaves a yes-or-no question open). *The dog that runs* (which dog) is [two sentences](#which-noun), not **`darl`** on the noun. Acting *for relatedness* is a [sake motive](sakes.md#sake-preference) on the sake, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange). *Works for a money-bag* (something you want to get) uses a different [*for*](hooks.md#extra-noun) before an extra noun; use **`hogom`** when *for* names a result you aim at (*practices for a race*).
 
-Agazan verbs have no past or future form. *Before*, *after*, *while*, and *until* place this event in time relative to the next sentence. A **result** that is still left over, and a **state that used to hold**, are moods rather than times ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
+Agazan verbs have no past or future form. *Before*, *after*, *while*, and *until* place this event in time relative to the next sentence. A **result** that is still left over, and a **state that used to hold**, are stance words on `/th/`, not times ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
 
 ### Continue (`/x/`): keep the same speech move {#continue-x}
 

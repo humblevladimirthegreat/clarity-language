@@ -83,7 +83,7 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`ebedalahaza` *bedroom*) |
 | `-l` / `-m` / `-n` / `-r` | [word ending](word-endings.md) | audible end of the content word |
 | Name instance **`-ln`** | [one of a name](word-endings.md#name-instance--ln) | word-final coda `ln` |
-| Optional `-x` | [plural](plurality.md) after the suffix | word-final `-lx` / `-mx` / `-nx` / `-rx` / `-lnx` (letter `x`) |
+| Optional `-x` | [plural](plurality.md) after the ending | word-final `-lx` / `-mx` / `-nx` / `-rx` / `-lnx` (letter `x`) |
 | Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` |
 | Backward stand-in **`-rth`** | [pointing back](dependents.md#stand-in-back) | word-final coda `rth`; the only word-final `th` |
 
@@ -189,6 +189,6 @@ A line that piles up close vowels, clusters, and mid-word stops is harder to sus
 
 - Citation (root + ending, no sentence): [word-endings.md](word-endings.md)
 - Role letters in a clause: [clause.md](clause.md#role-letters)
-- Numbers (PoS+`r` exception and [digit syllables](numbers.md#counts)): [numbers.md](numbers.md)
+- Numbers (role letter + `r` exception and [digit syllables](numbers.md#counts)): [numbers.md](numbers.md)
 - Mention spans (letter as form in a clause): [spans.md](spans.md)
 - Mid-word `x` and `th`: [x-compounds.md](x-compounds.md)

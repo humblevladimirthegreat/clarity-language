@@ -108,7 +108,7 @@ For a price (*for five grams*), put the same measure phrase in `/b/` after the [
 |--------|-----|---------|
 | `bezezem g+2` | extra noun (`/b/`) | *two meters* |
 | `zazadem g+3`, `dabayum g+5` | subject / object / … | *three seconds*, *five grams* |
-| `gezezem g+2` on a host | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
+| `gezezem g+2` after a noun | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
 
 The amount takes the usual number endings, so **-m** makes it fuzzy (`gradum` ≈ *about two*). The **unit** takes ordinary word endings.
 

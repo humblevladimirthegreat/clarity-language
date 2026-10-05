@@ -1,6 +1,6 @@
 # Word endings
 
-A content word’s last letter tells the listener how to take its meaning: a new ordinary kind, a published abstract sense, or a name. That last letter is the **word ending**.
+A content word’s last letter tells the listener how to take its meaning: a new ordinary kind, the root’s abstract sense, or a name. That last letter is the **word ending**.
 
 Outside a sentence (a list, a heading, a dictionary line) you write **root + ending**, with no first letter for the word’s role in a sentence. That spelling is a **citation**.
 
@@ -18,7 +18,7 @@ When you mention a kind of thing for the first time, in its everyday **concrete*
 ### First mention, abstract (`-m`) {#abstract-m}
 <a id="metaphor-m"></a>
 
-Many roots also have one **abstract** sense listed in the lexicon: an idea you cannot point at, which grows out of the concrete picture. When you introduce that sense for the first time, end the citation with **-m**. (cue: **m** ≈ meaning / abstract)
+Many roots also have one **abstract** sense listed in the lexicon (its **published** abstract): an idea you cannot point at, which grows out of the concrete picture. When you introduce that sense for the first time, end the citation with **-m**. (cue: **m** ≈ meaning / abstract)
 
 > `azawam`
 >

@@ -131,7 +131,7 @@ One noun can carry both a **`tha`** word and a **`thu`** word. The pair can run 
 
 A sake word is a sake root with mid-word **`th`**, a stance vowel, and an ending. On `/ɡ/` it describes a **noun you keep**; on `/th/` it describes the **event**. A noun that is not yours takes the [stimulus](#stimulus) word, with the same sake word on `/w/` immediately before it.
 
-A sake word ends in **-l**, **-m**, or **-r**, from that stance’s table. It never takes **-n**. The stance itself is one vowel after **`th`**. On any other root, mid-word **`th`** plus a vowel is [label scope](predication.md#label-scope).
+A sake word ends in **-l**, **-m**, or **-r**, from that stance’s table. It never takes **-n**. The stance itself is one vowel after **`th`**. On any other root, mid-word **`th`** plus a vowel is [label scope](predication.md#label-scope): what kind of claim a label makes.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -372,7 +372,7 @@ A **direction** locus says what the charge points at:
 | **`ua`** | *out of* | COLLAPSE | *out of fight: giving up* (*defeated by*) |
 | **`ae`** | *using* | FAWN | *using yourself to placate* (*appeasing*) |
 
-A direction names the **dominant** pull when feelings mix; use two feeling words for two pulls. AIMED lands on a party or a goal; RESISTING opposes an outcome or a demand. ON-BEHALF is your own feeling about someone else's stake (their own feeling needs a [holder](knowing.md#holder)); FAWN is placating someone for your own safety.
+A direction names the **dominant** pull when feelings mix; use two feeling words for two pulls. AIMED lands on a party or a goal; RESISTING opposes an outcome or a demand. ON-BEHALF is your own feeling about someone else's stake (to say the feeling is theirs, name them as its [holder](knowing.md#holder)); FAWN is placating someone for your own safety.
 
 Name the landmark with a `/b/` word right after the feeling (after **`gobum`** when the feeling is on `/w/`): the target of a direction, or the situation for CIRCUM. INTERNAL and UNPLACED take no `/b/`: they have no landmark. A direction with no `/b/` points at the stimulus noun when there is one, otherwise at someone unnamed.
 
@@ -553,7 +553,7 @@ A `/w/` word before a sake word on `/ɡ/` grades that adjective. A `/w/` sake wo
 
 ### Whose stake {#whose-stake}
 
-A sake word with no `/b/` is about **your** sake. To say it is someone else's, put that person in `/b/` right after the sake word. This works on every stance and every host: met, unmet and motive on a noun, and met, unmet, prescription and motive on the clause.
+A sake word with no `/b/` is about **your** sake. To say it is someone else's, put that person in `/b/` right after the sake word. This works on every stance and every placement: met, unmet and motive on a noun, and met, unmet, prescription and motive on the clause.
 
 > `zazawan vezebel thanathom balahen.`
 >
@@ -1352,5 +1352,5 @@ z-rosary | [g-competence-met-lasting | b-Ahaben]
 ## See also
 
 - Applicability *when*: [restrictors.md](restrictors.md)
-- Ability **`xa` / `xe` / `xo` / `xu`** on an activity host: [intention.md#ability](intention.md#ability)
+- Ability **`xa` / `xe` / `xo` / `xu`** on an activity: [intention.md#ability](intention.md#ability)
 - DECISION reuses unmet changeability endings: [intention.md](intention.md)

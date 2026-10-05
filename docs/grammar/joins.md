@@ -1140,7 +1140,7 @@ Standalone **…an** (no items) is *null* / *void*. Under `/ɡ/` `/h/`, **-n** f
 
 **Compare with:** clause **`xan`** is *and then*, not a named list.
 
-### Allowed joins by PoS
+### Allowed joins by role letter {#allowed-joins-by-pos}
 <a id="phrase-reserved-forms"></a>
 
 A join has at most two vowels. Which endings it can take depends on its role letter:

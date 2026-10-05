@@ -21,7 +21,7 @@ Agazan keeps three kinds of clarity in ordinary speech.
 
 ### Syntactic {#syntactic}
 
-In a clause, every content word begins with a letter that names its role (subject, object, verb, …), so you never have to guess a word’s role from its position, as English often makes you do. The default order is subject, object, verb, but you may reorder the words freely, because each first letter still marks the role.
+In a clause, every content word (a word built on a root, such as a noun, verb, or adjective) begins with a **role letter**: a letter that names its role (subject, object, verb, …), so you never have to guess a word’s role from its position, as English often makes you do. The default order is subject, object, verb, but you may reorder the words freely, because each first letter still marks the role.
 
 ### Referential {#referential}
 
@@ -57,11 +57,11 @@ Inventory tables on grammar pages use these kinds of cell:
 
 | Column | What it is |
 |--------|------------|
-| **Agazan** | The word or letter you write. If **Same root as** is blank, this is the citation form of the word. The in-clause spelling (with its role letter) appears only when **Same root as** names the everyday kind. |
-| **Use** | What that form **does** (subject, question, *because* joining two sentences). This is the rule. |
+| **Agazan** | The word or letter you write. If **Same root as** is blank, this is the citation form of the word (how it is written on its own, outside a sentence). The in-clause spelling (with its role letter) appears only when **Same root as** names the everyday kind. |
+| **Use** | What that form **does**, its job (subject, question, *because* joining two sentences). This is the rule. |
 | **English** | What you would **say**: the sense to produce or understand. In translation practice, a person’s English is their name (*Azawan*), not the virtue word the name is built from. |
-| **Same root as** | The everyday kind of that same root, written as a citation (**-l**), when this row’s English is not that citation’s lemma: the *brick* root when the row’s English is *because*; the *eye* root when the row’s English is *see*. Leave it blank when English already is the citation (a row whose English is *climb* for the *climb* root). Not every table has this column. |
-| **Cue** | A hook that helps you **remember** the letter, vowel, or picture that maps to that row. |
+| **Same root as** | The everyday kind of that same root, written as a citation (**-l**), when this row’s English is a different word from that citation’s English: the *brick* root when the row’s English is *because*; the *eye* root when the row’s English is *see*. Leave it blank when English already is the citation (a row whose English is *climb* for the *climb* root). Not every table has this column. |
+| **Cue** | A memory aid that helps you **remember** the letter, vowel, or picture that maps to that row. |
 
 **Cue** is an optional memory helper. `≈` in a cue means “sounds like.” When **Same root as** is there, **Cue** does not repeat the everyday English; it only says why that picture maps.
 

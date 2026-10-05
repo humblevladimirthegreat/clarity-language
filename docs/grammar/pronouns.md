@@ -53,7 +53,7 @@ A resume spells the whole stem again. For someone in a recent sentence, a **role
 | **`u`** | the one it happens to | `/d/` |
 | **`o`** | the extra party (*the one told*) | `/b/` |
 
-Pointer vowel **`a`** picks the latest sentence that had someone in that part. `zaxar` is *the latest doer*, as subject; `duxar` is *the latest one something happened to*, as object. (cue: **a** ≈ again (the same one again); role and pointer vowels are not the [vowel series](speech-moves.md#speech-act-beginner))
+Pointer vowel **`a`** picks the latest sentence that had someone in that part. `zaxar` is *the latest doer*, as subject; `duxar` is *the latest one something happened to*, as object. (cue: **a** ≈ again (the same one again); role and pointer vowels do not carry the add / pick / order / undo cues of the [act words](speech-moves.md#speech-act-beginner))
 
 > `zazawan vowogal. zaxar vehahel.`
 >
@@ -83,7 +83,7 @@ A sentence with nobody in that part does not count. *It rains* has no doer, so `
 >
 > "Azawan walks. It rains. They sit."
 
-A pointer looks back as far as it needs to: across turns and paragraphs, and through what other speakers said. Only a [topic change](#topic-resets) stops it. Only sentences count, not nouns that name an event: a storm named as a noun gives a pointer no doer to find.
+A pointer looks back as far as it needs to: across turns and paragraphs, and through what other speakers said. Only a [topic change](#topic-resets) (an `/x/` word that says what the talk is about from here on) stops it. Only sentences count, not nouns that name an event: a storm named as a noun gives a pointer no doer to find.
 
 A pointer takes [associative **-x**](plurality.md#associative) like a name. If no earlier sentence has someone in that part, the pointer points at nothing, and the whole thing is not a sentence.
 
@@ -153,7 +153,7 @@ In a yes/no question, a pointer works like any other noun and keeps the same mea
 >
 > "Azawan sees a red dog. Does Alahen see a blue one?"
 
-**-l** takes pointer vowels **`a`**, **`e`** and **`o`**, and every role vowel: `zaxal` is another one like the latest doer. It has no reading with **`u`**, because an unsaid part has no kind to copy, and none after a special pronoun. After a name, **-l** is a new thing that name applies to, and after a joined list it is a new group of the same make-up.
+**-l** takes pointer vowels **`a`**, **`e`** and **`o`**, and every role vowel: `zaxal` is another one like the latest doer. It has no reading with **`u`**, because an unsaid part has no kind to copy, and none after a [special pronoun](#special-pronouns) such as *I* or *you*. After a name, **-l** is a new thing that name applies to, and after a joined list it is a new group of the same make-up.
 
 **Compare with:** **-r** is the same one (`duxar`); **-l** is another (`duxal`). Writing the noun out (`dugugol`) says the same as `duxal`, and the pointer only saves repeating it.
 
@@ -227,7 +227,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 | **`unan`** | nonspecific individual (`zunan` in subject slot) | *someone* | `unal` *neutral* | 😐: not a particular person |
 | **`oben`** | any person, as a rule (`zoben` in subject slot) | *one*, generic *you*, *people* | `obel` *person* | 🧑: a person in general |
 
-**Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* is **`aha`**. *Here* / *there* and *this* / *that* use these same words as a landmark after a place hook ([deixis](hooks.md#deixis)).
+**Compare with:** *I and my people* / *you all* / *Azawan and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* is **`aha`**. *Here* / *there* and *this* / *that* use these same words after a place word such as *at* ([deixis](hooks.md#deixis)).
 
 ### Generic pronoun {#generic-pronoun}
 

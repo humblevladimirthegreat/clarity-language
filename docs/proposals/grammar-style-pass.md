@@ -87,7 +87,7 @@ Four batches, one per session. Phase 3 sessions do **not** read whole pages: the
 - [x] **Batch 3.1: regression sweep, all in-scope pages**
   - Re-run every Phase 1 check (em dashes in prose, Agazan forms in italics, maintainer *we* / author *I*, throat-clearing, bare jargon from the plain-language list, `*a*/*b*`) and fix what Phase 2 introduced.
   - Run `npm run build` and fix anything it reports.
-- [ ] **Batch 3.2: first-use glosses and shared wording**
+- [x] **Batch 3.2: first-use glosses and shared wording**
   - Build an inventory of [house shorthand](../meta/doc-style.md#house-shorthand) and invented labels (*job*, *point*, *setting*, *body*, *linker*, *turn*, *role letter*, *host*, *SHARED*, …). Record it in the batch log as a table: term, page and section of first use along the [cross-doc path](../meta/learning-levels.md#cross-doc-path), where it is glossed.
   - Each term is glossed at its **first** use along the path. Move or add the gloss when it comes late. Later pages may give a short reminder, but do not re-gloss at length.
   - The same idea uses the same plain-English wording across pages. Check at least: *role letter*, statement vs question vs command, *ending* / *PoS letter*, *turn*, *topic*, and the open vs closed join pair. Pick the wording used where the term is first taught and align the later pages to it.
@@ -368,6 +368,65 @@ Re-ran every Phase 1 check over the 27 in-scope pages. Phase 2 introduced no reg
 - **Bare jargon:** *prosody* appears only in the anchor id `#orthography-and-prosody-periods` (`dependents`, and a link to it in `pronouns`). The id stays; the heading text is plain.
 - **Bold Agazan without backticks (fixed):** the three speech-act tables in `speech-moves` wrote the `/y/` words as plain bold (`**yal**`), so they were not marked as Agazan and the build did not parse-check them. All 16 cells are now bold code (**`yal`**). This predates Phase 2 (it came in with the j→y respelling).
 - `npm run build` passes.
+
+### 2026-10-05: Batch 3.2 (first-use glosses and shared wording)
+
+The inventory came from a script that walks the path in order: `why-agazan`, `introduction`, then every page's lead and Beginner, then every Intermediate, then every Advanced. It skips code spans, comments, and See also. It fit in one session, so there was no split at `questions`.
+
+**Inventory** (first use in the house sense; "same place" means glossed in that sentence or the next):
+
+| Term | First use along the path | Glossed |
+|------|--------------------------|---------|
+| *content word* | `introduction` Syntactic | same place (**added**); `phonology` Beginner glosses it again |
+| *role letter* | `introduction` Syntactic | same place (**added**: the term was used at Referential without being named); taught in `clause` Beginner lead |
+| *citation* / *citation form* | `introduction` How to learn table | same place (**added**); taught in `word-endings` lead |
+| *job* / **Use** | `introduction` How to learn table | same place (**added** "its job"); later uses (`clause` extra nouns, `pronouns`) are ordinary English |
+| **Cue** | `introduction` How to learn table | same place; "A hook that helps you remember" → "A memory aid", so *hook* is not used before `hooks` |
+| *ending* | `why-agazan` sakes stance table | same place (**added** "its last letter"); taught in `word-endings` lead |
+| *published* (abstract) | `word-endings` lead | `word-endings` First mention, abstract (**added**; the lead now says "the root's abstract sense") |
+| *highlight* (the doc-style *point* / *prominence*) | `clause` Direct object | same place. No page uses *point* or *prominence* in this sense |
+| *stance* | `clause` Stance | same place |
+| *extra noun*, *host* / *hosted* | `clause` Extra nouns | same place |
+| *setting* | none in the house sense (`Setting:` lines are dialogue scene labels) | n/a |
+| *turn*, *speech move* | `speech-moves` Turn | same place (heading carries the gloss) |
+| *body* | `speech-moves` Turn | same place |
+| *speech act*, *act word* | `speech-moves` Speech act | same place |
+| *stand-in*, *pole* | `dependents` Dependent clauses | same place |
+| *linker* | `dependents` Dependent clauses Compare-with (before the gloss in Continue) | **reworded** to "start a new sentence after a finished claim"; glossed at `dependents` Continue |
+| *mood* | `dependents` time paragraph | **removed**: RESIDUE / FORMER are now "stance words on `/th/`". First real gloss is each mood's own section |
+| *hook* | `dependents` *since* pointer and *for* Compare-with | **reworded** both; glossed in `hooks` lead |
+| *antecedent*, *resume*, *role pointer* | `pronouns` Resume / Role pointers (*role pointer* also `introduction` Referential) | same place |
+| *topic* | `pronouns` Role pointers ("topic change") | same place (**added**); taught in `pronouns` Topic (Intermediate) |
+| *special pronoun* | `pronouns` A new one | same place (**added** *I* / *you* and a link down the page) |
+| *landmark* | `pronouns` Special pronouns Compare-with | **reworded** to "after a place word such as *at*"; glossed in `hooks` extra-noun hooks |
+| *fence*, *join word*, *set* / *rank* | `joins` lead | same place |
+| *closed* / *open* (join) | `why-agazan` Open lists, closed lists; `joins` And-lists | same place |
+| *SHARED* | `plurality` Intermediate collective table (before `joins` Intermediate) | **removed** there; first use is now `joins` Invert, glossed in the same sentence. Structural move of the H3 is Batch 3.3 |
+| *fill-ask*, *polar stance* | `questions` lead | same place |
+| *glue* | `hooks` Discourse hooks | same place (heading is self-explaining) |
+| *restrictor* | `restrictors` lead | same place |
+| *span*, *cite* | `spans` lead | same place |
+| *scope island* | `speech-moves` Intermediate tone marks (before `spans` Intermediate) | same place (**added** "a chunk of words in braces") |
+| *label scope* | `why-agazan` tour; `sakes` Beginner sake words | same place in `sakes` (**added**) |
+| *sake*, *locus*, *motion ending* | `why-agazan` (sake); `sakes` Emotion compose | same place |
+| *holder* | `sakes` Emotion compose (before `knowing` Intermediate) | same place (**added**) |
+| *whose-now* | `relations` As-of | same place |
+| *PoS* | `numbers` Intermediate number anatomy | same place ("the role letter (part of speech)") |
+| *overlay* | `relations` As-of table | **removed** ("resume that whose-now"); no learner page needs the term |
+| *seam* | `phonology` Intermediate table | telegraphic table; the row says what it joins |
+
+**Shared wording checked:**
+- *Role letter*: every page says *role letter* (or *first letter* in prose that has just said so). Prose `PoS` outside the numbers anatomy is gone: `phonology` See also says "role letter + `r`", and `joins` *Allowed joins by PoS* is now *Allowed joins by role letter*, pinned to `{#allowed-joins-by-pos}` so the old slug still works. Advanced table headers (`numbers`, `roles`, `numeric-derivation`) keep **PoS**, glossed at `numbers` Intermediate.
+- Statement / question / command: every page uses *speech act* and *act word* (*statement word* `yal`, *question word* `yol`, *command word* `yel`). In `questions`, *question word* also meant English *who* / *what* (fill-ask morph note), so the two `yol` uses (tag questions, rhetorical questions) now name **`yol`** outright.
+- *Ending*: *word ending* / *ending*, as `word-endings` names it. `roles` said *reference ending* in five links (page lead, two in Role compounds, Viewpoint laterals, the lateral ending note), now *word ending*; `phonology`'s word-edge table said *after the suffix*, now *after the ending*.
+- *Turn*: always "one speech move", started by `/y/`.
+- *Topic*: always what the talk is about from here on, set by an `/x/` word (`clause` Advanced, `dependents`, `pronouns`, `spans`, `plurality` agree).
+- Open vs closed join: closed **-l** = these are the only items; open **-m** = other members may exist. No page uses *exhaustive* or *complete list*.
+- *Host*: kept for the `/ɡ/` / `/h/` / `/th/` word whose `/b/` completes it (and the word a `/w/` sits before). Other senses are reworded: `plurality` *host set* / *host map* → *plural noun or list* / *the words that take it*; `sakes` *every host* → *every placement*, *activity host* → *activity*; `numbers-applied` *on a host* → *after a noun*; `numeric-derivation` join row → "the root's everyday sense / its abstract sense".
+- *telos* in two `numbers` Advanced table cells → *final-place* / *last place*, matching Batch 2.18.
+- *vowel series* (`pronouns` role-pointer cue; never taught under that name) → "the add / pick / order / undo cues of the act words".
+
+`npm run build` passes. No grammar questions came up.
 
 ## Questions for the editor
 
