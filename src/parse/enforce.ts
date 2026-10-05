@@ -83,13 +83,24 @@ function isPole(word: LexWord): boolean {
 
 const TONE_MARKS: Record<string, string> = {
   "!": "strong",
-  "!!": "stronger",
   "?": "unsure",
-  "?!": "surprised",
   "%": "joking",
   "&": "contrast",
   ";": "warm",
 };
+
+/** A stack is `! ? % & ;` in any order, each at most twice. Returns the mark names, or undefined. */
+function toneStackNames(mark: string): string[] | undefined {
+  const counts = new Map<string, number>();
+  for (const char of mark) counts.set(char, (counts.get(char) ?? 0) + 1);
+  const names: string[] = [];
+  for (const [char, count] of counts) {
+    const name = TONE_MARKS[char];
+    if (!name || count > 2) return undefined;
+    names.push(count === 2 ? `${name}2` : name);
+  }
+  return names;
+}
 
 /**
  * Tone-mark placement (speech-moves.md § tone marks). A mark is a valid mark
@@ -106,8 +117,8 @@ export function enforceTones(tokens: IToken[]): { tokens: IToken[]; construction
       return;
     }
     const { mark, attached } = token.payload as { mark: string; attached: boolean };
-    const name = TONE_MARKS[mark];
-    if (!name) throw new ConstructionError("toneStack", `"${mark}"`);
+    const names = toneStackNames(mark);
+    if (!names) throw new ConstructionError("toneStack", `"${mark}"`);
     const next = tokens[i + 1];
     let scope: string;
     if (!next || next.tokenType === Period || next.tokenType === QMark || next.tokenType === Bang) {
@@ -127,7 +138,8 @@ export function enforceTones(tokens: IToken[]): { tokens: IToken[]; construction
     } else {
       scope = "word";
     }
-    constructions.add(`tone.mark.${name}`);
+    for (const name of names) constructions.add(`tone.mark.${name}`);
+    if (names.length > 1) constructions.add("tone.mark.stack");
     constructions.add(`tone.scope.${scope}`);
   });
   return { tokens: kept, constructions: [...constructions] };

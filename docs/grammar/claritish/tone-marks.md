@@ -12,9 +12,9 @@ Tone gets lost in text. *You're the worst* could be a joke or a fight, and the r
 | `;` | warm, affectionate |
 | `&` | contrast: this one, not another |
 | `?` | unsure about this word |
-| `?!` | surprised and doubtful |
 | `!` | strong feeling (the words say which) |
-| `!!` | stronger still |
+
+Double a mark for more: `!!` is stronger still, `??` is very unsure. Stack different marks to mix tones, in any order: `?!` is surprised and doubtful, `%;` is teasing but fond. Two of a kind is the most.
 
 Write the mark **before** what it colors, so the reader sees the tone before reading the words. Attach it to a word to color that word. Put it at the start of the sentence to color the whole sentence. A `!` at the end of a sentence is still ordinary English punctuation.
 
@@ -24,7 +24,8 @@ Write the mark **before** what it colors, so the reader sees the tone before rea
 > ;Call me when you land.  
 > We went &Tuesday.  
 > He brought a ?casserole.  
-> !We shipped it.
+> !We shipped it.  
+> %;You and your spreadsheets.
 
 *We went &Tuesday* means Tuesday and not another day. *He brought a ?casserole* means you're not sure *casserole* is the right word for it.
 

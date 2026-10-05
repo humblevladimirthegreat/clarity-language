@@ -225,12 +225,12 @@ A **tone mark** shows how you feel, or what you stress, while you say something.
 | Mark | Feeling | Voice | Cue |
 |------|---------|-------|-----|
 | `!` | Strong feeling (excited, upset: the words say which) | Louder, stressed | English *!* |
-| `!!` | Stronger still | Louder again | Doubled = more |
 | `?` | Unsure about it | Rising, tentative | English *(?)* after a doubtful word |
-| `?!` | Surprised and doubtful | Rising and loud | *Wait, what?!* |
 | `%` | Joking, teasing (not meant literally) | Light, smiling | A wink |
 | `&` | Contrast: this one, not another | Stressed and slowed | *and* not the other |
 | `;` | Warm, affectionate | Soft, gentle | A soft pause |
+
+**Doubling** a mark makes it stronger: `!!` is louder again, `??` is very unsure, `;;` is very tender, `%%` is broad teasing, `&&` is a firm contrast. **Combining** marks mixes tones: `?!` is surprised and doubtful (*Wait, what?!*), `%;` is teasing but fond, `&!` is *this* one, and I feel strongly about it. A stack has no spaces and its order does not matter (`?!` and `!?` sound the same). Each mark may appear at most twice, so `!!!` is not a mark.
 
 Write the mark **before** what it colors, so you see the tone before you say the words:
 
@@ -272,6 +272,36 @@ The other marks work the same way:
 >
 > "Alahen saw a dog?!"
 
+> `%;zalahen vowogal.`
+>
+> %;z-Alahen | v-walk
+>
+> "Dear Alahen walks." (teasing, fondly)
+
+> `zazawan vahahal ??dodogal.`
+>
+> z-Azawan | v-see | ??d-dog
+>
+> "Azawan saw a (??) dog." (very unsure it was a dog).
+
+> `%% zazawan vowogal.`
+>
+> %% | z-Azawan | v-walk
+>
+> "Azawan walks." (broad teasing)
+
+> `zazawan vahahal &&dodogal.`
+>
+> z-Azawan | v-see | &&d-dog
+>
+> "Azawan saw a *dog*." (a dog, and definitely not something else).
+
+> `;;zalahen vahahal dodogal.`
+>
+> ;;z-Alahen | v-see | d-dog
+>
+> "Dearest Alahen saw a dog."
+
 > `% zazawan vowogal.`
 >
 > % | z-Azawan | v-walk
@@ -295,9 +325,9 @@ A mark on a span colors all of it:
 **Compare with:** **`yol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling; [emotion compose](sakes.md#emotion-compose) states it as a claim, and the two can share a sentence.
 
 - A mark may go on any word, including act words and [sentence linkers](dependents.md#sentence-linkers). Attached to a [scope island](spans.md#scope-islands) (a chunk of words in braces `{ … }`), it colors the whole island.
-- Only `!`, `!!`, `?`, `?!`, `%`, `&`, and `;` are marks. Other stacks (`!?`, `??`, `%!`) are not, and neither are marks in a row with a space between (`! !`).
+- A mark is a stack of `!`, `?`, `%`, `&`, `;`, each at most twice, in any order. A third copy (`!!!`) is not a mark, and neither are marks in a row with a space between (`! !`).
 - `&` stresses by voice alone. To highlight with grammar, move the word to the front ([word order](clause.md)).
-- A mark on a word inside a colored span or sentence overrides it for that word.
+- A mark on a word inside a colored span or sentence overrides it for that word. To mix tones on one word, stack them there.
 - Before a span fence, the mark is **your** tone about the quote. Inside the fence, it is part of what is quoted (the original speaker's tone).
 - Speech adds no syllables: you voice the mark over its words.
 

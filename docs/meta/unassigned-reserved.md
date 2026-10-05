@@ -256,7 +256,7 @@ Source: [speech-moves.md](../grammar/speech-moves.md#tone-marks), [intention.md]
 
 - **open:** stacked vowels after ability **x** (`xua`, …) and after sake **th** as a second stance (`gulothaol`). Not guessable (*can again*? *it depends*?): *it depends* is MAY or a sentence (polar `oe` is *decline to answer*), and *can again* is `xa` plus a sentence. Label scope uses those stacks ([predication](../grammar/predication.md#scope-stacks)). Sake locus stacks still come after the horizon letter (`gulothamol`). The parser rejects a stacked sake stance and stacked ability.
 - **open:** a new tone mark (whisper, sarcasm, …). No voice job is left: `;` `%` `?` already cover quiet, sarcasm and hesitation.
-- **closed (D-23):** `~` as a tone mark, and stacks other than `?!`.
+- **closed (D-23):** `~` as a tone mark, and a third copy of a mark (`!!!`).
 
 ## Phonology
 

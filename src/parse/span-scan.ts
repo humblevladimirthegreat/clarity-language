@@ -43,10 +43,19 @@ export function scanPairedEnd(text: string, openAt: number): number | undefined 
   return undefined;
 }
 
-/** Length of a leading tone mark (`!!` / `?!` / `!` / `?` / `%` / `&` / `;`) at `i`, or 0. */
+/**
+ * Length of a leading tone mark at `i`, or 0. A mark is a stack of `! ? % & ;` in any order, each
+ * at most twice (`!!`, `?!`, `&;`, `%?!`); the longest such prefix of the run counts.
+ */
 export function toneMarkLength(text: string, i: number): number {
-  if (text.startsWith("!!", i) || text.startsWith("?!", i)) return 2;
-  return "!?%&;".includes(text[i] ?? "\0") ? 1 : 0;
+  const seen = new Map<string, number>();
+  let j = i;
+  for (; j < text.length && "!?%&;".includes(text[j]!); j += 1) {
+    const count = (seen.get(text[j]!) ?? 0) + 1;
+    if (count > 2) break;
+    seen.set(text[j]!, count);
+  }
+  return j - i;
 }
 
 /** Length of the run of tone-mark characters at `i` (valid mark or not), or 0. */
