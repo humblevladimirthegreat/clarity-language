@@ -484,27 +484,35 @@ A [hook](hooks.md) and its `/b/` on the ranked item go right before the bar, the
 
 **Compare with:** a name before the rank join is someone you rank against (`zazawan zalahen zel gezebul` *Azawan is sleepier than Alahen*). A stance word in that place is the value that stance sets.
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. They cover **`ue`**, the standalone form and **`zer`**, a place on the scale, a manner `/h/` right after the join, and a plan bar right before it.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a weighing room
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *heavy* | `aragam` | `aragal` *rock* |
-| *exertion* | `elevam` | `eleval` *lift* |
-| *big* | `elavam` | `elaval` *elephant* |
-| *ocean* | `wohahal` | `ohahal` *ocean* |
-| *intensity* | `ahegem` | `ahegel` *hockey* |
-| *lift* | `veleval` | `eleval` *lift* |
-| *plan* | `amam` | `amal` *plan-atlas* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *lift* | `veleval` | 🏋️: its abstract is *exertion* |
+| *arrival* | `vevahal` | 🛬 |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *PLAN* | `thamam` |
+| *heavy* | `aragam` |
+| *intensity* | `ahegem` |
+| *mango* | `amegol` |
+| *pie* | `abawul` |
+| *doughnut* | `ododel` |
+| *cart* | `agegal` |
+| *sleep* | `vezebal` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -516,15 +524,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 [z-Azawan | z-Alahen | z-rank/less | g-heavy]
 :::
 
-**2.** *Alahen is the least exerted.*
-
-::: details Show answer
-`zalahen zuel gelevam.`
-
-[z-Alahen | z-rank/less | g-exertion]
-:::
-
-**3.** *There is no heaviest.*
+**2.** *There is no heaviest.*
 
 ::: details Show answer
 `zel garagam.`
@@ -532,23 +532,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 [z-rank/more | g-heavy]
 :::
 
-**4.** *There is no smallest.*
-
-::: details Show answer
-`zuel gelavam.`
-
-[z-rank/less | g-big]
-:::
-
-**5.** *Whichever of Azawan or Alahen ranks heavier.*
-
-::: details Show answer
-`zazawan zalahen zer garagam.`
-
-[z-Azawan | z-Alahen | z-whatever-ranks | g-heavy]
-:::
-
-**6.** *Alahen lifts more intensely than Azawan.*
+**3.** *Alahen lifts more intensely than Azawan.*
 
 ::: details Show answer
 `zalahen zazawan zel hahegem veleval.`
@@ -556,120 +540,112 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 [z-Alahen | z-Azawan | z-rank/more | h-intensity] | v-lift
 :::
 
-**7.** *Azawan is heavier than planned.*
+**4.** *There are more mangoes than pies.*
 
 ::: details Show answer
-`zazawan thamam zel garagam.`
+`zamegolx zabawulx zel gral.`
 
-[z-Azawan | th-plan-itinerary | z-rank/more | g-heavy]
+[z-mango-x | z-pie-x | z-rank/more | g-amount]
 :::
 
-**8.** *Ahaben is lighter than planned.*
+**5.** *The cart is twice as heavy as the mango.*
 
 ::: details Show answer
-`zahaben thamam zuel garagam.`
+`zagegal zamegol zoel garagam hradul.`
 
-[z-Ahaben | th-plan-itinerary | z-rank/less | g-heavy]
+[z-cart | z-mango | z-equal-rank | g-heavy | h-two]
 :::
 
-**9.** *Alahen is the second heaviest.*
+**6.** *Ahaben is heavier than planned.*
 
 ::: details Show answer
-`zalahen zel wredul garagam.`
+`zahaben thamam zel garagam.`
 
-[z-Alahen | z-rank/more | [w-2nd | g-heavy]]
+[z-Ahaben | th-plan-itinerary | z-rank/more | g-heavy]
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zazawan zalahen zahaben zem garagam.`
+**1.** `zalahen zel wredul garagam.`
 
 ::: details Show answer
+[z-Alahen | z-rank/more | [w-2nd | g-heavy]]
 
-[z-Azawan | z-Alahen | z-Ahaben | z-rank/more.open | g-heavy]
-
-*Azawan is heavier than Alahen, who is heavier than Ahaben.*
+*Alahen is the second heaviest.*
 :::
 
-**2.** `zem gelavam.`
+**2.** `zazawan zalahen zel hral veleval.`
 
 ::: details Show answer
+[z-Azawan | z-Alahen | z-rank/more | h-how-often] | v-lift
 
-[z-rank/more.open | g-big]
-
-*No biggest comes to mind.*
+*Azawan lifts more often than Alahen.*
 :::
 
-**3.** `zazawan zalahen zer gelevam.`
+**3.** `zahaben zalahen zuel bral vevahal.`
 
 ::: details Show answer
+[z-Ahaben | z-Alahen | z-rank/less | b-later] | v-arrival
 
-[z-Azawan | z-Alahen | z-whatever-ranks | g-exertion]
-
-*Whichever of Azawan or Alahen ranks more exerted.*
+*Ahaben arrives earlier than Alahen.*
 :::
 
-**4.** `zahaben zazawan zel wohahal gelevam.`
+**4.** `zazawan hral veleval xoel zalahen hral vezebal.`
 
 ::: details Show answer
+[z-Azawan | h-more-than-one | v-lift | x-equal-rank | z-Alahen | h-more-than-one | v-sleep]
 
-[z-Ahaben | z-Azawan | z-rank/more | [w-ocean | g-exertion]]
-
-*Ahaben is much more exerted than Azawan.*
+*The more Azawan lifts, the more Alahen sleeps.*
 :::
 
-**5.** `zer garagam.`
+**5.** `zalahen zazawan zel garagam zul.`
 
 ::: details Show answer
+[[z-Alahen | z-Azawan | z-rank/more | g-heavy] | z-not]
 
-[z-whatever-ranks | g-heavy]
-
-*Whatever ranks heaviest.*
+*Alahen is no heavier than Azawan.*
 :::
 
-**6.** `zahaben zuel gelavam.`
+**6.** `zabawulx zododelx zel gram.`
 
 ::: details Show answer
+[z-pie-x | z-doughnut-x | z-rank/more | g-amount.about]
 
-[z-Ahaben | z-rank/less | g-big]
-
-*Ahaben is the smallest.*
+*It looks like there are more pies than doughnuts.*
 :::
 
-**7.** `zalahen zel hahegem veleval.`
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Alahen is not as heavy as Azawan.* `zalahen zazawan zuel garagam.` or `zalahen zazawan zel garagam zul.`
 
 ::: details Show answer
+`zalahen zazawan zuel garagam.`
 
-[z-Alahen | z-rank/more | h-intensity] | v-lift
+[z-Alahen | z-Azawan | z-rank/less | g-heavy]
 
-*Alahen lifts the most intensely.*
+*Not as … as* puts Alahen below, **`zuel`**; denying **`zel`** also allows a tie.
 :::
 
-**8.** `zazawan thamam zoel gelevam.`
+**2.** *Azawan lifts more intensely than Ahaben.* `zazawan zahaben zel hahegem veleval.` or `zazawan zahaben zel gahegem veleval.`
 
 ::: details Show answer
+`zazawan zahaben zel hahegem veleval.`
 
-[z-Azawan | th-plan-itinerary | z-equal-rank | g-exertion]
+[z-Azawan | z-Ahaben | z-rank/more | h-intensity] | v-lift
 
-*Azawan is as exerted as planned.*
+The ranking is how they lift, so the scale is `/h/`; `/ɡ/` would rank the people.
 :::
 
-**9.** `zalahen thamam zuel hral veleval.`
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Azawan is three times as heavy as Ahaben.* <!-- lint: error -->`zazawan zahaben zel garagam hrarel.`
 
 ::: details Show answer
+`zazawan zahaben zoel garagam hrarel.`
 
-[z-Alahen | th-plan-itinerary | z-rank/less | h-how-often] | v-lift
+[z-Azawan | z-Ahaben | z-equal-rank | g-heavy | h-three]
 
-*Alahen lifts less often than planned.*
-:::
-
-**10.** `zazawan zuel wredul garagam.`
-
-::: details Show answer
-
-[z-Azawan | z-rank/less | [w-2nd | g-heavy]]
-
-*Azawan is the second lightest.*
+A factor goes with the equative **`zoel`**; after **`zel`** the number is just *three times* on the clause.
 :::
 
 ## Advanced {#advanced}

@@ -235,7 +235,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🏄,surf,azeva,,,,,
 🚣,row,oroha,,,,,
 🏊,swim,ezewe,,,,float,restrictors.md#beginner-practice
-🏋️,lift,eleva,exertion,weightlift demands exertion,,raise,comparatives.md#intermediate-translation-practice
+🏋️,lift,eleva,exertion,weightlift demands exertion,,raise,comparatives.md#intermediate-practice
 🚴,bike,abega,,,,,
 🚵,mountain-bike,amade,adventure,a mountain bike heads off-road into the unknown,,venture,
 🤸,cartwheel,egade,exuberance,cartwheel shows exuberance,,,
@@ -514,7 +514,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🫙,jar,ahe,storage,jar stores what is kept,,vessel; store; stock,
 🏺,amphora,ameve,,,,,
 🌐,globe,ogoba,connected,a globe links every place; connected means linked together,,global; world; earth,
-🗺️,map,ama,plan,a map charts a route; a plan charts a course,,agenda; design; project,comparatives.md#intermediate-translation-practice
+🗺️,map,ama,plan,a map charts a route; a plan charts a course,,agenda; design; project,sakes.md#intermediate-translation-practice
 🗾,country,agu,scope,a map of one country; scope is the area the picture includes,,national; region; nation; extent; regional; zone; territory; area,
 🧭,compass,ame,direction,a compass points the way; direction is where you're headed,,direct; guide,sakes.md#intermediate-translation-practice
 ⛰️,mountain,amada,challenge,mountains are hard to climb; a challenge is hard to face,,pile; heap,predication.md#beginner-practice
@@ -601,7 +601,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🚢,ship,eheba,voyage,ship crosses open seas; voyage is a long sea journey,,journey; sail,roles.md#intermediate-translation-practice
 ✈️,airplane,erabe,,,,plane; aircraft; flight,
 🛫,departure,edaba,abandonment,plane lifting off leaves the ground; departure is setting out,,abandon,knowing.md#beginner-practice
-🛬,arrival,evaha,reaching,plane touching down reaches destination; arrival is reaching the end,,,
+🛬,arrival,evaha,reaching,plane touching down reaches destination; arrival is reaching the end,,,comparatives.md#intermediate-practice
 🪂,parachute,ebahu,descent,parachute slows a fall; descent is coming down safely,,sink,
 💺,seat,ezeda,passive,seat holds you while others move; passive is not acting yourself,,,numbers.md#intermediate-practice
 🚁,helicopter,ehege,,,,,
