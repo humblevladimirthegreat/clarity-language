@@ -22,7 +22,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🤭,gasp,agabu,shock,gasp at a shock,,,
 🫣,peek,ebaga,surveillance,peek to spy; surveillance is watching without being the seen act,,monitor; glance,
 🤫,hush,aheha,confidentiality,a hushed whisper keeps the matter private,,,sakes.md#intermediate-translation-practice
-🤔,think,evega,doubt,think shows doubt,,understand; consider; consideration; reckon,clause.md#beginner-translation-practice
+🤔,think,evega,doubt,think shows doubt,,understand; consider; consideration; reckon,clause.md#beginner-practice
 🫡,salute,azadu,respect,a salute honors someone; respect is honoring their worth,,civil; admire,
 🤐,secret,ezege,discretion,secret lips stay discreet,,private,
 🤨,skeptical,azoge,suspicion,a raised brow doubts someone; suspicion is expecting something is wrong,,suspect,
@@ -40,7 +40,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🙂‍↕️,nod,anade,agreement,a nod says yes to what was said,,,
 😌,relief,ereva,calm,relief brings calm,,,
 😔,pensive,ebaze,melancholy,pensive face shows melancholy,,sad; depression,
-😪,sleepy,ezebu,torpor,sleepy eye shows drowsiness; torpor is the unobservable low arousal,,,clause.md#beginner-translation-practice
+😪,sleepy,ezebu,torpor,sleepy eye shows drowsiness; torpor is the unobservable low arousal,,,restrictors.md#beginner-translation-practice
 🤤,drool,uduho,craving,drool shows craving,,hunger,
 🫩,bleary,abeye,fatigue,bleary eyes show fatigue,,,
 😷,mask,amazo,illness,a medical mask marks the sick; illness is being unwell,,,clause.md#advanced-translation-practice
@@ -76,7 +76,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥱,yawn,oyayo,monotony,yawn shows boredom; monotony is the situation offering nothing new,,bore,
 😤,huff,ahova,,,,,
 😡,rage,ereho,destructiveness,rage means fury; destructiveness is the unobservable will to wreck,,destroy; destruction,
-😠,angry,anege,hostility,angry means anger; hostility is the unobservable stance toward another,,hate; aggressive,clause.md#beginner-translation-practice
+😠,angry,anege,hostility,angry means anger; hostility is the unobservable stance toward another,,hate; aggressive,clause.md#beginner-practice
 🤬,curse,egezo,profanity,cursing shows profanity,,damn,
 😈,devil,edeva,mischief,devil shows mischief,,vice; evil,
 💀,skull,azaga,death,a skull is what remains after death,,die; dead,
@@ -104,9 +104,9 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💥,boom,ubuhu,consequence,collision bursts; consequence is the unobservable follow-on,,outcome; result; effect,
 💫,dizzy,edezu,dazzle,dizzy stars swirl until the eyes are overwhelmed,,,
 💦,sweat,ozewe,effort,sweat drops show hard work; effort is work that costs you,,labor; strain,
-💨,dash,adehu,haste,dash of wind moves fast; haste is moving quickly,,rush; pace,clause.md#beginner-translation-practice
+💨,dash,adehu,haste,dash of wind moves fast; haste is moving quickly,,rush; pace,clause.md#beginner-practice
 🕳️,hole,ohaho,void,a hole is an empty space with nothing in it,,gap,
-💬,speech,ezebe,discourse,speech is audible; discourse is the unobservable social practice,v:tell,say; talk; word; speak; language; discuss; discussion; description; communicate; communication; report; declare,clause.md#beginner-translation-practice
+💬,speech,ezebe,discourse,speech is audible; discourse is the unobservable social practice,v:tell,say; talk; word; speak; language; discuss; discussion; description; communicate; communication; report; declare,dependents.md#beginner-translation-practice
 👁️‍🗨️,attest,odo,testimony,eye-in-speech attests; testimony is the claim that seeing warrants saying,,swear; demonstrate,questions.md#intermediate-translation-practice
 🗯️,rant,aradu,outrage,rant shows outrage,,complain,
 💭,thought,ovu,commentary,thought balloon floats a take over the scene; commentary is mind storying instead of bare contact,,idea; concept; notion; remark; theoretical; comment,
@@ -129,7 +129,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🫶,care,egehe,kindness,heart hands offer care; kindness is warmth shown to others,,tender,
 🤝,handshake,aha,co-participation,handshake seals shared presence; co-participation is sharing the floor,,participate; joint; interaction; membership; participation,
 🙏,pray,ebevo,gratitude,pray expresses gratitude,,grateful,sakes.md#intermediate-translation-practice
-✍️,write,arada,authorship,write puts words on the page; authorship is claiming those words,,author,clause.md#beginner-translation-practice
+✍️,write,arada,authorship,write puts words on the page; authorship is claiming those words,,author,dependents.md#beginner-translation-practice
 💅,nail-polish,eneba,,,,,
 🤳,selfie,ezave,vanity,selfie reflects vanity,,,
 💪,bicep,abeze,strength,flex shows strength,,strong; arm; muscle; strengthen; exercise,
@@ -145,7 +145,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦷,tooth,uduva,,,,,
 🦴,bone,obo,structure,bone provides structure,,,
 👀,eyes,azaha,attention,eyes grant awareness,m.v:look,concentrate; observation; gaze,
-👁️,eye,ahaha,perception,eye enables perception,v:see,perceive; visual,clause.md#beginner-translation-practice
+👁️,eye,ahaha,perception,eye enables perception,v:see,perceive; visual,dependents.md#beginner-translation-practice
 👅,tongue,adava,eloquence,tongue wields eloquence,,,
 👄,mouth,amava,,,,,
 🫦,lip-bite,elebu,sexuality,a lip-bite signals desire; sexuality is physical attraction,,bite; sex,
@@ -185,7 +185,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 👮,police,abaze,authority,policing wields authority,,,predication.md#beginner-translation-practice
 🕵️,investigate,une,deduction,investigating follows clues; deduction is the unobservable inference,,implication; logic; derive; interpretation,
 💂,guard,agavo,protection,guarding provides protection,,insure; protect,dependents.md#beginner-translation-practice
-🥷,sneak,ezevu,stealth,sneaking moves with stealth,,,clause.md#beginner-translation-practice
+🥷,sneak,ezevu,stealth,sneaking moves with stealth,,,speech-moves.md#beginner-translation-practice
 👷,construct,agoza,fabrication,construction builds structures,,build; install; formation; implement; implementation,roles.md#beginner-translation-practice
 🫅,reign,erevo,sovereignty,reigning embodies sovereignty,,,
 🤴,inherit,anehe,nobility,an inherited title passes rank down the family line,,,
@@ -217,7 +217,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💆,massage,ameza,soothing,massage brings relief,,,
 💇,haircut,ehegu,self-presentation,haircut is grooming; self-presentation is the unobservable aim,,,
 🚶,walk,owoga,,,,march; wander,predication.md#beginner-translation-practice
-🧍,stand,azado,presence,stand shows presence,,existence; attendance,clause.md#beginner-translation-practice
+🧍,stand,azado,presence,stand shows presence,,existence; attendance,dependents.md#beginner-translation-practice
 🧎,kneel,eneha,submission,kneel shows submission,,,sakes.md#intermediate-translation-practice
 🧑‍🦼,power-chair,abavo,,,,,
 🧑‍🦽,propel,abobe,independence,self-propelling a chair shows independence,,motivate,
@@ -284,7 +284,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🐪,camel,agehu,endurance,camel endures the desert,,,
 🦙,llama,alawe,composure,no drama llama stays composed,,,
 🦒,giraffe,ahevo,overview,giraffe sees the overview,,,
-🐘,elephant,elava,big,elephant is large in size,m.w:very,large; substantial,clause.md#beginner-translation-practice
+🐘,elephant,elava,big,elephant is large in size,m.w:very,large; substantial,clause.md#beginner-practice
 🦣,mammoth,amave,enormity,mammoth is enormous in scale,,enormous; massive,
 🦏,rhinoceros,araze,charge,rhino charges headlong,,accuse; bill,
 🦛,hippopotamus,ehoba,bulk,hippo is sheer bulk,,majority; mass; fat,
@@ -835,7 +835,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔖,bookmark,ura,reminder,a bookmark holds your place to come back to,,remind,
 🏷️,label,aleba,classification,a label sorts things into named groups,,category; class; mark,
 🪙,coin,ugo,same,coin has two faces of one thing; same is two labels for one referent,,uniform,predication.md#beginner-translation-practice
-💰,money,amo,debt,money bag holds what is owed; debt is an unpaid balance,v:pay,finance; wage; salary; cash; currency; fund; capital; payment,clause.md#beginner-translation-practice
+💰,money,amo,debt,money bag holds what is owed; debt is an unpaid balance,v:pay,finance; wage; salary; cash; currency; fund; capital; payment,clause.md#beginner-practice
 🪎,treasure,edohe,riches,a treasure chest is piled with gold and jewels,,,
 💴,yen,eyeha,,,,,
 💵,dollar,adahu,cost,a dollar pays the price; cost is what something takes from you,,price; fee; expense; commission,
@@ -924,7 +924,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🪟,window,ewedo,transparency,you can see through a window's clear glass,,clear,causation.md#beginner-translation-practice
 🛏️,bed,ebeda,,,,,word-endings.md#intermediate-translation-practice
 🛋️,couch,ageha,leisure,lounging on the couch; leisure is free time,,,
-🪑,chair,ehahe,position,chair is where you take a seat; position is your assigned place,v:sit,place; situation; lay; status; location; locate; pose; situate; put; occupy,clause.md#beginner-translation-practice
+🪑,chair,ehahe,position,chair is where you take a seat; position is your assigned place,v:sit,place; situation; lay; status; location; locate; pose; situate; put; occupy,speech-moves.md#beginner-translation-practice
 🚽,toilet,ododa,,,,,
 🪠,plunger,obahe,unblock,plunger clears a clogged pipe; unblock is clearing obstruction,,,
 🚿,shower,ahave,renewal,shower washes away the day; refresh is restoring freshness,,update,

@@ -137,119 +137,163 @@ The role letters you have used so far:
 | `/h/` | adverb (how / when / where) | **h** starts *how* / *when* / *where* |
 | `/th/` | stance (how sure, how known, why, as if) | **th** ≈ *think* (your stance on the claim) |
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a bank
 
-**Roots used here:**
+The word bank has two tables. **New words** are introduced here: **English** is what you produce, and **Agazan** is its citation, or the word with its role letter when that letter is part of the English (*pay* is `vamol`, the money root as a verb). Then the **Cue** names the citation's sense (💰 from *money*). **Review** lists words from earlier checkpoints.
 
-| English | Agazan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Alahen* | `alahen` | | |
-| *Ahaben* | `ahaben` | | |
-| *money* | `amol` | | |
-| *angry* | `anegel` | | |
-| *very* | `welavam` | | |
-| *sleepy* | `ezebul` | | |
-| *sit* | `vehahel` | `ehahel` *chair* | 🪑: taking a seat |
-| *stand* | `vazadol` | `azadol` *stand* | 🧍: staying in place |
-| *see* | `vahahal` | `ahahal` *eye* | 👁️: seeing is what an eye does |
-| *tell* | `vezebel` | `ezebel` *speech* | 💬: saying it to someone |
-| *write* | `varadal` | `aradal` *write* | ✍️: putting words on the page |
-| *sneak* | `vezevul` | `ezevul` *sneak* | 🥷: moving unseen |
-| *doubt* | `thevegam` | `evegal` *think* | 🤔: thinking it over shows doubt |
-| *haste* | `hadehum` | `adehul` *dash* | 💨: a burst of speed |
-| *like* | `humum` | `umul` *mirror* | 🪞: the image is of the model |
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *pay* | `vamol` | 💰 from *money* |
+| *angry* | `anegel` | 😠 |
+| *very* | `welavam` | 🐘 from *elephant*: big, as a degree |
+| *haste* | `hadehum` | 💨 from *dash* |
+| *doubt* | `thevegam` | 🤔 from *think* |
+| *like* | `humum` | 🪞 from *mirror*: the image is like the model |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *find* | `vamagal` |
+| *pencil* | `ebeyol` |
+| *book* | `ubugal` |
+| *bell* | `ebehul` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *Azawan sits.*
+**1.** *Azawan pays Alahen.*
 
 ::: details Show answer
-`zazawan vehahel.`
+`zazawan balahen vamol.`
 
-z-Azawan | v-sit
+z-Azawan | b-Alahen | v-pay
+
+**Also correct:** `zazawan vamol balahen.`
 :::
 
-**2.** *Ahaben sees Azawan.*
+**2.** *A very angry Alahen finds money.*
 
 ::: details Show answer
-`zahaben dazawan vahahal.`
+`zalahen welavam ganegel damol vamagal.`
 
-z-Ahaben | d-Azawan | v-see
+[z-Alahen | [w-very | g-angry]] | d-money | v-find
+
+**Also correct:** `zalahen welavam ganegel vamagal damol.`
 :::
 
-**3.** *A very angry Alahen stands.*
+**3.** *Ahaben hastily finds a pencil.*
 
 ::: details Show answer
-`zalahen welavam ganegel vazadol.`
+`zahaben hadehum debeyol vamagal.`
 
-[z-Alahen | [w-very | g-angry]] | v-stand
+z-Ahaben | h-haste | d-pencil | v-find
+
+**Also correct:** `zahaben debeyol vamagal hadehum.`
 :::
 
-**4.** *Azawan writes hastily.*
+**4.** *I doubt that Azawan pays Ahaben.*
 
 ::: details Show answer
-`zazawan varadal hadehum.`
+`zazawan bahaben thevegam vamol.`
 
-z-Azawan | v-write | h-haste
+z-Azawan | b-Ahaben | th-doubt | v-pay
+
+**Also correct:** `zazawan thevegam vamol bahaben.`
 :::
 
-**5.** *Azawan tells Alahen.*
+**5.** *Ahaben finds Azawan.*
 
 ::: details Show answer
-`zazawan balahen vezebel.`
+`zahaben dazawan vamagal.`
 
-z-Azawan | b-Alahen | v-tell
-:::
+z-Ahaben | d-Azawan | v-find
 
-**6.** *I doubt that Ahaben is sitting.*
-
-::: details Show answer
-`zahaben thevegam vehahel.`
-
-z-Ahaben | th-doubt | v-sit
+**Also correct:** `zahaben vamagal dazawan.`
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zahaben vazadol.`
+**1.** `dalahen zahaben vamagal.`
 
 ::: details Show answer
+d-Alahen | z-Ahaben | v-find
 
-z-Ahaben | v-stand
-
-*Ahaben stands.*
+*Ahaben finds Alahen.*
 :::
 
-**2.** `zazawan dahaben vahahal.`
+**2.** `zahaben welavam hadehum vamol bazawan.`
 
 ::: details Show answer
+z-Ahaben | [w-very | h-haste] | v-pay | b-Azawan
 
-z-Azawan | d-Ahaben | v-see
-
-*Azawan sees Ahaben.*
+*Ahaben pays Azawan very hastily.*
 :::
 
-**3.** `zahaben gezebul damol vahahal.`
+**3.** `zalahen debehul vamagal humum bazawan.`
 
 ::: details Show answer
+z-Alahen | d-bell | v-find | [h-like | b-Azawan]
 
-[z-Ahaben | g-sleepy] | d-money | v-see
-
-*Sleepy Ahaben sees money.*
+*Alahen finds a bell, like Azawan.*
 :::
 
-**4.** `zalahen vezevul humum bazawan.`
+**4.** `zahaben thevegam dubugal vamagal.`
 
 ::: details Show answer
+z-Ahaben | th-doubt | d-book | v-find
 
-z-Alahen | v-sneak | [h-like | b-Azawan]
+*I doubt that Ahaben finds a book.*
+:::
 
-*Alahen sneaks like Azawan.*
+**5.** `bazawan zalahen ganegel vamol.`
+
+::: details Show answer
+b-Azawan | [z-Alahen | g-angry] | v-pay
+
+*An angry Alahen pays Azawan.*
+:::
+
+#### Pick one {#beginner-pick-one}
+
+**1.** *Azawan finds Alahen.* `zazawan dalahen vamagal.` or `zalahen dazawan vamagal.`
+
+::: details Show answer
+`zazawan dalahen vamagal.`
+
+z-Azawan | d-Alahen | v-find
+
+The finder takes `/z/` and the one found takes `/d/`; the other form has Alahen finding Azawan.
+:::
+
+**2.** *Alahen pays Azawan hastily.* `zalahen hadehum bazawan vamol.` or `zalahen bazawan hadehum vamol.`
+
+::: details Show answer
+`zalahen bazawan hadehum vamol.`
+
+z-Alahen | b-Azawan | h-haste | v-pay
+
+A `/b/` word right after an `/h/` word completes it, so the person paid must not follow `hadehum`.
+:::
+
+#### Fix it {#beginner-fix-it}
+
+**1.** *An angry Ahaben pays Alahen.* <!-- lint: error -->`zahaben ganegel balahen vamol.`
+
+::: details Show answer
+`zahaben ganegel vamol balahen.`
+
+[z-Ahaben | g-angry] | v-pay | b-Alahen
+
+Right after the `/ɡ/` word, `balahen` completes *angry* instead of naming who is paid.
 :::
 
 ## Intermediate {#intermediate}
