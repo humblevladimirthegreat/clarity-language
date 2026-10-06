@@ -18,7 +18,6 @@ use [skip-cd] for amplify to not deploy.
 -review logical deduction
 -parser can optionally output translation guidance
 -run full lexicon retie
--consider swapping ae with oe meanings
 -allow non-emoji roots
 
 save for near end of limit resets:
@@ -29,7 +28,6 @@ save for near end of limit resets:
 
 save for end:
 -add Agazan->English cheat sheet
--Cheat sheet for joins and hooks
 -join vowel decision tree in advanced vowel series.
 
 Dictionary entries (open lexicon / concepts, not the closed list above):

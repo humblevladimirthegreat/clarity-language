@@ -1,6 +1,8 @@
 // Keep the Claritish cheat sheet in step with the lessons: every drop-in in a
 // lesson table appears on the sheet, and every drop-in on the sheet comes from a
-// lesson (verbatim, or with its -l / -m / -r ending swapped).
+// lesson (verbatim, or with its -l / -m / -r ending swapped). The feelings lesson
+// is exempt from the first check: the sheet teaches the feeling-word pattern with
+// one worked example, not the lesson's vocabulary.
 import { readdirSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -8,6 +10,7 @@ import { fileURLToPath } from "node:url";
 const dir = resolve(dirname(fileURLToPath(import.meta.url)), "../docs/grammar/claritish");
 const SHEET = "cheat-sheet.md";
 const NOT_LESSONS = new Set(["index.md", "learn-agazan.md", SHEET]);
+const PATTERN_ONLY = new Set(["feelings.md"]);
 
 function spans(text: string): string[] {
   return [...text.matchAll(/`([^`\n]+)`/g)].map((m) => m[1]!);
@@ -28,6 +31,7 @@ const problems: string[] = [];
 for (const file of lessons) {
   const text = readFileSync(join(dir, file), "utf8");
   for (const span of spans(text)) lessonSpans.add(span);
+  if (PATTERN_ONLY.has(file)) continue;
   for (const span of tableSpans(text)) {
     if (!sheetSpans.has(span)) problems.push(`${file}: \`${span}\` is not on the cheat sheet`);
   }

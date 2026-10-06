@@ -1,0 +1,100 @@
+# Proposal: cheat sheets for the whole grammar
+
+**Status:** PROPOSED. Pilot sheet built: [joins and hooks](../grammar/joins-hooks-cheatsheet.md) (hand-written; no sync lint yet).  
+**Related:** TODO *add Agazan->English cheat sheet*, *Cheat sheet for joins and hooks*, *join vowel decision tree in advanced vowel series*; the existing [Exceptions](../grammar/exceptions-cheatsheet.md) sheet; the Claritish [cheat sheet](../grammar/claritish/cheat-sheet.md) and its lint [`scripts/lint-claritish-cheat-sheet.ts`](../../scripts/lint-claritish-cheat-sheet.ts); [Claritish track policy](../meta/grammar-docs.md#claritish-track).  
+**Design authority:** stays with the owning grammar pages and the lexicon CSVs. Sheets add no forms, restate no rule the owning page does not teach, and are never cited as the source for a form.
+
+## Motivation
+
+The Claritish track ends in a printable one-page sheet that a learner keeps open while writing. The grammar proper has nothing like it: one small Exceptions sheet, and otherwise 30 stage pages where the forms for one job (say, every join vowel) are spread over Beginner, Intermediate, and Advanced sections and two or three pages. A learner who has read the pages still has to hunt for a form they half remember.
+
+Grammar sheets give that learner one glance per subsystem, grouped the way they look things up, not one sheet per page.
+
+## Goals
+
+1. One printable sheet (one or two pages at print size) per learner-facing subsystem.
+2. Every row links to the section that teaches it, so the sheet is a door into the grammar, not a second grammar.
+3. Rows carry a stage tag, so a beginner can skip what they have not reached.
+4. Sheets stay in step with the owning pages through build checks, not memory.
+
+## Non-goals
+
+- New forms, readings, or rules. A sheet that needs a sentence the owning page does not have is a sign to fix the owning page first.
+- Practice, gap stories, or worked examples beyond a word or two per row.
+- Replacing the **Reference tables** tail on stage pages. Those stay as in-page lookups; sheets cut across pages.
+- Covering the recipe track or `numeric-derivation.md` (advanced only, and not a lookup job).
+
+## Proposed sheets
+
+| Sheet | Covers (owning pages) | Notes |
+|-------|-----------------------|-------|
+| **Sounds and spelling** | `phonology.md` | Letters, vowels, `th`, phonotactics, letter names |
+| **Word shape and clause** | `word-endings.md`, `clause.md`, `predication.md` | PoS letters × endings, role letters, default order, hosting, chaining. The core sheet. |
+| **People and pointing** | `pronouns.md`, `plurality.md` | Pronoun families, the topic, plural, associative, clusivity |
+| **Talking** | `speech-moves.md`, `questions.md` | Turns, vocatives, the reusable vowel series, tone marks, yes/no and fill questions, stance particles |
+| **Knowing and intending** | `knowing.md`, `intention.md` | Evidentials × strength, MAY, forecasts, plan / decision / try / ability |
+| **Why and allowed** | `causation.md`, `sakes.md` | Cause and condition poles, fault, sakes, permission, consent |
+| **Joins and hooks** (pilot) | `joins.md`, `join-across-roles.md`, `hooks.md` | One vowel map for both; join arity grid; hook kinds by position. Later: the join-vowel decision tree from TODO. |
+| **Restrictors and spans** | `restrictors.md`, `spans.md` | `/h/` and `/w/` restrictors, habitual, span fences, asides, scope islands |
+| **Linking clauses** | `dependents.md`, `relations.md` | Continue, stand-ins, subordinators, the relation catalog |
+| **Roles and comparing** | `roles.md`, `x-compounds.md`, `comparatives.md` | Role compounds, laterals, `x` families, comparatives and stance bars |
+| **Numbers** | `numbers.md`, `numbers-applied.md` | Numerals, digitless forms, time and date, ranges, measures |
+| **Agazan → English** | `lexicon-overlays.csv`, `src/closed-roots.ts`, closed function words | Alphabetical reverse lookup of every closed form; generated (see below) |
+| **Exceptions** | (exists) | Unchanged |
+
+## Page and policy shape
+
+- **Location.** Today the one grammar sheet is `docs/grammar/exceptions-cheatsheet.md`, and the pilot follows that flat `*-cheatsheet.md` naming. Once three or more sheets exist, move them to `docs/grammar/cheat-sheets/` and add the old URLs to [site redirects](../meta/site-redirects.md).
+- **Sidebar.** All sheets sit in the existing **Cheat Sheets** group, in reading order (sounds first, Agazan → English and Exceptions last).
+- **Front matter.** `pageClass: cheat-sheet`, `outline: false`, and `<PrintButton />`. The print CSS already written for the Claritish sheet is shared by both classes.
+- **Links.** Sheets link out to owning sections. Stage pages never link to sheets, as with the recipe track ([recipe track](../meta/grammar-docs.md#recipe-track)); the [introduction](../grammar/introduction.md#how-to-learn) may mention the group once.
+- **Stage tags.** Each row (or each section, when the whole section is one stage) carries **B** / **I** / **A**. The tag is the stage of the section the row links to.
+- **Wording.** The usual [doc style](../meta/doc-style.md): learner names for features, never [terminology](../grammar/terminology.md) links, English cues in italics, forms in backticks so the build parses them and `retie-docs` keeps them current.
+- **Editor note.** Add a **Cheat sheets** section to [grammar-docs.md](../meta/grammar-docs.md) with the rules above, and update the AGENTS.md row (it names only `exceptions-cheatsheet.md` today).
+
+## Keeping sheets in sync
+
+The Claritish lint works because the sheet and the lessons are two small sets of forms that must match each other exactly. The grammar is too large for that, and much of it does not belong on a sheet, so use three layers, strongest first.
+
+### 1. Generate what the data already owns
+
+`data/lexicon-overlays.csv` carries `kind` and `anchor` for every overlay. Overlays are most of the paradigm content: clause poles (41), evidentials (36), phasal (24), join-relations (20), sakes (18), deontic (15), join-acts (10), and so on.
+
+- Sheets mark generated blocks: `<!-- generated: overlays kind=evidential -->` … `<!-- /generated -->`.
+- A script (`scripts/cheat-sheet-blocks.ts`) rebuilds each block from the CSV. In the build it runs as a check and fails when a block is stale; `--write` refreshes the blocks, the same dry-run / write pattern as `retie-docs`.
+- The **Agazan → English** sheet is almost entirely generated: overlays, `src/closed-roots.ts`, and `lexicon-compounds.csv`. It cannot drift.
+
+### 2. Every hand-written row must match the section it links to
+
+A new `scripts/lint-cheat-sheets.ts`:
+
+- Every table row on a sheet links to at least one owning section.
+- Every Agazan code span in the row must appear in that linked section's text (heading to next heading of the same level), verbatim or with its ending swapped among **-l** / **-m** / **-r** (the Claritish rule).
+- Spans that are patterns, not words (`…el`, `A HOOK B`, a lone vowel such as `ae`), are skipped the same way the Agazan doc lint skips them.
+
+This catches a respelled, removed, or moved form, and it is tighter than "appears somewhere in the grammar." Dead anchors are already caught by the build.
+
+### 3. Owning tables opt in for coverage
+
+On an owning page, an editor puts `<!-- cheat-sheet: joins-hooks -->` right before a table. The lint then requires every form in that table to be on that sheet.
+
+- This catches the opposite drift: a new form added to the grammar that never reaches the sheet.
+- Unmarked tables are free, so example-only tables do not bloat the sheets.
+- The marker comment sits where an editor changes the table, so the dependency is visible at the moment it matters.
+- Rule for [grammar-docs.md](../meta/grammar-docs.md): a change to a marked table updates its sheet in the same change (the same rule the Claritish track has).
+
+### What still slips through
+
+A meaning or gloss change that keeps the spelling passes layers 2 and 3. Generated blocks cover that for overlays. For hand-written rows the opt-in marker is the reminder; that is as much as is worth enforcing.
+
+### One lint for both tracks
+
+`lint-cheat-sheets.ts` replaces `lint-claritish-cheat-sheet.ts`. Claritish becomes one configuration: its "linked section" is the whole lesson page, every lesson table is opted in, and `feelings.md` stays pattern-only.
+
+## Rollout
+
+1. Pilot sheet by hand: **Joins and hooks** (done).
+2. Write `lint-cheat-sheets.ts` layers 2 and 3; mark the joins and hooks owning tables; fold the Claritish lint into it.
+3. Generated blocks (layer 1) and the **Agazan → English** sheet.
+4. Remaining sheets, one per change, each with its owning tables marked.
+5. Move sheets into `cheat-sheets/` with redirects; add the grammar-docs.md section and the AGENTS.md row.
