@@ -416,195 +416,170 @@ Under a question, **`her`** asks which time ranks first: *When's best?* With occ
 >
 > "Azawan is sleepy either when raining or at night (not both)."
 
-### Translation practice {#intermediate-translation-practice}
-<a id="translation-practice-intermediate"></a>
+### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a mountain trail
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *climb* | `vagayal` | |
-| *run* | `varahal` | |
-| *sleepy* | `ezebul` | |
-| *rain* | `erehel` | |
-| *snow* | `ozezol` | |
-| *night* | `anadal` | |
-| *fog* | `avegel` | |
-| *ice* | `azahol` | |
-| *scream* | `vezugel` | |
-| *fall* | `vadahel` | `adahel` *down* |
-| *that-clause* | `barl` | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *climb* | `vagayal` | 🧗 |
+| *snow* | `ozezol` | 🌨️ |
+| *fog* | `avegel` | 🌫️ |
+| *ice* | `azahol` | 🧊 |
+| *fall* | `vadahel` | ⏬ from *down* |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *interlocutors* | `ahan` |
+| *rain* | `erehel` |
+| *night* | `anadal` |
+| *thunderstorm* | `avodel` |
+| *sleepy* | `ezebul` |
+| *walk* | `vowogal` |
+| *run* | `varahal` |
+| *sleep* | `vezebal` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan climbs either when raining or at night, not both.*
+**1.** *Azawan climbs either when snowing or at night (not both).*
 
 ::: details Show answer
-`zazawan vagayal herehel hanadal hol.`
+`zazawan vagayal hozezol hanadal hol.`
 
-z-Azawan | v-climb | h-rain | h-night | h-when-one
+z-Azawan | v-climb | h-snow | h-night | h-when-one
 :::
 
-**2.** *Alahen runs when raining and/or when snowing.*
+**2.** *Alahen climbs when raining and/or when foggy.*
 
 ::: details Show answer
-`zalahen varahal herehel hozezol haol.`
+`zalahen vagayal herehel havegel haol.`
 
-z-Alahen | v-run | h-rain | h-snow | h-when-any-of
+z-Alahen | v-climb | h-rain | h-fog | h-when-any-of
 :::
 
-**3.** *Ahaben does not climb when there is fog.*
+**3.** *Ahaben walks, but not when icy.*
 
 ::: details Show answer
-`zahaben vagayal havegel hul.`
+`zahaben vowogal hazahol hul.`
 
-z-Ahaben | v-climb | h-fog | h-not-when
+z-Ahaben | v-walk | h-ice | h-not-when
 :::
 
-**4.** *Azawan climbs anytime except when snowing.*
+**4.** *Azawan climbs preferably when snowing, rather than when raining.*
 
 ::: details Show answer
-`zazawan vagayal hozezol huol.`
+`zazawan vagayal hozezol herehel hel.`
 
-z-Azawan | v-climb | h-snow | h-anytime-except
+z-Azawan | v-climb | h-snow | h-rain | h-when-ranked
 :::
 
-**5.** *Azawan climbs preferably when raining rather than when snowing.*
+**5.** *When's best for us to climb?*
 
 ::: details Show answer
-`zazawan vagayal herehel hozezol hel.`
+`yol zahan vagayal her.`
 
-z-Azawan | v-climb | h-rain | h-snow | h-when-ranked
+y-question | z-interlocutors | v-climb | h-when-best
 :::
 
-**6.** *Azawan climbs first when there is ice, then when there is fog.*
+**6.** *Alahen falls if Azawan runs.*
 
 ::: details Show answer
-`zazawan vagayal hazahol havegel hael.`
+`zalahen vadahel thoyem barl zazawan varahal.`
 
-z-Azawan | v-climb | h-ice | h-fog | h-when-in-order
-:::
-
-**7.** *When is it best for Azawan to climb?*
-
-::: details Show answer
-`yol zazawan vagayal her.`
-
-y-question | z-Azawan | v-climb | h-when-best
-:::
-
-**8.** *Azawan is sleepy either when raining or at night, not both.*
-
-::: details Show answer
-`zazawan werehel wanadal wol gezebul.`
-
-z-Azawan | [w-rain | w-night | w-when-one | g-sleepy]
-:::
-
-**9.** *Ahaben screams if Alahen falls.*
-
-::: details Show answer
-`zahaben vezugel thoyem barl zalahen vadahel.`
-
-z-Ahaben | v-scream | [th-if | b-that-clause] | z-Alahen | v-fall
-:::
-
-**10.** *Alahen runs only as a last resort when there is fog.*
-
-::: details Show answer
-`zalahen varahal havegel huel.`
-
-z-Alahen | v-run | h-fog | h-when-last
+z-Alahen | v-fall | [th-if | b-that-clause] | z-Azawan | v-run
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zalahen vagayal herehel hanadal hom.`
+**1.** `zahaben vowogal havegel huol.`
 
 ::: details Show answer
+z-Ahaben | v-walk | h-fog | h-anytime-except
 
-z-Alahen | v-climb | h-rain | h-night | h-when-one.open
-
-*Alahen climbs either when raining or at night, or never.*
+*Ahaben walks anytime except in fog.*
 :::
 
-**2.** `zalahen vagayal herehel hozezol hoel.`
+**2.** `zazawan vagayal hozezol hanadal hael.`
 
 ::: details Show answer
+z-Azawan | v-climb | h-snow | h-night | h-when-in-order
 
-z-Alahen | v-climb | h-rain | h-snow | h-equally-when
-
-*Alahen climbs as often when raining as when snowing.*
+*Azawan climbs first when snowing, then at night.*
 :::
 
-**3.** `zazawan vagayal hazahol hal.`
+**3.** `zalahen vowogal hazahol huel.`
 
 ::: details Show answer
+z-Alahen | v-walk | h-ice | h-when-last
 
-z-Azawan | v-climb | h-ice | h-only-when
-
-*Azawan climbs only when there is ice.*
+*Alahen walks on ice only as a last resort.*
 :::
 
-**4.** `zalahen varahal herehel hozezol har.`
+**4.** `zazawan wozezol wanadal wol gezebul.`
 
 ::: details Show answer
+z-Azawan | [w-snow | w-night | w-when-one | g-sleepy]
 
-z-Alahen | v-run | h-rain | h-snow | h-sometimes
-
-*Alahen sometimes runs, on some occasion of rain or snow.*
+*Azawan is sleepy either when snowing or at night (not both).*
 :::
 
-**5.** `zalahen varahal hanadal hur.`
+**5.** `zahaben vagayal herehel havegel hoel.`
 
 ::: details Show answer
+z-Ahaben | v-climb | h-rain | h-fog | h-equally-when
 
-z-Alahen | v-run | h-night | h-some-other-time
-
-*Alahen runs at some time other than night.*
+*Ahaben climbs as often in rain as in fog.*
 :::
 
-**6.** `zahaben vagayal havegel hul.`
+**6.** `zalahen vagayal havodel hom.`
 
 ::: details Show answer
+z-Alahen | v-climb | h-thunderstorm | h-when-one.open
 
-z-Ahaben | v-climb | h-fog | h-not-when
-
-*Ahaben does not climb when there is fog.*
+*Alahen climbs during a thunderstorm, or never.*
 :::
 
-**7.** `zazawan vezugel thoyem barl zalahen vadahel.`
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Azawan sleeps when raining and/or when snowing.* `zazawan vezebal herehel hozezol haol.` or `zazawan vezebal herehel hozezol hol.`
 
 ::: details Show answer
+`zazawan vezebal herehel hozezol haol.`
 
-z-Azawan | v-scream | [th-if | b-that-clause] | z-Alahen | v-fall
+z-Azawan | v-sleep | h-rain | h-snow | h-when-any-of
 
-*Azawan screams if Alahen falls.*
+**`haol`** lets both count; **`hol`** says one or the other, not both.
 :::
 
-**8.** `zalahen werehel wanadal wol gezebul.`
+**2.** *Ahaben climbs preferably when foggy.* `zahaben vagayal havegel hel.` or `zahaben vagayal havegel hal.`
 
 ::: details Show answer
+`zahaben vagayal havegel hel.`
 
-z-Alahen | [w-rain | w-night | w-when-one | g-sleepy]
+z-Ahaben | v-climb | h-fog | h-when-ranked
 
-*Alahen is sleepy either when raining or at night, not both.*
+Rank **`hel`** names the preferred time; **`hal`** would say *only* when foggy.
 :::
 
-**9.** `zalahen vagayal hazahol huem.`
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Ahaben sleeps if Azawan climbs.* <!-- lint: error -->`zahaben vezebal hal barl zazawan vagayal.`
 
 ::: details Show answer
+`zahaben vezebal thoyem barl zazawan vagayal.`
 
-z-Alahen | v-climb | h-ice | h-when-last.open
+z-Ahaben | v-sleep | [th-if | b-that-clause] | z-Azawan | v-climb
 
-*Alahen climbs as a last resort when there is ice, among other occasions.*
+A restrictor lists occasion words; a whole sentence as the occasion takes a pole word and **`barl`**.
 :::
 
 ## See also

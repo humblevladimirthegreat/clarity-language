@@ -227,7 +227,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🕴️,levitate,aleve,elevation,levitating lifts a body off the ground,,,
 👯,partying,obade,revelry,partying dancers show revelry,,,
 🧖,sauna,ozohe,relaxation,sauna brings relaxation,,relax,
-🧗,climb,agaya,failure,a climb that doesn't top out is still climbing; failure is an attempt that didn't stick yet,,lose; miss; fail,restrictors.md#intermediate-translation-practice
+🧗,climb,agaya,failure,a climb that doesn't top out is still climbing; failure is an attempt that didn't stick yet,,lose; miss; fail,restrictors.md#intermediate-practice
 🤺,fencing,aveze,rivalry,fencers duel to beat each other,,rival; opponent,
 🏇,horse-race,ereza,pursuit,riders chase one another to the finish,,race; pursue; chase,
 ⛷️,ski,azuge,,,,,
@@ -505,7 +505,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧋,bubble-tea,edewo,trendiness,bubble tea is trendy now,,trend; fashion,
 🧃,juice,uhuza,vigor,juice box fuels vigor,,,
 🧉,mate,emeda,fellowship,mate is shared fellowship,,fellow,
-🧊,ice,azaho,kelvin,ice marks thermodynamic temperature; kelvin is the SI temperature unit,,,restrictors.md#intermediate-translation-practice
+🧊,ice,azaho,kelvin,ice marks thermodynamic temperature; kelvin is the SI temperature unit,,,restrictors.md#intermediate-practice
 🥢,chopsticks,ahube,,,,,
 🍽️,plate,ebede,service,plate is set for service,,help; desk; dish; assistance; favor; aid,hooks.md#beginner-practice
 🍴,cutlery,agade,provision,cutlery enables provision,v:eat,supply; resource; meal; food; diet,
@@ -632,9 +632,9 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ⛈️,thunderstorm,avode,,,,storm,restrictors.md#beginner-practice
 🌦️,showers,aheze,,,,,
 🌧️,rain,erehe,letdown,rain on the parade; a letdown is a hope that fell through,,,restrictors.md#beginner-practice
-🌨️,snow,ozezo,stillness,snow quiets the landscape; stillness is calm / slack water,,,restrictors.md#intermediate-translation-practice
+🌨️,snow,ozezo,stillness,snow quiets the landscape; stillness is calm / slack water,,,restrictors.md#intermediate-practice
 🌪️,tornado,ododo,turmoil,tornado tears through order; turmoil is violent disorder,,,
-🌫️,fog,avege,confusion,fog blurs what is near; confusion blurs what is clear,,,restrictors.md#intermediate-translation-practice
+🌫️,fog,avege,confusion,fog blurs what is near; confusion blurs what is clear,,,restrictors.md#intermediate-practice
 🌬️,wind,ewedu,influence,wind pushes unseen; influence moves others without force,,affect; blow; air,sakes.md#beginner-practice
 🌀,cyclone,azego,chaos,cyclone spins into chaos,,,
 🌈,rainbow,erebo,diversity,a rainbow holds every color; diversity is many kinds together,,vary,
@@ -1024,7 +1024,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ⏪,rewind,erewa,backtrack,double rewind jumps back; backtrack is revisiting earlier,,,
 ⏮️,previous-track,ebave,,,,previous,
 ⏫,up,abaha,rise,double-up chevron is skyward; rise is moving upward,,arise; boost,roles.md#intermediate-translation-practice
-⏬,down,adahe,decline,double-down chevron is toward the pull; to decline is to move downward,v:fall,decrease; low; drop,restrictors.md#intermediate-translation-practice
+⏬,down,adahe,decline,double-down chevron is toward the pull; to decline is to move downward,v:fall,decrease; low; drop,restrictors.md#intermediate-practice
 ⏸️,pause,obozu,hiatus,pause halts playback; hiatus is a temporary halt,,suspend,
 ⏺️,record,ere,preservation,record button captures now; preservation is the unobservable keeping-across-time,,tape; preserve; retain,
 ⏏️,eject,ahegu,removal,eject pushes media out; removal is forcing outward exit,,extract,
