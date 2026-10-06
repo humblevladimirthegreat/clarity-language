@@ -582,116 +582,180 @@ To place a **thing** in time rather than the event (*the walk after the thunders
 
 Ordinary `zabal` is still *a backpack*.
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a departure board
 
-**Roots used here:**
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *luggage* | `alagel` | 🧳 |
+| *however* | `xezom` | 🦓 from *zebra*: two stripes, still one animal |
+| *meanwhile* | `xagagam` | 🕰️ from *clock*: time passing beside the last claim |
+| *next* | `xevavem` | 🎞️ from *film*: the following frame |
+| *to-clause* | `derl` | **e** ≈ order: an instruction |
+| *lest-clause* | `durl` | **u** ≈ undo: something to avoid |
+| *that-same-claim* | `darth` | **-rth** points back at what was said |
+| *before* | `gabam` | 🎒 from *backpack*: packed first |
+
+**Review:**
 
 | English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
-| *luggage* | `alagel` |
+| *therefore* | `xodum` |
 | *departure* | `vedabal` |
+| *train* | `edehal` |
+| *coat* | `ogodul` |
+| *key* | `egehul` |
+| *very* | `welavam` |
+| *haste* | `hadehum` |
 | *sit* | `vehahel` |
 | *see* | `vahahal` |
+| *find* | `vamagal` |
 | *run* | `varahal` |
 | *sneak* | `vezevul` |
 | *tell* | `vezebel` |
-| *very* | `welavam` |
-| *haste* | `hadehum` |
-| *before* (on a noun) | `gabam` |
-| *to-clause* | `derl` |
-| *lest-clause* | `durl` |
-| *that-same-claim* | `darth` |
-| *next* | `xevavem` |
-| *however* | `xezom` |
-| *meanwhile* | `xagagam` |
-| *nevertheless* | `xezol` |
+| *scream* | `vezugel` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan sits. Next Alahen runs.*
+**1.** *Azawan sees the train. However, Alahen runs.*
 
 ::: details Show answer
-`zazawan vehahel. xevavem zalahen varahal.`
+`zazawan dedehal vahahal. xezom zalahen varahal.`
 
-z-Azawan | v-sit . x-next | z-Alahen | v-run
+z-Azawan | d-train | v-see . x-however | z-Alahen | v-run
 :::
 
-**2.** *Azawan tells Alahen not to depart.*
+**2.** *Ahaben tells Alahen to sit.*
 
 ::: details Show answer
-`zazawan balahen vezebel durl vedabal.`
+`zahaben balahen vezebel derl vehahel.`
 
-z-Azawan | b-Alahen | v-tell | d-lest-clause | v-departure
+z-Ahaben | b-Alahen | v-tell | d-to-clause | v-sit
 :::
 
-**3.** *Alahen runs. Ahaben says so.*
+**3.** *Azawan tells Ahaben not to sneak.*
 
 ::: details Show answer
-`zalahen varahal. zahaben vezebel darth.`
+`zazawan bahaben vezebel durl vezevul.`
 
-z-Alahen | v-run . z-Ahaben | v-tell | d-that-same-claim
+z-Azawan | b-Ahaben | v-tell | d-lest-clause | v-sneak
 :::
 
-**4.** *Ahaben sees the luggage before the departure.*
+**4.** *Alahen runs so hastily that Azawan sees the luggage.*
 
 ::: details Show answer
-`zahaben dalagel gabam bedabal vahahal.`
+`zalahen welavam hadehum varahal hodum barl zazawan dalagel vahahal.`
 
-z-Ahaben | [d-luggage | [g-before | b-departure]] | v-see
+z-Alahen | [w-very | h-haste] | v-run | [h-so-result | b-that-clause] | z-Azawan | d-luggage | v-see
 :::
 
-**5.** *Alahen sneaks. Nevertheless, Azawan sits.*
+**5.** *Alahen sees the luggage before the departure.*
 
 ::: details Show answer
-`zalahen vezevul. xezol zazawan vehahel.`
+`zalahen dalagel gabam bedabal vahahal.`
 
-z-Alahen | v-sneak . x-nevertheless | z-Azawan | v-sit
+z-Alahen | [d-luggage | [g-before | b-departure]] | v-see
+:::
+
+**6.** *Ahaben sits unless the train departs.*
+
+::: details Show answer
+`zahaben vehahel thoyem burl zedehal vedabal.`
+
+z-Ahaben | v-sit | [th-if | b-lest-clause] | z-train | v-departure
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zahaben vehahel. xagagam zalahen dalagel vahahal.`
+**1.** `zalahen vezebel. xagagam zahaben dogodul vamagal.`
 
 ::: details Show answer
+z-Alahen | v-tell . x-meanwhile | z-Ahaben | d-coat | v-find
 
-z-Ahaben | v-sit . x-meanwhile | z-Alahen | d-luggage | v-see
-
-*Ahaben sits. Meanwhile Alahen sees luggage.*
+*Alahen tells. Meanwhile, Ahaben finds a coat.*
 :::
 
-**2.** `zalahen vezevul. xezom zazawan varahal.`
+**2.** `zahaben vezugel. zalahen vezebel darth.`
 
 ::: details Show answer
+z-Ahaben | v-scream . z-Alahen | v-tell | d-that-same-claim
 
-z-Alahen | v-sneak . x-however | z-Azawan | v-run
-
-*Alahen sneaks. However Azawan runs.*
+*Ahaben screams. Alahen says so.*
 :::
 
-**3.** `zalahen bazawan vezebel derl vehahel.`
+**3.** `zahaben degehul vamagal vul. xezol zahaben vehahel.`
 
 ::: details Show answer
+z-Ahaben | d-key | [v-find | v-not] . x-nevertheless | z-Ahaben | v-sit
 
-z-Alahen | b-Azawan | v-tell | d-to-clause | v-sit
-
-*Alahen tells Azawan to sit.*
+*Ahaben does not find the key. Nevertheless, Ahaben sits.*
 :::
 
-**4.** `zahaben welavam hadehum varahal hodum barl zalahen vehahel.`
+**4.** `zazawan dalagel vahahal. xevavem zalahen varahal.`
 
 ::: details Show answer
+z-Azawan | d-luggage | v-see . x-next | z-Alahen | v-run
 
-z-Ahaben | [w-very | h-haste] | v-run | [h-so-result | b-that-clause] | z-Alahen | v-sit
+*Azawan sees the luggage. Next, Alahen runs.*
+:::
 
-*Ahaben runs so hastily that Alahen sits.*
+**5.** `zalahen vahahal dorl zedehal vedabal xol zahaben varahal.`
+
+::: details Show answer
+z-Alahen | v-see | d-whether-clause | [z-train | v-departure | x-or-exactly-one | z-Ahaben | v-run]
+
+*Alahen sees whether the train departs or Ahaben runs.*
+:::
+
+**6.** `zazawan vehahel hogom burl zalahen dalagel vahahal.`
+
+::: details Show answer
+z-Azawan | v-sit | [h-so-that | b-lest-clause] | z-Alahen | d-luggage | v-see
+
+*Azawan sits so that Alahen does not see the luggage.*
+:::
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Azawan tells Alahen not to run.* `zazawan balahen vezebel durl varahal.` or `zazawan balahen vezebel derl varahal.`
+
+::: details Show answer
+`zazawan balahen vezebel durl varahal.`
+
+z-Azawan | b-Alahen | v-tell | d-lest-clause | v-run
+
+*Not to* is avoidance, vowel **`u`**; **`derl`** tells Alahen *to* run.
+:::
+
+**2.** *Ahaben runs. Even so, Alahen sits.* (the contrast stands whatever) `zahaben varahal. xezol zalahen vehahel.` or `zahaben varahal. xezom zalahen vehahel.`
+
+::: details Show answer
+`zahaben varahal. xezol zalahen vehahel.`
+
+z-Ahaben | v-run . x-nevertheless | z-Alahen | v-sit
+
+Firm **-l** says the contrast holds no matter what; **`xezom`** is plain *however*.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Alahen sees the train. Azawan says so.* <!-- lint: error -->`zalahen dedehal vahahal. zazawan vezebel darl.`
+
+::: details Show answer
+`zalahen dedehal vahahal. zazawan vezebel darth.`
+
+z-Alahen | d-train | v-see . z-Azawan | v-tell | d-that-same-claim
+
+**`darl`** holds a slot for the **next** sentence; to point back at what was said, end the stand-in in **-rth**.
 :::
 
 ## Advanced {#advanced}
