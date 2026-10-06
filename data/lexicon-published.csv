@@ -627,7 +627,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ⭐,star,oza,fame,a star is seen by everyone; fame is being widely known,,reputation,
 🌠,shooting-star,ohu,wish,shooting star grants a wish,,,
 🌌,galaxy,agege,vastness,a galaxy holds billions of stars,,vast; universe,
-☁️,cloud,agavu,sky,clouds fill the sky,,atmosphere,knowing.md#intermediate-translation-practice
+☁️,cloud,agavu,sky,clouds fill the sky,,atmosphere,knowing.md#intermediate-practice
 ⛅,cloudy,ogade,weather,sun behind cloud is a partly-cloudy sky; weather is the usual climate,,,
 ⛈️,thunderstorm,avode,,,,storm,restrictors.md#beginner-practice
 🌦️,showers,aheze,,,,,
@@ -766,7 +766,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💄,lipstick,elebo,appearance,lipstick colors the lips; appearance is how you present,,appear,
 💍,ring,ereha,promise,a ring seals a vow; a promise binds your future self,,surround; guarantee; assure,joins.md#intermediate-practice
 💎,gemstone,ehezo,value,gem is rare and precious; value is worth holding dear,,worth; valuable; appreciate; rate,
-🔇,mute,amuyu,suppression,mute silences all sound; suppression is holding back expression,,,knowing.md#intermediate-translation-practice
+🔇,mute,amuyu,suppression,mute silences all sound; suppression is holding back expression,,,knowing.md#intermediate-practice
 🔈,quiet,agawa,volume,quiet is sound turned low; volume is level of sound,,,spans.md#beginner-practice
 🔉,audio,adeha,voice,audio carries a speaking voice; voice is audible expression,m.w:quite,representative,
 🔊,loudspeaker,aladu,amplification,a loudspeaker fills the room; amplification is making louder,v:shout,noise; loud,
@@ -860,7 +860,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💼,briefcase,ebeve,business,briefcase carries work affairs; business is commercial affairs,z:job,task; affair; enterprise; profession; company,
 📁,folder,ovode,,,,fold,
 🗂️,divider,edova,,,,,
-📅,calendar,agada,week,a calendar page reads a week across each row; week is the seven-day unit,,date; schedule,knowing.md#intermediate-translation-practice
+📅,calendar,agada,week,a calendar page reads a week across each row; week is the seven-day unit,,date; schedule,
 🗒️,notepad,onode,,,,,
 📇,index-card,enade,lookup,card index sorts; lookup is the unobservable find-operation,,search; index,
 📈,uptrend,abede,degree,an uptrend marks more on the scale; degree is vague how-much,m.h:kind-of,level; step,
@@ -1084,7 +1084,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ⚪,white,awada,,,,pale,
 🟫,ground,agado,,,,soil; background; land,
 🟩,field,eveda,,,,,
-🩶,gray,egeva,,,,,knowing.md#intermediate-translation-practice
+🩶,gray,egeva,,,,,knowing.md#intermediate-practice
 ⬛,black-square,ezoge,,,,square,
 ⬜,white-square,awaze,blank,white square is open empty block; blank is without mark yet,,space,
 🔺,triangle,adawe,radian,triangle marks an angle wedge; radian is the SI plane-angle unit,,angle,

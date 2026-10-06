@@ -781,121 +781,51 @@ English *contrary to what I was told* and *against my gut* say the event went ag
 
 **Compare with:** `zazawan thezum vowogal.` says the walking surprised you. `zazawan vowogal uem thahom.` says your gut expected otherwise, whether or not the news surprised you.
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. Write a **channel** or **NOTIONAL**, and when the prompt asks, **RESIDUE**, **FORMER**, or **MIRATIVE**.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a press conference
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *tell* | `vezebel` | `ezebel` *speech* |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *camera* | `agahol` | |
-| *newspaper* | `unuzel` | |
-| *radio* | `eredel` | |
-| *mute* | `vamuyul` | |
-| *sing* | `vezehel` | |
-| *departure* | `vedabal` | |
-| *punch* | `vabahel` | |
-| *scream* | `vezugel` | |
-| *MAY* | `thovum` | `ovul` *thought* |
-| *LIVE* | `thodom` | `odol` *attest* |
-| *MEMORY* | `thevom` | `evol` *fishing* |
-| *PATTERN* | `thobam` | `obal` *paw-prints* |
-| *CLUES* | `thunem` | `unel` *investigate* |
-| *REPORTED* | `thewam` | `ewal` *ear* |
-| *INTUITION* | `thahom` | `ahol` *heart* |
-| *NOTIONAL* | `thavom` | `avol` *theater* |
-| *RESIDUE* | `thamom` | `amom` *debt* |
-| *FORMER* | `thenom` | `enom` *emptiness* |
-| *MIRATIVE* | `thezum` | `ezul` *surprise* |
-| *amazement* (before an adjective: *surprisingly*) | `wezum` | `ezul` *surprise* |
-| *always* | `hual` | |
-| *REPORTED.weak* | `thewar` | `ewal` *ear* |
-| *PATTERN.strong* | `thobal` | `obal` *paw-prints* |
-| *REPORTED.strong* | `thewal` | `ewal` *ear* |
-| *calendar* | `agadal` | |
-| *PLAN* | `thamam` | `amam` *plan-itinerary* |
-| *statement* | `yal` | |
-| *sleep* | `vezebal` | |
-| *rain* | `verehel` | `erehel` *rain* |
-| *cloud* | `zagavul` | `agavul` *cloud* |
-| *gray* | `gegeval` | `egeval` *gray* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *mute* | `vamuyul` | 🔇 |
+| *cloud* | `agavul` | ☁️ |
+| *gray* | `egeval` | 🩶 |
+| *LIVE* | `thodom` | 👁️‍🗨️ from *attest*: seen at the scene |
+| *MEMORY* | `thevom` | 🎣 from *fishing*: pulled up from memory |
+| *PATTERN* | `thobam` | 🐾 from *paw-prints*: a trail of cases |
+| *CLUES* | `thunem` | 🕵️ from *investigate*: worked out from clues |
+| *REPORTED* | `thewam` | 👂 from *ear*: someone said so |
+| *NOTIONAL* | `thavom` | 🎭 from *theater*: an imagined scene |
+| *RESIDUE* | `thamom` | 💰 from *money*: a debt left standing |
+| *FORMER* | `thenom` | 🪹 from *empty nest*: what used to be |
+| *MIRATIVE* | `thezum` | 😮 from *surprise*: it turns out |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *camera* | `agahol` |
+| *radio* | `eredel` |
+| *rain* | `erehel` |
+| *departure* | `vedabal` |
+| *tell* | `vezebel` |
+| *see* | `vahahal` |
+| *sing* | `vezehel` |
+| *scream* | `vezugel` |
+| *punch* | `vabahel` |
+| *sleep* | `vezebal` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan tells Ahaben, live / from the scene.* (present observation)
-
-::: details Show answer
-`zazawan thodom vezebel bahaben.`
-
-z-Azawan | th-LIVE | v-tell | b-Ahaben
-:::
-
-**2.** *Alahen saw a camera, from memory.*
-
-::: details Show answer
-`zalahen thevom vahahal dagahol.`
-
-z-Alahen | th-MEMORY | v-see | d-camera
-:::
-
-**3.** *Ahaben told Azawan, so they say. Ahaben sang.* (one channel for both)
-
-::: details Show answer
-`zahaben thewam vezebel bazawan. zahaben vezehel.`
-
-z-Ahaben | th-REPORTED | v-tell | b-Azawan . z-Ahaben | v-sing
-:::
-
-**4.** *Azawan sees a newspaper, from the pattern of cases.*
-
-::: details Show answer
-`zazawan thobam vahahal dunuzel.`
-
-z-Azawan | th-PATTERN | v-see | d-newspaper
-:::
-
-**5.** *Alahen mutes, so they say.* (hearsay)
-
-::: details Show answer
-`zalahen thewam vamuyul.`
-
-z-Alahen | th-REPORTED | v-mute
-:::
-
-**6.** *Alahen punches Azawan, inferred from clues.*
-
-::: details Show answer
-`zalahen thunem vabahel dazawan.`
-
-z-Alahen | th-CLUES | v-punch | d-Azawan
-:::
-
-**7.** *Imagine Azawan telling Ahaben.* (default ending)
-
-::: details Show answer
-`zazawan thavom vezebel bahaben.`
-
-z-Azawan | th-NOTIONAL | v-tell | b-Ahaben
-:::
-
-**8.** *Imagine Alahen screaming.* (no special purpose)
-
-::: details Show answer
-`zalahen thavom vezugel.`
-
-z-Alahen | th-NOTIONAL | v-scream
-:::
-
-**9.** *Azawan tells Ahaben, live; what was told still stands.*
+**1.** *Azawan tells Ahaben, seen live; what was told still stands.*
 
 ::: details Show answer
 `zazawan thodom thamom vezebel bahaben.`
@@ -903,63 +833,7 @@ z-Alahen | th-NOTIONAL | v-scream
 z-Azawan | th-LIVE | th-RESIDUE | v-tell | b-Ahaben
 :::
 
-**10.** *Alahen always told, a former pattern, not today's; I remember it.*
-
-::: details Show answer
-`zalahen hual vezebel thenom thevom.`
-
-z-Alahen | h-always | v-tell | th-FORMER | th-MEMORY
-:::
-
-**11.** *Ahaben still screams, seen live.*
-
-::: details Show answer
-`zahaben thodom hagem vezugel.`
-
-z-Ahaben | th-LIVE | h-still | v-scream
-:::
-
-**12.** *Alahen screams, rumor has it.*
-
-::: details Show answer
-`zalahen thewar vezugel.`
-
-z-Alahen | th-REPORTED.weak | v-scream
-:::
-
-**13.** *Going by a well-established pattern, Azawan will tell Ahaben.*
-
-::: details Show answer
-`zazawan thobal bral vezebel bahaben.`
-
-z-Azawan | [th-PATTERN.strong | b-later] | v-tell | b-Ahaben
-:::
-
-**14.** *Alahen punched, judging by the fact that Azawan screams.*
-
-::: details Show answer
-`zalahen vabahel thunem barl zazawan vezugel.`
-
-z-Alahen | v-punch | [th-CLUES | b-that-clause] | z-Azawan | v-scream
-:::
-
-**15.** *Azawan screams because Alahen punches.*
-
-::: details Show answer
-`zazawan vezugel thevem barl zalahen vabahel.`
-
-z-Azawan | v-scream | [th-because | b-that-clause] | z-Alahen | v-punch
-:::
-
-**16.** *Alahen sings, it turns out, seen live.*
-
-::: details Show answer
-`zalahen thodom thezum vezehel.`
-
-z-Alahen | th-LIVE | th-MIRATIVE | v-sing
-:::
-
-**17.** *Alahen screams, so they say, third-hand.*
+**2.** *Alahen screams, so they say, third-hand.*
 
 ::: details Show answer
 `zalahen thewam threrel vezugel.`
@@ -967,140 +841,120 @@ z-Alahen | th-LIVE | th-MIRATIVE | v-sing
 z-Alahen | th-REPORTED | th-3rd-hand | v-scream
 :::
 
-**18.** *Alahen, surprisingly gray, sings.*
+**3.** *Going by a well-established pattern, Azawan will tell Ahaben.*
 
 ::: details Show answer
-`zalahen wezum gegeval vezehel.`
+`zazawan thobal bral vezebel bahaben.`
 
-[z-Alahen | [w-amazement | g-gray]] | v-sing
+z-Azawan | [th-PATTERN.strong | b-later] | v-tell | b-Ahaben
+:::
+
+**4.** *Azawan has sung at some point.*
+
+::: details Show answer
+`zazawan hoham vezehel har.`
+
+z-Azawan | h-already | v-sing | h-sometimes
+:::
+
+**5.** *Alahen sings, it turns out, seen live.*
+
+::: details Show answer
+`zalahen thodom thezum vezehel.`
+
+z-Alahen | th-LIVE | th-MIRATIVE | v-sing
+:::
+
+**6.** *Imagine Alahen muting the radio.*
+
+::: details Show answer
+`zalahen thavom vamuyul deredel.`
+
+z-Alahen | th-NOTIONAL | v-mute | d-radio
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zazawan thahom vezebel bahaben.`
+**1.** `zalahen thevom bagahol vezehel.`
 
 ::: details Show answer
-
-z-Azawan | th-INTUITION | v-tell | b-Ahaben
-
-*Azawan tells Ahaben, I sense it.*
-:::
-
-**2.** `zalahen thevom vahahal deredel. yal zalahen vezebal.`
-
-::: details Show answer
-
-z-Alahen | th-MEMORY | v-see | d-radio . y-statement | z-Alahen | v-sleep
-
-*Alahen saw a radio, as I remember. Alahen is asleep.* (the written statement word ends the memory frame)
-:::
-
-**3.** `zahaben thunem vamuyul.`
-
-::: details Show answer
-
-z-Ahaben | th-CLUES | v-mute
-
-*Ahaben mutes, inferred from clues.*
-:::
-
-**4.** `zahaben thavol vezehel.`
-
-::: details Show answer
-
-z-Ahaben | th-NOTIONAL-rehearse | v-sing
-
-*Ahaben practices singing.*
-:::
-
-**5.** `zalahen thevom bagahol vezehel.`
-
-::: details Show answer
-
 z-Alahen | [th-MEMORY | b-camera] | v-sing
 
 *Alahen sang, as I remember from the camera.*
 :::
 
-**6.** `zahaben thevom vezebel.`
+**2.** `zalahen thevom vahahal deredel. yal zalahen vezebal.`
 
 ::: details Show answer
+z-Alahen | th-MEMORY | v-see | d-radio . y-statement | z-Alahen | v-sleep
 
-z-Ahaben | th-MEMORY | v-tell
-
-*Ahaben told, from memory.*
+*Alahen saw a radio, as I remember. Alahen is asleep.* (the written statement word ends the memory frame)
 :::
 
-**7.** `zalahen thodom vabahel dazawan.`
+**3.** `zalahen huzel vedabal.`
 
 ::: details Show answer
-
-z-Alahen | th-LIVE | v-punch | d-Azawan
-
-*Alahen punches Azawan, live / from the scene.*
-:::
-
-**8.** `zahaben thovum vezugel.`
-
-::: details Show answer
-
-z-Ahaben | th-MAY | v-scream
-
-*Ahaben may be screaming.* (*could be*, not a channel)
-:::
-
-**9.** `zahaben thevom thamom vezebel bazawan.`
-
-::: details Show answer
-
-z-Ahaben | th-MEMORY | th-RESIDUE | v-tell | b-Azawan
-
-*Ahaben told Azawan, from memory; what was told still stands.*
-:::
-
-**10.** `zazawan hual vezebel thenom.`
-
-::: details Show answer
-
-z-Azawan | h-always | v-tell | th-FORMER
-
-*Azawan always tells, a former pattern, not today's.*
-:::
-
-**11.** `zalahen huzel vedabal.`
-
-::: details Show answer
-
 z-Alahen | h-not-yet.lasting | v-departure
 
 *Alahen hasn't left yet, but will.*
 :::
 
-**12.** `zahaben thamam vezebel thewal bagadal.`
+**4.** `verehel thobal bral barl zagavul gegeval.`
 
 ::: details Show answer
-
-z-Ahaben | th-plan-itinerary | v-tell | [th-REPORTED.strong | b-calendar]
-
-*Ahaben is scheduled to speak, going by the official calendar.*
-:::
-
-**13.** `verehel thobal bral barl zagavul gegeval.`
-
-::: details Show answer
-
 v-rain | [th-PATTERN.strong | [b-later | b-that-clause]] | [z-cloud | g-gray]
 
 *It will rain, going by the well-established pattern, given the gray clouds.*
 :::
 
-**14.** `zahaben thredul vezebel.`
+**5.** `zalahen thenom zel gegeval.`
 
 ::: details Show answer
+[z-Alahen | th-FORMER | z-rank/more | g-gray]
 
-z-Ahaben | th-2nd-hand | v-tell
+*Alahen is grayer than Alahen used to be.*
+:::
 
-*Ahaben tells, second-hand.*
+**6.** `zahaben vezebel uem thewam.`
+
+::: details Show answer
+z-Ahaben | v-tell | [contrary-to | th-REPORTED]
+
+*Ahaben tells, contrary to what I was told.*
+:::
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Ahaben tells, rumor has it.* `zahaben thewar vezebel.` or `zahaben thewam vezebel.`
+
+::: details Show answer
+`zahaben thewar vezebel.`
+
+z-Ahaben | th-REPORTED.weak | v-tell
+
+**-r** marks weak evidence, a rumor; **-m** is the ordinary *so they say*.
+:::
+
+**2.** *Ahaben practices singing.* `zahaben thavol vezehel.` or `zahaben thavom vezehel.`
+
+::: details Show answer
+`zahaben thavol vezehel.`
+
+z-Ahaben | th-NOTIONAL-rehearse | v-sing
+
+NOTIONAL with **-l** is a rehearsal; **-m** only imagines the singing.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Alahen punched, judging by the fact that Azawan screams.* <!-- lint: error -->`zalahen vabahel thevem barl zazawan vezugel.`
+
+::: details Show answer
+`zalahen vabahel thunem barl zazawan vezugel.`
+
+z-Alahen | v-punch | [th-CLUES | b-that-clause] | z-Azawan | v-scream
+
+The scream is your evidence, so it goes after CLUES; **`thevem`** would make the scream the cause of the punch.
 :::
 
 ## Advanced {#advanced}
