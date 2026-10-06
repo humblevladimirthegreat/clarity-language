@@ -49,7 +49,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🤢,nauseated,onoze,contamination,nauseated shows disgust; contamination is the unobservable reading that something is tainted,,pollution; dirty,
 🤮,vomit,avado,revulsion,vomit shows revulsion,,,
 🤧,sneeze,ezeza,infection,sneeze signals a cold; infection is the unobservable spread,,cough,
-🥵,hot,ahadu,fever,a hot face is the body overheating from within,,,sakes.md#beginner-translation-practice
+🥵,hot,ahadu,fever,a hot face is the body overheating from within,,,
 🥶,cold,ogode,,,,,
 🥴,woozy,uwuze,intoxication,woozy shows intoxication,,,
 🤯,mind-blown,amabo,astonishment,a mindblown head bursts with astonishment,,,
@@ -110,7 +110,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 👁️‍🗨️,attest,odo,testimony,eye-in-speech attests; testimony is the claim that seeing warrants saying,,swear; demonstrate,questions.md#intermediate-translation-practice
 🗯️,rant,aradu,outrage,rant shows outrage,,complain,
 💭,thought,ovu,commentary,thought balloon floats a take over the scene; commentary is mind storying instead of bare contact,,idea; concept; notion; remark; theoretical; comment,
-💤,sleep,ezeba,restoration,sleep means rest; restoration is the unobservable replenishing,,,sakes.md#beginner-translation-practice
+💤,sleep,ezeba,restoration,sleep means rest; restoration is the unobservable replenishing,,,roles.md#beginner-translation-practice
 👋,wave,eweva,acknowledgment,a wave acknowledges someone; acknowledgment is the unobservable uptake,,acknowledge; recognition; greet,
 ✋,hand,ahada,,,,,
 👌,ok,ogeha,acceptance,the ok sign says it is fine as it is; acceptance is letting it be,,accept; alright; adopt; fine,
@@ -141,7 +141,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦻,hearing-aid,edaho,,,,,
 👃,nose,onoza,intuition,nose leads intuition,v:smell; m.v:intuit,sensitive; sense; impression,numbers.md#beginner-practice
 🧠,brain,ebeha,intellect,the brain does the thinking,,mental; intellectual; smart; mind; intelligence; psychological; abstract,
-🫁,lungs,oyu,breath,lungs carry breath,,breathe; chest,sakes.md#beginner-translation-practice
+🫁,lungs,oyu,breath,lungs carry breath,,breathe; chest,sakes.md#beginner-practice
 🦷,tooth,uduva,,,,,
 🦴,bone,obo,structure,bone provides structure,,,
 👀,eyes,azaha,attention,eyes grant awareness,m.v:look,concentrate; observation; gaze,
@@ -402,7 +402,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🍐,pear,abeyo,mishap,gone pear-shaped is mishap,,accident,
 🍑,peach,ebaha,excellence,something peachy is as fine as a ripe peach,,,
 🍒,cherry,eheva,bonus,the cherry on top is the extra finishing touch,,,
-🍓,strawberry,ozo,sweetness,a ripe strawberry tastes of sugar,,sweet,sakes.md#beginner-translation-practice
+🍓,strawberry,ozo,sweetness,a ripe strawberry tastes of sugar,,sweet,sakes.md#beginner-practice
 🫐,blueberry,ububo,,,,,
 🥝,kiwi,agewe,oddity,fuzzy kiwi is an odd fruit,,odd; weird,
 🍅,tomato,adedo,controversy,tomato fruit or vegetable controversy,,debate; controversial; argument,joins.md#beginner-practice
@@ -448,7 +448,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🌯,burrito,ebado,encapsulation,burrito wraps it all up,,,
 🫔,tamale,adayu,,,,,
 🧆,falafel,aveva,alternative,falafel is a meat alternative,,substitute,
-🥚,egg,ega,potential,egg holds unrealized potential,,,sakes.md#beginner-translation-practice
+🥚,egg,ega,potential,egg holds unrealized potential,,,sakes.md#intermediate-translation-practice
 🍳,cooking,uguge,,,,,
 🥘,skillet,ozega,medley,many components one pan,,,
 🍲,stew,uzudu,simmer,heat over time,,pot,
@@ -516,7 +516,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🌐,globe,ogoba,connected,a globe links every place; connected means linked together,,global; world; earth,
 🗺️,map,ama,plan,a map charts a route; a plan charts a course,,agenda; design; project,comparatives.md#intermediate-translation-practice
 🗾,country,agu,scope,a map of one country; scope is the area the picture includes,,national; region; nation; extent; regional; zone; territory; area,
-🧭,compass,ame,direction,a compass points the way; direction is where you're headed,,direct; guide,sakes.md#beginner-translation-practice
+🧭,compass,ame,direction,a compass points the way; direction is where you're headed,,direct; guide,sakes.md#intermediate-translation-practice
 ⛰️,mountain,amada,challenge,mountains are hard to climb; a challenge is hard to face,,pile; heap,predication.md#beginner-practice
 🛘,landslide,alaze,breakdown,landslide is sudden collapse; breakdown is the unobservable failure of a system,,crash; collapse; crack; outage,
 🌋,volcano,avoge,eruption,a volcano bursts outward; eruption is bursting emotion,,burst,
@@ -553,7 +553,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ⛩️,shrine,ahawa,shinto,a shrine marks the way; shinto is keeping it,,,
 🕋,sanctuary,azogu,quest,kaaba draws the faithful; quest is the unobservable sacred aim,,,
 ⛲,fountain,avade,,,,,
-⛺,tent,ededu,,,,,sakes.md#beginner-translation-practice
+⛺,tent,ededu,,,,,sakes.md#beginner-practice
 🌁,foggy,avuge,purport,foggy skyline leaves outlines unclear; purport is claimed but unsettled,,imply,
 🌃,night,anada,unknown,night hides what day shows; unknown is what is hidden,,darkness; dark,restrictors.md#beginner-practice
 🏙️,skyline,ezaga,urban,towers and lights fill the skyline; urban is city life,,city,
@@ -635,7 +635,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🌨️,snow,ozezo,stillness,snow quiets the landscape; stillness is calm / slack water,,,restrictors.md#intermediate-translation-practice
 🌪️,tornado,ododo,turmoil,tornado tears through order; turmoil is violent disorder,,,
 🌫️,fog,avege,confusion,fog blurs what is near; confusion blurs what is clear,,,restrictors.md#intermediate-translation-practice
-🌬️,wind,ewedu,influence,wind pushes unseen; influence moves others without force,,affect; blow; air,sakes.md#beginner-translation-practice
+🌬️,wind,ewedu,influence,wind pushes unseen; influence moves others without force,,affect; blow; air,sakes.md#beginner-practice
 🌀,cyclone,azego,chaos,cyclone spins into chaos,,,
 🌈,rainbow,erebo,diversity,a rainbow holds every color; diversity is many kinds together,,vary,
 ☂️,umbrella,amebe,,,,,questions.md#beginner-practice
@@ -643,7 +643,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ❄️,snowflake,ozove,coldness,a snowflake melts cold on your skin,,,
 ☃️,snowman,ozoha,temporary,snowman melts when warmth returns; temporary does not last,,,
 ☄️,comet,agode,,,,,
-🔥,fire,avahe,,,,burn,sakes.md#beginner-translation-practice
+🔥,fire,avahe,,,,burn,numeric-derivation.md#advanced-translation-practice
 💧,droplet,adaba,beginning,one droplet starts the flow; beginning is a small start,,source; original; initial; wet; liquid,
 🌊,ocean,ohaha,overwhelm,ocean is vast surging water; flood is high-arousal surge,,sea; flood,comparatives.md#beginner-practice
 🎃,jack-o-lantern,ohahe,concealment,jack-o-lantern hides a carved face; disguise hides true identity,,hide,
@@ -658,7 +658,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🎐,chime,ahawo,,,,,
 🧧,red-envelope,eredo,blessing,red envelope carries good wishes; blessing is wished well-being,,,
 🎀,ribbon,ereba,embellishment,ribbon adorns; embellishment is the unobservable extra,,belt,
-🎁,present,ebe,generosity,a present is given to another; generosity is giving freely,,gift; submit; charity,sakes.md#beginner-translation-practice
+🎁,present,ebe,generosity,a present is given to another; generosity is giving freely,,gift; submit; charity,sakes.md#intermediate-translation-practice
 🎗️,awareness,aweza,solidarity,the ribbon is worn for a cause; solidarity is standing with others,,aware,
 🎟️,admission-tickets,adegu,admission,ticket grants entry inside; admission is being let in,,entry,
 🎫,ticket,edega,,,,,clause.md#intermediate-translation-practice
@@ -721,7 +721,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧵,thread,evevu,continuity,a thread runs unbroken; continuity is going on without a break,,constant; consistent; wire; cable; continuous; strip,
 🪡,needle,eneda,,,,,
 🧶,yarn,ayaha,blanket,yarn is knit into a blanket; a blanket is the cover that warms,,,
-🪢,knot,ana,bond,knot ties two ends together; bond is holding fast together,,bind; integrate; stick,sakes.md#beginner-translation-practice
+🪢,knot,ana,bond,knot ties two ends together; bond is holding fast together,,bind; integrate; stick,roles.md#beginner-translation-practice
 🕶️,sunglasses,ozaga,unbothered,sunglasses hide the eyes; cool is calm unbothered style,,,
 🥽,goggles,agogu,,,,,
 🥼,lab-coat,alego,expertise,lab coat marks scientific work; expertise is specialized knowledge,,technical; master; talent; specialist; specialize; pro; qualification; expert,
@@ -746,7 +746,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 👜,handbag,ahaba,responsibility,handbag carries needs; responsibility is the unobservable bearing,,duty; obligation; liability; bag,
 👝,clutch,agoha,,,,,
 🛍️,shopping-bag,ahabu,pound-mass,a shopping bag is weighed by the pound; pound-mass is the mass unit,,,
-🎒,backpack,aba,preparation,backpack holds what you need ahead; preparation is readying beforehand,,pack,sakes.md#beginner-translation-practice
+🎒,backpack,aba,preparation,backpack holds what you need ahead; preparation is readying beforehand,,pack,
 🩴,sandal,azaye,,,,,
 👞,dress-shoe,uhahu,,,,,
 👟,sneaker,uzege,activity,sneaker is built for movement; activity is active motion,,action; active,
@@ -821,7 +821,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔍,magnify,amaga,scrutiny,magnifier enlarges small detail; scrutiny is close examination,v:find,seek; discover; encounter; examination; detect; notice,word-endings.md#beginner-practice
 🕯️,candle,agoga,awash,candle light fills the room; awash is charge in the surrounding field,,,sakes.md#intermediate-translation-practice
 💡,lightbulb,ado,candela,lightbulb sets luminous intensity; candela is the SI luminous-intensity unit,,,
-🔦,flashlight,aveha,revelation,flashlight reveals what was dark; revelation is making known,,expose; flash,sakes.md#beginner-translation-practice
+🔦,flashlight,aveha,revelation,flashlight reveals what was dark; revelation is making known,,expose; flash,
 🏮,lantern,alude,guidance,lantern lights the path ahead; guidance is showing the way,,counsel,
 🪔,lamp,alaba,,,,,
 📖,book,ubuga,knowledge,book holds knowledge,,novel; know,word-endings.md#beginner-practice
@@ -851,7 +851,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 📦,package,abego,aggregation,package wraps items; aggregation is the unobservable grouping,,software; module,clause.md#advanced-translation-practice
 📫,mailbox,emebe,reception,closed mailbox holds delivered mail; reception is receiving inward,,,
 📮,post-box,oboza,dispatch,postbox sends mail on its way; dispatch is sending outward,,send; mail; deliver; post,
-🗳️,ballot,ahu,choice,ballot records your vote; choice is selecting among options,,vote; election; elect; poll; voluntary,sakes.md#beginner-translation-practice
+🗳️,ballot,ahu,choice,ballot records your vote; choice is selecting among options,,vote; election; elect; poll; voluntary,sakes.md#intermediate-translation-practice
 ✏️,pencil,ebeyo,draft,pencil marks can be erased; draft is tentative first version,,outline,word-endings.md#beginner-practice
 🖊️,pen,ebewe,commitment,pen ink stays on the page; commitment is a binding promise,,dedicate,intention.md#intermediate-translation-practice
 🖌️,paintbrush,ebuda,artistry,brush paints with flowing strokes; artistry is skilled creative work,,art; paint; illustration; brush; draw; illustrate; stroke,comparatives.md#advanced-translation-practice
@@ -900,7 +900,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ⛓️‍💥,unlink,anagu,liberation,a broken chain frees the one it held,,release,
 ⛓️,chains,ehewe,bondage,chains bind and restrict movement; bondage is being held fast,,slave; constraint,
 🪝,hook,uhuga,ensnarement,hook snags; ensnarement is the unobservable trapping-kind,,,
-🧰,toolbox,ulo,readiness,toolbox holds gear for the job; readiness is prepared for task,,skill; equipment; tool,sakes.md#beginner-translation-practice
+🧰,toolbox,ulo,readiness,toolbox holds gear for the job; readiness is prepared for task,,skill; equipment; tool,sakes.md#beginner-practice
 🧲,magnet,amega,attraction,magnet pulls metal toward it; attraction is pulling toward,,pull; attract; attractive; drag,
 🪜,ladder,alode,advancement,ladder climbs step by step; advancement is rising by stages,,promotion; stair; promote; advance,
 🪏,shovel,aheva,uncovering,shovel digs; uncovering is the unobservable reveal-kind,,dig; discovery,

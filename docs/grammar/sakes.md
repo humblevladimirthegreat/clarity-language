@@ -177,34 +177,38 @@ As a plain noun, `zobul` is *emphasis*. **`gobum`** with no `/w/` sake word befo
 |--------|-----|---------|--------------|-----|
 | **`gobum`** | unowned noun as sake-target | *as stimulus* | `obul` *emphasis* | ☝️: you point at it rather than keep it |
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a shelter tent
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *tent* | `ededul` | |
-| *backpack* | `abal` | |
-| *flashlight* | `avehal` | |
-| *rain* | `erehel` | |
-| *wind* | `ewedul` | |
-| *fire* | `avahel` | |
-| *hot* | `ahadul` | |
-| *sleep* | `vezebal` | `ezebal` *sleep* |
-| *stimulus* | `gobum` | `obul` *emphasis* |
-| *autonomy* | `ahul` | `ahul` *ballot* |
-| *competence* | `ulol` | `ulol` *toolbox* |
-| *purpose* | `amel` | `amel` *compass* |
-| *relatedness* | `anal` | `anal` *knot* |
-| *beneficence* | `ebel` | `ebel` *present* |
-| *pleasure* | `ozol` | `ozol` *strawberry* |
-| *physical* | `oyul` | `oyul` *lungs* |
-| *sake* | `egal` | `egal` *egg* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *tent* | `ededul` | ⛺ |
+| *wind* | `ewedul` | 🌬️ |
+| *competence* | `ulol` | 🧰 from *toolbox*: the kit that gets things working |
+| *physical* | `oyul` | 🫁 from *lungs*: breathing easy means the body is well |
+| *pleasure* | `ozol` | 🍓 from *strawberry*: sweetness you enjoy |
+| *stimulus* | `gobum` | ☝️ from *point*: you point at it rather than keep it |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Ahaben* | `ahaben` |
+| *knife* | `anaval` |
+| *basket* | `abezal` |
+| *bucket* | `abegul` |
+| *cookie* | `ugugol` |
+| *rain* | `erehel` |
+| *thunderstorm* | `avodel` |
+| *night* | `anadal` |
+| *cook* | `vugugal` |
+| *sing* | `vezehel` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
@@ -216,126 +220,128 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-tent | g-physical-met-lasting
 :::
 
-**2.** *My backpack serves competence.*
+**2.** *My knife serves competence.*
 
 ::: details Show answer
-`zabal gulotham.`
+`zanaval gulotham.`
 
-z-backpack | g-competence-met-any-term
+z-knife | g-competence-met-any-term
 :::
 
-**3.** *The wind detracts from relatedness right now (passing).*
+**3.** *The wind detracts from the physical sake right now (passing).*
 
 ::: details Show answer
-`zewedul wanathur gobum.`
+`zewedul woyuthur gobum.`
 
-z-wind | [w-relatedness-unmet-passing | g-stimulus]
+z-wind | [w-physical-unmet-passing | g-stimulus]
 :::
 
-**4.** *The fire detracts from the physical sake (irreversible).*
+**4.** *The thunderstorm detracts from pleasure (modifiable).*
 
 ::: details Show answer
-`zavahel woyuthul gobum.`
+`zavodel wozothum gobum.`
 
-z-fire | [w-physical-unmet-irreversible | g-stimulus]
+z-thunderstorm | [w-pleasure-unmet-modifiable | g-stimulus]
 :::
 
-**5.** *My flashlight serves an unspecified sake in the long term.*
+**5.** *Azawan cooks, and that serves pleasure right now.*
 
 ::: details Show answer
-`zavehal gegathal.`
+`zazawan vugugal thozothar.`
 
-z-flashlight | g-sake-met-lasting
+z-Azawan | v-cook | th-pleasure-met-immediate
 :::
 
-**6.** *My tent serves beneficence in the long term.*
+**6.** *My basket detracts from competence (modifiable).*
 
 ::: details Show answer
-`zededul gebethal.`
+`zabezal gulothum.`
 
-z-tent | g-beneficence-met-lasting
-:::
-
-**7.** *Azawan sleeps, and that serves the physical sake in the long term.*
-
-::: details Show answer
-`zazawan vezebal thoyuthal.`
-
-z-Azawan | v-sleep | th-physical-met-lasting
+z-basket | g-competence-unmet-modifiable
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zededul gegathal.`
+**1.** `zabegul gulothal.`
 
 ::: details Show answer
+z-bucket | g-competence-met-lasting
 
-z-tent | g-sake-met-lasting
-
-*My tent serves an unspecified sake in the long term.*
+*My bucket serves competence in the long term.*
 :::
 
-**2.** `zavehal gulothal.`
+**2.** `zerehel woyuthum gobum.`
 
 ::: details Show answer
+z-rain | [w-physical-unmet-modifiable | g-stimulus]
 
-z-flashlight | g-competence-met-lasting
-
-*My flashlight serves competence in the long term.*
+*The rain detracts from the physical sake (modifiable).*
 :::
 
-**3.** `zerehel wahuthum gobum.`
+**3.** `zugugol gozothar.`
 
 ::: details Show answer
+z-cookie | g-pleasure-met-immediate
 
-z-rain | [w-autonomy-unmet-modifiable | g-stimulus]
-
-*The rain detracts from autonomy (modifiable).*
+*My cookie is a pleasure right now.*
 :::
 
-**4.** `zededul goyuthar.`
+**4.** `zazawan vezehel thulothum.`
 
 ::: details Show answer
+z-Azawan | v-sing | th-competence-unmet-modifiable
 
-z-tent | g-physical-met-immediate
-
-*My tent serves the physical sake right now.*
+*Azawan sings, and that detracts from competence (modifiable).*
 :::
 
-**5.** `zabal gulothul.`
+**5.** `zededul gozothur goyuthal.`
 
 ::: details Show answer
+[z-tent | g-pleasure-unmet-passing | g-physical-met-lasting]
 
-z-backpack | g-competence-unmet-irreversible
-
-*My backpack detracts from competence (irreversible).*
+*My tent is unpleasant for now, but it serves the physical sake in the long term.*
 :::
 
-**6.** `zavahel wahuthul gobum.`
+**6.** `zanadal wozotham gobum.`
 
 ::: details Show answer
+z-night | [w-pleasure-met-any-term | g-stimulus]
 
-z-fire | [w-autonomy-unmet-irreversible | g-stimulus]
-
-*The fire detracts from autonomy (irreversible).*
+*The night serves pleasure.*
 :::
 
-**7.** `zavehal gamethar.`
+#### Pick one {#beginner-pick-one}
+
+**1.** *My knife detracts from competence (modifiable).* `zanaval gulothum.` or `zanaval gulotham.`
 
 ::: details Show answer
+`zanaval gulothum.`
 
-z-flashlight | g-purpose-met-immediate
+z-knife | g-competence-unmet-modifiable
 
-*My flashlight serves purpose right now.*
+**`thu`** detracts from the sake; **`tha`** serves it.
 :::
 
-**8.** `zavahel wozotham gahadul.`
+**2.** *Ahaben sings, and that serves pleasure.* `zahaben vezehel thozotham.` or `zahaben gozotham vezehel.`
 
 ::: details Show answer
+`zahaben vezehel thozotham.`
 
-z-fire | [w-pleasure-met-any-term | g-hot]
+z-Ahaben | v-sing | th-pleasure-met-any-term
 
-*The fire is pleasantly hot.*
+The singing is an event, so its sake word goes on `/th/`; on `/ɡ/` after `zahaben` it would describe Ahaben.
+:::
+
+#### Fix it {#beginner-fix-it}
+
+**1.** *The rain serves pleasure.* <!-- lint: error -->`zerehel gozotham.`
+
+::: details Show answer
+`zerehel wozotham gobum.`
+
+z-rain | [w-pleasure-met-any-term | g-stimulus]
+
+A sake word alone on `/ɡ/` says the rain is yours; for a thing you do not keep, put the sake word on `/w/` before **`gobum`**.
 :::
 
 ## Intermediate {#intermediate}
