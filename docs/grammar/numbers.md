@@ -692,28 +692,30 @@ Speech and writing drills that teach the shorthand itself still show one-digit s
 
 A free number in shorthand shows its ending as a mark after the role letter (`g~+3`); spelled out, it shows the ending as its last letter (`grarem`). A number built onto a content root ([numeric derivation](numeric-derivation.md#numeric-derivation)) is always spelled out (`NUM`) and never takes the marks **`~`** / **`@`** / **`=`**.
 
-### Translation practice {#intermediate-translation-practice}
-<a id="translation-practice-intermediate"></a>
+### Practice {#intermediate-practice}
 
-Short drills for Intermediate. Try each item before opening **Show answer**. Use shorthand for two or more digits (`g+12`, `g#21`); spell zero, one digit, or none (`grarem`, `gredul`, `gral`). The items sample role letters, endings, digitless forms, and numbers as verb / adverb / interjection / discourse, not the whole inventory.
+Short drills for Intermediate. Try each item before opening **Show answer**. Use shorthand for two or more digits (`g+12`, `g#12`); spell zero, one digit, or none (`grarem`, `gredul`, `gral`).
 
 **Setting:** a sports stadium
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *seat* | `ezedal` | |
-| *trophy* | `odovel` | |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *sit* | `vehahel` | `ehahel` *chair* |
-| *run* | `varahal` | `arahal` *run* |
-| *punch* | `vabahel` | `abahel` *punch* |
-| *big* | `elavam` | `elaval` *elephant* |
-| *score* | `odovem` | `odovel` *trophy* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *seat* | `ezedal` | 💺 |
+| *trophy* | `odovel` | 🏆: its abstract is *score* |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *see* | `vahahal` |
+| *sit* | `vehahel` |
+| *run* | `varahal` |
+| *punch* | `vabahel` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -725,15 +727,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Use
 z-seat-x | g-three.about
 :::
 
-**2.** *Three sit.*
-
-::: details Show answer
-`zrarel vehahel.`
-
-z-three | v-sit
-:::
-
-**3.** *Alahen runs three times.*
+**2.** *Alahen runs three times.*
 
 ::: details Show answer
 `zalahen varahal hrarel.`
@@ -741,15 +735,7 @@ z-three | v-sit
 z-Alahen | v-run | h-three
 :::
 
-**4.** *The second seat.*
-
-::: details Show answer
-`zezedal gredul.`
-
-z-seat | g-2nd
-:::
-
-**5.** *Point 2: Azawan sits.*
+**3.** *Point 2: Azawan sits.*
 
 ::: details Show answer
 `xredul zazawan vehahel.`
@@ -757,15 +743,7 @@ z-seat | g-2nd
 x-2nd | z-Azawan | v-sit
 :::
 
-**6.** *Three more!*
-
-::: details Show answer
-`yrarel.`
-
-y-three
-:::
-
-**7.** *Alahen adds three to the score.*
+**4.** *Alahen adds three to the score.*
 
 ::: details Show answer
 `zalahen dodovem vrarel.`
@@ -773,15 +751,7 @@ y-three
 z-Alahen | d-score | v-three
 :::
 
-**8.** *Alahen punches three times.*
-
-::: details Show answer
-`zalahen vabahel hrarel.`
-
-z-Alahen | v-punch | h-three
-:::
-
-**9.** *Thousands see the trophy.* (the thousands band, no exact count)
+**5.** *Thousands see the trophy.* (the thousands band, no exact count)
 
 ::: details Show answer
 `zrabarel dodovel vahahal.`
@@ -789,17 +759,7 @@ z-Alahen | v-punch | h-three
 z-+-e3 | d-trophy | v-see
 :::
 
-**10.** *Alahen adds 5.2 to the score.*
-
-::: details Show answer
-`zalahen dodovem v+5.2.`
-
-🔊 `zalahen dodovem vravayedul.`
-
-z-Alahen | d-score | v-5.2
-:::
-
-**11.** *Azawan will probably punch (I'd put it at 70%).*
+**6.** *Azawan will probably punch (I'd put it at 70%).*
 
 ::: details Show answer
 `zazawan vabahel th+70.`
@@ -811,98 +771,35 @@ z-Azawan | v-punch | th-70-percent-likely
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zezedalx gradum.`
+**1.** `zredul dodovel vahahal.`
 
 ::: details Show answer
-
-🔊 `zezedalx gradum.`
-
-z-seat-x | g-two.about
-
-*About two seats.*
-:::
-
-**2.** `zredul dodovel vahahal.`
-
-::: details Show answer
-
-🔊 `zredul dodovel vahahal.`
-
 z-2nd | d-trophy | v-see
 
 *The second one sees the trophy.*
 :::
 
-**3.** `zalahen varahal hral.`
+**2.** `y_3.`
 
 ::: details Show answer
-
-🔊 `zalahen varahal hral.`
-
-z-Alahen | v-run | h-more-than-one
-
-*Alahen runs multiple times.*
-:::
-
-**4.** `y_3.`
-
-::: details Show answer
-
 🔊 `yrorel.`
 
 y-_3
 
-*Three!* (score / label)
+*Three!* (a score or label)
 :::
 
-**5.** `xredul zalahen varahal.`
+**3.** `yol zalahen drar vahahal.`
 
 ::: details Show answer
-
-🔊 `xredul zalahen varahal.`
-
-x-2nd | z-Alahen | v-run
-
-*Point 2: Alahen runs.*
-:::
-
-**6.** `zezedal gelavam gredul.`
-
-::: details Show answer
-
-🔊 `zezedal gelavam gredul.`
-
-[z-seat | g-big | g-2nd]
-
-*The second big seat.*
-:::
-
-**7.** `yol zalahen drar vahahal.`
-
-::: details Show answer
-
-🔊 `yol zalahen drar vahahal.`
-
 y-question | z-Alahen | d-how-many | v-see
 
 *How many does Alahen see?*
 :::
 
-**8.** `zahaben vehahel hrerel.`
+**4.** `z+5e3,860 vehahel.`
 
 ::: details Show answer
-
-🔊 `zahaben vehahel hrerel.`
-
-z-Ahaben | v-sit | h-3rd
-
-*Ahaben sits for the third time.*
-:::
-
-**9.** `z+5e3,860 vehahel.`
-
-::: details Show answer
-
 🔊 `zrabareyavathahaguzol vehahel.`
 
 z-5e3,860 | v-sit
@@ -910,85 +807,56 @@ z-5e3,860 | v-sit
 *5860 sit.*
 :::
 
-#### Written → spoken {#intermediate-written-to-spoken}
-
-**1.** `g+45`
+**5.** `zahaben vehahel hrerel.`
 
 ::: details Show answer
+z-Ahaben | v-sit | h-3rd
 
-🔊 `gramoval`
-
-g-45
+*Ahaben sits for the third time.*
 :::
 
-**2.** `g#12`
+**6.** `zahaben dezedalx g~+30 vahahal.`
 
 ::: details Show answer
+🔊 `zahaben dezedalx grarezom vahahal.`
 
-🔊 `grewodul`
+z-Ahaben | [d-seat-x | g-30.about] | v-see
 
-g-12th
+*Ahaben sees about thirty seats.*
 :::
 
-**3.** `g+21`
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Alahen sees about four seats.* `zalahen dezedalx gramom vahahal.` or `zalahen dezedalx gramol vahahal.`
 
 ::: details Show answer
+`zalahen dezedalx gramom vahahal.`
 
-🔊 `graduwol`
+z-Alahen | [d-seat-x | g-four.about] | v-see
 
-g-21
+**-m** makes the number approximate; **-l** is exact.
 :::
 
-**4.** `g~+30`
+**2.** *Ahaben sees seat 5* (its label). `zahaben dezedal groval vahahal.` or `zahaben dezedal graval vahahal.`
 
 ::: details Show answer
+`zahaben dezedal groval vahahal.`
 
-🔊 `grarezom`
+z-Ahaben | [d-seat | g-_5.spelled] | v-see
 
-g-30.about
+A label is a digit string, marker **`ro`**; **`ra`** would count five.
 :::
 
-**5.** `g+105`
+#### Fix it {#intermediate-fix-it}
+
+**1.** *the fifth seat* <!-- lint: error -->`zezedal graval.`
 
 ::: details Show answer
+`zezedal greval.`
 
-🔊 `grawozoval`
+z-seat | g-5th
 
-g-105
-:::
-
-#### Spoken → written {#intermediate-spoken-to-written}
-
-**1.** 🔊 `graduzol`
-
-::: details Show answer
-`g+20`
-
-g-20
-:::
-
-**2.** 🔊 `grawozol`
-
-::: details Show answer
-`g+10`
-
-g-ten
-:::
-
-**3.** 🔊 `grenagul`
-
-::: details Show answer
-`g#96`
-
-g-96th
-:::
-
-**4.** 🔊 `grawovam`
-
-::: details Show answer
-`g~+15`
-
-g-15.about
+A place in a series is a rank, marker **`re`**; **`ra`** counts.
 :::
 
 ## Advanced {#advanced}
