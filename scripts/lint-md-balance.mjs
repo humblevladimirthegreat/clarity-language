@@ -123,6 +123,7 @@ const ALLOWED_HTML_TAGS = new Set([
   "InspectCard",
   "IpaPlay",
   "LexiconSearch",
+  "PrintButton",
   "NameHelper",
   "SpeakButton",
 ]);

@@ -3,9 +3,10 @@
  *
  * Run: npm run convert-word -- fishing
  *      npm run convert-word -- --unique fishing
- *      npm run convert-word -- --lexicon
  *      npm run convert-word -- --lexicon --only breaker
+ *      npm run convert-word -- --lexicon --all
  *
+ * --lexicon requires --only or --all (never re-places the whole lexicon by default).
  * --lexicon also writes tmp/lexicon-retie-map.json for npm run retie-docs.
  */
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -41,6 +42,7 @@ const OVERLAY_HEADERS = ["sense_form", "pos", "emoji", "kind", "gloss", "definit
 
 type CliOptions = {
   lexicon: boolean;
+  all: boolean;
   only: string[];
   input: string;
   unique: boolean;
@@ -50,6 +52,7 @@ type CliOptions = {
 function parseArgs(argv: string[]): CliOptions {
   let unique = false;
   let lexicon = false;
+  let all = false;
   let syllables = 2;
   const only: string[] = [];
   const parts: string[] = [];
@@ -62,6 +65,10 @@ function parseArgs(argv: string[]): CliOptions {
     }
     if (arg === "--lexicon") {
       lexicon = true;
+      continue;
+    }
+    if (arg === "--all") {
+      all = true;
       continue;
     }
     if (arg === "--only") {
@@ -100,24 +107,35 @@ function parseArgs(argv: string[]): CliOptions {
   if (only.length > 0 && !lexicon) {
     throw new Error("--only requires --lexicon");
   }
+  if (all && !lexicon) {
+    throw new Error("--all requires --lexicon");
+  }
+  if (all && only.length > 0) {
+    throw new Error("--all and --only are mutually exclusive");
+  }
+  if (lexicon && !all && only.length === 0) {
+    printUsage();
+    throw new Error("--lexicon requires --only <row> or --all (re-places the whole lexicon)");
+  }
 
-  return { lexicon, only, input, unique, syllables };
+  return { lexicon, all, only, input, unique, syllables };
 }
 
 function printUsage(): void {
   console.error(`Usage: npm run convert-word -- <english> [--unique] [--syllables N]
-       npm run convert-word -- --lexicon [--only LITERAL|EMOJI|ROOT]
+       npm run convert-word -- --lexicon (--only LITERAL|EMOJI|ROOT | --all)
 
 --lexicon rewrites the published/overlay/compound CSVs and dumps tmp/lexicon-retie-map.json.
 Eligible rows (overlay-backed, or the marked pronouns) take annealed three-letter roots.
 Every other row takes a five-letter root, frequent senses first, regret order on ties.
 --only limits --lexicon to matching published rows (repeatable or comma-separated).
+--all re-places every published row; --lexicon needs one of --only or --all.
 
 Examples:
   npm run convert-word -- fishing
   npm run convert-word -- --unique fishing
-  npm run convert-word -- --lexicon
-  npm run convert-word -- --lexicon --only breaker`);
+  npm run convert-word -- --lexicon --only breaker
+  npm run convert-word -- --lexicon --all`);
 }
 
 function pct(count: number, total: number): string {

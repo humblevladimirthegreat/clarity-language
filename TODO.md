@@ -9,7 +9,6 @@ use [skip-cd] for amplify to not deploy.
 # TODO
 
 -buy domain
--flash cards for claritish
 -claritish editor
 -prosody
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
@@ -18,7 +17,6 @@ use [skip-cd] for amplify to not deploy.
 -finish proposals-mnemonic
 -review logical deduction
 -parser can optionally output translation guidance
--eliminate lexicon retie by default
 -run full lexicon retie
 -consider swapping ae with oe meanings
 -allow non-emoji roots

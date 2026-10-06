@@ -4,7 +4,19 @@ pageClass: claritish-cheat-sheet
 outline: false
 ---
 
+<PrintButton />
+
 # Claritish cheat sheet {#cheat-sheet}
+
+## Vowels and x {#sounds}
+
+| Letter | Like | Letter | Like |
+|--------|------|--------|------|
+| `e` | *bet* | `u` | *boot*, no glide |
+| `o` | *Cambodia*, no glide | `a` | *spa* |
+| `x` | the *si* in *vision* (not English *x*) | | |
+
+Each vowel always sounds the same; two vowels in a row are two beats. All other letters sound like English.
 
 ## Sure, decided, wanted {#settled}
 
@@ -36,15 +48,22 @@ outline: false
 | required | `thumel` | `thumem` | `thumer` by custom |
 | agreed (the affected person) | `thuxegol` in advance | `thuxegom` said yes, can take it back | `thuxegor` assumed OK |
 
+## Suffixes on English words {#suffixes}
+
+| [Label scope](labels.md) | | [Ability](can-and-cant.md) | |
+|--------------------------|-|----------------------------|-|
+| `-tha` | this episode | `-xa` | can |
+| `-the` | a practiced role | `-xe` | can't, just for now |
+| `-tho` | this pair: one relationship | `-xo` | can't yet (the default) |
+| `-thu` | a type across scenes | `-xu` | can never |
+
 ## [Sakes](thanks-and-sorry.md) {#sakes}
 
-| Sake | Need | Sake | Need |
-|------|------|------|------|
-| `ahu` | autonomy | `ana` | relatedness |
-| `ulo` | competence | `ebe` | beneficence |
-| `ado` | understanding | `ozo` | pleasure |
-| `ame` | purpose | `oyu` | physical: health, rest, safety |
-| | | `ega` | a sake, unspecified |
+| Sake, need | Sake, need | Sake, need |
+|------------|------------|------------|
+| `ahu` autonomy | `ame` purpose | `ozo` pleasure |
+| `ulo` competence | `ana` relatedness | `oyu` physical: health, rest, safety |
+| `ado` understanding | `ebe` beneficence | `ega` a sake, unspecified |
 
 Sake word: `th` + sake + stance + ending.
 
@@ -59,6 +78,8 @@ Thanks for a thing you own: `g` for `th`, after the noun: *my coat* `goyuthal`.
 
 ## [Feelings](feelings.md) {#feelings}
 
+`thulothuraor` *can I measure up?* hanging over everything, in waves:
+
 | `thulo` | `thu` | `r` | `ao` | `r` |
 |---------|-------|-----|------|-----|
 | competence | unmet | for now | over the room (locus) | surging (motion) |
@@ -72,23 +93,6 @@ Motion ending: **-l** still, **-m** flowing, **-r** surging.
 | `uo` | can't place where it comes from | `u` | moving off: avoiding, hiding |
 | `o` | aimed at someone | `ua` | out of fight: giving up |
 | `oe` | turning to someone for comfort | `ae` | using yourself to placate |
-
-| Feeling word | Instead of |
-|--------------|------------|
-| `thulothamar` | *proud* |
-| `thulothuraor` | *anxious* |
-| `thulothuruol` | *uneasy* |
-| `thahuthumuem` | *objecting* |
-| `thahuthulem` | *upset for her* |
-
-## Suffixes on English words {#suffixes}
-
-| [Label scope](labels.md) | | [Ability](can-and-cant.md) | |
-|--------------------------|-|----------------------------|-|
-| `-tha` | this episode | `-xa` | can |
-| `-the` | a practiced role | `-xe` | can't, just for now |
-| `-tho` | this pair: one relationship | `-xo` | can't yet (the default) |
-| `-thu` | a type across scenes | `-xu` | can never |
 
 ## [Tone marks](tone-marks.md) {#tone-marks}
 

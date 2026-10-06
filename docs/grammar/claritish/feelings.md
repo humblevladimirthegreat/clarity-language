@@ -14,7 +14,7 @@ The word now has two **-l / -m / -r** slots: the ending from Thanks and sorry th
 |---------|-------|-----|------|-----|
 | competence | unmet | for now | over the room (locus) | surging (motion) |
 
-Pick a locus from this menu. You don't need to memorize it.
+Pick a locus from this menu. (This is in a cheat sheet at the end)
 
 | Locus | Meaning |
 |-------|---------|
@@ -45,13 +45,13 @@ The motion endings are the settled-to-passing scale applied to water: still wate
 > My sister got laid off `thahuthulem`.  
 > `thulothuruol`, and I can't say why.
 
-| Drop-in | English word it replaces | The three parts |
-|---------|--------------------------|-----------------|
-| `thulothamar` | *proud* | competence met; held inside; surging |
-| `thulothuraor` | *anxious* | competence at stake for now; over the room; surging |
-| `thahuthumuem` | *objecting* | autonomy unmet; pushing back; flowing |
-| `thahuthulem` | *upset for her* | autonomy unmet for good; on her behalf; flowing |
-| `thulothuruol` | *uneasy* | competence at stake for now; can't place it; still |
+| Drop-in | What it says | Instead of | The three parts |
+|---------|--------------|------------|-----------------|
+| `thulothamar` | a rush of *I pulled it off*, kept to myself | *proud* | competence met; held inside; surging |
+| `thulothuraor` | *can I measure up?* hanging over everything, in waves, for now | *anxious* | competence at stake for now; over the room; surging |
+| `thahuthumuem` | a steady push back at losing my say, while it can still change | *objecting* | autonomy unmet; pushing back; flowing |
+| `thahuthulem` | a steady ache on her behalf: her say was taken for good | *upset for her* | autonomy unmet for good; on her behalf; flowing |
+| `thulothuruol` | a quiet *can I handle this?* from nowhere I can point to | *uneasy* | competence at stake for now; can't place it; still |
 
 ## Practice {#practice}
 

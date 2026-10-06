@@ -10,7 +10,7 @@ Never make up a root spelling by hand, whether for a new row, a respelling, or a
 npm run convert-word -- --lexicon --only LITERAL
 ```
 
-`--only` takes a concrete literal, emoji, or root (repeatable or comma-separated) and limits the run to those published rows; every other row keeps its root. Without `--only`, `--lexicon` re-places the whole lexicon.
+`--only` takes a concrete literal, emoji, or root (repeatable or comma-separated) and limits the run to those published rows; every other row keeps its root. `--lexicon` alone is refused; `--lexicon --all` re-places the whole lexicon.
 
 A hand-picked spelling bypasses the checks that placement runs. Placement:
 

@@ -7,6 +7,7 @@ import GlossViewer from '../components/GlossViewer.vue'
 import AgazanInspect from '../components/AgazanInspect.vue'
 import IpaPlay from '../components/IpaPlay.vue'
 import NameHelper from '../components/NameHelper.vue'
+import PrintButton from '../components/PrintButton.vue'
 import SelfCode from '../components/SelfCode.vue'
 import SelfGloss from '../components/SelfGloss.vue'
 
@@ -19,6 +20,7 @@ export default {
     app.component('AgazanInspect', AgazanInspect)
     app.component('IpaPlay', IpaPlay)
     app.component('NameHelper', NameHelper)
+    app.component('PrintButton', PrintButton)
     app.component('SelfCode', SelfCode)
     app.component('SelfGloss', SelfGloss)
   },

@@ -122,8 +122,32 @@
   opacity: 1;
 }
 
+.print-button {
+  /* Headings are position: relative, so the h1 would paint over the float and swallow clicks. */
+  position: relative;
+  z-index: 1;
+  float: right;
+  margin: 0 0 8px 12px;
+  padding: 4px 10px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  font-size: 18px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.print-button:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
 /* Claritish cheat sheet: print on as few pages as possible, without site chrome. */
 @media print {
+  .print-button {
+    display: none !important;
+  }
+
   .claritish-cheat-sheet .VPNav,
   .claritish-cheat-sheet .VPLocalNav,
   .claritish-cheat-sheet .VPSidebar,
@@ -160,6 +184,10 @@
     margin: 8pt 0 2pt;
     padding-top: 0;
     border-top: 0;
+  }
+
+  .claritish-cheat-sheet .vp-doc h2#sakes {
+    break-before: page;
   }
 
   .claritish-cheat-sheet .vp-doc p {
