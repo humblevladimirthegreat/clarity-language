@@ -264,7 +264,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🐺,wolf,uwuva,predation,wolf at the door,,,
 🦊,fox,avagu,cunning,sly as a fox,,,
 🦝,raccoon,aragu,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,,roles.md#intermediate-practice
-🐈,cat,agadu,curiosity,curiosity killed the cat,,wonder; curious; interest,knowing.md#advanced-translation-practice
+🐈,cat,agadu,curiosity,curiosity killed the cat,,wonder; curious; interest,knowing.md#advanced-practice
 🦁,lion,alahe,courage,brave as a lion,,,
 🐅,tiger,adege,ferocity,fight like a tiger,,,
 🐆,leopard,elebe,nature,a leopard cannot change its spots,,environmental; wild; organic,
@@ -668,7 +668,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥇,gold,ogoda,first,gold medal marks top place; first is leading all others,,primary; priority; prime,numeric-derivation.md#advanced-translation-practice
 🥈,silver,ezeve,runner-up,silver medal marks runner-up; second is next after first,,,
 🥉,bronze,abazo,third,bronze medal marks third place; third is after second,,,
-⚽,soccer,azagu,,,,,knowing.md#advanced-translation-practice
+⚽,soccer,azagu,,,,,
 ⚾,baseball,ebebo,,,,,
 🥎,softball,ozovo,adaptation,softball is baseball made gentler; adaptation is adjusting the form,,version; adapt; flexible,
 🏀,ball,obohe,,,,,

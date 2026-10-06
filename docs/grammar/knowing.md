@@ -1322,50 +1322,41 @@ The channel stays on the main sentence and covers the whole generalization. Put 
 
 **Compare with:** a general claim you are **not** giving as today's report is [FORMER](#former-climate) (`thenom`). *Every cat must sleep* as a rule someone sets is [REQUIRE](sakes.md#requirement) (`thumem`), not a law of how things work. *Maybe every cat sleeps* is [MAY](#may) on the same clause.
 
-### Translation practice {#advanced-translation-practice}
+### Practice {#advanced-practice}
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. The first item puts a `/th/` word on one adjective. The middle items make a general claim: the fence or restrictor says how far it reaches, and a channel says what it rests on. The last items name a holder: join the name onto the last letter of the channel, MAY, or NOTIONAL.
+Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Setting:** a film archive
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Alahen* | `alahen` | | |
-| *walk* | `vowogal` | | |
-| *LIVE* | `thodom` | | |
-| *MAY* | `thovum` | | |
-| *blue* | `ubuhel` | | |
-| *always* | `hual` | | |
-| *never* | `hal` | | |
-| *write* | `varadal` | | |
-| *sit* | `vehahel` | `ehahel` *chair* | |
-| *think* | `vevegal` | | |
-| *punch* | `vabahel` | | |
-| *agent-teach-th-role* | `gaxedehothel` | `edehol` *teach* | |
-| *agent-fight-th-role* | `gaxavadathel` | `avadal` *fight* | |
-| *teach* | `vedehol` | | |
-| *fight* | `vavadal` | | |
-| *soccer* | `azagul` | | |
-| *cat* | `agadul` | | |
-| *sleep* | `vezebal` | `ezebal` *sleep* | |
-| *sleepy* | `gezebul` | | |
-| *PATTERN* | `thobam` | `obal` *paw-prints* | |
-| *PATTERN.strong* | `thobal` | `obal` *paw-prints* | |
-| *PATTERN.weak* | `thobar` | `obal` *paw-prints* | |
-| *REPORTED.strong* | `thewal` | `ewal` *ear* | |
-| *CAUSE* | `thegem` | | |
-| *if* | `thoyem` | `oyel` *door* | |
-| *that-clause* | `barl` | | |
-| *departure* | `vedabal` | | |
-| *CLUES* | `thunem` | `unel` *investigate* | |
-| *CLUES.strong* | `thunel` | `unel` *investigate* | |
-| *REPORTED* | `thewam` | `ewal` *ear* | |
-| *REPORTED.weak* | `thewar` | `ewal` *ear* | |
-| *NOTIONAL* | `thavom` | `avol` *theater* | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *cat* | `agadul` | 🐈 |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *LIVE* | `thodom` |
+| *MEMORY* | `thevom` |
+| *PATTERN* | `thobam` |
+| *CLUES* | `thunem` |
+| *CAUSE* | `thegem` |
+| *if* | `thoyem` |
+| *blue* | `ubuhel` |
+| *sleepy* | `ezebul` |
+| *hour* | `agazem` |
+| *camera* | `agahol` |
+| *walk* | `vowogal` |
+| *write* | `varadal` |
+| *sit* | `vehahel` |
+| *sleep* | `vezebal` |
+| *departure* | `vedabal` |
+| *see* | `vahahal` |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
@@ -1377,47 +1368,15 @@ Short drills for Advanced. Try each item before opening **Show answer**. The fir
 [z-Alahen | [w-LIVE | g-blue]] | v-walk
 :::
 
-**2.** *Alahen usually writes.*
+**2.** *I saw Azawan write three hours ago.*
 
 ::: details Show answer
-`zalahen huam varadal.`
+`zazawan thevom bagazem grurel varadal.`
 
-z-Alahen | h-always.open | v-write
+z-Azawan | [th-MEMORY | [b-hour | g-minus-three]] | v-write
 :::
 
-**3.** *Azawan always sits, from the few cases I have seen.*
-
-::: details Show answer
-`zazawan hual vehahel thobar.`
-
-z-Azawan | h-always | v-sit | th-PATTERN.weak
-:::
-
-**4.** *Every teacher teaches; it follows.*
-
-::: details Show answer
-`zual gaxedehothel vedehol thunel.`
-
-[z-everything | g-agent-x-teach-th-role] | v-teach | th-CLUES.strong
-:::
-
-**5.** *Every cat sleeps when it is sleepy; that is how it works.*
-
-::: details Show answer
-`zual gagadul vezebal thegem thoyem barl zagadur gezebul.`
-
-[z-everything | g-cat] | v-sleep | th-CAUSE | [th-if | b-that-clause] | [z-←cat | g-sleepy]
-:::
-
-**6.** *Alahen never punches, per the soccer rules.*
-
-::: details Show answer
-`zalahen hal vabahel thewal bazagul.`
-
-z-Alahen | h-never | v-punch | [th-REPORTED.strong | b-soccer]
-:::
-
-**7.** *Cats sleep, as a rule, going by the pattern.*
+**3.** *Cats sleep, as a rule, going by the pattern.*
 
 ::: details Show answer
 `zuam gagadul vezebal thobam.`
@@ -1425,7 +1384,7 @@ z-Alahen | h-never | v-punch | [th-REPORTED.strong | b-soccer]
 [z-everything.open | g-cat] | v-sleep | th-PATTERN
 :::
 
-**8.** *I gather Azawan thinks Alahen left.*
+**4.** *I gather Azawan thinks Alahen left.* (Azawan's clues, not mine)
 
 ::: details Show answer
 `zalahen thunemazawan vedabal.`
@@ -1433,112 +1392,62 @@ z-Alahen | h-never | v-punch | [th-REPORTED.strong | b-soccer]
 z-Alahen | th-CLUES-Azawan | v-departure
 :::
 
-**9.** *Rumor has it Alahen thinks Azawan sleeps.*
-
-::: details Show answer
-`zazawan thewaralahen vezebal.`
-
-z-Azawan | th-REPORTED.weak-Alahen | v-sleep
-:::
-
-**10.** *Maybe Alahen thinks Azawan might write.* (the second *might* is Alahen's)
-
-::: details Show answer
-`zazawan thovumalahen thovum varadal.`
-
-z-Azawan | th-MAY-Alahen | th-MAY | v-write
-:::
-
 #### Agazan → English {#advanced-agazan-to-english}
 
-**1.** `zazawan wovum gubuhel vowogal.`
+**1.** `zazawan hual vehahel thobar.`
 
 ::: details Show answer
+z-Azawan | h-always | v-sit | th-PATTERN.weak
 
-[z-Azawan | [w-MAY | g-blue]] | v-walk
-
-*Azawan walks, and that may be blue.* (only the color is open)
+*Azawan always sits, going by the few cases I have seen.*
 :::
 
-**2.** `zazawan huam vehahel.`
+**2.** `zalahen thobam bagazem grurel vezebal.`
 
 ::: details Show answer
+z-Alahen | [th-PATTERN | [b-hour | g-minus-three]] | v-sleep
 
-z-Azawan | h-always.open | v-sit
-
-*Azawan usually sits.*
+*Going by the pattern, Alahen slept three hours ago.*
 :::
 
-**3.** `zalahen hual varadal thobar.`
+**3.** `zual gagadul vezebal thegem thoyem barl zagadur gezebul.`
 
 ::: details Show answer
+[z-everything | g-cat] | v-sleep | th-CAUSE | [th-if | b-that-clause] | [z-←cat | g-sleepy]
 
-z-Alahen | h-always | v-write | th-PATTERN.weak
-
-*Alahen always writes, from the few cases I have seen.*
+*Every cat sleeps when it is sleepy; that is how it works.*
 :::
 
-**4.** `zual gaxavadathel vavadal thunel.`
+**4.** `zazawan thevom brubul dagahol vahahal.`
 
 ::: details Show answer
+z-Azawan | [th-MEMORY | b---e-] | d-camera | v-see
 
-[z-everything | g-agent-x-fight-th-role] | v-fight | th-CLUES.strong
-
-*Every fighter fights; it follows.*
+*I just saw Azawan look at the camera.*
 :::
 
-**5.** `zual gagadul vevegal thegem thoyem barl zagadur gezebul.`
+#### Pick one {#advanced-pick-one}
+
+**1.** *I saw Azawan walk recently.* `zazawan thevom brubum vowogal.` or `zazawan thevom brubul vowogal.`
 
 ::: details Show answer
+`zazawan thevom brubum vowogal.`
 
-[z-everything | g-cat] | v-think | th-CAUSE | [th-if | b-that-clause] | [z-←cat | g-sleepy]
+z-Azawan | [th-MEMORY | b---e-.about] | v-walk
 
-*Every cat thinks when it is sleepy; that is how it works.*
+Open **-m** softens the hair into *a short while ago*; **-l** is *just now*.
 :::
 
-**6.** `zazawan hal vehahel thewal bazagul.`
+#### What changes {#advanced-what-changes}
+
+**1.** `zazawan wevom gubuhel vowogal.` / `zazawan wodom gubuhel vowogal.`
 
 ::: details Show answer
+[z-Azawan | [w-MEMORY | g-blue]] | v-walk
 
-z-Azawan | h-never | v-sit | [th-REPORTED.strong | b-soccer]
+[z-Azawan | [w-LIVE | g-blue]] | v-walk
 
-*Azawan never sits, per the soccer rules.*
-:::
-
-**7.** `zuam gagadul gezebul thobal.`
-
-::: details Show answer
-
-[z-everything.open | g-cat] | g-sleepy | th-PATTERN.strong
-
-*Cats are sleepy, as a rule, going by a well-established pattern.*
-:::
-
-**8.** `zalahen thunelazawan vowogal.`
-
-::: details Show answer
-
-z-Alahen | th-CLUES.strong-Azawan | v-walk
-
-*Strong clues say Azawan thinks Alahen walks.*
-:::
-
-**9.** `zazawan thavomalahen vehahel.`
-
-::: details Show answer
-
-z-Azawan | th-NOTIONAL-Alahen | v-sit
-
-*Imagine it as Alahen sees it: Azawan sits.*
-:::
-
-**10.** `zazawan thewamalahen thodom vowogal.`
-
-::: details Show answer
-
-z-Azawan | th-REPORTED-Alahen | th-LIVE | v-walk
-
-*I hear Alahen saw Azawan walk.* (LIVE is how Alahen knows)
+Both channels sit on the adjective only: the blue is remembered in the first, seen live in the second.
 :::
 
 ## See also
