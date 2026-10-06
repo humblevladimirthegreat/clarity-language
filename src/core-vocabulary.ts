@@ -133,6 +133,96 @@ export function coreReport(checkpoints: readonly Checkpoint[], core: ReadonlyMap
   });
 }
 
+/** The checkpoint named by `page.md#id`, or by `page.md:band` (which works before and after conversion). */
+export function findCheckpoint(checkpoints: readonly Checkpoint[], spec: string): number {
+  const band = /^(.+\.md):(\w+)$/.exec(spec);
+  const index = band
+    ? checkpoints.findIndex((c) => c.page === band[1] && c.band === band[2]!.toLowerCase())
+    : checkpoints.findIndex((c) => c.anchor === spec);
+  if (index < 0) {
+    throw new Error(`No stage checkpoint ${spec}; use page.md#id or page.md:band, one of:\n  ${checkpoints.map((c) => c.anchor).join("\n  ")}`);
+  }
+  return index;
+}
+
+export type SpacingWord = {
+  root: string;
+  english: string;
+  /** Bank form from the nearest checkpoint that lists the root; the bare root when none does. */
+  agazan: string;
+  /** The root's `core` cell. */
+  core: string;
+};
+
+export type ReviewWord = SpacingWord & {
+  /** Latest earlier checkpoint whose bank uses the root (its introducing checkpoint when none does). */
+  lastUsed: string;
+  /** Checkpoints from {@link lastUsed} to this one. */
+  gap: number;
+};
+
+export type SpacingPlan = {
+  checkpoint: Checkpoint;
+  /** Roots whose core cell names this checkpoint: its bank order first, then lexicon order. */
+  introduce: SpacingWord[];
+  /** Core roots introduced at later checkpoints, in path order: candidates to pull forward. */
+  pullForward: SpacingWord[];
+  /** Roots introduced at earlier checkpoints, unused longest first. */
+  review: ReviewWord[];
+};
+
+/**
+ * Vocabulary choices for checkpoint `index` (docs/meta/translation-exercises.md#core-vocabulary):
+ * what it may introduce, what it could pull forward, and review roots ranked by how long the path
+ * has gone without them. `gloss` supplies English for a root no bank lists.
+ */
+export function spacingPlan(
+  checkpoints: readonly Checkpoint[],
+  core: ReadonlyMap<string, string>,
+  index: number,
+  gloss: (root: string) => string | undefined = () => undefined,
+): SpacingPlan {
+  const checkpoint = checkpoints[index]!;
+  const order = new Map(checkpoints.map((c, i) => [c.anchor, i]));
+  // Root → checkpoint indexes whose bank uses it, ascending.
+  const uses = new Map<string, number[]>();
+  checkpoints.forEach((c, i) => {
+    for (const { root } of c.entries) uses.set(root, [...(uses.get(root) ?? []), i]);
+  });
+  const word = (root: string, near: number): SpacingWord => {
+    const at = uses.get(root) ?? [];
+    // Prefer the latest use at or before `near`, else the first use after it.
+    const pick = [...at].reverse().find((i) => i <= near) ?? at[0];
+    const e = pick === undefined ? undefined : checkpoints[pick]!.entries.find((x) => x.root === root);
+    return { root, english: e?.english ?? gloss(root) ?? root, agazan: e?.agazan ?? root, core: core.get(root)! };
+  };
+
+  const introduce: SpacingWord[] = [];
+  const pullForward: { at: number; w: SpacingWord }[] = [];
+  const review: { intro: number; w: ReviewWord }[] = [];
+  const bankOrder = new Map(checkpoint.entries.map((e, i) => [e.root, i]));
+  for (const [root, cell] of core) {
+    const intro = order.get(cell);
+    if (intro === undefined) continue;
+    if (intro === index) introduce.push(word(root, index));
+    else if (intro > index) pullForward.push({ at: intro, w: word(root, intro) });
+    else {
+      const last = (uses.get(root) ?? []).filter((i) => i < index).at(-1) ?? intro;
+      review.push({ intro, w: { ...word(root, last), lastUsed: checkpoints[last]!.anchor, gap: index - last } });
+    }
+  }
+  const rank = (root: string) => bankOrder.get(root) ?? bankOrder.size;
+  introduce.sort((a, b) => rank(a.root) - rank(b.root));
+  pullForward.sort((a, b) => a.at - b.at);
+  review.sort((a, b) => b.w.gap - a.w.gap || a.intro - b.intro);
+  return {
+    checkpoint,
+    introduce,
+    pullForward: pullForward.map((p) => p.w),
+    review: review.map((r) => r.w),
+  };
+}
+
 /** Root / stem → `core` cell, from both lexicon CSVs (empty cells left out). */
 export function storedCore(): Map<string, string> {
   const core = new Map<string, string>();

@@ -8,8 +8,10 @@ import {
   CORE_CAP,
   CORE_REVIEW_MIN,
   coreReport,
+  findCheckpoint,
   firstAppearance,
   lintCoreCounts,
+  spacingPlan,
   stageCheckpoints,
   type BankEntry,
   type BankGroup,
@@ -191,6 +193,37 @@ describe("coreReport", () => {
     assert.equal(first!.overCap, true);
     assert.deepEqual(second!.review.map((e) => e.root), ["r0"]);
     assert.equal(second!.overCap, false);
+  });
+});
+
+describe("spacingPlan", () => {
+  // r1, r2 introduced at a; r2 reused at b; this is c; n1 is c's, n2 and n3 later.
+  const checkpoints = [
+    cp("a.md#x", false, [entry("r1", "roots"), entry("r2", "roots")]),
+    cp("b.md#x", false, [entry("r2", "roots"), entry("r3", "roots")]),
+    cp("c.md#p", true, [entry("n1", "new"), entry("r2", "review")]),
+    cp("d.md#x", false, [entry("n3", "roots")]),
+    cp("e.md#x", false, [entry("n2", "roots"), entry("r1", "roots")]),
+  ];
+  const core = new Map(Object.entries({ r1: "a.md#x", r2: "a.md#x", r3: "b.md#x", n4: "c.md#p", n1: "c.md#p", n2: "e.md#x", n3: "d.md#x" }));
+  const plan = spacingPlan(checkpoints, core, 2, (root) => `gloss ${root}`);
+
+  it("introduces this checkpoint's core roots, bank order first", () => {
+    assert.deepEqual(plan.introduce.map((w) => [w.root, w.english, w.agazan]), [["n1", "n1", "n1"], ["n4", "gloss n4", "n4"]]);
+  });
+
+  it("offers later core roots in path order", () => {
+    assert.deepEqual(plan.pullForward.map((w) => [w.root, w.core]), [["n3", "d.md#x"], ["n2", "e.md#x"]]);
+  });
+
+  it("ranks earlier roots by the stretch since their last use, ignoring this checkpoint and later ones", () => {
+    assert.deepEqual(plan.review.map((w) => [w.root, w.gap, w.lastUsed]), [["r1", 2, "a.md#x"], ["r2", 1, "b.md#x"], ["r3", 1, "b.md#x"]]);
+  });
+
+  it("finds a checkpoint by anchor or by page and band", () => {
+    assert.equal(findCheckpoint(checkpoints, "c.md#p"), 2);
+    assert.equal(findCheckpoint(checkpoints, "b.md:Beginner"), 1);
+    assert.throws(() => findCheckpoint(checkpoints, "z.md:beginner"), /No stage checkpoint z\.md:beginner/);
   });
 });
 

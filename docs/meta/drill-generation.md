@@ -51,9 +51,8 @@ Find the row(s) in the [allowlist](#allowlist).
 - [glosses.md](glosses.md#house-cast) (name glosses — not needed inside spoilers)
 - **This stage only** of the target file (`## Beginner` *or* `## Intermediate` *or* `## Advanced`) plus the page title / **Needs:** line
 - Worked examples **inside that stage** (gold corpus for **morph** packaging, not for checkpoint verbs)
-- `data/lexicon-published.csv` (and overlays / compounds CSVs) to certify a setting English gloss has a published stem, and the `core` column to find the next core roots and the earlier checkpoints' roots
-- `npm run core-vocabulary`, for each earlier checkpoint's new and review roots, to pick this checkpoint's review set
-- The banks (**New words** / **Review**, or legacy **Roots used here**) of earlier checkpoints in path order, only to see when a review root was last used
+- `data/lexicon-published.csv` (and overlays / compounds CSVs) to certify a setting English gloss has a published stem
+- `npm run core-vocabulary -- --for <page>.md:<band>`, to pick **New words** and **Review**. It lists the core roots this checkpoint may introduce, the next later core roots a setting could pull forward, and the earlier core roots ranked by how many checkpoints have passed since a bank last used them. Take review roots from the top of that list unless the setting needs others
 
 **Do not open** later path files, later stages of this file, or `docs/examples/` for item ideas. Do not browse the lexicon for roots the items will not use, beyond the core column.
 

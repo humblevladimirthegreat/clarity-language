@@ -75,7 +75,7 @@ Three item types aimed straight at the stage's decision. Each sits under its own
 ## Core vocabulary
 <a id="core-vocabulary"></a>
 
-The `core` column of the lexicon CSVs orders the learner's content roots by the checkpoint that introduces each one ([core vocabulary column](lexicon.md#core-vocabulary-column)). `npm run core-vocabulary` prints the current report.
+The `core` column of the lexicon CSVs orders the learner's content roots by the checkpoint that introduces each one ([core vocabulary column](lexicon.md#core-vocabulary-column)). `npm run core-vocabulary` prints the current report; `npm run core-vocabulary -- --for <page>.md:<band>` lists one checkpoint's choices: roots it may introduce, later roots to pull forward, and review roots unused longest first.
 
 | Rule | Detail |
 |------|--------|
