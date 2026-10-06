@@ -254,7 +254,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧑‍🦲,head,eheda,,,,principal,
 👥,silhouettes,azewe,community,busts form community,,society; club; association; folk; band; ethnic,
 🫂,hug,ahage,comfort,hug gives comfort,,comfortable; embrace,
-👪,family,avaha,kinship,a family is the people tied to you by blood,,household,hooks.md#beginner-translation-practice
+👪,family,avaha,kinship,a family is the people tied to you by blood,,household,hooks.md#beginner-practice
 👣,footprints,uvude,legacy,footprints leave legacy,v:go,trace; tour,roles.md#intermediate-translation-practice
 🫆,fingerprint,evebe,identity,fingerprint marks identity,,characteristic; personality,
 🐒,monkey,amage,mimicry,monkey see monkey do,,copy,
@@ -454,7 +454,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🍲,stew,uzudu,simmer,heat over time,,pot,
 🫕,fondue,avadu,sharing,everyone dips from one shared pot,,,
 🥣,cereal,eze,capacity,bowl holds what it can,,,comparatives.md#advanced-translation-practice
-🥗,salad,azavu,,,,,hooks.md#beginner-translation-practice
+🥗,salad,azavu,,,,,hooks.md#beginner-practice
 🍿,popcorn,ababo,entertainment,popcorn at the show is entertainment,,entertain,
 🧈,butter,abode,flattery,butter someone up with flattery,,,
 🧂,salt,ozode,skepticism,take it with a grain of salt,,,
@@ -490,14 +490,14 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🍼,baby-bottle,abadu,inhibition,bottle holds liquid inside; bottle is held-in charge,,bottle,numbers-applied.md#intermediate-translation-practice
 🥛,milk,emega,,,,,
 ☕,coffee,agave,alertness,coffee fuels alertness,g:bitter,,
-🫖,teapot,edebu,ceremony,teapot pours with ceremony,,,hooks.md#beginner-translation-practice
+🫖,teapot,edebu,ceremony,teapot pours with ceremony,,,hooks.md#beginner-practice
 🍵,tea,edehe,,,,,
 🍶,sake,ezegu,ritual,sake toast is ritual,,,
 🍾,champagne,ahebe,,,,,
 🍷,wine,awahe,refinement,wine signals refinement,,,plurality.md#beginner-practice
 🍸,cocktail,agoge,blend,cocktail blends many flavors,,combine; mixture; stir; mix; compound,
 🍹,mock-tail,amado,escapism,tropical drink is vacation escapism,,,
-🍺,beer,ebeho,,,,,hooks.md#beginner-translation-practice
+🍺,beer,ebeho,,,,,hooks.md#beginner-practice
 🥂,cheers,eheza,,,,,
 🥃,whiskey,eweze,fortitude,whiskey warms with fortitude,,,
 🫗,pour,oboho,loss-of-control,pour directs liquid; loss-of-control is the unobservable slip,,slip,pronouns.md#beginner-practice
@@ -507,7 +507,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧉,mate,emeda,fellowship,mate is shared fellowship,,fellow,
 🧊,ice,azaho,kelvin,ice marks thermodynamic temperature; kelvin is the SI temperature unit,,,restrictors.md#intermediate-translation-practice
 🥢,chopsticks,ahube,,,,,
-🍽️,plate,ebede,service,plate is set for service,,help; desk; dish; assistance; favor; aid,hooks.md#beginner-translation-practice
+🍽️,plate,ebede,service,plate is set for service,,help; desk; dish; assistance; favor; aid,hooks.md#beginner-practice
 🍴,cutlery,agade,provision,cutlery enables provision,v:eat,supply; resource; meal; food; diet,
 🥄,spoon,uzubu,portion,spoon measures a portion,,component; segment,numbers-applied.md#intermediate-translation-practice
 🔪,knife,anava,severity,a knife cuts deep and hard,,sharp; severe,pronouns.md#beginner-practice
@@ -1073,11 +1073,11 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ℹ️,information,eneve,fact,the info sign gives facts; a fact is what is actually so,,data; inform,
 🅿️,parking,aboge,allotment,parking marks a stall; allotment is the unobservable assigned share,,assign,
 🆘,sos,ezaha,distress,sos signals distress,,,
-🔴,red,ereda,,,,,hooks.md#beginner-translation-practice
+🔴,red,ereda,,,,,clause.md#intermediate-translation-practice
 🟠,orange,oraha,,,,,
 🟡,yellow,eyaye,caution,yellow circle warns slow down; caution is careful awareness,,,
 🟢,green,ego,permission,green circle signals go ahead; permission is allowed to proceed,,license,sakes.md#intermediate-translation-practice
-🔵,blue,ubuhe,,,,,hooks.md#beginner-translation-practice
+🔵,blue,ubuhe,,,,,clause.md#intermediate-translation-practice
 🟣,purple,ebebu,royalty,purple circle marks regal hue; royalty is high noble rank,,,
 🟤,brown,abavu,earthiness,brown circle is soil and wood; earthiness is plain grounded quality,,,
 ⚫,black,abago,,,,,

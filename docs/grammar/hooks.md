@@ -223,186 +223,170 @@ For *since* before a sentence, put **`barl`** after **`ul`** and the starting ev
 
 **Compare with:** *since* meaning *because* is **`thevem barl`**. Agazan keeps the time reading and the cause reading apart.
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a restaurant pass
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *plate* | `ebedel` | |
-| *salad* | `azavul` | |
-| *family* | `avahal` | |
-| *teapot* | `edebul` | |
-| *wine* | `awahel` | |
-| *beer* | `ebehol` | |
-| *red* | `eredal` | |
-| *blue* | `ubuhel` | |
-| *cook* | `vugugal` | |
-| *pour* | `vobohol` | |
-| *sit* | `vehahel` | `ehahel` *chair* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *plate* | `ebedel` | 🍽️ |
+| *salad* | `azavul` | 🥗 |
+| *family* | `avahal` | 👪 |
+| *teapot* | `edebul` | 🫖 |
+| *beer* | `ebehol` | 🍺 |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *cook* | `vugugal` |
+| *pour* | `vobohol` |
+| *cookie* | `ugugol` |
+| *wine* | `awahel` |
+| *sandwich* | `azal` |
+| *sit* | `vehahel` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *The family, including Alahen.*
+**1.** *The family, including Azawan, cooks.*
 
 ::: details Show answer
-`zavahal al zalahen.`
+`zavahal al zazawan vugugal.`
 
-z-family | including | z-Alahen
+z-family | including | z-Azawan | v-cook
 :::
 
-**2.** *Wine instead of beer.*
+**2.** *Alahen pours wine instead of beer.*
 
 ::: details Show answer
-`debehol ol dawahel.`
+`zalahen debehol ol dawahel vobohol.`
 
-d-beer | instead | d-wine
+z-Alahen | d-beer | instead | d-wine | v-pour
+
+**Also correct:** `zalahen vobohol debehol ol dawahel.`
 :::
 
-**3.** *The family except Alahen.*
+**3.** *Azawan cooks a salad for Ahaben.*
 
 ::: details Show answer
-`zavahal ul zalahen.`
+`zazawan dazavul vugugal el bahaben.`
 
-z-family | except | z-Alahen
+z-Azawan | d-salad | v-cook | [for | b-Ahaben]
 :::
 
-**4.** *Additionally, Azawan cooks.*
+**4.** *Additionally, Ahaben sits.*
 
 ::: details Show answer
-`al zazawan vugugal.`
+`al zahaben vehahel.`
 
-additionally | z-Azawan | v-cook
+additionally | z-Ahaben | v-sit
 :::
 
-**5.** *A plate and a salad.*
+**5.** *There is a cookie at a plate.*
 
 ::: details Show answer
-`zebedel zazavul zam.`
+`zugugol ol bebedel.`
 
-[z-plate | z-salad | z-and.open]
+z-cookie | [at | b-plate]
 :::
 
-**6.** *The plate is red, or rather, blue.*
+**6.** *The family, except Alahen, sits.*
 
 ::: details Show answer
-`zebedel geredal el gubuhel.`
+`zavahal ul zalahen vehahel.`
 
-[z-plate | g-red] | rather | g-blue
-:::
-
-**7.** *Alahen sits at a plate.*
-
-::: details Show answer
-`zalahen vehahel ol bebedel.`
-
-z-Alahen | v-sit | [at | b-plate]
-:::
-
-**8.** *Azawan cooks for a family.*
-
-::: details Show answer
-`zazawan vugugal el bavahal.`
-
-z-Azawan | v-cook | [for | b-family]
-:::
-
-**9.** *Beer instead of wine, and maybe something else too.*
-
-::: details Show answer
-`dawahel om debehol.`
-
-d-wine | instead.open | d-beer
+z-family | except | z-Alahen | v-sit
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zavahal am zahaben.`
+**1.** `zazawan dugugol vugugal el bavahal.`
 
 ::: details Show answer
+z-Azawan | d-cookie | v-cook | [for | b-family]
 
-z-family | including.open | z-Ahaben
-
-*The family, including Ahaben and maybe more.*
+*Azawan cooks a cookie for a family.*
 :::
 
-**2.** `dawahel ol debehol.`
+**2.** `ol zalahen debehol vobohol.`
 
 ::: details Show answer
+instead | z-Alahen | d-beer | v-pour
 
-d-wine | instead | d-beer
-
-*Beer instead of wine.*
+*Instead, Alahen pours beer.*
 :::
 
-**3.** `zavahal ul zahaben.`
+**3.** `zawahel al bedebul.`
 
 ::: details Show answer
+z-wine | [in | b-teapot]
 
-z-family | except | z-Ahaben
-
-*The family except Ahaben.*
+*There is wine in a teapot.*
 :::
 
-**4.** `al zalahen vugugal.`
+**4.** `zavahal am zalahen vehahel.`
 
 ::: details Show answer
+z-family | including.open | z-Alahen | v-sit
 
-additionally | z-Alahen | v-cook
-
-*Additionally, Alahen cooks.*
+*The family, including Alahen and maybe more, sits.*
 :::
 
-**5.** `el zalahen vobohol dawahel.`
+**5.** `zahaben dazal el dazavul vugugal.`
 
 ::: details Show answer
+z-Ahaben | d-sandwich | rather | d-salad | v-cook
 
-in.other.words | z-Alahen | v-pour | d-wine
-
-*In other words, Alahen pours wine.*
+*Ahaben cooks a sandwich, or rather a salad.*
 :::
 
-**6.** `ul zazawan vehahel.`
+**6.** `zalahen vehahel ul barl zazawan vugugal.`
 
 ::: details Show answer
+z-Alahen | v-sit | [from | b-that-clause] | z-Azawan | v-cook
 
-except | z-Azawan | v-sit
-
-*Except, Azawan sits.*
+*Alahen has been sitting since Azawan cooked.*
 :::
 
-**7.** `zazavul al bebedel.`
+#### Pick one {#beginner-pick-one}
+
+**1.** *Alahen pours wine from a teapot.* `zalahen dawahel vobohol ul bedebul.` or `zalahen dawahel vobohol al bedebul.`
 
 ::: details Show answer
-
-z-salad | [in | b-plate]
-
-*The salad in a plate.*
-:::
-
-**8.** `zalahen dawahel vobohol ul bedebul.`
-
-::: details Show answer
+`zalahen dawahel vobohol ul bedebul.`
 
 z-Alahen | d-wine | v-pour | [from | b-teapot]
 
-*Alahen pours wine from a teapot.*
+**`ul`** before `/b/` is the source, *from*; **`al`** would be *in* the teapot.
 :::
 
-**9.** `zavahal um zalahen.`
+**2.** *The family except Alahen, and maybe others, cooks.* `zavahal um zalahen vugugal.` or `zavahal ul zalahen vugugal.`
 
 ::: details Show answer
+`zavahal um zalahen vugugal.`
 
-z-family | except.open | z-Alahen
+z-family | except.open | z-Alahen | v-cook
 
-*The family except Alahen, and maybe others.*
+Open **-m** leaves room for more exceptions; **`ul`** says Alahen is the only one.
+:::
+
+#### Fix it {#beginner-fix-it}
+
+**1.** *Alahen cooks for the family.* <!-- lint: error -->`zalahen vugugal el davahal.`
+
+::: details Show answer
+`zalahen vugugal el bavahal.`
+
+z-Alahen | v-cook | [for | b-family]
+
+The noun after a *for* hook is an extra noun, so it takes `/b/`, not `/d/`.
 :::
 
 ## Intermediate {#intermediate}
