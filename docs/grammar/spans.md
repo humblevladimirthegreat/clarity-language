@@ -702,34 +702,34 @@ When one packaged chunk sits inside another (a quote that contains a parenthetic
 
 The same nest works as <code>d[ z&lt;…&gt; ]</code> or <code>d~[ d&lt;…&gt; ]</code>.
 
-### Translation practice {#advanced-translation-practice}
+### Practice {#advanced-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Setting:** a code review
 
-**Roots used here:**
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *flaw* | `abogam` | 🐛 from *bug* |
+
+**Review:**
 
 | English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
+| *page* | `abehel` |
 | *tell* | `vezebel` |
-| *bug* | `abogam` |
+| *write* | `varadal` |
+| *see* | `vahahal` |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
-**1.** *Ahaben said “bug.”* (complete close of one span)
-
-::: details Show answer
-`zahaben d[abogam] vezebel.`
-
-z-Ahaben | d-CITE[flaw] | v-tell
-:::
-
-**2.** *Alahen said “bug…”* (the cite trails off)
+**1.** *Alahen said “flaw…”* (the quote trails off)
 
 ::: details Show answer
 `zalahen d[abogam#] vezebel.`
@@ -737,41 +737,86 @@ z-Ahaben | d-CITE[flaw] | v-tell
 z-Alahen | d-CITE[flaw]# | v-tell
 :::
 
-**3.** *Azawan said “bug…” and that closes every open span.*
+**2.** *Azawan wrote “flaw” (quietly).* (the aside is inside the quote)
 
 ::: details Show answer
-`zazawan d[abogam#|] vezebel.`
+`zazawan d[ th(hagawal) abogam ] varadal.`
 
-z-Azawan | d-CITE[flaw]#| | v-tell
+z-Azawan | d-CITE[th-ASIDE[h-quiet] | flaw] | v-write
+:::
+
+**3.** *Ahaben said “flaw…”, closing every open span.*
+
+::: details Show answer
+`zahaben d[abogam#|] vezebel.`
+
+z-Ahaben | d-CITE[flaw]#| | v-tell
+:::
+
+**4.** *Azawan sees “flaw…” on the page.*
+
+::: details Show answer
+`zazawan d[abogam#] vahahal aol babehel.`
+
+z-Azawan | d-CITE[flaw]# | v-see | [on | b-page]
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
 
-**1.** `zazawan d[abogam#] vezebel.`
+**1.** `zahaben d[abogam] varadal.`
 
 ::: details Show answer
+z-Ahaben | d-CITE[flaw] | v-write
 
+*Ahaben wrote “flaw.”*
+:::
+
+**2.** `zalahen d[ th(hagawal) zazawan varadal ] vezebel.`
+
+::: details Show answer
+z-Alahen | d-CITE[th-ASIDE[h-quiet] | z-Azawan | v-write] | v-tell
+
+*Alahen said, “(quietly) Azawan writes.”*
+:::
+
+**3.** `zazawan d[zalahen varadal#] vezebel.`
+
+::: details Show answer
+z-Azawan | d-CITE[z-Alahen | v-write]# | v-tell
+
+*Azawan said “Alahen writes…”* (trailing off)
+:::
+
+**4.** `zalahen d[abogam#] vezebel. zahaben duxar varadal.`
+
+::: details Show answer
+z-Alahen | d-CITE[flaw]# | v-tell . z-Ahaben | d-←patient.same | v-write
+
+*Alahen said “flaw…”. Ahaben wrote that down.*
+:::
+
+#### Pick one {#advanced-pick-one}
+
+**1.** *Ahaben said “flaw…”* (the quote trails off) `zahaben d[abogam#] vezebel.` or `zahaben d[abogam] vezebel.`
+
+::: details Show answer
+`zahaben d[abogam#] vezebel.`
+
+z-Ahaben | d-CITE[flaw]# | v-tell
+
+**`#`** inside the closer keeps the wording but marks it cut off; a plain closer says it is complete.
+:::
+
+#### What changes {#advanced-what-changes}
+
+**1.** `zazawan d[abogam#] vezebel.` / `zazawan d[abogam#|] vezebel.`
+
+::: details Show answer
 z-Azawan | d-CITE[flaw]# | v-tell
 
-*Azawan said “bug…”*
-:::
+z-Azawan | d-CITE[flaw]#| | v-tell
 
-**2.** `zalahen d[abogam] vezebel.`
-
-::: details Show answer
-
-z-Alahen | d-CITE[flaw] | v-tell
-
-*Alahen said “bug.”*
-:::
-
-**3.** `zahaben d[abogam#|] vezebel.`
-
-::: details Show answer
-
-z-Ahaben | d-CITE[flaw]#| | v-tell
-
-*Ahaben said “bug…”*
+Both quotes trail off; with **`|`**, the closer also shuts every span still open.
 :::
 
 ## See also
