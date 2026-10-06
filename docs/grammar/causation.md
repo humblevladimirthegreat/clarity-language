@@ -376,175 +376,173 @@ When a pole follows **`thegem`**, the `/b/` belongs to the pole, as above (`theg
 |--------|---------|
 | **`thegem`** + `/b/` | *make* (causer in `/b/`) |
 
-### Translation practice {#intermediate-translation-practice}
-<a id="translation-practice-intermediate"></a>
+### Practice {#intermediate-practice}
 
-Short drills for Intermediate. Try each item before opening **Show answer**. A whole-sentence condition comes after **`barl`**. *Because* claims the condition is a fact. *Iff* is both ways. *Only because* stacks **`tholum thevem`**. Fault is **`thevel`**; a share is **`thever`**. **CAUSE** is **`thegem`**.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a dam control room
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *overwhelm* | `ohaham` | `ohahal` *ocean* |
-| *bell* | `ebehul` | |
-| *pressure* | `agabem` | `agabel` *clamp* |
-| *sit* | `vehahel` | `ehahel` *chair* |
-| *pour* | `vobohol` | |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *tell* | `vezebel` | `ezebel` *speech* |
-| *run* | `varahal` | |
-| *if* | `thoyem` | `oyel` *door* |
-| *only-if* | `tholum` | `olul` *paper-roll* |
-| *iff* | `thedam` | `edal` *east-west* |
-| *because* | `thevem` | `evel` *brick* |
-| *because.fault* | `thevel` | `evel` *brick* |
-| *because.share* | `thever` | `evel` *brick* |
-| *CAUSE* | `thegem` | `egel` *gear* |
-| *that-clause* | `barl` | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *pressure* | `agabem` | 🗜️ from *clamp* |
+| *CAUSE* | `thegem` | ⚙️ from *gear*: how the result comes about |
+| *iff* | `thedam` | ↔️ from *east-west*: each side only with the other |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *if* | `thoyem` |
+| *only if* | `tholum` |
+| *because* | `thevem` |
+| *although* | `hezom` |
+| *rain* | `erehel` |
+| *bell* | `ebehul` |
+| *departure* | `vedabal` |
+| *sit* | `vehahel` |
+| *pour* | `vobohol` |
+| *tell* | `vezebel` |
+| *run* | `varahal` |
+| *see* | `vahahal` |
+| *scream* | `vezugel` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan sits if Ahaben sees.*
+**1.** *Azawan runs if Alahen tells.*
 
 ::: details Show answer
-`zazawan vehahel thoyem barl zahaben vahahal.`
+`zazawan varahal thoyem barl zalahen vezebel.`
 
-z-Azawan | v-sit | [th-if | b-that-clause] | z-Ahaben | v-see
+z-Azawan | v-run | [th-if | b-that-clause] | z-Alahen | v-tell
 :::
 
-**2.** *Ahaben tells only if Azawan sits.*
+**2.** *There is pressure because of rain.*
 
 ::: details Show answer
-`zahaben vezebel tholum barl zazawan vehahel.`
+`zagabem gevem berehel.`
 
-z-Ahaben | v-tell | [th-only-if | b-that-clause] | z-Azawan | v-sit
+z-pressure | [g-because | b-rain]
 :::
 
-**3.** *Alahen pours if and only if Azawan sits.*
+**3.** *Ahaben sits only because there is rain.*
 
 ::: details Show answer
-`zalahen vobohol thedam barl zazawan vehahel.`
+`zahaben vehahel tholum thevem berehel.`
 
-z-Alahen | v-pour | [th-iff | b-that-clause] | z-Azawan | v-sit
+z-Ahaben | v-sit | th-only-if | [th-because | b-rain]
 :::
 
-**4.** *Ahaben tells because Alahen pours.*
+**4.** *Azawan pours unless Alahen sits.*
 
 ::: details Show answer
-`zahaben vezebel thevem barl zalahen vobohol.`
+`zazawan vobohol thoyem burl zalahen vehahel.`
 
-z-Ahaben | v-tell | [th-because | b-that-clause] | z-Alahen | v-pour
+z-Azawan | v-pour | [th-if | b-lest-clause] | z-Alahen | v-sit
 :::
 
-**5.** *There is a bell because of pressure.*
+**5.** *Alahen runs, and it's the fault of Azawan's pouring.*
 
 ::: details Show answer
-`zebehul gevem bagabem.`
+`zalahen varahal thevel barl zazawan vobohol.`
 
-z-bell | [g-because | b-pressure]
+z-Alahen | v-run | [th-because.fault | b-that-clause] | z-Azawan | v-pour
 :::
 
-**6.** *Azawan sits only because Ahaben sees.*
+**6.** *Azawan makes Ahaben tell.*
 
 ::: details Show answer
-`zazawan vehahel tholum thevem barl zahaben vahahal.`
+`zahaben vezebel thegem bazawan.`
 
-z-Azawan | v-sit | th-only-if | [th-because | b-that-clause] | z-Ahaben | v-see
-:::
-
-**7.** *Alahen runs if the surge hits (as mechanism).*
-
-::: details Show answer
-`zalahen varahal thegem thoyem bohaham.`
-
-z-Alahen | v-run | th-CAUSE | [th-if | b-overwhelm]
-:::
-
-**8.** *Ahaben runs, and it's Azawan's fault: Azawan was wrong to pour.*
-
-::: details Show answer
-`zahaben varahal thevel barl zazawan vobohol.`
-
-z-Ahaben | v-run | [th-because.fault | b-that-clause] | z-Azawan | v-pour
+z-Ahaben | v-tell | [th-CAUSE | b-Azawan]
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zahaben vehahel thoyem barl zalahen vahahal.`
+**1.** `zazawan vehahel thedam barl zalahen vobohol.`
 
 ::: details Show answer
+z-Azawan | v-sit | [th-iff | b-that-clause] | z-Alahen | v-pour
 
-z-Ahaben | v-sit | [th-if | b-that-clause] | z-Alahen | v-see
-
-*Ahaben sits if Alahen sees.*
+*Azawan sits if and only if Alahen pours.*
 :::
 
-**2.** `zazawan vobohol tholum barl zahaben vezebel.`
+**2.** `zalahen vobohol thegem thevem bagabem.`
 
 ::: details Show answer
+z-Alahen | v-pour | th-CAUSE | [th-because | b-pressure]
 
-z-Azawan | v-pour | [th-only-if | b-that-clause] | z-Ahaben | v-tell
-
-*Azawan pours only if Ahaben tells.*
+*Pressure is what makes Alahen pour.*
 :::
 
-**3.** `zazawan vezebel thedam barl zahaben vahahal.`
+**3.** `zahaben varahal hezom thoyem barl zazawan vezebel.`
 
 ::: details Show answer
+z-Ahaben | v-run | h-although | [th-if | b-that-clause] | z-Azawan | v-tell
 
-z-Azawan | v-tell | [th-iff | b-that-clause] | z-Ahaben | v-see
-
-*Azawan tells if and only if Ahaben sees.*
+*Ahaben runs even if Azawan tells.*
 :::
 
-**4.** `zalahen varahal thevem bohaham.`
+**4.** `zazawan vedabal thever berehel.`
 
 ::: details Show answer
+z-Azawan | v-departure | [th-because.share | b-rain]
 
-z-Alahen | v-run | [th-because | b-overwhelm]
-
-*Alahen runs because of the surge.*
+*The rain is part of why Azawan left.*
 :::
 
-**5.** `zohaham gevem bagabem.`
+**5.** `zazawan vehahel thevem barl zalahen debehul vahahal.`
 
 ::: details Show answer
+z-Azawan | v-sit | [th-because | b-that-clause] | z-Alahen | d-bell | v-see
 
-z-overwhelm | [g-because | b-pressure]
-
-*There is a surge because of pressure.*
+*Azawan sits because Alahen sees the bell.*
 :::
 
-**6.** `zahaben vezebel tholum thevem barl zalahen vobohol.`
+**6.** `zahaben vezugel thegem balahen.`
 
 ::: details Show answer
+z-Ahaben | v-scream | [th-CAUSE | b-Alahen]
 
-z-Ahaben | v-tell | th-only-if | [th-because | b-that-clause] | z-Alahen | v-pour
-
-*Ahaben tells only because Alahen pours.*
+*Alahen makes Ahaben scream.*
 :::
 
-**7.** `zalahen vobohol thegem thoyem bohaham.`
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Azawan sits because Alahen pours* (no one is to blame). `zazawan vehahel thevem barl zalahen vobohol.` or `zazawan vehahel thevel barl zalahen vobohol.`
 
 ::: details Show answer
+`zazawan vehahel thevem barl zalahen vobohol.`
 
-z-Alahen | v-pour | th-CAUSE | [th-if | b-overwhelm]
+z-Azawan | v-sit | [th-because | b-that-clause] | z-Alahen | v-pour
 
-*Alahen pours if the surge hits (as mechanism).*
+**-m** is the plain cause; **-l** would say the pouring broke a rule.
 :::
 
-**8.** `zazawan vehahel thever bagabem.`
+**2.** *Alahen runs unless Ahaben tells.* `zalahen varahal thoyem burl zahaben vezebel.` or `zalahen varahal thoyem barl zahaben vezebel.`
 
 ::: details Show answer
+`zalahen varahal thoyem burl zahaben vezebel.`
 
-z-Azawan | v-sit | [th-because.share | b-pressure]
+z-Alahen | v-run | [th-if | b-lest-clause] | z-Ahaben | v-tell
 
-*The pressure is part of why Azawan sits.*
+*Unless* is *if … not*: keep **`thoyem`** and use **`burl`**.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Azawan leaves because of Alahen's telling.* <!-- lint: error -->`zazawan vedabal thevem balahen.`
+
+::: details Show answer
+`zazawan vedabal thevem barl zalahen vezebel.`
+
+z-Azawan | v-departure | [th-because | b-that-clause] | z-Alahen | v-tell
+
+A because pole takes the act, not the person: say what Alahen did after **`barl`**.
 :::
 
 ## See also
