@@ -753,40 +753,44 @@ To ask what the talk is about, ask *which topic?*: the fill-ask blank `zar`, the
 
 **Compare with:** English *topic* covers several jobs, and Agazan keeps them apart. The discourse topic is `/x/`. A sentence frame is `hahehom` *as for*. The first content word is only a [highlight](clause.md#word-order-emphasis). `&` contrasts one phrase ([tone marks](speech-moves.md#tone-marks)). `zal` / `zem` / `zel` rank among others. Only `/x/` sets the topic.
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a rooftop garden
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Alahen* | `alahen` | | |
-| *Ahaben* | `ahaben` | | |
-| *pour* | `vobohol` | `obohol` *pour* | 🫗: water onto soil |
-| *harvest* | `vegevem` | `egevel` *grain* | 🌾: bringing the crop in |
-| *flower* | `avavul` | | |
-| *tomato* | `adedol` | | |
-| *seedling* | `uzel` | | |
-| *red* | `eredal` | | |
-| *see* | `vahahal` | `ahahal` *eye* | 👁️: seeing is what an eye does |
-| *like* | `humum` | `umul` *mirror* | 🪞: the image is of the model |
-| *as for* | `hahehom` | `ahehol` *hash* | #️⃣: a heading mark |
-| *scream* | `vezugel` | | |
-| *punch* | `vabahel` | | |
-| *fight* | `vavadal` | | |
-| *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
-| *listener* | `ehon` | `ehol` *headphones* | 🎧: the one receiving the sound |
-| *topic* | `ozan` | `ozal` *star* | ⭐: the star of the talk |
-| *by the way* | `xavazem` | `avazel` *fries* | 🍟: a side dish, not the main course |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *harvest* | `vegevem` | 🌾 from *grain*: bringing the crop in |
+| *red* | `eredal` | 🔴 |
+| *as for* | `hahehom` | #️⃣ from *hash*: a heading mark |
+| *by the way* | `xavazem` | 🍟 from *fries*: a side dish, not the main course |
+| *reciprocity* | `hedam` | ↔️ from *east-west*: each one to the others |
+| *topic* | `ozan` | ⭐ from *star*: the star of the talk |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *listener* | `ehon` |
+| *pour* | `vobohol` |
+| *tomato* | `adedol` |
+| *melon* | `emehol` |
+| *family* | `avahal` |
+| *seedling* | `uzel` |
+| *like* | `humum` |
+| *see* | `vahahal` |
+| *scream* | `vezugel` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Alahen pours. Azawan does so.*
+**1.** *Alahen pours. Azawan does too.*
 
 ::: details Show answer
 `zalahen vobohol. zazawan vobohor.`
@@ -794,63 +798,23 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Alahen | v-pour . z-Azawan | v-←pour
 :::
 
-**2.** *A flower is red. A tomato is such.*
+**2.** *A tomato is red. A melon is such.*
 
 ::: details Show answer
-`zavavul geredal. zadedol geredar.`
+`zadedol geredal. zemehol geredar.`
 
-z-flower | g-red . z-tomato | g-←red
+z-tomato | g-red . z-melon | g-←red
 :::
 
-**3.** *Alahen sees Azawan. Ahaben sees them.*
+**3.** *Azawan and Alahen see each other.*
 
 ::: details Show answer
-`zalahen dazawan vahahal. zahaben duxar vahahal.`
+`zazawan zalahen zal vahahal hedam.`
 
-z-Alahen | d-Azawan | v-see . z-Ahaben | d-←patient.same | v-see
+[z-Azawan | z-Alahen | z-and] | v-see | h-reciprocity
 :::
 
-**4.** *Azawan pours. Alahen harvests. Going back to Azawan, they see a seedling.*
-
-::: details Show answer
-`zazawan vobohol. zalahen vegevem. xazawar duzel vahahal.`
-
-z-Azawan | v-pour . z-Alahen | v-harvest . x-←Azawan | d-seedling | v-see
-:::
-
-**5.** *Alahen pours like Azawan. Ahaben harvests that way.*
-
-::: details Show answer
-`zalahen humum bazawan vobohol. zahaben humur vegevem.`
-
-z-Alahen | [h-like | b-Azawan] | v-pour . z-Ahaben | h-←like | v-harvest
-:::
-
-**6.** *As for Ahaben, Alahen punches.*
-
-::: details Show answer
-`hahehom bahaben zalahen vabahel.`
-
-[h-as-for | b-Ahaben] | z-Alahen | v-punch
-:::
-
-**7.** *We (you and I) harvest.*
-
-::: details Show answer
-`zahan vegevem.`
-
-z-interlocutors | v-harvest
-:::
-
-**8.** *Azawan and associates punch.*
-
-::: details Show answer
-`zazawanx vabahel.`
-
-z-Azawan-x | v-punch
-:::
-
-**9.** *Ahaben (A) pours. Alahen (E) harvests. A sees E.*
+**4.** *Ahaben (A) pours. Alahen (E) harvests. A sees E.*
 
 ::: details Show answer
 `zahaben zwal vobohol. zalahen zwel vegevem. zwar dwer vahahal.`
@@ -858,112 +822,104 @@ z-Azawan-x | v-punch
 [z-Ahaben | z-tag.A] | v-pour . [z-Alahen | z-tag.E] | v-harvest . z-←tag.A | d-←tag.E | v-see
 :::
 
-**10.** *Now, about Azawan: Azawan pours. Alahen harvests. Azawan sees a seedling.*
+**5.** *Now, about Azawan: Azawan harvests. Alahen sees Azawan.*
 
 ::: details Show answer
-`xazawan zozan vobohol. zalahen vegevem. zozan duzel vahahal.`
+`xazawan zozan vegevem. zalahen dozan vahahal.`
 
-x-Azawan | z-TOPIC | v-pour . z-Alahen | v-harvest . z-TOPIC | d-seedling | v-see
+x-Azawan | z-TOPIC | v-harvest . z-Alahen | d-TOPIC | v-see
 :::
 
-**11.** *Now, about a flower: Alahen sees it.*
+**6.** *As for the family, Alahen harvests.*
 
 ::: details Show answer
-`xavavul zalahen dozan vahahal.`
+`hahehom bavahal zalahen vegevem.`
 
-x-flower | z-Alahen | d-TOPIC | v-see
+[h-as-for | b-family] | z-Alahen | v-harvest
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zazawan vobohol. zalahen vobohor.`
+**1.** `zalahen humum bazawan vobohol. zahaben humur vegevem.`
 
 ::: details Show answer
+z-Alahen | [h-like | b-Azawan] | v-pour . z-Ahaben | h-←like | v-harvest
 
-z-Azawan | v-pour . z-Alahen | v-←pour
-
-*Azawan pours. Alahen does so.*
+*Alahen pours like Azawan. Ahaben harvests that way.*
 :::
 
-**2.** `zadedol geredal. zavavul geredar.`
+**2.** `zazawan vegevem. zalahen vazawar.`
 
 ::: details Show answer
+z-Azawan | v-harvest . z-Alahen | v-←Azawan
 
-z-tomato | g-red . z-flower | g-←red
-
-*A tomato is red. A flower is such.*
+*Azawan harvests. Alahen does the same with Azawan.*
 :::
 
-**3.** `zazawan dalahen vahahal. zahaben dalaher vahahal.`
+**3.** `zehonx vegevem.`
 
 ::: details Show answer
+z-listener-x | v-harvest
 
-z-Azawan | d-Alahen | v-see . z-Ahaben | d-←Alahen | v-see
-
-*Azawan sees Alahen. Ahaben sees him.*
+*You all harvest.*
 :::
 
-**4.** `zalahen vegevem. zazawan vobohol. xalaher vabahel.`
+**4.** `zazawan zwal zalahen zwel zam vegevem. zwaer vezugel.`
 
 ::: details Show answer
+[[z-Azawan | z-tag.A] | [z-Alahen | z-tag.E] | z-and.open] | v-harvest . z-←tag.A+E | v-scream
 
-z-Alahen | v-harvest . z-Azawan | v-pour . x-←Alahen | v-punch
-
-*Alahen harvests. Azawan pours. Going back to Alahen, he punches.*
+*Azawan (A) and Alahen (E) harvest. A and E scream.*
 :::
 
-**5.** `hahehom bazawan zahaben vegevem.`
+**5.** `xalahen zozan vobohol. xavazem zazawan duzel vahahal. xalaher zozan vegevem.`
 
 ::: details Show answer
+x-Alahen | z-TOPIC | v-pour . x-by-the-way | z-Azawan | d-seedling | v-see . x-←Alahen | z-TOPIC | v-harvest
 
-[h-as-for | b-Azawan] | z-Ahaben | v-harvest
-
-*As for Azawan, Ahaben harvests.*
+*Now, about Alahen: Alahen pours. By the way, Azawan sees a seedling. Back to Alahen: Alahen harvests.*
 :::
 
-**6.** `zahan vezugel.`
+**6.** `yol zar gahehom.`
 
 ::: details Show answer
+y-question | [z-wh | g-topic]
 
-z-interlocutors | v-scream
-
-*We (you and I) scream.*
+*Which topic?* / *What are we talking about?*
 :::
 
-**7.** `zehonx vezugel.`
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Azawan (A) pours. Alahen (E) harvests. E screams.* `zazawan zwal vobohol. zalahen zwel vegevem. zwer vezugel.` or `zazawan zwal vobohol. zalahen zwel vegevem. zwar vezugel.`
 
 ::: details Show answer
+`zazawan zwal vobohol. zalahen zwel vegevem. zwer vezugel.`
+
+[z-Azawan | z-tag.A] | v-pour . [z-Alahen | z-tag.E] | v-harvest . z-←tag.E | v-scream
+
+The tag vowel picks the referent: **`e`** is Alahen, whoever acted last.
+:::
+
+**2.** *You all scream.* `zehonx vezugel.` or `zehon vezugel.`
+
+::: details Show answer
+`zehonx vezugel.`
 
 z-listener-x | v-scream
 
-*You all scream.*
+**-x** on the listener names everyone this turn addresses; `zehon` is one listener.
 :::
 
-**8.** `zalahenx vavadal.`
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Now, about Azawan: Azawan sees Alahen.* <!-- lint: error -->`xazawan dalahen vahahal.`
 
 ::: details Show answer
+`xazawan zozan dalahen vahahal.`
 
-z-Alahen-x | v-fight
+x-Azawan | z-TOPIC | d-Alahen | v-see
 
-*Alahen and associates fight.*
-:::
-
-**9.** `zalahen zwal dazawan vabahel. zahaben dwar vahahal. zwar vezugel.`
-
-::: details Show answer
-
-[z-Alahen | z-tag.A] | d-Azawan | v-punch . z-Ahaben | d-←tag.A | v-see . z-←tag.A | v-scream
-
-*Alahen (A) punches Azawan. Ahaben sees A. A screams.*
-:::
-
-**10.** `xalahen zalahen vobohol. zahaben vegevem. xavazem zazawan vahahal. xalaher zozan vabahel.`
-
-::: details Show answer
-
-x-Alahen | z-Alahen | v-pour . z-Ahaben | v-harvest . x-by-the-way | z-Azawan | v-see . x-←Alahen | z-TOPIC | v-punch
-
-*Now, about Alahen: Alahen pours. Ahaben harvests. By the way, Azawan sees. Back to Alahen: Alahen punches.*
+A dropped subject is never the topic: write **`zozan`** when the topic is the one who sees.
 :::
 
 ## See also
