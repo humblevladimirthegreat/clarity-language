@@ -15,6 +15,7 @@ import { parseWithTables } from "../parse/parse-core.js";
 import { classifyTokenBranch } from "../parse/tokens.js";
 import { parseWord, WordParseError } from "../parse/word.js";
 import { traceFragment, traceTemplate } from "./template-trace.js";
+import { fixPromptRanges } from "./practice-items.js";
 import { forEachMarkdownCodeSpan, forEachMarkdownCodeToken, type MarkdownCodeSpan } from "../retie/tokens.js";
 import { isAgazanRootShape } from "../root-shape.js";
 
@@ -257,6 +258,9 @@ function collectResumeStems(core: string, known: ReadonlySet<string>, into: Set<
  * - **english**: no Agazan-shaped word at all (placeholders alone, like `ROOT` or `NUM`, count as English).
  * - **marked-fragment**: `<!-- lint: fragment -->` right before the span → parsed with context supplied
  *   around it. `<!-- lint: skip -->` is not allowed.
+ * - **marked-error**: `<!-- lint: error -->` right before the wrong form in a **Fix it** prompt
+ *   ([practice-items.ts](practice-items.ts)) → need not parse, and its constructions are not used.
+ *   Anywhere else the marker fails.
  * Anything else (Agazan and non-Agazan words mixed, no final mark) is **unclassified** and fails.
  * Fenced blocks need an info string: `agazan` (each line is checked like a span) or `text` (notation,
  * not Agazan: a line that reads as an Agazan phrase or sentence fails).
@@ -268,6 +272,7 @@ export type AgazanSpanClass =
   | "word"
   | "english"
   | "marked-fragment"
+  | "marked-error"
   | "text-fence";
 
 export type AgazanSpanIssueKind =
@@ -297,6 +302,7 @@ export function emptySpanStats(): AgazanSpanStats {
     word: 0,
     english: 0,
     "marked-fragment": 0,
+    "marked-error": 0,
     "text-fence": 0,
   };
 }
@@ -472,6 +478,7 @@ export function lintAgazanSpans(
   used?: ConstructionSink,
 ): AgazanSpanIssue[] {
   const issues: AgazanSpanIssue[] = [];
+  let fixPrompts: { start: number; end: number }[] | undefined;
 
   walkAgazanSpans(text, {
     text: (body, index) => lintSpanText(body, index, tables, stats, issues, used),
@@ -479,6 +486,18 @@ export function lintAgazanSpans(
       if (marker === "fragment") {
         stats["marked-fragment"] += 1;
         lintTraced(span.text, span.index, "fragment", () => traceFragment(span.text, tables), issues, used);
+      } else if (marker === "error") {
+        fixPrompts ??= fixPromptRanges(text);
+        if (fixPrompts.some((r) => span.index >= r.start && span.index < r.end)) {
+          stats["marked-error"] += 1;
+        } else {
+          issues.push({
+            text: span.text,
+            index: span.index,
+            kind: "bad-marker",
+            detail: "<!-- lint: error --> is only for the wrong form in a Fix it prompt of a ### Practice checkpoint",
+          });
+        }
       } else if (marker === "skip") {
         issues.push({
           text: span.text,

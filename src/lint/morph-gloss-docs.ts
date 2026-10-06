@@ -11,6 +11,7 @@ import { lineNumberAt } from "../retie/tokens.js";
 import type { AmbiguityConflict } from "../parse/types.js";
 import { SPEECH_MARK } from "./number-speech-docs.js";
 import { isPracticeBoundary, practiceRanges } from "./practice-sections.js";
+import { practiceItems } from "./practice-items.js";
 
 export type MorphPair = {
   agazan: string;
@@ -210,6 +211,8 @@ export function extractTranslationExercises(markdown: string): TranslationExerci
   const items: TranslationExercise[] = [];
   const lines = markdown.split(/\r?\n/);
   for (const range of practiceRanges(lines)) {
+    // Converted checkpoints carry decision items; read them by item type.
+    if (range.converted) continue;
     let i = range.start + 1;
     while (i < range.end) {
       const match = ITEM_START_RE.exec(lines[i]!);
@@ -233,7 +236,46 @@ export function extractTranslationExercises(markdown: string): TranslationExerci
       });
     }
   }
-  return items;
+  items.push(...convertedExercises(markdown));
+  return items.sort((a, b) => a.index - b.index);
+}
+
+/**
+ * Morph pairs of converted checkpoint items: translation items as before; **Pick one** and
+ * **Fix it** pair the answer form with the morph line under it; **What changes** pairs each
+ * prompt sentence with its own morph line. Prompt forms of Pick one and Fix it have no morph.
+ */
+function convertedExercises(markdown: string): TranslationExercise[] {
+  const lines = markdown.split(/\r?\n/);
+  const out: TranslationExercise[] = [];
+  for (const item of practiceItems(markdown).items) {
+    const firstLine = lineNumberAt(markdown, item.index) - 1;
+    const itemLines: string[] = [];
+    for (let i = firstLine; i < lines.length; i++) {
+      if (i > firstLine && (ITEM_START_RE.test(lines[i]!) || /^#{2,4} /.test(lines[i]!))) break;
+      itemLines.push(lines[i]!);
+    }
+    if (item.type === "en-ag" || item.type === "ag-en") {
+      const parsed = parseExerciseItem(itemLines);
+      if (parsed) out.push({ ...parsed, index: lineIndexToCharIndex(markdown, firstLine + parsed.agazanLineOffset) });
+      continue;
+    }
+    const texts = item.spoiler.filter((line) => line.kind === "text");
+    if (item.type === "changes") {
+      item.promptSpans.forEach((span, n) => {
+        const morph = texts[n] ? normalizeExerciseMorph(texts[n]!.text) : null;
+        out.push({ agazan: span.text, morph, loose: null, index: span.index });
+      });
+      continue;
+    }
+    const at = item.spoiler.findIndex((line) => line.kind === "agazan");
+    if (at < 0) continue;
+    const answer = item.spoiler[at]!;
+    const next = item.spoiler[at + 1];
+    const morph = next?.kind === "text" ? normalizeExerciseMorph(next.text) : null;
+    out.push({ agazan: answer.text, morph, loose: item.promptEnglish, index: answer.index });
+  }
+  return out;
 }
 
 function parseExerciseItem(

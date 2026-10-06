@@ -233,6 +233,25 @@ describe("lintAgazanSpans", () => {
     assert.ok(ids.includes("word.family.foreign"));
   });
 
+  it("lets a Fix it wrong form fail to parse, and uses none of its constructions", async () => {
+    const { houseTables, PRACTICE } = await import("./practice-fixtures.js");
+    const md = PRACTICE.replace("<!-- lint: error -->`zazawan dalahen vahahal.`", "<!-- lint: error -->`zalahen dazawan.`");
+    const fix = md.indexOf("`zalahen dazawan.`") + 1;
+    const stats = emptySpanStats();
+    const used: number[] = [];
+    assert.deepEqual(lintAgazanSpans(md, houseTables(), stats, (_id, index) => used.push(index)), []);
+    assert.equal(stats["marked-error"], 1);
+    assert.ok(!used.includes(fix));
+  });
+
+  it("rejects the error marker outside a Fix it prompt", async () => {
+    const { houseTables, PRACTICE } = await import("./practice-fixtures.js");
+    assert.equal(lintAgazanSpans("<!-- lint: error -->`zazawan`", tables)[0]?.kind, "bad-marker");
+    const md = PRACTICE.replace("**1.** `zalahen dahaben vahahal.`", "**1.** <!-- lint: error -->`zalahen dahaben vahahal.`");
+    assert.equal(lintAgazanSpans(md, houseTables())[0]?.kind, "bad-marker");
+    assert.equal(lintAgazanSpans(md.replace("### Practice", "### Translation practice"), houseTables())[0]?.kind, "bad-marker");
+  });
+
   it("counts every span in exactly one class", () => {
     const stats = emptySpanStats();
     lintAgazanSpans("`zazawan vazawal.` `zazawan` `fast` `A am B` <!-- lint: fragment -->`zul zazawan`", tables, stats);

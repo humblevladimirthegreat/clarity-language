@@ -61,6 +61,28 @@ describe("extractTranslationExercises", () => {
     assert.equal(items[0]!.morph, "z-Azawan | v-sit");
   });
 
+  it("pairs decision items by type in a converted checkpoint", async () => {
+    const { PRACTICE: CONVERTED } = await import("./practice-fixtures.js");
+    const items = extractTranslationExercises(CONVERTED);
+    const pairs = items.map((item) => [item.agazan, item.morph]);
+    // Pick one and Fix it: the answer form and its morph, never the prompt forms.
+    assert.deepEqual(pairs[6], ["zazawan dalahen vahahal.", "z-Azawan | d-Alahen | v-see"]);
+    assert.deepEqual(pairs[7], ["zalahen dazawan vahahal.", "z-Alahen | d-Azawan | v-see"]);
+    // What changes: each sentence with its own morph line.
+    assert.deepEqual(pairs.slice(8), [
+      ["zazawan vehahel.", "z-Azawan | v-sit"],
+      ["zalahen vehahel.", "z-Alahen | v-sit"],
+    ]);
+    assert.equal(items.length, 10);
+  });
+
+  it("compares converted decision items to the parser", async () => {
+    const { houseTables, PRACTICE: CONVERTED } = await import("./practice-fixtures.js");
+    assert.deepEqual(lintMorphGlossMarkdown(CONVERTED, houseTables()).findings, []);
+    const wrong = CONVERTED.replace("z-Azawan | v-sit\n\nz-Alahen | v-sit", "z-Azawan | v-sit\n\nz-Alahen | v-walk");
+    assert.equal(lintMorphGlossMarkdown(wrong, houseTables()).findings[0]?.kind, "mismatch");
+  });
+
   it("records missing morph when a numbered item has no morph gloss", () => {
     const md = `### Translation practice
 

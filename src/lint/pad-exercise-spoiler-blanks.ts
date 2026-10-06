@@ -2,7 +2,7 @@
  * Ensure blank lines in translation spoilers so morph gloss and answers render separately.
  */
 
-import { isPracticeBoundary, PRACTICE_H3_RE } from "./practice-sections.js";
+import { practiceRanges } from "./practice-sections.js";
 
 function isAgazanLine(trimmed: string): boolean {
   return /^`[^`]+`$/.test(trimmed);
@@ -31,16 +31,15 @@ function needsBlankBetween(current: string, next: string): boolean {
 export function padExerciseSpoilerBlanks(content: string): string {
   const lines = content.split(/\r?\n/);
   const out: string[] = [];
-  let inPractice = false;
+  const ranges = practiceRanges(lines);
   let inDetails = false;
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i]!;
-    if (PRACTICE_H3_RE.test(line)) inPractice = true;
-    else if (inPractice && isPracticeBoundary(line)) inPractice = false;
+    const range = ranges.find((r) => i > r.start && i < r.end);
 
     const trimmed = line.trim();
-    if (inPractice && /^::: details\b/.test(trimmed)) {
+    if (range && /^::: details\b/.test(trimmed)) {
       inDetails = true;
       out.push(line);
       continue;
@@ -53,11 +52,12 @@ export function padExerciseSpoilerBlanks(content: string): string {
 
     out.push(line);
 
-    if (inPractice && inDetails && i + 1 < lines.length) {
-      const nextTrimmed = lines[i + 1]!.trim();
-      if (needsBlankBetween(line, lines[i + 1]!) && nextTrimmed !== "") {
-        out.push("");
-      }
+    if (range && inDetails && i + 1 < lines.length) {
+      const next = lines[i + 1]!;
+      const nextTrimmed = next.trim();
+      if (nextTrimmed === "" || /^:::$/.test(nextTrimmed)) continue;
+      // Converted checkpoints: every spoiler line (answer, morph, why, Also correct) is its own paragraph.
+      if (range.converted ? trimmed !== "" : needsBlankBetween(line, next)) out.push("");
     }
   }
 

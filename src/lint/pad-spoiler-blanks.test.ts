@@ -30,6 +30,33 @@ z-Azawan | v-sit
     assert.match(out, /`zazawan vehahel\.`\n\nz-Azawan \| v-sit/);
   });
 
+  it("gives every spoiler line its own paragraph in a converted checkpoint", () => {
+    const md = `### Practice
+
+#### Pick one
+
+**1.** *Azawan sees Alahen.* \`zazawan dalahen vahahal.\` or \`zalahen dazawan vahahal.\`
+
+::: details Show answer
+\`zazawan dalahen vahahal.\`
+z-Azawan | d-Alahen | v-see
+The one who sees takes **z-**.
+:::
+`;
+    assert.match(padExerciseSpoilerBlanks(md), /vahahal\.`\n\nz-Azawan \| d-Alahen \| v-see\n\nThe one who sees takes \*\*z-\*\*\.\n:::/);
+  });
+
+  it("leaves legacy spoiler prose lines joined", () => {
+    const md = `### Translation practice
+
+::: details Show answer
+*Azawan sits,*
+*and waits.*
+:::
+`;
+    assert.equal(padExerciseSpoilerBlanks(md), md);
+  });
+
   it("inserts blank between Agazan and morph in details", () => {
     const md = `### Translation practice
 

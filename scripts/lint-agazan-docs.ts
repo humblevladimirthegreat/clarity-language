@@ -8,6 +8,8 @@
  * parser output is trivially redundant with that loose line.
  * Translation **Roots used here** English is checked against the lexicon; each
  * bank lists every content root its drills use, and every row is used.
+ * Converted checkpoints (`### Practice`) follow the template, and their decision items and
+ * **Also correct:** variants pass the item rules (src/lint/practice-item-rules.ts).
  * On the number pages, shorthand number examples need a
  * pronunciation row that matches the spoken form computed from the shorthand.
  * Mismatches, leftover ambiguity, and missing morph glosses fail the run.
@@ -24,6 +26,7 @@ import {
   formatMorphGlossFinding,
   lintMorphGlossMarkdown,
 } from "../src/lint/morph-gloss-docs.js";
+import { lintPracticeItems } from "../src/lint/practice-item-rules.js";
 import {
   formatWordBankFinding,
   formatWordBankUsageFinding,
@@ -248,6 +251,7 @@ function main(): void {
   let morphWithLoose = 0;
   let morphRedundantOmitted = 0;
   let bankCount = 0;
+  let practiceCount = 0;
   let speechCount = 0;
   let spanCount = 0;
   let duplicateIdCount = 0;
@@ -305,6 +309,11 @@ function main(): void {
     for (const finding of morphResult.findings) {
       morphCount += 1;
       console.log(formatMorphGlossFinding(rel, finding));
+    }
+
+    for (const finding of lintPracticeItems(original, tables)) {
+      practiceCount += 1;
+      console.error(`${rel}:${lineNumberAt(original, finding.index)}  practice-item  (${finding.detail})`);
     }
 
     const bankFindings = lintWordBankMarkdown(source, tables);
@@ -375,6 +384,11 @@ function main(): void {
   if (bankCount > 0) {
     console.log(`\n${bankCount} translation word-bank issue(s).`);
   }
+  if (practiceCount > 0) {
+    console.error(
+      `\n${practiceCount} checkpoint item issue(s). Follow the template and decision-item rules (docs/meta/translation-exercises.md#template, #item-types).`,
+    );
+  }
 
   if (speechCount > 0) {
     console.log(`\n${speechCount} number pronunciation issue(s).`);
@@ -400,6 +414,7 @@ function main(): void {
     morphCount +
     terminologyCount +
     bankCount +
+    practiceCount +
     speechCount +
     coverageCount +
     orderCount +
@@ -412,6 +427,7 @@ function main(): void {
   console.log(
     `OK: code spans — ${spanStats.sentence} sentence(s) and ${spanStats.phrase} phrase(s) parsed; ` +
       `${spanStats.template} template(s) and ${spanStats["marked-fragment"]} fragment(s) traced; ` +
+      `${spanStats["marked-error"]} Fix it wrong form(s); ` +
       `${spanStats.word} single word(s), ${spanStats.english} English, ${spanStats["text-fence"]} text fence(s); 0 unclassified.`,
   );
   console.log(
@@ -419,6 +435,7 @@ function main(): void {
   );
   console.log("OK: every heading and <a id> on a grammar page is unique.");
   console.log("OK: translation word-bank English matches the lexicon.");
+  console.log("OK: checkpoint items follow the template; decision items and Also correct variants check out.");
   console.log("OK: number pronunciation rows match their shorthand.");
   if (paths.length === 0) {
     console.log(`OK: ${STATIC_CONSTRUCTIONS.size} constructions, all exercised by their anchor page.`);

@@ -69,6 +69,7 @@ Three item types aimed straight at the stage's decision. Each sits under its own
 - Both **Pick one** forms are legal and parse. The wrong one is wrong for *this* English, not ill-formed.
 - The **Fix it** correction parses. The error is a real learner error (English word order, a missing role letter, the wrong ending), not a random spelling. When the error is a spelling the parser rejects, [unassigned-reserved.md](unassigned-reserved.md) must not list a reading for it.
 - **What changes** uses only taught morphs on both sides, and both sentences parse.
+- `lint:agazan` checks the item shapes in the [template](#template) and these rules: both **Pick one** forms parse, read differently, and use the same content roots; the answer is one of them. The **Fix it** wrong form carries `<!-- lint: error -->` and may fail to parse, but when it parses it must read differently from the correction. The two **What changes** sentences differ in exactly one word. Each **Also correct:** variant must have the same morph reading as the main answer: clause order, an explicit or omitted **`yal`**, and a resume or pointer in place of its antecedent do not count as differences. It also checks item counts ([drill-generation.md](drill-generation.md#execute)) and H4 order. Whether a form is a real learner error, or the right decision, stays with the author.
 - Use whichever types fit the stage; a checkpoint need not have all three.
 
 ## Core vocabulary
@@ -177,7 +178,7 @@ One line on why.
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *…* `…`
+**1.** *…* <!-- lint: error -->`…`
 
 ::: details Show answer
 `…`
