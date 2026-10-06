@@ -107,7 +107,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💨,dash,adehu,haste,dash of wind moves fast; haste is moving quickly,,rush; pace,clause.md#beginner-practice
 🕳️,hole,ohaho,void,a hole is an empty space with nothing in it,,gap,
 💬,speech,ezebe,discourse,speech is audible; discourse is the unobservable social practice,v:tell,say; talk; word; speak; language; discuss; discussion; description; communicate; communication; report; declare,dependents.md#beginner-practice
-👁️‍🗨️,attest,odo,testimony,eye-in-speech attests; testimony is the claim that seeing warrants saying,,swear; demonstrate,questions.md#intermediate-translation-practice
+👁️‍🗨️,attest,odo,testimony,eye-in-speech attests; testimony is the claim that seeing warrants saying,,swear; demonstrate,questions.md#intermediate-practice
 🗯️,rant,aradu,outrage,rant shows outrage,,complain,
 💭,thought,ovu,commentary,thought balloon floats a take over the scene; commentary is mind storying instead of bare contact,,idea; concept; notion; remark; theoretical; comment,
 💤,sleep,ezeba,restoration,sleep means rest; restoration is the unobservable replenishing,,,roles.md#beginner-practice
@@ -260,7 +260,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🐒,monkey,amage,mimicry,monkey see monkey do,,copy,
 🦍,gorilla,egewa,dominance,800-pound gorilla dominates,,dominate,
 🦧,orangutan,orada,,,,,
-🐕,dog,odoga,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,questions.md#intermediate-translation-practice
+🐕,dog,odoga,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,questions.md#intermediate-practice
 🐺,wolf,uwuva,predation,wolf at the door,,,
 🦊,fox,avagu,cunning,sly as a fox,,,
 🦝,raccoon,aragu,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,,roles.md#intermediate-translation-practice
@@ -796,7 +796,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🪇,maracas,emaga,,,,,
 🪈,flute,uvudu,lightness,a flute's thin airy notes feel weightless,,,
 🪉,harp,ahavu,harmony,harp strings make harmony,,,
-📱,phone,ovavo,connection,phone keeps connection,,telephone,questions.md#intermediate-translation-practice
+📱,phone,ovavo,connection,phone keeps connection,,telephone,questions.md#intermediate-practice
 📟,pager,obehe,urgency,pager signals urgency,,,
 📠,fax,avazu,transmission,a fax sends a page down the phone line,,,
 🔋,battery,abado,energy,battery stores energy,,,

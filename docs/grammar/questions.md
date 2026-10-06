@@ -750,101 +750,57 @@ The listener may still reply, but no reply is owed. Only **`yal`** or **`yam`** 
 
 **Compare with:** a [tag](#tags) after the sentence (`…. yol yael.`) asks the listener to confirm. A rhetorical question asks for nothing.
 
-### Translation practice {#intermediate-translation-practice}
-<a id="translation-practice-intermediate"></a>
+### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a detective interview
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *key* | `egehul` | |
-| *phone* | `ovavol` | |
-| *sit* | `vehahel` | `ehahel` *chair* |
-| *tell* | `vezebel` | `ezebel` *speech* |
-| *attest* | `vodol` | |
-| *lie* | `valahal` | |
-| *sleep* | `ezebal` | |
-| *listener* | `ehon` | `ehol` *headphones* |
-| *dog* | `odogal` | |
-| *walk* | `vowogal` | |
-| *knowledge* | `vubugam` | `ubugal` *book* |
-| *think* | `vevegal` | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *phone* | `ovavol` | 📱 |
+| *attest* | `vodol` | 👁️‍🗨️ |
+| *dog* | `odogal` | 🐕 |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *listener* | `ehon` |
+| *key* | `egehul` |
+| *tell* | `vezebel` |
+| *sit* | `vehahel` |
+| *find* | `vamagal` |
+| *think* | `vevegal` |
+| *knowledge* | `vubugam` |
+| *lie* | `valahal` |
+| *walk* | `vowogal` |
+| *sleep* | `vezebal` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
 **1.** *Didn’t Azawan tell?* Then confirm: *true, Azawan didn’t.*
 
 ::: details Show answer
-`yol zazawan vezebel vul.`
+`yol zazawan vezebel vul. yael.`
 
-y-question | z-Azawan | [v-tell | v-not]
-`yael.`
+y-question | z-Azawan | [v-tell | v-not] . y-yes
 :::
 
-**2.** *When does Ahaben sit?*
+**2.** *When does Ahaben sit?* Then: *I'll pass for now.*
 
 ::: details Show answer
-`yol zahaben vehahel har.`
+`yol zahaben vehahel har. yoer.`
 
-y-question | z-Ahaben | v-sit | h-when
+y-question | z-Ahaben | v-sit | h-when . y-decline-for-now
 :::
 
-**3.** *Which key?* (one unknown)
-
-::: details Show answer
-`yol zegehul zar.`
-
-y-question | [z-key | z-wh]
-:::
-
-**4.** *Just Alahen?* (confirm the singleton)
-
-::: details Show answer
-`yol zalahen zal.`
-
-y-question | [z-Alahen | z-and]
-:::
-
-**5.** *How about Ahaben?* (offer)
-
-::: details Show answer
-`yol zahaben zam.`
-
-y-question | [z-Ahaben | z-and.open]
-:::
-
-**6.** *Not that.* (reject this option, not a truth-flip)
-
-::: details Show answer
-`yuol.`
-
-y-refuse-option
-:::
-
-**7.** *When does Alahen sleep?*
-
-::: details Show answer
-`yol zalahen vezebal har.`
-
-y-question | z-Alahen | v-sleep | h-when
-:::
-
-**8.** *Hell no!*
-
-::: details Show answer
-`!!yuol.`
-
-!!y-refuse-option
-:::
-
-**9.** *What is the dog like?*
+**3.** *What is the dog like?*
 
 ::: details Show answer
 `yol zodogal gar.`
@@ -852,119 +808,112 @@ y-question | z-Alahen | v-sleep | h-when
 y-question | z-dog | g-wh
 :::
 
-**10.** *Whose dog walks?*
+**4.** *Whose key does Alahen find?*
 
 ::: details Show answer
-`yol zodogal em bar vowogal.`
+`yol zalahen degehul em bar vamagal.`
 
-y-question | [z-dog | [used-by | b-wh]] | v-walk
+y-question | z-Alahen | [d-key | [used-by | b-wh]] | v-find
 :::
 
-**11.** *Do you know who walks?*
+**5.** *Who do you think lies?*
+
+::: details Show answer
+`yol zehon vevegal darl zar valahal.`
+
+y-question | z-listener | v-think | d-that-clause | z-wh | v-lie
+:::
+
+**6.** *Please attest, okay?*
+
+::: details Show answer
+`yem zehon vodol. yol yaol.`
+
+y-request | z-listener | v-attest . y-question | y-sure
+:::
+
+#### Agazan → English {#intermediate-agazan-to-english}
+
+**1.** `yol zazawan vowogal thevem bar.`
+
+::: details Show answer
+y-question | z-Azawan | v-walk | th-because | b-wh
+
+*Why does Azawan walk?*
+:::
+
+**2.** `yol zahaben vezebel humum bar.`
+
+::: details Show answer
+y-question | z-Ahaben | v-tell | h-like | b-wh
+
+*How does Ahaben tell it?* (like what?)
+:::
+
+**3.** `yol dovavol dor.`
+
+::: details Show answer
+y-question | [d-phone | d-which]
+
+*Which phone?*
+:::
+
+**4.** `yol zalahen zal.`
+
+::: details Show answer
+y-question | [z-Alahen | z-and]
+
+*Just Alahen?*
+:::
+
+**5.** `yal yol zar vodol.`
+
+::: details Show answer
+y-statement | y-question | z-wh | v-attest
+
+*Who attests? (Nobody.)*
+:::
+
+**6.** `yol zodogal vezebal ol bar.`
+
+::: details Show answer
+y-question | z-dog | v-sleep | [at | b-wh]
+
+*Where does the dog sleep?*
+:::
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Didn’t Alahen lie?* Answer: *False, Alahen did lie.* `yuel.` or `yael.`
+
+::: details Show answer
+`yuel.`
+
+y-no
+
+The answer says whether the denial matches: **`yuel`** says it does not, so Alahen lied.
+:::
+
+**2.** *Did you stop lying?* (you never lied) `yual.` or `yuel.`
+
+::: details Show answer
+`yual.`
+
+y-reject-frame
+
+**`yual`** rejects the question's premise; **`yuel`** would accept it and say you still lie.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Do you know who walks?* <!-- lint: error -->`yol zehon vubugam darl zar vowogal.`
 
 ::: details Show answer
 `yol zehon vubugam dorl zar vowogal.`
 
 y-question | z-listener | v-knowledge | d-whether-clause | z-wh | v-walk
-:::
 
-**12.** *Who do you think walks?*
-
-::: details Show answer
-`yol zehon vevegal darl zar vowogal.`
-
-y-question | z-listener | v-think | d-that-clause | z-wh | v-walk
-:::
-
-**13.** *Please tell Ahaben, okay?*
-
-::: details Show answer
-`yem bahaben vezebel. yol yaol.`
-
-y-request | b-Ahaben | v-tell . y-question | y-sure
-:::
-
-#### Agazan → English {#intermediate-agazan-to-english}
-
-**1.** `yael vodol vul.`
-
-::: details Show answer
-
-y-yes | [v-attest | v-not]
-
-*True: didn’t attest.*
-:::
-
-**2.** `yol hur.`
-
-::: details Show answer
-
-y-question | h-some-other-time
-
-*When else?*
-:::
-
-**3.** `yol var.`
-
-::: details Show answer
-
-y-question | v-wh
-
-*What did they do?*
-:::
-
-**4.** `yol dovavol dor.`
-
-::: details Show answer
-
-y-question | [d-phone | d-which]
-
-*Any phone?*
-:::
-
-**5.** `yol zazawan zul.`
-
-::: details Show answer
-
-y-question | [z-Azawan | z-not]
-
-*Not Azawan?*
-:::
-
-**6.** `yuom.`
-
-::: details Show answer
-
-y-refuse-option-soft
-
-*Not that.* (soft reject of this option)
-:::
-
-**7.** Reply to `yol zalahen valahal vul.` (*Didn’t Alahen lie?*): `yuel valahal.`
-
-::: details Show answer
-
-y-question | z-Alahen | [v-lie | v-not] . y-no | v-lie
-
-*Didn’t Alahen lie? False: (Alahen) did lie.*
-:::
-
-**8.** `yol zar vezebel bahaben har.`
-
-::: details Show answer
-
-y-question | z-wh | v-tell | b-Ahaben | h-when
-
-*Who tells Ahaben when?*
-:::
-
-**9.** `zalahen valahal. yol yuel.`
-
-::: details Show answer
-
-z-Alahen | v-lie . y-question | y-no
-
-*Alahen lied, or am I wrong?*
+Under **`darl`** the blank belongs to the outer question (*who do you know walks?*); **`dorl`** keeps it in the inner one.
 :::
 
 ## See also
