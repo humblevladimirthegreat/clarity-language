@@ -456,182 +456,170 @@ English *frankly* and *to be clear* say in words how you are speaking. A tone ma
 
 A number word in `/y/` is a call-out (*Three more!*, a score). It can sit with the other opening `/y/` words, before the act word, or stand alone as its own turn. How each kind of number reads here: [numbers](numbers.md#number-as-interjection-by-marker).
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a music rehearsal
 
-**Roots used here:**
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *trumpet* | `adawol` | 🎺 |
+| *clarity* | `thagazam` | 👓 from *glasses*: seeing it plainly |
+| *revelation* | `thaveham` | 🔦 from *flashlight*: showing what was hidden |
+
+**Review:**
 
 | English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
-| *trumpet* | `adawol` |
-| *sit* | `vehahel` |
-| *stand* | `vazadol` |
+| *interlocutors* | `ahan` |
+| *sing* | `vezehel` |
+| *stop* | `vazadal` |
+| *quiet* | `agawal` |
+| *run* | `varahal` |
+| *page* | `abehel` |
+| *write* | `varadal` |
 | *see* | `vahahal` |
-| *tell* | `vezebel` |
-| *sneak* | `vezevul` |
+| *find* | `vamagal` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *For what it's worth, Azawan sits.*
+**1.** *For what it's worth, Ahaben sings.*
 
 ::: details Show answer
-`yam zazawan vehahel.`
+`yam zahaben vezehel.`
 
-y-soft-statement | z-Azawan | v-sit
+y-soft-statement | z-Ahaben | v-sing
 :::
 
-**2.** *Does Ahaben see a trumpet, perhaps?*
+**2.** *Let's sing.*
 
 ::: details Show answer
-`yom zahaben dadawol vahahal.`
+`yem zahan vezehel.`
 
-y-soft-question | z-Ahaben | d-trumpet | v-see
+y-request | z-interlocutors | v-sing
 :::
 
-**3.** *Please stand.*
+**3.** *Hold off on stopping for now.*
 
 ::: details Show answer
-`yem vazadol.`
+`yur vazadal.`
 
-y-request | v-stand
+y-hold-off | v-stop
 :::
 
-**4.** *Please don’t sneak.*
+**4.** *Don't run. I mean it.*
 
 ::: details Show answer
-`yum vezevul.`
+`yul yul varahal.`
 
-y-soft-prohibition | v-sneak
+y-prohibition | y-prohibition | v-run
 :::
 
-**5.** *For what it's worth, Alahen sees a trumpet.*
+**5.** *Azawan sees a trumpet!* (strong feeling about the whole sentence)
 
 ::: details Show answer
-`yam zalahen dadawol vahahal.`
+`! zazawan dadawol vahahal.`
 
-y-soft-statement | z-Alahen | d-trumpet | v-see
+! | z-Azawan | d-trumpet | v-see
 :::
 
-**6.** *Please tell Ahaben.*
+**6.** *To be clear, Alahen sings quietly.*
 
 ::: details Show answer
-`yem bahaben vezebel.`
+`thagazam zalahen hagawal vezehel.`
 
-y-request | b-Ahaben | v-tell
-:::
-
-**7.** *Azawan sees a trumpet (a trumpet, not something else).*
-
-::: details Show answer
-`zazawan vahahal &dadawol.`
-
-z-Azawan | v-see | &d-trumpet
-:::
-
-**8.** *Ahaben sneaks?!*
-
-::: details Show answer
-`?! zahaben vezevul.`
-
-?! | z-Ahaben | v-sneak
-:::
-
-**9.** *Hold off on sneaking for now.*
-
-::: details Show answer
-`yur vezevul.`
-
-y-hold-off | v-sneak
+th-clarity | z-Alahen | h-quiet | v-sing
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `yam zazawan vehahel.`
+**1.** `yom zalahen dadawol vamagal.`
 
 ::: details Show answer
+y-soft-question | z-Alahen | d-trumpet | v-find
 
-y-soft-statement | z-Azawan | v-sit
-
-*For what it's worth, Azawan sits.*
+*Does Alahen find the trumpet, I wonder?*
 :::
 
-**2.** `yom zahaben dadawol vahahal.`
+**2.** `yer zazawan vezehel.`
 
 ::: details Show answer
+y-command-for-now | z-Azawan | v-sing
 
-y-soft-question | z-Ahaben | d-trumpet | v-see
-
-*Does Ahaben see a trumpet, perhaps?*
+*For now, Azawan is to sing.*
 :::
 
-**3.** `yem vazadol.`
+**3.** `yum zahan vazadal.`
 
 ::: details Show answer
+y-soft-prohibition | z-interlocutors | v-stop
 
-y-request | v-stand
-
-*Please stand.*
+*Let's not stop.*
 :::
 
-**4.** `yum vezevul.`
+**4.** `thaveham zahaben dabehel varadal.`
 
 ::: details Show answer
+th-revelation | z-Ahaben | d-page | v-write
 
-y-soft-prohibition | v-sneak
-
-*Please don’t sneak.*
+*Honestly, Ahaben writes a page.*
 :::
 
-**5.** `yam zalahen dadawol vahahal.`
+**5.** `zalahen vahahal &dadawol.`
 
 ::: details Show answer
+z-Alahen | v-see | &d-trumpet
 
-y-soft-statement | z-Alahen | d-trumpet | v-see
-
-*For what it's worth, Alahen sees a trumpet.*
+*Alahen sees a trumpet.* (a trumpet, not something else)
 :::
 
-**6.** `yem bahaben vezebel.`
+**6.** `yar zazawan hagawal vezehel.`
 
 ::: details Show answer
+y-provisional-statement | z-Azawan | h-quiet | v-sing
 
-y-request | b-Ahaben | v-tell
-
-*Please tell Ahaben.*
+*As things stand, Azawan sings quietly.*
 :::
 
-**7.** `% zalahen vezevul.`
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Please sing.* `yem vezehel.` or `yel vezehel.`
 
 ::: details Show answer
+`yem vezehel.`
 
-% | z-Alahen | v-sneak
+y-request | v-sing
 
-*Alahen sneaks.* (joking)
+Soft **-m** asks; firm **`yel`** commands.
 :::
 
-**8.** `yem !vazadol.`
+**2.** *Hold off on singing for now.* `yur vezehel.` or `yul vezehel.`
 
 ::: details Show answer
+`yur vezehel.`
 
-y-request | !v-stand
+y-hold-off | v-sing
 
-*Please, stand!*
+**-r** holds the *don't* only for now; **`yul`** forbids outright.
 :::
 
-**9.** `yar zahaben vazadol.`
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Don't stop. I mean it.* <!-- lint: error -->`yul vazadal yul.`
 
 ::: details Show answer
+`yul yul vazadal.`
 
-y-provisional-statement | z-Ahaben | v-stand
+y-prohibition | y-prohibition | v-stop
 
-*As things stand, Ahaben stands.*
+Repeat the act word among the opening `/y/` words; a **`yul`** after the body starts a new turn.
 :::
 
 ## See also
