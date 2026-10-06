@@ -534,7 +534,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🏠,house,ahaza,home,a house is walls and roof; home is where you belong,,domestic; accommodation; chamber,relations.md#intermediate-translation-practice
 🏢,office,oveza,corporate,tall offices for business; corporate is organized commerce,,facility; corporation; agency,
 🏤,post-office,oveze,conveyance,post office sends mail; conveyance is the unobservable transfer-as-kind,,delivery; transportation; transfer; transport,
-🏥,hospital,ahazo,,,,,word-endings.md#intermediate-translation-practice
+🏥,hospital,ahazo,,,,,word-endings.md#intermediate-practice
 🏦,bank,abagu,security,bank keeps money safe; security is kept safe,,deposit,
 🏨,hotel,ohode,,,,,
 🏩,motel,omode,privacy,discreet lodging,,,
@@ -574,7 +574,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🚆,train,edeha,momentum,train stays on its track; momentum keeps moving forward,,rail,clause.md#intermediate-translation-practice
 🚉,station,ezede,hub,station connects many routes; hub is where paths meet,,platform,relations.md#intermediate-translation-practice
 🚌,bus,abazu,commute,bus carries many riders daily; commute is the daily journey,,,
-🚑,ambulance,amaba,emergency,ambulance rushes to crisis; emergency is urgent crisis,,,word-endings.md#intermediate-translation-practice
+🚑,ambulance,amaba,emergency,ambulance rushes to crisis; emergency is urgent crisis,,,word-endings.md#intermediate-practice
 🚒,fire-truck,avava,newton,a firetruck pushes; newton is the SI force unit,,,
 🚓,police-car,agahe,enforcement,the police car enforces rules; enforcement is making rules stick,,,
 🚕,taxi,adage,hire,taxi is hired for a ride; hire is paying for service,,rent; recruit; engage,
@@ -621,7 +621,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🕰️,clock,agaga,passage,a clock marks hours passing; passage is time going by,,transition; pass; era,dependents.md#intermediate-translation-practice
 🕐,time,adaha,duration,clock face marks duration,,session,
 🌙,moon,umuha,month,the moon runs one cycle a month; month is the lunar-cycle unit,,phase,
-🌡️,thermometer,evede,temperature,thermometer reads how hot or cold; temperature is the heat continuum,,,word-endings.md#intermediate-translation-practice
+🌡️,thermometer,evede,temperature,thermometer reads how hot or cold; temperature is the heat continuum,,,word-endings.md#intermediate-practice
 ☀️,sun,azahe,joule,sun radiates energy; joule is the SI energy unit,,,causation.md#beginner-practice
 🪐,saturn,azode,grandeur,ringed planet looms vast in space; grandeur is impressive scale,,grand; planet; impressive,
 ⭐,star,oza,fame,a star is seen by everyone; fame is being widely known,,reputation,
@@ -911,7 +911,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔬,microscope,amagu,mole,microscope counts tiny amounts of substance; mole is the SI amount-of-substance unit,,,
 🔭,telescope,edazo,forecast,telescope shows what is far; forecast is looking ahead at a distance,,predict,numbers.md#advanced-translation-practice
 📡,antenna,anede,,,,,
-💉,syringe,azehe,intrusion,syringe puts fluid into body; injection is forcing something in,,shot,word-endings.md#intermediate-translation-practice
+💉,syringe,azehe,intrusion,syringe puts fluid into body; injection is forcing something in,,shot,word-endings.md#intermediate-practice
 🩸,blood,abada,violence,blood is spilled; violence is harm by force,,bloody; violent,
 💊,pill,ebeza,remedy,pill is swallowed to heal; remedy is fix for ailment,,drug; treatment; medicine,numbers-applied.md#intermediate-translation-practice
 🩹,bandage,ubade,expedient,bandage covers a wound; expedient is the unobservable stopgap,,,
@@ -922,7 +922,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🛗,elevator,elave,ascent,an elevator lifts you up through the floors,,,
 🪞,mirror,umu,reflection,a mirror throws your own image back at you,,reflect,
 🪟,window,ewedo,transparency,you can see through a window's clear glass,,clear,causation.md#beginner-practice
-🛏️,bed,ebeda,,,,,word-endings.md#intermediate-translation-practice
+🛏️,bed,ebeda,,,,,word-endings.md#intermediate-practice
 🛋️,couch,ageha,leisure,lounging on the couch; leisure is free time,,,
 🪑,chair,ehahe,position,chair is where you take a seat; position is your assigned place,v:sit,place; situation; lay; status; location; locate; pose; situate; put; occupy,speech-moves.md#beginner-practice
 🚽,toilet,ododa,,,,,

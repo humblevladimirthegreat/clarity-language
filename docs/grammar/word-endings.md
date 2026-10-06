@@ -377,37 +377,36 @@ Beginner used the ending to say how to take a content word’s meaning. On an `/
 
 Beginner used **-l** / **-m** / **-n** to say how to take a citation’s meaning. On [number words](numbers.md), those same letters (and **-r**) have **number-specific** meanings. After a role letter, the number marker **r** may start a cluster that only number words use ([phonology.md](phonology.md#phonotactics)).
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. They practice **-n** as a title on any role letter, **-ln** for one of a named thing, a one-word **`x`-compound** name, and a ward name used as an office **handle**.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a hospital ward
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *hospital-bed* (ward name) | `ahazoxebedan` | |
-| *bed* | `ebedal` | |
-| *big* | `gelavam` | `elaval` *elephant* |
-| *sit* | `vehahel` | `ehahel` *chair* |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *write* | `varadal` | `aradal` *write* |
-| *run* | `varahal` | `arahal` *run* |
-| *Hospital* (named frame) | `hahazon` | `ahazol` *hospital* |
-| *Azawan* (brand) | `gazawan` | `azawan` *Azawan* |
-| *Ahaben* (brand) | `gahaben` | `ahaben` *Ahaben* |
-| *an Azawan* (one of the brand) | `dazawaln` | `azawan` *Azawan* |
-| *an Ahaben* (one of the brand) | `dahabeln` | `ahaben` *Ahaben* |
-| *Temperature* (named standard) | `heveden` | `evedel` *thermometer* |
-| *Sleep* (titled rest) | `vezeban` | `ezebal` *sleep* |
-| *Intrusion* (titled action) | `vazehen` | `azehel` *syringe* |
-| *Emergency* (titled event) | `vamaban` | `amabal` *ambulance* |
-| *Emergency* (named frame) | `hamaban` | `amabal` *ambulance* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *hospital-bed* (ward name) | `ahazoxebedan` | 🏥 *hospital* **x** 🛏️ *bed*: one ward's name |
+| *Temperature* (named standard) | `heveden` | 🌡️ from *thermometer* |
+| *Intrusion* (titled procedure) | `vazehen` | 💉 from *syringe* |
+| *Emergency* (titled drill) | `vamaban` | 🚑 from *ambulance* |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *sit* | `vehahel` |
+| *see* | `vahahal` |
+| *write* | `varadal` |
+| *run* | `varahal` |
+| *sleep* | `vezebal` |
+| *big* | `gelavam` |
+| *Japanese* | `ahebam` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -427,7 +426,7 @@ z-Azawan | v-sit | h-Ahazon
 z-bed | g-Azawan
 :::
 
-**3.** *Ahaben observes Sleep* (the ward’s titled rest hour).
+**3.** *Ahaben observes Sleep* (the ward's titled rest hour).
 
 ::: details Show answer
 `zahaben vezeban.`
@@ -435,31 +434,17 @@ z-bed | g-Azawan
 z-Ahaben | v-Ezeban
 :::
 
-**4.** *Azawan sees Hospital-Bed.* (the ward’s phrasal name)
+**4.** *Azawan sees Hospital-Bed* (the ward's name).
 
 ::: details Show answer
-`zazawan vahahal dahazoxebedan.`
+`zazawan dahazoxebedan vahahal.`
 
-z-Azawan | v-see | d-Ahazo-x-Ebedan
+z-Azawan | d-Ahazo-x-Ebedan | v-see
+
+**Also correct:** `zazawan vahahal dahazoxebedan.`
 :::
 
-**5.** *Alahen performs Intrusion* (that titled procedure).
-
-::: details Show answer
-`zalahen vazehen.`
-
-z-Alahen | v-Azehen
-:::
-
-**6.** *Alahen performs Emergency* (that titled drill).
-
-::: details Show answer
-`zalahen vamaban.`
-
-z-Alahen | v-Amaban
-:::
-
-**7.** *There is a big Ahaben* (one bed of that brand).
+**5.** *There is a big Ahaben* (one bed of that brand).
 
 ::: details Show answer
 `zahabeln gelavam.`
@@ -467,65 +452,97 @@ z-Alahen | v-Amaban
 z-Ahaben.instance | g-big
 :::
 
+**6.** *Alahen sees a Japanese flag.*
+
+::: details Show answer
+`zalahen dahebal vahahal.`
+
+z-Alahen | d-japan-flag | v-see
+:::
+
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zahaben vehahel hahazon.`
+**1.** `zalahen varadal heveden.`
 
 ::: details Show answer
+z-Alahen | v-write | h-Eveden
 
-z-Ahaben | v-sit | h-Ahazon
-*Ahaben sits according to Hospital* (the named frame).
+*Alahen writes according to Temperature* (the named standard).
 :::
 
-**2.** `zazawan varadal heveden.`
+**2.** `zahaben vazehen.`
 
 ::: details Show answer
+z-Ahaben | v-Azehen
 
-z-Azawan | v-write | h-Eveden
-*Azawan writes according to Temperature* (the named standard).
+*Ahaben performs Intrusion* (that titled procedure).
 :::
 
-**3.** `zebedal gahaben.`
+**3.** `zalahen varahal hamaban.`
 
 ::: details Show answer
+z-Alahen | v-run | h-Amaban
 
-z-bed | g-Ahaben
-*The bed is an Ahaben* (the brand).
+*Alahen runs in Emergency* (the named frame).
 :::
 
-**4.** `zahazoxebedan varadal.`
+**4.** `zazawan dahabeln vahahal. zahaber gelavam.`
 
 ::: details Show answer
+z-Azawan | d-Ahaben.instance | v-see . z-←Ahaben.instance | g-big
 
+*Azawan sees an Ahaben. It is big.* (one bed of that brand)
+:::
+
+**5.** `zahazoxebedan varadal.`
+
+::: details Show answer
 z-Ahazo-x-Ebedan | v-write
 
 *Hospital-Bed writes.* (the ward, as an office)
 :::
 
-**5.** `zahaben vazehen.`
+**6.** `zebedal gahebam.`
 
 ::: details Show answer
+z-bed | g-japanese
 
-z-Ahaben | v-Azehen
-*Ahaben performs Intrusion* (that titled procedure).
+*The bed is Japanese.*
 :::
 
-**6.** `zalahen varahal hamaban.`
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Alahen sees an Azawan* (one bed of that brand). `zalahen dazawaln vahahal.` or `zalahen dazawan vahahal.`
 
 ::: details Show answer
+`zalahen dazawaln vahahal.`
 
-z-Alahen | v-run | h-Amaban
-*Alahen runs in Emergency* (the named frame).
+z-Alahen | d-Azawan.instance | v-see
+
+**-ln** is one thing the name applies to; **-n** is the brand itself.
 :::
 
-**7.** `zalahen dazawaln vahahal. zazawar gelavam.`
+**2.** *Ahaben performs Emergency* (the titled drill). `zahaben vamaban.` or `zahaben vamabal.`
 
 ::: details Show answer
+`zahaben vamaban.`
 
-z-Alahen | d-Azawan.instance | v-see . z-←Azawan.instance | g-big
-*Alahen sees an Azawan. It is big.* (one bed of that brand)
+z-Ahaben | v-Amaban
+
+**-n** on the verb names that titled event; **-l** is the root's everyday sense.
 :::
 
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Hospital-Bed sits.* (one ward's name) <!-- lint: error -->`zahazon zebedan vehahel.`
+
+::: details Show answer
+`zahazoxebedan vehahel.`
+
+z-Ahazo-x-Ebedan | v-sit
+
+A multipart name is one word joined with **`x`**; two **-n** words are two named things.
+:::
 
 ## See also
 
