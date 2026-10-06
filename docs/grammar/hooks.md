@@ -1098,30 +1098,32 @@ Other roots fuse the same way: `vezebeluel` *contradict* is *tell* fused with *a
 
 **Compare with:** `vowogal ul bezedel` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* never fuse; they are always separate hook words. A [lexical compound](x-compounds.md#lexical-compounds) like *bedroom* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
 
-### Translation practice {#advanced-translation-practice}
+### Practice {#advanced-practice}
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**.
+Short drills for Advanced. Try each item before opening **Show answer**. Each fused verb is a citation plus a hook from the extra-noun grid (*walk* + *from* is *leave*).
 
 **Setting:** a ferry slip
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Alahen* | `alahen` | | |
-| *Ahaben* | `ahaben` | | |
-| *leave* | `owogalul` | `owogal` *walk* | cited walk plus *from* |
-| *enter* | `owogalal` | `owogal` *walk* | cited walk plus *in* |
-| *head for* | `owogaloel` | `owogal` *walk* | cited walk plus *toward* |
-| *exit* | `owogalual` | `owogal` *walk* | cited walk plus *out of* |
-| *oppose* | `owogaluel` | `owogal` *walk* | cited walk plus *against* |
-| *traverse* | `owogaluol` | `owogal` *walk* | cited walk plus *through* |
-| *boat* | `obodal` | | |
-| *fog* | `avegel` | | |
-| *ice* | `azahol` | | |
-| *anchor* | `agel` | | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *anchor* | `agel` | ⚓ |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *walk* | `vowogal` |
+| *tell* | `vezebel` |
+| *boat* | `obodal` |
+| *ship* | `ehebal` |
+| *fog* | `avegel` |
+| *ice* | `azahol` |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
@@ -1133,15 +1135,15 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 z-Azawan | d-boat | v-leave
 :::
 
-**2.** *Alahen heads for a boat.*
+**2.** *Alahen heads for the anchor.*
 
 ::: details Show answer
-`zalahen dobodal vowogaloel.`
+`zalahen dagel vowogaloel.`
 
-z-Alahen | d-boat | v-head-for
+z-Alahen | d-anchor | v-head-for
 :::
 
-**3.** *Ahaben exits fog.*
+**3.** *Ahaben exits the fog.*
 
 ::: details Show answer
 `zahaben davegel vowogalual.`
@@ -1149,28 +1151,12 @@ z-Alahen | d-boat | v-head-for
 z-Ahaben | d-fog | v-exit
 :::
 
-**4.** *Azawan opposes ice.*
+**4.** *Azawan contradicts Alahen.* (*tell* fused with *against*)
 
 ::: details Show answer
-`zazawan dazahol vowogaluel.`
+`zazawan dalahen vezebeluel.`
 
-z-Azawan | d-ice | v-oppose
-:::
-
-**5.** *Alahen traverses fog.*
-
-::: details Show answer
-`zalahen davegel vowogaluol.`
-
-z-Alahen | d-fog | v-traverse
-:::
-
-**6.** *Azawan enters fog.*
-
-::: details Show answer
-`zazawan davegel vowogalal.`
-
-z-Azawan | d-fog | v-enter
+z-Azawan | d-Alahen | v-tell-oppose
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
@@ -1178,55 +1164,57 @@ z-Azawan | d-fog | v-enter
 **1.** `davegel zalahen vowogalul.`
 
 ::: details Show answer
-
 d-fog | z-Alahen | v-leave
 
-*Alahen leaves fog.*
+*Alahen leaves the fog.*
 :::
 
-**2.** `zazawan dagel vowogaloel.`
+**2.** `zazawan dazahol vowogaluol.`
 
 ::: details Show answer
-
-z-Azawan | d-anchor | v-head-for
-
-*Azawan heads for an anchor.*
-:::
-
-**3.** `zalahen dobodal vowogalual.`
-
-::: details Show answer
-
-z-Alahen | d-boat | v-exit
-
-*Alahen exits a boat.*
-:::
-
-**4.** `zahaben davegel vowogaluel.`
-
-::: details Show answer
-
-z-Ahaben | d-fog | v-oppose
-
-*Ahaben opposes fog.*
-:::
-
-**5.** `zazawan dazahol vowogaluol.`
-
-::: details Show answer
-
 z-Azawan | d-ice | v-traverse
 
-*Azawan traverses ice.*
+*Azawan crosses the ice.*
 :::
 
-**6.** `zalahen dobodal vowogalal.`
+**3.** `zalahen dehebal vowogalal.`
 
 ::: details Show answer
+z-Alahen | d-ship | v-enter
 
-z-Alahen | d-boat | v-enter
+*Alahen enters a ship.*
+:::
 
-*Alahen enters a boat.*
+**4.** `zahaben dobodal vowogaluel.`
+
+::: details Show answer
+z-Ahaben | d-boat | v-oppose
+
+*Ahaben opposes the boat.*
+:::
+
+#### Pick one {#advanced-pick-one}
+
+**1.** *Azawan enters the ship.* `zazawan dehebal vowogalal.` or `zazawan behebal vowogalal.`
+
+::: details Show answer
+`zazawan dehebal vowogalal.`
+
+z-Azawan | d-ship | v-enter
+
+A fused verb takes its extra participant as an ordinary object, `/d/`; after a verb, `/b/` is a recipient.
+:::
+
+#### Fix it {#advanced-fix-it}
+
+**1.** *leave* (the dictionary citation) <!-- lint: error -->`vowogalul.`
+
+::: details Show answer
+`owogalul.`
+
+leave
+
+The dictionary lists a hook compound as a citation, with no role letter.
 :::
 
 ## See also
