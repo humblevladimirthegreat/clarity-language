@@ -161,6 +161,14 @@ z-Alahen | v-sing | [th-only-if | b-that-clause] | z-Ahaben | d-flower | v-see
 *Alahen sings only if Ahaben sees a flower.*
 :::
 
+**5.** `zazawan davavulx vahahal thoyem banadal.`
+
+::: details Show answer
+z-Azawan | d-flower-x | v-see | [th-if | b-night]
+
+*Azawan sees some flowers if it is night.*
+:::
+
 #### Pick one {#beginner-pick-one}
 
 **1.** *There is a flower if there is rain.* `zavavul goyem berehel.` or `zavavul thoyem berehel.`
