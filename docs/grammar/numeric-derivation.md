@@ -286,26 +286,31 @@ To exaggerate a kind for comic effect (*a gazillion-mess*, *an umpteenth attempt
 
 Free **`hrewobal`** = *for the gazillionth time* (clause adverb). Derived **`zahamrewobal`** = *an umpteenth co-participation* (noun kind).
 
-### Translation practice {#advanced-translation-practice}
+### Practice {#advanced-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Setting:** a foundry
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *gold* | `ogodal` | |
-| *fire* | `avahel` | |
-| *factory* | `avagel` | |
-| *hammer* | `vahavol` | `ahavol` *hammer* |
-| *pour* | `vobohol` | `obohol` *pour* |
-| *see* | `vahahal` | `ahahal` *eye* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *gold* | `ogodal` | 🥇 |
+| *fire* | `avahel` | 🔥 |
+| *factory* | `avagel` | 🏭 |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *hammer* | `vahavol` |
+| *pour* | `vobohol` |
+| *see* | `vahahal` |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
@@ -333,15 +338,7 @@ z-Ahaben | d-factory-l-one | v-see
 z-Azawan | d-gold-l-quasi | v-pour
 :::
 
-**4.** *Alahen pours a first-class gold.*
-
-::: details Show answer
-`zalahen dogodalrewol vobohol.`
-
-z-Alahen | d-gold-l-1st | v-pour
-:::
-
-**5.** *Alahen annihilates the gold-kind.*
+**4.** *Alahen annihilates the gold-kind.*
 
 ::: details Show answer
 `zalahen vogodalrazobal.`
@@ -354,7 +351,6 @@ z-Alahen | v-gold-l-+-0e
 **1.** `zahaben dogodalrabal vahahal.`
 
 ::: details Show answer
-
 z-Ahaben | d-gold-l-infinity | v-see
 
 *Ahaben sees the essence of gold.*
@@ -363,7 +359,6 @@ z-Ahaben | d-gold-l-infinity | v-see
 **2.** `zazawan davahelrebul vahahal.`
 
 ::: details Show answer
-
 z-Azawan | d-fire-l-origin | v-see
 
 *Azawan sees fire in its beginning form.*
@@ -372,7 +367,6 @@ z-Azawan | d-fire-l-origin | v-see
 **3.** `zalahen davagelrarel vahahal.`
 
 ::: details Show answer
-
 z-Alahen | d-factory-l-three | v-see
 
 *Alahen sees a three-part factory.*
@@ -381,19 +375,33 @@ z-Alahen | d-factory-l-three | v-see
 **4.** `zalahen vavahelruzol.`
 
 ::: details Show answer
-
 z-Alahen | v-fire-l-minus-zero
 
 *Alahen refuses to let the fire go to zero.*
 :::
 
-**5.** `zalahen davahelrebal vahahal.`
+#### Pick one {#advanced-pick-one}
+
+**1.** *Alahen pours a first-class gold.* `zalahen dogodalrewol vobohol.` or `zalahen dogodalrawol vobohol.`
 
 ::: details Show answer
+`zalahen dogodalrewol vobohol.`
 
-z-Alahen | d-fire-l-telos | v-see
+z-Alahen | d-gold-l-1st | v-pour
 
-*Alahen sees fire in its final form.*
+First-class is a rank, marker **`re`**; **`ra`** with one is the primary kind.
+:::
+
+#### What changes {#advanced-what-changes}
+
+**1.** `zahaben davahelrebul vahahal.` / `zahaben davahelrebal vahahal.`
+
+::: details Show answer
+z-Ahaben | d-fire-l-origin | v-see
+
+z-Ahaben | d-fire-l-telos | v-see
+
+**`bu`** gives fire in its beginning form; **`ba`** gives fire in its final form.
 :::
 
 ## See also
