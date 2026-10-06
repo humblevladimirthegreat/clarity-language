@@ -35,7 +35,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🙄,eye-roll,arahe,dismiss,eyeroll dismisses an idea,,,
 😬,grimace,egeyo,awkwardness,grimace shows awkwardness,,,
 😮‍💨,sigh,azawo,,,,,
-🤥,lie,alaha,deception,a lie leads others into false belief,,,joins.md#beginner-translation-practice
+🤥,lie,alaha,deception,a lie leads others into false belief,,,questions.md#beginner-translation-practice
 🙂‍↔️,head-shake,ehedo,refusal,a headshake says no to the request,,reject,
 🙂‍↕️,nod,anade,agreement,a nod says yes to what was said,,,
 😌,relief,ereva,calm,relief brings calm,,,
@@ -389,15 +389,15 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🪺,nest,eneza,nurture,nest nurtures young,,sustain; rear,
 🍄,mushroom,amahu,proliferation,mushrooms pop up overnight,,,
 🪾,dead-tree,ededa,decay,dead tree shows decay,,,
-🍇,grape,egeba,disparagement,sour grapes runs down what you cannot reach,,,joins.md#beginner-translation-practice
-🍈,melon,emeho,fruit,a melon is a sweet seed-bearing food; fruit is the seed-bearing food of a plant,,,joins.md#beginner-translation-practice
+🍇,grape,egeba,disparagement,sour grapes runs down what you cannot reach,,,
+🍈,melon,emeho,fruit,a melon is a sweet seed-bearing food; fruit is the seed-bearing food of a plant,,,joins.md#beginner-practice
 🍉,watermelon,owoda,refreshment,watermelon is cold juicy water on a hot day,,,
 🍊,tangerine,adehe,skin,a tangerine peel is its outer covering; skin is the outer covering of a body,,,
 🍋,lemon,elehu,defect,a lemon is a bad deal,,,
 🍋‍🟩,lime,alahu,zest,lime adds zest and tang,g:sour,tart; tangy,
 🍌,banana,abayo,madness,to go bananas is to lose your head,,,
 🍍,pineapple,abuba,hospitality,pineapple welcomes with hospitality,,invitation; invite,
-🥭,mango,amego,exoticism,mango tastes of the exotic,,,joins.md#beginner-translation-practice
+🥭,mango,amego,exoticism,mango tastes of the exotic,,,joins.md#beginner-practice
 🍎,apple,abovu,temptation,forbidden apple is temptation,,,
 🍐,pear,abeyo,mishap,gone pear-shaped is mishap,,accident,
 🍑,peach,ebaha,excellence,something peachy is as fine as a ripe peach,,,
@@ -405,7 +405,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🍓,strawberry,ozo,sweetness,a ripe strawberry tastes of sugar,,sweet,sakes.md#beginner-translation-practice
 🫐,blueberry,ububo,,,,,
 🥝,kiwi,agewe,oddity,fuzzy kiwi is an odd fruit,,odd; weird,
-🍅,tomato,adedo,controversy,tomato fruit or vegetable controversy,,debate; controversial; argument,joins.md#beginner-translation-practice
+🍅,tomato,adedo,controversy,tomato fruit or vegetable controversy,,debate; controversial; argument,joins.md#beginner-practice
 🫒,olive,aleva,,,,,
 🥥,coconut,ogoga,toughness,hard nut to crack is tough,,tough,
 🥑,avocado,avoga,premium,avocado toast is premium living,,,
@@ -426,7 +426,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🫚,ginger,ahehe,,,,,
 🫛,pea,abewo,,,,,
 🫜,beet,eboda,,,,,
-🍞,bread,ebevu,staple,bread and butter is staple,,,joins.md#beginner-translation-practice
+🍞,bread,ebevu,staple,bread and butter is staple,,,joins.md#beginner-practice
 🥐,croissant,ogaza,,,,,numbers.md#beginner-translation-practice
 🥖,baguette,uboge,,,,,numbers.md#beginner-translation-practice
 🫓,flat-bread,avabe,simplicity,flatbread is simple fare,g:bland,plain,
@@ -942,7 +942,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🪥,toothbrush,uduve,hygiene,toothbrush cleans each day; hygiene is healthful cleanliness,,,
 🧽,sponge,azabu,absorption,sponge soaks up spilled liquid; absorption is taking in fully,,,
 🧯,extinguisher,ogeze,containment,extinguisher stops spreading fire; containment is holding in bounds,,contain,
-🛒,cart,agega,consumption,cart fills with goods to buy; consumption is taking things in,,expenditure,joins.md#beginner-translation-practice
+🛒,cart,agega,consumption,cart fills with goods to buy; consumption is taking things in,,expenditure,joins.md#beginner-practice
 🚬,cigarette,ozege,habit,cigarette is repeated addictive draw; habit is repeated hard-to-break act,,smoke,
 ⚰️,coffin,ogove,end,coffin holds the deceased; end is final conclusion,,conclusion; final,
 🪦,headstone,ehado,burial,a headstone marks a grave; burial is laying the dead in the ground,,,

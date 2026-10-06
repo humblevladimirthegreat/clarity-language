@@ -286,30 +286,33 @@ For *everything happened except that A*, put the except [hook](hooks.md#except-u
 
 **Compare with:** a sentence linker (*therefore*, *however*) also starts the next sentence, but it is a content word with its own meaning ([continue](dependents.md#continue-x)).
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a market stall
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *bread* | `ebevul` | |
-| *tomato* | `adedol` | |
-| *mango* | `amegol` | |
-| *melon* | `emehol` | |
-| *grape* | `egebal` | |
-| *basket* | `abezal` | |
-| *cart* | `agegal` | |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *punch* | `vabahel` | `abahel` *punch* |
-| *scream* | `vezugel` | `ezugel` *scream* |
-| *lie* | `valahal` | `alahal` *lie* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *bread* | `ebevul` | 🍞 |
+| *tomato* | `adedol` | 🍅 |
+| *mango* | `amegol` | 🥭 |
+| *melon* | `emehol` | 🍈 |
+| *cart* | `agegal` | 🛒 |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *pay* | `vamol` |
+| *basket* | `abezal` |
+| *see* | `vahahal` |
+| *scream* | `vezugel` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
@@ -321,31 +324,27 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 [z-bread | z-tomato | z-and.open]
 :::
 
-**2.** *a mango or a melon (pick one)*
+**2.** *Azawan sees a mango and a melon.*
 
 ::: details Show answer
-`zamegol zemehol zol.`
+`zazawan damegol demehol dal vahahal.`
 
-[z-mango | z-melon | z-or-exactly-one]
+z-Azawan | [d-mango | d-melon | d-and] | v-see
+
+**Also correct:** `zazawan vahahal damegol demehol dal.`
 :::
 
-**3.** *just Ahaben*
+**3.** *Ahaben pays nobody.*
 
 ::: details Show answer
-`zahaben zal.`
+`zahaben bal vamol.`
 
-[z-Ahaben | z-and]
+z-Ahaben | b-none | v-pay
+
+**Also correct:** `zahaben vamol bal.`
 :::
 
-**4.** *a grape (optional)*
-
-::: details Show answer
-`zegebal zom.`
-
-[z-grape | z-or.open]
-:::
-
-**5.** *not the cart*
+**4.** *not the cart*
 
 ::: details Show answer
 `zagegal zul.`
@@ -353,15 +352,15 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 [z-cart | z-not]
 :::
 
-**6.** *something among bread and a tomato*
+**5.** *Alahen pays and Azawan sees a basket (and possibly more).*
 
 ::: details Show answer
-`zebevul zadedol zar.`
+`zalahen vamol xam zazawan dabezal vahahal.`
 
-[z-bread | z-tomato | z-something]
+[z-Alahen | v-pay | x-and.open | z-Azawan | d-basket | v-see]
 :::
 
-**7.** *only Azawan matters*
+**6.** *only Azawan matters*
 
 ::: details Show answer
 `zazawan zel.`
@@ -369,20 +368,11 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 [z-Azawan | z-rank/more]
 :::
 
-**8.** *Alahen punches and Azawan sees Ahaben (and possibly more).*
-
-::: details Show answer
-`zalahen vabahel xam zazawan dahaben vahahal.`
-
-[z-Alahen | v-punch | x-and.open | z-Azawan | d-Ahaben | v-see]
-:::
-
 #### Agazan → English {#beginner-agazan-to-english}
 
 **1.** `zagegal zam.`
 
 ::: details Show answer
-
 [z-cart | z-and.open]
 
 *a cart, for one* / *a cart (and possibly more)*
@@ -391,64 +381,75 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **2.** `zual.`
 
 ::: details Show answer
-
 z-everything-but
 
 *everything* / *everyone*
 :::
 
-**3.** `zabezal zar.`
+**3.** `zebevul zar.`
 
 ::: details Show answer
+[z-bread | z-something]
 
-[z-basket | z-something]
-
-*some (unknown) basket*
+*some (unknown) bread*
 :::
 
-**4.** `zamegol zemehol zul.`
+**4.** `zamegol zadedol zul.`
 
 ::: details Show answer
+[z-mango | z-tomato | z-not]
 
-[z-mango | z-melon | z-not]
-
-*neither a mango nor a melon*
+*neither a mango nor a tomato*
 :::
 
-**5.** `zahaben zam.`
+**5.** `zazawan dal vahahal.`
 
 ::: details Show answer
+z-Azawan | d-none | v-see
 
-[z-Ahaben | z-and.open]
-
-*Ahaben, for one* / *Ahaben (and possibly more)*
+*Azawan sees nothing.*
 :::
 
-**6.** `zahaben zel.`
+**6.** `zalahen vezugel xol zahaben vamol.`
 
 ::: details Show answer
+[z-Alahen | v-scream | x-or-exactly-one | z-Ahaben | v-pay]
 
-[z-Ahaben | z-rank/more]
-
-*only Ahaben matters*
+*Alahen screams or Ahaben pays: exactly one of the two.*
 :::
 
-**7.** `zalahen dabezal vabahel xam zazawan vezugel.`
+#### Pick one {#beginner-pick-one}
+
+**1.** *a melon or a tomato (pick one)* `zemehol zadedol zol.` or `zemehol zadedol zom.`
 
 ::: details Show answer
+`zemehol zadedol zol.`
 
-[z-Alahen | d-basket | v-punch | x-and.open | z-Azawan | v-scream]
+[z-melon | z-tomato | z-or-exactly-one]
 
-*Alahen punches a basket and Azawan screams (and possibly more).*
+Closed **-l** means pick one of these; **-m** leaves the pick open.
 :::
 
-**8.** `zalahen vezugel xam zazawan valahal.`
+**2.** *Azawan sees just bread.* `zazawan debevul dal vahahal.` or `zazawan debevul dam vahahal.`
 
 ::: details Show answer
+`zazawan debevul dal vahahal.`
 
-[z-Alahen | v-scream | x-and.open | z-Azawan | v-lie]
+z-Azawan | [d-bread | d-and] | v-see
 
-*Alahen screams and Azawan lies (and possibly more).*
+One item before closed **`dal`** is the whole story; `dam` is *bread, for one*.
+:::
+
+#### Fix it {#beginner-fix-it}
+
+**1.** *Azawan and Alahen see a cart.* <!-- lint: error -->`zazawan zam zalahen dagegal vahahal.`
+
+::: details Show answer
+`zazawan zalahen zal dagegal vahahal.`
+
+[z-Azawan | z-Alahen | z-and] | d-cart | v-see
+
+The join closes the list after **both** items, not between them as English *and* does.
 :::
 
 ## Intermediate {#intermediate}
