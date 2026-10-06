@@ -96,7 +96,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💔,heartbreak,ahode,bereavement,heartbreak is the image; bereavement is the unobservable fact of losing someone or something dear,,,
 ❤️‍🔥,passion,abeho,fervor,heart fire shows fervor,,excitement,
 ❤️‍🩹,healing,ehewo,restitution,mending heart marks recovery; restitution is the unobservable making-whole,,compensation; restore,
-❤️,heart,aho,compassion,the heart feels for others; compassion is caring about their suffering,,center,comparatives.md#advanced-translation-practice
+❤️,heart,aho,compassion,the heart feels for others; compassion is caring about their suffering,,center,
 💋,lips,eleba,,,,,
 💯,hundred,ahaho,perfection,a hundred out of a hundred is a top mark,m.w:completely,perfect; totally; entirely; fully; altogether,
 💢,anger,anage,offense,anger symbol shows rage; offense is the unobservable reading that a wrong was done,,crime,
@@ -115,7 +115,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ✋,hand,ahada,,,,,
 👌,ok,ogeha,acceptance,the ok sign says it is fine as it is; acceptance is letting it be,,accept; alright; adopt; fine,
 ✌️,victory,evego,triumph,peace sign shows triumph,,succeed; defeat; overcome,
-🤞,crossed-fingers,evege,hope,crossed fingers bring hope,,,comparatives.md#advanced-translation-practice
+🤞,crossed-fingers,evege,hope,crossed fingers bring hope,,,comparatives.md#advanced-practice
 🤘,horns,ohozo,,,,,
 🤙,shaka,ahaga,contact,shaka invites contact,,,
 🖕,middle-finger,emedu,contempt,middle finger shows contempt,,,
@@ -137,7 +137,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦿,prosthetic-leg,elego,,,,,
 🦵,leg,elega,,,,,
 🦶,foot,uvuda,foot-length,the unit was first measured off a human foot,,,
-👂,ear,ewa,hearsay,ear takes in what others say; hearsay is knowing by being told,v:hear,listen,comparatives.md#advanced-translation-practice
+👂,ear,ewa,hearsay,ear takes in what others say; hearsay is knowing by being told,v:hear,listen,
 🦻,hearing-aid,edaho,,,,,
 👃,nose,onoza,intuition,nose leads intuition,v:smell; m.v:intuit,sensitive; sense; impression,numbers.md#beginner-practice
 🧠,brain,ebeha,intellect,the brain does the thinking,,mental; intellectual; smart; mind; intelligence; psychological; abstract,
@@ -304,7 +304,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦨,skunk,uzaga,stigma,skunk leaves a lasting stigma,,,
 🦘,kangaroo,agage,bounce,kangaroo bounces back,v:jump,leap,
 🦡,badger,abuhe,persistence,badger someone with persistence,,determination,
-🐾,paw-prints,oba,pattern,pawprints mark a trail; a pattern is the regularity the trail of cases leaves,,trail; track; creature,comparatives.md#advanced-translation-practice
+🐾,paw-prints,oba,pattern,pawprints mark a trail; a pattern is the regularity the trail of cases leaves,,trail; track; creature,
 🦃,turkey,edege,folly,a turkey gobbles loudly without making sense,,,
 🐔,chicken,ehega,cowardice,a chicken flees at the first scare,,,
 🐣,hatch,oha,emergence,a chick breaks out of its shell,,emerge; birth,
@@ -385,7 +385,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🍁,maple,emeba,change,maple leaves mark seasonal change,,switch; variable; alter; modify; shift; convert,
 🍃,leaf,elevo,,,,,
 🍂,fallen-leaf,eleve,autumn,leaves fall in autumn; autumn is the season of falling leaves,,,
-🪹,empty-nest,eno,emptiness,empty nest shows emptiness,,empty,comparatives.md#advanced-translation-practice
+🪹,empty-nest,eno,emptiness,empty nest shows emptiness,,empty,
 🪺,nest,eneza,nurture,nest nurtures young,,sustain; rear,
 🍄,mushroom,amahu,proliferation,mushrooms pop up overnight,,,
 🪾,dead-tree,ededa,decay,dead tree shows decay,,,
@@ -442,7 +442,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🍔,hamburger,ahobe,mainstream,burger is mainstream fare,,,
 🍟,fries,avaze,accessory,fries are a side accessory,,supplement,pronouns.md#intermediate-practice
 🍕,pizza,abeda,camaraderie,pizza night builds camaraderie,,,
-🌭,hotdog,ahudo,showmanship,a hotdog is flashy showmanship,,exhibit,comparatives.md#advanced-translation-practice
+🌭,hotdog,ahudo,showmanship,a hotdog is flashy showmanship,,exhibit,comparatives.md#advanced-practice
 🥪,sandwich,aza,compromise,sandwich layers are compromise,,,plurality.md#beginner-practice
 🌮,taco,adego,variety,taco bar offers variety,,sort; type,
 🌯,burrito,ebado,encapsulation,burrito wraps it all up,,,
@@ -689,7 +689,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥅,goal,ogo,objective,goal net is what you aim for; objective is the target aim,,mission; target,
 ⛳,golf,agayu,,,,,
 ⛸️,skate,ezagu,,,,,
-🎣,fishing,evo,memory,fishing pulls something up from opaque water; memory retrieves from the past (may be a boot),,,comparatives.md#advanced-translation-practice
+🎣,fishing,evo,memory,fishing pulls something up from opaque water; memory retrieves from the past (may be a boot),,,
 🤿,snorkel,ozoga,,,,,
 🎽,tank-top,adabu,,,,,
 🎿,skis,ezuga,,,,,
@@ -854,9 +854,9 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🗳️,ballot,ahu,choice,ballot records your vote; choice is selecting among options,,vote; election; elect; poll; voluntary,
 ✏️,pencil,ebeyo,draft,pencil marks can be erased; draft is tentative first version,,outline,word-endings.md#beginner-practice
 🖊️,pen,ebewe,commitment,pen ink stays on the page; commitment is a binding promise,,dedicate,intention.md#intermediate-practice
-🖌️,paintbrush,ebuda,artistry,brush paints with flowing strokes; artistry is skilled creative work,,art; paint; illustration; brush; draw; illustrate; stroke,comparatives.md#advanced-translation-practice
+🖌️,paintbrush,ebuda,artistry,brush paints with flowing strokes; artistry is skilled creative work,,art; paint; illustration; brush; draw; illustrate; stroke,comparatives.md#advanced-practice
 🖍️,crayon,egeye,boldness,crayon marks with thick color; boldness is strong visible stroke,,nerve,
-📝,memo,ume,policy,memo records a standing decision; policy is a standing rule,,regulation; guideline; law; legal,comparatives.md#advanced-translation-practice
+📝,memo,ume,policy,memo records a standing decision; policy is a standing rule,,regulation; guideline; law; legal,
 💼,briefcase,ebeve,business,briefcase carries work affairs; business is commercial affairs,z:job,task; affair; enterprise; profession; company,
 📁,folder,ovode,,,,fold,
 🗂️,divider,edova,,,,,

@@ -830,31 +830,37 @@ English *many*, *few*, *often*, and *late* rank against an unstated baseline, an
 
 The bar is never dropped. A single-item `zagadulx zel gral` already means *the most cats* (a [superlative](#superlatives)).
 
-### Translation practice {#advanced-translation-practice}
+### Practice {#advanced-practice}
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. The bar is the `/th/` word right before the rank join; the same word after the fence is about the whole claim.
+Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Setting:** a talent contest
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *sing* | `ezehel` | |
-| *artistry* | `ebudam` | `ebudal` *paintbrush* |
-| *showmanship* | `ahudom` | `ahudol` *hotdog* |
-| *pattern* | `obam` | `obal` *paw-prints* |
-| *memory* | `evom` | `evol` *fishing* |
-| *hearsay* | `ewam` | `ewal` *ear* |
-| *intuition* | `ahom` | `ahol` *heart* |
-| *former* | `enom` | `enol` *empty-nest* |
-| *hope* | `evegem` | `evegel` *crossed-fingers* |
-| *capacity* | `ezem` | `ezel` *cereal* |
-| *policy* | `umem` | `umel` *memo* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *artistry* | `ebudam` | 🖌️ from *paintbrush* |
+| *showmanship* | `ahudom` | 🌭 from *hotdog* |
+| *INTUITION* | `thahom` | ❤️ from *heart*: your gut expectation |
+| *hope* | `thevegem` | 🤞 from *crossed fingers* |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *PATTERN* | `thobam` |
+| *MEMORY* | `thevom` |
+| *REPORTED* | `thewam` |
+| *FORMER* | `thenom` |
+| *capacity* | `ezem` |
+| *agility* | `ahagum` |
+| *trumpet* | `adawol` |
+| *sing* | `vezehel` |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
@@ -874,15 +880,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The bar
 [z-Alahen | th-MEMORY | z-rank/less | g-artistry]
 :::
 
-**3.** *Ahaben is showier than advertised.*
-
-::: details Show answer
-`zahaben thewam zel gahudom.`
-
-[z-Ahaben | th-REPORTED | z-rank/more | g-showmanship]
-:::
-
-**4.** *Azawan is as showy as possible.*
+**3.** *Azawan is as showy as possible.*
 
 ::: details Show answer
 `zazawan thezexal zoel gahudom.`
@@ -890,28 +888,12 @@ Short drills for Advanced. Try each item before opening **Show answer**. The bar
 [z-Azawan | th-ABIL-able | z-equal-rank | g-showmanship]
 :::
 
-**5.** *Alahen sings more often than Ahaben said.*
+**4.** *There are many trumpets* (more than usual).
 
 ::: details Show answer
-`zalahen thewam bahaben zel hral vezehel.`
+`zadawolx thobam zel gral.`
 
-[z-Alahen | [th-REPORTED | b-Ahaben] | z-rank/more | h-how-often] | v-sing
-:::
-
-**6.** *Ahaben is more artistic than they used to be.*
-
-::: details Show answer
-`zahaben thenom zel gebudam.`
-
-[z-Ahaben | th-FORMER | z-rank/more | g-artistry]
-:::
-
-**7.** *Azawan is the showiest, so they say.*
-
-::: details Show answer
-`zazawan zel gahudom thewam.`
-
-[z-Azawan | z-rank/more | g-showmanship] | th-REPORTED
+[z-trumpet-x | th-PATTERN | z-rank/more | g-amount]
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
@@ -919,7 +901,6 @@ Short drills for Advanced. Try each item before opening **Show answer**. The bar
 **1.** `zalahen thahom zel gezehel.`
 
 ::: details Show answer
-
 [z-Alahen | th-INTUITION | z-rank/more | g-sing]
 
 *Alahen sings better than I expected.*
@@ -928,7 +909,6 @@ Short drills for Advanced. Try each item before opening **Show answer**. The bar
 **2.** `zazawan thevegem zuel gebudam.`
 
 ::: details Show answer
-
 [z-Azawan | th-hope | z-rank/less | g-artistry]
 
 *Azawan is less artistic than I hoped.*
@@ -937,37 +917,41 @@ Short drills for Advanced. Try each item before opening **Show answer**. The bar
 **3.** `zahaben thobam zuel hral vezehel.`
 
 ::: details Show answer
-
 [z-Ahaben | th-PATTERN | z-rank/less | h-how-often] | v-sing
 
 *Ahaben rarely sings.*
 :::
 
-**4.** `zalahen thumem zoel gahudom.`
+**4.** `zalahen thewam bahaben zel gahagum.`
 
 ::: details Show answer
+[z-Alahen | [th-REPORTED | b-Ahaben] | z-rank/more | g-agility]
 
-[z-Alahen | th-REQUIRE-demanded | z-equal-rank | g-showmanship]
-
-*Alahen is as showy as I demand.*
+*Alahen is more agile than Ahaben said.*
 :::
 
-**5.** `zazawan zel gebudam thobam.`
+#### Pick one {#advanced-pick-one}
+
+**1.** *Azawan is the showiest, going by the pattern.* `zazawan zel gahudom thobam.` or `zazawan thobam zel gahudom.`
 
 ::: details Show answer
+`zazawan zel gahudom thobam.`
 
-[z-Azawan | z-rank/more | g-artistry] | th-PATTERN
+[z-Azawan | z-rank/more | g-showmanship] | th-PATTERN
 
-*Azawan is the most artistic, going by the pattern.*
+After the fence, PATTERN is a stance on the whole superlative; before the rank join it is the bar, *showier than usual*.
 :::
 
-**6.** `zahaben thezexal zoel gezehel.`
+#### What changes {#advanced-what-changes}
+
+**1.** `zahaben thenom zel gebudam.` / `zahaben thevom zel gebudam.`
 
 ::: details Show answer
+[z-Ahaben | th-FORMER | z-rank/more | g-artistry]
 
-[z-Ahaben | th-ABIL-able | z-equal-rank | g-sing]
+[z-Ahaben | th-MEMORY | z-rank/more | g-artistry]
 
-*Ahaben sings as well as possible.*
+The bar changes: *more artistic than Ahaben used to be* (FORMER) versus *more artistic than I remember* (MEMORY).
 :::
 
 ## See also
