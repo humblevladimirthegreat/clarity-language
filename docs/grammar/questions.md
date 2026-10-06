@@ -149,6 +149,7 @@ When a sentence body follows *yes*, write **`yael`** then the body. You do not a
 A turn holds one polar word. Do not stack two, and do not put one before an act word: an answer followed by a question is two turns.
 
 | Agazan | Use | English | Cue |
+<!-- cheat-sheet: talking -->
 |--------|-----|---------|-----|
 | **`yael`** / soft **`yaem`** | the claim matches, or *got it* | *yes* / *true* · *I think so* | **a** ≈ add + **e** ≈ order (the claim lines up) |
 | **`yuel`** / soft **`yuem`** | mismatch | *no* / *false* · *I don’t think so* | **u** ≈ undo + **e** ≈ order (the claim does not line up) |
@@ -406,6 +407,7 @@ Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), 
 
 Each stance word takes one of three endings, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). **-l** holds the stance firmly. **-m** is the soft twin. **-r** marks a stance you hold only *for now*: provisional, and you expect to revisit it.
 
+<!-- cheat-sheet: talking -->
 | | **-l** firm | **-m** soft | **-r** for now |
 |--|-------------|-------------|--------------------|
 | **`ae`** | `yael` *true* | `yaem` *I think so* | `yaer` *true, for now* / *I'll take that on board for now* |
@@ -517,6 +519,7 @@ After a request or a suggestion, **`yol yaol.`** asks *okay?*: will they take it
 > "Azawan walked, or am I wrong?"
 
 | Agazan | Use | English |
+<!-- cheat-sheet: talking -->
 |--------|-----|---------|
 | `yol yael.` | ask them to confirm a claim | *…, right?* |
 | `yol yuel.` | invite a correction | *…, or am I wrong?* |
@@ -549,6 +552,7 @@ When the question already contains *not* (*Didn’t Azawan run?*), *yes* and *no
 
 Beginner already used *who/what* (**…ar**) and *what else* (**…ur**). Two more vowels (**…or**, **…er**) and the number of items listed before the blank (none, one, or several) complete the map, which matches [single-item / standalone](joins.md#single-item-phrase).
 
+<!-- cheat-sheet: talking -->
 | Items listed | **…ar** | **…or** | **…er** | **…ur** |
 |--------|---------|---------|---------|---------|
 | **0** | *Who/what?* | *Anything?* | *What’s the priority?* | *What else?* |
@@ -572,6 +576,7 @@ To ask what something is **like** (*What color is it?*, *What kind of dog?*), pu
 > "Big."
 
 | Agazan | English |
+<!-- cheat-sheet: talking -->
 |--------|---------|
 | **`gar`** | *What is it like?* / *What kind?* |
 | **`gor`** | *Like anything in particular?* |
@@ -612,6 +617,7 @@ To ask *where?*, write an [extra-noun hook](hooks.md#extra-noun) (a short word l
 > "What does the dog sleep in?"
 
 | Agazan | English |
+<!-- cheat-sheet: talking -->
 |--------|---------|
 | **`ol bar`** | *Where (at)?* |
 | **`al bar`** | *In what?* |
@@ -665,6 +671,7 @@ To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in
 > "What does Azawan walk for?"
 
 | Agazan | English |
+<!-- cheat-sheet: talking -->
 |--------|---------|
 | **`thevem bar`** | *Why?* (*because of what?*) |
 | **`hogom bar`** | *What for?* (*for what purpose?*) |

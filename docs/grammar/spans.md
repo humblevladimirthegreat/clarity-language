@@ -30,6 +30,7 @@ A span with no mark is **exact**: the words as they were said (`d[azawan]`). Wri
 
 A work or person with a one-word name is an ordinary **-n** word (`donodan`), not `d@[onodan]`, unless a role letter or an ending is part of the title itself. The mark belongs to the brackets; the words inside keep their usual endings ([titled phrases](word-endings.md#titled-phrases)).
 
+<!-- cheat-sheet: restrictors-spans -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | *(none)* | exact | verbatim wording | bare brackets already quote; extra ink would hedge |
@@ -113,6 +114,7 @@ A span can fill any role a word can, not only the object. The letter before the 
 >
 > "Don’t say “stop,” Alahen."
 
+<!-- cheat-sheet: restrictors-spans -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `/d/` | object | *said / wrote / saw “…”* (`d[azawan]`, <code>d&lt;kimchi&gt;</code>) | **d** ≈ done to |

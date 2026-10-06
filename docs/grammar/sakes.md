@@ -73,6 +73,7 @@ To say that a belonging of yours **serves** a sake (pays it off), write that thi
 
 On a *serves* word, the ending says **when the payoff lands**: **-l** lasting, **-m** unstated, **-r** immediate. That order, from **-l** (most settled) through **-m** (the default) to **-r** (most passing), is the **settled-to-passing scale**, and other sake endings reuse it. Neither end is better; a good day needs both. If you do not know, use **-m**.
 
+<!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thal` | serves the sake over time | *lasting* | **-l** ≈ lasting |
@@ -133,6 +134,7 @@ A sake word is a sake root with mid-word **`th`**, a stance vowel, and an ending
 
 A sake word ends in **-l**, **-m**, or **-r**, from that stance’s table. It never takes **-n**. The stance itself is one vowel after **`th`**. On any other root, mid-word **`th`** plus a vowel is [label scope](predication.md#label-scope): what kind of claim a label makes.
 
+<!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`tha`** | the belonging or event pays off this sake | *serves* / *met* | **a** ≈ add (the payoff is in) |
@@ -408,6 +410,7 @@ Say how **strong** the feeling is with a [degree word](clause.md#degree-w) on `/
 
 The locus plus the motion ending is the **emotion tail**. It goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Prescription **`the`** is advice, not a feeling, so it takes no tail. A word with no tail (`wulothur`) is an ordinary sake word.
 
+<!-- cheat-sheet: why-allowed -->
 | Agazan | English |
 |---------|---------|
 | `zezebel wulothuraor gobum` | *anxious about the dialogue* (competence at stake, temporary; hangs over the room; surging) |
@@ -440,6 +443,7 @@ The ending says why you think the move is welcome. Use **-l** when the person in
 
 **Compare with:** [motive](#sake-preference) **`tho`** plus a [request](speech-moves.md#speech-act) **`yem`** when the speaker wants **their own** sake served. **`the`** is advice about the sake named on this word.
 
+<!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thel` | the person invited this kind of move | *invited* | **-l** ≈ lasting: their invitation stands |
@@ -495,6 +499,7 @@ On `/ɡ/`, the same stance gives **your** noun’s purpose (*my gift for related
 
 A reason held **to keep a cost off** is a *so that … not* dependent ([so that](dependents.md#so-that), **`hogom burl`**), as with prescription.
 
+<!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…thol` | does this for the sake over time | *lasting* | **-l** ≈ lasting |
@@ -515,6 +520,7 @@ A motive word takes the [emotion tail](#emotion-compose) too. The feeling is the
 
 Beginner already used *serves* and *detracts from*. Intermediate adds *ought this act for* and *doing for*. Pick the ending table that matches the stance vowel.
 
+<!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`tha`** | [time horizon](#time-horizon-endings-on-met) endings | *serves* / *met* | **a** ≈ add |
@@ -629,6 +635,7 @@ Add an emotion tail to say how the thanks moves you:
 >
 > "I'm so moved." (*thank you, that really touched me*)
 
+<!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | `…thal` | the help lasts | *that will stay with me* |
@@ -643,6 +650,7 @@ Add an emotion tail to say how the thanks moves you:
 >
 > "That hurt your sense of connection." (*I'm sorry*)
 
+<!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | `…thul behodon` | the harm is lasting | *I'm deeply sorry* |
@@ -703,6 +711,7 @@ English *may* / *is allowed to* says a restriction is lifted. Put **`thegol`**, 
 
 The negatives use the root **`ede`** (⛔ *no entry*) with the same endings.
 
+<!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thegol`** | a rule, policy, or formal right allows it | *is allowed to* / *has the right to* | **-l** ≈ law: the rules say go |
@@ -738,6 +747,7 @@ English *must* / *has to* / *is supposed to* puts a demand on an act without nam
 >
 > "Alahen is supposed to sleep."
 
+<!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thumel`** | a rule, policy, or law requires it | *must* / *is required to* | **-l** ≈ law: the rules demand it |
@@ -790,6 +800,7 @@ The weaker endings stay weaker on purpose: **-m** is *I'll do it* (you can still
 
 The negatives **`thuxedel`** / **`thuxedem`** / **`thuxeder`** use the same endings. **-l** is a binding refusal: they opted out, and the matter is settled. **-m** means they said no. Any no withdraws an ordinary **-m** yes; only a **-l** agreement has terms for withdrawing. **-r** means they probably don't want it; with no `/b/`, it is *not letting yourself*.
 
+<!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thuxegol`** | a binding agreement; withdrawing it has terms | *by agreement* / *they signed on* | **-l** ≈ law: they signed on, like a contract |

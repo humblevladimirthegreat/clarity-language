@@ -283,6 +283,7 @@ What counts as showing depends on the channel, so the table names what each chan
 
 Strength grades your evidence, not how sure you feel and not how likely the event is. Likelihood is a separate [stance number](numbers.md#number-as-stance-by-marker) (`th+70`), so a strong pattern can still give middling odds, and a rumor can claim certainty. Strength is also not distance from the event: that is [`th#N`](#hand-depth), so a compiled report that is several hands removed can still be **-l**.
 
+<!-- cheat-sheet: knowing-intending -->
 | Channel | Graded on | **-l** show | **-m** (default) describe | **-r** gesture |
 |---------|-----------|-------------|---------------------------|----------------|
 | LIVE | clarity of view | `thodol` a clear, full view | `thodom` | `thodor` a glimpse |
@@ -442,6 +443,7 @@ Grounds are not a cause. With [`thevem barl`](causation.md#only-because), the cl
 >
 > "Azawan screams because Alahen punches."
 
+<!-- cheat-sheet: knowing-intending -->
 | You say | The clause after `barl` is | Form |
 |---------|----------------------------|------|
 | what made it happen | the cause | `thevem barl` |
@@ -637,6 +639,7 @@ English *already*, *still*, *not yet*, and *no longer* do not place an event in 
 
 The ending says how settled the current stage is, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). Use **-m** when it could change back, or when you do not know. Use **-l** when it is not expected to. Use **-r** when it holds only for now: it is likely to change back soon, or, on *not yet*, the change may never come.
 
+<!-- cheat-sheet: knowing-intending -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | `hohal` | done, and it will stay done | *already, for good* |

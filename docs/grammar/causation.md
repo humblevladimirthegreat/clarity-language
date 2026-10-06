@@ -318,6 +318,7 @@ For *even if*, put the *although* pole **`hezom`** right before **`thoyem`**. Yo
 
 *Because* names what made the outcome happen. It does not say anyone did wrong. When you mean *it was their fault*, change the ending on the because pole. **-m** is the plain cause. **-l** says the reason broke a rule: someone did wrong. **-r** says it was one cause among others.
 
+<!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thevel`** | the reason broke a norm | *it's their fault* / *to blame* | **-l** ≈ locked on a broken rule |

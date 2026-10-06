@@ -283,6 +283,7 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 >
 > "Alahen can't sing right now."
 
+<!-- cheat-sheet: knowing-intending -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`xa`** | they can (this verb or quality) | *can* | **a** ≈ add (capability is in) |

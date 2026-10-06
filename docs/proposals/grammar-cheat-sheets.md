@@ -1,6 +1,6 @@
 # Proposal: cheat sheets for the whole grammar
 
-**Status:** PROPOSED. Rollout steps 1–4 done; step 5: batch A done (sounds and spelling, word shape and clause, people and pointing); batches B and C open. Done so far: pilot sheet [joins and hooks](../grammar/cheat-sheets/joins-hooks.md); [`scripts/lint-cheat-sheets.ts`](../../scripts/lint-cheat-sheets.ts) (layers 2 and 3, plus the Claritish sheet); [`scripts/cheat-sheet-blocks.ts`](../../scripts/cheat-sheet-blocks.ts) (layer 1) and the [Agazan → English](../grammar/cheat-sheets/agazan-english.md) sheet; sheets moved to `docs/grammar/cheat-sheets/` with redirects, and the editor rules are in [cheat sheets](../meta/grammar-docs.md#cheat-sheets).  
+**Status:** PROPOSED. Rollout steps 1–4 done; step 5: batches A and B done (sounds and spelling, word shape and clause, people and pointing; talking, knowing and intending, why and allowed, restrictors and spans); batch C open. Done so far: pilot sheet [joins and hooks](../grammar/cheat-sheets/joins-hooks.md); [`scripts/lint-cheat-sheets.ts`](../../scripts/lint-cheat-sheets.ts) (layers 2 and 3, plus the Claritish sheet); [`scripts/cheat-sheet-blocks.ts`](../../scripts/cheat-sheet-blocks.ts) (layer 1) and the [Agazan → English](../grammar/cheat-sheets/agazan-english.md) sheet; sheets moved to `docs/grammar/cheat-sheets/` with redirects, and the editor rules are in [cheat sheets](../meta/grammar-docs.md#cheat-sheets).  
 **Related:** TODO *join vowel decision tree in advanced vowel series*; the existing [Exceptions](../grammar/cheat-sheets/exceptions.md) sheet; the Claritish [cheat sheet](../grammar/claritish/cheat-sheet.md) kept in step by the same lint; [Claritish track policy](../meta/grammar-docs.md#claritish-track).  
 **Design authority:** stays with the owning grammar pages and the lexicon CSVs. Sheets add no forms, restate no rule the owning page does not teach, and are never cited as the source for a form.
 
@@ -102,7 +102,7 @@ A meaning or gloss change that keeps the spelling passes layers 2 and 3. Generat
    - Closed function words with no data source (joins, hooks, turn words, stand-ins, pointers, tags, resumes) get one hand-written **find the family by shape** table that points to the owning sections and the joins and hooks sheet, instead of a full listing.
    - The pilot sheet's join-act / join-relation grid stays hand-written: it is a vowel grid, not a spelling list.
 4. Move sheets into `cheat-sheets/` with redirects; add the grammar-docs.md section and the AGENTS.md row (done, ahead of the remaining sheets so they start in the folder; the Exceptions sheet is registered in the lint too, and passes).
-5. Remaining sheets, one commit per sheet, each with its owning tables marked and its ID registered in `SHEETS`. Work in three batches, one session each, so a batch's wording and layout stay consistent:
+5. Remaining sheets, each with its owning tables marked and its ID registered in `SHEETS`. Work in three batches, one session each, so a batch's wording and layout stay consistent:
 
    | Batch | Sheets | Why together |
    |-------|--------|--------------|
@@ -110,4 +110,4 @@ A meaning or gloss change that keeps the spelling passes layers 2 and 3. Generat
    | **B** | **Talking**, **Knowing and intending**, **Why and allowed**, **Restrictors and spans** | Knowing and Why lean on generated overlay blocks (evidentials, poles, deontic, sakes); the four share the stance and scope vocabulary. |
    | **C** | **Linking clauses**, **Roles and comparing**, **Numbers** | Mostly hand-written; Numbers is the largest single sheet and goes last. |
 
-   Within a batch, sheets go in the order listed. Each session starts by reading the finished sheets for layout, and ends with `npm run build` green before its last commit.
+   Within a batch, sheets go in the order listed. Each session starts by reading the finished sheets for layout, and ends with `npm run build` green.

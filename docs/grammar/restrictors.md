@@ -59,6 +59,7 @@ To say *sometimes*, *anytime*, or *some other time* without naming the occasion 
 
 *Sometimes* is the usual English for `har`, alongside *never* and *always*. It says only that there is **some** such occasion, as *something* does on a [join](joins.md). It does not mean *often*.
 
+<!-- cheat-sheet: restrictors-spans -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`har`** | unspecified member of the time inventory | *sometimes* / *at some time* | **-r** names a member |
@@ -142,6 +143,7 @@ To say *never sleepy* or *sometimes sleepy*, limit only the adjective, not the w
 
 To say *when raining, among other times*, end the list with open **`ham`** instead of closed **`hal`**. Open **-m** leaves room for occasions you did not list, so the claim no longer means *only when*. Each listed occasion is one simple content word, and every occasion takes the same role letter as the restrictor (`/h/`, or `/w/` before an adjective). Bare **`ham`** is *never, as far as I know*. (cue: **a** ≈ add; **ua** ≈ undo then add.)
 
+<!-- cheat-sheet: restrictors-spans -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`hal` / `ham`** | listed times; empty list is *never* | *only when…* / *when…, among other occasions* · bare *never* / *never, as far as I know* | **a** ≈ add |
@@ -350,6 +352,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 
 #### Set / invert / inclusive
 
+<!-- cheat-sheet: restrictors-spans -->
 | Agazan | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
 | **`hal` / `ham`** | listed times; empty list is *never* | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never, as far as I know* | **a** ≈ add |
@@ -365,6 +368,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 
 Closed **`hel`** ranks the listed occasions: the first one listed is the preferred time. Plain **`hal`** means *only when* these times, with no ranking among them.
 
+<!-- cheat-sheet: restrictors-spans -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`hel` / `hem`** | priority among occasions | *preferably when A ≻ when B…* (closed / open) | **e** ≈ order |
@@ -390,6 +394,7 @@ One occasion before **`huel`** is the last resort: the claim counts there, but o
 
 Statement readings below. Asking *when*: [questions.md](questions.md#when).
 
+<!-- cheat-sheet: restrictors-spans -->
 | Agazan | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
 | **`har`** | unspecified member of the listed times | *sometimes among these* | *sometimes* | **-r** some member |

@@ -59,6 +59,7 @@ When the turn is not a statement, put its act word immediately before the body:
 
 The vowel picks the act. Its cues are **a** add / hold, **o** one / pick, **e** order / instruct, **u** undo / take back. The same four vowels, with the same cues, come back in many small word families later on.
 
+<!-- cheat-sheet: talking -->
 | Agazan | Use | Cue |
 |--------|-----|-----|
 | **`yal`** | statement (often omitted) | **a** ≈ add (hold the claim) |
@@ -158,6 +159,7 @@ The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a
 
 **Compare with:** [MAY](knowing.md#may) (`thovum`) marks the scene as *could be*. **`yam`** is still a statement; you put it forward without insisting the other person take it up.
 
+<!-- cheat-sheet: talking -->
 | Agazan | Use | Cue |
 |--------|-----|-----|
 | **`yal`** | **statement**: claim or description | **a** add + **-l**: stand behind |
@@ -189,6 +191,7 @@ A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` w
 
 **-r** marks an act you hold only **for now**: provisional, and you expect to revisit it.
 
+<!-- cheat-sheet: talking -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`yar`** | **provisional statement**: held until something better comes | *as things stand* / *for now, I take it that…* | **a** add + **-r**: a claim held for now |
@@ -222,6 +225,7 @@ When a missed *don't* would be dangerous, say **`yul`** twice among the opening 
 
 A **tone mark** shows how you feel, or what you stress, while you say something. It changes your voice only. It never changes the speech act (that is the act word's job), and a sentence still ends in a period.
 
+<!-- cheat-sheet: talking -->
 | Mark | Feeling | Voice | Cue |
 |------|---------|-------|-----|
 | `!` | Strong feeling (excited, upset: the words say which) | Louder, stressed | English *!* |
@@ -335,6 +339,7 @@ A mark on a span colors all of it:
 
 English *frankly* and *to be clear* say in words how you are speaking. A tone mark cannot do that, because it changes only your voice. Instead, use a stance word (`/th/`, [clause](clause.md#stance-th)) built on an ordinary root. Like any stance word, it may sit anywhere in the sentence; the start is usual.
 
+<!-- cheat-sheet: talking -->
 | Agazan | English | Root |
 |--------|---------|------|
 | **`thagazam`** | *to be clear* / *to put it plainly* | clarity |
