@@ -887,87 +887,44 @@ A word right after B describes B alone, not the range. To describe the range its
 
 **Compare with:** `zazawan zahaben zal` is *Azawan and Ahaben*, the two ends only. `zazawan zahaben zael` is *Azawan, then Ahaben*, an order with nothing between. Spatial *between a train and a station* is a [relation](relations.md#spatial-path), not a range.
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a newsroom
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *newspaper* | `unuzel` | |
-| *page* | `abehel` | |
-| *camera* | `agahol` | |
-| *radio* | `eredel` | |
-| *red* | `eredal` | |
-| *write* | `varadal` | |
-| *tell* | `vezebel` | `ezebel` *speech* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *newspaper* | `unuzel` | 📰 |
+| *camera* | `agahol` | 📷 |
+| *radio* | `eredel` | 📻 |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *speaker* | `amun` |
+| *family* | `avahal` |
+| *page* | `abehel` |
+| *pencil* | `ebeyol` |
+| *surprise* | `ezul` |
+| *big* | `gelavam` |
+| *write* | `varadal` |
+| *tell* | `vezebel` |
+| *sit* | `vehahel` |
+| *run* | `varahal` |
+| *see* | `vahahal` |
+| *find* | `vamagal` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *The newspaper, including Azawan and maybe more, except Alahen.*
-
-::: details Show answer
-`zunuzel am zazawan ul zalahen.`
-
-z-newspaper | including.open | z-Azawan | except | z-Alahen
-:::
-
-**2.** *Azawan writes over a page.*
-
-::: details Show answer
-`zazawan varadal aom babehel.`
-
-z-Azawan | v-write | [over | b-page]
-:::
-
-**3.** *A newspaper instead of the page, or some other replacement.*
-
-::: details Show answer
-`dabehel om dunuzel.`
-
-d-page | instead.open | d-newspaper
-:::
-
-**4.** *A radio instead of a camera.*
-
-::: details Show answer
-`zagahol ol zeredel.`
-
-z-camera | instead | z-radio
-:::
-
-**5.** *Azawan: additionally, Alahen writes.*
-
-::: details Show answer
-`yazawan al zalahen varadal.`
-
-y-Azawan | additionally | z-Alahen | v-write
-:::
-
-**6.** *Azawan writes and additionally Alahen tells.*
-
-::: details Show answer
-`zazawan varadal xam al zalahen vezebel.`
-
-[z-Azawan | v-write | x-and.open | additionally | z-Alahen | v-tell]
-:::
-
-**7.** *Azawan writes with a camera.*
-
-::: details Show answer
-`zazawan ael bagahol varadal.`
-
-z-Azawan | [using | b-camera] | v-write
-:::
-
-**8.** *Azawan writes on a page.*
+**1.** *Azawan writes on the page.*
 
 ::: details Show answer
 `zazawan varadal aol babehel.`
@@ -975,128 +932,118 @@ z-Azawan | [using | b-camera] | v-write
 z-Azawan | v-write | [on | b-page]
 :::
 
-**9.** *Azawan writes on a page. Alahen writes on it too.*
+**2.** *Alahen writes a newspaper using a pencil.*
 
 ::: details Show answer
-`zazawan varadal aol babehel. zalahen varadal aor.`
+`zalahen dunuzel ael bebeyol varadal.`
 
-z-Azawan | v-write | [on | b-page] . z-Alahen | v-write | on.it
+z-Alahen | d-newspaper | [using | b-pencil] | v-write
 :::
 
-**10.** *Anyway, Alahen tells.*
+**3.** *There's Ahaben's radio.*
 
 ::: details Show answer
-`or zalahen vezebel.`
+`zeredel em bahaben.`
 
-anyway | z-Alahen | v-tell
+[z-radio | [used-by | b-Ahaben]]
 :::
 
-**11.** *Azawan writes Alahen's page.*
+**4.** *The radio is here* (near me).
 
 ::: details Show answer
-`zazawan dabehel em balahen varadal.`
+`zeredel om bamun.`
 
-z-Azawan | [d-page | [used-by | b-Alahen]] | v-write
+z-radio | [near | b-speaker]
 :::
 
-**12.** *Alahen's camera is red.*
+**5.** *Azawan sits at the radio. Alahen sits there too.*
 
 ::: details Show answer
-`zagahol geredal em balahen.`
+`zazawan vehahel ol beredel. zalahen vehahel or.`
 
-[z-camera | g-red | [used-by | b-Alahen]]
+z-Azawan | v-sit | [at | b-radio] . z-Alahen | v-sit | there
+:::
+
+**6.** *The family, even Azawan, writes.*
+
+::: details Show answer
+`zavahal wezum al zazawan varadal.`
+
+z-family | [w-amazement | including] | z-Azawan | v-write
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zunuzel am zahaben ul zazawan.`
+**1.** `ael zalahen varadal.`
 
 ::: details Show answer
+in.fact | z-Alahen | v-write
 
-z-newspaper | including.open | z-Ahaben | except | z-Azawan
-
-*The newspaper, including Ahaben and maybe more, except Azawan.*
+*In fact, Alahen writes.*
 :::
 
-**2.** `zazawan vezebel aem beredel.`
+**2.** `zalahen dagahol vamagal ol bal.`
 
 ::: details Show answer
+z-Alahen | d-camera | v-find | [at | b-none]
 
-z-Azawan | v-tell | [by | b-radio]
-
-*Azawan tells by radio.*
+*Alahen finds the camera nowhere.*
 :::
 
-**3.** `yahaben ol zalahen varadal.`
+**3.** `zavahal am zazawan ul zalahen vezebel.`
 
 ::: details Show answer
+z-family | including.open | z-Azawan | except | z-Alahen | v-tell
 
-y-Ahaben | instead | z-Alahen | v-write
-
-*Ahaben: instead, Alahen writes.*
+*The family, including Azawan and maybe more, but not Alahen, tells.*
 :::
 
-**4.** `zunuzel am zazawan am zalahen.`
+**4.** `zazawan oel zahaben varadal.`
 
 ::: details Show answer
+z-Azawan | through | z-Ahaben | v-write
 
-z-newspaper | including.open | z-Azawan | including.open | z-Alahen
-
-*The newspaper, including Azawan and including Alahen, and maybe more.*
+*Azawan through Ahaben write.* (everyone in the line from Azawan to Ahaben)
 :::
 
-**5.** `varadal om vezebel.`
+**5.** `yazawan al zalahen vezebel.`
 
 ::: details Show answer
+y-Azawan | additionally | z-Alahen | v-tell
 
-v-write | instead.open | v-tell
-
-*Tell instead of write, or some other replacement.*
+*Azawan! Additionally, Alahen tells.*
 :::
 
-**6.** `zunuzel al zahaben ul zalahen.`
+**6.** `zahaben dunuzel om deredel vahahal.`
 
 ::: details Show answer
+z-Ahaben | d-newspaper | instead.open | d-radio | v-see
 
-z-newspaper | including | z-Ahaben | except | z-Alahen
-
-*The newspaper, including Ahaben, except Alahen.*
+*Ahaben sees the radio instead of the newspaper* (one possible replacement).
 :::
 
-**7.** `zazawan ael bagahol varadal.`
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Ahaben runs toward the radio.* `zahaben varahal oel beredel.` or `zahaben varahal ul beredel.`
 
 ::: details Show answer
+`zahaben varahal oel beredel.`
 
-z-Azawan | [using | b-camera] | v-write
+z-Ahaben | v-run | [toward | b-radio]
 
-*Azawan writes with a camera.*
+**`oel`** names where the path ends; **`ul`** is *from* the radio.
 :::
 
-**8.** `zazawan varadal aol babehel.`
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Azawan's camera is big.* <!-- lint: error -->`zagahol em bazawan gelavam.`
 
 ::: details Show answer
+`zagahol gelavam em bazawan.`
 
-z-Azawan | v-write | [on | b-page]
+[z-camera | g-big | [used-by | b-Azawan]]
 
-*Azawan writes on a page.*
-:::
-
-**9.** `zunuzel vezebel. aol zahaben vezebel.`
-
-::: details Show answer
-
-z-newspaper | v-tell . for.example | z-Ahaben | v-tell
-
-*The newspaper tells. For example, Ahaben tells.*
-:::
-
-**10.** `zunuzel geredal em bazawan.`
-
-::: details Show answer
-
-[z-newspaper | g-red | [used-by | b-Azawan]]
-
-*Azawan's newspaper is red.*
+Put the camera's `/ɡ/` word before **`em`**; after the `/b/` it describes Azawan.
 :::
 
 ## Advanced {#advanced}
