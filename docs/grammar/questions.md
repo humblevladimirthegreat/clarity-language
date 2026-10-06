@@ -217,80 +217,83 @@ English *whether* reports a yes/no question inside a statement (*Azawan sees whe
 
 **Compare with:** a direct question (*Does Azawan walk?*) puts **`yol`** at the start of the turn. *If Alahen walks* is a condition, not an inner question; it uses its own [condition word](causation.md#if).
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a lost-and-found
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *umbrella* | `amebel` | |
-| *coat* | `ogodul` | |
-| *key* | `egehul` | |
-| *write* | `varadal` | |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *sit* | `vehahel` | `ehahel` *chair* |
-| *tell* | `vezebel` | `ezebel` *speech* |
-| *punch* | `vabahel` | |
-| *lie* | `valahal` | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *umbrella* | `amebel` | ☂️ |
+| *coat* | `ogodul` | 🧥 |
+| *key* | `egehul` | 🔑 |
+| *write* | `varadal` | ✍️ |
+| *lie* | `valahal` | 🤥 |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *find* | `vamagal` |
+| *see* | `vahahal` |
+| *pencil* | `ebeyol` |
+| *book* | `ubugal` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *Does Azawan sit?*
+**1.** *Does Azawan find the key?* (with the rising tone)
 
 ::: details Show answer
-`yol ? zazawan vehahel.`
+`yol ? zazawan degehul vamagal.`
 
-y-question | ? | z-Azawan | v-sit
+y-question | ? | z-Azawan | d-key | v-find
+
+**Also correct:** `yol zazawan degehul vamagal.`
 :::
 
 **2.** *Who sees the umbrella?*
 
 ::: details Show answer
-`yol ?zar vahahal damebel.`
+`yol ?zar damebel vahahal.`
 
-y-question | ?z-wh | v-see | d-umbrella
+y-question | ?z-wh | d-umbrella | v-see
+
+**Also correct:** `yol ?zar vahahal damebel.`
 :::
 
-**3.** *Is Alahen writing, I wonder?*
+**3.** *Is Alahen lying, I wonder?*
 
 ::: details Show answer
-`yom zalahen varadal.`
+`yom zalahen valahal.`
 
-y-soft-question | z-Alahen | v-write
+y-soft-question | z-Alahen | v-lie
 :::
 
-**4.** *Who sees what?*
+**4.** *Who finds what?*
 
 ::: details Show answer
-`yol zar vahahal dar.`
+`yol zar dar vamagal.`
 
-y-question | z-wh | v-see | d-wh
+y-question | z-wh | d-wh | v-find
+
+**Also correct:** `yol zar vamagal dar.`
 :::
 
-**5.** *Who else sees the coat?*
+**5.** *Ahaben writes, right?*
 
 ::: details Show answer
-`yol zur vahahal dogodul.`
+`zahaben varadal. yol yael.`
 
-y-question | z-wh-else | v-see | d-coat
+z-Ahaben | v-write . y-question | y-yes
 :::
 
-**6.** *Azawan tells Ahaben. Yes.* (confirm as a second turn)
-
-::: details Show answer
-`zazawan vezebel bahaben. yael.`
-
-z-Azawan | v-tell | b-Ahaben . y-yes
-:::
-
-**7.** *No.* / *False.* (polar, not “don’t”)
+**6.** *No.* / *False.* (the claim does not match)
 
 ::: details Show answer
 `yuel.`
@@ -298,86 +301,88 @@ z-Azawan | v-tell | b-Ahaben . y-yes
 y-no
 :::
 
-**8.** *Sure.* / *I’ll take that.*
-
-::: details Show answer
-`yaol.`
-
-y-sure
-:::
-
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `yom zahaben vahahal degehul.`
+**1.** `yom zahaben dogodul vahahal.`
 
 ::: details Show answer
+y-soft-question | z-Ahaben | d-coat | v-see
 
-y-soft-question | z-Ahaben | v-see | d-key
-
-*Is Ahaben seeing the key, I wonder?*
+*Is Ahaben seeing the coat, I wonder?*
 :::
 
-**2.** `yol ?zar varadal.`
+**2.** `yol zur debeyol vamagal.`
 
 ::: details Show answer
+y-question | z-wh-else | d-pencil | v-find
 
-y-question | ?z-wh | v-write
-
-*Who writes?*
+*Who else finds a pencil?*
 :::
 
-**3.** `yol zal vehahel.`
+**3.** `yol zal dubugal vamagal.`
 
 ::: details Show answer
+y-question | z-none | d-book | v-find
 
-y-question | z-none | v-sit
-
-*Does nobody sit?*
+*Does nobody find a book?*
 :::
 
-**4.** `yol zar vezebel dar.`
+**4.** `zazawan vahahal dorl zalahen degehul vamagal.`
 
 ::: details Show answer
+z-Azawan | v-see | d-whether-clause | z-Alahen | d-key | v-find
 
-y-question | z-wh | v-tell | d-wh
-
-*Who tells what?*
+*Azawan sees whether Alahen finds the key.*
 :::
 
-**5.** `yaem.`
+**5.** `yaom.`
 
 ::: details Show answer
+y-sure-soft
 
-y-yes-soft
-
-*I think so.* / *Yeah.*
+*Okay.* / *Sure, I guess.*
 :::
 
 **6.** `alahen.`
 
 ::: details Show answer
-
 Alahen
 
 *Alahen.* (just the fill)
 :::
 
-**7.** `yul vabahel.`
+#### Pick one {#beginner-pick-one}
+
+**1.** *Who writes?* `yol ?zar varadal.` or `yol ?zur varadal.`
 
 ::: details Show answer
+`yol ?zar varadal.`
 
-y-prohibition | v-punch
+y-question | ?z-wh | v-write
 
-*Don’t punch.*
+**`zar`** asks *who*; **`zur`** asks *who else*.
 :::
 
-**8.** `zalahen valahal. yael.`
+**2.** *No.* (answering *Does Alahen lie?*) `yuel.` or `yul.`
 
 ::: details Show answer
+`yuel.`
 
-z-Alahen | v-lie . y-yes
+y-no
 
-*Alahen lies. Yes.*
+**`yuel`** says the claim does not match; **`yul`** forbids, *don't*.
+:::
+
+#### Fix it {#beginner-fix-it}
+
+**1.** *Azawan finds the coat, right?* <!-- lint: error -->`yol zazawan dogodul vamagal. yael.`
+
+::: details Show answer
+`zazawan dogodul vamagal. yol yael.`
+
+z-Azawan | d-coat | v-find . y-question | y-yes
+
+The statement stays a statement; the tag **`yol yael.`** is its own short question after it.
 :::
 
 ## Intermediate {#intermediate}
