@@ -687,238 +687,172 @@ Write the ordinary [word ending](word-endings.md) at the end of the whole compou
 | `gewezathahan` | *our left* (shared facing) |
 | `gabahal` / `habahal` | gravity *up* |
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a harbor
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *boat* | `obodal` | |
-| *ship* | `ehebal` | |
-| *life-buoy* | `alavul` | |
-| *walk* | `owogal` | |
-| *go* | `vuvudel` | |
-| *fight* | `vavadal` | |
-| *pour* | `vobohol` | |
-| *construct* | `vagozal` | |
-| *steal* | `varagum` | |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *north* / body *ahead* | `onoval` | |
-| *south* / body *back* | `azaval` | |
-| *west* / body *left* | `ewezal` | |
-| *east* / body *right* | `odul` | |
-| *northwest* / *forward-left* | `onovel` | |
-| *up* (gravity) | `abahal` | |
-| *down* (gravity) | `adahel` | |
-| *listener* | `ehon` | `ehol` *headphones* |
-| *speaker* | `amun` | `amul` *microphone* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *boat* | `obodal` | 🚤 |
+| *ship* | `ehebal` | 🚢 |
+| *go* | `vuvudel` | 👣 from *footprints* |
+| *steal* | `varagum` | 🦝 from *raccoon* |
+| *west* | `ewezal` | ⬅️: west on the map, left on a face |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *down* | `adahel` |
+| *construct* | `vagozal` |
+| *swim* | `vezewel` |
+| *write* | `varadal` |
+| *walk* | `vowogal` |
+| *run* | `varahal` |
+| *sit* | `vehahel` |
+| *see* | `vahahal` |
+| *scream* | `vezugel` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *The boat on Azawan’s left.*
+**1.** *Alahen is a thief* (as a practiced role).
 
 ::: details Show answer
-`zobodal gewezathazawan.`
+`zalahen gaxaraguthem.`
 
-z-boat | g-west-th-Azawan
+z-Alahen | g-agent-x-theft-th-role
 :::
 
-**2.** *Walk north.*
+**2.** *Azawan writes. Ahaben sees what Azawan writes with.*
 
 ::: details Show answer
-`yel vowogal honoval.`
+`zazawan varadal. zahaben daexaradar vahahal.`
 
-y-command | v-walk | h-north
+z-Azawan | v-write . z-Ahaben | d-←instrument-x-write | v-see
 :::
 
-**3.** *The ship on Alahen’s right.*
+**3.** *Alahen goes. Azawan sees where Alahen goes.*
 
 ::: details Show answer
-`zehebal goduthalahen.`
+`zalahen vuvudel. zazawan doexuvuder vahahal.`
 
-z-ship | g-east-th-Alahen
+z-Alahen | v-go . z-Azawan | d-←goal-x-go | v-see
 :::
 
-**4.** *Walk down.*
+**4.** *Alahen steals. The one who loses out screams.*
 
 ::: details Show answer
-`yel vowogal hadahel.`
+`zalahen varagum. zuexaragur vezugel.`
 
-y-command | v-walk | h-down
+z-Alahen | v-steal . z-←bearer-x-steal | v-scream
 :::
 
-**5.** *The life-buoy is left of the boat, from Azawan’s view.*
+**5.** *Ahaben, walk left* (Azawan's left).
 
 ::: details Show answer
-`zalavul gewezathazawan bobodal.`
+`yel zahaben vowogal hewezathazawan.`
 
-z-life-buoy | [g-west-th-Azawan | b-boat]
+y-command | z-Ahaben | v-walk | h-west-th-Azawan
 :::
 
-**6.** *You, walk left (your left).*
+**6.** *The boat sits west of the ship.*
 
 ::: details Show answer
-`yel zehon vowogal hewezathehon.`
+`zobodal vehahel gewezal behebal.`
 
-y-command | z-listener | v-walk | h-west-th-listener
-:::
-
-**7.** *The boat on my left.*
-
-::: details Show answer
-`zobodal gewezathamun.`
-
-z-boat | g-west-th-speaker
-:::
-
-**8.** *Alahen, walk west.*
-
-::: details Show answer
-`yel zalahen vowogal hewezal.`
-
-y-command | z-Alahen | v-walk | h-west
-:::
-
-**9.** *Azawan sees a walkway.*
-
-::: details Show answer
-`zazawan duoxowogal vahahal.`
-
-z-Azawan | d-path-x-walk | v-see
-:::
-
-**10.** *Alahen fights. Azawan sees what Alahen fought with.*
-
-::: details Show answer
-`zalahen vavadal. zazawan daexavadar vahahal.`
-
-z-Alahen | v-fight . z-Azawan | d-←instrument-x-fight | v-see
-:::
-
-**11.** *Ahaben builds. Alahen sees what Ahaben built.*
-
-::: details Show answer
-`zahaben vagozal. zalahen daoxagozar vahahal.`
-
-z-Ahaben | v-construct . z-Alahen | d-←result-x-construct | v-see
+z-boat | v-sit | [g-west | b-ship]
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zobodal goduthazawan.`
+**1.** `yel zalahen vuvudel hewezal.`
 
 ::: details Show answer
+y-command | z-Alahen | v-go | h-west
 
-z-boat | g-east-th-Azawan
-
-*The boat on Azawan’s right.*
+*Alahen, go west.*
 :::
 
-**2.** `yel vowogal hewezal.`
+**2.** `zazawan vezewel hadahel bobodal.`
 
 ::: details Show answer
+z-Azawan | v-swim | [h-down | b-boat]
 
-y-command | v-walk | h-west
-
-*Walk west.*
+*Azawan swims under the boat.*
 :::
 
-**3.** `zehebal gazaval.`
+**3.** `zahaben vagozal. zalahen daoxagozar vahahal.`
 
 ::: details Show answer
+z-Ahaben | v-construct . z-Alahen | d-←result-x-construct | v-see
 
-z-ship | g-south
-
-*The ship to the south.*
+*Ahaben builds. Alahen sees what Ahaben built.*
 :::
 
-**4.** `yel vowogal habahal.`
+**4.** `zazawan vowogal. zalahen duoxowogar vahahal.`
 
 ::: details Show answer
+z-Azawan | v-walk . z-Alahen | d-←path-x-walk | v-see
 
-y-command | v-walk | h-up
-
-*Walk up.*
+*Azawan walks. Alahen sees the way Azawan walks.*
 :::
 
-**5.** `zalavul gewezathalahen bobodal.`
+**5.** `zazawan vuvudel oel behebal. zalahen doexar vahahal.`
 
 ::: details Show answer
+z-Azawan | v-go | [toward | b-ship] . z-Alahen | d-←goal.same | v-see
 
-z-life-buoy | [g-west-th-Alahen | b-boat]
-
-*The life-buoy is left of the boat, from Alahen’s view.*
+*Azawan goes toward the ship. Alahen sees the ship.*
 :::
 
-**6.** `yel zehon vowogal hoduthehon.`
+**6.** `zahaben varahal. zazawan vehahel hewezathaxar.`
 
 ::: details Show answer
+z-Ahaben | v-run . z-Azawan | v-sit | h-west-th-←agent.same
 
-y-command | z-listener | v-walk | h-east-th-listener
-
-*You, walk right (your right).*
+*Ahaben runs. Azawan sits on Ahaben's left.*
 :::
 
-**7.** `zehebal gonovethahaben.`
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Azawan sits on Ahaben's left.* `zazawan vehahel hewezathahaben.` or `zazawan vehahel hewezathazawan.`
 
 ::: details Show answer
+`zazawan vehahel hewezathahaben.`
 
-z-ship | g-northwest-th-Ahaben
+z-Azawan | v-sit | h-west-th-Ahaben
 
-*The ship on Ahaben’s forward-left.*
+The name after **`th`** is whose facing counts; `hewezathazawan` is Azawan's own left.
 :::
 
-**8.** `yel zalahen vowogal hadahel.`
+**2.** *Ahaben sees something to write with.* `zahaben daexaradal vahahal.` or `zahaben daoxaradal vahahal.`
 
 ::: details Show answer
+`zahaben daexaradal vahahal.`
 
-y-command | z-Alahen | v-walk | h-down
+z-Ahaben | d-instrument-x-write | v-see
 
-*Alahen, walk down.*
+**`ae`** names the instrument; **`ao`** would be something written, the result.
 :::
 
-**9.** `zalahen doexuvudel vahahal.`
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Alahen goes left* (Alahen's own left). <!-- lint: error -->`zalahen vuvudel hewezal.`
 
 ::: details Show answer
+`zalahen vuvudel hewezathaxer.`
 
-z-Alahen | d-goal-x-footprints | v-see
+z-Alahen | v-go | h-west-th-←agent.self
 
-*Alahen sees a destination.*
-:::
-
-**10.** `zazawan vobohol. zalahen duaxobohor vahahal.`
-
-::: details Show answer
-
-z-Azawan | v-pour . z-Alahen | d-←source-x-pour | v-see
-
-*Azawan pours. Alahen sees where it was poured from.*
-:::
-
-**11.** `zalahen varagum. zazawan duexaragur vahahal.`
-
-::: details Show answer
-
-z-Alahen | v-steal . z-Azawan | d-←bearer-x-steal | v-see
-
-*Alahen steals. Azawan sees the one stolen from.*
-:::
-
-**12.** `zalahen vavadal. zazawan daexar vahahal.`
-
-::: details Show answer
-
-z-Alahen | v-fight . z-Azawan | d-←instrument.same | v-see
-
-*Alahen fights. Azawan sees what Alahen fought with.*
+A bare arrow word is the compass; for someone's left, add **`th`** and whose facing counts.
 :::
 
 ## See also

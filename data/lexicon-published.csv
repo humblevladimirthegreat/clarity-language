@@ -255,7 +255,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 👥,silhouettes,azewe,community,busts form community,,society; club; association; folk; band; ethnic,
 🫂,hug,ahage,comfort,hug gives comfort,,comfortable; embrace,
 👪,family,avaha,kinship,a family is the people tied to you by blood,,household,hooks.md#beginner-practice
-👣,footprints,uvude,legacy,footprints leave legacy,v:go,trace; tour,roles.md#intermediate-translation-practice
+👣,footprints,uvude,legacy,footprints leave legacy,v:go,trace; tour,roles.md#intermediate-practice
 🫆,fingerprint,evebe,identity,fingerprint marks identity,,characteristic; personality,
 🐒,monkey,amage,mimicry,monkey see monkey do,,copy,
 🦍,gorilla,egewa,dominance,800-pound gorilla dominates,,dominate,
@@ -263,7 +263,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🐕,dog,odoga,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,questions.md#intermediate-practice
 🐺,wolf,uwuva,predation,wolf at the door,,,
 🦊,fox,avagu,cunning,sly as a fox,,,
-🦝,raccoon,aragu,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,,roles.md#intermediate-translation-practice
+🦝,raccoon,aragu,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,,roles.md#intermediate-practice
 🐈,cat,agadu,curiosity,curiosity killed the cat,,wonder; curious; interest,knowing.md#advanced-translation-practice
 🦁,lion,alahe,courage,brave as a lion,,,
 🐅,tiger,adege,ferocity,fight like a tiger,,,
@@ -595,10 +595,10 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🛑,stop,azada,cessation,stop sign means do not proceed; halt is bringing movement to stop,,cancel; eliminate,spans.md#beginner-practice
 🚧,construction,ageza,blockage,construction blocks the road; blockage is something in the way,,block; barrier; architecture,roles.md#beginner-practice
 ⚓,anchor,age,grounding,anchor holds the ship steady; grounding is staying steady,,,hooks.md#advanced-translation-practice
-🛟,life-buoy,alavu,rescue,a lifebuoy is thrown to pull someone from the water,,,roles.md#intermediate-translation-practice
+🛟,life-buoy,alavu,rescue,a lifebuoy is thrown to pull someone from the water,,,
 🛶,canoe,agawo,lake,a canoe floats on a lake,,,
-🚤,boat,oboda,superficiality,speedboat skims; superficiality is staying on the surface of meaning,,,roles.md#intermediate-translation-practice
-🚢,ship,eheba,voyage,ship crosses open seas; voyage is a long sea journey,,journey; sail,roles.md#intermediate-translation-practice
+🚤,boat,oboda,superficiality,speedboat skims; superficiality is staying on the surface of meaning,,,roles.md#intermediate-practice
+🚢,ship,eheba,voyage,ship crosses open seas; voyage is a long sea journey,,journey; sail,roles.md#intermediate-practice
 ✈️,airplane,erabe,,,,plane; aircraft; flight,
 🛫,departure,edaba,abandonment,plane lifting off leaves the ground; departure is setting out,,abandon,knowing.md#beginner-practice
 🛬,arrival,evaha,reaching,plane touching down reaches destination; arrival is reaching the end,,,comparatives.md#intermediate-practice
@@ -972,14 +972,14 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔞,no-minors,onohu,,,,,
 ☢️,radioactive,erade,toxicity,radiation poisons; toxicity is being harmful to be near,,,
 ☣️,biohazard,obaha,,,,,
-⬆️,north,onova,,,,northern,roles.md#intermediate-translation-practice
+⬆️,north,onova,,,,northern,
 ↗️,northeast,anove,,,,,
 ➡️,east,odu,progress,map-right is east; progress is moving ahead,,eastern,dependents.md#beginner-practice
 ↘️,southeast,azove,,,,,
-⬇️,south,azava,,,,southern,roles.md#intermediate-translation-practice
+⬇️,south,azava,,,,southern,
 ↙️,southwest,azawe,retreat,map down-left is southwest; retreat is moving away back,,withdraw; retire,
-⬅️,west,eweza,return,map-left is west; return is going back again,,western; react; counter,roles.md#intermediate-translation-practice
-↖️,northwest,onove,,,,,roles.md#intermediate-translation-practice
+⬅️,west,eweza,return,map-left is west; return is going back again,,western; react; counter,roles.md#intermediate-practice
+↖️,northwest,onove,,,,,
 ↕️,vertical,evade,hierarchy,up and down; hierarchy ranks higher and lower,,,
 ↔️,east-west,eda,reciprocity,east-west arrow runs both ways; reciprocity is mutual give and take,,mutual,pronouns.md#intermediate-practice
 ↩️,back,abaga,revert,return arrow curves back left; revert is going back to before,,,
@@ -1023,7 +1023,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ◀️,backward,abuge,reverse,backward plays opposite direction; reverse is going opposite direction,,,
 ⏪,rewind,erewa,backtrack,double rewind jumps back; backtrack is revisiting earlier,,,
 ⏮️,previous-track,ebave,,,,previous,
-⏫,up,abaha,rise,double-up chevron is skyward; rise is moving upward,,arise; boost,roles.md#intermediate-translation-practice
+⏫,up,abaha,rise,double-up chevron is skyward; rise is moving upward,,arise; boost,
 ⏬,down,adahe,decline,double-down chevron is toward the pull; to decline is to move downward,v:fall,decrease; low; drop,restrictors.md#intermediate-practice
 ⏸️,pause,obozu,hiatus,pause halts playback; hiatus is a temporary halt,,suspend,
 ⏺️,record,ere,preservation,record button captures now; preservation is the unobservable keeping-across-time,,tape; preserve; retain,
