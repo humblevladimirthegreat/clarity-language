@@ -217,7 +217,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💆,massage,ameza,soothing,massage brings relief,,,
 💇,haircut,ehegu,self-presentation,haircut is grooming; self-presentation is the unobservable aim,,,
 🚶,walk,owoga,,,,march; wander,relations.md#beginner-practice
-🧍,stand,azado,presence,stand shows presence,,existence; attendance,clause.md#intermediate-translation-practice
+🧍,stand,azado,presence,stand shows presence,,existence; attendance,clause.md#intermediate-practice
 🧎,kneel,eneha,submission,kneel shows submission,,,sakes.md#intermediate-translation-practice
 🧑‍🦼,power-chair,abavo,,,,,
 🧑‍🦽,propel,abobe,independence,self-propelling a chair shows independence,,motivate,
@@ -260,7 +260,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🐒,monkey,amage,mimicry,monkey see monkey do,,copy,
 🦍,gorilla,egewa,dominance,800-pound gorilla dominates,,dominate,
 🦧,orangutan,orada,,,,,
-🐕,dog,odoga,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,clause.md#intermediate-translation-practice
+🐕,dog,odoga,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,questions.md#intermediate-translation-practice
 🐺,wolf,uwuva,predation,wolf at the door,,,
 🦊,fox,avagu,cunning,sly as a fox,,,
 🦝,raccoon,aragu,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,,roles.md#intermediate-translation-practice
@@ -571,7 +571,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🎢,rollercoaster,orogo,volatility,a rollercoaster rises and drops; volatility swings up and down,,,
 💈,shave,ehevo,,,,,
 🎪,circus,azega,spectacle,circus tent promises a show; spectacle is a striking display,,exhibition; demonstration,
-🚆,train,edeha,momentum,train stays on its track; momentum keeps moving forward,,rail,clause.md#intermediate-translation-practice
+🚆,train,edeha,momentum,train stays on its track; momentum keeps moving forward,,rail,clause.md#intermediate-practice
 🚉,station,ezede,hub,station connects many routes; hub is where paths meet,,platform,relations.md#intermediate-translation-practice
 🚌,bus,abazu,commute,bus carries many riders daily; commute is the daily journey,,,
 🚑,ambulance,amaba,emergency,ambulance rushes to crisis; emergency is urgent crisis,,,word-endings.md#intermediate-practice
@@ -661,7 +661,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🎁,present,ebe,generosity,a present is given to another; generosity is giving freely,,gift; submit; charity,sakes.md#intermediate-translation-practice
 🎗️,awareness,aweza,solidarity,the ribbon is worn for a cause; solidarity is standing with others,,aware,
 🎟️,admission-tickets,adegu,admission,ticket grants entry inside; admission is being let in,,entry,
-🎫,ticket,edega,,,,,clause.md#intermediate-translation-practice
+🎫,ticket,edega,,,,,clause.md#intermediate-practice
 🎖️,honor,aneha,prestige,a medal is worn for all to admire,,famous,
 🏆,trophy,odove,score,trophy marks the final tally; score is the counted result,,grade; prize; champion; beat; rating,numbers.md#intermediate-translation-practice
 🏅,medal,ameda,achievement,medal marks accomplished feat; achievement is reaching a goal,,success; achieve; successful; award; fulfill; accomplish,join-across-roles.md#intermediate-translation-practice
@@ -1014,7 +1014,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ♓,pisces,obaze,empathy,pisces flows with others feelings; empathy is feeling with another,,,
 ⛎,ophiuchus,ovega,,,,,
 🔀,shuffle,aheve,randomness,shuffle mixes order unpredictably; randomness is without fixed order,,random,
-🔁,repeat,erobe,repetition,repeat plays the same again; repetition is doing again,m.h:again,,
+🔁,repeat,erobe,repetition,repeat plays the same again; repetition is doing again,m.h:again,,clause.md#intermediate-practice
 🔂,repeat-one,erebe,,,,,
 ▶️,play-button,abedo,commencement,play button begins the action; start is setting in motion,,,
 ⏩,fast-forward,avazo,speed,fast-forward plays things faster; speed is how fast,m.h:quickly,quick; rapidly; rapid; fast; prompt,
@@ -1073,11 +1073,11 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ℹ️,information,eneve,fact,the info sign gives facts; a fact is what is actually so,,data; inform,
 🅿️,parking,aboge,allotment,parking marks a stall; allotment is the unobservable assigned share,,assign,
 🆘,sos,ezaha,distress,sos signals distress,,,
-🔴,red,ereda,,,,,clause.md#intermediate-translation-practice
+🔴,red,ereda,,,,,pronouns.md#intermediate-translation-practice
 🟠,orange,oraha,,,,,
 🟡,yellow,eyaye,caution,yellow circle warns slow down; caution is careful awareness,,,
 🟢,green,ego,permission,green circle signals go ahead; permission is allowed to proceed,,license,sakes.md#intermediate-translation-practice
-🔵,blue,ubuhe,,,,,clause.md#intermediate-translation-practice
+🔵,blue,ubuhe,,,,,clause.md#intermediate-practice
 🟣,purple,ebebu,royalty,purple circle marks regal hue; royalty is high noble rank,,,
 🟤,brown,abavu,earthiness,brown circle is soil and wood; earthiness is plain grounded quality,,,
 ⚫,black,abago,,,,,

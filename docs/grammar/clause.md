@@ -419,130 +419,175 @@ English uses the passive (*The cat was seen*, *Mistakes were made*) to avoid nam
 
 **Compare with:** [`zunan`](pronouns.md#special-pronouns) *someone* says that somebody did it, without saying who. With no subject at all, the sentence does not mention a doer. A missing subject never means the [topic](pronouns.md#topic-pronoun): to make the topic the doer, write `zozan`.
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a waiting room
 
-**Roots used here:**
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *ticket* | `edegal` | 🎫 |
+| *train* | `edehal` | 🚆 |
+| *blue* | `ubuhel` | 🔵 |
+| *stand* | `vazadol` | 🧍 |
+| *again* | `herobem` | 🔁 from *repeat*: the same thing once more |
+
+**Review:**
 
 | English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
-| *ticket* | `edegal` |
-| *blue* | `ubuhel` |
-| *red* | `eredal` |
-| *same* | `gugol` |
-| *sit* | `vehahel` |
-| *stand* | `vazadol` |
-| *see* | `vahahal` |
-| *tell* | `vezebel` |
+| *police* | `abazel` |
+| **SAME** | `ugol` |
+| *sleepy* | `ezebul` |
 | *very* | `welavam` |
-| *train* | `edehal` |
-| *dog* | `odogal` |
-| *sleep* | `ezebal` |
+| *ocean* | `wohahal` |
 | *haste* | `hadehum` |
+| *umbrella* | `amebel` |
+| *see* | `vahahal` |
+| *find* | `vamagal` |
+| *sit* | `vehahel` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *A very red train stands.* (adjective before the noun)
+**1.** *A sleepy Alahen stands.* (adjective before the noun)
 
 ::: details Show answer
-`welavam gleredal zedehal vazadol.`
+`glezebul zalahen vazadol.`
 
-[[w-very | gl-red] | z-train] | v-stand
+[gl-sleepy | z-Alahen] | v-stand
 :::
 
-**2.** *Azawan the same as blue Ahaben stands.*
+**2.** *The police officer the same as sleepy Azawan stands.*
 
 ::: details Show answer
-`zazawan gugol bahaben gubuhel vazadol.`
+`zabazel gugol bazawan gezebul vazadol.`
 
-[z-Azawan | [g-SAME | [b-Ahaben | g-blue]]] | v-stand
+[z-police | [g-SAME | [b-Azawan | g-sleepy]]] | v-stand
 :::
 
-**3.** *A very blue train sits.*
+**3.** *Ahaben sees the train again.*
 
 ::: details Show answer
-`zedehal welavam gubuhel vehahel.`
+`zahaben dedehal herobem vahahal.`
 
-[z-train | [w-very | g-blue]] | v-sit
+z-Ahaben | d-train | h-again | v-see
+
+**Also correct:** `zahaben herobem dedehal vahahal.`
 :::
 
-**4.** *A red train sees a blue ticket.*
+**4.** *A ticket was seen.*
 
 ::: details Show answer
-`zedehal geredal gubuhel dedegal vahahal.`
+`dedegal vahahal.`
 
-[z-train | g-red | g-blue] | d-ticket | v-see
+d-ticket | v-see
 :::
 
-**5.** *Ahaben tells Alahen hastily.*
+**5.** *Alahen stands extremely hastily.*
 
 ::: details Show answer
-`zahaben balahen hadehum vezebel.`
+`zalahen wohahal hadehum vazadol.`
 
-z-Ahaben | b-Alahen | h-haste | v-tell
+z-Alahen | [w-ocean | h-haste] | v-stand
 :::
 
-**6.** *Azawan was seen.*
+**6.** *Alahen sees a very blue train.*
 
 ::: details Show answer
-`dazawan vahahal.`
+`zalahen dedehal welavam gubuhel vahahal.`
 
-d-Azawan | v-see
+z-Alahen | [d-train | [w-very | g-blue]] | v-see
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `glubuhel zedehal vazadol.`
+**1.** `welavam glezebul zabazel vehahel.`
 
 ::: details Show answer
+[[w-very | gl-sleepy] | z-police] | v-sit
+
+*A very sleepy police officer sits.*
+:::
+
+**2.** `glugol bazawan zabazel gugol balahen.`
+
+::: details Show answer
+[[gl-SAME | b-Azawan] | z-police] | [g-SAME | b-Alahen]
+
+*A police officer the same as Azawan, the same as Alahen.*
+:::
+
+**3.** `damebel vamagal.`
+
+::: details Show answer
+d-umbrella | v-find
+
+*An umbrella was found.*
+:::
+
+**4.** `zazawan welavam hadehum vazadol.`
+
+::: details Show answer
+z-Azawan | [w-very | h-haste] | v-stand
+
+*Azawan stands very hastily.*
+:::
+
+**5.** `zedehal herobem vazadol.`
+
+::: details Show answer
+z-train | h-again | v-stand
+
+*A train stands again.*
+:::
+
+**6.** `zahaben dedegal gugol vahahal.`
+
+::: details Show answer
+z-Ahaben | [d-ticket | g-SAME] | v-see
+
+*Ahaben sees the same ticket (as before).*
+:::
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Azawan sees a police officer the same as blue Ahaben.* `zazawan dabazel gugol bahaben gubuhel vahahal.` or `zazawan dabazel gubuhel gugol bahaben vahahal.`
+
+::: details Show answer
+`zazawan dabazel gugol bahaben gubuhel vahahal.`
+
+z-Azawan | [d-police | [g-SAME | [b-Ahaben | g-blue]]] | v-see
+
+After the **`gugol`** pair, a plain adjective describes the extra noun; before it, *blue* describes the police officer.
+:::
+
+**2.** *Alahen was seen.* `dalahen vahahal.` or `zalahen vahahal.`
+
+::: details Show answer
+`dalahen vahahal.`
+
+d-Alahen | v-see
+
+Leave out the subject and keep Alahen as the object; `zalahen vahahal` is *Alahen sees*.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *A blue train stands.* (adjective before the noun) <!-- lint: error -->`gubuhel zedehal vazadol.`
+
+::: details Show answer
+`glubuhel zedehal vazadol.`
 
 [gl-blue | z-train] | v-stand
 
-*A blue train stands.*
+An adjective before its noun takes **`gl-`**; a plain `/ɡ/` word describes the noun before it.
 :::
-
-**2.** `zahaben gugol balahen geredal vazadol.`
-
-::: details Show answer
-
-[z-Ahaben | [g-SAME | [b-Alahen | g-red]]] | v-stand
-
-*Ahaben the same as red Alahen stands.*
-:::
-
-**3.** `dedegal vahahal.`
-
-::: details Show answer
-
-d-ticket | v-see
-
-*A ticket was seen.*
-:::
-
-**4.** `zodogal welavam humum bazawan vezebal.`
-
-::: details Show answer
-
-z-dog | [[w-very | h-like] | b-Azawan] | v-sleep
-
-*A dog sleeps very like Azawan.*
-:::
-
-**5.** `zedehal welavam geredal vehahel.`
-
-::: details Show answer
-
-[z-train | [w-very | g-red]] | v-sit
-
-*A very red train sits.*
-:::
-
 
 ## Advanced {#advanced}
 
