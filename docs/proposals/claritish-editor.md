@@ -1,7 +1,7 @@
 # Proposal: Claritish writing editor
 
 **Status:** PROPOSED. Nothing here is built.  
-**Related:** [Claritish track](../meta/grammar-docs.md#claritish-track) (what a drop-in is, placement, the cheat sheet), [Claritish wording and voice](../meta/claritish-style.md), [the gap sections](../grammar/claritish/index.md#lessons) of each lesson, [`scripts/lint-claritish-cheat-sheet.ts`](../../scripts/lint-claritish-cheat-sheet.ts), `syntax-highlighting.md` (a separate idea for structure highlighting in full Agazan).  
+**Related:** [Claritish track](../meta/grammar-docs.md#claritish-track) (what a drop-in is, placement, the cheat sheet), [Claritish wording and voice](../meta/claritish-style.md), [the gap sections](../grammar/claritish/index.md#lessons) of each lesson, [`scripts/lint-cheat-sheets.ts`](../../scripts/lint-cheat-sheets.ts), `syntax-highlighting.md` (a separate idea for structure highlighting in full Agazan).  
 **Design authority:** none. The editor adds no forms. It points at lessons and drop-ins that already exist.
 
 ## Problem
@@ -125,7 +125,7 @@ Alternative: Tiptap is already a dev dependency (used only by a lint script). It
 | `data/claritish-flows.json` (new, hand-written) | Editors | Question flows: prompts and choices. Each choice names a **cheat sheet cell** (row label × column header), never a spelling |
 | `src/generated/claritish-editor.json` | Build | Resolved forms, glosses, gap excerpts, lesson URLs: everything the component needs, nothing it must look up |
 
-The forms are read from the **cheat sheet**, which `lint-claritish-cheat-sheet.ts` already keeps equal to the lesson tables, and its table parsing can be shared. So a lesson edit or a respelling (via `retie-docs`) reaches the editor with no editor-side change. The build fails when a flow names a cheat sheet cell that does not exist.
+The forms are read from the **cheat sheet**, which `lint-cheat-sheets.ts` already keeps equal to the lesson tables, and its table parsing can be shared. So a lesson edit or a respelling (via `retie-docs`) reaches the editor with no editor-side change. The build fails when a flow names a cheat sheet cell that does not exist.
 
 ### Matching
 
@@ -155,7 +155,7 @@ Each phase ships on its own and leaves the site in a usable state.
 ### Phase 0: data and build plumbing
 
 - Write `data/claritish-triggers.csv` and `data/claritish-flows.json` for **How sure are you?**, **How do you know?**, and **Thanks and sorry**.
-- Factor the cheat sheet table parser out of `lint-claritish-cheat-sheet.ts` into a shared module and generate `src/generated/claritish-editor.json`.
+- Factor the cheat sheet table parser out of `lint-cheat-sheets.ts` into a shared module and generate `src/generated/claritish-editor.json`.
 - Add the flow lint and the gap coverage lint, limited to the three lessons.
 - Add rows for the two new data files to the sources-of-truth table in `AGENTS.md`, and a short editor note (in `claritish-style.md` or its own meta page) on writing triggers and card copy.
 

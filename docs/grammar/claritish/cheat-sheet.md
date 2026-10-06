@@ -102,4 +102,4 @@ Motion ending: **-l** still, **-m** flowing, **-r** surging.
 | `;` | warm, affectionate | `!` | strong feeling |
 | `&` | contrast: this one, not another | | |
 
-<!-- Claritish track, last page: every drop-in from the lessons, condensed. Adds no forms and links only to lessons (docs/meta/grammar-docs.md#claritish-track). scripts/lint-claritish-cheat-sheet.ts checks it against the lessons' tables. -->
+<!-- Claritish track, last page: every drop-in from the lessons, condensed. Adds no forms and links only to lessons (docs/meta/grammar-docs.md#claritish-track). scripts/lint-cheat-sheets.ts checks it against the lessons' tables. -->

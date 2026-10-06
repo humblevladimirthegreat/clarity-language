@@ -88,6 +88,7 @@ The left side can be the clause standalone **`xual`** *everything* ([clause join
 
 The ending on an `A HOOK B` hook says whether B is complete. **-l** says B is the whole of it, like plain English *including B* or *except B*. **-m** says there may be more than B, like adding *and maybe more*. When you are unsure, prefer **-m**.
 
+<!-- cheat-sheet: joins-hooks -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **-l** (`al` / `el` / `ol` / `ul`) | B is the whole story you stand behind | unmarked (*including B*, *except B*, …) | **l** ≈ locked |
@@ -146,6 +147,7 @@ So the test is: `/b/` right after the hook, and no recipient `/b/` right before 
 
 The four one-vowel hooks name the everyday extras:
 
+<!-- cheat-sheet: joins-hooks -->
 | Agazan | Name | Use | Cue |
 |--------|------|-----|-----|
 | **`al`** | **in** | containment | **a** ≈ add (into a volume) |
@@ -411,6 +413,7 @@ Beginner already used closed **-l** and open **-m** for how complete B is, or ho
 
 #### In-clause
 
+<!-- cheat-sheet: joins-hooks -->
 | | **-l** | **-m** |
 |--|--------|--------|
 | **a** (*including*) | `al`: including B | `am`: including B, and maybe more |
@@ -422,6 +425,7 @@ Beginner already used closed **-l** and open **-m** for how complete B is, or ho
 
 At the front of a sentence, **-m** says this sentence is one of several you could say there: one more point among others, one way to reword, one possible replacement, one exception among others.
 
+<!-- cheat-sheet: joins-hooks -->
 | | **-l** | **-m** |
 |--|--------|--------|
 | **a** (*additionally*) | `al`: *Additionally, …* | `am`: *Among other things, …* |
@@ -462,6 +466,7 @@ Several extra-noun hooks on one clause are several extras (*from* one landmark *
 
 With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the general setting, not the exact contact, source, tool, or opponent. It is not a second copy of the same extra.
 
+<!-- cheat-sheet: joins-hooks -->
 | **-l** | English | **-m** | English | Cue |
 |--------|---------|--------|---------|-----|
 | **`al`** | *in* | **`am`** | *amid* | **a** ≈ add (into a volume); **-m** that volume as the setting |
@@ -633,6 +638,7 @@ English *here*, *there*, *this*, and *that* point at things by their distance fr
 
 Names come first. When you know who is talking or listening, use their name as the landmark (`om bazawan` *near Azawan*). Use speaker and listener when the conversation role itself matters, or when you have no name to use.
 
+<!-- cheat-sheet: joins-hooks -->
 | Agazan | Landmark | English |
 |--------|----------|---------|
 | `om bamagon` | near the speaker | *here*, *this* |
@@ -702,6 +708,7 @@ In reported speech, the speaker is still whoever says the whole sentence. After 
 
 English *there*, *from there*, and *for it* point back to a place or thing already named. In Agazan, give the extra-noun hook **-r** and leave out the `/b/` word: after the verb, the hook points back to the landmark already in play, the way [resume **-r**](pronouns.md#resume-r) does on a noun. A hook with **-r** has no noun on its right, and no phrase on its left to pair with (it is not a same-role hook).
 
+<!-- cheat-sheet: joins-hooks -->
 | Agazan | Points back to | English |
 |--------|----------------|---------|
 | `ar` | inside the place already named | *in there* / *in it* |
@@ -723,6 +730,7 @@ English *there*, *from there*, and *for it* point back to a place or thing alrea
 
 Stacked extra-noun vowels point back the same way: the vowels keep the extra they named (`aol` *on*, `ael` *using*, `uol` *through*), and **-r** drops the landmark.
 
+<!-- cheat-sheet: joins-hooks -->
 | Agazan | Points back to | English |
 |--------|----------------|---------|
 | `aor` | the face already named | *on it* |
@@ -860,6 +868,7 @@ When the items sit on a line with an order (people in a queue, days, chapters, n
 >
 > "Everyone from Azawan through Ahaben walks."
 
+<!-- cheat-sheet: joins-hooks -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`oel`** | A, B, and everything between | *A through B* | **o** ≈ at + **e** ≈ for: start at A, head for B |

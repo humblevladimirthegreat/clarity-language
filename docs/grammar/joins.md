@@ -226,6 +226,7 @@ The same vowels and endings work under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`
 
 With two or more items, each join reads as taught above. This table collects the readings for a join with only one item before it, or none.
 
+<!-- cheat-sheet: joins-hooks -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | `zal` / `zam` | standalone | *nothing* / *nobody* · *nothing, as far as I know* |
@@ -558,6 +559,7 @@ Rank **`e`** puts the first item at the **top** (*A matters more than B*). When 
 >
 > "Azawan, then Alahen, then Ahaben."
 
+<!-- cheat-sheet: joins-hooks -->
 | Arity | Closed **-l** | Open **-m** |
 |-------|---------------|-------------|
 | Multi (2+) | `A B zael` *A, then B* | `A B zaem` *roughly A, then B* |
@@ -726,6 +728,7 @@ When English would deny a list as a whole (*not both*), close the list with its 
 
 When English would say *every cat* rather than *everything but the cat*, write **`ua`** and put the kind as a shared adjective after the join (`zual gagadul`). Any nouns listed before that join are leftovers excluded from that kind. The same **`ua`** join covers both *every K* and *everything but X*.
 
+<!-- cheat-sheet: joins-hooks -->
 | Agazan | Use | English |
 |--------|-------|---------|
 | standalone `zual` | empty invert-add | *everything* / *everyone* |
@@ -842,6 +845,7 @@ To choose, ask whether one member could have the property. If none could, the cl
 >
 > "The wolf is rare."
 
+<!-- cheat-sheet: joins-hooks -->
 | Agazan | Covers | English |
 |--------|--------|---------|
 | `zual gagadul` | each cat in this situation, no exceptions | *every cat* |

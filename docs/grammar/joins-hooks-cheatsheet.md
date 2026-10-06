@@ -32,10 +32,10 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 
 | Rule | Example | English | Stage |
 |------|---------|---------|-------|
-| [Items first, then the join](joins.md#right-close); its first letter matches the items | `zodogal zagadul zal` | *a dog and a cat* | B |
-| | `vowogal varahal val` | *walk and run* | B |
+| [Items first, then the join](joins.md#and-lists-a); its first letter matches the items | `zodogal zagadul zal` | *a dog and a cat* | B |
+| | `vowogal varahal vam` | *walks and runs (and possibly more)* | B |
 | [Clause joins](joins.md#clause-joins) (`/x/`) go **between** clauses | `zazawan vowogal xam zalahen varahal` | *Azawan walks and Alahen runs* | B |
-| A different clause join closes everything before it | `A xol B xal C` | *(A or B) and C* | B |
+| A [different clause join](joins.md#clause-joins) closes everything before it | `A xol B xal C` | *(A or B) and C* | B |
 | [Nest](joins.md#fence-nesting) by stacking joins | `zedehel zagavel zol zowodel zal` | *(tea or coffee) and water* | I |
 | [Scope island](joins.md#scope-islands-join) keeps a small list inside a bigger one of the same role | `zazawan { zowodel zal } zam` | *Azawan and (just water)* | A |
 
@@ -44,7 +44,7 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | Ending | On a join | Stage |
 |--------|-----------|-------|
 | **-l** | [closed](joins.md#join-type-vowel-series): the listed items are the only ones | B |
-| **-m** | open: *(and possibly more)*; alone, *as far as I know* | B |
+| **-m** | [open](joins.md#and-lists-a): *(and possibly more)*; [alone](joins.md#standalone-phrase), *as far as I know* | B |
 | **-r** | [one unnamed member](joins.md#unspecified-member-r-phrase) (*something*, *someone*); one vowel only | B |
 | **-n** | `/z/` `/d/` `/b/`: [a named list](joins.md#named-list); `/x/`: [sequence](join-across-roles.md#clause-sequence); `/v/`: [join-act verb](join-across-roles.md#join-act-verbs); `/ɡ/` `/h/`: [join-relation](join-across-roles.md#join-relations) | I–A |
 
@@ -59,6 +59,7 @@ The same join reads differently with two or more items, [one item](joins.md#stan
 | `zol` | *A or B* (pick one) | *the only option is X* | *no options* | B |
 | `zom` | *A or B* (optional) | *X (optional)* | *no pick, as far as I know* | B |
 | `zul` | *neither A nor B* | *not X* | *no* | B |
+| `zum` | *neither A nor B (and possibly more)* | *not X (and possibly more)* | *no, as far as I know* | B |
 | `zual` | *everything but A and B* | *everything but X* | *everything* / *everyone* | B |
 | `zel` | *A matters more than B* | *only X matters* | *no favorite* | B |
 | `zem` | | *X first* / *mainly X* | *no favorite, as far as I know* | B |
@@ -69,6 +70,7 @@ The same join reads differently with two or more items, [one item](joins.md#stan
 | `zaol` | *A and/or B* | *X is enough* | *all set* | I |
 | `zuol` | *anything but A and B* | *anything but X* | *anything (goes)* | I |
 | `zael` | *A, then B* | *start with X* | *in no particular order* | I |
+| `zaem` | *roughly A, then B* | *maybe start with X* | *not sure where to start* | I |
 | `zoel` | *A and B tied* | *X tied for* | *it's a draw* | I |
 | `zuel` | *B, then A* (last first) | *X last* | *no least-favorite* | I |
 
@@ -80,12 +82,12 @@ A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `x
 |-----|---------|---------|-------|
 | [SHARED](joins.md#shared-after-the-join): describe every item, right after the join | `zodogal zagadul zal gamadam` | *(challenging dog) and (challenging cat)* | I |
 | [Every K](joins.md#universals-domains-generics) | `zual gagadul` | *every cat* | I |
-| K in general | `zuam gagadul` | *cats in general* | I |
+| [K in general](joins.md#universals-domains-generics) | `zuam gagadul` | *cats in general* | I |
 | [The kind itself](joins.md#kind-reference) | `zuan gagadul` | *the cat* (as a species) | I |
-| No K | `zul gagadul` | *no cat* | I |
+| [No K](joins.md#universals-domains-generics) | `zul gagadul` | *no cat* | I |
 | [Respectively](joins.md#respectively) | `zazawan zalahen zal vahahal dagadul dodogal wazem dal` | *saw a cat and a dog, respectively* | I |
 | [Deny the whole list](joins.md#exclusivity-and-denying-a-whole-list) | `vowogal varahal val vul` | *not both walk and run* | I |
-| Deny each item | `vowogal varahal vul` | *neither walk nor run* | B |
+| [Deny each item](joins.md#exclusivity-and-denying-a-whole-list) | `vowogal varahal vul` | *neither walk nor run* | B |
 | [Named list](joins.md#named-list) | `zebevul zabodel zan` | *bread and butter* (the set phrase) | A |
 
 ## Joins across roles {#across-roles}
@@ -130,18 +132,18 @@ A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds a
 
 **-l**: B is the whole story. **-m**: *and maybe more* (in-clause) or *one of several* (at the front). **-n** names the whole phrase: `dedehel on dagavel` *Tea-to-Coffee* (a cafe).
 
-| Hook | `A HOOK B` | At the front | **-m** at the front | Stage |
+| Hook | `A HOOK B` | [At the front](hooks.md#discourse-hooks) | **-m** at the front | Stage |
 |------|------------|--------------|---------------------|-------|
-| `al` | *A, including B* | *Additionally, …* | `am` *Among other things, …* | B |
-| `el` | *A, or rather B* | *In other words, …* | `em` *To put it one way, …* | B |
-| `ol` | *B instead of A* | *Instead, …* / *Actually, …* | `om` *Instead, for instance, …* | B |
-| `ul` | *A except B* | *Except, …* | `um` *Except, among other exceptions, …* | B |
+| `al` | [*A, including B*](hooks.md#including) | *Additionally, …* | `am` *Among other things, …* | B |
+| `el` | [*A, or rather B*](hooks.md#rather) | *In other words, …* | `em` *To put it one way, …* | B |
+| `ol` | [*B instead of A*](hooks.md#instead) | *Instead, …* / *Actually, …* | `om` *Instead, for instance, …* | B |
+| `ul` | [*A except B*](hooks.md#except) | *Except, …* | `um` *Except, among other exceptions, …* | B |
 | `ael` | | [*In fact, …*](hooks.md#stacked-discourse) | `aem` *In fact, and maybe more, …* | I |
-| `aol` | | *For example, …* | `aom` *For example, among others, …* | I |
+| `aol` | | [*For example, …*](hooks.md#stacked-discourse) | `aom` *For example, among others, …* | I |
 | `or` | | [*Anyway, …*](hooks.md#hook-resume) | | I |
-| `er` | | *As I said, …* | | I |
-| `ar` | | *Going back to that, …* | | I |
-| `ur` | | *Never mind that, …* | | I |
+| `er` | | [*As I said, …*](hooks.md#hook-resume) | | I |
+| `ar` | | [*Going back to that, …*](hooks.md#hook-resume) | | I |
+| `ur` | | [*Never mind that, …*](hooks.md#hook-resume) | | I |
 
 More: [parallel chains](hooks.md#parallel-chains) `zavahal am zazawan ul zalahen` (each hook applies to A); [detail on the hook](hooks.md#hook-w) `wezum al` *even*; ranges `ual` *strictly between*, `uel` *outside*, `uar` *someone between*. All Intermediate.
 
@@ -170,22 +172,22 @@ Stage: `al` `ol` `ul` `el` **-l** are Beginner; the rest of the first three colu
 |--------|---------|-------|
 | `ul barl` + clause | [*since*](hooks.md#since) (that happened) | B |
 | `ol bar` | [*somewhere*](hooks.md#place-indefinites); in a question, *where?* | I |
-| `ol bur` / `ol bal` / `ol bual` | *somewhere else* / *nowhere* / *everywhere* | I |
+| `ol bur` / `ol bal` / `ol bual` | [*somewhere else*](hooks.md#place-indefinites) / *nowhere* / *everywhere* | I |
 | `ael bar` (in a question) | [*with what?*](hooks.md#extra-noun-intermediate) | I |
 | `om bamagon` / `om behodon` | [*here*, *this*](hooks.md#deixis) / *there by you*, *that* | I |
-| `om bahan` / `um bahan` | *here with us* / *over there* | I |
-| `vuvudel oel bamagon` | *comes to me* | I |
-| `valagel dabegol oel bamagon` | *brings me the package* | I |
+| `om bahan` / `um bahan` | [*here with us*](hooks.md#deixis) / *over there* | I |
+| `vuvudel oel bamagon` | [*comes to me*](hooks.md#deixis) | I |
+| `valagel dabegol oel bamagon` | [*brings me the package*](hooks.md#deixis) | I |
 | `zodogal em bamagon` | [*my dog*](hooks.md#genitive) (in my use) | I |
 
 ## Don't mix up {#dont-mix-up}
 
 | This | vs | That |
 |------|----|------|
-| `zodogal zul` *no dog* (join denies) | | `zavahal ul zazawan` *the family except Azawan* (hook takes B out of A) |
-| `zahodom gan bazawan` *a team including Azawan* | | `zahodom al zazawan` *the team, including Azawan* (afterthought) |
-| `zazawan zahaben zal` *the two of them* | | `zazawan oel zahaben` *Azawan through Ahaben*; `zazawan zahaben zael` *Azawan, then Ahaben* |
-| hook `oel` *toward X* (where a path ends) | | `zael` + X *start with X* (where it starts) |
-| `xan` *and then* (what happened next) | | `xael` (the order is part of the claim: a recipe) |
-| `vun` *refuses* | | `vuan` *excludes* |
-| `ol …` *Instead, …* (replaces the last claim) | | `or …` *Anyway, …* (back to the main line) |
+| `zodogal zul` *no dog* ([join denies](joins.md#universals-domains-generics)) | | `zavahal ul zazawan` *the family except Azawan* ([hook takes B out of A](hooks.md#except)) |
+| `zahodom gan bazawan` *a team including Azawan* ([join-relation](join-across-roles.md#join-relations)) | | `zahodom al zazawan` *the team, including Azawan* (afterthought) |
+| `zazawan zahaben zal` *the two of them* ([vs a range](hooks.md#ranges)) | | `zazawan oel zahaben` *Azawan through Ahaben*; `zazawan zahaben zael` *Azawan, then Ahaben* |
+| hook `oel` *toward X* ([where a path ends](hooks.md#extra-noun-intermediate)) | | `zael` + X *start with X* ([where it starts](joins.md#sequence-ae)) |
+| `xan` *and then* ([what happened next](join-across-roles.md#clause-sequence)) | | `xael` ([the order is part of the claim](join-across-roles.md#vp-clause-forms): a recipe) |
+| `vun` [*refuses*](join-across-roles.md#join-act-verbs) | | `vuan` *excludes* |
+| `ol …` *Instead, …* ([replaces the last claim](hooks.md#discourse-hooks)) | | `or …` *Anyway, …* ([back to the main line](hooks.md#hook-resume)) |

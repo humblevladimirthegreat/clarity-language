@@ -54,7 +54,7 @@ const jobs = [
   run("tsc vitepress", bin("tsc"), ["-p", "docs/grammar/.vitepress"], { buffer: true }),
   run("lint md balance", "node", ["scripts/lint-md-balance.mjs"], { buffer: true }),
   run("lint sidebar", bin("tsx"), ["scripts/lint-sidebar-pages.ts"], { buffer: true }),
-  run("lint claritish cheat sheet", bin("tsx"), ["scripts/lint-claritish-cheat-sheet.ts"], { buffer: true }),
+  run("lint cheat sheets", bin("tsx"), ["scripts/lint-cheat-sheets.ts"], { buffer: true }),
   run("lint agazan", bin("tsx"), ["scripts/lint-agazan-docs.ts"], { buffer: true }),
   run("eslint", bin("eslint"), ["--cache", "--cache-location", "node_modules/.cache/eslint", "docs/grammar/.vitepress/components"], { buffer: true }),
   run("docs:publish", "npm", ["run", "-s", "docs:publish"], { buffer: true }),

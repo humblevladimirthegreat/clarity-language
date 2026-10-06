@@ -9,6 +9,7 @@ The join vowels you use on noun lists also join other things: verb phrases under
 
 When English tells events in time order (*and then*), put ending **-n** on a clause join (`/x/`). Narrative *and then* is **`xan`**. Like every clause join, it goes [between](joins.md#clause-joins) the clauses: `A xan B xan C` reads one step at a time. The clauses keep one speech act; this **-n** orders them rather than naming a person.
 
+<!-- cheat-sheet: joins-hooks -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `xan` | sequence add | *and then…* | **a** ≈ add |
@@ -222,6 +223,7 @@ For an associative group (*Alahen and company*), put noun **-x** on the object a
 
 **Compare with:** *and then* between sentences uses clause [sequence](#sequence) (`xan`, …), not `van`.
 
+<!-- cheat-sheet: joins-hooks -->
 | Clause sequence | Join-act verb | Shared vowel move |
 |-------------|---------------|-------------------|
 | `xan` | `van` | add / include |

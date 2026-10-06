@@ -1,7 +1,7 @@
 # Proposal: cheat sheets for the whole grammar
 
-**Status:** PROPOSED. Pilot sheet built: [joins and hooks](../grammar/joins-hooks-cheatsheet.md) (hand-written; no sync lint yet).  
-**Related:** TODO *add Agazan->English cheat sheet*, *Cheat sheet for joins and hooks*, *join vowel decision tree in advanced vowel series*; the existing [Exceptions](../grammar/exceptions-cheatsheet.md) sheet; the Claritish [cheat sheet](../grammar/claritish/cheat-sheet.md) and its lint [`scripts/lint-claritish-cheat-sheet.ts`](../../scripts/lint-claritish-cheat-sheet.ts); [Claritish track policy](../meta/grammar-docs.md#claritish-track).  
+**Status:** PROPOSED. Rollout steps 1–2 done: pilot sheet [joins and hooks](../grammar/joins-hooks-cheatsheet.md), and [`scripts/lint-cheat-sheets.ts`](../../scripts/lint-cheat-sheets.ts) (layers 2 and 3, plus the Claritish sheet).  
+**Related:** TODO *add Agazan->English cheat sheet*, *Cheat sheet for joins and hooks*, *join vowel decision tree in advanced vowel series*; the existing [Exceptions](../grammar/exceptions-cheatsheet.md) sheet; the Claritish [cheat sheet](../grammar/claritish/cheat-sheet.md) kept in step by the same lint; [Claritish track policy](../meta/grammar-docs.md#claritish-track).  
 **Design authority:** stays with the owning grammar pages and the lexicon CSVs. Sheets add no forms, restate no rule the owning page does not teach, and are never cited as the source for a form.
 
 ## Motivation
@@ -68,15 +68,15 @@ The Claritish lint works because the sheet and the lessons are two small sets of
 
 A new `scripts/lint-cheat-sheets.ts`:
 
-- Every table row on a sheet links to at least one owning section.
-- Every Agazan code span in the row must appear in that linked section's text (heading to next heading of the same level), verbatim or with its ending swapped among **-l** / **-m** / **-r** (the Claritish rule).
-- Spans that are patterns, not words (`…el`, `A HOOK B`, a lone vowel such as `ae`), are skipped the same way the Agazan doc lint skips them.
+- Every table row on a sheet links to at least one owning section: in the row, the table's header row, or the prose between the nearest heading and the table. A row whose first cell is empty continues the row above and shares its links.
+- Every Agazan code span in the row must appear in one of those linked sections (heading to the end of its subtree; a link with no anchor means the whole page), as whole words. A one-word span may also match with its ending swapped among **-l** / **-m** / **-r** (the Claritish rule); a phrase or sentence must match verbatim.
+- Spans the Agazan doc lint classes as templates or English (`…el`, `A HOOK B`, `ROOT`) are skipped.
 
 This catches a respelled, removed, or moved form, and it is tighter than "appears somewhere in the grammar." Dead anchors are already caught by the build.
 
 ### 3. Owning tables opt in for coverage
 
-On an owning page, an editor puts `<!-- cheat-sheet: joins-hooks -->` right before a table. The lint then requires every form in that table to be on that sheet.
+On an owning page, an editor puts `<!-- cheat-sheet: joins-hooks -->` on the line right before a table. The lint then requires every form in that table (word, phrase, or sentence spans) to be on that sheet, as whole words anywhere in its text. Mark only tables whose forms are in backticks; a table that sets its forms in bold has nothing to check.
 
 - This catches the opposite drift: a new form added to the grammar that never reaches the sheet.
 - Unmarked tables are free, so example-only tables do not bloat the sheets.
@@ -94,7 +94,7 @@ A meaning or gloss change that keeps the spelling passes layers 2 and 3. Generat
 ## Rollout
 
 1. Pilot sheet by hand: **Joins and hooks** (done).
-2. Write `lint-cheat-sheets.ts` layers 2 and 3; mark the joins and hooks owning tables; fold the Claritish lint into it.
+2. Write `lint-cheat-sheets.ts` layers 2 and 3; mark the joins and hooks owning tables; fold the Claritish lint into it (done: 15 tables marked across `joins.md`, `join-across-roles.md`, and `hooks.md`; sheet IDs are registered in the lint's `SHEETS` map).
 3. Generated blocks (layer 1) and the **Agazan → English** sheet.
 4. Remaining sheets, one per change, each with its owning tables marked.
 5. Move sheets into `cheat-sheets/` with redirects; add the grammar-docs.md section and the AGENTS.md row.
