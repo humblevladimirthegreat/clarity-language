@@ -32,6 +32,7 @@ const claritishDir = join(grammarDir, "claritish");
 const SHEETS: Record<string, string> = {
   "sounds-spelling": "sounds-spelling.md",
   "word-shape-clause": "word-shape-clause.md",
+  "people-pointing": "people-pointing.md",
   "joins-hooks": "joins-hooks.md",
   "agazan-english": "agazan-english.md",
   exceptions: "exceptions.md",

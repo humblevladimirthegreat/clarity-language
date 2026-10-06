@@ -104,6 +104,7 @@ export default defineConfig({
         items: [
           { text: 'Sounds and spelling', link: '/cheat-sheets/sounds-spelling' },
           { text: 'Word shape and clause', link: '/cheat-sheets/word-shape-clause' },
+          { text: 'People and pointing', link: '/cheat-sheets/people-pointing' },
           { text: 'Joins and hooks', link: '/cheat-sheets/joins-hooks' },
           { text: 'Agazan → English', link: '/cheat-sheets/agazan-english' },
           { text: 'Exceptions', link: '/cheat-sheets/exceptions' },

@@ -1,6 +1,6 @@
 # Proposal: cheat sheets for the whole grammar
 
-**Status:** PROPOSED. Rollout steps 1–3 and 5 done: pilot sheet [joins and hooks](../grammar/cheat-sheets/joins-hooks.md); [`scripts/lint-cheat-sheets.ts`](../../scripts/lint-cheat-sheets.ts) (layers 2 and 3, plus the Claritish sheet); [`scripts/cheat-sheet-blocks.ts`](../../scripts/cheat-sheet-blocks.ts) (layer 1) and the [Agazan → English](../grammar/cheat-sheets/agazan-english.md) sheet; sheets moved to `docs/grammar/cheat-sheets/` with redirects, and the editor rules are in [cheat sheets](../meta/grammar-docs.md#cheat-sheets).  
+**Status:** PROPOSED. Rollout steps 1–4 done; step 5: batch A done (sounds and spelling, word shape and clause, people and pointing); batches B and C open. Done so far: pilot sheet [joins and hooks](../grammar/cheat-sheets/joins-hooks.md); [`scripts/lint-cheat-sheets.ts`](../../scripts/lint-cheat-sheets.ts) (layers 2 and 3, plus the Claritish sheet); [`scripts/cheat-sheet-blocks.ts`](../../scripts/cheat-sheet-blocks.ts) (layer 1) and the [Agazan → English](../grammar/cheat-sheets/agazan-english.md) sheet; sheets moved to `docs/grammar/cheat-sheets/` with redirects, and the editor rules are in [cheat sheets](../meta/grammar-docs.md#cheat-sheets).  
 **Related:** TODO *join vowel decision tree in advanced vowel series*; the existing [Exceptions](../grammar/cheat-sheets/exceptions.md) sheet; the Claritish [cheat sheet](../grammar/claritish/cheat-sheet.md) kept in step by the same lint; [Claritish track policy](../meta/grammar-docs.md#claritish-track).  
 **Design authority:** stays with the owning grammar pages and the lexicon CSVs. Sheets add no forms, restate no rule the owning page does not teach, and are never cited as the source for a form.
 
@@ -44,13 +44,13 @@ Grammar sheets give that learner one glance per subsystem, grouped the way they 
 
 ## Page and policy shape
 
-- **Location.** Today the one grammar sheet is `docs/grammar/exceptions-cheatsheet.md`, and the pilot follows that flat `*-cheatsheet.md` naming. Once three or more sheets exist, move them to `docs/grammar/cheat-sheets/` and add the old URLs to [site redirects](../meta/site-redirects.md).
+- **Location.** `docs/grammar/cheat-sheets/`, one file per sheet, named for its subject (`joins-hooks.md`). The earlier flat `*-cheatsheet.md` URLs redirect there ([site redirects](../meta/site-redirects.md)).
 - **Sidebar.** All sheets sit in the existing **Cheat Sheets** group, in reading order (sounds first, Agazan → English and Exceptions last).
 - **Front matter.** `pageClass: cheat-sheet`, `outline: false`, and `<PrintButton />`. The print CSS already written for the Claritish sheet is shared by both classes.
 - **Links.** Sheets link out to owning sections. Stage pages never link to sheets, as with the recipe track ([recipe track](../meta/grammar-docs.md#recipe-track)); the [introduction](../grammar/introduction.md#how-to-learn) may mention the group once.
 - **Stage tags.** Each row (or each section, when the whole section is one stage) carries **B** / **I** / **A**. The tag is the stage of the section the row links to.
 - **Wording.** The usual [doc style](../meta/doc-style.md): learner names for features, never [terminology](../grammar/terminology.md) links, English cues in italics, forms in backticks so the build parses them and `retie-docs` keeps them current.
-- **Editor note.** Add a **Cheat sheets** section to [grammar-docs.md](../meta/grammar-docs.md) with the rules above, and update the AGENTS.md row (it names only `exceptions-cheatsheet.md` today).
+- **Editor note.** The rules above live in [cheat sheets](../meta/grammar-docs.md#cheat-sheets); AGENTS.md routes to the `cheat-sheets/` folder.
 
 ## Keeping sheets in sync
 
@@ -101,5 +101,13 @@ A meaning or gloss change that keeps the spelling passes layers 2 and 3. Generat
    - Layer 2 skips rows inside generated blocks; the generator holds them to the data, and the Agazan doc lint still parses every form.
    - Closed function words with no data source (joins, hooks, turn words, stand-ins, pointers, tags, resumes) get one hand-written **find the family by shape** table that points to the owning sections and the joins and hooks sheet, instead of a full listing.
    - The pilot sheet's join-act / join-relation grid stays hand-written: it is a vowel grid, not a spelling list.
-4. Remaining sheets, one per change, each with its owning tables marked.
-5. Move sheets into `cheat-sheets/` with redirects; add the grammar-docs.md section and the AGENTS.md row (done, ahead of step 4 so new sheets start in the folder; the Exceptions sheet is registered in the lint too, and passes).
+4. Move sheets into `cheat-sheets/` with redirects; add the grammar-docs.md section and the AGENTS.md row (done, ahead of the remaining sheets so they start in the folder; the Exceptions sheet is registered in the lint too, and passes).
+5. Remaining sheets, one commit per sheet, each with its owning tables marked and its ID registered in `SHEETS`. Work in three batches, one session each, so a batch's wording and layout stay consistent:
+
+   | Batch | Sheets | Why together |
+   |-------|--------|--------------|
+   | **A** | **Sounds and spelling**, **Word shape and clause**, **People and pointing** | Word shape and clause is the core sheet and sets the layout the others follow; sounds and people are small and closest to it. |
+   | **B** | **Talking**, **Knowing and intending**, **Why and allowed**, **Restrictors and spans** | Knowing and Why lean on generated overlay blocks (evidentials, poles, deontic, sakes); the four share the stance and scope vocabulary. |
+   | **C** | **Linking clauses**, **Roles and comparing**, **Numbers** | Mostly hand-written; Numbers is the largest single sheet and goes last. |
+
+   Within a batch, sheets go in the order listed. Each session starts by reading the finished sheets for layout, and ends with `npm run build` green before its last commit.

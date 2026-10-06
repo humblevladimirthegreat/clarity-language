@@ -115,6 +115,7 @@ The same roots take the role letter of the slot they fill. As a direct object th
 >
 > "Azawan sees us (you and I)."
 
+<!-- cheat-sheet: people-pointing -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | **`amagonx`** | speaker plus that person’s people (listener not assumed); `zamagonx` as subject, `damagonx` as object | *I and my people* (not you) |
@@ -352,6 +353,7 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 | named person + `/v/`…**-x** | joint doing; unnamed others share the act | *Azawan sings jointly* (not a solo) |
 | group-kind singular (*the family*) + `/v/`…**-x** | the group acts as one unit | *the family walks as one unit* |
 
+<!-- cheat-sheet: people-pointing -->
 | Agazan | English |
 |--------|---------|
 | `zazawanx vezehel` | *Azawan and associates sing* (together or each, or don’t care) |
@@ -395,6 +397,7 @@ English *the boxes are heavy* can mean each box or the pile. Put **-x** on the *
 
 After nouns joined into a list with **`a`** ([joins](joins.md)), one plain `/ɡ/` word applies to **each member**. With **-x**, it applies to the list **as one unit**.
 
+<!-- cheat-sheet: people-pointing -->
 | Agazan | English |
 |--------|---------|
 | `zavabal zulol zal garagam` | *the file-box and the toolbox are (each) heavy* |

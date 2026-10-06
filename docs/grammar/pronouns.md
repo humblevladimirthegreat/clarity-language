@@ -219,6 +219,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 >
 > "Someone sleeps."
 
+<!-- cheat-sheet: people-pointing -->
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`amagon`** | speaker in this conversation (`zamagon` in subject slot) | *I* | `amagol` *microphone* | 🎤: the live voice of the person talking |
@@ -589,6 +590,7 @@ English *you* does not say whether you are talking to one person or several. Aga
 
 English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells E*. A **tag** is that label. You choose it, and it stays on the same referent however many others come and go. Write the role letter, **`w`**, a tag vowel, and an ending. The four vowels are four tags, named by the vowel's [letter name](phonology.md#letter-names): A, E, O, U. Roots start with a vowel, so a consonant right after the role letter is always a marker: `r` starts a [number word](numbers.md), and `w` starts a tag. (cue: **w** ≈ *we call it*: the label you and the listener agree on)
 
+<!-- cheat-sheet: people-pointing -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | `zodogal zwal` | a phrase, then tag + **-l** in the same role: assign | *a dog, call it A* |
@@ -638,6 +640,7 @@ A tag lasts until it is assigned again or the conversation ends with a [goodbye]
 
 A stacked vowel names two tags together. There are six stacks, one for each pair of tags: `zwaer` is *A and E*, `zwaor` *A and O*, `zwoer` *O and E*, `zwuar` *U and A*, `zwuor` *U and O*, and `zwuer` *U and E*. Each pair has this one spelling, whichever tag you name first.
 
+<!-- cheat-sheet: people-pointing -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | `zwaer` | pair + **-r**: both, together | *A and E* |
@@ -660,6 +663,7 @@ Both tags must already be assigned. A pair never assigns: to tag two things, tag
 
 English *now, about Azawan…*, *speaking of dogs…*, and *so, back to Azawan…* say what the talk is about from here on, and every later *he* or *it* follows. Agazan makes that overt as a **topic**. It is set only by an `/x/` word at the start of a sentence: `/x/`, then the thing the talk is about, then its ending. Nothing else sets one. Being named first, being the subject, and [*as for*](clause.md#adverbs-h) do not, so a listener or a tool can tell at every point what the topic is.
 
+<!-- cheat-sheet: people-pointing -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | `xazawan` | introduce a person | *now, about Azawan* |
@@ -748,6 +752,7 @@ Introduce, return, and clear each start a new **topic stretch**.
 
 Both set the topic. The difference is the ordinary difference between **-r** and a first mention:
 
+<!-- cheat-sheet: people-pointing -->
 | Agazan | Topic | English |
 |--------|-------|---------|
 | `xazawan` | Azawan | *now, about Azawan* (a name picks out the same person either way) |
