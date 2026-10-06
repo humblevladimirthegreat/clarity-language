@@ -218,7 +218,7 @@ function reportDrillCoverage(order: LearningOrder, uses: readonly ConstructionUs
     console.log("\nPage bands with taught families but no translation practice:");
     for (const key of missing) {
       const [page, band] = key.split("|");
-      console.log(`  ${page}  ${band}  (expected ### Translation practice {#${band}-translation-practice})`);
+      console.log(`  ${page}  ${band}  (expected ### Practice {#${band}-practice})`);
     }
   }
   const duplicates = duplicateDrills(order);
@@ -387,7 +387,7 @@ function main(): void {
 
   if (drillCount > 0) {
     console.error(
-      `\n${drillCount} drill-coverage issue(s). Add ### Translation practice {#<band>-translation-practice}, or an item in it that uses the family, or merge duplicate sections (docs/meta/drill-generation.md), or mark the page + band skip in its allowlist.`,
+      `\n${drillCount} drill-coverage issue(s). Add ### Practice {#<band>-practice}, or an item in it that uses the family, or merge duplicate sections (docs/meta/drill-generation.md), or mark the page + band skip in its allowlist.`,
     );
   }
 

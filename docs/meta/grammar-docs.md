@@ -68,7 +68,7 @@ When you rename a section, **change the heading and the id to the current name**
 
 ### Unique ids on a page {#unique-ids}
 
-Every heading id and `<a id>` on a grammar page is unique. `lint:agazan` fails on a repeat. Never rely on VitePress's `-1` / `-2` suffixes, and never link to one. When heading text must repeat (`### Translation practice` on each stage), pin a distinct id on each with `{#id}`. To give a heading a stable short id, pin it on the heading (`### Right-close fence {#right-close}`); do not add an `<a id>` that repeats the heading's own id.
+Every heading id and `<a id>` on a grammar page is unique. `lint:agazan` fails on a repeat. Never rely on VitePress's `-1` / `-2` suffixes, and never link to one. When heading text must repeat (`### Practice` on each stage), pin a distinct id on each with `{#id}`. To give a heading a stable short id, pin it on the heading (`### Right-close fence {#right-close}`); do not add an `<a id>` that repeats the heading's own id.
 
 A construction's registry anchor in [constructions.ts](../../src/parse/constructions.ts) is always a **heading** id, never an `<a id>` inside a section: the anchor names the home section that the learning-order check (`learning-order-check.md`) measures against.
 
@@ -353,7 +353,7 @@ When an example needs a **person**, use these nativized names (published root + 
 
 **`amu` / `eho`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (performance **`zamun`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`aha`**; nonspecific *someone* stays **`una`**. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
 
-**The learner (first person).** When the speaker is the reader, write the name slot **`SELF`** in the Agazan (`zSELFn vowogal.`, greeting `SELFn.`) and a free-standing `SELF` in the morph line (`z-SELF | v-walk`). Free English is *I* / *me* / *my*. The site shows the name the learner chose in the name helper ([word-endings.md](../grammar/word-endings.md#named-n-beginner), nav chip), or **`amun`** / *speaker* until they choose. `build` checks the slot as **`amu`**. Do not make a house person “name himself” to mean *I*, and do not use a dummy **`zamun`** where a name is the point. Pages teaching the speaker role itself keep **`amu`**. A **Roots used here** row for the slot is `*your name*` / `` `SELFn` ``. Available from word-endings Beginner onward.
+**The learner (first person).** When the speaker is the reader, write the name slot **`SELF`** in the Agazan (`zSELFn vowogal.`, greeting `SELFn.`) and a free-standing `SELF` in the morph line (`z-SELF | v-walk`). Free English is *I* / *me* / *my*. The site shows the name the learner chose in the name helper ([word-endings.md](../grammar/word-endings.md#named-n-beginner), nav chip), or **`amun`** / *speaker* until they choose. `build` checks the slot as **`amu`**. Do not make a house person “name himself” to mean *I*, and do not use a dummy **`zamun`** where a name is the point. Pages teaching the speaker role itself keep **`amu`**. A checkpoint bank row for the slot is `*your name*` / `` `SELFn` ``. Available from word-endings Beginner onward.
 
 Default example block ([layout](glosses.md#example-block)):
 

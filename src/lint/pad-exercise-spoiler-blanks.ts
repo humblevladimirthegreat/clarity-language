@@ -2,11 +2,7 @@
  * Ensure blank lines in translation spoilers so morph gloss and answers render separately.
  */
 
-const PRACTICE_H3_RE = /^### Translation practice\b/;
-
-function isPracticeBoundary(line: string): boolean {
-  return (/^## /.test(line) && !/^### /.test(line)) || (/^### /.test(line) && !/^#### /.test(line));
-}
+import { isPracticeBoundary, PRACTICE_H3_RE } from "./practice-sections.js";
 
 function isAgazanLine(trimmed: string): boolean {
   return /^`[^`]+`$/.test(trimmed);

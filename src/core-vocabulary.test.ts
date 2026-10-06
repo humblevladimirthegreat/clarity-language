@@ -8,6 +8,7 @@ import { CORE_CAP, coreReport, firstAppearance, stageCheckpoints, type Checkpoin
 import { parseCompoundCsv } from "./lexicon-compounds.js";
 import { parsePublishedCsv } from "./lexicon-search.js";
 import { pageSections } from "./lint/learning-order.js";
+import { PRACTICE_TITLE_RE } from "./lint/practice-sections.js";
 import { loadDefaultTables } from "./parse/index.js";
 import { readData, REPO_ROOT } from "./repo-paths.js";
 
@@ -108,7 +109,7 @@ describe("core column", () => {
         continue;
       }
       const section = id ? pageSections(file, markdown).anchors.get(id) : undefined;
-      if (!section?.band || !/^translation practice\b/i.test(section.title)) bad.push(`${key}: ${core}`);
+      if (!section?.band || !PRACTICE_TITLE_RE.test(section.title)) bad.push(`${key}: ${core}`);
     }
     assert.deepEqual(bad, []);
   });

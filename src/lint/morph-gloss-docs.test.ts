@@ -55,6 +55,12 @@ describe("extractTranslationExercises", () => {
     assert.equal(items[1]!.loose, "Azawan sits.");
   });
 
+  it("reads items under a converted Practice heading", () => {
+    const items = extractTranslationExercises(PRACTICE.replace("### Translation practice", "### Practice"));
+    assert.equal(items.length, 2);
+    assert.equal(items[0]!.morph, "z-Azawan | v-sit");
+  });
+
   it("records missing morph when a numbered item has no morph gloss", () => {
     const md = `### Translation practice
 

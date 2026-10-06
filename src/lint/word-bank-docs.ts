@@ -11,6 +11,7 @@ import { lineNumberAt } from "../retie/tokens.js";
 import { fillSelf, hasSelfSlot } from "../learner-name.js";
 import { collectExamples } from "../find/examples.js";
 import type { LexWord } from "../parse/types.js";
+import { practiceRanges } from "./practice-sections.js";
 
 export type WordBankFinding = {
   line: number;
@@ -21,7 +22,6 @@ export type WordBankFinding = {
   detail: string;
 };
 
-const PRACTICE_H3_RE = /^### Translation practice\b/;
 const ROOTS_CAPTION_RE = /^\*\*Roots used here/;
 
 export function lintWordBankMarkdown(
@@ -31,6 +31,8 @@ export function lintWordBankMarkdown(
   const findings: WordBankFinding[] = [];
   const lines = text.split(/\r?\n/);
   for (const range of practiceRanges(lines)) {
+    // Converted checkpoints use the New words / Review bank, not this table.
+    if (range.converted) continue;
     const table = findRootsTable(lines, range.start, range.end);
     if (!table) continue;
     for (const row of table.rows) {
@@ -214,28 +216,6 @@ function foreignPayload(family: ReturnType<typeof parseWord>["family"]): string 
   return null;
 }
 
-export function practiceRanges(lines: string[]): { start: number; end: number }[] {
-  const ranges: { start: number; end: number }[] = [];
-  for (let i = 0; i < lines.length; i++) {
-    if (!PRACTICE_H3_RE.test(lines[i]!)) continue;
-    let end = lines.length;
-    for (let j = i + 1; j < lines.length; j++) {
-      if (isPracticeBoundary(lines[j]!)) {
-        end = j;
-        break;
-      }
-    }
-    ranges.push({ start: i, end });
-  }
-  return ranges;
-}
-
-function isPracticeBoundary(line: string): boolean {
-  const isH2 = /^## /.test(line) && !/^### /.test(line);
-  const isH3 = /^### /.test(line) && !/^#### /.test(line);
-  return isH2 || isH3;
-}
-
 export type BankRow = {
   lineIndex: number;
   english: string | null;
@@ -375,6 +355,7 @@ export function lintWordBankUsage(text: string, tables: ClassifyTables): WordBan
   const examples = collectExamples(filled, tables);
   const findings: WordBankUsageFinding[] = [];
   for (const range of practiceRanges(lines)) {
+    if (range.converted) continue;
     let drillStart = -1;
     for (let i = range.start + 1; i < range.end; i++) {
       if (/^#### /.test(lines[i]!)) {

@@ -1,10 +1,11 @@
 /**
  * Drill coverage: every construction family taught in a band on a page is
  * practiced by that page's same-band translation drill
- * (`### Translation practice {#<band>-translation-practice}`). Either drill
+ * (`### Practice {#<band>-practice}`, or a legacy `### Translation practice`). Either drill
  * direction counts. Page + band pairs marked **skip** in the allowlist of
  * docs/meta/drill-generation.md are exempt.
  */
+import { PRACTICE_TITLE_RE } from "./practice-sections.js";
 import { BANDS, formatSection, withinSection, type Band, type LearningOrder, type Section } from "./learning-order.js";
 
 /** Parser productions name the same lesson at different parse levels: one family. */
@@ -62,9 +63,9 @@ export function drillSkips(markdown: string): Set<string> {
   return skips;
 }
 
-/** Drill sections on a page in one band (`Translation practice` headings). */
+/** Drill sections on a page in one band (`Practice` or legacy `Translation practice` headings). */
 export function drillSections(sections: readonly Section[], band: Band): Section[] {
-  return sections.filter((s) => s.band === band && !s.ignored && /^translation practice\b/i.test(s.title));
+  return sections.filter((s) => s.band === band && !s.ignored && PRACTICE_TITLE_RE.test(s.title));
 }
 
 /** `page|band` pairs with more than one drill section: each band has one checkpoint. */

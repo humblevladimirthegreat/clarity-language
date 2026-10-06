@@ -18,6 +18,18 @@ z-Azawan | v-sit
     assert.match(out, /z-Azawan \| v-sit\n\n\*Azawan sits\.\*/);
   });
 
+  it("pads a converted Practice checkpoint", () => {
+    const md = `### Practice
+
+::: details Show answer
+\`zazawan vehahel.\`
+z-Azawan | v-sit
+:::
+`;
+    const out = padExerciseSpoilerBlanks(md);
+    assert.match(out, /`zazawan vehahel\.`\n\nz-Azawan \| v-sit/);
+  });
+
   it("inserts blank between Agazan and morph in details", () => {
     const md = `### Translation practice
 

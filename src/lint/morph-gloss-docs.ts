@@ -10,6 +10,7 @@ import {
 import { lineNumberAt } from "../retie/tokens.js";
 import type { AmbiguityConflict } from "../parse/types.js";
 import { SPEECH_MARK } from "./number-speech-docs.js";
+import { isPracticeBoundary, practiceRanges } from "./practice-sections.js";
 
 export type MorphPair = {
   agazan: string;
@@ -63,7 +64,6 @@ export type MorphGlossFinding =
 const SKIP_CELL = /(?:^|[^\w])(?:…|\.\.\.)(?:[^\w]|$)/;
 const GLOSS_COMMENT_RE = /<!--\s*gloss:\s*([\s\S]*?)-->/i;
 const ITEM_START_RE = /^\*\*(\d+)\.\*\*(.*)$/;
-const PRACTICE_H3_RE = /^### Translation practice\b/;
 
 export function extractMorphPairs(markdown: string): MorphPair[] {
   const pairs: MorphPair[] = [];
@@ -209,7 +209,7 @@ export type TranslationExercise = {
 export function extractTranslationExercises(markdown: string): TranslationExercise[] {
   const items: TranslationExercise[] = [];
   const lines = markdown.split(/\r?\n/);
-  for (const range of translationPracticeRanges(lines)) {
+  for (const range of practiceRanges(lines)) {
     let i = range.start + 1;
     while (i < range.end) {
       const match = ITEM_START_RE.exec(lines[i]!);
@@ -234,34 +234,6 @@ export function extractTranslationExercises(markdown: string): TranslationExerci
     }
   }
   return items;
-}
-
-function translationPracticeRanges(lines: string[]): { start: number; end: number }[] {
-  const ranges: { start: number; end: number }[] = [];
-  for (let i = 0; i < lines.length; i++) {
-    if (!PRACTICE_H3_RE.test(lines[i]!)) continue;
-    let end = lines.length;
-    for (let j = i + 1; j < lines.length; j++) {
-      if (isPracticeBoundary(lines[j]!)) {
-        end = j;
-        break;
-      }
-    }
-    ranges.push({ start: i, end });
-  }
-  return ranges;
-}
-
-function isH2(line: string): boolean {
-  return /^## /.test(line) && !/^### /.test(line);
-}
-
-function isH3(line: string): boolean {
-  return /^### /.test(line) && !/^#### /.test(line);
-}
-
-function isPracticeBoundary(line: string): boolean {
-  return isH2(line) || isH3(line);
 }
 
 function parseExerciseItem(

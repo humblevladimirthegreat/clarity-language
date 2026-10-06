@@ -6,7 +6,8 @@
  */
 import { CLOSED } from "./closed-roots.js";
 import { DEFAULT_SELF_ROOT, fillSelf } from "./learner-name.js";
-import { bankUses, findRootsTable, practiceRanges } from "./lint/word-bank-docs.js";
+import { bankUses, findRootsTable } from "./lint/word-bank-docs.js";
+import { practiceRanges } from "./lint/practice-sections.js";
 import { drillSections } from "./lint/drill-coverage.js";
 import { BANDS, pageSections, type Band } from "./lint/learning-order.js";
 import type { ClassifyTables } from "./parse/classify.js";
@@ -31,7 +32,7 @@ export const NOT_CORE_ROOTS: ReadonlySet<string> = new Set([
 export type BankEntry = { root: string; english: string; agazan: string };
 
 export type Checkpoint = {
-  /** `page.md#id` of the `### Translation practice` heading. */
+  /** `page.md#id` of the checkpoint heading (`### Practice`, or legacy `### Translation practice`). */
   anchor: string;
   page: string;
   band: Band;
@@ -66,7 +67,8 @@ export function stageCheckpoints(
       for (const section of drillSections(p.sections, band)) {
         const line = lineOfOffset(p.raw, section.offset);
         const range = ranges.find((r) => r.start === line);
-        const table = range ? findRootsTable(p.lines, range.start, range.end) : null;
+        // A converted checkpoint has no **Roots used here** table; its bank is New words / Review.
+        const table = range && !range.converted ? findRootsTable(p.lines, range.start, range.end) : null;
         const entries: BankEntry[] = [];
         const seen = new Set<string>();
         for (const row of table?.rows ?? []) {

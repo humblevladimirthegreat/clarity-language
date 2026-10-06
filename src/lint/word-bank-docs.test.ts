@@ -118,6 +118,14 @@ ${drills.map((d, i) => `**${i + 1}.** *…*\n\n::: details Show answer\n\`${d}\`
     assert.equal(md.split("\n")[findings[0]!.line - 1], "`zazawan varahal.`");
   });
 
+  it("skips a converted Practice checkpoint", () => {
+    const md = page(["*Azawan* | `azawan`", "*dog* | `odogal`"], ["zazawan varahal."]).replace(
+      "### Translation practice",
+      "### Practice",
+    );
+    assert.deepEqual(kinds(md), []);
+  });
+
   it("flags unused rows, house names included", () => {
     const md = page(["*Azawan* | `azawan`", "*Alahen* | `alahen`", "*run* | `arahal`", "*dog* | `odogal`"], ["zazawan varahal."]);
     assert.deepEqual(kinds(md), ["unused alahe", "unused odoga"]);

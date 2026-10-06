@@ -1,6 +1,6 @@
 # Generate translation drills
 
-Executable editor policy: add end-of-stage Eng ↔ Agazan checkpoints to learner grammar pages without using **morphology** the learner has not been taught. Checkpoint **content** roots follow the [setting](translation-exercises.md#checkpoint-setting).
+Executable editor policy: add or replace end-of-stage checkpoints on learner grammar pages without using **morphology** the learner has not been taught. Checkpoint **content** roots follow the [core vocabulary](translation-exercises.md#core-vocabulary) and the [setting](translation-exercises.md#checkpoint-setting).
 
 **How to invoke.** Point here and name a grammar file (or one stage). No extra prompt is required:
 
@@ -8,7 +8,7 @@ Executable editor policy: add end-of-stage Eng ↔ Agazan checkpoints to learner
 - *… for `docs/grammar/questions.md` Intermediate.*
 - *… for core Beginner* (already exists — skip unless asked to replace).
 
-This page owns **path allowlist**, **[settings](#settings) inventory**, **example root bank**, and **generation procedure**. Drill *shape* (spoiler template, house names, [checkpoint setting](translation-exercises.md#checkpoint-setting), item counts) stays in [translation-exercises.md](translation-exercises.md). Stages: [learning-levels.md](learning-levels.md#cross-doc-path). Example prose: [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link here.
+This page owns **path allowlist**, **[settings](#settings) inventory**, **example root bank**, item counts, and **generation procedure**. Drill *shape* (spoiler template, decision items, bank, house names, [checkpoint setting](translation-exercises.md#checkpoint-setting)) stays in [translation-exercises.md](translation-exercises.md). Stages: [learning-levels.md](learning-levels.md#cross-doc-path). Example prose: [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link here.
 
 ## Execute
 <a id="execute"></a>
@@ -25,10 +25,11 @@ Parse the user’s file/stage from their message. Accept `joins`, `joins.md`, `d
 | One file + one stage | Generate **only** that stage’s checkpoint |
 | Several files or “all pages” | Work through them in [path](learning-levels.md#cross-doc-path) order, one file at a time |
 | No file | List the [generate](#allowlist) files that still lack a checkpoint, and the drill-coverage findings from the lint. Stop |
-| Drill-coverage lint findings | Add 1–3 items to the existing checkpoint that use the named family; keep its setting and roots table |
+| Drill-coverage lint findings | Add 1–3 items to the existing checkpoint that use the named family; keep its setting and bank. On a [legacy](translation-exercises.md#legacy-checkpoints) checkpoint, add translation items in its existing format |
+| **Replace** a checkpoint | Convert it whole to the current [template](translation-exercises.md#template) (`### Practice`), following steps 3–6 |
 | A file whose [allowlist](#allowlist) rows are all **skip** | Say it is skipped and why. Stop |
 
-Edit **only** the target `docs/grammar/<file>.md` page(s) **and** their **Setting** cell(s) in [settings](#settings). Do not edit other policy, other grammar pages, `AGENTS.md`, or other meta unless the user asked to change the policy.
+Edit **only** the target `docs/grammar/<file>.md` page(s), their **Setting** cell(s) in [settings](#settings), the `core` cells of the lexicon CSVs for roots this checkpoint introduces, and links to a renamed checkpoint anchor. Do not edit other policy, other grammar pages, `AGENTS.md`, or other meta unless the user asked to change the policy.
 
 ### 2. Look up the checkpoint
 
@@ -38,7 +39,7 @@ Find the row(s) in the [allowlist](#allowlist).
 |--------|--------|
 | **skip** | Do not add a checkpoint. Continue to the next stage if the target was the whole file |
 | **exists** | Leave it unless the user said **replace**. Continue |
-| **generate** | Add the checkpoint if the heading is missing. If `### Translation practice` already sits at the end of that stage, treat as **exists** |
+| **generate** | Add the checkpoint if the heading is missing. If `### Practice` or a legacy `### Translation practice` already sits at the end of that stage, treat as **exists** |
 
 ### 3. What you may read
 
@@ -50,9 +51,11 @@ Find the row(s) in the [allowlist](#allowlist).
 - [glosses.md](glosses.md#house-cast) (name glosses — not needed inside spoilers)
 - **This stage only** of the target file (`## Beginner` *or* `## Intermediate` *or* `## Advanced`) plus the page title / **Needs:** line
 - Worked examples **inside that stage** (gold corpus for **morph** packaging, not for checkpoint verbs)
-- `data/lexicon-published.csv` (and overlays / compounds CSVs) **only** to certify a setting English gloss has a published stem
+- `data/lexicon-published.csv` (and overlays / compounds CSVs) to certify a setting English gloss has a published stem, and the `core` column to find the next core roots and the earlier checkpoints' roots
+- `npm run core-vocabulary`, for each earlier checkpoint's new and review roots, to pick this checkpoint's review set
+- The banks (**New words** / **Review**, or legacy **Roots used here**) of earlier checkpoints in path order, only to see when a review root was last used
 
-**Do not open** later path files, later stages of this file, or `docs/examples/` for item ideas. Do not browse the lexicon for roots the items will not use.
+**Do not open** later path files, later stages of this file, or `docs/examples/` for item ideas. Do not browse the lexicon for roots the items will not use, beyond the core column.
 
 If this stage’s own examples leak a later form (e.g. MAY + **`yom`** before core Intermediate), **do not copy the leak**. Use a legal recycle form instead.
 
@@ -64,9 +67,11 @@ Every **morph** (role letter, ending, closed special, join vowel, speech act, �
 2. This row’s **Recycle** set ([how recycle is computed](#recycle))
 3. A closed punctuation / speech act already in recycle (`yol`, omitted **`yal`**, `.`)
 
-Every **content** root (published lexicon or compound lemma, house names included) must be a row in this checkpoint’s **Roots used here**, and its English in the item must match that row. A root in this stage’s worked examples still needs a row. Overlay words need a row only when the drill English is that word.
+Every **content** root (published lexicon or compound lemma, house names included) must be a row in this checkpoint’s **New words** or **Review**, and its English in the item must match that row. A root in this stage’s worked examples still needs a row. Overlay words need a row only when the drill English is that word.
 
-Every **Roots used here** row must be used by at least one item. `build` checks both directions by root, not spelling: a row covers other roles, full-root resumes, role compounds, and viewpoint-lateral anchors on the same root, and a short resume counts through its antecedent.
+Count content roots against the [core vocabulary](translation-exercises.md#core-vocabulary): at most **5** whose `core` cell names this checkpoint (**New words**), at least **3** introduced earlier (**Review**). House names, `SELF`, specials, and overlay words do not count. Take new roots from the core list in order. To pull a later core root forward, or to bring in a root with an empty `core` cell, set its `core` cell to this checkpoint's anchor; it then counts as new. A core root that this checkpoint no longer uses but still names in `core` moves to the next checkpoint that uses it.
+
+Every bank row must be used by at least one item. `build` checks both directions by root, not spelling: a row covers other roles, full-root resumes, role compounds, and viewpoint-lateral anchors on the same root, and a short resume counts through its antecedent.
 
 If you cannot certify a token, drop the item. Do not guess from English. Do not invent stems.
 
@@ -80,23 +85,25 @@ If you cannot certify a token, drop the item. Do not guess from English. Do not 
 
 ### 5. Write the checkpoint
 
-Place **`### Translation practice`** at the **end of the stage**, immediately before the next `## Intermediate` / `## Advanced` / `## See also` / end of file. Do not insert after every H3. Do not add a second checkpoint in the same stage unless the allowlist row says **split**.
+Place **`### Practice {#<band>-practice}`** at the **end of the stage**, immediately before the next `## Intermediate` / `## Advanced` / `## See also` / end of file. Do not insert after every H3. Do not add a second checkpoint in the same stage unless the allowlist row says **split**.
 
-Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Put **Roots used here** once as the English / Agazan table for **this setting** (house names + setting content), using that template’s caption (later banks do not repeat the How-to-learn column legend; **Same root as** warning only when that column is present). Learner **Agazan** cells are [citations](translation-exercises.md#template) by default (`odogal`, not a bank stem `odoga`), or the inflected form the row teaches (`vahahal` *see*). House-person **English** is *Azawan* / *Alahen* / *Ahaben*, not `*grace* (name **Azawan**)`. Pick a setting **not already named** in [settings](#settings) ([unique globally](translation-exercises.md#checkpoint-setting)); write the same phrase into this file’s cell when you replace. Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill. Numbered items in each direction **climb in tension**.
+Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Then the **New words** and **Review** tables ([vocab table](translation-exercises.md#vocab-table)): house names and `SELF` sit in New words on their first checkpoint and in Review after. House-person **English** is *Azawan* / *Alahen* / *Ahaben*, not `*grace* (name **Azawan**)`. Pick a setting **not already named** in [settings](#settings) ([unique globally](translation-exercises.md#checkpoint-setting)); write the same phrase into this file’s cell when you replace. At least half the items in each translation direction use a root or situation of the setting. Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill.
 
-| Band kind | Items per direction |
-|-----------|---------------------|
-| Beginner, productive | **6–8** |
-| Intermediate, productive | **6–8** |
-| Advanced, or a thin generate row | **4–6** |
+| Band kind | Per translation direction | Decision items |
+|-----------|---------------------------|----------------|
+| Beginner, productive | **5–6** | **2–3** |
+| Intermediate, productive | **5–6** | **2–3** |
+| Advanced, or a thin generate row | **3–4** | **2** |
 
-Both directions. Spoilers = Agazan or **loose** free English plus a visible morph line in the spoiler ([translation-exercises.md](translation-exercises.md#template)). Omit recoverable **`yal`**. House names in English prompts (*Azawan waits*). Test the decision this stage taught; package it in the setting, not as a clone of the walk/sleep teach line ([principles](translation-exercises.md#principles)).
+Both directions. Spoilers = Agazan or **loose** free English plus a visible morph line in the spoiler ([translation-exercises.md](translation-exercises.md#template)). Add **Also correct:** where a learner is likely to write a legal variant. Omit recoverable **`yal`**. House names in English prompts (*Azawan waits*). Test the decision this stage taught; package it in the setting, not as a clone of the walk/sleep teach line ([principles](translation-exercises.md#principles)). Aim the [decision items](translation-exercises.md#item-types) at the stage's main decision.
+
+When replacing a legacy checkpoint, retarget its `core` cells and any links to `#<band>-translation-practice` (such as the ones on [translation-exercises.md](translation-exercises.md)) to `#<band>-practice`.
 
 ### 6. Self-check, then lint
 
-Run the [review checklist](#review) on your own spoilers. Then run `npm run build`. It fails when a family taught in a page band is not used by that band’s checkpoint. If it fails, fix it in the same file (usually slash-joined emphasis: write `*a* / *b*`, not `*a*/*b*`).
+Run the [review checklist](#review) on your own spoilers, and `npm run core-vocabulary` for this checkpoint's new and review counts. Parse each **Pick one** form, **Fix it** correction, **What changes** sentence, and **Also correct:** variant with `node scripts/parse.mjs`, and compare each variant's morph reading to the main answer. Then run `npm test` (it checks `core` cells) and `npm run build`. The build fails when a family taught in a page band is not used by that band’s checkpoint. If it fails, fix it in the same file (usually slash-joined emphasis: write `*a* / *b*`, not `*a*/*b*`).
 
-Reply with: which checkpoints you added or skipped, and any item you dropped because a form was not in recycle.
+Reply with: which checkpoints you added, replaced, or skipped, the new and review root counts, and any item you dropped because a form was not in recycle.
 
 ## Recycle
 <a id="recycle"></a>
@@ -131,7 +138,7 @@ Later path numbers **may** recycle both siblings (e.g. joins Beginner may use pr
 <a id="settings"></a>
 <a id="skip"></a>
 
-Inventory of **Setting:** phrases. Uniqueness is **global**: no two checkpoint rows may share a named setting (same occasion under a different article or synonym counts). **unset** = checkpoint exists, not yet replaced onto the setting policy. **—** = allowlist **skip** (no checkpoint; does not occupy a name).
+Inventory of **Setting:** phrases. Uniqueness is **global**: no two checkpoint rows may share a named setting (same occasion under a different article or synonym counts). **unset** = checkpoint exists, not yet replaced onto the setting policy. A named setting on a page whose heading is still `### Translation practice` is a [legacy](translation-exercises.md#legacy-checkpoints) checkpoint; replacing it may keep the setting. **—** = allowlist **skip** (no checkpoint; does not occupy a name).
 
 When you **replace** a checkpoint, pick a phrase unused in the **Setting** column, put it on the grammar page, and update that cell here. House names are not a setting.
 
@@ -213,7 +220,7 @@ Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zalahe
 
 **This table is for worked examples** on grammar pages (and for morph leak checks when a teach line uses these stems). **Checkpoints do not default to it.** Checkpoint content comes from the [setting](translation-exercises.md#checkpoint-setting) plus house names.
 
-Tokens here are **stems for matching** (path allowlist / leak checks). Learner **Roots used here** cells on a checkpoint use [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables). Do not copy `(**-m**)` from this **Sense** column into learner **English**. Checkpoint **English** is the uninflected published lemma for that cell (literal, metaphor, or packed role English); inflected drill prompts (*running*) are fine. When English is not the citation kind, the Agazan cell is the in-clause word: *see* → `vahahal` / `` `ahahal` *eye* ``; *sit* → `vehahel` / `` `ehahel` *chair* ``; *tell* → `vezebel` / `` `ezebel` *speech* ``; *therefore* → `xodum` / `` `odul` *east* ``; *however* → `xezom`; *although* → `hezom` (NP *despite* is the same `/h/` word + `/b/` noun); *so-that* → `hogom` (NP intended *for* is the same `/h/` word + `/b/` noun); *meanwhile* → `xagagam`; *haste* → `hadehum` / `` `adehul` *dash* ``; *quietude* → `halahom`; *volume* → `wagawam`; *topic* → `hahehol`. *because* / *inside* already list the `/h/` word (`thevem`, `hegegam`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odogal`; *next clause* stays `oyel`).
+Tokens here are **stems for matching** (path allowlist / leak checks). Learner bank cells on a checkpoint use [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables). Do not copy `(**-m**)` from this **Sense** column into learner **English**. Checkpoint **English** is the uninflected published lemma for that cell (literal, metaphor, or packed role English); inflected drill prompts (*running*) are fine. When English is not the citation kind, the Agazan cell is the in-clause word and the **New words** cue names the citation sense: *see* → `vahahal` / `` `ahahal` *eye* ``; *sit* → `vehahel` / `` `ehahel` *chair* ``; *tell* → `vezebel` / `` `ezebel` *speech* ``; *therefore* → `xodum` / `` `odul` *east* ``; *however* → `xezom`; *although* → `hezom` (NP *despite* is the same `/h/` word + `/b/` noun); *so-that* → `hogom` (NP intended *for* is the same `/h/` word + `/b/` noun); *meanwhile* → `xagagam`; *haste* → `hadehum` / `` `adehul` *dash* ``; *quietude* → `halahom`; *volume* → `wagawam`; *topic* → `hahehol`. *because* / *inside* already list the `/h/` word (`thevem`, `hegegam`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odogal`; *next clause* stays `oyel`).
 
 | Root | Sense in examples |
 |------|-------------------|
@@ -388,20 +395,29 @@ Use this after generating, or when asked only to review a file’s drills.
 
 For each spoiler token family:
 
-1. **Morph** tokens: **Introduces**, **Recycle**, or this stage’s examples. Content tokens: a row in **Roots used here**. Else **fail**. A bank row no item uses → **fail**. Missing from the [example root bank](#root-bank) is **not** a fail for checkpoint content.
+1. **Morph** tokens: **Introduces**, **Recycle**, or this stage’s examples. Content tokens: a row in **New words** or **Review** (legacy: **Roots used here**). Else **fail**. A bank row no item uses → **fail**. Missing from the [example root bank](#root-bank) is **not** a fail for checkpoint content.
 2. Check [leak index](#leak-index) for **morphology**: first-taught later than this checkpoint → **fail**. Content roots are not leak-indexed.
 3. Same-slot sibling novelty not in **Sibling OK** → **fail**.
 4. English *I* / *you* as dummy people → **fail** (unless this stage teaches **`amu`/`eho`**). *I* written with the **`SELF`** slot is not a dummy.
 5. Most items test **this** stage’s decision, not a prior quiz → else rewrite.
 6. Missing morph in a translation item, or morph that only repeats loose English when it should have been omitted → **fail**.
 7. Unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) → **fail**.
-8. No **Setting** line, the phrase matches any **other** named cell in [settings](#settings) (including synonym / article variants), the inventory cell was not updated, or the numbered list does not climb in tension → **fail** (when replacing or generating; do not fail a pre-policy checkpoint until replace).
+8. No **Setting** line, the phrase matches any **other** named cell in [settings](#settings) (including synonym / article variants), or the inventory cell was not updated → **fail** (when replacing or generating; do not fail a pre-policy checkpoint until replace).
+
+Converted (`### Practice`) checkpoints only:
+
+9. More than **5** new core roots, or fewer than **3** review roots, or a new root out of core order without its `core` cell moved → **fail**.
+10. A **New words** row with no **Cue**, a **Review** row with one, a **Same root as** column, or a non-citation **Agazan** cell whose cue does not name the citation sense → **fail**.
+11. Fewer than half the items in a translation direction use a root or situation of the setting → **fail**.
+12. A **Pick one** form or **Fix it** correction that does not parse, a **Pick one** pair that differs in more than this stage's decision, a **Fix it** error no learner would make (or a rejected spelling with a reading in [unassigned-reserved.md](unassigned-reserved.md)), or a **What changes** pair with an untaught morph → **fail**.
+13. An **Also correct:** variant whose morph reading differs from the main answer → **fail**. A likely variant (reordering, omitted recoverable word, resume form) that is missing → rewrite.
+14. A decision item with the same proposition as a translation item → **fail**.
 
 ## Related meta
 
 | Page | Owns |
 |------|------|
-| [translation-exercises.md](translation-exercises.md) | Placement, principles, [checkpoint setting](translation-exercises.md#checkpoint-setting) (global unique setting), spoiler template |
+| [translation-exercises.md](translation-exercises.md) | Placement, principles, decision items, [core vocabulary](translation-exercises.md#core-vocabulary) rules, [checkpoint setting](translation-exercises.md#checkpoint-setting) (global unique setting), template and bank |
 | [learning-levels.md](learning-levels.md) | Bands and cross-doc path |
 | [grammar-docs.md](grammar-docs.md) | Learner prose, house cast |
 | [glosses.md](glosses.md) | Morph / free English (teaching lines, not spoilers) |

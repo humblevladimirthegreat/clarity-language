@@ -96,4 +96,17 @@ describe("duplicateDrills", () => {
     const order = learningOrder(["c.md"], new Map([["c.md", pageSections("c.md", md)]]));
     assert.deepEqual(duplicateDrills(order).map((d) => d.key), ["c.md|advanced"]);
   });
+
+  it("counts a converted Practice section and a legacy one in the same band as two", () => {
+    const md = `# C
+
+## Advanced
+
+### Practice {#advanced-practice}
+
+### Translation practice {#advanced-translation-practice}
+`;
+    const order = learningOrder(["c.md"], new Map([["c.md", pageSections("c.md", md)]]));
+    assert.deepEqual(duplicateDrills(order).map((d) => d.key), ["c.md|advanced"]);
+  });
 });
