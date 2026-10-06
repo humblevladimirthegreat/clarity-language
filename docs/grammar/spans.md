@@ -149,31 +149,34 @@ To use a foreign verb, adjective, or adverb (*googled*, *rouge*), put an opaque 
 
 The letter before the bracket belongs to the whole span. Agazan words inside a cite start with **their own** role letters.
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a rehearsal
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Alahen* | `alahen` | | |
-| *Ahaben* | `ahaben` | | |
-| *tell* | `vezebel` | | |
-| *write* | `varadal` | | |
-| *see* | `vahahal` | | |
-| *sing* | `vezehel` | | |
-| *walk* | `vowogal` | | |
-| *stop* | `vazadal` | | |
-| *Onodan* | `onodan` | | |
-| *dog* | `odogal` | | |
-| *quiet* | `agawal` | | |
-| *kimchi* | <code>d&lt;kimchi&gt;</code> | | |
-| *Sam* | <code>@&lt;Sam&gt;</code> | | |
-| *google* (verb) | <code>v&lt;google&gt;</code> | | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *sing* | `vezehel` | 🧑‍🎤 |
+| *stop* | `vazadal` | 🛑 |
+| *quiet* | `agawal` | 🔈 |
+| *Onodan* | `onodan` | 🎵 from *note*: a song's name |
+| *Sam* | <code>@&lt;Sam&gt;</code> | a foreign name |
+| *google* | <code>v&lt;google&gt;</code> | a loan verb |
+| *Bravo* | <code>&lt;Bravo&gt;</code> | a foreign word |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *tell* | `vezebel` |
+| *write* | `varadal` |
+| *walk* | `vowogal` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
@@ -185,165 +188,128 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-Azawan | d-CITE[Azawan] | v-tell
 :::
 
-**2.** *Alahen wrote something like “Azawan sings.”*
+**2.** *Alahen wrote something like “Ahaben sings.”*
 
 ::: details Show answer
-`zalahen d~[zazawan vezehel] varadal.`
+`zalahen d~[zahaben vezehel] varadal.`
 
-z-Alahen | d-CITE.about[z-Azawan | v-sing] | v-write
+z-Alahen | d-CITE.about[z-Ahaben | v-sing] | v-write
 :::
 
-**3.** *Azawan sang Onodan Alahen.* (the work, a multi-word title)
+**3.** *Alahen tells Sam.* (a foreign name as the recipient)
 
 ::: details Show answer
-`zazawan d@[onodan alahen] vezehel.`
+<code>zalahen b@&lt;Sam&gt; vezebel.</code>
 
-z-Azawan | d-NAME.CITE[Onodan | Alahen] | v-sing
+z-Alahen | b-NAME.OPAQUE["Sam"] | v-tell
 :::
 
-**4.** *Azawan saw kimchi.* (a foreign word)
+**4.** *Don’t say “stop,” Azawan.*
 
 ::: details Show answer
-<code>zazawan d&lt;kimchi&gt; vahahal.</code>
+`yul zazawan v[vazadal].`
 
-z-Azawan | d-OPAQUE["kimchi"] | v-see
+y-prohibition | z-Azawan | v-CITE[v-stop]
 :::
 
-**5.** *Ahaben sang Onodan.* (one-word work: ordinary **-n**)
+**5.** *Sam, does Azawan sing?*
 
 ::: details Show answer
-`zahaben donodan vezehel.`
+<code>y@&lt;Sam&gt; yol zazawan vezehel.</code>
 
-z-Ahaben | d-Onodan | v-sing
+y-NAME.OPAQUE["Sam"] | y-question | z-Azawan | v-sing
 :::
 
-**6.** *Azawan sings (quietly).*
+**6.** *Alahen walks (quietly).*
 
 ::: details Show answer
-`zazawan vezehel th(hagawal).`
+`zalahen vowogal th(hagawal).`
 
-z-Azawan | v-sing | th-ASIDE[h-quiet]
-:::
-
-**7.** *Don’t say “stop,” Alahen.*
-
-::: details Show answer
-`yul zalahen v[vazadal].`
-
-y-prohibition | z-Alahen | v-CITE[v-stop]
-:::
-
-**8.** *Sam, does Azawan walk?*
-
-::: details Show answer
-<code>y@&lt;Sam&gt; yol zazawan vowogal.</code>
-
-y-NAME.OPAQUE["Sam"] | y-question | z-Azawan | v-walk
-:::
-
-**9.** *Azawan tells Sam.* (a foreign name as the recipient)
-
-::: details Show answer
-<code>zazawan b@&lt;Sam&gt; vezebel.</code>
-
-z-Azawan | b-NAME.OPAQUE["Sam"] | v-tell
-:::
-
-**10.** *Alahen googled Azawan.* (a loan verb)
-
-::: details Show answer
-<code>zalahen v&lt;google&gt; dazawan.</code>
-
-z-Alahen | v-OPAQUE["google"] | d-Azawan
+z-Alahen | v-walk | th-ASIDE[h-quiet]
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** <code>zalahen d&lt;kimchi&gt; vahahal.</code>
+**1.** `zalahen d@[onodan alahen] varadal.`
 
 ::: details Show answer
+z-Alahen | d-NAME.CITE[Onodan | Alahen] | v-write
 
-z-Alahen | d-OPAQUE["kimchi"] | v-see
-
-*Alahen saw kimchi.* (a foreign word)
+*Alahen wrote Onodan Alahen.* (the work)
 :::
 
-**2.** `zahaben d~[zalahen vezehel] varadal.`
+**2.** <code>zalahen v&lt;google&gt; donodan.</code>
 
 ::: details Show answer
+z-Alahen | v-OPAQUE["google"] | d-Onodan
 
-z-Ahaben | d-CITE.about[z-Alahen | v-sing] | v-write
-
-*Ahaben wrote something like “Alahen sings.”*
+*Alahen googled Onodan.* (a loan verb)
 :::
 
-**3.** `zahaben d@[onodan alahen] varadal.`
+**3.** `zazawan vezehel th(zalahen vazadal).`
 
 ::: details Show answer
+z-Azawan | v-sing | th-ASIDE[z-Alahen | v-stop]
 
-z-Ahaben | d-NAME.CITE[Onodan | Alahen] | v-write
-
-*Ahaben wrote Onodan Alahen.* (the work)
+*Azawan sings (Alahen stops).*
 :::
 
-**4.** `zalahen vezebel th(zazawan vezehel).`
+**4.** <code>y&lt;Bravo&gt;.</code>
 
 ::: details Show answer
+y-OPAQUE["Bravo"]
 
-z-Alahen | v-tell | th-ASIDE[z-Azawan | v-sing]
-
-*Alahen tells (Azawan sings).*
+*Bravo!* (a foreign reaction)
 :::
 
-**5.** <code>z@&lt;Sam&gt; d[azawan] vezebel.</code>
+**5.** `zahaben d~@[onodan alahen] vezehel.`
 
 ::: details Show answer
+z-Ahaben | d-NAME.CITE.about[Onodan | Alahen] | v-sing
 
-z-NAME.OPAQUE["Sam"] | d-CITE[Azawan] | v-tell
-
-*Sam said “Azawan.”* (hello)
+*Ahaben sang the song called something like Onodan Alahen.*
 :::
 
-**6.** <code>@&lt;Sam&gt;</code>
+**6.** `zahaben d[vazadal] vezebel.`
 
 ::: details Show answer
-*Sam*
+z-Ahaben | d-CITE[v-stop] | v-tell
+
+*Ahaben said “stop.”*
 :::
 
-**7.** `yol zahaben d[azawan] vezebel.`
+#### Pick one {#beginner-pick-one}
+
+**1.** *Ahaben sang Onodan Alahen.* (the song) `zahaben d@[onodan alahen] vezehel.` or `zahaben d[onodan alahen] vezehel.`
 
 ::: details Show answer
+`zahaben d@[onodan alahen] vezehel.`
 
-y-question | z-Ahaben | d-CITE[Azawan] | v-tell
+z-Ahaben | d-NAME.CITE[Onodan | Alahen] | v-sing
 
-*Did Ahaben say “Azawan”?*
+**`@`** makes the span the work itself; bare brackets quote the words.
 :::
 
-**8.** <code>zodogal g&lt;rouge&gt; vowogal.</code>
+**2.** *Azawan said “Alahen stops.”* `zazawan d[zalahen vazadal] vezebel.` or `zazawan vezebel th(zalahen vazadal).`
 
 ::: details Show answer
+`zazawan d[zalahen vazadal] vezebel.`
 
-[z-dog | g-OPAQUE["rouge"]] | v-walk
+z-Azawan | d-CITE[z-Alahen | v-stop] | v-tell
 
-*A rouge dog walks.* (a loan adjective)
+What was said is the object, so it is a cite in `/d/`; an aside only comments on the sentence.
 :::
 
-**9.** <code>y@&lt;Sam&gt; yel zazawan vowogal.</code>
+#### Fix it {#beginner-fix-it}
+
+**1.** *Alahen sang Onodan.* (a work with a one-word name) <!-- lint: error -->`zalahen d@[onodan] vezehel.`
 
 ::: details Show answer
+`zalahen donodan vezehel.`
 
-y-NAME.OPAQUE["Sam"] | y-command | z-Azawan | v-walk
+z-Alahen | d-Onodan | v-sing
 
-*Sam, let Azawan walk.*
-:::
-
-**10.** <code>zazawan b@&lt;Sam&gt; vezebel.</code>
-
-::: details Show answer
-
-z-Azawan | b-NAME.OPAQUE["Sam"] | v-tell
-
-*Azawan tells Sam.*
+A one-word name is an ordinary **-n** word; **`@[…]`** is for titles of several words.
 :::
 
 ## Intermediate {#intermediate}

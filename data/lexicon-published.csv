@@ -177,7 +177,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧑‍💼,administrate,adede,bureaucracy,office work runs bureaucracy,,management; manage; administration,
 🧑‍🔬,research,areze,inquiry,research chases answers to open questions,,scientist; scientific; science; survey,
 🧑‍💻,program,oboga,innovation,programming drives innovation,,invent,
-🧑‍🎤,sing,ezehe,expression,singing gives expression,,express,spans.md#beginner-translation-practice
+🧑‍🎤,sing,ezehe,expression,singing gives expression,,express,spans.md#beginner-practice
 🧑‍🎨,craft,ageva,creativity,crafting brings creativity,,creation; creative; technique,predication.md#intermediate-translation-practice
 🧑‍✈️,pilot,abawo,navigation,piloting handles navigation,,,
 🧑‍🚀,orbit,oraba,exploration,orbiting seeks exploration,,explore,
@@ -260,7 +260,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🐒,monkey,amage,mimicry,monkey see monkey do,,copy,
 🦍,gorilla,egewa,dominance,800-pound gorilla dominates,,dominate,
 🦧,orangutan,orada,,,,,
-🐕,dog,odoga,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,spans.md#beginner-translation-practice
+🐕,dog,odoga,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,roles.md#beginner-translation-practice
 🐺,wolf,uwuva,predation,wolf at the door,,,
 🦊,fox,avagu,cunning,sly as a fox,,,
 🦝,raccoon,aragu,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,,roles.md#intermediate-translation-practice
@@ -592,7 +592,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ⛽,gas-pump,agoba,refuel,gas station fills the tank; refuel is restoring energy,,fuel; pump; gas,
 🛞,wheel,ewawe,motion,wheel enables motion,,movement; roll; move; gesture,
 🚦,traffic-light,alado,directive,traffic light tells go or stop; signal is a clear instruction,,,
-🛑,stop,azada,cessation,stop sign means do not proceed; halt is bringing movement to stop,,cancel; eliminate,spans.md#beginner-translation-practice
+🛑,stop,azada,cessation,stop sign means do not proceed; halt is bringing movement to stop,,cancel; eliminate,spans.md#beginner-practice
 🚧,construction,ageza,blockage,construction blocks the road; blockage is something in the way,,block; barrier; architecture,roles.md#beginner-translation-practice
 ⚓,anchor,age,grounding,anchor holds the ship steady; grounding is staying steady,,,hooks.md#advanced-translation-practice
 🛟,life-buoy,alavu,rescue,a lifebuoy is thrown to pull someone from the water,,,roles.md#intermediate-translation-practice
@@ -767,7 +767,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💍,ring,ereha,promise,a ring seals a vow; a promise binds your future self,,surround; guarantee; assure,joins.md#intermediate-translation-practice
 💎,gemstone,ehezo,value,gem is rare and precious; value is worth holding dear,,worth; valuable; appreciate; rate,
 🔇,mute,amuyu,suppression,mute silences all sound; suppression is holding back expression,,,knowing.md#intermediate-translation-practice
-🔈,quiet,agawa,volume,quiet is sound turned low; volume is level of sound,,,spans.md#beginner-translation-practice
+🔈,quiet,agawa,volume,quiet is sound turned low; volume is level of sound,,,spans.md#beginner-practice
 🔉,audio,adeha,voice,audio carries a speaking voice; voice is audible expression,m.w:quite,representative,
 🔊,loudspeaker,aladu,amplification,a loudspeaker fills the room; amplification is making louder,v:shout,noise; loud,
 📣,megaphone,emego,announcement,megaphone broadcasts to the crowd; announcement is public declaration,,announce; advertise; ad,
@@ -775,7 +775,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔔,bell,ebehu,alert,bell rings to warn or call; alert is warning attention,,,word-endings.md#beginner-practice
 🔕,bell-off,ovahe,,,,,
 🎼,sheet-music,umuyu,composition,sheetmusic arranges notes on lines; composition is arranged creation,,music; compose,plurality.md#intermediate-translation-practice
-🎵,note,onoda,melody,note carries a musical line; melody is tuneful line,,tone; pitch,spans.md#beginner-translation-practice
+🎵,note,onoda,melody,note carries a musical line; melody is tuneful line,,tone; pitch,spans.md#beginner-practice
 🎶,tune,uduha,,,,song,
 🎙️,studio-mic,emegu,,,,studio,
 🎚️,slider,azude,adjustment,slider fine-tunes the level; adjustment is fine tuning,,slide; adjust; amendment; revise,
