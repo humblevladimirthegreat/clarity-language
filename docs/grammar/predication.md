@@ -132,29 +132,36 @@ With **no** `/b/` after it, `gugol` points back to the one already mentioned: *t
 
 **Compare with:** *Azawan is a dog* uses [kind / role](#classification) (`godogal`). Use **`SAME`** when two labels name one person. *A house like Azawan’s* is resemblance ([simile](relations.md#similative)), not one house under two names.
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a passport office
 
-**Roots used here:**
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *police* | `abazel` | 👮 |
+| *page* | `abehel` | 📄 |
+| *Japanese* | `ahebam` | 🇯🇵 from *Japan flag*: belonging takes **-m** |
+| *challenge* | `amadam` | ⛰️ from *mountain* |
+| **SAME** | `ugol` | 🪙 from *coin*: two faces, one substance |
+
+**Review:**
 
 | English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
+| *speaker* | `amun` |
 | *guard* | `agavol` |
-| *police* | `abazel` |
-| *page* | `abehel` |
-| *blue* | `ubuhel` |
-| *red* | `eredal` |
-| *Japanese* | `ahebam` |
-| *challenge* | `amadam` |
-| **SAME** | `ugol` |
-| *walk* | `vowogal` |
+| *angry* | `anegel` |
+| *very* | `welavam` |
+| *sneak* | `vezevul` |
 | *run* | `varahal` |
+| *see* | `vahahal` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
@@ -166,15 +173,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-Azawan | g-guard
 :::
 
-**2.** *The page is blue.*
-
-::: details Show answer
-`zabehel gubuhel.`
-
-z-page | g-blue
-:::
-
-**3.** *Ahaben is Japanese.*
+**2.** *Ahaben is Japanese.*
 
 ::: details Show answer
 `zahaben gahebam.`
@@ -182,135 +181,120 @@ z-page | g-blue
 z-Ahaben | g-japanese
 :::
 
-**4.** *Alahen is challenging.*
+**3.** *Alahen is very angry.*
 
 ::: details Show answer
-`zalahen gamadam.`
+`zalahen welavam ganegel.`
 
-z-Alahen | g-challenge
+z-Alahen | [w-very | g-angry]
 :::
 
-**5.** *Alahen is a police officer.*
+**4.** *The police officer is Azawan.*
 
 ::: details Show answer
-`zalahen gabazel.`
+`zabazel gugol bazawan.`
 
-z-Alahen | g-police
+z-police | [g-SAME | b-Azawan]
 :::
 
-**6.** *The guard is Azawan.*
+**5.** *There is a page.*
 
 ::: details Show answer
-`zagavol gugol bazawan.`
+`zabehel.`
 
-z-guard | [g-SAME | b-Azawan]
+z-page
 :::
 
-**7.** *The police officer is Ahaben.*
+**6.** *Alahen is sneaking.*
 
 ::: details Show answer
-`zabazel gugol bahaben.`
+`zalahen gezevul.`
 
-z-police | [g-SAME | b-Ahaben]
-:::
-
-**8.** *Alahen is Azawan.*
-
-::: details Show answer
-`zalahen gugol bazawan.`
-
-z-Alahen | [g-SAME | b-Azawan]
-:::
-
-**9.** *Ahaben is running.*
-
-::: details Show answer
-`zahaben garahal.`
-
-z-Ahaben | g-run
+z-Alahen | g-sneak
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zabazel vowogal.`
+**1.** `zazawan gabazel.`
 
 ::: details Show answer
-
-z-police | v-walk
-
-*A police officer walks.*
-:::
-
-**2.** `zazawan gabazel.`
-
-::: details Show answer
-
 z-Azawan | g-police
 
 *Azawan is a police officer.*
 :::
 
-**3.** `zabehel geredal.`
+**2.** `zalahen gamadam.`
 
 ::: details Show answer
+z-Alahen | g-challenge
 
-z-page | g-red
-
-*The page is red.*
+*Alahen is challenging.*
 :::
 
-**4.** `zagavol gugol balahen.`
+**3.** `zagavol gugol balahen.`
 
 ::: details Show answer
-
 z-guard | [g-SAME | b-Alahen]
 
 *The guard is Alahen.*
 :::
 
-**5.** `zabazel gugol bazawan.`
+**4.** `zabazel garahal.`
 
 ::: details Show answer
+z-police | g-run
 
-z-police | [g-SAME | b-Azawan]
-
-*The police officer is Azawan.*
+*There is a police officer running.*
 :::
 
-**6.** `zagavol varahal.`
+**5.** `zahaben dabehel gugol vahahal.`
 
 ::: details Show answer
+z-Ahaben | [d-page | g-SAME] | v-see
 
-z-guard | v-run
-
-*A guard runs.*
+*Ahaben sees the same page (as before).*
 :::
 
-**7.** `yol zalahen gugol bahaben.`
+**6.** `yol zalahen gugol bamun.`
 
 ::: details Show answer
+y-question | z-Alahen | [g-SAME | b-speaker]
 
-y-question | z-Alahen | [g-SAME | b-Ahaben]
-
-*Is Alahen Ahaben?*
+*Is Alahen me?*
 :::
 
-**8.** `zahaben gugol bazawan.`
+#### Pick one {#beginner-pick-one}
+
+**1.** *Alahen is Japanese.* `zalahen gahebam.` or `zalahen gaheban.`
 
 ::: details Show answer
+`zalahen gahebam.`
 
-z-Ahaben | [g-SAME | b-Azawan]
+z-Alahen | g-japanese
 
-*Ahaben is Azawan.*
+Belonging to a country takes **-m**; **-n** names the country itself.
 :::
 
-**9.** `zabazel gowogal.`
+**2.** *The guard is angry.* (the guard already mentioned) `zagavol ganegel.` or `zagavor ganegel.`
 
 ::: details Show answer
+`zagavor ganegel.`
 
-z-police | g-walk
+z-←guard | g-angry
 
-*There is a police officer walking.*
+After a known guard, the `/ɡ/` word is a property; `zagavol ganegel.` introduces one: *there is an angry guard*.
+:::
+
+#### Fix it {#beginner-fix-it}
+
+**1.** *Alahen is Azawan.* (one person, two names) <!-- lint: error -->`zalahen gazawan.`
+
+::: details Show answer
+`zalahen gugol bazawan.`
+
+z-Alahen | [g-SAME | b-Azawan]
+
+A word on `/ɡ/` puts Alahen in a kind; two names for one person take **`gugol`** and the other name in `/b/`.
 :::
 
 ## Intermediate {#intermediate}

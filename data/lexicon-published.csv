@@ -182,7 +182,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧑‍✈️,pilot,abawo,navigation,piloting handles navigation,,,
 🧑‍🚀,orbit,oraba,exploration,orbiting seeks exploration,,explore,
 🧑‍🚒,firefight,avova,,,,,
-👮,police,abaze,authority,policing wields authority,,,predication.md#beginner-translation-practice
+👮,police,abaze,authority,policing wields authority,,,predication.md#beginner-practice
 🕵️,investigate,une,deduction,investigating follows clues; deduction is the unobservable inference,,implication; logic; derive; interpretation,
 💂,guard,agavo,protection,guarding provides protection,,insure; protect,dependents.md#beginner-practice
 🥷,sneak,ezevu,stealth,sneaking moves with stealth,,,speech-moves.md#beginner-practice
@@ -216,7 +216,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🫈,bigfoot,ebagu,elusiveness,bigfoot stays elusive,,,
 💆,massage,ameza,soothing,massage brings relief,,,
 💇,haircut,ehegu,self-presentation,haircut is grooming; self-presentation is the unobservable aim,,,
-🚶,walk,owoga,,,,march; wander,predication.md#beginner-translation-practice
+🚶,walk,owoga,,,,march; wander,relations.md#beginner-translation-practice
 🧍,stand,azado,presence,stand shows presence,,existence; attendance,clause.md#intermediate-translation-practice
 🧎,kneel,eneha,submission,kneel shows submission,,,sakes.md#intermediate-translation-practice
 🧑‍🦼,power-chair,abavo,,,,,
@@ -517,7 +517,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🗺️,map,ama,plan,a map charts a route; a plan charts a course,,agenda; design; project,comparatives.md#intermediate-translation-practice
 🗾,country,agu,scope,a map of one country; scope is the area the picture includes,,national; region; nation; extent; regional; zone; territory; area,
 🧭,compass,ame,direction,a compass points the way; direction is where you're headed,,direct; guide,sakes.md#beginner-translation-practice
-⛰️,mountain,amada,challenge,mountains are hard to climb; a challenge is hard to face,,pile; heap,predication.md#beginner-translation-practice
+⛰️,mountain,amada,challenge,mountains are hard to climb; a challenge is hard to face,,pile; heap,predication.md#beginner-practice
 🛘,landslide,alaze,breakdown,landslide is sudden collapse; breakdown is the unobservable failure of a system,,crash; collapse; crack; outage,
 🌋,volcano,avoge,eruption,a volcano bursts outward; eruption is bursting emotion,,burst,
 🏕️,camp,agabo,,,,,
@@ -829,12 +829,12 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 📒,ledger,uhu,,,,catalog,
 📃,page-curl,obege,,,,,
 📜,scroll,oze,tale,scroll records a tale; tale is a told story,,historical; narrative,
-📄,page,abehe,documentation,page is a sheet; record is the unobservable keeping,,sheet; document; text,predication.md#beginner-translation-practice
+📄,page,abehe,documentation,page is a sheet; record is the unobservable keeping,,sheet; document; text,predication.md#beginner-practice
 📰,newspaper,unuze,news,a newspaper prints what happened today,,article; magazine; coverage; journal,hooks.md#intermediate-translation-practice
 📑,tab,adeba,organization,a tab sorts open pages into their own slots,,organize; arrangement; system,
 🔖,bookmark,ura,reminder,a bookmark holds your place to come back to,,remind,
 🏷️,label,aleba,classification,a label sorts things into named groups,,category; class; mark,
-🪙,coin,ugo,same,coin has two faces of one thing; same is two labels for one referent,,uniform,predication.md#beginner-translation-practice
+🪙,coin,ugo,same,coin has two faces of one thing; same is two labels for one referent,,uniform,predication.md#beginner-practice
 💰,money,amo,debt,money bag holds what is owed; debt is an unpaid balance,v:pay,finance; wage; salary; cash; currency; fund; capital; payment,clause.md#beginner-practice
 🪎,treasure,edohe,riches,a treasure chest is piled with gold and jewels,,,
 💴,yen,eyeha,,,,,
@@ -1073,11 +1073,11 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ℹ️,information,eneve,fact,the info sign gives facts; a fact is what is actually so,,data; inform,
 🅿️,parking,aboge,allotment,parking marks a stall; allotment is the unobservable assigned share,,assign,
 🆘,sos,ezaha,distress,sos signals distress,,,
-🔴,red,ereda,,,,,predication.md#beginner-translation-practice
+🔴,red,ereda,,,,,hooks.md#beginner-translation-practice
 🟠,orange,oraha,,,,,
 🟡,yellow,eyaye,caution,yellow circle warns slow down; caution is careful awareness,,,
 🟢,green,ego,permission,green circle signals go ahead; permission is allowed to proceed,,license,sakes.md#intermediate-translation-practice
-🔵,blue,ubuhe,,,,,predication.md#beginner-translation-practice
+🔵,blue,ubuhe,,,,,hooks.md#beginner-translation-practice
 🟣,purple,ebebu,royalty,purple circle marks regal hue; royalty is high noble rank,,,
 🟤,brown,abavu,earthiness,brown circle is soil and wood; earthiness is plain grounded quality,,,
 ⚫,black,abago,,,,,
@@ -1217,7 +1217,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🇯🇪,jersey-flag,ehezu,jerseyman,jersey people are jerseyman,,,
 🇯🇲,jamaica-flag,ahega,jamaican,jamaica people are jamaican,,,
 🇯🇴,jordan-flag,ohoda,jordanian,jordan people are jordanian,,,
-🇯🇵,japan-flag,aheba,japanese,japan people are japanese,,,predication.md#beginner-translation-practice
+🇯🇵,japan-flag,aheba,japanese,japan people are japanese,,,predication.md#beginner-practice
 🇰🇪,kenya-flag,egeya,kenyan,kenya people are kenyan,,,
 🇰🇬,kyrgyzstan-flag,egegu,kyrgyz,kyrgyzstan people are kyrgyz,,,
 🇰🇭,cambodia-flag,agobo,cambodian,cambodia people are cambodian,,,
