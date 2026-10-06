@@ -529,7 +529,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🏛️,colonnade,agedu,institution,grand columns mark public power; institution is established order,,official; column; establishment; politics; govern,
 🧱,brick,eve,foundation,bricks stack from the ground up; foundation is the base layer,,wall; basis; framework; underlie; base,
 🪨,rock,araga,heavy,rock is hard to lift; heaviness is weight on a scale,,stone; weight; concrete; firmly,plurality.md#intermediate-translation-practice
-🪵,wood,uwu,raw,wood is unfinished material; raw is unprocessed state,,log,x-compounds.md#beginner-translation-practice
+🪵,wood,uwu,raw,wood is unfinished material; raw is unprocessed state,,log,x-compounds.md#beginner-practice
 🛖,hut,ahede,locality,hut sits in a small settlement; locality is the near neighborhood,,local; neighborhood,
 🏠,house,ahaza,home,a house is walls and roof; home is where you belong,,domestic; accommodation; chamber,relations.md#intermediate-translation-practice
 🏢,office,oveza,corporate,tall offices for business; corporate is organized commerce,,facility; corporation; agency,
@@ -880,7 +880,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔓,unlocked,anaga,access,unlock opens what was shut; access is ability to enter,,,
 🔑,key,egehu,solution,key opens what was locked; solution is what unlocks the problem,,reply; respond; solve; response; resolve; resolution,questions.md#beginner-practice
 🔨,hammer,ahavo,iron,a hammer is forged iron; iron is the hard forged metal,,steel,relations.md#beginner-practice
-🪓,axe,agezu,severance,axe cuts through wood; severance is cutting apart,,cut; break,x-compounds.md#beginner-translation-practice
+🪓,axe,agezu,severance,axe cuts through wood; severance is cutting apart,,cut; break,
 ⛏️,pick,ebege,deep,a pick digs far below the surface; deep is far below,,,
 🗡️,dagger,aduge,,,,weapon,
 ⚔️,duel,uduhe,conflict,two fighters face off to settle a quarrel,,attack; opposition; dispute; war; argue,
@@ -888,8 +888,8 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🪃,boomerang,ubuha,,,v:throw,cast,
 🏹,archery,arehe,aim,archery sends an arrow to a target; aim is directing toward target,v:hunt,focus,
 🛡️,shield,ehedu,defense,shield blocks incoming blows; defense is guarding against harm,,defend,
-🪚,saw,ozazo,division,saw cuts material apart; division is splitting into parts,,section; sector; chapter; department; district,x-compounds.md#beginner-translation-practice
-🔧,wrench,erevu,workaround,wrench turns past a stuck bolt; workaround is an improvised bypass,,,x-compounds.md#beginner-translation-practice
+🪚,saw,ozazo,division,saw cuts material apart; division is splitting into parts,,section; sector; chapter; department; district,x-compounds.md#beginner-practice
+🔧,wrench,erevu,workaround,wrench turns past a stuck bolt; workaround is an improvised bypass,,,x-compounds.md#beginner-practice
 🪛,screwdriver,azugu,assembly,screwdriver joins parts together; assembly is putting together,,,
 🔩,bolt,obodo,ohm,a bolt limits current through the joint; ohm is the SI resistance unit,,,
 ⚙️,gear,ege,mechanism,gear drives mechanism,,device; instrument; engine; functional; machine,

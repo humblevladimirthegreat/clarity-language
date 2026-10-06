@@ -73,42 +73,45 @@ Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agaza
 
 **Related form:** *someone who teaches* (who does / where it happens / who undergoes / who is told; **-r** *the one teaching*) uses a [role compound](roles.md#role-compounds).
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a hardware store
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *doorbell* | `oyelebehul` | |
-| *raincoat* | `erehelogodul` | |
-| *greenhouse* | `avavulahazal` | |
-| *friend* | `analobel` | |
-| *hammer* | `ahavol` | |
-| *wrench* | `erevul` | |
-| *axe* | `agezul` | |
-| *saw* | `ozazol` | |
-| *wood* | `uwul` | |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *punch* | `abahel` | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *doorbell* | `oyelebehul` | 🚪🔔 door **-l** bell |
+| *raincoat* | `erehelogodul` | 🌧️🧥 rain **-l** coat |
+| *wrench* | `erevul` | 🔧 |
+| *saw* | `ozazol` | 🪚 |
+| *wood* | `uwul` | 🪵 |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *hammer* | `ahavol` |
+| *bell* | `ebehul` |
+| *find* | `vamagal` |
+| *see* | `vahahal` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *a doorbell*
+**1.** *a bell and a doorbell*
 
 ::: details Show answer
-`zoyelebehul.`
+`zebehul zoyelebehul zal.`
 
-z-doorbell
+[z-bell | z-doorbell | z-and]
 :::
 
-**2.** *a hammer and a wrench*
+**2.** *a hammer and a wrench (and possibly more)*
 
 ::: details Show answer
 `zahavol zerevul zam.`
@@ -116,39 +119,23 @@ z-doorbell
 [z-hammer | z-wrench | z-and.open]
 :::
 
-**3.** *a wood saw*
+**3.** *Alahen finds a raincoat and a doorbell.*
 
 ::: details Show answer
-`zozazoxuwul.`
+`zalahen derehelogodul doyelebehul dal vamagal.`
 
-z-saw-x-wood
+z-Alahen | [d-raincoat | d-doorbell | d-and] | v-find
 :::
 
-**4.** *a raincoat*
+**4.** *Ahaben finds a raincoat.*
 
 ::: details Show answer
-`zerehelogodul.`
+`zahaben derehelogodul vamagal.`
 
-z-raincoat
+z-Ahaben | d-raincoat | v-find
 :::
 
-**5.** *Azawan and Alahen* (two people)
-
-::: details Show answer
-`zazawan zalahen.`
-
-z-Azawan | z-Alahen
-:::
-
-**6.** *Alahen sees a greenhouse.*
-
-::: details Show answer
-`zalahen davavulahazal vahahal.`
-
-z-Alahen | d-greenhouse | v-see
-:::
-
-**7.** *Azawan-Alahen* (one person)
+**5.** *Azawan-Alahen* (one person)
 
 ::: details Show answer
 `zazawaxalahen.`
@@ -156,86 +143,86 @@ z-Alahen | d-greenhouse | v-see
 z-Azawan-x-Alahen
 :::
 
-**8.** *Alahen punches a friend.*
+**6.** *Alahen sees wood.*
 
 ::: details Show answer
-`zalahen zanalobel vabahel.`
+`zalahen duwul vahahal.`
 
-z-Alahen | z-friend | v-punch
+z-Alahen | d-wood | v-see
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zanalobel.`
+**1.** `zalahen doyelebehul vamagal.`
 
 ::: details Show answer
+z-Alahen | d-doorbell | v-find
 
-z-friend
-
-*a friend*
+*Alahen finds a doorbell.*
 :::
 
-**2.** `zahaben doyelebehul vahahal.`
+**2.** `zuwul zozazol zal.`
 
 ::: details Show answer
+[z-wood | z-saw | z-and]
 
-z-Ahaben | d-doorbell | v-see
-
-*Ahaben sees a doorbell.*
+*wood and a saw* (two things)
 :::
 
-**3.** `zahavol zagezul zam.`
+**3.** `zahaben duwuxozazol vahahal.`
 
 ::: details Show answer
+z-Ahaben | d-wood-x-saw | v-see
 
-[z-hammer | z-axe | z-and.open]
-
-*a hammer and an axe*
+*Ahaben sees a wood saw.*
 :::
 
-**4.** `zozazoxuwul.`
+**4.** `zerevul zebehul zam.`
 
 ::: details Show answer
+[z-wrench | z-bell | z-and.open]
 
-z-saw-x-wood
-
-*a wood saw*
+*a wrench and a bell (and possibly more)*
 :::
 
-**5.** `zahaben derehelogodul vahahal.`
+**5.** `zazawan derehelogodul vahahal.`
 
 ::: details Show answer
+z-Azawan | d-raincoat | v-see
 
-z-Ahaben | d-raincoat | v-see
-
-*Ahaben sees a raincoat.*
+*Azawan sees a raincoat.*
 :::
 
-**6.** `zanalobel dahavol vahahal.`
+**6.** `zahaben dahavoxerevul vamagal.`
 
 ::: details Show answer
+z-Ahaben | d-hammer-x-wrench | v-find
 
-z-friend | d-hammer | v-see
-
-*A friend sees a hammer.*
+*Ahaben finds a hammer-wrench* (one tool).
 :::
 
-**7.** `zalahen dagezul vahahal.`
+#### Pick one {#beginner-pick-one}
+
+**1.** *a wood saw* `zuwuxozazol.` or `zozazoxuwul.`
 
 ::: details Show answer
+`zuwuxozazol.`
 
-z-Alahen | d-axe | v-see
+z-wood-x-saw
 
-*Alahen sees an axe.*
+The last root is the kind of thing (a saw); the root before **`x`** says which kind.
 :::
 
-**8.** `zazawan zanalobel vabahel.`
+#### Fix it {#beginner-fix-it}
+
+**1.** *a doorbell* <!-- lint: error -->`zoyexebehul.`
 
 ::: details Show answer
+`zoyelebehul.`
 
-z-Azawan | z-friend | v-punch
+z-doorbell
 
-*Azawan punches a friend.*
+*Doorbell* is a dictionary word: look it up instead of gluing *door* and *bell* with **`x`**.
 :::
 
 ## Intermediate {#intermediate}
