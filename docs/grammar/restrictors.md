@@ -155,36 +155,42 @@ To say *when raining, among other times*, end the list with open **`ham`** inste
 >
 > "Azawan sleeps when raining and at night, among other times."
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a swimming pool
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *swim* | `vezewel` | |
-| *sleepy* | `ezebul` | |
-| *rain* | `erehel` | |
-| *night* | `anadal` | |
-| *thunderstorm* | `avodel` | |
-| *haste* | `hadehum` | `adehul` *dash* |
-| *quietude* | `halahom` | `alahol` *owl* |
-| *punch* | `vabahel` | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *swim* | `vezewel` | 🏊 |
+| *sleepy* | `ezebul` | 😪 |
+| *rain* | `erehel` | 🌧️ |
+| *night* | `anadal` | 🌃 |
+| *thunderstorm* | `avodel` | ⛈️ |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *scream* | `vezugel` |
+| *sit* | `vehahel` |
+| *run* | `varahal` |
+| *angry* | `anegel` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *Azawan swims only at night.*
+**1.** *Azawan swims only when raining.*
 
 ::: details Show answer
-`zazawan vezewel hanadal hal.`
+`zazawan vezewel herehel hal.`
 
-z-Azawan | v-swim | h-night | h-only-when
+z-Azawan | v-swim | h-rain | h-only-when
 :::
 
 **2.** *Alahen never swims.*
@@ -195,126 +201,120 @@ z-Azawan | v-swim | h-night | h-only-when
 z-Alahen | v-swim | h-never
 :::
 
-**3.** *Ahaben always swims.*
+**3.** *Ahaben always swims, except at night.*
 
 ::: details Show answer
-`zahaben vezewel hual.`
+`zahaben vezewel hanadal hual.`
 
-z-Ahaben | v-swim | h-always
+z-Ahaben | v-swim | h-night | h-always-except
 :::
 
-**4.** *Azawan is never sleepy.*
+**4.** *Alahen screams sometimes.*
 
 ::: details Show answer
-`zazawan wal gezebul.`
+`zalahen vezugel har.`
 
-z-Azawan | [w-never | g-sleepy]
+z-Alahen | v-scream | h-sometimes
 :::
 
-**5.** *Alahen swims sometimes.*
+**5.** *Ahaben is never sleepy.*
 
 ::: details Show answer
-`zalahen vezewel har.`
+`zahaben wal gezebul.`
 
-z-Alahen | v-swim | h-sometimes
+z-Ahaben | [w-never | g-sleepy]
 :::
 
-**6.** *Azawan swims quickly and quietly.*
+**6.** *Azawan swims at night, among other times.*
 
 ::: details Show answer
-`zazawan vezewel hadehum halahom.`
+`zazawan vezewel hanadal ham.`
 
-z-Azawan | v-swim | h-haste | h-quietude
-:::
-
-**7.** *Ahaben swims anytime.*
-
-::: details Show answer
-`zahaben vezewel hor.`
-
-z-Ahaben | v-swim | h-anytime
-:::
-
-**8.** *Alahen always punches Azawan.*
-
-::: details Show answer
-`zalahen vabahel dazawan hual.`
-
-z-Alahen | v-punch | d-Azawan | h-always
+z-Azawan | v-swim | h-night | h-when.open
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zalahen vezewel hanadal hal.`
+**1.** `zahaben vehahel huam.`
 
 ::: details Show answer
+z-Ahaben | v-sit | h-always.open
 
-z-Alahen | v-swim | h-night | h-only-when
-
-*Alahen swims only at night.*
+*Ahaben usually sits.*
 :::
 
-**2.** `zazawan vezewel hal.`
+**2.** `zalahen wual ganegel.`
 
 ::: details Show answer
+z-Alahen | [w-always | g-angry]
 
-z-Azawan | v-swim | h-never
-
-*Azawan never swims.*
+*Alahen is always angry.*
 :::
 
-**3.** `zalahen wual gezebul.`
+**3.** `zazawan vezewel hor.`
 
 ::: details Show answer
+z-Azawan | v-swim | h-anytime
 
-z-Alahen | [w-always | g-sleepy]
-
-*Alahen is always sleepy.*
+*Azawan swims anytime.*
 :::
 
-**4.** `zahaben vezewel hur.`
+**4.** `zalahen varahal havodel hal.`
 
 ::: details Show answer
+z-Alahen | v-run | h-thunderstorm | h-only-when
 
-z-Ahaben | v-swim | h-some-other-time
-
-*Ahaben swims at some other time.*
+*Alahen runs only when there is a thunderstorm.*
 :::
 
-**5.** `zazawan vezewel herehel hanadal ham.`
+**5.** `zazawan vezewel hur.`
 
 ::: details Show answer
+z-Azawan | v-swim | h-some-other-time
 
-z-Azawan | v-swim | h-rain | h-night | h-when.open
-
-*Azawan swims when raining and at night, among other times.*
+*Azawan swims at some other time.*
 :::
 
-**6.** `zahaben war gezebul.`
+**6.** `zahaben wanadal wal gezebul.`
 
 ::: details Show answer
+z-Ahaben | [w-night | w-only-when | g-sleepy]
 
-z-Ahaben | [w-sometimes | g-sleepy]
-
-*Ahaben is sometimes sleepy.*
+*Ahaben is sleepy only at night.*
 :::
 
-**7.** `zazawan vezewel havodel hual.`
+#### Pick one {#beginner-pick-one}
+
+**1.** *Alahen always runs.* `zalahen varahal hual.` or `zalahen varahal hal.`
 
 ::: details Show answer
+`zalahen varahal hual.`
 
-z-Azawan | v-swim | h-thunderstorm | h-always-except
+z-Alahen | v-run | h-always
 
-*Azawan always swims except during a thunderstorm.*
+Bare **`hual`** is *always*; bare **`hal`**, an empty list of times, is *never*.
 :::
 
-**8.** `zalahen vezewel herehel hual.`
+**2.** *Azawan is sometimes sleepy.* `zazawan war gezebul.` or `zazawan har gezebul.`
 
 ::: details Show answer
+`zazawan war gezebul.`
 
-z-Alahen | v-swim | h-rain | h-always-except
+z-Azawan | [w-sometimes | g-sleepy]
 
-*Alahen always swims except when raining.*
+To limit only the adjective, the restrictor takes **`w`** right before it; **`har`** limits the whole clause.
+:::
+
+#### Fix it {#beginner-fix-it}
+
+**1.** *Alahen sits when raining, among other times.* <!-- lint: error -->`zalahen vehahel herehel hal.`
+
+::: details Show answer
+`zalahen vehahel herehel ham.`
+
+z-Alahen | v-sit | h-rain | h-when.open
+
+Closed **`hal`** says *only* when raining; open **`ham`** leaves room for other times.
 :::
 
 ## Intermediate {#intermediate}
