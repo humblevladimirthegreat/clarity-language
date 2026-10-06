@@ -134,33 +134,38 @@ The same roots take the role letter of the slot they fill. As a direct object th
 
 For *you and yours* (one listener plus that person's people), put **-x** on the listener's name (`zalahenx`). **`ehonx`** means only the address set.
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a picnic
 
-**Roots used here:**
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *ant* | `anadol` | 🐜 |
+| *basket* | `abezal` | 🧺 |
+| *sandwich* | `azal` | 🥪 |
+| *wine* | `awahel` | 🍷 |
+
+**Review:**
 
 | English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
-| *ant* | `anadol` |
-| *basket* | `abezal` |
-| *sandwich* | `azal` |
-| *wine* | `awahel` |
-| *knife* | `anaval` |
+| *speaker* | `amun` |
+| *listener* | `ehon` |
+| *interlocutors* | `ahan` |
+| *angry* | `anegel` |
+| *haste* | `hadehum` |
+| *run* | `varahal` |
 | *sit* | `vehahel` |
 | *see* | `vahahal` |
 | *pour* | `vobohol` |
-| *sneak* | `vezevul` |
-| *punch* | `vabahel` |
-| *scream* | `vezugel` |
-| *run* | `varahal` |
-| *tell* | `vezebel` |
-| *interlocutors* | `ahan` |
+| *knife* | `anaval` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
@@ -172,134 +177,132 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-Azawan-x | v-sit
 :::
 
-**2.** *Some ants sit.*
+**2.** *Some angry ants run hastily.*
+
+::: details Show answer
+`zanadolx ganegel hadehum varahal.`
+
+[z-ant-x | g-angry] | h-haste | v-run
+
+**Also correct:** `zanadolx ganegel varahal hadehum.`
+:::
+
+**3.** *Azawan sees some baskets.*
+
+::: details Show answer
+`zazawan dabezalx vahahal.`
+
+z-Azawan | d-basket-x | v-see
+:::
+
+**4.** *We all (you, I and our people) see a sandwich.*
+
+::: details Show answer
+`zahanx dazal vahahal.`
+
+z-interlocutors-x | d-sandwich | v-see
+:::
+
+**5.** *Azawan pours wine. They and associates sit.*
+
+::: details Show answer
+`zazawan dawahel vobohol. zaxarx vehahel.`
+
+z-Azawan | d-wine | v-pour . z-←agent.same-x | v-sit
+
+**Also correct:** `zazawan dawahel vobohol. zazawarx vehahel.`
+:::
+
+**6.** *You all (the addressees) sit.*
+
+::: details Show answer
+`zehonx vehahel.`
+
+z-listener-x | v-sit
+:::
+
+#### Agazan → English {#beginner-agazan-to-english}
+
+**1.** `zahabenx dazal vahahal.`
+
+::: details Show answer
+z-Ahaben-x | d-sandwich | v-see
+
+*Ahaben and associates see a sandwich.*
+:::
+
+**2.** `zamunx vehahel.`
+
+::: details Show answer
+z-speaker-x | v-sit
+
+*I and my people (not you) sit.*
+:::
+
+**3.** `zalahen vehahel. zalaherx dazal vahahal.`
+
+::: details Show answer
+z-Alahen | v-sit . z-←Alahen-x | d-sandwich | v-see
+
+*Alahen sits. They (Alahen and associates) see a sandwich.*
+:::
+
+**4.** `zazawan danavalx vahahal.`
+
+::: details Show answer
+z-Azawan | d-knife-x | v-see
+
+*Azawan sees some knives.*
+:::
+
+**5.** `yol zehonx vehahel.`
+
+::: details Show answer
+y-question | z-listener-x | v-sit
+
+*Do you all sit?*
+:::
+
+**6.** `zahan dawahel vobohol.`
+
+::: details Show answer
+z-interlocutors | d-wine | v-pour
+
+*We (you and I) pour wine.*
+:::
+
+#### Pick one {#beginner-pick-one}
+
+**1.** *Some ants sit.* `zanadolx vehahel.` or `zanadol vehahel.`
 
 ::: details Show answer
 `zanadolx vehahel.`
 
 z-ant-x | v-sit
+
+**-lx** introduces a group in this situation; plain **-l** is one ant.
 :::
 
-**3.** *Azawan and associates see a basket.*
+**2.** *Azawan sees Alahen and associates.* `zazawan dalahenx vahahal.` or `zazawanx dalahen vahahal.`
 
 ::: details Show answer
-`zazawanx dabezal vahahal.`
+`zazawan dalahenx vahahal.`
 
-z-Azawan-x | d-basket | v-see
+z-Azawan | d-Alahen-x | v-see
+
+**-x** goes on the word whose group it is: here the ones seen.
 :::
 
-**4.** *You (Alahen) and your associates see Ahaben.*
+#### Fix it {#beginner-fix-it}
+
+**1.** *We (you and I) sit.* <!-- lint: error -->`zamunx vehahel.`
 
 ::: details Show answer
-`zalahenx dahaben vahahal.`
+`zahan vehahel.`
 
-z-Alahen-x | d-Ahaben | v-see
-:::
+z-interlocutors | v-sit
 
-**5.** *They (Azawan and associates) pour wine.* (Azawan already mentioned)
-
-::: details Show answer
-`zazawarx dawahel vobohol.`
-
-z-←Azawan-x | d-wine | v-pour
-:::
-
-**6.** *Alahen and associates sneak.*
-
-::: details Show answer
-`zalahenx vezevul.`
-
-z-Alahen-x | v-sneak
-:::
-
-**7.** *Alahen and associates punch Azawan.*
-
-::: details Show answer
-`zalahenx dazawan vabahel.`
-
-z-Alahen-x | d-Azawan | v-punch
-:::
-
-**8.** *Do Azawan and associates scream?*
-
-::: details Show answer
-`yol zazawanx vezugel.`
-
-y-question | z-Azawan-x | v-scream
-:::
-
-#### Agazan → English {#beginner-agazan-to-english}
-
-**1.** `zahabenx vehahel.`
-
-::: details Show answer
-
-z-Ahaben-x | v-sit
-
-*Ahaben and associates sit.*
-:::
-
-**2.** `zazawanx dazal vahahal.`
-
-::: details Show answer
-
-z-Azawan-x | d-sandwich | v-see
-
-*Azawan and associates see a sandwich.*
-:::
-
-**3.** `zanadolx varahal.`
-
-::: details Show answer
-
-z-ant-x | v-run
-
-*Some ants run.*
-:::
-
-**4.** `zahan dabezal vahahal.`
-
-::: details Show answer
-
-z-interlocutors | d-basket | v-see
-
-*We (you and I) see a basket.*
-:::
-
-**5.** `zalahenx bazawan vezebel.`
-
-::: details Show answer
-
-z-Alahen-x | b-Azawan | v-tell
-
-*Alahen and associates tell Azawan.*
-:::
-
-**6.** `zazawarx danaval vahahal.`
-
-::: details Show answer
-
-z-←Azawan-x | d-knife | v-see
-
-*They (Azawan and associates) see a knife.*
-:::
-
-**7.** `zalahenx dahaben vabahel.`
-
-::: details Show answer
-
-z-Alahen-x | d-Ahaben | v-punch
-
-*Alahen and associates punch Ahaben.*
-:::
-
-**8.** `yol zahabenx vezugel.`
-
-::: details Show answer
-
-y-question | z-Ahaben-x | v-scream
-
-*Do Ahaben and associates scream?*
+**`amunx`** is the speaker and their people, leaving you out; *you and I* is **`ahan`**.
 :::
 
 ## Intermediate {#intermediate}
