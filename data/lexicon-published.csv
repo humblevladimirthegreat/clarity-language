@@ -43,7 +43,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 😪,sleepy,ezebu,torpor,sleepy eye shows drowsiness; torpor is the unobservable low arousal,,,restrictors.md#beginner-practice
 🤤,drool,uduho,craving,drool shows craving,,hunger,
 🫩,bleary,abeye,fatigue,bleary eyes show fatigue,,,
-😷,mask,amazo,illness,a medical mask marks the sick; illness is being unwell,,,clause.md#advanced-translation-practice
+😷,mask,amazo,illness,a medical mask marks the sick; illness is being unwell,,,clause.md#advanced-practice
 🤒,sick,ezega,pathology,sick means illness; pathology is the unobservable condition-kind,,disease; ill; symptom,
 🤕,injured,enehe,harm,injured means hurt; harm is the unobservable detriment,,damage; hurt; injury; wound; abuse,
 🤢,nauseated,onoze,contamination,nauseated shows disgust; contamination is the unobservable reading that something is tainted,,pollution; dirty,
@@ -652,7 +652,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🎇,sparkle,azoba,coulomb,a sparkler holds electric charge in the hand; coulomb is the SI charge unit,,,
 🧨,firecracker,avuga,,,,,
 ✨,sparkles,azuba,hertz,sparkles flicker in fast repeats; hertz is the SI frequency unit,,frequency,
-🎈,balloon,abevu,,,,,clause.md#advanced-translation-practice
+🎈,balloon,abevu,,,,,clause.md#advanced-practice
 🎉,popper,ababe,celebration,a party popper bursts at a party; celebration marks a joyful occasion,,occasion,
 🎊,confetti,agove,jubilation,confetti rains on victory; jubilation is winning celebration,,,
 🎐,chime,ahawo,,,,,
@@ -791,7 +791,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🎹,piano,ebewa,,,,,
 🎻,violin,avawo,,,,,
 🪕,banjo,aboho,folksy,banjo plucks rustic melody; folksy is plain homely character,,,
-🥁,drum,adavo,rhythm,drum sets the beat for all; rhythm is steady repeating pulse,,,clause.md#advanced-translation-practice
+🥁,drum,adavo,rhythm,drum sets the beat for all; rhythm is steady repeating pulse,,,clause.md#advanced-practice
 🪘,tom-tom,adade,,,,,
 🪇,maracas,emaga,,,,,
 🪈,flute,uvudu,lightness,a flute's thin airy notes feel weightless,,,
@@ -848,7 +848,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 📧,email,emeha,message,email sends words instantly; message is communicated content,,,
 📤,out-box,adaho,outgoing,outbox holds mail to send; outgoing is leaving your hands,,,
 📥,inbox,enaba,incoming,inbox holds mail received; incoming is arriving to you,,,
-📦,package,abego,aggregation,package wraps items; aggregation is the unobservable grouping,,software; module,clause.md#advanced-translation-practice
+📦,package,abego,aggregation,package wraps items; aggregation is the unobservable grouping,,software; module,clause.md#advanced-practice
 📫,mailbox,emebe,reception,closed mailbox holds delivered mail; reception is receiving inward,,,
 📮,post-box,oboza,dispatch,postbox sends mail on its way; dispatch is sending outward,,send; mail; deliver; post,
 🗳️,ballot,ahu,choice,ballot records your vote; choice is selecting among options,,vote; election; elect; poll; voluntary,

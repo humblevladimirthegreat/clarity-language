@@ -632,30 +632,34 @@ The subject is already first by default, so order cannot single it out. To say *
 
 In writing, the period shows where one sentence ends and the next begins. In speech, a listener may miss that pause, especially in singing or with free word order. When that could happen, begin the next sentence with a word that can only start one: *yes* / *no*, the name of the person you address, or the statement word `yal`.
 
-### Translation practice {#advanced-translation-practice}
+### Practice {#advanced-practice}
 
 Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Setting:** a circus
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *balloon* | `abevul` | |
-| *trumpet* | `adawol` | |
-| *drum* | `adavol` | |
-| *mask* | `amazol` | |
-| *package* | `abegol` | |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *tell* | `vezebel` | `ezebel` *speech* |
-| *sit* | `vehahel` | `ehahel` *chair* |
-| *sneak* | `vezevul` | `ezevul` *sneak* |
-| *punch* | `vabahel` | `abahel` *punch* |
-| *haste* | `hadehum` | `adehul` *dash* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *balloon* | `abevul` | 🎈 |
+| *drum* | `adavol` | 🥁 |
+| *mask* | `amazol` | 😷 |
+| *package* | `abegol` | 📦 |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *trumpet* | `adawol` |
+| *haste* | `hadehum` |
+| *see* | `vahahal` |
+| *tell* | `vezebel` |
+| *punch* | `vabahel` |
+| *sneak* | `vezevul` |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
@@ -667,12 +671,12 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 h-haste | z-Azawan | d-balloon | v-see
 :::
 
-**2.** *It's a balloon that Ahaben sees.*
+**2.** *It's a drum that Alahen punches.*
 
 ::: details Show answer
-`dabevul zahaben vahahal.`
+`dadavol zalahen vabahel.`
 
-d-balloon | z-Ahaben | v-see
+d-drum | z-Alahen | v-punch
 :::
 
 **3.** *What Azawan does is tell Alahen.*
@@ -683,28 +687,12 @@ d-balloon | z-Ahaben | v-see
 v-tell | z-Azawan | b-Alahen
 :::
 
-**4.** *Hastily, Alahen sneaks.*
+**4.** *It was Ahaben, not someone else, who saw the mask.*
 
 ::: details Show answer
-`hadehum zalahen vezevul.`
+`&zahaben damazol vahahal.`
 
-h-haste | z-Alahen | v-sneak
-:::
-
-**5.** *It's a drum that Alahen punches.*
-
-::: details Show answer
-`dadavol zalahen vabahel.`
-
-d-drum | z-Alahen | v-punch
-:::
-
-**6.** *What Alahen does is punch Ahaben.*
-
-::: details Show answer
-`vabahel zalahen dahaben.`
-
-v-punch | z-Alahen | d-Ahaben
+&z-Ahaben | d-mask | v-see
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
@@ -712,53 +700,54 @@ v-punch | z-Alahen | d-Ahaben
 **1.** `dadawol zahaben vahahal.`
 
 ::: details Show answer
-
 d-trumpet | z-Ahaben | v-see
 
 *It's a trumpet that Ahaben sees.*
 :::
 
-**2.** `hadehum zahaben vehahel.`
+**2.** `vabahel zalahen dabegol.`
 
 ::: details Show answer
+v-punch | z-Alahen | d-package
 
-h-haste | z-Ahaben | v-sit
-
-*Hastily, Ahaben sits.*
+*What Alahen does is punch a package.*
 :::
 
-**3.** `vezebel zalahen bahaben.`
+**3.** `hadehum zalahen vezevul.`
 
 ::: details Show answer
+h-haste | z-Alahen | v-sneak
 
-v-tell | z-Alahen | b-Ahaben
-
-*What Alahen does is tell Ahaben.*
+*Hastily, Alahen sneaks.*
 :::
 
-**4.** `dabegol zalahen vahahal.`
+**4.** `dabegol zahaben hadehum vahahal.`
 
 ::: details Show answer
+d-package | z-Ahaben | h-haste | v-see
 
-d-package | z-Alahen | v-see
-
-*It's a package that Alahen sees.*
+*It's a package that Ahaben hastily sees.*
 :::
 
-**5.** `damazol zalahen vabahel.`
+#### What changes {#advanced-what-changes}
+
+**1.** `zazawan dabevul vahahal.` / `&zazawan dabevul vahahal.`
 
 ::: details Show answer
+z-Azawan | d-balloon | v-see
 
-d-mask | z-Alahen | v-punch
+&z-Azawan | d-balloon | v-see
 
-*It's a mask that Alahen punches.*
+The first is plain *Azawan sees a balloon*; the second stresses Azawan: *it was Azawan, not someone else*.
 :::
 
-**6.** `dahaben zalahen hadehum vabahel.`
+**2.** `zahaben dadavol vahahal.` / `zahaben dadavol &vahahal.`
 
 ::: details Show answer
+z-Ahaben | d-drum | v-see
 
-d-Ahaben | z-Alahen | h-haste | v-punch
+z-Ahaben | d-drum | &v-see
 
-*It's Ahaben that Alahen punches hastily.*
+The second contrasts the act: Ahaben *sees* the drum, as opposed to doing something else to it.
 :::
+
