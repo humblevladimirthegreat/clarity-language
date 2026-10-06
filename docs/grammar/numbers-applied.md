@@ -250,30 +250,33 @@ To say how many parts, put the count first and the fraction after it: **`g+N`** 
 
 *Half* of a unit also has a decimal route (`bezezem g+0.5`).
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. One topic per item: labels, clock or date, percent, measures, or ranges.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a pharmacy
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *pill* | `ebezal` | |
-| *baby-bottle* | `abadul` | |
-| *rock* | `aragal` | |
-| *spoon* | `uzubul` | |
-| *meter* | `ezezem` | `ezezel` *set-square* |
-| *hour* | `agazem` | `agazel` *hourglass* |
-| *walk* | `vowogal` | `owogal` *walk* |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *punch* | `vabahel` | `abahel` *punch* |
-| *scream* | `vezugel` | `ezugel` *scream* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *pill* | `ebezal` | 💊 |
+| *baby-bottle* | `abadul` | 🍼 |
+| *spoon* | `uzubul` | 🥄 |
+| *meter* | `ezezem` | 📐 from *set square* |
+| *hour* | `agazem` | ⏳ from *hourglass* |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *walk* | `vowogal` |
+| *see* | `vahahal` |
+| *scream* | `vezugel` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -323,51 +326,14 @@ z-Azawan | [b-meter | g-two] | v-walk
 [z-hour | g-three] | through | g-five
 :::
 
-**6.** *Alahen sees 911.*
-
-::: details Show answer
-`zalahen d_911 vahahal.`
-
-🔊 `zalahen dronawowol vahahal.`
-
-z-Alahen | d-_911 | v-see
-:::
-
-**7.** *Alahen punches five rocks.*
-
-::: details Show answer
-`zalahen daragal graval vabahel.`
-
-z-Alahen | [d-rock | g-five] | v-punch
-:::
-
-**8.** *From 15 to 16.*
-
-::: details Show answer
-`z+15 al z+16.`
-
-🔊 `zrawoval al zrawogul.`
-
-z-15 | through | z-16
-:::
-
-**9.** *On 22 July, Ahaben screams.*
-
-::: details Show answer
-`h_#22,7 zahaben vezugel.`
-
-🔊 `hroedudutholel zahaben vezugel.`
-
-h-_22,7 | z-Ahaben | v-scream
-:::
-
-**10.** *Two thirds of the pills.*
+**6.** *Two thirds of the pills.*
 
 ::: details Show answer
 `zebezalx gradul grurel.`
 
 [z-pill-x | g-two | g-third-of]
 :::
+
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
@@ -382,15 +348,15 @@ z-baby-bottle | g-_7
 *Bottle 7.*
 :::
 
-**2.** `h_09,00 zahaben vahahal.`
+**2.** `h~_23,59 zalahen vezugel.`
 
 ::: details Show answer
 
-🔊 `hrozonathozozol zahaben vahahal.`
+🔊 `hrodurethovanam zalahen vezugel.`
 
-h-_09,00 | z-Ahaben | v-see
+h-_23,59.about | z-Alahen | v-scream
 
-*At 09:00 Ahaben sees.*
+*Around 23:59 Alahen screams.*
 :::
 
 **3.** `zabadulx g+50%.`
@@ -404,49 +370,7 @@ z-baby-bottle-x | g-50yo
 *50% of the bottles.*
 :::
 
-**4.** `zazawan duzubul grawol vahahal.`
-
-::: details Show answer
-
-🔊 `zazawan duzubul grawol vahahal.`
-
-z-Azawan | [d-spoon | g-one] | v-see
-
-*Azawan sees one spoon.*
-:::
-
-**5.** `zrawol al zrarel.`
-
-::: details Show answer
-
-z-one | through | z-three
-
-*From 1 to 3.*
-:::
-
-**6.** `zalahen d_000 vahahal.`
-
-::: details Show answer
-
-🔊 `zalahen drozozozol vahahal.`
-
-z-Alahen | d-_000 | v-see
-
-*Alahen sees 000.*
-:::
-
-**7.** `h~_23,59 zalahen vezugel.`
-
-::: details Show answer
-
-🔊 `hrodurethovanam zalahen vezugel.`
-
-h-_23,59.about | z-Alahen | v-scream
-
-*Around 23:59 Alahen screams.*
-:::
-
-**8.** `z+10 uel z+20.`
+**4.** `z+10 uel z+20.`
 
 ::: details Show answer
 
@@ -457,7 +381,7 @@ z-ten | outside | z-20
 *Outside 10–20.*
 :::
 
-**9.** `h_#1,4 zalahen vowogal.`
+**5.** `h_#1,4 zalahen vowogal.`
 
 ::: details Show answer
 
@@ -468,13 +392,48 @@ h-_1,4 | z-Alahen | v-walk
 *On 1 April, Alahen walks.*
 :::
 
-**10.** `zabadulx grarel grumol.`
+**6.** `zabadulx grarel grumol.`
 
 ::: details Show answer
 
 [z-baby-bottle-x | g-three | g-quarter-of]
 
 *Three quarters of the bottles.*
+:::
+
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Alahen sees spoon 3* (its label). `zalahen duzubul grorel vahahal.` or `zalahen duzubul grarel vahahal.`
+
+::: details Show answer
+`zalahen duzubul grorel vahahal.`
+
+z-Alahen | [d-spoon | g-_3.spelled] | v-see
+
+A label is a digit string, marker **`ro`**; **`ra`** counts three spoons.
+:::
+
+**2.** *a third of the pills* `zebezalx grurel.` or `zebezalx grarel.`
+
+::: details Show answer
+`zebezalx grurel.`
+
+z-pill-x | g-third-of
+
+Marker **`ru`** divides: *a third of*; **`ra`** is three pills.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *one through three* <!-- lint: error -->`zrawol zrarel zal.`
+
+::: details Show answer
+`zrawol al zrarel.`
+
+z-one | through | z-three
+
+An *and*-join names only the two ends; a range of numbers puts **`al`** between them.
 :::
 
 ## Advanced {#advanced}
