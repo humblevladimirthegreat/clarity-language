@@ -452,14 +452,20 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 
 **For *every K*, use:** [universals](joins.md#universals-domains-generics) (`zual gagadul`; habitual **`hual`**). For the kind itself (*the dodo is extinct*), use [`zuan`](joins.md#kind-reference).
 
-### Translation practice {#intermediate-translation-practice}
-<a id="translation-practice-intermediate"></a>
+### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a choir loft
 
-**Roots used here:**
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *sheet-music* | `umuyul` | 🎼 |
+| *heavy* | `aragam` | 🪨 from *rock* |
+
+**Review:**
 
 | English | Agazan |
 |---------|--------|
@@ -467,18 +473,40 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
 | *listener* | `ehon` |
-| *sheet-music* | `umuyul` |
-| *bell* | `ebehul` |
-| *heavy* | `aragam` |
-| *blue* | `ubuhel` |
+| *topic* | `ozan` |
+| *family* | `avahal` |
+| *trumpet* | `adawol` |
+| *page* | `abehel` |
 | *sing* | `vezehel` |
-| *sneak* | `vezevul` |
-| *punch* | `vabahel` |
-| *fight* | `vavadal` |
+| *see* | `vahahal` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Hey, you all!*
+**1.** *They (Azawan and associates) sing as one outing.*
+
+::: details Show answer
+`zazawanx vezehelx.`
+
+z-Azawan-x | v-sing-x
+:::
+
+**2.** *Alahen sings jointly* (not a solo).
+
+::: details Show answer
+`zalahen vezehelx.`
+
+z-Alahen | v-sing-x
+:::
+
+**3.** *The sheets of music are heavy as a pile.*
+
+::: details Show answer
+`zumuyulx garagamx.`
+
+z-sheet-music-x | g-heavy-x
+:::
+
+**4.** *Hey, you all!*
 
 ::: details Show answer
 `yehonx.`
@@ -486,134 +514,104 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 y-listener-x
 :::
 
-**2.** *The sheets of music are blue.* (members, or don’t care)
+**5.** *Azawan and Alahen see three pages between them.*
 
 ::: details Show answer
-`zumuyulx gubuhel.`
+`zazawan zalahen zal vahahalx dabehelx grarel.`
 
-z-sheet-music-x | g-blue
+[z-Azawan | z-Alahen | z-and] | v-see-x | [d-page-x | g-three]
 :::
 
-**3.** *Azawan and associates sing.* (together or each, or don’t care)
+**6.** *Ahaben and associates, not counting you, sing.*
 
 ::: details Show answer
-`zazawanx vezehel.`
+`zahabenx ul zehon vezehel.`
 
-z-Azawan-x | v-sing
-:::
-
-**4.** *Azawan sings jointly (not a solo).*
-
-::: details Show answer
-`zazawan vezehelx.`
-
-z-Azawan | v-sing-x
-:::
-
-**5.** *Azawan and Alahen sing as one outing.* (listed members)
-
-::: details Show answer
-`zazawan zalahen zal vezehelx.`
-
-[z-Azawan | z-Alahen | z-and] | v-sing-x
-:::
-
-**6.** *The bells are heavy as a pile.*
-
-::: details Show answer
-`zebehulx garagamx.`
-
-z-bell-x | g-heavy-x
-:::
-
-**7.** *Alahen and associates sneak as one outing.*
-
-::: details Show answer
-`zalahenx vezevulx.`
-
-z-Alahen-x | v-sneak-x
-:::
-
-**8.** *Alahen and associates punch Azawan as one shared act.*
-
-::: details Show answer
-`zalahenx dazawan vabahelx.`
-
-z-Alahen-x | d-Azawan | v-punch-x
+z-Ahaben-x | except | z-listener | v-sing
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `yahabenx.`
+**1.** `zavahal vezehelx.`
 
 ::: details Show answer
+z-family | v-sing-x
+
+*The family sings as one unit.*
+:::
+
+**2.** `zalahen zahaben zal vahahal dumuyulx gradul.`
+
+::: details Show answer
+[z-Alahen | z-Ahaben | z-and] | v-see | [d-sheet-music-x | g-two]
+
+*Alahen and Ahaben each see two sheets of music.*
+:::
+
+**3.** `zabehel zadawol zal garagamx.`
+
+::: details Show answer
+[z-page | z-trumpet | z-and | g-heavy-x]
+
+*The page and the trumpet are heavy together.*
+:::
+
+**4.** `xazawanx zozan vezehel.`
+
+::: details Show answer
+x-Azawan-x | z-TOPIC | v-sing
+
+*Now, about Azawan and associates: they sing.*
+:::
+
+**5.** `yalahenx.`
+
+::: details Show answer
+y-Alahen-x
+
+*Hey, Alahen and associates!*
+:::
+
+**6.** `zumuyulx garagam.`
+
+::: details Show answer
+z-sheet-music-x | g-heavy
+
+*The sheets of music are heavy* (each, or either way).
+:::
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *The trumpet and the sheet music are each heavy.* `zadawol zumuyul zal garagam.` or `zadawol zumuyul zal garagamx.`
+
+::: details Show answer
+`zadawol zumuyul zal garagam.`
+
+[z-trumpet | z-sheet-music | z-and | g-heavy]
+
+A plain adjective after an *and*-list applies to each member; **-x** would make them heavy only together.
+:::
+
+**2.** *Hey, Ahaben and associates!* `yahabenx.` or `zahabenx.`
+
+::: details Show answer
+`yahabenx.`
 
 y-Ahaben-x
 
-*Hey, Ahaben and associates!*
+A call is `/y/` with **-nx**; `zahabenx.` only says Ahaben and associates are there.
 :::
 
-**2.** `zumuyulx garagam.`
+#### Fix it {#intermediate-fix-it}
+
+**1.** *They (Ahaben and associates) sing.* <!-- lint: error -->`zahaben vezehelx.`
 
 ::: details Show answer
-
-z-sheet-music-x | g-heavy
-
-*The sheets of music are heavy.* (members / plain)
-:::
-
-**3.** `zahabenx vezehel.`
-
-::: details Show answer
+`zahabenx vezehel.`
 
 z-Ahaben-x | v-sing
 
-*Ahaben and associates sing.* (together or each, or don’t care)
-:::
-
-**4.** `zalahen vezehelx.`
-
-::: details Show answer
-
-z-Alahen | v-sing-x
-
-*Alahen sings jointly (not a solo).*
-:::
-
-**5.** `zazawanx vezehelx.`
-
-::: details Show answer
-
-z-Azawan-x | v-sing-x
-
-*Azawan and associates sing as one outing.*
-:::
-
-**6.** `zebehulx gubuhel.`
-
-::: details Show answer
-
-z-bell-x | g-blue
-
-*The bells are blue.*
-:::
-
-**7.** `yazawanx.`
-
-::: details Show answer
-
-y-Azawan-x
-
-*Hey, Azawan and associates!*
-:::
-
-**8.** `zalahenx vavadalx.`
-
-::: details Show answer
-
-z-Alahen-x | v-fight-x
-
-*Alahen and associates fight as one outing.*
+**-x** on the noun says who is in the group; on the verb it only says Ahaben sang jointly.
 :::
 
 ## See also
