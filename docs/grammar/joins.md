@@ -882,6 +882,7 @@ When one list sits inside another (*(tea or coffee) and water*), write the inner
 | nested adjectives | `geredal gamazam gul gelavam gal` | *(neither red nor small) and big* |
 
 ### Practice {#intermediate-practice}
+<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 

@@ -417,6 +417,7 @@ Under a question, **`her`** asks which time ranks first: *When's best?* With occ
 > "Azawan is sleepy either when raining or at night (not both)."
 
 ### Practice {#intermediate-practice}
+<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 

@@ -453,6 +453,7 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 **For *every K*, use:** [universals](joins.md#universals-domains-generics) (`zual gagadul`; habitual **`hual`**). For the kind itself (*the dodo is extinct*), use [`zuan`](joins.md#kind-reference).
 
 ### Practice {#intermediate-practice}
+<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
