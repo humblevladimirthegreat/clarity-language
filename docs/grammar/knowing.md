@@ -51,50 +51,41 @@ In a yes/no question, **`thovul`** says you are asking in order to find out:
 >
 > "Ahaben may be crying, who knows."
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
-Short drills for Beginner. Try each item before opening **Show answer**. Write **MAY** for *could be*; pick **-m** (default), **-l** (*I'll* / *let's find out*), or **-r** (*who knows*). One item is thinking as an action, not MAY.
+Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a café patio
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *tell* | `vezebel` | `ezebel` *speech* |
-| *departure* | `vedabal` | `edabal` *departure* |
-| *cry* | `vagahul` | |
-| *think* | `vevegal` | |
-| *MAY* | `thovum` | `ovul` *thought* |
-| *MAY-find-out* | `thovul` | `ovul` *thought* |
-| *MAY-who-knows* | `thovur` | `ovul` *thought* |
-| *punch* | `vabahel` | |
-| *scream* | `vezugel` | |
-| *fight* | `vavadal` | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *departure* | `vedabal` | 🛫 |
+| *cry* | `vagahul` | 😭 |
+| *fight* | `vavadal` | 🫯 |
+| *MAY* | `thovum` | 💭 from *thought*: a balloon over the scene |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *think* | `vevegal` |
+| *pay* | `vamol` |
+| *tell* | `vezebel` |
+| *wine* | `awahel` |
+| *pour* | `vobohol` |
+| *scream* | `vezugel` |
+| *sandwich* | `azal` |
+| *see* | `vahahal` |
+| *punch* | `vabahel` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *Alahen may be seeing Ahaben.* (could be; default)
-
-::: details Show answer
-`zalahen thovum vahahal dahaben.`
-
-z-Alahen | th-MAY | v-see | d-Ahaben
-:::
-
-**2.** *Azawan may be telling Alahen.*
-
-::: details Show answer
-`zazawan thovum vezebel balahen.`
-
-z-Azawan | th-MAY | v-tell | b-Alahen
-:::
-
-**3.** *Ahaben may be leaving Azawan.*
+**1.** *Ahaben may be leaving Azawan.*
 
 ::: details Show answer
 `zahaben thovum vedabal dazawan.`
@@ -102,23 +93,23 @@ z-Azawan | th-MAY | v-tell | b-Alahen
 z-Ahaben | th-MAY | v-departure | d-Azawan
 :::
 
-**4.** *Alahen may be punching Azawan, I'll find out.*
+**2.** *Azawan may be fighting Alahen, I'll find out.*
 
 ::: details Show answer
-`zalahen thovul vabahel dazawan.`
+`zazawan thovul vavadal dalahen.`
 
-z-Alahen | th-MAY-find-out | v-punch | d-Azawan
+z-Azawan | th-MAY-find-out | v-fight | d-Alahen
 :::
 
-**5.** *Azawan may be crying, who knows.*
+**3.** *Alahen may be crying, who knows.*
 
 ::: details Show answer
-`zazawan thovur vagahul.`
+`zalahen thovur vagahul.`
 
-z-Azawan | th-MAY-who-knows | v-cry
+z-Alahen | th-MAY-who-knows | v-cry
 :::
 
-**6.** *Azawan thinks.* (an act of thinking, not MAY)
+**4.** *Azawan thinks.* (an act of thinking)
 
 ::: details Show answer
 `zazawan vevegal.`
@@ -126,94 +117,86 @@ z-Azawan | th-MAY-who-knows | v-cry
 z-Azawan | v-think
 :::
 
-**7.** *Alahen may be fighting.*
+**5.** *Could Ahaben be paying?*
 
 ::: details Show answer
-`zalahen thovum vavadal.`
+`yol zahaben thovum vamol.`
 
-z-Alahen | th-MAY | v-fight
+y-question | z-Ahaben | th-MAY | v-pay
 :::
 
-**8.** *Could Ahaben be screaming?* (yes/no; could be; default)
+**6.** *Alahen may be telling Azawan.*
 
 ::: details Show answer
-`yol zahaben thovum vezugel.`
+`zalahen thovum vezebel bazawan.`
 
-y-question | z-Ahaben | th-MAY | v-scream
+z-Alahen | th-MAY | v-tell | b-Azawan
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zalahen thovum vezebel bahaben.`
+**1.** `zazawan thovum dawahel vobohol.`
 
 ::: details Show answer
+z-Azawan | th-MAY | d-wine | v-pour
 
-z-Alahen | th-MAY | v-tell | b-Ahaben
-
-*Alahen may be telling Ahaben.*
+*Azawan may be pouring wine.*
 :::
 
-**2.** `zazawan thovum vahahal dalahen.`
+**2.** `zahaben thovul vezugel.`
 
 ::: details Show answer
+z-Ahaben | th-MAY-find-out | v-scream
 
-z-Azawan | th-MAY | v-see | d-Alahen
-
-*Azawan may be seeing Alahen.*
+*Ahaben may be screaming, I'll find out.*
 :::
 
-**3.** `zahaben thovul vedabal dazawan.`
+**3.** `yol zalahen thovul vavadal dazawan.`
 
 ::: details Show answer
+y-question | z-Alahen | th-MAY-find-out | v-fight | d-Azawan
 
-z-Ahaben | th-MAY-find-out | v-departure | d-Azawan
-
-*Ahaben may be leaving Azawan, I'll find out.*
+*Might Alahen be fighting Azawan? Let's find out.*
 :::
 
-**4.** `zalahen vevegal.`
+**4.** `zazawan thovur dazal vahahal.`
 
 ::: details Show answer
+z-Azawan | th-MAY-who-knows | d-sandwich | v-see
 
-z-Alahen | v-think
-
-*Alahen thinks.* (an act of thinking, not MAY)
+*Azawan may be seeing a sandwich, who knows.*
 :::
 
-**5.** `zazawan thovur vezugel.`
+**5.** `zahaben thovum vabahel dalahen.`
 
 ::: details Show answer
+z-Ahaben | th-MAY | v-punch | d-Alahen
 
-z-Azawan | th-MAY-who-knows | v-scream
-
-*Azawan may be screaming, who knows.*
+*Ahaben may be punching Alahen.*
 :::
 
-**6.** `yol zalahen thovum vabahel dazawan.`
+#### Pick one {#beginner-pick-one}
+
+**1.** *Azawan may be crying, I'll find out.* `zazawan thovul vagahul.` or `zazawan thovur vagahul.`
 
 ::: details Show answer
+`zazawan thovul vagahul.`
 
-y-question | z-Alahen | th-MAY | v-punch | d-Azawan
+z-Azawan | th-MAY-find-out | v-cry
 
-*Could Alahen be punching Azawan?* (could be; default)
+**-l** commits to settling it; **-r** is a passing thought you are not pursuing.
 :::
 
-**7.** `zalahen thovul vavadal.`
+#### Fix it {#beginner-fix-it}
+
+**1.** *Ahaben may be leaving.* (a guess, not a claim) <!-- lint: error -->`zahaben vedabal.`
 
 ::: details Show answer
+`zahaben thovum vedabal.`
 
-z-Alahen | th-MAY-find-out | v-fight
+z-Ahaben | th-MAY | v-departure
 
-*Alahen may be fighting, I'll find out.*
-:::
-
-**8.** `zahaben thovum vagahul.`
-
-::: details Show answer
-
-z-Ahaben | th-MAY | v-cry
-
-*Ahaben may be crying.*
+Without **`thovum`**, the sentence reports that Ahaben is leaving.
 :::
 
 ## Intermediate {#intermediate}
