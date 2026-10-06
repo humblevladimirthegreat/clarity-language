@@ -61,7 +61,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 😕,confused,agevu,perplexity,confused shows perplexity,,,
 😟,worried,eweda,concern,worried shows concern,,,
 ☹️,frown,avaya,disfavor,a frown shows disfavor; disfavor is the unobservable judgment against,,complaint,
-😮,surprise,ezu,amazement,surprise shows amazement,,sudden; amaze,speech-moves.md#beginner-translation-practice
+😮,surprise,ezu,amazement,surprise shows amazement,,sudden; amaze,speech-moves.md#beginner-practice
 😳,blush,abohe,embarrassment,blush shows embarrassment,,embarrass; ashamed,
 🥺,plead,ebewo,appeal,pleading eyes appeal,,charm; request,
 🥹,touched,adeho,,,,,
@@ -185,7 +185,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 👮,police,abaze,authority,policing wields authority,,,predication.md#beginner-translation-practice
 🕵️,investigate,une,deduction,investigating follows clues; deduction is the unobservable inference,,implication; logic; derive; interpretation,
 💂,guard,agavo,protection,guarding provides protection,,insure; protect,dependents.md#beginner-translation-practice
-🥷,sneak,ezevu,stealth,sneaking moves with stealth,,,speech-moves.md#beginner-translation-practice
+🥷,sneak,ezevu,stealth,sneaking moves with stealth,,,speech-moves.md#beginner-practice
 👷,construct,agoza,fabrication,construction builds structures,,build; install; formation; implement; implementation,roles.md#beginner-translation-practice
 🫅,reign,erevo,sovereignty,reigning embodies sovereignty,,,
 🤴,inherit,anehe,nobility,an inherited title passes rank down the family line,,,
@@ -221,7 +221,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧎,kneel,eneha,submission,kneel shows submission,,,sakes.md#intermediate-translation-practice
 🧑‍🦼,power-chair,abavo,,,,,
 🧑‍🦽,propel,abobe,independence,self-propelling a chair shows independence,,motivate,
-🏃,run,araha,,,,,speech-moves.md#beginner-translation-practice
+🏃,run,araha,,,,,speech-moves.md#beginner-practice
 🧑‍🩰,ballet,ababu,,,,,
 🕺,dance,adaze,,,,,
 🕴️,levitate,aleve,elevation,levitating lifts a body off the ground,,,
@@ -924,7 +924,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🪟,window,ewedo,transparency,you can see through a window's clear glass,,clear,causation.md#beginner-translation-practice
 🛏️,bed,ebeda,,,,,word-endings.md#intermediate-translation-practice
 🛋️,couch,ageha,leisure,lounging on the couch; leisure is free time,,,
-🪑,chair,ehahe,position,chair is where you take a seat; position is your assigned place,v:sit,place; situation; lay; status; location; locate; pose; situate; put; occupy,speech-moves.md#beginner-translation-practice
+🪑,chair,ehahe,position,chair is where you take a seat; position is your assigned place,v:sit,place; situation; lay; status; location; locate; pose; situate; put; occupy,speech-moves.md#beginner-practice
 🚽,toilet,ododa,,,,,
 🪠,plunger,obahe,unblock,plunger clears a clogged pipe; unblock is clearing obstruction,,,
 🚿,shower,ahave,renewal,shower washes away the day; refresh is restoring freshness,,update,

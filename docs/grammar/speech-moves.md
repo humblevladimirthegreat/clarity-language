@@ -67,22 +67,32 @@ The vowel picks the act. Its cues are **a** add / hold, **o** one / pick, **e** 
 | **`yel`** | command / instruction | **e** ≈ order (do this) |
 | **`yul`** | prohibition: *don’t…* | **u** ≈ undo (take the action back) |
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a theater foyer
 
-**Roots used here:**
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *surprise* | `ezul` | 😮 |
+| *sit* | `vehahel` | 🪑 from *chair* |
+| *sneak* | `vezevul` | 🥷 |
+| *run* | `varahal` | 🏃 |
+
+**Review:**
 
 | English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
-| *surprise* | `ezul` |
-| *sit* | `vehahel` |
-| *sneak* | `vezevul` |
-| *run* | `varahal` |
+| *pay* | `vamol` |
+| *haste* | `hadehum` |
+| *very* | `welavam` |
+| *angry* | `anegel` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
@@ -102,12 +112,40 @@ y-Ahaben
 y-prohibition | v-sneak
 :::
 
-**3.** *Surprise!* (as a reaction)
+**3.** *Amazing!*
 
 ::: details Show answer
-`yezul.`
+`yezum.`
 
-y-surprise
+y-amazement
+:::
+
+**4.** *Does Alahen pay Azawan?*
+
+::: details Show answer
+`yol zalahen bazawan vamol.`
+
+y-question | z-Alahen | b-Azawan | v-pay
+
+**Also correct:** `yol zalahen vamol bazawan.`
+:::
+
+**5.** *Azawan, sit!*
+
+::: details Show answer
+`yazawan yel vehahel.`
+
+y-Azawan | y-command | v-sit
+:::
+
+**6.** *Pay hastily!*
+
+::: details Show answer
+`yel hadehum vamol.`
+
+y-command | h-haste | v-pay
+
+**Also correct:** `yel vamol hadehum.`
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
@@ -115,28 +153,83 @@ y-surprise
 **1.** `yazawan.`
 
 ::: details Show answer
-
 y-Azawan
 
 *Azawan!* (calling Azawan)
 :::
 
-**2.** `yol zazawan vehahel.`
+**2.** `yol zahaben vehahel.`
 
 ::: details Show answer
+y-question | z-Ahaben | v-sit
 
-y-question | z-Azawan | v-sit
-
-*Does Azawan sit?*
+*Does Ahaben sit?*
 :::
 
 **3.** `yel varahal.`
 
 ::: details Show answer
-
 y-command | v-run
 
 *Run!*
+:::
+
+**4.** `yezul.`
+
+::: details Show answer
+y-surprise
+
+*Surprise!*
+:::
+
+**5.** `yalahen yul varahal.`
+
+::: details Show answer
+y-Alahen | y-prohibition | v-run
+
+*Alahen, don’t run!*
+:::
+
+**6.** `zahaben welavam ganegel vezevul.`
+
+::: details Show answer
+[z-Ahaben | [w-very | g-angry]] | v-sneak
+
+*A very angry Ahaben sneaks.*
+:::
+
+#### Pick one {#beginner-pick-one}
+
+**1.** *Alahen!* (calling Alahen over) `yalahel.` or `yalahen.`
+
+::: details Show answer
+`yalahen.`
+
+y-Alahen
+
+A call ends in **-n**; `yalahel` is a reaction, *Lion!*
+:::
+
+**2.** *Don’t sit.* `yel vehahel.` or `yul vehahel.`
+
+::: details Show answer
+`yul vehahel.`
+
+y-prohibition | v-sit
+
+**`yul`** forbids the action; **`yel`** would command it: *Sit!*
+:::
+
+#### Fix it {#beginner-fix-it}
+
+**1.** *Does Azawan pay?* <!-- lint: error -->`zazawan vamol yol.`
+
+::: details Show answer
+`yol zazawan vamol.`
+
+y-question | z-Azawan | v-pay
+
+The act word goes before the body; a `/y/` word after a finished body starts the next turn.
 :::
 
 ## Intermediate {#intermediate}
