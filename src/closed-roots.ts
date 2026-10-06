@@ -17,8 +17,8 @@ const CLOSED_ROWS = {
   lion: { emoji: "🦁", root: "alahe" },
   hibiscus: { emoji: "🌺", root: "ahabe" },
   // discourse-role specials (**-n**)
-  microphone: { emoji: "🎤", root: "amago" },
-  headphones: { emoji: "🎧", root: "ehodo" },
+  microphone: { emoji: "🎤", root: "amu" },
+  headphones: { emoji: "🎧", root: "eho" },
   handshake: { emoji: "🤝", root: "aha" },
   neutral: { emoji: "😐", root: "una" },
   // topic pronoun (`zozan`, pronouns.md#topic-pronoun) and generic pronoun (`zoben`)

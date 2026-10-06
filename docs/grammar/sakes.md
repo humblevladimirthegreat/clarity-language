@@ -644,7 +644,7 @@ Add an emotion tail to say how the thanks moves you:
 
 *Sorry* is about **their** sake, not yours. A lone unmet word would say *my* sake went unmet, so name whose sake in `/b/` right after it. The ending is the same [changeability](#sake-changeability) as on any unmet word, so it says how serious the harm is. (cue: sorry = *that detracted from your sake*)
 
-> `thanathum behodon.`
+> `thanathum behon.`
 >
 > [th-relatedness-unmet-modifiable | b-listener]
 >
@@ -653,9 +653,9 @@ Add an emotion tail to say how the thanks moves you:
 <!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English |
 |--------|-----|---------|
-| `…thul behodon` | the harm is lasting | *I'm deeply sorry* |
-| `…thum behodon` | the harm can be softened (default) | *I'm sorry* |
-| `…thur behodon` | the harm is passing | *my bad* |
+| `…thul behon` | the harm is lasting | *I'm deeply sorry* |
+| `…thum behon` | the harm can be softened (default) | *I'm sorry* |
+| `…thur behon` | the harm is passing | *my bad* |
 
 The `/b/` can name anyone: `thanathum balahen.` owns up to a harm to Alahen, even when you are telling someone else.
 

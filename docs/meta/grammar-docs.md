@@ -334,7 +334,7 @@ Usual sources (prefer one; reuse the language’s own systems):
 | Minimal clause that shows *only* the new point | Kitchen-sink showcases in Beginner |
 | Everyday [example root bank](drill-generation.md#root-bank) verbs (*walk*, *sleep*, *see*) in **teach** lines | Using that same walk/sleep palette as the default **checkpoint** plot ([checkpoint setting](translation-exercises.md#checkpoint-setting) owns drills) |
 | Published roots when the gloss matches; `PoS` + **`~`/`@`** + `<…>` for donor spelling | Invented “lexicon-shaped” stems, a closed overlay with its own frozen spelling, or split/hyphenated PoS tokens in learner text |
-| Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zamagon` / `zehodon`) as dummy subjects |
+| Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zamun` / `zehon`) as dummy subjects |
 | Omit default **`yal`** when the page is not teaching the speech act | Leading every example with **`yal`** by habit |
 | Morph gloss + **loose** free English by default ([glosses.md](glosses.md)); packed role English when the lexicon lists it (`v-see` for `vahahal`) | Merging free English into the morph gloss, or inventing a `/v/` lemma that is not in `english_by_pos` |
 | Strict free English only when teaching packaging | Strict-only Beginner pages |
@@ -351,9 +351,9 @@ When an example needs a **person**, use these nativized names (published root + 
 | `zalahen` | *Alahen* | `alahe` *courage* |
 | `zahaben` | *Ahaben* | `ahabe` *beauty* |
 
-**`amago` / `ehodo`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (performance **`zamagon`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`aha`**; nonspecific *someone* stays **`una`**. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
+**`amu` / `eho`** only when that page is teaching those specials, the point is the **discourse role** (name unavailable, address set, clusivity), or a closed construction is keyed to speaker/listener (performance **`zamun`**, viewpoint *my left* when the anchor is the role). Inclusive *we* stays **`aha`**; nonspecific *someone* stays **`una`**. Foreign `PoS<…>n` names only when teaching loans or spans. Checkpoints: [translation-exercises.md](translation-exercises.md#principles). Morph / resume: [glosses.md](glosses.md#house-cast).
 
-**The learner (first person).** When the speaker is the reader, write the name slot **`SELF`** in the Agazan (`zSELFn vowogal.`, greeting `SELFn.`) and a free-standing `SELF` in the morph line (`z-SELF | v-walk`). Free English is *I* / *me* / *my*. The site shows the name the learner chose in the name helper ([word-endings.md](../grammar/word-endings.md#named-n-beginner), nav chip), or **`amagon`** / *speaker* until they choose. `build` checks the slot as **`amago`**. Do not make a house person “name himself” to mean *I*, and do not use a dummy **`zamagon`** where a name is the point. Pages teaching the speaker role itself keep **`amago`**. A **Roots used here** row for the slot is `*your name*` / `` `SELFn` ``. Available from word-endings Beginner onward.
+**The learner (first person).** When the speaker is the reader, write the name slot **`SELF`** in the Agazan (`zSELFn vowogal.`, greeting `SELFn.`) and a free-standing `SELF` in the morph line (`z-SELF | v-walk`). Free English is *I* / *me* / *my*. The site shows the name the learner chose in the name helper ([word-endings.md](../grammar/word-endings.md#named-n-beginner), nav chip), or **`amun`** / *speaker* until they choose. `build` checks the slot as **`amu`**. Do not make a house person “name himself” to mean *I*, and do not use a dummy **`zamun`** where a name is the point. Pages teaching the speaker role itself keep **`amu`**. A **Roots used here** row for the slot is `*your name*` / `` `SELFn` ``. Available from word-endings Beginner onward.
 
 Default example block ([layout](glosses.md#example-block)):
 
@@ -388,7 +388,7 @@ Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odog
 |---------|---------|
 | Citation of this row’s sense | `odogal` *dog*; `agawam` *volume*; `azawan` *Azawan*; `odul` *therefore* |
 | Inflected form the row teaches | `thovum`, `thamam`, `xodum`, `zaxavadal`; drill-bank `vahahal` *see* |
-| Special with its default ending | citation `amagon` / `ehodon` / `ahan` / `unan`; in-clause `zamagon` when the slot is the point |
+| Special with its default ending | citation `amun` / `ehon` / `ahan` / `unan`; in-clause `zamun` when the slot is the point |
 
 Do **not** call `odoga` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/th/` (or `/x/`) word, not the stem (`ahul` or `thahum`, not `ahu`; `ovul` or `thovum`, not `ovu`). Combinability (`tha` / `the`, hold endings) belongs in a **pattern** column (`…thal`) or in extra inflected rows, not by stripping the ending.
 
@@ -453,7 +453,7 @@ Wording and voice for the track: [claritish-style.md](claritish-style.md).
 
 **Claritish** (`docs/grammar/claritish/`) is an on-ramp for English speakers: an intro page, ten lessons, a bonus tone-marks lesson, a closing page, and a cheat sheet that teach closed Agazan words to drop into ordinary English, so the psychological payoff starts on day one and every word learned is already Agazan. It adds no forms and is not design authority. Each lesson's owning grammar section is named in an editor-only `<!-- Source … -->` comment at the foot of the page; when that section changes a form or meaning, update the lesson.
 
-**What a drop-in is:** a closed Agazan word spelled exactly as the owning page spells it: a tone mark, a stance word, a sake word (thanks, sorry, feelings), or the set phrase `behodon`. No Agazan syntax around it (role letters, hosted `/b/`, joins, spans, hooks, role compounds, numeric derivation), no numerals or stance numbers, no respelling for English readers.
+**What a drop-in is:** a closed Agazan word spelled exactly as the owning page spells it: a tone mark, a stance word, a sake word (thanks, sorry, feelings), or the set phrase `behon`. No Agazan syntax around it (role letters, hosted `/b/`, joins, spans, hooks, role compounds, numeric derivation), no numerals or stance numbers, no respelling for English readers.
 
 - **Placement** follows English: where an adverb or tag would sit (after the clause, before it, or beside the word it colors). A stance drop-in covers the English clause it sits in. A lone feeling word with no clause is how the speaker feels right now.
 - **Suffixes on English words** are [label scope](../grammar/predication.md#label-scope) and [ability](../grammar/intention.md#ability-changeability) (`-xa` / `-xe` / `-xo` / `-xu`), written with a hyphen on an English host. The rule and its marking live in [Claritish wording and voice](claritish-style.md#hyphenated-host).

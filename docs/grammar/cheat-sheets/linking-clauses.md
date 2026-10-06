@@ -152,7 +152,7 @@ Three take **-l** for a firm link.
 | [Therefore](../dependents.md#continue-x) | `zodogal vowogal. xodum zagadul varahal.` | *A dog walks. Therefore a cat runs.* | B |
 | [On the contrary](../dependents.md#sentence-linkers) | `zalahen vezebal vul. xagezal zalahen varahal.` | *Alahen isn't sleeping. On the contrary, Alahen is running.* | I |
 | [Topic, then linker](../dependents.md#sentence-linkers) | `xazawan. xezom zalahen varahal.` | *Now, about Azawan. However, Alahen runs.* | I |
-| [Linker in a new turn](../dependents.md#sentence-linkers) | `yom xevavem zehodon vowogal.` | *So, do you want to walk?* | I |
+| [Linker in a new turn](../dependents.md#sentence-linkers) | `yom xevavem zehon vowogal.` | *So, do you want to walk?* | I |
 
 Linkers come only at the start of a sentence. They never follow a [clause join](../joins.md#clause-joins) and never open the sentence after a stand-in. Writing and speech rhythm for all of these is [one table](../dependents.md#orthography-and-prosody-periods).
 

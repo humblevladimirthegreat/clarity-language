@@ -124,15 +124,15 @@ A lone met word is a whole sentence about you: *my sake is met*. Sorry is about 
 | [`…thal`](../sakes.md#thanks-sorry) | the help lasts | *that will stay with me* | I |
 | [`…tham`](../sakes.md#thanks-sorry) | horizon unstated | *thank you* | I |
 | [`…thar`](../sakes.md#thanks-sorry) | landed right when needed | *thanks, that got me through* | I |
-| [`…thul behodon`](../sakes.md#thanks-sorry) | the harm is lasting | *I'm deeply sorry* | I |
-| [`…thum behodon`](../sakes.md#thanks-sorry) | the harm can be softened | *I'm sorry* | I |
-| [`…thur behodon`](../sakes.md#thanks-sorry) | the harm is passing | *my bad* | I |
+| [`…thul behon`](../sakes.md#thanks-sorry) | the harm is lasting | *I'm deeply sorry* | I |
+| [`…thum behon`](../sakes.md#thanks-sorry) | the harm can be softened | *I'm sorry* | I |
+| [`…thur behon`](../sakes.md#thanks-sorry) | the harm is passing | *my bad* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Thanks](../sakes.md#thanks-sorry) | `thanatham.` | *That meant a lot to me.* | I |
 | [Moved](../sakes.md#thanks-sorry) | `thanathamar.` | *I'm so moved.* | I |
-| [Sorry](../sakes.md#thanks-sorry) | `thanathum behodon.` | *That hurt your sense of connection.* | I |
+| [Sorry](../sakes.md#thanks-sorry) | `thanathum behon.` | *That hurt your sense of connection.* | I |
 | [Sorry, to another's sake](../sakes.md#thanks-sorry) | `thanathum balahen.` | *owns up to a harm to Alahen* | I |
 | [Appreciated by another](../sakes.md#thanks-sorry) | `thanatham balahen.` | *Alahen appreciated it* | I |
 
@@ -265,4 +265,4 @@ The negatives use the same endings: `thedel` / `thedem` / `theder` forbid, `thux
 | `thegom` *may* ([anyone with standing allows it](../sakes.md#permission)) | | `thuxegom` *the affected agreed* ([their own yes](../sakes.md#consent)) |
 | `thegom` *may* ([the act is allowed](../sakes.md#permission)) | | `thumem` *has to* ([the act is demanded](../sakes.md#requirement)) |
 | `thanathem` *ought to, for relatedness* ([advice for a sake](../sakes.md#sake-force)) | | `thanathom` *for relatedness* ([why it is done](../sakes.md#sake-preference)) |
-| `thanatham` *thank you* ([my sake is met](../sakes.md#thanks-sorry)) | | `thanathum behodon` *I'm sorry* ([your sake is hurt](../sakes.md#thanks-sorry)) |
+| `thanatham` *thank you* ([my sake is met](../sakes.md#thanks-sorry)) | | `thanathum behon` *I'm sorry* ([your sake is hurt](../sakes.md#thanks-sorry)) |

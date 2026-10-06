@@ -98,13 +98,13 @@ Role letter + the root + **-n** ([special pronouns](../pronouns.md#special-prono
 
 | Word | Means | In a slot | English | Same root as | Stage |
 |------|-------|-----------|---------|--------------|-------|
-| [`amagon`](../pronouns.md#special-pronouns) | the speaker | `zamagon` | *I* | `amagol` *microphone* | B |
-| `ehodon` | the one listening | `zehodon` / `dehodon` | *you* | `ehodol` *headphones* | B |
+| [`amun`](../pronouns.md#special-pronouns) | the speaker | `zamun` | *I* | `amul` *microphone* | B |
+| `ehon` | the one listening | `zehon` / `dehon` | *you* | `ehol` *headphones* | B |
 | `ahan` | speaker and addressees together | `zahan` | *we* (you and I) | `ahal` *handshake* | B |
 | `unan` | a nonspecific individual | `zunan` | *someone* | `unal` *neutral* | B |
 | [`oben`](../pronouns.md#generic-pronoun) | any person, as a rule | `zoben` | *one*, generic *you* | `obel` *person* | B |
 
-**Notes:** As an object, *we* is `dahan`. `ehodon` is always the person actually listening. `oben` takes no **-x**. Your own name works as *I*: `SELFn`.
+**Notes:** As an object, *we* is `dahan`. `ehon` is always the person actually listening. `oben` takes no **-x**. Your own name works as *I*: `SELFn`.
 
 ### Groups with **-x** {#groups}
 
@@ -114,8 +114,8 @@ Role letter + the root + **-n** ([special pronouns](../pronouns.md#special-prono
 | [**-lx** / **-mx**](../plurality.md#associative) | an indefinite group | `zagadulx` | *some cats* | B |
 | [**-lnx**](../word-endings.md#name-instance--ln) | some of a name | `dazawalnx` | *some Azawans* | I |
 | [**-rx**](../plurality.md#associative) | someone mentioned, and associates | `zazawarx` | *they* | B |
-| [speaker **-x**](../plurality.md#person-role-x) | the speaker and their people, you not included | `amagonx` (`zamagonx`, `damagonx`) | *I and my people* | B |
-| [listener **-x**](../plurality.md#person-role-x) | the address set, speaker not included | `ehodonx` (`zehodonx`, `dehodonx`) | *you all* | B |
+| [speaker **-x**](../plurality.md#person-role-x) | the speaker and their people, you not included | `amunx` (`zamunx`, `damunx`) | *I and my people* | B |
+| [listener **-x**](../plurality.md#person-role-x) | the address set, speaker not included | `ehonx` (`zehonx`, `dehonx`) | *you all* | B |
 | [interlocutors **-x**](../plurality.md#person-role-x) | everyone here, and their people | `ahanx` | *we all* | B |
 
 Who counts as an associate is [open unless you say](../plurality.md#associate-resolution): a join or `ul` names it; otherwise a group already named, then the obvious group in the scene. Nonspecific `unan` takes no **-x**; *some people* is `zobelx`.
@@ -135,7 +135,7 @@ Who counts as an associate is [open unless you say](../plurality.md#associate-re
 | [Group-level size](../plurality.md#adjectives-g) | `zavahal gagegem` | *the family is vast* | I |
 | [Members, plain](../plurality.md#adjectives-g) | `zavabalx garagam` | *the file-boxes are heavy* | I |
 | [Members, collectively](../plurality.md#adjectives-g) | `zavabalx garagamx` | *the file-boxes are heavy collectively* | I |
-| [Call a group](../plurality.md#vocatives-y) | `yehodonx` | *hey, you all* | I |
+| [Call a group](../plurality.md#vocatives-y) | `yehonx` | *hey, you all* | I |
 
 ## Don't mix up {#dont-mix-up}
 
@@ -144,8 +144,8 @@ Who counts as an associate is [open unless you say](../plurality.md#associate-re
 | `zazawar` *Azawan, again* ([the stem, resumed](../pronouns.md#resume-r)) | | `zaxar` *the latest doer* ([by the part they played](../pronouns.md#role-pointers)) |
 | `duxar` *the same one* ([-r](../pronouns.md#a-new-one)) | | `duxal` *another one* ([-l](../pronouns.md#a-new-one)) |
 | `zaxar` *the person* ([-r](../pronouns.md#share)) | | `zaxam` *what they did* ([-m](../pronouns.md#share)) |
-| `zahan` *you and I* ([`aha`](../pronouns.md#special-pronouns)) | | `zamagonx` *I and my people*, not you ([speaker -x](../plurality.md#person-role-x)) |
-| `zehodon` *you* ([one listener](../pronouns.md#special-pronouns)) | | `zehodonx` *you all* ([the address set](../plurality.md#person-role-x)) |
+| `zahan` *you and I* ([`aha`](../pronouns.md#special-pronouns)) | | `zamunx` *I and my people*, not you ([speaker -x](../plurality.md#person-role-x)) |
+| `zehon` *you* ([one listener](../pronouns.md#special-pronouns)) | | `zehonx` *you all* ([the address set](../plurality.md#person-role-x)) |
 | `zunan` *someone* ([tied to no event](../pronouns.md#special-pronouns)) | | `zaxur` *whoever did that* ([tied to one known event](../pronouns.md#whoever-it-was)) |
-| `zoben` *one*, people at large ([generic](../pronouns.md#generic-pronoun)) | | `zehodon` *you*, the listener ([just them](../pronouns.md#special-pronouns)) |
+| `zoben` *one*, people at large ([generic](../pronouns.md#generic-pronoun)) | | `zehon` *you*, the listener ([just them](../pronouns.md#special-pronouns)) |
 | `xazawan` *now, about Azawan* ([sets the topic](../pronouns.md#topic)) | | `zozan` *the topic* ([refers to it](../pronouns.md#topic-pronoun)) |

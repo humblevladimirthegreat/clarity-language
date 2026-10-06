@@ -192,7 +192,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 | *past* / *in the past* | FORMER **`thenom`**, or a channel with a `-` offset |
 | *future* / *in the future* | a channel + **`bral`** |
 | *once* (*one time*) | `h+1` before the verb |
-| ever (*Have you walked at all?*) | **`hoham`** + **`har`** under **`yol`**: `yol zehodon hoham vowogal har` |
+| ever (*Have you walked at all?*) | **`hoham`** + **`har`** under **`yol`**: `yol zehon hoham vowogal har` |
 | *during* (*during the storm*) | **`huwem`** + `/b/`: `huwem bavodel` |
 | *immediately* / *immediate* / *right away* / *at once* (*about to*) | a channel + **`brabul`** (*a hair after now*) |
 | *initially* / *at first* / *firstly* | **`hogodam`** (*first*, as a manner adverb) |
@@ -207,7 +207,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 >
 > "Azawan must be walking today."
 
-> `yol zehodon hoham vowogal har.`
+> `yol zehon hoham vowogal har.`
 >
 > y-question | z-listener | h-already | v-walk | h-when
 >
@@ -264,7 +264,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 >
 > "Azawan may walk (I'm allowing it)."
 
-> `yem zehodon vowogal.`
+> `yem zehon vowogal.`
 >
 > y-request | z-listener | v-walk
 >
@@ -297,7 +297,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 >
 > "The dog is visible."
 
-> `yol zehodon vowogal.`
+> `yol zehon vowogal.`
 >
 > y-question | z-listener | v-walk
 >
@@ -343,7 +343,7 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 
 For *should have*, date the ought with [stance as-of](relations.md#stance-as-of) **`thuhum`**; **`thuhum brul`** is *back then*. The ought then reads from that past moment. English also implies the act did not happen; if that matters, say it in its own sentence.
 
-> `zehodon thuhum brul thegathem vezebel. zehodon vezebel vul.`
+> `zehon thuhum brul thegathem vezebel. zehon vezebel vul.`
 >
 > z-listener | [th-as-of.ledger | b-earlier] | th-sake-ought-offered | v-tell . z-listener | [v-tell | v-not]
 >
@@ -370,7 +370,7 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 | *thinking of* | PLAN sketch **`thamar`** |
 | *hopefully* | **`thevegem`** |
 | *tries to* | **`thudum`** |
-| *if only …*, *I wish …* | WANT with the speaker in `/b/`: **`thohum bamagon`** |
+| *if only …*, *I wish …* | WANT with the speaker in `/b/`: **`thohum bamun`** |
 | *let's* | request **`yem`** with **`aha`** as subject |
 
 > `zalahen thohum vowogal.`
@@ -379,7 +379,7 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 >
 > "Alahen wants to walk."
 
-> `zazawan thohum bamagon vowogal.`
+> `zazawan thohum bamun vowogal.`
 >
 > z-Azawan | [th-WANT-unstated | b-speaker] | v-walk
 >

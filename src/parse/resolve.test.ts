@@ -187,7 +187,7 @@ describe("resolve — role pointers (pronouns.md#role-pointers)", () => {
     assert.throws(() => parseText("zazawan dalahen vabahel. zaxem genehem."), /never takes the self vowel/);
     assert.throws(() => parseText("zazawan dalahen vabahel. zaxamx genehem."), /takes no -x/);
     assert.throws(() => parseText("dugugol vahahal. zaxul varahal."), /unsaid pointer/);
-    assert.throws(() => parseText("zamagon vowogal. zaxal vehahel."), /special, topic, or generic/);
+    assert.throws(() => parseText("zamun vowogal. zaxal vehahel."), /special, topic, or generic/);
     assert.throws(() => parseText("zazawan dalahen vabahel. zexom genehem."), /except the scene/);
   });
 
@@ -438,10 +438,10 @@ describe("resolve — yes/no vs fill-ask (questions.md)", () => {
   });
 
   it("gives a blank in a dorl dependent to the dependent, and one in a darl dependent to yol", () => {
-    const whether = resolveOf("yol zehodon vubugal dorl zar vowogal.").asks[0]!;
+    const whether = resolveOf("yol zehon vubugal dorl zar vowogal.").asks[0]!;
     assert.equal(whether.kind, "yesNo");
     assert.deepEqual(whether.inner?.map((g) => g.raw), ["zar"]);
-    const that = resolveOf("yol zehodon vevegal darl zar vowogal.").asks[0]!;
+    const that = resolveOf("yol zehon vevegal darl zar vowogal.").asks[0]!;
     assert.equal(that.kind, "fillAsk");
     assert.deepEqual(that.gaps.map((g) => g.raw), ["zar"]);
     const both = resolveOf("yol zar vubugal dorl zar vowogal.").asks[0]!;

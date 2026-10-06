@@ -620,7 +620,7 @@ export const REJECTIONS = {
   tagUnbound: { anchor: "pronouns.md#tag-pronouns", summary: "a tag -r or -m needs that tag assigned earlier in the conversation (zodogal zwal, or zwal alone); -m also needs an earlier event it took part in (for a pair, one event both took part in)" },
   tagSlot: { anchor: "pronouns.md#tag-pronouns", summary: "a tag pronoun fills /z/, /d/, or /b/; to call someone or return to them as the topic, use their name" },
   tagEnding: { anchor: "pronouns.md#tag-pronouns", summary: "a tag pronoun takes -l (assign), -r (recall), or -m (share)" },
-  tagPronoun: { anchor: "pronouns.md#tag-pronouns", summary: "a tag names a phrase that is not already a fixed pronoun: never a special (amagon, ehodon, ahan, unan), generic, or topic pronoun, or another tag; a resume or role pointer takes one" },
+  tagPronoun: { anchor: "pronouns.md#tag-pronouns", summary: "a tag names a phrase that is not already a fixed pronoun: never a special (amun, ehon, ahan, unan), generic, or topic pronoun, or another tag; a resume or role pointer takes one" },
   tagPairAssign: { anchor: "pronouns.md#tag-pairs", summary: "a tag pair (zwaer) recalls or shares two tags already assigned; assign each tag on its own (zodogal zwal zagadul zwel zam)" },
   tagPlural: { anchor: "pronouns.md#tag-pronouns", summary: "a tag takes -x only on -r (zwarx, A and associates); to tag a group, tag its plural phrase (zodogalx zwal)" },
   numberPlural: { anchor: "numbers-applied.md#plural-labels", summary: "a number takes -x only as a plural label (z_90x)" },

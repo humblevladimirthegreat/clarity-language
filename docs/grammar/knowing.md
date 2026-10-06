@@ -1187,7 +1187,7 @@ A [carried](#carry-forward) channel keeps its offset. Date the first sentence of
 
 A signed measure in the `/b/` of a [time pole](dependents.md#time-poles) (**`homam`** *until*, **`heveham`** *by*, **`habam`** *before*, **`henum`** *after*, **`huwem`** *during*) counts from now, the same way. The pole itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel of its own (a carried frame does not count). So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a pole to slip in a past or future with no warrant. An absolute date in the pole (`homam b_#22,7`) needs none of this.
 
-> `yel zehodon vaheham homam bazazam grawol.`
+> `yel zehon vaheham homam bazazam grawol.`
 >
 > y-command | z-listener | v-confidentiality | [h-until | [b-day | g-one]]
 >

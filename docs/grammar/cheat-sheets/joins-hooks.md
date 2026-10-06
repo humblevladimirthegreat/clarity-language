@@ -174,11 +174,11 @@ Stage: `al` `ol` `ul` `el` **-l** are Beginner; the rest of the first three colu
 | `ol bar` | [*somewhere*](../hooks.md#place-indefinites); in a question, *where?* | I |
 | `ol bur` / `ol bal` / `ol bual` | [*somewhere else*](../hooks.md#place-indefinites) / *nowhere* / *everywhere* | I |
 | `ael bar` (in a question) | [*with what?*](../hooks.md#extra-noun-intermediate) | I |
-| `om bamagon` / `om behodon` | [*here*, *this*](../hooks.md#deixis) / *there by you*, *that* | I |
+| `om bamun` / `om behon` | [*here*, *this*](../hooks.md#deixis) / *there by you*, *that* | I |
 | `om bahan` / `um bahan` | [*here with us*](../hooks.md#deixis) / *over there* | I |
-| `vuvudel oel bamagon` | [*comes to me*](../hooks.md#deixis) | I |
-| `valagel dabegol oel bamagon` | [*brings me the package*](../hooks.md#deixis) | I |
-| `zodogal em bamagon` | [*my dog*](../hooks.md#genitive) (in my use) | I |
+| `vuvudel oel bamun` | [*comes to me*](../hooks.md#deixis) | I |
+| `valagel dabegol oel bamun` | [*brings me the package*](../hooks.md#deixis) | I |
+| `zodogal em bamun` | [*my dog*](../hooks.md#genitive) (in my use) | I |
 
 ## Don't mix up {#dont-mix-up}
 

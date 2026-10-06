@@ -15,7 +15,7 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 | *although* / *while* / *whilst* / *until* / *till* / *before* / *after* | same pole + **`barl`** shape on adverb `/h/`, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hezom`** / **`huwem`** / **`homam`** / … |
 | *so that* / *in order to* | same shape: **`hogom`** ([so that](dependents.md#so-that)); NP intended get = **`hogom`** + `/b/` **noun** |
 | *despite* (NP) | same **`hezom`** (or **`gezom`**) + `/b/` **noun**, not a second pole |
-| *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uem`** + the stance it goes against: `uem thedel` / `uem thuxedem balahen` / `uem thamam` / `uem thehul bamagon` / `uem thewam` ([contrary to a stance](sakes.md#contrary-to-stance)) |
+| *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uem`** + the stance it goes against: `uem thedel` / `uem thuxedem balahen` / `uem thamam` / `uem thehul bamun` / `uem thewam` ([contrary to a stance](sakes.md#contrary-to-stance)) |
 | *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`barl`**: **`thunem barl`** / **`thobam barl`** ([evidence clause](knowing.md#evidence-clause)) |
 | *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xodum`** ([continue](dependents.md#continue-x)) |
 | *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](pronouns.md#how-english-approximates-r)) |
@@ -48,7 +48,7 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 | *guess* (a passing thought) | `thovur` | MAY, who knows |
 | *guess* (a gut hunch) | `thahor` | INTUITION, faint |
 | *assume* / *suppose* | `thavor` | NOTIONAL, toy with it for now |
-| *personally* / *in my view* | `hahehom bamagon` | topic: as for me |
+| *personally* / *in my view* | `hahehom bamun` | topic: as for me |
 | *by the way* / *aside* (in passing) | `th( … )` | aside fence, any place a stance word may sit |
 | *necessarily* / *it follows* | `thunel` | CLUES, strong clues |
 | *basically* / *fundamentally* | `hadawam` | manner adverb on *fundamental* |
@@ -249,7 +249,7 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 | *motivation* / *motive* | `zazawan vowogal thanathom.` | does it for relatedness |
 | *satisfaction* / *pleasure* | `thozotham.` | pleasure, met |
 | *desire* / *wish* | `zazawan thohum vowogal.` | wants to walk |
-| *regret* (for the harm) | `thanathum behodon.` | unmet relatedness, yours |
+| *regret* (for the harm) | `thanathum behon.` | unmet relatedness, yours |
 | *mistake* / *error* | `gegegal gul` or `thevel barl` | not correct, or at fault |
 | *assumption* / *premise* | `thavor` | NOTIONAL, toy with it |
 | *truth* / *to tell the truth* | `thaveham` | revelation |
@@ -277,20 +277,20 @@ English *biased* says a view may be bent by what the holder wants from it. Agaza
 
 | English | Agazan | Reading |
 |---------|--------|---------|
-| *I may be biased* | `zamagon thovum vevegal thegathom.` | I may think this for a stake of my own |
+| *I may be biased* | `zamun thovum vevegal thegathom.` | I may think this for a stake of my own |
 | *biased* (someone else) | `zazawan vevegal thegathom.` | Azawan thinks it for a stake |
-| *I'd like to believe* / *wishful thinking* | `zamagon thohum vevegal darl zalahen vowogal.` | I want to think that Alahen walks |
-| *overconfident* | `zamagon thunem zel gegehom.` | surer than the clues warrant |
+| *I'd like to believe* / *wishful thinking* | `zamun thohum vevegal darl zalahen vowogal.` | I want to think that Alahen walks |
+| *overconfident* | `zamun thunem zel gegehom.` | surer than the clues warrant |
 | *underconfident* | `zazawan thunem zuel gegehom.` | less sure than the clues warrant |
 | *to be honest*, before owning a bias | `thaveham` | [speech manner](speech-moves.md#speech-manner) |
 
-> `thaveham zamagon thovum vevegal thegathom.`
+> `thaveham zamun thovum vevegal thegathom.`
 >
 > th-revelation | z-speaker | th-MAY | v-think | th-sake-motive-any-term
 >
 > "To be honest, I may be biased."
 
-> `zamagon thunem zel gegehom.`
+> `zamun thunem zel gegehom.`
 >
 > [z-speaker | th-CLUES | z-rank/more | g-trust]
 >
@@ -421,7 +421,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 | *glad to help* / *rewarding to give* | `thebetham.` | the act met your beneficence |
 | *benefit* / *benefits Alahen* | `thanatham balahen` | the act met Alahen's sake |
 | *advantage* (a lead over someone) | `zel` with the scale | rank against the other |
-| *satisfy* (you) | `thanatham behodon` | the act met your sake |
+| *satisfy* (you) | `thanatham behon` | the act met your sake |
 | *satisfy* (a requirement) | `thumel zoel` + scale | tie against the rule: it meets the requirement |
 | *suitable* / *appropriate* (for a need) | `gulotham` or `thegatham zoel` | met, or enough for the need |
 | *more important than* | `zel` between the nouns, then `gamethal` | rank on the lasting met sake |

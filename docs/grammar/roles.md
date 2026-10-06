@@ -127,7 +127,7 @@ Some stems name a **relation** (who is bound to whom), not an action. The other 
 
 A role compound fills `/z/`, `/d/`, `/b/`, or `/ɡ/`. Under `/x/` it sets a [topic](pronouns.md#topic), as any compound does (`xaxedehol` *now, about people who teach*), and under `/y/` with **-n** or **-r** it calls someone (`yaxebezan` calls the doctor).
 
-Its stem is always an event. A [special pronoun](pronouns.md#special-pronouns) such as `amagon` (*the speaker*) names a person, not an event, so `zaxamagon` is not a word. The same root on **-l** is an ordinary content word with a verb sense (*perform*), so it can be a stem: `zaxamagol` is *someone who performs*.
+Its stem is always an event. A [special pronoun](pronouns.md#special-pronouns) such as `amun` (*the speaker*) names a person, not an event, so `zaxamun` is not a word. The same root on **-l** is an ordinary content word with a verb sense (*perform*), so it can be a stem: `zaxamul` is *someone who performs*.
 
 With **-l**, **-m**, or **-n**, the word is **any** such participant: someone who does it, a place or time where it happens, someone it happens to. **-r** looks back to the latest verb, event noun, or relation with that whole stem (including a stem already inside a role compound) and names **this instance**. The vowel still picks which part you mean: doer, scene, undergoer, or extra `/b/` party.
 
@@ -566,7 +566,7 @@ Bare arrow words are compass points on a north-up map:
 
 Speaker and listener roots are the facing person when you mean *my left* / *your left*:
 
-> `yel zehodon vowogal hewezathehodon.`
+> `yel zehon vowogal hewezathehon.`
 >
 > y-command | z-listener | v-walk | h-west-th-listener
 >
@@ -585,7 +585,7 @@ For *their left*, put a [role pointer](pronouns.md#role-pointers) on **-r** afte
 | PoS | slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region) | same slots as other content |
 | DIR | an arrow-rose root | *north* / *ahead*, … |
 | **`th`** | joins DIR to the viewpoint | viewpoint after **`th`** (cue: **th** ≈ *think*, whose point of view) |
-| ANCHOR | what sets the facing frame: [special](pronouns.md#special-pronouns) **`amago`** / **`ehodo`** / **`aha`**, a person’s name, a content **-r** of a person or oriented object, or a role pointer on **-r** | *Azawan’s left*, *your left*, *the car’s left*, *their left* |
+| ANCHOR | what sets the facing frame: [special](pronouns.md#special-pronouns) **`amu`** / **`eho`** / **`aha`**, a person’s name, a content **-r** of a person or oriented object, or a role pointer on **-r** | *Azawan’s left*, *your left*, *the car’s left*, *their left* |
 | Ending | ordinary ending is written at the end of the whole compound; its reference is the viewpoint anchor, not the direction | viewpoint kind / hedge / name / resume |
 
 **Compare with:** naming a doer from an event puts a **vowel** left of **`x`** ([role compounds](#role-compounds): `zaxavadal`). Viewpoint laterals put a **direction root** left of **`th`** and a facing person on the right.
@@ -606,7 +606,7 @@ The examples above used *west* / *left*. The other seven arrow roots work the sa
 | **`azovel`** | compass heading, or back-right on a face | *southeast* / *back-right* | ↘️ *southeast-arrow*: between south and east |
 | **`azawel`** | compass heading, or back-left on a face | *southwest* / *back-left* | ↙️ *southwest-arrow*: between south and west |
 
-Indoor headings may follow a local map (building north). When you mean directions from a person’s body, name the viewpoint or use the listener (`…thazawan`, `…thehodon`).
+Indoor headings may follow a local map (building north). When you mean directions from a person’s body, name the viewpoint or use the listener (`…thazawan`, `…thehon`).
 
 ### Gravity (`abaha` / `adahe`) {#gravity}
 
@@ -663,7 +663,7 @@ Gravity works the same way: bare **`adahe`** + `/b/` is *under* the landmark, an
 | Agazan | Use | English |
 |--------|-----|---------|
 | Bare DIR | compass / gravity | `gewezal` *west*; `gabahal` *up* |
-| **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewezathehodon` *listener-left* |
+| **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gewezathehon` *listener-left* |
 | DIR + **`th`** + **`o`** + `/b/` | that point on the **landmark’s** own rose | `gazavathol bahazal` *behind the house* |
 | **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gewezathazawan bedehul` *left of the tree, from Azawan’s view* |
 
@@ -712,8 +712,8 @@ Write the ordinary [word ending](word-endings.md) at the end of the whole compou
 |--------|---------|
 | `gewezal` | *west* (shared map) |
 | `gewezathazawan` | *Azawan’s left* |
-| `gewezathehodon` | *your left* (listener facing) |
-| `gewezathamagon` | *my left* (speaker facing) |
+| `gewezathehon` | *your left* (listener facing) |
+| `gewezathamun` | *my left* (speaker facing) |
 | `gewezathahan` | *our left* (shared facing) |
 | `gabahal` / `habahal` | gravity *up* |
 
@@ -748,8 +748,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *northwest* / *forward-left* | `onovel` | |
 | *up* (gravity) | `abahal` | |
 | *down* (gravity) | `adahel` | |
-| *listener* | `ehodon` | `ehodol` *headphones* |
-| *speaker* | `amagon` | `amagol` *microphone* |
+| *listener* | `ehon` | `ehol` *headphones* |
+| *speaker* | `amun` | `amul` *microphone* |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -796,7 +796,7 @@ z-life-buoy | [g-west-th-Azawan | b-boat]
 **6.** *You, walk left (your left).*
 
 ::: details Show answer
-`yel zehodon vowogal hewezathehodon.`
+`yel zehon vowogal hewezathehon.`
 
 y-command | z-listener | v-walk | h-west-th-listener
 :::
@@ -804,7 +804,7 @@ y-command | z-listener | v-walk | h-west-th-listener
 **7.** *The boat on my left.*
 
 ::: details Show answer
-`zobodal gewezathamagon.`
+`zobodal gewezathamun.`
 
 z-boat | g-west-th-speaker
 :::
@@ -888,7 +888,7 @@ z-life-buoy | [g-west-th-Alahen | b-boat]
 *The life-buoy is left of the boat, from Alahen’s view.*
 :::
 
-**6.** `yel zehodon vowogal hoduthehodon.`
+**6.** `yel zehon vowogal hoduthehon.`
 
 ::: details Show answer
 

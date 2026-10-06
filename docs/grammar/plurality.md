@@ -71,13 +71,13 @@ English *we* and *you* do not say whether the listener is in the group (the spli
 
 Inclusive *you and I* is **`aha`** ([special pronouns](pronouns.md#special-pronouns)). With **-x** it adds the speaker’s and listener’s shared people (below).
 
-> `zehodonx vowogal.`
+> `zehonx vowogal.`
 >
 > z-listener-x | v-walk
 >
 > "You all (the addressees) walk."
 
-> `zamagonx vehahel.`
+> `zamunx vehahel.`
 >
 > z-speaker-x | v-sit
 >
@@ -95,15 +95,15 @@ Inclusive *you and I* is **`aha`** ([special pronouns](pronouns.md#special-prono
 >
 > "We (you and I) walk."
 
-The same roots take the role letter of the slot they fill. As a direct object they are **`damagonx`**, **`dehodonx`**, **`dahan`**:
+The same roots take the role letter of the slot they fill. As a direct object they are **`damunx`**, **`dehonx`**, **`dahan`**:
 
-> `zazawan damagonx vahahal.`
+> `zazawan damunx vahahal.`
 >
 > z-Azawan | d-speaker-x | v-see
 >
 > "Azawan sees speaker and associates (not you)."
 
-> `zazawan dehodonx vahahal.`
+> `zazawan dehonx vahahal.`
 >
 > z-Azawan | d-listener-x | v-see
 >
@@ -118,8 +118,8 @@ The same roots take the role letter of the slot they fill. As a direct object th
 <!-- cheat-sheet: people-pointing -->
 | Agazan | Use | English |
 |--------|-----|---------|
-| **`amagonx`** | speaker plus that person’s people (listener not assumed); `zamagonx` as subject, `damagonx` as object | *I and my people* (not you) |
-| **`ehodonx`** | all current addressees; `zehodonx` as subject, `dehodonx` as object | *you all* |
+| **`amunx`** | speaker plus that person’s people (listener not assumed); `zamunx` as subject, `damunx` as object | *I and my people* (not you) |
+| **`ehonx`** | all current addressees; `zehonx` as subject, `dehonx` as object | *you all* |
 | **`ahan`** | the interlocutor set; `zahan` as subject, `dahan` as object | *we* (you and I) |
 | **`ahanx`** | the interlocutor set plus associates beyond this conversation | *we all*, *us and our people* (you included) |
 | name **-nx** / resume **-rx** | that person plus associates | *X and associates* |
@@ -130,9 +130,9 @@ The same roots take the role letter of the slot they fill. As a direct object th
 >
 > "We (you, I and our associates) walk."
 
-**Compare with:** inclusive *we* uses **`aha`** (`zahan`), not **`amagonx`**. **`amagonx`** leaves you out, **`ehodonx`** leaves the speaker out, and **`ahanx`** takes in both and the people around you. Nonspecific *someone* (**`una`**) names no group, so it takes no **-x**: *some people* is `zobelx`.
+**Compare with:** inclusive *we* uses **`aha`** (`zahan`), not **`amunx`**. **`amunx`** leaves you out, **`ehonx`** leaves the speaker out, and **`ahanx`** takes in both and the people around you. Nonspecific *someone* (**`una`**) names no group, so it takes no **-x**: *some people* is `zobelx`.
 
-For *you and yours* (one listener plus that person's people), put **-x** on the listener's name (`zalahenx`). **`ehodonx`** means only the address set.
+For *you and yours* (one listener plus that person's people), put **-x** on the listener's name (`zalahenx`). **`ehonx`** means only the address set.
 
 ### Translation practice {#beginner-translation-practice}
 
@@ -317,7 +317,7 @@ English *Azawan and them* does not say who belongs. Agazan **-x** is the same: w
 
 If the wrong reading would matter, say so. Use **`aha`** or a join for *you and I*. For *not you*, use speaker **-x**, or subtract the listener with the *except* [hook](hooks.md) **`ul`**:
 
-> `zazawanx ul zehodon vowogal.`
+> `zazawanx ul zehon vowogal.`
 >
 > z-Azawan-x | except | z-listener | v-walk
 >
@@ -330,7 +330,7 @@ If the wrong reading would matter, say so. Use **`aha`** or a join for *you and 
 | Institutional frame | this meeting, this household | the scene’s default group |
 | Open | no further cue | the listener may or may not be in the set |
 
-For the **address set** (`ehodonx`), count everyone called by name at the start of this turn, plus anyone still being addressed from before.
+For the **address set** (`ehonx`), count everyone called by name at the start of this turn, plus anyone still being addressed from before.
 
 ### Groups as the topic
 
@@ -428,7 +428,7 @@ To call a group at the start of a turn, put **-x** on the call word (the vocativ
 |--------|-----|---------|
 | **-nx** | a kind or a title as the group | *hey, kids*; *Team Alpha* |
 | **-rx** | prior addressee and associates | *hey, you (that one) and associates* |
-| **`yehodonx`** | current addressees, no name | *hey, you all* |
+| **`yehonx`** | current addressees, no name | *hey, you all* |
 
 **For *everyone*, use:** [universals](joins.md#universals-domains-generics) (`…ual`).
 
@@ -463,7 +463,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
-| *listener* | `ehodon` |
+| *listener* | `ehon` |
 | *sheet-music* | `umuyul` |
 | *bell* | `ebehul` |
 | *heavy* | `aragam` |
@@ -478,7 +478,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Hey, you all!*
 
 ::: details Show answer
-`yehodonx.`
+`yehonx.`
 
 y-listener-x
 :::

@@ -52,7 +52,7 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 | part / contents / material (*a hand of Alahen*, *a teapot of tea*) | **`gobom`** / **`gahem`** / **`guwum`** + `/b/` | [Of relations](relations.md#of-relations) |
 | origin (*Alahen of the city*, *the sound of the drums*) | **`gagum`** + `/b/` | [Of relations](relations.md#of-relations) |
 | someone's act (*Azawan's walk*, *the monkey's tricks*) | the act as a sentence, then its verb root in **-r** | [Someone's act](say-people-places.md#someones-act) |
-| *personal* / *private* (*a personal matter*) | hook **`em`** + the owner: `em bamagon` | [Whose](hooks.md#genitive) |
+| *personal* / *private* (*a personal matter*) | hook **`em`** + the owner: `em bamun` | [Whose](hooks.md#genitive) |
 | *my* belonging + sake (*my tent serves the physical sake*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
 
 ### *about*

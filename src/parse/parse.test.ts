@@ -90,7 +90,7 @@ describe("parse — clause.md beginner", () => {
   });
 
   it("parses yol question", () => {
-    const result = parseText("yol zamagon vowogal.");
+    const result = parseText("yol zamun vowogal.");
     assert.ok(result.utterances[0]!.left.force);
     assert.equal(result.utterances[0]!.left.force!.raw, "yol");
   });
@@ -113,7 +113,7 @@ describe("parse — clause.md beginner", () => {
   });
 
   it("parses polar plus body", () => {
-    const result = parseText("yael zamagon vowogal.");
+    const result = parseText("yael zamun vowogal.");
     assert.equal(result.utterances[0]!.left.polars[0]?.raw, "yael");
     assert.equal(result.utterances[0]!.bodies[0]!.clause.units.length, 2);
   });
@@ -274,7 +274,7 @@ describe("parse — spans", () => {
 
 describe("parse — SVO slots", () => {
   it("parses zar damegun vozezol as subject, object, verb (roles.md)", () => {
-    const result = parseText("zar damagon vozezol.");
+    const result = parseText("zar damun vozezol.");
     const units = result.utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units.length, 3);
     assert.equal(units[0]!.kind, "np");
@@ -287,7 +287,7 @@ describe("parse — SVO slots", () => {
     const obj = units[1]!.coord.parts[0]!.items[0];
     assert.equal(obj?.kind, "package");
     if (obj?.kind !== "package") return;
-    assert.equal(obj.package.head.raw, "damagon");
+    assert.equal(obj.package.head.raw, "damun");
   });
 });
 
@@ -603,9 +603,9 @@ describe("parse — comparatives.md bars", () => {
   });
 
   it("keeps the ranked item's hook + /b/ before its bar inside the fence", () => {
-    const part = fence("zubugal om bamagon thamam zel garagam.")!;
+    const part = fence("zubugal om bamun thamam zel garagam.")!;
     assert.deepEqual(part.items.map((i) => i.kind), ["package", "bar"]);
-    assert.equal(part.items[0]!.kind === "package" && part.items[0]!.package.adjs[0]?.hosted?.bound.raw, "bamagon");
+    assert.equal(part.items[0]!.kind === "package" && part.items[0]!.package.adjs[0]?.hosted?.bound.raw, "bamun");
   });
 
   it("reads a stance word outside the fence on the claim", () => {

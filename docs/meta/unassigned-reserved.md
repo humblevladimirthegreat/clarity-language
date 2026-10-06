@@ -137,7 +137,7 @@ Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds
 - **open:** a role compound on `/v/` / `/w/` / `/th/`. A role compound names a participant, and these slots take none: it fills `/z/` `/d/` `/b/` `/ɡ/`, sets a topic under `/x/`, and calls under `/y/`. Parser: `roleCompoundSlot`.
 - **closed (D-34):** a role compound on `/h/`.
 - **open:** a role compound as a piece of an ordinary compound, or two role vowels in a word. Not guessable: the first **`x`** decides the family, so an inner role vowel reads as part of the stem. *Noun + agent* is the role compound's own stem (`zaxodogaxowogal`).
-- **open:** a special pronoun (root + **-n**) as a role-compound stem or a label-scope host (`zaxamagon`, `zamagothan`). It is neither an event nor a label. Parser: `roleCompoundStem`, `labelScopeStem`.
+- **open:** a special pronoun (root + **-n**) as a role-compound stem or a label-scope host (`zaxamun`, `zamuthan`). It is neither an event nor a label. Parser: `roleCompoundStem`, `labelScopeStem`.
 - **open:** ability (`x` + vowel) on a `/z/` / `/d/` / `/b/` noun, a name, a pronoun, or `/h/` (`zodogaxal`). *Can* belongs to an act or a quality, and a noun or an adverb is neither. Ability is on `/v/` and `/ɡ/` (plus hostless `eze`). Parser: `abilitySlot`.
 - **open:** name + `x` + vowel + **-n** in a clause body (`zalahen zazawaxon varahal.`). A bid is said to someone when arriving or leaving; inside a clause it has no job. That shape is a conversation-length bid only as a citation or a `/y/` call.
 
@@ -160,7 +160,7 @@ Source: [pronouns.md](../grammar/pronouns.md#tag-pronouns)
 - **open:** a tag on `/v/` / `/ɡ/` / `/h/` / `/w/` / `/th/`, or with `gl-` (`vwar`). A tag names a participant, and these slots take none. Parser: `tagSlot`.
 - **open:** tag + **-n**, and the stand-in endings on a tag (`zwan`, `zwarl`). No job yet. Parser: `tagEnding`.
 - **open:** **-x** on a tag **-l** or **-m** (`zwalx`, `zwamx`). A share is a part, not a group; a group is tagged through its plural phrase (`zodogalx zwal`). Parser: `tagPlural`.
-- **open:** a tag on a word that is already a fixed pronoun: a special pronoun, the generic or topic pronoun, or another tag (`zamagon zwal`, `zozan zwal`, `zwar zwel`). It already has one short form, and a second label for the same pronoun would only rename it. Parser: `tagPronoun`.
+- **open:** a tag on a word that is already a fixed pronoun: a special pronoun, the generic or topic pronoun, or another tag (`zamun zwal`, `zozan zwal`, `zwar zwel`). It already has one short form, and a second label for the same pronoun would only rename it. Parser: `tagPronoun`.
 - **open:** a tag pair with **-l** (`zwael`). After a two-item list it could tag the items in order or the group as one, so neither reading is guessable; each tag is assigned on its own. Parser: `tagPairAssign`.
 - **open:** **-x** on a tag pair **-m** (`zwaemx`), as on any share.
 

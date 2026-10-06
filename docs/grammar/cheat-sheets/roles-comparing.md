@@ -35,7 +35,7 @@ Write a thing letter (`/z/` `/d/` `/b/`), the role vowel, mid-word **`x`**, the 
 | [Is a teacher](../roles.md#usual-role) | `zazawan gaxedehothel.` | *Azawan is a teacher.* | I |
 | [The event itself](../roles.md#the-event-itself): no vowel | `davadal` | *a fight* | B |
 
-A role compound has one role vowel, left of the first **`x`**. Its stem is always an event: `zaxamagon` is not a word.
+A role compound has one role vowel, left of the first **`x`**. Its stem is always an event: `zaxamun` is not a word.
 
 ### Without the stem {#pointers}
 
@@ -88,19 +88,19 @@ Bare arrow words are compass headings. With mid-word **`th`** and a facing perso
 | Agazan | Use | English | Stage |
 |--------|-----|---------|-------|
 | [Bare DIR](../roles.md#viewpoint-vs-landmark) | compass / gravity | `gewezal` *west*; `gabahal` *up* | I |
-| [**`DIR th ANCHOR`**](../roles.md#viewpoint-vs-landmark) | that point on **ANCHOR's** facing rose | `gewezathehodon` *listener-left* | I |
+| [**`DIR th ANCHOR`**](../roles.md#viewpoint-vs-landmark) | that point on **ANCHOR's** facing rose | `gewezathehon` *listener-left* | I |
 | [DIR + **`th`** + **`o`** + `/b/`](../roles.md#landmark-facing) | that point on the **landmark's** own rose | `gazavathol bahazal` *behind the house* | I |
 | [complex `/ɡ/` + `/b/`](../roles.md#viewpoint-vs-landmark) | region on a side **of a landmark** | `gewezathazawan bedehul` *left of the tree, from Azawan's view* | I |
 
-The anchor can be `amago` *speaker*, `ehodo` *listener*, a name, or a role pointer on **-r**. The ending applies to the anchor, not the direction.
+The anchor can be `amu` *speaker*, `eho` *listener*, a name, or a role pointer on **-r**. The ending applies to the anchor, not the direction.
 
 <!-- cheat-sheet: roles-comparing -->
 | Agazan | English | Stage |
 |--------|---------|-------|
 | [`gewezal`](../roles.md#endings-and-resume) | *west* (shared map) | I |
 | [`gewezathazawan`](../roles.md#endings-and-resume) | *Azawan's left* | I |
-| [`gewezathehodon`](../roles.md#endings-and-resume) | *your left* (listener facing) | I |
-| [`gewezathamagon`](../roles.md#endings-and-resume) | *my left* (speaker facing) | I |
+| [`gewezathehon`](../roles.md#endings-and-resume) | *your left* (listener facing) | I |
+| [`gewezathamun`](../roles.md#endings-and-resume) | *my left* (speaker facing) | I |
 | [`gewezathahan`](../roles.md#endings-and-resume) | *our left* (shared facing) | I |
 | [`gabahal` / `habahal`](../roles.md#endings-and-resume) | gravity *up* | I |
 
@@ -117,7 +117,7 @@ The anchor can be `amago` *speaker*, `ehodo` *listener*, a name, or a role point
 |-----|---------|---------|-------|
 | [Compass](../roles.md#viewpoint-laterals) | `yel vowogal hewezal.` | *Walk west.* | I |
 | [Azawan's left](../roles.md#viewpoint-laterals) | `yel vowogal hewezathazawan.` | *Walk left (Azawan's left).* | I |
-| [Your left](../roles.md#viewpoint-laterals) | `yel zehodon vowogal hewezathehodon.` | *You, walk left (your left).* | I |
+| [Your left](../roles.md#viewpoint-laterals) | `yel zehon vowogal hewezathehon.` | *You, walk left (your left).* | I |
 | [Their left](../roles.md#viewpoint-laterals) | `zazawan vowogal. zalahen vehahel hewezathaxar.` | *Azawan walks. Alahen sits on their left.* | I |
 | [Up](../roles.md#gravity) | `yel vowogal habahal.` | *Walk up.* | I |
 | [Under](../roles.md#viewpoint-vs-landmark) | `zodogal vezebal hadahel bedehul.` | *The dog sleeps under the tree.* | I |

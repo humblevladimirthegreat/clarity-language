@@ -226,7 +226,7 @@ English names a person by what they usually do (*a singer*, *a manager*). Agazan
 | `zaxewal` | *audience* (those who hear) | `ewal` *ear* |
 | `zaxogehethel` | *terrorist* | `ogehel` *ogre* |
 | `zaxehebam` | *tourist* | `ehebal` *ship* |
-| `zaxahazathem` | *neighbor* (add `om bamagon` for *near me*) | `ahazal` *house* |
+| `zaxahazathem` | *neighbor* (add `om bamun` for *near me*) | `ahazal` *house* |
 | `zaxabazethel` | *officer* (police) | `abazel` *police* |
 | `zaxageduthem` | *official* / *minister* | `agedum` *institution* |
 | `zaxuhuthel` | *secretary* (keeps the ledger) | `uhul` *ledger* |
@@ -244,9 +244,9 @@ Rows without **`the`** name a part in one event (*winner*, *witness*, *passenger
 
 A noun that specifies the job goes in the stem: `zaxodogaxowogathel` is *a dog walker*. The noun's part in the job is as open as in English.
 
-English *as a teacher, I …* has no one-word form (`/h/` already means manner). Say the role, then the claim (`zamagon gaxedehothel. zamagor vezebel.`), or use the [similative](relations.md#similative) for *like a teacher* (`humum baxedehothel`).
+English *as a teacher, I …* has no one-word form (`/h/` already means manner). Say the role, then the claim (`zamun gaxedehothel. zamur vezebel.`), or use the [similative](relations.md#similative) for *like a teacher* (`humum baxedehothel`).
 
-*Shareholder* is *owner* of a part: `zaxegabem gobom bahazal` (owner of a part of the house). *Colleague* is a worker tied to you: `zaxozewethel gohoham bamagon`. *Relative* is a person who is part of the family: `zobel gobom bavahal`.
+*Shareholder* is *owner* of a part: `zaxegabem gobom bahazal` (owner of a part of the house). *Colleague* is a worker tied to you: `zaxozewethel gohoham bamun`. *Relative* is a person who is part of the family: `zobel gobom bavahal`.
 
 **Compare with:** for *boss* or *chief*, the tie form names whom they lead: `zalahen gagayem bazawan` is *Alahen is Azawan's boss* ([social relations](relations.md#social-relations)).
 

@@ -189,15 +189,15 @@ When a proper name is available, prefer that name (and its **-r** resume), inclu
 >
 > "I walk." You name yourself rather than saying *I*.
 
-Use **`amago`** (*speaker*) and **`ehodo`** (*listener*) when what matters is the conversation role, not a name. **`ehodo`** is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun, [below](#generic-pronoun).
+Use **`amu`** (*speaker*) and **`eho`** (*listener*) when what matters is the conversation role, not a name. **`eho`** is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun, [below](#generic-pronoun).
 
-> `zamagon dehodon vahahal.`
+> `zamun dehon vahahal.`
 >
 > z-speaker | d-listener | v-see
 >
 > "I see you."
 
-> `zamagon vowogal.`
+> `zamun vowogal.`
 >
 > z-speaker | v-walk
 >
@@ -222,8 +222,8 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 <!-- cheat-sheet: people-pointing -->
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`amagon`** | speaker in this conversation (`zamagon` in subject slot) | *I* | `amagol` *microphone* | 🎤: the live voice of the person talking |
-| **`ehodon`** | listener in this conversation (`zehodon` / `dehodon` in clause) | *you* | `ehodol` *headphones* | 🎧: the one receiving the sound |
+| **`amun`** | speaker in this conversation (`zamun` in subject slot) | *I* | `amul` *microphone* | 🎤: the live voice of the person talking |
+| **`ehon`** | listener in this conversation (`zehon` / `dehon` in clause) | *you* | `ehol` *headphones* | 🎧: the one receiving the sound |
 | **`ahan`** | speaker and addressees together (`zahan` in subject slot) | *we* (you and I) | `ahal` *handshake* | 🤝: sharing the floor together |
 | **`unan`** | nonspecific individual (`zunan` in subject slot) | *someone* | `unal` *neutral* | 😐: not a particular person |
 | **`oben`** | any person, as a rule (`zoben` in subject slot) | *one*, generic *you*, *people* | `obel` *person* | 🧑: a person in general |
@@ -232,7 +232,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 
 ### Generic pronoun {#generic-pronoun}
 
-English *one* and generic *you* (*one never knows*, *you feel awful when that happens*) say something about people in general, not about the person listening. Agazan gives that its own pronoun: **`obe`** *person* with **-n**, in `/z/`, `/d/`, or `/b/`. It means any person, as a rule, with exceptions allowed. It claims nothing about a particular individual (that is **`una`**) and nothing about the listener (that is **`ehodo`**), so a speaker has to choose between reporting their own experience and making a general claim. (cue: 🧑 is the emoji for a person in general)
+English *one* and generic *you* (*one never knows*, *you feel awful when that happens*) say something about people in general, not about the person listening. Agazan gives that its own pronoun: **`obe`** *person* with **-n**, in `/z/`, `/d/`, or `/b/`. It means any person, as a rule, with exceptions allowed. It claims nothing about a particular individual (that is **`una`**) and nothing about the listener (that is **`eho`**), so a speaker has to choose between reporting their own experience and making a general claim. (cue: 🧑 is the emoji for a person in general)
 
 > `zoben vezebal.`
 >
@@ -262,8 +262,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vahahal` | `ahahal` *eye* | 👁️: seeing is what an eye does |
 | *scream* | `vezugel` | | |
 | *punch* | `vabahel` | | |
-| *speaker* | `amagon` | `amagol` *microphone* | 🎤: the live voice of the person talking |
-| *listener* | `ehodon` | `ehodol` *headphones* | 🎧: the one receiving the sound |
+| *speaker* | `amun` | `amul` *microphone* | 🎤: the live voice of the person talking |
+| *listener* | `ehon` | `ehol` *headphones* | 🎧: the one receiving the sound |
 | *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
 | *someone* | `unan` | `unal` *neutral* | 😐: not a particular person |
 | *one* | `oben` | `obel` *person* | 🧑: a person in general |
@@ -297,7 +297,7 @@ z-Alahen | v-cook . z-Azawan | d-cookie | v-see . z-Ahaben | v-←cook
 **4.** *I see you.*
 
 ::: details Show answer
-`zamagon dehodon vahahal.`
+`zamun dehon vahahal.`
 
 z-speaker | d-listener | v-see
 :::
@@ -313,7 +313,7 @@ z-interlocutors | v-cook
 **6.** *You scream.*
 
 ::: details Show answer
-`zehodon vezugel.`
+`zehon vezugel.`
 
 z-listener | v-scream
 :::
@@ -321,7 +321,7 @@ z-listener | v-scream
 **7.** *Azawan punches me.*
 
 ::: details Show answer
-`zazawan damagon vabahel.`
+`zazawan damun vabahel.`
 
 z-Azawan | d-speaker | v-punch
 :::
@@ -404,7 +404,7 @@ z-Ahaben | v-cook . z-Alahen | d-cookie | v-see . z-Azawan | v-←cook
 *Ahaben cooks. Alahen sees a cookie. Azawan does so.*
 :::
 
-**5.** `zazawan dehodon vahahal.`
+**5.** `zazawan dehon vahahal.`
 
 ::: details Show answer
 
@@ -431,7 +431,7 @@ z-someone | v-scream
 *Someone screams.*
 :::
 
-**8.** `yol zamagon vugugal.`
+**8.** `yol zamun vugugal.`
 
 ::: details Show answer
 
@@ -576,9 +576,9 @@ With **-l**, **`hedal`** is strictly pairwise: every one of them does it to ever
 
 ### Addressing several people
 
-English *you* does not say whether you are talking to one person or several. Agazan does: one addressee is **`ehodo`**, and the listener root plus associative **-x** (**`ehodonx`**) names everyone this turn addresses. That is everyone the turn’s calls named, plus anyone you were already addressing. Inclusive *shall we* is still **`aha`**, and soft **`zaham`** hedges whether you really share the act.
+English *you* does not say whether you are talking to one person or several. Agazan does: one addressee is **`eho`**, and the listener root plus associative **-x** (**`ehonx`**) names everyone this turn addresses. That is everyone the turn’s calls named, plus anyone you were already addressing. Inclusive *shall we* is still **`aha`**, and soft **`zaham`** hedges whether you really share the act.
 
-> `zehodonx vehahel.`
+> `zehonx vehahel.`
 >
 > z-listener-x | v-sit
 >
@@ -798,7 +798,7 @@ A quote is someone else's talk, so it keeps its own topic and its own tags, and 
 
 ### Me or you as the topic {#topic-participants}
 
-`/x/` takes the speaker, listener, interlocutors, or people in general like any noun: `xamagon` *now, about me*, `xehodon` *now, about you*, `xahan` *now, about the two of us*, `xoben` *now, about people in general*. A nonspecific `unan` cannot be a topic, because a topic is someone in particular. The topic is fixed to that person (or the address set) at the moment it is set, so after `xehodon`, both speakers say `zozan` for the same person. Prefer a name where one is available ([proper name](word-endings.md#proper-name--n)); this makes turning the talk to yourself a visible choice.
+`/x/` takes the speaker, listener, interlocutors, or people in general like any noun: `xamun` *now, about me*, `xehon` *now, about you*, `xahan` *now, about the two of us*, `xoben` *now, about people in general*. A nonspecific `unan` cannot be a topic, because a topic is someone in particular. The topic is fixed to that person (or the address set) at the moment it is set, so after `xehon`, both speakers say `zozan` for the same person. Prefer a name where one is available ([proper name](word-endings.md#proper-name--n)); this makes turning the talk to yourself a visible choice.
 
 ### Asking about the topic {#topic-question}
 
@@ -839,7 +839,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *punch* | `vabahel` | | |
 | *fight* | `vavadal` | | |
 | *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
-| *listener* | `ehodon` | `ehodol` *headphones* | 🎧: the one receiving the sound |
+| *listener* | `ehon` | `ehol` *headphones* | 🎧: the one receiving the sound |
 | *topic* | `ozan` | `ozal` *star* | ⭐: the star of the talk |
 | *by the way* | `xavazem` | `avazel` *fries* | 🍟: a side dish, not the main course |
 
@@ -989,7 +989,7 @@ z-interlocutors | v-scream
 *We (you and I) scream.*
 :::
 
-**7.** `zehodonx vezugel.`
+**7.** `zehonx vezugel.`
 
 ::: details Show answer
 

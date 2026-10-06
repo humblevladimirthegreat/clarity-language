@@ -95,9 +95,9 @@ describe("sentence-parser synthetic", () => {
 
   it("lets a kin number on an /h/ host's landmark host its own /b/, but keeps a count as the amount", () => {
     const last = (text: string) => parseSentenceTokens(tokens(text)).utterances[0]!.bodies[0]!.clause.units.at(-1)!;
-    const kin = last("zazawan vowogal han bobel grebuwol behodon.");
+    const kin = last("zazawan vowogal han bobel grebuwol behon.");
     assert.equal(kin.kind === "h" ? kin.unit.hosted?.amount : "not h", undefined);
-    assert.equal(kin.kind === "h" ? kin.unit.hosted?.adjs?.[0]?.hosted?.bound.raw : undefined, "behodon");
+    assert.equal(kin.kind === "h" ? kin.unit.hosted?.adjs?.[0]?.hosted?.bound.raw : undefined, "behon");
     const offset = last("zazawan vowogal henum bazazam grawol.");
     assert.equal(offset.kind === "h" ? offset.unit.hosted?.amount?.raw : undefined, "grawol");
   });
@@ -129,7 +129,7 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("reads a signed measure on a time pole with no channel", () => {
-    const units = parseSentenceTokens(tokens("yel zehodon vaheham homam bazazam grawol.")).utterances[0]!.bodies[0]!.clause.units;
+    const units = parseSentenceTokens(tokens("yel zehon vaheham homam bazazam grawol.")).utterances[0]!.bodies[0]!.clause.units;
     const pole = units.at(-1)!;
     assert.equal(pole.kind === "h" ? pole.unit.word.raw : undefined, "homam");
     assert.equal(pole.kind === "h" ? pole.unit.hosted?.amount?.raw : undefined, "grawol");

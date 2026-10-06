@@ -386,13 +386,13 @@ A linker and a topic word do not share a sentence. To change the topic and also 
 
 In a new turn with its own act word, the act word comes first and the linker starts the body:
 
-> `yom xevavem zehodon vowogal.`
+> `yom xevavem zehon vowogal.`
 >
 > y-soft-question | x-next | z-listener | v-walk
 >
 > "So, do you want to walk?"
 
-> `yol xavazem zehodon vewal.`
+> `yol xavazem zehon vewal.`
 >
 > y-question | x-by-the-way | z-listener | v-hear
 >

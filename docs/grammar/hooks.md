@@ -456,7 +456,7 @@ Beginner already used the one-vowel extra-noun hooks (*in* / *at* / *from* / *fo
 
 A hook + `/b/` right after a landmark (the `/b/` of another extra, or of a word such as a [locative relation](relations.md#locative-relations)) describes that landmark, not the clause: *the village near me*.
 
-> `zazawan vowogal al bahedem om bamagon.`
+> `zazawan vowogal al bahedem om bamun.`
 >
 > z-Azawan | v-walk | [in | [b-locality | [near | b-speaker]]]
 >
@@ -538,9 +538,9 @@ English *Azawan's dog* often means the dog is in Azawan's **use**: Azawan keeps 
 >
 > "Azawan sees Alahen's house." (the house Alahen lives in)
 
-For *my* and *your*, put the [speaker or listener](pronouns.md#special-pronouns) in `/b/`: `em bamagon` is *my*, `em behodon` is *your*.
+For *my* and *your*, put the [speaker or listener](pronouns.md#special-pronouns) in `/b/`: `em bamun` is *my*, `em behon` is *your*.
 
-> `zodogal em bamagon vezebal.`
+> `zodogal em bamun vezebal.`
 >
 > [z-dog | [used-by | b-speaker]] | v-sleep
 >
@@ -548,7 +548,7 @@ For *my* and *your*, put the [speaker or listener](pronouns.md#special-pronouns)
 
 To describe the thing, put its `/ɡ/` word **between** the noun and **`em`**. The adjective stays on the noun, and `em` still attaches to the noun. A `/ɡ/` word **after** the `/b/` describes B instead ([complex chaining](clause.md#complex-chaining)).
 
-> `zodogal gelavam em bamagon vezebal.`
+> `zodogal gelavam em bamun vezebal.`
 >
 > [z-dog | g-big | [used-by | b-speaker]] | v-sleep
 >
@@ -556,13 +556,13 @@ To describe the thing, put its `/ɡ/` word **between** the noun and **`em`**. Th
 
 With no verb, the same order is a sentence. A noun marked with `em` is one the listener can pick out, so the `/ɡ/` word is a [property](predication.md#classification-property), not *there is …*.
 
-> `zodogal gelavam em bamagon.`
+> `zodogal gelavam em bamun.`
 >
 > [z-dog | g-big | [used-by | b-speaker]]
 >
 > "My dog is big."
 
-**Compare with:** `zodogal gelavam.` is *There is a big dog* ([existence](predication.md#existence)): a new noun with no `em` introduces the thing. `zodogal em bamagon gelavam` puts *big* on the speaker, not the dog. `zodogal em bamagon.` alone says your dog is here (*there's my dog*).
+**Compare with:** `zodogal gelavam.` is *There is a big dog* ([existence](predication.md#existence)): a new noun with no `em` introduces the thing. `zodogal em bamun gelavam` puts *big* on the speaker, not the dog. `zodogal em bamun.` alone says your dog is here (*there's my dog*).
 
 Things B uses include places B lives or sits, tools and rides B uses, ideas B works with, and B's turn, time, or occasion: *Azawan's birthday* is the day that is Azawan's to have.
 
@@ -641,20 +641,20 @@ Names come first. When you know who is talking or listening, use their name as t
 <!-- cheat-sheet: joins-hooks -->
 | Agazan | Landmark | English |
 |--------|----------|---------|
-| `om bamagon` | near the speaker | *here*, *this* |
-| `om behodon` | near the listener | *there (by you)*, *that* |
+| `om bamun` | near the speaker | *here*, *this* |
+| `om behon` | near the listener | *there (by you)*, *that* |
 | `om bahan` | near both of you | *here (with us)* |
 | `um bahan` | away from both of you | *over there*, *yonder* |
 
-Use `ol` in place of `om` for the exact spot (`ol bamagon` *right where I am*).
+Use `ol` in place of `om` for the exact spot (`ol bamun` *right where I am*).
 
-> `zodogal om bamagon vehahel.`
+> `zodogal om bamun vehahel.`
 >
 > z-dog | [near | b-speaker] | v-sit
 >
 > "This dog sits here by me."
 
-> `zazawan dubugal om behodon vahahal.`
+> `zazawan dubugal om behon vahahal.`
 >
 > z-Azawan | d-book | [near | b-listener] | v-see
 >
@@ -668,19 +668,19 @@ Use `ol` in place of `om` for the exact spot (`ol bamagon` *right where I am*).
 
 English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agazan names the landmark with the plain motion verb **`vuvudel`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vuvudel` says nothing about how someone travels; use `vowogal` (*walk*) or `varahal` (*run*) only when the manner matters.
 
-> `zazawan vuvudel oel bamagon.`
+> `zazawan vuvudel oel bamun.`
 >
 > z-Azawan | v-go | [toward | b-speaker]
 >
 > "Azawan comes over to me."
 
-> `zalahen vuvudel oel behodon.`
+> `zalahen vuvudel oel behon.`
 >
 > z-Alahen | v-go | [toward | b-listener]
 >
 > "Alahen is coming to you."
 
-> `zazawan vuvudel ul bamagon.`
+> `zazawan vuvudel ul bamun.`
 >
 > z-Azawan | v-go | [from | b-speaker]
 >
@@ -688,19 +688,19 @@ English *come* and *go* also point from a person, but they hide which one: *I'm 
 
 With an object, `vuvudel` moves something else: `zazawan vuvudel dehahel.` *Azawan moves the chair.* When the mover goes along with the thing, use **`valagel`** (*carry*). The same hooks then give English *bring* and *take*:
 
-> `zazawan valagel dabegol oel bamagon.`
+> `zazawan valagel dabegol oel bamun.`
 >
 > z-Azawan | v-carry | d-package | [toward | b-speaker]
 >
 > "Azawan brings me the package."
 
-> `zazawan valagel dabegol ul bamagon.`
+> `zazawan valagel dabegol ul bamun.`
 >
 > z-Azawan | v-carry | d-package | [from | b-speaker]
 >
 > "Azawan takes the package away."
 
-In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#stand-in)), `om bamagon` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
+In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#stand-in)), `om bamun` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
 
 **Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zodogar`), not a place. *Where?* is `ol bar` ([Where?](questions.md#where)). *There* for a place already named is a [resume hook](#hook-resume).
 

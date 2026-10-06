@@ -456,13 +456,13 @@ A command (**`yel`**) or request (**`yem`**) is not a claim, so *true* and *fals
 
 After a flat command, `yael` / `yuel` are the plain comply / refuse. After a request (**`yem`**), the **o** words fit better, because you are choosing whether to take it on.
 
-> `yel zehodon vowogal. yael.`
+> `yel zehon vowogal. yael.`
 >
 > y-command | z-listener | v-walk . y-yes
 >
 > "Walk." "Will do."
 
-> `yem zehodon vowogal. yuor.`
+> `yem zehon vowogal. yuor.`
 >
 > y-request | z-listener | v-walk . y-refuse-option-for-now
 >
@@ -506,7 +506,7 @@ After a request or a suggestion, **`yol yaol.`** asks *okay?*: will they take it
 >
 > "Let's walk, okay?"
 
-> `yem zehodon vowogal. yol yuol.`
+> `yem zehon vowogal. yol yuol.`
 >
 > y-request | z-listener | v-walk . y-question | y-refuse-option
 >
@@ -683,13 +683,13 @@ To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in
 
 English puts *who* in different places in *Do you know who walks?* and *Who do you think walks?*. In the first, the inner clause asks; in the second, the main question asks. In Agazan the blank stays in the inner clause both times, and the stand-in's vowel says which question it belongs to. **`dorl`** (*whether*) is itself question-like, so its blank belongs to it, and the outer **`yol`** is yes/no. **`darl`** (*that*) is statement-like and cannot ask, so its blank belongs to the outer **`yol`**.
 
-> `yol zehodon vubugam dorl zar vowogal.`
+> `yol zehon vubugam dorl zar vowogal.`
 >
 > y-question | z-listener | v-knowledge | d-whether-clause | z-wh | v-walk
 >
 > "Do you know who walks?"
 
-> `yol zehodon vevegal darl zar vowogal.`
+> `yol zehon vevegal darl zar vowogal.`
 >
 > y-question | z-listener | v-think | d-that-clause | z-wh | v-walk
 >
@@ -766,7 +766,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *attest* | `vodol` | |
 | *lie* | `valahal` | |
 | *sleep* | `ezebal` | |
-| *listener* | `ehodon` | `ehodol` *headphones* |
+| *listener* | `ehon` | `ehol` *headphones* |
 | *dog* | `odogal` | |
 | *walk* | `vowogal` | |
 | *knowledge* | `vubugam` | `ubugal` *book* |
@@ -858,7 +858,7 @@ y-question | [z-dog | [used-by | b-wh]] | v-walk
 **11.** *Do you know who walks?*
 
 ::: details Show answer
-`yol zehodon vubugam dorl zar vowogal.`
+`yol zehon vubugam dorl zar vowogal.`
 
 y-question | z-listener | v-knowledge | d-whether-clause | z-wh | v-walk
 :::
@@ -866,7 +866,7 @@ y-question | z-listener | v-knowledge | d-whether-clause | z-wh | v-walk
 **12.** *Who do you think walks?*
 
 ::: details Show answer
-`yol zehodon vevegal darl zar vowogal.`
+`yol zehon vevegal darl zar vowogal.`
 
 y-question | z-listener | v-think | d-that-clause | z-wh | v-walk
 :::

@@ -8,7 +8,7 @@ A gloss should answer: *what is each Agazan piece doing in the clause — in Eng
 
 | Goal | Gloss does | Gloss does not |
 |------|------------|----------------|
-| Slot + sense | Show PoS letter and the **active English sense** | Quote Agazan phonology (`amago`, `agawa`, …), except [opaque interiors](#span-interiors) |
+| Slot + sense | Show PoS letter and the **active English sense** | Quote Agazan phonology (`amu`, `agawa`, …), except [opaque interiors](#span-interiors) |
 | Separate senses | Treat concrete / abstract / proper / overlay as **different English roots** | Chain etymology (`microphone→speaker`) |
 | Endings | Drop **-l** / **-m** / **-n** when they only pick which sense-root applies | Repeat those endings after a sense that already encodes them |
 | Structure | Keep mid-word `x` pieces, **-x**, and binding visible | Invent full English syntax for Agazan structure; copy writing glyphs (`@` / `~`) into the gloss |
@@ -132,20 +132,20 @@ Published strings share one phonological root, but **concrete**, **abstract**, a
 
 | Agazan | Morph gloss | Not |
 |---------|-------------|-----|
-| `zamagol` | `z-microphone` | `z-ugobo(microphone)-l`, `z-microphone-l` |
-| `zamagom` | `z-speaker` | `z-ugobo(microphone→speaker)-m` |
-| `zamagon` | `z-speaker` | `z-ugobo(speaker)-n`, `z-speaker-n` |
+| `zamul` | `z-microphone` | `z-ugobo(microphone)-l`, `z-microphone-l` |
+| `zamum` | `z-speaker` | `z-ugobo(microphone→speaker)-m` |
+| `zamun` | `z-speaker` | `z-ugobo(speaker)-n`, `z-speaker-n` |
 | `gagawal` | `g-quiet` | `g-uzumu(quiet)-l` |
 | `gagawam` | `g-volume` | `g-uzumu(quiet→volume)-m`, `g-volume-m` |
 | `hevol` | `h-fishing` | `h-uvuvu(fishing)-l` |
 | `thevom` | `th-MEMORY` | `h-uvuvu(fishing→MEMORY)-m` |
 | `gahazam` | `g-home` | `g-ohohu(house→home)-m` |
 
-Same English label for `zamagom` and `zamagon` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agazan line and from [word-endings.md](../grammar/word-endings.md). The gloss’s job is the **sense**, not a second orthography.
+Same English label for `zamum` and `zamun` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agazan line and from [word-endings.md](../grammar/word-endings.md). The gloss’s job is the **sense**, not a second orthography.
 
 **Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Agazan letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
 
-**Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zamagon` / `zehodon` / `zahan` / `zunan` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. The topic pronoun and the generic pronoun gloss in capitals on `/z/` `/d/` `/b/` and as a holder (`zozan` → `z-TOPIC`, `zoben` → `z-ONE`, `thunemozan` → `th-CLUES-TOPIC`); on any other slot they are ordinary names. A topic word glosses as its noun (`xazawan` → `x-Azawan`, `xazawar` → `x-←Azawan`), and `hahehom` as `h-as-for`. **Stand-ins** (`darl` / `dorl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
+**Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zamun` / `zehon` / `zahan` / `zunan` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. The topic pronoun and the generic pronoun gloss in capitals on `/z/` `/d/` `/b/` and as a holder (`zozan` → `z-TOPIC`, `zoben` → `z-ONE`, `thunemozan` → `th-CLUES-TOPIC`); on any other slot they are ordinary names. A topic word glosses as its noun (`xazawan` → `x-Azawan`, `xazawar` → `x-←Azawan`), and `hahehom` as `h-as-for`. **Stand-ins** (`darl` / `dorl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
 
 ### Ordinary lexicon plus packed role English
 <a id="no-lexicon-pos-specials"></a>
@@ -404,13 +404,13 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `yalahexen` | `y-Alahen-minutes` | *Alahen — a few minutes.* |
 | `yael` | `y-yes` | *Yes.* |
 | `yol` | `y-question` | *(yes/no or fill-ask)* |
-| `zamagol` | `z-microphone` | *a microphone* |
-| `zamagon` | `z-speaker` | *I* / *the speaker* |
-| `zehodon` | `z-listener` | *you* / *the listener* |
+| `zamul` | `z-microphone` | *a microphone* |
+| `zamun` | `z-speaker` | *I* / *the speaker* |
+| `zehon` | `z-listener` | *you* / *the listener* |
 | `zazawan` | `z-Azawan` | *Azawan* |
 | `zahan` | `z-interlocutors` | *we* (speaker ∪ address set) |
-| `zamagonx` | `z-speaker-x` | *I and associates* |
-| `zehodonx` | `z-listener-x` | *you-all* (address set) |
+| `zamunx` | `z-speaker-x` | *I and associates* |
+| `zehonx` | `z-listener-x` | *you-all* (address set) |
 | `gezebul` | `g-sleepy` | *sleepy* |
 | `thevom` | `th-MEMORY` | *per memory* |
 | `thodom` | `th-LIVE` | *from the scene* |
@@ -420,7 +420,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Dialogue turn (morph + loose free)
 
-> `yael zamagon zam zehodon zal gezebul.`
+> `yael zamun zam zehon zal gezebul.`
 >
 > y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-sleepy]
 >
@@ -440,7 +440,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Ability + value motive
 
-> `yuel zamagon vowogaxel thulothom.`
+> `yuel zamun vowogaxel thulothom.`
 >
 > y-no | z-speaker | v-walk-unable-temporary | th-competence-motive-any-term
 >
@@ -448,7 +448,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Numbered alternative + unmet pleasure
 
-> `xrebul zehegom grewol zamagonx thozothur.`
+> `xrebul zehegom grewol zamunx thozothur.`
 >
 > x-starting-with | [z-problem | g-1st] | z-speaker-x | th-pleasure-unmet-passing
 >

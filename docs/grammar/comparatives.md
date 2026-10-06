@@ -449,7 +449,7 @@ A bar fence ranks **one** item against **one** bar: with a bar, there is no seco
 
 A [hook](hooks.md) and its `/b/` on the ranked item go right before the bar, the way they go right before a join word:
 
-> `zubugal om bamagon thamam zel garagam.`
+> `zubugal om bamun thamam zel garagam.`
 >
 > [[z-book | [near | b-speaker]] | th-plan-itinerary | z-rank/more | g-heavy]
 >

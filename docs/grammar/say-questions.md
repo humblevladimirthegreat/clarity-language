@@ -10,7 +10,7 @@ Recipes for English question shapes beyond plain *yes/no* and *who / what*. Ever
 
 An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yol`**. Put the doubting [tone mark](speech-moves.md#tone-marks) **`?!`** on the blank or on the word you doubt.
 
-> `yol zehodon vahahal ?!dar.`
+> `yol zehon vahahal ?!dar.`
 >
 > y-question | z-listener | v-see | ?!d-wh
 >
@@ -84,7 +84,7 @@ English *well…* warns that the answer is not the plain *yes* the question hope
 
 English *it sounds like you're anxious* and *I hear that you're upset* give the speaker's feeling back to them. You cannot state someone else's feeling outright, so name the listener as the holder on CLUES (**`thunem`**): you worked it out from what they said.
 
-> `thulothuruor thunemehodon.`
+> `thulothuruor thunemehon.`
 >
 > th-competence-unmet-passing-UNPLACED-SURGING | th-CLUES-listener
 >
@@ -92,13 +92,13 @@ English *it sounds like you're anxious* and *I hear that you're upset* give the 
 
 To say the feeling **makes sense**, put your own stance in the main sentence and theirs in a dependent, with what the feeling is about:
 
-> `wadotham gobum zarl zezebel wanathumam gobum thunemehodon.`
+> `wadotham gobum zarl zezebel wanathumam gobum thunemehon.`
 >
 > [w-understanding-met-any-term | g-stimulus] | z-that-clause | [z-speech | [w-relatedness-unmet-modifiable-INTERNAL-FLOWING | g-stimulus]] | th-CLUES-listener
 >
 > "It makes sense to me that the talk weighs on you."
 
-**Compare with:** REPORTED (**`thewamehodon`**) says they told you so in as many words. *I hear that* in a reflection is your reading of them, not hearsay.
+**Compare with:** REPORTED (**`thewamehon`**) says they told you so in as many words. *I hear that* in a reflection is your reading of them, not hearsay.
 
 ### *Admittedly*, *granted* before a *but* {#admittedly}
 
@@ -256,16 +256,16 @@ English *ask* is four jobs. You can put a question to someone, ask them for some
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *ask* (a question) | `yol zazawan vowogal.` | question |
-| *ask* (for something, *could you*) | `yem zehodon vowogal.` | request |
+| *ask* (for something, *could you*) | `yem zehon vowogal.` | request |
 | *ask* (report) | `zazawan vezebel dorl zar vowogal.` | telling + whether-clause |
 | *ask* / *tell someone to* | `zazawan balahen vezebel derl vehahel.` | telling + to-clause |
 | *ask* / *tell someone not to* | `zazawan balahen vezebel durl varahal.` | telling + lest-clause |
-| *please ask her to* | `yem zehodon balahen vezebel derl vehahel.` | request: tell Alahen to sit |
+| *please ask her to* | `yem zehon balahen vezebel derl vehahel.` | request: tell Alahen to sit |
 | *ask* (one question, as a bid for time) | `alahexon.` | one slot |
 | *interview* | `yalahen.` then a run of `yol` questions | call, then ask |
 | *conversation* / *chat* / *dialog* | `zezebem` | *discourse* |
 
-> `yem zehodon balahen vezebel derl vehahel.`
+> `yem zehon balahen vezebel derl vehahel.`
 >
 > y-request | z-listener | b-Alahen | v-tell | d-to-clause | v-sit
 >
@@ -296,7 +296,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 >
 > "Let's walk." (a suggestion)
 
-> `zehodon vowogal thanathem.`
+> `zehon vowogal thanathem.`
 >
 > z-listener | v-walk | th-relatedness-ought-offered
 >

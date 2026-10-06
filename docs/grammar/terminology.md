@@ -599,7 +599,7 @@ Single-item **-m** under question (*How about X?*).
 
 [Pronouns](pronouns.md#generic-pronoun)
 
-**Compare with:** `ehodon` is always the person actually listening; `unan` is one unidentified individual.
+**Compare with:** `ehon` is always the person actually listening; `unan` is one unidentified individual.
 
 ### One of a name
 
@@ -776,7 +776,7 @@ Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-
 
 ### Special pronoun
 
-**`amago` / `ehodo` / `aha` / `una`**.
+**`amu` / `eho` / `aha` / `una`**.
 
 [Pronouns](pronouns.md#special-pronouns)
 

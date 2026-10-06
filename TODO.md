@@ -26,9 +26,6 @@ save for near end of limit resets:
 -mass lexical compound adding
 -vocab bank and exercise revamp: introduce new vocabulary, follow standards for language teaching
 
-save for end:
--join vowel decision tree in advanced vowel series.
-
 Dictionary entries (open lexicon / concepts, not the closed list above):
 -habits: triggered
 -unconditional self acceptance

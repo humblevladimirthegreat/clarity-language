@@ -116,7 +116,7 @@ The second label is a `/b/` whatever it is: a common noun or a pronoun works as 
 >
 > "The guard is the police officer."
 
-> `zalahen gugol bamagon.`
+> `zalahen gugol bamun.`
 >
 > z-Alahen | [g-SAME | b-speaker]
 >
@@ -352,7 +352,7 @@ A command can ask for a state as well as an act. Put the [command word](speech-m
 >
 > "Be careful!"
 
-Name the listener to address one person (`yel zehodon geyayem`), or use the verb root for the doing (`yel veyayem`, *take care*). **`yul`** turns the same pair into *don’t be ADJ*.
+Name the listener to address one person (`yel zehon geyayem`), or use the verb root for the doing (`yel veyayem`, *take care*). **`yul`** turns the same pair into *don’t be ADJ*.
 
 ### **SAME** endings
 
@@ -393,7 +393,7 @@ A label with no scope vowel says nothing about how far it reaches. Use one when 
 | **`tho`** | this pair: true in one relationship | *a stranger to Azawan*, *lying, as far as Alahen is concerned* | **o** ≈ one (that extra one) |
 | **`thu`** | a type across scenes: the quality follows them | *an anxious type*, *a teacher type* | **u** ≈ undo (not only here) |
 
-Mid-word **`th`** with a scope vowel goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root or a [role compound](#scope-role). It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zamagothal` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead.
+Mid-word **`th`** with a scope vowel goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root or a [role compound](#scope-role). It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zamuthal` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead.
 
 To say **when** that claim counts (*only at school*, *always except when raining*), put a [restrictor](restrictors.md) on `/w/` immediately before a scoped `/ɡ/` word, with the circumstance words on `/w/` too. The scope vowel says what kind of claim the label is; the restrictor says on which occasions it holds. A restrictor on **`/h/`** limits the whole sentence instead (*walks only when raining*), not the label.
 

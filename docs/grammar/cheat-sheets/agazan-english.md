@@ -27,14 +27,14 @@ Every join and hook, with its English: [Joins and hooks cheat sheet](joins-hooks
 
 ## Pronouns and sentence linkers {#closed-words}
 
-The pronouns are shown without a role letter: add the one for their slot (`zamagon` *I* as subject). The sentence linkers are shown whole.
+The pronouns are shown without a role letter: add the one for their slot (`zamun` *I* as subject). The sentence linkers are shown whole.
 
 <!-- generated: closed-words -->
 | Agazan | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `ahan` | *we* (you and I) | [Special pronouns](../pronouns.md#special-pronouns) | B |
-| `amagon` | *I* (the speaker) | [Special pronouns](../pronouns.md#special-pronouns) | B |
-| `ehodon` | *you* (the listener) | [Special pronouns](../pronouns.md#special-pronouns) | B |
+| `amun` | *I* (the speaker) | [Special pronouns](../pronouns.md#special-pronouns) | B |
+| `ehon` | *you* (the listener) | [Special pronouns](../pronouns.md#special-pronouns) | B |
 | `oben` | *one*, generic *you*, *people* | [Generic pronoun](../pronouns.md#generic-pronoun) | B |
 | `ozan` | *the topic* | [The topic pronoun](../pronouns.md#topic-pronoun) | I |
 | `unan` | *someone* | [Special pronouns](../pronouns.md#special-pronouns) | B |

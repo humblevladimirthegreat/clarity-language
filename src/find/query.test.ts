@@ -39,7 +39,7 @@ describe("parseTerm", () => {
 });
 
 describe("regex conditions", () => {
-  const { words } = sentence("zazawan vowogal al bahedem om bamagon.");
+  const { words } = sentence("zazawan vowogal al bahedem om bamun.");
   const raws = (term: string) => words.filter((w) => matchesTerm(w, parseTerm(term))).map((w) => w.word.raw);
 
   it("match the whole value", () => {
@@ -62,14 +62,14 @@ describe("regex conditions", () => {
 
 describe("example words", () => {
   it("lists words in surface order with their unit", () => {
-    const { words } = sentence("zazawan vuvudel oel bamagon.");
+    const { words } = sentence("zazawan vuvudel oel bamun.");
     assert.deepEqual(
       words.map((w) => [w.word.raw, w.unit]),
       [
         ["zazawan", "np"],
         ["vuvudel", "vp"],
         ["oel", "hook"],
-        ["bamagon", "np"],
+        ["bamun", "np"],
       ],
     );
   });
@@ -110,7 +110,7 @@ describe("learner name slot", () => {
   it("parses SELF examples with the default learner root", () => {
     assert.deepEqual(
       collectExamples("`yom zSELFn vehahel thegom.`", tables).map((e) => e.text),
-      ["yom zamagon vehahel thegom."],
+      ["yom zamun vehahel thegom."],
     );
   });
 });

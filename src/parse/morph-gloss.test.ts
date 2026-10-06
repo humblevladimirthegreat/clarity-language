@@ -91,9 +91,9 @@ describe("morphGlossLine — SHARED only where it can describe the join", () => 
 
 describe("morphGlossLine — glosses.md single words", () => {
   it("senses-are-separate-roots table", () => {
-    expectLine("zamagol", "z-microphone");
-    expectLine("zamagom", "z-performance");
-    expectLine("zamagon", "z-speaker");
+    expectLine("zamul", "z-microphone");
+    expectLine("zamum", "z-performance");
+    expectLine("zamun", "z-speaker");
     expectLine("gagawal", "g-quiet");
     expectLine("gagawam", "g-volume");
     expectLine("hevol", "h-fishing");
@@ -189,10 +189,10 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("yalahexen", "y-Alahen-minutes");
     expectLine("yael", "y-yes");
     expectLine("yol", "y-question");
-    expectLine("zehodon", "z-listener");
+    expectLine("zehon", "z-listener");
     expectLine("zahan", "z-interlocutors");
-    expectLine("zamagonx", "z-speaker-x");
-    expectLine("zehodonx", "z-listener-x");
+    expectLine("zamunx", "z-speaker-x");
+    expectLine("zehonx", "z-listener-x");
     expectLine("thodom", "th-LIVE");
     expectLine("thamom", "th-RESIDUE");
     expectLine("thenom", "th-FORMER");
@@ -242,21 +242,21 @@ describe("morphGlossLine — glosses.md single words", () => {
 describe("morphGlossLine — glosses.md dialogue turns", () => {
   it("inclusive census turn", () => {
     expectLine(
-      "yael zamagon zam zehodon zal gezebul.",
+      "yael zamun zam zehon zal gezebul.",
       "y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-sleepy]",
     );
   });
 
   it("ability + value motive", () => {
     expectLine(
-      "yuel zamagon vowogaxel thulothom.",
+      "yuel zamun vowogaxel thulothom.",
       "y-no | z-speaker | v-walk-unable-temporary | th-competence-motive-any-term",
     );
   });
 
   it("numbered alternative + unmet pleasure", () => {
     expectLine(
-      "xrebul zehegom grewol zamagonx thozothur.",
+      "xrebul zehegom grewol zamunx thozothur.",
       "x-starting-with | [z-problem | g-1st] | z-speaker-x | th-pleasure-unmet-passing",
     );
   });
@@ -314,7 +314,7 @@ describe("morphGlossLine — restrictor -r vs -l", () => {
 describe("morphGlossLine — tags, xuen, humul, pointer anchors", () => {
   it("any polar word makes a tag after yol (questions.md#tags)", () => {
     expectLine("yem zahan vowogal. yol yaol.", "y-request | z-interlocutors | v-walk . y-question | y-sure");
-    expectLine("yem zehodon vowogal. yol yuol.", "y-request | z-listener | v-walk . y-question | y-refuse-option");
+    expectLine("yem zehon vowogal. yol yuol.", "y-request | z-listener | v-walk . y-question | y-refuse-option");
     expectLine("zazawan vowogal. yol yuel.", "z-Azawan | v-walk . y-question | y-no");
   });
   it("xuen tells a sequence last first (join-across-roles.md#sequence)", () => {
@@ -339,7 +339,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("fails a sense mismatch with expected/actual", () => {
-    const result = compareMorphGloss("zamagon", "z-microphone", tables);
+    const result = compareMorphGloss("zamun", "z-microphone", tables);
     assert.equal(result.ok, false);
     assert.equal(result.expected, "z-microphone");
     assert.equal(result.actual, "z-speaker");
@@ -433,7 +433,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("round-trips the yael census example block", () => {
-    const md = `> \`yael zamagon zam zehodon zal gezebul.\`
+    const md = `> \`yael zamun zam zehon zal gezebul.\`
 >
 > y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-sleepy]
 >
@@ -485,8 +485,8 @@ describe("compareMorphGloss", () => {
   });
 
   it("a hook + /b/ after a landmark describes that landmark; after a recipient it is same-role", () => {
-    expectLine("zehodon al bahedem om bamagon vohal", "z-listener | [in | [b-locality | [near | b-speaker]]] | v-hatch");
-    expectLine("zazawan vadazel hugem bavahel om bamagon", "z-Azawan | v-dance | [h-around | [b-fire | [near | b-speaker]]]");
+    expectLine("zehon al bahedem om bamun vohal", "z-listener | [in | [b-locality | [near | b-speaker]]] | v-hatch");
+    expectLine("zazawan vadazel hugem bavahel om bamun", "z-Azawan | v-dance | [h-around | [b-fire | [near | b-speaker]]]");
     expectLine("zazawan balahen al bahaben vezebel", "z-Azawan | b-Alahen | including | b-Ahaben | v-tell");
   });
 
@@ -497,10 +497,10 @@ describe("compareMorphGloss", () => {
   });
 
   it("em + /b/ goes inside the bracket of the noun on its left", () => {
-    expectLine("zodogal gelavam em bamagon", "[z-dog | g-big | [used-by | b-speaker]]");
-    expectLine("zodogal em bamagon gelavam", "[z-dog | [used-by | [b-speaker | g-big]]]");
-    expectLine("zodogal gelavam al bahedem em bamagon", "[z-dog | g-big] | [in | [b-locality | [used-by | b-speaker]]]");
-    expectLine("zazawan balahen em bamagon vezebel", "z-Azawan | b-Alahen | rather.open | b-speaker | v-tell");
+    expectLine("zodogal gelavam em bamun", "[z-dog | g-big | [used-by | b-speaker]]");
+    expectLine("zodogal em bamun gelavam", "[z-dog | [used-by | [b-speaker | g-big]]]");
+    expectLine("zodogal gelavam al bahedem em bamun", "[z-dog | g-big] | [in | [b-locality | [used-by | b-speaker]]]");
+    expectLine("zazawan balahen em bamun vezebel", "z-Azawan | b-Alahen | rather.open | b-speaker | v-tell");
   });
 
   it("label scope glosses its seam vowel", () => {

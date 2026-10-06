@@ -861,7 +861,7 @@ English *one*, generic *you*, and *people* make a claim about people as a rule. 
 
 | Form | Picks | English |
 |------|-------|---------|
-| `ehodon` | the person actually listening | *you* |
+| `ehon` | the person actually listening | *you* |
 | `unan` | one unidentified individual who exists | *someone* |
 | `oben` | nobody in particular; true of people as a rule, with exceptions | *one*, generic *you* |
 | `zuam gobel` | people in general, as far as I know | *people in general* |

@@ -366,7 +366,7 @@ To say an event goes against a decision (*though they had decided not to*), put 
 >
 > "Azawan walks, though they had decided not to."
 
-> `zazawan vowogal uem thehul bamagon.`
+> `zazawan vowogal uem thehul bamun.`
 >
 > z-Azawan | v-walk | [contrary-to | [th-DECISION-irreversible | b-speaker]]
 >

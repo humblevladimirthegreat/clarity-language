@@ -78,7 +78,7 @@ describe("construction registry", () => {
   });
 
   it("reads a used-by noun, a join of names, or every + kind with /ɡ/ as a property, not existence", () => {
-    for (const input of ["zagadul gabagol em bamagon.", "zodogar gelavam."]) {
+    for (const input of ["zagadul gabagol em bamun.", "zodogar gelavam."]) {
       const ids = parse(input, undefined, { constructions: true }).constructions ?? [];
       assert.ok(!ids.includes("reading.existence"), `${input} → ${ids.join(" ")}`);
     }
@@ -88,7 +88,7 @@ describe("construction registry", () => {
     }
     const both = parse("zazawan zalahen zal gamadam.", undefined, { constructions: true }).constructions ?? [];
     assert.ok(!both.includes("reading.existence"), both.join(" "));
-    const ids = parse("zagadul em bamagon.", undefined, { constructions: true }).constructions ?? [];
+    const ids = parse("zagadul em bamun.", undefined, { constructions: true }).constructions ?? [];
     assert.ok(ids.includes("reading.existence"), ids.join(" "));
   });
 
