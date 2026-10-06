@@ -47,26 +47,38 @@ Saying *I will* in English can hide whether you have a direction, the steps, or 
 
 To say how much later someone means to act (*in three hours*), put a forward time [offset](knowing.md#dated-channel) in the `/b/` right after PLAN.
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a chess club
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *sit* | `vehahel` | `ehahel` *chair* |
-| *pawn* | `obohul` | |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *tell* | `vezebel` | `ezebel` *speech* |
-| *punch* | `vabahel` | |
-| *scream* | `vezugel` | |
-| *fight* | `vavadal` | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *pawn* | `obohul` | ♟️ |
+| *PLAN* | `thamam` | 🗺️ from *map*: a course you mean to take |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *sit* | `vehahel` |
+| *find* | `vamagal` |
+| *tell* | `vezebel` |
+| *lie* | `valahal` |
+| *write* | `varadal` |
+| *fight* | `vavadal` |
+| *book* | `ubugal` |
+| *see* | `vahahal` |
+| *therefore* | `xodum` |
+| *punch* | `vabahel` |
+| *scream* | `vezugel` |
+| *walk* | `vowogal` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
@@ -78,134 +90,118 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-Azawan | th-plan-sketch | v-sit
 :::
 
-**2.** *Alahen intends to see a pawn.*
+**2.** *Alahen plans to find a pawn.*
 
 ::: details Show answer
-`zalahen thamar dobohul vahahal.`
+`zalahen thamam dobohul vamagal.`
 
-z-Alahen | th-plan-sketch | d-pawn | v-see
+z-Alahen | th-plan-itinerary | d-pawn | v-find
 :::
 
-**3.** *Azawan plans to tell Ahaben.*
+**3.** *Ahaben is fully prepared to tell Alahen.*
 
 ::: details Show answer
-`zazawan bahaben thamam vezebel.`
+`zahaben balahen thamal vezebel.`
 
-z-Azawan | b-Ahaben | th-plan-itinerary | v-tell
+z-Ahaben | b-Alahen | th-plan-atlas | v-tell
 :::
 
-**4.** *Ahaben is fully prepared to sit.*
+**4.** *Alahen is thinking of lying.*
 
 ::: details Show answer
-`zahaben thamal vehahel.`
+`zalahen thamar valahal.`
 
-z-Ahaben | th-plan-atlas | v-sit
+z-Alahen | th-plan-sketch | v-lie
 :::
 
-**5.** *Ahaben plans to see Azawan.*
+**5.** *Azawan plans to write.*
 
 ::: details Show answer
-`zahaben thamam dazawan vahahal.`
+`zazawan thamam varadal.`
 
-z-Ahaben | th-plan-itinerary | d-Azawan | v-see
+z-Azawan | th-plan-itinerary | v-write
 :::
 
-**6.** *Alahen is fully prepared to punch Azawan.*
+**6.** *Ahaben is fully prepared to fight Alahen.*
 
 ::: details Show answer
-`zalahen thamal dazawan vabahel.`
+`zahaben thamal dalahen vavadal.`
 
-z-Alahen | th-plan-atlas | d-Azawan | v-punch
-:::
-
-**7.** *Alahen plans to scream.*
-
-::: details Show answer
-`zalahen thamam vezugel.`
-
-z-Alahen | th-plan-itinerary | v-scream
-:::
-
-**8.** *Alahen is fully prepared to fight.*
-
-::: details Show answer
-`zalahen thamal vavadal.`
-
-z-Alahen | th-plan-atlas | v-fight
+z-Ahaben | th-plan-atlas | d-Alahen | v-fight
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zalahen thamar vehahel.`
+**1.** `zalahen thamar dubugal vahahal.`
 
 ::: details Show answer
+z-Alahen | th-plan-sketch | d-book | v-see
 
-z-Alahen | th-plan-sketch | v-sit
-
-*Alahen intends to sit.*
+*Alahen is thinking of seeing a book.*
 :::
 
-**2.** `zazawan thamar dobohul vahahal.`
+**2.** `zazawan thamal dobohul vamagal.`
 
 ::: details Show answer
+z-Azawan | th-plan-atlas | d-pawn | v-find
 
-z-Azawan | th-plan-sketch | d-pawn | v-see
-
-*Azawan intends to see a pawn.*
+*Azawan is fully prepared to find a pawn.*
 :::
 
 **3.** `zahaben bazawan thamam vezebel.`
 
 ::: details Show answer
-
 z-Ahaben | b-Azawan | th-plan-itinerary | v-tell
 
 *Ahaben plans to tell Azawan.*
 :::
 
-**4.** `zahaben thamar vehahel.`
+**4.** `zalahen vavadal. xodum zazawan thamam vehahel.`
 
 ::: details Show answer
+z-Alahen | v-fight . x-therefore | z-Azawan | th-plan-itinerary | v-sit
 
-z-Ahaben | th-plan-sketch | v-sit
-
-*Ahaben intends to sit.*
+*Alahen fights. Therefore Azawan plans to sit.*
 :::
 
-**5.** `zazawan bahaben thamar vezebel.`
+**5.** `zazawan thamar dalahen vabahel.`
 
 ::: details Show answer
+z-Azawan | th-plan-sketch | d-Alahen | v-punch
 
-z-Azawan | b-Ahaben | th-plan-sketch | v-tell
-
-*Azawan intends to tell Ahaben.*
+*Azawan is thinking of punching Alahen.*
 :::
 
-**6.** `zalahen thamam dobohul vahahal.`
+**6.** `zahaben thamal vezugel.`
 
 ::: details Show answer
-
-z-Alahen | th-plan-itinerary | d-pawn | v-see
-
-*Alahen plans to see a pawn.*
-:::
-
-**7.** `zahaben thamal vezugel.`
-
-::: details Show answer
-
 z-Ahaben | th-plan-atlas | v-scream
 
 *Ahaben is fully prepared to scream.*
 :::
 
-**8.** `zazawan thamam vavadal.`
+#### Pick one {#beginner-pick-one}
+
+**1.** *Alahen intends to see a pawn* (just the direction, details open). `zalahen thamar dobohul vahahal.` or `zalahen thamal dobohul vahahal.`
 
 ::: details Show answer
+`zalahen thamar dobohul vahahal.`
 
-z-Azawan | th-plan-itinerary | v-fight
+z-Alahen | th-plan-sketch | d-pawn | v-see
 
-*Azawan plans to fight.*
+**-r** is a sketch, only the direction; **-l** would claim backups are ready.
+:::
+
+#### Fix it {#beginner-fix-it}
+
+**1.** *Ahaben plans to walk.* <!-- lint: error -->`zahaben vamal vowogal.`
+
+::: details Show answer
+`zahaben thamam vowogal.`
+
+z-Ahaben | th-plan-itinerary | v-walk
+
+*Plans to* is PLAN on `/th/` before the verb, not a second verb.
 :::
 
 ## Intermediate {#intermediate}
