@@ -103,109 +103,168 @@ A recipient `/b/` can follow once the pair is complete: `zazawan hadem balahen b
 |--------|-----|---------|--------------|-----|
 | **`hadem` / `gadem`** | authorized agency | *on behalf of* | `adel` *id* | 🪪: the card stands as their face |
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a tool crib
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Alahen* | `alahen` | | |
-| *Ahaben* | `ahaben` | | |
-| *book* | `ubugal` | | |
-| *hammer* | `ahavol` | | |
-| *duck* | `adagul` | | |
-| *money* | `amol` | | |
-| *write* | `varadal` | `aradal` *write* | ✍️: putting words on the page |
-| *walk* | `vowogal` | | |
-| *tell* | `vezebel` | `ezebel` *speech* | 💬: saying it to someone |
-| *like* | `humum` | `umul` *mirror* | 🪞: the image is of the model |
-| *in-exchange-for* | `hehem` | `ehel` *currency-exchange* | 💱: the arrows swap one side for the other |
-| *on-behalf-of* | `hadem` | `adel` *id* | 🪪: the card stands as their face |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *hammer* | `ahavol` | 🔨 |
+| *duck* | `adagul` | 🦆 |
+| *walk* | `vowogal` | 🚶 |
+| *like* | `humum` | 🪞 from *mirror*: the image is of the model |
+| *in-exchange-for* | `hehem` | 💱 from *currency-exchange*: the arrows swap one side for the other |
+| *on-behalf-of* | `hadem` | 🪪 from *id*: the card stands as their face |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *guard* | `agavol` |
+| *pay* | `vamol` |
+| *knife* | `anaval` |
+| *write* | `varadal` |
+| *pencil* | `ebeyol` |
+| *find* | `vamagal` |
+| *very* | `welavam` |
+| *sneak* | `vezevul` |
+| *haste* | `hadehum` |
+| *run* | `varahal` |
+| *tell* | `vezebel` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *Azawan walks like a duck.*
+**1.** *Alahen walks like a guard.*
 
 ::: details Show answer
-`zazawan humum badagul vowogal.`
+`zalahen humum bagavol vowogal.`
 
-z-Azawan | [h-like | b-duck] | v-walk
+z-Alahen | [h-like | b-guard] | v-walk
+
+**Also correct:** `zalahen vowogal humum bagavol.`
 :::
 
-**2.** *Azawan writes in exchange for money.*
+**2.** *Ahaben pays money for a knife.*
 
 ::: details Show answer
-`zazawan varadal hehem bamol.`
+`zahaben damol hehem banaval vamol.`
 
-z-Azawan | v-write | [h-in-exchange-for | b-money]
+z-Ahaben | d-money | [h-in-exchange-for | b-knife] | v-pay
 :::
 
-**3.** *Azawan tells on behalf of Alahen.*
+**3.** *Alahen writes on behalf of Azawan.*
 
 ::: details Show answer
-`zazawan hadem balahen vezebel.`
+`zalahen hadem bazawan varadal.`
 
-z-Azawan | [h-on-behalf-of | b-Alahen] | v-tell
+z-Alahen | [h-on-behalf-of | b-Azawan] | v-write
 :::
 
-**4.** *A hammer like Azawan’s.*
+**4.** *Ahaben finds a pencil like Azawan's.*
 
 ::: details Show answer
-`zahavol gumum bazawan.`
+`zahaben debeyol gumum bazawan vamagal.`
 
-z-hammer | [g-like | b-Azawan]
+z-Ahaben | [d-pencil | [g-like | b-Azawan]] | v-find
+:::
+
+**5.** *Alahen sneaks very like a duck.*
+
+::: details Show answer
+`zalahen welavam humum badagul vezevul.`
+
+z-Alahen | [[w-very | h-like] | b-duck] | v-sneak
+:::
+
+**6.** *Azawan and Ahaben walk alike.*
+
+::: details Show answer
+`zazawan zahaben zal humum vowogal.`
+
+[z-Azawan | z-Ahaben | z-and] | h-like | v-walk
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zahaben humum badagul vowogal.`
+**1.** `zalahen hadem bahaben vamol.`
 
 ::: details Show answer
+z-Alahen | [h-on-behalf-of | b-Ahaben] | v-pay
 
-z-Ahaben | [h-like | b-duck] | v-walk
-
-*Ahaben walks like a duck.*
+*Alahen pays on behalf of Ahaben.*
 :::
 
-**2.** `zahaben hadem bazawan varadal.`
+**2.** `zazawan hadehum vowogal humum barl zadagul varahal.`
 
 ::: details Show answer
+z-Azawan | h-haste | v-walk | [h-like | b-that-clause] | z-duck | v-run
 
-z-Ahaben | [h-on-behalf-of | b-Azawan] | v-write
-
-*Ahaben writes on behalf of Azawan.*
+*Azawan walks hastily, the way a duck runs.*
 :::
 
-**3.** `zalahen varadal hehem bamol.`
+**3.** `zahaben zalahen zal gumum.`
 
 ::: details Show answer
+[z-Ahaben | z-Alahen | z-and | g-like]
 
-z-Alahen | v-write | [h-in-exchange-for | b-money]
-
-*Alahen writes in exchange for money.*
+*Ahaben and Alahen are alike.*
 :::
 
-**4.** `zazawan hadem balahen bahaben vezebel.`
+**4.** `zagavol bahaben humum bazawan vezebel.`
 
 ::: details Show answer
+z-guard | b-Ahaben | [h-like | b-Azawan] | v-tell
+
+*The guard tells Ahaben, like Azawan does.*
+:::
+
+**5.** `zazawan welavam gumum badagul.`
+
+::: details Show answer
+z-Azawan | [[w-very | g-like] | b-duck]
+
+*Azawan is very like a duck.*
+:::
+
+#### Pick one {#beginner-pick-one}
+
+**1.** *Azawan tells Ahaben on behalf of Alahen.* `zazawan hadem balahen bahaben vezebel.` or `zazawan hadem bahaben balahen vezebel.`
+
+::: details Show answer
+`zazawan hadem balahen bahaben vezebel.`
 
 z-Azawan | [h-on-behalf-of | b-Alahen] | b-Ahaben | v-tell
 
-*Azawan tells Ahaben on behalf of Alahen.*
+The `/b/` right after **`hadem`** is the one acted for; the next `/b/` is who hears it.
 :::
 
-**5.** `zubugal gumum bahaben.`
+**2.** *Ahaben walks like a duck.* `zahaben humum badagul vowogal.` or `zahaben badagul humum vowogal.`
 
 ::: details Show answer
+`zahaben humum badagul vowogal.`
 
-z-book | [g-like | b-Ahaben]
+z-Ahaben | [h-like | b-duck] | v-walk
 
-*A book like Ahaben’s.*
+The model goes in `/b/` right **after** **`humum`**; before it, `badagul` is a recipient.
+:::
+
+#### Fix it {#beginner-fix-it}
+
+**1.** *Azawan pays money for a hammer.* <!-- lint: error -->`zazawan damol bahavol vamol.`
+
+::: details Show answer
+`zazawan damol hehem bahavol vamol.`
+
+z-Azawan | d-money | [h-in-exchange-for | b-hammer] | v-pay
+
+Without **`hehem`**, the hammer is the one paid; *for* a swap puts it in `/b/` after **`hehem`**.
 :::
 
 ## Intermediate {#intermediate}
