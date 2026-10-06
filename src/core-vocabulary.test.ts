@@ -4,7 +4,17 @@ import { join } from "node:path";
 import { describe, it } from "node:test";
 
 import { CLOSED } from "./closed-roots.js";
-import { CORE_CAP, coreReport, firstAppearance, stageCheckpoints, type Checkpoint } from "./core-vocabulary.js";
+import {
+  CORE_CAP,
+  CORE_REVIEW_MIN,
+  coreReport,
+  firstAppearance,
+  lintCoreCounts,
+  stageCheckpoints,
+  type BankEntry,
+  type BankGroup,
+  type Checkpoint,
+} from "./core-vocabulary.js";
 import { parseCompoundCsv } from "./lexicon-compounds.js";
 import { parsePublishedCsv } from "./lexicon-search.js";
 import { pageSections } from "./lint/learning-order.js";
@@ -77,13 +87,105 @@ describe("stageCheckpoints", () => {
   });
 });
 
+function entry(root: string, group: BankGroup, line = 1): BankEntry {
+  return { root, english: root, agazan: root, group, line };
+}
+
+function cp(anchor: string, converted: boolean, entries: BankEntry[], cast: BankEntry[] = []): Checkpoint {
+  const page = anchor.split("#")[0]!;
+  return { anchor, page, band: "beginner", line: 1, converted, entries, cast };
+}
+
+describe("stageCheckpoints, converted", () => {
+  const md = `# Page
+
+## Beginner
+
+### Practice {#beginner-practice}
+
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *Azawan* | \`${CLOSED.swan}n\` | 🦢 |
+| *dog* | \`${dog}l\` | 🐕 |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *book* | \`${book}l\` |
+
+#### English → Agazan
+`;
+  const [checkpoint] = stageCheckpoints(["a.md"], () => md, tables);
+
+  it("reads New words and Review, with groups and lines", () => {
+    assert.equal(checkpoint!.anchor, "a.md#beginner-practice");
+    assert.equal(checkpoint!.converted, true);
+    assert.deepEqual(checkpoint!.entries.map((e) => [e.root, e.group, e.line]), [[dog, "new", 12], [book, "review", 18]]);
+    assert.deepEqual(checkpoint!.cast.map((e) => [e.root, e.group]), [[CLOSED.swan, "new"]]);
+  });
+});
+
+describe("lintCoreCounts", () => {
+  const details = (checkpoints: Checkpoint[], core: Record<string, string>) =>
+    lintCoreCounts(checkpoints, new Map(Object.entries(core))).map((f) => `${f.page} ${f.detail}`);
+  // Three legacy checkpoints introduce r1..r3, so a later converted one owes CORE_REVIEW_MIN review roots.
+  const legacy = [cp("a.md#x", false, [entry("r1", "roots")]), cp("b.md#x", false, [entry("r2", "roots")]), cp("c.md#x", false, [entry("r3", "roots")])];
+  const earlier = { r1: "a.md#x", r2: "b.md#x", r3: "c.md#x" };
+  const review = ["r1", "r2", "r3"].map((r) => entry(r, "review"));
+
+  it("passes new roots introduced here and review roots introduced earlier", () => {
+    assert.equal(CORE_REVIEW_MIN, 3);
+    assert.deepEqual(details([...legacy, cp("d.md#p", true, [entry("n1", "new"), ...review])], { ...earlier, n1: "d.md#p" }), []);
+  });
+
+  it("does not check legacy checkpoints", () => {
+    const over = Array.from({ length: CORE_CAP + 1 }, (_, i) => entry(`n${i}`, "roots"));
+    assert.deepEqual(details([cp("a.md#x", false, over)], {}), []);
+  });
+
+  it("caps new roots", () => {
+    const fresh = Array.from({ length: CORE_CAP + 1 }, (_, i) => entry(`n${i}`, "new"));
+    const core = Object.fromEntries(fresh.map((e) => [e.root, "a.md#p"]));
+    assert.deepEqual(details([cp("a.md#p", true, fresh)], core), [`a.md ${CORE_CAP + 1} new core roots; at most ${CORE_CAP}`]);
+  });
+
+  it("needs review roots once enough come before, and none on the first checkpoint", () => {
+    assert.deepEqual(details([cp("a.md#p", true, [entry("n1", "new")])], { n1: "a.md#p" }), []);
+    assert.deepEqual(details([...legacy, cp("d.md#p", true, review.slice(0, 2))], earlier), ["d.md 2 review root(s); use at least 3 from earlier checkpoints"]);
+    assert.deepEqual(details([legacy[0]!, cp("d.md#p", true, [review[0]!])], { r1: "a.md#x" }), []);
+  });
+
+  it("places each root by its core cell", () => {
+    const converted = cp("d.md#p", true, [entry("n1", "new"), entry("n2", "new"), entry("r1", "new"), ...review.slice(1), entry("n3", "review"), entry("n4", "review")]);
+    const core = { ...earlier, n2: "e.md#p", n4: "d.md#p" };
+    assert.deepEqual(details([...legacy, converted, cp("e.md#p", false, [])], core), [
+      "d.md *n1* `n1` is not core: set its core cell to d.md#p",
+      "d.md *n2* `n2` is pulled forward: move its core cell from e.md#p to d.md#p",
+      "d.md *r1* `r1` was introduced at a.md#x: move it to **Review**",
+      "d.md *n3* `n3` is not core: move it to **New words** and set its core cell to d.md#p",
+      "d.md *n4* `n4` is introduced at d.md#p, not before this checkpoint: move it to **New words** and its core cell to d.md#p",
+      "d.md core cell of n4 names this checkpoint, but **New words** does not list it: move the cell to the next checkpoint that uses it, or clear it",
+    ]);
+  });
+
+  it("puts a house name under New words only where it is first met", () => {
+    const swan = (group: BankGroup) => entry(CLOSED.swan, group);
+    const word = `*${CLOSED.swan}* \`${CLOSED.swan}\``;
+    assert.deepEqual(details([cp("a.md#p", true, [], [swan("new")]), cp("b.md#p", true, [], [swan("review")])], {}), []);
+    assert.deepEqual(details([cp("a.md#x", false, [], [swan("roots")]), cp("b.md#p", true, [], [swan("new")])], {}), [
+      `b.md ${word} was met at an earlier checkpoint: move it to **Review**`,
+    ]);
+    assert.deepEqual(details([cp("a.md#p", true, [], [swan("review")])], {}), [`a.md ${word} is first met here: move it to **New words**`]);
+  });
+});
+
 describe("coreReport", () => {
   it("splits new from review and flags a checkpoint over the cap", () => {
     const roots = Array.from({ length: CORE_CAP + 1 }, (_, i) => `r${i}`);
-    const checkpoints: Checkpoint[] = [
-      { anchor: "a.md#x", page: "a.md", band: "beginner", entries: roots.map((root) => ({ root, english: root, agazan: root })) },
-      { anchor: "b.md#x", page: "b.md", band: "beginner", entries: [{ root: "r0", english: "r0", agazan: "r0" }] },
-    ];
+    const checkpoints = [cp("a.md#x", false, roots.map((root) => entry(root, "roots"))), cp("b.md#x", false, [entry("r0", "roots")])];
     const [first, second] = coreReport(checkpoints, firstAppearance(checkpoints));
     assert.equal(first!.fresh.length, CORE_CAP + 1);
     assert.equal(first!.overCap, true);

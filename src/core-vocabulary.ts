@@ -2,18 +2,25 @@
  * Core learner vocabulary (docs/proposals/exercise-standards.md § 3): each core root names the
  * stage checkpoint that introduces it, in the `core` column of the lexicon CSVs
  * (docs/meta/lexicon.md#core-vocabulary-column). The seed is the first checkpoint, in path
- * order, whose **Roots used here** bank uses the root.
+ * order, whose bank uses the root. {@link lintCoreCounts} checks converted checkpoints against
+ * the column (docs/meta/translation-exercises.md#core-vocabulary).
  */
 import { CLOSED } from "./closed-roots.js";
 import { DEFAULT_SELF_ROOT, fillSelf } from "./learner-name.js";
-import { bankUses, findRootsTable } from "./lint/word-bank-docs.js";
+import { bankUses, findRootsTable, practiceBank, type BankRow } from "./lint/word-bank-docs.js";
 import { practiceRanges } from "./lint/practice-sections.js";
 import { drillSections } from "./lint/drill-coverage.js";
 import { BANDS, pageSections, type Band } from "./lint/learning-order.js";
 import type { ClassifyTables } from "./parse/classify.js";
+import { parseCompoundCsv } from "./lexicon-compounds.js";
+import { parsePublishedCsv } from "./lexicon-search.js";
+import { readData } from "./repo-paths.js";
 
 /** Most new core roots one checkpoint may introduce. */
 export const CORE_CAP = 5;
+
+/** Fewest review roots a checkpoint uses, once that many core roots come before it. */
+export const CORE_REVIEW_MIN = 3;
 
 /** Roots taught as grammar, not vocabulary: house cast, the learner slot, discourse-role specials, topic / generic pronouns. */
 export const NOT_CORE_ROOTS: ReadonlySet<string> = new Set([
@@ -29,15 +36,23 @@ export const NOT_CORE_ROOTS: ReadonlySet<string> = new Set([
   CLOSED.person,
 ]);
 
-export type BankEntry = { root: string; english: string; agazan: string };
+/** Which bank lists the root: legacy **Roots used here**, or converted **New words** / **Review**. */
+export type BankGroup = "roots" | "new" | "review";
+
+export type BankEntry = { root: string; english: string; agazan: string; group: BankGroup; /** 1-based. */ line: number };
 
 export type Checkpoint = {
   /** `page.md#id` of the checkpoint heading (`### Practice`, or legacy `### Translation practice`). */
   anchor: string;
   page: string;
   band: Band;
+  /** 1-based line of the checkpoint heading. */
+  line: number;
+  converted: boolean;
   /** Counted bank roots, in table order, each once (no overlay words, no {@link NOT_CORE_ROOTS}). */
   entries: BankEntry[];
+  /** Bank rows for {@link NOT_CORE_ROOTS} (house names, the learner slot, specials), each once. */
+  cast: BankEntry[];
 };
 
 /** Stage checkpoints in path order: every Beginner checkpoint in reading order, then Intermediate, then Advanced. */
@@ -67,20 +82,29 @@ export function stageCheckpoints(
       for (const section of drillSections(p.sections, band)) {
         const line = lineOfOffset(p.raw, section.offset);
         const range = ranges.find((r) => r.start === line);
-        // A converted checkpoint has no **Roots used here** table; its bank is New words / Review.
-        const table = range && !range.converted ? findRootsTable(p.lines, range.start, range.end) : null;
+        const converted = range?.converted ?? false;
+        const rows: { row: BankRow; group: BankGroup }[] = [];
+        if (range && converted) {
+          const bank = practiceBank(p.lines, range);
+          for (const row of bank.newWords?.rows ?? []) rows.push({ row, group: "new" });
+          for (const row of bank.review?.rows ?? []) rows.push({ row, group: "review" });
+        } else if (range) {
+          for (const row of findRootsTable(p.lines, range.start, range.end)?.rows ?? []) rows.push({ row, group: "roots" });
+        }
         const entries: BankEntry[] = [];
+        const cast: BankEntry[] = [];
         const seen = new Set<string>();
-        for (const row of table?.rows ?? []) {
+        for (const { row, group } of rows) {
           if (!row.agazan) continue;
           for (const { root, overlay } of bankUses(row.agazan, tables)) {
             // A closed overlay word is grammar, taught by its owning section.
-            if (overlay || NOT_CORE_ROOTS.has(root) || seen.has(root)) continue;
+            if (overlay || seen.has(root)) continue;
             seen.add(root);
-            entries.push({ root, english: row.english ?? "", agazan: row.agazan });
+            const entry = { root, english: row.english ?? "", agazan: row.agazan, group, line: row.lineIndex + 1 };
+            (NOT_CORE_ROOTS.has(root) ? cast : entries).push(entry);
           }
         }
-        out.push({ anchor: `${page}#${section.slug}`, page, band, entries });
+        out.push({ anchor: `${page}#${section.slug}`, page, band, line: line + 1, converted, entries, cast });
       }
     }
   }
@@ -107,6 +131,74 @@ export function coreReport(checkpoints: readonly Checkpoint[], core: ReadonlyMap
     const review = checkpoint.entries.filter((e) => core.get(e.root) !== checkpoint.anchor);
     return { checkpoint, fresh, review, overCap: fresh.length > CORE_CAP };
   });
+}
+
+/** Root / stem → `core` cell, from both lexicon CSVs (empty cells left out). */
+export function storedCore(): Map<string, string> {
+  const core = new Map<string, string>();
+  for (const row of parsePublishedCsv(readData("lexicon-published.csv"))) if (row.core) core.set(row.root, row.core);
+  for (const row of parseCompoundCsv(readData("lexicon-compounds.csv"))) if (row.core) core.set(row.stem, row.core);
+  return core;
+}
+
+export type CoreFinding = { page: string; line: number; detail: string };
+
+/**
+ * Converted checkpoints against the `core` column, in path order: each **New words** root is
+ * introduced here, each **Review** root earlier; at most {@link CORE_CAP} new and at least
+ * {@link CORE_REVIEW_MIN} review (fewer only when fewer core roots come before); no core cell
+ * names this checkpoint for a root its **New words** leaves out; and house names, the learner
+ * slot, and specials sit under **New words** only on the first checkpoint whose bank lists them.
+ * Legacy checkpoints are not checked.
+ */
+export function lintCoreCounts(checkpoints: readonly Checkpoint[], core: ReadonlyMap<string, string>): CoreFinding[] {
+  const order = new Map(checkpoints.map((c, i) => [c.anchor, i]));
+  const firstCast = new Map<string, number>();
+  checkpoints.forEach((c, i) => {
+    for (const { root } of c.cast) if (!firstCast.has(root)) firstCast.set(root, i);
+  });
+  const introducedBefore = (i: number): number => [...core.values()].filter((anchor) => (order.get(anchor) ?? Infinity) < i).length;
+
+  const findings: CoreFinding[] = [];
+  checkpoints.forEach((c, i) => {
+    if (!c.converted) return;
+    const push = (line: number, detail: string) => findings.push({ page: c.page, line, detail });
+    const word = (e: BankEntry) => `*${e.english}* \`${e.agazan}\``;
+    const fresh = c.entries.filter((e) => e.group === "new");
+    const review = c.entries.filter((e) => e.group === "review");
+
+    for (const e of fresh) {
+      const cell = core.get(e.root);
+      const at = cell === undefined ? undefined : order.get(cell);
+      if (cell === undefined) push(e.line, `${word(e)} is not core: set its core cell to ${c.anchor}`);
+      else if (at === undefined || at > i) push(e.line, `${word(e)} is pulled forward: move its core cell from ${cell} to ${c.anchor}`);
+      else if (at < i) push(e.line, `${word(e)} was introduced at ${cell}: move it to **Review**`);
+    }
+    for (const e of review) {
+      const cell = core.get(e.root);
+      const at = cell === undefined ? undefined : order.get(cell);
+      if (cell === undefined) push(e.line, `${word(e)} is not core: move it to **New words** and set its core cell to ${c.anchor}`);
+      else if (at === undefined || at >= i) push(e.line, `${word(e)} is introduced at ${cell}, not before this checkpoint: move it to **New words** and its core cell to ${c.anchor}`);
+    }
+
+    if (fresh.length > CORE_CAP) push(c.line, `${fresh.length} new core roots; at most ${CORE_CAP}`);
+    const need = Math.min(CORE_REVIEW_MIN, introducedBefore(i));
+    if (review.length < need) push(c.line, `${review.length} review root(s); use at least ${need} from earlier checkpoints`);
+
+    const listed = new Set(fresh.map((e) => e.root));
+    for (const [root, cell] of core) {
+      if (cell === c.anchor && !listed.has(root)) {
+        push(c.line, `core cell of ${root} names this checkpoint, but **New words** does not list it: move the cell to the next checkpoint that uses it, or clear it`);
+      }
+    }
+
+    for (const e of c.cast) {
+      const first = firstCast.get(e.root) === i;
+      if (e.group === "new" && !first) push(e.line, `${word(e)} was met at an earlier checkpoint: move it to **Review**`);
+      if (e.group === "review" && first) push(e.line, `${word(e)} is first met here: move it to **New words**`);
+    }
+  });
+  return findings;
 }
 
 function lineOfOffset(lines: readonly string[], offset: number): number {

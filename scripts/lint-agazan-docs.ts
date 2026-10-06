@@ -9,7 +9,9 @@
  * Translation **Roots used here** English is checked against the lexicon; each
  * bank lists every content root its drills use, and every row is used.
  * Converted checkpoints (`### Practice`) follow the template, and their decision items and
- * **Also correct:** variants pass the item rules (src/lint/practice-item-rules.ts).
+ * **Also correct:** variants pass the item rules (src/lint/practice-item-rules.ts). Their
+ * **New words** / **Review** bank has the template columns and a cue on every new row, and
+ * its roots match the `core` column in path order (src/core-vocabulary.ts).
  * On the number pages, shorthand number examples need a
  * pronunciation row that matches the spoken form computed from the shorthand.
  * Mismatches, leftover ambiguity, and missing morph glosses fail the run.
@@ -28,11 +30,14 @@ import {
 } from "../src/lint/morph-gloss-docs.js";
 import { lintPracticeItems } from "../src/lint/practice-item-rules.js";
 import {
+  formatPracticeBankFinding,
   formatWordBankFinding,
   formatWordBankUsageFinding,
+  lintPracticeBank,
   lintWordBankMarkdown,
   lintWordBankUsage,
 } from "../src/lint/word-bank-docs.js";
+import { lintCoreCounts, stageCheckpoints, storedCore } from "../src/core-vocabulary.js";
 import {
   parseOverlayCsv,
   parsePublishedCsv,
@@ -325,6 +330,10 @@ function main(): void {
       bankCount += 1;
       console.log(formatWordBankUsageFinding(rel, finding));
     }
+    for (const finding of lintPracticeBank(source, tables)) {
+      bankCount += 1;
+      console.error(formatPracticeBankFinding(rel, finding));
+    }
 
     if (dirname(file) === grammarDir && NUMBER_SPEECH_FILES.includes(basename(file))) {
       for (const finding of lintNumberSpeechMarkdown(original)) {
@@ -352,11 +361,18 @@ function main(): void {
   let coverageCount = 0;
   let orderCount = 0;
   let drillCount = 0;
+  let coreCount = 0;
   if (paths.length === 0) {
-    const order = learningOrder(readingOrder.map((item) => sidebarPage(item.link)), pages);
+    const pathPages = readingOrder.map((item) => sidebarPage(item.link));
+    const order = learningOrder(pathPages, pages);
     coverageCount = checkConstructionCoverage(uses);
     orderCount = reportLearningOrder(order, uses, orderReport);
     drillCount = reportDrillCoverage(order, uses);
+    const checkpoints = stageCheckpoints(pathPages, (page) => pageMarkdown.get(page), tables);
+    for (const finding of lintCoreCounts(checkpoints, storedCore())) {
+      coreCount += 1;
+      console.error(`docs/grammar/${finding.page}:${finding.line}  core-vocabulary  (${finding.detail})`);
+    }
   }
 
   if (count > 0) {
@@ -393,6 +409,11 @@ function main(): void {
   if (speechCount > 0) {
     console.log(`\n${speechCount} number pronunciation issue(s).`);
   }
+  if (coreCount > 0) {
+    console.error(
+      `\n${coreCount} core-vocabulary issue(s). Match **New words** / **Review** to the core column, or retarget the cells (docs/meta/translation-exercises.md#core-vocabulary).`,
+    );
+  }
   if (orderCount > 0) {
     console.error(
       `\n${orderCount} learning-order issue(s). Rewrite the example with forms already taught, or move the home section earlier (docs/proposals/learning-order-check.md, No previews).`,
@@ -418,7 +439,8 @@ function main(): void {
     speechCount +
     coverageCount +
     orderCount +
-    drillCount;
+    drillCount +
+    coreCount;
   if (fail > 0) {
     process.exit(1);
   }
@@ -435,6 +457,7 @@ function main(): void {
   );
   console.log("OK: every heading and <a id> on a grammar page is unique.");
   console.log("OK: translation word-bank English matches the lexicon.");
+  if (paths.length === 0) console.log("OK: converted checkpoint banks match the core vocabulary.");
   console.log("OK: checkpoint items follow the template; decision items and Also correct variants check out.");
   console.log("OK: number pronunciation rows match their shorthand.");
   if (paths.length === 0) {

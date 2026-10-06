@@ -84,6 +84,8 @@ The `core` column of the lexicon CSVs orders the learner's content roots by the 
 | **Source** | New roots come from the core list in order. A setting may pull a later core root forward; then move its `core` cell to this checkpoint, which owns its introduction |
 | **Non-core roots** | A content root with an empty `core` cell that the setting needs becomes core here: set its cell to this checkpoint, and it counts as new |
 
+`lint:agazan` checks these rules on `### Practice` checkpoints in path order: each **New words** root has its `core` cell on this checkpoint and each **Review** root an earlier one, the cap, the review minimum (fewer only when fewer than 3 core roots come before), and no `core` cell naming this checkpoint for a root its **New words** leaves out. House names, the `SELF` slot, and specials go under **New words** only on the first checkpoint whose bank lists them. Whether a new root is the next in core order stays with the author.
+
 ## Checkpoint setting
 <a id="checkpoint-setting"></a>
 
@@ -217,6 +219,7 @@ Omit recoverable **`yal`** unless the drill is teaching speech act. Match role l
 - **English** is the published lemma for that spelling (literal, metaphor, or packed role English); `build` checks it against the lexicon. Do not put an inflected English word in the bank (*running*, *hasty*, *the lie*) when the lemma is *run* / *haste* / *lie*; prompts may still use the obvious related form. SI nicknames (*gram*, *liter*) stay in **Cue** until that unit has its own published lemma. English is not an ending tag (`(**-m**)`). House people use the nativized name (`*Azawan*`). Overlay **English** is the overlay gloss (`*MEMORY*`). Role compounds use the morph sense (`*agent-building*`). Named **`x`** stems use the hyphenated host lemmas (`*hospital-bed*`). Speaker/listener specials use *speaker* / *listener*, not *I* / *you*.
 - **Agazan** is the [citation](../grammar/word-endings.md#citation-forms) of the English sense (`odogal`, `agawam` *volume*), ending on, not a bare stem (`odoga`). It is the in-clause word only when the English matches only with a role or `/x/` / `/h/` / `/w/` letter (`vahahal` *see*, `vehahel` *sit*, `vezebel` *tell*, `xodum` *therefore*, `hadehum` *haste*). Closed specials use their default ending (`ugobon`). Inner **`x`** pieces and other exceptions: [citation in tables](grammar-docs.md#citation-in-tables).
 - Every **New words** row has a **Cue**. When **Agazan** is not the citation of the English, the cue names the citation sense (`👁️ from *eye*`, `🔈 from *quiet*`). When a root has no useful cue, give the emoji alone. A cue is never the English to produce, and never a mid-dot prose list.
+- `lint:agazan` checks the columns of each group, the English, a cue on every **New words** row, one row per root across both groups, and that the bank lists exactly the content roots the drills use. The **Fix it** wrong form is not a use.
 
 **Caption and legend:** the captions are **`New words:`** and **`Review:`**. Spell out what the columns mean only on the first converted banks ([clause.md](../grammar/clause.md#beginner-translation-practice) Beginner, [word-endings.md](../grammar/word-endings.md#beginner-translation-practice) Beginner), and update the [How to learn](../grammar/introduction.md#cues) legend when the first page converts.
 

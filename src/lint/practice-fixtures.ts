@@ -1,6 +1,7 @@
 /**
- * Test fixtures for converted checkpoints: a small lexicon with the house names, *see* and
- * *sit*, and a `### Practice` section with every item type that passes all checks.
+ * Test fixtures for converted checkpoints: a small lexicon with the house names, *see*, *sit*
+ * and *walk*, and a `### Practice` section with a **New words** bank and every item type that
+ * passes all checks.
  */
 import { createClassifyTablesFromRows, type ClassifyTables } from "../parse/classify.js";
 import { emptyPosEnglish, parseEnglishByPos } from "../lexicon-search.js";
@@ -32,6 +33,17 @@ export function houseTables(): ClassifyTables {
 export const PRACTICE = `### Practice {#beginner-practice}
 
 **Setting:** a park
+
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *Azawan* | \`azawan\` | 🦢 |
+| *Alahen* | \`alahen\` | 🦁 |
+| *Ahaben* | \`ahaben\` | 🌺 |
+| *see* | \`vahahal\` | 👁️ from *eye* |
+| *sit* | \`vehahel\` | 🪑 from *chair* |
+| *walk* | \`vowogal\` | 🦶 from *foot* |
 
 #### English → Agazan {#beginner-english-to-agazan}
 

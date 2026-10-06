@@ -1,6 +1,8 @@
 /**
- * Translation-practice **Roots used here** tables: English must be a
- * lexicon / overlay / morph sense for that Agazan spelling.
+ * Checkpoint word banks: legacy **Roots used here** tables, and the **New words** / **Review**
+ * bank of a converted `### Practice` checkpoint (docs/meta/translation-exercises.md#vocab-table).
+ * English must be a lexicon / overlay / morph sense for that Agazan spelling, and a bank lists
+ * exactly the content roots its drills use.
  */
 import { classify, lexiconContentRoots, type ClassifyTables } from "../parse/classify.js";
 import { derivedHookGloss, hookCompoundFromMorph } from "../parse/hook-compounds.js";
@@ -11,7 +13,7 @@ import { lineNumberAt } from "../retie/tokens.js";
 import { fillSelf, hasSelfSlot } from "../learner-name.js";
 import { collectExamples } from "../find/examples.js";
 import type { LexWord } from "../parse/types.js";
-import { practiceRanges } from "./practice-sections.js";
+import { practiceRanges, type PracticeRange } from "./practice-sections.js";
 
 export type WordBankFinding = {
   line: number;
@@ -23,6 +25,8 @@ export type WordBankFinding = {
 };
 
 const ROOTS_CAPTION_RE = /^\*\*Roots used here/;
+const NEW_WORDS_CAPTION_RE = /^\*\*New words:\*\*/;
+const REVIEW_CAPTION_RE = /^\*\*Review:\*\*/;
 
 export function lintWordBankMarkdown(
   text: string,
@@ -31,11 +35,10 @@ export function lintWordBankMarkdown(
   const findings: WordBankFinding[] = [];
   const lines = text.split(/\r?\n/);
   for (const range of practiceRanges(lines)) {
-    // Converted checkpoints use the New words / Review bank, not this table.
-    if (range.converted) continue;
-    const table = findRootsTable(lines, range.start, range.end);
-    if (!table) continue;
-    for (const row of table.rows) {
+    const rows = range.converted
+      ? bankRows(practiceBank(lines, range))
+      : (findRootsTable(lines, range.start, range.end)?.rows ?? []);
+    for (const row of rows) {
       const line = lineNumberAt(text, lineIndexToCharIndex(text, row.lineIndex));
       if (row.agazan && row.english) {
         const hit = checkPair(row.agazan, row.english, tables, "Agazan");
@@ -222,16 +225,25 @@ export type BankRow = {
   agazan: string | null;
   sameEnglish: string | null;
   sameAgazan: string | null;
+  /** The Cue cell as written; null when the table has no Cue column. */
+  cue: string | null;
 };
 
-export function findRootsTable(
-  lines: string[],
-  start: number,
-  end: number,
-): { rows: BankRow[]; caption: number; end: number } | null {
+export type BankTable = { rows: BankRow[]; header: string[]; caption: number; end: number };
+
+export function findRootsTable(lines: string[], start: number, end: number): BankTable | null {
+  const table = findBankTable(lines, start, end, ROOTS_CAPTION_RE);
+  return table && hasColumns(table.header) ? table : null;
+}
+
+/**
+ * The first table under a caption matching `captionRe` in `[start, end)`. Rows are read only
+ * when the header has English and Agazan columns; `header` is always returned.
+ */
+export function findBankTable(lines: readonly string[], start: number, end: number, captionRe: RegExp): BankTable | null {
   let caption = -1;
   for (let i = start; i < end; i++) {
-    if (ROOTS_CAPTION_RE.test(lines[i]!)) {
+    if (captionRe.test(lines[i]!)) {
       caption = i;
       break;
     }
@@ -251,24 +263,64 @@ export function findRootsTable(
   const englishCol = header.findIndex((h) => /^english$/i.test(h));
   const agazanCol = header.findIndex((h) => /^agazan$/i.test(h));
   const sameCol = header.findIndex((h) => /^same root as$/i.test(h));
-  if (englishCol < 0 || agazanCol < 0) return null;
+  const cueCol = header.findIndex((h) => /^cue$/i.test(h));
 
   let i = headerIndex + 1;
   if (i < end && isDividerRow(lines[i]!)) i += 1;
   const rows: BankRow[] = [];
   while (i < end && isTableRow(lines[i]!) && !isDividerRow(lines[i]!)) {
-    const cells = splitRow(lines[i]!);
-    const same = sameCol >= 0 ? parseSameRoot(cells[sameCol] ?? "") : { agazan: null, english: null };
-    rows.push({
-      lineIndex: i,
-      english: firstItalic(cells[englishCol] ?? ""),
-      agazan: firstAgazan(cells[agazanCol] ?? ""),
-      sameEnglish: same.english,
-      sameAgazan: same.agazan,
-    });
+    if (englishCol >= 0 && agazanCol >= 0) {
+      const cells = splitRow(lines[i]!);
+      const same = sameCol >= 0 ? parseSameRoot(cells[sameCol] ?? "") : { agazan: null, english: null };
+      rows.push({
+        lineIndex: i,
+        english: firstItalic(cells[englishCol] ?? ""),
+        agazan: firstAgazan(cells[agazanCol] ?? ""),
+        sameEnglish: same.english,
+        sameAgazan: same.agazan,
+        cue: cueCol >= 0 ? (cells[cueCol] ?? "").trim() : null,
+      });
+    }
     i += 1;
   }
-  return { rows, caption, end: i };
+  return { rows, header, caption, end: i };
+}
+
+function hasColumns(header: readonly string[]): boolean {
+  return header.some((h) => /^english$/i.test(h)) && header.some((h) => /^agazan$/i.test(h));
+}
+
+/** The bank of a converted checkpoint: **New words** and **Review**, above the first `####`. */
+export type PracticeBank = {
+  newWords: BankTable | null;
+  review: BankTable | null;
+  /** Line index of a leftover **Roots used here** caption, if any. */
+  legacyCaption: number | null;
+  /** Line index of the first `####` (the drills), or the range end. */
+  drillStart: number;
+};
+
+export function practiceBank(lines: readonly string[], range: PracticeRange): PracticeBank {
+  const drillStart = drillStartOf(lines, range);
+  const legacy = findBankTable(lines, range.start, drillStart, ROOTS_CAPTION_RE);
+  return {
+    newWords: findBankTable(lines, range.start, drillStart, NEW_WORDS_CAPTION_RE),
+    review: findBankTable(lines, range.start, drillStart, REVIEW_CAPTION_RE),
+    legacyCaption: legacy ? legacy.caption : null,
+    drillStart,
+  };
+}
+
+/** Rows of both groups, **New words** first. */
+export function bankRows(bank: PracticeBank): BankRow[] {
+  return [...(bank.newWords?.rows ?? []), ...(bank.review?.rows ?? [])];
+}
+
+function drillStartOf(lines: readonly string[], range: PracticeRange): number {
+  for (let i = range.start + 1; i < range.end; i++) {
+    if (/^#### /.test(lines[i]!)) return i;
+  }
+  return range.end;
 }
 
 function parseSameRoot(cell: string): { agazan: string | null; english: string | null } {
@@ -322,48 +374,29 @@ export type WordBankUsageFinding = {
   roots: string[];
   /** The word as written: the drill use (`missing`) or the bank cell (`unused`). */
   surface: string;
+  /** The checkpoint is a converted `### Practice` (bank is **New words** / **Review**). */
+  converted?: boolean;
 };
 
 /**
  * Word banks against their drills: every lexicon content root the drills use
- * (answer spoilers and Agazan prompts, under the `####` direction headings) has
- * a **Roots used here** row, and every row is used. Roots match, not spellings
- * (`veyel` in the bank covers `zeyel`, a full-root resume, a role compound's
- * inner root). Overlay words need no row, but a row for one must be used.
+ * (answer spoilers and Agazan prompts, under the `####` headings) has a bank row
+ * (**Roots used here**, or **New words** / **Review** on a converted checkpoint),
+ * and every row is used. Roots match, not spellings (`veyel` in the bank covers
+ * `zeyel`, a full-root resume, a role compound's inner root). Overlay words need
+ * no row, but a row for one must be used. A **Fix it** wrong form is not a use.
  */
 export function lintWordBankUsage(text: string, tables: ClassifyTables): WordBankUsageFinding[] {
   // `SELF` fills as the default learner root, so the `SELFn` row covers `SELF` uses.
   const filled = fillSelf(text);
   const lines = filled.split(/\r?\n/);
-  const lineStarts: number[] = [];
-  let offset = 0;
-  for (const line of lines) {
-    lineStarts.push(offset);
-    offset += line.length + 1;
-  }
-  const lineOf = (index: number): number => {
-    let lo = 0;
-    let hi = lineStarts.length - 1;
-    while (lo < hi) {
-      const mid = (lo + hi + 1) >> 1;
-      if (lineStarts[mid]! <= index) lo = mid;
-      else hi = mid - 1;
-    }
-    return lo;
-  };
-
+  const lineOf = lineIndexer(lines);
   const examples = collectExamples(filled, tables);
   const findings: WordBankUsageFinding[] = [];
   for (const range of practiceRanges(lines)) {
-    if (range.converted) continue;
-    let drillStart = -1;
-    for (let i = range.start + 1; i < range.end; i++) {
-      if (/^#### /.test(lines[i]!)) {
-        drillStart = i;
-        break;
-      }
-    }
-    if (drillStart < 0) continue;
+    const bank = range.converted ? practiceBank(lines, range) : null;
+    const drillStart = bank ? bank.drillStart : drillStartOf(lines, range);
+    if (drillStart >= range.end) continue;
 
     const used = new Set<string>();
     const required = new Map<string, { line: number; surface: string }>();
@@ -380,16 +413,20 @@ export function lintWordBankUsage(text: string, tables: ClassifyTables): WordBan
       }
     }
 
-    const table = findRootsTable(lines, range.start, drillStart);
-    if (!table) {
+    const rows = bank
+      ? bank.newWords || bank.review
+        ? bankRows(bank)
+        : null
+      : (findRootsTable(lines, range.start, drillStart)?.rows ?? null);
+    if (!rows) {
       if (required.size > 0) {
-        findings.push({ line: range.start + 1, kind: "no-bank", roots: [], surface: "" });
+        findings.push({ line: range.start + 1, kind: "no-bank", roots: [], surface: "", converted: range.converted });
       }
       continue;
     }
 
     const banked = new Set<string>();
-    for (const row of table.rows) {
+    for (const row of rows) {
       if (!row.agazan) continue;
       const roots = bankRoots(row.agazan, tables);
       for (const root of roots) banked.add(root);
@@ -402,6 +439,77 @@ export function lintWordBankUsage(text: string, tables: ClassifyTables): WordBan
     }
   }
   return findings.sort((a, b) => a.line - b.line);
+}
+
+export type PracticeBankFinding = { line: number; detail: string };
+
+const NEW_WORDS_COLUMNS = ["English", "Agazan", "Cue"];
+const REVIEW_COLUMNS = ["English", "Agazan"];
+
+/**
+ * Shape of a converted checkpoint's bank (docs/meta/translation-exercises.md#vocab-table):
+ * **New words** is English · Agazan · Cue with a cue on every row, **Review** is English · Agazan,
+ * no root is listed twice, and there is no legacy **Roots used here** table.
+ */
+export function lintPracticeBank(text: string, tables: ClassifyTables): PracticeBankFinding[] {
+  const lines = fillSelf(text).split(/\r?\n/);
+  const findings: PracticeBankFinding[] = [];
+  for (const range of practiceRanges(lines)) {
+    if (!range.converted) continue;
+    const bank = practiceBank(lines, range);
+    if (bank.legacyCaption !== null) {
+      findings.push({
+        line: bank.legacyCaption + 1,
+        detail: "a ### Practice checkpoint has **New words** / **Review**, not **Roots used here**",
+      });
+    }
+    const groups = [
+      { name: "New words", table: bank.newWords, columns: NEW_WORDS_COLUMNS },
+      { name: "Review", table: bank.review, columns: REVIEW_COLUMNS },
+    ];
+    const seen = new Map<string, string>();
+    for (const { name, table, columns } of groups) {
+      if (!table) continue;
+      if (table.header.join(" | ").toLowerCase() !== columns.join(" | ").toLowerCase()) {
+        findings.push({
+          line: table.caption + 1,
+          detail: `**${name}** columns are ${table.header.join(" · ") || "(none)"}; use ${columns.join(" · ")}`,
+        });
+      }
+      for (const row of table.rows) {
+        if (name === "New words" && row.cue !== null && !row.cue) {
+          findings.push({ line: row.lineIndex + 1, detail: `**New words** row \`${row.agazan ?? ""}\` has no Cue` });
+        }
+        if (!row.agazan) continue;
+        for (const root of bankRoots(row.agazan, tables)) {
+          const first = seen.get(root);
+          if (first) {
+            findings.push({ line: row.lineIndex + 1, detail: `root ${root} (\`${row.agazan}\`) is already listed (\`${first}\`); one row per root across **New words** and **Review**` });
+          } else seen.set(root, row.agazan);
+        }
+      }
+    }
+  }
+  return findings;
+}
+
+function lineIndexer(lines: readonly string[]): (index: number) => number {
+  const lineStarts: number[] = [];
+  let offset = 0;
+  for (const line of lines) {
+    lineStarts.push(offset);
+    offset += line.length + 1;
+  }
+  return (index) => {
+    let lo = 0;
+    let hi = lineStarts.length - 1;
+    while (lo < hi) {
+      const mid = (lo + hi + 1) >> 1;
+      if (lineStarts[mid]! <= index) lo = mid;
+      else hi = mid - 1;
+    }
+    return lo;
+  };
 }
 
 /**
@@ -456,12 +564,18 @@ export function bankUses(agazan: string, tables: ClassifyTables): { root: string
 export function formatWordBankUsageFinding(relpath: string, finding: WordBankUsageFinding): string {
   switch (finding.kind) {
     case "missing":
-      return `${relpath}:${finding.line}  word-bank missing root  \`${finding.surface}\` uses ${finding.roots.join(", ")}, which has no **Roots used here** row`;
+      return `${relpath}:${finding.line}  word-bank missing root  \`${finding.surface}\` uses ${finding.roots.join(", ")}, which has no bank row`;
     case "unused":
       return `${relpath}:${finding.line}  word-bank unused row  \`${finding.surface}\` (${finding.roots.join(", ")}) is not used in the drills`;
     case "no-bank":
-      return `${relpath}:${finding.line}  word-bank missing  translation practice uses content roots but has no **Roots used here** table`;
+      return finding.converted
+        ? `${relpath}:${finding.line}  word-bank missing  practice uses content roots but has no **New words** / **Review** table`
+        : `${relpath}:${finding.line}  word-bank missing  translation practice uses content roots but has no **Roots used here** table`;
   }
+}
+
+export function formatPracticeBankFinding(relpath: string, finding: PracticeBankFinding): string {
+  return `${relpath}:${finding.line}  practice-bank  (${finding.detail})`;
 }
 
 export function formatWordBankFinding(relpath: string, finding: WordBankFinding): string {

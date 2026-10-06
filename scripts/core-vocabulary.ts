@@ -9,7 +9,7 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 import { readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
-import { CORE_CAP, coreReport, firstAppearance, stageCheckpoints } from "../src/core-vocabulary.js";
+import { CORE_CAP, coreReport, firstAppearance, stageCheckpoints, storedCore } from "../src/core-vocabulary.js";
 import { parseCsv, serializeCsv } from "../src/csv.js";
 import { sidebarPage } from "../src/lint/learning-order.js";
 import { loadDefaultTables } from "../src/parse/index.js";
@@ -46,8 +46,7 @@ function main(): void {
   const seed = firstAppearance(checkpoints);
 
   const csvs = files.map((file) => ({ ...file, ...parseCsv(readFileSync(file.path, "utf8")) }));
-  const stored = new Map<string, string>();
-  for (const csv of csvs) for (const row of csv.rows) if (row.core) stored.set(row[csv.key]!, row.core);
+  const stored = storedCore();
 
   if (options.write) {
     if (stored.size > 0 && !options.force) {
