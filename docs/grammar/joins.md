@@ -881,43 +881,45 @@ When one list sits inside another (*(tea or coffee) and water*), write the inner
 | nested | `zedehel zagavel zol zowodel zal` | *(tea or coffee) and water* |
 | nested adjectives | `geredal gamazam gul gelavam gal` | *(neither red nor small) and big* |
 
-### Translation practice {#intermediate-translation-practice}
-<a id="translation-practice-intermediate"></a>
+### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a wedding
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *wine* | `awahel` | |
-| *flower* | `avavul` | |
-| *ring* | `erehal` | |
-| *veil* | `evewal` | |
-| *tuxedo* | `adozel` | |
-| *sleepy* | `ezebul` | |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *kiss* | `vegezal` | `egezal` *kiss* |
-| *punch* | `vabahel` | `abahel` *punch* |
-| *respectively* | `wazem` | `azel` *socks* |
-| *big* | `elavam` | |
-| *small* | `amazam` | |
-| *walk* | `vowogal` | |
-| *run* | `varahal` | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *ring* | `erehal` | 💍 |
+| *veil* | `evewal` | 👰 |
+| *tuxedo* | `adozel` | 🤵 |
+| *kiss* | `vegezal` | 💏 |
+| *small* | `amazam` | 🐁 from *mouse* |
+| *respectively* | `wazem` | 🧦 from *socks*: sort them into matched pairs |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *wine* | `awahel` |
+| *beer* | `ebehol` |
+| *sleepy* | `ezebul` |
+| *walk* | `vowogal` |
+| *punch* | `vabahel` |
+| *see* | `vahahal` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *everything but wine and a flower*
+**1.** *everything but wine and beer*
 
 ::: details Show answer
-`zawahel zavavul zual.`
+`zawahel zebehol zual.`
 
-[z-wine | z-flower | z-everything-but]
+[z-wine | z-beer | z-everything-but]
 :::
 
 **2.** *every ring*
@@ -936,47 +938,15 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-Azawan | z-Alahen | z-and | g-sleepy]
 :::
 
-**4.** *(wine or a flower) and a ring*
+**4.** *(wine or beer) and a ring*
 
 ::: details Show answer
-`zawahel zavavul zol zerehal zal.`
+`zawahel zebehol zol zerehal zal.`
 
-[[z-wine | z-flower | z-or-exactly-one] | z-ring | z-and]
+[[z-wine | z-beer | z-or-exactly-one] | z-ring | z-and]
 :::
 
-**5.** *Azawan and Alahen see Ahaben.*
-
-::: details Show answer
-`zazawan zalahen zal dahaben vahahal.`
-
-[z-Azawan | z-Alahen | z-and] | d-Ahaben | v-see
-:::
-
-**6.** *at least Ahaben*
-
-::: details Show answer
-`zahaben zaom.`
-
-[z-Ahaben | z-and/or.open]
-:::
-
-**7.** *anything but the wine*
-
-::: details Show answer
-`zawahel zuol.`
-
-[z-wine | z-anything-but]
-:::
-
-**8.** *Alahen last, period*
-
-::: details Show answer
-`zalahen zuel.`
-
-[z-Alahen | z-rank/less]
-:::
-
-**9.** *Azawan kisses first, then Alahen.*
+**5.** *Azawan kisses first, then Alahen.*
 
 ::: details Show answer
 `zazawan zalahen zael vegezal.`
@@ -984,128 +954,96 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-Azawan | z-Alahen | z-in-order] | v-kiss
 :::
 
-**10.** *Ahaben kisses first, then Alahen, then Azawan.*
+**6.** *not both kiss and walk*
 
 ::: details Show answer
-`zahaben zalahen zazawan zael vegezal.`
+`vegezal vowogal val vul.`
 
-[z-Ahaben | z-Alahen | z-Azawan | z-in-order] | v-kiss
-:::
-
-**11.** *Azawan and Alahen see the ring and the veil, respectively.*
-
-::: details Show answer
-`zazawan zalahen zal vahahal derehal devewal wazem dal.`
-
-[z-Azawan | z-Alahen | z-and] | v-see | [d-ring | d-veil | w-respectively | d-and]
-:::
-
-**12.** *Azawan and Alahen are big and small, respectively.*
-
-::: details Show answer
-`zazawan zalahen zal gelavam gamazam wazem gal.`
-
-[z-Azawan | z-Alahen | z-and] | [g-big | g-small | w-respectively | g-and]
-:::
-
-**13.** *Azawan and Alahen walk and run, respectively.*
-
-::: details Show answer
-`zazawan zalahen zal vowogal varahal wazem val.`
-
-[z-Azawan | z-Alahen | z-and] | [v-walk | v-run | w-respectively | v-and]
+[[v-kiss | v-walk | v-and] | v-not]
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zavavul zual.`
+**1.** `zevewal zuol.`
 
 ::: details Show answer
+[z-veil | z-anything-but]
 
-[z-flower | z-everything-but]
-
-*everything but the flower*
+*anything but the veil*
 :::
 
-**2.** `zuam gerehal.`
+**2.** `zuam gerehal gamazam.`
 
 ::: details Show answer
+[z-everything.open | g-ring] | g-small
 
-[z-everything.open | g-ring]
-
-*every ring, as far as I know*
+*Rings are small.* (as a rule)
 :::
 
-**3.** `zevewal zual.`
+**3.** `zalahen zuel.`
 
 ::: details Show answer
+[z-Alahen | z-rank/less]
 
-[z-veil | z-everything-but]
-
-*everything but the veil*
+*Alahen last.*
 :::
 
-**4.** `vegezal vahahal vam dahaben.`
+**4.** `zul gadozel.`
 
 ::: details Show answer
+[z-no | g-tuxedo]
 
-[v-kiss | v-see | v-and.open] | d-Ahaben
-
-*kisses and sees Ahaben (and possibly more)*
+*There is no tuxedo.*
 :::
 
-**5.** `vegezal vabahel val vul.`
+**5.** `zahaben zaom.`
 
 ::: details Show answer
+[z-Ahaben | z-and/or.open]
 
-[[v-kiss | v-punch | v-and] | v-not]
-
-*not both kiss and punch*
+*at least Ahaben*
 :::
 
-**6.** `zawahel zavavul zol.`
+**6.** `zazawan zalahen zal vahahal derehal devewal wazem dal.`
 
 ::: details Show answer
+[z-Azawan | z-Alahen | z-and] | v-see | [d-ring | d-veil | w-respectively | d-and]
 
-[z-wine | z-flower | z-or-exactly-one]
-
-*wine or a flower (pick one)*
+*Azawan and Alahen see the ring and the veil, respectively.*
 :::
 
-**7.** `zawahel zavavul zerehal zel.`
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Ahaben, then Alahen, then Azawan.* (a turn order) `zahaben zalahen zazawan zael.` or `zahaben zalahen zazawan zel.`
 
 ::: details Show answer
+`zahaben zalahen zazawan zael.`
 
-[z-wine | z-flower | z-ring | z-rank/more]
+[z-Ahaben | z-Alahen | z-Azawan | z-in-order]
 
-*wine matters more than the flower, and the flower more than the ring*
+Sequence **`ae`** makes the first item the start; rank **`e`** would make it the most important.
 :::
 
-**8.** `zadozel zuom.`
+**2.** *neither kiss nor punch* `vegezal vabahel vul.` or `vegezal vabahel val vul.`
 
 ::: details Show answer
+`vegezal vabahel vul.`
 
-[z-tuxedo | z-anything-but.open]
+[v-kiss | v-punch | v-not]
 
-*anything but the tuxedo (and possibly more)*
+Items straight before **`vul`** are each denied; `vegezal vabahel val vul` only denies doing both.
 :::
 
-**9.** `zahaben zael derehal vahahal.`
+#### Fix it {#intermediate-fix-it}
+
+**1.** *every veil* <!-- lint: error -->`zevewal zual.`
 
 ::: details Show answer
+`zual gevewal.`
 
-[z-Ahaben | z-in-order] | d-ring | v-see
+[z-everything | g-veil]
 
-*Starting with Ahaben, they see the ring.*
-:::
-
-**10.** `zazawan zalahen zal gamazam gelavam wazem gal.`
-
-::: details Show answer
-
-[z-Azawan | z-Alahen | z-and] | [g-small | g-big | w-respectively | g-and]
-
-*Azawan and Alahen are small and big, respectively.*
+The kind goes after **`zual`** as a SHARED `/ɡ/`; a noun before the join is the one left out, *everything but the veil*.
 :::
 
 ## Advanced {#advanced}
