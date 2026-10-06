@@ -1118,28 +1118,34 @@ These limits apply to every join.
 
 *Because* / *if* use `/th/` plus `/b/` [**`barl`**](dependents.md#poles). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [VP and clause forms](join-across-roles.md#vp-clause-forms). Each item of a clause join is a full clause.
 
-### Translation practice {#advanced-translation-practice}
+### Practice {#advanced-practice}
 <a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Setting:** a treaty table
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *page* | `abehel` | |
-| *pen* | `ebewel` | |
-| *dove* | `adevel` | |
-| *seal* | `ezevom` | `ezevol` *seal* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *dove* | `adevel` | 🕊️ |
+| *imprimatur* | `ezevom` | 🦭 from *seal*: the stamp of approval |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *page* | `abehel` |
+| *pen* | `ebewel` |
+| *see* | `vahahal` |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
-**1.** *a page or a pen (the usual named menu)*
+**1.** *a page or a pen* (the usual named menu)
 
 ::: details Show answer
 `zabehel zebewel zon.`
@@ -1147,23 +1153,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 NAME[z-page | z-pen | z-or-exactly-one]
 :::
 
-**2.** *null* / *void*
-
-::: details Show answer
-`zan.`
-
-NAME[z-and]
-:::
-
-**3.** *any of a dove, a page, or a pen is fine (no order)*
-
-::: details Show answer
-`zadevel zabehel zebewel zor.`
-
-[z-dove | z-page | z-pen | z-anything]
-:::
-
-**4.** *Azawan and (just Ahaben)*
+**2.** *Azawan and (just Ahaben)*
 
 ::: details Show answer
 `zazawan { zahaben zal } zam.`
@@ -1171,12 +1161,20 @@ NAME[z-and]
 [z-Azawan | SCOPE[z-Ahaben | z-and] | z-and.open]
 :::
 
-**5.** *someone other than Alahen*
+**3.** *null* / *void*
 
 ::: details Show answer
-`zalahen zur.`
+`zan.`
 
-[z-Alahen | z-something-else]
+NAME[z-and]
+:::
+
+**4.** *Alahen sees something other than the dove.*
+
+::: details Show answer
+`zalahen dadevel dur vahahal.`
+
+z-Alahen | [d-dove | d-something-else] | v-see
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
@@ -1184,46 +1182,55 @@ NAME[z-and]
 **1.** `zoen.`
 
 ::: details Show answer
-
 NAME[z-equal-rank]
 
-*it's a draw* (stock)
+*It's a draw.* (the stock phrase)
 :::
 
-**2.** `zadevel zabehel zebewel zer.`
+**2.** `zazawan { zal } zam.`
 
 ::: details Show answer
-
-[z-dove | z-page | z-pen | z-whatever-ranks]
-
-*whichever of a dove, a page, or a pen ranks highest*
-:::
-
-**3.** `zazawan { zal } zam.`
-
-::: details Show answer
-
 [z-Azawan | SCOPE[z-none] | z-and.open]
 
 *Azawan and nothing*
 :::
 
-**4.** `zuol.`
+**3.** `zezevom zabehel zur.`
 
 ::: details Show answer
-
-z-anything-but
-
-*anything (goes)*
-:::
-
-**5.** `zezevom zabehel zur.`
-
-::: details Show answer
-
 [z-imprimatur | z-page | z-something-else]
 
 *something other than the seal and the page*
+:::
+
+**4.** `zalahen dabehel debewel dan vahahal.`
+
+::: details Show answer
+z-Alahen | NAME[d-page | d-pen | d-and] | v-see
+
+*Alahen sees “Page-and-Pen”* (the familiar pair).
+:::
+
+#### Pick one {#advanced-pick-one}
+
+**1.** *Azawan and (just the dove)* `zazawan { zadevel zal } zam.` or `zazawan zadevel zal zam.`
+
+::: details Show answer
+`zazawan { zadevel zal } zam.`
+
+[z-Azawan | SCOPE[z-dove | z-and] | z-and.open]
+
+The island keeps **`zal`** on the dove alone; without braces it closes Azawan and the dove together.
+:::
+
+**2.** *“Page and Pen”* (the familiar set phrase) `zabehel zebewel zan.` or `zabehel zebewel zal.`
+
+::: details Show answer
+`zabehel zebewel zan.`
+
+NAME[z-page | z-pen | z-and]
+
+**-n** names the list as one set phrase; **-l** is an ordinary *a page and a pen*.
 :::
 
 ## Reference tables {#reference-tables}
