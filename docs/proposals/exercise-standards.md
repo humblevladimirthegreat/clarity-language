@@ -49,7 +49,7 @@ Later, optionally: a client-side answer box that runs the parser on the learner'
 
 ### 3. A core learner vocabulary with spaced reuse
 
-Add an ordered **core vocabulary** list (a new column or a new CSV keyed to `lexicon-published.csv`) that assigns each learner root the checkpoint where it is first met.
+Add an ordered **core vocabulary** list that assigns each learner root the checkpoint where it is first met. It lives in the `core` column of `lexicon-published.csv` and `lexicon-compounds.csv` ([core vocabulary column](../meta/lexicon.md#core-vocabulary-column)).
 
 | Rule | Detail |
 |------|--------|
@@ -107,7 +107,7 @@ Out of scope. Claritish has almost no vocabulary to space, so it keeps its own p
 Each numbered step is one session. Scale: 53 checkpoints across 24 pages, about 100 lines each.
 
 1. **Fixes.** Apply the two fixes above. Also remove the 30 legacy `<a id="translation-practice…">` anchors still on grammar pages (nothing in the repo links them; check [site-redirects.md](../meta/site-redirects.md) first).
-2. **Core vocabulary list.** Settle the cap and the storage open questions first. Build the ordered list from the existing banks: first checkpoint in path order where each root appears. Output a report of checkpoints over the new-root cap. Do not trim checkpoints here; trimming is part of step 7.
+2. **Done.** **Core vocabulary list.** Settle the cap and the storage open questions first. Build the ordered list from the existing banks: first checkpoint in path order where each root appears. Output a report of checkpoints over the new-root cap. Do not trim checkpoints here; trimming is part of step 7. Result: the cap is 5 for every band; the list is the `core` column, seeded by `npm run core-vocabulary -- --write`. It has 220 core roots across 53 checkpoints. 12 checkpoints are over the cap, with 46 roots to move in step 7. The worst are `sakes.md` Beginner (14), `clause.md` Beginner (11), and `sakes.md` Intermediate, `roles.md` Intermediate and `comparatives.md` Advanced (10 each). Rerun `npm run core-vocabulary` for the current report.
 3. **Policy and gating.** Update [translation-exercises.md](../meta/translation-exercises.md) and [drill-generation.md](../meta/drill-generation.md) with items 1 to 5. Decide how a converted checkpoint is marked (for example the `### Practice` heading), so the new checks run only on converted checkpoints and the old ones keep passing until replaced.
 4. **Item-type and alternative checks.** Build checks for the **Pick one**, **Fix it** and **What changes** headings and their rules, and **Also correct:** parsing that compares morph readings, not strings. Update the drill coverage and spoiler padding scripts for the new item types.
 5. **Bank and vocabulary checks.** Build checks for the **New words** / **Review** groups (cue on every new row) and the new vs review root counts against the core list.
@@ -117,6 +117,4 @@ Each numbered step is one session. Scale: 53 checkpoints across 24 pages, about 
 
 ## Open questions
 
-- Is 5 new roots per checkpoint the right cap, or should it vary by band?
-- Does the core vocabulary live as a column in `lexicon-published.csv` or as a separate ordered list?
 - Should the answer box (item 2) be part of this standard or its own proposal?

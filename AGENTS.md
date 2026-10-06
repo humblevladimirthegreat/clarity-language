@@ -50,8 +50,8 @@ Each row names what the file owns. The file is the authority; this table is only
 
 | Source | Owns |
 |--------|------|
-| `data/lexicon-published.csv` | Published emoji-seeded roots. PoS and ending applied at use time. |
-| `data/lexicon-compounds.csv` | Conventional compounds without mid-word `x`. |
+| `data/lexicon-published.csv` | Published emoji-seeded roots. PoS and ending applied at use time. The `core` column is the core vocabulary order, [core vocabulary](docs/meta/lexicon.md#core-vocabulary-column). |
+| `data/lexicon-compounds.csv` | Conventional compounds without mid-word `x`, with the same `core` column. |
 | `data/lexicon-overlays.csv` | Closed overlay inventory and the anchor that teaches each row, [overlay kinds](docs/meta/parser-pipeline.md#overlay-kinds). New overlays attach to an existing published row. |
 
 ### Editor notes (`docs/meta/`, not published)

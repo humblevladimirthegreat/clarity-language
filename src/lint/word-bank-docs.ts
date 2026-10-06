@@ -455,11 +455,16 @@ function vocabUses(word: LexWord, tables: ClassifyTables): { root: string; overl
 }
 
 export function bankRoots(agazan: string, tables: ClassifyTables): string[] {
+  return bankUses(agazan, tables).map((use) => use.root);
+}
+
+/** Lexicon roots a bank cell spells, with `overlay` set where the cell is a closed overlay word on that root. */
+export function bankUses(agazan: string, tables: ClassifyTables): { root: string; overlay: boolean }[] {
   const surface = agazan.replace(/[.,!?]+$/, "");
   try {
     const morph = parseWord(surface);
     if (isForeignPayload(morph.family)) return [];
-    return vocabUses(classify(morph, tables), tables).map((use) => use.root);
+    return vocabUses(classify(morph, tables), tables);
   } catch (error) {
     // The English check reports a bank cell that does not parse.
     if (error instanceof WordParseError) return [];

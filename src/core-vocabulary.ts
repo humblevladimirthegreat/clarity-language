@@ -6,7 +6,7 @@
  */
 import { CLOSED } from "./closed-roots.js";
 import { DEFAULT_SELF_ROOT, fillSelf } from "./learner-name.js";
-import { bankRoots, findRootsTable, practiceRanges } from "./lint/word-bank-docs.js";
+import { bankUses, findRootsTable, practiceRanges } from "./lint/word-bank-docs.js";
 import { drillSections } from "./lint/drill-coverage.js";
 import { BANDS, pageSections, type Band } from "./lint/learning-order.js";
 import type { ClassifyTables } from "./parse/classify.js";
@@ -35,7 +35,7 @@ export type Checkpoint = {
   anchor: string;
   page: string;
   band: Band;
-  /** Counted bank roots, in table order, each once. */
+  /** Counted bank roots, in table order, each once (no overlay words, no {@link NOT_CORE_ROOTS}). */
   entries: BankEntry[];
 };
 
@@ -71,8 +71,9 @@ export function stageCheckpoints(
         const seen = new Set<string>();
         for (const row of table?.rows ?? []) {
           if (!row.agazan) continue;
-          for (const root of bankRoots(row.agazan, tables)) {
-            if (NOT_CORE_ROOTS.has(root) || seen.has(root)) continue;
+          for (const { root, overlay } of bankUses(row.agazan, tables)) {
+            // A closed overlay word is grammar, taught by its owning section.
+            if (overlay || NOT_CORE_ROOTS.has(root) || seen.has(root)) continue;
             seen.add(root);
             entries.push({ root, english: row.english ?? "", agazan: row.agazan });
           }

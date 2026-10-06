@@ -21,8 +21,8 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🤑,greed,egedo,wealth,greed hungers for wealth,,asset; wealthy; rich; poor,
 🤭,gasp,agabu,shock,gasp at a shock,,,
 🫣,peek,ebaga,surveillance,peek to spy; surveillance is watching without being the seen act,,monitor; glance,
-🤫,hush,aheha,confidentiality,a hushed whisper keeps the matter private,,,
-🤔,think,evega,doubt,think shows doubt,,understand; consider; consideration; reckon,
+🤫,hush,aheha,confidentiality,a hushed whisper keeps the matter private,,,sakes.md#intermediate-translation-practice
+🤔,think,evega,doubt,think shows doubt,,understand; consider; consideration; reckon,clause.md#beginner-translation-practice
 🫡,salute,azadu,respect,a salute honors someone; respect is honoring their worth,,civil; admire,
 🤐,secret,ezege,discretion,secret lips stay discreet,,private,
 🤨,skeptical,azoge,suspicion,a raised brow doubts someone; suspicion is expecting something is wrong,,suspect,
@@ -35,21 +35,21 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🙄,eye-roll,arahe,dismiss,eyeroll dismisses an idea,,,
 😬,grimace,egeyo,awkwardness,grimace shows awkwardness,,,
 😮‍💨,sigh,azawo,,,,,
-🤥,lie,alaha,deception,a lie leads others into false belief,,,
+🤥,lie,alaha,deception,a lie leads others into false belief,,,joins.md#beginner-translation-practice
 🙂‍↔️,head-shake,ehedo,refusal,a headshake says no to the request,,reject,
 🙂‍↕️,nod,anade,agreement,a nod says yes to what was said,,,
 😌,relief,ereva,calm,relief brings calm,,,
 😔,pensive,ebaze,melancholy,pensive face shows melancholy,,sad; depression,
-😪,sleepy,ezebu,torpor,sleepy eye shows drowsiness; torpor is the unobservable low arousal,,,
+😪,sleepy,ezebu,torpor,sleepy eye shows drowsiness; torpor is the unobservable low arousal,,,clause.md#beginner-translation-practice
 🤤,drool,uduho,craving,drool shows craving,,hunger,
 🫩,bleary,abeye,fatigue,bleary eyes show fatigue,,,
-😷,mask,amazo,illness,a medical mask marks the sick; illness is being unwell,,,
+😷,mask,amazo,illness,a medical mask marks the sick; illness is being unwell,,,clause.md#advanced-translation-practice
 🤒,sick,ezega,pathology,sick means illness; pathology is the unobservable condition-kind,,disease; ill; symptom,
 🤕,injured,enehe,harm,injured means hurt; harm is the unobservable detriment,,damage; hurt; injury; wound; abuse,
 🤢,nauseated,onoze,contamination,nauseated shows disgust; contamination is the unobservable reading that something is tainted,,pollution; dirty,
 🤮,vomit,avado,revulsion,vomit shows revulsion,,,
 🤧,sneeze,ezeza,infection,sneeze signals a cold; infection is the unobservable spread,,cough,
-🥵,hot,ahadu,fever,a hot face is the body overheating from within,,,
+🥵,hot,ahadu,fever,a hot face is the body overheating from within,,,sakes.md#beginner-translation-practice
 🥶,cold,ogode,,,,,
 🥴,woozy,uwuze,intoxication,woozy shows intoxication,,,
 🤯,mind-blown,amabo,astonishment,a mindblown head bursts with astonishment,,,
@@ -61,14 +61,14 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 😕,confused,agevu,perplexity,confused shows perplexity,,,
 😟,worried,eweda,concern,worried shows concern,,,
 ☹️,frown,avaya,disfavor,a frown shows disfavor; disfavor is the unobservable judgment against,,complaint,
-😮,surprise,ezu,amazement,surprise shows amazement,,sudden; amaze,
+😮,surprise,ezu,amazement,surprise shows amazement,,sudden; amaze,speech-moves.md#beginner-translation-practice
 😳,blush,abohe,embarrassment,blush shows embarrassment,,embarrass; ashamed,
 🥺,plead,ebewo,appeal,pleading eyes appeal,,charm; request,
 🥹,touched,adeho,,,,,
 😨,fear,evehe,threat-appraisal,fear means dread; threat-appraisal is the unobservable reading of danger,,afraid; scare; frighten,
-😰,anxious,anago,apprehension,anxious means anxiety; apprehension is the unobservable expected harm,,nervous; anxiety,
-😭,cry,agahu,anguish,sob shows anguish,,pain; depress,
-😱,scream,ezuge,horror,scream shows horror,,,
+😰,anxious,anago,apprehension,anxious means anxiety; apprehension is the unobservable expected harm,,nervous; anxiety,predication.md#intermediate-translation-practice
+😭,cry,agahu,anguish,sob shows anguish,,pain; depress,knowing.md#beginner-translation-practice
+😱,scream,ezuge,horror,scream shows horror,,,dependents.md#beginner-translation-practice
 😞,disappointed,edebo,disillusion,disappointed shows disappointment; disillusion is the unobservable fall from a frame,,,
 😓,stressed,ezedu,tension,stressed face shows tension,,disturb,
 😩,weary,eweve,spentness,weary means exhaustion; spentness is the unobservable empty tank,,,
@@ -76,7 +76,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥱,yawn,oyayo,monotony,yawn shows boredom; monotony is the situation offering nothing new,,bore,
 😤,huff,ahova,,,,,
 😡,rage,ereho,destructiveness,rage means fury; destructiveness is the unobservable will to wreck,,destroy; destruction,
-😠,angry,anege,hostility,angry means anger; hostility is the unobservable stance toward another,,hate; aggressive,
+😠,angry,anege,hostility,angry means anger; hostility is the unobservable stance toward another,,hate; aggressive,clause.md#beginner-translation-practice
 🤬,curse,egezo,profanity,cursing shows profanity,,damn,
 😈,devil,edeva,mischief,devil shows mischief,,vice; evil,
 💀,skull,azaga,death,a skull is what remains after death,,die; dead,
@@ -86,7 +86,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 👹,ogre,ogehe,menace,ogre shows menace,,threat; threaten,
 👺,goblin,ogabe,,,,,
 👻,ghost,ogoze,spookiness,a haunting ghost makes a place feel eerie,,,
-👽,alien,eleho,strangeness,an alien comes from somewhere unknown,,foreign; unusual,
+👽,alien,eleho,strangeness,an alien comes from somewhere unknown,,foreign; unusual,predication.md#intermediate-translation-practice
 🤖,robot,oroba,automation,a robot does the work by itself,,,
 🙈,blindfold,abodo,denial,a blindfold keeps you from seeing; denial refuses to see,,,
 🙉,earplugs,eraba,avoidance,earplugs shut out sound; avoidance shuts out the truth,,avoid,
@@ -96,26 +96,26 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💔,heartbreak,ahode,bereavement,heartbreak is the image; bereavement is the unobservable fact of losing someone or something dear,,,
 ❤️‍🔥,passion,abeho,fervor,heart fire shows fervor,,excitement,
 ❤️‍🩹,healing,ehewo,restitution,mending heart marks recovery; restitution is the unobservable making-whole,,compensation; restore,
-❤️,heart,aho,compassion,the heart feels for others; compassion is caring about their suffering,,center,
+❤️,heart,aho,compassion,the heart feels for others; compassion is caring about their suffering,,center,comparatives.md#advanced-translation-practice
 💋,lips,eleba,,,,,
 💯,hundred,ahaho,perfection,a hundred out of a hundred is a top mark,m.w:completely,perfect; totally; entirely; fully; altogether,
 💢,anger,anage,offense,anger symbol shows rage; offense is the unobservable reading that a wrong was done,,crime,
-🫯,fight,avada,struggle,fighting stance pushes through opposition; struggle is pushing through what holds you back,,battle; tackle,
+🫯,fight,avada,struggle,fighting stance pushes through opposition; struggle is pushing through what holds you back,,battle; tackle,dependents.md#beginner-translation-practice
 💥,boom,ubuhu,consequence,collision bursts; consequence is the unobservable follow-on,,outcome; result; effect,
 💫,dizzy,edezu,dazzle,dizzy stars swirl until the eyes are overwhelmed,,,
 💦,sweat,ozewe,effort,sweat drops show hard work; effort is work that costs you,,labor; strain,
-💨,dash,adehu,haste,dash of wind moves fast; haste is moving quickly,,rush; pace,
+💨,dash,adehu,haste,dash of wind moves fast; haste is moving quickly,,rush; pace,clause.md#beginner-translation-practice
 🕳️,hole,ohaho,void,a hole is an empty space with nothing in it,,gap,
-💬,speech,ezebe,discourse,speech is audible; discourse is the unobservable social practice,v:tell,say; talk; word; speak; language; discuss; discussion; description; communicate; communication; report; declare,
-👁️‍🗨️,attest,odo,testimony,eye-in-speech attests; testimony is the claim that seeing warrants saying,,swear; demonstrate,
+💬,speech,ezebe,discourse,speech is audible; discourse is the unobservable social practice,v:tell,say; talk; word; speak; language; discuss; discussion; description; communicate; communication; report; declare,clause.md#beginner-translation-practice
+👁️‍🗨️,attest,odo,testimony,eye-in-speech attests; testimony is the claim that seeing warrants saying,,swear; demonstrate,questions.md#intermediate-translation-practice
 🗯️,rant,aradu,outrage,rant shows outrage,,complain,
 💭,thought,ovu,commentary,thought balloon floats a take over the scene; commentary is mind storying instead of bare contact,,idea; concept; notion; remark; theoretical; comment,
-💤,sleep,ezeba,restoration,sleep means rest; restoration is the unobservable replenishing,,,
+💤,sleep,ezeba,restoration,sleep means rest; restoration is the unobservable replenishing,,,sakes.md#beginner-translation-practice
 👋,wave,eweva,acknowledgment,a wave acknowledges someone; acknowledgment is the unobservable uptake,,acknowledge; recognition; greet,
 ✋,hand,ahada,,,,,
 👌,ok,ogeha,acceptance,the ok sign says it is fine as it is; acceptance is letting it be,,accept; alright; adopt; fine,
 ✌️,victory,evego,triumph,peace sign shows triumph,,succeed; defeat; overcome,
-🤞,crossed-fingers,evege,hope,crossed fingers bring hope,,,
+🤞,crossed-fingers,evege,hope,crossed fingers bring hope,,,comparatives.md#advanced-translation-practice
 🤘,horns,ohozo,,,,,
 🤙,shaka,ahaga,contact,shaka invites contact,,,
 🖕,middle-finger,emedu,contempt,middle finger shows contempt,,,
@@ -123,13 +123,13 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 👍,thumbs-up,abewa,approval,thumbs-up shows approval,,approve; recommendation,
 👎,thumbs-down,avawu,disapproval,thumbs-down shows disapproval,,,
 ✊,fist,evedu,defiance,fist shows defiance,,resistance,
-👊,punch,abahe,force,punch delivers force,,push; tap,
+👊,punch,abahe,force,punch delivers force,,push; tap,dependents.md#beginner-translation-practice
 👏,clap,agebu,acclaim,clap is audible; acclaim is the unobservable verdict,,,
 🙌,hooray,uhohu,,,,,
 🫶,care,egehe,kindness,heart hands offer care; kindness is warmth shown to others,,tender,
 🤝,handshake,aha,co-participation,handshake seals shared presence; co-participation is sharing the floor,,participate; joint; interaction; membership; participation,
-🙏,pray,ebevo,gratitude,pray expresses gratitude,,grateful,
-✍️,write,arada,authorship,write puts words on the page; authorship is claiming those words,,author,
+🙏,pray,ebevo,gratitude,pray expresses gratitude,,grateful,sakes.md#intermediate-translation-practice
+✍️,write,arada,authorship,write puts words on the page; authorship is claiming those words,,author,clause.md#beginner-translation-practice
 💅,nail-polish,eneba,,,,,
 🤳,selfie,ezave,vanity,selfie reflects vanity,,,
 💪,bicep,abeze,strength,flex shows strength,,strong; arm; muscle; strengthen; exercise,
@@ -137,15 +137,15 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦿,prosthetic-leg,elego,,,,,
 🦵,leg,elega,,,,,
 🦶,foot,uvuda,foot-length,the unit was first measured off a human foot,,,
-👂,ear,ewa,hearsay,ear takes in what others say; hearsay is knowing by being told,v:hear,listen,
+👂,ear,ewa,hearsay,ear takes in what others say; hearsay is knowing by being told,v:hear,listen,comparatives.md#advanced-translation-practice
 🦻,hearing-aid,edaho,,,,,
-👃,nose,onoza,intuition,nose leads intuition,v:smell; m.v:intuit,sensitive; sense; impression,
+👃,nose,onoza,intuition,nose leads intuition,v:smell; m.v:intuit,sensitive; sense; impression,numbers.md#beginner-translation-practice
 🧠,brain,ebeha,intellect,the brain does the thinking,,mental; intellectual; smart; mind; intelligence; psychological; abstract,
-🫁,lungs,oyu,breath,lungs carry breath,,breathe; chest,
+🫁,lungs,oyu,breath,lungs carry breath,,breathe; chest,sakes.md#beginner-translation-practice
 🦷,tooth,uduva,,,,,
 🦴,bone,obo,structure,bone provides structure,,,
 👀,eyes,azaha,attention,eyes grant awareness,m.v:look,concentrate; observation; gaze,
-👁️,eye,ahaha,perception,eye enables perception,v:see,perceive; visual,
+👁️,eye,ahaha,perception,eye enables perception,v:see,perceive; visual,clause.md#beginner-translation-practice
 👅,tongue,adava,eloquence,tongue wields eloquence,,,
 👄,mouth,amava,,,,,
 🫦,lip-bite,elebu,sexuality,a lip-bite signals desire; sexuality is physical attraction,,bite; sex,
@@ -163,38 +163,38 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💁,sass,azaze,attitude,tipping hand shows attitude,,,
 🙋,raise-hand,ereze,initiative,raised hand volunteers; initiative is the unobservable willingness,,volunteer; undertake; keen; eager,
 🧏,deaf,adeva,,,,,
-🙇,bow,abaya,apology,a bow of regret; an apology owns a wrong,,excuse; apologize,
+🙇,bow,abaya,apology,a bow of regret; an apology owns a wrong,,excuse; apologize,sakes.md#intermediate-translation-practice
 🤦,face-palm,evezu,exasperation,facepalm shows exasperation,,,
 🤷,shrug,ahawe,uncertainty,a shrug says who knows; uncertainty is not knowing,,,
 🧑‍⚕️,heal,ehehu,recovery,the healer restores health; recovery is getting well again,,recover; therapy,
 🧑‍🎓,learn,eleha,scholarship,learning is study; scholarship is the unobservable knowledge-practice,,academic; scholar; study,
-🧑‍🏫,teach,edeho,instruction,a teacher explains so others learn,,educate; lesson,
+🧑‍🏫,teach,edeho,instruction,a teacher explains so others learn,,educate; lesson,predication.md#intermediate-translation-practice
 🧑‍⚖️,judge,ahahu,judgment,a judge weighs the case and rules,,assessment; assess; criticism; evaluation; evaluate,
 🧑‍🌾,farm,avavo,cultivation,a farm grows crops from tended soil,,farmer; culture; cultural; breed,
-🧑‍🍳,cook,uguga,nourishment,cooking provides nourishment,,,
+🧑‍🍳,cook,uguga,nourishment,cooking provides nourishment,,,pronouns.md#beginner-translation-practice
 🧑‍🔧,repair,arebe,maintenance,repair is keeping things in service,,maintain; fix,
 🧑‍🏭,manufacture,ameva,production,manufacture drives production,,product; generate; yield; produce,
 🧑‍💼,administrate,adede,bureaucracy,office work runs bureaucracy,,management; manage; administration,
 🧑‍🔬,research,areze,inquiry,research chases answers to open questions,,scientist; scientific; science; survey,
 🧑‍💻,program,oboga,innovation,programming drives innovation,,invent,
-🧑‍🎤,sing,ezehe,expression,singing gives expression,,express,
-🧑‍🎨,craft,ageva,creativity,crafting brings creativity,,creation; creative; technique,
+🧑‍🎤,sing,ezehe,expression,singing gives expression,,express,spans.md#beginner-translation-practice
+🧑‍🎨,craft,ageva,creativity,crafting brings creativity,,creation; creative; technique,predication.md#intermediate-translation-practice
 🧑‍✈️,pilot,abawo,navigation,piloting handles navigation,,,
 🧑‍🚀,orbit,oraba,exploration,orbiting seeks exploration,,explore,
 🧑‍🚒,firefight,avova,,,,,
-👮,police,abaze,authority,policing wields authority,,,
+👮,police,abaze,authority,policing wields authority,,,predication.md#beginner-translation-practice
 🕵️,investigate,une,deduction,investigating follows clues; deduction is the unobservable inference,,implication; logic; derive; interpretation,
-💂,guard,agavo,protection,guarding provides protection,,insure; protect,
-🥷,sneak,ezevu,stealth,sneaking moves with stealth,,,
-👷,construct,agoza,fabrication,construction builds structures,,build; install; formation; implement; implementation,
+💂,guard,agavo,protection,guarding provides protection,,insure; protect,dependents.md#beginner-translation-practice
+🥷,sneak,ezevu,stealth,sneaking moves with stealth,,,clause.md#beginner-translation-practice
+👷,construct,agoza,fabrication,construction builds structures,,build; install; formation; implement; implementation,roles.md#beginner-translation-practice
 🫅,reign,erevo,sovereignty,reigning embodies sovereignty,,,
 🤴,inherit,anehe,nobility,an inherited title passes rank down the family line,,,
 👸,court,ogodo,,,,,
 👳,turban,adebe,,,,,
 👲,skullcap,azugo,,,,,
 🧕,head-scarf,azuga,modesty,headscarf shows modesty,,,
-🤵,tuxedo,adoze,formality,tuxedo signals formality,,fancy; suit; format,
-👰,veil,evewa,matrimony,veil marks matrimony,,marriage,
+🤵,tuxedo,adoze,formality,tuxedo signals formality,,fancy; suit; format,joins.md#intermediate-translation-practice
+👰,veil,evewa,matrimony,veil marks matrimony,,marriage,joins.md#intermediate-translation-practice
 🫄,pregnant,ebego,expectancy,pregnant shows expectancy,,expectation; pregnancy,
 🤱,breastfeed,eboze,,,,breast,
 🧑‍🍼,feeding-baby,evedo,nurturing,feeding a baby helps it grow,,nurse,
@@ -216,55 +216,55 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🫈,bigfoot,ebagu,elusiveness,bigfoot stays elusive,,,
 💆,massage,ameza,soothing,massage brings relief,,,
 💇,haircut,ehegu,self-presentation,haircut is grooming; self-presentation is the unobservable aim,,,
-🚶,walk,owoga,,,,march; wander,
-🧍,stand,azado,presence,stand shows presence,,existence; attendance,
-🧎,kneel,eneha,submission,kneel shows submission,,,
+🚶,walk,owoga,,,,march; wander,predication.md#beginner-translation-practice
+🧍,stand,azado,presence,stand shows presence,,existence; attendance,clause.md#beginner-translation-practice
+🧎,kneel,eneha,submission,kneel shows submission,,,sakes.md#intermediate-translation-practice
 🧑‍🦼,power-chair,abavo,,,,,
 🧑‍🦽,propel,abobe,independence,self-propelling a chair shows independence,,motivate,
-🏃,run,araha,,,,,
+🏃,run,araha,,,,,speech-moves.md#beginner-translation-practice
 🧑‍🩰,ballet,ababu,,,,,
 🕺,dance,adaze,,,,,
 🕴️,levitate,aleve,elevation,levitating lifts a body off the ground,,,
 👯,partying,obade,revelry,partying dancers show revelry,,,
 🧖,sauna,ozohe,relaxation,sauna brings relaxation,,relax,
-🧗,climb,agaya,failure,a climb that doesn't top out is still climbing; failure is an attempt that didn't stick yet,,lose; miss; fail,
+🧗,climb,agaya,failure,a climb that doesn't top out is still climbing; failure is an attempt that didn't stick yet,,lose; miss; fail,restrictors.md#intermediate-translation-practice
 🤺,fencing,aveze,rivalry,fencers duel to beat each other,,rival; opponent,
 🏇,horse-race,ereza,pursuit,riders chase one another to the finish,,race; pursue; chase,
 ⛷️,ski,azuge,,,,,
 🏂,snowboard,ozobe,,,,,
 🏄,surf,azeva,,,,,
 🚣,row,oroha,,,,,
-🏊,swim,ezewe,,,,float,
-🏋️,lift,eleva,exertion,weightlift demands exertion,,raise,
+🏊,swim,ezewe,,,,float,restrictors.md#beginner-translation-practice
+🏋️,lift,eleva,exertion,weightlift demands exertion,,raise,comparatives.md#intermediate-translation-practice
 🚴,bike,abega,,,,,
 🚵,mountain-bike,amade,adventure,a mountain bike heads off-road into the unknown,,venture,
 🤸,cartwheel,egade,exuberance,cartwheel shows exuberance,,,
 🤼‍♂️,wrestle,areza,,,,,
 🤽,water-polo,owobo,competition,water polo teams battle to outscore each other,,compete; competitive,
-🤾,handball,ahodo,teamwork,handball needs teamwork,,team; crew,
+🤾,handball,ahodo,teamwork,handball needs teamwork,,team; crew,join-across-roles.md#intermediate-translation-practice
 🤹,juggle,ahoga,multitasking,a juggler keeps several balls in the air at once,,,
 🧘,meditation,amede,mindfulness,meditate builds mindfulness,,,
 🛀,bath,abeva,cleansing,bath brings cleansing,,wash,
 🛌,in-bed,enaha,rest,lying in bed; rest is recovering energy,,remain; stay; settle,
 🧑‍🤝‍🧑,holding-hands,ohoha,partnership,couple forms partnership,,,
-💏,kiss,egeza,intimacy,kiss shows intimacy,,,
+💏,kiss,egeza,intimacy,kiss shows intimacy,,,joins.md#intermediate-translation-practice
 💑,couple,agaba,relationship,a couple is bound together; a relationship is an ongoing tie,,relation,
 🗣️,orator,orade,rhetoric,an orator sways a crowd with persuasive words,,,
 👤,silhouette,ezuwe,,,,profile,
 🧑‍🦲,head,eheda,,,,principal,
 👥,silhouettes,azewe,community,busts form community,,society; club; association; folk; band; ethnic,
 🫂,hug,ahage,comfort,hug gives comfort,,comfortable; embrace,
-👪,family,avaha,kinship,a family is the people tied to you by blood,,household,
-👣,footprints,uvude,legacy,footprints leave legacy,v:go,trace; tour,
+👪,family,avaha,kinship,a family is the people tied to you by blood,,household,hooks.md#beginner-translation-practice
+👣,footprints,uvude,legacy,footprints leave legacy,v:go,trace; tour,roles.md#intermediate-translation-practice
 🫆,fingerprint,evebe,identity,fingerprint marks identity,,characteristic; personality,
 🐒,monkey,amage,mimicry,monkey see monkey do,,copy,
 🦍,gorilla,egewa,dominance,800-pound gorilla dominates,,dominate,
 🦧,orangutan,orada,,,,,
-🐕,dog,odoga,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,
+🐕,dog,odoga,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,spans.md#beginner-translation-practice
 🐺,wolf,uwuva,predation,wolf at the door,,,
 🦊,fox,avagu,cunning,sly as a fox,,,
-🦝,raccoon,aragu,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,,
-🐈,cat,agadu,curiosity,curiosity killed the cat,,wonder; curious; interest,
+🦝,raccoon,aragu,theft,the masked raccoon takes what is not its own; theft is taking without consent,m.v:steal,,roles.md#intermediate-translation-practice
+🐈,cat,agadu,curiosity,curiosity killed the cat,,wonder; curious; interest,knowing.md#advanced-translation-practice
 🦁,lion,alahe,courage,brave as a lion,,,
 🐅,tiger,adege,ferocity,fight like a tiger,,,
 🐆,leopard,elebe,nature,a leopard cannot change its spots,,environmental; wild; organic,
@@ -272,7 +272,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🫏,donkey,adoge,,,,,
 🐎,horse,ohoza,,,,,
 🦄,unicorn,uyugo,rarity,unicorn is rare magic,,unique; rare; extraordinary,
-🦓,zebra,ezo,contrast,zebra stripes show contrast,,,
+🦓,zebra,ezo,contrast,zebra stripes show contrast,,,dependents.md#intermediate-translation-practice
 🦌,deer,edewe,timidity,deer in headlights is timid,,,
 🦬,bison,abezu,,,,,
 🐃,buffalo,abova,drudgery,a buffalo pulls through drudgery,,,
@@ -284,11 +284,11 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🐪,camel,agehu,endurance,camel endures the desert,,,
 🦙,llama,alawe,composure,no drama llama stays composed,,,
 🦒,giraffe,ahevo,overview,giraffe sees the overview,,,
-🐘,elephant,elava,big,elephant is large in size,m.w:very,large; substantial,
+🐘,elephant,elava,big,elephant is large in size,m.w:very,large; substantial,clause.md#beginner-translation-practice
 🦣,mammoth,amave,enormity,mammoth is enormous in scale,,enormous; massive,
 🦏,rhinoceros,araze,charge,rhino charges headlong,,accuse; bill,
 🦛,hippopotamus,ehoba,bulk,hippo is sheer bulk,,majority; mass; fat,
-🐁,mouse,amaza,small,a mouse is small beside larger animals; small is little size,,little; tiny; minor; chip,
+🐁,mouse,amaza,small,a mouse is small beside larger animals; small is little size,,little; tiny; minor; chip,joins.md#intermediate-translation-practice
 🐀,rat,arade,,,,,
 🐹,hamster,ahoze,routine,hamster on a wheel of routine,,process; procedure; everyday; familiar,
 🐇,rabbit,araba,,,,,
@@ -304,17 +304,17 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦨,skunk,uzaga,stigma,skunk leaves a lasting stigma,,,
 🦘,kangaroo,agage,bounce,kangaroo bounces back,v:jump,leap,
 🦡,badger,abuhe,persistence,badger someone with persistence,,determination,
-🐾,paw-prints,oba,pattern,pawprints mark a trail; a pattern is the regularity the trail of cases leaves,,trail; track; creature,
+🐾,paw-prints,oba,pattern,pawprints mark a trail; a pattern is the regularity the trail of cases leaves,,trail; track; creature,comparatives.md#advanced-translation-practice
 🦃,turkey,edege,folly,a turkey gobbles loudly without making sense,,,
 🐔,chicken,ehega,cowardice,a chicken flees at the first scare,,,
 🐣,hatch,oha,emergence,a chick breaks out of its shell,,emerge; birth,
 🐦,bird,ebedu,freedom,free as a bird,,free,
 🐧,penguin,ebabe,,,,,
-🕊️,dove,adeve,tranquility,dove is a sign of peace,,,
+🕊️,dove,adeve,tranquility,dove is a sign of peace,,,joins.md#advanced-translation-practice
 🦅,eagle,egaha,vision,eagle eye sees far,,sight,
-🦆,duck,adagu,,,,,
+🦆,duck,adagu,,,,,relations.md#beginner-translation-practice
 🦢,swan,azawa,grace,swan glides with grace,,,
-🦉,owl,alaho,quietude,owl hunts without sound; quietude is low-noise manner,,,
+🦉,owl,alaho,quietude,owl hunts without sound; quietude is low-noise manner,,,restrictors.md#beginner-translation-practice
 🦤,dodo,ododu,obsolescence,dodo is dead and gone,,,
 🪶,feather,aveve,softness,a feather is light and gentle to touch; softness is a yielding feel,,,
 🦩,flamingo,avego,flamboyance,flamingo stands out flamboyantly,,,
@@ -334,7 +334,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🐋,whale,ewehe,magnitude,whale-sized magnitude,,,
 🐬,dolphin,adaya,,,,,
 🫍,orca,oraga,,,,,
-🦭,seal,ezevo,imprimatur,seal stamps a document as sanctioned; imprimatur is official backing,,sanction; stamp,
+🦭,seal,ezevo,imprimatur,seal stamps a document as sanctioned; imprimatur is official backing,,sanction; stamp,joins.md#advanced-translation-practice
 🐟,fish,eveho,abundance,plenty of fish in the sea,,plenty,
 🦈,shark,ahago,ruthlessness,shark is ruthless predator,,,
 🐙,octopus,ageda,reach,octopus reaches in every direction,,stretch; extension,
@@ -346,10 +346,10 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦐,shrimp,ehebo,insignificance,shrimp is small fry,,,
 🦑,squid,ezoga,obscurity,squid ink clouds the truth,,,
 🦪,oyster,ozeda,,,,,
-🐌,snail,ezeho,slow,slow as a snail,,,
+🐌,snail,ezeho,slow,slow as a snail,,,comparatives.md#beginner-translation-practice
 🦋,butterfly,ebade,,,,,
-🐛,bug,aboga,flaw,a computer bug makes a program go wrong,,error,
-🐜,ant,anado,diligence,ants work with diligence,,,
+🐛,bug,aboga,flaw,a computer bug makes a program go wrong,,error,spans.md#advanced-translation-practice
+🐜,ant,anado,diligence,ants work with diligence,,,plurality.md#beginner-translation-practice
 🐝,honeybee,ehabe,,,,,
 🪲,beetle,ebada,hardiness,a beetle's hard shell shrugs off hits,,solid; hard; firm,
 🐞,ladybug,elede,luck,ladybug brings luck,,lucky; fortune; fortunate,
@@ -364,7 +364,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦠,microbe,omago,contagion,microbe spreads contagion,,cell; virus,
 💐,bouquet,ubuge,congratulation,a bouquet is handed over to mark someone's success,,,
 🌸,cherry-blossom,ehebu,transience,cherry blossom fades quickly,,,
-💮,flower,avavu,,,,,
+💮,flower,avavu,,,,,causation.md#beginner-translation-practice
 🪷,lotus,oloda,purity,a lotus rises clean from muddy water,,,
 🏵️,rosette,aruze,,,,,
 🌹,rose,oroza,romance,rose stands for romance,,romantic,
@@ -374,38 +374,38 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🌼,blossom,aboba,freshness,blossom signals freshness,,fresh,
 🌷,tulip,uduba,affection,tulip gift shows affection,,,
 🪻,hyacinth,ahazu,spring,hyacinth blooms in spring,,,
-🌱,seedling,uze,growth,a seedling pushes up out of the soil,,grow; seed; expansion; increase; development; develop; expand; mature,
-🪴,house-plant,ahabo,tending,a houseplant needs care,,plant; garden,
+🌱,seedling,uze,growth,a seedling pushes up out of the soil,,grow; seed; expansion; increase; development; develop; expand; mature,causation.md#beginner-translation-practice
+🪴,house-plant,ahabo,tending,a houseplant needs care,,plant; garden,causation.md#beginner-translation-practice
 🌳,tree,edehu,stability,tree roots give stability,,stable; steady,
 🌴,palm,abahu,escape,a palm means vacation escape,,,
 🌵,cactus,aguge,,,,,
-🌾,grain,egeve,harvest,a sheaf of grain marks harvest,,crop,
+🌾,grain,egeve,harvest,a sheaf of grain marks harvest,,crop,pronouns.md#intermediate-translation-practice
 🌿,herb,ebahe,,,,,
 🍀,shamrock,ahawu,,,,,
 🍁,maple,emeba,change,maple leaves mark seasonal change,,switch; variable; alter; modify; shift; convert,
 🍃,leaf,elevo,,,,,
 🍂,fallen-leaf,eleve,autumn,leaves fall in autumn; autumn is the season of falling leaves,,,
-🪹,empty-nest,eno,emptiness,empty nest shows emptiness,,empty,
+🪹,empty-nest,eno,emptiness,empty nest shows emptiness,,empty,comparatives.md#advanced-translation-practice
 🪺,nest,eneza,nurture,nest nurtures young,,sustain; rear,
 🍄,mushroom,amahu,proliferation,mushrooms pop up overnight,,,
 🪾,dead-tree,ededa,decay,dead tree shows decay,,,
-🍇,grape,egeba,disparagement,sour grapes runs down what you cannot reach,,,
-🍈,melon,emeho,fruit,a melon is a sweet seed-bearing food; fruit is the seed-bearing food of a plant,,,
+🍇,grape,egeba,disparagement,sour grapes runs down what you cannot reach,,,joins.md#beginner-translation-practice
+🍈,melon,emeho,fruit,a melon is a sweet seed-bearing food; fruit is the seed-bearing food of a plant,,,joins.md#beginner-translation-practice
 🍉,watermelon,owoda,refreshment,watermelon is cold juicy water on a hot day,,,
 🍊,tangerine,adehe,skin,a tangerine peel is its outer covering; skin is the outer covering of a body,,,
 🍋,lemon,elehu,defect,a lemon is a bad deal,,,
 🍋‍🟩,lime,alahu,zest,lime adds zest and tang,g:sour,tart; tangy,
 🍌,banana,abayo,madness,to go bananas is to lose your head,,,
 🍍,pineapple,abuba,hospitality,pineapple welcomes with hospitality,,invitation; invite,
-🥭,mango,amego,exoticism,mango tastes of the exotic,,,
+🥭,mango,amego,exoticism,mango tastes of the exotic,,,joins.md#beginner-translation-practice
 🍎,apple,abovu,temptation,forbidden apple is temptation,,,
 🍐,pear,abeyo,mishap,gone pear-shaped is mishap,,accident,
 🍑,peach,ebaha,excellence,something peachy is as fine as a ripe peach,,,
 🍒,cherry,eheva,bonus,the cherry on top is the extra finishing touch,,,
-🍓,strawberry,ozo,sweetness,a ripe strawberry tastes of sugar,,sweet,
+🍓,strawberry,ozo,sweetness,a ripe strawberry tastes of sugar,,sweet,sakes.md#beginner-translation-practice
 🫐,blueberry,ububo,,,,,
 🥝,kiwi,agewe,oddity,fuzzy kiwi is an odd fruit,,odd; weird,
-🍅,tomato,adedo,controversy,tomato fruit or vegetable controversy,,debate; controversial; argument,
+🍅,tomato,adedo,controversy,tomato fruit or vegetable controversy,,debate; controversial; argument,joins.md#beginner-translation-practice
 🫒,olive,aleva,,,,,
 🥥,coconut,ogoga,toughness,hard nut to crack is tough,,tough,
 🥑,avocado,avoga,premium,avocado toast is premium living,,,
@@ -413,7 +413,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥔,potato,abude,,,,,
 🥕,carrot,agodo,incentive,carrot on a stick is incentive,,,
 🌽,corn,ogoha,kitsch,a corny joke is hokey and overdone,,,
-🌶️,pepper,obebe,heat,hot pepper brings heat,,,
+🌶️,pepper,obebe,heat,hot pepper brings heat,,,causation.md#beginner-translation-practice
 🫑,bell-pepper,abebe,,,,,
 🥒,cucumber,aguyu,,,,,
 🥬,greens,egewo,vitality,leafy greens fuel vitality,,vital; vegetable,
@@ -426,12 +426,12 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🫚,ginger,ahehe,,,,,
 🫛,pea,abewo,,,,,
 🫜,beet,eboda,,,,,
-🍞,bread,ebevu,staple,bread and butter is staple,,,
-🥐,croissant,ogaza,,,,,
-🥖,baguette,uboge,,,,,
+🍞,bread,ebevu,staple,bread and butter is staple,,,joins.md#beginner-translation-practice
+🥐,croissant,ogaza,,,,,numbers.md#beginner-translation-practice
+🥖,baguette,uboge,,,,,numbers.md#beginner-translation-practice
 🫓,flat-bread,avabe,simplicity,flatbread is simple fare,g:bland,plain,
 🥨,pretzel,ebadu,complexity,a pretzel is knotted and twisted back on itself,,complex; complicate,
-🥯,bagel,ebago,,,,,
+🥯,bagel,ebago,,,,,numbers.md#beginner-translation-practice
 🥞,pancake,abogu,flattening,pancake flattens under pressure,,flat; thin; panel; smooth,
 🧇,waffle,awava,indecision,to waffle is to flip back and forth,,,
 🧀,cheese,eheze,,,,,
@@ -440,21 +440,21 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥩,steak,ezedo,seriousness,steak dinner is serious business,,serious,
 🥓,bacon,ebage,indulgence,bacon is guilty indulgence,,,
 🍔,hamburger,ahobe,mainstream,burger is mainstream fare,,,
-🍟,fries,avaze,accessory,fries are a side accessory,,supplement,
+🍟,fries,avaze,accessory,fries are a side accessory,,supplement,pronouns.md#intermediate-translation-practice
 🍕,pizza,abeda,camaraderie,pizza night builds camaraderie,,,
-🌭,hotdog,ahudo,showmanship,a hotdog is flashy showmanship,,exhibit,
-🥪,sandwich,aza,compromise,sandwich layers are compromise,,,
+🌭,hotdog,ahudo,showmanship,a hotdog is flashy showmanship,,exhibit,comparatives.md#advanced-translation-practice
+🥪,sandwich,aza,compromise,sandwich layers are compromise,,,plurality.md#beginner-translation-practice
 🌮,taco,adego,variety,taco bar offers variety,,sort; type,
 🌯,burrito,ebado,encapsulation,burrito wraps it all up,,,
 🫔,tamale,adayu,,,,,
 🧆,falafel,aveva,alternative,falafel is a meat alternative,,substitute,
-🥚,egg,ega,potential,egg holds unrealized potential,,,
+🥚,egg,ega,potential,egg holds unrealized potential,,,sakes.md#beginner-translation-practice
 🍳,cooking,uguge,,,,,
 🥘,skillet,ozega,medley,many components one pan,,,
 🍲,stew,uzudu,simmer,heat over time,,pot,
 🫕,fondue,avadu,sharing,everyone dips from one shared pot,,,
-🥣,cereal,eze,capacity,bowl holds what it can,,,
-🥗,salad,azavu,,,,,
+🥣,cereal,eze,capacity,bowl holds what it can,,,comparatives.md#advanced-translation-practice
+🥗,salad,azavu,,,,,hooks.md#beginner-translation-practice
 🍿,popcorn,ababo,entertainment,popcorn at the show is entertainment,,entertain,
 🧈,butter,abode,flattery,butter someone up with flattery,,,
 🧂,salt,ozode,skepticism,take it with a grain of salt,,,
@@ -476,48 +476,48 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥠,fortune-cookie,ovogu,prophecy,fortune cookie foretells fate,,,
 🥡,takeout,edaga,,,,,
 🍦,ice-cream,azege,summer,ice cream is a summer treat; summer is the hot season,,,
-🍩,doughnut,odode,reward,donut is a sweet reward,,profit,
-🍪,cookie,ugugo,compliance,browser cookie tracks compliance,,,
+🍩,doughnut,odode,reward,donut is a sweet reward,,profit,numbers.md#beginner-translation-practice
+🍪,cookie,ugugo,compliance,browser cookie tracks compliance,,,pronouns.md#beginner-translation-practice
 🎂,birthday,ebeva,age,a birthday marks years lived; age is how old on the continuum,,,
 🍰,shortcake,ohodu,,,,,
 🧁,cupcake,agube,coda,cupcake is a sweet course; coda is the unobservable closing role,,,
-🥧,pie,abawu,,,,,
+🥧,pie,abawu,,,,,numbers.md#beginner-translation-practice
 🍫,chocolate,ohoga,,,,,
 🍬,candy,agede,sugar,candy is sweetened; sugar is what sweetens,,,
 🍭,lollipop,alabu,pacification,lollipop pacifies a child,,,
 🍮,custard,agoze,richness,custard is thick with cream and eggs,,,
 🍯,honey,ahahe,endearment,honey is a sweet endearment,,,
-🍼,baby-bottle,abadu,inhibition,bottle holds liquid inside; bottle is held-in charge,,bottle,
+🍼,baby-bottle,abadu,inhibition,bottle holds liquid inside; bottle is held-in charge,,bottle,numbers-applied.md#intermediate-translation-practice
 🥛,milk,emega,,,,,
 ☕,coffee,agave,alertness,coffee fuels alertness,g:bitter,,
-🫖,teapot,edebu,ceremony,teapot pours with ceremony,,,
+🫖,teapot,edebu,ceremony,teapot pours with ceremony,,,hooks.md#beginner-translation-practice
 🍵,tea,edehe,,,,,
 🍶,sake,ezegu,ritual,sake toast is ritual,,,
 🍾,champagne,ahebe,,,,,
-🍷,wine,awahe,refinement,wine signals refinement,,,
+🍷,wine,awahe,refinement,wine signals refinement,,,plurality.md#beginner-translation-practice
 🍸,cocktail,agoge,blend,cocktail blends many flavors,,combine; mixture; stir; mix; compound,
 🍹,mock-tail,amado,escapism,tropical drink is vacation escapism,,,
-🍺,beer,ebeho,,,,,
+🍺,beer,ebeho,,,,,hooks.md#beginner-translation-practice
 🥂,cheers,eheza,,,,,
 🥃,whiskey,eweze,fortitude,whiskey warms with fortitude,,,
-🫗,pour,oboho,loss-of-control,pour directs liquid; loss-of-control is the unobservable slip,,slip,
+🫗,pour,oboho,loss-of-control,pour directs liquid; loss-of-control is the unobservable slip,,slip,pronouns.md#beginner-translation-practice
 🥤,soda,ozoda,plastic,a soda bottle is molded plastic; plastic is a moldable synthetic material,v:drink,pop,
 🧋,bubble-tea,edewo,trendiness,bubble tea is trendy now,,trend; fashion,
 🧃,juice,uhuza,vigor,juice box fuels vigor,,,
 🧉,mate,emeda,fellowship,mate is shared fellowship,,fellow,
-🧊,ice,azaho,kelvin,ice marks thermodynamic temperature; kelvin is the SI temperature unit,,,
+🧊,ice,azaho,kelvin,ice marks thermodynamic temperature; kelvin is the SI temperature unit,,,restrictors.md#intermediate-translation-practice
 🥢,chopsticks,ahube,,,,,
-🍽️,plate,ebede,service,plate is set for service,,help; desk; dish; assistance; favor; aid,
+🍽️,plate,ebede,service,plate is set for service,,help; desk; dish; assistance; favor; aid,hooks.md#beginner-translation-practice
 🍴,cutlery,agade,provision,cutlery enables provision,v:eat,supply; resource; meal; food; diet,
-🥄,spoon,uzubu,portion,spoon measures a portion,,component; segment,
-🔪,knife,anava,severity,a knife cuts deep and hard,,sharp; severe,
+🥄,spoon,uzubu,portion,spoon measures a portion,,component; segment,numbers-applied.md#intermediate-translation-practice
+🔪,knife,anava,severity,a knife cuts deep and hard,,sharp; severe,pronouns.md#beginner-translation-practice
 🫙,jar,ahe,storage,jar stores what is kept,,vessel; store; stock,
 🏺,amphora,ameve,,,,,
 🌐,globe,ogoba,connected,a globe links every place; connected means linked together,,global; world; earth,
-🗺️,map,ama,plan,a map charts a route; a plan charts a course,,agenda; design; project,
+🗺️,map,ama,plan,a map charts a route; a plan charts a course,,agenda; design; project,comparatives.md#intermediate-translation-practice
 🗾,country,agu,scope,a map of one country; scope is the area the picture includes,,national; region; nation; extent; regional; zone; territory; area,
-🧭,compass,ame,direction,a compass points the way; direction is where you're headed,,direct; guide,
-⛰️,mountain,amada,challenge,mountains are hard to climb; a challenge is hard to face,,pile; heap,
+🧭,compass,ame,direction,a compass points the way; direction is where you're headed,,direct; guide,sakes.md#beginner-translation-practice
+⛰️,mountain,amada,challenge,mountains are hard to climb; a challenge is hard to face,,pile; heap,predication.md#beginner-translation-practice
 🛘,landslide,alaze,breakdown,landslide is sudden collapse; breakdown is the unobservable failure of a system,,crash; collapse; crack; outage,
 🌋,volcano,avoge,eruption,a volcano bursts outward; eruption is bursting emotion,,burst,
 🏕️,camp,agabo,,,,,
@@ -528,34 +528,34 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🏟️,stadium,ezade,contest,a stadium hosts competition; contest is the unobservable stakes,,tournament,
 🏛️,colonnade,agedu,institution,grand columns mark public power; institution is established order,,official; column; establishment; politics; govern,
 🧱,brick,eve,foundation,bricks stack from the ground up; foundation is the base layer,,wall; basis; framework; underlie; base,
-🪨,rock,araga,heavy,rock is hard to lift; heaviness is weight on a scale,,stone; weight; concrete; firmly,
-🪵,wood,uwu,raw,wood is unfinished material; raw is unprocessed state,,log,
+🪨,rock,araga,heavy,rock is hard to lift; heaviness is weight on a scale,,stone; weight; concrete; firmly,plurality.md#intermediate-translation-practice
+🪵,wood,uwu,raw,wood is unfinished material; raw is unprocessed state,,log,x-compounds.md#beginner-translation-practice
 🛖,hut,ahede,locality,hut sits in a small settlement; locality is the near neighborhood,,local; neighborhood,
-🏠,house,ahaza,home,a house is walls and roof; home is where you belong,,domestic; accommodation; chamber,
+🏠,house,ahaza,home,a house is walls and roof; home is where you belong,,domestic; accommodation; chamber,relations.md#intermediate-translation-practice
 🏢,office,oveza,corporate,tall offices for business; corporate is organized commerce,,facility; corporation; agency,
 🏤,post-office,oveze,conveyance,post office sends mail; conveyance is the unobservable transfer-as-kind,,delivery; transportation; transfer; transport,
-🏥,hospital,ahazo,,,,,
+🏥,hospital,ahazo,,,,,word-endings.md#intermediate-translation-practice
 🏦,bank,abagu,security,bank keeps money safe; security is kept safe,,deposit,
 🏨,hotel,ohode,,,,,
 🏩,motel,omode,privacy,discreet lodging,,,
 🏪,convenience-store,ageve,convenience,corner store is always nearby; convenience is easy to reach,,shop,
-🏫,school,uzugu,education,school teaches; education is learning over time,,educational; course,
+🏫,school,uzugu,education,school teaches; education is learning over time,,educational; course,word-endings.md#beginner-translation-practice
 🏬,department-store,ozodo,market,a department store gathers many stalls under one roof; a market is where goods are traded,,economic; economy; retail; commercial,
-🏭,factory,avage,output,factory turns out goods; output is the unobservable result-role,,industrial,
+🏭,factory,avage,output,factory turns out goods; output is the unobservable result-role,,industrial,numeric-derivation.md#advanced-translation-practice
 🏰,castle,agazo,impregnability,castle walls defend within; fortress is defended stronghold,,,
 💒,wedding,ewede,union,wedding chapel joins two people; union is joining together,,marry; combination; federal,
 🗼,tower,adave,height,tower rises high; height is vertical extent,,high; tall; peak; top,
 🗽,statue,azoda,liberty,statue of liberty,,liberal,
-⛪,church,eheha,faith,church gathers believers; faith is trust in what is unseen,,religious; religion,
+⛪,church,eheha,faith,church gathers believers; faith is trust in what is unseen,,religious; religion,sakes.md#intermediate-translation-practice
 🕌,mosque,ameze,,,,,
 🛕,temple,edeba,,,,,
 🕍,synagogue,ezugo,,,,,
 ⛩️,shrine,ahawa,shinto,a shrine marks the way; shinto is keeping it,,,
 🕋,sanctuary,azogu,quest,kaaba draws the faithful; quest is the unobservable sacred aim,,,
 ⛲,fountain,avade,,,,,
-⛺,tent,ededu,,,,,
+⛺,tent,ededu,,,,,sakes.md#beginner-translation-practice
 🌁,foggy,avuge,purport,foggy skyline leaves outlines unclear; purport is claimed but unsettled,,imply,
-🌃,night,anada,unknown,night hides what day shows; unknown is what is hidden,,darkness; dark,
+🌃,night,anada,unknown,night hides what day shows; unknown is what is hidden,,darkness; dark,restrictors.md#beginner-translation-practice
 🏙️,skyline,ezaga,urban,towers and lights fill the skyline; urban is city life,,city,
 🏡,cottage,agedo,rural,a cottage with a garden sits out of town; rural is country life,,,
 🌄,daybreak,edebe,dawn,sun rises over peaks; dawn is a new beginning,,morning,
@@ -571,10 +571,10 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🎢,rollercoaster,orogo,volatility,a rollercoaster rises and drops; volatility swings up and down,,,
 💈,shave,ehevo,,,,,
 🎪,circus,azega,spectacle,circus tent promises a show; spectacle is a striking display,,exhibition; demonstration,
-🚆,train,edeha,momentum,train stays on its track; momentum keeps moving forward,,rail,
-🚉,station,ezede,hub,station connects many routes; hub is where paths meet,,platform,
+🚆,train,edeha,momentum,train stays on its track; momentum keeps moving forward,,rail,clause.md#intermediate-translation-practice
+🚉,station,ezede,hub,station connects many routes; hub is where paths meet,,platform,relations.md#intermediate-translation-practice
 🚌,bus,abazu,commute,bus carries many riders daily; commute is the daily journey,,,
-🚑,ambulance,amaba,emergency,ambulance rushes to crisis; emergency is urgent crisis,,,
+🚑,ambulance,amaba,emergency,ambulance rushes to crisis; emergency is urgent crisis,,,word-endings.md#intermediate-translation-practice
 🚒,fire-truck,avava,newton,a firetruck pushes; newton is the SI force unit,,,
 🚓,police-car,agahe,enforcement,the police car enforces rules; enforcement is making rules stick,,,
 🚕,taxi,adage,hire,taxi is hired for a ride; hire is paying for service,,rent; recruit; engage,
@@ -592,83 +592,83 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ⛽,gas-pump,agoba,refuel,gas station fills the tank; refuel is restoring energy,,fuel; pump; gas,
 🛞,wheel,ewawe,motion,wheel enables motion,,movement; roll; move; gesture,
 🚦,traffic-light,alado,directive,traffic light tells go or stop; signal is a clear instruction,,,
-🛑,stop,azada,cessation,stop sign means do not proceed; halt is bringing movement to stop,,cancel; eliminate,
-🚧,construction,ageza,blockage,construction blocks the road; blockage is something in the way,,block; barrier; architecture,
-⚓,anchor,age,grounding,anchor holds the ship steady; grounding is staying steady,,,
-🛟,life-buoy,alavu,rescue,a lifebuoy is thrown to pull someone from the water,,,
+🛑,stop,azada,cessation,stop sign means do not proceed; halt is bringing movement to stop,,cancel; eliminate,spans.md#beginner-translation-practice
+🚧,construction,ageza,blockage,construction blocks the road; blockage is something in the way,,block; barrier; architecture,roles.md#beginner-translation-practice
+⚓,anchor,age,grounding,anchor holds the ship steady; grounding is staying steady,,,hooks.md#advanced-translation-practice
+🛟,life-buoy,alavu,rescue,a lifebuoy is thrown to pull someone from the water,,,roles.md#intermediate-translation-practice
 🛶,canoe,agawo,lake,a canoe floats on a lake,,,
-🚤,boat,oboda,superficiality,speedboat skims; superficiality is staying on the surface of meaning,,,
-🚢,ship,eheba,voyage,ship crosses open seas; voyage is a long sea journey,,journey; sail,
+🚤,boat,oboda,superficiality,speedboat skims; superficiality is staying on the surface of meaning,,,roles.md#intermediate-translation-practice
+🚢,ship,eheba,voyage,ship crosses open seas; voyage is a long sea journey,,journey; sail,roles.md#intermediate-translation-practice
 ✈️,airplane,erabe,,,,plane; aircraft; flight,
-🛫,departure,edaba,abandonment,plane lifting off leaves the ground; departure is setting out,,abandon,
+🛫,departure,edaba,abandonment,plane lifting off leaves the ground; departure is setting out,,abandon,knowing.md#beginner-translation-practice
 🛬,arrival,evaha,reaching,plane touching down reaches destination; arrival is reaching the end,,,
 🪂,parachute,ebahu,descent,parachute slows a fall; descent is coming down safely,,sink,
-💺,seat,ezeda,passive,seat holds you while others move; passive is not acting yourself,,,
+💺,seat,ezeda,passive,seat holds you while others move; passive is not acting yourself,,,numbers.md#intermediate-translation-practice
 🚁,helicopter,ehege,,,,,
 🚠,gondola,agude,ampere,a gondola runs along a cable like current; ampere is the SI current unit,,,
 🛰️,satellite,azeda,distance,a satellite hangs far overhead; distance is how far away something is,,far; distant; remote; faraway,
 🚀,rocket,arage,launch,rocket blasts into the sky; launch is a bold start,,establish,
 🛸,ufo,uyuvo,,,,,
 🛎️,bellhop,eboha,,,,,
-🧳,luggage,alage,encumbrance,luggage is what you carry; encumbrance is the unobservable drag,v:carry,take,
+🧳,luggage,alage,encumbrance,luggage is what you carry; encumbrance is the unobservable drag,v:carry,take,dependents.md#intermediate-translation-practice
 ⌛,elapsed,enu,recency,hourglass just emptied; recency is nearness in time,,newly,
-⏳,hourglass,agaze,hour,hourglass sand marks civil duration; hour is the everyday duration unit,,,
+⏳,hourglass,agaze,hour,hourglass sand marks civil duration; hour is the everyday duration unit,,,numbers-applied.md#intermediate-translation-practice
 ⌚,watch,awaha,punctuality,watch tracks the exact moment; punctuality is being on time,,observe,
 ⏰,alarm-clock,elaga,weekday,alarm clock starts each morning of the week; a weekday is a day of the week,,,
 ⏱️,stopwatch,azade,second,stopwatch ticks off short intervals; second is the SI time unit,,moment,
 🕒,minute-hand,avega,minute,the clock hand steps on one minute at a time; minute is sixty seconds,,,
 ⏲️,timer,oma,deadline,timer counts down to zero; deadline is the moment time runs out,,,
-🕰️,clock,agaga,passage,a clock marks hours passing; passage is time going by,,transition; pass; era,
+🕰️,clock,agaga,passage,a clock marks hours passing; passage is time going by,,transition; pass; era,dependents.md#intermediate-translation-practice
 🕐,time,adaha,duration,clock face marks duration,,session,
 🌙,moon,umuha,month,the moon runs one cycle a month; month is the lunar-cycle unit,,phase,
-🌡️,thermometer,evede,temperature,thermometer reads how hot or cold; temperature is the heat continuum,,,
-☀️,sun,azahe,joule,sun radiates energy; joule is the SI energy unit,,,
+🌡️,thermometer,evede,temperature,thermometer reads how hot or cold; temperature is the heat continuum,,,word-endings.md#intermediate-translation-practice
+☀️,sun,azahe,joule,sun radiates energy; joule is the SI energy unit,,,causation.md#beginner-translation-practice
 🪐,saturn,azode,grandeur,ringed planet looms vast in space; grandeur is impressive scale,,grand; planet; impressive,
 ⭐,star,oza,fame,a star is seen by everyone; fame is being widely known,,reputation,
 🌠,shooting-star,ohu,wish,shooting star grants a wish,,,
 🌌,galaxy,agege,vastness,a galaxy holds billions of stars,,vast; universe,
-☁️,cloud,agavu,sky,clouds fill the sky,,atmosphere,
+☁️,cloud,agavu,sky,clouds fill the sky,,atmosphere,knowing.md#intermediate-translation-practice
 ⛅,cloudy,ogade,weather,sun behind cloud is a partly-cloudy sky; weather is the usual climate,,,
-⛈️,thunderstorm,avode,,,,storm,
+⛈️,thunderstorm,avode,,,,storm,restrictors.md#beginner-translation-practice
 🌦️,showers,aheze,,,,,
-🌧️,rain,erehe,letdown,rain on the parade; a letdown is a hope that fell through,,,
-🌨️,snow,ozezo,stillness,snow quiets the landscape; stillness is calm / slack water,,,
+🌧️,rain,erehe,letdown,rain on the parade; a letdown is a hope that fell through,,,restrictors.md#beginner-translation-practice
+🌨️,snow,ozezo,stillness,snow quiets the landscape; stillness is calm / slack water,,,restrictors.md#intermediate-translation-practice
 🌪️,tornado,ododo,turmoil,tornado tears through order; turmoil is violent disorder,,,
-🌫️,fog,avege,confusion,fog blurs what is near; confusion blurs what is clear,,,
-🌬️,wind,ewedu,influence,wind pushes unseen; influence moves others without force,,affect; blow; air,
+🌫️,fog,avege,confusion,fog blurs what is near; confusion blurs what is clear,,,restrictors.md#intermediate-translation-practice
+🌬️,wind,ewedu,influence,wind pushes unseen; influence moves others without force,,affect; blow; air,sakes.md#beginner-translation-practice
 🌀,cyclone,azego,chaos,cyclone spins into chaos,,,
 🌈,rainbow,erebo,diversity,a rainbow holds every color; diversity is many kinds together,,vary,
-☂️,umbrella,amebe,,,,,
+☂️,umbrella,amebe,,,,,questions.md#beginner-translation-practice
 ⚡,lightning,alede,insight,lightning flashes in an instant; insight is a sudden flash,,,
 ❄️,snowflake,ozove,coldness,a snowflake melts cold on your skin,,,
 ☃️,snowman,ozoha,temporary,snowman melts when warmth returns; temporary does not last,,,
 ☄️,comet,agode,,,,,
-🔥,fire,avahe,,,,burn,
+🔥,fire,avahe,,,,burn,numbers.md#beginner-translation-practice
 💧,droplet,adaba,beginning,one droplet starts the flow; beginning is a small start,,source; original; initial; wet; liquid,
-🌊,ocean,ohaha,overwhelm,ocean is vast surging water; flood is high-arousal surge,,sea; flood,
+🌊,ocean,ohaha,overwhelm,ocean is vast surging water; flood is high-arousal surge,,sea; flood,comparatives.md#beginner-translation-practice
 🎃,jack-o-lantern,ohahe,concealment,jack-o-lantern hides a carved face; disguise hides true identity,,hide,
 🎄,christmas-tree,egede,tradition,christmas tree marks yearly ritual; tradition is repeated custom,,traditional; conservative; classic; convention; conventional; classical,
 🎆,fireworks,avawe,year,fireworks greet each new year; year is the calendar-year unit,,,
 🎇,sparkle,azoba,coulomb,a sparkler holds electric charge in the hand; coulomb is the SI charge unit,,,
 🧨,firecracker,avuga,,,,,
 ✨,sparkles,azuba,hertz,sparkles flicker in fast repeats; hertz is the SI frequency unit,,frequency,
-🎈,balloon,abevu,,,,,
+🎈,balloon,abevu,,,,,clause.md#advanced-translation-practice
 🎉,popper,ababe,celebration,a party popper bursts at a party; celebration marks a joyful occasion,,occasion,
 🎊,confetti,agove,jubilation,confetti rains on victory; jubilation is winning celebration,,,
 🎐,chime,ahawo,,,,,
 🧧,red-envelope,eredo,blessing,red envelope carries good wishes; blessing is wished well-being,,,
 🎀,ribbon,ereba,embellishment,ribbon adorns; embellishment is the unobservable extra,,belt,
-🎁,present,ebe,generosity,a present is given to another; generosity is giving freely,,gift; submit; charity,
+🎁,present,ebe,generosity,a present is given to another; generosity is giving freely,,gift; submit; charity,sakes.md#beginner-translation-practice
 🎗️,awareness,aweza,solidarity,the ribbon is worn for a cause; solidarity is standing with others,,aware,
 🎟️,admission-tickets,adegu,admission,ticket grants entry inside; admission is being let in,,entry,
-🎫,ticket,edega,,,,,
+🎫,ticket,edega,,,,,clause.md#intermediate-translation-practice
 🎖️,honor,aneha,prestige,a medal is worn for all to admire,,famous,
-🏆,trophy,odove,score,trophy marks the final tally; score is the counted result,,grade; prize; champion; beat; rating,
-🏅,medal,ameda,achievement,medal marks accomplished feat; achievement is reaching a goal,,success; achieve; successful; award; fulfill; accomplish,
-🥇,gold,ogoda,first,gold medal marks top place; first is leading all others,,primary; priority; prime,
+🏆,trophy,odove,score,trophy marks the final tally; score is the counted result,,grade; prize; champion; beat; rating,numbers.md#intermediate-translation-practice
+🏅,medal,ameda,achievement,medal marks accomplished feat; achievement is reaching a goal,,success; achieve; successful; award; fulfill; accomplish,join-across-roles.md#intermediate-translation-practice
+🥇,gold,ogoda,first,gold medal marks top place; first is leading all others,,primary; priority; prime,numeric-derivation.md#advanced-translation-practice
 🥈,silver,ezeve,runner-up,silver medal marks runner-up; second is next after first,,,
 🥉,bronze,abazo,third,bronze medal marks third place; third is after second,,,
-⚽,soccer,azagu,,,,,
+⚽,soccer,azagu,,,,,knowing.md#advanced-translation-practice
 ⚾,baseball,ebebo,,,,,
 🥎,softball,ozovo,adaptation,softball is baseball made gentler; adaptation is adjusting the form,,version; adapt; flexible,
 🏀,ball,obohe,,,,,
@@ -679,8 +679,8 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥏,frisbee,eveba,cooperation,frisbee passes between players; cooperation is joint effort,,,
 🎳,bowling,obove,,,,,
 🏏,cricket,egege,,,,,
-🏑,field-hockey,ahagu,agility,field hockey shifts fast on turf; agility is quick nimble motion,,,
-🏒,hockey,ahege,intensity,hockey moves at fierce speed; intensity is fierce force,,intense,
+🏑,field-hockey,ahagu,agility,field hockey shifts fast on turf; agility is quick nimble motion,,,comparatives.md#beginner-translation-practice
+🏒,hockey,ahege,intensity,hockey moves at fierce speed; intensity is fierce force,,intense,comparatives.md#beginner-translation-practice
 🥍,lacrosse,alago,,,,,
 🏓,pingpong,abebo,,,,,
 🏸,badminton,abodu,reflex,badminton returns a fast shuttle; reflex is instant response,,,
@@ -689,7 +689,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥅,goal,ogo,objective,goal net is what you aim for; objective is the target aim,,mission; target,
 ⛳,golf,agayu,,,,,
 ⛸️,skate,ezagu,,,,,
-🎣,fishing,evo,memory,fishing pulls something up from opaque water; memory retrieves from the past (may be a boot),,,
+🎣,fishing,evo,memory,fishing pulls something up from opaque water; memory retrieves from the past (may be a boot),,,comparatives.md#advanced-translation-practice
 🤿,snorkel,ozoga,,,,,
 🎽,tank-top,adabu,,,,,
 🎿,skis,ezuga,,,,,
@@ -711,17 +711,17 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🪅,pinata,ebaya,,,,,
 🪩,disco-ball,adezo,,,,,
 🪆,nesting-doll,eneze,layers,nesting dolls hide within each other; layers are levels within levels,,,
-♟️,pawn,obohu,sacrifice,pawn is traded in chess strategy; sacrifice is giving up for gain,,,
+♟️,pawn,obohu,sacrifice,pawn is traded in chess strategy; sacrifice is giving up for gain,,,intention.md#beginner-translation-practice
 🃏,joker,ohoge,,,,,
 🀄,mahjong,ameha,,,,,
 🎴,flower-cards,avaga,,,,card,
 🎭,theater,avo,pretense,theater masks hide the actor; pretense is playing a role / as-if framing,,dramatic; drama; stage,
-🖼️,frame,evevo,ostentation,a frame puts a picture on show; ostentation is showing-off as stance,,shape; form,
-🎨,palette,abudo,,,,color,
+🖼️,frame,evevo,ostentation,a frame puts a picture on show; ostentation is showing-off as stance,,shape; form,predication.md#intermediate-translation-practice
+🎨,palette,abudo,,,,color,predication.md#intermediate-translation-practice
 🧵,thread,evevu,continuity,a thread runs unbroken; continuity is going on without a break,,constant; consistent; wire; cable; continuous; strip,
 🪡,needle,eneda,,,,,
 🧶,yarn,ayaha,blanket,yarn is knit into a blanket; a blanket is the cover that warms,,,
-🪢,knot,ana,bond,knot ties two ends together; bond is holding fast together,,bind; integrate; stick,
+🪢,knot,ana,bond,knot ties two ends together; bond is holding fast together,,bind; integrate; stick,sakes.md#beginner-translation-practice
 🕶️,sunglasses,ozaga,unbothered,sunglasses hide the eyes; cool is calm unbothered style,,,
 🥽,goggles,agogu,,,,,
 🥼,lab-coat,alego,expertise,lab coat marks scientific work; expertise is specialized knowledge,,technical; master; talent; specialist; specialize; pro; qualification; expert,
@@ -731,7 +731,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 👖,jeans,ehewa,,,,,
 🧣,scarf,azoga,,,,,
 🧤,gloves,agazu,winter,gloves come out in winter; winter is the cold season,,,
-🧥,coat,ogodu,shelter,coat wraps against the weather; shelter is cover from elements,,jacket; surface,
+🧥,coat,ogodu,shelter,coat wraps against the weather; shelter is cover from elements,,jacket; surface,questions.md#beginner-translation-practice
 🧦,socks,aze,,,,,
 👗,dress,edeza,clothing,a dress is one garment; clothing is garments worn together,,wear; clothes,
 👘,kimono,agevo,,,,,
@@ -746,7 +746,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 👜,handbag,ahaba,responsibility,handbag carries needs; responsibility is the unobservable bearing,,duty; obligation; liability; bag,
 👝,clutch,agoha,,,,,
 🛍️,shopping-bag,ahabu,pound-mass,a shopping bag is weighed by the pound; pound-mass is the mass unit,,,
-🎒,backpack,aba,preparation,backpack holds what you need ahead; preparation is readying beforehand,,pack,
+🎒,backpack,aba,preparation,backpack holds what you need ahead; preparation is readying beforehand,,pack,sakes.md#beginner-translation-practice
 🩴,sandal,azaye,,,,,
 👞,dress-shoe,uhahu,,,,,
 👟,sneaker,uzege,activity,sneaker is built for movement; activity is active motion,,action; active,
@@ -760,43 +760,43 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🎩,top-hat,adabe,trick,a magician pulls a trick from a top hat,,,
 🎓,mortar-board,omobo,,,,college; university,
 🧢,cap,ageba,,,,,
-🪖,helmet,ehevu,,,,,
+🪖,helmet,ehevu,,,,,roles.md#beginner-translation-practice
 ⛑️,hard-hat,aheda,,,,,
-📿,rosary,orozo,prayer,beads count prayers; prayer is speaking to the sacred,,,
+📿,rosary,orozo,prayer,beads count prayers; prayer is speaking to the sacred,,,sakes.md#intermediate-translation-practice
 💄,lipstick,elebo,appearance,lipstick colors the lips; appearance is how you present,,appear,
-💍,ring,ereha,promise,a ring seals a vow; a promise binds your future self,,surround; guarantee; assure,
+💍,ring,ereha,promise,a ring seals a vow; a promise binds your future self,,surround; guarantee; assure,joins.md#intermediate-translation-practice
 💎,gemstone,ehezo,value,gem is rare and precious; value is worth holding dear,,worth; valuable; appreciate; rate,
-🔇,mute,amuyu,suppression,mute silences all sound; suppression is holding back expression,,,
-🔈,quiet,agawa,volume,quiet is sound turned low; volume is level of sound,,,
+🔇,mute,amuyu,suppression,mute silences all sound; suppression is holding back expression,,,knowing.md#intermediate-translation-practice
+🔈,quiet,agawa,volume,quiet is sound turned low; volume is level of sound,,,spans.md#beginner-translation-practice
 🔉,audio,adeha,voice,audio carries a speaking voice; voice is audible expression,m.w:quite,representative,
 🔊,loudspeaker,aladu,amplification,a loudspeaker fills the room; amplification is making louder,v:shout,noise; loud,
 📣,megaphone,emego,announcement,megaphone broadcasts to the crowd; announcement is public declaration,,announce; advertise; ad,
 📯,post-horn,oboze,summons,a posthorn calls people to gather; summons is calling to come,,,
-🔔,bell,ebehu,alert,bell rings to warn or call; alert is warning attention,,,
+🔔,bell,ebehu,alert,bell rings to warn or call; alert is warning attention,,,word-endings.md#beginner-translation-practice
 🔕,bell-off,ovahe,,,,,
-🎼,sheet-music,umuyu,composition,sheetmusic arranges notes on lines; composition is arranged creation,,music; compose,
-🎵,note,onoda,melody,note carries a musical line; melody is tuneful line,,tone; pitch,
+🎼,sheet-music,umuyu,composition,sheetmusic arranges notes on lines; composition is arranged creation,,music; compose,plurality.md#intermediate-translation-practice
+🎵,note,onoda,melody,note carries a musical line; melody is tuneful line,,tone; pitch,spans.md#beginner-translation-practice
 🎶,tune,uduha,,,,song,
 🎙️,studio-mic,emegu,,,,studio,
 🎚️,slider,azude,adjustment,slider fine-tunes the level; adjustment is fine tuning,,slide; adjust; amendment; revise,
 🎛️,knob,anaba,control,knobs adjust the sound mix; control is directing settings,,operate; regulate; handle; conduct,
 🎤,microphone,amu,performance,mic carries a live voice; performance is presenting to others,,perform,
 🎧,headphones,eho,immersion,headphones seal you in sound; immersion is deep involvement,,concentration; involvement,
-📻,radio,erede,broadcast,radio sends sound through air; broadcast is sending widely,,spread,
+📻,radio,erede,broadcast,radio sends sound through air; broadcast is sending widely,,spread,hooks.md#intermediate-translation-practice
 🎷,saxophone,azogo,,,,,
-🎺,trumpet,adawo,,,,,
+🎺,trumpet,adawo,,,,,speech-moves.md#intermediate-translation-practice
 🪊,trombone,adebo,fanfare,trombones blare to herald a grand arrival,,,
 🪗,accordion,egode,width,an accordion stretches out sideways; width is how far across,,,
 🎸,guitar,egeda,rebellion,guitar drives raw loud sound; rebellion is breaking from norms,,revolution,
 🎹,piano,ebewa,,,,,
 🎻,violin,avawo,,,,,
 🪕,banjo,aboho,folksy,banjo plucks rustic melody; folksy is plain homely character,,,
-🥁,drum,adavo,rhythm,drum sets the beat for all; rhythm is steady repeating pulse,,,
+🥁,drum,adavo,rhythm,drum sets the beat for all; rhythm is steady repeating pulse,,,clause.md#advanced-translation-practice
 🪘,tom-tom,adade,,,,,
 🪇,maracas,emaga,,,,,
 🪈,flute,uvudu,lightness,a flute's thin airy notes feel weightless,,,
 🪉,harp,ahavu,harmony,harp strings make harmony,,,
-📱,phone,ovavo,connection,phone keeps connection,,telephone,
+📱,phone,ovavo,connection,phone keeps connection,,telephone,questions.md#intermediate-translation-practice
 📟,pager,obehe,urgency,pager signals urgency,,,
 📠,fax,avazu,transmission,a fax sends a page down the phone line,,,
 🔋,battery,abado,energy,battery stores energy,,,
@@ -811,31 +811,31 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💿,cd,azede,circle,a cd is a flat round disc; a circle is a closed round line,,disk,
 🧮,abacus,abuga,calculation,abacus beads slide to add and subtract,,calculate; formula; compute; digital,
 🎥,movie-camera,umuve,capture,movie camera records the scene; capture is holding a moment,,grab,
-🎞️,film,evave,sequence,film strip holds frames in order; sequence is ordered series,,movie; episode; picture; image; photograph; photo,
-📽️,projector,ebuhe,projection,projector throws image on screen; projection is showing outward,,presentation,
+🎞️,film,evave,sequence,film strip holds frames in order; sequence is ordered series,,movie; episode; picture; image; photograph; photo,dependents.md#intermediate-translation-practice
+📽️,projector,ebuhe,projection,projector throws image on screen; projection is showing outward,,presentation,word-endings.md#beginner-translation-practice
 🎬,clapper-board,obodu,,,,,
 📺,television,edevo,,,,screen; video,
-📷,camera,agaho,,,,,
+📷,camera,agaho,,,,,hooks.md#intermediate-translation-practice
 📹,camcorder,agago,recording,camcorder tapes moving scenes; recording is preserving over time,,,
 📼,videocassette,evude,,,,,
-🔍,magnify,amaga,scrutiny,magnifier enlarges small detail; scrutiny is close examination,v:find,seek; discover; encounter; examination; detect; notice,
-🕯️,candle,agoga,awash,candle light fills the room; awash is charge in the surrounding field,,,
+🔍,magnify,amaga,scrutiny,magnifier enlarges small detail; scrutiny is close examination,v:find,seek; discover; encounter; examination; detect; notice,word-endings.md#beginner-translation-practice
+🕯️,candle,agoga,awash,candle light fills the room; awash is charge in the surrounding field,,,sakes.md#intermediate-translation-practice
 💡,lightbulb,ado,candela,lightbulb sets luminous intensity; candela is the SI luminous-intensity unit,,,
-🔦,flashlight,aveha,revelation,flashlight reveals what was dark; revelation is making known,,expose; flash,
+🔦,flashlight,aveha,revelation,flashlight reveals what was dark; revelation is making known,,expose; flash,sakes.md#beginner-translation-practice
 🏮,lantern,alude,guidance,lantern lights the path ahead; guidance is showing the way,,counsel,
 🪔,lamp,alaba,,,,,
-📖,book,ubuga,knowledge,book holds knowledge,,novel; know,
+📖,book,ubuga,knowledge,book holds knowledge,,novel; know,word-endings.md#beginner-translation-practice
 📓,notebook,onodu,,,,,
 📒,ledger,uhu,,,,catalog,
 📃,page-curl,obege,,,,,
 📜,scroll,oze,tale,scroll records a tale; tale is a told story,,historical; narrative,
-📄,page,abehe,documentation,page is a sheet; record is the unobservable keeping,,sheet; document; text,
-📰,newspaper,unuze,news,a newspaper prints what happened today,,article; magazine; coverage; journal,
+📄,page,abehe,documentation,page is a sheet; record is the unobservable keeping,,sheet; document; text,predication.md#beginner-translation-practice
+📰,newspaper,unuze,news,a newspaper prints what happened today,,article; magazine; coverage; journal,hooks.md#intermediate-translation-practice
 📑,tab,adeba,organization,a tab sorts open pages into their own slots,,organize; arrangement; system,
 🔖,bookmark,ura,reminder,a bookmark holds your place to come back to,,remind,
 🏷️,label,aleba,classification,a label sorts things into named groups,,category; class; mark,
-🪙,coin,ugo,same,coin has two faces of one thing; same is two labels for one referent,,uniform,
-💰,money,amo,debt,money bag holds what is owed; debt is an unpaid balance,v:pay,finance; wage; salary; cash; currency; fund; capital; payment,
+🪙,coin,ugo,same,coin has two faces of one thing; same is two labels for one referent,,uniform,predication.md#beginner-translation-practice
+💰,money,amo,debt,money bag holds what is owed; debt is an unpaid balance,v:pay,finance; wage; salary; cash; currency; fund; capital; payment,clause.md#beginner-translation-practice
 🪎,treasure,edohe,riches,a treasure chest is piled with gold and jewels,,,
 💴,yen,eyeha,,,,,
 💵,dollar,adahu,cost,a dollar pays the price; cost is what something takes from you,,price; fee; expense; commission,
@@ -848,39 +848,39 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 📧,email,emeha,message,email sends words instantly; message is communicated content,,,
 📤,out-box,adaho,outgoing,outbox holds mail to send; outgoing is leaving your hands,,,
 📥,inbox,enaba,incoming,inbox holds mail received; incoming is arriving to you,,,
-📦,package,abego,aggregation,package wraps items; aggregation is the unobservable grouping,,software; module,
+📦,package,abego,aggregation,package wraps items; aggregation is the unobservable grouping,,software; module,clause.md#advanced-translation-practice
 📫,mailbox,emebe,reception,closed mailbox holds delivered mail; reception is receiving inward,,,
 📮,post-box,oboza,dispatch,postbox sends mail on its way; dispatch is sending outward,,send; mail; deliver; post,
-🗳️,ballot,ahu,choice,ballot records your vote; choice is selecting among options,,vote; election; elect; poll; voluntary,
-✏️,pencil,ebeyo,draft,pencil marks can be erased; draft is tentative first version,,outline,
-🖊️,pen,ebewe,commitment,pen ink stays on the page; commitment is a binding promise,,dedicate,
-🖌️,paintbrush,ebuda,artistry,brush paints with flowing strokes; artistry is skilled creative work,,art; paint; illustration; brush; draw; illustrate; stroke,
+🗳️,ballot,ahu,choice,ballot records your vote; choice is selecting among options,,vote; election; elect; poll; voluntary,sakes.md#beginner-translation-practice
+✏️,pencil,ebeyo,draft,pencil marks can be erased; draft is tentative first version,,outline,word-endings.md#beginner-translation-practice
+🖊️,pen,ebewe,commitment,pen ink stays on the page; commitment is a binding promise,,dedicate,intention.md#intermediate-translation-practice
+🖌️,paintbrush,ebuda,artistry,brush paints with flowing strokes; artistry is skilled creative work,,art; paint; illustration; brush; draw; illustrate; stroke,comparatives.md#advanced-translation-practice
 🖍️,crayon,egeye,boldness,crayon marks with thick color; boldness is strong visible stroke,,nerve,
-📝,memo,ume,policy,memo records a standing decision; policy is a standing rule,,regulation; guideline; law; legal,
+📝,memo,ume,policy,memo records a standing decision; policy is a standing rule,,regulation; guideline; law; legal,comparatives.md#advanced-translation-practice
 💼,briefcase,ebeve,business,briefcase carries work affairs; business is commercial affairs,z:job,task; affair; enterprise; profession; company,
 📁,folder,ovode,,,,fold,
 🗂️,divider,edova,,,,,
-📅,calendar,agada,week,a calendar page reads a week across each row; week is the seven-day unit,,date; schedule,
+📅,calendar,agada,week,a calendar page reads a week across each row; week is the seven-day unit,,date; schedule,knowing.md#intermediate-translation-practice
 🗒️,notepad,onode,,,,,
 📇,index-card,enade,lookup,card index sorts; lookup is the unobservable find-operation,,search; index,
 📈,uptrend,abede,degree,an uptrend marks more on the scale; degree is vague how-much,m.h:kind-of,level; step,
 📉,downtrend,adadu,loss,the chart falls; loss is having less than before,,deficit,
-📊,bar-chart,aboha,analysis,bar chart compares quantities; analysis is examining data,,analyze; chart; statistic,
-📋,clipboard,egabo,accountability,clipboard tracks tasks to do; accountability is answerable tracking,,account,
+📊,bar-chart,aboha,analysis,bar chart compares quantities; analysis is examining data,,analyze; chart; statistic,word-endings.md#beginner-translation-practice
+📋,clipboard,egabo,accountability,clipboard tracks tasks to do; accountability is answerable tracking,,account,intention.md#intermediate-translation-practice
 📌,push-pin,ubube,highlight,pin marks an important spot; highlight is marking as important,,,
 📎,paper-clip,eboge,attachment,paperclip holds sheets together; attachment is joined addition,,attach,
 📏,ruler,uruha,measurement,ruler measures exact length; measurement is precise tracking,,measure; criteria; dimension,
 🚃,railcar,erega,length,a railcar runs long; length is how far along,,extend; long,
-📐,set-square,ezeze,meter,set square marks exact length; meter is the SI length unit,,,
+📐,set-square,ezeze,meter,set square marks exact length; meter is the SI length unit,,,numbers-applied.md#intermediate-translation-practice
 ✂️,scissors,ezezo,separation,scissors cut material apart; separation is dividing apart,,tear; distinct; slice,
 🗃️,file-box,avaba,archive,file box stores old records; archive is stored past record,,file; database,
 🗄️,filing-cabinet,agobe,,,,shelf,
 🗑️,wastebasket,ewezu,discard,trash bin holds what is thrown; discard is getting rid of,,rid; bin,
 🔒,locked,alaga,restriction,lock keeps the door shut; restriction is holding back access,v:shut,restrict; limitation; close; strict,
 🔓,unlocked,anaga,access,unlock opens what was shut; access is ability to enter,,,
-🔑,key,egehu,solution,key opens what was locked; solution is what unlocks the problem,,reply; respond; solve; response; resolve; resolution,
-🔨,hammer,ahavo,iron,a hammer is forged iron; iron is the hard forged metal,,steel,
-🪓,axe,agezu,severance,axe cuts through wood; severance is cutting apart,,cut; break,
+🔑,key,egehu,solution,key opens what was locked; solution is what unlocks the problem,,reply; respond; solve; response; resolve; resolution,questions.md#beginner-translation-practice
+🔨,hammer,ahavo,iron,a hammer is forged iron; iron is the hard forged metal,,steel,relations.md#beginner-translation-practice
+🪓,axe,agezu,severance,axe cuts through wood; severance is cutting apart,,cut; break,x-compounds.md#beginner-translation-practice
 ⛏️,pick,ebege,deep,a pick digs far below the surface; deep is far below,,,
 🗡️,dagger,aduge,,,,weapon,
 ⚔️,duel,uduhe,conflict,two fighters face off to settle a quarrel,,attack; opposition; dispute; war; argue,
@@ -888,19 +888,19 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🪃,boomerang,ubuha,,,v:throw,cast,
 🏹,archery,arehe,aim,archery sends an arrow to a target; aim is directing toward target,v:hunt,focus,
 🛡️,shield,ehedu,defense,shield blocks incoming blows; defense is guarding against harm,,defend,
-🪚,saw,ozazo,division,saw cuts material apart; division is splitting into parts,,section; sector; chapter; department; district,
-🔧,wrench,erevu,workaround,wrench turns past a stuck bolt; workaround is an improvised bypass,,,
+🪚,saw,ozazo,division,saw cuts material apart; division is splitting into parts,,section; sector; chapter; department; district,x-compounds.md#beginner-translation-practice
+🔧,wrench,erevu,workaround,wrench turns past a stuck bolt; workaround is an improvised bypass,,,x-compounds.md#beginner-translation-practice
 🪛,screwdriver,azugu,assembly,screwdriver joins parts together; assembly is putting together,,,
 🔩,bolt,obodo,ohm,a bolt limits current through the joint; ohm is the SI resistance unit,,,
 ⚙️,gear,ege,mechanism,gear drives mechanism,,device; instrument; engine; functional; machine,
-🗜️,clamp,agabe,pressure,clamp squeezes with steady force; pressure is squeezing force,,impose; tight; press,
+🗜️,clamp,agabe,pressure,clamp squeezes with steady force; pressure is squeezing force,,impose; tight; press,causation.md#intermediate-translation-practice
 ⚖️,scale,ezage,justice,scales weigh both sides equally; justice is fair balance,,weigh; moral,
 🦯,cane,egeho,trust,you lean your weight on a cane; trust is relying on someone,,confidence; rely; reliable; believe; belief,
 🔗,link,elege,,,,unite; relate,
 ⛓️‍💥,unlink,anagu,liberation,a broken chain frees the one it held,,release,
 ⛓️,chains,ehewe,bondage,chains bind and restrict movement; bondage is being held fast,,slave; constraint,
 🪝,hook,uhuga,ensnarement,hook snags; ensnarement is the unobservable trapping-kind,,,
-🧰,toolbox,ulo,readiness,toolbox holds gear for the job; readiness is prepared for task,,skill; equipment; tool,
+🧰,toolbox,ulo,readiness,toolbox holds gear for the job; readiness is prepared for task,,skill; equipment; tool,sakes.md#beginner-translation-practice
 🧲,magnet,amega,attraction,magnet pulls metal toward it; attraction is pulling toward,,pull; attract; attractive; drag,
 🪜,ladder,alode,advancement,ladder climbs step by step; advancement is rising by stages,,promotion; stair; promote; advance,
 🪏,shovel,aheva,uncovering,shovel digs; uncovering is the unobservable reveal-kind,,dig; discovery,
@@ -909,11 +909,11 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧫,petri-dish,ebode,exemplar,petri dish holds a sample; exemplar is the unobservable stand-in for a class,,model; sample,
 🧬,dna,edeve,,,,gene; genetic,
 🔬,microscope,amagu,mole,microscope counts tiny amounts of substance; mole is the SI amount-of-substance unit,,,
-🔭,telescope,edazo,forecast,telescope shows what is far; forecast is looking ahead at a distance,,predict,
+🔭,telescope,edazo,forecast,telescope shows what is far; forecast is looking ahead at a distance,,predict,numbers.md#advanced-translation-practice
 📡,antenna,anede,,,,,
-💉,syringe,azehe,intrusion,syringe puts fluid into body; injection is forcing something in,,shot,
+💉,syringe,azehe,intrusion,syringe puts fluid into body; injection is forcing something in,,shot,word-endings.md#intermediate-translation-practice
 🩸,blood,abada,violence,blood is spilled; violence is harm by force,,bloody; violent,
-💊,pill,ebeza,remedy,pill is swallowed to heal; remedy is fix for ailment,,drug; treatment; medicine,
+💊,pill,ebeza,remedy,pill is swallowed to heal; remedy is fix for ailment,,drug; treatment; medicine,numbers-applied.md#intermediate-translation-practice
 🩹,bandage,ubade,expedient,bandage covers a wound; expedient is the unobservable stopgap,,,
 🩼,crutch,agava,support,a crutch takes weight off an injured leg,,advocate,
 🩺,stethoscope,ezode,diagnosis,stethoscope listens to the body; diagnosis is finding what is wrong,,,
@@ -921,10 +921,10 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🚪,door,oye,opportunity,door opens to what is beyond; opportunity is an opening ahead,v:open,loose,
 🛗,elevator,elave,ascent,an elevator lifts you up through the floors,,,
 🪞,mirror,umu,reflection,a mirror throws your own image back at you,,reflect,
-🪟,window,ewedo,transparency,you can see through a window's clear glass,,clear,
-🛏️,bed,ebeda,,,,,
+🪟,window,ewedo,transparency,you can see through a window's clear glass,,clear,causation.md#beginner-translation-practice
+🛏️,bed,ebeda,,,,,word-endings.md#intermediate-translation-practice
 🛋️,couch,ageha,leisure,lounging on the couch; leisure is free time,,,
-🪑,chair,ehahe,position,chair is where you take a seat; position is your assigned place,v:sit,place; situation; lay; status; location; locate; pose; situate; put; occupy,
+🪑,chair,ehahe,position,chair is where you take a seat; position is your assigned place,v:sit,place; situation; lay; status; location; locate; pose; situate; put; occupy,word-endings.md#beginner-translation-practice
 🚽,toilet,ododa,,,,,
 🪠,plunger,obahe,unblock,plunger clears a clogged pipe; unblock is clearing obstruction,,,
 🚿,shower,ahave,renewal,shower washes away the day; refresh is restoring freshness,,update,
@@ -934,15 +934,15 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧴,lotion,olohe,self-care,lotion soothes your own skin; self-care is tending to yourself,,,
 🧷,safety-pin,azeve,fastening,safety pin holds fabric together; fastening is holding together,,,
 🧹,broom,ubuva,cleanup,broom sweeps dirt away; cleanup is clearing what clutters,,sweep; wipe,
-🧺,basket,abeza,gathering,basket collects items together; gathering is bringing together,,,
+🧺,basket,abeza,gathering,basket collects items together; gathering is bringing together,,,plurality.md#beginner-translation-practice
 🧻,paper-roll,olu,necessity,toilet paper meets basic need; necessity is what must be had,,necessary; tissue; paper; essential,
-🪣,bucket,abegu,collection,bucket holds gathered liquid; collection is bringing together,,collect,
+🪣,bucket,abegu,collection,bucket holds gathered liquid; collection is bringing together,,collect,causation.md#beginner-translation-practice
 🧼,soap,ozoba,cleanliness,soap washes away grime; cleanliness is freedom from dirt,,clean; pure,
 🫧,bubbles,abeba,fragility,bubbles pop with a touch; fragility is easily broken,,,
 🪥,toothbrush,uduve,hygiene,toothbrush cleans each day; hygiene is healthful cleanliness,,,
 🧽,sponge,azabu,absorption,sponge soaks up spilled liquid; absorption is taking in fully,,,
 🧯,extinguisher,ogeze,containment,extinguisher stops spreading fire; containment is holding in bounds,,contain,
-🛒,cart,agega,consumption,cart fills with goods to buy; consumption is taking things in,,expenditure,
+🛒,cart,agega,consumption,cart fills with goods to buy; consumption is taking things in,,expenditure,joins.md#beginner-translation-practice
 🚬,cigarette,ozege,habit,cigarette is repeated addictive draw; habit is repeated hard-to-break act,,smoke,
 ⚰️,coffin,ogove,end,coffin holds the deceased; end is final conclusion,,conclusion; final,
 🪦,headstone,ehado,burial,a headstone marks a grave; burial is laying the dead in the ground,,,
@@ -962,7 +962,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🛃,customs,agezo,inspection,customs inspects what crosses border; inspection is close checking,,examine; review; investigation,
 ⚠️,warning,owawo,risk,a warning sign flags a hazard; risk is the chance of harm,,,
 🚸,children-crossing,ahego,vulnerability,children crossing marks those at risk; vulnerability is easily harmed,,,
-⛔,no-entry,ede,forbidden,no entry sign blocks the way; forbidden is not allowed,,ban; illegal,
+⛔,no-entry,ede,forbidden,no entry sign blocks the way; forbidden is not allowed,,ban; illegal,sakes.md#intermediate-translation-practice
 🚫,prohibited,ebohe,taboo,prohibited sign bans; taboo is the unobservable ban-as-norm,,,
 🚳,no-bicycles,onovu,,,,,
 🚭,no-smoking,onohe,,,,,
@@ -972,14 +972,14 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔞,no-minors,onohu,,,,,
 ☢️,radioactive,erade,toxicity,radiation poisons; toxicity is being harmful to be near,,,
 ☣️,biohazard,obaha,,,,,
-⬆️,north,onova,,,,northern,
+⬆️,north,onova,,,,northern,roles.md#intermediate-translation-practice
 ↗️,northeast,anove,,,,,
-➡️,east,odu,progress,map-right is east; progress is moving ahead,,eastern,
+➡️,east,odu,progress,map-right is east; progress is moving ahead,,eastern,dependents.md#beginner-translation-practice
 ↘️,southeast,azove,,,,,
-⬇️,south,azava,,,,southern,
+⬇️,south,azava,,,,southern,roles.md#intermediate-translation-practice
 ↙️,southwest,azawe,retreat,map down-left is southwest; retreat is moving away back,,withdraw; retire,
-⬅️,west,eweza,return,map-left is west; return is going back again,,western; react; counter,
-↖️,northwest,onove,,,,,
+⬅️,west,eweza,return,map-left is west; return is going back again,,western; react; counter,roles.md#intermediate-translation-practice
+↖️,northwest,onove,,,,,roles.md#intermediate-translation-practice
 ↕️,vertical,evade,hierarchy,up and down; hierarchy ranks higher and lower,,,
 ↔️,east-west,eda,reciprocity,east-west arrow runs both ways; reciprocity is mutual give and take,,mutual,
 ↩️,back,abaga,revert,return arrow curves back left; revert is going back to before,,,
@@ -1023,8 +1023,8 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ◀️,backward,abuge,reverse,backward plays opposite direction; reverse is going opposite direction,,,
 ⏪,rewind,erewa,backtrack,double rewind jumps back; backtrack is revisiting earlier,,,
 ⏮️,previous-track,ebave,,,,previous,
-⏫,up,abaha,rise,double-up chevron is skyward; rise is moving upward,,arise; boost,
-⏬,down,adahe,decline,double-down chevron is toward the pull; to decline is to move downward,v:fall,decrease; low; drop,
+⏫,up,abaha,rise,double-up chevron is skyward; rise is moving upward,,arise; boost,roles.md#intermediate-translation-practice
+⏬,down,adahe,decline,double-down chevron is toward the pull; to decline is to move downward,v:fall,decrease; low; drop,restrictors.md#intermediate-translation-practice
 ⏸️,pause,obozu,hiatus,pause halts playback; hiatus is a temporary halt,,suspend,
 ⏺️,record,ere,preservation,record button captures now; preservation is the unobservable keeping-across-time,,tape; preserve; retain,
 ⏏️,eject,ahegu,removal,eject pushes media out; removal is forcing outward exit,,extract,
@@ -1045,7 +1045,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ♾️,infinity,oneve,boundlessness,infinity loop never closes; boundlessness is the unobservable without-limit,,,
 ‼️,bang,abawe,,,,strike; knock; hit; snap,
 ⁉️,interrobang,unede,,,,,
-❓,question-mark,egewe,possibility,a questionmark marks the open case; possibility is maybe-so,,theory; hypothesis,
+❓,question-mark,egewe,possibility,a questionmark marks the open case; possibility is maybe-so,,theory; hypothesis,spans.md#intermediate-translation-practice
 ❗,exclamation,egaza,importance,an exclamation calls attention; importance is mattering,,crucial; significance,
 〰️,squiggle,ezogo,hesitation,a squiggle trails off uncertainly; hesitation is holding back action,,hesitate; curve,
 💱,currency-exchange,ehe,convertibility,currency arrows swap one for another; exchange is swapping between sides,,interpret; translate,
@@ -1057,40 +1057,40 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔰,begin,abege,inception,shoshin mark means just starting; inception is the unobservable start-kind,,found; trigger,
 ⭕,correct,egega,inclusion,hollow circle marks round boundary; inclusion is being inside the boundary,,proper; right; incorporate,
 ✅,check,ehu,decision,checkmark marks a confirmed pick; decision is a settled choice with revisability,,conclude; determine; ensure,
-❌,cross,ogoza,rejection,cross mark means no wrong; rejection is refused as wrong,,,
+❌,cross,ogoza,rejection,cross mark means no wrong; rejection is refused as wrong,,,spans.md#intermediate-translation-practice
 ➰,loop,uluba,recurrence,curly loop circles back; repetition is returning to the start,,,
-©️,copyright,egabe,ownership,copyright marks legal control; ownership is legal right to control,,possess; possession; own; property,
+©️,copyright,egabe,ownership,copyright marks legal control; ownership is legal right to control,,possess; possession; own; property,sakes.md#intermediate-translation-practice
 ®️,registered,erehu,,,,registration,
 ™️,trademark,edede,claim,trademark claims brand identity; claim is asserting as yours,,brand,
 🫟,splatter,azabo,disorder,splatter makes a mess; disorder is the unobservable lack of order,,mess; stain,
-#️⃣,hash,aheho,topic,hash marks a topic,m.h:as-for,issue; theme; matter; subject,
+#️⃣,hash,aheho,topic,hash marks a topic,m.h:as-for,issue; theme; matter; subject,pronouns.md#intermediate-translation-practice
 *️⃣,asterisk,azodo,wildcard,an asterisk stands in for any characters,,,
 🔠,upper-case,abevo,,,,,
 🔡,lower-case,oloha,casualness,lowercase skips the formality of capitals,,,
 🔢,numbers,anabe,quantification,numbers let you count and measure,,mathematics,
 🔣,symbols,ezezu,notation,symbols are written marks that stand for ideas,,code,
-🔤,letters,ele,literacy,letters let you read and write,,literary,
+🔤,letters,ele,literacy,letters let you read and write,,literary,spans.md#intermediate-translation-practice
 ℹ️,information,eneve,fact,the info sign gives facts; a fact is what is actually so,,data; inform,
 🅿️,parking,aboge,allotment,parking marks a stall; allotment is the unobservable assigned share,,assign,
 🆘,sos,ezaha,distress,sos signals distress,,,
-🔴,red,ereda,,,,,
+🔴,red,ereda,,,,,predication.md#beginner-translation-practice
 🟠,orange,oraha,,,,,
 🟡,yellow,eyaye,caution,yellow circle warns slow down; caution is careful awareness,,,
-🟢,green,ego,permission,green circle signals go ahead; permission is allowed to proceed,,license,
-🔵,blue,ubuhe,,,,,
+🟢,green,ego,permission,green circle signals go ahead; permission is allowed to proceed,,license,sakes.md#intermediate-translation-practice
+🔵,blue,ubuhe,,,,,predication.md#beginner-translation-practice
 🟣,purple,ebebu,royalty,purple circle marks regal hue; royalty is high noble rank,,,
 🟤,brown,abavu,earthiness,brown circle is soil and wood; earthiness is plain grounded quality,,,
 ⚫,black,abago,,,,,
 ⚪,white,awada,,,,pale,
 🟫,ground,agado,,,,soil; background; land,
 🟩,field,eveda,,,,,
-🩶,gray,egeva,,,,,
+🩶,gray,egeva,,,,,knowing.md#intermediate-translation-practice
 ⬛,black-square,ezoge,,,,square,
 ⬜,white-square,awaze,blank,white square is open empty block; blank is without mark yet,,space,
 🔺,triangle,adawe,radian,triangle marks an angle wedge; radian is the SI plane-angle unit,,angle,
 🔻,down-triangle,adado,corner,a triangle ends in a point; a corner is where two edges meet,,vertex,
 🔘,option,abehu,selection,radio button marks one chosen; selection is picking one option,,button; select; filter,
-🏁,finish-line,eveha,terminus,checkered flag marks finish,,term,
+🏁,finish-line,eveha,terminus,checkered flag marks finish,,term,join-across-roles.md#intermediate-translation-practice
 🚩,sport,ozobo,alarm,red flag raises warning,,,
 🏴,flag,avago,anarchy,black flag suggests anarchy,,,
 🏳️,parley,abaye,surrender,waving a white flag gives up the fight,,,
@@ -1217,7 +1217,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🇯🇪,jersey-flag,ehezu,jerseyman,jersey people are jerseyman,,,
 🇯🇲,jamaica-flag,ahega,jamaican,jamaica people are jamaican,,,
 🇯🇴,jordan-flag,ohoda,jordanian,jordan people are jordanian,,,
-🇯🇵,japan-flag,aheba,japanese,japan people are japanese,,,
+🇯🇵,japan-flag,aheba,japanese,japan people are japanese,,,predication.md#beginner-translation-practice
 🇰🇪,kenya-flag,egeya,kenyan,kenya people are kenyan,,,
 🇰🇬,kyrgyzstan-flag,egegu,kyrgyz,kyrgyzstan people are kyrgyz,,,
 🇰🇭,cambodia-flag,agobo,cambodian,cambodia people are cambodian,,,
