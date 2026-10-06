@@ -313,14 +313,16 @@ async function main(): Promise<void> {
     written.push({ file, text: relinked.text });
   }
 
-  const overlayOriginal = readFileSync(overlaysPath, "utf8");
-  const overlayRelinked = relinkOverlayAnchors(overlayOriginal, grammarDir, renames);
-  for (const change of overlayRelinked.changes) {
-    console.log(`${relative(REPO_ROOT, overlaysPath)}  anchor  ${change.from} → ${change.to}`);
-  }
-  if (overlayRelinked.changes.length > 0) {
-    total += overlayRelinked.changes.length;
-    written.push({ file: overlaysPath, text: overlayRelinked.text });
+  // Lexicon anchor cells: overlay `anchor`, and the core-vocabulary `core` column.
+  for (const csvPath of [overlaysPath, dataPath("lexicon-published.csv"), compoundsPath]) {
+    const relinked = relinkOverlayAnchors(readFileSync(csvPath, "utf8"), grammarDir, renames);
+    for (const change of relinked.changes) {
+      console.log(`${relative(REPO_ROOT, csvPath)}  anchor  ${change.from} → ${change.to}`);
+    }
+    if (relinked.changes.length > 0) {
+      total += relinked.changes.length;
+      written.push({ file: csvPath, text: relinked.text });
+    }
   }
 
   // Source: root tables, sample fillers, test fixtures.

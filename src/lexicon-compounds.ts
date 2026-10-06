@@ -10,6 +10,7 @@ export const COMPOUND_HEADERS = [
   "concrete",
   "abstract",
   "mnemonic",
+  "core",
 ] as const;
 
 export type CompoundJoin = "l" | "m" | "n" | "r";
@@ -22,6 +23,8 @@ export type CompoundRow = {
   concrete: string;
   abstract: string;
   mnemonic: string;
+  /** Core vocabulary: anchor of the checkpoint that introduces this stem; empty when not core. */
+  core?: string;
 };
 
 export type CompoundValidationError = {
@@ -115,6 +118,7 @@ export function parseCompoundCsv(text: string): CompoundRow[] {
     concrete: row.concrete ?? "",
     abstract: row.abstract ?? "",
     mnemonic: row.mnemonic ?? "",
+    core: row.core ?? "",
   }));
 }
 

@@ -27,6 +27,8 @@ export type PublishedRow = {
   posEnglish: PosEnglishMap;
   /** Search-only English cues (`english_aliases`); never used for morph glosses. */
   englishAliases?: string[];
+  /** Core vocabulary: anchor of the checkpoint that introduces this root (`core`); empty when not core. */
+  core?: string;
 };
 
 export const OVERLAY_KINDS = [
@@ -127,6 +129,7 @@ const PUBLISHED_HEADERS = [
   "mnemonic",
   "english_by_pos",
   "english_aliases",
+  "core",
 ] as const;
 const OVERLAY_HEADERS = [
   "sense_form",
@@ -366,6 +369,7 @@ export function parsePublishedCsv(text: string): PublishedRow[] {
       englishByPos,
       posEnglish: parseEnglishByPos(englishByPos, { concrete, abstract, label }),
       englishAliases: parseEnglishAliases(row.english_aliases ?? "", { concrete, abstract, label }),
+      core: row.core ?? "",
     };
   });
 }

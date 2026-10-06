@@ -95,7 +95,7 @@ One review page at the end of each level (Beginner, Intermediate, Advanced), out
 
 ## Claritish
 
-Claritish keeps its own practice format ([claritish-style.md](../meta/claritish-style.md#examples-practice)): English item, what-the-speaker-means note, drop-in answer. It may add **Pick one** items (two drop-ins, which fits the note) and an **Also correct:** line where two endings both fit. No Agazan sentences, as now.
+Out of scope. Claritish has almost no vocabulary to space, so it keeps its own practice format unchanged ([claritish-style.md](../meta/claritish-style.md#examples-practice)).
 
 ## Fixes needed regardless
 
@@ -104,11 +104,16 @@ Claritish keeps its own practice format ([claritish-style.md](../meta/claritish-
 
 ## Rollout
 
-1. Apply the two fixes.
-2. Build the core vocabulary order from the existing banks: first checkpoint where each root appears, then trim each checkpoint to the new-root cap.
-3. Update [translation-exercises.md](../meta/translation-exercises.md) and [drill-generation.md](../meta/drill-generation.md) with items 1 to 5, and the build checks for item types, **Also correct:** parsing, bank groups and vocabulary counts.
-4. Replace checkpoints page by page in path order through the existing [execute](../meta/drill-generation.md#execute) procedure.
-5. Write the three level reviews last, once their pages carry the new checkpoints.
+Each numbered step is one session. Scale: 53 checkpoints across 24 pages, about 100 lines each.
+
+1. **Fixes.** Apply the two fixes above. Also remove the 30 legacy `<a id="translation-practice…">` anchors still on grammar pages (nothing in the repo links them; check [site-redirects.md](../meta/site-redirects.md) first).
+2. **Core vocabulary list.** Settle the cap and the storage open questions first. Build the ordered list from the existing banks: first checkpoint in path order where each root appears. Output a report of checkpoints over the new-root cap. Do not trim checkpoints here; trimming is part of step 7.
+3. **Policy and gating.** Update [translation-exercises.md](../meta/translation-exercises.md) and [drill-generation.md](../meta/drill-generation.md) with items 1 to 5. Decide how a converted checkpoint is marked (for example the `### Practice` heading), so the new checks run only on converted checkpoints and the old ones keep passing until replaced.
+4. **Item-type and alternative checks.** Build checks for the **Pick one**, **Fix it** and **What changes** headings and their rules, and **Also correct:** parsing that compares morph readings, not strings. Update the drill coverage and spoiler padding scripts for the new item types.
+5. **Bank and vocabulary checks.** Build checks for the **New words** / **Review** groups (cue on every new row) and the new vs review root counts against the core list.
+6. **Spacing helper.** A script that, for a given checkpoint, lists the core roots it may introduce and the review roots unused for the longest stretch of the path.
+7. **Replace checkpoints**, one page per session (2 to 3 checkpoints), in path order through the existing [execute](../meta/drill-generation.md#execute) procedure, trimming to the cap as each page is done. Pages with one checkpoint (`numeric-derivation.md`, `join-across-roles.md`, `numbers-applied.md`) may share a session. Order is strict: each checkpoint's review set depends on the ones before it. About 20 to 24 sessions.
+8. **Level reviews**, one level per session (Beginner, Intermediate, Advanced), each once its pages carry the new checkpoints.
 
 ## Open questions
 

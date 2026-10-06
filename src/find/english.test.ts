@@ -113,7 +113,7 @@ describe("taught cues in docs/grammar", () => {
 });
 
 describe("collectRootEntries", () => {
-  const csv = "emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases\n😀,grin,egeva,delight,m,v:smile,glad; joy\n";
+  const csv = "emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core\n😀,grin,egeva,delight,m,v:smile,glad; joy,\n";
   const entries = collectRootEntries(parsePublishedCsv(csv));
 
   it("indexes senses, per-PoS lemmas and aliases under the owning root", () => {

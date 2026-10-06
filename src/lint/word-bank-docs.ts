@@ -214,7 +214,7 @@ function foreignPayload(family: ReturnType<typeof parseWord>["family"]): string 
   return null;
 }
 
-function practiceRanges(lines: string[]): { start: number; end: number }[] {
+export function practiceRanges(lines: string[]): { start: number; end: number }[] {
   const ranges: { start: number; end: number }[] = [];
   for (let i = 0; i < lines.length; i++) {
     if (!PRACTICE_H3_RE.test(lines[i]!)) continue;
@@ -236,7 +236,7 @@ function isPracticeBoundary(line: string): boolean {
   return isH2 || isH3;
 }
 
-type BankRow = {
+export type BankRow = {
   lineIndex: number;
   english: string | null;
   agazan: string | null;
@@ -244,7 +244,7 @@ type BankRow = {
   sameAgazan: string | null;
 };
 
-function findRootsTable(
+export function findRootsTable(
   lines: string[],
   start: number,
   end: number,
@@ -454,7 +454,7 @@ function vocabUses(word: LexWord, tables: ClassifyTables): { root: string; overl
     .map((root) => ({ root, overlay }));
 }
 
-function bankRoots(agazan: string, tables: ClassifyTables): string[] {
+export function bankRoots(agazan: string, tables: ClassifyTables): string[] {
   const surface = agazan.replace(/[.,!?]+$/, "");
   try {
     const morph = parseWord(surface);

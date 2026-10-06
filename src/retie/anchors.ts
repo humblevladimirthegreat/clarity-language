@@ -40,7 +40,8 @@ export function relinkMarkdown(
 }
 
 /**
- * Overlay `anchor` cells (`page.md#id`, relative to `grammarDir`) in the overlay CSV text.
+ * Anchor cells (`page.md#id`, relative to `grammarDir`) in a lexicon CSV text: overlay `anchor`,
+ * published / compound `core`.
  */
 export function relinkOverlayAnchors(
   csv: string,

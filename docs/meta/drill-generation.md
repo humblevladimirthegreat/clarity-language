@@ -82,14 +82,6 @@ If you cannot certify a token, drop the item. Do not guess from English. Do not 
 
 Place **`### Translation practice`** at the **end of the stage**, immediately before the next `## Intermediate` / `## Advanced` / `## See also` / end of file. Do not insert after every H3. Do not add a second checkpoint in the same stage unless the allowlist row says **split**.
 
-Anchors:
-
-| Band | Anchor |
-|------|--------|
-| Beginner | `<a id="translation-practice"></a>` |
-| Intermediate | `<a id="translation-practice-intermediate"></a>` |
-| Advanced | `<a id="translation-practice-advanced"></a>` |
-
 Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Put **Roots used here** once as the English / Agazan table for **this setting** (house names + setting content), using that template’s caption (later banks do not repeat the How-to-learn column legend; **Same root as** warning only when that column is present). Learner **Agazan** cells are [citations](translation-exercises.md#template) by default (`odogal`, not a bank stem `odoga`), or the inflected form the row teaches (`vahahal` *see*). House-person **English** is *Azawan* / *Alahen* / *Ahaben*, not `*grace* (name **Azawan**)`. Pick a setting **not already named** in [settings](#settings) ([unique globally](translation-exercises.md#checkpoint-setting)); write the same phrase into this file’s cell when you replace. Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill. Numbered items in each direction **climb in tension**.
 
 | Band kind | Items per direction |
@@ -200,8 +192,6 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `sakes.md` | Beginner | a shelter tent |
 | `sakes.md` | Intermediate | a monastery |
 | `sakes.md` | Advanced | unset |
-| `intention.md` | Beginner | a climbing wall |
-| `intention.md` | Intermediate | a locked vault |
 | `knowing.md` | Beginner | a café patio |
 | `knowing.md` | Intermediate | a press conference |
 | `knowing.md` | Advanced | a film archive |

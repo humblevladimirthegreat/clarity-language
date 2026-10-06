@@ -300,7 +300,7 @@ function cmdApply(lemma: string, dryRun: boolean): void {
 
   const content = readFileSync(publishedPath(), "utf8");
   const { rows } = parseCsv(content);
-  const fieldnames = ["emoji", "concrete", "root", "abstract", "mnemonic", "english_by_pos", "english_aliases"];
+  const fieldnames = ["emoji", "concrete", "root", "abstract", "mnemonic", "english_by_pos", "english_aliases", "core"];
   const published = loadPublishedRows();
   const validation = validateApply(staging, published);
 
