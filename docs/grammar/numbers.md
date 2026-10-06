@@ -1217,23 +1217,30 @@ In casual measure-heavy talk, a stretch of conversation may set an **ambient** o
 
 Write **`Ne0`** (any nonzero mantissa **N**) to insist on ones. Formal prose that never sets an ambient magnitude rarely needs **`e0`**: leave it out when ones are already clear.
 
-### Translation practice {#advanced-translation-practice}
+### Practice {#advanced-practice}
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. The items use digitless exponents, hyperbole, and the strong zeros from the tables above. Every answer has one digit or none, so it is spelled out (`grawobal`, `grabal`, `xrebal`).
+Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Setting:** an observatory
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *star* | `ozal` | |
-| *telescope* | `edazol` | |
-| *see* | `vahahal` | `ahahal` *eye* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *telescope* | `edazol` | 🔭 |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *star* | `ozal` |
+| *cloud* | `agavul` |
+| *seat* | `ezedal` |
+| *see* | `vahahal` |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
@@ -1253,52 +1260,20 @@ z-star-x | g-plus-infinity
 z-telescope-x | g-+-1e
 :::
 
-**3.** *Finally: Azawan sees.*
+**3.** *Finally: Azawan sees the clouds.*
 
 ::: details Show answer
-`xrebal zazawan vahahal.`
+`xrebal zazawan dagavulx vahahal.`
 
-x-finally | z-Azawan | v-see
+x-finally | z-Azawan | d-cloud-x | v-see
 :::
 
-**4.** *To infinity!*
+**4.** *Alahen almost sees the star.*
 
 ::: details Show answer
-`yrabal.`
+`zalahen hrubul dozal vahahal.`
 
-y-plus-infinity
-:::
-
-**5.** *Annihilate!*
-
-::: details Show answer
-`yrazobal.`
-
-y-+-0e
-:::
-
-**6.** *Starting with: Ahaben sees.*
-
-::: details Show answer
-`xrebul zahaben vahahal.`
-
-x-starting-with | z-Ahaben | v-see
-:::
-
-**7.** *Azawan sees the penultimate star.*
-
-::: details Show answer
-`zazawan dozal gruedul vahahal.`
-
-z-Azawan | [d-star | g-2nd-from-end] | v-see
-:::
-
-**8.** *Alahen sees three stars, give or take one.*
-
-::: details Show answer
-`zalahen dozalx grarel gruawol vahahal.`
-
-z-Alahen | [d-star-x | g-three | g-plus-minus-1] | v-see
+z-Alahen | h---e- | d-star | v-see
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
@@ -1306,79 +1281,57 @@ z-Alahen | [d-star-x | g-three | g-plus-minus-1] | v-see
 **1.** `zozalx grabam.`
 
 ::: details Show answer
-
-🔊 `zozalx grabam.`
-
 z-star-x | g-plus-infinity.about
 
 *Stars, a huge but finite number.*
 :::
 
-**2.** `yrebal.`
+**2.** `zalahen dozalx grarel gruawol vahahal.`
 
 ::: details Show answer
+z-Alahen | [d-star-x | g-three | g-plus-minus-1] | v-see
 
-🔊 `yrebal.`
-
-y-last-place
-
-*Finally!*
+*Alahen sees three stars, give or take one.*
 :::
 
-**3.** `xrebul zalahen vahahal.`
+**3.** `zahaben dezedal gruodul vahahal.`
 
 ::: details Show answer
+z-Ahaben | [d-seat | g-negative-label-2] | v-see
 
-🔊 `xrebul zalahen vahahal.`
-
-x-starting-with | z-Alahen | v-see
-
-*Starting with: Alahen sees.*
+*Ahaben sees seat −2* (a label below zero).
 :::
 
-**4.** `zozal grewobal.`
+**4.** `zagavulx grazobal.`
 
 ::: details Show answer
+z-cloud-x | g-+-0e
 
-🔊 `zozal grewobal.`
-
-z-star | g-#-1e
-
-*The gazillionth / umpteenth star.*
+*Clouds: absolutely none.*
 :::
 
-**5.** `zazawan vahahal hrewobal.`
+#### Pick one {#advanced-pick-one}
+
+**1.** *Azawan barely sees the star.* `zazawan hrabul dozal vahahal.` or `zazawan hrubul dozal vahahal.`
 
 ::: details Show answer
+`zazawan hrabul dozal vahahal.`
 
-🔊 `zazawan vahahal hrewobal.`
+z-Azawan | h-+-e- | d-star | v-see
 
-z-Azawan | v-see | h-#-1e
-
-*Azawan sees for the gazillionth time.*
+**`ra`** clears one full time by a hair (*barely*); **`ru`** falls a hair short (*almost*).
 :::
 
-**6.** `yrubul.`
+#### What changes {#advanced-what-changes}
+
+**1.** `zozal gredul.` / `zozal gruedul.`
 
 ::: details Show answer
+z-star | g-2nd
 
-🔊 `yrubul.`
+z-star | g-2nd-from-end
 
-y---e-
-
-*So close!*
-:::
-
-
-**7.** `zazawan dedazol gruowol vahahal.`
-
-::: details Show answer
-
-🔊 `zazawan dedazol gruowol vahahal.`
-
-z-Azawan | [d-telescope | g-negative-label-1] | v-see
-
-*Azawan sees telescope −1.* (a below-zero label)
+The first is the second star from the start; **`rue`** counts from the end, so the second is the next-to-last star.
 :::
 
 ## Reference tables {#reference-tables}
