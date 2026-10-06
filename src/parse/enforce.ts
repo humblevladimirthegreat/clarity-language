@@ -722,13 +722,13 @@ function enforceVerbPredicate(units: Unit[]): void {
 
 /**
  * Tag pronouns (pronouns.md#tag-pronouns): `/z/` `/d/` `/b/` only (`/y/` `/x/` closed by D-24, the rest open),
- * gl- never; **-l** / **-r** / **-m**; **-x** only on **-r** (*A and associates*); a pair (`zwaer`) recalls or shares only.
+ * gl- never; **-l** / **-r** / **-m** / **-n**; **-x** only on **-r** / **-n** (*A and associates*); a pair (`zwaer`) recalls or shares only.
  */
 function enforceTag(word: LexWord): void {
   if (word.gl || !(word.pos === "z" || word.pos === "d" || word.pos === "b")) throw new ConstructionError("tagSlot", word.raw);
-  if (word.ending !== "l" && word.ending !== "r" && word.ending !== "m") throw new ConstructionError("tagEnding", word.raw);
+  if (word.ending !== "l" && word.ending !== "r" && word.ending !== "m" && word.ending !== "n") throw new ConstructionError("tagEnding", word.raw);
   if (word.ending === "l" && word.family.kind === "tag" && word.family.vowels.length > 1) throw new ConstructionError("tagPairAssign", word.raw);
-  if (word.plural && word.ending !== "r") throw new ConstructionError("tagPlural", word.raw);
+  if (word.plural && word.ending !== "r" && word.ending !== "n") throw new ConstructionError("tagPlural", word.raw);
 }
 
 /**
@@ -772,6 +772,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
     if (bind.kind === "pointer") enforcePointer(bind);
     if (bind.antecedent) continue;
     if (bind.kind === "number") throw new ConstructionError("numberResumeUnbound", bind.pronoun.raw);
+    if (bind.kind === "tag" && bind.pronoun.ending === "n") throw new ConstructionError("tagNameUnbound", bind.pronoun.raw);
     if (bind.kind === "tag" && bind.pronoun.ending !== "l") throw new ConstructionError("tagUnbound", bind.pronoun.raw);
     if (bind.kind === "topic") throw new ConstructionError("topicUnbound", bind.pronoun.raw);
     if (bind.kind === "content" && !isLexiconStemResume(bind.pronoun, tables)) {

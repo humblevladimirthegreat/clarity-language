@@ -158,7 +158,7 @@ Source: [pronouns.md](../grammar/pronouns.md#tag-pronouns)
 
 - **closed (D-24):** a tag on `/y/` / `/x/` (`ywar`, `xwar`).
 - **open:** a tag on `/v/` / `/ɡ/` / `/h/` / `/w/` / `/th/`, or with `gl-` (`vwar`). A tag names a participant, and these slots take none. Parser: `tagSlot`.
-- **open:** tag + **-n**, and the stand-in endings on a tag (`zwan`, `zwarl`). No job yet. Parser: `tagEnding`.
+- **open:** the stand-in endings on a tag (`zwarl`, `zwarm`). No job yet. Parser: `tagEnding`.
 - **open:** **-x** on a tag **-l** or **-m** (`zwalx`, `zwamx`). A share is a part, not a group; a group is tagged through its plural phrase (`zodogalx zwal`). Parser: `tagPlural`.
 - **open:** a tag on a word that is already a fixed pronoun: a special pronoun, the generic or topic pronoun, or another tag (`zamun zwal`, `zozan zwal`, `zwar zwel`). It already has one short form, and a second label for the same pronoun would only rename it. Parser: `tagPronoun`.
 - **open:** a tag pair with **-l** (`zwael`). After a two-item list it could tag the items in order or the group as one, so neither reading is guessable; each tag is assigned on its own. Parser: `tagPairAssign`.

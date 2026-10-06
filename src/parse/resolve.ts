@@ -45,8 +45,8 @@ type Anchor = { predicate: LexWord; fillers: Partial<Record<RoleVowel, Filler>> 
 /** An open clause: its own anchor (absent with no predicate) and how many anchors came before it. */
 type OpenClause = { anchor?: Anchor; before: number };
 
-/** What a tag names: the phrase it was assigned to (or the tag word itself for a new referent) and its referent key. */
-type TagBinding = { word: LexWord; key: string };
+/** What a tag names: the phrase it was assigned to (or the tag word itself for a new referent), its referent key, and whether the phrase is a name (**-n**), which a tag **-n** needs. */
+type TagBinding = { word: LexWord; key: string; named: boolean };
 
 /** What the talk is about now: the `/x/` word that set it, and the referent it names (pronouns.md#topic). */
 type Topic = { word: LexWord; key: string };
@@ -539,7 +539,8 @@ function assignTag(ctx: Ctx, word: TagWord, slot: WordSlot | undefined): void {
   const key = group ? fillerKey(ctx, { words: group.words }) : referentKey(ctx, named ?? word);
   ctx.referents.set(word, key);
   if (named) ctx.referents.set(named, key);
-  ctx.tags.set(vowel, { word: named ?? word, key });
+  const isName = group ? group.words.every((item) => item.ending === "n") : named?.ending === "n";
+  ctx.tags.set(vowel, { word: named ?? word, key, named: isName });
   if (named) ctx.anaphors.push({ pronoun: word, kind: "tag", antecedent: named });
 }
 
@@ -550,9 +551,9 @@ function fillerHas(ctx: Ctx, filler: Filler, key: string): LexWord | undefined {
 }
 
 /**
- * **-r** is the tagged referent; **-m** its part in the latest earlier event it filled a part of. A pair (`zwaer`) is
+ * **-r** is the tagged referent, and **-n** the same when it was assigned to a name; **-m** its part in the latest earlier event it filled a part of. A pair (`zwaer`) is
  * both at once: together on **-r**, and their parts in the latest earlier event both took part in on **-m**.
- * A recall or share with a tag not assigned stays unbound (enforce rejects it).
+ * A recall or share with a tag not assigned (or, for **-n**, not assigned to a name) stays unbound (enforce rejects it).
  */
 function recallTag(ctx: Ctx, word: TagWord): void {
   const bind: AnaphorBind = { pronoun: word, kind: "tag" };
@@ -561,7 +562,8 @@ function recallTag(ctx: Ctx, word: TagWord): void {
   if (bindings.some((binding) => !binding)) return;
   const tagged = bindings as TagBinding[];
   const pair = tagged.length > 1;
-  if (word.ending === "r") {
+  if (word.ending === "n" && tagged.some((binding) => !binding.named)) return;
+  if (word.ending === "r" || word.ending === "n") {
     bind.antecedent = tagged[0]!.word;
     if (pair) bind.antecedents = tagged.map((binding) => binding.word);
     ctx.referents.set(word, tagged.map((binding) => binding.key).sort().join("&"));

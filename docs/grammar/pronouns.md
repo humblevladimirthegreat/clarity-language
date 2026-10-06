@@ -596,8 +596,9 @@ English sometimes labels people to keep them apart: *call the first one A*, *sup
 | `zodogal zwal` | a phrase, then tag + **-l** in the same role: assign | *a dog, call it A* |
 | `zwal` | tag + **-l** with no phrase before it | *someone A*: a new referent with no name |
 | `zwar` / `dwar` / `bwar` | tag + **-r**: the one tagged A, in that role | *A* |
+| `zwan` / `dwan` / `bwan` | tag + **-n**: **-r** that needs a name | *A*, when A was assigned to a name |
 | `zwam` / `dwam` / `bwam` | tag + **-m**: A's part in the latest event A took part in | *what A did* |
-| `zwarx` | **-r** + **-x** | *A and associates* |
+| `zwarx` / `zwanx` | **-r** or **-n** + **-x** | *A and associates* |
 
 The other tags follow the same pattern: `zwel` / `zwer` / `zwem`, `zwol` / `zwor` / `zwom`, `zwul` / `zwur` / `zwum`.
 
@@ -611,6 +612,7 @@ The last `zwar` is still the dog, though the cat is the newer doer. `zaxar` woul
 
 - **Assign.** A tag with **-l** right after a phrase in the same role names that phrase: a noun with its `/ɡ/` describers, a name, a resume, or a role pointer. With no phrase before it, it brings in someone new.
 - **Recall.** A tag with **-r** is the ordinary [whole-stem resume](#resume-r): `zwar` resumes `zwal`, so it picks the latest word with that stem, which is the one that assigned the tag.
+- **Named recall.** A tag with **-n** is **-r** for a tag assigned to a **-n** word (`zazawan zwal`, then `zwan`). It picks the same referent as `zwar`; it adds the claim that A is a name. If A was assigned to a kind (`zodogal zwal`), to a placeholder (`zwal` alone), or to a group that is not all names, `zwan` is not a sentence, and it does not fall back to **-r**. `zwan` is always the tag and never a name, as no root begins with `w`.
 - **Reassign.** A newer `zwal` takes A over, by the same rule.
 - **Tag later.** A tag can go on a resume: `dodogar dwel` is *the dog, call it E*.
 - **Lists.** Inside a [join fence](joins.md#right-close), each tag names the item right before it: `zodogal zwal zagadul zwel zam` is *a dog (A) and a cat (E)*. After the join word, a tag names the whole group: `zodogal zagadul zam zwal` is *a dog and a cat, call them A*. A new tag listed with something else goes first: `zwal zodogal zam` is *A and a dog*.
@@ -632,7 +634,7 @@ A tag with **-m** is a [share](#share): A's part in the latest earlier sentence 
 >
 > "Azawan (A) punches Alahen. Ahaben sees what A did."
 
-Tags fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`yalahen`); to make them the topic again, name them (`xazawar`). A word that is already a pronoun with one fixed form takes no tag: the [special pronouns](#special-pronouns), the generic and topic pronouns, and a tag itself. A resume and a role pointer do take one, because a tag keeps them fixed while they would otherwise follow the latest match. **-x** goes only on **-r**: a share is a part, not a group of people, and to tag a group, tag its phrase (`zodogalx zwal`).
+Tags fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`yalahen`); to make them the topic again, name them (`xazawar`). A word that is already a pronoun with one fixed form takes no tag: the [special pronouns](#special-pronouns), the generic and topic pronouns, and a tag itself. A resume and a role pointer do take one, because a tag keeps them fixed while they would otherwise follow the latest match. **-x** goes only on **-r** and **-n**: a share is a part, not a group of people, and to tag a group, tag its phrase (`zodogalx zwal`).
 
 A tag lasts until it is assigned again or the conversation ends with a [goodbye](word-endings.md#greeting). A [topic change](#topic-resets) leaves tags alone, so placeholder reasoning can run through a side topic and back. A tag assigned inside a [dependent](dependents.md#dependent-clauses) holds after it, because the dependent is the same talk. A quote keeps its own tags, as it keeps its own topic.
 

@@ -980,7 +980,7 @@ function sensePieces(
   // a pair is `←tag.A+E` (glosses.md § Anaphors).
   if (family.kind === "tag") {
     const name = `tag.${family.vowels.map((vowel) => vowel.toUpperCase()).join("+")}`;
-    return [word.ending === "l" ? name : `←${name}${word.ending === "m" ? ".part" : ""}`];
+    return [word.ending === "l" ? name : `←${name}${word.ending === "m" ? ".part" : word.ending === "n" ? ".name" : ""}`];
   }
   const resume =
     (word.ending === "r" || (family.kind === "x" && family.xFamily === "pointer")) &&
