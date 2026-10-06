@@ -471,147 +471,172 @@ A tie of care (*Azawan's patient*, *Azawan's team*) is **`gahabom`**: `/b/` look
 
 **Compare with:** kin uses generation numbers ([kin generations](numbers-applied.md#kin-generations)). Plain *Azawan's*, with the tie left unsaid, is the hook [`em`](hooks.md#genitive). Ownership is `gegabem`. *Part of* is `gobom`.
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a train platform
 
-**Roots used here:**
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *station* | `ezedel` | 🚉 |
+| *house* | `ahazal` | 🏠 |
+| *companionship* | `gemezem` | 🤶 from *Mrs Claus*: a companion at your side |
+| *exactly-like* | `humul` | 🪞 from *mirror*: **-l** for an exact match, **-m** for *like* |
+| *between* | `hazam` | 🥪 from *sandwich*: the filling sits between two sides |
+| *across* | `hebum` | 🌉 from *bridge*: a bridge spans the gap |
+| *around* | `hugem` | 🎠 from *carousel*: on all sides of the center pole |
+| *contents* | `gahem` | 🫙 from *jar*: the vessel named by what it stores |
+| *origin* | `gagum` | 🗾 from *country*: where it comes from |
+
+**Review:**
 
 | English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
+| *duck* | `adagul` |
 | *train* | `edehal` |
-| *station* | `ezedel` |
-| *chair* | `ehahel` |
-| *house* | `ahazal` |
-| *sit* | `vehahel` |
-| *stand* | `vazadol` |
+| *ticket* | `edegal` |
+| *luggage* | `alagel` |
+| *teapot* | `edebul` |
+| *wine* | `awahel` |
+| *ant* | `anadol` |
+| *bread* | `ebevul` |
+| *saw* | `ozazol` |
+| *smell* | `vonozal` |
 | *walk* | `vowogal` |
 | *run* | `varahal` |
-| *between* | `hazam` |
-| *around* | `hugem` |
-| *wood* | `uwul` |
-| *material* | `guwum` |
-| *exactly-like* | `humul` |
-| *exactly-like* | `gumul` |
+| *sit* | `vehahel` |
+| *see* | `vahahal` |
+| *find* | `vamagal` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan sits on a chair.*
+**1.** *Alahen runs exactly like a duck.*
 
 ::: details Show answer
-`zazawan vehahel aol behahel.`
+`zalahen humul badagul varahal.`
 
-z-Azawan | v-sit | [on | b-chair]
+z-Alahen | [h-exactly-like | b-duck] | v-run
 :::
 
-**2.** *Alahen walks from a station toward a train.*
+**2.** *Ahaben walks from a house to a station.*
 
 ::: details Show answer
-`zalahen ul bezedel vowogal oel bedehal.`
+`zahaben ul bahazal vowogal ol bezedel.`
 
-z-Alahen | [from | b-station] | v-walk | [toward | b-train]
+z-Ahaben | [from | b-house] | v-walk | [at | b-station]
 :::
 
-**3.** *Ahaben sits between a train and a station.*
+**3.** *Azawan sits between the luggage and a train.*
+
+::: details Show answer
+`zazawan vehahel hazam balagel bedehal bal.`
+
+z-Azawan | v-sit | [h-between | [b-luggage | b-train | b-and]]
+:::
+
+**4.** *Ahaben sees a teapot of wine.*
+
+::: details Show answer
+`zahaben dedebul gahem bawahel vahahal.`
+
+z-Ahaben | [d-teapot | [g-contents | b-wine]] | v-see
+:::
+
+**5.** *Ahaben is Alahen's friend.*
+
+::: details Show answer
+`zahaben gemezem balahen.`
+
+z-Ahaben | [g-companionship | b-Alahen]
+:::
+
+**6.** *Alahen runs across the station.*
+
+::: details Show answer
+`zalahen varahal hebum bezedel.`
+
+z-Alahen | v-run | [h-across | b-station]
+:::
+
+#### Agazan → English {#intermediate-agazan-to-english}
+
+**1.** `zahaben ual bedehal vowogal ol bezedel.`
+
+::: details Show answer
+z-Ahaben | [out-of | b-train] | v-walk | [at | b-station]
+
+*Ahaben walks out of a train to the station.*
+:::
+
+**2.** `zanadolx vehahel hugem balagel.`
+
+::: details Show answer
+z-ant-x | v-sit | [h-around | b-luggage]
+
+*Ants sit around the luggage.*
+:::
+
+**3.** `zalahen dedegal gagum bezedel vamagal.`
+
+::: details Show answer
+z-Alahen | [d-ticket | [g-origin | b-station]] | v-find
+
+*Alahen finds a ticket from the station.*
+:::
+
+**4.** `zalagel gumul balahen.`
+
+::: details Show answer
+z-luggage | [g-exactly-like | b-Alahen]
+
+*Luggage just like Alahen's.*
+:::
+
+**5.** `zazawan zahaben zal gemezem.`
+
+::: details Show answer
+[z-Azawan | z-Ahaben | z-and | g-companionship]
+
+*Azawan and Ahaben are friends.*
+:::
+
+**6.** `zalahen debevul gozazom vonozal.`
+
+::: details Show answer
+z-Alahen | [d-bread | g-division] | v-smell
+
+*Alahen smells a piece of bread.*
+:::
+
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Alahen walks like a duck* (resembles it). `zalahen humum badagul vowogal.` or `zalahen humul badagul vowogal.`
+
+::: details Show answer
+`zalahen humum badagul vowogal.`
+
+z-Alahen | [h-like | b-duck] | v-walk
+
+**-m** is resemblance; **-l** would claim an exact match.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Ahaben sits between the train and the station.* <!-- lint: error -->`zahaben vehahel hazam bedehal bezedel.`
 
 ::: details Show answer
 `zahaben vehahel hazam bedehal bezedel bal.`
 
 z-Ahaben | v-sit | [h-between | [b-train | b-station | b-and]]
-:::
 
-**4.** *Azawan runs out of a house into a train.*
-
-::: details Show answer
-`zazawan ual bahazal varahal al bedehal.`
-
-z-Azawan | [out-of | b-house] | v-run | [in | b-train]
-:::
-
-**5.** *Ahaben sits on a chair made of wood.*
-
-::: details Show answer
-`zahaben vehahel aol behahel guwum buwul.`
-
-z-Ahaben | v-sit | [on | [b-chair | [g-material | b-wood]]]
-:::
-
-**6.** *Alahen walks around a station.*
-
-::: details Show answer
-`zalahen vowogal hugem bezedel.`
-
-z-Alahen | v-walk | [h-around | b-station]
-:::
-
-**7.** *Alahen walks exactly like Azawan.*
-
-::: details Show answer
-`zalahen humul bazawan vowogal.`
-
-z-Alahen | [h-exactly-like | b-Azawan] | v-walk
-:::
-
-#### Agazan → English {#intermediate-agazan-to-english}
-
-**1.** `zahaben vazadol ol bezedel.`
-
-::: details Show answer
-
-z-Ahaben | v-stand | [at | b-station]
-
-*Ahaben stands at a station.*
-:::
-
-**2.** `zazawan varahal ual bedehal.`
-
-::: details Show answer
-
-z-Azawan | v-run | [out-of | b-train]
-
-*Azawan runs out of a train.*
-:::
-
-**3.** `zalahen vowogal uol bezedel.`
-
-::: details Show answer
-
-z-Alahen | v-walk | [through | b-station]
-
-*Alahen walks through a station.*
-:::
-
-**4.** `zalahen ul bezedel vowogal ol bedehal.`
-
-::: details Show answer
-
-z-Alahen | [from | b-station] | v-walk | [at | b-train]
-
-*Alahen walks from a station to a train.*
-:::
-
-**5.** `zazawan gagum bahazal varahal.`
-
-::: details Show answer
-
-[z-Azawan | [g-origin | b-house]] | v-run
-
-*Azawan, from that house, runs.*
-:::
-
-**6.** `zahaben gumul balahen.`
-
-::: details Show answer
-
-z-Ahaben | [g-exactly-like | b-Alahen]
-
-*Ahaben is just like Alahen.*
+Both landmarks fill the one `/b/` slot after **`hazam`**, so join them with **`bal`**.
 :::
 
 ## Advanced {#advanced}

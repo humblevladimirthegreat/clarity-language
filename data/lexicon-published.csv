@@ -200,7 +200,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧑‍🍼,feeding-baby,evedo,nurturing,feeding a baby helps it grow,,nurse,
 👼,angel,enahe,,,,,
 🎅,santa,azave,,,,,
-🤶,mrs-claus,emeze,companionship,mrs claus offers companionship,,accompany; ally,
+🤶,mrs-claus,emeze,companionship,mrs claus offers companionship,,accompany; ally,relations.md#intermediate-practice
 🦸,save,ezeva,heroism,saving shows heroism,,hero; spare,
 🦹,scheme,azegu,villainy,scheming embodies villainy,,criminal; plot,
 🧙,conjure,agehe,magic,conjuring wields magic,,,
@@ -531,7 +531,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🪨,rock,araga,heavy,rock is hard to lift; heaviness is weight on a scale,,stone; weight; concrete; firmly,plurality.md#intermediate-practice
 🪵,wood,uwu,raw,wood is unfinished material; raw is unprocessed state,,log,x-compounds.md#beginner-practice
 🛖,hut,ahede,locality,hut sits in a small settlement; locality is the near neighborhood,,local; neighborhood,
-🏠,house,ahaza,home,a house is walls and roof; home is where you belong,,domestic; accommodation; chamber,relations.md#intermediate-translation-practice
+🏠,house,ahaza,home,a house is walls and roof; home is where you belong,,domestic; accommodation; chamber,relations.md#intermediate-practice
 🏢,office,oveza,corporate,tall offices for business; corporate is organized commerce,,facility; corporation; agency,
 🏤,post-office,oveze,conveyance,post office sends mail; conveyance is the unobservable transfer-as-kind,,delivery; transportation; transfer; transport,
 🏥,hospital,ahazo,,,,,word-endings.md#intermediate-practice
@@ -572,7 +572,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💈,shave,ehevo,,,,,
 🎪,circus,azega,spectacle,circus tent promises a show; spectacle is a striking display,,exhibition; demonstration,
 🚆,train,edeha,momentum,train stays on its track; momentum keeps moving forward,,rail,clause.md#intermediate-practice
-🚉,station,ezede,hub,station connects many routes; hub is where paths meet,,platform,relations.md#intermediate-translation-practice
+🚉,station,ezede,hub,station connects many routes; hub is where paths meet,,platform,relations.md#intermediate-practice
 🚌,bus,abazu,commute,bus carries many riders daily; commute is the daily journey,,,
 🚑,ambulance,amaba,emergency,ambulance rushes to crisis; emergency is urgent crisis,,,word-endings.md#intermediate-practice
 🚒,fire-truck,avava,newton,a firetruck pushes; newton is the SI force unit,,,
