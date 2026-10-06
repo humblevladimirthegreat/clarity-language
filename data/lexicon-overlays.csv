@@ -145,12 +145,12 @@ uon,h,,join_relation,anything-but,join-relation barring anything but (adverb),co
 en,v,,join_act,prioritizes,join-act prioritizes object,rank join e+n as verb; prioritizes puts this first,join-across-roles.md#join-act-verbs
 en,g,,join_relation,prioritizing,join-relation prioritizing (adjective),rank join e+n on /g/; prioritizing heads by argument,join-across-roles.md#join-relations
 en,h,,join_relation,prioritizing,join-relation prioritizing (adverb),rank join e+n on /h/; prioritizing puts argument first,join-across-roles.md#join-relations
-aen,v,,join_act,equates,join-act equates or ties objects,equative ae+n as verb; equates ties candidates together,join-across-roles.md#join-act-verbs
-aen,g,,join_relation,on-a-par,join-relation on a par with (adjective),equative ae+n on /g/; on a par equates with argument,join-across-roles.md#join-relations
-aen,h,,join_relation,on-a-par,join-relation equating or tying (adverb),equative ae+n on /h/; equating ties to argument,join-across-roles.md#join-relations
-oen,v,,join_act,starts-with,join-act starts with object,sequence oe+n as verb; starts with puts the object first in order,join-across-roles.md#join-act-verbs
-oen,g,,join_relation,starting-with,join-relation starting with (adjective),sequence oe+n on /g/; starting with puts argument first in order,join-across-roles.md#join-relations
-oen,h,,join_relation,starting-with,join-relation starting with (adverb),sequence oe+n on /h/; starting with puts argument first in order,join-across-roles.md#join-relations
+aen,v,,join_act,starts-with,join-act starts with object,sequence ae+n as verb; starts with puts the object first in order,join-across-roles.md#join-act-verbs
+aen,g,,join_relation,starting-with,join-relation starting with (adjective),sequence ae+n on /g/; starting with puts argument first in order,join-across-roles.md#join-relations
+aen,h,,join_relation,starting-with,join-relation starting with (adverb),sequence ae+n on /h/; starting with puts argument first in order,join-across-roles.md#join-relations
+oen,v,,join_act,equates,join-act equates or ties objects,equative oe+n as verb; equates ties candidates together,join-across-roles.md#join-act-verbs
+oen,g,,join_relation,on-a-par,join-relation on a par with (adjective),equative oe+n on /g/; on a par equates with argument,join-across-roles.md#join-relations
+oen,h,,join_relation,on-a-par,join-relation equating or tying (adverb),equative oe+n on /h/; equating ties to argument,join-across-roles.md#join-relations
 uen,v,,join_act,deprioritizes,join-act deprioritizes object,counterrank ue+n as verb; deprioritizes puts this last,join-across-roles.md#join-act-verbs
 uen,g,,join_relation,deprioritizing,join-relation deprioritizing (adjective),counterrank ue+n on /g/; deprioritizing trails argument,join-across-roles.md#join-relations
 uen,h,,join_relation,deprioritizing,join-relation deprioritizing (adverb),counterrank ue+n on /h/; deprioritizing puts argument last,join-across-roles.md#join-relations

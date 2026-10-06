@@ -371,8 +371,8 @@ export const JOIN_SERIES_CONSTRUCTIONS: Record<JoinSeries, ConstructionEntry> = 
   ua: { anchor: "joins.md#everything-ua", summary: "everything but" },
   uo: { anchor: "joins.md#full-single-item-and-standalone-inventories", summary: "anything but" },
   e: { anchor: "joins.md#rank-e", summary: "rank" },
-  ae: { anchor: "comparatives.md#equatives-ae-shared-scale", summary: "equal rank" },
-  oe: { anchor: "joins.md#sequence-oe", summary: "sequence (first = start)" },
+  ae: { anchor: "joins.md#sequence-ae", summary: "sequence (first = start)" },
+  oe: { anchor: "comparatives.md#equatives-oe-shared-scale", summary: "equal rank" },
   ue: { anchor: "joins.md#invert-ua-uo-ue", summary: "rank reversal" },
 };
 

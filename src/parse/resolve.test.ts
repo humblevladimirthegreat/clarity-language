@@ -468,7 +468,7 @@ describe("resolve — SHARED (comparatives.md / numbers.md)", () => {
   });
 
   it("reads ae + SHARED manner /h/ as equative", () => {
-    const { shared } = resolveOf("zululon zazawan zael hohogem vawalal.");
+    const { shared } = resolveOf("zululon zazawan zoel hohogem vawalal.");
     assert.equal(shared[0]!.role, "equative");
     assert.equal(shared[0]!.shared.word.raw, "hohogem");
   });
@@ -479,12 +479,12 @@ describe("resolve — SHARED (comparatives.md / numbers.md)", () => {
   });
 
   it("reads ae + SHARED as equative", () => {
-    const { shared } = resolveOf("zazawan zululon zael gomonum.");
+    const { shared } = resolveOf("zazawan zululon zoel gomonum.");
     assert.equal(shared[0]!.role, "equative");
   });
 
   it("reads sequence oe with two numbers + SHARED as a scale, not a range", () => {
-    const { shared } = resolveOf("z+3 z+5 zoel gumedul.");
+    const { shared } = resolveOf("z+3 z+5 zael gumedul.");
     assert.equal(shared[0]!.role, "scale");
     assert.equal(shared[0]!.shared.word.raw, "gumedul");
   });

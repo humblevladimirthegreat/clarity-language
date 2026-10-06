@@ -164,7 +164,7 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 | 135 | Oh, dear! the wind has blown my hat away! | `!yewedan. zewedur thamom dazehal em bamagon vewedulum.` | !y-Ewedan . z-←wind \| th-RESIDUE \| d-sun-hat \| [used-by \| b-speaker] \| v-wind-recede | covered |
 | 136 | Alas! that news is sad indeed! | `!yagahun. zunuzer wanathumam gobum.` | !y-Agahun . z-←newspaper \| [w-relatedness-unmet-modifiable-INTERNAL-FLOWING \| g-stimulus] | covered |
 | 137 | Whew! that cold wind freezes my nose! | `!yuvuyun. zewedur gogodel donozal gobom bamagon vazahol.` | !y-Uvuyun . [z-←wind \| g-cold] \| [d-nose \| [g-part-of \| b-speaker]] \| v-ice | covered |
-| 138 | Are you warm enough now? | `yol ? zehodon thegatham zael gahadul thahom bagazem grazol.` | y-question \| [? \| z-listener \| th-sake-met-any-term \| z-equal-rank \| g-hot] \| [th-INTUITION \| [b-hour \| g-zero]] | covered |
+| 138 | Are you warm enough now? | `yol ? zehodon thegatham zoel gahadul thahom bagazem grazol.` | y-question \| [? \| z-listener \| th-sake-met-any-term \| z-equal-rank \| g-hot] \| [th-INTUITION \| [b-hour \| g-zero]] | covered |
 | 139 | They heard the warning too late. | `zobelx thegatham zel bral thevom dowawol vewal.` | [z-person-x \| th-sake-met-any-term \| z-rank/more \| b-later] \| th-MEMORY \| d-warning \| v-hear | covered |
 | 140 | We are a brave people, and love our country. | `zamagonx galahem xal zamagonx dagul em bamagonx valaval.` | [z-speaker-x \| g-courage \| x-and \| z-speaker-x \| d-country \| [used-by \| b-speaker-x] \| v-love] | covered |
 | 141 | All the children came except Mary. | `zual gahadol ul zalahen thevom vevahal.` | [z-everything \| g-child] \| except \| z-Alahen \| th-MEMORY \| v-arrival | covered |

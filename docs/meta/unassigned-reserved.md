@@ -90,7 +90,7 @@ Source: [numeric-derivation.md](../grammar/numeric-derivation.md). All **open**.
 
 Source: [restrictors.md](../grammar/restrictors.md)
 
-- **open:** bare restrictors beyond `hal` / `hual` / `har` / `hor` / `hur` / `her`: **`hol` / `hom`**, **`haol` / `haom`**, **`hul` / `hum`**, **`huol` / `huom`**, **`hel` / `hem`**, **`hoel` / `hoem`**. With no occasions two readings compete: the restrictor's empty list (*never* / *always*) and the matching standalone join (`zol` *no options*, `zaol` *nothing more needed*, `zuol` *anything goes*, `zel` *no favorite*, `zoel` *in no particular order*), so none is guessable.
+- **open:** bare restrictors beyond `hal` / `hual` / `har` / `hor` / `hur` / `her`: **`hol` / `hom`**, **`haol` / `haom`**, **`hul` / `hum`**, **`huol` / `huom`**, **`hel` / `hem`**, **`hael` / `haem`**. With no occasions two readings compete: the restrictor's empty list (*never* / *always*) and the matching standalone join (`zol` *no options*, `zaol` *nothing more needed*, `zuol` *anything goes*, `zel` *no favorite*, `zael` *in no particular order*), so none is guessable.
 - **open:** further `/w/` bare forms beyond **`wal` / `wam` / `wual` / `wuam` / `war` / `wor` / `wur` / `wer`** and the non-bare Intermediate core: the same competing readings.
 - **open:** **-n** on `/w/` (`wan`, …). `/w/` is never a phrase-list item, so there is no package to name. (`/h/`…**-n** is [join-relations](../grammar/join-across-roles.md#join-relations).)
 - **open:** **`wazem`** before **-r** / **-n**. *Respectively something* has no reading.
@@ -102,9 +102,9 @@ Source: [joins.md](../grammar/joins.md), [join-across-roles.md](../grammar/join-
 
 - **open:** **`/th/`…-n**. Join-relations frame a noun or an event, and a stance is neither, so no reading composes.
 - **open:** stacked **-r** outside a question on `/th/` (`thaor` … `thuer` are fill-asks only), and on `/z/` `/d/` `/b/` `/v/` `/x/` `/ɡ/` joins (`zuar`, `vaor`, `xuar`, `gaor`). No statement wants a stacked blank, and no question has asked for one on these joins. Parser: `stackedJoinResume`.
-- **open:** clause sequence **-n** beyond `xan` `xon` `xun` `xaon` `xuen` (`xuan`, `xuon`, `xen`, `xaen`, `xoen`). No reading is guessable: `xen` and `xoen` put rank or order into a sequence that is already ordered, `xaen` could be *at the same time* or *in either order*, and `xuan` / `xuon` (*everything but* / *anything but*) have no clause job. `xen` is also a departure mark after a name.
+- **open:** clause sequence **-n** beyond `xan` `xon` `xun` `xaon` `xuen` (`xuan`, `xuon`, `xen`, `xaen`, `xoen`). No reading is guessable: `xen` and `xaen` put rank or order into a sequence that is already ordered, `xoen` could be *at the same time* or *in either order*, and `xuan` / `xuon` (*everything but* / *anything but*) have no clause job. `xen` is also a departure mark after a name.
 - **closed (D-39):** a single-item clause join (`A xul` *not the case that A*, `A xal` *only A happened*).
-- **open:** a rank or sequence join (`e` / `ue` / `oe`) with a number as a threshold, and a SHARED continuum word. In a rank or sequence fence a number is one of the items, so a threshold reading is not guessable. Ranges use hooks and [rays](../grammar/numbers-applied.md#rays).
+- **open:** a rank or sequence join (`e` / `ue` / `ae`) with a number as a threshold, and a SHARED continuum word. In a rank or sequence fence a number is one of the items, so a threshold reading is not guessable. Ranges use hooks and [rays](../grammar/numbers-applied.md#rays).
 
 ## Comparison bars
 

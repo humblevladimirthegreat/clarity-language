@@ -368,8 +368,8 @@ Closed **`hel`** ranks the listed occasions: the first one listed is the preferr
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`hel` / `hem`** | priority among occasions | *preferably when A ≻ when B…* (closed / open) | **e** ≈ order |
-| **`hael` / `haem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **a** ≈ add + **e** ≈ order |
-| **`hoel` / `hoem`** | occasions in order | *first when A, then when B* (closed / open) | **o** ≈ one + **e** ≈ order |
+| **`hael` / `haem`** | occasions in order | *first when A, then when B* (closed / open) | **a** ≈ add + **e** ≈ order |
+| **`hoel` / `hoem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **o** ≈ one + **e** ≈ order |
 | **`huel` / `huem`** | occasions last-first | *as a last resort when A* (one occasion); several run last-listed first (closed / open) | **u** ≈ undo + **e** ≈ order |
 
 > `zazawan vowogal hamabam hagevem hel.`
@@ -482,7 +482,7 @@ z-Azawan | v-climb | h-rain | h-snow | h-when-ranked
 **6.** *Azawan climbs first when there is ice, then when there is fog.*
 
 ::: details Show answer
-`zazawan vagayal hazahol havegel hoel.`
+`zazawan vagayal hazahol havegel hael.`
 
 z-Azawan | v-climb | h-ice | h-fog | h-when-in-order
 :::
@@ -530,7 +530,7 @@ z-Alahen | v-climb | h-rain | h-night | h-when-one.open
 *Alahen climbs either when raining or at night, or never.*
 :::
 
-**2.** `zalahen vagayal herehel hozezol hael.`
+**2.** `zalahen vagayal herehel hozezol hoel.`
 
 ::: details Show answer
 

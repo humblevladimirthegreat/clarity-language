@@ -149,7 +149,7 @@ function isJoinGap(word: LexWord): boolean {
 function classifySharedRole(join: LexWord, shared: CoordShared): SharedRole {
   const series = join.family.kind === "joinMarker" ? join.family.series : "";
   if (SCALE_SERIES.has(series)) return "scale";
-  if (series === "ae") return "equative";
+  if (series === "oe") return "equative";
   if (KIND_SERIES.has(series)) return "kind";
   if (series === "a") return isSharedGPackage(shared) && shared.word.plural ? "collective" : "distribute";
   return "ordinary";

@@ -370,8 +370,8 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `dol` | `d-or-exactly-one` |
 | `zol` | `z-or-exactly-one` |
 | `zel` | `z-rank/more` |
-| `zael` | `z-equal-rank` |
-| `zaem` | `z-equal-rank.open` |
+| `zoel` | `z-equal-rank` |
+| `zoem` | `z-equal-rank.open` |
 | `zar` | `z-wh` / `z-something` |
 | `zul` / `gul` | `z-not` / `g-not` |
 | `zual` | `z-everything-but` |

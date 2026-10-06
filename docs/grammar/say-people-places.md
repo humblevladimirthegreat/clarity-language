@@ -65,11 +65,11 @@ English uses the same *who* clause for two jobs. When it picks out **which** one
 
 ### Stacked owners (*Azawan's dog's bone*) {#stacked-owners}
 
-**Needs:** [Whose (`em`)](hooks.md#genitive) · [Sequence `oe`](joins.md#sequence-oe)
+**Needs:** [Whose (`em`)](hooks.md#genitive) · [Sequence `ae`](joins.md#sequence-ae)
 
-When English stacks possessives, keep one **`em`** and list every owner in its `/b/`, closed by the sequence join **`boel`**. Put the **nearest** owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
+When English stacks possessives, keep one **`em`** and list every owner in its `/b/`, closed by the sequence join **`bael`**. Put the **nearest** owner first: the first `/b/` uses the host, and each later `/b/` keeps the one before it.
 
-> `zobol em bodogal bazawan boel.`
+> `zobol em bodogal bazawan bael.`
 >
 > [z-bone | [used-by | [b-dog | b-Azawan | b-in-order]]]
 >
@@ -408,7 +408,7 @@ English makes nouns for a part, a kind, a role, and a manner. Agazan has no sepa
 | *patient* (being treated) | `zuxehewol` | the one who undergoes healing |
 | *scene* (where it happens) | `zexowogal` | the scene of the walk |
 | *function* (purpose) | `zubugal gulothom.` | the book's purpose is competence |
-| *size* (how big) | `zubugal zahavol zael gelavam.` | same size as the hammer |
+| *size* (how big) | `zubugal zahavol zoel gelavam.` | same size as the hammer |
 | *way* / *method* / *style* / *mode* | the manner adverb on `/h/` | `zazawan vowogal hadehum.` |
 | *instance* / *for example* | `aol …` opens the sentence | one case of what you said |
 | *everybody* | `zual` | every member |

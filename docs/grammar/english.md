@@ -76,9 +76,9 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 | same time (*as Alahen walks*) | **`huwem barl`** | [Dependent clauses](dependents.md#dependent-clauses) |
 | reason / since (*as Alahen walks*) | **`thevem barl`** | [Because](causation.md#because) |
 | grounds (*as the sky is gray, it will rain*) | **`thunem barl`** / **`thobam barl`** | [Evidence clause](knowing.md#evidence-clause) |
-| equal degree (*as sleepy as*) | equative **`ae`** | [Equatives](comparatives.md#equatives) |
+| equal degree (*as sleepy as*) | equative **`oe`** | [Equatives](comparatives.md#equatives) |
 | falls short (*not as sleepy as*) | reverse rank **`ue`** | [Reverse rank](comparatives.md#intermediate) |
-| most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`thezexal`** + tie **`ae`** | [Every bar](comparatives.md#stance-bars) |
+| most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`thezexal`** + tie **`oe`** | [Every bar](comparatives.md#stance-bars) |
 | frame one sentence (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | resemblance (*walks as / like a duck*) | **`humum`** + `/b/` | [Simile](relations.md#similative) |
 | how close (*exactly like*, *a bit like*) | **`humul`** for an exact match (`humul badagul`), or `/w/` before **`humum`**: `wubuzam humum badagul` (*precisely*), `wamazam humum badagul` (*a bit*) | [Exactly like](relations.md#exactly-like), [simile](relations.md#similative), [degree words](clause.md#degree-w) |

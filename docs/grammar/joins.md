@@ -493,14 +493,14 @@ A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaini
 |-------------|----------------------|
 | **a** | distributive property (*both ADJ*) or bundle description |
 | **a** + `/ɡ/`…**-x** | [collective](plurality.md#adjectives-g) (*ADJ together*) |
-| **ae** + SHARED scale | [equative](comparatives.md#equatives) (`/ɡ/` or `/h/`) |
+| **oe** + SHARED scale | [equative](comparatives.md#equatives) (`/ɡ/` or `/h/`) |
 | **e** / **ue** on NP | [comparison scale](comparatives.md) (`/ɡ/` or `/h/`) |
-| **oe** on NP | sorted low to high (`/ɡ/` or `/h/`) |
+| **ae** on NP | sorted low to high (`/ɡ/` or `/h/`) |
 | **ua** / **uo** | kind / domain for universals |
 
 More items of the same role go *before* the join, not after it.
 
-SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a [scale](comparatives.md#manner-scale) after rank **`e`** / **`ue`**, equative **`ae`**, or sequence **`oe`**. After a verb join, only an `/h/` is SHARED. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
+SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a [scale](comparatives.md#manner-scale) after rank **`e`** / **`ue`**, equative **`oe`**, or sequence **`ae`**. After a verb join, only an `/h/` is SHARED. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
 
 > `zazawan zalahen zal hahegem vowogal.`
 >
@@ -511,9 +511,9 @@ SHARED material has to be able to describe what the join lists. After a noun joi
 ### Rank joins {#rank-joins}
 <a id="priority-ranking-e"></a>
 
-When English would say two people are *as ADJ as* each other, use a tie: a rank join with two vowels, **a** then **e** (**`zael`**, or open **`zaem`**). Write the names, then the tie, then the adjective right after it, so the adjective grades the whole list. In a tie, the order of the names does not matter.
+When English would say two people are *as ADJ as* each other, use a tie: a rank join with two vowels, **o** then **e** (**`zoel`**, or open **`zoem`**). Write the names, then the tie, then the adjective right after it, so the adjective grades the whole list. In a tie, the order of the names does not matter.
 
-> `zazawan zalahen zael gamadam.`
+> `zazawan zalahen zoel gamadam.`
 >
 > [z-Azawan | z-Alahen | z-equal-rank | g-challenge]
 >
@@ -548,12 +548,11 @@ What *everything* or *anything* ranges over comes from context, or from a [SHARE
 
 **Compare with:** plain **`u`** is *not* / *none of* the listed, not an invert stack. *Every cat* uses SHARED kind after **`zual`**: `zual gagadul`.
 
-### Sequence (**`oe`**) {#sequence-oe}
-<a id="sequence-oe-join"></a>
+### Sequence (**`ae`**) {#sequence-ae}
 
-Rank **`e`** puts the first item at the **top** (*A matters more than B*). When English would instead say *A, then B* (an itinerary, a turn order, *from 3 to 5*), the first item is the **start**, not the winner. Write the items in that order and close with **`oe`**.
+Rank **`e`** puts the first item at the **top** (*A matters more than B*). When English would instead say *A, then B* (an itinerary, a turn order, *from 3 to 5*), the first item is the **start**, not the winner. Write the items in that order and close with **`ae`**.
 
-> `zazawan zalahen zahaben zoel.`
+> `zazawan zalahen zahaben zael.`
 >
 > [z-Azawan | z-Alahen | z-Ahaben | z-in-order]
 >
@@ -561,13 +560,13 @@ Rank **`e`** puts the first item at the **top** (*A matters more than B*). When 
 
 | Arity | Closed **-l** | Open **-m** |
 |-------|---------------|-------------|
-| Multi (2+) | `A B zoel` *A, then B* | `A B zoem` *roughly A, then B* |
-| Single-item | `X zoel` *start with X* / *from X on* | `X zoem` *maybe start with X* |
-| Standalone | `zoel` *in no particular order* / *any order* | `zoem` *not sure where to start* |
+| Multi (2+) | `A B zael` *A, then B* | `A B zaem` *roughly A, then B* |
+| Single-item | `X zael` *start with X* / *from X on* | `X zaem` *maybe start with X* |
+| Standalone | `zael` *in no particular order* / *any order* | `zaem` *not sure where to start* |
 
-A sequence does not say which item is better. With a SHARED quality it sorts the list from low to high. Two numbers in a sequence are two values in order (`zrarel zraval zoel` = *3, then 5*); a band from 3 to 5 is a [range](numbers-applied.md#ranges) (`zrarel al zraval`). (cue: **o** ≈ one + **e** ≈ order: one after another)
+A sequence does not say which item is better. With a SHARED quality it sorts the list from low to high. Two numbers in a sequence are two values in order (`zrarel zraval zael` = *3, then 5*); a band from 3 to 5 is a [range](numbers-applied.md#ranges) (`zrarel al zraval`). (cue: **a** ≈ add + **e** ≈ order: *and then*)
 
-**Compare with:** clause *and then* between sentences is [sequence **`xan`**](join-across-roles.md#sequence). **`zoel`** orders nouns inside one slot.
+**Compare with:** clause *and then* between sentences is [sequence **`xan`**](join-across-roles.md#sequence). **`zael`** orders nouns inside one slot.
 
 ### Respectively (`wazem`) {#respectively}
 
@@ -621,11 +620,11 @@ Beginner already used single-item *just X* and standalone *nothing* / *everythin
 |--------|-----|---------|
 | **…el** (`zel` / …) | closed rank of one | *only X matters* / *X, period*; + SHARED scale → superlative ([comparatives](comparatives.md)) |
 | **…em** (`zem` / …) | open rank of one | *X first* / *mainly X*; + SHARED scale → open superlative |
-| **…ael** (`zael` / …) | closed tie of one | *X tied for* / equal priority to X |
-| **…aem** (`zaem` / …) | open tie of one | *X about tied for* / soft equal priority |
-| **…aen** (`zaen` / …) | stock tie of one | *X tied for* (stock / conventional draw label) |
-| **…oem** (`zoem` / …) | open sequence start | *maybe start with X* |
-| **…oel** (`zoel` / …) | closed sequence start | *start with X* / *from X on* |
+| **…oel** (`zoel` / …) | closed tie of one | *X tied for* / equal priority to X |
+| **…oem** (`zoem` / …) | open tie of one | *X about tied for* / soft equal priority |
+| **…oen** (`zoen` / …) | stock tie of one | *X tied for* (stock / conventional draw label) |
+| **…aem** (`zaem` / …) | open sequence start | *maybe start with X* |
+| **…ael** (`zael` / …) | closed sequence start | *start with X* / *from X on* |
 | **…uel** (`zuel` / …) | closed last place | *X last*; + SHARED scale → least |
 | **…uem** (`zuem` / …) | open last place | *mainly leave X for last* |
 | **…en** (`zen` / …) | stock first | *X first* (stock) / *X, as usual* |
@@ -633,17 +632,17 @@ Beginner already used single-item *just X* and standalone *nothing* / *everythin
 
 **Rank: standalone**
 
-Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *there is no biggest*). Standalone **ue** says nothing is at the bottom (no least, no veto). Neither says the items are tied (that is **`ae`**), and neither picks out *whichever is on top* (that is **`zer`**). Closed **-l** states it as a fact about the set; open **-m** says only that you know of none.
+Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *there is no biggest*). Standalone **ue** says nothing is at the bottom (no least, no veto). Neither says the items are tied (that is **`oe`**), and neither picks out *whichever is on top* (that is **`zer`**). Closed **-l** states it as a fact about the set; open **-m** says only that you know of none.
 
 | Agazan | Use | English |
 |--------|-----|---------|
 | **…el** (`zel` / …) | closed empty rank | *no favorite* / *nobody's first*; + SHARED scale → *there is no biggest* |
 | **…em** (`zem` / …) | open empty rank | *no favorite, as far as I know*; + SHARED scale → *no biggest comes to mind* |
-| **…ael** (`zael` / …) | closed empty tie | *it's a draw* / *tie* |
-| **…aem** (`zaem` / …) | open empty tie | *probably a tie* / *looks even* |
-| **…aen** (`zaen` / …) | stock empty tie | *it's a draw* (stock) |
-| **…oem** (`zoem` / …) | open empty sequence | *not sure where to start* |
-| **…oel** (`zoel` / …) | closed empty sequence | *in no particular order* / *any order* |
+| **…oel** (`zoel` / …) | closed empty tie | *it's a draw* / *tie* |
+| **…oem** (`zoem` / …) | open empty tie | *probably a tie* / *looks even* |
+| **…oen** (`zoen` / …) | stock empty tie | *it's a draw* (stock) |
+| **…aem** (`zaem` / …) | open empty sequence | *not sure where to start* |
+| **…ael** (`zael` / …) | closed empty sequence | *in no particular order* / *any order* |
 | **…uel** (`zuel` / …) | closed empty last | *no least-favorite* / *nobody's last*; + SHARED scale → *there is no smallest* |
 | **…uem** (`zuem` / …) | open empty last | *no objection* (not naming a veto) |
 | **…en** (`zen` / …) | stock empty rank | *no favorite* (stock) |
@@ -975,7 +974,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **9.** *Azawan kisses first, then Alahen.*
 
 ::: details Show answer
-`zazawan zalahen zoel vegezal.`
+`zazawan zalahen zael vegezal.`
 
 [z-Azawan | z-Alahen | z-in-order] | v-kiss
 :::
@@ -983,7 +982,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **10.** *Ahaben kisses first, then Alahen, then Azawan.*
 
 ::: details Show answer
-`zahaben zalahen zazawan zoel vegezal.`
+`zahaben zalahen zazawan zael vegezal.`
 
 [z-Ahaben | z-Alahen | z-Azawan | z-in-order] | v-kiss
 :::
@@ -1086,7 +1085,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *anything but the tuxedo (and possibly more)*
 :::
 
-**9.** `zahaben zoel derehal vahahal.`
+**9.** `zahaben zael derehal vahahal.`
 
 ::: details Show answer
 
@@ -1238,7 +1237,7 @@ NAME[z-and]
 
 #### Agazan → English {#advanced-agazan-to-english}
 
-**1.** `zaen.`
+**1.** `zoen.`
 
 ::: details Show answer
 
@@ -1295,12 +1294,12 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 |--------|-----|---------|
 | **…ul** / **…um** / **…un** | deny at every arity | standalone *no*; one item *not X*; multi *none of* |
 | **…ar** / **…or** / **…er** / **…ur** | unspecified member at every arity | [unspecified **-r**](#unspecified-member-r-phrase) |
-| **…aen** / **…en** / **…an** standalone | stock empty rank / named empty | *it's a draw*; *no favorite* (stock); *null* / *void* |
+| **…oen** / **…en** / **…an** standalone | stock empty rank / named empty | *it's a draw*; *no favorite* (stock); *null* / *void* |
 | **…ual** / **…uol** standalone | empty invert | *everything*; *anything (goes)* |
 | `zobel` vs `zobel zar` | content **-l** vs join **-r** | *a person* vs *some person, unknown who* |
 | `A B C zor` vs `… zer` | menu vs rank unspecified | any of them is fine vs pick by ranking |
 | `A B zar` / `zur` / `zual` | among / leftover / invert | some one among; some one other than; *everything but* |
-| `A B zel` vs `A B zoel` | rank vs [sequence](#sequence-oe) | A matters more than B vs A, then B |
+| `A B zel` vs `A B zael` | rank vs [sequence](#sequence-ae) | A matters more than B vs A, then B |
 
 > `zedehel zagavel zowodel zor.`
 >

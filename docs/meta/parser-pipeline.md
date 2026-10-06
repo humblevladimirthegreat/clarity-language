@@ -151,7 +151,7 @@ Adapter: [`src/parse/tokens.ts`](../../src/parse/tokens.ts) / [`src/parse/tokeni
 Owns:
 
 - Utterance framing ([speech-moves.md](../grammar/speech-moves.md) — `/y/` turns, including a written `/y/` span at the left edge ([spans.md](../grammar/spans.md#y-spans)), omissible default assertoric; [dependents.md](../grammar/dependents.md) — `/x/` continue)
-- Right-close joins at phrase / VP / clause level (illegal left fence); a `/th/` stance word right before a rank join (`e` / `ue` / `ae`, **-l** / **-m**) is that fence's bar, an `NpItem` of kind `bar` ([comparatives.md](../grammar/comparatives.md#bars))
+- Right-close joins at phrase / VP / clause level (illegal left fence); a `/th/` stance word right before a rank join (`e` / `ue` / `oe`, **-l** / **-m**) is that fence's bar, an `NpItem` of kind `bar` ([comparatives.md](../grammar/comparatives.md#bars))
 - `uem` right before a `/th/` stance word holds that stance (with its hosted `/b/`) as the hook unit's `frame`, job `frame`, at the left edge too: the stance the event goes against, not a stance on the claim ([sakes.md](../grammar/sakes.md#contrary-to-stance)). Enforce checks the frame kind (`frameKind`)
 - Adjunct islands **`{ … }`** (`IslandOpen` / `IslandClose` tokens); a mention marker before a topic span (`topicMarker`)
 - Complex `/ɡ|h/` + `/b/`; `/w/` + `/b/` only for *as-of* overlays; floating `/h/` as adjuncts
@@ -170,7 +170,7 @@ Recovery is off. Illegal left fences and binderless islands throw `SentenceParse
 | Number **-r** / `g=+` | Most recent number with the same marker identity ([numbers.md](../grammar/numbers.md#number-endings)) |
 | Role **-r** | This instance of the matching event’s role (doer / place / undergoer / extra `/b/` party); most recent verb / event noun / relation / role compound with that whole stem. Non-resume is the lexical kind (*teacher* vs *the one teaching*) ([roles.md](../grammar/roles.md)) |
 | Join **-r** under `yol` / `yom` | Fill-ask gaps in spoken order; none → yes/no ([questions.md](../grammar/questions.md)) |
-| SHARED `/ɡ/` or `/h/` after a join | `scale` / `equative` / `distribute` / `collective` / `kind` / `ordinary` from join series + conjunct kinds (`/h/` is manner scale under rank / `ae`) |
+| SHARED `/ɡ/` or `/h/` after a join | `scale` / `equative` / `distribute` / `collective` / `kind` / `ordinary` from join series + conjunct kinds (`/h/` is manner scale under rank / `oe`) |
 
 Skipped as anaphors: join **-r** (ask / unspecified-member), restrictors, values / ability ending channels, and every overlay whose family defines its own **-r** (the settled-to-passing grades, `because` share). Other closed roots resume with **-r** like content ([pronouns.md](../grammar/pronouns.md#how-english-approximates-r)). Dangling resumes are recorded with no `antecedent` — they do not fail the parse.
 

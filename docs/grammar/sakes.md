@@ -871,9 +871,9 @@ Permission and consent given (**`thegom`**, **`thuxegom`**) only lift a restrict
 
 ### Enough and too (sake bars) {#sake-bars}
 
-English *enough* and *too much* compare an amount with **what a need requires**. Write a met sake word on `/th/` as the [bar](comparatives.md#bars) right before a rank join: it stands for what that sake needs, and the rank join compares the amount with it. The equal-rank join **`zael`** is *enough*. Rank **`zel`** is *too much*, and **`zuel`** is *not enough*. Use the unspecified sake **`ega`** when you do not name which sake.
+English *enough* and *too much* compare an amount with **what a need requires**. Write a met sake word on `/th/` as the [bar](comparatives.md#bars) right before a rank join: it stands for what that sake needs, and the rank join compares the amount with it. The equal-rank join **`zoel`** is *enough*. Rank **`zel`** is *too much*, and **`zuel`** is *not enough*. Use the unspecified sake **`ega`** when you do not name which sake.
 
-> `zedehel thegatham zael gral.`
+> `zedehel thegatham zoel gral.`
 >
 > [z-tea | th-sake-met-any-term | z-equal-rank | g-amount]
 >
@@ -893,7 +893,7 @@ English *enough* and *too much* compare an amount with **what a need requires**.
 
 The bar keeps its [time-horizon ending](#time-horizon-endings-on-met), which now says **how long the payoff has to last**: **`thegathal`** is *enough to last*, and **`thegathar`** is *enough for now*.
 
-> `zedehel thegathar zael gral.`
+> `zedehel thegathar zoel gral.`
 >
 > [z-tea | th-sake-met-immediate | z-equal-rank | g-amount]
 >
@@ -923,7 +923,7 @@ On the [time scale](comparatives.md#time-scale), a sake bar is *too late* and *t
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| met sake bar + **`zael`** | reaches what the sake needs | *enough* / *ADJ enough* |
+| met sake bar + **`zoel`** | reaches what the sake needs | *enough* / *ADJ enough* |
 | met sake bar + **`zel`** | past what the sake needs | *too much* / *too ADJ* / *too late* |
 | met sake bar + **`zuel`** | short of what the sake needs | *not enough* / *too early* |
 | bar ending **-l** / **-m** / **-r** | how long the payoff has to last | *enough to last* / *enough* / *enough for now* |
@@ -1313,7 +1313,7 @@ z-bell | [w-purpose-unmet-modifiable | g-stimulus]
 *The bell detracts from purpose (modifiable).*
 :::
 
-**19.** `zagogalx thegatham zael gral.`
+**19.** `zagogalx thegatham zoel gral.`
 
 ::: details Show answer
 

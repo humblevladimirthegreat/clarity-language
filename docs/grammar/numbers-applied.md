@@ -187,7 +187,7 @@ A word after **B** describes **B** alone, and a word on the counted noun describ
 
 **`ual`** and **`uel`** are the [span hooks](hooks.md#spans), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zrarel al zravam` = *3 to about 5*).
 
-**Compare with:** `zrarel zraval zoel` is *3, then 5*: two values in order, not a band. `zrarel zraval zal` is *3 and 5*. `zazawan zalahen zel gamadam` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
+**Compare with:** `zrarel zraval zael` is *3, then 5*: two values in order, not a band. `zrarel zraval zal` is *3 and 5*. `zazawan zalahen zel gamadam` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
 
 ### Percent and percentage points {#percent-and-percentage-points}
 
@@ -505,7 +505,7 @@ For counts, −∞ reads as *no lower limit*: `zagadulx grubal al graval` is *up
 
 Ranks take the first and last place as ends. **`grebal`** is the last place and **`grebul`** the first, so `zredul al zrebal` is *2nd through last*.
 
-**Compare with:** a rank join on one number is not a ray: `zraval zel` is *only 5 matters*, and `zraval zoel` is *start with 5*.
+**Compare with:** a rank join on one number is not a ray: `zraval zel` is *only 5 matters*, and `zraval zael` is *start with 5*.
 
 ### Named and unknown ranges {#named-ranges}
 <a id="half-open-exclude-the-high-end-only"></a>

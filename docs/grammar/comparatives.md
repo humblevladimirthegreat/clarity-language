@@ -52,43 +52,43 @@ English *much more* / *slightly more* adds **how large the gap is**, without giv
 >
 > "Azawan is much more challenging than Alahen."
 
-### Equatives (`ae` + shared scale)
+### Equatives (`oe` + shared scale)
 <a id="equatives"></a>
 <a id="equative"></a>
 <a id="as-as"></a>
 
-When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then the tie **`zael`** (rank-join vowels **`ae`**), then the shared adjective (`/ɡ/`). Closed **-l** (`zael`) is an exact match. Open **-m** (`zaem`) is *about as … as*. (cue: **`ae`** ≈ add + order; they share a rank)
+When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then the tie **`zoel`** (rank-join vowels **`oe`**), then the shared adjective (`/ɡ/`). Closed **-l** (`zoel`) is an exact match. Open **-m** (`zoem`) is *about as … as*. (cue: **`ae`** ≈ add + order; they share a rank)
 
-> `zazawan zalahen zael gamadam.`
+> `zazawan zalahen zoel gamadam.`
 >
 > [z-Azawan | z-Alahen | z-equal-rank | g-challenge]
 >
 > "Azawan is as challenging as Alahen."
 
-> `zalahen zahaben zael gezebul.`
+> `zalahen zahaben zoel gezebul.`
 >
 > [z-Alahen | z-Ahaben | z-equal-rank | g-sleepy]
 >
 > "Alahen is as sleepy as Ahaben."
 
-> `zazawan zalahen zaem gabawal.`
+> `zazawan zalahen zoem gabawal.`
 >
 > [z-Azawan | z-Alahen | z-equal-rank.open | g-bright]
 >
 > "Azawan is about as bright as Alahen."
 
-**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazawan gamadam` *Azawan is challenging*. Use **`ae`** when two people share a height on the quality. *Walks like a duck* is resemblance ([*like*](relations.md#similative) `humum`), not the same score on a named quality.
+**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zazawan gamadam` *Azawan is challenging*. Use **`oe`** when two people share a height on the quality. *Walks like a duck* is resemblance ([*like*](relations.md#similative) `humum`), not the same score on a named quality.
 
-**Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zazawan zalahen zal gamadam`): each has the quality. It does not rank them or say they match. Use **`ae`** only for *as … as*.
+**Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zazawan zalahen zal gamadam`): each has the quality. It does not rank them or say they match. Use **`oe`** only for *as … as*.
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | Rank **`e`** (`zel`) | rank on a shared quality | *more … than* / *the …-est* | **`e`** ≈ order |
-| Equality **`ae`** (`zael` / `zaem`) | same height on the quality | *as … as* / *about as … as* | **`ae`** ≈ add + order (they share a rank) |
+| Equality **`oe`** (`zoel` / `zoem`) | same height on the quality | *as … as* / *about as … as* | **`oe`** ≈ one + order (one shared rank) |
 
 ### Translation practice {#beginner-translation-practice}
 
-Short drills for Beginner. Try each item before opening **Show answer**. Rank **`zel`** plus shared `/ɡ/` is *more … than*; one name before **`zel`** is the superlative; **`zael`** / **`zaem`** are *as … as* / *about as … as*.
+Short drills for Beginner. Try each item before opening **Show answer**. Rank **`zel`** plus shared `/ɡ/` is *more … than*; one name before **`zel`** is the superlative; **`zoel`** / **`zoem`** are *as … as* / *about as … as*.
 
 **Setting:** a racetrack
 
@@ -118,7 +118,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 **2.** *Ahaben is as slow as Azawan.*
 
 ::: details Show answer
-`zahaben zazawan zael gezehom.`
+`zahaben zazawan zoel gezehom.`
 
 [z-Ahaben | z-Azawan | z-equal-rank | g-slow]
 :::
@@ -134,7 +134,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 **4.** *Azawan is about as agile as Ahaben.*
 
 ::: details Show answer
-`zazawan zahaben zaem gahagum.`
+`zazawan zahaben zoem gahagum.`
 
 [z-Azawan | z-Ahaben | z-equal-rank.open | g-agility]
 :::
@@ -183,7 +183,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 *Ahaben is the most agile.*
 :::
 
-**3.** `zalahen zahaben zael gadehum.`
+**3.** `zalahen zahaben zoel gadehum.`
 
 ::: details Show answer
 
@@ -192,7 +192,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 *Alahen is as hasty as Ahaben.*
 :::
 
-**4.** `zahaben zazawan zaem gahegem.`
+**4.** `zahaben zazawan zoem gahegem.`
 
 ::: details Show answer
 
@@ -241,7 +241,7 @@ Beginner already used two names plus **`zel`** (*more … than*) and one name (*
 | **Single-item (1)** + shared scale under **`e` / `ue`** | superlative | *the …-est* / *the least …* under **`ue`** | one name is the extreme |
 | **Standalone (0)** + shared scale under **`e` / `ue`** | empty superlative | *there is no biggest* / *there is no smallest* under **`ue`**; open **-m** = none comes to mind | empty list: nobody is on top |
 
-A standalone ladder says only that nothing is on top. It does not say why (a tie, no end to the scale, or items that do not compare). To assert a tie, use [equative](#equatives) **`zael`**. To say someone is on top without naming them, use **`zer`**.
+A standalone ladder says only that nothing is on top. It does not say why (a tie, no end to the scale, or items that do not compare). To assert a tie, use [equative](#equatives) **`zoel`**. To say someone is on top without naming them, use **`zer`**.
 
 | Example | Reading |
 |---------|---------|
@@ -256,7 +256,7 @@ A standalone ladder says only that nothing is on top. It does not say why (a tie
 
 **Compare with:** a rank join with no shared adjective is an ordinary [rank join](joins.md#rank-joins) (*A matters more than B*). Add the shared `/ɡ/` when you mean *more ADJ than*.
 
-English *not as challenging as* says the first name is below the second, so it is **`zuel`**: `zalahen zazawan zuel gamadam` is *Alahen is not as challenging as Azawan*. For a firm tie, use [`zael`](#equatives).
+English *not as challenging as* says the first name is below the second, so it is **`zuel`**: `zalahen zazawan zuel gamadam` is *Alahen is not as challenging as Azawan*. For a firm tie, use [`zoel`](#equatives).
 
 English *no more challenging than* says less: the first name is below the second or tied with them. Write the whole comparison as usual, then deny it with **`zul`**, the way you [deny a whole list](joins.md#exclusivity-and-denying-a-whole-list). What English often only hints (that neither is very challenging) is not said.
 
@@ -296,7 +296,7 @@ When English would say *Alahen walks more intensely than Azawan*, you rank **how
 >
 > "Alahen walks the most intensely."
 
-> `zalahen zazawan zael hahegem vowogal.`
+> `zalahen zazawan zoel hahegem vowogal.`
 >
 > [z-Alahen | z-Azawan | z-equal-rank | h-intensity] | v-walk
 >
@@ -320,7 +320,7 @@ When English would say *more cats than dogs*, you rank **how many**, not a quali
 >
 > "There are fewer cats than dogs."
 
-> `zagadulx zodogalx zael gral.`
+> `zagadulx zodogalx zoel gral.`
 >
 > [z-cat-x | z-dog-x | z-equal-rank | g-amount]
 >
@@ -374,9 +374,9 @@ English *arrives earlier than* ranks **when** something happens. Write digitless
 
 ### Covarying clauses (*the more …, the more …*) {#covarying}
 
-English *the more Azawan walks, the more Alahen sleeps* says two amounts rise together. Put digitless **`hral`** (*multiple times*) or another amount word in each clause, and join the clauses with **`xael`**. As with the [frequency scale](#frequency-scale), the equal-rank join turns each amount into a scale and says the two scales move in step.
+English *the more Azawan walks, the more Alahen sleeps* says two amounts rise together. Put digitless **`hral`** (*multiple times*) or another amount word in each clause, and join the clauses with **`xoel`**. As with the [frequency scale](#frequency-scale), the equal-rank join turns each amount into a scale and says the two scales move in step.
 
-> `zazawan hral vowogal xael zalahen hral vezebal.`
+> `zazawan hral vowogal xoel zalahen hral vezebal.`
 >
 > [z-Azawan | h-more-than-one | v-walk | x-equal-rank | z-Alahen | h-more-than-one | v-sleep]
 >
@@ -390,13 +390,13 @@ For *the more …, the less …*, use **`xuel`**: when the first scale rises, th
 >
 > "The more Azawan walks, the less Alahen sleeps."
 
-**Compare with:** **`xael`** / **`xuel`** state only that the two go together, not which one causes the other. To say the first causes the second, use a [causation](causation.md) pole.
+**Compare with:** **`xoel`** / **`xuel`** state only that the two go together, not which one causes the other. To say the first causes the second, use a [causation](causation.md) pole.
 
 ### Factor (*twice as … as*) {#factor}
 
-English *twice as big as* gives the **ratio** between the two heights. Use the [equative](#equatives) **`zael`** and its shared adjective, then a factor number (`/h/` + marker **`ra`**, [numbers](numbers.md#number-as-adverb-by-marker)) **right after** the adjective. The first name sits at that many times the second's height.
+English *twice as big as* gives the **ratio** between the two heights. Use the [equative](#equatives) **`zoel`** and its shared adjective, then a factor number (`/h/` + marker **`ra`**, [numbers](numbers.md#number-as-adverb-by-marker)) **right after** the adjective. The first name sits at that many times the second's height.
 
-> `zazawan zalahen zael gelavam hradul.`
+> `zazawan zalahen zoel gelavam hradul.`
 >
 > [z-Azawan | z-Alahen | z-equal-rank | g-big | h-two]
 >
@@ -404,13 +404,13 @@ English *twice as big as* gives the **ratio** between the two heights. Use the [
 
 Inverse marker **`ru`** divides: `hrudul` is *half as*.
 
-> `zalahen zazawan zael gelavam hrudul.`
+> `zalahen zazawan zoel gelavam hrudul.`
 >
 > [z-Alahen | z-Azawan | z-equal-rank | g-big | h-divided-by-two]
 >
 > "Alahen is half as big as Azawan."
 
-English *three times bigger* usually means the same ratio: use **`zael`** with `hrarel`, not rank **`zel`**. After **`zel`**, a number `/h/` is not a factor; it is an ordinary *N times* on the clause. For a gap in units (*two meters taller*), put a measure noun on the scale instead of a factor.
+English *three times bigger* usually means the same ratio: use **`zoel`** with `hrarel`, not rank **`zel`**. After **`zel`**, a number `/h/` is not a factor; it is an ordinary *N times* on the clause. For a gap in units (*two meters taller*), put a measure noun on the scale instead of a factor.
 
 ### Comparing against a stance (bars) {#bars}
 
@@ -430,7 +430,7 @@ The same stance word **after** the fence has its ordinary reading, a stance on t
 >
 > "Azawan plans to arrive last."
 
-A bar fence ranks **one** item against **one** bar: with a bar, there is no second name and no second bar. Any of the rank joins works (**`zel`**, **`zuel`**, **`zael`**, and their open **-m** forms), and the bar keeps its own ending. The fence can rank an object or a recipient the same way:
+A bar fence ranks **one** item against **one** bar: with a bar, there is no second name and no second bar. Any of the rank joins works (**`zel`**, **`zuel`**, **`zoel`**, and their open **-m** forms), and the bar keeps its own ending. The fence can rank an object or a recipient the same way:
 
 > `zazawan dozolx thamam del gral vagadel.`
 >
@@ -456,7 +456,7 @@ A [hook](hooks.md) and its `/b/` on the ranked item go right before the bar, the
 |--------|-----|---------|
 | name + bar + **`zel`** | above the bar | *more than planned* / *later than planned* |
 | name + bar + **`zuel`** | below the bar | *less than planned* / *earlier than planned* |
-| name + bar + **`zael`** | at the bar | *as planned* |
+| name + bar + **`zoel`** | at the bar | *as planned* |
 | bar after the fence | a stance on the whole claim | *plans to be the most …* |
 
 **Compare with:** a name before the rank join is someone you rank against (`zazawan zalahen zel gezebul` *Azawan is sleepier than Alahen*). A stance word in that place is the value that stance sets.
@@ -622,7 +622,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 *Alahen lifts the most intensely.*
 :::
 
-**8.** `zazawan thamam zael gelevam.`
+**8.** `zazawan thamam zoel gelevam.`
 
 ::: details Show answer
 
@@ -764,7 +764,7 @@ A CLUES or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): the n
 
 **Ability.** The ability word [`eze`](intention.md#ability-fallback) as the bar is the limit of **what can be done**. A tie against **`thezexal`** is *as … as possible*. The ability vowel says how fixed that limit is, so rank **`zel`** against **`thezexel`** is *more than can be done for now*, and against **`thezexul`** *more than could ever be done*.
 
-> `zalahen thezexal zael hadehum vowogal.`
+> `zalahen thezexal zoel hadehum vowogal.`
 >
 > [z-Alahen | th-ABIL-able | z-equal-rank | h-haste] | v-walk
 >
@@ -772,7 +772,7 @@ A CLUES or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): the n
 
 **Rules and permission.** REQUIRE as the bar is the demand; a tie meets it. PERMIT is the limit; rank **`zel`** goes over it.
 
-> `zahazal thumel zael gabezem.`
+> `zahazal thumel zoel gabezem.`
 >
 > [z-house | th-REQUIRE-rule | z-equal-rank | g-strength]
 >
@@ -822,9 +822,9 @@ English *many*, *few*, *often*, and *late* rank against an unstated baseline, an
 | *often* / *rarely* | PATTERN **`thobam`**, `zel` / `zuel` with `hral` |
 | *late* / *early* | PATTERN **`thobam`**, `zel` / `zuel` with `bral` |
 | *than usual* (the same person or thing) | PATTERN **`thobam`** with no `/b/` |
-| *too much* / *enough* / *not enough* | a met sake bar (`thegatham`), `zel` / `zael` / `zuel` |
+| *too much* / *enough* / *not enough* | a met sake bar (`thegatham`), `zel` / `zoel` / `zuel` |
 | *too late* / *too soon* | a met sake bar (`thegatham`), `zel` / `zuel` with `bral` |
-| *as … as possible* | ABIL **`thezexal`**, `zael` |
+| *as … as possible* | ABIL **`thezexal`**, `zoel` |
 | *more and more* / *increasingly* | FORMER **`thenom`**, `zel` |
 
 The bar is never dropped. A single-item `zagadulx zel gral` already means *the most cats* (a [superlative](#superlatives)).
@@ -884,7 +884,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The bar
 **4.** *Azawan is as showy as possible.*
 
 ::: details Show answer
-`zazawan thezexal zael gahudom.`
+`zazawan thezexal zoel gahudom.`
 
 [z-Azawan | th-ABIL-able | z-equal-rank | g-showmanship]
 :::
@@ -942,7 +942,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The bar
 *Ahaben rarely sings.*
 :::
 
-**4.** `zalahen thumem zael gahudom.`
+**4.** `zalahen thumem zoel gahudom.`
 
 ::: details Show answer
 
@@ -960,7 +960,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. The bar
 *Azawan is the most artistic, going by the pattern.*
 :::
 
-**6.** `zahaben thezexal zael gezehel.`
+**6.** `zahaben thezexal zoel gezehel.`
 
 ::: details Show answer
 

@@ -71,8 +71,8 @@ English names for set / rank join vowels ([joins](joins.md)):
 | counteradditive | **ua** | *everything but* |
 | counterchoice | **uo** | *anything but* |
 | rank | **e** | earlier outranks later |
-| corank | **ae** | equal rank / tie |
-| sequence | **oe** | ordered path: first item is the start, not the top |
+| corank | **oe** | equal rank / tie |
+| sequence | **ae** | ordered path: first item is the start, not the top |
 | counterrank | **ue** | rank reversal |
 
 ### Number marker identities
@@ -234,7 +234,7 @@ Speech act **`yel` / `yem` / `yul` / `yum`**.
 
 ### Comparative / superlative / equative
 
-Rank join + SHARED **scale** (`/ɡ/` quality or `/h/` manner); single-item = superlative; **`ae`** = equative.
+Rank join + SHARED **scale** (`/ɡ/` quality or `/h/` manner); single-item = superlative; **`oe`** = equative.
 
 [Comparatives](comparatives.md)
 
@@ -334,7 +334,7 @@ Reason for the *could be* (**MAY**), not a *because* about the world (`thevem`).
 
 ### Equative
 
-**`ae`** SHARED scale = *as ADJ as*.
+**`oe`** SHARED scale = *as ADJ as*.
 
 [Comparatives](comparatives.md#equatives)
 

@@ -4,24 +4,24 @@ Recipes for English comparisons, percentages, units and dates. Every form here i
 
 ## Comparing {#comparing}
 
-### Sorted lists (`oe`) {#sequence-scale}
+### Sorted lists (`ae`) {#sequence-scale}
 
-**Needs:** [Sequence `oe`](joins.md#sequence-oe) · [Comparatives](comparatives.md#comparatives-e)
+**Needs:** [Sequence `ae`](joins.md#sequence-ae) · [Comparatives](comparatives.md#comparatives-e)
 
-When English would say *from least to most ADJ* (*easiest to hardest*, a syllabus order), you are not naming a winner. You are listing items along the scale from its low end. Use [sequence](joins.md#sequence-oe) **`oe`** before the shared adjective: the first name is the **start** of the scale, the last is the far end.
+When English would say *from least to most ADJ* (*easiest to hardest*, a syllabus order), you are not naming a winner. You are listing items along the scale from its low end. Use [sequence](joins.md#sequence-ae) **`ae`** before the shared adjective: the first name is the **start** of the scale, the last is the far end.
 
-> `zazawan zalahen zahaben zoel gamadam.`
+> `zazawan zalahen zahaben zael gamadam.`
 >
 > [z-Azawan | z-Alahen | z-Ahaben | z-in-order | g-challenge]
 >
 > "Azawan, Alahen, Ahaben, from least to most challenging."
 
-**Compare with:** `zazawan zalahen zahaben zel gamadam` puts Azawan at the **top** (*most* challenging first). Rank **`e`** lists best-first; sequence **`oe`** lists start-first.
+**Compare with:** `zazawan zalahen zahaben zel gamadam` puts Azawan at the **top** (*most* challenging first). Rank **`e`** lists best-first; sequence **`ae`** lists start-first.
 
 ### Distributive *both are ADJ*
 <a id="distributive-both"></a>
 
-**Needs:** [And-lists](joins.md#and-lists-a) · [Equatives](comparatives.md#equatives-ae-shared-scale)
+**Needs:** [And-lists](joins.md#and-lists-a) · [Equatives](comparatives.md#equatives-oe-shared-scale)
 
 English *both are challenging* (or *Azawan and Alahen are challenging*) says **each** has the quality. It does not rank them and does not say they match in height. Write the names, then set join **`a`** (`zal`), then a shared singular adjective (`/ɡ/`). Each name gets that adjective.
 
@@ -31,16 +31,16 @@ English *both are challenging* (or *Azawan and Alahen are challenging*) says **e
 >
 > "Azawan and Alahen are challenging."
 
-**Compare with:** *as challenging as* uses equality **`ae`** (`zael`). *More challenging than* uses rank **`e`**.
+**Compare with:** *as challenging as* uses equality **`oe`** (`zoel`). *More challenging than* uses rank **`e`**.
 
 **Related form:** *ADJ as a unit* uses shared `/ɡ/`…**-x** under **`a`**: [plurality](plurality.md#adjectives-g). Shared comparative and equative adjectives are singular.
 
-Equality **`ae`** with a shared scale needs **two or more** names. **`ae`** with no shared scale is a tie among the names (equal rank).
+Equality **`oe`** with a shared scale needs **two or more** names. **`oe`** with no shared scale is a tie among the names (equal rank).
 
 | Example | Reading |
 |---------|---------|
-| `zazawan zalahen zahaben zael gamadam` | *Azawan, Alahen, and Ahaben are equally challenging* |
-| `zodogal zagadul zael gamadam` | *the dog is as challenging as the cat* |
+| `zazawan zalahen zahaben zoel gamadam` | *Azawan, Alahen, and Ahaben are equally challenging* |
+| `zodogal zagadul zoel gamadam` | *the dog is as challenging as the cat* |
 
 ### Measured differentials {#measured-differentials}
 <a id="measure-gap"></a>
@@ -147,7 +147,7 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 >
 > "Azawan walks three times an hour."
 
-A ratio (*three cats to one dog*) is a [factor](comparatives.md#factor) on the equative amount scale: `zagadulx zodogalx zael gral hrarel` is *three times as many cats as dogs*.
+A ratio (*three cats to one dog*) is a [factor](comparatives.md#factor) on the equative amount scale: `zagadulx zodogalx zoel gral hrarel` is *three times as many cats as dogs*.
 
 ### Percent points, factors, and other wholes
 
@@ -225,7 +225,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 | *carefully* | `heyayem` |
 | *gently* | `hegehem` |
 | *properly* / *correctly* | `hegegal` |
-| *properly* (*up to standard*) | the doer, then `thumel zael hegegal` (as correctly as the rules require) |
+| *properly* (*up to standard*) | the doer, then `thumel zoel hegegal` (as correctly as the rules require) |
 | *precisely* / *accurately* | `hubuzam` |
 | *neatly* / *in an orderly way* | `hebedom` |
 | *seriously* | `hezedom` |
@@ -261,7 +261,7 @@ The easy / hard pair on a quality ranks effort against a bar ([vague amounts](co
 
 *Properly* in the sense of *up to standard* names the standard as a bar ([every bar](comparatives.md#stance-bars)): REQUIRE **`thumel`** is the rule, and a tie meets it. Use **`thumer`** for what is customary.
 
-> `zazawan thumel zael hegegal varadal.`
+> `zazawan thumel zoel hegegal varadal.`
 >
 > [z-Azawan | th-REQUIRE-rule | z-equal-rank | h-correct] | v-write
 >
@@ -299,10 +299,10 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | English | Agazan |
 |---------|--------|
 | *numerous* / *considerable* (*many cats*) | `zagadulx thobam zel gral` |
-| *enough* / *sufficient* / *adequate* / *full* (as much as is needed) | `zagadulx thegatham zael gral` |
+| *enough* / *sufficient* / *adequate* / *full* (as much as is needed) | `zagadulx thegatham zoel gral` |
 | *too many* / *excess* / *extra* / *spare* (more than needed) | `zagadulx thegatham zel gral` |
 | *quantity* (*how many*) | the amount scale `gral` |
-| *normal* / *standard* / *ordinary* / *medium* / *average* (*normally big*) | the PATTERN bar with `zael`: `zodogal thobam zael gelavam` |
+| *normal* / *standard* / *ordinary* / *medium* / *average* (*normally big*) | the PATTERN bar with `zoel`: `zodogal thobam zoel gelavam` |
 | *single* (*just one*) | the plain number `g+1` |
 | *secondary* / *second* | the rank `g#2` |
 | *whole* / *entire* / *complete* / *total* / *ideal* (nothing lacking) | `gahahom` (*perfection*) |
@@ -317,7 +317,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *a third of an hour* | `bagazem grawol grurel` |
 | *the second biggest*, *the third tallest* | `zazawan zel wredul gelavam` ([place on a scale](comparatives.md#place-on-a-scale)) |
 | *twice* / *double* (two times) | `h+2` before the verb |
-| *ratio* (*three cats to one dog*) | `zagadulx zodogalx zael gral hrarel` ([factor](comparatives.md#factor)) |
+| *ratio* (*three cats to one dog*) | `zagadulx zodogalx zoel gral hrarel` ([factor](comparatives.md#factor)) |
 | *at least 5* / *at most 5* (*minimum* / *maximum*) | `zraval al zrabal` / `zrubal al zraval` |
 | *decade* / *century* | `bavawem g+10` / `bavawem g+100` |
 | *unit* | the measure phrase: `bezezem g+2` |
@@ -548,7 +548,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 **3.** *Azawan, Alahen, and Ahaben, from lightest to heaviest.*
 
 ::: details Show answer
-`zazawan zalahen zahaben zoel garagam.`
+`zazawan zalahen zahaben zael garagam.`
 
 [z-Azawan | z-Alahen | z-Ahaben | z-in-order | g-heavy]
 :::

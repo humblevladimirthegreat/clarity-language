@@ -467,12 +467,12 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 | **`al`** | *in* | **`am`** | *amid* | **a** ≈ add (into a volume); **-m** that volume as the setting |
 | **`aol`** | *on* | **`aom`** | *over* | **ao** ≈ add onto one face; **-m** that face as the setting |
 | **`ol`** | *at* | **`om`** | *near* | **o** ≈ one (the one point); **-m** that point as the setting |
-| **`oel`** | *toward* | **`oem`** | *in the direction of* | **oe** ≈ order toward one point; **-m** that aim as the setting |
+| **`oel`** | *toward* | **`oem`** | *in the direction of* | **o** ≈ at + **e** ≈ for: aimed at one point; **-m** that aim as the setting |
 | **`ul`** | *from* | **`um`** | *away from* | **u** ≈ undo (leave); **-m** that origin as the setting |
 | **`ual`** | *out of* | **`uam`** | *out from among* | **ua** ≈ leave a volume; **-m** that volume as the setting |
 | **`uol`** | *through* | **`uom`** | *by way of* | **uo** ≈ leave via one path; **-m** that path as the setting |
 | **`el`** | *for* | **`em`** | *used by* (*B's*) | **e** ≈ order (aim the act); **-m** what was meant for B is now in B's use |
-| **`ael`** | *using* | **`aem`** | *by* | **ae** ≈ add an ordered means; **-m** the channel |
+| **`ael`** | *using* | **`aem`** | *by* | **ae** ≈ add to the aim: the means that serves it; **-m** the channel |
 | **`uel`** | *against* | **`uem`** | *contrary to* | **ue** ≈ undo aimed at; **-m** the opposing frame |
 
 > `zazawan vehahel aol behahel.`
@@ -487,7 +487,7 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 >
 > "Azawan writes a book with a pen."
 
-**Compare with:** hook **`oel`** names where a path **ends** (*toward X*). A [sequence](joins.md#sequence-oe) join on one noun, **`zoel`**, names where it **starts** (*from X on*).
+**Compare with:** hook **`oel`** names where a path **ends** (*toward X*). A [sequence](joins.md#sequence-ae) join on one noun, **`zael`**, names where it **starts** (*from X on*).
 
 > `zazawan uel bagavol vavadal.`
 >
@@ -862,9 +862,9 @@ When the items sit on a line with an order (people in a queue, days, chapters, n
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`oel`** | A, B, and everything between | *A through B* | **oe** ≈ one after another, in order |
+| **`oel`** | A, B, and everything between | *A through B* | **o** ≈ at + **e** ≈ for: start at A, head for B |
 | **`ual`** | only what lies between | *strictly between A and B* | **ua** ≈ take away both ends |
-| **`uel`** | only what lies outside | *outside A–B* | **ue** ≈ undo the ordered stretch |
+| **`uel`** | only what lies outside | *outside A–B* | **ue** ≈ undo the stretch from A to B |
 
 The span runs from A to B, in the order you say them. Endings work as on other hooks: **-m** makes the ends soft (*roughly A through B*), and **-n** names the span as a whole. **-r** stands in for one member you are not naming, and under a [question](questions.md#fill-ask-r) it asks which one:
 
@@ -892,7 +892,7 @@ A word right after B describes B alone, not the span. To describe the span itsel
 >
 > "Amazingly, everyone from Azawan through Ahaben walks."
 
-**Compare with:** `zazawan zahaben zal` is *Azawan and Ahaben*, the two ends only. `zazawan zahaben zoel` is *Azawan, then Ahaben*, an order with nothing between. Spatial *between a train and a station* is a [relation](relations.md#spatial-path), not a span.
+**Compare with:** `zazawan zahaben zal` is *Azawan and Ahaben*, the two ends only. `zazawan zahaben zael` is *Azawan, then Ahaben*, an order with nothing between. Spatial *between a train and a station* is a [relation](relations.md#spatial-path), not a span.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>

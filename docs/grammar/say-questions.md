@@ -378,7 +378,7 @@ y-question | [z-Ahaben | z-or-exactly-one]
 **4.** *Tie?* (standalone rank)
 
 ::: details Show answer
-`yol zael.`
+`yol zoel.`
 
 y-question | z-equal-rank
 :::
@@ -418,7 +418,7 @@ y-question | [z-bell | z-everything-but]
 *Everything but the bell?*
 :::
 
-**4.** `yol zoel.`
+**4.** `yol zael.`
 
 ::: details Show answer
 

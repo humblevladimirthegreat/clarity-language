@@ -62,9 +62,9 @@ describe("sentence-parser synthetic", () => {
       const unit = parseSentenceTokens(tokens(text)).utterances[0]!.bodies[0]!.clause.units[0]!;
       return unit.kind === "np" ? unit.coord.parts.find((p) => p.join)?.factor?.raw : undefined;
     };
-    assert.equal(factorOf("zazawan zalahen zael gelavam hradul."), "hradul");
+    assert.equal(factorOf("zazawan zalahen zoel gelavam hradul."), "hradul");
     assert.equal(factorOf("zazawan zalahen zel gelavam hradul."), undefined);
-    assert.equal(factorOf("zazawan zalahen zael gelavam hral."), undefined);
+    assert.equal(factorOf("zazawan zalahen zoel gelavam hral."), undefined);
   });
 
   it("takes digitless bral as a shared time scale after a rank join only", () => {

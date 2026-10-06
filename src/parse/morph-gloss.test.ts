@@ -131,11 +131,11 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("dol", "d-or-exactly-one");
     expectLine("zol", "z-or-exactly-one");
     expectLine("zel", "z-rank/more");
-    expectLine("zael", "z-equal-rank");
+    expectLine("zoel", "z-equal-rank");
     expectLine("zagadulx g=+ vehahel.", "[z-cat-x | g-some-amount] | v-sit");
     expectLine("yol zagadulx g=+ vehahel.", "y-question | [z-cat-x | g-how-many] | v-sit");
     expectLine("yol zazawan vehahel ol b=#.", "y-question | z-Azawan | v-sit | [at | b-which-place]");
-    expectLine("zaem", "z-equal-rank.open");
+    expectLine("zoem", "z-equal-rank.open");
     expectLine("zar", "z-something");
     expectLine("zul", "z-not");
     expectLine("gul", "g-not");

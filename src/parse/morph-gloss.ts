@@ -116,8 +116,8 @@ const JOIN_ACT: Record<string, string> = {
   ua: "excludes",
   uo: "bars",
   e: "prioritizes",
-  ae: "equates",
-  oe: "starts-with",
+  ae: "starts-with",
+  oe: "equates",
   ue: "deprioritizes",
 };
 
@@ -129,8 +129,8 @@ const JOIN_RELATION: Record<string, string> = {
   ua: "without",
   uo: "anything-but",
   e: "prioritizing",
-  ae: "on-a-par",
-  oe: "starting-with",
+  ae: "starting-with",
+  oe: "on-a-par",
   ue: "deprioritizing",
 };
 
@@ -1211,7 +1211,7 @@ function restrictorLabel(
     if (series === "o") return "anytime";
     if (series === "u") return "some-other-time";
     if (series === "e") return fillAsk ? "when-best" : "preferred-time";
-    if (series === "ae") return "equally-often";
+    if (series === "oe") return "equally-often";
     return `${series}-r`;
   }
   const open = ending === "m" ? ".open" : "";
@@ -1224,10 +1224,10 @@ function restrictorLabel(
   if (series === "u") return `not-when${open}`;
   if (series === "o") return `when-one${open}`;
   if (series === "e") return `when-ranked${open}`;
-  if (series === "ae") return `equally-when${open}`;
+  if (series === "oe") return `equally-when${open}`;
   if (series === "ao") return `when-any-of${open}`;
   if (series === "uo") return `anytime-except${open}`;
-  if (series === "oe") return `when-in-order${open}`;
+  if (series === "ae") return `when-in-order${open}`;
   if (series === "ue") return `when-last${open}`;
   return `${series}${open}`;
 }
