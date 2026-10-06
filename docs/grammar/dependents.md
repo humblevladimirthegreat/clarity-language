@@ -182,130 +182,177 @@ A **linker** is an `/x/` word that connects one sentence to the next, like Engli
 
 **Compare with:** [`/y/`](speech-moves.md#turn-y) starts a **new** speech move (a new statement, question, or command). `/x/` keeps the move you already started.
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a guard post
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Alahen* | `alahen` | | |
-| *Ahaben* | `ahaben` | | |
-| *guard* | `agavol` | | |
-| *sit* | `vehahel` | `ehahel` *chair* | 🪑: taking a seat |
-| *stand* | `vazadol` | `azadol` *stand* | 🧍: staying in place |
-| *see* | `vahahal` | `ahahal` *eye* | 👁️: seeing is what an eye does |
-| *tell* | `vezebel` | `ezebel` *speech* | 💬: saying it to someone |
-| *write* | `varadal` | `aradal` *write* | ✍️: putting words on the page |
-| *scream* | `vezugel` | | |
-| *punch* | `vabahel` | | |
-| *fight* | `vavadal` | | |
-| *run* | `varahal` | `arahal` *run* | 🏃: leaving at speed |
-| *that-clause* | `darl` | | |
-| *because* | `thevem` | `evel` *brick* | 🧱: the cause is what the result sits on |
-| *although* | `hezom` | `ezol` *zebra* | 🦓: two stripes, still one animal |
-| *so-that* | `hogom` | `ogol` *goal* | 🥅: you act so the shot counts |
-| *therefore* | `xodum` | `odul` *east* | ➡️: the sun’s path, so the talk moves on |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *guard* | `agavol` | 💂 |
+| *see* | `vahahal` | 👁️ from *eye* |
+| *tell* | `vezebel` | 💬 from *speech* |
+| *scream* | `vezugel` | 😱 |
+| *therefore* | `xodum` | ➡️ from *east*: the sun's path, so the talk moves on |
+| *that-clause* | `darl` | **a** ≈ add: the content that follows |
+| *whether-clause* | `dorl` | **o** ≈ one: pick yes or no |
+| *because* | `thevem` | 🧱 from *brick*: the cause is what the result sits on |
+| *if* | `thoyem` | 🚪 from *door*: walk through only if it opens |
+| *although* | `hezom` | 🦓 from *zebra*: two stripes, still one animal |
+| *so-that* | `hogom` | 🥅 from *goal*: you act so the shot counts |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *sit* | `vehahel` |
+| *sneak* | `vezevul` |
+| *run* | `varahal` |
+| *haste* | `hadehum` |
+| *angry* | `anegel` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *Azawan tells Alahen that Ahaben sits.*
+**1.** *Azawan tells Alahen that Ahaben sneaks.*
 
 ::: details Show answer
-`zazawan balahen vezebel darl zahaben vehahel.`
+`zazawan balahen vezebel darl zahaben vezevul.`
 
-z-Azawan | b-Alahen | v-tell | d-that-clause | z-Ahaben | v-sit
+z-Azawan | b-Alahen | v-tell | d-that-clause | z-Ahaben | v-sneak
+
+**Also correct:** `zazawan vezebel balahen darl zahaben vezevul.`
 :::
 
-**2.** *Azawan runs because Alahen punches a guard.*
+**2.** *Alahen runs because a guard sees Ahaben.*
 
 ::: details Show answer
-`zazawan varahal thevem barl zalahen dagavol vabahel.`
+`zalahen varahal thevem barl zagavol dahaben vahahal.`
 
-z-Azawan | v-run | [th-because | b-that-clause] | z-Alahen | d-guard | v-punch
+z-Alahen | v-run | [th-because | b-that-clause] | z-guard | d-Ahaben | v-see
+
+**Also correct:** `zalahen varahal thevem barl dahaben zagavol vahahal.`
 :::
 
-**3.** *Azawan writes despite a guard.*
+**3.** *Azawan sits despite a guard.*
 
 ::: details Show answer
-`zazawan varadal hezom bagavol.`
+`zazawan vehahel hezom bagavol.`
 
-z-Azawan | v-write | [h-although | b-guard]
+z-Azawan | v-sit | [h-although | b-guard]
 :::
 
-**4.** *Azawan sees whether Alahen sits.*
+**4.** *A guard sees whether Alahen sneaks.*
 
 ::: details Show answer
-`zazawan vahahal dorl zalahen vehahel.`
+`zagavol vahahal dorl zalahen vezevul.`
 
-z-Azawan | v-see | d-whether-clause | z-Alahen | v-sit
+z-guard | v-see | d-whether-clause | z-Alahen | v-sneak
 :::
 
-**5.** *Azawan runs so that Alahen sits.*
+**5.** *Azawan tells the guard who screams.*
 
 ::: details Show answer
-`zazawan varahal hogom barl zalahen vehahel.`
+`zagavol vezugel. zazawan bagavol vezebel.`
 
-z-Azawan | v-run | [h-so-that | b-that-clause] | z-Alahen | v-sit
+z-guard | v-scream . z-Azawan | b-guard | v-tell
 :::
 
-**6.** *Azawan stands although Alahen screams.*
+**6.** *Alahen screams so that a guard runs.*
 
 ::: details Show answer
-`zazawan vazadol hezom barl zalahen vezugel.`
+`zalahen vezugel hogom barl zagavol varahal.`
 
-z-Azawan | v-stand | [h-although | b-that-clause] | z-Alahen | v-scream
+z-Alahen | v-scream | [h-so-that | b-that-clause] | z-guard | v-run
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zahaben vezugel. xodum zalahen vavadal.`
+**1.** `zahaben vezugel. xodum zagavol varahal.`
 
 ::: details Show answer
+z-Ahaben | v-scream . x-therefore | z-guard | v-run
 
-z-Ahaben | v-scream . x-therefore | z-Alahen | v-fight
-
-*Ahaben screams. Therefore Alahen fights.*
+*Ahaben screams. Therefore a guard runs.*
 :::
 
-**2.** `zalahen vavadal hezom bagavol.`
+**2.** `zalahen vezevul hezom barl zagavol dazawan vahahal.`
 
 ::: details Show answer
+z-Alahen | v-sneak | [h-although | b-that-clause] | z-guard | d-Azawan | v-see
 
-z-Alahen | v-fight | [h-although | b-guard]
-
-*Alahen fights despite a guard.*
+*Alahen sneaks although a guard sees Azawan.*
 :::
 
-**3.** `zahaben vahahal dorl zazawan vazadol.`
+**3.** `zahaben vahahal dorl zagavol vehahel.`
 
 ::: details Show answer
+z-Ahaben | v-see | d-whether-clause | z-guard | v-sit
 
-z-Ahaben | v-see | d-whether-clause | z-Azawan | v-stand
-
-*Ahaben sees whether Azawan stands.*
+*Ahaben sees whether the guard sits.*
 :::
 
-**4.** `zalahen varahal hogom barl zazawan vehahel.`
+**4.** `zagavol hadehum varahal thoyem barl zalahen vezugel.`
 
 ::: details Show answer
+z-guard | h-haste | v-run | [th-if | b-that-clause] | z-Alahen | v-scream
 
-z-Alahen | v-run | [h-so-that | b-that-clause] | z-Azawan | v-sit
-
-*Alahen runs so that Azawan sits.*
+*A guard runs hastily if Alahen screams.*
 :::
 
-**5.** `zahaben vehahel thevem barl zazawan dagavol vahahal.`
+**5.** `zalahen vezevul. zagavol dalahen vahahal.`
 
 ::: details Show answer
+z-Alahen | v-sneak . z-guard | d-Alahen | v-see
 
-z-Ahaben | v-sit | [th-because | b-that-clause] | z-Azawan | d-guard | v-see
+*The guard sees Alahen, who sneaks.*
+:::
 
-*Ahaben sits because Azawan sees a guard.*
+**6.** `zahaben bagavol vezebel darl zazawan ganegel vehahel.`
+
+::: details Show answer
+z-Ahaben | b-guard | v-tell | d-that-clause | [z-Azawan | g-angry] | v-sit
+
+*Ahaben tells the guard that an angry Azawan sits.*
+:::
+
+#### Pick one {#beginner-pick-one}
+
+**1.** *Alahen sees whether Azawan runs.* `zalahen vahahal darl zazawan varahal.` or `zalahen vahahal dorl zazawan varahal.`
+
+::: details Show answer
+`zalahen vahahal dorl zazawan varahal.`
+
+z-Alahen | v-see | d-whether-clause | z-Azawan | v-run
+
+*Whether* leaves a yes-or-no open, so the stand-in takes **`o`**; `darl` would be *sees that Azawan runs*.
+:::
+
+#### Fix it {#beginner-fix-it}
+
+**1.** *Alahen sneaks despite a guard.* <!-- lint: error -->`zalahen vezevul hezom barl zagavol.`
+
+::: details Show answer
+`zalahen vezevul hezom bagavol.`
+
+z-Alahen | v-sneak | [h-although | b-guard]
+
+*Despite* takes a noun: put the guard in `/b/` right after **`hezom`**. With **`barl`**, `zagavol` becomes a whole sentence of its own.
+:::
+
+**2.** *Azawan tells Alahen that a guard runs.* <!-- lint: error -->`zazawan balahen darl vezebel zagavol varahal.`
+
+::: details Show answer
+`zazawan balahen vezebel darl zagavol varahal.`
+
+z-Azawan | b-Alahen | v-tell | d-that-clause | z-guard | v-run
+
+**`darl`** goes last in the main sentence, after the verb, so the sentence it stands for starts right after it.
 :::
 
 ## Intermediate {#intermediate}

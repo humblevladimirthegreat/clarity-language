@@ -68,7 +68,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 😨,fear,evehe,threat-appraisal,fear means dread; threat-appraisal is the unobservable reading of danger,,afraid; scare; frighten,
 😰,anxious,anago,apprehension,anxious means anxiety; apprehension is the unobservable expected harm,,nervous; anxiety,predication.md#intermediate-translation-practice
 😭,cry,agahu,anguish,sob shows anguish,,pain; depress,knowing.md#beginner-translation-practice
-😱,scream,ezuge,horror,scream shows horror,,,dependents.md#beginner-translation-practice
+😱,scream,ezuge,horror,scream shows horror,,,dependents.md#beginner-practice
 😞,disappointed,edebo,disillusion,disappointed shows disappointment; disillusion is the unobservable fall from a frame,,,
 😓,stressed,ezedu,tension,stressed face shows tension,,disturb,
 😩,weary,eweve,spentness,weary means exhaustion; spentness is the unobservable empty tank,,,
@@ -100,13 +100,13 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💋,lips,eleba,,,,,
 💯,hundred,ahaho,perfection,a hundred out of a hundred is a top mark,m.w:completely,perfect; totally; entirely; fully; altogether,
 💢,anger,anage,offense,anger symbol shows rage; offense is the unobservable reading that a wrong was done,,crime,
-🫯,fight,avada,struggle,fighting stance pushes through opposition; struggle is pushing through what holds you back,,battle; tackle,dependents.md#beginner-translation-practice
+🫯,fight,avada,struggle,fighting stance pushes through opposition; struggle is pushing through what holds you back,,battle; tackle,knowing.md#beginner-translation-practice
 💥,boom,ubuhu,consequence,collision bursts; consequence is the unobservable follow-on,,outcome; result; effect,
 💫,dizzy,edezu,dazzle,dizzy stars swirl until the eyes are overwhelmed,,,
 💦,sweat,ozewe,effort,sweat drops show hard work; effort is work that costs you,,labor; strain,
 💨,dash,adehu,haste,dash of wind moves fast; haste is moving quickly,,rush; pace,clause.md#beginner-practice
 🕳️,hole,ohaho,void,a hole is an empty space with nothing in it,,gap,
-💬,speech,ezebe,discourse,speech is audible; discourse is the unobservable social practice,v:tell,say; talk; word; speak; language; discuss; discussion; description; communicate; communication; report; declare,dependents.md#beginner-translation-practice
+💬,speech,ezebe,discourse,speech is audible; discourse is the unobservable social practice,v:tell,say; talk; word; speak; language; discuss; discussion; description; communicate; communication; report; declare,dependents.md#beginner-practice
 👁️‍🗨️,attest,odo,testimony,eye-in-speech attests; testimony is the claim that seeing warrants saying,,swear; demonstrate,questions.md#intermediate-translation-practice
 🗯️,rant,aradu,outrage,rant shows outrage,,complain,
 💭,thought,ovu,commentary,thought balloon floats a take over the scene; commentary is mind storying instead of bare contact,,idea; concept; notion; remark; theoretical; comment,
@@ -123,13 +123,13 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 👍,thumbs-up,abewa,approval,thumbs-up shows approval,,approve; recommendation,
 👎,thumbs-down,avawu,disapproval,thumbs-down shows disapproval,,,
 ✊,fist,evedu,defiance,fist shows defiance,,resistance,
-👊,punch,abahe,force,punch delivers force,,push; tap,dependents.md#beginner-translation-practice
+👊,punch,abahe,force,punch delivers force,,push; tap,pronouns.md#beginner-translation-practice
 👏,clap,agebu,acclaim,clap is audible; acclaim is the unobservable verdict,,,
 🙌,hooray,uhohu,,,,,
 🫶,care,egehe,kindness,heart hands offer care; kindness is warmth shown to others,,tender,
 🤝,handshake,aha,co-participation,handshake seals shared presence; co-participation is sharing the floor,,participate; joint; interaction; membership; participation,
 🙏,pray,ebevo,gratitude,pray expresses gratitude,,grateful,sakes.md#intermediate-translation-practice
-✍️,write,arada,authorship,write puts words on the page; authorship is claiming those words,,author,dependents.md#beginner-translation-practice
+✍️,write,arada,authorship,write puts words on the page; authorship is claiming those words,,author,questions.md#beginner-translation-practice
 💅,nail-polish,eneba,,,,,
 🤳,selfie,ezave,vanity,selfie reflects vanity,,,
 💪,bicep,abeze,strength,flex shows strength,,strong; arm; muscle; strengthen; exercise,
@@ -145,7 +145,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦷,tooth,uduva,,,,,
 🦴,bone,obo,structure,bone provides structure,,,
 👀,eyes,azaha,attention,eyes grant awareness,m.v:look,concentrate; observation; gaze,
-👁️,eye,ahaha,perception,eye enables perception,v:see,perceive; visual,dependents.md#beginner-translation-practice
+👁️,eye,ahaha,perception,eye enables perception,v:see,perceive; visual,dependents.md#beginner-practice
 👅,tongue,adava,eloquence,tongue wields eloquence,,,
 👄,mouth,amava,,,,,
 🫦,lip-bite,elebu,sexuality,a lip-bite signals desire; sexuality is physical attraction,,bite; sex,
@@ -184,7 +184,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧑‍🚒,firefight,avova,,,,,
 👮,police,abaze,authority,policing wields authority,,,predication.md#beginner-translation-practice
 🕵️,investigate,une,deduction,investigating follows clues; deduction is the unobservable inference,,implication; logic; derive; interpretation,
-💂,guard,agavo,protection,guarding provides protection,,insure; protect,dependents.md#beginner-translation-practice
+💂,guard,agavo,protection,guarding provides protection,,insure; protect,dependents.md#beginner-practice
 🥷,sneak,ezevu,stealth,sneaking moves with stealth,,,speech-moves.md#beginner-practice
 👷,construct,agoza,fabrication,construction builds structures,,build; install; formation; implement; implementation,roles.md#beginner-translation-practice
 🫅,reign,erevo,sovereignty,reigning embodies sovereignty,,,
@@ -217,7 +217,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💆,massage,ameza,soothing,massage brings relief,,,
 💇,haircut,ehegu,self-presentation,haircut is grooming; self-presentation is the unobservable aim,,,
 🚶,walk,owoga,,,,march; wander,predication.md#beginner-translation-practice
-🧍,stand,azado,presence,stand shows presence,,existence; attendance,dependents.md#beginner-translation-practice
+🧍,stand,azado,presence,stand shows presence,,existence; attendance,clause.md#intermediate-translation-practice
 🧎,kneel,eneha,submission,kneel shows submission,,,sakes.md#intermediate-translation-practice
 🧑‍🦼,power-chair,abavo,,,,,
 🧑‍🦽,propel,abobe,independence,self-propelling a chair shows independence,,motivate,
@@ -974,7 +974,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ☣️,biohazard,obaha,,,,,
 ⬆️,north,onova,,,,northern,roles.md#intermediate-translation-practice
 ↗️,northeast,anove,,,,,
-➡️,east,odu,progress,map-right is east; progress is moving ahead,,eastern,dependents.md#beginner-translation-practice
+➡️,east,odu,progress,map-right is east; progress is moving ahead,,eastern,dependents.md#beginner-practice
 ↘️,southeast,azove,,,,,
 ⬇️,south,azava,,,,southern,roles.md#intermediate-translation-practice
 ↙️,southwest,azawe,retreat,map down-left is southwest; retreat is moving away back,,withdraw; retire,
