@@ -66,6 +66,8 @@ Inventory tables on grammar pages use these kinds of cell:
 
 **Cue** is an optional memory helper. `≈` in a cue means “sounds like.” When **Same root as** is there, **Cue** does not repeat the everyday English; it only says why that picture maps.
 
+The word bank above each **Practice** checkpoint has two tables. **New words** (English, Agazan, Cue) are the words that checkpoint introduces; when **Agazan** is not the citation of the English, the cue names the citation’s sense (👁️ from *eye*). **Review** (English, Agazan) lists words met at earlier checkpoints.
+
 Continue with [phonology.md](phonology.md#beginner) for letters and word edges, then [word-endings.md](word-endings.md#beginner) for citation endings (you can already say your name as a [greeting](word-endings.md#greeting)), then [clause.md](clause.md#beginner) for clause shape, [speech-moves.md](speech-moves.md#beginner) for turns, then [dependents.md](dependents.md#beginner).
 
 ## License {#license}

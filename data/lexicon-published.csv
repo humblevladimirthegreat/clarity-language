@@ -539,7 +539,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🏨,hotel,ohode,,,,,
 🏩,motel,omode,privacy,discreet lodging,,,
 🏪,convenience-store,ageve,convenience,corner store is always nearby; convenience is easy to reach,,shop,
-🏫,school,uzugu,education,school teaches; education is learning over time,,educational; course,word-endings.md#beginner-translation-practice
+🏫,school,uzugu,education,school teaches; education is learning over time,,educational; course,word-endings.md#beginner-practice
 🏬,department-store,ozodo,market,a department store gathers many stalls under one roof; a market is where goods are traded,,economic; economy; retail; commercial,
 🏭,factory,avage,output,factory turns out goods; output is the unobservable result-role,,industrial,numeric-derivation.md#advanced-translation-practice
 🏰,castle,agazo,impregnability,castle walls defend within; fortress is defended stronghold,,,
@@ -772,7 +772,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔊,loudspeaker,aladu,amplification,a loudspeaker fills the room; amplification is making louder,v:shout,noise; loud,
 📣,megaphone,emego,announcement,megaphone broadcasts to the crowd; announcement is public declaration,,announce; advertise; ad,
 📯,post-horn,oboze,summons,a posthorn calls people to gather; summons is calling to come,,,
-🔔,bell,ebehu,alert,bell rings to warn or call; alert is warning attention,,,word-endings.md#beginner-translation-practice
+🔔,bell,ebehu,alert,bell rings to warn or call; alert is warning attention,,,word-endings.md#beginner-practice
 🔕,bell-off,ovahe,,,,,
 🎼,sheet-music,umuyu,composition,sheetmusic arranges notes on lines; composition is arranged creation,,music; compose,plurality.md#intermediate-translation-practice
 🎵,note,onoda,melody,note carries a musical line; melody is tuneful line,,tone; pitch,spans.md#beginner-translation-practice
@@ -812,19 +812,19 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧮,abacus,abuga,calculation,abacus beads slide to add and subtract,,calculate; formula; compute; digital,
 🎥,movie-camera,umuve,capture,movie camera records the scene; capture is holding a moment,,grab,
 🎞️,film,evave,sequence,film strip holds frames in order; sequence is ordered series,,movie; episode; picture; image; photograph; photo,dependents.md#intermediate-translation-practice
-📽️,projector,ebuhe,projection,projector throws image on screen; projection is showing outward,,presentation,word-endings.md#beginner-translation-practice
+📽️,projector,ebuhe,projection,projector throws image on screen; projection is showing outward,,presentation,
 🎬,clapper-board,obodu,,,,,
 📺,television,edevo,,,,screen; video,
 📷,camera,agaho,,,,,hooks.md#intermediate-translation-practice
 📹,camcorder,agago,recording,camcorder tapes moving scenes; recording is preserving over time,,,
 📼,videocassette,evude,,,,,
-🔍,magnify,amaga,scrutiny,magnifier enlarges small detail; scrutiny is close examination,v:find,seek; discover; encounter; examination; detect; notice,word-endings.md#beginner-translation-practice
+🔍,magnify,amaga,scrutiny,magnifier enlarges small detail; scrutiny is close examination,v:find,seek; discover; encounter; examination; detect; notice,word-endings.md#beginner-practice
 🕯️,candle,agoga,awash,candle light fills the room; awash is charge in the surrounding field,,,sakes.md#intermediate-translation-practice
 💡,lightbulb,ado,candela,lightbulb sets luminous intensity; candela is the SI luminous-intensity unit,,,
 🔦,flashlight,aveha,revelation,flashlight reveals what was dark; revelation is making known,,expose; flash,sakes.md#beginner-translation-practice
 🏮,lantern,alude,guidance,lantern lights the path ahead; guidance is showing the way,,counsel,
 🪔,lamp,alaba,,,,,
-📖,book,ubuga,knowledge,book holds knowledge,,novel; know,word-endings.md#beginner-translation-practice
+📖,book,ubuga,knowledge,book holds knowledge,,novel; know,word-endings.md#beginner-practice
 📓,notebook,onodu,,,,,
 📒,ledger,uhu,,,,catalog,
 📃,page-curl,obege,,,,,
@@ -852,7 +852,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 📫,mailbox,emebe,reception,closed mailbox holds delivered mail; reception is receiving inward,,,
 📮,post-box,oboza,dispatch,postbox sends mail on its way; dispatch is sending outward,,send; mail; deliver; post,
 🗳️,ballot,ahu,choice,ballot records your vote; choice is selecting among options,,vote; election; elect; poll; voluntary,sakes.md#beginner-translation-practice
-✏️,pencil,ebeyo,draft,pencil marks can be erased; draft is tentative first version,,outline,word-endings.md#beginner-translation-practice
+✏️,pencil,ebeyo,draft,pencil marks can be erased; draft is tentative first version,,outline,word-endings.md#beginner-practice
 🖊️,pen,ebewe,commitment,pen ink stays on the page; commitment is a binding promise,,dedicate,intention.md#intermediate-translation-practice
 🖌️,paintbrush,ebuda,artistry,brush paints with flowing strokes; artistry is skilled creative work,,art; paint; illustration; brush; draw; illustrate; stroke,comparatives.md#advanced-translation-practice
 🖍️,crayon,egeye,boldness,crayon marks with thick color; boldness is strong visible stroke,,nerve,
@@ -865,7 +865,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 📇,index-card,enade,lookup,card index sorts; lookup is the unobservable find-operation,,search; index,
 📈,uptrend,abede,degree,an uptrend marks more on the scale; degree is vague how-much,m.h:kind-of,level; step,
 📉,downtrend,adadu,loss,the chart falls; loss is having less than before,,deficit,
-📊,bar-chart,aboha,analysis,bar chart compares quantities; analysis is examining data,,analyze; chart; statistic,word-endings.md#beginner-translation-practice
+📊,bar-chart,aboha,analysis,bar chart compares quantities; analysis is examining data,,analyze; chart; statistic,
 📋,clipboard,egabo,accountability,clipboard tracks tasks to do; accountability is answerable tracking,,account,intention.md#intermediate-translation-practice
 📌,push-pin,ubube,highlight,pin marks an important spot; highlight is marking as important,,,
 📎,paper-clip,eboge,attachment,paperclip holds sheets together; attachment is joined addition,,attach,
@@ -924,7 +924,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🪟,window,ewedo,transparency,you can see through a window's clear glass,,clear,causation.md#beginner-translation-practice
 🛏️,bed,ebeda,,,,,word-endings.md#intermediate-translation-practice
 🛋️,couch,ageha,leisure,lounging on the couch; leisure is free time,,,
-🪑,chair,ehahe,position,chair is where you take a seat; position is your assigned place,v:sit,place; situation; lay; status; location; locate; pose; situate; put; occupy,word-endings.md#beginner-translation-practice
+🪑,chair,ehahe,position,chair is where you take a seat; position is your assigned place,v:sit,place; situation; lay; status; location; locate; pose; situate; put; occupy,clause.md#beginner-translation-practice
 🚽,toilet,ododa,,,,,
 🪠,plunger,obahe,unblock,plunger clears a clogged pipe; unblock is clearing obstruction,,,
 🚿,shower,ahave,renewal,shower washes away the day; refresh is restoring freshness,,update,

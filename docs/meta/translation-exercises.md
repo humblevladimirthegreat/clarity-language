@@ -221,7 +221,7 @@ Omit recoverable **`yal`** unless the drill is teaching speech act. Match role l
 - Every **New words** row has a **Cue**. When **Agazan** is not the citation of the English, the cue names the citation sense (`👁️ from *eye*`, `🔈 from *quiet*`). When a root has no useful cue, give the emoji alone. A cue is never the English to produce, and never a mid-dot prose list.
 - `lint:agazan` checks the columns of each group, the English, a cue on every **New words** row, one row per root across both groups, and that the bank lists exactly the content roots the drills use. The **Fix it** wrong form is not a use.
 
-**Caption and legend:** the captions are **`New words:`** and **`Review:`**. Spell out what the columns mean only on the first converted banks ([clause.md](../grammar/clause.md#beginner-translation-practice) Beginner, [word-endings.md](../grammar/word-endings.md#beginner-translation-practice) Beginner), and update the [How to learn](../grammar/introduction.md#cues) legend when the first page converts.
+**Caption and legend:** the captions are **`New words:`** and **`Review:`**. Spell out what the columns mean only on the first converted banks ([clause.md](../grammar/clause.md#beginner-translation-practice) Beginner, [word-endings.md](../grammar/word-endings.md#beginner-practice) Beginner), and update the [How to learn](../grammar/introduction.md#cues) legend when the first page converts.
 
 ## Legacy checkpoints
 <a id="legacy-checkpoints"></a>

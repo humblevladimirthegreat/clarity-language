@@ -71,34 +71,27 @@ The last letters you just used, on the same root `azawa`:
 
 A citation is **lowercase** root + ending (`azawal`, `azawam`, `azawan`). English for a citation is the bare sense (*swan*, *grace*, *Azawan*), with no article. In a sentence you add a first letter for the word’s role, as the [clause](clause.md#beginner) page shows. A [greeting](#greeting) is the named citation as a whole opening (`SELFn.`).
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
-Short drills for Beginner. Try each item before opening **Show answer**. Choose **-l** (new concrete), **-m** (new abstract), or **-n** (named). Every answer is a citation (no first letter). For a name, the English prompt gives the root’s **meaning** (*grace*), not the name as English spells it (*Azawan*), except in the greeting items.
+Short drills for Beginner. Try each item before opening **Show answer**. Choose **-l** (new concrete), **-m** (new abstract), or **-n** (named). Every answer is a citation (no first letter). For a name, the English prompt gives the root's **meaning** (*courage*), not the name as English spells it (*Alahen*), except in the greeting items.
 
 **Setting:** a classroom
 
-**Roots used here** (**English** is what you produce; **Agazan** is the citation, or the in-clause word when a role letter is part of that English; **Same root as** is the everyday citation when that English is not the citation kind; **Cue** is an optional memory aid):
+The word bank lists the roots this checkpoint introduces. **English** is what you produce; **Agazan** is its citation; **Cue** is a memory aid, and names the root's other sense when it has one. Later checkpoints add a **Review** table of words met earlier.
 
-| English | Agazan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *school* | `uzugul` | | |
-| *chair* | `ehahel` | | |
-| *pencil* | `ebeyol` | | |
-| *draft* | `ebeyom` | `ebeyol` *pencil* | ✏️: marks you can still erase |
-| *book* | `ubugal` | | |
-| *knowledge* | `ubugam` | `ubugal` *book* | 📖: what a book holds |
-| *magnify* | `amagal` | | |
-| *scrutiny* | `amagam` | `amagal` *magnify* | 🔍: close examination |
-| *bell* | `ebehul` | | |
-| *alert* | `ebehum` | `ebehul` *bell* | 🔔: warning attention |
-| *projector* | `ebuhel` | | |
-| *bar-chart* | `abohal` | | |
-| *analysis* | `aboham` | `abohal` *bar-chart* | 📊: examining the quantities |
-| *grace* | `azawam` | `azawal` *swan* | 🦢: the glide of *grace* |
-| *grace* (as a name) | `azawan` | | |
-| *courage* (as a name) | `alahen` | | |
-| *beauty* (as a name) | `ahaben` | | |
-| *your name* | `SELFn` | | from the name helper above |
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *school* | `uzugul` | 🏫: a school teaches, so its abstract is *education* |
+| *book* | `ubugal` | 📖: a book holds *knowledge* |
+| *pencil* | `ebeyol` | ✏️: pencil marks can be erased, so its abstract is a *draft* |
+| *bell* | `ebehul` | 🔔: a bell rings to warn, so its abstract is *alert* |
+| *magnify* | `amagal` | 🔍: close looking, so its abstract is *scrutiny* |
+| *Azawan* | `azawan` | 🦢 *swan*, abstract *grace* |
+| *Alahen* | `alahen` | 🦁 *lion*, abstract *courage* |
+| *Ahaben* | `ahaben` | 🌺 *hibiscus*, abstract *beauty* |
+| *your name* | `SELFn` | from the name helper above |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
@@ -110,31 +103,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Choose 
 school
 :::
 
-**2.** *chair* (citation)
-
-::: details Show answer
-`ehahel`
-
-chair
-:::
-
-**3.** *pencil* (citation)
-
-::: details Show answer
-`ebeyol`
-
-pencil
-:::
-
-**4.** *draft* (citation)
-
-::: details Show answer
-`ebeyom`
-
-draft
-:::
-
-**5.** *knowledge* (citation)
+**2.** *knowledge* (citation)
 
 ::: details Show answer
 `ubugam`
@@ -142,31 +111,31 @@ draft
 knowledge
 :::
 
-**6.** *scrutiny* (citation)
+**3.** *alert* (citation)
 
 ::: details Show answer
-`amagam`
+`ebehum`
 
-scrutiny
+alert
 :::
 
-**7.** *beauty*, as a name (citation)
+**4.** *courage*, as a name (citation)
 
 ::: details Show answer
-`ahaben`
-
-Ahaben
-:::
-
-**8.** *Hello, the speaker is Alahen.*
-
-::: details Show answer
-`alahen.`
+`alahen`
 
 Alahen
 :::
 
-**9.** *Hello, say it with your own name.*
+**5.** *Hello, the speaker is Azawan.*
+
+::: details Show answer
+`azawan.`
+
+Azawan
+:::
+
+**6.** *Hello, say it with your own name.*
 
 ::: details Show answer
 `SELFn.`
@@ -176,16 +145,34 @@ SELF
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `ubugal`
+**1.** `uzugum`
 
 ::: details Show answer
 
-book
+education
 
-*book*
+*education*
 :::
 
-**2.** `ebehul`
+**2.** `ebeyol`
+
+::: details Show answer
+
+pencil
+
+*pencil*
+:::
+
+**3.** `amagal`
+
+::: details Show answer
+
+magnify
+
+*magnify*
+:::
+
+**4.** `ebehul`
 
 ::: details Show answer
 
@@ -194,56 +181,56 @@ bell
 *bell*
 :::
 
-**3.** `ebuhel`
+**5.** `ahabem`
 
 ::: details Show answer
 
-projector
+beauty
 
-*projector*
+*beauty*
 :::
 
-**4.** `ebehum`
+**6.** `ahaben.`
 
 ::: details Show answer
 
-alert
+Ahaben
 
-*alert*
+*Ahaben.* (hello, the speaker is Ahaben)
 :::
 
-**5.** `aboham`
+#### Pick one {#beginner-pick-one}
+
+**1.** *scrutiny* `amagal` or `amagam`
 
 ::: details Show answer
+`amagam`
 
-analysis
+scrutiny
 
-*analysis*
+*Scrutiny* is the abstract sense of the root, so it takes **-m**; `amagal` is *magnify*.
 :::
 
-**6.** `azawam`
+**2.** *Azawan*, in a list of names `azawal` or `azawan`
 
 ::: details Show answer
-
-grace
-
-*grace*
-:::
-
-**7.** `alahen`
-
-::: details Show answer
-
-Alahen
-*courage* (as a name)
-:::
-
-**8.** `azawan.`
-
-::: details Show answer
+`azawan`
 
 Azawan
-*Azawan.* (hello, the speaker is Azawan)
+
+A name for one person takes **-n**; `azawal` is a *swan*.
+:::
+
+#### Fix it {#beginner-fix-it}
+
+**1.** *draft* <!-- lint: error -->`ebeyol`
+
+::: details Show answer
+`ebeyom`
+
+draft
+
+*Draft* is the abstract sense, so it takes **-m**, not **-l**; `ebeyol` is the *pencil* itself.
 :::
 
 ## Intermediate {#intermediate}
