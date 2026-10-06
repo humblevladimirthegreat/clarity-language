@@ -503,37 +503,40 @@ An island can hold part of a phrase. Here only *not small* is grouped, so **`gul
 
 **Speech:** reset your pitch briefly as the island starts, say it as one tight phrase, and pause after its last stressed syllable. In singing, shape it like any other phrase. Because an island never runs past one phrase, a listener who misses the closing pause is off by at most part of that phrase.
 
-### Translation practice {#intermediate-translation-practice}
-<a id="translation-practice-intermediate"></a>
+### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a courtroom
 
-**Roots used here:**
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *rejection* | `vogozam` | ❌ from *cross* |
+| *possibility* | `hegewem` | ❓ from *question mark* |
+| *letters* | `glelel` | 🔤: a word is its letters |
+
+**Review:**
 
 | English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
+| *topic* | `ozan` |
+| *Onodan* | `onodan` |
+| *attest* | `vodol` |
+| *lie* | `valahal` |
+| *small* | `gamazam` |
 | *tell* | `vezebel` |
 | *see* | `vahahal` |
-| *attest* | `vodol` |
-| *lie* (verb) | `valahal` |
-| *lie* (noun) | `alahal` |
 | *punch* | `vabahel` |
 | *walk* | `vowogal` |
-| *rejection* | `vogozam` |
-| *small* | `gamazam` |
-| *topic* | `ozan` |
-| *possibility* | `hegewem` |
-| *letters* (mention marker) | `glelel` |
-| *Onodan* (a titled work) | `onodan` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Alahen said “Azawan attests.”* (a multi-word cite)
+**1.** *Alahen said “Azawan attests.”*
 
 ::: details Show answer
 `zalahen d[zazawan vodol] vezebel.`
@@ -549,15 +552,7 @@ z-Alahen | d-CITE[z-Azawan | v-attest] | v-tell
 z-Alahen | d-CITE[Azawan] | v-tell . z-Ahaben | d-←patient.same | v-see
 :::
 
-**3.** *Azawan said “Azawan” (quietly).* (a cite nesting an aside)
-
-::: details Show answer
-`zazawan d[ th(hagawal) azawan ] vezebel.`
-
-z-Azawan | d-CITE[th-ASIDE[h-quiet] | Azawan] | v-tell
-:::
-
-**4.** *The word “onoda” is small.*
+**3.** *The word “onoda” is small.*
 
 ::: details Show answer
 <code>glelel z&lt;onoda&gt; gamazam.</code>
@@ -565,161 +560,112 @@ z-Azawan | d-CITE[th-ASIDE[h-quiet] | Azawan] | v-tell
 [gl-MENTION | z-OPAQUE["onoda"]] | g-small
 :::
 
-**5.** *Azawan dislikes the name “onodan.”* (the name-string, not the work)
+**4.** *Azawan said, “Does Alahen lie?”*
 
 ::: details Show answer
-<code>zazawan glelen d&lt;onodan&gt; vogozam.</code>
+`zazawan d[yol zalahen valahal] vezebel.`
 
-z-Azawan | gl-NAME.MENTION | d-OPAQUE["onodan"] | v-rejection
+z-Azawan | d-CITE[y-question | z-Alahen | v-lie] | v-tell
 :::
 
-**6.** *Azawan said, “Does Alahen walk?”* (the question keeps its act word)
+**5.** *Ahaben sees a copy of Onodan Alahen.*
 
 ::: details Show answer
-`zazawan d[yol zalahen vowogal] vezebel.`
+`zahaben d^@[onodan alahen] vahahal.`
 
-z-Azawan | d-CITE[y-question | z-Alahen | v-walk] | v-tell
+z-Ahaben | d-NAME.CITE.instance[Onodan | Alahen] | v-see
 :::
 
-**7.** *Now, about the word “odoga”: it is small.*
+**6.** *Alahen tells, possibly, Ahaben.*
 
 ::: details Show answer
-<code>glelel x&lt;odoga&gt; zozan gamazam.</code>
+`zalahen { bahaben hegewem } vezebel.`
 
-[gl-MENTION | x-OPAQUE["odoga"]] | z-TOPIC | g-small
-:::
-
-**8.** *Azawan saw, as a possibility, the lie.* (*possibility* targets that chunk)
-
-::: details Show answer
-`zazawan { hegewem dalahal } vahahal.`
-
-z-Azawan | SCOPE[h-possibility | d-lie] | v-see
-:::
-
-**9.** *Alahen and (just Azawan) punched.*
-
-::: details Show answer
-`zalahen { zazawan zal } zam vabahel.`
-
-[z-Alahen | SCOPE[z-Azawan | z-and] | z-and.open] | v-punch
-:::
-
-**10.** *Ahaben saw, as a possibility, the lie!* (strong feeling on that chunk)
-
-::: details Show answer
-`zahaben !{ hegewem dalahal } vahahal.`
-
-z-Ahaben | !SCOPE[h-possibility | d-lie] | v-see
-:::
-
-**11.** *Alahen sees a copy of Onodan Alahen.* (one copy of the titled work)
-
-::: details Show answer
-`zalahen d^@[onodan alahen] vahahal.`
-
-z-Alahen | d-NAME.CITE.instance[Onodan | Alahen] | v-see
+z-Alahen | SCOPE[b-Ahaben | h-possibility] | v-tell
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zazawan d[zalahen vodol] vezebel.`
+**1.** <code>zazawan glelen d&lt;onodan&gt; vogozam.</code>
 
 ::: details Show answer
+z-Azawan | gl-NAME.MENTION | d-OPAQUE["onodan"] | v-rejection
 
-z-Azawan | d-CITE[z-Alahen | v-attest] | v-tell
-
-*Azawan said “Alahen attests.”*
+*Azawan dislikes the name “onodan.”* (not the work)
 :::
 
-**2.** `zahaben d~[zazawan vodol] vezebel.`
+**2.** `x@[onodan alahen] zalahen dozan vogozam.`
 
 ::: details Show answer
+x-NAME.CITE[Onodan | Alahen] | z-Alahen | d-TOPIC | v-rejection
 
+*Now, about Onodan Alahen: Alahen dislikes it.*
+:::
+
+**3.** `zahaben d~[zazawan vodol] vezebel.`
+
+::: details Show answer
 z-Ahaben | d-CITE.about[z-Azawan | v-attest] | v-tell
 
 *Ahaben said something like “Azawan attests.”*
 :::
 
-**3.** `zalahen d[azawan] vezebel. zahaben duxar vahahal.`
+**4.** `zalahen { zazawan zal } zam vabahel.`
 
 ::: details Show answer
+[z-Alahen | SCOPE[z-Azawan | z-and] | z-and.open] | v-punch
 
-z-Alahen | d-CITE[Azawan] | v-tell . z-Ahaben | d-←patient.same | v-see
-
-*Alahen said “Azawan.” Ahaben saw that.*
+*Alahen and (just Azawan) punched.*
 :::
 
-**4.** <code>zahaben glelen d&lt;ahahun&gt; vezebel.</code>
+**5.** `zazawan vowogal th(zalahen valahal).`
 
 ::: details Show answer
-
-z-Ahaben | gl-NAME.MENTION | d-OPAQUE["ahahun"] | v-tell
-
-*Ahaben said the name “ahahun.”*
-:::
-
-**5.** <code>glelel z&lt;ahahul&gt; gamazam.</code>
-
-::: details Show answer
-
-[gl-MENTION | z-OPAQUE["ahahul"]] | g-small
-
-*The word “ahahul” is small.*
-:::
-
-**6.** <code>glelel z&lt;ahaben vodol&gt; gamazam.</code>
-
-::: details Show answer
-
-[gl-MENTION | z-OPAQUE["ahaben vodol"]] | g-small
-
-*The phrase “ahaben vodol” is small.*
-:::
-
-**7.** `zalahen { hegewem dalahal } vahahal.`
-
-::: details Show answer
-
-z-Alahen | SCOPE[h-possibility | d-lie] | v-see
-
-*Alahen saw, as a possibility, the lie.*
-:::
-
-**8.** `zazawan vowogal th(zalahen valahal).`
-
-::: details Show answer
-
 z-Azawan | v-walk | th-ASIDE[z-Alahen | v-lie]
 
 *Azawan walks (Alahen lies).*
 :::
 
-**9.** <code>zahaben glelel d&lt;ahahul&gt; vezebel.</code>
+**6.** `zahaben !{ hegewem dalahal } vahahal.`
 
 ::: details Show answer
+z-Ahaben | !SCOPE[h-possibility | d-lie] | v-see
 
-z-Ahaben | gl-MENTION | d-OPAQUE["ahahul"] | v-tell
-
-*Ahaben said the word “ahahul.”*
+*Ahaben saw, as a possibility, the lie!*
 :::
 
-**10.** `zalahen ?{ zazawan zal } zam vabahel.`
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Azawan dislikes Onodan Alahen* (the work). `zazawan d@[onodan alahen] vogozam.` or `zazawan d[onodan alahen] vogozam.`
 
 ::: details Show answer
+`zazawan d@[onodan alahen] vogozam.`
 
-[z-Alahen | ?SCOPE[z-Azawan | z-and] | z-and.open] | v-punch
+z-Azawan | d-NAME.CITE[Onodan | Alahen] | v-rejection
 
-*Alahen and (just Azawan?) punched.* (unsure about that chunk)
+**`@`** makes the span the work; bare brackets quote the words.
 :::
 
-**11.** <code>zazawan d^@&lt;iPhone&gt; vahahal.</code>
+**2.** *Azawan saw, as a possibility, the lie.* (only the lie is a possibility) `zazawan { hegewem dalahal } vahahal.` or `zazawan hegewem dalahal vahahal.`
 
 ::: details Show answer
+`zazawan { hegewem dalahal } vahahal.`
 
-z-Azawan | d-NAME.OPAQUE.instance["iPhone"] | v-see
+z-Azawan | SCOPE[h-possibility | d-lie] | v-see
 
-*Azawan sees an iPhone.* (one phone, not the product)
+Inside braces, **`hegewem`** reaches only that chunk; outside, it frames the whole seeing.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Azawan said, “Does Alahen walk?”* <!-- lint: error -->`yol zazawan d[zalahen vowogal] vezebel.`
+
+::: details Show answer
+`zazawan d[yol zalahen vowogal] vezebel.`
+
+z-Azawan | d-CITE[y-question | z-Alahen | v-walk] | v-tell
+
+The quoted question keeps its act word inside the cite; **`yol`** outside asks whether Azawan said it.
 :::
 
 ## Advanced {#advanced}

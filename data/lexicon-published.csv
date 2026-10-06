@@ -1045,7 +1045,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ♾️,infinity,oneve,boundlessness,infinity loop never closes; boundlessness is the unobservable without-limit,,,
 ‼️,bang,abawe,,,,strike; knock; hit; snap,
 ⁉️,interrobang,unede,,,,,
-❓,question-mark,egewe,possibility,a questionmark marks the open case; possibility is maybe-so,,theory; hypothesis,spans.md#intermediate-translation-practice
+❓,question-mark,egewe,possibility,a questionmark marks the open case; possibility is maybe-so,,theory; hypothesis,spans.md#intermediate-practice
 ❗,exclamation,egaza,importance,an exclamation calls attention; importance is mattering,,crucial; significance,
 〰️,squiggle,ezogo,hesitation,a squiggle trails off uncertainly; hesitation is holding back action,,hesitate; curve,
 💱,currency-exchange,ehe,convertibility,currency arrows swap one for another; exchange is swapping between sides,,interpret; translate,
@@ -1057,7 +1057,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔰,begin,abege,inception,shoshin mark means just starting; inception is the unobservable start-kind,,found; trigger,
 ⭕,correct,egega,inclusion,hollow circle marks round boundary; inclusion is being inside the boundary,,proper; right; incorporate,
 ✅,check,ehu,decision,checkmark marks a confirmed pick; decision is a settled choice with revisability,,conclude; determine; ensure,
-❌,cross,ogoza,rejection,cross mark means no wrong; rejection is refused as wrong,,,spans.md#intermediate-translation-practice
+❌,cross,ogoza,rejection,cross mark means no wrong; rejection is refused as wrong,,,spans.md#intermediate-practice
 ➰,loop,uluba,recurrence,curly loop circles back; repetition is returning to the start,,,
 ©️,copyright,egabe,ownership,copyright marks legal control; ownership is legal right to control,,possess; possession; own; property,sakes.md#intermediate-translation-practice
 ®️,registered,erehu,,,,registration,
@@ -1069,7 +1069,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔡,lower-case,oloha,casualness,lowercase skips the formality of capitals,,,
 🔢,numbers,anabe,quantification,numbers let you count and measure,,mathematics,
 🔣,symbols,ezezu,notation,symbols are written marks that stand for ideas,,code,
-🔤,letters,ele,literacy,letters let you read and write,,literary,spans.md#intermediate-translation-practice
+🔤,letters,ele,literacy,letters let you read and write,,literary,spans.md#intermediate-practice
 ℹ️,information,eneve,fact,the info sign gives facts; a fact is what is actually so,,data; inform,
 🅿️,parking,aboge,allotment,parking marks a stall; allotment is the unobservable assigned share,,assign,
 🆘,sos,ezaha,distress,sos signals distress,,,
