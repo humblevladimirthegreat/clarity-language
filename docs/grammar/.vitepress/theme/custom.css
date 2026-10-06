@@ -121,3 +121,63 @@
   content: '↓';
   opacity: 1;
 }
+
+/* Claritish cheat sheet: print on as few pages as possible, without site chrome. */
+@media print {
+  .claritish-cheat-sheet .VPNav,
+  .claritish-cheat-sheet .VPLocalNav,
+  .claritish-cheat-sheet .VPSidebar,
+  .claritish-cheat-sheet .VPDocAside,
+  .claritish-cheat-sheet .aside,
+  .claritish-cheat-sheet .VPDocFooter,
+  .claritish-cheat-sheet .VPFooter,
+  .claritish-cheat-sheet .header-anchor {
+    display: none !important;
+  }
+
+  .claritish-cheat-sheet .VPContent,
+  .claritish-cheat-sheet .VPDoc,
+  .claritish-cheat-sheet .VPDoc .container,
+  .claritish-cheat-sheet .VPDoc .content,
+  .claritish-cheat-sheet .VPDoc .content-container {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .claritish-cheat-sheet .vp-doc {
+    font-size: 9pt;
+    line-height: 1.3;
+  }
+
+  .claritish-cheat-sheet .vp-doc h1 {
+    font-size: 14pt;
+    margin: 0 0 4pt;
+  }
+
+  .claritish-cheat-sheet .vp-doc h2 {
+    font-size: 11pt;
+    margin: 8pt 0 2pt;
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .claritish-cheat-sheet .vp-doc p {
+    margin: 2pt 0;
+  }
+
+  .claritish-cheat-sheet .vp-doc table {
+    margin: 2pt 0;
+    break-inside: avoid;
+  }
+
+  .claritish-cheat-sheet .vp-doc th,
+  .claritish-cheat-sheet .vp-doc td {
+    padding: 1pt 5pt;
+  }
+
+  .claritish-cheat-sheet .vp-doc a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

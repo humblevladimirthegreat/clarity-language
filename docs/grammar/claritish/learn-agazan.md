@@ -1,7 +1,3 @@
----
-next: false
----
-
 # Learn the full language {#learn-agazan}
 
 ## What you can say now {#recap}

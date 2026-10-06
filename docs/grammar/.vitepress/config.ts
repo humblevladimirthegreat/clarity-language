@@ -73,6 +73,7 @@ export default defineConfig({
           { text: 'Feelings in three parts', link: '/claritish/feelings' },
           { text: 'Bonus: Tone marks', link: '/claritish/tone-marks' },
           { text: 'Learn the full language', link: '/claritish/learn-agazan' },
+          { text: 'Cheat sheet', link: '/claritish/cheat-sheet' },
         ],
       },
       {

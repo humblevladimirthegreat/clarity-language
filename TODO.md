@@ -21,6 +21,7 @@ use [skip-cd] for amplify to not deploy.
 -eliminate lexicon retie by default
 -run full lexicon retie
 -consider swapping ae with oe meanings
+-allow non-emoji roots
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
