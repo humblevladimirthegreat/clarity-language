@@ -288,28 +288,35 @@ For several members, put a [phrase join](joins.md) **inside** the `/b/` phrase (
 
 **Compare with:** *a house like Azawan’s* / *walks like a duck* is resemblance ([like](relations.md#like-resembles) `gumum` / `humum`), not **`goen` / `hoen`** *on a par with* / *equating*.
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a relay race
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *finish-line* | `devehal` | `evehal` *finish-line* |
-| *teamwork* | `ahodom` | `ahodol` *handball* |
-| *trophy* | `odovel` | |
-| *medal* | `amedal` | |
-| *run* | `varahal` | |
-| *punch* | `vabahel` | |
-| *scream* | `vezugel` | |
-| *lie* | `alahal` | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *finish-line* | `evehal` | 🏁 |
+| *teamwork* | `ahodom` | 🤾 from *handball* |
+| *medal* | `amedal` | 🏅 |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *MEMORY* | `thevom` |
+| *REPORTED* | `thewam` |
+| *because* | `thevem` |
+| *trophy* | `odovel` |
+| *run* | `varahal` |
+| *punch* | `vabahel` |
+| *scream* | `vezugel` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -321,23 +328,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Azawan | d-medal | v-includes
 :::
 
-**2.** *The finish line, including Ahaben.*
-
-::: details Show answer
-`zevehal gan bahaben.`
-
-z-finish-line | [g-including | b-Ahaben]
-:::
-
-**3.** *Azawan chooses the medal (as the one choice).*
-
-::: details Show answer
-`zazawan damedal von.`
-
-z-Azawan | d-medal | v-choose
-:::
-
-**4.** *Alahen runs with Ahaben.*
+**2.** *Alahen runs with Ahaben.*
 
 ::: details Show answer
 `zalahen han bahaben varahal.`
@@ -345,7 +336,7 @@ z-Azawan | d-medal | v-choose
 z-Alahen | [h-including | b-Ahaben] | v-run
 :::
 
-**5.** *Azawan punches, then Alahen screams.*
+**3.** *Azawan punches, then Alahen screams.*
 
 ::: details Show answer
 `zazawan vabahel xan zalahen vezugel.`
@@ -353,15 +344,7 @@ z-Alahen | [h-including | b-Ahaben] | v-run
 [z-Azawan | v-punch | x-and-then | z-Alahen | v-scream]
 :::
 
-**6.** *A team exclusive for Ahaben.*
-
-::: details Show answer
-`zahodom gon bahaben.`
-
-z-teamwork | [g-exclusive-for | b-Ahaben]
-:::
-
-**7.** *Alahen runs and punches.*
+**4.** *Alahen runs and punches.*
 
 ::: details Show answer
 `zalahen varahal vabahel val.`
@@ -369,23 +352,7 @@ z-teamwork | [g-exclusive-for | b-Ahaben]
 z-Alahen | [v-run | v-punch | v-and]
 :::
 
-**8.** *Alahen runs, refusing the medal.*
-
-::: details Show answer
-`zalahen hun bamedal varahal.`
-
-z-Alahen | [h-refusing | b-medal] | v-run
-:::
-
-**9.** *Alahen runs, and before that, Azawan lies.*
-
-::: details Show answer
-`zalahen varahal xuen zazawan valahal.`
-
-[z-Alahen | v-run | x-and-before-that | z-Azawan | v-lie]
-:::
-
-**10.** *Alahen runs, but not because of the medal.*
+**5.** *Alahen runs, but not because of the medal.*
 
 ::: details Show answer
 `zalahen varahal thevem bamedal thul.`
@@ -393,7 +360,7 @@ z-Alahen | [h-refusing | b-medal] | v-run
 z-Alahen | v-run | [th-because | b-medal] | th-not
 :::
 
-**11.** *Azawan screams: I either saw it or was told, one of the two.*
+**6.** *Azawan screams: I either saw it or was told, one of the two.*
 
 ::: details Show answer
 `zazawan vezugel thevom thewam thol.`
@@ -403,103 +370,86 @@ z-Azawan | v-scream | th-MEMORY | th-REPORTED | th-or-exactly-one
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zahaben dodovel van.`
+**1.** `zalahen dodovel von.`
 
 ::: details Show answer
+z-Alahen | d-trophy | v-choose
 
-z-Ahaben | d-trophy | v-includes
-
-*Ahaben includes the trophy.*
+*Alahen chooses the trophy* (as the one choice).
 :::
 
 **2.** `zevehal guan bamedal.`
 
 ::: details Show answer
-
 z-finish-line | [g-without | b-medal]
 
 *The finish line without the medal.*
 :::
 
-**3.** `zalahen dodovel von.`
+**3.** `zahodom gaon bazawan.`
 
 ::: details Show answer
-
-z-Alahen | d-trophy | v-choose
-
-*Alahen chooses the trophy (as the one choice).*
-:::
-
-**4.** `zazawan han balahen varahal.`
-
-::: details Show answer
-
-z-Azawan | [h-including | b-Alahen] | v-run
-
-*Azawan runs with Alahen.*
-:::
-
-**5.** `zahodom gan bazawan.`
-
-::: details Show answer
-
-z-teamwork | [g-including | b-Azawan]
-
-*A team including Azawan.*
-:::
-
-**6.** `zazawan hun balahal varahal.`
-
-::: details Show answer
-
-z-Azawan | [h-refusing | b-lie] | v-run
-
-*Azawan runs, refusing a lie.*
-:::
-
-**7.** `zahodom gaon bazawan.`
-
-::: details Show answer
-
 z-teamwork | [g-open-to | b-Azawan]
 
-*A team open to Azawan (more members may follow).*
+*A team open to Azawan* (more members may follow).
 :::
 
-**8.** `zalahen huon bahaben vezugel.`
+**4.** `zahaben vezugel xuen zalahen vabahel.`
 
 ::: details Show answer
-
-z-Alahen | [h-anything-but | b-Ahaben] | v-scream
-
-*Alahen screams, barring Ahaben.*
-:::
-
-**9.** `zahaben vezugel xuen zalahen vabahel.`
-
-::: details Show answer
-
 [z-Ahaben | v-scream | x-and-before-that | z-Alahen | v-punch]
 
 *Ahaben screams; before that, Alahen punched.*
 :::
 
-**10.** `zahaben varahal thevom thewam thel.`
+**5.** `zahaben varahal thevom thewam thel.`
 
 ::: details Show answer
-
 z-Ahaben | v-run | th-MEMORY | th-REPORTED | th-rank/more
 
 *Ahaben runs: I mainly saw it, and I was also told.*
 :::
 
-**11.** `zalahen vabahel thul.`
+**6.** `yol zazawan varahal thar.`
 
 ::: details Show answer
+y-question | z-Azawan | v-run | th-why
 
-z-Alahen | v-punch | th-not
+*Why do you say Azawan runs?*
+:::
 
-*Alahen punches. No judgment.*
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Alahen runs, refusing the medal.* `zalahen hun bamedal varahal.` or `zalahen han bamedal varahal.`
+
+::: details Show answer
+`zalahen hun bamedal varahal.`
+
+z-Alahen | [h-refusing | b-medal] | v-run
+
+**`u`** rejects that member; **`han`** would run *with* the medal.
+:::
+
+**2.** *Azawan punches; before that, Alahen screams.* `zazawan vabahel xuen zalahen vezugel.` or `zazawan vabahel xan zalahen vezugel.`
+
+::: details Show answer
+`zazawan vabahel xuen zalahen vezugel.`
+
+[z-Azawan | v-punch | x-and-before-that | z-Alahen | v-scream]
+
+**`xuen`** puts the second clause earlier; **`xan`** puts it after.
+:::
+
+#### Fix it {#intermediate-fix-it}
+
+**1.** *the finish line, including Ahaben* <!-- lint: error -->`zevehal al bahaben.`
+
+::: details Show answer
+`zevehal gan bahaben.`
+
+z-finish-line | [g-including | b-Ahaben]
+
+Before a `/b/` noun, the hook **`al`** means *in*; *including* an extra member is the join-relation **`gan`**.
 :::
 
 ## See also
