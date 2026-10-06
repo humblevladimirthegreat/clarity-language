@@ -73,6 +73,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-r`. Here is the full shape of that word, in order, written as one lowercase token (`zazawan`).
 
+<!-- cheat-sheet: sounds-spelling -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | Role letter | first letter | role in the clause (subject, verb, …) |
@@ -110,6 +111,7 @@ When English says *how many* or *which place*, Agazan uses a [number word](numbe
 
 When you **spell a word aloud** or **name a letter**, say the Agazan name for it. Pause between names so two names do not run into one syllable.
 
+<!-- cheat-sheet: sounds-spelling -->
 | Agazan | Name | Cue |
 |--------|------|-----|
 | `e` | `e` | *bet* |
@@ -139,6 +141,7 @@ In a clause, a letter you talk about (such as `z`) is a [mention](spans.md#menti
 
 Ten letters also begin a [digit syllable](numbers.md#counts). The letter name uses the **opposite** vowel (`a`↔`u`, `o`↔`e`), so naming the letter is not the same as counting.
 
+<!-- cheat-sheet: sounds-spelling -->
 | Agazan | Digit syllable | Name | Cue |
 |--------|----------------|------|-----|
 | `w` | `wo` (1) | `we` | `o` ↔ `e` |
