@@ -344,29 +344,32 @@ At departure, use your own name with the reduced level:
 >
 > "I’m leaving now."
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a front porch
 
-**Roots used here:**
+**Review:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *your name* | `SELFn` | |
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *doorbell* | `oyelebehul` | |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *scream* | `ezugel` | |
-| *punch* | `abahel` | |
+| English | Agazan |
+|---------|--------|
+| *your name* | `SELFn` |
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *doorbell* | `oyelebehul` |
+| *salad* | `azavul` |
+| *plate* | `ebedel` |
+| *flower* | `avavul` |
+| *croissant* | `ogazal` |
+| *see* | `vahahal` |
+| *scream* | `vezugel` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *(Your name), I’m here / we can stay.*
+**1.** *(Your name), I'm here; we can stay.*
 
 ::: details Show answer
 `SELFxan.`
@@ -382,23 +385,7 @@ SELF-presence
 y-Alahen-minutes
 :::
 
-**3.** *(Your name), one ask.*
-
-::: details Show answer
-`SELFxon.`
-
-SELF-ask
-:::
-
-**4.** *(Your name), I’m here. Alahen, one ask.*
-
-::: details Show answer
-`SELFxan. yalahexon.`
-
-SELF-presence . y-Alahen-ask
-:::
-
-**5.** *Ahaben, just passing.* (calling)
+**3.** *Ahaben, just passing.* (calling)
 
 ::: details Show answer
 `yahabexun.`
@@ -406,119 +393,112 @@ SELF-presence . y-Alahen-ask
 y-Ahaben-passing
 :::
 
-**6.** *Ahaben, one ask.* (citation)
+**4.** *Azawan, a few minutes. Alahen sees the doorbell.*
 
 ::: details Show answer
-`ahabexon.`
+`yazawaxen zalahen doyelebehul vahahal.`
 
-Ahaben-ask
+y-Azawan-minutes | z-Alahen | d-doorbell | v-see
 :::
 
-**7.** *Azawan, a few minutes.* (calling); *Alahen screams.*
+**5.** *a salad plate* (one plate)
 
 ::: details Show answer
-`yazawaxen zalahen vezugel.`
+`zazavuxebedel.`
 
-y-Azawan-minutes | z-Alahen | v-scream
+z-salad-x-plate
 :::
 
-**8.** *Alahen, just passing.* (calling); *Ahaben punches Azawan.*
+**6.** *Flower-Salad-Croissant* (one café's name)
 
 ::: details Show answer
-`yalahexun zahaben zazawan vabahel.`
+`zavavuxazavuxogazan.`
 
-y-Alahen-passing | z-Ahaben | z-Azawan | v-punch
-:::
-
-**9.** *(Your name), I’m here / we can stay.* *Alahen, one ask.* (Alahen’s bid is the one that holds)
-
-::: details Show answer
-`SELFxan. alahexon.`
-
-SELF-presence . Alahen-ask
+z-Avavu-x-Azavu-x-Ogazan
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `ahabexan.`
+**1.** `SELFxon.`
 
 ::: details Show answer
+SELF-ask
 
-Ahaben-presence
-
-*Ahaben, I’m here / we can stay.*
+*(Your name), one ask.* / *I'm about to leave.*
 :::
 
-**2.** `yalahexun.`
+**2.** `yazawaxun zalahen vezugel.`
 
 ::: details Show answer
+y-Azawan-passing | z-Alahen | v-scream
 
-y-Alahen-passing
-
-*Alahen, just passing.* (calling)
+*Azawan, just passing: Alahen screams.*
 :::
 
-**3.** `azawaxun.`
+**3.** `zavavuxebedel.`
 
 ::: details Show answer
+z-flower-x-plate
 
-Azawan-passing
-
-*Azawan, just passing.*
+*a flower plate*
 :::
 
-**4.** `yahabexen.`
+**4.** `yahabexen zazawan davavul vahahal.`
 
 ::: details Show answer
+y-Ahaben-minutes | z-Azawan | d-flower | v-see
 
-y-Ahaben-minutes
-
-*Ahaben, a few minutes.* (calling)
+*Ahaben, a few minutes: Azawan sees a flower.*
 :::
 
-**5.** `yalahexon.`
+**5.** `SELFxen.` (said when leaving)
 
 ::: details Show answer
+SELF-minutes
 
-y-Alahen-ask
-
-*Alahen, one ask.* (calling)
+*I'm leaving soon.*
 :::
 
-**6.** `azawaxan yahabexon.`
+**6.** `yalahexan.`
 
 ::: details Show answer
+y-Alahen-presence
 
-Azawan-presence | y-Ahaben-ask
-
-*Azawan, I’m here. Ahaben, one ask.* (calling)
+*Alahen, I have time.*
 :::
 
-**7.** `azawan.`
+#### Pick one {#intermediate-pick-one}
+
+**1.** *a croissant plate* `zogazaxebedel.` or `zebedexogazal.`
 
 ::: details Show answer
+`zogazaxebedel.`
 
-Azawan
+z-croissant-x-plate
 
-*Azawan.* (hello, the speaker is Azawan)
+The last root is the kind (a plate); the root before **`x`** narrows it.
 :::
 
-**8.** `yazawaxen zahaben doyelebehul vahahal.`
+**2.** *Ahaben, one ask.* (calling) `yahabexon.` or `yahabexen.`
 
 ::: details Show answer
+`yahabexon.`
 
-y-Azawan-minutes | z-Ahaben | d-doorbell | v-see
+y-Ahaben-ask
 
-*Azawan, a few minutes.* (calling); *Ahaben sees a doorbell.*
+**`o`** is one slot; **`e`** offers a few minutes.
 :::
 
-**9.** `azawaxan. alahexen.`
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Ahaben sees a salad plate.* (one plate) <!-- lint: error -->`zahaben dazavul debedel vahahal.`
 
 ::: details Show answer
+`zahaben dazavuxebedel vahahal.`
 
-Azawan-presence . Alahen-minutes
+z-Ahaben | d-salad-x-plate | v-see
 
-*Azawan, I’m here / we can stay.* *Alahen, a few minutes.* (Alahen’s few minutes is the one that holds)
+One thing is one word with **`x`**; two words name a salad and a plate.
 :::
 
 ## See also
