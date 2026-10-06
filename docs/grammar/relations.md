@@ -58,6 +58,7 @@ With no `/b/` after a joined subject, the model is the other members: each one r
 
 **Compare with:** a `/b/` word with no relation word before it is the recipient. *In a house* is a [hook](hooks.md#extra-noun) (`al bahazal`). *Using* a tool is also a [hook](hooks.md#extra-noun). Giving **one** person two labels is not resemblance, so it does not use this pair. *As sleepy as* compares how far two things have a quality, not whether one resembles the other. *As if they walk* says the walk may not be real; with *like*, the walk is real.
 
+<!-- cheat-sheet: linking-clauses -->
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`humum` / `gumum`** | resemblance to a model | *like* | `umul` *mirror* | 🪞: the image is of the model |
@@ -77,6 +78,7 @@ On a noun, the same root is **`gehem`** (`dubugal gehem bahavol` *a book for a h
 
 **Compare with:** a `/b/` word with no relation word before it is the recipient (*a book for Alahen* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun). *Like a duck* is [simile](#similative). *In a house* is a hook (`al`).
 
+<!-- cheat-sheet: linking-clauses -->
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hehem` / `gehem`** | consideration / countervalue | *in exchange for* | `ehel` *currency-exchange* | 💱: the arrows swap one side for the other |
@@ -96,6 +98,7 @@ A recipient `/b/` can follow once the pair is complete: `zazawan hadem balahen b
 
 **Compare with:** a `/b/` word with no relation word before it is who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`).
 
+<!-- cheat-sheet: linking-clauses -->
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hadem` / `gadem`** | authorized agency | *on behalf of* | `adel` *id* | 🪪: the card stands as their face |
@@ -297,6 +300,7 @@ On a noun it is **`gebum`**: *Azawan, across the station, sits.* As a plain noun
 
 As a plain noun, `zugel` is *a carousel*. **`om`** *near* says only that the person or thing is close, not that it surrounds the landmark.
 
+<!-- cheat-sheet: linking-clauses -->
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hazam` / `gazam`** | position between two landmarks | *between* | `azal` *sandwich* | 🥪: the filling sits between two sides |
@@ -346,6 +350,7 @@ For *a piece of* a mass, put the substance first and `gozazom` right after it. W
 
 Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in* hook (`al`), not `gahem`.
 
+<!-- cheat-sheet: linking-clauses -->
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hobom` / `gobom`** | constitutive piece | *part of* | `obol` *bone* | 🦴: the piece that holds the body’s shape |
@@ -389,6 +394,7 @@ With no `/b/` after a joined subject, the tie points at the other members, as wi
 
 Any root whose abstract sense is a tie works this way (`gohoham` *partner of*, `ganam` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zalahen gemezem bazawan`, `zoxemezer` is *the other party of that friendship* (Azawan).
 
+<!-- cheat-sheet: linking-clauses -->
 | Agazan | Use | English | Same root as |
 |--------|-----|---------|--------------|
 | **`gemezem`** + `/b/` | companion of `/b/` | *friend of* | `emezel` *Mrs Claus* |
@@ -642,6 +648,7 @@ An *as-of* pair inside a finished inner clause cannot be resumed later in the ma
 
 **Compare with:** [*after*](dependents.md#time-poles) **`henum`** and extra-noun **`ol`** *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](causation.md#if) **`thoyem`** is a condition judged at speech-now, not English *if he had* (`huram`). [NOTIONAL](knowing.md#notional) is pretend, not a placeholder now. [Scope islands](joins.md#scope-islands-join) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the evidential, resume the *as-of*, or both.
 
+<!-- cheat-sheet: linking-clauses -->
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`huhum` / `guhum` / `wuhum`** | asserted whose-now | *as of* (dated ledger) | `uhul` *ledger* | 📒: a dated line in the books |
@@ -694,6 +701,7 @@ Changing your mind is then a change of now, not a contradiction: *I was fairly s
 
 **Compare with:** an evidential is how you know **at speech-now**, even under `/th/` *as-of*. Someone else's stance takes a [holder](knowing.md#holder); with one, `thuhum` dates **their** stance. *I remember feeling it* is a remembering channel (`thevom`) plus `thuhum`.
 
+<!-- cheat-sheet: linking-clauses -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thuhum`** | stances as of a real now | *I thought / I felt (then)* | 📒: a dated line |

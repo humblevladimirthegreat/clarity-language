@@ -65,6 +65,7 @@ A pole uses the abstract sense of its root, not the everyday object, so it ends 
 
 You can also say:
 
+<!-- cheat-sheet: linking-clauses -->
 | Agazan | English | Same root as | Cue |
 |--------|---------|--------------|-----|
 | **`thevem barl`** | *because* | `evel` *brick* | 🧱: the cause is what the result sits on |
@@ -334,6 +335,7 @@ A **period** closes the sentence body in writing, whatever the speech act. Speec
 
 Beginner already used *therefore*. It is one of six **sentence linkers**: `/x/` words that connect a finished sentence to the one after it. Each one uses its root's **abstract** sense, so it ends in **-m**.
 
+<!-- cheat-sheet: linking-clauses -->
 | English | Agazan | Abstract of | Cue | Example |
 |---------|--------|-------------|-----|---------|
 | *therefore* | **`xodum`** | `odum` *progress* | ➡️: the sun’s path, so the talk moves on | `xodum` |
@@ -347,6 +349,7 @@ Beginner already used *therefore*. It is one of six **sentence linkers**: `/x/` 
 
 Three linkers also take **-l** for a **firm** link: the link holds with no room for doubt, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). (cue: **-l** ≈ lasting: the link holds)
 
+<!-- cheat-sheet: linking-clauses -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | **`xodul`** | the next claim follows necessarily | *it follows that* / *necessarily, then* |
@@ -420,6 +423,7 @@ Beginner used **`darl`** / **`barl`** for *that …* and **`dorl`** for *whether
 
 Unlike a `/y/` act word, a stand-in does not itself state, ask, or command: it only lets that kind of content fill a role in the outer sentence. Stand-ins are not joins. The ending says how much the next sentence covers: **`-rl`** means it is the whole content (locked); **`-rm`** leaves it open (the gist, or not the only thing).
 
+<!-- cheat-sheet: linking-clauses -->
 | Stand-in | Content type | **`-rl`** locked | **`-rm`** open |
 |----------|--------------|------------------|----------------|
 | **`a`** hold | statement-like (compare **`yal`**) | `darl` *that …* | `darm` *that …* (gist) |
@@ -495,6 +499,7 @@ A stand-in on **`-rl`** / **`-rm`** holds a slot for the sentence that comes **n
 
 The vowel still says what kind of content it is, and the word stands for the most recent content of that kind:
 
+<!-- cheat-sheet: linking-clauses -->
 | Stand-in | Points back to | English |
 |----------|----------------|---------|
 | **`darth`** | the last statement | *so* / *that* |
@@ -650,6 +655,7 @@ A stand-in's vowel says what kind of content follows, and its first letter says 
 
 Each content type has one lexicalized form; there is no closed / open pair here.
 
+<!-- cheat-sheet: linking-clauses -->
 | Agazan | Dependent content | English |
 |--------|-------------------|---------|
 | **`varn`** | statement-like (`a`) | *state…* |

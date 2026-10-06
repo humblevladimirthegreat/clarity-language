@@ -518,6 +518,7 @@ Each two-vowel pair also makes a [role pointer](#role-pointers-family): leave ou
 >
 > "Alahen builds. Azawan sees what Alahen built."
 
+<!-- cheat-sheet: roles-comparing -->
 | Agazan | Names | Its `/b/` comes from |
 |--------|-------|----------------------|
 | `daexar` | the tool of the latest event | **`ael`** |
@@ -593,6 +594,7 @@ For *their left*, put a [role pointer](pronouns.md#role-pointers) on **-r** afte
 
 The examples above used *west* / *left*. The other seven arrow roots work the same way: alone, each is a compass heading; with **`th`** and a facing person, it is that direction from the person’s body.
 
+<!-- cheat-sheet: roles-comparing -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`onoval`** | compass heading, or ahead on a face | *north* / *ahead* | ⬆️ *up-arrow*: map north, or ahead if facing is north |
@@ -622,6 +624,7 @@ English *up* / *down* usually follows the pull of gravity, not anyone’s facing
 >
 > "Up!"
 
+<!-- cheat-sheet: roles-comparing -->
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`abahal`** | skyward, shared gravity frame | *up* | | ⏫: away from the pull |
@@ -656,6 +659,7 @@ Gravity works the same way: bare **`adahe`** + `/b/` is *under* the landmark, an
 
 **Compare with:** locative *at* / *on* / *inside* name how the figure sits relative to the landmark ([locative relations](relations.md#locative-relations)), not a compass heading.
 
+<!-- cheat-sheet: roles-comparing -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | Bare DIR | compass / gravity | `gewezal` *west*; `gabahal` *up* |
@@ -683,6 +687,7 @@ This is [label scope](predication.md#label-scope) **`tho`** on a direction: the 
 
 The landmark's front is where its design or current use faces (a house's front door, a car's windshield). A DIR + **`th`** + **`o`** word always takes a `/b/` landmark.
 
+<!-- cheat-sheet: roles-comparing -->
 | Agazan | English |
 |--------|---------|
 | `gazavathol bahazal` | *behind the house* (its own back) |
@@ -702,6 +707,7 @@ Write the ordinary [word ending](word-endings.md) at the end of the whole compou
 | **-n** | named viewpoint anchor | that named viewpoint’s left |
 | **-r** | resume the most recent matching viewpoint anchor in a **`DIR th ANCHOR`** compound, or the anchor alone when it is the latest match: ordinary [pronoun](pronouns.md) rules | that viewpoint’s left |
 
+<!-- cheat-sheet: roles-comparing -->
 | Agazan | English |
 |--------|---------|
 | `gewezal` | *west* (shared map) |

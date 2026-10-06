@@ -46,6 +46,7 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 >
 > "a bedroom."
 
+<!-- cheat-sheet: roles-comparing -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `zebedalahazal` | bed **-l** house | bedroom | left piece everyday |
@@ -61,6 +62,7 @@ If the pairing is not in the dictionary, either glue with **`x`** (`zebeyaxabode
 
 Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agazan words (and a [join](joins.md) if you need *and*). *Peanut butter* is one food, so one word. *Bedroom* is also one thing, but that spelling is already in the dictionary, so there is no **`x`**.
 
+<!-- cheat-sheet: roles-comparing -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | two words | two things, or a property already marked another way | `zahavol zerevul zam` *a hammer and a wrench*; `zodogal gubuhel` *a blue dog* (`/ɡ/`) | |
@@ -242,6 +244,7 @@ z-Azawan | z-friend | v-punch
 
 Beginner already used two roots glued with **`x`**, dictionary words with no **`x`**, and *someone who teaches*. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family.
 
+<!-- cheat-sheet: roles-comparing -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | role vowel(s) **`x`** **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** | [role pointer](pronouns.md#role-pointers) | `zaxar` *they* (whoever did the latest thing); `zaxal` *another one*; `zaxam` *what they did* | **a** again / **e** echo / **o** other / **u** unsaid |
@@ -306,6 +309,7 @@ English *I can stay a while* or *I only have a minute* tells the other person ho
 >
 > "Alahen, I have a few minutes."
 
+<!-- cheat-sheet: roles-comparing -->
 | Form | At arrival | At departure | Cue |
 |------|------------|--------------|-----|
 | `SELFxan` | open-ended: *we can stay* | none | **a** ≈ add (time is in) |

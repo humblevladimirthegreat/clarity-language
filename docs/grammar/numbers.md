@@ -267,6 +267,7 @@ Change only the first letter. The marker and digits stay the same, and on these 
 >
 > "Three is blue."
 
+<!-- cheat-sheet: numbers -->
 | Prefix | Use | English |
 |--------|-----|---------|
 | `/ɡ/` | modifier after the noun | *three cats*, *the second page*, *room 12* |
@@ -278,6 +279,7 @@ Change only the first letter. The marker and digits stay the same, and on these 
 
 Beginner already used **`ra`** (*how many*) and **`re`** (*which place from the start*). The marker vowel **V** completes that set: it says whether the word is a count, a rank, or a string of digits, and on a count it also gives the sign of the whole number. The table shows each marker's [shorthand](#writing-preferred-shorthand) symbol in parentheses. Forward ordinal **`e`** matches [rank join **e**](joins.md#rank-joins).
 
+<!-- cheat-sheet: numbers -->
 | Agazan | Use | English | Cue |
 |---|---------|---------|-----|
 | **a** (`+`) | positive **scalar** (count or measure amount) | `g+3` *three cats*; `g+` *plural / more than one*; `z+3` *three* (subj); `b+12` *of size 12* | **`a`** ≈ add |
@@ -301,6 +303,7 @@ Clock and date writing are covered in [Time](numbers-applied.md#time).
 
 Beginner already used exact **-l**. The other endings mark *about*, a conventional title, or a repeat of a number you already gave. Speech keeps the ending letter. Shorthand writing shows the ending as a mark right after the role letter (the same marks as on [spans](spans.md)).
 
+<!-- cheat-sheet: numbers -->
 | Written | Spoken | Use | Cue |
 |---------|--------|-----|-----|
 | *(none)*: `g+3`, `g+` | **-l** | exact, newly stated (default) | **-l** stands behind the amount |
@@ -316,6 +319,7 @@ A resume needs **at least one digit**: `grarer` = *that three again*; `gredur` =
 
 Beginner already used **`gral`** for *more than one*. Any marker may drop every digit group: **role letter + marker + ending** only. The marker still says what kind of number this is. With **-l** / **-m** / **-n**, the amount, rank, or label is **unspecified**. With **-r**, the word is a blank, like a standalone join **-r**: *some number* in a statement, *which number?* in a [fill-ask](questions.md#fill-ask-r).
 
+<!-- cheat-sheet: numbers -->
 | Agazan | Use | English | Cue |
 |--------|---------|---------|-----|
 | **`ra`** (`…+`) | unspecified **positive scalar**, specialized to **plural count / amount `>1`** | complements `…+0` (zero), `…+1` (one), `…+N` (exact N≥2) | **`a`** ≈ add |
@@ -372,6 +376,7 @@ To ask for a **number**, write a [number word](numbers.md) with no digits and th
 >
 > "How many cats does Azawan see?"
 
+<!-- cheat-sheet: numbers -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `g=+` (`grar`) | fill a count or amount | *How many?* / *How much?* | **a** ≈ add |
@@ -449,6 +454,7 @@ Speech uses **`ba`** / **`bu`** for that exponent, then **`ya`** if mantissa dig
 
 English *hundreds* or *thousands* names a range of sizes without a count. To say that, write a **bare order of magnitude** (OoM): exponent digits with **no mantissa**. The word then covers every amount from 10ᴷ up to, but not including, 10ᴷ⁺¹, so `g+e3` is 1000–9999, not every larger amount.
 
+<!-- cheat-sheet: numbers -->
 | Form | Band | Gloss |
 |------|------|--------|
 | **`g+e0`** | `[10⁰, 10¹)` = **1–9** | *ones* (some amount in the ones place) |
@@ -474,6 +480,7 @@ When a number has more than one digit group, you say each comma. The spoken comm
 
 Syllable by syllable: `g` + `ra` + ba re ya va + **tha** + ha gu zo + `l`.
 
+<!-- cheat-sheet: numbers -->
 | Marker | Separator | Example | Cue |
 |--------|-----------|---------|-----|
 | **`ra`** (`+`) | **`tha`** | `g+5e3,860` | **a** ≈ add (still counting up) |
@@ -507,6 +514,7 @@ Beginner spelled every number out (`grarel`, `graduzol`). Writing also has a **s
 
 These are the same marks, with the same meanings, as on [spans](spans.md#writing): **`~`** soft, **`@`** proper. A resume uses **`=`**.
 
+<!-- cheat-sheet: numbers -->
 | Mark | Speech ending | Job | Examples |
 |------|---------------|-----|----------|
 | *(none)* | **-l** | exact (default) | `g+3`, `g+`, `g#2`, `d_555,123,4567` |
@@ -548,6 +556,7 @@ For long values, break into digit groups of at most three mantissa digits (plus 
 
 Common values in shorthand, as tables write them. Speech always uses the fully spelled form.
 
+<!-- cheat-sheet: numbers -->
 | Value | Writing | Reading |
 |-------|---------|--------|
 | plural / more than one | `g+` | *more than one* (digitless **`ra`**) |
@@ -1019,6 +1028,7 @@ The marker still says amount, rank, or code. Kind compounds may use digitless **
 
 ##### Referential (`/ɡ/` `/z/` `/d/` `/b/`) {#special-referential}
 
+<!-- cheat-sheet: numbers -->
 | Form | Anatomy | Reading |
 |------|---------|---------|
 | **`g+e`** (etc.) | **`ra`** + **`ba`∅** + **-l** | **+∞** |
@@ -1135,6 +1145,7 @@ To say *absolutely nothing*, *empty at the seed*, or *a residue that will not go
 
 ##### Referential (`/ɡ/` `/z/` `/d/` `/b/`) {#zero-exponent-referential}
 
+<!-- cheat-sheet: numbers -->
 | Form | Anatomy | Reading |
 |------|---------|---------|
 | **`g+0e`** | mantissa **`0`** + digitless **`ba`** | **absolute zero** / totalized null quantity; stronger than plain **`g+0`** |
@@ -1210,6 +1221,7 @@ For a joking exaggeration (*a gazillion*, *the umpteenth*), write nonzero **mant
 
 ##### Scalar (`ra` / `ru`)
 
+<!-- cheat-sheet: numbers -->
 | Form | Reading |
 |------|---------|
 | **`g+1e`** | *one gazillion* (committed hyperbolic huge) |
@@ -1287,6 +1299,7 @@ To count **from the last place** (*penultimate*, *starting with the last one*), 
 >
 > "The penultimate book."
 
+<!-- cheat-sheet: numbers -->
 | Form | Reading |
 |------|---------|
 | **`g#-1`** | *1st from the end*: same referent as last-place **`g#e`**, framed as counting from the end (English *Starting with the last one*) |
@@ -1315,6 +1328,7 @@ When a number identity needs two marker vowels, write the symbols in their conve
 
 Write the role letter, symbol stack, then digits: `gruowol` labels a floor numbered −1; `gruarel` gives an uncertainty of ±3.
 
+<!-- cheat-sheet: numbers -->
 | Symbol stack | Spelled and spoken marker | Use |
 |--------------|---------------------------|-----|
 | **`#_`** | **r-u-o** | A digit-string label whose value is negative (for example, a below-ground floor label). |

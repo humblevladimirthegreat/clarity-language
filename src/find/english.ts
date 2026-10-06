@@ -293,5 +293,7 @@ export function searchEnglish(entries: readonly EnglishEntry[], phrase: string, 
     const titled = queries.some(({ query, via }) => !via && containsRun(tokens(section.title), query));
     section.score = section.hits[0]!.score + (titled ? 0.5 : 0);
   }
-  return sections.sort((a, b) => b.score - a.score || byEntry(a.hits[0]!, b.hits[0]!));
+  // A cheat sheet repeats its owning pages, so on a tie the owning page comes first.
+  const onSheet = (s: SectionHit) => (s.page.includes("/cheat-sheets/") ? 1 : 0);
+  return sections.sort((a, b) => b.score - a.score || onSheet(a) - onSheet(b) || byEntry(a.hits[0]!, b.hits[0]!));
 }

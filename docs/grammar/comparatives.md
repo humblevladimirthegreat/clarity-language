@@ -81,6 +81,7 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 
 **Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zazawan zalahen zal gamadam`): each has the quality. It does not rank them or say they match. Use **`oe`** only for *as … as*.
 
+<!-- cheat-sheet: roles-comparing -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | Rank **`e`** (`zel`) | rank on a shared quality | *more … than* / *the …-est* | **`e`** ≈ order |
@@ -235,6 +236,7 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 
 Beginner already used two names plus **`zel`** (*more … than*) and one name (*the …-est*). The same shared-scale pattern also uses reverse rank **`ue`** (*less … than* / *the least*) and **zero** names.
 
+<!-- cheat-sheet: roles-comparing -->
 | Agazan | Use | English | Cue |
 |---------|-----|---------|-----|
 | **Multi (2+)** + shared scale under **`e` / `ue`** | comparative ladder | earlier above later (`e`); later above earlier under **`ue`** | **`e`** ≈ order; **`u`** ≈ undo |
@@ -243,6 +245,7 @@ Beginner already used two names plus **`zel`** (*more … than*) and one name (*
 
 A standalone ladder says only that nothing is on top. It does not say why (a tie, no end to the scale, or items that do not compare). To assert a tie, use [equative](#equatives) **`zoel`**. To say someone is on top without naming them, use **`zer`**.
 
+<!-- cheat-sheet: roles-comparing -->
 | Example | Reading |
 |---------|---------|
 | `zazawan zalahen zahaben zem gamadam` | *Azawan is more challenging than Alahen, who is more challenging than Ahaben* (open: others may fit in the ranking too) |
@@ -452,6 +455,7 @@ A [hook](hooks.md) and its `/b/` on the ranked item go right before the bar, the
 >
 > "This book is heavier than planned."
 
+<!-- cheat-sheet: roles-comparing -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | name + bar + **`zel`** | above the bar | *more than planned* / *later than planned* |
@@ -669,6 +673,7 @@ Intermediate ranked against a plan, and [sake bars](sakes.md#sake-bars) rank aga
 >
 > "Azawan is the sleepiest, going by the pattern."
 
+<!-- cheat-sheet: roles-comparing -->
 | Bar | Ranks against | English |
 |-----|---------------|---------|
 | met sake `thegatham`, `thoyutham`, … ([sake bars](sakes.md#sake-bars)) | what that sake needs | *enough* / *too much* / *not enough* |
@@ -816,6 +821,7 @@ English *many*, *few*, *often*, and *late* rank against an unstated baseline, an
 >
 > "Azawan often walks."
 
+<!-- cheat-sheet: roles-comparing -->
 | English | Bar and rank |
 |---------|--------------|
 | *many* / *few* | PATTERN **`thobam`**, `zel` / `zuel` with `gral` |
