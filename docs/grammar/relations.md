@@ -792,33 +792,36 @@ Changing your mind is then a change of now, not a contradiction: *I was fairly s
 | **`thuram`** | stances as of a now you are not claiming | *I would think / I'd feel* | 🔖: a held place |
 | **`thuhur` / `thurar`** | resume that stance-now | *still as I saw it then* | **-r** restates |
 
-### Translation practice {#advanced-translation-practice}
+### Practice {#advanced-practice}
 <a id="translation-practice-advanced"></a>
 
-Short drills for Advanced. Try each item before opening **Show answer**. The hosted pair names whose-now. Resume is **-r** with no `/b/`.
+Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Setting:** a records room
 
-**Roots used here:**
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *as-of.ledger* | `huhum` | 📒 from *ledger*: a dated line in the books |
+| *as-of.bookmark* | `huram` | 🔖 from *bookmark*: hold the place without stamping |
+
+**Review:**
 
 | English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
-| *departure* | `vedabal` |
-| *sit* | `vehahel` |
-| *walk* | `vowogal` |
-| *rain* | `verehel` |
-| *house* | `ahazal` |
-| *money* | `amol` |
 | *RESIDUE* | `thamom` |
 | *PATTERN* | `thobam` |
-| *as-of.ledger* | `huhum` |
-| *as-of.bookmark* | `huram` |
-| *as-of.ledger* | `thuhum` |
 | *MAY* | `thovum` |
-| *challenge* | `gamadam` |
+| *book* | `ubugal` |
+| *challenge* | `amadam` |
+| *rain* | `erehel` |
+| *departure* | `vedabal` |
+| *sit* | `vehahel` |
+| *tell* | `vezebel` |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
@@ -830,31 +833,15 @@ Short drills for Advanced. Try each item before opening **Show answer**. The hos
 z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
 
-**2.** *As of 22 July, Azawan sits in a house.*
+**2.** *the book as of 22 July*
 
 ::: details Show answer
-`zazawan huhum b_#22,7 vehahel al bahazal.`
+`zubugal guhum b_#22,7.`
 
-z-Azawan | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
+z-book | [g-as-of.ledger | b-_22,7]
 :::
 
-**3.** *Taking 22 July as now (a placeholder), it would rain, going by the pattern.*
-
-::: details Show answer
-`thobam bral huram b_#22,7 verehel.`
-
-[th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain
-:::
-
-**4.** *The money as of 22 July.*
-
-::: details Show answer
-`zamol guhum b_#22,7.`
-
-z-money | [g-as-of.ledger | b-_22,7]
-:::
-
-**5.** *As of 22 July, Azawan is more challenging than Alahen.*
+**3.** *As of 22 July, Azawan is more challenging than Alahen.*
 
 ::: details Show answer
 `zazawan zalahen zel wuhum b_#22,7 gamadam.`
@@ -862,15 +849,7 @@ z-money | [g-as-of.ledger | b-_22,7]
 [z-Azawan | z-Alahen | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 :::
 
-**6.** *As of the leaving, the money still stood.*
-
-::: details Show answer
-`zamol thamom huhum bedabal.`
-
-z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
-:::
-
-**7.** *On 22 July, I thought it might rain.* (the doubt was then)
+**4.** *On 22 July, I thought it might rain.* (the doubt was then)
 
 ::: details Show answer
 `thuhum b_#22,7 thovum verehel.`
@@ -880,65 +859,59 @@ z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
 
 #### Agazan → English {#advanced-agazan-to-english}
 
-**1.** `zalahen thamom huhum b_#22,7 vedabal. xazawan thamom huhur vowogal.`
+**1.** `zahaben thamom huhum b_#23,7 vedabal. xazawan thamom huhur vehahel.`
 
 ::: details Show answer
+z-Ahaben | th-RESIDUE | [h-as-of.ledger | b-_23,7] | v-departure . x-Azawan | th-RESIDUE | h-as-of.ledger | v-sit
 
-z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | th-RESIDUE | h-as-of.ledger | v-walk
-
-*As of 22 July, Alahen had still left. Azawan had still walked, same books.*
+*As of 23 July, Ahaben had still left. Azawan had still sat, same books.*
 :::
 
-**2.** `zahaben huhum b_#22,7 vehahel al bahazal.`
+**2.** `thobam bral huram b_#22,7 verehel.`
 
 ::: details Show answer
+[th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain
 
-z-Ahaben | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
-
-*As of 22 July, Ahaben sits in a house.*
+*Taking 22 July as now (a placeholder), it would rain, going by the pattern.*
 :::
 
-**3.** `thobam bral huram b_#22,7 verehel. xazawan thobam bral hurar vowogal.`
+**3.** `zamol thamom huhum bedabal.`
 
 ::: details Show answer
+z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
 
-[th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | [th-PATTERN | b-later] | h-as-of.bookmark | v-walk
-
-*Taking 22 July as now (a placeholder), it would rain, going by the pattern. Azawan would walk too, on the same placeholder.*
+*As of the leaving, the money still stood.*
 :::
 
-**4.** `zahazal guhum b_#23,7.`
+**4.** `zalahen thovum vedabal thuram barl zazawan vezebel.`
 
 ::: details Show answer
+z-Alahen | th-MAY | v-departure | [th-as-of.bookmark | b-that-clause] | z-Azawan | v-tell
 
-z-house | [g-as-of.ledger | b-_23,7]
-
-*The house as of 23 July.*
+*Once Azawan told, I'd think Alahen might leave.*
 :::
 
-**5.** `zalahen zazawan zel wuhum b_#23,7 gamadam.`
+#### Pick one {#advanced-pick-one}
+
+**1.** *On 22 July, I thought Alahen might leave.* (the doubt was then) `zalahen thuhum b_#22,7 thovum vedabal.` or `zalahen huhum b_#22,7 thovum vedabal.`
 
 ::: details Show answer
+`zalahen thuhum b_#22,7 thovum vedabal.`
 
-[z-Alahen | z-Azawan | z-rank/more | [[w-as-of.ledger | b-_23,7] | g-challenge]]
+z-Alahen | [th-as-of.ledger | b-_22,7] | th-MAY | v-departure
 
-*As of 23 July, Alahen is more challenging than Azawan.*
+On `/th/` the pair moves the stance; on `/h/` it moves the event's books and leaves the doubt at speech-now.
 :::
 
-**6.** `zahazal thamom huhum bedabal.`
+#### What changes {#advanced-what-changes}
+
+**1.** `zazawan huhum b_#22,7 vehahel.` / `zazawan huram b_#22,7 vehahel.`
 
 ::: details Show answer
+z-Azawan | [h-as-of.ledger | b-_22,7] | v-sit
 
-z-house | th-RESIDUE | [h-as-of.ledger | b-departure]
+z-Azawan | [h-as-of.bookmark | b-_22,7] | v-sit
 
-*As of the leaving, the house still stood.*
+**`huhum`** claims 22 July as a real dated entry (*as of 22 July, Azawan sits*); **`huram`** only takes it as a placeholder now (*taking 22 July as now, Azawan would sit*).
 :::
 
-**7.** `zazawan thovum vowogal thuhum bedabal.`
-
-::: details Show answer
-
-z-Azawan | th-MAY | v-walk | [th-as-of.ledger | b-departure]
-
-*At the leaving, I thought Azawan might walk.*
-:::
