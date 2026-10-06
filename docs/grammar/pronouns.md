@@ -242,31 +242,38 @@ English *one* and generic *you* (*one never knows*, *you feel awful when that ha
 
 The generic pronoun takes no number and no **-x**, because it already means people at large. **`obel`** *a person* and **`obem`** *humanity* keep their own senses. English *they say* is [hearsay](knowing.md#evidentiality), not a generic *they*. The every-kind joins can say *people in general* as a phrase; **`oben`** is the one-word pronoun for it ([joins](joins.md#generic-neighbors)).
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a kitchen
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as | Cue |
-|---------|--------|--------------|-----|
-| *Azawan* | `azawan` | | |
-| *Alahen* | `alahen` | | |
-| *Ahaben* | `ahaben` | | |
-| *cook* | `vugugal` | `ugugal` *cook* | 🧑‍🍳: the person at the stove |
-| *pour* | `vobohol` | `obohol` *pour* | 🫗: liquid onto a pan |
-| *cookie* | `ugugol` | | |
-| *knife* | `anaval` | | |
-| *see* | `vahahal` | `ahahal` *eye* | 👁️: seeing is what an eye does |
-| *scream* | `vezugel` | | |
-| *punch* | `vabahel` | | |
-| *speaker* | `amun` | `amul` *microphone* | 🎤: the live voice of the person talking |
-| *listener* | `ehon` | `ehol` *headphones* | 🎧: the one receiving the sound |
-| *interlocutors* | `ahan` | `ahal` *handshake* | 🤝: sharing the floor together |
-| *someone* | `unan` | `unal` *neutral* | 😐: not a particular person |
-| *one* | `oben` | `obel` *person* | 🧑: a person in general |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *cook* | `vugugal` | 🧑‍🍳 from *cook*, the person at the stove |
+| *pour* | `vobohol` | 🫗 |
+| *cookie* | `ugugol` | 🍪 |
+| *knife* | `anaval` | 🔪 |
+| *punch* | `vabahel` | 👊 |
+| *listener* | `ehon` | 🎧 from *headphones*: the one receiving the sound |
+| *interlocutors* | `ahan` | 🤝 from *handshake*: sharing the floor together |
+| *someone* | `unan` | 😐 from *neutral*: not a particular person |
+| *one* | `oben` | 🧑 from *person*: a person in general |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *speaker* | `amun` |
+| *see* | `vahahal` |
+| *find* | `vamagal` |
+| *scream* | `vezugel` |
+| *tell* | `vezebel` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
@@ -276,25 +283,21 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 `zazawan vobohol. zaxar vugugal.`
 
 z-Azawan | v-pour . z-←agent.same | v-cook
+
+**Also correct:** `zazawan vobohol. zazawar vugugal.`
 :::
 
-**2.** *A cook pours. The cook cooks.*
+**2.** *Alahen finds a knife. Ahaben sees the knife.*
 
 ::: details Show answer
-`zugugal vobohol. zugugar vugugal.`
+`zalahen danaval vamagal. zahaben danavar vahahal.`
 
-z-cook | v-pour . z-←cook | v-cook
+z-Alahen | d-knife | v-find . z-Ahaben | d-←knife | v-see
+
+**Also correct:** `zalahen danaval vamagal. zahaben duxar vahahal.`
 :::
 
-**3.** *Alahen cooks. Azawan sees a cookie. Ahaben does so.*
-
-::: details Show answer
-`zalahen vugugal. zazawan dugugol vahahal. zahaben vugugar.`
-
-z-Alahen | v-cook . z-Azawan | d-cookie | v-see . z-Ahaben | v-←cook
-:::
-
-**4.** *I see you.*
+**3.** *I see you.*
 
 ::: details Show answer
 `zamun dehon vahahal.`
@@ -302,7 +305,25 @@ z-Alahen | v-cook . z-Azawan | d-cookie | v-see . z-Ahaben | v-←cook
 z-speaker | d-listener | v-see
 :::
 
-**5.** *We (you and I) cook.*
+**4.** *Someone punches Ahaben. She screams.*
+
+::: details Show answer
+`zunan dahaben vabahel. zuxar vezugel.`
+
+z-someone | d-Ahaben | v-punch . z-←patient.same | v-scream
+
+**Also correct:** `zunan dahaben vabahel. zahaber vezugel.`
+:::
+
+**5.** *Azawan sees a cookie. Alahen finds one too.*
+
+::: details Show answer
+`zazawan dugugol vahahal. zalahen duxal vamagal.`
+
+z-Azawan | d-cookie | v-see . z-Alahen | d-←patient.same.new | v-find
+:::
+
+**6.** *We (you and I) cook.*
 
 ::: details Show answer
 `zahan vugugal.`
@@ -310,170 +331,88 @@ z-speaker | d-listener | v-see
 z-interlocutors | v-cook
 :::
 
-**6.** *You scream.*
-
-::: details Show answer
-`zehon vezugel.`
-
-z-listener | v-scream
-:::
-
-**7.** *Azawan punches me.*
-
-::: details Show answer
-`zazawan damun vabahel.`
-
-z-Azawan | d-speaker | v-punch
-:::
-
-**8.** *Someone punches Ahaben.*
-
-::: details Show answer
-`zunan dahaben vabahel.`
-
-z-someone | d-Ahaben | v-punch
-:::
-
-**9.** *Azawan sees Alahen. He screams.*
-
-::: details Show answer
-`zazawan dalahen vahahal. zuxar vezugel.`
-
-z-Azawan | d-Alahen | v-see . z-←patient.same | v-scream
-:::
-
-**10.** *Ahaben sees herself.*
-
-::: details Show answer
-`zahaben vahahal daxer.`
-
-z-Ahaben | v-see | d-←agent.self
-:::
-
-**11.** *One sees Azawan.*
-
-::: details Show answer
-`zoben dazawan vahahal.`
-
-z-ONE | d-Azawan | v-see
-:::
-
-**12.** *Azawan sees a cookie. Alahen sees one too.*
-
-::: details Show answer
-`zazawan dugugol vahahal. zalahen duxal vahahal.`
-
-z-Azawan | d-cookie | v-see . z-Alahen | d-←patient.same.new | v-see
-:::
-
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zalahen vugugal. zaxar vobohol.`
+**1.** `zahaben vugugal. zalahen vobohol. zaxor vezugel.`
 
 ::: details Show answer
-
-z-Alahen | v-cook . z-←agent.same | v-pour
-
-*Alahen cooks. He pours.*
-:::
-
-**2.** `zahaben vobohol. zahaber vugugal.`
-
-::: details Show answer
-
-z-Ahaben | v-pour . z-←Ahaben | v-cook
-
-*Ahaben pours. She cooks.*
-:::
-
-**3.** `zalahen danaval vahahal. zaxar danavar vahahal.`
-
-::: details Show answer
-
-z-Alahen | d-knife | v-see . z-←agent.same | d-←knife | v-see
-
-*Alahen sees a knife. He sees the knife.*
-:::
-
-**4.** `zahaben vugugal. zalahen dugugol vahahal. zazawan vugugar.`
-
-::: details Show answer
-
-z-Ahaben | v-cook . z-Alahen | d-cookie | v-see . z-Azawan | v-←cook
-
-*Ahaben cooks. Alahen sees a cookie. Azawan does so.*
-:::
-
-**5.** `zazawan dehon vahahal.`
-
-::: details Show answer
-
-z-Azawan | d-listener | v-see
-
-*Azawan sees you.*
-:::
-
-**6.** `zahan vobohol.`
-
-::: details Show answer
-
-z-interlocutors | v-pour
-
-*We (you and I) pour.*
-:::
-
-**7.** `zunan vezugel.`
-
-::: details Show answer
-
-z-someone | v-scream
-
-*Someone screams.*
-:::
-
-**8.** `yol zamun vugugal.`
-
-::: details Show answer
-
-y-question | z-speaker | v-cook
-
-*Do I cook?*
-:::
-
-**9.** `zahaben vugugal. zalahen vobohol. zaxor vezugel.`
-
-::: details Show answer
-
 z-Ahaben | v-cook . z-Alahen | v-pour . z-←agent.other | v-scream
 
 *Ahaben cooks. Alahen pours. The other one (Ahaben) screams.*
 :::
 
-**10.** `zoben vezugel.`
+**2.** `dugugol vamagal. zaxur vezugel.`
 
 ::: details Show answer
+d-cookie | v-find . z-←agent.unsaid | v-scream
 
+*The cookie is found. Whoever found it screams.*
+:::
+
+**3.** `zalahen dazawan vabahel. zahaben daxam vahahal.`
+
+::: details Show answer
+z-Alahen | d-Azawan | v-punch . z-Ahaben | d-←agent.same.part | v-see
+
+*Alahen punches Azawan. Ahaben sees what he did.*
+:::
+
+**4.** `zoben vezugel.`
+
+::: details Show answer
 z-ONE | v-scream
 
 *One screams.* / *People scream.*
 :::
 
-**11.** `dugugol vahahal. zaxur vezugel.`
+**5.** `zazawan vahahal daxer.`
 
 ::: details Show answer
+z-Azawan | v-see | d-←agent.self
 
-d-cookie | v-see . z-←agent.unsaid | v-scream
-
-*The cookie is seen. Whoever saw it screams.*
+*Azawan sees themself.*
 :::
 
-**12.** `zalahen dazawan vabahel. zahaben daxam vahahal.`
+**6.** `zazawan bahaben vezebel. zoxar dugugol vugugal.`
 
 ::: details Show answer
+z-Azawan | b-Ahaben | v-tell . z-←recipient.same | d-cookie | v-cook
 
-z-Alahen | d-Azawan | v-punch . z-Ahaben | d-←agent.same.part | v-see
+*Azawan tells Ahaben. She cooks a cookie.*
+:::
 
-*Alahen punches Azawan. Ahaben sees what he did.*
+#### Pick one {#beginner-pick-one}
+
+**1.** *Azawan sees Alahen. He (Alahen) screams.* `zazawan dalahen vahahal. zuxar vezugel.` or `zazawan dalahen vahahal. zaxar vezugel.`
+
+::: details Show answer
+`zazawan dalahen vahahal. zuxar vezugel.`
+
+z-Azawan | d-Alahen | v-see . z-←patient.same | v-scream
+
+Alahen was the one seen, role vowel **`u`**; `zaxar` is the doer, Azawan.
+:::
+
+**2.** *Azawan tells Alahen. Ahaben sees him (Alahen).* `zazawan balahen vezebel. zahaben doxar vahahal.` or `zazawan balahen vezebel. zahaben daxar vahahal.`
+
+::: details Show answer
+`zazawan balahen vezebel. zahaben doxar vahahal.`
+
+z-Azawan | b-Alahen | v-tell . z-Ahaben | d-←recipient.same | v-see
+
+Alahen was the one told, role vowel **`o`**; `daxar` is the doer, Azawan.
+:::
+
+#### Fix it {#beginner-fix-it}
+
+**1.** *One pours.* (anyone, as a rule) <!-- lint: error -->`zehon vobohol.`
+
+::: details Show answer
+`zoben vobohol.`
+
+z-ONE | v-pour
+
+Generic *you* is **`oben`**; **`ehon`** is always the person actually listening.
 :::
 
 ## Intermediate {#intermediate}
