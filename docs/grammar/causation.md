@@ -53,172 +53,146 @@ As a plain noun, the same root is `zolul` *a paper-roll*.
 
 `/th/` attaches to the event. `/ɡ/` attaches to the noun.
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
-Short drills for Beginner. Try each item before opening **Show answer**. The outcome comes first, and the pole after it is `/th/` after a verb and `/ɡ/` after a noun (*there is X if …*). *If* is **`oye`**. *Only if* is **`olu`**. The condition is the pole's `/b/` word.
+Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a greenhouse
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *seedling* | `uzel` | |
-| *house plant* | `ahabol` | |
-| *tomato* | `adedol` | |
-| *flower* | `avavul` | |
-| *window* | `ewedol` | |
-| *sun* | `azahel` | |
-| *bucket* | `abegul` | |
-| *heat* | `obebem` | `obebel` *pepper* |
-| *fire* | `avahel` | |
-| *pour* | `vobohol` | |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *tell* | `vezebel` | `ezebel` *speech* |
-| *if* | `thoyem` | `oyel` *door* |
-| *only-if* | `tholum` | `olul` *paper-roll* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *seedling* | `uzel` | 🌱 |
+| *flower* | `avavul` | 💮 |
+| *sun* | `azahel` | ☀️ |
+| *window* | `ewedol` | 🪟 |
+| *bucket* | `abegul` | 🪣 |
+| *only if* | `tholum` | 🧻 from *paper-roll*: without it the situation does not run |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *if* | `thoyem` |
+| *rain* | `erehel` |
+| *night* | `anadal` |
+| *sing* | `vezehel` |
+| *see* | `vahahal` |
+| *find* | `vamagal` |
+| *sit* | `vehahel` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *There is a seedling if there is sun.*
+**1.** *Azawan sings if there is sun.*
 
 ::: details Show answer
-`zuzel goyem bazahel.`
+`zazawan vezehel thoyem bazahel.`
 
-z-seedling | [g-if | b-sun]
+z-Azawan | v-sing | [th-if | b-sun]
 :::
 
-**2.** *Azawan pours if there is a bucket.*
+**2.** *There is a flower only if there is a seedling.*
 
 ::: details Show answer
-`zazawan vobohol thoyem babegul.`
+`zavavul golum buzel.`
 
-z-Azawan | v-pour | [th-if | b-bucket]
+z-flower | [g-only-if | b-seedling]
 :::
 
-**3.** *There is a house plant only if there is a window.*
+**3.** *Ahaben sees a flower only if there is a window.*
 
 ::: details Show answer
-`zahabol golum bewedol.`
+`zahaben davavul vahahal tholum bewedol.`
 
-z-house-plant | [g-only-if | b-window]
+z-Ahaben | d-flower | v-see | [th-only-if | b-window]
 :::
 
-**4.** *Ahaben sees Azawan if there is a window.*
+**4.** *There are seedlings if there is rain.*
 
 ::: details Show answer
-`zahaben dazawan vahahal thoyem bewedol.`
+`zuzelx goyem berehel.`
 
-z-Ahaben | d-Azawan | v-see | [th-if | b-window]
+z-seedling-x | [g-if | b-rain]
 :::
 
-**5.** *There is a flower only if there is sun.*
+**5.** *Alahen finds a bucket if Azawan sings.*
 
 ::: details Show answer
-`zavavul golum bazahel.`
+`zalahen dabegul vamagal thoyem barl zazawan vezehel.`
 
-z-flower | [g-only-if | b-sun]
-:::
-
-**6.** *Azawan pours only if there is heat.*
-
-::: details Show answer
-`zazawan vobohol tholum bobebem.`
-
-z-Azawan | v-pour | [th-only-if | b-heat]
-:::
-
-**7.** *Alahen tells if there is fire.*
-
-::: details Show answer
-`zalahen vezebel thoyem bavahel.`
-
-z-Alahen | v-tell | [th-if | b-fire]
-:::
-
-**8.** *Alahen pours only if there is fire.*
-
-::: details Show answer
-`zalahen vobohol tholum bavahel.`
-
-z-Alahen | v-pour | [th-only-if | b-fire]
+z-Alahen | d-bucket | v-find | [th-if | b-that-clause] | z-Azawan | v-sing
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zavavul goyem bazahel.`
+**1.** `zavavulx goyem bazahel.`
 
 ::: details Show answer
+z-flower-x | [g-if | b-sun]
 
-z-flower | [g-if | b-sun]
-
-*There is a flower if there is sun.*
+*There are flowers if there is sun.*
 :::
 
-**2.** `zahaben vobohol thoyem buzel.`
+**2.** `zahaben dabegul vamagal tholum berehel.`
 
 ::: details Show answer
+z-Ahaben | d-bucket | v-find | [th-only-if | b-rain]
 
-z-Ahaben | v-pour | [th-if | b-seedling]
-
-*Ahaben pours if there is a seedling.*
+*Ahaben finds a bucket only if there is rain.*
 :::
 
-**3.** `zuzel golum bewedol.`
+**3.** `zuzel golum babegul.`
 
 ::: details Show answer
+z-seedling | [g-only-if | b-bucket]
 
-z-seedling | [g-only-if | b-window]
-
-*There is a seedling only if there is a window.*
+*There is a seedling only if there is a bucket.*
 :::
 
-**4.** `zazawan dahaben vahahal thoyem bewedol.`
+**4.** `zalahen vezehel tholum barl zahaben davavul vahahal.`
 
 ::: details Show answer
+z-Alahen | v-sing | [th-only-if | b-that-clause] | z-Ahaben | d-flower | v-see
 
-z-Azawan | d-Ahaben | v-see | [th-if | b-window]
-
-*Azawan sees Ahaben if there is a window.*
+*Alahen sings only if Ahaben sees a flower.*
 :::
 
-**5.** `zadedol goyem bazahel.`
+#### Pick one {#beginner-pick-one}
+
+**1.** *There is a flower if there is rain.* `zavavul goyem berehel.` or `zavavul thoyem berehel.`
 
 ::: details Show answer
+`zavavul goyem berehel.`
 
-z-tomato | [g-if | b-sun]
+z-flower | [g-if | b-rain]
 
-*There is a tomato if there is sun.*
+The outcome is a noun (there is a flower), so the pole takes `/ɡ/`; `/th/` attaches it to an event.
 :::
 
-**6.** `zazawan vezebel thoyem bobebem.`
+**2.** *Alahen sits if there is night.* `zalahen vehahel thoyem banadal.` or `zalahen vehahel thoyem danadal.`
 
 ::: details Show answer
+`zalahen vehahel thoyem banadal.`
 
-z-Azawan | v-tell | [th-if | b-heat]
+z-Alahen | v-sit | [th-if | b-night]
 
-*Azawan tells if there is heat.*
+The condition is the pole's extra noun, so it takes `/b/` right after **`thoyem`**.
 :::
 
-**7.** `zalahen vobohol thoyem bavahel.`
+#### Fix it {#beginner-fix-it}
+
+**1.** *Ahaben sings only if there is sun.* <!-- lint: error -->`zahaben vezehel golum bazahel.`
 
 ::: details Show answer
+`zahaben vezehel tholum bazahel.`
 
-z-Alahen | v-pour | [th-if | b-fire]
+z-Ahaben | v-sing | [th-only-if | b-sun]
 
-*Alahen pours if there is fire.*
-:::
-
-**8.** `zahaben vezebel tholum bavahel.`
-
-::: details Show answer
-
-z-Ahaben | v-tell | [th-only-if | b-fire]
-
-*Ahaben tells only if there is fire.*
+The outcome is the singing, an event, so the pole is **`tholum`**; **`golum`** would hang it on a noun.
 :::
 
 ## Intermediate {#intermediate}

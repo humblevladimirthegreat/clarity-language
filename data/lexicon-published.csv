@@ -364,7 +364,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦠,microbe,omago,contagion,microbe spreads contagion,,cell; virus,
 💐,bouquet,ubuge,congratulation,a bouquet is handed over to mark someone's success,,,
 🌸,cherry-blossom,ehebu,transience,cherry blossom fades quickly,,,
-💮,flower,avavu,,,,,causation.md#beginner-translation-practice
+💮,flower,avavu,,,,,causation.md#beginner-practice
 🪷,lotus,oloda,purity,a lotus rises clean from muddy water,,,
 🏵️,rosette,aruze,,,,,
 🌹,rose,oroza,romance,rose stands for romance,,romantic,
@@ -374,8 +374,8 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🌼,blossom,aboba,freshness,blossom signals freshness,,fresh,
 🌷,tulip,uduba,affection,tulip gift shows affection,,,
 🪻,hyacinth,ahazu,spring,hyacinth blooms in spring,,,
-🌱,seedling,uze,growth,a seedling pushes up out of the soil,,grow; seed; expansion; increase; development; develop; expand; mature,causation.md#beginner-translation-practice
-🪴,house-plant,ahabo,tending,a houseplant needs care,,plant; garden,causation.md#beginner-translation-practice
+🌱,seedling,uze,growth,a seedling pushes up out of the soil,,grow; seed; expansion; increase; development; develop; expand; mature,causation.md#beginner-practice
+🪴,house-plant,ahabo,tending,a houseplant needs care,,plant; garden,
 🌳,tree,edehu,stability,tree roots give stability,,stable; steady,
 🌴,palm,abahu,escape,a palm means vacation escape,,,
 🌵,cactus,aguge,,,,,
@@ -413,7 +413,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥔,potato,abude,,,,,
 🥕,carrot,agodo,incentive,carrot on a stick is incentive,,,
 🌽,corn,ogoha,kitsch,a corny joke is hokey and overdone,,,
-🌶️,pepper,obebe,heat,hot pepper brings heat,,,causation.md#beginner-translation-practice
+🌶️,pepper,obebe,heat,hot pepper brings heat,,,
 🫑,bell-pepper,abebe,,,,,
 🥒,cucumber,aguyu,,,,,
 🥬,greens,egewo,vitality,leafy greens fuel vitality,,vital; vegetable,
@@ -622,7 +622,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🕐,time,adaha,duration,clock face marks duration,,session,
 🌙,moon,umuha,month,the moon runs one cycle a month; month is the lunar-cycle unit,,phase,
 🌡️,thermometer,evede,temperature,thermometer reads how hot or cold; temperature is the heat continuum,,,word-endings.md#intermediate-translation-practice
-☀️,sun,azahe,joule,sun radiates energy; joule is the SI energy unit,,,causation.md#beginner-translation-practice
+☀️,sun,azahe,joule,sun radiates energy; joule is the SI energy unit,,,causation.md#beginner-practice
 🪐,saturn,azode,grandeur,ringed planet looms vast in space; grandeur is impressive scale,,grand; planet; impressive,
 ⭐,star,oza,fame,a star is seen by everyone; fame is being widely known,,reputation,
 🌠,shooting-star,ohu,wish,shooting star grants a wish,,,
@@ -643,7 +643,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ❄️,snowflake,ozove,coldness,a snowflake melts cold on your skin,,,
 ☃️,snowman,ozoha,temporary,snowman melts when warmth returns; temporary does not last,,,
 ☄️,comet,agode,,,,,
-🔥,fire,avahe,,,,burn,causation.md#beginner-translation-practice
+🔥,fire,avahe,,,,burn,sakes.md#beginner-translation-practice
 💧,droplet,adaba,beginning,one droplet starts the flow; beginning is a small start,,source; original; initial; wet; liquid,
 🌊,ocean,ohaha,overwhelm,ocean is vast surging water; flood is high-arousal surge,,sea; flood,comparatives.md#beginner-practice
 🎃,jack-o-lantern,ohahe,concealment,jack-o-lantern hides a carved face; disguise hides true identity,,hide,
@@ -921,7 +921,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🚪,door,oye,opportunity,door opens to what is beyond; opportunity is an opening ahead,v:open,loose,
 🛗,elevator,elave,ascent,an elevator lifts you up through the floors,,,
 🪞,mirror,umu,reflection,a mirror throws your own image back at you,,reflect,
-🪟,window,ewedo,transparency,you can see through a window's clear glass,,clear,causation.md#beginner-translation-practice
+🪟,window,ewedo,transparency,you can see through a window's clear glass,,clear,causation.md#beginner-practice
 🛏️,bed,ebeda,,,,,word-endings.md#intermediate-translation-practice
 🛋️,couch,ageha,leisure,lounging on the couch; leisure is free time,,,
 🪑,chair,ehahe,position,chair is where you take a seat; position is your assigned place,v:sit,place; situation; lay; status; location; locate; pose; situate; put; occupy,speech-moves.md#beginner-practice
@@ -936,7 +936,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧹,broom,ubuva,cleanup,broom sweeps dirt away; cleanup is clearing what clutters,,sweep; wipe,
 🧺,basket,abeza,gathering,basket collects items together; gathering is bringing together,,,plurality.md#beginner-practice
 🧻,paper-roll,olu,necessity,toilet paper meets basic need; necessity is what must be had,,necessary; tissue; paper; essential,
-🪣,bucket,abegu,collection,bucket holds gathered liquid; collection is bringing together,,collect,causation.md#beginner-translation-practice
+🪣,bucket,abegu,collection,bucket holds gathered liquid; collection is bringing together,,collect,causation.md#beginner-practice
 🧼,soap,ozoba,cleanliness,soap washes away grime; cleanliness is freedom from dirt,,clean; pure,
 🫧,bubbles,abeba,fragility,bubbles pop with a touch; fragility is easily broken,,,
 🪥,toothbrush,uduve,hygiene,toothbrush cleans each day; hygiene is healthful cleanliness,,,
