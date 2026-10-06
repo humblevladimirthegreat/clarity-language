@@ -47,7 +47,7 @@ export function spanEndpointKind(word: LexWord | undefined): string | undefined 
 }
 
 /**
- * Span hook (hooks.md § Spans): `al` / `ul` between two same-kind number endpoints,
+ * Range hook (hooks.md § Ranges): `al` / `ul` between two same-kind number endpoints,
  * or a stacked `oe` / `ua` / `ue` hook between two same-role words.
  */
 export function isSpanHook(word: LexWord, prev: LexWord | undefined, next: LexWord | undefined): boolean {

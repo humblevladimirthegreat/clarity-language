@@ -486,7 +486,7 @@ PoslessNumberStem
       return stem;
     }
 
-// ── Hooks (prefix-less; ending required; -r on a simplex vowel, extra-noun point-back, or a span hook; no -x) ────────────────────────
+// ── Hooks (prefix-less; ending required; -r on a simplex vowel, extra-noun point-back, or a range hook; no -x) ────────────────────────
 
 hook
   = form:HookForm WordEnd {

@@ -850,9 +850,9 @@ On an extra-noun hook, `/w/` goes before the hook and `/b/` still comes right af
 
 A discourse hook takes `/w/` the same way: `welavam al zazawan vowogal` is *Additionally, very much so, Azawan walks.* A `/b/` right after the hook still makes it an extra-noun hook, not a discourse hook.
 
-### Spans (`oel` / `ual` / `uel`) {#spans}
+### Ranges (`oel` / `ual` / `uel`) {#ranges}
 
-When the items sit on a line with an order (people in a queue, days, chapters, numbers), English *A through B* names a **span**: A, B, and everything between. Put a stacked hook between two words in the same role: `A HOOK B`. Between same-role words these hooks name only spans; with `/b/` on the right and no `/b/` on the left, they are [extra-noun hooks](#extra-noun) (*toward*, *out of*, *against*).
+When the items sit on a line with an order (people in a queue, days, chapters, numbers), English *A through B* names a **range**: A, B, and everything between. Put a stacked hook between two words in the same role: `A HOOK B`. Between same-role words these hooks name only ranges; with `/b/` on the right and no `/b/` on the left, they are [extra-noun hooks](#extra-noun) (*toward*, *out of*, *against*).
 
 > `zazawan oel zahaben vowogal.`
 >
@@ -866,7 +866,7 @@ When the items sit on a line with an order (people in a queue, days, chapters, n
 | **`ual`** | only what lies between | *strictly between A and B* | **ua** ≈ take away both ends |
 | **`uel`** | only what lies outside | *outside A–B* | **ue** ≈ undo the stretch from A to B |
 
-The span runs from A to B, in the order you say them. Endings work as on other hooks: **-m** makes the ends soft (*roughly A through B*), and **-n** names the span as a whole. **-r** stands in for one member you are not naming, and under a [question](questions.md#fill-ask-r) it asks which one:
+The range runs from A to B, in the order you say them. Endings work as on other hooks: **-m** makes the ends soft (*roughly A through B*), and **-n** names the range as a whole. **-r** stands in for one member you are not naming, and under a [question](questions.md#fill-ask-r) it asks which one:
 
 > `zazawan uar zahaben vezebal.`
 >
@@ -874,7 +874,7 @@ The span runs from A to B, in the order you say them. Endings work as on other h
 >
 > "Someone between Azawan and Ahaben sleeps."
 
-A span **-r** always has a word on each side (`oer` / `uar` / `uer`). With nothing on the right, stacked extra-noun **-r** still [points back](#hook-resume) (`aor` *on it*).
+A range **-r** always has a word on each side (`oer` / `uar` / `uer`). With nothing on the right, stacked extra-noun **-r** still [points back](#hook-resume) (`aor` *on it*).
 
 > `zazawan ual zahaben vezebal.`
 >
@@ -882,9 +882,9 @@ A span **-r** always has a word on each side (`oer` / `uar` / `uer`). With nothi
 >
 > "Everyone between Azawan and Ahaben sleeps."
 
-Between two numbers with digits, plain **`al`** and **`ul`** also make a span, because *3, including 5* has nothing to include into: [ranges](numbers-applied.md#ranges).
+Between two numbers with digits, plain **`al`** and **`ul`** also make a range, because *3, including 5* has nothing to include into: [ranges](numbers-applied.md#ranges).
 
-A word right after B describes B alone, not the span. To describe the span itself, put `/w/` right before the hook:
+A word right after B describes B alone, not the range. To describe the range itself, put `/w/` right before the hook:
 
 > `zazawan wezum oel zahaben vowogal.`
 >
@@ -892,7 +892,7 @@ A word right after B describes B alone, not the span. To describe the span itsel
 >
 > "Amazingly, everyone from Azawan through Ahaben walks."
 
-**Compare with:** `zazawan zahaben zal` is *Azawan and Ahaben*, the two ends only. `zazawan zahaben zael` is *Azawan, then Ahaben*, an order with nothing between. Spatial *between a train and a station* is a [relation](relations.md#spatial-path), not a span.
+**Compare with:** `zazawan zahaben zal` is *Azawan and Ahaben*, the two ends only. `zazawan zahaben zael` is *Azawan, then Ahaben*, an order with nothing between. Spatial *between a train and a station* is a [relation](relations.md#spatial-path), not a range.
 
 ### Translation practice {#intermediate-translation-practice}
 <a id="translation-practice-intermediate"></a>

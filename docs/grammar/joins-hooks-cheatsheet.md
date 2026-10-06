@@ -20,11 +20,11 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | **e** ≈ order | rank: first matters most | [*or rather*](hooks.md#rather) | *for* / *used by* |
 | **u** ≈ undo | *not* / *neither* / *none of* | [*except*](hooks.md#except) | *from* / *away from* |
 | **ao** | [*and/or*](joins.md#exclusivity-and-denying-a-whole-list) (at least one) | | [*on* / *over*](hooks.md#extra-noun-intermediate) |
-| **ua** | [*everything but*](joins.md#everything-ua); alone *everything* | [span](hooks.md#spans): strictly between | *out of* / *out from among* |
+| **ua** | [*everything but*](joins.md#everything-ua); alone *everything* | [range](hooks.md#ranges): strictly between | *out of* / *out from among* |
 | **uo** | [*anything but*](joins.md#invert-u-stacks) | | *through* / *by way of* |
 | **ae** | [in order](joins.md#sequence-ae): *A, then B* | | *using* / *by* |
-| **oe** | [tie](joins.md#rank-joins): equal rank | span: *A through B* | *toward* / *in the direction of* |
-| **ue** | [rank reversed](joins.md#invert-u-stacks): last first | span: outside *A–B* | *against* / *contrary to* |
+| **oe** | [tie](joins.md#rank-joins): equal rank | [range](hooks.md#ranges): *A through B* | *toward* / *in the direction of* |
+| **ue** | [rank reversed](joins.md#invert-u-stacks): last first | [range](hooks.md#ranges): outside *A–B* | *against* / *contrary to* |
 
 ## Joins {#joins}
 
@@ -123,7 +123,7 @@ A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds a
 | front of the sentence | [glue to prior talk](hooks.md#discourse-hooks) | `al zazawan vowogal` | *Additionally, Azawan walks* | B |
 | `/b/` right after, no recipient `/b/` right before | [extra noun](hooks.md#extra-noun) | `zodogal vezebal al bahazal` | *a dog sleeps in a house* | B |
 | **-r**, nothing on the right | [point back](hooks.md#hook-resume) | `zalahen vehahel or` | *Alahen sits there* | I |
-| stacked vowel between two same-role words | [span](hooks.md#spans) | `zazawan oel zahaben` | *Azawan through Ahaben* | I |
+| stacked vowel between two same-role words | [range](hooks.md#ranges) | `zazawan oel zahaben` | *Azawan through Ahaben* | I |
 | fused onto a citation | [hook compound](hooks.md#hook-compounds) | `vowogalul` | *leave* | A |
 
 ### Same-role and front of sentence {#same-role-discourse}
@@ -143,7 +143,7 @@ A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds a
 | `ar` | | *Going back to that, …* | | I |
 | `ur` | | *Never mind that, …* | | I |
 
-More: [parallel chains](hooks.md#parallel-chains) `zavahal am zazawan ul zalahen` (each hook applies to A); [detail on the hook](hooks.md#hook-w) `wezum al` *even*; spans `ual` *strictly between*, `uel` *outside*, `uar` *someone between*. All Intermediate.
+More: [parallel chains](hooks.md#parallel-chains) `zavahal am zazawan ul zalahen` (each hook applies to A); [detail on the hook](hooks.md#hook-w) `wezum al` *even*; ranges `ual` *strictly between*, `uel` *outside*, `uar` *someone between*. All Intermediate.
 
 ### Extra nouns {#extra-nouns}
 

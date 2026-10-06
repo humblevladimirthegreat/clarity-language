@@ -185,7 +185,7 @@ A word after **B** describes **B** alone, and a word on the counted noun describ
 | `zrarel ual zraval` | both ends out | *strictly between 3 and 5* (`(3, 5)`) |
 | `zrarel uel zraval` | outside the band | *below 3 or above 5* |
 
-**`ual`** and **`uel`** are the [span hooks](hooks.md#spans), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zrarel al zravam` = *3 to about 5*).
+**`ual`** and **`uel`** are the [range hooks](hooks.md#ranges), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zrarel al zravam` = *3 to about 5*).
 
 **Compare with:** `zrarel zraval zael` is *3, then 5*: two values in order, not a band. `zrarel zraval zal` is *3 and 5*. `zazawan zalahen zel gamadam` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
 
@@ -534,7 +534,7 @@ With **-r**, the hook stands in for one value you are not naming. Under a [quest
 >
 > "Azawan sees some number of cats from 3 to 5."
 
-The [span hooks](hooks.md#spans) take **-r** the same way: `zrarel uar zraval` is *some value strictly between 3 and 5*, and `zrarel uer zraval` *some value outside 3–5*.
+The [range hooks](hooks.md#ranges) take **-r** the same way: `zrarel uar zraval` is *some value strictly between 3 and 5*, and `zrarel uer zraval` *some value outside 3–5*.
 
 ### Ordinal generation: digitful exponent on **`#`** / **`#-`**
 <a id="ordinal-generation"></a>
@@ -623,5 +623,5 @@ For a side branch, nest a second anchor: first step to the relative, then from t
 
 - Number-word anatomy (markers, endings, exponents): [numbers.md](numbers.md)
 - Kind morphs (`ROOTlNUM`): [numeric-derivation.md](numeric-derivation.md)
-- Hooks behind ranges: [hooks.md](hooks.md#spans)
+- Hooks behind ranges: [hooks.md](hooks.md#ranges)
 - Measured differentials on comparative scales: [comparatives.md](comparatives.md)

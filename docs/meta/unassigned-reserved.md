@@ -122,7 +122,7 @@ Source: [relations.md](../grammar/relations.md)
 
 ## Hooks — in-clause
 
-Source: [hooks.md](../grammar/hooks.md#spans), [sakes.md](../grammar/sakes.md#contrary-to-stance)
+Source: [hooks.md](../grammar/hooks.md#ranges), [sakes.md](../grammar/sakes.md#contrary-to-stance)
 
 - **open:** in-clause **`ao`** / **`ae`** / **`uo`** (`aol` / `ael` / `uol` and **-m** / **-n**) between same-role words. `aol` has two guesses (*for example*, from discourse `aol …`, or *namely*); `ael` *A, in fact B* (it escalates and keeps A, unlike `el`) is a fair fill but rarely needed; `uol` has no guess. The parser rejects them; extra-noun and discourse uses are unaffected.
 - **open:** stacked **-r** at the front of a sentence (`aor …`, `aer …`, `uor …`). Extra-noun point-back is assigned; as sentence glue they have no guess (*For example, anyway?* *In fact, as I said?*). Parser: `hookDiscourseStack`.

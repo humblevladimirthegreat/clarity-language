@@ -72,7 +72,7 @@ describe("morphGlossLine — SHARED only where it can describe the join", () => 
   it("leaves an /h/ after a /ɡ/ join on the verb", () => {
     expectLine("zodogal geredal gamazam gal hahegem vowogal.", "[z-dog | [g-red | g-small | g-and]] | h-intensity | v-walk");
   });
-  it("reads al / ul between number endpoints as a span", () => {
+  it("reads al / ul between number endpoints as a range", () => {
     expectLine("zodogal grarel al graval vowogal.", "[z-dog | g-three] | through | g-five | v-walk");
     expectLine("zrabal ul zraval.", "z-plus-infinity | through-excluding | z-five");
     expectLine("zrarel ar zraval.", "z-three | some.through | z-five");

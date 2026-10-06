@@ -25,7 +25,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `speech-moves.md` | Turns, vocatives, interjections, speech acts, the reusable vowel series, tone marks. |
 | `dependents.md` | Next-sentence grammar: continue, stand-ins, subordinators, relative-clause equivalents, linkers. |
 | `relations.md` | Hosted relation catalog: similative, exchange, proxy, of-relations, as-of, social ties. |
-| `hooks.md` | Prefix-less hooks: in-clause, span hooks, discourse glue, extra-noun, hook compounds. |
+| `hooks.md` | Prefix-less hooks: in-clause, range hooks, discourse glue, extra-noun, hook compounds. |
 | `restrictors.md` | `/h/` / `/w/` restrictors, habitual. |
 | `joins.md` | Phrase and clause joins, fences, set vs rank, arity, denying a whole list. |
 | `join-across-roles.md` | Joins across roles, join-act verbs, join-relations. |

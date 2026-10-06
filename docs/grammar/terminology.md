@@ -649,15 +649,15 @@ Derivation `ROOTl-e-` (and quasi-N).
 
 ### Range / ray
 
-Numeric from–to with a hook between the ends (`al` / `ul`); a ray has ±∞ as one end.
+Numeric from–to with a hook between the ends (`al` / `ul`); a ray has ±∞ as one end. The same idea on any ordered line is the [range hook](#range-hook).
 
 [Numbers in use](numbers-applied.md#ranges), [rays](numbers-applied.md#rays)
 
-### Span hook
+### Range hook
 
 Stacked hook between same-role words on an ordered line: `oel` *through*, `ual` *strictly between*, `uel` *outside*.
 
-[Hooks](hooks.md#spans)
+[Hooks](hooks.md#ranges)
 
 ### Rank join / set join / SHARED
 
@@ -756,7 +756,7 @@ Written cite `[…]`, aside `(…)` and opaque `<…>` fences, with a role lette
 
 [Spans](spans.md)
 
-**Compare with:** numeric from–to is a [range](#range-ray), not a span.
+**Compare with:** a numeric or ordered from–to is a [range](#range-ray), not a span.
 
 ### Stance
 
