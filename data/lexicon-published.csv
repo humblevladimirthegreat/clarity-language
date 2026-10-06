@@ -139,7 +139,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦶,foot,uvuda,foot-length,the unit was first measured off a human foot,,,
 👂,ear,ewa,hearsay,ear takes in what others say; hearsay is knowing by being told,v:hear,listen,comparatives.md#advanced-translation-practice
 🦻,hearing-aid,edaho,,,,,
-👃,nose,onoza,intuition,nose leads intuition,v:smell; m.v:intuit,sensitive; sense; impression,numbers.md#beginner-translation-practice
+👃,nose,onoza,intuition,nose leads intuition,v:smell; m.v:intuit,sensitive; sense; impression,numbers.md#beginner-practice
 🧠,brain,ebeha,intellect,the brain does the thinking,,mental; intellectual; smart; mind; intelligence; psychological; abstract,
 🫁,lungs,oyu,breath,lungs carry breath,,breathe; chest,sakes.md#beginner-translation-practice
 🦷,tooth,uduva,,,,,
@@ -427,11 +427,11 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🫛,pea,abewo,,,,,
 🫜,beet,eboda,,,,,
 🍞,bread,ebevu,staple,bread and butter is staple,,,joins.md#beginner-practice
-🥐,croissant,ogaza,,,,,numbers.md#beginner-translation-practice
-🥖,baguette,uboge,,,,,numbers.md#beginner-translation-practice
+🥐,croissant,ogaza,,,,,numbers.md#beginner-practice
+🥖,baguette,uboge,,,,,numbers.md#beginner-practice
 🫓,flat-bread,avabe,simplicity,flatbread is simple fare,g:bland,plain,
 🥨,pretzel,ebadu,complexity,a pretzel is knotted and twisted back on itself,,complex; complicate,
-🥯,bagel,ebago,,,,,numbers.md#beginner-translation-practice
+🥯,bagel,ebago,,,,,
 🥞,pancake,abogu,flattening,pancake flattens under pressure,,flat; thin; panel; smooth,
 🧇,waffle,awava,indecision,to waffle is to flip back and forth,,,
 🧀,cheese,eheze,,,,,
@@ -476,12 +476,12 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥠,fortune-cookie,ovogu,prophecy,fortune cookie foretells fate,,,
 🥡,takeout,edaga,,,,,
 🍦,ice-cream,azege,summer,ice cream is a summer treat; summer is the hot season,,,
-🍩,doughnut,odode,reward,donut is a sweet reward,,profit,numbers.md#beginner-translation-practice
+🍩,doughnut,odode,reward,donut is a sweet reward,,profit,numbers.md#beginner-practice
 🍪,cookie,ugugo,compliance,browser cookie tracks compliance,,,pronouns.md#beginner-practice
 🎂,birthday,ebeva,age,a birthday marks years lived; age is how old on the continuum,,,
 🍰,shortcake,ohodu,,,,,
 🧁,cupcake,agube,coda,cupcake is a sweet course; coda is the unobservable closing role,,,
-🥧,pie,abawu,,,,,numbers.md#beginner-translation-practice
+🥧,pie,abawu,,,,,numbers.md#beginner-practice
 🍫,chocolate,ohoga,,,,,
 🍬,candy,agede,sugar,candy is sweetened; sugar is what sweetens,,,
 🍭,lollipop,alabu,pacification,lollipop pacifies a child,,,
@@ -643,7 +643,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ❄️,snowflake,ozove,coldness,a snowflake melts cold on your skin,,,
 ☃️,snowman,ozoha,temporary,snowman melts when warmth returns; temporary does not last,,,
 ☄️,comet,agode,,,,,
-🔥,fire,avahe,,,,burn,numbers.md#beginner-translation-practice
+🔥,fire,avahe,,,,burn,causation.md#beginner-translation-practice
 💧,droplet,adaba,beginning,one droplet starts the flow; beginning is a small start,,source; original; initial; wet; liquid,
 🌊,ocean,ohaha,overwhelm,ocean is vast surging water; flood is high-arousal surge,,sea; flood,comparatives.md#beginner-translation-practice
 🎃,jack-o-lantern,ohahe,concealment,jack-o-lantern hides a carved face; disguise hides true identity,,hide,

@@ -71,168 +71,160 @@ This is a different tool from [**-x**](plurality.md) on the noun: **-x** says yo
 
 **Compare with:** English *some cats* (a set in this situation, no count) uses the noun plus [**-x**](plurality.md). Use **`gral`** when you mean the amount is more than one.
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
-Short drills for Beginner. Try each item before opening **Show answer**. Count with **`ra`**, rank with **`re`**, and use digitless **`gral`** with **-x** on the noun for *more than one*.
+Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a bakery
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *baguette* | `ubogel` | |
-| *croissant* | `ogazal` | |
-| *cookie* | `ugugol` | |
-| *bread* | `ebevul` | |
-| *pie* | `abawul` | |
-| *doughnut* | `ododel` | |
-| *bagel* | `ebagol` | |
-| *fire* | `avahel` | |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *smell* | `vonozal` | `onozal` *nose* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *baguette* | `ubogel` | 🥖 |
+| *croissant* | `ogazal` | 🥐 |
+| *pie* | `abawul` | 🥧 |
+| *doughnut* | `ododel` | 🍩 |
+| *smell* | `vonozal` | 👃 from *nose* |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *ant* | `anadol` |
+| *bread* | `ebevul` |
+| *cookie* | `ugugol` |
+| *cook* | `vugugal` |
+| *see* | `vahahal` |
+| *find* | `vamagal` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *Two baguettes.*
+**1.** *Three croissants.*
 
 ::: details Show answer
-`zubogelx gradul.`
+`zogazalx grarel.`
 
-z-baguette-x | g-two
+z-croissant-x | g-three
 :::
 
-**2.** *The third croissant.*
+**2.** *Azawan sees two pies.*
 
 ::: details Show answer
-`zogazal grerel.`
+`zazawan dabawulx gradul vahahal.`
 
-z-croissant | g-3rd
+z-Azawan | [d-pie-x | g-two] | v-see
 :::
 
-**3.** *Cookies, more than one.*
+**3.** *Alahen finds the second doughnut.*
 
 ::: details Show answer
-`zugugolx gral.`
+`zalahen dododel gredul vamagal.`
 
-z-cookie-x | g-more-than-one
+z-Alahen | [d-doughnut | g-2nd] | v-find
 :::
 
-**4.** *Azawan sees three breads.*
+**4.** *Ahaben smells baguettes, more than one.*
 
 ::: details Show answer
-`zazawan debevulx grarel vahahal.`
+`zahaben dubogelx gral vonozal.`
 
-z-Azawan | [d-bread-x | g-three] | v-see
+z-Ahaben | [d-baguette-x | g-more-than-one] | v-smell
 :::
 
-**5.** *Alahen smells the second pie.*
+**5.** *Twelve ants.*
 
 ::: details Show answer
-`zalahen dabawul gredul vonozal.`
+`zanadolx grawodul.`
 
-z-Alahen | [d-pie | g-2nd] | v-smell
+z-ant-x | g-twelve.spelled
 :::
 
-**6.** *Ahaben sees more than one doughnut.*
+**6.** *Azawan cooks the tenth pie.*
 
 ::: details Show answer
-`zahaben dododelx gral vahahal.`
+`zazawan dabawul grewozol vugugal.`
 
-z-Ahaben | [d-doughnut-x | g-more-than-one] | v-see
-:::
-
-**7.** *Alahen smells three baguettes.*
-
-::: details Show answer
-`zalahen dubogelx grarel vonozal.`
-
-z-Alahen | [d-baguette-x | g-three] | v-smell
-:::
-
-**8.** *Alahen sees the first fire.*
-
-::: details Show answer
-`zalahen davahel grewol vahahal.`
-
-z-Alahen | [d-fire | g-1st] | v-see
+z-Azawan | [d-pie | g-10th.spelled] | v-cook
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zogazalx gradul.`
+**1.** `zubogelx gramol.`
 
 ::: details Show answer
+z-baguette-x | g-four
 
-z-croissant-x | g-two
-
-*Two croissants.*
+*Four baguettes.*
 :::
 
-**2.** `zebevul gredul.`
+**2.** `zalahen debevul grerel vonozal.`
 
 ::: details Show answer
+z-Alahen | [d-bread | g-3rd] | v-smell
 
-z-bread | g-2nd
-
-*The second bread.*
+*Alahen smells the third bread.*
 :::
 
-**3.** `zubogelx gral.`
+**3.** `zanadolx gral dugugol vahahal.`
 
 ::: details Show answer
+[z-ant-x | g-more-than-one] | d-cookie | v-see
 
-z-baguette-x | g-more-than-one
-
-*Baguettes, more than one.*
+*Ants, more than one, see a cookie.*
 :::
 
-**4.** `zahaben dugugolx grarel vahahal.`
+**4.** `zahaben dogazalx graduzol vamagal.`
 
 ::: details Show answer
+z-Ahaben | [d-croissant-x | g-20.spelled] | v-find
 
-z-Ahaben | [d-cookie-x | g-three] | v-see
-
-*Ahaben sees three cookies.*
+*Ahaben finds twenty croissants.*
 :::
 
-**5.** `zazawan dabawulx gral vahahal.`
+**5.** `zabawul grewol.`
 
 ::: details Show answer
+z-pie | g-1st
 
-z-Azawan | [d-pie-x | g-more-than-one] | v-see
-
-*Azawan sees more than one pie.*
+*The first pie.*
 :::
 
-**6.** `zalahen debagolx gradul vonozal.`
+#### Pick one {#beginner-pick-one}
+
+**1.** *Azawan sees the second baguette.* `zazawan dubogel gredul vahahal.` or `zazawan dubogel gradul vahahal.`
 
 ::: details Show answer
+`zazawan dubogel gredul vahahal.`
 
-z-Alahen | [d-bagel-x | g-two] | v-smell
+z-Azawan | [d-baguette | g-2nd] | v-see
 
-*Alahen smells two bagels.*
+Rank marker **`re`** gives the place in a series; **`ra`** would count two.
 :::
 
-**7.** `zalahen debagolx gral vahahal.`
+**2.** *Three doughnuts.* `zododelx grarel.` or `zododelx gral.`
 
 ::: details Show answer
+`zododelx grarel.`
 
-z-Alahen | [d-bagel-x | g-more-than-one] | v-see
+z-doughnut-x | g-three
 
-*Alahen sees more than one bagel.*
+**`grarel`** names the count; **`gral`** only says more than one.
 :::
 
-**8.** `zalahen davahel grewol vonozal.`
+#### Fix it {#beginner-fix-it}
+
+**1.** *Alahen sees four pies.* <!-- lint: error -->`zalahen gramol dabawulx vahahal.`
 
 ::: details Show answer
+`zalahen dabawulx gramol vahahal.`
 
-z-Alahen | [d-fire | g-1st] | v-smell
+z-Alahen | [d-pie-x | g-four] | v-see
 
-*Alahen smells the first fire.*
+A number word is a `/ɡ/` word, so it goes after its noun; before `dabawulx` it counts Alahen.
 :::
 
 ## Intermediate {#intermediate}
