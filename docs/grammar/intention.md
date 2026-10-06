@@ -547,44 +547,58 @@ English *will* can state a plan or a forecast. A plan uses [PLAN](#plan-predict)
 
 **Compare with:** without an offset, a channel is about what is happening now or already so (**`thodom`** if you are watching it now; **`thevom`** if you remember watching it). Add **`bral`** when the claim is about a **later** event.
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 <a id="translation-practice-intermediate"></a>
 
-Short drills for Intermediate. Try each item before opening **Show answer**. They cover decisions, forecasts, ability, attempts, wants, and someone else's want or plan.
+Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a board meeting
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| **PLAN** (itinerary) | `thamam` | `amam` *plan-itinerary* |
-| **DECISION** (modifiable) | `thehum` | `ehul` *check* |
-| *attempt-committed* | `thudul` | `udul` *test-tube* |
-| *attempt-trial* | `thudur` | `udul` *test-tube* |
-| *want-unstated* | `thohum` | `ohul` *shooting-star* |
-| *want-lasting* | `thohul` | `ohul` *shooting-star* |
-| *sit* | `vehahel` | `ehahel` *chair* |
-| *tell* | `vezebel` | `ezebel` *speech* |
-| *write* | `varadal` | |
-| *sing* | `vezehel` | |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *clipboard* | `egabol` | |
-| *pen* | `ebewel` | |
-| *PATTERN* | `thobam` | `obal` *paw-prints* |
-| *punch* | `vabahel` | |
-| *scream* | `vezugel` | |
-| *fight* | `vavadal` | |
-| *climb* | `vagayal` | |
-| *stand* | `vazadol` | |
-| *run* | `varahal` | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *clipboard* | `egabol` | 📋 |
+| *pen* | `ebewel` | 🖊️ |
+| *capacity* | `ezem` | 🥣 from *cereal*; as **`thezexel`**, a bare *can't* |
+| *DECISION* | `thehum` | ✅ from *check*: the box is ticked |
+| *attempt-unstated* | `thudum` | 🧪 from *test tube*: try a sample |
+| *want-unstated* | `thohum` | 🌠 from *shooting star*: a wish |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *PLAN* | `thamam` |
+| *page* | `abehel` |
+| *write* | `varadal` |
+| *sit* | `vehahel` |
+| *tell* | `vezebel` |
+| *sing* | `vezehel` |
+| *find* | `vamagal` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Alahen has decided to sit, and can still change that.*
+**1.** *Azawan can write on the clipboard.*
+
+::: details Show answer
+`zazawan varadaxal aol begabol.`
+
+z-Azawan | v-write-able | [on | b-clipboard]
+:::
+
+**2.** *Alahen can't write yet.*
+
+::: details Show answer
+`zalahen varadaxol.`
+
+z-Alahen | v-write-unable-modifiable
+:::
+
+**3.** *Alahen has decided to sit, and can still change that.*
 
 ::: details Show answer
 `zalahen thehum vehahel.`
@@ -592,251 +606,112 @@ Short drills for Intermediate. Try each item before opening **Show answer**. The
 z-Alahen | th-DECISION-modifiable | v-sit
 :::
 
-**2.** *Azawan has decided to tell Ahaben, and can still change that.*
+**4.** *Ahaben gives telling a try.*
 
 ::: details Show answer
-`zazawan bahaben thehum vezebel.`
+`zahaben thudur vezebel.`
 
-z-Azawan | b-Ahaben | th-DECISION-modifiable | v-tell
+z-Ahaben | th-ATTEMPT-trial | v-tell
 :::
 
-**3.** *Ahaben has decided for now to write.*
+**5.** *Azawan feels like singing.* (a whim)
 
 ::: details Show answer
-`zahaben thehur varadal.`
+`zazawan thohur vezehel.`
 
-z-Ahaben | th-DECISION-temporary | v-write
+z-Azawan | th-WANT-passing | v-sing
 :::
 
-**4.** *Going by the usual pattern, Alahen will sit.*
+**6.** *Alahen wants Ahaben to write.*
 
 ::: details Show answer
-`zalahen thobam bral vehahel.`
+`zahaben thohum balahen varadal.`
 
-z-Alahen | [th-PATTERN | b-later] | v-sit
-:::
-
-**5.** *Azawan plans to sit, and that choice is final.*
-
-::: details Show answer
-`zazawan thamam thehul vehahel.`
-
-z-Azawan | th-plan-itinerary | th-DECISION-irreversible | v-sit
-:::
-
-**6.** *Alahen has decided for now to see a clipboard.*
-
-::: details Show answer
-`zalahen thehur degabol vahahal.`
-
-z-Alahen | th-DECISION-temporary | d-clipboard | v-see
-:::
-
-**7.** *Alahen has decided for good to punch Azawan.*
-
-::: details Show answer
-`zalahen thehul dazawan vabahel.`
-
-z-Alahen | th-DECISION-irreversible | d-Azawan | v-punch
-:::
-
-**8.** *Alahen has decided for good to fight.*
-
-::: details Show answer
-`zalahen thehul vavadal.`
-
-z-Alahen | th-DECISION-irreversible | v-fight
-:::
-
-**9.** *Azawan can climb.*
-
-::: details Show answer
-`zazawan vagayaxal.`
-
-z-Azawan | v-climb-able
-:::
-
-**10.** *Ahaben can't stand yet.*
-
-::: details Show answer
-`zahaben vazadoxol.`
-
-z-Ahaben | v-stand-unable-modifiable
-:::
-
-**11.** *Azawan can't right now.* (the whole thing, not one verb)
-
-::: details Show answer
-`zazawan thezexel.`
-
-z-Azawan | th-ABIL-unable-temporary
-:::
-
-**12.** *Azawan keeps trying to climb.*
-
-::: details Show answer
-`zazawan thudul vagayal.`
-
-z-Azawan | th-ATTEMPT-committed | v-climb
-:::
-
-**13.** *Azawan gives standing a try; failing that, Azawan sits.*
-
-::: details Show answer
-`zazawan thudur vazadol xon zazawar vehahel.`
-
-[z-Azawan | th-ATTEMPT-trial | v-stand | x-or-else | z-←Azawan | v-sit]
-:::
-
-**14.** *Alahen wants to see Azawan.*
-
-::: details Show answer
-`zalahen thohum vahahal dazawan.`
-
-z-Alahen | th-WANT-unstated | v-see | d-Azawan
-:::
-
-**15.** *Azawan has long wanted to sit, and plans to.*
-
-::: details Show answer
-`zazawan thohul thamam vehahel.`
-
-z-Azawan | th-WANT-lasting | th-plan-itinerary | v-sit
-:::
-
-**16.** *Alahen wants Ahaben to sing.*
-
-::: details Show answer
-`zahaben thohum balahen vezehel.`
-
-z-Ahaben | [th-WANT-unstated | b-Alahen] | v-sing
-:::
-
-**17.** *Azawan plans for Alahen to write.*
-
-::: details Show answer
-`zalahen thamam bazawan varadal.`
-
-z-Alahen | [th-plan-itinerary | b-Azawan] | v-write
+z-Ahaben | [th-WANT-unstated | b-Alahen] | v-write
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zazawan thehum vehahel.`
+**1.** `zalahen gaxaradaxam.`
 
 ::: details Show answer
+z-Alahen | g-agent-x-authorship-able
 
-z-Azawan | th-DECISION-modifiable | v-sit
-
-*Azawan has decided to sit, and can still change that.*
+*Alahen can be the author.*
 :::
 
-**2.** `zalahen thehul varadal.`
+**2.** `zazawan thezexel.`
 
 ::: details Show answer
+z-Azawan | th-ABIL-unable-temporary
 
-z-Alahen | th-DECISION-irreversible | v-write
-
-*Alahen has decided for good to write.*
+*Azawan can't right now.*
 :::
 
-**3.** `thobam bral vezugel.`
+**3.** `zahaben thamam thehul dabehel varadal.`
 
 ::: details Show answer
+z-Ahaben | th-plan-itinerary | th-DECISION-irreversible | d-page | v-write
 
-[th-PATTERN | b-later] | v-scream
-
-*Going by the usual pattern, someone will scream.*
+*Ahaben plans to write the page, and that choice is final.*
 :::
 
-**4.** `zahaben thehur vehahel.`
+**4.** `zazawan vezebel uem thehum.`
 
 ::: details Show answer
+z-Azawan | v-tell | [contrary-to | th-DECISION-modifiable]
 
-z-Ahaben | th-DECISION-temporary | v-sit
-
-*Ahaben has decided for now to sit.*
+*Azawan tells, though they had decided not to.*
 :::
 
-**5.** `zazawan thehur debewel vahahal.`
+**5.** `zalahen thudur vezehel xon zalaher varadal.`
 
 ::: details Show answer
+[z-Alahen | th-ATTEMPT-trial | v-sing | x-or-else | z-←Alahen | v-write]
 
-z-Azawan | th-DECISION-temporary | d-pen | v-see
-
-*Azawan has decided for now to see a pen.*
+*Alahen gives singing a try; failing that, Alahen writes.*
 :::
 
-**6.** `zalahen bahaben thamam thehul vezebel.`
+**6.** `zahaben thohul thamam debewel vamagal.`
 
 ::: details Show answer
+z-Ahaben | th-WANT-lasting | th-plan-itinerary | d-pen | v-find
 
-z-Alahen | b-Ahaben | th-plan-itinerary | th-DECISION-irreversible | v-tell
-
-*Alahen plans to tell Ahaben, and that choice is final.*
+*Ahaben has long wanted to find a pen, and plans to.*
 :::
 
-**7.** `zalahen thehur dazawan vabahel.`
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Azawan can't sit right now* (Azawan usually can). `zazawan vehahexel.` or `zazawan vehahexul.`
 
 ::: details Show answer
+`zazawan vehahexel.`
 
-z-Alahen | th-DECISION-temporary | d-Azawan | v-punch
+z-Azawan | v-sit-unable-temporary
 
-*Alahen has decided for now to punch Azawan.*
+**`xe`** is *can't, just for now*; **`xu`** is *can never*.
 :::
 
-**8.** `zahaben thehul vezugel.`
+**2.** *Alahen keeps trying to write.* `zalahen thudul varadal.` or `zalahen thudur varadal.`
 
 ::: details Show answer
+`zalahen thudul varadal.`
 
-z-Ahaben | th-DECISION-irreversible | v-scream
+z-Alahen | th-ATTEMPT-committed | v-write
 
-*Ahaben has decided for good to scream.*
+**-l** commits to the attempt; **-r** is only a trial run.
 :::
 
-**9.** `zalahen varahaxul.`
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Ahaben can sing.* <!-- lint: error -->`zahaben thezexal vezehel.`
 
 ::: details Show answer
+`zahaben vezehexal.`
 
-z-Alahen | v-run-unable-irreversible
+z-Ahaben | v-sing-able
 
-*Alahen can never run.*
-:::
-
-**10.** `zazawan vagayal.`
-
-::: details Show answer
-
-z-Azawan | v-climb
-
-*Azawan climbs.*
-:::
-
-**11.** `zalahen thezexul.`
-
-::: details Show answer
-
-z-Alahen | th-ABIL-unable-irreversible
-
-*Alahen can never do it.* (the whole thing, not one verb)
-:::
-
-**12.** `zalahen thohur vezehel.`
-
-::: details Show answer
-
-z-Alahen | th-WANT-passing | v-sing
-
-*Alahen feels like singing.*
-:::
-
-**13.** `zazawan thehum bahaben vazadol.`
-
-::: details Show answer
-
-z-Azawan | [th-DECISION-modifiable | b-Ahaben] | v-stand
-
-*Ahaben has decided that Azawan stands, and can still change that.*
+With one named verb, fold *can* into it with **`x`** and **`a`**; **`thezexal`** is for a *can* with no single verb.
 :::
 
 ## See also
