@@ -66,7 +66,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥺,plead,ebewo,appeal,pleading eyes appeal,,charm; request,
 🥹,touched,adeho,,,,,
 😨,fear,evehe,threat-appraisal,fear means dread; threat-appraisal is the unobservable reading of danger,,afraid; scare; frighten,
-😰,anxious,anago,apprehension,anxious means anxiety; apprehension is the unobservable expected harm,,nervous; anxiety,predication.md#intermediate-translation-practice
+😰,anxious,anago,apprehension,anxious means anxiety; apprehension is the unobservable expected harm,,nervous; anxiety,predication.md#intermediate-practice
 😭,cry,agahu,anguish,sob shows anguish,,pain; depress,knowing.md#beginner-practice
 😱,scream,ezuge,horror,scream shows horror,,,dependents.md#beginner-practice
 😞,disappointed,edebo,disillusion,disappointed shows disappointment; disillusion is the unobservable fall from a frame,,,
@@ -86,7 +86,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 👹,ogre,ogehe,menace,ogre shows menace,,threat; threaten,
 👺,goblin,ogabe,,,,,
 👻,ghost,ogoze,spookiness,a haunting ghost makes a place feel eerie,,,
-👽,alien,eleho,strangeness,an alien comes from somewhere unknown,,foreign; unusual,predication.md#intermediate-translation-practice
+👽,alien,eleho,strangeness,an alien comes from somewhere unknown,,foreign; unusual,predication.md#intermediate-practice
 🤖,robot,oroba,automation,a robot does the work by itself,,,
 🙈,blindfold,abodo,denial,a blindfold keeps you from seeing; denial refuses to see,,,
 🙉,earplugs,eraba,avoidance,earplugs shut out sound; avoidance shuts out the truth,,avoid,
@@ -168,7 +168,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🤷,shrug,ahawe,uncertainty,a shrug says who knows; uncertainty is not knowing,,,
 🧑‍⚕️,heal,ehehu,recovery,the healer restores health; recovery is getting well again,,recover; therapy,
 🧑‍🎓,learn,eleha,scholarship,learning is study; scholarship is the unobservable knowledge-practice,,academic; scholar; study,
-🧑‍🏫,teach,edeho,instruction,a teacher explains so others learn,,educate; lesson,predication.md#intermediate-translation-practice
+🧑‍🏫,teach,edeho,instruction,a teacher explains so others learn,,educate; lesson,predication.md#intermediate-practice
 🧑‍⚖️,judge,ahahu,judgment,a judge weighs the case and rules,,assessment; assess; criticism; evaluation; evaluate,
 🧑‍🌾,farm,avavo,cultivation,a farm grows crops from tended soil,,farmer; culture; cultural; breed,
 🧑‍🍳,cook,uguga,nourishment,cooking provides nourishment,,,pronouns.md#beginner-practice
@@ -178,7 +178,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧑‍🔬,research,areze,inquiry,research chases answers to open questions,,scientist; scientific; science; survey,
 🧑‍💻,program,oboga,innovation,programming drives innovation,,invent,
 🧑‍🎤,sing,ezehe,expression,singing gives expression,,express,spans.md#beginner-practice
-🧑‍🎨,craft,ageva,creativity,crafting brings creativity,,creation; creative; technique,predication.md#intermediate-translation-practice
+🧑‍🎨,craft,ageva,creativity,crafting brings creativity,,creation; creative; technique,
 🧑‍✈️,pilot,abawo,navigation,piloting handles navigation,,,
 🧑‍🚀,orbit,oraba,exploration,orbiting seeks exploration,,explore,
 🧑‍🚒,firefight,avova,,,,,
@@ -716,8 +716,8 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🀄,mahjong,ameha,,,,,
 🎴,flower-cards,avaga,,,,card,
 🎭,theater,avo,pretense,theater masks hide the actor; pretense is playing a role / as-if framing,,dramatic; drama; stage,
-🖼️,frame,evevo,ostentation,a frame puts a picture on show; ostentation is showing-off as stance,,shape; form,predication.md#intermediate-translation-practice
-🎨,palette,abudo,,,,color,predication.md#intermediate-translation-practice
+🖼️,frame,evevo,ostentation,a frame puts a picture on show; ostentation is showing-off as stance,,shape; form,predication.md#intermediate-practice
+🎨,palette,abudo,,,,color,
 🧵,thread,evevu,continuity,a thread runs unbroken; continuity is going on without a break,,constant; consistent; wire; cable; continuous; strip,
 🪡,needle,eneda,,,,,
 🧶,yarn,ayaha,blanket,yarn is knit into a blanket; a blanket is the cover that warms,,,

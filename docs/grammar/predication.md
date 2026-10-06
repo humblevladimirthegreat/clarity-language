@@ -509,35 +509,35 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 
 **`thao`** and **`thuo`** take `/b/` the same way **`tho`** does. **`thae`** is not a [mention](spans.md#mention): the person is still the one you describe, and the role is a means. **`thue`** means speaking off duty or refusing that role, not *fake teacher* and not [FORMER](knowing.md#former-climate).
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a museum gallery
 
-**Roots used here:**
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *frame* | `evevol` | 🖼️ |
+| *anxious* | `anagol` | 😰 |
+| *strangeness* | `elehom` | 👽 from *alien* |
+| *teach* | `vedehol` | 🧑‍🏫 |
+
+**Review:**
 
 | English | Agazan |
 |---------|--------|
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
-| *guard* | `agavol` |
-| *craft* | `ageval` |
-| *person* | `obel` |
-| *frame* | `evevol` |
-| *palette* | `abudol` |
-| *red* | `eredal` |
 | **SAME** | `ugol` |
-| *see* | `vahahal` |
+| *guard* | `agavol` |
+| *quiet* | `agawal` |
 | *angry* | `anegel` |
-| *anxious* | `anagol` |
-| *lie* | `alahal` |
-| *strangeness* | `elehom` |
-| *teach* | `edehol` |
-| *run* | `arahal` |
-| *your name* | `SELFn` |
+| *lie* | `valahal` |
+| *see* | `vahahal` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -549,23 +549,15 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Azawan | [g-guard | g-not]
 :::
 
-**2.** *Alahen is always a craftsperson.*
+**2.** *Be quiet!*
 
 ::: details Show answer
-`zalahen gageval hual.`
+`yel gagawal.`
 
-[z-Alahen | g-craft] | h-always
+y-command | g-quiet
 :::
 
-**3.** *The guard is Azawan.*
-
-::: details Show answer
-`zagavol gugol bazawan.`
-
-z-guard | [g-SAME | b-Azawan]
-:::
-
-**4.** *Alahen is basically Azawan.*
+**3.** *Alahen is basically Azawan.*
 
 ::: details Show answer
 `zalahen gugom bazawan.`
@@ -573,269 +565,112 @@ z-guard | [g-SAME | b-Azawan]
 z-Alahen | [g-same | b-Azawan]
 :::
 
-**5.** *The person who is Ahaben sees a palette.*
+**4.** *Ahaben is angry this time.*
 
 ::: details Show answer
-`zobel gugol bahaben dabudol vahahal.`
+`zahaben ganegethal.`
 
-[z-person | [g-SAME | b-Ahaben]] | d-palette | v-see
+z-Ahaben | g-angry-th-episode
 :::
 
-**6.** *The guard is basically Ahaben.*
+**5.** *Azawan is a teacher.* (a practiced role)
 
 ::: details Show answer
-`zagavol gugom bahaben.`
+`zazawan gaxedehothel.`
 
-z-guard | [g-same | b-Ahaben]
+z-Azawan | g-agent-x-teach-th-role
 :::
 
-**7.** *The person who is Azawan sees a frame.*
+**6.** *To Alahen, what Ahaben does counts as lying.*
 
 ::: details Show answer
-`zobel gugol bazawan devevol vahahal.`
+`zahaben valahathol balahen.`
 
-[z-person | [g-SAME | b-Azawan]] | d-frame | v-see
-:::
-
-**8.** *The guard is not (identical to) Ahaben.*
-
-::: details Show answer
-`zagavol gugol bahaben gul.`
-
-z-guard | [[g-SAME | b-Ahaben] | g-not]
-:::
-
-**9.** *The guard is angry this time.*
-
-::: details Show answer
-`zagavol ganegethal.`
-
-z-guard | g-angry-th-episode
-:::
-
-**10.** *Azawan is a lying type.*
-
-::: details Show answer
-`zazawan valahathul.`
-
-z-Azawan | v-lie-th-type
-:::
-
-**11.** *To Alahen, what the guard does counts as lying.*
-
-::: details Show answer
-`zagavol valahathol balahen.`
-
-z-guard | [v-lie-th-pair | b-Alahen]
-:::
-
-**12.** *Ahaben is an anxious type.*
-
-::: details Show answer
-`zahaben ganagothul.`
-
-z-Ahaben | g-anxious-th-type
-:::
-
-**13.** *Alahen is a teacher this time.*
-
-::: details Show answer
-`zalahen gaxedehothal.`
-
-z-Alahen | g-agent-x-teach-th-episode
-:::
-
-**14.** *Alahen is a teacher.*
-
-::: details Show answer
-`zalahen gaxedehothel.`
-
-z-Alahen | g-agent-x-teach-th-role
-:::
-
-**15.** *This once, to Alahen, it counts as lying.*
-
-::: details Show answer
-`zazawan valahathaol balahen.`
-
-z-Azawan | [v-lie-th-on-pair | b-Alahen]
-:::
-
-**16.** *I am using teacher (as a tool).*
-
-::: details Show answer
-`zSELFn gaxedehothael.`
-
-z-SELF | g-agent-x-teach-th-using
-:::
-
-**17.** *Alahen is becoming a teacher.*
-
-::: details Show answer
-`zalahen gaxedehothoel.`
-
-z-Alahen | g-agent-x-teach-th-toward-role
-:::
-
-**18.** *A lying type, except this time.*
-
-::: details Show answer
-`zazawan valahathual.`
-
-z-Azawan | v-lie-th-except-episode
-:::
-
-**19.** *Angry as a type, except with Alahen.*
-
-::: details Show answer
-`zazawan ganegethuol balahen.`
-
-z-Azawan | [g-angry-th-except-pair | b-Alahen]
-:::
-
-**20.** *I am not speaking as a teacher.*
-
-::: details Show answer
-`zSELFn gaxedehothuel.`
-
-z-SELF | g-agent-x-teach-th-outside-role
+z-Ahaben | [v-lie-th-pair | b-Alahen]
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zahaben gagavol gul.`
+**1.** `zalahen gagavol hual.`
 
 ::: details Show answer
+[z-Alahen | g-guard] | h-always
 
-z-Ahaben | [g-guard | g-not]
-
-*Ahaben is not a guard.*
+*Alahen is always a guard.*
 :::
 
-**2.** `zazawan gageval hual.`
+**2.** `yul ganegel.`
 
 ::: details Show answer
+y-prohibition | g-angry
 
-[z-Azawan | g-craft] | h-always
-
-*Azawan is always a craftsperson.*
+*Don't be angry!*
 :::
 
-**3.** `zagavol gugom bazawan.`
+**3.** `zazawan ganagothul.`
 
 ::: details Show answer
+z-Azawan | g-anxious-th-type
 
-z-guard | [g-same | b-Azawan]
-
-*The guard is basically Azawan.*
+*Azawan is an anxious type.*
 :::
 
-**4.** `zobel gugol bazawan dabudol vahahal.`
+**4.** `zahaben valahathal.`
 
 ::: details Show answer
+z-Ahaben | v-lie-th-episode
 
-[z-person | [g-SAME | b-Azawan]] | d-palette | v-see
-
-*The person who is Azawan sees a palette.*
+*Ahaben lied this once.*
 :::
 
-**5.** `zalahen gugol bahaben gul.`
+**5.** `zaxedehothul devevol vahahal.`
 
 ::: details Show answer
+z-agent-x-teach-th-type | d-frame | v-see
 
-z-Alahen | [[g-SAME | b-Ahaben] | g-not]
-
-*Alahen is not Ahaben.*
+*A teacher type sees a frame.*
 :::
 
-**6.** `zazawan gagavol hual.`
+**6.** `zalahen gaxedehothoel.`
 
 ::: details Show answer
+z-Alahen | g-agent-x-teach-th-toward-role
 
-[z-Azawan | g-guard] | h-always
-
-*Azawan is always a guard.*
+*Alahen is becoming a teacher.*
 :::
 
-**7.** `zevevol geredal.`
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Alahen is anxious this time.* `zalahen ganagothal.` or `zalahen ganagothul.`
 
 ::: details Show answer
+`zalahen ganagothal.`
 
-z-frame | g-red
+z-Alahen | g-anxious-th-episode
 
-*The frame is red.*
+**`tha`** keeps the label to this episode; **`thu`** would make Alahen an anxious type.
 :::
 
-**8.** `zalahen gageval gul.`
+**2.** *Azawan is not the same as Alahen.* `zazawan gugol balahen gul.` or `zazawan gugom balahen.`
 
 ::: details Show answer
+`zazawan gugol balahen gul.`
 
-z-Alahen | [g-craft | g-not]
+z-Azawan | [[g-SAME | b-Alahen] | g-not]
 
-*Alahen is not a craftsperson.*
+**`gul`** denies the match; **`gugom`** says they are basically the same.
 :::
 
-**9.** `zahaben gelehothom bazawan.`
+#### Fix it {#intermediate-fix-it}
+
+**1.** *Azawan is a stranger to Ahaben.* <!-- lint: error -->`zazawan bahaben gelehothom.`
 
 ::: details Show answer
+`zazawan gelehothom bahaben.`
 
-z-Ahaben | [g-strangeness-th-pair | b-Azawan]
+z-Azawan | [g-strangeness-th-pair | b-Ahaben]
 
-*Ahaben is a stranger to Azawan.*
-:::
-
-**10.** `zalahen ganegethul.`
-
-::: details Show answer
-
-z-Alahen | g-angry-th-type
-
-*Alahen is an angry type.*
-:::
-
-**11.** `zazawan valahathal.`
-
-::: details Show answer
-
-z-Azawan | v-lie-th-episode
-
-*Azawan lied this once.*
-:::
-
-**12.** `zaxedehothul varahal.`
-
-::: details Show answer
-
-z-agent-x-teach-th-type | v-run
-
-*A teacher type runs.*
-:::
-
-**13.** `zagavol ganagothul.`
-
-::: details Show answer
-
-z-guard | g-anxious-th-type
-
-*The guard is an anxious type.*
-:::
-
-**14.** `zalahen gaxedehothel.`
-
-::: details Show answer
-
-z-Alahen | g-agent-x-teach-th-role
-
-*Alahen is a teacher.*
-:::
-
-**15.** `zSELFn gaxedehothuel.`
-
-::: details Show answer
-
-z-SELF | g-agent-x-teach-th-outside-role
-
-*I am not speaking as a teacher.*
+The other party goes in `/b/` right **after** the **`tho`** word.
 :::
 
 ## See also
