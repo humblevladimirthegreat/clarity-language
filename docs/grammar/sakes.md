@@ -948,145 +948,77 @@ On the [time scale](comparatives.md#time-scale), a sake bar is *too late* and *t
 
 **Compare with:** the same met word after the fence is about the whole claim: `zedehel zel gahadul thoyutham` is *the tea is the hottest, and that serves my health*.
 
-### Translation practice {#intermediate-translation-practice}
+### Practice {#intermediate-practice}
 <a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a monastery
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *church* | `ehehal` | |
-| *rosary* | `orozol` | |
-| *candle* | `agogal` | |
-| *bell* | `ebehul` | |
-| *ownership* | `egabem` | `egabel` *copyright* |
-| *stimulus* | `gobum` | `obul` *emphasis* |
-| *pray* | `vebevol` | `ebevol` *pray* |
-| *kneel* | `venehal` | `enehal` *kneel* |
-| *hush* | `vahehal` | `ahehal` *hush* |
-| *bow* | `vabayal` | `abayal` *bow* |
-| *scream* | `vezugel` | `ezugel` *scream* |
-| *tell* | `vezebel` | `ezebel` *speech* |
-| *sleep* | `vezebal` | `ezebal` *sleep* |
-| *autonomy* | `ahul` | `ahul` *ballot* |
-| *competence* | `ulol` | `ulol` *toolbox* |
-| *purpose* | `amel` | `amel` *compass* |
-| *relatedness* | `anal` | `anal` *knot* |
-| *beneficence* | `ebel` | `ebel` *present* |
-| *pleasure* | `ozol` | `ozol` *strawberry* |
-| *physical* | `oyul` | `oyul` *lungs* |
-| *sake* | `egal` | `egal` *egg* |
-| *permission* | `egol` | `egol` *green* |
-| *forbidden* | `edel` | `edel` *no-entry* |
-| *plan* | `amam` | `amal` *plan-atlas* |
-| *always* | `hual` | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *pray* | `vebevol` | 🙏 |
+| *kneel* | `venehal` | 🧎 |
+| *candle* | `agogal` | 🕯️ |
+| *relatedness* | `anal` | 🪢 from *knot*: ties people together |
+| *purpose* | `amel` | 🧭 from *compass*: a heading worth following |
+| *permission* | `thegom` | 🟢 from *green*: go ahead |
+| *forbidden* | `thedel` | ⛔ from *no entry* |
+| *policy* | `thumer` | 📝 from *memo* |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *listener* | `ehon` |
+| *competence* | `ulol` |
+| *physical* | `oyul` |
+| *stimulus* | `gobum` |
+| *bell* | `ebehul` |
+| *heavy* | `aragam` |
+| *sit* | `vehahel` |
+| *sleep* | `vezebal` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan ought to tell to serve relatedness (offered).*
+**1.** *Azawan ought to pray to serve relatedness* (an offer).
 
 ::: details Show answer
-`zazawan vezebel thanathem.`
+`zazawan vebevol thanathem.`
 
-z-Azawan | v-tell | th-relatedness-ought-offered
+z-Azawan | v-pray | th-relatedness-ought-offered
 :::
 
-**2.** *Ahaben ought to sleep to serve pleasure (offered).*
+**2.** *Alahen kneels for purpose, right away.*
 
 ::: details Show answer
-`zahaben vezebal thozothem.`
+`zalahen venehal thamethor.`
 
-z-Ahaben | v-sleep | th-pleasure-ought-offered
+z-Alahen | v-kneel | th-purpose-motive-immediate
 :::
 
-**3.** *Alahen ought to scream to serve the physical sake (Alahen asked for a move).*
+**3.** *Ahaben prays for Alahen's relatedness, over time.*
 
 ::: details Show answer
-`zalahen vezugel thoyuthel.`
+`zahaben vebevol thanathol balahen.`
 
-z-Alahen | v-scream | th-physical-ought-invited
+z-Ahaben | v-pray | [th-relatedness-motive-lasting | b-Alahen]
 :::
 
-**4.** *Ahaben ought to try bowing for relatedness (worth a try).*
+**4.** *That meant a lot to me.* (thank you)
 
 ::: details Show answer
-`zahaben vabayal thanather.`
+`thanatham.`
 
-z-Ahaben | v-bow | th-relatedness-ought-trial
+th-relatedness-met-any-term
 :::
 
-**5.** *Azawan prays for relatedness (horizon unstated).*
-
-::: details Show answer
-`zazawan vebevol thanathom.`
-
-z-Azawan | v-pray | th-relatedness-motive-any-term
-:::
-
-**6.** *Alahen kneels for relatedness (over time).*
-
-::: details Show answer
-`zalahen venehal thanathol.`
-
-z-Alahen | v-kneel | th-relatedness-motive-lasting
-:::
-
-**7.** *Ahaben hushes for relatedness (as usual).*
-
-::: details Show answer
-`zahaben vahehal thanathom hual.`
-
-z-Ahaben | v-hush | th-relatedness-motive-any-term | h-always-except
-:::
-
-**8.** *Azawan bows for relatedness (right now).*
-
-::: details Show answer
-`zazawan vabayal thanathor.`
-
-z-Azawan | v-bow | th-relatedness-motive-immediate
-:::
-
-**9.** *Alahen prays for competence (horizon unstated).*
-
-::: details Show answer
-`zalahen vebevol thulothom.`
-
-z-Alahen | v-pray | th-competence-motive-any-term
-:::
-
-**10.** *Azawan’s church serves relatedness in the long term.*
-
-::: details Show answer
-`glegabem bazawan zehehal wanathal gobum.`
-
-[[gl-ownership | b-Azawan] | z-church] | [w-relatedness-met-lasting | g-stimulus]
-:::
-
-**11.** *Azawan prays: it serves competence in the long term, and relatedness is the motive.*
-
-::: details Show answer
-`zazawan vebevol thulothal thanathom.`
-
-z-Azawan | v-pray | th-competence-met-lasting | th-relatedness-motive-any-term
-:::
-
-**12.** *Alahen ought to scream to serve the physical sake (Alahen asked for a move); relatedness is the motive, over time.*
-
-::: details Show answer
-`zalahen vezugel thoyuthel thanathol.`
-
-z-Alahen | v-scream | th-physical-ought-invited | th-relatedness-motive-lasting
-:::
-
-**13.** *Ahaben lets Azawan kneel.*
+**5.** *Ahaben lets Azawan kneel.*
 
 ::: details Show answer
 `zazawan venehal thegom bahaben.`
@@ -1094,276 +1026,96 @@ z-Alahen | v-scream | th-physical-ought-invited | th-relatedness-motive-lasting
 z-Azawan | v-kneel | [th-PERMIT-granted | b-Ahaben]
 :::
 
-**14.** *Azawan hushes, assuming Alahen and Ahaben are OK with it.*
+**6.** *The candle is too heavy to be safe.*
 
 ::: details Show answer
-`zazawan vahehal thuxegor balahen bahaben bal.`
+`zagogal thoyutham zel garagam.`
 
-z-Azawan | v-hush | [th-CONSENT-assumed | [b-Alahen | b-Ahaben | b-and]]
-:::
-
-**15.** *Resentful about the bell:* relatedness unmet; aimed at the bell; surging.
-
-::: details Show answer
-`zebehul wanathumor gobum.`
-
-z-bell | [w-relatedness-unmet-modifiable-AIMED-SURGING | g-stimulus]
-:::
-
-**16.** *Alahen prays for purpose (over time).*
-
-::: details Show answer
-`zalahen vebevol thamethol.`
-
-z-Alahen | v-pray | th-purpose-motive-lasting
-:::
-
-**17.** *Azawan ought to tell to serve beneficence (offered).*
-
-::: details Show answer
-`zazawan vezebel thebethem.`
-
-z-Azawan | v-tell | th-beneficence-ought-offered
-:::
-
-**18.** *Alahen prays too often to stay healthy.*
-
-::: details Show answer
-`zalahen thoyutham zel hral vebevol.`
-
-[z-Alahen | th-physical-met-any-term | z-rank/more | h-how-often] | v-pray
-:::
-
-**19.** *Alahen screams against the rules.*
-
-::: details Show answer
-`zalahen vezugel uem thedel.`
-
-z-Alahen | v-scream | [contrary-to | th-FORBID-disallowed]
-:::
-
-**20.** *Ahaben sleeps, contrary to their plan.*
-
-::: details Show answer
-`zahaben vezebal uem thamam.`
-
-z-Ahaben | v-sleep | [contrary-to | th-plan-itinerary]
-:::
-
-**21.** *Azawan tells against Ahaben's will (Ahaben said no).*
-
-::: details Show answer
-`zazawan vezebel uem thuxedem bahaben.`
-
-z-Azawan | v-tell | [contrary-to | [th-CONSENT-refused | b-Ahaben]]
-:::
-
-**22.** *Azawan prays for Alahen's sake (for Alahen's relatedness).*
-
-::: details Show answer
-`zazawan vebevol thanathom balahen.`
-
-z-Azawan | v-pray | [th-relatedness-motive-any-term | b-Alahen]
+[z-candle | th-physical-met-any-term | z-rank/more | g-heavy]
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zalahen vezebel thanather.`
+**1.** `zebehul wanathumor gobum.`
 
 ::: details Show answer
+z-bell | [w-relatedness-unmet-modifiable-AIMED-SURGING | g-stimulus]
 
-z-Alahen | v-tell | th-relatedness-ought-trial
-
-*Alahen ought to try telling for relatedness (worth a try).*
+*Resentful at the bell*, in waves.
 :::
 
-**2.** `zahaben vezugel thoyuther.`
+**2.** `thulothuruor.`
 
 ::: details Show answer
+th-competence-unmet-passing-UNPLACED-SURGING
 
-z-Ahaben | v-scream | th-physical-ought-trial
-
-*Ahaben ought to try screaming for the physical sake (worth a try).*
+*I'm anxious.*
 :::
 
-**3.** `zalahen vebevol thulothol.`
+**3.** `thanathum behon.`
 
 ::: details Show answer
+[th-relatedness-unmet-modifiable | b-listener]
 
-z-Alahen | v-pray | th-competence-motive-lasting
-
-*Alahen prays for competence (over time).*
+*I'm sorry.* (that hurt your sense of connection)
 :::
 
-**4.** `zahaben venehal thanathom.`
+**4.** `zahaben vehahel thumer.`
 
 ::: details Show answer
+z-Ahaben | v-sit | th-REQUIRE-expected
 
-z-Ahaben | v-kneel | th-relatedness-motive-any-term
-
-*Ahaben kneels for relatedness (horizon unstated).*
+*Ahaben is supposed to sit.*
 :::
 
-**5.** `zazawan vahehal thanathor.`
+**5.** `zazawan vebevol thuxegor balahen.`
 
 ::: details Show answer
+z-Azawan | v-pray | [th-CONSENT-assumed | b-Alahen]
 
-z-Azawan | v-hush | th-relatedness-motive-immediate
-
-*Azawan hushes for relatedness (right now).*
+*Azawan prays, assuming Alahen is OK with it.*
 :::
 
-**6.** `zorozol gozothar.`
+**6.** `zalahen vezebal uem thedel.`
 
 ::: details Show answer
+z-Alahen | v-sleep | [contrary-to | th-FORBID-disallowed]
 
-z-rosary | g-pleasure-met-immediate
-
-*My rosary is a pleasure right now.*
+*Alahen sleeps against the rules.*
 :::
 
-**7.** `zagogal wahuthum gobum.`
+#### Pick one {#intermediate-pick-one}
+
+**1.** *Azawan kneels for relatedness* (why Azawan is doing it). `zazawan venehal thanathom.` or `zazawan venehal thanathem.`
 
 ::: details Show answer
+`zazawan venehal thanathom.`
 
-z-candle | [w-autonomy-unmet-modifiable | g-stimulus]
+z-Azawan | v-kneel | th-relatedness-motive-any-term
 
-*The candle detracts from autonomy (modifiable).*
+**`tho`** describes the motive; **`the`** says Azawan *ought* to kneel.
 :::
 
-**8.** `zebehul wanathum gobum.`
+**2.** *Alahen is allowed to sleep* (the rules allow it). `zalahen vezebal thegol.` or `zalahen vezebal thegom.`
 
 ::: details Show answer
+`zalahen vezebal thegol.`
 
-z-bell | [w-relatedness-unmet-modifiable | g-stimulus]
+z-Alahen | v-sleep | th-PERMIT-allowed
 
-*The bell detracts from relatedness (modifiable).*
+**-l** is permission from a rule; **-m** is a person granting it.
 :::
 
-**9.** `zalahen vezugel thoyuthom hual.`
+#### Fix it {#intermediate-fix-it}
+
+**1.** *My candle serves relatedness.* <!-- lint: error -->`zagogal thanatham.`
 
 ::: details Show answer
+`zagogal ganatham.`
 
-z-Alahen | v-scream | th-physical-motive-any-term | h-always-except
+z-candle | g-relatedness-met-any-term
 
-*Alahen screams for the physical sake (as usual).*
-:::
-
-**10.** `zalahen vebevol thedel.`
-
-::: details Show answer
-
-z-Alahen | v-pray | th-FORBID-disallowed
-
-*Alahen is not allowed to pray (the rules forbid it).*
-:::
-
-**11.** `zahaben vezebal thuxegom.`
-
-::: details Show answer
-
-z-Ahaben | v-sleep | th-CONSENT-given
-
-*Ahaben lets themself sleep.*
-:::
-
-**12.** `zazawan vezugel thuxedem balahen.`
-
-::: details Show answer
-
-z-Azawan | v-scream | [th-CONSENT-refused | b-Alahen]
-
-*Azawan screams, though Alahen said no to it.*
-:::
-
-**13.** `zehehal gulothamam.`
-
-::: details Show answer
-
-z-church | g-competence-met-any-term-INTERNAL-FLOWING
-
-*Quietly proud of my church:* competence met; held inside; flowing.
-:::
-
-**14.** `zazawan venehal thumel.`
-
-::: details Show answer
-
-z-Azawan | v-kneel | th-REQUIRE-rule
-
-*Azawan has to kneel (the rules say so).*
-:::
-
-**15.** `zahaben vahehal thumem balahen.`
-
-::: details Show answer
-
-z-Ahaben | v-hush | [th-REQUIRE-demanded | b-Alahen]
-
-*Alahen makes Ahaben hush.*
-:::
-
-**16.** `zalahen vabayal thumer.`
-
-::: details Show answer
-
-z-Alahen | v-bow | th-REQUIRE-expected
-
-*Alahen is supposed to bow.*
-:::
-
-**17.** `zalahen vahehal thebethor.`
-
-::: details Show answer
-
-z-Alahen | v-hush | th-beneficence-motive-immediate
-
-*Alahen hushes for beneficence (right now).*
-:::
-
-**18.** `zebehul wamethum gobum.`
-
-::: details Show answer
-
-z-bell | [w-purpose-unmet-modifiable | g-stimulus]
-
-*The bell detracts from purpose (modifiable).*
-:::
-
-**19.** `zagogalx thegatham zoel gral.`
-
-::: details Show answer
-
-[z-candle-x | th-sake-met-any-term | z-equal-rank | g-amount]
-
-*There are enough candles.*
-:::
-
-**20.** `zahaben vahehal uem thumem balahen.`
-
-::: details Show answer
-
-z-Ahaben | v-hush | [contrary-to | [th-REQUIRE-demanded | b-Alahen]]
-
-*Ahaben hushes, against Alahen's orders.*
-:::
-
-**21.** `zalahen vabayal uem thedel thegom.`
-
-::: details Show answer
-
-z-Alahen | v-bow | [contrary-to | th-FORBID-disallowed] | th-PERMIT-granted
-
-*Alahen bows against the rules, and I'm allowing it.*
-:::
-
-**22.** `zorozol gulothal bahaben.`
-
-::: details Show answer
-
-z-rosary | [g-competence-met-lasting | b-Ahaben]
-
-*My rosary serves Ahaben's competence in the long term.*
+A belonging's sake word is `/ɡ/` after the noun; on `/th/` it is about an event, here just the candle being there.
 :::
 
 ## See also

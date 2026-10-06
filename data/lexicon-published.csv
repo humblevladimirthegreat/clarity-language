@@ -21,7 +21,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🤑,greed,egedo,wealth,greed hungers for wealth,,asset; wealthy; rich; poor,
 🤭,gasp,agabu,shock,gasp at a shock,,,
 🫣,peek,ebaga,surveillance,peek to spy; surveillance is watching without being the seen act,,monitor; glance,
-🤫,hush,aheha,confidentiality,a hushed whisper keeps the matter private,,,sakes.md#intermediate-translation-practice
+🤫,hush,aheha,confidentiality,a hushed whisper keeps the matter private,,,
 🤔,think,evega,doubt,think shows doubt,,understand; consider; consideration; reckon,clause.md#beginner-practice
 🫡,salute,azadu,respect,a salute honors someone; respect is honoring their worth,,civil; admire,
 🤐,secret,ezege,discretion,secret lips stay discreet,,private,
@@ -128,7 +128,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🙌,hooray,uhohu,,,,,
 🫶,care,egehe,kindness,heart hands offer care; kindness is warmth shown to others,,tender,
 🤝,handshake,aha,co-participation,handshake seals shared presence; co-participation is sharing the floor,,participate; joint; interaction; membership; participation,
-🙏,pray,ebevo,gratitude,pray expresses gratitude,,grateful,sakes.md#intermediate-translation-practice
+🙏,pray,ebevo,gratitude,pray expresses gratitude,,grateful,sakes.md#intermediate-practice
 ✍️,write,arada,authorship,write puts words on the page; authorship is claiming those words,,author,questions.md#beginner-practice
 💅,nail-polish,eneba,,,,,
 🤳,selfie,ezave,vanity,selfie reflects vanity,,,
@@ -163,7 +163,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💁,sass,azaze,attitude,tipping hand shows attitude,,,
 🙋,raise-hand,ereze,initiative,raised hand volunteers; initiative is the unobservable willingness,,volunteer; undertake; keen; eager,
 🧏,deaf,adeva,,,,,
-🙇,bow,abaya,apology,a bow of regret; an apology owns a wrong,,excuse; apologize,sakes.md#intermediate-translation-practice
+🙇,bow,abaya,apology,a bow of regret; an apology owns a wrong,,excuse; apologize,
 🤦,face-palm,evezu,exasperation,facepalm shows exasperation,,,
 🤷,shrug,ahawe,uncertainty,a shrug says who knows; uncertainty is not knowing,,,
 🧑‍⚕️,heal,ehehu,recovery,the healer restores health; recovery is getting well again,,recover; therapy,
@@ -218,7 +218,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💇,haircut,ehegu,self-presentation,haircut is grooming; self-presentation is the unobservable aim,,,
 🚶,walk,owoga,,,,march; wander,relations.md#beginner-practice
 🧍,stand,azado,presence,stand shows presence,,existence; attendance,clause.md#intermediate-practice
-🧎,kneel,eneha,submission,kneel shows submission,,,sakes.md#intermediate-translation-practice
+🧎,kneel,eneha,submission,kneel shows submission,,,sakes.md#intermediate-practice
 🧑‍🦼,power-chair,abavo,,,,,
 🧑‍🦽,propel,abobe,independence,self-propelling a chair shows independence,,motivate,
 🏃,run,araha,,,,,speech-moves.md#beginner-practice
@@ -448,7 +448,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🌯,burrito,ebado,encapsulation,burrito wraps it all up,,,
 🫔,tamale,adayu,,,,,
 🧆,falafel,aveva,alternative,falafel is a meat alternative,,substitute,
-🥚,egg,ega,potential,egg holds unrealized potential,,,sakes.md#intermediate-translation-practice
+🥚,egg,ega,potential,egg holds unrealized potential,,,
 🍳,cooking,uguge,,,,,
 🥘,skillet,ozega,medley,many components one pan,,,
 🍲,stew,uzudu,simmer,heat over time,,pot,
@@ -514,9 +514,9 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🫙,jar,ahe,storage,jar stores what is kept,,vessel; store; stock,
 🏺,amphora,ameve,,,,,
 🌐,globe,ogoba,connected,a globe links every place; connected means linked together,,global; world; earth,
-🗺️,map,ama,plan,a map charts a route; a plan charts a course,,agenda; design; project,sakes.md#intermediate-translation-practice
+🗺️,map,ama,plan,a map charts a route; a plan charts a course,,agenda; design; project,
 🗾,country,agu,scope,a map of one country; scope is the area the picture includes,,national; region; nation; extent; regional; zone; territory; area,
-🧭,compass,ame,direction,a compass points the way; direction is where you're headed,,direct; guide,sakes.md#intermediate-translation-practice
+🧭,compass,ame,direction,a compass points the way; direction is where you're headed,,direct; guide,sakes.md#intermediate-practice
 ⛰️,mountain,amada,challenge,mountains are hard to climb; a challenge is hard to face,,pile; heap,predication.md#beginner-practice
 🛘,landslide,alaze,breakdown,landslide is sudden collapse; breakdown is the unobservable failure of a system,,crash; collapse; crack; outage,
 🌋,volcano,avoge,eruption,a volcano bursts outward; eruption is bursting emotion,,burst,
@@ -546,7 +546,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💒,wedding,ewede,union,wedding chapel joins two people; union is joining together,,marry; combination; federal,
 🗼,tower,adave,height,tower rises high; height is vertical extent,,high; tall; peak; top,
 🗽,statue,azoda,liberty,statue of liberty,,liberal,
-⛪,church,eheha,faith,church gathers believers; faith is trust in what is unseen,,religious; religion,sakes.md#intermediate-translation-practice
+⛪,church,eheha,faith,church gathers believers; faith is trust in what is unseen,,religious; religion,
 🕌,mosque,ameze,,,,,
 🛕,temple,edeba,,,,,
 🕍,synagogue,ezugo,,,,,
@@ -658,7 +658,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🎐,chime,ahawo,,,,,
 🧧,red-envelope,eredo,blessing,red envelope carries good wishes; blessing is wished well-being,,,
 🎀,ribbon,ereba,embellishment,ribbon adorns; embellishment is the unobservable extra,,belt,
-🎁,present,ebe,generosity,a present is given to another; generosity is giving freely,,gift; submit; charity,sakes.md#intermediate-translation-practice
+🎁,present,ebe,generosity,a present is given to another; generosity is giving freely,,gift; submit; charity,
 🎗️,awareness,aweza,solidarity,the ribbon is worn for a cause; solidarity is standing with others,,aware,
 🎟️,admission-tickets,adegu,admission,ticket grants entry inside; admission is being let in,,entry,
 🎫,ticket,edega,,,,,clause.md#intermediate-practice
@@ -721,7 +721,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧵,thread,evevu,continuity,a thread runs unbroken; continuity is going on without a break,,constant; consistent; wire; cable; continuous; strip,
 🪡,needle,eneda,,,,,
 🧶,yarn,ayaha,blanket,yarn is knit into a blanket; a blanket is the cover that warms,,,
-🪢,knot,ana,bond,knot ties two ends together; bond is holding fast together,,bind; integrate; stick,sakes.md#intermediate-translation-practice
+🪢,knot,ana,bond,knot ties two ends together; bond is holding fast together,,bind; integrate; stick,sakes.md#intermediate-practice
 🕶️,sunglasses,ozaga,unbothered,sunglasses hide the eyes; cool is calm unbothered style,,,
 🥽,goggles,agogu,,,,,
 🥼,lab-coat,alego,expertise,lab coat marks scientific work; expertise is specialized knowledge,,technical; master; talent; specialist; specialize; pro; qualification; expert,
@@ -762,7 +762,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧢,cap,ageba,,,,,
 🪖,helmet,ehevu,,,,,roles.md#beginner-practice
 ⛑️,hard-hat,aheda,,,,,
-📿,rosary,orozo,prayer,beads count prayers; prayer is speaking to the sacred,,,sakes.md#intermediate-translation-practice
+📿,rosary,orozo,prayer,beads count prayers; prayer is speaking to the sacred,,,
 💄,lipstick,elebo,appearance,lipstick colors the lips; appearance is how you present,,appear,
 💍,ring,ereha,promise,a ring seals a vow; a promise binds your future self,,surround; guarantee; assure,joins.md#intermediate-practice
 💎,gemstone,ehezo,value,gem is rare and precious; value is worth holding dear,,worth; valuable; appreciate; rate,
@@ -819,7 +819,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 📹,camcorder,agago,recording,camcorder tapes moving scenes; recording is preserving over time,,,
 📼,videocassette,evude,,,,,
 🔍,magnify,amaga,scrutiny,magnifier enlarges small detail; scrutiny is close examination,v:find,seek; discover; encounter; examination; detect; notice,word-endings.md#beginner-practice
-🕯️,candle,agoga,awash,candle light fills the room; awash is charge in the surrounding field,,,sakes.md#intermediate-translation-practice
+🕯️,candle,agoga,awash,candle light fills the room; awash is charge in the surrounding field,,,sakes.md#intermediate-practice
 💡,lightbulb,ado,candela,lightbulb sets luminous intensity; candela is the SI luminous-intensity unit,,,
 🔦,flashlight,aveha,revelation,flashlight reveals what was dark; revelation is making known,,expose; flash,speech-moves.md#intermediate-practice
 🏮,lantern,alude,guidance,lantern lights the path ahead; guidance is showing the way,,counsel,
@@ -851,7 +851,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 📦,package,abego,aggregation,package wraps items; aggregation is the unobservable grouping,,software; module,clause.md#advanced-translation-practice
 📫,mailbox,emebe,reception,closed mailbox holds delivered mail; reception is receiving inward,,,
 📮,post-box,oboza,dispatch,postbox sends mail on its way; dispatch is sending outward,,send; mail; deliver; post,
-🗳️,ballot,ahu,choice,ballot records your vote; choice is selecting among options,,vote; election; elect; poll; voluntary,sakes.md#intermediate-translation-practice
+🗳️,ballot,ahu,choice,ballot records your vote; choice is selecting among options,,vote; election; elect; poll; voluntary,
 ✏️,pencil,ebeyo,draft,pencil marks can be erased; draft is tentative first version,,outline,word-endings.md#beginner-practice
 🖊️,pen,ebewe,commitment,pen ink stays on the page; commitment is a binding promise,,dedicate,intention.md#intermediate-translation-practice
 🖌️,paintbrush,ebuda,artistry,brush paints with flowing strokes; artistry is skilled creative work,,art; paint; illustration; brush; draw; illustrate; stroke,comparatives.md#advanced-translation-practice
@@ -962,7 +962,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🛃,customs,agezo,inspection,customs inspects what crosses border; inspection is close checking,,examine; review; investigation,
 ⚠️,warning,owawo,risk,a warning sign flags a hazard; risk is the chance of harm,,,
 🚸,children-crossing,ahego,vulnerability,children crossing marks those at risk; vulnerability is easily harmed,,,
-⛔,no-entry,ede,forbidden,no entry sign blocks the way; forbidden is not allowed,,ban; illegal,sakes.md#intermediate-translation-practice
+⛔,no-entry,ede,forbidden,no entry sign blocks the way; forbidden is not allowed,,ban; illegal,
 🚫,prohibited,ebohe,taboo,prohibited sign bans; taboo is the unobservable ban-as-norm,,,
 🚳,no-bicycles,onovu,,,,,
 🚭,no-smoking,onohe,,,,,
@@ -1059,7 +1059,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ✅,check,ehu,decision,checkmark marks a confirmed pick; decision is a settled choice with revisability,,conclude; determine; ensure,
 ❌,cross,ogoza,rejection,cross mark means no wrong; rejection is refused as wrong,,,spans.md#intermediate-practice
 ➰,loop,uluba,recurrence,curly loop circles back; repetition is returning to the start,,,
-©️,copyright,egabe,ownership,copyright marks legal control; ownership is legal right to control,,possess; possession; own; property,sakes.md#intermediate-translation-practice
+©️,copyright,egabe,ownership,copyright marks legal control; ownership is legal right to control,,possess; possession; own; property,
 ®️,registered,erehu,,,,registration,
 ™️,trademark,edede,claim,trademark claims brand identity; claim is asserting as yours,,brand,
 🫟,splatter,azabo,disorder,splatter makes a mess; disorder is the unobservable lack of order,,mess; stain,
@@ -1076,7 +1076,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔴,red,ereda,,,,,pronouns.md#intermediate-practice
 🟠,orange,oraha,,,,,
 🟡,yellow,eyaye,caution,yellow circle warns slow down; caution is careful awareness,,,
-🟢,green,ego,permission,green circle signals go ahead; permission is allowed to proceed,,license,sakes.md#intermediate-translation-practice
+🟢,green,ego,permission,green circle signals go ahead; permission is allowed to proceed,,license,
 🔵,blue,ubuhe,,,,,clause.md#intermediate-practice
 🟣,purple,ebebu,royalty,purple circle marks regal hue; royalty is high noble rank,,,
 🟤,brown,abavu,earthiness,brown circle is soil and wood; earthiness is plain grounded quality,,,
