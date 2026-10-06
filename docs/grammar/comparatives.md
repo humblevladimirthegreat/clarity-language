@@ -87,24 +87,32 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 | Rank **`e`** (`zel`) | rank on a shared quality | *more … than* / *the …-est* | **`e`** ≈ order |
 | Equality **`oe`** (`zoel` / `zoem`) | same height on the quality | *as … as* / *about as … as* | **`oe`** ≈ one + order (one shared rank) |
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
-Short drills for Beginner. Try each item before opening **Show answer**. Rank **`zel`** plus shared `/ɡ/` is *more … than*; one name before **`zel`** is the superlative; **`zoel`** / **`zoem`** are *as … as* / *about as … as*.
+Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a racetrack
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *slow* | `ezehom` | `ezehol` *snail* |
-| *haste* | `adehum` | `adehul` *dash* |
-| *agility* | `ahagum` | `ahagul` *field hockey* |
-| *intensity* | `ahegem` | `ahegel` *hockey* |
-| *ocean* | `wohahal` | `ohahal` *ocean* |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *slow* | `ezehom` | 🐌 from *snail* |
+| *agility* | `ahagum` | 🏑 from *field hockey* |
+| *intensity* | `ahegem` | 🏒 from *hockey* |
+| *ocean* | `wohahal` | 🌊: an ocean of it, so *much* before a quality |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *haste* | `hadehum` |
+| *challenge* | `amadam` |
+| *angry* | `anegel` |
+| *sleepy* | `ezebul` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
@@ -132,101 +140,112 @@ Short drills for Beginner. Try each item before opening **Show answer**. Rank **
 [z-Alahen | z-rank/more | g-haste]
 :::
 
-**4.** *Azawan is about as agile as Ahaben.*
+**4.** *Azawan is about as intense as Ahaben.*
 
 ::: details Show answer
-`zazawan zahaben zoem gahagum.`
+`zazawan zahaben zoem gahegem.`
 
-[z-Azawan | z-Ahaben | z-equal-rank.open | g-agility]
+[z-Azawan | z-Ahaben | z-equal-rank.open | g-intensity]
 :::
 
-**5.** *Alahen is much more intense than Azawan.*
+**5.** *Alahen is much more challenging than Azawan.*
 
 ::: details Show answer
-`zalahen zazawan zel wohahal gahegem.`
+`zalahen zazawan zel wohahal gamadam.`
 
-[z-Alahen | z-Azawan | z-rank/more | [w-ocean | g-intensity]]
+[z-Alahen | z-Azawan | z-rank/more | [w-ocean | g-challenge]]
 :::
 
-**6.** *Ahaben is more hasty than Alahen.*
+**6.** *Azawan is the angriest.*
 
 ::: details Show answer
-`zahaben zalahen zel gadehum.`
+`zazawan zel ganegel.`
 
-[z-Ahaben | z-Alahen | z-rank/more | g-haste]
-:::
-
-**7.** *Alahen is the most intense.*
-
-::: details Show answer
-`zalahen zel gahegem.`
-
-[z-Alahen | z-rank/more | g-intensity]
+[z-Azawan | z-rank/more | g-angry]
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zalahen zahaben zel gahagum.`
+**1.** `zahaben zel gahagum.`
 
 ::: details Show answer
-
-[z-Alahen | z-Ahaben | z-rank/more | g-agility]
-
-*Alahen is more agile than Ahaben.*
-:::
-
-**2.** `zahaben zel gahagum.`
-
-::: details Show answer
-
 [z-Ahaben | z-rank/more | g-agility]
 
 *Ahaben is the most agile.*
 :::
 
-**3.** `zalahen zahaben zoel gadehum.`
+**2.** `zalahen zahaben zoel gadehum.`
 
 ::: details Show answer
-
 [z-Alahen | z-Ahaben | z-equal-rank | g-haste]
 
 *Alahen is as hasty as Ahaben.*
 :::
 
-**4.** `zahaben zazawan zoem gahegem.`
+**3.** `zahaben zalahen zel wohahal gezehom.`
 
 ::: details Show answer
+[z-Ahaben | z-Alahen | z-rank/more | [w-ocean | g-slow]]
 
-[z-Ahaben | z-Azawan | z-equal-rank.open | g-intensity]
-
-*Ahaben is about as intense as Azawan.*
+*Ahaben is much slower than Alahen.*
 :::
 
-**5.** `zahaben zalahen zel wohahal gahagum.`
+**4.** `zazawan zalahen zoem ganegel.`
 
 ::: details Show answer
+[z-Azawan | z-Alahen | z-equal-rank.open | g-angry]
 
-[z-Ahaben | z-Alahen | z-rank/more | [w-ocean | g-agility]]
-
-*Ahaben is much more agile than Alahen.*
+*Azawan is about as angry as Alahen.*
 :::
 
-**6.** `zazawan zalahen zel gadehum.`
+**5.** `zalahen zel gahegem.`
 
 ::: details Show answer
+[z-Alahen | z-rank/more | g-intensity]
 
-[z-Azawan | z-Alahen | z-rank/more | g-haste]
-
-*Azawan is hastier than Alahen.*
+*Alahen is the most intense.*
 :::
 
-**7.** `zazawan zel gezehom.`
+**6.** `zazawan zahaben zel gezebul.`
 
 ::: details Show answer
+[z-Azawan | z-Ahaben | z-rank/more | g-sleepy]
 
-[z-Azawan | z-rank/more | g-slow]
+*Azawan is sleepier than Ahaben.*
+:::
 
-*Azawan is the slowest.*
+#### Pick one {#beginner-pick-one}
+
+**1.** *Alahen is as agile as Azawan.* `zalahen zazawan zoel gahagum.` or `zalahen zazawan zel gahagum.`
+
+::: details Show answer
+`zalahen zazawan zoel gahagum.`
+
+[z-Alahen | z-Azawan | z-equal-rank | g-agility]
+
+*As … as* is the tie **`zoel`**; **`zel`** would rank Alahen higher.
+:::
+
+**2.** *Ahaben is more challenging than Alahen.* `zahaben zalahen zel gamadam.` or `zalahen zahaben zel gamadam.`
+
+::: details Show answer
+`zahaben zalahen zel gamadam.`
+
+[z-Ahaben | z-Alahen | z-rank/more | g-challenge]
+
+The first item before **`zel`** ranks higher.
+:::
+
+#### Fix it {#beginner-fix-it}
+
+**1.** *Azawan is slower than Alahen.* <!-- lint: error -->`zazawan zel zalahen gezehom.`
+
+::: details Show answer
+`zazawan zalahen zel gezehom.`
+
+[z-Azawan | z-Alahen | z-rank/more | g-slow]
+
+**`zel`** closes the list after both names; it is not a word between them like English *than*.
 :::
 
 ## Intermediate {#intermediate}

@@ -71,7 +71,7 @@ z-Azawan | v-sit
 
   it("pads comparatives beginner block", () => {
     const md = readFileSync("docs/grammar/comparatives.md", "utf8");
-    const start = md.indexOf("### Translation practice");
+    const start = md.indexOf("### Practice {#beginner-practice}");
     const end = md.indexOf("## Intermediate", start);
     const slice = md.slice(start, end);
     const out = padExerciseSpoilerBlanks(slice);
