@@ -1,7 +1,7 @@
 # Proposal: cheat sheets for the whole grammar
 
-**Status:** PROPOSED. Rollout steps 1–3 done: pilot sheet [joins and hooks](../grammar/joins-hooks-cheatsheet.md); [`scripts/lint-cheat-sheets.ts`](../../scripts/lint-cheat-sheets.ts) (layers 2 and 3, plus the Claritish sheet); [`scripts/cheat-sheet-blocks.ts`](../../scripts/cheat-sheet-blocks.ts) (layer 1) and the [Agazan → English](../grammar/agazan-english-cheatsheet.md) sheet.  
-**Related:** TODO *join vowel decision tree in advanced vowel series*; the existing [Exceptions](../grammar/exceptions-cheatsheet.md) sheet; the Claritish [cheat sheet](../grammar/claritish/cheat-sheet.md) kept in step by the same lint; [Claritish track policy](../meta/grammar-docs.md#claritish-track).  
+**Status:** PROPOSED. Rollout steps 1–3 and 5 done: pilot sheet [joins and hooks](../grammar/cheat-sheets/joins-hooks.md); [`scripts/lint-cheat-sheets.ts`](../../scripts/lint-cheat-sheets.ts) (layers 2 and 3, plus the Claritish sheet); [`scripts/cheat-sheet-blocks.ts`](../../scripts/cheat-sheet-blocks.ts) (layer 1) and the [Agazan → English](../grammar/cheat-sheets/agazan-english.md) sheet; sheets moved to `docs/grammar/cheat-sheets/` with redirects, and the editor rules are in [cheat sheets](../meta/grammar-docs.md#cheat-sheets).  
+**Related:** TODO *join vowel decision tree in advanced vowel series*; the existing [Exceptions](../grammar/cheat-sheets/exceptions.md) sheet; the Claritish [cheat sheet](../grammar/claritish/cheat-sheet.md) kept in step by the same lint; [Claritish track policy](../meta/grammar-docs.md#claritish-track).  
 **Design authority:** stays with the owning grammar pages and the lexicon CSVs. Sheets add no forms, restate no rule the owning page does not teach, and are never cited as the source for a form.
 
 ## Motivation
@@ -102,4 +102,4 @@ A meaning or gloss change that keeps the spelling passes layers 2 and 3. Generat
    - Closed function words with no data source (joins, hooks, turn words, stand-ins, pointers, tags, resumes) get one hand-written **find the family by shape** table that points to the owning sections and the joins and hooks sheet, instead of a full listing.
    - The pilot sheet's join-act / join-relation grid stays hand-written: it is a vowel grid, not a spelling list.
 4. Remaining sheets, one per change, each with its owning tables marked.
-5. Move sheets into `cheat-sheets/` with redirects; add the grammar-docs.md section and the AGENTS.md row.
+5. Move sheets into `cheat-sheets/` with redirects; add the grammar-docs.md section and the AGENTS.md row (done, ahead of step 4 so new sheets start in the folder; the Exceptions sheet is registered in the lint too, and passes).

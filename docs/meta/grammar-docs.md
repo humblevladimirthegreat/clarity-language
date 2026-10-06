@@ -468,6 +468,25 @@ Wording and voice for the track: [claritish-style.md](claritish-style.md).
 
 **Cheat sheet:** `cheat-sheet.md` is the last page of the track: every drop-in from the lessons, condensed into tables, for keeping open while writing or printing (it is the track's review tool; Claritish has no flashcard deck). It adds no forms, links only to lessons, and is not a lesson (no gap or practice). `scripts/lint-cheat-sheets.ts` runs in the build: every drop-in in a lesson table must be on the sheet, and every drop-in on the sheet must come from a lesson, verbatim or with its **-l / -m / -r** ending swapped. When a lesson adds, drops, or rewords a form, update the sheet in the same change.
 
+## Cheat sheets {#cheat-sheets}
+
+Grammar cheat sheets live in `docs/grammar/cheat-sheets/`, one printable page per learner-facing subsystem, grouped the way a learner looks forms up, not one per stage page. They add no forms, restate no rule the owning page does not teach, and are never the source for a form. A sheet that needs a sentence the owning page lacks means the owning page needs it first.
+
+- **Shape:** front matter `pageClass: cheat-sheet` and `outline: false`, then `<PrintButton />`, then the H1 *… cheat sheet*. Rows are a word or two of English per form: no practice, gap stories, or worked examples.
+- **Sidebar:** the **Cheat Sheets** group, in reading order (sounds first; Agazan → English and Exceptions last).
+- **Links:** every row links to the section that teaches it. Stage pages never link to a sheet (as with the [recipe track](#recipe-track)); [how to learn](../grammar/introduction.md#how-to-learn) may name the group once.
+- **Stage tags:** **B** / **I** / **A** per row, or per section when the whole section is one stage: the stage of the section the row links to.
+- **Wording:** usual [doc style](doc-style.md); learner names, no [terminology](../grammar/terminology.md) links; English cues in italics; forms in backticks.
+
+**Keeping sheets in step.** `npm run build` runs two checks:
+
+1. **Generated blocks.** A table between `<!-- generated: SOURCE key=value -->` and `<!-- /generated -->` is rebuilt from the lexicon CSVs and `src/closed-roots.ts` by `scripts/cheat-sheet-blocks.ts` (sources and filters are listed at its top). The build fails when a block is stale; `npm run cheat-sheet-blocks -- --write` refreshes it. Never edit inside the markers. Prefer a generated block wherever the data owns the forms (overlays by `kind=`).
+2. **Hand-written rows** (`scripts/lint-cheat-sheets.ts`). Every row links to an owning section (in the row, the table header, or the prose between the nearest heading and the table; a row with an empty first cell shares the row above's links), and every Agazan form in it appears in one of those sections, verbatim or, for one word, with **-l** / **-m** / **-r** swapped.
+
+**Opting an owning table in.** Put `<!-- cheat-sheet: ID -->` on the line right before a table on a grammar page, where ID is the sheet's key in the lint's `SHEETS` map. Every form in that table must then be on the sheet. Mark tables that list a subsystem's forms in backticks; leave example-only tables unmarked. A change to a marked table updates its sheet in the same change.
+
+**Adding a sheet:** create it in `cheat-sheets/`, register it in `SHEETS`, add it to the sidebar, and mark its owning tables.
+
 ## What belongs where
 <a id="what-belongs-where"></a>
 

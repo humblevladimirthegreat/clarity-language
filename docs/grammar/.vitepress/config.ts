@@ -102,9 +102,9 @@ export default defineConfig({
       {
         text: 'Cheat Sheets',
         items: [
-          { text: 'Joins and hooks', link: '/joins-hooks-cheatsheet' },
-          { text: 'Agazan → English', link: '/agazan-english-cheatsheet' },
-          { text: 'Exceptions', link: '/exceptions-cheatsheet' },
+          { text: 'Joins and hooks', link: '/cheat-sheets/joins-hooks' },
+          { text: 'Agazan → English', link: '/cheat-sheets/agazan-english' },
+          { text: 'Exceptions', link: '/cheat-sheets/exceptions' },
         ],
       },
     ],

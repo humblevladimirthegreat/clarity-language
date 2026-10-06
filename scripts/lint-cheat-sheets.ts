@@ -17,7 +17,7 @@
 // teaches the feeling-word pattern with one worked example, not the lesson's
 // vocabulary.
 import { readdirSync, readFileSync } from "node:fs";
-import { join } from "node:path";
+import { join, posix } from "node:path";
 
 import { classifyAgazanSpan } from "../src/lint/agazan-docs.js";
 import { pageSections, type PageSections } from "../src/lint/learning-order.js";
@@ -25,12 +25,14 @@ import { lineNumberAt } from "../src/retie/tokens.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
+const sheetsDir = "cheat-sheets";
 const claritishDir = join(grammarDir, "claritish");
 
-/** Grammar sheets by the ID owning pages use in `<!-- cheat-sheet: ID -->`. */
+/** Grammar sheets in docs/grammar/cheat-sheets/, by the ID owning pages use in `<!-- cheat-sheet: ID -->`. */
 const SHEETS: Record<string, string> = {
-  "joins-hooks": "joins-hooks-cheatsheet.md",
-  "agazan-english": "agazan-english-cheatsheet.md",
+  "joins-hooks": "joins-hooks.md",
+  "agazan-english": "agazan-english.md",
+  exceptions: "exceptions.md",
 };
 
 const CLARITISH_SHEET = "cheat-sheet.md";
@@ -125,17 +127,18 @@ function loadPage(page: string) {
   return pageCache.get(page)!;
 }
 
-/** Text of the section a link lands in (the whole page when it has no anchor). */
+/** Text of the section a link on `sheet` lands in (the whole page when it has no anchor). */
 function linkedText(target: string, sheet: string): string | undefined {
   const [file, id] = target.split("#");
-  const page = loadPage(file ? file.replace(/^\.\//, "") : sheet);
+  const page = loadPage(file ? posix.join(posix.dirname(sheet), file) : sheet);
   if (!page) return undefined;
   if (!id) return page.markdown;
   const section = page.sections.anchors.get(id);
   return section ? page.markdown.slice(section.offset, section.end) : undefined;
 }
 
-function lintGrammarSheet(sheet: string): void {
+function lintGrammarSheet(file: string): void {
+  const sheet = posix.join(sheetsDir, file);
   const markdown = readFileSync(join(grammarDir, sheet), "utf8");
   for (const table of tables(markdown)) {
     const shared = [...linkTargets(table.header), ...linkTargets(table.intro)];
@@ -169,9 +172,8 @@ function lintGrammarSheet(sheet: string): void {
 /** Opted-in tables on grammar pages: every form must be on the named sheet. */
 function lintCoverage(): void {
   const sheetText = new Map<string, string>();
-  for (const [id, file] of Object.entries(SHEETS)) sheetText.set(id, readFileSync(join(grammarDir, file), "utf8"));
-  const sheetFiles = new Set(Object.values(SHEETS));
-  for (const page of readdirSync(grammarDir).filter((f) => f.endsWith(".md") && !sheetFiles.has(f))) {
+  for (const [id, file] of Object.entries(SHEETS)) sheetText.set(id, readFileSync(join(grammarDir, sheetsDir, file), "utf8"));
+  for (const page of readdirSync(grammarDir).filter((f) => f.endsWith(".md"))) {
     const markdown = readFileSync(join(grammarDir, page), "utf8");
     for (const m of markdown.matchAll(MARKER_RE)) {
       const where = `${page}:${lineNumberAt(markdown, m.index!)}`;
@@ -188,7 +190,7 @@ function lintCoverage(): void {
         continue;
       }
       for (const form of new Set(formSpans(table[1]!))) {
-        if (!occursIn(form, sheet)) problems.push(`${where}: \`${form}\` is not on the ${SHEETS[id]} cheat sheet`);
+        if (!occursIn(form, sheet)) problems.push(`${where}: \`${form}\` is not on the ${sheetsDir}/${SHEETS[id]} cheat sheet`);
       }
     }
   }

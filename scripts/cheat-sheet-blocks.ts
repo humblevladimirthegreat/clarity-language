@@ -32,6 +32,7 @@ import { lineNumberAt } from "../src/retie/tokens.js";
 import { readData, REPO_ROOT } from "../src/repo-paths.js";
 
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
+const sheetsDir = join(grammarDir, "cheat-sheets");
 
 export const BLOCK_RE = /(<!--\s*generated:\s*([\w-]+)((?:\s+[\w-]+=\S+)*)\s*-->\n)([\s\S]*?)(<!--\s*\/generated\s*-->)/g;
 
@@ -54,14 +55,14 @@ function page(file: string) {
 
 const plain = (s: string) => s.replace(/[*`]/g, "").replace(/\s*\{#[^}]+\}$/, "").trim();
 
-/** `[Section title](page.md#id)` and the section's stage letter. */
+/** `[Section title](../page.md#id)` (sheets sit one folder down) and the section's stage letter. */
 function sectionCell(anchor: string): { link: string; stage: string } {
   const [file, id] = anchor.split("#") as [string, string | undefined];
   const p = page(file);
   const section = id ? p.sections.anchors.get(id) : undefined;
   if (id && !section) throw new Error(`anchor ${anchor} lands in no section`);
   const title = !section || section.level <= 2 ? plain(p.title) : plain(section.title);
-  return { link: `[${title}](${anchor})`, stage: section?.band ? STAGE[section.band] : "" };
+  return { link: `[${title}](../${anchor})`, stage: section?.band ? STAGE[section.band] : "" };
 }
 
 // ---------------------------------------------------------------- sources
@@ -167,7 +168,7 @@ function parseParams(text: string): Params {
 }
 
 function sheetFiles(): string[] {
-  return readdirSync(grammarDir).filter((f) => f.endsWith(".md"));
+  return readdirSync(sheetsDir).filter((f) => f.endsWith(".md"));
 }
 
 const write = process.argv.includes("--write");
@@ -175,7 +176,7 @@ const problems: string[] = [];
 let blocks = 0;
 
 for (const file of sheetFiles()) {
-  const path = join(grammarDir, file);
+  const path = join(sheetsDir, file);
   const markdown = readFileSync(path, "utf8");
   if (!markdown.includes("<!-- generated:")) continue;
   let stale = false;

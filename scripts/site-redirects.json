@@ -49,6 +49,21 @@
       "from": "/grammar/why-agelan.html",
       "to": "/grammar/why-agazan.html",
       "note": "Public URL after renaming why-agelan.md to why-agazan.md."
+    },
+    {
+      "from": "/grammar/joins-hooks-cheatsheet.html",
+      "to": "/grammar/cheat-sheets/joins-hooks.html",
+      "note": "Public URL after moving joins-hooks-cheatsheet.md into cheat-sheets/."
+    },
+    {
+      "from": "/grammar/agazan-english-cheatsheet.html",
+      "to": "/grammar/cheat-sheets/agazan-english.html",
+      "note": "Public URL after moving agazan-english-cheatsheet.md into cheat-sheets/."
+    },
+    {
+      "from": "/grammar/exceptions-cheatsheet.html",
+      "to": "/grammar/cheat-sheets/exceptions.html",
+      "note": "Public URL after moving exceptions-cheatsheet.md into cheat-sheets/."
     }
   ]
 }
