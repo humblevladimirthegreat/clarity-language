@@ -325,6 +325,7 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 >
 > "Azawan is not a dog."
 
+<!-- cheat-sheet: word-shape-clause -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | `/w/` hedge before the classifying `/ɡ/` | soft / hedged class | *Azawan is something of a dog* / *a dog, sort of* |
@@ -362,6 +363,7 @@ Beginner already used **`gugol`** (*is the same as*). Its other ending finishes 
 | **-l** | stand behind the match (closed) | *is* (the same as) |
 | **-m** | leave the match open | *same for our purposes* / *basically* |
 
+<!-- cheat-sheet: word-shape-clause -->
 | Agazan | English |
 |---------|---------|
 | `zalahen gugol bazawan` | *Alahen is (the same as) Azawan* |
@@ -383,6 +385,7 @@ English *Alahen is angry* can mean one outburst or the kind of person Alahen is.
 
 A label with no scope vowel says nothing about how far it reaches. Use one when that reach matters, the way you would add *this time* or *a teacher* in English.
 
+<!-- cheat-sheet: word-shape-clause -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`tha`** | this episode: this stretch of doing | *angry this time*, *lied (this once)* | **a** ≈ add (one instance added) |
@@ -474,6 +477,7 @@ A role compound carries one seam, so it takes this scope or the [ability](intent
 
 The four scope vowels also combine in pairs, the same pairs that [joins](joins.md) and [hooks](hooks.md) use. A pair that starts with **`u`** sets the second vowel's reach aside (*except this episode*, *except this pair*, *not in that role*). The other pairs have fixed meanings (*on*, *using*, *toward*); do not read them as the first vowel's meaning followed by the second's.
 
+<!-- cheat-sheet: word-shape-clause -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thao`** | this episode **on** this pair | *teacher this time, to Alahen* | **ao** ≈ on |

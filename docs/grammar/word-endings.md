@@ -59,6 +59,7 @@ The greeting names **you**, not the person you greet, so it works the same for a
 
 The last letters you just used, on the same root `azawa`:
 
+<!-- cheat-sheet: word-shape-clause -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | `azawal` | first mention, everyday kind | *swan* | **l** ≈ concrete |
@@ -293,6 +294,7 @@ What counts as one depends on what the name names:
 | a yearly event | one running of it |
 | a person | someone with that name (*another Azawan*) |
 
+<!-- cheat-sheet: word-shape-clause -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | `dazawan` | the named thing itself | *Azawan* (the brand) |
@@ -323,6 +325,7 @@ A country root and a tradition root use all four endings, with one job each:
 >
 > "Azawan is Japanese."
 
+<!-- cheat-sheet: word-shape-clause -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | `aheban` | the named country | *Japan* |

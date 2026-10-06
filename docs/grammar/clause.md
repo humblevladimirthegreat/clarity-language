@@ -310,6 +310,7 @@ A verb can take several `/h/` or `/th/` units. Each plain word counts as one uni
 
 Beginner used **`welavam`** *very* before an adjective. The same `/w/` slot takes a few stock degree words, and each one works before an adverb as well as an adjective.
 
+<!-- cheat-sheet: word-shape-clause -->
 | Agazan | English | Cue |
 |--------|---------|-----|
 | `welavam` | *very* | 🐘: big, as a degree |
@@ -344,6 +345,7 @@ Beginner used **`welavam`** *very* before an adjective. The same `/w/` slot take
 
 Two stock words go in `/h/` and describe the verb itself. Use **`habedem`** *kind of* / *sort of* to hedge the action, and **`herobem`** for *again*.
 
+<!-- cheat-sheet: word-shape-clause -->
 | Agazan | English | Cue |
 |--------|---------|-----|
 | `habedem` | *kind of* / *sort of* | 📈: some degree, not a full one |
@@ -522,6 +524,7 @@ Same roles, object first:
 >
 > "It's a cat that Azawan sees."
 
+<!-- cheat-sheet: word-shape-clause -->
 | Agazan | Use | English |
 |--------|-----|---------|
 | `zazawan dagadul vahahal.` | subject first | *Azawan sees a cat.* |
