@@ -192,198 +192,168 @@ After another noun, the same `/ɡ/` word picks out which one you mean by that ro
 
 **Compare with:** the plain root on `/ɡ/` is the act [in progress](predication.md#in-progress): `dagavol gavadal` is *a fighting guard*, in the middle of a fight. English *the guard who fought (that time)* with extra participants or a place is [two sentences](dependents.md#which-noun), not this role word.
 
-### Translation practice {#beginner-translation-practice}
+### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a construction site
 
-**Roots used here:**
+**New words:**
 
-| English | Agazan | Same root as |
-|---------|--------|--------------|
-| *Azawan* | `azawan` | |
-| *Alahen* | `alahen` | |
-| *Ahaben* | `ahaben` | |
-| *construction* | `agezal` | |
-| *construct* | `agozal` | |
-| *fabrication* | `agozam` | `agozal` *construct* |
-| *helmet* | `ehevul` | |
-| *see* | `vahahal` | `ahahal` *eye* |
-| *sit* | `vehahel` | `ehahel` *chair* |
-| *sleep* | `ezebal` | |
-| *tell* | `vezebel` | `ezebel` *speech* |
-| *punch* | `abahel` | |
-| *scream* | `ezugel` | |
-| *fight* | `avadal` | |
-| *run* | `arahal` | |
-| *bond* | `anam` | `anal` *knot* |
-| *dog* | `odogal` | |
-| *walk* | `owogal` | |
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *construct* | `vagozal` | 👷 from *construct* |
+| *construction* | `agezal` | 🚧 |
+| *helmet* | `ehevul` | 🪖 |
+| *sleep* | `vezebal` | 💤 from *sleep* |
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *guard* | `agavol` |
+| *tell* | `vezebel` |
+| *punch* | `vabahel` |
+| *fight* | `vavadal` |
+| *scream* | `vezugel` |
+| *see* | `vahahal` |
+| *run* | `varahal` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *Someone who constructs sits.*
+**1.** *Someone who constructs runs.*
 
 ::: details Show answer
-`zaxagozal vehahel.`
+`zaxagozal varahal.`
 
-z-agent-x-construct | v-sit
+z-agent-x-construct | v-run
 :::
 
-**2.** *Azawan constructs. The one constructing sees a helmet.*
+**2.** *Azawan tells. The one told sleeps.*
 
 ::: details Show answer
-`zazawan vagozal. zaxagozar dehevul vahahal.`
+`zazawan vezebel. zoxezeber vezebal.`
 
-z-Azawan | v-construct . z-←agent-x-construct | d-helmet | v-see
+z-Azawan | v-tell . z-←recipient-x-tell | v-sleep
 :::
 
-**3.** *Alahen screams. Azawan sees the place where Alahen screams.*
+**3.** *Alahen punches Azawan. The one punched screams.*
 
 ::: details Show answer
-`zalahen vezugel. zazawan dexezuger vahahal.`
+`zalahen dazawan vabahel. zuxabaher vezugel.`
 
-z-Alahen | v-scream . z-Azawan | d-←scene-x-scream | v-see
+z-Alahen | d-Azawan | v-punch . z-←patient-x-punch | v-scream
 :::
 
-**4.** *Azawan sees Ahaben. The one seen sits.*
+**4.** *Ahaben sees a construction site.*
 
 ::: details Show answer
-`zazawan zahaben vahahal. zuxahahar vehahel.`
+`zahaben dagezal vahahal.`
 
-z-Azawan | z-Ahaben | v-see . z-←patient-x-see | v-sit
+z-Ahaben | d-construction | v-see
 :::
 
-**5.** *Azawan is one who fabricates.*
+**5.** *Azawan is one who constructs.*
 
 ::: details Show answer
-`zazawan gaxagozam.`
+`zazawan gaxagozal.`
 
-z-Azawan | g-agent-x-fabrication
+z-Azawan | g-agent-x-construct
 :::
 
-**6.** *Azawan sees a construction site.*
+**6.** *Alahen sees a fight.*
 
 ::: details Show answer
-`zazawan dagezal vahahal.`
+`zalahen davadal vahahal.`
 
-z-Azawan | d-construction | v-see
-:::
-
-**7.** *Azawan tells. The one told punches.*
-
-::: details Show answer
-`zazawan vezebel. zoxezeber vabahel.`
-
-z-Azawan | v-tell . z-←recipient-x-tell | v-punch
-:::
-
-**8.** *Azawan is bound to Alahen. That other party of the bond fights.*
-
-::: details Show answer
-`zazawan ganam balahen. zoxanar vavadal.`
-
-z-Azawan | [g-bond | b-Alahen] . z-←recipient-x-bond | v-fight
-:::
-
-**9.** *Azawan sleeps at a construction site. Alahen sees the site.*
-
-::: details Show answer
-`zazawan vezebal ol bagezal. zalahen dexar vahahal.`
-
-z-Azawan | v-sleep | [at | b-construction] . z-Alahen | d-←scene.same | v-see
-:::
-
-**10.** *Someone who walks dogs sees Azawan.*
-
-::: details Show answer
-`zaxodogaxowogal zazawan vahahal.`
-
-z-agent-x-dog-x-walk | z-Azawan | v-see
+z-Alahen | d-fight | v-see
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zalahen dexezebal vahahal.`
+**1.** `zagavol dexagozal vahahal.`
 
 ::: details Show answer
+z-guard | d-scene-x-construct | v-see
 
-z-Alahen | d-scene-x-sleep | v-see
-
-*Alahen sees a place where someone sleeps.*
+*The guard sees a place where something is constructed.*
 :::
 
-**2.** `zahaben zazawan vahahal. zuxahahar vehahel.`
+**2.** `zahaben vagozal. zaxagozar dehevul vahahal.`
 
 ::: details Show answer
+z-Ahaben | v-construct . z-←agent-x-construct | d-helmet | v-see
 
-z-Ahaben | z-Azawan | v-see . z-←patient-x-see | v-sit
-
-*Ahaben sees Azawan. The one seen sits.*
+*Ahaben constructs. The one constructing sees a helmet.*
 :::
 
-**3.** `zalahen vagozal. zaxagozar dehevul vahahal.`
+**3.** `zazawan vavadal. zahaben dexavadar vahahal.`
 
 ::: details Show answer
+z-Azawan | v-fight . z-Ahaben | d-←scene-x-fight | v-see
 
-z-Alahen | v-construct . z-←agent-x-construct | d-helmet | v-see
-
-*Alahen constructs. The one constructing sees a helmet.*
+*Azawan fights. Ahaben sees the place where Azawan fights.*
 :::
 
-**4.** `zaxagozal vabahel.`
+**4.** `zalahen dagavol gaxezebal vahahal.`
 
 ::: details Show answer
+z-Alahen | [d-guard | g-agent-x-sleep] | v-see
 
-z-agent-x-construct | v-punch
-
-*Someone who constructs punches.*
+*Alahen sees a guard who sleeps.*
 :::
 
-**5.** `zalahen dagezal vahahal.`
+**5.** `zuxabahel vezugel.`
 
 ::: details Show answer
+z-patient-x-punch | v-scream
 
-z-Alahen | d-construction | v-see
-
-*Alahen sees a construction site.*
+*Someone punched screams.*
 :::
 
-**6.** `zazawan zalahen vavadal. zuxavadar vezugel.`
+**6.** `zazawan vezebal al bagezal. zalahen dexar vahahal.`
 
 ::: details Show answer
+z-Azawan | v-sleep | [in | b-construction] . z-Alahen | d-←scene.same | v-see
 
-z-Azawan | z-Alahen | v-fight . z-←patient-x-fight | v-scream
-
-*Azawan fights Alahen. The one fought screams.*
+*Azawan sleeps in a construction site. Alahen sees the construction site.*
 :::
 
-**7.** `zazawan vezebel. zoxezeber varahal.`
+#### Pick one {#beginner-pick-one}
+
+**1.** *Ahaben sees a place where someone sleeps.* `zahaben dexezebal vahahal.` or `zahaben daxezebal vahahal.`
 
 ::: details Show answer
+`zahaben dexezebal vahahal.`
 
-z-Azawan | v-tell . z-←recipient-x-tell | v-run
+z-Ahaben | d-scene-x-sleep | v-see
 
-*Azawan tells. The one told runs.*
+Role vowel **`e`** names the scene; **`a`** would be someone who sleeps.
 :::
 
-**8.** `zahaben ganam balahen. zoxanar vabahel.`
+**2.** *Ahaben sees something constructed.* `zahaben duxagozal vahahal.` or `zahaben daxagozal vahahal.`
 
 ::: details Show answer
+`zahaben duxagozal vahahal.`
 
-z-Ahaben | [g-bond | b-Alahen] . z-←recipient-x-bond | v-punch
+z-Ahaben | d-patient-x-construct | v-see
 
-*Ahaben is bound to Alahen. That other party of the bond punches.*
+Role vowel **`u`** names what the constructing happens to; **`a`** is who constructs.
 :::
 
-**9.** `zaxodogaxowogal vehahel.`
+#### Fix it {#beginner-fix-it}
+
+**1.** *Azawan is one who sleeps.* <!-- lint: error -->`zazawan gezebal.`
 
 ::: details Show answer
+`zazawan gaxezebal.`
 
-z-agent-x-dog-x-walk | v-sit
+z-Azawan | g-agent-x-sleep
 
-*Someone who walks dogs sits.*
+The plain root on `/ɡ/` says Azawan is sleeping right now; the role compound says Azawan is one who sleeps.
 :::
 
 ## Intermediate {#intermediate}
