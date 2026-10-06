@@ -27,7 +27,6 @@ save for near end of limit resets:
 -vocab bank and exercise revamp: introduce new vocabulary, follow standards for language teaching
 
 save for end:
--add Agazan->English cheat sheet
 -join vowel decision tree in advanced vowel series.
 
 Dictionary entries (open lexicon / concepts, not the closed list above):

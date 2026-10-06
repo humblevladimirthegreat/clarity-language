@@ -1,7 +1,7 @@
 # Proposal: cheat sheets for the whole grammar
 
-**Status:** PROPOSED. Rollout steps 1–2 done: pilot sheet [joins and hooks](../grammar/joins-hooks-cheatsheet.md), and [`scripts/lint-cheat-sheets.ts`](../../scripts/lint-cheat-sheets.ts) (layers 2 and 3, plus the Claritish sheet).  
-**Related:** TODO *add Agazan->English cheat sheet*, *Cheat sheet for joins and hooks*, *join vowel decision tree in advanced vowel series*; the existing [Exceptions](../grammar/exceptions-cheatsheet.md) sheet; the Claritish [cheat sheet](../grammar/claritish/cheat-sheet.md) kept in step by the same lint; [Claritish track policy](../meta/grammar-docs.md#claritish-track).  
+**Status:** PROPOSED. Rollout steps 1–3 done: pilot sheet [joins and hooks](../grammar/joins-hooks-cheatsheet.md); [`scripts/lint-cheat-sheets.ts`](../../scripts/lint-cheat-sheets.ts) (layers 2 and 3, plus the Claritish sheet); [`scripts/cheat-sheet-blocks.ts`](../../scripts/cheat-sheet-blocks.ts) (layer 1) and the [Agazan → English](../grammar/agazan-english-cheatsheet.md) sheet.  
+**Related:** TODO *join vowel decision tree in advanced vowel series*; the existing [Exceptions](../grammar/exceptions-cheatsheet.md) sheet; the Claritish [cheat sheet](../grammar/claritish/cheat-sheet.md) kept in step by the same lint; [Claritish track policy](../meta/grammar-docs.md#claritish-track).  
 **Design authority:** stays with the owning grammar pages and the lexicon CSVs. Sheets add no forms, restate no rule the owning page does not teach, and are never cited as the source for a form.
 
 ## Motivation
@@ -95,6 +95,11 @@ A meaning or gloss change that keeps the spelling passes layers 2 and 3. Generat
 
 1. Pilot sheet by hand: **Joins and hooks** (done).
 2. Write `lint-cheat-sheets.ts` layers 2 and 3; mark the joins and hooks owning tables; fold the Claritish lint into it (done: 15 tables marked across `joins.md`, `join-across-roles.md`, and `hooks.md`; sheet IDs are registered in the lint's `SHEETS` map).
-3. Generated blocks (layer 1) and the **Agazan → English** sheet.
+3. Generated blocks (layer 1) and the **Agazan → English** sheet (done). As built:
+   - Sources are `overlays` (filter `pos=` / `kind=`, `|`-separated; sake rows only when `kind=` names them), `sakes` (one row per root, the `/th/` *serves* / *detracts from* pair), `closed-words`, and `compounds` (citation forms: **-l** concrete, **-m** abstract; hook compounds as their stem). Each overlay row links to its CSV `anchor`, titled with that section's heading and tagged with its stage.
+   - `src/closed-roots.ts` has no glosses, so `closed-words` keeps a short table in the script (special, generic, and topic pronouns; sentence linkers) with English and anchor; only the root is read from `CLOSED`. Compass arrows and template fillers carry no closed reading and are left out.
+   - Layer 2 skips rows inside generated blocks; the generator holds them to the data, and the Agazan doc lint still parses every form.
+   - Closed function words with no data source (joins, hooks, turn words, stand-ins, pointers, tags, resumes) get one hand-written **find the family by shape** table that points to the owning sections and the joins and hooks sheet, instead of a full listing.
+   - The pilot sheet's join-act / join-relation grid stays hand-written: it is a vowel grid, not a spelling list.
 4. Remaining sheets, one per change, each with its owning tables marked.
 5. Move sheets into `cheat-sheets/` with redirects; add the grammar-docs.md section and the AGENTS.md row.

@@ -13,6 +13,7 @@
     "docs:preview": "vitepress preview docs/grammar",
     "convert-word": "tsx scripts/convert-word.ts",
     "retie-docs": "tsx scripts/retie-docs.ts",
+    "cheat-sheet-blocks": "tsx scripts/cheat-sheet-blocks.ts",
     "regloss-docs": "tsx scripts/regloss-docs.ts",
     "metaphor-assign": "tsx scripts/phase5-metaphor-assign.ts",
     "metaphor-assign-test": "tsx scripts/lib/metaphor-assign-data.test.ts && tsx scripts/lib/llm-client.test.ts",

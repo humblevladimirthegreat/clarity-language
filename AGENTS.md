@@ -44,6 +44,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `english.md` + `say-*.md` | **Saying it in Agazan** recipe track, keyed by English job. Outside stage order; stage pages never link to it, [recipe track](docs/meta/grammar-docs.md#recipe-track). New gap resolutions that add no form go here. |
 | `claritish/` | **Claritish** on-ramp: closed Agazan words dropped into English, an intro page, ten lessons, a bonus tone-marks lesson, a closing plug, and a one-page cheat sheet. Adds no forms; never links into the grammar except the closing page, [Claritish track](docs/meta/grammar-docs.md#claritish-track). |
 | `joins-hooks-cheatsheet.md` | **Cheat Sheets** sidebar: one-page lookup for joins, joins across roles, and hooks, linking to the owning sections. Adds no forms. |
+| `agazan-english-cheatsheet.md` | **Cheat Sheets** sidebar: reverse lookup of closed words by spelling. Tables between `<!-- generated -->` markers come from the lexicon CSVs and `src/closed-roots.ts` via `npm run cheat-sheet-blocks -- --write`; never edit them by hand. Adds no forms. |
 | `exceptions-cheatsheet.md` | **Cheat Sheets** sidebar: quick-glance list of where the grammar breaks its own pattern, linking to the owning pages. Adds no forms. |
 | `terminology.md` | English names for grammatical features. Teaching pages do not link into it except [How to learn](docs/grammar/introduction.md#how-to-learn). |
 

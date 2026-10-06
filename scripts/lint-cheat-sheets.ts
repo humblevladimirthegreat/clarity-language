@@ -1,5 +1,6 @@
 // Keep cheat sheets in step with the pages they summarize
-// (docs/proposals/grammar-cheat-sheets.md, layers 2 and 3).
+// (docs/proposals/grammar-cheat-sheets.md, layers 2 and 3). Generated blocks
+// (layer 1) are skipped here: scripts/cheat-sheet-blocks.ts holds them to the data.
 //
 // Grammar sheets:
 // - Every table row links to an owning section: in the row itself, the table's
@@ -29,6 +30,7 @@ const claritishDir = join(grammarDir, "claritish");
 /** Grammar sheets by the ID owning pages use in `<!-- cheat-sheet: ID -->`. */
 const SHEETS: Record<string, string> = {
   "joins-hooks": "joins-hooks-cheatsheet.md",
+  "agazan-english": "agazan-english-cheatsheet.md",
 };
 
 const CLARITISH_SHEET = "cheat-sheet.md";
@@ -74,8 +76,14 @@ function tables(markdown: string): Table[] {
   let offset = 0;
   let intro: string[] = [];
   let current: Table | undefined;
+  let generated = false;
   for (const line of lines) {
-    if (line.startsWith("|")) {
+    // Generated blocks are owned by the data and checked by cheat-sheet-blocks.ts.
+    if (/^<!--\s*generated:/.test(line)) generated = true;
+    else if (/^<!--\s*\/generated\s*-->/.test(line)) generated = false;
+    if (generated) {
+      current = undefined;
+    } else if (line.startsWith("|")) {
       if (!current) {
         current = { header: line, rows: [], index: offset, intro: intro.join("\n") };
         out.push(current);
