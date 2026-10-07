@@ -10,9 +10,7 @@ use [skip-cd] for amplify to not deploy.
 
 -buy domain
 -claritish editor
--prosody
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
--final exam
 -finish lexicon fill (partial)
 -finish proposals-mnemonic
 -review logical deduction
@@ -20,6 +18,7 @@ use [skip-cd] for amplify to not deploy.
 -allow non-emoji roots
 
 save for near end of limit resets:
+-final exam
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
 -review published-lexicon for psychology - are there any abstract roots that are prone to cognitive biases that would benefit from special attention such as carefully choosing the concrete
 -mass lexical compound adding

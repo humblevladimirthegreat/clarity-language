@@ -170,7 +170,7 @@ These choices about word shape make Agazan easier to sing:
 | Few consonant clusters | Clusters are harder to say quickly | Ordinary shape is consonant-then-vowel at the start of a syllable; limited clusters below |
 | Voiced preferred | Voiceless stops cut the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
 | No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge** or a lexical join (**-l** / **-m**) before a number marker `r` |
-| No lexical stress | Music already places emphasis | Rhythm may stress a beat; spelling does not encode stress |
+| No lexical stress | Music already places emphasis | Stress always falls on the same beat ([rhythm and stress](#rhythm-and-stress)); spelling does not mark it, and music may move it |
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-ln` / `-r` / `-rl` / `-rm` (optional `-x`); stand-ins end in `-rl` / `-rm` / `-rth` |
 
@@ -187,6 +187,77 @@ Try singing a short Agazan line quickly at a high but comfortable pitch:
 A line that piles up close vowels, clusters, and mid-word stops is harder to sustain even when it is only a little harder to speak:
 
 / seiɹ ˈʈʂuɹt tis ˈheb.ɡiɹn fuofts /
+
+### Rhythm and stress {#rhythm-and-stress}
+
+Give every syllable about the same length, and keep its vowel full however fast you talk. English weakens unstressed vowels to *uh* (the second *a* in *banana*). Agazan never does, because many words differ by one vowel (`val`, `vol`, `vul`), and weak vowels would make them sound alike.
+
+Each word takes a light stress on its **first syllable**. Since the rule never changes, spelling does not mark it. The ending consonant already tells a listener where a word stops; the stressed first beat tells them where the next one starts, so fast speech still splits into words. A [number word](numbers.md) stresses the last digit of each group instead.
+
+`zazawan gamadam.`
+
+/ ˈzä.zä.wän ˈɡä.mä.däm /
+
+**Hold the ending.** Let the final `-l`, `-m`, `-n` or `-r` sound for a moment instead of clipping it. It is often the only difference between two words (`vul`, `vum`, `vur`), and all four are sounds you can hold. In singing, put the cutoff on it.
+
+### Words never said quietly {#never-quiet}
+
+English swallows small words that change the meaning: *can* and *can't* often differ by one weak sound, and *I think* is usually mumbled. In Agazan, give these words their full stress even when the words around them are light:
+
+| Words | Why |
+|-------|-----|
+| Negation: the **u** joins ([negation](joins.md#negation-u)) | Missing one flips the claim |
+| [MAY](knowing.md#may) and its hold endings | Missing one makes a guess sound certain |
+| [How you know](knowing.md#evidentiality) and [how strong the evidence is](knowing.md#evidence-strength) | Missing one hides where the claim came from |
+| The kind of *can't* ([ability](intention.md#ability)) | Missing one turns *not right now* into *not ever* |
+
+### Voice and certainty {#voice-and-certainty}
+
+Only the words and the written [tone marks](speech-moves.md#tone-marks) carry meaning. How firmly you stand behind a claim is the ending on the [act word](speech-moves.md#speech-act); how sure you are is [MAY](knowing.md#may). Your pitch may agree with them, but an unwritten rise or fall adds nothing. A statement said with a rising voice is still a statement, and a firm **-l** claim said hesitantly is still firm.
+
+So listen to the words, not the voice. A speaker whose voice naturally rises at the end is not hedging, and a confident voice is not evidence.
+
+### Speech edges {#speech-edges}
+
+Each edge in a sentence has its own sound. From smallest to largest:
+
+| Edge | Voice | Taught in |
+|------|-------|-----------|
+| Word | Stress on the first syllable, ending held | [rhythm and stress](#rhythm-and-stress) |
+| Item in a list, before the join word | Level pitch, no fall: more is coming | [right-close fence](joins.md#right-close) |
+| Join word that ends a list | Fall | [right-close fence](joins.md#right-close) |
+| Scope island | Brief pitch reset, one tight phrase, pause after its last word | [scope islands](spans.md#scope-islands) |
+| `/x/` continue, linker, stand-in | Dip, no pitch reset | [periods](dependents.md#orthography-and-prosody-periods) |
+| Period | Fall on the last word, short pause | [periods](dependents.md#orthography-and-prosody-periods) |
+| Topic word | Pitch reset; same speech act | [topic](pronouns.md#topic) |
+| New `/y/` turn | Full pitch reset | [periods](dependents.md#orthography-and-prosody-periods) |
+
+The level pitch on list items matters because the join word comes last: it lets a listener hear that a list is under way before the join arrives.
+
+### Singing on one note {#one-note}
+
+Every distinction Agazan makes is spelled in its letters, so a line sung on a single pitch still says everything it says in speech. When a melody takes over your pitch, voice each [tone mark](speech-moves.md#tone-marks) with how you shape the note:
+
+| Mark | In speech | In song |
+|------|-----------|---------|
+| `!` | Louder, stressed | Accent: a stronger attack, louder |
+| `?` | Rising, tentative | A lighter attack, slightly late |
+| `%` | Light, smiling | Short and detached |
+| `&` | Stressed and slowed | Held for its full length |
+| `;` | Soft, gentle | Smooth and connected, softer |
+
+### Thinking sounds {#thinking-sounds}
+
+When you need a moment in the middle of speaking, English fills the gap with *um* or *uh*. Agazan has two sounds for that gap, and each tells the listener what would help. Neither is a word, and neither is written.
+
+| Sound | Means | The listener | Cue |
+|-------|-------|--------------|-----|
+| *mmm*, lips closed | I am thinking it over | waits and leaves the silence | Lips closed: not ready to speak |
+| A held `a`, `e` or `o` (any of them) | I know what I mean but cannot find the word | may offer a word | Mouth open: the word is on its way |
+
+Do not hold `u`: it is the undo vowel, so a held `u` can sound like a denial. A thinking vowel is held well past one beat, so it does not sound like a [letter name](#letter-names), which is short and followed by a pause.
+
+**Compare with:** a thinking sound only holds the gap. To fix a word you already said, use a hook: [`el`](hooks.md#rather) for a better wording of the same thing, [`ol`](hooks.md#instead) for the thing you meant instead.
 
 ## See also
 

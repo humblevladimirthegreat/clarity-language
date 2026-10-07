@@ -367,7 +367,7 @@ A **period** closes the sentence body in writing, whatever the speech act. Speec
 
 | Writing | Speech | Use | Cue |
 |---------|--------|-----|-----|
-| `.` | Fall on last stress + short pause | Closes the prior **body**. Next stretch still defaults to **`yal`** unless a new `/y/` turn, a written act word, or *yes* / *no* particle sets otherwise | Fall = the claim is done |
+| `.` | Fall on the last word + short pause | Closes the prior **body**. Next stretch still defaults to **`yal`** unless a new `/y/` turn, a written act word, or *yes* / *no* particle sets otherwise | Fall = the claim is done |
 | Next `/y/` turn (*yes* / *no*, a call, written act word) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`yal`** / **`yam`** | Reset = jump to a new act |
 | Bare body or hook + body after `.` | No full reset required | Implied **`yal`** (or **`yam`** only if a soft particle / written **`yam`** said so) | No jump, so same statement |
 | Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`yam`** (implied or written) | **-m** leaves the hold open |
