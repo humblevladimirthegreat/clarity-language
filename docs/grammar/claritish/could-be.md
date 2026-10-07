@@ -16,7 +16,7 @@ Put the drop-in where English would put *probably*: at the end of the clause, at
 
 The last letter is an ending you will see again and again: **-l**, **-m**, or **-r**. Here it runs from the most settled to the most passing. **-l** is the most settled: you will settle it. **-m** is the default. **-r** is the most passing: a thought for right now only. A cue for the whole course: **-l ≈ lasting, -r ≈ right now.** None of the three is the "right" one. Checking, leaving it at *could be*, and letting it pass are all fine.
 
-**Saying the words:** say every vowel as its own beat, the same way every time. `a` as in *spa*, `e` as in *bet*, `o` as in *no* (without the glide), and `u` as in *boot*. `th` is the sound in *this*. So `thovum` has two beats, one for each vowel.
+**Saying the words:** say every vowel as its own beat, the same way every time. `a` as in *spa*, `e` as in *bet*, `o` as in *no* (without the glide), and `u` as in *you* (without the *y*). `th` is the sound in *this*. So `thovum` has two beats, one for each vowel.
 
 ## Examples {#examples}
 

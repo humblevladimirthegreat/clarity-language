@@ -125,7 +125,7 @@ A full name is the given name plus a family name on `/ɡ/` + **-n** ([word-endin
 
 Only the six standard stacks exist (`ua` `uo` `ue` `ae` `ao` `eo`), always in the order **u**, **a**, **e**, **o**. A reversed or extra pair is too easy to confuse by ear with its standard twin (`oe` vs `eo`).
 
-**o comes last.** **u** is always first and **o** always last, so the two rounded back vowels never contrast in the same slot. The tie and its family were once `oe`, which differed from `ue` only by **o** versus **u** in first place, the hardest pair to hear apart in song (**u** opens toward [ʊ] on high notes). **a** before **e** keeps `ae`: `ea` would invite the English one-vowel reading of *ea* (*sea*).
+**o comes last.** **u** is always first and **o** always last, so the two rounded vowels never contrast in the same slot. The tie and its family were once `oe`, which differed from `ue` only by **o** versus **u** in first place. **a** before **e** keeps `ae`: `ea` would invite the English one-vowel reading of *ea* (*sea*).
 
 ### Closed-root endings
 

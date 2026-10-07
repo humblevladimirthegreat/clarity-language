@@ -12,7 +12,7 @@ outline: false
 
 | Letter | Like | Letter | Like |
 |--------|------|--------|------|
-| `e` | *bet* | `u` | *boot*, no glide |
+| `e` | *bet* | `u` | *you*, without the *y* |
 | `o` | *Cambodia*, no glide | `a` | *spa* |
 | `x` | the *si* in *vision* (not English *x*) | | |
 

@@ -18,7 +18,7 @@ Each letter has one sound, and native text is lowercase. Two vowels in a row are
 | Letter | Say | Like | Stage |
 |--------|-----|------|-------|
 | [`e`](../phonology.md#vowels) | /e̞/ | *bet* | B |
-| [`u`](../phonology.md#vowels) | /u/ | *boot* (no glide) | B |
+| [`u`](../phonology.md#vowels) | /ʉ/ | *you* (without the *y*) | B |
 | [`o`](../phonology.md#vowels) | /o̞/ | *Cambodia* (no glide) | B |
 | [`a`](../phonology.md#vowels) | /ä/ | *spa* | B |
 
@@ -99,8 +99,7 @@ Ten letters also start a [digit syllable](../numbers.md#counts); the table is [h
 
 | Feature | What it means | Stage |
 |---------|---------------|-------|
-| [Pure vowels, one per letter](../phonology.md#singability-constraints) | stacked vowels are separate syllables; no glides | A |
+| [One vowel per letter](../phonology.md#singability-constraints) | stacked vowels are separate syllables | A |
 | [No stress in spelling](../phonology.md#singability-constraints) | rhythm may stress a beat | A |
 | [Voiced preferred](../phonology.md#singability-constraints) | unvoiced is style only | A |
-| [On a high note](../phonology.md#singability-constraints) | **u** may open toward [ʊ]; it is still **u** | A |
 | [Legal clusters](../phonology.md#singability-constraints) | `gl-`; role letter + `r` (number) or + `w` (tag); `-lx` `-mx` `-nx` `-rx`; `-ln`; `-rl` `-rm` `-rth` | A |

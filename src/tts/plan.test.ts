@@ -116,16 +116,16 @@ describe("previewPhonemes", () => {
     const plan = previewPhonemes("zazawan gozezomum.");
     assert.deepEqual(
       plan.words.map((w) => w.ipa),
-      ["zä.zä.wän", "ɡo̞.ze̞.zo̞.mum"],
+      ["zä.zä.wän", "ɡo̞.ze̞.zo̞.mʉm"],
     );
-    assert.equal(plan.ipaPhonemes, "zäzäwän ɡo̞ze̞zo̞mum.");
+    assert.equal(plan.ipaPhonemes, "zäzäwän ɡo̞ze̞zo̞mʉm.");
   });
 
   it("builds a word-spaced IPA phoneme stream", () => {
     const plan = previewPhonemes("zazawan vawalal.");
     assert.equal(plan.ipaPhonemes, "zäzäwän väwäläl.");
     const yuon = previewPhonemes("yuon");
-    assert.equal(yuon.ipaPhonemes, "juo̞n");
+    assert.equal(yuon.ipaPhonemes, "jʉo̞n");
   });
 
   it("includes punctuation cue between phoneme spans", () => {
