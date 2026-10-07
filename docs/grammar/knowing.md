@@ -782,7 +782,6 @@ English *contrary to what I was told* and *against my gut* say the event went ag
 **Compare with:** `zazawan thezum vowogal.` says the walking surprised you. `zazawan vowogal uem thahom.` says your gut expected otherwise, whether or not the news surprised you.
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
@@ -1323,7 +1322,6 @@ The channel stays on the main sentence and covers the whole generalization. Put 
 **Compare with:** a general claim you are **not** giving as today's report is [FORMER](#former-climate) (`thenom`). *Every cat must sleep* as a rule someone sets is [REQUIRE](sakes.md#requirement) (`thumem`), not a law of how things work. *Maybe every cat sleeps* is [MAY](#may) on the same clause.
 
 ### Practice {#advanced-practice}
-<a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
 

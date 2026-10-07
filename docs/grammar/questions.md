@@ -751,7 +751,6 @@ The listener may still reply, but no reply is owed. Only **`yal`** or **`yam`** 
 **Compare with:** a [tag](#tags) after the sentence (`…. yol yael.`) asks the listener to confirm. A rhetorical question asks for nothing.
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 

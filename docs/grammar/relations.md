@@ -472,7 +472,6 @@ A tie of care (*Azawan's patient*, *Azawan's team*) is **`gahabom`**: `/b/` look
 **Compare with:** kin uses generation numbers ([kin generations](numbers-applied.md#kin-generations)). Plain *Azawan's*, with the tie left unsaid, is the hook [`em`](hooks.md#genitive). Ownership is `gegabem`. *Part of* is `gobom`.
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
@@ -793,7 +792,6 @@ Changing your mind is then a change of now, not a contradiction: *I was fairly s
 | **`thuhur` / `thurar`** | resume that stance-now | *still as I saw it then* | **-r** restates |
 
 ### Practice {#advanced-practice}
-<a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
 

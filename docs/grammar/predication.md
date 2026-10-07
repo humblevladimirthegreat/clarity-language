@@ -510,7 +510,6 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 **`thao`** and **`thuo`** take `/b/` the same way **`tho`** does. **`thae`** is not a [mention](spans.md#mention): the person is still the one you describe, and the role is a means. **`thue`** means speaking off duty or refusing that role, not *fake teacher* and not [FORMER](knowing.md#former-climate).
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 

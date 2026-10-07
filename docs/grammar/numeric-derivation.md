@@ -287,7 +287,6 @@ To exaggerate a kind for comic effect (*a gazillion-mess*, *an umpteenth attempt
 Free **`hrewobal`** = *for the gazillionth time* (clause adverb). Derived **`zahamrewobal`** = *an umpteenth co-participation* (noun kind).
 
 ### Practice {#advanced-practice}
-<a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
 

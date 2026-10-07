@@ -378,7 +378,6 @@ Beginner used the ending to say how to take a content word’s meaning. On an `/
 Beginner used **-l** / **-m** / **-n** to say how to take a citation’s meaning. On [number words](numbers.md), those same letters (and **-r**) have **number-specific** meanings. After a role letter, the number marker **r** may start a cluster that only number words use ([phonology.md](phonology.md#phonotactics)).
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 

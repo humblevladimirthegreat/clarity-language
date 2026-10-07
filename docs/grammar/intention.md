@@ -548,7 +548,6 @@ English *will* can state a plan or a forecast. A plan uses [PLAN](#plan-predict)
 **Compare with:** without an offset, a channel is about what is happening now or already so (**`thodom`** if you are watching it now; **`thevom`** if you remember watching it). Add **`bral`** when the claim is about a **later** event.
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 

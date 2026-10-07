@@ -888,7 +888,6 @@ A word right after B describes B alone, not the range. To describe the range its
 **Compare with:** `zazawan zahaben zal` is *Azawan and Ahaben*, the two ends only. `zazawan zahaben zael` is *Azawan, then Ahaben*, an order with nothing between. Spatial *between a train and a station* is a [relation](relations.md#spatial-path), not a range.
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
@@ -1099,7 +1098,6 @@ Other roots fuse the same way: `vezebeluel` *contradict* is *tell* fused with *a
 **Compare with:** `vowogal ul bezedel` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* never fuse; they are always separate hook words. A [lexical compound](x-compounds.md#lexical-compounds) like *bedroom* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
 
 ### Practice {#advanced-practice}
-<a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**. Each fused verb is a citation plus a hook from the extra-noun grid (*walk* + *from* is *leave*).
 

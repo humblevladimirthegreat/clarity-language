@@ -485,7 +485,6 @@ A [hook](hooks.md) and its `/b/` on the ranked item go right before the bar, the
 **Compare with:** a name before the rank join is someone you rank against (`zazawan zalahen zel gezebul` *Azawan is sleepier than Alahen*). A stance word in that place is the value that stance sets.
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
@@ -831,7 +830,6 @@ English *many*, *few*, *often*, and *late* rank against an unstated baseline, an
 The bar is never dropped. A single-item `zagadulx zel gral` already means *the most cats* (a [superlative](#superlatives)).
 
 ### Practice {#advanced-practice}
-<a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
 

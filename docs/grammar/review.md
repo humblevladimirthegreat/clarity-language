@@ -603,3 +603,182 @@ With **`thehul`**, Azawan has decided for good to pay. With **`thehur`**, Azawan
 
 **Rule:** [Decision (revisability)](intention.md#decision)
 :::
+
+## Advanced
+
+The Advanced review covers every Advanced section, from word order to numeric derivation.
+
+### Practice {#advanced-practice}
+
+Short drills for Advanced. Try each item before opening **Show answer**.
+
+**Review:**
+
+| English | Agazan |
+|---------|--------|
+| *Azawan* | `azawan` |
+| *Alahen* | `alahen` |
+| *Ahaben* | `ahaben` |
+| *baguette* | `ubogel` |
+| *school* | `uzugul` |
+| *umbrella* | `amebel` |
+| *tomato* | `adedol` |
+| *melon* | `emehol` |
+| *red* | `eredal` |
+| *quiet* | `agawal` |
+| *station* | `ezedel` |
+| *cook* | `vugugal` |
+| *sit* | `vehahel` |
+| *as-of.ledger* | `huhum` |
+| *REPORTED* | `thewam` |
+| *MEMORY* | `thevom` |
+| *CLUES* | `thunem` |
+| *hour* | `agazem` |
+| *sing* | `vezehel` |
+| *walk* | `vowogal` |
+| *write* | `varadal` |
+| *sleepy* | `ezebul` |
+| *sleep* | `vezebal` |
+| *see* | `vahahal` |
+
+#### English → Agazan {#advanced-english-to-agazan}
+
+**1.** *What Alahen does is cook a tomato.*
+
+::: details Show answer
+`vugugal zalahen dadedol.`
+
+v-cook | z-Alahen | d-tomato
+
+**Rule:** [Word order and English emphasis](clause.md#word-order-emphasis)
+:::
+
+**2.** *As of 3 May, Azawan sits in a school.*
+
+::: details Show answer
+`zazawan huhum b_#3,5 vehahel al buzugul.`
+
+z-Azawan | [h-as-of.ledger | b-_3,5] | v-sit | [in | b-school]
+
+**Rule:** [As-of (whose now)](relations.md#as-of)
+:::
+
+**3.** *I gather Ahaben thinks Alahen sings.*
+
+::: details Show answer
+`zalahen thunemahaben vezehel.`
+
+z-Alahen | th-CLUES-Ahaben | v-sing
+
+**Rule:** [Whose view (holder)](knowing.md#holder)
+:::
+
+#### Agazan → English {#advanced-agazan-to-english}
+
+**1.** `zahaben dezedel vowogaloel.`
+
+::: details Show answer
+z-Ahaben | d-station | v-head-for
+
+*Ahaben heads for the station.*
+
+**Rule:** [Hook compounds](hooks.md#hook-compounds)
+:::
+
+**2.** `zahaben d[amebel#] varadal.`
+
+::: details Show answer
+z-Ahaben | d-CITE[umbrella]# | v-write
+
+*Ahaben wrote “umbrella…”* (cut off)
+
+**Rule:** [Editorial close and close-all](spans.md#close-forms-complete-editorial-close-all)
+:::
+
+**3.** `zazawan gagawalrabal.`
+
+::: details Show answer
+z-Azawan | g-quiet-l-infinity
+
+*Azawan is the essence of quiet.*
+
+**Rule:** [Numeric derivation](numeric-derivation.md#numeric-derivation)
+:::
+
+#### Pick one {#advanced-pick-one}
+
+**1.** *Alahen cooks “Tomato and Melon”* (the familiar dish). `zalahen dadedol demehol dan vugugal.` or `zalahen dadedol demehol dal vugugal.`
+
+::: details Show answer
+`zalahen dadedol demehol dan vugugal.`
+
+z-Alahen | NAME[d-tomato | d-melon | d-and] | v-cook
+
+**-n** on the join names the list as one set phrase; **`dal`** is just *a tomato and a melon*.
+
+**Rule:** [Named phrase](joins.md#named-list)
+:::
+
+**2.** *Alahen is sleepier than Ahaben said.* `zalahen thewam bahaben zel gezebul.` or `zalahen zel gezebul thewam bahaben.`
+
+::: details Show answer
+`zalahen thewam bahaben zel gezebul.`
+
+[z-Alahen | [th-REPORTED | b-Ahaben] | z-rank/more | g-sleepy]
+
+Before the rank join, REPORTED is the bar: what Ahaben said sets the level. After the fence it is a stance on the whole superlative: *Alahen is the sleepiest, Ahaben says*.
+
+**Rule:** [Every bar](comparatives.md#stance-bars)
+:::
+
+**3.** *Azawan sees a huge but finite number of baguettes.* `zazawan dubogelx grabam vahahal.` or `zazawan dubogelx grabal vahahal.`
+
+::: details Show answer
+`zazawan dubogelx grabam vahahal.`
+
+z-Azawan | [d-baguette-x | g-plus-infinity.about] | v-see
+
+Open **-m** keeps the amount finite, just very large; **`grabal`** is infinitely many.
+
+**Rule:** [Digitless exponents](numbers.md#digitless-exponents)
+:::
+
+**4.** *Azawan sleeps, and that red is from memory.* `zazawan wevom geredal vezebal.` or `zazawan geredal vezebal thevom.`
+
+::: details Show answer
+`zazawan wevom geredal vezebal.`
+
+[z-Azawan | [w-MEMORY | g-red]] | v-sleep
+
+On `/w/` right before the adjective, MEMORY covers only *red*; **`thevom`** on `/th/` covers the whole sentence: *I remember red Azawan sleeping*.
+
+**Rule:** [Mood on one adjective](knowing.md#mood-on-adjective)
+:::
+
+#### Fix it {#advanced-fix-it}
+
+**1.** *I saw Ahaben sleep two hours ago.* <!-- lint: error -->`zahaben thevom bagazem gradul vezebal.`
+
+::: details Show answer
+`zahaben thevom bagazem grudul vezebal.`
+
+z-Ahaben | [th-MEMORY | [b-hour | g-minus-two]] | v-sleep
+
+The offset is signed and counts from now, so *ago* needs **`ru`** (minus); MEMORY with a later offset is not a sentence.
+
+**Rule:** [Dated channel (signed offset)](knowing.md#dated-channel)
+:::
+
+#### What changes {#advanced-what-changes}
+
+**1.** `zazawan dezedel vowogalul.` / `zazawan dezedel vowogalum.`
+
+::: details Show answer
+z-Azawan | d-station | v-leave
+
+z-Azawan | d-station | v-recede
+
+With **`ul`** fused, Azawan leaves the station. With **`um`**, Azawan only recedes from it, moving away without leaving it behind.
+
+**Rule:** [Hook compounds](hooks.md#hook-compounds)
+:::

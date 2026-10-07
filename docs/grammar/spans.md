@@ -504,7 +504,6 @@ An island can hold part of a phrase. Here only *not small* is grouped, so **`gul
 **Speech:** reset your pitch briefly as the island starts, say it as one tight phrase, and pause after its last stressed syllable. In singing, shape it like any other phrase. Because an island never runs past one phrase, a listener who misses the closing pause is off by at most part of that phrase.
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
@@ -703,7 +702,6 @@ When one packaged chunk sits inside another (a quote that contains a parenthetic
 The same nest works as <code>d[ z&lt;…&gt; ]</code> or <code>d~[ d&lt;…&gt; ]</code>.
 
 ### Practice {#advanced-practice}
-<a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
 

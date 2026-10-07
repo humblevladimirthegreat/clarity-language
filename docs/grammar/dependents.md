@@ -583,7 +583,6 @@ To place a **thing** in time rather than the event (*the walk after the thunders
 Ordinary `zabal` is still *a backpack*.
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 

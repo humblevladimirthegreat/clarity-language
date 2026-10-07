@@ -39,4 +39,5 @@ export const levelReviewPage = 'review.md'
 export const levelReviews = [
   { text: 'Beginner review', link: '/review#beginner' },
   { text: 'Intermediate review', link: '/review#intermediate' },
+  { text: 'Advanced review', link: '/review#advanced' },
 ]

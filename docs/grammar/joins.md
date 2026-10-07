@@ -882,7 +882,6 @@ When one list sits inside another (*(tea or coffee) and water*), write the inner
 | nested adjectives | `geredal gamazam gul gelavam gal` | *(neither red nor small) and big* |
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
@@ -1119,7 +1118,6 @@ These limits apply to every join.
 *Because* / *if* use `/th/` plus `/b/` [**`barl`**](dependents.md#poles). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [VP and clause forms](join-across-roles.md#vp-clause-forms). Each item of a clause join is a full clause.
 
 ### Practice {#advanced-practice}
-<a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
 

@@ -345,7 +345,6 @@ At departure, use your own name with the reduced level:
 > "I’m leaving now."
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 

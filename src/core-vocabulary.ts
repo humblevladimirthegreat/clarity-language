@@ -1,5 +1,5 @@
 /**
- * Core learner vocabulary (docs/proposals/exercise-standards.md § 3): each core root names the
+ * Core learner vocabulary: each core root names the
  * stage checkpoint that introduces it, in the `core` column of the lexicon CSVs
  * (docs/meta/lexicon.md#core-vocabulary-column). The seed is the first checkpoint, in path
  * order, whose bank uses the root. {@link lintCoreCounts} checks converted checkpoints against

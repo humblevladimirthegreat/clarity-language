@@ -754,7 +754,6 @@ To ask what the talk is about, ask *which topic?*: the fill-ask blank `zar`, the
 **Compare with:** English *topic* covers several jobs, and Agazan keeps them apart. The discourse topic is `/x/`. A sentence frame is `hahehom` *as for*. The first content word is only a [highlight](clause.md#word-order-emphasis). `&` contrasts one phrase ([tone marks](speech-moves.md#tone-marks)). `zal` / `zem` / `zel` rank among others. Only `/x/` sets the topic.
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 

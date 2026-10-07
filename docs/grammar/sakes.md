@@ -953,7 +953,6 @@ On the [time scale](comparatives.md#time-scale), a sake bar is *too late* and *t
 **Compare with:** the same met word after the fence is about the whole claim: `zedehel zel gahadul thoyutham` is *the tea is the hottest, and that serves my health*.
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 

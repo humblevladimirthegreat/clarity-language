@@ -693,7 +693,6 @@ Speech and writing drills that teach the shorthand itself still show one-digit s
 A free number in shorthand shows its ending as a mark after the role letter (`g~+3`); spelled out, it shows the ending as its last letter (`grarem`). A number built onto a content root ([numeric derivation](numeric-derivation.md#numeric-derivation)) is always spelled out (`NUM`) and never takes the marks **`~`** / **`@`** / **`=`**.
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**. Use shorthand for two or more digits (`g+12`, `g#12`); spell zero, one digit, or none (`grarem`, `gredul`, `gral`).
 
@@ -1218,7 +1217,6 @@ In casual measure-heavy talk, a stretch of conversation may set an **ambient** o
 Write **`Ne0`** (any nonzero mantissa **N**) to insist on ones. Formal prose that never sets an ambient magnitude rarely needs **`e0`**: leave it out when ones are already clear.
 
 ### Practice {#advanced-practice}
-<a id="translation-practice-advanced"></a>
 
 Short drills for Advanced. Try each item before opening **Show answer**.
 

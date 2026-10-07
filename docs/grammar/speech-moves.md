@@ -457,7 +457,6 @@ English *frankly* and *to be clear* say in words how you are speaking. A tone ma
 A number word in `/y/` is a call-out (*Three more!*, a score). It can sit with the other opening `/y/` words, before the act word, or stand alone as its own turn. How each kind of number reads here: [numbers](numbers.md#number-as-interjection-by-marker).
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 

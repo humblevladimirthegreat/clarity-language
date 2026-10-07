@@ -688,7 +688,6 @@ Write the ordinary [word ending](word-endings.md) at the end of the whole compou
 | `gabahal` / `habahal` | gravity *up* |
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 

@@ -289,7 +289,6 @@ For several members, put a [phrase join](joins.md) **inside** the `/b/` phrase (
 **Compare with:** *a house like Azawan’s* / *walks like a duck* is resemblance ([like](relations.md#like-resembles) `gumum` / `humum`), not **`goen` / `hoen`** *on a par with* / *equating*.
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 

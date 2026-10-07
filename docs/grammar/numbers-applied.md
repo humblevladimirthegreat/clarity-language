@@ -251,7 +251,6 @@ To say how many parts, put the count first and the fraction after it: **`g+N`** 
 *Half* of a unit also has a decimal route (`bezezem g+0.5`).
 
 ### Practice {#intermediate-practice}
-<a id="translation-practice-intermediate"></a>
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
 
