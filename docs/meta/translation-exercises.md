@@ -24,7 +24,7 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 
 **Coverage:** every **productive** page stage gets a checkpoint. Orientation, phonology charts, and parser maps do not — [allowlist](drill-generation.md#allowlist) **skip**. Do **not** add a spoiler block after every H3. Named settings in use: [settings](drill-generation.md#settings).
 
-**Status:** all **generate** checkpoints **exist** (see [allowlist](drill-generation.md#allowlist)). All are converted to this page's standard; none is [legacy](#legacy-checkpoints). Invoke [drill-generation.md](drill-generation.md#execute) **one grammar file per agent** only to **replace** a checkpoint, which converts it to this page's standard. The [Beginner level review](../grammar/review.md#beginner) exists; Intermediate and Advanced are still to write ([level reviews](#level-reviews), procedure in [drill-generation.md](drill-generation.md#level-review)).
+**Status:** all **generate** checkpoints **exist** (see [allowlist](drill-generation.md#allowlist)). All are converted to this page's standard; none is [legacy](#legacy-checkpoints). Invoke [drill-generation.md](drill-generation.md#execute) **one grammar file per agent** only to **replace** a checkpoint, which converts it to this page's standard. The [Beginner](../grammar/review.md#beginner) and [Intermediate](../grammar/review.md#intermediate) level reviews exist; Advanced is still to write ([level reviews](#level-reviews), procedure in [drill-generation.md](drill-generation.md#level-review)).
 
 ## What belongs where
 <a id="what-belongs-where"></a>

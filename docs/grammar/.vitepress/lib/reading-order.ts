@@ -38,4 +38,5 @@ export const levelReviewPage = 'review.md'
 /** Sidebar links to each level's review band. */
 export const levelReviews = [
   { text: 'Beginner review', link: '/review#beginner' },
+  { text: 'Intermediate review', link: '/review#intermediate' },
 ]
