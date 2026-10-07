@@ -674,15 +674,15 @@ With an object, `vuvudel` moves something else: `zazawan vuvudel dehahel.` *Azaw
 
 > `zazawan valagel dabegol oel bamun.`
 >
-> z-Azawan | v-carry | d-package | [toward | b-speaker]
+> z-Azawan | v-carry | d-box | [toward | b-speaker]
 >
-> "Azawan brings me the package."
+> "Azawan brings me the box."
 
 > `zazawan valagel dabegol ul bamun.`
 >
-> z-Azawan | v-carry | d-package | [from | b-speaker]
+> z-Azawan | v-carry | d-box | [from | b-speaker]
 >
-> "Azawan takes the package away."
+> "Azawan takes the box away."
 
 In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#stand-in)), `om bamun` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
 

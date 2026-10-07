@@ -103,7 +103,7 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 | 74 | Near the mouth of the river, its course turns sharply towards the East. | `om bamaval gobom bowodel zowoder hanavam verevem oel bodul.` | [near \| [b-mouth \| [g-part-of \| b-drinking-water]]] \| z-←drinking-water \| h-severity \| v-turn \| [toward \| b-east] | covered |
 | 75 | Between the two lofty mountains lay a fertile valley. | `hazam bamadalx gradul gadavem zadahel gamahum.` | [h-between \| [b-mountain-x \| g-two \| g-height]] \| [z-down \| g-proliferation] | covered |
 | 76 | Among the wheat grew tall red poppies. | `am begevel thevom vuzem zavavulx gadavem geredal.` | [amid \| b-grain] \| th-MEMORY \| v-growth \| [z-flower-x \| g-height \| g-red] | covered |
-| 77 | The strong roots of the oak trees were torn from the ground. | `dedehuxuvudalx gabezem gobom behazaledehulx thevom habahem vahegum ual bagadol.` | [d-tree-x-foot-x \| g-strength \| [g-part-of \| b-oak-x]] \| th-MEMORY \| h-force \| v-removal \| [out-of \| b-ground] | covered |
+| 77 | The strong roots of the oak trees were torn from the ground. | `dedehuxuvudalx gabezem gobom banedoledehulx thevom habahem vahegum ual bagadol.` | [d-tree-x-foot-x \| g-strength \| [g-part-of \| b-oak-x]] \| th-MEMORY \| h-force \| v-removal \| [out-of \| b-ground] | covered |
 | 78 | The sun looked down through the branches upon the children at play. | `zazaher thevom hadahel uol bedehuxobolx vazaham ol bahadolx gaxebegam.` | z-←sun \| th-MEMORY \| h-down \| [through \| b-tree-x-bone-x] \| v-look \| [at \| [b-child-x \| g-agent-x-recreation]] | covered |
 | 79 | The west wind blew across my face like a friendly caress. | `zewedul gewezal thevom vewedul hebum bevezal em bamun humum bahagel gazahum.` | [z-wind \| g-west] \| th-MEMORY \| v-wind \| [h-across \| b-face] \| [used-by \| b-speaker] \| [h-like \| [b-hug \| g-goodwill]] | covered |
 | 80 | The spool of thread rolled across the floor. | `zayahal thevom vewawel hebum bahazalagadol.` | z-yarn \| th-MEMORY \| v-wheel \| [h-across \| b-floor] | covered |
@@ -127,7 +127,7 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 | 98 | Will you send this message for me? | `yem zehon demeham om bamun vobozam hadem bamun.` | y-request \| z-listener \| d-message \| [near \| b-speaker] \| v-dispatch \| [h-on-behalf-of \| b-speaker] | covered |
 | 99 | Are you waiting for me? | `yol ? zehon damun vabazam.` | y-question \| ? \| z-listener \| d-speaker \| v-wait | covered |
 | 100 | Is this the first kitten of the litter? | `yol ? zebebexagadur g#1e0 om bamun.` | y-question \| [? \| z-baby-x-cat \| g-#-1e0] \| [near \| b-speaker] | covered |
-| 101 | Are these shoes too big for you? | `yol ? zuhahurx thegatham behon zel gelavam.` | y-question \| [? \| z-←dress-shoe-x \| [th-sake-met-any-term \| b-listener] \| z-rank/more \| g-big] | covered |
+| 101 | Are these shoes too big for you? | `yol ? zuhahurx thegatham behon zel gelavam.` | y-question \| [? \| z-←shoe-x \| [th-sake-met-any-term \| b-listener] \| z-rank/more \| g-big] | covered |
 | 102 | How wide is the River? | `yol zowoder wrar gegodem.` | y-question \| z-←drinking-water \| [w-how-many \| g-width] | covered |
 | 103 | Listen. | `yel vewam.` | y-command \| v-listening | covered |
 | 104 | Sit here by me. | `yel vehahel om bamun.` | y-command \| v-sit \| [near \| b-speaker] | covered |
@@ -135,13 +135,13 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 | 106 | Come with us. | `yel han bamunx vuvudel.` | y-command \| [h-including \| b-speaker-x] \| v-go | covered |
 | 107 | Bring your friends with you. | `yel han bobelx gemezem behon vuvudel oel bamun.` | y-command \| [h-including \| [b-person-x \| [g-companionship \| b-listener]]] \| v-go \| [toward \| b-speaker] | covered |
 | 108 | Be careful. | `yel geyayem.` | y-command \| g-caution | covered |
-| 109 | Have some tea. | `yem dedehel gral vozodal.` | y-request \| [d-tea \| g-more-than-one] \| v-drink | covered |
+| 109 | Have some tea. | `yem dedehel gral vedeyol.` | y-request \| [d-tea \| g-more-than-one] \| v-drink | covered |
 | 110 | Pip and his dog were great friends. | `zazawan zodogal em bazawar zal welavam gemezem thevom.` | [z-Azawan \| [z-dog \| [used-by \| b-←Azawan]] \| z-and \| [w-very \| g-companionship]] \| th-MEMORY | awkward (G-17) |
 | 111 | John and Elizabeth are brother and sister. | `zazawan gemehel zalahen geveval zal grebazol.` | [[z-Azawan \| g-male] \| [z-Alahen \| g-female] \| z-and \| g-#-e0] | awkward (G-17) |
 | 112 | You and I will go together. | `zahan thamam vuvudelx.` | z-interlocutors \| th-plan-itinerary \| v-go-x | covered |
 | 113 | They opened all the doors and windows. | `zobelx thevom dual goyel voyel xal zoberx dual gewedol voyel.` | [z-person-x \| th-MEMORY \| [d-everything \| g-door] \| v-open \| x-and \| z-←person-x-x \| [d-everything \| g-window] \| v-open] | covered |
 | 114 | He is small, but strong. | `zazawan gamazam. xagezam zazawar gabezem.` | z-Azawan \| g-small . x-but \| z-←Azawan \| g-strength | covered |
-| 115 | Is this tree an oak or a maple? | `yol zedehur gehazaledehul gemebal ?gar.` | y-question \| z-←tree \| [g-oak \| g-maple \| ?g-wh] | covered |
+| 115 | Is this tree an oak or a maple? | `yol zedehur ganedoledehul gemebal ?gar.` | y-question \| z-←tree \| [g-oak \| g-maple \| ?g-wh] | covered |
 | 116 | Does the sky look blue or gray? | `yol zagavum gubuhel gegeval ?gar thodom.` | y-question \| [z-sky \| [g-blue \| g-gray \| ?g-something]] \| th-LIVE | covered |
 | 117 | Come with your father or mother. | `yel han bobel grebuwol behon vuvudel oel bamun.` | y-command \| [h-including \| [b-person \| [g-#-e-1 \| b-listener]]] \| v-go \| [toward \| b-speaker] | covered |
 | 118 | I am tired, but very happy. | `zSELFn gadadal. xagezam welavam thozothamam.` | z-SELF \| g-tired . x-but \| [w-very \| th-pleasure-met-any-term-INTERNAL-FLOWING] | covered |
@@ -204,7 +204,7 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 | 175 | I feel ashamed of myself. | `zSELFn thanathumom bSELFr.` | z-SELF \| [th-relatedness-unmet-modifiable-AIMED-FLOWING \| b-←SELF] | covered |
 | 176 | Sit here by yourself. | `yel zehon zal vehahel om bamun.` | y-command \| [z-listener \| z-and] \| v-sit \| [near \| b-speaker] | covered |
 | 177 | The dress of the little princess was embroidered with roses, the national flower of the Country. | `dedezal em begehal gamazam gagayem venedal ael borozalx. zorozarx gavavul gobom bagul.` | d-dress \| [used-by \| [b-girl \| g-small \| g-leadership]] \| v-needle \| [using \| b-rose-x] . [z-←rose-x-x \| g-flower \| [g-part-of \| b-country]] | covered |
-| 178 | They wore red caps, the symbol of liberty. | `zobelx thevom dagebalx geredal vedezal. zagebarx gezezul gahehom bazodam.` | z-person-x \| th-MEMORY \| [d-cap-x \| g-red] \| v-dress . [z-←cap-x-x \| g-symbols \| [g-topic \| b-liberty]] | covered |
+| 178 | They wore red caps, the symbol of liberty. | `zobelx thevom dahodalx geredal vedezal. zahodarx gezezul gahehom bazodam.` | z-person-x \| th-MEMORY \| [d-hat-x \| g-red] \| v-dress . [z-←hat-x-x \| g-symbols \| [g-topic \| b-liberty]] | covered |
 | 179 | With him as our protector, we fear no danger. | `han bazawan gagavol em bamunx zamunx dogozom dul vevehel.` | [h-including \| [b-Azawan \| g-guard]] \| [used-by \| b-speaker-x] \| z-speaker-x \| [d-danger \| d-not] \| v-fear | covered |
 | 180 | All her finery, lace, ribbons, and feathers, was packed away in a trunk. | `dual gerebam em balahen valagel al balagel.` | [d-everything \| g-embellishment] \| [used-by \| b-Alahen] \| v-carry \| [in \| b-luggage] | covered |
 | 181 | Light he thought her, like a feather. | `zazawan vevegal darl zalahen thegatham zuel garagam humum bavevel.` | z-Azawan \| v-think \| d-that-clause \| [z-Alahen \| th-sake-met-any-term \| z-rank/less \| g-heavy] \| [h-like \| b-feather] | covered |
@@ -224,7 +224,7 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 | 195 | I had a younger brother whose name was Antonio. | `zahaben thevom glemehel grebazol bamun. zahaben zSELFn zuel gebevam.` | z-Ahaben \| th-MEMORY \| gl-male \| [g-#-e0 \| b-speaker] . [z-Ahaben \| z-SELF \| z-rank/less \| g-age] | covered |
 | 196 | Gnomes are little men who live under the ground. | `glemehel zobelx gamazam huam vahazam hadahel bagadol.` | [gl-male \| z-person-x \| g-small] \| h-always.open \| v-home \| [h-down \| b-ground] | covered |
 | 197 | He is loved by everybody, because he has a gentle disposition. | `zual gobel dazawan valaval thevem barl zazawan gegehem.` | [z-everything \| g-person] \| d-Azawan \| v-love \| [th-because \| b-that-clause] \| [z-Azawan \| g-kindness] | covered |
-| 198 | Hold the horse while I run and get my cap. | `yel dohozal vevedul. huwem barl zSELFn varahal dagebal em bamun valagel val.` | y-command \| d-horse \| v-fist . [h-while \| b-that-clause] \| z-SELF \| v-run \| d-cap \| [used-by \| b-speaker] \| [v-carry \| v-and] | covered |
+| 198 | Hold the horse while I run and get my cap. | `yel dohozal vevedul. huwem barl zSELFn varahal dahodal em bamun valagel val.` | y-command \| d-horse \| v-fist . [h-while \| b-that-clause] \| z-SELF \| v-run \| d-cap \| [used-by \| b-speaker] \| [v-carry \| v-and] | covered |
 | 199 | I have found the ring I lost. | `zSELFn thevom derehal vadadum. zSELFn thamom derehar vamagal.` | z-SELF \| th-MEMORY \| d-ring \| v-loss . z-SELF \| th-RESIDUE \| d-←ring \| v-find | covered |
 | 200 | Play and I will sing. | `yel vebegam. xan zSELFn thamam vezehel.` | y-command \| v-play . x-and-then \| z-SELF \| th-plan-itinerary \| v-sing | covered |
 | 201 | That is the funniest story I ever heard. | `zSELFn hoham thevom dozemx vewam. zozer zel galavom.` | z-SELF \| h-already \| th-MEMORY \| d-tale-x \| v-listening . [z-←scroll \| z-rank/more \| g-amusement] | covered |
@@ -294,7 +294,7 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 - **STC-86, 87, *tastes / feels*:** the sense is the channel: LIVE for a present touch, PATTERN for a general taste. *Sugar* is the *candy* abstract (`gagedem`).
 - **STC-89, *had once been*:** FORMER `thenom`. The predicate *sailor* sits between the noun and the kin relation, so it describes the father, not the boy.
 - **STC-95, *Monday*:** *first weekday* (`zelagam grewol`, counting from Monday) under LIVE for *today*.
-- **STC-65, 69, 72, 76, 77, 79, 80, 144, new words:** *fence* `buwulagezal`, *floor* `bahazalagadol`, *field* `bevedalx`, *wheat* `begevel` (*grain*), *oak* `behazaledehulx`, *ground* `bagadol`, *face* `bevezal`, *summer* `bazegem`.
+- **STC-65, 69, 72, 76, 77, 79, 80, 144, new words:** *fence* `buwulagezal`, *floor* `bahazalagadol`, *field* `bevedalx`, *wheat* `begevel` (*grain*), *oak* `banedoledehulx`, *ground* `bagadol`, *face* `bevezal`, *summer* `bazegem`.
 - **STC-72, 79, 96, new rows:** *country* is `bagedom` (*rural*), *caress* is *hug* (`bahagel`), *leaves* is `gelevol`.
 - **STC-98, a polite request:** English *Will you … for me?* is a request, so it takes soft request `yem`; *for me* is proxy `hadem`.
 - **STC-100, *first of the litter*:** eldest sibling `g#1e0`.
@@ -302,7 +302,7 @@ Every Agazan line below was checked with `node scripts/parse.mjs`. `SELFn` is th
 - **STC-102, *how wide*:** `wrar` on *width* (`gegodem`, the *accordion* abstract).
 - **STC-103–108, commands:** *listen* is the *ear* abstract as a verb (`vewam`), not *hear* (`vewal`). *Keep this secret* is *keep confidential* (`vaheham`, the *hush* abstract) with `darth` for *this*; *until tomorrow* is a signed day count in the pole's `/b/` (`homam bazazam grawol`), counted from now. *Be careful* is `yel geyayem`, a command with only a `/ɡ/` body. *Come* / *bring … with you* is `vuvudel` + `han` (company); with a place, `oel bamun`.
 - **STC-90, *blanket*:** the *yarn* abstract (`dayaham`). **STC-134, *too short*:** less *length* (`geregam`, the *railcar* abstract). **STC-142, *threw … lake*:** `vubuhal` (role English on *boomerang*) and `bagawom` (the *canoe* abstract).
-- **STC-109, *have some tea*:** an offer, so soft request `yem`; `gral` on a mass noun is *some*. The verb is `vozodal` (*drink*, role English on *soda*).
+- **STC-109, *have some tea*:** an offer, so soft request `yem`; `gral` on a mass noun is *some*. The verb is `vedeyol` (*drink*).
 - **STC-110, 111, *friends* / *brother and sister*:** the tie or kin word is SHARED after the join with no `/b/`, so *of each other* is only implied (G-17). *His dog* is a hook + `/b/` right before the join word (`zodogal em bazawar zal`, G-18).
 - **STC-112, *go together*:** PLAN plus collective **-x** on the verb.
 - **STC-113, *all the doors and windows*:** two *every K* clauses, since a kind join after `dual` does not read as one kind. *Open* is `voyel` (role English on *door*).

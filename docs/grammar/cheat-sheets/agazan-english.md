@@ -327,6 +327,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `abalabezel` | *shoulder* |  |
 | `abazelalagal` | *arrest* |  |
 | `abazemenehel` | *penalty* |  |
+| `abebaledeyol` | *soda* |  |
 | `abehalahazal` | *resort* |  |
 | `abevalahazal` | *bathroom* |  |
 | `abozomahazal` | *museum* |  |
@@ -336,6 +337,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `adedelazewel` | *council* |  |
 | `adehumazahal` | *scan* |  |
 | `adehumevehel` | *panic* |  |
+| `adozemuhahul` | *dress-shoe* |  |
 | `agadalahal` | *appointment* |  |
 | `agadelahazal` | *restaurant* |  |
 | `agadolahahal` | *landscape* |  |
@@ -346,7 +348,6 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `agawalezegol` | *hint* |  |
 | `agawulayahal` | *leather* |  |
 | `agazamezebel` | *explanation* |  |
-| `agebalahel` | *lid* |  |
 | `agedemebevul` | *cake* |  |
 | `ageladahel` | *hang* |  |
 | `agozamozel` | *fiction* |  |
@@ -363,13 +364,14 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ahahulehegol` | *lawsuit* |  |
 | `ahamezebel` | *negotiation* |  |
 | `ahazalagadol` | *floor* |  |
-| `ahazalagebal` | *roof* |  |
+| `ahazalahodal` | *roof* |  |
 | `ahazalamol` | *mortgage* |  |
 | `ahazalevedal` | *yard* |  |
 | `ahazalezagal` | *apartment* |  |
 | `ahazamobel` | *resident* |  |
 | `ahazamogobal` | *environment* |  |
 | `ahelogodel` | *fridge* |  |
+| `ahodalahel` | *lid* |  |
 | `aholohahal` | *emotion* |  |
 | `ahulagedul` | *democracy* |  |
 | `alagamahazal` | *prison* |  |
@@ -392,6 +394,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `anadamobel` | *stranger* |  |
 | `analobel` | *friend* | `analobem` *allegiance* |
 | `anavalemedel` | *surgery* |  |
+| `anedoledehul` | *oak* |  |
 | `aradalarebel` | *edit* |  |
 | `aradalezehel` | *poem* |  |
 | `aradalovul` | *essay* |  |
@@ -426,9 +429,9 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `edeholezebel` | *lecture* |  |
 | `edehulazewel` | *forest* |  |
 | `edevalahazal` | *hell* |  |
+| `edevolegugel` | *videogame* |  |
 | `edezaladahel` | *skirt* |  |
 | `egabemevedal` | *estate* |  |
-| `ehazaledehul` | *oak* |  |
 | `ehebalabahol` | *harbor* |  |
 | `ehebalahazal` | *port* |  |
 | `ehebamagehal` | *tourism* |  |
@@ -491,6 +494,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `owogaluol` | *traverse* |  |
 | `owogaluom` | *relay* |  |
 | `oyelebehul` | *doorbell* |  |
+| `ubuhelebavul` | *blueberry* |  |
 | `uduhemagedul` | *military* |  |
 | `uduhomowodel` | *thirst* |  |
 | `udumahazal` | *laboratory* |  |

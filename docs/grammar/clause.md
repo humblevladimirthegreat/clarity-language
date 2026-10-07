@@ -661,7 +661,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *balloon* | `abevul` | 🎈 |
 | *drum* | `adavol` | 🥁 |
 | *mask* | `amazol` | 😷 |
-| *package* | `abegol` | 📦 |
+| *box* | `abegol` | 📦 |
 
 **Review:**
 
@@ -724,9 +724,9 @@ d-trumpet | z-Ahaben | v-see
 **2.** `vabahel zalahen dabegol.`
 
 ::: details Show answer
-v-punch | z-Alahen | d-package
+v-punch | z-Alahen | d-box
 
-*What Alahen does is punch a package.*
+*What Alahen does is punch a box.*
 :::
 
 **3.** `hadehum zalahen vezevul.`
@@ -740,9 +740,9 @@ h-haste | z-Alahen | v-sneak
 **4.** `dabegol zahaben hadehum vahahal.`
 
 ::: details Show answer
-d-package | z-Ahaben | h-haste | v-see
+d-box | z-Ahaben | h-haste | v-see
 
-*It's a package that Ahaben hastily sees.*
+*It's a box that Ahaben hastily sees.*
 :::
 
 #### What changes {#advanced-what-changes}

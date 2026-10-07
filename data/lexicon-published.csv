@@ -320,7 +320,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦨,skunk,uzaga,stigma,skunk leaves a lasting stigma,,,
 🦘,kangaroo,agage,bounce,kangaroo bounces back,v:jump,leap,
 🦡,badger,abuhe,persistence,badger someone with persistence,,determination,
-🐾,paw-prints,oba,pattern,pawprints mark a trail; a pattern is the regularity the trail of cases leaves,,trail; track; creature,
+🐾,paw-prints,oba,pattern,pawprints mark a trail; a pattern is the regularity the trail of cases leaves,,trail; track,
 🦃,turkey,edege,folly,a turkey gobbles loudly without making sense,,,
 🐔,chicken,ehega,cowardice,a chicken flees at the first scare,,,
 🐓,rooster,uruze,awakening,the rooster crows everyone awake,,,
@@ -367,7 +367,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦪,oyster,ozeda,,,,,
 🐌,snail,ezeho,slow,slow as a snail,,,comparatives.md#beginner-practice
 🦋,butterfly,ebade,,,,,
-🐛,bug,aboga,flaw,a computer bug makes a program go wrong,,error,spans.md#advanced-practice
+🐛,bug,aboga,flaw,a computer bug makes a program go wrong,,error; insect,spans.md#advanced-practice
 🐜,ant,anado,diligence,ants work with diligence,,,plurality.md#beginner-practice
 🐝,honeybee,ehabe,,,,,
 🪲,beetle,ebada,hardiness,a beetle's hard shell shrugs off hits,,solid; hard; firm,
@@ -423,7 +423,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🍑,peach,ebaha,excellence,something peachy is as fine as a ripe peach,,,
 🍒,cherry,eheva,bonus,the cherry on top is the extra finishing touch,,,
 🍓,strawberry,ozo,sweetness,a ripe strawberry tastes of sugar,,sweet,
-🫐,blueberry,ububo,,,,,
+🫐,berry,ebavu,,,,,
 🥝,kiwi,agewe,oddity,fuzzy kiwi is an odd fruit,,odd; weird,
 🍅,tomato,adedo,controversy,tomato fruit or vegetable controversy,,debate; controversial; argument,joins.md#beginner-practice
 🫒,olive,aleva,,,,,
@@ -443,7 +443,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧅,onion,anaya,depth,onion has layers of depth,,,
 🥜,peanut,ebeya,triviality,work for peanuts is trivial pay,,,
 🫘,bean,ebeye,,,,,
-🌰,chestnut,ehaza,staleness,old chestnut is stale joke,,,
+🌰,nut,anedo,staleness,a chestnut is a nut; an old chestnut is a stale joke,,chestnut,
 🫚,ginger,ahehe,,,,,
 🫛,pea,abewo,,,,,
 🫜,beet,eboda,,,,,
@@ -472,7 +472,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥚,egg,ega,potential,egg holds unrealized potential,,,
 🍳,cooking,uguge,,,,,
 🥘,skillet,ozega,medley,many components one pan,,,
-🍲,stew,uzudu,simmer,heat over time,,pot,
+🍲,soup,uzuba,simmer,soup simmers over low heat for a long time,,pot; stew,
 🫕,fondue,avadu,sharing,everyone dips from one shared pot,,,
 🥣,cereal,eze,capacity,bowl holds what it can,,,intention.md#intermediate-practice
 🥗,salad,azavu,,,,,hooks.md#beginner-practice
@@ -522,7 +522,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥂,cheers,eheza,,,,,
 🥃,whiskey,eweze,fortitude,whiskey warms with fortitude,,,
 🫗,pour,oboho,loss-of-control,pour directs liquid; loss-of-control is the unobservable slip,,slip,pronouns.md#beginner-practice
-🥤,soda,ozoda,plastic,a soda bottle is molded plastic; plastic is a moldable synthetic material,v:drink,pop,
+🥤,drink,edeyo,plastic,a takeaway drink cup is molded plastic; plastic is a moldable synthetic material,,beverage,
 🧋,bubble-tea,edewo,trendiness,bubble tea is trendy now,,trend; fashion,
 🧃,juice,uhuza,vigor,juice box fuels vigor,,,
 🧉,mate,emeda,fellowship,mate is shared fellowship,,fellow,
@@ -556,7 +556,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🛖,hut,ahede,locality,hut sits in a small settlement; locality is the near neighborhood,,local; neighborhood,
 🏘️,houses,ahaze,town,houses in a cluster form a town; a town is a small settled place,,,
 🏚️,derelict-house,aheza,ruin,a derelict house shows decay; ruin is lasting damage,,,
-🏠,house,ahaza,home,a house is walls and roof; home is where you belong,,domestic; accommodation; chamber,relations.md#intermediate-practice
+🏠,house,ahaza,home,a house is walls and roof; home is where you belong,,domestic; accommodation,relations.md#intermediate-practice
 🏢,office,oveza,corporate,tall offices for business; corporate is organized commerce,,facility; corporation; agency,
 🏤,post-office,oveze,conveyance,post office sends mail; conveyance is the unobservable transfer-as-kind,,delivery; transportation; transfer; transport,
 🏥,hospital,ahazo,,,,,word-endings.md#intermediate-practice
@@ -735,7 +735,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🎱,pool,ubuho,liter,pool holds a volume of liquid; liter is the SI volume unit,,,
 🔮,crystal-ball,obova,foresight,crystal ball sees what may come; foresight is seeing ahead,,,
 🪄,wand,awade,shortcut,a wand fixes in one wave; shortcut is bypassing hard work,,,
-🎮,videogame,evode,,,,,
+🎮,game,eguge,,,,,
 🕹️,joystick,ohozu,,,,,
 🎰,slot-machine,amehe,gamble,slot machine bets on chance; gamble is risking on chance,,bet; stake,
 🎲,dice,adaza,chance,dice land on random faces; chance is unpredictable outcome,,prospect; probability,
@@ -781,7 +781,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🛍️,shopping-bag,ahabu,pound-mass,a shopping bag is weighed by the pound; pound-mass is the mass unit,,,
 🎒,backpack,aba,preparation,backpack holds what you need ahead; preparation is readying beforehand,,pack,
 🩴,sandal,azaye,,,,,
-👞,dress-shoe,uhahu,,,,,
+👞,shoe,uhahu,,,,,
 👟,sneaker,uzege,activity,sneaker is built for movement; activity is active motion,,action; active,
 🥾,boot,ubuda,mile,a boot is made for long walking; a mile is a long walking distance,,,
 🥿,loafer,olove,,,,,
@@ -792,7 +792,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 👒,sun-hat,azeha,shade,a sunhat shields from sun above; shade is shelter from harshness,,shadow,
 🎩,top-hat,adabe,trick,a magician pulls a trick from a top hat,,,
 🎓,mortar-board,omobo,,,,college; university,
-🧢,cap,ageba,,,,,
+🧢,hat,ahoda,,,,cap,
 🪖,helmet,ehevu,,,,,roles.md#beginner-practice
 ⛑️,hard-hat,aheda,,,,,
 📿,rosary,orozo,prayer,beads count prayers; prayer is speaking to the sacred,,,
@@ -881,7 +881,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 📧,email,emeha,message,email sends words instantly; message is communicated content,,,
 📤,out-box,adaho,outgoing,outbox holds mail to send; outgoing is leaving your hands,,,
 📥,inbox,enaba,incoming,inbox holds mail received; incoming is arriving to you,,,
-📦,package,abego,aggregation,package wraps items; aggregation is the unobservable grouping,,software; module,clause.md#advanced-practice
+📦,box,abego,aggregation,a box wraps items together; aggregation is the unobservable grouping,,software; module; package; parcel,clause.md#advanced-practice
 📫,mailbox,emebe,reception,closed mailbox holds delivered mail; reception is receiving inward,,,
 📮,post-box,oboza,dispatch,postbox sends mail on its way; dispatch is sending outward,,send; mail; deliver; post,
 🗳️,ballot,ahu,choice,ballot records your vote; choice is selecting among options,,vote; election; elect; poll; voluntary,
@@ -1064,7 +1064,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ⏺️,record,ere,preservation,record button captures now; preservation is the unobservable keeping-across-time,,tape; preserve; retain,
 ⏏️,eject,ahegu,removal,eject pushes media out; removal is forcing outward exit,,extract,
 🎦,cinema,ezaze,make-believe,cinema shows a film; make-believe is the unobservable as-if,,imagination; pretend,
-🔆,bright,abawa,amplify,bright raises the brightness; amplify is making louder or brighter,v:shine,,
+🔆,bright,abawa,amplify,bright raises the brightness; amplify is making louder or brighter,v:shine,light,
 📶,signal,ezego,evidence,signal bars show what gets through; evidence is what supports a claim,,sign; prove; indication; indicate,
 🛜,wireless,awaza,connectivity,a wireless signal links devices without a cable,,online,
 📳,vibrate,avobe,,,,shake,
@@ -1402,6 +1402,8 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 𐃆,spear,ozebe,thrust,a spear drives forward to one point; thrust is the main point pushed forward,,,
 𐃉,sword,ozodu,warfare,a sword is made for war; warfare is waging war,,,
 𐃌,chariot,eheyu,conquest,a chariot carries the conqueror; conquest is taking by force,,,
+𓄛,animal,anahu,,the hide sign marks words for animals in hieroglyphs,,creature; beast,
+𓉐,room,uruhe,,the floor-plan sign is a walled space with a doorway,,chamber,
 𓊲,table,edabe,,a low table set with offerings,,,
 𝄐,fermata,evada,lingering,a fermata holds a note longer than its beat; lingering is staying past the expected time,,,
 𝄒,breath-mark,amago,breather,a breath mark gives the singer a moment to breathe; a breather is a short break to recover,,,

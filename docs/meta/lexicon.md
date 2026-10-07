@@ -83,6 +83,10 @@ Moving a sense (an overlay) from one published row to another is a **replacement
 4. By hand, replace every doc use of the **old** root in the moved sense with the new root, and fix the morph glosses and English wording. Leave uses of the old row's ordinary sense alone. Check with `node scripts/find.mjs` or grep for the old sense forms.
 5. `npm run build` and `npm test`.
 
+## Compound heads
+
+A row in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv) takes the most specific head root that fits: *sparrow* is built on 🐦 *bird*, not 𓄛 *animal*; *basil* on 🌿 *herb*. A generic head (𓄛 *animal*, 𓉐 *room*, 🫙 *jar*) heads a compound only when no narrower root covers the whole class (*pet*, *livestock*).
+
 ## Core vocabulary column
 
 The `core` column in [`lexicon-published.csv`](../../data/lexicon-published.csv) and [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv) names the stage checkpoint that introduces a core learner root, as `page.md#id` of its checkpoint heading: `### Practice` (`clause.md#beginner-practice`), or a legacy `### Translation practice` (`clause.md#beginner-translation-practice`). Replacing a legacy checkpoint retargets its cells by hand; `retie-docs` does not see a hand-renamed heading. An empty cell means the root is not core. The order of the core list is the path order of those checkpoints. House names, the `SELF` root, discourse-role specials, topic and generic pronouns, the nine [sake](../grammar/sakes.md#sake-inventory) roots, and closed overlay words are never core.
