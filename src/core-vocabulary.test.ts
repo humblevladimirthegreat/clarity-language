@@ -93,9 +93,9 @@ function entry(root: string, group: BankGroup, line = 1): BankEntry {
   return { root, english: root, agazan: root, group, line };
 }
 
-function cp(anchor: string, converted: boolean, entries: BankEntry[], cast: BankEntry[] = []): Checkpoint {
+function cp(anchor: string, converted: boolean, entries: BankEntry[], cast: BankEntry[] = [], review = false): Checkpoint {
   const page = anchor.split("#")[0]!;
-  return { anchor, page, band: "beginner", line: 1, converted, entries, cast };
+  return { anchor, page, band: "beginner", line: 1, converted, review, entries, cast };
 }
 
 describe("stageCheckpoints, converted", () => {
@@ -181,6 +181,17 @@ describe("lintCoreCounts", () => {
       `b.md ${word} was met at an earlier checkpoint: move it to **Review**`,
     ]);
     assert.deepEqual(details([cp("a.md#p", true, [], [swan("review")])], {}), [`a.md ${word} is first met here: move it to **New words**`]);
+  });
+
+  it("lets a level review introduce nothing", () => {
+    const swan = entry(CLOSED.swan, "new");
+    const level = cp("review.md#beginner-practice", true, [entry("n1", "new"), ...review], [swan], true);
+    const before = cp("d.md#p", true, [entry("n1", "new"), ...review], [entry(CLOSED.swan, "new")]);
+    assert.deepEqual(details([...legacy, before, level], { ...earlier, n1: "d.md#p" }), [
+      "review.md *n1* `n1`: a level review introduces no words; list it under **Review**",
+      `review.md *${CLOSED.swan}* \`${CLOSED.swan}\`: a level review introduces no words; list it under **Review**`,
+    ]);
+    assert.deepEqual(details([...legacy, cp("review.md#beginner-practice", true, review, [], true)], earlier), []);
   });
 });
 

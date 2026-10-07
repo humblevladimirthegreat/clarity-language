@@ -55,6 +55,8 @@ Read **`docs/grammar/`** only, in stage order. [why-agazan.md](../grammar/why-ag
 15. [numbers.md](../grammar/numbers.md#beginner) · [comparatives.md](../grammar/comparatives.md#beginner) · [causation.md](../grammar/causation.md#beginner)
 16. [sakes.md](../grammar/sakes.md#beginner) · [intention.md](../grammar/intention.md#beginner) · [knowing.md](../grammar/knowing.md#beginner) · [roles.md](../grammar/roles.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner) · [intention.md](../grammar/intention.md#beginner)
 
+Then the [Beginner level review](../grammar/review.md#beginner) ([level reviews](translation-exercises.md#level-reviews)).
+
 [join-across-roles.md](../grammar/join-across-roles.md) starts at Intermediate (no Beginner slot). Emotion compose is an Intermediate section in [sakes.md](../grammar/sakes.md#emotion-compose); channels on a generalization are Advanced in [knowing.md](../grammar/knowing.md#universality). [intention.md](../grammar/intention.md) **DECISION** is Intermediate; plan / predict is Beginner. [numbers-applied.md](../grammar/numbers-applied.md) starts at Intermediate (depends on numbers). [numeric-derivation.md](../grammar/numeric-derivation.md) is Advanced-only.
 
 [causation.md](../grammar/causation.md), [intention.md](../grammar/intention.md), [pronouns.md](../grammar/pronouns.md), [questions.md](../grammar/questions.md) and [roles.md](../grammar/roles.md) have no Advanced stage: their former Advanced sections were applications and live on the recipe track.
@@ -67,5 +69,7 @@ Read **`docs/grammar/`** only, in stage order. [why-agazan.md](../grammar/why-ag
 
 17. Every peer’s **[Intermediate](../grammar/clause.md#intermediate)** section (same dependency order as above is fine). Include numbers Intermediate, [numbers-applied.md](../grammar/numbers-applied.md#intermediate), join-across-roles and overlay material, and [intention.md](../grammar/intention.md#intermediate) **DECISION** / forecast source.
 18. Every peer’s **Advanced** section, including numbers Advanced, [relations.md](../grammar/relations.md#as-of) *as-of*, and [numeric-derivation.md](../grammar/numeric-derivation.md). Skip pages with no Advanced.
+
+Each level closes with its band of [review.md](../grammar/review.md): Intermediate after step 17, Advanced after step 18 (both still to write).
 
 Learner-facing reading order: site sidebar (**Agazan Lessons**); stage notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).

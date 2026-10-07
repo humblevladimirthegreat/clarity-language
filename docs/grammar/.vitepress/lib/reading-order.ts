@@ -28,3 +28,14 @@ export const readingOrder = [
   { text: 'Numbers in use', link: '/numbers-applied' },
   { text: 'Numeric derivation', link: '/numeric-derivation' },
 ]
+
+/**
+ * Level reviews: one page with a band per level. The docs lint reads it after every stage page,
+ * so each band's review comes after every stage band of that level.
+ */
+export const levelReviewPage = 'review.md'
+
+/** Sidebar links to each level's review band. */
+export const levelReviews = [
+  { text: 'Beginner review', link: '/review#beginner' },
+]

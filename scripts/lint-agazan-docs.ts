@@ -12,6 +12,8 @@
  * **Also correct:** variants pass the item rules (src/lint/practice-item-rules.ts). Their
  * **New words** / **Review** bank has the template columns and a cue on every new row, and
  * its roots match the `core` column in path order (src/core-vocabulary.ts).
+ * The level review page comes after every stage page: it introduces no roots, and each band's
+ * items link back to every stage checkpoint of that level (src/lint/level-review.ts).
  * On the number pages, shorthand number examples need a
  * pronunciation row that matches the spoken form computed from the shorthand.
  * Mismatches, leftover ambiguity, and missing morph glosses fail the run.
@@ -69,7 +71,8 @@ import {
   type ConstructionUse,
 } from "../src/lint/drill-coverage.js";
 import { CONSTRUCTIONS as STATIC_CONSTRUCTIONS, constructionRegistry } from "../src/parse/constructions.js";
-import { readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { levelReviewPage, readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { lintLevelReview } from "../src/lint/level-review.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
 import { fillSelf } from "../src/learner-name.js";
@@ -316,7 +319,8 @@ function main(): void {
       console.log(formatMorphGlossFinding(rel, finding));
     }
 
-    for (const finding of lintPracticeItems(original, tables)) {
+    const review = dirname(file) === grammarDir && basename(file) === levelReviewPage;
+    for (const finding of lintPracticeItems(original, tables, { review })) {
       practiceCount += 1;
       console.error(`${rel}:${lineNumberAt(original, finding.index)}  practice-item  (${finding.detail})`);
     }
@@ -362,16 +366,25 @@ function main(): void {
   let orderCount = 0;
   let drillCount = 0;
   let coreCount = 0;
+  let reviewCount = 0;
   if (paths.length === 0) {
-    const pathPages = readingOrder.map((item) => sidebarPage(item.link));
+    // The level review page comes last, so each of its bands closes that level.
+    const pathPages = [...readingOrder.map((item) => sidebarPage(item.link)), levelReviewPage];
     const order = learningOrder(pathPages, pages);
     coverageCount = checkConstructionCoverage(uses);
     orderCount = reportLearningOrder(order, uses, orderReport);
     drillCount = reportDrillCoverage(order, uses);
-    const checkpoints = stageCheckpoints(pathPages, (page) => pageMarkdown.get(page), tables);
+    const checkpoints = stageCheckpoints(pathPages, (page) => pageMarkdown.get(page), tables, levelReviewPage);
     for (const finding of lintCoreCounts(checkpoints, storedCore())) {
       coreCount += 1;
       console.error(`docs/grammar/${finding.page}:${finding.line}  core-vocabulary  (${finding.detail})`);
+    }
+    const reviewMarkdown = pageMarkdown.get(levelReviewPage);
+    if (reviewMarkdown !== undefined) {
+      for (const finding of lintLevelReview(order, levelReviewPage, reviewMarkdown)) {
+        reviewCount += 1;
+        console.error(`docs/grammar/${levelReviewPage}:${lineNumberAt(reviewMarkdown, finding.index)}  level-review  (${finding.detail})`);
+      }
     }
   }
 
@@ -414,6 +427,11 @@ function main(): void {
       `\n${coreCount} core-vocabulary issue(s). Match **New words** / **Review** to the core column, or retarget the cells (docs/meta/translation-exercises.md#core-vocabulary).`,
     );
   }
+  if (reviewCount > 0) {
+    console.error(
+      `\n${reviewCount} level-review issue(s). One item per stage checkpoint, each ending with a **Rule:** link to its section (docs/meta/translation-exercises.md#level-reviews).`,
+    );
+  }
   if (orderCount > 0) {
     console.error(
       `\n${orderCount} learning-order issue(s). Rewrite the example with forms already taught, or move the home section earlier (docs/proposals/learning-order-check.md, No previews).`,
@@ -440,7 +458,8 @@ function main(): void {
     coverageCount +
     orderCount +
     drillCount +
-    coreCount;
+    coreCount +
+    reviewCount;
   if (fail > 0) {
     process.exit(1);
   }
@@ -457,7 +476,7 @@ function main(): void {
   );
   console.log("OK: every heading and <a id> on a grammar page is unique.");
   console.log("OK: translation word-bank English matches the lexicon.");
-  if (paths.length === 0) console.log("OK: converted checkpoint banks match the core vocabulary.");
+  if (paths.length === 0) console.log("OK: converted checkpoint banks match the core vocabulary; level reviews cover their levels.");
   console.log("OK: checkpoint items follow the template; decision items and Also correct variants check out.");
   console.log("OK: number pronunciation rows match their shorthand.");
   if (paths.length === 0) {

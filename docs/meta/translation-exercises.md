@@ -17,14 +17,14 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 |-------|-----|
 | **Inside each feature** | Worked examples only (house style) |
 | **End of a page stage** (e.g. [clause.md Beginner](../grammar/clause.md#beginner) → [practice](../grammar/clause.md#beginner-practice)) | Short checkpoint for *that page’s* stack |
-| **End of whole Beginner / Intermediate / Advanced** (cross-doc) | Optional larger review — prefer [`examples/`](../examples/) or a dedicated practice page later; do **not** duplicate a full review on every grammar file |
+| **End of whole Beginner / Intermediate / Advanced** (cross-doc) | Required [level review](#level-reviews) on [review.md](../grammar/review.md), one band per level; do **not** duplicate a review on every grammar file |
 | **After a real trap** | At most 1–2 items *if* English pulls the wrong Agazan shape (e.g. *because* as a verb, a general *to be*, opaque `<>` when the page is not teaching loans) |
 
 **When to add a stage checkpoint:** if the learner can misuse the form in the *next* section’s examples, put drills at the **end of this stage**. If the form is mostly recognition (a small closed table), the worked example is enough.
 
 **Coverage:** every **productive** page stage gets a checkpoint. Orientation, phonology charts, and parser maps do not — [allowlist](drill-generation.md#allowlist) **skip**. Do **not** add a spoiler block after every H3. Named settings in use: [settings](drill-generation.md#settings).
 
-**Status:** all **generate** checkpoints **exist** (see [allowlist](drill-generation.md#allowlist)). All are converted to this page's standard; none is [legacy](#legacy-checkpoints). Invoke [drill-generation.md](drill-generation.md#execute) **one grammar file per agent** only to **replace** a checkpoint, which converts it to this page's standard.
+**Status:** all **generate** checkpoints **exist** (see [allowlist](drill-generation.md#allowlist)). All are converted to this page's standard; none is [legacy](#legacy-checkpoints). Invoke [drill-generation.md](drill-generation.md#execute) **one grammar file per agent** only to **replace** a checkpoint, which converts it to this page's standard. The [Beginner level review](../grammar/review.md#beginner) exists; Intermediate and Advanced are still to write ([level reviews](#level-reviews), procedure in [drill-generation.md](drill-generation.md#level-review)).
 
 ## What belongs where
 <a id="what-belongs-where"></a>
@@ -35,7 +35,7 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 | Stage checkpoint (translation plus [decision items](#item-types)) | End of that page’s **Beginner** / **Intermediate** / **Advanced** stage |
 | Practice for a recipe | `## Practice` at the end of that `say-*.md` page ([recipe track](grammar-docs.md#recipe-track)); same principles, not a stage checkpoint |
 | Multi-turn dialogue practice | [`examples/`](../examples/) — not inside every grammar section; grammar pages do not link there |
-| Cross-doc “finish the whole level” review | Optional later; not required on each peer page |
+| Cross-doc “finish the whole level” review | [Level review](#level-reviews): the level's band on [review.md](../grammar/review.md); not on each peer page |
 
 ## Drill principles
 <a id="principles"></a>
@@ -222,6 +222,22 @@ Omit recoverable **`yal`** unless the drill is teaching speech act. Match role l
 - `lint:agazan` checks the columns of each group, the English, a cue on every **New words** row, one row per root across both groups, and that the bank lists exactly the content roots the drills use. The **Fix it** wrong form is not a use.
 
 **Caption and legend:** the captions are **`New words:`** and **`Review:`**. Spell out what the columns mean only on the first converted banks ([clause.md](../grammar/clause.md#beginner-practice) Beginner, [word-endings.md](../grammar/word-endings.md#beginner-practice) Beginner), and update the [How to learn](../grammar/introduction.md#cues) legend when the first page converts.
+
+## Level reviews
+<a id="level-reviews"></a>
+
+Each level ends with a review: the matching band of [review.md](../grammar/review.md) (`## Beginner` → `### Practice {#beginner-practice}`, and so on), outside the stage pages. The docs lint reads review.md after every stage page, so each band sits after every stage band of its level: the learning-order check and the [core vocabulary](#core-vocabulary) rules see it at the end of its level. The sidebar lists each band under **Level reviews**; stage pages do not link to it. A review follows the [template](#template) and every drill principle except where this table differs.
+
+| Rule | Detail |
+|------|--------|
+| **Coverage** | One item per stage checkpoint of the level, aimed at that page's main decision (its allowlist **Introduces** cell). Up to 3 extra items may revisit a page |
+| **Mix** | Mostly **Pick one** and short translation: **Pick one** at least a third of the items, at least 3 items per translation direction, **Fix it** + **What changes** at most a quarter |
+| **Rule link** | Every answer ends with `**Rule:** [Section title](page.md#id)` after **Also correct:**, linking the stage section that teaches the decision (not its checkpoint), in the same level |
+| **Vocabulary** | **Review** only (English · Agazan): no **New words**, house names and `SELF` included. Prefer roots unused longest (`npm run core-vocabulary -- --for review.md:<band>`) |
+| **Setting** | None: the items range over every page, so there is no **Setting:** line. House cast, plausible scenes, and *I* only for `SELF` still apply |
+| **No copies** | No item repeats a stage checkpoint item's proposition. A review revisits the same decision with other words or another packaging |
+
+`lint:agazan` checks the **Rule:** line and its target, that every stage checkpoint of the band has an item linking its page, the item counts and mix, and (with the core rules) that the bank has no **New words**. Whether an item hits the page's main decision, and the no-copy rule, stay with the author.
 
 ## Legacy checkpoints
 <a id="legacy-checkpoints"></a>

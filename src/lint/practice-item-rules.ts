@@ -13,8 +13,8 @@ import { ERROR_MARKER, practiceItems, type PracticeItem, type SpoilerLine } from
 
 export type PracticeItemFinding = { index: number; detail: string };
 
-export function lintPracticeItems(markdown: string, tables: ClassifyTables): PracticeItemFinding[] {
-  const { items, findings } = practiceItems(markdown);
+export function lintPracticeItems(markdown: string, tables: ClassifyTables, options: { review?: boolean } = {}): PracticeItemFinding[] {
+  const { items, findings } = practiceItems(markdown, options);
   const out: PracticeItemFinding[] = [...findings];
   for (const item of items) {
     const push = (detail: string, index = item.index) => out.push({ index, detail: `${LABEL[item.type]} ${item.number}: ${detail}` });
@@ -51,8 +51,9 @@ function lintAlsoCorrect(item: PracticeItem, tables: ClassifyTables, push: Push)
   if (item.alsoCorrect.length === 0) return;
   const answer = item.spoiler.find((line) => line.kind === "agazan");
   if (!answer) return push("**Also correct:** with no Agazan answer line");
-  const last = item.spoiler.at(-1);
-  if (last?.kind !== "also") push("**Also correct:** must be the last line of the answer");
+  // A level review answer ends with its **Rule:** link, after **Also correct:**.
+  const last = item.spoiler.filter((line) => line.kind !== "rule").at(-1);
+  if (last?.kind !== "also") push("**Also correct:** must be the last line of the answer (before **Rule:** in a level review)");
   for (const variant of item.alsoCorrect) {
     if (same(variant.text, answer.text)) {
       push(`variant \`${variant.text}\` repeats the main answer`, variant.index);

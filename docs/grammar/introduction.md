@@ -49,6 +49,8 @@ Grammar pages use **Beginner** / **Intermediate** / **Advanced** sections. **Fin
 
 Follow the **Agazan Lessons** in the site sidebar. Read each page’s Beginner section in that order, then go back to the start and read each page’s Intermediate section, then do the same for Advanced.
 
+When you finish a level, take its review under **Level reviews** in the sidebar ([Beginner](review.md#beginner)). It has one item per page of that level, and each answer links back to the section it tests.
+
 The sidebar **Tools** list includes [Terminology](terminology.md) for the English names these pages use for grammar (with a short gloss and a link to the teaching section), plus Lexicon and [Inspect](inspect.md) for roots and word-by-word breakdowns.
 
 ### Tables: Use, English, Same root as, and Cue

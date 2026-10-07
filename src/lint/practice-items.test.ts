@@ -57,6 +57,19 @@ ${details(2)}
   });
 });
 
+describe("practiceItems, level review", () => {
+  it("reads a **Rule:** line and skips the checkpoint counts", () => {
+    const md = PRACTICE.replace(
+      "**Also correct:** \`dazawan zahaben vahahal.\`, \`yal zahaben dazawan vahahal.\`",
+      "**Also correct:** \`dazawan zahaben vahahal.\`\n\n**Rule:** [Role letters](clause.md#role-letters)",
+    ).replace(/#### Pick one[\s\S]*$/, "");
+    const { items, findings } = practiceItems(md, { review: true });
+    assert.deepEqual(items[0]!.spoiler.map((line) => line.kind), ["agazan", "text", "also", "rule"]);
+    assert.deepEqual(findings, []);
+    assert.ok(practiceItems(md).findings.some((f) => f.detail.startsWith("0 decision item(s)")));
+  });
+});
+
 describe("fixPromptRanges", () => {
   it("covers only Fix it prompt lines", () => {
     const ranges = fixPromptRanges(PRACTICE);

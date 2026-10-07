@@ -11,7 +11,7 @@ import { lineNumberAt } from "../retie/tokens.js";
 import type { AmbiguityConflict } from "../parse/types.js";
 import { SPEECH_MARK } from "./number-speech-docs.js";
 import { isPracticeBoundary, practiceRanges } from "./practice-sections.js";
-import { practiceItems } from "./practice-items.js";
+import { practiceItems, RULE_RE } from "./practice-items.js";
 
 export type MorphPair = {
   agazan: string;
@@ -321,6 +321,7 @@ function extractExerciseLooseInDetails(itemLines: string[]): string | null {
       continue;
     }
     if (/^:::$/.test(trimmed)) break;
+    if (RULE_RE.test(trimmed)) continue;
     const fromItalic = looseFromItalic(trimmed);
     if (fromItalic) return fromItalic;
   }
@@ -355,7 +356,7 @@ function extractExerciseMorph(itemLines: string[], agazanOnPrompt: boolean): str
 }
 
 function visibleExerciseMorphLine(trimmed: string): string | null {
-  if (!trimmed || unwrapCode(trimmed)) return null;
+  if (!trimmed || unwrapCode(trimmed) || RULE_RE.test(trimmed)) return null;
   if (/^\*[^*].*\*$/.test(trimmed)) return null;
   const normalized = normalizeExerciseMorph(trimmed);
   if (!normalized) return null;

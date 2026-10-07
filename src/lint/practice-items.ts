@@ -3,6 +3,7 @@
  * (docs/meta/translation-exercises.md#template), plus the section-shape findings:
  * known H4s in template order, both translation directions, items numbered from 1 under
  * each H4, item counts (docs/meta/drill-generation.md#execute), and a spoiler on every item.
+ * A level review ([level-review.ts](level-review.ts)) has its own counts, so `review` skips them.
  */
 import { SPEECH_MARK } from "./number-speech-docs.js";
 import { practiceRanges } from "./practice-sections.js";
@@ -27,8 +28,11 @@ export const ERROR_MARKER = "lint: error";
 
 export type PracticeSpan = { text: string; index: number; marker?: string };
 
-/** `speech`: a 🔊 pronunciation row under a number answer ([number-speech-docs.ts](number-speech-docs.ts)). */
-export type SpoilerLineKind = "agazan" | "also" | "english" | "speech" | "text";
+/**
+ * `speech`: a 🔊 pronunciation row under a number answer ([number-speech-docs.ts](number-speech-docs.ts)).
+ * `rule`: the **Rule:** link that ends a level review answer.
+ */
+export type SpoilerLineKind = "agazan" | "also" | "english" | "speech" | "rule" | "text";
 export type SpoilerLine = { text: string; index: number; kind: SpoilerLineKind };
 
 export type PracticeItem = {
@@ -53,8 +57,12 @@ const ITEM_START_RE = /^\*\*(\d+)\.\*\*(.*)$/;
 const H4_RE = /^#### (.+?)\s*(?:\{#[^}]*\})?\s*$/;
 const SPAN_RE = /(?:<!--\s*([\s\S]*?)\s*-->\s*)?`([^`]+)`/g;
 const ALSO_RE = /^\*\*Also correct:\*\*/;
+export const RULE_RE = /^\*\*Rule:\*\*/;
 
-export function practiceItems(markdown: string): { items: PracticeItem[]; findings: PracticeShapeFinding[] } {
+export function practiceItems(
+  markdown: string,
+  { review = false }: { review?: boolean } = {},
+): { items: PracticeItem[]; findings: PracticeShapeFinding[] } {
   const lines = markdown.split(/\r?\n/);
   const starts: number[] = [];
   let offset = 0;
@@ -115,12 +123,13 @@ export function practiceItems(markdown: string): { items: PracticeItem[]; findin
       const title = PRACTICE_H4.find((h) => h.type === type)!.title;
       const count = sectionItems.filter((item) => item.type === type).length;
       if (!seen.includes(type)) findings.push({ index: at, detail: `checkpoint has no #### ${title}` });
+      else if (review) continue;
       else if (count < TRANSLATION_ITEMS.min || count > TRANSLATION_ITEMS.max) {
         findings.push({ index: at, detail: `${count} ${title} item(s); use ${TRANSLATION_ITEMS.min}–${TRANSLATION_ITEMS.max}` });
       }
     }
     const decisions = sectionItems.filter((item) => item.type !== "en-ag" && item.type !== "ag-en").length;
-    if (decisions < DECISION_ITEMS.min || decisions > DECISION_ITEMS.max) {
+    if (!review && (decisions < DECISION_ITEMS.min || decisions > DECISION_ITEMS.max)) {
       findings.push({ index: at, detail: `${decisions} decision item(s) (Pick one / Fix it / What changes); use ${DECISION_ITEMS.min}–${DECISION_ITEMS.max}` });
     }
     items.push(...sectionItems);
@@ -177,6 +186,7 @@ function readItem(
 function spoilerKind(trimmed: string): SpoilerLineKind {
   if (/^`[^`]+`$/.test(trimmed)) return "agazan";
   if (ALSO_RE.test(trimmed)) return "also";
+  if (RULE_RE.test(trimmed)) return "rule";
   if (trimmed.startsWith(SPEECH_MARK)) return "speech";
   if (/^\*[^*].*\*$/.test(trimmed)) return "english";
   return "text";

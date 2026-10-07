@@ -17,6 +17,14 @@ describe("lintPracticeItems", () => {
     assert.match(lint(PRACTICE.replace("`dazawan zahaben vahahal.`, ", "`zahaben dazawan vahahal.`, ")).join("\n"), /repeats the main answer/);
   });
 
+  it("lets a level review **Rule:** line follow Also correct, and does not read it as a why line", () => {
+    const rule = "\n\n**Rule:** [Role letters](clause.md#role-letters)";
+    let md = PRACTICE.replace("`yal zahaben dazawan vahahal.`", "`yal zahaben dazawan vahahal.`" + rule);
+    md = md.replace("The one who sees takes **z-**.", "The one who sees takes **z-**." + rule);
+    assert.deepEqual(lint(md), []);
+    assert.match(lint(md.replace("The one who sees takes **z-**.\n\n", "")).join("\n"), /Pick one 1: answer needs one line on why/);
+  });
+
   it("flags Also correct outside English → Agazan", () => {
     const md = PRACTICE.replace("*Alahen sees Ahaben.*\n", "*Alahen sees Ahaben.*\n\n**Also correct:** `dahaben zalahen vahahal.`\n");
     assert.match(lint(md).join("\n"), /Agazan → English 1: \*\*Also correct:\*\* belongs only/);

@@ -58,17 +58,23 @@ export type Checkpoint = {
   /** 1-based line of the checkpoint heading. */
   line: number;
   converted: boolean;
+  /** On the level review page: review roots only (docs/meta/translation-exercises.md#level-reviews). */
+  review: boolean;
   /** Counted bank roots, in table order, each once (no overlay words, no {@link NOT_CORE_ROOTS}). */
   entries: BankEntry[];
   /** Bank rows for {@link NOT_CORE_ROOTS} (house names, the learner slot, specials), each once. */
   cast: BankEntry[];
 };
 
-/** Stage checkpoints in path order: every Beginner checkpoint in reading order, then Intermediate, then Advanced. */
+/**
+ * Stage checkpoints in path order: every Beginner checkpoint in reading order, then Intermediate,
+ * then Advanced. Put the level review page last in `readingOrder` so each review closes its level.
+ */
 export function stageCheckpoints(
   readingOrder: readonly string[],
   readPage: (page: string) => string | undefined,
   tables: ClassifyTables,
+  reviewPage?: string,
 ): Checkpoint[] {
   const pages = new Map<string, { raw: string[]; lines: string[]; sections: ReturnType<typeof pageSections>["sections"] }>();
   for (const page of readingOrder) {
@@ -113,7 +119,7 @@ export function stageCheckpoints(
             (NOT_CORE_ROOTS.has(root) ? cast : entries).push(entry);
           }
         }
-        out.push({ anchor: `${page}#${section.slug}`, page, band, line: line + 1, converted, entries, cast });
+        out.push({ anchor: `${page}#${section.slug}`, page, band, line: line + 1, converted, review: page === reviewPage, entries, cast });
       }
     }
   }
@@ -248,6 +254,7 @@ export type CoreFinding = { page: string; line: number; detail: string };
  * {@link CORE_REVIEW_MIN} review (fewer only when fewer core roots come before); no core cell
  * names this checkpoint for a root its **New words** leaves out; and house names, the learner
  * slot, and specials sit under **New words** only on the first checkpoint whose bank lists them.
+ * A level review has no **New words**: every root it uses was introduced before it.
  * Legacy checkpoints are not checked.
  */
 export function lintCoreCounts(checkpoints: readonly Checkpoint[], core: ReadonlyMap<string, string>): CoreFinding[] {
@@ -266,7 +273,12 @@ export function lintCoreCounts(checkpoints: readonly Checkpoint[], core: Readonl
     const fresh = c.entries.filter((e) => e.group === "new");
     const review = c.entries.filter((e) => e.group === "review");
 
-    for (const e of fresh) {
+    if (c.review) {
+      for (const e of [...fresh, ...c.cast.filter((x) => x.group === "new")]) {
+        push(e.line, `${word(e)}: a level review introduces no words; list it under **Review**`);
+      }
+    }
+    for (const e of c.review ? [] : fresh) {
       const cell = core.get(e.root);
       const at = cell === undefined ? undefined : order.get(cell);
       if (cell === undefined) push(e.line, `${word(e)} is not core: set its core cell to ${c.anchor}`);
@@ -291,7 +303,7 @@ export function lintCoreCounts(checkpoints: readonly Checkpoint[], core: Readonl
       }
     }
 
-    for (const e of c.cast) {
+    for (const e of c.review ? [] : c.cast) {
       const first = firstCast.get(e.root) === i;
       if (e.group === "new" && !first) push(e.line, `${word(e)} was met at an earlier checkpoint: move it to **Review**`);
       if (e.group === "review" && first) push(e.line, `${word(e)} is first met here: move it to **New words**`);

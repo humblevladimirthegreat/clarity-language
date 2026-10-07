@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 import { buildStampIso, formatBuildStampEt } from './lib/build-stamp.ts'
 import { injectInArticleToc } from './lib/inject-in-article-toc.ts'
 import { learnerNameSlots } from './lib/learner-name-md.ts'
-import { readingOrder } from './lib/reading-order.ts'
+import { levelReviews, readingOrder } from './lib/reading-order.ts'
 
 const buildAt = new Date()
 
@@ -79,6 +79,10 @@ export default defineConfig({
       {
         text: 'Agazan Lessons',
         items: readingOrder,
+      },
+      {
+        text: 'Level reviews',
+        items: levelReviews,
       },
       {
         text: 'Saying it in Agazan',

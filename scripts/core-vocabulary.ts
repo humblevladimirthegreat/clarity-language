@@ -11,7 +11,7 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
+import { levelReviewPage, readingOrder } from "../docs/grammar/.vitepress/lib/reading-order.js";
 import {
   CORE_CAP,
   CORE_REVIEW_MIN,
@@ -66,14 +66,18 @@ function printSpacing(checkpoints: Checkpoint[], core: ReadonlyMap<string, strin
 
   console.log(`${checkpoint.anchor}  (${checkpoint.band}, checkpoint ${index + 1} of ${checkpoints.length}${checkpoint.converted ? "" : ", legacy"})`);
   console.log("");
-  const over = introduce.length > CORE_CAP ? `; ${introduce.length - CORE_CAP} to move to a later checkpoint` : "";
-  console.log(`May introduce (${introduce.length} of cap ${CORE_CAP}${over}):`);
-  for (const w of introduce) console.log(`  ${show(w)}`);
-  if (introduce.length === 0) console.log("  (none named here)");
-  console.log("");
-  console.log("Pull forward if the setting needs one (moves its core cell here):");
-  for (const w of pullForward.slice(0, PULL_FORWARD_SHOWN)) console.log(`  ${show(w)}  core ${w.core}`);
-  if (pullForward.length === 0) console.log("  (none)");
+  if (checkpoint.review) {
+    console.log("Level review: introduces no words; every root comes from the review list below.");
+  } else {
+    const over = introduce.length > CORE_CAP ? `; ${introduce.length - CORE_CAP} to move to a later checkpoint` : "";
+    console.log(`May introduce (${introduce.length} of cap ${CORE_CAP}${over}):`);
+    for (const w of introduce) console.log(`  ${show(w)}`);
+    if (introduce.length === 0) console.log("  (none named here)");
+    console.log("");
+    console.log("Pull forward if the setting needs one (moves its core cell here):");
+    for (const w of pullForward.slice(0, PULL_FORWARD_SHOWN)) console.log(`  ${show(w)}  core ${w.core}`);
+    if (pullForward.length === 0) console.log("  (none)");
+  }
   console.log("");
   console.log(review.length === 0 ? "Review:" : `Review, unused longest first (use at least ${Math.min(CORE_REVIEW_MIN, review.length)} of ${review.length}):`);
   for (const w of review.slice(0, options.limit)) console.log(`  ${String(w.gap).padStart(3)}  ${show(w)}  last used ${w.lastUsed}`);
@@ -84,7 +88,7 @@ function printSpacing(checkpoints: Checkpoint[], core: ReadonlyMap<string, strin
 function main(): void {
   const options = parseArgs(process.argv.slice(2));
   const tables = loadDefaultTables();
-  const pages = readingOrder.map((item) => sidebarPage(item.link));
+  const pages = [...readingOrder.map((item) => sidebarPage(item.link)), levelReviewPage];
   const checkpoints = stageCheckpoints(
     pages,
     (page) => {
@@ -92,6 +96,7 @@ function main(): void {
       return existsSync(path) ? readFileSync(path, "utf8") : undefined;
     },
     tables,
+    levelReviewPage,
   );
   const seed = firstAppearance(checkpoints);
 

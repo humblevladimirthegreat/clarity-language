@@ -8,7 +8,7 @@ Executable editor policy: add or replace end-of-stage checkpoints on learner gra
 - *… for `docs/grammar/questions.md` Intermediate.*
 - *… for core Beginner* (already exists — skip unless asked to replace).
 
-This page owns **path allowlist**, **[settings](#settings) inventory**, **example root bank**, item counts, and **generation procedure**. Drill *shape* (spoiler template, decision items, bank, house names, [checkpoint setting](translation-exercises.md#checkpoint-setting)) stays in [translation-exercises.md](translation-exercises.md). Stages: [learning-levels.md](learning-levels.md#cross-doc-path). Example prose: [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link here.
+This page owns **path allowlist**, **[settings](#settings) inventory**, **example root bank**, item counts, **generation procedure**, and the [level review](#level-review) procedure. Drill *shape* (spoiler template, decision items, bank, house names, [checkpoint setting](translation-exercises.md#checkpoint-setting)) stays in [translation-exercises.md](translation-exercises.md). Stages: [learning-levels.md](learning-levels.md#cross-doc-path). Example prose: [grammar-docs.md](grammar-docs.md). Grammar pages must **not** link here.
 
 ## Execute
 <a id="execute"></a>
@@ -104,6 +104,17 @@ Run the [review checklist](#review) on your own spoilers, and `npm run core-voca
 
 Reply with: which checkpoints you added, replaced, or skipped, the new and review root counts, and any item you dropped because a form was not in recycle.
 
+## Level review
+<a id="level-review"></a>
+
+One level per agent, once every stage checkpoint of that level is a `### Practice`. Shape and rules: [level reviews](translation-exercises.md#level-reviews).
+
+1. **Target.** The level's band on [review.md](../grammar/review.md): `## <Band>` then `### Practice {#<band>-practice}`, after the earlier bands. Add the band's link to `levelReviews` in `docs/grammar/.vitepress/lib/reading-order.ts`, and to the review sentence in [introduction.md How to learn](../grammar/introduction.md#how-to-learn).
+2. **Read.** Each stage checkpoint of the level in path order (`npm run core-vocabulary` lists them), its allowlist **Introduces** cell, and the teaching section that owns its main decision. Do not open later levels.
+3. **Vocabulary.** `npm run core-vocabulary -- --for review.md:<band>`; prefer the roots unused longest. Every root goes under **Review**.
+4. **Write.** One item per checkpoint, in path order within each H4, aimed at the page's main decision with words and packaging its checkpoint did not use. Choose the item type per page to meet the mix; end every answer with its **Rule:** link.
+5. **Check.** Parse every form as in [step 6](#6-self-check-then-lint), then `npm test` and `npm run build`. The build fails on a missing or wrong **Rule:** link, an uncovered page, the counts, a **New words** row, and any form taught after the level.
+
 ## Recycle
 <a id="recycle"></a>
 
@@ -142,6 +153,8 @@ Inventory of **Setting:** phrases. Uniqueness is **global**: no two checkpoint r
 When you **replace** a checkpoint, pick a phrase unused in the **Setting** column, put it on the grammar page, and update that cell here. House names are not a setting.
 
 Rows for `say-*.md` pages are recipe-track practice blocks, not stage checkpoints; their Band cell names the practice heading. A block that holds items moved out of a stage checkpoint keeps that checkpoint's setting, so the setting may appear on both rows. New track practice follows the same drill principles; its allowlist is the recipe's **Needs:** sections.
+
+[Level reviews](translation-exercises.md#level-reviews) on `review.md` have no setting and no row here.
 
 Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / **exists** / **generate**), not this table. Thin **Advanced** that is only Design notes / Constraints / Out of scope / Boundaries stays **skip** on the allowlist.
 
@@ -411,6 +424,11 @@ Converted (`### Practice`) checkpoints only:
 12. A **Pick one** form or **Fix it** correction that does not parse, a **Pick one** pair that differs in more than this stage's decision, a **Fix it** error no learner would make (or a rejected spelling with a reading in [unassigned-reserved.md](unassigned-reserved.md)), or a **What changes** pair with an untaught morph → **fail**.
 13. An **Also correct:** variant whose morph reading differs from the main answer → **fail**. A likely variant (reordering, omitted recoverable word, resume form) that is missing → rewrite.
 14. A decision item with the same proposition as a translation item → **fail**.
+
+[Level reviews](translation-exercises.md#level-reviews) only:
+
+15. An item that misses its page's main decision, or repeats a proposition from that page's checkpoint → rewrite.
+16. A **Rule:** link to a section that does not teach the decision the item tests → **fail**.
 
 ## Related meta
 
