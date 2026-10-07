@@ -638,9 +638,9 @@ Motive **`tho`** endings.
 
 ### Prominence
 
-Word-order highlighting (not join arity).
+Singling out one word against others: the contrast mark `&`. Word order adds no prominence.
 
-[Clause](clause.md#word-order-emphasis), [people, things and places](say-people-places.md#as-for)
+[Clause](clause.md#english-emphasis), [Speech moves](speech-moves.md#tone-marks)
 
 ### Quasi
 
@@ -865,6 +865,12 @@ Join readings when the speech act is question.
 Join / restrictor **-r** (*something* / *sometimes*); fill-ask under question.
 
 [Joins](joins.md#unspecified-member-r-phrase)
+
+### Usual order
+
+The default word order of a body, set by its speech act: verb late in a statement or prohibition, verb second in a yes/no question, verb first in a command, blank first in a fill-ask. Any other order means the same.
+
+[Speech moves](speech-moves.md#act-word-order), [Questions](questions.md#fill-ask)
 
 ### Usual role
 

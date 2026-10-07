@@ -466,9 +466,9 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bezezem g
 
 English *until tomorrow* (also *till tomorrow*), *by tomorrow*, and *before next week* count from today. A command or a plan has no channel to count from, so the time pole takes the count itself: a signed measure in its `/b/` runs from now.
 
-> `yel zehon vaheham homam bazazam grawol.`
+> `yel vaheham zehon homam bazazam grawol.`
 >
-> y-command | z-listener | v-confidentiality | [h-until | [b-day | g-one]]
+> y-command | v-confidentiality | z-listener | [h-until | [b-day | g-one]]
 >
 > "Keep the secret until tomorrow."
 

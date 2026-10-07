@@ -18,7 +18,7 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 
 | English itch | Agazan job | Teach |
 |--------------|------------|-------|
-| who does the action (*seen by Azawan*) | subject `/z/` (you may front the object) | [Who acts](clause.md#beginner), [word order](clause.md#word-order-emphasis) |
+| who does the action (*seen by Azawan*) | subject `/z/` | [Who acts](clause.md#beginner) |
 | tool (*writes by / with a hammer*) | hook **`ael`** (*using*) + `/b/` | [Hooks](hooks.md#extra-noun) |
 | place (*by the station*) | hook **`om`** (*near*) + `/b/` (or **`ol`** *at*) | [Hooks](hooks.md#extra-noun) |
 | deadline (*by 15:30*, *by the storm*) | **`heveham`** + `/b/` (or **`heveham barl`** + sentence) | [By a deadline](dependents.md#by-deadline) |

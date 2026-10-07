@@ -10,9 +10,9 @@ Recipes for English question shapes beyond plain *yes/no* and *who / what*. Ever
 
 An echo question repeats what someone just said, because you doubt it or did not catch it (*You saw WHAT?*). Repeat the sentence under **`yol`**. Put the doubting [tone mark](speech-moves.md#tone-marks) **`?!`** on the blank or on the word you doubt.
 
-> `yol zehon vahahal ?!dar.`
+> `yol ?!dar zehon vahahal.`
 >
-> y-question | z-listener | v-see | ?!d-wh
+> y-question | ?!d-wh | z-listener | v-see
 >
 > "You saw WHAT?"
 
@@ -256,18 +256,18 @@ English *ask* is four jobs. You can put a question to someone, ask them for some
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *ask* (a question) | `yol zazawan vowogal.` | question |
-| *ask* (for something, *could you*) | `yem zehon vowogal.` | request |
+| *ask* (for something, *could you*) | `yem vowogal zehon.` | request |
 | *ask* (report) | `zazawan vezebel dorl zar vowogal.` | telling + whether-clause |
 | *ask* / *tell someone to* | `zazawan vezebel balahen derl vehahel.` | telling + to-clause |
 | *ask* / *tell someone not to* | `zazawan vezebel balahen durl varahal.` | telling + lest-clause |
-| *please ask her to* | `yem zehon vezebel balahen derl vehahel.` | request: tell Alahen to sit |
+| *please ask her to* | `yem vezebel balahen zehon derl vehahel.` | request: tell Alahen to sit |
 | *ask* (one question, as a bid for time) | `alahexon.` | one slot |
 | *interview* | `yalahen.` then a run of `yol` questions | call, then ask |
 | *conversation* / *chat* / *dialog* | `zezebem` | *discourse* |
 
-> `yem zehon vezebel balahen derl vehahel.`
+> `yem vezebel balahen zehon derl vehahel.`
 >
-> y-request | z-listener | v-tell | b-Alahen | d-to-clause | v-sit
+> y-request | v-tell | b-Alahen | z-listener | d-to-clause | v-sit
 >
 > "Please ask Alahen to sit."
 
@@ -280,7 +280,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *offer* (a thing) | `yom` + a giving | soft question: *would you like…?* |
-| *suggest* / *propose* (a joint act) | `yem zahan vowogal.` | soft request with *we* |
+| *suggest* / *propose* (a joint act) | `yem vowogal zahan.` | soft request with *we* |
 | *…, okay?* / *…, deal?* (after a suggestion) | `yol yaol.` | tag: asks them to take it up |
 | *…, or would you rather not?* | `yol yuol.` | tag: offers them the refusal |
 | *suggest* (a view) | `yam` | soft statement: *for what it's worth* |
@@ -290,9 +290,9 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 | *invite* / *welcome* (someone) | `vabubam` | *hospitality* |
 | *welcome* (you may) | `thegom` | permission granted |
 
-> `yem zahan vowogal.`
+> `yem vowogal zahan.`
 >
-> y-request | z-interlocutors | v-walk
+> y-request | v-walk | z-interlocutors
 >
 > "Let's walk." (a suggestion)
 

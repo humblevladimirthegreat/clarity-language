@@ -536,9 +536,9 @@ Bare arrow words are compass points on a north-up map:
 
 Speaker and listener roots are the facing person when you mean *my left* / *your left*:
 
-> `yel zehon vowogal hewezathehon.`
+> `yel vowogal zehon hewezathehon.`
 >
-> y-command | z-listener | v-walk | h-west-th-listener
+> y-command | v-walk | z-listener | h-west-th-listener
 >
 > "You, walk left (your left)."
 
@@ -757,9 +757,9 @@ z-Alahen | v-steal . z-←bearer-x-steal | v-scream
 **5.** *Ahaben, walk left* (Azawan's left).
 
 ::: details Show answer
-`yel zahaben vowogal hewezathazawan.`
+`yel vowogal zahaben hewezathazawan.`
 
-y-command | z-Ahaben | v-walk | h-west-th-Azawan
+y-command | v-walk | z-Ahaben | h-west-th-Azawan
 :::
 
 **6.** *The boat sits west of the ship.*
@@ -772,10 +772,10 @@ z-boat | v-sit | [g-west | b-ship]
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `yel zalahen vuvudel hewezal.`
+**1.** `yel vuvudel zalahen hewezal.`
 
 ::: details Show answer
-y-command | z-Alahen | v-go | h-west
+y-command | v-go | z-Alahen | h-west
 
 *Alahen, go west.*
 :::

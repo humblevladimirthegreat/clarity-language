@@ -30,11 +30,19 @@ A name you already cite with **-n** (`azawan`) keeps **-n** in the sentence:
 
 The **direct object** is who or what the action is done to. Mark it with `/d/`. The usual order is **Subject – Direct Object – Verb**.
 
-Because the first letter already says each word’s role, you may move those three words without changing who did what. Put first the piece you want to highlight: the person or thing you want heard first, or the new information. English often does that with stress; Agazan can do it with order.
+Because the first letter already says each word’s role, you may move those three words without changing who did what or what the sentence means. Moving a word does not stress it either. The usual order is still the one to use, because listeners expect it.
 
 > `zodogal dagadul vahahal.`
 >
 > z-dog | d-cat | v-see
+>
+> "A dog sees a cat."
+
+Same meaning, object first:
+
+> `dagadul zodogal vahahal.`
+>
+> d-cat | z-dog | v-see
 >
 > "A dog sees a cat."
 
@@ -607,13 +615,19 @@ An adjective before its noun takes **`gl-`**; a plain `/ɡ/` word describes the 
 
 ## Advanced {#advanced}
 
-### Word order and English emphasis {#word-order-emphasis}
+### English emphasis and clefts {#english-emphasis}
 
-Beginner showed that you may reorder the words of a clause, because the first letters already say who did what. The **first content word** is what you highlight: what you want heard first, or the new information. First position highlights only within one sentence; what the whole conversation is about is the [topic](pronouns.md#topic), set by an `/x/` word.
+English often moves or stresses a word to single it out: *It's a cat that Azawan sees*, *It was Azawan who saw the cat*, or a stressed *Azawan saw the cat*. Agazan word order carries no emphasis. A sentence's usual order is set by its [speech act](speech-moves.md#act-word-order), and any other order means exactly the same. When you translate, ask what the English emphasis is doing.
 
-Opening `/y/` words, a topic `/x/` word, and a linker come before the clause itself and do not count: in `xazawan dagadul zalahen vahahal.` the highlighted word is `dagadul`, not `xazawan`.
+If the English sets one person or thing against others (*Azawan, not someone else*), put the [contrastive focus](speech-moves.md#tone-marks) mark **`&`** on that word.
 
-English usually keeps subject–verb–object order and uses extra wording, the passive, or spoken stress for that job. When you translate, keep the same highlight in English. Copy Agazan order into English only when that English is also a natural way to put that piece first (*Hastily, Azawan walks*). Keep a [stand-in](dependents.md#stand-in) `darl` / `barl` last in its slot, and move the other words around it.
+> `zazawan &dagadul vahahal.`
+>
+> z-Azawan | &d-cat | v-see
+>
+> "It's a cat that Azawan sees (not something else)."
+
+If the English only puts the new part first, with no others to set it against (answering *What does Azawan see?* with *It's a cat that Azawan sees*), write the plain sentence. What came before already shows which part is new.
 
 > `zazawan dagadul vahahal.`
 >
@@ -621,28 +635,17 @@ English usually keeps subject–verb–object order and uses extra wording, the 
 >
 > "Azawan sees a cat."
 
-Same roles, object first:
-
-> `dagadul zazawan vahahal.`
->
-> d-cat | z-Azawan | v-see
->
-> "It's a cat that Azawan sees."
+Translating the other way, an Agazan sentence in an unusual order (a line fitted to a tune, say) becomes a plain English sentence.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Agazan | Use | English |
 |--------|-----|---------|
-| `zazawan dagadul vahahal.` | subject first | *Azawan sees a cat.* |
-| `&zazawan dagadul vahahal.` | subject, contrasted | *It was Azawan who saw the cat.* |
-| `dagadul zazawan vahahal.` | object first | *It's a cat that Azawan sees.* |
-| `vahahal zazawan dagadul.` | verb first | *What Azawan does is see a cat.* |
-| `hadehum zazawan vowogal.` | adverb first | *Hastily, Azawan walks.* |
+| `zazawan dagadul vahahal.` | plain | *Azawan sees a cat.* / *It's a cat that Azawan sees.* (answering *what?*) |
+| `&zazawan dagadul vahahal.` | subject contrasted | *It was Azawan who saw the cat.* |
+| `zazawan &dagadul vahahal.` | object contrasted | *It's a cat (not something else) that Azawan sees.* |
+| `zazawan dagadul &vahahal.` | act contrasted | *Azawan sees the cat* (rather than doing something else to it). |
 
-Object-first English *It's a cat that Azawan sees* (or *A cat is what Azawan sees*) still names Azawan as the one who sees. *A cat is seen* hides who sees unless you add *by Azawan*. Use the longer English when you only want to highlight the object.
-
-**Compare with:** order highlights one piece within this sentence and is gone at the period. The [topic](pronouns.md#topic) carries across sentences and is set only by an `/x/` word, never by what comes first.
-
-The subject is already first by default, so order cannot single it out. To say *it was Azawan (not someone else) who…*, put the [contrastive focus](speech-moves.md#tone-marks) mark **`&`** on the subject.
+**Compare with:** what the whole conversation is about is the [topic](pronouns.md#topic), set only by an `/x/` word.
 
 ### Starting a sentence audibly {#audible-start}
 
@@ -673,7 +676,6 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *trumpet* | `adawol` |
 | *haste* | `hadehum` |
 | *see* | `vahahal` |
-| *tell* | `vezebel` |
 | *punch* | `vabahel` |
 | *sneak* | `vezevul` |
 
@@ -687,20 +689,22 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 h-haste | z-Azawan | d-balloon | v-see
 :::
 
-**2.** *It's a drum that Alahen punches.*
+**2.** *What does Alahen punch?* *It's a drum that Alahen punches.*
 
 ::: details Show answer
-`dadavol zalahen vabahel.`
+`zalahen dadavol vabahel.`
 
-d-drum | z-Alahen | v-punch
+z-Alahen | d-drum | v-punch
+
+Nothing is set against the drum, so the plain sentence is enough.
 :::
 
-**3.** *What Azawan does is tell Alahen.*
+**3.** *It's a drum, not a trumpet, that Alahen punches.*
 
 ::: details Show answer
-`vezebel zazawan balahen.`
+`zalahen &dadavol vabahel.`
 
-v-tell | z-Azawan | b-Alahen
+z-Alahen | &d-drum | v-punch
 :::
 
 **4.** *It was Ahaben, not someone else, who saw the mask.*
@@ -718,15 +722,15 @@ v-tell | z-Azawan | b-Alahen
 ::: details Show answer
 d-trumpet | z-Ahaben | v-see
 
-*It's a trumpet that Ahaben sees.*
+*Ahaben sees a trumpet.*
 :::
 
-**2.** `vabahel zalahen dabegol.`
+**2.** `zalahen &dabegol vabahel.`
 
 ::: details Show answer
-v-punch | z-Alahen | d-box
+z-Alahen | &d-box | v-punch
 
-*What Alahen does is punch a box.*
+*It's a box (not something else) that Alahen punches.*
 :::
 
 **3.** `hadehum zalahen vezevul.`
@@ -742,7 +746,7 @@ h-haste | z-Alahen | v-sneak
 ::: details Show answer
 d-box | z-Ahaben | h-haste | v-see
 
-*It's a box that Ahaben hastily sees.*
+*Ahaben hastily sees a box.*
 :::
 
 #### What changes {#advanced-what-changes}
@@ -766,4 +770,5 @@ z-Ahaben | d-drum | &v-see
 
 The second contrasts the act: Ahaben *sees* the drum, as opposed to doing something else to it.
 :::
+
 

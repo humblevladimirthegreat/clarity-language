@@ -147,9 +147,9 @@ A pointer with **-r** is the same one again. To say a **new** one of the same ki
 
 In a yes/no question, a pointer works like any other noun and keeps the same meaning:
 
-> `zazawan dodogal geredal vahahal. yol zalahen duxal gubuhel vahahal.`
+> `zazawan dodogal geredal vahahal. yol zalahen vahahal duxal gubuhel.`
 >
-> z-Azawan | [d-dog | g-red] | v-see . y-question | z-Alahen | [d-←patient.same.new | g-blue] | v-see
+> z-Azawan | [d-dog | g-red] | v-see . y-question | z-Alahen | v-see | [d-←patient.same.new | g-blue]
 >
 > "Azawan sees a red dog. Does Alahen see a blue one?"
 
@@ -751,7 +751,7 @@ To ask what the talk is about, ask *which topic?*: the fill-ask blank `zar`, the
 >
 > "Which topic?" / "What are we talking about?"
 
-**Compare with:** English *topic* covers several jobs, and Agazan keeps them apart. The discourse topic is `/x/`. A sentence frame is `hahehom` *as for*. The first content word is only a [highlight](clause.md#word-order-emphasis). `&` contrasts one phrase ([tone marks](speech-moves.md#tone-marks)). `zal` / `zem` / `zel` rank among others. Only `/x/` sets the topic.
+**Compare with:** English *topic* covers several jobs, and Agazan keeps them apart. The discourse topic is `/x/`. A sentence frame is `hahehom` *as for*. `&` contrasts one phrase ([tone marks](speech-moves.md#tone-marks)). `zal` / `zem` / `zel` rank among others. Only `/x/` sets the topic.
 
 ### Practice {#intermediate-practice}
 

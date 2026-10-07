@@ -336,7 +336,7 @@ A command can ask for a state as well as an act. Put the [command word](speech-m
 >
 > "Be careful!"
 
-Name the listener to address one person (`yel zehon geyayem`), or use the verb root for the doing (`yel veyayem`, *take care*). **`yul`** turns the same pair into *don’t be ADJ*.
+The `/ɡ/` word takes the verb's place in the [usual order](speech-moves.md#act-word-order), so it comes first. Name the listener after it to address one person (`yel geyayem zehon`), or use the verb root for the doing (`yel veyayem`, *take care*). **`yul`** turns the same pair into *don’t be ADJ*.
 
 ### **SAME** endings
 

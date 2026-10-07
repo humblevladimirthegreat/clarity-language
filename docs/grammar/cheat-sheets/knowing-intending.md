@@ -131,7 +131,7 @@ Each of these is a `/th/` word with the same ending scale. MAY is *could be* wit
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [MAY](../knowing.md#may) | `zalahen thovum vedabal dahaben.` | *Alahen may be leaving Ahaben.* | B |
-| [MAY, ask to find out](../knowing.md#may-hold) | `yol zazawan thovul vabahel dalahen.` | *Might Azawan be punching Alahen? let's find out.* | B |
+| [MAY, ask to find out](../knowing.md#may-hold) | `yol zazawan vabahel thovul dalahen.` | *Might Azawan be punching Alahen? let's find out.* | B |
 | [RESIDUE](../knowing.md#residue-and-former-climate) | `zalahen thamom vedabal.` | *Alahen has left (and is still gone).* | I |
 | [RESIDUE with a channel](../knowing.md#residue-and-former-climate) | `zalahen thevom thamom vedabal.` | *I remember Alahen leaving, and Alahen is still gone.* | I |
 | [FORMER after the verb](../knowing.md#residue-and-former-climate) | `zazawan hual vezebel thenom.` | *Azawan always tells, a former pattern.* | I |

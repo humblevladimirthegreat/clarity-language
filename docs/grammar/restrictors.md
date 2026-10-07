@@ -404,9 +404,9 @@ Statement readings below. Asking *when*: [questions.md](questions.md#when).
 
 Under a question, **`her`** asks which time ranks first: *When's best?* With occasions before it, the listener picks the one they prefer.
 
-> `yol zahan vowogal her.`
+> `yol her zahan vowogal.`
 >
-> y-question | z-interlocutors | v-walk | h-when-best
+> y-question | h-when-best | z-interlocutors | v-walk
 >
 > "When's best for us to walk?"
 
@@ -485,9 +485,9 @@ z-Azawan | v-climb | h-snow | h-rain | h-when-ranked
 **5.** *When's best for us to climb?*
 
 ::: details Show answer
-`yol zahan vagayal her.`
+`yol her zahan vagayal.`
 
-y-question | z-interlocutors | v-climb | h-when-best
+y-question | h-when-best | z-interlocutors | v-climb
 :::
 
 **6.** *Alahen falls if Azawan runs.*

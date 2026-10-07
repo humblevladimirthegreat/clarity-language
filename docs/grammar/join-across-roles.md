@@ -208,9 +208,9 @@ In the table, *reason* means any grounds a stance word can give: a cause, a sour
 
 Outside a question, only the single-vowel **-r** cells are words. Under a question, a standalone **-r** stance join is a [fill-ask](questions.md#fill-ask-r) for the grounds. Every vowel takes **-r** there.
 
-> `yol zazawan vowogal thar.`
+> `yol thar zazawan vowogal.`
 >
-> y-question | z-Azawan | v-walk | th-why
+> y-question | th-why | z-Azawan | v-walk
 >
 > "On what grounds do you say Azawan walks?"
 
@@ -431,10 +431,10 @@ z-Ahaben | v-run | th-MEMORY | th-REPORTED | th-rank/more
 *Ahaben runs: I mainly saw it, and I was also told.*
 :::
 
-**6.** `yol zazawan varahal thar.`
+**6.** `yol thar zazawan varahal.`
 
 ::: details Show answer
-y-question | z-Azawan | v-run | th-why
+y-question | th-why | z-Azawan | v-run
 
 *Why do you say Azawan runs?*
 :::

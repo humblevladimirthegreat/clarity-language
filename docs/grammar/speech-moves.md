@@ -85,6 +85,46 @@ The vowel picks the act. Its cues are **a** add / hold, **o** one / pick, **e** 
 | **`yel`** | command / instruction | **e** ≈ order (do this) |
 | **`yul`** | prohibition: *don’t…* | **u** ≈ undo (take the action back) |
 
+### Word order for each act {#act-word-order}
+
+The first letter of each word already says its role, so any order of the body means the same thing. Each act still has a **usual order**. Use it: the act word is one short syllable, and if a listener misses it, the order still tells them which act you meant.
+
+> `zazawan dabegol vabahel.`
+>
+> z-Azawan | d-box | v-punch
+>
+> "Azawan punches the box."
+
+> `yol zazawan vabahel dabegol.`
+>
+> y-question | z-Azawan | v-punch | d-box
+>
+> "Does Azawan punch the box?"
+
+> `yel vabahel dabegol.`
+>
+> y-command | v-punch | d-box
+>
+> "Punch the box!"
+
+> `yul dabegol vabahel.`
+>
+> y-prohibition | d-box | v-punch
+>
+> "Don't punch the box."
+
+Only a command starts with its verb. A question or prohibition whose act word gets lost sounds like a statement, never like an order to act.
+
+<!-- cheat-sheet: talking -->
+| Act | Usual order | Cue |
+|-----|-------------|-----|
+| statement | verb late: subject, object, verb | the claim builds up to the action |
+| question | verb second: one word, then the verb, then the rest | the verb steps forward to be checked |
+| command | verb first | the action comes first: do it |
+| prohibition | verb late, as in a statement | the action is held back |
+
+The person who receives (`/b/`) stays right after the verb, wherever the verb goes: `yel vamol bazawan.` *Pay Azawan!* A question with no subject puts another word before its verb, so that it still does not start with the verb.
+
 ### Practice {#beginner-practice}
 
 Short drills for Beginner. Try each item before opening **Show answer**.
@@ -122,15 +162,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 y-Ahaben
 :::
 
-**2.** *Don’t sneak.*
-
-::: details Show answer
-`yul vezevul.`
-
-y-prohibition | v-sneak
-:::
-
-**3.** *Amazing!*
+**2.** *Amazing!*
 
 ::: details Show answer
 `yezum.`
@@ -138,7 +170,7 @@ y-prohibition | v-sneak
 y-amazement
 :::
 
-**4.** *Does Alahen pay Azawan?*
+**3.** *Does Alahen pay Azawan?*
 
 ::: details Show answer
 `yol zalahen vamol bazawan.`
@@ -148,7 +180,7 @@ y-question | z-Alahen | v-pay | b-Azawan
 **Also correct:** `yol zalahen bazawan vamol.`
 :::
 
-**5.** *Azawan, sit!*
+**4.** *Azawan, sit!*
 
 ::: details Show answer
 `yazawan yel vehahel.`
@@ -156,14 +188,26 @@ y-question | z-Alahen | v-pay | b-Azawan
 y-Azawan | y-command | v-sit
 :::
 
-**6.** *Pay hastily!*
+**5.** *Pay hastily!*
 
 ::: details Show answer
-`yel hadehum vamol.`
+`yel vamol hadehum.`
 
-y-command | h-haste | v-pay
+y-command | v-pay | h-haste
 
-**Also correct:** `yel vamol hadehum.`
+**Also correct:** `yel hadehum vamol.`
+:::
+
+**6.** *Don’t pay hastily.*
+
+::: details Show answer
+`yul hadehum vamol.`
+
+y-prohibition | h-haste | v-pay
+
+A prohibition keeps its verb late, as in a statement; only a command starts with its verb.
+
+**Also correct:** `yul vamol hadehum.`
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
@@ -284,9 +328,9 @@ The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a
 
 For *let's*, make a soft request with inclusive *we*, **`aha`** ([special pronouns](pronouns.md#special-pronouns)), as the subject. *Let's not* is the soft prohibition.
 
-> `yem zahan vowogal.`
+> `yem vowogal zahan.`
 >
-> y-request | z-interlocutors | v-walk
+> y-request | v-walk | z-interlocutors
 >
 > "Let's walk."
 
@@ -469,7 +513,7 @@ A mark on a span colors all of it:
 
 - A mark may go on any word, including act words and [sentence linkers](dependents.md#sentence-linkers). Attached to a [scope island](spans.md#scope-islands) (a chunk of words in braces `{ … }`), it colors the whole island.
 - A mark is a stack of `!`, `?`, `%`, `&`, `;`, each at most twice, in any order. A third copy (`!!!`) is not a mark, and neither are marks in a row with a space between (`! !`).
-- `&` stresses by voice alone. To highlight with grammar, move the word to the front ([word order](clause.md)).
+- `&` is the only way to single out one word: moving a word adds no stress ([English emphasis](clause.md#english-emphasis)).
 - A mark on a word inside a colored span or sentence overrides it for that word. To mix tones on one word, stack them there.
 - Before a span fence, the mark is **your** tone about the quote. Inside the fence, it is part of what is quoted (the original speaker's tone).
 - Speech adds no syllables: you voice the mark over its words.
@@ -546,9 +590,9 @@ y-soft-statement | z-Ahaben | v-sing
 **2.** *Let's sing.*
 
 ::: details Show answer
-`yem zahan vezehel.`
+`yem vezehel zahan.`
 
-y-request | z-interlocutors | v-sing
+y-request | v-sing | z-interlocutors
 :::
 
 **3.** *Hold off on stopping for now.*
@@ -585,18 +629,18 @@ th-clarity | z-Alahen | h-quiet | v-sing
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `yom zalahen dadawol vamagal.`
+**1.** `yom zalahen vamagal dadawol.`
 
 ::: details Show answer
-y-soft-question | z-Alahen | d-trumpet | v-find
+y-soft-question | z-Alahen | v-find | d-trumpet
 
 *Does Alahen find the trumpet, I wonder?*
 :::
 
-**2.** `yer zazawan vezehel.`
+**2.** `yer vezehel zazawan.`
 
 ::: details Show answer
-y-command-for-now | z-Azawan | v-sing
+y-command-for-now | v-sing | z-Azawan
 
 *For now, Azawan is to sing.*
 :::

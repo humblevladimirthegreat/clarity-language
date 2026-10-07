@@ -352,8 +352,8 @@ Words such as **`zar`** / **`zor`** stand for an unnamed **member of a set**. Di
 
 In a question, the same word is the blank: *how many?* ([below](#how-many)).
 
-> `yol zazawan drar vahahal.`
-> y-question | z-Azawan | d-how-many | v-see
+> `yol drar zazawan vahahal.`
+> y-question | d-how-many | z-Azawan | v-see
 >
 > "How many does Azawan see?"
 
@@ -363,8 +363,8 @@ To repeat a number already given, keep at least one digit: `zalahen drarel vahah
 
 To ask for a **number**, write a [number word](numbers.md) with no digits and the **-r** ending (written **`=`** after the role letter). That empty number is the blank, the same way `zar` is the blank for *who?* ([fill-ask](questions.md#fill-ask-r)). The marker says which kind of number you want. (cue: **-r** names this member; the marker vowel says count, place, or code)
 
-> `yol zazawan dagadulx grar vahahal.`
-> y-question | z-Azawan | [d-cat-x | g-how-many] | v-see
+> `yol dagadulx grar zazawan vahahal.`
+> y-question | [d-cat-x | g-how-many] | z-Azawan | v-see
 >
 > "How many cats does Azawan see?"
 
@@ -375,8 +375,8 @@ To ask for a **number**, write a [number word](numbers.md) with no digits and th
 | `g=#` (`grer`) | fill a place in order | *Which place?* (*which floor, which chapter*) | **e** ≈ order |
 | `g=_` (`gror`) | fill a code or label | *What number?* (*phone, room*) | **o** ≈ one |
 
-> `yol zalahen vehahel ol brer.`
-> y-question | z-Alahen | v-sit | [at | b-which-place]
+> `yol ol brer zalahen vehahel.`
+> y-question | [at | b-which-place] | z-Alahen | v-sit
 >
 > "Which place does Alahen sit in?"
 
@@ -388,17 +388,17 @@ Answer with the number as a [citation](word-endings.md#citation-forms) or a full
 
 To ask **how much** of a quality, put the same blank on `/w/` immediately before the adjective or adverb: **`wrar`**. It is the degree slot that [*barely* / *almost*](#just-short) use.
 
-> `yol zodogal wrar gelavam.`
-> y-question | z-dog | [w-how-many | g-big]
+> `yol wrar gelavam zodogal.`
+> y-question | [w-how-many | g-big] | z-dog
 >
 > "How big is the dog?"
 
-> `yol zodogal varahal wrar hadehum.`
-> y-question | z-dog | v-run | [w-how-many | h-haste]
+> `yol wrar hadehum zodogal varahal.`
+> y-question | [w-how-many | h-haste] | z-dog | v-run
 >
 > "How fast does the dog run?"
 
-To ask for an exact size in units, fill a [measure phrase](numbers-applied.md#measure-phrases) instead: `yol zodogal bezezem grar gelavam.` *How many meters big is the dog?*
+To ask for an exact size in units, fill a [measure phrase](numbers-applied.md#measure-phrases) instead: `yol bezezem grar gelavam zodogal.` *How many meters big is the dog?*
 
 Other role letters take the same blank: the marker with no digits and **-r** (on `/h/`, *how many times?*). Do not confuse that blank with **`har`** (*sometimes*), which is a [restrictor](restrictors.md), not a number.
 
@@ -789,10 +789,10 @@ y-_3
 *Three!* (a score or label)
 :::
 
-**3.** `yol zalahen drar vahahal.`
+**3.** `yol drar zalahen vahahal.`
 
 ::: details Show answer
-y-question | z-Alahen | d-how-many | v-see
+y-question | d-how-many | z-Alahen | v-see
 
 *How many does Alahen see?*
 :::

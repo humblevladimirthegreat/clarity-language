@@ -192,7 +192,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 | *past* / *in the past* | FORMER **`thenom`**, or a channel with a `-` offset |
 | *future* / *in the future* | a channel + **`bral`** |
 | *once* (*one time*) | `h+1` before the verb |
-| ever (*Have you walked at all?*) | **`hoham`** + **`har`** under **`yol`**: `yol zehon hoham vowogal har` |
+| ever (*Have you walked at all?*) | **`hoham`** + **`har`** under **`yol`**: `yol har zehon hoham vowogal` |
 | *during* (*during the storm*) | **`huwem`** + `/b/`: `huwem bavodel` |
 | *immediately* / *immediate* / *right away* / *at once* (*about to*) | a channel + **`brabul`** (*a hair after now*) |
 | *initially* / *at first* / *firstly* | **`hogodam`** (*first*, as a manner adverb) |
@@ -207,9 +207,9 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 >
 > "Azawan must be walking today."
 
-> `yol zehon hoham vowogal har.`
+> `yol har zehon hoham vowogal.`
 >
-> y-question | z-listener | h-already | v-walk | h-when
+> y-question | h-when | z-listener | h-already | v-walk
 >
 > "Have you ever walked?"
 
@@ -264,9 +264,9 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 >
 > "Azawan may walk (I'm allowing it)."
 
-> `yem zehon vowogal.`
+> `yem vowogal zehon.`
 >
-> y-request | z-listener | v-walk
+> y-request | v-walk | z-listener
 >
 > "Would you walk?"
 

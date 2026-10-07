@@ -184,12 +184,12 @@ z-Azawan | [d-mango | d-melon | d-or-exactly-one] | v-see
 **Rule:** [Choice (o)](joins.md#choice-o)
 :::
 
-**3.** *What does Alahen write?* `yol zalahen ?dar varadal.` or `yol zalahen ?dur varadal.`
+**3.** *What does Alahen write?* `yol ?dar zalahen varadal.` or `yol ?dur zalahen varadal.`
 
 ::: details Show answer
-`yol zalahen ?dar varadal.`
+`yol ?dar zalahen varadal.`
 
-y-question | z-Alahen | ?d-wh | v-write
+y-question | ?d-wh | z-Alahen | v-write
 
 **`dar`** asks *what*; **`dur`** asks *what else*.
 
@@ -606,7 +606,7 @@ With **`thehul`**, Azawan has decided for good to pay. With **`thehur`**, Azawan
 
 ## Advanced
 
-The Advanced review covers every Advanced section, from word order to numeric derivation.
+The Advanced review covers every Advanced section, from English emphasis to numeric derivation.
 
 ### Practice {#advanced-practice}
 
@@ -643,14 +643,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 #### English → Agazan {#advanced-english-to-agazan}
 
-**1.** *What Alahen does is cook a tomato.*
+**1.** *It was Alahen, not someone else, who cooked a tomato.*
 
 ::: details Show answer
-`vugugal zalahen dadedol.`
+`&zalahen dadedol vugugal.`
 
-v-cook | z-Alahen | d-tomato
+&z-Alahen | d-tomato | v-cook
 
-**Rule:** [Word order and English emphasis](clause.md#word-order-emphasis)
+**Rule:** [English emphasis and clefts](clause.md#english-emphasis)
 :::
 
 **2.** *As of 3 May, Azawan sits in a school.*

@@ -35,7 +35,7 @@ The vowel picks the act: **a** add, **o** one, **e** order, **u** undo. A period
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Command](../speech-moves.md#speech-act-beginner) | `yel vowogal.` | *Walk!* | B |
-| [Request with *let's*](../speech-moves.md#speech-act) | `yem zahan vowogal.` | *Let's walk.* | I |
+| [Request with *let's*](../speech-moves.md#speech-act) | `yem vowogal zahan.` | *Let's walk.* | I |
 | [Soft prohibition with *let's not*](../speech-moves.md#speech-act) | `yum zahan vezebal.` | *Let's not sleep.* | I |
 | [Provisional statement](../speech-moves.md#act-r) | `yar zazawan vowogal.` | *As things stand, Azawan walks.* | I |
 | [Emphatic prohibition](../speech-moves.md#emphatic-prohibition): repeat only the opening `yul` | `yul yul vezevul.` | *Don't sneak. I mean it.* | I |
@@ -82,7 +82,7 @@ A stance word says in words how you are speaking, where a tone mark only changes
 | [Gentler](../questions.md#question) | `yom zalahen vezebal.` | *Is Alahen sleeping, I wonder?* | B |
 | [No body: ask about what was just said](../questions.md#question) | `yol.` | *Huh?* | B |
 | [Fill one blank](../questions.md#fill-ask-r): join **-r** in the slot | `yol zar vowogal.` | *Who walks?* | B |
-| [Fill every blank](../questions.md#fill-all) | `yol zar vahahal dar.` | *Who sees what?* | B |
+| [Fill every blank](../questions.md#fill-all) | `yol zar dar vahahal.` | *Who sees what?* | B |
 | [One blank, one known](../questions.md#fill-all) | `yol zar vahahal dodogal.` | *Who sees a dog?* | B |
 | [Rise on the blank](../questions.md#question-tone) | `yol ?zar vowogal.` | *Who walks?* | B |
 | [Rise on the whole question](../questions.md#question-tone) | `yol ? zazawan vowogal.` | *Does Azawan walk?* | B |
@@ -95,13 +95,13 @@ The reply to a fill-ask is the fill as a [citation](../word-endings.md#citation-
 
 | You want | Write | English | Stage |
 |----------|-------|---------|-------|
-| [What kind?](../questions.md#what-kind) | `yol zodogal gar.` | *What is the dog like?* | I |
-| [When?](../questions.md#when) | `yol zahaben vowogal har.` | *When does Ahaben walk?* | I |
-| [Where?](../questions.md#where) | `yol zahaben vowogal ol bar.` | *Where does Ahaben walk?* | I |
+| [What kind?](../questions.md#what-kind) | `yol gar zodogal.` | *What is the dog like?* | I |
+| [When?](../questions.md#when) | `yol har zahaben vowogal.` | *When does Ahaben walk?* | I |
+| [Where?](../questions.md#where) | `yol ol bar zahaben vowogal.` | *Where does Ahaben walk?* | I |
 | [Whose?](../questions.md#whose) | `yol zodogal em bar vowogal.` | *Whose dog walks?* | I |
-| [How?](../questions.md#how) | `yol zazawan vowogal humum bar.` | *How does Azawan walk?* | I |
-| [Why?](../questions.md#why) | `yol zazawan vowogal thevem bar.` | *Why does Azawan walk?* | I |
-| [What for?](../questions.md#why) | `yol zazawan vowogal hogom bar.` | *What does Azawan walk for?* | I |
+| [How?](../questions.md#how) | `yol humum bar zazawan vowogal.` | *How does Azawan walk?* | I |
+| [Why?](../questions.md#why) | `yol thevem bar zazawan vowogal.` | *Why does Azawan walk?* | I |
+| [What for?](../questions.md#why) | `yol hogom bar zazawan vowogal.` | *What does Azawan walk for?* | I |
 
 <!-- cheat-sheet: talking -->
 | Blank | Means | Stage |

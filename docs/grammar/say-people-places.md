@@ -462,7 +462,7 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *operation* (arithmetic) | `zabugam` | calculation |
 | *do* + a noun (*do the dishes*) | `zazawan debedelx vabeval.` | the act itself in the verb slot: washes the plates |
 | *do something* | `zazawan var.` | an unnamed act |
-| *What is Azawan doing?* | `yol zazawan var.` | a [fill-ask](questions.md#fill-ask) for the act |
+| *What is Azawan doing?* | `yol var zazawan.` | a [fill-ask](questions.md#fill-ask) for the act |
 | *application* (use) | hook `ael` + tool | `zazawan vowogal ael bahavol.` |
 | *application* (software) | `zabegol` | a package |
 | *campaign* | `zazawan vavadam huwem bavodel.` | struggles during a period |

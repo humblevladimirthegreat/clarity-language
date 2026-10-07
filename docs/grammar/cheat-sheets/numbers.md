@@ -115,11 +115,11 @@ Drop every digit and the word says what kind of number, not its value. With **-r
 | [A few](../numbers.md#digitless): open `gram` | `zagadulx gram vehahel.` | *A few cats sit.* | I |
 | [Some, on a mass noun](../numbers.md#digitless) | `zedehel gral vehahel.` | *Some tea sits there.* | I |
 | [Some amount](../numbers.md#digitless) | `zazawan drar vahahal.` | *Azawan sees some number of them.* | I |
-| [How many?](../numbers.md#digitless) | `yol zazawan drar vahahal.` | *How many does Azawan see?* | I |
-| [How many cats?](../numbers.md#how-many) | `yol zazawan dagadulx grar vahahal.` | *How many cats does Azawan see?* | I |
-| [Which place?](../numbers.md#how-many) | `yol zalahen vehahel ol brer.` | *Which place does Alahen sit in?* | I |
-| [How big?](../numbers.md#how-big): blank on `/w/` | `yol zodogal wrar gelavam.` | *How big is the dog?* | I |
-| [How fast?](../numbers.md#how-big) | `yol zodogal varahal wrar hadehum.` | *How fast does the dog run?* | I |
+| [How many?](../numbers.md#digitless) | `yol drar zazawan vahahal.` | *How many does Azawan see?* | I |
+| [How many cats?](../numbers.md#how-many) | `yol dagadulx grar zazawan vahahal.` | *How many cats does Azawan see?* | I |
+| [Which place?](../numbers.md#how-many) | `yol ol brer zalahen vehahel.` | *Which place does Alahen sit in?* | I |
+| [How big?](../numbers.md#how-big): blank on `/w/` | `yol wrar gelavam zodogal.` | *How big is the dog?* | I |
+| [How fast?](../numbers.md#how-big) | `yol wrar hadehum zodogal varahal.` | *How fast does the dog run?* | I |
 
 *Many*, *few*, *enough*, and *too much* are [comparatives](../comparatives.md#vague-amounts), not number words. Do not confuse the blank on `/h/` with `har` *sometimes*.
 

@@ -498,9 +498,9 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 
 To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`ael`**, the same way as [Where?](questions.md#where).
 
-> `yol zazawan dugul ael bar varadal.`
+> `yol ael bar zazawan dugul varadal.`
 >
-> y-question | z-Azawan | d-book | [using | b-wh] | v-write
+> y-question | [using | b-wh] | z-Azawan | d-book | v-write
 >
 > "How does Azawan write the book?"
 

@@ -39,9 +39,9 @@ When you are not sure, use **`thovum`**: it says *could be* and nothing about fo
 
 In a yes/no question, **`thovul`** says you are asking in order to find out:
 
-> `yol zazawan thovul vabahel dalahen.`
+> `yol zazawan vabahel thovul dalahen.`
 >
-> y-question | z-Azawan | th-MAY-find-out | v-punch | d-Alahen
+> y-question | z-Azawan | v-punch | th-MAY-find-out | d-Alahen
 >
 > "Might Azawan be punching Alahen? let's find out."
 
@@ -120,9 +120,9 @@ z-Azawan | v-think
 **5.** *Could Ahaben be paying?*
 
 ::: details Show answer
-`yol zahaben thovum vamol.`
+`yol zahaben vamol thovum.`
 
-y-question | z-Ahaben | th-MAY | v-pay
+y-question | z-Ahaben | v-pay | th-MAY
 :::
 
 **6.** *Alahen may be telling Azawan.*
@@ -151,10 +151,10 @@ z-Ahaben | th-MAY-find-out | v-scream
 *Ahaben may be screaming, I'll find out.*
 :::
 
-**3.** `yol zalahen thovul vavadal dazawan.`
+**3.** `yol zalahen vavadal thovul dazawan.`
 
 ::: details Show answer
-y-question | z-Alahen | th-MAY-find-out | v-fight | d-Azawan
+y-question | z-Alahen | v-fight | th-MAY-find-out | d-Azawan
 
 *Might Alahen be fighting Azawan? Let's find out.*
 :::
@@ -1077,9 +1077,9 @@ A [carried](#carry-forward) channel keeps its offset. Date the first sentence of
 
 A signed measure in the `/b/` of a [time pole](dependents.md#time-poles) (**`homam`** *until*, **`heveham`** *by*, **`habam`** *before*, **`henum`** *after*, **`huwem`** *during*) counts from now, the same way. The pole itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel of its own (a carried frame does not count). So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a pole to slip in a past or future with no warrant. An absolute date in the pole (`homam b_#22,7`) needs none of this.
 
-> `yel zehon vaheham homam bazazam grawol.`
+> `yel vaheham zehon homam bazazam grawol.`
 >
-> y-command | z-listener | v-confidentiality | [h-until | [b-day | g-one]]
+> y-command | v-confidentiality | z-listener | [h-until | [b-day | g-one]]
 >
 > "Keep the secret until tomorrow."
 

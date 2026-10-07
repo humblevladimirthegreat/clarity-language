@@ -80,10 +80,11 @@ Calls and sentence glue use [`/y/`](../speech-moves.md) and [`/x/`](../dependent
 | [Subject, object, verb](../clause.md#direct-object-d) | `zodogal dagadul vahahal.` | *A dog sees a cat.* | B |
 | [`/h/` and `/th/` go anywhere](../clause.md#adverbs-h) | `zodogal hadehum vowogal.` | *A dog walks hastily.* | B |
 | [Leave out the subject](../clause.md#no-subject): nobody is named as the doer | `dazawan vahahal.` | *Azawan was seen.* | I |
-| [First word is highlighted](../clause.md#word-order-emphasis) | `dagadul zazawan vahahal.` | *It's a cat that Azawan sees.* | A |
-| [Subject contrasted](../clause.md#word-order-emphasis) with `&` | `&zazawan dagadul vahahal.` | *It was Azawan who saw the cat.* | A |
-| [Verb first](../clause.md#word-order-emphasis) | `vahahal zazawan dagadul.` | *What Azawan does is see a cat.* | A |
-| [Adverb first](../clause.md#word-order-emphasis) | `hadehum zazawan vowogal.` | *Hastily, Azawan walks.* | A |
+| [Moving words changes nothing](../clause.md#direct-object-d) | `dagadul zodogal vahahal.` | *A dog sees a cat.* | B |
+| [Usual order by speech act](../speech-moves.md#act-word-order): question verb second, command verb first, prohibition verb late | `yol zazawan vabahel dabegol.` · `yel vabahel dabegol.` · `yul dabegol vabahel.` | *Does Azawan punch the box?* · *Punch the box!* · *Don't punch the box.* | B |
+| [Fill-ask: blank first](../questions.md#fill-ask) | `yol dar zazawan vahahal.` | *What does Azawan see?* | B |
+| [Contrast one word with `&`](../clause.md#english-emphasis) | `&zazawan dagadul vahahal.` · `zazawan &dagadul vahahal.` · `zazawan dagadul &vahahal.` | *It was Azawan who saw the cat.* · *It's a cat (not something else) that Azawan sees.* · *Azawan sees the cat* (rather than doing something else to it). | A |
+| [Cleft with no contrast: plain sentence](../clause.md#english-emphasis) | `zazawan dagadul vahahal.` | *It's a cat that Azawan sees* (answering *what?*). | A |
 
 ### Describing words {#describing}
 
