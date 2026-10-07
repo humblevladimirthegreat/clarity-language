@@ -591,7 +591,7 @@ export const REJECTIONS = {
   hookSameRoleStack: { anchor: "hooks.md#including-am-al", summary: "between same-role words only the plain hooks (al el ol ul) and the range hooks (oel ual uel) have a reading; for such as, use am" },
   hookDiscourseStack: { anchor: "hooks.md#discourse-hooks", summary: "at the front of a sentence only al el ol ul, aol and ael have a reading; for next, by the way, on the contrary use a linker" },
   stackedJoinResume: { anchor: "join-across-roles.md#vp-clause-forms", summary: "stacked join vowels take no -r on /z/ /d/ /b/ /v/ /x/ /ɡ/ (only a / o / e / u do); a stacked -r is the stance fill-ask under /th/" },
-  spanSlot: { anchor: "spans.md#pos", summary: "an aside goes only under /th/; a cite, mention or opaque span fills a content slot (/z/ /d/ /b/ /v/ /ɡ/ /h/) or sets the topic under /x/; no span fills /w/" },
+  spanSlot: { anchor: "spans.md#pos", summary: "an aside goes only under /th/ /ɡ/ /w/ /h/; a cite, mention or opaque span fills a content slot (/z/ /d/ /b/ /v/ /ɡ/ /h/) or /w/, or sets the topic under /x/" },
   turnWordModifier: {
     anchor: "speech-moves.md#describe-turn-word",
     summary: "/w/ goes before a reaction, not a call; a number cheer or a span under /y/ takes no gl-, /ɡ/, or /w/",

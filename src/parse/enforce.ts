@@ -184,19 +184,22 @@ function tokenWord(token: IToken | undefined): LexWord | undefined {
   return payload && isLexWordPayload(payload) ? payload : undefined;
 }
 
+/** Modifier slots that take an aside (spans.md#asides-th): the whole sentence, one noun, one modifier, or the action. */
+const ASIDE_POS = new Set(["th", "g", "w", "h"]);
+
 /**
- * Which slots a span fence fills (spans.md § Outer slot): an aside only under `/th/`, a cite, mention or
- * opaque in a content slot (never `/th/`) or as an `/x/` topic word, and no span under `/w/`. An aside resume (`dexur`) may recast the aside into another slot.
+ * Which slots a span fence fills (spans.md § Outer slot): an aside only under `/th/`, `/ɡ/` (and `gl-`), `/w/`,
+ * or `/h/`; a cite, mention or opaque in a content slot or `/w/` (never `/th/`) or as an `/x/` topic word.
+ * An aside resume (`dexur`) may recast the aside into another slot.
  */
 function enforceSpanSlot(word: LexWord): void {
   const family = word.family;
   if (family.kind !== "writingSpan" || word.pos === "y" || !word.pos) return;
-  if (word.pos === "w") throw new ConstructionError("spanSlot", word.raw);
   if (word.pos === "x") {
     if (!isTopicSpan(word)) throw new ConstructionError("spanSlot", word.raw);
     return;
   }
-  if ((family.bracket === "(") !== (word.pos === "th")) throw new ConstructionError("spanSlot", word.raw);
+  if (family.bracket === "(" ? !ASIDE_POS.has(word.pos) : word.pos === "th") throw new ConstructionError("spanSlot", word.raw);
 }
 
 /** **-ln** and span `^@` name one thing a name applies to: a noun slot or a citation only (word-endings.md#name-instance--ln). */

@@ -146,7 +146,7 @@ Complex `/h/` + `/b/` (**`hahehom`**) *as for X*: a frame for one sentence.
 
 ### Aside
 
-A parenthetical comment span (`th(…)`).
+A parenthetical comment span (`th(…)` on the sentence; `g(…)`, `w(…)`, or `h(…)` on a noun, a word, or the action).
 
 [Spans](spans.md#asides)
 

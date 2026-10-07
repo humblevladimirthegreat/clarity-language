@@ -92,10 +92,10 @@ A **span** is a role letter and a pair of brackets. The letter is the role of th
 |---------|-----------|-----|---------|-------|
 | [`[…]`](../spans.md#writing) | Agazan | cite: what someone said, a title | `zazawan d[azawan] vezebel.` | B |
 | [<code>&lt;…&gt;</code>](../spans.md#loans) | not Agazan | opaque: a foreign word, code, a name | <code>zazawan d&lt;kimchi&gt; vahahal.</code> | B |
-| [`th(…)`](../spans.md#asides) | Agazan | aside: a side comment | `zazawan vowogal th(hagawal).` | B |
+| [`th(…)`](../spans.md#asides) | Agazan | aside: a side comment; `g(…)` on a noun, `w(…)` on the next word, `h(…)` on the action | `zazawan vowogal th(hagawal).` | B |
 | [`{ … }`](../spans.md#scope-islands) | Agazan | scope island: a binder inside reaches only that chunk | `zazawan { hegewem zodogal geredal } vahahal.` | I |
 
-When the lexicon has a matching root, write the ordinary word, not a span. An aside holds the same speech act as the outer sentence and never goes under `/y/`.
+When the lexicon has a matching root, write the ordinary word, not a span. An aside holds the same speech act as the outer sentence and never goes under `/y/`, `/z/`, `/d/`, `/b/`, or `/v/`.
 
 ### Marks before the bracket {#marks}
 
@@ -120,11 +120,10 @@ A one-word name is an ordinary **-n** word (`donodan`), not a span.
 | [`/z/`](../spans.md#pos) | subject | a foreign name as the subject | B |
 | [`/b/`](../spans.md#pos) | extra party | a foreign name as the recipient | B |
 | [`/v/`](../spans.md#pos) | verb | echo the act as wording; a loan verb | B |
-| [`/ɡ/`](../spans.md#pos) | adjective | a loan adjective | B |
-| [`/h/`](../spans.md#pos) | adverb | a loan adverb | B |
-| [`/th/`](../spans.md#pos) | stance | an aside | B |
-
-A degree word (`/w/`) is never a span.
+| [`/ɡ/`](../spans.md#pos) | adjective | a loan adjective; an aside on the noun | B |
+| [`/w/`](../spans.md#pos) | extra detail | a loan degree word; an aside on the next word | B |
+| [`/h/`](../spans.md#pos) | adverb | a loan adverb; an aside on the action | B |
+| [`/th/`](../spans.md#pos) | stance | an aside on the sentence | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -137,6 +136,11 @@ A degree word (`/w/`) is never a span.
 | [Point back at a quote](../spans.md#span-noun) | `zalahen d[azawan] vezebel. zahaben duxar vahahal.` | *Alahen said “Azawan.” Ahaben saw that.* | I |
 | [Topic from a title](../spans.md#topic-quotes) | `x@[onodan alahen] dozan vezehel.` | *Now, about Onodan Alahen: it is sung.* | I |
 | [An aside as a clause](../spans.md#asides) | `zazawan vowogal th(zalahen vezebal).` | *Azawan walks (Alahen sleeps).* | B |
+| [An aside on a noun](../spans.md#asides) | `zazawan g(zazawar vowogal) vezehel.` | *Azawan, who walks, sings.* | B |
+| [An aside on one word](../spans.md#asides) | `zodogal w(zazawan vezebel) gubuhel vowogal.` | *A (so Azawan says) blue dog walks.* | B |
+| [An aside before the noun](../spans.md#gl-spans) | `gl(gubuhel) zodogal gamazam vowogal.` | *The small dog (it is blue) walks.* | I |
+| [A loan adjective before the noun](../spans.md#gl-spans) | <code>gl&lt;rouge&gt; zodogal vowogal.</code> | *A rouge dog walks.* | I |
+| [A loan degree word](../spans.md#pos) | <code>zodogal w&lt;molto&gt; gubuhel vowogal.</code> | *A molto blue dog walks.* | B |
 | [Aside inside a cite](../spans.md#nesting) | `zazawan d[ th(hagawal) azawan ] vezebel.` | *Azawan said “Azawan” (quietly).* | A |
 
 ### Calls and mentions {#calls-mentions}

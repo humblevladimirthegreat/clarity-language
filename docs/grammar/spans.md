@@ -79,12 +79,19 @@ To call someone by a foreign name (*Sam!*) or react with a foreign word (*Amen!*
 
 The **`@`** mark decides which, as **-n** does on a native word. With **`@`**, the span calls that person (<code>y@&lt;Sam&gt;</code>, *Sam!*); add **`~`** for a name you are not sure of (<code>y~@&lt;Sam&gt;</code>). Without **`@`**, the span is a foreign [interjection](speech-moves.md#interjections) (<code>y&lt;Amen&gt;</code>, *Amen!*), exact or given as the gist with **`~`** (<code>y~&lt;Amen&gt;</code>).
 
-### Asides (`th(…)`)
+### Asides (`th(…)`) {#asides-th}
 <a id="asides"></a>
 
-To add a side comment in parentheses, write **`th(`** … **`)`**. That span is an **aside**. The `th` makes it a [stance](clause.md#stance-th) word, so it may sit anywhere a stance word may sit. (cue: round parentheses, as in English)
+To add a side comment in parentheses, write a role letter, then **`(`** … **`)`**. That span is an **aside**. The role letter says what the comment is about, and the aside sits where a word with that letter sits. (cue: round parentheses, as in English)
 
-The inside is ordinary Agazan: a fragment, or a clause with the **same speech act** as the outer sentence (both statements, both questions, or both commands). An aside comments on the sentence; it does not call anyone or react, so it never goes under `/y/`.
+| Agazan | Comments on | Sits |
+|--------|-------------|------|
+| `th(…)` | the whole sentence | anywhere a [stance](clause.md#stance-th) word may sit |
+| `g(…)` | the noun before it | right after that noun, like an [adjective](clause.md#adjectives-ɡ) |
+| `w(…)` | the next `/ɡ/`, `/h/`, or `/th/` word | right before that word, like [*very*](clause.md#adjective-detail-w) |
+| `h(…)` | the action | anywhere an [adverb](clause.md#adverbs-h) may sit |
+
+The inside is ordinary Agazan: a fragment, or a clause with the **same speech act** as the outer sentence (both statements, both questions, or both commands). An aside comments; it does not call anyone or react, so it never goes under `/y/`. It fills no slot of the verb either, so it never goes under `/z/`, `/d/`, `/b/`, or `/v/`.
 
 > `zazawan vowogal th(hagawal).`
 >
@@ -98,11 +105,41 @@ The inside is ordinary Agazan: a fragment, or a clause with the **same speech ac
 >
 > "Azawan walks (Alahen sleeps)."
 
-A one-word manner with nothing to package is a plain adverb: `zazawan vowogal hagawal.`
+A noun aside adds something about a noun the listener already has. It does not pick out which one, the way a plain adjective can:
+
+> `zodogal g(gubuhel) vowogal.`
+>
+> [z-dog | g-ASIDE[g-blue]] | v-walk
+>
+> "The dog (it is blue) walks."
+
+> `zazawan g(zazawar vowogal) vezehel.`
+>
+> [z-Azawan | g-ASIDE[z-←Azawan | v-walk]] | v-sing
+>
+> "Azawan, who walks, sings."
+
+A `/w/` aside narrows the comment to one word. Here only the color is what Azawan says:
+
+> `zodogal w(zazawan vezebel) gubuhel vowogal.`
+>
+> [z-dog | [w-ASIDE[z-Azawan | v-tell] | g-blue]] | v-walk
+>
+> "A (so Azawan says) blue dog walks."
+
+An `/h/` aside is a side detail about the action itself, not about your claim:
+
+> `zazawan vowogal h(al babagul).`
+>
+> z-Azawan | v-walk | h-ASIDE[in | b-bank]
+>
+> "Azawan walks (in a bank)."
+
+A one-word comment with nothing to package is a plain word in that slot: `zazawan vowogal hagawal.`
 
 **For *because* / *if*, use:** [**`barl`**](dependents.md#poles) dependents, not an aside.
 
-**Compare with:** a second name for the same person uses [identity](predication.md#identity) (`gugo` + `/b/`), not an aside.
+**Compare with:** a second name for the same person uses [identity](predication.md#identity) (`gugo` + `/b/`). To pick out **which** noun (*the guard who sits*), use a plain adjective or [another sentence](dependents.md#which-noun), not a noun aside.
 
 ### Outer slot {#pos}
 
@@ -121,13 +158,14 @@ A span can fill any role a word can, not only the object. The letter before the 
 | `/z/` | subject | a foreign name as the subject (<code>z@&lt;Sam&gt;</code>) | **z** ≈ star (who it is about) |
 | `/b/` | extra party | a foreign name as the recipient (<code>b@&lt;Sam&gt;</code>) | **b** ≈ bolted on (the extra piece) |
 | `/v/` | verb | echo the act as wording (`v[vazadal]`); a loan verb (<code>v&lt;google&gt;</code>) | **v** as in English *verb* |
-| `/ɡ/` | adjective | a loan adjective (<code>g&lt;rouge&gt;</code>) | **g** ≈ grade (a rating of the noun) |
-| `/h/` | adverb | a loan adverb (<code>h&lt;allegro&gt;</code>) | **h** starts *how* / *when* / *where* |
-| `/th/` | stance | asides (`th(…)`) | **th** ≈ *think* (your side comment) |
+| `/ɡ/` | adjective | a loan adjective (<code>g&lt;rouge&gt;</code>); an aside on the noun (`g(…)`) | **g** ≈ grade (a rating of the noun) |
+| `/w/` | extra detail | a loan degree word (<code>w&lt;molto&gt;</code>); an aside on the next word (`w(…)`) | **w** ≈ with (stuck to that host) |
+| `/h/` | adverb | a loan adverb (<code>h&lt;allegro&gt;</code>); an aside on the action (`h(…)`) | **h** starts *how* / *when* / *where* |
+| `/th/` | stance | an aside on the sentence (`th(…)`) | **th** ≈ *think* (your side comment) |
 
-Only an aside goes under `/th/`, and every other span fills a content slot: `/z/` `/d/` `/b/` `/v/` `/ɡ/` `/h/`. A degree word (`/w/`) is never a span.
+Only an aside goes under `/th/`. An aside also goes under `/ɡ/`, `/w/`, or `/h/`, never under `/z/` `/d/` `/b/` `/v/`. A cite, mention, or opaque span fills any slot but `/th/`.
 
-To use a foreign verb, adjective, or adverb (*googled*, *rouge*), put an opaque span in that slot. That is a **loan word**: the role letter says how the foreign word is used, and the inside keeps its own spelling.
+To use a foreign verb, adjective, adverb, or degree word (*googled*, *rouge*, *molto*), put an opaque span in that slot. That is a **loan word**: the role letter says how the foreign word is used, and the inside keeps its own spelling.
 
 > <code>zalahen v&lt;google&gt; dazawan.</code>
 >
@@ -246,12 +284,12 @@ z-Alahen | v-OPAQUE["google"] | d-Onodan
 *Alahen googled Onodan.* (a loan verb)
 :::
 
-**3.** `zazawan vezehel th(zalahen vazadal).`
+**3.** `zahaben g(zahaber vezehel) vowogal.`
 
 ::: details Show answer
-z-Azawan | v-sing | th-ASIDE[z-Alahen | v-stop]
+[z-Ahaben | g-ASIDE[z-←Ahaben | v-sing]] | v-walk
 
-*Azawan sings (Alahen stops).*
+*Ahaben, who sings, walks.* (extra information about Ahaben)
 :::
 
 **4.** <code>y&lt;Bravo&gt;.</code>
@@ -386,6 +424,26 @@ The same holds for a loan word or any other span, and `duxal` is [another one](p
 An aside gives role pointers nothing to point back to. A [tag](pronouns.md#tag-pronouns) assigned inside a cite or an aside does not hold outside it, and a pointer outside never reaches a word inside one.
 
 A span in a `/v/` slot (`v[vazadal]`) has no resume pronoun.
+
+### Spans before the noun (`gl`) {#gl-spans}
+
+A span on `/ɡ/` can also come **before** its noun, the way a [`gl-` adjective](clause.md#left-bound-adjectives) does: write **`gl`** before the bracket. It describes the next noun, so a noun must follow it. A noun aside before the noun (`gl(…)`) keeps the spot after the noun free for a plain adjective that picks out which one.
+
+> `gl(gubuhel) zodogal gamazam vowogal.`
+>
+> [gl-ASIDE[g-blue] | z-dog | g-small] | v-walk
+>
+> "The small dog (it is blue) walks."
+
+A loan adjective or a cite leans the same way:
+
+> <code>gl&lt;rouge&gt; zodogal vowogal.</code>
+>
+> [gl-OPAQUE["rouge"] | z-dog] | v-walk
+>
+> "A rouge dog walks."
+
+**Compare with:** the [mention](#mention) marker is a `gl-` **word** before a span (<code>glelel z&lt;onoda&gt;</code>), not `gl` on the span itself.
 
 ### One of a title (`^@`) {#one-of-a-title}
 
@@ -618,20 +676,21 @@ z-Ahaben | d-CITE.about[z-Azawan | v-attest] | v-tell
 *Alahen and (just Azawan) punched.*
 :::
 
-**5.** `zazawan vowogal th(zalahen valahal).`
 
-::: details Show answer
-z-Azawan | v-walk | th-ASIDE[z-Alahen | v-lie]
-
-*Azawan walks (Alahen lies).*
-:::
-
-**6.** `zahaben !{ hegewem dalahal } vahahal.`
+**5.** `zahaben !{ hegewem dalahal } vahahal.`
 
 ::: details Show answer
 z-Ahaben | !SCOPE[h-possibility | d-lie] | v-see
 
 *Ahaben saw, as a possibility, the lie!*
+:::
+
+**6.** `gl(gamazam) zalahen dazawan vabahel.`
+
+::: details Show answer
+[gl-ASIDE[g-small] | z-Alahen] | d-Azawan | v-punch
+
+*Alahen, who is small, punches Azawan.* (the aside comes before the name)
 :::
 
 #### Pick one {#intermediate-pick-one}

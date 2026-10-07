@@ -140,7 +140,7 @@ const ROWS: Row[] = [
   { invalid: "yael yuel.", rejection: "polarOrder", valid: "yael." },
   { invalid: "zazawan d(zalahen vowogal) vezebel.", rejection: "spanSlot", valid: "zazawan vezebel th(zalahen vowogal)." },
   { invalid: "zazawan vowogal th[sic].", rejection: "spanSlot", valid: "zalahen v<google> dazawan." },
-  { invalid: "zazawan w<very> gamazam.", rejection: "spanSlot", valid: "zazawan welavam gamazam." },
+  { invalid: "zazawan b(hagawal) vezebel.", rejection: "spanSlot", valid: "zazawan vezebel h(hagawal)." },
   { invalid: "x(hagawal) zozan vowogal.", rejection: "spanSlot", valid: "x@<Sam> zozan vowogal." },
   { invalid: "y(hagawal).", rejection: "ySpanType", valid: "y[azawan]." },
   {

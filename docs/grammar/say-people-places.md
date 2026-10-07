@@ -53,11 +53,11 @@ For English *whose*, resume the person after the [whose hook **`em`**](hooks.md#
 >
 > "A guard sits. The guard's dog runs." (*The guard whose dog runs sits.*)
 
-English uses the same *who* clause for two jobs. When it picks out **which** one (*the guard who sits*, not the other guard), use the two-sentence pattern or a role compound, as above. When it only adds extra information about someone already known (*Azawan, who walks, sings*), put that information in an [aside](spans.md) **`th(…)`** inside the sentence.
+English uses the same *who* clause for two jobs. When it picks out **which** one (*the guard who sits*, not the other guard), use the two-sentence pattern or a role compound, as above. When it only adds extra information about someone already known (*Azawan, who walks, sings*), put that information in a noun [aside](spans.md#asides-th) **`g(…)`** right after the noun.
 
-> `zazawan th(zazawar vowogal) vezehel.`
+> `zazawan g(zazawar vowogal) vezehel.`
 >
-> z-Azawan | th-ASIDE[z-←Azawan | v-walk] | v-sing
+> [z-Azawan | g-ASIDE[z-←Azawan | v-walk]] | v-sing
 >
 > "Azawan, who walks, sings."
 

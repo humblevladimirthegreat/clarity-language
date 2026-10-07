@@ -247,7 +247,17 @@ probe_prefixedJoin
 // ── Writing bracket atoms (`[]` `()`; `<>` is foreign / opaque) ────────
 
 writingSpan
-  = pos:Pos marks:WritingMarks? bracketed:BracketedPayload WordEnd
+  = "g" "l" marks:WritingMarks? bracketed:BracketedPayload WordEnd
+    &{ return !(bracketed.bracket === "[" || bracketed.bracket === "(") || bracketed.payload.trim() !== "="; }
+    {
+      return makeWord(text(), {
+        pos: "g",
+        gl: true,
+        ending: spanEnding(marks),
+        family: writingSpanFamily(bracketed.bracket, bracketed.payload, marks),
+      });
+    }
+  / pos:Pos marks:WritingMarks? bracketed:BracketedPayload WordEnd
     &{ return !(bracketed.bracket === "[" || bracketed.bracket === "(") || bracketed.payload.trim() !== "="; }
     {
       const ending = spanEnding(marks);

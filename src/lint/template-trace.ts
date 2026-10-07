@@ -156,7 +156,8 @@ export function traceTemplate(text: string, tables: ClassifyTables): string[] {
       const ids = traceFilled(variant, findSlots(variant), tables);
       if (ids) return ids;
     }
-    return null;
+    // A shape that leans on a neighbor (`w(…)` before its host, `gl(…)` before its noun) gets context, as a fragment does.
+    return traceFilled(...withContext(shape), tables);
   });
   if (alternatives.every((ids) => ids)) return [...new Set(alternatives.flat() as string[])].sort();
   throw new Error("no filling of the template's slots parses");
@@ -165,10 +166,23 @@ export function traceTemplate(text: string, tables: ClassifyTables): string[] {
 const FRAGMENT_BEFORE = ["", "zazawan", "zazawan vowogal"];
 const FRAGMENT_AFTER = ["", "zazawan", "vowogal"];
 
+/** A shape with sample context slots before and after it, plus any slots of its own. */
+function withContext(shape: string): [string, Slot[]] {
+  const template = `\u0000 ${shape} \u0001`;
+  const inner = findSlots(template).filter((slot) => slot.start > 0 && slot.end < template.length);
+  return [
+    template,
+    [
+      { start: 0, end: 1, options: FRAGMENT_BEFORE },
+      ...inner,
+      { start: template.length - 1, end: template.length, options: [...FRAGMENT_AFTER, `h${SWAN}l`] },
+    ],
+  ];
+}
+
 /** Constructions a fragment exercises: the fragment with context supplied before and after. */
 export function traceFragment(text: string, tables: ClassifyTables): string[] {
-  const trimmed = text.trim();
-  const template = `\u0000 ${trimmed} \u0001`;
+  const [template] = withContext(text.trim());
   const slots: Slot[] = [
     { start: 0, end: 1, options: FRAGMENT_BEFORE },
     { start: template.length - 1, end: template.length, options: FRAGMENT_AFTER },

@@ -231,8 +231,7 @@ Source: [speech-moves.md](../grammar/speech-moves.md#speech-act), [describing a 
 
 Source: [spans.md](../grammar/spans.md)
 
-- **open:** an aside under any role but `/th/` (`d(…)`); a cite, opaque or mention under `/th/` (`th[…]`). An aside comments on the sentence and fills no slot, and no job has asked for a quoted or foreign stance word: a foreign phrase goes in an aside or a `/y/` interjection. Parser: `spanSlot`.
-- **closed (D-28):** any span under `/w/`.
+- **open:** an aside under `/z/` `/d/` `/b/` `/v/` (`d(…)`); a cite, opaque or mention under `/th/` (`th[…]`). An aside comments and fills no slot of the verb, and no job has asked for a quoted or foreign stance word: a foreign phrase goes in an aside or a `/y/` interjection. Parser: `spanSlot`.
 - **open:** a span resume (`d[=]`). The shape is not guessable, and a span is an ordinary noun for role pointers (`duxar`).
 - **open:** a resume pronoun for a span in a `/v/` slot (`v[vazadal]`). A verb span echoes wording, so there is no stem to resume.
 
