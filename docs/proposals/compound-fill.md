@@ -30,7 +30,7 @@ Add a row only when **all** of these hold:
 1. **It is one thing,** not a list or a thing plus a property. A property uses `/ɡ/`; *a blue dog* is two words.
 2. **It is a fixed kind** that English (or most languages) names with one word or a fixed phrase. Pairings made up on the spot stay live `x` compounds.
 3. **No root already has the sense.** Check `concrete`, `abstract` and `english_aliases` (`npm run lexicon-search`, `node scripts/find-english.mjs --kind root`). Many specific kinds are seeds already: *garlic*, *rose*, *owl*, *sneaker*. The validator rejects a compound gloss that is already a published sense.
-4. **The head is the most specific root that fits.** *Sparrow* goes on 🐦 *bird*, not 𓄛 *animal*. The generic heads (𓄛 *animal*, 𓉐 *room*, 🫙 *jar*, 🧺 *basket*) only head a class name that no narrower root covers (*pet*, *livestock*, *luggage*).
+4. **The head is the most specific root that fits.** *Sparrow* goes on 🐦 *bird*, not 𓄛 *animal*. The generic heads (𓄛 *animal*, 🫙 *jar*, 🧺 *basket*) only head a class name that no narrower root covers (*pet*, *livestock*, *luggage*). 𓉐 *room* is an ordinary head: no root names a narrower kind of room, so *attic* and *cellar* go on it directly.
 5. **The left root narrows the head in a way a learner can guess,** or the mnemonic makes the link easy to remember.
 
 Prefer frequent words. A category can stop at the first 20–40 members by frequency. A complete taxonomy is not the goal.

@@ -106,6 +106,11 @@ describe("draftCompounds", () => {
     assert.ok(result!.warnings.some((w) => w.startsWith("mnemonic does not open")));
   });
 
+  it("treats room as an ordinary head", () => {
+    const [result] = draftCompounds([draft({ head: "𓉐", mnemonic: "pizza specifying room is a test" })], lexicon);
+    assert.ok(!result!.warnings.some((w) => w.startsWith("generic head")));
+  });
+
   it("reports an unresolved cue without a stem", () => {
     const [result] = draftCompounds([draft({ head: "no-such-word-anywhere" })], lexicon);
     assert.equal(result!.compound, undefined);

@@ -11,7 +11,7 @@ import {
 import { posEnglishLemmaList, type OverlayRow, type PublishedRow } from "./lexicon-search.js";
 
 /** Generic heads: only for a class name no narrower root covers. Keyed by seed so respelling is safe. */
-export const GENERIC_HEAD_SEEDS = new Set(["𓄛", "𓉐", "🫙", "🧺"]);
+export const GENERIC_HEAD_SEEDS = new Set(["𓄛", "🫙", "🧺"]);
 
 export type Lexicon = {
   published: readonly PublishedRow[];
