@@ -102,6 +102,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ❤️‍🔥,passion,abeho,fervor,heart fire shows fervor,,excitement,
 ❤️‍🩹,healing,ehewo,restitution,mending heart marks recovery; restitution is the unobservable making-whole,,compensation; restore,
 ❤️,heart,aho,compassion,the heart feels for others; compassion is caring about their suffering,,center; middle; central,
+🩷,pink,ebuga,,the pink heart is pink,,,
 💋,lips,eleba,,,,,
 💯,hundred,ahaho,perfection,a hundred out of a hundred is a top mark,m.w:completely,perfect; totally; entirely; fully; altogether,
 💢,anger,anage,offense,anger symbol shows rage; offense is the unobservable reading that a wrong was done,,crime,
@@ -267,6 +268,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 👥,silhouettes,azewe,community,busts form community,,society; club; association; folk; band; ethnic; racial,
 🫂,hug,ahage,comfort,hug gives comfort,,comfortable; embrace,
 👪,family,avaha,kinship,a family is the people tied to you by blood,,household,hooks.md#beginner-practice
+🧑‍🧒,parent,ebodu,,an adult with a child is a parent,,,
 👣,footprints,uvude,legacy,footprints leave legacy,v:go,trace; tour,roles.md#intermediate-practice
 🫆,fingerprint,evebe,identity,fingerprint marks identity,,characteristic; personality,
 🐒,monkey,amage,mimicry,monkey see monkey do,,copy,
@@ -434,6 +436,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🌶️,pepper,obebe,heat,hot pepper brings heat,,,
 🫑,bell-pepper,abebe,,,,,
 🥒,cucumber,aguyu,,,,,
+🫝,pickle,ebogu,predicament,a pickle is a mess to get out of; a predicament is a hard spot,,,
 🥬,greens,egewo,vitality,leafy greens fuel vitality,,vital; vegetable,
 🥦,broccoli,abugo,health,eat broccoli for health,,healthy; welfare,
 🧄,garlic,agego,,,,,
@@ -585,6 +588,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🌆,dusk,adazo,closure,dusk ends the day; closure is bringing something to an end,,settlement,
 🌇,sunset,azazo,,,,,
 🌉,bridge,ebu,span,a bridge spans the gap; span is reaching across,,,
+🚐,van,avaye,,a minibus is a van,,,
 🛣️,road,oroda,wide,a road is made broad enough for many; wide is broad across,,broad; extensive,
 ♨️,springs,ezobe,rejuvenation,hot springs restore the body; rejuvenation restores energy,,,
 🎠,carousel,uge,,,,,
@@ -618,6 +622,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🚦,traffic-light,alado,directive,traffic light tells go or stop; signal is a clear instruction,,,
 🛑,stop,azada,cessation,stop sign means do not proceed; halt is bringing movement to stop,,cancel; eliminate,spans.md#beginner-practice
 🚧,construction,ageza,blockage,construction blocks the road; blockage is something in the way,,block; barrier; architecture,roles.md#beginner-practice
+🛙,lighthouse,aloda,vigilance,a lighthouse keeps watch through the night; vigilance is keeping watch for danger,,,
 ⚓,anchor,age,grounding,anchor holds the ship steady; grounding is staying steady,,,hooks.md#advanced-practice
 🛟,life-buoy,alavu,rescue,a lifebuoy is thrown to pull someone from the water,,,
 🛶,canoe,agawo,lake,a canoe floats on a lake,,,
@@ -885,6 +890,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🖌️,paintbrush,ebuda,artistry,brush paints with flowing strokes; artistry is skilled creative work,,art; paint; illustration; brush; draw; illustrate; stroke,comparatives.md#advanced-practice
 🖍️,crayon,egeye,boldness,crayon marks with thick color; boldness is strong visible stroke,,nerve,
 📝,memo,ume,policy,memo records a standing decision; policy is a standing rule,,regulation; guideline; law; legal,
+🪌,eraser,oreze,correction,an eraser rubs out a mistake; correction is setting a mistake right,,,
 💼,briefcase,ebeve,business,briefcase carries work affairs; business is commercial affairs,z:job,task; affair; enterprise; profession; company,
 📁,folder,ovode,,,,fold,
 🗂️,divider,edova,,,,,
@@ -907,6 +913,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔒,locked,alaga,restriction,lock keeps the door shut; restriction is holding back access,v:shut,restrict; limitation; close; strict,
 🔓,unlocked,anaga,access,unlock opens what was shut; access is ability to enter,,,
 🔑,key,egehu,solution,key opens what was locked; solution is what unlocks the problem,,reply; respond; solve; response; resolve; resolution,questions.md#beginner-practice
+🪍,hand-net,enedu,catch,a hand net scoops up what you chase; a catch is what you manage to get,,,
 🔨,hammer,ahavo,iron,a hammer is forged iron; iron is the hard forged metal,,steel,relations.md#beginner-practice
 🪓,axe,agezu,severance,axe cuts through wood; severance is cutting apart,,cut; break,
 ⛏️,pick,ebege,deep,a pick digs far below the surface; deep is far below,,,
@@ -1395,6 +1402,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 𐃆,spear,ozebe,thrust,a spear drives forward to one point; thrust is the main point pushed forward,,,
 𐃉,sword,ozodu,warfare,a sword is made for war; warfare is waging war,,,
 𐃌,chariot,eheyu,conquest,a chariot carries the conqueror; conquest is taking by force,,,
+𓊲,table,edabe,,a low table set with offerings,,,
 𝄐,fermata,evada,lingering,a fermata holds a note longer than its beat; lingering is staying past the expected time,,,
 𝄒,breath-mark,amago,breather,a breath mark gives the singer a moment to breathe; a breather is a short break to recover,,,
 𝄓,caesura,ezahu,interruption,a caesura cuts the music off mid-flow; an interruption breaks off what was going on,,,

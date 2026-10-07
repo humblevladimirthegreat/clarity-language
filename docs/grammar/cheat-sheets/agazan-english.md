@@ -358,7 +358,6 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `agulobel` | *citizen* |  |
 | `aguluzubul` | *province* |  |
 | `ahadalahabal` | *holder* |  |
-| `ahadolobel` | *parent* |  |
 | `ahadoluzugul` | *kindergarten* |  |
 | `ahahulazewel` | *jury* |  |
 | `ahahulehegol` | *lawsuit* |  |
@@ -382,7 +381,6 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `amahalagayel` | *king* |  |
 | `amavalenegel` | *throat* |  |
 | `amazamabehel` | *paragraph* |  |
-| `amazamadagal` | *van* |  |
 | `amazamezebel` | *summary* |  |
 | `amolabahal` | *inflation* |  |
 | `amolagedul` | *tax* |  |
@@ -404,14 +402,12 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `avahelahazal` | *firehouse* |  |
 | `avavulagayel` | *wreath* |  |
 | `avavulahazal` | *greenhouse* | `avavulahazam` *forcing* |
-| `awadaleredal` | *pink* |  |
 | `azadalebevel` | *resign* |  |
 | `azazaladazol` | *afternoon* |  |
 | `azewemadedel` | *committee* |  |
 | `ebahelevedal` | *grass* |  |
 | `ebedalahazal` | *bedroom* | `ebedalahazam` *sanctum* |
 | `ebedelabehel` | *menu* |  |
-| `ebedelagadel` | *table* |  |
 | `ebedelugugel` | *counter* |  |
 | `ebegologovel` | *abortion* |  |
 | `ebehamalodel` | *argument* | `ebehamalodem` *logic* |
