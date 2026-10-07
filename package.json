@@ -21,6 +21,7 @@
     "lexicon-review": "tsx scripts/lexicon-review.ts",
     "lexicon-search": "tsx scripts/lexicon-search.ts",
     "check-compounds": "tsx scripts/check-compound-uniqueness.ts",
+    "compound-fill": "tsx scripts/compound-fill.ts",
     "lint:lexicon": "tsx scripts/lint-lexicon-published.ts",
     "unused-roots": "tsx scripts/unused-roots.ts",
     "test": "tsx --test src/*.test.ts src/**/*.test.ts docs/grammar/.vitepress/components/*.test.ts docs/grammar/.vitepress/lib/*.test.ts scripts/lib/*.test.ts",

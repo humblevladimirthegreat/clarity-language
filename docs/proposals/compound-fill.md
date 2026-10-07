@@ -67,10 +67,12 @@ Some English labels in the table (*spice*, *fruit*, *shop*, *metal*, *day*) are 
 
 ## Method
 
-One category per batch. Steps 1–3 are mechanical. Step 4 needs editor review before step 5.
+One category per batch. Steps 1–3 are mechanical. Step 4 needs editor review before step 5. `npm run compound-fill` covers each step; roots are named by seed or English label, never by spelling.
 
-1. **Collect candidates.** For each head, take the direct hyponyms of its WordNet synset (for example everything under *herb.n.01* and *spice.n.01*). Add any `Compound` rows still open in `ngsl-lexicon-triage.csv` that fit the category. Rank by NGSL rank where there is one, then by general frequency.
-2. **Drop covered senses.** Run `node scripts/find-english.mjs '<word>' --kind root` and `npm run lexicon-search -- <word>`. Drop any word whose sense is already a root's `concrete`, `abstract` or alias, or already a compound.
+0. **Audit the heads.** `npm run compound-fill -- heads` lists heads by compound count. `npm run compound-fill -- heads 🐦 🐟` shows each head's row, its compounds, and whether it is a generic head. A cue that names no root is a [missing head](#when-a-head-is-missing).
+
+1. **Collect candidates.** For each head, take the hyponyms of its WordNet synset. `npm run compound-fill -- synsets herb spice` lists the senses (the culinary ones are *herb.n.02* and *spice.n.02*). `npm run compound-fill -- candidates herb.n.02 spice.n.02` lists their direct hyponyms ranked by word frequency and hides senses already covered (`--all` shows them). A broad head such as *bird.n.01* needs a deep walk with a rank cap: `--depth 8 --max-rank 15000`. `--triage` adds any `Compound` rows still open in `ngsl-lexicon-triage.csv`, ranked by NGSL rank.
+2. **Drop covered senses.** `candidates` already hides exact matches. For other words, `npm run compound-fill -- check <word>…` (or `-` for stdin) reports exact hits on a root's `concrete`, `abstract`, English-by-PoS or alias, a compound, or an overlay gloss. For near matches, run `node scripts/find-english.mjs '<word>' --kind root` and `npm run lexicon-search -- <word>`. Drop any word whose sense is already a root's `concrete`, `abstract` or alias, or already a compound.
 3. **Drop non-compounds.** Remove words that fail [when a compound earns a row](#when-a-compound-earns-a-row): two things, a property, a name, or a pairing too ad hoc to look up.
 4. **Draft rows for review.** For each survivor, pick:
    - the **head**: the most specific fitting root;
@@ -79,8 +81,8 @@ One category per batch. Steps 1–3 are mechanical. Step 4 needs editor review b
    - an optional `abstract`, the whole entry's **-m** reading;
    - a **mnemonic** in the house pattern *"<left> specifying <head> is …"*.
 
-   Present the batch as a table (English, left, boundary, head, abstract, mnemonic) and stop for review.
-5. **Write approved rows.** Put each row in `lexicon-compounds.csv` with the stem spelled exactly as left + boundary + head, copying the roots from the published CSV and never respelling one by hand. Then run `npm run check-compounds`, `npm test`, and `npm run cheat-sheet-blocks -- --write` (the Agazan → English cheat sheet lists compounds).
+   Write the batch as a draft CSV with the header `english,left,join,head,abstract,mnemonic`, naming `left` and `head` by seed or label. `npm run compound-fill -- draft <file>` prints the review table with each stem spelled from the published CSV, the validator's errors, and warnings the validator does not raise (a gloss that is already an alias or English-by-PoS lemma, a generic head, a mnemonic that does not open with *"<left> specifying <head>"*). Stop for review.
+5. **Write approved rows.** `npm run compound-fill -- draft <file> --write` appends the rows to `lexicon-compounds.csv`, and only when no row has an error. Then run `npm run check-compounds`, `npm test`, and `npm run cheat-sheet-blocks -- --write` (the Agazan → English cheat sheet lists compounds).
 
 ### What the validator catches
 
