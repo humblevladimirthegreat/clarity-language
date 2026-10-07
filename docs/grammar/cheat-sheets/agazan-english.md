@@ -414,6 +414,12 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ebedelagadel` | *table* |  |
 | `ebedelugugel` | *counter* |  |
 | `ebegologovel` | *abortion* |  |
+| `ebehamalodel` | *argument* | `ebehamalodem` *logic* |
+| `ebehamanagul` | *counterexample* |  |
+| `ebehamebadal` | *sound* | `ebehamebadam` *soundness* |
+| `ebehamelegel` | *valid* | `ebehamelegem` *validity* |
+| `ebehamevehal` | *conclusion* |  |
+| `ebehamevel` | *premise* |  |
 | `ebeholahazal` | *pub* |  |
 | `ebevelorodal` | *career* |  |
 | `ebevemunuzel` | *advertisement* |  |

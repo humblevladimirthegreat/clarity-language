@@ -254,7 +254,8 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 | *desire* / *wish* | `zazawan thohum vowogal.` | wants to walk |
 | *regret* (for the harm) | `thanathum behon.` | unmet relatedness, yours |
 | *mistake* / *error* | `gegegal gul` or `thevel barl` | not correct, or at fault |
-| *assumption* / *premise* | `thavor` | NOTIONAL, toy with it |
+| *assumption* | `thavor` | NOTIONAL, toy with it |
+| *premise* (of an argument) | `ebehamevel` | a word about the argument ([arguments](#arguments)) |
 | *truth* / *to tell the truth* | `thaveham` | revelation |
 | *experience* (first-hand) | `thevom` | MEMORY, remembered as seen |
 
@@ -404,6 +405,25 @@ An argument has three parts, and each has its own slot. The **link** between pre
 > "If Azawan sleeps, it follows that Azawan isn't walking." (the two rule each other out)
 
 **Compare with:** *it obviously follows* from strong clues (*obviously, it rained*) is CLUES (`thunel`), not a deduction: the clues make it likely, not certain. *Because* in the sense of what made it happen is **`thevem`** ([factivity](#factivity)).
+
+To talk **about** an argument rather than make one, use the dictionary words. Each is *reason* (`ebeha`, as in `zebeham` *the faculty of reason*) joined to a second root ([words you look up](x-compounds.md#lexical-compounds)).
+
+| English | Agazan | Built from |
+|---------|--------|------------|
+| *an argument* / *logic* | `ebehamalodel` / `ebehamalodem` | *reason* + *ladder*: steps from what you grant to what follows |
+| *a premise* | `ebehamevel` | *reason* + *brick*: what the argument is built on |
+| *the conclusion* (of an argument) | `ebehamevehal` | *reason* + *finish line*: where the argument arrives |
+| *valid* / *validity* | `ebehamelegel` / `ebehamelegem` | *reason* + *link*: the conclusion must hold if the premises do |
+| *sound* / *soundness* | `ebehamebadal` / `ebehamebadam` | *reason* + *hardiness*: valid, and the premises are true |
+| *a counterexample* | `ebehamanagul` | *reason* + *unlink*: a case where the premises hold and the conclusion fails |
+
+> `zebehamalodel gebehamebadal gul.`
+>
+> z-argument | [g-sound | g-not]
+>
+> "The argument isn't sound." (a step fails, or a premise is false)
+
+A word about the argument does not make it. *The argument is valid* names the link without stating it; to give the link itself, use **`thugum thoyem barl`** from the table above. *A premise* says nothing on whether you grant it; *an assumption* you only toy with is **`thavor`** ([reason nouns](#reason-nouns)). *Conclusion* in the sense of *the end* of a talk or story is `ogovem`, not `ebehamevehal`.
 
 ### Stacks (evidentiality, CAUSE, habit)
 <a id="stacks"></a>

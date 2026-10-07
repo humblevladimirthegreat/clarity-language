@@ -13,9 +13,6 @@ use [skip-cd] for amplify to not deploy.
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -finish lexicon fill (partial)
 -finish proposals-mnemonic
--logical deduction, leftovers (DEDUCED channel shipped, knowing.md#deduction):
-  -argument vocabulary: *valid*, *sound*, *premise*, *conclusion*, *counterexample* as words about arguments (recipe rows or compounds). `ogove` (⚰️ *conclusion*) is an ending, not a logical conclusion.
-  -Claritish: whether DEDUCED joins the how-you-know lesson and cheat sheet.
 -parser can optionally output translation guidance
 -allow non-emoji roots
 

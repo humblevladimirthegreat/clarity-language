@@ -5,7 +5,7 @@
 With a handful of drop-ins, your English now says:
 
 - how sure you are, and what you'll do about it (*could be*)
-- how you know (live, memory, pattern, clues, report, gut) and how strong the evidence is
+- how you know (live, memory, pattern, clues, deduction, report, gut) and how strong the evidence is
 - how far a label reaches (this time, a role, one relationship, a type)
 - which need a thank-you or an apology is about
 - who allowed something, who required it, and whether the person it affects agreed

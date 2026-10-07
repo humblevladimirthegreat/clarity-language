@@ -36,6 +36,7 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 | from memory | `thevol` | `thevom` | `thevor` |
 | from the pattern | `thobal` | `thobam` | `thobar` |
 | worked out from clues | `thunel` | `thunem` | `thuner` |
+| deduced: must follow | `thugul` | `thugum` | `thugur` |
 | reported: told or read | `thewal` | `thewam` | `thewar` |
 | intuition: a gut sense | `thahol` | `thahom` | `thahor` |
 
