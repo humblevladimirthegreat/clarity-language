@@ -1,6 +1,6 @@
 # Proposal: non-emoji Unicode pictographs as extra lexicon seeds
 
-**Status:** PROPOSED  
+**Status:** PARTLY ADOPTED (music, Linear B and object-shaped alchemical seeds are published; Phaistos dropped). Policy: `docs/meta/lexicon.md`, seeds.  
 **Related:** `speed-reading-view.md`, `speed-reading-icons.md`; published seeds in [`data/lexicon-published.csv`](../../data/lexicon-published.csv)  
 **Design authority:** roots stay assigned in the published CSV; grammar is unchanged. This note only covers **optional extra pictograph inventories** (plain-text Unicode, not a third morphology).
 
@@ -45,7 +45,6 @@ These add **new kinds** of picture rather than more faces/food/animals.
 | **Alchemical Symbols** | `U+1F700`–`U+1F77F` | Vessels, operations (calcination, dissolution, distillation, coagulation), metals, planetary-metal signs. Maps to process / “treat as” metaphors emoji usually cover with lab-coat scenes. Best closed Unicode set for this job. | Text presentation; restyles with the symbol font. |
 | **Egyptian Hieroglyphs** | `U+13000`+ | Large *thing* inventory (person, house, water, reed, loaf, boat, poses). Overlaps emoji objects; leftover value is parts/poses emoji never isolated. | Dedicated font; optional specialist band, not a second full lexicon. Bare signs only — not format-control stacking. |
 | **Linear B Ideograms** | `U+10080`–`U+100FA` | Commodity / tally icons (livestock, grain, vessels, cloth, bronze) vs emoji product photos. Font also covers syllabary + Aegean numbers if wanted. | Thinner OS coverage than alchemical. |
-| **Phaistos Disc** | `U+101D0`–`U+101FF` | ~45 Bronze Age pictographs (walker, hide, bee, ship, helmet). Almost no RGI twins. | Weak shared cultural reading; boutique pack. |
 
 ### Also in scope: musical symbols
 
@@ -59,6 +58,7 @@ Noto Music also covers Byzantine Musical Symbols and Ancient Greek Musical Notat
 
 | Set | Note |
 |-----|------|
+| Phaistos Disc (`U+101D0`–`U+101FF`) | Tofu without an installed font even on a desktop that renders the other four sets; the script is undeciphered, so sign names are conventional guesses and weak cues. |
 | Yijing hexagrams / Tai Xuan Jing | Situation glyphs; must learn the system. |
 | Chess Symbols beyond ♔♕, mahjong/domino/cards | Niche or already overlapped by game emoji. |
 | Misc Symbols text-only leftovers | Recycling subtypes, Go stones, dice ⚀–⚅, trigrams — neighbors in `U+2600` are often already emoji in the CSV. |
@@ -70,12 +70,11 @@ Noto Music also covers Byzantine Musical Symbols and Ancient Greek Musical Notat
 
 The site body face is IBM Plex (`web/index.html`). None of the candidate blocks live there. Emoji still come from **color emoji** fonts. These sets are **monochrome outline**.
 
-All five in-scope sets have a first-party **Noto** face (SIL OFL; Fontsource packages). That is the practical web story. Chat apps, Docs, and SMS tofu unless the reader has the face.
+All four in-scope sets have a first-party **Noto** face (SIL OFL; Fontsource packages). That is the practical web story. Chat apps, Docs, and SMS tofu unless the reader has the face.
 
 | Set | Web font | Useful subset size (order of) | Typical OS without a webfont |
 |-----|----------|-------------------------------|------------------------------|
 | Alchemical | [Noto Sans Symbols](https://fonts.google.com/noto/specimen/Noto+Sans+Symbols) | Small slice of that family | Sometimes Segoe UI Symbol / Apple Symbols; often tofu on Linux |
-| Phaistos | [Noto Sans Symbols 2](https://fonts.google.com/noto/specimen/Noto+Sans+Symbols+2) | ~45 glyphs; subset is tiny | Rare on desktop; not in emoji fonts |
 | Linear B ideograms | [Noto Sans Linear B](https://notofonts.github.io/noto-docs/specimen/NotoSansLinearB/) | ~270 glyphs with syllabary + Aegean numbers | Windows *Segoe UI Historic* if present; macOS/iOS weak |
 | Egyptian | [Noto Sans Egyptian Hieroglyphs](https://fonts.google.com/noto/specimen/Noto+Sans+Egyptian+Hieroglyphs) | Full block ~390 KB woff2 | Some Windows Historic SKUs; otherwise tofu |
 | Musical | [Noto Music](https://fonts.google.com/noto/specimen/Noto+Music) | Music subset ~55 KB woff2 | Partial Segoe / Apple Symbols; **not** Bravura/SMuFL |
@@ -84,9 +83,9 @@ Egyptian is the file-size outlier. The others are cheap if subsetted to assigned
 
 ## Mixing (sentence vs word)
 
-**Plain text:** UTF-8 can put alchemical, hieroglyph, Linear B, Phaistos, musical, and emoji in one line. Encoding cost is nil.
+**Plain text:** UTF-8 can put alchemical, hieroglyph, Linear B, musical, and emoji in one line. Encoding cost is nil.
 
-**Drawing on the web:** one `font-family` name with several `@font-face` rules and `unicode-range` (Noto Symbols, Symbols 2, Linear B, Egyptian Hieroglyphs, Music, then color emoji, then Plex). The browser picks a face **per character**. Self-hosting those files is straightforward (~0.5–0.7 MB with full Egyptian; tens of KB if every face is subset to used codepoints).
+**Drawing on the web:** one `font-family` name with several `@font-face` rules and `unicode-range` (Noto Symbols, Linear B, Egyptian Hieroglyphs, Music, then color emoji, then Plex). The browser picks a face **per character**. Self-hosting those files is straightforward (~0.5–0.7 MB with full Egyptian; tens of KB if every face is subset to used codepoints).
 
 What still looks wrong without extra work:
 
@@ -103,7 +102,7 @@ CSS can only approximate (`font-size` per span, `vertical-align`, a tall shared 
 
 ### Concatenated “word” (no spaces)
 
-Still valid UTF-8; fallback still per character. There is **no** ZWJ or ligature that fuses an alchemical sign with a hieroglyph. Combining marks stay in-script (musical stems do not attach to Phaistos; Egyptian insertion does not stack a retort). The result is a ransom strip unless each root is an inline **cell**.
+Still valid UTF-8; fallback still per character. There is **no** ZWJ or ligature that fuses an alchemical sign with a hieroglyph. Combining marks stay in-script (musical stems do not attach to Linear B; Egyptian insertion does not stack a retort). The result is a ransom strip unless each root is an inline **cell**.
 
 ### Inside romanized Agazan
 
@@ -129,7 +128,7 @@ Hard for the reader: tofu in apps that only ship emoji fonts. In-app webfonts do
 1. Keep emoji as the default everyday seed.
 2. Add **alchemical** first if a process/metaphor band is wanted (best complement, small font slice, text presentation).
 3. Add **musical** only as **atomic** signs if a music band is wanted.
-4. Treat **Egyptian / Linear B / Phaistos** as optional specialist seeds, not a second general lexicon.
+4. Treat **Egyptian / Linear B** as optional specialist seeds, not a second general lexicon.
 5. In speed-read UI: **icon cells** + shipped Noto subsets; do not rely on OS fallback; do not concatenate mixed scripts into one visual word.
 6. If `speed-reading-icons.md` ships named pack ids, Unicode can remain an optional `emoji`-style column for plain-text identity; pack ids still win for restyling.
 

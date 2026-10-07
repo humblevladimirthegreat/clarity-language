@@ -21,6 +21,37 @@ A hand-picked spelling bypasses the checks that placement runs. Placement:
 
 `npm run convert-word -- <english>` (no `--lexicon`) only prints a candidate. Use it to explore, not as a source for a hand edit.
 
+## Seeds: concrete senses and pictographs
+
+Every published row needs a **concrete** sense: a thing you can picture, from which the abstract sense is reached. The `emoji` column holds the row's **seed** pictograph, which is optional. A row may have none, but overlays name their host row by its seed, and [`src/closed-roots.ts`](../../src/closed-roots.ts) names rows by seed too. So a row without a seed cannot host an overlay or be a closed root until that tooling keys rows another way.
+
+### What can be a seed
+
+1. **An RGI emoji.** This is the default.
+2. **A non-emoji Unicode pictograph** that pictures the concrete sense and renders in a plain CSV without installing a font. The sets in use are Musical Symbols (`U+1D100`), Linear B Ideograms (`U+10080`) and Alchemical Symbols (`U+1F700`, only the signs shaped like an object: crucible, scepter, caduceus). Egyptian Hieroglyphs also render and may be added, sign by sign, using a sign list for the meaning, since Unicode names them only by code (`R001`).
+
+Never a seed:
+
+- **Phaistos Disc signs.** They show as tofu without an installed font, and the script is undeciphered, so the sign names are guesses.
+- **CJK characters.** Most learners can't read them as pictures, and they suggest a link to Chinese or Japanese.
+- **Abstract marks.** This covers alchemical metal and substance signs, geometric shapes, arrows, math operators, and ♯ ♭ ♮ (which read as `#` and `b`).
+- **Pictographs with words in them.** This covers 🆕, 🆒, 🔙, 🆗, keycaps and the Japanese buttons, since a seed carries no English or other text.
+
+### Which emoji to skip
+
+- **Gendered person and profession variants** (man-X, woman-X). Use the neutral person form.
+- **Visual variants of an existing seed:** an animal's face next to its body (🐴 next to 🐎), near-identical faces (🤣 next to 😂), the globe regions, colored hearts, books and squares, clock times, skin tones, and left- or right-facing versions.
+- One seed per row, one row per seed.
+
+### Labels and senses
+
+- **Concrete label:** the English word people use for the thing, not the Unicode name (*cupid*, not *heart with arrow*; *villain*, not *angry face with horns*). Flag rows follow [flag rows](#flag-rows). `convert-word` needs a CMU pronunciation for the label. Add a missing one to `CMU_OVERRIDES` in [`src/cmu-dict.ts`](../../src/cmu-dict.ts) rather than bending the label.
+- **Abstract and aliases:** never repeat another row's concrete, abstract or `english_aliases` entry. When a new row takes over a sense, move the alias off the old row (🌍 *earth* took *world* and *earth* from 🌐).
+
+### Row order
+
+Rows follow Unicode emoji order (the `emoji-test.txt` / CLDR order), with 👓 pinned first. Non-emoji seeds come after the flags, in code point order. Add a new row at its place, not at the bottom.
+
 ## Flag rows
 
 A row whose emoji is a country or territory flag labels its concrete sense `<place>-flag` (`japan-flag`): **-l** is the flag, **-n** names the place, and the abstract is the demonym ([countries and traditions](../grammar/word-endings.md#countries-traditions)). Placement ignores the `-flag` suffix when it looks up the pronunciation, so a root is spelled from the place name. Use `stripFlagSuffix` from [`src/flag-label.ts`](../../src/flag-label.ts) rather than matching the suffix by hand.
