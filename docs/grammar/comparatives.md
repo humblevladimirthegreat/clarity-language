@@ -57,7 +57,7 @@ English *much more* / *slightly more* adds **how large the gap is**, without giv
 <a id="equative"></a>
 <a id="as-as"></a>
 
-When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then the tie **`zoel`** (rank-join vowels **`oe`**), then the shared adjective (`/ɡ/`). Closed **-l** (`zoel`) is an exact match. Open **-m** (`zoem`) is *about as … as*. (cue: **`ae`** ≈ add + order; they share a rank)
+When English would say *as challenging as*, you are not picking a winner. You are saying two people sit at the **same height** on the quality. Write both names, then the tie **`zoel`** (rank-join vowels **`oe`**), then the shared adjective (`/ɡ/`). Closed **-l** (`zoel`) is an exact match. Open **-m** (`zoem`) is *about as … as*. (cue: **`oe`** ≈ one + order; they share one rank)
 
 > `zazawan zalahen zoel gamadam.`
 >

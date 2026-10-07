@@ -266,6 +266,7 @@ Source: [speech-moves.md](../grammar/speech-moves.md#tone-marks), [intention.md]
 
 Source: [phonology.md](../grammar/phonology.md)
 
+- **closed ([stacked vowels](design-decisions.md#stacked-vowels)):** reversed vowel stacks (`au`, `ou`, `eu`, `oa`, `ea`, `eo`) and same-vowel pairs. Stacks keep the order **u**, **a**, **o**, **e**, and each reversal is a near twin of a standard stack by ear.
 - **open:** unused onset clusters *gw*, *vw*, *xw*, *bl*. No morphology needs them (*bl* should not mean left-aligned *b*).
 
 ## Related meta

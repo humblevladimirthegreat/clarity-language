@@ -123,7 +123,9 @@ A full name is the given name plus a family name on `/ɡ/` + **-n** ([word-endin
 
 ### Stacked vowels
 
-Only the six standard stacks exist (`ao` `ua` `uo` `ae` `oe` `ue`). A reversed or extra pair is too easy to confuse by ear with its standard twin (`eo` vs `oe`). The former reversed-sequence join `eo` was removed for this reason.
+Only the six standard stacks exist (`ua` `uo` `ue` `ao` `ae` `oe`), always in the order **u**, **a**, **o**, **e**. A reversed or extra pair is too easy to confuse by ear with its standard twin (`eo` vs `oe`). The former reversed-sequence join `eo` was removed for this reason.
+
+**e comes last, not o.** In a join stack the last vowel names the move and the first adjusts it, so every rank join ends in **e** (`e` `ae` `ue` `oe`) and every menu join in **o** (`o` `ao` `uo`). Spelling the tie `eo` would make it the one stack whose last vowel names the wrong family, and would break the polar rule (first vowel the family, second what is answered). With **u** as /ʉ/, `oe` vs `ue` is a clear contrast, so the sound gives no reason to move **o** last.
 
 ### Closed-root endings
 
