@@ -460,6 +460,9 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *series* / *round* (a cycle) | `zeredum` | cycle |
 | *operation* (an activity) | `zuzegem` | activity |
 | *operation* (arithmetic) | `zabugam` | calculation |
+| *do* + a noun (*do the dishes*) | `zazawan debedelx vabeval.` | the act itself in the verb slot: washes the plates |
+| *do something* | `zazawan var.` | an unnamed act |
+| *What is Azawan doing?* | `yol zazawan var.` | a [fill-ask](questions.md#fill-ask) for the act |
 | *application* (use) | hook `ael` + tool | `zazawan vowogal ael bahavol.` |
 | *application* (software) | `zabegol` | a package |
 | *campaign* | `zazawan vavadam huwem bavodel.` | struggles during a period |
@@ -482,6 +485,7 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *abortion* | `zebegologovel` | a pregnancy ended |
 | *available* | `goxebexal` | can be the recipient of a gift |
 | *independent* | `golum gevem balahen gul` | does not depend on Alahen |
+| *independent* (of everyone) | `zazawan golum gevem bur gul.` | depends on no other |
 | *straight* (direct) | `gamem` | direction |
 | *hang* | `zazawan dalahen vageladahel.` | holds Alahen from above |
 | *editor* | `zaxebeyolarebel` | doer of the editing |
@@ -498,9 +502,12 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *various* / *diverse* | `gerebom` | diversity |
 | *regular* | `gerobem` | repeating |
 | *suffer* | `zazawan vagahum.` | feels anguish |
+| *undergo* (treatment, a change) | `dazawan vehewol.` | Azawan is the one healed; the doer stays unnamed |
 | *reality* / *fact* | `zenevem` | the fact |
 | *real* / *actual* | `genevem` | factual |
 | *variation* / *distinction* | the [different-from](#different) sentence | says how they differ |
+| *distinct* / *separate* / *apart* | `gezezom` | separated |
+| *distinguish* / *tell apart* | `zazawan dalahen vezezom.` | separates Alahen out |
 | *tendency* | `huam` on the verb | usually, as a rule |
 | *cent* | `zadahul g-100` | a hundredth of a dollar |
 | *middle* / *central* | `zahol gobom borodal` | the heart of the road |
@@ -508,8 +515,10 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *dependent on* | `zazawan golum gevem balahen.` | depends on Alahen |
 | *favorite* | `zalavalogodal` | the one loved first |
 | *count* / *total up* | `zazawan vabugam.` | calculates |
+| *total* / *sum* (the amount) | `zabavem` | the addition |
 | *qualify* | `zazawan valegom.` | is expert enough |
 | *criticize* | `zazawan dalahen vahahum.` | judges Alahen |
+| *critical* (fault-finding) | `gahahum` | judging |
 | *ride* (a bus) | `zazawan vabazul.` | rides the bus |
 | *environment* / *surroundings* | `zahazamogobal` | the world seen as the home around you |
 | *efficiency* | `zavagemozewel` | output for the effort |

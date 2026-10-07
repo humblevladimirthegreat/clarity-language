@@ -278,6 +278,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *always* / *constantly* | `hual` |
 | *usually* / *normally* / *generally* / *regularly* (*as a rule*) | `huam` |
 | *often* / *frequently* | `thobam zel hral` before the verb |
+| *frequent* / *regular* / *usual* (*a regular visitor*, *the usual route*) | put the frequency on the verb: `zazawan vuvudel huam.` (Azawan usually comes) |
 | *sometimes* / *occasionally* | `har` |
 | *never, as far as I know* / *as a rule, never* | `ham` |
 | *never* | `hal` |

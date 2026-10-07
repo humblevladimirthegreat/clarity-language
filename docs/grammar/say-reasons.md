@@ -523,6 +523,33 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 
 **Compare with:** *bad*, *terrible* and the other bare evaluatives have no root; they route to an unmet sake, a rank against a bar, or a specific content root.
 
+### Deserve, earn, entitled {#deserve}
+
+**Needs:** [Prescription](sakes.md#sake-force) · [Requirement](sakes.md#requirement) · [Permission](sakes.md#permission) · [Exchange](relations.md#exchange) · [Adverbs `/h/`](clause.md#adverbs-h)
+
+English *deserve* says something is owed without saying why. Name the ground. It is owed because giving it would be **fair**, because a **rule** gives a right to it, or because it was **earned** in exchange for effort.
+
+| English | Agazan | Reading |
+|---------|--------|---------|
+| *deserves* (it would be fair) | `zalahen damedal vebel bazawan helabam thegathem.` | Alahen ought to give Azawan the medal, fairly |
+| *deserves* / *is entitled to* (a thing, by right) | `zalahen damedal vebel bazawan thumel.` | the rules require Alahen to give it |
+| *is entitled to* (an act) | `zazawan vowogal thegol.` | the rules allow Azawan to walk |
+| *earned* / *merited* (by effort) | `zazawan varahal hehem bamedal.` | ran in exchange for the medal ([earn](say-people-places.md#give-get)) |
+
+> `zalahen damedal vebel bazawan helabam thegathem.`
+>
+> z-Alahen | d-medal | v-present | b-Azawan | h-fairness | th-sake-ought-offered
+>
+> "Azawan deserves the medal." (Alahen ought, in fairness, to give it to Azawan)
+
+> `zazawan varahal hehem bamedal.`
+>
+> z-Azawan | v-run | [h-in-exchange-for | b-medal]
+>
+> "Azawan earned the medal by running."
+
+**Compare with:** *deserving* with no ground has no word, like the bare evaluatives above. *Fair* on its own (*a fair judge*) is `gelabam` ([leftover senses](say-people-places.md#leftover-senses)).
+
 ### Clear, honest, false, general, proud {#trait-words}
 
 **Needs:** [Negation](joins.md#negation-u) · [Universals, domains and generics](joins.md#universals-domains-generics) · [Fault](causation.md#fault) · [Emotion compose](sakes.md#emotion-compose) · [Number as stance](numbers.md#special-number-as-stance)

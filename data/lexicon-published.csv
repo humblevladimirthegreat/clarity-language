@@ -96,7 +96,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💔,heartbreak,ahode,bereavement,heartbreak is the image; bereavement is the unobservable fact of losing someone or something dear,,,
 ❤️‍🔥,passion,abeho,fervor,heart fire shows fervor,,excitement,
 ❤️‍🩹,healing,ehewo,restitution,mending heart marks recovery; restitution is the unobservable making-whole,,compensation; restore,
-❤️,heart,aho,compassion,the heart feels for others; compassion is caring about their suffering,,center,
+❤️,heart,aho,compassion,the heart feels for others; compassion is caring about their suffering,,center; middle; central,
 💋,lips,eleba,,,,,
 💯,hundred,ahaho,perfection,a hundred out of a hundred is a top mark,m.w:completely,perfect; totally; entirely; fully; altogether,
 💢,anger,anage,offense,anger symbol shows rage; offense is the unobservable reading that a wrong was done,,crime,
@@ -169,7 +169,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧑‍⚕️,heal,ehehu,recovery,the healer restores health; recovery is getting well again,,recover; therapy,
 🧑‍🎓,learn,eleha,scholarship,learning is study; scholarship is the unobservable knowledge-practice,,academic; scholar; study,
 🧑‍🏫,teach,edeho,instruction,a teacher explains so others learn,,educate; lesson,predication.md#intermediate-practice
-🧑‍⚖️,judge,ahahu,judgment,a judge weighs the case and rules,,assessment; assess; criticism; evaluation; evaluate,
+🧑‍⚖️,judge,ahahu,judgment,a judge weighs the case and rules,,assessment; assess; criticism; evaluation; evaluate; critical,
 🧑‍🌾,farm,avavo,cultivation,a farm grows crops from tended soil,,farmer; culture; cultural; breed,
 🧑‍🍳,cook,uguga,nourishment,cooking provides nourishment,,,pronouns.md#beginner-practice
 🧑‍🔧,repair,arebe,maintenance,repair is keeping things in service,,maintain; fix,
@@ -872,7 +872,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 📏,ruler,uruha,measurement,ruler measures exact length; measurement is precise tracking,,measure; criteria; dimension,
 🚃,railcar,erega,length,a railcar runs long; length is how far along,,extend; long,
 📐,set-square,ezeze,meter,set square marks exact length; meter is the SI length unit,,,numbers-applied.md#intermediate-practice
-✂️,scissors,ezezo,separation,scissors cut material apart; separation is dividing apart,,tear; distinct; slice,
+✂️,scissors,ezezo,separation,scissors cut material apart; separation is dividing apart,,tear; distinct; slice; apart; distinguish; distinction,
 🗃️,file-box,avaba,archive,file box stores old records; archive is stored past record,,file; database,
 🗄️,filing-cabinet,agobe,,,,shelf,
 🗑️,wastebasket,ewezu,discard,trash bin holds what is thrown; discard is getting rid of,,rid; bin,
@@ -935,7 +935,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧷,safety-pin,azeve,fastening,safety pin holds fabric together; fastening is holding together,,,
 🧹,broom,ubuva,cleanup,broom sweeps dirt away; cleanup is clearing what clutters,,sweep; wipe,
 🧺,basket,abeza,gathering,basket collects items together; gathering is bringing together,,,plurality.md#beginner-practice
-🧻,paper-roll,olu,necessity,toilet paper meets basic need; necessity is what must be had,,necessary; tissue; paper; essential,
+🧻,paper-roll,olu,necessity,toilet paper meets basic need; necessity is what must be had,,necessary; tissue; paper; essential; lack,
 🪣,bucket,abegu,collection,bucket holds gathered liquid; collection is bringing together,,collect,causation.md#beginner-practice
 🧼,soap,ozoba,cleanliness,soap washes away grime; cleanliness is freedom from dirt,,clean; pure,
 🫧,bubbles,abeba,fragility,bubbles pop with a touch; fragility is easily broken,,,
@@ -1006,7 +1006,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ♋,cancer,ageze,,,,,
 ♌,leo,elehe,,,,,
 ♍,virgo,evago,,,,,
-♎,libra,elaba,fairness,the scales weigh evenly; fairness is treating sides evenly,,fair; reasonable,
+♎,libra,elaba,fairness,the scales weigh evenly; fairness is treating sides evenly,,fair; reasonable; deserve,
 ♏,scorpio,ozago,,,,,
 ♐,sagittarius,uzade,,,,,
 ♑,capricorn,agebo,ambition,capricorn climbs the steep peak; ambition rises above the ordinary,,,
@@ -1038,7 +1038,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ♂️,male,emehe,masculine,male symbol marks man gender; masculine is man-associated quality,,,
 ⚧️,transgender,adohe,,,,,
 ✖️,multiply,amadu,negation,multiply sign marks crossing out; negation is saying not so,,,
-➕,plus,abave,addition,plus adds one thing to another; addition is joining more in,,add; positive; sum; gain,
+➕,plus,abave,addition,plus adds one thing to another; addition is joining more in,,add; positive; sum; gain; total,
 ➖,minus,amaho,subtraction,minus takes one thing away; subtraction is taking away from,,negative; reduction,
 ➗,divide,edava,,,,separate; split,
 🟰,equals,egawa,equality,both sides equal; equality is equal standing,,peer; equivalent; equation,
