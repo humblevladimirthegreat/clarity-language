@@ -172,6 +172,41 @@ describe("parse — multipart names (word-endings.md#multipart-names)", () => {
   }
 });
 
+describe("parse — describing a call or reaction (speech-moves.md#describe-turn-word)", () => {
+  const left = (text: string) => parseText(text).utterances[0]!.left;
+
+  it("puts /ɡ/ after a reaction on the reaction", () => {
+    assert.deepEqual(left("yezul gelavam.").interjectionMods?.[0]?.adjs.map((a) => a.word.raw), ["gelavam"]);
+    assert.equal(parseText("yezul gelavam.").utterances[0]!.bodies.length, 0);
+  });
+
+  it("leans a gl- adjective, with its /w/ and hosted /b/, on the call or reaction after it", () => {
+    assert.equal(left("glelavam yezul.").interjectionMods?.[0]?.glAdj?.word.raw, "glelavam");
+    assert.equal(left("glugol bazawan yezul.").interjectionMods?.[0]?.glAdj?.hosted?.bound.raw, "bazawan");
+    const call = left("welavam glalavam yobenx.").vocativeAdjs?.[0]?.glAdj;
+    assert.deepEqual([call?.modifiers.map((m) => m.raw), call?.word.raw], [["welavam"], "glalavam"]);
+  });
+
+  it("grades a reaction with /w/ right before it, and keeps /w/ + hook a discourse hook", () => {
+    assert.deepEqual(left("welavam yezum.").interjectionMods?.[0]?.w?.map((w) => w.raw), ["welavam"]);
+    const hook = left("welavam al zazawan vowogal.");
+    assert.deepEqual([hook.hook?.raw, hook.hookModifiers?.map((w) => w.raw)], ["al", ["welavam"]]);
+  });
+
+  it("leaves a /ɡ/ after an act word or a period in the body", () => {
+    assert.deepEqual(parseText("yalahen yel geyayem.").utterances[0]!.bodies[0]!.clause.units.map((u) => u.kind), ["predicate"]);
+    const [utt] = parseText("yezul. gelavam.").utterances;
+    assert.equal(utt!.left.interjectionMods, undefined);
+    assert.deepEqual(utt!.bodies[0]!.clause.units.map((u) => u.kind), ["predicate"]);
+  });
+
+  it("rejects /w/ on a call and describing words on a number cheer or span", () => {
+    for (const text of ["welavam yalahen.", "welavam yrabarel.", "yrabarel gelavam.", "y<Amen> gelavam."]) {
+      assert.throws(() => parseText(text), /speech-moves\.md#describe-turn-word/, text);
+    }
+  });
+});
+
 describe("parse — joins.md", () => {
   it("parses zezadel zagadal zam.", () => {
     const result = parseText("zezedol zagadul zam.");

@@ -213,9 +213,11 @@ export type LeftEdge = {
   /** Calls: `/y/` names (-n), named spans (`y@<…>`), and `/y/` resumes (-r, read through their antecedent). */
   vocatives: LexWord[];
   /** `/ɡ/` words on each call, parallel to `vocatives` (`yohun galuden`, speech-moves.md#vocative); absent when none. */
-  vocativeAdjs?: VocativeAdjs[];
+  vocativeAdjs?: TurnWordMods[];
   /** Reactions: `/y/` words in -l / -m (numbers included) and unnamed spans (`y<…>`). */
   interjections: LexWord[];
+  /** `gl-`, `/w/`, and `/ɡ/` words on each reaction, parallel to `interjections` (`yezul gelavam`, speech-moves.md#describe-turn-word); absent when none. */
+  interjectionMods?: TurnWordMods[];
   polars: LexWord[];
   hook?: LexWord;
   /** `/w/` immediately before a left-edge hook. */
@@ -253,8 +255,8 @@ export type GPackage = {
   asOf?: { word: LexWord; bound?: LexWord };
 };
 
-/** A `gl-` adjective before a call and the plain ones after it. */
-export type VocativeAdjs = { glAdj?: GPackage; adjs: GPackage[] };
+/** What describes one call or reaction: a `gl-` adjective before it, `/w/` words right before it, and the plain adjectives after it. */
+export type TurnWordMods = { glAdj?: GPackage; w?: LexWord[]; adjs: GPackage[] };
 
 export type NpHead = LexWord;
 

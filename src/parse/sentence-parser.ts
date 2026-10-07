@@ -42,7 +42,7 @@ import type {
   GCoord,
   GItem,
   GPackage,
-  VocativeAdjs,
+  TurnWordMods,
   Hosted,
   HUnit,
   ImpliedForce,
@@ -233,7 +233,7 @@ class AgazanSentenceParser extends CstParser {
   public utterance = this.RULE("utterance", () => {
     this.OR([
       {
-        GATE: () => tokenIs(this.LA(1), Polar, Vocative, Interjection, Force) || this.glCallAhead() || this.discourseHookAhead(),
+        GATE: () => tokenIs(this.LA(1), Polar, Force) || this.turnWordAhead() || this.discourseHookAhead(),
         ALT: () => {
           this.SUBRULE(this.leftEdge);
           this.OPTION(() => {
@@ -251,29 +251,43 @@ class AgazanSentenceParser extends CstParser {
       this.CONSUME(Period);
       // After a sentence end, a turn word or hook opens a new utterance instead (the document loop takes it).
       this.OPTION2({
-        GATE: () => !tokenIs(this.LA(1), Polar, Force, Vocative, Interjection, Hook) && !this.glCallAhead(),
+        GATE: () => !tokenIs(this.LA(1), Polar, Force, Hook) && !this.turnWordAhead(),
         DEF: () => this.SUBRULE3(this.bodyClause, { LABEL: "nextBody" }),
       });
     });
   });
 
-  /** A call (or a greeting bid) and the `/ɡ/` words that describe the one called: `yohun galuden` (speech-moves.md#vocative). */
-  public callWord = this.RULE("callWord", () => {
+  /**
+   * A call (or a greeting bid) or a reaction, with what describes it: a `gl-` adjective before it, `/w/` right before it,
+   * and plain `/ɡ/` words after it (`yohun galuden`, `glelavam yezul`, `welavam yezum`; speech-moves.md#describe-turn-word).
+   */
+  public turnWord = this.RULE("turnWord", () => {
     this.OPTION({
-      GATE: () => this.glCallAhead(),
+      GATE: () => {
+        const la = this.LA(laAfterW(this));
+        return la.tokenType === G && (la.payload as LexWord).gl === true;
+      },
       DEF: () => this.SUBRULE(this.gPackage, { LABEL: "glAdj" }),
     });
-    this.CONSUME(Vocative);
-    this.MANY({
+    this.MANY(() => {
+      this.CONSUME(W);
+    });
+    this.OR([{ ALT: () => this.CONSUME(Vocative) }, { ALT: () => this.CONSUME(Interjection) }]);
+    this.MANY2({
       GATE: () => this.plainAdjAhead(),
       DEF: () => this.SUBRULE2(this.gPackage),
     });
   });
 
-  /** A `gl-` adjective leaning on a call (`glaluden yohun`): family name first. */
-  private glCallAhead(): boolean {
-    const la = this.LA(1);
-    return la.tokenType === G && (la.payload as LexWord).gl === true && this.LA(2).tokenType === Vocative;
+  /** A call or reaction ahead, after any `/w/` and any `gl-` adjective (with its hosted `/b/`) that describe it. */
+  private turnWordAhead(): boolean {
+    let i = laAfterW(this);
+    const la = this.LA(i);
+    if (la.tokenType === G && (la.payload as LexWord).gl === true) {
+      i += 1;
+      if (this.LA(i).tokenType === B) i += 1;
+    }
+    return tokenIs(this.LA(i), Vocative, Interjection);
   }
 
   public leftEdge = this.RULE("leftEdge", () => {
@@ -281,10 +295,9 @@ class AgazanSentenceParser extends CstParser {
       {
         ALT: () => {
           this.AT_LEAST_ONE({
-            GATE: () => tokenIs(this.LA(1), Vocative, Interjection, Polar) || this.glCallAhead() || this.discourseHookAhead(),
+            GATE: () => tokenIs(this.LA(1), Polar) || this.turnWordAhead() || this.discourseHookAhead(),
             DEF: () => this.OR2([
-              { GATE: () => this.LA(1).tokenType === Vocative || this.glCallAhead(), ALT: () => this.SUBRULE(this.callWord) },
-              { ALT: () => this.CONSUME(Interjection) },
+              { GATE: () => this.turnWordAhead(), ALT: () => this.SUBRULE(this.turnWord) },
               { ALT: () => this.CONSUME(Polar) },
               {
                 GATE: () => this.discourseHookAhead(),
@@ -1672,13 +1685,19 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
     return { vocatives: [], interjections: [], polars: [], impliedForce: "yal" };
   }
 
-  const calls = childNodes(cst, "callWord");
+  const words = childNodes(cst, "turnWord");
+  const mods = (word: CstNode): TurnWordMods => {
+    const glCst = childNodes(word, "glAdj")[0];
+    const w = childTokens(word, "W").map(lexWordFromToken);
+    return { ...(glCst ? { glAdj: buildGPackage(glCst) } : {}), ...(w.length > 0 ? { w } : {}), adjs: childNodes(word, "gPackage").map(buildGPackage) };
+  };
+  const described = (list: TurnWordMods[]) => list.some((m) => m.glAdj || m.w || m.adjs.length > 0);
+  const calls = words.filter((word) => childToken(word, "Vocative"));
+  const reactions = words.filter((word) => childToken(word, "Interjection"));
   const vocatives = calls.map((call) => lexWordFromToken(childToken(call, "Vocative")!));
-  const vocativeAdjs = calls.map((call): VocativeAdjs => {
-    const glCst = childNodes(call, "glAdj")[0];
-    return { ...(glCst ? { glAdj: buildGPackage(glCst) } : {}), adjs: childNodes(call, "gPackage").map(buildGPackage) };
-  });
-  const interjections = childTokens(cst, "Interjection").map(lexWordFromToken);
+  const vocativeAdjs = calls.map(mods);
+  const interjections = reactions.map((reaction) => lexWordFromToken(childToken(reaction, "Interjection")!));
+  const interjectionMods = reactions.map(mods);
   const polars = childTokens(cst, "Polar").map(lexWordFromToken);
   const hookTok = childToken(cst, "Hook");
   const forceTok = childToken(cst, "Force");
@@ -1689,8 +1708,9 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
 
   return {
     vocatives,
-    ...(vocativeAdjs.some((v) => v.glAdj || v.adjs.length > 0) ? { vocativeAdjs } : {}),
+    ...(described(vocativeAdjs) ? { vocativeAdjs } : {}),
     interjections,
+    ...(described(interjectionMods) ? { interjectionMods } : {}),
     polars,
     hook: hookTok ? lexWordFromToken(hookTok) : undefined,
     hookModifiers: hookModifiers.length > 0 ? hookModifiers : undefined,

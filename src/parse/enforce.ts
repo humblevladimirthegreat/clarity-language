@@ -762,6 +762,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
       enforceHandDepthChannel(body.clause.units);
     }
     enforceForcePair(left);
+    enforceTurnWordMods(left);
   }
   const places = { seen: new Set<LexWord>(), framed: new Set<LexWord>() };
   visitResult(result, structureVisitor(tables, places));
@@ -782,13 +783,32 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
   }
 }
 
-/** A `gl-` adjective leans on the next noun or call (or a mention marker on its topic span); one with nothing after it is left over (clause.md#left-bound-adjectives). */
+/**
+ * `/w/` grades a reaction, never a call; a number cheer or a `/y/` span takes no describing words at all
+ * (speech-moves.md#describe-turn-word).
+ */
+function enforceTurnWordMods(left: LeftEdge): void {
+  left.vocativeAdjs?.forEach((mods, i) => {
+    if (mods.w) throw new ConstructionError("turnWordModifier", left.vocatives[i]!.raw);
+  });
+  left.interjectionMods?.forEach((mods, i) => {
+    const word = left.interjections[i]!;
+    const described = mods.glAdj || mods.w || mods.adjs.length > 0;
+    if (described && (word.family.kind === "number" || word.family.kind === "writingSpan")) {
+      throw new ConstructionError("turnWordModifier", word.raw);
+    }
+  });
+}
+
+/** A `gl-` adjective leans on the next noun, call, or reaction (or a mention marker on its topic span); one with nothing after it is left over (clause.md#left-bound-adjectives). */
 function enforceGlLeans(result: ParseResult): void {
   const leaning = new Set<LexWord>();
   // The mention marker before a topic span leans on that span (spans.md#mention).
   for (const { bodies } of result.utterances) for (const { topicMarker } of bodies) if (topicMarker) leaning.add(topicMarker);
-  // A `gl-` family name before a call leans on that call (speech-moves.md#vocative).
-  for (const { left } of result.utterances) for (const adjs of left.vocativeAdjs ?? []) if (adjs.glAdj) leaning.add(adjs.glAdj.word);
+  // A `gl-` adjective before a call or reaction leans on it (speech-moves.md#describe-turn-word).
+  for (const { left } of result.utterances) {
+    for (const mods of [...(left.vocativeAdjs ?? []), ...(left.interjectionMods ?? [])]) if (mods.glAdj) leaning.add(mods.glAdj.word);
+  }
   const gl: LexWord[] = [];
   visitResult(result, {
     enter: (node) => {

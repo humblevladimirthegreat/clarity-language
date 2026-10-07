@@ -31,11 +31,12 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "utterance.Period": { anchor: "word-endings.md#greeting", summary: "sentence end" },
   "utterance.nextBody": { anchor: "dependents.md#which-person-or-thing-who-that-which", summary: "next sentence in the same turn" },
 
-  "leftEdge.callWord": { anchor: "speech-moves.md#vocative", summary: "vocative / greeting at the left edge" },
-  "callWord.Vocative": { anchor: "speech-moves.md#vocative", summary: "the call or greeting name" },
-  "callWord.gPackage": { anchor: "speech-moves.md#vocative", summary: "/ɡ/ after a call describes the one called (family name)" },
-  "callWord.glAdj": { anchor: "clause.md#left-bound-adjectives", summary: "gl- family name before a call (family first)" },
-  "leftEdge.Interjection": { anchor: "speech-moves.md#interjections-reactions", summary: "interjection at the left edge" },
+  "leftEdge.turnWord": { anchor: "speech-moves.md#vocative", summary: "call, greeting, or reaction at the left edge" },
+  "turnWord.Vocative": { anchor: "speech-moves.md#vocative", summary: "the call or greeting name" },
+  "turnWord.Interjection": { anchor: "speech-moves.md#interjections-reactions", summary: "interjection at the left edge" },
+  "turnWord.gPackage": { anchor: "speech-moves.md#vocative", summary: "/ɡ/ after a call or reaction describes it (family name, *big surprise*)" },
+  "turnWord.glAdj": { anchor: "clause.md#left-bound-adjectives", summary: "gl- adjective before a call or reaction" },
+  "turnWord.W": { anchor: "speech-moves.md#describe-turn-word", summary: "/w/ degree right before a reaction" },
   "leftEdge.Polar": { anchor: "questions.md#polar-stance", summary: "polar stance turn" },
   "leftEdge.W": { anchor: "hooks.md#hook-w", summary: "/w/ on a left-edge hook" },
   "leftEdge.Hook": { anchor: "hooks.md#discourse-hooks", summary: "discourse hook at the left edge" },
@@ -590,6 +591,10 @@ export const REJECTIONS = {
   hookDiscourseStack: { anchor: "hooks.md#discourse-hooks", summary: "at the front of a sentence only al el ol ul, aol and ael have a reading; for next, by the way, on the contrary use a linker" },
   stackedJoinResume: { anchor: "join-across-roles.md#vp-clause-forms", summary: "stacked join vowels take no -r on /z/ /d/ /b/ /v/ /x/ /ɡ/ (only a / o / e / u do); a stacked -r is the stance fill-ask under /th/" },
   spanSlot: { anchor: "spans.md#pos", summary: "an aside goes only under /th/; a cite, mention or opaque span fills a content slot (/z/ /d/ /b/ /v/ /ɡ/ /h/) or sets the topic under /x/; no span fills /w/" },
+  turnWordModifier: {
+    anchor: "speech-moves.md#describe-turn-word",
+    summary: "/w/ goes before a reaction, not a call; a number cheer or a span under /y/ takes no gl-, /ɡ/, or /w/",
+  },
   ySpanType: { anchor: "spans.md#y-spans", summary: "a span under /y/ is opaque <…> or a cite […]; a mention or an aside is not a call or a reaction" },
   barKind: {
     anchor: "comparatives.md#bars",

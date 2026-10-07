@@ -23,6 +23,7 @@ import type {
   NpPackage,
   ParseResult,
   ScaleShared,
+  TurnWordMods,
   Unit,
   Utterance,
   VpCoord,
@@ -145,13 +146,14 @@ export function visitUtterance(utterance: Utterance, index: number, v: Visitor):
 
 function visitLeftEdge(left: LeftEdge, v: Visitor): void {
   const w = (words: LexWord[] | LexWord | undefined, slot: WordSlot) => words && [words].flat().forEach((x) => v.word?.(x, slot));
-  left.vocatives.forEach((call, i) => {
-    const adjs = left.vocativeAdjs?.[i];
-    if (adjs?.glAdj) visitGPackage(adjs.glAdj, v);
-    v.word?.(call, "vocative");
-    for (const adj of adjs?.adjs ?? []) visitGPackage(adj, v);
-  });
-  w(left.interjections, "interjection");
+  const turnWord = (word: LexWord, mods: TurnWordMods | undefined, slot: WordSlot) => {
+    if (mods?.glAdj) visitGPackage(mods.glAdj, v);
+    w(mods?.w, "modifier");
+    v.word?.(word, slot);
+    for (const adj of mods?.adjs ?? []) visitGPackage(adj, v);
+  };
+  left.vocatives.forEach((call, i) => turnWord(call, left.vocativeAdjs?.[i], "vocative"));
+  left.interjections.forEach((reaction, i) => turnWord(reaction, left.interjectionMods?.[i], "interjection"));
   w(left.polars, "polar");
   w(left.hook, "hook");
   w(left.hookModifiers, "hookModifier");

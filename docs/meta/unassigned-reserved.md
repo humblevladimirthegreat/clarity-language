@@ -216,11 +216,15 @@ Source: [dependents.md](../grammar/dependents.md#sentence-linkers)
 
 ## Turn words (`/y/`)
 
-Source: [speech-moves.md](../grammar/speech-moves.md#speech-act), [questions.md](../grammar/questions.md#polar-endings)
+Source: [speech-moves.md](../grammar/speech-moves.md#speech-act), [describing a call or reaction](../grammar/speech-moves.md#describe-turn-word), [questions.md](../grammar/questions.md#polar-endings)
 
 - **closed (closed-root endings):** act and polar series with **-n** (`yan` / `yon` / `yen` / `yun`, `yaen` / …). On `/y/`, **-n** calls someone.
 - **closed (closed-root endings):** a fill-ask blank for the act itself (*are you asking or telling?*). `yar` / `yor` / `yer` / `yur` are the [for-now acts](../grammar/speech-moves.md#act-r).
 - **closed (D-31):** a polar word before an act word, or two polar words in a row; a topic-only question.
+- **closed (D-43):** a `/b/` hosted by a call or reaction; `yuhohul bazawan` is a reaction and then a body with a recipient.
+- **open:** `/w/` on a call (`welavam yalahen`). The person called is not more or less called. Parser: `turnWordModifier`.
+- **open:** `/w/` on an act word or a polar word (`welavam yel`). Firm / soft already grades the act, and the polar stance has its own strengths. The parser rejects them.
+- **open:** `gl-`, `/ɡ/`, or `/w/` on a number cheer or a `/y/` span (`yrabarel gelavam`, `y<…> gelavam`). A number cheer already carries its own size, and a span's inside is not graded. Parser: `turnWordModifier`.
 - **open:** a mention or an aside under `/y/` (`ySpanType`). A mention talks about a word and an aside comments on the sentence, so neither calls nor reacts.
 
 ## Spans

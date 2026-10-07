@@ -401,6 +401,8 @@ Beginner used **`welavam`** *very* before an adjective. The same `/w/` slot take
 >
 > "A fairly blue dog walks."
 
+The same words also go right before a reaction, to say how strongly it holds ([describing a reaction](speech-moves.md#describe-turn-word)).
+
 Two stock words go in `/h/` and describe the verb itself. Use **`habedem`** *kind of* / *sort of* to hedge the action, and **`herobem`** for *again*.
 
 <!-- cheat-sheet: word-shape-clause -->

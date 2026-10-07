@@ -52,6 +52,16 @@ An **interjection** is a short reaction or exclamation that stands on its own. W
 
 The ending tells a reaction from a call: **-n** calls someone (`yalahen`, `yagavon`), and **-l** / **-m** give the reaction itself. So `yagavol` is *Guard!* shouted as an alarm, and `yagavon` calls the guard over.
 
+A `/ɡ/` word right after a reaction describes it, as one after a call describes the person called.
+
+> `yezul gelavam.`
+>
+> [y-surprise | g-big]
+>
+> "Big surprise!"
+
+**Compare with:** to react and then say that something is big, end the reaction with a period and start a new sentence.
+
 ### Speech act: statement, question, command
 <a id="speech-act-beginner"></a>
 
@@ -321,6 +331,34 @@ When a missed *don't* would be dangerous, say **`yul`** twice among the opening 
 > y-prohibition | y-prohibition | v-sneak
 >
 > "Don't sneak. I mean it."
+
+### Describing a call or reaction {#describe-turn-word}
+
+A call or a reaction can also take an adjective **before** it, with [**`gl-`**](clause.md#left-bound-adjectives), the way a noun does. Its `/w/` and its `/b/` come along as usual.
+
+> `glalavam yalahen.`
+>
+> [gl-cherished | y-Alahen]
+>
+> "Dear Alahen!"
+
+> `glegevom yebeval.`
+>
+> [gl-delight | y-birthday]
+>
+> "Happy birthday!"
+
+A reaction can also take a [degree word](clause.md#degree-w) right before it, to say how strongly it holds. A call takes none: the person you call is not more or less called.
+
+> `welavam yezum.`
+>
+> [w-very | y-amazement]
+>
+> "Truly amazing!"
+
+The degree word grades the reaction itself. A [tone mark](#tone-marks) is how you sound saying it, so the two can go together.
+
+To say who or what you react to (*hooray for Azawan*), add a [hook](hooks.md#extra-noun) and `/b/` after the reaction: `yuhohul el bazawan.` A bare `/b/` there would start the body as the person who receives.
 
 ### Tone marks {#tone-marks}
 

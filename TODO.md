@@ -2,7 +2,7 @@ https://main.d2xds94zsgwptg.amplifyapp.com
 
 redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds94zsgwptg/redirects
 
-my name: obogan (innovation)
+my name: obogan (innovation) gazagan (clarity)
 
 use [skip-cd] for amplify to not deploy. 
 
@@ -17,14 +17,12 @@ use [skip-cd] for amplify to not deploy.
 -finish proposals-mnemonic
 -review logical deduction
 -parser can optionally output translation guidance
--run full lexicon retie
 -allow non-emoji roots
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
 -review published-lexicon for psychology - are there any abstract roots that are prone to cognitive biases that would benefit from special attention such as carefully choosing the concrete
 -mass lexical compound adding
--vocab bank and exercise revamp: introduce new vocabulary, follow standards for language teaching
 
 Dictionary entries (open lexicon / concepts, not the closed list above):
 -habits: triggered

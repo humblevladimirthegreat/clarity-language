@@ -261,10 +261,11 @@ function leftEdgeNodes(cur: Cursor, left: LeftEdge): GlossNode[] {
   const out: GlossNode[] = [];
   const edge = [...left.vocatives, ...left.interjections, ...left.polars].sort((a, b) => (a.at ?? 0) - (b.at ?? 0));
   for (const word of edge) {
-    // A call groups with its `/ɡ/` words (`[gl-Aluden | y-Ohu]`, `[y-Ohu | g-Aluden]`).
-    const adjs = left.vocativeAdjs?.[left.vocatives.indexOf(word)];
-    const gl = adjs?.glAdj ? gPackage(cur, adjs.glAdj) : undefined;
-    const n = group([gl, cur.take(word), ...(adjs?.adjs ?? []).map((adj) => gPackage(cur, adj))]);
+    // A call or reaction groups with what describes it (`[gl-Aluden | y-Ohu]`, `[y-Ohu | g-Aluden]`, `[w-very | y-amazement]`).
+    const call = left.vocatives.indexOf(word);
+    const mods = call >= 0 ? left.vocativeAdjs?.[call] : left.interjectionMods?.[left.interjections.indexOf(word)];
+    const gl = mods?.glAdj ? gPackage(cur, mods.glAdj) : undefined;
+    const n = group([gl, ...(mods?.w ?? []).map((m) => cur.take(m)), cur.take(word), ...(mods?.adjs ?? []).map((adj) => gPackage(cur, adj))]);
     if (n) out.push(n);
   }
   const hook = group([...(left.hookModifiers ?? []).map((m) => cur.take(m)), cur.take(left.hook)]);
