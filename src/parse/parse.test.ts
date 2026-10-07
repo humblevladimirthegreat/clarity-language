@@ -263,12 +263,23 @@ describe("parse — stand-in dependents", () => {
     assert.equal(clause.dependent!.clause.units.length, 2);
   });
 
-  it("parses an evidence clause: an inferred or pattern channel hosts barl", () => {
-    for (const text of ["zoyel vehahel thunem barl zazawan vowogal.", "zoyel vehahel thobal barl zazawan vowogal."]) {
+  it("parses an evidence clause: an inferred, pattern or deduced channel hosts barl", () => {
+    for (const text of [
+      "zoyel vehahel thunem barl zazawan vowogal.",
+      "zoyel vehahel thobal barl zazawan vowogal.",
+      "zoyel vehahel thugum barl zazawan vowogal.",
+    ]) {
       const clause = parseText(text).utterances[0]!.bodies[0]!.clause;
       assert.equal(clause.dependent?.orodo.raw, "barl", text);
       assert.equal(clause.dependent!.clause.units.length, 2, text);
     }
+  });
+
+  it("parses deduction: premises joined in the grounds, or under a pole (knowing.md#deduction)", () => {
+    const asserted = parseText("zazawan vowogal thugul barl zalahen vezebal xam zalahen varahal.").utterances[0]!.bodies[0]!.clause;
+    assert.equal(asserted.dependent?.orodo.raw, "barl");
+    const valid = parseText("zazawan vowogal thugum thoyem barl zalahen vezebal.").utterances[0]!.bodies[0]!.clause;
+    assert.equal(valid.dependent?.orodo.raw, "barl");
   });
 
   it("parses like (humum) hosting barl: the model of the simile is an event", () => {
@@ -278,7 +289,7 @@ describe("parse — stand-in dependents", () => {
   });
 
   it("keeps clause joins after a stand-in inside its dependent", () => {
-    const clause = parseText("zazawan vubugam dorl zalahen vowogal xol zahaben varahal.").utterances[0]!.bodies[0]!.clause;
+    const clause = parseText("zazawan vugum dorl zalahen vowogal xol zahaben varahal.").utterances[0]!.bodies[0]!.clause;
     assert.equal(clause.units.some((unit) => unit.kind === "clauseCoord"), false);
     const dep = clause.dependent;
     assert.equal(dep?.orodo.raw, "dorl");
@@ -644,12 +655,12 @@ describe("parse — comparatives.md bars", () => {
     for (const [text, raw] of [
       ["zazawan thobam zel gezebul.", "thobam"],
       ["zazawan thamam zel bral vevahal.", "thamam"],
-      ["zubugal thohum balahen zuel garagam.", "thohum"],
+      ["zugul thohum balahen zuel garagam.", "thohum"],
       ["zedehel thegatham zoel gral.", "thegatham"],
-      ["zubugal thodom zuem garagam.", "thodom"],
+      ["zugul thodom zuem garagam.", "thodom"],
       ["zalahen thezexal zoel hadehum vowogal.", "thezexal"],
       ["zahazal thumel zoel gabezem.", "thumel"],
-      ["zubugal thevegem zel gagazam.", "thevegem"],
+      ["zugul thevegem zel gagazam.", "thevegem"],
       ["zazawan thahomalahen zel gezebul.", "thahomalahen"],
     ] as const) {
       assert.equal(barOf(text)?.word.raw, raw, text);
@@ -660,7 +671,7 @@ describe("parse — comparatives.md bars", () => {
   });
 
   it("keeps a bar's hosted /b/ and dated offset inside the fence", () => {
-    assert.equal(barOf("zubugal thewam balahen zuel gagazam.")?.hosted?.bound.raw, "balahen");
+    assert.equal(barOf("zugul thewam balahen zuel gagazam.")?.hosted?.bound.raw, "balahen");
     const dated = barOf("zazawan thevom bazazam gruwol zel gezebul.");
     assert.equal(dated?.hosted?.bound.raw, "bazazam");
     assert.equal(dated?.hosted?.amount?.raw, "gruwol");
@@ -691,7 +702,7 @@ describe("parse — comparatives.md bars", () => {
   });
 
   it("keeps the ranked item's hook + /b/ before its bar inside the fence", () => {
-    const part = fence("zubugal om bamun thamam zel garagam.")!;
+    const part = fence("zugul om bamun thamam zel garagam.")!;
     assert.deepEqual(part.items.map((i) => i.kind), ["package", "bar"]);
     assert.equal(part.items[0]!.kind === "package" && part.items[0]!.package.adjs[0]?.hosted?.bound.raw, "bamun");
   });

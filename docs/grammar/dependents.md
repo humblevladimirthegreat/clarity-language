@@ -394,12 +394,14 @@ Beginner already used *therefore*. It is one of six **sentence linkers**: `/x/` 
 
 *therefore* moves forward from the prior claim; *however* marks contrast; *meanwhile* puts the next claim at the same time; *next* is the next frame; *but* blocks the expected continuation (harder push-back than *however*). Those same roots keep their ordinary content readings under other role letters.
 
+A linker reaches back to **one** sentence: the one that ends at the period before it. To link back to several claims at once, join them into that sentence with a [clause join](joins.md#clause-joins).
+
 Three linkers also take **-l** for a **firm** link: the link holds with no room for doubt, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). (cue: **-l** ≈ lasting: the link holds)
 
 <!-- cheat-sheet: linking-clauses -->
 | Agazan | Use | English |
 |--------|-----|---------|
-| **`xodul`** | the next claim follows necessarily | *it follows that* / *necessarily, then* |
+| **`xodul`** | the next claim must hold if the last sentence does: a deduction | *it follows that* / *necessarily, then* |
 | **`xezol`** | the contrast stands whatever the last claim said | *nevertheless* / *even so* |
 | **`xagezal`** | the last claim is blocked outright; the next claim replaces it | *on the contrary* |
 

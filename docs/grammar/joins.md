@@ -800,7 +800,7 @@ With **`zul`** the two readings say the same thing: `zul godogal gabagol.` is bo
 
 When a joined subject shares one thing marked [**`SAME`**](predication.md#identity) with no `/b/`, the members are compared with each other: they all have *the same one*.
 
-> `zazawan zalahen zal dubugal gugol varadal.`
+> `zazawan zalahen zal dugul gugol varadal.`
 >
 > [z-Azawan | z-Alahen | z-and] | [d-book | g-SAME] | v-write
 >

@@ -41,6 +41,12 @@ uner,th,🕵️,evidential,CLUES.weak,clues evidential with weak evidence (a wea
 unem,w,🕵️,evidential,CLUES,clues evidential (reasoned from clues about this case),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
 unel,w,🕵️,evidential,CLUES.strong,clues evidential with strong evidence (strong clues),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
 uner,w,🕵️,evidential,CLUES.weak,clues evidential with weak evidence (a weak clue),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
+ugum,th,📖,evidential,DEDUCED,deduced evidential (follows from the premises),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#evidentiality
+ugul,th,📖,evidential,DEDUCED.strong,deduced evidential with strong evidence (every step could be shown),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#evidence-strength
+ugur,th,📖,evidential,DEDUCED.weak,deduced evidential with weak evidence (seems to follow; steps unchecked),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#evidence-strength
+ugum,w,📖,evidential,DEDUCED,deduced evidential (follows from the premises),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#mood-on-one-adjective
+ugul,w,📖,evidential,DEDUCED.strong,deduced evidential with strong evidence (every step could be shown),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#mood-on-one-adjective
+ugur,w,📖,evidential,DEDUCED.weak,deduced evidential with weak evidence (seems to follow; steps unchecked),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#mood-on-one-adjective
 ewam,th,👂,evidential,REPORTED,reported evidential (hearsay / said or written by someone else / reportative),ear enables listening; taking in what others pass on under /th/ is the reported channel,knowing.md#evidentiality
 ewal,th,👂,evidential,REPORTED.strong,reported evidential with strong evidence (reliable source),ear enables listening; taking in what others pass on under /th/ is the reported channel,knowing.md#evidence-strength
 ewar,th,👂,evidential,REPORTED.weak,reported evidential with weak evidence (rumor),ear enables listening; taking in what others pass on under /th/ is the reported channel,knowing.md#evidence-strength

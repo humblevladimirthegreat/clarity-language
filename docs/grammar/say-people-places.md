@@ -151,26 +151,26 @@ When the thing only comes **from** B (*the sound of the drums*), use origin **`g
 
 A long official title (bureau, act, titled group) may have a **handle**: one published root plus **-n**, used like any proper name, including on first mention. The long form is the same office spelled as a hyphenated name (`ROOT x ROOT` … + **-n**).
 
-> `zubugan vezebel.`
+> `zugun vezebel.`
 >
-> z-Ubugan | v-tell
+> z-Ugun | v-tell
 >
-> "Ubugan announces." (office handle on first mention)
+> "Ugun announces." (office handle on first mention)
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| `zubugan` | handle: one root + **-n** | default talk, including first mention |
-| `zubugaxalahen` | long title: hyphenated name (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
+| `zugun` | handle: one root + **-n** | default talk, including first mention |
+| `zuguxalahen` | long title: hyphenated name (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
 
-> `zubugaxalahen.`
+> `zuguxalahen.`
 >
-> z-Ubuga-x-Alahen
+> z-Ugu-x-Alahen
 >
 > "Book-Courage" (full title of that office)
 
-Resume the handle like any name: its whole stem + **-r** (`zubugar`).
+Resume the handle like any name: its whole stem + **-r** (`zugur`).
 
-**Compare with:** a [mention](spans.md#mention) is the **word** (<code>glelel z&lt;ubuga&gt;</code> = *the word “abogo”*). A foreign letter-name is a loan or opaque span (<code>z@&lt;FBI&gt;</code>).
+**Compare with:** a [mention](spans.md#mention) is the **word** (<code>glelel z&lt;ugu&gt;</code> = *the word “ugu”*). A foreign letter-name is a loan or opaque span (<code>z@&lt;FBI&gt;</code>).
 
 ### Who does it: *student*, *singer*, *manager* {#agent-nouns}
 
@@ -189,7 +189,7 @@ English names a person by what they usually do (*a singer*, *a manager*). Agazan
 | `zaxelehathel` | *student* / *pupil* | `elehal` *learn* |
 | `zaxedehothel` | *teacher* / *professor* / *coach* | `edehol` *teach* |
 | `zaxarezethel` | *researcher* | `arezel` *research* |
-| `zaxubugalahahathel` | *reader* | `ubugalahahal` *read* |
+| `zaxugulahahathel` | *reader* | `ugulahahal` *read* |
 | `zaxagahalanabathel` | *driver* | `agahalanabal` *drive* |
 | `zaxumuyulezebethel` | *poet* | `umuyulezebel` *poetry* |
 | `zaxamoluzethel` | *investor* | `amoluzel` *investment* |
@@ -281,13 +281,13 @@ For *uncle* and *grandfather*, use `gemehel` for `geveval`.
 
 English *buy* and *sell* are two views of one swap. Agazan has one trading verb, `vehem`, and **`hehem`** names what is given in return. Put what changes hands in `/d/` and what it is swapped for in `/b/`. Money in `/d/` and the goods in `/b/` is *buy*; the goods in `/d/` and money in `/b/` is *sell*.
 
-> `zazawan damol hehem bubugal vehem.`
+> `zazawan damol hehem bugul vehem.`
 >
 > z-Azawan | d-money | [h-in-exchange-for | b-book] | v-convertibility
 >
 > "Azawan buys a book."
 
-> `zazawan dubugal hehem bamol vehem.`
+> `zazawan dugul hehem bamol vehem.`
 >
 > z-Azawan | d-book | [h-in-exchange-for | b-money] | v-convertibility
 >
@@ -303,20 +303,20 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 
 | English | Agazan | Reading |
 |---------|--------|---------|
-| *give* / *provide* / *contribute* | `zazawan dubugal vebel balahen.` | the book goes to Alahen |
+| *give* / *provide* / *contribute* | `zazawan dugul vebel balahen.` | the book goes to Alahen |
 | *get* / *receive* / *acquire* (a thing handed over) | the same sentence | the receiver is the `/b/` |
 | *giver* / *supplier* / *provider* | `zaxebel` | doer of the giving |
 | *receiver* | `zoxebel` | the one given to |
-| *lend* / *borrow* | `zazawan dubugal vagawel balahen.` | the book is lent to Alahen |
+| *lend* / *borrow* | `zazawan dugul vagawel balahen.` | the book is lent to Alahen |
 | *borrower* | `zoxagawel` | the one lent to |
-| *distribute* | `zazawan dubugal vebel balahen bahaben bal.` | the book goes to each of them |
+| *distribute* | `zazawan dugul vebel balahen bahaben bal.` | the book goes to each of them |
 | *earn* | `zazawan varadal hehem bamol.` | write in exchange for money |
 | *owe* | `zazawan gamom balahen.` | in debt to Alahen |
-| *get* (go after something) | `zazawan vowogal el bubugal.` | walk for the book |
+| *get* (go after something) | `zazawan vowogal el bugul.` | walk for the book |
 | *contribute money* | `zazawan damol vebel el bavahal.` | give money for a family's sake |
 | *contribute to* (be part of the cause) | `…therar barl …` | one share among several causes |
 
-> `zazawan dubugal vebel balahen.`
+> `zazawan dugul vebel balahen.`
 >
 > z-Azawan | d-book | v-present | b-Alahen
 >
@@ -334,7 +334,7 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 >
 > "Azawan owes Alahen."
 
-> `zazawan dubugal vebel balahen bahaben bal.`
+> `zazawan dugul vebel balahen bahaben bal.`
 >
 > z-Azawan | d-book | v-present | [b-Alahen | b-Ahaben | b-and]
 >
@@ -352,16 +352,16 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 |---------|--------|---------|
 | *join* / *associate with* (come along) | `zazawan vowogal han balahen.` | walks in company with Alahen |
 | *join* / *admit* (take into a set) | `zazawan dagubem vaon.` | admits the object; more may follow |
-| *belong to* | `zubugal em balahen.` | in Alahen's use |
+| *belong to* | `zugul em balahen.` | in Alahen's use |
 | *consist of* / *made of* | `zahazal guwum buwul.` | material |
 | *comprise* / *constitute* / *is part of* | `zahavol gobom bahazal.` | a piece of the whole |
 | *match* / *correspond to* / *fit* (alike) | `zahazal humum bodogal.` | like, as a simile |
-| *replace* / *substitute* | `zazawan dubugal hehem bahavol vehem.` | swaps one for the other |
+| *replace* / *substitute* | `zazawan dugul hehem bahavol vehem.` | swaps one for the other |
 | *represent* (act for) | `zazawan hadem balahen vezebel.` | tells on behalf of Alahen |
-| *prefer* | `zazawan dubugal ven.` | ranks the object first |
+| *prefer* | `zazawan dugul ven.` | ranks the object first |
 | *would rather X than Y* / *prefer doing X to Y* | `zazawan vowogal varahal vel.` | walking outranks running |
 | *lack* / *miss* (a need) | `zazawan volum.` | needs |
-| *fill* / *complete* | `zazawan dubugal vahahom.` | makes complete |
+| *fill* / *complete* | `zazawan dugul vahahom.` | makes complete |
 | *recognize* / *acknowledge* | `zazawan dalahen vewevam.` | acknowledges Alahen |
 | *distinguish* / *classify* | `zazawan dalahen valebam.` | sorts Alahen by kind |
 | *cope* / *survive* | `zazawan vagogom.` | is resilient |
@@ -380,7 +380,7 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 >
 > "Azawan walks with Alahen."
 
-> `zazawan dubugal ven.`
+> `zazawan dugul ven.`
 >
 > z-Azawan | d-book | v-prioritizes
 >
@@ -410,8 +410,8 @@ English makes nouns for a part, a kind, a role, and a manner. Agazan has no sepa
 | *sex* (the act) | `zelebum` | sexuality |
 | *patient* (being treated) | `zuxehewol` | the one who undergoes healing |
 | *scene* (where it happens) | `zexowogal` | the scene of the walk |
-| *function* (purpose) | `zubugal gulothom.` | the book's purpose is competence |
-| *size* (how big) | `zubugal zahavol zoel gelavam.` | same size as the hammer |
+| *function* (purpose) | `zugul gulothom.` | the book's purpose is competence |
+| *size* (how big) | `zugul zahavol zoel gelavam.` | same size as the hammer |
 | *way* / *method* / *style* / *mode* | the manner adverb on `/h/` | `zazawan vowogal hadehum.` |
 | *instance* / *for example* | `aol …` opens the sentence | one case of what you said |
 | *everybody* | `zual` | every member |
@@ -446,11 +446,11 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *case* (*in that case*) | `thoyem barl` | if |
 | *case* (lawsuit) | `zahahulehegol` | a problem put before a judge |
 | *case* (container) | `zabegol` | a package |
-| *deal* / *bargain* (a swap) | `zazawan dubugal hehem bamol vehem.` | trades a book for money |
+| *deal* / *bargain* (a swap) | `zazawan dugul hehem bamol vehem.` | trades a book for money |
 | *deal* (*a great deal*) | `thobam zel gral` | more than the usual amount |
-| *bid* / *offer* (a price) | `zazawan damol vebel hehem bubugal.` | offers money in exchange for the book |
+| *bid* / *offer* (a price) | `zazawan damol vebel hehem bugul.` | offers money in exchange for the book |
 | *contract* (agreement) | `thuxegol` on the clause | CONSENT, binding |
-| *figure out* / *find out* | `zazawan dubugal vamagal.` | finds the object |
+| *figure out* / *find out* | `zazawan dugul vamagal.` | finds the object |
 | *figure* (shape) | `zevevol` | a frame |
 | *object* (a thing) | `zar` | an unnamed thing |
 | *object* (a goal) | `zogol` | a goal |
@@ -478,7 +478,7 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *user* | `zaxahadal` | doer with the hand |
 | *sentence* (a punishment) / *punishment* / *penalty* | `zabazemenehel` | harm from authority |
 | *punish* | `zazawan dabazemenehel vebel balahen.` | gives Alahen a penalty ([give](#give-get)) |
-| *set* (a group of things) | `zubugalx` | books as a group ([group words](say-amounts.md#group-words)) |
+| *set* (a group of things) | `zugulx` | books as a group ([group words](say-amounts.md#group-words)) |
 | *abortion* | `zebegologovel` | a pregnancy ended |
 | *available* | `goxebexal` | can be the recipient of a gift |
 | *independent* | `golum gevem balahen gul` | does not depend on Alahen |
@@ -516,18 +516,18 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *holder* (a thing that holds) | `zahadalahabal` | what holds in the hand |
 | *holder* (a person who bears) | `zaxahabal` | doer of the bearing |
 | *intervention* | `zazawan vuvudel hazam balahen bahaben bal.` | comes between the two |
-| *reduce* | `zazawan dubugal v-3.` | decreases the object by three |
-| *reduce* (cut down) | `zazawan dubugal vagezul.` | cuts it |
+| *reduce* | `zazawan dugul v-3.` | decreases the object by three |
+| *reduce* (cut down) | `zazawan dugul vagezul.` | cuts it |
 | *rough* (approximate) | `gram` | about five |
 | *rough* (texture) | `gabogul gul` | not smooth |
 
-> `zazawan damol vebel hehem bubugal.`
+> `zazawan damol vebel hehem bugul.`
 >
 > z-Azawan | d-money | v-present | [h-in-exchange-for | b-book]
 >
 > "Azawan bids money for the book."
 
-> `zazawan dubugal vagezul.`
+> `zazawan dugul vagezul.`
 >
 > z-Azawan | d-book | v-axe
 >
@@ -556,10 +556,10 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 | *tends to* / *often lies* | `zazawan valahal huam.` | usually lies |
 | *a lying type* | `zazawan valahathul.` | the type-claim |
 | *introduction* (the act) | `zalahen velehal dazawan thegem bahaben.` | Alahen learns Azawan, Ahaben makes it happen |
-| *introduction* (opening of a text) | `zogodal gobom bubugal` | the first part of a book |
+| *introduction* (opening of a text) | `zogodal gobom bugul` | the first part of a book |
 | *unemployment* | `zazawan zamolameval gul.` | not in paid production |
 
-> `zalahen dubugal vebel bazawan. zazawan deber vahahal.`
+> `zalahen dugul vebel bazawan. zazawan deber vahahal.`
 >
 > z-Alahen | d-book | v-present | b-Azawan . z-Azawan | d-←present | v-see
 >
@@ -595,8 +595,8 @@ Some English words have a second or third sense that a published root already ca
 |---------|--------|---------|
 | *just* / *fair* (even-handed) | `zazawan gelabam.` | fair |
 | *last* (final) | `zazawan gogovem.` | final |
-| *apply* / *application* (a request) | `zazawan dubugal vebewom.` | pleads for the object |
-| *keep* / *retain* (an object) | `zazawan dubugal verem.` | preserves the book |
+| *apply* / *application* (a request) | `zazawan dugul vebewom.` | pleads for the object |
+| *keep* / *retain* (an object) | `zazawan dugul verem.` | preserves the book |
 | *experience* (skill) | `zulom` | readiness |
 | *side* (position, location) | `zehahem` | a position |
 | *address* (a location) | `zehahem` | where it is |
@@ -612,7 +612,7 @@ Some English words have a second or third sense that a published root already ca
 | *set off* / *start* | `vabedom` | [starts](say-reasons.md#phase-verbs) |
 | *turn off* / *stop* | `vazadal` | [stops](say-reasons.md#phase-verbs) |
 
-> `zazawan dubugal verem.`
+> `zazawan dugul verem.`
 >
 > z-Azawan | d-book | v-preservation
 >

@@ -205,6 +205,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `thudul` | attempt mood committed (keep going until it works or is ruled out) | [Try](../intention.md#try) | I |
 | `thudum` | attempt mood (commitment unstated) | [Try](../intention.md#try) | I |
 | `thudur` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](../intention.md#try) | I |
+| `thugul` | deduced evidential with strong evidence (every step could be shown) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `thugum` | deduced evidential (follows from the premises) | [Evidentiality](../knowing.md#evidentiality) | I |
+| `thugur` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thuhum` | AS-OF stance pole (asserted whose-now / dated ledger) | [Stance as-of](../relations.md#stance-as-of) | A |
 | `thuhur` | AS-OF stance pole (asserted whose-now / dated ledger) resume | [Stance as-of](../relations.md#stance-as-of) | A |
 | `thumel` | required by a rule policy or law (no one in particular demands it) | [Requirement (thumel / thumem / thumer)](../sakes.md#requirement) | I |
@@ -280,6 +283,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `wovul` | may mood find-out hold (I'll / let's find out) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wovum` | may mood (could be; default) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wovur` | may mood who-knows hold (leave unsettled; may never know) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wugul` | deduced evidential with strong evidence (every step could be shown) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wugum` | deduced evidential (follows from the premises) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wugur` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wuhum` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
 | `wuhur` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `wunel` | clues evidential with strong evidence (strong clues) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
@@ -391,7 +397,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `aradalarebel` | *edit* |  |
 | `aradalezehel` | *poem* |  |
 | `aradalovul` | *essay* |  |
-| `aradalubugal` | *writing-book* |  |
+| `aradalugul` | *writing-book* |  |
 | `aragalavahel` | *coal* | `aragalavahem` *carbon* |
 | `avadalazewel` | *army* |  |
 | `avagemozewel` | *efficiency* |  |
@@ -438,7 +444,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `erehelogodul` | *raincoat* |  |
 | `erevolagul` | *empire* |  |
 | `evedaladahel` | *valley* |  |
-| `evegalubugal` | *philosophy* |  |
+| `evegalugul` | *philosophy* |  |
 | `evegolezadel` | *championship* |  |
 | `evezalevevol` | *portrait* |  |
 | `ewedolevewal` | *curtain* |  |
@@ -459,7 +465,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ohaholeregal` | *pipe* |  |
 | `oladalamol` | *pension* |  |
 | `oladalenahal` | *retirement* |  |
-| `onodamubugal` | *album* |  |
+| `onodamugul` | *album* |  |
 | `ovulezebel` | *advise* |  |
 | `owobomazewel` | *league* |  |
 | `owogalael` | *wield* |  |
@@ -483,16 +489,16 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `owogaluol` | *traverse* |  |
 | `owogaluom` | *relay* |  |
 | `oyelebehul` | *doorbell* |  |
-| `ubugalagedul` | *publisher* |  |
-| `ubugalahahal` | *read* |  |
-| `ubugalahazal` | *library* |  |
-| `ubugalebubel` | *publication* |  |
-| `ubugalozel` | *literature* |  |
-| `ubugamerevul` | *technology* |  |
 | `uduhemagedul` | *military* |  |
 | `uduhomowodel` | *thirst* |  |
 | `udumahazal` | *laboratory* |  |
 | `ugugalahazal` | *kitchen* |  |
+| `ugulagedul` | *publisher* |  |
+| `ugulahahal` | *read* |  |
+| `ugulahazal` | *library* |  |
+| `ugulebubel` | *publication* |  |
+| `ugulozel` | *literature* |  |
+| `ugumerevul` | *technology* |  |
 | `umuyulezebel` | *poetry* |  |
 | `umuyulezehel` | *opera* |  |
 | `uvudalabahel` | *kick* |  |
@@ -501,5 +507,5 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `uwuzelowodel` | *alcohol* |  |
 | `uzelobol` | *stem* |  |
 | `uzugulevehal` | *graduate* |  |
-| `uzugulubugal` | *textbook* | `uzugulubugam` *canon* |
+| `uzugulugul` | *textbook* | `uzugulugum` *canon* |
 <!-- /generated -->

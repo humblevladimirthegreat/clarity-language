@@ -281,7 +281,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 | English | Agazan |
 |---------|--------|
 | *capable* / *ability* / *capability* | the verb or quality with **`xa`**: `zazawan gezehexal` (*able to sing*); with no single verb, **`thezexal`** |
-| *afford* (*can pay*) | `zazawan vamoxal dubugal` |
+| *afford* (*can pay*) | `zazawan vamoxal dugul` |
 | *visible* / *invisible* | the undergoer with ability: `zodogal guxahahaxal` / `zodogal guxahahaxul` |
 | *blind* | `zazawan gahahaxul` (*can never see*) |
 | *possible* / *potentially* | MAY **`thovum`** |

@@ -19,7 +19,7 @@ English *someone who teaches* names a person from what they do, from the same id
 
 The last letter is the ordinary [word ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** its abstract sense. `zaxedehol` is *someone who teaches*; `zaxavadal` is *someone who fights*; `zaxavadam` is *someone who struggles*. No teaching or fight needs to come up earlier in the conversation, and the word says nothing about how often: one lesson is enough.
 
-When the event is a dictionary word built from two roots, the role compound takes the whole word as its stem: `zaxubugalahahal` is *someone who reads*, from `ubugalahahal` *read*.
+When the event is a dictionary word built from two roots, the role compound takes the whole word as its stem: `zaxugulahahal` is *someone who reads*, from `ugulahahal` *read*.
 
 A noun that specifies the event goes in the same stem, before the event and joined to it with another **`x`**: `zaxodogaxowogal` is *someone who walks dogs* (the doer of *dog-walking*). The noun's part in the event is as open as in English (*dog walker*, *coffee maker*); for an exact part, use a [hook](hooks.md#extra-noun) or a second sentence. **-r** resumes the whole stem.
 
@@ -605,7 +605,7 @@ English *up* / *down* usually follows the pull of gravity, not anyone’s facing
 
 English *left of the tree, from Azawan’s view* needs both a facing person and a landmark. Put the facing person after **`th`**; put the tree, door, or wall in `/b/`. The `/b/` word is the landmark, not whose left it is.
 
-> `zubugal gewezathazawan bedehul.`
+> `zugul gewezathazawan bedehul.`
 >
 > z-book | [g-west-th-Azawan | b-tree]
 >
@@ -621,7 +621,7 @@ Gravity works the same way: bare **`adahe`** + `/b/` is *under* the landmark, an
 >
 > "The dog sleeps under the tree."
 
-> `zubugal vehahel gabahal bedehul.`
+> `zugul vehahel gabahal bedehul.`
 >
 > z-book | v-sit | [g-up | b-tree]
 >

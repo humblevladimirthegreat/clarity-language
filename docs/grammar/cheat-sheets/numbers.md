@@ -25,7 +25,7 @@ A number word is one word: role letter, marker, one syllable per digit, ending. 
 |-----|---------|---------|-------|
 | [Count](../numbers.md#counts) | `zagadulx grarel.` | *Three cats.* | B |
 | [Count, many digits](../numbers.md#counts): one word | `graduzol` | *twenty* | B |
-| [Ordinal](../numbers.md#ordinals): `re` for `ra` | `zubugal gredul.` | *The second book.* | B |
+| [Ordinal](../numbers.md#ordinals): `re` for `ra` | `zugul gredul.` | *The second book.* | B |
 | [More than one](../numbers.md#more-than-one) | `zagadulx gral.` | *Cats, more than one.* | B |
 
 ### The marker {#marker}
@@ -392,7 +392,7 @@ Marker `ue` (written `#-`, spoken `rue`) counts from the last place within the s
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Penultimate](../numbers.md#from-the-end) | `zubugal gruedul.` | *The penultimate book.* | A |
+| [Penultimate](../numbers.md#from-the-end) | `zugul gruedul.` | *The penultimate book.* | A |
 | [Penultimate time](../numbers.md#from-the-end) | `h#-2` | *the penultimate time* | A |
 
 Two marker vowels in one word: speak `u` first.

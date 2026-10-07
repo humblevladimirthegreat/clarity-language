@@ -468,7 +468,7 @@ A bar fence ranks **one** item against **one** bar: with a bar, there is no seco
 
 A [hook](hooks.md) and its `/b/` on the ranked item go right before the bar, the way they go right before a join word:
 
-> `zubugal om bamun thamam zel garagam.`
+> `zugul om bamun thamam zel garagam.`
 >
 > [[z-book | [near | b-speaker]] | th-plan-itinerary | z-rank/more | g-heavy]
 >
@@ -695,7 +695,7 @@ The bar's ending keeps its own job: on a channel it is [evidence strength](knowi
 >
 > "Azawan is bigger than I remember."
 
-> `zubugal thewam zuel gagazam.`
+> `zugul thewam zuel gagazam.`
 >
 > [z-book | th-REPORTED | z-rank/less | g-clarity]
 >
@@ -713,7 +713,7 @@ The bar's ending keeps its own job: on a channel it is [evidence strength](knowi
 >
 > "Azawan is sleepier than they used to be."
 
-> `zubugal thohum balahen zuel garagam.`
+> `zugul thohum balahen zuel garagam.`
 >
 > [z-book | [th-WANT-unstated | b-Alahen] | z-rank/less | g-heavy]
 >
@@ -721,7 +721,7 @@ The bar's ending keeps its own job: on a channel it is [evidence strength](knowi
 
 The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on WANT, REQUIRE, PERMIT, and CONSENT it is the person who wants, demands, grants, or agrees. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
 
-> `zubugal thewam balahen zuel gagazam.`
+> `zugul thewam balahen zuel gagazam.`
 >
 > [z-book | [th-REPORTED | b-Alahen] | z-rank/less | g-clarity]
 >
@@ -785,13 +785,13 @@ A CLUES or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): the n
 
 **Hopes and fears.** A speaker-attitude word as the bar is the case you hoped for or feared.
 
-> `zubugal thevegem zel gagazam.`
+> `zugul thevegem zel gagazam.`
 >
 > [z-book | th-hope | z-rank/more | g-clarity]
 >
 > "The book is clearer than I hoped."
 
-> `zubugal thewedam zuel gagazam.`
+> `zugul thewedam zuel gagazam.`
 >
 > [z-book | th-concern | z-rank/less | g-clarity]
 >

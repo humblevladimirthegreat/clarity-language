@@ -24,6 +24,7 @@ Pick one channel for how you know. LIVE and MEMORY place the event in time; the 
 | MEMORY | direct | [`thevom`](../knowing.md#evidentiality) | *from memory* | I |
 | PATTERN | reasoned | [`thobam`](../knowing.md#evidentiality) | *from the pattern* | I |
 | CLUES | reasoned | [`thunem`](../knowing.md#evidentiality) | *from the clues* / *apparently* | I |
+| DEDUCED | reasoned | [`thugum`](../knowing.md#evidentiality) | *it follows* / *by deduction* | I |
 | REPORTED | received | [`thewam`](../knowing.md#evidentiality) | *so they say* | I |
 | INTUITION | internal | [`thahom`](../knowing.md#evidentiality) | *my gut says* | I |
 
@@ -38,6 +39,7 @@ The ending grades your evidence: **-l** you could show it, **-m** you could desc
 | [MEMORY](../knowing.md#evidence-strength) | vividness | `thevol` a vivid memory | `thevom` | `thevor` a hazy memory | I |
 | [PATTERN](../knowing.md#evidence-strength) | cases, consistency | `thobal` well established | `thobam` | `thobar` a few cases | I |
 | [CLUES](../knowing.md#evidence-strength) | strength of clues | `thunel` strong clues | `thunem` | `thuner` a weak clue | I |
+| [DEDUCED](../knowing.md#evidence-strength) | how far you checked the steps | `thugul` every step shown | `thugum` | `thugur` seems to follow | I |
 | [REPORTED](../knowing.md#evidence-strength) | reliability of source | `thewal` a reliable source | `thewam` | `thewar` a rumor | I |
 | [INTUITION](../knowing.md#evidence-strength) | how well you can state it | `thahol` a strong sense | `thahom` | `thahor` a faint hunch | I |
 
@@ -60,14 +62,26 @@ The ending grades your evidence: **-l** you could show it, **-m** you could desc
 | [`thodom` LIVE](../knowing.md#dated-channel) | no offset | A |
 | [`thobam` PATTERN](../knowing.md#dated-channel) | **`-`** or **`+`** | A |
 
-What a `/b/` after a channel does: a person or thing is the [source](../knowing.md#source); a time measure is the [offset](../knowing.md#dated-channel); `barl` takes only CLUES and PATTERN. A cause or condition word may not come before the channel.
+What a `/b/` after a channel does: a person or thing is the [source](../knowing.md#source); a time measure is the [offset](../knowing.md#dated-channel); `barl` takes only CLUES, PATTERN and DEDUCED. A cause or condition word may not come before the channel.
 
 <!-- cheat-sheet: knowing-intending -->
 | You say | Clause after `barl` is | Form | Stage |
 |---------|------------------------|------|-------|
 | what made it happen | the cause | [`thevem barl`](../knowing.md#evidence-clause) | I |
 | what must hold for it | the condition | [`thoyem barl`](../knowing.md#evidence-clause) / `tholum barl` / `thedam barl` | I |
-| how you know it happened | your grounds | [`thunem barl`](../knowing.md#evidence-clause) / `thobam barl` | I |
+| how you know it happened | your grounds | [`thunem barl`](../knowing.md#evidence-clause) / `thobam barl` / `thugum barl` | I |
+
+### Deduction {#deduction}
+
+What you assert depends on what sits before `barl`: the channel alone asserts the premises; a pole between them asserts only the link. Join several premises with `xam`.
+
+<!-- cheat-sheet: knowing-intending -->
+| You claim | Form | You assert | Stage |
+|-----------|------|------------|-------|
+| *P, so Q* | Q [`thugum barl`](../knowing.md#deduction) P | P and Q | I |
+| *Q follows from P* | Q [`thugum thoyem barl`](../knowing.md#deduction) P | only the link | I |
+| *P and Q come to the same thing* | Q [`thugum thedam barl`](../knowing.md#deduction) P | only the link, both ways | I |
+| *P rules out Q* | Q denied with `vul`, then [`thugum thoyem barl`](../knowing.md#deduction) P | only that P and Q cannot both hold | I |
 
 ### Whose view {#holder}
 

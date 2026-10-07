@@ -165,7 +165,7 @@ The word bank has two tables. **New words** are introduced here: **English** is 
 | *Ahaben* | `ahaben` |
 | *find* | `vamagal` |
 | *pencil* | `ebeyol` |
-| *book* | `ubugal` |
+| *book* | `ugul` |
 | *bell* | `ebehul` |
 
 #### English → Agazan {#beginner-english-to-agazan}
@@ -246,7 +246,7 @@ z-Alahen | d-bell | v-find | [h-like | b-Azawan]
 *Alahen finds a bell, like Azawan.*
 :::
 
-**4.** `zahaben thevegam dubugal vamagal.`
+**4.** `zahaben thevegam dugul vamagal.`
 
 ::: details Show answer
 z-Ahaben | th-doubt | d-book | v-find

@@ -205,9 +205,9 @@ Without **`thovum`**, the sentence reports that Ahaben is leaving.
 <a id="evidential"></a>
 <a id="content-readings"></a>
 
-English often says how you know a claim: *I saw it*, *I heard*, *I figured*. Agazan keeps the ordinary verb and adds a `/th/` stance word for that, called an **evidential**. It names the **channel** the claim reached you through: sensing it now, memory, a pattern of cases, clues, a report, or a gut sense. So the same walk can be reported six ways, and the listener always knows what your claim rests on. Under other role letters the channel roots are ordinary words (`vodol` *to attest*, `dewal` *an ear*).
+English often says how you know a claim: *I saw it*, *I heard*, *I figured*. Agazan keeps the ordinary verb and adds a `/th/` stance word for that, called an **evidential**. It names the **channel** the claim reached you through: sensing it now, memory, a pattern of cases, clues, a proof from premises, a report, or a gut sense. So the same walk can be reported seven ways, and the listener always knows what your claim rests on. Under other role letters the channel roots are ordinary words (`vodol` *to attest*, `dewal` *an ear*).
 
-The six channels come in four kinds. Two are **direct**: you sensed it yourself, now (LIVE) or earlier (MEMORY). Two are **reasoned**: you worked it out from similar cases (PATTERN) or from clues about this case (CLUES). One is **received**: someone else said or wrote it (REPORTED). One is **internal**: a sense you cannot fully spell out (INTUITION).
+The seven channels come in four kinds. Two are **direct**: you sensed it yourself, now (LIVE) or earlier (MEMORY). Three are **reasoned**: you worked it out from similar cases (PATTERN), from clues about this case (CLUES), or from premises it must follow from (DEDUCED). One is **received**: someone else said or wrote it (REPORTED). One is **internal**: a sense you cannot fully spell out (INTUITION).
 
 Verbs have **no past or future form**. Two channels place the event in time because of how you know it: **LIVE** means the scene is in your senses as you speak, and **MEMORY** means you remember sensing it (so it is past). The other channels do not place the event. When a reasoned or reported event happened at another time, add a when-frame: [*before* / *after* / *while*](dependents.md#time-poles), a clock or date, or a [signed offset](#dated-channel) on the channel. A claim that something **will** happen is a [forecast](#forecast): a channel plus a later offset, so a forecast always says how you know.
 
@@ -231,6 +231,7 @@ Verbs have **no past or future form**. Two channels place the event in time beca
 | **`thevom`** | MEMORY: firsthand, remembered | *from memory* | `evol` *fishing* | 🎣: you pull something back |
 | **`thobam`** | PATTERN: similar cases | *from the pattern* | `obal` *paw-prints* | 🐾: cases left behind |
 | **`thunem`** | CLUES: reasoned from clues about this case | *from the clues* / *apparently* | `unel` *investigate* | 🕵️: you work the clues |
+| **`thugum`** | DEDUCED: it must hold if the premises hold | *it follows* / *by deduction* | `ugul` *book* | 📖: a book already holds what it says; a deduction reads out only what the premises hold |
 | **`thewam`** | REPORTED: someone else said or wrote it | *so they say* / *according to…* | `ewal` *ear* | 👂: you take in what others pass on |
 | **`thahom`** | INTUITION: a gut sense | *my gut says* | `ahol` *heart* | ❤️: knowing you cannot fully spell out |
 
@@ -273,10 +274,13 @@ Strength grades your evidence, not how sure you feel and not how likely the even
 | MEMORY | vividness of memory | `thevol` a vivid memory | `thevom` | `thevor` a hazy memory |
 | PATTERN | number and consistency of cases | `thobal` a well-established pattern | `thobam` | `thobar` a few cases |
 | CLUES | strength of clues | `thunel` strong clues | `thunem` | `thuner` a weak clue |
+| DEDUCED | how far you checked the steps | `thugul` every step could be shown | `thugum` | `thugur` it seems to follow, steps unchecked |
 | REPORTED | reliability of the source | `thewal` a reliable source or an authoritative document | `thewam` | `thewar` a rumor or an unofficial note |
 | INTUITION | how well you can state the basis | `thahol` a strong gut sense | `thahom` | `thahor` a faint hunch |
 
 Two rows stretch the word *show*. A live view is gone once the moment passes, so for LIVE and MEMORY **-l** means you could narrate it in fine detail. INTUITION is private, so **-l** means you can say what the sense rests on, not that you can hand it over.
+
+DEDUCED grades how far you checked the steps, not the premises. A step can be airtight and still start from a false premise, so a deduction is only as good as what it was deduced from ([deduction](#deduction)).
 
 > `zalahen thewar vedabal.`
 >
@@ -410,7 +414,7 @@ On a [feeling](sakes.md#emotion-compose) (a sake word with a locus and a motion 
 
 ### Evidence clause (`barl`) {#evidence-clause}
 
-English *judging by*, *going by*, and *given that* name the **grounds** for a claim: the fact that tells you it holds. Two channels reason from grounds: CLUES (`thunem`, from clues) and PATTERN (`thobam`, from cases that repeat). Either one takes **`barl`** as its `/b/`. The main sentence stops after `barl`, and the next sentence is the grounds ([dependent clauses](dependents.md#dependent-clauses)). You state the claim, the strength of your grounds, and the grounds themselves in one sentence.
+English *judging by*, *going by*, and *given that* name the **grounds** for a claim: the fact that tells you it holds. The three reasoned channels take grounds: CLUES (`thunem`, from clues), PATTERN (`thobam`, from cases that repeat) and DEDUCED (`thugum`, from premises). Each one takes **`barl`** as its `/b/`. The main sentence stops after `barl`, and the next sentence is the grounds ([dependent clauses](dependents.md#dependent-clauses)). You state the claim, the strength of your grounds, and the grounds themselves in one sentence.
 
 > `zalahen vabahel thunem barl zazawan vezugel.`
 >
@@ -418,7 +422,7 @@ English *judging by*, *going by*, and *given that* name the **grounds** for a cl
 >
 > "Alahen punched, judging by the fact that Azawan is screaming."
 
-Grounds are not a cause. With [`thevem barl`](causation.md#only-because), the clause after `barl` is what made the event happen. With CLUES or PATTERN, it is only how you know the event happened: the screaming did not make Alahen punch.
+Grounds are not a cause. With [`thevem barl`](causation.md#only-because), the clause after `barl` is what made the event happen. With a reasoned channel, it is only how you know the event happened: the screaming did not make Alahen punch.
 
 > `zazawan vezugel thevem barl zalahen vabahel.`
 >
@@ -431,9 +435,9 @@ Grounds are not a cause. With [`thevem barl`](causation.md#only-because), the cl
 |---------|----------------------------|------|
 | what made it happen | the cause | `thevem barl` |
 | what has to hold for it to happen | the condition | `thoyem barl` / `tholum barl` / `thedam barl` |
-| how you know it happened | your grounds | `thunem barl` / `thobam barl` |
+| how you know it happened | your grounds | `thunem barl` / `thobam barl` / `thugum barl` |
 
-The ending on the channel grades the grounds ([evidence strength](#evidence-strength)): **-l** for strong clues or a well-established pattern, **-m** by default, **-r** for a weak clue or a few cases. A strong inference is as close as Agazan gets to *it follows that*.
+The ending on the channel grades the grounds ([evidence strength](#evidence-strength)): **-l** for strong clues or a well-established pattern, **-m** by default, **-r** for a weak clue or a few cases. Strong clues still fall short of a proof: when the claim **must** hold if the grounds do, use DEDUCED ([deduction](#deduction)).
 
 > `verehel thunel barl zagavul gegeval.`
 >
@@ -723,6 +727,53 @@ When you are not sure, use **`thavom`**.
 >
 > "Suppose Azawan writes." (toying with an assumption)
 
+### Deduction (`thugum`) {#deduction}
+<a id="deduced"></a>
+
+English *it follows that*, *P, so Q* and *by deduction* claim more than good evidence: if the premises hold, the conclusion **must** hold. Put DEDUCED (**`thugum`**) on the conclusion and the premises after **`barl`**, as in any [evidence clause](#evidence-clause). Join several premises with a [clause join](joins.md#clause-joins); a join after a stand-in stays in the dependent, so every premise is grounds. You assert the premises and the conclusion.
+
+> `zazawan vedehol thugum barl zual gaxedehothel vedehol xam zazawan gaxedehothel.`
+>
+> z-Azawan | v-teach | [th-DEDUCED | b-that-clause] | [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Azawan | g-agent-x-teach-th-role]
+>
+> "Azawan teaches, since every teacher teaches and Azawan is a teacher."
+
+To claim only that the conclusion follows, put a [pole](causation.md#only-because) between the channel and **`barl`**. The pole is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
+
+> `zazawan vedehol thugum thoyem barl zual gaxedehothel vedehol xam zazawan gaxedehothel.`
+>
+> z-Azawan | v-teach | th-DEDUCED | [th-if | b-that-clause] | [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Azawan | g-agent-x-teach-th-role]
+>
+> "If every teacher teaches and Azawan is a teacher, it follows that Azawan teaches."
+
+<!-- cheat-sheet: knowing-intending -->
+| You claim | Form | You assert |
+|-----------|------|------------|
+| *P, so Q* | Q `thugum barl` P | P and Q |
+| *Q follows from P* | Q `thugum thoyem barl` P | only the link |
+| *P and Q come to the same thing* | Q `thugum thedam barl` P | only the link, both ways |
+| *P rules out Q* | Q denied with `vul`, then `thugum thoyem barl` P | only that P and Q cannot both hold |
+
+The ending grades how far you checked the steps ([evidence strength](#evidence-strength)): **`thugul`** when you could write out every step, **`thugum`** when you could name the premises and the rule, **`thugur`** when it only seems to follow.
+
+When the premises come first, open the conclusion with the linker **`xodul`** *it follows that* ([sentence linkers](dependents.md#sentence-linkers)). It reaches back to the one sentence before it, so join every premise into that sentence.
+
+> `zual gaxedehothel vedehol xam zazawan gaxedehothel. xodul zazawan vedehol.`
+>
+> [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Azawan | g-agent-x-teach-th-role] . x-it-follows | z-Azawan | v-teach
+>
+> "Every teacher teaches, and Azawan is a teacher. It follows that Azawan teaches."
+
+A linker is not a channel, so the conclusion keeps your [frame](#carry-forward): a deduction from a report is still REPORTED. To reason from a premise you do not grant, suppose it with [NOTIONAL](#notional) **`thavor`**. The frame carries, so every step after it stays supposed. To keep what you found, state the link with its own channel, which ends the supposition:
+
+> `zazawan thavor gaxedehothel. xodul zazawan vedehol. zazawan vedehol thugum thoyem barl zazawan gaxedehothel.`
+>
+> z-Azawan | th-NOTIONAL-suppose | g-agent-x-teach-th-role . x-it-follows | z-Azawan | v-teach . z-Azawan | v-teach | th-DEDUCED | [th-if | b-that-clause] | [z-Azawan | g-agent-x-teach-th-role]
+>
+> "Suppose Azawan is a teacher. Then Azawan teaches. So if Azawan is a teacher, it follows that Azawan teaches."
+
+**Compare with:** strong clues (`thunel`) make a claim likely, but it can still fail with every clue true. A deduction cannot fail unless a premise does. *Because* (`thevem`) says what made it happen; a deduction says only what must be true.
+
 ### Channels as comparison bars {#channel-bars}
 
 English *sleepier than usual* and *bigger than it looks* compare against an expectation. Put the channel right before the rank word (**`zel`** / **`zuel`** / **`zoel`**) as the comparison's [bar](comparatives.md#bars). The bar is then **what that channel led you to expect**, not how you know the claim. After the comparison, the same word is the claim's channel again.
@@ -798,6 +849,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *MEMORY* | `thevom` | 🎣 from *fishing*: pulled up from memory |
 | *PATTERN* | `thobam` | 🐾 from *paw-prints*: a trail of cases |
 | *CLUES* | `thunem` | 🕵️ from *investigate*: worked out from clues |
+| *DEDUCED* | `thugum` | 📖 from *book*: read out of the premises |
 | *REPORTED* | `thewam` | 👂 from *ear*: someone said so |
 | *NOTIONAL* | `thavom` | 🎭 from *theater*: an imagined scene |
 | *RESIDUE* | `thamom` | 💰 from *money*: a debt left standing |
@@ -924,14 +976,14 @@ z-Ahaben | v-tell | [contrary-to | th-REPORTED]
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Ahaben tells, rumor has it.* `zahaben thewar vezebel.` or `zahaben thewam vezebel.`
+**1.** *There are gray clouds, and there is rain if there are gray clouds; so there is rain, and you could write out every step.* `zerehel thugul barl zagavul gegeval xam zerehel goyem bagavul gegeval.` or `zerehel thugum barl zagavul gegeval xam zerehel goyem bagavul gegeval.`
 
 ::: details Show answer
-`zahaben thewar vezebel.`
+`zerehel thugul barl zagavul gegeval xam zerehel goyem bagavul gegeval.`
 
-z-Ahaben | th-REPORTED.weak | v-tell
+z-rain | [th-DEDUCED.strong | b-that-clause] | [[z-cloud | g-gray] | x-and.open | z-rain | [g-if | [b-cloud | g-gray]]]
 
-**-r** marks weak evidence, a rumor; **-m** is the ordinary *so they say*.
+DEDUCED with **-l** means you could show every step; **-m** means you could name the premises and the rule.
 :::
 
 **2.** *Ahaben practices singing.* `zahaben thavol vezehel.` or `zahaben thavom vezehel.`
@@ -1254,7 +1306,7 @@ Pronouns and speech moves stay yours: **`SELF`** is still you, and the sentence 
 
 The first sake word has no holder, so it is yours. The second is Azawan's.
 
-Only the six channels, MAY, and NOTIONAL take a holder: they are the ways you can have access to someone else's view. When they told you in their own words, a [cite](spans.md#writing) keeps their wording instead.
+Only the seven channels, MAY, and NOTIONAL take a holder: they are the ways you can have access to someone else's view. When they told you in their own words, a [cite](spans.md#writing) keeps their wording instead.
 
 **Compare with:** being upset **for** Azawan is your own feeling about Azawan's stake (the ON-BEHALF locus in [emotion compose](sakes.md#emotion-compose)); with a holder the feeling is Azawan's. *On behalf of* Azawan is [proxy](relations.md#proxy) (`hadem`). A [dictionary compound](x-compounds.md#lexical-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
 
@@ -1278,9 +1330,9 @@ To say **how you know** the general claim, add a [channel](#evidentiality). On a
 >
 > "Azawan always walks, from the few cases I have seen."
 
-> `zual gaxedehothel vedehol thunel.`
+> `zual gaxedehothel vedehol thugul.`
 >
-> [z-everything | g-agent-x-teach-th-role] | v-teach | th-CLUES.strong
+> [z-everything | g-agent-x-teach-th-role] | v-teach | th-DEDUCED.strong
 >
 > "Every teacher teaches; it follows."
 
@@ -1296,7 +1348,7 @@ The fence says how far the claim reaches, and the channel says what it rests on.
 |---------|---------------------|---------|---------|
 | *usually*, *as a rule* | `huam` / `zuam` | any, or none | `zazawan huam vowogal.` |
 | *always, as far as I have checked* | `hual` / `zual` | a weak channel | `zazawan hual vowogal thobar.` |
-| *it follows that every …* | `zual` | CLUES.strong `thunel` | `zual gaxedehothel vedehol thunel.` |
+| *it follows that every …* | `zual` | DEDUCED.strong `thugul` | `zual gaxedehothel vedehol thugul.` |
 | *by definition* | `zual` + `thedam barl` | none | `zual gobel gaxedehothel thedam barl zober vedehol.` |
 | *under the rules of …* | `hal` / `hual` | REPORTED.strong with the rules in `/b/` | `zalahen hal vabahel thewal bazagul.` |
 | *cats are sleepy* (in general) | `zuam` + kind | any, or none | `zuam gagadul gezebul thobam.` |

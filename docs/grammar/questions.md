@@ -243,7 +243,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *find* | `vamagal` |
 | *see* | `vahahal` |
 | *pencil* | `ebeyol` |
-| *book* | `ubugal` |
+| *book* | `ugul` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
@@ -319,7 +319,7 @@ y-question | z-wh-else | d-pencil | v-find
 *Who else finds a pencil?*
 :::
 
-**3.** `yol zal dubugal vamagal.`
+**3.** `yol zal dugul vamagal.`
 
 ::: details Show answer
 y-question | z-none | d-book | v-find
@@ -688,7 +688,7 @@ To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in
 
 English puts *who* in different places in *Do you know who walks?* and *Who do you think walks?*. In the first, the inner clause asks; in the second, the main question asks. In Agazan the blank stays in the inner clause both times, and the stand-in's vowel says which question it belongs to. **`dorl`** (*whether*) is itself question-like, so its blank belongs to it, and the outer **`yol`** is yes/no. **`darl`** (*that*) is statement-like and cannot ask, so its blank belongs to the outer **`yol`**.
 
-> `yol zehon vubugam dorl zar vowogal.`
+> `yol zehon vugum dorl zar vowogal.`
 >
 > y-question | z-listener | v-knowledge | d-whether-clause | z-wh | v-walk
 >
@@ -700,7 +700,7 @@ English puts *who* in different places in *Do you know who walks?* and *Who do y
 >
 > "Who do you think walks?"
 
-If the outer sentence has a blank of its own, that blank is the main question and the inner one stays with `dorl`: `yol zar vubugam dorl zar vowogal.` is *Who knows who walks?* Under a statement, `dorl` plus a blank is a [reported question](#embedded-whether).
+If the outer sentence has a blank of its own, that blank is the main question and the inner one stays with `dorl`: `yol zar vugum dorl zar vowogal.` is *Who knows who walks?* Under a statement, `dorl` plus a blank is a [reported question](#embedded-whether).
 
 ### Yes/no with single-item / standalone
 <a id="yes-no-single-item-standalone"></a>
@@ -777,7 +777,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sit* | `vehahel` |
 | *find* | `vamagal` |
 | *think* | `vevegal` |
-| *knowledge* | `vubugam` |
+| *knowledge* | `vugum` |
 | *lie* | `valahal` |
 | *walk* | `vowogal` |
 | *sleep* | `vezebal` |
@@ -906,10 +906,10 @@ y-reject-frame
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Do you know who walks?* <!-- lint: error -->`yol zehon vubugam darl zar vowogal.`
+**1.** *Do you know who walks?* <!-- lint: error -->`yol zehon vugum darl zar vowogal.`
 
 ::: details Show answer
-`yol zehon vubugam dorl zar vowogal.`
+`yol zehon vugum dorl zar vowogal.`
 
 y-question | z-listener | v-knowledge | d-whether-clause | z-wh | v-walk
 

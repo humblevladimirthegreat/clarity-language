@@ -135,7 +135,7 @@ Keeping cause apart from fault helps you explain what happened without blaming, 
 
 Surface common biases that make self-delusion easy.
 
-Claims can say how you know: memory, a report, a pattern, clues. A general claim says whether it allows exceptions and how many cases it rests on.
+Claims can say how you know: memory, a report, a pattern, clues, a deduction. A general claim says whether it allows exceptions and how many cases it rests on.
 
 A *because* or an *if* says what kind of link it claims. When the “must” is really an ought, the sentence shows the value behind it instead of treating a wish as necessity.
 
@@ -152,6 +152,8 @@ It is easy to treat a *could be* that keeps looping in your head as settled fact
 [Evidentiality](knowing.md#evidentiality) lets a claim about the world name **how you know**: a live look, memory, a pattern, clues, a report, or a gut sense. **MEMORY** is recalling a scene from earlier, and memory can be wrong. A live look (**LIVE**) is sensing it while it is still in view. Name the channel once and it carries over your next claims, so a whole story can rest visibly on one *so they say*.
 
 The [ending](knowing.md#evidence-strength) on that evidence word says how strong the evidence is (a vivid memory or a hazy one, a reliable source or a rumor), separately from how likely the claim is. Marking how you know helps you catch overconfidence and hearsay before you treat a take as settled fact.
+
+A [deduction](knowing.md#deduction) is its own channel, apart from strong clues: it says the claim **must** hold if its premises do, and its ending says how far you checked the steps. *It obviously follows* is easy to say about a conclusion the clues only make likely; keeping the two apart, and marking whether you grant the premises at all, helps you catch a leap dressed as a proof.
 
 In English: [Claritish: How sure are you?](claritish/could-be.md) and [How do you know?](claritish/how-you-know.md).
 

@@ -105,8 +105,8 @@ The scale runs **-l** most settled, **-m** the default, **-r** most passing. Whe
 |-----|---------|---------|-------|
 | [Serves, on a noun](../sakes.md#met) | `zahazal gulotham.` | *My house serves competence.* | B |
 | [Serves, lasting](../sakes.md#time-horizon-endings-on-met) | `zebel ganathal.` | *My gift serves relatedness in the long term.* | B |
-| [Detracts](../sakes.md#sake-changeability) | `zubugal gulothum.` | *My book detracts from competence (modifiable).* | B |
-| [Costly now, good later](../sakes.md#sake-changeability) | `zubugal gozothur gulothal.` | *My book is a slog for now, but builds lasting competence.* | B |
+| [Detracts](../sakes.md#sake-changeability) | `zugul gulothum.` | *My book detracts from competence (modifiable).* | B |
+| [Costly now, good later](../sakes.md#sake-changeability) | `zugul gozothur gulothal.` | *My book is a slog for now, but builds lasting competence.* | B |
 | [On the event](../sakes.md#word-shape) | `zazawan vezebel thulotham.` | *Azawan tells, and that serves competence.* | B |
 | [Not your noun](../sakes.md#personal-possession): `gobum` | `zabezam wahuthur gobum.` | *the gathering, passing harm to autonomy* | B |
 | [Ought](../sakes.md#sake-force) | `zazawan vezebel thanathem.` | *Azawan ought to tell to serve relatedness (offered).* | I |

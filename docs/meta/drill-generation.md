@@ -239,7 +239,7 @@ Tokens here are **stems for matching** (path allowlist / leak checks). Learner b
 | `azawa` / `alahe` / `ahabe` | names **Azawan** / **Alahen** / **Ahaben** |
 | `odoga` | *dog* |
 | `agadu` | *cat* |
-| `ubuga` | *book* |
+| `ugu` | *book* |
 | `ahaza` | *house* |
 | `egega` | *inclusion* / *inside* (**-m**) |
 | `ubuhe` | *blue* |

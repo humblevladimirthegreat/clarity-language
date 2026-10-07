@@ -68,13 +68,13 @@ With no `/b/` after a joined subject, the model is the other members: each one r
 
 When English names the **other side of a swap** (*a book for a hammer*), use the same hosted pair as *like*. The relation word is **`hehem`**. Put what is given in return in `/b/` right after it. That extra noun is the other half of the trade, not who receives the book. (cue: 💱 *currency-exchange*: the arrows swap one thing for another; `/b/` is the other side)
 
-> `zazawan dubugal hehem bahavol vehem.`
+> `zazawan dugul hehem bahavol vehem.`
 >
 > z-Azawan | d-book | [h-in-exchange-for | b-hammer] | v-convertibility
 >
 > "Azawan trades a book for a hammer."
 
-On a noun, the same root is **`gehem`** (`dubugal gehem bahavol` *a book for a hammer*). As a plain noun, `zehel` is *a currency exchange*. As a verb, `vehem` is *to trade* (the convertibility act).
+On a noun, the same root is **`gehem`** (`dugul gehem bahavol` *a book for a hammer*). As a plain noun, `zehel` is *a currency exchange*. As a verb, `vehem` is *to trade* (the convertibility act).
 
 **Compare with:** a `/b/` word with no relation word before it is the recipient (*a book for Alahen* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun). *Like a duck* is [simile](#similative). *In a house* is a hook (`al`).
 
@@ -94,7 +94,7 @@ When English says someone **acts as another person’s agent** (*tells on behalf
 >
 > "Azawan tells on behalf of Alahen."
 
-A recipient `/b/` can follow once the pair is complete: `zazawan hadem balahen vezebel bahaben` (*tells Ahaben on behalf of Alahen*). On a noun, the same root is **`gadem`** (`dubugal gadem balahen` *a book on behalf of Alahen*). As a plain noun, `zadel` is *an id*.
+A recipient `/b/` can follow once the pair is complete: `zazawan hadem balahen vezebel bahaben` (*tells Ahaben on behalf of Alahen*). On a noun, the same root is **`gadem`** (`dugul gadem balahen` *a book on behalf of Alahen*). As a plain noun, `zadel` is *an id*.
 
 **Compare with:** a `/b/` word with no relation word before it is who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`).
 
@@ -814,7 +814,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *RESIDUE* | `thamom` |
 | *PATTERN* | `thobam` |
 | *MAY* | `thovum` |
-| *book* | `ubugal` |
+| *book* | `ugul` |
 | *challenge* | `amadam` |
 | *rain* | `erehel` |
 | *departure* | `vedabal` |
@@ -834,7 +834,7 @@ z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 **2.** *the book as of 22 July*
 
 ::: details Show answer
-`zubugal guhum b_#22,7.`
+`zugul guhum b_#22,7.`
 
 z-book | [g-as-of.ledger | b-_22,7]
 :::

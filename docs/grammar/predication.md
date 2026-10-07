@@ -124,7 +124,7 @@ The second label is a `/b/` whatever it is: a common noun or a pronoun works as 
 
 With **no** `/b/` after it, `gugol` points back to the one already mentioned: *the same one again*. Put `gugol` after the thing.
 
-> `zalahen dubugal gugol varadal.`
+> `zalahen dugul gugol varadal.`
 >
 > z-Alahen | [d-book | g-SAME] | v-write
 >

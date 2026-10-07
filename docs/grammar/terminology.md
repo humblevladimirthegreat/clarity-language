@@ -26,6 +26,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **COLLAPSE** | Emotion locus: out of fight, giving up | `wanathumual` | [Sakes](sakes.md#emotion-compose) |
 | **CONSENT** | Consent of the affected party | `thuxegom` | [Sakes](sakes.md#consent) |
 | **DECISION** | Pick-firmness mood | `thehum` | [Intention](intention.md#decision) |
+| **DEDUCED** | Evidential: must hold if the premises hold | `thugum` | [Knowing](knowing.md#deduction) |
 | **FAWN** | Emotion locus: placating a target | `wanathumaem` | [Sakes](sakes.md#emotion-compose) |
 | **FLOWING** | Emotion motion: steady, a current you can ride | `wanathumem` | [Sakes](sakes.md#emotion-compose) |
 | **FORBID** | Permission, negative | `thedel` | [Sakes](sakes.md#permission) |
@@ -346,7 +347,7 @@ Endings on an evidential channel: **-l** strong evidence, **-m** default, **-r**
 
 ### Evidentiality
 
-Closed `/th/` how-you-know roots: six channels, two direct (LIVE, MEMORY), two reasoned (PATTERN, CLUES), one received (REPORTED), one internal (INTUITION).
+Closed `/th/` how-you-know roots: seven channels, two direct (LIVE, MEMORY), three reasoned (PATTERN, CLUES, DEDUCED), one received (REPORTED), one internal (INTUITION).
 
 [Knowing](knowing.md#evidentiality)
 

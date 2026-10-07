@@ -6,7 +6,7 @@ Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* do
 
 ### English → Agazan {#english-cues}
 
-**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Contrary to a stance](sakes.md#contrary-to-stance) · [Continue](dependents.md#continue-x) · [Stacked discourse hooks](hooks.md#stacked-discourse) · [Because](causation.md#only-because) · [Point back](hooks.md#hook-resume) · [Clause sequence](join-across-roles.md#clause-sequence)
+**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Contrary to a stance](sakes.md#contrary-to-stance) · [Continue](dependents.md#continue-x) · [Sentence linkers](dependents.md#sentence-linkers) · [Stacked discourse hooks](hooks.md#stacked-discourse) · [Because](causation.md#only-because) · [Point back](hooks.md#hook-resume) · [Clause sequence](join-across-roles.md#clause-sequence)
 
 Time and discourse dependents use the same **`barl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
 
@@ -18,6 +18,7 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 | *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uem`** + the stance it goes against: `uem thedel` / `uem thuxedem balahen` / `uem thamam` / `uem thehul bamun` / `uem thewam` ([contrary to a stance](sakes.md#contrary-to-stance)) |
 | *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`barl`**: **`thunem barl`** / **`thobam barl`** ([evidence clause](knowing.md#evidence-clause)) |
 | *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xodum`** ([continue](dependents.md#continue-x)) |
+| *it follows that* / *necessarily, then* (a deduction from the last sentence) | **`xodul`** ([sentence linkers](dependents.md#sentence-linkers)) |
 | *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](pronouns.md#how-english-approximates-r)) |
 | *the fact that* / *the idea that* / *it is a fact that* | a predicate with a `/z/` stand-in: `genevem zarl zazawan vowogal.`; or two sentences, then `zarth` ([stand-in vowels](dependents.md#stand-in)): `zazawan vowogal. zarth genevem.` A clause never modifies a noun |
 | *due to* / *owing to* / *because of* (NP) | **`thevem`** + `/b/` **noun** (`thevem berehel`) |
@@ -31,7 +32,7 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
 
-**Needs:** [Evidence strength](knowing.md#evidence-strength) · [MAY](knowing.md#may) · [Hold endings (NOTIONAL)](knowing.md#hold-endings-notional) · [Hopefully and other attitudes](sakes.md#speaker-attitude) · [Unmet](sakes.md#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](spans.md#asides) · [CAUSE](causation.md#cause) · [Every bar](comparatives.md#stance-bars)
+**Needs:** [Evidence strength](knowing.md#evidence-strength) · [Deduction](knowing.md#deduction) · [MAY](knowing.md#may) · [Hold endings (NOTIONAL)](knowing.md#hold-endings-notional) · [Hopefully and other attitudes](sakes.md#speaker-attitude) · [Unmet](sakes.md#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](spans.md#asides) · [CAUSE](causation.md#cause) · [Every bar](comparatives.md#stance-bars)
 
 English adverbs like *obviously*, *apparently* and *presumably* say **how you know** a claim. Agazan has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: **-l** solid, **-m** ordinary, **-r** thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how **you** feel about the claim, so it is an attitude word.
 
@@ -50,10 +51,10 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 | *assume* / *suppose* | `thavor` | NOTIONAL, toy with it for now |
 | *personally* / *in my view* | `hahehom bamun` | topic: as for me |
 | *by the way* / *aside* (in passing) | `th( … )` | aside fence, any place a stance word may sit |
-| *necessarily* / *it follows* | `thunel` | CLUES, strong clues |
+| *necessarily* / *it follows* / *by deduction* | `thugum` | DEDUCED |
 | *basically* / *fundamentally* | `hadawam` | manner adverb on *fundamental* |
 | *overall* / *on the whole* | `hahehom bual` | as for everything |
-| *automatically* / *by itself* | `zubugal vowogal thegem bubugar.` | CAUSE, with the doer resumed as its own cause |
+| *automatically* / *by itself* | `zugul vowogal thegem bugur.` | CAUSE, with the doer resumed as its own cause |
 | *increasingly* / *more and more* | `thenom zel` + the quality | more than it used to be |
 | *unfortunately* | `thegathum` | unspecified sake, unmet, can be softened |
 | *unfortunately* (and it is final) | `thegathul` | unspecified sake, unmet, irreversible |
@@ -159,8 +160,8 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 | *make X angry* / *paint it red* (a result) | `zazawan vanegel thegem balahen.` | the adjective's verb root, Azawan becomes angry, Alahen makes it happen |
 | *arrived tired* / *left angry* (a state during) | `zalahen vedabal huwem barl zalahar gadadal.` or `zalahen gadadal. zalahar vedabal.` | a `/ɡ/` word right after the verb has no reading, so the state is its own clause |
 | *feed* (a child, nurture) | `zalahen vevedol dazawan.` | the nurturing root, no `thegem` |
-| *remove* | `zubugal vedabal ual bexagadel thegem bazawan.` | the book leaves the table, Azawan makes it happen |
-| *discard* | `zubugal veledol thegem bazawan.` | the book is disposed of |
+| *remove* | `zugul vedabal ual bexagadel thegem bazawan.` | the book leaves the table, Azawan makes it happen |
+| *discard* | `zugul veledol thegem bazawan.` | the book is disposed of |
 | *prevent* (make it not happen) | `zalahen vedabal vul thegem bazawan.` | Alahen does not leave, Azawan makes that so |
 | *prevent* (act so that it will not) | `zazawan vowogal hogom burl zalahen vedabal.` | Azawan walks so that Alahen does not leave |
 | *persuade* | `zalahen thehum vowogal thegem bazawan.` | Alahen decides to walk, Azawan makes that happen |
@@ -205,12 +206,12 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *define* | `zazawan dezebelovul hahehom bodogal vezebel.` | tells the meaning, about the dog |
 | *explain* | `zazawan vezebel balahen darl zalahen vowogal thevem barl zodogal varahal.` | tells Alahen that the walk has the run as its reason |
 | *describe* | `zazawan hahehom bodogal vezebel balahen.` | tells Alahen about the dog |
-| *know* (that) | `zazawan vubugam darl zodogal varahal.` | knows that the dog runs; to say how *you* know it, use a [channel](knowing.md#evidentiality) |
-| *know whether* / *know which* | `zazawan vubugam dorl zodogal varahal.` | knows whether the dog runs; a blank inside asks *which* (`dor`) |
+| *know* (that) | `zazawan vugum darl zodogal varahal.` | knows that the dog runs; to say how *you* know it, use a [channel](knowing.md#evidentiality) |
+| *know whether* / *know which* | `zazawan vugum dorl zodogal varahal.` | knows whether the dog runs; a blank inside asks *which* (`dor`) |
 | *find out* | `zazawan vamagal dorl zodogal varahal.` | finds whether the dog runs |
 | *know someone* | `zazawan hoham dalahen vahahal har.` | has met Alahen at some point ([ever](knowing.md#ever-never)) |
 | *know how to* | `zazawan vezehexal.` | can sing ([can](intention.md#can)) |
-| *realize* / *notice* | `zazawan hoham vubugam darl zodogal varahal.` | already knows that the dog runs |
+| *realize* / *notice* | `zazawan hoham vugum darl zodogal varahal.` | already knows that the dog runs |
 | *forget* | `zazawan dalahen vevom hewem.` | no longer remembers Alahen |
 | *become* | `zazawan vabedom dezebul.` | starts being sleepy |
 | *exist* | `zodogal.` | a lone noun: *there is a dog* |
@@ -219,7 +220,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *allege* / *claim* | `thewam` on the clause | REPORTED: so they say |
 | *compare* / *exceed* | `zazawan zalahen zel gelavam.` | rank on a shared scale ([comparatives](comparatives.md#comparatives-e)) |
 
-> `zazawan hoham vubugam darl zodogal varahal.`
+> `zazawan hoham vugum darl zodogal varahal.`
 >
 > z-Azawan | h-already | v-knowledge | d-that-clause | z-dog | v-run
 >
@@ -376,6 +377,31 @@ Use **`thevem barl`** only when Q is also asserted as a world-foundation, what m
 
 **Related form:** *P, since / given that Q* (Q already shared) uses **`thevem barl`** when Q is the reason P holds in the world, and **`thunem barl`** when Q is only your grounds.
 
+### Arguments: premises, validity, contradiction {#arguments}
+
+**Needs:** [Deduction](knowing.md#deduction) · [Evidence clause](knowing.md#evidence-clause) · [If](causation.md#if) · [Because, iff, and only because](causation.md#only-because) · [Clause joins](joins.md#clause-joins) · [Sentence linkers](dependents.md#sentence-linkers) · [Hold endings (NOTIONAL)](knowing.md#hold-endings-notional)
+
+An argument has three parts, and each has its own slot. The **link** between premises and conclusion is a pole (*if*, *if and only if*). **How you know** the link is the channel: DEDUCED (`thugum`) when the conclusion must hold. **Whether you grant the premises** depends on what sits before **`barl`**: the channel alone asserts them, and a pole between the channel and **`barl`** does not.
+
+| English | Agazan | You assert |
+|---------|--------|------------|
+| *P, so Q* / *since P, Q* (a proof) / *a sound argument* | Q **`thugum barl`** P | P and Q |
+| *P implies Q* / *Q follows from P* / *P entails Q* / *a valid argument* | Q **`thugum thoyem barl`** P | only the link |
+| *P is equivalent to Q* / *P just means Q* | Q **`thugum thedam barl`** P | only the link, both ways |
+| *P contradicts Q* / *P rules out Q* / *P and Q are inconsistent* | Q **`vul thugum thoyem barl`** P | only that they cannot both hold |
+| several premises (*P and R, so Q*) | one [clause join](joins.md#clause-joins) after **`barl`**: P **`xam`** R | as above |
+| *it follows that* (premises in the sentence before) | **`xodul`** Q | Q, on the frame the premises carried |
+| *for the sake of argument* / *suppose P* | P with **`thavor`**, then **`xodul`** for each step | nothing: the steps stay supposed |
+| *I checked every step* / *it seems to follow* | **`thugul`** / **`thugur`** | the same, graded on your check of the steps |
+
+> `zazawan vowogal vul thugum thoyem barl zazawan vezebal.`
+>
+> z-Azawan | [v-walk | v-not | th-DEDUCED] | [th-if | b-that-clause] | z-Azawan | v-sleep
+>
+> "If Azawan sleeps, it follows that Azawan isn't walking." (the two rule each other out)
+
+**Compare with:** *it obviously follows* from strong clues (*obviously, it rained*) is CLUES (`thunel`), not a deduction: the clues make it likely, not certain. *Because* in the sense of what made it happen is **`thevem`** ([factivity](#factivity)).
+
 ### Stacks (evidentiality, CAUSE, habit)
 <a id="stacks"></a>
 
@@ -429,7 +455,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 | *upset* | `wanathumar gobum` | relatedness, unmet, held inside, surging |
 | *upset for someone* | `wanathumem gobum` + `/b/` | unmet relatedness on their behalf |
 
-> `zubugal gulotham.`
+> `zugul gulotham.`
 >
 > z-book | g-competence-met-any-term
 >
@@ -516,7 +542,7 @@ Many English adjectives are the plain opposite of something that has a root (*un
 | *sure* / *confident* (I am) | stance number `th+e` | certain, no exceptions |
 | *proud* (of something) | `wulothamam gobum` after the thing | competence met, held inside, flowing |
 
-> `zubugal gagazam gul.`
+> `zugul gagazam gul.`
 >
 > z-book | [g-clarity | g-not]
 >

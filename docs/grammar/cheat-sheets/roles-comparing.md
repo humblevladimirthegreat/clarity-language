@@ -121,8 +121,8 @@ The anchor can be `amu` *speaker*, `eho` *listener*, a name, or a role pointer o
 | [Their left](../roles.md#viewpoint-laterals) | `zazawan vowogal. zalahen vehahel hewezathaxar.` | *Azawan walks. Alahen sits on their left.* | I |
 | [Up](../roles.md#gravity) | `yel vowogal habahal.` | *Walk up.* | I |
 | [Under](../roles.md#viewpoint-vs-landmark) | `zodogal vezebal hadahel bedehul.` | *The dog sleeps under the tree.* | I |
-| [Above](../roles.md#viewpoint-vs-landmark) | `zubugal vehahel gabahal bedehul.` | *The book sits above the tree.* | I |
-| [Left of a landmark](../roles.md#viewpoint-vs-landmark) | `zubugal gewezathazawan bedehul.` | *The book is left of the tree, from Azawan's view.* | I |
+| [Above](../roles.md#viewpoint-vs-landmark) | `zugul vehahel gabahal bedehul.` | *The book sits above the tree.* | I |
+| [Left of a landmark](../roles.md#viewpoint-vs-landmark) | `zugul gewezathazawan bedehul.` | *The book is left of the tree, from Azawan's view.* | I |
 | [Behind](../roles.md#landmark-facing) | `zodogal vehahel gazavathol bahazal.` | *The dog sits behind the house.* | I |
 
 ## Reading mid-word `x` {#x}
@@ -265,14 +265,14 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [Often, on a recipient](../comparatives.md#bars) | `zazawan vezebel balahen thamam bel hral.` | *Azawan tells Alahen more often than planned.* | I |
 | [Than usual](../comparatives.md#stance-bars) | `zazawan thobam zel gezebul.` | *Azawan is sleepier than usual.* | A |
 | [Than I remember](../comparatives.md#stance-bars) | `zazawan thevom zel gelavam.` | *Azawan is bigger than I remember.* | A |
-| [Than advertised](../comparatives.md#stance-bars) | `zubugal thewam zuel gagazam.` | *The book is less clear than advertised.* | A |
+| [Than advertised](../comparatives.md#stance-bars) | `zugul thewam zuel gagazam.` | *The book is less clear than advertised.* | A |
 | [Than I expected](../comparatives.md#stance-bars) | `zazawan thahom zel gezebul.` | *Azawan is sleepier than I expected.* | A |
 | [Than they used to be](../comparatives.md#stance-bars) | `zazawan thenom zel gezebul.` | *Azawan is sleepier than they used to be.* | A |
 | [As … as possible](../comparatives.md#stance-bars) | `zalahen thezexal zoel hadehum vowogal.` | *Alahen walks as hastily as possible.* | A |
 | [Up to code](../comparatives.md#stance-bars) | `zahazal thumel zoel gabezem.` | *The house is as strong as the rules require.* | A |
 | [More than allowed](../comparatives.md#stance-bars) | `zedehel thegol zel gral.` | *There is more tea than the rules allow.* | A |
-| [Than hoped](../comparatives.md#stance-bars) | `zubugal thevegem zel gagazam.` | *The book is clearer than I hoped.* | A |
-| [Than feared](../comparatives.md#stance-bars) | `zubugal thewedam zuel gagazam.` | *The book is even less clear than I feared.* | A |
+| [Than hoped](../comparatives.md#stance-bars) | `zugul thevegem zel gagazam.` | *The book is clearer than I hoped.* | A |
+| [Than feared](../comparatives.md#stance-bars) | `zugul thewedam zuel gagazam.` | *The book is even less clear than I feared.* | A |
 
 ### Every bar {#every-bar}
 

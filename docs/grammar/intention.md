@@ -73,7 +73,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *lie* | `valahal` |
 | *write* | `varadal` |
 | *fight* | `vavadal` |
-| *book* | `ubugal` |
+| *book* | `ugul` |
 | *see* | `vahahal` |
 | *therefore* | `xodum` |
 | *punch* | `vabahel` |
@@ -132,7 +132,7 @@ z-Ahaben | th-plan-atlas | d-Alahen | v-fight
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zalahen thamar dubugal vahahal.`
+**1.** `zalahen thamar dugul vahahal.`
 
 ::: details Show answer
 z-Alahen | th-plan-sketch | d-book | v-see

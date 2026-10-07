@@ -249,11 +249,11 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 >
 > "Azawan walks carefully."
 
-The easy / hard pair on a quality ranks effort against a bar ([vague amounts](comparatives.md#vague-amounts)): `zubugal thobam zuel gozewem` is *the book is easy* (less effort than usual), and `zel` in place of `zuel` is *hard*.
+The easy / hard pair on a quality ranks effort against a bar ([vague amounts](comparatives.md#vague-amounts)): `zugul thobam zuel gozewem` is *the book is easy* (less effort than usual), and `zel` in place of `zuel` is *hard*.
 
 *Hard to* + a verb puts the same effort scale on whoever would do it: they can, but only with more effort than usual. Write the doer as the ranked item, the bar, the rank word and **`hozewem`**, then the verb with [*can*](intention.md#can) **`xa`**.
 
-> `zazawan thobam zel hozewem dubugal varadaxal.`
+> `zazawan thobam zel hozewem dugul varadaxal.`
 >
 > [z-Azawan | th-PATTERN | z-rank/more | h-effort] | d-book | v-write-able
 >
@@ -345,7 +345,7 @@ English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an 
 | *picky* / *choosy* / *particular* (fussy) | `thobam zel gabehum` (more selective than usual) |
 | *major* / *significant* (matters more than usual) | `thobam zel gamethal` ([important](say-reasons.md#sake-words)) |
 
-> `zubugal thobam zel gadahum.`
+> `zugul thobam zel gadahum.`
 >
 > [z-book | th-PATTERN | z-rank/more | g-cost]
 >

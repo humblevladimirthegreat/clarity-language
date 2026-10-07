@@ -183,7 +183,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧑‍🚀,orbit,oraba,exploration,orbiting seeks exploration,,explore,
 🧑‍🚒,firefight,avova,,,,,
 👮,police,abaze,authority,policing wields authority,,,predication.md#beginner-practice
-🕵️,investigate,une,deduction,investigating follows clues; deduction is the unobservable inference,,implication; logic; derive; interpretation,
+🕵️,investigate,une,inference,investigating follows clues; inference is reasoning from what the clues show,,interpretation; infer,
 💂,guard,agavo,protection,guarding provides protection,,insure; protect,dependents.md#beginner-practice
 🥷,sneak,ezevu,stealth,sneaking moves with stealth,,,speech-moves.md#beginner-practice
 👷,construct,agoza,fabrication,construction builds structures,,build; install; formation; implement; implementation,roles.md#beginner-practice
@@ -824,7 +824,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔦,flashlight,aveha,revelation,flashlight reveals what was dark; revelation is making known,,expose; flash,speech-moves.md#intermediate-practice
 🏮,lantern,alude,guidance,lantern lights the path ahead; guidance is showing the way,,counsel,
 🪔,lamp,alaba,,,,,
-📖,book,ubuga,knowledge,book holds knowledge,,novel; know,word-endings.md#beginner-practice
+📖,book,ugu,knowledge,book holds knowledge,,novel; know,word-endings.md#beginner-practice
 📓,notebook,onodu,,,,,
 📒,ledger,uhu,,,,catalog,
 📃,page-curl,obege,,,,,

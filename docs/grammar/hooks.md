@@ -470,7 +470,7 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 >
 > "Azawan sits on a chair."
 
-> `zazawan dubugal ael bebewel varadal.`
+> `zazawan dugul ael bebewel varadal.`
 >
 > z-Azawan | d-book | [using | b-pen] | v-write
 >
@@ -498,7 +498,7 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 
 To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`ael`**, the same way as [Where?](questions.md#where).
 
-> `yol zazawan dubugal ael bar varadal.`
+> `yol zazawan dugul ael bar varadal.`
 >
 > y-question | z-Azawan | d-book | [using | b-wh] | v-write
 >
@@ -638,7 +638,7 @@ Use `ol` in place of `om` for the exact spot (`ol bamun` *right where I am*).
 >
 > "This dog sits here by me."
 
-> `zazawan dubugal om behon vahahal.`
+> `zazawan dugul om behon vahahal.`
 >
 > z-Azawan | d-book | [near | b-listener] | v-see
 >
@@ -727,7 +727,7 @@ Stacked extra-noun vowels point back the same way: the vowels keep the extra the
 >
 > "Azawan sits on a chair. Alahen sits on it too."
 
-> `zazawan dubugal ael bebewel varadal. zalahen varadal aer.`
+> `zazawan dugul ael bebewel varadal. zalahen varadal aer.`
 >
 > z-Azawan | d-book | [using | b-pen] | v-write . z-Alahen | v-write | with.it
 >

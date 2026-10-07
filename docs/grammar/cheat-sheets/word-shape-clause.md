@@ -135,7 +135,7 @@ Agazan has no word for *is*. The kind of claim comes from the pattern.
 | [Something exists](../predication.md#existence) | a lone new noun | `zodogal.` | *There is a dog.* | B |
 | | a new noun + `/ɡ/` | `zodogal gelavam.` | *There is a big dog.* | B |
 | [Same person](../predication.md#identity) | `gugol` + `/b/`, side by side | `zalahen gugol bazawan.` | *Alahen is Azawan.* | B |
-| [Same one again](../predication.md#identity) | `gugol`, no `/b/` | `zalahen dubugal gugol varadal.` | *Alahen writes the same book.* | B |
+| [Same one again](../predication.md#identity) | `gugol`, no `/b/` | `zalahen dugul gugol varadal.` | *Alahen writes the same book.* | B |
 | [Basically the same](../predication.md#same-endings) | **-m** | `zalahen gugom bazawan` | *Alahen is basically Azawan.* | I |
 | [Not the same](../predication.md#same-endings) | `gul` after the pair | `zalahen gugol bazawan gul` | *Alahen is not Azawan.* | I |
 | [The one who is Azawan](../predication.md#same-endings) | inside a noun phrase | `zobel gugol bazawan` | *the person who is Azawan* | I |

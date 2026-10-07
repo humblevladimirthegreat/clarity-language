@@ -301,7 +301,7 @@ function publishedGlossForRoots(
   for (const root of roots) {
     const row = tables.published.get(root);
     if (!row) {
-      // A listed compound stem fills a root slot too (`zaxubugalahahal`, a role compound on `read`).
+      // A listed compound stem fills a root slot too (`zaxugulahahal`, a role compound on `read`).
       const compound = compoundStems ? tables.compounds.get(root) : undefined;
       if (!compound) {
         allFound = false;
@@ -430,10 +430,10 @@ function hostOverlay(word: MorphWord, tables: ClassifyTables): { hostOverlay?: L
   return row && (row.kind === "sake" || row.kind === "ability") ? { hostOverlay: overlayFromRow(row) } : {};
 }
 
-/** Channels whose hosted `/b/` may be a clause: the grounds, by inference or by pattern (knowing.md#evidence-clause). */
-const GROUNDS_CHANNELS = new Set(["CLUES", "PATTERN"]);
+/** Channels whose hosted `/b/` may be a clause: the grounds, by clues, by pattern, or the premises (knowing.md#evidence-clause). */
+const GROUNDS_CHANNELS = new Set(["CLUES", "PATTERN", "DEDUCED"]);
 
-/** A CLUES or PATTERN `/th/` channel, with or without a holder seam (`thevem`, `thabelazawan`). */
+/** A CLUES, PATTERN or DEDUCED `/th/` channel, with or without a holder seam (`thevem`, `thabelazawan`). */
 export function isGroundsChannel(word: LexWord, tables: ClassifyTables): boolean {
   if (word.pos !== "th") return false;
   const family = word.family;

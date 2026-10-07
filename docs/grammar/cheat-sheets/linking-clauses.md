@@ -177,7 +177,7 @@ The relation word takes the other noun as its `/b/` right after it. Use `/h/` on
 | [Like an event](../relations.md#like-resembles): `barl` | `zazawan vowogal humum barl zadagul vezewel.` | *Azawan walks the way a duck swims.* | B |
 | [Alike](../relations.md#like-resembles) | `zazawan zalahen zal gumum.` | *Azawan and Alahen are alike.* | B |
 | [Exactly like](../relations.md#exactly-like) | `zazawan humul badagul vowogal.` | *Azawan walks exactly like a duck.* | I |
-| [In exchange](../relations.md#exchange) | `zazawan dubugal hehem bahavol vehem.` | *Azawan trades a book for a hammer.* | B |
+| [In exchange](../relations.md#exchange) | `zazawan dugul hehem bahavol vehem.` | *Azawan trades a book for a hammer.* | B |
 | [On behalf of](../relations.md#proxy) | `zazawan hadem balahen vezebel.` | *Azawan tells on behalf of Alahen.* | B |
 
 ### Where, around, between {#locative}

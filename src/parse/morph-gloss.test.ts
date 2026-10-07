@@ -564,6 +564,7 @@ describe("morphGlossLine — th stance letter", () => {
     expectLine("zazawan wezebul thodom vahahal ahahalul.", "z-Azawan | [w-sleepy | th-LIVE] | v-see | eye-leave");
     expectLine("thevem barl zazawan vehahel.", "[th-because | b-that-clause] | z-Azawan | v-sit");
     expectLine("thunem barl zazawan vehahel.", "[th-CLUES | b-that-clause] | z-Azawan | v-sit");
+    expectLine("thugul barl zazawan vehahel.", "[th-DEDUCED.strong | b-that-clause] | z-Azawan | v-sit");
     expectLine("thobal bral barl zazawan vehahel.", "[th-PATTERN.strong | [b-later | b-that-clause]] | z-Azawan | v-sit");
     expectLine("zazawan vehahel th(zalahen vowogal).", "z-Azawan | v-sit | th-ASIDE[z-Alahen | v-walk]");
   });

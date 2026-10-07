@@ -86,7 +86,7 @@ On a *serves* word, the ending says **when the payoff lands**: **-l** lasting, *
 >
 > "My gift serves relatedness in the long term."
 
-> `zubugal gulothar.`
+> `zugul gulothar.`
 >
 > z-book | g-competence-met-immediate
 >
@@ -113,7 +113,7 @@ That ending is **changeability**: how lasting the harm to the sake is, on the sa
 | `…thum` | effort or circumstance may soften the detriment (soft default if unknown) | *modifiable* | **-m** ≈ open to change |
 | `…thur` | the detriment has no lasting impact | *passing* | **-r** ≈ right now |
 
-> `zubugal gulothum.`
+> `zugul gulothum.`
 >
 > z-book | g-competence-unmet-modifiable
 >
@@ -121,7 +121,7 @@ That ending is **changeability**: how lasting the harm to the sake is, on the sa
 
 One noun can carry both a **`tha`** word and a **`thu`** word. The pair can run either way: *good now, costly later* (an immediate **`tha`** word and a lasting **`thu`** word), or *costly now, good later*:
 
-> `zubugal gozothur gulothal.`
+> `zugul gozothur gulothal.`
 >
 > [z-book | g-pleasure-unmet-passing | g-competence-met-lasting]
 >

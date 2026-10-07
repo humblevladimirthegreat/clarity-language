@@ -13,7 +13,11 @@ use [skip-cd] for amplify to not deploy.
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -finish lexicon fill (partial)
 -finish proposals-mnemonic
--review logical deduction
+-logical deduction, leftovers (DEDUCED channel shipped, knowing.md#deduction):
+  -*that doesn't follow* (non sequitur): a stance join after a channel + pole stack (`thugum thoyem berehel thul`) works for a noun premise, but with a clause premise `barl` must come last, so `thul` has no place. Options: allow `thul` right before `barl` when it closes a channel + pole stack; a negative DEDUCED form; or a recipe-track row only. Tried find-english: "follow", "non sequitur", "doesn't follow".
+  -argument vocabulary: *valid*, *sound*, *premise*, *conclusion*, *counterexample* as words about arguments (recipe rows or compounds). `ogove` (⚰️ *conclusion*) is an ending, not a logical conclusion.
+  -check quantifier negation: *not all cats sleep* vs *some cat doesn't sleep* get distinct parseable forms (needed for syllogism drills).
+  -Claritish: whether DEDUCED joins the how-you-know lesson and cheat sheet.
 -parser can optionally output translation guidance
 -allow non-emoji roots
 

@@ -6,7 +6,7 @@ English *if*, *only if*, and *because* each tie a condition to an outcome. Agaza
 
 ### If {#if}
 
-English *if* says a condition is enough to bring about an outcome (*Azawan walks if it rains*). Write the **outcome** first, then the *if* pole (root **`oye`**), then the condition as its `/b/` word. Saying *if* does not claim the condition is true, and other routes to the outcome may still work. (cue: 🚪 *door*: walk through only if it opens)
+English *if* says a condition is enough for an outcome: whenever the condition holds, the outcome holds too (*Azawan walks if it rains*). Write the **outcome** first, then the *if* pole (root **`oye`**), then the condition as its `/b/` word. Saying *if* does not claim the condition is true, and other routes to the outcome may still work. It does not say how the condition leads there either: only that the link holds. (cue: 🚪 *door*: walk through only if it opens)
 
 The pole's role letter follows the outcome. Use `/th/` (**`thoyem`**) when the outcome is an **event** (the verb). Use `/ɡ/` (**`goyem`**) when the outcome is a **noun**. A common noun with a `/ɡ/` word after it says the thing exists ([*there is …*](predication.md#existence)), so a noun outcome says *there is X if there is Y*. Keep the pole and its `/b/` together.
 
@@ -28,7 +28,7 @@ As a plain noun, the same root is `zoyel` *a door*.
 
 ### Only if {#only-if}
 
-English *only if* (or *needs*) says the outcome cannot happen without the condition. Use the same shape with the *only if* pole (root **`olu`**): **`tholum`** after a verb, **`golum`** after a noun. Other things may also be required, and again you do not claim the condition is true. (cue: 🧻 *paper-roll*: without it the situation does not run)
+English *only if* (or *needs*) says the outcome cannot hold without the condition. Use the same shape with the *only if* pole (root **`olu`**): **`tholum`** after a verb, **`golum`** after a noun. Other things may also be required, and again you do not claim the condition is true. (cue: 🧻 *paper-roll*: without it the situation does not run)
 
 > `zazawan vowogal tholum berehel.`
 >
