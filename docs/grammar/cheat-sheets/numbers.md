@@ -206,7 +206,7 @@ A digit string under `/h/` with no relation word before it. Clock is `h_…`; a 
 | Job | How | Stage |
 |-----|-----|-------|
 | [Clock](../numbers-applied.md#time) | digit-string `ro` as bare `/h/`, 24-hour, fields left to right (`h_15,30`, `h_15,30,00`) | I |
-| [Date](../numbers-applied.md#time) | `_` with `eo` (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`) | I |
+| [Date](../numbers-applied.md#time) | `_` with `oe` (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`) | I |
 | [Day of the week](../numbers-applied.md#time) | ordinal on `elaga`, from Monday (`zelagam grewol` *Monday*) | I |
 | [Month or year](../numbers-applied.md#time) | ordinal on `umuha`; label on `avawe` (`zavawem g_1962`) | I |
 
@@ -215,7 +215,7 @@ A digit string under `/h/` with no relation word before it. Clock is `h_…`; a 
 | [At a time](../numbers-applied.md#time) | `h_15,30 zazawan vowogal.` | *At 15:30 Azawan walks.* | I |
 | [In March](../numbers-applied.md#time) | `zazawan vowogal huwem bumuham grerel.` | *Azawan walks in March.* | I |
 | [In 1962](../numbers-applied.md#time) | `zazawan vowogal huwem bavawem g_1962.` | *Azawan walks in 1962.* | I |
-| [From … to](../numbers-applied.md#time) | `zazawan ul b_9 vowogal eol b_17.` | *Azawan walks from 9:00 to 17:00.* | I |
+| [From … to](../numbers-applied.md#time) | `zazawan ul b_9 vowogal oel b_17.` | *Azawan walks from 9:00 to 17:00.* | I |
 
 Digitless `hrol` is *some clock or date*; `hror` asks *when?* *Three times* (`hrarel`) is not a clock time.
 
@@ -403,7 +403,7 @@ Two marker vowels in one word: speak `u` first.
 | [`#_`](../numbers.md#stacked-markers) | **r-u-o** | a label whose value is negative: a basement floor (`gruowol`) | A |
 | [`+-`](../numbers.md#stacked-markers) | **r-u-a** | a symmetric error bound ±N (`gruarel`) | A |
 | [`#-`](../numbers.md#stacked-markers) | **r-u-e** | count from the end | A |
-| [`_#`](../numbers.md#stacked-markers) | **r-e-o** | a calendar date | A |
+| [`_#`](../numbers.md#stacked-markers) | **r-o-e** | a calendar date | A |
 
 Those four are the whole set.
 

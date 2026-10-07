@@ -290,7 +290,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 12 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling hooks. Not join **`zam`** as a restrictor |
 | 14 | `spans.md` | **exists** | Writing fences `[ ]` `( )` `< >`; **`~`/`@`**; PoS = outer slot; **aside** = `th(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer one-token cites. The mention marker (`glelel`) is Intermediate |
 | 15 | `numbers.md` | **exists** | spelled counts (**`grarel`**) and ordinals (**`gredul`**) with the digit syllables; digitless **`gral`** (*more than one*); no shorthand (Intermediate) with **-x** on the noun | No `/v/` `/h/` `/y/` `/x/` number uses, exponents, ranges, percent, measures (later). **-x** from plurality is recycle |
-| 15 | `comparatives.md` | **exists** | Rank fence **`e`/`ae`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`eo`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
+| 15 | `comparatives.md` | **exists** | Rank fence **`e`/`ae`/`ue`** + SHARED scale `/ɡ/`; single-item superlative; equative **`oe`** | **Needs:** joins Beginner rank joins. No measure phrases (Intermediate). No numbers Intermediate |
 | 15 | `causation.md` | **exists** | Two-place poles: outcome host + `/b/` condition; `/th/` event vs `/ɡ/` noun; *if* **`oye`** vs *only if* **`olu`**; no cause-arrow word | **Needs:** core extra nouns + dependents **`darl`**. *Because* / **`IFF`** / **CAUSE** are Intermediate — do not use |
 | 16 | `sakes.md` | **exists** | Six needs; `/ɡ/` on a belonging vs `/th/` on the clause; **`tha`** met + contact **-l / -m / -r**; **`thu`** unmet changeability; unowned **`gobum`** + `/w/` need | **Not** prescription **`the`** or motive **`tho`** (Intermediate). Not ability (non-sake + `x` vowel). Not MAY. Not bare need-as-topic |
 | 16 | `intention.md` | **exists** | PLAN and host ability contrasts: **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (sake roots). Not role compounds (vowel *left* of `x`). Not conversation length (named citation or `/y/`) |
@@ -324,7 +324,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 11 | `joins.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from this stage | 4–6 items |
 | 12 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; fill-ask arity; occasion **`har`**; yes/no with single-item/standalone; fill-ask answers | |
 | 12 | `questions.md` | Advanced | — | no Advanced stage | |
-| 12 | `hooks.md` | Intermediate | **exists** | Ending grids; parallel chains; discourse placements; extra-noun stacks (`aol` / `eol` / `ual` / `uol` / `ael` / `uel`) and extra-noun **-m**; stacked point-back (`aor` / `aer` / `uor`) | |
+| 12 | `hooks.md` | Intermediate | **exists** | Ending grids; parallel chains; discourse placements; extra-noun stacks (`aol` / `oel` / `ual` / `uol` / `ael` / `uel`) and extra-noun **-m**; stacked point-back (`aor` / `aer` / `uor`) | |
 | 12 | `hooks.md` | Advanced | **exists** | Extra-noun **hook compounds** (citation keeps **-l** / **-m**, then the extra-noun hook; lemma is the citation; `/d/` landmark) | Recycle extra-noun grid. Not same-role *including*. Not two-word `vowogal ul …` |
 | 13 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; dependent *when* | |
 | 13 | `restrictors.md` | Advanced | — | no Advanced stage | |
@@ -393,7 +393,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Emotion compose | `sakes.md` Intermediate |
 | Numbered alternatives | `numbers-applied.md` Intermediate |
 | PLAN bar (`thamam zel`) | `comparatives.md` Intermediate |
-| Sake bars (`thegatham zeol`) | `sakes.md` Intermediate |
+| Sake bars (`thegatham zoel`) | `sakes.md` Intermediate |
 | Channel, FORMER, ABIL, REQUIRE, attitude bars | `comparatives.md` Advanced |
 | `ROOT l NUM` derivation | `numeric-derivation.md` Advanced |
 | Channels on a generalization | `knowing.md` Advanced |

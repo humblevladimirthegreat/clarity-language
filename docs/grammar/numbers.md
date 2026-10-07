@@ -1194,7 +1194,7 @@ Write the role letter, symbol stack, then digits: `gruowol` labels a floor numbe
 | **`#_`** | **r-u-o** | A digit-string label whose value is negative (for example, a below-ground floor label). |
 | **`+-`** | **r-u-a** | A symmetric error bound of ±N. |
 | **`#-`** | **r-u-e** | Count from the end ([from the end](#from-the-end)). |
-| **`_#`** | **r-e-o** | A calendar date, day then month then year ([time](numbers-applied.md#time)). |
+| **`_#`** | **r-o-e** | A calendar date, day then month then year ([time](numbers-applied.md#time)). |
 
 These four are the whole set. The other two standard stacks, **r-a-o** and **r-a-e**, are not used. Labels carry no sign (a dialing code `+44` is written `_44`), and a count and a rank are separate markers on separate words.
 

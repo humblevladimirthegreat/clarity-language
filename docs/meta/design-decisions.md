@@ -123,9 +123,7 @@ A full name is the given name plus a family name on `/ɡ/` + **-n** ([word-endin
 
 ### Stacked vowels
 
-Only the six standard stacks exist (`ua` `uo` `ue` `ae` `ao` `eo`), always in the order **u**, **a**, **e**, **o**. A reversed or extra pair is too easy to confuse by ear with its standard twin (`oe` vs `eo`).
-
-**o comes last.** **u** is always first and **o** always last, so the two rounded vowels never contrast in the same slot. The tie and its family were once `oe`, which differed from `ue` only by **o** versus **u** in first place. **a** before **e** keeps `ae`: `ea` would invite the English one-vowel reading of *ea* (*sea*).
+Only the six standard stacks exist (`ao` `ua` `uo` `ae` `oe` `ue`). A reversed or extra pair is too easy to confuse by ear with its standard twin (`eo` vs `oe`). The former reversed-sequence join `eo` was removed for this reason.
 
 ### Closed-root endings
 
@@ -136,7 +134,7 @@ Only the six standard stacks exist (`ua` `uo` `ue` `ae` `ao` `eo`), always in th
 
 ### Hooks and relations
 
-- **`eol` stays** although `al` already spans numbers. For other nouns, *A, including B* depends on whether A names a group, which the syntax cannot see.
+- **`oel` stays** although `al` already spans numbers. For other nouns, *A, including B* depends on whether A names a group, which the syntax cannot see.
 - **No `el` / `em` / `er` possession series by time horizon** (`rejected/el-em-er-possession.md`).
 - **Stacked role vowels:** co-agent, opponent and beneficiary were not given a stack. Co-agent is rare as a kind and the join-relation *with* covers it; an opponent is usually `u`; a beneficiary overlaps recipient `o`, and *for* is the hook `el`.
 

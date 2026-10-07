@@ -119,8 +119,8 @@ export function numberStemToSpeechStressed(stem: NumberStem): {
   stress: number[];
 } {
   const stress: number[] = [];
-  // Calendar-ordinal dates (`_` + `#`, numbers.md § Time) speak the digraph marker `reo`.
-  const marker = stem.calendarOrdinal ? "reo" : markerToSpeech(stem.marker);
+  // Calendar-ordinal dates (`_` + `#`, numbers.md § Time) speak the digraph marker `roe`.
+  const marker = stem.calendarOrdinal ? "roe" : markerToSpeech(stem.marker);
   // Spoken comma: `th` + the marker's first vowel (numbers.md § Saying it aloud).
   const separator = `th${marker.charAt(1)}`;
   let text = marker;

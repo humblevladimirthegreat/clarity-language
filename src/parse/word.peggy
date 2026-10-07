@@ -57,7 +57,7 @@
   }
 
   function writingMarkerFromSpeechV(v) {
-    if (v === "eo") return "_";
+    if (v === "oe") return "_";
     if (v === "ue") return "#-";
     if (v === "uo") return "#_";
     if (v === "ua") return "+-";
@@ -121,7 +121,7 @@ function separatorVowel(markerV) {
   }
 
   const EXTRA_NOUN_HOOKS = [
-    "aol", "aom", "ael", "aem", "eol", "eom", "ual", "uam", "uol", "uom", "uel", "uem",
+    "aol", "aom", "ael", "aem", "oel", "oem", "ual", "uam", "uol", "uom", "uel", "uem",
     "al", "am", "ol", "om", "el", "em", "ul", "um",
   ];
   const ROOT_VOWELS = "aeou";
@@ -409,14 +409,14 @@ SpeechNumberStem
     &{ return body.seps.every(function (sep) { return sep === separatorVowel(v); }); }
     digitless:SpeechDigitlessTail? {
       const stem = { marker: writingMarkerFromSpeechV(v), groups: body.groups };
-      if (v === "eo") stem.calendarOrdinal = true;
+      if (v === "oe") stem.calendarOrdinal = true;
       if (digitless) foldDigitlessTail(stem, digitless);
       else foldBareExponent(stem);
       return stem;
     }
 
 SpeechMarkerV
-  = "eo" / "ue" / "uo" / "ua" / [aeou]
+  = "oe" / "ue" / "uo" / "ua" / [aeou]
 
 // Groups after the first are opened by separator `th` + the marker's first vowel.
 SpeechDigitGroups
@@ -507,8 +507,8 @@ hook
     }
 
 HookForm
-  = ("ao" / "ae" / "eo" / "ua" / "uo" / "ue" / [aeou]) [lmn] { return text(); }
-  / ("ao" / "ae" / "eo" / "ua" / "uo" / "ue" / [aeou]) "r" { return text(); }
+  = ("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) [lmn] { return text(); }
+  / ("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) "r" { return text(); }
 
 // ── Prefixed words (PoS + body) ─────────────────────────────────────────────
 
@@ -544,7 +544,7 @@ PrefixedBody
 // vowel, so a `w` right after the role letter is always this marker. A stacked vowel is two tags at once
 // (`zwaer` *A and E*). enforce.ts keeps the slots and endings.
 tagWord
-  = "w" vowels:("ao" / "ae" / "eo" / "ua" / "uo" / "ue" / [aeou]) ending:Ending plural:PluralSuffix? WordEnd {
+  = "w" vowels:("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,
@@ -568,7 +568,7 @@ xWord
 // pronouns.md#role-pointers). The pointer vowel picks the event: `a` same, `o` other, `e` self, `u` unsaid.
 // **-r** names the participant, **-l** a new one of its kind, **-m** its part in the event.
 RolePointer
-  = roleV:("ae" / "ao" / "eo" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" pointerV:[aeou] end:[rlm] plural:PluralSuffix? WordEnd {
+  = roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" pointerV:[aeou] end:[rlm] plural:PluralSuffix? WordEnd {
       return {
         ending: end,
         plural: !!plural,
@@ -584,7 +584,7 @@ RolePointer
 // Optional tail: ability (`x` + stance vowel) on `/ɡ/` only (*fit to be* that role, intention.md § Ability),
 // or label scope (`th` + scope vowel, predication.md#label-scope); one seam per word.
 RoleCompound
-  = roleV:("ae" / "ao" / "eo" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" root:ContentRoot rest:("x" r:ContentRoot { return r; })* tail:RoleTail? ending:Ending plural:PluralSuffix? WordEnd {
+  = roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" root:ContentRoot rest:("x" r:ContentRoot { return r; })* tail:RoleTail? ending:Ending plural:PluralSuffix? WordEnd {
       const fields = {
         leftRoots: [],
         roleVowel: roleV,
@@ -605,13 +605,13 @@ RoleTail
 
 // Simplex or stacked seam after mid-word `th` (sakes.md; predication.md#label-scope).
 SeamVowel
-  = "ao" / "ae" / "eo" / "ua" / "ue" / "uo" / [aeou]
+  = "ao" / "ae" / "oe" / "ua" / "ue" / "uo" / [aeou]
 
 // Sakes: sake root + `th` + stance vowel (sakes.md); optional emotion
 // tail = horizon letter + locus hook vowel(s), then the motion ending (sakes.md#emotion-compose).
 // On a non-sake host the tailed shape is a viewpoint lateral (classify.ts).
 ValueCompound
-  = host:CompoundHost "th" stanceV:SeamVowel tail:(h:[lmr] l:("ao" / "ae" / "eo" / "ua" / "uo" / "ue" / [aeou]) { return [h, l]; })? ending:Ending plural:PluralSuffix? WordEnd {
+  = host:CompoundHost "th" stanceV:SeamVowel tail:(h:[lmr] l:("ao" / "ae" / "oe" / "ua" / "uo" / "ue" / [aeou]) { return [h, l]; })? ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,
@@ -636,7 +636,7 @@ LateralCompound
         }),
       };
     }
-  / dir:ContentRoot "th" roleV:("ae" / "ao" / "eo" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" pointerV:[aeou] "r" plural:PluralSuffix? WordEnd {
+  / dir:ContentRoot "th" roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" pointerV:[aeou] "r" plural:PluralSuffix? WordEnd {
       return {
         ending: "r",
         plural: !!plural,
@@ -705,7 +705,7 @@ OrdinaryCompound
 // A stacked-vowel role pointer after a holder host and its grade (`thunemuexar`, knowing.md#holder).
 // classify.ts checks the host; a single role vowel there reads as an ability shape first.
 HeldPointer
-  = host:$((!(("ae" / "ao" / "eo" / "ua" / "ue" / "uo") "x" [aeou] "r" "x"? WordEnd) [a-z])+) roleV:("ae" / "ao" / "eo" / "ua" / "ue" / "uo") "x" pointerV:[aeou] "r" plural:PluralSuffix? WordEnd {
+  = host:$((!(("ae" / "ao" / "oe" / "ua" / "ue" / "uo") "x" [aeou] "r" "x"? WordEnd) [a-z])+) roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo") "x" pointerV:[aeou] "r" plural:PluralSuffix? WordEnd {
       return {
         ending: "r",
         plural: !!plural,
@@ -765,7 +765,7 @@ StandInCoda
   = "rl" / "rm" / "rn" / "rth"
 
 JoinSeries
-  = "ao" / "ua" / "uo" / "ae" / "eo" / "ue" / "a" / "e" / "o" / "u"
+  = "ao" / "ua" / "uo" / "ae" / "oe" / "ue" / "a" / "e" / "o" / "u"
 
 // ── Plain content / foreign ─────────────────────────────────────────────────
 

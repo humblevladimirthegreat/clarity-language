@@ -472,8 +472,8 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 | *benefit* / *benefits Alahen* | `thanatham balahen` | the act met Alahen's sake |
 | *advantage* (a lead over someone) | `zel` with the scale | rank against the other |
 | *satisfy* (you) | `thanatham behon` | the act met your sake |
-| *satisfy* (a requirement) | `thumel zeol` + scale | tie against the rule: it meets the requirement |
-| *suitable* / *appropriate* (for a need) | `gulotham` or `thegatham zeol` | met, or enough for the need |
+| *satisfy* (a requirement) | `thumel zoel` + scale | tie against the rule: it meets the requirement |
+| *suitable* / *appropriate* (for a need) | `gulotham` or `thegatham zoel` | met, or enough for the need |
 | *more important than* | `zel` between the nouns, then `gamethal` | rank on the lasting met sake |
 | *upset* | `wanathumar gobum` | relatedness, unmet, held inside, surging |
 | *upset for someone* | `wanathumem gobum` + `/b/` | unmet relatedness on their behalf |

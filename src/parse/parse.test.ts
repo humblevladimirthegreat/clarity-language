@@ -656,10 +656,10 @@ describe("parse — comparatives.md bars", () => {
       ["zazawan thobam zel gezebul.", "thobam"],
       ["zazawan thamam zel bral vevahal.", "thamam"],
       ["zugul thohum balahen zuel garagam.", "thohum"],
-      ["zedehel thegatham zeol gral.", "thegatham"],
+      ["zedehel thegatham zoel gral.", "thegatham"],
       ["zugul thodom zuem garagam.", "thodom"],
-      ["zalahen thezexal zeol hadehum vowogal.", "thezexal"],
-      ["zahazal thumel zeol gabezem.", "thumel"],
+      ["zalahen thezexal zoel hadehum vowogal.", "thezexal"],
+      ["zahazal thumel zoel gabezem.", "thumel"],
       ["zugul thevegem zel gagazam.", "thevegem"],
       ["zazawan thahomalahen zel gezebul.", "thahomalahen"],
     ] as const) {

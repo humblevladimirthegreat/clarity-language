@@ -93,7 +93,7 @@ Motion ending: **-l** still, **-m** flowing, **-r** surging.
 | `ao` | the atmosphere of the situation | `e` | felt on someone's behalf |
 | `uo` | can't place where it comes from | `u` | moving off: avoiding, hiding |
 | `o` | aimed at someone | `ua` | out of fight: giving up |
-| `eo` | turning to someone for comfort | `ae` | using yourself to placate |
+| `oe` | turning to someone for comfort | `ae` | using yourself to placate |
 
 ## [Tone marks](tone-marks.md) {#tone-marks}
 

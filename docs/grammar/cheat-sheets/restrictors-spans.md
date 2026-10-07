@@ -53,7 +53,7 @@ The vowel picks the reading and the ending says how open the list is: **-l** clo
 |--------|-----|---------|-------|
 | [**`hel` / `hem`**](../restrictors.md#more-occasions) | priority | *preferably when A ≻ when B* | I |
 | [**`hael` / `haem`**](../restrictors.md#more-occasions) | in order | *first when A, then when B* | I |
-| [**`heol` / `heom`**](../restrictors.md#more-occasions) | equal frequency | *equally when A and when B* | I |
+| [**`hoel` / `hoem`**](../restrictors.md#more-occasions) | equal frequency | *equally when A and when B* | I |
 | [**`huel` / `huem`**](../restrictors.md#more-occasions) | last-first | *as a last resort when A* | I |
 
 With several occasions before `huel`, the last listed is the first choice.

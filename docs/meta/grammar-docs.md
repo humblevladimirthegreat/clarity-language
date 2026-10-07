@@ -81,7 +81,7 @@ If a pairing, slot, or word order existed only in an earlier draft of the docs o
 |-------|--------------|--------|
 | “on the right, not a matching word on the left”; “English *both A and B* still uses this one closer” | Only makes sense if they knew left fencing | Items, then the join (`A B zam`) |
 | “not a mid-chain extender”; warning `A zam B` / `A vol B val C` | Only if they knew infix joins | The legal nest: `A B vol C val` |
-| “still X; it is not a sixth marker / fourth umbrella / new vowel job” | Corrects a withdrawn proposal | Date is digit-string `_` + `eo`; **-n** names a titled frame |
+| “still X; it is not a sixth marker / fourth umbrella / new vowel job” | Corrects a withdrawn proposal | Date is digit-string `_` + `oe`; **-n** names a titled frame |
 
 **Test:** would a reader who never saw a previous version invent that wrong shape from *this page* and from English? If the only reason to mention the hole is an old doc, delete the sentence. Keep a [Compare with](#compare-with) beat only when the live sibling (or an English false friend they would type *now*) is the mix-up.
 

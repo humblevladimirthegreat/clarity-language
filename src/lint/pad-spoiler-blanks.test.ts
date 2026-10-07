@@ -75,7 +75,7 @@ z-Azawan | v-sit
     const end = md.indexOf("## Intermediate", start);
     const slice = md.slice(start, end);
     const out = padExerciseSpoilerBlanks(slice);
-    assert.match(out, /`zahaben zazawan zeol gezehom\.`\n\n\[z-Ahaben/);
+    assert.match(out, /`zahaben zazawan zoel gezehom\.`\n\n\[z-Ahaben/);
     assert.match(out, /\[z-Ahaben \| z-rank\/more \| g-agility\]\n\n\*Ahaben is the most agile\.\*/);
   });
 });

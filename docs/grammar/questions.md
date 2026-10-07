@@ -405,7 +405,7 @@ The statement stays a statement; the tag **`yol yael.`** is its own short questi
 
 ### Polar stance: fuller inventory
 
-Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), and *sure* (**`yaol`**). The rest of the map is *reject this option*, *reject the question itself*, and *decline to answer*. When you answer, the first vowel gives the family (**`a`** add: accept, **`u`** undo), and the second vowel says what you are answering (**`e`** the claim or the order, **`o`** this option, **`a`** the question's own premise). Declining (**`eo`**) answers nothing, so it stands apart: you pass the question on.
+Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), and *sure* (**`yaol`**). The rest of the map is *reject this option*, *reject the question itself*, and *decline to answer*. The first vowel gives the family (**`a`** add: accept, **`u`** undo, **`o`** one). The second vowel says what you are answering (**`e`** the claim or the order, **`o`** this option, **`a`** the question's own premise).
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -414,9 +414,9 @@ Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), 
 | **`ao`** (`yaol`) | take up an offered option | *sure* | **a** ≈ add + **o** ≈ one |
 | **`uo`** (`yuol`) | reject this option | *not that* | **u** ≈ undo + **o** ≈ one |
 | **`ua`** (`yual`) | reject the question's premise | *neither: the question doesn't apply* | **u** ≈ undo + **a** ≈ add (undo what the question added) |
-| **`eo`** (`yeol`) | decline to answer | *I won't answer* | **e** ≈ order + **o** ≈ one (pass to the next one in line) |
+| **`oe`** (`yoel`) | decline to answer | *I won't answer* | **o** ≈ one + **e** ≈ order (pass to the next one in line) |
 
-**`yual`** answers a question that assumes something false. *Have you stopped lying?* has no honest *yes* or *no* if you never lied. **`yual.`** says so in one word, without accepting the frame. It judges the question, not the speaker's willingness: for a refusal to answer, use **`yeol`** (below).
+**`yual`** answers a question that assumes something false. *Have you stopped lying?* has no honest *yes* or *no* if you never lied. **`yual.`** says so in one word, without accepting the frame. It judges the question, not the speaker's willingness: for a refusal to answer, use **`yoel`** (below).
 
 > `yol zazawan vowogal ul bahazal. yual.`
 >
@@ -436,7 +436,7 @@ Each stance word takes one of three endings, on the same settled-to-passing scal
 | **`ao`** | `yaol` *sure* | `yaom` *okay* | `yaor` *fine, for now* / *let's try it* |
 | **`uo`** | `yuol` *not that* | `yuom` *nah* | `yuor` *not that, for now* / *not right now* |
 | **`ua`** | `yual` *the question doesn't apply* | `yuam` *it's more complicated than that* | `yuar` *it doesn't apply, for now* (the premise fails at the moment) |
-| **`eo`** | `yeol` *I won't answer* | `yeom` *I'd rather not say* | `yeor` *pass, for now* |
+| **`oe`** | `yoel` *I won't answer* | `yoem` *I'd rather not say* | `yoer` *pass, for now* |
 
 **`yaer`** takes a claim on board without committing to it. English *oh, I see* often sounds like agreement; **`yaer`** says only that you hold the claim for now. You can restate the claim after the stance word:
 
@@ -454,9 +454,9 @@ Each stance word takes one of three endings, on the same settled-to-passing scal
 >
 > "Did Azawan walk away from the house? Not as things stand: Azawan isn't at the house."
 
-**`yeol`**, **`yeom`** and **`yeor`** decline to answer without saying *no* and without judging the question. Nobody should hear them as a denial or as a rejected frame.
+**`yoel`**, **`yoem`** and **`yoer`** decline to answer without saying *no* and without judging the question. Nobody should hear them as a denial or as a rejected frame.
 
-> `yol zalahen vezebal. yeor.`
+> `yol zalahen vezebal. yoer.`
 >
 > y-question | z-Alahen | v-sleep . y-decline-for-now
 >
@@ -473,7 +473,7 @@ A command (**`yel`**) or request (**`yem`**) is not a claim, so *true* and *fals
 | **`ao`** take it up as an offer | `yaol` *sure, I'll take that on* | `yaom` *okay, fine* | `yaor` *fine, for now* |
 | **`uo`** reject this option | `yuol` *not that* | `yuom` *nah* | `yuor` *not that, for now* |
 | **`ua`** reject the premise | `yual` *that can't be done* | `yuam` *it's more complicated than that* | `yuar` *it doesn't apply, for now* |
-| **`eo`** decline to answer | `yeol` *I won't say* | `yeom` *I'd rather not say* | `yeor` *pass, for now* |
+| **`oe`** decline to answer | `yoel` *I won't say* | `yoem` *I'd rather not say* | `yoer` *pass, for now* |
 
 After a flat command, `yael` / `yuel` are the plain comply / refuse. After a request (**`yem`**), the **o** words fit better, because you are choosing whether to take it on.
 
@@ -509,7 +509,7 @@ For a stronger stance, use the [tone mark](speech-moves.md#tone-marks) **`!!`**,
 | *Want this?* / offer | **`yaol`**, reject-this with **`yuol`** | **`yaom`**, reject-this with **`yuom`** |
 | Command (**`yel`**) | **`yael`**, refuse with **`yuel`** | **`yaem`**, refuse with **`yuem`** |
 | Loaded question | **`yual`** | **`yuam`** |
-| Declined question | **`yeol`** | **`yeom`** |
+| Declined question | **`yoel`** | **`yoem`** |
 
 A stance word can stand alone (`yael.`), sit before a body (`yael zazawan vowogal.`), or come as a confirm tag in the next turn after `.`. After a stance word plus a body, continue with **`/x/`**; write a second polar word only in a new turn. When you think aloud on your own, **`yuel`** can mark a correction, **`yaol`** the next step, and **`yael`** a point you settle.
 
@@ -547,7 +547,7 @@ After a request or a suggestion, **`yol yaol.`** asks *okay?*: will they take it
 | `yol yaol.` | ask them to take up a request or an offer | *…, okay?* / *…, deal?* |
 | `yol yuol.` | offer them the refusal | *…, or would you rather not?* |
 | `yol yaer.` | ask them to accept it for now | *…, can we go with that for now?* |
-| `yol yeom.` | after a question, offer them a pass | *…, or would you rather not say?* |
+| `yol yoem.` | after a question, offer them a pass | *…, or would you rather not say?* |
 
 Soft **`yom`** asks more gently (`yom yaol.` *…, if that's okay?*), and the other polar words and endings make tags the same way.
 
@@ -811,7 +811,7 @@ y-question | z-Azawan | [v-tell | v-not] . y-yes
 **2.** *When does Ahaben sit?* Then: *I'll pass for now.*
 
 ::: details Show answer
-`yol har zahaben vehahel. yeor.`
+`yol har zahaben vehahel. yoer.`
 
 y-question | h-when | z-Ahaben | v-sit . y-decline-for-now
 :::

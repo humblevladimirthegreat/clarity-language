@@ -402,17 +402,17 @@ With **-r**, it is the tool used in **that** event.
 
 **Compare with:** *writes with a pen* on the same clause is still the hook **`ael`** plus `/b/`. The compound names the tool as its own noun.
 
-### Goal, source, path (`eo` / `ua` / `uo`) {#goal-source-path}
+### Goal, source, path (`oe` / `ua` / `uo`) {#goal-source-path}
 
 A movement has three more parts: where it heads, where it comes out of, and the way it goes. Each uses the two-vowel pair of the matching [extra-noun hook](hooks.md#extra-noun-intermediate).
 
 | Agazan | Names | English | Cue |
 |--------|-------|---------|-----|
-| `…eoxROOT…` | the **goal** of the event | *a destination* (from *go*), *a target* | **eo**, as in **`eol`** *toward* |
+| `…oexROOT…` | the **goal** of the event | *a destination* (from *go*), *a target* | **oe**, as in **`oel`** *toward* |
 | `…uaxROOT…` | the **source** it comes out of | *a spring* (from *pour*), *a quarry* | **ua**, as in **`ual`** *out of* |
 | `…uoxROOT…` | the **path** it goes by | *a walkway* (from *walk*), *a route* | **uo**, as in **`uol`** *through* |
 
-> `zazawan deoxuvudel vahahal.`
+> `zazawan doexuvudel vahahal.`
 >
 > z-Azawan | d-goal-x-footprints | v-see
 >
@@ -430,7 +430,7 @@ A movement has three more parts: where it heads, where it comes out of, and the 
 >
 > "Azawan pours wine. Alahen sees where it was poured from."
 
-**Compare with:** the scene **`e`** is where the whole event happens. A goal, source or path is one end or the route of a movement. *Walks toward the station* on the same clause is the hook **`eol`** plus `/b/`.
+**Compare with:** the scene **`e`** is where the whole event happens. A goal, source or path is one end or the route of a movement. *Walks toward the station* on the same clause is the hook **`oel`** plus `/b/`.
 
 ### Result (`ao`) {#result}
 
@@ -474,9 +474,9 @@ With **-r**, it is the one who pays for **that** event.
 
 ### Stacked vowels on a pointer {#stacked-pointers}
 
-Each two-vowel pair also makes a [role pointer](#role-pointers-family): leave out the stem, and pointer vowel **`a`** reads the latest event. If that clause has the matching hook (**`ael`**, **`eol`**, **`ual`**, **`uol`**, **`uel`**) with its `/b/`, the pointer is that `/b/`; otherwise it is the event’s own tool, goal, and so on.
+Each two-vowel pair also makes a [role pointer](#role-pointers-family): leave out the stem, and pointer vowel **`a`** reads the latest event. If that clause has the matching hook (**`ael`**, **`oel`**, **`ual`**, **`uol`**, **`uel`**) with its `/b/`, the pointer is that `/b/`; otherwise it is the event’s own tool, goal, and so on.
 
-> `zazawan vowogal eol bahazal. zalahen deoxar vahahal.`
+> `zazawan vowogal oel bahazal. zalahen doexar vahahal.`
 >
 > z-Azawan | v-walk | [toward | b-house] . z-Alahen | d-←goal.same | v-see
 >
@@ -492,7 +492,7 @@ Each two-vowel pair also makes a [role pointer](#role-pointers-family): leave ou
 | Agazan | Names | Its `/b/` comes from |
 |--------|-------|----------------------|
 | `daexar` | the tool of the latest event | **`ael`** |
-| `deoxar` | where it headed | **`eol`** |
+| `doexar` | where it headed | **`oel`** |
 | `duaxar` | where it came out of | **`ual`** |
 | `duoxar` | the way it went | **`uol`** |
 | `daoxar` | what it made | (always the event’s own) |
@@ -741,7 +741,7 @@ z-Azawan | v-write . z-Ahaben | d-←instrument-x-write | v-see
 **3.** *Alahen goes. Azawan sees where Alahen goes.*
 
 ::: details Show answer
-`zalahen vuvudel. zazawan deoxuvuder vahahal.`
+`zalahen vuvudel. zazawan doexuvuder vahahal.`
 
 z-Alahen | v-go . z-Azawan | d-←goal-x-go | v-see
 :::
@@ -804,7 +804,7 @@ z-Azawan | v-walk . z-Alahen | d-←path-x-walk | v-see
 *Azawan walks. Alahen sees the way Azawan walks.*
 :::
 
-**5.** `zazawan vuvudel eol behebal. zalahen deoxar vahahal.`
+**5.** `zazawan vuvudel oel behebal. zalahen doexar vahahal.`
 
 ::: details Show answer
 z-Azawan | v-go | [toward | b-ship] . z-Alahen | d-←goal.same | v-see

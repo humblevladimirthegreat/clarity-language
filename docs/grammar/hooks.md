@@ -446,7 +446,7 @@ A hook + `/b/` right after a landmark (the `/b/` of another extra, or of a word 
 >
 > "Azawan walks in the village near me."
 
-Several extra-noun hooks on one clause are several extras (*from* one landmark *toward* another). To keep the second one on the clause, put a non-`/b/` word between the first landmark and the next hook; the verb can sit there (`ul bezedel vowogal eol bedehal`). Extra-noun **-n** makes the hook and its landmark a name, as on same-role hooks; the landmark keeps its own ending.
+Several extra-noun hooks on one clause are several extras (*from* one landmark *toward* another). To keep the second one on the clause, put a non-`/b/` word between the first landmark and the next hook; the verb can sit there (`ul bezedel vowogal oel bedehal`). Extra-noun **-n** makes the hook and its landmark a name, as on same-role hooks; the landmark keeps its own ending.
 
 With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the general setting, not the exact contact, source, tool, or opponent. It is not a second copy of the same extra.
 
@@ -456,7 +456,7 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 | **`al`** | *in* | **`am`** | *amid* | **a** ≈ add (into a volume); **-m** that volume as the setting |
 | **`aol`** | *on* | **`aom`** | *over* | **ao** ≈ add onto one face; **-m** that face as the setting |
 | **`ol`** | *at* | **`om`** | *near* | **o** ≈ one (the one point); **-m** that point as the setting |
-| **`eol`** | *toward* | **`eom`** | *in the direction of* | **e** ≈ for + **o** ≈ at: headed for one point; **-m** that aim as the setting |
+| **`oel`** | *toward* | **`oem`** | *in the direction of* | **o** ≈ at + **e** ≈ for: aimed at one point; **-m** that aim as the setting |
 | **`ul`** | *from* | **`um`** | *away from* | **u** ≈ undo (leave); **-m** that origin as the setting |
 | **`ual`** | *out of* | **`uam`** | *out from among* | **ua** ≈ leave a volume; **-m** that volume as the setting |
 | **`uol`** | *through* | **`uom`** | *by way of* | **uo** ≈ leave via one path; **-m** that path as the setting |
@@ -476,7 +476,7 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 >
 > "Azawan writes a book with a pen."
 
-**Compare with:** hook **`eol`** names where a path **ends** (*toward X*). A [sequence](joins.md#sequence-ae) join on one noun, **`zael`**, names where it **starts** (*from X on*).
+**Compare with:** hook **`oel`** names where a path **ends** (*toward X*). A [sequence](joins.md#sequence-ae) join on one noun, **`zael`**, names where it **starts** (*from X on*).
 
 > `zazawan uel bagavol vavadal.`
 >
@@ -650,15 +650,15 @@ Use `ol` in place of `om` for the exact spot (`ol bamun` *right where I am*).
 >
 > "Alahen sleeps over there."
 
-English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agazan names the landmark with the plain motion verb **`vuvudel`** (*go*) and a path hook: **`eol`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vuvudel` says nothing about how someone travels; use `vowogal` (*walk*) or `varahal` (*run*) only when the manner matters.
+English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agazan names the landmark with the plain motion verb **`vuvudel`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vuvudel` says nothing about how someone travels; use `vowogal` (*walk*) or `varahal` (*run*) only when the manner matters.
 
-> `zazawan vuvudel eol bamun.`
+> `zazawan vuvudel oel bamun.`
 >
 > z-Azawan | v-go | [toward | b-speaker]
 >
 > "Azawan comes over to me."
 
-> `zalahen vuvudel eol behon.`
+> `zalahen vuvudel oel behon.`
 >
 > z-Alahen | v-go | [toward | b-listener]
 >
@@ -672,7 +672,7 @@ English *come* and *go* also point from a person, but they hide which one: *I'm 
 
 With an object, `vuvudel` moves something else: `zazawan vuvudel dehahel.` *Azawan moves the chair.* When the mover goes along with the thing, use **`valagel`** (*carry*). The same hooks then give English *bring* and *take*:
 
-> `zazawan valagel dabegol eol bamun.`
+> `zazawan valagel dabegol oel bamun.`
 >
 > z-Azawan | v-carry | d-box | [toward | b-speaker]
 >
@@ -842,11 +842,11 @@ On an extra-noun hook, `/w/` goes before the hook and `/b/` still comes right af
 
 A discourse hook takes `/w/` the same way: `welavam al zazawan vowogal` is *Additionally, very much so, Azawan walks.* A `/b/` right after the hook still makes it an extra-noun hook, not a discourse hook.
 
-### Ranges (`eol` / `ual` / `uel`) {#ranges}
+### Ranges (`oel` / `ual` / `uel`) {#ranges}
 
 When the items sit on a line with an order (people in a queue, days, chapters, numbers), English *A through B* names a **range**: A, B, and everything between. Put a stacked hook between two words in the same role: `A HOOK B`. Between same-role words these hooks name only ranges; with `/b/` on the right and no `/b/` on the left, they are [extra-noun hooks](#extra-noun) (*toward*, *out of*, *against*).
 
-> `zazawan eol zahaben vowogal.`
+> `zazawan oel zahaben vowogal.`
 >
 > z-Azawan | through | z-Ahaben | v-walk
 >
@@ -855,7 +855,7 @@ When the items sit on a line with an order (people in a queue, days, chapters, n
 <!-- cheat-sheet: joins-hooks -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`eol`** | A, B, and everything between | *A through B* | **e** ≈ for + **o** ≈ at: head for B, starting at A |
+| **`oel`** | A, B, and everything between | *A through B* | **o** ≈ at + **e** ≈ for: start at A, head for B |
 | **`ual`** | only what lies between | *strictly between A and B* | **ua** ≈ take away both ends |
 | **`uel`** | only what lies outside | *outside A–B* | **ue** ≈ undo the stretch from A to B |
 
@@ -867,7 +867,7 @@ The range runs from A to B, in the order you say them. Endings work as on other 
 >
 > "Someone between Azawan and Ahaben sleeps."
 
-A range **-r** always has a word on each side (`eor` / `uar` / `uer`). With nothing on the right, stacked extra-noun **-r** still [points back](#hook-resume) (`aor` *on it*).
+A range **-r** always has a word on each side (`oer` / `uar` / `uer`). With nothing on the right, stacked extra-noun **-r** still [points back](#hook-resume) (`aor` *on it*).
 
 > `zazawan ual zahaben vezebal.`
 >
@@ -879,7 +879,7 @@ Between two numbers with digits, plain **`al`** and **`ul`** also make a range, 
 
 A word right after B describes B alone, not the range. To describe the range itself, put `/w/` right before the hook:
 
-> `zazawan wezum eol zahaben vowogal.`
+> `zazawan wezum oel zahaben vowogal.`
 >
 > z-Azawan | [w-amazement | through] | z-Ahaben | v-walk
 >
@@ -997,7 +997,7 @@ z-family | including.open | z-Azawan | except | z-Alahen | v-tell
 *The family, including Azawan and maybe more, but not Alahen, tells.*
 :::
 
-**4.** `zazawan eol zahaben varadal.`
+**4.** `zazawan oel zahaben varadal.`
 
 ::: details Show answer
 z-Azawan | through | z-Ahaben | v-write
@@ -1023,14 +1023,14 @@ z-Ahaben | d-newspaper | instead.open | d-radio | v-see
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Ahaben runs toward the radio.* `zahaben varahal eol beredel.` or `zahaben varahal ul beredel.`
+**1.** *Ahaben runs toward the radio.* `zahaben varahal oel beredel.` or `zahaben varahal ul beredel.`
 
 ::: details Show answer
-`zahaben varahal eol beredel.`
+`zahaben varahal oel beredel.`
 
 z-Ahaben | v-run | [toward | b-radio]
 
-**`eol`** names where the path ends; **`ul`** is *from* the radio.
+**`oel`** names where the path ends; **`ul`** is *from* the radio.
 :::
 
 #### Fix it {#intermediate-fix-it}
@@ -1079,7 +1079,7 @@ The left ending is part of the stem, so two different left roots stay distinct o
 | **`al` / `am`** | *in* / *amid* | *enter* | *mill amid* | `owogalal` / `owogalam` |
 | **`aol` / `aom`** | *on* / *over* | *mount* | *cover* | `owogalaol` / `owogalaom` |
 | **`ol` / `om`** | *at* / *near* | *attend* | *adjoin* | `owogalol` / `owogalom` |
-| **`eol` / `eom`** | *toward* / *in the direction of* | *head for* | *orient* | `owogaleol` / `owogaleom` |
+| **`oel` / `oem`** | *toward* / *in the direction of* | *head for* | *orient* | `owogaloel` / `owogaloem` |
 | **`ul` / `um`** | *from* / *away from* | *leave* | *recede* | `owogalul` / `owogalum` |
 | **`ual` / `uam`** | *out of* / *out from among* | *exit* | *pick out* | `owogalual` / `owogaluam` |
 | **`uol` / `uom`** | *through* / *by way of* | *traverse* | *relay* | `owogaluol` / `owogaluom` |
@@ -1136,7 +1136,7 @@ z-Azawan | d-boat | v-leave
 **2.** *Alahen heads for the anchor.*
 
 ::: details Show answer
-`zalahen dagel vowogaleol.`
+`zalahen dagel vowogaloel.`
 
 z-Alahen | d-anchor | v-head-for
 :::

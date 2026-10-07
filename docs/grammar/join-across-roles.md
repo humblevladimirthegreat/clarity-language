@@ -44,7 +44,7 @@ Under `/v/`, `/ɡ/`, and `/h/`, a join word with **-n** names a list move instea
 | **uo** | `vuol` / `xuol` / `thuol` | `vuom` / `xuom` / `thuom` | none |
 | **e** | `vel` / `xel` / `thel` | `vem` / `xem` / `them` | `ver` / `xer` / `ther` |
 | **ae** | `vael` / `xael` / `thael` | `vaem` / `xaem` / `thaem` | none |
-| **eo** | `veol` / `xeol` / `theol` | `veom` / `xeom` / `theom` | none |
+| **oe** | `voel` / `xoel` / `thoel` | `voem` / `xoem` / `thoem` | none |
 | **ue** | `vuel` / `xuel` / `thuel` | `vuem` / `xuem` / `thuem` | none |
 
 Stacked vowels take no **-r** under `/v/` or `/x/` (the *none* cells); only a stance join has stacked **-r**, as a [fill-ask](#standalone-stance-joins).
@@ -152,7 +152,7 @@ The other join vowels work on stance words the same way they work on a phrase li
 | **uo** | `thuol` any ground but these | *any ground but sight and hearsay will do* |
 | **e** | `thel` ranked, first is the main ground | *mainly because I saw it, also because I was told* |
 | **ae** | `thael` in the order the grounds arose | *I saw it first, then I was told* |
-| **eo** | `theol` equal weight | *seeing it and being told count the same* |
+| **oe** | `thoel` equal weight | *seeing it and being told count the same* |
 | **ue** | `thuel` ranked, first is the weakest | *chiefly because I was told, a little because I saw it* |
 
 Nothing is SHARED after an `/h/` or `/th/` join. To add a detail that covers the whole list, put a `/w/` word right before the join word.
@@ -203,7 +203,7 @@ In the table, *reason* means any grounds a stance word can give: a cause, a sour
 | **uo** | `thuol` *anything goes* | `thuom` *anything goes, I think* | question only |
 | **e** | `thel` *impartially* / *no decisive grounds* | `them` *I don't lean either way* | `ther` *for one main reason, not named* |
 | **ae** | `thael` *in no particular order* | `thaem` *not sure where to start* | question only |
-| **eo** | `theol` *equally balanced* | `theom` *equally balanced, I think* | question only |
+| **oe** | `thoel` *equally balanced* | `thoem` *equally balanced, I think* | question only |
 | **ue** | `thuel` *no reason to object* | `thuem` *no objection that I know of* | question only |
 
 Outside a question, only the single-vowel **-r** cells are words. Under a question, a standalone **-r** stance join is a [fill-ask](questions.md#fill-ask-r) for the grounds. Every vowel takes **-r** there.
@@ -224,7 +224,7 @@ Outside a question, only the single-vowel **-r** cells are words. Under a questi
 | `thuor` | *What reasons would you rule out?* |
 | `ther` | *What's the main reason?* |
 | `thaer` | *What would settle it?* |
-| `theor` | *What are you torn between?* |
+| `thoer` | *What are you torn between?* |
 | `thuer` | *What's your objection?* |
 
 **Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` asks for the speaker's grounds, not what caused the event; for *Why does it happen?* use [`thevem bar`](questions.md#why).
@@ -268,7 +268,7 @@ Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 | **`vuon`** | bar that one; the rest stay free | *bars (anything but)* | **uo** ≈ undo + one (forbid that pick) | `zazawan dagavel vuon` |
 | **`ven`** | rank the object first | *prioritizes* | **e** ≈ order (put this first) | `zazawan dabogal ven` |
 | **`vaen`** | put the object first in order | *starts with* | **ae** ≈ add + order (begin here) | `zazawan derevum vaen` |
-| **`veon`** | put the objects at the same rank | *equates / ties* | **eo** ≈ order + one (same height) | `zazawan dalahen dahaben dal veon` |
+| **`voen`** | put the objects at the same rank | *equates / ties* | **oe** ≈ one + order (same height) | `zazawan dalahen dahaben dal voen` |
 | **`vuen`** | rank the object lower | *deprioritizes* | **ue** ≈ undo + order (drop this rank) | `zazawan dagubem vuen` |
 
 English *refuse* vs *leave out*: `zazawan demedol vun` (*Azawan refuses meat*) vs `zazawan demedol vuan` (*Azawan excludes meat*). One locked choice vs an open pick: `zazawan debeyal von` vs `zazawan debeyal vaon`. Rank vs sequence: `zazawan derevum ven` (*prioritizes the workaround*: first by importance) vs `zazawan derevum vaen` (*starts with the workaround*: first in order).
@@ -303,12 +303,12 @@ For several members, put a [phrase join](joins.md) **inside** the `/b/` phrase (
 | **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to anything but*; `/h/` *barring / anything but* | **uo** ≈ undo + one (bar that one; rest free) | `zowodel guon bebeyal`; `… huon bebeyal vowogal` |
 | **`gen` / `hen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *prioritizing / headed by*; `/h/` *prioritizing* | **e** ≈ order (put this first) | `zehegol gen babogal`; `… hen babogal verevum` |
 | **`gaen` / `haen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *starting with*; `/h/` *starting with* | **ae** ≈ add + order (begin here) | `zehegol gaen berevum`; `… haen berevum vowogal` |
-| **`geon` / `heon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *on a par with*; `/h/` *equating / tying* | **eo** ≈ order + one (same height) | `zedehel geon bagavel`; `… heon balahen vowogal` |
+| **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *on a par with*; `/h/` *equating / tying* | **oe** ≈ one + order (same height) | `zedehel goen bagavel`; `… hoen balahen vowogal` |
 | **`guen` / `huen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | **ue** ≈ undo + order (drop this rank) | `zagubel guen bagubem`; `… huen bagubem vowogal` |
 
 *Anti-* vs *without*: `gun bemedol` vs `guan bemedol`. *Without X* vs *anything but X*: `guan bebeyal` vs `guon bebeyal`. Sole pick vs among options: `gon bazawan` vs `gaon bazawan`. Workaround as top priority vs workaround as first step: `gen berevum` vs `gaen berevum`.
 
-**Compare with:** *a house like Azawan’s* / *walks like a duck* is resemblance ([like](relations.md#like-resembles) `gumum` / `humum`), not **`geon` / `heon`** *on a par with* / *equating*.
+**Compare with:** *a house like Azawan’s* / *walks like a duck* is resemblance ([like](relations.md#like-resembles) `gumum` / `humum`), not **`goen` / `hoen`** *on a par with* / *equating*.
 
 ### Practice {#intermediate-practice}
 

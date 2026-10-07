@@ -291,7 +291,7 @@ Beginner used **`humum`** / **`gumum`** for *like*: the event or thing resembles
 
 Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extra-noun hooks](hooks.md#extra-noun-intermediate). To say where someone moves from and to, use one hook for each landmark (*from* one, *toward* another), and write the **source** before the **goal**.
 
-> `zazawan ul bezedel vowogal eol bedehal.`
+> `zazawan ul bezedel vowogal oel bedehal.`
 >
 > z-Azawan | [from | b-station] | v-walk | [toward | b-train]
 >

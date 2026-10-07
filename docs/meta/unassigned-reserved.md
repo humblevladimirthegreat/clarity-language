@@ -102,7 +102,7 @@ Source: [joins.md](../grammar/joins.md), [join-across-roles.md](../grammar/join-
 
 - **open:** **`/th/`…-n**. Join-relations frame a noun or an event, and a stance is neither, so no reading composes.
 - **open:** stacked **-r** outside a question on `/th/` (`thaor` … `thuer` are fill-asks only), and on `/z/` `/d/` `/b/` `/v/` `/x/` `/ɡ/` joins (`zuar`, `vaor`, `xuar`, `gaor`). No statement wants a stacked blank, and no question has asked for one on these joins. Parser: `stackedJoinResume`.
-- **open:** clause sequence **-n** beyond `xan` `xon` `xun` `xaon` `xuen` (`xuan`, `xuon`, `xen`, `xaen`, `xeon`). No reading is guessable: `xen` and `xaen` put rank or order into a sequence that is already ordered, `xeon` could be *at the same time* or *in either order*, and `xuan` / `xuon` (*everything but* / *anything but*) have no clause job. `xen` is also a departure mark after a name.
+- **open:** clause sequence **-n** beyond `xan` `xon` `xun` `xaon` `xuen` (`xuan`, `xuon`, `xen`, `xaen`, `xoen`). No reading is guessable: `xen` and `xaen` put rank or order into a sequence that is already ordered, `xoen` could be *at the same time* or *in either order*, and `xuan` / `xuon` (*everything but* / *anything but*) have no clause job. `xen` is also a departure mark after a name.
 - **closed (D-39):** a single-item clause join (`A xul` *not the case that A*, `A xal` *only A happened*).
 - **open:** a rank or sequence join (`e` / `ue` / `ae`) with a number as a threshold, and a SHARED continuum word. In a rank or sequence fence a number is one of the items, so a threshold reading is not guessable. Ranges use hooks and [rays](../grammar/numbers-applied.md#rays).
 
@@ -126,7 +126,7 @@ Source: [hooks.md](../grammar/hooks.md#ranges), [sakes.md](../grammar/sakes.md#c
 
 - **open:** in-clause **`ao`** / **`ae`** / **`uo`** (`aol` / `ael` / `uol` and **-m** / **-n**) between same-role words. `aol` has two guesses (*for example*, from discourse `aol …`, or *namely*); `ael` *A, in fact B* (it escalates and keeps A, unlike `el`) is a fair fill but rarely needed; `uol` has no guess. The parser rejects them; extra-noun and discourse uses are unaffected.
 - **open:** stacked **-r** at the front of a sentence (`aor …`, `aer …`, `uor …`). Extra-noun point-back is assigned; as sentence glue they have no guess (*For example, anyway?* *In fact, as I said?*). Parser: `hookDiscourseStack`.
-- **open:** discourse **`eol`** / **`ual`** / **`uol`** / **`uel`** (and **-m** / **-n**) at the front of a sentence. *Toward*, *out of*, *through* and *against* give no guessable sentence-to-sentence glue (guesses range from *Alternatively* to *Apart from that*). The parser rejects them.
+- **open:** discourse **`oel`** / **`ual`** / **`uol`** / **`uel`** (and **-m** / **-n**) at the front of a sentence. *Toward*, *out of*, *through* and *against* give no guessable sentence-to-sentence glue (guesses range from *Alternatively* to *Apart from that*). The parser rejects them.
 - **open:** a hook + `barl` other than `ul` (`hookStandIn`). Most have no guess (*in that…*, *at that…*). *Contrary to* an event is `hezom barl`, and no job has turned up for `uem barl`.
 - **open:** `uem` before a stance with no content an event can contradict (`frameKind`): PERMIT, given CONSENT (they only lift a restriction), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Alahen's interest* is `thegathum balahen`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
 
@@ -258,7 +258,7 @@ Source: [clause.md](../grammar/clause.md)
 
 Source: [speech-moves.md](../grammar/speech-moves.md#tone-marks), [intention.md](../grammar/intention.md#ability)
 
-- **open:** stacked vowels after ability **x** (`xua`, …) and after sake **th** as a second stance (`gulothaol`). Not guessable (*can again*? *it depends*?): *it depends* is MAY or a sentence (polar `eo` is *decline to answer*), and *can again* is `xa` plus a sentence. Label scope uses those stacks ([predication](../grammar/predication.md#scope-stacks)). Sake locus stacks still come after the horizon letter (`gulothamol`). The parser rejects a stacked sake stance and stacked ability.
+- **open:** stacked vowels after ability **x** (`xua`, …) and after sake **th** as a second stance (`gulothaol`). Not guessable (*can again*? *it depends*?): *it depends* is MAY or a sentence (polar `oe` is *decline to answer*), and *can again* is `xa` plus a sentence. Label scope uses those stacks ([predication](../grammar/predication.md#scope-stacks)). Sake locus stacks still come after the horizon letter (`gulothamol`). The parser rejects a stacked sake stance and stacked ability.
 - **open:** a new tone mark (whisper, sarcasm, …). No voice job is left: `;` `%` `?` already cover quiet, sarcasm and hesitation.
 - **closed (D-23):** `~` as a tone mark, and a third copy of a mark (`!!!`).
 
@@ -266,7 +266,6 @@ Source: [speech-moves.md](../grammar/speech-moves.md#tone-marks), [intention.md]
 
 Source: [phonology.md](../grammar/phonology.md)
 
-- **closed ([stacked vowels](design-decisions.md#stacked-vowels)):** reversed vowel stacks (`oe`, `ea`, `oa`, `au`, `ou`, `eu`) and same-vowel pairs. Stacks keep the order **u**, **a**, **e**, **o**, and each reversal is a near twin of a standard stack by ear.
 - **open:** unused onset clusters *gw*, *vw*, *xw*, *bl*. No morphology needs them (*bl* should not mean left-aligned *b*).
 
 ## Related meta

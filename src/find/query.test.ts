@@ -62,13 +62,13 @@ describe("regex conditions", () => {
 
 describe("example words", () => {
   it("lists words in surface order with their unit", () => {
-    const { words } = sentence("zazawan vuvudel eol bamun.");
+    const { words } = sentence("zazawan vuvudel oel bamun.");
     assert.deepEqual(
       words.map((w) => [w.word.raw, w.unit]),
       [
         ["zazawan", "np"],
         ["vuvudel", "vp"],
-        ["eol", "hook"],
+        ["oel", "hook"],
         ["bamun", "np"],
       ],
     );

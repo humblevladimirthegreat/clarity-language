@@ -381,7 +381,7 @@ z-Ahaben | [d-hammer | [g-material | b-wood]] | v-see
 **4.** *Ahaben swims as slowly as Alahen.*
 
 ::: details Show answer
-`zahaben zalahen zeol hezehom vezewel.`
+`zahaben zalahen zoel hezehom vezewel.`
 
 [z-Ahaben | z-Alahen | z-equal-rank | h-slow] | v-swim
 
@@ -675,7 +675,7 @@ z-Alahen | th-CLUES-Ahaben | v-sing
 
 #### Agazan → English {#advanced-agazan-to-english}
 
-**1.** `zahaben dezedel vowogaleol.`
+**1.** `zahaben dezedel vowogaloel.`
 
 ::: details Show answer
 z-Ahaben | d-station | v-head-for

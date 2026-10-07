@@ -170,7 +170,7 @@ Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 |-------|-------|---------|-------|
 | `thao` | this episode, on this pair | *teacher this time, to Alahen* | I |
 | `thae` | using the role as a means | *using teacher (as a tool)* | I |
-| `theo` | toward the role | *becoming a teacher* | I |
+| `thoe` | toward the role | *becoming a teacher* | I |
 | `thua` | type, except this episode | *a teacher type, except this time* | I |
 | `thuo` | type, except this pair | *a teacher type, except with Alahen* | I |
 | `thue` | not in that capacity | *not as a teacher* | I |

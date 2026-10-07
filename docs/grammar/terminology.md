@@ -51,7 +51,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **RESISTING** | Emotion locus: pushing against a target | `wanathumuer` | [Sakes](sakes.md#emotion-compose) |
 | **SAME** | Identity copula | `gugol` | [Predication](predication.md#identity) |
 | **SCOPE** | Scope island `{ … }` | `{ hegewem zodogal geredal }` | [Spans](spans.md#scope-islands) |
-| **SEEKING** | Emotion locus: turning to someone for comfort | `wanathumeom` | [Sakes](sakes.md#emotion-compose) |
+| **SEEKING** | Emotion locus: turning to someone for comfort | `wanathumoem` | [Sakes](sakes.md#emotion-compose) |
 | **STILL** | Emotion motion: not moving (held, frozen, numb) | `wanathumol` | [Sakes](sakes.md#emotion-compose) |
 | **SURGING** | Emotion motion: in waves or spikes | `wulothuraor` | [Sakes](sakes.md#emotion-compose) |
 | **UNPLACED** | Emotion locus: can't place where it comes from | `wulothuruom` | [Sakes](sakes.md#emotion-compose) |
@@ -72,7 +72,7 @@ English names for set / rank join vowels ([joins](joins.md)):
 | counteradditive | **ua** | *everything but* |
 | counterchoice | **uo** | *anything but* |
 | rank | **e** | earlier outranks later |
-| corank | **eo** | equal rank / tie |
+| corank | **oe** | equal rank / tie |
 | sequence | **ae** | ordered path: first item is the start, not the top |
 | counterrank | **ue** | rank reversal |
 
@@ -235,7 +235,7 @@ Speech act **`yel` / `yem` / `yul` / `yum`**.
 
 ### Comparative / superlative / equative
 
-Rank join + SHARED **scale** (`/ɡ/` quality or `/h/` manner); single-item = superlative; **`eo`** = equative.
+Rank join + SHARED **scale** (`/ɡ/` quality or `/h/` manner); single-item = superlative; **`oe`** = equative.
 
 [Comparatives](comparatives.md)
 
@@ -335,7 +335,7 @@ Reason for the *could be* (**MAY**), not a *because* about the world (`thevem`).
 
 ### Equative
 
-**`eo`** SHARED scale = *as ADJ as*.
+**`oe`** SHARED scale = *as ADJ as*.
 
 [Comparatives](comparatives.md#equatives)
 
@@ -656,7 +656,7 @@ Numeric from–to with a hook between the ends (`al` / `ul`); a ray has ±∞ as
 
 ### Range hook
 
-Stacked hook between same-role words on an ordered line: `eol` *through*, `ual` *strictly between*, `uel` *outside*.
+Stacked hook between same-role words on an ordered line: `oel` *through*, `ual` *strictly between*, `uel` *outside*.
 
 [Hooks](hooks.md#ranges)
 
