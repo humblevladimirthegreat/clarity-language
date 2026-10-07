@@ -5,13 +5,13 @@
  * a change to either must update the other (and the tests here).
  */
 
-const VOWELS = new Set(["e", "u", "o", "a"]);
+const VOWELS = new Set(["u", "a", "o", "e"]);
 
 const LETTER_IPA: Record<string, string> = {
-  e: "e̞",
   u: "ʉ",
-  o: "o̞",
   a: "ä",
+  o: "o̞",
+  e: "e̞",
   h: "ɦ",
   th: "ð",
   w: "w",

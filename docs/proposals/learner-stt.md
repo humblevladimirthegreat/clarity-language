@@ -68,7 +68,7 @@ Microphone audio
 |-------|--------|--------|------|
 | **Phoneme ASR** | Wav / mic | Phone sequence | Third-party model; thin adapter |
 | **`collapseAllophones`** | IPA | Agazan-target IPA | [phonology.md](../grammar/phonology.md) (no voice contrast) |
-| **`phonesToLetters`** | Target IPA | Letter stream (`e u o a` … `x`) | Inverse of [`phonemes.ts`](../../src/tts/phonemes.ts) |
+| **`phonesToLetters`** | Target IPA | Letter stream (`u a o e` … `x`) | Inverse of [`phonemes.ts`](../../src/tts/phonemes.ts) |
 | **`segmentWords`** | Letter stream | Speech-surface tokens | [phonotactics](../grammar/phonology.md#phonotactics) |
 | **`snapLexicon`** | Tokens | Tokens (nearest legal word) | Lexicon CSV + closed lists |
 | **`toWriting`** | Speech tokens | Preferred writing | Inverse of TTS expansions |

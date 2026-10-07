@@ -12,8 +12,8 @@ outline: false
 
 | Letter | Like | Letter | Like |
 |--------|------|--------|------|
-| `e` | *bet* | `u` | *you*, without the *y* |
-| `o` | *Cambodia*, no glide | `a` | *spa* |
+| `u` | *you*, without the *y* | `a` | *spa* |
+| `o` | *Cambodia*, no glide | `e` | *bet* |
 | `x` | the *si* in *vision* (not English *x*) | | |
 
 Each vowel always sounds the same; two vowels in a row are two beats. All other letters sound like English.

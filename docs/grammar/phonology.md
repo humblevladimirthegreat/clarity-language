@@ -19,17 +19,28 @@ The cue words below are pronounced as in Standard American English.
 
 | Agazan | IPA | Cue |
 |--------|-----|-----|
-| `e` | /e̞/ <IpaPlay file="Mid_front_unrounded_vowel.ogg" label="e" /> | *bet* |
 | `u` | /ʉ/ <IpaPlay file="Close_central_rounded_vowel.ogg" label="u" /> | *you* (without the *y*) |
-| `o` | /o̞/ <IpaPlay file="Mid_back_rounded_vowel.ogg" label="o" /> | *Cambodia* (no glide, like Spanish *todo*) |
 | `a` | /ä/ <IpaPlay file="Open_central_unrounded_vowel.ogg" label="a" /> | *spa* (like Spanish *casa*) |
+| `o` | /o̞/ <IpaPlay file="Mid_back_rounded_vowel.ogg" label="o" /> | *Cambodia* (no glide, like Spanish *todo*) |
+| `e` | /e̞/ <IpaPlay file="Mid_front_unrounded_vowel.ogg" label="e" /> | *bet* |
 
 Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). /ʉ/ and /ä/ are by [Denelson83](https://commons.wikimedia.org/wiki/User:Denelson83), and /e̞/ and /o̞/ by [TFighterPilot](https://commons.wikimedia.org/wiki/User:TFighterPilot).
+
+#### Opposite vowels {#opposite-vowels}
+
+The four vowels form two **opposite** pairs. Within a pair, the tongue moves along one line and the lips change shape:
+
+| Pair | Tongue | Lips |
+|------|--------|------|
+| `u` ↔ `a` | high ↔ low, centered | rounded ↔ relaxed |
+| `o` ↔ `e` | back ↔ front, same height | rounded ↔ spread |
+
+To find `u`, start from `a`: keep the tongue centered, close the jaw, and round the lips. Moving between the two vowels of a pair is a small step.
 
 ### Consonants
 
 A consonant starts a syllable. Many consonants have a **voiced** sound (vocal cords buzzing, as in *zoo*) and an unvoiced one (as in *sea*), and Agazan treats the two as the same letter. Prefer the voiced sound so you can hold a sung note; the unvoiced one is fine for style.
-<!-- Consonant order: lips (b m w v), tongue tip (d n z l r), y (palatal, between tongue tip and back), back (g h, then th as the "other h"), then the English false friend (x). Canonical alphabet / letter-name recitation follows this table (vowels e u o a first). -->
+<!-- Consonant order: lips (b m w v), tongue tip (d n z l r), y (palatal, between tongue tip and back), back (g h, then th as the "other h"), then the English false friend (x). Canonical alphabet / letter-name recitation follows this table (vowels u a o e first, the same order as vowel stacks). -->
 
 | Agazan | IPA | Cue | Unvoiced variant |
 |--------|-----|-----|------------------|
@@ -90,7 +101,7 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 
 A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubuhel`: prefix `z`, root `ubuhe`, ending `-l`). Each spelling has only one pronunciation. Writing does not mark stress. Musical rhythm may still place emphasis.
 
-Some short grammar words stack two vowels (a join such as **ua**). A stack always follows the order **u**, **a**, **o**, **e**: **u** comes first and **e** comes last. That gives six stacks: **ua**, **uo**, **ue**, **ao**, **ae**, and **oe**. The two vowels stay two separate syllables.
+Some short grammar words stack two vowels (a join such as **ua**). A stack always puts its vowels in [alphabetical order](#letter-names) (**u**, **a**, **o**, **e**): **u** comes first and **e** comes last. That gives six stacks: **ua**, **uo**, **ue**, **ao**, **ae**, and **oe**. The two vowels stay two separate syllables.
 
 **Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 
@@ -116,10 +127,10 @@ When you **spell a word aloud** or **name a letter**, say the Agazan name for it
 <!-- cheat-sheet: sounds-spelling -->
 | Agazan | Name | Cue |
 |--------|------|-----|
-| `e` | `e` | *bet* |
 | `u` | `u` | *you* (without the *y*) |
+| `a` | `a` | *spa* |
 | `o` | `o` | *Cambodia* (no glide) |
-| `a` | `a` | *father* |
+| `e` | `e` | *bet* |
 | `b` | `be` | *beg* |
 | `m` | `me` | *met* |
 | `w` | `we` | *wet* |
@@ -141,7 +152,7 @@ When you **spell a word aloud** or **name a letter**, say the Agazan name for it
 
 In a clause, a letter you talk about (such as `z`) is a [mention](spans.md#mention); read it aloud by its letter name (`ze`).
 
-Ten letters also begin a [digit syllable](numbers.md#counts). The letter name uses the **opposite** vowel (`a`↔`u`, `o`↔`e`), so naming the letter is not the same as counting.
+Ten letters also begin a [digit syllable](numbers.md#counts). The letter name uses the [opposite vowel](#opposite-vowels) (`a`↔`u`, `o`↔`e`), so naming the letter is not the same as counting.
 
 <!-- cheat-sheet: sounds-spelling -->
 | Agazan | Digit syllable | Name | Cue |

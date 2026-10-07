@@ -17,10 +17,10 @@ Each letter has one sound, and native text is lowercase. Two vowels in a row are
 
 | Letter | Say | Like | Stage |
 |--------|-----|------|-------|
-| [`e`](../phonology.md#vowels) | /e̞/ | *bet* | B |
 | [`u`](../phonology.md#vowels) | /ʉ/ | *you* (without the *y*) | B |
-| [`o`](../phonology.md#vowels) | /o̞/ | *Cambodia* (no glide) | B |
 | [`a`](../phonology.md#vowels) | /ä/ | *spa* | B |
+| [`o`](../phonology.md#vowels) | /o̞/ | *Cambodia* (no glide) | B |
+| [`e`](../phonology.md#vowels) | /e̞/ | *bet* | B |
 
 ### Consonants and their names {#consonants}
 
@@ -43,7 +43,7 @@ The name is what you say when you [spell a word aloud](../phonology.md#letter-na
 | `th` | /ð/ | *this* | /θ/ | `tha` | B |
 | `x` | /ʒ/ | *vision* (not English *x*) | /ʃ/ | `xe` | B |
 
-The vowels name themselves (`e`, `u`, `o`, `a`). Pause between names: `agadu` is `a` `ga` `a` `da` `a`. A letter you talk about in a clause is a [mention](../spans.md#mention), read by its name.
+The vowels name themselves (`u`, `a`, `o`, `e`). Pause between names: `agadu` is `a` `ga` `a` `da` `a`. A letter you talk about in a clause is a [mention](../spans.md#mention), read by its name.
 
 ## Word shape {#word-shape}
 
