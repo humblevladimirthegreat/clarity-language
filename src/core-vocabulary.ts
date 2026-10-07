@@ -22,7 +22,7 @@ export const CORE_CAP = 5;
 /** Fewest review roots a checkpoint uses, once that many core roots come before it. */
 export const CORE_REVIEW_MIN = 3;
 
-/** Roots taught as grammar, not vocabulary: house cast, the learner slot, discourse-role specials, topic / generic pronouns. */
+/** Roots taught as grammar, not vocabulary: house cast, the learner slot, discourse-role specials, topic / generic pronouns, the nine sakes. */
 export const NOT_CORE_ROOTS: ReadonlySet<string> = new Set([
   CLOSED.swan,
   CLOSED.lion,
@@ -34,6 +34,15 @@ export const NOT_CORE_ROOTS: ReadonlySet<string> = new Set([
   CLOSED.neutral,
   CLOSED.star,
   CLOSED.person,
+  CLOSED.ballot,
+  CLOSED.toolbox,
+  CLOSED.lightbulb,
+  CLOSED.compass,
+  CLOSED.knot,
+  CLOSED.present,
+  CLOSED.strawberry,
+  CLOSED.lungs,
+  CLOSED.egg,
 ]);
 
 /** Which bank lists the root: legacy **Roots used here**, or converted **New words** / **Review**. */

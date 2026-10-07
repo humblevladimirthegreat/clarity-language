@@ -605,6 +605,7 @@ export const REJECTIONS = {
     summary: "the sentence after a stand-in names an event or a thing; a stance word alone fills it only as a lone feeling, thanks, or sorry",
   },
   predicateAfterVerb: { anchor: "predication.md#classification", summary: "a /ɡ/ word right after the verb has no reading (no depictive or resultative); say the state in its own sentence, with huwem barl, or with the adjective as a verb under thegem" },
+  glNoNoun: { anchor: "clause.md#left-bound-adjectives", summary: "a gl- adjective describes the next noun, so a noun must follow it (glubuhel zodogal); with no noun after it, use a plain /ɡ/ word" },
   nameInstanceSlot: { anchor: "word-endings.md#name-instance--ln", summary: "-ln (span ^@) is one thing a name applies to: it fills /z/ /d/ /b/ or stands as a citation, never on /ɡ/ /v/ /h/ /w/ /th/ /x/ /y/, and never on a pronoun root" },
   standInRole: { anchor: "dependents.md#stand-in", summary: "stand-ins (-rl -rm -rth -rn) fill /z/ /d/ /b/ only; there is no stand-in on /ɡ/ /h/ /w/ /th/ (such is whole-stem -r, like that is humum barth)" },
   standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is barl after a listed pole, a clues / pattern channel, or like (humum)" },

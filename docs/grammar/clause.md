@@ -312,7 +312,7 @@ English puts the adjective before the noun (*a blue dog*). Agazan can too: add *
 >
 > "a blue dog"
 
-A `/b/` word still follows that adjective, and a `/w/` word still sits immediately before it (`welavam glubuhel zodogal` = *a very blue dog*). This extra **`l`** goes only on adjectives (`/ɡ/`).
+A `/b/` word still follows that adjective, and a `/w/` word still sits immediately before it (`welavam glubuhel zodogal` = *a very blue dog*). This extra **`l`** goes only on adjectives (`/ɡ/`). A noun must come after it: with no noun to lean on, write a plain `/ɡ/` adjective after the noun instead (`zodogal gubuhel`).
 
 ### Complex chaining {#complex-chaining}
 

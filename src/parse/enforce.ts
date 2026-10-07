@@ -766,6 +766,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
   const places = { seen: new Set<LexWord>(), framed: new Set<LexWord>() };
   visitResult(result, structureVisitor(tables, places));
   visitResult(result, { enter: enforceTagHost });
+  enforceGlLeans(result);
   for (const word of places.seen) if (!places.framed.has(word)) throw new ConstructionError("degreePlaceFrame", word.raw);
   for (const { bodies } of result.utterances) for (const body of bodies) enforceVerbPredicate(body.clause.units);
   for (const bind of result.resolve?.anaphors ?? []) {
@@ -779,6 +780,23 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
       throw new ConstructionError("resumeUnbound", bind.pronoun.raw);
     }
   }
+}
+
+/** A `gl-` adjective leans on the next noun (or a mention marker on its topic span); one with nothing after it is left over (clause.md#left-bound-adjectives). */
+function enforceGlLeans(result: ParseResult): void {
+  const leaning = new Set<LexWord>();
+  // The mention marker before a topic span leans on that span (spans.md#mention).
+  for (const { bodies } of result.utterances) for (const { topicMarker } of bodies) if (topicMarker) leaning.add(topicMarker);
+  const gl: LexWord[] = [];
+  visitResult(result, {
+    enter: (node) => {
+      if (node.kind === "npPackage" && node.pkg.glAdj) leaning.add(node.pkg.glAdj.word);
+    },
+    word: (word) => {
+      if (word.gl) gl.push(word);
+    },
+  });
+  for (const word of gl) if (!leaning.has(word)) throw new ConstructionError("glNoNoun", word.raw);
 }
 
 /**

@@ -1,6 +1,6 @@
 /**
  * Published roots the tooling names directly: house cast, discourse-role specials, `/x/` linkers,
- * compass arrows, the language's own root, greeting, and template sample fillers. Each entry is
+ * compass arrows, sake roots, the language's own root, greeting, and template sample fillers. Each entry is
  * tied to its published row by emoji, so a lexicon retie cannot leave it stale:
  * `npm run retie-docs -- --write` resyncs every `root` here from `data/lexicon-published.csv`
  * ({@link resyncClosedRootsSource}), and `closed-roots.test.ts` fails when one drifts from its row.
@@ -48,11 +48,18 @@ const CLOSED_ROWS = {
   // no channel on `/th/` (knowing.md#evidentiality): a record is REPORTED, a tale NOTIONAL
   record: { emoji: "⏺️", root: "ere" },
   scroll: { emoji: "📜", root: "oze" },
-  // template sample fillers
+  // template sample filler
   walk: { emoji: "🚶", root: "owoga" },
+  // the nine sake roots (sakes.md#sake-inventory); knot, toolbox and ballot are also template sample fillers
   ballot: { emoji: "🗳️", root: "ahu" },
-  knot: { emoji: "🪢", root: "ana" },
   toolbox: { emoji: "🧰", root: "ulo" },
+  lightbulb: { emoji: "💡", root: "ado" },
+  compass: { emoji: "🧭", root: "ame" },
+  knot: { emoji: "🪢", root: "ana" },
+  present: { emoji: "🎁", root: "ebe" },
+  strawberry: { emoji: "🍓", root: "ozo" },
+  lungs: { emoji: "🫁", root: "oyu" },
+  egg: { emoji: "🥚", root: "ega" },
 } as const satisfies Record<string, ClosedRow>;
 
 export type ClosedName = keyof typeof CLOSED_ROWS;

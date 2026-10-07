@@ -355,7 +355,7 @@ With **-n**, the mention is a **name** as spelling (the title, which could be ch
 
 > <code>zazawan glelen d&lt;onodan&gt; vogozam.</code>
 >
-> z-Azawan | gl-NAME.MENTION | d-OPAQUE["onodan"] | v-rejection
+> z-Azawan | [gl-NAME.MENTION | d-OPAQUE["onodan"]] | v-rejection
 >
 > "Azawan dislikes the name “onodan.”" (might still like the work)
 
@@ -590,7 +590,7 @@ z-Alahen | SCOPE[b-Ahaben | h-possibility] | v-tell
 **1.** <code>zazawan glelen d&lt;onodan&gt; vogozam.</code>
 
 ::: details Show answer
-z-Azawan | gl-NAME.MENTION | d-OPAQUE["onodan"] | v-rejection
+z-Azawan | [gl-NAME.MENTION | d-OPAQUE["onodan"]] | v-rejection
 
 *Azawan dislikes the name “onodan.”* (not the work)
 :::

@@ -27,6 +27,11 @@ describe("lintPracticeItems", () => {
     assert.match(lint(PRACTICE.replace("or `zalahen dazawan vahahal.`", "or `zalahen dahaben vahahal.`")).join("\n"), /Pick one 1: the two forms use different content roots/);
   });
 
+  it("counts the host roots of an x-family word as content roots", () => {
+    const md = PRACTICE.replace("`zazawan dalahen vahahal.` or `zalahen dazawan vahahal.`", "`zaxowogal vahahal.` or `zowogal vahahal.`");
+    assert.doesNotMatch(lint(md).join("\n"), /different content roots|same reading/);
+  });
+
   it("flags a Pick one answer that is neither form, or has no why line", () => {
     const md = PRACTICE.replace("`zazawan dalahen vahahal.`\n\nz-Azawan | d-Alahen | v-see\n\nThe one who sees takes **z-**.\n", "`zahaben vehahel.`\n");
     const out = lint(md).join("\n");

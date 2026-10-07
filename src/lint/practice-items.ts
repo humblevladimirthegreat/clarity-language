@@ -4,6 +4,7 @@
  * known H4s in template order, both translation directions, items numbered from 1 under
  * each H4, item counts (docs/meta/drill-generation.md#execute), and a spoiler on every item.
  */
+import { SPEECH_MARK } from "./number-speech-docs.js";
 import { practiceRanges } from "./practice-sections.js";
 
 export type PracticeItemType = "en-ag" | "ag-en" | "pick" | "fix" | "changes";
@@ -26,7 +27,8 @@ export const ERROR_MARKER = "lint: error";
 
 export type PracticeSpan = { text: string; index: number; marker?: string };
 
-export type SpoilerLineKind = "agazan" | "also" | "english" | "text";
+/** `speech`: a 🔊 pronunciation row under a number answer ([number-speech-docs.ts](number-speech-docs.ts)). */
+export type SpoilerLineKind = "agazan" | "also" | "english" | "speech" | "text";
 export type SpoilerLine = { text: string; index: number; kind: SpoilerLineKind };
 
 export type PracticeItem = {
@@ -175,6 +177,7 @@ function readItem(
 function spoilerKind(trimmed: string): SpoilerLineKind {
   if (/^`[^`]+`$/.test(trimmed)) return "agazan";
   if (ALSO_RE.test(trimmed)) return "also";
+  if (trimmed.startsWith(SPEECH_MARK)) return "speech";
   if (/^\*[^*].*\*$/.test(trimmed)) return "english";
   return "text";
 }

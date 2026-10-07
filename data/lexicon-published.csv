@@ -141,7 +141,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦻,hearing-aid,edaho,,,,,
 👃,nose,onoza,intuition,nose leads intuition,v:smell; m.v:intuit,sensitive; sense; impression,numbers.md#beginner-practice
 🧠,brain,ebeha,intellect,the brain does the thinking,,mental; intellectual; smart; mind; intelligence; psychological; abstract,
-🫁,lungs,oyu,breath,lungs carry breath,,breathe; chest,sakes.md#beginner-practice
+🫁,lungs,oyu,breath,lungs carry breath,,breathe; chest,
 🦷,tooth,uduva,,,,,
 🦴,bone,obo,structure,bone provides structure,,,
 👀,eyes,azaha,attention,eyes grant awareness,m.v:look,concentrate; observation; gaze,
@@ -402,7 +402,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🍐,pear,abeyo,mishap,gone pear-shaped is mishap,,accident,
 🍑,peach,ebaha,excellence,something peachy is as fine as a ripe peach,,,
 🍒,cherry,eheva,bonus,the cherry on top is the extra finishing touch,,,
-🍓,strawberry,ozo,sweetness,a ripe strawberry tastes of sugar,,sweet,sakes.md#beginner-practice
+🍓,strawberry,ozo,sweetness,a ripe strawberry tastes of sugar,,sweet,
 🫐,blueberry,ububo,,,,,
 🥝,kiwi,agewe,oddity,fuzzy kiwi is an odd fruit,,odd; weird,
 🍅,tomato,adedo,controversy,tomato fruit or vegetable controversy,,debate; controversial; argument,joins.md#beginner-practice
@@ -516,7 +516,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🌐,globe,ogoba,connected,a globe links every place; connected means linked together,,global; world; earth,
 🗺️,map,ama,plan,a map charts a route; a plan charts a course,,agenda; design; project,
 🗾,country,agu,scope,a map of one country; scope is the area the picture includes,,national; region; nation; extent; regional; zone; territory; area,
-🧭,compass,ame,direction,a compass points the way; direction is where you're headed,,direct; guide,sakes.md#intermediate-practice
+🧭,compass,ame,direction,a compass points the way; direction is where you're headed,,direct; guide,
 ⛰️,mountain,amada,challenge,mountains are hard to climb; a challenge is hard to face,,pile; heap,predication.md#beginner-practice
 🛘,landslide,alaze,breakdown,landslide is sudden collapse; breakdown is the unobservable failure of a system,,crash; collapse; crack; outage,
 🌋,volcano,avoge,eruption,a volcano bursts outward; eruption is bursting emotion,,burst,
@@ -721,7 +721,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧵,thread,evevu,continuity,a thread runs unbroken; continuity is going on without a break,,constant; consistent; wire; cable; continuous; strip,
 🪡,needle,eneda,,,,,
 🧶,yarn,ayaha,blanket,yarn is knit into a blanket; a blanket is the cover that warms,,,
-🪢,knot,ana,bond,knot ties two ends together; bond is holding fast together,,bind; integrate; stick,sakes.md#intermediate-practice
+🪢,knot,ana,bond,knot ties two ends together; bond is holding fast together,,bind; integrate; stick,
 🕶️,sunglasses,ozaga,unbothered,sunglasses hide the eyes; cool is calm unbothered style,,,
 🥽,goggles,agogu,,,,,
 🥼,lab-coat,alego,expertise,lab coat marks scientific work; expertise is specialized knowledge,,technical; master; talent; specialist; specialize; pro; qualification; expert,
@@ -900,7 +900,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ⛓️‍💥,unlink,anagu,liberation,a broken chain frees the one it held,,release,
 ⛓️,chains,ehewe,bondage,chains bind and restrict movement; bondage is being held fast,,slave; constraint,
 🪝,hook,uhuga,ensnarement,hook snags; ensnarement is the unobservable trapping-kind,,,
-🧰,toolbox,ulo,readiness,toolbox holds gear for the job; readiness is prepared for task,,skill; equipment; tool,sakes.md#beginner-practice
+🧰,toolbox,ulo,readiness,toolbox holds gear for the job; readiness is prepared for task,,skill; equipment; tool,
 🧲,magnet,amega,attraction,magnet pulls metal toward it; attraction is pulling toward,,pull; attract; attractive; drag,
 🪜,ladder,alode,advancement,ladder climbs step by step; advancement is rising by stages,,promotion; stair; promote; advance,
 🪏,shovel,aheva,uncovering,shovel digs; uncovering is the unobservable reveal-kind,,dig; discovery,

@@ -271,7 +271,7 @@ function convertedExercises(markdown: string): TranslationExercise[] {
     const at = item.spoiler.findIndex((line) => line.kind === "agazan");
     if (at < 0) continue;
     const answer = item.spoiler[at]!;
-    const next = item.spoiler[at + 1];
+    const next = item.spoiler.slice(at + 1).find((line) => line.kind !== "speech");
     const morph = next?.kind === "text" ? normalizeExerciseMorph(next.text) : null;
     out.push({ agazan: answer.text, morph, loose: item.promptEnglish, index: answer.index });
   }

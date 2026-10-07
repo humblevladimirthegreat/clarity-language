@@ -112,6 +112,28 @@ g-20
     assert.equal(items[0]!.agazan, "g+20");
     assert.equal(items[0]!.morph, "g-20");
   });
+
+  it("skips a decision answer's spoken row when it pairs the morph line", () => {
+    const md = `### Practice {#beginner-practice}
+
+#### Pick one {#beginner-pick-one}
+
+**1.** *Twenty.* \`g+20\` or \`g+30\`
+
+::: details Show answer
+\`g+20\`
+
+🔊 \`graduzol\`
+
+g-20
+
+Twenty is two tens.
+:::
+`;
+    const items = extractTranslationExercises(md);
+    assert.equal(items[0]!.agazan, "g+20");
+    assert.equal(items[0]!.morph, "g-20");
+  });
 });
 
 describe("lintMorphGlossMarkdown", () => {

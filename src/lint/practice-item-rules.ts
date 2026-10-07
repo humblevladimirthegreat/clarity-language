@@ -152,11 +152,25 @@ function contentRoots(text: string, tables: ClassifyTables): string[] {
     if (value === null || typeof value !== "object") return;
     if (Array.isArray(value)) return value.forEach(visit);
     const word = value as Partial<LexWord>;
-    if (typeof word.raw === "string" && word.family?.kind === "content") roots.push(...word.family.roots);
+    if (typeof word.raw === "string") roots.push(...familyRoots(word.family));
     for (const child of Object.values(value)) visit(child);
   };
   visit(parseWithTables(text.normalize("NFC").trim(), tables).utterances);
   return roots.sort();
+}
+
+/** The content roots a word spells: a plain stem, the host and right roots of an x-family word, a hook compound's left word. */
+function familyRoots(family: LexWord["family"] | undefined): string[] {
+  switch (family?.kind) {
+    case "content":
+      return family.roots;
+    case "x":
+      return [...family.leftRoots, ...(family.rightRoots ?? [])];
+    case "hookCompound":
+      return [family.leftRoot];
+    default:
+      return [];
+  }
 }
 
 function sameMultiset(a: readonly string[], b: readonly string[]): boolean {

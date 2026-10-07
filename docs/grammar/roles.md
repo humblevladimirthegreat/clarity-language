@@ -823,14 +823,14 @@ z-Ahaben | v-run . z-Azawan | v-sit | h-west-th-←agent.same
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azawan sits on Ahaben's left.* `zazawan vehahel hewezathahaben.` or `zazawan vehahel hewezathazawan.`
+**1.** *Azawan sits on the ship's left.* `zazawan vehahel hewezathol behebal.` or `zazawan vehahel hewezal behebal.`
 
 ::: details Show answer
-`zazawan vehahel hewezathahaben.`
+`zazawan vehahel hewezathol behebal.`
 
-z-Azawan | v-sit | h-west-th-Ahaben
+z-Azawan | v-sit | [h-west-th-landmark | b-ship]
 
-The name after **`th`** is whose facing counts; `hewezathazawan` is Azawan's own left.
+**`tho`** turns the arrow to the ship's own facing; bare `hewezal` is *west of the ship*.
 :::
 
 **2.** *Ahaben sees something to write with.* `zahaben daexaradal vahahal.` or `zahaben daoxaradal vahahal.`

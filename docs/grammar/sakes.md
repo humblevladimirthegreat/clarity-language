@@ -189,9 +189,13 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *tent* | `ededul` | ⛺ |
 | *wind* | `ewedul` | 🌬️ |
+| *autonomy* | `ahul` | 🗳️ from *ballot*: voting is choosing for yourself |
 | *competence* | `ulol` | 🧰 from *toolbox*: the kit that gets things working |
+| *understanding* | `adol` | 💡 from *lightbulb*: the light goes on when it makes sense |
+| *beneficence* | `ebel` | 🎁 from *present*: a gift leaves someone better off |
 | *physical* | `oyul` | 🫁 from *lungs*: breathing easy means the body is well |
 | *pleasure* | `ozol` | 🍓 from *strawberry*: sweetness you enjoy |
+| *sake* | `egal` | 🥚 from *egg*: not yet a specific kind |
 | *stimulus* | `gobum` | ☝️ from *point*: you point at it rather than keep it |
 
 **Review:**
@@ -220,12 +224,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-tent | g-physical-met-lasting
 :::
 
-**2.** *My knife serves competence.*
+**2.** *My knife is good for me.*
 
 ::: details Show answer
-`zanaval gulotham.`
+`zanaval gegatham.`
 
-z-knife | g-competence-met-any-term
+z-knife | g-sake-met-any-term
 :::
 
 **3.** *The wind detracts from the physical sake right now (passing).*
@@ -252,22 +256,22 @@ z-thunderstorm | [w-pleasure-unmet-modifiable | g-stimulus]
 z-Azawan | v-cook | th-pleasure-met-immediate
 :::
 
-**6.** *My basket detracts from competence (modifiable).*
+**6.** *My basket detracts from autonomy (modifiable).*
 
 ::: details Show answer
-`zabezal gulothum.`
+`zabezal gahuthum.`
 
-z-basket | g-competence-unmet-modifiable
+z-basket | g-autonomy-unmet-modifiable
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zabegul gulothal.`
+**1.** `zabegul gebethal.`
 
 ::: details Show answer
-z-bucket | g-competence-met-lasting
+z-bucket | g-beneficence-met-lasting
 
-*My bucket serves competence in the long term.*
+*My bucket serves beneficence in the long term.*
 :::
 
 **2.** `zerehel woyuthum gobum.`
@@ -302,12 +306,12 @@ z-Azawan | v-sing | th-competence-unmet-modifiable
 *My tent is unpleasant for now, but it serves the physical sake in the long term.*
 :::
 
-**6.** `zanadal wozotham gobum.`
+**6.** `zanadal wadotham gobum.`
 
 ::: details Show answer
-z-night | [w-pleasure-met-any-term | g-stimulus]
+z-night | [w-understanding-met-any-term | g-stimulus]
 
-*The night serves pleasure.*
+*The night serves understanding.*
 :::
 
 #### Pick one {#beginner-pick-one}

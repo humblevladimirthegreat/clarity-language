@@ -827,8 +827,9 @@ class AgazanSentenceParser extends CstParser {
       { ALT: () => this.CONSUME(Odo) },
       { ALT: () => this.CONSUME(WritingSpan) },
     ]);
+    // A `gl-` adjective leans on the next noun, so it ends this package (clause.md#left-bound-adjectives).
     this.MANY({
-      GATE: () => this.LA(laAfterW(this)).tokenType === G,
+      GATE: () => this.plainAdjAhead(),
       DEF: () => {
         this.SUBRULE2(this.gPackage);
       },
