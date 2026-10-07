@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
 
 import { createClassifyTables } from "./classify.js";
+import { isGreeting } from "./ast-walk.js";
 import { parse, SentenceParseError } from "./index.js";
 
 const rootDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
@@ -117,6 +118,58 @@ describe("parse — clause.md beginner", () => {
     assert.equal(result.utterances[0]!.left.polars[0]?.raw, "yael");
     assert.equal(result.utterances[0]!.bodies[0]!.clause.units.length, 2);
   });
+});
+
+describe("parse — multipart names (word-endings.md#multipart-names)", () => {
+  const onlyPackage = (text: string) => {
+    const unit = parseText(text).utterances[0]!.bodies[0]!.clause.units;
+    assert.equal(unit.length, 1);
+    assert.equal(unit[0]!.kind, "np");
+    const first = unit[0]!;
+    const item = first.kind === "np" ? first.coord.parts[0]!.items[0] : undefined;
+    return item?.kind === "package" ? item.package : undefined;
+  };
+
+  it("keeps a family name on a named citation (ohun galuden)", () => {
+    assert.deepEqual(onlyPackage("ohun galuden")?.adjs.map((a) => a.word.raw), ["galuden"]);
+    assert.ok(isGreeting(parseText("ohun galuden.").utterances[0]!.bodies[0]!.clause));
+    assert.ok(isGreeting(parseText("glaluden ohun.").utterances[0]!.bodies[0]!.clause));
+    assert.ok(!isGreeting(parseText("ohun gubuhel.").utterances[0]!.bodies[0]!.clause));
+  });
+
+  it("reads zohun galuden. as predication", () => {
+    const units = parseText("zohun galuden.").utterances[0]!.bodies[0]!.clause.units;
+    assert.deepEqual(units.map((u) => u.kind), ["np", "predicate"]);
+  });
+
+  it("puts /ɡ/ after a call on the call", () => {
+    const left = parseText("yohun galuden.").utterances[0]!.left;
+    assert.deepEqual(left.vocativeAdjs?.[0]?.adjs.map((a) => a.word.raw), ["galuden"]);
+    assert.equal(parseText("yohun galuden.").utterances[0]!.bodies.length, 0);
+    const gl = parseText("glaluden yohun.").utterances[0]!.left;
+    assert.equal(gl.vocativeAdjs?.[0]?.glAdj?.word.raw, "glaluden");
+    assert.equal(parseText("yalahen gubuhel.").utterances[0]!.left.vocativeAdjs?.[0]?.adjs[0]?.word.raw, "gubuhel");
+  });
+
+  it("puts the length bid on the given name; /ɡ/ + x + vowel stays ability", () => {
+    const left = parseText("ohuxen galuden.").utterances[0]!.left;
+    assert.equal(left.vocatives[0]?.reading, "greeting");
+    assert.equal(left.vocativeAdjs?.[0]?.adjs[0]?.word.raw, "galuden");
+    assert.equal(onlyPackage("ohun galudexen.")?.adjs[0]?.word.reading, "ability");
+  });
+
+  it("a /b/ right after the family name is hosted; after the verb it receives", () => {
+    const hosted = onlyPackageAdjs("zohun galuden balahen vezebel.");
+    assert.equal(hosted?.hosted?.bound.raw, "balahen");
+    const units = parseText("zohun galuden vezebel balahen.").utterances[0]!.bodies[0]!.clause.units;
+    assert.deepEqual(units.map((u) => u.kind), ["np", "vp", "np"]);
+  });
+
+  function onlyPackageAdjs(text: string) {
+    const unit = parseText(text).utterances[0]!.bodies[0]!.clause.units[0]!;
+    const item = unit.kind === "np" ? unit.coord.parts[0]!.items[0] : undefined;
+    return item?.kind === "package" ? item.package.adjs[0] : undefined;
+  }
 });
 
 describe("parse — joins.md", () => {

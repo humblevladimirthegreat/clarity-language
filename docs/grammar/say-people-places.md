@@ -25,9 +25,9 @@ English *as for X* or *regarding X* names who or what the sentence is about, eve
 
 Beginner already used two sentences for English *who / that / which*. Prefer [resume **-r**](pronouns.md#resume-r) in the second sentence.
 
-> `zagavol vehahel. zazawan bagavor vezebel.`
+> `zagavol vehahel. zazawan vezebel bagavor.`
 >
-> z-guard | v-sit . z-Azawan | b-←guard | v-tell
+> z-guard | v-sit . z-Azawan | v-tell | b-←guard
 >
 > "A guard sits. Azawan tells that guard."
 
@@ -147,9 +147,9 @@ When the thing only comes **from** B (*the sound of the drums*), use origin **`g
 
 ### Named handles {#named-handles}
 
-**Needs:** [Proper name `-n`](word-endings.md#proper-name--n) · [Phrasal proper names](word-endings.md#phrasal-proper-names)
+**Needs:** [Proper name `-n`](word-endings.md#proper-name--n) · [Multipart names](word-endings.md#multipart-names)
 
-A long official title (bureau, act, titled group) may have a **handle**: one published root plus **-n**, used like any proper name, including on first mention. The long form is the same office spelled as a phrasal proper (`ROOT x ROOT` … + **-n**).
+A long official title (bureau, act, titled group) may have a **handle**: one published root plus **-n**, used like any proper name, including on first mention. The long form is the same office spelled as a hyphenated name (`ROOT x ROOT` … + **-n**).
 
 > `zubugan vezebel.`
 >
@@ -160,7 +160,7 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 | Agazan | Use | English |
 |--------|-----|---------|
 | `zubugan` | handle: one root + **-n** | default talk, including first mention |
-| `zubugaxalahen` | long title: phrasal proper (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
+| `zubugaxalahen` | long title: hyphenated name (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
 
 > `zubugaxalahen.`
 >
@@ -1214,7 +1214,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 #### Agazan → English {#people-as-for-agazan-to-english}
 
-**1.** `hahehom bahaben zazawan balahen vezebel.`
+**1.** `hahehom bahaben zazawan vezebel balahen.`
 
 ::: details Show answer
 

@@ -112,15 +112,15 @@ A `/w/` word still goes before the host, so the host and its `/b/` stay side by 
 >
 > "A dog sleeps like Azawan."
 
-**Unhosted: who receives.** A `/b/` word anywhere else is the person who receives what the verb passes on: who gets the thing given, or who hears what is told. What is given or said is still `/d/`. A clause has at most one of these.
+**Unhosted: who receives.** A `/b/` word anywhere else is the person who receives what the verb passes on: who gets the thing given, or who hears what is told. What is given or said is still `/d/`. A clause has at most one of these. Its usual place is right after the verb: **Subject – Direct Object – Verb – Extra noun**.
 
-> `zazawan balahen vezebel.`
+> `zazawan vezebel balahen.`
 >
-> z-Azawan | b-Alahen | v-tell
+> z-Azawan | v-tell | b-Alahen
 >
 > "Azawan tells Alahen."
 
-**Compare with:** `humum balahen` is *like Alahen*, because a `/b/` right after `/h/` completes it. To add a person who receives, make sure that `/b/` word does not come right after a `/ɡ/`, `/h/`, or `/th/` word: `balahen hadehum`, or after a finished pair (`humum bazawan balahen`).
+**Compare with:** `humum balahen` is *like Alahen*, because a `/b/` right after `/h/` completes it. The usual place after the verb keeps the person who receives clear of any `/ɡ/`, `/h/`, or `/th/` word. If you move it elsewhere, make sure it does not come right after one: `balahen hadehum`, or after a finished pair (`humum bazawan balahen`).
 
 ### Role letters {#role-letters}
 
@@ -173,11 +173,11 @@ The word bank has two tables. **New words** are introduced here: **English** is 
 **1.** *Azawan pays Alahen.*
 
 ::: details Show answer
-`zazawan balahen vamol.`
+`zazawan vamol balahen.`
 
-z-Azawan | b-Alahen | v-pay
+z-Azawan | v-pay | b-Alahen
 
-**Also correct:** `zazawan vamol balahen.`
+**Also correct:** `zazawan balahen vamol.`
 :::
 
 **2.** *A very angry Alahen finds money.*
@@ -203,11 +203,11 @@ z-Ahaben | h-haste | d-pencil | v-find
 **4.** *I doubt that Azawan pays Ahaben.*
 
 ::: details Show answer
-`zazawan bahaben thevegam vamol.`
+`zazawan thevegam vamol bahaben.`
 
-z-Azawan | b-Ahaben | th-doubt | v-pay
+z-Azawan | th-doubt | v-pay | b-Ahaben
 
-**Also correct:** `zazawan thevegam vamol bahaben.`
+**Also correct:** `zazawan bahaben thevegam vamol.`
 :::
 
 **5.** *Ahaben finds Azawan.*
@@ -274,14 +274,14 @@ z-Azawan | d-Alahen | v-find
 The finder takes `/z/` and the one found takes `/d/`; the other form has Alahen finding Azawan.
 :::
 
-**2.** *Alahen pays Azawan hastily.* `zalahen hadehum bazawan vamol.` or `zalahen bazawan hadehum vamol.`
+**2.** *Alahen pays Azawan hastily.* `zalahen hadehum bazawan vamol.` or `zalahen hadehum vamol bazawan.`
 
 ::: details Show answer
-`zalahen bazawan hadehum vamol.`
+`zalahen hadehum vamol bazawan.`
 
-z-Alahen | b-Azawan | h-haste | v-pay
+z-Alahen | h-haste | v-pay | b-Azawan
 
-A `/b/` word right after an `/h/` word completes it, so the person paid must not follow `hadehum`.
+A `/b/` word right after an `/h/` word completes it, so the person paid goes after the verb, not right after `hadehum`.
 :::
 
 #### Fix it {#beginner-fix-it}
@@ -313,6 +313,20 @@ English puts the adjective before the noun (*a blue dog*). Agazan can too: add *
 > "a blue dog"
 
 A `/b/` word still follows that adjective, and a `/w/` word still sits immediately before it (`welavam glubuhel zodogal` = *a very blue dog*). This extra **`l`** goes only on adjectives (`/ɡ/`). A noun must come after it: with no noun to lean on, write a plain `/ɡ/` adjective after the noun instead (`zodogal gubuhel`).
+
+A [family name](word-endings.md#multipart-names) is a `/ɡ/` word too, so **`gl-`** puts it first, for a culture that names people family first. It leans on a [call](speech-moves.md#vocative) the same way.
+
+> `glaluden zohun vowogal.`
+>
+> [gl-Aluden | z-Ohun] | v-walk
+>
+> "Aluden Ohun walks."
+
+> `glaluden yohun.`
+>
+> [gl-Aluden | y-Ohun]
+>
+> "Aluden Ohun!" (calling Aluden Ohun)
 
 ### Complex chaining {#complex-chaining}
 

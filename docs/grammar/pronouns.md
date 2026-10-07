@@ -69,9 +69,9 @@ The role letter is the slot **now**, so a pointer can move someone to a new role
 >
 > "Azawan sees Alahen. He runs."
 
-> `zazawan balahen vezebel. zoxar varahal.`
+> `zazawan vezebel balahen. zoxar varahal.`
 >
-> z-Azawan | b-Alahen | v-tell . z-←recipient.same | v-run
+> z-Azawan | v-tell | b-Alahen . z-←recipient.same | v-run
 >
 > "Azawan tells Alahen. He runs."
 
@@ -373,10 +373,10 @@ z-Azawan | v-see | d-←agent.self
 *Azawan sees themself.*
 :::
 
-**6.** `zazawan bahaben vezebel. zoxar dugugol vugugal.`
+**6.** `zazawan vezebel bahaben. zoxar dugugol vugugal.`
 
 ::: details Show answer
-z-Azawan | b-Ahaben | v-tell . z-←recipient.same | d-cookie | v-cook
+z-Azawan | v-tell | b-Ahaben . z-←recipient.same | d-cookie | v-cook
 
 *Azawan tells Ahaben. She cooks a cookie.*
 :::
@@ -393,12 +393,12 @@ z-Azawan | d-Alahen | v-see . z-←patient.same | v-scream
 Alahen was the one seen, role vowel **`u`**; `zaxar` is the doer, Azawan.
 :::
 
-**2.** *Azawan tells Alahen. Ahaben sees him (Alahen).* `zazawan balahen vezebel. zahaben doxar vahahal.` or `zazawan balahen vezebel. zahaben daxar vahahal.`
+**2.** *Azawan tells Alahen. Ahaben sees him (Alahen).* `zazawan vezebel balahen. zahaben doxar vahahal.` or `zazawan vezebel balahen. zahaben daxar vahahal.`
 
 ::: details Show answer
-`zazawan balahen vezebel. zahaben doxar vahahal.`
+`zazawan vezebel balahen. zahaben doxar vahahal.`
 
-z-Azawan | b-Alahen | v-tell . z-Ahaben | d-←recipient.same | v-see
+z-Azawan | v-tell | b-Alahen . z-Ahaben | d-←recipient.same | v-see
 
 Alahen was the one told, role vowel **`o`**; `daxar` is the doer, Azawan.
 :::
@@ -559,9 +559,9 @@ The last `zwar` is still the dog, though the cat is the newer doer. `zaxar` woul
 
 With no phrase to tag, a tag holds a placeholder, as in *suppose A tells E*:
 
-> `zwal bwel vezebel. zwer dugugol vagadel.`
+> `zwal vezebel bwel. zwer dugugol vagadel.`
 >
-> z-tag.A | b-tag.E | v-tell . z-←tag.E | d-cookie | v-eat
+> z-tag.A | v-tell | b-tag.E . z-←tag.E | d-cookie | v-eat
 >
 > "A tells E. E eats a cookie."
 
@@ -613,7 +613,7 @@ English *now, about Azawan…*, *speaking of dogs…*, and *so, back to Azawan�
 | `xevavem` / `xavazem` | clear the topic ([linkers](dependents.md#sentence-linkers)) | *next* / *by the way* |
 
 1. **No topic at the start.** A conversation opens with none.
-2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six sentence linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xodogal` *now, about a dog*). Any [compound](x-compounds.md) works the same way: a multipart name (`xazawaxalahen`), a noun pair (`xebeyaxabodel` *now, about peanut butter*), or a [role compound](roles.md#role-compounds) (`xaxedehol` *now, about people who teach*; `xaxedehor` returns to it). It takes the same adjectives and hooks as any noun (`xodogal em bazawan` *now, about Azawan's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it. A [span](spans.md#topic-quotes) in this slot is the same job for a foreign name, a word as spelling, or a titled work (<code>x@&lt;Sam&gt;</code>, `x@[onodan alahen]`, or a word as spelling, which takes the [mention](spans.md#mention) marker before it).
+2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six sentence linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xodogal` *now, about a dog*). Any [compound](x-compounds.md) works the same way: a hyphenated name (`xazawaxalahen`), a noun pair (`xebeyaxabodel` *now, about peanut butter*), or a [role compound](roles.md#role-compounds) (`xaxedehol` *now, about people who teach*; `xaxedehor` returns to it). It takes the same adjectives and hooks as any noun (`xodogal em bazawan` *now, about Azawan's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it. A [span](spans.md#topic-quotes) in this slot is the same job for a foreign name, a word as spelling, or a titled work (<code>x@&lt;Sam&gt;</code>, `x@[onodan alahen]`, or a word as spelling, which takes the [mention](spans.md#mention) marker before it).
 3. **Return.** `/x/` + the whole stem of an earlier word + **-r** makes that thing the topic again.
 4. **Clear.** `xevavem` and `xavazem` each open a new frame. After either there is no topic until the next introduce or return.
 5. **Persist.** The topic holds until rule 2, 3, or 4 changes it. Clause joins, other linkers, and agenda numbering leave it alone. A goodbye ends the conversation and clears it.

@@ -42,6 +42,7 @@ import type {
   GCoord,
   GItem,
   GPackage,
+  VocativeAdjs,
   Hosted,
   HUnit,
   ImpliedForce,
@@ -232,7 +233,7 @@ class AgazanSentenceParser extends CstParser {
   public utterance = this.RULE("utterance", () => {
     this.OR([
       {
-        GATE: () => tokenIs(this.LA(1), Polar, Vocative, Interjection, Force) || this.discourseHookAhead(),
+        GATE: () => tokenIs(this.LA(1), Polar, Vocative, Interjection, Force) || this.glCallAhead() || this.discourseHookAhead(),
         ALT: () => {
           this.SUBRULE(this.leftEdge);
           this.OPTION(() => {
@@ -250,20 +251,39 @@ class AgazanSentenceParser extends CstParser {
       this.CONSUME(Period);
       // After a sentence end, a turn word or hook opens a new utterance instead (the document loop takes it).
       this.OPTION2({
-        GATE: () => !tokenIs(this.LA(1), Polar, Force, Vocative, Interjection, Hook),
+        GATE: () => !tokenIs(this.LA(1), Polar, Force, Vocative, Interjection, Hook) && !this.glCallAhead(),
         DEF: () => this.SUBRULE3(this.bodyClause, { LABEL: "nextBody" }),
       });
     });
   });
+
+  /** A call (or a greeting bid) and the `/ɡ/` words that describe the one called: `yohun galuden` (speech-moves.md#vocative). */
+  public callWord = this.RULE("callWord", () => {
+    this.OPTION({
+      GATE: () => this.glCallAhead(),
+      DEF: () => this.SUBRULE(this.gPackage, { LABEL: "glAdj" }),
+    });
+    this.CONSUME(Vocative);
+    this.MANY({
+      GATE: () => this.plainAdjAhead(),
+      DEF: () => this.SUBRULE2(this.gPackage),
+    });
+  });
+
+  /** A `gl-` adjective leaning on a call (`glaluden yohun`): family name first. */
+  private glCallAhead(): boolean {
+    const la = this.LA(1);
+    return la.tokenType === G && (la.payload as LexWord).gl === true && this.LA(2).tokenType === Vocative;
+  }
 
   public leftEdge = this.RULE("leftEdge", () => {
     this.OR([
       {
         ALT: () => {
           this.AT_LEAST_ONE({
-            GATE: () => tokenIs(this.LA(1), Vocative, Interjection, Polar) || this.discourseHookAhead(),
+            GATE: () => tokenIs(this.LA(1), Vocative, Interjection, Polar) || this.glCallAhead() || this.discourseHookAhead(),
             DEF: () => this.OR2([
-              { ALT: () => this.CONSUME(Vocative) },
+              { GATE: () => this.LA(1).tokenType === Vocative || this.glCallAhead(), ALT: () => this.SUBRULE(this.callWord) },
               { ALT: () => this.CONSUME(Interjection) },
               { ALT: () => this.CONSUME(Polar) },
               {
@@ -1021,6 +1041,8 @@ function disambiguateClause(units: Unit[]): Unit[] {
   if (item.kind !== "package") return units;
   const pkg = item.package;
   if (pkg.adjs.length !== 1) return units;
+  // A named citation keeps its `/ɡ/` words: `ohun galuden` is a full name, not *Ohu is an Aluden* (word-endings.md#multipart-names).
+  if (rest.length === 0 && !pkg.head.pos && pkg.head.ending === "n") return units;
 
   const adj = pkg.adjs[0]!;
   return [
@@ -1650,7 +1672,12 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
     return { vocatives: [], interjections: [], polars: [], impliedForce: "yal" };
   }
 
-  const vocatives = childTokens(cst, "Vocative").map(lexWordFromToken);
+  const calls = childNodes(cst, "callWord");
+  const vocatives = calls.map((call) => lexWordFromToken(childToken(call, "Vocative")!));
+  const vocativeAdjs = calls.map((call): VocativeAdjs => {
+    const glCst = childNodes(call, "glAdj")[0];
+    return { ...(glCst ? { glAdj: buildGPackage(glCst) } : {}), adjs: childNodes(call, "gPackage").map(buildGPackage) };
+  });
   const interjections = childTokens(cst, "Interjection").map(lexWordFromToken);
   const polars = childTokens(cst, "Polar").map(lexWordFromToken);
   const hookTok = childToken(cst, "Hook");
@@ -1662,6 +1689,7 @@ function buildLeftEdge(cst: CstNode | undefined): LeftEdge {
 
   return {
     vocatives,
+    ...(vocativeAdjs.some((v) => v.glAdj || v.adjs.length > 0) ? { vocativeAdjs } : {}),
     interjections,
     polars,
     hook: hookTok ? lexWordFromToken(hookTok) : undefined,

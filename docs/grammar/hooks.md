@@ -141,7 +141,7 @@ Use the same **`ol …`** for *actually* when you correct what someone expected:
 
 ### Extra noun (`/b/` after the hook) {#extra-noun}
 
-English prepositions such as *in*, *at*, *from*, and *for* add a place, a source, or someone who benefits. In Agazan, put a hook right before a `/b/` [extra noun](clause.md#extra-nouns). The hook says how that noun, its **landmark**, relates to the event (or to the noun just before the hook). This is not the recipient, which takes no hook (`zazawan balahen vezebel` *tells Alahen*).
+English prepositions such as *in*, *at*, *from*, and *for* add a place, a source, or someone who benefits. In Agazan, put a hook right before a `/b/` [extra noun](clause.md#extra-nouns). The hook says how that noun, its **landmark**, relates to the event (or to the noun just before the hook). This is not the recipient, which takes no hook (`zazawan vezebel balahen` *tells Alahen*).
 
 So the test is: `/b/` right after the hook, and no recipient `/b/` right before it. Right after a recipient, the hook is same-role *including* (`bazawan al balahen`).
 

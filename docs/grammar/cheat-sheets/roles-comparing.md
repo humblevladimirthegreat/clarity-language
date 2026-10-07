@@ -132,7 +132,7 @@ After the role letter, look at both sides of the **first** **`x`**. A normal roo
 <!-- cheat-sheet: roles-comparing -->
 | Left of **`x`** | Right of **`x`** | Reading | Example | Stage |
 |-----------------|------------------|---------|---------|-------|
-| [full root](../x-compounds.md#families-by-shape) | full root | one ordinary compound | `zebeyaxabodel` *peanut butter*; `zohuxaluden` (a multipart name) | B |
+| [full root](../x-compounds.md#families-by-shape) | full root | one ordinary compound | `zebeyaxabodel` *peanut butter*; `zohuxaluden` (a hyphenated name) | B |
 | [role vowel](../x-compounds.md#families-by-shape) | **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** | role pointer | `zaxar` *they*; `zaxal` *another one*; `zaxam` *what they did* | B |
 | [role vowel](../x-compounds.md#families-by-shape) | a longer root | role compound | `zaxedehol` *someone who teaches* | B |
 | [name](../x-compounds.md#conversation-length) | a single vowel, then **-n** | conversation length | *Azawan, I have time* | I |
@@ -262,7 +262,7 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [Later than planned](../comparatives.md#bars) | `zazawan thamam zel bral vevahal.` | *Azawan arrives later than planned.* | I |
 | [Stance after the fence](../comparatives.md#bars) | `zazawan zel bral vevahal thamam.` | *Azawan plans to arrive last.* | I |
 | [More than planned, on an object](../comparatives.md#bars) | `zazawan dozolx thamam del gral vagadel.` | *Azawan eats more strawberries than planned.* | I |
-| [Often, on a recipient](../comparatives.md#bars) | `zazawan balahen thamam bel hral vezebel.` | *Azawan tells Alahen more often than planned.* | I |
+| [Often, on a recipient](../comparatives.md#bars) | `zazawan vezebel balahen thamam bel hral.` | *Azawan tells Alahen more often than planned.* | I |
 | [Than usual](../comparatives.md#stance-bars) | `zazawan thobam zel gezebul.` | *Azawan is sleepier than usual.* | A |
 | [Than I remember](../comparatives.md#stance-bars) | `zazawan thevom zel gelavam.` | *Azawan is bigger than I remember.* | A |
 | [Than advertised](../comparatives.md#stance-bars) | `zubugal thewam zuel gagazam.` | *The book is less clear than advertised.* | A |

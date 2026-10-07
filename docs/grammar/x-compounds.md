@@ -238,7 +238,7 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxedehol` *someone who teaches* (**-r** *the one teaching*) | **a** doer / **e** scene / **u** undergoer / **o** extra `/b/` party |
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | *Azawan, I have time* | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [ability](intention.md#ability) | *can’t sing right now* | extra vowel after the root |
-| full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zebeyaxabodel`; `zohuxaluden` ([multipart names](word-endings.md#phrasal-proper-names)) | **x** ≈ plus |
+| full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zebeyaxabodel`; `zohuxaluden` ([hyphenated names](word-endings.md#multipart-names)) | **x** ≈ plus |
 | sake root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [sakes](sakes.md) | `gulothal` | **th** ≈ *think* (your view of the sake) |
 | other root **`th`** **`a`** / **`e`** / **`o`** / **`u`** (or a stack) | [label scope](predication.md#label-scope) | *angry this time*; *a teacher* | **th** ≈ *think* (what kind of claim the label is) |
 | direction root **`th`** facing person | [viewpoint lateral](roles.md#viewpoint-laterals) | `gewezathazawan` *Azawan’s left* | **th** ≈ *think* (whose point of view) |
@@ -247,7 +247,7 @@ A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`*
 
 ### Adding another piece {#ordinary-compound-order}
 
-To narrow a compound further, or to build a name from several labels, add another root with another **`x`**. Keep the English order in **one** word (*crush* then *love*; a shop named after three drinks). The **last** root is the kind, and each earlier root narrows it. The ending stays at the end of the whole word. In a name (a person or a shop), the roots are simply labels in order, and none of them is the kind.
+To narrow a compound further, or to build a hyphenated name from several labels, add another root with another **`x`**. Keep the English order in **one** word (*crush* then *love*; a shop named after three drinks). The **last** root is the kind, and each earlier root narrows it. The ending stays at the end of the whole word. In a name (a person or a shop), the roots are simply labels in order, and none of them is the kind.
 
 > `gagayoxalaval.`
 >
@@ -261,7 +261,7 @@ To narrow a compound further, or to build a name from several labels, add anothe
 >
 > "Coffee-Tea-Water" (one named shop)
 
-[Multipart names](word-endings.md#phrasal-proper-names) use the same order (given name, then family, then a further title). [Body left / right](roles.md#viewpoint-laterals) is not this stack: it joins the direction and whose facing counts with **`th`** (`gewezathazawan`), because the second root is a point of view, not a kind.
+[Hyphenated names](word-endings.md#multipart-names) use the same order (*Mary-Kate*: first piece first). A family name is not part of this stack; it is a separate `/ɡ/` word after the given name. [Body left / right](roles.md#viewpoint-laterals) is not this stack: it joins the direction and whose facing counts with **`th`** (`gewezathazawan`), because the second root is a point of view, not a kind.
 
 A [role compound](roles.md#role-compounds) can take such a stack as its stem (`zaxodogaxowogal` *someone who walks dogs*), but is never one piece of a stack.
 
@@ -274,7 +274,7 @@ Use the table above. If the word has a mid-word **`th`**, it is a [sake](sakes.m
 
 - After the role letter: a role vowel (one vowel or a stacked pair), **`x`**, **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** → a **role pointer** ([pronouns](pronouns.md#role-pointers)). A role compound with a stem keeps its own **-l** / **-m** senses; only the stemless pointer takes **-m** as a share.
 - After the role letter: a role vowel (one vowel or a two-vowel pair), **`x`**, then a longer root → a **role compound** (who does / where it happens / who undergoes / who is told, or a [two-vowel role](roles.md#instrument) such as the tool, `daexaradal`).
-- A name (one root or a [multipart proper name](word-endings.md#phrasal-proper-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a conversation-length bid → [conversation length](#conversation-length).
+- A name (one root or a [hyphenated name](word-endings.md#multipart-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a conversation-length bid → [conversation length](#conversation-length).
 - A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **ability**.
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
 
@@ -304,7 +304,7 @@ English *I can stay a while* or *I only have a minute* tells the other person ho
 | `SELFxon` | one slot: *one ask or comment* | about to leave | **o** ≈ one (one last slot) |
 | `SELFxun` | passing: *just acknowledging; not opening a talk* | leaving right now | **u** ≈ undo (lift the talk) |
 
-Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](word-endings.md#named-n-beginner) ending.
+On a [full name](word-endings.md#multipart-names), the vowel goes on the given name (`ohuxen galuden.`); a family name takes no bid, since **`x`** + vowel on a `/ɡ/` word is [ability](intention.md#ability). Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](word-endings.md#named-n-beginner) ending.
 
 At arrival, the other person can answer with their own bid. The **lesser** bid sets the shared limit: **a** (open-ended) is more than **e** (a few minutes), **e** is more than **o** (one slot), and **o** is more than **u** (passing). If you offer open-ended time and Alahen offers one slot, you have one slot.
 

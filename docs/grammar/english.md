@@ -52,6 +52,7 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 | part / contents / material (*a hand of Alahen*, *a teapot of tea*) | **`gobom`** / **`gahem`** / **`guwum`** + `/b/` | [Of relations](relations.md#of-relations) |
 | origin (*Alahen of the city*, *the sound of the drums*) | **`gagum`** + `/b/` | [Of relations](relations.md#of-relations) |
 | someone's act (*Azawan's walk*, *the monkey's tricks*) | the act as a sentence, then its verb root in **-r** | [Someone's act](say-people-places.md#someones-act) |
+| a family's (*the Aluden family's house*) | hook **`em`** + the family with its name: `em bavahal galuden` | [Whose](hooks.md#genitive), [multipart names](word-endings.md#multipart-names) |
 | *personal* / *private* (*a personal matter*) | hook **`em`** + the owner: `em bamun` | [Whose](hooks.md#genitive) |
 | *my* belonging + sake (*my tent serves the physical sake*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
 
@@ -231,3 +232,5 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agaza
 | English itch | Agazan job | Teach |
 |--------------|------------|-------|
 | *hi* / *hello* / *goodbye* | your own name said with a period: `SELFn.` | [Greeting](word-endings.md#greeting) |
+| full name (*Ohun Aluden*), family-first name, *Mary-Kate* | given name, then the family name on `/ɡ/` + **-n** (`zohun galuden`); a hyphenated name is one **`x`** word | [Multipart names](word-endings.md#multipart-names) |
+| business or product name (*Ford Mustang*, *Coffee-Tea*, *Coffee-Instead-of-Tea*) | maker on `/ɡ/` + **-n**, a compact **`x`** word, or a titled phrase / span when the name has grammar inside | [Multipart names](word-endings.md#multipart-names) |

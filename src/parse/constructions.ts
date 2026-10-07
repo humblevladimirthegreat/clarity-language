@@ -31,7 +31,10 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "utterance.Period": { anchor: "word-endings.md#greeting", summary: "sentence end" },
   "utterance.nextBody": { anchor: "dependents.md#which-person-or-thing-who-that-which", summary: "next sentence in the same turn" },
 
-  "leftEdge.Vocative": { anchor: "speech-moves.md#vocative", summary: "vocative / greeting at the left edge" },
+  "leftEdge.callWord": { anchor: "speech-moves.md#vocative", summary: "vocative / greeting at the left edge" },
+  "callWord.Vocative": { anchor: "speech-moves.md#vocative", summary: "the call or greeting name" },
+  "callWord.gPackage": { anchor: "speech-moves.md#vocative", summary: "/ɡ/ after a call describes the one called (family name)" },
+  "callWord.glAdj": { anchor: "clause.md#left-bound-adjectives", summary: "gl- family name before a call (family first)" },
   "leftEdge.Interjection": { anchor: "speech-moves.md#interjections-reactions", summary: "interjection at the left edge" },
   "leftEdge.Polar": { anchor: "questions.md#polar-stance", summary: "polar stance turn" },
   "leftEdge.W": { anchor: "hooks.md#hook-w", summary: "/w/ on a left-edge hook" },

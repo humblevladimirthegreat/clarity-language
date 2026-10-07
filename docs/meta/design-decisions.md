@@ -103,6 +103,15 @@ One of a name is **-ln** (span `^@`). Rejected:
 - **-nx:** it is *name and associates*.
 - **`dar` + `/ɡ/`:** under `yol` the join **-r** becomes a fill-ask blank.
 
+### Multipart names
+
+A full name is the given name plus a family name on `/ɡ/` + **-n** ([word-endings.md](../grammar/word-endings.md#multipart-names)). Rejected:
+
+- **`/v/`, `/h/`, `/w/` or `/th/` + -n as a name part:** each works on the whole clause and already has its own **-n** reading (a titled event, a named standard, a named scale), so a name like *Agave Owoga* on `/v/` would read as *Agave performs Owoga*. Names with grammar inside are titled phrases or spans.
+- **`/ɡ/` + -m for belonging to a family:** **-m** is a root's published abstract sense, so a family-name root on **-m** could not be told from that sense. Belonging uses *whose* (`em` + the family).
+- **`/ɡ/` + -n never hosts a `/b/`:** hosting is decided by position alone. An exception for one ending would fix only this case while every trailing adjective keeps the same trap; the recipient's usual place after the verb avoids it.
+- **The length bid on the family name:** **`x`** + vowel on `/ɡ/` is ability, so the bid goes on the given name.
+
 ### Spans
 
 **A span is written only.** The spoken open, close and resume served only speech-to-text, which does not exist, and they cost the TYPE and EDGE vowels, three close words and a spoken `/y/` span. Revisit only with real speech-to-text.

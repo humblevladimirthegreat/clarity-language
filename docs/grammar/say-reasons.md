@@ -203,8 +203,8 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *mean* (signify) | `zezebel dodogal vezebelovul.` | the word carries the meaning *dog* |
 | *mean* (intend) | `zazawan thamam vowogal.` | plans to walk ([intention](intention.md#plan-predict)) |
 | *define* | `zazawan dezebelovul hahehom bodogal vezebel.` | tells the meaning, about the dog |
-| *explain* | `zazawan balahen vezebel darl zalahen vowogal thevem barl zodogal varahal.` | tells Alahen that the walk has the run as its reason |
-| *describe* | `zazawan hahehom bodogal balahen vezebel.` | tells Alahen about the dog |
+| *explain* | `zazawan vezebel balahen darl zalahen vowogal thevem barl zodogal varahal.` | tells Alahen that the walk has the run as its reason |
+| *describe* | `zazawan hahehom bodogal vezebel balahen.` | tells Alahen about the dog |
 | *know* (that) | `zazawan vubugam darl zodogal varahal.` | knows that the dog runs; to say how *you* know it, use a [channel](knowing.md#evidentiality) |
 | *know whether* / *know which* | `zazawan vubugam dorl zodogal varahal.` | knows whether the dog runs; a blank inside asks *which* (`dor`) |
 | *find out* | `zazawan vamagal dorl zodogal varahal.` | finds whether the dog runs |

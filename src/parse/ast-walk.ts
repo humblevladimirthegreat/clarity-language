@@ -113,15 +113,17 @@ export function isKindReference(part: NpCoord["parts"][number]): boolean {
   );
 }
 
-/** Greeting: a prefix-less named citation said alone (`azawan.`, word-endings.md § greeting). */
+/** Greeting: a prefix-less named citation said alone, with any family name (`azawan.`, word-endings.md § greeting). */
 export function isGreeting(clause: Clause): boolean {
   const [only, ...rest] = clause.units;
   if (rest.length > 0 || only?.kind !== "np" || only.coord.parts.length !== 1) return false;
   const [part] = only.coord.parts;
   const [item, ...more] = part!.items;
   if (more.length > 0 || part!.join || item?.kind !== "package") return false;
-  const { head, adjs, glAdj } = item.package;
-  return !head.pos && head.ending === "n" && adjs.length === 0 && !glAdj;
+  const { head, adjs, glAdj, adjCoord } = item.package;
+  // A full name greets too (`SELFn galuden.`): only family-name `/ɡ/` words on **-n** (word-endings.md#multipart-names).
+  const familyName = (adj: GPackage) => adj.word.ending === "n" && !adj.hosted && adj.modifiers.length === 0;
+  return !head.pos && head.ending === "n" && !adjCoord && adjs.every(familyName) && (!glAdj || familyName(glAdj));
 }
 
 /** A shared `/h/` or `/th/` unit. */
@@ -143,7 +145,12 @@ export function visitUtterance(utterance: Utterance, index: number, v: Visitor):
 
 function visitLeftEdge(left: LeftEdge, v: Visitor): void {
   const w = (words: LexWord[] | LexWord | undefined, slot: WordSlot) => words && [words].flat().forEach((x) => v.word?.(x, slot));
-  w(left.vocatives, "vocative");
+  left.vocatives.forEach((call, i) => {
+    const adjs = left.vocativeAdjs?.[i];
+    if (adjs?.glAdj) visitGPackage(adjs.glAdj, v);
+    v.word?.(call, "vocative");
+    for (const adj of adjs?.adjs ?? []) visitGPackage(adj, v);
+  });
   w(left.interjections, "interjection");
   w(left.polars, "polar");
   w(left.hook, "hook");

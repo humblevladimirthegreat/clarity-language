@@ -46,8 +46,10 @@ The role letter says the job ([role map](../word-endings.md#proper-name--n)); **
 
 | Shape | Example | English | Stage |
 |-------|---------|---------|-------|
-| [Compact multipart name](../word-endings.md#phrasal-proper-names): roots joined by mid-word `x` | `zohuxaluden vowogal.` | *Ohuxaluden walks.* | I |
-| [One of a multipart name](../word-endings.md#name-instance--ln) | `zohuxaludeln` | *someone named Ohuxaluden* | I |
+| [Full name](../word-endings.md#multipart-names): given name, then family name on `/ɡ/` + **-n** | `zohun galuden vowogal.` | *Ohun Aluden walks.* | I |
+| [Full name](../word-endings.md#multipart-names) as a citation, and its resume | `ohun galuden`; `zohun galuden`; `zohur` | *Ohun Aluden*; *Ohun* (the same person) | I |
+| [Hyphenated name](../word-endings.md#multipart-names): roots joined by mid-word `x` | `zohuxaluden vowogal.` | *Ohuxaluden walks.* | I |
+| [One of a full name](../word-endings.md#name-instance--ln) | `zohuln galuden` | *someone named Ohun Aluden* | I |
 | [Titled phrase](../word-endings.md#titled-phrases): **-n** on the hook, join, or span that packages it | `dedehel on dagavel` | *Coffee-Instead-of-Tea* (a cafe) | I |
 | [Country and tradition](../word-endings.md#countries-traditions) on `aheba` | `aheban` / `gahebam` / `dahebal` | *Japan* / *Japanese* / *a Japanese flag* | I |
 
@@ -111,7 +113,7 @@ Tell the two jobs apart by the word right before the `/b/` word.
 | Right before `/b/` | Job | Example | English | Stage |
 |--------------------|-----|---------|---------|-------|
 | a `/ɡ/`, `/h/`, or `/th/` word | [completes that word](../clause.md#extra-nouns) (the host) | `humum bazawan` | *like Azawan* | B |
-| anything else | [who receives](../clause.md#extra-nouns) (at most one) | `zazawan balahen vezebel.` | *Azawan tells Alahen.* | B |
+| anything else | [who receives](../clause.md#extra-nouns) (at most one) | `zazawan vezebel balahen.` | *Azawan tells Alahen.* | B |
 | a host, with `/w/` first | [`/w/` stays before the host](../clause.md#extra-nouns) | `welavam humum bazawan` | *very like Azawan* | B |
 | a host's `/b/`, then `/ɡ/` | [describes the extra noun](../clause.md#complex-chaining) | `zodogal gugol bazawan gubuhel` | *a dog the same as blue Azawan* | I |
 | two relations on one noun | [put one before with `gl-`](../clause.md#complex-chaining) | `glugol bazawan zodogal gugol balahen` | *a dog the same as Azawan, the same as Alahen* | I |
@@ -177,7 +179,7 @@ Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 | This | vs | That |
 |------|----|------|
 | `zazawan godogal.` *Azawan is a dog* ([kind](../predication.md#classification)) | | `zalahen gugol bazawan.` *Alahen is Azawan* ([one person, two labels](../predication.md#identity)) |
-| `humum bazawan` *like Azawan* ([`/b/` completes a host](../clause.md#extra-nouns)) | | `zazawan balahen vezebel.` *Azawan tells Alahen* ([`/b/` receives](../clause.md#extra-nouns)) |
+| `humum bazawan` *like Azawan* ([`/b/` completes a host](../clause.md#extra-nouns)) | | `zazawan vezebel balahen.` *Azawan tells Alahen* ([`/b/` receives](../clause.md#extra-nouns)) |
 | `zodogal gelavam.` *There is a big dog* ([new noun](../predication.md#existence)) | | `zodogar gelavam.` *The dog is big* ([resumed noun](../predication.md#existence)) |
 | `zazawan vowogal.` *Azawan walks* ([the verb](../clause.md#who-acts-and-the-action)) | | `zazawan gowogal.` *Azawan is walking* ([under way](../predication.md#in-progress)) |
 | `dazawan vahahal.` *Azawan was seen* ([no subject named](../clause.md#no-subject)) | | `zunan` *someone did it* ([an unnamed someone](../pronouns.md#special-pronouns)) |

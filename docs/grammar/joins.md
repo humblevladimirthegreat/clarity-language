@@ -63,9 +63,9 @@ Objects and extra nouns list the same way. Two `/d/` objects close with `dal`; t
 >
 > "Azawan sees a dog and a cat."
 
-> `zazawan balahen bahaben bal vezebel.`
+> `zazawan vezebel balahen bahaben bal.`
 >
-> z-Azawan | [b-Alahen | b-Ahaben | b-and] | v-tell
+> z-Azawan | v-tell | [b-Alahen | b-Ahaben | b-and]
 >
 > "Azawan tells Alahen and Ahaben."
 
@@ -119,9 +119,9 @@ A standalone join fills its slot with no items. In the object slot, `dal` is *no
 >
 > "Azawan sees nothing."
 
-> `zazawan bal vezebel.`
+> `zazawan vezebel bal.`
 >
-> z-Azawan | b-none | v-tell
+> z-Azawan | v-tell | b-none
 >
 > "Azawan tells nobody."
 
@@ -337,11 +337,11 @@ z-Azawan | [d-mango | d-melon | d-and] | v-see
 **3.** *Ahaben pays nobody.*
 
 ::: details Show answer
-`zahaben bal vamol.`
+`zahaben vamol bal.`
 
-z-Ahaben | b-none | v-pay
+z-Ahaben | v-pay | b-none
 
-**Also correct:** `zahaben vamol bal.`
+**Also correct:** `zahaben bal vamol.`
 :::
 
 **4.** *not the cart*

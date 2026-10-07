@@ -94,7 +94,7 @@ When English says someone **acts as another person’s agent** (*tells on behalf
 >
 > "Azawan tells on behalf of Alahen."
 
-A recipient `/b/` can follow once the pair is complete: `zazawan hadem balahen bahaben vezebel` (*tells Ahaben on behalf of Alahen*). On a noun, the same root is **`gadem`** (`dubugal gadem balahen` *a book on behalf of Alahen*). As a plain noun, `zadel` is *an id*.
+A recipient `/b/` can follow once the pair is complete: `zazawan hadem balahen vezebel bahaben` (*tells Ahaben on behalf of Alahen*). On a noun, the same root is **`gadem`** (`dubugal gadem balahen` *a book on behalf of Alahen*). As a plain noun, `zadel` is *an id*.
 
 **Compare with:** a `/b/` word with no relation word before it is who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`).
 
@@ -217,10 +217,10 @@ z-Azawan | h-haste | v-walk | [h-like | b-that-clause] | z-duck | v-run
 *Ahaben and Alahen are alike.*
 :::
 
-**4.** `zagavol bahaben humum bazawan vezebel.`
+**4.** `zagavol humum bazawan vezebel bahaben.`
 
 ::: details Show answer
-z-guard | b-Ahaben | [h-like | b-Azawan] | v-tell
+z-guard | [h-like | b-Azawan] | v-tell | b-Ahaben
 
 *The guard tells Ahaben, like Azawan does.*
 :::
@@ -235,12 +235,12 @@ z-Azawan | [[w-very | g-like] | b-duck]
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Azawan tells Ahaben on behalf of Alahen.* `zazawan hadem balahen bahaben vezebel.` or `zazawan hadem bahaben balahen vezebel.`
+**1.** *Azawan tells Ahaben on behalf of Alahen.* `zazawan hadem balahen vezebel bahaben.` or `zazawan hadem bahaben vezebel balahen.`
 
 ::: details Show answer
-`zazawan hadem balahen bahaben vezebel.`
+`zazawan hadem balahen vezebel bahaben.`
 
-z-Azawan | [h-on-behalf-of | b-Alahen] | b-Ahaben | v-tell
+z-Azawan | [h-on-behalf-of | b-Alahen] | v-tell | b-Ahaben
 
 The `/b/` right after **`hadem`** is the one acted for; the next `/b/` is who hears it.
 :::

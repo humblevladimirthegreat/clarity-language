@@ -332,7 +332,7 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 | Span | `th(hagawal)` | `th-ASIDE[h-quiet]` ([labeled bracket](#phrase-brackets)) |
 | Number / enumeration | `xrebul` | `x-starting-with` |
 
-For **phrasal proper names**, gloss each piece (`y-Ubune-x-Unowen`, `z-Ogove-x-Adeda-x-Unuden`). Mid-word **`x`** stays visible as `-x-`. Do not put Agazan letters in the english slot, except [opaque interiors](#span-interiors).
+For **hyphenated names**, gloss each piece (`y-Ubune-x-Unowen`, `z-Ogove-x-Adeda-x-Unuden`). Mid-word **`x`** stays visible as `-x-`. Do not put Agazan letters in the english slot, except [opaque interiors](#span-interiors).
 
 ### Mention marker and opaque interiors
 <a id="span-interiors"></a>

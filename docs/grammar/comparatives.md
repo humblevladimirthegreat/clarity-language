@@ -460,9 +460,9 @@ A bar fence ranks **one** item against **one** bar: with a bar, there is no seco
 >
 > "Azawan eats more strawberries than planned."
 
-> `zazawan balahen thamam bel hral vezebel.`
+> `zazawan vezebel balahen thamam bel hral.`
 >
-> z-Azawan | [b-Alahen | th-plan-itinerary | b-rank/more | h-how-often] | v-tell
+> z-Azawan | v-tell | [b-Alahen | th-plan-itinerary | b-rank/more | h-how-often]
 >
 > "Azawan tells Alahen more often than planned."
 

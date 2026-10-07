@@ -257,7 +257,7 @@ The rest of the role map (same **-n**):
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` + **-n** | this named entity | person, place, titled work, brand or product line (*Azawan*, *Paris*, *the Odyssey*; *book by* **[Rowling]**) |
 | `/v/` + **-n** | this named event, rite, or titled action | *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]** |
-| `/ɡ/` + **-n** | this named style, brand, or category | **[Art Deco]** furniture, **[iOS]** app |
+| `/ɡ/` + **-n** | this named style, brand, family, or category | **[Art Deco]** furniture, **[iOS]** app, *Ohun* **[Aluden]** |
 | `/w/` + **-n** | named scale, grade, or criterion on the following adjective | *spicy* **[Scoville]**, *large* **[King-size]** |
 | `/h/` + **-n** | named standard, channel, or official frame | *according to* **[GAAP]**, *in* **[Q3]** as the named quarter  |
 | `/y/` vocative + **-n** | address this named person, place, or title; on `/y/`, **-n** always calls | `yalahen`; a kind as a title (`yagavon`); titled group (*Team Alpha*) |
@@ -287,7 +287,7 @@ What counts as one depends on what the name names:
 | `dazawan` | the named thing itself | *Azawan* (the brand) |
 | `dazawaln` | one thing the name applies to | *an Azawan* |
 | `dazawalnx` | some things the name applies to ([plurality](plurality.md)) | *some Azawans* |
-| `zohuxaludeln` | the same on a [multipart name](#phrasal-proper-names) | *someone named Ohuxaluden* |
+| `zohuln galuden` | the same on a [full name](#multipart-names) | *someone named Ohun Aluden* |
 
 An **-ln** word is a new mention, so a lone `zazawaln.` is *there is an Azawan*, and a later **-r** resume (`dazawar`) is that same bed, not the brand. A foreign name in a span uses the fence mark `^@` for the same job ([spans](spans.md#when-required)).
 
@@ -304,7 +304,7 @@ A country root and a tradition root use all four endings, with one job each:
 | **-l** | its flag: *a Japanese flag* | its symbol: *a crucifix* |
 | **-ln** | one thing that bears the name (*a ship named Japan*) | one thing that bears the name |
 
-**-n** names the whole and **-m** says someone or something belongs to it, so a nationality is not a special case. A person, a quality, or a thing from that people (*Japanese food*) takes **-m**; **-n** on `/ɡ/` is for a named style or brand (*Art Deco*, *iOS*), where nobody belongs to it.
+**-n** names the whole and **-m** says someone or something belongs to it, so a nationality is not a special case. A person, a quality, or a thing from that people (*Japanese food*) takes **-m**; **-n** on `/ɡ/` is a named label instead: a style, a brand, or a [family name](#multipart-names) (*Art Deco*, *iOS*, *Ohun* **[Aluden]**).
 
 > `zazawan gahebam.`
 >
@@ -336,12 +336,35 @@ A store, title, or handle can be several words. Put **-n** on the **hook**, **jo
 | [join](joins.md#named-list) | the join (`zon`, …) | members keep their usual endings |
 | [span](spans.md#when-required) | the fence (`@` / spoken **-n**) | interior tokens keep their usual endings |
 
-A short one-word name, or a compact multipart name with mid-word **`x`**, still ends the **content word** in **-n** ([phrasal proper names](#phrasal-proper-names)).
+A one-word name, a hyphenated name with mid-word **`x`**, and each part of a full name still end the **content word** in **-n** ([multipart names](#multipart-names)).
 
-### Phrasal proper names (mid-word `x`)
-<a id="phrasal-proper-names"></a>
+### Multipart names {#multipart-names}
 
-English often writes a given name plus family as two words. In Agazan a short multipart proper name (given + family, a compact place label, a shop name) is **one content word**: roots join left to right with mid-word **`x`** ([ordinary compound order](x-compounds.md#ordinary-compound-order)), and **-n** names the whole as one person or place. That one word fills one slot, and one resume refers back to the whole name.
+English writes a given name and a family name as two words (*Ohun Aluden*). Agazan does too. The given name fills the slot with **-n**, and the family name follows it as a `/ɡ/` word with **-n**: like a brand, a family is a named group the person falls under. Given name first is the usual order.
+
+> `zohun galuden vowogal.`
+>
+> [z-Ohun | g-Aluden] | v-walk
+>
+> "Ohun Aluden walks."
+
+The family name describes the given name, so the person is still one noun in one slot. A resume repeats the given name’s stem, so `zohur` points back to Ohun Aluden, and you can drop the family name once the person is known.
+
+<!-- cheat-sheet: word-shape-clause -->
+| Agazan | Use | English |
+|--------|-----|---------|
+| `ohun galuden` | citation of a full name | *Ohun Aluden* |
+| `zohun galuden` | full name in a noun slot | *Ohun Aluden* |
+| `zohuln galuden` | [one of a name](#name-instance--ln) | *someone named Ohun Aluden* |
+| `zohur` | [resume](pronouns.md) | *Ohun* (the same person) |
+
+Put the family name first, as an [adjective before the noun](clause.md#left-bound-adjectives), only when your culture names people family first. The same family name can describe the family itself (`zavahal galuden` *the Aluden family*), and what the family uses takes the ordinary [*whose*](hooks.md#genitive) hook: `dahazal em bavahal galuden` is *the Aluden family’s house*.
+
+A full name works as a [greeting](#greeting) too: `ohun galuden.` is Ohun Aluden saying hello. A [call](speech-moves.md#vocative) takes the family name the same way (`yohun galuden.` *Ohun Aluden!*). A [conversation-length](x-compounds.md#conversation-length) bid goes on the given name, never on the family name.
+
+A family name is an adjective, so a `/b/` right after it would complete it as a [hosted extra noun](clause.md#extra-nouns). Put the person who receives after the verb, as usual: `zohun galuden vezebel balahen.` is *Ohun Aluden tells Alahen*.
+
+A **hyphenated name** (*Mary-Kate*, *Coffee-Tea*) is one word: roots join left to right with mid-word **`x`** ([ordinary compound order](x-compounds.md#ordinary-compound-order)), and **-n** names the whole.
 
 > `zohuxaluden vowogal.`
 >
@@ -351,13 +374,15 @@ English often writes a given name plus family as two words. In Agazan a short mu
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| `zohuxaluden` | nativized multipart (roots + mid-word **`x`**) | *Ohuxaluden* (*wish*×*guidance*: one person) |
-| `dohuxaluden`, `bohuxaluden` | same name in other slots | one named place / person as object or argument |
-| `zagavexedehen`, `zagavexedehexowoden` | sense / shop label (two or more lexicon roots) | *Coffee-Tea*; *Coffee-Tea-Water* |
+| `zohuxaluden` | hyphenated given name | *Ohuxaluden* |
+| `zohuxaluden galuden` | hyphenated given name and a family name | *Ohuxaluden Aluden* |
+| `zagavexedehen`, `zagavexedehexowoden` | shop label from lexicon roots | *Coffee-Tea*; *Coffee-Tea-Water* |
+
+A business or product name uses the same pieces. A compact label is one **`x`** word. A product under a maker’s name takes the maker as its `/ɡ/` name, as a person takes a family name (*a Mustang by Ford*). A name with grammar inside it, such as a verb or *instead of*, is a [titled phrase](#titled-phrases) or a [span](spans.md#when-required), where any role letter can appear.
 
 A nativized loan (a foreign word adapted into an Agazan root, plus an ordinary ending) takes the same four endings as any content word. A **lexical compound** also fills one slot: it is one stem, written without mid-word **`x`** (`zebedalahazal` *bedroom*).
 
-**Compare with:** adjacent bare same-role words (`zohun zaluden`) are two people in a [join](joins.md).
+**Compare with:** `zohun galuden.` alone is a sentence: *Ohun is an Aluden* ([classification](predication.md#classification)). The citation `ohun galuden` has no role letter, so it only names. Adjacent bare same-role words (`zohun zaluden`) are two people in a [join](joins.md).
 
 ### Continue (`/x/`): overview
 <a id="continue-x"></a>
@@ -540,7 +565,7 @@ z-Ahaben | v-Amaban
 
 z-Ahazo-x-Ebedan | v-sit
 
-A multipart name is one word joined with **`x`**; two **-n** words are two named things.
+A hyphenated name is one word joined with **`x`**; two **-n** words in the same role are two named things.
 :::
 
 ## See also

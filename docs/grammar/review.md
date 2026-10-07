@@ -118,10 +118,10 @@ z-Ahaben | v-see | d-that-clause | z-Alahen | v-sneak
 **Rule:** [Dependent clauses](dependents.md#dependent-clauses)
 :::
 
-**2.** `zazawan balahenx vezebel.`
+**2.** `zazawan vezebel balahenx.`
 
 ::: details Show answer
-z-Azawan | b-Alahen-x | v-tell
+z-Azawan | v-tell | b-Alahen-x
 
 *Azawan tells Alahen and associates.*
 

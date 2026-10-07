@@ -312,7 +312,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 7 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xodum`, `xezom`, …); nested **`barl`**; stand-in vowels | Recycle Beginner **`darl`/`barl`** |
 | 13 | `relations.md` | Intermediate | **exists** | *between* **`hazam`**; of-relations (`gobom`, `gahem`, `guwum`, `gagum`); recycle extra-noun hooks for other place talk | *Between* recycles joins Beginner `/b/` join |
 | 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`huhum` / `huram`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, forecast, calendar `b_#…`. Not persist hooks |
-| 4 | `word-endings.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); phrasal proper names `ROOTxROOT`+**-n**; [titled phrases](../grammar/word-endings.md#titled-phrases) (hook / join / span **-n**, inner **-l** / **-m**) | Not value/ability/plan ending tables |
+| 4 | `word-endings.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); full names (given + `/ɡ/` family **-n**) and hyphenated names `ROOTxROOT`+**-n**; [titled phrases](../grammar/word-endings.md#titled-phrases) (hook / join / span **-n**, inner **-l** / **-m**) | Not value/ability/plan ending tables |
 | 4 | `word-endings.md` | Advanced | skip | — | no Advanced stage |
 | 9 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aha`** vs name join vs name…**-x** | |
 | 9 | `pronouns.md` | Advanced | — | no Advanced stage | |

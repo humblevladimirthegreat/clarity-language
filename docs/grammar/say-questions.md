@@ -258,16 +258,16 @@ English *ask* is four jobs. You can put a question to someone, ask them for some
 | *ask* (a question) | `yol zazawan vowogal.` | question |
 | *ask* (for something, *could you*) | `yem zehon vowogal.` | request |
 | *ask* (report) | `zazawan vezebel dorl zar vowogal.` | telling + whether-clause |
-| *ask* / *tell someone to* | `zazawan balahen vezebel derl vehahel.` | telling + to-clause |
-| *ask* / *tell someone not to* | `zazawan balahen vezebel durl varahal.` | telling + lest-clause |
-| *please ask her to* | `yem zehon balahen vezebel derl vehahel.` | request: tell Alahen to sit |
+| *ask* / *tell someone to* | `zazawan vezebel balahen derl vehahel.` | telling + to-clause |
+| *ask* / *tell someone not to* | `zazawan vezebel balahen durl varahal.` | telling + lest-clause |
+| *please ask her to* | `yem zehon vezebel balahen derl vehahel.` | request: tell Alahen to sit |
 | *ask* (one question, as a bid for time) | `alahexon.` | one slot |
 | *interview* | `yalahen.` then a run of `yol` questions | call, then ask |
 | *conversation* / *chat* / *dialog* | `zezebem` | *discourse* |
 
-> `yem zehon balahen vezebel derl vehahel.`
+> `yem zehon vezebel balahen derl vehahel.`
 >
-> y-request | z-listener | b-Alahen | v-tell | d-to-clause | v-sit
+> y-request | z-listener | v-tell | b-Alahen | d-to-clause | v-sit
 >
 > "Please ask Alahen to sit."
 

@@ -782,11 +782,13 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
   }
 }
 
-/** A `gl-` adjective leans on the next noun (or a mention marker on its topic span); one with nothing after it is left over (clause.md#left-bound-adjectives). */
+/** A `gl-` adjective leans on the next noun or call (or a mention marker on its topic span); one with nothing after it is left over (clause.md#left-bound-adjectives). */
 function enforceGlLeans(result: ParseResult): void {
   const leaning = new Set<LexWord>();
   // The mention marker before a topic span leans on that span (spans.md#mention).
   for (const { bodies } of result.utterances) for (const { topicMarker } of bodies) if (topicMarker) leaning.add(topicMarker);
+  // A `gl-` family name before a call leans on that call (speech-moves.md#vocative).
+  for (const { left } of result.utterances) for (const adjs of left.vocativeAdjs ?? []) if (adjs.glAdj) leaning.add(adjs.glAdj.word);
   const gl: LexWord[] = [];
   visitResult(result, {
     enter: (node) => {

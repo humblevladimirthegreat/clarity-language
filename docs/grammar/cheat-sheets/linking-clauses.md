@@ -27,10 +27,10 @@ The vowel is the kind of content, the same four vowels as the act words. **-rl**
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [That-clause](../dependents.md#dependent-clauses) | `zazawan balahen vezebel darl zodogal varahal.` | *Azawan tells Alahen that the dog runs.* | B |
+| [That-clause](../dependents.md#dependent-clauses) | `zazawan vezebel balahen darl zodogal varahal.` | *Azawan tells Alahen that the dog runs.* | B |
 | [Whether](../dependents.md#dependent-clauses) | `zazawan vahahal dorl zalahen vowogal.` | *Azawan sees whether Alahen walks.* | B |
-| [Told to](../dependents.md#stand-in) | `zazawan balahen vezebel derl vehahel.` | *Azawan tells Alahen to sit.* | I |
-| [Told not to](../dependents.md#stand-in) | `zazawan balahen vezebel durl vehahel.` | *Azawan tells Alahen not to sit.* | I |
+| [Told to](../dependents.md#stand-in) | `zazawan vezebel balahen derl vehahel.` | *Azawan tells Alahen to sit.* | I |
+| [Told not to](../dependents.md#stand-in) | `zazawan vezebel balahen durl vehahel.` | *Azawan tells Alahen not to sit.* | I |
 | [Own subject, no one told](../dependents.md#stand-in) | `zazawan vohum derl zazawan vehahel.` | *Azawan wishes to sit.* | I |
 | [Join inside the clause](../dependents.md#stand-in): `xol` | `zazawan vahahal dorl zalahen vowogal xol zahaben varahal.` | *Azawan sees whether Alahen walks or Ahaben runs.* | I |
 

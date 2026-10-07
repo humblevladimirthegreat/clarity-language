@@ -212,6 +212,8 @@ export type PunctKind = "period" | "qmark" | "bang";
 export type LeftEdge = {
   /** Calls: `/y/` names (-n), named spans (`y@<…>`), and `/y/` resumes (-r, read through their antecedent). */
   vocatives: LexWord[];
+  /** `/ɡ/` words on each call, parallel to `vocatives` (`yohun galuden`, speech-moves.md#vocative); absent when none. */
+  vocativeAdjs?: VocativeAdjs[];
   /** Reactions: `/y/` words in -l / -m (numbers included) and unnamed spans (`y<…>`). */
   interjections: LexWord[];
   polars: LexWord[];
@@ -250,6 +252,9 @@ export type GPackage = {
   /** `/w/` *as-of* pair immediately before this `/ɡ/` adjective. */
   asOf?: { word: LexWord; bound?: LexWord };
 };
+
+/** A `gl-` adjective before a call and the plain ones after it. */
+export type VocativeAdjs = { glAdj?: GPackage; adjs: GPackage[] };
 
 export type NpHead = LexWord;
 

@@ -11,9 +11,9 @@ You already write one clause with [role letters](clause.md#role-letters) and sta
 
 English can describe a noun with a whole clause that starts with *who*, *that*, or *which* (*the guard who sits*). Agazan has no such word. Write **two sentences** instead: first say the inner clause as an ordinary sentence, then use the same person or thing in the next sentence.
 
-> `zagavol vehahel. zazawan bagavol vezebel.`
+> `zagavol vehahel. zazawan vezebel bagavol.`
 >
-> z-guard | v-sit . z-Azawan | b-guard | v-tell
+> z-guard | v-sit . z-Azawan | v-tell | b-guard
 >
 > "A guard sits. Azawan talks to the guard."
 
@@ -33,9 +33,9 @@ The main sentence stops after **`darl`**, and the next full sentence is the cont
 
 Here the dependent clause is the direct object, so the stand-in is **`darl`**:
 
-> `zazawan balahen vezebel darl zodogal varahal.`
+> `zazawan vezebel balahen darl zodogal varahal.`
 >
-> z-Azawan | b-Alahen | v-tell | d-that-clause | z-dog | v-run
+> z-Azawan | v-tell | b-Alahen | d-that-clause | z-dog | v-run
 >
 > "Azawan tells Alahen that the dog runs."
 
@@ -222,11 +222,11 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Azawan tells Alahen that Ahaben sneaks.*
 
 ::: details Show answer
-`zazawan balahen vezebel darl zahaben vezevul.`
+`zazawan vezebel balahen darl zahaben vezevul.`
 
-z-Azawan | b-Alahen | v-tell | d-that-clause | z-Ahaben | v-sneak
+z-Azawan | v-tell | b-Alahen | d-that-clause | z-Ahaben | v-sneak
 
-**Also correct:** `zazawan vezebel balahen darl zahaben vezevul.`
+**Also correct:** `zazawan balahen vezebel darl zahaben vezevul.`
 :::
 
 **2.** *Alahen runs because a guard sees Ahaben.*
@@ -258,9 +258,9 @@ z-guard | v-see | d-whether-clause | z-Alahen | v-sneak
 **5.** *Azawan tells the guard who screams.*
 
 ::: details Show answer
-`zagavol vezugel. zazawan bagavol vezebel.`
+`zagavol vezugel. zazawan vezebel bagavol.`
 
-z-guard | v-scream . z-Azawan | b-guard | v-tell
+z-guard | v-scream . z-Azawan | v-tell | b-guard
 :::
 
 **6.** *Alahen screams so that a guard runs.*
@@ -313,10 +313,10 @@ z-Alahen | v-sneak . z-guard | d-Alahen | v-see
 *The guard sees Alahen, who sneaks.*
 :::
 
-**6.** `zahaben bagavol vezebel darl zazawan ganegel vehahel.`
+**6.** `zahaben vezebel bagavol darl zazawan ganegel vehahel.`
 
 ::: details Show answer
-z-Ahaben | b-guard | v-tell | d-that-clause | [z-Azawan | g-angry] | v-sit
+z-Ahaben | v-tell | b-guard | d-that-clause | [z-Azawan | g-angry] | v-sit
 
 *Ahaben tells the guard that an angry Azawan sits.*
 :::
@@ -348,9 +348,9 @@ z-Alahen | v-sneak | [h-although | b-guard]
 **2.** *Azawan tells Alahen that a guard runs.* <!-- lint: error -->`zazawan balahen darl vezebel zagavol varahal.`
 
 ::: details Show answer
-`zazawan balahen vezebel darl zagavol varahal.`
+`zazawan vezebel balahen darl zagavol varahal.`
 
-z-Azawan | b-Alahen | v-tell | d-that-clause | z-guard | v-run
+z-Azawan | v-tell | b-Alahen | d-that-clause | z-guard | v-run
 
 **`darl`** goes last in the main sentence, after the verb, so the sentence it stands for starts right after it.
 :::
@@ -488,9 +488,9 @@ The missing subject is then that `/b/`. It is never the listener and never the o
 
 After a pole, the dependent is **`barl`** (or **`barm`** for gist): *because* / *if* / *although* / *so that* all use it. There are two exceptions, both with **`burl`**: purpose-not **`hogom burl`** (*so that … not*) and **`thoyem burl`** (*unless*). Stand-ins never take `/x/`; clause *and* is `xal` / `xan`.
 
-> `zazawan balahen vezebel derl vehahel.`
+> `zazawan vezebel balahen derl vehahel.`
 >
-> z-Azawan | b-Alahen | v-tell | d-to-clause | v-sit
+> z-Azawan | v-tell | b-Alahen | d-to-clause | v-sit
 >
 > "Azawan tells Alahen to sit."
 
@@ -506,9 +506,9 @@ To quote someone's exact words instead, use a [span](spans.md).
 
 English *lest* / *not to* (keep this from happening) uses vowel **`u`**: **`durl`**. When it tells someone not to act, the person told (`/b/`) can be the missing subject, as with **`derl`**. When it only keeps an outcome off, with no one told, write the inner `/z/`. The outer sentence stays a statement. *Don't sit!* as the whole move is still a [prohibition](speech-moves.md#speech-act-beginner) (**`yul`**), not this stand-in.
 
-> `zazawan balahen vezebel durl vehahel.`
+> `zazawan vezebel balahen durl vehahel.`
 >
-> z-Azawan | b-Alahen | v-tell | d-lest-clause | v-sit
+> z-Azawan | v-tell | b-Alahen | d-lest-clause | v-sit
 >
 > "Azawan tells Alahen not to sit."
 
@@ -560,9 +560,9 @@ The vowel still says what kind of content it is, and the word stands for the mos
 >
 > "Alahen sits. Azawan says so."
 
-> `zazawan balahen vezebel durl vehahel. zalahen vohum durth.`
+> `zazawan vezebel balahen durl vehahel. zalahen vohum durth.`
 >
-> z-Azawan | b-Alahen | v-tell | d-lest-clause | v-sit . z-Alahen | v-wish | d-that-same-prohibition
+> z-Azawan | v-tell | b-Alahen | d-lest-clause | v-sit . z-Alahen | v-wish | d-that-same-prohibition
 >
 > "Azawan tells Alahen not to sit. Alahen wishes not to, too."
 
@@ -636,17 +636,17 @@ z-Azawan | d-train | v-see . x-however | z-Alahen | v-run
 **2.** *Ahaben tells Alahen to sit.*
 
 ::: details Show answer
-`zahaben balahen vezebel derl vehahel.`
+`zahaben vezebel balahen derl vehahel.`
 
-z-Ahaben | b-Alahen | v-tell | d-to-clause | v-sit
+z-Ahaben | v-tell | b-Alahen | d-to-clause | v-sit
 :::
 
 **3.** *Azawan tells Ahaben not to sneak.*
 
 ::: details Show answer
-`zazawan bahaben vezebel durl vezevul.`
+`zazawan vezebel bahaben durl vezevul.`
 
-z-Azawan | b-Ahaben | v-tell | d-lest-clause | v-sneak
+z-Azawan | v-tell | b-Ahaben | d-lest-clause | v-sneak
 :::
 
 **4.** *Alahen runs so hastily that Azawan sees the luggage.*
@@ -725,12 +725,12 @@ z-Azawan | v-sit | [h-so-that | b-lest-clause] | z-Alahen | d-luggage | v-see
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azawan tells Alahen not to run.* `zazawan balahen vezebel durl varahal.` or `zazawan balahen vezebel derl varahal.`
+**1.** *Azawan tells Alahen not to run.* `zazawan vezebel balahen durl varahal.` or `zazawan vezebel balahen derl varahal.`
 
 ::: details Show answer
-`zazawan balahen vezebel durl varahal.`
+`zazawan vezebel balahen durl varahal.`
 
-z-Azawan | b-Alahen | v-tell | d-lest-clause | v-run
+z-Azawan | v-tell | b-Alahen | d-lest-clause | v-run
 
 *Not to* is avoidance, vowel **`u`**; **`derl`** tells Alahen *to* run.
 :::

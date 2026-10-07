@@ -48,9 +48,9 @@ To introduce several things of one kind (English *some cats*), use **-lx** (conc
 
 An extra noun takes **-x** the same way. Here the recipient is Alahen and associates:
 
-> `zazawan balahenx vezebel.`
+> `zazawan vezebel balahenx.`
 >
-> z-Azawan | b-Alahen-x | v-tell
+> z-Azawan | v-tell | b-Alahen-x
 >
 > "Azawan tells Alahen and associates."
 

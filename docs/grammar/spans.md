@@ -141,9 +141,9 @@ To use a foreign verb, adjective, or adverb (*googled*, *rouge*), put an opaque 
 >
 > "A rouge dog walks." (loan adjective)
 
-> <code>zazawan b@&lt;Sam&gt; vezebel.</code>
+> <code>zazawan vezebel b@&lt;Sam&gt;.</code>
 >
-> z-Azawan | b-NAME.OPAQUE["Sam"] | v-tell
+> z-Azawan | v-tell | b-NAME.OPAQUE["Sam"]
 >
 > "Azawan tells Sam." (a foreign name as the recipient)
 
@@ -199,9 +199,9 @@ z-Alahen | d-CITE.about[z-Ahaben | v-sing] | v-write
 **3.** *Alahen tells Sam.* (a foreign name as the recipient)
 
 ::: details Show answer
-<code>zalahen b@&lt;Sam&gt; vezebel.</code>
+<code>zalahen vezebel b@&lt;Sam&gt;.</code>
 
-z-Alahen | b-NAME.OPAQUE["Sam"] | v-tell
+z-Alahen | v-tell | b-NAME.OPAQUE["Sam"]
 :::
 
 **4.** *Don’t say “stop,” Azawan.*
@@ -821,6 +821,6 @@ Both quotes trail off; with **`|`**, the closer also shuts every span still open
 
 - Scope islands: [joins.md](joins.md#scope-islands-join)
 - Identity vs parenthetical comment: [predication.md](predication.md#identity)
-- Phrasal proper names: [word-endings.md](word-endings.md#phrasal-proper-names)
+- Multipart names: [word-endings.md](word-endings.md#multipart-names)
 - Titled phrases (hook / join / span): [word-endings.md](word-endings.md#titled-phrases)
 - Prefix-less citation outside a clause: [word-endings.md](word-endings.md#citation-forms)

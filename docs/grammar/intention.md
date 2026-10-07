@@ -101,9 +101,9 @@ z-Alahen | th-plan-itinerary | d-pawn | v-find
 **3.** *Ahaben is fully prepared to tell Alahen.*
 
 ::: details Show answer
-`zahaben balahen thamal vezebel.`
+`zahaben thamal vezebel balahen.`
 
-z-Ahaben | b-Alahen | th-plan-atlas | v-tell
+z-Ahaben | th-plan-atlas | v-tell | b-Alahen
 :::
 
 **4.** *Alahen is thinking of lying.*
@@ -148,10 +148,10 @@ z-Azawan | th-plan-atlas | d-pawn | v-find
 *Azawan is fully prepared to find a pawn.*
 :::
 
-**3.** `zahaben bazawan thamam vezebel.`
+**3.** `zahaben thamam vezebel bazawan.`
 
 ::: details Show answer
-z-Ahaben | b-Azawan | th-plan-itinerary | v-tell
+z-Ahaben | th-plan-itinerary | v-tell | b-Azawan
 
 *Ahaben plans to tell Azawan.*
 :::

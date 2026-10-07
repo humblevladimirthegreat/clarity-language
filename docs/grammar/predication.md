@@ -294,7 +294,7 @@ After a known guard, the `/ɡ/` word is a property; `zagavol ganegel.` introduce
 
 z-Alahen | [g-SAME | b-Azawan]
 
-A word on `/ɡ/` puts Alahen in a kind; two names for one person take **`gugol`** and the other name in `/b/`.
+A word on `/ɡ/` puts Alahen in a kind; two names for one person take **`gugol`** and the other name in `/b/`. (A family name is such a kind: `zalahen gazawan.` is *Alahen is an Azawan*, [multipart names](word-endings.md#multipart-names).)
 :::
 
 ## Intermediate {#intermediate}
