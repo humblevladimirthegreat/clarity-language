@@ -117,7 +117,7 @@ const JOIN_ACT: Record<string, string> = {
   uo: "bars",
   e: "prioritizes",
   ae: "starts-with",
-  oe: "equates",
+  eo: "equates",
   ue: "deprioritizes",
 };
 
@@ -130,7 +130,7 @@ const JOIN_RELATION: Record<string, string> = {
   uo: "anything-but",
   e: "prioritizing",
   ae: "starting-with",
-  oe: "on-a-par",
+  eo: "on-a-par",
   ue: "deprioritizing",
 };
 
@@ -192,9 +192,9 @@ const HOOK_EXTRA_NOUN: Record<string, string> = {
   aol: "on",
   aom: "over",
   aon: "on.named",
-  oel: "toward",
-  oem: "in-the-direction-of",
-  oen: "toward.named",
+  eol: "toward",
+  eom: "in-the-direction-of",
+  eon: "toward.named",
   ual: "out-of",
   uam: "out-from-among",
   uan: "out-of.named",
@@ -237,7 +237,7 @@ const POLAR_JOB: Record<string, string> = {
   ao: "sure",
   uo: "refuse-option",
   ua: "reject-frame",
-  oe: "decline",
+  eo: "decline",
 };
 
 const ABILITY_STANCE: Record<string, string> = {
@@ -255,7 +255,7 @@ const SCOPE_VOWEL: Record<string, string> = {
   u: "type",
   ao: "on-pair",
   ae: "using",
-  oe: "toward-role",
+  eo: "toward-role",
   ua: "except-episode",
   uo: "except-pair",
   ue: "outside-role",
@@ -282,7 +282,7 @@ const EMOTION_LOCUS: Record<string, string> = {
   ao: "CIRCUM",
   uo: "UNPLACED",
   o: "AIMED",
-  oe: "SEEKING",
+  eo: "SEEKING",
   ue: "RESISTING",
   e: "ON-BEHALF",
   u: "AWAY",
@@ -304,7 +304,7 @@ export const ROLE_VOWEL: Record<string, string> = {
   u: "patient",
   o: "recipient",
   ae: "instrument",
-  oe: "goal",
+  eo: "goal",
   ua: "source",
   uo: "path",
   ao: "result",
@@ -1052,16 +1052,16 @@ const HOOK_SPAN: Record<string, string> = {
   um: "through-excluding.approx",
   un: "through-excluding.named",
   ur: "some.through-excluding",
-  oel: "through",
-  oem: "through.approx",
-  oen: "through.named",
+  eol: "through",
+  eom: "through.approx",
+  eon: "through.named",
   ual: "strictly-between",
   uam: "strictly-between.approx",
   uan: "strictly-between.named",
   uel: "outside",
   uem: "outside.approx",
   uen: "outside.named",
-  oer: "some.through",
+  eor: "some.through",
   uar: "some.strictly-between",
   uer: "some.outside",
 };
@@ -1211,7 +1211,7 @@ function restrictorLabel(
     if (series === "o") return "anytime";
     if (series === "u") return "some-other-time";
     if (series === "e") return fillAsk ? "when-best" : "preferred-time";
-    if (series === "oe") return "equally-often";
+    if (series === "eo") return "equally-often";
     return `${series}-r`;
   }
   const open = ending === "m" ? ".open" : "";
@@ -1224,7 +1224,7 @@ function restrictorLabel(
   if (series === "u") return `not-when${open}`;
   if (series === "o") return `when-one${open}`;
   if (series === "e") return `when-ranked${open}`;
-  if (series === "oe") return `equally-when${open}`;
+  if (series === "eo") return `equally-when${open}`;
   if (series === "ao") return `when-any-of${open}`;
   if (series === "uo") return `anytime-except${open}`;
   if (series === "ae") return `when-in-order${open}`;

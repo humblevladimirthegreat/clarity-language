@@ -778,7 +778,7 @@ A linker is not a channel, so the conclusion keeps your [frame](#carry-forward):
 
 ### Channels as comparison bars {#channel-bars}
 
-English *sleepier than usual* and *bigger than it looks* compare against an expectation. Put the channel right before the rank word (**`zel`** / **`zuel`** / **`zoel`**) as the comparison's [bar](comparatives.md#bars). The bar is then **what that channel led you to expect**, not how you know the claim. After the comparison, the same word is the claim's channel again.
+English *sleepier than usual* and *bigger than it looks* compare against an expectation. Put the channel right before the rank word (**`zel`** / **`zuel`** / **`zeol`**) as the comparison's [bar](comparatives.md#bars). The bar is then **what that channel led you to expect**, not how you know the claim. After the comparison, the same word is the claim's channel again.
 
 > `zazawan thobam zel gezebul.`
 >

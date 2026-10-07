@@ -146,7 +146,7 @@ Write `y`, two vowels, then an ending. A turn holds one polar word; an answer fo
 | [**`ao`**](../questions.md#polar-endings) take up an option | `yaol` *sure* | `yaom` *okay* | `yaor` *fine, for now* | B / I |
 | [**`uo`**](../questions.md#polar-endings) reject this option | `yuol` *not that* | `yuom` *nah* | `yuor` *not that, for now* | I |
 | [**`ua`**](../questions.md#polar-endings) reject the premise | `yual` *the question doesn't apply* | `yuam` *it's more complicated* | `yuar` *it doesn't apply, for now* | I |
-| [**`oe`**](../questions.md#polar-endings) decline to answer | `yoel` *I won't answer* | `yoem` *I'd rather not say* | `yoer` *pass, for now* | I |
+| [**`eo`**](../questions.md#polar-endings) decline to answer | `yeol` *I won't answer* | `yeom` *I'd rather not say* | `yeor` *pass, for now* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -166,7 +166,7 @@ After your sentence, write `yol` and a polar word as a turn of its own. It asks 
 | [`yol yaol.`](../questions.md#tags) | take up a request or offer | *…, okay?* | I |
 | [`yol yuol.`](../questions.md#tags) | offer the refusal | *…, or would you rather not?* | I |
 | [`yol yaer.`](../questions.md#tags) | accept for now | *…, can we go with that for now?* | I |
-| [`yol yoem.`](../questions.md#tags) | after a question, offer a pass | *…, or would you rather not say?* | I |
+| [`yol yeom.`](../questions.md#tags) | after a question, offer a pass | *…, or would you rather not say?* | I |
 
 ## Don't mix up {#dont-mix-up}
 

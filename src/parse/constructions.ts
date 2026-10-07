@@ -338,7 +338,7 @@ const SCOPE_FEATURE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "vowel.u": { anchor: "predication.md#label-scope", summary: "type across scenes thu" },
   "vowel.ao": { anchor: "predication.md#scope-stacks", summary: "episode on this pair thao" },
   "vowel.ae": { anchor: "predication.md#scope-stacks", summary: "using the role thae" },
-  "vowel.oe": { anchor: "predication.md#scope-stacks", summary: "toward the role thoe" },
+  "vowel.eo": { anchor: "predication.md#scope-stacks", summary: "toward the role theo" },
   "vowel.ua": { anchor: "predication.md#scope-stacks", summary: "type except this episode thua" },
   "vowel.uo": { anchor: "predication.md#scope-stacks", summary: "type except this pair thuo" },
   "vowel.ue": { anchor: "predication.md#scope-stacks", summary: "not in that capacity thue" },
@@ -366,7 +366,7 @@ export const SAKE_FEATURE_CONSTRUCTIONS: Record<`stance.${Vowel}` | `ending.${Vo
 };
 
 /** Join fence series vowel (joins.md, comparatives.md). */
-export type JoinSeries = "a" | "o" | "ao" | "u" | "ua" | "uo" | "e" | "ae" | "oe" | "ue";
+export type JoinSeries = "a" | "o" | "ao" | "u" | "ua" | "uo" | "e" | "ae" | "eo" | "ue";
 
 export const JOIN_SERIES_CONSTRUCTIONS: Record<JoinSeries, ConstructionEntry> = {
   a: { anchor: "joins.md#and-lists-a", summary: "and" },
@@ -377,7 +377,7 @@ export const JOIN_SERIES_CONSTRUCTIONS: Record<JoinSeries, ConstructionEntry> = 
   uo: { anchor: "joins.md#full-single-item-and-standalone-inventories", summary: "anything but" },
   e: { anchor: "joins.md#rank-e", summary: "rank" },
   ae: { anchor: "joins.md#sequence-ae", summary: "sequence (first = start)" },
-  oe: { anchor: "comparatives.md#equatives-oe-shared-scale", summary: "equal rank" },
+  eo: { anchor: "comparatives.md#equatives-eo-shared-scale", summary: "equal rank" },
   ue: { anchor: "joins.md#invert-ua-uo-ue", summary: "rank reversal" },
 };
 
@@ -393,7 +393,7 @@ export const FORCE_CONSTRUCTIONS: Record<Vowel | "soft", ConstructionEntry> = {
 /** Polar stance particles, grouped by the section that teaches them (questions.md). */
 export const POLAR_CONSTRUCTIONS = {
   starter: { anchor: "questions.md#polar-stance", summary: "yael yes / yuel no / yaol sure" },
-  fuller: { anchor: "questions.md#polar-stance-fuller-inventory", summary: "yuol / yual / yoel" },
+  fuller: { anchor: "questions.md#polar-stance-fuller-inventory", summary: "yuol / yual / yeol" },
 } satisfies Record<string, ConstructionEntry>;
 
 /** Polar series → {@link POLAR_CONSTRUCTIONS} key. */
@@ -403,7 +403,7 @@ export const POLAR_GROUP: Record<Exclude<JoinSeries, Vowel>, keyof typeof POLAR_
   ao: "starter",
   uo: "fuller",
   ua: "fuller",
-  oe: "fuller",
+  eo: "fuller",
 };
 
 /** Restrictors, grouped by the section that teaches them (restrictors.md). */
@@ -425,7 +425,7 @@ export const RESTRICTOR_GROUP: Record<JoinSeries, keyof typeof RESTRICTOR_CONSTR
   uo: "set",
   e: "ranked",
   ae: "ranked",
-  oe: "ranked",
+  eo: "ranked",
   ue: "ranked",
 };
 
@@ -465,8 +465,8 @@ export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "er" | "or" 
   aom: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "aom" },
   ael: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "ael" },
   aem: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "aem" },
-  oel: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "oel" },
-  oem: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "oem" },
+  eol: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "eol" },
+  eom: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "eom" },
   ual: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "ual" },
   uam: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uam" },
   uol: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uol" },
@@ -489,7 +489,7 @@ export const ROLE_FEATURE_CONSTRUCTIONS: Record<`vowel.${RoleVowel}` | "instance
   "vowel.e": { anchor: "roles.md#the-scene-e", summary: "scene e" },
   "vowel.o": { anchor: "roles.md#the-extra-b-party-o", summary: "recipient o" },
   "vowel.ae": { anchor: "roles.md#instrument", summary: "instrument ae" },
-  "vowel.oe": { anchor: "roles.md#goal-source-path", summary: "goal oe" },
+  "vowel.eo": { anchor: "roles.md#goal-source-path", summary: "goal eo" },
   "vowel.ua": { anchor: "roles.md#goal-source-path", summary: "source ua" },
   "vowel.uo": { anchor: "roles.md#goal-source-path", summary: "path uo" },
   "vowel.ao": { anchor: "roles.md#result", summary: "result ao" },
@@ -504,7 +504,7 @@ export const POINTER_FEATURE_CONSTRUCTIONS: Record<`vowel.${PointerVowel}` | `ro
   "role.o": { anchor: "pronouns.md#role-pointers", summary: "pointer to the extra party" },
   "role.e": { anchor: "roles.md#role-pointers-family", summary: "pointer to the scene" },
   "role.ae": { anchor: "roles.md#stacked-pointers", summary: "pointer to the instrument" },
-  "role.oe": { anchor: "roles.md#stacked-pointers", summary: "pointer to the goal" },
+  "role.eo": { anchor: "roles.md#stacked-pointers", summary: "pointer to the goal" },
   "role.ua": { anchor: "roles.md#stacked-pointers", summary: "pointer to the source" },
   "role.uo": { anchor: "roles.md#stacked-pointers", summary: "pointer to the path" },
   "role.ao": { anchor: "roles.md#stacked-pointers", summary: "pointer to the result" },
@@ -587,8 +587,8 @@ export const REJECTIONS = {
   abilitySlot: { anchor: "intention.md#ability", summary: "ability (x + vowel) goes on /v/ or /ɡ/ only; name + x + vowel + -n is a conversation-length bid only as a citation or a /y/ call" },
   labelScopeArrow: { anchor: "roles.md#landmark-facing", summary: "on a direction root the th seam takes only o (the landmark's own facing)" },
   pluralKindAfterUniversal: { anchor: "joins.md#universals-domains-generics", summary: "the kind word after ua / uo takes no -x" },
-  stackedHookResume: { anchor: "hooks.md#ranges", summary: "stacked range hook -r (oer / uar / uer) needs same-role words on both sides" },
-  hookSameRoleStack: { anchor: "hooks.md#including-am-al", summary: "between same-role words only the plain hooks (al el ol ul) and the range hooks (oel ual uel) have a reading; for such as, use am" },
+  stackedHookResume: { anchor: "hooks.md#ranges", summary: "stacked range hook -r (eor / uar / uer) needs same-role words on both sides" },
+  hookSameRoleStack: { anchor: "hooks.md#including-am-al", summary: "between same-role words only the plain hooks (al el ol ul) and the range hooks (eol ual uel) have a reading; for such as, use am" },
   hookDiscourseStack: { anchor: "hooks.md#discourse-hooks", summary: "at the front of a sentence only al el ol ul, aol and ael have a reading; for next, by the way, on the contrary use a linker" },
   stackedJoinResume: { anchor: "join-across-roles.md#vp-clause-forms", summary: "stacked join vowels take no -r on /z/ /d/ /b/ /v/ /x/ /ɡ/ (only a / o / e / u do); a stacked -r is the stance fill-ask under /th/" },
   spanSlot: { anchor: "spans.md#pos", summary: "an aside goes only under /th/ /ɡ/ /w/ /h/; a cite, mention or opaque span fills a content slot (/z/ /d/ /b/ /v/ /ɡ/ /h/) or /w/, or sets the topic under /x/" },

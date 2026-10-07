@@ -377,7 +377,7 @@ A **direction** locus says what the charge points at:
 | Locus | Hook | Use | English |
 |-------|------|-----|---------|
 | **`o`** | *at* | AIMED | *the charge lands on a target* (*annoyed at*, *grateful to*, *pressing for*) |
-| **`oe`** | *toward* | SEEKING | *turning to someone for comfort or safety* |
+| **`eo`** | *toward* | SEEKING | *turning to someone for comfort or safety* |
 | **`ue`** | *against* | RESISTING | *pushing back* (*objecting to*, fighting) |
 | **`e`** | *for* | ON-BEHALF | *felt for someone's sake* (*upset for*) |
 | **`u`** | *from* | AWAY | *moving off* (*avoiding*, fleeing, disengaging, hiding) |
@@ -429,7 +429,7 @@ The locus plus the motion ending is the **emotion tail**. It goes on met **`tha`
 | `zumel wanathumem gobum bazawan` | *upset for Azawan about the memo* (unmet relatedness; on Azawan's behalf; flowing) |
 | `zezebel wanathumum gobum balahen` | *avoiding Alahen over the dialogue* (unmet relatedness; moving off from Alahen; flowing) |
 | `zezebel wanathumaem gobum balahen` | *placating Alahen about the dialogue* (unmet relatedness; appeasing Alahen; flowing) |
-| `zumel wanathumoem gobum bazawan` | *upset about the memo and turning to Azawan for comfort* (unmet relatedness; seeking Azawan; flowing) |
+| `zumel wanathumeom gobum bazawan` | *upset about the memo and turning to Azawan for comfort* (unmet relatedness; seeking Azawan; flowing) |
 | `zumel wanathumuer gobum` | *objecting to the memo* (unmet relatedness; pushing against the memo; surging) |
 | `zezebel wamethumal gobum` | *the dialogue feels pointless* (unmet purpose; held inside; still) |
 | `zebeyom gebethamam` | *glad my draft helped* (met beneficence; held inside; flowing) |
@@ -892,9 +892,9 @@ Permission and consent given (**`thegom`**, **`thuxegom`**) only lift a restrict
 
 ### Enough and too (sake bars) {#sake-bars}
 
-English *enough* and *too much* compare an amount with **what a need requires**. Write a met sake word on `/th/` as the [bar](comparatives.md#bars) right before a rank join: it stands for what that sake needs, and the rank join compares the amount with it. The equal-rank join **`zoel`** is *enough*. Rank **`zel`** is *too much*, and **`zuel`** is *not enough*. Use the unspecified sake **`ega`** when you do not name which sake.
+English *enough* and *too much* compare an amount with **what a need requires**. Write a met sake word on `/th/` as the [bar](comparatives.md#bars) right before a rank join: it stands for what that sake needs, and the rank join compares the amount with it. The equal-rank join **`zeol`** is *enough*. Rank **`zel`** is *too much*, and **`zuel`** is *not enough*. Use the unspecified sake **`ega`** when you do not name which sake.
 
-> `zedehel thegatham zoel gral.`
+> `zedehel thegatham zeol gral.`
 >
 > [z-tea | th-sake-met-any-term | z-equal-rank | g-amount]
 >
@@ -914,7 +914,7 @@ English *enough* and *too much* compare an amount with **what a need requires**.
 
 The bar keeps its [time-horizon ending](#time-horizon-endings-on-met), which now says **how long the payoff has to last**: **`thegathal`** is *enough to last*, and **`thegathar`** is *enough for now*.
 
-> `zedehel thegathar zoel gral.`
+> `zedehel thegathar zeol gral.`
 >
 > [z-tea | th-sake-met-immediate | z-equal-rank | g-amount]
 >
@@ -944,7 +944,7 @@ On the [time scale](comparatives.md#time-scale), a sake bar is *too late* and *t
 
 | Agazan | Use | English |
 |--------|-----|---------|
-| met sake bar + **`zoel`** | reaches what the sake needs | *enough* / *ADJ enough* |
+| met sake bar + **`zeol`** | reaches what the sake needs | *enough* / *ADJ enough* |
 | met sake bar + **`zel`** | past what the sake needs | *too much* / *too ADJ* / *too late* |
 | met sake bar + **`zuel`** | short of what the sake needs | *not enough* / *too early* |
 | bar ending **-l** / **-m** / **-r** | how long the payoff has to last | *enough to last* / *enough* / *enough for now* |

@@ -82,7 +82,7 @@ describe("morphGlossLine — SHARED only where it can describe the join", () => 
     expectLine("zrarel al zredul.", "z-three | including | z-2nd");
   });
   it("reads stacked in-clause hooks as spans on any line", () => {
-    expectLine("zadahel oel zadahel.", "z-down | through | z-down");
+    expectLine("zadahel eol zadahel.", "z-down | through | z-down");
     expectLine("zrarel ual zraval.", "z-three | strictly-between | z-five");
     expectLine("zrarel uel zraval.", "z-three | outside | z-five");
     expectLine("zazawan uar zahaben vezebal.", "z-Azawan | some.strictly-between | z-Ahaben | v-sleep");
@@ -131,11 +131,11 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("dol", "d-or-exactly-one");
     expectLine("zol", "z-or-exactly-one");
     expectLine("zel", "z-rank/more");
-    expectLine("zoel", "z-equal-rank");
+    expectLine("zeol", "z-equal-rank");
     expectLine("zagadulx g=+ vehahel.", "[z-cat-x | g-some-amount] | v-sit");
     expectLine("yol zagadulx g=+ vehahel.", "y-question | [z-cat-x | g-how-many] | v-sit");
     expectLine("yol zazawan vehahel ol b=#.", "y-question | z-Azawan | v-sit | [at | b-which-place]");
-    expectLine("zoem", "z-equal-rank.open");
+    expectLine("zeom", "z-equal-rank.open");
     expectLine("zar", "z-something");
     expectLine("zul", "z-not");
     expectLine("gul", "g-not");
@@ -149,7 +149,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("ul", "except");
     expectLine("zazawan vezebal al bahazal.", "z-Azawan | v-sleep | [in | b-house]");
     expectLine("zodogalx al zagadul.", "z-dog-x | including | z-cat");
-    expectLine("zazawan ul bezedel vowogal oel bedehal.", "z-Azawan | [from | b-station] | v-walk | [toward | b-train]");
+    expectLine("zazawan ul bezedel vowogal eol bedehal.", "z-Azawan | [from | b-station] | v-walk | [toward | b-train]");
     expectLine("zazawan vezebal welavam al bahazal.", "z-Azawan | v-sleep | [[w-very | in] | b-house]");
     expectLine("zebedelx wal ul zazavul.", "z-plate-x | [w-never | except] | z-salad");
     expectLine("zazawan welavam humum badagul vowogal.", "z-Azawan | [[w-very | h-like] | b-duck] | v-walk");
@@ -512,7 +512,7 @@ describe("compareMorphGloss", () => {
     expectLine("zazawan valahathaol balahen", "z-Azawan | [v-lie-th-on-pair | b-Alahen]");
     expectLine("zazawan valahathual", "z-Azawan | v-lie-th-except-episode");
     expectLine("zalahen gaxedehothael", "z-Alahen | g-agent-x-teach-th-using");
-    expectLine("zalahen gaxedehothoel", "z-Alahen | g-agent-x-teach-th-toward-role");
+    expectLine("zalahen gaxedehotheol", "z-Alahen | g-agent-x-teach-th-toward-role");
     expectLine("zalahen gaxedehothuel", "z-Alahen | g-agent-x-teach-th-outside-role");
     expectLine("zazawan ganegethuol balahen", "z-Azawan | [g-angry-th-except-pair | b-Alahen]");
   });

@@ -69,12 +69,12 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `gelen` | name-string mention marker (the span is a name as spelling) | [Mention](../spans.md#mention) | I |
 | `gen` | join-relation prioritizing (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `genum` | AFTER clause pole (just-after) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
+| `geon` | join-relation on a par with (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `geveham` | BY clause pole (deadline: done at or before the endpoint) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
 | `gevem` | BECAUSE clause pole (explanatory reason) | [Because, iff, and only because](../causation.md#only-because) | I |
 | `gezom` | ALTHOUGH clause pole (concession; NP despite) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `gobom` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `gobum` | stimulus (sake about a noun you do not possess) | [Personal possession](../sakes.md#personal-possession) | B |
-| `goen` | join-relation on a par with (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `gogom` | SO-THAT clause pole (intended outcome; NP for-goal) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `golum` | ONLY-IF clause pole (necessary condition) | [Only if](../causation.md#only-if) | B |
 | `gomam` | UNTIL clause pole (endpoint bound) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
@@ -116,6 +116,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `hehem` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](../relations.md#exchange) | B |
 | `hen` | join-relation prioritizing (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `henum` | AFTER clause pole (just-after) | [Because, if, although (poles)](../dependents.md#poles) | B |
+| `heon` | join-relation equating or tying (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `heveham` | BY clause pole (deadline: done at or before the endpoint) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `hewel` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `hewem` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
@@ -123,7 +124,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `hezom` | ALTHOUGH clause pole (concession; NP despite) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `hobom` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `hodum` | SO-THAT-RESULT clause pole (outcome that follows from the host) | [Result (so … that)](../dependents.md#result-pole) | I |
-| `hoen` | join-relation equating or tying (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `hogom` | SO-THAT clause pole (intended outcome; NP for-goal) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `hohal` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `hoham` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
@@ -235,7 +235,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `van` | join-act includes or adds object | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
 | `vaon` | join-act picks with more picks open | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
 | `ven` | join-act prioritizes object | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
-| `voen` | join-act equates or ties objects | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
+| `veon` | join-act equates or ties objects | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
 | `von` | join-act chooses sole object | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
 | `vuan` | join-act excludes object | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
 | `vuen` | join-act deprioritizes object | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
@@ -481,8 +481,8 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `owogalaom` | *cover* |  |
 | `owogalel` | *serve* |  |
 | `owogalem` | *have-in-use* |  |
-| `owogaloel` | *head-for* |  |
-| `owogaloem` | *orient* |  |
+| `owogaleol` | *head-for* |  |
+| `owogaleom` | *orient* |  |
 | `owogalol` | *attend* |  |
 | `owogalom` | *adjoin* |  |
 | `owogalual` | *exit* |  |

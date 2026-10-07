@@ -466,7 +466,7 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 |--------|-----|---------|-----|
 | **`thao`** | this episode **on** this pair | *teacher this time, to Alahen* | **ao** ≈ on |
 | **`thae`** | **using** the role as a means | *using teacher (as a tool)* | **ae** ≈ using |
-| **`thoe`** | **toward** the role | *becoming a teacher* | **oe** ≈ toward |
+| **`theo`** | **toward** the role | *becoming a teacher* | **eo** ≈ toward |
 | **`thua`** | type **except** this episode | *a teacher type, except this time* | **ua** ≈ everything but |
 | **`thuo`** | type **except** this pair | *a teacher type, except with Alahen* | **uo** ≈ anything but that one |
 | **`thue`** | **not in that capacity** | *not as a teacher* | **ue** ≈ against / outside |
@@ -483,7 +483,7 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > "I am using teacher (as a tool)."
 
-> `zalahen gaxedehothoel.`
+> `zalahen gaxedehotheol.`
 >
 > z-Alahen | g-agent-x-teach-th-toward-role
 >
@@ -630,7 +630,7 @@ z-agent-x-teach-th-type | d-frame | v-see
 *A teacher type sees a frame.*
 :::
 
-**6.** `zalahen gaxedehothoel.`
+**6.** `zalahen gaxedehotheol.`
 
 ::: details Show answer
 z-Alahen | g-agent-x-teach-th-toward-role

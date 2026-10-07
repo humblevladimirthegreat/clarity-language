@@ -77,8 +77,8 @@ const RESTRICTOR_CORE = new Set<string>([
   "em",
   "ael",
   "aem",
-  "oel",
-  "oem",
+  "eol",
+  "eom",
   "uel",
   "uem",
 ]);
@@ -593,7 +593,7 @@ function heldPointer(word: MorphWord, tables: ClassifyTables): MorphWord | undef
     body = family.leftRoots[0]!;
     pointerVowel = family.stanceVowel;
   } else return undefined;
-  const match = /^(.+)([lmr])(ae|ao|oe|ua|ue|uo|[aeou])$/.exec(body);
+  const match = /^(.+)([lmr])(ae|ao|eo|ua|ue|uo|[aeou])$/.exec(body);
   if (!match) return undefined;
   const [, host, grade, roleVowel] = match as unknown as [string, string, "l" | "m" | "r", RoleVowel];
   const row = tables.overlays.get(overlayKey("th", `${host}${grade}`));

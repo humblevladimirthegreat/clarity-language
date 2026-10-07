@@ -80,22 +80,22 @@ describe("numberStemToSpeech", () => {
     assert.equal(numberWordToSpeech(parseWord("g-1e9,265e3,4")), "grubanayawothubareyaduguvathumol");
   });
 
-  it("expands calendar date h_#22,7 with roe marker", () => {
+  it("expands calendar date h_#22,7 with reo marker", () => {
     const word = parseWord("h_#22,7");
     assert.equal(word.family.kind, "number");
     if (word.family.kind !== "number") return;
     assert.equal(word.family.stem.calendarOrdinal, true);
     assert.equal(word.family.stem.marker, "_");
-    assert.equal(numberWordToSpeech(word), "hroedudutholel");
+    assert.equal(numberWordToSpeech(word), "hreoduduthelel");
   });
 
   it("expands full calendar date h_#22,7,2026 (year stays one group)", () => {
-    assert.equal(numberWordToSpeech(parseWord("h_#22,7,2026")), "hroedudutholethoduzodugul");
+    assert.equal(numberWordToSpeech(parseWord("h_#22,7,2026")), "hreodudutheletheduzodugul");
   });
 
-  it("round-trips spoken calendar date groedudutholel", () => {
-    const word = parseWord("groedudutholel");
-    assert.equal(numberWordToSpeech(word), "groedudutholel");
+  it("round-trips spoken calendar date greoduduthelel", () => {
+    const word = parseWord("greoduduthelel");
+    assert.equal(numberWordToSpeech(word), "greoduduthelel");
   });
 
   it("round-trips speech-shaped grarel", () => {

@@ -37,7 +37,7 @@ English makes a label plural to name the whole run of labels that start with it:
 
 ### Time {#time}
 
-To say when something happens by the clock or the calendar (*at 15:30*, *on 22 July*), write a digit string under `/h/` with no relation word before it. Clock takes marker **`ro`** (spoken **`hro`**, written `h_…`). Date takes calendar-ordinal **`oe`** (spoken **`hroe`**, written `h_#…`). Fields are read by position, so the word already says which number is the hour or the month.
+To say when something happens by the clock or the calendar (*at 15:30*, *on 22 July*), write a digit string under `/h/` with no relation word before it. Clock takes marker **`ro`** (spoken **`hro`**, written `h_…`). Date takes calendar-ordinal **`eo`** (spoken **`hreo`**, written `h_#…`). Fields are read by position, so the word already says which number is the hour or the month.
 
 > `h_15,30 zazawan vowogal.`
 >
@@ -52,7 +52,7 @@ Clock and date together:
 | Job | How |
 |-----|-----|
 | **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left to right; commas are writing only: hour, minute, optional seconds (`h_15,30`, `h_15,30,00`). Digitless `h_` = *at some (unspecified) clock time*. |
-| **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_#` covers an unspecified date. A date may stop after the day (`h_#12`, *on the 12th*); context gives the month. You may also name the relation with a *date* word plus `/b/`, but you do not need to. |
+| **Calendar date** | Digit-string **`_`** with **`eo`** (spoken **`reo`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_#` covers an unspecified date. A date may stop after the day (`h_#12`, *on the 12th*); context gives the month. You may also name the relation with a *date* word plus `/b/`, but you do not need to. |
 | **Day of the week** | Ordinal on **`elaga`** *weekday*, counting from Monday: `zelagam grewol` is *Monday*, `zelagam grelel` is *Sunday* (the seventh). |
 | **Month or year alone** | A month is an ordinal on **`umuha`** *month*, counting from January, the same way as weekdays: `zumuham grerel` is *March*. A year is a label on **`avawe`** *year*: `zavawem g_1962` is *1962*. To place an event in one, put it in `/b/` after **`huwem`** *during*: `huwem bumuham grerel` (*in March*), `huwem bavawem g_1962` (*in 1962*). |
 | **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, a signed [offset on the channel](knowing.md#dated-channel) (*three hours ago* / *in three hours*) or on a [time pole](knowing.md#dated-channel) (*until tomorrow*), or a stance word that places the event in time ([LIVE](knowing.md#live-vs-memory) / [MEMORY](knowing.md#live-vs-memory), or a channel plus `b+` for a [forecast](knowing.md#forecast)). [RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate) do **not** place an event in time. There is no past or future ending. An amount of time (*for 3 days*) is a relation word plus a [measure phrase](#measure-phrases). |
@@ -73,11 +73,11 @@ Clock and date together:
 
 Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** with digits repeats a clock time or date already mentioned; digitless `hror` asks *when?* / *what time?* in a question ([digitless](numbers.md#digitless)). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
-For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](hooks.md#extra-noun-intermediate)). As with any two extra nouns, keep a non-`/b/` word, such as the verb, between them.
+For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`eol`** *toward* ([extra nouns](hooks.md#extra-noun-intermediate)). As with any two extra nouns, keep a non-`/b/` word, such as the verb, between them.
 
-> `zazawan ul b_9 vowogal oel b_17.`
+> `zazawan ul b_9 vowogal eol b_17.`
 >
-> 🔊 `zazawan ul bronal vowogal oel browolel.`
+> 🔊 `zazawan ul bronal vowogal eol browolel.`
 >
 > z-Azawan | [from | b-_9] | v-walk | [toward | b-_17]
 >
@@ -384,7 +384,7 @@ z-ten | outside | z-20
 
 ::: details Show answer
 
-🔊 `hroewothomol zalahen vowogal.`
+🔊 `hreowothemol zalahen vowogal.`
 
 h-_1,4 | z-Alahen | v-walk
 

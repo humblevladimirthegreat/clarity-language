@@ -373,7 +373,7 @@ Closed **`hel`** ranks the listed occasions: the first one listed is the preferr
 |--------|-----|---------|-----|
 | **`hel` / `hem`** | priority among occasions | *preferably when A ≻ when B…* (closed / open) | **e** ≈ order |
 | **`hael` / `haem`** | occasions in order | *first when A, then when B* (closed / open) | **a** ≈ add + **e** ≈ order |
-| **`hoel` / `hoem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **o** ≈ one + **e** ≈ order |
+| **`heol` / `heom`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **e** ≈ order + **o** ≈ one |
 | **`huel` / `huem`** | occasions last-first | *as a last resort when A* (one occasion); several run last-listed first (closed / open) | **u** ≈ undo + **e** ≈ order |
 
 > `zazawan vowogal hamabam hagevem hel.`
@@ -532,7 +532,7 @@ z-Azawan | [w-snow | w-night | w-when-one | g-sleepy]
 *Azawan is sleepy either when snowing or at night (not both).*
 :::
 
-**5.** `zahaben vagayal herehel havegel hoel.`
+**5.** `zahaben vagayal herehel havegel heol.`
 
 ::: details Show answer
 z-Ahaben | v-climb | h-rain | h-fog | h-equally-when

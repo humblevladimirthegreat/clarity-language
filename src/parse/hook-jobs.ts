@@ -29,7 +29,7 @@ const SPAN_ENDPOINT_KIND: Record<string, string> = {
   rue: "rank",
   _: "label",
   ro: "label",
-  roe: "label",
+  reo: "label",
   "#_": "label",
   ruo: "label",
 };
@@ -48,12 +48,12 @@ export function spanEndpointKind(word: LexWord | undefined): string | undefined 
 
 /**
  * Range hook (hooks.md § Ranges): `al` / `ul` between two same-kind number endpoints,
- * or a stacked `oe` / `ua` / `ue` hook between two same-role words.
+ * or a stacked `eo` / `ua` / `ue` hook between two same-role words.
  */
 export function isSpanHook(word: LexWord, prev: LexWord | undefined, next: LexWord | undefined): boolean {
   if (word.family.kind !== "hook" || !prev || !next || prev.pos !== next.pos) return false;
   const vowels = word.family.form.slice(0, -1);
-  if (vowels === "oe" || vowels === "ua" || vowels === "ue") return true;
+  if (vowels === "eo" || vowels === "ua" || vowels === "ue") return true;
   if (vowels !== "a" && vowels !== "u") return false;
   const kind = spanEndpointKind(prev);
   return kind !== undefined && kind === spanEndpointKind(next);

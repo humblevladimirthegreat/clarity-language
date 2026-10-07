@@ -162,7 +162,7 @@ function isFrameHookAhead(parser: AgazanSentenceParser, at: number): boolean {
 }
 
 /**
- * A `/th/` stance word right before a closed or open rank join of this level (`zel` / `zuel` / `zoel`, -l or -m)
+ * A `/th/` stance word right before a closed or open rank join of this level (`zel` / `zuel` / `zeol`, -l or -m)
  * is that fence's bar (comparatives.md § bars). Its hosted tail (`/b/`, a `/b/` join, an offset amount, `barl`)
  * may sit between; so may a second stance word, which enforce rejects.
  */
@@ -597,9 +597,9 @@ class AgazanSentenceParser extends CstParser {
       DEF: () => {
         const series = joinSeries(this.LA(0));
         this.SUBRULE(this.sharedAfterJoin);
-        // Factor right after an equative's shared scale: `oe` + `h+2` = *twice as … as* (comparatives.md § factor).
+        // Factor right after an equative's shared scale: `eo` + `h+2` = *twice as … as* (comparatives.md § factor).
         this.OPTION2({
-          GATE: () => series === "oe" && factorAhead(this.LA(1)),
+          GATE: () => series === "eo" && factorAhead(this.LA(1)),
           DEF: () => this.CONSUME(H, { LABEL: "factor" }),
         });
       },
@@ -1183,7 +1183,7 @@ function isOrdinalMarker(marker: NumberMarker): boolean {
 }
 
 function isLabelMarker(marker: NumberMarker): boolean {
-  return marker === "_" || marker === "ro" || marker === "#_" || marker === "roe";
+  return marker === "_" || marker === "ro" || marker === "#_" || marker === "reo";
 }
 
 function boundJoinAhead(parser: AgazanSentenceParser): boolean {

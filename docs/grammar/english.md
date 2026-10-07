@@ -77,9 +77,9 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 | same time (*as Alahen walks*) | **`huwem barl`** | [Dependent clauses](dependents.md#dependent-clauses) |
 | reason / since (*as Alahen walks*) | **`thevem barl`** | [Because](causation.md#because) |
 | grounds (*as the sky is gray, it will rain*) | **`thunem barl`** / **`thobam barl`** | [Evidence clause](knowing.md#evidence-clause) |
-| equal degree (*as sleepy as*) | equative **`oe`** | [Equatives](comparatives.md#equatives) |
+| equal degree (*as sleepy as*) | equative **`eo`** | [Equatives](comparatives.md#equatives) |
 | falls short (*not as sleepy as*) | reverse rank **`ue`** | [Reverse rank](comparatives.md#intermediate) |
-| most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`thezexal`** + tie **`oe`** | [Every bar](comparatives.md#stance-bars) |
+| most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`thezexal`** + tie **`eo`** | [Every bar](comparatives.md#stance-bars) |
 | frame one sentence (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | resemblance (*walks as / like a duck*) | **`humum`** + `/b/` | [Simile](relations.md#similative) |
 | how close (*exactly like*, *a bit like*) | **`humul`** for an exact match (`humul badagul`), or `/w/` before **`humum`**: `wubuzam humum badagul` (*precisely*), `wamazam humum badagul` (*a bit*) | [Exactly like](relations.md#exactly-like), [simile](relations.md#similative), [degree words](clause.md#degree-w) |
@@ -136,10 +136,10 @@ One English word, one row: the form that says it and the section that teaches it
 
 | English itch | Agazan job | Teach |
 |--------------|------------|-------|
-| *come* (*is coming to you*) | motion verb `vuvudel` + hook **`oel`** + `/b/` for the person it heads to | [Here and there](hooks.md#deixis) |
-| *bring* / *take* (*brings me the package*) | `valagel` (*carry*) + object + **`oel`** (toward) or **`ul`** (away from) | [Here and there](hooks.md#deixis) |
-| *arrive* / *reach* (*has arrived at the house*) | **`hoham`** (*already*) + `vuvudel` + **`oel`** + `/b/` | [Already, still, not yet](knowing.md#phasal) |
-| *approach* / *head for* | `vuvudel` + **`oel`** + `/b/` (no **`hoham`**: still on the way) | [Locative relations](relations.md#locative-relations) |
+| *come* (*is coming to you*) | motion verb `vuvudel` + hook **`eol`** + `/b/` for the person it heads to | [Here and there](hooks.md#deixis) |
+| *bring* / *take* (*brings me the package*) | `valagel` (*carry*) + object + **`eol`** (toward) or **`ul`** (away from) | [Here and there](hooks.md#deixis) |
+| *arrive* / *reach* (*has arrived at the house*) | **`hoham`** (*already*) + `vuvudel` + **`eol`** + `/b/` | [Already, still, not yet](knowing.md#phasal) |
+| *approach* / *head for* | `vuvudel` + **`eol`** + `/b/` (no **`hoham`**: still on the way) | [Locative relations](relations.md#locative-relations) |
 | *follow* (*walks behind Alahen*) | manner direction **`hazavathol`** + `/b/` for whoever leads | [Landmark's own front](roles.md#landmark-facing) |
 
 ### Matched lists and last resorts {#matched-lists}
@@ -202,7 +202,7 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agaza
 | *a stranger to Alahen*, *lying, as far as Alahen is concerned* | **`tho`** plus `/b/`: `gelehothom balahen` | [This pair](predication.md#scope-relative) |
 | *a lying type*, *an anxious type* | **`thu`** on the root: `zazawan valahathul` | [Type across scenes](predication.md#scope-type) |
 | *this once, to Alahen* | **`thao`** plus `/b/`: `valahathaol balahen` | [Stacked scope](predication.md#scope-stacks) |
-| *becoming a teacher* | **`thoe`**: `gaxedehothoel` | [Stacked scope](predication.md#scope-stacks) |
+| *becoming a teacher* | **`theo`**: `gaxedehotheol` | [Stacked scope](predication.md#scope-stacks) |
 | *not as a teacher* | **`thue`**: `gaxedehothuel` | [Stacked scope](predication.md#scope-stacks) |
 | *using teacher (as a tool)* | **`thae`**: `gaxedehothael` | [Stacked scope](predication.md#scope-stacks) |
 | *a lying type, except this time* | **`thua`**: `valahathual` | [Stacked scope](predication.md#scope-stacks) |

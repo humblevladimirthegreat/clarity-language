@@ -278,7 +278,7 @@ Use the table above. If the word has a mid-word **`th`**, it is a [sake](sakes.m
 - A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **ability**.
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
 
-The role vowels are **`a`** / **`e`** / **`u`** / **`o`** and the two-vowel pairs **`ae`**, **`oe`**, **`ua`**, **`uo`**, **`ao`**, **`ue`**. No other vowel pair goes before **`x`**.
+The role vowels are **`a`** / **`e`** / **`u`** / **`o`** and the two-vowel pairs **`ae`**, **`eo`**, **`ua`**, **`uo`**, **`ao`**, **`ue`**. No other vowel pair goes before **`x`**.
 
 ### Conversation length (name **`x`** vowel) {#conversation-length}
 

@@ -20,7 +20,7 @@ Write a thing letter (`/z/` `/d/` `/b/`), the role vowel, mid-word **`x`**, the 
 | [**`u`**](../roles.md#the-undergoer-u) | the undergoer | `zuxahahar` | *the one seen* | B |
 | [**`o`**](../roles.md#the-extra-b-party-o) | the extra `/b/` party | `zoxezeber` | *the one told* | B |
 | [**`ae`**](../roles.md#instrument) | the tool | `daexaradal` | *a writing tool* | I |
-| [**`oe`**](../roles.md#goal-source-path) | the goal | `doexuvudel` | *a destination* | I |
+| [**`eo`**](../roles.md#goal-source-path) | the goal | `deoxuvudel` | *a destination* | I |
 | [**`ua`**](../roles.md#goal-source-path) | the source | `duaxobohor` | *where it was poured from* | I |
 | [**`uo`**](../roles.md#goal-source-path) | the path | `duoxowogal` | *a walkway* | I |
 | [**`ao`**](../roles.md#result) | the result, newly made | `daoxagozal` | *a building* | I |
@@ -45,7 +45,7 @@ A role pointer drops the stem. The pointer vowel picks the event by position: **
 | Agazan | Names | Its `/b/` comes from | Stage |
 |--------|-------|----------------------|-------|
 | [`daexar`](../roles.md#stacked-pointers) | the tool of the latest event | **`ael`** | I |
-| [`doexar`](../roles.md#stacked-pointers) | where it headed | **`oel`** | I |
+| [`deoxar`](../roles.md#stacked-pointers) | where it headed | **`eol`** | I |
 | [`duaxar`](../roles.md#stacked-pointers) | where it came out of | **`ual`** | I |
 | [`duoxar`](../roles.md#stacked-pointers) | the way it went | **`uol`** | I |
 | [`daoxar`](../roles.md#stacked-pointers) | what it made | the event's own | I |
@@ -182,21 +182,21 @@ Name + **`x`** + one vowel + **-n**, on a greeting or a call. At arrival it says
 
 ## More, as much, less {#comparing}
 
-Write the names, then the rank join, then the shared adjective on `/ɡ/`. **`e`** ranks the first higher; **`ue`** the first lower; **`oe`** ties. **-l** is firm, **-m** open.
+Write the names, then the rank join, then the shared adjective on `/ɡ/`. **`e`** ranks the first higher; **`ue`** the first lower; **`eo`** ties. **-l** is firm, **-m** open.
 
 <!-- cheat-sheet: roles-comparing -->
 | Agazan | Use | English | Stage |
 |--------|-----|---------|-------|
 | [Rank **`e`** (`zel`)](../comparatives.md#comparatives) | rank on a shared quality | *more … than* / *the …-est* | B |
-| [Equality **`oe`** (`zoel` / `zoem`)](../comparatives.md#equatives) | same height on the quality | *as … as* / *about as … as* | B |
+| [Equality **`eo`** (`zeol` / `zeom`)](../comparatives.md#equatives) | same height on the quality | *as … as* / *about as … as* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [More than](../comparatives.md#comparatives) | `zazawan zalahen zel gamadam.` | *Azawan is more challenging than Alahen.* | B |
 | [The most](../comparatives.md#superlatives): one name | `zazawan zel gamadam.` | *Azawan is the most challenging.* | B |
 | [Much more](../comparatives.md#degree): `/w/` before the adjective | `zazawan zalahen zel wohahal gamadam.` | *Azawan is much more challenging than Alahen.* | B |
-| [As … as](../comparatives.md#equatives) | `zazawan zalahen zoel gamadam.` | *Azawan is as challenging as Alahen.* | B |
-| [About as … as](../comparatives.md#equatives) | `zazawan zalahen zoem gabawal.` | *Azawan is about as bright as Alahen.* | B |
+| [As … as](../comparatives.md#equatives) | `zazawan zalahen zeol gamadam.` | *Azawan is as challenging as Alahen.* | B |
+| [About as … as](../comparatives.md#equatives) | `zazawan zalahen zeom gabawal.` | *Azawan is about as bright as Alahen.* | B |
 | [Both are](../comparatives.md#equatives): an *and*-list, no ranking | `zazawan zalahen zal gamadam` | *Azawan and Alahen are both challenging.* | B |
 | [Not as … as](../comparatives.md#comparative-arity): `zuel` | `zalahen zazawan zuel gamadam` | *Alahen is not as challenging as Azawan.* | I |
 | [No more … than](../comparatives.md#comparative-arity): deny with `zul` | `zalahen zazawan zel gamadam zul.` | *Alahen is no more challenging than Azawan.* | I |
@@ -232,18 +232,18 @@ Keep the rank join; change what the shared word is.
 | [Manner](../comparatives.md#manner-scale): `/h/` right after the join | `zalahen zazawan zel hahegem vowogal.` | *Alahen walks more intensely than Azawan.* | I |
 | [Amount](../comparatives.md#amount-scale): `gral` | `zagadulx zodogalx zel gral.` | *There are more cats than dogs.* | I |
 | [Amount, fewer](../comparatives.md#amount-scale) | `zagadulx zodogalx zuel gral.` | *There are fewer cats than dogs.* | I |
-| [Amount, as many](../comparatives.md#amount-scale) | `zagadulx zodogalx zoel gral.` | *There are as many cats as dogs.* | I |
+| [Amount, as many](../comparatives.md#amount-scale) | `zagadulx zodogalx zeol gral.` | *There are as many cats as dogs.* | I |
 | [Amount, by impression](../comparatives.md#amount-scale): `gram` | `zagadulx zodogalx zel gram.` | *It looks like there are more cats than dogs.* | I |
 | [How many more](../comparatives.md#amount-scale): difference in `/b/` | `zagadulx zodogalx zel gral brarel.` | *There are three more cats than dogs.* | I |
 | [Frequency](../comparatives.md#frequency-scale): `hral` | `zazawan zalahen zel hral vowogal.` | *Azawan walks more often than Alahen.* | I |
 | [Time, later](../comparatives.md#time-scale): `bral` | `zazawan zalahen zel bral vevahal.` | *Azawan arrives later than Alahen.* | I |
 | [Time, earlier](../comparatives.md#time-scale) | `zazawan zalahen zuel bral vevahal.` | *Azawan arrives earlier than Alahen.* | I |
-| [The more …, the more …](../comparatives.md#covarying) | `zazawan hral vowogal xoel zalahen hral vezebal.` | *The more Azawan walks, the more Alahen sleeps.* | I |
+| [The more …, the more …](../comparatives.md#covarying) | `zazawan hral vowogal xeol zalahen hral vezebal.` | *The more Azawan walks, the more Alahen sleeps.* | I |
 | [The more …, the less …](../comparatives.md#covarying) | `zazawan hral vowogal xuel zalahen hral vezebal.` | *The more Azawan walks, the less Alahen sleeps.* | I |
-| [Twice as](../comparatives.md#factor): factor after the adjective | `zazawan zalahen zoel gelavam hradul.` | *Azawan is twice as big as Alahen.* | I |
-| [Half as](../comparatives.md#factor): inverse `hrudul` | `zalahen zazawan zoel gelavam hrudul.` | *Alahen is half as big as Azawan.* | I |
+| [Twice as](../comparatives.md#factor): factor after the adjective | `zazawan zalahen zeol gelavam hradul.` | *Azawan is twice as big as Alahen.* | I |
+| [Half as](../comparatives.md#factor): inverse `hrudul` | `zalahen zazawan zeol gelavam hrudul.` | *Alahen is half as big as Azawan.* | I |
 
-*Three times bigger* is `zoel` with `hrarel`, not `zel`. The covarying joins state only that the two go together, not which causes the other.
+*Three times bigger* is `zeol` with `hrarel`, not `zel`. The covarying joins state only that the two go together, not which causes the other.
 
 ## Than a stance {#bars}
 
@@ -254,7 +254,7 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 |--------|-----|---------|-------|
 | [name + bar + **`zel`**](../comparatives.md#bars) | above the bar | *more than planned* / *later than planned* | I |
 | [name + bar + **`zuel`**](../comparatives.md#bars) | below the bar | *less than planned* / *earlier than planned* | I |
-| [name + bar + **`zoel`**](../comparatives.md#bars) | at the bar | *as planned* | I |
+| [name + bar + **`zeol`**](../comparatives.md#bars) | at the bar | *as planned* | I |
 | [bar after the fence](../comparatives.md#bars) | a stance on the whole claim | *plans to be the most …* | I |
 
 | Job | Example | English | Stage |
@@ -268,8 +268,8 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [Than advertised](../comparatives.md#stance-bars) | `zugul thewam zuel gagazam.` | *The book is less clear than advertised.* | A |
 | [Than I expected](../comparatives.md#stance-bars) | `zazawan thahom zel gezebul.` | *Azawan is sleepier than I expected.* | A |
 | [Than they used to be](../comparatives.md#stance-bars) | `zazawan thenom zel gezebul.` | *Azawan is sleepier than they used to be.* | A |
-| [As … as possible](../comparatives.md#stance-bars) | `zalahen thezexal zoel hadehum vowogal.` | *Alahen walks as hastily as possible.* | A |
-| [Up to code](../comparatives.md#stance-bars) | `zahazal thumel zoel gabezem.` | *The house is as strong as the rules require.* | A |
+| [As … as possible](../comparatives.md#stance-bars) | `zalahen thezexal zeol hadehum vowogal.` | *Alahen walks as hastily as possible.* | A |
+| [Up to code](../comparatives.md#stance-bars) | `zahazal thumel zeol gabezem.` | *The house is as strong as the rules require.* | A |
 | [More than allowed](../comparatives.md#stance-bars) | `zedehel thegol zel gral.` | *There is more tea than the rules allow.* | A |
 | [Than hoped](../comparatives.md#stance-bars) | `zugul thevegem zel gagazam.` | *The book is clearer than I hoped.* | A |
 | [Than feared](../comparatives.md#stance-bars) | `zugul thewedam zuel gagazam.` | *The book is even less clear than I feared.* | A |
@@ -309,9 +309,9 @@ English *many* and *often* rank against an unstated baseline. Agazan names the b
 | [*often* / *rarely*](../comparatives.md#vague-amounts) | PATTERN **`thobam`**, `zel` / `zuel` with `hral` | A |
 | [late / early](../comparatives.md#vague-amounts) | PATTERN **`thobam`**, `zel` / `zuel` with `bral` | A |
 | [*than usual*](../comparatives.md#vague-amounts) (the same person or thing) | PATTERN **`thobam`** with no `/b/` | A |
-| [*too much* / *enough* / *not enough*](../comparatives.md#vague-amounts) | a met sake bar (`thegatham`), `zel` / `zoel` / `zuel` | A |
+| [*too much* / *enough* / *not enough*](../comparatives.md#vague-amounts) | a met sake bar (`thegatham`), `zel` / `zeol` / `zuel` | A |
 | [too late / too soon](../comparatives.md#vague-amounts) | a met sake bar (`thegatham`), `zel` / `zuel` with `bral` | A |
-| [*as … as possible*](../comparatives.md#vague-amounts) | ABIL **`thezexal`**, `zoel` | A |
+| [*as … as possible*](../comparatives.md#vague-amounts) | ABIL **`thezexal`**, `zeol` | A |
 | [*more and more* / *increasingly*](../comparatives.md#vague-amounts) | FORMER **`thenom`**, `zel` | A |
 
 | Job | Example | English | Stage |
@@ -324,7 +324,7 @@ English *many* and *often* rank against an unstated baseline. Agazan names the b
 | This | vs | That |
 |------|----|------|
 | `zazawan zalahen zel gamadam` *more than* ([a ranking](../comparatives.md#comparatives)) | | `zazawan zalahen zal gamadam` *both are* ([an *and*-list](../comparatives.md#equatives)) |
-| `zoel` *as … as* ([a tie](../comparatives.md#equatives)) | | `zuel` *not as … as* ([below](../comparatives.md#comparative-arity)) |
+| `zeol` *as … as* ([a tie](../comparatives.md#equatives)) | | `zuel` *not as … as* ([below](../comparatives.md#comparative-arity)) |
 | `zel gamadam` *no most* ([standalone](../comparatives.md#comparative-arity)) | | `zer gamadam` *whatever ranks highest* ([someone is on top](../comparatives.md#comparative-arity)) |
 | `zalahen zazawan zel hahegem vowogal` *more intensely than* ([ranks the manner](../comparatives.md#manner-scale)) | | `gahegem` *more intense* ([a quality of the people](../comparatives.md#manner-scale)) |
 | `zazawan thamam zel bral vevahal` *later than planned* ([a bar before the join](../comparatives.md#bars)) | | `zazawan zel bral vevahal thamam` *plans to be last* ([a stance after](../comparatives.md#bars)) |

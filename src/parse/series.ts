@@ -14,15 +14,15 @@ export const JOIN_SERIES: Record<string, { english: string; job: string }> = {
   uo: { english: "anything but", job: "anything-but" },
   e: { english: "rank", job: "rank/more" },
   ae: { english: "sequence", job: "in-order" },
-  oe: { english: "equal rank", job: "equal-rank" },
+  eo: { english: "equal rank", job: "equal-rank" },
   ue: { english: "rank reversal", job: "rank/less" },
 };
 
-/** Series whose shared item ranks (`e` / `ue` / `ae`) or equates (`oe`). */
-export const RANK_SERIES = new Set(["e", "ae", "ue", "oe"]);
-/** Rank fences whose comparee may be a `/th/` stance bar: `e` more, `ue` less, `oe` equal (comparatives.md § bars). */
-export const BAR_SERIES = new Set(["e", "ue", "oe"]);
-/** The rank series that order rather than equate (`oe` is the equative). */
+/** Series whose shared item ranks (`e` / `ue` / `ae`) or equates (`eo`). */
+export const RANK_SERIES = new Set(["e", "ae", "ue", "eo"]);
+/** Rank fences whose comparee may be a `/th/` stance bar: `e` more, `ue` less, `eo` equal (comparatives.md § bars). */
+export const BAR_SERIES = new Set(["e", "ue", "eo"]);
+/** The rank series that order rather than equate (`eo` is the equative). */
 export const SCALE_SERIES = new Set(["e", "ae", "ue"]);
 export const KIND_SERIES = new Set(["ua", "uo"]);
 

@@ -62,7 +62,7 @@
   }
 
   function writingMarkerFromSpeechV(v) {
-    if (v === "oe") return "_";
+    if (v === "eo") return "_";
     if (v === "ue") return "#-";
     if (v === "uo") return "#_";
     if (v === "ua") return "+-";
@@ -126,7 +126,7 @@ function separatorVowel(markerV) {
   }
 
   const EXTRA_NOUN_HOOKS = [
-    "aol", "aom", "ael", "aem", "oel", "oem", "ual", "uam", "uol", "uom", "uel", "uem",
+    "aol", "aom", "ael", "aem", "eol", "eom", "ual", "uam", "uol", "uom", "uel", "uem",
     "al", "am", "ol", "om", "el", "em", "ul", "um",
   ];
   const ROOT_VOWELS = "aeou";
@@ -355,7 +355,7 @@ function peg$parse(input, options) {
   const peg$c23 = "1e-";
   const peg$c24 = "1e";
   const peg$c25 = "r";
-  const peg$c26 = "oe";
+  const peg$c26 = "eo";
   const peg$c27 = "ue";
   const peg$c28 = "uo";
   const peg$c29 = "ua";
@@ -439,7 +439,7 @@ function peg$parse(input, options) {
   const peg$e29 = peg$literalExpectation("1e", false);
   const peg$e30 = peg$classExpectation([["0", "9"]], false, false, false);
   const peg$e31 = peg$literalExpectation("r", false);
-  const peg$e32 = peg$literalExpectation("oe", false);
+  const peg$e32 = peg$literalExpectation("eo", false);
   const peg$e33 = peg$literalExpectation("ue", false);
   const peg$e34 = peg$literalExpectation("uo", false);
   const peg$e35 = peg$literalExpectation("ua", false);
@@ -659,7 +659,7 @@ function peg$parse(input, options) {
   function peg$f57(v, body) {    return body.seps.every(function (sep) { return sep === separatorVowel(v); });  }
   function peg$f58(v, body, digitless) {
     const stem = { marker: writingMarkerFromSpeechV(v), groups: body.groups };
-    if (v === "oe") stem.calendarOrdinal = true;
+    if (v === "eo") stem.calendarOrdinal = true;
     if (digitless) foldDigitlessTail(stem, digitless);
     else foldBareExponent(stem);
     return stem;

@@ -65,7 +65,7 @@ A [tag](../pronouns.md#tag-pronouns) is a label you choose: role letter, `w`, a 
 | Recall a tag assigned to a name | `zwan` / `dwan` / `bwan` | *A*, a named one | I |
 | A's part in the latest event | `zwam` / `dwam` / `bwam` | *what A did* | I |
 | A and associates | `zwarx` / `zwanx` | *A and associates* | I |
-| Two tags (six stacks: `zwaer` `zwaor` `zwoer` `zwuar` `zwuor` `zwuer`) | `zwaer` | *A and E* | I |
+| Two tags (six stacks: `zwaer` `zwaor` `zweor` `zwuar` `zwuor` `zwuer`) | `zwaer` | *A and E* | I |
 | Two tags, their parts | `zwaem` | *what A and E did* | I |
 | Two tags and associates | `zwaerx` | *A, E, and associates* | I |
 

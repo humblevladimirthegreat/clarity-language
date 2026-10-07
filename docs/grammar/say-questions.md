@@ -179,8 +179,8 @@ Under question, the rest of the single-item and standalone join map is confirm /
 |--------|---------|
 | **…em** | *Is X the top priority?* / *Prefer X?* (offer) |
 | **…el** | *Is X the only priority?* |
-| **…oem** | *Maybe start with X?* (offer) |
-| **…oel** | *Start with X?* |
+| **…eom** | *Maybe start with X?* (offer) |
+| **…eol** | *Start with X?* |
 | **…uem** | *X last?* (offer) |
 | **…uel** | *X last only?* |
 | **…en** | *X first, as usual?* |
@@ -195,8 +195,8 @@ Under question, the rest of the single-item and standalone join map is confirm /
 | **…ael** | *Tie?* |
 | **…aem** | *Probably a tie?* |
 | **…aen** | *Draw?* (stock) |
-| **…oem** | *Not sure where to start?* |
-| **…oel** | *Any order?* |
+| **…eom** | *Not sure where to start?* |
+| **…eol** | *Any order?* |
 | **…uem** | *Don't mind?* / *No objection?* |
 | **…uel** | *No least-favorite?* / *No one last?* |
 | **…en** | *No favorite?* (stock) |
@@ -378,7 +378,7 @@ y-question | [z-Ahaben | z-or-exactly-one]
 **4.** *Tie?* (standalone rank)
 
 ::: details Show answer
-`yol zoel.`
+`yol zeol.`
 
 y-question | z-equal-rank
 :::

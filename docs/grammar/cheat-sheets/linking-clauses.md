@@ -196,7 +196,7 @@ Plain *in*, *on*, *at*, *from*, *toward* are [hooks](../hooks.md#extra-noun-inte
 | [Between](../relations.md#locative-relations) | `zalahen vehahel hazam bedehal bezedel bal.` | *Alahen sits between a train and a station.* | I |
 | [Across](../relations.md#locative-relations) | `zazawan vowogal hebum bezedel.` | *Azawan walks across the station.* | I |
 | [Around](../relations.md#locative-relations) | `zagadulx vehahel hugem bedehal.` | *Cats sit around a train.* | I |
-| [From, toward](../relations.md#locative-relations) | `zazawan ul bezedel vowogal oel bedehal.` | *Azawan walks from a station toward a train.* | I |
+| [From, toward](../relations.md#locative-relations) | `zazawan ul bezedel vowogal eol bedehal.` | *Azawan walks from a station toward a train.* | I |
 | [Out of, in](../relations.md#locative-relations) | `zalahen ual bahazal varahal al bedehal.` | *Alahen runs out of a house into a train.* | I |
 
 ### Of {#of}

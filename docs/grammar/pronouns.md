@@ -579,7 +579,7 @@ A tag lasts until it is assigned again or the conversation ends with a [goodbye]
 
 #### Two tags at once {#tag-pairs}
 
-A stacked vowel names two tags together. There are six stacks, one for each pair of tags: `zwaer` is *A and E*, `zwaor` *A and O*, `zwoer` *O and E*, `zwuar` *U and A*, `zwuor` *U and O*, and `zwuer` *U and E*. Each pair has this one spelling, whichever tag you name first.
+A stacked vowel names two tags together. There are six stacks, one for each pair of tags: `zwaer` is *A and E*, `zwaor` *A and O*, `zweor` *O and E*, `zwuar` *U and A*, `zwuor` *U and O*, and `zwuer` *U and E*. Each pair has this one spelling, whichever tag you name first.
 
 <!-- cheat-sheet: people-pointing -->
 | Agazan | Use | English |

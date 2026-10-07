@@ -90,6 +90,8 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 
 A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubuhel`: prefix `z`, root `ubuhe`, ending `-l`). Each spelling has only one pronunciation. Writing does not mark stress. Musical rhythm may still place emphasis.
 
+Some short grammar words stack two vowels (a join such as **ua**, a hook such as **eo**). A stack always follows the order **u**, **a**, **e**, **o**: **u** comes first and **o** comes last. That gives six stacks: **ua**, **uo**, **ue**, **ae**, **ao**, and **eo**. The two vowels stay two separate syllables.
+
 **Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 
 ### Number-word exception {#number-word-exception}

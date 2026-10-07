@@ -22,7 +22,7 @@ Pick a locus from this menu. (This is in a cheat sheet at the end)
 | `ao` | the atmosphere of the situation |
 | `uo` | I can't place where it comes from |
 | `o` | aimed at someone |
-| `oe` | turning to someone for comfort |
+| `eo` | turning to someone for comfort |
 | `ue` | pushing back |
 | `e` | felt on someone's behalf |
 | `u` | moving off (avoiding, hiding) |

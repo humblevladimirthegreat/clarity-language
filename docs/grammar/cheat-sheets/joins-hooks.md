@@ -23,7 +23,7 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | **ua** | [*everything but*](../joins.md#everything-ua); alone *everything* | [range](../hooks.md#ranges): strictly between | *out of* / *out from among* |
 | **uo** | [*anything but*](../joins.md#invert-u-stacks) | | *through* / *by way of* |
 | **ae** | [in order](../joins.md#sequence-ae): *A, then B* | | *using* / *by* |
-| **oe** | [tie](../joins.md#rank-joins): equal rank | [range](../hooks.md#ranges): *A through B* | *toward* / *in the direction of* |
+| **eo** | [tie](../joins.md#rank-joins): equal rank | [range](../hooks.md#ranges): *A through B* | *toward* / *in the direction of* |
 | **ue** | [rank reversed](../joins.md#invert-u-stacks): last first | [range](../hooks.md#ranges): outside *A–B* | *against* / *contrary to* |
 
 ## Joins {#joins}
@@ -71,7 +71,7 @@ The same join reads differently with two or more items, [one item](../joins.md#s
 | `zuol` | *anything but A and B* | *anything but X* | *anything (goes)* | I |
 | `zael` | *A, then B* | *start with X* | *in no particular order* | I |
 | `zaem` | *roughly A, then B* | *maybe start with X* | *not sure where to start* | I |
-| `zoel` | *A and B tied* | *X tied for* | *it's a draw* | I |
+| `zeol` | *A and B tied* | *X tied for* | *it's a draw* | I |
 | `zuel` | *B, then A* (last first) | *X last* | *no least-favorite* | I |
 
 A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `xal` *nothing happened*, `xar` *something happened*.
@@ -105,7 +105,7 @@ The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, 
 | **uo** | `vuon` *bars* | `guon` / `huon` *anything but* | |
 | **e** | `ven` *prioritizes* | `gen` / `hen` *prioritizing* | |
 | **ae** | `vaen` *starts with* | `gaen` / `haen` *starting with* | |
-| **oe** | `voen` *equates* | `goen` / `hoen` *on a par with* | |
+| **eo** | `veon` *equates* | `geon` / `heon` *on a par with* | |
 | **ue** | `vuen` *deprioritizes* | `guen` / `huen` *deprioritizing* | `xuen` *and before that* |
 
 [Stance joins](../join-across-roles.md#stance-joins) (`/th/`) work on the stance words before them, not the claim: `thevem berehel thul` *not because of the rain*. With clause grounds, the join goes [before `barl`](../join-across-roles.md#stance-join-before-barl): `thevem thul barl` *not because …*. [Alone](../join-across-roles.md#standalone-stance-joins), they say how to take the claim:
@@ -114,7 +114,7 @@ The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, 
 |--------|---------|--------|---------|
 | `thal` | *at face value* | `thul` | *no judgment* |
 | `thual` | *all things considered* | `thel` | *impartially* |
-| `thoel` | *equally balanced* | `thar` (in a question) | *why do you say so?* |
+| `theol` | *equally balanced* | `thar` (in a question) | *why do you say so?* |
 
 ## Hooks {#hooks}
 
@@ -126,7 +126,7 @@ A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds a
 | front of the sentence | [glue to prior talk](../hooks.md#discourse-hooks) | `al zazawan vowogal` | *Additionally, Azawan walks* | B |
 | `/b/` right after, no recipient `/b/` right before | [extra noun](../hooks.md#extra-noun) | `zodogal vezebal al bahazal` | *a dog sleeps in a house* | B |
 | **-r**, nothing on the right | [point back](../hooks.md#hook-resume) | `zalahen vehahel or` | *Alahen sits there* | I |
-| stacked vowel between two same-role words | [range](../hooks.md#ranges) | `zazawan oel zahaben` | *Azawan through Ahaben* | I |
+| stacked vowel between two same-role words | [range](../hooks.md#ranges) | `zazawan eol zahaben` | *Azawan through Ahaben* | I |
 | fused onto a citation | [hook compound](../hooks.md#hook-compounds) | `vowogalul` | *leave* | A |
 
 ### Same-role and front of sentence {#same-role-discourse}
@@ -157,7 +157,7 @@ Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting.
 | `al` *in* | `am` *amid* | `ar` *in there* | `owogalal` *enter* |
 | `aol` *on* | `aom` *over* | `aor` *on it* | `owogalaol` *mount* |
 | `ol` *at* | `om` *near* | `or` *there* | `owogalol` *attend* |
-| `oel` *toward* | `oem` *in the direction of* | | `owogaloel` *head for* |
+| `eol` *toward* | `eom` *in the direction of* | | `owogaleol` *head for* |
 | `ul` *from*, [*since*](../hooks.md#since) | `um` *away from* | `ur` *from there* | `owogalul` *leave* |
 | `ual` *out of* | `uam` *out from among* | | `owogalual` *exit* |
 | `uol` *through* | `uom` *by way of* | `uor` *through there* | `owogaluol` *traverse* |
@@ -177,8 +177,8 @@ Stage: `al` `ol` `ul` `el` **-l** are Beginner; the rest of the first three colu
 | `ael bar` (in a question) | [*with what?*](../hooks.md#extra-noun-intermediate) | I |
 | `om bamun` / `om behon` | [*here*, *this*](../hooks.md#deixis) / *there by you*, *that* | I |
 | `om bahan` / `um bahan` | [*here with us*](../hooks.md#deixis) / *over there* | I |
-| `vuvudel oel bamun` | [*comes to me*](../hooks.md#deixis) | I |
-| `valagel dabegol oel bamun` | [*brings me the package*](../hooks.md#deixis) | I |
+| `vuvudel eol bamun` | [*comes to me*](../hooks.md#deixis) | I |
+| `valagel dabegol eol bamun` | [*brings me the package*](../hooks.md#deixis) | I |
 | `zodogal em bamun` | [*my dog*](../hooks.md#genitive) (in my use) | I |
 
 ## Don't mix up {#dont-mix-up}
@@ -187,8 +187,8 @@ Stage: `al` `ol` `ul` `el` **-l** are Beginner; the rest of the first three colu
 |------|----|------|
 | `zodogal zul` *no dog* ([join denies](../joins.md#universals-domains-generics)) | | `zavahal ul zazawan` *the family except Azawan* ([hook takes B out of A](../hooks.md#except)) |
 | `zahodom gan bazawan` *a team including Azawan* ([join-relation](../join-across-roles.md#join-relations)) | | `zahodom al zazawan` *the team, including Azawan* (afterthought) |
-| `zazawan zahaben zal` *the two of them* ([vs a range](../hooks.md#ranges)) | | `zazawan oel zahaben` *Azawan through Ahaben*; `zazawan zahaben zael` *Azawan, then Ahaben* |
-| hook `oel` *toward X* ([where a path ends](../hooks.md#extra-noun-intermediate)) | | `zael` + X *start with X* ([where it starts](../joins.md#sequence-ae)) |
+| `zazawan zahaben zal` *the two of them* ([vs a range](../hooks.md#ranges)) | | `zazawan eol zahaben` *Azawan through Ahaben*; `zazawan zahaben zael` *Azawan, then Ahaben* |
+| hook `eol` *toward X* ([where a path ends](../hooks.md#extra-noun-intermediate)) | | `zael` + X *start with X* ([where it starts](../joins.md#sequence-ae)) |
 | `xan` *and then* ([what happened next](../join-across-roles.md#clause-sequence)) | | `xael` ([the order is part of the claim](../join-across-roles.md#vp-clause-forms): a recipe) |
 | `vun` [*refuses*](../join-across-roles.md#join-act-verbs) | | `vuan` *excludes* |
 | `ol …` *Instead, …* ([replaces the last claim](../hooks.md#discourse-hooks)) | | `or …` *Anyway, …* ([back to the main line](../hooks.md#hook-resume)) |

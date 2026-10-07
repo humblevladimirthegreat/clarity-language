@@ -261,13 +261,13 @@ rawoba \`1^∞\` \= gazillion (hyperbolically large but finite amount)
 
 I’ve invented the Ranked Conjunction for /r/ClarityLanguage. It means that the conjoined items are listed in order of rank/preference/priority.
 
-\>buy burger, chicken, \*\*oem\*\* hot dog
+\>buy burger, chicken, \*\*eom\*\* hot dog
 
 \*Buy the burger. If they don’t have it, buy the chicken instead. If they don’t have that, then buy the hot dog. If none are available, then just buy something.\*
 
 If it were a normal \*\*or\*\**,* it would mean \*Buy the burger, the chicken, or the hot dog (I don’t care which).\*
 
-If it used the closed form \*\*oel\*\*, it would mean \*... if none are available, then don’t buy anything.\*
+If it used the closed form \*\*eol\*\*, it would mean \*... if none are available, then don’t buy anything.\*
 
 For all of the forms and a bunch of examples, see \[this post\](https://www.reddit.com/r/ClarityLanguage/comments/1v68oxr/ranked\_conjunctions/).
 

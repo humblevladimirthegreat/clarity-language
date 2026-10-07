@@ -159,7 +159,7 @@ An [emotion](../sakes.md#emotion-compose) is built on one word: the sake word, a
 | [`ao`](../sakes.md#emotion-compose) | *over* | the atmosphere | *hangs over the room* | I |
 | [`uo`](../sakes.md#emotion-compose) | *through* | unplaced | *I can't place it* | I |
 | [`o`](../sakes.md#emotion-compose) | *at* | aimed | *annoyed at*, *grateful to* | I |
-| [`oe`](../sakes.md#emotion-compose) | *toward* | seeking | *turning to someone for comfort* | I |
+| [`eo`](../sakes.md#emotion-compose) | *toward* | seeking | *turning to someone for comfort* | I |
 | [`ue`](../sakes.md#emotion-compose) | *against* | resisting | *objecting to* | I |
 | [`e`](../sakes.md#emotion-compose) | *for* | on behalf | *upset for* | I |
 | [`u`](../sakes.md#emotion-compose) | *from* | away | *avoiding*, *fleeing* | I |
@@ -185,7 +185,7 @@ Motion is how the feeling moves, not how strong it is. For strength, put a [degr
 | [`zumel wanathumem gobum bazawan`](../sakes.md#emotion-compose) | *upset for Azawan about the memo* | I |
 | [`zezebel wanathumum gobum balahen`](../sakes.md#emotion-compose) | *avoiding Alahen over the dialogue* | I |
 | [`zezebel wanathumaem gobum balahen`](../sakes.md#emotion-compose) | *placating Alahen about the dialogue* | I |
-| [`zumel wanathumoem gobum bazawan`](../sakes.md#emotion-compose) | *upset, turning to Azawan for comfort* | I |
+| [`zumel wanathumeom gobum bazawan`](../sakes.md#emotion-compose) | *upset, turning to Azawan for comfort* | I |
 | [`zumel wanathumuer gobum`](../sakes.md#emotion-compose) | *objecting to the memo* | I |
 | [`zezebel wamethumal gobum`](../sakes.md#emotion-compose) | *the dialogue feels pointless* | I |
 | [`zebeyom gebethamam`](../sakes.md#emotion-compose) | *glad my draft helped* | I |

@@ -411,7 +411,7 @@ English makes nouns for a part, a kind, a role, and a manner. Agazan has no sepa
 | *patient* (being treated) | `zuxehewol` | the one who undergoes healing |
 | *scene* (where it happens) | `zexowogal` | the scene of the walk |
 | *function* (purpose) | `zugul gulothom.` | the book's purpose is competence |
-| *size* (how big) | `zugul zahavol zoel gelavam.` | same size as the hammer |
+| *size* (how big) | `zugul zahavol zeol gelavam.` | same size as the hammer |
 | *way* / *method* / *style* / *mode* | the manner adverb on `/h/` | `zazawan vowogal hadehum.` |
 | *instance* / *for example* | `aol …` opens the sentence | one case of what you said |
 | *everybody* | `zual` | every member |

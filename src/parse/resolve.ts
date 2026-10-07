@@ -149,7 +149,7 @@ function isJoinGap(word: LexWord): boolean {
 function classifySharedRole(join: LexWord, shared: CoordShared): SharedRole {
   const series = join.family.kind === "joinMarker" ? join.family.series : "";
   if (SCALE_SERIES.has(series)) return "scale";
-  if (series === "oe") return "equative";
+  if (series === "eo") return "equative";
   if (KIND_SERIES.has(series)) return "kind";
   if (series === "a") return isSharedGPackage(shared) && shared.word.plural ? "collective" : "distribute";
   return "ordinary";
@@ -366,7 +366,7 @@ const CORE_ROLES = new Set<RoleVowel>(["a", "u", "o"]);
 const PLACE_HOOKS = new Set(["al", "am", "aol", "aom", "ol", "om"]);
 
 /** Extra-noun hooks paired with a stacked role vowel (`ael` → instrument `ae`). */
-const STACKED_HOOK_ROLE: Record<string, RoleVowel> = { ael: "ae", oel: "oe", ual: "ua", uol: "uo", uel: "ue" };
+const STACKED_HOOK_ROLE: Record<string, RoleVowel> = { ael: "ae", eol: "eo", ual: "ua", uol: "uo", uel: "ue" };
 
 function npFiller(coord: NpCoord): Filler | undefined {
   const words = coord.parts.flatMap((part) => part.items.flatMap((item) => (item.kind === "package" ? [item.package.head] : [])));
