@@ -82,6 +82,7 @@ What you assert depends on what sits before `barl`: the channel alone asserts th
 | *Q follows from P* | Q [`thugum thoyem barl`](../knowing.md#deduction) P | only the link | I |
 | *P and Q come to the same thing* | Q [`thugum thedam barl`](../knowing.md#deduction) P | only the link, both ways | I |
 | *P rules out Q* | Q denied with `vul`, then [`thugum thoyem barl`](../knowing.md#deduction) P | only that P and Q cannot both hold | I |
+| *Q doesn't follow from P* | Q [`thugum thoyem thul barl`](../join-across-roles.md#stance-join-before-barl) P | that the link fails | I |
 
 ### Whose view {#holder}
 

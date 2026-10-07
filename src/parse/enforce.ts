@@ -670,7 +670,7 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
           return;
         case "np":
           enforceBars(node.coord, tables);
-          if (!rankedUniversalFence(node.coord)) {
+          if (!rankedUniversalFence(node.coord) && !deniedUniversalFence(node.coord)) {
             enforceLeadingFence(node.coord.parts as { items: unknown[]; join?: LexWord }[], (part) => part.items.length === 0);
           }
           return;
@@ -933,6 +933,22 @@ function rankedUniversalFence(coord: NpCoord): boolean {
     fence!.join.family.series === "ua" &&
     bar!.items.length > 0 &&
     bar!.items.every((item) => item.kind === "bar")
+  );
+}
+
+/** `zual gagadul zul`: a `ua` fence is the one item a `u` join denies, *not every cat* (joins.md#not-every). */
+function deniedUniversalFence(coord: NpCoord): boolean {
+  const [fence, denial] = coord.parts;
+  return (
+    coord.parts.length === 2 &&
+    fence!.items.length === 0 &&
+    fence!.join?.family.kind === "joinMarker" &&
+    fence!.join.family.series === "ua" &&
+    denial!.items.length === 0 &&
+    denial!.shared.length === 0 &&
+    denial!.join?.family.kind === "joinMarker" &&
+    denial!.join.family.series === "u" &&
+    denial!.join.ending !== "r"
   );
 }
 

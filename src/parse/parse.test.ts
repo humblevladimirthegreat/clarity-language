@@ -851,3 +851,29 @@ describe("parse — whose want, plan, or decision (hosted /b/)", () => {
     assert.equal(pole?.hosted?.bound.raw, "bral");
   });
 });
+
+describe("negation scope at a fence or a pole", () => {
+  it("reads zual + kind + zul as not every K (joins.md#not-every)", () => {
+    const units = parseText("zual gagadul zul vezebal.").utterances[0]!.bodies[0]!.clause.units;
+    const np = units[0]!;
+    assert.equal(np.kind, "np");
+    if (np.kind !== "np") return;
+    assert.deepEqual(np.coord.parts.map((part) => part.join?.raw), ["zual", "zul"]);
+    assert.equal(np.coord.parts[0]!.shared[0]!.word.raw, "gagadul");
+  });
+
+  it("keeps a stance join before barl in the main sentence and barl on the pole", () => {
+    const clause = parseText("zazawan vedehol thugum thoyem thul barl zazawan gaxedehothel.").utterances[0]!.bodies[0]!.clause;
+    const hs = clause.units.flatMap((u) => (u.kind === "h" ? [u.unit] : []));
+    assert.deepEqual(hs.map((h) => h.word.raw), ["thugum", "thoyem", "thul"]);
+    assert.equal(hs[1]!.hosted?.bound.raw, "barl");
+    assert.equal(hs[1]!.hosted?.afterJoin, true);
+    assert.equal(clause.dependent?.orodo.raw, "barl");
+  });
+
+  it("leaves barl off a pole that already has its /b/", () => {
+    const clause = parseText("zazawan vowogal thevem berehel thul barl zalahen varahal.").utterances[0]!.bodies[0]!.clause;
+    const pole = clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "thevem");
+    assert.equal(pole?.kind === "h" && pole.unit.hosted?.bound.raw, "berehel");
+  });
+});

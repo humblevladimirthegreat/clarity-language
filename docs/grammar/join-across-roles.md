@@ -159,6 +159,28 @@ Nothing is SHARED after an `/h/` or `/th/` join. To add a detail that covers the
 
 **Compare with:** *Azawan does not walk* denies the event, so the join goes on the verb (`vowogal vul`), not on `/th/`.
 
+#### Stance join before `barl` {#stance-join-before-barl}
+
+When the grounds are a whole clause (*not because Alahen runs*), the pole takes **`barl`** and the next sentence is the grounds ([poles](dependents.md#poles)). That sentence comes last, so the join cannot go after it. Put the join word **between the pole and `barl`** instead. It closes the stance words before it as usual, and **`barl`** still belongs to the pole.
+
+> `zazawan vowogal thevem thul barl zalahen varahal.`
+>
+> z-Azawan | v-walk | th-because | th-not | b-that-clause | z-Alahen | v-run
+>
+> "Azawan walks, but not because Alahen runs."
+
+The same join after DEDUCED and an *if* pole says a conclusion **does not follow** from its premises ([deduction](knowing.md#deduction)). You deny the link and claim nothing about either clause.
+
+> `zazawan vedehol thugum thoyem thul barl zazawan gaxedehothel.`
+>
+> z-Azawan | v-teach | th-DEDUCED | th-if | th-not | b-that-clause | [z-Azawan | g-agent-x-teach-th-role]
+>
+> "That Azawan teaches doesn't follow from Azawan being a teacher."
+
+**Compare with:** `thugum thul thoyem barl` denies only the channel: *if P, then Q*, but you do not know that by deduction.
+
+Only one join fits there, and only when the last stance word before it is a pole with no `/b/` yet. The same works for every join vowel and every pole, and for a channel that takes grounds ([evidence clause](knowing.md#evidence-clause)).
+
 #### Standalone stance joins {#standalone-stance-joins}
 
 When English would say how to take a claim without naming any grounds (*at face value*, *no judgment*, *all things considered*), put a `/th/` join with no stance words before it. It works like standalone `zal` *nothing*: the list of stance words is empty, and the join says what that empty stance means. The claim itself is untouched. (cue: same vowels as every other join.)

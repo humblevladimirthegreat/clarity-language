@@ -80,6 +80,10 @@ A dependent runs to the end of the written sentence, so `dorl P xol Q` is *wheth
 - **No frame shared across speakers.** A frame is one speaker's evidence. A reply that ended it would cut off a story the first speaker is still telling, and a reply that inherited it would claim evidence the replier does not have.
 - **No carried frame for a time pole's offset.** A signed offset on a pole still needs a channel in its own clause, so each clause shows its warrant to a reader who starts there.
 
+### Deduction
+
+- **No negative DEDUCED channel** for *that doesn't follow*. A channel says how you know a claim; a "does not follow" channel would deny a link instead, its endings would need a second meaning, and it would cover deduction only. A stance join between the pole and `barl` (`thugum thoyem thul barl`) denies the link and also gives *not because P* for any clause grounds.
+
 ### Holders
 
 - **No free holder word or hosted `/b/` holder.** Fusing the holder onto a warrant makes a warrant-less attribution unwritable, even where no parser checks it.

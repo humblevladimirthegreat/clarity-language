@@ -754,6 +754,8 @@ To claim only that the conclusion follows, put a [pole](causation.md#only-becaus
 | *P and Q come to the same thing* | Q `thugum thedam barl` P | only the link, both ways |
 | *P rules out Q* | Q denied with `vul`, then `thugum thoyem barl` P | only that P and Q cannot both hold |
 
+To say a conclusion **does not** follow (*that doesn't follow*, *a non sequitur*), deny the channel and the pole together with a [stance join before `barl`](join-across-roles.md#stance-join-before-barl). You deny the link and claim nothing about P or Q: either may still be true.
+
 The ending grades how far you checked the steps ([evidence strength](#evidence-strength)): **`thugul`** when you could write out every step, **`thugum`** when you could name the premises and the rule, **`thugur`** when it only seems to follow.
 
 When the premises come first, open the conclusion with the linker **`xodul`** *it follows that* ([sentence linkers](dependents.md#sentence-linkers)). It reaches back to the one sentence before it, so join every premise into that sentence.

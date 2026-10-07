@@ -85,6 +85,7 @@ A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `x
 | [K in general](../joins.md#universals-domains-generics) | `zuam gagadul` | *cats in general* | I |
 | [The kind itself](../joins.md#kind-reference) | `zuan gagadul` | *the cat* (as a species) | I |
 | [No K](../joins.md#universals-domains-generics) | `zul gagadul` | *no cat* | I |
+| [Not every K](../joins.md#not-every) | `zual gagadul zul` | *not every cat* | I |
 | [Respectively](../joins.md#respectively) | `zazawan zalahen zal vahahal dagadul dodogal wazem dal` | *saw a cat and a dog, respectively* | I |
 | [Deny the whole list](../joins.md#exclusivity-and-denying-a-whole-list) | `vowogal varahal val vul` | *not both walk and run* | I |
 | [Deny each item](../joins.md#exclusivity-and-denying-a-whole-list) | `vowogal varahal vul` | *neither walk nor run* | B |
@@ -107,7 +108,7 @@ The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, 
 | **oe** | `voen` *equates* | `goen` / `hoen` *on a par with* | |
 | **ue** | `vuen` *deprioritizes* | `guen` / `huen` *deprioritizing* | `xuen` *and before that* |
 
-[Stance joins](../join-across-roles.md#stance-joins) (`/th/`) work on the stance words before them, not the claim: `thevem berehel thul` *not because of the rain*. [Alone](../join-across-roles.md#standalone-stance-joins), they say how to take the claim:
+[Stance joins](../join-across-roles.md#stance-joins) (`/th/`) work on the stance words before them, not the claim: `thevem berehel thul` *not because of the rain*. With clause grounds, the join goes [before `barl`](../join-across-roles.md#stance-join-before-barl): `thevem thul barl` *not because …*. [Alone](../join-across-roles.md#standalone-stance-joins), they say how to take the claim:
 
 | Agazan | English | Agazan | English |
 |--------|---------|--------|---------|

@@ -748,10 +748,23 @@ class AgazanSentenceParser extends CstParser {
           this.OPTION(() => {
             this.SUBRULE2(this.hJoinClose);
           });
+          // `thugum thoyem thul barl …`: a stance join may sit between the last open host and its `barl`,
+          // so it closes the stance words while the next sentence still fills the host (join-across-roles.md#stance-join-before-barl).
+          this.OPTION2({
+            GATE: () =>
+              isStanceJoin(this.LA(0)) &&
+              this.lastHostOpen &&
+              this.LA(1).tokenType === Odo &&
+              (this.LA(1).payload as LexWord | undefined)?.pos === "b",
+            DEF: () => this.CONSUME(Odo, { LABEL: "lateBound" }),
+          });
         },
       },
     ]);
   });
+
+  /** Whether the last `/h/` or `/th/` host parsed took no `/b/`, so a `barl` after its stance join is its own. */
+  private lastHostOpen = false;
 
   // Nothing is SHARED after a /h/ or /th/ join; `/w/` before the join word grades the list.
   public hJoinClose = this.RULE("hJoinClose", () => {
@@ -763,7 +776,13 @@ class AgazanSentenceParser extends CstParser {
       this.CONSUME(W);
     });
     const host = this.CONSUME(H);
+    this.ACTION(() => {
+      this.lastHostOpen = true;
+    });
     this.OPTION(() => {
+      this.ACTION(() => {
+        this.lastHostOpen = false;
+      });
       this.OR([
         {
           ALT: () => {
@@ -1130,7 +1149,10 @@ function finalizeClause(units: Unit[]): Clause {
   const orodoIdx = resolved.findIndex((unit) => standInIn(unit));
   if (orodoIdx < 0) return { units: resolved };
   splitAfterBarStandIn(resolved, orodoIdx);
-  return splitAtStandIn(resolved, orodoIdx, standInIn(resolved[orodoIdx]!)!);
+  const host = resolved[orodoIdx]!;
+  // The stance join between a host and its `barl` stays in the main sentence.
+  const splitAt = host.kind === "h" && host.unit.hosted?.afterJoin ? orodoIdx + 1 : orodoIdx;
+  return splitAtStandIn(resolved, splitAt, standInIn(host)!);
 }
 
 function childNodes(parent: CstNode, key: string): CstNode[] {
@@ -1446,6 +1468,9 @@ function flattenHUnits(cst: CstNode): Unit[] {
     const hUnits = childNodes(part, "hUnitRule").map(buildHUnit);
     const close = partJoinClose(part, "hJoinClose");
     const { join } = joinFromClose(close);
+    const lateBound = childToken(part, "lateBound");
+    const last = hUnits.at(-1);
+    if (lateBound && last) last.hosted = { bound: lexWordFromToken(lateBound), afterJoin: true };
     for (const unit of hUnits) units.push({ kind: "h", unit });
     // Keep the fence (`/h/` or stance `thul` / `thol` / …) so it is not silently dropped.
     if (join) units.push({ kind: "h", unit: { word: join, modifiers: [] } });

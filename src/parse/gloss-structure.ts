@@ -68,6 +68,8 @@ function gPackage(cur: Cursor, pack: GPackage): GlossNode | undefined {
 
 function hUnit(cur: Cursor, unit: HUnit): GlossNode | undefined {
   const host = group([...unit.modifiers.map((m) => cur.take(m)), cur.take(unit.word)]);
+  // `thoyem thul barl`: the join sits between, so `barl` stays flat after it, as the dependent's stand-in.
+  if (unit.hosted?.afterJoin) return host;
   const bound = boundSlot(cur, unit.hosted?.bound, unit.hosted?.boundJoin);
   const adjs = (unit.hosted?.adjs ?? []).map((adj) => gPackage(cur, adj));
   if (!unit.hosted?.amount && !unit.hosted?.grounds && adjs.length === 0) return group([host, bound]);

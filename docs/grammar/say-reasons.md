@@ -19,9 +19,11 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 | *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`barl`**: **`thunem barl`** / **`thobam barl`** ([evidence clause](knowing.md#evidence-clause)) |
 | *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xodum`** ([continue](dependents.md#continue-x)) |
 | *it follows that* / *necessarily, then* (a deduction from the last sentence) | **`xodul`** ([sentence linkers](dependents.md#sentence-linkers)) |
+| *that doesn't follow* / *non sequitur* | **`thugum thoyem thul barl`** ([arguments](#arguments)) |
 | *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](pronouns.md#how-english-approximates-r)) |
 | *the fact that* / *the idea that* / *it is a fact that* | a predicate with a `/z/` stand-in: `genevem zarl zazawan vowogal.`; or two sentences, then `zarth` ([stand-in vowels](dependents.md#stand-in)): `zazawan vowogal. zarth genevem.` A clause never modifies a noun |
 | *due to* / *owing to* / *because of* (NP) | **`thevem`** + `/b/` **noun** (`thevem berehel`) |
+| *not because* (clause) | **`thevem thul barl`** ([stance join before `barl`](join-across-roles.md#stance-join-before-barl)) |
 | *however* / *meanwhile* (discourse) | **`xezom`** / **`xagagam`** |
 | *regardless of* (NP) | same **`hezom`** + `/b/` **noun** as *despite* |
 | *anyway* / *anyhow* (back to the main line) | the resume hook **`or …`** ([point back](hooks.md#hook-resume)) |
@@ -389,6 +391,7 @@ An argument has three parts, and each has its own slot. The **link** between pre
 | *P implies Q* / *Q follows from P* / *P entails Q* / *a valid argument* | Q **`thugum thoyem barl`** P | only the link |
 | *P is equivalent to Q* / *P just means Q* | Q **`thugum thedam barl`** P | only the link, both ways |
 | *P contradicts Q* / *P rules out Q* / *P and Q are inconsistent* | Q **`vul thugum thoyem barl`** P | only that they cannot both hold |
+| *Q doesn't follow from P* / *that's a non sequitur* / *an invalid argument* | Q **`thugum thoyem thul barl`** P | only that the link fails |
 | several premises (*P and R, so Q*) | one [clause join](joins.md#clause-joins) after **`barl`**: P **`xam`** R | as above |
 | *it follows that* (premises in the sentence before) | **`xodul`** Q | Q, on the frame the premises carried |
 | *for the sake of argument* / *suppose P* | P with **`thavor`**, then **`xodul`** for each step | nothing: the steps stay supposed |

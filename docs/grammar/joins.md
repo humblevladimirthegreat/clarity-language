@@ -772,6 +772,27 @@ The same shape with no verb says there is **none** of that kind (*there is no �
 >
 > "There is no dog."
 
+#### Not every (`zual` … `zul`) {#not-every}
+
+To deny *every cat* as a whole (*not every cat*, *not all cats*), close the **`zual`** fence with **`zul`**. The `ua` fence is the one item before the **`u`** join, so the join denies that item, as **`zul`** denies any single item ([fence nesting](#fence-nesting)). The claim is that the cats do not all sleep: some cat may still sleep.
+
+> `zual gagadul zul vezebal.`
+>
+> [[z-everything | g-cat] | z-not] | v-sleep
+>
+> "Not every cat sleeps."
+
+Where the denial goes changes the claim:
+
+| Agazan | What it says | English |
+|--------|--------------|---------|
+| `zul gagadul vezebal.` | none of the cats sleeps | *No cat sleeps.* |
+| `zual gagadul vezebal vul.` | each cat, one by one, does not sleep | *Every cat stays awake* (= no cat sleeps) |
+| `zual gagadul zul vezebal.` | the cats do not all sleep | *Not every cat sleeps.* |
+| `zagadul vezebal vul.` | a cat does not sleep | *Some cat doesn't sleep.* |
+
+The last two come to the same thing: if not every cat sleeps, some cat stays awake. *Not every* denies the general claim, and the last row names one case of the denial.
+
 With **`zual`** / **`zuam`**, a further `/ɡ/` after the kind is a [property](predication.md#classification-property) of every member: *every K is ADJ*. The listener can already pick out *every fire*, so the clause does not say *there is …*.
 
 > `zual gavahel gahadul.`
@@ -853,6 +874,7 @@ To choose, ask whether one member could have the property. If none could, the cl
 | `zuam gagadul` | the members, as a rule | *cats in general* |
 | `zuan gagadul` | the kind itself, one individual | *the cat* (as a species) |
 | `zual gagadul` + `/v/`…**-x** | all the members in one shared act | *all the cats together* |
+| `zual gagadul zul` | the members, denied as a whole | *not every cat* |
 
 A [cause or condition](causation.md) on a `zuan` clause is about the kind, not each member: why the kind is the way it is.
 

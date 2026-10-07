@@ -245,6 +245,8 @@ export type Hosted = {
   adjs?: GPackage[];
   /** `barl` after an evidential's offset: the next sentence is the grounds (knowing.md#evidence-clause). */
   grounds?: LexWord;
+  /** A stance join sits between the host and its `barl` (`thoyem thul barl`), closing the stance words before it. */
+  afterJoin?: true;
 };
 
 export type GPackage = {

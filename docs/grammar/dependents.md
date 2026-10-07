@@ -51,7 +51,7 @@ For English *whether*, change the vowel to **`o`**: **`dorl`**. The inner senten
 
 ### Because, if, although (poles) {#poles}
 
-Words like *because*, *if*, and *although* attach a dependent clause as a reason, a condition, a contrast, or a time. Agazan uses a pair for this: a **pole** word that names the link, then the stand-in **`barl`** right after it. The pole is a relation word, so **`barl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`barl`** at the very end.
+Words like *because*, *if*, and *although* attach a dependent clause as a reason, a condition, a contrast, or a time. Agazan uses a pair for this: a **pole** word that names the link, then the stand-in **`barl`** right after it. The pole is a relation word, so **`barl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`barl`** at the very end. Only a [stance join](join-across-roles.md#stance-join-before-barl) may come between them.
 
 The pole's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* describe the event itself, so they are adverbs on `/h/`.
 
