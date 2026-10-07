@@ -229,6 +229,7 @@ English names a person by what they usually do (*a singer*, *a manager*). Agazan
 | `zaxahazathem` | *neighbor* (add `om bamun` for *near me*) | `ahazal` *house* |
 | `zaxabazethel` | *officer* (police) | `abazel` *police* |
 | `zaxageduthem` | *official* / *minister* | `agedum` *institution* |
+| `zaxagulageduthel` | *politician* | `agulagedul` *government* |
 | `zaxuhuthel` | *secretary* (keeps the ledger) | `uhul` *ledger* |
 | `zaxebudathem` | *artist* | `ebudam` *artistry* |
 | `zaxegabem` | *owner* | `egabem` *ownership* |
@@ -264,6 +265,8 @@ English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family 
 
 | English | Agazan |
 |---------|--------|
+| *mother* / *mom* | `zobel geveval grebuwol bazawan` |
+| *father* / *dad* | `zobel gemehel grebuwol bazawan` |
 | *brother* | `zobel gemehel grebazol bazawan` |
 | *sister* | `zobel geveval grebazol bazawan` |
 | *aunt* (a sister of a parent) | `zobel geveval grebazol bobel grebuwol bazawan` |
@@ -473,6 +476,9 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *afternoon* | `zazazaladazol` | the late part of the day |
 | *popular* | `galavalehobal` | loved by the many |
 | *user* | `zaxahadal` | doer with the hand |
+| *sentence* (a punishment) / *punishment* / *penalty* | `zabazemenehel` | harm from authority |
+| *punish* | `zazawan dabazemenehel vebel balahen.` | gives Alahen a penalty ([give](#give-get)) |
+| *set* (a group of things) | `zubugalx` | books as a group ([group words](say-amounts.md#group-words)) |
 | *abortion* | `zebegologovel` | a pregnancy ended |
 | *available* | `goxebexal` | can be the recipient of a gift |
 | *independent* | `golum gevem balahen gul` | does not depend on Alahen |

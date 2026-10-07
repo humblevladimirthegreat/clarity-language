@@ -279,6 +279,7 @@ English *biased* says a view may be bent by what the holder wants from it. Agaza
 |---------|--------|---------|
 | *I may be biased* | `zamun thovum vevegal thegathom.` | I may think this for a stake of my own |
 | *biased* (someone else) | `zazawan vevegal thegathom.` | Azawan thinks it for a stake |
+| *bias* (the noun, *Azawan's bias*) | `zazawan vevegal thegathom.` | the view held for a stake; [point back](dependents.md#which-noun) to it to name it |
 | *I'd like to believe* / *wishful thinking* | `zamun thohum vevegal darl zalahen vowogal.` | I want to think that Alahen walks |
 | *overconfident* | `zamun thunem zel gegehom.` | surer than the clues warrant |
 | *underconfident* | `zazawan thunem zuel gegehom.` | less sure than the clues warrant |

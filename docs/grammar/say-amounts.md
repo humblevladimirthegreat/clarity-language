@@ -342,6 +342,7 @@ English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an 
 | *shallow* | `thobam zuel gebegem` |
 | *thick* | `gabogul gul` (not flat) |
 | *remarkable* / *special* (unusual) / *outstanding* | `thobam zel` + the quality that stands out: `thobam zel gelavam` |
+| *picky* / *choosy* / *particular* (fussy) | `thobam zel gabehum` (more selective than usual) |
 | *major* / *significant* (matters more than usual) | `thobam zel gamethal` ([important](say-reasons.md#sake-words)) |
 
 > `zubugal thobam zel gadahum.`
