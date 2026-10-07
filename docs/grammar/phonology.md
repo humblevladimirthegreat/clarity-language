@@ -35,27 +35,27 @@ The four vowels form two **opposite** pairs. Within a pair, the tongue moves alo
 | `u` ↔ `a` | high ↔ low, centered | rounded ↔ relaxed |
 | `o` ↔ `e` | back ↔ front, same height | rounded ↔ spread |
 
-To find `u`, start from `a`: keep the tongue centered, close the jaw, and round the lips. Moving between the two vowels of a pair is a small step.
+To find `u`, start from `a`: keep the tongue centered, close the jaw, and round the lips. To find `o`, start from `e`: keep the jaw where it is, pull the tongue back, and round the lips. Moving between the two vowels of a pair is a small step.
 
 ### Consonants
 
 A consonant starts a syllable. Many consonants have a **voiced** sound (vocal cords buzzing, as in *zoo*) and an unvoiced one (as in *sea*), and Agazan treats the two as the same letter. Prefer the voiced sound so you can hold a sung note; the unvoiced one is fine for style.
-<!-- Consonant order: lips (b m w v), tongue tip (d n z l r), y (palatal, between tongue tip and back), back (g h, then th as the "other h"), then the English false friend (x). Canonical alphabet / letter-name recitation follows this table (vowels u a o e first, the same order as vowel stacks). -->
+<!-- Consonant order is alphabet order: the ten digit letters in digit order (w d r m v g l h n z = 1–9, 0), then b y th x. The alphabet / letter-name recitation ends with the vowels u a o e, the same order as vowel stacks. -->
 
 | Agazan | IPA | Cue | Unvoiced variant |
 |--------|-----|-----|------------------|
-| `b` | /b/ <IpaPlay file="Voiced_bilabial_plosive.ogg" label="b" /> | *be* | /p/ <IpaPlay file="Voiceless_bilabial_plosive.ogg" label="unvoiced b" />, *pay* |
-| `m` | /m/ <IpaPlay file="Bilabial_nasal.ogg" label="m" /> | *me* | |
 | `w` | /w/ <IpaPlay file="Voiced_labio-velar_approximant.ogg" label="w" /> | *we* | |
-| `v` | /v/ <IpaPlay file="Voiced_labiodental_fricative.ogg" label="v" /> | *vie* | /f/ <IpaPlay file="Voiceless_labiodental_fricative.ogg" label="unvoiced v" />, *fee* |
 | `d` | /d/ <IpaPlay file="Voiced_alveolar_plosive.ogg" label="d" /> | *do* | /t/ <IpaPlay file="Voiceless_alveolar_plosive.ogg" label="unvoiced d" />, *toe* |
+| `r` | /ɹ/ <IpaPlay file="Alveolar_approximant.ogg" label="r" /> | *red* | |
+| `m` | /m/ <IpaPlay file="Bilabial_nasal.ogg" label="m" /> | *me* | |
+| `v` | /v/ <IpaPlay file="Voiced_labiodental_fricative.ogg" label="v" /> | *vie* | /f/ <IpaPlay file="Voiceless_labiodental_fricative.ogg" label="unvoiced v" />, *fee* |
+| `g` | /ɡ/ <IpaPlay file="Voiced_velar_plosive.ogg" label="g" /> | *go* | /k/ <IpaPlay file="Voiceless_velar_plosive.ogg" label="unvoiced g" />, *kite* |
+| `l` | /l/ <IpaPlay file="Alveolar_lateral_approximant.ogg" label="l" /> | *lie* | |
+| `h` | /ɦ/ <IpaPlay file="Voiced_glottal_fricative.ogg" label="h" /> | *ahead* | /h/ <IpaPlay file="Voiceless_glottal_fricative.ogg" label="unvoiced h" />, *hat* |
 | `n` | /n/ <IpaPlay file="Alveolar_nasal.ogg" label="n" /> | *no* | |
 | `z` | /z/ <IpaPlay file="Voiced_alveolar_sibilant.ogg" label="z" /> | *zoo* | /s/ <IpaPlay file="Voiceless_alveolar_sibilant.ogg" label="unvoiced z" />, *sea* |
-| `l` | /l/ <IpaPlay file="Alveolar_lateral_approximant.ogg" label="l" /> | *lie* | |
-| `r` | /ɹ/ <IpaPlay file="Alveolar_approximant.ogg" label="r" /> | *red* | |
+| `b` | /b/ <IpaPlay file="Voiced_bilabial_plosive.ogg" label="b" /> | *be* | /p/ <IpaPlay file="Voiceless_bilabial_plosive.ogg" label="unvoiced b" />, *pay* |
 | `y` | /j/ <IpaPlay file="Palatal_approximant.ogg" label="y" /> | *yes* | |
-| `g` | /ɡ/ <IpaPlay file="Voiced_velar_plosive.ogg" label="g" /> | *go* | /k/ <IpaPlay file="Voiceless_velar_plosive.ogg" label="unvoiced g" />, *kite* |
-| `h` | /ɦ/ <IpaPlay file="Voiced_glottal_fricative.ogg" label="h" /> | *ahead* | /h/ <IpaPlay file="Voiceless_glottal_fricative.ogg" label="unvoiced h" />, *hat* |
 | `th` | /ð/ <IpaPlay file="Voiced_dental_fricative.ogg" label="th" /> | *this* | /θ/ <IpaPlay file="Voiceless_dental_fricative.ogg" label="unvoiced th" />, *thin* |
 | `x` | /ʒ/ <IpaPlay file="Voiced_palato-alveolar_sibilant.ogg" label="x" /> | *vision* (the *si*) | /ʃ/ <IpaPlay file="Voiceless_palato-alveolar_sibilant.ogg" label="unvoiced x" />, *shy* |
 
@@ -124,27 +124,29 @@ When English says *how many* or *which place*, Agazan uses a [number word](numbe
 
 When you **spell a word aloud** or **name a letter**, say the Agazan name for it. Pause between names so two names do not run into one syllable.
 
+The table is in **alphabetical order**. The ten letters that begin a [digit syllable](#digit-letters) come first, in digit order (1 to 9, then 0), so `w` is the first letter and `z` the tenth. The other consonants follow, and the vowels come last.
+
 <!-- cheat-sheet: sounds-spelling -->
 | Agazan | Name | Cue |
 |--------|------|-----|
+| `w` | `we` | *wet* |
+| `d` | `da` | *Dada* |
+| `r` | `ro` | *row* |
+| `m` | `me` | *met* |
+| `v` | `vu` | *voodoo* |
+| `g` | `ga` | *gaga* |
+| `l` | `lo` | *low* |
+| `h` | `hu` | *who* |
+| `n` | `nu` | *noon* |
+| `z` | `ze` | *zen* |
+| `b` | `be` | *beg* |
+| `y` | `ya` | *yacht* |
+| `th` | `tho` | *though* (no glide) |
+| `x` | `xu` | *shoe* |
 | `u` | `u` | *you* (without the *y*) |
 | `a` | `a` | *spa* |
 | `o` | `o` | *Cambodia* (no glide) |
 | `e` | `e` | *bet* |
-| `b` | `be` | *beg* |
-| `m` | `me` | *met* |
-| `w` | `we` | *wet* |
-| `v` | `vu` | *voodoo* |
-| `d` | `da` | *Dada* |
-| `n` | `nu` | *noon* |
-| `z` | `ze` | *zen* |
-| `l` | `lo` | *low* |
-| `r` | `ro` | *row* |
-| `y` | `ya` | *yacht* |
-| `g` | `ga` | *gaga* |
-| `h` | `hu` | *who* |
-| `th` | `tha` | *that* |
-| `x` | `xe` | *shed* |
 
 ```text
 `agadu` → `a` `ga` `a` `da` `a`
@@ -152,6 +154,7 @@ When you **spell a word aloud** or **name a letter**, say the Agazan name for it
 
 In a clause, a letter you talk about (such as `z`) is a [mention](spans.md#mention); read it aloud by its letter name (`ze`).
 
+<a id="digit-letters"></a>
 Ten letters also begin a [digit syllable](numbers.md#counts). The letter name uses the [opposite vowel](#opposite-vowels) (`a`↔`u`, `o`↔`e`), so naming the letter is not the same as counting.
 
 <!-- cheat-sheet: sounds-spelling -->

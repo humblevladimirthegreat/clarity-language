@@ -28,22 +28,22 @@ The name is what you say when you [spell a word aloud](../phonology.md#letter-na
 
 | Letter | Say | Like | Unvoiced | Name | Stage |
 |--------|-----|------|----------|------|-------|
-| [`b`](../phonology.md#consonants) | /b/ | *be* | /p/ | `be` | B |
-| `m` | /m/ | *me* | | `me` | B |
-| `w` | /w/ | *we* | | `we` | B |
-| `v` | /v/ | *vie* | /f/ | `vu` | B |
+| [`w`](../phonology.md#consonants) | /w/ | *we* | | `we` | B |
 | `d` | /d/ | *do* | /t/ | `da` | B |
+| `r` | /ɹ/ | *red* | | `ro` | B |
+| `m` | /m/ | *me* | | `me` | B |
+| `v` | /v/ | *vie* | /f/ | `vu` | B |
+| `g` | /ɡ/ | *go* | /k/ | `ga` | B |
+| `l` | /l/ | *lie* | | `lo` | B |
+| `h` | /ɦ/ | *ahead* | /h/ | `hu` | B |
 | `n` | /n/ | *no* | | `nu` | B |
 | `z` | /z/ | *zoo* | /s/ | `ze` | B |
-| `l` | /l/ | *lie* | | `lo` | B |
-| `r` | /ɹ/ | *red* | | `ro` | B |
+| `b` | /b/ | *be* | /p/ | `be` | B |
 | `y` | /j/ | *yes* | | `ya` | B |
-| `g` | /ɡ/ | *go* | /k/ | `ga` | B |
-| `h` | /ɦ/ | *ahead* | /h/ | `hu` | B |
-| `th` | /ð/ | *this* | /θ/ | `tha` | B |
-| `x` | /ʒ/ | *vision* (not English *x*) | /ʃ/ | `xe` | B |
+| `th` | /ð/ | *this* | /θ/ | `tho` | B |
+| `x` | /ʒ/ | *vision* (not English *x*) | /ʃ/ | `xu` | B |
 
-The vowels name themselves (`u`, `a`, `o`, `e`). Pause between names: `agadu` is `a` `ga` `a` `da` `a`. A letter you talk about in a clause is a [mention](../spans.md#mention), read by its name.
+Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), then the other consonants. The vowels come last and name themselves (`u`, `a`, `o`, `e`). Pause between names: `agadu` is `a` `ga` `a` `da` `a`. A letter you talk about in a clause is a [mention](../spans.md#mention), read by its name.
 
 ## Word shape {#word-shape}
 
