@@ -48,6 +48,10 @@ Never a seed:
 - **Concrete label:** the English word people use for the thing, not the Unicode name (*cupid*, not *heart with arrow*; *villain*, not *angry face with horns*). Flag rows follow [flag rows](#flag-rows). `convert-word` needs a CMU pronunciation for the label. Add a missing one to `CMU_OVERRIDES` in [`src/cmu-dict.ts`](../../src/cmu-dict.ts) rather than bending the label.
 - **Abstract and aliases:** never repeat another row's concrete, abstract or `english_aliases` entry. When a new row takes over a sense, move the alias off the old row (🌍 *earth* took *world* and *earth* from 🌐).
 
+### No English puns
+
+A link from seed to abstract sense, from a compound's left root to its meaning, or in a mnemonic must not depend on how an English word sounds or is spelled: no *thyme* from *time*, no *sage* from *wisdom*. Learners who don't speak English get nothing from the pun. Use a link through the thing itself, such as its use, look, or what it goes with (*dill* from *pickle*). A fixed English idiom whose image works in other languages is fine (*a grain of salt*).
+
 ### Row order
 
 Rows follow Unicode emoji order (the `emoji-test.txt` / CLDR order), with 👓 pinned first. Non-emoji seeds come after the flags, in code point order. Add a new row at its place, not at the bottom.

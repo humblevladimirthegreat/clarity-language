@@ -25,9 +25,9 @@ const draft = (over: Partial<DraftRow>): DraftRow => ({
   english: "test-kind",
   left: "🍕",
   join: "l",
-  head: "🌿",
+  head: "🧲",
   abstract: "",
-  mnemonic: "pizza specifying herb is a test",
+  mnemonic: "pizza specifying magnet is a test",
   ...over,
 });
 
@@ -80,7 +80,7 @@ describe("draftCompounds", () => {
   it("spells the stem from the published roots", () => {
     const [result] = draftCompounds([draft({})], lexicon);
     assert.deepEqual(result!.errors, []);
-    assert.equal(result!.compound!.stem, `${bySeed("🍕").root}l${bySeed("🌿").root}`);
+    assert.equal(result!.compound!.stem, `${bySeed("🍕").root}l${bySeed("🧲").root}`);
   });
 
   it("rejects a gloss that is already a compound sense", () => {

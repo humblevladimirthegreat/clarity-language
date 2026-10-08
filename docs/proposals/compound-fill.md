@@ -31,7 +31,7 @@ Add a row only when **all** of these hold:
 2. **It is a fixed kind** that English (or most languages) names with one word or a fixed phrase. Pairings made up on the spot stay live `x` compounds.
 3. **No root already has the sense.** Check `concrete`, `abstract` and `english_aliases` (`npm run lexicon-search`, `node scripts/find-english.mjs --kind root`). Many specific kinds are seeds already: *garlic*, *rose*, *owl*, *sneaker*. The validator rejects a compound gloss that is already a published sense.
 4. **The head is the most specific root that fits.** *Sparrow* goes on 🐦 *bird*, not 𓄛 *animal*. The generic heads (𓄛 *animal*, 🫙 *jar*, 🧺 *basket*) only head a class name that no narrower root covers (*pet*, *livestock*, *luggage*). 𓉐 *room* is an ordinary head: no root names a narrower kind of room, so *attic* and *cellar* go on it directly.
-5. **The left root narrows the head in a way a learner can guess,** or the mnemonic makes the link easy to remember.
+5. **The left root narrows the head in a way a learner can guess,** or the mnemonic makes the link easy to remember. The link never rests on an English pun, see [no English puns](../meta/lexicon.md#no-english-puns).
 
 Prefer frequent words. A category can stop at the first 20–40 members by frequency. A complete taxonomy is not the goal.
 
@@ -41,7 +41,7 @@ Each pass takes one domain and its head roots. Rows are named here by seed and E
 
 | Domain | Head roots | Sample fills | Already in |
 |--------|-----------|--------------|------------|
-| Seasoning | 🌿 *herb*, 🍛 *spice*, 🌶️ *pepper*, 🧂 *salt* | basil, mint, parsley, cinnamon, paprika, chili, black pepper | |
+| Seasoning | 🌿 *herb*, 🍛 *spice*, 🌶️ *pepper*, 🧂 *salt* | basil, mint, parsley, cinnamon, paprika, chili, black pepper | done: 12 herbs, 12 spices, sea salt, curry; *chili* belongs as an alias on 🌶️ |
 | Plants | 🌳 *tree*, 💮 *flower*, 🍃 *leaf*, 🌾 *grain*, 🥬 *greens*, 🍈 *fruit*, 🫐 *berry*, 🌰 *nut*, 🍄 *mushroom* | willow, birch, wheat, oat, barley, lettuce, cabbage, raspberry, walnut, acorn | oak, blueberry |
 | Animals | 🐦 *bird*, 🐟 *fish*, 🐛 *bug*, 🐍 *snake*, 🐚 *shell*, 🐕 *dog*, 🐈 *cat*, 🐄 *cow*, 𓄛 *animal* (class names only) | sparrow, crow, trout, salmon, moth, wasp, puppy, kitten, calf, pet, livestock | |
 | Dishes | 🍞 *bread*, 🧀 *cheese*, 🍖 *meat*, 🍲 *soup*, 🥗 *salad*, 🍪 *cookie*, 🍜 *noodles*, 🍚 *rice*, 🥚 *egg*, 🍬 *candy* | toast, bun, pork, beef, broth, porridge, omelet, biscuit | cake, cream, sauce |
