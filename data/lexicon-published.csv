@@ -544,7 +544,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🌋,volcano,avoge,eruption,a volcano bursts outward; eruption is bursting emotion,,burst,
 🏕️,camp,agabo,,,,,
 🏖️,beach,abeha,weekend,beach marks the off-work stretch; weekend is the leisure days,,coast; shore; holiday,
-🏜️,desert,edeze,barren,a desert has little life; barren is empty of results,,dry; sand; dust,
+🏜️,desert,edeze,barren,a desert has little life; barren is empty of results,,dry; dust,
 🏝️,island,alada,isolation,an island stands apart; isolation is standing apart,,isolate,
 🏞️,park,abaho,refuge,a park is a green refuge; refuge is safe respite,,,
 🏟️,stadium,ezade,contest,a stadium hosts competition; contest is the unobservable stakes,,tournament,
@@ -640,7 +640,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🛸,ufo,uyuvo,,,,,
 🛎️,bellhop,eboha,,,,,
 🧳,luggage,alage,encumbrance,luggage is what you carry; encumbrance is the unobservable drag,v:carry,take,dependents.md#intermediate-practice
-⌛,elapsed,enu,recency,hourglass just emptied; recency is nearness in time,,newly,
+⌛,sand,ano,recency,the sand has just run through; recency is nearness in time,,newly,
 ⏳,hourglass,agaze,hour,hourglass sand marks civil duration; hour is the everyday duration unit,,,numbers-applied.md#intermediate-practice
 ⌚,watch,awaha,punctuality,watch tracks the exact moment; punctuality is being on time,,observe,
 ⏰,alarm-clock,elaga,weekday,alarm clock starts each morning of the week; a weekday is a day of the week,,,
@@ -958,7 +958,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🪞,mirror,umu,reflection,a mirror throws your own image back at you,,reflect,
 🪟,window,ewedo,transparency,you can see through a window's clear glass,,clear,causation.md#beginner-practice
 🛏️,bed,ebeda,,,,,word-endings.md#intermediate-practice
-🛋️,couch,ageha,leisure,lounging on the couch; leisure is free time,,,
+🛋️,furniture,evuhe,leisure,furniture is where you sit back; leisure is free time,,,
 🪑,chair,ehahe,position,chair is where you take a seat; position is your assigned place,v:sit,place; situation; lay; status; location; locate; pose; situate; put; occupy,speech-moves.md#beginner-practice
 🚽,toilet,ododa,,,,,
 🪠,plunger,obahe,unblock,plunger clears a clogged pipe; unblock is clearing obstruction,,,

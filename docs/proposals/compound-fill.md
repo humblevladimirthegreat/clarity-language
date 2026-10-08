@@ -122,12 +122,13 @@ If a category needs a head that no root covers, stop and add the head first. Ret
 
 Found in the label audit after wave 1. Fill each before the wave that needs it, as in [when a head is missing](#when-a-head-is-missing).
 
-Resolved in the audit: 🥣 is now *bowl* (cereal is *grain* **-l** *bowl*), 🥘 is *pan*, 🗡️ is *weapon* (dagger is *knife* **-l** *weapon*), and *jewel* and *gem* are aliases on 💎. *Smoke* (*fire* **-l** *fog*), *stairs* (*house* **-l** *ladder*), *fork* (*trident* **-l** *cutlery*) and *rope* (*knot* **-l** *thread*) are compounds, since they head nothing.
+Resolved in the audit: 🛋️ is now *furniture* (couch is *width* **-m** *chair*), ⌛ is now *sand*, 🧱 is now *wall* (the *because* cue reads as what the result stands on), 🥣 is now *bowl* (cereal is *grain* **-l** *bowl*), 🥘 is *pan*, 🗡️ is *weapon* (dagger is *knife* **-l** *weapon*), and *jewel* and *gem* are aliases on 💎. *Smoke* (*fire* **-l** *fog*), *stairs* (*house* **-l** *ladder*), *fork* (*trident* **-l** *cutlery*) and *rope* (*knot* **-l** *thread*) are compounds, since they head nothing.
 
 Still open:
 
-- **No root and no free seed:** *furniture* (class name; 🛋️ *couch* and 🪑 *chair* are too specific), *whistle*. Each needs a non-emoji seed or stays a compound.
-- **Only an alias on a narrower row:** *sand* and *dust* on 🏜️ *desert*; *wall* on 🧱 *brick*. 🧱 stays *brick*: the *because* overlay teaches through the brick ("what the result sits on", "one brick of several"). A compound on these heads reads off the narrower label.
+- **No root and no free seed:** *whistle*.
+- **Only an alias on a narrower row:** *dust* on 🏜️ *desert*.
+- **Now a compound gap:** 🧱 is *wall*, so *brick* needs a compound in the Materials pass.
 - **Generic words that are compounds, so they cannot head:** *cup* (*tea* **-l** *bowl*), *roof*, *fence*, *pipe*. Fine until a wave needs one as a head.
 - **Gloss clash:** *orange* the fruit (🍊 *tangerine*) against 🟠 *orange* the colour.
 

@@ -331,9 +331,9 @@ describe("classify", () => {
   });
 
   it("because pole fault scale on /th/", () => {
-    assert.equal(expectOverlay("thevel").overlay?.gloss, "because.fault");
-    assert.equal(expectOverlay("thevem").overlay?.gloss, "because");
-    assert.equal(expectOverlay("thever").overlay?.gloss, "because.share");
+    assert.equal(expectOverlay("thavel").overlay?.gloss, "because.fault");
+    assert.equal(expectOverlay("thavem").overlay?.gloss, "because");
+    assert.equal(expectOverlay("thaver").overlay?.gloss, "because.share");
   });
 });
 

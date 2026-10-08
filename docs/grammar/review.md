@@ -391,7 +391,7 @@ z-Ahaben | [d-hammer | [g-material | b-wood]] | v-see
 **5.** *Alahen cries because there is wind.*
 
 ::: details Show answer
-`zalahen vagahul thevem bewedul.`
+`zalahen vagahul thavem bewedul.`
 
 z-Alahen | v-cry | [th-because | b-wind]
 

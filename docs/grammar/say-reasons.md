@@ -22,8 +22,8 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 | *that doesn't follow* / *non sequitur* | **`thugum thoyem thul barl`** ([arguments](#arguments)) |
 | *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](pronouns.md#how-english-approximates-r)) |
 | *the fact that* / *the idea that* / *it is a fact that* | a predicate with a `/z/` stand-in: `genevem zarl zazawan vowogal.`; or two sentences, then `zarth` ([stand-in vowels](dependents.md#stand-in)): `zazawan vowogal. zarth genevem.` A clause never modifies a noun |
-| *due to* / *owing to* / *because of* (NP) | **`thevem`** + `/b/` **noun** (`thevem berehel`) |
-| *not because* (clause) | **`thevem thul barl`** ([stance join before `barl`](join-across-roles.md#stance-join-before-barl)) |
+| *due to* / *owing to* / *because of* (NP) | **`thavem`** + `/b/` **noun** (`thavem berehel`) |
+| *not because* (clause) | **`thavem thul barl`** ([stance join before `barl`](join-across-roles.md#stance-join-before-barl)) |
 | *however* / *meanwhile* (discourse) | **`xezom`** / **`xagagam`** |
 | *regardless of* (NP) | same **`hezom`** + `/b/` **noun** as *despite* |
 | *anyway* / *anyhow* (back to the main line) | the resume hook **`or …`** ([point back](hooks.md#hook-resume)) |
@@ -95,19 +95,19 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 
 | English | Agazan | Reading |
 |---------|--------|---------|
-| *the reason it happened* | `thevem` + `/b/` | the because pole |
+| *the reason it happened* | `thavem` + `/b/` | the because pole |
 | *my reason* / *justify (give your reasons)* | `…thom` on a sake (`thanathom`) | motive: doing it for that sake |
 | *justified* (the act is warranted) | `…them` on a sake (`thanathem`) | prescription: the act ought to serve that sake |
 | *the faculty of reason* | `zebeham` | *intellect* |
 | *purpose* (the outcome aimed at) | `hogom` + `/b/` | *so that* |
 | *purpose* (what my noun is for) | `g…tho…` after the noun (`ganathom`) | the noun's purpose is this sake |
 | *What is the purpose?* | `hogom bar` | *What for?* |
-| *guilty* / *to blame* | `thevel` + `/b/` | the because pole, the reason broke a norm |
-| *guilty* (the feeling) | a feeling word + **`thevel barl`** + your own act | the feeling, caused by your act, which broke a norm |
-| *hurt* / *upset* (no fault named) | a feeling word + **`thevem barl`** + what happened | the feeling and its cause, with no one at fault |
+| *guilty* / *to blame* | `thavel` + `/b/` | the because pole, the reason broke a norm |
+| *guilty* (the feeling) | a feeling word + **`thavel barl`** + your own act | the feeling, caused by your act, which broke a norm |
+| *hurt* / *upset* (no fault named) | a feeling word + **`thavem barl`** + what happened | the feeling and its cause, with no one at fault |
 | *ashamed* / *embarrassed* | `gabohem` | the embarrassment root as a property |
 
-> `zazawan vedabal thevem berehel.`
+> `zazawan vedabal thavem berehel.`
 >
 > z-Azawan | v-departure | [th-because | b-rain]
 >
@@ -125,13 +125,13 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 >
 > "Azawan walks so that Alahen sits." (the purpose of the walk)
 
-> `zazawan vedabal thevel barl zalahen vezebel.`
+> `zazawan vedabal thavel barl zalahen vezebel.`
 >
 > z-Azawan | v-departure | [th-because.fault | b-that-clause] | z-Alahen | v-tell
 >
 > "Alahen is to blame for Azawan's leaving." (the telling broke a norm)
 
-> `thanathumam thevel barl zSELFn vezebel.`
+> `thanathumam thavel barl zSELFn vezebel.`
 >
 > th-relatedness-unmet-modifiable-INTERNAL-FLOWING | [th-because.fault | b-that-clause] | z-SELF | v-tell
 >
@@ -139,7 +139,7 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 
 What makes the feeling guilt is the fault pole on **your own** act. The feeling word alone says only that a tie is under strain, the same word as *hurt*. With the because pole and someone else's act, the same feeling is *hurt*:
 
-> `thanathumar thevem barl zalahen vezebel.`
+> `thanathumar thavem barl zalahen vezebel.`
 >
 > th-relatedness-unmet-modifiable-INTERNAL-SURGING | [th-because | b-that-clause] | z-Alahen | v-tell
 >
@@ -206,7 +206,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *mean* (signify) | `zezebel dodogal vezebelovul.` | the word carries the meaning *dog* |
 | *mean* (intend) | `zazawan thamam vowogal.` | plans to walk ([intention](intention.md#plan-predict)) |
 | *define* | `zazawan dezebelovul hahehom bodogal vezebel.` | tells the meaning, about the dog |
-| *explain* | `zazawan vezebel balahen darl zalahen vowogal thevem barl zodogal varahal.` | tells Alahen that the walk has the run as its reason |
+| *explain* | `zazawan vezebel balahen darl zalahen vowogal thavem barl zodogal varahal.` | tells Alahen that the walk has the run as its reason |
 | *describe* | `zazawan hahehom bodogal vezebel balahen.` | tells Alahen about the dog |
 | *know* (that) | `zazawan vugum darl zodogal varahal.` | knows that the dog runs; to say how *you* know it, use a [channel](knowing.md#evidentiality) |
 | *know whether* / *know which* | `zazawan vugum dorl zodogal varahal.` | knows whether the dog runs; a blank inside asks *which* (`dor`) |
@@ -218,7 +218,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *become* | `zazawan vabedom dezebul.` | starts being sleepy |
 | *exist* | `zodogal.` | a lone noun: *there is a dog* |
 | *happen* / *occur* | the event's own verb: `verehel.` | no helper word |
-| *depend on* | `zazawan vowogal tholum thevem berehel.` | only because of rain |
+| *depend on* | `zazawan vowogal tholum thavem berehel.` | only because of rain |
 | *allege* / *claim* | `thewam` on the clause | REPORTED: so they say |
 | *compare* / *exceed* | `zazawan zalahen zel gelavam.` | rank on a shared scale ([comparatives](comparatives.md#comparatives-e)) |
 
@@ -245,17 +245,17 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *condition* (*on the condition that*) | `thoyem barl` / `tholum barl` | if / only if |
-| *factor* (one cause among several) | `thever barl` | a share of the fault or cause |
-| *circumstance* / *context* | a dependent after `barl` (`huwem barl`, `thevem barl`) | the situation as a clause |
+| *factor* (one cause among several) | `thaver barl` | a share of the fault or cause |
+| *circumstance* / *context* | a dependent after `barl` (`huwem barl`, `thavem barl`) | the situation as a clause |
 | *requirement* / *demand* | `thumel` / `thumem` / `thumer` | rule, person, or expectation |
 | *necessary* / *unnecessary* | `thumel` on the act; *more than needed* is the sake bar `thegatham zel` | required by a rule; past what the need asks |
 | *motivation* / *motive* | `zazawan vowogal thanathom.` | does it for relatedness |
 | *satisfaction* / *pleasure* | `thozotham.` | pleasure, met |
 | *desire* / *wish* | `zazawan thohum vowogal.` | wants to walk |
 | *regret* (for the harm) | `thanathum behon.` | unmet relatedness, yours |
-| *mistake* / *error* | `gegegal gul` or `thevel barl` | not correct, or at fault |
+| *mistake* / *error* | `gegegal gul` or `thavel barl` | not correct, or at fault |
 | *assumption* | `thavor` | NOTIONAL, toy with it |
-| *premise* (of an argument) | `ebehamevel` | a word about the argument ([arguments](#arguments)) |
+| *premise* (of an argument) | `ebehamavel` | a word about the argument ([arguments](#arguments)) |
 | *truth* / *to tell the truth* | `thaveham` | revelation |
 | *experience* (first-hand) | `thevom` | MEMORY, remembered as seen |
 
@@ -308,9 +308,9 @@ English *biased* says a view may be bent by what the holder wants from it. Agaza
 
 **Needs:** [If](causation.md#if) · [Because](causation.md#only-because) · [MAY](knowing.md#may) · [*as-of*](relations.md#as-of) · [RESIDUE](knowing.md#residue) · [forecasts](knowing.md#forecast)
 
-English *because* and *if* can hide whether you **assert the dependent as a world fact**. Agazan puts that choice on the pole: **`thevem`** asserts the condition as the reason the outcome rests on; **`thoyem`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary pole.
+English *because* and *if* can hide whether you **assert the dependent as a world fact**. Agazan puts that choice on the pole: **`thavem`** asserts the condition as the reason the outcome rests on; **`thoyem`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary pole.
 
-> `zazawan vowogal thevem berehel.`
+> `zazawan vowogal thavem berehel.`
 >
 > z-Azawan | v-walk | [th-because | b-rain]
 >
@@ -368,7 +368,7 @@ English often uses *because* for **speaker grounds** (*it rained, because the st
 >
 > "It is raining, judging by the gray clouds."
 
-Use **`thevem barl`** only when Q is also asserted as a world-foundation, what made P happen. For a soft *could be* with no grounds stated, put [MAY](knowing.md#may) (`thovum`, …) on the main sentence.
+Use **`thavem barl`** only when Q is also asserted as a world-foundation, what made P happen. For a soft *could be* with no grounds stated, put [MAY](knowing.md#may) (`thovum`, …) on the main sentence.
 
 > `zalahen thovum vedabal dahaben.`
 >
@@ -376,9 +376,9 @@ Use **`thevem barl`** only when Q is also asserted as a world-foundation, what m
 >
 > "Alahen may be leaving Ahaben."
 
-**For *could be*, use:** [MAY](knowing.md#may) (`ovu`). **`thevem`** is world-reason under the claim; **`thunem`** / **`thobam`** + **`barl`** is the grounds you go by.
+**For *could be*, use:** [MAY](knowing.md#may) (`ovu`). **`thavem`** is world-reason under the claim; **`thunem`** / **`thobam`** + **`barl`** is the grounds you go by.
 
-**Related form:** *P, since / given that Q* (Q already shared) uses **`thevem barl`** when Q is the reason P holds in the world, and **`thunem barl`** when Q is only your grounds.
+**Related form:** *P, since / given that Q* (Q already shared) uses **`thavem barl`** when Q is the reason P holds in the world, and **`thunem barl`** when Q is only your grounds.
 
 ### Arguments: premises, validity, contradiction {#arguments}
 
@@ -404,14 +404,14 @@ An argument has three parts, and each has its own slot. The **link** between pre
 >
 > "If Azawan sleeps, it follows that Azawan isn't walking." (the two rule each other out)
 
-**Compare with:** *it obviously follows* from strong clues (*obviously, it rained*) is CLUES (`thunel`), not a deduction: the clues make it likely, not certain. *Because* in the sense of what made it happen is **`thevem`** ([factivity](#factivity)).
+**Compare with:** *it obviously follows* from strong clues (*obviously, it rained*) is CLUES (`thunel`), not a deduction: the clues make it likely, not certain. *Because* in the sense of what made it happen is **`thavem`** ([factivity](#factivity)).
 
 To talk **about** an argument rather than make one, use the dictionary words. Each is *reason* (`ebeha`, as in `zebeham` *the faculty of reason*) joined to a second root ([words you look up](x-compounds.md#lexical-compounds)).
 
 | English | Agazan | Built from |
 |---------|--------|------------|
 | *an argument* / *logic* | `ebehamalodel` / `ebehamalodem` | *reason* + *ladder*: steps from what you grant to what follows |
-| *a premise* | `ebehamevel` | *reason* + *wall*: what the argument stands on |
+| *a premise* | `ebehamavel` | *reason* + *wall*: what the argument stands on |
 | *the conclusion* (of an argument) | `ebehamevehal` | *reason* + *finish line*: where the argument arrives |
 | *valid* / *validity* | `ebehamelegel` / `ebehamelegem` | *reason* + *link*: the conclusion must hold if the premises do |
 | *sound* / *soundness* | `ebehamebadal` / `ebehamebadam` | *reason* + *hardiness*: valid, and the premises are true |
@@ -525,7 +525,7 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *wrong* (incorrect) | `gegegal gul` | not correct, closed with **`gul`** |
-| *wrong* (morally) | `thevel barl` + the act | fault on the act ([fault](causation.md#fault)) |
+| *wrong* (morally) | `thavel barl` + the act | fault on the act ([fault](causation.md#fault)) |
 | *wrong* (bad for someone) | `thanathum balahen` | the act detracted from Alahen's sake |
 | *badly* (manner) | the doer, then `thobam zuel hegegal` | less correctly than usual ([manner words](say-amounts.md#manner-words)) |
 | *ugly* (not beautiful) | `gahabel gul` | not beautiful |
@@ -584,7 +584,7 @@ Many English adjectives are the plain opposite of something that has a root (*un
 | *unclear* / *obscure* | `gagazam gul` | not clear |
 | *honest* / *truthful* / *sincere* | `galaham gul` | not deceiving |
 | *false* / *untrue* | `gegegal gul` | not correct |
-| *responsible* (to blame) | `thevel barl` + the act | fault on the act ([fault](causation.md#fault)) |
+| *responsible* (to blame) | `thavel barl` + the act | fault on the act ([fault](causation.md#fault)) |
 | *responsible* (in charge) | `gabazem` | of authority |
 | *general* / *generally true* | `zuam` with the kind | every member, as a rule |
 | *universal* / *absolute* / *without exception* | `zual` with the kind | every member, no exceptions |
@@ -781,19 +781,19 @@ With no pair, the feeling is now. Keeping *it hurt then* apart from *it hurts no
 
 A direction locus says where the charge **goes**. It does not say who **caused** it. Name the cause with the [because pole](causation.md#because) after the feeling, and name its [fault](causation.md#fault) only when you mean it. The target and the cause may differ.
 
-> `zezebel wanathumom gobum bazawan thevem berehel.`
+> `zezebel wanathumom gobum bazawan thavem berehel.`
 >
 > [z-speech | [[w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | b-Azawan]] | [th-because | b-rain]
 >
 > "Irritated at Azawan about the dialogue, but the rain caused it."
 
-> `zumel wanathumol gobum balahen thevem barl zalahen vezebel.`
+> `zumel wanathumol gobum balahen thavem barl zalahen vezebel.`
 >
 > [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]] | [th-because | b-that-clause] | z-Alahen | v-tell
 >
 > "Resentful at Alahen about the memo, because Alahen told."
 
-> `zumel wanathumol gobum balahen thovum thevel barl zalahen vezebel.`
+> `zumel wanathumol gobum balahen thovum thavel barl zalahen vezebel.`
 >
 > [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]] | th-MAY | [th-because.fault | b-that-clause] | z-Alahen | v-tell
 >
@@ -839,7 +839,7 @@ Something new for its own sake (new sights, variety) is the pleasure sake, not u
 
 ### Reasons and conditions {#reasons-causation-practice}
 
-Short drills for these recipes. Try each item before opening **Show answer**. **`thevem`** asserts the condition as a fact the outcome rests on; **`thoyem`** does not; English *if he had* is bookmark *as-of*, not `thoyem`. Speaker-grounds stay **`thovum`** (**MAY**). Habit uses **`hual`**.
+Short drills for these recipes. Try each item before opening **Show answer**. **`thavem`** asserts the condition as a fact the outcome rests on; **`thoyem`** does not; English *if he had* is bookmark *as-of*, not `thoyem`. Speaker-grounds stay **`thovum`** (**MAY**). Habit uses **`hual`**.
 
 **Setting:** a chemistry lab
 
@@ -859,7 +859,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. **
 | *see* | `vahahal` | `ahahal` *eye* |
 | *if* | `thoyem` | `oyel` *door* |
 | *only-if* | `tholum` | `olul` *paper-roll* |
-| *because* | `thevem` | `evel` *wall* |
+| *because* | `thavem` | `avel` *wall* |
 | *MAY* | `thovum` | `ovul` *thought* |
 | *CAUSE* | `thegem` | `egel` *gear* |
 | *RESIDUE* | `thamom` | |
@@ -871,7 +871,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. **
 **1.** *Alahen pours because Ahaben sees.* (the seeing is asserted)
 
 ::: details Show answer
-`zalahen vobohol thevem barl zahaben vahahal.`
+`zalahen vobohol thavem barl zahaben vahahal.`
 
 z-Alahen | v-pour | [th-because | b-that-clause] | z-Ahaben | v-see
 :::
@@ -895,7 +895,7 @@ z-Azawan | th-MAY | v-pour
 **4.** *Azawan may be sitting, because Alahen pours.*
 
 ::: details Show answer
-`zazawan thovum vehahel thevem barl zalahen vobohol.`
+`zazawan thovum vehahel thavem barl zalahen vobohol.`
 
 z-Azawan | th-MAY | v-sit | [th-because | b-that-clause] | z-Alahen | v-pour
 :::
@@ -918,7 +918,7 @@ z-test-tube | v-melt | th-RESIDUE | [th-CLUES | b-later] | [h-as-of.bookmark | b
 
 #### Agazan → English {#reasons-causation-agazan-to-english}
 
-**1.** `zazawan vobohol thevem bavahel.`
+**1.** `zazawan vobohol thavem bavahel.`
 
 ::: details Show answer
 
@@ -945,7 +945,7 @@ z-Ahaben | th-MAY | v-see
 *Ahaben may be seeing.*
 :::
 
-**4.** `zalahen thovum vobohol thevem barl zahaben vahahal.`
+**4.** `zalahen thovum vobohol thavem barl zahaben vahahal.`
 
 ::: details Show answer
 
@@ -1124,7 +1124,7 @@ z-Alahen | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 
 ### Feelings: when and why {#reasons-feelings-practice}
 
-Short drills for these recipes. A channel and offset after **`gobum`** date the stimulus. **`thuhum`** dates the feeling. The because pole names the cause; **`thevel`** says someone was wrong.
+Short drills for these recipes. A channel and offset after **`gobum`** date the stimulus. **`thuhum`** dates the feeling. The because pole names the cause; **`thavel`** says someone was wrong.
 
 **Setting:** a harbor office
 
@@ -1142,8 +1142,8 @@ Short drills for these recipes. A channel and offset after **`gobum`** date the 
 | *REPORTED.strong* | `thewal` | |
 | *MEMORY* | `thevom` | |
 | *as-of.ledger* | `thuhum` | |
-| *because* | `thevem` | `evel` *wall* |
-| *because.fault* | `thevel` | `evel` *wall* |
+| *because* | `thavem` | `avel` *wall* |
+| *because.fault* | `thavel` | `avel` *wall* |
 
 #### English → Agazan {#reasons-feelings-english-to-agazan}
 
@@ -1158,7 +1158,7 @@ Short drills for these recipes. A channel and offset after **`gobum`** date the 
 **2.** *Irritated at Azawan about the memo, but the rain caused it.* (unmet relatedness, modifiable; aimed; flowing)
 
 ::: details Show answer
-`zumel wanathumom gobum bazawan thevem berehel.`
+`zumel wanathumom gobum bazawan thavem berehel.`
 
 [z-memo | [[w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | b-Azawan]] | [th-because | b-rain]
 :::
@@ -1174,7 +1174,7 @@ Short drills for these recipes. A channel and offset after **`gobum`** date the 
 *The memo stung me at the time of the dialogue.*
 :::
 
-**2.** `zezebel wanathumol gobum balahen thevel barl zalahen vezebel.`
+**2.** `zezebel wanathumol gobum balahen thavel barl zalahen vezebel.`
 
 ::: details Show answer
 

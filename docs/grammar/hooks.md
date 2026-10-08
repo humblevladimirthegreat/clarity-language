@@ -203,7 +203,7 @@ To say where something is (*there is a dog in a house*), write the noun with no 
 
 ### Since (`ul` on a time) {#since}
 
-For *since* (from a starting point, and still true now), use **`ul`** *from* with a time instead of a place: *from the thunderstorm on*. [**`henum`**](dependents.md#time-poles) *after* only places the event later. **`ul`** says the event has gone on from that point until now. (cue: **u** ≈ undo: leave the starting point behind)
+For *since* (from a starting point, and still true now), use **`ul`** *from* with a time instead of a place: *from the thunderstorm on*. [**`hanom`**](dependents.md#time-poles) *after* only places the event later. **`ul`** says the event has gone on from that point until now. (cue: **u** ≈ undo: leave the starting point behind)
 
 > `zazawan vehahel ul bavodel.`
 >
@@ -221,7 +221,7 @@ For *since* before a sentence, put **`barl`** after **`ul`** and the starting ev
 
 **`ul`** is the only hook that takes **`barl`**. Every other hook needs a real noun in `/b/`.
 
-**Compare with:** *since* meaning *because* is **`thevem barl`**. Agazan keeps the time reading and the cause reading apart.
+**Compare with:** *since* meaning *because* is **`thavem barl`**. Agazan keeps the time reading and the cause reading apart.
 
 ### Practice {#beginner-practice}
 

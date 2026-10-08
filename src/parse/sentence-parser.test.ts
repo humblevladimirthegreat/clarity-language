@@ -98,7 +98,7 @@ describe("sentence-parser synthetic", () => {
     const kin = last("zazawan vowogal han bobel grebuwol behon.");
     assert.equal(kin.kind === "h" ? kin.unit.hosted?.amount : "not h", undefined);
     assert.equal(kin.kind === "h" ? kin.unit.hosted?.adjs?.[0]?.hosted?.bound.raw : undefined, "behon");
-    const offset = last("zazawan vowogal henum bazazam grawol.");
+    const offset = last("zazawan vowogal hanom bazazam grawol.");
     assert.equal(offset.kind === "h" ? offset.unit.hosted?.amount?.raw : undefined, "grawol");
   });
 

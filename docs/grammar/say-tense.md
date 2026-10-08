@@ -197,7 +197,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 | *immediately* / *immediate* / *right away* / *at once* (*about to*) | a channel + **`brabul`** (*a hair after now*) |
 | *initially* / *at first* / *firstly* | **`hogodam`** (*first*, as a manner adverb) |
 | *continue* / *keep doing* | **`hagem`** (*still*) |
-| *subsequently* / *after* | **`henum`** + `/b/`: `henum balahen` |
+| *subsequently* / *after* | **`hanom`** + `/b/`: `hanom balahen` |
 | *prior to* | **`habam`** + `/b/`: `habam balahen` |
 | *in March* / *in 1962* / *on the 12th* | **`huwem`** + a month or year in `/b/` (`huwem bumuham grerel`, `huwem bavawem g_1962`); a day alone is `h_#12` ([time](numbers-applied.md#time)) |
 

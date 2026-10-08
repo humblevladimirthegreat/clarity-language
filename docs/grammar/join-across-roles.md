@@ -125,7 +125,7 @@ All the clauses in an `/x/` join share one speech act. Any `/y/` word goes befor
 
 When English would deny or weigh **how you stand** toward a claim (*not because…*, *either I saw it or I was told*), put a `/th/` join word after the [stance](clause.md#stance-th) words. The claim itself is untouched; the join works only on the stance words before it. (cue: same vowels as every other join.)
 
-> `zazawan vowogal thevem berehel thul.`
+> `zazawan vowogal thavem berehel thul.`
 >
 > z-Azawan | v-walk | [th-because | b-rain] | th-not
 >
@@ -163,7 +163,7 @@ Nothing is SHARED after an `/h/` or `/th/` join. To add a detail that covers the
 
 When the grounds are a whole clause (*not because Alahen runs*), the pole takes **`barl`** and the next sentence is the grounds ([poles](dependents.md#poles)). That sentence comes last, so the join cannot go after it. Put the join word **between the pole and `barl`** instead. It closes the stance words before it as usual, and **`barl`** still belongs to the pole.
 
-> `zazawan vowogal thevem thul barl zalahen varahal.`
+> `zazawan vowogal thavem thul barl zalahen varahal.`
 >
 > z-Azawan | v-walk | th-because | th-not | b-that-clause | z-Alahen | v-run
 >
@@ -227,7 +227,7 @@ Outside a question, only the single-vowel **-r** cells are words. Under a questi
 | `thoer` | *What are you torn between?* |
 | `thuer` | *What's your objection?* |
 
-**Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` asks for the speaker's grounds, not what caused the event; for *Why does it happen?* use [`thevem bar`](questions.md#why).
+**Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` asks for the speaker's grounds, not what caused the event; for *Why does it happen?* use [`thavem bar`](questions.md#why).
 
 ### Join-act verbs {#join-act-verbs}
 
@@ -333,7 +333,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahaben* | `ahaben` |
 | *MEMORY* | `thevom` |
 | *REPORTED* | `thewam` |
-| *because* | `thevem` |
+| *because* | `thavem` |
 | *trophy* | `odovel` |
 | *run* | `varahal` |
 | *punch* | `vabahel` |
@@ -376,7 +376,7 @@ z-Alahen | [v-run | v-punch | v-and]
 **5.** *Alahen runs, but not because of the medal.*
 
 ::: details Show answer
-`zalahen varahal thevem bamedal thul.`
+`zalahen varahal thavem bamedal thul.`
 
 z-Alahen | v-run | [th-because | b-medal] | th-not
 :::

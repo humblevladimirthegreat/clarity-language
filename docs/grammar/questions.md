@@ -679,7 +679,7 @@ To ask about means (*with what?*), use the *using* hook with the blank ([stacked
 
 To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in case*), then the blank **`bar`**. Pick the word for the kind of reason you want.
 
-> `yol thevem bar zazawan vowogal.`
+> `yol thavem bar zazawan vowogal.`
 >
 > y-question | th-because | b-wh | z-Azawan | v-walk
 >
@@ -694,11 +694,11 @@ To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in
 | Agazan | English |
 <!-- cheat-sheet: talking -->
 |--------|---------|
-| **`thevem bar`** | *Why?* (*because of what?*) |
+| **`thavem bar`** | *Why?* (*because of what?*) |
 | **`hogom bar`** | *What for?* (*for what purpose?*) |
 | **`thoyem bar`** | *Under what condition?* / *In what case?* |
 
-**Compare with:** [`thar`](join-across-roles.md#standalone-stance-joins) asks for the speaker's **grounds** (*Why do you say so?*), not what caused the event. Use `thevem bar` for the cause.
+**Compare with:** [`thar`](join-across-roles.md#standalone-stance-joins) asks for the speaker's **grounds** (*Why do you say so?*), not what caused the event. Use `thavem bar` for the cause.
 
 ### A blank inside a dependent {#blank-in-dependent}
 
@@ -850,7 +850,7 @@ y-request | v-attest | z-listener . y-question | y-sure
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `yol thevem bar zazawan vowogal.`
+**1.** `yol thavem bar zazawan vowogal.`
 
 ::: details Show answer
 y-question | th-because | b-wh | z-Azawan | v-walk

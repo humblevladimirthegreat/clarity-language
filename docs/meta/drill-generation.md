@@ -232,7 +232,7 @@ Default people: [house cast](grammar-docs.md#house-cast) — `zazawan` / `zalahe
 
 **This table is for worked examples** on grammar pages (and for morph leak checks when a teach line uses these stems). **Checkpoints do not default to it.** Checkpoint content comes from the [setting](translation-exercises.md#checkpoint-setting) plus house names.
 
-Tokens here are **stems for matching** (path allowlist / leak checks). Learner bank cells on a checkpoint use [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables). Do not copy `(**-m**)` from this **Sense** column into learner **English**. Checkpoint **English** is the uninflected published lemma for that cell (literal, metaphor, or packed role English); inflected drill prompts (*running*) are fine. When English is not the citation kind, the Agazan cell is the in-clause word and the **New words** cue names the citation sense: *see* → `vahahal` / `` `ahahal` *eye* ``; *sit* → `vehahel` / `` `ehahel` *chair* ``; *tell* → `vezebel` / `` `ezebel` *speech* ``; *therefore* → `xodum` / `` `odul` *east* ``; *however* → `xezom`; *although* → `hezom` (NP *despite* is the same `/h/` word + `/b/` noun); *so-that* → `hogom` (NP intended *for* is the same `/h/` word + `/b/` noun); *meanwhile* → `xagagam`; *haste* → `hadehum` / `` `adehul` *dash* ``; *quietude* → `halahom`; *volume* → `wagawam`; *topic* → `hahehol`. *because* / *inside* already list the `/h/` word (`thevem`, `hegegam`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odogal`; *next clause* stays `oyel`).
+Tokens here are **stems for matching** (path allowlist / leak checks). Learner bank cells on a checkpoint use [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables). Do not copy `(**-m**)` from this **Sense** column into learner **English**. Checkpoint **English** is the uninflected published lemma for that cell (literal, metaphor, or packed role English); inflected drill prompts (*running*) are fine. When English is not the citation kind, the Agazan cell is the in-clause word and the **New words** cue names the citation sense: *see* → `vahahal` / `` `ahahal` *eye* ``; *sit* → `vehahel` / `` `ehahel` *chair* ``; *tell* → `vezebel` / `` `ezebel` *speech* ``; *therefore* → `xodum` / `` `odul` *east* ``; *however* → `xezom`; *although* → `hezom` (NP *despite* is the same `/h/` word + `/b/` noun); *so-that* → `hogom` (NP intended *for* is the same `/h/` word + `/b/` noun); *meanwhile* → `xagagam`; *haste* → `hadehum` / `` `adehul` *dash* ``; *quietude* → `halahom`; *volume* → `wagawam`; *topic* → `hahehol`. *because* / *inside* already list the `/h/` word (`thavem`, `hegegam`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odogal`; *next clause* stays `oyel`).
 
 | Root | Sense in examples |
 |------|-------------------|
@@ -256,7 +256,7 @@ Tokens here are **stems for matching** (path allowlist / leak checks). Learner b
 | `ehahe` | *sit* (`vehahel`; citation *chair*) |
 | `adehu` | *haste* (`hadehum`; citation *dash*) |
 | `darl` | *that-clause* |
-| `eve` | *because* (**-m** on `/th/` `/ɡ/`) |
+| `ave` | *because* (**-m** on `/th/` `/ɡ/`) |
 | `olu` | *only if* (**-m** on `/th/` `/ɡ/`) |
 
 A teach line may add roots that already appear in that stage’s worked examples (e.g. `abovu` *apple*, `edehe` *tea*, `agave` *coffee`, `omonu` *challenging*, `onunu` **SAME**). Checkpoint tables list **setting** roots instead, even when a teach line used *walk*.
@@ -279,7 +279,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 4 | `word-endings.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor; **greeting** named citation with period (`azawan.`) | No sentences with role letters. No **-r**. Pointers to **-x** / **`gl-`**: do **not** make those the item. No vocative `/y/` |
 | 5 | `clause.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; hosted `/ɡ|h/`+`/b/` (*like*); unhosted `/b/` recipient/addressee; house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`darl`**, `/x/`, nested **`barl`**, letter **-r** mechanism, **-x**, joins. Greeting citations are word-endings. No conversation-length **`x`** vowel |
 | 6 | `speech-moves.md` | **exists** | Turn start; call a person; conventional interjection; statement / question / command / prohibition; omit recoverable **`yal`** | Recycle clause bodies and house names; no hooks, polar stance, soft forms, or numbers |
-| 7 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`thevem` / `thoyem` / `thedam` / `hezom` / `huwem` / `homam` / `habam` / `henum` / `hogom` **`barl`**; *despite* = **`hezom`** + `/b/` noun); `/x/` continue vs `/y/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`barl`**, letter **-r** mechanism. Recycle speech-moves **`yol`/`yel`/`yul`** |
+| 7 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`thavem` / `thoyem` / `thedam` / `hezom` / `huwem` / `homam` / `habam` / `hanom` / `hogom` **`barl`**; *despite* = **`hezom`** + `/b/` noun); `/x/` continue vs `/y/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`barl`**, letter **-r** mechanism. Recycle speech-moves **`yol`/`yel`/`yul`** |
 | 13 | `relations.md` | **exists** | Hosted pair for simile **`humum`**, exchange **`hehem`**, proxy **`hadem`** | Recycle clause hosted `/b/` and hooks extra-noun. No *between*, no of-relations, no **`barl`**. Not **`hahadam`** |
 | 8 | `pronouns.md` | **exists** | Whole-stem **-r**; role pointers (`zaxar`, `duxar`, `daxer`, `zaxor`); specials **`amu` / `eho` / `aha` / `una`** (when the *role* is the point); inclusive *we* **`aha`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
 | 8 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aha`** as the *not this* for inclusive *we*. **`amu`/`eho`** only on person-role items |
@@ -335,7 +335,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | 4–6 items |
 | 15 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join; PLAN bar right before the join | |
 | 15 | `comparatives.md` | Advanced | **exists** | Stance bars (channels, FORMER, ABIL, REQUIRE, attitudes); bar inside vs stance after the fence | |
-| 15 | `causation.md` | Intermediate | **exists** | Following-sentence **`barl`**; **`eve`** *because* / **`eda`** *iff*; asserted necessary **`tholum thevem`**; **CAUSE** **`ege`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
+| 15 | `causation.md` | Intermediate | **exists** | Following-sentence **`barl`**; **`ave`** *because* / **`eda`** *iff*; asserted necessary **`tholum thavem`**; **CAUSE** **`ege`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
 | 15 | `causation.md` | Advanced | — | no Advanced stage | |
 | 16 | `sakes.md` | Intermediate | **exists** | Prescription **`the`** + force; motive **`tho`** + time horizon; which ending table; attachment sites; sake bars (*enough* / *too*) | |
 | 16 | `sakes.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
@@ -359,7 +359,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 |------|----------------|
 | House names, SVO, omit **`yal`**, **`yol`/`yel`/`yul`**, vocative (`yalahen`) | `clause.md` Beginner |
 | Means / simile / exchange / proxy hosted pairs | `relations.md` Beginner |
-| **`darl`**, *because* **`thevem barl`**, `/x/` linker after `.` | `dependents.md` Beginner |
+| **`darl`**, *because* **`thavem barl`**, `/x/` linker after `.` | `dependents.md` Beginner |
 | Named citation greeting (`azawan.`) | `word-endings.md` Beginner |
 | Conversation-length bid **`…xan` / `…xon` / `…xen` / `…xun`** on a citation or vocative | `x-compounds.md` Intermediate |
 | **`gl-`**, **`yam`/`yom`/`yem`/`yum`** as a *speech-act* system | `clause.md` Intermediate |

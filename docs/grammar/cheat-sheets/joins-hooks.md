@@ -108,7 +108,7 @@ The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, 
 | **oe** | `voen` *equates* | `goen` / `hoen` *on a par with* | |
 | **ue** | `vuen` *deprioritizes* | `guen` / `huen` *deprioritizing* | `xuen` *and before that* |
 
-[Stance joins](../join-across-roles.md#stance-joins) (`/th/`) work on the stance words before them, not the claim: `thevem berehel thul` *not because of the rain*. With clause grounds, the join goes [before `barl`](../join-across-roles.md#stance-join-before-barl): `thevem thul barl` *not because …*. [Alone](../join-across-roles.md#standalone-stance-joins), they say how to take the claim:
+[Stance joins](../join-across-roles.md#stance-joins) (`/th/`) work on the stance words before them, not the claim: `thavem berehel thul` *not because of the rain*. With clause grounds, the join goes [before `barl`](../join-across-roles.md#stance-join-before-barl): `thavem thul barl` *not because …*. [Alone](../join-across-roles.md#standalone-stance-joins), they say how to take the claim:
 
 | Agazan | English | Agazan | English |
 |--------|---------|--------|---------|

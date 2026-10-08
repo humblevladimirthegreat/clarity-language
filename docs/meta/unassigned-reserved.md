@@ -190,10 +190,10 @@ Source: [causation.md](../grammar/causation.md#poles), [relations.md](../grammar
 
 An **-r** grade on a closed root without its own **-r** would take away the live whole-stem resume ([design-decisions § Closed-root endings](design-decisions.md#closed-root-endings)). **-l** has two competing guesses (strongest, as on *exactly like* `humul`, or broke a norm, as on *because*), so a family where neither fits has no guessable **-l**.
 
-- **closed (closed-root -r):** clause-pole **-r** as a grade on *iff* (`eda`), *although* (`ezo`), *while* (`uwe`), *before* (`aba`), *after* (`enu`), *until* / *by* (`oma`), and the result pole (`odu`).
-- **closed (closed-root -r):** clause-pole **-r** as *one of several* on *if* (`thoyer`), *only if* (`tholur`) and *so that* (`hogor`). The resume is the only route to *in that case* (`thoyer`); *partly because* is `thever`.
+- **closed (closed-root -r):** clause-pole **-r** as a grade on *iff* (`eda`), *although* (`ezo`), *while* (`uwe`), *before* (`aba`), *after* (`ano`), *until* / *by* (`oma`), and the result pole (`odu`).
+- **closed (closed-root -r):** clause-pole **-r** as *one of several* on *if* (`thoyer`), *only if* (`tholur`) and *so that* (`hogor`). The resume is the only route to *in that case* (`thoyer`); *partly because* is `thaver`.
 - **closed (closed-root -r):** CAUSE **-r** as *one contributing push* (`theger`); RESIDUE and FORMER **-r** as *for now* (`thamor`, `thenor`); similative **-r** as *a bit like* (`humur`, `gumur`).
-- **open:** clause-pole **-l** beyond *because* (`thevel`) and *by* (`omal`). Neither guess fits these poles. The nearest, *if* **-l** as *by rule* (`thoyel`), is not a stronger *if* but a rule, which `thoyem` plus a deontic says.
+- **open:** clause-pole **-l** beyond *because* (`thavel`) and *by* (`omal`). Neither guess fits these poles. The nearest, *if* **-l** as *by rule* (`thoyel`), is not a stronger *if* but a rule, which `thoyem` plus a deontic says.
 - **open:** CAUSE **-l** as *compel* (`thegel`). **-l** is not guessable here, and refused consent plus CAUSE ([consent](../grammar/sakes.md#consent)) says more: it names whose will was overridden.
 - **open:** RESIDUE and FORMER **-l** (`thamol`, `thenol`). Two guesses compete: *for good*, as on the phasals (`hohal`), and *strong*, as on the channels.
 - **open:** **-l** on exchange (`ehe`), proxy (`ade`), the of-relations, the locatives, stimulus (`obu`), and *respectively* (`aze`). *Strongest* is the only guess, and none of these has needed it (*exactly between*?).

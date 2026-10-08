@@ -256,7 +256,7 @@ describe("parse — joins.md", () => {
 
 describe("parse — stand-in dependents", () => {
   it("parses theram barl dependent", () => {
-    const result = parseText("zazawan gezebul thevem barl zalahen vowogal.");
+    const result = parseText("zazawan gezebul thavem barl zalahen vowogal.");
     const clause = result.utterances[0]!.bodies[0]!.clause;
     assert.ok(clause.dependent);
     assert.equal(clause.dependent!.orodo.raw, "barl");
@@ -297,7 +297,7 @@ describe("parse — stand-in dependents", () => {
     assert.ok(coord && coord.kind === "clauseCoord");
     assert.equal(coord.coord.links.length, 1);
     assert.equal(coord.coord.links[0]!.join.raw, "xol");
-    const nested = parseText("zazawan vezehel thevem barl zalahen vowogal thevem barl zahaben vezebal xal zazawan varahal.").utterances[0]!.bodies[0]!.clause;
+    const nested = parseText("zazawan vezehel thavem barl zalahen vowogal thavem barl zahaben vezebal xal zazawan varahal.").utterances[0]!.bodies[0]!.clause;
     const inner = nested.dependent?.clause.units[0];
     assert.ok(inner && inner.kind === "clauseCoord");
   });
@@ -507,8 +507,8 @@ describe("parse — as-of poles", () => {
   });
 
   it("parses a fault pole hosting a stand-in, stacked after only-if", () => {
-    parseText("zazawan vowogal tholum thevel barl zalahen vezebel.");
-    parseText("zumel wanathumol gobum balahen thovum thevel barl zalahen vezebel.");
+    parseText("zazawan vowogal tholum thavel barl zalahen vezebel.");
+    parseText("zumel wanathumol gobum balahen thovum thavel barl zalahen vezebel.");
   });
 
   it("parses as-of resume without /b/", () => {
@@ -872,8 +872,8 @@ describe("negation scope at a fence or a pole", () => {
   });
 
   it("leaves barl off a pole that already has its /b/", () => {
-    const clause = parseText("zazawan vowogal thevem berehel thul barl zalahen varahal.").utterances[0]!.bodies[0]!.clause;
-    const pole = clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "thevem");
+    const clause = parseText("zazawan vowogal thavem berehel thul barl zalahen varahal.").utterances[0]!.bodies[0]!.clause;
+    const pole = clause.units.find((u) => u.kind === "h" && u.unit.word.raw === "thavem");
     assert.equal(pole?.kind === "h" && pole.unit.hosted?.bound.raw, "berehel");
   });
 });

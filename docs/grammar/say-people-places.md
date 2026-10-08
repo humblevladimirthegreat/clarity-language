@@ -484,8 +484,8 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *set* (a group of things) | `zugulx` | books as a group ([group words](say-amounts.md#group-words)) |
 | *abortion* | `zebegologovel` | a pregnancy ended |
 | *available* | `goxebexal` | can be the recipient of a gift |
-| *independent* | `golum gevem balahen gul` | does not depend on Alahen |
-| *independent* (of everyone) | `zazawan golum gevem bur gul.` | depends on no other |
+| *independent* | `golum gavem balahen gul` | does not depend on Alahen |
+| *independent* (of everyone) | `zazawan golum gavem bur gul.` | depends on no other |
 | *straight* (direct) | `gamem` | direction |
 | *hang* | `zazawan dalahen vageladahel.` | holds Alahen from above |
 | *editor* | `zaxebeyolarebel` | doer of the editing |
@@ -512,7 +512,7 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *cent* | `zadahul g-100` | a hundredth of a dollar |
 | *middle* / *central* | `zahol gobom borodal` | the heart of the road |
 | *international* | `zahazal gazam bagul bagul bal` | between two countries |
-| *dependent on* | `zazawan golum gevem balahen.` | depends on Alahen |
+| *dependent on* | `zazawan golum gavem balahen.` | depends on Alahen |
 | *favorite* | `zalavalogodal` | the one loved first |
 | *count* / *total up* | `zazawan vabugam.` | calculates |
 | *total* / *sum* (the amount) | `zabavem` | the addition |
@@ -553,11 +553,11 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 | *contribution* / *acquisition* (the act) | `zebel` | a giving, seen as a whole |
 | *contribution* (what is given) / *acquisition* (what is got) | `zuxebel` | the thing the giving happens to |
 | *that contribution* / *that acquisition* | `deber` / `duxeber` | the latest giving, or what it passed on |
-| *contribution* (a share in a cause) | `thever barl` | one share among several causes |
+| *contribution* (a share in a cause) | `thaver barl` | one share among several causes |
 | *representation* (acting for someone) | `zazawan gadem balahen` | Azawan, on behalf of Alahen |
 | *reaction* / *response* | `zegehum` | the answer to what unlocked it |
 | *react to* | `zazawan derehel vegehum.` | answers the rain |
-| *murder* (a wrongful killing) | `zalahen vazagal thevel barl zazawan vagevel.` | a death, and the fault is Azawan's shooting |
+| *murder* (a wrongful killing) | `zalahen vazagal thavel barl zazawan vagevel.` | a death, and the fault is Azawan's shooting |
 | *comparison* / *contrast* (setting two against each other) | `zezom` | contrast |
 | *compare A with B* | `zazawan dalahen vezom bahaben.` | sets Alahen against Ahaben |
 | *preference* (the one preferred) | `zalavalogodal` | the one loved first |
@@ -580,7 +580,7 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 >
 > "Azawan reacts to the rain."
 
-> `zalahen vazagal thevel barl zazawan vagevel.`
+> `zalahen vazagal thavel barl zazawan vagevel.`
 >
 > z-Alahen | v-skull | [th-because.fault | b-that-clause] | z-Azawan | v-gun
 >

@@ -78,7 +78,7 @@ Other role letters work the same way: `barth` after a pole (*because of that*), 
 | [Confirm](../dependents.md#stand-in-roles) | `zazawan vaen zalahen vehahel.` | *Azawan confirms that Alahen sits.* | A |
 | [Decline](../dependents.md#stand-in-roles) | `zazawan vuon zazawan vehahel.` | *Azawan declines to sit.* | A |
 | [It is … that](../dependents.md#stand-in-roles) | `gamadam zarl zazawan vowogal.` | *It is hard for Azawan to walk.* | A |
-| [Nested](../dependents.md#nested-dependents) | `zazawan gezebul thevem barl zalahen vowogal thevem barl zahaben vezebal.` | *Azawan is sleepy because Alahen walks because Ahaben sleeps.* | A |
+| [Nested](../dependents.md#nested-dependents) | `zazawan gezebul thavem barl zalahen vowogal thavem barl zahaben vezebal.` | *Azawan is sleepy because Alahen walks because Ahaben sleeps.* | A |
 
 ## Because, if, although {#poles}
 
@@ -87,7 +87,7 @@ A **pole** names the link and takes the stand-in `barl` as its `/b/`. Keep the p
 <!-- cheat-sheet: linking-clauses -->
 | Agazan | English | Stage |
 |--------|---------|-------|
-| [**`thevem barl`**](../dependents.md#poles) | *because* | B |
+| [**`thavem barl`**](../dependents.md#poles) | *because* | B |
 | [**`thoyem barl`**](../dependents.md#poles) | *if* | B |
 | [**`tholum barl`**](../dependents.md#poles) | *only if* | B |
 | [**`thedam barl`**](../dependents.md#poles) | *if and only if* | B |
@@ -96,12 +96,12 @@ A **pole** names the link and takes the stand-in `barl` as its `/b/`. Keep the p
 | [**`homam barl`**](../dependents.md#poles) | *until* | B |
 | [**`heveham barl`**](../dependents.md#poles) | *by the time* | B |
 | [**`habam barl`**](../dependents.md#poles) | *before* | B |
-| [**`henum barl`**](../dependents.md#poles) | *after* | B |
+| [**`hanom barl`**](../dependents.md#poles) | *after* | B |
 | [**`hogom barl`**](../dependents.md#poles) | *so that* / *in order to* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Because](../dependents.md#poles) | `zazawan vezehel thevem barl zalahen vowogal.` | *Azawan sings because Alahen walks.* | B |
+| [Because](../dependents.md#poles) | `zazawan vezehel thavem barl zalahen vowogal.` | *Azawan sings because Alahen walks.* | B |
 | [If, on a command](../dependents.md#poles) | `yel vowogal thoyem barl zalahen vehahel.` | *If Alahen sits, walk.* | B |
 | [Despite, with a noun](../dependents.md#poles) | `zazawan vowogal hezom balahen.` | *Azawan walks despite Alahen.* | B |
 | [So that](../dependents.md#so-that) | `zazawan vowogal hogom barl zalahen vehahel.` | *Azawan walks so that Alahen sits.* | B |
@@ -109,7 +109,7 @@ A **pole** names the link and takes the stand-in `barl` as its `/b/`. Keep the p
 | [So as not to](../dependents.md#stand-in): `burl` for `barl` | `zazawan vowogal hogom burl zazawan vehahel.` | *Azawan walks so as not to sit.* | I |
 | [Unless](../dependents.md#stand-in): `burl` for `barl` | `zazawan vowogal thoyem burl zalahen vezebal.` | *Azawan walks unless Alahen sleeps.* | I |
 | [So … that](../dependents.md#result-pole): the result happened | `zazawan welavam gadadal hodum barl zazawar vezebal.` | *Azawan is so tired that they sleep.* | I |
-| [As soon as](../dependents.md#time-poles) | `zazawan vowogal wadehum henum barl zalahen vehahel.` | *Azawan walks as soon as Alahen sits.* | B |
+| [As soon as](../dependents.md#time-poles) | `zazawan vowogal wadehum hanom barl zalahen vehahel.` | *Azawan walks as soon as Alahen sits.* | B |
 
 ### Times with a noun {#time-nouns}
 
@@ -118,11 +118,11 @@ Put an event or period in `/b/` right after the time pole. *Until* says this eve
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [During](../dependents.md#time-poles) | `zazawan vowogal huwem bavodel.` | *Azawan walks during the thunderstorm.* | B |
-| [After](../dependents.md#time-poles) | `zazawan vehahel henum bavodel.` | *Azawan sits after the thunderstorm.* | B |
+| [After](../dependents.md#time-poles) | `zazawan vehahel hanom bavodel.` | *Azawan sits after the thunderstorm.* | B |
 | [By](../dependents.md#by-deadline) | `zazawan vowogal heveham bavodel.` | *Azawan walks by the thunderstorm.* | B |
-| [A noun in time](../dependents.md#time-pole-on-noun) | `zalahen dowogal genum bavodel vahahal.` | *Alahen sees the walk after the thunderstorm.* | I |
+| [A noun in time](../dependents.md#time-pole-on-noun) | `zalahen dowogal ganom bavodel vahahal.` | *Alahen sees the walk after the thunderstorm.* | I |
 
-On a noun the poles are `guwem` *during*, `gabam` *before*, `genum` *after*, `gomam` *until*, and `geveham` *by*. *Since* is [*from* on a time](../hooks.md#since).
+On a noun the poles are `guwem` *during*, `gabam` *before*, `ganom` *after*, `gomam` *until*, and `geveham` *by*. *Since* is [*from* on a time](../hooks.md#since).
 
 ## Keep the same speech move going {#continue}
 
@@ -269,9 +269,9 @@ Each pole, linker, and relation word is the abstract sense of an ordinary root. 
 
 | Forms | Same root as | Stage |
 |-------|--------------|-------|
-| [`thevem`](../dependents.md#poles) *because*, [`thoyem`](../dependents.md#poles) *if*, [`tholum`](../dependents.md#poles) *only if*, [`thedam`](../dependents.md#poles) *if and only if* | `evel` 🧱, `oyel` 🚪, `olul` 🧻, `edal` ↔️ | B |
+| [`thavem`](../dependents.md#poles) *because*, [`thoyem`](../dependents.md#poles) *if*, [`tholum`](../dependents.md#poles) *only if*, [`thedam`](../dependents.md#poles) *if and only if* | `avel` 🧱, `oyel` 🚪, `olul` 🧻, `edal` ↔️ | B |
 | [`hezom`](../dependents.md#poles) *although*, [`huwem`](../dependents.md#poles) *while*, [`homam`](../dependents.md#poles) *until*, [`heveham`](../dependents.md#poles) *by the time* | `ezol` 🦓, `uwel` ♊, `omal` ⏲️, `evehal` 🏁 | B |
-| [`habam`](../dependents.md#poles) *before*, [`henum`](../dependents.md#poles) *after*, [`hogom`](../dependents.md#poles) *so that* | `abal` 🎒, `enul` ⌛, `ogol` 🥅 | B |
+| [`habam`](../dependents.md#poles) *before*, [`hanom`](../dependents.md#poles) *after*, [`hogom`](../dependents.md#poles) *so that* | `abal` 🎒, `anol` ⌛, `ogol` 🥅 | B |
 | [`xodum`](../dependents.md#sentence-linkers), [`xezom`](../dependents.md#sentence-linkers), [`xagagam`](../dependents.md#sentence-linkers) | `odum` ➡️, `ezom` 🦓, `agagam` 🕰️ | I |
 | [`xevavem`](../dependents.md#sentence-linkers), [`xagezam`](../dependents.md#sentence-linkers), [`xavazem`](../dependents.md#sentence-linkers) | `evavem` 🎞️, `agezam` 🚧, `avazem` 🍟 | I |
 | [`humum`](../relations.md#like-resembles) *like*, [`hehem`](../relations.md#exchange) *in exchange for*, [`hadem`](../relations.md#proxy) *on behalf of* | `umul` 🪞, `ehel` 💱, `adel` 🪪 | B |
@@ -294,4 +294,4 @@ Each pole, linker, and relation word is the abstract sense of an ordinary root. 
 | `humum` *like* ([resembles, and is real](../relations.md#like-resembles)) | | `humul` *exactly like* ([a perfect match](../relations.md#exactly-like)) |
 | `gahem` *contents of* ([what a vessel holds](../relations.md#of-relations)) | | `al` *in* ([a place hook](../hooks.md#extra-noun-intermediate)) |
 | `hadem` *on behalf of* ([an agent](../relations.md#proxy)) | | `hehem` *in exchange for* ([the other half of a swap](../relations.md#exchange)) |
-| `huhum` *as of* ([a dated now](../relations.md#as-of)) | | `henum` *after* ([a time for the event](../dependents.md#time-poles)) |
+| `huhum` *as of* ([a dated now](../relations.md#as-of)) | | `hanom` *after* ([a time for the event](../dependents.md#time-poles)) |

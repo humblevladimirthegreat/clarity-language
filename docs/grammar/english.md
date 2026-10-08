@@ -75,7 +75,7 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 | kind / role (*Azawan as a dog*) | classification `/ɡ/` | [Kind / role](predication.md#classification) |
 | same one (*Alahen as Azawan*) | **`SAME`** + `/b/` | [Identity](predication.md#identity) |
 | same time (*as Alahen walks*) | **`huwem barl`** | [Dependent clauses](dependents.md#dependent-clauses) |
-| reason / since (*as Alahen walks*) | **`thevem barl`** | [Because](causation.md#because) |
+| reason / since (*as Alahen walks*) | **`thavem barl`** | [Because](causation.md#because) |
 | grounds (*as the sky is gray, it will rain*) | **`thunem barl`** / **`thobam barl`** | [Evidence clause](knowing.md#evidence-clause) |
 | equal degree (*as sleepy as*) | equative **`oe`** | [Equatives](comparatives.md#equatives) |
 | falls short (*not as sleepy as*) | reverse rank **`ue`** | [Reverse rank](comparatives.md#intermediate) |

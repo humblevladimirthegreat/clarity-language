@@ -18,8 +18,8 @@ Write the outcome first, then the pole, then the condition as the pole's `/b/`. 
 |-----------------------|------|-----------|---------|-------|
 | [`thoyem` / `goyem`](../causation.md#if) | enough | not asserted | *if* | B |
 | [`tholum` / `golum`](../causation.md#only-if) | needed | not asserted | *only if* / *needs* | B |
-| [`thevem` / `gevem`](../causation.md#only-because) | enough | asserted as the reason | *because* | I |
-| [`tholum thevem` / `golum gevem`](../causation.md#only-because) | needed | asserted | *only because* / *depends on* | I |
+| [`thavem` / `gavem`](../causation.md#only-because) | enough | asserted as the reason | *because* | I |
+| [`tholum thavem` / `golum gavem`](../causation.md#only-because) | needed | asserted | *only because* / *depends on* | I |
 | [`thedam` / `gedam`](../causation.md#only-because) | both ways | not asserted | *if and only if* | I |
 
 | Job | Example | English | Stage |
@@ -28,9 +28,9 @@ Write the outcome first, then the pole, then the condition as the pole's `/b/`. 
 | [If, after a noun](../causation.md#if) | `zerehel goyem bagavul.` | *There is rain if there are clouds.* | B |
 | [Only if](../causation.md#only-if) | `zazawan vowogal tholum berehel.` | *Azawan walks only if there is rain.* | B |
 | [Condition is a whole sentence](../causation.md#dependent): `barl`, then the sentence | `zazawan vowogal thoyem barl zalahen vezebal.` | *Azawan walks if Alahen sleeps.* | I |
-| [Because](../causation.md#only-because) | `zazawan vowogal thevem barl zalahen vezebal.` | *Azawan walks because Alahen sleeps.* | I |
+| [Because](../causation.md#only-because) | `zazawan vowogal thavem barl zalahen vezebal.` | *Azawan walks because Alahen sleeps.* | I |
 | [If and only if](../causation.md#only-because) | `zazawan vowogal thedam barl zalahen vezebal.` | *Azawan walks if and only if Alahen sleeps.* | I |
-| [Only because](../causation.md#only-because) | `zazawan vowogal tholum thevem berehel.` | *Azawan walks only because there is rain.* | I |
+| [Only because](../causation.md#only-because) | `zazawan vowogal tholum thavem berehel.` | *Azawan walks only because there is rain.* | I |
 | [Unless](../causation.md#only-because): `burl` for `barl` | `zazawan vowogal thoyem burl zalahen vezebal.` | *Azawan walks unless Alahen sleeps.* | I |
 | [Even if](../causation.md#only-because) | `zazawan vowogal hezom thoyem barl zalahen vezebal.` | *Azawan walks even if Alahen sleeps.* | I |
 
@@ -43,14 +43,14 @@ The ending on the because pole says whether anyone did wrong.
 <!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`thevel`](../causation.md#fault) | the reason broke a norm | *it's their fault* / *to blame* | I |
-| [`thevem`](../causation.md#fault) | the reason made it happen; no fault claimed | *because* | I |
-| [`thever`](../causation.md#fault) | one share among others | *partly because* | I |
+| [`thavel`](../causation.md#fault) | the reason broke a norm | *it's their fault* / *to blame* | I |
+| [`thavem`](../causation.md#fault) | the reason made it happen; no fault claimed | *because* | I |
+| [`thaver`](../causation.md#fault) | one share among others | *partly because* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Fault, on an act](../causation.md#fault) | `zazawan vedabal thevel barl zalahen vezebel.` | *Azawan left, and Alahen's telling was wrong.* | I |
-| [A share](../causation.md#fault) | `zazawan vedabal thever berehel.` | *The rain is part of why Azawan left.* | I |
+| [Fault, on an act](../causation.md#fault) | `zazawan vedabal thavel barl zalahen vezebel.` | *Azawan left, and Alahen's telling was wrong.* | I |
+| [A share](../causation.md#fault) | `zazawan vedabal thaver berehel.` | *The rain is part of why Azawan left.* | I |
 
 ### CAUSE: the mechanism {#cause}
 
@@ -195,7 +195,7 @@ Motion is how the feeling moves, not how strong it is. For strength, put a [degr
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [A feeling with no object](../sakes.md#feeling-no-object) | `thulothuruor.` | *I'm anxious.* | I |
-| [Name its cause](../sakes.md#feeling-no-object) | `thulothuruor thevem berehel.` | *I'm anxious, and the rain caused it.* | I |
+| [Name its cause](../sakes.md#feeling-no-object) | `thulothuruor thavem berehel.` | *I'm anxious, and the rain caused it.* | I |
 | [A feeling about an event](../sakes.md#feeling-no-object) | `zalahen vowogal thanathamar` | *moved that Alahen walks* | I |
 | [Naming it plainly](../sakes.md#emotion-compose) | `zSELFn ganegel` | *I am angry* | I |
 
@@ -258,10 +258,10 @@ The negatives use the same endings: `thedel` / `thedem` / `theder` forbid, `thux
 
 | This | vs | That |
 |------|----|------|
-| `thoyem` *if* ([enough, not claimed](../causation.md#if)) | | `thevem` *because* ([enough, and a fact](../causation.md#only-because)) |
+| `thoyem` *if* ([enough, not claimed](../causation.md#if)) | | `thavem` *because* ([enough, and a fact](../causation.md#only-because)) |
 | `thoyem` *if* ([other routes remain](../causation.md#only-if)) | | `tholum` *only if* ([the outcome needs it](../causation.md#only-if)) |
-| `thevem` *because* ([a cause, no blame](../causation.md#fault)) | | `thevel` *fault* ([someone did wrong](../causation.md#fault)) |
-| `thevem` *because* ([the condition](../causation.md#cause)) | | `thegem` *mechanism* ([how it is produced](../causation.md#cause)) |
+| `thavem` *because* ([a cause, no blame](../causation.md#fault)) | | `thavel` *fault* ([someone did wrong](../causation.md#fault)) |
+| `thavem` *because* ([the condition](../causation.md#cause)) | | `thegem` *mechanism* ([how it is produced](../causation.md#cause)) |
 | `thegom` *may* ([anyone with standing allows it](../sakes.md#permission)) | | `thuxegom` *the affected agreed* ([their own yes](../sakes.md#consent)) |
 | `thegom` *may* ([the act is allowed](../sakes.md#permission)) | | `thumem` *has to* ([the act is demanded](../sakes.md#requirement)) |
 | `thanathem` *ought to, for relatedness* ([advice for a sake](../sakes.md#sake-force)) | | `thanathom` *for relatedness* ([why it is done](../sakes.md#sake-preference)) |

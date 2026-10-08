@@ -562,7 +562,7 @@ describe("morphGlossLine — th stance letter", () => {
   it("glosses stance moods, /w/ on th, and th poles with stand-ins", () => {
     expectLine("thovum zazawan vehahel.", "th-MAY | z-Azawan | v-sit");
     expectLine("zazawan wezebul thodom vahahal ahahalul.", "z-Azawan | [w-sleepy | th-LIVE] | v-see | eye-leave");
-    expectLine("thevem barl zazawan vehahel.", "[th-because | b-that-clause] | z-Azawan | v-sit");
+    expectLine("thavem barl zazawan vehahel.", "[th-because | b-that-clause] | z-Azawan | v-sit");
     expectLine("thunem barl zazawan vehahel.", "[th-CLUES | b-that-clause] | z-Azawan | v-sit");
     expectLine("thugul barl zazawan vehahel.", "[th-DEDUCED.strong | b-that-clause] | z-Azawan | v-sit");
     expectLine("thobal bral barl zazawan vehahel.", "[th-PATTERN.strong | [b-later | b-that-clause]] | z-Azawan | v-sit");
@@ -577,7 +577,7 @@ describe("morphGlossLine — th stance letter", () => {
 describe("morphGlossLine — stance joins and emphatic prohibition", () => {
   it("glosses /th/ join fences", () => {
     expectLine("zazawan vowogal thevom thul.", "z-Azawan | v-walk | th-MEMORY | th-not");
-    expectLine("zazawan vowogal thevem balahen thul.", "z-Azawan | v-walk | [th-because | b-Alahen] | th-not");
+    expectLine("zazawan vowogal thavem balahen thul.", "z-Azawan | v-walk | [th-because | b-Alahen] | th-not");
   });
 
   it("glosses yul yul", () => {

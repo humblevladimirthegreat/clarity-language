@@ -329,7 +329,7 @@ Final **-l / -m / -n / -r** (plus optional **-x**). **Word endings** names the c
 
 ### Epistemic *because*
 
-Reason for the *could be* (**MAY**), not a *because* about the world (`thevem`).
+Reason for the *could be* (**MAY**), not a *because* about the world (`thavem`).
 
 [Reasons, knowledge and plans](say-reasons.md#epistemic-because)
 
@@ -773,7 +773,7 @@ Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-
 
 [Dependents](dependents.md#stand-in)
 
-**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole-np-pole) (`thevem`, `thoyem`) name the relation; the stand-in fills `/b/`.
+**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole-np-pole) (`thavem`, `thoyem`) name the relation; the stand-in fills `/b/`.
 
 ### Special pronoun
 

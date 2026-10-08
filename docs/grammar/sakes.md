@@ -613,7 +613,7 @@ On the clause, a feeling word is about the clause's event: `zalahen vowogal than
 
 A lone feeling can still name what caused it. The cause is not the object: the feeling is not *about* the rain.
 
-> `thulothuruor thevem berehel.`
+> `thulothuruor thavem berehel.`
 >
 > th-competence-unmet-passing-UNPLACED-SURGING | [th-because | b-rain]
 >

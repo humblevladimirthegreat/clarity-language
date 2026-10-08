@@ -55,7 +55,7 @@ Words like *because*, *if*, and *although* attach a dependent clause as a reason
 
 The pole's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* describe the event itself, so they are adverbs on `/h/`.
 
-> `zazawan vezehel thevem barl zalahen vowogal.`
+> `zazawan vezehel thavem barl zalahen vowogal.`
 >
 > z-Azawan | v-sing | [th-because | b-that-clause] | z-Alahen | v-walk
 >
@@ -68,7 +68,7 @@ You can also say:
 <!-- cheat-sheet: linking-clauses -->
 | Agazan | English | Same root as | Cue |
 |--------|---------|--------------|-----|
-| **`thevem barl`** | *because* | `evel` *wall* | 🧱: the cause is what the result sits on |
+| **`thavem barl`** | *because* | `avel` *wall* | 🧱: the cause is what the result sits on |
 | **`thoyem barl`** | *if* | `oyel` *door* | 🚪: walk through only if it opens |
 | **`tholum barl`** | *only if* | `olul` *paper-roll* | 🧻: without it the situation does not run |
 | **`thedam barl`** | *if and only if* | `edal` *east-west* | ↔️: each side only with the other |
@@ -77,7 +77,7 @@ You can also say:
 | **`homam barl`** | *until* | `omal` *timer* | ⏲️: stop when it rings |
 | **`heveham barl`** | *by the time* | `evehal` *finish-line* | 🏁: done by the time you reach the flag |
 | **`habam barl`** | *before* | `abal` *backpack* | 🎒: packed first |
-| **`henum barl`** | *after* | `enul` *hourglass* | ⌛: sand already through |
+| **`hanom barl`** | *after* | `anol` *sand* | ⌛: the sand has already run through |
 | **`hogom barl`** | *so that* / *in order to* | `ogol` *goal* | 🥅: you act so the shot counts |
 
 A command or request makes no claim, so an *if* pole on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Agazan keeps the usual order, with **`barl`** last.
@@ -104,7 +104,7 @@ The sentence after **`barl`** has to name an event or a thing, so it needs a nou
 
 ### Times (*while*, *before*, *after*, *until*, *by*) {#time-poles}
 
-The time poles take a noun the same way. Put the event or period in `/b/` right after **`huwem`** *during*, **`habam`** *before*, **`henum`** *after*, or **`homam`** *until*.
+The time poles take a noun the same way. Put the event or period in `/b/` right after **`huwem`** *during*, **`habam`** *before*, **`hanom`** *after*, or **`homam`** *until*.
 
 > `zazawan vowogal huwem bavodel.`
 >
@@ -112,7 +112,7 @@ The time poles take a noun the same way. Put the event or period in `/b/` right 
 >
 > "Azawan walks during the thunderstorm."
 
-> `zazawan vehahel henum bavodel.`
+> `zazawan vehahel hanom bavodel.`
 >
 > z-Azawan | v-sit | [h-after | b-thunderstorm]
 >
@@ -130,15 +130,15 @@ The time poles take a noun the same way. Put the event or period in `/b/` right 
 
 <a id="as-soon-as"></a>
 
-For *as soon as* / *once*, keep **`henum`** *after* and put the haste word **`wadehum`** in front of it. The gap between the two events is as short as it can be.
+For *as soon as* / *once*, keep **`hanom`** *after* and put the haste word **`wadehum`** in front of it. The gap between the two events is as short as it can be.
 
-> `zazawan vowogal wadehum henum barl zalahen vehahel.`
+> `zazawan vowogal wadehum hanom barl zalahen vehahel.`
 >
 > z-Azawan | v-walk | [[w-haste | h-after] | b-that-clause] | z-Alahen | v-sit
 >
 > "Azawan walks as soon as Alahen sits."
 
-For *since* (from a starting point up to now), see [*from* on a time](hooks.md#since). *Since* meaning *because* is **`thevem barl`**.
+For *since* (from a starting point up to now), see [*from* on a time](hooks.md#since). *Since* meaning *because* is **`thavem barl`**.
 
 Agazan verbs have no past or future form. *Before*, *after*, *while*, and *until* place this event in time relative to the next sentence. A **result** that is still left over, and a **state that used to hold**, are stance words on `/th/`, not times ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
 
@@ -199,7 +199,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *therefore* | `xodum` | ➡️ from *east*: the sun's path, so the talk moves on |
 | *that-clause* | `darl` | **a** ≈ add: the content that follows |
 | *whether-clause* | `dorl` | **o** ≈ one: pick yes or no |
-| *because* | `thevem` | 🧱 from *wall*: the cause is what the result sits on |
+| *because* | `thavem` | 🧱 from *wall*: the cause is what the result sits on |
 | *if* | `thoyem` | 🚪 from *door*: walk through only if it opens |
 | *although* | `hezom` | 🦓 from *zebra*: two stripes, still one animal |
 | *so-that* | `hogom` | 🥅 from *goal*: you act so the shot counts |
@@ -232,11 +232,11 @@ z-Azawan | v-tell | b-Alahen | d-that-clause | z-Ahaben | v-sneak
 **2.** *Alahen runs because a guard sees Ahaben.*
 
 ::: details Show answer
-`zalahen varahal thevem barl zagavol dahaben vahahal.`
+`zalahen varahal thavem barl zagavol dahaben vahahal.`
 
 z-Alahen | v-run | [th-because | b-that-clause] | z-guard | d-Ahaben | v-see
 
-**Also correct:** `zalahen varahal thevem barl dahaben zagavol vahahal.`
+**Also correct:** `zalahen varahal thavem barl dahaben zagavol vahahal.`
 :::
 
 **3.** *Azawan sits despite a guard.*
@@ -574,9 +574,9 @@ Other role letters work the same way as the forward stand-in: **`barth`** after 
 
 ### Time poles on a noun {#time-pole-on-noun}
 
-To place a **thing** in time rather than the event (*the walk after the thunderstorm*), put the [time pole](#dependent-clauses) on `/ɡ/` right after that noun: **`guwem`** *during*, **`gabam`** *before*, **`genum`** *after*, **`gomam`** *until*, **`geveham`** *by*. The `/b/` after it is the event or period, as with the `/h/` pole, or a signed [count from now](knowing.md#dated-channel) (`gabam bazazam grawol` *before tomorrow*).
+To place a **thing** in time rather than the event (*the walk after the thunderstorm*), put the [time pole](#dependent-clauses) on `/ɡ/` right after that noun: **`guwem`** *during*, **`gabam`** *before*, **`ganom`** *after*, **`gomam`** *until*, **`geveham`** *by*. The `/b/` after it is the event or period, as with the `/h/` pole, or a signed [count from now](knowing.md#dated-channel) (`gabam bazazam grawol` *before tomorrow*).
 
-> `zalahen dowogal genum bavodel vahahal.`
+> `zalahen dowogal ganom bavodel vahahal.`
 >
 > z-Alahen | [d-walk | [g-after | b-thunderstorm]] | v-see
 >
@@ -808,7 +808,7 @@ The sentence after one of these verbs has its own subject when the chosen conten
 
 A clause has at most one **stand-in**, at its end. But the dependent clause is a clause too, so it may end in its own **`barl`**, and a further sentence follows it on the **right**.
 
-> `zazawan gezebul thevem barl zalahen vowogal thevem barl zahaben vezebal.`
+> `zazawan gezebul thavem barl zalahen vowogal thavem barl zahaben vezebal.`
 >
 > [z-Azawan | g-sleepy] | [th-because | b-that-clause] | z-Alahen | v-walk | [th-because | b-that-clause] | z-Ahaben | v-sleep
 >

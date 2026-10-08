@@ -60,7 +60,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `gagum` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `gahem` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `gan` | join-relation including (adjective + argument) | [Join-relations](../join-across-roles.md#join-relations) | I |
+| `ganom` | AFTER clause pole (just-after) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
 | `gaon` | join-relation open to (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
+| `gavem` | BECAUSE clause pole (explanatory reason) | [Because, iff, and only because](../causation.md#only-because) | I |
 | `gazam` | locative between (two landmarks) | [Locative relations](../relations.md#locative-relations) | I |
 | `gebum` | locative across (edge to far edge of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
 | `gedam` | IFF clause pole (biconditional) | [Because, iff, and only because](../causation.md#only-because) | I |
@@ -68,9 +70,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `gelel` | mention marker (the span is a word or phrase as spelling) | [Mention](../spans.md#mention) | I |
 | `gelen` | name-string mention marker (the span is a name as spelling) | [Mention](../spans.md#mention) | I |
 | `gen` | join-relation prioritizing (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `genum` | AFTER clause pole (just-after) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
 | `geveham` | BY clause pole (deadline: done at or before the endpoint) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
-| `gevem` | BECAUSE clause pole (explanatory reason) | [Because, iff, and only because](../causation.md#only-because) | I |
 | `gezom` | ALTHOUGH clause pole (concession; NP despite) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `gobom` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `gobum` | stimulus (sake about a noun you do not possess) | [Personal possession](../sakes.md#personal-possession) | B |
@@ -110,12 +110,12 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `hagum` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `hahem` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `han` | join-relation with or including (adverb + argument) | [Join-relations](../join-across-roles.md#join-relations) | I |
+| `hanom` | AFTER clause pole (just-after) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `haon` | join-relation among options (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `hazam` | locative between (two landmarks) | [Locative relations](../relations.md#locative-relations) | I |
 | `hebum` | locative across (edge to far edge of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
 | `hehem` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](../relations.md#exchange) | B |
 | `hen` | join-relation prioritizing (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `henum` | AFTER clause pole (just-after) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `heveham` | BY clause pole (deadline: done at or before the endpoint) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `hewel` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `hewem` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
@@ -160,6 +160,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `thamam` | plan mood itinerary map-resolution (steps on the map) | [Plan](../intention.md#plan) | B |
 | `thamar` | plan mood sketch map-resolution (direction-only intention) | [Plan](../intention.md#plan) | B |
 | `thamom` | residue mood (outcome still on the current tally) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
+| `thavel` | BECAUSE clause pole with fault (the reason broke a norm) | [Fault](../causation.md#fault) | I |
+| `thavem` | BECAUSE clause pole (explanatory reason) | [Because, if, although (poles)](../dependents.md#poles) | B |
+| `thaver` | BECAUSE clause pole with a share (the reason contributed among others) | [Fault](../causation.md#fault) | I |
 | `thavol` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Hold endings (NOTIONAL)](../knowing.md#hold-endings-notional) | I |
 | `thavom` | notional mood default hold (imagining a scene without a further purpose) | [Notional (as-if framing)](../knowing.md#notional-as-if-framing) | I |
 | `thavor` | notional mood suppose hold (toying with a possibility or assumption for now) | [Hold endings (NOTIONAL)](../knowing.md#hold-endings-notional) | I |
@@ -175,9 +178,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `thehum` | decision mood modifiable changeability (open to revision) | [Decision (revisability)](../intention.md#decision-revisability) | I |
 | `thehur` | decision mood temporary changeability (pick for now) | [Decision (revisability)](../intention.md#decision-revisability) | I |
 | `thenom` | former-climate mood (not the climate claimed now) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
-| `thevel` | BECAUSE clause pole with fault (the reason broke a norm) | [Fault](../causation.md#fault) | I |
-| `thevem` | BECAUSE clause pole (explanatory reason) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `thever` | BECAUSE clause pole with a share (the reason contributed among others) | [Fault](../causation.md#fault) | I |
 | `thevol` | memory evidential with strong evidence (vivid memory) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thevom` | memory evidential (remembered firsthand / reconstructive) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `thevor` | memory evidential with weak evidence (hazy memory) | [Evidence strength](../knowing.md#evidence-strength) | I |
@@ -507,10 +507,10 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ebehalanedol` | *walnut* |  |
 | `ebehamalodel` | *argument* | `ebehamalodem` *logic* |
 | `ebehamanagul` | *counterexample* |  |
+| `ebehamavel` | *premise* |  |
 | `ebehamebadal` | *sound* | `ebehamebadam` *soundness* |
 | `ebehamelegel` | *valid* | `ebehamelegem` *validity* |
 | `ebehamevehal` | *conclusion* |  |
-| `ebehamevel` | *premise* |  |
 | `ebehelagedel` | *gummy bear* |  |
 | `ebehelevehol` | *salmon* |  |
 | `ebeholahazal` | *pub* |  |
@@ -541,12 +541,13 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `egevelebedul` | *sparrow* |  |
 | `egevelubol` | *cereal* |  |
 | `egeveluzubal` | *porridge* |  |
+| `egodemehahel` | *couch* |  |
 | `egolanedol` | *pistachio* |  |
 | `egoledehel` | *green tea* |  |
 | `ehadalebezul` | *pocket* |  |
 | `ehebalabahol` | *harbor* |  |
 | `ehebalahazal` | *port* |  |
-| `ehebamagehal` | *tourism* |  |
+| `ehebamevuhel` | *tourism* |  |
 | `ehebelemedol` | *mutton* |  |
 | `ehebelodogal` | *sheepdog* |  |
 | `ehedalabogal` | *louse* |  |

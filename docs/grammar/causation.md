@@ -235,23 +235,23 @@ Several conditions can sit inside `/b/` as a [join](joins.md) (`thoyem bagavul b
 <a id="iff"></a>
 <a id="poles"></a>
 
-Beginner's *if* and *only if* do not claim the condition is true. The table completes the set. Pick the pole by **which way the link runs** (the condition is enough, the outcome needs it, or both) and by whether you **claim** the condition is a fact. Poles take **-m**, on `/th/` after a verb and on `/ɡ/` after a noun. As plain words the roots take ordinary endings (`zevel` *a wall*; `zedam` *reciprocity*).
+Beginner's *if* and *only if* do not claim the condition is true. The table completes the set. Pick the pole by **which way the link runs** (the condition is enough, the outcome needs it, or both) and by whether you **claim** the condition is a fact. Poles take **-m**, on `/th/` after a verb and on `/ɡ/` after a noun. As plain words the roots take ordinary endings (`zavel` *a wall*; `zedam` *reciprocity*).
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thoyem` / `goyem`** | enough; condition not asserted | *if* | `oyel` *door* | 🚪: walk through only if it opens |
-| **`thevem` / `gevem`** | enough; condition asserted as the reason | *because* | `evel` *wall* | 🧱: the cause is what the result sits on |
+| **`thavem` / `gavem`** | enough; condition asserted as the reason | *because* | `avel` *wall* | 🧱: the cause is what the result sits on |
 | **`tholum` / `golum`** | needed; condition not asserted | *only if* / *needs* | `olul` *paper-roll* | 🧻: without it the situation does not run |
-| **`tholum thevem` / `golum gevem`** | needed; condition asserted | *only because* / *depends on* | | 🧻 then 🧱: needed, and named as a fact |
+| **`tholum thavem` / `golum gavem`** | needed; condition asserted | *only because* / *depends on* | | 🧻 then 🧱: needed, and named as a fact |
 | **`thedam` / `gedam`** | both ways; condition not asserted | *if and only if* | `edal` *east-west* | ↔️: each side only with the other |
 
-> `zazawan vowogal thevem barl zalahen vezebal.`
+> `zazawan vowogal thavem barl zalahen vezebal.`
 >
 > z-Azawan | v-walk | [th-because | b-that-clause] | z-Alahen | v-sleep
 >
 > "Azawan walks because Alahen sleeps."
 
-> `zerehel gevem bagavul.`
+> `zerehel gavem bagavul.`
 >
 > z-rain | [g-because | b-cloud]
 >
@@ -263,9 +263,9 @@ Beginner's *if* and *only if* do not claim the condition is true. The table comp
 >
 > "Azawan walks if and only if Alahen sleeps."
 
-*Only because* stacks two poles: **`tholum`** (the outcome needs it), then **`thevem`** with the condition (and it is a fact).
+*Only because* stacks two poles: **`tholum`** (the outcome needs it), then **`thavem`** with the condition (and it is a fact).
 
-> `zazawan vowogal tholum thevem berehel.`
+> `zazawan vowogal tholum thavem berehel.`
 >
 > z-Azawan | v-walk | th-only-if | [th-because | b-rain]
 >
@@ -303,23 +303,23 @@ For *even if*, put the *although* pole **`hezom`** right before **`thoyem`**. Yo
 <!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thevel`** | the reason broke a norm | *it's their fault* / *to blame* | **-l** ≈ locked on a broken rule |
-| **`thevem`** | the reason made it happen; no fault claimed | *because* | **-m** ≈ the ordinary case |
-| **`thever`** | the reason is one share among others | *partly because* / *played a part* | **-r** ≈ one wall of several holding it up |
+| **`thavel`** | the reason broke a norm | *it's their fault* / *to blame* | **-l** ≈ locked on a broken rule |
+| **`thavem`** | the reason made it happen; no fault claimed | *because* | **-m** ≈ the ordinary case |
+| **`thaver`** | the reason is one share among others | *partly because* / *played a part* | **-r** ≈ one wall of several holding it up |
 
-> `zazawan vedabal thevel barl zalahen vezebel.`
+> `zazawan vedabal thavel barl zalahen vezebel.`
 >
 > z-Azawan | v-departure | [th-because.fault | b-that-clause] | z-Alahen | v-tell
 >
 > "Azawan left, and it's on Alahen's telling: that telling was wrong."
 
-> `zazawan vedabal thevem barl zalahen vezebel.`
+> `zazawan vedabal thavem barl zalahen vezebel.`
 >
 > z-Azawan | v-departure | [th-because | b-that-clause] | z-Alahen | v-tell
 >
 > "Azawan left because Alahen told." (a cause, and no one is blamed)
 
-> `zazawan vedabal thever berehel.`
+> `zazawan vedabal thaver berehel.`
 >
 > z-Azawan | v-departure | [th-because.share | b-rain]
 >
@@ -327,7 +327,7 @@ For *even if*, put the *although* pole **`hezom`** right before **`thoyem`**. Yo
 
 The rule from [*because*](#only-because) matters most here: the act goes in `/b/`, not the person (`barl zalahen vezebel` *Alahen's telling*, never `balahen`). So fault lands on what someone did, which leaves room for *Alahen did a wrong thing* without *Alahen is bad*. A thing or circumstance (`berehel`) is fine in `/b/`, because there is no person to blame.
 
-Fault is still a claim. You can hedge it with [MAY](knowing.md#may) right before the pole (`thovum thevel barl …`), or pair **`tholum`** with it for *only because of that fault*.
+Fault is still a claim. You can hedge it with [MAY](knowing.md#may) right before the pole (`thovum thavel barl …`), or pair **`tholum`** with it for *only because of that fault*.
 
 ### CAUSE {#cause}
 <a id="cause-mood"></a>
@@ -342,7 +342,7 @@ As plain words, the same root is `zegel` *a gear* and `vegel` *to mesh / engage*
 >
 > "Azawan walks if there is rain (as mechanism)."
 
-> `zalahen vobohol thegem thevem bavahel.`
+> `zalahen vobohol thegem thavem bavahel.`
 >
 > z-Alahen | v-pour | th-CAUSE | [th-because | b-fire]
 >
@@ -356,7 +356,7 @@ On `/w/` (`wegem`), right before an adjective, CAUSE applies only to that adject
 >
 > "Azawan walks, exerted, that is how the mechanism works."
 
-**Compare with:** *because* / *if* name the condition (`thevem` / `thoyem`). CAUSE says that the link is the mechanism.
+**Compare with:** *because* / *if* name the condition (`thavem` / `thoyem`). CAUSE says that the link is the mechanism.
 
 #### Make someone do it {#make}
 
@@ -368,7 +368,7 @@ In English *Azawan makes Alahen tell*, Azawan makes it happen and Alahen does th
 >
 > "Azawan makes Alahen tell."
 
-When a pole follows **`thegem`**, the `/b/` belongs to the pole, as above (`thegem thevem bavahel` *because of fire, as mechanism*).
+When a pole follows **`thegem`**, the `/b/` belongs to the pole, as above (`thegem thavem bavahel` *because of fire, as mechanism*).
 
 **Compare with:** *let* is [permission](sakes.md#permission), which puts the one who allows it in the same `/b/` slot. *Get someone to* (ask, persuade) is tell + a *to* [stand-in](dependents.md#stand-in).
 
@@ -399,7 +399,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahaben* | `ahaben` |
 | *if* | `thoyem` |
 | *only if* | `tholum` |
-| *because* | `thevem` |
+| *because* | `thavem` |
 | *although* | `hezom` |
 | *rain* | `erehel` |
 | *bell* | `ebehul` |
@@ -424,7 +424,7 @@ z-Azawan | v-run | [th-if | b-that-clause] | z-Alahen | v-tell
 **2.** *There is pressure because of rain.*
 
 ::: details Show answer
-`zagabem gevem berehel.`
+`zagabem gavem berehel.`
 
 z-pressure | [g-because | b-rain]
 :::
@@ -432,7 +432,7 @@ z-pressure | [g-because | b-rain]
 **3.** *Ahaben sits only because there is rain.*
 
 ::: details Show answer
-`zahaben vehahel tholum thevem berehel.`
+`zahaben vehahel tholum thavem berehel.`
 
 z-Ahaben | v-sit | th-only-if | [th-because | b-rain]
 :::
@@ -448,7 +448,7 @@ z-Azawan | v-pour | [th-if | b-lest-clause] | z-Alahen | v-sit
 **5.** *Alahen runs, and it's the fault of Azawan's pouring.*
 
 ::: details Show answer
-`zalahen varahal thevel barl zazawan vobohol.`
+`zalahen varahal thavel barl zazawan vobohol.`
 
 z-Alahen | v-run | [th-because.fault | b-that-clause] | z-Azawan | v-pour
 :::
@@ -471,7 +471,7 @@ z-Azawan | v-sit | [th-iff | b-that-clause] | z-Alahen | v-pour
 *Azawan sits if and only if Alahen pours.*
 :::
 
-**2.** `zalahen vobohol thegem thevem bagabem.`
+**2.** `zalahen vobohol thegem thavem bagabem.`
 
 ::: details Show answer
 z-Alahen | v-pour | th-CAUSE | [th-because | b-pressure]
@@ -487,7 +487,7 @@ z-Ahaben | v-run | h-although | [th-if | b-that-clause] | z-Azawan | v-tell
 *Ahaben runs even if Azawan tells.*
 :::
 
-**4.** `zazawan vedabal thever berehel.`
+**4.** `zazawan vedabal thaver berehel.`
 
 ::: details Show answer
 z-Azawan | v-departure | [th-because.share | b-rain]
@@ -495,7 +495,7 @@ z-Azawan | v-departure | [th-because.share | b-rain]
 *The rain is part of why Azawan left.*
 :::
 
-**5.** `zazawan vehahel thevem barl zalahen debehul vahahal.`
+**5.** `zazawan vehahel thavem barl zalahen debehul vahahal.`
 
 ::: details Show answer
 z-Azawan | v-sit | [th-because | b-that-clause] | z-Alahen | d-bell | v-see
@@ -513,10 +513,10 @@ z-Ahaben | v-scream | [th-CAUSE | b-Alahen]
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azawan sits because Alahen pours* (no one is to blame). `zazawan vehahel thevem barl zalahen vobohol.` or `zazawan vehahel thevel barl zalahen vobohol.`
+**1.** *Azawan sits because Alahen pours* (no one is to blame). `zazawan vehahel thavem barl zalahen vobohol.` or `zazawan vehahel thavel barl zalahen vobohol.`
 
 ::: details Show answer
-`zazawan vehahel thevem barl zalahen vobohol.`
+`zazawan vehahel thavem barl zalahen vobohol.`
 
 z-Azawan | v-sit | [th-because | b-that-clause] | z-Alahen | v-pour
 
@@ -535,10 +535,10 @@ z-Alahen | v-run | [th-if | b-lest-clause] | z-Ahaben | v-tell
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Azawan leaves because of Alahen's telling.* <!-- lint: error -->`zazawan vedabal thevem balahen.`
+**1.** *Azawan leaves because of Alahen's telling.* <!-- lint: error -->`zazawan vedabal thavem balahen.`
 
 ::: details Show answer
-`zazawan vedabal thevem barl zalahen vezebel.`
+`zazawan vedabal thavem barl zalahen vezebel.`
 
 z-Azawan | v-departure | [th-because | b-that-clause] | z-Alahen | v-tell
 

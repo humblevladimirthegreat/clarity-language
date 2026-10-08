@@ -100,7 +100,7 @@ The reply to a fill-ask is the fill as a [citation](../word-endings.md#citation-
 | [Where?](../questions.md#where) | `yol ol bar zahaben vowogal.` | *Where does Ahaben walk?* | I |
 | [Whose?](../questions.md#whose) | `yol zodogal em bar vowogal.` | *Whose dog walks?* | I |
 | [How?](../questions.md#how) | `yol humum bar zazawan vowogal.` | *How does Azawan walk?* | I |
-| [Why?](../questions.md#why) | `yol thevem bar zazawan vowogal.` | *Why does Azawan walk?* | I |
+| [Why?](../questions.md#why) | `yol thavem bar zazawan vowogal.` | *Why does Azawan walk?* | I |
 | [What for?](../questions.md#why) | `yol hogom bar zazawan vowogal.` | *What does Azawan walk for?* | I |
 
 <!-- cheat-sheet: talking -->
@@ -109,7 +109,7 @@ The reply to a fill-ask is the fill as a [citation](../word-endings.md#citation-
 | [`gar`](../questions.md#what-kind) / `gor` / `gur` | *what is it like?* / *like anything?* / *what else is it like?* | I |
 | [`ol bar`](../questions.md#where) / `al bar` / `ul bar` / `el bar` | *where (at)?* / *in what?* / *where from?* / *for what?* | I |
 | [`ol bor`](../questions.md#where) / `ol bur` | *anywhere?* / *where else?* | I |
-| [`thevem bar`](../questions.md#why) | *why?* | I |
+| [`thavem bar`](../questions.md#why) | *why?* | I |
 | [`hogom bar`](../questions.md#why) | *what for?* | I |
 | [`thoyem bar`](../questions.md#why) | *under what condition?* | I |
 
@@ -177,4 +177,4 @@ After your sentence, write `yol` and a polar word as a turn of its own. It asks 
 | `yol` *question* ([asks](../questions.md#question)) | | `?` *unsure voice* ([only sounds unsure](../speech-moves.md#tone-marks)) |
 | `yul` *don't* ([prohibition](../speech-moves.md#speech-act-beginner)) | | `yuel` *no, false* ([answers a claim](../questions.md#polar-stance)) |
 | `yol yael.` *…, right?* ([a tag asks](../questions.md#tags)) | | `yael.` *yes* ([an answer gives](../questions.md#polar-stance)) |
-| `thevem bar` *why?* ([the cause](../questions.md#why)) | | `humum bar` *like what?* ([a model to resemble](../questions.md#how)) |
+| `thavem bar` *why?* ([the cause](../questions.md#why)) | | `humum bar` *like what?* ([a model to resemble](../questions.md#how)) |

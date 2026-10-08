@@ -127,7 +127,7 @@ An explanation of what made something happen slides into blame, and one cause am
 
 English *because of you* can mean you made it happen, you did something wrong, or you were one part of it.
 
-The ending on a [because](causation.md#fault) word says which claim you make: plain cause with no fault (`thevem`), a reason that broke a norm (`thevel`, *it's their fault*), or one share among other causes (`thever`, *partly because*). Plain cause is the default.
+The ending on a [because](causation.md#fault) word says which claim you make: plain cause with no fault (`thavem`), a reason that broke a norm (`thavel`, *it's their fault*), or one share among other causes (`thaver`, *partly because*). Plain cause is the default.
 
 Keeping cause apart from fault helps you explain what happened without blaming, and saying *partly* keeps one person, including you, from carrying a whole outcome.
 

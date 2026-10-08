@@ -422,9 +422,9 @@ English *judging by*, *going by*, and *given that* name the **grounds** for a cl
 >
 > "Alahen punched, judging by the fact that Azawan is screaming."
 
-Grounds are not a cause. With [`thevem barl`](causation.md#only-because), the clause after `barl` is what made the event happen. With a reasoned channel, it is only how you know the event happened: the screaming did not make Alahen punch.
+Grounds are not a cause. With [`thavem barl`](causation.md#only-because), the clause after `barl` is what made the event happen. With a reasoned channel, it is only how you know the event happened: the screaming did not make Alahen punch.
 
-> `zazawan vezugel thevem barl zalahen vabahel.`
+> `zazawan vezugel thavem barl zalahen vabahel.`
 >
 > z-Azawan | v-scream | [th-because | b-that-clause] | z-Alahen | v-punch
 >
@@ -433,7 +433,7 @@ Grounds are not a cause. With [`thevem barl`](causation.md#only-because), the cl
 <!-- cheat-sheet: knowing-intending -->
 | You say | The clause after `barl` is | Form |
 |---------|----------------------------|------|
-| what made it happen | the cause | `thevem barl` |
+| what made it happen | the cause | `thavem barl` |
 | what has to hold for it to happen | the condition | `thoyem barl` / `tholum barl` / `thedam barl` |
 | how you know it happened | your grounds | `thunem barl` / `thobam barl` / `thugum barl` |
 
@@ -461,7 +461,7 @@ You assert the grounds, the way you assert a cause. If you are not sure of them,
 >
 > "Alahen punched, judging by the fact that Azawan is screaming (I am watching)."
 
-**Compare with:** a noun in `/b/` after any channel is its [source](#source) (`thewam bazawan` *according to Azawan*), and no other channel takes `barl`. A cause or condition word may not come before the channel. Put the channel first (`thunem thevem barl`) to say both that you inferred it and that it was caused. *Could be* with no grounds is [MAY](#may).
+**Compare with:** a noun in `/b/` after any channel is its [source](#source) (`thewam bazawan` *according to Azawan*), and no other channel takes `barl`. A cause or condition word may not come before the channel. Put the channel first (`thunem thavem barl`) to say both that you inferred it and that it was caused. *Could be* with no grounds is [MAY](#may).
 
 ### Live vs memory {#live-vs-memory}
 <a id="memory-record"></a>
@@ -562,7 +562,7 @@ English *has left* and *used to tell* mix two things: when the event happened, a
 >
 > "Alahen has left and is still gone, I can see it." (what is left over is in view)
 
-**Compare with:** [*after*](dependents.md#time-poles) (`henum boyel`) orders two events. **`thamom`** does not say the leaving was earlier; it says the **outcome is still in effect**. [LIVE](#live-vs-memory) is how you know, not what is left over. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
+**Compare with:** [*after*](dependents.md#time-poles) (`hanom boyel`) orders two events. **`thamom`** does not say the leaving was earlier; it says the **outcome is still in effect**. [LIVE](#live-vs-memory) is how you know, not what is left over. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
 
 **FORMER** (`eno`) says a usual pattern held, but you are **not** claiming it holds now: *Azawan always tells* as a past habit. Without it, [always](restrictors.md) **`hual`** describes the pattern as it stands now. As a plain noun, `zenom` is *emptiness*. (cue: 🪹 the nesting season is over; a former climate, not today's weather)
 
@@ -774,7 +774,7 @@ A linker is not a channel, so the conclusion keeps your [frame](#carry-forward):
 >
 > "Suppose Azawan is a teacher. Then Azawan teaches. So if Azawan is a teacher, it follows that Azawan teaches."
 
-**Compare with:** strong clues (`thunel`) make a claim likely, but it can still fail with every clue true. A deduction cannot fail unless a premise does. *Because* (`thevem`) says what made it happen; a deduction says only what must be true.
+**Compare with:** strong clues (`thunel`) make a claim likely, but it can still fail with every clue true. A deduction cannot fail unless a premise does. *Because* (`thavem`) says what made it happen; a deduction says only what must be true.
 
 ### Channels as comparison bars {#channel-bars}
 
@@ -1000,14 +1000,14 @@ NOTIONAL with **-l** is a rehearsal; **-m** only imagines the singing.
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Alahen punched, judging by the fact that Azawan screams.* <!-- lint: error -->`zalahen vabahel thevem barl zazawan vezugel.`
+**1.** *Alahen punched, judging by the fact that Azawan screams.* <!-- lint: error -->`zalahen vabahel thavem barl zazawan vezugel.`
 
 ::: details Show answer
 `zalahen vabahel thunem barl zazawan vezugel.`
 
 z-Alahen | v-punch | [th-CLUES | b-that-clause] | z-Azawan | v-scream
 
-The scream is your evidence, so it goes after CLUES; **`thevem`** would make the scream the cause of the punch.
+The scream is your evidence, so it goes after CLUES; **`thavem`** would make the scream the cause of the punch.
 :::
 
 ## Advanced {#advanced}
@@ -1075,7 +1075,7 @@ A [carried](#carry-forward) channel keeps its offset. Date the first sentence of
 >
 > "I saw Azawan walk yesterday. Azawan sat down (yesterday, as I remember)."
 
-A signed measure in the `/b/` of a [time pole](dependents.md#time-poles) (**`homam`** *until*, **`heveham`** *by*, **`habam`** *before*, **`henum`** *after*, **`huwem`** *during*) counts from now, the same way. The pole itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel of its own (a carried frame does not count). So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a pole to slip in a past or future with no warrant. An absolute date in the pole (`homam b_#22,7`) needs none of this.
+A signed measure in the `/b/` of a [time pole](dependents.md#time-poles) (**`homam`** *until*, **`heveham`** *by*, **`habam`** *before*, **`hanom`** *after*, **`huwem`** *during*) counts from now, the same way. The pole itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel of its own (a carried frame does not count). So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a pole to slip in a past or future with no warrant. An absolute date in the pole (`homam b_#22,7`) needs none of this.
 
 > `yel vaheham zehon homam bazazam grawol.`
 >

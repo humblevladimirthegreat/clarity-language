@@ -54,7 +54,7 @@ The ending grades your evidence: **-l** you could show it, **-m** you could desc
 | [A hunch about later](../knowing.md#forecast) | `zalahen thahor bral vedabal.` | *Alahen will leave, a faint hunch.* | I |
 | [A dated claim](../knowing.md#dated-channel): signed time measure | `zazawan thevom bagazem grurel vowogal.` | *I saw Azawan walk three hours ago.* | A |
 | [Later, dated](../knowing.md#dated-channel) | `zalahen thewam bagazem grarel vedabal.` | *I hear Alahen leaves in three hours.* | A |
-| [Give the grounds](../knowing.md#evidence-clause): `barl`, grounds in the next sentence | `thunem thevem barl` | *inferred, and it was caused* | I |
+| [Give the grounds](../knowing.md#evidence-clause): `barl`, grounds in the next sentence | `thunem thavem barl` | *inferred, and it was caused* | I |
 
 | Offset | Sign | Stage |
 |--------|------|-------|
@@ -67,7 +67,7 @@ What a `/b/` after a channel does: a person or thing is the [source](../knowing.
 <!-- cheat-sheet: knowing-intending -->
 | You say | Clause after `barl` is | Form | Stage |
 |---------|------------------------|------|-------|
-| what made it happen | the cause | [`thevem barl`](../knowing.md#evidence-clause) | I |
+| what made it happen | the cause | [`thavem barl`](../knowing.md#evidence-clause) | I |
 | what must hold for it | the condition | [`thoyem barl`](../knowing.md#evidence-clause) / `tholum barl` / `thedam barl` | I |
 | how you know it happened | your grounds | [`thunem barl`](../knowing.md#evidence-clause) / `thobam barl` / `thugum barl` | I |
 
