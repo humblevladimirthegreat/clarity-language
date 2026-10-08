@@ -137,18 +137,20 @@ export function buildLr1(bnf: Bnf): Lr1Result {
   const states: Lr1State[] = [];
   const index = new Map<string, number>();
   const parent: { from: number; symbol: string }[] = [];
-  const intern = (items: ItemSet, from: number, symbol: string): number => {
-    const sig = signature(items);
+  // A state is its kernel's closure, and closure adds only dot-0 items, so two states differ exactly when their
+  // kernels do: key on the kernel and close only new states.
+  const intern = (kernel: ItemSet, from: number, symbol: string): number => {
+    const sig = signature(kernel);
     const known = index.get(sig);
     if (known !== undefined) return known;
     const id = states.length;
-    states.push({ id, items, edges: new Map() });
+    states.push({ id, items: closure(kernel), edges: new Map() });
     index.set(sig, id);
     parent.push({ from, symbol });
     return id;
   };
 
-  intern(closure(new Map([[`${augmented.id}.0`, new Set([END])]])), -1, "");
+  intern(new Map([[`${augmented.id}.0`, new Set([END])]]), -1, "");
   for (let s = 0; s < states.length; s++) {
     const state = states[s]!;
     const kernels = new Map<string, ItemSet>();
@@ -160,7 +162,7 @@ export function buildLr1(bnf: Bnf): Lr1Result {
       kernel.set(`${pid}.${dot + 1}`, new Set(las));
       kernels.set(next, kernel);
     }
-    for (const [symbol, kernel] of kernels) state.edges.set(symbol, intern(closure(kernel), s, symbol));
+    for (const [symbol, kernel] of kernels) state.edges.set(symbol, intern(kernel, s, symbol));
   }
 
   const conflicts: Lr1Conflict[] = [];

@@ -130,7 +130,7 @@ Batches, each merged to main on its own with `npm test` green and `npm run parse
    | Measure | Batch 3 | Batch 4 |
    |---------|---------|---------|
    | Exported grammar | 149 nonterminals, 403 productions, 41 token types | 269 nonterminals, 993 productions, 49 token types |
-   | LR(1) | 2,454 states, 3,388 conflicts from 169 decisions | 5,207 states, 23,445 conflicts from 264 decisions (36 s) |
+   | LR(1) | 2,454 states, 3,388 conflicts from 169 decisions | 5,207 states, 23,445 conflicts from 264 decisions (36 s; 1.5 s once the builder keys states by kernel) |
    | Doc sentences with exactly one gate-free tree | 1,737 | **2,577** |
    | … with two or more | 919, through 53 forks | **79**, through 17 forks |
    | ALL(\*) runtime reports | 23 | 13 |
