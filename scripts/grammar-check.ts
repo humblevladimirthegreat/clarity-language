@@ -11,7 +11,8 @@
  * 4. Lists the ALL(*) ambiguity reports the parser collected over the doc corpus: decisions whose
  *    alternatives the token types alone do not separate, so a gate or payload check decides.
  *
- * Run: npm run grammar-check -- [--json tmp/grammar-check.json] [--examples N]
+ * Run: npm run grammar-check -- [--json tmp/grammar-check.json] [--examples N] [--no-lr1]
+ * (`--no-lr1` skips the LR(1) build, which takes most of the run, for a quick doc-corpus pass.)
  */
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
@@ -29,15 +30,16 @@ import { tokenizeUtterance } from "../src/parse/tokenize.js";
 const args = process.argv.slice(2);
 const jsonOut = args.includes("--json") ? args[args.indexOf("--json") + 1] : undefined;
 const examples = args.includes("--examples") ? Number(args[args.indexOf("--examples") + 1]) : 2;
+const skipLr1 = args.includes("--no-lr1");
 
 const bnf = gastToBnf(sentenceGrammar(), "document", allTokens);
 console.log(`Grammar: ${bnf.nonterminals.size} nonterminals, ${bnf.productions.length} productions, ${bnf.terminals.size} token types`);
 
 // LR(1)
 const t0 = performance.now();
-const lr1 = buildLr1(bnf);
-const groups = groupConflicts(lr1);
-console.log(`LR(1): ${lr1.states.length} states, ${lr1.conflicts.length} conflicts in ${groups.length} decisions (${Math.round(performance.now() - t0)} ms)\n`);
+const lr1 = skipLr1 ? undefined : buildLr1(bnf);
+const groups = lr1 ? groupConflicts(lr1) : [];
+if (lr1) console.log(`LR(1): ${lr1.states.length} states, ${lr1.conflicts.length} conflicts in ${groups.length} decisions (${Math.round(performance.now() - t0)} ms)\n`);
 for (const g of groups) {
   console.log(`${g.kind} on ${[...g.lookaheads].sort().join(" ")}  (${g.states} states)`);
   for (const p of g.reduces) console.log(`  reduce ${showProduction(p)}`);
@@ -110,7 +112,7 @@ if (jsonOut) {
     JSON.stringify(
       {
         grammar: { nonterminals: bnf.nonterminals.size, productions: bnf.productions.length },
-        lr1: {
+        lr1: lr1 && {
           states: lr1.states.length,
           conflicts: lr1.conflicts.length,
           decisions: groups.map((g) => ({

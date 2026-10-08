@@ -51,6 +51,7 @@ import {
   Tone,
   type TokenPayload,
   V,
+  VCont,
   W,
   WPairing,
   WritingSpanB,
@@ -1018,6 +1019,13 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   // *Respectively* (`wazem`) sits only right before a join word (joins.md#respectively).
   const pairing = tokens.findIndex((token, i) => tokenMatcher(token, WPairing) && !isAny(tokens[i + 1] ?? token, [JoinZ, JoinD, JoinB, JoinG, JoinV]));
   if (pairing >= 0) throw new ConstructionError("joinDetail", tokens[pairing]!.image);
+  // A verb on after another verb with no join to close them (joins.md#right-close): the verb list never closes. A join
+  // word right before the verb is a join before its conjuncts instead (`leftFence`, below).
+  if (at > 0 && tokenMatcher(tokens[at]!, VCont) && !tokenMatcher(tokens[at - 1]!, JoinV)) {
+    let verb = at - 1;
+    while (verb > 0 && !isAny(tokens[verb]!, [V, JoinV])) verb -= 1;
+    throw new ConstructionError("joinlessRun", `${tokens[verb]!.image}${verb === at - 1 ? "" : " …"} ${tokens[at]!.image}`);
+  }
   // A `gl-` adjective leans on the noun or call after its hosted `/b/` (clause.md#left-bound-adjectives). The parser
   // stops at the adjective (or a `/w/` before it) when no unit can start there, or at the word after it.
   let gl = -1;

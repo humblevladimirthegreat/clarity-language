@@ -131,17 +131,19 @@ function addToken(token: IToken, out: Set<string>): void {
  */
 function traceRule(name: string): string {
   if (/^[zdb](Package|Noun|NounTagged|StandIn|StandInTagged|Tag)$/.test(name) || name === "citation") return "npPackage";
-  if (/^unit(After[A-Z])?(Open|Shared)?$/.test(name) || name === "hookChain" || name === "unitAfterCross") return "unit";
-  if (name === "clauseAfterCross") return "clause";
-  if (name === "hookUnitOpen" || name === "hookUnitClosed") return "hookUnit";
-  if (name === "clauseItemAfterCross") return "clauseItem";
-  if (name === "vpVerb") return "vpCoordPart";
+  if (/^unit(After[A-Z])?(Open|Shared)?$/.test(name) || /^(hookChain|unitAfterCross|unitNoGlue|unitAfterTurn)$/.test(name)) return "unit";
+  if (/^clause(AfterCross|NoGlue|AfterTurn)$/.test(name)) return "clause";
+  if (/^hookUnit(Plain|Open|Closed)$/.test(name)) return "hookUnit";
+  if (/^clauseItem(AfterCross|NoGlue|AfterTurn)$/.test(name)) return "clauseItem";
+  if (/^bodyClause(NoGlue|AfterTurn)$/.test(name)) return "bodyClause";
+  if (/^leftEdge(Force|Turn|Other)$/.test(name)) return "leftEdge";
+  if (name === "vpVerb" || name === "vpCoordPartFirst") return "vpCoordPart";
   if (/^gSingle(Open|Closed)$/.test(name) || /^gCoordPart(Plain|Lead)$/.test(name)) return "gCoordPart";
   if (name === "gCoordLead" || name === "gCoordPlainLead") return "gCoord";
   if (name === "gJoinCloseRespectively") return "gJoinClose";
   if (/^(gPackage(Open|Closed)|gListItem|glPackage)$/.test(name)) return "gPackage";
   if (/^hSingle(Open|Closed)?$/.test(name) || name === "hGrounds") return "hCoordPart";
-  if (/^hUnit(Open|Closed)$/.test(name) || /^(hStandIn|hScale(Open|Closed)?|frameUnit(Open|Closed)?|barUnit|barStandIn)$/.test(name)) return "hUnitRule";
+  if (/^hUnit(Open|Closed)$/.test(name) || /^(hStandIn|hScale(Open|Closed)?|frameUnit(Open|Closed)?|barUnit|fenceBarUnit|barStandIn|hSharedUnit)$/.test(name)) return "hUnitRule";
   if (/^(sharedAdj(Open|Closed)|sharedScale(Open)?|sharedAdverb)$/.test(name)) return "sharedAfterJoin";
   if (/^[zdb]Coord(Part)?(Open|Closed|Shared|Grounds)$/.test(name)) return name.replace(/(Open|Closed|Shared|Grounds)$/, "");
   if (/^[zdb]JoinClose(Open|Closed|Shared)?$/.test(name)) return "npJoinClose";
@@ -170,7 +172,7 @@ function leadForceName(token: CstElement): string | undefined {
 /** Collect `sentence.*` / `token.*` / `word.*` IDs from one sentence CST. */
 export function addCstConstructions(node: CstNode, out: Set<string>): void {
   for (const [key, elements] of Object.entries(node.children)) {
-    if (node.name === "leftEdge" && key === "LeadForce") {
+    if (traceRule(node.name) === "leftEdge" && key === "LeadForce") {
       for (const element of elements) {
         const name = leadForceName(element);
         if (name) out.add(`sentence.leftEdge.${name}`);
@@ -199,7 +201,7 @@ export function sentenceGrammarKeys(grammar: Record<string, { definition: unknow
     for (const def of defs) {
       const kind = def.constructor.name;
       const add = (key: string): void => {
-        if (rule === "leftEdge" && key === "LeadForce") {
+        if (traceRule(rule) === "leftEdge" && key === "LeadForce") {
           for (const name of Object.values(LEAD_FORCE_NAMES)) keys.add(`sentence.leftEdge.${name}`);
         } else keys.add(traceId(rule, key));
       };

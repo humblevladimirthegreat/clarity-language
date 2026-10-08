@@ -137,6 +137,8 @@ Use the same **`ol …`** for *actually* when you correct what someone expected:
 >
 > "In other words, Ahaben is a dog."
 
+The hook is glue only when the next word is not a `/b/` word. With a `/b/` word right after it, even the stand-in **`barl`**, it is an [extra-noun hook](#extra-noun) instead.
+
 **Compare with:** *however* / *therefore* use [continue](dependents.md#continue-x) linkers. A hook at the front only adds, rephrases, replaces, or takes out.
 
 ### Extra noun (`/b/` after the hook) {#extra-noun}
@@ -218,6 +220,14 @@ For *since* before a sentence, put **`barl`** after **`ul`** and the starting ev
 > z-Azawan | v-walk | [from | b-that-clause] | z-Alahen | v-sleep
 >
 > "Azawan has been walking since Alahen fell asleep."
+
+English often puts *since* first (*Since Alahen fell asleep, Azawan has been walking*). Agazan keeps **`ul barl`** after the main clause, because the sentence after **`barl`** runs to the period. As a short answer, the pair and the starting event can stand alone:
+
+> `ul barl zalahen vezebal.`
+>
+> [from | b-that-clause] | z-Alahen | v-sleep
+>
+> "Since Alahen fell asleep."
 
 **`ul`** is the only hook that takes **`barl`**. Every other hook needs a real noun in `/b/`.
 

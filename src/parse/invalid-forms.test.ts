@@ -282,6 +282,10 @@ const ROWS: Row[] = [
   // Only `ul` takes `barl` (hooks.md#since); *contrary to* an event is `hezom barl`.
   { invalid: "zazawan vowogal uem barl zalahen vezebal.", rejection: "hookStandIn", valid: "zazawan vowogal hezom barl zalahen vezebal." },
   { invalid: "zazawan vowogal el barl zalahen vezebal.", rejection: "hookStandIn", valid: "zazawan vowogal ul barl zalahen vezebal." },
+  // Two verbs in one clause take a join, even with other words between them (joins.md#right-close).
+  { invalid: "zazawan vowogal hadehum varahal.", rejection: "joinlessRun", valid: "zazawan vowogal hadehum varahal val." },
+  // At the front too: `barl` right after the hook makes it an extra-noun hook, not glue (hooks.md#discourse-hooks).
+  { invalid: "al barl zalahen vezebal.", rejection: "hookStandIn", valid: "ul barl zalahen vezebal." },
   // The sentence after `barl` needs more than a stance word (dependents.md#dependent-clauses).
   { invalid: "zazawan vowogal hezom barl thedel.", rejection: "dependentStanceOnly", valid: "zazawan vowogal uem thedel." },
   { invalid: "zazawan vowogal hezom barl thedel thewam.", rejection: "dependentStanceOnly", valid: "zazawan vowogal hezom barl thulothuruor." },

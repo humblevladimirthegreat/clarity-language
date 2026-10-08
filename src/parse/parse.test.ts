@@ -877,3 +877,68 @@ describe("negation scope at a fence or a pole", () => {
     assert.equal(pole?.kind === "h" && pole.unit.hosted?.bound.raw, "berehel");
   });
 });
+
+describe("parse — one tree per sentence (syntactic-unambiguity batch 5a)", () => {
+  const units = (text: string) => parseText(text).utterances[0]!.bodies[0]!.clause.units;
+
+  it("reads a fronted hook as glue unless a /b/ word comes right after it", () => {
+    assert.equal(parseText("al zazawan vowogal.").utterances[0]!.left.hook?.raw, "al");
+    const since = parseText("ul barl zalahen vezebal.").utterances[0]!;
+    assert.equal(since.left.hook, undefined);
+    const [hook] = since.bodies[0]!.clause.units;
+    assert.ok(hook?.kind === "hook" && hook.job === "extraNoun");
+    assert.ok(since.bodies[0]!.clause.dependent);
+  });
+
+  it("keeps an in-clause hook after a written act word", () => {
+    const utterance = parseText("yal al zazawan vowogal.").utterances[0]!;
+    assert.equal(utterance.left.hook, undefined);
+    assert.equal(utterance.bodies[0]!.clause.units[0]!.kind, "hook");
+  });
+
+  it("gives a plain adjective after a call to the call", () => {
+    const utterance = parseText("yohun galuden.").utterances[0]!;
+    assert.deepEqual(utterance.left.vocativeAdjs?.[0]?.adjs.map((a) => a.word.raw), ["galuden"]);
+    assert.equal(utterance.bodies.length, 0);
+  });
+
+  it("fills a hosted /b/ slot with the list that starts right after the host", () => {
+    const [, , h] = units("zalahen vehahel hazam bedehal bezedel bal.");
+    assert.ok(h?.kind === "h");
+    assert.deepEqual(h.unit.hosted?.boundJoin?.members.map((m) => m.raw), ["bezedel"]);
+    assert.equal(h.unit.hosted?.boundJoin?.join.raw, "bal");
+  });
+
+  it("puts words between joined verbs on the later verb, and words before the first verb on the clause", () => {
+    const list = units("zazawan vowogal dahaben vahahal val.");
+    assert.equal(list.length, 2);
+    const vp = list[1]!;
+    assert.ok(vp.kind === "vp");
+    assert.equal(vp.coord.parts[0]!.itemUnits?.[0]?.verb.raw, "vahahal");
+    assert.deepEqual(units("zazawan dalahen vanadel vul.").map((u) => u.kind), ["np", "np", "vp"]);
+  });
+
+  it("shares an /h/ after a verb join, but not a /th/ stance", () => {
+    const shared = units("zazawan vowogal varahal val hahegem.")[1]!;
+    assert.ok(shared.kind === "vp");
+    assert.deepEqual(shared.coord.parts[0]!.shared.map((s) => s.word.raw), ["hahegem"]);
+    assert.deepEqual(units("zalahen vedabal vul thegem bazawan.").map((u) => u.kind), ["np", "vp", "h"]);
+  });
+
+  it("gives barl after a stance join to the pole", () => {
+    const clause = parseText("zazawan vowogal thavem thul barl zalahen varahal.").utterances[0]!.bodies[0]!.clause;
+    assert.ok(clause.dependent);
+    assert.ok(!clause.units.some((u) => u.kind === "np" && u.coord.level === "b"));
+  });
+
+  it("ranks a closed ua fence as one item only right after its join", () => {
+    const [z] = units("zugul om bamun thamam zel garagam.");
+    assert.ok(z?.kind === "np");
+    assert.equal(z.coord.parts.length, 1);
+    assert.equal(z.coord.parts[0]!.items.length, 2);
+    // Right after a closed `ua` fence, the bar starts a part of its own that ranks the whole fence.
+    const [fence] = units("zuam gaxadadal thobam zel hral vabogam.");
+    assert.ok(fence?.kind === "np");
+    assert.deepEqual(fence.coord.parts.map((p) => p.items.map((i) => i.kind)), [[], ["bar"]]);
+  });
+});

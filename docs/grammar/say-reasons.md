@@ -400,7 +400,7 @@ An argument has three parts, and each has its own slot. The **link** between pre
 
 > `zazawan vowogal vul thugum thoyem barl zazawan vezebal.`
 >
-> z-Azawan | [v-walk | v-not | th-DEDUCED] | [th-if | b-that-clause] | z-Azawan | v-sleep
+> z-Azawan | [v-walk | v-not] | th-DEDUCED | [th-if | b-that-clause] | z-Azawan | v-sleep
 >
 > "If Azawan sleeps, it follows that Azawan isn't walking." (the two rule each other out)
 

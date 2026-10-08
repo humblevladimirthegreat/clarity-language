@@ -15,7 +15,7 @@ import {
   OdoB,
   OdoD,
   Polar,
-  V,
+  VPlain,
 } from "./tokens.js";
 import { classify } from "./classify.js";
 import { parseWord } from "./word.js";
@@ -49,8 +49,8 @@ describe("segmentUtterance", () => {
 });
 
 describe("classifyToTokenType", () => {
-  it("maps join-act van to V", () => {
-    assert.equal(classifyToTokenType(lex("van")).name, V.name);
+  it("maps join-act van to a plain verb", () => {
+    assert.equal(classifyToTokenType(lex("van")).name, VPlain.name);
   });
 
   it("maps fence-join val to JoinV", () => {

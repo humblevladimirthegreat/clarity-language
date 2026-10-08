@@ -65,7 +65,7 @@ Each item in a verb-phrase join is a verb plus the words that go with it, and an
 
 When every item is a bare verb, a `/d/` right after the join is SHARED, the object of every verb: `vahahal vabovul vam dabovul` → *sees and tempts an apple*.
 
-An adverb `/h/` before all the joined verbs, or SHARED after the join, covers every item. An `/h/` inside an item covers only that item.
+An adverb `/h/` before all the joined verbs, or SHARED after the join, covers every item. An `/h/` inside an item covers only that item. A [stance](clause.md#stance-th) `/th/` word after the join is not SHARED: like any stance word, it is about the whole claim.
 
 > `zazawan dababol vugugel hugem bavahel vehahel val.`
 >

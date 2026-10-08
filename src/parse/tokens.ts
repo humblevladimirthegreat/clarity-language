@@ -44,6 +44,12 @@ export const Z = wordToken("Z");
 export const D = wordToken("D");
 export const B = wordToken("B");
 export const V = wordToken("V");
+export const VPlain = wordToken("VPlain", [V]);
+/**
+ * A verb right after another verb or a `/v/` join, past only the `/h/`, `/d/` and `/b/` words of its own item: it goes on
+ * a verb list, so it never starts one (join-across-roles.md#vp-clause-forms). Set by `markContext`.
+ */
+export const VCont = wordToken("VCont", [V]);
 /** A `/ɡ/` word: a plain adjective describes what is before it; a `gl-` adjective leans on the noun or call after it (clause.md#left-bound-adjectives). */
 export const G = wordToken("G");
 export const GPlain = wordToken("GPlain", [G]);
@@ -54,7 +60,7 @@ export const WPlain = wordToken("WPlain", [W]);
 export const WAsOf = wordToken("WAsOf", [W]);
 /** Respectively `wazem`: right before a join word, it pairs the list item by item with an earlier one (joins.md#respectively). */
 export const WPairing = wordToken("WPairing", [W]);
-/** An `/h/` adverb or a `/th/` stance word. A plain adjective after an `/h/` host's `/b/` describes that noun; after a `/th/` host's, it does not (clause.md#complex-chaining). */
+/** An `/h/` adverb or a `/th/` stance word. A plain adjective after either host's `/b/` describes that noun (clause.md#complex-chaining). */
 export const H = wordToken("H");
 export const HPlain = wordToken("HPlain", [H]);
 export const HTh = wordToken("HTh", [H]);
@@ -66,7 +72,17 @@ export const HostedB = wordToken("HostedB");
 /** A hosted `/b/` number: an offset or amount, which no adjective describes. */
 export const HostedBNumber = wordToken("HostedBNumber", [HostedB]);
 export const HostedBNoun = wordToken("HostedBNoun", [HostedB]);
+/** A hosted `/b/` whose `/b/` words run on to a `/b/` join: the list fills the hosted slot (joins.md#right-close). */
+export const HostedBJoined = wordToken("HostedBJoined", [HostedB]);
 export const HostedOdo = wordToken("HostedOdo");
+/** An `/h/` adverb right after a `/v/` join (past any `/w/`): SHARED, it covers every verb (join-across-roles.md#vp-clause-forms). Set by `markContext`. */
+export const HSharedV = wordToken("HSharedV");
+/**
+ * `barl` that fills a `/th/` host from further right, so it is never a `/b/` stand-in of its own: after a stance join
+ * that closes a pole with no `/b/` (join-across-roles.md#stance-join-before-barl), or after a channel's offset
+ * (knowing.md#evidence-clause). Set by `markContext`.
+ */
+export const LateOdo = wordToken("LateOdo");
 /** A cardinal `/ɡ/` number right after a hosted `/b/`: that unit's amount (numbers-applied.md#measure-phrases). Set by `markContext`. */
 export const Amount = wordToken("Amount");
 /** A signed `/h/` number right after an equative's shared scale: the factor (comparatives.md#factor). Set by `markContext`. */
@@ -82,6 +98,9 @@ export const HFrame = wordToken("HFrame");
 export const BScale = wordToken("BScale");
 /** A `/th/` stance word that is a rank fence's bar: it runs up to the list's rank join (comparatives.md#bars). Set by `markContext`. */
 export const Bar = wordToken("Bar");
+export const BarPlain = wordToken("BarPlain", [Bar]);
+/** The first bar right after a closed `ua` fence: the whole fence is its ranked item (comparatives.md § every bar). Set by `markContext`. */
+export const FenceBar = wordToken("FenceBar", [Bar]);
 /** A bare tag **-l** (`zwal`): it names the phrase right before it, or a new referent (pronouns.md#tag-pronouns). */
 export const TagZ = wordToken("TagZ");
 export const TagD = wordToken("TagD");
@@ -100,6 +119,10 @@ export const Vocative = wordToken("Vocative");
 export const Interjection = wordToken("Interjection");
 export const Linker = wordToken("Linker");
 export const Hook = wordToken("Hook");
+/** A hook with no `/b/` word (or frame) right after it: at the front of a sentence, glue (hooks.md#discourse-hooks). */
+export const HookPlain = wordToken("HookPlain", [Hook]);
+/** A hook with a `/b/` word right after it (an extra noun, hooks.md#extra-noun), or `uem` with its frame. Set by `markContext`. */
+export const HookHosting = wordToken("HookHosting", [Hook]);
 /** A written span as a noun-phrase head, by slot. A span with no slot letter keeps the bare category, which no rule takes. */
 export const WritingSpan = wordToken("WritingSpan");
 export const WritingSpanZ = wordToken("WritingSpanZ", [WritingSpan]);
@@ -127,6 +150,8 @@ export const allTokens = [
   D,
   B,
   V,
+  VPlain,
+  VCont,
   G,
   GPlain,
   GGl,
@@ -140,13 +165,18 @@ export const allTokens = [
   HostedB,
   HostedBNumber,
   HostedBNoun,
+  HostedBJoined,
   HostedOdo,
+  HSharedV,
+  LateOdo,
   Amount,
   Factor,
   HScale,
   HFrame,
   BScale,
   Bar,
+  BarPlain,
+  FenceBar,
   Citation,
   TagZ,
   TagD,
@@ -162,6 +192,8 @@ export const allTokens = [
   Interjection,
   Linker,
   Hook,
+  HookPlain,
+  HookHosting,
   WritingSpan,
   WritingSpanZ,
   WritingSpanD,
@@ -184,7 +216,7 @@ const CONTENT_BY_POS = {
   z: Z,
   d: D,
   b: B,
-  v: V,
+  v: VPlain,
   g: GPlain,
   w: WPlain,
   h: HPlain,
@@ -232,7 +264,7 @@ export type TokenBranch =
 export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; branch: TokenBranch } {
   const { family, pos, reading } = word;
 
-  if (family.kind === "hook") return { type: Hook, branch: "hook" };
+  if (family.kind === "hook") return { type: HookPlain, branch: "hook" };
   // A written span fills its PoS slot: `d[…]` / `z[…]` / `b[…]` are NP heads; `v[…]`, `th(…)`, … take the V / H / … slot.
   if (family.kind === "writingSpan") {
     // Under `/y/`: a named span (`y@<Sam>`) calls someone; any other span is the reaction itself.
@@ -253,7 +285,7 @@ export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; bra
     return { type: JOIN_BY_POS[pos as keyof typeof JOIN_BY_POS], branch: "join" };
   }
 
-  if (reading === "joinAct") return { type: V, branch: "joinAct" };
+  if (reading === "joinAct") return { type: VPlain, branch: "joinAct" };
   if (reading === "joinRelation") {
     if (pos === "g") return { type: word.gl ? GGl : GPlain, branch: "joinRelationG" };
     if (pos === "h" || pos === "th") return { type: pos === "th" ? HTh : HPlain, branch: "joinRelationH" };
