@@ -22,14 +22,13 @@ export type ConstructionEntry = { anchor: string; summary: string };
 
 /** Sentence grammar: `rule.childKey` (sub-rule, token type, or LABEL). */
 export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
-  "document.utterance": { anchor: "word-endings.md#greeting", summary: "a text is one or more utterances" },
+  "document.sentence": { anchor: "word-endings.md#greeting", summary: "a text is one or more sentences" },
+  "document.Period": { anchor: "word-endings.md#greeting", summary: "sentence end" },
   "document.EOF": { anchor: "word-endings.md#greeting", summary: "end of text" },
 
-  "utterance.leftEdge": { anchor: "speech-moves.md#vocative", summary: "turn cluster before the body" },
-  "utterance.edgeBody": { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "body after a turn cluster" },
-  "utterance.bodyClause": { anchor: "word-endings.md#greeting", summary: "body with no turn cluster (implied yal)" },
-  "utterance.Period": { anchor: "word-endings.md#greeting", summary: "sentence end" },
-  "utterance.nextBody": { anchor: "dependents.md#which-person-or-thing-who-that-which", summary: "next sentence in the same turn" },
+  "sentence.leftEdge": { anchor: "speech-moves.md#vocative", summary: "turn cluster before the body" },
+  "sentence.edgeBody": { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "body after a turn cluster" },
+  "sentence.bodyClause": { anchor: "word-endings.md#greeting", summary: "body with no turn cluster (implied yal, or the turn's earlier act)" },
 
   "leftEdge.turnWord": { anchor: "speech-moves.md#vocative", summary: "call, greeting, or reaction at the left edge" },
   "turnWord.Vocative": { anchor: "speech-moves.md#vocative", summary: "the call or greeting name" },
@@ -83,7 +82,6 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "bCoordPart.bar": { anchor: "comparatives.md#bars", summary: "/th/ stance word as a rank fence's bar" },
   "bCoordPart.npJoinClose": { anchor: "joins.md#right-close", summary: "/b/ join after its conjuncts" },
   "bCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /b/ join" },
-  "npConjunct.npPackage": { anchor: "word-endings.md#greeting", summary: "noun with its adjectives" },
   "npJoinClose.JoinZ": { anchor: "joins.md#and-lists-a", summary: "/z/ join fence" },
   "npJoinClose.JoinD": { anchor: "joins.md#and-lists-a", summary: "/d/ join fence" },
   "npJoinClose.JoinB": { anchor: "joins.md#and-lists-a", summary: "/b/ join fence" },

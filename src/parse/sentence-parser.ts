@@ -1,4 +1,4 @@
-import { CstParser, EOF, type CstNode, type IToken } from "chevrotain";
+import { CstParser, EOF, tokenMatcher, type CstNode, type IToken, type TokenType } from "chevrotain";
 import { LLStarLookaheadStrategy } from "chevrotain-allstar";
 
 import {
@@ -21,6 +21,9 @@ import {
   lexWordFromToken,
   Linker,
   Odo,
+  OdoB,
+  OdoD,
+  OdoZ,
   Period,
   Polar,
   QMark,
@@ -29,10 +32,14 @@ import {
   Vocative,
   Interjection,
   W,
-  WritingSpan,
+  WAsOf,
+  WPlain,
+  WritingSpanB,
+  WritingSpanD,
+  WritingSpanZ,
   Z,
 } from "./tokens.js";
-import { isAsOfOverlay, isNamedStandIn, isStandIn } from "./classify.js";
+import { isNamedStandIn, isStandIn } from "./classify.js";
 import { assignHookJobs } from "./hook-jobs.js";
 import { topicEffect } from "./linkers.js";
 import { BAR_SERIES, isScaleStem, RANK_SERIES } from "./series.js";
@@ -77,21 +84,26 @@ function isStanceJoin(token: IToken): boolean {
   return token.tokenType === JoinH && (token.payload as LexWord | undefined)?.pos === "th";
 }
 
-function tokenIs(token: IToken, ...types: { tokenTypeIdx?: number }[]): boolean {
-  return types.some((type) => token.tokenType === type);
+/** The token is one of these types, or a member of one of these categories (`W`, `Odo`). */
+function tokenIs(token: IToken, ...types: TokenType[]): boolean {
+  return types.some((type) => tokenMatcher(token, type));
 }
 
 type NpSlot = "z" | "d" | "b";
+const NP_SLOTS = ["z", "d", "b"] as const;
+
+/** The head tokens of a noun phrase at each slot: a noun, a stand-in, or a written span. */
+const NP_HEAD = {
+  z: { noun: Z, standIn: OdoZ, span: WritingSpanZ },
+  d: { noun: D, standIn: OdoD, span: WritingSpanD },
+  b: { noun: B, standIn: OdoB, span: WritingSpanB },
+} as const;
 
 function npSlot(token: IToken): NpSlot | undefined {
-  if (token.tokenType === JoinZ || token.tokenType === Z) return "z";
-  if (token.tokenType === JoinD || token.tokenType === D) return "d";
-  if (token.tokenType === JoinB || token.tokenType === B) return "b";
-  if (token.tokenType === Odo || token.tokenType === WritingSpan) {
-    const pos = (token.payload as LexWord | undefined)?.pos;
-    if (pos === "z" || pos === "d" || pos === "b") return pos;
-  }
-  return undefined;
+  return NP_SLOTS.find((slot) => {
+    const head = NP_HEAD[slot];
+    return tokenIs(token, NP_JOIN[slot], head.noun, head.standIn, head.span);
+  });
 }
 
 function isGlHead(token: IToken): boolean {
@@ -106,7 +118,7 @@ function isScopeThoVerb(token: IToken): boolean {
 }
 
 function isAsOfWToken(token: IToken): boolean {
-  return token.tokenType === W && isAsOfOverlay((token.payload as LexWord) ?? {});
+  return tokenIs(token, WAsOf);
 }
 
 
@@ -119,12 +131,12 @@ function laAfterW(parser: AgazanSentenceParser, from = 1): number {
   let i = from;
   while (true) {
     const tok = parser.lookahead(i);
-    if (tok.tokenType !== W) return i;
+    if (!tokenIs(tok, W)) return i;
     const ending = (tok.payload as LexWord | undefined)?.ending;
     i += 1;
     if (isAsOfWToken(tok) && ending !== "r") {
       const next = parser.lookahead(i);
-      if (next.tokenType === B || next.tokenType === Odo) i += 1;
+      if (tokenIs(next, B, Odo)) i += 1;
     }
   }
 }
@@ -139,8 +151,8 @@ function respectivelyAdjListAhead(parser: AgazanSentenceParser): boolean {
   while (true) {
     const tok = parser.lookahead(i);
     if (tok.tokenType === JoinG) return marked;
-    if (tok.tokenType !== G && tok.tokenType !== W) return false;
-    marked = tok.tokenType === W && (tok.payload as LexWord | undefined)?.overlay?.kind === "pairing";
+    if (!tokenIs(tok, G, W)) return false;
+    marked = tokenIs(tok, W) && (tok.payload as LexWord | undefined)?.overlay?.kind === "pairing";
     i += 1;
   }
 }
@@ -205,9 +217,19 @@ function vpItemMaterialAhead(parser: AgazanSentenceParser): boolean {
 
 function isNpSlotLookahead(parser: AgazanSentenceParser, slot: NpSlot): boolean {
   if (npSlot(parser.lookahead(1)) === slot) return true;
-  if (isGlHead(parser.lookahead(1)) && npSlot(parser.lookahead(2)) === slot) return true;
+  if (isGlHead(parser.lookahead(1)) && glHeadSlot(parser, 2) === slot) return true;
   const i = laAfterW(parser);
-  return isGlHead(parser.lookahead(i)) && npSlot(parser.lookahead(i + 1)) === slot;
+  return isGlHead(parser.lookahead(i)) && glHeadSlot(parser, i + 1) === slot;
+}
+
+/**
+ * The slot of the noun a `gl-` adjective leans on, from the word after the adjective. A `/b/` there is the
+ * adjective's own hosted noun, so the head is the word after it (`glugol bazawan zodogal`); with no head after
+ * it, the `/b/` slot is tried and fails.
+ */
+function glHeadSlot(parser: AgazanSentenceParser, i: number): NpSlot | undefined {
+  if (!tokenIs(parser.lookahead(i), B)) return npSlot(parser.lookahead(i));
+  return npSlot(parser.lookahead(i + 1)) ?? "b";
 }
 
 /**
@@ -234,18 +256,19 @@ class AgazanSentenceParser extends CstParser {
     this.performSelfAnalysis();
   }
 
+  /** Sentences separated by periods; which sentences share an utterance is read after parsing ({@link buildUtterances}). */
   public document = this.RULE("document", () => {
-    // A new utterance starts only after a sentence end (dependents.md § periods).
-    this.AT_LEAST_ONE({
-      GATE: () => tokenIs(this.LA(0), Period, EOF),
-      DEF: () => {
-        this.SUBRULE(this.utterance);
-      },
+    this.SUBRULE(this.sentence);
+    this.MANY(() => {
+      this.CONSUME(Period);
+      this.OPTION(() => {
+        this.SUBRULE2(this.sentence);
+      });
     });
     this.CONSUME(EOF);
   });
 
-  public utterance = this.RULE("utterance", () => {
+  public sentence = this.RULE("sentence", () => {
     this.OR([
       {
         GATE: () => tokenIs(this.LA(1), Polar, Force) || this.turnWordAhead() || this.discourseHookAhead(),
@@ -262,14 +285,6 @@ class AgazanSentenceParser extends CstParser {
         },
       },
     ]);
-    this.MANY(() => {
-      this.CONSUME(Period);
-      // After a sentence end, a turn word or hook opens a new utterance instead (the document loop takes it).
-      this.OPTION2({
-        GATE: () => !tokenIs(this.LA(1), Polar, Force, Hook) && !this.turnWordAhead(),
-        DEF: () => this.SUBRULE3(this.bodyClause, { LABEL: "nextBody" }),
-      });
-    });
   });
 
   /**
@@ -478,18 +493,9 @@ class AgazanSentenceParser extends CstParser {
   public unit = this.RULE("unit", () => {
     this.OR([
       { GATE: () => this.LA(1).tokenType === IslandOpen, ALT: () => this.SUBRULE(this.islandUnit) },
-      {
-        GATE: () => isNpSlotLookahead(this, "z"),
-        ALT: () => this.SUBRULE(this.npCoord, { ARGS: ["z"], LABEL: "zCoord" }),
-      },
-      {
-        GATE: () => isNpSlotLookahead(this, "d"),
-        ALT: () => this.SUBRULE2(this.npCoord, { ARGS: ["d"], LABEL: "dCoord" }),
-      },
-      {
-        GATE: () => isNpSlotLookahead(this, "b"),
-        ALT: () => this.SUBRULE3(this.npCoord, { ARGS: ["b"], LABEL: "bCoord" }),
-      },
+      { GATE: () => isNpSlotLookahead(this, "z"), ALT: () => this.SUBRULE(this.zCoord) },
+      { GATE: () => isNpSlotLookahead(this, "d"), ALT: () => this.SUBRULE(this.dCoord) },
+      { GATE: () => isNpSlotLookahead(this, "b"), ALT: () => this.SUBRULE(this.bCoord) },
       {
         GATE: () => tokenIs(this.LA(1), V, JoinV),
         ALT: () => this.SUBRULE(this.vpCoord),
@@ -520,21 +526,47 @@ class AgazanSentenceParser extends CstParser {
     this.CONSUME(IslandClose);
   });
 
-  /** A noun-phrase list at level `/z/` `/d/` or `/b/` (the same shape at each level; only the slot letter differs). */
+  /**
+   * Noun-phrase lists, one set of rules per slot (`/z/`, `/d/`, `/b/`). The shape is the same at each slot; only the
+   * head and join tokens differ, so a phrase can only be read at the slot its words carry.
+   */
+  public zCoord = this.npCoordRule("z");
+  public dCoord = this.npCoordRule("d");
+  public bCoord = this.npCoordRule("b");
+  public zCoordPart = this.npCoordPartRule("z");
+  public dCoordPart = this.npCoordPartRule("d");
+  public bCoordPart = this.npCoordPartRule("b");
+  public zPackage = this.npPackageRule("z");
+  public dPackage = this.npPackageRule("d");
+  public bPackage = this.npPackageRule("b");
+  public zJoinClose = this.npJoinCloseRule("z");
+  public dJoinClose = this.npJoinCloseRule("d");
+  public bJoinClose = this.npJoinCloseRule("b");
+
+  private np(level: NpSlot) {
+    return {
+      z: { part: this.zCoordPart, pkg: this.zPackage, close: this.zJoinClose },
+      d: { part: this.dCoordPart, pkg: this.dPackage, close: this.dJoinClose },
+      b: { part: this.bCoordPart, pkg: this.bPackage, close: this.bJoinClose },
+    }[level];
+  }
+
   /** The last join word this list closed, so a bar can rank a closed universal fence as its item. */
   private lastNpJoin: IToken | undefined;
 
-  public npCoord = this.RULE("npCoord", (level: NpSlot = "z") => {
-    this.ACTION(() => {
-      this.lastNpJoin = undefined;
+  private npCoordRule(level: NpSlot) {
+    return this.RULE(`${level}Coord`, () => {
+      this.ACTION(() => {
+        this.lastNpJoin = undefined;
+      });
+      this.AT_LEAST_ONE({
+        GATE: () => isNpSlotLookahead(this, level) || this.universalFenceBarAhead(level),
+        DEF: () => {
+          this.SUBRULE(this.np(level).part);
+        },
+      });
     });
-    this.AT_LEAST_ONE({
-      GATE: () => isNpSlotLookahead(this, level) || this.universalFenceBarAhead(level),
-      DEF: () => {
-        this.SUBRULE(this.npCoordPart, { ARGS: [level] });
-      },
-    });
-  });
+  }
 
   /**
    * A bar right after a closed `ua` fence (`zuam gagadul thobam zel …`): the whole fence is the one ranked item,
@@ -544,82 +576,79 @@ class AgazanSentenceParser extends CstParser {
     return this.lastNpJoin !== undefined && joinSeries(this.lastNpJoin) === "ua" && rankBarAhead(this, level);
   }
 
-  public npCoordPart = this.RULE("npCoordPart", (level: NpSlot = "z") => {
-    this.OR([
-      {
-        GATE: () => this.LA(1).tokenType === NP_JOIN[level],
-        ALT: () => {
-          this.SUBRULE(this.npJoinClose, { LABEL: "standaloneJoin" });
+  private npCoordPartRule(level: NpSlot) {
+    return this.RULE(`${level}CoordPart`, () => {
+      const { pkg, close } = this.np(level);
+      this.OR([
+        {
+          GATE: () => this.LA(1).tokenType === NP_JOIN[level],
+          ALT: () => {
+            this.SUBRULE(close, { LABEL: "standaloneJoin" });
+          },
         },
-      },
-      {
-        GATE: () => !isNpSlotLookahead(this, level) && this.universalFenceBarAhead(level),
-        ALT: () => {
-          this.AT_LEAST_ONE2(() => {
-            this.SUBRULE2(this.hUnitRule, { LABEL: "bar", ARGS: [true] });
-          });
-          this.SUBRULE3(this.npJoinClose);
+        {
+          GATE: () => !isNpSlotLookahead(this, level) && this.universalFenceBarAhead(level),
+          ALT: () => {
+            this.AT_LEAST_ONE2(() => {
+              this.SUBRULE2(this.hUnitRule, { LABEL: "bar", ARGS: [true] });
+            });
+            this.SUBRULE3(close, { LABEL: "npJoinClose" });
+          },
         },
-      },
-      {
-        ALT: () => {
-          this.AT_LEAST_ONE({
-            GATE: () => isNpSlotLookahead(this, level) && this.LA(laAfterW(this)).tokenType !== NP_JOIN[level],
-            DEF: () => {
-              this.SUBRULE(this.npConjunct);
-            },
-          });
-          // A stance word before a rank join is the comparee: the bar (comparatives.md § bars).
-          this.MANY({
-            GATE: () => rankBarAhead(this, level),
-            DEF: () => {
-              this.SUBRULE(this.hUnitRule, { LABEL: "bar", ARGS: [true] });
-            },
-          });
-          this.OPTION({
-            GATE: () => this.LA(laAfterW(this)).tokenType === NP_JOIN[level],
-            DEF: () => {
-              this.SUBRULE2(this.npJoinClose);
-            },
-          });
+        {
+          ALT: () => {
+            this.AT_LEAST_ONE({
+              GATE: () => isNpSlotLookahead(this, level) && this.LA(laAfterW(this)).tokenType !== NP_JOIN[level],
+              DEF: () => {
+                this.SUBRULE(pkg, { LABEL: "npConjunct" });
+              },
+            });
+            // A stance word before a rank join is the comparee: the bar (comparatives.md § bars).
+            this.MANY({
+              GATE: () => rankBarAhead(this, level),
+              DEF: () => {
+                this.SUBRULE(this.hUnitRule, { LABEL: "bar", ARGS: [true] });
+              },
+            });
+            this.OPTION({
+              GATE: () => this.LA(laAfterW(this)).tokenType === NP_JOIN[level],
+              DEF: () => {
+                this.SUBRULE2(close, { LABEL: "npJoinClose" });
+              },
+            });
+          },
         },
-      },
-    ]);
-  });
+      ]);
+    });
+  }
 
-  public npConjunct = this.RULE("npConjunct", () => {
-    this.SUBRULE(this.npPackage);
-  });
-
-  public npJoinClose = this.RULE("npJoinClose", () => {
-    // A `/w/` right before the join word details the list (respectively `wazem`, joins.md § Respectively).
-    this.MANY(() => {
-      this.CONSUME(W);
+  private npJoinCloseRule(level: NpSlot) {
+    return this.RULE(`${level}JoinClose`, () => {
+      // A `/w/` right before the join word details the list (respectively `wazem`, joins.md § Respectively).
+      this.MANY(() => {
+        this.CONSUME(W);
+      });
+      const join = this.CONSUME(NP_JOIN[level]);
+      this.ACTION(() => {
+        this.lastNpJoin = join;
+      });
+      // SHARED /ɡ/ describes every noun; SHARED /h/ or digitless `bral` is only a scale, after a rank / equative / sequence join.
+      this.OPTION({
+        GATE: () =>
+          (this.LA(laAfterW(this)).tokenType === G && !respectivelyAdjListAhead(this)) ||
+          ((tokenIs(this.LA(laAfterW(this)), H) || scaleNumberAhead(this.LA(1))) && RANK_SERIES.has(joinSeries(this.LA(0)))),
+        DEF: () => {
+          const series = joinSeries(this.LA(0));
+          this.SUBRULE(this.sharedAfterJoin);
+          // Factor right after an equative's shared scale: `oe` + `h+2` = *twice as … as* (comparatives.md § factor).
+          this.OPTION2({
+            GATE: () => series === "oe" && factorAhead(this.LA(1)),
+            DEF: () => this.CONSUME(H, { LABEL: "factor" }),
+          });
+        },
+      });
     });
-    const join = this.OR([
-      { ALT: () => this.CONSUME(JoinZ) },
-      { ALT: () => this.CONSUME(JoinD) },
-      { ALT: () => this.CONSUME(JoinB) },
-    ]);
-    this.ACTION(() => {
-      this.lastNpJoin = join;
-    });
-    // SHARED /ɡ/ describes every noun; SHARED /h/ or digitless `bral` is only a scale, after a rank / equative / sequence join.
-    this.OPTION({
-      GATE: () =>
-        (this.LA(laAfterW(this)).tokenType === G && !respectivelyAdjListAhead(this)) ||
-        ((tokenIs(this.LA(laAfterW(this)), H) || scaleNumberAhead(this.LA(1))) && RANK_SERIES.has(joinSeries(this.LA(0)))),
-      DEF: () => {
-        const series = joinSeries(this.LA(0));
-        this.SUBRULE(this.sharedAfterJoin);
-        // Factor right after an equative's shared scale: `oe` + `h+2` = *twice as … as* (comparatives.md § factor).
-        this.OPTION2({
-          GATE: () => series === "oe" && factorAhead(this.LA(1)),
-          DEF: () => this.CONSUME(H, { LABEL: "factor" }),
-        });
-      },
-    });
-  });
+  }
 
   public vpCoord = this.RULE("vpCoord", () => {
     // A `/w/` starts a part only before its join word (respectively `wazem`); any other `/w/` is not a verb part.
@@ -671,8 +700,8 @@ class AgazanSentenceParser extends CstParser {
 
   public vpItemUnit = this.RULE("vpItemUnit", () => {
     this.OR([
-      { GATE: () => npSlot(this.LA(1)) === "d", ALT: () => this.SUBRULE(this.npCoord, { ARGS: ["d"], LABEL: "dCoord" }) },
-      { GATE: () => npSlot(this.LA(1)) === "b", ALT: () => this.SUBRULE2(this.npCoord, { ARGS: ["b"], LABEL: "bCoord" }) },
+      { GATE: () => npSlot(this.LA(1)) === "d", ALT: () => this.SUBRULE(this.dCoord) },
+      { GATE: () => npSlot(this.LA(1)) === "b", ALT: () => this.SUBRULE(this.bCoord) },
       { ALT: () => this.SUBRULE(this.hCoord) },
     ]);
   });
@@ -766,12 +795,8 @@ class AgazanSentenceParser extends CstParser {
           // `thugum thoyem thul barl …`: a stance join may sit between the last open host and its `barl`,
           // so it closes the stance words while the next sentence still fills the host (join-across-roles.md#stance-join-before-barl).
           this.OPTION2({
-            GATE: () =>
-              isStanceJoin(this.LA(0)) &&
-              this.lastHostOpen &&
-              this.LA(1).tokenType === Odo &&
-              (this.LA(1).payload as LexWord | undefined)?.pos === "b",
-            DEF: () => this.CONSUME(Odo, { LABEL: "lateBound" }),
+            GATE: () => isStanceJoin(this.LA(0)) && this.lastHostOpen && tokenIs(this.LA(1), OdoB),
+            DEF: () => this.CONSUME(OdoB, { LABEL: "lateBound" }),
           });
         },
       },
@@ -810,7 +835,7 @@ class AgazanSentenceParser extends CstParser {
               GATE: () =>
                 (host.payload as LexWord | undefined)?.pos === "th" &&
                 (bound.payload as LexWord | undefined)?.family.kind === "number" &&
-                this.LA(1).tokenType === Odo,
+                tokenIs(this.LA(1), Odo),
               DEF: () => this.CONSUME1(Odo),
             });
           },
@@ -876,40 +901,41 @@ class AgazanSentenceParser extends CstParser {
     });
   });
 
-  public npPackage = this.RULE("npPackage", () => {
-    this.OPTION({
-      GATE: () => {
-        const i = laAfterW(this);
-        const la = this.LA(i);
-        return la.tokenType === G && (la.payload as LexWord).gl === true;
-      },
-      DEF: () => {
-        this.SUBRULE(this.gPackage);
-      },
+  private npPackageRule(level: NpSlot) {
+    return this.RULE(`${level}Package`, () => {
+      this.OPTION({
+        GATE: () => {
+          const i = laAfterW(this);
+          const la = this.LA(i);
+          return la.tokenType === G && (la.payload as LexWord).gl === true;
+        },
+        DEF: () => {
+          this.SUBRULE(this.gPackage);
+        },
+      });
+      const head = NP_HEAD[level];
+      this.OR([
+        { ALT: () => this.CONSUME(head.noun) },
+        { ALT: () => this.CONSUME(head.standIn, { LABEL: "Odo" }) },
+        { ALT: () => this.CONSUME(head.span, { LABEL: "WritingSpan" }) },
+      ]);
+      // A `gl-` adjective leans on the next noun, so it ends this package (clause.md#left-bound-adjectives).
+      this.MANY({
+        GATE: () => this.plainAdjAhead(),
+        DEF: () => {
+          this.SUBRULE2(this.gPackage);
+        },
+      });
+      // A hook + `/b/` right before a noun join word, or before a rank fence's bar, belongs to the item before it (joins.md § SHARED after the join).
+      this.OPTION2({
+        GATE: () => this.itemHookAhead(),
+        DEF: () => {
+          this.CONSUME(Hook, { LABEL: "itemHook" });
+          this.CONSUME2(B, { LABEL: "itemHookBound" });
+        },
+      });
     });
-    this.OR([
-      { ALT: () => this.CONSUME(Z) },
-      { ALT: () => this.CONSUME(D) },
-      { ALT: () => this.CONSUME(B) },
-      { ALT: () => this.CONSUME(Odo) },
-      { ALT: () => this.CONSUME(WritingSpan) },
-    ]);
-    // A `gl-` adjective leans on the next noun, so it ends this package (clause.md#left-bound-adjectives).
-    this.MANY({
-      GATE: () => this.plainAdjAhead(),
-      DEF: () => {
-        this.SUBRULE2(this.gPackage);
-      },
-    });
-    // A hook + `/b/` right before a noun join word, or before a rank fence's bar, belongs to the item before it (joins.md § SHARED after the join).
-    this.OPTION2({
-      GATE: () => this.itemHookAhead(),
-      DEF: () => {
-        this.CONSUME(Hook, { LABEL: "itemHook" });
-        this.CONSUME2(B, { LABEL: "itemHookBound" });
-      },
-    });
-  });
+  }
 
   private itemHookAhead(): boolean {
     if (this.LA(1).tokenType !== Hook || this.LA(2).tokenType !== B) return false;
@@ -920,7 +946,7 @@ class AgazanSentenceParser extends CstParser {
   }
 
   public asOfWPair = this.RULE("asOfWPair", () => {
-    this.CONSUME(W);
+    this.CONSUME(WAsOf, { LABEL: "W" });
     // The as-of bound is a /b/ noun, never a stand-in (relations.md § as-of).
     this.OPTION({
       GATE: () => this.LA(1).tokenType === B,
@@ -932,23 +958,15 @@ class AgazanSentenceParser extends CstParser {
 
   /** `landmark`: plain adjectives after the hosted pair describe the landmark (a joined `/ɡ/` list keeps them as list items). */
   public gPackage = this.RULE("gPackage", (landmark = true) => {
-    this.MANY({
-      GATE: () => this.LA(1).tokenType === W && !isAsOfWToken(this.LA(1)),
-      DEF: () => {
-        this.CONSUME(W);
-      },
+    // Plain `/w/` words, then at most one as-of pair, which more plain `/w/` words may follow.
+    this.MANY(() => {
+      this.CONSUME(WPlain, { LABEL: "W" });
     });
-    this.OPTION({
-      GATE: () => isAsOfWToken(this.LA(1)),
-      DEF: () => {
-        this.SUBRULE(this.asOfWPair);
-      },
-    });
-    this.MANY2({
-      GATE: () => this.LA(1).tokenType === W && !isAsOfWToken(this.LA(1)),
-      DEF: () => {
-        this.CONSUME2(W);
-      },
+    this.OPTION(() => {
+      this.SUBRULE(this.asOfWPair);
+      this.MANY2(() => {
+        this.CONSUME2(WPlain, { LABEL: "W" });
+      });
     });
     this.CONSUME(G);
     this.OPTION2(() => {
@@ -1334,18 +1352,12 @@ function buildIsland(cst: CstNode): IslandUnit {
   return { units: childNodes(cst, "unit").flatMap(expandUnits) };
 }
 
-function buildNpItem(cst: CstNode): NpItem {
-  const island = childNodes(cst, "islandUnit")[0];
-  if (island) return { kind: "island", island: buildIsland(island) };
-  return { kind: "package", package: buildNpPackage(childNodes(cst, "npPackage")[0]!) };
-}
-
 function npCoordCst(parent: CstNode): CstNode | undefined {
   return childNodes(parent, "zCoord")[0] ?? childNodes(parent, "dCoord")[0] ?? childNodes(parent, "bCoord")[0];
 }
 
 function npCoordParts(cst: CstNode): CstNode[] {
-  return childNodes(cst, "npCoordPart");
+  return childNodes(cst, `${cst.name[0]}CoordPart`);
 }
 
 /** A bare single tag **-l** (`zwal`): assigns a tag, never a describer stack of its own. */
@@ -1376,7 +1388,7 @@ function buildNpCoord(cst: CstNode): NpCoord {
     const close = partJoinClose(part, "npJoinClose");
     const { join, shared, joinModifiers, factor } = joinFromClose(close);
     const items: NpItem[] = foldTags([
-      ...childNodes(part, "npConjunct").map(buildNpItem),
+      ...childNodes(part, "npConjunct").map((pkg): NpItem => ({ kind: "package", package: buildNpPackage(pkg) })),
       ...childNodes(part, "bar").map((bar): NpItem => ({ kind: "bar", bar: buildHUnit(bar) })),
     ]);
     return { items, join, shared, ...(joinModifiers ? { joinModifiers } : {}), ...(factor ? { factor } : {}) };
@@ -1772,26 +1784,33 @@ function buildBodyClause(cst: CstNode, trailingPunct?: IToken): BodyClause {
   };
 }
 
-function buildUtterance(cst: CstNode): Utterance {
-  const left = buildLeftEdge(childNodes(cst, "leftEdge")[0]);
-  const bodyCsts = [...childNodes(cst, "edgeBody"), ...childNodes(cst, "bodyClause"), ...childNodes(cst, "nextBody")];
-  const periods = childTokens(cst, "Period");
-  const trailing = childToken(cst, "QMark") ?? childToken(cst, "Bang");
+/** The tokens under a CST node, in no particular order. */
+function cstTokens(cst: CstNode): IToken[] {
+  return Object.values(cst.children).flatMap((kids) => kids.flatMap((kid) => ("image" in kid ? [kid] : cstTokens(kid))));
+}
 
-  const bodies: BodyClause[] = [];
-  for (let i = 0; i < bodyCsts.length; i++) {
-    let punct: IToken | undefined;
-    if (i < bodyCsts.length - 1) {
-      punct = periods[i];
-    } else if (trailing) {
-      punct = trailing;
-    } else if (periods[i]) {
-      punct = periods[i];
+/**
+ * Group the document's sentences into utterances. A sentence with a left edge opens a new utterance, and so does one
+ * that starts with a hook (an extra-noun hook after a sentence end starts a new turn); any other sentence continues
+ * the utterance before it. Each body takes the period right after its sentence.
+ */
+function buildUtterances(cst: CstNode, tokens: IToken[]): Utterance[] {
+  const position = new Map(tokens.map((token, i) => [token, i]));
+  const sentences = childNodes(cst, "sentence").map((sentence) => {
+    const at = cstTokens(sentence).map((token) => position.get(token)!);
+    return { cst: sentence, start: Math.min(...at), end: Math.max(...at) };
+  });
+  const utterances: Utterance[] = [];
+  for (const sentence of sentences) {
+    const edge = childNodes(sentence.cst, "leftEdge")[0];
+    if (utterances.length === 0 || edge || tokens[sentence.start]!.tokenType === Hook) {
+      utterances.push({ left: buildLeftEdge(edge), bodies: [] });
     }
-    bodies.push(buildBodyClause(bodyCsts[i]!, punct));
+    const body = childNodes(sentence.cst, "edgeBody")[0] ?? childNodes(sentence.cst, "bodyClause")[0];
+    const next = tokens[sentence.end + 1];
+    if (body) utterances.at(-1)!.bodies.push(buildBodyClause(body, next && tokenIs(next, Period) ? next : undefined));
   }
-
-  return { left, bodies };
+  return utterances;
 }
 
 export function parseSentenceTokens(tokens: IToken[]): ParseResult {
@@ -1806,7 +1825,7 @@ export function parseSentenceTokens(tokens: IToken[]): ParseResult {
     );
   }
 
-  const utterances = childNodes(cst, "utterance").map(buildUtterance);
+  const utterances = buildUtterances(cst, tokens);
   const result = { utterances };
   assignHookJobs(result);
   return result;

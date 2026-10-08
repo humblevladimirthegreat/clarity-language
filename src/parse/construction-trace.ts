@@ -125,13 +125,13 @@ function addToken(token: IToken, out: Set<string>): void {
   for (const id of wordConstructions(payload)) out.add(id);
 }
 
-const NP_LEVELS = ["z", "d", "b"] as const;
-
-/** A noun-phrase list is one rule at three levels; its trace names carry the level (`zCoord.zCoordPart`), because each level is taught in its own section. */
-function levelName(name: string, level: string | undefined): string {
-  if (!level) return name;
-  if (name === "npCoord") return `${level}Coord`;
-  if (name === "npCoordPart") return `${level}CoordPart`;
+/**
+ * Noun-phrase rules come one per slot. Lists and their parts keep the slot in their trace names (`zCoord.zCoordPart`),
+ * because each slot is taught in its own section; a noun package and a join close are one lesson at every slot.
+ */
+function traceRule(name: string): string {
+  if (/^[zdb]Package$/.test(name)) return "npPackage";
+  if (/^[zdb]JoinClose$/.test(name)) return "npJoinClose";
   return name;
 }
 
@@ -146,18 +146,16 @@ function leadForceName(token: CstElement): string | undefined {
 }
 
 /** Collect `sentence.*` / `token.*` / `word.*` IDs from one sentence CST. */
-export function addCstConstructions(node: CstNode, out: Set<string>, level?: string): void {
+export function addCstConstructions(node: CstNode, out: Set<string>): void {
   for (const [key, elements] of Object.entries(node.children)) {
     if (node.name === "leftEdge" && key === "LeadForce") {
       for (const element of elements) {
         const name = leadForceName(element);
         if (name) out.add(`sentence.leftEdge.${name}`);
       }
-    } else out.add(`sentence.${levelName(node.name, level)}.${levelName(key, level)}`);
-    // `unit` labels its noun-phrase list by level (`zCoord` / `dCoord` / `bCoord`).
-    const childLevel = node.name === "unit" && /^[zdb]Coord$/.test(key) ? key[0] : level;
+    } else out.add(`sentence.${traceRule(node.name)}.${key}`);
     for (const element of elements) {
-      if (isCstNode(element)) addCstConstructions(element, out, childLevel);
+      if (isCstNode(element)) addCstConstructions(element, out);
       else addToken(element, out);
     }
   }
@@ -179,11 +177,9 @@ export function sentenceGrammarKeys(grammar: Record<string, { definition: unknow
     for (const def of defs) {
       const kind = def.constructor.name;
       const add = (key: string): void => {
-        if (rule === "npCoord" || rule === "npCoordPart") {
-          for (const level of NP_LEVELS) keys.add(`sentence.${levelName(rule, level)}.${levelName(key, level)}`);
-        } else if (rule === "leftEdge" && key === "LeadForce") {
+        if (rule === "leftEdge" && key === "LeadForce") {
           for (const name of Object.values(LEAD_FORCE_NAMES)) keys.add(`sentence.leftEdge.${name}`);
-        } else keys.add(`sentence.${rule}.${key}`);
+        } else keys.add(`sentence.${traceRule(rule)}.${key}`);
       };
       if (kind === "NonTerminal") {
         add(def.label ?? def.nonTerminalName!);

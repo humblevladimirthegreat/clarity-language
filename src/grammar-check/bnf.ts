@@ -5,6 +5,9 @@
  * rule and the DSL call that made it (`gPackage.MANY2`), so a finding points back at the decision
  * in sentence-parser.ts. Gates, `ACTION`s and rule arguments are invisible here: the BNF is the
  * grammar the parser would have with every gate deleted.
+ *
+ * A token category (`W`, `Odo`) is a set of terminals, as Chevrotain matches it, not a nonterminal:
+ * a production that consumes one becomes one production per member.
  */
 import {
   Alternation,
@@ -62,12 +65,21 @@ export function gastToBnf(rules: Record<string, Rule>, start: string, tokens: To
   const productions: Production[] = [];
   const terminals = new Set<string>();
   const nonterminals = new Set<string>();
+  const categoryMembers = new Map<string, string[]>();
+  /** Placeholder symbol for a consumed category → its member terminals. */
+  const categoryOf = new Map<string, string[]>();
   const add = (lhs: string, rhs: string[], branch: string) => {
     nonterminals.add(lhs);
-    productions.push({ id: productions.length, lhs, rhs, branch });
+    const expanded = rhs.reduce<string[][]>(
+      (acc, symbol) => {
+        const members = categoryOf.get(symbol);
+        return members ? acc.flatMap((head) => members.map((m) => [...head, m])) : acc.map((head) => [...head, symbol]);
+      },
+      [[]],
+    );
+    for (const each of expanded) productions.push({ id: productions.length, lhs, rhs: each, branch });
   };
 
-  const categoryMembers = new Map<string, string[]>();
   for (const token of tokens) {
     for (const category of token.CATEGORIES ?? []) {
       const members = categoryMembers.get(category.name) ?? [];
@@ -82,14 +94,12 @@ export function gastToBnf(rules: Record<string, Rule>, start: string, tokens: To
       terminals.add(type.name);
       return type.name;
     }
-    const lhs = `${type.name}*`;
-    if (!nonterminals.has(lhs)) {
-      for (const member of members) {
-        terminals.add(member);
-        add(lhs, [member], member);
-      }
+    const placeholder = `${type.name}*`;
+    if (!categoryOf.has(placeholder)) {
+      for (const member of members) terminals.add(member);
+      categoryOf.set(placeholder, members);
     }
-    return lhs;
+    return placeholder;
   }
 
   function sequence(rule: string, defs: IProduction[]): string[] {

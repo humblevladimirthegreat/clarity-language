@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 
 import { createToken, CstParser, EOF } from "chevrotain";
+import { LLStarLookaheadStrategy } from "chevrotain-allstar";
 
 import { type Bnf, gastToBnf, type Production } from "./bnf.js";
 import { countDerivations } from "./derivations.js";
@@ -72,4 +73,34 @@ test("gastToBnf names decisions after the rule and DSL call", () => {
   assert.deepEqual(grammar.byLhs.get("top")![0]!.rhs, ["top.MANY", "top.OPTION2", "EOF"]);
   assert.deepEqual(grammar.byLhs.get("top.MANY")!.map((p) => p.branch), ["stop", "repeat"]);
   assert.equal(buildLr1(grammar).conflicts.length, 0);
+});
+
+test("gastToBnf expands a token category into its members, with no reduction between", () => {
+  const W = createToken({ name: "W" });
+  const WPlain = createToken({ name: "WPlain", categories: [W] });
+  const WAsOf = createToken({ name: "WAsOf", categories: [W] });
+  const G = createToken({ name: "G" });
+  const H = createToken({ name: "H" });
+  class Toy extends CstParser {
+    constructor() {
+      super([W, WPlain, WAsOf, G, H], { lookaheadStrategy: new LLStarLookaheadStrategy() });
+      this.performSelfAnalysis();
+    }
+    public top = this.RULE("top", () => {
+      this.OR([{ ALT: () => this.SUBRULE(this.adj) }, { ALT: () => this.SUBRULE(this.adv) }]);
+      this.CONSUME(EOF);
+    });
+    public adj = this.RULE("adj", () => {
+      this.MANY(() => this.CONSUME(WPlain));
+      this.CONSUME(G);
+    });
+    public adv = this.RULE("adv", () => {
+      this.MANY(() => this.CONSUME(W));
+      this.CONSUME(H);
+    });
+  }
+  const grammar = gastToBnf(new Toy().getGAstProductions(), "top", [W, WPlain, WAsOf, G, H]);
+  assert.deepEqual(grammar.byLhs.get("adv.MANY")!.map((p) => p.rhs), [[], ["WPlain", "adv.MANY"], ["WAsOf", "adv.MANY"]]);
+  assert.ok(!grammar.nonterminals.has("W*"));
+  assert.equal(countDerivations(grammar, ["WPlain", "WAsOf", "H", "EOF"]).count, 1);
 });

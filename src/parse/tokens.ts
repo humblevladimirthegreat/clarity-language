@@ -1,7 +1,7 @@
 import { createToken, type IToken, Lexer } from "chevrotain";
 
 import type { LexWord, PunctKind } from "./types.js";
-import { isStandIn } from "./classify.js";
+import { isAsOfOverlay, isStandIn } from "./classify.js";
 import { isTopicCompound } from "./linkers.js";
 
 /** Non-word surface atoms peeled before Peggy. */
@@ -42,16 +42,28 @@ export const D = wordToken("D");
 export const B = wordToken("B");
 export const V = wordToken("V");
 export const G = wordToken("G");
+/** A `/w/` word. An as-of `/w/` opens a pair with the `/b/` after it (relations.md#as-of); every other `/w/` grades what follows. */
 export const W = wordToken("W");
+export const WPlain = wordToken("WPlain", [W]);
+export const WAsOf = wordToken("WAsOf", [W]);
 export const H = wordToken("H");
+/** A forward stand-in, by the slot it fills: a noun-phrase head (`zarl`, `darl`, `barl`) or another slot. */
 export const Odo = wordToken("Odo");
+export const OdoZ = wordToken("OdoZ", [Odo]);
+export const OdoD = wordToken("OdoD", [Odo]);
+export const OdoB = wordToken("OdoB", [Odo]);
+export const OdoOther = wordToken("OdoOther", [Odo]);
 export const Force = wordToken("Force");
 export const Polar = wordToken("Polar");
 export const Vocative = wordToken("Vocative");
 export const Interjection = wordToken("Interjection");
 export const Linker = wordToken("Linker");
 export const Hook = wordToken("Hook");
+/** A written span as a noun-phrase head, by slot. A span with no slot letter keeps the bare category, which no rule takes. */
 export const WritingSpan = wordToken("WritingSpan");
+export const WritingSpanZ = wordToken("WritingSpanZ", [WritingSpan]);
+export const WritingSpanD = wordToken("WritingSpanD", [WritingSpan]);
+export const WritingSpanB = wordToken("WritingSpanB", [WritingSpan]);
 
 export const allTokens = [
   IslandEdge,
@@ -74,8 +86,14 @@ export const allTokens = [
   V,
   G,
   W,
+  WPlain,
+  WAsOf,
   H,
   Odo,
+  OdoZ,
+  OdoD,
+  OdoB,
+  OdoOther,
   Force,
   Polar,
   Vocative,
@@ -83,6 +101,9 @@ export const allTokens = [
   Linker,
   Hook,
   WritingSpan,
+  WritingSpanZ,
+  WritingSpanD,
+  WritingSpanB,
 ];
 
 const JOIN_BY_POS = {
@@ -103,10 +124,13 @@ const CONTENT_BY_POS = {
   b: B,
   v: V,
   g: G,
-  w: W,
+  w: WPlain,
   h: H,
   th: H,
 } as const;
+
+const ODO_BY_POS: Partial<Record<string, AgazanTokenType>> = { z: OdoZ, d: OdoD, b: OdoB };
+const WRITING_SPAN_BY_POS: Partial<Record<string, AgazanTokenType>> = { z: WritingSpanZ, d: WritingSpanD, b: WritingSpanB };
 
 function isForceWord(word: LexWord): boolean {
   if (word.pos !== "y" || word.family.kind !== "joinMarker") return false;
@@ -155,10 +179,10 @@ export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; bra
     if (pos && pos !== "z" && pos !== "d" && pos !== "b" && pos in CONTENT_BY_POS) {
       return { type: CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS], branch: "writingSpanSlot" };
     }
-    return { type: WritingSpan, branch: "writingSpan" };
+    return { type: (pos && WRITING_SPAN_BY_POS[pos]) || WritingSpan, branch: "writingSpan" };
   }
 
-  if (isStandIn(word)) return { type: Odo, branch: "standIn" };
+  if (isStandIn(word)) return { type: (pos && ODO_BY_POS[pos]) || OdoOther, branch: "standIn" };
 
   if (family.kind === "joinMarker" && reading === "join" && pos && pos in JOIN_BY_POS) {
     return { type: JOIN_BY_POS[pos as keyof typeof JOIN_BY_POS], branch: "join" };
@@ -182,6 +206,7 @@ export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; bra
 
   if (pos === "x" && isLinkerWord(word)) return { type: Linker, branch: "linker" };
 
+  if (pos === "w" && isAsOfOverlay(word)) return { type: WAsOf, branch: "content" };
   if (pos && pos in CONTENT_BY_POS) {
     return { type: CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS], branch: "content" };
   }

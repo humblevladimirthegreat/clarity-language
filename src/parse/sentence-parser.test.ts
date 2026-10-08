@@ -50,6 +50,20 @@ describe("sentence-parser synthetic", () => {
     assert.equal(result.utterances[0]!.left.leadForce, undefined);
   });
 
+  it("continues a turn with a plain sentence, and gives each body the period after its own sentence", () => {
+    const result = parseSentenceTokens(tokens("yol. zazawan vowogal"));
+    assert.equal(result.utterances.length, 1);
+    assert.equal(result.utterances[0]!.bodies[0]!.punct, undefined);
+    assert.equal(parseSentenceTokens(tokens("yol. zazawan vowogal.")).utterances[0]!.bodies[0]!.punct, "period");
+  });
+
+  it("reads a /w/ + hook after a period as discourse glue, as at the start (hooks.md#hook-w)", () => {
+    const result = parseSentenceTokens(tokens("zazawan vowogal. wegem al zalahen vezebal."));
+    assert.equal(result.utterances.length, 2);
+    assert.equal(result.utterances[1]!.left.hook?.raw, "al");
+    assert.equal(result.utterances[1]!.left.hookModifiers?.[0]?.raw, "wegem");
+  });
+
   it("parses yal yol / yam yol as a rhetorical question", () => {
     const left = parseSentenceTokens(tokens("yal yol zar vegehel.")).utterances[0]!.left;
     assert.equal(left.leadForce?.raw, "yal");

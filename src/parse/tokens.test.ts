@@ -12,7 +12,8 @@ import {
   Force,
   H,
   JoinV,
-  Odo,
+  OdoB,
+  OdoD,
   Polar,
   V,
 } from "./tokens.js";
@@ -65,10 +66,10 @@ describe("classifyToTokenType", () => {
     assert.equal(classifyToTokenType(lex("yael")).name, Polar.name);
   });
 
-  it("maps darl to Odo", () => {
-    assert.equal(classifyToTokenType(lex("darl")).name, Odo.name);
-    assert.equal(classifyToTokenType(lex("barl")).name, Odo.name);
-    assert.equal(classifyToTokenType(lex("dorl")).name, Odo.name);
+  it("maps darl to the stand-in token of its slot", () => {
+    assert.equal(classifyToTokenType(lex("darl")).name, OdoD.name);
+    assert.equal(classifyToTokenType(lex("barl")).name, OdoB.name);
+    assert.equal(classifyToTokenType(lex("dorl")).name, OdoD.name);
   });
 });
 

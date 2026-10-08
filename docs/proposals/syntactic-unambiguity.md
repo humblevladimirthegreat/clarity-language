@@ -1,6 +1,6 @@
 # Proposal: prove one syntax tree per sentence
 
-**Status:** IN PROGRESS (phase 0 and batch 1 merged)  
+**Status:** IN PROGRESS (phase 0 and batches 1–2 merged)  
 **Related:** none  
 **Design authority:** the grammar pages own every reading. This note covers **parser and test tooling** only. Every attachment rule the work turns up goes to the owning grammar page, or to [design-decisions.md](../meta/design-decisions.md) when a form is ruled out on purpose.
 
@@ -80,6 +80,22 @@ Batches, each merged to main on its own with `npm test` green and `npm run parse
 1. **Switch to ALL(\*)** with [`chevrotain-allstar`](https://www.npmjs.com/package/chevrotain-allstar) (TypeFox / Langium, peer `chevrotain ^13`). Collect its runtime ambiguity reports instead of printing them. The `grammar-check` report already covers the static check that the switch turns off.
    **Done (2026-10-08).** `chevrotain-allstar` 0.5.0, gates unchanged. `parse-snapshot` against the pre-switch commit: 0 of 2,657 spans differ. `grammar-check` unchanged (573 LR(1) conflicts from 155 decisions; 2,601 doc sentences with two or more gate-free trees, through 41 forks) and now lists the runtime reports, collected through `takeAmbiguityReports()` in `sentence-parser.ts`: the same 15 as the experiment below.
 2. **Parser-shape fixes** (causes 1, 2, 5). No grammar decisions; the snapshot must stay empty.
+   **Done (2026-10-08).** `parse-snapshot` against batch 1: 0 of 2,657 spans differ.
+   - **Cause 1:** `document → sentence (Period sentence?)* EOF`. Which sentences share an utterance is read after parsing (`buildUtterances`): a left edge, or a leading hook, opens a new one, which is the rule the deleted gate applied. Two changes outside the docs, both toward them: a `/w/` + hook after a period is now discourse glue, as it is at the start of a text ([hooks § detail on the hook](../grammar/hooks.md#hook-w): "A discourse hook takes `/w/` the same way"). Before, it was an in-clause hook there only. A body also no longer takes the period of an earlier, body-less sentence (`yol. zazawan vowogal` with no final period).
+   - **Cause 2:** `zCoord` / `dCoord` / `bCoord` with their parts, packages (`zPackage`, …) and join closes (`zJoinClose`, …), one set per slot from a loop. Stand-ins and noun-slot written spans got per-slot token types (`OdoZ` / `OdoD` / `OdoB` / `OdoOther`, `WritingSpanZ` / `D` / `B`) as members of the old categories, so every existing `CONSUME(Odo)` still matches. The `gl-` adjective's slot lookahead now skips the adjective's own hosted `/b/` (`glugol bazawan zodogal`). Before, the level-agnostic package hid this.
+   - **Cause 5:** `W` became a category of `WPlain` and `WAsOf`, and `gPackage` is `WPlain* (asOfWPair WPlain*)?` with no gates. The ALL(\*) reports on `gPackage.MANY` (runtime row 3) are gone.
+   - **Tooling:** the BNF export now expands a consumed token category into one production per member. Before, it made the category a nonterminal, so LR(1) had to reduce `WPlain → W` before knowing which rule the word belonged to. Chevrotain matches a category as a set of terminals, so this is the faithful export.
+
+   | Measure | Batch 1 | Batch 2 |
+   |---------|---------|---------|
+   | Exported grammar | 111 nonterminals, 207 productions, 26 token types | 142 nonterminals, 278 productions, 32 token types |
+   | LR(1) | 549 states, 573 conflicts from 155 decisions | 952 states, 808 conflicts from 165 decisions |
+   | … decisions, with the three slot copies counted once | 155 | **106** |
+   | Doc sentences with exactly one gate-free tree | 54 | **651** |
+   | … with two or more | 2,601, through 41 forks | **2,004**, through 36 forks |
+   | ALL(\*) runtime reports | 15 | 13 |
+
+   The raw conflict count rose only because canonical LR(1) builds a separate state for each noun-slot context, and each conflict that is left is counted once per state. Counted by decision, with the slot copies folded together, conflicts fell by a third. Every remaining doc fork is cause 3 (join-less runs: `clauseItem` on `H B` / `G B`, `zCoord` on `Z Z zal`, `hCoord` on `H H`, `gCoord` on `G G`), cause 4 (hosting), or cause 6 (`sentence.OR`, 48 + 7 sentences). Those belong to batches 3 and 5.
 3. **Lists and hosting** (causes 3, 4). Both rules are documented; small doc clarifications may come with them.
 4. **Finer token types** (cause 8 and the payload gates, cause 7's token split). Mechanical.
 5. **Remaining gates**, family by family (the inventory above). A gate that chooses between two valid trees is a grammar decision: it is logged for the editor and lands with its grammar-page edit, never quietly kept in code. Causes 6 and 7 are decided here.
@@ -135,10 +151,52 @@ In rows 1 and 2, a rule chooses between two token-level trees. Rows 3–5 are pr
 
 ## Open questions
 
-1. Scope of the proof: one clause first, then the whole utterance across periods (continue, cross-period joins, topic carry-over)? The utterance is still context-free, just bigger.
-2. If the grammar is unambiguous but not LR(1) somewhere, is a short list of explained conflicts acceptable, or must it reach zero (by reshaping rules or switching to Lezer)?
-3. Causes 6 and 7, and rows 1 and 2 of the runtime reports: are those rules already taught, or are they new decisions?
-4. Cause 3: is a run of same-role words without a join word ever one list? If not, list rules require the join.
+Each question has a recommendation. None of them needs a new grammar decision except the `ul barl` item under question 3, which is logged for the editor.
+
+### 1. Scope: one clause first, or the whole text across periods?
+
+**Recommendation: the whole text from the start, with complete sentences only.**
+
+- **Starting with one clause saves nothing.** The exported grammar already starts at `document`, and the LR(1) check runs on all of it in 44 ms. The cross-period material is already in it: continue, cross-period `/x/` joins (runtime row 4), and stand-ins that point back. Cutting the grammar down to one clause would mean writing a second start symbol and then removing it later.
+- **Cause 1 is the actual work here.** Once the period is part of the rule structure (batch 2), utterance boundaries stop forking and the proof covers the whole text at no extra cost.
+- **Topic carry-over is out of scope.** It decides what a word refers to, not how the tree is built, so it belongs with pronoun resolution (`resolve.ts`), which the Goal already excludes. The same goes for any other reading worked out after parsing.
+- **Fragments need their own entry point.** The doc corpus includes phrase spans that are not sentences (`ul barl`, `thunem bazazam grazol`). The parser accepts them because the period is optional at the end. A fragment has no surrounding context, so it can honestly have two readings, and it should not count against the proof. The parser should keep accepting fragments for doc checking, through a separate start rule (or a fragment flag). The proof and the strict check (batch 6) should then cover only `document`, where every utterance ends in a period.
+
+### 2. Unambiguous but not LR(1): explained conflicts, or zero?
+
+**Recommendation: aim for zero, and allow a short allowlist only when each entry has a stated argument plus a mechanical bounded check. Lezer does not change this.**
+
+- **Most conflicts in an unambiguous grammar can be reshaped away.** Usually the parser only needs one more token before it reduces. Left-factoring or delaying the reduction fixes that, and this is the same kind of work batches 2–4 already do. Each fix is small and local.
+- **Lezer is no way out.** Its build fails on the same LR(1) conflicts. Its GLR markers (`~`) accept an ambiguity on purpose, so they would remove the proof rather than supply it. Lezer is only worth it if we later want the parser itself to serve as the proof, not as a way around a conflict.
+- **If a conflict cannot be reshaped away**, accept it only when all three hold:
+  1. The allowlist entry names the decision (rule and token pair) and states in one paragraph why only one choice can finish a sentence.
+  2. `grammar-check` runs a bounded exhaustive search on that nonterminal: it enumerates every token-type string up to a fixed length that the nonterminal derives and counts trees, in the style of AMBER-type ambiguity detectors. It fails if any string gets two trees.
+  3. The entry is keyed on the exact conflict, so a new conflict, or a changed one, still fails the build.
+- **Why an allowlist and not just a comment:** the end-user promise is that a learner or tool never meets two trees. A conflict with a written argument and a bounded check keeps that promise to a known depth. A conflict with no check makes no promise at all.
+
+### 3. Causes 6 and 7 (runtime rows 1 and 2): taught, or new?
+
+**Recommendation: both rules are already taught. Encode them with a token split and grammar structure, not gates. One edge case (`ul barl` at the front of a sentence) is untaught and is logged for the editor.**
+
+**Cause 6 / row 2, sentence-initial hook.** This is taught. [Hooks § extra noun](../grammar/hooks.md#extra-noun) gives the test: a `/b/` right after the hook makes it an extra-noun hook. [Hooks § detail on the hook](../grammar/hooks.md#hook-w) says the same about the front of a sentence: "A `/b/` right after the hook still makes it an extra-noun hook, not a discourse hook." [Stacked discourse hooks](../grammar/hooks.md#stacked-discourse) repeats the condition ("with no `/b/` right after it").
+
+- **Grammar:** the decision rests on the token after the hook, so it fits LR(1) as is. After the leading `W* Hook`, a `B` (or `JoinB`) lookahead goes into the clause as an extra-noun unit, and anything else closes the left edge as glue. `discourseHookAhead` becomes structure.
+- **Small doc edit:** the Beginner section that teaches glue, [glue this sentence to prior talk](../grammar/hooks.md#discourse-hooks), never states the `/b/` condition; it first appears in an Intermediate section. Add one sentence there. That is a clarification, not a new rule.
+- **Untaught edge case, logged:** `ul barl …` at the front of a sentence. The gate tests only `B` / `JoinB`, so `barl` slips past it. `ul barl zazawan vowogal.` parses today as glue `ul` (*Except, …*) plus a stand-in `barl` clause. Read literally, the rule above makes it the extra-noun *since* + `barl` ([since](../grammar/hooks.md#since)), which would mean *Since Azawan walks, …*. But [since](../grammar/hooks.md#since) only teaches `ul barl` after the main clause, and nothing says where a fronted *since* clause would end. The editor has to choose one of three options: (a) extra-noun *since*, with the doc stating where the dependent clause ends; (b) glue plus stand-in, with the rule above gaining an exception for `barl`; or (c) reject it, in which case it goes to `unassigned-reserved.md`. Until the editor decides, the parser stays as it is.
+
+**Cause 7 / row 1, number `/ɡ/` after a hosted `/b/`.** This is taught. [Clause](../grammar/clause.md) says an adjective after a hosted `/b/` describes that `/b/`: after an `/h/` host (the extra-nouns section, "an adjective after its `/b/` describes that extra noun") and after a relation adjective's pair ("a plain adjective after that pair describes the **extra noun**"). [Measure phrases](../grammar/numbers-applied.md#measure-phrases) put the amount on the unit as a `/ɡ/` number. So a number `/ɡ/` there is **never** the clause's own `/ɡ/`, and the fork in the report is internal: *amount* (`OPTION6`) or *adjective on the landmark* (`MANY5`). Both attach to the same `/b/`.
+
+- **Grammar:** split number `/ɡ/` by marker into token categories: scalar (cardinal), ordinal, and label. The amount slot takes only a scalar. The adjective path takes ordinals and labels, which may host their own `/b/`, plus ordinary `/ɡ/`. The fork disappears, and the AST matches today's, so the snapshot should stay empty.
+- **Worth checking during batch 4:** the rule is stated for `/h/` hosts and relation adjectives. Check whether [clause](../grammar/clause.md) says what an adjective after a `/th/` host's `/b/` describes, since the parser's `landmarkHost` covers only `/h/` and landmark hosts. If the page is silent, log it as a gap; don't decide it in code.
+
+### 4. Cause 3: is a run of same-role words without a join ever one list?
+
+**Recommendation: no. Every list rule requires its join, and a run with no join becomes a run of separate units, or stacked adjectives on one noun.**
+
+- **The docs say so.** [Joins](../grammar/joins.md) says the join after the items "is how you know the list has ended", and a flat list takes exactly one right-close join. [Clause](../grammar/clause.md) says each plain `/h/` or `/th/` word is its own unit. [Restrictors](../grammar/restrictors.md) treats two manner adverbs in a row as two separate descriptions of the act, not a list.
+- **The parser already agrees.** In today's ASTs, `zazawan zalahen vowogal.` gives two `/z/` units, `zazawan vowogal hadehum herobem.` gives two `/h/` units, and `zazawan gadadal gezebul.` gives one noun with two stacked adjectives. A list with no join never shows up in the output. Only the grammar's shape allows it, which is why the change should leave the snapshot empty.
+- **Rule shape:** `list → item+ JOIN`. Keep one or more items, not two or more, because a single item followed by a join is valid: single-item *not X* ([denying a list](../grammar/joins.md#negation-u)). A join word with no items before it is a stand-in, already its own rule. Runs with no join belong to the clause's unit loop, or to the noun package's adjective loop for `/ɡ/`.
+- **A related question this will surface (not part of this proposal):** two `/z/` units with no join in one clause parse fine today. Whether that is meaningful (apposition?) or should be rejected is a question for [clause](../grammar/clause.md). Rejecting it would be a check that only rejects trees, so it never affects the proof either way.
 
 ## Costs and risks
 
