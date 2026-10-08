@@ -11,19 +11,23 @@
  * 4. Lists the ALL(*) ambiguity reports the parser collected over the doc corpus: decisions whose
  *    alternatives the token types alone do not separate, so a gate or payload check decides.
  *
- * Run: npm run grammar-check -- [--json tmp/grammar-check.json] [--examples N] [--no-lr1]
+ * 5. With `--variants`, does step 3 over each doc span with one word deleted or two neighboring words swapped, and
+ *    also lists inputs the parser rejects that the gate-free grammar accepts: a gate (or a check after parsing)
+ *    rejected them.
+ *
+ * Run: npm run grammar-check -- [--json tmp/grammar-check.json] [--examples N] [--no-lr1] [--variants]
  * (`--no-lr1` skips the LR(1) build, which takes most of the run, for a quick doc-corpus pass.)
  */
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 
 import { gastToBnf, showProduction } from "../src/grammar-check/bnf.js";
-import { docSpans } from "../src/grammar-check/corpus.js";
+import { docSpans, spanVariants } from "../src/grammar-check/corpus.js";
 import { countDerivations } from "../src/grammar-check/derivations.js";
 import { buildLr1, groupConflicts } from "../src/grammar-check/lr1.js";
 import { enforceTokens, enforceTones } from "../src/parse/enforce.js";
 import { loadDefaultTables } from "../src/parse/index.js";
-import { markContext, parseSentenceTokens, sentenceGrammar, takeAmbiguityReports } from "../src/parse/sentence-parser.js";
+import { markContext, parseSentenceTokens, SentenceParseError, sentenceGrammar, takeAmbiguityReports } from "../src/parse/sentence-parser.js";
 import { allTokens } from "../src/parse/tokens.js";
 import { tokenizeUtterance } from "../src/parse/tokenize.js";
 
@@ -31,6 +35,7 @@ const args = process.argv.slice(2);
 const jsonOut = args.includes("--json") ? args[args.indexOf("--json") + 1] : undefined;
 const examples = args.includes("--examples") ? Number(args[args.indexOf("--examples") + 1]) : 2;
 const skipLr1 = args.includes("--no-lr1");
+const withVariants = args.includes("--variants");
 
 const bnf = gastToBnf(sentenceGrammar(), "document", allTokens);
 console.log(`Grammar: ${bnf.nonterminals.size} nonterminals, ${bnf.productions.length} productions, ${bnf.terminals.size} token types`);
@@ -47,62 +52,116 @@ for (const g of groups) {
   console.log(`  e.g. ${g.example.prefix.join(" ")} • ${g.example.lookahead}`);
 }
 
-// Doc corpus under the gate-free grammar
+// Doc corpus (and, with --variants, inputs beyond it) under the gate-free grammar
 const tables = loadDefaultTables();
 takeAmbiguityReports(); // Start from a clean list.
 type ForkSummary = { decision: string; branches: string; sentences: number; examples: string[] };
-const forks = new Map<string, ForkSummary>();
-const unfaithful: string[] = [];
-let parsed = 0;
-let ambiguous = 0;
-let cyclic = 0;
+type RejectSummary = { message: string; inputs: number; examples: string[] };
+
+/**
+ * Compare the parser with the gate-free grammar over `spans`. A span the parser accepts with two or more gate-free
+ * trees is one where a gate chose. A span the parser rejects (past tokenizing and the token checks) that the gate-free
+ * grammar accepts is one that a gate, or a check after parsing, rejected.
+ */
+function checkSpans(spans: { file: string; text: string }[]) {
+  const forks = new Map<string, ForkSummary>();
+  const rejects = new Map<string, RejectSummary>();
+  const unfaithful: string[] = [];
+  let parsed = 0;
+  let ambiguous = 0;
+  let cyclic = 0;
+  for (const { file, text } of spans) {
+    let tokens;
+    try {
+      tokens = enforceTones(tokenizeUtterance(text, tables)).tokens;
+      enforceTokens(tokens, tables);
+      if (tokens.length === 0) continue;
+    } catch {
+      continue; // Rejected before parsing: nothing to compare.
+    }
+    let error: unknown;
+    try {
+      parseSentenceTokens(tokens);
+    } catch (e) {
+      error = e;
+    }
+    const names = [...markContext(tokens).map((t) => t.tokenType.name), "EOF"];
+    const result = countDerivations(bnf, names);
+    if (error !== undefined) {
+      if (result.count === 0) continue; // The gate-free grammar rejects it too.
+      const raw = error instanceof Error ? error.message : String(error);
+      const message = error instanceof SentenceParseError ? `parse: ${raw.replace(/'[^']*'/g, "'…'").slice(0, 120)}` : `after parse: ${raw.split(" — ")[0]!.replace(/^[^:]*: /, "")}`;
+      const summary = rejects.get(message) ?? { message, inputs: 0, examples: [] };
+      summary.inputs += 1;
+      if (summary.examples.length < examples) summary.examples.push(`${file}: \`${text}\`  [${names.join(" ")}]`);
+      rejects.set(message, summary);
+      continue;
+    }
+    parsed += 1;
+    if (result.cyclic) cyclic += 1;
+    if (result.count === 0) {
+      unfaithful.push(`${file}: \`${text}\`  [${names.join(" ")}]`);
+      continue;
+    }
+    if (result.count < 2) continue;
+    ambiguous += 1;
+    const seen = new Set<string>();
+    for (const f of result.forks) {
+      const branches = [...new Set(f.branches)].sort().join(" | ") + (new Set(f.branches).size < f.branches.length ? " (+ split)" : "");
+      const key = `${f.lhs}  ${branches}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      const summary = forks.get(key) ?? { decision: f.lhs, branches, sentences: 0, examples: [] };
+      summary.sentences += 1;
+      if (summary.examples.length < examples) summary.examples.push(`${file}: \`${text}\`  [${names.slice(f.start, f.end).join(" ")}]`);
+      forks.set(key, summary);
+    }
+  }
+  return {
+    parsed,
+    ambiguous,
+    cyclic,
+    unfaithful,
+    forks: [...forks.values()].sort((a, b) => b.sentences - a.sentences),
+    rejects: [...rejects.values()].sort((a, b) => b.inputs - a.inputs),
+  };
+}
+
+function report(label: string, r: ReturnType<typeof checkSpans>, ms: number, showRejects: boolean): void {
+  console.log(`\n${label}: ${r.parsed} the parser accepts, checked in ${Math.round(ms)} ms`);
+  console.log(`  ${r.parsed - r.ambiguous - r.unfaithful.length} have exactly one gate-free tree`);
+  console.log(`  ${r.ambiguous} have two or more (a gate chose); ${r.forks.length} distinct forks:`);
+  for (const f of r.forks) {
+    console.log(`  ${String(f.sentences).padStart(5)}  ${f.decision}  ${f.branches}`);
+    for (const e of f.examples) console.log(`         ${e}`);
+  }
+  console.log(`  ${r.unfaithful.length} have none (export not faithful)${r.cyclic ? `; ${r.cyclic} hit a nullable cycle` : ""}`);
+  for (const u of r.unfaithful.slice(0, 20)) console.log(`         ${u}`);
+  if (!showRejects) return;
+  const total = r.rejects.reduce((n, x) => n + x.inputs, 0);
+  console.log(`  ${total} the parser rejects but the gate-free grammar accepts (a gate or a later check rejected), by message:`);
+  for (const x of r.rejects) {
+    console.log(`  ${String(x.inputs).padStart(5)}  ${x.message}`);
+    for (const e of x.examples) console.log(`         ${e}`);
+  }
+}
+
 const t1 = performance.now();
-for (const { file, text } of docSpans()) {
-  let tokens;
-  try {
-    tokens = enforceTones(tokenizeUtterance(text, tables)).tokens;
-    enforceTokens(tokens, tables);
-    if (tokens.length === 0) continue;
-    parseSentenceTokens(tokens);
-  } catch {
-    continue; // Rejected by the parser: nothing to compare.
-  }
-  parsed += 1;
-  const names = [...markContext(tokens).map((t) => t.tokenType.name), "EOF"];
-  const result = countDerivations(bnf, names);
-  if (result.cyclic) cyclic += 1;
-  if (result.count === 0) {
-    unfaithful.push(`${file}: \`${text}\`  [${names.join(" ")}]`);
-    continue;
-  }
-  if (result.count < 2) continue;
-  ambiguous += 1;
-  const seen = new Set<string>();
-  for (const f of result.forks) {
-    const branches = [...new Set(f.branches)].sort().join(" | ") + (new Set(f.branches).size < f.branches.length ? " (+ split)" : "");
-    const key = `${f.lhs}  ${branches}`;
-    if (seen.has(key)) continue;
-    seen.add(key);
-    const summary = forks.get(key) ?? { decision: f.lhs, branches, sentences: 0, examples: [] };
-    summary.sentences += 1;
-    if (summary.examples.length < examples) summary.examples.push(`${file}: \`${text}\`  [${names.slice(f.start, f.end).join(" ")}]`);
-    forks.set(key, summary);
-  }
+const corpus = checkSpans(docSpans());
+report("Doc corpus", corpus, performance.now() - t1, false);
+const { parsed, ambiguous, unfaithful } = corpus;
+const sortedForks = corpus.forks;
+let variantResult: ReturnType<typeof checkSpans> | undefined;
+if (withVariants) {
+  const t2 = performance.now();
+  const spans = spanVariants(docSpans(), ["drop", "swap"]);
+  variantResult = checkSpans(spans);
+  report(`Variants (${spans.length}, one word deleted or two swapped)`, variantResult, performance.now() - t2, true);
 }
-const sortedForks = [...forks.values()].sort((a, b) => b.sentences - a.sentences);
-console.log(`\nDoc corpus: ${parsed} sentences the parser accepts, checked in ${Math.round(performance.now() - t1)} ms`);
-console.log(`  ${parsed - ambiguous - unfaithful.length} have exactly one gate-free tree`);
-console.log(`  ${ambiguous} have two or more (a gate chose); ${forks.size} distinct forks:`);
-for (const f of sortedForks) {
-  console.log(`  ${String(f.sentences).padStart(5)}  ${f.decision}  ${f.branches}`);
-  for (const e of f.examples) console.log(`         ${e}`);
-}
-console.log(`  ${unfaithful.length} have none (export not faithful)${cyclic ? `; ${cyclic} hit a nullable cycle` : ""}`);
-for (const u of unfaithful.slice(0, 20)) console.log(`         ${u}`);
 
 // ALL(*) runtime reports, one per decision and first sentence that reached it
 const ambiguityReports = takeAmbiguityReports();
-console.log(`\nALL(*) ambiguity reports on the doc corpus: ${ambiguityReports.length}`);
+console.log(`\nALL(*) ambiguity reports on the doc corpus${withVariants ? " and variants" : ""}: ${ambiguityReports.length}`);
 for (const r of ambiguityReports) console.log(`  ${compactReport(r)}`);
 
 if (jsonOut) {
@@ -125,6 +184,7 @@ if (jsonOut) {
           })),
         },
         corpus: { parsed, ambiguous, unfaithful, forks: sortedForks },
+        variants: variantResult,
         ambiguityReports,
       },
       null,

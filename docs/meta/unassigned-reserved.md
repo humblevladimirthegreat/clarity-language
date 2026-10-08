@@ -212,6 +212,7 @@ Source: [dependents.md](../grammar/dependents.md#stand-in)
 Source: [dependents.md](../grammar/dependents.md#sentence-linkers)
 
 - **closed (D-32):** a linker and a topic word in one sentence (`xezom xazawan …`).
+- **open:** a linker with no clause after it (`xezom.`). A linker joins the last sentence to the one it starts, so alone it links to nothing; *however* as a reply of its own has not come up. The clearing linkers `xevavem` and `xavazem` stand alone, since clearing the topic is a move of its own. Parser: `linkerAlone`.
 - **open:** firm **-l** on *meanwhile* (`xagagal`), *next* (`xevavel`), and *by the way* (`xavazel`). Not guessable: firmness fits a link that can hold more or less surely (*it follows that*, *nevertheless*, *on the contrary*), and *meanwhile*, *next* and *by the way* claim no such link. The parser rejects them.
 
 ## Turn words (`/y/`)
@@ -221,6 +222,7 @@ Source: [speech-moves.md](../grammar/speech-moves.md#speech-act), [describing a 
 - **closed (closed-root endings):** act and polar series with **-n** (`yan` / `yon` / `yen` / `yun`, `yaen` / …). On `/y/`, **-n** calls someone.
 - **closed (closed-root endings):** a fill-ask blank for the act itself (*are you asking or telling?*). `yar` / `yor` / `yer` / `yur` are the [for-now acts](../grammar/speech-moves.md#act-r).
 - **closed (D-31):** a polar word before an act word, or two polar words in a row; a topic-only question.
+- **open:** an asking tag with a body after it (`yol yael zazawan vowogal.`). The tag asks about the sentence before it and is a turn of its own; a body after it would be a second move in the same turn, and no question has asked for one. Parser: `tagBody`.
 - **closed (D-43):** a `/b/` hosted by a call or reaction; `yuhohul bazawan` is a reaction and then a body with a recipient.
 - **open:** `/w/` on a call (`welavam yalahen`). The person called is not more or less called. Parser: `turnWordModifier`.
 - **open:** `/w/` on an act word or a polar word (`welavam yel`). Firm / soft already grades the act, and the polar stance has its own strengths. The parser rejects them.

@@ -942,3 +942,36 @@ describe("parse — one tree per sentence (syntactic-unambiguity batch 5a)", () 
     assert.deepEqual(fence.coord.parts.map((p) => p.items.map((i) => i.kind)), [[], ["bar"]]);
   });
 });
+
+describe("parse — one tree per sentence (syntactic-unambiguity batch 5b)", () => {
+  const units = (text: string) => parseText(text).utterances[0]!.bodies[0]!.clause.units;
+
+  it("gives a hook and its /b/ right before a join word to the last item", () => {
+    const [z] = units("zodogal em bazawar zal vowogal.");
+    assert.ok(z?.kind === "np");
+    assert.equal(z.coord.parts.length, 1);
+    assert.deepEqual(z.coord.parts[0]!.items.map((i) => i.kind === "package" && i.package.adjs.map((a) => a.word.raw)), [["em"]]);
+  });
+
+  it("ends the main clause at a stand-in, so a stance join after barl opens the grounds", () => {
+    const clause = parseText("zazawan vowogal thavem barl thul zalahen varahal.").utterances[0]!.bodies[0]!.clause;
+    assert.deepEqual(clause.units.map((u) => u.kind), ["np", "vp", "h"]);
+    assert.deepEqual(clause.dependent?.clause.units.map((u) => u.kind), ["h", "np", "vp"]);
+  });
+
+  it("leans a gl- adjective on the noun past the adjectives that describe its /b/", () => {
+    const [z, b] = units("glugol bazawan gugol zodogal balahen vowogal.");
+    assert.ok(z?.kind === "np" && z.coord.level === "z");
+    assert.ok(b?.kind === "np" && b.coord.level === "b");
+  });
+
+  it("takes an asking tag as a turn with no body", () => {
+    const tag = parseText("yol yael.").utterances[0]!;
+    assert.deepEqual(tag.left.polars.map((p) => p.raw), ["yael"]);
+    assert.equal(tag.bodies.length, 0);
+  });
+
+  it("still takes a clearing linker alone", () => {
+    assert.equal(parseText("xevavem.").utterances[0]!.bodies[0]!.linker?.raw, "xevavem");
+  });
+});

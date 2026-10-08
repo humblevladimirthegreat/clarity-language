@@ -136,7 +136,7 @@ function traceRule(name: string): string {
   if (/^hookUnit(Plain|Open|Closed)$/.test(name)) return "hookUnit";
   if (/^clauseItem(AfterCross|NoGlue|AfterTurn)$/.test(name)) return "clauseItem";
   if (/^bodyClause(NoGlue|AfterTurn)$/.test(name)) return "bodyClause";
-  if (/^leftEdge(Force|Turn|Other)$/.test(name)) return "leftEdge";
+  if (/^leftEdge(Force|Turn|Other|Tag)$/.test(name)) return "leftEdge";
   if (name === "vpVerb" || name === "vpCoordPartFirst") return "vpCoordPart";
   if (/^gSingle(Open|Closed)$/.test(name) || /^gCoordPart(Plain|Lead)$/.test(name)) return "gCoordPart";
   if (name === "gCoordLead" || name === "gCoordPlainLead") return "gCoord";

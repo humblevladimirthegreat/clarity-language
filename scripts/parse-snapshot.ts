@@ -5,10 +5,10 @@
  *
  * The ref's src/, data/ and package.json are extracted to tmp/parse-ref/<sha>/ and bundled once.
  *
- * With `--drop-one`, it compares every variant of each span with one word deleted instead: inputs beyond the docs,
- * where a parser change can alter a tree or a rejection that no doc sentence shows.
+ * With `--drop-one` (one word deleted) and / or `--swap` (two neighboring words swapped), it compares variants of each
+ * span instead: inputs beyond the docs, where a parser change can alter a tree or a rejection that no doc sentence shows.
  *
- * Run: npm run parse-snapshot -- [--ref main] [--limit 40] [--drop-one]
+ * Run: npm run parse-snapshot -- [--ref main] [--limit 40] [--drop-one] [--swap]
  */
 import { execFileSync } from "node:child_process";
 import { existsSync, mkdirSync } from "node:fs";
@@ -17,7 +17,7 @@ import { pathToFileURL } from "node:url";
 
 import { buildSync } from "esbuild";
 
-import { docSpans } from "../src/grammar-check/corpus.js";
+import { docSpans, spanVariants } from "../src/grammar-check/corpus.js";
 import { loadDefaultTables, parseWithTables } from "../src/parse/index.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
 
@@ -27,6 +27,7 @@ const args = process.argv.slice(2);
 const ref = args.includes("--ref") ? args[args.indexOf("--ref") + 1]! : "main";
 const limit = args.includes("--limit") ? Number(args[args.indexOf("--limit") + 1]) : 40;
 const dropOne = args.includes("--drop-one");
+const swap = args.includes("--swap");
 
 async function refParser(ref: string): Promise<{ sha: string; parse: Parse }> {
   const sha = execFileSync("git", ["rev-parse", "--short", ref], { cwd: REPO_ROOT, encoding: "utf8" }).trim();
@@ -63,25 +64,8 @@ const base = await refParser(ref);
 const tables = loadDefaultTables();
 const current: Parse = (text) => parseWithTables(text, tables);
 
-/** Each span with one word deleted (the final period kept), once per distinct text. */
-function dropOneVariants(spans: { file: string; text: string }[]): { file: string; text: string }[] {
-  const seen = new Set<string>();
-  const out: { file: string; text: string }[] = [];
-  for (const { file, text } of spans) {
-    const period = text.endsWith(".");
-    const words = (period ? text.slice(0, -1) : text).split(" ");
-    if (words.length < 2) continue;
-    for (let i = 0; i < words.length; i++) {
-      const variant = words.filter((_, j) => j !== i).join(" ") + (period ? "." : "");
-      if (seen.has(variant)) continue;
-      seen.add(variant);
-      out.push({ file, text: variant });
-    }
-  }
-  return out;
-}
-
-const spans = dropOne ? dropOneVariants(docSpans()) : docSpans();
+const variantKinds = [...(dropOne ? ["drop" as const] : []), ...(swap ? ["swap" as const] : [])];
+const spans = variantKinds.length ? spanVariants(docSpans(), variantKinds) : docSpans();
 let changed = 0;
 for (const { file, text } of spans) {
   const before = outcome(base.parse, text);
@@ -95,5 +79,5 @@ for (const { file, text } of spans) {
     : "tree changed";
   console.log(`${file}: \`${text}\` — ${what}`);
 }
-console.log(`${spans.length} ${dropOne ? "one-word-deleted variants" : "doc spans"}: ${changed} parse differently from ${ref} (${base.sha})`);
+console.log(`${spans.length} ${variantKinds.length ? `variants (${variantKinds.join(", ")})` : "doc spans"}: ${changed} parse differently from ${ref} (${base.sha})`);
 if (changed > 0) process.exit(1);

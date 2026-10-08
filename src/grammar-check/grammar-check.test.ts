@@ -5,6 +5,7 @@ import { createToken, CstParser, EOF } from "chevrotain";
 import { LLStarLookaheadStrategy } from "chevrotain-allstar";
 
 import { type Bnf, gastToBnf, type Production } from "./bnf.js";
+import { spanVariants } from "./corpus.js";
 import { countDerivations } from "./derivations.js";
 import { buildLr1, groupConflicts } from "./lr1.js";
 
@@ -103,4 +104,15 @@ test("gastToBnf expands a token category into its members, with no reduction bet
   assert.deepEqual(grammar.byLhs.get("adv.MANY")!.map((p) => p.rhs), [[], ["WPlain", "adv.MANY"], ["WAsOf", "adv.MANY"]]);
   assert.ok(!grammar.nonterminals.has("W*"));
   assert.equal(countDerivations(grammar, ["WPlain", "WAsOf", "H", "EOF"]).count, 1);
+});
+
+test("span variants drop one word or swap two neighbors, keep the period, and skip doc spans", () => {
+  const spans = [
+    { file: "a.md", text: "za vo da." },
+    { file: "a.md", text: "vo da." },
+  ];
+  assert.deepEqual(
+    spanVariants(spans, ["drop", "swap"]).map((s) => s.text),
+    ["za da.", "za vo.", "da.", "vo.", "vo za da.", "za da vo.", "da vo."],
+  );
 });

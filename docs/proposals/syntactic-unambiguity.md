@@ -1,6 +1,6 @@
 # Proposal: prove one syntax tree per sentence
 
-**Status:** IN PROGRESS (phase 0, batches 1–4 and batch 5a done)  
+**Status:** IN PROGRESS (phase 0 and batches 1–5 done)  
 **Related:** none  
 **Design authority:** the grammar pages own every reading. This note covers **parser and test tooling** only. Every attachment rule the work turns up goes to the owning grammar page, or to [design-decisions.md](../meta/design-decisions.md) when a form is ruled out on purpose.
 
@@ -165,11 +165,32 @@ Batches, each merged to main on its own with `npm test` green and `npm run parse
      | Gate sites in `sentence-parser.ts` | 65 | 68 |
 
      The gate sites rose by 3: the four `sentence` forms each test a token type, and the scans they replace are gone (`discourseHookAhead`, `vpItemMaterialAhead` at 3 sites, the `lastHostOpen` test, `universalFenceBarAhead` at 2). What is left that reads a payload or parser state is the 5b list. Conflicting decisions fell by a third. The raw count rose with the new open and closed forms, which batch 6 left-factors.
-   - **5b. Gates with no doc fork.** Delete each gate, measure, and classify what is left: a gate that only rejects goes on batch 6's allowlist, and one that chooses goes to the editor.
-     - **Probably redundant with finer tokens:** the unit-chain gates, the `npSlot` gates in the noun-phrase `OR`, plain token tests on `G` / `H` / `JoinV`, and the token tests 5a added (`leftEdgeAhead`, `glueAhead`, `vpItemAhead`, the `FenceBar` / `HSharedV` checks).
-     - **Payload or scan gates:** `turnWordAhead`, `leadForceAhead`, `tagPolarsAhead`, the topic-marker gates (`loneTopicWordAhead`, `markedLoneTopicAhead`, `markedTopicAhead`), `crossPeriodJoinAhead` (and with it `IGNORE_AMBIGUITIES` on `bodyClause`, runtime row 4), `citationAhead`, `respectivelyAdjListAhead`, `isStanceJoin`, and the negated `!clauseEndAhead`.
-     - **Fragment start rule** ([open question 1](#1-scope-one-clause-first-or-the-whole-text-across-periods)): 5a did not need it, since phrase spans with no period (`wezum al`, `thavem thul barl`) now have one tree too. It is still wanted before batch 6, so that the strict check covers only `document`.
-6. **Make the check strict.** `grammar-check` fails on any conflict, with an allowlist for gates that only reject a tree, so a new gate fails until it is classified.
+   - **5b. Gates with no doc fork. Done (2026-10-08).** `sentence-parser.ts` has no `GATE` and no `IGNORE_AMBIGUITIES` left. Every gate was redundant with the token types, or only rejected; none chose a tree on its own. `parse-snapshot` against `bba3e8e`: 0 of 2,659 spans differ.
+     - **Tooling first.** `grammar-check --variants` runs the doc-corpus check over every doc span with one word deleted or two neighboring words swapped (15,135 inputs, about 3 minutes), and also lists inputs the parser rejects that the gate-free grammar accepts. `parse-snapshot --swap` adds the swapped variants to `--drop-one`. Both share `spanVariants` in `src/grammar-check/corpus.ts`. On the batch 5a parser the variants showed 11 inputs with two gate-free trees (8 forks, all also ALL(\*) reports) and 3 that only a gate rejected. The doc corpus had shown neither.
+     - **Deleted as redundant** (no snapshot change): the unit-chain gates (`citationAhead`, the slot, `/ɡ/`, `/h/` and hook tests), the `npSlot` gates in `vpItemUnit`, the list-part and item gates in the noun, verb, `/ɡ/` and `/h/` lists, the tag, standalone-join, `Bar`, `FenceBar` and `HSharedV` tests, the `B` gates in `asOfWPair` and `boundJoinTail`, `islandUnit`'s, the stand-in clause item's and its `xual ul` hook gate, `!clauseEndAhead`, the left edge's (`leftEdgeAhead`, `turnWordAhead`, `glueAhead`, `leftEdgeItemAhead`, `leadForceAhead`), `crossPeriodJoinAhead` with `IGNORE_AMBIGUITIES` (runtime row 4 was a rule-end report), `markedTopicAhead` (the token checks already reject any other `gl-` word before a topic word, `linkerMidSentence`), and the three `respectivelyAdjListAhead` sites.
+     - **A gate bug.** The slot gate on a noun phrase read the word after a `gl-` adjective's hosted `/b/` as the head, so `glugol bazawan gugol zodogal balahen.` failed to parse, although [clause § complex chaining](../grammar/clause.md#complex-chaining) gives `gugol` to Azawan. It parses now (3 variants).
+     - **Rejecting gates, moved out of the grammar:**
+       - `tagPolarsAhead`: an asking tag is a sentence form of its own with no body (`leftEdgeTag`), so `yol yael zazawan vowogal.` fails by structure, and `diagnoseParseError` names `tagBody` ([questions § tags](../grammar/questions.md#tags): the tag is a turn of its own). It had a raw Chevrotain message.
+       - `loneTopicWordAhead`, `markedLoneTopicAhead`: a lone `/x/` word parses, and enforce rejects a linker with no clause as `linkerAlone` ([dependents § sentence linkers](../grammar/dependents.md#sentence-linkers): a linker joins the last sentence to the one it starts). A topic word and the clearing linkers (`xevavem.`, `xavazem.`) still stand alone. `xodum.` had a raw message.
+       - Both are listed as **open** in `unassigned-reserved.md`.
+     - **Forks the gates had hidden, now structure.** Both rules were on their pages, and the parser already applied them through ALL(\*)'s alternative order or a gate, so no tree changed:
+       - **A hook before a join word.** `zodogal em bazawar zal vowogal.` was one item with its hook, or a noun, a hook unit, and a standalone `zal`. [Joins § SHARED after the join](../grammar/joins.md#shared-after-the-join): a hook and its `/b/` right before the join word belong to the last item. `markContext` makes that hook `ItemHook` (a member of `Hook`) when a noun of the join's slot comes before it, and only the item-hook position takes it. The same holds before a rank fence's bar (`zugul om bamun zel garagam.`).
+       - **A stance join after `barl`.** `thavem barl thul` was a one-word stance list holding the stand-in, or the pole and its stand-in with `thul` opening the next sentence. [Dependents § nested dependents](../grammar/dependents.md#nested-dependents): a clause's one stand-in is at its end, so `thul` opens the grounds, as the parser already read it. An `/h/` list item no longer hosts a stand-in. [Join-across-roles](../grammar/join-across-roles.md#stance-join-before-barl) puts the join before `barl` for *not because*.
+     - **Beyond the docs** (`parse-snapshot --ref bba3e8e --drop-one --swap`, 15,135 variants): 7 differ. 3 are the `gl-` fix above. 4 are rejected by both parsers with a different raw message (`xezom xazawan. …`, `xevavem yom zehon vowogal.`, `xavazem yol zehon vewal.`, `… xagezam yael. …`).
+     - **Fragment start rule: not added (editor decision).** Open question 1 is closed below.
+
+     | Measure | Batch 5a | Batch 5b |
+     |---------|----------|----------|
+     | Exported grammar | 307 nonterminals, 1,166 productions, 54 token types | 307 nonterminals, 1,165 productions, 55 token types |
+     | LR(1) | 6,607 states, 24,752 conflicts in 179 decisions | 6,641 states, 24,511 conflicts in **177** decisions |
+     | Doc sentences with exactly one gate-free tree | 2,657 (all) | 2,657 (all) |
+     | Variants the parser accepts, with two or more gate-free trees | 11 of 12,970, through 8 forks | **0** of 12,973 |
+     | Variants only a gate rejects | 3 | **0** |
+     | ALL(\*) runtime reports, docs and variants | 8 | **0** |
+     | Gate sites in `sentence-parser.ts` | 68 | **0** |
+
+     With no gates left, batch 6 needs no allowlist for them: every remaining LR(1) conflict is an open / closed form pair or a list against a lone item, which only left-factoring removes.
+6. **Make the check strict.** `grammar-check` fails on any LR(1) conflict and on any `GATE` in `sentence-parser.ts`. Batch 5b left no gate, so a new one fails until it is turned into structure, a token type, or an enforce check.
 
 If a parser that *is* the proof is wanted later, a gate-free Chevrotain grammar ports mechanically to [Lezer](https://lezer.codemirror.net/), an LR(1) generator whose build fails on conflicts. The batches above are needed on either path.
 
@@ -225,12 +246,12 @@ Each question has a recommendation. None of them needs a new grammar decision ex
 
 ### 1. Scope: one clause first, or the whole text across periods?
 
-**Recommendation: the whole text from the start, with complete sentences only.**
+**Decided (2026-10-08): the whole text, and no separate fragment rule.** The bullets below were the recommendation; batch 5b dropped its last one. A final period that is left out sits right before the end of input, so it cannot add a tree, and every period-less doc span already has one tree. The strict check covers `document` as it is, period-less spans included, which promises more than a check of complete sentences alone.
 
 - **Starting with one clause saves nothing.** The exported grammar already starts at `document`, and the LR(1) check runs on all of it in 44 ms. The cross-period material is already in it: continue, cross-period `/x/` joins (runtime row 4), and stand-ins that point back. Cutting the grammar down to one clause would mean writing a second start symbol and then removing it later.
 - **Cause 1 is the actual work here.** Once the period is part of the rule structure (batch 2), utterance boundaries stop forking and the proof covers the whole text at no extra cost.
 - **Topic carry-over is out of scope.** It decides what a word refers to, not how the tree is built, so it belongs with pronoun resolution (`resolve.ts`), which the Goal already excludes. The same goes for any other reading worked out after parsing.
-- **Fragments need their own entry point.** The doc corpus includes phrase spans that are not sentences (`ul barl`, `thunem bazazam grazol`). The parser accepts them because the period is optional at the end. A fragment has no surrounding context, so it can honestly have two readings, and it should not count against the proof. The parser should keep accepting fragments for doc checking, through a separate start rule (or a fragment flag). The proof and the strict check (batch 6) should then cover only `document`, where every utterance ends in a period.
+- **Fragments need their own entry point** (superseded, see above). The doc corpus includes phrase spans that are not sentences (`ul barl`, `thunem bazazam grazol`). The parser accepts them because the period is optional at the end. A fragment has no surrounding context, so it can honestly have two readings, and it should not count against the proof. The parser should keep accepting fragments for doc checking, through a separate start rule (or a fragment flag). The proof and the strict check (batch 6) should then cover only `document`, where every utterance ends in a period.
 
 ### 2. Unambiguous but not LR(1): explained conflicts, or zero?
 

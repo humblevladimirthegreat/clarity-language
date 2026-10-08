@@ -11,7 +11,7 @@ import { tokenMatcher, type IToken, type TokenType } from "chevrotain";
 import type { ClassifyTables } from "./classify.js";
 import { ARROW_ROOTS, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChannel, isStandIn } from "./classify.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
-import { isTopicCompound, isTopicSpan, linkerEnglish } from "./linkers.js";
+import { isTopicCompound, isTopicSpan, linkerEnglish, topicEffect } from "./linkers.js";
 import { CLOSED } from "../closed-roots.js";
 import { isGenericPronoun, isTopicPronoun, ROLE_PRONOUN_ROOTS } from "./resolve.js";
 import { parseHookCompoundCite } from "./hook-compounds.js";
@@ -27,6 +27,7 @@ import {
   GGl,
   GPlain,
   Citation,
+  Force,
   Interjection,
   Vocative,
   HostedB,
@@ -44,6 +45,7 @@ import {
   OdoD,
   OdoZ,
   Period,
+  Polar,
   QMark,
   TagB,
   TagD,
@@ -791,6 +793,10 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
     // Command / request (e) and prohibition (u) act words may name a time without a channel.
     const directive = /^y[eu]/.test(left.force?.raw ?? "");
     for (const body of bodies) {
+      // A linker joins the sentence before it to the one it starts, so a clause follows it (dependents.md#sentence-linkers).
+      if (body.linker && body.clause.units.length === 0 && topicEffect(body.linker) === "none") {
+        throw new ConstructionError("linkerAlone", body.linker.raw);
+      }
       enforceOffsets(body.clause.units, directive);
       enforceHandDepthChannel(body.clause.units);
     }
@@ -1015,6 +1021,12 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   // Every other host takes the `/b/` or stand-in right after it, so a failure there is an amount or a factor.
   if (at > 0 && isAny(tokens[at]!, [HostedB, HostedOdo])) {
     throw new ConstructionError("slotlessHost", `${tokens[at - 1]!.image} ${tokens[at]!.image}`);
+  }
+  // An asking tag (`yol yael.`) is a turn of its own: nothing follows its polar word (questions.md#tags).
+  let polar = at - 1;
+  while (polar >= 0 && tokenMatcher(tokens[polar]!, Polar)) polar -= 1;
+  if (at > 0 && polar < at - 1 && polar >= 0 && tokenMatcher(tokens[polar]!, Force)) {
+    throw new ConstructionError("tagBody", tokens.slice(polar, at).map((token) => token.image).join(" "));
   }
   // *Respectively* (`wazem`) sits only right before a join word (joins.md#respectively).
   const pairing = tokens.findIndex((token, i) => tokenMatcher(token, WPairing) && !isAny(tokens[i + 1] ?? token, [JoinZ, JoinD, JoinB, JoinG, JoinV]));

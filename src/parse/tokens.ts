@@ -123,6 +123,11 @@ export const Hook = wordToken("Hook");
 export const HookPlain = wordToken("HookPlain", [Hook]);
 /** A hook with a `/b/` word right after it (an extra noun, hooks.md#extra-noun), or `uem` with its frame. Set by `markContext`. */
 export const HookHosting = wordToken("HookHosting", [Hook]);
+/**
+ * A hook and its `/b/` right before a noun list's join word (or its bar), after a noun of that list's slot: it belongs
+ * to that last item (joins.md#shared-after-the-join), so no hook unit takes it. Set by `markContext`.
+ */
+export const ItemHook = wordToken("ItemHook", [Hook]);
 /** A written span as a noun-phrase head, by slot. A span with no slot letter keeps the bare category, which no rule takes. */
 export const WritingSpan = wordToken("WritingSpan");
 export const WritingSpanZ = wordToken("WritingSpanZ", [WritingSpan]);
@@ -194,6 +199,7 @@ export const allTokens = [
   Hook,
   HookPlain,
   HookHosting,
+  ItemHook,
   WritingSpan,
   WritingSpanZ,
   WritingSpanD,

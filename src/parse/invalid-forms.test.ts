@@ -52,7 +52,7 @@ const ROWS: Row[] = [
   // Topic words (pronouns.md#topic) sit where linkers do: at the start of a sentence, never after a join or a stand-in.
   { invalid: "zazawan xalahen zozan vowogal.", rejection: "linkerMidSentence", valid: "xalahen zazawan vowogal." },
   { invalid: "zazawan vezebel darl xalahen zozan vowogal.", rejection: "linkerMidSentence", valid: "xalahen zazawan vezebel darl zozan vowogal." },
-  { invalid: "xodum.", rejection: undefined, valid: "xazawan." },
+  { invalid: "xodum.", rejection: "linkerAlone", valid: "xazawan." },
   { invalid: "xodumx zazawan vowogal.", rejection: "pluralOnPos", valid: "xazawanx zazawan vowogal." },
   { invalid: "zozan vowogal.", rejection: "topicUnbound", valid: "xazawan zozan vowogal." },
   { invalid: "xazawan zobenx vowogal.", rejection: "genericPlural", valid: "xazawan zoben vowogal." },
@@ -170,7 +170,7 @@ const ROWS: Row[] = [
     rejection: "poleStack",
     valid: "zazawan vowogal hezom thoyem barl zalahen vezebal.",
   },
-  { invalid: "yol yael zazawan vowogal.", rejection: undefined, valid: "yol yael." },
+  { invalid: "yol yael zazawan vowogal.", rejection: "tagBody", valid: "zazawan vowogal. yol yael." },
   { invalid: "zazawan vowogal thodom barl zalahen vezebal.", rejection: "standInHost", valid: "zazawan vowogal thunem barl zalahen vezebal." },
   { invalid: "zazawan vowogal thewam barl zalahen vezebal.", rejection: "standInHost", valid: "zazawan vowogal thobam barl zalahen vezebal." },
   { invalid: "zazawan vowogal thunem burl zalahen vezebal.", rejection: "standInHost", valid: "zazawan vowogal thunel barl zalahen vezebal." },
