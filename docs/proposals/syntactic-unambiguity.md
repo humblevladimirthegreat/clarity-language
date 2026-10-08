@@ -1,6 +1,6 @@
 # Proposal: prove one syntax tree per sentence
 
-**Status:** PROPOSED (planning; nothing merged)  
+**Status:** IN PROGRESS (phase 0 done on a branch; nothing merged)  
 **Related:** none  
 **Design authority:** the grammar pages own every reading. This note covers **parser and test tooling** only. Every attachment rule the work turns up goes to the owning grammar page, or to [design-decisions.md](../meta/design-decisions.md) when a form is ruled out on purpose.
 
@@ -36,14 +36,55 @@ Rough inventory (counts overlap):
 
 Checks that only **reject** a tree (`enforce.ts`, force pairs, a second stance word) can stay as code: rejecting trees never makes a grammar ambiguous.
 
+## Phase 0 results (2026-10-08)
+
+Phase 0 built the measuring tools and changed no parser behavior. Everything is on the `allstar-lookahead` branch (worktree `tmp/allstar`), not yet committed.
+
+- **`npm run grammar-check`** (`scripts/grammar-check.ts`, `src/grammar-check/`). It exports the parser's grammar as BNF with every gate deleted, builds canonical LR(1) tables, and groups the conflicts by decision. It also counts the gate-free trees of every doc sentence the parser accepts and names the decision where two trees part. It only reports and never fails. It runs in about 6 s (LR(1) 44 ms, the doc pass the rest). Unit tests cover a dangling else, a clean list, and the split-run shape.
+- **`npm run parse-snapshot -- --ref <ref>`** (`scripts/parse-snapshot.ts`). It runs the parser at a git ref and the working tree's parser over this checkout's doc spans, and fails on any difference. Checked against a deliberately broken gate, it caught 3 changed spans.
+
+### Baseline
+
+| Measure | Value |
+|---------|-------|
+| Exported grammar | 111 nonterminals, 207 productions, 26 token types |
+| LR(1) | 549 states, **573 conflicts from 155 decisions** |
+| Doc sentences the parser accepts | 2,655 |
+| … with exactly one gate-free tree | 54 |
+| … with two or more | **2,601**, through 41 distinct forks |
+| … with none | **0** |
+
+The last row matters. The export accepts every sentence the parser accepts, so it is a faithful gate-free picture: every extra tree is one that a gate, a rule argument, or a greedy `OPTION` / `MANY` removes.
+
+### What the forks are
+
+Nearly every sentence has several gate-free trees. That is a statement about **how the parser is written**, not about Agazan: much of the structure lives where the grammar cannot see it. One finding widens the inventory above: **greedy `OPTION` / `MANY` also choose**, with no gate at all (cause 4).
+
+| # | Cause | Main forks (doc sentences hitting it) | Kind | Fix |
+|---|-------|---------------------------------------|------|-----|
+| 1 | **Utterance boundaries.** The grammar lets one utterance end and the next begin anywhere; only the gate on `document` requires a period first | `document.AT_LEAST_ONE` (2,522) | Parser shape | Put the period in the rule structure |
+| 2 | **Slot in a rule argument.** `npCoord(level)` is one rule for `/z/`, `/d/` and `/b/`; the level only reaches gates, so every noun phrase matches all three | `unit.OR` alts 1–3 (2,494), `vpItemUnit.OR` (1,523), `npCoord.AT_LEAST_ONE` on `Z D` (870) | Parser shape | One rule per slot, generated in a loop; slot-specific tokens for `Odo` and `WritingSpan` |
+| 3 | **Runs of same-role words.** List rules make the join word optional, so `Z Z` or `H H` is either one list with no join or two units | `AT_LEAST_ONE` in `npCoord`, `hCoord`, `gCoord`, `vpCoord`, `clauseItem` (tens to 2,381) | Probably parser shape | [Joins](../grammar/joins.md) closes every list with a join word, and [clause](../grammar/clause.md) counts plain `/h/` words as separate units. Make the join required in list rules, after checking the AST does not change |
+| 4 | **Hosting by position.** A `/b/` after a `/ɡ/`, `/h/` or `/th/` word is hosted or a separate recipient unit; the greedy `OPTION` picks hosted. An adjective after a hosted `/b/` likewise | `clauseItem` forks on `H B` / `G B`, `unit.OR` alt 5, `npPackage.MANY`, `gCoordPart` | Documented rule ([clause](../grammar/clause.md): a `/b/` right after any `/ɡ/`, `/h/` or `/th/` word completes it; an adjective after it describes that `/b/`) | Encode in the grammar: no unhosted `/b/` unit directly after a host |
+| 5 | **Split `/w/` run** around the optional as-of pair | `gPackage` body (123) | Parser shape | `W* (asOf W*)?` |
+| 6 | **Sentence-initial hook:** discourse glue or in-clause hook | `utterance.OR` (265 + 7) | Real choice, made by a gate | Editor check (open question 3) |
+| 7 | **Number `/ɡ/` after a hosted `/b/`:** amount or a separate word | `hUnitRule.OR` on `B G` (24) | Real choice, made from the payload | Token split, plus editor check (open question 3) |
+| 8 | **Two `/x/` words after a clause** | `clause.MANY` on `JoinX JoinX` (3) | Probably token granularity | Split stand-in `/x/` from join `/x/` |
+
+Causes 1, 2, 3 and 5 account for nearly all of the 2,601 sentences and most of the 155 conflicting decisions, and none of them needs a grammar decision. Fixing them first should leave a short conflict list made of causes 4, 6, 7 and 8 plus whatever they were hiding. That list is the actual question of whether Agazan has one tree per sentence.
+
 ## Approach
 
-1. **Switch lookahead to ALL(\*)** with [`chevrotain-allstar`](https://www.npmjs.com/package/chevrotain-allstar) (TypeFox / Langium, peer `chevrotain ^13`). ALL(\*) looks as far ahead as a decision needs, so gates that only skip ahead can be deleted.
-2. **Add the proof check** to `npm test`, landing no later than step 1. It exports the grammar with Chevrotain's `getGAstProductions()`, flattens `OPTION` / `MANY` / `OR` into plain BNF, builds LR(1) tables, and fails on any conflict, naming the rule and tokens. The BNF is generated on every run, never maintained.
-3. **Convert gates** family by family, using the table above. A gate that chooses between two valid trees is a **grammar decision**: it is logged for the editor and lands with its grammar-page edit, never quietly kept in code.
-4. **Allowlist** the gates that remain as pure rejections, so a new gate fails the test until it is classified.
+Batches, each merged to main on its own with `npm test` green and `npm run parse-snapshot` either empty or explained by a doc edit in the same batch. After each batch, record the LR(1) conflict count and the doc fork count here.
 
-If a parser that *is* the proof is wanted later, a gate-free Chevrotain grammar ports mechanically to [Lezer](https://lezer.codemirror.net/), an LR(1) generator whose build fails on conflicts. Converting the gates first is needed on either path.
+1. **Switch to ALL(\*)** with [`chevrotain-allstar`](https://www.npmjs.com/package/chevrotain-allstar) (TypeFox / Langium, peer `chevrotain ^13`). Collect its runtime ambiguity reports instead of printing them. The `grammar-check` report already covers the static check that the switch turns off.
+2. **Parser-shape fixes** (causes 1, 2, 5). No grammar decisions; the snapshot must stay empty.
+3. **Lists and hosting** (causes 3, 4). Both rules are documented; small doc clarifications may come with them.
+4. **Finer token types** (cause 8 and the payload gates, cause 7's token split). Mechanical.
+5. **Remaining gates**, family by family (the inventory above). A gate that chooses between two valid trees is a grammar decision: it is logged for the editor and lands with its grammar-page edit, never quietly kept in code. Causes 6 and 7 are decided here.
+6. **Make the check strict.** `grammar-check` fails on any conflict, with an allowlist for gates that only reject a tree, so a new gate fails until it is classified.
+
+If a parser that *is* the proof is wanted later, a gate-free Chevrotain grammar ports mechanically to [Lezer](https://lezer.codemirror.net/), an LR(1) generator whose build fails on conflicts. The batches above are needed on either path.
 
 ### Comparing old and new behavior
 
@@ -66,7 +107,7 @@ An experiment in a separate worktree (not merged) switched the parser to ALL(\*)
 
 All of LL(k)'s cost is the up-front table build in `performSelfAnalysis()`, which grows exponentially with k. ALL(\*) skips that build and works out each decision on first use, then caches it.
 
-**Static check.** allstar's `validateAmbiguousAlternationAlternatives()` returns an empty list, so the switch removes Chevrotain's (already partial) static check. That is why step 2 must land no later than step 1. At runtime allstar picks the lowest alternative and reports the ambiguity through a `logging` hook (default `console.log`, which would corrupt the CLI's JSON, so the hook has to collect reports instead).
+**Static check.** allstar's `validateAmbiguousAlternationAlternatives()` returns an empty list, so the switch removes Chevrotain's (already partial) static check. That is why the `grammar-check` report has to exist before the switch (done in phase 0). At runtime allstar picks the lowest alternative and reports the ambiguity through a `logging` hook (default `console.log`, which would corrupt the CLI's JSON, so the hook has to collect reports instead).
 
 ### The 15 runtime ambiguity reports
 
@@ -95,7 +136,8 @@ In rows 1 and 2, a rule chooses between two token-level trees. Rows 3–5 are pr
 
 1. Scope of the proof: one clause first, then the whole utterance across periods (continue, cross-period joins, topic carry-over)? The utterance is still context-free, just bigger.
 2. If the grammar is unambiguous but not LR(1) somewhere, is a short list of explained conflicts acceptable, or must it reach zero (by reshaping rules or switching to Lezer)?
-3. For items 1 and 2: are those rules already taught, or are they new decisions?
+3. Causes 6 and 7, and rows 1 and 2 of the runtime reports: are those rules already taught, or are they new decisions?
+4. Cause 3: is a run of same-role words without a join word ever one list? If not, list rules require the join.
 
 ## Costs and risks
 
