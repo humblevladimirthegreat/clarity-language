@@ -1017,7 +1017,7 @@ The scream is your evidence, so it goes after CLUES; **`thevem`** would make the
 
 The `/th/` words on this page (MAY, the channels, RESIDUE, FORMER, NOTIONAL) cover the whole sentence. When one applies only to a single `/ɡ/` adjective, put the same word on `/w/` right before that adjective instead.
 
-Only words about **how you know** or **how things stand** move to `/w/` this way: the ones above, [CAUSE](causation.md#cause), the [*already* / *still* words](#phasal), and [*can* with `eze`](intention.md#ability-fallback). A plan, decision, try, or want stays on `/th/`: on `/w/` the same spelling is the ordinary word of its root (`wamam` *as planned*, `wehum` *decidedly*, `wudum` *tentatively*, `wohum` *wishfully*).
+Only words about **how you know** or **how things stand** move to `/w/` this way: the ones above, [CAUSE](causation.md#cause), the [*already* / *still* words](#phasal), and [*can* with `ubo`](intention.md#ability-fallback). A plan, decision, try, or want stays on `/th/`: on `/w/` the same spelling is the ordinary word of its root (`wamam` *as planned*, `wehum` *decidedly*, `wudum` *tentatively*, `wohum` *wishfully*).
 
 > `zazawan wevom gubuhel vowogal.`
 >

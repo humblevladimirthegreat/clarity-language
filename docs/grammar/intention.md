@@ -301,11 +301,11 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 
 **Compare with:** a [sake](sakes.md) word puts **`th`** and a vowel after a sake root: **`tha` / `thu`** is met / unmet (`thulothum` *competence unmet*). **`x`** and a vowel after a verb or adjective root is *can* / *can't*.
 
-### When there is no single verb (`eze`) {#ability-fallback}
+### When there is no single verb (`ubo`) {#ability-fallback}
 
-Sometimes English *can* / *can't* is not about one named verb or quality: the activity takes more than one root, you just want a bare *can't*, or the *can* covers the whole sentence. Then there is no single root to put **`x`** into. Use the special word **`eze`**: after **`eze`**, write the same **`x`**, vowel, and ending as on a verb. Put it on `/th/` when it is about the whole clause, or on `/w/` immediately before the adjective it grades. That lets you say *can* / *can't* without naming the activity in that word. Prefer the verb itself whenever one root is enough. (Cue: 🥣 *cereal*: a bowl that holds what you can do)
+Sometimes English *can* / *can't* is not about one named verb or quality: the activity takes more than one root, you just want a bare *can't*, or the *can* covers the whole sentence. Then there is no single root to put **`x`** into. Use the special word **`ubo`**: after **`ubo`**, write the same **`x`**, vowel, and ending as on a verb. Put it on `/th/` when it is about the whole clause, or on `/w/` immediately before the adjective it grades. That lets you say *can* / *can't* without naming the activity in that word. Prefer the verb itself whenever one root is enough. (Cue: 🥣 *bowl*: it holds what you can do)
 
-> `zazawan thezexel.`
+> `zazawan thuboxel.`
 >
 > z-Azawan | th-ABIL-unable-temporary
 >
@@ -559,7 +559,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *clipboard* | `egabol` | 📋 |
 | *pen* | `ebewel` | 🖊️ |
-| *capacity* | `ezem` | 🥣 from *cereal*; as **`thezexel`**, a bare *can't* |
+| *capacity* | `ubom` | 🥣 from *bowl*; as **`thuboxel`**, a bare *can't* |
 | *DECISION* | `thehum` | ✅ from *check*: the box is ticked |
 | *attempt-unstated* | `thudum` | 🧪 from *test tube*: try a sample |
 | *want-unstated* | `thohum` | 🌠 from *shooting star*: a wish |
@@ -639,7 +639,7 @@ z-Alahen | g-agent-x-authorship-able
 *Alahen can be the author.*
 :::
 
-**2.** `zazawan thezexel.`
+**2.** `zazawan thuboxel.`
 
 ::: details Show answer
 z-Azawan | th-ABIL-unable-temporary
@@ -703,14 +703,14 @@ z-Alahen | th-ATTEMPT-committed | v-write
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Ahaben can sing.* <!-- lint: error -->`zahaben thezexal vezehel.`
+**1.** *Ahaben can sing.* <!-- lint: error -->`zahaben thuboxal vezehel.`
 
 ::: details Show answer
 `zahaben vezehexal.`
 
 z-Ahaben | v-sing-able
 
-With one named verb, fold *can* into it with **`x`** and **`a`**; **`thezexal`** is for a *can* with no single verb.
+With one named verb, fold *can* into it with **`x`** and **`a`**; **`thuboxal`** is for a *can* with no single verb.
 :::
 
 ## See also

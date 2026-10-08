@@ -198,7 +198,7 @@ The `/b/` right after PLAN holds whose plan it is or when the act comes, not bot
 
 ### Ability {#ability}
 
-After the root, write `x`, a vowel, and the ending the word would have anyway. Only a verb or adjective takes it; with no single verb, use `eze`.
+After the root, write `x`, a vowel, and the ending the word would have anyway. Only a verb or adjective takes it; with no single verb, use `ubo`.
 
 <!-- cheat-sheet: knowing-intending -->
 | Agazan | Use | English | Stage |
@@ -216,7 +216,7 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | [Can't right now](../intention.md#ability-stance) | `zalahen vezehexel.` | *Alahen can't sing right now.* | I |
 | [Can't yet](../intention.md#ability-stance) | `zahaben vezehexol.` | *Ahaben can't sing yet.* | I |
 | [Can never](../intention.md#ability-stance) | `zazawan varahaxul.` | *Azawan can never run.* | I |
-| [No single verb](../intention.md#ability-fallback) | `zazawan thezexel.` | *Azawan can't right now.* | I |
+| [No single verb](../intention.md#ability-fallback) | `zazawan thuboxel.` | *Azawan can't right now.* | I |
 
 ## Don't mix up {#dont-mix-up}
 

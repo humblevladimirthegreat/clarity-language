@@ -681,7 +681,7 @@ Intermediate ranked against a plan, and [sake bars](sakes.md#sake-bars) rank aga
 | NOTIONAL `thavom` | the imagined case | *than imagined* / *than in theory* |
 | PLAN `thamam` | the plan or the schedule | *than planned* / *than scheduled* |
 | WANT `thohul` / `thohum` / `thohur` | the level wanted | *than wanted* / *than I wanted* |
-| ABIL `thezexal` | what can be done | *as … as possible* |
+| ABIL `thuboxal` | what can be done | *as … as possible* |
 | REQUIRE `thumel` / `thumem` / `thumer` | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* |
 | PERMIT `thegol` / `thegom` / `thegor` | the rule, the grant, or what is tolerated | *over the limit* / *more than they allow* / *than tolerated* |
 | CONSENT `thuxegom` | the agreed terms | *more than agreed* |
@@ -761,9 +761,9 @@ To rank one kind against another, keep one kind as the item and put the other in
 
 A CLUES or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): the next sentence is the grounds you worked the bar out from.
 
-**Ability.** The ability word [`eze`](intention.md#ability-fallback) as the bar is the limit of **what can be done**. A tie against **`thezexal`** is *as … as possible*. The ability vowel says how fixed that limit is, so rank **`zel`** against **`thezexel`** is *more than can be done for now*, and against **`thezexul`** *more than could ever be done*.
+**Ability.** The ability word [`ubo`](intention.md#ability-fallback) as the bar is the limit of **what can be done**. A tie against **`thuboxal`** is *as … as possible*. The ability vowel says how fixed that limit is, so rank **`zel`** against **`thuboxel`** is *more than can be done for now*, and against **`thuboxul`** *more than could ever be done*.
 
-> `zalahen thezexal zoel hadehum vowogal.`
+> `zalahen thuboxal zoel hadehum vowogal.`
 >
 > [z-Alahen | th-ABIL-able | z-equal-rank | h-haste] | v-walk
 >
@@ -824,7 +824,7 @@ English *many*, *few*, *often*, and *late* rank against an unstated baseline, an
 | *than usual* (the same person or thing) | PATTERN **`thobam`** with no `/b/` |
 | *too much* / *enough* / *not enough* | a met sake bar (`thegatham`), `zel` / `zoel` / `zuel` |
 | *too late* / *too soon* | a met sake bar (`thegatham`), `zel` / `zuel` with `bral` |
-| *as … as possible* | ABIL **`thezexal`**, `zoel` |
+| *as … as possible* | ABIL **`thuboxal`**, `zoel` |
 | *more and more* / *increasingly* | FORMER **`thenom`**, `zel` |
 
 The bar is never dropped. A single-item `zagadulx zel gral` already means *the most cats* (a [superlative](#superlatives)).
@@ -855,7 +855,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *MEMORY* | `thevom` |
 | *REPORTED* | `thewam` |
 | *FORMER* | `thenom` |
-| *capacity* | `ezem` |
+| *capacity* | `ubom` |
 | *agility* | `ahagum` |
 | *trumpet* | `adawol` |
 | *sing* | `vezehel` |
@@ -881,7 +881,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **3.** *Azawan is as showy as possible.*
 
 ::: details Show answer
-`zazawan thezexal zoel gahudom.`
+`zazawan thuboxal zoel gahudom.`
 
 [z-Azawan | th-ABIL-able | z-equal-rank | g-showmanship]
 :::

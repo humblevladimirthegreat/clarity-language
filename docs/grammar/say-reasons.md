@@ -411,7 +411,7 @@ To talk **about** an argument rather than make one, use the dictionary words. Ea
 | English | Agazan | Built from |
 |---------|--------|------------|
 | *an argument* / *logic* | `ebehamalodel` / `ebehamalodem` | *reason* + *ladder*: steps from what you grant to what follows |
-| *a premise* | `ebehamevel` | *reason* + *brick*: what the argument is built on |
+| *a premise* | `ebehamevel` | *reason* + *wall*: what the argument stands on |
 | *the conclusion* (of an argument) | `ebehamevehal` | *reason* + *finish line*: where the argument arrives |
 | *valid* / *validity* | `ebehamelegel` / `ebehamelegem` | *reason* + *link*: the conclusion must hold if the premises do |
 | *sound* / *soundness* | `ebehamebadal` / `ebehamebadam` | *reason* + *hardiness*: valid, and the premises are true |
@@ -859,7 +859,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. **
 | *see* | `vahahal` | `ahahal` *eye* |
 | *if* | `thoyem` | `oyel` *door* |
 | *only-if* | `tholum` | `olul` *paper-roll* |
-| *because* | `thevem` | `evel` *brick* |
+| *because* | `thevem` | `evel` *wall* |
 | *MAY* | `thovum` | `ovul` *thought* |
 | *CAUSE* | `thegem` | `egel` *gear* |
 | *RESIDUE* | `thamom` | |
@@ -1142,8 +1142,8 @@ Short drills for these recipes. A channel and offset after **`gobum`** date the 
 | *REPORTED.strong* | `thewal` | |
 | *MEMORY* | `thevom` | |
 | *as-of.ledger* | `thuhum` | |
-| *because* | `thevem` | `evel` *brick* |
-| *because.fault* | `thevel` | `evel` *brick* |
+| *because* | `thevem` | `evel` *wall* |
+| *because.fault* | `thevel` | `evel` *wall* |
 
 #### English → Agazan {#reasons-feelings-english-to-agazan}
 

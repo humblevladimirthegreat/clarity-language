@@ -63,7 +63,7 @@ Inventory tables on grammar pages use these kinds of cell:
 | **Agazan** | The word or letter you write. If **Same root as** is blank, this is the citation form of the word (how it is written on its own, outside a sentence). The in-clause spelling (with its role letter) appears only when **Same root as** names the everyday kind. |
 | **Use** | What that form **does**, its job (subject, question, *because* joining two sentences). This is the rule. |
 | **English** | What you would **say**: the sense to produce or understand. In translation practice, a person’s English is their name (*Azawan*), not the virtue word the name is built from. |
-| **Same root as** | The everyday kind of that same root, written as a citation (**-l**), when this row’s English is a different word from that citation’s English: the *brick* root when the row’s English is *because*; the *eye* root when the row’s English is *see*. Leave it blank when English already is the citation (a row whose English is *climb* for the *climb* root). Not every table has this column. |
+| **Same root as** | The everyday kind of that same root, written as a citation (**-l**), when this row’s English is a different word from that citation’s English: the *wall* root when the row’s English is *because*; the *eye* root when the row’s English is *see*. Leave it blank when English already is the citation (a row whose English is *climb* for the *climb* root). Not every table has this column. |
 | **Cue** | A memory aid that helps you **remember** the letter, vowel, or picture that maps to that row. |
 
 **Cue** is an optional memory helper. `≈` in a cue means “sounds like.” When **Same root as** is there, **Cue** does not repeat the everyday English; it only says why that picture maps.

@@ -142,9 +142,9 @@ describe("classify", () => {
   });
 
   it("hostless ability overlay", () => {
-    const word = expectReading("thezem", "ability");
+    const word = expectReading("thubom", "ability");
     assert.ok(word.overlay);
-    assert.equal(word.overlay!.senseForm, "ezem");
+    assert.equal(word.overlay!.senseForm, "ubom");
   });
 
   it("between locative overlay remains; other place talk is ordinary on those roots", () => {

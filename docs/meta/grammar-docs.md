@@ -260,7 +260,7 @@ Learner tables use these headers (omit a column when every cell would be empty o
 | **Agazan** | yes | The spelling (word, letter, or pattern). A **content word** is a [citation](#citation-in-tables) whenever **Same root as** is empty — not a role-marked copy of that citation, and not a bare stem. Inflected **Agazan** (role letter already on) only when **Same root as** is filled and the English needs that letter (`vahahal` *see*). |
 | **Use** | yes | What the form **does** in the clause (subject, command, continue). Not a pun. |
 | **English** | yes | English the learner may **say or produce** (sense or free English). Not a pun, and not an ending tag (`(**-m**)`). |
-| **Same root as** | no | The everyday kind of that root as a [citation](../grammar/word-endings.md) (**-l**): `` `evel` *brick* ``. Fill it only when this row’s **English** is not that citation’s lemma: a published abstract, a closed overlay, or packed role English that **differs** from the citation (`` `ahahal` *eye* `` beside `vahahal` *see*). If English already is the citation lemma (*climb*), leave **Same root as** empty and put the citation in **Agazan** (`agayal`, not `vagayal`). That licenses the picture in **Cue**. Omit the column when every row is a letter, vowel-series, punctuation, or other non-lexicon cue. Empty cells are fine in a mixed drill bank. |
+| **Same root as** | no | The everyday kind of that root as a [citation](../grammar/word-endings.md) (**-l**): `` `evel` *wall* ``. Fill it only when this row’s **English** is not that citation’s lemma: a published abstract, a closed overlay, or packed role English that **differs** from the citation (`` `ahahal` *eye* `` beside `vahahal` *see*). If English already is the citation lemma (*climb*), leave **Same root as** empty and put the citation in **Agazan** (`agayal`, not `vagayal`). That licenses the picture in **Cue**. Omit the column when every row is a letter, vowel-series, punctuation, or other non-lexicon cue. Empty cells are fine in a mixed drill bank. |
 | **Cue** | no | Recall only: **why** the token maps. Cover this column: the rest must still be the language. ([rubric](#cue-rubric)) |
 
 **Use** and **Cue** must not be the same string. If they would be (`add` / *add*), unpack **Use** (*hold / inventory*) and keep the slogan in **Cue**.
@@ -275,13 +275,13 @@ A cue is a **bridge**: one reason the visible token (letter, vowel, emoji) maps 
 | Test | Pass | Fail |
 |------|------|------|
 | **Cover** | Hide **Cue**. **Agazan** + **Use** / **English** (and **Same root as**, when present) still teach the language. | The pun is the only definition |
-| **Bridge** | Hide the emoji, the *literal*, and the letter being punned. What remains still says *why* the token maps to this row. | 🧱 *brick* — leftover is the picture’s name |
+| **Bridge** | Hide the emoji, the *literal*, and the letter being punned. What remains still says *why* the token maps to this row. | 🧱 *wall* — leftover is the picture’s name |
 | **Not a caption** | Cue ≠ Unicode/CLDR name, ≠ **Agazan** spelled in English, ≠ `from *quiet*` with no why | *doorway*, *zebra*, *timer* alone |
 | **Not the answer** | Cue is not a synonym of **English** / **Use** | *because* restated as *cause* / *foundation* as a second gloss cell |
-| **One hop** | Token → **one** reason → the row | `brick → foundation → because` as three English labels |
+| **One hop** | Token → **one** reason → the row | `wall → foundation → because` as three English labels |
 | **Short** | One clause after the token | A second slogan system |
 
-Scene shape: `{emoji} *{literal}*: {why that evokes this row}` when there is no **Same root as** column. The *literal* is the lexicon **from**; the clause after the colon is the cue proper. When **Same root as** already names the citation and the *literal*, **Cue** is `{emoji}: {why}` — do not repeat *brick* in **Cue**.
+Scene shape: `{emoji} *{literal}*: {why that evokes this row}` when there is no **Same root as** column. The *literal* is the lexicon **from**; the clause after the colon is the cue proper. When **Same root as** already names the citation and the *literal*, **Cue** is `{emoji}: {why}` — do not repeat *wall* in **Cue**.
 
 Letter / series: `{letter} ≈ {sound or series slogan} ({why that maps})`. `**d** ≈ done to` passes because *done to* is a **sound** bridge to *acted on*, not a caption of `d`. `**v** ≈ verb` fails unless the leftover explains the coincidence (*the English word for the job*).
 
@@ -382,7 +382,7 @@ Short Eng ↔ Agazan checkpoints: end of a page stage only — [translation-exer
 ### Citation in tables
 <a id="citation-in-tables"></a>
 
-Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odoga`, `agawa`, `azawa`, `ovu`). A content-word **Agazan** cell is a spelling the learner could write **as a word**. If **Same root as** is empty, that spelling is always the [citation](../grammar/word-endings.md#citation-forms) (prefix-less root + ending): `agayal` *climb*, not `vagayal`. The **inflected** form (role letter already on) is only for rows that also fill **Same root as**, when the English needs that letter (`vahahal` *see*). **English** is the lexicon lemma for that spelling (published literal / metaphor / packed role English) — do not tag `(**-m**)` or `(**-l**)` there; the Agazan ending already carries that. **Same root as** stays the everyday **-l** citation of the picture (`evel` *brick*; `ahahal` *eye* when **Agazan** is `vahahal`), not a stem, and that picture English is also the published lemma (`*correct*`, not a retired gloss). Checkpoint banks apply the same rule ([translation-exercises.md](translation-exercises.md#template)); `build` checks them.
+Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odoga`, `agawa`, `azawa`, `ovu`). A content-word **Agazan** cell is a spelling the learner could write **as a word**. If **Same root as** is empty, that spelling is always the [citation](../grammar/word-endings.md#citation-forms) (prefix-less root + ending): `agayal` *climb*, not `vagayal`. The **inflected** form (role letter already on) is only for rows that also fill **Same root as**, when the English needs that letter (`vahahal` *see*). **English** is the lexicon lemma for that spelling (published literal / metaphor / packed role English) — do not tag `(**-m**)` or `(**-l**)` there; the Agazan ending already carries that. **Same root as** stays the everyday **-l** citation of the picture (`evel` *wall*; `ahahal` *eye* when **Agazan** is `vahahal`), not a stem, and that picture English is also the published lemma (`*correct*`, not a retired gloss). Checkpoint banks apply the same rule ([translation-exercises.md](translation-exercises.md#template)); `build` checks them.
 
 | Publish | Example |
 |---------|---------|

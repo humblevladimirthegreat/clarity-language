@@ -210,7 +210,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("derl", "d-to-clause");
     expectLine("durl", "d-lest-clause");
     expectLine("darm", "d-that-clause.open");
-    expectLine("thezexel", "th-ABIL-unable-temporary");
+    expectLine("thuboxel", "th-ABIL-unable-temporary");
   });
 
   it("lexicon senses use packed role English when present", () => {
@@ -262,7 +262,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
   });
 
   it("literal key is not ideation solution", () => {
-    expectLine("zegehul wezexel.", "z-key | w-ABIL-unable-temporary");
+    expectLine("zegehul wuboxel.", "z-key | w-ABIL-unable-temporary");
   });
 
   it("inclusive we", () => {

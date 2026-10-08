@@ -84,17 +84,17 @@ avor,th,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a
 avor,w,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a possibility or assumption for now),theater mask tried on for a moment to toy with what might follow,knowing.md#mood-on-one-adjective
 avol,th,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#hold-endings-notional
 avol,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#mood-on-one-adjective
-ezem,th,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
-ezem,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
+ubom,th,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
+ubom,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
 ugol,g,🪙,identity,SAME,SAME identity (identical-to / same-as),coin has two faces one substance; same is one referent two labels,predication.md#identity-same
 oyem,th,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,dependents.md#poles
 oyem,g,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if
 edam,th,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,dependents.md#poles
 edam,g,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,causation.md#only-because
-evem,th,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),brick stacks as foundation; foundation is because-reason under claim,dependents.md#poles
-evel,th,🧱,clause_pole,because.fault,BECAUSE clause pole with fault (the reason broke a norm),brick stacks as foundation; -l locks the blame on a broken norm,causation.md#fault
-ever,th,🧱,clause_pole,because.share,BECAUSE clause pole with a share (the reason contributed among others),brick stacks as foundation; -r is one brick among several,causation.md#fault
-evem,g,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),brick stacks as foundation; foundation is because-reason under claim,causation.md#only-because
+avem,th,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,dependents.md#poles
+avel,th,🧱,clause_pole,because.fault,BECAUSE clause pole with fault (the reason broke a norm),a wall stands on its foundation; -l locks the blame on a broken norm,causation.md#fault
+aver,th,🧱,clause_pole,because.share,BECAUSE clause pole with a share (the reason contributed among others),a wall stands on its foundation; -r is one wall among several holding it up,causation.md#fault
+avem,g,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,causation.md#only-because
 olum,th,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,dependents.md#poles
 olum,g,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
 ezom,h,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#poles

@@ -68,7 +68,7 @@ You can also say:
 <!-- cheat-sheet: linking-clauses -->
 | Agazan | English | Same root as | Cue |
 |--------|---------|--------------|-----|
-| **`thevem barl`** | *because* | `evel` *brick* | 🧱: the cause is what the result sits on |
+| **`thevem barl`** | *because* | `evel` *wall* | 🧱: the cause is what the result sits on |
 | **`thoyem barl`** | *if* | `oyel` *door* | 🚪: walk through only if it opens |
 | **`tholum barl`** | *only if* | `olul` *paper-roll* | 🧻: without it the situation does not run |
 | **`thedam barl`** | *if and only if* | `edal` *east-west* | ↔️: each side only with the other |
@@ -199,7 +199,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *therefore* | `xodum` | ➡️ from *east*: the sun's path, so the talk moves on |
 | *that-clause* | `darl` | **a** ≈ add: the content that follows |
 | *whether-clause* | `dorl` | **o** ≈ one: pick yes or no |
-| *because* | `thevem` | 🧱 from *brick*: the cause is what the result sits on |
+| *because* | `thevem` | 🧱 from *wall*: the cause is what the result sits on |
 | *if* | `thoyem` | 🚪 from *door*: walk through only if it opens |
 | *although* | `hezom` | 🦓 from *zebra*: two stripes, still one animal |
 | *so-that* | `hogom` | 🥅 from *goal*: you act so the shot counts |

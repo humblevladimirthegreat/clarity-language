@@ -50,7 +50,7 @@ Each pass takes one domain and its head roots. Rows are named here by seed and E
 | People | 🧑 *person*, plus [role compounds](../grammar/roles.md#role-compounds) for doers | sibling, cousin, neighbor, stranger, guest, host | friend, parent, resident, lawyer |
 | Groups | 👥 *community*, 🏛️ *institution* | tribe, crew, club, union, ministry, court | army, jury, council, government |
 | Clothing | 🧥 *coat*, 👕 *shirt*, 👗 *dress*, 👞 *shoe*, 🧢 *hat*, 🦺 *vest*, 🧤 *gloves*, 🧦 *socks* | jacket, sweater, slipper, apron, uniform, helmet-types | raincoat, dress shoe |
-| Containers | 🫙 *jar*, 🍼 *bottle*, 🧺 *basket*, 🪣 *bucket*, 👜 *bag*, 🛢️ *barrel*, 📦 *box*, 🗄️ *cabinet* | can, crate, wallet, envelope-types | lid |
+| Containers | 🫙 *jar*, 🥣 *bowl*, 🥘 *pan*, 🍼 *bottle*, 🧺 *basket*, 🪣 *bucket*, 👜 *bag*, 🛢️ *barrel*, 📦 *box*, 🗄️ *cabinet* | can, crate, wallet, envelope-types | lid |
 | Tools and devices | ⚙️ *machine*, 🧰 *tool*, 🔪 *knife*, 🔨 *hammer*, 🪔 *lamp*, 🕰️ *clock*, 📱 *phone* | engine, motor, pump, scissors-types, streetlight, headlight | |
 | Light | 🔆 *bright* (radiance), 🪔 *lamp* (source) | sunlight, moonlight, candlelight | |
 | Games | 🎮 *game*, 🏀 *ball* | board game, card game, chess, tag | videogame |
@@ -122,10 +122,14 @@ If a category needs a head that no root covers, stop and add the head first. Ret
 
 Found in the label audit after wave 1. Fill each before the wave that needs it, as in [when a head is missing](#when-a-head-is-missing).
 
-- **No root:** *bowl*, *pan*, *fork* (Containers, Tools); *rope*, *stairs*, *furniture* (Tools, Rooms); *jewel*, *whistle*. 🗄️ *cabinet* now covers cupboard and wardrobe, but *furniture* as a class name has no head.
-- **Only an alias on a narrower row:** *sand* and *dust* on 🏜️ *desert*; *smoke* on 🚬 *cigarette*; *weapon* on 🗡️ *dagger*; *wall* on 🧱 *brick*; *stone* on 🪨 *rock* (fine, same thing). Compounds on these heads read off the narrower label.
-- **Generic words that are compounds, so they cannot head:** *cup* (teacup, mug), *roof*, *fence*, *pipe*. No free emoji pictures them; each needs a non-emoji seed or a retitle.
-- **Gloss clashes:** *orange* the fruit (🍊 *tangerine*) against 🟠 *orange* the colour.
+Resolved in the audit: 🥣 is now *bowl* (cereal is *grain* **-l** *bowl*), 🥘 is *pan*, 🗡️ is *weapon* (dagger is *knife* **-l** *weapon*), and *jewel* and *gem* are aliases on 💎. *Smoke* (*fire* **-l** *fog*), *stairs* (*house* **-l** *ladder*), *fork* (*trident* **-l** *cutlery*) and *rope* (*knot* **-l** *thread*) are compounds, since they head nothing.
+
+Still open:
+
+- **No root and no free seed:** *furniture* (class name; 🛋️ *couch* and 🪑 *chair* are too specific), *whistle*. Each needs a non-emoji seed or stays a compound.
+- **Only an alias on a narrower row:** *sand* and *dust* on 🏜️ *desert*; *wall* on 🧱 *brick*. 🧱 stays *brick*: the *because* overlay teaches through the brick ("what the result sits on", "one brick of several"). A compound on these heads reads off the narrower label.
+- **Generic words that are compounds, so they cannot head:** *cup* (*tea* **-l** *bowl*), *roof*, *fence*, *pipe*. Fine until a wave needs one as a head.
+- **Gloss clash:** *orange* the fruit (🍊 *tangerine*) against 🟠 *orange* the colour.
 
 ## Open questions
 

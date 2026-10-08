@@ -55,7 +55,7 @@ IDs are stable (code and other meta pages cite them). Retired IDs are not reused
 |---------|-------------|
 | Typical, Average, Social / Professional, Everyone | PATTERN `thobam` (population in `/b/` when needed), REQUIRE for a custom or rule, or a superlative |
 | my standard | REQUIRE `thumem`, or the attitude `thevegem` |
-| Best-effort | ABIL `thezexal` |
+| Best-effort | ABIL `thuboxal` |
 | the nine sake bars | the met sake word (`thegatham`, `thoyutham`, …) |
 
 ### Contrary to a stance (`uem`)

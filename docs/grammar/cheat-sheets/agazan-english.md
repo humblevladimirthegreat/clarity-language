@@ -184,7 +184,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `thewal` | reported evidential with strong evidence (reliable source) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thewam` | reported evidential (hearsay / said or written by someone else / reportative) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `thewar` | reported evidential with weak evidence (rumor) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thezem` | hostless ability fallback (capacity) | [When there is no single verb (eze)](../intention.md#ability-fallback) | I |
 | `thezul` | mirative mood overturning a firm expectation | [Mirative (thezum)](../knowing.md#mirative) | I |
 | `thezum` | mirative mood (newly found out and not expected) | [Mirative (thezum)](../knowing.md#mirative) | I |
 | `thezur` | mirative mood against a loose expectation | [Mirative (thezum)](../knowing.md#mirative) | I |
@@ -202,6 +201,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `thovum` | may mood (could be; default) | [MAY](../knowing.md#may) | B |
 | `thovur` | may mood who-knows hold (leave unsettled; may never know) | [Hold endings (MAY)](../knowing.md#hold-endings-may) | B |
 | `thoyem` | IF clause pole (one-way conditional) | [Because, if, although (poles)](../dependents.md#poles) | B |
+| `thubom` | hostless ability fallback (capacity) | [When there is no single verb (ubo)](../intention.md#ability-fallback) | I |
 | `thudul` | attempt mood committed (keep going until it works or is ruled out) | [Try](../intention.md#try) | I |
 | `thudum` | attempt mood (commitment unstated) | [Try](../intention.md#try) | I |
 | `thudur` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](../intention.md#try) | I |
@@ -270,7 +270,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `wewel` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `wewem` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `wewer` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wezem` | hostless ability fallback (capacity) | [When there is no single verb (eze)](../intention.md#ability-fallback) | I |
 | `wobal` | pattern evidential with strong evidence (well-established pattern) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wobam` | pattern evidential (from trail of cases) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wobar` | pattern evidential with weak evidence (a few cases) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
@@ -283,6 +282,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `wovul` | may mood find-out hold (I'll / let's find out) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wovum` | may mood (could be; default) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wovur` | may mood who-knows hold (leave unsettled; may never know) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wubom` | hostless ability fallback (capacity) | [When there is no single verb (ubo)](../intention.md#ability-fallback) | I |
 | `wugul` | deduced evidential with strong evidence (every step could be shown) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wugum` | deduced evidential (follows from the premises) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wugur` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
@@ -350,11 +350,13 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `abovuluhuzal` | *apple juice* |  |
 | `abowelebahel` | *rosemary* |  |
 | `abowelelevol` | *pine needle* |  |
+| `abowolarazol` | *fried rice* |  |
 | `abozomahazal` | *museum* |  |
 | `abudelazavul` | *potato salad* |  |
 | `adabaluzubal` | *broth* |  |
 | `adagolebahel` | *tarragon* |  |
 | `adavalahahal` | *taste* |  |
+| `adayelagadel` | *fork* |  |
 | `adazolagadel` | *dinner* |  |
 | `adedelazewel` | *council* |  |
 | `adedolebahel` | *basil* |  |
@@ -405,6 +407,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ahavomegewol` | *spinach* |  |
 | `ahazalagadol` | *floor* |  |
 | `ahazalahodal` | *roof* |  |
+| `ahazalalodel` | *stairs* |  |
 | `ahazalamol` | *mortgage* |  |
 | `ahazalanahul` | *pet* |  |
 | `ahazalevedal` | *yard* |  |
@@ -444,8 +447,10 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `amoluzel` | *investment* |  |
 | `anadalebadel` | *moth* |  |
 | `anadamobel` | *stranger* |  |
+| `analevevul` | *rope* |  |
 | `analobel` | *friend* | `analobem` *allegiance* |
 | `anavalemedel` | *surgery* |  |
+| `anavalewebal` | *dagger* |  |
 | `anayalebahel` | *chives* |  |
 | `anedolagehol` | *nutmeg* |  |
 | `anedoledehul` | *oak* |  |
@@ -461,6 +466,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `avagemozewel` | *efficiency* |  |
 | `avahelagedel` | *caramel* |  |
 | `avahelahazal` | *firehouse* |  |
+| `avahelavegel` | *smoke* |  |
 | `avahelebevul` | *toast* |  |
 | `avahelemedol` | *barbecue* |  |
 | `avavolanahul` | *livestock* |  |
@@ -518,7 +524,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ebudalahazal` | *gallery* |  |
 | `edegelebahel` | *sage* |  |
 | `edehelavavul` | *jasmine* |  |
-| `edehelezel` | *cup* |  |
+| `edehelubol` | *cup* |  |
 | `edeholezebel` | *lecture* |  |
 | `edehulazewel` | *forest* |  |
 | `edehulebedul` | *woodpecker* |  |
@@ -533,6 +539,8 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `egedelagedel` | *candy cane* |  |
 | `egedeledehul` | *fir* |  |
 | `egevelebedul` | *sparrow* |  |
+| `egevelubol` | *cereal* |  |
+| `egeveluzubal` | *porridge* |  |
 | `egolanedol` | *pistachio* |  |
 | `egoledehel` | *green tea* |  |
 | `ehadalebezul` | *pocket* |  |
@@ -641,7 +649,6 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `owogaluom` | *relay* |  |
 | `oyelebehul` | *doorbell* |  |
 | `ozalagehol` | *star anise* |  |
-| `ozegalarazol` | *fried rice* |  |
 | `ozobalavavul` | *lavender* |  |
 | `ozodelagehol` | *black pepper* |  |
 | `ozodelugugol` | *cracker* |  |
@@ -673,7 +680,6 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `uwuzelowodel` | *alcohol* |  |
 | `uzelobol` | *stem* |  |
 | `uzubalebahel` | *thyme* |  |
-| `uzubalezel` | *porridge* |  |
 | `uzubamegal` | *boiled egg* |  |
 | `uzugulevehal` | *graduate* |  |
 | `uzugulugul` | *textbook* | `uzugulugum` *canon* |

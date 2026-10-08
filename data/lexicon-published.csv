@@ -471,10 +471,10 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧆,falafel,aveva,alternative,falafel is a meat alternative,,substitute,
 🥚,egg,ega,potential,egg holds unrealized potential,,,
 🍳,cooking,uguge,,,,,
-🥘,skillet,ozega,medley,many components one pan,,,
+🥘,pan,abowo,medley,many components cook in one pan,,,
 🍲,soup,uzuba,simmer,soup simmers over low heat for a long time,,pot; stew,
 🫕,sauce,ozoza,sharing,everyone dips into one shared pot of sauce,,,
-🥣,cereal,eze,capacity,bowl holds what it can,,,intention.md#intermediate-practice
+🥣,bowl,ubo,capacity,a bowl holds what it can; capacity is how much fits,,,intention.md#intermediate-practice
 🥗,salad,azavu,,,,,hooks.md#beginner-practice
 🍿,popcorn,ababo,entertainment,popcorn at the show is entertainment,,entertain,
 🧈,butter,abode,flattery,butter someone up with flattery,,,
@@ -550,7 +550,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🏟️,stadium,ezade,contest,a stadium hosts competition; contest is the unobservable stakes,,tournament,
 🏛️,colonnade,agedu,institution,grand columns mark public power; institution is established order,,official; column; establishment; politics; govern,
 🏗️,building-site,azodu,undertaking,a building site is a big job under way; an undertaking is a task taken on,,,
-🧱,brick,eve,foundation,bricks stack from the ground up; foundation is the base layer,,wall; basis; framework; underlie; base,
+🧱,wall,ave,foundation,a wall stands on what is under it; foundation is the base layer,,basis; framework; underlie; base,
 🪨,rock,araga,heavy,rock is hard to lift; heaviness is weight on a scale,,stone; weight; concrete; firmly,plurality.md#intermediate-practice
 🪵,wood,uwu,raw,wood is unfinished material; raw is unprocessed state,,log,x-compounds.md#beginner-practice
 🛖,hut,ahede,locality,hut sits in a small settlement; locality is the near neighborhood,,local; neighborhood,
@@ -798,7 +798,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 📿,rosary,orozo,prayer,beads count prayers; prayer is speaking to the sacred,,,
 💄,lipstick,elebo,appearance,lipstick colors the lips; appearance is how you present,,appear,
 💍,ring,ereha,promise,a ring seals a vow; a promise binds your future self,,surround; guarantee; assure,joins.md#intermediate-practice
-💎,gemstone,ehezo,value,gem is rare and precious; value is worth holding dear,,worth; valuable; appreciate; rate,
+💎,gemstone,ehezo,value,gem is rare and precious; value is worth holding dear,,jewel; gem; worth; valuable; appreciate; rate,
 🔇,mute,amuyu,suppression,mute silences all sound; suppression is holding back expression,,,knowing.md#intermediate-practice
 🔈,quiet,agawa,volume,quiet is sound turned low; volume is level of sound,,,spans.md#beginner-practice
 🔉,audio,adeha,voice,audio carries a speaking voice; voice is audible expression,m.w:quite,representative,
@@ -917,7 +917,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔨,hammer,ahavo,iron,a hammer is forged iron; iron is the hard forged metal,,steel,relations.md#beginner-practice
 🪓,axe,agezu,severance,axe cuts through wood; severance is cutting apart,,cut; break,
 ⛏️,pick,ebege,deep,a pick digs far below the surface; deep is far below,,,
-🗡️,dagger,aduge,,,,weapon,
+🗡️,weapon,eweba,,a blade stands for any weapon,,,
 ⚔️,duel,uduhe,conflict,two fighters face off to settle a quarrel,,attack; opposition; dispute; war; argue,
 💣,bomb,abava,catastrophe,a bomb wrecks everything; catastrophe is disaster,,disaster; crisis,
 🪃,boomerang,ubuha,,,v:throw,cast,
@@ -937,7 +937,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🪝,hook,uhuga,ensnarement,hook snags; ensnarement is the unobservable trapping-kind,,,
 🧰,toolbox,ulo,readiness,toolbox holds gear for the job; readiness is prepared for task,,skill; equipment; tool,
 🧲,magnet,amega,attraction,magnet pulls metal toward it; attraction is pulling toward,,pull; attract; attractive; drag,
-🪜,ladder,alode,advancement,ladder climbs step by step; advancement is rising by stages,,promotion; stair; promote; advance,
+🪜,ladder,alode,advancement,ladder climbs step by step; advancement is rising by stages,,promotion; promote; advance,
 🪏,shovel,aheva,uncovering,shovel digs; uncovering is the unobservable reveal-kind,,dig; discovery,
 ⚗️,distiller,edaze,pascal,a distiller holds pressure; pascal is the SI pressure unit,,,
 🧪,test-tube,udu,experiment,test tube tries a small sample; experiment is testing a hypothesis,,chemical; exam; trial; test,
@@ -978,7 +978,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧽,sponge,azabu,absorption,sponge soaks up spilled liquid; absorption is taking in fully,,,
 🧯,extinguisher,ogeze,containment,extinguisher stops spreading fire; containment is holding in bounds,,contain,
 🛒,cart,agega,consumption,cart fills with goods to buy; consumption is taking things in,,expenditure,joins.md#beginner-practice
-🚬,cigarette,ozege,habit,cigarette is repeated addictive draw; habit is repeated hard-to-break act,,smoke,
+🚬,cigarette,ozege,habit,cigarette is repeated addictive draw; habit is repeated hard-to-break act,,,
 ⚰️,coffin,ogove,end,coffin holds the deceased; end is final conclusion,,conclusion; final,
 🪦,headstone,ehado,burial,a headstone marks a grave; burial is laying the dead in the ground,,,
 ⚱️,urn,enaho,remembrance,urn holds ashes of the dead; remembrance is keeping in memory,,,

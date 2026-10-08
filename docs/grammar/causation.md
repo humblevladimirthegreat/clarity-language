@@ -235,12 +235,12 @@ Several conditions can sit inside `/b/` as a [join](joins.md) (`thoyem bagavul b
 <a id="iff"></a>
 <a id="poles"></a>
 
-Beginner's *if* and *only if* do not claim the condition is true. The table completes the set. Pick the pole by **which way the link runs** (the condition is enough, the outcome needs it, or both) and by whether you **claim** the condition is a fact. Poles take **-m**, on `/th/` after a verb and on `/ɡ/` after a noun. As plain words the roots take ordinary endings (`zevel` *a brick*; `zedam` *reciprocity*).
+Beginner's *if* and *only if* do not claim the condition is true. The table completes the set. Pick the pole by **which way the link runs** (the condition is enough, the outcome needs it, or both) and by whether you **claim** the condition is a fact. Poles take **-m**, on `/th/` after a verb and on `/ɡ/` after a noun. As plain words the roots take ordinary endings (`zevel` *a wall*; `zedam` *reciprocity*).
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thoyem` / `goyem`** | enough; condition not asserted | *if* | `oyel` *door* | 🚪: walk through only if it opens |
-| **`thevem` / `gevem`** | enough; condition asserted as the reason | *because* | `evel` *brick* | 🧱: the cause is what the result sits on |
+| **`thevem` / `gevem`** | enough; condition asserted as the reason | *because* | `evel` *wall* | 🧱: the cause is what the result sits on |
 | **`tholum` / `golum`** | needed; condition not asserted | *only if* / *needs* | `olul` *paper-roll* | 🧻: without it the situation does not run |
 | **`tholum thevem` / `golum gevem`** | needed; condition asserted | *only because* / *depends on* | | 🧻 then 🧱: needed, and named as a fact |
 | **`thedam` / `gedam`** | both ways; condition not asserted | *if and only if* | `edal` *east-west* | ↔️: each side only with the other |
@@ -305,7 +305,7 @@ For *even if*, put the *although* pole **`hezom`** right before **`thoyem`**. Yo
 |--------|-----|---------|-----|
 | **`thevel`** | the reason broke a norm | *it's their fault* / *to blame* | **-l** ≈ locked on a broken rule |
 | **`thevem`** | the reason made it happen; no fault claimed | *because* | **-m** ≈ the ordinary case |
-| **`thever`** | the reason is one share among others | *partly because* / *played a part* | **-r** ≈ one brick of several |
+| **`thever`** | the reason is one share among others | *partly because* / *played a part* | **-r** ≈ one wall of several holding it up |
 
 > `zazawan vedabal thevel barl zalahen vezebel.`
 >

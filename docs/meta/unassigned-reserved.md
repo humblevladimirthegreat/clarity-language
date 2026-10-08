@@ -138,7 +138,7 @@ Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds
 - **closed (D-34):** a role compound on `/h/`.
 - **open:** a role compound as a piece of an ordinary compound, or two role vowels in a word. Not guessable: the first **`x`** decides the family, so an inner role vowel reads as part of the stem. *Noun + agent* is the role compound's own stem (`zaxodogaxowogal`).
 - **open:** a special pronoun (root + **-n**) as a role-compound stem or a label-scope host (`zaxamun`, `zamuthan`). It is neither an event nor a label. Parser: `roleCompoundStem`, `labelScopeStem`.
-- **open:** ability (`x` + vowel) on a `/z/` / `/d/` / `/b/` noun, a name, a pronoun, or `/h/` (`zodogaxal`). *Can* belongs to an act or a quality, and a noun or an adverb is neither. Ability is on `/v/` and `/ɡ/` (plus hostless `eze`). Parser: `abilitySlot`.
+- **open:** ability (`x` + vowel) on a `/z/` / `/d/` / `/b/` noun, a name, a pronoun, or `/h/` (`zodogaxal`). *Can* belongs to an act or a quality, and a noun or an adverb is neither. Ability is on `/v/` and `/ɡ/` (plus hostless `ubo`). Parser: `abilitySlot`.
 - **open:** name + `x` + vowel + **-n** in a clause body (`zalahen zazawaxon varahal.`). A bid is said to someone when arriving or leaving; inside a clause it has no job. That shape is a conversation-length bid only as a citation or a `/y/` call.
 
 ## Role pointers

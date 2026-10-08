@@ -268,7 +268,7 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [Than advertised](../comparatives.md#stance-bars) | `zugul thewam zuel gagazam.` | *The book is less clear than advertised.* | A |
 | [Than I expected](../comparatives.md#stance-bars) | `zazawan thahom zel gezebul.` | *Azawan is sleepier than I expected.* | A |
 | [Than they used to be](../comparatives.md#stance-bars) | `zazawan thenom zel gezebul.` | *Azawan is sleepier than they used to be.* | A |
-| [As … as possible](../comparatives.md#stance-bars) | `zalahen thezexal zoel hadehum vowogal.` | *Alahen walks as hastily as possible.* | A |
+| [As … as possible](../comparatives.md#stance-bars) | `zalahen thuboxal zoel hadehum vowogal.` | *Alahen walks as hastily as possible.* | A |
 | [Up to code](../comparatives.md#stance-bars) | `zahazal thumel zoel gabezem.` | *The house is as strong as the rules require.* | A |
 | [More than allowed](../comparatives.md#stance-bars) | `zedehel thegol zel gral.` | *There is more tea than the rules allow.* | A |
 | [Than hoped](../comparatives.md#stance-bars) | `zugul thevegem zel gagazam.` | *The book is clearer than I hoped.* | A |
@@ -290,7 +290,7 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [NOTIONAL `thavom`](../comparatives.md#stance-bars) | the imagined case | *than imagined* / *than in theory* | A |
 | [PLAN `thamam`](../comparatives.md#stance-bars) | the plan or the schedule | *than planned* / *than scheduled* | A |
 | [WANT `thohul` / `thohum` / `thohur`](../comparatives.md#stance-bars) | the level wanted | *than wanted* / *than I wanted* | A |
-| [ABIL `thezexal`](../comparatives.md#stance-bars) | what can be done | *as … as possible* | A |
+| [ABIL `thuboxal`](../comparatives.md#stance-bars) | what can be done | *as … as possible* | A |
 | [REQUIRE `thumel` / `thumem` / `thumer`](../comparatives.md#stance-bars) | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* | A |
 | [PERMIT `thegol` / `thegom` / `thegor`](../comparatives.md#stance-bars) | the rule, the grant, or what is tolerated | *over the limit* / *than they allow* | A |
 | [CONSENT `thuxegom`](../comparatives.md#stance-bars) | the agreed terms | *more than agreed* | A |
@@ -311,7 +311,7 @@ English *many* and *often* rank against an unstated baseline. Agazan names the b
 | [*than usual*](../comparatives.md#vague-amounts) (the same person or thing) | PATTERN **`thobam`** with no `/b/` | A |
 | [*too much* / *enough* / *not enough*](../comparatives.md#vague-amounts) | a met sake bar (`thegatham`), `zel` / `zoel` / `zuel` | A |
 | [too late / too soon](../comparatives.md#vague-amounts) | a met sake bar (`thegatham`), `zel` / `zuel` with `bral` | A |
-| [*as … as possible*](../comparatives.md#vague-amounts) | ABIL **`thezexal`**, `zoel` | A |
+| [*as … as possible*](../comparatives.md#vague-amounts) | ABIL **`thuboxal`**, `zoel` | A |
 | [*more and more* / *increasingly*](../comparatives.md#vague-amounts) | FORMER **`thenom`**, `zel` | A |
 
 | Job | Example | English | Stage |

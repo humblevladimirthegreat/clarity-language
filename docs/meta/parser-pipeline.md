@@ -115,7 +115,7 @@ Hosted overlays (needs, evidentials, MAY, NOTIONAL, plan / DECISION, clause pole
 | `kind` | `LexReading` | Inventory |
 |--------|--------------------|-----------|
 | `sake` | `sake` (on `x`+vowel hosts only) | eight sakes + unspecified; bare spelling is ordinary content |
-| `ability` | `ability` | hostless **`eze`** |
+| `ability` | `ability` | hostless **`ubo`** |
 | `join_act` | `joinAct` | vowel-series `/v/` **`an`** / **`on`** / … |
 | `join_relation` | `joinRelation` | same stems on `/g/` `/h/` |
 | `evidential` | `mood` | LIVE / MEMORY / … |
