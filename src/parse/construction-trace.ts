@@ -133,6 +133,7 @@ function traceRule(name: string): string {
   if (/^[zdb](Package|Noun|NounTagged|StandIn|StandInTagged|Tag)$/.test(name) || name === "citation") return "npPackage";
   if (/^unit(After[A-Z])?(Open|Shared)?$/.test(name) || name === "hookChain" || name === "unitAfterCross") return "unit";
   if (name === "clauseAfterCross") return "clause";
+  if (name === "hookUnitOpen" || name === "hookUnitClosed") return "hookUnit";
   if (name === "clauseItemAfterCross") return "clauseItem";
   if (name === "vpVerb") return "vpCoordPart";
   if (/^gSingle(Open|Closed)$/.test(name) || /^gCoordPart(Plain|Lead)$/.test(name)) return "gCoordPart";
@@ -140,8 +141,8 @@ function traceRule(name: string): string {
   if (name === "gJoinCloseRespectively") return "gJoinClose";
   if (/^(gPackage(Open|Closed)|gListItem|glPackage)$/.test(name)) return "gPackage";
   if (/^hSingle(Open|Closed)?$/.test(name) || name === "hGrounds") return "hCoordPart";
-  if (/^hUnit(Open|Closed)$/.test(name) || /^(hStandIn|hScale|frameUnit|barUnit|barStandIn)$/.test(name)) return "hUnitRule";
-  if (/^(sharedAdj(Open|Closed)|sharedScale|sharedAdverb)$/.test(name)) return "sharedAfterJoin";
+  if (/^hUnit(Open|Closed)$/.test(name) || /^(hStandIn|hScale(Open|Closed)?|frameUnit(Open|Closed)?|barUnit|barStandIn)$/.test(name)) return "hUnitRule";
+  if (/^(sharedAdj(Open|Closed)|sharedScale(Open)?|sharedAdverb)$/.test(name)) return "sharedAfterJoin";
   if (/^[zdb]Coord(Part)?(Open|Closed|Shared|Grounds)$/.test(name)) return name.replace(/(Open|Closed|Shared|Grounds)$/, "");
   if (/^[zdb]JoinClose(Open|Closed|Shared)?$/.test(name)) return "npJoinClose";
   return name;

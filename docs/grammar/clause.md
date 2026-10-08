@@ -352,7 +352,7 @@ A relation adjective and its hosted `/b/` (*the same as Azawan*: **`gugol`** + `
 >
 > "a dog the same as blue Azawan"
 
-The same holds after an `/h/` host: an adjective after its `/b/` describes that extra noun.
+The same holds after an `/h/` or `/th/` host: an adjective after its `/b/` describes that extra noun.
 
 > `zodogal vezebal humum bazawan gubuhel.`
 >

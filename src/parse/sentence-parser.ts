@@ -629,6 +629,7 @@ class AgazanSentenceParser extends CstParser {
     const gAhead = () => tokenIs(this.LA(laAfterW(this)), GPlain, JoinG);
     const hAhead = () => tokenIs(this.LA(laAfterW(this)), H) || isStanceJoin(this.LA(1));
     const notOpen: UnitEnd[] = ["closed", "shared"];
+    const hookAhead = () => this.LA(laAfterW(this)).tokenType === Hook;
     return [
       { gate: () => this.LA(1).tokenType === IslandOpen, rule: this.islandUnit, label: "islandUnit", state: "start", end: "closed", kind: "start" },
       ...np("z"),
@@ -646,7 +647,8 @@ class AgazanSentenceParser extends CstParser {
       { gate: hAhead, rule: this.hSingleClosed, label: "hCoord", state: "h", end: "closed", kind: "list" },
       { gate: hAhead, rule: this.hSingleOpen, label: "hCoord", state: "h", end: "open", kind: "list" },
       { gate: hAhead, rule: this.hGrounds, label: "hCoord", state: "start", end: "closed", kind: "list" },
-      { gate: () => this.LA(laAfterW(this)).tokenType === Hook, rule: this.hookUnit, label: "hookUnit", state: "start", end: "closed", kind: "start" },
+      { gate: hookAhead, rule: this.hookUnitClosed, label: "hookUnit", state: "start", end: "closed", kind: "start" },
+      { gate: hookAhead, rule: this.hookUnitOpen, label: "hookUnit", state: "start", end: "open", kind: "start" },
     ];
   }
 
@@ -663,7 +665,7 @@ class AgazanSentenceParser extends CstParser {
         (kind) =>
           (state === "start" || kind.kind !== state) &&
           (!kind.after || kind.after.includes(end)) &&
-          !(noHook && kind.rule === this.hookUnit),
+          !(noHook && kind.label === "hookUnit"),
       );
       this.or(
         1,
@@ -988,7 +990,12 @@ class AgazanSentenceParser extends CstParser {
       const adjAhead = () => this.LA(laAfterW(this)).tokenType === GPlain && !respectivelyAdjListAhead(this);
       const label = { LABEL: "sharedAfterJoin" };
       if (variant === "open") {
-        this.OPTION({ GATE: adjAhead, DEF: () => this.SUBRULE(this.sharedAdjOpen, label) });
+        this.OPTION(() =>
+          this.OR([
+            { GATE: adjAhead, ALT: () => this.SUBRULE(this.sharedAdjOpen, label) },
+            { ALT: () => this.SUBRULE(this.sharedScaleOpen, label) },
+          ]),
+        );
       } else if (variant === "shared") {
         this.SUBRULE(this.sharedAdjClosed, label);
       } else if (variant === "closed") {
@@ -1288,29 +1295,13 @@ class AgazanSentenceParser extends CstParser {
         });
       const alts: { ALT: () => void }[] = [];
       if (variant !== "open") {
-        // A `/th/` host's `/b/` is an offset or source, so a later `/ɡ/` stays the predicate.
         alts.push({
           ALT: () => {
             this.consume(1, HTh, { LABEL: "H" });
             hostOpen(true);
             this.option(1, () => {
               hostOpen(false);
-              this.or(2, [
-                {
-                  ALT: () => {
-                    this.consume(2, HostedBNumber, { LABEL: "B" });
-                    this.closedTail(10);
-                    // A `/th/` channel's offset, then `barl`: the next sentence is the grounds (knowing.md#evidence-clause).
-                    this.option(3, () => this.consume(3, Odo));
-                  },
-                },
-                {
-                  ALT: () => {
-                    this.consume(4, HostedBNoun, { LABEL: "B" });
-                    this.closedTail(20);
-                  },
-                },
-              ]);
+              this.landmarkHosted(10, "closed", true);
             });
           },
         });
@@ -1328,7 +1319,7 @@ class AgazanSentenceParser extends CstParser {
       if (variant !== "closed") {
         alts.push({
           ALT: () => {
-            this.consume(6, HPlain, { LABEL: "H" });
+            this.consume(6, H, { LABEL: "H" });
             hostOpen(false);
             this.landmarkHosted(60, "open");
           },
@@ -1393,10 +1384,11 @@ class AgazanSentenceParser extends CstParser {
   }
 
   /**
-   * A landmark host's `/b/`: an `open` one is a noun with no join, which the plain adjectives after it describe (so a
-   * plain adjective after the host would be one more of them); a `closed` one has a join, or is a number.
+   * A host's `/b/`: an `open` one is a noun with no join, which the plain adjectives after it describe (so a plain
+   * adjective after the host would be one more of them); a `closed` one has a join, or is a number. With `grounds`
+   * (a `/th/` host), `barl` may follow a number: a channel's offset, then the grounds (knowing.md#evidence-clause).
    */
-  private landmarkHosted(k: number, shape: "open" | "closed" | "any"): void {
+  private landmarkHosted(k: number, shape: "open" | "closed" | "any", grounds = false): void {
     const open = () => {
       this.consume(k, HostedBNoun, { LABEL: "B" });
       this.option(k, () => this.consume(k, Amount, { LABEL: "G" }));
@@ -1418,6 +1410,7 @@ class AgazanSentenceParser extends CstParser {
         ALT: () => {
           this.consume(k + 4, HostedBNumber, { LABEL: "B" });
           this.closedTail(k + 4);
+          if (grounds) this.option(k + 8, () => this.consume(k + 8, Odo));
         },
       },
     ];
@@ -1433,37 +1426,50 @@ class AgazanSentenceParser extends CstParser {
     this.option(k + 1, () => this.subrule(k, this.gPackageOpen, { LABEL: "gPackage" }));
   }
 
-  public hookUnit = this.RULE("hookUnit", () => {
-    this.MANY(() => {
-      this.CONSUME(W);
-    });
-    // `uem` + a `/th/` stance holds the stance as its frame; it does not read on the claim (sakes.md#contrary-to-stance).
-    this.CONSUME(Hook);
-    this.OPTION(() => this.SUBRULE(this.frameUnit, { LABEL: "frame" }));
-  });
+  /**
+   * A hook, and the stance `uem` holds as its frame (sakes.md#contrary-to-stance): any frame (`hookUnit`), one whose
+   * hosted `/b/` the adjectives after it describe (`Open`), or any other (`Closed`).
+   */
+  public hookUnit = this.hookUnitRule("hookUnit", "any");
+  public hookUnitOpen = this.hookUnitRule("hookUnitOpen", "open");
+  public hookUnitClosed = this.hookUnitRule("hookUnitClosed", "closed");
+  public frameUnit = this.frameRule("frameUnit", "any");
+  public frameUnitOpen = this.frameRule("frameUnitOpen", "open");
+  public frameUnitClosed = this.frameRule("frameUnitClosed", "closed");
 
-  /** The stance a `uem` hook holds as its frame, with what it hosts, as a `/th/` host takes it. */
-  public frameUnit = this.RULE("frameUnit", () => {
-    this.CONSUME(HFrame, { LABEL: "H" });
+  private hookUnitRule(name: string, shape: "any" | "open" | "closed") {
+    return this.RULE(name, () => {
+      this.MANY(() => {
+        this.CONSUME(W);
+      });
+      this.CONSUME(Hook);
+      const frame = { any: this.frameUnit, open: this.frameUnitOpen, closed: this.frameUnitClosed }[shape];
+      if (shape === "open") this.SUBRULE(frame, { LABEL: "frame" });
+      else this.OPTION(() => this.SUBRULE2(frame, { LABEL: "frame" }));
+    });
+  }
+
+  /** The frame stance, with what it hosts, as a `/th/` host takes it. */
+  private frameRule(name: string, shape: "any" | "open" | "closed") {
+    return this.RULE(name, () => {
+      this.CONSUME(HFrame, { LABEL: "H" });
+      this.hostedOrStandIn(shape, true);
+    });
+  }
+
+  /** A host's `/b/` (see {@link landmarkHosted}), or a stand-in it hosts (closed); optional unless `open`. */
+  private hostedOrStandIn(shape: "any" | "open" | "closed", grounds: boolean): void {
+    if (shape === "open") {
+      this.landmarkHosted(10, "open");
+      return;
+    }
     this.OPTION(() => {
       this.OR([
-        {
-          ALT: () => {
-            this.CONSUME(HostedBNumber, { LABEL: "B" });
-            this.closedTail(10);
-            this.OPTION2(() => this.CONSUME(Odo));
-          },
-        },
-        {
-          ALT: () => {
-            this.CONSUME(HostedBNoun, { LABEL: "B" });
-            this.closedTail(20);
-          },
-        },
+        { ALT: () => this.landmarkHosted(20, shape, grounds) },
         { ALT: () => this.CONSUME(HostedOdo, { LABEL: "Odo" }) },
       ]);
     });
-  });
+  }
 
   /**
    * A noun package: any head in a list (`Package`). A lone phrase is a noun or written span (`Noun`), a forward
@@ -1578,9 +1584,18 @@ class AgazanSentenceParser extends CstParser {
     this.SUBRULE(this.gPackageClosed, { LABEL: "gPackage" });
   });
 
-  public sharedScale = this.RULE("sharedScale", () => this.scaleBody(1));
-
   /** A rank join's scale: an `/h/` or `/th/` word (with its hosted `/b/` or stand-in), or a digitless `/b/` number. */
+  public sharedScale = this.RULE("sharedScale", () => {
+    this.OR([
+      { ALT: () => this.SUBRULE(this.hScaleClosed, { LABEL: "hUnitRule" }) },
+      { ALT: () => this.CONSUME(BScale, { LABEL: "scale" }) },
+    ]);
+  });
+
+  public sharedScaleOpen = this.RULE("sharedScaleOpen", () => {
+    this.SUBRULE(this.hScaleOpen, { LABEL: "hUnitRule" });
+  });
+
   private scaleBody(k: number): void {
     this.or(k, [
       { ALT: () => this.subrule(k, this.hScale, { LABEL: "hUnitRule" }) },
@@ -1588,23 +1603,20 @@ class AgazanSentenceParser extends CstParser {
     ]);
   }
 
-  public hScale = this.RULE("hScale", () => {
-    this.MANY(() => {
-      this.CONSUME(W);
+  /** An `/h/` or `/th/` scale word and what it hosts, in any shape, `Open` or `Closed` (see {@link landmarkHosted}). */
+  public hScale = this.hScaleRule("hScale", "any");
+  public hScaleOpen = this.hScaleRule("hScaleOpen", "open");
+  public hScaleClosed = this.hScaleRule("hScaleClosed", "closed");
+
+  private hScaleRule(name: string, shape: "any" | "open" | "closed") {
+    return this.RULE(name, () => {
+      this.MANY(() => {
+        this.CONSUME(W);
+      });
+      this.CONSUME(HScale, { LABEL: "H" });
+      this.hostedOrStandIn(shape, false);
     });
-    this.CONSUME(HScale, { LABEL: "H" });
-    this.OPTION(() => {
-      this.OR([
-        {
-          ALT: () => {
-            this.CONSUME(HostedB, { LABEL: "B" });
-            this.closedTail(10);
-          },
-        },
-        { ALT: () => this.CONSUME(HostedOdo, { LABEL: "Odo" }) },
-      ]);
-    });
-  });
+  }
 
   /** The adverb a verb list's join shares (it covers every verb). */
   public sharedAdverb = this.RULE("sharedAdverb", () => this.anyHUnit(2));

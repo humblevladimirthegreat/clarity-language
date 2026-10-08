@@ -696,9 +696,9 @@ describe("parse — comparatives.md bars", () => {
     const bar = barOf("zazawan thobam baxelehalx gezebul zel gezehel.");
     assert.equal(bar?.hosted?.bound.raw, "baxelehalx");
     assert.deepEqual(bar?.hosted?.adjs?.map((a) => a.word.raw), ["gezebul"]);
-    // On the clause, a channel's source keeps a later /ɡ/ as the predicate.
-    const units = parseText("zazawan thewam balahen gezebul.").utterances[0]!.bodies[0]!.clause.units;
-    assert.ok(units.some((u) => u.kind === "h" && !u.unit.hosted?.adjs));
+    // On the clause too, an adjective after a `/th/` host's `/b/` describes that noun (clause.md#complex-chaining).
+    const units = parseText("zazawan thewam balahen gezebul vowogal.").utterances[0]!.bodies[0]!.clause.units;
+    assert.ok(units.some((u) => u.kind === "h" && u.unit.hosted?.adjs?.[0]?.word.raw === "gezebul"));
   });
 
   it("keeps the ranked item's hook + /b/ before its bar inside the fence", () => {
