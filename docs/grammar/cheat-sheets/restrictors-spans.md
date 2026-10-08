@@ -74,7 +74,7 @@ With several occasions before `huel`, the last listed is the first choice.
 |-----|---------|---------|-------|
 | [Either, not both](../restrictors.md#more-occasions) | `zazawan vowogal herehel hanadal hol.` | *Azawan walks either when raining or at night.* | I |
 | [And/or](../restrictors.md#more-occasions) | `zalahen vezebal herehel hozezol haol.` | *Alahen sleeps when raining and/or when snowing.* | I |
-| [Preferably](../restrictors.md#more-occasions) | `zazawan vowogal hamabam hagevem hel.` | *preferably in an emergency rather than for convenience* | I |
+| [Preferably](../restrictors.md#more-occasions) | `zazawan vowogal hamabam hahobam hel.` | *preferably in an emergency rather than for convenience* | I |
 | [Last resort](../restrictors.md#more-occasions) | `zazawan vowogal herehel huel.` | *Azawan walks only as a last resort when raining.* | I |
 | [When's best?](../restrictors.md#more-occasions) | `yol her zahan vowogal.` | *When's best for us to walk?* | I |
 | [On an adjective, one of two](../restrictors.md#more-occasions) | `zazawan werehel wanadal wol gezebul.` | *sleepy either when raining or at night* | I |

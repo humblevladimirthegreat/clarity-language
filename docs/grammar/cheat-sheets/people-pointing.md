@@ -24,7 +24,7 @@ A quick look at [pronouns](../pronouns.md) and [plurality](../plurality.md) on o
 | [A label you chose](../pronouns.md#tag-pronouns) | role letter + `w` + tag vowel | `zwar` | *A* | I |
 | [The talk's topic](../pronouns.md#topic-pronoun) | `oza` + **-n** | `zozan` | *the topic* | I |
 
-A resume uses the **whole stem**: `debedalahazar` is *the bedroom*, `debedar` is *the bed*. It points at the **most recent** word with that stem.
+A resume uses the **whole stem**: `debedaluruher` is *the bedroom*, `debedar` is *the bed*. It points at the **most recent** word with that stem.
 
 ### Role pointers {#role-pointers}
 

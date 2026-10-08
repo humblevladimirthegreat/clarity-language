@@ -376,7 +376,7 @@ Closed **`hel`** ranks the listed occasions: the first one listed is the preferr
 | **`hoel` / `hoem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **o** ≈ one + **e** ≈ order |
 | **`huel` / `huem`** | occasions last-first | *as a last resort when A* (one occasion); several run last-listed first (closed / open) | **u** ≈ undo + **e** ≈ order |
 
-> `zazawan vowogal hamabam hagevem hel.`
+> `zazawan vowogal hamabam hahobam hel.`
 >
 > z-Azawan | v-walk | h-emergency | h-convenience | h-when-ranked
 >

@@ -323,24 +323,43 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 <!-- generated: compounds -->
 | Agazan | English | Abstract (**-m**) |
 |--------|---------|-------------------|
+| `abadomedeyol` | *energy drink* |  |
+| `abagolebavul` | *blackberry* |  |
+| `abagolebedul` | *crow* |  |
 | `abahomobel` | *refugee* |  |
+| `abahuluvavul` | *date-fruit* |  |
 | `abalabezel` | *shoulder* |  |
 | `abazelalagal` | *arrest* |  |
 | `abazemenehel` | *penalty* |  |
+| `abebalagedel` | *chewing gum* |  |
 | `abebaledeyol` | *soda* |  |
+| `abebalowodel` | *sparkling water* |  |
 | `abebelagehol` | *paprika* |  |
 | `abedalebahel` | *oregano* |  |
+| `abedalemedol` | *pepperoni* |  |
 | `abehalahazal` | *resort* |  |
-| `abevalahazal` | *bathroom* |  |
+| `abevaluruhel` | *bathroom* |  |
+| `abezemagavel` | *espresso* |  |
+| `abodaledehul` | *bamboo* |  |
+| `abodelehezel` | *cream cheese* |  |
+| `abodelemegal` | *buttermilk* |  |
+| `abodelugugol` | *shortbread* |  |
+| `abogulegal` | *omelet* |  |
+| `abogulunudal` | *lasagna* |  |
+| `abovulawahel` | *cider* |  |
+| `abovuluhuzal` | *apple juice* |  |
 | `abowelebahel` | *rosemary* |  |
+| `abowelelevol` | *pine needle* |  |
 | `abozomahazal` | *museum* |  |
-| `adabalebedel` | *sauce* |  |
+| `abudelazavul` | *potato salad* |  |
+| `adabaluzubal` | *broth* |  |
 | `adagolebahel` | *tarragon* |  |
 | `adavalahahal` | *taste* |  |
 | `adazolagadel` | *dinner* |  |
 | `adedelazewel` | *council* |  |
 | `adedolebahel` | *basil* |  |
 | `adegolebahel` | *cilantro* |  |
+| `adeheluhuzal` | *orange juice* |  |
 | `adehumazahal` | *scan* |  |
 | `adehumevehel` | *panic* |  |
 | `adozemuhahul` | *dress-shoe* |  |
@@ -350,16 +369,26 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `agadolayahal` | *carpet* |  |
 | `agahalanabal` | *drive* |  |
 | `agahalehevel` | *traffic* |  |
+| `agavolodogal` | *guard dog* |  |
+| `agavulagedel` | *marshmallow* |  |
 | `agawalezebel` | *whisper* |  |
 | `agawalezegol` | *hint* |  |
 | `agawulayahal` | *leather* |  |
+| `agawulemedol` | *beef* |  |
 | `agayelebahel` | *bay leaf* |  |
 | `agazamezebel` | *explanation* |  |
-| `agedemebevul` | *cake* |  |
 | `agegolebahel` | *parsley* |  |
+| `agehemedeyol` | *potion* |  |
+| `ageholawahel` | *mulled wine* |  |
+| `ageholedehel` | *chai* |  |
 | `ageholuzubal` | *curry* |  |
+| `agehulebedul` | *ostrich* |  |
 | `ageladahel` | *hang* |  |
+| `agodalehezel` | *goat cheese* |  |
+| `agogemegal` | *scrambled eggs* |  |
+| `agogemuhuzal` | *smoothie* |  |
 | `agozamozel` | *fiction* |  |
+| `agubelebevul` | *muffin* |  |
 | `aguladahol` | *export* |  |
 | `agulagayel` | *president* |  |
 | `agulagedul` | *government* |  |
@@ -369,30 +398,42 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `aguluzubul` | *province* |  |
 | `ahadalahabal` | *holder* |  |
 | `ahadoluzugul` | *kindergarten* |  |
+| `ahahelawahel` | *mead* |  |
 | `ahahulazewel` | *jury* |  |
 | `ahahulehegol` | *lawsuit* |  |
 | `ahamezebel` | *negotiation* |  |
+| `ahavomegewol` | *spinach* |  |
 | `ahazalagadol` | *floor* |  |
 | `ahazalahodal` | *roof* |  |
 | `ahazalamol` | *mortgage* |  |
+| `ahazalanahul` | *pet* |  |
 | `ahazalevedal` | *yard* |  |
 | `ahazalezagal` | *apartment* |  |
 | `ahazamobel` | *resident* |  |
 | `ahazamogobal` | *environment* |  |
+| `ahazumebedul` | *swallow* |  |
+| `ahehelugugol` | *gingerbread* |  |
 | `ahelogodel` | *fridge* |  |
+| `ahobelebevul` | *bun* |  |
 | `ahodalahel` | *lid* |  |
+| `ahodalanedol` | *acorn* |  |
 | `aholohahal` | *emotion* |  |
 | `ahudolagehol` | *mustard* |  |
+| `ahudolemedol` | *sausage* |  |
 | `ahulagedul` | *democracy* |  |
 | `alagamahazal` | *prison* |  |
+| `alahulebavul` | *cranberry* |  |
 | `alavalehobal` | *popularity* |  |
 | `alavalezebel` | *praise* |  |
 | `alavalogodal` | *favorite* |  |
 | `alavomavol` | *comedy* |  |
+| `aludelabogal` | *firefly* |  |
 | `amadalamazal` | *hill* |  |
+| `amadalevehol` | *trout* |  |
 | `amahalagayel` | *king* |  |
 | `amavalenegel` | *throat* |  |
 | `amazamabehel` | *paragraph* |  |
+| `amazamedehul` | *bush* |  |
 | `amazamezebel` | *summary* |  |
 | `amolabahal` | *inflation* |  |
 | `amolagedul` | *tax* |  |
@@ -401,98 +442,182 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `amolameval` | *employment* |  |
 | `amolenabal` | *revenue* |  |
 | `amoluzel` | *investment* |  |
+| `anadalebadel` | *moth* |  |
 | `anadamobel` | *stranger* |  |
 | `analobel` | *friend* | `analobem` *allegiance* |
 | `anavalemedel` | *surgery* |  |
 | `anayalebahel` | *chives* |  |
 | `anedolagehol` | *nutmeg* |  |
 | `anedoledehul` | *oak* |  |
+| `arabalebedul` | *hawk* |  |
 | `aradalarebel` | *edit* |  |
 | `aradalezehel` | *poem* |  |
 | `aradalovul` | *essay* |  |
 | `aradalugul` | *writing-book* |  |
 | `aragalavahel` | *coal* | `aragalavahem` *carbon* |
+| `aragalehehol` | *mussel* |  |
+| `arazolunudal` | *rice noodles* |  |
 | `avadalazewel` | *army* |  |
 | `avagemozewel` | *efficiency* |  |
+| `avahelagedel` | *caramel* |  |
 | `avahelahazal` | *firehouse* |  |
+| `avahelebevul` | *toast* |  |
+| `avahelemedol` | *barbecue* |  |
+| `avavolanahul` | *livestock* |  |
+| `avavolebedul` | *poultry* |  |
 | `avavulagayel` | *wreath* |  |
 | `avavulagehol` | *clove* |  |
 | `avavulahazal` | *greenhouse* | `avavulahazam` *forcing* |
+| `avavulelevol` | *petal* |  |
+| `avavuluhuzal` | *nectar* |  |
+| `avawalelevol` | *lily pad* |  |
+| `avazomagadul` | *cheetah* |  |
+| `avazomebedul` | *falcon* |  |
 | `avevalagehol` | *cumin* |  |
+| `awadalabugol` | *cauliflower* |  |
+| `awadaledehul` | *birch* |  |
+| `awavalugugol` | *wafer* |  |
 | `azadalebevel` | *resign* |  |
+| `azagamebedul` | *vulture* |  |
+| `azahelegebal` | *raisin* |  |
+| `azahelemedol` | *jerky* |  |
+| `azaholedehel` | *iced tea* |  |
+| `azavulegewol` | *lettuce* |  |
 | `azazaladazol` | *afternoon* |  |
 | `azegelagehol` | *vanilla* |  |
+| `azegelemegal` | *milkshake* |  |
 | `azewemadedel` | *committee* |  |
+| `ebadelabogal` | *caterpillar* |  |
+| `ebaheledehel` | *herbal tea* |  |
 | `ebahelevedal` | *grass* |  |
-| `ebedalahazal` | *bedroom* | `ebedalahazam` *sanctum* |
+| `ebebulavavul` | *violet* |  |
+| `ebebuluvavul` | *plum* |  |
+| `ebedaluruhel` | *bedroom* | `ebedaluruhem` *sanctum* |
 | `ebedelabehel` | *menu* |  |
 | `ebedelugugel` | *counter* |  |
 | `ebegologovel` | *abortion* |  |
+| `ebegulamahul` | *truffle* |  |
+| `ebegulemedol` | *pork* |  |
+| `ebehalanedol` | *walnut* |  |
 | `ebehamalodel` | *argument* | `ebehamalodem` *logic* |
 | `ebehamanagul` | *counterexample* |  |
 | `ebehamebadal` | *sound* | `ebehamebadam` *soundness* |
 | `ebehamelegel` | *valid* | `ebehamelegem` *validity* |
 | `ebehamevehal` | *conclusion* |  |
 | `ebehamevel` | *premise* |  |
+| `ebehelagedel` | *gummy bear* |  |
+| `ebehelevehol` | *salmon* |  |
 | `ebeholahazal` | *pub* |  |
+| `ebeholegevel` | *barley* |  |
 | `ebevelorodal` | *career* |  |
 | `ebevemunuzel` | *advertisement* |  |
+| `ebevulegevel` | *wheat* |  |
+| `ebeyelemegal` | *soy milk* |  |
 | `ebeyolarebel` | *editing* |  |
 | `ebogulebahel` | *dill* |  |
 | `ebudalahazal` | *gallery* |  |
-| `edahelebezul` | *pocket* |  |
+| `edazeledeyol` | *liquor* |  |
 | `edegelebahel` | *sage* |  |
+| `edehelavavul` | *jasmine* |  |
 | `edehelezel` | *cup* |  |
 | `edeholezebel` | *lecture* |  |
 | `edehulazewel` | *forest* |  |
+| `edehulebedul` | *woodpecker* |  |
 | `edevalahazal` | *hell* |  |
 | `edevolegugel` | *videogame* |  |
 | `edezaladahel` | *skirt* |  |
+| `edodaledehul` | *willow* |  |
 | `egabemevedal` | *estate* |  |
+| `egalehehol` | *eggshell* |  |
+| `egamavavul` | *bud* |  |
+| `egebaluhuzal` | *grape juice* |  |
+| `egedelagedel` | *candy cane* |  |
+| `egedeledehul` | *fir* |  |
+| `egevelebedul` | *sparrow* |  |
+| `egolanedol` | *pistachio* |  |
+| `egoledehel` | *green tea* |  |
+| `ehadalebezul` | *pocket* |  |
 | `ehebalabahol` | *harbor* |  |
 | `ehebalahazal` | *port* |  |
 | `ehebamagehal` | *tourism* |  |
+| `ehedalabogal` | *louse* |  |
+| `ehegelabogal` | *dragonfly* |  |
 | `ehehamerevol` | *god* |  |
+| `ehezelunudal` | *mac-and-cheese* |  |
 | `ehobalegodel` | *density* |  |
 | `eladelalegol` | *veteran* |  |
 | `elavamobel` | *giant* |  |
+| `elegalebagel` | *ham* |  |
+| `elehuledeyol` | *lemonade* |  |
+| `elehuluvavul` | *citrus* |  |
 | `elelaradal` | *spell* |  |
+| `elezalavavul` | *lily* |  |
+| `emagalezehul` | *rattlesnake* |  |
 | `emebamuzel` | *evolution* |  |
 | `emegalabodel` | *cream* |  |
+| `emegalagavel` | *latte* |  |
+| `emegalanahul` | *mammal* |  |
+| `emegalanedol` | *almond* |  |
 | `enabamoyel` | *entrance* |  |
 | `enehalelegal` | *knee* |  |
 | `erabelebevel` | *airline* |  |
+| `eredalebavul` | *raspberry* |  |
+| `eredalebedul` | *robin* |  |
 | `eregalohahol` | *tube* |  |
 | `erehelogodul` | *raincoat* |  |
 | `erevolagul` | *empire* |  |
 | `evedaladahel` | *valley* |  |
+| `evedalavavul` | *daisy* |  |
 | `evegalugul` | *philosophy* |  |
 | `evegolezadel` | *championship* |  |
+| `evevulagedel` | *cotton candy* |  |
 | `evezalevevol` | *portrait* |  |
 | `ewedolevewal` | *curtain* |  |
+| `ewedulavavul` | *dandelion* |  |
 | `eyayelagehol` | *turmeric* |  |
+| `ezagamadevel` | *pigeon* |  |
 | `ezagamerevol` | *mayor* |  |
 | `ezagemaradal` | *legislation* |  |
 | `ezagemobel` | *lawyer* |  |
+| `ezebalagavel` | *decaf* |  |
+| `ezebalavavul` | *poppy* |  |
 | `ezebelalegol` | *consultation* |  |
 | `ezebelanedal` | *noun* |  |
 | `ezebelovul` | *meaning* |  |
 | `ezebelumel` | *grammar* |  |
 | `ezebeluzegel` | *verb* |  |
 | `ezebemazewel` | *conference* |  |
+| `ezehulevehol` | *eel* |  |
 | `obelalagal` | *prisoner* |  |
 | `obeluzel` | *adult* |  |
+| `obohelegewol` | *cabbage* |  |
+| `obohelemedol` | *meatball* |  |
+| `odogalabogal` | *flea* |  |
 | `ogobalabehel` | *website* |  |
 | `ogobalaradal` | *blog* |  |
 | `ogodalagehol` | *saffron* |  |
+| `ogodalevehol` | *goldfish* |  |
+| `ogogalemegal` | *coconut milk* |  |
+| `ogohalebevul` | *cornbread* |  |
 | `ogovemewedel` | *divorce* |  |
+| `ogozomamahul` | *toadstool* |  |
+| `ohahalebedul` | *seagull* |  |
+| `ohahalegewol` | *seaweed* |  |
+| `ohahalemedol` | *seafood* |  |
 | `ohahalozodel` | *sea salt* |  |
+| `ohaheluvavul` | *pumpkin* |  |
 | `ohaholeregal` | *pipe* |  |
+| `ohogalagavel` | *mocha* |  |
+| `ohogalanedol` | *hazelnut* |  |
+| `ohogaledeyol` | *cocoa* |  |
+| `ohozaladogel` | *mule* |  |
+| `ohozalegevel` | *oat* |  |
 | `oladalamol` | *pension* |  |
 | `oladalenahal` | *retirement* |  |
 | `onodamugul` | *album* |  |
 | `ovulezebel` | *advise* |  |
 | `owobomazewel` | *league* |  |
+| `owodaluvavul` | *melon* |  |
 | `owogalael` | *wield* |  |
 | `owogalaem` | *channel* |  |
 | `owogalal` | *enter* |  |
@@ -515,13 +640,20 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `owogaluom` | *relay* |  |
 | `oyelebehul` | *doorbell* |  |
 | `ozalagehol` | *star anise* |  |
+| `ozegalarazol` | *fried rice* |  |
+| `ozobalavavul` | *lavender* |  |
 | `ozodelagehol` | *black pepper* |  |
+| `ozodelugugol` | *cracker* |  |
+| `ozovemegevel` | *rye* |  |
+| `ubebelabogal` | *wasp* |  |
 | `ubuhelebavul` | *blueberry* |  |
 | `uduhemagedul` | *military* |  |
 | `uduhomowodel` | *thirst* |  |
 | `udumahazal` | *laboratory* |  |
 | `uduvelebahel` | *mint* |  |
-| `ugugalahazal` | *kitchen* |  |
+| `ugugaluruhel` | *kitchen* |  |
+| `ugugelegal` | *fried egg* |  |
+| `ugugolebevul` | *biscuit* |  |
 | `ugulagedul` | *publisher* |  |
 | `ugulahahal` | *read* |  |
 | `ugulahazal` | *library* |  |
@@ -530,14 +662,22 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ugumerevul` | *technology* |  |
 | `umuyulezebel` | *poetry* |  |
 | `umuyulezehel` | *opera* |  |
+| `uvavulazavul` | *fruit salad* |  |
 | `uvudalabahel` | *kick* |  |
 | `uvudalelezel` | *heel* |  |
+| `uvudulezehul` | *cobra* |  |
+| `uwulabogal` | *termite* |  |
 | `uwulagehol` | *cinnamon* |  |
 | `uwulagezal` | *fence* |  |
 | `uwuzelowodel` | *alcohol* |  |
+| `uyoyulemedol` | *mutton* |  |
+| `uyoyulodogal` | *sheepdog* |  |
 | `uzelobol` | *stem* |  |
 | `uzubalebahel` | *thyme* |  |
+| `uzubalezel` | *porridge* |  |
+| `uzubamegal` | *boiled egg* |  |
 | `uzugulevehal` | *graduate* |  |
 | `uzugulugul` | *textbook* | `uzugulugum` *canon* |
 | `uzuhelagehol` | *wasabi* |  |
+| `uzuhelevehol` | *tuna* |  |
 <!-- /generated -->

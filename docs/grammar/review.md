@@ -39,7 +39,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *scream* | `vezugel` |
 | *fight* | `vavadal` |
 | *mango* | `amegol` |
-| *melon* | `emehol` |
+| *watermelon* | `owodal` |
 | *write* | `varadal` |
 | *swim* | `vezewel` |
 | *night* | `anadal` |
@@ -172,14 +172,14 @@ education
 **Rule:** [First mention, abstract](word-endings.md#abstract-m)
 :::
 
-**2.** *Azawan sees a mango or a melon, just one of them.* `zazawan damegol demehol dol vahahal.` or `zazawan damegol demehol dal vahahal.`
+**2.** *Azawan sees a mango or a watermelon, just one of them.* `zazawan damegol dowodal dol vahahal.` or `zazawan damegol dowodal dal vahahal.`
 
 ::: details Show answer
-`zazawan damegol demehol dol vahahal.`
+`zazawan damegol dowodal dol vahahal.`
 
-z-Azawan | [d-mango | d-melon | d-or-exactly-one] | v-see
+z-Azawan | [d-mango | d-watermelon | d-or-exactly-one] | v-see
 
-**`dol`** picks one of the items; **`dal`** would be *a mango and a melon*.
+**`dol`** picks one of the items; **`dal`** would be *a mango and a watermelon*.
 
 **Rule:** [Choice (o)](joins.md#choice-o)
 :::
@@ -623,7 +623,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *school* | `uzugul` |
 | *umbrella* | `amebel` |
 | *tomato* | `adedol` |
-| *melon* | `emehol` |
+| *watermelon* | `owodal` |
 | *red* | `eredal` |
 | *quiet* | `agawal` |
 | *station* | `ezedel` |
@@ -707,14 +707,14 @@ z-Azawan | g-quiet-l-infinity
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Alahen cooks “Tomato and Melon”* (the familiar dish). `zalahen dadedol demehol dan vugugal.` or `zalahen dadedol demehol dal vugugal.`
+**1.** *Alahen cooks “Tomato and Watermelon”* (the familiar dish). `zalahen dadedol dowodal dan vugugal.` or `zalahen dadedol dowodal dal vugugal.`
 
 ::: details Show answer
-`zalahen dadedol demehol dan vugugal.`
+`zalahen dadedol dowodal dan vugugal.`
 
-z-Alahen | NAME[d-tomato | d-melon | d-and] | v-cook
+z-Alahen | NAME[d-tomato | d-watermelon | d-and] | v-cook
 
-**-n** on the join names the list as one set phrase; **`dal`** is just *a tomato and a melon*.
+**-n** on the join names the list as one set phrase; **`dal`** is just *a tomato and a watermelon*.
 
 **Rule:** [Named phrase](joins.md#named-list)
 :::

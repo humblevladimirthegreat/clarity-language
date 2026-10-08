@@ -380,7 +380,7 @@ A **hyphenated name** (*Mary-Kate*, *Coffee-Tea*) is one word: roots join left t
 
 A business or product name uses the same pieces. A compact label is one **`x`** word. A product under a maker’s name takes the maker as its `/ɡ/` name, as a person takes a family name (*a Mustang by Ford*). A name with grammar inside it, such as a verb or *instead of*, is a [titled phrase](#titled-phrases) or a [span](spans.md#when-required), where any role letter can appear.
 
-A nativized loan (a foreign word adapted into an Agazan root, plus an ordinary ending) takes the same four endings as any content word. A **lexical compound** also fills one slot: it is one stem, written without mid-word **`x`** (`zebedalahazal` *bedroom*).
+A nativized loan (a foreign word adapted into an Agazan root, plus an ordinary ending) takes the same four endings as any content word. A **lexical compound** also fills one slot: it is one stem, written without mid-word **`x`** (`zebedaluruhel` *bedroom*).
 
 **Compare with:** `zohun galuden.` alone is a sentence: *Ohun is an Aluden* ([classification](predication.md#classification)). The citation `ohun galuden` has no role letter, so it only names. Adjacent bare same-role words (`zohun zaluden`) are two people in a [join](joins.md).
 

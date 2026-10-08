@@ -147,14 +147,14 @@ Mid-word **`th`** is another family: a sake root and a vowel (`gulothal`), any o
 |--------|-----|---------|-------|
 | [two words](../x-compounds.md#compound-vs-separate) | two things, or a property marked another way | `zahavol zerevul zam` *a hammer and a wrench*; `zodogal gubuhel` *a blue dog* | B |
 | [**`x`** in the middle](../x-compounds.md#compound-vs-separate) | one thing; both roots audible | `gagayoxalaval` *love in the crush sense*; `zebeyaxabodel` *peanut butter*; `zazawaxalahen` (one person) | B |
-| [dictionary word](../x-compounds.md#compound-vs-separate) | one familiar kind, one entry | `zebedalahazal` *bedroom*; `zazoval` *sunflower* | B |
+| [dictionary word](../x-compounds.md#compound-vs-separate) | one familiar kind, one entry | `zebedaluruhel` *bedroom*; `zazoval` *sunflower* | B |
 
 A dictionary compound joins its two roots with the left root's ending (**-l** everyday, **-m** abstract), never **`x`**. If the pairing is not listed, glue with **`x`** or use two words.
 
 <!-- cheat-sheet: roles-comparing -->
 | Agazan | English | Stage |
 |--------|---------|-------|
-| [`zebedalahazal`](../x-compounds.md#lexical-compounds) | *bedroom* | B |
+| [`zebedaluruhel`](../x-compounds.md#lexical-compounds) | *bedroom* | B |
 | [`zoyelebehul`](../x-compounds.md#lexical-compounds) | *doorbell* | B |
 | [`zanalobel`](../x-compounds.md#lexical-compounds) | *friend* | B |
 | [`zerehelogodul`](../x-compounds.md#lexical-compounds) | *raincoat* | B |
@@ -333,4 +333,4 @@ English *many* and *often* rank against an unstated baseline. Agazan names the b
 | `daexaradal` *a writing tool* ([a compound](../roles.md#instrument)) | | `ael` *using* ([a hook on the clause](../hooks.md#extra-noun)) |
 | `gewezal` *west* ([compass](../roles.md#endings-and-resume)) | | `gewezathazawan` *Azawan's left* ([a face](../roles.md#endings-and-resume)) |
 | `gewezathazawan bedehul` *left of the tree, from Azawan's view* ([a facing person](../roles.md#viewpoint-vs-landmark)) | | `gewezathol bahazal` *on the house's left* ([the landmark's own front](../roles.md#landmark-facing)) |
-| `zebedalahazal` *bedroom* ([a dictionary word](../x-compounds.md#lexical-compounds)) | | `zebeyaxabodel` *peanut butter* ([glued with `x`](../x-compounds.md#compound-vs-separate)) |
+| `zebedaluruhel` *bedroom* ([a dictionary word](../x-compounds.md#lexical-compounds)) | | `zebeyaxabodel` *peanut butter* ([glued with `x`](../x-compounds.md#compound-vs-separate)) |

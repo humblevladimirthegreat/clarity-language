@@ -15,7 +15,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 😘,air-kiss,eraha,,,,,
 🥲,tear-smile,adeza,,,,,
 😋,yummy,ayahe,tempting,yummy looks tempting,,,
-😛,raspberry,aroze,mockery,"raspberry teases; mockery is the stance, not the gesture",,,
+😛,tongue-out,adevu,mockery,"a stuck-out tongue teases; mockery is the stance, not the gesture",,,
 😜,tease,adeze,banter,a playful tease; banter is friendly mockery,,,
 🤪,zany,ezeha,crazy,zany antics defy common sense,,silly; mad,
 🤑,greed,egedo,wealth,greed hungers for wealth,,asset; wealthy; rich; poor,
@@ -410,8 +410,8 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🍄,mushroom,amahu,proliferation,mushrooms pop up overnight,,,
 🪾,dead-tree,ededa,decay,dead tree shows decay,,,
 🍇,grape,egeba,disparagement,sour grapes runs down what you cannot reach,,,
-🍈,melon,emeho,fruit,a melon is a sweet seed-bearing food; fruit is the seed-bearing food of a plant,,,joins.md#beginner-practice
-🍉,watermelon,owoda,refreshment,watermelon is cold juicy water on a hot day,,,
+🍈,fruit,uvavu,,a melon stands for fruit: the sweet seed-bearing food of a plant,,,
+🍉,watermelon,owoda,refreshment,watermelon is cold juicy water on a hot day,,,joins.md#beginner-practice
 🍊,tangerine,adehe,skin,a tangerine peel is its outer covering; skin is the outer covering of a body,,,
 🍋,lemon,elehu,defect,a lemon is a bad deal,,,
 🍋‍🟩,lime,alahu,zest,lime adds zest and tang,g:sour,tart; tangy,
@@ -473,13 +473,13 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🍳,cooking,uguge,,,,,
 🥘,skillet,ozega,medley,many components one pan,,,
 🍲,soup,uzuba,simmer,soup simmers over low heat for a long time,,pot; stew,
-🫕,fondue,avadu,sharing,everyone dips from one shared pot,,,
+🫕,sauce,ozoza,sharing,everyone dips into one shared pot of sauce,,,
 🥣,cereal,eze,capacity,bowl holds what it can,,,intention.md#intermediate-practice
 🥗,salad,azavu,,,,,hooks.md#beginner-practice
 🍿,popcorn,ababo,entertainment,popcorn at the show is entertainment,,entertain,
 🧈,butter,abode,flattery,butter someone up with flattery,,,
 🧂,salt,ozode,skepticism,take it with a grain of salt,,,
-🥫,tin,edevu,metal,a tin is a can of metal; metal is the hard shiny material,,,
+🥫,metal,emada,,a can stands for metal: the hard shiny material,,,
 🍱,bento,ebedo,order,a bento box keeps each food in its own tidy slot,,line; rank; arrange,
 🍘,rice-cracker,arazu,,,,,
 🍙,rice-ball,araza,,,,,
@@ -500,7 +500,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🍩,doughnut,odode,reward,donut is a sweet reward,,profit,numbers.md#beginner-practice
 🍪,cookie,ugugo,compliance,browser cookie tracks compliance,,,pronouns.md#beginner-practice
 🎂,birthday,ebeva,age,a birthday marks years lived; age is how old on the continuum,,,
-🍰,shortcake,ohodu,,,,,
+🍰,cake,egaga,,a slice of cake is the sweet baked treat,,,
 🧁,cupcake,agube,coda,cupcake is a sweet course; coda is the unobservable closing role,,,
 🥧,pie,abawu,,,,,numbers.md#beginner-practice
 🍫,chocolate,ohoga,,,,,
@@ -563,7 +563,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🏦,bank,abagu,security,bank keeps money safe; security is kept safe,,deposit,
 🏨,hotel,ohode,,,,,
 🏩,motel,omode,privacy,discreet lodging,,,
-🏪,convenience-store,ageve,convenience,corner store is always nearby; convenience is easy to reach,,shop,
+🏪,shop,ahoba,convenience,the corner shop is always nearby; convenience is easy to reach,,,
 🏫,school,uzugu,education,school teaches; education is learning over time,,educational; course,word-endings.md#beginner-practice
 🏬,department-store,ozodo,market,a department store gathers many stalls under one roof; a market is where goods are traded,,economic; economy; retail; commercial,
 🏭,factory,avage,output,factory turns out goods; output is the unobservable result-role,,industrial,numeric-derivation.md#advanced-practice
@@ -760,7 +760,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥼,lab-coat,alego,expertise,lab coat marks scientific work; expertise is specialized knowledge,,technical; master; talent; specialist; specialize; pro; qualification; expert,
 🦺,safety-vest,eveze,safety,the vest keeps workers safe; safety is freedom from harm,,safe; secure; insurance,
 👔,necktie,enege,neck,a necktie hangs at the neck; the neck joins head and body,,,
-👕,t-shirt,edahe,casual,shirt is everyday wear; casual is relaxed informal,,shirt,
+👕,shirt,ehada,casual,a shirt is everyday wear; casual is relaxed informal,,t-shirt,
 👖,jeans,ehewa,,,,,
 🧣,scarf,azoga,,,,,
 🧤,gloves,agazu,winter,gloves come out in winter; winter is the cold season,,,
@@ -860,7 +860,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 📖,book,ugu,knowledge,book holds knowledge,,novel; know,word-endings.md#beginner-practice
 📓,notebook,onodu,,,,,
 📒,ledger,uhu,,,,catalog,
-📃,page-curl,obege,,,,,
+📃,paper,ubebe,,a curling sheet is paper,,,
 📜,scroll,oze,tale,scroll records a tale; tale is a told story,,historical; narrative,
 📄,page,abehe,documentation,page is a sheet; record is the unobservable keeping,,sheet; document; text,predication.md#beginner-practice
 📰,newspaper,unuze,news,a newspaper prints what happened today,,article; magazine; coverage; journal,hooks.md#intermediate-practice
@@ -970,7 +970,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧷,safety-pin,azeve,fastening,safety pin holds fabric together; fastening is holding together,,,
 🧹,broom,ubuva,cleanup,broom sweeps dirt away; cleanup is clearing what clutters,,sweep; wipe,
 🧺,basket,abeza,gathering,basket collects items together; gathering is bringing together,,,plurality.md#beginner-practice
-🧻,paper-roll,olu,necessity,toilet paper meets basic need; necessity is what must be had,,necessary; tissue; paper; essential; lack,
+🧻,paper-roll,olu,necessity,toilet paper meets basic need; necessity is what must be had,,necessary; tissue; essential; lack,
 🪣,bucket,abegu,collection,bucket holds gathered liquid; collection is bringing together,,collect,causation.md#beginner-practice
 🧼,soap,ozoba,cleanliness,soap washes away grime; cleanliness is freedom from dirt,,clean; pure,
 🫧,bubbles,abeba,fragility,bubbles pop with a touch; fragility is easily broken,,,

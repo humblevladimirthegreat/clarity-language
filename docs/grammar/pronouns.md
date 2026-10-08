@@ -25,9 +25,9 @@ After you have already named a person or thing, the next sentence can point back
 
 **Compare with:** for English *the dog that walked*, say that the dog walks as its own sentence, then resume the dog with **-r** in whatever slot you need. Do not attach a *who / that / which* clause to the noun ([which person or thing](dependents.md#which-noun)).
 
-A word built from two roots resumes with its whole stem too. `debedalahazar` is *the bedroom*; `debedar` is *the bed*, and never points at a bedroom.
+A word built from two roots resumes with its whole stem too. `debedaluruher` is *the bedroom*; `debedar` is *the bed*, and never points at a bedroom.
 
-> `zazawan debedalahazal vahahal. zalahen debedalahazar vahahal.`
+> `zazawan debedaluruhel vahahal. zalahen debedaluruher vahahal.`
 >
 > z-Azawan | d-bedroom | v-see . z-Alahen | d-←bedroom | v-see
 >
@@ -780,7 +780,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *listener* | `ehon` |
 | *pour* | `vobohol` |
 | *tomato* | `adedol` |
-| *melon* | `emehol` |
+| *watermelon* | `owodal` |
 | *family* | `avahal` |
 | *seedling* | `uzel` |
 | *like* | `humum` |
@@ -797,12 +797,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Alahen | v-pour . z-Azawan | v-←pour
 :::
 
-**2.** *A tomato is red. A melon is such.*
+**2.** *A tomato is red. A watermelon is such.*
 
 ::: details Show answer
-`zadedol geredal. zemehol geredar.`
+`zadedol geredal. zowodal geredar.`
 
-z-tomato | g-red . z-melon | g-←red
+z-tomato | g-red . z-watermelon | g-←red
 :::
 
 **3.** *Azawan and Alahen see each other.*

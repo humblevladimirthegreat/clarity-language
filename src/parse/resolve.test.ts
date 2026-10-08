@@ -63,10 +63,10 @@ describe("resolve — content anaphors (pronouns.md#resume-r)", () => {
   });
 
   it("matches a compound only on its whole stem (bed is not bedroom)", () => {
-    const part = resolveOf("zebedalahazal vowogal. zebedar vehahel.");
+    const part = resolveOf("zebedaluruhel vowogal. zebedar vehahel.");
     assert.equal(part.anaphors[0]!.antecedent, undefined);
-    const whole = resolveOf("zebedalahazal vowogal. zebedalahazar vehahel.");
-    assert.equal(whole.anaphors[0]!.antecedent?.raw, "zebedalahazal");
+    const whole = resolveOf("zebedaluruhel vowogal. zebedaluruher vehahel.");
+    assert.equal(whole.anaphors[0]!.antecedent?.raw, "zebedaluruhel");
   });
 
   it("matches a hook compound only on its whole stem (walk is not enter)", () => {

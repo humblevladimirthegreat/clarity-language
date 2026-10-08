@@ -108,7 +108,7 @@ describe("lexicon-compounds", () => {
     const { rows, changes } = retieCompoundRows(
       [
         {
-          stem: "ebedalahaza",
+          stem: "ebedaluruhe",
           left: "abede",
           join: "l",
           right: "ohohu",

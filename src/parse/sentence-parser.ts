@@ -215,7 +215,7 @@ class AgazanSentenceParser extends CstParser {
   }
 
   constructor() {
-    super(allTokens, { recoveryEnabled: false, maxLookahead: 2 });
+    super(allTokens, { recoveryEnabled: false, maxLookahead: 4 });
     this.performSelfAnalysis();
   }
 

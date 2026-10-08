@@ -42,11 +42,11 @@ Each pass takes one domain and its head roots. Rows are named here by seed and E
 | Domain | Head roots | Sample fills | Already in |
 |--------|-----------|--------------|------------|
 | Seasoning | 🌿 *herb*, 🍛 *spice*, 🌶️ *pepper*, 🧂 *salt* | basil, mint, parsley, cinnamon, paprika, chili, black pepper | done: 12 herbs, 12 spices, sea salt, curry; *chili* belongs as an alias on 🌶️ |
-| Plants | 🌳 *tree*, 💮 *flower*, 🍃 *leaf*, 🌾 *grain*, 🥬 *greens*, 🍈 *fruit*, 🫐 *berry*, 🌰 *nut*, 🍄 *mushroom* | willow, birch, wheat, oat, barley, lettuce, cabbage, raspberry, walnut, acorn | oak, blueberry |
-| Animals | 🐦 *bird*, 🐟 *fish*, 🐛 *bug*, 🐍 *snake*, 🐚 *shell*, 🐕 *dog*, 🐈 *cat*, 🐄 *cow*, 𓄛 *animal* (class names only) | sparrow, crow, trout, salmon, moth, wasp, puppy, kitten, calf, pet, livestock | |
-| Dishes | 🍞 *bread*, 🧀 *cheese*, 🍖 *meat*, 🍲 *soup*, 🥗 *salad*, 🍪 *cookie*, 🍜 *noodles*, 🍚 *rice*, 🥚 *egg*, 🍬 *candy* | toast, bun, pork, beef, broth, porridge, omelet, biscuit | cake, cream, sauce |
-| Drinks | 🥤 *drink*, 🍵 *tea*, 🍷 *wine*, 🍺 *beer*, 🧃 *juice*, 🥛 *milk*, ☕ *coffee* | lemonade, cider, latte, cocoa, herbal tea | soda |
-| Rooms and buildings | 𓉐 *room*, 🏠 *house*, 🏪 *shop*, 🏫 *school*, 🗼 *tower*, 🛖 *hut*, ⛺ *tent* | attic, cellar, hall, garage, bakery, pharmacy, barn, college | bedroom, kitchen, bathroom, library, museum (all on *house*, see [open questions](#open-questions)) |
+| Plants | 🌳 *tree*, 💮 *flower*, 🍃 *leaf*, 🌾 *grain*, 🥬 *greens*, 🍈 *fruit*, 🫐 *berry*, 🌰 *nut*, 🍄 *mushroom* | willow, birch, wheat, oat, barley, lettuce, cabbage, raspberry, walnut, acorn | done: 41 rows (wave 1). Deferred: a general *plant* head for weed, fern, moss, ivy, vine |
+| Animals | 🐦 *bird*, 🐟 *fish*, 🐛 *bug*, 🐍 *snake*, 🐚 *shell*, 🐕 *dog*, 🐈 *cat*, 🐄 *cow*, 𓄛 *animal* (class names only) | sparrow, crow, trout, salmon, moth, wasp, puppy, kitten, calf, pet, livestock | done: 36 rows (wave 1), with *pet*, *livestock*, *mammal* on 𓄛. Young and sexed animals use `/ɡ/`, not compounds. Deferred: *bee* alias on 🐝, *squirrel* alias on 🐿️ |
+| Dishes | 🍞 *bread*, 🧀 *cheese*, 🍖 *meat*, 🍲 *soup*, 🥗 *salad*, 🍪 *cookie*, 🍜 *noodles*, 🍚 *rice*, 🥚 *egg*, 🍬 *candy* | toast, bun, pork, beef, broth, porridge, omelet, biscuit | done: 39 rows (wave 1). 🍰 *cake* and 🫕 *sauce* are now heads; their kinds (brownie, cheesecake, gravy, dressing, ketchup, fondue) still to fill. Deferred: *pasta* alias on 🍝 |
+| Drinks | 🥤 *drink*, 🍵 *tea*, 🍷 *wine*, 🍺 *beer*, 🧃 *juice*, 🥛 *milk*, ☕ *coffee* | lemonade, cider, latte, cocoa, herbal tea | done: 26 rows (wave 1). Deferred: retitle 🥃 *whiskey* → *liquor* for gin, rum, vodka |
+| Rooms and buildings | 𓉐 *room*, 🏠 *house*, 🏪 *shop*, 🏫 *school*, 🗼 *tower*, 🛖 *hut*, ⛺ *tent* | attic, cellar, hall, garage, bakery, pharmacy, barn, college | bedroom, kitchen, bathroom (on *room*); library, museum (on *house*) |
 | People | 🧑 *person*, plus [role compounds](../grammar/roles.md#role-compounds) for doers | sibling, cousin, neighbor, stranger, guest, host | friend, parent, resident, lawyer |
 | Groups | 👥 *community*, 🏛️ *institution* | tribe, crew, club, union, ministry, court | army, jury, council, government |
 | Clothing | 🧥 *coat*, 👕 *shirt*, 👗 *dress*, 👞 *shoe*, 🧢 *hat*, 🧤 *gloves*, 🧦 *socks* | jacket, sweater, slipper, apron, uniform, helmet-types | raincoat, dress shoe |
@@ -56,14 +56,14 @@ Each pass takes one domain and its head roots. Rows are named here by seed and E
 | Games | 🎮 *game*, 🏀 *ball* | board game, card game, chess, tag | videogame |
 | Vehicles | 🚗 *car*, 🚤 *boat*, 🚢 *ship*, 🚆 *train*, 🚚 *truck*, ✈️ *airplane* | ferry, tram, cart, sailboat | van |
 | Land and water | ⛰️ *mountain*, 🟩 *field*, 🛣️ *road*, 🌊 *ocean*, 🏝️ *island*, 🟫 *ground* | lake, river, pond, path, street, meadow | hill, valley, floor |
-| Materials | 🥫 *metal*, 𐂧 *cloth*, 🪵 *wood*, 🪨 *rock*, 🧻 *paper* | iron, steel, silk, cotton, gravel | leather |
+| Materials | 🥫 *metal*, 𐂧 *cloth*, 🪵 *wood*, 🪨 *rock*, 📃 *paper* | iron, steel, silk, cotton, gravel | leather |
 | Body | ✋ *hand*, 🦶 *foot*, 🧑‍🦲 *head*, 👁️ *eye*, 👄 *mouth*, 🦴 *bone*, 🩸 *blood* | palm, heel, eyelid, jaw, rib, vein | shoulder |
 | Weather and time | 🌧️ *rain*, 🌬️ *wind*, 🌨️ *snow*, ☁️ *cloud*, 🌅 *day*, 🌃 *night* | drizzle, storm, breeze, morning, evening, weekday | afternoon |
 | Text and media | 📖 *book*, 📄 *page*, 📜 *tale*, 💬 *speech*, 🎶 *tune*, 🎞️ *film* | diary, poem, letter, song, article | textbook, menu, website, blog |
 | Health | 🤒 *sick*, 😷 *illness*, 💊 *pill*, 🩹 *bandage* | flu, fever, vaccine, ointment | |
 | Money | 💰 *money*, 🪙 *coin*, 🏦 *bank*, 🧾 *receipt* | salary, fee, rent, loan, fare | mortgage, pension, budget |
 
-Some English labels in the table (*spice*, *fruit*, *shop*, *metal*, *day*) are the sense a row is used for, not its `concrete` label. Before each pass, check every head against the CSV.
+A head's `concrete` label should name the whole category, so learners read the stem as a kind of it. 🍈 *fruit*, 🥫 *metal*, 🏪 *shop*, 👕 *shirt* and 📃 *paper* were retitled for this. 🌅 *sunrise* keeps its label and heads time words through its abstract *day*: no day is a kind of sunrise, so the reading cannot go wrong. Before each pass, check every head against the CSV.
 
 ## Method
 
@@ -83,6 +83,17 @@ One category per batch. Steps 1–3 are mechanical. Step 4 needs editor review b
 
    Write the batch as a draft CSV with the header `english,left,join,head,abstract,mnemonic`, naming `left` and `head` by seed or label. `npm run compound-fill -- draft <file>` prints the review table with each stem spelled from the published CSV, the validator's errors, and warnings the validator does not raise (a gloss that is already an alias or English-by-PoS lemma, a generic head, a mnemonic that does not open with *"<left> specifying <head>"*). Stop for review.
 5. **Write approved rows.** `npm run compound-fill -- draft <file> --write` appends the rows to `lexicon-compounds.csv`, and only when no row has an error. Then run `npm run check-compounds`, `npm test`, and `npm run cheat-sheet-blocks -- --write` (the Agazan → English cheat sheet lists compounds).
+
+### Running batches
+
+One session runs the whole fill. Sub-agents do the drafting, and the session itself does everything that writes data or needs a decision across categories.
+
+1. **Setup, serial.** Audit every head (step 0). Retitle or add missing heads, then respell, retie, build and test before any drafting starts, because every batch depends on its head's spelling. Settle the [open questions](#open-questions) that cross categories first, so agents do not each decide them differently.
+2. **Draft in waves, parallel.** Run one sub-agent per category, with 3–5 related categories in a wave (for example Plants, Animals, Dishes, Drinks). Each agent gets this note, [compound heads](../meta/lexicon.md#compound-heads) and [no English puns](../meta/lexicon.md#no-english-puns). It runs steps 1–4, never `--write`, and returns a draft CSV and a list of dropped words with the reason for each.
+3. **Merge, then review.** Concatenate the wave's drafts and run `draft` on the combined file. Duplicates across categories (*lamp* in Tools and Light, *cream* in Dishes and Seasoning) and stems that split in more than one way only show up against the whole set. The editor reviews one table per wave.
+4. **Write, serial.** Write approved rows from the session, one wave at a time (step 5). Each wave's rows become the *already in* list for the next wave.
+
+Keep the waves small: the bottleneck is editor review, not drafting.
 
 ### What the validator catches
 
@@ -109,9 +120,8 @@ If a category needs a head that no root covers, stop and add the head first. Ret
 
 ## Open questions
 
-- **Re-head rooms onto 𓉐 *room*.** *Bedroom*, *bathroom* and *kitchen* sit on 🏠 *house*, from before *room* existed. Re-heading them respells their stems and needs a retie of the docs that use them. *Library*, *museum*, *prison*, *restaurant* and *firehouse* are whole buildings and stay on *house*.
 - **People heads.** *Sibling*, *cousin* and the other family words might be better as [social ties](../grammar/relations.md) than as *person* compounds. Check the owning page before each item in the people pass.
-- **Class names on generic heads.** *Pet* (*house* **-l** *animal*?) and *livestock* (*farm* **-l** *animal*?) are the main cases for 𓄛 *animal*. Decide these together so the class-name pattern is consistent.
+- **Class names on generic heads.** *Pet* (*house* **-l** *animal*?) and *livestock* (*farm* **-l** *animal*?) are the main cases for 𓄛 *animal*. The Animals pass drafts both, and they are decided together in review so the class-name pattern is consistent.
 
 ## Non-goals
 

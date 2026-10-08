@@ -36,11 +36,11 @@ The last root is the kind of thing; the left root specifies it (what field, what
 ### Words you look up, not build
 <a id="lexical-compounds"></a>
 
-English *bedroom*, *doorbell*, and *friend* feel like one word. Agazan lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *bed* and *house*.
+English *bedroom*, *doorbell*, and *friend* feel like one word. Agazan lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *bed* and *room*.
 
 Inside the dictionary spelling you can still see the two old roots, with a join letter instead of **`x`**. That letter is the [word ending](word-endings.md) of the **left** root: **-l** when that piece is the everyday kind, **-m** when it is the abstract sense (named **-n** or resume **-r** if that left piece is a name or a resume). The last letter of the word is still the ending of the **whole** entry. In a sentence you add a role letter and that whole-word ending, the same way you do for *dog* or *hammer*.
 
-> `zebedalahazal.`
+> `zebedaluruhel.`
 >
 > z-bedroom
 >
@@ -49,7 +49,7 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 <!-- cheat-sheet: roles-comparing -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| `zebedalahazal` | bed **-l** house | bedroom | left piece everyday |
+| `zebedaluruhel` | bed **-l** room | bedroom | left piece everyday |
 | `zoyelebehul` | door **-l** bell | doorbell | left piece everyday |
 | `zanalobel` | bond **-l** person | friend | left piece everyday |
 | `zerehelogodul` | rain **-l** coat | raincoat | left piece everyday |
@@ -67,7 +67,7 @@ Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agaza
 |--------|-----|---------|-----|
 | two words | two things, or a property already marked another way | `zahavol zerevul zam` *a hammer and a wrench*; `zodogal gubuhel` *a blue dog* (`/ɡ/`) | |
 | **`x`** in the middle | one thing; you can still hear both roots | `gagayoxalaval` *love in the crush sense*; `zebeyaxabodel` *peanut butter*; `zazawaxalahen` (one person) | **x** ≈ plus |
-| dictionary word | one familiar kind, listed as a single entry | `zebedalahazal` *bedroom*; `zazoval` *sunflower* | join letter in the entry, not **`x`** |
+| dictionary word | one familiar kind, listed as a single entry | `zebedaluruhel` *bedroom*; `zazoval` *sunflower* | join letter in the entry, not **`x`** |
 
 **Compare with:** a property on a noun uses `/ɡ/` (or `/w/`). A list uses a [join](joins.md).
 

@@ -22,7 +22,7 @@ PoS + ROOT + {l|m} + NUM + {-l|-m|-n|-r}
 |-------|-----|-----|
 | **PoS** | Ordinary slot for the derived word | |
 | **ROOT** | Any content root (`V(CV)+`) | |
-| **join** | Same letter as a [lexical compound](x-compounds.md#lexical-compounds): **-l** the root’s everyday sense, **-m** its abstract sense | `ebedalahaza` *bedroom* uses **-l** |
+| **join** | Same letter as a [lexical compound](x-compounds.md#lexical-compounds): **-l** the root’s everyday sense, **-m** its abstract sense | `ebedaluruhe` *bedroom* uses **-l** |
 | **NUM** | Number stem: same marker / digits / digitless-exp body as [numbers.md](numbers.md), without a role letter and without its own ending. Tables below use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …). Actual words are always spelled CV (`raba`, `roba`, `rawoba`, …): [writing style](numbers.md#writing-style-numeric-vs-spelled) | spoken stem starts with **`r`**, so you hear **`lr`** or **`mr`** |
 | **Ending** | Word ending on the **whole word**, after the number: **-l** the kind itself, **-m** approximately that kind (*roughly a three-part dialogue*), **-n** a name, **-r** a resume. The join letter, not this ending, says whether the root is in its everyday or abstract sense. | |
 

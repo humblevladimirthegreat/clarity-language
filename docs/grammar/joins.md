@@ -299,7 +299,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *bread* | `ebevul` | 🍞 |
 | *tomato* | `adedol` | 🍅 |
 | *mango* | `amegol` | 🥭 |
-| *melon* | `emehol` | 🍈 |
+| *watermelon* | `owodal` | 🍉 |
 | *cart* | `agegal` | 🛒 |
 
 **Review:**
@@ -324,14 +324,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 [z-bread | z-tomato | z-and.open]
 :::
 
-**2.** *Azawan sees a mango and a melon.*
+**2.** *Azawan sees a mango and a watermelon.*
 
 ::: details Show answer
-`zazawan damegol demehol dal vahahal.`
+`zazawan damegol dowodal dal vahahal.`
 
-z-Azawan | [d-mango | d-melon | d-and] | v-see
+z-Azawan | [d-mango | d-watermelon | d-and] | v-see
 
-**Also correct:** `zazawan vahahal damegol demehol dal.`
+**Also correct:** `zazawan vahahal damegol dowodal dal.`
 :::
 
 **3.** *Ahaben pays nobody.*
@@ -420,12 +420,12 @@ z-Azawan | d-none | v-see
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *a melon or a tomato (pick one)* `zemehol zadedol zol.` or `zemehol zadedol zom.`
+**1.** *a watermelon or a tomato (pick one)* `zowodal zadedol zol.` or `zowodal zadedol zom.`
 
 ::: details Show answer
-`zemehol zadedol zol.`
+`zowodal zadedol zol.`
 
-[z-melon | z-tomato | z-or-exactly-one]
+[z-watermelon | z-tomato | z-or-exactly-one]
 
 Closed **-l** means pick one of these; **-m** leaves the pick open.
 :::

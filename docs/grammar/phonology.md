@@ -92,7 +92,7 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Root(s) **V(CV)+** | content | start with a vowel; each later consonant starts a new syllable |
 | Mid-word `x` | productive compound seam | joins two roots inside one word |
 | Mid-word `th` | stance seam | joins a sake to its stance vowel ([sakes](sakes.md)), any other root to a scope vowel ([label scope](predication.md#label-scope)), or a direction to whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals)) |
-| Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`ebedalahaza` *bedroom*) |
+| Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`ebedaluruhe` *bedroom*) |
 | `-l` / `-m` / `-n` / `-r` | [word ending](word-endings.md) | audible end of the content word |
 | Name instance **`-ln`** | [one of a name](word-endings.md#name-instance--ln) | word-final coda `ln` |
 | Optional `-x` | [plural](plurality.md) after the ending | word-final `-lx` / `-mx` / `-nx` / `-rx` / `-lnx` (letter `x`) |
