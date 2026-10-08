@@ -1,6 +1,6 @@
 # Proposal: prove one syntax tree per sentence
 
-**Status:** IN PROGRESS (phase 0 and batches 1–5 done)  
+**Status:** DONE (phase 0 and batches 1–6, 2026-10-08)  
 **Related:** none  
 **Design authority:** the grammar pages own every reading. This note covers **parser and test tooling** only. Every attachment rule the work turns up goes to the owning grammar page, or to [design-decisions.md](../meta/design-decisions.md) when a form is ruled out on purpose.
 
@@ -191,6 +191,32 @@ Batches, each merged to main on its own with `npm test` green and `npm run parse
 
      With no gates left, batch 6 needs no allowlist for them: every remaining LR(1) conflict is an open / closed form pair or a list against a lone item, which only left-factoring removes.
 6. **Make the check strict.** `grammar-check` fails on any LR(1) conflict and on any `GATE` in `sentence-parser.ts`. Batch 5b left no gate, so a new one fails until it is turned into structure, a token type, or an enforce check.
+   **Done (2026-10-08).** The exported grammar is LR(1): 18,252 states, **0 conflicts**. `npm run grammar-check` now fails (exit 1) on any `GATE` or `IGNORE_AMBIGUITIES`, a nullable symbol with two empty derivations, an LR(1) conflict, a doc sentence (or, with `--variants`, a variant) with two trees or none, or an ALL(\*) report. It takes about 55 s (LR(1) 14 s, under 100 MB), so it is not in `npm test`; `npm test` checks the quick part (no gate in the parser), and AGENTS.md says to run the full check after a parser or `markContext` change. Amplify runs neither. `parse-snapshot` against `1ae5aff`: 0 of 2,659 doc spans differ.
+   - **Checker: empty productions removed** (`src/grammar-check/normalize.ts`). Most of the 24,511 conflicts were the table reducing an empty `MANY` / `OPTION` before the word that tells two runs apart. Each production is copied once per subset of its nullable symbols left out. This keeps every tree count exactly when each nullable symbol is empty in one way, which the check verifies. Measured that way the baseline was 356 conflicting decisions. The builder now keeps lookaheads as bitsets (14 s instead of 73 s and over 4 GB).
+   - **Token marks** (`markContext`; each reads one scan of the word list, so it cannot add a tree). Each replaces a choice that needed unbounded lookahead:
+     - A `/w/` word by the word it grades (`WBefore`, `WLeaf`; kind × target).
+     - A `gl-` adjective by the noun or call it leans on (`GGlBefore`).
+     - A plain adjective by its run: closed by a `/ɡ/` join (`GInList`), by `wazem` and the join (`GInRespList`), or neither (`GAdj`). Where a plain adjective describes the word before it, it takes any of the three.
+     - An `/h/` or `/th/` word by its run: closed by an `/h/` join (`HPlainList` / `HThList`) or not (`…Lone`).
+     - A verb or `/v/` join by whether another verb follows past item words (`…More` / `…End`). The item words a verb list crosses now cover everything a verb's item may hold (lists and their joins, written spans, bars), not only single nouns and adverbs, and never a stand-in, which ends the main clause.
+     - A noun-phrase stand-in by whether the items after it reach a join of its slot (`OdoZList` / `OdoZLone`): `zarl zodogal zam` is one list, as before.
+   - **Structure.** Runs whose last item shows only at its end are right-recursive (trailing adjectives, the left edge, the `/x/` clause chain, verb-list parts, noun-list parts, the bars before `barl`), and the builders read them back flat. The "any shape" copies of rules (`zCoord`, `sharedAfterJoin`, `gPackage`, `hScale`, `hookUnit`) are gone: every context uses the shaped rules. New unit ends and states, each following a documented rule:
+     - `bare`: a noun list whose join shares nothing; only there may a respectively list start (joins.md#respectively). After a word that plain adjectives describe, a `/ɡ/` list opens with its join word.
+     - A verb list ends `open` when its last join shares an adverb whose `/b/` the adjectives after it describe ([clause § complex chaining](../grammar/clause.md#complex-chaining)); so does a grounds list, by its join.
+     - `zFree` (and `dFree`, `bFree`): after an untagged stand-in or grounds list the next sentence opens freely, except with a bare tag of that slot or a list opening with one: a tag right after a head names it ([pronouns § tags](../grammar/pronouns.md#tag-pronouns)).
+     - A list part opens with a new tag only first or right after a group tag (a tag right after a join names the whole list), and with a `FenceBar` only after another part. In a verb's item, no two `/d/` or `/b/` phrases stand side by side.
+   - **Diagnosis:** `diagnoseParseError` finds a verb list that never closes wherever the parser stops (it may now stop at the first verb), so `joinlessRun` and `leftFence` keep their messages.
+   - **Beyond the docs** (`parse-snapshot --ref 1ae5aff --drop-one --swap`, 15,135 variants): no tree changed. 2 variants now fail as `joinlessRun`: two verbs with a written span between them (`zazawan varadal d[ d<]> ] vezebel.`), which the batch 5a decision covers. 311 differ only in a raw parser message, which names token types. Outside the variants: `zazawan vowogal dagadul dodogal dal vahahal.` had parsed as two verbs while the same sentence with one `/d/` noun was `joinlessRun`; both are rejected now. `zazawan zalahen zal gelavam bazawan gamazam wazem gal.` failed through an ALL(\*) misprediction and now parses as a respectively list of two items (see open question 5).
+   - **Tooling:** `parse-snapshot` classes each difference (tree changed, now parses, now fails, named rejection changed, raw message changed; raw ones are listed with `--raw`).
+
+   | Measure | Batch 5b | Batch 6 |
+   |---------|----------|---------|
+   | Exported grammar | 307 nonterminals, 1,165 productions, 55 token types | 686 nonterminals, 3,056 productions, 121 token types |
+   | LR(1), empty productions removed | 356 decisions | 18,252 states, **0 conflicts** |
+   | Doc sentences with exactly one tree | 2,657 (all) | 2,657 (all) |
+   | Variants the parser accepts, with two or more trees | 0 of 12,973 | 0 of 12,971 |
+   | ALL(\*) runtime reports, docs and variants | 0 | 0 |
+   | Gate sites in `sentence-parser.ts` | 0 | 0 |
 
 If a parser that *is* the proof is wanted later, a gate-free Chevrotain grammar ports mechanically to [Lezer](https://lezer.codemirror.net/), an LR(1) generator whose build fails on conflicts. The batches above are needed on either path.
 
@@ -289,6 +315,10 @@ Each question has a recommendation. None of them needs a new grammar decision ex
 - **What the parser did before.** The recommendation here assumed the AST already split join-less runs into separate units. It did not: `zazawan zalahen vowogal.` gave one `/z/` phrase whose single part had two items and no join. Only `/h/` runs came out as separate units, and `/ɡ/` runs stacked on a noun.
 - **Rule shape:** `list → part+`, with `part → item+ bar* JOIN` or a lone join, and the clause chain forbids two phrases of one slot side by side. A single item followed by a join stays valid (single-item *not X*, [denying a list](../grammar/joins.md#negation-u)).
 - **Out of scope:** two `/z/` phrases with something between them (`zavahal al zazawan`, a range hook) stay grammatical.
+
+### 5. An adjective after the `/b/` of a `/ɡ/` list item: next item, or the landmark's?
+
+**Open (logged in batch 6).** Inside a joined `/ɡ/` list the parser makes a plain adjective after an item's hosted `/b/` the next item (`gListItem`): `vowogal gugol bazawan gubuhel gal` lists *the same as Azawan* and *blue*. Outside a list, [clause § complex chaining](../grammar/clause.md#complex-chaining) gives that adjective to the `/b/` (*blue Azawan*). No grammar page states the list rule. Batch 6 kept it and did not add it to the docs; it now also reaches a respectively list after a noun join (`zazawan zalahen zal gelavam bazawan gamazam wazem gal.`), which used to fail. Recommendation: state the list rule in [joins § SHARED after the join](../grammar/joins.md#shared-after-the-join), next to "after a `/ɡ/` join the next `/ɡ/` is simply the next item", since inside a list every plain adjective right before the join is an item (right-close).
 
 ## Costs and risks
 

@@ -50,20 +50,123 @@ export const VPlain = wordToken("VPlain", [V]);
  * a verb list, so it never starts one (join-across-roles.md#vp-clause-forms). Set by `markContext`.
  */
 export const VCont = wordToken("VCont", [V]);
+/**
+ * A verb (`VPlain` or `VCont`) or a `/v/` join word by what comes after it, past the item words of a verb list's item:
+ * another verb (`…More`: the verb list goes on, so those words are that verb's item), or anything else (`…End`). Every
+ * verb and `/v/` join gets one of these leaf types. Set by `markContext`.
+ */
+export const VPlainEnd = wordToken("VPlainEnd", [VPlain]);
+export const VPlainMore = wordToken("VPlainMore", [VPlain]);
+export const VContEnd = wordToken("VContEnd", [VCont]);
+export const VContMore = wordToken("VContMore", [VCont]);
+export const JoinVEnd = wordToken("JoinVEnd", [JoinV]);
+export const JoinVMore = wordToken("JoinVMore", [JoinV]);
 /** A `/ɡ/` word: a plain adjective describes what is before it; a `gl-` adjective leans on the noun or call after it (clause.md#left-bound-adjectives). */
 export const G = wordToken("G");
 export const GPlain = wordToken("GPlain", [G]);
+/** A plain adjective a noun list's join may share (joins.md#shared-after-the-join): not one that starts a respectively list. */
+export const GShareable = wordToken("GShareable");
+/**
+ * A plain adjective by the run it sits in (set by `markContext`): one that a `/ɡ/` join closes (`GInList`), one that
+ * `wazem` and a `/ɡ/` join close (`GInRespList`, joins.md#respectively), or any other (`GAdj`). Where a plain adjective
+ * describes the word before it, it does so whatever its run.
+ */
+export const GAdj = wordToken("GAdj", [GPlain, GShareable]);
+export const GInList = wordToken("GInList", [GPlain, GShareable]);
+export const GInRespList = wordToken("GInRespList", [GPlain]);
 export const GGl = wordToken("GGl", [G]);
+/**
+ * A `gl-` adjective by what it leans on: the noun (by slot), call or reaction, citation, or topic word after it, past its
+ * own hosted `/b/` and what describes that `/b/`. Set by `markContext`.
+ */
+export const GL_TARGETS = ["Z", "D", "B", "Turn", "Citation", "Linker", "Other"] as const;
+export type GlTarget = (typeof GL_TARGETS)[number];
+export const GGlBefore = Object.fromEntries(GL_TARGETS.map((target) => [target, wordToken(`GGl${target}`, [GGl])])) as Record<GlTarget, AgazanTokenType>;
 /** A `/w/` word. An as-of `/w/` opens a pair with the `/b/` after it (relations.md#as-of); every other `/w/` grades what follows. */
 export const W = wordToken("W");
 export const WPlain = wordToken("WPlain", [W]);
 export const WAsOf = wordToken("WAsOf", [W]);
 /** Respectively `wazem`: right before a join word, it pairs the list item by item with an earlier one (joins.md#respectively). */
 export const WPairing = wordToken("WPairing", [W]);
+/**
+ * What a `/w/` word grades: the word after its `/w/` run (past an as-of pair's `/b/`). Each `/w/` gets one leaf type
+ * per kind and target (`WPlainH`, a plain `/w/` before an adverb), a member of its kind (`WPlain`) and of its target
+ * (`WBefore.H`), so a rule takes exactly the `/w/` words that grade its head. A rule whose head is one of several
+ * targets takes a group (`WBefore.G`: any plain adjective; `WGroup.Plain.G`: a plain `/w/` before one). Set by `markContext`.
+ */
+export const W_TARGETS = [
+  "Turn",
+  "HookPlain",
+  "HookHosting",
+  "JoinZ",
+  "JoinD",
+  "JoinB",
+  "JoinV",
+  "JoinG",
+  "HList",
+  "HLone",
+  "Bar",
+  "HScale",
+  "HSharedV",
+  "GAdj",
+  "GInList",
+  "GInRespList",
+  "GlZ",
+  "GlD",
+  "GlB",
+  "GlTurn",
+  "GlCitation",
+  "Other",
+] as const;
+export type WTarget = (typeof W_TARGETS)[number];
+/** Targets a rule takes together: any plain adjective, one a noun join may share, or any hook. */
+export const W_GROUPS = {
+  G: ["GAdj", "GInList", "GInRespList"],
+  Shareable: ["GAdj", "GInList"],
+  Hook: ["HookPlain", "HookHosting"],
+} as const satisfies Record<string, readonly WTarget[]>;
+export type WGroupName = keyof typeof W_GROUPS;
+const W_KINDS = { Plain: WPlain, AsOf: WAsOf, Pairing: WPairing } as const;
+export type WKind = keyof typeof W_KINDS;
+const wGroupsOf = (target: WTarget) => (Object.keys(W_GROUPS) as WGroupName[]).filter((group) => (W_GROUPS[group] as readonly WTarget[]).includes(target));
+export const WBefore = {
+  ...Object.fromEntries((Object.keys(W_GROUPS) as WGroupName[]).map((group) => [group, wordToken(`WBefore${group}`)])),
+  ...Object.fromEntries(W_TARGETS.map((target) => [target, wordToken(`WBefore${target}`)])),
+} as Record<WTarget | WGroupName, AgazanTokenType>;
+for (const target of W_TARGETS) for (const group of wGroupsOf(target)) WBefore[target]!.CATEGORIES!.push(WBefore[group]!);
+/** A kind's `/w/` words before any target of a group (`WGroup.Plain.G`). */
+export const WGroup = Object.fromEntries(
+  Object.keys(W_KINDS).map((kind) => [
+    kind,
+    Object.fromEntries((Object.keys(W_GROUPS) as WGroupName[]).map((group) => [group, wordToken(`W${kind}${group}`)])),
+  ]),
+) as Record<WKind, Record<WGroupName, AgazanTokenType>>;
+export const WLeaf = Object.fromEntries(
+  (Object.entries(W_KINDS) as [WKind, AgazanTokenType][]).map(([kind, category]) => [
+    kind,
+    Object.fromEntries(
+      W_TARGETS.map((target) => [
+        target,
+        wordToken(`W${kind}${target}`, [category, WBefore[target]!, ...wGroupsOf(target).map((group) => WGroup[kind][group])]),
+      ]),
+    ),
+  ]),
+) as Record<WKind, Record<WTarget, AgazanTokenType>>;
 /** An `/h/` adverb or a `/th/` stance word. A plain adjective after either host's `/b/` describes that noun (clause.md#complex-chaining). */
 export const H = wordToken("H");
 export const HPlain = wordToken("HPlain", [H]);
 export const HTh = wordToken("HTh", [H]);
+/**
+ * An `/h/` or `/th/` word by its run (set by `markContext`): one that an `/h/` join closes, past the adverbs after it
+ * (`HList`: an item of that list), or any other (`HLone`: a unit of its own). A list takes every adverb right before
+ * its join (joins.md#right-close).
+ */
+export const HList = wordToken("HList");
+export const HLone = wordToken("HLone");
+export const HPlainList = wordToken("HPlainList", [HPlain, HList]);
+export const HPlainLone = wordToken("HPlainLone", [HPlain, HLone]);
+export const HThList = wordToken("HThList", [HTh, HList]);
+export const HThLone = wordToken("HThLone", [HTh, HLone]);
 /**
  * A `/b/` right after an `/h/`, `/th/` or `/ɡ/` word: it completes that word (clause.md § extra nouns), so it is never a
  * `/b/` phrase of its own. Likewise a stand-in right after an `/h/` or `/th/` word. Set by `markContext`.
@@ -112,6 +215,16 @@ export const Odo = wordToken("Odo");
 export const OdoZ = wordToken("OdoZ", [Odo]);
 export const OdoD = wordToken("OdoD", [Odo]);
 export const OdoB = wordToken("OdoB", [Odo]);
+/**
+ * A noun-phrase stand-in by its run (set by `markContext`): an item of a list when the items after it reach that list's
+ * join (`zarl zodogal zam`), or a phrase of its own, which ends the main clause (`zarl vowogal.`).
+ */
+export const OdoZList = wordToken("OdoZList", [OdoZ]);
+export const OdoZLone = wordToken("OdoZLone", [OdoZ]);
+export const OdoDList = wordToken("OdoDList", [OdoD]);
+export const OdoDLone = wordToken("OdoDLone", [OdoD]);
+export const OdoBList = wordToken("OdoBList", [OdoB]);
+export const OdoBLone = wordToken("OdoBLone", [OdoB]);
 export const OdoOther = wordToken("OdoOther", [Odo]);
 export const Force = wordToken("Force");
 export const Polar = wordToken("Polar");
@@ -157,16 +270,36 @@ export const allTokens = [
   V,
   VPlain,
   VCont,
+  VPlainEnd,
+  VPlainMore,
+  VContEnd,
+  VContMore,
+  JoinVEnd,
+  JoinVMore,
   G,
   GPlain,
+  GShareable,
+  GAdj,
+  GInList,
+  GInRespList,
   GGl,
+  ...Object.values(GGlBefore),
   W,
   WPlain,
   WAsOf,
   WPairing,
+  ...Object.values(WBefore),
+  ...Object.values(WGroup).flatMap((byGroup) => Object.values(byGroup)),
+  ...Object.values(WLeaf).flatMap((byTarget) => Object.values(byTarget)),
   H,
   HPlain,
   HTh,
+  HList,
+  HLone,
+  HPlainList,
+  HPlainLone,
+  HThList,
+  HThLone,
   HostedB,
   HostedBNumber,
   HostedBNoun,
@@ -190,6 +323,12 @@ export const allTokens = [
   OdoZ,
   OdoD,
   OdoB,
+  OdoZList,
+  OdoZLone,
+  OdoDList,
+  OdoDLone,
+  OdoBList,
+  OdoBLone,
   OdoOther,
   Force,
   Polar,

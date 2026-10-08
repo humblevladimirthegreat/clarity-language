@@ -54,6 +54,8 @@ import {
   type TokenPayload,
   V,
   VCont,
+  VContEnd,
+  VPlainEnd,
   W,
   WPairing,
   WritingSpanB,
@@ -1031,13 +1033,6 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   // *Respectively* (`wazem`) sits only right before a join word (joins.md#respectively).
   const pairing = tokens.findIndex((token, i) => tokenMatcher(token, WPairing) && !isAny(tokens[i + 1] ?? token, [JoinZ, JoinD, JoinB, JoinG, JoinV]));
   if (pairing >= 0) throw new ConstructionError("joinDetail", tokens[pairing]!.image);
-  // A verb on after another verb with no join to close them (joins.md#right-close): the verb list never closes. A join
-  // word right before the verb is a join before its conjuncts instead (`leftFence`, below).
-  if (at > 0 && tokenMatcher(tokens[at]!, VCont) && !tokenMatcher(tokens[at - 1]!, JoinV)) {
-    let verb = at - 1;
-    while (verb > 0 && !isAny(tokens[verb]!, [V, JoinV])) verb -= 1;
-    throw new ConstructionError("joinlessRun", `${tokens[verb]!.image}${verb === at - 1 ? "" : " …"} ${tokens[at]!.image}`);
-  }
   // A `gl-` adjective leans on the noun or call after its hosted `/b/` (clause.md#left-bound-adjectives). The parser
   // stops at the adjective (or a `/w/` before it) when no unit can start there, or at the word after it.
   let gl = -1;
@@ -1051,23 +1046,45 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
     // With a noun to lean on, the phrase is what failed.
     if (at <= gl) failAt = head;
   }
-  const slot = PHRASE_SLOTS.find((s) => failAt > 0 && isAny(tokens[failAt]!, s.heads));
-  if (!slot) return;
   const previous = (from: number): number => {
     let i = from;
     while (i >= 0 && isAny(tokens[i]!, DESCRIBING)) i -= 1;
     return i;
   };
-  const i = previous(failAt - 1);
-  const before = tokens[i];
-  if (!before) return;
-  const run = `${before.image} ${tokens[failAt]!.image}`;
-  if (tokenMatcher(before, slot.join)) {
-    const item = tokens[previous(i - 1)];
-    if (!item || !isAny(item, [...slot.heads, slot.join])) throw new ConstructionError("leftFence", before.image);
-    throw new ConstructionError("joinlessRun", run);
+  /** A phrase head right after a join of its slot with no item before the join, or after a phrase of its slot. */
+  const sideBySide = (at: number, slot: (typeof PHRASE_SLOTS)[number]): void => {
+    const i = previous(at - 1);
+    const before = tokens[i];
+    if (!before) return;
+    const run = `${before.image} ${tokens[at]!.image}`;
+    if (tokenMatcher(before, slot.join)) {
+      const item = tokens[previous(i - 1)];
+      if (!item || !isAny(item, [...slot.heads, slot.join])) throw new ConstructionError("leftFence", before.image);
+      throw new ConstructionError("joinlessRun", run);
+    }
+    if (isAny(before, slot.heads)) throw new ConstructionError("joinlessRun", run);
+  };
+  const slot = PHRASE_SLOTS.find((s) => s.join !== JoinV && failAt > 0 && isAny(tokens[failAt]!, s.heads));
+  if (slot) sideBySide(failAt, slot);
+  // A verb list must close with a join right after its last verb (joins.md#right-close). The parser may stop anywhere
+  // from the list's first verb on, so find the first list that does not close: a verb on after another verb is VCont.
+  for (let c = 0; c < tokens.length; c += 1) {
+    if (!tokenMatcher(tokens[c]!, VCont) || verbListCloses(tokens, c)) continue;
+    let verb = c - 1;
+    while (verb > 0 && !isAny(tokens[verb]!, [V, JoinV])) verb -= 1;
+    if (verb === c - 1 && tokenMatcher(tokens[verb]!, JoinV)) sideBySide(c, PHRASE_SLOTS.find((s) => s.join === JoinV)!);
+    throw new ConstructionError("joinlessRun", `${tokens[verb]!.image}${verb === c - 1 ? "" : " …"} ${tokens[c]!.image}`);
   }
-  if (isAny(before, slot.heads)) throw new ConstructionError("joinlessRun", run);
+}
+
+/** From a verb on a list, the list's last verb (the first one marked `End`) has a `/v/` join right after it. */
+function verbListCloses(tokens: IToken[], from: number): boolean {
+  let at = from;
+  while (tokens[at] && !isAny(tokens[at]!, [VPlainEnd, VContEnd])) at += 1;
+  at += 1;
+  if (tokens[at] && tokenMatcher(tokens[at]!, HostedB)) at += 1;
+  while (tokens[at] && tokenMatcher(tokens[at]!, W)) at += 1;
+  return !!tokens[at] && tokenMatcher(tokens[at]!, JoinV);
 }
 
 function enforceLeadingFence<T extends { join?: LexWord }>(parts: T[], isEmpty: (part: T) => boolean): void {

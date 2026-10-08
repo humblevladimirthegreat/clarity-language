@@ -1,4 +1,6 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { test } from "node:test";
 
 import { createToken, CstParser, EOF } from "chevrotain";
@@ -8,6 +10,8 @@ import { type Bnf, gastToBnf, type Production } from "./bnf.js";
 import { spanVariants } from "./corpus.js";
 import { countDerivations } from "./derivations.js";
 import { buildLr1, groupConflicts } from "./lr1.js";
+import { eliminateEmpty, emptyDerivations } from "./normalize.js";
+import { REPO_ROOT } from "../repo-paths.js";
 
 function bnf(start: string, rules: Record<string, string[][]>): Bnf {
   const productions: Production[] = [];
@@ -115,4 +119,21 @@ test("span variants drop one word or swap two neighbors, keep the period, and sk
     spanVariants(spans, ["drop", "swap"]).map((s) => s.text),
     ["za da.", "za vo.", "da.", "vo.", "vo za da.", "za da vo.", "da vo."],
   );
+});
+
+test("the sentence parser decides by structure and token types: no GATE, no IGNORE_AMBIGUITIES", () => {
+  // The full proof (one tree per input) is `npm run grammar-check`; this is its quick part.
+  const source = readFileSync(join(REPO_ROOT, "src", "parse", "sentence-parser.ts"), "utf8");
+  assert.deepEqual(source.match(/\bGATE\b|IGNORE_AMBIGUITIES/g) ?? [], []);
+});
+
+test("removing empty productions keeps each tree, and an empty run with two derivations is reported", () => {
+  // `W* (asOf)? W*`: LR(1) cannot choose which empty run to reduce before the head, but the grammar has one tree for `w g`.
+  const runs = bnf("P", { P: [["A", "x", "g"]], A: [[], ["w", "A"]] });
+  const normalized = eliminateEmpty(runs);
+  assert.equal(buildLr1(normalized).conflicts.length, 0);
+  assert.equal(countDerivations(normalized, ["w", "x", "g"]).count, 1);
+  assert.equal(countDerivations(normalized, ["x", "g"]).count, 1);
+  const twice = bnf("S", { S: [["E", "x"]], E: [[], ["F"]], F: [[]] });
+  assert.deepEqual([...emptyDerivations(twice)].filter(([, n]) => n > 1).map(([s]) => s), ["E"]);
 });

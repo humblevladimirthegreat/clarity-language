@@ -1,9 +1,11 @@
 /**
- * Report where the sentence grammar relies on gates to pick one tree (report only; never fails).
+ * Check that the sentence grammar gives every input at most one tree. It reports each finding and fails (exit 1) on any of: a `GATE` or `IGNORE_AMBIGUITIES` in sentence-parser.ts, a nullable symbol with two empty derivations, an
+ * LR(1) conflict, a doc sentence with two gate-free trees or none, or an ALL(*) ambiguity report.
  *
  * 1. Exports the parser's grammar as BNF with every gate deleted (src/grammar-check/bnf.ts).
- * 2. Builds canonical LR(1) tables and groups the conflicts by decision. No conflicts would prove
- *    one tree per sentence.
+ * 2. Removes empty productions (src/grammar-check/normalize.ts; each nullable symbol must be empty in one way, so no
+ *    tree count changes), builds canonical LR(1) tables, and groups the conflicts by decision. No conflicts proves one
+ *    tree per input over the token types `markContext` assigns.
  * 3. Counts the gate-free trees of every doc sentence the parser accepts. More than one tree is a
  *    concrete sentence where a gate chose; zero means the export lost something the parser does
  *    in code (an `ACTION`, a rule argument), so the export is not faithful there.
@@ -16,19 +18,21 @@
  *    rejected them.
  *
  * Run: npm run grammar-check -- [--json tmp/grammar-check.json] [--examples N] [--no-lr1] [--variants]
- * (`--no-lr1` skips the LR(1) build, which takes most of the run, for a quick doc-corpus pass.)
+ * (`--no-lr1` skips the LR(1) build for a quicker doc-corpus pass; it then proves nothing.)
  */
-import { mkdirSync, writeFileSync } from "node:fs";
-import { dirname } from "node:path";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { dirname, join } from "node:path";
 
 import { gastToBnf, showProduction } from "../src/grammar-check/bnf.js";
 import { docSpans, spanVariants } from "../src/grammar-check/corpus.js";
 import { countDerivations } from "../src/grammar-check/derivations.js";
 import { buildLr1, groupConflicts } from "../src/grammar-check/lr1.js";
+import { eliminateEmpty, emptyDerivations } from "../src/grammar-check/normalize.js";
 import { enforceTokens, enforceTones } from "../src/parse/enforce.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { markContext, parseSentenceTokens, SentenceParseError, sentenceGrammar, takeAmbiguityReports } from "../src/parse/sentence-parser.js";
 import { allTokens } from "../src/parse/tokens.js";
+import { REPO_ROOT } from "../src/repo-paths.js";
 import { tokenizeUtterance } from "../src/parse/tokenize.js";
 
 const args = process.argv.slice(2);
@@ -37,14 +41,23 @@ const examples = args.includes("--examples") ? Number(args[args.indexOf("--examp
 const skipLr1 = args.includes("--no-lr1");
 const withVariants = args.includes("--variants");
 
+// Gates: the grammar must decide by structure and token types, so no gate may choose a tree.
+const parserSource = readFileSync(join(REPO_ROOT, "src", "parse", "sentence-parser.ts"), "utf8");
+const gateSites = (parserSource.match(/\bGATE\b|IGNORE_AMBIGUITIES/g) ?? []).length;
+console.log(`GATE / IGNORE_AMBIGUITIES sites in sentence-parser.ts: ${gateSites}`);
+
 const bnf = gastToBnf(sentenceGrammar(), "document", allTokens);
 console.log(`Grammar: ${bnf.nonterminals.size} nonterminals, ${bnf.productions.length} productions, ${bnf.terminals.size} token types`);
 
-// LR(1)
+// Empty runs: each must be empty in one way, so removing them keeps every tree count (normalize.ts).
+const emptyTwice = [...emptyDerivations(bnf)].filter(([, n]) => n > 1).map(([symbol]) => symbol);
+console.log(`Nullable symbols with two ways to be empty: ${emptyTwice.length}${emptyTwice.length ? ` (${emptyTwice.join(", ")})` : ""}`);
+
+// LR(1), on the grammar with its empty productions removed
 const t0 = performance.now();
-const lr1 = skipLr1 ? undefined : buildLr1(bnf);
+const lr1 = skipLr1 ? undefined : buildLr1(eliminateEmpty(bnf));
 const groups = lr1 ? groupConflicts(lr1) : [];
-if (lr1) console.log(`LR(1): ${lr1.states.length} states, ${lr1.conflicts.length} conflicts in ${groups.length} decisions (${Math.round(performance.now() - t0)} ms)\n`);
+if (lr1) console.log(`LR(1): ${lr1.states} states, ${lr1.conflicts.length} conflicts in ${groups.length} decisions (${Math.round(performance.now() - t0)} ms)\n`);
 for (const g of groups) {
   console.log(`${g.kind} on ${[...g.lookaheads].sort().join(" ")}  (${g.states} states)`);
   for (const p of g.reduces) console.log(`  reduce ${showProduction(p)}`);
@@ -164,6 +177,22 @@ const ambiguityReports = takeAmbiguityReports();
 console.log(`\nALL(*) ambiguity reports on the doc corpus${withVariants ? " and variants" : ""}: ${ambiguityReports.length}`);
 for (const r of ambiguityReports) console.log(`  ${compactReport(r)}`);
 
+{
+  const failures = [
+    gateSites > 0 && `${gateSites} GATE / IGNORE_AMBIGUITIES sites`,
+    emptyTwice.length > 0 && `${emptyTwice.length} nullable symbols with two ways to be empty`,
+    lr1 && lr1.conflicts.length > 0 && `${lr1.conflicts.length} LR(1) conflicts in ${groups.length} decisions`,
+    ambiguous > 0 && `${ambiguous} doc sentences with two or more trees`,
+    unfaithful.length > 0 && `${unfaithful.length} doc sentences the export rejects`,
+    variantResult && variantResult.ambiguous > 0 && `${variantResult.ambiguous} variants with two or more trees`,
+    ambiguityReports.length > 0 && `${ambiguityReports.length} ALL(*) ambiguity reports`,
+  ].filter(Boolean);
+  console.log(
+    failures.length ? `\nFailed: ${failures.join("; ")}` : `\nPassed: one tree per input${skipLr1 ? " (LR(1) skipped, so not proved)" : ""}.`,
+  );
+  if (failures.length) process.exitCode = 1;
+}
+
 if (jsonOut) {
   mkdirSync(dirname(jsonOut), { recursive: true });
   writeFileSync(
@@ -172,7 +201,7 @@ if (jsonOut) {
       {
         grammar: { nonterminals: bnf.nonterminals.size, productions: bnf.productions.length },
         lr1: lr1 && {
-          states: lr1.states.length,
+          states: lr1.states,
           conflicts: lr1.conflicts.length,
           decisions: groups.map((g) => ({
             kind: g.kind,

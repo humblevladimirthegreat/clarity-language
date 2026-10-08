@@ -6,7 +6,7 @@
  * in sentence-parser.ts. Gates, `ACTION`s and rule arguments are invisible here: the BNF is the
  * grammar the parser would have with every gate deleted.
  *
- * A token category (`W`, `Odo`) is a set of terminals, as Chevrotain matches it, not a nonterminal:
+ * A token category (`W`, `Odo`) is a set of terminals (its members, and theirs), as Chevrotain matches it, not a nonterminal:
  * a production that consumes one becomes one production per member. An `OR` whose every alternative is one
  * token is the same set, and expands the same way.
  *
@@ -94,8 +94,14 @@ export function gastToBnf(rules: Record<string, Rule>, start: string, tokens: To
     }
   }
 
+  /** The token types a category matches that are not categories themselves (a category may hold categories). */
+  const leaves = (name: string): string[] => {
+    const members = categoryMembers.get(name);
+    return members ? [...new Set(members.flatMap(leaves))] : [name];
+  };
+
   function terminal(type: TokenType): string {
-    const members = categoryMembers.get(type.name);
+    const members = categoryMembers.has(type.name) ? leaves(type.name) : undefined;
     if (!members) {
       terminals.add(type.name);
       return type.name;

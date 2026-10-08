@@ -21,47 +21,45 @@ You can learn more here: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/pred
 
 ### Collective Verbs and Adjectives Use Plural
 
-English *they sang* doesn't say whether they sang together or each on their own, and *the boxes are heavy* doesn't say whether each box is heavy or just the whole pile. Agazan lets you mark the difference by putting the plural **-x** on the verb or adjective itself.
+I already have the associative meaning of plural on nouns and I've decided to define plurality for verbs and adjectives, because why not. 
 
-On a noun, **-x** says *who* is in the group. On a verb or adjective, **-x** says the group does it or has it **as one unit**. Leave it off and it's left open (each one, together, or you don't care).
+On a verb or adjective, -x says the group does or has it collectively. This is not agreement with the noun - a plural verb/adjective can apply to a singular noun and vice versa.
 
 > `zazawanx vezehel.`
 >
 > z-Azawan-x | v-sing
 >
-> "Azawan and friends sing." (together or separately - not saying)
+> "Azawan and friends sing (separately)."
 
 > `zazawanx vezehelx.`
 >
 > z-Azawan-x | v-sing-x
 >
-> "Azawan and friends sing together, as one act."
+> "Azawan and friends sing together."
 
-It works even with a single named person - the collective verb means others shared the act, even if they aren't named:
+It works even with a single subject - the collective verb means others shared the act, even if they aren't named:
 
 > `zazawan vezehelx.`
 >
 > z-Azawan | v-sing-x
 >
-> "Azawan sings with others." (not a solo)
+> "Azawan sings with others."
 
 Adjectives work the same way:
 
 > `zavabalx garagam.`
 >
-> z-file-box-x | g-heavy
+> z-box-x | g-heavy
 >
-> "The file-boxes are heavy." (each one, or don't care)
+> "The boxes are (each) heavy."
 
 > `zavabalx garagamx.`
 >
-> z-file-box-x | g-heavy-x
+> z-box-x | g-heavy-x
 >
-> "The file-boxes are heavy as a pile." (but not individually)
+> "The boxes are collectively heavy." (but not necessarily individually)
 
-This is handy for fairness too: *the team is slow* can mean every member is slow or just that the group as a whole is slow, and those are very different claims about the people in it.
-
-Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/plurality.html#verbs-v
+Full docs: https://clarityconlang.com/grammar/plurality.html#verbs-v
 
 ### *May* Says If You're Finding Out
 

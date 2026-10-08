@@ -131,22 +131,28 @@ function addToken(token: IToken, out: Set<string>): void {
  */
 function traceRule(name: string): string {
   if (/^[zdb](Package|Noun|NounTagged|StandIn|StandInTagged|Tag)$/.test(name) || name === "citation") return "npPackage";
-  if (/^unit(After[A-Z])?(Open|Shared)?$/.test(name) || /^(hookChain|unitAfterCross|unitNoGlue|unitAfterTurn)$/.test(name)) return "unit";
+  if (/^unit(After[A-Z](Free)?)?(Open|Shared|Bare)?$/.test(name) || /^(hookChain|unitAfterCross|unitNoGlue|unitAfterTurn)$/.test(name)) return "unit";
   if (/^clause(AfterCross|NoGlue|AfterTurn)$/.test(name)) return "clause";
   if (/^hookUnit(Plain|Open|Closed)$/.test(name)) return "hookUnit";
   if (/^clauseItem(AfterCross|NoGlue|AfterTurn)$/.test(name)) return "clauseItem";
   if (/^bodyClause(NoGlue|AfterTurn)$/.test(name)) return "bodyClause";
   if (/^leftEdge(Force|Turn|Other|Tag)$/.test(name)) return "leftEdge";
-  if (name === "vpVerb" || name === "vpCoordPartFirst") return "vpCoordPart";
-  if (/^gSingle(Open|Closed)$/.test(name) || /^gCoordPart(Plain|Lead)$/.test(name)) return "gCoordPart";
-  if (name === "gCoordLead" || name === "gCoordPlainLead") return "gCoord";
+  if (name === "vpVerb" || /^vpCoordPart/.test(name)) return "vpCoordPart";
+  if (/^vpItemUnit/.test(name)) return "vpItemUnit";
+  if (/^vJoinClose(EndOpen|EndClosed|More)$/.test(name)) return "vJoinClose";
+  if (name === "vpCoordOpen") return "vpCoord";
+  if (/^sharedAdverb(Open|Closed)$/.test(name)) return "sharedAfterJoin";
+  if (/^hSharedUnit(Open|Closed)$/.test(name)) return "hUnitRule";
+  if (/^gSingle(Open|Closed)$/.test(name) || /^gCoordPart(Plain|Lead|Join)$/.test(name)) return "gCoordPart";
+  if (/^gCoord(Plain|Join)?Lead$/.test(name)) return "gCoord";
   if (name === "gJoinCloseRespectively") return "gJoinClose";
-  if (/^(gPackage(Open|Closed)|gListItem|glPackage)$/.test(name)) return "gPackage";
+  if (/^asOfWPair[A-Z]/.test(name)) return "asOfWPair";
+  if (/^(g(Package|Lone|Shared)(Open|Closed)|gListItem|gRespItem|glPackage(Z|D|B|Turn|Citation))$/.test(name)) return "gPackage";
   if (/^hSingle(Open|Closed)?$/.test(name) || name === "hGrounds") return "hCoordPart";
   if (/^hUnit(Open|Closed)$/.test(name) || /^(hStandIn|hScale(Open|Closed)?|frameUnit(Open|Closed)?|barUnit|fenceBarUnit|barStandIn|hSharedUnit)$/.test(name)) return "hUnitRule";
   if (/^(sharedAdj(Open|Closed)|sharedScale(Open)?|sharedAdverb)$/.test(name)) return "sharedAfterJoin";
-  if (/^[zdb]Coord(Part)?(Open|Closed|Shared|Grounds)$/.test(name)) return name.replace(/(Open|Closed|Shared|Grounds)$/, "");
-  if (/^[zdb]JoinClose(Open|Closed|Shared)?$/.test(name)) return "npJoinClose";
+  if (/^[zdb]Coord(Part)?(Rest|Free)?(Grounds)?(Open|Closed|Shared|Bare|Tagged)$/.test(name)) return name.replace(/(Rest|Free)?(Grounds)?(Open|Closed|Shared|Bare|Tagged)$/, "");
+  if (/^[zdb]JoinClose(Open|Closed|Shared|Bare)$/.test(name)) return "npJoinClose";
   return name;
 }
 
@@ -169,17 +175,31 @@ function leadForceName(token: CstElement): string | undefined {
   return kind && LEAD_FORCE_NAMES[kind];
 }
 
+/**
+ * Rules that only reshape a run for the parser (a right-recursive run of adjectives): their children trace as the rule
+ * that holds them, so a run adds no construction of its own.
+ */
+const TRANSPARENT_RULES = new Set(["clauseRest", "barsGrounds", "trailingAdjRun", "vpTailAfterEndOpen", "vpTailAfterEndClosed", "vpTailAfterMoreOpen", "vpTailAfterMoreClosed", "vpItemsStart", "vpItemsAfterD", "vpItemsAfterB", "vpItemsAfterH"]);
+
+/** Labels of a rule's right-recursive rest (a run of the rule itself, or a transparent rule): no construction of their own. */
+const TRANSPARENT_KEYS = new Set(["leftEdgeRest", "clauseRest"]);
+
 /** Collect `sentence.*` / `token.*` / `word.*` IDs from one sentence CST. */
-export function addCstConstructions(node: CstNode, out: Set<string>): void {
+export function addCstConstructions(node: CstNode, out: Set<string>, rule = node.name): void {
   for (const [key, elements] of Object.entries(node.children)) {
-    if (traceRule(node.name) === "leftEdge" && key === "LeadForce") {
+    if (TRANSPARENT_KEYS.has(key)) {
+      // A right-recursive rest of the same rule: its words trace as the rule's own.
+      for (const element of elements) if (isCstNode(element)) addCstConstructions(element, out, rule);
+      continue;
+    }
+    if (traceRule(rule) === "leftEdge" && key === "LeadForce") {
       for (const element of elements) {
         const name = leadForceName(element);
         if (name) out.add(`sentence.leftEdge.${name}`);
       }
-    } else out.add(traceId(node.name, key));
+    } else out.add(traceId(rule, key));
     for (const element of elements) {
-      if (isCstNode(element)) addCstConstructions(element, out);
+      if (isCstNode(element)) addCstConstructions(element, out, TRANSPARENT_RULES.has(element.name) ? rule : element.name);
       else addToken(element, out);
     }
   }
@@ -197,7 +217,8 @@ type GastNode = { constructor: { name: string }; label?: string; nonTerminalName
 /** Every `sentence.rule.childKey` the grammar can produce (the sentence-layer inventory). */
 export function sentenceGrammarKeys(grammar: Record<string, { definition: unknown[] }>): Set<string> {
   const keys = new Set<string>();
-  const walk = (rule: string, defs: GastNode[]): void => {
+  // A transparent rule's keys belong to each rule that holds it (`clauseRest` under `clause`), as `addCstConstructions` traces them.
+  const walk = (rule: string, defs: GastNode[], inside: Set<string>): void => {
     for (const def of defs) {
       const kind = def.constructor.name;
       const add = (key: string): void => {
@@ -206,14 +227,17 @@ export function sentenceGrammarKeys(grammar: Record<string, { definition: unknow
         } else keys.add(traceId(rule, key));
       };
       if (kind === "NonTerminal") {
-        add(def.label ?? def.nonTerminalName!);
-        continue; // its definition is the referenced rule, walked on its own
+        const target = def.nonTerminalName!;
+        const key = def.label ?? target;
+        if (TRANSPARENT_RULES.has(target) && !inside.has(target)) walk(rule, grammar[target]!.definition as GastNode[], new Set([...inside, target]));
+        if (!TRANSPARENT_KEYS.has(key) && !(TRANSPARENT_RULES.has(target) && key === target)) add(key);
+        continue; // otherwise its definition is the referenced rule, walked on its own
       }
       if (kind === "Terminal") add(def.label ?? def.terminalType!.name);
-      if (def.definition) walk(rule, def.definition);
+      if (def.definition) walk(rule, def.definition, inside);
     }
   };
-  for (const [name, rule] of Object.entries(grammar)) walk(name, rule.definition as GastNode[]);
+  for (const [name, rule] of Object.entries(grammar)) if (!TRANSPARENT_RULES.has(name)) walk(name, rule.definition as GastNode[], new Set());
   return keys;
 }
 
