@@ -130,14 +130,20 @@ function addToken(token: IToken, out: Set<string>): void {
  * because each slot is taught in its own section; a noun package and a join close are one lesson at every slot.
  */
 function traceRule(name: string): string {
-  if (/^[zdb](Package|Noun|StandIn|Tag)$/.test(name) || name === "citation") return "npPackage";
-  if (/^unitAfter[A-Z]$/.test(name)) return "unit";
+  if (/^[zdb](Package|Noun|NounTagged|StandIn|StandInTagged|Tag)$/.test(name) || name === "citation") return "npPackage";
+  if (/^unit(After[A-Z])?(Open|Shared)?$/.test(name) || name === "hookChain" || name === "unitAfterCross") return "unit";
+  if (name === "clauseAfterCross") return "clause";
+  if (name === "clauseItemAfterCross") return "clauseItem";
   if (name === "vpVerb") return "vpCoordPart";
-  if (name === "gSingle") return "gCoordPart";
-  if (name === "hSingle" || name === "hGrounds") return "hCoordPart";
-  if (name === "hStandIn" || name === "barUnit" || name === "barStandIn") return "hUnitRule";
-  if (/^[zdb]Coord(Part)?Grounds$/.test(name)) return name.replace("Grounds", "");
-  if (/^[zdb]JoinClose$/.test(name)) return "npJoinClose";
+  if (/^gSingle(Open|Closed)$/.test(name) || /^gCoordPart(Plain|Lead)$/.test(name)) return "gCoordPart";
+  if (name === "gCoordLead" || name === "gCoordPlainLead") return "gCoord";
+  if (name === "gJoinCloseRespectively") return "gJoinClose";
+  if (/^(gPackage(Open|Closed)|gListItem|glPackage)$/.test(name)) return "gPackage";
+  if (/^hSingle(Open|Closed)?$/.test(name) || name === "hGrounds") return "hCoordPart";
+  if (/^hUnit(Open|Closed)$/.test(name) || /^(hStandIn|hScale|frameUnit|barUnit|barStandIn)$/.test(name)) return "hUnitRule";
+  if (/^(sharedAdj(Open|Closed)|sharedScale|sharedAdverb)$/.test(name)) return "sharedAfterJoin";
+  if (/^[zdb]Coord(Part)?(Open|Closed|Shared|Grounds)$/.test(name)) return name.replace(/(Open|Closed|Shared|Grounds)$/, "");
+  if (/^[zdb]JoinClose(Open|Closed|Shared)?$/.test(name)) return "npJoinClose";
   return name;
 }
 

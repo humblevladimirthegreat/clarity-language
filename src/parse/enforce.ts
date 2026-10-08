@@ -22,7 +22,13 @@ import {
   Bang,
   classifyTokenBranch,
   D,
+  Amount,
   G,
+  GGl,
+  GPlain,
+  Citation,
+  Interjection,
+  Vocative,
   HostedB,
   HostedOdo,
   IslandClose,
@@ -30,6 +36,7 @@ import {
   isLexWordPayload,
   JoinB,
   JoinD,
+  JoinG,
   JoinV,
   JoinZ,
   Linker,
@@ -45,6 +52,7 @@ import {
   type TokenPayload,
   V,
   W,
+  WPairing,
   WritingSpanB,
   WritingSpanD,
   WritingSpanZ,
@@ -984,12 +992,17 @@ const PHRASE_SLOTS: { heads: TokenType[]; join: TokenType }[] = [
   { heads: [V], join: JoinV },
 ];
 
+/** What a `gl-` adjective may lean on: a noun-phrase head, a word with no role letter, or a call or reaction. */
+const LEAN_HEADS = [...PHRASE_SLOTS.slice(0, 3).flatMap((slot) => slot.heads), Citation, Vocative, Interjection];
+
 const isAny = (token: IToken, types: TokenType[]): boolean => types.some((type) => tokenMatcher(token, type));
 /** Words that describe the phrase before them, so they sit between its head and the next phrase. */
 const DESCRIBING = [G, W, HostedB];
 
 /**
- * Name the rule behind a parse failure: a `/b/` after a word with no `/b/` slot (numbers-applied.md#measure-phrases), or
+ * Name the rule behind a parse failure: a `/b/` after a word with no `/b/` slot (numbers-applied.md#measure-phrases), a
+ * `gl-` adjective with nothing to lean on (clause.md#left-bound-adjectives), respectively `wazem` away from a join word,
+ * or
  * a noun or verb right after a phrase of the same slot (joins.md#right-close): a join word before its conjuncts, or
  * two nouns of one role (or two verbs) with no join after them.
  */
@@ -1002,17 +1015,33 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   if (at > 0 && isAny(tokens[at]!, [HostedB, HostedOdo])) {
     throw new ConstructionError("slotlessHost", `${tokens[at - 1]!.image} ${tokens[at]!.image}`);
   }
-  const slot = PHRASE_SLOTS.find((s) => at > 0 && isAny(tokens[at]!, s.heads));
+  // *Respectively* (`wazem`) sits only right before a join word (joins.md#respectively).
+  const pairing = tokens.findIndex((token, i) => tokenMatcher(token, WPairing) && !isAny(tokens[i + 1] ?? token, [JoinZ, JoinD, JoinB, JoinG, JoinV]));
+  if (pairing >= 0) throw new ConstructionError("joinDetail", tokens[pairing]!.image);
+  // A `gl-` adjective leans on the noun or call after its hosted `/b/` (clause.md#left-bound-adjectives). The parser
+  // stops at the adjective (or a `/w/` before it) when no unit can start there, or at the word after it.
+  let gl = -1;
+  for (let i = at; i >= 0 && i < tokens.length && isAny(tokens[i]!, [W, GGl]); i += 1) if (tokenMatcher(tokens[i]!, GGl)) gl = i;
+  if (gl < 0) for (gl = (at < 0 ? tokens.length : at) - 1; gl >= 0 && isAny(tokens[gl]!, [HostedB, Amount, JoinB, B]); ) gl -= 1;
+  let failAt = at;
+  if (gl >= 0 && tokenMatcher(tokens[gl]!, GGl)) {
+    let head = gl + 1;
+    while (head < tokens.length && isAny(tokens[head]!, [HostedB, Amount, JoinB, B, W, GPlain])) head += 1;
+    if (!tokens[head] || !isAny(tokens[head]!, LEAN_HEADS)) throw new ConstructionError("glNoNoun", tokens[gl]!.image);
+    // With a noun to lean on, the phrase is what failed.
+    if (at <= gl) failAt = head;
+  }
+  const slot = PHRASE_SLOTS.find((s) => failAt > 0 && isAny(tokens[failAt]!, s.heads));
   if (!slot) return;
   const previous = (from: number): number => {
     let i = from;
     while (i >= 0 && isAny(tokens[i]!, DESCRIBING)) i -= 1;
     return i;
   };
-  const i = previous(at - 1);
+  const i = previous(failAt - 1);
   const before = tokens[i];
   if (!before) return;
-  const run = `${before.image} ${tokens[at]!.image}`;
+  const run = `${before.image} ${tokens[failAt]!.image}`;
   if (tokenMatcher(before, slot.join)) {
     const item = tokens[previous(i - 1)];
     if (!item || !isAny(item, [...slot.heads, slot.join])) throw new ConstructionError("leftFence", before.image);

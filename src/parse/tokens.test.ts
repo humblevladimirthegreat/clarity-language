@@ -10,7 +10,7 @@ import { segmentUtterance, tokenizeUtterance } from "./tokenize.js";
 import {
   classifyToTokenType,
   Force,
-  H,
+  HPlain,
   JoinV,
   OdoB,
   OdoD,
@@ -57,8 +57,8 @@ describe("classifyToTokenType", () => {
     assert.equal(classifyToTokenType(lex("val")).name, JoinV.name);
   });
 
-  it("maps restrictor hal to H", () => {
-    assert.equal(classifyToTokenType(lex("hal")).name, H.name);
+  it("maps restrictor hal to a plain /h/ token", () => {
+    assert.equal(classifyToTokenType(lex("hal")).name, HPlain.name);
   });
 
   it("maps yal to Force and yael to Polar", () => {

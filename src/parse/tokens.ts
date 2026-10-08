@@ -33,7 +33,10 @@ export const JoinD = wordToken("JoinD");
 export const JoinB = wordToken("JoinB");
 export const JoinG = wordToken("JoinG");
 export const JoinW = wordToken("JoinW");
+/** An `/h/` or `/th/` join word. Only a stance `/th/` join stands alone (`thul`); a bare `/h/` join only closes a list. */
 export const JoinH = wordToken("JoinH");
+export const JoinHPlain = wordToken("JoinHPlain", [JoinH]);
+export const JoinTh = wordToken("JoinTh", [JoinH]);
 export const JoinV = wordToken("JoinV");
 export const JoinX = wordToken("JoinX");
 
@@ -41,22 +44,42 @@ export const Z = wordToken("Z");
 export const D = wordToken("D");
 export const B = wordToken("B");
 export const V = wordToken("V");
+/** A `/ɡ/` word: a plain adjective describes what is before it; a `gl-` adjective leans on the noun or call after it (clause.md#left-bound-adjectives). */
 export const G = wordToken("G");
+export const GPlain = wordToken("GPlain", [G]);
+export const GGl = wordToken("GGl", [G]);
 /** A `/w/` word. An as-of `/w/` opens a pair with the `/b/` after it (relations.md#as-of); every other `/w/` grades what follows. */
 export const W = wordToken("W");
 export const WPlain = wordToken("WPlain", [W]);
 export const WAsOf = wordToken("WAsOf", [W]);
+/** Respectively `wazem`: right before a join word, it pairs the list item by item with an earlier one (joins.md#respectively). */
+export const WPairing = wordToken("WPairing", [W]);
+/** An `/h/` adverb or a `/th/` stance word. A plain adjective after an `/h/` host's `/b/` describes that noun; after a `/th/` host's, it does not (clause.md#complex-chaining). */
 export const H = wordToken("H");
+export const HPlain = wordToken("HPlain", [H]);
+export const HTh = wordToken("HTh", [H]);
 /**
  * A `/b/` right after an `/h/`, `/th/` or `/ɡ/` word: it completes that word (clause.md § extra nouns), so it is never a
  * `/b/` phrase of its own. Likewise a stand-in right after an `/h/` or `/th/` word. Set by `markContext`.
  */
 export const HostedB = wordToken("HostedB");
+/** A hosted `/b/` number: an offset or amount, which no adjective describes. */
+export const HostedBNumber = wordToken("HostedBNumber", [HostedB]);
+export const HostedBNoun = wordToken("HostedBNoun", [HostedB]);
 export const HostedOdo = wordToken("HostedOdo");
 /** A cardinal `/ɡ/` number right after a hosted `/b/`: that unit's amount (numbers-applied.md#measure-phrases). Set by `markContext`. */
 export const Amount = wordToken("Amount");
 /** A signed `/h/` number right after an equative's shared scale: the factor (comparatives.md#factor). Set by `markContext`. */
 export const Factor = wordToken("Factor");
+/**
+ * The scale a rank, equative or sequence noun join shares (comparatives.md#manner-scale): an `/h/` or `/th/` word right
+ * after the join (past any `/w/`), or a digitless `/b/` number right after it. Set by `markContext`; neither is an
+ * adverb or a noun of its own there.
+ */
+export const HScale = wordToken("HScale");
+/** A `/th/` stance right after *contrary to* `uem`: the hook's frame, not a stance on the claim (sakes.md#contrary-to-stance). Set by `markContext`. */
+export const HFrame = wordToken("HFrame");
+export const BScale = wordToken("BScale");
 /** A `/th/` stance word that is a rank fence's bar: it runs up to the list's rank join (comparatives.md#bars). Set by `markContext`. */
 export const Bar = wordToken("Bar");
 /** A bare tag **-l** (`zwal`): it names the phrase right before it, or a new referent (pronouns.md#tag-pronouns). */
@@ -96,6 +119,8 @@ export const allTokens = [
   JoinG,
   JoinW,
   JoinH,
+  JoinHPlain,
+  JoinTh,
   JoinV,
   JoinX,
   Z,
@@ -103,14 +128,24 @@ export const allTokens = [
   B,
   V,
   G,
+  GPlain,
+  GGl,
   W,
   WPlain,
   WAsOf,
+  WPairing,
   H,
+  HPlain,
+  HTh,
   HostedB,
+  HostedBNumber,
+  HostedBNoun,
   HostedOdo,
   Amount,
   Factor,
+  HScale,
+  HFrame,
+  BScale,
   Bar,
   Citation,
   TagZ,
@@ -139,8 +174,8 @@ const JOIN_BY_POS = {
   b: JoinB,
   g: JoinG,
   w: JoinW,
-  h: JoinH,
-  th: JoinH,
+  h: JoinHPlain,
+  th: JoinTh,
   v: JoinV,
   x: JoinX,
 } as const;
@@ -150,10 +185,10 @@ const CONTENT_BY_POS = {
   d: D,
   b: B,
   v: V,
-  g: G,
+  g: GPlain,
   w: WPlain,
-  h: H,
-  th: H,
+  h: HPlain,
+  th: HTh,
 } as const;
 
 const TAG_BY_POS: Partial<Record<string, AgazanTokenType>> = { z: TagZ, d: TagD, b: TagB };
@@ -205,6 +240,7 @@ export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; bra
       return family.marks.includes("@") ? { type: Vocative, branch: "yVocative" } : { type: Interjection, branch: "yInterjection" };
     }
     if (pos === "x") return { type: Linker, branch: "linker" };
+    if (pos === "g" && word.gl) return { type: GGl, branch: "writingSpanSlot" };
     if (pos && pos !== "z" && pos !== "d" && pos !== "b" && pos in CONTENT_BY_POS) {
       return { type: CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS], branch: "writingSpanSlot" };
     }
@@ -219,8 +255,8 @@ export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; bra
 
   if (reading === "joinAct") return { type: V, branch: "joinAct" };
   if (reading === "joinRelation") {
-    if (pos === "g") return { type: G, branch: "joinRelationG" };
-    if (pos === "h" || pos === "th") return { type: H, branch: "joinRelationH" };
+    if (pos === "g") return { type: word.gl ? GGl : GPlain, branch: "joinRelationG" };
+    if (pos === "h" || pos === "th") return { type: pos === "th" ? HTh : HPlain, branch: "joinRelationH" };
   }
 
   if (reading === "greeting") return { type: Vocative, branch: "greeting" };
@@ -236,8 +272,10 @@ export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; bra
   if (pos === "x" && isLinkerWord(word)) return { type: Linker, branch: "linker" };
 
   if (pos === "w" && isAsOfOverlay(word)) return { type: WAsOf, branch: "content" };
+  if (pos === "w" && word.overlay?.kind === "pairing") return { type: WPairing, branch: "content" };
   const tag = family.kind === "tag" && word.ending === "l" && !word.plural && pos ? TAG_BY_POS[pos] : undefined;
   if (tag) return { type: tag, branch: "tagAssign" };
+  if (pos === "g" && word.gl) return { type: GGl, branch: "content" };
   if (pos && pos in CONTENT_BY_POS) {
     return { type: CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS], branch: "content" };
   }
