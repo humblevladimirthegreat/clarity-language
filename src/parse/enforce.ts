@@ -24,6 +24,7 @@ import {
   D,
   G,
   HostedB,
+  HostedOdo,
   IslandClose,
   IslandOpen,
   isLexWordPayload,
@@ -988,14 +989,19 @@ const isAny = (token: IToken, types: TokenType[]): boolean => types.some((type) 
 const DESCRIBING = [G, W, HostedB];
 
 /**
- * Name the rule behind a parse failure on a noun or verb right after a phrase of the same slot (joins.md#right-close):
- * a join word before its conjuncts, or two nouns of one role (or two verbs) with no join after them.
+ * Name the rule behind a parse failure: a `/b/` after a word with no `/b/` slot (numbers-applied.md#measure-phrases), or
+ * a noun or verb right after a phrase of the same slot (joins.md#right-close): a join word before its conjuncts, or
+ * two nouns of one role (or two verbs) with no join after them.
  */
 export function diagnoseParseError(input: IToken[], error: unknown): void {
   if (!(error instanceof SentenceParseError)) return;
   const failed = (error.parserErrors[0] as { token?: IToken } | undefined)?.token;
   const tokens = markContext(input);
   const at = tokens.findIndex((token) => failed && token.payload === failed.payload);
+  // Every other host takes the `/b/` or stand-in right after it, so a failure there is an amount or a factor.
+  if (at > 0 && isAny(tokens[at]!, [HostedB, HostedOdo])) {
+    throw new ConstructionError("slotlessHost", `${tokens[at - 1]!.image} ${tokens[at]!.image}`);
+  }
   const slot = PHRASE_SLOTS.find((s) => at > 0 && isAny(tokens[at]!, s.heads));
   if (!slot) return;
   const previous = (from: number): number => {

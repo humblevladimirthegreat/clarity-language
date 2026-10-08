@@ -654,6 +654,7 @@ export const REJECTIONS = {
   pointerOwnSlot: { anchor: "pronouns.md#themself", summary: "a self pointer (e) names another slot of its own clause, not the one it fills" },
   clauseSingleItem: { anchor: "joins.md#clause-joins", summary: "a clause join goes between two clauses; to deny or focus one clause, put the join on its verb or noun (vul, zal)" },
   leftFence: { anchor: "joins.md#right-close", summary: "a join word closes its conjuncts; it never comes before them" },
+  slotlessHost: { anchor: "numbers-applied.md#measure-phrases", summary: "a measure amount or an equative's factor takes no /b/ after it; put that /b/ phrase elsewhere, such as after the verb" },
   joinlessRun: { anchor: "joins.md#right-close", summary: "two nouns of one role, or two verbs, side by side close with a join word (zazawan zalahen zal)" },
   emptyIsland: { anchor: "spans.md#scope-islands", summary: "a scope island needs words between its edges" },
   islandOneSlot: { anchor: "spans.md#scope-islands", summary: "a scope island holds at most one phrase: /z/, /d/, /b/, /v/, or a /ɡ/ stack" },

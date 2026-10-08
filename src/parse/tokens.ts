@@ -53,6 +53,10 @@ export const H = wordToken("H");
  */
 export const HostedB = wordToken("HostedB");
 export const HostedOdo = wordToken("HostedOdo");
+/** A cardinal `/ɡ/` number right after a hosted `/b/`: that unit's amount (numbers-applied.md#measure-phrases). Set by `markContext`. */
+export const Amount = wordToken("Amount");
+/** A signed `/h/` number right after an equative's shared scale: the factor (comparatives.md#factor). Set by `markContext`. */
+export const Factor = wordToken("Factor");
 /** A `/th/` stance word that is a rank fence's bar: it runs up to the list's rank join (comparatives.md#bars). Set by `markContext`. */
 export const Bar = wordToken("Bar");
 /** A bare tag **-l** (`zwal`): it names the phrase right before it, or a new referent (pronouns.md#tag-pronouns). */
@@ -105,6 +109,8 @@ export const allTokens = [
   H,
   HostedB,
   HostedOdo,
+  Amount,
+  Factor,
   Bar,
   Citation,
   TagZ,

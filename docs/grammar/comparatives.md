@@ -424,7 +424,7 @@ English *twice as big as* gives the **ratio** between the two heights. Use the [
 >
 > "Azawan is twice as big as Alahen."
 
-Inverse marker **`ru`** divides: `hrudul` is *half as*.
+Inverse marker **`ru`** divides: `hrudul` is *half as*. The factor hosts nothing, so no `/b/` comes right after it.
 
 > `zalahen zazawan zoel gelavam hrudul.`
 >

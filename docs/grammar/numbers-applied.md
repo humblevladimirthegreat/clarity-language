@@ -104,6 +104,8 @@ To say **how much of a unit** (*two meters*, *three hours*), use the unit's noun
 
 For a price (*for five grams*), put the same measure phrase in `/b/` after the [exchange](relations.md#exchange) word **`hehem`**.
 
+The amount hosts nothing, so no `/b/` comes right after it. Put any other extra noun elsewhere in the clause, such as after the verb.
+
 <!-- cheat-sheet: numbers -->
 | Agazan | Use | English |
 |--------|-----|---------|

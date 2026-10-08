@@ -26,6 +26,8 @@ const tables = createClassifyTables(
 type Row = { invalid: string; rejection: RejectionId | undefined; valid: string };
 
 const ROWS: Row[] = [
+  { invalid: "zazawan thevom bagazem grurel bahaben vowogal.", rejection: "slotlessHost", valid: "zazawan thevom bagazem grurel vowogal bahaben." },
+  { invalid: "zazawan zalahen zoel gelavam hradul bahaben.", rejection: "slotlessHost", valid: "zazawan zalahen zoel gelavam hradul." },
   { invalid: "zazawan glubuhel.", rejection: "glNoNoun", valid: "glubuhel zazawan." },
   { invalid: "zazawan dedehal glubuhel vahahal.", rejection: "glNoNoun", valid: "zazawan glubuhel dedehal vahahal." },
   { invalid: "yel yol zazawan vowogal.", rejection: "forcePair", valid: "yal yol zazawan vowogal." },

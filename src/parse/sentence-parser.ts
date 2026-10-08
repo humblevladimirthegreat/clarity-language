@@ -11,6 +11,8 @@ import {
   H,
   HostedB,
   HostedOdo,
+  Amount,
+  Factor,
   Bar,
   Citation,
   TagB,
@@ -216,7 +218,7 @@ function isBarAt(tokens: IToken[], at: number): boolean {
     const payload = tok.payload as LexWord | undefined;
     const number = payload?.family?.kind === "number";
     const landmarkAdj = bound && tok.tokenType === G && !payload?.gl;
-    if (!(isStanceWord(tok) || tokenIs(tok, W, B, HostedB, JoinB, Odo, HostedOdo) || (tok.tokenType === G && number) || landmarkAdj)) return false;
+    if (!(isStanceWord(tok) || tokenIs(tok, W, B, HostedB, JoinB, Odo, HostedOdo, Amount) || (tok.tokenType === G && number) || landmarkAdj)) return false;
     if (tok.tokenType === HostedB) bound = true;
   }
   return false;
@@ -805,8 +807,8 @@ class AgazanSentenceParser extends CstParser {
           this.SUBRULE(this.sharedAfterJoin);
           // Factor right after an equative's shared scale: `oe` + `h+2` = *twice as … as* (comparatives.md § factor).
           this.OPTION2({
-            GATE: () => series === "oe" && factorAhead(this.LA(1)),
-            DEF: () => this.CONSUME(H, { LABEL: "factor" }),
+            GATE: () => series === "oe",
+            DEF: () => this.CONSUME(Factor, { LABEL: "factor" }),
           });
         },
       });
@@ -1082,19 +1084,7 @@ class AgazanSentenceParser extends CstParser {
     // A number word right after the hosted /b/ is its amount (measure phrase, e.g. a signed offset).
     // An ordinal (a place, or a kin generation) or a label (a year, `bavawem g_1962`) is an adjective on
     // the landmark instead, free to host its own /b/.
-    this.OPTION6({
-      GATE: () => {
-        const la = this.LA(1);
-        const family = (la.payload as LexWord | undefined)?.family;
-        return (
-          la.tokenType === G &&
-          family?.kind === "number" &&
-          !isOrdinalMarker(family.stem.marker) &&
-          !isLabelMarker(family.stem.marker)
-        );
-      },
-      DEF: () => this.CONSUME5(G),
-    });
+    this.OPTION6(() => this.CONSUME5(Amount, { LABEL: "G" }));
     this.MANY5({
       GATE: () => {
         const family = (bound.payload as LexWord | undefined)?.family;
@@ -1429,8 +1419,10 @@ function isLabelMarker(marker: NumberMarker): boolean {
 /**
  * Give words the token their neighbors decide. A word that completes the word right before it (clause.md § extra
  * nouns): a `/b/` after an `/h/`, `/th/` or `/ɡ/` word, or after a label-scope verb that names a pair
- * (predication.md#scope-relative), becomes {@link HostedB}, and a stand-in after an `/h/` or `/th/` word {@link HostedOdo}. Two words take no `/b/` of their own, so a `/b/` after them stays a phrase: a hosted slot's
- * amount, and an equative's factor. A stance word that is a rank fence's bar becomes {@link Bar}.
+ * (predication.md#scope-relative), becomes {@link HostedB}, and a stand-in after an `/h/` or `/th/` word {@link HostedOdo}.
+ * A cardinal `/ɡ/` right after a hosted `/b/` is that unit's {@link Amount}, and a signed `/h/` number after an
+ * equative's shared scale its {@link Factor}. Neither has a `/b/` slot, so a `/b/` after one fails to parse (`slotlessHost`).
+ * A stance word that is a rank fence's bar becomes {@link Bar}.
  */
 export function markContext(tokens: IToken[]): IToken[] {
   const retype = (token: IToken, type: TokenType | undefined): IToken =>
@@ -1442,19 +1434,20 @@ export function markContext(tokens: IToken[]): IToken[] {
 
 function hostedType(token: IToken, before: IToken[]): TokenType | undefined {
   const host = before.at(-1);
-  if (!host || isAmount(before) || isFactor(before)) return undefined;
-  if (tokenIs(token, B) && (tokenIs(host, H, G) || isScopeThoVerb(host))) return HostedB;
-  if (tokenIs(token, Odo) && tokenIs(host, H)) return HostedOdo;
+  if (!host) return undefined;
+  if (tokenIs(token, B) && (tokenIs(host, H, G, Amount, Factor) || isScopeThoVerb(host))) return HostedB;
+  if (tokenIs(token, Odo) && tokenIs(host, H, Factor)) return HostedOdo;
+  if (isAmountAt(token, before)) return Amount;
+  if (isFactorAt(token, before)) return Factor;
   return undefined;
 }
 
-/** The last word is a measure amount: a cardinal `/ɡ/` right after a hosted `/b/`, or after the join that fills it. */
-function isAmount(before: IToken[]): boolean {
-  const last = before.at(-1)!;
-  const family = (last.payload as LexWord | undefined)?.family;
-  if (last.tokenType !== G || family?.kind !== "number") return false;
+/** A cardinal `/ɡ/` right after a hosted `/b/`, or after the join that fills that slot: the measure amount. */
+function isAmountAt(token: IToken, before: IToken[]): boolean {
+  const family = (token.payload as LexWord | undefined)?.family;
+  if (token.tokenType !== G || family?.kind !== "number") return false;
   if (isOrdinalMarker(family.stem.marker) || isLabelMarker(family.stem.marker)) return false;
-  let i = before.length - 2;
+  let i = before.length - 1;
   if (before[i]?.tokenType === JoinB) {
     i -= 1;
     while (before[i]?.tokenType === B) i -= 1;
@@ -1462,10 +1455,10 @@ function isAmount(before: IToken[]): boolean {
   return before[i]?.tokenType === HostedB;
 }
 
-/** The last word is an equative's factor: a signed `/h/` number after the scale shared by an `oe` join (comparatives.md § factor). */
-function isFactor(before: IToken[]): boolean {
-  if (!factorAhead(before.at(-1)!) || !tokenIs(before.at(-2) ?? before.at(-1)!, G, H, B)) return false;
-  let i = before.length - 3;
+/** A signed `/h/` number right after the scale an `oe` join shares (comparatives.md § factor). */
+function isFactorAt(token: IToken, before: IToken[]): boolean {
+  if (!factorAhead(token) || !before.at(-1) || !tokenIs(before.at(-1)!, G, H, B)) return false;
+  let i = before.length - 2;
   while (i >= 0 && tokenIs(before[i]!, W)) i -= 1;
   const join = before[i];
   return !!join && tokenIs(join, JoinZ, JoinD, JoinB) && joinSeries(join) === "oe";
