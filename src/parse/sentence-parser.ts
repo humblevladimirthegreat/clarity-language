@@ -1,4 +1,5 @@
 import { CstParser, EOF, type CstNode, type IToken } from "chevrotain";
+import { LLStarLookaheadStrategy } from "chevrotain-allstar";
 
 import {
   allTokens,
@@ -209,13 +210,27 @@ function isNpSlotLookahead(parser: AgazanSentenceParser, slot: NpSlot): boolean 
   return isGlHead(parser.lookahead(i)) && npSlot(parser.lookahead(i + 1)) === slot;
 }
 
+/**
+ * ALL(*) ambiguity reports, collected instead of printed (the default `console.log` would corrupt
+ * the CLI's JSON). A decision is reported only the first time a sentence reaches it.
+ */
+const ambiguityReports: string[] = [];
+
+/** Return and clear the ambiguity reports collected so far (grammar-check reads them). */
+export function takeAmbiguityReports(): string[] {
+  return ambiguityReports.splice(0);
+}
+
 class AgazanSentenceParser extends CstParser {
   public lookahead(index: number): IToken {
     return this.LA(index);
   }
 
   constructor() {
-    super(allTokens, { recoveryEnabled: false, maxLookahead: 2 });
+    super(allTokens, {
+      recoveryEnabled: false,
+      lookaheadStrategy: new LLStarLookaheadStrategy({ logging: (message) => ambiguityReports.push(message) }),
+    });
     this.performSelfAnalysis();
   }
 

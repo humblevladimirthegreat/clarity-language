@@ -8,6 +8,9 @@
  *    concrete sentence where a gate chose; zero means the export lost something the parser does
  *    in code (an `ACTION`, a rule argument), so the export is not faithful there.
  *
+ * 4. Lists the ALL(*) ambiguity reports the parser collected over the doc corpus: decisions whose
+ *    alternatives the token types alone do not separate, so a gate or payload check decides.
+ *
  * Run: npm run grammar-check -- [--json tmp/grammar-check.json] [--examples N]
  */
 import { mkdirSync, writeFileSync } from "node:fs";
@@ -19,7 +22,7 @@ import { countDerivations } from "../src/grammar-check/derivations.js";
 import { buildLr1, groupConflicts } from "../src/grammar-check/lr1.js";
 import { enforceTokens, enforceTones } from "../src/parse/enforce.js";
 import { loadDefaultTables } from "../src/parse/index.js";
-import { parseSentenceTokens, sentenceGrammar } from "../src/parse/sentence-parser.js";
+import { parseSentenceTokens, sentenceGrammar, takeAmbiguityReports } from "../src/parse/sentence-parser.js";
 import { allTokens } from "../src/parse/tokens.js";
 import { tokenizeUtterance } from "../src/parse/tokenize.js";
 
@@ -44,6 +47,7 @@ for (const g of groups) {
 
 // Doc corpus under the gate-free grammar
 const tables = loadDefaultTables();
+takeAmbiguityReports(); // Start from a clean list.
 type ForkSummary = { decision: string; branches: string; sentences: number; examples: string[] };
 const forks = new Map<string, ForkSummary>();
 const unfaithful: string[] = [];
@@ -94,6 +98,11 @@ for (const f of sortedForks) {
 console.log(`  ${unfaithful.length} have none (export not faithful)${cyclic ? `; ${cyclic} hit a nullable cycle` : ""}`);
 for (const u of unfaithful.slice(0, 20)) console.log(`         ${u}`);
 
+// ALL(*) runtime reports, one per decision and first sentence that reached it
+const ambiguityReports = takeAmbiguityReports();
+console.log(`\nALL(*) ambiguity reports on the doc corpus: ${ambiguityReports.length}`);
+for (const r of ambiguityReports) console.log(`  ${compactReport(r)}`);
+
 if (jsonOut) {
   mkdirSync(dirname(jsonOut), { recursive: true });
   writeFileSync(
@@ -114,9 +123,19 @@ if (jsonOut) {
           })),
         },
         corpus: { parsed, ambiguous, unfaithful, forks: sortedForks },
+        ambiguityReports,
       },
       null,
       1,
     ),
   );
+}
+
+/** `gPackage.MANY  alts 0 1  on W G V` from allstar's long message (its alt list repeats per path). */
+function compactReport(message: string): string {
+  const flat = message.replace(/\s+/g, " ").trim();
+  const m = /<([\d, ]+)> in <(\w+)> inside <(\w+)> Rule, <([^>]*)>/.exec(flat);
+  if (!m) return flat;
+  const alts = [...new Set(m[1]!.split(", "))].join(" ");
+  return `${m[3]}.${m[2]}  alts ${alts}  on ${m[4]!.split(", ").join(" ")}`;
 }

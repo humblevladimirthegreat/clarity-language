@@ -1,6 +1,6 @@
 # Proposal: prove one syntax tree per sentence
 
-**Status:** IN PROGRESS (phase 0 merged)  
+**Status:** IN PROGRESS (phase 0 and batch 1 merged)  
 **Related:** none  
 **Design authority:** the grammar pages own every reading. This note covers **parser and test tooling** only. Every attachment rule the work turns up goes to the owning grammar page, or to [design-decisions.md](../meta/design-decisions.md) when a form is ruled out on purpose.
 
@@ -78,6 +78,7 @@ Causes 1, 2, 3 and 5 account for nearly all of the 2,601 sentences and most of t
 Batches, each merged to main on its own with `npm test` green and `npm run parse-snapshot` either empty or explained by a doc edit in the same batch. After each batch, record the LR(1) conflict count and the doc fork count here.
 
 1. **Switch to ALL(\*)** with [`chevrotain-allstar`](https://www.npmjs.com/package/chevrotain-allstar) (TypeFox / Langium, peer `chevrotain ^13`). Collect its runtime ambiguity reports instead of printing them. The `grammar-check` report already covers the static check that the switch turns off.
+   **Done (2026-10-08).** `chevrotain-allstar` 0.5.0, gates unchanged. `parse-snapshot` against the pre-switch commit: 0 of 2,657 spans differ. `grammar-check` unchanged (573 LR(1) conflicts from 155 decisions; 2,601 doc sentences with two or more gate-free trees, through 41 forks) and now lists the runtime reports, collected through `takeAmbiguityReports()` in `sentence-parser.ts`: the same 15 as the experiment below.
 2. **Parser-shape fixes** (causes 1, 2, 5). No grammar decisions; the snapshot must stay empty.
 3. **Lists and hosting** (causes 3, 4). Both rules are documented; small doc clarifications may come with them.
 4. **Finer token types** (cause 8 and the payload gates, cause 7's token split). Mechanical.
@@ -144,4 +145,4 @@ In rows 1 and 2, a rule chooses between two token-level trees. Rows 3–5 are pr
 - **Dependency:** allstar is version 0.x with one main maintainer and ties into Chevrotain internals, so a major Chevrotain upgrade waits for an allstar release. It is used by Langium; if it were abandoned, a gate-free grammar moves to Lezer.
 - **Behavior:** where alternatives overlap, ALL(\*) may pick differently from LL(2). The snapshot diff catches each case.
 - **Debugging:** a branch decision moves from a readable gate into the grammar's structure.
-- **Bundle:** allstar depends on `lodash-es`; tree-shaking should keep most of it out of the browser bundle.
+- **Bundle:** allstar depends on `lodash-es`. The published site does not bundle the parser, so this only affects Node tooling.
