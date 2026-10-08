@@ -613,7 +613,15 @@ The lists can be of different roles. A list of adjectives or verbs pairs with th
 
 Azawan is big and Alahen is small; Azawan walks and Alahen runs. Without **`wazem`**, an adjective right after a noun join is [SHARED](#shared-after-the-join): it describes every noun. When **`wazem`** and `gal` close the adjectives, they are a list of their own, so the first one is not shared.
 
-Without **`wazem`**, who got which is left open. (cue: 🧦 *socks*: sort them into matched pairs)
+Inside such a list, a plain `/ɡ/` after an item's hosted `/b/` is the next item, not a description of that `/b/`. The closing join decides it: with `gal` ending the row, every `/ɡ/` in it belongs to the list and so to the subjects.
+
+> `zazawan zalahen zal gugol bazawan gubuhel wazem gal.`
+>
+> [z-Azawan | z-Alahen | z-and] | [[g-SAME | b-Azawan] | g-blue | w-respectively | g-and]
+>
+> "Azawan and Alahen are the same as Azawan and blue, respectively."
+
+With no closing `gal`, the row is not a list. The `/ɡ/` after a noun join is SHARED, and the plain `/ɡ/` after its `/b/` describes that `/b/` ([complex chaining](clause.md#complex-chaining)): `zazawan zalahen zal gugol bazawan gubuhel.` is *the same as blue Azawan*, for both.
 
 ### Full single-item and standalone inventories
 
