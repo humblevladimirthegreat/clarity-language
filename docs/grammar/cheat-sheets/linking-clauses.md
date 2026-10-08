@@ -230,13 +230,13 @@ Put the tie root on `/ɡ/` with **-m**, then the other person in `/b/`.
 | [**`gemezem`** + `/b/`](../relations.md#social-relations) | companion of `/b/` | *friend of* | I |
 | [**`gagayem`** + `/b/`](../relations.md#social-relations) | the one `/b/` answers to | *boss of* | I |
 | [**`gohoham`** + `/b/`](../relations.md#social-relations) | partner of `/b/` | *partner of* | I |
-| [**`gahabom`** + `/b/`](../relations.md#social-relations) | the one `/b/` looks after | *in the care of* | I |
+| [**`gobadam`** + `/b/`](../relations.md#social-relations) | the one `/b/` looks after | *in the care of* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Friend of](../relations.md#social-relations) | `zalahen gemezem bazawan.` | *Alahen is Azawan's friend.* | I |
 | [Friends](../relations.md#social-relations) | `zazawan zalahen zal gemezem.` | *Azawan and Alahen are friends.* | I |
-| [In the care of](../relations.md#social-relations) | `zalahen gahabom bazawan.` | *Alahen is in Azawan's care.* | I |
+| [In the care of](../relations.md#social-relations) | `zalahen gobadam bazawan.` | *Alahen is in Azawan's care.* | I |
 
 ### As of {#as-of}
 
@@ -278,7 +278,7 @@ Each pole, linker, and relation word is the abstract sense of an ordinary root. 
 | [`hazam`](../relations.md#locative-relations) *between*, [`hebum`](../relations.md#locative-relations) *across*, [`hugem`](../relations.md#locative-relations) *around* | `azal` 🥪, `ebul` 🌉, `ugel` 🎠 | I |
 | [`hobom`](../relations.md#of-relations) *part of*, [`hahem`](../relations.md#of-relations) *contents of*, [`huwum`](../relations.md#of-relations) *made of* | `obol` 🦴, `ahel` 🫙, `uwul` 🪵 | I |
 | [`hagum`](../relations.md#of-relations) *from*, [`hozazom`](../relations.md#of-relations) *a piece of* | `agul` 🗾, `ozazol` 🪚 | I |
-| [`gemezem`](../relations.md#social-relations) *friend*, [`gagayem`](../relations.md#social-relations) *boss*, [`gohoham`](../relations.md#social-relations) *partner*, [`gahabom`](../relations.md#social-relations) *care* | `emezel` *Mrs Claus*, `agayel` *crown*, `ohohal` *holding hands*, `ahabol` *house plant* | I |
+| [`gemezem`](../relations.md#social-relations) *friend*, [`gagayem`](../relations.md#social-relations) *boss*, [`gohoham`](../relations.md#social-relations) *partner*, [`gobadam`](../relations.md#social-relations) *care* | `emezel` *Mrs Claus*, `agayel` *crown*, `ohohal` *holding hands*, `obadal` *house plant* | I |
 | [`huhum`](../relations.md#as-of) *as of* (ledger), [`huram`](../relations.md#as-of) *as of* (placeholder) | `uhul` 📒, `ural` 🔖 | A |
 
 ## Don't mix up {#dont-mix-up}

@@ -150,7 +150,7 @@ describe("classify", () => {
   it("between locative overlay remains; other place talk is ordinary on those roots", () => {
     const between = expectOverlay("gazam", "locative");
     assert.equal(between.overlay!.gloss, "between");
-    const pin = expectReading("zububel", "ordinary");
+    const pin = expectReading("zebawal", "ordinary");
     assert.equal(pin.overlay, undefined);
     expectReading("hegegam", "ordinary");
   });

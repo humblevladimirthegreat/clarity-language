@@ -368,7 +368,7 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 | *enable* | `zalahen vowogaxal thegem bazawan.` | Alahen can walk, Azawan makes that happen |
 | *assist* / *help* (as a servant) | `zazawan vebedel dalahen.` | serves Alahen |
 | *consult* | `zazawan vezebelalegol dalahen.` | talks with the expert |
-| *shoot* | `zazawan vezogul.` | uses the squirt-gun root |
+| *shoot* | `zazawan vagevel.` | uses the gun root |
 | *involve* / *include* (among others) | `zazawan vowogal am balahen.` | walks, Alahen among those involved |
 | *apply* / *use* (a tool) | `zazawan vowogal ael bahavol.` | walks using the hammer |
 | *agree with* | `zazawan dalahen vanadel.` | nods to Alahen |
@@ -522,8 +522,8 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *ride* (a bus) | `zazawan vabazul.` | rides the bus |
 | *environment* / *surroundings* | `zahazamogobal` | the world seen as the home around you |
 | *efficiency* | `zavagemozewel` | output for the effort |
-| *holder* (a thing that holds) | `zahadalahabal` | what holds in the hand |
-| *holder* (a person who bears) | `zaxahabal` | doer of the bearing |
+| *holder* (a thing that holds) | `zahadalabugul` | what holds in the hand |
+| *holder* (a person who bears) | `zaxabugul` | doer of the bearing |
 | *intervention* | `zazawan vuvudel hazam balahen bahaben bal.` | comes between the two |
 | *reduce* | `zazawan dugul v-3.` | decreases the object by three |
 | *reduce* (cut down) | `zazawan dugul vagezul.` | cuts it |
@@ -557,7 +557,7 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 | *representation* (acting for someone) | `zazawan gadem balahen` | Azawan, on behalf of Alahen |
 | *reaction* / *response* | `zegehum` | the answer to what unlocked it |
 | *react to* | `zazawan derehel vegehum.` | answers the rain |
-| *murder* (a wrongful killing) | `zalahen vazagal thevel barl zazawan vezogul.` | a death, and the fault is Azawan's shooting |
+| *murder* (a wrongful killing) | `zalahen vazagal thevel barl zazawan vagevel.` | a death, and the fault is Azawan's shooting |
 | *comparison* / *contrast* (setting two against each other) | `zezom` | contrast |
 | *compare A with B* | `zazawan dalahen vezom bahaben.` | sets Alahen against Ahaben |
 | *preference* (the one preferred) | `zalavalogodal` | the one loved first |
@@ -580,9 +580,9 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 >
 > "Azawan reacts to the rain."
 
-> `zalahen vazagal thevel barl zazawan vezogul.`
+> `zalahen vazagal thevel barl zazawan vagevel.`
 >
-> z-Alahen | v-skull | [th-because.fault | b-that-clause] | z-Azawan | v-squirt-gun
+> z-Alahen | v-skull | [th-because.fault | b-that-clause] | z-Azawan | v-gun
 >
 > "Azawan murdered Alahen."
 
@@ -616,7 +616,7 @@ Some English words have a second or third sense that a published root already ca
 | *fit* (suits) | `gulotham` | a met need ([sake words](say-reasons.md#sake-words)) |
 | *match* (a contest) | `zezadem` | a contest |
 | *ride* (a horse, a bike) | `zazawan vehebam ael bohozal.` | travels using the horse |
-| *admit* (acknowledge a fault) | `zazawan dahabal vewevam.` | acknowledges the harm |
+| *admit* (acknowledge a fault) | `zazawan dabugul vewevam.` | acknowledges the harm |
 | *directly* (without a go-between) | `gamem` | straight |
 | *set off* / *start* | `vabedom` | [starts](say-reasons.md#phase-verbs) |
 | *turn off* / *stop* | `vazadal` | [stops](say-reasons.md#phase-verbs) |

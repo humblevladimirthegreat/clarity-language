@@ -459,11 +459,11 @@ Any root whose abstract sense is a tie works this way (`gohoham` *partner of*, `
 | **`gemezem`** + `/b/` | companion of `/b/` | *friend of* | `emezel` *Mrs Claus* |
 | **`gagayem`** + `/b/` | the one `/b/` answers to | *boss of* | `agayel` *crown* |
 | **`gohoham`** + `/b/` | partner of `/b/` | *partner of* | `ohohal` *holding hands* |
-| **`gahabom`** + `/b/` | the one `/b/` looks after | *in the care of* (*Azawan's patient*, *team*) | `ahabol` *house plant* |
+| **`gobadam`** + `/b/` | the one `/b/` looks after | *in the care of* (*Azawan's patient*, *team*) | `obadal` *house plant* |
 
-A tie of care (*Azawan's patient*, *Azawan's team*) is **`gahabom`**: `/b/` looks after the person. It says Azawan is responsible for them, not that Azawan owns or uses them. (cue: 🪴 a house plant needs someone to tend it)
+A tie of care (*Azawan's patient*, *Azawan's team*) is **`gobadam`**: `/b/` looks after the person. It says Azawan is responsible for them, not that Azawan owns or uses them. (cue: 🪴 a house plant needs someone to tend it)
 
-> `zalahen gahabom bazawan.`
+> `zalahen gobadam bazawan.`
 >
 > z-Alahen | [g-tending | b-Azawan]
 >

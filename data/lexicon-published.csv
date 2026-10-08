@@ -295,7 +295,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🐄,cow,agawu,docility,docile as a cow,,,
 🐖,pig,ebegu,gluttony,a pig eats far beyond its fill,,,
 🐗,boar,obovo,stubbornness,stubborn as a boar,,,
-🐑,ewe,uyoyu,conformity,follow the herd like sheep,,sheep,
+🐑,sheep,ehebe,conformity,follow the herd like sheep,,,
 🐐,goat,agoda,scapegoat,the goat was sent off carrying the community's blame,,,
 🐪,camel,agehu,endurance,camel endures the desert,,,
 🦙,llama,alawe,composure,no drama llama stays composed,,,
@@ -308,7 +308,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🐀,rat,arade,,,,,
 🐹,hamster,ahoze,routine,hamster on a wheel of routine,,process; procedure; everyday; familiar,
 🐇,rabbit,araba,,,,,
-🐿️,chipmunk,ahebu,hoarding,chipmunk hoards for winter,,,
+🐿️,squirrel,ezogu,hoarding,a squirrel hoards nuts for winter,,,
 🦫,beaver,abeve,industry,a beaver works nonstop building dams,,,
 🦔,hedgehog,ehaha,defensiveness,hedgehog curls in defense,,,
 🦇,bat,abedu,reclusion,bat hides by day,,,
@@ -348,7 +348,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🐍,snake,ezehu,treachery,snake in the grass,,,
 🐉,dragon,adago,legend,dragon lives in legend; legend is an inherited mythic tale,,,
 🦕,brontosaurus,abozo,antiquity,a brontosaurus lived ages before us,,ancient,
-🦖,t-rex,edewa,,,,,
+🦖,dinosaur,adozo,,,,,
 🐋,whale,ewehe,magnitude,whale-sized magnitude,,,
 🐬,dolphin,adaya,,,,,
 🫍,orca,oraga,,,,,
@@ -369,7 +369,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦋,butterfly,ebade,,,,,
 🐛,bug,aboga,flaw,a computer bug makes a program go wrong,,error; insect,spans.md#advanced-practice
 🐜,ant,anado,diligence,ants work with diligence,,,plurality.md#beginner-practice
-🐝,honeybee,ehabe,,,,,
+🐝,bee,ebawo,,,,,
 🪲,beetle,ebada,hardiness,a beetle's hard shell shrugs off hits,,solid; hard; firm,
 🐞,ladybug,elede,luck,ladybug brings luck,,lucky; fortune; fortunate,
 🦗,grasshopper,aguza,,,,,
@@ -394,7 +394,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🌷,tulip,uduba,affection,tulip gift shows affection,,,
 🪻,hyacinth,ahazu,spring,hyacinth blooms in spring,,,
 🌱,seedling,uze,growth,a seedling pushes up out of the soil,,grow; seed; expansion; increase; development; develop; expand; mature,causation.md#beginner-practice
-🪴,house-plant,ahabo,tending,a houseplant needs care,,plant; garden,
+🪴,plant,obada,tending,a potted plant needs care; tending is looking after what grows,,garden,
 🌲,pine,abowe,constancy,a pine stays green all year; constancy is staying the same through change,,,
 🌳,tree,edehu,stability,tree roots give stability,,stable; steady,
 🌴,palm,abahu,escape,a palm means vacation escape,,,
@@ -508,7 +508,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🍭,lollipop,alabu,pacification,lollipop pacifies a child,,,
 🍮,custard,agoze,richness,custard is thick with cream and eggs,,,
 🍯,honey,ahahe,endearment,honey is a sweet endearment,,,
-🍼,baby-bottle,abadu,inhibition,bottle holds liquid inside; bottle is held-in charge,,bottle,numbers-applied.md#intermediate-practice
+🍼,bottle,abadu,inhibition,a bottle holds liquid inside; inhibition is holding feeling in,,,numbers-applied.md#intermediate-practice
 🥛,milk,emega,,,,,
 ☕,coffee,agave,alertness,coffee fuels alertness,g:bitter,,
 🫖,teapot,edebu,ceremony,teapot pours with ceremony,,,hooks.md#beginner-practice
@@ -520,7 +520,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🍹,mock-tail,amado,escapism,tropical drink is vacation escapism,,,
 🍺,beer,ebeho,,,,,hooks.md#beginner-practice
 🥂,cheers,eheza,,,,,
-🥃,whiskey,eweze,fortitude,whiskey warms with fortitude,,,
+🥃,liquor,alege,fortitude,strong liquor warms with fortitude,,,
 🫗,pour,oboho,loss-of-control,pour directs liquid; loss-of-control is the unobservable slip,,slip,pronouns.md#beginner-practice
 🥤,drink,edeyo,plastic,a takeaway drink cup is molded plastic; plastic is a moldable synthetic material,,beverage,
 🧋,bubble-tea,edewo,trendiness,bubble tea is trendy now,,trend; fashion,
@@ -731,7 +731,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🎯,bullseye,ubuza,precision,dart board demands exact aim; precision is exact aim,,accurate; exact; precise,
 🪀,yoyo,oyoyo,swing,a yoyo swings on its string; swing is back-and-forth motion,,,
 🪁,kite,agodu,aspiration,kite rises on the wind; aspiration is striving upward,,dream,
-🔫,squirt-gun,ezogu,,,,gun,
+🔫,gun,ageve,,,,,
 🎱,pool,ubuho,liter,pool holds a volume of liquid; liter is the SI volume unit,,,
 🔮,crystal-ball,obova,foresight,crystal ball sees what may come; foresight is seeing ahead,,,
 🪄,wand,awade,shortcut,a wand fixes in one wave; shortcut is bypassing hard work,,,
@@ -747,7 +747,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ♟️,pawn,obohu,sacrifice,pawn is traded in chess strategy; sacrifice is giving up for gain,,,intention.md#beginner-practice
 🃏,joker,ohoge,,,,,
 🀄,mahjong,ameha,,,,,
-🎴,flower-cards,avaga,,,,card,
+🎴,card,ogado,,,,,
 🎭,theater,avo,pretense,theater masks hide the actor; pretense is playing a role / as-if framing,,dramatic; drama; stage,
 🖼️,frame,evevo,ostentation,a frame puts a picture on show; ostentation is showing-off as stance,,shape; form,predication.md#intermediate-practice
 🎨,palette,abudo,,,,color,
@@ -758,7 +758,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🕶️,sunglasses,ozaga,unbothered,sunglasses hide the eyes; cool is calm unbothered style,,,
 🥽,goggles,agogu,,,,,
 🥼,lab-coat,alego,expertise,lab coat marks scientific work; expertise is specialized knowledge,,technical; master; talent; specialist; specialize; pro; qualification; expert,
-🦺,safety-vest,eveze,safety,the vest keeps workers safe; safety is freedom from harm,,safe; secure; insurance,
+🦺,vest,eveze,safety,the vest keeps workers safe; safety is freedom from harm,,safe; secure; insurance,
 👔,necktie,enege,neck,a necktie hangs at the neck; the neck joins head and body,,,
 👕,shirt,ehada,casual,a shirt is everyday wear; casual is relaxed informal,,t-shirt,
 👖,jeans,ehewa,,,,,
@@ -776,7 +776,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 👚,blouse,abezo,,,,,
 🪭,fan,avave,coolness,a fan stirs the air and cools the skin,,,
 👛,purse,ebezu,savings,purse holds small valuables; savings is kept resources,,,
-👜,handbag,ahaba,responsibility,handbag carries needs; responsibility is the unobservable bearing,,duty; obligation; liability; bag,
+👜,bag,abugu,responsibility,a bag carries what is needed; responsibility is the unobservable bearing,,duty; obligation; liability,
 👝,clutch,agoha,,,,,
 🛍️,shopping-bag,ahabu,pound-mass,a shopping bag is weighed by the pound; pound-mass is the mass unit,,,
 🎒,backpack,aba,preparation,backpack holds what you need ahead; preparation is readying beforehand,,pack,
@@ -787,7 +787,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥿,loafer,olove,,,,,
 👠,high-heel,ehewu,,,,,
 🩰,ballet-shoe,uhehu,,,,,
-🪮,hair-pick,ehebe,,,,hair,
+🪮,comb,ogowa,,,,hair,
 👑,crown,agaye,leadership,crown marks who rules; leadership is being the one others answer to,,lead,
 👒,sun-hat,azeha,shade,a sunhat shields from sun above; shade is shelter from harshness,,shadow,
 🎩,top-hat,adabe,trick,a magician pulls a trick from a top hat,,,
@@ -901,14 +901,14 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 📉,downtrend,adadu,loss,the chart falls; loss is having less than before,,deficit,
 📊,bar-chart,aboha,analysis,bar chart compares quantities; analysis is examining data,,analyze; chart; statistic,
 📋,clipboard,egabo,accountability,clipboard tracks tasks to do; accountability is answerable tracking,,account,intention.md#intermediate-practice
-📌,push-pin,ubube,highlight,pin marks an important spot; highlight is marking as important,,,
+📌,pin,ebawa,highlight,pin marks an important spot; highlight is marking as important,,,
 📎,paper-clip,eboge,attachment,paperclip holds sheets together; attachment is joined addition,,attach,
 📏,ruler,uruha,measurement,ruler measures exact length; measurement is precise tracking,,measure; criteria; dimension,
 🚃,railcar,erega,length,a railcar runs long; length is how far along,,extend; long,
 📐,set-square,ezeze,meter,set square marks exact length; meter is the SI length unit,,,numbers-applied.md#intermediate-practice
 ✂️,scissors,ezezo,separation,scissors cut material apart; separation is dividing apart,,tear; distinct; slice; apart; distinguish; distinction,
 🗃️,file-box,avaba,archive,file box stores old records; archive is stored past record,,file; database,
-🗄️,filing-cabinet,agobe,,,,shelf,
+🗄️,cabinet,ageba,,,,shelf,
 🗑️,wastebasket,ewezu,discard,trash bin holds what is thrown; discard is getting rid of,,rid; bin,
 🔒,locked,alaga,restriction,lock keeps the door shut; restriction is holding back access,v:shut,restrict; limitation; close; strict,
 🔓,unlocked,anaga,access,unlock opens what was shut; access is ability to enter,,,
@@ -989,7 +989,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🪪,id,ade,verification,an id card lets others check who you are,,genuine,
 🏧,atm,edeya,withdrawal,atm gives cash on demand; withdrawal is taking out stored value,,,
 🚮,litter,eledo,disposal,litter bin marks where trash goes; disposal is getting rid of,,,
-🚰,drinking-water,owode,,,,water,
+🚰,water,owode,,,,,
 ♿,accessible,ugeze,,,,,
 🚻,restroom,arezu,designation,restroom sign marks facility type; designation is marked category,,appoint,
 🚼,baby-changing,ebeba,,,,,
@@ -1120,7 +1120,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🟫,ground,agado,,,,soil; background; land,
 🟩,field,eveda,,,,,
 🩶,gray,egeva,,,,,knowing.md#intermediate-practice
-⬛,black-square,ezoge,,,,square,
+⬛,square,ezoge,,,,,
 ⬜,white-square,awaze,blank,white square is open empty block; blank is without mark yet,,space,
 🔺,triangle,adawe,radian,triangle marks an angle wedge; radian is the SI plane-angle unit,,angle,
 🔻,down-triangle,adado,corner,a triangle ends in a point; a corner is where two edges meet,,vertex,

@@ -261,7 +261,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agazan | Cue |
 |---------|--------|-----|
 | *pill* | `ebezal` | 💊 |
-| *baby-bottle* | `abadul` | 🍼 |
+| *bottle* | `abadul` | 🍼 |
 | *spoon* | `uzubul` | 🥄 |
 | *meter* | `ezezem` | 📐 from *set square* |
 | *hour* | `agazem` | ⏳ from *hourglass* |
@@ -342,7 +342,7 @@ z-Azawan | [b-meter | g-two] | v-walk
 
 🔊 `zabadul grolel.`
 
-z-baby-bottle | g-_7
+z-bottle | g-_7
 
 *Bottle 7.*
 :::
@@ -364,7 +364,7 @@ h-_23,59.about | z-Alahen | v-scream
 
 🔊 `zabadulx gravazoyol.`
 
-z-baby-bottle-x | g-50yo
+z-bottle-x | g-50yo
 
 *50% of the bottles.*
 :::
@@ -395,7 +395,7 @@ h-_1,4 | z-Alahen | v-walk
 
 ::: details Show answer
 
-[z-baby-bottle-x | g-three | g-quarter-of]
+[z-bottle-x | g-three | g-quarter-of]
 
 *Three quarters of the bottles.*
 :::

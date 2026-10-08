@@ -568,7 +568,7 @@ Other kinds of *'s* each have their own word:
 
 **`em`** always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `em` + `/b/` is not a sentence there. For someone's act (*Azawan's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun).
 
-**`em`** never takes a person on the left: a person is not something someone uses. **`gegabem`** never does either, because no one owns a person: a person tied to B takes a [tie](relations.md#social-relations) (*Azawan's patient* is care, `gahabom`). **`em`** never names a feeling or trait either, and neither does [*part of*](relations.md#of-relations): a feeling or trait stays something B has, not something B uses or is made of. A feeling uses [emotion compose](sakes.md#emotion-compose); a trait is a `/ɡ/` word on B.
+**`em`** never takes a person on the left: a person is not something someone uses. **`gegabem`** never does either, because no one owns a person: a person tied to B takes a [tie](relations.md#social-relations) (*Azawan's patient* is care, `gobadam`). **`em`** never names a feeling or trait either, and neither does [*part of*](relations.md#of-relations): a feeling or trait stays something B has, not something B uses or is made of. A feeling uses [emotion compose](sakes.md#emotion-compose); a trait is a `/ɡ/` word on B.
 
 **Compare with:** *for Azawan* is `el`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
 

@@ -46,7 +46,7 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 | English itch | Agazan job | Teach |
 |--------------|------------|-------|
 | in B's use (*Azawan's dog*, *my house*, *my seat*), B's turn or occasion (*Azawan's birthday*) | hook **`em`** + `/b/` | [Whose](hooks.md#genitive) |
-| care of a person (*Azawan's patient*) | **`gahabom`** + `/b/` | [Social relations](relations.md#social-relations) |
+| care of a person (*Azawan's patient*) | **`gobadam`** + `/b/` | [Social relations](relations.md#social-relations) |
 | legal ownership (*the dog Azawan owns*) | **`gegabem`** + `/b/` | [Of relations](relations.md#of-relations) |
 | social tie (*Azawan's friend*) | tie root on `/ɡ/` **-m** + `/b/` | [Social relations](relations.md#social-relations) |
 | part / contents / material (*a hand of Alahen*, *a teapot of tea*) | **`gobom`** / **`gahem`** / **`guwum`** + `/b/` | [Of relations](relations.md#of-relations) |

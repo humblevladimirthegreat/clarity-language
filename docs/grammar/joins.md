@@ -1082,7 +1082,7 @@ A join takes every same-role item before it. When English groups a small list in
 
 > `zazawan { zowodel zal } zam.`
 >
-> [z-Azawan | SCOPE[z-drinking-water | z-and] | z-and.open]
+> [z-Azawan | SCOPE[z-water | z-and] | z-and.open]
 >
 > "Azawan and (just water)."
 
@@ -1274,7 +1274,7 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 
 > `zedehel zagavel zowodel zor.`
 >
-> [z-tea | z-coffee | z-drinking-water | z-anything]
+> [z-tea | z-coffee | z-water | z-anything]
 >
 > "any of tea, coffee, or water is fine (no order)."
 

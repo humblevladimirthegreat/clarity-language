@@ -396,7 +396,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `agulenabal` | *import* |  |
 | `agulobel` | *citizen* |  |
 | `aguluzubul` | *province* |  |
-| `ahadalahabal` | *holder* |  |
+| `ahadalabugul` | *holder* |  |
 | `ahadoluzugul` | *kindergarten* |  |
 | `ahahelawahel` | *mead* |  |
 | `ahahulazewel` | *jury* |  |
@@ -516,7 +516,6 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ebeyolarebel` | *editing* |  |
 | `ebogulebahel` | *dill* |  |
 | `ebudalahazal` | *gallery* |  |
-| `edazeledeyol` | *liquor* |  |
 | `edegelebahel` | *sage* |  |
 | `edehelavavul` | *jasmine* |  |
 | `edehelezel` | *cup* |  |
@@ -540,6 +539,8 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ehebalabahol` | *harbor* |  |
 | `ehebalahazal` | *port* |  |
 | `ehebamagehal` | *tourism* |  |
+| `ehebelemedol` | *mutton* |  |
+| `ehebelodogal` | *sheepdog* |  |
 | `ehedalabogal` | *louse* |  |
 | `ehegelabogal` | *dragonfly* |  |
 | `ehehamerevol` | *god* |  |
@@ -670,8 +671,6 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `uwulagehol` | *cinnamon* |  |
 | `uwulagezal` | *fence* |  |
 | `uwuzelowodel` | *alcohol* |  |
-| `uyoyulemedol` | *mutton* |  |
-| `uyoyulodogal` | *sheepdog* |  |
 | `uzelobol` | *stem* |  |
 | `uzubalebahel` | *thyme* |  |
 | `uzubalezel` | *porridge* |  |

@@ -42,15 +42,15 @@ Each pass takes one domain and its head roots. Rows are named here by seed and E
 | Domain | Head roots | Sample fills | Already in |
 |--------|-----------|--------------|------------|
 | Seasoning | 🌿 *herb*, 🍛 *spice*, 🌶️ *pepper*, 🧂 *salt* | basil, mint, parsley, cinnamon, paprika, chili, black pepper | done: 12 herbs, 12 spices, sea salt, curry; *chili* belongs as an alias on 🌶️ |
-| Plants | 🌳 *tree*, 💮 *flower*, 🍃 *leaf*, 🌾 *grain*, 🥬 *greens*, 🍈 *fruit*, 🫐 *berry*, 🌰 *nut*, 🍄 *mushroom* | willow, birch, wheat, oat, barley, lettuce, cabbage, raspberry, walnut, acorn | done: 41 rows (wave 1). Deferred: a general *plant* head for weed, fern, moss, ivy, vine |
-| Animals | 🐦 *bird*, 🐟 *fish*, 🐛 *bug*, 🐍 *snake*, 🐚 *shell*, 🐕 *dog*, 🐈 *cat*, 🐄 *cow*, 𓄛 *animal* (class names only) | sparrow, crow, trout, salmon, moth, wasp, puppy, kitten, calf, pet, livestock | done: 36 rows (wave 1), with *pet*, *livestock*, *mammal* on 𓄛. Young and sexed animals use `/ɡ/`, not compounds. Deferred: *bee* alias on 🐝, *squirrel* alias on 🐿️ |
+| Plants | 🌳 *tree*, 💮 *flower*, 🍃 *leaf*, 🌾 *grain*, 🥬 *greens*, 🍈 *fruit*, 🫐 *berry*, 🌰 *nut*, 🍄 *mushroom* | willow, birch, wheat, oat, barley, lettuce, cabbage, raspberry, walnut, acorn | done: 41 rows (wave 1). 🪴 is now *plant*: weed, fern, moss, ivy, vine still to fill |
+| Animals | 🐦 *bird*, 🐟 *fish*, 🐛 *bug*, 🐍 *snake*, 🐚 *shell*, 🐕 *dog*, 🐈 *cat*, 🐄 *cow*, 𓄛 *animal* (class names only) | sparrow, crow, trout, salmon, moth, wasp, puppy, kitten, calf, pet, livestock | done: 36 rows (wave 1), with *pet*, *livestock*, *mammal* on 𓄛. Young and sexed animals use `/ɡ/`, not compounds. 🐑 *sheep*, 🐝 *bee*, 🐿️ *squirrel* and 🦖 *dinosaur* are now roots |
 | Dishes | 🍞 *bread*, 🧀 *cheese*, 🍖 *meat*, 🍲 *soup*, 🥗 *salad*, 🍪 *cookie*, 🍜 *noodles*, 🍚 *rice*, 🥚 *egg*, 🍬 *candy* | toast, bun, pork, beef, broth, porridge, omelet, biscuit | done: 39 rows (wave 1). 🍰 *cake* and 🫕 *sauce* are now heads; their kinds (brownie, cheesecake, gravy, dressing, ketchup, fondue) still to fill. Deferred: *pasta* alias on 🍝 |
-| Drinks | 🥤 *drink*, 🍵 *tea*, 🍷 *wine*, 🍺 *beer*, 🧃 *juice*, 🥛 *milk*, ☕ *coffee* | lemonade, cider, latte, cocoa, herbal tea | done: 26 rows (wave 1). Deferred: retitle 🥃 *whiskey* → *liquor* for gin, rum, vodka |
+| Drinks | 🥤 *drink*, 🍵 *tea*, 🍷 *wine*, 🍺 *beer*, 🧃 *juice*, 🥛 *milk*, ☕ *coffee* | lemonade, cider, latte, cocoa, herbal tea | done: 26 rows (wave 1). 🥃 is now *liquor*: gin, rum, vodka, whiskey still to fill |
 | Rooms and buildings | 𓉐 *room*, 🏠 *house*, 🏪 *shop*, 🏫 *school*, 🗼 *tower*, 🛖 *hut*, ⛺ *tent* | attic, cellar, hall, garage, bakery, pharmacy, barn, college | bedroom, kitchen, bathroom (on *room*); library, museum (on *house*) |
 | People | 🧑 *person*, plus [role compounds](../grammar/roles.md#role-compounds) for doers | sibling, cousin, neighbor, stranger, guest, host | friend, parent, resident, lawyer |
 | Groups | 👥 *community*, 🏛️ *institution* | tribe, crew, club, union, ministry, court | army, jury, council, government |
-| Clothing | 🧥 *coat*, 👕 *shirt*, 👗 *dress*, 👞 *shoe*, 🧢 *hat*, 🧤 *gloves*, 🧦 *socks* | jacket, sweater, slipper, apron, uniform, helmet-types | raincoat, dress shoe |
-| Containers | 🫙 *jar*, 🧺 *basket*, 🪣 *bucket*, 👜 *bag*, 🛢️ *barrel*, 📦 *box* | bottle, can, crate, wallet, envelope-types | lid |
+| Clothing | 🧥 *coat*, 👕 *shirt*, 👗 *dress*, 👞 *shoe*, 🧢 *hat*, 🦺 *vest*, 🧤 *gloves*, 🧦 *socks* | jacket, sweater, slipper, apron, uniform, helmet-types | raincoat, dress shoe |
+| Containers | 🫙 *jar*, 🍼 *bottle*, 🧺 *basket*, 🪣 *bucket*, 👜 *bag*, 🛢️ *barrel*, 📦 *box*, 🗄️ *cabinet* | can, crate, wallet, envelope-types | lid |
 | Tools and devices | ⚙️ *machine*, 🧰 *tool*, 🔪 *knife*, 🔨 *hammer*, 🪔 *lamp*, 🕰️ *clock*, 📱 *phone* | engine, motor, pump, scissors-types, streetlight, headlight | |
 | Light | 🔆 *bright* (radiance), 🪔 *lamp* (source) | sunlight, moonlight, candlelight | |
 | Games | 🎮 *game*, 🏀 *ball* | board game, card game, chess, tag | videogame |
@@ -117,6 +117,15 @@ If a category needs a head that no root covers, stop and add the head first. Ret
 1. Prefer **retitling** an existing row whose emoji already pictures the generic sense and which has little to lose (no abstract, or an abstract that still fits). Examples: 🫐 *blueberry* → *berry*, 🧢 *cap* → *hat*. The specific sense it held becomes a compound.
 2. Otherwise **add a seed**: an unused emoji, or a non-emoji pictograph under [seeds](../meta/lexicon.md#what-can-be-a-seed). Examples: 𓄛 *animal* (the Egyptian hide sign written with mammal words), 𓉐 *room* (the floor-plan sign).
 3. Place or respell the root with `npm run convert-word -- --lexicon --only <seed>`, then retie as in `AGENTS.md`.
+
+## Known head gaps
+
+Found in the label audit after wave 1. Fill each before the wave that needs it, as in [when a head is missing](#when-a-head-is-missing).
+
+- **No root:** *bowl*, *pan*, *fork* (Containers, Tools); *rope*, *stairs*, *furniture* (Tools, Rooms); *jewel*, *whistle*. 🗄️ *cabinet* now covers cupboard and wardrobe, but *furniture* as a class name has no head.
+- **Only an alias on a narrower row:** *sand* and *dust* on 🏜️ *desert*; *smoke* on 🚬 *cigarette*; *weapon* on 🗡️ *dagger*; *wall* on 🧱 *brick*; *stone* on 🪨 *rock* (fine, same thing). Compounds on these heads read off the narrower label.
+- **Generic words that are compounds, so they cannot head:** *cup* (teacup, mug), *roof*, *fence*, *pipe*. No free emoji pictures them; each needs a non-emoji seed or a retitle.
+- **Gloss clashes:** *orange* the fruit (🍊 *tangerine*) against 🟠 *orange* the colour.
 
 ## Open questions
 
