@@ -1,6 +1,6 @@
 # Proposal: prove one syntax tree per sentence
 
-**Status:** IN PROGRESS (phase 0 done on a branch; nothing merged)  
+**Status:** IN PROGRESS (phase 0 merged)  
 **Related:** none  
 **Design authority:** the grammar pages own every reading. This note covers **parser and test tooling** only. Every attachment rule the work turns up goes to the owning grammar page, or to [design-decisions.md](../meta/design-decisions.md) when a form is ruled out on purpose.
 
@@ -38,7 +38,7 @@ Checks that only **reject** a tree (`enforce.ts`, force pairs, a second stance w
 
 ## Phase 0 results (2026-10-08)
 
-Phase 0 built the measuring tools and changed no parser behavior. Everything is on the `allstar-lookahead` branch (worktree `tmp/allstar`), not yet committed.
+Phase 0 built the measuring tools and changed no parser behavior. Merged to main.
 
 - **`npm run grammar-check`** (`scripts/grammar-check.ts`, `src/grammar-check/`). It exports the parser's grammar as BNF with every gate deleted, builds canonical LR(1) tables, and groups the conflicts by decision. It also counts the gate-free trees of every doc sentence the parser accepts and names the decision where two trees part. It only reports and never fails. It runs in about 6 s (LR(1) 44 ms, the doc pass the rest). Unit tests cover a dangling else, a clean list, and the split-run shape.
 - **`npm run parse-snapshot -- --ref <ref>`** (`scripts/parse-snapshot.ts`). It runs the parser at a git ref and the working tree's parser over this checkout's doc spans, and fails on any difference. Checked against a deliberately broken gate, it caught 3 changed spans.

@@ -8,6 +8,8 @@
     "build": "node scripts/build.mjs",
     "dev": "vitepress dev docs/grammar",
     "typecheck": "tsc --noEmit",
+    "grammar-check": "tsx scripts/grammar-check.ts",
+    "parse-snapshot": "tsx scripts/parse-snapshot.ts",
     "lint:agazan": "tsx scripts/lint-agazan-docs.ts",
     "docs:publish": "vitepress build docs/grammar && tsx scripts/publish-docs-extras.mjs",
     "docs:preview": "vitepress preview docs/grammar",
