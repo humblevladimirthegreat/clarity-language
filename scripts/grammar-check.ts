@@ -22,7 +22,7 @@ import { countDerivations } from "../src/grammar-check/derivations.js";
 import { buildLr1, groupConflicts } from "../src/grammar-check/lr1.js";
 import { enforceTokens, enforceTones } from "../src/parse/enforce.js";
 import { loadDefaultTables } from "../src/parse/index.js";
-import { parseSentenceTokens, sentenceGrammar, takeAmbiguityReports } from "../src/parse/sentence-parser.js";
+import { markContext, parseSentenceTokens, sentenceGrammar, takeAmbiguityReports } from "../src/parse/sentence-parser.js";
 import { allTokens } from "../src/parse/tokens.js";
 import { tokenizeUtterance } from "../src/parse/tokenize.js";
 
@@ -66,7 +66,7 @@ for (const { file, text } of docSpans()) {
     continue; // Rejected by the parser: nothing to compare.
   }
   parsed += 1;
-  const names = [...tokens.map((t) => t.tokenType.name), "EOF"];
+  const names = [...markContext(tokens).map((t) => t.tokenType.name), "EOF"];
   const result = countDerivations(bnf, names);
   if (result.cyclic) cyclic += 1;
   if (result.count === 0) {

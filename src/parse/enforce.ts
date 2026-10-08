@@ -6,7 +6,7 @@
  * the lexicon (poles, needs), on the clause as a whole, or on resolve. Each one
  * throws a {@link ConstructionError} that names the rule and the page teaching it.
  */
-import type { IToken } from "chevrotain";
+import { tokenMatcher, type IToken, type TokenType } from "chevrotain";
 
 import type { ClassifyTables } from "./classify.js";
 import { ARROW_ROOTS, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChannel, isStandIn } from "./classify.js";
@@ -16,18 +16,38 @@ import { CLOSED } from "../closed-roots.js";
 import { isGenericPronoun, isTopicPronoun, ROLE_PRONOUN_ROOTS } from "./resolve.js";
 import { parseHookCompoundCite } from "./hook-compounds.js";
 import type { HookJob } from "./hook-jobs.js";
-import { SentenceParseError } from "./sentence-parser.js";
+import { markContext, SentenceParseError } from "./sentence-parser.js";
 import {
+  B,
   Bang,
   classifyTokenBranch,
+  D,
+  G,
+  HostedB,
   IslandClose,
   IslandOpen,
   isLexWordPayload,
+  JoinB,
+  JoinD,
+  JoinV,
+  JoinZ,
   Linker,
+  OdoB,
+  OdoD,
+  OdoZ,
   Period,
   QMark,
+  TagB,
+  TagD,
+  TagZ,
   Tone,
   type TokenPayload,
+  V,
+  W,
+  WritingSpanB,
+  WritingSpanD,
+  WritingSpanZ,
+  Z,
 } from "./tokens.js";
 import { isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, visitUnit, type AstNode, type Visitor } from "./ast-walk.js";
 import { forcePairKind, KIND_SERIES, RANK_SERIES } from "./series.js";
@@ -953,6 +973,46 @@ function deniedUniversalFence(coord: NpCoord): boolean {
     denial!.join.family.series === "u" &&
     denial!.join.ending !== "r"
   );
+}
+
+/** The words that head a phrase of each slot, and the join that closes a list of them. */
+const PHRASE_SLOTS: { heads: TokenType[]; join: TokenType }[] = [
+  { heads: [Z, OdoZ, WritingSpanZ, TagZ], join: JoinZ },
+  { heads: [D, OdoD, WritingSpanD, TagD], join: JoinD },
+  { heads: [B, OdoB, WritingSpanB, TagB], join: JoinB },
+  { heads: [V], join: JoinV },
+];
+
+const isAny = (token: IToken, types: TokenType[]): boolean => types.some((type) => tokenMatcher(token, type));
+/** Words that describe the phrase before them, so they sit between its head and the next phrase. */
+const DESCRIBING = [G, W, HostedB];
+
+/**
+ * Name the rule behind a parse failure on a noun or verb right after a phrase of the same slot (joins.md#right-close):
+ * a join word before its conjuncts, or two nouns of one role (or two verbs) with no join after them.
+ */
+export function diagnoseParseError(input: IToken[], error: unknown): void {
+  if (!(error instanceof SentenceParseError)) return;
+  const failed = (error.parserErrors[0] as { token?: IToken } | undefined)?.token;
+  const tokens = markContext(input);
+  const at = tokens.findIndex((token) => failed && token.payload === failed.payload);
+  const slot = PHRASE_SLOTS.find((s) => at > 0 && isAny(tokens[at]!, s.heads));
+  if (!slot) return;
+  const previous = (from: number): number => {
+    let i = from;
+    while (i >= 0 && isAny(tokens[i]!, DESCRIBING)) i -= 1;
+    return i;
+  };
+  const i = previous(at - 1);
+  const before = tokens[i];
+  if (!before) return;
+  const run = `${before.image} ${tokens[at]!.image}`;
+  if (tokenMatcher(before, slot.join)) {
+    const item = tokens[previous(i - 1)];
+    if (!item || !isAny(item, [...slot.heads, slot.join])) throw new ConstructionError("leftFence", before.image);
+    throw new ConstructionError("joinlessRun", run);
+  }
+  if (isAny(before, slot.heads)) throw new ConstructionError("joinlessRun", run);
 }
 
 function enforceLeadingFence<T extends { join?: LexWord }>(parts: T[], isEmpty: (part: T) => boolean): void {

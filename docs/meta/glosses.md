@@ -448,9 +448,9 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Numbered alternative + unmet pleasure
 
-> `xrebul zehegom grewol zamunx thozothur.`
+> `xrebul zehegom grewol. zamunx thozothur.`
 >
-> x-starting-with | [z-problem | g-1st] | z-speaker-x | th-pleasure-unmet-passing
+> x-starting-with | [z-problem | g-1st] . z-speaker-x | th-pleasure-unmet-passing
 >
 > "First problem: we're not enjoying this."
 

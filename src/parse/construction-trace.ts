@@ -130,9 +130,24 @@ function addToken(token: IToken, out: Set<string>): void {
  * because each slot is taught in its own section; a noun package and a join close are one lesson at every slot.
  */
 function traceRule(name: string): string {
-  if (/^[zdb]Package$/.test(name)) return "npPackage";
+  if (/^[zdb](Package|Noun|StandIn|Tag)$/.test(name) || name === "citation") return "npPackage";
+  if (/^unitAfter[A-Z]$/.test(name)) return "unit";
+  if (name === "vpVerb") return "vpCoordPart";
+  if (name === "gSingle") return "gCoordPart";
+  if (name === "hSingle" || name === "hGrounds") return "hCoordPart";
+  if (name === "hStandIn" || name === "barUnit" || name === "barStandIn") return "hUnitRule";
+  if (/^[zdb]Coord(Part)?Grounds$/.test(name)) return name.replace("Grounds", "");
   if (/^[zdb]JoinClose$/.test(name)) return "npJoinClose";
   return name;
+}
+
+/** Child keys of a noun list's part that are one lesson at every slot (`npCoordPart.itemHook`). */
+const SLOTLESS_PART_KEYS = new Set(["itemHook", "itemHookBound", "groupTag"]);
+
+/** The registry id of a CST child key under a rule. */
+function traceId(rule: string, key: string): string {
+  const name = traceRule(rule);
+  return `sentence.${/^[zdb]CoordPart$/.test(name) && SLOTLESS_PART_KEYS.has(key) ? "npCoordPart" : name}.${key}`;
 }
 
 /** A leading act word is one grammar label for two lessons; its trace name carries the pair (`ForceEcho` / `ForceAnswer`). */
@@ -153,7 +168,7 @@ export function addCstConstructions(node: CstNode, out: Set<string>): void {
         const name = leadForceName(element);
         if (name) out.add(`sentence.leftEdge.${name}`);
       }
-    } else out.add(`sentence.${traceRule(node.name)}.${key}`);
+    } else out.add(traceId(node.name, key));
     for (const element of elements) {
       if (isCstNode(element)) addCstConstructions(element, out);
       else addToken(element, out);
@@ -179,7 +194,7 @@ export function sentenceGrammarKeys(grammar: Record<string, { definition: unknow
       const add = (key: string): void => {
         if (rule === "leftEdge" && key === "LeadForce") {
           for (const name of Object.values(LEAD_FORCE_NAMES)) keys.add(`sentence.leftEdge.${name}`);
-        } else keys.add(`sentence.${traceRule(rule)}.${key}`);
+        } else keys.add(traceId(rule, key));
       };
       if (kind === "NonTerminal") {
         add(def.label ?? def.nonTerminalName!);

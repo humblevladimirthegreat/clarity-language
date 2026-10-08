@@ -566,7 +566,7 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 | *a lying type* | `zazawan valahathul.` | the type-claim |
 | *introduction* (the act) | `zalahen velehal dazawan thegem bahaben.` | Alahen learns Azawan, Ahaben makes it happen |
 | *introduction* (opening of a text) | `zogodal gobom bugul` | the first part of a book |
-| *unemployment* | `zazawan zamolameval gul.` | not in paid production |
+| *unemployment* | `zazawan gamolameval gul.` | not in paid production |
 
 > `zalahen dugul vebel bazawan. zazawan deber vahahal.`
 >

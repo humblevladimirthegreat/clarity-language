@@ -49,6 +49,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
 
   "clause.clauseItem": { anchor: "word-endings.md#greeting", summary: "clause, or a stand-in clause join" },
   "clause.midJoin": { anchor: "joins.md#clause-joins", summary: "/x/ join between clauses" },
+  "unit.unit": { anchor: "word-endings.md#greeting", summary: "the next unit of the clause" },
   "clauseItem.unit": { anchor: "word-endings.md#greeting", summary: "role-lettered unit in a clause" },
   "clauseItem.standIn": { anchor: "joins.md#clause-joins", summary: "standalone /x/ join as a stand-in clause" },
   "bodyClause.crossJoin": { anchor: "joins.md#clause-joins", summary: "/x/ join linking the prior sentence to this one" },
@@ -67,18 +68,18 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "islandUnit.unit": { anchor: "spans.md#scope-islands", summary: "units inside an island" },
 
 
-  "zCoord.zCoordPart": { anchor: "word-endings.md#greeting", summary: "/z/ phrase parts" },
-  "dCoord.dCoordPart": { anchor: "clause.md#direct-object-d", summary: "/d/ phrase parts" },
-  "bCoord.bCoordPart": { anchor: "clause.md#extra-nouns", summary: "/b/ phrase parts" },
+  "zCoord.zCoordPart": { anchor: "joins.md#and-lists-a", summary: "/z/ phrase parts" },
+  "dCoord.dCoordPart": { anchor: "joins.md#right-close", summary: "/d/ phrase parts" },
+  "bCoord.bCoordPart": { anchor: "joins.md#right-close", summary: "/b/ phrase parts" },
   "zCoordPart.npConjunct": { anchor: "word-endings.md#greeting", summary: "/z/ conjunct" },
   "zCoordPart.bar": { anchor: "comparatives.md#bars", summary: "/th/ stance word as a rank fence's bar" },
   "zCoordPart.npJoinClose": { anchor: "joins.md#and-lists-a", summary: "/z/ join after its conjuncts" },
   "zCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /z/ join" },
-  "dCoordPart.npConjunct": { anchor: "clause.md#direct-object-d", summary: "/d/ conjunct" },
+  "dCoordPart.npConjunct": { anchor: "joins.md#right-close", summary: "/d/ conjunct" },
   "dCoordPart.bar": { anchor: "comparatives.md#bars", summary: "/th/ stance word as a rank fence's bar" },
   "dCoordPart.npJoinClose": { anchor: "joins.md#right-close", summary: "/d/ join after its conjuncts" },
   "dCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /d/ join" },
-  "bCoordPart.npConjunct": { anchor: "clause.md#extra-nouns", summary: "/b/ conjunct" },
+  "bCoordPart.npConjunct": { anchor: "joins.md#right-close", summary: "/b/ conjunct" },
   "bCoordPart.bar": { anchor: "comparatives.md#bars", summary: "/th/ stance word as a rank fence's bar" },
   "bCoordPart.npJoinClose": { anchor: "joins.md#right-close", summary: "/b/ join after its conjuncts" },
   "bCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /b/ join" },
@@ -89,7 +90,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "npJoinClose.factor": { anchor: "comparatives.md#factor", summary: "ratio number after an equative scale" },
   "npJoinClose.sharedAfterJoin": { anchor: "joins.md#right-close", summary: "shared word after a noun join" },
 
-  "vpCoord.vpCoordPart": { anchor: "clause.md#who-acts-and-the-action", summary: "/v/ phrase parts" },
+  "vpCoord.vpCoordPart": { anchor: "joins.md#and-lists-a", summary: "/v/ phrase parts" },
   "vpCoordPart.V": { anchor: "clause.md#who-acts-and-the-action", summary: "verb" },
   "vpCoordPart.B": { anchor: "predication.md#scope-relative", summary: "hosted /b/ after a pair-scope verb" },
   "vpCoordPart.vJoinClose": { anchor: "joins.md#and-lists-a", summary: "/v/ join after its verbs" },
@@ -112,7 +113,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "gJoinClose.W": { anchor: "joins.md#respectively", summary: "respectively /w/ before an adjective join word" },
   "gJoinClose.JoinG": { anchor: "joins.md#and-lists-a", summary: "/ɡ/ join fence" },
 
-  "hCoord.hCoordPart": { anchor: "clause.md#adverbs-h", summary: "/h/ phrase parts" },
+  "hCoord.hCoordPart": { anchor: "join-across-roles.md#stance-joins", summary: "/h/ phrase parts" },
   "hCoordPart.hUnitRule": { anchor: "clause.md#adverbs-h", summary: "adverb or stance word" },
   "hCoordPart.hJoinClose": { anchor: "join-across-roles.md#stance-joins", summary: "/h/ join after its adverbs" },
   "hCoordPart.standaloneJoin": { anchor: "join-across-roles.md#standalone-stance-joins", summary: "standalone stance /th/ join" },
@@ -130,13 +131,16 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "hookUnit.frame": { anchor: "sakes.md#contrary-to-stance", summary: "uem + a /th/ stance: the frame the event goes contrary to" },
 
   "npPackage.gPackage": { anchor: "clause.md#adjectives-ɡ", summary: "adjective on a noun (gl- before, /ɡ/ after)" },
-  "npPackage.itemHook": { anchor: "joins.md#right-close", summary: "hook on one join item, before the join word" },
-  "npPackage.itemHookBound": { anchor: "joins.md#right-close", summary: "/b/ of a hook on one join item" },
   "npPackage.Z": { anchor: "word-endings.md#greeting", summary: "/z/ noun" },
   "npPackage.D": { anchor: "clause.md#direct-object-d", summary: "/d/ noun" },
   "npPackage.B": { anchor: "clause.md#extra-nouns", summary: "/b/ noun" },
   "npPackage.Odo": { anchor: "dependents.md#dependent-clauses", summary: "stand-in as a noun" },
   "npPackage.WritingSpan": { anchor: "spans.md#writing", summary: "written span as a noun" },
+  "npCoordPart.itemHook": { anchor: "joins.md#right-close", summary: "hook on the last join item, before the join word" },
+  "npCoordPart.itemHookBound": { anchor: "joins.md#right-close", summary: "/b/ of a hook on the last join item" },
+  "npCoordPart.groupTag": { anchor: "pronouns.md#tag-pronouns", summary: "tag -l naming a closed list" },
+  "npPackage.Citation": { anchor: "word-endings.md#greeting", summary: "word with no role letter, with what describes it" },
+  "npPackage.tag": { anchor: "pronouns.md#tag-pronouns", summary: "tag -l naming the noun before it" },
 
   "hUnitRule.boundJoinTail": { anchor: "relations.md#locative-relations", summary: "hosted /b/ slot filled by a join" },
   "gPackage.boundJoinTail": { anchor: "relations.md#locative-relations", summary: "hosted /b/ slot on /ɡ/ filled by a join" },
@@ -171,8 +175,9 @@ export const TOKEN_CONSTRUCTIONS: Record<TokenBranch, ConstructionEntry> = {
   yVocative: { anchor: "speech-moves.md#vocative", summary: "/y/ name (-n), named span, or resume (-r): a vocative" },
   yInterjection: { anchor: "speech-moves.md#interjections-reactions", summary: "/y/ word in -l / -m, or an unnamed span: an interjection" },
   linker: { anchor: "dependents.md#continue-x", summary: "/x/ content word: a sentence linker, or a topic word" },
+  tagAssign: { anchor: "pronouns.md#tag-pronouns", summary: "bare tag -l: names the phrase before it, or a new referent" },
   content: { anchor: "phonology.md#word-edges", summary: "content word in its role slot" },
-  citationFallback: { anchor: "phonology.md#word-edges", summary: "prefix-less citation read as a noun" },
+  citationFallback: { anchor: "phonology.md#word-edges", summary: "word with no role letter: names, filling no slot" },
 };
 
 type FamilyKind = MorphWordFamily["kind"];
@@ -649,6 +654,7 @@ export const REJECTIONS = {
   pointerOwnSlot: { anchor: "pronouns.md#themself", summary: "a self pointer (e) names another slot of its own clause, not the one it fills" },
   clauseSingleItem: { anchor: "joins.md#clause-joins", summary: "a clause join goes between two clauses; to deny or focus one clause, put the join on its verb or noun (vul, zal)" },
   leftFence: { anchor: "joins.md#right-close", summary: "a join word closes its conjuncts; it never comes before them" },
+  joinlessRun: { anchor: "joins.md#right-close", summary: "two nouns of one role, or two verbs, side by side close with a join word (zazawan zalahen zal)" },
   emptyIsland: { anchor: "spans.md#scope-islands", summary: "a scope island needs words between its edges" },
   islandOneSlot: { anchor: "spans.md#scope-islands", summary: "a scope island holds at most one phrase: /z/, /d/, /b/, /v/, or a /ɡ/ stack" },
   islandSlotRole: { anchor: "spans.md#scope-islands", summary: "a scope island needs one /z/, /d/, /b/, /v/, or /ɡ/ phrase after its binder, and never splits a host from its /b/" },

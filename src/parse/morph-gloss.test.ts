@@ -256,8 +256,8 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("numbered alternative + unmet pleasure", () => {
     expectLine(
-      "xrebul zehegom grewol zamunx thozothur.",
-      "x-starting-with | [z-problem | g-1st] | z-speaker-x | th-pleasure-unmet-passing",
+      "xrebul zehegom grewol. zamunx thozothur.",
+      "x-starting-with | [z-problem | g-1st] . z-speaker-x | th-pleasure-unmet-passing",
     );
   });
 

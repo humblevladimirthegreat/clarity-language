@@ -491,8 +491,8 @@ Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftove
 
 When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`), not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`grewol`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
 
-> `zazawan zegehum gredul vezebel.`
-> z-Azawan | [z-solution | g-2nd] | v-tell
+> `zazawan degehum gredul vezebel.`
+> z-Azawan | [d-solution | g-2nd] | v-tell
 >
 > "Azawan names solution 2."
 

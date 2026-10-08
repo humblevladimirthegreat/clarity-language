@@ -47,6 +47,20 @@ export const W = wordToken("W");
 export const WPlain = wordToken("WPlain", [W]);
 export const WAsOf = wordToken("WAsOf", [W]);
 export const H = wordToken("H");
+/**
+ * A `/b/` right after an `/h/`, `/th/` or `/ɡ/` word: it completes that word (clause.md § extra nouns), so it is never a
+ * `/b/` phrase of its own. Likewise a stand-in right after an `/h/` or `/th/` word. Set by `markContext`.
+ */
+export const HostedB = wordToken("HostedB");
+export const HostedOdo = wordToken("HostedOdo");
+/** A `/th/` stance word that is a rank fence's bar: it runs up to the list's rank join (comparatives.md#bars). Set by `markContext`. */
+export const Bar = wordToken("Bar");
+/** A bare tag **-l** (`zwal`): it names the phrase right before it, or a new referent (pronouns.md#tag-pronouns). */
+export const TagZ = wordToken("TagZ");
+export const TagD = wordToken("TagD");
+export const TagB = wordToken("TagB");
+/** A word with no role letter (a citation form, or a bare `/x/` number): it names, filling no slot (word-endings.md#citation-forms). */
+export const Citation = wordToken("Citation");
 /** A forward stand-in, by the slot it fills: a noun-phrase head (`zarl`, `darl`, `barl`) or another slot. */
 export const Odo = wordToken("Odo");
 export const OdoZ = wordToken("OdoZ", [Odo]);
@@ -89,6 +103,13 @@ export const allTokens = [
   WPlain,
   WAsOf,
   H,
+  HostedB,
+  HostedOdo,
+  Bar,
+  Citation,
+  TagZ,
+  TagD,
+  TagB,
   Odo,
   OdoZ,
   OdoD,
@@ -129,6 +150,7 @@ const CONTENT_BY_POS = {
   th: H,
 } as const;
 
+const TAG_BY_POS: Partial<Record<string, AgazanTokenType>> = { z: TagZ, d: TagD, b: TagB };
 const ODO_BY_POS: Partial<Record<string, AgazanTokenType>> = { z: OdoZ, d: OdoD, b: OdoB };
 const WRITING_SPAN_BY_POS: Partial<Record<string, AgazanTokenType>> = { z: WritingSpanZ, d: WritingSpanD, b: WritingSpanB };
 
@@ -162,6 +184,7 @@ export type TokenBranch =
   | "yVocative"
   | "yInterjection"
   | "linker"
+  | "tagAssign"
   | "content"
   | "citationFallback";
 
@@ -207,12 +230,14 @@ export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; bra
   if (pos === "x" && isLinkerWord(word)) return { type: Linker, branch: "linker" };
 
   if (pos === "w" && isAsOfOverlay(word)) return { type: WAsOf, branch: "content" };
+  const tag = family.kind === "tag" && word.ending === "l" && !word.plural && pos ? TAG_BY_POS[pos] : undefined;
+  if (tag) return { type: tag, branch: "tagAssign" };
   if (pos && pos in CONTENT_BY_POS) {
     return { type: CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS], branch: "content" };
   }
 
-  // Citation / unknown without PoS — treat as generic noun slot for parsing.
-  return { type: Z, branch: "citationFallback" };
+  // Citation / unknown without PoS: it names, and fills no slot.
+  return { type: Citation, branch: "citationFallback" };
 }
 
 export function classifyToTokenType(word: LexWord): AgazanTokenType {

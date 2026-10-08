@@ -180,8 +180,8 @@ describe("lintAgazanSpans", () => {
   });
 
   it("parses multi-word phrases unless marked a fragment", () => {
-    assert.equal(lintAgazanSpans("`zul zazawan`", tables)[0]?.kind, "phrase");
-    assert.deepEqual(lintAgazanSpans("<!-- lint: fragment -->`zul zazawan`", tables), []);
+    assert.equal(lintAgazanSpans("`vowogal glugol`", tables)[0]?.kind, "phrase");
+    assert.deepEqual(lintAgazanSpans("<!-- lint: fragment -->`vowogal glugol`", tables), []);
     assert.equal(lintAgazanSpans("<!-- lint: skip -->`wo zo yo`", tables)[0]?.kind, "bad-marker");
   });
 

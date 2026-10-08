@@ -53,6 +53,8 @@ Whatever the join, the whole list fills one role in the clause. A [role pointer]
 
 Write the items first, then the join. Readers treat the items up to that join as one role in the clause, filled by several members. A flat list needs only one join, at its end.
 
+The join is never optional. Two nouns of the same role side by side, or two verbs, must close with one, because only the join says how the items combine: *Azawan and Alahen walk* is `zazawan zalahen zal vowogal.`, never the two names alone. The join takes every item right before it, back to the last word of another role. Adjectives and adverbs are different: a row of them needs no join, because each one describes on its own ([clause](clause.md#adjectives-ɡ)).
+
 Two full clauses are the one exception: the join that starts with `x` goes **between** them, so you hear how the clauses relate before the second one starts. See [clause joins](#clause-joins).
 
 Objects and extra nouns list the same way. Two `/d/` objects close with `dal`; two `/b/` recipients close with `bal`.

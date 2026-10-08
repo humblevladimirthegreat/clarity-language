@@ -1,7 +1,7 @@
 import type { IToken } from "chevrotain";
 
 import { collectAmbiguity } from "./ambiguity.js";
-import { enforceResult, enforceTokens, enforceTones } from "./enforce.js";
+import { diagnoseParseError, enforceResult, enforceTokens, enforceTones } from "./enforce.js";
 import type { ClassifyTables } from "./classify.js";
 import { resolve } from "./resolve.js";
 import { addCstConstructions, addReadingConstructions, addResolveConstructions } from "./construction-trace.js";
@@ -22,7 +22,14 @@ export function parseWithTables(
   const constructions = options.constructions ? new Set<string>(toned.constructions) : undefined;
   let utterances: ParseResult["utterances"] = [];
   if (tokens.length > 0) {
-    const { result, cst } = parseSentenceTokensWithCst(tokens);
+    let parsed: ReturnType<typeof parseSentenceTokensWithCst>;
+    try {
+      parsed = parseSentenceTokensWithCst(tokens);
+    } catch (error) {
+      diagnoseParseError(tokens, error);
+      throw error;
+    }
+    const { result, cst } = parsed;
     if (constructions) addCstConstructions(cst, constructions);
     utterances = result.utterances;
   }

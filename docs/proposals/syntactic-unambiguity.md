@@ -1,6 +1,6 @@
 # Proposal: prove one syntax tree per sentence
 
-**Status:** IN PROGRESS (phase 0 and batches 1–2 merged)  
+**Status:** IN PROGRESS (phase 0 and batches 1–3 done)  
 **Related:** none  
 **Design authority:** the grammar pages own every reading. This note covers **parser and test tooling** only. Every attachment rule the work turns up goes to the owning grammar page, or to [design-decisions.md](../meta/design-decisions.md) when a form is ruled out on purpose.
 
@@ -97,7 +97,26 @@ Batches, each merged to main on its own with `npm test` green and `npm run parse
 
    The raw conflict count rose only because canonical LR(1) builds a separate state for each noun-slot context, and each conflict that is left is counted once per state. Counted by decision, with the slot copies folded together, conflicts fell by a third. Every remaining doc fork is cause 3 (join-less runs: `clauseItem` on `H B` / `G B`, `zCoord` on `Z Z zal`, `hCoord` on `H H`, `gCoord` on `G G`), cause 4 (hosting), or cause 6 (`sentence.OR`, 48 + 7 sentences). Those belong to batches 3 and 5.
 3. **Lists and hosting** (causes 3, 4). Both rules are documented; small doc clarifications may come with them.
-4. **Finer token types** (cause 8 and the payload gates, cause 7's token split). Mechanical.
+   **Done (2026-10-08).** The editor decided open question 4: a join is required for more than one noun in a slot, and for more than one verb ([joins § right-close](../grammar/joins.md#right-close) now says so). `parse-snapshot` against batch 2: 7 of 2,658 spans differ, all intended (below).
+   - **Lists are closed.** Each `/z/` / `/d/` / `/b/` / `/v/` / `/ɡ/` / `/h/` list is one or more parts, each closed by its join. A phrase with no join is one noun (`zNoun`), one forward stand-in (`zStandIn`), one bare tag (`zTag`), one verb (`vpVerb`), one adjective (`gSingle`) or one adverb (`hSingle`). The item hook (`em` + `/b/` on the last item) is part of the list, right before its bars and join, instead of an optional tail on every noun with a gate.
+   - **The clause is a chain of units** (`unit`, `unitAfterZ`, …): each unit rule holds one unit and the rest of the clause, and what may follow depends on the unit before. No two noun phrases of one slot, and no two verb phrases, stand side by side. No `/ɡ/` or `/h/` list follows another `/ɡ/` or `/h/` unit, since a list takes every item right before its join. A stand-in, an `/h/` hosting one (`hGrounds`), or a list whose bar hosts `barl` (`zCoordGrounds`, [comparatives § bars](../grammar/comparatives.md#bars)) ends the main clause, so the next unit starts fresh. `chainUnits` reads the chain back into a flat unit list, so the AST keeps its shape.
+   - **Context tokens** (`markContext`, run before parsing): a `/b/` right after an `/h/`, `/th/` or `/ɡ/` word, or after a pair-scope verb, is `HostedB`; a stand-in right after an `/h/` or `/th/` word is `HostedOdo` ([clause § extra nouns](../grammar/clause.md#extra-nouns)). The two words that take no `/b/` keep the old reading: a hosted slot's cardinal amount, and an equative's factor. **Logged for the editor:** no page says what a `/b/` right after one of those is. Read literally, clause.md would host it on the amount or factor, which has no `/b/` slot; the parser keeps it as a `/b/` phrase of its own, and no doc sentence has one. A stance word that runs up to its own list's rank join is a `Bar` (the old `rankBarAhead` scan, now token-level). Each rule reads one neighbor, or one scan, from the word list, so it cannot add a tree.
+   - **Payload tokens:** a word with no role letter is `Citation` (it names and fills no slot, so `azawan odogal.` is two units, not a list), and a bare tag **-l** is `TagZ` / `TagD` / `TagB`, which names the noun before it, names a closed list after its join, or stands alone. This replaces `foldTags` and the group-tag repair after parsing.
+   - **Diagnosis:** a parse that fails on a noun or verb right after a phrase of its slot throws `joinlessRun` or `leftFence` (`diagnoseParseError`), not a raw Chevrotain message.
+   - **Tooling:** the BNF export gives structurally identical constructs one nonterminal (named after the first call site), and expands an `OR` of single tokens as a token set, as it already did for categories. Neither changes a tree count; both stop LR(1) from choosing between copies of the same empty run.
+   - **Snapshot changes:** four stand-in sentences (`gamadam zarl zazawan vowogal.` and three like it) now hand the noun after the stand-in to the dependent; before, it stayed in the main clause as a second item of the stand-in's list. Three citation spans (`azawan odogal.`, `xredul zazawan vehahel.`, `xrebal zazawan dagavulx vahahal.`) are separate units. Docs that broke the rule were fixed: [word-endings](../grammar/word-endings.md) (`zohun zaluden zal`), [say-amounts](../grammar/say-amounts.md) (`degehum`, an object), [say-people-places](../grammar/say-people-places.md) (`gamolameval gul`, a predicate), and `glosses.md` (a label and its clause as two sentences).
+   - **Beyond the docs** (every doc sentence with one word deleted, old parser against new): 282 now fail as `joinlessRun` / `leftFence`. Two other changes: an item hook needs its own list's join right after it (the old gate took any noun join), and a bar with no `/b/` before a number (`thevom gruwol zel`) no longer leaves an unclosed bar.
+
+   | Measure | Batch 2 | Batch 3 |
+   |---------|---------|---------|
+   | Exported grammar | 104 nonterminals, 198 productions, 32 token types | 148 nonterminals, 401 productions, 39 token types |
+   | LR(1), batch 3 exporter for both | 937 states, 814 conflicts from 107 decisions | 2,336 states, 3,386 conflicts from 171 decisions |
+   | Doc sentences with exactly one gate-free tree | 651 | **1,717** |
+   | … with two or more | 2,004, through 35 forks | **939**, through 56 forks |
+   | ALL(\*) runtime reports | 13 | 29 |
+
+   Doc forks fell by more than half. LR(1) conflicts rose, for a reason the batch exposes rather than adds: a lone noun and the first item of a list are now different rules, and only the join at the end tells them apart. The same holds for a verb and the first verb of a list. That is unambiguous but not LR(1) ([open question 2](#2-unambiguous-but-not-lr1-explained-conflicts-or-zero)); the fix is to left-factor (one package, then an optional list tail) once bars and verb items no longer need a scan. The largest remaining fork (`unit.OR1` alt 3, about 470 sentences: `zerehel goyem bagavul.`) is a plain `/ɡ/` after a noun: its adjective, or a `/ɡ/` unit of its own. The rule is taught, but the grammar can state it only once plain and `gl-` adjectives are different tokens (batch 4).
+4. **Finer token types** (cause 8 and the payload gates, cause 7's token split). Mechanical. Plain against `gl-` `/ɡ/` comes first: with it, the unit chain can rule out a plain `/ɡ/` unit right after a noun phrase.
 5. **Remaining gates**, family by family (the inventory above). A gate that chooses between two valid trees is a grammar decision: it is logged for the editor and lands with its grammar-page edit, never quietly kept in code. Causes 6 and 7 are decided here.
 6. **Make the check strict.** `grammar-check` fails on any conflict, with an allowlist for gates that only reject a tree, so a new gate fails until it is classified.
 
@@ -191,12 +210,11 @@ Each question has a recommendation. None of them needs a new grammar decision ex
 
 ### 4. Cause 3: is a run of same-role words without a join ever one list?
 
-**Recommendation: no. Every list rule requires its join, and a run with no join becomes a run of separate units, or stacked adjectives on one noun.**
+**Decided (2026-10-08): no, and it is not a sentence either.** More than one noun in a slot, or more than one verb, takes a join ([joins § right-close](../grammar/joins.md#right-close)). Adjectives and adverbs need none: each describes on its own.
 
-- **The docs say so.** [Joins](../grammar/joins.md) says the join after the items "is how you know the list has ended", and a flat list takes exactly one right-close join. [Clause](../grammar/clause.md) says each plain `/h/` or `/th/` word is its own unit. [Restrictors](../grammar/restrictors.md) treats two manner adverbs in a row as two separate descriptions of the act, not a list.
-- **The parser already agrees.** In today's ASTs, `zazawan zalahen vowogal.` gives two `/z/` units, `zazawan vowogal hadehum herobem.` gives two `/h/` units, and `zazawan gadadal gezebul.` gives one noun with two stacked adjectives. A list with no join never shows up in the output. Only the grammar's shape allows it, which is why the change should leave the snapshot empty.
-- **Rule shape:** `list → item+ JOIN`. Keep one or more items, not two or more, because a single item followed by a join is valid: single-item *not X* ([denying a list](../grammar/joins.md#negation-u)). A join word with no items before it is a stand-in, already its own rule. Runs with no join belong to the clause's unit loop, or to the noun package's adjective loop for `/ɡ/`.
-- **A related question this will surface (not part of this proposal):** two `/z/` units with no join in one clause parse fine today. Whether that is meaningful (apposition?) or should be rejected is a question for [clause](../grammar/clause.md). Rejecting it would be a check that only rejects trees, so it never affects the proof either way.
+- **What the parser did before.** The recommendation here assumed the AST already split join-less runs into separate units. It did not: `zazawan zalahen vowogal.` gave one `/z/` phrase whose single part had two items and no join. Only `/h/` runs came out as separate units, and `/ɡ/` runs stacked on a noun.
+- **Rule shape:** `list → part+`, with `part → item+ bar* JOIN` or a lone join, and the clause chain forbids two phrases of one slot side by side. A single item followed by a join stays valid (single-item *not X*, [denying a list](../grammar/joins.md#negation-u)).
+- **Out of scope:** two `/z/` phrases with something between them (`zavahal al zazawan`, a range hook) stay grammatical.
 
 ## Costs and risks
 
