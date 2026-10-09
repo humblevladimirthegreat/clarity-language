@@ -1,5 +1,5 @@
 /**
- * Tooling for the head-by-head compound pass (docs/proposals/compound-fill.md).
+ * Tooling for the head-by-head compound pass (docs/meta/lexicon.md, "Adding compounds").
  * Roots are named by seed or English label, never by spelling.
  *
  * Run: npm run compound-fill -- heads                       (heads by compound count)

@@ -419,7 +419,7 @@ To talk **about** an argument rather than make one, use the dictionary words. Ea
 
 > `zebehamalodel gebehamebadal gul.`
 >
-> z-argument | [g-sound | g-not]
+> z-argument | [g-well-founded | g-not]
 >
 > "The argument isn't sound." (a step fails, or a premise is false)
 

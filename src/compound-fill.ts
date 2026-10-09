@@ -1,5 +1,5 @@
 /**
- * Helpers for the head-by-head compound dictionary pass (proposal `compound-fill.md`):
+ * Helpers for drafting dictionary compounds one head at a time (docs/meta/lexicon.md, "Adding compounds"):
  * resolve a root by seed or English label, report what a word is already covered by,
  * audit a head's compounds, and turn seed-keyed draft rows into validated stems.
  */

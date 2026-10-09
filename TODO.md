@@ -11,6 +11,7 @@ use [skip-cd] for amplify to not deploy.
 -claritish editor
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -parser can optionally output translation guidance
+-review lexicon concrete, ensure it is actually concrete (bad example: honor)
 
 save for near end of limit resets:
 -final exam

@@ -90,9 +90,41 @@ Moving a sense (an overlay) from one published row to another is a **replacement
 4. By hand, replace every doc use of the **old** root in the moved sense with the new root, and fix the morph glosses and English wording. Leave uses of the old row's ordinary sense alone. Check with `node scripts/find.mjs` or grep for the old sense forms.
 5. `npm run build` and `npm test`.
 
-## Compound heads
+## Dictionary compounds
 
-A row in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv) takes the most specific head root that fits: *sparrow* is built on 🐦 *bird*, not 𓄛 *animal*; *basil* on 🌿 *herb*. A generic head (𓄛 *animal*, 𓉐 *room*, 🫙 *jar*) heads a compound only when no narrower root covers the whole class (*pet*, *livestock*).
+A row in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv) is one stem: **left root + boundary letter + head root** ([lexical compounds](../grammar/x-compounds.md#lexical-compounds)). The `join` column is the boundary letter, and it picks the sense of the **left** root only: **-l** when its concrete sense narrows the head (*bed* **-l** *room* = *bedroom*), **-m** when its abstract sense does (*formality* **-m** *shoe* = *dress shoe*), **-n** / **-r** for a name or a resume. The whole-word ending added at use picks the sense of the entry: **-l** reads the row's `concrete`, **-m** its `abstract`. Fill `abstract` only when the head's abstract sense really carries over (*bedroom* **-m** = *sanctum*), never because the left root has one.
+
+### When a compound earns a row
+
+Add a row only when all of these hold:
+
+1. **It is one thing**, not a list or a thing plus a property (*a blue dog* is two words).
+2. **It is a fixed kind** that English or most languages name with one word or a fixed phrase. Pairings made on the spot stay live `x` compounds.
+3. **No root already has the sense** as `concrete`, `abstract` or alias. Many specific kinds are seeds already (*garlic*, *owl*).
+4. **The head is the most specific root that fits**, and the entry is a *kind of* the head's concrete.
+5. **The left root narrows the head in a way a learner can guess**, or the mnemonic makes the link easy to remember, never through an English pun ([no English puns](#no-english-puns)).
+
+Some English words stay out by design: kin terms are [kin generations](../grammar/numbers-applied.md#kin-generations), doers are [role compounds](../grammar/roles.md#role-compounds), young and sexed animals use `/ɡ/`, and a tie between people is a [social relation](../grammar/relations.md#social-relations) unless English has a fixed noun for the person (*friend*).
+
+### Compound heads
+
+A compound takes the most specific head root that fits: *sparrow* is built on 🐦 *bird*, not 𓄛 *animal*; *basil* on 🌿 *herb*. A generic head (𓄛 *animal*, 🫙 *jar*, 🧺 *basket*) heads a compound only when no narrower root covers the whole class (*pet*, *livestock*). A head's `concrete` label should name the whole category (🍈 *fruit*, 🥫 *metal*, 🥢 *stick*, 🧪 *tube*), so learners read the stem as a kind of it.
+
+A compound cannot head another compound. *Cup*, *roof*, *fence*, *river* and the other compounds stay leaves; a kind of cup goes on 🥣 *bowl* directly or stays a live `x` compound.
+
+When a needed head is missing, add it before writing its compounds, since moving compounds onto a new head later respells their stems. Prefer **retitling** a row whose emoji already pictures the generic sense and which has little to lose (🫐 *blueberry* → *berry*, 🥢 *chopsticks* → *stick*); the old specific sense becomes a compound. A retitle keeps the row's spelling. Otherwise add a seed ([what can be a seed](#what-can-be-a-seed)) and place it with `convert-word`.
+
+### Adding compounds
+
+`npm run compound-fill` drafts compounds one head at a time, naming roots by seed or English label, never by spelling:
+
+1. `heads` lists heads by compound count; `heads 🐦 🐟` shows each head's row and compounds.
+2. `synsets <word>` lists WordNet noun senses; `candidates <synset> [--depth N --max-rank N] [--triage]` lists hyponyms by frequency and hides covered senses.
+3. `check <word>…` reports exact hits on a root, alias, compound or overlay gloss. For near matches use `find-english --kind root` and `lexicon-search`.
+4. Write a draft CSV with the header `english,left,join,head,abstract,mnemonic`. The mnemonic opens *"<left> specifying <head> is …"*. `draft <file>` prints each stem, the validator's errors and extra warnings.
+5. `draft <file> --write` appends the rows, only when no row has an error. Then run `npm run check-compounds`, `npm test`, and `npm run cheat-sheet-blocks -- --write`.
+
+`check-compounds` rejects a stem that is not left + boundary + head, a bad boundary letter, an unpublished or non-content root, a stem that is already a root or splits into published roots more than one way, the same root on both sides, a gloss that is already a published or compound sense, and a missing gloss or mnemonic. It does not catch an ending-plus-stem form that also reads as an overlay plus a root; the morph-gloss lint in `npm test` does. If a stem splits two ways, pick a different left root; never respell a root to make the split unique.
 
 ## Core vocabulary column
 
