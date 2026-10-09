@@ -54,11 +54,11 @@ Each pass takes one domain and its head roots. Rows are named here by seed and E
 | Tools and devices | ⚙️ *machine*, 🧰 *tool*, 🔪 *knife*, 🔨 *hammer*, 🪔 *lamp*, 🕰️ *clock*, 📱 *phone* | engine, motor, pump, scissors-types, streetlight, headlight | done: 29 rows (wave 2), also on 🔩, ✂️ and the seedless *oven* |
 | Light | 🔆 *bright* (radiance), 🪔 *lamp* (source) | sunlight, moonlight, candlelight | done: 10 rows (wave 2) |
 | Games | 🎮 *game*, 🏀 *ball* | board game, card game, chess, tag | videogame |
-| Vehicles | 🚗 *car*, 🚤 *boat*, 🚢 *ship*, 🚆 *train*, 🚚 *truck*, ✈️ *airplane* | ferry, tram, cart, sailboat | van |
-| Land and water | ⛰️ *mountain*, 🟩 *field*, 🛣️ *road*, 🌊 *ocean*, 🏝️ *island*, 🟫 *ground* | lake, river, pond, path, street, meadow | hill, valley, floor |
+| Vehicles | 🚗 *car*, 🚤 *boat*, 🚢 *ship*, 🚆 *train*, 🚚 *truck*, ✈️ *airplane* | ferry, tram, cart, sailboat | done: 37 rows (wave 3), also on 🚃 *railcar*, 🚐, 🎈, 🛒, 🛷, 🚌 |
+| Land and water | ⛰️ *mountain*, 🟩 *field*, 🛣️ *road*, 🌊 *ocean*, 🏝️ *island*, 🟫 *ground* | lake, river, pond, path, street, meadow | done: 34 rows (wave 3), also on 🚰 *water*, 🕳️ *hole*, 🪨 *rock*. *Lake* is the abstract on 🛶, so it cannot head |
 | Materials | 🥫 *metal*, 𐂧 *cloth*, 🪵 *wood*, 🪨 *rock*, 📃 *paper* | iron, steel, silk, cotton, gravel | leather |
-| Body | ✋ *hand*, 🦶 *foot*, 🧑‍🦲 *head*, 👁️ *eye*, 👄 *mouth*, 🦴 *bone*, 🩸 *blood* | palm, heel, eyelid, jaw, rib, vein | shoulder |
-| Weather and time | 🌧️ *rain*, 🌬️ *wind*, 🌨️ *snow*, ☁️ *cloud*, 🌅 *day*, 🌃 *night* | drizzle, storm, breeze, morning, evening, weekday | afternoon |
+| Body | ✋ *hand*, 🦶 *foot*, 🧑‍🦲 *head*, 👁️ *eye*, 👄 *mouth*, 🦴 *bone*, 🩸 *blood* | palm, heel, eyelid, jaw, rib, vein | done: 32 rows (wave 3), also on ☝️ *finger*, 🙂, 👃, 👂, 🦷, 💪. 💇 is now *hair* (haircut is a compound). Vein and artery wait for a vessel head |
+| Weather and time | 🌧️ *rain*, 🌬️ *wind*, 🌨️ *snow*, ☁️ *cloud*, 🌅 *day*, 🌃 *night* | drizzle, storm, breeze, morning, evening, weekday | done: 21 rows (wave 3), also on 🧊, 🌫️, 💧, 🛘, 🏀, 🕐. Nothing on ☁️ yet |
 | Text and media | 📖 *book*, 📄 *page*, 📜 *tale*, 💬 *speech*, 🎶 *tune*, 🎞️ *film* | diary, poem, letter, song, article | textbook, menu, website, blog |
 | Health | 🤒 *sick*, 😷 *illness*, 💊 *pill*, 🩹 *bandage* | flu, fever, vaccine, ointment | |
 | Money | 💰 *money*, 🪙 *coin*, 🏦 *bank*, 🧾 *receipt* | salary, fee, rent, loan, fare | mortgage, pension, budget |
@@ -132,6 +132,9 @@ Still open:
 - **Still blocked:** *match* (no *stick* root; *stick* is an alias on 🪢 *knot*), *high school* (no *teen* root, People pass).
 - **Only an alias on a narrower row:** *dust* on 🏜️ *desert*.
 - **Now a compound gap:** 🧱 is *wall*, so *brick* needs a compound in the Materials pass.
+- **Body heads** (wave 3): no *blood vessel* or *tube* root (blocks vein, artery), no *organ* (liver, kidney, intestine), no *flesh*.
+- **Weather heads** (wave 3): no concrete *sound* or *noise* root (blocks thunder), no *spell of weather* (heatwave, drought). No *lunch* root (lunchtime) is a Dishes gap.
+- **Land heads** (wave 3): no *half* root (blocks peninsula, the usual *half-island*).
 - **Generic words that are compounds, so they cannot head:** *cup* (*tea* **-l** *bowl*), *roof*, *fence*, *pipe*. Fine until a wave needs one as a head.
 - **Abstract clash:** 🔨 *hammer* has the abstract *iron*, which the Materials pass wants for the metal. Settle it before that pass.
 - **Gloss clash:** *orange* the fruit (🍊 *tangerine*) against 🟠 *orange* the colour.
