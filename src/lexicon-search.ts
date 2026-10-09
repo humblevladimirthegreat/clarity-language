@@ -904,7 +904,7 @@ export function searchLexicon(
   }
 
   for (const result of emojiResults) {
-    const id = rows.findIndex((row) => row.emoji === result.emoji);
+    const id = result.emoji ? rows.findIndex((row) => row.emoji === result.emoji) : -1;
     if (id < 0) continue;
     const exact = exactMatchBoost(rows[id]!, trimmed);
     const key = publishedKey(id);
@@ -984,7 +984,7 @@ export function searchLexicon(
 
         const publishedIndex = rows.findIndex(
           (row) =>
-            row.emoji === overlay.emoji ||
+            (overlay.emoji !== "" && row.emoji === overlay.emoji) ||
             row.root === senseFormRoot(overlay.senseForm) ||
             `${row.root}${senseFormEnding(overlay.senseForm) ?? ""}` === overlay.senseForm,
         );

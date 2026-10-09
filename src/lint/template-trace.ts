@@ -31,14 +31,14 @@ const NAMED_FILLERS: Record<string, string[]> = {
 };
 const LEADING_FILLERS = [
   "z", "d", "v", "g", "b", "h", "w", "x", "y", "th",
-  `z${SWAN}`, `v${WALK}`, `g${SWAN}`, `g${CLOSED.knot}`, `g${CLOSED.toolbox}`, `th${CLOSED.knot}`, `w${CLOSED.ballot}`,
+  `z${SWAN}`, `v${WALK}`, `g${SWAN}`, `g${CLOSED.knot}`, `g${CLOSED.tool}`, `th${CLOSED.knot}`, `w${CLOSED.ballot}`,
   "g+", "g+2", "g~+", "g#", "grawozozo",
 ];
 const TRAILING_FILLERS = ["", "l", "n", "m", "r", "2", "2l", "2n", `${SWAN}l`, `${SWAN}n`, `${WALK}l`, "a", "ul"];
 const NUMBER_FILLERS = ["2", "3", "2l", "3l", "2n", "3n"];
 const ROOT_FILLERS = [SWAN, WALK];
 /** Sake roots, for sake patterns (`g…tha…`). */
-const SAKE_FILLERS = [CLOSED.knot, CLOSED.toolbox];
+const SAKE_FILLERS = [CLOSED.knot, CLOSED.tool];
 
 type Slot = { start: number; end: number; options: string[] };
 

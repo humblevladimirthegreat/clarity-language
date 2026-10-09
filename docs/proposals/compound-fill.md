@@ -42,17 +42,17 @@ Each pass takes one domain and its head roots. Rows are named here by seed and E
 | Domain | Head roots | Sample fills | Already in |
 |--------|-----------|--------------|------------|
 | Seasoning | 🌿 *herb*, 🍛 *spice*, 🌶️ *pepper*, 🧂 *salt* | basil, mint, parsley, cinnamon, paprika, chili, black pepper | done: 12 herbs, 12 spices, sea salt, curry; *chili* belongs as an alias on 🌶️ |
-| Plants | 🌳 *tree*, 💮 *flower*, 🍃 *leaf*, 🌾 *grain*, 🥬 *greens*, 🍈 *fruit*, 🫐 *berry*, 🌰 *nut*, 🍄 *mushroom* | willow, birch, wheat, oat, barley, lettuce, cabbage, raspberry, walnut, acorn | done: 41 rows (wave 1). 🪴 is now *plant*: weed, fern, moss, ivy, vine still to fill |
+| Plants | 🌳 *tree*, 💮 *flower*, 🍃 *leaf*, 🌾 *grain*, 🥬 *greens*, 🍈 *fruit*, 🫐 *berry*, 🌰 *nut*, 🍄 *mushroom* | willow, birch, wheat, oat, barley, lettuce, cabbage, raspberry, walnut, acorn | done: 41 rows (wave 1). 🪴 is now *plant*: done in wave 2: weed, fern, moss, ivy, vine and 4 more |
 | Animals | 🐦 *bird*, 🐟 *fish*, 🐛 *bug*, 🐍 *snake*, 🐚 *shell*, 🐕 *dog*, 🐈 *cat*, 🐄 *cow*, 𓄛 *animal* (class names only) | sparrow, crow, trout, salmon, moth, wasp, puppy, kitten, calf, pet, livestock | done: 36 rows (wave 1), with *pet*, *livestock*, *mammal* on 𓄛. Young and sexed animals use `/ɡ/`, not compounds. 🐑 *sheep*, 🐝 *bee*, 🐿️ *squirrel* and 🦖 *dinosaur* are now roots |
-| Dishes | 🍞 *bread*, 🧀 *cheese*, 🍖 *meat*, 🍲 *soup*, 🥗 *salad*, 🍪 *cookie*, 🍜 *noodles*, 🍚 *rice*, 🥚 *egg*, 🍬 *candy* | toast, bun, pork, beef, broth, porridge, omelet, biscuit | done: 39 rows (wave 1). 🍰 *cake* and 🫕 *sauce* are now heads; their kinds (brownie, cheesecake, gravy, dressing, ketchup, fondue) still to fill. Deferred: *pasta* alias on 🍝 |
-| Drinks | 🥤 *drink*, 🍵 *tea*, 🍷 *wine*, 🍺 *beer*, 🧃 *juice*, 🥛 *milk*, ☕ *coffee* | lemonade, cider, latte, cocoa, herbal tea | done: 26 rows (wave 1). 🥃 is now *liquor*: gin, rum, vodka, whiskey still to fill |
-| Rooms and buildings | 𓉐 *room*, 🏠 *house*, 🏪 *shop*, 🏫 *school*, 🗼 *tower*, 🛖 *hut*, ⛺ *tent* | attic, cellar, hall, garage, bakery, pharmacy, barn, college | bedroom, kitchen, bathroom (on *room*); library, museum (on *house*) |
+| Dishes | 🍞 *bread*, 🧀 *cheese*, 🍖 *meat*, 🍲 *soup*, 🥗 *salad*, 🍪 *cookie*, 🍜 *noodles*, 🍚 *rice*, 🥚 *egg*, 🍬 *candy* | toast, bun, pork, beef, broth, porridge, omelet, biscuit | done: 39 rows (wave 1). 🍰 *cake* and 🫕 *sauce* are now heads; their kinds filled in wave 2 (6 cakes, 14 sauces with jam). Deferred: *pasta* alias on 🍝 |
+| Drinks | 🥤 *drink*, 🍵 *tea*, 🍷 *wine*, 🍺 *beer*, 🧃 *juice*, 🥛 *milk*, ☕ *coffee* | lemonade, cider, latte, cocoa, herbal tea | done: 26 rows (wave 1). 🥃 *liquor*: 5 rows in wave 2 |
+| Rooms and buildings | 𓉐 *room*, 🏠 *house*, 🏪 *shop*, 🏫 *school*, 🗼 *tower*, 🛖 *hut*, ⛺ *tent* | attic, cellar, hall, garage, bakery, pharmacy, barn, college | done: 43 rows (wave 2), also on 🏬, 🏭, ⛪. Nothing on ⛺ or 🏫 yet (no *teen* root for high school) |
 | People | 🧑 *person*, plus [role compounds](../grammar/roles.md#role-compounds) for doers | sibling, cousin, neighbor, stranger, guest, host | friend, parent, resident, lawyer |
 | Groups | 👥 *community*, 🏛️ *institution* | tribe, crew, club, union, ministry, court | army, jury, council, government |
-| Clothing | 🧥 *coat*, 👕 *shirt*, 👗 *dress*, 👞 *shoe*, 🧢 *hat*, 🦺 *vest*, 🧤 *gloves*, 🧦 *socks* | jacket, sweater, slipper, apron, uniform, helmet-types | raincoat, dress shoe |
-| Containers | 🫙 *jar*, 🥣 *bowl*, 🥘 *pan*, 🍼 *bottle*, 🧺 *basket*, 🪣 *bucket*, 👜 *bag*, 🛢️ *barrel*, 📦 *box*, 🗄️ *cabinet* | can, crate, wallet, envelope-types | lid |
-| Tools and devices | ⚙️ *machine*, 🧰 *tool*, 🔪 *knife*, 🔨 *hammer*, 🪔 *lamp*, 🕰️ *clock*, 📱 *phone* | engine, motor, pump, scissors-types, streetlight, headlight | |
-| Light | 🔆 *bright* (radiance), 🪔 *lamp* (source) | sunlight, moonlight, candlelight | |
+| Clothing | 🧥 *coat*, 👕 *shirt*, 👗 *dress*, 👞 *shoe*, 🧢 *hat*, 🦺 *vest*, 🧤 *gloves*, 🧦 *socks* | jacket, sweater, slipper, apron, uniform, helmet-types | done: 38 rows (wave 2), also on 🥾, 🪖, 🩲, 👔, 👖 *trousers*. Leather, fur, rubber wait for Materials |
+| Containers | 🫙 *jar*, 🥣 *bowl*, 🥘 *pan*, 🍼 *bottle*, 🧺 *basket*, 🪣 *bucket*, 👜 *bag*, 🛢️ *barrel*, 📦 *box*, 🗄️ *cabinet* | can, crate, wallet, envelope-types | done: 32 rows (wave 2), also on 👛, 🫖, 🍽️, 🗑️ |
+| Tools and devices | ⚙️ *machine*, 🧰 *tool*, 🔪 *knife*, 🔨 *hammer*, 🪔 *lamp*, 🕰️ *clock*, 📱 *phone* | engine, motor, pump, scissors-types, streetlight, headlight | done: 29 rows (wave 2), also on 🔩, ✂️ and the seedless *oven* |
+| Light | 🔆 *bright* (radiance), 🪔 *lamp* (source) | sunlight, moonlight, candlelight | done: 10 rows (wave 2) |
 | Games | 🎮 *game*, 🏀 *ball* | board game, card game, chess, tag | videogame |
 | Vehicles | 🚗 *car*, 🚤 *boat*, 🚢 *ship*, 🚆 *train*, 🚚 *truck*, ✈️ *airplane* | ferry, tram, cart, sailboat | van |
 | Land and water | ⛰️ *mountain*, 🟩 *field*, 🛣️ *road*, 🌊 *ocean*, 🏝️ *island*, 🟫 *ground* | lake, river, pond, path, street, meadow | hill, valley, floor |
@@ -108,6 +108,8 @@ Keep the waves small: the bottleneck is editor review, not drafting.
 - a gloss that is already a published sense or another compound's sense
 - a missing gloss or mnemonic
 
+It does not catch an ending-plus-stem form that also reads as an overlay plus a root (in wave 2, *book* **-l** *cabinet* gave `th` forms that read as *DEDUCED* + *cabinet*). `npm test` catches those in the morph-gloss lint, so run it before calling a wave done.
+
 If the stem splits in more than one way, pick a different left root. Never respell a root to make the split unique.
 
 ## When a head is missing
@@ -122,14 +124,16 @@ If a category needs a head that no root covers, stop and add the head first. Ret
 
 Found in the label audit after wave 1. Fill each before the wave that needs it, as in [when a head is missing](#when-a-head-is-missing).
 
-Resolved in the audit: 🛋️ is now *furniture* (couch is *width* **-m** *chair*), ⌛ is now *sand*, 🧱 is now *wall* (the *because* cue reads as what the result stands on), 🥣 is now *bowl* (cereal is *grain* **-l** *bowl*), 🥘 is *pan*, 🗡️ is *weapon* (dagger is *knife* **-l** *weapon*), and *jewel* and *gem* are aliases on 💎. *Smoke* (*fire* **-l** *fog*), *stairs* (*house* **-l** *ladder*), *fork* (*trident* **-l** *cutlery*) and *rope* (*knot* **-l** *thread*) are compounds, since they head nothing.
+Resolved in the audit: 🛋️ is now *furniture* (couch is *width* **-m** *chair*), ⌛ is now *sand*, 🧱 is now *wall* (the *because* cue reads as what the result stands on), 🥣 is now *bowl* (cereal is *grain* **-l** *bowl*), 🥘 is *pan*, 🗡️ is *weapon* (dagger is *knife* **-l** *weapon*), *jewel* and *gem* are aliases on 💎, ⚙️ is now *machine* (gear and cog are aliases) and 🧰 is now *tool* (toolbox becomes a compound). *Smoke* (*fire* **-l** *fog*), *stairs* (*house* **-l** *ladder*), *fork* (*trident* **-l** *cutlery*) and *rope* (*knot* **-l** *thread*) are compounds, since they head nothing.
 
 Still open:
 
-- **No root and no free seed:** *whistle*.
+- **Seedless rows** (wave 2): *oven*, *vinegar*, *whistle*. Nothing heads on vinegar or whistle yet.
+- **Still blocked:** *match* (no *stick* root; *stick* is an alias on 🪢 *knot*), *high school* (no *teen* root, People pass).
 - **Only an alias on a narrower row:** *dust* on 🏜️ *desert*.
 - **Now a compound gap:** 🧱 is *wall*, so *brick* needs a compound in the Materials pass.
 - **Generic words that are compounds, so they cannot head:** *cup* (*tea* **-l** *bowl*), *roof*, *fence*, *pipe*. Fine until a wave needs one as a head.
+- **Abstract clash:** 🔨 *hammer* has the abstract *iron*, which the Materials pass wants for the metal. Settle it before that pass.
 - **Gloss clash:** *orange* the fruit (🍊 *tangerine*) against 🟠 *orange* the colour.
 
 ## Open questions

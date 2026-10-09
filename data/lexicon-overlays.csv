@@ -1,8 +1,8 @@
 sense_form,pos,emoji,kind,gloss,definition,mnemonic,anchor
 ahum,th,🗳️,sake,autonomy,autonomy sake (choice / agency),ballot records choice; choice is agency and self-direction,sakes.md#word-shape
 ahum,w,🗳️,sake,autonomy,autonomy sake (choice / agency),ballot records choice; choice is agency and self-direction,sakes.md#personal-possession
-ulom,th,🧰,sake,competence,competence sake (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,sakes.md#word-shape
-ulom,w,🧰,sake,competence,competence sake (readiness / efficacy),toolbox holds gear for the job; readiness is prepared skill,sakes.md#personal-possession
+ulom,th,🧰,sake,competence,competence sake (readiness / efficacy),a tool readies you for the job; readiness is prepared skill,sakes.md#word-shape
+ulom,w,🧰,sake,competence,competence sake (readiness / efficacy),a tool readies you for the job; readiness is prepared skill,sakes.md#personal-possession
 amem,th,🧭,sake,purpose,purpose sake (direction / meaning),compass gives a heading; direction is an aim that matters,sakes.md#word-shape
 amem,w,🧭,sake,purpose,purpose sake (direction / meaning),compass gives a heading; direction is an aim that matters,sakes.md#personal-possession
 anam,th,🪢,sake,relatedness,relatedness sake (bond / belonging),knot ties two ends; bond is connection and care,sakes.md#word-shape
@@ -128,8 +128,8 @@ urar,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now /
 urar,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
 urar,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
 urar,th,🔖,clause_pole,as-of.bookmark,AS-OF stance pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#stance-as-of
-egem,th,⚙️,cause,CAUSE,CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make),gear drives mechanism; mechanism frames how the link works,causation.md#cause
-egem,w,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),gear drives mechanism; mechanism frames how the link works,causation.md#cause
+egem,th,⚙️,cause,CAUSE,CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make),a machine runs on mechanism; mechanism frames how the link works,causation.md#cause
+egem,w,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),a machine runs on mechanism; mechanism frames how the link works,causation.md#cause
 an,v,,join_act,includes,join-act includes or adds object,set join a+n as verb; includes adds this object to the set,join-across-roles.md#join-act-verbs
 an,g,,join_relation,including,join-relation including (adjective + argument),set join a+n on /g/; including frames host with argument,join-across-roles.md#join-relations
 an,h,,join_relation,including,join-relation with or including (adverb + argument),set join a+n on /h/; with frames event alongside argument,join-across-roles.md#join-relations

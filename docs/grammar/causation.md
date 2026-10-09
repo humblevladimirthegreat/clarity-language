@@ -332,9 +332,9 @@ Fault is still a claim. You can hedge it with [MAY](knowing.md#may) right before
 ### CAUSE {#cause}
 <a id="cause-mood"></a>
 
-English *that is what makes it happen* points at **how** a result comes about (the mechanism), not only at a condition that holds. Add the stance word **`thegem`** (CAUSE, root **`ege`**) right before a pole: the pole names the condition, and CAUSE says that condition is how the result is produced. CAUSE can also take its own `/b/` word for the one who makes it happen (below). (cue: ⚙️ *gear*: how the mechanism engages)
+English *that is what makes it happen* points at **how** a result comes about (the mechanism), not only at a condition that holds. Add the stance word **`thegem`** (CAUSE, root **`ege`**) right before a pole: the pole names the condition, and CAUSE says that condition is how the result is produced. CAUSE can also take its own `/b/` word for the one who makes it happen (below). (cue: ⚙️ *machine*: how the mechanism engages)
 
-As plain words, the same root is `zegel` *a gear* and `vegel` *to mesh / engage*.
+As plain words, the same root is `zegel` *a machine* and `vegel` *to operate / engage*.
 
 > `zazawan vowogal thegem thoyem berehel.`
 >
@@ -387,7 +387,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agazan | Cue |
 |---------|--------|-----|
 | *pressure* | `agabem` | 🗜️ from *clamp* |
-| *CAUSE* | `thegem` | ⚙️ from *gear*: how the result comes about |
+| *CAUSE* | `thegem` | ⚙️ from *machine*: how the result comes about |
 | *iff* | `thedam` | ↔️ from *east-west*: each side only with the other |
 
 **Review:**

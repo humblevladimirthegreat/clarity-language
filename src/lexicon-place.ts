@@ -38,6 +38,7 @@ export type PlaceRow = {
 
 export type Placement = {
   emoji: string;
+  concrete: string;
   root: string;
   /** Three-letter annealed root, or a five-letter root from regret order. */
   length: 3 | 5;
@@ -375,6 +376,6 @@ export async function placePublishedRoots(
   const long = placeLongRoots(targets.filter((item) => !item.eligible), taken);
   return targets.map((item) => {
     const root = item.eligible ? short.get(item)! : long.get(item)!;
-    return { emoji: item.row.emoji, root, length: item.eligible ? 3 : 5 };
+    return { emoji: item.row.emoji, concrete: item.row.concrete, root, length: item.eligible ? 3 : 5 };
   });
 }

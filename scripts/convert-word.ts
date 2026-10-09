@@ -204,12 +204,13 @@ async function convertLexicon(only: string[]): Promise<void> {
         .map((row) => ({ emoji: (row.emoji ?? "").trim(), root: (row.root ?? "").trim() })),
     },
   );
-  const byEmoji = new Map(placed.map((item) => [item.emoji, item]));
+  // a seedless row is keyed by its concrete label
+  const byKey = new Map(placed.map((item) => [item.emoji || item.concrete, item]));
   for (const row of targets) {
     const literal = (row.concrete ?? "").trim();
     if (!literal) continue;
     const previous = (row.root ?? "").trim();
-    const neu = byEmoji.get((row.emoji ?? "").trim())?.root;
+    const neu = byKey.get((row.emoji ?? "").trim() || literal)?.root;
     if (!neu) {
       failed += 1;
       console.error(`no placement for ${literal}`);

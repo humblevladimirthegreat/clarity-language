@@ -15,7 +15,7 @@ Nine published roots are the sakes you can name, and no other root takes the sak
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`ahu`** | autonomy sake | *autonomy* (choice, agency, self-direction) | `ahul` *ballot* | 🗳️: voting is choosing for yourself |
-| **`ulo`** | competence sake | *competence* (efficacy, skill, getting things to work) | `ulol` *toolbox* | 🧰: the kit that gets things working |
+| **`ulo`** | competence sake | *competence* (efficacy, skill, getting things to work) | `ulol` *tool* | 🧰: the kit that gets things working |
 | **`ado`** | understanding sake | *understanding* (making sense, learning, discovery) | `adol` *lightbulb* | 💡: the light goes on when it makes sense |
 | **`ame`** | purpose sake | *purpose* (meaning, direction, an aim that matters) | `amel` *compass* | 🧭: a heading worth following |
 | **`ana`** | relatedness sake | *relatedness* (connection, belonging, care) | `anal` *knot* | 🪢: ties people together |
@@ -190,7 +190,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *tent* | `ededul` | ⛺ |
 | *wind* | `ewedul` | 🌬️ |
 | *autonomy* | `ahul` | 🗳️ from *ballot*: voting is choosing for yourself |
-| *competence* | `ulol` | 🧰 from *toolbox*: the kit that gets things working |
+| *competence* | `ulol` | 🧰 from *tool*: the kit that gets things working |
 | *understanding* | `adol` | 💡 from *lightbulb*: the light goes on when it makes sense |
 | *beneficence* | `ebel` | 🎁 from *present*: a gift leaves someone better off |
 | *physical* | `oyul` | 🫁 from *lungs*: breathing easy means the body is well |

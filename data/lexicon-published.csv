@@ -396,7 +396,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🌱,seedling,uze,growth,a seedling pushes up out of the soil,,grow; seed; expansion; increase; development; develop; expand; mature,causation.md#beginner-practice
 🪴,plant,obada,tending,a potted plant needs care; tending is looking after what grows,,garden,
 🌲,pine,abowe,constancy,a pine stays green all year; constancy is staying the same through change,,,
-🌳,tree,edehu,stability,tree roots give stability,,stable; steady,
+🌳,tree,edehu,stability,tree roots give stability,,steady,
 🌴,palm,abahu,escape,a palm means vacation escape,,,
 🌵,cactus,aguge,,,,,
 🌾,grain,egeve,harvest,a sheaf of grain marks harvest,,crop,pronouns.md#intermediate-practice
@@ -480,7 +480,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧈,butter,abode,flattery,butter someone up with flattery,,,
 🧂,salt,ozode,skepticism,take it with a grain of salt,,,
 🥫,metal,emada,,a can stands for metal: the hard shiny material,,,
-🍱,bento,ebedo,order,a bento box keeps each food in its own tidy slot,,line; rank; arrange,
+🍱,bento,ebedo,order,a bento box keeps each food in its own tidy slot,,line; rank; arrange; lunchbox,
 🍘,rice-cracker,arazu,,,,,
 🍙,rice-ball,araza,,,,,
 🍚,rice,arazo,,,,,
@@ -607,7 +607,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🚗,car,agaha,mobility,car moves you where you choose; mobility is freedom to move,,vehicle; mobile,
 🚚,truck,adaga,logistics,truck carries freight; logistics is the unobservable coordination,,,
 🚜,tractor,edage,,,,,
-🏍️,motorcycle,omoda,watt,motorcycle draws mechanical power; watt is the SI power unit,,motor; engine,
+🏍️,motorcycle,omoda,watt,motorcycle draws mechanical power; watt is the SI power unit,,,
 🦽,wheelchair,awehe,accessibility,wheelchair enables movement; accessibility is equal access,,,
 🚲,bicycle,abuze,,,,,
 🛴,scooter,ezugu,,,,,
@@ -616,7 +616,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🚏,bus-stop,abaza,waiting,bus stop is where you wait; waiting is holding for what comes,m.v:wait,delay,
 🛤️,railway,erewe,trajectory,a railway fixes where the train will go; a trajectory is the path something is set on,,,
 🛢️,barrel,ababa,reserve,a barrel stores bulk supply; reserve is stored supply,,oil; tank,
-⛽,gas-pump,agoba,refuel,gas station fills the tank; refuel is restoring energy,,fuel; pump; gas,
+⛽,gas-pump,agoba,refuel,gas station fills the tank; refuel is restoring energy,,fuel; gas,
 🛞,wheel,ewawe,motion,wheel enables motion,,movement; roll; move; gesture,
 🚨,siren,azeza,disturbance,a siren breaks the calm; a disturbance is something that breaks the calm,,,
 🚦,traffic-light,alado,directive,traffic light tells go or stop; signal is a clear instruction,,,
@@ -639,7 +639,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🚀,rocket,arage,launch,rocket blasts into the sky; launch is a bold start,,establish,
 🛸,ufo,uyuvo,,,,,
 🛎️,bellhop,eboha,,,,,
-🧳,luggage,alage,encumbrance,luggage is what you carry; encumbrance is the unobservable drag,v:carry,take,dependents.md#intermediate-practice
+🧳,luggage,alage,encumbrance,luggage is what you carry; encumbrance is the unobservable drag,v:carry,take; suitcase,dependents.md#intermediate-practice
 ⌛,sand,ano,recency,the sand has just run through; recency is nearness in time,,newly,
 ⏳,hourglass,agaze,hour,hourglass sand marks civil duration; hour is the everyday duration unit,,,numbers-applied.md#intermediate-practice
 ⌚,watch,awaha,punctuality,watch tracks the exact moment; punctuality is being on time,,observe,
@@ -761,7 +761,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🦺,vest,eveze,safety,the vest keeps workers safe; safety is freedom from harm,,safe; secure; insurance,
 👔,necktie,enege,neck,a necktie hangs at the neck; the neck joins head and body,,,
 👕,shirt,ehada,casual,a shirt is everyday wear; casual is relaxed informal,,t-shirt,
-👖,jeans,ehewa,,,,,
+👖,trousers,odaze,,,,pants,
 🧣,scarf,azoga,,,,,
 🧤,gloves,agazu,winter,gloves come out in winter; winter is the cold season,,,
 🧥,coat,ogodu,shelter,coat wraps against the weather; shelter is cover from elements,,jacket; surface,questions.md#beginner-practice
@@ -867,7 +867,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 📑,tab,adeba,organization,a tab sorts open pages into their own slots,,organize; arrangement; system,
 🔖,bookmark,ura,reminder,a bookmark holds your place to come back to,,remind,
 🏷️,label,aleba,classification,a label sorts things into named groups,,category; class; mark,
-🪙,coin,ugo,same,coin has two faces of one thing; same is two labels for one referent,,uniform,predication.md#beginner-practice
+🪙,coin,ugo,same,coin has two faces of one thing; same is two labels for one referent,,,predication.md#beginner-practice
 💰,money,amo,debt,money bag holds what is owed; debt is an unpaid balance,v:pay,finance; wage; salary; cash; currency; fund; capital; payment,clause.md#beginner-practice
 🪎,treasure,edohe,riches,a treasure chest is piled with gold and jewels,,,
 💴,yen,eyeha,,,,,
@@ -927,7 +927,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🔧,wrench,erevu,workaround,wrench turns past a stuck bolt; workaround is an improvised bypass,,,x-compounds.md#beginner-practice
 🪛,screwdriver,azugu,assembly,screwdriver joins parts together; assembly is putting together,,,
 🔩,bolt,obodo,ohm,a bolt limits current through the joint; ohm is the SI resistance unit,,,
-⚙️,gear,ege,mechanism,gear drives mechanism,,device; instrument; engine; functional; machine,
+⚙️,machine,ege,mechanism,a machine runs on mechanism,,device; instrument; engine; motor; functional; gear; cog,
 🗜️,clamp,agabe,pressure,clamp squeezes with steady force; pressure is squeezing force,,impose; tight; press,causation.md#intermediate-practice
 ⚖️,scale,ezage,justice,scales weigh both sides equally; justice is fair balance,,weigh; moral,
 🦯,cane,egeho,trust,you lean your weight on a cane; trust is relying on someone,,confidence; rely; reliable; believe; belief,
@@ -935,7 +935,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ⛓️‍💥,unlink,anagu,liberation,a broken chain frees the one it held,,release,
 ⛓️,chains,ehewe,bondage,chains bind and restrict movement; bondage is being held fast,,slave; constraint,
 🪝,hook,uhuga,ensnarement,hook snags; ensnarement is the unobservable trapping-kind,,,
-🧰,toolbox,ulo,readiness,toolbox holds gear for the job; readiness is prepared for task,,skill; equipment; tool,
+🧰,tool,ulo,readiness,a tool readies you for the job; readiness is prepared for task,,skill; equipment; kit,
 🧲,magnet,amega,attraction,magnet pulls metal toward it; attraction is pulling toward,,pull; attract; attractive; drag,
 🪜,ladder,alode,advancement,ladder climbs step by step; advancement is rising by stages,,promotion; promote; advance,
 🪏,shovel,aheva,uncovering,shovel digs; uncovering is the unobservable reveal-kind,,dig; discovery,
@@ -1414,3 +1414,6 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🝏,scepter,azeba,dominion,a scepter is held by the one who rules; dominion is rule over a realm,,,
 🝐,caduceus,egadu,commerce,"the caduceus is the staff of Hermes, god of trade; commerce is buying and selling",,,
 🝥,crucible,uguze,ordeal,a crucible holds metal in fierce heat; an ordeal is a severe test,,,
+,oven,avayo,,,,,
+,vinegar,evoge,,,,,
+,whistle,eweze,,,,,

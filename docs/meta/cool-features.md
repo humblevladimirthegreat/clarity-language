@@ -29,13 +29,15 @@ On a verb or adjective, -x says the group does or has it collectively. This is n
 >
 > z-Azawan-x | v-sing
 >
-> "Azawan and friends sing (separately)."
+> "Azawan and associates sing (separately)."
+
+Who counts as an "associate" is context dependent but usually means the people you came with. In this case, it is likely Azawan's karaoke friends each singing their own song.
 
 > `zazawanx vezehelx.`
 >
 > z-Azawan-x | v-sing-x
 >
-> "Azawan and friends sing together."
+> "Azawan and associates sing together." (i.e. singing the same song at the same time)
 
 It works even with a single subject - the collective verb means others shared the act, even if they aren't named:
 
@@ -43,7 +45,7 @@ It works even with a single subject - the collective verb means others shared th
 >
 > z-Azawan | v-sing-x
 >
-> "Azawan sings with others."
+> "Azawan sings with others." (i.e. Azawan was singing a popular karaoke song and everyone sings along)
 
 Adjectives work the same way:
 

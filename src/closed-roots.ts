@@ -50,9 +50,9 @@ const CLOSED_ROWS = {
   scroll: { emoji: "📜", root: "oze" },
   // template sample filler
   walk: { emoji: "🚶", root: "owoga" },
-  // the nine sake roots (sakes.md#sake-inventory); knot, toolbox and ballot are also template sample fillers
+  // the nine sake roots (sakes.md#sake-inventory); knot, tool and ballot are also template sample fillers
   ballot: { emoji: "🗳️", root: "ahu" },
-  toolbox: { emoji: "🧰", root: "ulo" },
+  tool: { emoji: "🧰", root: "ulo" },
   lightbulb: { emoji: "💡", root: "ado" },
   compass: { emoji: "🧭", root: "ame" },
   knot: { emoji: "🪢", root: "ana" },

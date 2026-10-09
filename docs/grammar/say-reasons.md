@@ -861,7 +861,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. **
 | *only-if* | `tholum` | `olul` *paper-roll* |
 | *because* | `thavem` | `avel` *wall* |
 | *MAY* | `thovum` | `ovul` *thought* |
-| *CAUSE* | `thegem` | `egel` *gear* |
+| *CAUSE* | `thegem` | `egel` *machine* |
 | *RESIDUE* | `thamom` | |
 | *CLUES* | `thunem` | `unel` *investigate* |
 | *as-of.bookmark* | `huram` | |

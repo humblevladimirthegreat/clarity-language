@@ -35,7 +35,7 @@ export const NOT_CORE_ROOTS: ReadonlySet<string> = new Set([
   CLOSED.star,
   CLOSED.person,
   CLOSED.ballot,
-  CLOSED.toolbox,
+  CLOSED.tool,
   CLOSED.lightbulb,
   CLOSED.compass,
   CLOSED.knot,
