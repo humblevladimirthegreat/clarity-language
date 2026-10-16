@@ -3,31 +3,58 @@ import { describe, it } from "node:test";
 
 import { loadDefaultTables } from "../parse/index.js";
 import { glossLabels } from "./terminology-docs.js";
-import { extractFreeEnglish, lintFreeEnglish, noteFindings, parenGroups, splitFreeEnglish } from "./free-english.js";
+import { extraParens, extractFreeEnglish, lintFreeEnglish, noteFindings, parenGroups, splitFreeEnglish } from "./free-english.js";
 
 const tables = loadDefaultTables();
 const labels = glossLabels(tables.overlays.values());
 
 describe("splitFreeEnglish", () => {
+  const one = (sentence: string, note: string | null = null) => ({ sentence, note, parts: [sentence], join: "one" });
+
   it("splits a quoted sentence and its note", () => {
-    assert.deepEqual(splitFreeEnglish('"Azawan walks."'), { sentence: "Azawan walks.", note: null });
-    assert.deepEqual(splitFreeEnglish('"tea or coffee." (pick one)'), { sentence: "tea or coffee.", note: "pick one" });
-    assert.deepEqual(splitFreeEnglish('"A." (whose (left))'), { sentence: "A.", note: "whose (left)" });
+    assert.deepEqual(splitFreeEnglish('"Azawan walks."'), one("Azawan walks."));
+    assert.deepEqual(splitFreeEnglish('"tea or coffee." (pick one)'), one("tea or coffee.", "pick one"));
+    assert.deepEqual(splitFreeEnglish('"A." (whose (left))'), one("A.", "whose (left)"));
   });
 
   it("splits italics in a checkpoint", () => {
-    assert.deepEqual(splitFreeEnglish("*Ahaben sees that Alahen sneaks.*", "*"), { sentence: "Ahaben sees that Alahen sneaks.", note: null });
-    assert.deepEqual(splitFreeEnglish("*Azawan sits.* (no one is to blame)", "*"), { sentence: "Azawan sits.", note: "no one is to blame" });
+    assert.deepEqual(splitFreeEnglish("*Ahaben sees that Alahen sneaks.*", "*"), one("Ahaben sees that Alahen sneaks."));
+    assert.deepEqual(splitFreeEnglish("*Azawan sits.* (no one is to blame)", "*"), one("Azawan sits.", "no one is to blame"));
+  });
+
+  it("splits alternatives and takes the first as the sentence", () => {
+    assert.deepEqual(splitFreeEnglish('"Yes." / "True." / "Got it."'), {
+      sentence: "Yes.",
+      note: null,
+      parts: ["Yes.", "True.", "Got it."],
+      join: "alternatives",
+    });
+    assert.deepEqual(splitFreeEnglish("*No.* / *False.* (the claim does not match)", "*"), {
+      sentence: "No.",
+      note: "the claim does not match",
+      parts: ["No.", "False."],
+      join: "alternatives",
+    });
+  });
+
+  it("splits dialogue turns and joins them as the sentence", () => {
+    assert.deepEqual(splitFreeEnglish('"Walk." "Will do." (a promise)'), {
+      sentence: "Walk. Will do.",
+      note: "a promise",
+      parts: ["Walk.", "Will do."],
+      join: "turns",
+    });
+    assert.equal(splitFreeEnglish("*Didn’t Azawan tell?* *True, Azawan didn’t.*", "*")?.join, "turns");
   });
 
   it("rejects every other shape", () => {
-    assert.equal(splitFreeEnglish('"A." "B."'), null);
-    assert.equal(splitFreeEnglish('"A." / "B."'), null);
+    assert.equal(splitFreeEnglish('"A." / "B." "C."'), null);
     assert.equal(splitFreeEnglish('"A." (one) (two)'), null);
     assert.equal(splitFreeEnglish('"A." (one).'), null);
     assert.equal(splitFreeEnglish('"A." You name yourself.'), null);
+    assert.equal(splitFreeEnglish('"A." (one) "B."'), null);
     assert.equal(splitFreeEnglish("*Azawan sits* (no one is to blame).", "*"), null);
-    assert.equal(splitFreeEnglish("*null* / *void*", "*"), null);
+    assert.equal(splitFreeEnglish("*Didn’t Azawan tell?* Then confirm: *true, Azawan didn’t.*", "*"), null);
     assert.equal(splitFreeEnglish("A."), null);
   });
 });
@@ -37,6 +64,21 @@ describe("parenGroups", () => {
     assert.equal(parenGroups("Azawan walks."), 0);
     assert.equal(parenGroups("Azawan (A) and Alahen (E) harvest."), 2);
     assert.equal(parenGroups("Azawan walks (quietly (very))."), 1);
+  });
+});
+
+describe("extraParens", () => {
+  it("allows one group per aside or scope island", () => {
+    assert.equal(extraParens("Azawan walks (quietly).", "z-Azawan | v-walk | ASIDE[th-quiet]"), 0);
+    assert.equal(extraParens("Azawan and (just water).", "[z-Azawan | SCOPE[z-water | z-and] | z-and.open]"), 0);
+    assert.equal(extraParens("Azawan walks (as mechanism).", "z-Azawan | v-walk"), 1);
+  });
+
+  it("allows a letter group only for a tag the gloss sets", () => {
+    const gloss = "[[z-dog | z-tag.A] | [z-cat | z-tag.E] | z-and.open] | v-walk . z-←tag.A+E | v-run";
+    assert.equal(extraParens("A dog (A) and a cat (E) walk. A and E run.", gloss), 0);
+    assert.equal(extraParens("A dog (A) walks (quietly).", gloss), 1);
+    assert.equal(extraParens("Azawan (A) punches.", "z-Azawan | d-←tag.A | v-punch"), 1);
   });
 });
 
@@ -87,7 +129,7 @@ describe("extractFreeEnglish", () => {
       text: '"Azawan walks." (alone)',
       index: md.indexOf('"Azawan walks."'),
       delimiter: '"',
-      split: { sentence: "Azawan walks.", note: "alone" },
+      split: { sentence: "Azawan walks.", note: "alone", parts: ["Azawan walks."], join: "one" },
     });
     assert.equal(lines[1]!.agazan, "zazawan vedehol. zaxedehor vezebal.");
     assert.equal(lines[1]!.morph, "z-Azawan | v-teach . z-←agent-x-teach | v-sleep");

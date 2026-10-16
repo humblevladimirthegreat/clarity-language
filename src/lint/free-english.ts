@@ -30,7 +30,17 @@ export type FreeEnglishLine = {
   split: FreeEnglishSplit | null;
 };
 
-export type FreeEnglishSplit = { sentence: string; note: string | null };
+/**
+ * A line's English parts and note. `parts` are the quoted (or italic) pieces as written: one for a
+ * plain line, several for alternative renderings (`"A" / "B"`) or dialogue turns (`"A" "B"`).
+ * `sentence` is the first alternative, or the turns joined by a space.
+ */
+export type FreeEnglishSplit = {
+  sentence: string;
+  note: string | null;
+  parts: string[];
+  join: "one" | "alternatives" | "turns";
+};
 
 /** One blockquote whose first non-empty row is Agazan, with its free English rows. */
 export type ExampleBlock = {
@@ -60,22 +70,35 @@ function italicEnd(text: string): number {
 }
 
 /**
- * Split a free English line into its sentence and note: `"<sentence>" (<note>)`, or
- * `*<sentence>* (<note>)` with `delimiter` `*`. Returns null for any other shape, including a
- * period after the note.
+ * Split a free English line into its parts and note: `"<sentence>" (<note>)`, alternatives
+ * `"<a>" / "<b>" (<note>)`, or dialogue turns `"<a>" "<b>" (<note>)`; with `delimiter` `*`, italics
+ * in place of the quotes. Returns null for any other shape, including a period after the note.
  */
 export function splitFreeEnglish(line: string, delimiter: '"' | "*" = '"'): FreeEnglishSplit | null {
-  const t = line.trim();
-  if (!t.startsWith(delimiter)) return null;
-  const close = delimiter === '"' ? t.indexOf('"', 1) : italicEnd(t);
-  if (close < 0) return null;
-  const sentence = t.slice(1, close).trim();
-  const rest = t.slice(close + 1).trim();
-  if (!sentence) return null;
-  if (!rest) return { sentence, note: null };
+  let rest = line.trim();
+  const parts: string[] = [];
+  let join: FreeEnglishSplit["join"] = "one";
+  for (;;) {
+    if (!rest.startsWith(delimiter)) return null;
+    const close = delimiter === '"' ? rest.indexOf('"', 1) : italicEnd(rest);
+    if (close < 0) return null;
+    const part = rest.slice(1, close).trim();
+    if (!part) return null;
+    parts.push(part);
+    rest = rest.slice(close + 1).trim();
+    const slash = rest.startsWith("/");
+    const next = slash ? rest.slice(1).trim() : rest;
+    if (!next.startsWith(delimiter)) break;
+    const kind = slash ? "alternatives" : "turns";
+    if (join !== "one" && join !== kind) return null;
+    join = kind;
+    rest = next;
+  }
+  const sentence = join === "turns" ? parts.join(" ") : parts[0]!;
+  if (!rest) return { sentence, note: null, parts, join };
   const m = /^\((.*)\)$/.exec(rest);
   if (!m || !balanced(m[1]!) || !m[1]!.trim()) return null;
-  return { sentence, note: m[1]!.trim() };
+  return { sentence, note: m[1]!.trim(), parts, join };
 }
 
 /** Top-level `(…)` groups in a sentence. */
@@ -92,6 +115,18 @@ export function parenGroups(sentence: string): number {
 /** Aside spans in a morph line. */
 export function asideSpans(gloss: string): number {
   return gloss.split("ASIDE[").length - 1;
+}
+
+/**
+ * Parentheses inside the sentence beyond what the gloss allows: one group per aside span or scope
+ * island (`SCOPE[…]`), plus any `(A)` letter group naming a tag the gloss sets (`tag.A`)
+ * ([glosses.md § parentheses inside the quotes](../../docs/meta/glosses.md#inside-parentheses)).
+ */
+export function extraParens(sentence: string, gloss: string): number {
+  const tags = new Set([...gloss.matchAll(/(?<!←)tag\.([A-Z](?:\+[A-Z])*)/g)].flatMap((m) => m[1]!.split("+")));
+  const letters = [...sentence.matchAll(/\(([A-Z])\)/g)].filter((m) => tags.has(m[1]!)).length;
+  const spans = asideSpans(gloss) + (gloss.split("SCOPE[").length - 1);
+  return Math.max(0, parenGroups(sentence) - letters - spans);
 }
 
 /** Agazan in a backtick span (optionally followed by `.`), or in `<code>` with entities. */
@@ -263,43 +298,48 @@ export function noteFindings(note: string, labels: ReadonlySet<string>): Omit<Fr
   return out;
 }
 
-/** Aside spans in the Agazan, or null when it does not parse. */
-function asidesOf(agazan: string, tables: ClassifyTables, cache: Map<string, number | null>): number | null {
+/** The Agazan's morph line, or null when it does not parse. */
+function glossOf(agazan: string, tables: ClassifyTables, cache: Map<string, string | null>): string | null {
   if (!cache.has(agazan)) {
-    let n: number | null;
+    let gloss: string | null;
     try {
-      n = asideSpans(morphGlossLine(agazan, tables, { strict: true }));
+      gloss = morphGlossLine(agazan, tables, { strict: true });
     } catch {
-      n = null;
+      gloss = null;
     }
-    cache.set(agazan, n);
+    cache.set(agazan, gloss);
   }
   return cache.get(agazan)!;
 }
 
 /**
  * Shape, inside-parentheses, and note findings for one page. Parentheses inside the sentence are
- * allowed up to the number of aside spans in the Agazan (an aside may also come out as commas).
+ * allowed up to {@link extraParens}: asides, scope islands, and tag letters (an aside may also come
+ * out as commas).
  */
 export function lintFreeEnglish(markdown: string, tables: ClassifyTables): FreeEnglishFinding[] {
   const labels = glossLabels(tables.overlays.values());
-  const cache = new Map<string, number | null>();
+  const cache = new Map<string, string | null>();
   const out: FreeEnglishFinding[] = [];
   for (const free of extractFreeEnglish(markdown)) {
     const { split, index } = free;
     if (!split) {
       const open = free.delimiter === '"' ? '"…"' : "*…*";
-      out.push({ index, kind: "shape", detail: `free English is ${open} plus at most one (note) after it, nothing else: ${free.text}` });
+      out.push({
+        index,
+        kind: "shape",
+        detail: `free English is ${open} (or alternatives ${open} / ${open}, or turns ${open} ${open}) plus at most one (note) after it, nothing else: ${free.text}`,
+      });
       continue;
     }
-    const inside = parenGroups(split.sentence);
-    if (inside > 0 && free.agazan != null) {
-      const asides = asidesOf(free.agazan, tables, cache);
-      if (asides != null && inside > asides) {
+    if (free.agazan != null && split.parts.some((part) => part.includes("("))) {
+      const gloss = glossOf(free.agazan, tables, cache);
+      const extra = gloss == null ? 0 : extraParens(split.parts.join(" "), gloss);
+      if (extra > 0) {
         out.push({
           index,
           kind: "inside-parens",
-          detail: `${inside} (…) inside the sentence but ${asides} aside span(s); move the note after the sentence: ${free.text}`,
+          detail: `${extra} (…) inside the sentence beyond its asides, scope islands, and tag letters; move the note after the sentence: ${free.text}`,
         });
       }
     }

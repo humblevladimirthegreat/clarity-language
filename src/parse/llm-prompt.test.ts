@@ -11,7 +11,6 @@ import {
   constructionReaders,
   docExamples,
   examplePair,
-  splitFreeEnglish,
   terminologyLabelGlosses,
 } from "./llm-examples.js";
 import {
@@ -72,21 +71,6 @@ describe("translation prompt core", () => {
       assert.ok(readers.has(id), `${id} has a reader note`);
     }
     for (const [id, text] of readers) assert.doesNotMatch(text, /\/[a-zɡ]{1,2}\//, id);
-  });
-});
-
-describe("splitFreeEnglish", () => {
-  it("splits the sentence from one trailing note", () => {
-    assert.deepEqual(splitFreeEnglish('"Azawan walks."'), { sentence: "Azawan walks.", note: null });
-    assert.deepEqual(splitFreeEnglish('"tea or coffee." (pick one)'), { sentence: "tea or coffee.", note: "pick one" });
-    assert.deepEqual(splitFreeEnglish('"A." (whose (left))'), { sentence: "A.", note: "whose (left)" });
-  });
-
-  it("rejects any other shape", () => {
-    assert.equal(splitFreeEnglish('"A." "B."'), null);
-    assert.equal(splitFreeEnglish('"A." (one) (two)'), null);
-    assert.equal(splitFreeEnglish('"A." You name yourself.'), null);
-    assert.equal(splitFreeEnglish("A."), null);
   });
 });
 

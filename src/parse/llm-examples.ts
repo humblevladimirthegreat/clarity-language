@@ -7,7 +7,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
-import { asideSpans, exampleBlocks, parenGroups, splitFreeEnglish } from "../lint/free-english.js";
+import { exampleBlocks, extraParens, splitFreeEnglish } from "../lint/free-english.js";
 import type { ClassifyTables } from "./classify.js";
 import { constructionRegistry } from "./constructions.js";
 import { glossLabels, type ExamplePair, type PromptContext } from "./llm-prompt.js";
@@ -48,7 +48,7 @@ export function examplePair(example: DocExample, source: string, tables: Classif
     return null;
   }
   if (gloss.includes('←"')) return null;
-  if (parenGroups(sentence) > asideSpans(gloss)) return null;
+  if (extraParens(split.parts.join(" "), gloss) > 0) return null;
   return {
     gloss,
     sentence: stripEmphasis(sentence),

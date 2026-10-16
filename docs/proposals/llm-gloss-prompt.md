@@ -1,6 +1,6 @@
 # Translation prompt from the parser
 
-Status: phase 1, steps 1 (policy edits) and 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)) done; awaiting editor review before step 4. Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
+Status: phase 1, steps 1 (policy edits), 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written; awaiting editor review before step 4. Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
 
 ## Problem
 
@@ -97,8 +97,8 @@ The convention replaces the two-line layer everywhere it is described:
 
 New checks in `lint:agazan`, on every quoted free English line in an example block and every italic English answer or prompt in a checkpoint:
 
-- The line is `"…"` (or `*…*` in a checkpoint) followed by at most one ` (…)`; nothing else after the closing quote or italics.
-- No more `(…)` groups inside the quotes or italics than the Agazan has [aside](../grammar/spans.md#asides) spans (`ASIDE[…]` in the parse). An aside rendered with commas or *by the way* uses fewer, which is fine. If cleanup turns up another real use of inside parentheses, it gets its own written rule in [glosses.md](../meta/glosses.md) and lint case, not a per-line exemption.
+- The line is `"…"` (or `*…*` in a checkpoint), or alternatives `"…" / "…"`, or dialogue turns `"…" "…"`, followed by at most one ` (…)`; nothing else after the closing quote or italics.
+- No more `(…)` groups inside the quotes or italics than the Agazan has [aside](../grammar/spans.md#asides) spans (`ASIDE[…]`) and scope islands (`SCOPE[…]`), not counting a `(A)` letter for a tag the gloss sets ([inside parentheses](../meta/glosses.md#inside-parentheses)). An aside rendered with commas or *by the way* uses fewer, which is fine. Any further real use gets its own written rule in [glosses.md](../meta/glosses.md) and lint case, not a per-line exemption.
 - The note has no backticks, no gloss label (any label in `MORPH_GLOSS_LABELS` or the terminology closed labels), and none of a short list of grammar terms.
 
 The lint cannot tell whether a required note is missing. That is the review pass's job, and phase 3 measures it.
@@ -116,7 +116,8 @@ The work splits into what sets the rules, done once in the main session, and the
 | 1. Policy edits | Main session; the editor reviews before step 4 | The [policy edits](#policy-edits) above. Subagents read glosses.md as their rule, so it lands first. |
 | 2. Extractor and lint | Main session | The extractor returns every (Agazan, free English) pair, including blocks with no morph line and italic checkpoint answers and prompts, and splits sentence from note. The main session also drafts the banned grammar-term list for the note check. The [lint](#lint) checks run in warn mode: findings print, the build passes. Unit tests cover the aside count and the note bans. |
 | 3. Review list | Main session | One scratch JSON per page (not committed): each example's line number, section heading, Agazan, parser morph, current English, and lint findings. A subagent works from this list, so it cannot skip an example. |
-| 4. Calibration | Main session, two pages | [clause.md](../grammar/clause.md) (Beginner, few notes) and [knowing.md](../grammar/knowing.md) (evidence and stance, many notes). The editor reviews both diffs. Any judgment call they raise is written into glosses.md before step 5. |
+| 4. Calibration | Main session, two pages | [clause.md](../grammar/clause.md) (Beginner, few notes) and [knowing.md](../grammar/knowing.md) (evidence and stance, many notes). Every [finding category](#finding-categories) on these two pages, the scripted ones included, is fixed by hand. The editor reviews both diffs. Any judgment call they raise is written into glosses.md before step 5. |
+| 4b. Scripted fixes | Main session | After the editor approves the calibration diffs: a one-off script applies the two mechanical fixes from the [finding categories](#finding-categories) (1a and 2a) on every page except the two calibration pages, then `npm run free-english-review` reruns so the subagents get clean lists. `npm run build` passes, and the editor skims the diff before step 5. |
 | 5. Page review | Subagents, in waves | One subagent per page (two small pages may share one), about six per wave. Brief below. |
 | 6. Wave check | Main session | A [diff guard](#diff-guard) (script written by the main session before the first wave), `npm run build`, the subagents' unsure lists, and the editor's review of the wave diff. One commit per wave. |
 | 7. Lint to error | Main session | The shape checks fail the build. `npm run build` and `npm test` pass. |
@@ -129,12 +130,37 @@ The work splits into what sets the rules, done once in the main session, and the
 - **Warnings today:** 128 inside-parentheses, 79 shape, 18 grammar term, 4 Agazan form, 1 gloss label. Inside-parentheses hits include letter tags (*Azawan (A) punches*) and grouping (*Azawan and (just water)*): if review keeps either, it gets its own written rule, per [lint](#lint). Four checkpoint lines spell the learner slot as a literal *(Your name)*.
 - **Grammar-term list** (`NOTE_GRAMMAR_TERMS`, for editor review): word-shape and gloss words (*morph*, *ending*, *root*, *citation*, *loan verb*, …), word classes and roles (*noun*, *verb*, *hook*, *pointer*, *resume*, *stand-in*, …), joins and spans (*join*, *fence*, *span*), stance and evidence (*holder*, *mirative*, *evidential*, *residue*, *whose-now*, *tense*, …), number and comparison (*plural*, *associative*, *comparative*, …). Everyday words that also name a feature (*topic*, *list*, *open*, *closed*, *cause*, *pattern*, *addressee*) are left out. The longest matching term is reported.
 
+<a id="phase-1-step-3-as-built"></a>
+**Step 3 as built.** `npm run free-english-review` (optionally `-- docs/grammar/<page>.md …`) writes `tmp/free-english-review/<page>.json` for the 32 top-level pages with free English, and `index.json` with per-page counts (lines, notes, lines with findings) for sizing waves. `tmp/` is gitignored. Each item has a page-local `id` for reports and unsure lists, `line`, `kind`, `section` (title, slug, band), `agazan`, `docMorph`, `parserMorph` (`SELF` parsed as the unset default; 0 parse errors today), `english` as written, `sentence` / `note` (null when the shape fails), and the lint `findings` on that line. Rerun it after calibration so the lists match the edited pages.
+
+<a id="finding-categories"></a>
+**Finding categories** (after the four rules below; 193 lines with findings). Numbers are the lines in each category. The subagent brief points here for the hand fixes.
+
+| # | Category | Lines | Example | Fix |
+|---|----------|-------|---------|-----|
+| 1a | Note at the end of the sentence, inside the quotes | 78 | "Azawan walks if there is rain (as mechanism)." | **Script (4b):** `"X (n)."` → `"X." (n)`; in a checkpoint `*X (n).*` → `*X.* (n)`. Only when the group sits right before the final mark and is the line's only group |
+| 1b | Who someone is, mid-sentence | ~28 | "We (you and I) walk." · "Ahaben sees him (Alahen)." · "some (unknown) person" | Subagent: sentence plus note, "We walk." (you and I). Usually **required**: clusivity and referents are what those sections teach |
+| 1c | Grouping English can say | 4 | "(Azawan walks or Alahen runs) and Ahaben sleeps." | Subagent: *either … or …, and …*; repeat the shared word (*a challenging dog and a challenging cat*) |
+| 1d | Implied answer or dropped word | 5 (questions.md) | "Who cares? (Nobody.)" · "True: (they) didn't run." | Subagent: "Who cares?" (nobody does); write the word |
+| 1e | Alternatives with a note inside one of them | 2 | *a cart, for one* / *a cart (and possibly more)* | Subagent: one note after the last, or split the alternatives across rows if they mean different things |
+| 2a | Period after the note, or the sentence's period outside the italics | 36, mostly checkpoints | *There are many trumpets* (more than usual). | **Script (4b):** `*X* (n).` → `*X.* (n)`; keep a `?` / `!` the sentence already has |
+| 2b | Teaching commentary after the quote | 6 | "I walk." You name yourself rather than saying *I*. | Subagent: prose line under the block |
+| 2c | Description outside the italics | 3 | *courage*, as a name (citation) · *Resentful at the bell*, in waves. | Subagent: *courage* (as a name) · *Resentful at the bell.* (in waves) |
+| 2d | Tone mark as *(?)* | 5 (speech-moves.md) | "Azawan saw a dog (?)." (unsure about just *dog*). | Subagent: English hedge or stress, "Azawan saw a dog, I think." (unsure about just the dog) |
+| 2e | Instruction between checkpoint italics | 3 (questions.md) | *Didn’t Azawan tell?* Then confirm: *true, Azawan didn’t.* | Subagent: turns plus the instruction as the note, *Didn’t Azawan tell?* *True, Azawan didn’t.* (confirm the negative) |
+| 2f | *(Your name)* | 3 | *(Your name), I'm here; we can stay.* | Subagent: the `SELF` slot |
+| 3a | Grammar word in the note | 15 | (adjective before the noun) · (citation) · (loan verb) · (a call, then a discourse hook) · (a pointer to the quote) | Subagent: drop a word-order hint English already shows; (the dictionary form); (a borrowed word); (said to Azawan); (*that* is the quote) |
+| 3b | Teaching commentary as the note | 7 | relations.md *as of* notes (*whose-now …*, *`/w/` does not retarget the verb*) · pronouns.md / knowing.md (*`zaxar` would be Alahen*, *quitting for good is `hewel`*) | Subagent: prose under the block, or a **Compare with** line for a contrast |
+| 3c | Gloss label in the note | 1 | knowing.md (LIVE is how Azawan knows) | Subagent: (Azawan saw it happen) |
+
+**Rules written for the cleanup** ([inside parentheses](../meta/glosses.md#inside-parentheses), linted): parentheses inside the quotes for a scope island (*Azawan and (just water)*) and for a tag letter (*A dog (A) sees a cookie (E)*); alternative renderings `"Yes." / "True."`; dialogue turns `"Walk." "Will do."`. These cleared 11 inside-parentheses lines and 25 shape lines. The prompt index takes the first alternative and joins turns.
+
 **Why subagents for step 5 only.** The review is about 1,100 separate judgments, and each needs the teaching context of its own page: what the section's new form is, and what it marks. Spread across 30-odd pages, that is too much reading for one context to keep sharp, while the pages are independent of each other. Steps 1 to 4 and 6 set or check the rule. They need one consistent judgment, so they stay in the main session. Calibration comes before any fan-out because subagents copy whatever the calibration pages show: a mistake there repeats on every page.
 
 **Subagent brief** (each one gets the same text, its page, and its review list):
 
 - Read the convention in [glosses.md](../meta/glosses.md) and the two calibrated pages' diffs before editing.
-- For each example on the list: is the marking the section teaches stated, in the sentence or the note? Add a required note when it is not, move an inside-quote note out, keep aside parentheses, and move teaching commentary into a prose line under the block.
+- For each example on the list: is the marking the section teaches stated, in the sentence or the note? Add a required note when it is not, move an inside-quote note out, keep aside, scope-island, and tag-letter parentheses, and move teaching commentary into a prose line under the block. Fix each lint finding as its [category](#finding-categories) says.
 - Edit only free English lines, and add prose lines directly under a block. Never edit Agazan, morph lines, tables, headings, or any other page.
 - If an example's English seems to contradict the grammar on its page, do not fix either. List it as a gap for the editor.
 - Run `npm run lint:agazan -- docs/grammar/<page>.md` on its own page. Do not run `npm run build`: parallel builds share output.
@@ -228,7 +254,7 @@ Prints plain text, not JSON. A parse failure prints the parser error and exits 1
 Code: [`llm-prompt.ts`](../../src/parse/llm-prompt.ts) (core, selection, prompt; pure), [`llm-examples.ts`](../../src/parse/llm-examples.ts) (doc examples, terminology glosses, reader notes), tests in `llm-prompt.test.ts`. Where it differs from the plan above:
 
 - **Index cache.** Built on first use and cached at `dist/parse/llm-examples.json`, rebuilt when anything under `docs/grammar/*.md`, `src/`, or `data/` is newer. About 3 s to build; then the CLI costs the same as a plain parse.
-- **Example source.** Blockquote example blocks on the top-level grammar pages only (926 distinct glosses today, 88 with a note). A dialogue block's Agazan lines are joined. Tables and checkpoint answers are not used yet. A block is skipped when its free English line does not split as `"…"` plus at most one `(…)`, when it has backticks or links, when the quotes hold more `(…)` than the gloss has `ASIDE[` spans, or when the gloss has an unbound `←"…"`. So every phase 1 page pass adds examples.
+- **Example source.** Blockquote example blocks on the top-level grammar pages only (926 distinct glosses today, 88 with a note). A dialogue block's Agazan lines are joined. Tables and checkpoint answers are not used yet. A block is skipped when its free English line does not split as `"…"` plus at most one `(…)`, when it has backticks or links, when the quotes hold more `(…)` than the gloss allows (asides, scope islands, tag letters), or when the gloss has an unbound `←"…"`. So every phase 1 page pass adds examples.
 - **Core size.** About 4 KB, not 1.5 KB: role names, pointer vowels, tone marks, and the hook reading (`d-tea | instead | d-coffee` = coffee instead of tea) all proved necessary.
 - **Variant tails** of overlay labels (`.strong`, `.weak`, `.fault`, `.share`, `.ledger`, `.bookmark`, `.lasting`, …) are a fixed `GLOSS_READER.tails` table, shown in the legend only when a gloss uses one, not `reader` notes per overlay row. The test fails when an overlay gloss has a tail with no line.
 - **Hyphenated labels.** `CLUES-TOPIC` (a holder) and `AIMED-FLOWING` (emotion pieces) are legend-matched by piece; `ON-BEHALF` by the whole run.

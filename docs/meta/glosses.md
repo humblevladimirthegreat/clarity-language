@@ -66,7 +66,7 @@ A **complex citation** still gets a gloss if the morph unpacks structure the quo
 |------|--------|-----|
 | Surface | `` `agazan.` `` | Copyable Agazan; the only code span |
 | Morph | `z-dog | v-walk` | English labels; roman (no italics, no per-token backticks); spaced ` | ` between **words** |
-| Free English | `"A dog walks."` | Straight double quotes. A [note](#free-english-sentence-and-note) goes **after** the closing quote: `"Ahaben sings the Sing."` (that titled performance). Parentheses inside the quotes translate an aside span and nothing else. |
+| Free English | `"A dog walks."` | Straight double quotes. A [note](#free-english-sentence-and-note) goes **after** the closing quote: `"Ahaben sings the Sing."` (that titled performance). Parentheses inside the quotes only for an aside, a scope island, or a tag letter ([inside parentheses](#inside-parentheses)). |
 
 Do **not** prefix the gloss with `gloss:`.
 
@@ -96,7 +96,20 @@ A free English line is a loose sentence, then at most one note:
 
 The note is the careful reading written as a fact, not as an awkward second sentence. Do not add a second free English line.
 
-**Parentheses inside the quotes** translate an [aside](../grammar/spans.md#asides) span and nothing else: *"Azawan walks (quietly)."* An aside may also come out as commas or *by the way*.
+<a id="inside-parentheses"></a>
+**Parentheses inside the quotes** have three jobs and no others. Anything else is a note and goes after the closing quote.
+
+| Job | Example | Allowed |
+|-----|---------|---------|
+| An [aside](../grammar/spans.md#asides) span | "Azawan walks (quietly)." | One group per aside. An aside may also come out as commas or *by the way* |
+| A [scope island](../grammar/spans.md#scope-islands) | "Azawan and (just water)." | One group per island. English has no other way to fence a group, so the parentheses are the translation |
+| A [tag](../grammar/pronouns.md#tag-pronouns) letter, right after the noun it names | "A dog (A) sees a cookie (E). A cat sees A." | A single capital letter, once per tag the sentence sets; later sentences use the letter as a name |
+
+Grouping that English can say does not use parentheses: *either Azawan walks or Alahen runs, and Ahaben sleeps*; *a challenging dog and a challenging cat*. A tone mark is English hedging or stress, not *(?)*: "Azawan saw a dog, I think." (unsure about just the dog).
+
+**Alternative renderings.** When English has more than one natural rendering and the section teaches the range (polar answers, a sense that is *everything* or *everyone*), list them with ` / `: "Yes." / "True." / "Got it." A note, if any, goes after the last one and covers them all. Do not list alternatives that only vary wording.
+
+**Dialogue turns.** A block with more than one speaker's turn writes one quote per turn, as English prints dialogue: "Did Azawan walk?" "Well… Azawan sat." A note, if any, goes after the last turn and names the turn it is about. Do not mix turns and alternatives on one line.
 
 | Not this | This |
 |----------|------|
@@ -109,7 +122,7 @@ The note is the careful reading written as a fact, not as an awkward second sent
 
 **Several sentences on one line.** The note still goes after the closing quote and names which sentence it is about (*the singing is hearsay too*). Never put the note in the middle of the quote.
 
-**Checkpoints.** Agazan → English answers and English → Agazan prompts are italic, not quoted. They follow the same shape with italics in place of the quotes: *Ahaben sees that Alahen sneaks.* (a note, when there is one). A note is never required in a checkpoint answer; it is allowed when the checkpoint drills the marking ([translation exercises](translation-exercises.md)).
+**Checkpoints.** Agazan → English answers and English → Agazan prompts are italic, not quoted. They follow the same shape with italics in place of the quotes: *Ahaben sees that Alahen sneaks.* (a note, when there is one). The sentence's period goes inside the italics, and nothing follows the note. Alternatives and turns are italic too: *No.* / *False.*; *Didn’t Azawan tell?* *True, Azawan didn’t.* (confirm the negative). An instruction to the learner is a note, not text between the italics. The learner's own name is the `SELF` slot, never *(Your name)*. A note is never required in a checkpoint answer; it is allowed when the checkpoint drills the marking ([translation exercises](translation-exercises.md)).
 
 ### When a note is required
 <a id="note-required"></a>
@@ -553,7 +566,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 4. Compounds / stance / role / span `x` pieces are always hyphenated segments (`y-Ubune-x-Unowen`). Do not fuse a name into one unsegmented English label.
 5. **-r** uses `←…` (no trailing `-r`); **-x** stays as `-x`. Resume of a house name is `z-←Azawan`, not `z-r`. Fill-ask is `z-wh`, not `z-ar`. `wh` is role-neutral (*who*, *what*, *where*, …), so the gloss never contradicts the translation; `wh-else` for **u**.
 6. Multi-word units are in [phrase brackets](#phrase-brackets), nested by attachment; packages use labeled brackets (`NAME[…]`, `CITE[…]`, `SCOPE[…]`). The line [round-trips](#round-trip) to the exact Agazan.
-7. Free English is on its own **quoted** line (or grammar-table Gloss column, or italic in a checkpoint): a loose sentence plus at most one note after the closing quote, required when the section teaches the marking the sentence drops ([sentence and note](#free-english-sentence-and-note)). Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line only when `lint:agazan` treats parser output as redundant with that loose line).
+7. Free English is on its own **quoted** line (or grammar-table Gloss column, or italic in a checkpoint): a loose sentence (or [alternatives or dialogue turns](#inside-parentheses)) plus at most one note after the closing quote, required when the section teaches the marking the sentence drops ([sentence and note](#free-english-sentence-and-note)). Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line only when `lint:agazan` treats parser output as redundant with that loose line).
 
 ## See also
 
