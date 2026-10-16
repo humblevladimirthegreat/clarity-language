@@ -616,7 +616,7 @@ z-Alahen | [d-bread | g-division] | v-smell
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Alahen walks like a duck* (resembles it). `zalahen humum badagul vowogal.` or `zalahen humul badagul vowogal.`
+**1.** *Alahen walks like a duck.* (resembles it) `zalahen humum badagul vowogal.` or `zalahen humul badagul vowogal.`
 
 ::: details Show answer
 `zalahen humum badagul vowogal.`

@@ -783,7 +783,7 @@ Examples:
 >
 > z-Azawan | d-studio-mic | v-mute . z-radio | g-←mute
 >
-> "Azawan mutes a studio mic. A radio is such (muted too)."
+> "Azawan mutes a studio mic. A radio is such." (muted too)
 
 > `zazawan vamuyul. zeredel wamuyur gelavam.`
 >

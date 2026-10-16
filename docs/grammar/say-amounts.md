@@ -265,7 +265,7 @@ The easy / hard pair on a quality ranks effort against a bar ([vague amounts](co
 >
 > [z-Azawan | th-REQUIRE-rule | z-equal-rank | h-correct] | v-write
 >
-> "Azawan writes properly (as correctly as the rules require)."
+> "Azawan writes properly." (as correctly as the rules require)
 
 ### How often {#frequency-words}
 

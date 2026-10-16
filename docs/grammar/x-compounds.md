@@ -198,7 +198,7 @@ z-Azawan | d-raincoat | v-see
 ::: details Show answer
 z-Ahaben | d-hammer-x-wrench | v-find
 
-*Ahaben finds a hammer-wrench* (one tool).
+*Ahaben finds a hammer-wrench.* (one tool)
 :::
 
 #### Pick one {#beginner-pick-one}

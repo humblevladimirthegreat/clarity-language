@@ -957,7 +957,7 @@ z-Alahen | d-newspaper | [using | b-pencil] | v-write
 [z-radio | [used-by | b-Ahaben]]
 :::
 
-**4.** *The radio is here* (near me).
+**4.** *The radio is here.* (near me)
 
 ::: details Show answer
 `zeredel om bamun.`
@@ -1028,7 +1028,7 @@ y-Azawan | additionally | z-Alahen | v-tell
 ::: details Show answer
 z-Ahaben | d-newspaper | instead.open | d-radio | v-see
 
-*Ahaben sees the radio instead of the newspaper* (one possible replacement).
+*Ahaben sees the radio instead of the newspaper.* (one possible replacement)
 :::
 
 #### Pick one {#intermediate-pick-one}

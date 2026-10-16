@@ -695,7 +695,7 @@ z-Ahaben | !SCOPE[h-possibility | d-lie] | v-see
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azawan dislikes Onodan Alahen* (the work). `zazawan d@[onodan alahen] vogozam.` or `zazawan d[onodan alahen] vogozam.`
+**1.** *Azawan dislikes Onodan Alahen.* (the work) `zazawan d@[onodan alahen] vogozam.` or `zazawan d[onodan alahen] vogozam.`
 
 ::: details Show answer
 `zazawan d@[onodan alahen] vogozam.`

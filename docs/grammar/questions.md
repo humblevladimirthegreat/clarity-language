@@ -422,7 +422,7 @@ Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), 
 >
 > y-question | z-Azawan | v-walk | [from | b-house] . y-reject-frame
 >
-> "Did Azawan walk away from the house? That doesn't apply (Azawan was never at the house)."
+> "Did Azawan walk away from the house? That doesn't apply." (Azawan was never at the house)
 
 #### Three endings {#polar-endings}
 

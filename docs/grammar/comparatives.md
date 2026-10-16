@@ -33,13 +33,13 @@ When English would say *the most challenging*, you are still ranking, but you na
 >
 > [z-Azawan | z-rank/more | g-challenge]
 >
-> "Azawan is the most challenging (of all)."
+> "Azawan is the most challenging." (of all)
 
 > `zahaben zel gezebul.`
 >
 > [z-Ahaben | z-rank/more | g-sleepy]
 >
-> "Ahaben is the sleepiest (of all)."
+> "Ahaben is the sleepiest." (of all)
 
 ### Degree (*much* / *slightly*)
 <a id="degree"></a>
@@ -775,7 +775,7 @@ A CLUES or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): the n
 >
 > [z-house | th-REQUIRE-rule | z-equal-rank | g-strength]
 >
-> "The house is as strong as the rules require (up to code)."
+> "The house is as strong as the rules require." (up to code)
 
 > `zedehel thegol zel gral.`
 >
@@ -807,7 +807,7 @@ English *many*, *few*, *often*, and *late* rank against an unstated baseline, an
 >
 > [z-cat-x | th-PATTERN | z-rank/more | g-amount]
 >
-> "There are many cats (more than usual)."
+> "There are many cats." (more than usual)
 
 > `zazawan thobam zel hral vowogal.`
 >
@@ -886,7 +886,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 [z-Azawan | th-ABIL-able | z-equal-rank | g-showmanship]
 :::
 
-**4.** *There are many trumpets* (more than usual).
+**4.** *There are many trumpets.* (more than usual)
 
 ::: details Show answer
 `zadawolx thobam zel gral.`

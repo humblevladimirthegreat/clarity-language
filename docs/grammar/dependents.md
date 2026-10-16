@@ -126,7 +126,7 @@ The time poles take a noun the same way. Put the event or period in `/b/` right 
 >
 > z-Azawan | v-walk | [h-by | b-thunderstorm]
 >
-> "Azawan walks by the thunderstorm (no later than it)."
+> "Azawan walks by the thunderstorm." (no later than it)
 
 <a id="as-soon-as"></a>
 

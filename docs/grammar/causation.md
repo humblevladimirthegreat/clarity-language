@@ -340,7 +340,7 @@ As plain words, the same root is `zegel` *a machine* and `vegel` *to operate / e
 >
 > z-Azawan | v-walk | th-CAUSE | [th-if | b-rain]
 >
-> "Azawan walks if there is rain (as mechanism)."
+> "Azawan walks if there is rain." (as mechanism)
 
 > `zalahen vobohol thegem thavem bavahel.`
 >
@@ -513,7 +513,7 @@ z-Ahaben | v-scream | [th-CAUSE | b-Alahen]
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azawan sits because Alahen pours* (no one is to blame). `zazawan vehahel thavem barl zalahen vobohol.` or `zazawan vehahel thavel barl zalahen vobohol.`
+**1.** *Azawan sits because Alahen pours.* (no one is to blame) `zazawan vehahel thavem barl zalahen vobohol.` or `zazawan vehahel thavel barl zalahen vobohol.`
 
 ::: details Show answer
 `zazawan vehahel thavem barl zalahen vobohol.`

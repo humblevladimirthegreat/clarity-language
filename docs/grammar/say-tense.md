@@ -50,7 +50,7 @@ English *Azawan walked* hides whether you saw it, read it, or were told. Choose 
 >
 > z-Azawan | th-MEMORY | v-walk
 >
-> "Azawan walked (I remember it)."
+> "Azawan walked." (I remember it)
 
 > `zazawan thevom bazazam gruwol vowogal.`
 >
@@ -130,7 +130,7 @@ English *is walking* usually means one of three things. Put the event root on `/
 >
 > z-Azawan | th-LIVE | v-walk
 >
-> "Azawan is walking (I am watching)."
+> "Azawan is walking." (I am watching)
 
 > `zazawan hagem vowogal.`
 >
@@ -156,13 +156,13 @@ English *will* is three different claims.
 >
 > z-Azawan | th-plan-itinerary | v-walk
 >
-> "Azawan will walk (that is the plan)."
+> "Azawan will walk." (that is the plan)
 
 > `thobam bral verehel.`
 >
 > [th-PATTERN | b-later] | v-rain
 >
-> "It will rain (going by the pattern)."
+> "It will rain." (going by the pattern)
 
 > `zazawan thewam bazazam grawol vowogal.`
 >
@@ -262,7 +262,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 >
 > z-Azawan | v-walk | th-PERMIT-granted
 >
-> "Azawan may walk (I'm allowing it)."
+> "Azawan may walk." (I'm allowing it)
 
 > `yem vowogal zehon.`
 >
@@ -327,19 +327,19 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 >
 > z-Azawan | v-walk | th-REQUIRE-rule
 >
-> "Azawan must walk (the rules say so)."
+> "Azawan must walk." (the rules say so)
 
 > `zazawan vezebel thanathem.`
 >
 > z-Azawan | v-tell | th-relatedness-ought-offered
 >
-> "Azawan should tell, to serve relatedness (offered)."
+> "Azawan should tell, to serve relatedness." (offered)
 
 > `zazawan thanathem vezebel vul.`
 >
 > z-Azawan | th-relatedness-ought-offered | [v-tell | v-not]
 >
-> "Azawan shouldn't tell, to serve relatedness (offered)."
+> "Azawan shouldn't tell, to serve relatedness." (offered)
 
 For *should have*, date the ought with [stance as-of](relations.md#stance-as-of) **`thuhum`**; **`thuhum brul`** is *back then*. The ought then reads from that past moment. English also implies the act did not happen; if that matters, say it in its own sentence.
 
@@ -389,7 +389,7 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 >
 > z-Alahen | th-plan-sketch | v-walk
 >
-> "Alahen is thinking of a walk (a sketch is plenty)."
+> "Alahen is thinking of a walk." (a sketch is plenty)
 
 > `zalahen thudur vezehel.`
 >

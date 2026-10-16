@@ -657,7 +657,7 @@ On `/w/`, a number sits in the degree slot right before an adjective or adverb (
 >
 > z-Alahen | v-walk | th-70-percent-likely
 >
-> "Alahen is probably walking (I'd put it at 70%)."
+> "Alahen is probably walking." (I'd put it at 70%)
 
 | Marker | Writing | Stance sense |
 |--------|---------|--------------|
@@ -759,7 +759,7 @@ z-Alahen | d-score | v-three
 z-+-e3 | d-trophy | v-see
 :::
 
-**6.** *Azawan will probably punch (I'd put it at 70%).*
+**6.** *Azawan will probably punch.* (I'd put it at 70%)
 
 ::: details Show answer
 `zazawan vabahel th+70.`
@@ -837,7 +837,7 @@ z-Alahen | [d-seat-x | g-four.about] | v-see
 **-m** makes the number approximate; **-l** is exact.
 :::
 
-**2.** *Ahaben sees seat 5* (its label). `zahaben dezedal groval vahahal.` or `zahaben dezedal graval vahahal.`
+**2.** *Ahaben sees seat 5.* (its label) `zahaben dezedal groval vahahal.` or `zahaben dezedal graval vahahal.`
 
 ::: details Show answer
 `zahaben dezedal groval vahahal.`
@@ -1297,7 +1297,7 @@ z-Alahen | [d-star-x | g-three | g-plus-minus-1] | v-see
 ::: details Show answer
 z-Ahaben | [d-seat | g-negative-label-2] | v-see
 
-*Ahaben sees seat −2* (a label below zero).
+*Ahaben sees seat −2.* (a label below zero)
 :::
 
 **4.** `zagavulx grazobal.`

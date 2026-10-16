@@ -128,7 +128,7 @@ With **no** `/b/` after it, `gugol` points back to the one already mentioned: *t
 >
 > z-Alahen | [d-book | g-SAME] | v-write
 >
-> "Alahen writes the same book (as before)."
+> "Alahen writes the same book." (as before)
 
 **Compare with:** *Azawan is a dog* uses [kind / role](#classification) (`godogal`). Use **`SAME`** when two labels name one person. *A house like Azawan’s* is resemblance ([simile](relations.md#similative)), not one house under two names.
 
@@ -252,7 +252,7 @@ z-police | g-run
 ::: details Show answer
 z-Ahaben | [d-page | g-SAME] | v-see
 
-*Ahaben sees the same page (as before).*
+*Ahaben sees the same page.* (as before)
 :::
 
 **6.** `yol zalahen gugol bamun.`

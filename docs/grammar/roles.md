@@ -506,7 +506,7 @@ Pointer vowel **`u`** picks the latest event that left that part unsaid (`daexur
 >
 > z-Azawan | v-cook | [using | b-knife] . z-Alahen | v-cook | [using | b-spoon] . z-Azawan | d-←instrument.other | v-see
 >
-> "Azawan cooks with a knife. Alahen cooks with a spoon. Azawan sees the other tool (the knife)."
+> "Azawan cooks with a knife. Alahen cooks with a spoon. Azawan sees the other tool." (the knife)
 
 The scene has no such forms: `zexor`, `zexol`, and `zexom` are not words.
 
@@ -524,7 +524,7 @@ The [sake](sakes.md#sake-inventory) roots are never a direction: after one of th
 >
 > y-command | v-walk | h-west-th-Azawan
 >
-> "Walk left (Azawan’s left)."
+> "Walk left." (Azawan’s left)
 
 Bare arrow words are compass points on a north-up map:
 
@@ -540,7 +540,7 @@ Speaker and listener roots are the facing person when you mean *my left* / *your
 >
 > y-command | v-walk | z-listener | h-west-th-listener
 >
-> "You, walk left (your left)."
+> "You, walk left." (your left)
 
 For *their left*, put a [role pointer](pronouns.md#role-pointers) on **-r** after **`th`**: `hewezathaxar` is *on the latest doer's left*, and `hewezathaxer` is *on this sentence's own doer's left*.
 
@@ -722,7 +722,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Alahen is a thief* (as a practiced role).
+**1.** *Alahen is a thief.* (as a practiced role)
 
 ::: details Show answer
 `zalahen gaxaraguthem.`
@@ -754,7 +754,7 @@ z-Alahen | v-go . z-Azawan | d-←goal-x-go | v-see
 z-Alahen | v-steal . z-←bearer-x-steal | v-scream
 :::
 
-**5.** *Ahaben, walk left* (Azawan's left).
+**5.** *Ahaben, walk left.* (Azawan's left)
 
 ::: details Show answer
 `yel vowogal zahaben hewezathazawan.`
@@ -844,7 +844,7 @@ z-Ahaben | d-instrument-x-write | v-see
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Alahen goes left* (Alahen's own left). <!-- lint: error -->`zalahen vuvudel hewezal.`
+**1.** *Alahen goes left.* (Alahen's own left) <!-- lint: error -->`zalahen vuvudel hewezal.`
 
 ::: details Show answer
 `zalahen vuvudel hewezathaxer.`

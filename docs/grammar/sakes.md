@@ -117,7 +117,7 @@ That ending is **changeability**: how lasting the harm to the sake is, on the sa
 >
 > z-book | g-competence-unmet-modifiable
 >
-> "My book detracts from competence (modifiable)."
+> "My book detracts from competence." (modifiable)
 
 One noun can carry both a **`tha`** word and a **`thu`** word. The pair can run either way: *good now, costly later* (an immediate **`tha`** word and a lasting **`thu`** word), or *costly now, good later*:
 
@@ -161,7 +161,7 @@ When the noun is **not** yours (weather, a gathering, another person’s church)
 >
 > z-gathering | [w-autonomy-unmet-passing | g-stimulus]
 >
-> "The gathering detracts from autonomy right now (passing)."
+> "The gathering detracts from autonomy right now." (passing)
 
 The same `/w/` sake word can sit before any adjective. Then it is about **that property**: the tea's heat is what serves pleasure, not the tea as a whole. **`gobum`** is the case where the property is the noun itself, as the thing you react to.
 
@@ -232,7 +232,7 @@ z-tent | g-physical-met-lasting
 z-knife | g-sake-met-any-term
 :::
 
-**3.** *The wind detracts from the physical sake right now (passing).*
+**3.** *The wind detracts from the physical sake right now.* (passing)
 
 ::: details Show answer
 `zewedul woyuthur gobum.`
@@ -240,7 +240,7 @@ z-knife | g-sake-met-any-term
 z-wind | [w-physical-unmet-passing | g-stimulus]
 :::
 
-**4.** *The thunderstorm detracts from pleasure (modifiable).*
+**4.** *The thunderstorm detracts from pleasure.* (modifiable)
 
 ::: details Show answer
 `zavodel wozothum gobum.`
@@ -256,7 +256,7 @@ z-thunderstorm | [w-pleasure-unmet-modifiable | g-stimulus]
 z-Azawan | v-cook | th-pleasure-met-immediate
 :::
 
-**6.** *My basket detracts from autonomy (modifiable).*
+**6.** *My basket detracts from autonomy.* (modifiable)
 
 ::: details Show answer
 `zabezal gahuthum.`
@@ -279,7 +279,7 @@ z-bucket | g-beneficence-met-lasting
 ::: details Show answer
 z-rain | [w-physical-unmet-modifiable | g-stimulus]
 
-*The rain detracts from the physical sake (modifiable).*
+*The rain detracts from the physical sake.* (modifiable)
 :::
 
 **3.** `zugugol gozothar.`
@@ -295,7 +295,7 @@ z-cookie | g-pleasure-met-immediate
 ::: details Show answer
 z-Azawan | v-sing | th-competence-unmet-modifiable
 
-*Azawan sings, and that detracts from competence (modifiable).*
+*Azawan sings, and that detracts from competence.* (modifiable)
 :::
 
 **5.** `zededul gozothur goyuthal.`
@@ -316,7 +316,7 @@ z-night | [w-understanding-met-any-term | g-stimulus]
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *My knife detracts from competence (modifiable).* `zanaval gulothum.` or `zanaval gulotham.`
+**1.** *My knife detracts from competence.* (modifiable) `zanaval gulothum.` or `zanaval gulotham.`
 
 ::: details Show answer
 `zanaval gulothum.`

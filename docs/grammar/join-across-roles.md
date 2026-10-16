@@ -396,7 +396,7 @@ z-Azawan | v-scream | th-MEMORY | th-REPORTED | th-or-exactly-one
 ::: details Show answer
 z-Alahen | d-trophy | v-choose
 
-*Alahen chooses the trophy* (as the one choice).
+*Alahen chooses the trophy.* (as the one choice)
 :::
 
 **2.** `zevehal guan bamedal.`
@@ -412,7 +412,7 @@ z-finish-line | [g-without | b-medal]
 ::: details Show answer
 z-teamwork | [g-open-to | b-Azawan]
 
-*A team open to Azawan* (more members may follow).
+*A team open to Azawan.* (more members may follow)
 :::
 
 **4.** `zahaben vezugel xuen zalahen vabahel.`

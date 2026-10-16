@@ -342,7 +342,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 >
 > z-Azawan | v-walk | h-rain | h-night | h-when-one
 >
-> "Azawan walks either when raining or at night (not both)."
+> "Azawan walks either when raining or at night." (not both)
 
 > `zalahen vezebal herehel hozezol haol.`
 >
@@ -414,7 +414,7 @@ Under a question, **`her`** asks which time ranks first: *When's best?* With occ
 >
 > z-Azawan | [w-rain | w-night | w-when-one | g-sleepy]
 >
-> "Azawan is sleepy either when raining or at night (not both)."
+> "Azawan is sleepy either when raining or at night." (not both)
 
 ### Practice {#intermediate-practice}
 
@@ -450,7 +450,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan climbs either when snowing or at night (not both).*
+**1.** *Azawan climbs either when snowing or at night.* (not both)
 
 ::: details Show answer
 `zazawan vagayal hozezol hanadal hol.`
@@ -529,7 +529,7 @@ z-Alahen | v-walk | h-ice | h-when-last
 ::: details Show answer
 z-Azawan | [w-snow | w-night | w-when-one | g-sleepy]
 
-*Azawan is sleepy either when snowing or at night (not both).*
+*Azawan is sleepy either when snowing or at night.* (not both)
 :::
 
 **5.** `zahaben vagayal herehel havegel hoel.`

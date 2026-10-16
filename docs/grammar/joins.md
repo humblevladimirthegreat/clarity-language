@@ -26,19 +26,19 @@ The ending says whether the list is complete. Closed **-l** means these are the 
 >
 > [z-dog | z-cat | z-and.open]
 >
-> "a dog and a cat (and possibly more)."
+> "a dog and a cat." (and possibly more)
 
 > `zazawan zalahen zam.`
 >
 > [z-Azawan | z-Alahen | z-and.open]
 >
-> "Azawan and Alahen (and possibly more)."
+> "Azawan and Alahen." (and possibly more)
 
 > `vowogal varahal vam.`
 >
 > [v-walk | v-run | v-and.open]
 >
-> "walks and runs (and possibly more)."
+> "walks and runs." (and possibly more)
 
 Whatever the join, the whole list fills one role in the clause. A [role pointer](pronouns.md#role-pointers) back to that role picks up the whole group:
 
@@ -80,13 +80,13 @@ When English would offer a menu and ask to *pick one*, or leave the pick *(optio
 >
 > [z-tea | z-coffee | z-or-exactly-one]
 >
-> "tea or coffee (pick one)."
+> "tea or coffee." (pick one)
 
 > `zagavel zom.`
 >
 > [z-coffee | z-or.open]
 >
-> "coffee (optional)."
+> "coffee." (optional)
 
 ### How many items {#standalone-phrase}
 <a id="single-item-phrase"></a>
@@ -254,7 +254,7 @@ A clause is long, so a join that waits until the end would leave you holding two
 >
 > [z-Azawan | v-walk | x-and.open | z-Alahen | v-run]
 >
-> "Azawan walks and Alahen runs (and possibly more)."
+> "Azawan walks and Alahen runs." (and possibly more)
 
 > `zazawan vowogal xol zalahen varahal xol zahaben vezebal.`
 >
@@ -354,7 +354,7 @@ z-Ahaben | v-pay | b-none
 [z-cart | z-not]
 :::
 
-**5.** *Alahen pays and Azawan sees a basket (and possibly more).*
+**5.** *Alahen pays and Azawan sees a basket.* (and possibly more)
 
 ::: details Show answer
 `zalahen vamol xam zazawan dabezal vahahal.`
@@ -481,7 +481,7 @@ Only the item just before the join word takes a hook this way. A hook anywhere e
 >
 > [z-dog | z-cat | z-and.open | [g-ownership | b-Azawan]]
 >
-> "Azawan's dog and cat (and possibly more)."
+> "Azawan's dog and cat." (and possibly more)
 
 A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaining](clause.md#complex-chaining).
 
@@ -489,7 +489,7 @@ A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaini
 >
 > [z-dog | z-cat | z-and.open | [g-ownership | [b-Azawan | g-blue]]]
 >
-> "Blue Azawan's dog and cat (and possibly more)."
+> "Blue Azawan's dog and cat." (and possibly more)
 
 **Compare with:** *part of* / *contents of* / *made of* / origin *from* use [of relations](relations.md#of-relations), not `egabe`. A [sakes](sakes.md) need on `/ɡ/` already means the speaker’s belonging (`gulothal` *my … serves competence*).
 
@@ -1238,7 +1238,7 @@ NAME[z-equal-rank]
 ::: details Show answer
 z-Alahen | NAME[d-page | d-pen | d-and] | v-see
 
-*Alahen sees “Page-and-Pen”* (the familiar pair).
+*Alahen sees “Page-and-Pen”.* (the familiar pair)
 :::
 
 #### Pick one {#advanced-pick-one}
@@ -1286,7 +1286,7 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 >
 > [z-tea | z-coffee | z-water | z-anything]
 >
-> "any of tea, coffee, or water is fine (no order)."
+> "any of tea, coffee, or water is fine." (no order)
 
 **For *except*, use:** hook **`ul`** / **`um`** ([hooks](hooks.md)). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (pick one of a closed list, but the pick is optional: `zedehel zagavel zol zom`).
 

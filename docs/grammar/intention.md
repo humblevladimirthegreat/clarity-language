@@ -182,7 +182,7 @@ z-Ahaben | th-plan-atlas | v-scream
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Alahen intends to see a pawn* (just the direction, details open). `zalahen thamar dobohul vahahal.` or `zalahen thamal dobohul vahahal.`
+**1.** *Alahen intends to see a pawn.* (just the direction, details open) `zalahen thamar dobohul vahahal.` or `zalahen thamal dobohul vahahal.`
 
 ::: details Show answer
 `zalahen thamar dobohul vahahal.`
@@ -537,7 +537,7 @@ English *will* can state a plan or a forecast. A plan uses [PLAN](#plan-predict)
 >
 > [th-PATTERN | b-later] | v-rain
 >
-> "It will rain (going by the usual pattern)."
+> "It will rain." (going by the usual pattern)
 
 > `zalahen thamam thunel bral vehahel.`
 >
@@ -681,7 +681,7 @@ z-Ahaben | th-WANT-lasting | th-plan-itinerary | d-pen | v-find
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azawan can't sit right now* (Azawan usually can). `zazawan vehahexel.` or `zazawan vehahexul.`
+**1.** *Azawan can't sit right now.* (Azawan usually can) `zazawan vehahexel.` or `zazawan vehahexul.`
 
 ::: details Show answer
 `zazawan vehahexel.`

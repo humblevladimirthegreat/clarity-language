@@ -101,19 +101,19 @@ The same roots take the role letter of the slot they fill. As a direct object th
 >
 > z-Azawan | d-speaker-x | v-see
 >
-> "Azawan sees speaker and associates (not you)."
+> "Azawan sees speaker and associates." (not you)
 
 > `zazawan dehonx vahahal.`
 >
 > z-Azawan | d-listener-x | v-see
 >
-> "Azawan sees you all (the addressees)."
+> "Azawan sees you all." (the addressees)
 
 > `zazawan dahan vahahal.`
 >
 > z-Azawan | d-interlocutors | v-see
 >
-> "Azawan sees us (you and I)."
+> "Azawan sees us." (you and I)
 
 <!-- cheat-sheet: people-pointing -->
 | Agazan | Use | English |
@@ -391,7 +391,7 @@ English *the boxes are heavy* can mean each box or the pile. Put **-x** on the *
 >
 > z-file-box-x | g-heavy-x
 >
-> "The file-boxes are heavy as a pile (but not individually)."
+> "The file-boxes are heavy as a pile." (but not individually)
 
 | Agazan | Use | English |
 |--------|-----|---------|
@@ -490,7 +490,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Azawan-x | v-sing-x
 :::
 
-**2.** *Alahen sings jointly* (not a solo).
+**2.** *Alahen sings jointly.* (not a solo)
 
 ::: details Show answer
 `zalahen vezehelx.`
@@ -577,7 +577,7 @@ y-Alahen-x
 ::: details Show answer
 z-sheet-music-x | g-heavy
 
-*The sheets of music are heavy* (each, or either way).
+*The sheets of music are heavy.* (each, or either way)
 :::
 
 #### Pick one {#intermediate-pick-one}

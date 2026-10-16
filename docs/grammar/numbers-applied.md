@@ -405,7 +405,7 @@ h-_1,4 | z-Alahen | v-walk
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Alahen sees spoon 3* (its label). `zalahen duzubul grorel vahahal.` or `zalahen duzubul grarel vahahal.`
+**1.** *Alahen sees spoon 3.* (its label) `zalahen duzubul grorel vahahal.` or `zalahen duzubul grarel vahahal.`
 
 ::: details Show answer
 `zalahen duzubul grorel vahahal.`
