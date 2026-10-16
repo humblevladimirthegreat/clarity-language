@@ -33,13 +33,13 @@ When English would say *the most challenging*, you are still ranking, but you na
 >
 > [z-Azawan | z-rank/more | g-challenge]
 >
-> "Azawan is the most challenging." (of all)
+> "Azawan is the most challenging."
 
 > `zahaben zel gezebul.`
 >
 > [z-Ahaben | z-rank/more | g-sleepy]
 >
-> "Ahaben is the sleepiest." (of all)
+> "Ahaben is the sleepiest."
 
 ### Degree (*much* / *slightly*)
 <a id="degree"></a>
@@ -510,7 +510,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *mango* | `amegol` |
 | *pie* | `abawul` |
 | *doughnut* | `ododel` |
-| *cart* | `agegal` |
 | *sleep* | `vezebal` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
@@ -547,12 +546,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-mango-x | z-pie-x | z-rank/more | g-amount]
 :::
 
-**5.** *The cart is twice as heavy as the mango.*
+**5.** *The pie is twice as heavy as the mango.*
 
 ::: details Show answer
-`zagegal zamegol zoel garagam hradul.`
+`zabawul zamegol zoel garagam hradul.`
 
-[z-cart | z-mango | z-equal-rank | g-heavy | h-two]
+[z-pie | z-mango | z-equal-rank | g-heavy | h-two]
 :::
 
 **6.** *Ahaben is heavier than planned.*
@@ -775,7 +774,7 @@ A CLUES or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): the n
 >
 > [z-house | th-REQUIRE-rule | z-equal-rank | g-strength]
 >
-> "The house is as strong as the rules require." (up to code)
+> "The house is as strong as the rules require."
 
 > `zedehel thegol zel gral.`
 >
@@ -813,7 +812,7 @@ English *many*, *few*, *often*, and *late* rank against an unstated baseline, an
 >
 > [z-Azawan | th-PATTERN | z-rank/more | h-how-often] | v-walk
 >
-> "Azawan often walks."
+> "Azawan often walks." (more often than usual)
 
 <!-- cheat-sheet: roles-comparing -->
 | English | Bar and rank |
@@ -917,7 +916,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 ::: details Show answer
 [z-Ahaben | th-PATTERN | z-rank/less | h-how-often] | v-sing
 
-*Ahaben rarely sings.*
+*Ahaben rarely sings.* (less often than usual)
 :::
 
 **4.** `zalahen thewam bahaben zel gahagum.`

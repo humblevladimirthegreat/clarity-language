@@ -72,7 +72,7 @@ The same join reads differently with two or more items, [one item](../joins.md#s
 | `zael` | *A, then B* | *start with X* | *in no particular order* | I |
 | `zaem` | *roughly A, then B* | *maybe start with X* | *not sure where to start* | I |
 | `zoel` | *A and B tied* | *X tied for* | *it's a draw* | I |
-| `zuel` | *B, then A* (last first) | *X last* | *no least-favorite* | I |
+| `zuel` | *A, B, from last to first* | *X last* | *no least-favorite* | I |
 
 A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `xal` *nothing happened*, `xar` *something happened*.
 
@@ -80,7 +80,7 @@ A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `x
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [SHARED](../joins.md#shared-after-the-join): describe every item, right after the join | `zodogal zagadul zal gamadam` | *(challenging dog) and (challenging cat)* | I |
+| [SHARED](../joins.md#shared-after-the-join): describe every item, right after the join | `zodogal zagadul zal gamadam` | *a challenging dog and a challenging cat* | I |
 | [Every K](../joins.md#universals-domains-generics) | `zual gagadul` | *every cat* | I |
 | [K in general](../joins.md#universals-domains-generics) | `zuam gagadul` | *cats in general* | I |
 | [The kind itself](../joins.md#kind-reference) | `zuan gagadul` | *the cat* (as a species) | I |
@@ -131,7 +131,7 @@ A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds a
 
 ### Same-role and front of sentence {#same-role-discourse}
 
-**-l**: B is the whole story. **-m**: *and maybe more* (in-clause) or *one of several* (at the front). **-n** names the whole phrase: `dedehel on dagavel` *Tea-to-Coffee* (a cafe).
+**-l**: B is the whole story. **-m**: *and maybe more* (in-clause) or *one of several* (at the front). **-n** names the whole phrase: `dedehel on dagavel` *Coffee-Instead-of-Tea* (a cafe).
 
 | Hook | `A HOOK B` | [At the front](../hooks.md#discourse-hooks) | **-m** at the front | Stage |
 |------|------------|--------------|---------------------|-------|

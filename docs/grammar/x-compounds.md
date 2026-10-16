@@ -350,6 +350,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Setting:** a front porch
 
+**New words:**
+
+| English | Agazan | Cue |
+|---------|--------|-----|
+| *plate* | `ebedel` | 🍽️ |
+
 **Review:**
 
 | English | Agazan |
@@ -360,7 +366,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahaben* | `ahaben` |
 | *doorbell* | `oyelebehul` |
 | *salad* | `azavul` |
-| *plate* | `ebedel` |
 | *flower* | `avavul` |
 | *croissant* | `ogazal` |
 | *see* | `vahahal` |

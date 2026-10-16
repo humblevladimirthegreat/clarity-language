@@ -529,7 +529,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧉,mate,emeda,fellowship,mate is shared fellowship,,fellow,
 🧊,ice,azaho,kelvin,ice marks thermodynamic temperature; kelvin is the SI temperature unit,,,restrictors.md#intermediate-practice
 🥢,stick,ahube,,chopsticks stand for any stick: a thin length of wood,,,
-🍽️,plate,ebede,service,plate is set for service,,help; dish; assistance; favor; aid,hooks.md#beginner-practice
+🍽️,plate,ebede,service,plate is set for service,,help; dish; assistance; favor; aid,x-compounds.md#intermediate-practice
 🍴,cutlery,agade,provision,cutlery enables provision,v:eat,supply; resource; meal; food; diet,knowing.md#beginner-practice
 🥄,spoon,uzubu,portion,spoon measures a portion,,component; segment,numbers-applied.md#intermediate-practice
 🔪,knife,anava,severity,a knife cuts deep and hard,,sharp; severe,pronouns.md#beginner-practice
@@ -894,7 +894,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💼,briefcase,ebeve,business,briefcase carries work affairs; business is commercial affairs,z:job,task; affair; enterprise; profession; company,
 📁,folder,ovode,,,,,
 🗂️,divider,edova,,,,,
-📅,calendar,agada,week,a calendar page reads a week across each row; week is the seven-day unit,,date; schedule,
+📅,calendar,agada,week,a calendar page reads a week across each row; week is the seven-day unit,,date; schedule,sakes.md#beginner-practice
 🗒️,notepad,onode,,,,,
 📇,index-card,enade,lookup,card index sorts; lookup is the unobservable find-operation,,search; index,
 📈,uptrend,abede,degree,an uptrend marks more on the scale; degree is vague how-much,m.h:kind-of,level; step,
@@ -1404,7 +1404,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 𐃌,chariot,eheyu,conquest,a chariot carries the conqueror; conquest is taking by force,,,
 𓄛,animal,anahu,,the hide sign marks words for animals in hieroglyphs,,creature; beast,
 𓉐,room,uruhe,,the floor-plan sign is a walled space with a doorway,,chamber,
-𓊲,table,edabe,,a low table set with offerings,,,
+𓊲,table,edabe,,a low table set with offerings,,,hooks.md#beginner-practice
 𝄐,fermata,evada,lingering,a fermata holds a note longer than its beat; lingering is staying past the expected time,,,
 𝄒,breath-mark,amago,breather,a breath mark gives the singer a moment to breathe; a breather is a short break to recover,,,
 𝄓,caesura,ezahu,interruption,a caesura cuts the music off mid-flow; an interruption breaks off what was going on,,,

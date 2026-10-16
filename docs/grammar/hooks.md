@@ -165,11 +165,11 @@ The four one-vowel hooks name the everyday extras:
 
 To ask *where?*, put the fill-ask blank **`bar`** after the hook (`ol bar` *where?*, `ul bar` *where from?*). See [Where?](questions.md#where).
 
-> `zalahen vehahel ol bebedel.`
+> `zalahen vehahel ol bedabel.`
 >
-> z-Alahen | v-sit | [at | b-plate]
+> z-Alahen | v-sit | [at | b-table]
 >
-> "Alahen sits at a plate."
+> "Alahen sits at a table."
 
 > `zazawan dawahel vobohol ul bedebul.`
 >
@@ -243,7 +243,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agazan | Cue |
 |---------|--------|-----|
-| *plate* | `ebedel` | 🍽️ |
+| *table* | `edabel` | 𓊲 |
 | *salad* | `azavul` | 🥗 |
 | *family* | `avahal` | 👪 |
 | *teapot* | `edebul` | 🫖 |
@@ -299,12 +299,12 @@ z-Azawan | d-salad | v-cook | [for | b-Ahaben]
 additionally | z-Ahaben | v-sit
 :::
 
-**5.** *There is a cookie at a plate.*
+**5.** *There is a family at a table.*
 
 ::: details Show answer
-`zugugol ol bebedel.`
+`zavahal ol bedabel.`
 
-z-cookie | [at | b-plate]
+z-family | [at | b-table]
 :::
 
 **6.** *The family, except Alahen, sits.*
@@ -433,7 +433,7 @@ To make a whole `A HOOK B` phrase into a name (a store, a title, a handle), give
 >
 > NAME[d-tea | instead | d-coffee]
 >
-> "Tea-to-Coffee" (a cafe name)
+> "Coffee-Instead-of-Tea" (a cafe name)
 
 **Compare with:** *no dog* / *not X* uses a prefixed [join](joins.md#join-series-ending-shared) (`zodogal zul`). The hook **`ul`**, with no role letter, always takes a B out of A.
 
@@ -494,17 +494,17 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 >
 > "Azawan fights against a guard."
 
-> `zazawan vezebel aem bagahol.`
+> `zazawan vuvudel aem bedehal.`
 >
-> z-Azawan | v-tell | [by | b-camera]
+> z-Azawan | v-go | [by | b-train]
 >
-> "Azawan tells by camera."
+> "Azawan goes by train."
 
 > `zazawan vowogal uem berehel.`
 >
 > z-Azawan | v-walk | [contrary-to | b-rain]
 >
-> "Azawan walks contrary to rain."
+> "Azawan walks despite the rain."
 
 To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`ael`**, the same way as [Where?](questions.md#where).
 
@@ -512,7 +512,7 @@ To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`a
 >
 > y-question | [using | b-wh] | z-Azawan | d-book | v-write
 >
-> "How does Azawan write the book?"
+> "What does Azawan write the book with?"
 
 **Compare with:** some English prepositions use other forms. Company *with Alahen* is a [join-relation](join-across-roles.md#join-relations), and so is *without*. *Like* is a [simile](relations.md#similative). *Between* is a hosted pair plus a `/b/` join ([relations](relations.md#locative-relations)). *So that Alahen sits* is **`hogom barl`**.
 
@@ -524,7 +524,7 @@ English *Azawan's dog* often means the dog is in Azawan's **use**: Azawan keeps 
 >
 > [z-dog | [used-by | b-Azawan]] | v-run
 >
-> "Azawan's dog runs."
+> "Azawan's dog runs." (the dog Azawan keeps)
 
 > `zazawan dahazal em balahen vahahal.`
 >
@@ -658,7 +658,7 @@ Use `ol` in place of `om` for the exact spot (`ol bamun` *right where I am*).
 >
 > z-Alahen | v-sleep | [away-from | b-interlocutors]
 >
-> "Alahen sleeps over there."
+> "Alahen sleeps over there." (away from both you and me)
 
 English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agazan names the landmark with the plain motion verb **`vuvudel`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vuvudel` says nothing about how someone travels; use `vowogal` (*walk*) or `varahal` (*run*) only when the manner matters.
 
@@ -692,7 +692,7 @@ With an object, `vuvudel` moves something else: `zazawan vuvudel dehahel.` *Azaw
 >
 > z-Azawan | v-carry | d-box | [from | b-speaker]
 >
-> "Azawan takes the box away."
+> "Azawan takes the box away." (away from where I am)
 
 In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#stand-in)), `om bamun` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
 
@@ -810,7 +810,9 @@ On a later clause in a [clause `/x/` join](joins.md#clause-joins), the hook goes
 >
 > y-Azawan | additionally | z-Alahen | v-walk
 >
-> "Azawan: additionally, Alahen walks." (a call, then a discourse hook)
+> "Azawan! Additionally, Alahen walks."
+
+The call comes first, then the discourse hook, then the body.
 
 **Compare with:** packaging a list uses prefixed [joins](joins.md#join-series-ending-shared) (`zal` / `zam` / `val` …).
 
@@ -883,7 +885,7 @@ A range **-r** always has a word on each side (`oer` / `uar` / `uer`). With noth
 >
 > z-Azawan | strictly-between | z-Ahaben | v-sleep
 >
-> "Everyone between Azawan and Ahaben sleeps."
+> "Everyone between Azawan and Ahaben sleeps." (not Azawan or Ahaben themselves)
 
 Between two numbers with digits, plain **`al`** and **`ul`** also make a range, because *3, including 5* has nothing to include into: [ranges](numbers-applied.md#ranges).
 
@@ -893,7 +895,7 @@ A word right after B describes B alone, not the range. To describe the range its
 >
 > z-Azawan | [w-amazement | through] | z-Ahaben | v-walk
 >
-> "Amazingly, everyone from Azawan through Ahaben walks."
+> "Everyone from Azawan all the way through Ahaben walks." (a surprisingly wide range)
 
 **Compare with:** `zazawan zahaben zal` is *Azawan and Ahaben*, the two ends only. `zazawan zahaben zael` is *Azawan, then Ahaben*, an order with nothing between. Spatial *between a train and a station* is a [relation](relations.md#spatial-path), not a range.
 
@@ -925,7 +927,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *surprise* | `ezul` |
 | *big* | `gelavam` |
 | *write* | `varadal` |
-| *tell* | `vezebel` |
 | *sit* | `vehahel` |
 | *run* | `varahal` |
 | *see* | `vahahal` |
@@ -996,15 +997,15 @@ in.fact | z-Alahen | v-write
 ::: details Show answer
 z-Alahen | d-camera | v-find | [at | b-none]
 
-*Alahen finds the camera nowhere.*
+*Alahen doesn't find the camera anywhere.*
 :::
 
-**3.** `zavahal am zazawan ul zalahen vezebel.`
+**3.** `zavahal am zazawan ul zalahen varadal.`
 
 ::: details Show answer
-z-family | including.open | z-Azawan | except | z-Alahen | v-tell
+z-family | including.open | z-Azawan | except | z-Alahen | v-write
 
-*The family, including Azawan and maybe more, but not Alahen, tells.*
+*The family, including Azawan and maybe more, but not Alahen, writes.*
 :::
 
 **4.** `zazawan oel zahaben varadal.`
@@ -1012,15 +1013,15 @@ z-family | including.open | z-Azawan | except | z-Alahen | v-tell
 ::: details Show answer
 z-Azawan | through | z-Ahaben | v-write
 
-*Azawan through Ahaben write.* (everyone in the line from Azawan to Ahaben)
+*Everyone from Azawan through Ahaben writes.*
 :::
 
-**5.** `yazawan al zalahen vezebel.`
+**5.** `yazawan al zalahen varahal.`
 
 ::: details Show answer
-y-Azawan | additionally | z-Alahen | v-tell
+y-Azawan | additionally | z-Alahen | v-run
 
-*Azawan! Additionally, Alahen tells.*
+*Azawan! Additionally, Alahen runs.*
 :::
 
 **6.** `zahaben dunuzel om deredel vahahal.`
@@ -1080,7 +1081,7 @@ In a clause, add a role letter to that citation (`vowogalul`). The extra partici
 >
 > leave
 >
-> "leave" (citation)
+> "leave" (the dictionary form)
 
 The left ending is part of the stem, so two different left roots stay distinct once the hook is attached. In speech that ending starts the hook's syllable, so no consonant closes a syllable mid-word: `owogalul` is *o-wo-ga-lul*.
 
@@ -1130,6 +1131,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Each fu
 | *tell* | `vezebel` |
 | *boat* | `obodal` |
 | *ship* | `ehebal` |
+| *guard* | `agavol` |
 | *fog* | `avegel` |
 | *ice* | `azahol` |
 
@@ -1193,12 +1195,12 @@ z-Alahen | d-ship | v-enter
 *Alahen enters a ship.*
 :::
 
-**4.** `zahaben dobodal vowogaluel.`
+**4.** `zahaben dagavol vowogaluel.`
 
 ::: details Show answer
-z-Ahaben | d-boat | v-oppose
+z-Ahaben | d-guard | v-oppose
 
-*Ahaben opposes the boat.*
+*Ahaben opposes the guard.*
 :::
 
 #### Pick one {#advanced-pick-one}
@@ -1215,7 +1217,7 @@ A fused verb takes its extra participant as an ordinary object, `/d/`; after a v
 
 #### Fix it {#advanced-fix-it}
 
-**1.** *leave* (the dictionary citation) <!-- lint: error -->`vowogalul.`
+**1.** *leave* (the dictionary form) <!-- lint: error -->`vowogalul.`
 
 ::: details Show answer
 `owogalul.`

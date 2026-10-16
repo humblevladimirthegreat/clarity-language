@@ -109,13 +109,13 @@ The act word **`yol`** / **`yom`** already makes the sentence a question, so the
 >
 > y-question | ? | z-Azawan | v-walk
 >
-> "Does Azawan walk?"
+> "Does Azawan walk?" (with the rising tone)
 
 > `yol ?zar vowogal.`
 >
 > y-question | ?z-wh | v-walk
 >
-> "Who walks?"
+> "Who walks?" (with the rising tone on *who*)
 
 The sentence still ends in a period.
 
@@ -364,7 +364,7 @@ y-sure-soft
 ::: details Show answer
 Alahen
 
-*Alahen.* (just the fill)
+*Alahen.* (a one-word answer)
 :::
 
 #### Pick one {#beginner-pick-one}
@@ -422,7 +422,7 @@ Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), 
 >
 > y-question | z-Azawan | v-walk | [from | b-house] . y-reject-frame
 >
-> "Did Azawan walk away from the house? That doesn't apply." (Azawan was never at the house)
+> "Did Azawan walk away from the house?" "The question doesn't apply." (Azawan was never at the house)
 
 #### Three endings {#polar-endings}
 
@@ -452,7 +452,7 @@ Each stance word takes one of three endings, on the same settled-to-passing scal
 >
 > y-question | z-Azawan | v-walk | [from | b-house] . y-reject-frame-for-now
 >
-> "Did Azawan walk away from the house? Not as things stand: Azawan isn't at the house."
+> "Is Azawan walking away from the house?" "The question doesn't apply, for now." (Azawan isn't at the house yet)
 
 **`yoel`**, **`yoem`** and **`yoer`** decline to answer without saying *no* and without judging the question. Nobody should hear them as a denial or as a rejected frame.
 
@@ -460,7 +460,7 @@ Each stance word takes one of three endings, on the same settled-to-passing scal
 >
 > y-question | z-Alahen | v-sleep . y-decline-for-now
 >
-> "Is Alahen asleep? I'll pass for now."
+> "Is Alahen asleep?" "I'll pass for now."
 
 #### Answering a command or request {#answer-command}
 
@@ -561,13 +561,13 @@ When the question already contains *not* (*Didn’t Azawan run?*), *yes* and *no
 >
 > y-question | z-Azawan | [v-run | v-not] . y-yes
 >
-> "Didn’t Azawan run? True, Azawan didn’t."
+> "Didn’t Azawan run?" "True, Azawan didn’t."
 
 > `yael varahal vul.`
 >
 > y-yes | [v-run | v-not]
 >
-> "True: (they) didn’t run."
+> "True, they didn’t run."
 
 ### Fill-ask arity {#fill-ask-arity}
 
@@ -746,13 +746,13 @@ A **rhetorical question** is shaped like a question, but you are not waiting for
 >
 > y-statement | y-question | z-wh | v-care
 >
-> "Who cares? (Nobody.)"
+> "Who cares?" (nobody does)
 
 > `yal yol zazawan vowogal.`
 >
 > y-statement | y-question | z-Azawan | v-walk
 >
-> "Doesn't Azawan walk? (Of course Azawan does.)"
+> "Doesn't Azawan walk?" (of course Azawan does)
 
 Soft **`yam yol`** muses rather than insists: you lean toward an answer but put it forward lightly, as if thinking aloud.
 
@@ -800,7 +800,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Didn’t Azawan tell?* Then confirm: *true, Azawan didn’t.*
+**1.** *Didn’t Azawan tell?* *True, Azawan didn’t.* (confirm the negative)
 
 ::: details Show answer
 `yol zazawan vezebel vul. yael.`
@@ -808,7 +808,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 y-question | z-Azawan | [v-tell | v-not] . y-yes
 :::
 
-**2.** *When does Ahaben sit?* Then: *I'll pass for now.*
+**2.** *When does Ahaben sit down?* *I'll pass for now.*
 
 ::: details Show answer
 `yol har zahaben vehahel. yoer.`
@@ -869,9 +869,9 @@ y-question | h-like | b-wh | z-Ahaben | v-tell
 **3.** `yol dovavol dor.`
 
 ::: details Show answer
-y-question | [d-phone | d-which]
+y-question | [d-phone | d-any]
 
-*Which phone?*
+*Any phone?* (name one; any will do)
 :::
 
 **4.** `yol zalahen zal.`
@@ -887,7 +887,7 @@ y-question | [z-Alahen | z-and]
 ::: details Show answer
 y-statement | y-question | z-wh | v-attest
 
-*Who attests? (Nobody.)*
+*Who attests?* (nobody does)
 :::
 
 **6.** `yol ol bar zodogal vezebal.`
@@ -900,7 +900,7 @@ y-question | [at | b-wh] | z-dog | v-sleep
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Didn’t Alahen lie?* Answer: *False, Alahen did lie.* `yuel.` or `yael.`
+**1.** *False, Alahen did lie.* (answering *Didn’t Alahen lie?*) `yuel.` or `yael.`
 
 ::: details Show answer
 `yuel.`

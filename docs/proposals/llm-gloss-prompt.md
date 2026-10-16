@@ -1,6 +1,6 @@
 # Translation prompt from the parser
 
-Status: phase 1, steps 1 (policy edits), 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done; awaiting the editor's skim of its diff before step 5. Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
+Status: phase 1, steps 1 (policy edits), 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review) in progress: wave 1 done, awaiting the editor's review of its diff ([as built](#phase-1-step-5-as-built)). Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
 
 ## Problem
 
@@ -189,13 +189,34 @@ The work splits into what sets the rules, done once in the main session, and the
 - For each example on the list: is the marking the section teaches stated, in the sentence or the note? Add a required note when it is not, move an inside-quote note out, keep aside, scope-island, and tag-letter parentheses, and move teaching commentary into a prose line under the block. Fix each lint finding as its [category](#finding-categories) says.
 - Edit only free English lines, and add prose lines directly under a block, except for a [strange example](#strange-examples): there, rewrite the example's Agazan, morph line, citing prose, and word bank rows as that section says. Never edit headings, tables, or any other page; list cheat-sheet rows and lexicon `core` cells a rewrite needs.
 - If an example's English seems to contradict the grammar on its page, do not fix either. List it as a gap for the editor.
-- Run `npm run lint:agazan -- docs/grammar/<page>.md` on its own page. Do not run `npm run build`: parallel builds share output.
-- Report: how many lines changed, each added required note in one line, each strange-example rewrite in one line, and an unsure list.
+- Leave the English of sake words (`th…tha/thu/the/tho…`, and sake words on `/ɡ/` and `/w/`) as it is, apart from lint fixes: whose stake they name is open in `sake-motive-holder.md`. List any that read as someone else's motive.
+- Bare *tell* (`v-tell` with nothing told) is *talks* / *speaks*, with the Agazan unchanged. Swap the root only when the example needs a different act.
+- On `say-*.md` pages, review the `## Practice` items by reading the page: the extractor reads only `### Practice` checkpoints, so they are not on the list.
+- Run `npm run lint:agazan -- docs/grammar/<page>.md` on its own page. Check a rewrite with `node scripts/parse.mjs --constructions '<sentence>'`; it must keep the old sentence's construction IDs. Run `npm run regloss-docs` as a dry run only (`--write` rewrites every page) and copy any `+` line for your page by hand. Do not run `npm run build`, `npm test`, `cheat-sheet-blocks --write`, `retie-docs`, `convert-word`, or any git command that changes state: parallel builds share output.
+- Report: how many lines changed, each added required note in one line, each strange-example rewrite in one line (old → new English and Agazan), follow-ups (cheat-sheet rows, lexicon `core` cells), gaps, and an unsure list with review-list ids.
 
 All subagents work in the same tree, without worktrees. Each one owns different files, so nothing conflicts, and worktrees would only add merge steps. They run on the default model, not a smaller one: deciding whether a note is required is judgment about the grammar.
 
 <a id="diff-guard"></a>
 **Diff guard** (step 6): a script that fails when a changed line in a wave's diff is anything other than a free English line in an example block or a new prose line directly after one. A changed table row (other than a word bank row) or heading means a subagent went out of scope. That page is reverted and redone. A changed Agazan code span or morph line is allowed only as a [strange-example](#strange-examples) rewrite: the guard parses old and new and fails unless both have the same construction IDs (roots may differ), and the subagent's report lists the rewrite. `npm run regloss-docs` must report 0 rewrites after each wave.
+
+<a id="phase-1-step-5-as-built"></a>
+**Step 5 as built.** The diff guard is `npx tsx scripts/free-english-diff-guard.ts [--base <rev>] [pages…]`. It fails on a changed heading, a changed table row other than a word bank row, or an Agazan row rewrite that drops a construction ID. A rewrite that only adds IDs (the calibration added objects to a few examples) and any other changed prose line are listed for review against the reports. Subagents run on the default model, at `xhigh` effort for pages heavy in referent, scope, or turn judgments and `high` for the rest. The extractor reads only `### Practice` checkpoints, so the five `say-*.md` pages' `## Practice` sections are reviewed by reading.
+
+Waves. Pages heavy in referent, scope, or turn judgments run at `xhigh`; the rest at `high`. Small pages share a subagent.
+
+| Wave | Pages (`xhigh` in bold) | Status | Lines with findings after |
+|------|-------------------------|--------|---------------------------|
+| 1 | **hooks**, **joins**, **sakes**, **questions**, comparatives, say-people-places | done | 68 (was 101) |
+| 2 | **spans**, **pronouns**, relations, roles, intention, say-reasons | | |
+| 3 | **speech-moves**, dependents, numbers, predication, restrictors, review | | |
+| 4 | **plurality**, causation, x-compounds, word-endings + phonology, numbers-applied + english, join-across-roles | | |
+| 5 | say-tense + say-questions, say-amounts + numeric-derivation | | |
+
+Wave 1 decisions:
+- **Applied:** fill-ask `…or` on one item is *Any X?*, as the [arity table](../grammar/questions.md#fill-ask-arity) says. The parser's label went from `which` to `any`. Bare `v-tell` is *talks* / *speaks*, now a rule in [glosses.md § sentence first](../meta/glosses.md#sentence-first).
+- **Guard exception:** the joins.md respectively example swaps SAME for *like* (`gumum`), so the guard reports one construction change there. The editor approved it.
+- **Open:** whose motive and whose stake on sakes.md, in `sake-motive-holder.md`. Waves leave sake words' English as it is until that lands.
 
 ## Phase 2: the prompt
 

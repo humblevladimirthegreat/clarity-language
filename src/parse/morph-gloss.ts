@@ -1176,7 +1176,7 @@ function fenceJoinLabel(
       if (pos === "th" && series === "a") return "why";
       if (pos === "th" && series === "u") return "why-else";
       if (series === "u") return "wh-else";
-      if (series === "o") return "which";
+      if (series === "o") return "any";
       if (series === "e") return "which-rank";
       return "wh";
     }

@@ -146,7 +146,7 @@ On `/th/`, the sake word says how the event itself stands toward the sake:
 >
 > z-Azawan | v-tell | th-competence-met-any-term
 >
-> "Azawan tells, and that serves competence."
+> "Azawan talks, and that serves competence."
 
 Without mid-word **`th`**, the root keeps its everyday sense: `gahul` is *ballot-like*, and `hozol` is the adverb from *strawberry*.
 
@@ -189,6 +189,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *tent* | `ededul` | ⛺ |
 | *wind* | `ewedul` | 🌬️ |
+| *calendar* | `agadal` | 📅 |
 | *autonomy* | `ahul` | 🗳️ from *ballot*: voting is choosing for yourself |
 | *competence* | `ulol` | 🧰 from *tool*: the kit that gets things working |
 | *understanding* | `adol` | 💡 from *lightbulb*: the light goes on when it makes sense |
@@ -205,7 +206,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Ahaben* | `ahaben` |
 | *knife* | `anaval` |
-| *basket* | `abezal` |
 | *bucket* | `abegul` |
 | *cookie* | `ugugol` |
 | *rain* | `erehel` |
@@ -256,12 +256,12 @@ z-thunderstorm | [w-pleasure-unmet-modifiable | g-stimulus]
 z-Azawan | v-cook | th-pleasure-met-immediate
 :::
 
-**6.** *My basket detracts from autonomy.* (modifiable)
+**6.** *My calendar detracts from autonomy.* (modifiable)
 
 ::: details Show answer
-`zabezal gahuthum.`
+`zagadal gahuthum.`
 
-z-basket | g-autonomy-unmet-modifiable
+z-calendar | g-autonomy-unmet-modifiable
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
@@ -360,7 +360,7 @@ Put that word where any sake word goes: on `/ɡ/` after a belonging, on `/w/` im
 >
 > z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]
 >
-> "Anxious about the dialogue:" competence at stake for now; it hangs over the room; it surges.
+> "I'm anxious about the dialogue." (my competence is at stake for now, the feeling hangs over the room, and it comes in waves)
 
 Build it from the plain sake word: `wulothur` (competence, unmet, passing) + **`ao`** (*over*: CIRCUM) + **-r** (SURGING) = `wulothuraor`. The sake word's own ending (**-r** here) now sits mid-word and keeps its meaning.
 
@@ -392,7 +392,7 @@ Name the landmark with a `/b/` word right after the feeling (after **`gobum`** w
 >
 > z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]
 >
-> "Resentful at Alahen about the memo, gone still."
+> "I resent Alahen over the memo, holding it in."
 
 The motion ending says how the feeling moves, on the [settled-to-passing scale](#settled-to-passing): **-l** is the most settled, **-m** is the ordinary case, and **-r** the most passing, lasting only right now. (cue: a feeling is water: still, a current, or a wave)
 
@@ -410,13 +410,13 @@ Say how **strong** the feeling is with a [degree word](clause.md#degree-w) on `/
 >
 > z-draft | [w-ocean | g-competence-met-any-term-INTERNAL-SURGING]
 >
-> "Overwhelmingly proud of the draft."
+> "I'm overwhelmingly proud of my draft."
 
 > `zumel wamazam wanathumom gobum balahen.`
 >
 > z-memo | [[w-small | w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | b-Alahen]
 >
-> "A little irritated at Alahen about the memo, steadily."
+> "I feel a mild, steady irritation at Alahen over the memo."
 
 The locus plus the motion ending is the **emotion tail**. It goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Prescription **`the`** is advice, not a feeling, so it takes no tail. A word with no tail (`wulothur`) is an ordinary sake word.
 
@@ -464,19 +464,19 @@ The ending says why you think the move is welcome. Use **-l** when the person in
 >
 > z-Azawan | v-tell | th-relatedness-ought-offered
 >
-> "Azawan ought to tell to serve relatedness (offered)."
+> "Azawan ought to talk, to serve relatedness." (unasked advice)
 
 > `zahaben vezehel thoyuthel.`
 >
 > z-Ahaben | v-sing | th-physical-ought-invited
 >
-> "Ahaben ought to sing to serve the physical sake (Ahaben asked for a move)."
+> "Ahaben ought to sing, to serve the physical sake." (Ahaben asked for advice)
 
 > `zalahen vabayal thanather.`
 >
 > z-Alahen | v-bow | th-relatedness-ought-trial
 >
-> "Alahen ought to try bowing to serve relatedness (worth a try)."
+> "Alahen ought to try bowing, to see whether it serves relatedness."
 
 A move meant to **prevent** harm to the sake is a *so that … not* dependent ([so that](dependents.md#so-that)): **`hogom`** + **`burl`**, then the outcome to keep off.
 
@@ -495,7 +495,7 @@ English *doing this for …* and *for the sake of …* name a **motive**: why th
 >
 > z-Azawan | v-tell | th-relatedness-motive-any-term
 >
-> "Azawan tells for relatedness."
+> "Azawan talks for relatedness."
 
 **Not the same job as:** prescription **`the`**, which says the act *ought* to serve this sake. **`tho`** describes why the act is happening: *doing it for this sake*.
 
@@ -524,7 +524,7 @@ A motive word takes the [emotion tail](#emotion-compose) too. The feeling is the
 >
 > z-speech | [w-understanding-motive-any-term-AIMED-FLOWING | g-stimulus]
 >
-> "Curious about the dialogue."
+> "I'm curious about the dialogue."
 
 ### Which ending table?
 
@@ -565,7 +565,7 @@ A `/w/` word before a sake word on `/ɡ/` grades that adjective. A `/w/` sake wo
 >
 > z-Azawan | v-tell | th-competence-met-lasting | th-relatedness-motive-any-term
 >
-> "Azawan tells: it serves competence in the long term, and relatedness is the motive."
+> "Azawan talks for relatedness, and it builds lasting competence too."
 
 ### Whose stake {#whose-stake}
 
@@ -575,13 +575,13 @@ A sake word with no `/b/` is about **your** sake. To say it is someone else's, p
 >
 > z-Azawan | v-tell | [th-relatedness-motive-any-term | b-Alahen]
 >
-> "Azawan tells for Alahen's sake (for Alahen's relatedness)."
+> "Azawan talks for Alahen's sake." (Alahen's relatedness)
 
 > `zalahen vabayal thanathem bazawan.`
 >
 > z-Alahen | v-bow | [th-relatedness-ought-offered | b-Azawan]
 >
-> "Alahen ought to bow, for Azawan's relatedness (offered)."
+> "Alahen ought to bow, for Azawan's relatedness." (unasked advice)
 
 > `zebel ganathal balahen.`
 >
@@ -629,13 +629,13 @@ Agazan has no set phrase for *thank you*. Say that your sake **is met**: a lone 
 >
 > th-relatedness-met-any-term
 >
-> "That meant a lot to me." (*thank you*)
+> "Thank you, that meant a lot to me."
 
 > `thulothal.`
 >
 > th-competence-met-lasting
 >
-> "That will keep helping me do it." (*thanks, that sets me up*)
+> "Thanks, that sets me up for the long run."
 
 Add an emotion tail to say how the thanks moves you:
 
@@ -643,7 +643,7 @@ Add an emotion tail to say how the thanks moves you:
 >
 > th-relatedness-met-any-term-INTERNAL-SURGING
 >
-> "I'm so moved." (*thank you, that really touched me*)
+> "Thank you, I'm so moved."
 
 <!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English |
@@ -658,7 +658,7 @@ Add an emotion tail to say how the thanks moves you:
 >
 > [th-relatedness-unmet-modifiable | b-listener]
 >
-> "That hurt your sense of connection." (*I'm sorry*)
+> "I'm sorry; that hurt your sense of connection."
 
 <!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English |
@@ -685,7 +685,7 @@ English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, f
 >
 > z-Azawan | th-hope | v-walk
 >
-> "Hopefully Azawan walks."
+> "Hopefully Azawan is walking."
 
 Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To say *hopefully … will*, add a real [evidence channel](knowing.md#forecast) as well. Hope says how you feel about the claim; the channel says what backs it.
 
@@ -699,7 +699,7 @@ English *may* / *is allowed to* says a restriction is lifted. Put **`thegol`**, 
 >
 > z-Azawan | v-walk | th-PERMIT-granted
 >
-> "Azawan may walk (I'm allowing it)."
+> "Azawan may walk; I'm allowing it."
 
 > `zazawan vowogal thegom balahen.`
 >
@@ -711,7 +711,7 @@ English *may* / *is allowed to* says a restriction is lifted. Put **`thegol`**, 
 >
 > z-Ahaben | v-sit | th-PERMIT-allowed
 >
-> "Ahaben is allowed to sit (the rules allow it)."
+> "The rules allow Ahaben to sit."
 
 > `zalahen vezebal thegor.`
 >
@@ -743,7 +743,7 @@ English *must* / *has to* / *is supposed to* puts a demand on an act without nam
 >
 > z-Azawan | v-walk | th-REQUIRE-rule
 >
-> "Azawan has to walk (the rules say so)."
+> "The rules require Azawan to walk."
 
 > `zahaben vehahel thumem balahen.`
 >
@@ -840,7 +840,7 @@ The stance keeps its endings and its hosted `/b/`. On a refusal, the `/b/` is th
 >
 > z-Azawan | v-tell | [contrary-to | [th-CONSENT-refused | b-Alahen]]
 >
-> "Azawan tells against Alahen's will (Alahen said no)."
+> "Azawan tells, against Alahen's will." (Alahen said no)
 
 > `zahaben vehahel uem thumem balahen.`
 >
@@ -854,7 +854,7 @@ A [plan](intention.md#plan) after **`uem`** is the subject's own unless a `/b/` 
 >
 > z-Azawan | v-walk | [contrary-to | th-plan-itinerary]
 >
-> "Azawan walks, contrary to their plan."
+> "Azawan walks, contrary to their own plan."
 
 > `zazawan vowogal uem thamam balahen.`
 >
@@ -989,7 +989,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan ought to pray to serve relatedness* (an offer).
+**1.** *Azawan ought to pray to serve relatedness.* (unasked advice)
 
 ::: details Show answer
 `zazawan vebevol thanathem.`
@@ -997,7 +997,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Azawan | v-pray | th-relatedness-ought-offered
 :::
 
-**2.** *Alahen kneels for purpose, right away.*
+**2.** *Alahen kneels for an immediate sense of purpose.*
 
 ::: details Show answer
 `zalahen venehal thamethor.`
@@ -1005,7 +1005,7 @@ z-Azawan | v-pray | th-relatedness-ought-offered
 z-Alahen | v-kneel | th-purpose-motive-immediate
 :::
 
-**3.** *Ahaben prays for Alahen's relatedness, over time.*
+**3.** *Ahaben prays for Alahen's relatedness in the long term.*
 
 ::: details Show answer
 `zahaben vebevol thanathol balahen.`
@@ -1013,7 +1013,7 @@ z-Alahen | v-kneel | th-purpose-motive-immediate
 z-Ahaben | v-pray | [th-relatedness-motive-lasting | b-Alahen]
 :::
 
-**4.** *That meant a lot to me.* (thank you)
+**4.** *Thank you, that meant a lot to me.*
 
 ::: details Show answer
 `thanatham.`
@@ -1044,7 +1044,7 @@ z-Azawan | v-kneel | [th-PERMIT-granted | b-Ahaben]
 ::: details Show answer
 z-bell | [w-relatedness-unmet-modifiable-AIMED-SURGING | g-stimulus]
 
-*Resentful at the bell*, in waves.
+*I feel waves of resentment at the bell.*
 :::
 
 **2.** `thulothuruor.`
@@ -1089,7 +1089,7 @@ z-Alahen | v-sleep | [contrary-to | th-FORBID-disallowed]
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azawan kneels for relatedness* (why Azawan is doing it). `zazawan venehal thanathom.` or `zazawan venehal thanathem.`
+**1.** *Azawan kneels for relatedness.* (why Azawan is doing it) `zazawan venehal thanathom.` or `zazawan venehal thanathem.`
 
 ::: details Show answer
 `zazawan venehal thanathom.`
@@ -1099,7 +1099,7 @@ z-Azawan | v-kneel | th-relatedness-motive-any-term
 **`tho`** describes the motive; **`the`** says Azawan *ought* to kneel.
 :::
 
-**2.** *Alahen is allowed to sleep* (the rules allow it). `zalahen vezebal thegol.` or `zalahen vezebal thegom.`
+**2.** *Alahen is allowed to sleep.* (the rules allow it) `zalahen vezebal thegol.` or `zalahen vezebal thegom.`
 
 ::: details Show answer
 `zalahen vezebal thegol.`

@@ -111,7 +111,7 @@ Single-item **-l** also covers English *just* in the sense *merely*: the one ite
 >
 > z-Azawan | [d-cat | d-and] | v-see
 >
-> "Azawan sees just a cat." (only a cat, nothing more)
+> "Azawan sees just a cat, nothing more."
 
 A standalone join fills its slot with no items. In the object slot, `dal` is *nothing*; in the extra-noun slot, `bal` is *nobody*.
 
@@ -194,13 +194,13 @@ When English says *something* or *someone*, or *one of these* without saying whi
 >
 > [z-person | z-something]
 >
-> "some (unknown) person."
+> "some person." (unknown who)
 
 > `zedehel zagavel zar.`
 >
 > [z-tea | z-coffee | z-something]
 >
-> "something among tea and coffee."
+> "one of tea and coffee."
 
 Write A and B, then `zar`: the join still closes the list, and **-r** means some member of that pair (you are not saying which).
 
@@ -318,7 +318,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *bread and a tomato (and possibly more)*
+**1.** *bread and a tomato* (and possibly more)
 
 ::: details Show answer
 `zebevul zadedol zam.`
@@ -377,7 +377,7 @@ z-Ahaben | v-pay | b-none
 ::: details Show answer
 [z-cart | z-and.open]
 
-*a cart, for one* / *a cart (and possibly more)*
+*a cart, for one* / *a cart, and possibly more*
 :::
 
 **2.** `zual.`
@@ -393,7 +393,7 @@ z-everything-but
 ::: details Show answer
 [z-bread | z-something]
 
-*some (unknown) bread*
+*some bread* (unknown which)
 :::
 
 **4.** `zamegol zadedol zul.`
@@ -422,7 +422,7 @@ z-Azawan | d-none | v-see
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *a watermelon or a tomato (pick one)* `zowodal zadedol zol.` or `zowodal zadedol zom.`
+**1.** *a watermelon or a tomato* (pick one) `zowodal zadedol zol.` or `zowodal zadedol zom.`
 
 ::: details Show answer
 `zowodal zadedol zol.`
@@ -465,7 +465,7 @@ When an adjective or extra noun is meant for the **whole list** (*both challengi
 >
 > [z-dog | z-cat | z-and | g-challenge]
 >
-> "(challenging dog) and (challenging cat)."
+> "a challenging dog and a challenging cat."
 
 A hook belongs to one item the same way. Put the hook and its `/b/` right after that item, before the join word: **`em`** plus a resume gives *Azawan and his dog*.
 
@@ -485,11 +485,11 @@ Only the item just before the join word takes a hook this way. A hook anywhere e
 
 A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaining](clause.md#complex-chaining).
 
-> `zodogal zagadul zam gegabem bazawan gubuhel.`
+> `zodogal zagadul zam gegabem bazawan gezebul.`
 >
-> [z-dog | z-cat | z-and.open | [g-ownership | [b-Azawan | g-blue]]]
+> [z-dog | z-cat | z-and.open | [g-ownership | [b-Azawan | g-sleepy]]]
 >
-> "Blue Azawan's dog and cat." (and possibly more)
+> "Sleepy Azawan's dog and cat." (and possibly more)
 
 **Compare with:** *part of* / *contents of* / *made of* / origin *from* use [of relations](relations.md#of-relations), not `egabe`. A [sakes](sakes.md) need on `/ɡ/` already means the speaker’s belonging (`gulothal` *my … serves competence*).
 
@@ -548,7 +548,7 @@ What *everything* or *anything* ranges over comes from context, or from a [SHARE
 >
 > [z-Azawan | z-Alahen | z-Ahaben | z-rank/less]
 >
-> "Ahaben, then Alahen, then Azawan." (last first)
+> "Azawan, Alahen, Ahaben, from last to first."
 
 **Compare with:** plain **`u`** is *not* / *none of* the listed, not an invert stack. *Every cat* uses SHARED kind after **`zual`**: `zual gagadul`.
 
@@ -615,13 +615,13 @@ Azawan is big and Alahen is small; Azawan walks and Alahen runs. Without **`waze
 
 Inside such a list, a plain `/ɡ/` after an item's hosted `/b/` is the next item, not a description of that `/b/`. The closing join decides it: with `gal` ending the row, every `/ɡ/` in it belongs to the list and so to the subjects.
 
-> `zazawan zalahen zal gugol bazawan gubuhel wazem gal.`
+> `zazawan zalahen zal gumum bagavol gezebul wazem gal.`
 >
-> [z-Azawan | z-Alahen | z-and] | [[g-SAME | b-Azawan] | g-blue | w-respectively | g-and]
+> [z-Azawan | z-Alahen | z-and] | [[g-like | b-guard] | g-sleepy | w-respectively | g-and]
 >
-> "Azawan and Alahen are the same as Azawan and blue, respectively."
+> "Azawan is like the guard, and Alahen is sleepy." (respectively)
 
-With no closing `gal`, the row is not a list. The `/ɡ/` after a noun join is SHARED, and the plain `/ɡ/` after its `/b/` describes that `/b/` ([complex chaining](clause.md#complex-chaining)): `zazawan zalahen zal gugol bazawan gubuhel.` is *the same as blue Azawan*, for both.
+With no closing `gal`, the row is not a list. The `/ɡ/` after a noun join is SHARED, and the plain `/ɡ/` after its `/b/` describes that `/b/` ([complex chaining](clause.md#complex-chaining)): `zazawan zalahen zal gumum bagavol gezebul.` is *both are like the sleepy guard*.
 
 ### Full single-item and standalone inventories
 
@@ -719,7 +719,7 @@ When English would deny a list as a whole (*not both*), close the list with its 
 >
 > [[v-walk | v-run | v-and] | v-not]
 >
-> "not both walk and run." (at least one of them does not happen)
+> "not both walk and run."
 
 > `vowogal varahal vol vul.`
 >
@@ -962,7 +962,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-everything | g-ring]
 :::
 
-**3.** *(sleepy Azawan) and (sleepy Alahen)*
+**3.** *Azawan and Alahen, both sleepy*
 
 ::: details Show answer
 `zazawan zalahen zal gezebul.`
@@ -970,7 +970,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-Azawan | z-Alahen | z-and | g-sleepy]
 :::
 
-**4.** *(wine or beer) and a ring*
+**4.** *either wine or beer, and a ring*
 
 ::: details Show answer
 `zawahel zebehol zol zerehal zal.`
@@ -1175,7 +1175,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 #### English → Agazan {#advanced-english-to-agazan}
 
-**1.** *a page or a pen* (the usual named menu)
+**1.** *a page or a pen* (the familiar set phrase)
 
 ::: details Show answer
 `zabehel zebewel zon.`
@@ -1286,7 +1286,7 @@ Most other phrase joins need two or more items. These edge readings keep a defin
 >
 > [z-tea | z-coffee | z-water | z-anything]
 >
-> "any of tea, coffee, or water is fine." (no order)
+> "any of tea, coffee, or water is fine."
 
 **For *except*, use:** hook **`ul`** / **`um`** ([hooks](hooks.md)). Prefixed **`zur`** is unspecified *something else*. Nest when you need a rare mix (pick one of a closed list, but the pick is optional: `zedehel zagavel zol zom`).
 

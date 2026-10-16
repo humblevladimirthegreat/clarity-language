@@ -142,6 +142,7 @@ When the sentence already says it (*as I remember*, *I gather*, *exactly one of*
 - **Nothing the gloss lacks.** Neither the sentence nor the note adds a source, reason, or time the gloss does not have: a bare CLUES channel is *it looks like*, not *from the clouds*.
 - **No restating.** Drop a note that repeats the sentence (*Maybe Azawan thinks Alahen left.* needs no *a guess about Azawan's view*).
 - **Contrasts with another form** (*quitting for good is …*) are teaching, not translation. When a table just above already shows the other form, drop the contrast; otherwise move it to a prose line or a [Compare with](grammar-docs.md#compare-with) line.
+- **A bare verb English cannot leave bare.** When the verb's sense list has an alias that stands alone, use it and leave the Agazan as it is: `v-tell` with nothing told is *talks* / *speaks*, not *tells*. Change the root only when the example needs a different act.
 - **English → Agazan prompts** may use the note to pick between two correct answers, in plain English: *A sleepy Alahen stands.* (*sleepy* first), not *(adjective before the noun)*.
 
 ### What a note never contains
