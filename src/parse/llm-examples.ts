@@ -7,6 +7,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
+import { asideSpans, exampleBlocks, parenGroups, splitFreeEnglish } from "../lint/free-english.js";
 import type { ClassifyTables } from "./classify.js";
 import { constructionRegistry } from "./constructions.js";
 import { glossLabels, type ExamplePair, type PromptContext } from "./llm-prompt.js";
@@ -17,75 +18,14 @@ import { REPO_ROOT } from "../repo-paths.js";
 /** One example block: its Agazan lines joined, and its one free English line. */
 export type DocExample = { agazan: string; free: string; line: number };
 
-/** Agazan in a backtick span, or in `<code>` with entities. */
-function unwrapCode(text: string): string | null {
-  const m = text.match(/^`([^`]+)`$/);
-  if (m) return m[1]!;
-  const html = text.match(/^<code>([^<]+)<\/code>$/);
-  return html ? html[1]!.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&") : null;
-}
-
-/**
- * Example blocks with exactly one free English line: one or more Agazan lines first (a dialogue
- * block has several), then a morph line or not, then the quoted English. Spoken (🔊) lines are skipped.
- */
+/** Example blocks with exactly one free English line ([free-english.ts](../lint/free-english.ts) reads the blocks). */
 export function docExamples(markdown: string): DocExample[] {
-  const out: DocExample[] = [];
-  const lines = markdown.split(/\r?\n/);
-  let i = 0;
-  while (i < lines.length) {
-    if (!/^[ \t]*>/.test(lines[i]!)) {
-      i += 1;
-      continue;
-    }
-    const start = i;
-    const block: string[] = [];
-    while (i < lines.length && /^[ \t]*>/.test(lines[i]!)) {
-      block.push(lines[i]!.replace(/^[ \t]*>[ \t]?/, "").trim());
-      i += 1;
-    }
-    const rows = block.filter((row) => row && !row.startsWith("🔊"));
-    const agazan: string[] = [];
-    for (const row of rows) {
-      const code = unwrapCode(row);
-      if (code == null) break;
-      agazan.push(code);
-    }
-    if (agazan.length === 0) continue;
-    const free = rows.filter((row) => row.startsWith('"'));
-    if (free.length !== 1) continue;
-    out.push({ agazan: agazan.join(" "), free: free[0]!, line: start + 1 });
-  }
-  return out;
+  return exampleBlocks(markdown)
+    .filter((block) => block.free.length === 1)
+    .map((block) => ({ agazan: block.agazan, free: block.free[0]!.text, line: block.line + 1 }));
 }
 
-function balanced(text: string): boolean {
-  let depth = 0;
-  for (const ch of text) {
-    if (ch === "(") depth += 1;
-    else if (ch === ")" && --depth < 0) return false;
-  }
-  return depth === 0;
-}
-
-/**
- * Split a free English line into its sentence and its note
- * ([glosses.md](../../docs/meta/glosses.md#free-english-sentence-and-note)): `"<sentence>" (<note>)`.
- * Returns null when the line has any other shape.
- */
-export function splitFreeEnglish(line: string): { sentence: string; note: string | null } | null {
-  const t = line.trim();
-  if (!t.startsWith('"')) return null;
-  const close = t.indexOf('"', 1);
-  if (close < 0) return null;
-  const sentence = t.slice(1, close).trim();
-  const rest = t.slice(close + 1).trim();
-  if (!sentence) return null;
-  if (!rest) return { sentence, note: null };
-  const m = /^\((.*)\)\.?$/.exec(rest);
-  if (!m || !balanced(m[1]!) || !m[1]!.trim()) return null;
-  return { sentence, note: m[1]!.trim() };
-}
+export { splitFreeEnglish };
 
 const stripEmphasis = (text: string) => text.replace(/\*+([^*]+)\*+/g, "$1");
 
@@ -108,8 +48,7 @@ export function examplePair(example: DocExample, source: string, tables: Classif
     return null;
   }
   if (gloss.includes('←"')) return null;
-  const asides = gloss.split("ASIDE[").length - 1;
-  if (sentence.split("(").length - 1 > asides) return null;
+  if (parenGroups(sentence) > asideSpans(gloss)) return null;
   return {
     gloss,
     sentence: stripEmphasis(sentence),

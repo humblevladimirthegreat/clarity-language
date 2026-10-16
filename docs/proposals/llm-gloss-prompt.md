@@ -1,6 +1,6 @@
 # Translation prompt from the parser
 
-Status: phase 1, step 1 (policy edits) done; awaiting editor review before step 4. Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
+Status: phase 1, steps 1 (policy edits) and 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)) done; awaiting editor review before step 4. Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
 
 ## Problem
 
@@ -120,6 +120,14 @@ The work splits into what sets the rules, done once in the main session, and the
 | 5. Page review | Subagents, in waves | One subagent per page (two small pages may share one), about six per wave. Brief below. |
 | 6. Wave check | Main session | A [diff guard](#diff-guard) (script written by the main session before the first wave), `npm run build`, the subagents' unsure lists, and the editor's review of the wave diff. One commit per wave. |
 | 7. Lint to error | Main session | The shape checks fail the build. `npm run build` and `npm test` pass. |
+
+<a id="phase-1-step-2-as-built"></a>
+**Step 2 as built.** [`free-english.ts`](../../src/lint/free-english.ts) (extractor, splitter, checks; tests in `free-english.test.ts`), run by `lint:agazan` on top-level grammar pages as `free-english <kind>` warnings. The prompt index ([`llm-examples.ts`](../../src/parse/llm-examples.ts)) now reads blocks and splits lines through it, so both agree on the shape.
+
+- **Extracted:** 1,864 lines: 1,082 example lines, 314 English → Agazan prompts, 308 Agazan → English answers, 111 Pick one and 49 Fix it prompts. What changes items are left out: their spoiler English is commentary, not a translation.
+- **Shape is strict:** a period after the note (`*Azawan sits* (no one is to blame).`) is a shape finding. Write the period inside the sentence.
+- **Warnings today:** 128 inside-parentheses, 79 shape, 18 grammar term, 4 Agazan form, 1 gloss label. Inside-parentheses hits include letter tags (*Azawan (A) punches*) and grouping (*Azawan and (just water)*): if review keeps either, it gets its own written rule, per [lint](#lint). Four checkpoint lines spell the learner slot as a literal *(Your name)*.
+- **Grammar-term list** (`NOTE_GRAMMAR_TERMS`, for editor review): word-shape and gloss words (*morph*, *ending*, *root*, *citation*, *loan verb*, …), word classes and roles (*noun*, *verb*, *hook*, *pointer*, *resume*, *stand-in*, …), joins and spans (*join*, *fence*, *span*), stance and evidence (*holder*, *mirative*, *evidential*, *residue*, *whose-now*, *tense*, …), number and comparison (*plural*, *associative*, *comparative*, …). Everyday words that also name a feature (*topic*, *list*, *open*, *closed*, *cause*, *pattern*, *addressee*) are left out. The longest matching term is reported.
 
 **Why subagents for step 5 only.** The review is about 1,100 separate judgments, and each needs the teaching context of its own page: what the section's new form is, and what it marks. Spread across 30-odd pages, that is too much reading for one context to keep sharp, while the pages are independent of each other. Steps 1 to 4 and 6 set or check the rule. They need one consistent judgment, so they stay in the main session. Calibration comes before any fan-out because subagents copy whatever the calibration pages show: a mistake there repeats on every page.
 
