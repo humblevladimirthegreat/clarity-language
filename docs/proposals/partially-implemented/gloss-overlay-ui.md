@@ -45,7 +45,7 @@ Keep a **compact card**; do not dump the whole AST on first click.
 | Layer | Content |
 |-------|---------|
 | **Header** | Full surface form + PoS chip + ending sense (`-l` / `-m` / `-n` / `-r`) |
-| **Gloss** | Lexicon or overlay English; optional **strict vs loose** toggle per [glosses.md](../../meta/glosses.md#strict-vs-loose-free-english) |
+| **Gloss** | Lexicon or overlay English; optional **strict vs loose** toggle per [glosses.md](../../meta/glosses.md#free-english-sentence-and-note) |
 | **Morph strip** | Stem · mid-`x` family · number anatomy · `-x` · role / value / ability bits (chips, not a tree) |
 | **Why** | One line naming the parser family (e.g. “values, not role”) + link into the owning grammar page |
 | **Related** | When available: anaphor target for `-r`; join fence mate; span open / close pair |

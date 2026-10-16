@@ -16,16 +16,15 @@ A gloss should answer: *what is each Agazan piece doing in the clause — in Eng
 | Underspecification | Keep vague Agazan vague (`someone`, bare joins) | Sharpen into a specific English claim |
 | Separation | Stay word-aligned | Replace the free English line |
 
-**Free English** (quoted line / table “Gloss” in grammar pages) answers *what would you say naturally?* — idiomatic paraphrase, tone, and discourse flow. Do not merge free English into the morph gloss. Default free English is **loose** ([strict vs loose](#strict-vs-loose-free-english)).
+**Free English** (quoted line / table “Gloss” in grammar pages) answers *what would you say naturally?* — idiomatic paraphrase, tone, and discourse flow. Do not merge free English into the morph gloss. Free English is a **loose sentence plus an optional note** ([sentence and note](#free-english-sentence-and-note)).
 
 ## Layers
 
 | Layer | Where | Form |
 |-------|--------|------|
 | **Morph gloss** | Dialogue turns, clause / phrase examples, teaching lines | Word-aligned pieces joined with spaced ` | `; one roman line (below). **Omit** when parser output is trivially redundant with in-block loose English ([when to skip](#example-block); `lint:agazan` enforces). |
-| **Free English (loose)** | Same places, under the morph gloss — **default** when only one free line | Natural paraphrase in `"double quotes"`; drop Agazan packaging English doesn’t mark |
-| **Free English (strict)** | Optional second quoted line (or alone when teaching packaging) | Keeps join packaging, value endings, evidential tags, cast letters, …; teaching dialogues may show **both** labeled `strict:` / `loose:` |
-| **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English in **English** (often *italic* in table cells); optional parenthetical notes — loose unless the row teaches packaging. **Cue** is not a gloss ([cues](grammar-docs.md#cues-columns)). |
+| **Free English** | Same places, under the morph gloss; one line | Natural sentence in `"double quotes"`, then at most one plain-English note in parentheses after the closing quote for what Agazan marks and the sentence drops ([sentence and note](#free-english-sentence-and-note)). Checkpoint answers and prompts use italics in place of the quotes |
+| **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English in **English** (often *italic* in table cells); optional parenthetical notes. **Cue** is not a gloss ([cues](grammar-docs.md#cues-columns)). |
 | **Lexicon fields** | `lexicon-published.csv` / overlays | Concrete / abstract / mnemonic / [role English](#role-english) / definition — **inputs** to morph glosses and lookup, not utterance glosses. Verb senses use the [uninflected lemma](#english-lemma). Concrete English in a **Cue** cell is still not the morph gloss. Morph does **not** take its english slot from role English. |
 
 Grammar tables may keep a column named **Gloss** for free English. When a table needs morphology, use a **Morph** column or a separate morph line in the same format as dialogues.
@@ -67,7 +66,7 @@ A **complex citation** still gets a gloss if the morph unpacks structure the quo
 |------|--------|-----|
 | Surface | `` `agazan.` `` | Copyable Agazan; the only code span |
 | Morph | `z-dog | v-walk` | English labels; roman (no italics, no per-token backticks); spaced ` | ` between **words** |
-| Free English | `"A dog walks."` | Straight double quotes. Teaching notes stay **after** the quotes: `"Ahaben sings the Sing"` (that titled performance). |
+| Free English | `"A dog walks."` | Straight double quotes. A [note](#free-english-sentence-and-note) goes **after** the closing quote: `"Ahaben sings the Sing."` (that titled performance). Parentheses inside the quotes translate an aside span and nothing else. |
 
 Do **not** prefix the gloss with `gloss:`.
 
@@ -80,20 +79,67 @@ Join morph **words** with **space + `|` + space** (`z-Azawan | v-walk`). Type it
 
 Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (already inside labels: `z-dog`, `that-clause`), or comma (already inside English). A spaced semicolon (` ; `) is a fine fallback if `|` is awkward in a table cell.
 
-## Strict vs loose free English
-<a id="strict-vs-loose-free-english"></a>
+## Free English: sentence and note
+<a id="free-english-sentence-and-note"></a>
 
-| Layer | Job |
-|-------|-----|
-| **Morph** | Keep Agazan structure (PoS, binding, join job, stance tags, …) |
-| **Loose free** | Idiomatic English claim — default when a page shows one free line |
-| **Strict free** | Same claim with Agazan packaging spelled out in English — use alone for packaging lessons, or **with** loose in teaching dialogues (e.g. [rainy evening](../examples/rainy-evening-dialogue.md)) |
+A free English line is a loose sentence, then at most one note:
 
-**Loose** drops distinctions English doesn’t mark; morph already carries them. **Keep** in loose only what changes the English sentence (who / what / polarity / negation; force English can say; stance that changes the verb; comparative / causal / plan content when that is the point).
+```
+"<loose sentence>" (<note>)
+```
+
+| Part | Job |
+|------|-----|
+| **Morph** | Keeps Agazan structure (PoS, binding, join job, stance tags, …) |
+| **Sentence** | What a fluent speaker would say. Drops distinctions English doesn’t mark ([drop](#drop-in-loose)), keeps what changes the claim ([keep](#keep-in-loose)) |
+| **Note** | Optional, one parenthetical **after** the closing quote. States in plain English what Agazan marks and the sentence drops: whose clue or feeling it is, an open or closed list, cause versus blame, whose *left*, what a stand-in refers to, how firm a decision is |
+
+The note is the careful reading written as a fact, not as an awkward second sentence. Do not add a second free English line.
+
+**Parentheses inside the quotes** translate an [aside](../grammar/spans.md#asides) span and nothing else: *"Azawan walks (quietly)."* An aside may also come out as commas or *by the way*.
+
+| Not this | This |
+|----------|------|
+| "tea or coffee (pick one)." | "tea or coffee." (pick one) |
+| "You all (the addressees) walk." | "You all walk." (the addressees) |
+| "Azawan walks if there is rain (as mechanism)." | "Azawan walks if it rains." (rain as the mechanism) |
+| "You (Alahen) and your associates sit." | "You and your associates sit." (said to Alahen) |
+| "Alahen left, so they say. Did Alahen run? Alahen sang (so they say)." | "Alahen left, so they say. Did Alahen run? Alahen sang." (the singing is hearsay too) |
+| "Azawan walks (quietly)." with an aside span | Unchanged: the parentheses translate the aside |
+
+**Several sentences on one line.** The note still goes after the closing quote and names which sentence it is about (*the singing is hearsay too*). Never put the note in the middle of the quote.
+
+**Checkpoints.** Agazan → English answers and English → Agazan prompts are italic, not quoted. They follow the same shape with italics in place of the quotes: *Ahaben sees that Alahen sneaks.* (a note, when there is one). A note is never required in a checkpoint answer; it is allowed when the checkpoint drills the marking ([translation exercises](translation-exercises.md)).
+
+### When a note is required
+<a id="note-required"></a>
+
+| Case | Note |
+|------|------|
+| The example teaches the marking (the section’s new form) and the sentence drops it | **Required** |
+| The sentence drops a marking that changes how a careful reader would take the claim (a holder that is not the speaker, a closed list, a pointer English would leave unclear) | **Required** |
+| A marking the section does not teach and that English drops harmlessly (an open join in passing, an evidential tag on a non-evidence page) | Optional; leave it out on Beginner pages |
+| Distinctions only the morph line carries: sense-picking endings, cast-letter scaffolding, fence shapes | **Never** |
+
+When the sentence already says it (*as I remember*, *I gather*, *exactly one of*), add no note.
+
+### What a note never contains
+<a id="note-contents"></a>
+
+A note is a translation, so it never contains:
+
+- Agazan forms, backticks, or gloss labels (`th-CLUES`, `PATTERN`).
+- Grammar terms (*holder*, *mirative*, */w/*). Say *the surprise is Azawan’s*, not *mirative with an Azawan holder*.
+- Teaching commentary about how the form works (*whose-now and the event’s own time are separate*). That goes in a prose line under the block, or in a [Compare with](grammar-docs.md#compare-with) line.
+
+Explanation that is not translation (*You name yourself rather than saying I.*) goes on its own line under the block, not after the quote.
 
 ### Drop in loose
+<a id="drop-in-loose"></a>
 
-| Agazan distinction | Loose free does |
+The sentence drops these. A [note](#note-required) carries one only when it is required; the never row stays out of the note too.
+
+| Agazan distinction | The sentence does |
 |---------------------|-----------------|
 | Cast resumes and role pointers (`zazawar`, `zaxar` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
@@ -101,13 +147,14 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 | Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
 | Values **time horizon / standing / invitation / changeability** | Keep only what changes English (*can't* vs unmet sake as content); drop “(motive, soft standing)”, … Prescription **`the`**: loose free keeps the warrant when it is the point (*invited* / *offered* / *worth a try*) — not *must* / *should* / *could* as a force grade |
 | Emotion compose (locus / motion tail) | Ordinary emotion English (*we're glad*), not “pleasure met · internal” |
-| Evidential **tags** | Fold in only if English wants it (*I hear…*, *usually*); else omit |
+| Evidential **tags** | Fold in only if English wants it (*I hear…*, *usually*); else omit, or [note](#note-required) when required |
 | Span fence labels | Quotes / parentheses; no “Cite:” / “aside:” |
 | Role / SAME scaffolding | *the speaker* / *is* — not “agent of speech” / “identical to” |
 | Associative **-x** spelled out | *you all* / *they* when English is enough |
 | Numbered-alternative pedagogy | *First, …* / *Finally, …* is fine; drop “problem #1” metalabel unless teaching numbering |
 
 ### Keep in loose
+<a id="keep-in-loose"></a>
 
 - Who / what / polarity / negation
 - Force English can say (*please*, *don’t*, *I wonder*)
@@ -116,15 +163,17 @@ Do not use `/` (already means PoS in the docs, and reads as *or*), hyphen (alrea
 - Mention spans as *the word “odoga”* / *the phrase “…”* (Agazan spelling, not the English lemma) — [span interiors](#span-interiors)
 - Opaque interiors as the same blob (`kimchi`, `FBI`)
 
-### Example (same Agazan, three readings)
+### Example (same Agazan, sentence and note)
 
-> `yol dabur dedehel dagavel dol von.`
+> `yol zehon dedehel dagavel dol von.`
 >
-> y-question | [d-←Ubune-x-Unowen | d-tea | d-coffee | d-or-exactly-one] | v-choose
+> y-question | z-listener | [d-tea | d-coffee | d-or-exactly-one] | v-choose
 >
-> "Do you want tea or coffee?" ← loose (default)
->
-> "Do you (B) choose tea or coffee — exactly one?" ← strict (teaching exclusive *or*)
+> "Do you want tea or coffee?" (pick exactly one)
+
+On a page teaching exclusive *or*, the note is required. Elsewhere it is optional, or the sentence can carry it (*"Tea or coffee, which one?"*). In a grammar table the same row reads:
+
+| `von` | `v-choose` | *choose* (exactly one) |
 
 ## Senses are separate roots
 
@@ -430,13 +479,13 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Metaphor vs overlay vs literal
 
-> `xezom zabur thevom zerehel.`
+> `xezom thevom zerehel.`
 >
-> x-however | z-←Ubune-x-Unowen | th-MEMORY | z-rain
+> x-however | th-MEMORY | z-rain
 >
-> "Still — it's raining, as I remember."
+> "Still, it's raining, as I remember."
 
-(Strict teaching line: *However — that one (B), per memory — it rains.*)
+No note: *as I remember* already says whose memory it is. Do not render the overlay literally (*per memory, rain*).
 
 ### Ability + value motive
 
@@ -491,7 +540,8 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 | Morph line that is only idiomatic English | Confuses layers | Morph + separate quoted free line |
 | Morph gloss that matches the quoted English | Redundant; the quote already is the sense | Omit that line when `lint:agazan` agrees ([example block](#example-block)). Keep it when it unpacks **`x`**, PoS, several words, … |
 | `gloss:` + per-token backticks inside a code fence | Markdown renders raw; Agazan and gloss look the same | Blockquote; backticks on Agazan only |
-| Loose free packed with cast letters / join footnotes / value endings | Duplicates morph; not “what you’d say” | Idiomatic claim; use **strict** free only for teaching |
+| Free English packed with cast letters / join footnotes / value endings | Duplicates morph; not “what you’d say” | Idiomatic sentence; a [note](#note-required) only for what a careful reader needs |
+| A note inside the quotes, or a second free English line | Two places for the same job | `"sentence."` (note) |
 | English *he* / *she* inside morph for **-r** | Hides Agazan binding | `z-←Antecedent` |
 | New synonym every example for the same overlay | Unstable inventory | Fixed labels (`witnessed`, `MAY`, …) |
 
@@ -503,7 +553,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 4. Compounds / stance / role / span `x` pieces are always hyphenated segments (`y-Ubune-x-Unowen`). Do not fuse a name into one unsegmented English label.
 5. **-r** uses `←…` (no trailing `-r`); **-x** stays as `-x`. Resume of a house name is `z-←Azawan`, not `z-r`. Fill-ask is `z-wh`, not `z-ar`. `wh` is role-neutral (*who*, *what*, *where*, …), so the gloss never contradicts the translation; `wh-else` for **u**.
 6. Multi-word units are in [phrase brackets](#phrase-brackets), nested by attachment; packages use labeled brackets (`NAME[…]`, `CITE[…]`, `SCOPE[…]`). The line [round-trips](#round-trip) to the exact Agazan.
-7. Free English is on its own **quoted** line (or grammar-table Gloss column) — **loose** by default; **strict** only when teaching packaging. Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line only when `lint:agazan` treats parser output as redundant with that loose line).
+7. Free English is on its own **quoted** line (or grammar-table Gloss column, or italic in a checkpoint): a loose sentence plus at most one note after the closing quote, required when the section teaches the marking the sentence drops ([sentence and note](#free-english-sentence-and-note)). Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line only when `lint:agazan` treats parser output as redundant with that loose line).
 
 ## See also
 

@@ -336,8 +336,8 @@ Usual sources (prefer one; reuse the language’s own systems):
 | Published roots when the gloss matches; `PoS` + **`~`/`@`** + `<…>` for donor spelling | Invented “lexicon-shaped” stems, a closed overlay with its own frozen spelling, or split/hyphenated PoS tokens in learner text |
 | Named [house people](#house-cast) when the clause needs a person | Default *I* / *you* (`zamun` / `zehon`) as dummy subjects |
 | Omit default **`yal`** when the page is not teaching the speech act | Leading every example with **`yal`** by habit |
-| Morph gloss + **loose** free English by default ([glosses.md](glosses.md)); packed role English when the lexicon lists it (`v-see` for `vahahal`) | Merging free English into the morph gloss, or inventing a `/v/` lemma that is not in `english_by_pos` |
-| Strict free English only when teaching packaging | Strict-only Beginner pages |
+| Morph gloss + free English as a loose sentence with an optional note ([glosses.md](glosses.md#free-english-sentence-and-note)); packed role English when the lexicon lists it (`v-see` for `vahahal`) | Merging free English into the morph gloss, or inventing a `/v/` lemma that is not in `english_by_pos` |
+| A note after the closing quote when the example teaches a marking the sentence drops ([when required](glosses.md#note-required)) | Notes inside the quotes, a second free English line, or notes that use Agazan forms or grammar terms |
 | A negative only when the mix-up is expected ([Compare with](#compare-with)) | Listing “no X” or a **Not this** column by habit |
 
 ### House people
