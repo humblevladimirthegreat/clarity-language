@@ -530,7 +530,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧊,ice,azaho,kelvin,ice marks thermodynamic temperature; kelvin is the SI temperature unit,,,restrictors.md#intermediate-practice
 🥢,stick,ahube,,chopsticks stand for any stick: a thin length of wood,,,
 🍽️,plate,ebede,service,plate is set for service,,help; dish; assistance; favor; aid,hooks.md#beginner-practice
-🍴,cutlery,agade,provision,cutlery enables provision,v:eat,supply; resource; meal; food; diet,
+🍴,cutlery,agade,provision,cutlery enables provision,v:eat,supply; resource; meal; food; diet,knowing.md#beginner-practice
 🥄,spoon,uzubu,portion,spoon measures a portion,,component; segment,numbers-applied.md#intermediate-practice
 🔪,knife,anava,severity,a knife cuts deep and hard,,sharp; severe,pronouns.md#beginner-practice
 🫙,jar,ahe,storage,jar stores what is kept,,vessel; stock,
@@ -792,7 +792,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 👒,sun-hat,azeha,shade,a sunhat shields from sun above; shade is shelter from harshness,,shadow,
 🎩,top-hat,adabe,trick,a magician pulls a trick from a top hat,,,
 🎓,mortar-board,omobo,,,,college; university,
-🧢,hat,ahoda,,,,cap,
+🧢,hat,ahoda,,,,cap,knowing.md#advanced-practice
 🪖,helmet,ehevu,,,,,roles.md#beginner-practice
 ⛑️,hard-hat,aheda,,,,,
 📿,rosary,orozo,prayer,beads count prayers; prayer is speaking to the sacred,,,

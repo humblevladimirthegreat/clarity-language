@@ -90,9 +90,9 @@ Calls and sentence glue use [`/y/`](../speech-moves.md) and [`/x/`](../dependent
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Adjective after the noun](../clause.md#adjectives-ɡ) | `zodogal gubuhel vowogal.` | *A blue dog walks.* | B |
-| [Adjective before the noun](../clause.md#left-bound-adjectives): `l` after `/ɡ/` | `glubuhel zodogal` | *a blue dog* | I |
-| [Detail on an adjective](../clause.md#adjective-detail-w) | `zodogal welavam gubuhel vowogal.` | *A very blue dog walks.* | B |
+| [Adjective after the noun](../clause.md#adjectives-ɡ) | `zodogal ganegel vowogal.` | *An angry dog walks.* | B |
+| [Adjective before the noun](../clause.md#left-bound-adjectives): `l` after `/ɡ/` | `glanegel zodogal` | *an angry dog* | I |
+| [Detail on an adjective](../clause.md#adjective-detail-w) | `zodogal welavam ganegel vowogal.` | *A very angry dog walks.* | B |
 | [Stance on the whole claim](../clause.md#stance-th) | `zodogal thevegam vowogal.` | *I doubt a dog is walking.* | B |
 
 ### Degree words {#degree}
@@ -116,8 +116,8 @@ Tell the two jobs apart by the word right before the `/b/` word.
 | a `/ɡ/`, `/h/`, or `/th/` word | [completes that word](../clause.md#extra-nouns) (the host) | `humum bazawan` | *like Azawan* | B |
 | anything else | [who receives](../clause.md#extra-nouns) (at most one) | `zazawan vezebel balahen.` | *Azawan tells Alahen.* | B |
 | a host, with `/w/` first | [`/w/` stays before the host](../clause.md#extra-nouns) | `welavam humum bazawan` | *very like Azawan* | B |
-| a host's `/b/`, then `/ɡ/` | [describes the extra noun](../clause.md#complex-chaining) | `zodogal gugol bazawan gubuhel` | *a dog the same as blue Azawan* | I |
-| two relations on one noun | [put one before with `gl-`](../clause.md#complex-chaining) | `glugol bazawan zodogal gugol balahen` | *a dog the same as Azawan, the same as Alahen* | I |
+| a host's `/b/`, then `/ɡ/` | [describes the extra noun](../clause.md#complex-chaining) | `zagavol gugol bazawan gezebul` | *a guard who is the same person as sleepy Azawan* | I |
+| two relations on one noun | [put one before with `gl-`](../clause.md#complex-chaining) | `glugol bazawan zagavol gugol babazel` | *a guard who is both Azawan and the police officer* | I |
 
 A [hook](../clause.md#complex-chaining) followed by `/b/` means *in* / *at* / *for*, not the person who receives.
 

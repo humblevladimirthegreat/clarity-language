@@ -1,6 +1,6 @@
 # Translation prompt from the parser
 
-Status: phase 1, steps 1 (policy edits), 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written; awaiting editor review before step 4. Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
+Status: phase 1, steps 1 (policy edits), 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done; awaiting editor review of the two calibration diffs before step 4b. Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
 
 ## Problem
 
@@ -107,6 +107,26 @@ The lint cannot tell whether a required note is missing. That is the review pass
 
 Scope: every free English line in an example block under `docs/grammar/` (about 1,100, including blocks with no morph line), and every italic English answer or prompt in a `### Practice` checkpoint and on [review.md](../grammar/review.md). Grammar-table Gloss cells are out of scope ([open questions](#open-questions)).
 
+<a id="strange-examples"></a>
+**Strange examples.** The review pass reads every example on a page, so it also fixes the ones that make no sense to a plain reader, Agazan included. Fixing the free English is the occasion; the example's meaning is fair game while the page is open. A strange example teaches the form badly: the learner stops at *a blue Azawan* and misses the channel on the adjective.
+
+| Strange | Example | Rewrite |
+|---------|---------|---------|
+| A property that does not fit the noun | *Azawan, surprisingly blue, walks*; *a cat that is still blue* | *Azawan walks, surprisingly tired*; *a cat that is still sleepy* |
+| An identity or relation between things that cannot share it | *a dog the very same as Azawan* (SAME is identity) | *a guard who is the very same person as Azawan* |
+| A manner or stance that does not fit the verb | *Ahaben hastily sees a box*; *Azawan may be seeing a sandwich* | *Ahaben hastily punches a box*; *Azawan may be eating a sandwich* |
+| A verb missing the object or setting English needs | *Azawan always tells*; *A train stands again* | *Azawan always used to sing*; *A train stands still again* |
+
+Rules for the rewrite:
+
+- **Keep the construction.** The section's new form, the role letters, and the structure stay; only roots and English change. If the only fix needs a different construction, list it for the editor instead.
+- **Fix the English alone when that is enough** (*stands* → *stands up*). Change the Agazan only when no natural English fits it.
+- **Published roots only**, picked from the page's setting and word bank where possible. Never coin a root; if nothing fits, list it.
+- **Update everything that cites the example:** prose that quotes its words (*blue* → *angry*), a checkpoint's word bank (one row per root across New words and Review, so check the lint), the answer's explanation, Pick one / What changes alternatives, and [cheat-sheet](../grammar/cheat-sheets/) rows that quote it (`lint:cheat-sheets` fails until they match). A word new to a checkpoint may need its lexicon `core` cell set, as the core-vocabulary lint says. Cheat sheets and the lexicon are shared files, so a subagent lists those follow-ups in its report and the main session applies them in step 6.
+- **Morph lines come from the parser.** Write the new morph, then `npm run regloss-docs` must report 0 rewrites on the page.
+- **Leave alone:** playful but coherent examples (*A dog sleeps like Azawan*), the running cast and setting, cheat-sheet blocks between `<!-- generated -->` markers (rerun `npm run cheat-sheet-blocks -- --write` instead), and grammar tables (out of scope, as for free English).
+- **Report** each rewrite in one line (old English → new English) so the editor can check the meaning.
+
 **Claritish is out of scope.** Its examples are English with Agazan words dropped in, not translations of an Agazan sentence, so the convention does not apply. Its one quoted free English line (`claritish/learn-agazan.md`, the closing plug) is left as it is.
 
 The work splits into what sets the rules, done once in the main session, and the per-page review, which goes to subagents.
@@ -119,7 +139,7 @@ The work splits into what sets the rules, done once in the main session, and the
 | 4. Calibration | Main session, two pages | [clause.md](../grammar/clause.md) (Beginner, few notes) and [knowing.md](../grammar/knowing.md) (evidence and stance, many notes). Every [finding category](#finding-categories) on these two pages, the scripted ones included, is fixed by hand. The editor reviews both diffs. Any judgment call they raise is written into glosses.md before step 5. |
 | 4b. Scripted fixes | Main session | After the editor approves the calibration diffs: a one-off script applies the two mechanical fixes from the [finding categories](#finding-categories) (1a and 2a) on every page except the two calibration pages, then `npm run free-english-review` reruns so the subagents get clean lists. `npm run build` passes, and the editor skims the diff before step 5. |
 | 5. Page review | Subagents, in waves | One subagent per page (two small pages may share one), about six per wave. Brief below. |
-| 6. Wave check | Main session | A [diff guard](#diff-guard) (script written by the main session before the first wave), `npm run build`, the subagents' unsure lists, and the editor's review of the wave diff. One commit per wave. |
+| 6. Wave check | Main session | The cheat-sheet and `core` follow-ups from the reports, then a [diff guard](#diff-guard) (script written by the main session before the first wave), `npm run build`, the subagents' unsure lists, and the editor's review of the wave diff. One commit per wave. |
 | 7. Lint to error | Main session | The shape checks fail the build. `npm run build` and `npm test` pass. |
 
 <a id="phase-1-step-2-as-built"></a>
@@ -155,23 +175,24 @@ The work splits into what sets the rules, done once in the main session, and the
 
 **Rules written for the cleanup** ([inside parentheses](../meta/glosses.md#inside-parentheses), linted): parentheses inside the quotes for a scope island (*Azawan and (just water)*) and for a tag letter (*A dog (A) sees a cookie (E)*); alternative renderings `"Yes." / "True."`; dialogue turns `"Walk." "Will do."`. These cleared 11 inside-parentheses lines and 25 shape lines. The prompt index takes the first alternative and joins turns.
 
+<a id="phase-1-step-4-as-built"></a>
+**Step 4 as built.** [clause.md](../grammar/clause.md): 5 lines (two inside-quote notes moved out, two *(adjective before the noun)* drill hints now *(sleepy first)* style). [knowing.md](../grammar/knowing.md): 37 lines. Besides the lint findings, the pass rewrote stilted sentences into natural English with the channel's own phrase (*live / from the scene* → *I can see it*; *a former pattern, not today's* → *used to*), dropped notes that restated the sentence, replaced *from the clouds* (a source the gloss lacks) with *it looks like*, and split *I gather Azawan thinks Alahen left, and is asleep* into two sentences plus a carry-forward note. One note contradicted the page: the advanced English → Agazan holder drill said *(Azawan's clues, not mine)*, but the seam word is the speaker's; it now reads *(Azawan's view; the clues are mine)*. It also rewrote the [strange examples](#strange-examples) on both pages (a rule added after the pass started): clause.md's blue dog is now an angry dog, the SAME examples use a guard instead of a dog that *is* Azawan, *sleeps like blue Azawan* is *Azawan sleeps like a tired dog*, and the circus drills punch instead of *hastily see*. knowing.md's adjective-mood examples use a hat *I remember as red* instead of a blue Azawan, FORMER and *contrary to* use *sing* instead of a bare *tell*, and *may be seeing a sandwich* is *eating*. Word banks, two cheat-sheet pages, and the `core` cells for *eat* and *hat* follow. Two readings changed on purpose, for the editor to confirm: `th-CLUES-Azawan | th-LIVE` is now *Azawan is watching Alahen leave* (LIVE is now, so not *saw*), and the question forecast is *going by the pattern you see* (a question's channel is the listener's). Judgment calls written into [glosses.md § sentence first](../meta/glosses.md#sentence-first). Cheat-sheet tables were left alone (out of scope).
+
 **Why subagents for step 5 only.** The review is about 1,100 separate judgments, and each needs the teaching context of its own page: what the section's new form is, and what it marks. Spread across 30-odd pages, that is too much reading for one context to keep sharp, while the pages are independent of each other. Steps 1 to 4 and 6 set or check the rule. They need one consistent judgment, so they stay in the main session. Calibration comes before any fan-out because subagents copy whatever the calibration pages show: a mistake there repeats on every page.
 
 **Subagent brief** (each one gets the same text, its page, and its review list):
 
 - Read the convention in [glosses.md](../meta/glosses.md) and the two calibrated pages' diffs before editing.
 - For each example on the list: is the marking the section teaches stated, in the sentence or the note? Add a required note when it is not, move an inside-quote note out, keep aside, scope-island, and tag-letter parentheses, and move teaching commentary into a prose line under the block. Fix each lint finding as its [category](#finding-categories) says.
-- Edit only free English lines, and add prose lines directly under a block. Never edit Agazan, morph lines, tables, headings, or any other page.
+- Edit only free English lines, and add prose lines directly under a block, except for a [strange example](#strange-examples): there, rewrite the example's Agazan, morph line, citing prose, and word bank rows as that section says. Never edit headings, tables, or any other page; list cheat-sheet rows and lexicon `core` cells a rewrite needs.
 - If an example's English seems to contradict the grammar on its page, do not fix either. List it as a gap for the editor.
 - Run `npm run lint:agazan -- docs/grammar/<page>.md` on its own page. Do not run `npm run build`: parallel builds share output.
-- Report: how many lines changed, each added required note in one line, and an unsure list.
+- Report: how many lines changed, each added required note in one line, each strange-example rewrite in one line, and an unsure list.
 
 All subagents work in the same tree, without worktrees. Each one owns different files, so nothing conflicts, and worktrees would only add merge steps. They run on the default model, not a smaller one: deciding whether a note is required is judgment about the grammar.
 
 <a id="diff-guard"></a>
-**Diff guard** (step 6): a script that fails when a changed line in a wave's diff is anything other than a free English line in an example block or a new prose line directly after one. A changed code span, morph line, table row, or heading means a subagent went out of scope. That page is reverted and redone.
-
-None of this changes a morph line, so `npm run regloss-docs` and the round-trip tests are unaffected.
+**Diff guard** (step 6): a script that fails when a changed line in a wave's diff is anything other than a free English line in an example block or a new prose line directly after one. A changed table row (other than a word bank row) or heading means a subagent went out of scope. That page is reverted and redone. A changed Agazan code span or morph line is allowed only as a [strange-example](#strange-examples) rewrite: the guard parses old and new and fails unless both have the same construction IDs (roots may differ), and the subagent's report lists the rewrite. `npm run regloss-docs` must report 0 rewrites after each wave.
 
 ## Phase 2: the prompt
 

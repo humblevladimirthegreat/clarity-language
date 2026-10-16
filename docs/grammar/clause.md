@@ -48,25 +48,25 @@ Same meaning, object first:
 
 ### Adjectives (`/ɡ/`) {#adjectives-ɡ}
 
-An **adjective** names a property of a noun (*blue*). Mark it with `/ɡ/` and put it right after the noun it describes. You can stack several adjectives after one noun.
+An **adjective** names a property of a noun (*angry*). Mark it with `/ɡ/` and put it right after the noun it describes. You can stack several adjectives after one noun.
 
-> `zodogal gubuhel vowogal.`
+> `zodogal ganegel vowogal.`
 >
-> [z-dog | g-blue] | v-walk
+> [z-dog | g-angry] | v-walk
 >
-> "A blue dog walks."
+> "An angry dog walks."
 
 When the root names an event, the adjective says the noun is in the middle of it: `gowogal` after *dog* is *a walking dog* ([in progress](predication.md#in-progress)).
 
 ### Extra detail on an adjective (`/w/`) {#adjective-detail-w}
 
-To say how strongly a property holds (*very* blue), add a word marked with `/w/` immediately before the adjective. The `/w/` word describes only the adjective right after it, not the noun.
+To say how strongly a property holds (*very* angry), add a word marked with `/w/` immediately before the adjective. The `/w/` word describes only the adjective right after it, not the noun.
 
-> `zodogal welavam gubuhel vowogal.`
+> `zodogal welavam ganegel vowogal.`
 >
-> [z-dog | [w-very | g-blue]] | v-walk
+> [z-dog | [w-very | g-angry]] | v-walk
 >
-> "A very blue dog walks."
+> "A very angry dog walks."
 
 ### Adverbs (`/h/`) {#adverbs-h}
 
@@ -312,15 +312,15 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 ### Adjectives before the noun (`gl-`) {#left-bound-adjectives}
 
-English puts the adjective before the noun (*a blue dog*). Agazan can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending), and that adjective describes the **next** noun instead of the one before it. This lets you choose the order for meter or emphasis, and it frees the spot after the noun for another adjective. (cue: **l** ≈ lean: the word leans toward the noun ahead.)
+English puts the adjective before the noun (*an angry dog*). Agazan can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending), and that adjective describes the **next** noun instead of the one before it. This lets you choose the order for meter or emphasis, and it frees the spot after the noun for another adjective. (cue: **l** ≈ lean: the word leans toward the noun ahead.)
 
-> `glubuhel zodogal.`
+> `glanegel zodogal.`
 >
-> [gl-blue | z-dog]
+> [gl-angry | z-dog]
 >
-> "a blue dog"
+> "an angry dog"
 
-A `/b/` word still follows that adjective, and a `/w/` word still sits immediately before it (`welavam glubuhel zodogal` = *a very blue dog*). This extra **`l`** goes only on adjectives (`/ɡ/`). A noun must come after it: with no noun to lean on, write a plain `/ɡ/` adjective after the noun instead (`zodogal gubuhel`).
+A `/b/` word still follows that adjective, and a `/w/` word still sits immediately before it (`welavam glanegel zodogal` = *a very angry dog*). This extra **`l`** goes only on adjectives (`/ɡ/`). A noun must come after it: with no noun to lean on, write a plain `/ɡ/` adjective after the noun instead (`zodogal ganegel`).
 
 A [family name](word-endings.md#multipart-names) is a `/ɡ/` word too, so **`gl-`** puts it first, for a culture that names people family first. It leans on a [call](speech-moves.md#vocative) the same way.
 
@@ -340,33 +340,33 @@ A [family name](word-endings.md#multipart-names) is a `/ɡ/` word too, so **`gl-
 
 A relation adjective and its hosted `/b/` (*the same as Azawan*: **`gugol`** + `/b/`) work as one unit after a noun. A `/w/` word that grades the relation goes immediately before the `/ɡ/` word, as usual. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun. (cue: 🪙 *coin*: two faces of one thing.)
 
-> `zodogal welavam gugol bazawan.`
+> `zagavol welavam gugol bazawan.`
 >
-> z-dog | [[w-very | g-SAME] | b-Azawan]
+> z-guard | [[w-very | g-SAME] | b-Azawan]
 >
-> "a dog the very same as Azawan"
+> "a guard who is the very same person as Azawan"
 
-> `zodogal gugol bazawan gubuhel.`
+> `zagavol gugol bazawan gezebul.`
 >
-> z-dog | [g-SAME | [b-Azawan | g-blue]]
+> z-guard | [g-SAME | [b-Azawan | g-sleepy]]
 >
-> "a dog the same as blue Azawan"
+> "a guard who is the same person as sleepy Azawan"
 
 The same holds after an `/h/` or `/th/` host: an adjective after its `/b/` describes that extra noun.
 
-> `zodogal vezebal humum bazawan gubuhel.`
+> `zazawan vezebal humum bodogal gadadal.`
 >
-> z-dog | v-sleep | [h-like | [b-Azawan | g-blue]]
+> z-Azawan | v-sleep | [h-like | [b-dog | g-tired]]
 >
-> "A dog sleeps like blue Azawan."
+> "Azawan sleeps like a tired dog."
 
 Because a second relation after the pair would attach to the extra noun, you cannot put two relation adjectives **after** the same first noun. To keep both on that noun in one clause, put one [before the noun](#left-bound-adjectives) with **`gl-`**; its `/b/` still follows it. Otherwise use [another sentence](dependents.md#which-noun).
 
-> `glugol bazawan zodogal gugol balahen.`
+> `glugol bazawan zagavol gugol babazel.`
 >
-> [[gl-SAME | b-Azawan] | z-dog] | [g-SAME | b-Alahen]
+> [[gl-SAME | b-Azawan] | z-guard] | [g-SAME | b-police]
 >
-> "a dog the same as Azawan, the same as Alahen"
+> "a guard who is both Azawan and the police officer"
 
 A verb can take several `/h/` or `/th/` units. Each plain word counts as one unit, and so does a host with its `/b/` (plus any `/w/` before it).
 
@@ -391,23 +391,23 @@ Beginner used **`welavam`** *very* before an adjective. The same `/w/` slot take
 >
 > "A dog walks very hastily."
 
-> `zodogal wohahal gubuhel vowogal.`
+> `zodogal wohahal ganegel vowogal.`
 >
-> [z-dog | [w-ocean | g-blue]] | v-walk
+> [z-dog | [w-ocean | g-angry]] | v-walk
 >
-> "An extremely blue dog walks."
+> "An extremely angry dog walks."
 
-> `zodogal wamazam gubuhel vowogal.`
+> `zodogal wamazam ganegel vowogal.`
 >
-> [z-dog | [w-small | g-blue]] | v-walk
+> [z-dog | [w-small | g-angry]] | v-walk
 >
-> "A slightly blue dog walks."
+> "A slightly angry dog walks."
 
-> `zodogal wadeham gubuhel vowogal.`
+> `zodogal wadeham ganegel vowogal.`
 >
-> [z-dog | [w-quite | g-blue]] | v-walk
+> [z-dog | [w-quite | g-angry]] | v-walk
 >
-> "A fairly blue dog walks."
+> "A fairly angry dog walks."
 
 The same words also go right before a reaction, to say how strongly it holds ([describing a reaction](speech-moves.md#describe-turn-word)).
 
@@ -467,6 +467,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
 | *police* | `abazel` |
+| *guard* | `agavol` |
 | **SAME** | `ugol` |
 | *sleepy* | `ezebul` |
 | *very* | `welavam` |
@@ -479,7 +480,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *A sleepy Alahen stands.* (adjective before the noun)
+**1.** *A sleepy Alahen stands.* (*sleepy* first)
 
 ::: details Show answer
 `glezebul zalahen vazadol.`
@@ -487,7 +488,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [gl-sleepy | z-Alahen] | v-stand
 :::
 
-**2.** *The police officer the same as sleepy Azawan stands.*
+**2.** *The police officer, who is the same person as sleepy Azawan, stands up.*
 
 ::: details Show answer
 `zabazel gugol bazawan gezebul vazadol.`
@@ -513,7 +514,7 @@ z-Ahaben | d-train | h-again | v-see
 d-ticket | v-see
 :::
 
-**5.** *Alahen stands extremely hastily.*
+**5.** *Alahen stands up extremely hastily.*
 
 ::: details Show answer
 `zalahen wohahal hadehum vazadol.`
@@ -539,12 +540,12 @@ z-Alahen | [d-train | [w-very | g-blue]] | v-see
 *A very sleepy police officer sits.*
 :::
 
-**2.** `glugol bazawan zabazel gugol balahen.`
+**2.** `glugol bazawan zabazel gugol bagavol.`
 
 ::: details Show answer
-[[gl-SAME | b-Azawan] | z-police] | [g-SAME | b-Alahen]
+[[gl-SAME | b-Azawan] | z-police] | [g-SAME | b-guard]
 
-*A police officer the same as Azawan, the same as Alahen.*
+*A police officer who is both Azawan and the guard.*
 :::
 
 **3.** `damebel vamagal.`
@@ -560,7 +561,7 @@ d-umbrella | v-find
 ::: details Show answer
 z-Azawan | [w-very | h-haste] | v-stand
 
-*Azawan stands very hastily.*
+*Azawan stands up very hastily.*
 :::
 
 **5.** `zedehal herobem vazadol.`
@@ -568,7 +569,7 @@ z-Azawan | [w-very | h-haste] | v-stand
 ::: details Show answer
 z-train | h-again | v-stand
 
-*A train stands again.*
+*A train stands still again.*
 :::
 
 **6.** `zahaben dedegal gugol vahahal.`
@@ -576,19 +577,19 @@ z-train | h-again | v-stand
 ::: details Show answer
 z-Ahaben | [d-ticket | g-SAME] | v-see
 
-*Ahaben sees the same ticket (as before).*
+*Ahaben sees the same ticket.* (as before)
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azawan sees a police officer the same as blue Ahaben.* `zazawan dabazel gugol bahaben gubuhel vahahal.` or `zazawan dabazel gubuhel gugol bahaben vahahal.`
+**1.** *Azawan sees a police officer who is the same person as sleepy Ahaben.* `zazawan dabazel gugol bahaben gezebul vahahal.` or `zazawan dabazel gezebul gugol bahaben vahahal.`
 
 ::: details Show answer
-`zazawan dabazel gugol bahaben gubuhel vahahal.`
+`zazawan dabazel gugol bahaben gezebul vahahal.`
 
-z-Azawan | [d-police | [g-SAME | [b-Ahaben | g-blue]]] | v-see
+z-Azawan | [d-police | [g-SAME | [b-Ahaben | g-sleepy]]] | v-see
 
-After the **`gugol`** pair, a plain adjective describes the extra noun; before it, *blue* describes the police officer.
+After the **`gugol`** pair, a plain adjective describes the extra noun; before it, *sleepy* describes the police officer.
 :::
 
 **2.** *Alahen was seen.* `dalahen vahahal.` or `zalahen vahahal.`
@@ -603,7 +604,7 @@ Leave out the subject and keep Alahen as the object; `zalahen vahahal` is *Alahe
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *A blue train stands.* (adjective before the noun) <!-- lint: error -->`gubuhel zedehal vazadol.`
+**1.** *A blue train stands.* (*blue* first) <!-- lint: error -->`gubuhel zedehal vazadol.`
 
 ::: details Show answer
 `glubuhel zedehal vazadol.`
@@ -625,7 +626,7 @@ If the English sets one person or thing against others (*Azawan, not someone els
 >
 > z-Azawan | &d-cat | v-see
 >
-> "It's a cat that Azawan sees (not something else)."
+> "It's a cat that Azawan sees." (not something else)
 
 If the English only puts the new part first, with no others to set it against (answering *What does Azawan see?* with *It's a cat that Azawan sees*), write the plain sentence. What came before already shows which part is new.
 
@@ -681,12 +682,12 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 #### English → Agazan {#advanced-english-to-agazan}
 
-**1.** *Hastily, Azawan sees a balloon.*
+**1.** *Hastily, Azawan punches a balloon.*
 
 ::: details Show answer
-`hadehum zazawan dabevul vahahal.`
+`hadehum zazawan dabevul vabahel.`
 
-h-haste | z-Azawan | d-balloon | v-see
+h-haste | z-Azawan | d-balloon | v-punch
 :::
 
 **2.** *What does Alahen punch?* *It's a drum that Alahen punches.*
@@ -730,7 +731,7 @@ d-trumpet | z-Ahaben | v-see
 ::: details Show answer
 z-Alahen | &d-box | v-punch
 
-*It's a box (not something else) that Alahen punches.*
+*It's a box that Alahen punches.* (not something else)
 :::
 
 **3.** `hadehum zalahen vezevul.`
@@ -741,12 +742,12 @@ h-haste | z-Alahen | v-sneak
 *Hastily, Alahen sneaks.*
 :::
 
-**4.** `dabegol zahaben hadehum vahahal.`
+**4.** `dabegol zahaben hadehum vabahel.`
 
 ::: details Show answer
-d-box | z-Ahaben | h-haste | v-see
+d-box | z-Ahaben | h-haste | v-punch
 
-*Ahaben hastily sees a box.*
+*Ahaben hastily punches a box.*
 :::
 
 #### What changes {#advanced-what-changes}

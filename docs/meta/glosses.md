@@ -136,6 +136,14 @@ Grouping that English can say does not use parentheses: *either Azawan walks or 
 
 When the sentence already says it (*as I remember*, *I gather*, *exactly one of*), add no note.
 
+<a id="sentence-first"></a>
+**Sentence first.** When English has a natural phrase for the marking, put it in the sentence and add no note: *I can see it*, *as I remember*, *it looks like*, *going by the pattern*, *by definition*, *used to*. Take the phrase from the English column of the owning table, and use the same phrase for the same marking across the page. A note is for what the sentence cannot say without turning awkward: *strong clues*, *the singing is hearsay too*, *not something else*.
+
+- **Nothing the gloss lacks.** Neither the sentence nor the note adds a source, reason, or time the gloss does not have: a bare CLUES channel is *it looks like*, not *from the clouds*.
+- **No restating.** Drop a note that repeats the sentence (*Maybe Azawan thinks Alahen left.* needs no *a guess about Azawan's view*).
+- **Contrasts with another form** (*quitting for good is …*) are teaching, not translation. When a table just above already shows the other form, drop the contrast; otherwise move it to a prose line or a [Compare with](grammar-docs.md#compare-with) line.
+- **English → Agazan prompts** may use the note to pick between two correct answers, in plain English: *A sleepy Alahen stands.* (*sleepy* first), not *(adjective before the noun)*.
+
 ### What a note never contains
 <a id="note-contents"></a>
 
