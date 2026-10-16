@@ -18,7 +18,16 @@ import type { TokenBranch } from "./tokens.js";
 import type { ExtraNounHook } from "./hook-compounds.js";
 import type { AnaphorKind, Ending, LexReading, MorphWordFamily, PointerVowel, Pos, RoleVowel, XFamily } from "./types.js";
 
-export type ConstructionEntry = { anchor: string; summary: string };
+/**
+ * `summary` is for maintainers (Agazan terms allowed). `reader`, when set, explains the
+ * construction in gloss notation to someone who knows only the translation prompt's fixed
+ * core ([llm-prompt.ts](./llm-prompt.ts)); only constructions a careful reader still misreads get one.
+ */
+export type ConstructionEntry = { anchor: string; summary: string; reader?: string };
+
+/** Shared by the three rank-fence bar productions (comparatives.md#bars). */
+const BAR_READER =
+  "A `th-` word inside a ranking bracket, right before the rank word, is what the item is ranked against: `[z-Alahen | th-plan-itinerary | z-rank/more | b-later] | v-departure` = Alahen leaves later than planned; a pattern there = than usual. The same `th-` word outside the bracket is a stance on the whole sentence.";
 
 /** Sentence grammar: `rule.childKey` (sub-rule, token type, or LABEL). */
 export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
@@ -72,15 +81,27 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "dCoord.dCoordPart": { anchor: "joins.md#right-close", summary: "/d/ phrase parts" },
   "bCoord.bCoordPart": { anchor: "joins.md#right-close", summary: "/b/ phrase parts" },
   "zCoordPart.npConjunct": { anchor: "word-endings.md#greeting", summary: "/z/ conjunct" },
-  "zCoordPart.bar": { anchor: "comparatives.md#bars", summary: "/th/ stance word as a rank fence's bar" },
+  "zCoordPart.bar": {
+    anchor: "comparatives.md#bars",
+    summary: "/th/ stance word as a rank fence's bar",
+    reader: BAR_READER,
+  },
   "zCoordPart.npJoinClose": { anchor: "joins.md#and-lists-a", summary: "/z/ join after its conjuncts" },
   "zCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /z/ join" },
   "dCoordPart.npConjunct": { anchor: "joins.md#right-close", summary: "/d/ conjunct" },
-  "dCoordPart.bar": { anchor: "comparatives.md#bars", summary: "/th/ stance word as a rank fence's bar" },
+  "dCoordPart.bar": {
+    anchor: "comparatives.md#bars",
+    summary: "/th/ stance word as a rank fence's bar",
+    reader: BAR_READER,
+  },
   "dCoordPart.npJoinClose": { anchor: "joins.md#right-close", summary: "/d/ join after its conjuncts" },
   "dCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /d/ join" },
   "bCoordPart.npConjunct": { anchor: "joins.md#right-close", summary: "/b/ conjunct" },
-  "bCoordPart.bar": { anchor: "comparatives.md#bars", summary: "/th/ stance word as a rank fence's bar" },
+  "bCoordPart.bar": {
+    anchor: "comparatives.md#bars",
+    summary: "/th/ stance word as a rank fence's bar",
+    reader: BAR_READER,
+  },
   "bCoordPart.npJoinClose": { anchor: "joins.md#right-close", summary: "/b/ join after its conjuncts" },
   "bCoordPart.standaloneJoin": { anchor: "joins.md#standalone-phrase", summary: "standalone /b/ join" },
   "npJoinClose.JoinZ": { anchor: "joins.md#and-lists-a", summary: "/z/ join fence" },
@@ -200,7 +221,12 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
   sake: { anchor: "sakes.md#met", summary: "sake word" },
   scope: { anchor: "predication.md#label-scope", summary: "label scope" },
   lateral: { anchor: "roles.md#viewpoint-laterals", summary: "viewpoint lateral" },
-  holder: { anchor: "knowing.md#holder", summary: "holder seam" },
+  holder: {
+    anchor: "knowing.md#holder",
+    summary: "holder seam",
+    reader:
+      "`th-TAG-Name` (a stance tag joined to a person, or to a `←` pointer): the sentence gives that person's view, and the tag says how the speaker knows it. `th-CLUES-Azawan` = I gather Azawan thinks …; `th-MAY-Azawan` = maybe Azawan thinks ….",
+  },
   ability: { anchor: "x-compounds.md#conversation-length", summary: "ability compound" },
   numeric: { anchor: "numeric-derivation.md#numeric-derivation", summary: "numeric derivation" },
   compound: { anchor: "x-compounds.md#two-roots-one-word", summary: "ordinary x compound" },
@@ -320,7 +346,11 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
   percent: { anchor: "numbers-applied.md#percent-and-percentage-points", summary: "percent / percentage points" },
   decimal: { anchor: "numbers.md#exponents", summary: "decimal point" },
   groups: { anchor: "numbers.md#group-separator", summary: "more than one digit group" },
-  calendar: { anchor: "numbers-applied.md#time", summary: "calendar ordinal (date)" },
+  calendar: {
+    anchor: "numbers-applied.md#time",
+    summary: "calendar ordinal (date)",
+    reader: "A date: `_22,7` is day 22 of month 7 (22 July); a third field is the year (`_22,7,2026`).",
+  },
   "writingMark.~": { anchor: "numbers.md#number-endings", summary: "~ = -m in writing" },
   "writingMark.@": { anchor: "numbers.md#number-endings", summary: "@ = -n in writing" },
   "writingMark.=": { anchor: "numbers.md#number-endings", summary: "= = -r in writing" },
@@ -378,7 +408,12 @@ export const JOIN_SERIES_CONSTRUCTIONS: Record<JoinSeries, ConstructionEntry> = 
   u: { anchor: "joins.md#negation-u", summary: "none of" },
   ua: { anchor: "joins.md#everything-ua", summary: "everything but" },
   uo: { anchor: "joins.md#full-single-item-and-standalone-inventories", summary: "anything but" },
-  e: { anchor: "joins.md#rank-e", summary: "rank" },
+  e: {
+    anchor: "joins.md#rank-e",
+    summary: "rank",
+    reader:
+      "`rank/more` closes a bracket that ranks its items on the word after it, earlier above later: `[z-Alahen | z-Azawan | z-rank/more | g-tall]` = Alahen is taller than Azawan. With one item, it is the top of all (the biggest).",
+  },
   ae: { anchor: "joins.md#sequence-ae", summary: "sequence (first = start)" },
   oe: { anchor: "comparatives.md#equatives-oe-shared-scale", summary: "equal rank" },
   ue: { anchor: "joins.md#invert-ua-uo-ue", summary: "rank reversal" },

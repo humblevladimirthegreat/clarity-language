@@ -1,6 +1,6 @@
 # Translation prompt from the parser
 
-Status: phase 1, step 1 (policy edits) done; awaiting editor review before step 4. Not design authority; fold into tooling and meta docs, then drop.
+Status: phase 1, step 1 (policy edits) done; awaiting editor review before step 4. Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
 
 ## Problem
 
@@ -213,6 +213,19 @@ node scripts/parse.mjs --llm-prompt [--loose] [--examples N] '<Agazan>' ['<Agaza
 ```
 
 Prints plain text, not JSON. A parse failure prints the parser error and exits 1, as today. `--llm-prompt` with `--constructions` or `--check-ambiguity` is an error. Those flags already shape JSON output.
+
+### As built
+<a id="phase-2-as-built"></a>
+
+Code: [`llm-prompt.ts`](../../src/parse/llm-prompt.ts) (core, selection, prompt; pure), [`llm-examples.ts`](../../src/parse/llm-examples.ts) (doc examples, terminology glosses, reader notes), tests in `llm-prompt.test.ts`. Where it differs from the plan above:
+
+- **Index cache.** Built on first use and cached at `dist/parse/llm-examples.json`, rebuilt when anything under `docs/grammar/*.md`, `src/`, or `data/` is newer. About 3 s to build; then the CLI costs the same as a plain parse.
+- **Example source.** Blockquote example blocks on the top-level grammar pages only (926 distinct glosses today, 88 with a note). A dialogue block's Agazan lines are joined. Tables and checkpoint answers are not used yet. A block is skipped when its free English line does not split as `"…"` plus at most one `(…)`, when it has backticks or links, when the quotes hold more `(…)` than the gloss has `ASIDE[` spans, or when the gloss has an unbound `←"…"`. So every phase 1 page pass adds examples.
+- **Core size.** About 4 KB, not 1.5 KB: role names, pointer vowels, tone marks, and the hook reading (`d-tea | instead | d-coffee` = coffee instead of tea) all proved necessary.
+- **Variant tails** of overlay labels (`.strong`, `.weak`, `.fault`, `.share`, `.ledger`, `.bookmark`, `.lasting`, …) are a fixed `GLOSS_READER.tails` table, shown in the legend only when a gloss uses one, not `reader` notes per overlay row. The test fails when an overlay gloss has a tail with no line.
+- **Hyphenated labels.** `CLUES-TOPIC` (a holder) and `AIMED-FLOWING` (emotion pieces) are legend-matched by piece; `ON-BEHALF` by the whole run.
+- **Seed `reader` notes:** holder (`word.xFamily.holder`), date (`number.calendar`), rank (`join.e`), and bars (`sentence.{z,d,b}CoordPart.bar`), from the pilot misses. Their examples are not doc sentences, so a note never hands the model the answer to a held-out pair.
+- **Filler examples.** When nothing in the index shares a rare feature with the input, the greedy pick falls back to the shortest glosses, and the forced note example can be one whose note is still teaching commentary (*office handle on first mention*). Phase 1 removes those notes.
 
 ## Phase 3: evaluation
 <a id="evaluation"></a>

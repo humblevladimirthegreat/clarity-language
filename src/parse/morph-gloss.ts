@@ -1679,3 +1679,20 @@ export const MORPH_GLOSS_LABELS: readonly string[] = [
     "NAME",
   ]),
 ];
+
+/**
+ * Form suffixes the morph line appends to a sense label ([glosses.md § Round trip](../../docs/meta/glosses.md#round-trip)).
+ * The translation prompt explains each one (llm-prompt.ts `GLOSS_READER`).
+ */
+export const MORPH_FORM_SUFFIXES: readonly string[] = [
+  ...new Set([
+    ".open",
+    ".instance",
+    ".spelled",
+    ".short",
+    ".name",
+    ...Object.values(NUMBER_MARK_SUFFIX),
+    ...Object.values(POINTER_ENDING),
+    ...Object.values(POINTER_VOWEL).map((vowel) => `.${vowel}`),
+  ]),
+];
