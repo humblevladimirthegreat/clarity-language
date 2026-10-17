@@ -106,7 +106,7 @@ When the lexicon has a matching root, write the ordinary word, not a span. An as
 | [**`~`**](../spans.md#exact-paraphrase-proper) | paraphrase | the gist | `d~[zazawan vezehel]` | B |
 | [**`@`**](../spans.md#exact-paraphrase-proper) | proper | a work known by that title | `d@[onodan alahen]` | B |
 | [**`~@`**](../spans.md#exact-paraphrase-proper) | proper, loosely remembered | *something like that title* | `d~@[onodan alahen]` | B |
-| [**`^@`**](../spans.md#one-of-a-title) | one thing under the name | *an iPhone*, *a copy of* | `d^@[onodan alahen]` | I |
+| [**`^@`**](../spans.md#one-of-a-title) | one thing under the name | *an iPhone* / *a copy of* | `d^@[onodan alahen]` | I |
 | [**`~^@`**](../spans.md#one-of-a-title) | one copy, title roughly | *a copy of something like* | `d~^@[onodan alahen]` | I |
 
 A one-word name is an ordinary **-n** word (`donodan`), not a span.

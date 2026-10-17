@@ -33,10 +33,10 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | Rule | Example | English | Stage |
 |------|---------|---------|-------|
 | [Items first, then the join](../joins.md#and-lists-a); its first letter matches the items | `zodogal zagadul zal` | *a dog and a cat* | B |
-| | `vowogal varahal vam` | *walks and runs (and possibly more)* | B |
+| | `vowogal varahal vam` | *walks and runs* (and possibly more) | B |
 | [Clause joins](../joins.md#clause-joins) (`/x/`) go **between** clauses | `zazawan vowogal xam zalahen varahal` | *Azawan walks and Alahen runs* | B |
 | A [different clause join](../joins.md#clause-joins) closes everything before it | `A xol B xal C` | *(A or B) and C* | B |
-| [Nest](../joins.md#fence-nesting) by stacking joins | `zedehel zagavel zol zowodel zal` | *(tea or coffee) and water* | I |
+| [Nest](../joins.md#fence-nesting) by stacking joins | `zedehel zagavel zol zowodel zal` | *either tea or coffee, and water* | I |
 | [Scope island](../joins.md#scope-islands-join) keeps a small list inside a bigger one of the same role | `zazawan { zowodel zal } zam` | *Azawan and (just water)* | A |
 
 ### Endings {#join-endings}

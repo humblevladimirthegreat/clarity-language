@@ -237,7 +237,7 @@ Each is a `/th/` word on the clause. The ending says where the rule comes from: 
 | [Binding consent](../sakes.md#consent) | `zazawan vezebel huxegol bahaben.` | *as Ahaben agreed in advance* | I |
 | [Assumed consent, several people](../sakes.md#consent) | `zazawan vezebel huxegor bahaben balahen bal.` | *assuming Ahaben and Alahen are OK* | I |
 | [Consent, no `/b/`](../sakes.md#consent): only the actor | `zalahen vezebal huxegom.` | *Alahen lets themself sleep.* | I |
-| [A promise](../sakes.md#consent) | `zamun vowogal huxegol.` | *I promise (you) to walk.* | I |
+| [A promise](../sakes.md#consent) | `zamun vowogal huxegol.` | *I promise to walk.* (to you) | I |
 | [Promise to someone else](../sakes.md#consent) | `zamun vowogal huxegol el bahaben.` | *I promise Ahaben I'll walk.* | I |
 | [Check in](../sakes.md#consent) | `yom zazawan vezebel huxegom.` | *Are you still OK with this?* | I |
 | [Contrary to a stance](../sakes.md#contrary-to-stance): `uem` first | `zazawan vowogal uem thedel.` | *Azawan walks anyway.* | I |

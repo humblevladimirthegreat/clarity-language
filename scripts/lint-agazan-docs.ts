@@ -15,7 +15,8 @@
  * The level review page comes after every stage page: it introduces no roots, and each band's
  * items link back to every stage checkpoint of that level (src/lint/level-review.ts).
  * Free English lines on top-level grammar pages are checked for the sentence-and-note shape
- * (src/lint/free-english.ts).
+ * (src/lint/free-english.ts); so are table English cells that translate an Agazan phrase or
+ * sentence, there and on cheat sheets, for shape and parentheses inside the sentence.
  * On the number pages, shorthand number examples need a
  * pronunciation row that matches the spoken form computed from the shorthand.
  * Mismatches, leftover ambiguity, and missing morph glosses fail the run.
@@ -32,7 +33,7 @@ import {
   formatMorphGlossFinding,
   lintMorphGlossMarkdown,
 } from "../src/lint/morph-gloss-docs.js";
-import { lintFreeEnglish } from "../src/lint/free-english.js";
+import { lintFreeEnglish, lintTableEnglish } from "../src/lint/free-english.js";
 import { lintPracticeItems } from "../src/lint/practice-item-rules.js";
 import {
   formatPracticeBankFinding,
@@ -89,6 +90,7 @@ import { REPO_ROOT, readData } from "../src/repo-paths.js";
  */
 const CONSTRUCTIONS = constructionRegistry(loadDefaultTables().overlays.values());
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
+const cheatSheetsDir = join(grammarDir, "cheat-sheets");
 
 function parseCli(argv: string[]): { paths: string[]; orderReport: boolean } {
   const paths: string[] = [];
@@ -303,6 +305,12 @@ function main(): void {
       pages.set(ps.page, ps);
       pageMarkdown.set(ps.page, original);
       used = (id, index) => uses.push({ id, section: sectionAt(ps.sections, index) });
+    }
+    if (dirname(file) === grammarDir || dirname(file) === cheatSheetsDir) {
+      for (const finding of lintTableEnglish(original, tables)) {
+        freeEnglishCount += 1;
+        console.error(`${rel}:${lineNumberAt(original, finding.index)}  free-english ${finding.kind}  (${finding.detail})`);
+      }
     }
     for (const issue of lintBareRoots(original, tables)) {
       spanCount += 1;

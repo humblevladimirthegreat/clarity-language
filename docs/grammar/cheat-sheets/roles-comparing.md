@@ -116,8 +116,8 @@ The anchor can be `amu` *speaker*, `eho` *listener*, a name, or a role pointer o
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Compass](../roles.md#viewpoint-laterals) | `yel vowogal hewezal.` | *Walk west.* | I |
-| [Azawan's left](../roles.md#viewpoint-laterals) | `yel vowogal hewezathazawan.` | *Walk left (Azawan's left).* | I |
-| [Your left](../roles.md#viewpoint-laterals) | `yel vowogal zehon hewezathehon.` | *You, walk left (your left).* | I |
+| [Azawan's left](../roles.md#viewpoint-laterals) | `yel vowogal hewezathazawan.` | *Walk left.* (Azawan's left) | I |
+| [Your left](../roles.md#viewpoint-laterals) | `yel vowogal zehon hewezathehon.` | *You, walk left.* (your left) | I |
 | [Their left](../roles.md#viewpoint-laterals) | `zazawan vowogal. zalahen vehahel hewezathaxar.` | *Azawan walks. Alahen sits on their left.* | I |
 | [Up](../roles.md#gravity) | `yel vowogal habahal.` | *Walk up.* | I |
 | [Under](../roles.md#viewpoint-vs-landmark) | `zodogal vezebal hadahel bedehul.` | *The dog sleeps under the tree.* | I |

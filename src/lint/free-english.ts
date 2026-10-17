@@ -5,15 +5,16 @@
  * translates; the lint checks the shape, parentheses inside the sentence, and what a note may hold.
  */
 import type { ClassifyTables } from "../parse/classify.js";
+import { classifyAgazanSpan } from "./agazan-docs.js";
 import { looksLikeMorphLine, morphGlossLine } from "../parse/morph-gloss.js";
 import { practiceItems, type PracticeItem } from "./practice-items.js";
 import { glossLabels } from "./terminology-docs.js";
 
 /**
- * Where the line sits: an example blockquote, or a converted checkpoint item. `en-ag`, `pick`,
- * and `fix` lines are the English prompt; an `ag-en` line is the English answer.
+ * Where the line sits: an example blockquote, a converted checkpoint item, or a table cell. `en-ag`, `pick`, and `fix` lines are the English prompt; an `ag-en` line is the
+ * English answer.
  */
-export type FreeEnglishKind = "example" | "en-ag" | "ag-en" | "pick" | "fix";
+export type FreeEnglishKind = "example" | "en-ag" | "ag-en" | "pick" | "fix" | "table";
 
 export type FreeEnglishLine = {
   kind: FreeEnglishKind;
@@ -232,6 +233,102 @@ function line(
   return { kind, agazan, morph, text, index, delimiter, split: splitFreeEnglish(text, delimiter) };
 }
 
+/** Cells of a pipe-table row, split on `|` outside backticks and not escaped. */
+function tableCells(row: string): { text: string; offset: number }[] {
+  const out: { text: string; offset: number }[] = [];
+  let start = row.indexOf("|") + 1;
+  let code = false;
+  for (let i = start; i < row.length; i++) {
+    if (row[i] === "`") code = !code;
+    else if (row[i] === "|" && !code && row[i - 1] !== "\\") {
+      const raw = row.slice(start, i);
+      out.push({ text: raw.trim(), offset: start + raw.length - raw.trimStart().length });
+      start = i + 1;
+    }
+  }
+  return out;
+}
+
+/** Split on ` · ` and `; ` outside italics, backticks, and parentheses, with each piece's offset. */
+function cellPieces(cell: string): { text: string; offset: number }[] {
+  const out: { text: string; offset: number }[] = [];
+  let start = 0;
+  let italic = false;
+  let code = false;
+  let depth = 0;
+  for (let i = 0; i < cell.length; i++) {
+    const ch = cell[i]!;
+    if (ch === "`") code = !code;
+    else if (code) continue;
+    else if (ch === "*" && cell[i + 1] !== "*" && cell[i - 1] !== "*") italic = !italic;
+    else if (ch === "(") depth += 1;
+    else if (ch === ")" && depth > 0) depth -= 1;
+    if (italic || code || depth > 0) continue;
+    const sep = cell.startsWith(" · ", i) ? 3 : ch === ";" && cell[i + 1] === " " ? 2 : 0;
+    if (!sep) continue;
+    out.push({ text: cell.slice(start, i).trim(), offset: start });
+    start = i + sep;
+    i += sep - 1;
+  }
+  out.push({ text: cell.slice(start).trim(), offset: start });
+  return out.filter((piece) => piece.text);
+}
+
+/** The Agazan in each piece of a cell, or null unless every span is a phrase or sentence. */
+function translatedAgazan(cell: string): string[] | null {
+  const pieces = cellPieces(cell).map((piece) => [...piece.text.matchAll(/`([^`]+)`/g)].map((m) => m[1]!));
+  if (pieces.length === 0 || pieces.some((spans) => spans.length === 0)) return null;
+  if (!pieces.flat().every((span) => ["phrase", "sentence"].includes(classifyAgazanSpan(span)))) return null;
+  return pieces.map((spans) => spans.join(" "));
+}
+
+/**
+ * Table cells that translate an Agazan phrase or sentence
+ * ([glosses.md § grammar-table gloss](../../docs/meta/glosses.md#grammar-table-gloss-free-english-only)):
+ * an italic **English…**, **Gloss**, or **Free English** cell in a row whose **Example**,
+ * **Examples**, **Agazan**, or **Form** cell holds only phrases and sentences, outside
+ * `<!-- generated -->` blocks. A single word's senses (`*here*, *this*`), templates, and cells not
+ * in italics are glosses or descriptions, not free English, and are skipped. A cell holding several
+ * examples (` · ` or `; `) gives one line per piece, paired with the matching Agazan piece when
+ * the counts agree.
+ */
+export function tableEnglish(markdown: string): FreeEnglishLine[] {
+  const out: FreeEnglishLine[] = [];
+  let header: string[] | null = null;
+  let generated = false;
+  let offset = 0;
+  for (const row of markdown.split("\n")) {
+    const at = offset;
+    offset += row.length + 1;
+    if (/^<!--\s*generated:/.test(row)) generated = true;
+    else if (/^<!--\s*\/generated\s*-->/.test(row)) generated = false;
+    if (!row.startsWith("|") || generated) {
+      header = null;
+      continue;
+    }
+    if (!header) {
+      header = tableCells(row).map((cell) => cell.text);
+      continue;
+    }
+    if (/^\|[\s|:-]+\|?\s*$/.test(row)) continue;
+    const source = header.findIndex((name) => /^(Example|Examples|Agazan|Form)$/.test(name));
+    if (source < 0) continue;
+    const cells = tableCells(row);
+    const agazan = translatedAgazan(cells[source]?.text ?? "");
+    if (!agazan) continue;
+    header.forEach((name, column) => {
+      const cell = cells[column];
+      if (!/^(English|Gloss|Free English)/.test(name) || !cell?.text.startsWith("*")) return;
+      const pieces = cellPieces(cell.text);
+      pieces.forEach((piece, n) => {
+        const text = pieces.length === agazan.length ? agazan[n]! : agazan.join(" ");
+        out.push(line("table", text, null, piece.text, at + cell.offset + piece.offset, "*"));
+      });
+    });
+  }
+  return out;
+}
+
 /** Every free English line on a page, in page order. */
 export function extractFreeEnglish(markdown: string): FreeEnglishLine[] {
   const out: FreeEnglishLine[] = [];
@@ -314,38 +411,53 @@ function glossOf(agazan: string, tables: ClassifyTables, cache: Map<string, stri
   return cache.get(agazan)!;
 }
 
+type Checks = { labels: ReadonlySet<string>; tables: ClassifyTables; cache: Map<string, string | null> };
+
+/** Shape and inside-parentheses findings for one line, plus note findings when `notes` is set. */
+function lineFindings(free: FreeEnglishLine, checks: Checks, notes: boolean): FreeEnglishFinding[] {
+  const { split, index } = free;
+  if (!split) {
+    const open = free.delimiter === '"' ? '"…"' : "*…*";
+    return [
+      {
+        index,
+        kind: "shape",
+        detail: `free English is ${open} (or alternatives ${open} / ${open}, or turns ${open} ${open}) plus at most one (note) after it, nothing else: ${free.text}`,
+      },
+    ];
+  }
+  const out: FreeEnglishFinding[] = [];
+  if (free.agazan != null && split.parts.some((part) => part.includes("("))) {
+    const gloss = glossOf(free.agazan, checks.tables, checks.cache);
+    const extra = gloss == null ? 0 : extraParens(split.parts.join(" "), gloss);
+    if (extra > 0) {
+      out.push({
+        index,
+        kind: "inside-parens",
+        detail: `${extra} (…) inside the sentence beyond its asides, scope islands, and tag letters; move the note after the sentence: ${free.text}`,
+      });
+    }
+  }
+  if (notes && split.note != null) for (const finding of noteFindings(split.note, checks.labels)) out.push({ index, ...finding });
+  return out;
+}
+
+function checksFor(tables: ClassifyTables): Checks {
+  return { labels: glossLabels(tables.overlays.values()), tables, cache: new Map() };
+}
+
 /**
  * Shape, inside-parentheses, and note findings for one page. Parentheses inside the sentence are
  * allowed up to {@link extraParens}: asides, scope islands, and tag letters (an aside may also come
  * out as commas).
  */
 export function lintFreeEnglish(markdown: string, tables: ClassifyTables): FreeEnglishFinding[] {
-  const labels = glossLabels(tables.overlays.values());
-  const cache = new Map<string, string | null>();
-  const out: FreeEnglishFinding[] = [];
-  for (const free of extractFreeEnglish(markdown)) {
-    const { split, index } = free;
-    if (!split) {
-      const open = free.delimiter === '"' ? '"…"' : "*…*";
-      out.push({
-        index,
-        kind: "shape",
-        detail: `free English is ${open} (or alternatives ${open} / ${open}, or turns ${open} ${open}) plus at most one (note) after it, nothing else: ${free.text}`,
-      });
-      continue;
-    }
-    if (free.agazan != null && split.parts.some((part) => part.includes("("))) {
-      const gloss = glossOf(free.agazan, tables, cache);
-      const extra = gloss == null ? 0 : extraParens(split.parts.join(" "), gloss);
-      if (extra > 0) {
-        out.push({
-          index,
-          kind: "inside-parens",
-          detail: `${extra} (…) inside the sentence beyond its asides, scope islands, and tag letters; move the note after the sentence: ${free.text}`,
-        });
-      }
-    }
-    if (split.note != null) for (const finding of noteFindings(split.note, labels)) out.push({ index, ...finding });
-  }
-  return out;
+  const checks = checksFor(tables);
+  return extractFreeEnglish(markdown).flatMap((free) => lineFindings(free, checks, true));
+}
+
+/** Shape and inside-parentheses findings for a page's table English ({@link tableEnglish}). */
+export function lintTableEnglish(markdown: string, tables: ClassifyTables): FreeEnglishFinding[] {
+  const checks = checksFor(tables);
+  return tableEnglish(markdown).flatMap((free) => lineFindings(free, checks, false));
 }

@@ -476,7 +476,7 @@ Grammar cheat sheets live in `docs/grammar/cheat-sheets/`, one printable page pe
 - **Sidebar:** the **Cheat Sheets** group, in reading order (sounds first; Agazan → English and Exceptions last).
 - **Links:** every row links to the section that teaches it. Stage pages never link to a sheet (as with the [recipe track](#recipe-track)); [how to learn](../grammar/introduction.md#how-to-learn) may name the group once.
 - **Stage tags:** **B** / **I** / **A** per row, or per section when the whole section is one stage: the stage of the section the row links to.
-- **Wording:** usual [doc style](doc-style.md); learner names, no [terminology](../grammar/terminology.md) links; English cues in italics; forms in backticks.
+- **Wording:** usual [doc style](doc-style.md); learner names, no [terminology](../grammar/terminology.md) links; English cues in italics; forms in backticks. An italic **English** cell in a table with an **Example** column is that example's free English: `*sentence*` plus at most one (note) after it, parentheses inside only as [glosses.md](glosses.md#inside-parentheses) allows (`lint:agazan` checks both). Several examples in one cell are split by ` · ` or `; `, each with its own note.
 
 **Keeping sheets in step.** `npm run build` runs two checks:
 

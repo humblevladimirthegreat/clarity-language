@@ -230,7 +230,7 @@ Wave 2 decisions:
 - **For `sake-motive-holder.md`:** say-reasons.md sake words that read as someone else's motive: the blocks at lines 116 and 262, and the table rows *motivation* (252), *biased* / *bias* (285–286), and *deserves* (557, 562, no `/b/` for whose stake). Folded; *deserves* stays as the speaker's view of what is fair.
 
 Wave 4 (run before wave 3):
-- **Applied in the wave check:** cheat-sheet rows that quote changed examples (numbers.md 4, why-allowed.md 12, roles-comparing.md 1); `core` cell for `azewe` (*group*, now in the join-across-roles.md Fix it). Cheat-sheet English cells take a note like any free English line.
+- **Applied in the wave check:** cheat-sheet rows that quote changed examples (numbers.md 4, why-allowed.md 12, roles-comparing.md 1); `core` cell for `azewe` (*group*, now in the join-across-roles.md Fix it). Cheat-sheet English cells take a note like any free English line; `lint:agazan` now checks the shape and inside parentheses of every italic **English** cell in a cheat-sheet table with an **Example** column (not the note bans), split on ` · ` / `; `. The first run fixed 12 cells on 8 sheets.
 - **Strange examples:** join-across-roles.md *cooked popcorn and sat around the fire* is *ate it* (the shared object needs a verb that takes it); the Fix it's *finish line including Ahaben* is *a group including Ahaben*.
 - **For the editor to confirm:**
   - Past tense where the Agazan fixes the time: *walked in the ’90s* / *in 1962* (numbers-applied.md), MEMORY and rank evidence lines (join-across-roles.md).

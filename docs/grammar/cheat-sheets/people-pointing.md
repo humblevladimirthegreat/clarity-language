@@ -62,7 +62,7 @@ A [tag](../pronouns.md#tag-pronouns) is a label you choose: role letter, `w`, a 
 | Assign: tag **-l** after a phrase | `zodogal zwal` | *a dog, call it A* | I |
 | A new referent with no name | `zwal` | *someone A* | I |
 | Recall | `zwar` / `dwar` / `bwar` | *A* | I |
-| Recall a tag assigned to a name | `zwan` / `dwan` / `bwan` | *A*, a named one | I |
+| Recall a tag assigned to a name | `zwan` / `dwan` / `bwan` | *A* (a named one) | I |
 | A's part in the latest event | `zwam` / `dwam` / `bwam` | *what A did* | I |
 | A and associates | `zwarx` / `zwanx` | *A and associates* | I |
 | Two tags (six stacks: `zwaer` `zwaor` `zwoer` `zwuar` `zwuor` `zwuer`) | `zwaer` | *A and E* | I |
@@ -131,7 +131,7 @@ Who counts as an associate is [open unless you say](../plurality.md#associate-re
 | [One shared act](../plurality.md#verbs-v) | `zazawanx vezehelx` | *they sing as one performance* | I |
 | [Joint doing, others unnamed](../plurality.md#verbs-v) | `zazawan vezehelx` | *Azawan sings jointly* | I |
 | [The group as one unit](../plurality.md#verbs-v) | `zavahal vowogalx` | *the family walks as one unit* | I |
-| [Property of each member](../plurality.md#adjectives-g) | `zavabal zulol zal garagam` | *the file-box and the toolbox are (each) heavy* | I |
+| [Property of each member](../plurality.md#adjectives-g) | `zavabal zulol zal garagam` | *the file-box and the toolbox are each heavy* | I |
 | [Property of the whole](../plurality.md#adjectives-g) | `zavabal zulol zal garagamx` | *heavy together* | I |
 | [Group-level size](../plurality.md#adjectives-g) | `zavahal gagegem` | *the family is vast* | I |
 | [Members, plain](../plurality.md#adjectives-g) | `zavabalx garagam` | *the file-boxes are heavy* | I |

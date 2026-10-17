@@ -177,7 +177,7 @@ The role letter picks the use; the marker still says amount, rank, or code. Only
 | [Three times](../numbers.md#number-as-adverb-by-marker) | `zalahen vowogal hrarel.` | *Alahen walks three times.* | I |
 | [For the third time](../numbers.md#number-as-adverb-by-marker) | `hrerel` | *for the third time* | I |
 | [Three more!](../numbers.md#number-as-interjection-by-marker) | `yrarel` | *Three more!* | I |
-| [Three!](../numbers.md#number-as-interjection-by-marker) | `y_3` | *Three! (a score)* | I |
+| [Three!](../numbers.md#number-as-interjection-by-marker) | `y_3` | *Three!* (a score) | I |
 | [First!](../numbers.md#number-as-interjection-by-marker) | `yrewol` | *First!* | I |
 | [Point 2](../numbers.md#number-as-discourse-marker-by-marker) | `xredul` | *point 2:* | I |
 | [Corroborating 2](../numbers.md#number-as-discourse-marker-by-marker) | `xradul` | *corroborating 2:* | I |

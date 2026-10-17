@@ -3,7 +3,16 @@ import { describe, it } from "node:test";
 
 import { loadDefaultTables } from "../parse/index.js";
 import { glossLabels } from "./terminology-docs.js";
-import { extraParens, extractFreeEnglish, lintFreeEnglish, noteFindings, parenGroups, splitFreeEnglish } from "./free-english.js";
+import {
+  extraParens,
+  extractFreeEnglish,
+  lintTableEnglish,
+  lintFreeEnglish,
+  noteFindings,
+  parenGroups,
+  splitFreeEnglish,
+  tableEnglish,
+} from "./free-english.js";
 
 const tables = loadDefaultTables();
 const labels = glossLabels(tables.overlays.values());
@@ -191,5 +200,50 @@ describe("lintFreeEnglish", () => {
     assert.deepEqual(kinds('> `zazawan vowogal.`\n>\n> "Azawan walks." You name yourself.'), ["shape"]);
     assert.deepEqual(kinds('> `zazawan vowogal.`\n>\n> "Azawan walks." (a mirative)'), ["note-term"]);
     assert.deepEqual(kinds('> `zazawan vowogal.`\n>\n> "Azawan walks." (alone)'), []);
+  });
+});
+
+describe("tableEnglish", () => {
+  const sheet = (rows: string[], header = "| Job | Example | English | Stage |") =>
+    [header, "|-----|---------|---------|-------|", ...rows].join("\n");
+
+  it("reads italic English cells beside an Agazan phrase or sentence", () => {
+    const md = sheet(["| Walk | `zazawan vowogal.` | *Azawan walks.* (alone) | B |", "| Kin | `grebuwol` | the layer above the focus | A |"]);
+    assert.deepEqual(
+      tableEnglish(md).map(({ agazan, text }) => ({ agazan, text })),
+      [{ agazan: "zazawan vowogal.", text: "*Azawan walks.* (alone)" }],
+    );
+    assert.deepEqual(tableEnglish(sheet(["| `hadem` | here | *here*, *this* | B |"], "| Agazan | Use | English | Stage |")), []);
+    assert.deepEqual(tableEnglish(sheet(["| Join | `A xol B` | *(A or B)* | B |"])), []);
+  });
+
+  it("splits pieces and pairs them with the Example pieces", () => {
+    const md = sheet(["| Acts | `yel vowogal.` · `yul vowogal.` | *Walk!* · *Don't walk.* (a ban) | B |"]);
+    assert.deepEqual(
+      tableEnglish(md).map(({ agazan, text }) => ({ agazan, text })),
+      [
+        { agazan: "yel vowogal.", text: "*Walk!*" },
+        { agazan: "yul vowogal.", text: "*Don't walk.* (a ban)" },
+      ],
+    );
+  });
+
+  it("skips generated blocks", () => {
+    const md = ["<!-- generated: overlays kind=x -->", sheet(["| A | `zazawan vowogal.` | *Azawan walks (alone).* | B |"]), "<!-- /generated -->"].join("\n");
+    assert.deepEqual(tableEnglish(md), []);
+  });
+});
+
+describe("lintTableEnglish", () => {
+  const kinds = (cell: string) =>
+    lintTableEnglish(["| Job | Example | English |", "|---|---|---|", `| Walk | \`zazawan vowogal.\` | ${cell} |`].join("\n"), tables).map(
+      (f) => f.kind,
+    );
+
+  it("flags the shape and parentheses inside the sentence, not the note", () => {
+    assert.deepEqual(kinds("*Azawan walks* (alone)."), ["shape"]);
+    assert.deepEqual(kinds("*Azawan walks (alone).*"), ["inside-parens"]);
+    assert.deepEqual(kinds("*Azawan walks.* (a mirative)"), []);
+    assert.deepEqual(kinds("*Azawan walks.* (alone; quietly)"), []);
   });
 });
