@@ -12,7 +12,6 @@ use [skip-cd] for amplify to not deploy.
 consider removing forward links (including prose)
 
 llm-gloss-prompt:
--phase 1.5 wave 5
 -phase 1.6 (confirm this is necessary)
 -revise phase 2 (accidentally done before phase 1)
 -phase 3

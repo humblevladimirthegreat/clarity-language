@@ -50,7 +50,7 @@ English *Azawan walked* hides whether you saw it, read it, or were told. Choose 
 >
 > z-Azawan | th-MEMORY | v-walk
 >
-> "Azawan walked." (I remember it)
+> "Azawan walked, I remember it."
 
 > `zazawan thevom bazazam gruwol vowogal.`
 >
@@ -78,13 +78,13 @@ English *has left* mixes three ideas. Choose the one you mean.
 >
 > z-Alahen | h-RESIDUE | v-departure
 >
-> "Alahen has left, and it still counts." (the outcome is on the books)
+> "Alahen has left and is still gone."
 
 > `zalahen hoham vedabal.`
 >
 > z-Alahen | h-already | v-departure
 >
-> "Alahen has already left." (the change has come)
+> "Alahen has already left."
 
 > `zazawan hoham vezewel har.`
 >
@@ -104,7 +104,7 @@ English *had left* means the leaving counted **as of** an earlier moment. Write 
 >
 > z-Alahen | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 >
-> "As of 22 July, Alahen had left, and it still counted."
+> "As of 22 July, Alahen had left and was still gone."
 
 *Was going to* is PLAN with the stance *as-of* **`thuhum`** ([stance as-of](relations.md#stance-as-of)), since a plan is a stance:
 
@@ -130,7 +130,7 @@ English *is walking* usually means one of three things. Put the event root on `/
 >
 > z-Azawan | th-LIVE | v-walk
 >
-> "Azawan is walking." (I am watching)
+> "Azawan is walking, I can see it."
 
 > `zazawan hagem vowogal.`
 >
@@ -168,7 +168,7 @@ English *will* is three different claims.
 >
 > [th-PATTERN | b-later] | v-rain
 >
-> "It will rain." (going by the pattern)
+> "It will rain, going by the pattern."
 
 > `zazawan thewam bazazam grawol vowogal.`
 >
@@ -211,7 +211,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 >
 > z-Azawan | [th-CLUES | [b-day | g-zero]] | v-walk
 >
-> "Azawan must be walking today."
+> "It looks like Azawan is walking today."
 
 > `yol har zehon hoham vowogal.`
 >
@@ -229,7 +229,7 @@ English *used to walk* is a pattern that is no longer today's report: **`hual`**
 >
 > z-Azawan | h-always | v-tell | h-FORMER
 >
-> "Azawan used to tell." (a former pattern, not today's)
+> "Azawan always used to talk." (no claim about now)
 
 For *would* in a condition (*if Alahen swam, Azawan would walk*), see [remote and unreal conditions](say-reasons.md#remote-unreal).
 
@@ -268,7 +268,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 >
 > z-Azawan | v-walk | th-PERMIT-granted
 >
-> "Azawan may walk." (I'm allowing it)
+> "Azawan may walk; I'm allowing it."
 
 > `yem vowogal zehon.`
 >
@@ -333,19 +333,19 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 >
 > z-Azawan | v-walk | th-REQUIRE-rule
 >
-> "Azawan must walk." (the rules say so)
+> "Azawan must walk; it's the rule."
 
 > `zazawan vezebel thanathem baxer.`
 >
 > z-Azawan | v-tell | [th-relatedness-ought-offered | b-←agent.self]
 >
-> "Azawan should tell; it would help them feel connected." (offered)
+> "Azawan should talk; it would help them feel connected." (unasked advice)
 
 > `zazawan thanathem baxer vezebel vul.`
 >
 > z-Azawan | [th-relatedness-ought-offered | b-←agent.self] | [v-tell | v-not]
 >
-> "Azawan shouldn't tell; it would hurt their sense of connection." (offered)
+> "Azawan shouldn't talk; it would hurt their sense of connection." (unasked advice)
 
 For *should have*, date the ought with [stance as-of](relations.md#stance-as-of) **`thuhum`**; **`thuhum brul`** is *back then*. The ought then reads from that past moment. English also implies the act did not happen; if that matters, say it in its own sentence.
 
@@ -353,7 +353,7 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 >
 > z-listener | [th-as-of.ledger | b-earlier] | th-sake-ought-offered | v-tell . z-listener | [v-tell | v-not]
 >
-> "You should have told. You did not tell."
+> "You should have spoken. You didn't speak."
 
 *Don't have to* lifts a demand: skipping the act is allowed. Put permission before the verb and deny the act.
 
@@ -395,7 +395,7 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 >
 > z-speaker | th-plan-sketch | v-walk
 >
-> "I intend to go for a walk." (a sketch is plenty)
+> "I intend to walk; the details are open."
 
 > `zalahen hudur vezehel.`
 >
@@ -424,7 +424,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 #### English → Agazan {#tense-english-to-agazan}
 
-**1.** *Azawan walked (I remember it).*
+**1.** *Azawan walked, I remember it.*
 
 ::: details Show answer
 `zazawan thevom vowogal.`
@@ -456,7 +456,7 @@ z-Alahen | h-already | v-departure
 z-Azawan | h-still | v-walk
 :::
 
-**5.** *It will rain (going by the pattern).*
+**5.** *It will rain, going by the pattern.*
 
 ::: details Show answer
 `thobam bral verehel.`
@@ -464,7 +464,7 @@ z-Azawan | h-still | v-walk
 [th-PATTERN | b-later] | v-rain
 :::
 
-**6.** *Azawan used to tell.*
+**6.** *Azawan always used to talk.*
 
 ::: details Show answer
 `zazawan hual vezebel henom.`
@@ -472,7 +472,7 @@ z-Azawan | h-still | v-walk
 z-Azawan | h-always | v-tell | h-FORMER
 :::
 
-**7.** *Azawan may walk (I'm allowing it).*
+**7.** *Azawan may walk; I'm allowing it.*
 
 ::: details Show answer
 `zazawan vowogal thegom.`
@@ -480,7 +480,7 @@ z-Azawan | h-always | v-tell | h-FORMER
 z-Azawan | v-walk | th-PERMIT-granted
 :::
 
-**8.** *Azawan must walk (the rules say so).*
+**8.** *Azawan must walk; it's the rule.*
 
 ::: details Show answer
 `zazawan vowogal thumel.`

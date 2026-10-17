@@ -29,7 +29,7 @@ English *both are challenging* (or *Azawan and Alahen are challenging*) says **e
 >
 > [z-Azawan | z-Alahen | z-and | g-challenge]
 >
-> "Azawan and Alahen are challenging."
+> "Azawan and Alahen are both challenging."
 
 **Compare with:** *as challenging as* uses equality **`oe`** (`zoel`). *More challenging than* uses rank **`e`**.
 
@@ -201,11 +201,11 @@ English degree words (*really*, *quite*, *barely*) say how far a quality or an a
 | *almost* | `hrubul` on the verb, `wrubul` before an adjective |
 | *definitely* / *absolutely* / *certainly* | stance number `th+e` |
 
-> `zodogal wadeham gubuhel vowogal.`
+> `zodogal wadeham gelavam vowogal.`
 >
-> [z-dog | [w-quite | g-blue]] | v-walk
+> [z-dog | [w-quite | g-big]] | v-walk
 >
-> "A fairly blue dog walks."
+> "A fairly big dog walks."
 
 > `zazawan hrabul vehahel.`
 >
@@ -385,7 +385,7 @@ English *just*, *only*, *especially* and *also* point at one item and say how it
 >
 > [z-Azawan | z-rank/more.open] | v-walk
 >
-> "Azawan especially walks."
+> "Azawan in particular walks."
 
 > `zazawan vowogal. al zalahen vowogal.`
 >
@@ -427,7 +427,7 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 >
 > [z-person-x | th-PATTERN | z-rank/more | g-amount]
 >
-> "There is a crowd." (more people than the usual amount)
+> "There is a crowd." (more people than usual)
 
 > `zazawan gobom bahodonx vowogal.`
 >

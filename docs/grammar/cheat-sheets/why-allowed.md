@@ -105,11 +105,11 @@ The scale runs **-l** most settled, **-m** the default, **-r** most passing. Whe
 |-----|---------|---------|-------|
 | [Serves, on a noun](../sakes.md#met) | `zahazal gulotham.` | *My house serves competence.* | B |
 | [Serves, lasting](../sakes.md#time-horizon-endings-on-met) | `zebel ganathal.` | *My gift serves relatedness in the long term.* | B |
-| [Detracts](../sakes.md#sake-changeability) | `zugul gulothum.` | *My book detracts from competence (modifiable).* | B |
+| [Detracts](../sakes.md#sake-changeability) | `zugul gulothum.` | *My book detracts from competence.* (modifiable) | B |
 | [Costly now, good later](../sakes.md#sake-changeability) | `zugul gozothur gulothal.` | *My book is a slog for now, but builds lasting competence.* | B |
 | [On the event](../sakes.md#word-shape) | `zazawan vezebel thulotham.` | *Azawan talks, and that boosts my confidence.* | B |
 | [Not your noun](../sakes.md#personal-possession): `gobum` | `zabezam wahuthur gobum.` | *the gathering, passing harm to autonomy* | B |
-| [Ought](../sakes.md#sake-force) | `zazawan vezebel thanathem baxer.` | *Azawan ought to talk; it would help them feel connected (offered).* | I |
+| [Ought](../sakes.md#sake-force) | `zazawan vezebel thanathem baxer.` | *Azawan ought to talk; it would help them feel connected.* (unasked advice) | I |
 | [Motive](../sakes.md#sake-preference) | `zamun vezebel thanathom.` | *I talk to feel connected.* | I |
 | [Whose stake](../sakes.md#whose-stake): the person in `/b/` | `zazawan vezebel thanathom balahen.` | *Azawan talks for Alahen's sake.* | I |
 | [Not your noun, their stake](../sakes.md#whose-stake) | `zebel ganathal balahen.` | *My gift serves Alahen's relatedness.* | I |
@@ -225,12 +225,12 @@ Each is a `/th/` word on the clause. The ending says where the rule comes from: 
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Permission, granted](../sakes.md#permission) | `zazawan vowogal thegom.` | *Azawan may walk (I'm allowing it).* | I |
+| [Permission, granted](../sakes.md#permission) | `zazawan vowogal thegom.` | *Azawan may walk; I'm allowing it.* | I |
 | [Permission, by someone](../sakes.md#permission) | `zazawan vowogal thegom balahen.` | *Alahen lets Azawan walk.* | I |
 | [Permission, by rule](../sakes.md#permission) | `zahaben vehahel thegol.` | *Ahaben is allowed to sit.* | I |
 | [Tolerated](../sakes.md#permission) | `zalahen vezebal thegor.` | *no one is stopping it* | I |
 | [Ask permission](../sakes.md#permission) | `yom zamun vehahel thegom.` | *May I sit?* | I |
-| [Requirement, by rule](../sakes.md#requirement) | `zazawan vowogal thumel.` | *Azawan has to walk (the rules say so).* | I |
+| [Requirement, by rule](../sakes.md#requirement) | `zazawan vowogal thumel.` | *The rules require Azawan to walk.* | I |
 | [Requirement, by a person](../sakes.md#requirement) | `zahaben vehahel thumem balahen.` | *Alahen makes Ahaben sit.* | I |
 | [Requirement, by custom](../sakes.md#requirement) | `zalahen vezebal thumer.` | *Alahen is supposed to sleep.* | I |
 | [Consent](../sakes.md#consent): who it happens to, in `/b/` | `zazawan vezebel huxegom bahaben.` | *Azawan tells, and Ahaben said yes.* | I |

@@ -1,6 +1,6 @@
 # Translation prompt from the parser
 
-Status: phase 1, steps 1 (policy edits), 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review) in progress: waves 1 to 4 done (wave 4 ran before wave 3), wave 3 awaiting the editor's review of its diff, wave 5 not started ([as built](#phase-1-step-5-as-built)). Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
+Status: phase 1, steps 1 (policy edits), 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review): waves 1 to 5 done (wave 4 ran before wave 3), waves 3 and 5 awaiting the editor's review of their diffs ([as built](#phase-1-step-5-as-built)). Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
 
 ## Problem
 
@@ -211,7 +211,7 @@ Waves. Pages heavy in referent, scope, or turn judgments run at `xhigh`; the res
 | 2 | **spans**, **pronouns**, relations, roles, intention, say-reasons | done | 47 (was 68) |
 | 3 | **speech-moves**, dependents, numbers, predication, restrictors, review | done, awaiting the editor's review | 1 (was 12; say-reasons) |
 | 4 | **plurality**, causation, x-compounds, word-endings + phonology, numbers-applied + english, join-across-roles | done | 12 (was 47; all on wave 3 pages and say-reasons) |
-| 5 | say-tense + say-questions, say-amounts + numeric-derivation | | |
+| 5 | say-tense + say-questions, say-amounts + numeric-derivation | done (main session, no subagents), awaiting the editor's review | 0 (was 0; all 32 pages now 0) |
 
 Wave 1 decisions:
 - **Applied:** fill-ask `…or` on one item is *Any X?*, as the [arity table](../grammar/questions.md#fill-ask-arity) says. The parser's label went from `which` to `any`. Bare `v-tell` is *talks* / *speaks*, now a rule in [glosses.md § sentence first](../meta/glosses.md#sentence-first).
@@ -388,3 +388,14 @@ Wave 3:
   - review.md *It looks like Alahen fought.* (strong clues) keeps the past tense with no time in the Agazan, as with wave 4's past-tense question.
   - predication.md *Alahen is me.* (`zalahen gugol bamun.`) has a house person stand for the speaker; *The guard is me.* (`zagavol`) keeps the constructions.
 - **Resolved (editor):** a number on `/z/` is a new noun, so `zrarel gubuhel.` is *there is a blue three*; the number as a value is a mention. The example was strange regardless and is now `zrarel vezebal.` *Three are sleeping.* (the section intro says *number word on its own*, not *number itself*). The existence ordinals (*There is a first pie*) are fine.
+
+Wave 5 (four small pages, 92 lines with no findings, reviewed in the main session):
+- **Applied:** the channel and stance phrases from knowing.md, sakes.md, and intention.md: *Azawan walked, I remember it*; *Azawan is walking, I can see it*; *It will rain, going by the pattern*; RESIDUE *has left and is still gone* (with *as of 22 July*, *had left and was still gone*); FORMER *Azawan always used to talk.* (no claim about now); *I intend to walk; the details are open*; *Azawan may walk; I'm allowing it*. Prescription **-m** notes are *(unasked advice)*, not *(offered)*. Bare `v-tell` is *talk* / *speak*, including the cite on say-questions.md (*Azawan said, “Alahen talks.”*). say-*.md `## Practice` notes no longer use grammar words: *(rank offer)* is *(as an offer)*, *(standalone rank)* is *(no names given)*, *(closed rank of those two)* is *(just those two)*, and the two `vs` answers on say-questions.md each have one line per form.
+- **Strange example:** say-amounts.md *A fairly blue dog walks* is *A fairly big dog walks* (`gelavam`; same constructions).
+- **For the editor to confirm:**
+  - say-tense.md CLUES with today's offset was *Azawan must be walking today*; it is now *It looks like Azawan is walking today*, because *must* on this page is a requirement.
+  - say-amounts.md *Azawan especially walks* is *Azawan in particular walks*: the English put *especially* on the walking, but `zem` ranks Azawan. *Azawan and Alahen are both challenging* says the distributive reading in the sentence.
+  - numeric-derivation.md `zalavalrabal.` was the citation *essence of love*; following the *There are three cats* ruling, it is now *There is an essence of love.*
+  - Kept: *Azawan barely sits* (numbers.md and its cheat sheet use the same sentence); say-amounts.md *Alahen and Ahaben are exerted* (the wave 4 *exerted* fallback is still open); *said* in the say-questions.md cite (the open past-tense item from waves 3 and 4).
+- **Fixed after the wave (editor's request):** say-questions.md's two rank tables had tie (**oe**) and sequence (**ae**) swapped against joins.md and the page's own practice. Single-item *Start with X?* / *Maybe start with X?* are now `…ael` / `…aem`; standalone *Tie?* / *Probably a tie?* / *Draw?* are `…oel` / `…oem` / `…oen`, and *Any order?* / *Not sure where to start?* are `…ael` / `…aem`. Two wave 1 cheat-sheet leftovers in why-allowed.md now match sakes.md: *Ought* is *Azawan ought to talk; it would help them feel connected.* (unasked advice), and *Requirement, by rule* is *The rules require Azawan to walk.*
+- **Also fixed in why-allowed.md:** *Detracts* is *My book detracts from competence.* (modifiable), and *Permission, granted* is *Azawan may walk; I'm allowing it.*, as on sakes.md.

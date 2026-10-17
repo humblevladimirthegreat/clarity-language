@@ -12,7 +12,7 @@ English often names a *kind of thing* with a number idea baked in (*essence of l
 >
 > z-love-l-infinity
 >
-> "essence of love"
+> "There is an essence of love."
 
 ```text
 PoS + ROOT + {l|m} + NUM + {-l|-m|-n|-r}

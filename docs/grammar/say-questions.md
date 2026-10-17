@@ -179,8 +179,8 @@ Under question, the rest of the single-item and standalone join map is confirm /
 |--------|---------|
 | **…em** | *Is X the top priority?* / *Prefer X?* (offer) |
 | **…el** | *Is X the only priority?* |
-| **…oem** | *Maybe start with X?* (offer) |
-| **…oel** | *Start with X?* |
+| **…aem** | *Maybe start with X?* (offer) |
+| **…ael** | *Start with X?* |
 | **…uem** | *X last?* (offer) |
 | **…uel** | *X last only?* |
 | **…en** | *X first, as usual?* |
@@ -192,11 +192,11 @@ Under question, the rest of the single-item and standalone join map is confirm /
 |--------|---------|
 | **…el** | *No favorite?* |
 | **…em** | *Easy-going?* / *Whichever?* |
-| **…ael** | *Tie?* |
-| **…aem** | *Probably a tie?* |
-| **…aen** | *Draw?* (stock) |
-| **…oem** | *Not sure where to start?* |
-| **…oel** | *Any order?* |
+| **…oel** | *Tie?* |
+| **…oem** | *Probably a tie?* |
+| **…oen** | *Draw?* (stock) |
+| **…aem** | *Not sure where to start?* |
+| **…ael** | *Any order?* |
 | **…uem** | *Don't mind?* / *No objection?* |
 | **…uel** | *No least-favorite?* / *No one last?* |
 | **…en** | *No favorite?* (stock) |
@@ -329,7 +329,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 >
 > z-Azawan | d-CITE[z-Alahen | v-tell] | v-tell
 >
-> "Azawan said “Alahen tells.”"
+> "Azawan said, “Alahen talks.”"
 
 ## Practice {#practice}
 
@@ -359,7 +359,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 y-question | [z-Azawan | z-rank/more]
 :::
 
-**2.** *Prefer Alahen?* / *Alahen first?* (rank offer)
+**2.** *Prefer Alahen?* / *Alahen first?* (as an offer)
 
 ::: details Show answer
 `yol zalahen zem.`
@@ -375,7 +375,7 @@ y-question | [z-Alahen | z-rank/more.open]
 y-question | [z-Ahaben | z-or-exactly-one]
 :::
 
-**4.** *Tie?* (standalone rank)
+**4.** *Tie?* (no names given)
 
 ::: details Show answer
 `yol zoel.`
@@ -398,7 +398,10 @@ y-question | [z-trophy | z-and/or]
 ::: details Show answer
 
 y-yes . y-sure
-*yes / true* (match). *sure / I’ll take that* (uptake).
+
+*Yes.* / *True.* (it matches)
+
+*Sure.* / *I’ll take that.* (taking up the offer)
 :::
 
 **2.** `yuel.` vs `yuol.`
@@ -406,7 +409,10 @@ y-yes . y-sure
 ::: details Show answer
 
 y-no . y-refuse-option
-*no / false* (truth flip). *not that* (reject this option).
+
+*No.* / *False.* (the claim is wrong)
+
+*Not that.* (turning down this option)
 :::
 
 **3.** `yol zebehul zual.`
@@ -433,5 +439,5 @@ y-question | z-in-order
 
 y-question | [z-Alahen | z-Ahaben | z-rank/more]
 
-*Alahen ahead of Ahaben?* (closed rank of those two)
+*Alahen ahead of Ahaben?* (just those two)
 :::
