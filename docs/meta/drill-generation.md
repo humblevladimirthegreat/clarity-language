@@ -339,7 +339,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `causation.md` | Advanced | — | no Advanced stage | |
 | 16 | `sakes.md` | Intermediate | **exists** | Prescription **`the`** + force; motive **`tho`** + time horizon; which ending table; attachment sites; sake bars (*enough* / *too*) | |
 | 16 | `sakes.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
-| 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`avo`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs | |
+| 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`avo`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs; **holder** seam (someone else's view) | |
 | 16 | `knowing.md` | Advanced | **exists** | Mood on one adjective; dated channel; channels on a generalization | One checkpoint for the whole stage |
 | 16 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR th ANCHOR`**; bare arrow roots = compass; gravity **`abaha`/`adahe`**; name/listener anchor | Prefer `…thazawan` over silent speaker default. **`eho`/`amu`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
 | 16 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](../grammar/word-endings.md#greeting) and [vocative](../grammar/speech-moves.md#vocative). Not ability (`vezehexel`). Not values |

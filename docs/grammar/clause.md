@@ -90,9 +90,9 @@ An adverb describes the action. A **stance** word describes how **you**, the spe
 
 The adverb describes the walking. The stance word describes your claim about it.
 
-A stance is yours **now**, as you speak. To give a stance you held at another time (*I was sure then*), see [stance as-of](relations.md#stance-as-of).
+A stance is yours **now**, as you speak.
 
-`/th/` is for what is in a mind. With nothing else marked, that mind is yours. To give someone else's view, you name them and say how you know it ([whose view](knowing.md#holder)).
+`/th/` is for what is in a mind. With nothing else marked, that mind is yours.
 
 ### Intention adverbs {#intention-adverbs}
 

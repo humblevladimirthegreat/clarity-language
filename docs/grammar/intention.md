@@ -502,6 +502,26 @@ For *against my wishes*, put WANT after the hook **`uem`** ([contrary to a stanc
 
 WANT, PLAN, and DECISION are all in a mind, and with nothing else marked that mind is yours. English *Alahen plans for Azawan to walk* and *Azawan has decided to walk* report what is in someone else's mind as if you could see it. None of the three takes a `/b/` for whose it is. Someone else's want, plan, or decision is their view: you give it with a [holder](knowing.md#holder), which says how you know it. That keeps a guess about someone's intentions from sounding like a fact.
 
+After a holder, WANT and DECISION are the holder's, just as PLAN is. After **`uem`**, write the holder word, then the stance, for *against their wishes*.
+
+> `zazawan thewamazawan thohum vowogal.`
+>
+> z-Azawan | th-REPORTED-Azawan | th-WANT-unstated | v-walk
+>
+> "I hear Azawan wants to walk."
+
+> `zazawan thunemazawan thehum vowogal.`
+>
+> z-Azawan | th-CLUES-Azawan | th-DECISION-modifiable | v-walk
+>
+> "I gather Azawan has decided to walk, and can still change that."
+
+> `zalahen vezebal uem thunemazawan thohum.`
+>
+> z-Alahen | v-sleep | [contrary-to | th-CLUES-Azawan | th-WANT-unstated]
+>
+> "Alahen sleeps, against Azawan's wishes, as far as I can tell."
+
 **Compare with:** [requirement](sakes.md#requirement) `zazawan vowogal thumem balahen.` (*Alahen makes Azawan walk*) puts a demand on Azawan, who now owes the walk. **`zazawan thehum vowogal.`** (*I've decided that Azawan walks*) says only that you chose how things go, the way a coach decides who plays, with nothing asked of Azawan.
 
 ### Plan or forecast

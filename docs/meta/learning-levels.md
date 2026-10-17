@@ -57,7 +57,7 @@ Read **`docs/grammar/`** only, in stage order. [why-agazan.md](../grammar/why-ag
 
 Then the [Beginner level review](../grammar/review.md#beginner) ([level reviews](translation-exercises.md#level-reviews)).
 
-[join-across-roles.md](../grammar/join-across-roles.md) starts at Intermediate (no Beginner slot). Emotion compose is an Intermediate section in [sakes.md](../grammar/sakes.md#emotion-compose); channels on a generalization are Advanced in [knowing.md](../grammar/knowing.md#universality). [intention.md](../grammar/intention.md) **DECISION** is Intermediate; plan / predict is Beginner. [numbers-applied.md](../grammar/numbers-applied.md) starts at Intermediate (depends on numbers). [numeric-derivation.md](../grammar/numeric-derivation.md) is Advanced-only.
+[join-across-roles.md](../grammar/join-across-roles.md) starts at Intermediate (no Beginner slot). Emotion compose is an Intermediate section in [sakes.md](../grammar/sakes.md#emotion-compose); the holder (whose view) is Intermediate and channels on a generalization are Advanced in [knowing.md](../grammar/knowing.md#universality). [intention.md](../grammar/intention.md) **DECISION** is Intermediate; plan / predict is Beginner. [numbers-applied.md](../grammar/numbers-applied.md) starts at Intermediate (depends on numbers). [numeric-derivation.md](../grammar/numeric-derivation.md) is Advanced-only.
 
 [causation.md](../grammar/causation.md), [intention.md](../grammar/intention.md), [pronouns.md](../grammar/pronouns.md), [questions.md](../grammar/questions.md) and [roles.md](../grammar/roles.md) have no Advanced stage: their former Advanced sections were applications and live on the recipe track.
 

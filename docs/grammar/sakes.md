@@ -384,7 +384,7 @@ A **direction** locus says what the charge points at:
 | **`ua`** | *out of* | COLLAPSE | *out of fight: giving up* (*defeated by*) |
 | **`ae`** | *using* | FAWN | *using yourself to placate* (*appeasing*) |
 
-A direction names the **dominant** pull when feelings mix; use two feeling words for two pulls. AIMED lands on a party or a goal; RESISTING opposes an outcome or a demand. ON-BEHALF is your own feeling about someone else's stake (to say the feeling is theirs, name them as its [holder](knowing.md#holder)); FAWN is placating someone for your own safety.
+A direction names the **dominant** pull when feelings mix; use two feeling words for two pulls. AIMED lands on a party or a goal; RESISTING opposes an outcome or a demand. ON-BEHALF is your own feeling about someone else's stake; FAWN is placating someone for your own safety.
 
 Name the landmark with a `/b/` word right after the feeling (after **`gobum`** when the feeling is on `/w/`): the target of a direction, or the situation for CIRCUM. INTERNAL and UNPLACED take no `/b/`: they have no landmark. A direction with no `/b/` points at the stimulus noun when there is one, otherwise at someone unnamed.
 
@@ -699,7 +699,7 @@ Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To 
 
 ### Permission (`thegol` / `thegom` / `thegor`) {#permission}
 
-English *may* / *is allowed to* says a restriction is lifted. Put **`thegol`**, **`thegom`**, or **`thegor`** on the clause: stance **`th`** on the root **`ego`** (🟢 *green circle*). The ending says **where the permission comes from**: a rule, a person, or nobody. Use **-l** when a rule, policy, or formal right allows it. Use **-m** when a person grants it; that person is the speaker unless a `/b/` right after the permission word names someone else. A person who grants something does it openly, so that `/b/` is a party to the permission, not a [holder](knowing.md#holder) whose mind you report. Use **-r** when no one granted it but no one objected either. If you do not know, use **-m**.
+English *may* / *is allowed to* says a restriction is lifted. Put **`thegol`**, **`thegom`**, or **`thegor`** on the clause: stance **`th`** on the root **`ego`** (🟢 *green circle*). The ending says **where the permission comes from**: a rule, a person, or nobody. Use **-l** when a rule, policy, or formal right allows it. Use **-m** when a person grants it; that person is the speaker unless a `/b/` right after the permission word names someone else. A person who grants something does it openly, so that `/b/` is a party to the permission. Use **-r** when no one granted it but no one objected either. If you do not know, use **-m**.
 
 > `zazawan vowogal thegom.`
 >
@@ -854,7 +854,7 @@ The stance keeps its endings and its hosted `/b/`. On a refusal, the `/b/` is th
 >
 > "Ahaben sits, against Alahen's orders."
 
-A [plan](intention.md#plan) after **`uem`** is your own, like any stance. Someone else's plan takes a [holder](knowing.md#holder) between **`uem`** and the plan. A [speaker attitude](#speaker-attitude) after **`uem`** is what you were hoping for.
+A [plan](intention.md#plan) after **`uem`** is your own, like any stance. A [speaker attitude](#speaker-attitude) after **`uem`** is what you were hoping for.
 
 > `zazawan vowogal uem thamam.`
 >

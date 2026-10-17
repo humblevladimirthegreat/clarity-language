@@ -9,6 +9,7 @@ use [skip-cd] for amplify to not deploy.
 # TODO
 -claritish editor
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
+consider removing forward links (including prose)
 
 llm-gloss-prompt:
 -phase 1.5 wave 5

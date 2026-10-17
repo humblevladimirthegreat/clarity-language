@@ -332,7 +332,7 @@ English *according to Azawan* and *going by the camera* name **who or what you g
 
 What you put in that `/b/` decides what it does. A person or other noun is the source: a speaker or a document on REPORTED, a screen or a recording on LIVE and MEMORY. A time [measure phrase](numbers-applied.md#measure-phrases) is an offset that dates the event instead ([dated channel](#dated-channel)).
 
-**Compare with:** the source is where the claim came to you from; the claim is still yours to pass on. To say the claim is someone else's view (*Azawan thinks*), use the [holder](#holder), not `/b/`. A numbered footnote source is `th_N`.
+**Compare with:** the source is where the claim came to you from; the claim is still yours to pass on. A numbered footnote source is `th_N`.
 
 ### Mirative (`thezum`) {#mirative}
 
@@ -390,8 +390,6 @@ English *will* can make a forecast: a claim that something will happen. Agazan h
 >
 > "I have a faint hunch Alahen will leave."
 
-A schedule is not a forecast: it is someone's [PLAN](intention.md#plan-predict). Someone else's plan is their view, so it goes through a [holder](#holder), and the holder's channel says how you know about it.
-
 <a id="forecast-question"></a>
 
 In a [question](questions.md#question), the channel asks what the **listener's** answer rests on: *going by the pattern you see, will it rain?* The listener answers with that channel or names a different one. Pick the channel you expect them to have: CLUES (`thunem`) when they would work it out from clues, REPORTED (`thewam`) when they would go by what they heard or read.
@@ -402,9 +400,9 @@ In a [question](questions.md#question), the channel asks what the **listener's**
 >
 > "Will it rain, going by the pattern you see?"
 
-On a [feeling](sakes.md#emotion-compose) (a sake word with a locus and a motion ending, before **`gobum`**), the channel and offset date the **stimulus**. On a [feeling with no object](sakes.md#feeling-no-object), they date a stimulus you leave unnamed. The feeling itself stays now; to date a stance, use [stance as-of](relations.md#stance-as-of).
+On a [feeling](sakes.md#emotion-compose) (a sake word with a locus and a motion ending, before **`gobum`**), the channel and offset date the **stimulus**. On a [feeling with no object](sakes.md#feeling-no-object), they date a stimulus you leave unnamed. The feeling itself stays now.
 
-**Compare with:** [PLAN](intention.md#plan-predict) (`thamam`) says what you **intend** to do. Your own intention needs no channel; someone else's goes through a [holder](#holder). A forecast is a claim about the world. To say **how much** later (*in three hours*), replace `bral` with a measured [dated channel](#dated-channel). *Could be* with nothing behind it is [MAY](#may), not a forecast.
+**Compare with:** [PLAN](intention.md#plan-predict) (`thamam`) says what you **intend** to do. Your own intention needs no channel. A forecast is a claim about the world. *Could be* with nothing behind it is [MAY](#may), not a forecast.
 
 ### Evidence clause (`barl`) {#evidence-clause}
 
@@ -516,7 +514,7 @@ The frame is **yours**. It covers only your own claims, and someone else who rep
 
 **What ends it:**
 
-- **A new frame.** Any channel replaces it, and so do [NOTIONAL](#notional) and a [holder](#holder). From there on, the new one carries.
+- **A new frame.** Any channel replaces it, and so does [NOTIONAL](#notional). From there on, the new one carries.
 - **The statement word, written out.** **`yal`** (or **`yam`** / **`yar`**) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](speech-moves.md#speech-act) changes the meaning. A rhetorical **`yal yol`** is a question, so it does not count.
 - **`xavazem`** *by the way*: a digression leaves what you were telling. To go back, name the channel again.
 - **A goodbye**, which ends the conversation.
@@ -828,6 +826,203 @@ English *contrary to what I was told* and *against my gut* say the event went ag
 
 **Compare with:** `zazawan thezum vowogal.` says the walking surprised you. `zazawan vowogal uem thahom.` says your gut expected otherwise, whether or not the news surprised you.
 
+### Whose view (holder) {#holder}
+<a id="holder-seam"></a>
+
+English *Azawan thinks…*, *she's upset*, and *he doubts it* report what is in someone else's mind as if you could see it. In Agazan, you name whose view a sentence gives (the **holder**) by joining their name onto a channel, [MAY](#may), or [NOTIONAL](#notional). Keep that word's own last letter (**-l**, **-m**, or **-r**) and write the name straight after it: `thunem` plus `azawan` is `thunemazawan`. The joining letter is the **seam**. This is the only way to name a holder, so you can never report someone's view without saying how you know it. (cue: the name hangs off the way you know it)
+
+> `zalahen thunemazawan vedabal.`
+>
+> z-Alahen | th-CLUES-Azawan | v-departure
+>
+> "I gather Azawan thinks Alahen left."
+
+> `zalahen thewamazawan vedabal.`
+>
+> z-Alahen | th-REPORTED-Azawan | v-departure
+>
+> "I hear Azawan thinks Alahen left."
+
+> `zalahen thovumazawan vedabal.`
+>
+> z-Alahen | th-MAY-Azawan | v-departure
+>
+> "Maybe Azawan thinks Alahen left."
+
+> `zalahen thavomazawan vedabal.`
+>
+> z-Alahen | th-NOTIONAL-Azawan | v-departure
+>
+> "Imagine it as Azawan sees it: Alahen left."
+
+The seam letter keeps its meaning: [evidence strength](#evidence-strength) on a channel, the [hold](#may-hold) on MAY or NOTIONAL. The name keeps its own **-n** at the end. **-n** is never a seam.
+
+> `zalahen thunelazawan vedabal.`
+>
+> z-Alahen | th-CLUES.strong-Azawan | v-departure
+>
+> "I have strong clues that Azawan thinks Alahen left."
+
+> `zalahen thewarazawan vedabal.`
+>
+> z-Alahen | th-REPORTED.weak-Azawan | v-departure
+>
+> "Rumor has it Azawan thinks Alahen left."
+
+A holder [carries forward](#carry-forward) like a channel. After it, your bare claims go on giving that person's view, until a new frame, so you can tell a stretch of the story as they see it.
+
+> `zalahen thunemazawan vedabal. zalahen vezebal.`
+>
+> z-Alahen | th-CLUES-Azawan | v-departure . z-Alahen | v-sleep
+>
+> "I gather Azawan thinks Alahen left. Alahen is asleep." (the sleeping is Azawan's view too)
+
+The holder word ends the way a noun for that person would. **-n** is a name. **-r** [resumes](pronouns.md#resume-r) someone already named, which is English *he* / *she* / *they*, and a [role pointer](pronouns.md#role-pointers) on **-r** works too (`thunemaxar`, *I gather the latest doer thinks*). Add [associative **-x**](plurality.md#associative) after the ending for the person and their associates. A kind of person on **-lx** is some people of that kind.
+
+> `zazawan vowogal. zalahen thunemazawar vedabal.`
+>
+> z-Azawan | v-walk . z-Alahen | th-CLUES-←Azawan | v-departure
+>
+> "Azawan walks. I gather they think Alahen left."
+
+> `zazawan vowogal. zalahen thunemaxar vedabal.`
+>
+> z-Azawan | v-walk . z-Alahen | th-CLUES-←agent.same | v-departure
+>
+> "Azawan walks. I gather they think Alahen left." (the latest doer: Azawan)
+
+> `zalahen thunemazawanx vedabal.`
+>
+> z-Alahen | th-CLUES-Azawan-x | v-departure
+>
+> "I gather Azawan and co. think Alahen left."
+
+> `zalahen thunemobelx vedabal.`
+>
+> z-Alahen | th-CLUES-person-x | v-departure
+>
+> "I gather some people think Alahen left."
+
+The holder may be the [topic pronoun](pronouns.md#topic-pronoun), whoever the conversation is about now, or the [generic pronoun](pronouns.md#generic-pronoun), the generic view. The generic pronoun takes no **-x**.
+
+> `xazawan thunemozan zalahen vedabal.`
+>
+> x-Azawan | th-CLUES-TOPIC | z-Alahen | v-departure
+>
+> "Now, about Azawan: I gather Azawan thinks Alahen left."
+
+> `thunemoben zalahen vedabal.`
+>
+> th-CLUES-ONE | z-Alahen | v-departure
+>
+> "I gather one would think Alahen left."
+
+**Someone else's plan** goes the same way. [PLAN](intention.md#plan-predict) alone is yours; after a holder it is theirs, and the seam word says how you know what they plan. After **`uem`** ([contrary to a stance](sakes.md#contrary-to-stance)), write the holder word, then the plan, for *against their plan*.
+
+> `zazawan thewamazawan thamam vowogal.`
+>
+> z-Azawan | th-REPORTED-Azawan | th-plan-itinerary | v-walk
+>
+> "I hear Azawan plans to walk."
+
+> `zazawan thunemalahen thamam vowogal.`
+>
+> z-Azawan | th-CLUES-Alahen | th-plan-itinerary | v-walk
+>
+> "I gather Alahen plans for Azawan to walk."
+
+The seam word keeps its `/b/` source like any channel. A schedule is not a forecast: it is a plan you know from a record, so put the record in `/b/`:
+
+> `zazawan thewalazawan bagadal thamam vezebel.`
+>
+> z-Azawan | [th-REPORTED.strong-Azawan | b-calendar] | th-plan-itinerary | v-tell
+>
+> "Going by the official calendar, Azawan plans to speak."
+
+> `zazawan vowogal uem thunemalahen thamam.`
+>
+> z-Azawan | v-walk | [contrary-to | th-CLUES-Alahen | th-plan-itinerary]
+>
+> "Azawan walks, against Alahen's plan, as far as I can tell."
+
+**Someone else's motive** goes the same way. A [motive](sakes.md#sake-preference) word alone names what the act serves for you; it does not say why the actor does it. After a holder, the motive is the holder's, and the seam word says how you know their reason.
+
+> `zazawan vezebel thanathom thunemazawan.`
+>
+> z-Azawan | v-tell | th-relatedness-motive-any-term | th-CLUES-Azawan
+>
+> "I gather Azawan talks to feel connected."
+
+**The seam word is yours; the rest of the clause is the holder's.** The word that carries the name says how **you** know about the holder's view: you inferred it, heard it, guess it, or are imagining it. You claim nothing about whether the holder is right, and nothing about your own view. Everything else in the clause, wherever it sits, belongs to the holder:
+
+| In the clause | With no holder | With a holder |
+|---------------|----------------|---------------|
+| The event | you assert it | what the holder takes to be so; you do not assert it |
+| MAY, MIRATIVE, CAUSE poles, PLAN, prescription | yours | the holder's |
+| [Sake](sakes.md) words and [emotion compose](sakes.md#emotion-compose), with their endings | your stake and feeling | the holder's stake and feeling |
+| A `/ɡ/` sake's *my* reading ([personal possession](sakes.md#personal-possession)) | your belonging | the holder's belonging |
+| Another evidential | how you know | how the holder knows |
+| The grounds after an inferring or pattern host's [`barl`](#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
+| A comparison [bar](comparatives.md#bars) | your expectation | the holder's expectation |
+
+> `zumel wanathumol gobum balahen thunemazawan.`
+>
+> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]] | th-CLUES-Azawan
+>
+> "I gather Azawan resents Alahen over the memo, holding it in."
+
+> `zalahen thunemazawan thodom vedabal.`
+>
+> z-Alahen | th-CLUES-Azawan | th-LIVE | v-departure
+>
+> "I gather Azawan is watching Alahen leave."
+
+> `zalahen thezum thunemazawan vedabal.`
+>
+> z-Alahen | th-MIRATIVE | th-CLUES-Azawan | v-departure
+>
+> "I gather Alahen's leaving surprised Azawan." (the surprise is Azawan's)
+
+A holder on a comparison bar names **whose expectation** you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
+
+> `zazawan thahomalahen zel gezebul.`
+>
+> [z-Azawan | th-INTUITION-Alahen | z-rank/more | g-sleepy]
+>
+> "Azawan is sleepier than Alahen expected."
+
+A holder on a channel after [**`uem`**](#channel-frame) names **whose view** the event goes against. The seam covers only that pair: the event is still your claim.
+
+> `zazawan vowogal uem thewamalahen.`
+>
+> z-Azawan | v-walk | [contrary-to | th-REPORTED-Alahen]
+>
+> "Azawan walks, contrary to what I hear Alahen thinks."
+
+A [feeling with no object](sakes.md#feeling-no-object) works the same way: the holder makes it someone else's feeling.
+
+> `thulothuruor thunemalahen.`
+>
+> th-competence-unmet-passing-UNPLACED-SURGING | th-CLUES-Alahen
+>
+> "I gather Alahen is anxious."
+
+Pronouns and speech moves stay yours: **`amun`** is still you, and the sentence is still your turn. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thewamazawan bral` is *I hear Azawan expects it*. A holder is not a [source](#source): a source in `/b/` is where a claim came to you from, and the claim stays yours to pass on; a holder makes the claim the holder's view.
+
+**One clause, one holder.** The holder covers its clause and any dependent sentence inside it; a new `/x/` sentence is yours again unless it has its own seam word. A dependent with its own seam word switches holder for that sentence only. That is how you take a stance on someone else's stance: your stance in the main sentence, theirs in a dependent.
+
+> `wanathum gobum zarl zalahen wanathum gobum thunemazawan.`
+>
+> [w-relatedness-unmet-modifiable | g-stimulus] | z-that-clause | [z-Alahen | [w-relatedness-unmet-modifiable | g-stimulus]] | th-CLUES-Azawan
+>
+> "It sits badly with me that, as I gather, Alahen sits badly with Azawan."
+
+The first sake word has no holder, so it is yours. The second is Azawan's.
+
+Only the seven channels, MAY, and NOTIONAL take a holder: they are the ways you can have access to someone else's view. When they told you in their own words, a [cite](spans.md#writing) keeps their wording instead.
+
+**Compare with:** being upset **for** Azawan is your own feeling about Azawan's stake (the ON-BEHALF locus in [emotion compose](sakes.md#emotion-compose)); with a holder the feeling is Azawan's. *On behalf of* Azawan is [proxy](relations.md#proxy) (`hadem`). A `/b/` on [permission](sakes.md#permission) or [consent](sakes.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](x-compounds.md#lexical-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
+
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -904,12 +1099,12 @@ z-Azawan | [th-PATTERN.strong | b-later] | v-tell | b-Ahaben
 z-Azawan | h-already | v-sing | h-sometimes
 :::
 
-**5.** *Surprisingly, Alahen is singing; I can see it.*
+**5.** *I gather Alahen's singing surprised Azawan.* (the surprise is Azawan's)
 
 ::: details Show answer
-`zalahen thodom thezum vezehel.`
+`zalahen thezum thunemazawan vezehel.`
 
-z-Alahen | th-LIVE | th-MIRATIVE | v-sing
+z-Alahen | th-MIRATIVE | th-CLUES-Azawan | v-sing
 :::
 
 **6.** *Imagine Alahen muting the radio.*
@@ -1145,215 +1340,6 @@ The unit sets how wide *now* is. Zero hours is *right now*; zero [days](numbers-
 
 Use zero on a channel that takes either sign. **LIVE** `thodom` already means *now in view*, so it needs no offset. **MEMORY** takes **`-`** only and PLAN takes **`+`** only, so zero is not a sentence on them.
 
-### Whose view (holder) {#holder}
-<a id="holder-seam"></a>
-
-English *Azawan thinks…*, *she's upset*, and *he doubts it* report what is in someone else's mind as if you could see it. In Agazan, you name whose view a sentence gives (the **holder**) by joining their name onto a channel, [MAY](#may), or [NOTIONAL](#notional). Keep that word's own last letter (**-l**, **-m**, or **-r**) and write the name straight after it: `thunem` plus `azawan` is `thunemazawan`. The joining letter is the **seam**. This is the only way to name a holder, so you can never report someone's view without saying how you know it. (cue: the name hangs off the way you know it)
-
-> `zalahen thunemazawan vedabal.`
->
-> z-Alahen | th-CLUES-Azawan | v-departure
->
-> "I gather Azawan thinks Alahen left."
-
-> `zalahen thewamazawan vedabal.`
->
-> z-Alahen | th-REPORTED-Azawan | v-departure
->
-> "I hear Azawan thinks Alahen left."
-
-> `zalahen thovumazawan vedabal.`
->
-> z-Alahen | th-MAY-Azawan | v-departure
->
-> "Maybe Azawan thinks Alahen left."
-
-> `zalahen thavomazawan vedabal.`
->
-> z-Alahen | th-NOTIONAL-Azawan | v-departure
->
-> "Imagine it as Azawan sees it: Alahen left."
-
-The seam letter keeps its meaning: [evidence strength](#evidence-strength) on a channel, the [hold](#may-hold) on MAY or NOTIONAL. The name keeps its own **-n** at the end. **-n** is never a seam.
-
-> `zalahen thunelazawan vedabal.`
->
-> z-Alahen | th-CLUES.strong-Azawan | v-departure
->
-> "I have strong clues that Azawan thinks Alahen left."
-
-> `zalahen thewarazawan vedabal.`
->
-> z-Alahen | th-REPORTED.weak-Azawan | v-departure
->
-> "Rumor has it Azawan thinks Alahen left."
-
-A holder [carries forward](#carry-forward) like a channel. After it, your bare claims go on giving that person's view, until a new frame, so you can tell a stretch of the story as they see it.
-
-> `zalahen thunemazawan vedabal. zalahen vezebal.`
->
-> z-Alahen | th-CLUES-Azawan | v-departure . z-Alahen | v-sleep
->
-> "I gather Azawan thinks Alahen left. Alahen is asleep." (the sleeping is Azawan's view too)
-
-The holder word ends the way a noun for that person would. **-n** is a name. **-r** [resumes](pronouns.md#resume-r) someone already named, which is English *he* / *she* / *they*, and a [role pointer](pronouns.md#role-pointers) on **-r** works too (`thunemaxar`, *I gather the latest doer thinks*). Add [associative **-x**](plurality.md#associative) after the ending for the person and their associates. A kind of person on **-lx** is some people of that kind.
-
-> `zazawan vowogal. zalahen thunemazawar vedabal.`
->
-> z-Azawan | v-walk . z-Alahen | th-CLUES-←Azawan | v-departure
->
-> "Azawan walks. I gather they think Alahen left."
-
-> `zazawan vowogal. zalahen thunemaxar vedabal.`
->
-> z-Azawan | v-walk . z-Alahen | th-CLUES-←agent.same | v-departure
->
-> "Azawan walks. I gather they think Alahen left." (the latest doer: Azawan)
-
-> `zalahen thunemazawanx vedabal.`
->
-> z-Alahen | th-CLUES-Azawan-x | v-departure
->
-> "I gather Azawan and co. think Alahen left."
-
-> `zalahen thunemobelx vedabal.`
->
-> z-Alahen | th-CLUES-person-x | v-departure
->
-> "I gather some people think Alahen left."
-
-The holder may be the [topic pronoun](pronouns.md#topic-pronoun), whoever the conversation is about now, or the [generic pronoun](pronouns.md#generic-pronoun), the generic view. The generic pronoun takes no **-x**.
-
-> `xazawan thunemozan zalahen vedabal.`
->
-> x-Azawan | th-CLUES-TOPIC | z-Alahen | v-departure
->
-> "Now, about Azawan: I gather Azawan thinks Alahen left."
-
-> `thunemoben zalahen vedabal.`
->
-> th-CLUES-ONE | z-Alahen | v-departure
->
-> "I gather one would think Alahen left."
-
-**Someone else's want, plan, or decision** goes the same way. [WANT](intention.md#want), [PLAN](intention.md#plan-predict), and [DECISION](intention.md#decision) alone are yours; after a holder they are theirs, and the seam word says how you know what they want, plan, or chose. After **`uem`** ([contrary to a stance](sakes.md#contrary-to-stance)), write the holder word, then the stance, for *against their wishes* or *against their plan*.
-
-> `zazawan thewamazawan thohum vowogal.`
->
-> z-Azawan | th-REPORTED-Azawan | th-WANT-unstated | v-walk
->
-> "I hear Azawan wants to walk."
-
-> `zazawan thewamazawan thamam vowogal.`
->
-> z-Azawan | th-REPORTED-Azawan | th-plan-itinerary | v-walk
->
-> "I hear Azawan plans to walk."
-
-> `zazawan thunemalahen thamam vowogal.`
->
-> z-Azawan | th-CLUES-Alahen | th-plan-itinerary | v-walk
->
-> "I gather Alahen plans for Azawan to walk."
-
-The seam word keeps its `/b/` source like any channel. A schedule is a plan you know from a record, so put the record in `/b/`:
-
-> `zazawan thewalazawan bagadal thamam vezebel.`
->
-> z-Azawan | [th-REPORTED.strong-Azawan | b-calendar] | th-plan-itinerary | v-tell
->
-> "Going by the official calendar, Azawan plans to speak."
-
-> `zazawan thunemazawan thehum vowogal.`
->
-> z-Azawan | th-CLUES-Azawan | th-DECISION-modifiable | v-walk
->
-> "I gather Azawan has decided to walk, and can still change that."
-
-> `zalahen vezebal uem thunemazawan thohum.`
->
-> z-Alahen | v-sleep | [contrary-to | th-CLUES-Azawan | th-WANT-unstated]
->
-> "Alahen sleeps, against Azawan's wishes, as far as I can tell."
-
-**Someone else's motive** goes the same way. A [motive](sakes.md#sake-preference) word alone names what the act serves for you; it does not say why the actor does it. After a holder, the motive is the holder's, and the seam word says how you know their reason.
-
-> `zazawan vezebel thanathom thunemazawan.`
->
-> z-Azawan | v-tell | th-relatedness-motive-any-term | th-CLUES-Azawan
->
-> "I gather Azawan talks to feel connected."
-
-**The seam word is yours; the rest of the clause is the holder's.** The word that carries the name says how **you** know about the holder's view: you inferred it, heard it, guess it, or are imagining it. You claim nothing about whether the holder is right, and nothing about your own view. Everything else in the clause, wherever it sits, belongs to the holder:
-
-| In the clause | With no holder | With a holder |
-|---------------|----------------|---------------|
-| The event | you assert it | what the holder takes to be so; you do not assert it |
-| MAY, MIRATIVE, CAUSE poles, WANT, PLAN, DECISION, prescription | yours | the holder's |
-| [Sake](sakes.md) words and [emotion compose](sakes.md#emotion-compose), with their endings | your stake and feeling | the holder's stake and feeling |
-| A `/ɡ/` sake's *my* reading ([personal possession](sakes.md#personal-possession)) | your belonging | the holder's belonging |
-| Another evidential | how you know | how the holder knows |
-| The grounds after an inferring or pattern host's [`barl`](#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
-| A comparison [bar](comparatives.md#bars) | your expectation | the holder's expectation |
-
-> `zumel wanathumol gobum balahen thunemazawan.`
->
-> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]] | th-CLUES-Azawan
->
-> "I gather Azawan resents Alahen over the memo, holding it in."
-
-> `zalahen thunemazawan thodom vedabal.`
->
-> z-Alahen | th-CLUES-Azawan | th-LIVE | v-departure
->
-> "I gather Azawan is watching Alahen leave."
-
-> `zalahen thezum thunemazawan vedabal.`
->
-> z-Alahen | th-MIRATIVE | th-CLUES-Azawan | v-departure
->
-> "I gather Alahen's leaving surprised Azawan." (the surprise is Azawan's)
-
-A holder on a comparison bar names **whose expectation** you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
-
-> `zazawan thahomalahen zel gezebul.`
->
-> [z-Azawan | th-INTUITION-Alahen | z-rank/more | g-sleepy]
->
-> "Azawan is sleepier than Alahen expected."
-
-A holder on a channel after [**`uem`**](#channel-frame) names **whose view** the event goes against. The seam covers only that pair: the event is still your claim.
-
-> `zazawan vowogal uem thewamalahen.`
->
-> z-Azawan | v-walk | [contrary-to | th-REPORTED-Alahen]
->
-> "Azawan walks, contrary to what I hear Alahen thinks."
-
-A [feeling with no object](sakes.md#feeling-no-object) works the same way: the holder makes it someone else's feeling.
-
-> `thulothuruor thunemalahen.`
->
-> th-competence-unmet-passing-UNPLACED-SURGING | th-CLUES-Alahen
->
-> "I gather Alahen is anxious."
-
-Pronouns and speech moves stay yours: **`amun`** is still you, and the sentence is still your turn. The holder's view is their view **now**. To give their view at another time, add [stance as-of](relations.md#stance-as-of) (`thuhum`), which then dates **their** stance. A channel with a holder still takes its own `/b/`, so `thewamazawan bral` is *I hear Azawan expects it*.
-
-**One clause, one holder.** The holder covers its clause and any dependent sentence inside it; a new `/x/` sentence is yours again unless it has its own seam word. A dependent with its own seam word switches holder for that sentence only. That is how you take a stance on someone else's stance: your stance in the main sentence, theirs in a dependent.
-
-> `wanathum gobum zarl zalahen wanathum gobum thunemazawan.`
->
-> [w-relatedness-unmet-modifiable | g-stimulus] | z-that-clause | [z-Alahen | [w-relatedness-unmet-modifiable | g-stimulus]] | th-CLUES-Azawan
->
-> "It sits badly with me that, as I gather, Alahen sits badly with Azawan."
-
-The first sake word has no holder, so it is yours. The second is Azawan's.
-
-Only the seven channels, MAY, and NOTIONAL take a holder: they are the ways you can have access to someone else's view. When they told you in their own words, a [cite](spans.md#writing) keeps their wording instead.
-
-**Compare with:** being upset **for** Azawan is your own feeling about Azawan's stake (the ON-BEHALF locus in [emotion compose](sakes.md#emotion-compose)); with a holder the feeling is Azawan's. *On behalf of* Azawan is [proxy](relations.md#proxy) (`hadem`). A [dictionary compound](x-compounds.md#lexical-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
-
 ### Channels on a generalization {#universality}
 <a id="universality-mood"></a>
 <a id="generalization"></a>
@@ -1439,7 +1425,6 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *LIVE* | `thodom` |
 | *MEMORY* | `thevom` |
 | *PATTERN* | `thobam` |
-| *CLUES* | `thunem` |
 | *CAUSE* | `thegem` |
 | *if* | `thoyem` |
 | *sleepy* | `ezebul` |
@@ -1450,7 +1435,6 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *write* | `varadal` |
 | *sit* | `vehahel` |
 | *sleep* | `vezebal` |
-| *departure* | `vedabal` |
 | *see* | `vahahal` |
 
 #### English → Agazan {#advanced-english-to-agazan}
@@ -1477,14 +1461,6 @@ z-Azawan | [th-MEMORY | [b-hour | g-minus-three]] | v-write
 `zuam gagadul vezebal thobam.`
 
 [z-everything.open | g-cat] | v-sleep | th-PATTERN
-:::
-
-**4.** *I gather Azawan thinks Alahen left.* (Azawan's view; the clues are mine)
-
-::: details Show answer
-`zalahen thunemazawan vedabal.`
-
-z-Alahen | th-CLUES-Azawan | v-departure
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}

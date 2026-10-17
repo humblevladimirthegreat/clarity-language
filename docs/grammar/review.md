@@ -344,6 +344,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *pay* | `vamol` |
 | *hour* | `agazem` |
 | *sleep* | `vezebal` |
+| *CLUES* | `thunem` |
+| *sing* | `vezehel` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
@@ -427,6 +429,16 @@ z-Azawan | [v-cook | v-fight | v-rank/more]
 z-Ahaben | [b-hour | g-two.about] | v-sleep
 
 **Rule:** [Measure phrases](numbers-applied.md#measure-phrases)
+:::
+
+**9.** *I gather Ahaben thinks Alahen sings.*
+
+::: details Show answer
+`zalahen thunemahaben vezehel.`
+
+z-Alahen | th-CLUES-Ahaben | v-sing
+
+**Rule:** [Whose view (holder)](knowing.md#holder)
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -634,9 +646,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *as-of.ledger* | `huhum` |
 | *REPORTED* | `thewam` |
 | *MEMORY* | `thevom` |
-| *CLUES* | `thunem` |
 | *hour* | `agazem` |
-| *sing* | `vezehel` |
 | *walk* | `vowogal` |
 | *write* | `varadal` |
 | *sleepy* | `ezebul` |
@@ -665,14 +675,14 @@ z-Azawan | [h-as-of.ledger | b-_3,5] | v-sit | [in | b-school]
 **Rule:** [As-of (whose now)](relations.md#as-of)
 :::
 
-**3.** *I gather Ahaben thinks Alahen sings.*
+**3.** *Ahaben sees a station that I remember as quiet.*
 
 ::: details Show answer
-`zalahen thunemahaben vezehel.`
+`zahaben dezedel wevom gagawal vahahal.`
 
-z-Alahen | th-CLUES-Ahaben | v-sing
+z-Ahaben | [d-station | [w-MEMORY | g-quiet]] | v-see
 
-**Rule:** [Whose view (holder)](knowing.md#holder)
+**Rule:** [Mood on one adjective](knowing.md#mood-on-adjective)
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}

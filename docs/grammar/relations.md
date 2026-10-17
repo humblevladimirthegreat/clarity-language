@@ -690,7 +690,7 @@ Once whose-now is set, these count from it:
 - [FORMER](knowing.md#former-climate) means the pattern no longer held **at** that now.
 - A bare verb happens **at** that now.
 
-[MAY](knowing.md#may), [CAUSE](causation.md#cause), and every other stance still count from speech-now; to move them too, use [stance as-of](#stance-as-of). Evidentials, apart from LIVE at the snapshot, still say how *you* know at speech-now.
+[MAY](knowing.md#may), [CAUSE](causation.md#cause), and every other stance still count from speech-now. Evidentials, apart from LIVE at the snapshot, still say how *you* know at speech-now.
 
 > `zazawan zalahen zel wuhum b_#22,7 gamadam.`
 >

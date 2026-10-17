@@ -90,11 +90,11 @@ Join the name to a channel, MAY, or NOTIONAL: keep the word's last letter and wr
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Holder on a channel](../knowing.md#holder) | `zalahen thunemazawan vedabal.` | *I gather Azawan thinks Alahen left.* | A |
-| [Holder on REPORTED](../knowing.md#holder) | `zalahen thewamazawan vedabal.` | *I hear Azawan thinks Alahen left.* | A |
-| [Holder on MAY](../knowing.md#holder) | `zalahen thovumazawan vedabal.` | *Maybe Azawan thinks Alahen left.* | A |
-| [Holder on NOTIONAL](../knowing.md#holder) | `zalahen thavomazawan vedabal.` | *Imagine it as Azawan sees it.* | A |
-| [Strength before the name](../knowing.md#holder) | `zalahen thunelazawan vedabal.` | *Strong clues say Azawan thinks Alahen left.* | A |
+| [Holder on a channel](../knowing.md#holder) | `zalahen thunemazawan vedabal.` | *I gather Azawan thinks Alahen left.* | I |
+| [Holder on REPORTED](../knowing.md#holder) | `zalahen thewamazawan vedabal.` | *I hear Azawan thinks Alahen left.* | I |
+| [Holder on MAY](../knowing.md#holder) | `zalahen thovumazawan vedabal.` | *Maybe Azawan thinks Alahen left.* | I |
+| [Holder on NOTIONAL](../knowing.md#holder) | `zalahen thavomazawan vedabal.` | *Imagine it as Azawan sees it.* | I |
+| [Strength before the name](../knowing.md#holder) | `zalahen thunelazawan vedabal.` | *Strong clues say Azawan thinks Alahen left.* | I |
 
 ### Keeping a channel {#carry}
 
@@ -184,13 +184,13 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | [Trial run](../intention.md#try) | `zalahen hudur vezehel.` | *Alahen gives singing a try.* | I |
 | [Committed](../intention.md#try) | `zalahen hudul vowogal.` | *Alahen keeps trying to walk.* | I |
 | [Want](../intention.md#want): yours | `zazawan thohum vowogal.` | *I want Azawan to walk.* | I |
-| [Someone else's want](../knowing.md#holder): a holder | `zazawan thewamazawan thohum vowogal.` | *I hear Azawan wants to walk.* | A |
+| [Someone else's want](../intention.md#whose-intention): a holder | `zazawan thewamazawan thohum vowogal.` | *I hear Azawan wants to walk.* | I |
 | [Want, a whim](../intention.md#want-endings) | `zalahen thohur vezehel.` | *Right now I feel like having Alahen sing.* | I |
 | [Stacked: want, then plan](../intention.md#want-endings) | `zamun thohul thamam vowogal.` | *I have long wanted to walk, and I plan to.* | I |
 | [Against my wishes](../intention.md#want-endings) | `zazawan vowogal uem thohum.` | *Azawan walks, against my wishes.* | I |
-| [Against someone's wishes](../knowing.md#holder) | `zalahen vezebal uem thunemazawan thohum.` | *Alahen sleeps, against Azawan's wishes, as far as I can tell.* | A |
-| [Someone else's plan](../knowing.md#holder): a holder | `zazawan thewamazawan thamam vowogal.` | *I hear Azawan plans to walk.* | A |
-| [Someone else's decision](../knowing.md#holder): a holder | `zazawan thunemazawan thehum vowogal.` | *I gather Azawan has decided to walk, and can still change that.* | A |
+| [Against someone's wishes](../intention.md#whose-intention) | `zalahen vezebal uem thunemazawan thohum.` | *Alahen sleeps, against Azawan's wishes, as far as I can tell.* | I |
+| [Someone else's plan](../knowing.md#holder): a holder | `zazawan thewamazawan thamam vowogal.` | *I hear Azawan plans to walk.* | I |
+| [Someone else's decision](../intention.md#whose-intention): a holder | `zazawan thunemazawan thehum vowogal.` | *I gather Azawan has decided to walk, and can still change that.* | I |
 | [Plan, and when](../intention.md#predict-evidentiality) | `zamun thamam bral vehahel.` | *I plan to sit down later.* | I |
 | [Try, failing that](../intention.md#fallback): `xon` | `zazawan hudur vowogal xon zazawar vezehel.` | *Azawan gives walking a try; failing that, Azawan sings.* | I |
 | [A plan with backups](../intention.md#fallback) | `zamun thamal vowogal xon zamun thamal vezehel xon zamun thamal vezebal.` | *walk; failing that, sing; failing that, sleep* | I |

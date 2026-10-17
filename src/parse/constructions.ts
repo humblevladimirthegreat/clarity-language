@@ -144,7 +144,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
 
   "hUnitRule.W": { anchor: "clause.md#adjective-detail-w", summary: "/w/ detail on an adverb" },
   "hUnitRule.H": { anchor: "clause.md#adverbs-h", summary: "/h/ or /th/ word" },
-  "hUnitRule.Held": { anchor: "knowing.md#holder", summary: "WANT after a holder frame of uem: the holder's wish the event goes against" },
+  "hUnitRule.Held": { anchor: "knowing.md#holder", summary: "WANT, PLAN, or DECISION after a holder frame of uem: the holder's intention the event goes against" },
   "hUnitRule.B": { anchor: "clause.md#extra-nouns", summary: "hosted /b/ after /h/" },
   "hUnitRule.G": { anchor: "knowing.md#dated-channel", summary: "amount on a hosted /b/ (signed offset)" },
   "hUnitRule.Odo": { anchor: "dependents.md#dependent-clauses", summary: "stand-in hosted on /h/, or the grounds after a channel's offset" },
