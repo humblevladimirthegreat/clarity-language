@@ -563,7 +563,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 [z-Alahen | z-Ahaben | z-and | g-exertion]
 
-*Alahen and Ahaben are exerted.*
+*Alahen and Ahaben are straining.*
 :::
 
 **2.** `zazawan zalahen zel garagam babayum graval.`

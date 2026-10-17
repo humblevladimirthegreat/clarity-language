@@ -48,7 +48,7 @@ A [tone mark](../speech-moves.md#tone-marks) changes your voice only, never the 
 | Mark | Feeling | Cue | Stage |
 |------|---------|-----|-------|
 | `!` | strong feeling | English *!* | I |
-| `?` | unsure | English *(?)* | I |
+| `?` | unsure | English *…, I think* | I |
 | `%` | joking, teasing | a wink | I |
 | `&` | contrast: this one, not another | *and* not the other | I |
 | `;` | warm, affectionate | a soft pause | I |

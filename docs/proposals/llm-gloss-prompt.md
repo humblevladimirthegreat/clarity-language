@@ -1,6 +1,6 @@
 # Translation prompt from the parser
 
-Status: phase 1, steps 1 (policy edits), 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review): waves 1 to 5 done (wave 4 ran before wave 3), waves 3 and 5 awaiting the editor's review of their diffs ([as built](#phase-1-step-5-as-built)). Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
+Status: phase 1, steps 1 (policy edits), 2 (extractor and lint, warn mode until step 7, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review): waves 1 to 5 done (wave 4 ran before wave 3), waves 3 and 5 awaiting the editor's review of their diffs ([as built](#phase-1-step-5-as-built)). Step 6 (wave check) ran after each wave. Step 7 (lint to error, [as built](#phase-1-step-7-as-built)) done. The editor items are [settled](#phase-1-still-open). Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
 
 ## Problem
 
@@ -399,3 +399,24 @@ Wave 5 (four small pages, 92 lines with no findings, reviewed in the main sessio
   - Kept: *Azawan barely sits* (numbers.md and its cheat sheet use the same sentence); say-amounts.md *Alahen and Ahaben are exerted* (the wave 4 *exerted* fallback is still open); *said* in the say-questions.md cite (the open past-tense item from waves 3 and 4).
 - **Fixed after the wave (editor's request):** say-questions.md's two rank tables had tie (**oe**) and sequence (**ae**) swapped against joins.md and the page's own practice. Single-item *Start with X?* / *Maybe start with X?* are now `…ael` / `…aem`; standalone *Tie?* / *Probably a tie?* / *Draw?* are `…oel` / `…oem` / `…oen`, and *Any order?* / *Not sure where to start?* are `…ael` / `…aem`. Two wave 1 cheat-sheet leftovers in why-allowed.md now match sakes.md: *Ought* is *Azawan ought to talk; it would help them feel connected.* (unasked advice), and *Requirement, by rule* is *The rules require Azawan to walk.*
 - **Also fixed in why-allowed.md:** *Detracts* is *My book detracts from competence.* (modifiable), and *Permission, granted* is *Azawan may walk; I'm allowing it.*, as on sakes.md.
+
+<a id="phase-1-step-7-as-built"></a>
+**Step 7 as built.** `lint:agazan` now counts `free-english` findings in its failure total and prints them as errors, so `npm run build` fails on a shape, inside-parentheses, grammar term, Agazan form, or gloss label finding on a top-level grammar page. All 32 pages have 0 findings. `npm test` passes.
+
+### Settled after phase 1
+<a id="phase-1-still-open"></a>
+
+The "for the editor to confirm" items from waves 3 to 5, settled in one pass after step 7. Closed earlier: *Three cats* (now *There are three cats.* on both pages), the verb-join `/d/` gap (settled by the verb join scope change), and the two why-allowed.md rows.
+
+- **Tense** is now a rule in [English lemma](../meta/glosses.md#english-lemma): present by default, past when the Agazan puts the event before now (a past date or offset, MEMORY, RESIDUE, FORMER, a past as-of) or when the sentence reports an event that is over (hearsay or clues about something that happened, a quote). That is what knowing.md, the calibration page, already does (*Alahen left, so they say*), so *walked in 1962*, the MEMORY and rank evidence lines, review.md *It looks like Alahen fought.*, and the *Azawan said* cite all stay in the past. Tense never adds a time word.
+- **Addressee note:** glosses.md now writes *(everyone I'm talking to)*, as plurality.md does.
+- **`gelevam`** is *straining* on causation.md and say-amounts.md.
+- **`gagayoxalaval`** is *in love* (the crush kind) on x-compounds.md and roles-comparing.md.
+- **plurality.md:** *They sing as one performance.* in the example, the table, the checkpoint, and people-pointing.md. The collective adjective prose now says a pile can be heavy when no single box is, which backs *(but not individually)*.
+- **word-endings.md** checkpoint prompts dropped *(the dictionary form)*: the checkpoint says every answer is a citation. hooks.md keeps the note, where it is what tells the citation from a sentence.
+- **predication.md:** *Alahen is me.* is `zagavol gugol bamun.` *The guard is me.*
+- **Restrictor prose** says *only when it rains*, to match the examples (restrictors.md, predication.md, say-people-places.md, restrictors-spans.md).
+- **Tone mark `?`:** the Cue cells on speech-moves.md and talking.md now say *…, I think*. The scope note keeps it apart from knowing.md's belief channel.
+- **Accepted as written:** greetings *Hello.* (said by Ahaben) and own-name lines with a note, not a literal `SELF`; speaker **-x** as *My people and I*; ranked `hel` as *preferably A, or else B*; the wave 5 wording (*It looks like Azawan is walking today*, *Azawan in particular walks*, *both challenging*, *There is an essence of love.*, *Azawan barely sits*).
+
+**Not done:** the free English lint still reads only top-level grammar pages, not cheat-sheet English cells (in TODO.md).

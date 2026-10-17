@@ -95,7 +95,7 @@ The word bank lists the roots this checkpoint introduces. **English** is what yo
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *school* (the dictionary form)
+**1.** *school*
 
 ::: details Show answer
 `uzugul`
@@ -103,7 +103,7 @@ The word bank lists the roots this checkpoint introduces. **English** is what yo
 school
 :::
 
-**2.** *knowledge* (the dictionary form)
+**2.** *knowledge*
 
 ::: details Show answer
 `ugum`
@@ -111,7 +111,7 @@ school
 knowledge
 :::
 
-**3.** *alert* (the dictionary form)
+**3.** *alert*
 
 ::: details Show answer
 `ebehum`

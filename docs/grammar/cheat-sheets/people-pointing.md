@@ -128,7 +128,7 @@ Who counts as an associate is [open unless you say](../plurality.md#associate-re
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Group, act left open](../plurality.md#verbs-v) | `zazawanx vezehel` | *Azawan and associates sing* | I |
-| [One shared act](../plurality.md#verbs-v) | `zazawanx vezehelx` | *they sing as one outing* | I |
+| [One shared act](../plurality.md#verbs-v) | `zazawanx vezehelx` | *they sing as one performance* | I |
 | [Joint doing, others unnamed](../plurality.md#verbs-v) | `zazawan vezehelx` | *Azawan sings jointly* | I |
 | [The group as one unit](../plurality.md#verbs-v) | `zavahal vowogalx` | *the family walks as one unit* | I |
 | [Property of each member](../plurality.md#adjectives-g) | `zavabal zulol zal garagam` | *the file-box and the toolbox are (each) heavy* | I |

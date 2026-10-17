@@ -347,7 +347,7 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 >
 > z-Azawan-x | v-sing-x
 >
-> "They sing as one outing." (Azawan and associates)
+> "They sing as one performance." (Azawan and associates)
 
 | Agazan | Use | English |
 |--------|-----|---------|
@@ -360,7 +360,7 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 | Agazan | English |
 |--------|---------|
 | `zazawanx vezehel` | *Azawan and associates sing* (together or each, or don’t care) |
-| `zazawanx vezehelx` | *they sing as one outing* |
+| `zazawanx vezehelx` | *they sing as one performance* |
 | `zazawan vezehelx` | *Azawan sings jointly* (not a solo) |
 | `zavahal vowogalx` | *the family walks as one unit* |
 
@@ -385,7 +385,7 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 ### Adjectives (`/ɡ/`): collective {#adjectives-g}
 <a id="collective"></a>
 
-English *the boxes are heavy* can mean each box or the pile. Put **-x** on the **adjective** (after its ending) when the property holds of the noun's group **as one unit**. Without **-x**, the adjective leaves open whether it holds of each member or of the whole pile.
+English *the boxes are heavy* can mean each box or the pile. Put **-x** on the **adjective** (after its ending) when the property holds of the noun's group **as one unit**. Without **-x**, the adjective leaves open whether it holds of each member or of the whole pile. With **-x**, a pile can be heavy when no single box is.
 
 > `zavabalx garagamx.`
 >
@@ -482,7 +482,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *They sing as one outing.* (Azawan and associates)
+**1.** *They sing as one performance.* (Azawan and associates)
 
 ::: details Show answer
 `zazawanx vezehelx.`

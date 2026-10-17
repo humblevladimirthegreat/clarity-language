@@ -12,7 +12,7 @@ use [skip-cd] for amplify to not deploy.
 consider removing forward links (including prose)
 
 llm-gloss-prompt:
--phase 1.6 (confirm this is necessary)
+-free English lint on cheat sheets: have lint run the shape and inside-parentheses checks on cheat-sheet English cells (they take a note like any free English line, but only top-level grammar pages are currently checked)
 -revise phase 2 (accidentally done before phase 1)
 -phase 3
 

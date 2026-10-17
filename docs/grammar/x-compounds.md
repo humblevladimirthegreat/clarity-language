@@ -22,7 +22,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 >
 > g-crush-x-love
 >
-> "love in the crush sense"
+> "in love" (the crush kind)
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -66,7 +66,7 @@ Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agaza
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
 | two words | two things, or a property already marked another way | `zahavol zerevul zam` *a hammer and a wrench*; `zodogal gubuhel` *a blue dog* (`/ɡ/`) | |
-| **`x`** in the middle | one thing; you can still hear both roots | `gagayoxalaval` *love in the crush sense*; `zebeyaxabodel` *peanut butter*; `zazawaxalahen` (one person) | **x** ≈ plus |
+| **`x`** in the middle | one thing; you can still hear both roots | `gagayoxalaval` *in love* (the crush kind); `zebeyaxabodel` *peanut butter*; `zazawaxalahen` (one person) | **x** ≈ plus |
 | dictionary word | one familiar kind, listed as a single entry | `zebedaluruhel` *bedroom*; `zazoval` *sunflower* | join letter in the entry, not **`x`** |
 
 **Compare with:** a property on a noun uses `/ɡ/` (or `/w/`). A list uses a [join](joins.md).
@@ -253,7 +253,7 @@ To narrow a compound further, or to build a hyphenated name from several labels,
 >
 > g-crush-x-love
 >
-> "love in the crush sense"
+> "in love" (the crush kind)
 
 > `zagavexedehexowoden.`
 >

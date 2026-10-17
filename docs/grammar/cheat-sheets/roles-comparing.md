@@ -146,7 +146,7 @@ Mid-word **`th`** is another family: a sake root and a vowel (`gulothal`), any o
 | Agazan | Use | English | Stage |
 |--------|-----|---------|-------|
 | [two words](../x-compounds.md#compound-vs-separate) | two things, or a property marked another way | `zahavol zerevul zam` *a hammer and a wrench*; `zodogal gubuhel` *a blue dog* | B |
-| [**`x`** in the middle](../x-compounds.md#compound-vs-separate) | one thing; both roots audible | `gagayoxalaval` *love in the crush sense*; `zebeyaxabodel` *peanut butter*; `zazawaxalahen` (one person) | B |
+| [**`x`** in the middle](../x-compounds.md#compound-vs-separate) | one thing; both roots audible | `gagayoxalaval` *in love* (the crush kind); `zebeyaxabodel` *peanut butter*; `zazawaxalahen` (one person) | B |
 | [dictionary word](../x-compounds.md#compound-vs-separate) | one familiar kind, one entry | `zebedaluruhel` *bedroom*; `zazoval` *sunflower* | B |
 
 A dictionary compound joins its two roots with the left root's ending (**-l** everyday, **-m** abstract), never **`x`**. If the pairing is not listed, glue with **`x`** or use two words.

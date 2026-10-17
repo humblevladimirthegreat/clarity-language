@@ -114,7 +114,7 @@ Grouping that English can say does not use parentheses: *either Azawan walks or 
 | Not this | This |
 |----------|------|
 | "tea or coffee (pick one)." | "tea or coffee." (pick one) |
-| "You all (the addressees) walk." | "You all walk." (the addressees) |
+| "You all (everyone I'm talking to) walk." | "You all walk." (everyone I'm talking to) |
 | "Azawan walks if there is rain (as mechanism)." | "Azawan walks if it rains." (rain as the mechanism) |
 | "You (Alahen) and your associates sit." | "You and your associates sit." (said to Alahen) |
 | "Alahen left, so they say. Did Alahen run? Alahen sang (so they say)." | "Alahen left, so they say. Did Alahen run? Alahen sang." (the singing is hearsay too) |
@@ -350,6 +350,8 @@ The lexicon **concrete** and **abstract** fields, overlay **definition** labels 
 | choose, think, sing | `choose`, `think`, `sing` | `choosing`, `thinks`, `sang` |
 
 Agazan does not mark English tense or progressive aspect on the root. Conjugation belongs only in **free English** (`"Azawan walks."`, `"they are dancing."`). Morph stays `v-walk` / `v-dance` even when the quote uses *walks* / *dancing*.
+
+**Tense in free English.** Write the present by default (*Azawan walks.*). Write the past when the Agazan puts the event before now (a past date or day offset, MEMORY, RESIDUE, FORMER, an as-of time in the past: *Azawan walked in 1962.*, *Azawan walked, I remember it.*), or when the sentence reports an event that is over: hearsay or clues about something that happened (*Alahen left, so they say.*, *It looks like Alahen fought.*) or a quote someone said (*Azawan said, “Alahen talks.”*). A forecast or a later date takes *will*. Tense never licenses a time word: write *walked*, not *walked yesterday*, unless the Agazan has the day.
 
 **Keep *-ing*** only when that string is not a verb lemma — a kind English names that way (`hearing-aid`, `lightning`, `wedding`), a closed tag the grammar already froze, or when stripping it would collide with another published literal (`fishing` vs `fish`, `cooking` vs `cook`, `partying` vs `party`). Do not append *-ing* to mark “this row is used as `/v/`.”
 

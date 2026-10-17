@@ -3,11 +3,11 @@
 
 ## Beginner {#beginner}
 
-Use these words when you want to say **when** a claim counts: *only when raining*, *never*, *always*. They take the adverb letter **`h`** (or **`w`** immediately before the adjective they limit) plus the same vowels and endings you already use on [joins](joins.md). Time or case words sit **before** the restrictor. Together they limit when the verb's claim (or that adjective) holds; they do not describe how it happens.
+Use these words when you want to say **when** a claim counts: *only when it rains*, *never*, *always*. They take the adverb letter **`h`** (or **`w`** immediately before the adjective they limit) plus the same vowels and endings you already use on [joins](joins.md). Time or case words sit **before** the restrictor. Together they limit when the verb's claim (or that adjective) holds; they do not describe how it happens.
 
 ### Only when / never (`hal`)
 
-To say *only when raining*, list the **occasions** (times or cases) when the verb's claim is true, then end the list with the restrictor **`hal`**. Everything goes in the adverb slot (`/h/`): occasion words first, the restrictor last, the way a join word ends a list. Closed **-l** means these are all the times you stand behind. (cue: **a** ≈ add, adding up the times.)
+To say *only when it rains*, list the **occasions** (times or cases) when the verb's claim is true, then end the list with the restrictor **`hal`**. Everything goes in the adverb slot (`/h/`): occasion words first, the restrictor last, the way a join word ends a list. Closed **-l** means these are all the times you stand behind. (cue: **a** ≈ add, adding up the times.)
 
 > `zazawan vowogal herehel hal.`
 >
@@ -141,7 +141,7 @@ To say *never sleepy* or *sometimes sleepy*, limit only the adjective, not the w
 
 ### Listed occasions (open)
 
-To say *when raining, among other times*, end the list with open **`ham`** instead of closed **`hal`**. Open **-m** leaves room for occasions you did not list, so the claim no longer means *only when*. Each listed occasion is one simple content word, and every occasion takes the same role letter as the restrictor (`/h/`, or `/w/` before an adjective). Bare **`ham`** is *never, as far as I know*. (cue: **a** ≈ add; **ua** ≈ undo then add.)
+To say *when it rains, among other times*, end the list with open **`ham`** instead of closed **`hal`**. Open **-m** leaves room for occasions you did not list, so the claim no longer means *only when*. Each listed occasion is one simple content word, and every occasion takes the same role letter as the restrictor (`/h/`, or `/w/` before an adjective). Bare **`ham`** is *never, as far as I know*. (cue: **a** ≈ add; **ua** ≈ undo then add.)
 
 <!-- cheat-sheet: restrictors-spans -->
 | Agazan | Use | English | Cue |
@@ -314,7 +314,7 @@ To limit only the adjective, the restrictor takes **`w`** right before it; **`ha
 
 z-Alahen | v-sit | h-rain | h-when.open
 
-Closed **`hal`** says *only* when raining; open **`ham`** leaves room for other times.
+Closed **`hal`** says *only* when it rains; open **`ham`** leaves room for other times.
 :::
 
 ## Intermediate {#intermediate}
@@ -331,7 +331,7 @@ English *when* / *if* can introduce a whole **sentence** as the occasion (*if Az
 
 A listed restrictor occasion can also be a longer unit: an `/h/` word with its `/b/`, or a run of adjacent `/w/` words.
 
-**Compare with:** *only when raining* is a restrictor list (`herehel hal`). *If Azawan walks* is the stand-in pattern above.
+**Compare with:** *only when it rains* is a restrictor list (`herehel hal`). *If Azawan walks* is the stand-in pattern above.
 
 ### More occasions {#more-occasions}
 <a id="defined-core-full"></a>

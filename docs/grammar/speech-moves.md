@@ -412,7 +412,7 @@ A **tone mark** shows how you feel, or what you stress, while you say something.
 | Mark | Feeling | Voice | Cue |
 |------|---------|-------|-----|
 | `!` | Strong feeling (excited, upset: the words say which) | Louder, stressed | English *!* |
-| `?` | Unsure about it | Rising, tentative | English *(?)* after a doubtful word |
+| `?` | Unsure about it | Rising, tentative | English *…, I think* after the doubtful part |
 | `%` | Joking, teasing (not meant literally) | Light, smiling | A wink |
 | `&` | Contrast: this one, not another | Stressed and slowed | *and* not the other |
 | `;` | Warm, affectionate | Soft, gentle | A soft pause |

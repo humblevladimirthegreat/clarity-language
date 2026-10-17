@@ -195,7 +195,7 @@ Braces `{ … }` group one chunk so a binder inside reaches only it. The edges a
 | `hual` *always* ([every time](../restrictors.md#always-hual)) | | `har` *sometimes* ([some time](../restrictors.md#sometimes-anytime-some-other-time)) |
 | `hor` *anytime* ([any one will do](../restrictors.md#sometimes-anytime-some-other-time)) | | `hual` *always* ([at all times](../restrictors.md#always-hual)) |
 | `hur` *some other time* ([a leftover occasion](../restrictors.md#more-occasions)) | | `huol` *anytime except when…* ([leftover times in general](../restrictors.md#more-occasions)) |
-| `herehel hal` *only when raining* ([a restrictor list](../restrictors.md#occasions-vs-a-dependent-when)) | | `thoyem barl` *if a whole sentence* ([a dependent](../restrictors.md#occasions-vs-a-dependent-when)) |
+| `herehel hal` *only when it rains* ([a restrictor list](../restrictors.md#occasions-vs-a-dependent-when)) | | `thoyem barl` *if a whole sentence* ([a dependent](../restrictors.md#occasions-vs-a-dependent-when)) |
 | `d[azawan]` *what was said* ([a cite](../spans.md#writing)) | | `donodan` *the one-word name* ([an ordinary -n word](../spans.md#exact-paraphrase-proper)) |
 | `d@[onodan alahen]` *the work* ([a proper span](../spans.md#exact-paraphrase-proper)) | | `glelen` *the name as spelling* ([a mention](../spans.md#mention)) |
 | `th(…)` *an aside* ([a comment](../spans.md#asides)) | | `{ … }` *a scope island* ([a chunk for a binder](../spans.md#scope-islands)) |

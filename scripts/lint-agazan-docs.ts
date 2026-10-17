@@ -15,7 +15,7 @@
  * The level review page comes after every stage page: it introduces no roots, and each band's
  * items link back to every stage checkpoint of that level (src/lint/level-review.ts).
  * Free English lines on top-level grammar pages are checked for the sentence-and-note shape
- * (src/lint/free-english.ts); for now these findings warn and do not fail the run.
+ * (src/lint/free-english.ts).
  * On the number pages, shorthand number examples need a
  * pronunciation row that matches the spoken form computed from the shorthand.
  * Mismatches, leftover ambiguity, and missing morph glosses fail the run.
@@ -297,7 +297,7 @@ function main(): void {
       }
       for (const finding of lintFreeEnglish(original, tables)) {
         freeEnglishCount += 1;
-        console.log(`${rel}:${lineNumberAt(original, finding.index)}  free-english ${finding.kind}  (${finding.detail})`);
+        console.error(`${rel}:${lineNumberAt(original, finding.index)}  free-english ${finding.kind}  (${finding.detail})`);
       }
       const ps = pageSections(basename(file), original);
       pages.set(ps.page, ps);
@@ -416,8 +416,8 @@ function main(): void {
     console.error(`\n${terminologyCount} terminology.md issue(s). Update the entry to match its teaching page.`);
   }
   if (freeEnglishCount > 0) {
-    console.log(
-      `\n${freeEnglishCount} free English warning(s). Write "sentence" (note) with a plain-English note (docs/meta/glosses.md#free-english-sentence-and-note); these do not fail the run yet.`,
+    console.error(
+      `\n${freeEnglishCount} free English issue(s). Write "sentence" (note) with a plain-English note (docs/meta/glosses.md#free-english-sentence-and-note).`,
     );
   }
   if (morphCount > 0) {
@@ -463,6 +463,7 @@ function main(): void {
     spanCount +
     duplicateIdCount +
     retieFormatCount +
+    freeEnglishCount +
     morphCount +
     terminologyCount +
     bankCount +

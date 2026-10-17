@@ -116,11 +116,11 @@ The second label is a `/b/` whatever it is: a common noun or a pronoun works as 
 >
 > "The guard is the police officer."
 
-> `zalahen gugol bamun.`
+> `zagavol gugol bamun.`
 >
-> z-Alahen | [g-SAME | b-speaker]
+> z-guard | [g-SAME | b-speaker]
 >
-> "Alahen is me."
+> "The guard is me."
 
 With **no** `/b/` after it, `gugol` points back to the one already mentioned: *the same one again*. Put `gugol` after the thing.
 
@@ -379,7 +379,7 @@ A label with no scope vowel says nothing about how far it reaches. Use one when 
 
 Mid-word **`th`** with a scope vowel goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root or a [role compound](#scope-role). It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zamuthal` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead.
 
-To say **when** that claim counts (*only at school*, *always except when raining*), put a [restrictor](restrictors.md) on `/w/` immediately before a scoped `/ɡ/` word, with the circumstance words on `/w/` too. The scope vowel says what kind of claim the label is; the restrictor says on which occasions it holds. A restrictor on **`/h/`** limits the whole sentence instead (*walks only when raining*), not the label.
+To say **when** that claim counts (*only at school*, *always except when it rains*), put a [restrictor](restrictors.md) on `/w/` immediately before a scoped `/ɡ/` word, with the circumstance words on `/w/` too. The scope vowel says what kind of claim the label is; the restrictor says on which occasions it holds. A restrictor on **`/h/`** limits the whole sentence instead (*walks only when it rains*), not the label.
 
 > `zalahen wanadal wal gaxedehothel.`
 >
