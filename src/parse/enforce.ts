@@ -57,6 +57,7 @@ import {
   VContEnd,
   VPlainEnd,
   W,
+  WBefore,
   WPairing,
   WritingSpanB,
   WritingSpanD,
@@ -1049,6 +1050,14 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
   const failed = (error.parserErrors[0] as { token?: IToken } | undefined)?.token;
   const tokens = markContext(input);
   const at = tokens.findIndex((token) => failed && token.payload === failed.payload);
+  // Braces pair up within one sentence (spans.md#scope-islands).
+  let depth = 0;
+  for (const token of tokens) {
+    if (tokenMatcher(token, IslandOpen)) depth += 1;
+    else if (tokenMatcher(token, IslandClose) && --depth < 0) throw new ConstructionError("islandStrayClose", token.image);
+    else if (isAny(token, [Period, QMark, Bang]) && depth > 0) throw new ConstructionError("islandUnclosed", "{");
+  }
+  if (depth > 0) throw new ConstructionError("islandUnclosed", "{");
   // Every other host takes the `/b/` or stand-in right after it, so a failure there is an amount or a factor.
   if (at > 0 && isAny(tokens[at]!, [HostedB, HostedOdo])) {
     throw new ConstructionError("slotlessHost", `${tokens[at - 1]!.image} ${tokens[at]!.image}`);
@@ -1103,6 +1112,14 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
     while (verb > 0 && !isAny(tokens[verb]!, [V, JoinV])) verb -= 1;
     if (verb === c - 1 && tokenMatcher(tokens[verb]!, JoinV)) sideBySide(c, PHRASE_SLOTS.find((s) => s.join === JoinV)!);
     throw new ConstructionError("joinlessRun", `${tokens[verb]!.image}${verb === c - 1 ? "" : " …"} ${tokens[c]!.image}`);
+  }
+  // Last, the broad shapes where the parse stopped; the checks above name the narrower rules first.
+  // A `/w/` word with nothing it can grade after it (clause.md#adjective-detail-w).
+  if (at >= 0 && tokenMatcher(tokens[at]!, WBefore.Other)) throw new ConstructionError("wNoHost", tokens[at]!.image);
+  // A `/y/` word after a body word starts the next turn, which needs a period first (speech-moves.md#turn-y).
+  const TURN_WORDS = [Force, Polar, Vocative, Interjection];
+  if (at > 0 && isAny(tokens[at]!, TURN_WORDS) && !isAny(tokens[at - 1]!, TURN_WORDS)) {
+    throw new ConstructionError("turnMidSentence", `${tokens[at - 1]!.image} ${tokens[at]!.image}`);
   }
 }
 

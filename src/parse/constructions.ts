@@ -717,6 +717,13 @@ export const REJECTIONS = {
   poleOffsetWarrant: { anchor: "knowing.md#dated-channel", summary: "a signed offset on a time pole needs a command, request, PLAN, or channel in its clause" },
   joinDetail: { anchor: "joins.md#respectively", summary: "the only /w/ before a join word is respectively (wazem), and it goes only there, on a closed (-l) or open (-m) and-list" },
   respectivePartner: { anchor: "joins.md#respectively", summary: "a respectively list pairs with another and-list of the same length in its clause" },
+  wNoHost: {
+    anchor: "clause.md#adjective-detail-w",
+    summary: "a /w/ word grades the word right after it, such as an adjective; a noun or a verb takes none: describe a noun with /ɡ/ and the action with /h/",
+  },
+  turnMidSentence: { anchor: "speech-moves.md#turn-y", summary: "a /y/ word starts a turn, before its body; end the sentence before it with a period" },
+  islandUnclosed: { anchor: "spans.md#scope-islands", summary: "a scope island opened with { closes with } in the same sentence" },
+  islandStrayClose: { anchor: "spans.md#scope-islands", summary: "} closes a scope island, so a { must come before it" },
 } satisfies Record<string, ConstructionEntry>;
 
 export type RejectionId = keyof typeof REJECTIONS;

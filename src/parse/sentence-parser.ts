@@ -1,4 +1,14 @@
-import { CstParser, EOF, tokenMatcher, type CstNode, type IToken, type ParserMethod, type TokenType } from "chevrotain";
+import {
+  CstParser,
+  EOF,
+  tokenLabel,
+  tokenMatcher,
+  type CstNode,
+  type IParserErrorMessageProvider,
+  type IToken,
+  type ParserMethod,
+  type TokenType,
+} from "chevrotain";
 import { LLStarLookaheadStrategy } from "chevrotain-allstar";
 
 import {
@@ -288,6 +298,41 @@ export function takeAmbiguityReports(): string[] {
   return ambiguityReports.splice(0);
 }
 
+/** How many expected tokens a parse error lists before it counts the rest. */
+const EXPECTED_SHOWN = 8;
+
+function quoted(token: IToken): string {
+  return token.tokenType === EOF ? "the end" : `\`${token.image}\``;
+}
+
+/** `found `x` after `y` in rule`: where the parse stopped. */
+function stoppedAt(actual: IToken, previous: IToken, ruleName: string): string {
+  const after = previous.tokenType === EOF ? "" : ` after ${quoted(previous)}`;
+  return `found ${quoted(actual)}${after} in ${ruleName}`;
+}
+
+function expectedList(types: TokenType[]): string {
+  const labels = [...new Set(types.map(tokenLabel))];
+  const extra = labels.length - EXPECTED_SHOWN;
+  return labels.slice(0, EXPECTED_SHOWN).join(", ") + (extra > 0 ? `, … (+${extra} more)` : "");
+}
+
+/**
+ * One-line parse errors. Chevrotain's default lists every expected token sequence,
+ * which for this grammar runs to thousands of lines; the named rejections in
+ * `diagnoseParseError` (enforce.ts) carry the learner-facing wording.
+ */
+const errorMessageProvider: IParserErrorMessageProvider = {
+  buildMismatchTokenMessage: ({ expected, actual, previous, ruleName }) =>
+    `${stoppedAt(actual, previous, ruleName)}; expected ${tokenLabel(expected)}`,
+  buildNotAllInputParsedMessage: ({ firstRedundant, ruleName }) =>
+    `nothing reads ${quoted(firstRedundant)} and what follows, after the end of ${ruleName}`,
+  buildNoViableAltMessage: ({ expectedPathsPerAlt, actual, previous, ruleName }) =>
+    `${stoppedAt(actual[0]!, previous, ruleName)}; expected one of: ${expectedList(expectedPathsPerAlt.flat().map((path) => path[0]!))}`,
+  buildEarlyExitMessage: ({ expectedIterationPaths, actual, previous, ruleName }) =>
+    `${stoppedAt(actual[0]!, previous, ruleName)}; expected at least one of: ${expectedList(expectedIterationPaths.map((path) => path[0]!))}`,
+};
+
 class AgazanSentenceParser extends CstParser {
   public lookahead(index: number): IToken {
     return this.LA(index);
@@ -296,6 +341,10 @@ class AgazanSentenceParser extends CstParser {
   constructor() {
     super(allTokens, {
       recoveryEnabled: false,
+      // ALL(*) decides alternatives itself and ignores this; it only sets how long the
+      // expected-token paths in error messages are, which grow combinatorially past 1.
+      maxLookahead: 1,
+      errorMessageProvider,
       lookaheadStrategy: new LLStarLookaheadStrategy({ logging: (message) => ambiguityReports.push(message) }),
     });
     this.performSelfAnalysis();

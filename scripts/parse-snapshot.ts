@@ -10,6 +10,7 @@
  *
  * Each difference is classed: a tree changed, an input now parses or now fails, a named rejection changed, or only a
  * raw parser message changed (listed with `--raw`; those name token types, so they change with any token split).
+ * Raw message changes are counted but never fail the run.
  *
  * Run: npm run parse-snapshot -- [--ref main] [--limit 40] [--drop-one] [--swap] [--raw]
  */
@@ -92,4 +93,4 @@ for (const { file, text } of spans) {
 }
 console.log(`${spans.length} ${variantKinds.length ? `variants (${variantKinds.join(", ")})` : "doc spans"}: ${changed} parse differently from ${ref} (${base.sha})`);
 for (const [what, n] of counts) console.log(`  ${n} ${what}${what === "raw message changed" && !rawToo ? " (listed with --raw)" : ""}`);
-if (changed > 0) process.exit(1);
+if (changed > (counts.get("raw message changed") ?? 0)) process.exit(1);
