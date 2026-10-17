@@ -13,7 +13,7 @@ To say *only when raining*, list the **occasions** (times or cases) when the ver
 >
 > z-Azawan | v-walk | h-rain | h-only-when
 >
-> "Azawan walks only when raining."
+> "Azawan walks only when it rains."
 
 With **no** occasion before it, the list of times is empty and closed, so the claim holds at no time: bare **`hal`** is *never*. (cue: **a** ≈ add, but nothing added, and **-l** closes the list.)
 
@@ -51,7 +51,7 @@ To say the verb's claim holds at every time, use **`hual`**. Bare **`hual`** is 
 >
 > z-Azawan | v-walk | h-rain | h-always-except
 >
-> "Azawan always walks except when raining."
+> "Azawan always walks except when it rains."
 
 ### Sometimes / anytime / some other time
 
@@ -76,7 +76,7 @@ To say *sometimes*, *anytime*, or *some other time* without naming the occasion 
 >
 > z-Ahaben | v-walk | h-anytime
 >
-> "Ahaben walks anytime."
+> "Ahaben walks anytime." (whichever time you pick)
 
 **`hur`** names an occasion **outside** the times already in play. With occasion words before it, that is a time other than the listed ones. With none, it is a time other than the ones the conversation is already about, as in the reply below. Bare **`hur`** only says some such other occasion exists (*at some other time*). It does not say the claim holds at other times in general.
 
@@ -84,7 +84,7 @@ To say *sometimes*, *anytime*, or *some other time* without naming the occasion 
 >
 > y-question | z-Ahaben | v-walk | h-rain
 >
-> "Does Ahaben walk when raining?"
+> "Does Ahaben walk when it rains?"
 
 > `yuel. zahaben vowogal hur.`
 >
@@ -118,7 +118,7 @@ To say *never sleepy* or *sometimes sleepy*, limit only the adjective, not the w
 >
 > z-Azawan | [w-rain | w-only-when | g-sleepy]
 >
-> "Azawan is sleepy only when raining."
+> "Azawan is sleepy only when it rains."
 
 > `zalahen wor gezebul.`
 >
@@ -153,7 +153,7 @@ To say *when raining, among other times*, end the list with open **`ham`** inste
 >
 > z-Azawan | v-sleep | h-rain | h-night | h-when.open
 >
-> "Azawan sleeps when raining and at night, among other times."
+> "Azawan sleeps when it rains and at night, among other times."
 
 ### Practice {#beginner-practice}
 
@@ -185,7 +185,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *Azawan swims only when raining.*
+**1.** *Azawan swims only when it rains.*
 
 ::: details Show answer
 `zazawan vezewel herehel hal.`
@@ -307,7 +307,7 @@ To limit only the adjective, the restrictor takes **`w`** right before it; **`ha
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Alahen sits when raining, among other times.* <!-- lint: error -->`zalahen vehahel herehel hal.`
+**1.** *Alahen sits when it rains, among other times.* <!-- lint: error -->`zalahen vehahel herehel hal.`
 
 ::: details Show answer
 `zalahen vehahel herehel ham.`
@@ -342,13 +342,13 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 >
 > z-Azawan | v-walk | h-rain | h-night | h-when-one
 >
-> "Azawan walks either when raining or at night." (not both)
+> "Azawan walks either when it rains or at night." (not both)
 
 > `zalahen vezebal herehel hozezol haol.`
 >
 > z-Alahen | v-sleep | h-rain | h-snow | h-when-any-of
 >
-> "Alahen sleeps when raining and/or when snowing."
+> "Alahen sleeps when it rains and/or when it snows."
 
 #### Set / invert / inclusive
 
@@ -376,11 +376,11 @@ Closed **`hel`** ranks the listed occasions: the first one listed is the preferr
 | **`hoel` / `hoem`** | equal frequency among occasions | *as often as* / *equally when A and when B* | **o** ≈ one + **e** ≈ order |
 | **`huel` / `huem`** | occasions last-first | *as a last resort when A* (one occasion); several run last-listed first (closed / open) | **u** ≈ undo + **e** ≈ order |
 
-> `zazawan vowogal hamabam hahobam hel.`
+> `zazawan vowogal habeham hanadal hel.`
 >
-> z-Azawan | v-walk | h-emergency | h-convenience | h-when-ranked
+> z-Azawan | v-walk | h-weekend | h-night | h-when-ranked
 >
-> "Azawan walks preferably in an emergency rather than for convenience."
+> "Azawan walks preferably on weekends, or else at night."
 
 One occasion before **`huel`** is the last resort: the claim counts there, but only when nothing better applies. With several, the order reverses, as with [`zuel`](joins.md#invert-u-stacks): the last one listed is the most preferred, so `herehel hanadal huel` makes night the first choice and rain the last. On `/w/` the same words limit the next adjective (`wuel` / `wuem`).
 
@@ -388,7 +388,7 @@ One occasion before **`huel`** is the last resort: the claim counts there, but o
 >
 > z-Azawan | v-walk | h-rain | h-when-last
 >
-> "Azawan walks only as a last resort when raining."
+> "When it rains, Azawan walks only as a last resort."
 
 #### Unspecified-member (`-r`)
 
@@ -414,7 +414,7 @@ Under a question, **`her`** asks which time ranks first: *When's best?* With occ
 >
 > z-Azawan | [w-rain | w-night | w-when-one | g-sleepy]
 >
-> "Azawan is sleepy either when raining or at night." (not both)
+> "Azawan is sleepy either when it rains or at night." (not both)
 
 ### Practice {#intermediate-practice}
 
@@ -450,7 +450,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan climbs either when snowing or at night.* (not both)
+**1.** *Azawan climbs either when it snows or at night.* (not both)
 
 ::: details Show answer
 `zazawan vagayal hozezol hanadal hol.`
@@ -458,7 +458,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Azawan | v-climb | h-snow | h-night | h-when-one
 :::
 
-**2.** *Alahen climbs when raining and/or when foggy.*
+**2.** *Alahen climbs when it rains and/or when it's foggy.*
 
 ::: details Show answer
 `zalahen vagayal herehel havegel haol.`
@@ -466,7 +466,7 @@ z-Azawan | v-climb | h-snow | h-night | h-when-one
 z-Alahen | v-climb | h-rain | h-fog | h-when-any-of
 :::
 
-**3.** *Ahaben walks, but not when icy.*
+**3.** *Ahaben walks, but not when it's icy.*
 
 ::: details Show answer
 `zahaben vowogal hazahol hul.`
@@ -474,7 +474,7 @@ z-Alahen | v-climb | h-rain | h-fog | h-when-any-of
 z-Ahaben | v-walk | h-ice | h-not-when
 :::
 
-**4.** *Azawan climbs preferably when snowing, rather than when raining.*
+**4.** *Azawan climbs preferably when it snows, or else when it rains.*
 
 ::: details Show answer
 `zazawan vagayal hozezol herehel hel.`
@@ -513,7 +513,7 @@ z-Ahaben | v-walk | h-fog | h-anytime-except
 ::: details Show answer
 z-Azawan | v-climb | h-snow | h-night | h-when-in-order
 
-*Azawan climbs first when snowing, then at night.*
+*Azawan climbs first when it snows, then at night.*
 :::
 
 **3.** `zalahen vowogal hazahol huel.`
@@ -521,7 +521,7 @@ z-Azawan | v-climb | h-snow | h-night | h-when-in-order
 ::: details Show answer
 z-Alahen | v-walk | h-ice | h-when-last
 
-*Alahen walks on ice only as a last resort.*
+*When it's icy, Alahen walks only as a last resort.*
 :::
 
 **4.** `zazawan wozezol wanadal wol gezebul.`
@@ -529,7 +529,7 @@ z-Alahen | v-walk | h-ice | h-when-last
 ::: details Show answer
 z-Azawan | [w-snow | w-night | w-when-one | g-sleepy]
 
-*Azawan is sleepy either when snowing or at night.* (not both)
+*Azawan is sleepy either when it snows or at night.* (not both)
 :::
 
 **5.** `zahaben vagayal herehel havegel hoel.`
@@ -550,7 +550,7 @@ z-Alahen | v-climb | h-thunderstorm | h-when-one.open
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azawan sleeps when raining and/or when snowing.* `zazawan vezebal herehel hozezol haol.` or `zazawan vezebal herehel hozezol hol.`
+**1.** *Azawan sleeps when it rains and/or when it snows.* `zazawan vezebal herehel hozezol haol.` or `zazawan vezebal herehel hozezol hol.`
 
 ::: details Show answer
 `zazawan vezebal herehel hozezol haol.`
@@ -560,7 +560,7 @@ z-Azawan | v-sleep | h-rain | h-snow | h-when-any-of
 **`haol`** lets both count; **`hol`** says one or the other, not both.
 :::
 
-**2.** *Ahaben climbs preferably when foggy.* `zahaben vagayal havegel hel.` or `zahaben vagayal havegel hal.`
+**2.** *Ahaben climbs preferably when it's foggy.* `zahaben vagayal havegel hel.` or `zahaben vagayal havegel hal.`
 
 ::: details Show answer
 `zahaben vagayal havegel hel.`

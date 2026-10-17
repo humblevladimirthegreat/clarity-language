@@ -135,8 +135,8 @@ Agazan has no word for *is*. The kind of claim comes from the pattern.
 | [In the middle of an event](../predication.md#in-progress) | noun + event root on `/ɡ/` | `zazawan gowogal.` | *Azawan is walking.* | B |
 | [Something exists](../predication.md#existence) | a lone new noun | `zodogal.` | *There is a dog.* | B |
 | | a new noun + `/ɡ/` | `zodogal gelavam.` | *There is a big dog.* | B |
-| [Same person](../predication.md#identity) | `gugol` + `/b/`, side by side | `zalahen gugol bazawan.` | *Alahen is Azawan.* | B |
-| [Same one again](../predication.md#identity) | `gugol`, no `/b/` | `zalahen dugul gugol varadal.` | *Alahen writes the same book.* | B |
+| [Same person](../predication.md#identity) | `gugol` + `/b/`, side by side | `zalahen gugol bazawan.` | *Alahen is Azawan.* (one person, two names) | B |
+| [Same one again](../predication.md#identity) | `gugol`, no `/b/` | `zalahen dugul gugol varadal.` | *Alahen is writing the same book.* (the book already mentioned) | B |
 | [Basically the same](../predication.md#same-endings) | **-m** | `zalahen gugom bazawan` | *Alahen is basically Azawan.* | I |
 | [Not the same](../predication.md#same-endings) | `gul` after the pair | `zalahen gugol bazawan gul` | *Alahen is not Azawan.* | I |
 | [The one who is Azawan](../predication.md#same-endings) | inside a noun phrase | `zobel gugol bazawan` | *the person who is Azawan* | I |
@@ -149,7 +149,7 @@ With a name or a resumed noun, the pair is a [property](../predication.md#existe
 |-----|---------|---------|-------|
 | [Not](../predication.md#classification-packaging) | `zazawan godogal gul.` | *Azawan is not a dog.* | I |
 | [Always](../predication.md#classification-packaging) | `zazawan godogal hual` | *Azawan is always a dog.* | I |
-| [Sort of](../predication.md#classification-packaging) | `zazawan wabedem godogal.` | *Azawan is somewhat of a dog.* | I |
+| [Sort of](../predication.md#classification-packaging) | `zazawan wabedem godogal.` | *Azawan is something of a dog.* | I |
 | [Be ADJ!](../predication.md#command-property) | `yel geyayem.` | *Be careful!* | I |
 | [Don't be ADJ](../predication.md#command-property) | `yul` + `/ɡ/` | | I |
 

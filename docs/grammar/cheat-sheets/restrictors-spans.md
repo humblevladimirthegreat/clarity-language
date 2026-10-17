@@ -17,17 +17,17 @@ List the **occasions** (times or cases) in the adverb slot `/h/`, then end with 
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Only when](../restrictors.md#only-when-never-hal) | `zazawan vowogal herehel hal.` | *Azawan walks only when raining.* | B |
+| [Only when](../restrictors.md#only-when-never-hal) | `zazawan vowogal herehel hal.` | *Azawan walks only when it rains.* | B |
 | [Never](../restrictors.md#only-when-never-hal): no occasion, closed | `zalahen vowogal hal.` | *Alahen never walks.* | B |
 | [Always](../restrictors.md#always-hual) | `zahaben vezehel hual.` | *Ahaben always sings.* | B |
 | [Usually](../restrictors.md#always-hual): open | `zahaben vezehel huam.` | *Ahaben usually sings.* | B |
-| [Always except](../restrictors.md#always-hual) | `zazawan vowogal herehel hual.` | *Azawan always walks except when raining.* | B |
+| [Always except](../restrictors.md#always-hual) | `zazawan vowogal herehel hual.` | *Azawan always walks except when it rains.* | B |
 | [Sometimes](../restrictors.md#sometimes-anytime-some-other-time) | `zalahen varahal har.` | *Alahen runs sometimes.* | B |
-| [Anytime](../restrictors.md#sometimes-anytime-some-other-time) | `zahaben vowogal hor.` | *Ahaben walks anytime.* | B |
+| [Anytime](../restrictors.md#sometimes-anytime-some-other-time) | `zahaben vowogal hor.` | *Ahaben walks anytime.* (whichever time you pick) | B |
 | [Some other time](../restrictors.md#sometimes-anytime-some-other-time) | `zahaben vowogal hur.` | *Ahaben walks at some other time.* | B |
-| [When and at other times too](../restrictors.md#listed-occasions-open): open | `zazawan vezebal herehel hanadal ham.` | *Azawan sleeps when raining and at night, among other times.* | B |
+| [When and at other times too](../restrictors.md#listed-occasions-open): open | `zazawan vezebal herehel hanadal ham.` | *Azawan sleeps when it rains and at night, among other times.* | B |
 | [Only the adjective](../restrictors.md#on-the-following-adjective-w) | `zazawan wal gezebul.` | *Azawan is never sleepy.* | B |
-| [Only the adjective, listed](../restrictors.md#on-the-following-adjective-w) | `zazawan werehel wal gezebul.` | *Azawan is sleepy only when raining.* | B |
+| [Only the adjective, listed](../restrictors.md#on-the-following-adjective-w) | `zazawan werehel wal gezebul.` | *Azawan is sleepy only when it rains.* | B |
 | [A habit, on an adjective](../restrictors.md#on-the-following-adjective-w) | `zalahen wual gezebul.` | *Alahen is always sleepy.* | B |
 
 Two manner adverbs in a row, with no restrictor, both describe the walk: `zazawan vowogal hadehum halahom.` *quickly and quietly* ([only when / never](../restrictors.md#only-when-never-hal)).
@@ -72,12 +72,12 @@ With several occasions before `huel`, the last listed is the first choice.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Either, not both](../restrictors.md#more-occasions) | `zazawan vowogal herehel hanadal hol.` | *Azawan walks either when raining or at night.* | I |
-| [And/or](../restrictors.md#more-occasions) | `zalahen vezebal herehel hozezol haol.` | *Alahen sleeps when raining and/or when snowing.* | I |
-| [Preferably](../restrictors.md#more-occasions) | `zazawan vowogal hamabam hahobam hel.` | *preferably in an emergency rather than for convenience* | I |
-| [Last resort](../restrictors.md#more-occasions) | `zazawan vowogal herehel huel.` | *Azawan walks only as a last resort when raining.* | I |
+| [Either, not both](../restrictors.md#more-occasions) | `zazawan vowogal herehel hanadal hol.` | *Azawan walks either when it rains or at night.* (not both) | I |
+| [And/or](../restrictors.md#more-occasions) | `zalahen vezebal herehel hozezol haol.` | *Alahen sleeps when it rains and/or when it snows.* | I |
+| [Preferably](../restrictors.md#more-occasions) | `zazawan vowogal habeham hanadal hel.` | *preferably on weekends, or else at night* | I |
+| [Last resort](../restrictors.md#more-occasions) | `zazawan vowogal herehel huel.` | *When it rains, Azawan walks only as a last resort.* | I |
 | [When's best?](../restrictors.md#more-occasions) | `yol her zahan vowogal.` | *When's best for us to walk?* | I |
-| [On an adjective, one of two](../restrictors.md#more-occasions) | `zazawan werehel wanadal wol gezebul.` | *sleepy either when raining or at night* | I |
+| [On an adjective, one of two](../restrictors.md#more-occasions) | `zazawan werehel wanadal wol gezebul.` | *sleepy either when it rains or at night* (not both) | I |
 | [A whole clause as the occasion](../restrictors.md#occasions-vs-a-dependent-when): `barl` | `zahaben vezehel thoyem barl zazawan vowogal.` | *Ahaben sings if Azawan walks.* | I |
 
 Use a restrictor when each occasion is a word; use `barl` when the occasion is a full clause. To ask *when?*, see [questions](../questions.md#when).

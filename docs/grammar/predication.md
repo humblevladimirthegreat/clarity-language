@@ -100,7 +100,7 @@ Write the special adjective `gugol` after the first name, then an extra noun (`/
 >
 > z-Alahen | [g-SAME | b-Azawan]
 >
-> "Alahen is (the same person as) Azawan."
+> "Alahen is Azawan." (one person, two names)
 
 > `zagavol gugol bazawan.`
 >
@@ -128,7 +128,7 @@ With **no** `/b/` after it, `gugol` points back to the one already mentioned: *t
 >
 > z-Alahen | [d-book | g-SAME] | v-write
 >
-> "Alahen writes the same book." (as before)
+> "Alahen is writing the same book." (the book already mentioned)
 
 **Compare with:** *Azawan is a dog* uses [kind / role](#classification) (`godogal`). Use **`SAME`** when two labels name one person. *A house like Azawan’s* is resemblance ([simile](relations.md#similative)), not one house under two names.
 
@@ -155,7 +155,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
-| *speaker* | `amun` |
+| *listener* | `ehon` |
 | *guard* | `agavol` |
 | *angry* | `anegel` |
 | *very* | `welavam` |
@@ -252,15 +252,15 @@ z-police | g-run
 ::: details Show answer
 z-Ahaben | [d-page | g-SAME] | v-see
 
-*Ahaben sees the same page.* (as before)
+*Ahaben sees the same page.* (the page already mentioned)
 :::
 
-**6.** `yol zalahen gugol bamun.`
+**6.** `yol zalahen gugol behon.`
 
 ::: details Show answer
-y-question | z-Alahen | [g-SAME | b-speaker]
+y-question | z-Alahen | [g-SAME | b-listener]
 
-*Is Alahen me?*
+*Are you Alahen?*
 :::
 
 #### Pick one {#beginner-pick-one}
@@ -320,7 +320,7 @@ You already put a kind on `/ɡ/` after the name (*Azawan is a dog*). The extra c
 >
 > z-Azawan | [w-degree | g-dog]
 >
-> "Azawan is somewhat of a dog."
+> "Azawan is something of a dog."
 
 **Related form:** habitual *always* uses [**hual**](restrictors.md).
 
@@ -423,7 +423,7 @@ On a verb, **`the`** is that act as their practice, not one outing: `zazawan val
 >
 > z-Azawan | [v-lie-th-pair | b-Alahen]
 >
-> "To Alahen, what Azawan does counts as lying."
+> "As far as Alahen is concerned, Azawan is lying."
 
 With no `/b/`, the party is unstated: *a stranger (to someone)*.
 
@@ -475,13 +475,13 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > z-Azawan | [v-lie-th-on-pair | b-Alahen]
 >
-> "This once, to Alahen, it counts as lying."
+> "As far as Alahen is concerned, Azawan lied this once."
 
 > `zamun gaxedehothael.`
 >
 > z-speaker | g-agent-x-teach-th-using
 >
-> "I am using teacher (as a tool)."
+> "I'm using the teacher role as a tool."
 
 > `zalahen gaxedehothoel.`
 >
@@ -493,13 +493,13 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > z-Azawan | v-lie-th-except-episode
 >
-> "A lying type, except this time."
+> "Azawan is a lying type, except this time."
 
 > `zazawan ganegethuol balahen.`
 >
 > z-Azawan | [g-angry-th-except-pair | b-Alahen]
 >
-> "Angry as a type, except with Alahen."
+> "Azawan is an angry type, except with Alahen."
 
 > `zamun gaxedehothuel.`
 >
@@ -580,7 +580,7 @@ z-Ahaben | g-angry-th-episode
 z-Azawan | g-agent-x-teach-th-role
 :::
 
-**6.** *To Alahen, what Ahaben does counts as lying.*
+**6.** *As far as Alahen is concerned, Ahaben is lying.*
 
 ::: details Show answer
 `zahaben valahathol balahen.`
@@ -650,7 +650,7 @@ z-Alahen | g-anxious-th-episode
 **`tha`** keeps the label to this episode; **`thu`** would make Alahen an anxious type.
 :::
 
-**2.** *Azawan is not the same as Alahen.* `zazawan gugol balahen gul.` or `zazawan gugom balahen.`
+**2.** *Azawan is not the same person as Alahen.* `zazawan gugol balahen gul.` or `zazawan gugom balahen.`
 
 ::: details Show answer
 `zazawan gugol balahen gul.`

@@ -113,7 +113,7 @@ When English says *how many* or *which place*, Agazan uses a [number word](numbe
 >
 > z-cat-x | g-three
 >
-> "Three cats."
+> "There are three cats."
 
 `grarel` is `g` + `ra` + digit `re` + `-l`. In a long number, each written comma is spoken as a [group separator](numbers.md#group-separator), **`th`** plus the marker’s vowel.
 

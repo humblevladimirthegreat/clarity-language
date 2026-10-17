@@ -123,7 +123,7 @@ z-Ahaben | v-see | d-that-clause | z-Alahen | v-sneak
 ::: details Show answer
 z-Azawan | v-tell | b-Alahen-x
 
-*Azawan tells Alahen and associates.*
+*Azawan talks to Alahen and associates.*
 
 **Rule:** [Associative group](plurality.md#associative)
 :::
@@ -143,7 +143,7 @@ z-Azawan | d-sandwich | instead | d-salad | v-cook
 ::: details Show answer
 z-Ahaben | v-sing | th-ASIDE[z-Alahen | v-scream]
 
-*Ahaben sings (Alahen screams).*
+*Ahaben sings (Alahen is screaming).*
 
 **Rule:** [Asides](spans.md#asides-th)
 :::
@@ -172,7 +172,7 @@ education
 **Rule:** [First mention, abstract](word-endings.md#abstract-m)
 :::
 
-**2.** *Azawan sees a mango or a watermelon, just one of them.* `zazawan damegol dowodal dol vahahal.` or `zazawan damegol dowodal dal vahahal.`
+**2.** *Azawan sees a mango or a watermelon: exactly one of the two.* `zazawan damegol dowodal dol vahahal.` or `zazawan damegol dowodal dal vahahal.`
 
 ::: details Show answer
 `zazawan damegol dowodal dol vahahal.`
@@ -388,7 +388,7 @@ z-Ahaben | [d-hammer | [g-material | b-wood]] | v-see
 **Rule:** [Manner scale](comparatives.md#manner-scale)
 :::
 
-**5.** *Alahen cries because there is wind.*
+**5.** *Alahen cries because of the wind.*
 
 ::: details Show answer
 `zalahen vagahul thavem bewedul.`
@@ -445,7 +445,7 @@ z-Ahaben | d-tent | v-see . z-Ahaben | v-←see | d-bucket
 ::: details Show answer
 [z-Alahen | [z-duck | [used-by | b-←Alahen]] | z-and] | v-swim
 
-*Alahen and Alahen's duck swim.*
+*Alahen and their duck swim.*
 
 **Rule:** [SHARED after the join](joins.md#shared-after-the-join)
 :::
@@ -475,14 +475,16 @@ z-Azawan | [d-knife-x | g-three] | v-see . z-Ahaben | [d-cookie-x | g-←three] 
 ::: details Show answer
 SELF-minutes . Alahen-presence
 
-*(Your name): I have a few minutes. Alahen: we can stay.* The lesser bid sets the limit, so the talk lasts a few minutes.
+*I have a few minutes.* *Alahen here. I have time; we can stay.* (the first greeting is with your own name)
+
+The lesser bid sets the limit, so the talk lasts a few minutes.
 
 **Rule:** [Conversation length](x-compounds.md#conversation-length)
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azawan sees Salad-Instead-of-Sandwich* (a café name). `zazawan dazal on dazavul vahahal.` or `zazawan dazal ol dazavul vahahal.`
+**1.** *Azawan sees Salad-Instead-of-Sandwich.* (a café name) `zazawan dazal on dazavul vahahal.` or `zazawan dazal ol dazavul vahahal.`
 
 ::: details Show answer
 `zazawan dazal on dazavul vahahal.`
@@ -554,7 +556,7 @@ z-Alahen | v-climb | [through | b-window]
 **Rule:** [Extra noun: stacked vowels](hooks.md#extra-noun-intermediate)
 :::
 
-**7.** *Ahaben could try cooking, to see whether it's good for their health* (worth a try). `zahaben vugugal thoyuther baxer.` or `zahaben vugugal thoyuthor baxer.`
+**7.** *Ahaben could try cooking, to see whether it's good for their health.* `zahaben vugugal thoyuther baxer.` or `zahaben vugugal thoyuthor baxer.`
 
 ::: details Show answer
 `zahaben vugugal thoyuther baxer.`
@@ -566,7 +568,7 @@ z-Ahaben | v-cook | [th-physical-ought-trial | b-←agent.self]
 **Rule:** [Prescription](sakes.md#sake-force)
 :::
 
-**8.** *Alahen fought, going by strong clues.* `zalahen thunel vavadal.` or `zalahen thunem vavadal.`
+**8.** *It looks like Alahen fought.* (strong clues) `zalahen thunel vavadal.` or `zalahen thunem vavadal.`
 
 ::: details Show answer
 `zalahen thunel vavadal.`
@@ -624,7 +626,6 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *umbrella* | `amebel` |
 | *tomato* | `adedol` |
 | *watermelon* | `owodal` |
-| *red* | `eredal` |
 | *quiet* | `agawal` |
 | *station* | `ezedel` |
 | *cook* | `vugugal` |
@@ -653,7 +654,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **Rule:** [English emphasis and clefts](clause.md#english-emphasis)
 :::
 
-**2.** *As of 3 May, Azawan sits in a school.*
+**2.** *As of 3 May, Azawan is sitting in a school.*
 
 ::: details Show answer
 `zazawan huhum b_#3,5 vehahel al buzugul.`
@@ -690,7 +691,7 @@ z-Ahaben | d-station | v-head-for
 ::: details Show answer
 z-Ahaben | d-CITE[umbrella]# | v-write
 
-*Ahaben wrote “umbrella…”* (cut off)
+*Ahaben wrote “umbrella…”*
 
 **Rule:** [Editorial close and close-all](spans.md#close-forms-complete-editorial-close-all)
 :::
@@ -707,7 +708,7 @@ z-Azawan | g-quiet-l-infinity
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Alahen cooks “Tomato and Watermelon”* (the familiar dish). `zalahen dadedol dowodal dan vugugal.` or `zalahen dadedol dowodal dal vugugal.`
+**1.** *Alahen cooks “Tomato and Watermelon.”* (the familiar dish) `zalahen dadedol dowodal dan vugugal.` or `zalahen dadedol dowodal dal vugugal.`
 
 ::: details Show answer
 `zalahen dadedol dowodal dan vugugal.`
@@ -743,14 +744,14 @@ Open **-m** keeps the amount finite, just very large; **`grabal`** is infinitely
 **Rule:** [Digitless exponents](numbers.md#digitless-exponents)
 :::
 
-**4.** *Azawan sleeps, and that red is from memory.* `zazawan wevom geredal vezebal.` or `zazawan geredal vezebal thevom.`
+**4.** *Azawan, whom I remember as sleepy, is sleeping.* `zazawan wevom gezebul vezebal.` or `zazawan gezebul vezebal thevom.`
 
 ::: details Show answer
-`zazawan wevom geredal vezebal.`
+`zazawan wevom gezebul vezebal.`
 
-[z-Azawan | [w-MEMORY | g-red]] | v-sleep
+[z-Azawan | [w-MEMORY | g-sleepy]] | v-sleep
 
-On `/w/` right before the adjective, MEMORY covers only *red*; **`thevom`** on `/th/` covers the whole sentence: *I remember red Azawan sleeping*.
+On `/w/` right before the adjective, MEMORY covers only *sleepy*; **`thevom`** on `/th/` covers the whole sentence: *I remember sleepy Azawan sleeping*.
 
 **Rule:** [Mood on one adjective](knowing.md#mood-on-adjective)
 :::

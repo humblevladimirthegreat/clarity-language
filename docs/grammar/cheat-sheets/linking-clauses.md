@@ -78,7 +78,7 @@ Other role letters work the same way: `barth` after a pole (*because of that*), 
 | [Confirm](../dependents.md#stand-in-roles) | `zazawan vaen zalahen vehahel.` | *Azawan confirms that Alahen sits.* | A |
 | [Decline](../dependents.md#stand-in-roles) | `zazawan vuon zazawan vehahel.` | *Azawan declines to sit.* | A |
 | [It is … that](../dependents.md#stand-in-roles) | `gamadam zarl zazawan vowogal.` | *It is hard for Azawan to walk.* | A |
-| [Nested](../dependents.md#nested-dependents) | `zazawan gezebul thavem barl zalahen vowogal thavem barl zahaben vezebal.` | *Azawan is sleepy because Alahen walks because Ahaben sleeps.* | A |
+| [Nested](../dependents.md#nested-dependents) | `zazawan gezebul thavem barl zalahen vowogal thavem barl zahaben vezebal.` | *Azawan is sleepy because Alahen walks because Ahaben sleeps.* (Ahaben's sleep is why Alahen walks) | A |
 
 ## Because, if, although {#poles}
 
@@ -119,8 +119,8 @@ Put an event or period in `/b/` right after the time pole. *Until* says this eve
 |-----|---------|---------|-------|
 | [During](../dependents.md#time-poles) | `zazawan vowogal huwem bavodel.` | *Azawan walks during the thunderstorm.* | B |
 | [After](../dependents.md#time-poles) | `zazawan vehahel hanom bavodel.` | *Azawan sits after the thunderstorm.* | B |
-| [By](../dependents.md#by-deadline) | `zazawan vowogal heveham bavodel.` | *Azawan walks by the thunderstorm.* | B |
-| [A noun in time](../dependents.md#time-pole-on-noun) | `zalahen dowogal ganom bavodel vahahal.` | *Alahen sees the walk after the thunderstorm.* | I |
+| [By](../dependents.md#by-deadline) | `zazawan vowogal heveham bavodel.` | *Azawan walks by the time of the thunderstorm.* (done no later than that) | B |
+| [A noun in time](../dependents.md#time-pole-on-noun) | `zalahen dowogal ganom bavodel vahahal.` | *Alahen sees the walk after the thunderstorm.* (*after the thunderstorm* says which walk) | I |
 
 On a noun the poles are `guwem` *during*, `gabam` *before*, `ganom` *after*, `gomam` *until*, and `geveham` *by*. *Since* is [*from* on a time](../hooks.md#since).
 

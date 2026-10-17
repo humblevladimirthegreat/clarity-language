@@ -17,7 +17,7 @@ A `/y/` word starts a new turn and goes before the body of the clause. A `/y/` w
 |-----|---------|---------|-------|
 | [Call someone](../speech-moves.md#vocative): `/y/` + name (**-n**) | `yalahen.` | *Alahen!* | B |
 | [Call a kind](../speech-moves.md#vocative): `/y/` + kind with **-n** | `yagavon` | *Guard!* (come here) | B |
-| [Reaction](../speech-moves.md#interjections): `/y/` + root with **-l** / **-m** | `yezul.` / `yezum.` | *Surprise!* / *Amazing!* | B |
+| [Reaction](../speech-moves.md#interjections): `/y/` + root with **-l** / **-m** | `yezul.` / `yezum.` | *What a surprise!* / *Amazing!* | B |
 | [Reaction, not a call](../speech-moves.md#interjections): **-l** vs **-n** | `yagavol` | *Guard!* (an alarm) | B |
 | [Call a group](../plurality.md#vocatives-y) | `yehonx` | *hey, you all* | I |
 
@@ -172,7 +172,7 @@ After your sentence, write `yol` and a polar word as a turn of its own. It asks 
 
 | This | vs | That |
 |------|----|------|
-| `yalahen` *Alahen!* ([a call, **-n**](../speech-moves.md#vocative)) | | `zazawan vowogal` *Azawan walks* ([a subject](../speech-moves.md#vocative)) |
+| `yalahen` *Alahen!* ([a call, **-n**](../speech-moves.md#vocative)) | | `zalahen vowogal` *Alahen walks* ([a subject](../speech-moves.md#vocative)) |
 | `yagavon` *Guard!* ([call the guard](../speech-moves.md#interjections)) | | `yagavol` *Guard!* ([an alarm](../speech-moves.md#interjections)) |
 | `yol` *question* ([asks](../questions.md#question)) | | `?` *unsure voice* ([only sounds unsure](../speech-moves.md#tone-marks)) |
 | `yul` *don't* ([prohibition](../speech-moves.md#speech-act-beginner)) | | `yuel` *no, false* ([answers a claim](../questions.md#polar-stance)) |

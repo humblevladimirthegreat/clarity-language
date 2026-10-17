@@ -1,6 +1,6 @@
 # Translation prompt from the parser
 
-Status: phase 1, steps 1 (policy edits), 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review) in progress: waves 1, 2 and 4 done, wave 4 awaiting the editor's review of its diff, wave 3 not started ([as built](#phase-1-step-5-as-built)). Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
+Status: phase 1, steps 1 (policy edits), 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review) in progress: waves 1 to 4 done (wave 4 ran before wave 3), wave 3 awaiting the editor's review of its diff, wave 5 not started ([as built](#phase-1-step-5-as-built)). Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
 
 ## Problem
 
@@ -209,8 +209,8 @@ Waves. Pages heavy in referent, scope, or turn judgments run at `xhigh`; the res
 |------|-------------------------|--------|---------------------------|
 | 1 | **hooks**, **joins**, **sakes**, **questions**, comparatives, say-people-places | done | 68 (was 101) |
 | 2 | **spans**, **pronouns**, relations, roles, intention, say-reasons | done | 47 (was 68) |
-| 3 | **speech-moves**, dependents, numbers, predication, restrictors, review | | |
-| 4 | **plurality**, causation, x-compounds, word-endings + phonology, numbers-applied + english, join-across-roles | done, awaiting the editor's review | 12 (was 47; all on wave 3 pages and say-reasons) |
+| 3 | **speech-moves**, dependents, numbers, predication, restrictors, review | done, awaiting the editor's review | 1 (was 12; say-reasons) |
+| 4 | **plurality**, causation, x-compounds, word-endings + phonology, numbers-applied + english, join-across-roles | done | 12 (was 47; all on wave 3 pages and say-reasons) |
 | 5 | say-tense + say-questions, say-amounts + numeric-derivation | | |
 
 Wave 1 decisions:
@@ -229,7 +229,7 @@ Wave 2 decisions:
   - intention.md WANT (*Alahen wants Azawan to walk*) states someone else's want with no holder. knowing.md settles PLAN (it needs no channel), not WANT, which is closer to a feeling.
 - **For `sake-motive-holder.md`:** say-reasons.md sake words that read as someone else's motive: the blocks at lines 116 and 262, and the table rows *motivation* (252), *biased* / *bias* (285–286), and *deserves* (557, 562, no `/b/` for whose stake). Folded; *deserves* stays as the speaker's view of what is fair.
 
-Wave 4 (run before wave 3; wave 3's pages are still unreviewed):
+Wave 4 (run before wave 3):
 - **Applied in the wave check:** cheat-sheet rows that quote changed examples (numbers.md 4, why-allowed.md 12, roles-comparing.md 1); `core` cell for `azewe` (*group*, now in the join-across-roles.md Fix it). Cheat-sheet English cells take a note like any free English line.
 - **Strange examples:** join-across-roles.md *cooked popcorn and sat around the fire* is *ate it* (the shared object needs a verb that takes it); the Fix it's *finish line including Ahaben* is *a group including Ahaben*.
 - **For the editor to confirm:**
@@ -378,3 +378,13 @@ Twelve sentences and one judge (the author of the prompt) are a signal, not a re
 
 - Should table **Gloss** cells in grammar tables follow the note convention too, or stay short free English? This proposal leaves them alone.
 - Should the published site offer the prompt (a "copy translation prompt" button next to the parse view in [`browser.ts`](../../src/parse/browser.ts)), or is this a CLI tool only?
+
+Wave 3:
+- **Applied in the wave check:** cheat-sheet rows that quote changed examples (word-shape-clause.md 3, restrictors-spans.md 10, numbers.md 9 including a note moved outside the italics, linking-clauses.md 3, talking.md 1). phonology.md *Three cats.* is *There are three cats.*, as on numbers.md. speech-moves.md § vocative's **Compare with** said *saying Alahen walks* over `zazawan vowogal`; the code span is now `zalahen vowogal`, with the talking.md row that quotes it. The restrictors.md ranked rewrite uses *weekends* (`habeham`) over the subagent's *dawn*, the abstract sense of daybreak.
+- **Strange examples:** predication.md *Is Alahen me?* is *Are you Alahen?* (`behon`; the Beginner bank row `amun` is now `ehon`); restrictors.md *preferably in an emergency rather than for convenience* is *preferably on weekends, or else at night* (an **-m** word stays, or the guard loses `word.ending.m`); dependents.md *so hastily that Alahen sits* is *… runs*, and the prompt *Alahen runs so hastily that Azawan sees the luggage* is *Alahen sneaks so hastily that Azawan sees them*; numbers.md *almost blue dog* is *almost angry*; speech-moves.md *blue Alahen!* is *sleepy Alahen!*; review.md *that red is from memory* is *Azawan, whom I remember as sleepy, is sleeping* (the Advanced bank drops *red*).
+- **For the editor to confirm:**
+  - restrictors.md *when raining* is *when it rains* in examples and checkpoints; prose and answer explanations still say *only when raining*. Ranked `hel` is *preferably A, or else B*, not *rather than* (both occasions count) and not *prefers to* (that would be Azawan's preference).
+  - speech-moves.md tone marks follow glosses.md's model (*Azawan saw a dog, I think.* (unsure about just the dog)), though knowing.md treats an *I think* on reasons as a channel. *Surprise!* is *What a surprise!*; teasing `%` is *Good old Alahen*. The tone-mark table's Cue cell and talking.md line 51 still describe English *(?)*.
+  - review.md *It looks like Alahen fought.* (strong clues) keeps the past tense with no time in the Agazan, as with wave 4's past-tense question.
+  - predication.md *Alahen is me.* (`zalahen gugol bamun.`) has a house person stand for the speaker; *The guard is me.* (`zagavol`) keeps the constructions.
+- **Resolved (editor):** a number on `/z/` is a new noun, so `zrarel gubuhel.` is *there is a blue three*; the number as a value is a mention. The example was strange regardless and is now `zrarel vezebal.` *Three are sleeping.* (the section intro says *number word on its own*, not *number itself*). The existence ordinals (*There is a first pie*) are fine.

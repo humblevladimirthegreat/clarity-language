@@ -4,14 +4,14 @@ This document contains a record of features that have been posted to the r/conla
 
 Use this document for styling examples when producing more posts, and seeing what has already been posted. New posts should be added at the top under this section.
 
-### Command vs Prohibition Redundancy
+### Command vs Prohibition Redundancy via Word-Order
 
 Sentences in Agazan start with a speech act word: yal for statements (usually omitted), yol for questions, yel for commands, and yul for prohibitions. Being only a single vowel apart can lead to mishearing though, so each act also has its own usual word order for redundancy:
 
 * statement - verb last
 * question - verb second
 * command - verb first
-* prohibition - verb last, like a statement
+* prohibition - verb last (like a statement)
 
 Prohibition uses the same word order as statement because that is less dangerous to confuse than sharing the same word order as a command. In the third and fourth examples below, note that even if you mishear the act word, the word order means that you can't confuse "Don't eat the mushroom" with "Eat the mushroom." At worst you hear "(Someone) eats the mushroom" a description rather than an instruction.
 
@@ -47,7 +47,7 @@ Prohibition uses the same word order as statement because that is less dangerous
 >
 > "Don't eat the mushroom."
 
-When you want to be extra sure that *don't* isn't missed, you can also say `yul` twice for emphasis.
+When you want to be extra sure that *don't* isn't missed, you can also say yul twice for emphasis.
 
 > `yul yul damahul vagadel.`
 >
@@ -55,7 +55,7 @@ When you want to be extra sure that *don't* isn't missed, you can also say `yul`
 >
 > y-prohibition | y-prohibition | d-mushroom | v-eat
 >
-> "Don't eat the mushroom. I mean it."
+> "Don't eat the mushroom. Seriously, don't."
 
 Full docs: https://clarityconlang.com/grammar/speech-moves.html#act-word-order
 

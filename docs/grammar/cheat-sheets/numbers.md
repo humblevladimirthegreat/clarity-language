@@ -23,10 +23,10 @@ A number word is one word: role letter, marker, one syllable per digit, ending. 
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Count](../numbers.md#counts) | `zagadulx grarel.` | *Three cats.* | B |
+| [Count](../numbers.md#counts) | `zagadulx grarel.` | *There are three cats.* | B |
 | [Count, many digits](../numbers.md#counts): one word | `graduzol` | *twenty* | B |
-| [Ordinal](../numbers.md#ordinals): `re` for `ra` | `zugul gredul.` | *The second book.* | B |
-| [More than one](../numbers.md#more-than-one) | `zagadulx gral.` | *Cats, more than one.* | B |
+| [Ordinal](../numbers.md#ordinals): `re` for `ra` | `zugul gredul.` | *There is a second book.* | B |
+| [More than one](../numbers.md#more-than-one) | `zagadulx gral.` | *There is more than one cat.* | B |
 
 ### The marker {#marker}
 
@@ -50,7 +50,7 @@ A sign applies once to the whole word; a label never takes one. In other slots t
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Number as subject](../numbers.md#parts-of-speech-on-numbers) | `zrarel gubuhel.` | *Three is blue.* | I |
+| [Number as subject](../numbers.md#parts-of-speech-on-numbers) | `zrarel vezebal.` | *Three are sleeping.* | I |
 
 ### The ending {#ending}
 
@@ -117,7 +117,7 @@ Drop every digit and the word says what kind of number, not its value. With **-r
 | [Some amount](../numbers.md#digitless) | `zazawan drar vahahal.` | *Azawan sees some number of them.* | I |
 | [How many?](../numbers.md#digitless) | `yol drar zazawan vahahal.` | *How many does Azawan see?* | I |
 | [How many cats?](../numbers.md#how-many) | `yol dagadulx grar zazawan vahahal.` | *How many cats does Azawan see?* | I |
-| [Which place?](../numbers.md#how-many) | `yol ol brer zalahen vehahel.` | *Which place does Alahen sit in?* | I |
+| [Which place?](../numbers.md#how-many) | `yol ol brer zalahen vehahel.` | *Which place does Alahen sit in?* (first, second, and so on) | I |
 | [How big?](../numbers.md#how-big): blank on `/w/` | `yol wrar gelavam zodogal.` | *How big is the dog?* | I |
 | [How fast?](../numbers.md#how-big) | `yol wrar hadehum zodogal varahal.` | *How fast does the dog run?* | I |
 
@@ -144,7 +144,7 @@ The next bands, `e4` and `e5`, are tens and hundreds of thousands. Soft `grabare
 | [Exponent](../numbers.md#exponents) | `g+27e12` | *27 × 10¹²* | I |
 | [Decimal](../numbers.md#exponents) | `g+5.2` | *5.2* | I |
 | [Several groups](../numbers.md#group-separator) | `g+5e3,860` | *5860* | I |
-| [Seat in a row](../numbers.md#group-separator) | `zezedal g#2,3.` | *Seat 2 in row 3.* | I |
+| [Seat in a row](../numbers.md#group-separator) | `zezedal g#2,3.` | *There is seat 2 in row 3.* | I |
 
 Each comma is spoken as the separator, which matches the marker.
 
@@ -182,7 +182,7 @@ The role letter picks the use; the marker still says amount, rank, or code. Only
 | [Point 2](../numbers.md#number-as-discourse-marker-by-marker) | `xredul` | *point 2:* | I |
 | [Corroborating 2](../numbers.md#number-as-discourse-marker-by-marker) | `xradul` | *corroborating 2:* | I |
 | [Independent 2](../numbers.md#number-as-discourse-marker-by-marker) | `xrudul` | *independent 2:* | I |
-| [Likelihood](../numbers.md#number-as-stance-by-marker): the digits are already a percent | `zalahen vowogal th+70.` | *Alahen is probably walking (I'd put it at 70%).* | I |
+| [Likelihood](../numbers.md#number-as-stance-by-marker): the digits are already a percent | `zalahen vowogal th+70.` | *Alahen is probably walking.* (I'd put it at 70%) | I |
 | [Place on a scale](../numbers.md#number-as-degree): `w#N` from 2; [see comparatives](../comparatives.md#place-on-a-scale) | `zazawan zel wredul gelavam.` | *Azawan is the second biggest.* | I |
 
 `th+` / `th-` is *likely* / *unlikely* with no figure; `th_N` is *per source N*; `th#N` is *N-th hand* from 2. A factor goes on `/h/`, never `/w/`. Likelihood **-m** hedges (`th~+70`), **-n** names a level (`th@+95`), **-r** repeats it (`th=+70`).
@@ -341,10 +341,10 @@ A digitless exponent (**`e`** speech `ba`, **`e-`** speech `bu`, no digits after
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Infinitely many](../numbers.md#digitless-exponents) | `zagadulx grabal.` | *Cats, infinitely many.* | A |
+| [Infinitely many](../numbers.md#digitless-exponents) | `zagadulx grabal.` | *There are infinitely many cats.* | A |
 | [Azawan barely sits](../numbers.md#special-number-as-verb-and-adverb) | `zazawan h+e- vehahel.` | *Azawan barely sits.* | A |
 | [Azawan almost sits](../numbers.md#special-number-as-verb-and-adverb) | `zazawan h-e- vehahel.` | *Azawan almost sits.* | A |
-| [Almost blue](../numbers.md#special-number-as-verb-and-adverb) | `zodogal wrubul gubuhel vowogal.` | *An almost blue dog walks.* | A |
+| [Almost angry](../numbers.md#special-number-as-verb-and-adverb) | `zodogal wrubul ganegel vowogal.` | *An almost angry dog walks.* | A |
 | [Finally:](../numbers.md#special-number-as-discourse) | `xrebal` | *Finally:* | A |
 | [Starting with:](../numbers.md#special-number-as-discourse) | `xrebul` | *Starting with:* | A |
 
@@ -392,7 +392,7 @@ Marker `ue` (written `#-`, spoken `rue`) counts from the last place within the s
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Penultimate](../numbers.md#from-the-end) | `zugul gruedul.` | *The penultimate book.* | A |
+| [Penultimate](../numbers.md#from-the-end) | `zugul gruedul.` | *There is a second-to-last book.* | A |
 | [Penultimate time](../numbers.md#from-the-end) | `h#-2` | *the penultimate time* | A |
 
 Two marker vowels in one word: speak `u` first.

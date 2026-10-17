@@ -20,7 +20,7 @@ To call someone into the turn, put `/y/` before their name, which ends in **-n**
 >
 > "Alahen!" (calling Alahen)
 
-A `/ɡ/` word right after the call describes the person you call, as it would after any noun. So a full name calls with its family name (`yohun galuden.` *Ohun Aluden!*, [multipart names](word-endings.md#multipart-names)), and `yalahen gubuhel.` is *blue Alahen!*.
+A `/ɡ/` word right after the call describes the person you call, as it would after any noun. So a full name calls with its family name (`yohun galuden.` *Ohun Aluden!*, [multipart names](word-endings.md#multipart-names)), and `yalahen gezebul.` is *sleepy Alahen!*.
 
 > `yohun galuden.`
 >
@@ -30,7 +30,7 @@ A `/ɡ/` word right after the call describes the person you call, as it would af
 
 To call someone by what they are (*Waiter!*, *Doctor!*), use the kind as a title: it still ends in **-n**, so `yagavon` calls the guard. An occupation title is a [role compound](roles.md#role-compounds) with **-n**.
 
-**Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Alahen uses `/y/`; saying Alahen walks uses `/z/` (`zazawan vowogal`).
+**Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Alahen uses `/y/`; saying Alahen walks uses `/z/` (`zalahen vowogal`).
 
 ### Interjections: reactions
 <a id="interjections"></a>
@@ -42,7 +42,7 @@ An **interjection** is a short reaction or exclamation that stands on its own. W
 >
 > y-surprise
 >
-> "Surprise!"
+> "What a surprise!"
 
 > `yezum.`
 >
@@ -58,7 +58,7 @@ A `/ɡ/` word right after a reaction describes it, as one after a call describes
 >
 > [y-surprise | g-big]
 >
-> "Big surprise!"
+> "What a big surprise!"
 
 **Compare with:** to react and then say that something is big, end the reaction with a period and start a new sentence.
 
@@ -241,7 +241,7 @@ y-command | v-run
 ::: details Show answer
 y-surprise
 
-*Surprise!*
+*What a surprise!*
 :::
 
 **5.** `yalahen yul varahal.`
@@ -431,7 +431,7 @@ Write the mark **before** what it colors, so you see the tone before you say the
 >
 > z-Azawan | v-see | ?d-dog
 >
-> "Azawan saw a dog (?)." (unsure about just *dog*).
+> "Azawan saw a dog, I think." (unsure about just the dog)
 
 > `! zazawan vowogal.`
 >
@@ -443,7 +443,7 @@ Write the mark **before** what it colors, so you see the tone before you say the
 >
 > z-Azawan | v-see | &d-dog
 >
-> "Azawan saw a *dog*." (a dog, not something else).
+> "Azawan saw a *dog*." (a dog, not something else)
 
 The other marks work the same way:
 
@@ -463,13 +463,13 @@ The other marks work the same way:
 >
 > %;z-Alahen | v-walk
 >
-> "Dear Alahen walks." (teasing, fondly)
+> "Good old Alahen walks." (teasing, but fond)
 
 > `zazawan vahahal ??dodogal.`
 >
 > z-Azawan | v-see | ??d-dog
 >
-> "Azawan saw a (??) dog." (very unsure it was a dog).
+> "Azawan saw a dog, I think, but I'm really not sure." (unsure about just the dog)
 
 > `%% zazawan vowogal.`
 >
@@ -481,7 +481,7 @@ The other marks work the same way:
 >
 > z-Azawan | v-see | &&d-dog
 >
-> "Azawan saw a *dog*." (a dog, and definitely not something else).
+> "Azawan saw a *dog*." (a dog, and definitely not something else)
 
 > `;;zalahen vahahal dodogal.`
 >
@@ -507,7 +507,7 @@ A mark on a span colors all of it:
 >
 > z-Azawan | ?d-CITE[Azawan] | v-tell
 >
-> "Azawan said “Azawan” (?)." (unsure about just the quoted word).
+> "Azawan said “Azawan,” I think." (unsure about just the quoted word)
 
 **Compare with:** **`yol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling; [emotion compose](sakes.md#emotion-compose) states it as a claim, and the two can share a sentence.
 

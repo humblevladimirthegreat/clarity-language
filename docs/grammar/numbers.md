@@ -28,7 +28,7 @@ So *three* is **g** + **ra** + **re** + **l**: **`grarel`**.
 > `zagadulx grarel.`
 > z-cat-x | g-three
 >
-> "Three cats."
+> "There are three cats."
 
 > `zazawan dugulx grarel vahahal.`
 > z-Azawan | [d-book-x | g-three] | v-see
@@ -44,7 +44,7 @@ To say **which place** a thing has in a series (*the first*, *the second*, …),
 > `zugul gredul.`
 > z-book | g-2nd
 >
-> "The second book."
+> "There is a second book."
 
 > `zalahen dugul grerel varadal.`
 > z-Alahen | [d-book | g-3rd] | v-write
@@ -67,7 +67,7 @@ This is a different tool from [**-x**](plurality.md) on the noun: **-x** says yo
 > `zagadulx gral.`
 > z-cat-x | g-more-than-one
 >
-> "Cats, more than one."
+> "There is more than one cat."
 
 **Compare with:** English *some cats* (a set in this situation, no count) uses the noun plus [**-x**](plurality.md). Use **`gral`** when you mean the amount is more than one.
 
@@ -103,7 +103,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *Three croissants.*
+**1.** *There are three croissants.*
 
 ::: details Show answer
 `zogazalx grarel.`
@@ -127,7 +127,7 @@ z-Azawan | [d-pie-x | g-two] | v-see
 z-Alahen | [d-doughnut | g-2nd] | v-find
 :::
 
-**4.** *Ahaben smells baguettes, more than one.*
+**4.** *Ahaben smells more than one baguette.*
 
 ::: details Show answer
 `zahaben dubogelx gral vonozal.`
@@ -135,7 +135,7 @@ z-Alahen | [d-doughnut | g-2nd] | v-find
 z-Ahaben | [d-baguette-x | g-more-than-one] | v-smell
 :::
 
-**5.** *Twelve ants.*
+**5.** *There are twelve ants.*
 
 ::: details Show answer
 `zanadolx grawodul.`
@@ -158,7 +158,7 @@ z-Azawan | [d-pie | g-10th.spelled] | v-cook
 ::: details Show answer
 z-baguette-x | g-four
 
-*Four baguettes.*
+*There are four baguettes.*
 :::
 
 **2.** `zalahen debevul grerel vonozal.`
@@ -166,7 +166,7 @@ z-baguette-x | g-four
 ::: details Show answer
 z-Alahen | [d-bread | g-3rd] | v-smell
 
-*Alahen smells the third bread.*
+*Alahen smells the third loaf of bread.*
 :::
 
 **3.** `zanadolx gral dugugol vahahal.`
@@ -174,7 +174,7 @@ z-Alahen | [d-bread | g-3rd] | v-smell
 ::: details Show answer
 [z-ant-x | g-more-than-one] | d-cookie | v-see
 
-*Ants, more than one, see a cookie.*
+*More than one ant sees a cookie.*
 :::
 
 **4.** `zahaben dogazalx graduzol vamagal.`
@@ -190,7 +190,7 @@ z-Ahaben | [d-croissant-x | g-20.spelled] | v-find
 ::: details Show answer
 z-pie | g-1st
 
-*The first pie.*
+*There is a first pie.*
 :::
 
 #### Pick one {#beginner-pick-one}
@@ -205,7 +205,7 @@ z-Azawan | [d-baguette | g-2nd] | v-see
 Rank marker **`re`** gives the place in a series; **`ra`** would count two.
 :::
 
-**2.** *Three doughnuts.* `zododelx grarel.` or `zododelx gral.`
+**2.** *There are three doughnuts.* `zododelx grarel.` or `zododelx gral.`
 
 ::: details Show answer
 `zododelx grarel.`
@@ -250,14 +250,14 @@ Speech always uses the fully spelled form. Writing also has a [shorthand](#writi
 
 ### Parts of speech on numbers {#parts-of-speech-on-numbers}
 
-Beginner put the number after a noun (*three cats*). You can also put the **number itself** in other slots: as the subject, as the object, or as the extra noun under a host.
+Beginner put the number after a noun (*three cats*). You can also put the **number word on its own** in other slots: as the subject, as the object, or as the extra noun under a host.
 
 Change only the first letter. The marker and digits stay the same, and on these four role letters the number still means a plain amount, rank, or code.
 
-> `zrarel gubuhel.`
-> z-three | g-blue
+> `zrarel vezebal.`
+> z-three | v-sleep
 >
-> "Three is blue."
+> "Three are sleeping."
 
 <!-- cheat-sheet: numbers -->
 | Prefix | Use | English |
@@ -378,7 +378,7 @@ To ask for a **number**, write a [number word](numbers.md) with no digits and th
 > `yol ol brer zalahen vehahel.`
 > y-question | [at | b-which-place] | z-Alahen | v-sit
 >
-> "Which place does Alahen sit in?"
+> "Which place does Alahen sit in?" (first, second, and so on)
 
 Answer with the number as a [citation](word-endings.md#citation-forms) or a full sentence.
 
@@ -492,7 +492,7 @@ Say a separator exactly where a comma is written, and nowhere else: `g+860` has 
 >
 > z-seat | g-#-2,3
 >
-> "Seat 2 in row 3."
+> "There is seat 2 in row 3."
 
 ### Writing (preferred shorthand) {#writing-preferred-shorthand}
 
@@ -719,7 +719,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Use
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *About three seats.*
+**1.** *There are about three seats.*
 
 ::: details Show answer
 `zezedalx grarem.`
@@ -751,7 +751,7 @@ x-2nd | z-Azawan | v-sit
 z-Alahen | d-score | v-three
 :::
 
-**5.** *Thousands see the trophy.* (the thousands band, no exact count)
+**5.** *Thousands see the trophy.* (somewhere from 1000 to 9999, no exact count)
 
 ::: details Show answer
 `zrabarel dodovel vahahal.`
@@ -759,7 +759,7 @@ z-Alahen | d-score | v-three
 z-+-e3 | d-trophy | v-see
 :::
 
-**6.** *Azawan will probably punch.* (I'd put it at 70%)
+**6.** *Azawan is probably throwing a punch.* (I'd put it at 70%)
 
 ::: details Show answer
 `zazawan vabahel th+70.`
@@ -849,7 +849,7 @@ A label is a digit string, marker **`ro`**; **`ra`** would count five.
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *the fifth seat* <!-- lint: error -->`zezedal graval.`
+**1.** *There is a fifth seat.* <!-- lint: error -->`zezedal graval.`
 
 ::: details Show answer
 `zezedal greval.`
@@ -878,7 +878,7 @@ To say *infinitely many*, *last place*, *a gazillion*, or *absolutely zero*, wri
 > `zagadulx grabal.`
 > z-cat-x | g-plus-infinity
 >
-> "Cats, infinitely many."
+> "There are infinitely many cats."
 
 **Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e` / `g+e-` in tables, spelled `grabal` / `grabul` in running text. Bare / assert **`e0`** writes power **`0`**: `grabazol`, `g+3e0` (not digitless).
 
@@ -947,10 +947,10 @@ On `/v/` and `/h/`, these special values (∞, last, start, a tiny amount) becom
 
 **On a quality:** the same pair sits on `/w/` before an adjective or adverb. **`wrabul`** = *barely*; **`wrubul`** = *almost*.
 
-> `zodogal wrubul gubuhel vowogal.`
-> [z-dog | [w---e- | g-blue]] | v-walk
+> `zodogal wrubul ganegel vowogal.`
+> [z-dog | [w---e- | g-angry]] | v-walk
 >
-> "An almost blue dog walks."
+> "An almost angry dog walks."
 
 **Stance:** a whole claim that holds all but a hair is stance, not manner, so it sits on `/th/`: **`thrubul`** = *virtually* / *practically*; **`thrubum`** = *more or less*. **`hrubul`** says the event fell short; **`thrubul`** says your claim is a hair short of exact. See [number as stance](#special-number-as-stance).
 
@@ -1157,7 +1157,7 @@ To count **from the last place** (*penultimate*, *starting with the last one*), 
 > `zugul gruedul.`
 > z-book | g-2nd-from-end
 >
-> "The penultimate book."
+> "There is a second-to-last book."
 
 <!-- cheat-sheet: numbers -->
 | Form | Reading |
@@ -1242,7 +1242,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 #### English → Agazan {#advanced-english-to-agazan}
 
-**1.** *Stars, infinitely many.*
+**1.** *There are infinitely many stars.*
 
 ::: details Show answer
 `zozalx grabal.`
@@ -1250,7 +1250,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 z-star-x | g-plus-infinity
 :::
 
-**2.** *One gazillion telescopes.*
+**2.** *There are one gazillion telescopes.*
 
 ::: details Show answer
 `zedazolx grawobal.`
@@ -1281,7 +1281,7 @@ z-Alahen | h---e- | d-star | v-see
 ::: details Show answer
 z-star-x | g-plus-infinity.about
 
-*Stars, a huge but finite number.*
+*There is a huge but finite number of stars.*
 :::
 
 **2.** `zalahen dozalx grarel gruawol vahahal.`
@@ -1305,7 +1305,7 @@ z-Ahaben | [d-seat | g-negative-label-2] | v-see
 ::: details Show answer
 z-cloud-x | g-+-0e
 
-*Clouds: absolutely none.*
+*There are absolutely no clouds.*
 :::
 
 #### Pick one {#advanced-pick-one}

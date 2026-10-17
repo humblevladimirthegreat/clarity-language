@@ -126,7 +126,7 @@ The time poles take a noun the same way. Put the event or period in `/b/` right 
 >
 > z-Azawan | v-walk | [h-by | b-thunderstorm]
 >
-> "Azawan walks by the thunderstorm." (no later than it)
+> "Azawan walks by the time of the thunderstorm." (done no later than that)
 
 <a id="as-soon-as"></a>
 
@@ -255,7 +255,7 @@ z-Azawan | v-sit | [h-although | b-guard]
 z-guard | v-see | d-whether-clause | z-Alahen | v-sneak
 :::
 
-**5.** *Azawan tells the guard who screams.*
+**5.** *Azawan talks to the guard who screams.*
 
 ::: details Show answer
 `zagavol vezugel. zazawan vezebel bagavol.`
@@ -457,11 +457,11 @@ English *so … that* ties a result to how much of something there is (*so tired
 >
 > "Azawan is so tired that they sleep."
 
-> `zazawan welavam hadehum vowogal hodum barl zalahen vehahel.`
+> `zazawan welavam hadehum vowogal hodum barl zalahen varahal.`
 >
-> z-Azawan | [w-very | h-haste] | v-walk | [h-so-result | b-that-clause] | z-Alahen | v-sit
+> z-Azawan | [w-very | h-haste] | v-walk | [h-so-result | b-that-clause] | z-Alahen | v-run
 >
-> "Azawan walks so hastily that Alahen sits."
+> "Azawan walks so hastily that Alahen runs."
 
 **Compare with:** *although* / *while* attach a dependent after **`barl`** (`hezom barl`, `huwem barl`; see [dependent clauses](#dependent-clauses)). *Despite Alahen* is the same pole with a noun in `/b/` (`hezom balahen`). *So that Alahen sits* is **`hogom barl`**. Discourse **`xezom`** / **`xagagam`** / **`xodum`** glue a finished sentence to the next one.
 
@@ -566,7 +566,7 @@ The vowel still says what kind of content it is, and the word stands for the mos
 >
 > z-Azawan | v-tell | b-Alahen | d-lest-clause | v-sit . z-Alahen | v-wish | d-that-same-prohibition
 >
-> "Azawan tells Alahen not to sit. Alahen wishes not to, too."
+> "Azawan tells Alahen not to sit. Alahen wishes not to." (not to sit)
 
 The content can be anything a sentence says: a verbless sentence, a denied event, or several sentences chained with `/x/`. A [resume](pronouns.md#resume-r) **-r** picks up one word; **`-rth`** picks up what was said.
 
@@ -580,7 +580,7 @@ To place a **thing** in time rather than the event (*the walk after the thunders
 >
 > z-Alahen | [d-walk | [g-after | b-thunderstorm]] | v-see
 >
-> "Alahen sees the walk after the thunderstorm."
+> "Alahen sees the walk after the thunderstorm." (*after the thunderstorm* says which walk)
 
 Ordinary `zabal` is still *a backpack*.
 
@@ -651,15 +651,15 @@ z-Ahaben | v-tell | b-Alahen | d-to-clause | v-sit
 z-Azawan | v-tell | b-Ahaben | d-lest-clause | v-sneak
 :::
 
-**4.** *Alahen runs so hastily that Azawan sees the luggage.*
+**4.** *Alahen sneaks so hastily that Azawan sees them.*
 
 ::: details Show answer
-`zalahen welavam hadehum varahal hodum barl zazawan dalagel vahahal.`
+`zalahen welavam hadehum vezevul hodum barl zazawan dalahen vahahal.`
 
-z-Alahen | [w-very | h-haste] | v-run | [h-so-result | b-that-clause] | z-Azawan | d-luggage | v-see
+z-Alahen | [w-very | h-haste] | v-sneak | [h-so-result | b-that-clause] | z-Azawan | d-Alahen | v-see
 :::
 
-**5.** *Alahen sees the luggage before the departure.*
+**5.** *Alahen sees the luggage before the departure.* (*before the departure* says which luggage)
 
 ::: details Show answer
 `zalahen dalagel gabam bedabal vahahal.`
@@ -682,7 +682,7 @@ z-Ahaben | v-sit | [th-if | b-lest-clause] | z-train | v-departure
 ::: details Show answer
 z-Alahen | v-tell . x-meanwhile | z-Ahaben | d-coat | v-find
 
-*Alahen tells. Meanwhile, Ahaben finds a coat.*
+*Alahen talks. Meanwhile, Ahaben finds a coat.*
 :::
 
 **2.** `zahaben vezugel. zalahen vezebel darth.`
@@ -737,7 +737,7 @@ z-Azawan | v-tell | b-Alahen | d-lest-clause | v-run
 *Not to* is avoidance, vowel **`u`**; **`derl`** tells Alahen *to* run.
 :::
 
-**2.** *Ahaben runs. Even so, Alahen sits.* (the contrast stands whatever) `zahaben varahal. xezol zalahen vehahel.` or `zahaben varahal. xezom zalahen vehahel.`
+**2.** *Ahaben runs. Even so, Alahen sits.* (the contrast holds no matter what) `zahaben varahal. xezol zalahen vehahel.` or `zahaben varahal. xezom zalahen vehahel.`
 
 ::: details Show answer
 `zahaben varahal. xezol zalahen vehahel.`
@@ -812,4 +812,4 @@ A clause has at most one **stand-in**, at its end. But the dependent clause is a
 >
 > [z-Azawan | g-sleepy] | [th-because | b-that-clause] | z-Alahen | v-walk | [th-because | b-that-clause] | z-Ahaben | v-sleep
 >
-> "Azawan is sleepy because Alahen walks because Ahaben sleeps."
+> "Azawan is sleepy because Alahen walks because Ahaben sleeps." (Ahaben's sleep is why Alahen walks)
