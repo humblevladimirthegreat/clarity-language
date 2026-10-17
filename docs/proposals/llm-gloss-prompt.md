@@ -189,7 +189,7 @@ The work splits into what sets the rules, done once in the main session, and the
 - For each example on the list: is the marking the section teaches stated, in the sentence or the note? Add a required note when it is not, move an inside-quote note out, keep aside, scope-island, and tag-letter parentheses, and move teaching commentary into a prose line under the block. Fix each lint finding as its [category](#finding-categories) says.
 - Edit only free English lines, and add prose lines directly under a block, except for a [strange example](#strange-examples): there, rewrite the example's Agazan, morph line, citing prose, and word bank rows as that section says. Never edit headings, tables, or any other page; list cheat-sheet rows and lexicon `core` cells a rewrite needs.
 - If an example's English seems to contradict the grammar on its page, do not fix either. List it as a gap for the editor.
-- Leave the English of sake words (`th…tha/thu/the/tho…`, and sake words on `/ɡ/` and `/w/`) as it is, apart from lint fixes: whose stake they name is open in `sake-motive-holder.md`. List any that read as someone else's motive.
+- Leave the English of sake words (`th…tha/thu/the/tho…`, and sake words on `/ɡ/` and `/w/`) as it is, apart from lint fixes. Whose stake they name is settled on sakes.md (§ whose stake, § motive): a sake word with no `/b/` is the speaker's stake, and someone else's motive takes a holder. List any that still read as someone else's motive.
 - Bare *tell* (`v-tell` with nothing told) is *talks* / *speaks*, with the Agazan unchanged. Swap the root only when the example needs a different act.
 - On `say-*.md` pages, review the `## Practice` items by reading the page: the extractor reads only `### Practice` checkpoints, so they are not on the list.
 - Run `npm run lint:agazan -- docs/grammar/<page>.md` on its own page. Check a rewrite with `node scripts/parse.mjs --constructions '<sentence>'`; it must keep the old sentence's construction IDs. Run `npm run regloss-docs` as a dry run only (`--write` rewrites every page) and copy any `+` line for your page by hand. Do not run `npm run build`, `npm test`, `cheat-sheet-blocks --write`, `retie-docs`, `convert-word`, or any git command that changes state: parallel builds share output.
@@ -216,7 +216,7 @@ Waves. Pages heavy in referent, scope, or turn judgments run at `xhigh`; the res
 Wave 1 decisions:
 - **Applied:** fill-ask `…or` on one item is *Any X?*, as the [arity table](../grammar/questions.md#fill-ask-arity) says. The parser's label went from `which` to `any`. Bare `v-tell` is *talks* / *speaks*, now a rule in [glosses.md § sentence first](../meta/glosses.md#sentence-first).
 - **Guard exception:** the joins.md respectively example swaps SAME for *like* (`gumum`), so the guard reports one construction change there. The editor approved it.
-- **Open:** whose motive and whose stake on sakes.md, in `sake-motive-holder.md`. Waves leave sake words' English as it is until that lands.
+- **Settled:** whose motive and whose stake, on sakes.md § whose stake and § motive (folded from the former `sake-motive-holder.md`). Plain *I* is `amun`; `SELF` is only for greetings, bids and self-introduction.
 
 Wave 2 decisions:
 - **Applied in the wave check:** bare `v-tell` is *speak*, not *speak up* (not a sense alias, and it adds *voicing an objection*). A note that repeats *Taking 22 July as now* (*a placeholder*) is dropped, as on relations.md. RESIDUE is *had left and was still gone*, as on knowing.md. Generic `oben` is *one* / *you* (people in general).
@@ -227,7 +227,7 @@ Wave 2 decisions:
   - roles.md: `doexuvudel` is *a destination* (from *go*), but **-l** takes the concrete sense, so the parser glosses `goal-x-footprints`.
   - say-reasons.md *As of 22 July, Alahen had decided to walk*: relations.md § as-of says `/h/` *as-of* moves only the event, so the decision is still now.
   - intention.md WANT (*Alahen wants Azawan to walk*) states someone else's want with no holder. knowing.md settles PLAN (it needs no channel), not WANT, which is closer to a feeling.
-- **For `sake-motive-holder.md`:** say-reasons.md sake words that read as someone else's motive: the blocks at lines 116 and 262, and the table rows *motivation* (252), *biased* / *bias* (285–286), and *deserves* (557, 562, no `/b/` for whose stake).
+- **For `sake-motive-holder.md`:** say-reasons.md sake words that read as someone else's motive: the blocks at lines 116 and 262, and the table rows *motivation* (252), *biased* / *bias* (285–286), and *deserves* (557, 562, no `/b/` for whose stake). Folded; *deserves* stays as the speaker's view of what is fair.
 
 ## Phase 2: the prompt
 
