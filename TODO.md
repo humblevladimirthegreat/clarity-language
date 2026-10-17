@@ -9,8 +9,7 @@ use [skip-cd] for amplify to not deploy.
 -claritish editor
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -consider removing forward links (including prose)
--add "Copy Translation Prompt" button to Inspect page.
--named frames in the gloss: a titled **-n** name built from a published root prints its Agazan spelling (`h-Eveden`, `h-Amaban`, `v-Azehen`), so a gloss reader can't recover the English the docs give (*according to Temperature*, *in Emergency*, *performs Intrusion*; word-endings.md Intermediate practice). House-cast names are built the same way and stay untranslated. Options: gloss **-n** on `v` / `g` / `h` by the root's sense (`h-Temperature`), or keep the spelling in the doc English. Found by the phase 3 eval of the LLM gloss prompt.
+-add "Copy Translation Prompt" button to Inspect page. It should note the model should be as smart as Opus 5.5
 
 save for near end of limit resets:
 -final exam

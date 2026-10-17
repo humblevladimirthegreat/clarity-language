@@ -261,7 +261,12 @@ export const WORD_READING_CONSTRUCTIONS: Record<Exclude<LexReading, OverlayOnlyR
   ordinary: { anchor: "phonology.md#word-edges", summary: "ordinary content reading" },
   sake: { anchor: "sakes.md#met", summary: "sake reading" },
   ability: { anchor: "intention.md#ability", summary: "ability reading" },
-  greeting: { anchor: "x-compounds.md#conversation-length", summary: "conversation-length bid" },
+  greeting: {
+    anchor: "x-compounds.md#conversation-length",
+    summary: "conversation-length bid",
+    reader:
+      "A name joined to `-presence`, `-minutes`, `-ask`, or `-passing` is a hello (`SELF-…`) or a call (`y-X-…`) that also says how long the speaker can talk: `-presence` = I have time, we can stay; `-minutes` = I have a few minutes; `-ask` = I have one question or comment; `-passing` = just saying hi, not starting a talk. At a goodbye: leaving soon, about to leave, leaving now. It is the speaker's own time, a statement, never a question to the other person.",
+  },
   restrictor: { anchor: "restrictors.md#beginner", summary: "restrictor" },
   join: { anchor: "joins.md#and-lists-a", summary: "join" },
   standIn: { anchor: "dependents.md#dependent-clauses", summary: "stand-in" },

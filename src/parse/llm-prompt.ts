@@ -27,7 +27,8 @@ export const GLOSS_READER = {
   layout: [
     "Words are separated by ` | `. Sentences are separated by ` . `.",
     "`[ … ]` groups the words that fill one slot. Nesting shows what modifies what: `[z-dog | g-blue]` is a blue dog, `[in | b-house]` is in the house.",
-    "A join word comes last in its bracket and says how the items combine: `[d-tea | d-coffee | d-or-exactly-one]` = tea or coffee, exactly one of them. With one item before it, a closed join says that item is the whole list: `[z-X | z-and]` = just X, nothing more (`.open` is what leaves a list open).",
+    "A join word comes last in its bracket and says how the items combine: `[d-tea | d-coffee | d-or-exactly-one]` = tea or coffee, exactly one of them.",
+    "Count the items before the join word. With exactly one, a closed join says that one item is the whole list: `[z-X | z-and]` = just X, no one else; `[d-cup | d-and]` = just a cup, nothing more. This is not associates: `z-X-x` (trailing `-x`) is X and their people. Only `.open` leaves a list open.",
     "`LABEL[ … ]` is a package: `CITE[…]` quoted wording, `ASIDE[…]` a side remark, `SCOPE[…]` a group that a word scopes over, `NAME[…]` a titled phrase. `OPAQUE[\"…\"]` is a foreign word or raw writing: keep it as written.",
   ],
   /** One line per written prefix (clause.md#role-letters), plus prefix-less hooks under `""`. */

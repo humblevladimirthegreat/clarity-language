@@ -198,7 +198,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 | *past* / *in the past* | FORMER **`henom`**, or a channel with a `-` offset |
 | *future* / *in the future* | a channel + **`bral`** |
 | *once* (*one time*) | `h+1` before the verb |
-| ever (*Have you walked at all?*) | **`hoham`** + **`har`** under **`yol`**: `yol har zehon hoham vowogal` |
+| ever (*Have you walked at all?*) | **`hoham`** + **`hor`** (*anytime*) under **`yol`**: `yol hor zehon hoham vowogal` |
 | *during* (*during the storm*) | **`huwem`** + `/b/`: `huwem bavodel` |
 | *immediately* / *immediate* / *right away* / *at once* (*about to*) | a channel + **`brabul`** (*a hair after now*) |
 | *initially* / *at first* / *firstly* | **`hogodam`** (*first*, as a manner adverb) |
@@ -213,9 +213,9 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 >
 > "It looks like Azawan is walking today."
 
-> `yol har zehon hoham vowogal.`
+> `yol hor zehon hoham vowogal.`
 >
-> y-question | h-when | z-listener | h-already | v-walk
+> y-question | h-anytime | z-listener | h-already | v-walk
 >
 > "Have you ever walked?"
 
