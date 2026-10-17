@@ -250,7 +250,7 @@ Put the amount on the unit's noun as `/ɡ/`. Each unit is the abstract **-m** of
 | Agazan | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`bezezem g+2`](../numbers-applied.md#measure-phrases) | extra noun (`/b/`) | *two meters* | I |
-| [`zazadem g+3`, `dabayum g+5`](../numbers-applied.md#measure-phrases) | subject / object / … | *three seconds*, *five grams* | I |
+| [`zazadem g+3`; `dabayum g+5`](../numbers-applied.md#measure-phrases) | subject / object / … | *three seconds*; *five grams* | I |
 | [`gezezem g+2`](../numbers-applied.md#measure-phrases) after a noun | modifier on a noun | rare | I |
 
 | Job | Example | English | Stage |

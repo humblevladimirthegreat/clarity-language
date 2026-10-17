@@ -910,8 +910,8 @@ When one list sits inside another (*(tea or coffee) and water*), write the inner
 | Pattern | Agazan | English |
 |---------|--------|---------|
 | flat | `zedehel zagavel zowodel zol` | *tea or coffee or water* |
-| nested | `zedehel zagavel zol zowodel zal` | *(tea or coffee) and water* |
-| nested adjectives | `geredal gamazam gul gelavam gal` | *(neither red nor small) and big* |
+| nested | `zedehel zagavel zol zowodel zal` | *either tea or coffee, and water* |
+| nested adjectives | `geredal gamazam gul gelavam gal` | *big, and neither red nor small* |
 
 ### Practice {#intermediate-practice}
 
@@ -1088,7 +1088,7 @@ A join takes every same-role item before it. When English groups a small list in
 |--------|---------|
 | `zazawan { zowodel zal } zam` | *Azawan and (just water)* |
 | `zazawan { zal } zam` | *Azawan and nothing* |
-| `{ zowodel zal }` | *just water* alone in the slot |
+| `{ zowodel zal }` | *just water* (alone in the slot) |
 
 > `zazawan { zowodel zal } zam.`
 >

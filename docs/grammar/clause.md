@@ -651,8 +651,8 @@ Translating the other way, an Agazan sentence in an unusual order (a line fitted
 |--------|-----|---------|
 | `zazawan dagadul vahahal.` | plain | *Azawan sees a cat.* / *It's a cat that Azawan sees.* (answering *what?*) |
 | `&zazawan dagadul vahahal.` | subject contrasted | *It was Azawan who saw the cat.* |
-| `zazawan &dagadul vahahal.` | object contrasted | *It's a cat (not something else) that Azawan sees.* |
-| `zazawan dagadul &vahahal.` | act contrasted | *Azawan sees the cat* (rather than doing something else to it). |
+| `zazawan &dagadul vahahal.` | object contrasted | *It's a cat that Azawan sees.* (not something else) |
+| `zazawan dagadul &vahahal.` | act contrasted | *Azawan sees the cat.* (rather than doing something else to it) |
 
 **Compare with:** what the whole conversation is about is the [topic](pronouns.md#topic), set only by an `/x/` word.
 

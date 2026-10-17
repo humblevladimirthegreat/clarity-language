@@ -637,10 +637,10 @@ Names come first. When you know who is talking or listening, use their name as t
 <!-- cheat-sheet: joins-hooks -->
 | Agazan | Landmark | English |
 |--------|----------|---------|
-| `om bamun` | near the speaker | *here*, *this* |
-| `om behon` | near the listener | *there (by you)*, *that* |
-| `om bahan` | near both of you | *here (with us)* |
-| `um bahan` | away from both of you | *over there*, *yonder* |
+| `om bamun` | near the speaker | *here* / *this* |
+| `om behon` | near the listener | *there* / *that* (by you) |
+| `om bahan` | near both of you | *here* (with us) |
+| `um bahan` | away from both of you | *over there* / *yonder* |
 
 Use `ol` in place of `om` for the exact spot (`ol bamun` *right where I am*).
 

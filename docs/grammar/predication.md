@@ -350,9 +350,9 @@ Beginner already used **`gugol`** (*is the same as*). Its other ending finishes 
 <!-- cheat-sheet: word-shape-clause -->
 | Agazan | English |
 |---------|---------|
-| `zalahen gugol bazawan` | *Alahen is (the same as) Azawan* |
+| `zalahen gugol bazawan` | *Alahen is Azawan* (the same person) |
 | `zalahen gugom bazawan` | *Alahen is basically Azawan* |
-| `zalahen gugol bazawan gul` | *Alahen is not (identical to) Azawan* |
+| `zalahen gugol bazawan gul` | *Alahen is not Azawan* (not the same person) |
 | `zobel gugol bazawan` | inside a noun phrase: *the person who is Azawan* |
 
 **Compare with:** ordinary *coin* as a noun is `zugol`. Identity is **`gugol`** / **`gugom`** plus a following `/b/` label, kept next to each other.

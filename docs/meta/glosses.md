@@ -24,7 +24,7 @@ A gloss should answer: *what is each Agazan piece doing in the clause — in Eng
 |-------|--------|------|
 | **Morph gloss** | Dialogue turns, clause / phrase examples, teaching lines | Word-aligned pieces joined with spaced ` | `; one roman line (below). **Omit** when parser output is trivially redundant with in-block loose English ([when to skip](#example-block); `lint:agazan` enforces). |
 | **Free English** | Same places, under the morph gloss; one line | Natural sentence in `"double quotes"`, then at most one plain-English note in parentheses after the closing quote for what Agazan marks and the sentence drops ([sentence and note](#free-english-sentence-and-note)). Checkpoint answers and prompts use italics in place of the quotes |
-| **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English in **English** (often *italic* in table cells); optional parenthetical notes. **Cue** is not a gloss ([cues](grammar-docs.md#cues-columns)). On a [cheat sheet](grammar-docs.md#cheat-sheets), an italic cell beside an **Example** follows the [sentence and note](#free-english-sentence-and-note) shape. |
+| **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English in **English** (often *italic* in table cells); a cell beside an Agazan phrase or sentence follows the [sentence and note](#free-english-sentence-and-note) shape ([grammar-table gloss](#grammar-table-gloss-free-english-only)). **Cue** is not a gloss ([cues](grammar-docs.md#cues-columns)). |
 | **Lexicon fields** | `lexicon-published.csv` / overlays | Concrete / abstract / mnemonic / [role English](#role-english) / definition — **inputs** to morph glosses and lookup, not utterance glosses. Verb senses use the [uninflected lemma](#english-lemma). Concrete English in a **Cue** cell is still not the morph gloss. Morph does **not** take its english slot from role English. |
 
 Grammar tables may keep a column named **Gloss** for free English. When a table needs morphology, use a **Morph** column or a separate morph line in the same format as dialogues.
@@ -537,7 +537,9 @@ No note: *as I remember* already says whose memory it is. Do not render the over
 
 ### Grammar-table gloss (free English only)
 
-From comparative inventories — no morph line required (loose claim; parenthetical note OK when the row teaches packaging):
+From comparative inventories — no morph line required (loose claim; parenthetical note OK when the row teaches packaging).
+
+An italic English cell beside an Agazan phrase or sentence (an **Agazan**, **Example**, or **Form** column) is that phrase's free English, on grammar pages and [cheat sheets](grammar-docs.md#cheat-sheets) alike: `*sentence*` plus at most one (note) after it, alternatives with ` / `, and parentheses inside only as [above](#inside-parentheses). Several examples in one cell are split by ` · ` or `; `, each with its own note. A single word's senses (`*here*, *this*`), a template, a cell not in italics (a description), and an English column left of the Agazan (a lookup keyed by English job) are not free English. `lint:agazan` checks the shape and the parentheses.
 
 | Example | Gloss |
 |---------|-------|

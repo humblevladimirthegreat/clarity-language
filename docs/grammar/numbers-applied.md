@@ -130,7 +130,7 @@ The amount hosts nothing, so no `/b/` comes right after it. Put any other extra 
 | Agazan | Use | English |
 |--------|-----|---------|
 | `bezezem g+2` | extra noun (`/b/`) | *two meters* |
-| `zazadem g+3`, `dabayum g+5` | subject / object / … | *three seconds*, *five grams* |
+| `zazadem g+3`; `dabayum g+5` | subject / object / … | *three seconds*; *five grams* |
 | `gezezem g+2` after a noun | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
 
 The amount takes the usual number endings, so **-m** makes it fuzzy (`gradum` ≈ *about two*). The **unit** takes ordinary word endings.

@@ -403,7 +403,7 @@ After nouns joined into a list with **`a`** ([joins](joins.md)), one plain `/ɡ/
 <!-- cheat-sheet: people-pointing -->
 | Agazan | English |
 |--------|---------|
-| `zavabal zulol zal garagam` | *the file-box and the tool are (each) heavy* |
+| `zavabal zulol zal garagam` | *the file-box and the tool are each heavy* |
 | `zavabal zulol zal garagamx` | *the file-box and the tool are heavy together* (collective) |
 | `zavahal gagegem` | *the family is vast* (group-level size) |
 | `zavabalx garagam` | *the file-boxes are heavy* (members / plain) |

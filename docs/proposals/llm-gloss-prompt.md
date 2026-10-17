@@ -105,7 +105,7 @@ The lint cannot tell whether a required note is missing. That is the review pass
 
 ### Implementation
 
-Scope: every free English line in an example block under `docs/grammar/` (about 1,100, including blocks with no morph line), and every italic English answer or prompt in a `### Practice` checkpoint and on [review.md](../grammar/review.md). Grammar-table Gloss cells are out of scope ([open questions](#open-questions)).
+Scope: every free English line in an example block under `docs/grammar/` (about 1,100, including blocks with no morph line), and every italic English answer or prompt in a `### Practice` checkpoint and on [review.md](../grammar/review.md). Grammar-table English cells beside an Agazan phrase or sentence were added later ([grammar-table gloss](../meta/glosses.md#grammar-table-gloss-free-english-only)): shape and inside parentheses only, not the note bans.
 
 <a id="strange-examples"></a>
 **Strange examples.** The review pass reads every example on a page, so it also fixes the ones that make no sense to a plain reader, Agazan included. Fixing the free English is the occasion; the example's meaning is fair game while the page is open. A strange example teaches the form badly: the learner stops at *a blue Azawan* and misses the channel on the adjective.
@@ -124,7 +124,7 @@ Rules for the rewrite:
 - **Published roots only**, picked from the page's setting and word bank where possible. Never coin a root; if nothing fits, list it.
 - **Update everything that cites the example:** prose that quotes its words (*blue* → *angry*), a checkpoint's word bank (one row per root across New words and Review, so check the lint), the answer's explanation, Pick one / What changes alternatives, and [cheat-sheet](../grammar/cheat-sheets/) rows that quote it (`lint:cheat-sheets` fails until they match). A word new to a checkpoint may need its lexicon `core` cell set, as the core-vocabulary lint says. Cheat sheets and the lexicon are shared files, so a subagent lists those follow-ups in its report and the main session applies them in step 6.
 - **Morph lines come from the parser.** Write the new morph, then `npm run regloss-docs` must report 0 rewrites on the page.
-- **Leave alone:** playful but coherent examples (*A dog sleeps like Azawan*), the running cast and setting, cheat-sheet blocks between `<!-- generated -->` markers (rerun `npm run cheat-sheet-blocks -- --write` instead), and grammar tables (out of scope, as for free English).
+- **Leave alone:** playful but coherent examples (*A dog sleeps like Azawan*), the running cast and setting, cheat-sheet blocks between `<!-- generated -->` markers (rerun `npm run cheat-sheet-blocks -- --write` instead), and grammar tables.
 - **Report** each rewrite in one line (old English → new English) so the editor can check the meaning.
 
 **Claritish is out of scope.** Its examples are English with Agazan words dropped in, not translations of an Agazan sentence, so the convention does not apply. Its one quoted free English line (`claritish/learn-agazan.md`, the closing plug) is left as it is.
@@ -230,7 +230,7 @@ Wave 2 decisions:
 - **For `sake-motive-holder.md`:** say-reasons.md sake words that read as someone else's motive: the blocks at lines 116 and 262, and the table rows *motivation* (252), *biased* / *bias* (285–286), and *deserves* (557, 562, no `/b/` for whose stake). Folded; *deserves* stays as the speaker's view of what is fair.
 
 Wave 4 (run before wave 3):
-- **Applied in the wave check:** cheat-sheet rows that quote changed examples (numbers.md 4, why-allowed.md 12, roles-comparing.md 1); `core` cell for `azewe` (*group*, now in the join-across-roles.md Fix it). Cheat-sheet English cells take a note like any free English line; `lint:agazan` now checks the shape and inside parentheses of every italic **English** cell in a cheat-sheet table with an **Example** column (not the note bans), split on ` · ` / `; `. The first run fixed 12 cells on 8 sheets.
+- **Applied in the wave check:** cheat-sheet rows that quote changed examples (numbers.md 4, why-allowed.md 12, roles-comparing.md 1); `core` cell for `azewe` (*group*, now in the join-across-roles.md Fix it). Cheat-sheet English cells take a note like any free English line. Later, `lint:agazan` took the shape and inside-parentheses checks (not the note bans) to every italic table English cell beside an Agazan phrase or sentence, on grammar pages and cheat sheets ([grammar-table gloss](../meta/glosses.md#grammar-table-gloss-free-english-only)). The first runs fixed 13 cheat-sheet cells and 13 grammar-page cells.
 - **Strange examples:** join-across-roles.md *cooked popcorn and sat around the fire* is *ate it* (the shared object needs a verb that takes it); the Fix it's *finish line including Ahaben* is *a group including Ahaben*.
 - **For the editor to confirm:**
   - Past tense where the Agazan fixes the time: *walked in the ’90s* / *in 1962* (numbers-applied.md), MEMORY and rank evidence lines (join-across-roles.md).
@@ -376,7 +376,6 @@ Twelve sentences and one judge (the author of the prompt) are a signal, not a re
 
 ## Open questions
 
-- Should table **Gloss** cells in grammar tables follow the note convention too, or stay short free English? This proposal leaves them alone.
 - Should the published site offer the prompt (a "copy translation prompt" button next to the parse view in [`browser.ts`](../../src/parse/browser.ts)), or is this a CLI tool only?
 
 Wave 3:
