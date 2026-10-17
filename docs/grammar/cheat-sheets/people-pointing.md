@@ -105,7 +105,7 @@ Role letter + the root + **-n** ([special pronouns](../pronouns.md#special-prono
 | `unan` | a nonspecific individual | `zunan` | *someone* | `unal` *neutral* | B |
 | [`oben`](../pronouns.md#generic-pronoun) | any person, as a rule | `zoben` | *one*, generic *you* | `obel` *person* | B |
 
-**Notes:** As an object, *we* is `dahan`. `ehon` is always the person actually listening. `oben` takes no **-x**. Your own name works as *I*: `SELFn`.
+**Notes:** As an object, *we* is `dahan`. `ehon` is always the person actually listening. `oben` takes no **-x**.
 
 ### Groups with **-x** {#groups}
 

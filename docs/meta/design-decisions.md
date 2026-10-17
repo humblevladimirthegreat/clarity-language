@@ -110,6 +110,10 @@ One of a name is **-ln** (span `^@`). Rejected:
 - **-nx:** it is *name and associates*.
 - **`dar` + `/ɡ/`:** under `yol` the join **-r** becomes a fill-ask blank.
 
+### First person
+
+Plain *I* is `amun`, not your own name. A name for *I* left *I* and *you* unmatched (an example cannot know the listener's name), mixed name and pronoun in one sentence (`zSELFn … em bamun`), and modeled a habit that sounds childish or grandiose to most learners. The name stays where it is the form: a greeting, a conversation-length bid, introducing yourself, and a mention that must keep meaning you outside this conversation.
+
 ### Multipart names
 
 A full name is the given name plus a family name on `/ɡ/` + **-n** ([word-endings.md](../grammar/word-endings.md#multipart-names)). Rejected:

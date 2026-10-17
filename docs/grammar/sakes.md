@@ -436,7 +436,7 @@ The locus plus the motion ending is the **emotion tail**. It goes on met **`tha`
 | `zezebel wamazam wulothuruom gobum` | *a little uneasy about the dialogue, and I can't say why* (competence at stake, temporary; slightly; unplaced; flowing) |
 | `zezebel wulothumuer gezehom` | *the dialogue is frustratingly slow* (unmet competence on the slowness; pushing against it; surging) |
 
-Raw feeling (contacting a sensation without judgment) may go unlabeled. To name a feeling without explaining it, its lexicon root works as an ordinary [property](predication.md) word: `zSELFn ganegel` (*I am angry*). Use the full compose when an emotion word would have done judgment work.
+Raw feeling (contacting a sensation without judgment) may go unlabeled. To name a feeling without explaining it, its lexicon root works as an ordinary [property](predication.md) word: `zamun ganegel` (*I am angry*). Use the full compose when an emotion word would have done judgment work.
 
 **Compare with:** *could be* uses [MAY](knowing.md#may) (`thovum`). *Because of* is a causal claim with the because pole. The stimulus says what the feeling is **about**; a direction `/b/` says what it is **aimed at**; the because pole says what **caused** it.
 
@@ -737,7 +737,7 @@ The negatives use the root **`ede`** (⛔ *no entry*) with the same endings.
 | **`thedem`** | a person forbids it | *may not* / *I won't let you* | **-m** ≈ mouth: someone said no |
 | **`theder`** | frowned on: no one forbade it, but it is not welcome | *people won't like it* | **-r** ≈ read the room: nobody said no, but it's not welcome |
 
-To **ask** for permission, put the clause under [ask](questions.md#question): `yom zSELFn vehahel thegom.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
+To **ask** for permission, put the clause under [ask](questions.md#question): `yom zamun vehahel thegom.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
 
 **Compare with:** [prescription](#sake-force) **`the`** says the act *ought* to serve a sake; permission only says the act is *allowed*. [Ability](intention.md#incapability) says someone *can* do it; permission says whether they *may*.
 
@@ -802,13 +802,13 @@ The ending says **how binding the yes is**, with the same cues as [permission](#
 >
 > "Alahen lets themself sleep."
 
-**-r** is allowed but visibly weaker. Choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*. On yourself, **-r** is half-hearted: `zSELFn vehahel huxegor.` is *I suppose I'm OK with sitting*. **-l** on yourself is a vow: `zSELFn vehahel huxegol.` is *I've committed myself to sitting*.
+**-r** is allowed but visibly weaker. Choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*. On yourself, **-r** is half-hearted: `zamun vehahel huxegor.` is *I suppose I'm OK with sitting*. **-l** on yourself is a vow: `zamun vehahel huxegol.` is *I've committed myself to sitting*.
 
-**Promise:** a vow said to someone is a promise. The listener is the one you promise by default: `zSELFn vowogal huxegol.`, said to someone, is *I promise (you) to walk*. To name a different person as the one you promise, add the *for* hook ([extra noun](hooks.md#extra-noun)).
+**Promise:** a vow said to someone is a promise. The listener is the one you promise by default: `zamun vowogal huxegol.`, said to someone, is *I promise (you) to walk*. To name a different person as the one you promise, add the *for* hook ([extra noun](hooks.md#extra-noun)).
 
-> `zSELFn vowogal huxegol el bahaben.`
+> `zamun vowogal huxegol el bahaben.`
 >
-> z-SELF | v-walk | h-CONSENT-contract | [for | b-Ahaben]
+> z-speaker | v-walk | h-CONSENT-contract | [for | b-Ahaben]
 >
 > "I promise Ahaben I'll walk."
 
@@ -828,7 +828,7 @@ The negatives **`huxedel`** / **`huxedem`** / **`huxeder`** use the same endings
 
 To check in, ask: `yom zazawan vezebel huxegom.` (*Are you still OK with this?*).
 
-**Compare with:** permission **`thegom`** can come from anyone with the standing to grant it: `zazawan vezebel thegom balahen.` means Alahen allowed it, which is not the same as the listener agreeing. `zSELFn vehahel thegom.` is *I'm allowed to sit* (someone let me); `zSELFn vehahel huxegom.` is *I let myself sit*.
+**Compare with:** permission **`thegom`** can come from anyone with the standing to grant it: `zazawan vezebel thegom balahen.` means Alahen allowed it, which is not the same as the listener agreeing. `zamun vehahel thegom.` is *I'm allowed to sit* (someone let me); `zamun vehahel huxegom.` is *I let myself sit*.
 
 ### Contrary to a stance (`uem`) {#contrary-to-stance}
 

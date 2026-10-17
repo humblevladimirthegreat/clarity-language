@@ -477,9 +477,9 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > "This once, to Alahen, it counts as lying."
 
-> `zSELFn gaxedehothael.`
+> `zamun gaxedehothael.`
 >
-> z-SELF | g-agent-x-teach-th-using
+> z-speaker | g-agent-x-teach-th-using
 >
 > "I am using teacher (as a tool)."
 
@@ -501,9 +501,9 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > "Angry as a type, except with Alahen."
 
-> `zSELFn gaxedehothuel.`
+> `zamun gaxedehothuel.`
 >
-> z-SELF | g-agent-x-teach-th-outside-role
+> z-speaker | g-agent-x-teach-th-outside-role
 >
 > "I am not speaking as a teacher."
 

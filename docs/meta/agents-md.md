@@ -8,7 +8,7 @@ A summary in `AGENTS.md` is a second copy of what the grammar docs say, and noth
 
 ## Include
 
-1. **Invariants that apply everywhere and rarely change**: the language name, present-the-current-language-only, orthography basics, the `SELF` slot.
+1. **Invariants that apply everywhere and rarely change**: the language name, present-the-current-language-only, orthography basics, the `SELF` slot (its spelling and what it is for).
 2. **A routing table**: each source file and one line of *topic nouns* saying what it owns. It tells an agent which file to open, not what the file says.
 3. **Workflow and tooling**: which commands to run and when, what not to run, the retie procedure, build exceptions, the commit tag.
 4. **Judgment rules that are not grammar**, such as how to weigh dev effort, or that the parser is not design authority.

@@ -78,7 +78,7 @@ If you cannot certify a token, drop the item. Do not guess from English. Do not 
 
 - Any **morph** whose [first-taught](#leak-index) checkpoint is **later** than this one
 - Same-slot **sibling** Introduces ([slots](#slots))
-- Dummy *I* / *you* (`zamun` / `zehon`) unless this page is teaching those specials. First person *I* as the learner is fine through the **`SELF`** name slot from word-endings Beginner on ([first person](grammar-docs.md#house-cast))
+- *I* / *you* (`zamun` / `zehon`) before pronouns.md Beginner. From there on they are fine. Before it, *I* only as a greeting with the **`SELF`** name slot ([first person](grammar-docs.md#house-cast))
 - Foreign `PoS<…>ENDING` unless this stage is teaching loans / spans
 - Intermediate / Advanced speech-act twins (`yam` / `yom` / `yem` / `yum`), **`gl-`**, sentence linkers, nested **`barl`**, unless recycle includes **core Intermediate**
 
@@ -410,7 +410,7 @@ For each spoiler token family:
 1. **Morph** tokens: **Introduces**, **Recycle**, or this stage’s examples. Content tokens: a row in **New words** or **Review** (legacy: **Roots used here**). Else **fail**. A bank row no item uses → **fail**. Missing from the [example root bank](#root-bank) is **not** a fail for checkpoint content.
 2. Check [leak index](#leak-index) for **morphology**: first-taught later than this checkpoint → **fail**. Content roots are not leak-indexed.
 3. Same-slot sibling novelty not in **Sibling OK** → **fail**.
-4. English *I* / *you* as dummy people → **fail** (unless this stage teaches **`amu`/`eho`**). *I* written with the **`SELF`** slot is not a dummy.
+4. English *I* / *you* (`amun` / `ehon`) on a page earlier in the path than pronouns.md → **fail**. A greeting or bid with the **`SELF`** slot is fine anywhere from word-endings Beginner on.
 5. Most items test **this** stage’s decision, not a prior quiz → else rewrite.
 6. Missing morph in a translation item, or morph that only repeats loose English when it should have been omitted → **fail**.
 7. Unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) → **fail**.

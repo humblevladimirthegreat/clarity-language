@@ -197,7 +197,7 @@ Motion is how the feeling moves, not how strong it is. For strength, put a [degr
 | [A feeling with no object](../sakes.md#feeling-no-object) | `thulothuruor.` | *I'm anxious.* | I |
 | [Name its cause](../sakes.md#feeling-no-object) | `thulothuruor thavem berehel.` | *I'm anxious, and the rain caused it.* | I |
 | [A feeling about an event](../sakes.md#feeling-no-object) | `zalahen vowogal thanathamar` | *moved that Alahen walks* | I |
-| [Naming it plainly](../sakes.md#emotion-compose) | `zSELFn ganegel` | *I am angry* | I |
+| [Naming it plainly](../sakes.md#emotion-compose) | `zamun ganegel` | *I am angry* | I |
 
 ## Allowed and required {#deontic}
 
@@ -229,7 +229,7 @@ Each is a `/th/` word on the clause. The ending says where the rule comes from: 
 | [Permission, by someone](../sakes.md#permission) | `zazawan vowogal thegom balahen.` | *Alahen lets Azawan walk.* | I |
 | [Permission, by rule](../sakes.md#permission) | `zahaben vehahel thegol.` | *Ahaben is allowed to sit.* | I |
 | [Tolerated](../sakes.md#permission) | `zalahen vezebal thegor.` | *no one is stopping it* | I |
-| [Ask permission](../sakes.md#permission) | `yom zSELFn vehahel thegom.` | *May I sit?* | I |
+| [Ask permission](../sakes.md#permission) | `yom zamun vehahel thegom.` | *May I sit?* | I |
 | [Requirement, by rule](../sakes.md#requirement) | `zazawan vowogal thumel.` | *Azawan has to walk (the rules say so).* | I |
 | [Requirement, by a person](../sakes.md#requirement) | `zahaben vehahel thumem balahen.` | *Alahen makes Ahaben sit.* | I |
 | [Requirement, by custom](../sakes.md#requirement) | `zalahen vezebal thumer.` | *Alahen is supposed to sleep.* | I |
@@ -237,8 +237,8 @@ Each is a `/th/` word on the clause. The ending says where the rule comes from: 
 | [Binding consent](../sakes.md#consent) | `zazawan vezebel huxegol bahaben.` | *as Ahaben agreed in advance* | I |
 | [Assumed consent, several people](../sakes.md#consent) | `zazawan vezebel huxegor bahaben balahen bal.` | *assuming Ahaben and Alahen are OK* | I |
 | [Consent, no `/b/`](../sakes.md#consent): only the actor | `zalahen vezebal huxegom.` | *Alahen lets themself sleep.* | I |
-| [A promise](../sakes.md#consent) | `zSELFn vowogal huxegol.` | *I promise (you) to walk.* | I |
-| [Promise to someone else](../sakes.md#consent) | `zSELFn vowogal huxegol el bahaben.` | *I promise Ahaben I'll walk.* | I |
+| [A promise](../sakes.md#consent) | `zamun vowogal huxegol.` | *I promise (you) to walk.* | I |
+| [Promise to someone else](../sakes.md#consent) | `zamun vowogal huxegol el bahaben.` | *I promise Ahaben I'll walk.* | I |
 | [Check in](../sakes.md#consent) | `yom zazawan vezebel huxegom.` | *Are you still OK with this?* | I |
 | [Contrary to a stance](../sakes.md#contrary-to-stance): `uem` first | `zazawan vowogal uem thedel.` | *Azawan walks anyway.* | I |
 

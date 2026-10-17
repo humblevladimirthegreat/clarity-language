@@ -183,17 +183,13 @@ Each role vowel names a different part: `zaxam` is the doing, `zuxam` what it wa
 
 Most of the time you name people with a proper name (`zazawan`, `zalahen`) and resume with **-r**. A few roots from a small fixed set (**closed roots**) instead name **roles in this conversation**: who is speaking, who is being spoken to, you-and-I together, or a nonspecific *someone*. They take the usual role letter for the slot they fill in the clause (subject, object, and so on), and in this use they end in **-n**, like a name.
 
-When a proper name is available, prefer that name (and its **-r** resume), including for talking about yourself: [proper name](word-endings.md#proper-name--n).
+Use **`amu`** (*speaker*) and **`eho`** (*listener*) for *I* and *you*. **`eho`** is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun, [below](#generic-pronoun).
 
-> `zSELFn vowogal.`
+> `zamun vowogal.`
 >
-> z-SELF | v-walk
+> z-speaker | v-walk
 >
 > "I walk."
-
-You name yourself rather than saying *I*.
-
-Use **`amu`** (*speaker*) and **`eho`** (*listener*) when what matters is the conversation role, not a name. **`eho`** is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun, [below](#generic-pronoun).
 
 > `zamun dehon vahahal.`
 >
@@ -201,11 +197,7 @@ Use **`amu`** (*speaker*) and **`eho`** (*listener*) when what matters is the co
 >
 > "I see you."
 
-> `zamun vowogal.`
->
-> z-speaker | v-walk
->
-> "I walk."
+Use your own name where the name is the point: a [greeting](word-endings.md#greeting), introducing yourself, or a mention that has to mean you outside this conversation, such as a note someone reads later. `amun` changes with each turn; a name does not.
 
 English *we* can mean “you and I” or “I and my people, not you.” Inclusive *we* (you and I) uses **`aha`**: the speaker and the people being addressed, together (**interlocutors**).
 
@@ -743,7 +735,7 @@ A quote is someone else's talk, so it keeps its own topic and its own tags, and 
 
 ### Me or you as the topic {#topic-participants}
 
-`/x/` takes the speaker, listener, interlocutors, or people in general like any noun: `xamun` *now, about me*, `xehon` *now, about you*, `xahan` *now, about the two of us*, `xoben` *now, about people in general*. A nonspecific `unan` cannot be a topic, because a topic is someone in particular. The topic is fixed to that person (or the address set) at the moment it is set, so after `xehon`, both speakers say `zozan` for the same person. Prefer a name where one is available ([proper name](word-endings.md#proper-name--n)); this makes turning the talk to yourself a visible choice.
+`/x/` takes the speaker, listener, interlocutors, or people in general like any noun: `xamun` *now, about me*, `xehon` *now, about you*, `xahan` *now, about the two of us*, `xoben` *now, about people in general*. A nonspecific `unan` cannot be a topic, because a topic is someone in particular. The topic is fixed to that person (or the address set) at the moment it is set, so after `xehon`, both speakers say `zozan` for the same person.
 
 ### Asking about the topic {#topic-question}
 

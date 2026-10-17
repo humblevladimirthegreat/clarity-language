@@ -131,9 +131,9 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 >
 > "Azawan left because Alahen spoke, and Alahen was wrong to."
 
-> `thanathumam thavel barl zSELFn vezebel.`
+> `thanathumam thavel barl zamun vezebel.`
 >
-> th-relatedness-unmet-modifiable-INTERNAL-FLOWING | [th-because.fault | b-that-clause] | z-SELF | v-tell
+> th-relatedness-unmet-modifiable-INTERNAL-FLOWING | [th-because.fault | b-that-clause] | z-speaker | v-tell
 >
 > "I feel guilty for speaking." (a cost to a tie, held inside, and my speaking broke a norm)
 

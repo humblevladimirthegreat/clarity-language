@@ -1318,7 +1318,7 @@ A [feeling with no object](sakes.md#feeling-no-object) works the same way: the h
 >
 > "I gather Alahen is anxious."
 
-Pronouns and speech moves stay yours: **`SELF`** is still you, and the sentence is still your turn. The holder's view is their view **now**. To give their view at another time, add [stance as-of](relations.md#stance-as-of) (`thuhum`), which then dates **their** stance. A channel with a holder still takes its own `/b/`, so `thewamazawan bral` is *I hear Azawan expects it*.
+Pronouns and speech moves stay yours: **`amun`** is still you, and the sentence is still your turn. The holder's view is their view **now**. To give their view at another time, add [stance as-of](relations.md#stance-as-of) (`thuhum`), which then dates **their** stance. A channel with a holder still takes its own `/b/`, so `thewamazawan bral` is *I hear Azawan expects it*.
 
 **One clause, one holder.** The holder covers its clause and any dependent sentence inside it; a new `/x/` sentence is yours again unless it has its own seam word. A dependent with its own seam word switches holder for that sentence only. That is how you take a stance on someone else's stance: your stance in the main sentence, theirs in a dependent.
 

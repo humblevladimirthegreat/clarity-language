@@ -381,7 +381,7 @@ Do not write `z-←microphone` for a speaker antecedent.
 ### House-cast given names
 <a id="house-cast"></a>
 
-Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#house-cast)). Morph gloss is the **English name**. Free English is that same name, not the virtue word and not *I* / *you*. Resume uses that name (`z-←Azawan`). The learner's own name slot glosses as a free-standing `SELF` (`z-SELF`); the site renders *speaker* or the chosen English name ([first person](grammar-docs.md#house-cast)). Do not write `z-grace@`, `g-volume~`, or `z-grace-proper`.
+Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#house-cast)). Morph gloss is the **English name**. Free English is that same name, not the virtue word and not *I* / *you*. Resume uses that name (`z-←Azawan`). Plain *I* is `amun`, glossed *speaker*. The learner's own name slot, used only where the name is the form (greeting, bid, introduction), glosses as a free-standing `SELF` (`SELF`, `SELF-presence`); the site renders *speaker* or the chosen English name ([first person](grammar-docs.md#house-cast)). Do not write `z-grace@`, `g-volume~`, or `z-grace-proper`.
 
 | Agazan | Morph gloss | Free English | Resume |
 |--------|-------------|--------------|--------|
