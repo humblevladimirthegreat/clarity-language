@@ -1,12 +1,12 @@
 # Proposal: one-handed fingerspelling (STS subset + Chinese **z**)
 
-**Status:** PROPOSED  
-**Related:** [phonology.md § letter names](../grammar/phonology.md#letter-names) (spoken spelling recitation); [phonology.md § phonotactics](../grammar/phonology.md#phonotactics) (word-final **-x**); silent use when speech is not possible  
+**Status:** REJECTED. Spelling one letter per hold is slow, and the borrowed inventory takes 18 shapes from three source alphabets with no shared logic. Adopted instead: the sign adaptation in `musical-phonology.md`. It signs one syllable per beat with both hands, uses finger-count shapes for the digit letters, and shares its shapes with the piano channel.  
+**Related:** [phonology.md § letter names](../../grammar/phonology.md#letter-names) (spoken spelling recitation); [phonology.md § phonotactics](../../grammar/phonology.md#phonotactics) (word-final **-x**); silent use when speech is not possible  
 **Design authority:** spoken grammar is unchanged. This is an optional **manual spelling channel** for existing letters. It does not add lexicon, morphology, or a sign language.
 
 ## Motivation
 
-Agazan already has an unambiguous spoken spelling: one [letter name](../grammar/phonology.md#letter-names) per glyph, pauses between names. There is no documented way to spell a **single word** when the listener cannot hear (noise, distance, mouth occupied, remaining quiet).
+Agazan already has an unambiguous spoken spelling: one [letter name](../../grammar/phonology.md#letter-names) per glyph, pauses between names. There is no documented way to spell a **single word** when the listener cannot hear (noise, distance, mouth occupied, remaining quiet).
 
 A primitive channel should:
 
@@ -98,7 +98,7 @@ ASL transfer is **not** a goal. STS and ASL share some shapes on **different** l
 
 **Status:** not adopted; worth a prototype and a speed test. The borrowed inventory above stays the default.
 
-**Idea:** sign the letter's **position in the alphabet** with one-hand number signs, so one rule replaces 18 borrowed shapes. [Letter names](../grammar/phonology.md#letter-names) already list the alphabet in order: the ten [digit-syllable](../grammar/phonology.md#digit-letters) consonants come first (**w d r m v g l h n z** = 1 to 9, then 0), then **b y th x**, then the vowels **u a o e**.
+**Idea:** sign the letter's **position in the alphabet** with one-hand number signs, so one rule replaces 18 borrowed shapes. [Letter names](../../grammar/phonology.md#letter-names) already list the alphabet in order: the ten [digit-syllable](../../grammar/phonology.md#digit-letters) consonants come first (**w d r m v g l h n z** = 1 to 9, then 0), then **b y th x**, then the vowels **u a o e**.
 
 Four banks, each signed with a plain **finger count** (extended fingers, no thumb-to-finger shapes):
 
@@ -125,7 +125,7 @@ So the whole alphabet needs only the shapes for 1 to 5. The thumb-touching 6 to 
   - Weak point to test: hooked 1 may read as a plain pointing finger, and hooked 2 and 3 are the most likely to be misread at distance.
   - Fallbacks if hooked reads badly: finger spread (together vs spread), or a third orientation (diagonal) for one pair. Spread is undefined for a count of 1, so banks using it would start their counts at 2.
 - **Numeral vs letter:** numerals reuse banks 1 and 2 by context (1 to 5 upright, 6 to 0 sideways, both straight), so the shape for 3 is both the numeral and **r**. Context decides which: whether the signer is spelling a word or giving a number. Spoken Agazan separates the two by form (letter name **ro** vs digit syllable **re**), so this is a deliberate loss in the manual channel. This also settles open question 3 above (digit-hand overlap with **we / da / …**) by design.
-- **Vowels:** bank 4 holds all four. The opposite-vowel pairs **a↔u** and **o↔e** (see [letter names](../grammar/phonology.md#digit-letters)) could be a thumb flip between pair members; untested.
+- **Vowels:** bank 4 holds all four. The opposite-vowel pairs **a↔u** and **o↔e** (see [letter names](../../grammar/phonology.md#digit-letters)) could be a thumb flip between pair members; untested.
 
 **Count set:** pick one convention and say so, since index-first and thumb-first counting differ by region. Only 1 to 5 are needed for letters.
 
@@ -158,7 +158,7 @@ The channel can be received by touch. The receiver rests a hand lightly over the
 
 ## Absorb sketch
 
-Not a core-grammar morph. If accepted: a short **optional** section (likely [phonology.md](../grammar/phonology.md) Advanced, or a sibling `docs/grammar/` page linked from phonology) with the 18-sign chart, the three source citations (STS, Chinese, Icelandic), and “spelling = letter names.” Grammar pages stay free of proposal links until then.
+Not a core-grammar morph. If accepted: a short **optional** section (likely [phonology.md](../../grammar/phonology.md) Advanced, or a sibling `docs/grammar/` page linked from phonology) with the 18-sign chart, the three source citations (STS, Chinese, Icelandic), and “spelling = letter names.” Grammar pages stay free of proposal links until then.
 
 ## Non-criteria
 
