@@ -20,7 +20,7 @@ An English tense bundles up to three questions: **when** the event sits, **how y
 | *walked* (telling what happened) | one ground for the whole story | the channel and offset on the first sentence; bare verbs after it keep them ([carry forward](knowing.md#carry-forward)) |
 | *walked* (a made-up story) | it is fiction | NOTIONAL **`thavom`** on the first sentence; bare verbs after it stay in the story ([carry forward](knowing.md#carry-forward)) |
 | *walked yesterday* / *three hours ago* | a measured time back | channel + signed amount ([dated channel](knowing.md#dated-channel)) |
-| *has walked* | the outcome still counts | RESIDUE **`thamom`** |
+| *has walked* | the outcome still counts | RESIDUE **`hamom`** |
 | *has already walked* | the change has come | **`hoham`** |
 | *has walked before* / *has never walked* | at least once / not once | **`hoham`** + **`har`** / **`hal`** ([ever / never](knowing.md#ever-never)) |
 | *had walked* | as of a past moment | [*as-of*](relations.md#as-of) plus the same stance |
@@ -28,13 +28,13 @@ An English tense bundles up to three questions: **when** the event sits, **how y
 | *is walking* | they are in the middle of it | the event root on `/ɡ/`: `zazawan gowogal` ([in progress](predication.md#in-progress)) |
 | *is still walking* | the state goes on | **`hagem`** |
 | *has stopped walking* | the state ended | **`hewem`** |
-| *will walk* | a plan | PLAN **`thamam`** |
+| *will walk* | a plan | PLAN **`hamam`** |
 | *will walk* | a forecast | channel + **`bral`** ([forecast](knowing.md#forecast)) |
 | *is going to walk* | a plan, or clues say so | PLAN, or CLUES + **`bral`** |
 | *is about to walk* / *will walk soon* | a hair / a short while after now | **`brabul`** / **`brabum`** on a channel |
 | *just walked* | a hair before now | **`brubul`** on a channel |
 | *was going to walk* | intention as of a past moment | PLAN + *as-of* |
-| *used to walk* | a pattern that is not today's | FORMER **`thenom`** + **`hual`** |
+| *used to walk* | a pattern that is not today's | FORMER **`henom`** + **`hual`** |
 | *would walk* (if …) | a long shot | **`thoyem barl`** + **`thrul`** |
 | *would have walked* (if …) | known false | bookmark *as-of* + **`thavor`** |
 
@@ -74,9 +74,9 @@ Reports and reasoning need their own `-` amount, because those channels do not f
 
 English *has left* mixes three ideas. Choose the one you mean.
 
-> `zalahen thamom vedabal.`
+> `zalahen hamom vedabal.`
 >
-> z-Alahen | th-RESIDUE | v-departure
+> z-Alahen | h-RESIDUE | v-departure
 >
 > "Alahen has left, and it still counts." (the outcome is on the books)
 
@@ -100,17 +100,17 @@ English *has left* mixes three ideas. Choose the one you mean.
 
 English *had left* means the leaving counted **as of** an earlier moment. Write the same stance and add *as-of* with that moment in `/b/`.
 
-> `zalahen thamom huhum b_#22,7 vedabal.`
+> `zalahen hamom huhum b_#22,7 vedabal.`
 >
-> z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
+> z-Alahen | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 >
 > "As of 22 July, Alahen had left, and it still counted."
 
 *Was going to* is PLAN with the same *as-of*:
 
-> `zazawan thamam vowogal huhum b_#22,7.`
+> `zazawan hamam vowogal huhum b_#22,7.`
 >
-> z-Azawan | th-plan-itinerary | v-walk | [h-as-of.ledger | b-_22,7]
+> z-Azawan | h-plan-itinerary | v-walk | [h-as-of.ledger | b-_22,7]
 >
 > "As of 22 July, Azawan was going to walk."
 
@@ -148,13 +148,13 @@ English *will* is three different claims.
 
 | English *will* | Agazan |
 |----------------|--------|
-| I mean to | PLAN **`thamam`** ([endings](intention.md#plan-map-resolution) show how much is drawn) |
+| I mean to | PLAN **`hamam`** ([endings](intention.md#plan-map-resolution) show how much is drawn) |
 | the world will | channel + **`bral`** |
-| I promise | consent **`thuxegol`** ([promise](sakes.md#consent)) |
+| I promise | consent **`huxegol`** ([promise](sakes.md#consent)) |
 
-> `zazawan thamam vowogal.`
+> `zazawan hamam vowogal.`
 >
-> z-Azawan | th-plan-itinerary | v-walk
+> z-Azawan | h-plan-itinerary | v-walk
 >
 > "Azawan will walk." (that is the plan)
 
@@ -188,8 +188,8 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 | *eventually* / *ultimately* | **`xrebal`** opens the last point (*Finally, …*) |
 | *whenever* | **`huwem bual`** + the occasion as a quality: `huwem bual gerehel` |
 | *currently* / *nowadays* / *at present* / *modern* / *contemporary* | LIVE **`thodom`** when it is in view; otherwise the bare verb, which reports this stretch |
-| *previously* / *formerly* / *originally* / *once* (*once walked*) | FORMER **`thenom`** |
-| *past* / *in the past* | FORMER **`thenom`**, or a channel with a `-` offset |
+| *previously* / *formerly* / *originally* / *once* (*once walked*) | FORMER **`henom`** |
+| *past* / *in the past* | FORMER **`henom`**, or a channel with a `-` offset |
 | *future* / *in the future* | a channel + **`bral`** |
 | *once* (*one time*) | `h+1` before the verb |
 | ever (*Have you walked at all?*) | **`hoham`** + **`har`** under **`yol`**: `yol har zehon hoham vowogal` |
@@ -219,9 +219,9 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 
 English *used to walk* is a pattern that is no longer today's report: **`hual`** with FORMER after the verb.
 
-> `zazawan hual vezebel thenom.`
+> `zazawan hual vezebel henom.`
 >
-> z-Azawan | h-always | v-tell | th-FORMER
+> z-Azawan | h-always | v-tell | h-FORMER
 >
 > "Azawan used to tell." (a former pattern, not today's)
 
@@ -239,7 +239,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 |---------|----------|--------|
 | *can* | able | verb + **`xa`** ([can](intention.md#can)) |
 | *can't* | not now / not yet / never | **`xe`** / **`xo`** / **`xu`** |
-| *could* | used to be able | **`xa`** + FORMER **`thenom`** |
+| *could* | used to be able | **`xa`** + FORMER **`henom`** |
 | *could*, *might*, *may* | it could be | MAY **`thovum`** |
 | *may*, *is allowed to* | a rule / a person / no objection | **`thegol`** / **`thegom`** / **`thegor`** |
 | *may not* | forbidden | **`thedel`** / **`thedem`** / **`theder`** |
@@ -280,14 +280,14 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 
 | English | Agazan |
 |---------|--------|
-| *capable* / *ability* / *capability* | the verb or quality with **`xa`**: `zazawan gezehexal` (*able to sing*); with no single verb, **`thuboxal`** |
+| *capable* / *ability* / *capability* | the verb or quality with **`xa`**: `zazawan gezehexal` (*able to sing*); with no single verb, **`huboxal`** |
 | *afford* (*can pay*) | `zazawan vamoxal dugul` |
 | *visible* / *invisible* | the undergoer with ability: `zodogal guxahahaxal` / `zodogal guxahahaxul` |
 | *blind* | `zazawan gahahaxul` (*can never see*) |
 | *possible* / *potentially* | MAY **`thovum`** |
 | *acceptable* / *privilege* | permission **`thegol`** |
 | *expect* / *anticipate* | a forecast: a channel + **`bral`**; when custom expects it, **`thumer`** |
-| *shall* | PLAN **`thamam`** |
+| *shall* | PLAN **`hamam`** |
 | *have to* | **`thumem`** |
 | *do* / *does* / *did* (helper: *Do you walk?*) | no word: the verb under **`yol`** |
 
@@ -365,35 +365,35 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 
 | English | Agazan |
 |---------|--------|
-| *will* (willing) | PLAN **`thamam`**, or consent **`thuxegom`** (*I'll do it*, you can back out) |
-| *wants to*, *feels like* | WANT **`thohum`** (**`thohul`** lasting, **`thohur`** passing) |
-| *thinking of* | PLAN sketch **`thamar`** |
+| *will* (willing) | PLAN **`hamam`**, or consent **`huxegom`** (*I'll do it*, you can back out) |
+| *I want*, *I feel like* | WANT **`thohum`** (**`thohul`** lasting, **`thohur`** passing); someone else's want takes a [holder](knowing.md#holder): **`thewamazawan thohum`** |
+| *thinking of* | PLAN sketch **`hamar`** |
 | *hopefully* | **`thevegem`** |
-| *tries to* | **`thudum`** |
-| *if only …*, *I wish …* | WANT with the speaker in `/b/`: **`thohum bamun`** |
+| *tries to* | **`hudum`** |
+| *if only …*, *I wish …* | WANT alone, which is already your own: **`thohum`** |
 | *let's* | request **`yem`** with **`aha`** as subject |
 
-> `zalahen thohum vowogal.`
+> `zalahen thewamalahen thohum vowogal.`
 >
-> z-Alahen | th-WANT-unstated | v-walk
+> z-Alahen | th-REPORTED-Alahen | th-WANT-unstated | v-walk
 >
-> "Alahen wants to walk."
+> "I hear Alahen wants to walk."
 
-> `zazawan thohum bamun vowogal.`
+> `zazawan thohum vowogal.`
 >
-> z-Azawan | [th-WANT-unstated | b-speaker] | v-walk
+> z-Azawan | th-WANT-unstated | v-walk
 >
 > "If only Azawan would walk."
 
-> `zalahen thamar vowogal.`
+> `zalahen hamar vowogal.`
 >
-> z-Alahen | th-plan-sketch | v-walk
+> z-Alahen | h-plan-sketch | v-walk
 >
 > "Alahen is thinking of a walk." (a sketch is plenty)
 
-> `zalahen thudur vezehel.`
+> `zalahen hudur vezehel.`
 >
-> z-Alahen | th-ATTEMPT-trial | v-sing
+> z-Alahen | h-ATTEMPT-trial | v-sing
 >
 > "Alahen gives singing a try."
 
@@ -461,9 +461,9 @@ z-Azawan | h-still | v-walk
 **6.** *Azawan used to tell.*
 
 ::: details Show answer
-`zazawan hual vezebel thenom.`
+`zazawan hual vezebel henom.`
 
-z-Azawan | h-always | v-tell | th-FORMER
+z-Azawan | h-always | v-tell | h-FORMER
 :::
 
 **7.** *Azawan may walk (I'm allowing it).*

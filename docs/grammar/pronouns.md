@@ -439,7 +439,7 @@ Beginner used whole-stem **-r** in the same slot as the earlier word (*he sits*)
 | `/y/` interjection … `-r` | same exclamation again | repeating that call-out |
 | `/x/` … `-r` after `/x/` | same linker again | *and so* / *likewise* |
 
-A few [closed roots](#special-pronouns) give **-r** a meaning of their own: the light end of a scale (`thovur` *may, who knows*, `thamar` *plan-sketch*), or a share of the cause on *because* ([fault](causation.md#fault)). On those, **-r** is that meaning, not a resume. Every other closed root resumes with **-r** like any content root, so `thoyer` after `thoyem` is the same condition again:
+A few [closed roots](#special-pronouns) give **-r** a meaning of their own: the light end of a scale (`thovur` *may, who knows*, `hamar` *plan-sketch*), or a share of the cause on *because* ([fault](causation.md#fault)). On those, **-r** is that meaning, not a resume. Every other closed root resumes with **-r** like any content root, so `thoyer` after `thoyem` is the same condition again:
 
 > `zalahen vowogal thoyem berehel. zazawan vowogal thoyer.`
 >
@@ -637,9 +637,9 @@ A topic-setting `/x/` word takes a **pitch reset**, as a new `/y/` turn does, bu
 
 The topic is referred to with one pronoun: **`oza`** *star* with **-n**, in `/z/`, `/d/`, or `/b/`. It stays the same in every role: `zozan` is the topic as subject, `dozan` as object, `bozan` as extra noun. (cue: ⭐ the star of the talk, what everyone is looking at)
 
-> `xazawan zozan dalahen vahahal. zalaher dozan vezebel. zozan varahal.`
+> `xazawan zozan dalahen vahahal. zalaher vezebel bozan. zozan varahal.`
 >
-> x-Azawan | z-TOPIC | d-Alahen | v-see . z-←Alahen | d-TOPIC | v-tell . z-TOPIC | v-run
+> x-Azawan | z-TOPIC | d-Alahen | v-see . z-←Alahen | v-tell | b-TOPIC . z-TOPIC | v-run
 >
 > "Now, about Azawan: Azawan sees Alahen. Alahen tells Azawan. Azawan runs."
 

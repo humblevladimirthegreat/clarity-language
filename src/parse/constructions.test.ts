@@ -64,7 +64,7 @@ describe("construction registry", () => {
       ["zazawan vowogal thovum.", "overlay.ovum.th"],
       // A sake or ability word uses the sake / hostless-ability row of its host.
       ["zazawan vowogal thanathem.", "overlay.anam.th"],
-      ["zazawan thuboxel.", "overlay.ubom.th"],
+      ["zazawan huboxel.", "overlay.ubom.h"],
       // Per-form features of families taught across sections.
       ["zazawan zalahen zal vowogal.", "join.a"],
       ["yol zazawan vowogal.", "force.o"],

@@ -17,9 +17,9 @@ With a handful of drop-ins, your English now says:
 
 Every drop-in you learned is a real Agazan word, spelled the same way. In the full language they sit inside sentences built for them, and they stack: one sentence can carry a tone, a channel, a try, and a sake at once.
 
-> `;zalahen thodom thudur vezehel thozothar.`
+> `;zalahen thodom hudur vezehel thozothar.`
 >
-> ;z-Alahen | th-LIVE | th-ATTEMPT-trial | v-sing | th-pleasure-met-immediate
+> ;z-Alahen | th-LIVE | h-ATTEMPT-trial | v-sing | th-pleasure-met-immediate
 >
 > "I'm watching dear Alahen give singing a try, and it's a joy right now."
 

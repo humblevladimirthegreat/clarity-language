@@ -14,23 +14,23 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 
 | Label | Gloss | Example | Teach |
 |-------|-------|---------|-------|
-| **ABIL** | Hostless *can* / *can’t* (no single verb) | `thuboxel` | [Intention](intention.md#ability-fallback) |
+| **ABIL** | Hostless *can* / *can’t* (no single verb) | `huboxel` | [Intention](intention.md#ability-fallback) |
 | **AIMED** | Emotion locus: aimed at a target | `wanathumol` | [Sakes](sakes.md#emotion-compose) |
 | **ASIDE** | An aside span | `th(hagawal)` | [Spans](spans.md#asides) |
-| **ATTEMPT** | Try mood: committed / unstated / trial run | `thudum` | [Intention](intention.md#try) |
+| **ATTEMPT** | Try mood: committed / unstated / trial run | `hudum` | [Intention](intention.md#try) |
 | **AWAY** | Emotion locus: moving off from a target | `wanathumum` | [Sakes](sakes.md#emotion-compose) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thegem` | [Causation](causation.md#cause) |
 | **CIRCUM** | Emotion locus: the atmosphere of the situation | `wulothuraor` | [Sakes](sakes.md#emotion-compose) |
 | **CITE** | A cite span: quoted wording | `d[azawan]` | [Spans](spans.md#writing) |
 | **CLUES** | Evidential: reasoned from clues about this case | `thunem` | [Knowing](knowing.md#evidentiality) |
 | **COLLAPSE** | Emotion locus: out of fight, giving up | `wanathumual` | [Sakes](sakes.md#emotion-compose) |
-| **CONSENT** | Consent of the affected party | `thuxegom` | [Sakes](sakes.md#consent) |
-| **DECISION** | Pick-firmness mood | `thehum` | [Intention](intention.md#decision) |
+| **CONSENT** | Consent of the affected party | `huxegom` | [Sakes](sakes.md#consent) |
+| **DECISION** | Pick-firmness mood | `hehum` | [Intention](intention.md#decision) |
 | **DEDUCED** | Evidential: must hold if the premises hold | `thugum` | [Knowing](knowing.md#deduction) |
 | **FAWN** | Emotion locus: placating a target | `wanathumaem` | [Sakes](sakes.md#emotion-compose) |
 | **FLOWING** | Emotion motion: steady, a current you can ride | `wanathumem` | [Sakes](sakes.md#emotion-compose) |
 | **FORBID** | Permission, negative | `thedel` | [Sakes](sakes.md#permission) |
-| **FORMER** | Episode standing: not the climate claimed now | `thenom` | [Knowing](knowing.md#residue) |
+| **FORMER** | Episode standing: not the climate claimed now | `henom` | [Knowing](knowing.md#residue) |
 | **INTERNAL** | Emotion locus: mine, held inside | `gulothamar` | [Sakes](sakes.md#emotion-compose) |
 | **INTUITION** | Evidential: gut sense you cannot fully spell out | `thahom` | [Knowing](knowing.md#evidentiality) |
 | **LIVE** | Evidential: sensed now, by any sense | `thodom` | [Knowing](knowing.md#evidentiality) |
@@ -44,10 +44,10 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **OPAQUE** | An opaque span: foreign or raw writing | <code>d&lt;kimchi&gt;</code> | [Spans](spans.md#loans) |
 | **PATTERN** | Evidential: from regularity | `thobam` | [Knowing](knowing.md#evidentiality) |
 | **PERMIT** | Permission, positive | `thegol` | [Sakes](sakes.md#permission) |
-| **PLAN** | Intention-framing mood | `thamam` | [Intention](intention.md#plan-predict) |
+| **PLAN** | Intention-framing mood | `hamam` | [Intention](intention.md#plan-predict) |
 | **REPORTED** | Evidential: said or written by someone else | `thewam` | [Knowing](knowing.md#evidentiality) |
 | **REQUIRE** | Requirement (*must*) without a sake | `thumel` | [Sakes](sakes.md#requirement) |
-| **RESIDUE** | Episode standing: outcome still on the current tally | `thamom` | [Knowing](knowing.md#residue) |
+| **RESIDUE** | Episode standing: outcome still on the current tally | `hamom` | [Knowing](knowing.md#residue) |
 | **RESISTING** | Emotion locus: pushing against a target | `wanathumuer` | [Sakes](sakes.md#emotion-compose) |
 | **SAME** | Identity copula | `gugol` | [Predication](predication.md#identity) |
 | **SCOPE** | Scope island `{ … }` | `{ hegewem zodogal geredal }` | [Spans](spans.md#scope-islands) |

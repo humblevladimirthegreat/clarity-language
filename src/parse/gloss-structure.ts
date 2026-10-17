@@ -168,7 +168,7 @@ function unitNodes(cur: Cursor, unit: Unit): GlossNode[] {
     case "hook": {
       const hook = group([...unit.modifiers.map((m) => cur.take(m)), cur.take(unit.word)]);
       // `uem` + its stance frame: `[contrary-to | th-FORBID-disallowed]` (sakes.md#contrary-to-stance).
-      return one(unit.frame ? group([hook, hUnit(cur, unit.frame)]) : hook);
+      return one(unit.frame ? group([hook, hUnit(cur, unit.frame), cur.take(unit.heldWant)]) : hook);
     }
     case "island":
       return [island(cur, unit.island)];

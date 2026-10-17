@@ -11,7 +11,7 @@ English *can*, *may*, *should*, and *OK* blur who allowed something, and whether
 | `thegol` / `thegom` / `thegor` | allowed by a rule / by a person / tolerated |
 | `thedel` / `thedem` / `theder` | forbidden by a rule / by a person / frowned on |
 | `thumel` / `thumem` / `thumer` | required by a rule / by a person / by custom |
-| `thuxegol` / `thuxegom` / `thuxegor` | the affected person agreed in advance / said yes (and can take it back) / is assumed to be OK |
+| `huxegol` / `huxegom` / `huxegor` | the affected person agreed in advance / said yes (and can take it back) / is assumed to be OK |
 
 The endings have a new job here: the **source**. Cue: **l ≈ law, m ≈ mouth, r ≈ read the room.** **-l** is a rule, **-m** is a person's word (the default), and **-r** is no one's word at all.
 
@@ -21,7 +21,7 @@ On the consent words, **-r** is allowed but visibly weaker: it puts *I assumed* 
 
 ## Examples {#examples}
 
-> I borrowed your car `thuxegor`. I should have asked for `thuxegom`.  
+> I borrowed your car `huxegor`. I should have asked for `huxegom`.  
 > You can leave early `thegom`.  
 > We wear ties `thumer`, not `thumel`.  
 > Visitors sign in at the desk `thumel`.  
@@ -42,7 +42,7 @@ You can park here `thegol`.
 **2.** *I posted the photo of us.* (you said yes)
 
 ::: details Show answer
-I posted the photo of us `thuxegom`.
+I posted the photo of us `huxegom`.
 :::
 
 **3.** *People bring a dish.* (custom expects it)

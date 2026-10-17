@@ -1,7 +1,7 @@
 import { createToken, type IToken, Lexer } from "chevrotain";
 
 import type { LexWord, PunctKind } from "./types.js";
-import { isAsOfOverlay, isStandIn } from "./classify.js";
+import { isAsOfOverlay, isClauseAdverb, isStandIn } from "./classify.js";
 import { isTopicCompound } from "./linkers.js";
 
 /** Non-word surface atoms peeled before Peggy. */
@@ -198,6 +198,8 @@ export const Factor = wordToken("Factor");
 export const HScale = wordToken("HScale");
 /** A `/th/` stance right after *contrary to* `uem`: the hook's frame, not a stance on the claim (sakes.md#contrary-to-stance). Set by `markContext`. */
 export const HFrame = wordToken("HFrame");
+/** WANT right after a holder frame: whose wish the event goes against, with how you know it (intention.md#want). Set by `markContext`. */
+export const HFrameHeld = wordToken("HFrameHeld");
 export const BScale = wordToken("BScale");
 /** A `/th/` stance word that is a rank fence's bar: it runs up to the list's rank join (comparatives.md#bars). Set by `markContext`. */
 export const Bar = wordToken("Bar");
@@ -311,6 +313,7 @@ export const allTokens = [
   Factor,
   HScale,
   HFrame,
+  HFrameHeld,
   BScale,
   Bar,
   BarPlain,
@@ -403,6 +406,7 @@ export type TokenBranch =
   | "yInterjection"
   | "linker"
   | "tagAssign"
+  | "clauseAdverb"
   | "content"
   | "citationFallback";
 
@@ -453,6 +457,8 @@ export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; bra
   const tag = family.kind === "tag" && word.ending === "l" && !word.plural && pos ? TAG_BY_POS[pos] : undefined;
   if (tag) return { type: tag, branch: "tagAssign" };
   if (pos === "g" && word.gl) return { type: GGl, branch: "content" };
+  // An intention adverb covers the whole clause like a `/th/` word: it can be a bar or a `uem` frame (clause.md#intention-adverbs).
+  if (isClauseAdverb(word)) return { type: HTh, branch: "clauseAdverb" };
   if (pos && pos in CONTENT_BY_POS) {
     return { type: CONTENT_BY_POS[pos as keyof typeof CONTENT_BY_POS], branch: "content" };
   }

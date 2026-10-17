@@ -27,7 +27,7 @@ export type ConstructionEntry = { anchor: string; summary: string; reader?: stri
 
 /** Shared by the three rank-fence bar productions (comparatives.md#bars). */
 const BAR_READER =
-  "A `th-` word inside a ranking bracket, right before the rank word, is what the item is ranked against: `[z-Alahen | th-plan-itinerary | z-rank/more | b-later] | v-departure` = Alahen leaves later than planned; a pattern there = than usual. The same `th-` word outside the bracket is a stance on the whole sentence.";
+  "A `th-` word (or an intention `h-` word) inside a ranking bracket, right before the rank word, is what the item is ranked against: `[z-Alahen | h-plan-itinerary | z-rank/more | b-later] | v-departure` = Alahen leaves later than planned; a pattern there = than usual. The same word outside the bracket covers the whole sentence.";
 
 /** Sentence grammar: `rule.childKey` (sub-rule, token type, or LABEL). */
 export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
@@ -143,6 +143,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
 
   "hUnitRule.W": { anchor: "clause.md#adjective-detail-w", summary: "/w/ detail on an adverb" },
   "hUnitRule.H": { anchor: "clause.md#adverbs-h", summary: "/h/ or /th/ word" },
+  "hUnitRule.Held": { anchor: "knowing.md#holder", summary: "WANT after a holder frame of uem: the holder's wish the event goes against" },
   "hUnitRule.B": { anchor: "clause.md#extra-nouns", summary: "hosted /b/ after /h/" },
   "hUnitRule.G": { anchor: "knowing.md#dated-channel", summary: "amount on a hosted /b/ (signed offset)" },
   "hUnitRule.Odo": { anchor: "dependents.md#dependent-clauses", summary: "stand-in hosted on /h/, or the grounds after a channel's offset" },
@@ -196,6 +197,7 @@ export const TOKEN_CONSTRUCTIONS: Record<TokenBranch, ConstructionEntry> = {
   yVocative: { anchor: "speech-moves.md#vocative", summary: "/y/ name (-n), named span, or resume (-r): a vocative" },
   yInterjection: { anchor: "speech-moves.md#interjections-reactions", summary: "/y/ word in -l / -m, or an unnamed span: an interjection" },
   linker: { anchor: "dependents.md#continue-x", summary: "/x/ content word: a sentence linker, or a topic word" },
+  clauseAdverb: { anchor: "intention.md#plan", summary: "intention adverb on /h/ (PLAN, DECISION, try, ability, consent, RESIDUE, FORMER): covers the whole clause like a /th/ word" },
   tagAssign: { anchor: "pronouns.md#tag-pronouns", summary: "bare tag -l: names the phrase before it, or a new referent" },
   content: { anchor: "phonology.md#word-edges", summary: "content word in its role slot" },
   citationFallback: { anchor: "phonology.md#word-edges", summary: "word with no role letter: names, filling no slot" },
@@ -703,6 +705,7 @@ export const REJECTIONS = {
   hookResumeNoun: { anchor: "hooks.md#hook-resume", summary: "a resume hook (-r) points back and takes no noun on its right" },
   asOfPerHost: { anchor: "relations.md#as-of", summary: "a clause takes at most one /h/ and one /th/ as-of pair" },
   asOfOffset: { anchor: "relations.md#as-of", summary: "a signed offset in as-of /b/ goes only on stance as-of (/th/); an event or adjective past needs a channel" },
+  wantHost: { anchor: "intention.md#want", summary: "WANT takes no /b/ person: with no holder it is your want; someone else's want goes through a holder seam (`thunemazawan thohum`)" },
   channelOffsetSign: { anchor: "knowing.md#dated-channel", summary: "MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one" },
   retiredChannelRoot: { anchor: "knowing.md#evidentiality", summary: "/th/ on the record or scroll root is not a channel: a record or document is REPORTED with the source in /b/, footage is LIVE or MEMORY with the device in /b/, a schedule is PLAN, and a tale is NOTIONAL" },
   poleOffsetWarrant: { anchor: "knowing.md#dated-channel", summary: "a signed offset on a time pole needs a command, request, PLAN, or channel in its clause" },

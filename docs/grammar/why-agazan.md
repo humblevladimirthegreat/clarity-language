@@ -237,7 +237,7 @@ Every attempt can feel like a full commitment that either succeeds or fails, eve
 
 English *try* does not say whether you are committing to keep going or only testing whether something works, so every attempt can sound like it will end in success or failure.
 
-[Try](intention.md#try) says that an attempt happens and leaves the outcome open. Its ending says how far the attempt will go: a committed attempt (`thudul`) keeps going until it works or is ruled out, and a trial run (`thudur`) is a low-stakes probe where failing is useful to know.
+[Try](intention.md#try) says that an attempt happens and leaves the outcome open. Its ending says how far the attempt will go: a committed attempt (`hudul`) keeps going until it works or is ruled out, and a trial run (`hudur`) is a low-stakes probe where failing is useful to know.
 
 Calling an attempt a trial run helps you start without betting everything on it: if it fails, finding that out was the point.
 

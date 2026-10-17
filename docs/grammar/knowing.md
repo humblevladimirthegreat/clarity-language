@@ -392,9 +392,9 @@ English *will* can make a forecast: a claim that something will happen. Agazan h
 
 A schedule is not a forecast: it is someone's [PLAN](intention.md#plan-predict), and the channel says how you know about it.
 
-> `zazawan thamam vezebel thewal bagadal.`
+> `zazawan hamam vezebel thewal bagadal.`
 >
-> z-Azawan | th-plan-itinerary | v-tell | [th-REPORTED.strong | b-calendar]
+> z-Azawan | h-plan-itinerary | v-tell | [th-REPORTED.strong | b-calendar]
 >
 > "Azawan is scheduled to speak, going by the official calendar."
 
@@ -410,7 +410,7 @@ In a [question](questions.md#question), the channel asks what the **listener's**
 
 On a [feeling](sakes.md#emotion-compose) (a sake word with a locus and a motion ending, before **`gobum`**), the channel and offset date the **stimulus**. On a [feeling with no object](sakes.md#feeling-no-object), they date a stimulus you leave unnamed. The feeling itself stays now; to date a stance, use [stance as-of](relations.md#stance-as-of).
 
-**Compare with:** [PLAN](intention.md#plan-predict) (`thamam`) says what someone **intends** to do; it needs no channel. A forecast is a claim about the world. To say **how much** later (*in three hours*), replace `bral` with a measured [dated channel](#dated-channel). *Could be* with nothing behind it is [MAY](#may), not a forecast.
+**Compare with:** [PLAN](intention.md#plan-predict) (`hamam`) says what someone **intends** to do. It is an [intention adverb](clause.md#intention-adverbs) on `/h/`, something the doer says and acts on openly, so it needs no channel. A forecast is a claim about the world. To say **how much** later (*in three hours*), replace `bral` with a measured [dated channel](#dated-channel). *Could be* with nothing behind it is [MAY](#may), not a forecast.
 
 ### Evidence clause (`barl`) {#evidence-clause}
 
@@ -540,60 +540,60 @@ A [quote](spans.md#writing) keeps its speaker's frame: nothing carries into it f
 <a id="former-climate"></a>
 <a id="episode-standing"></a>
 
-English *has left* and *used to tell* mix two things: when the event happened, and how it stands now. Agazan places events in time with other tools: [*before* / *after* / *while*](dependents.md#time-poles), a clock or date, [LIVE](#live-vs-memory) / [MEMORY](#live-vs-memory), or a [forecast](#forecast). Two `/th/` words cover how it stands. **RESIDUE** says the outcome of an event is still in effect now. **FORMER** says a usual pattern is not one you are claiming for now. Neither says when anything happened, so use them alongside a channel or a when-frame, never as a past or present tense.
+English *has left* and *used to tell* mix two things: when the event happened, and how it stands now. Agazan places events in time with other tools: [*before* / *after* / *while*](dependents.md#time-poles), a clock or date, [LIVE](#live-vs-memory) / [MEMORY](#live-vs-memory), or a [forecast](#forecast). Two `/h/` words keep the books on how it stands. **RESIDUE** says the outcome of an event is still in effect now. **FORMER** says a usual pattern is not one you are claiming for now. Neither says when anything happened, so use them alongside a channel or a when-frame, never as a past or present tense.
 
 **RESIDUE** (`amo`) says the result still counts: an unpaid tab, a door that is still shut. Without it, you make no claim that anything is left over (the event is over and done, or nothing remains from it). As a plain noun, `zamom` is *debt*. (cue: 💰 a debt still on the books)
 
-> `zalahen thamom vedabal.`
+> `zalahen hamom vedabal.`
 >
-> z-Alahen | th-RESIDUE | v-departure
+> z-Alahen | h-RESIDUE | v-departure
 >
 > "Alahen has left and is still gone."
 
-> `zalahen thevom thamom vedabal.`
+> `zalahen thevom hamom vedabal.`
 >
-> z-Alahen | th-MEMORY | th-RESIDUE | v-departure
+> z-Alahen | th-MEMORY | h-RESIDUE | v-departure
 >
 > "I remember Alahen leaving, and Alahen is still gone."
 
-> `zalahen thodom thamom vedabal.`
+> `zalahen thodom hamom vedabal.`
 >
-> z-Alahen | th-LIVE | th-RESIDUE | v-departure
+> z-Alahen | th-LIVE | h-RESIDUE | v-departure
 >
 > "Alahen has left and is still gone, I can see it." (what is left over is in view)
 
-**Compare with:** [*after*](dependents.md#time-poles) (`hanom boyel`) orders two events. **`thamom`** does not say the leaving was earlier; it says the **outcome is still in effect**. [LIVE](#live-vs-memory) is how you know, not what is left over. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
+**Compare with:** [*after*](dependents.md#time-poles) (`hanom boyel`) orders two events. **`hamom`** does not say the leaving was earlier; it says the **outcome is still in effect**. [LIVE](#live-vs-memory) is how you know, not what is left over. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
 
 **FORMER** (`eno`) says a usual pattern held, but you are **not** claiming it holds now: *Azawan always sings* as a past habit. Without it, [always](restrictors.md) **`hual`** describes the pattern as it stands now. As a plain noun, `zenom` is *emptiness*. (cue: 🪹 the nesting season is over; a former climate, not today's weather)
 
-> `zazawan hual vezehel thenom.`
+> `zazawan hual vezehel henom.`
 >
-> z-Azawan | h-always | v-sing | th-FORMER
+> z-Azawan | h-always | v-sing | h-FORMER
 >
 > "Azawan always used to sing." (no claim about now)
 
-> `zazawan hual vezehel thenom thevom.`
+> `zazawan hual vezehel henom thevom.`
 >
-> z-Azawan | h-always | v-sing | th-FORMER | th-MEMORY
+> z-Azawan | h-always | v-sing | h-FORMER | th-MEMORY
 >
 > "Azawan always used to sing, as I remember."
 
-> `zazawan hual vezehel thenom thobam bral.`
+> `zazawan hual vezehel henom thobam bral.`
 >
-> z-Azawan | h-always | v-sing | th-FORMER | [th-PATTERN | b-later]
+> z-Azawan | h-always | v-sing | h-FORMER | [th-PATTERN | b-later]
 >
 > "Going by the pattern, always singing will be something Azawan used to do."
 
-**Compare with:** PATTERN **`thobam`** says how you know (from repeated cases); it does not say the pattern is over. **`thenom`** is not a past tense either: it works with LIVE and in a forecast.
+**Compare with:** PATTERN **`thobam`** says how you know (from repeated cases); it does not say the pattern is over. **`henom`** is not a past tense either: it works with LIVE and in a forecast.
 
-Do not write **`thenom`** right before **`hual`**: that spot holds the restrictor's list of occasions (*always except when …*). Put **`hual`** first (bare *always*) and FORMER after the verb, where a channel goes on a [general claim](#universality).
+Do not write **`henom`** right before **`hual`**: that spot holds the restrictor's list of occasions (*always except when …*). Put **`hual`** first (bare *always*) and FORMER after the verb, where a channel goes on a [general claim](#universality).
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`thamom`** | outcome still in effect | *still counts* / residue | `amom` *debt* | 💰: unpaid balance still on the books |
-| **`thenom`** | usual pattern not claimed for now | *former climate* | `enom` *emptiness* | 🪹: the nesting season is over |
+| **`hamom`** | outcome still in effect | *still counts* / residue | `amom` *debt* | 💰: unpaid balance still on the books |
+| **`henom`** | usual pattern not claimed for now | *former climate* | `enom` *emptiness* | 🪹: the nesting season is over |
 
-Put RESIDUE and FORMER on `/th/`, anywhere in the sentence. Use `/w/` only when the word applies to the one `/ɡ/` adjective right after it. Both always end in **-m**.
+Put RESIDUE and FORMER on `/h/`, anywhere in the sentence: like an [intention adverb](clause.md#intention-adverbs), each covers the whole clause. Use `/w/` only when the word applies to the one `/ɡ/` adjective right after it. Both always end in **-m**.
 
 ### Already, still, not yet, no longer {#phasal}
 
@@ -658,7 +658,7 @@ When only one `/ɡ/` adjective is still or no longer so, write the same word und
 >
 > "Azawan sees a cat that is still sleepy."
 
-**Compare with:** RESIDUE **`thamom`** says the outcome of a finished event is **still in effect**, not that the act goes on. FORMER **`thenom`** retires a usual **pattern**; **`hewem`** says any state or act has stopped.
+**Compare with:** RESIDUE **`hamom`** says the outcome of a finished event is **still in effect**, not that the act goes on. FORMER **`henom`** retires a usual **pattern**; **`hewem`** says any state or act has stopped.
 
 #### Ever / never {#ever-never}
 
@@ -800,10 +800,10 @@ English *sleepier than usual* and *bigger than it looks* compare against an expe
 | CLUES `thunem` | what was worked out | *than calculated* |
 | REPORTED `thewam` | what was said or written | *than advertised* / *than the stories say* |
 | INTUITION `thahom` | your gut expectation | *than I expected* |
-| FORMER `thenom` | how it used to be | *than it used to be* |
+| FORMER `henom` | how it used to be | *than it used to be* |
 | NOTIONAL `thavom` | the imagined case | *than imagined* |
 
-MAY and MIRATIVE give no expected value to compare against, so neither can be a bar. *Than scheduled* ranks against a plan: that is the [PLAN bar](comparatives.md#bars) (`thamam`).
+MAY and MIRATIVE give no expected value to compare against, so neither can be a bar. *Than scheduled* ranks against a plan: that is the [PLAN bar](comparatives.md#bars) (`hamam`).
 
 ### Channels after `uem` {#channel-frame}
 
@@ -830,7 +830,7 @@ English *contrary to what I was told* and *against my gut* say the event went ag
 | REPORTED `thewam` | what was said or written | *contrary to what I was told* / *contrary to legend* |
 | INTUITION `thahom` | your gut expectation | *against my gut* |
 
-*Off schedule* goes against a plan: **`uem thamam`** ([contrary to a stance](sakes.md#contrary-to-stance)). MIRATIVE already says the claim ran against what you expected, so it does not follow **`uem`**. MAY, NOTIONAL, RESIDUE, and FORMER do not either: none of them is something the event could go against.
+*Off schedule* goes against a plan: **`uem hamam`** ([contrary to a stance](sakes.md#contrary-to-stance)). MIRATIVE already says the claim ran against what you expected, so it does not follow **`uem`**. MAY, NOTIONAL, RESIDUE, and FORMER do not either: none of them is something the event could go against.
 
 **Compare with:** `zazawan thezum vowogal.` says the walking surprised you. `zazawan vowogal uem thahom.` says your gut expected otherwise, whether or not the news surprised you.
 
@@ -854,8 +854,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *DEDUCED* | `thugum` | 📖 from *book*: read out of the premises |
 | *REPORTED* | `thewam` | 👂 from *ear*: someone said so |
 | *NOTIONAL* | `thavom` | 🎭 from *theater*: an imagined scene |
-| *RESIDUE* | `thamom` | 💰 from *money*: a debt left standing |
-| *FORMER* | `thenom` | 🪹 from *empty nest*: what used to be |
+| *RESIDUE* | `hamom` | 💰 from *money*: a debt left standing |
+| *FORMER* | `henom` | 🪹 from *empty nest*: what used to be |
 | *MIRATIVE* | `thezum` | 😮 from *surprise*: it turns out |
 
 **Review:**
@@ -881,9 +881,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *I can see that Azawan has left and is still gone.*
 
 ::: details Show answer
-`zazawan thodom thamom vedabal.`
+`zazawan thodom hamom vedabal.`
 
-z-Azawan | th-LIVE | th-RESIDUE | v-departure
+z-Azawan | th-LIVE | h-RESIDUE | v-departure
 :::
 
 **2.** *I heard third-hand that Alahen screams.*
@@ -960,10 +960,10 @@ v-rain | [th-PATTERN.strong | [b-later | b-that-clause]] | [z-cloud | g-gray]
 *It will rain, going by the well-established pattern, given the gray clouds.*
 :::
 
-**5.** `zalahen thenom zel gegeval.`
+**5.** `zalahen henom zel gegeval.`
 
 ::: details Show answer
-[z-Alahen | th-FORMER | z-rank/more | g-gray]
+[z-Alahen | h-FORMER | z-rank/more | g-gray]
 
 *Alahen is grayer than Alahen used to be.*
 :::
@@ -1015,9 +1015,9 @@ The scream is your evidence, so it goes after CLUES; **`thavem`** would make the
 ### Mood on one adjective
 <a id="mood-on-adjective"></a>
 
-The `/th/` words on this page (MAY, the channels, RESIDUE, FORMER, NOTIONAL) cover the whole sentence. When one applies only to a single `/ɡ/` adjective, put the same word on `/w/` right before that adjective instead.
+The `/th/` words on this page (MAY, the channels, NOTIONAL) and the `/h/` words RESIDUE and FORMER cover the whole sentence. When one applies only to a single `/ɡ/` adjective, put the same word on `/w/` right before that adjective instead.
 
-Only words about **how you know** or **how things stand** move to `/w/` this way: the ones above, [CAUSE](causation.md#cause), the [*already* / *still* words](#phasal), and [*can* with `ubo`](intention.md#ability-fallback). A plan, decision, try, or want stays on `/th/`: on `/w/` the same spelling is the ordinary word of its root (`wamam` *as planned*, `wehum` *decidedly*, `wudum` *tentatively*, `wohum` *wishfully*).
+Only words about **how you know** or **how things stand** move to `/w/` this way: the ones above, [CAUSE](causation.md#cause), the [*already* / *still* words](#phasal), and [*can* with `ubo`](intention.md#ability-fallback). A plan, decision, try, or want stays on its own letter (`/h/`, or `/th/` for WANT): on `/w/` the same spelling is the ordinary word of its root (`wamam` *as planned*, `wehum` *decidedly*, `wudum` *tentatively*, `wohum` *wishfully*).
 
 > `zazawan dahodal wevom geredal vahahal.`
 >
@@ -1063,9 +1063,9 @@ Some channels only point one way:
 | **`thodom`** LIVE | no offset | the scene is in view now |
 | **`thobam`** PATTERN | **`-`** or **`+`** | **`-`**: it happened then, if the pattern held; **`+`**: it will, if the pattern holds |
 | **`thunem`** CLUES, **`thewam`** REPORTED, **`thahom`** INTUITION | **`-`** or **`+`** | the channel does not fix the time |
-| [PLAN](intention.md#plan-predict) **`thamam`** | **`+`** only | the intended act is later |
+| [PLAN](intention.md#plan-predict) **`hamam`** | **`+`** only | the intended act is later |
 
-The wrong sign on a one-way word (**`thevom`** with **`+`**, **`thamam`** with **`-`**) is not a sentence.
+The wrong sign on a one-way word (**`thevom`** with **`+`**, **`hamam`** with **`-`**) is not a sentence.
 
 A [carried](#carry-forward) channel keeps its offset. Date the first sentence of a story, and the bare sentences after it happen then too, so a past story needs no tense and no offset on every line. A new offset starts a new frame.
 
@@ -1242,12 +1242,26 @@ The holder may be the [topic pronoun](pronouns.md#topic-pronoun), whoever the co
 >
 > "I gather one would think Alahen left."
 
+**Someone else's want** goes the same way. [WANT](intention.md#want) alone is yours; after a holder it is theirs, and the seam word says how you know what they want. After **`uem`** ([contrary to a stance](sakes.md#contrary-to-stance)), write the holder word, then WANT, for *against their wishes*.
+
+> `zazawan thewamazawan thohum vowogal.`
+>
+> z-Azawan | th-REPORTED-Azawan | th-WANT-unstated | v-walk
+>
+> "I hear Azawan wants to walk."
+
+> `zalahen vezebal uem thunemazawan thohum.`
+>
+> z-Alahen | v-sleep | [contrary-to | th-CLUES-Azawan | th-WANT-unstated]
+>
+> "Alahen sleeps, against Azawan's wishes, as far as I can tell."
+
 **The seam word is yours; the rest of the clause is the holder's.** The word that carries the name says how **you** know about the holder's view: you inferred it, heard it, guess it, or are imagining it. You claim nothing about whether the holder is right, and nothing about your own view. Everything else in the clause, wherever it sits, belongs to the holder:
 
 | In the clause | With no holder | With a holder |
 |---------------|----------------|---------------|
 | The event | you assert it | what the holder takes to be so; you do not assert it |
-| MAY, MIRATIVE, CAUSE poles, DECISION, prescription | yours | the holder's |
+| MAY, MIRATIVE, CAUSE poles, WANT, prescription | yours | the holder's |
 | [Sake](sakes.md) words and [emotion compose](sakes.md#emotion-compose), with their endings | your stake and feeling | the holder's stake and feeling |
 | A `/ɡ/` sake's *my* reading ([personal possession](sakes.md#personal-possession)) | your belonging | the holder's belonging |
 | Another evidential | how you know | how the holder knows |
@@ -1373,7 +1387,7 @@ A **definition** works both ways: whatever has the property is that kind, and ev
 
 The channel stays on the main sentence and covers the whole generalization. Put it before the pole, as with the [evidence clause](#evidence-clause): `zual gagadul vezebal thobal thoyem barl …` is *going by a well-established pattern, every cat sleeps when …*.
 
-**Compare with:** a general claim you are **not** giving as today's report is [FORMER](#former-climate) (`thenom`). *Every cat must sleep* as a rule someone sets is [REQUIRE](sakes.md#requirement) (`thumem`), not a law of how things work. *Maybe every cat sleeps* is [MAY](#may) on the same clause.
+**Compare with:** a general claim you are **not** giving as today's report is [FORMER](#former-climate) (`henom`). *Every cat must sleep* as a rule someone sets is [REQUIRE](sakes.md#requirement) (`thumem`), not a law of how things work. *Maybe every cat sleeps* is [MAY](#may) on the same clause.
 
 ### Practice {#advanced-practice}
 

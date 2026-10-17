@@ -206,6 +206,12 @@ Each is a `/th/` word on the clause. The ending says where the rule comes from: 
 <!-- generated: overlays kind=deontic -->
 | Agazan | English | Taught in | Stage |
 |--------|---------|-----------|-------|
+| `huxedel` | binding refusal by the affected (a settled opt-out) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
+| `huxedem` | consent refused outright by the affected (withdraws any earlier revocable yes) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
+| `huxeder` | consent presumed absent from the affected (they probably don't want it) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
+| `huxegol` | consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
+| `huxegom` | consent given outright by the affected (the /b/ or else the actor); revocable any time | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
+| `huxegor` | consent assumed or inferred from the affected (the /b/ or else the actor) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
 | `thedel` | disallowed by a rule policy or formal ban | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
 | `thedem` | forbidden by a person (speaker by default or the /b/ forbidder) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
 | `theder` | tacitly disapproved (no one forbade it outright) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
@@ -215,12 +221,6 @@ Each is a `/th/` word on the clause. The ending says where the rule comes from: 
 | `thumel` | required by a rule policy or law (no one in particular demands it) | [Requirement (thumel / thumem / thumer)](../sakes.md#requirement) | I |
 | `thumem` | required by a person (speaker by default or the /b/ who demands it) | [Requirement (thumel / thumem / thumer)](../sakes.md#requirement) | I |
 | `thumer` | expected by custom (no rule and no one demanding it) | [Requirement (thumel / thumem / thumer)](../sakes.md#requirement) | I |
-| `thuxedel` | binding refusal by the affected (a settled opt-out) | [Consent (thuxegol / thuxegom / thuxegor)](../sakes.md#consent) | I |
-| `thuxedem` | consent refused outright by the affected (withdraws any earlier revocable yes) | [Consent (thuxegol / thuxegom / thuxegor)](../sakes.md#consent) | I |
-| `thuxeder` | consent presumed absent from the affected (they probably don't want it) | [Consent (thuxegol / thuxegom / thuxegor)](../sakes.md#consent) | I |
-| `thuxegol` | consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms | [Consent (thuxegol / thuxegom / thuxegor)](../sakes.md#consent) | I |
-| `thuxegom` | consent given outright by the affected (the /b/ or else the actor); revocable any time | [Consent (thuxegol / thuxegom / thuxegor)](../sakes.md#consent) | I |
-| `thuxegor` | consent assumed or inferred from the affected (the /b/ or else the actor) | [Consent (thuxegol / thuxegom / thuxegor)](../sakes.md#consent) | I |
 <!-- /generated -->
 
 | Job | Example | English | Stage |
@@ -233,26 +233,26 @@ Each is a `/th/` word on the clause. The ending says where the rule comes from: 
 | [Requirement, by rule](../sakes.md#requirement) | `zazawan vowogal thumel.` | *Azawan has to walk (the rules say so).* | I |
 | [Requirement, by a person](../sakes.md#requirement) | `zahaben vehahel thumem balahen.` | *Alahen makes Ahaben sit.* | I |
 | [Requirement, by custom](../sakes.md#requirement) | `zalahen vezebal thumer.` | *Alahen is supposed to sleep.* | I |
-| [Consent](../sakes.md#consent): who it happens to, in `/b/` | `zazawan vezebel thuxegom bahaben.` | *Azawan tells, and Ahaben said yes.* | I |
-| [Binding consent](../sakes.md#consent) | `zazawan vezebel thuxegol bahaben.` | *as Ahaben agreed in advance* | I |
-| [Assumed consent, several people](../sakes.md#consent) | `zazawan vezebel thuxegor bahaben balahen bal.` | *assuming Ahaben and Alahen are OK* | I |
-| [Consent, no `/b/`](../sakes.md#consent): only the actor | `zalahen vezebal thuxegom.` | *Alahen lets themself sleep.* | I |
-| [A promise](../sakes.md#consent) | `zSELFn vowogal thuxegol.` | *I promise (you) to walk.* | I |
-| [Promise to someone else](../sakes.md#consent) | `zSELFn vowogal thuxegol el bahaben.` | *I promise Ahaben I'll walk.* | I |
-| [Check in](../sakes.md#consent) | `yom zazawan vezebel thuxegom.` | *Are you still OK with this?* | I |
+| [Consent](../sakes.md#consent): who it happens to, in `/b/` | `zazawan vezebel huxegom bahaben.` | *Azawan tells, and Ahaben said yes.* | I |
+| [Binding consent](../sakes.md#consent) | `zazawan vezebel huxegol bahaben.` | *as Ahaben agreed in advance* | I |
+| [Assumed consent, several people](../sakes.md#consent) | `zazawan vezebel huxegor bahaben balahen bal.` | *assuming Ahaben and Alahen are OK* | I |
+| [Consent, no `/b/`](../sakes.md#consent): only the actor | `zalahen vezebal huxegom.` | *Alahen lets themself sleep.* | I |
+| [A promise](../sakes.md#consent) | `zSELFn vowogal huxegol.` | *I promise (you) to walk.* | I |
+| [Promise to someone else](../sakes.md#consent) | `zSELFn vowogal huxegol el bahaben.` | *I promise Ahaben I'll walk.* | I |
+| [Check in](../sakes.md#consent) | `yom zazawan vezebel huxegom.` | *Are you still OK with this?* | I |
 | [Contrary to a stance](../sakes.md#contrary-to-stance): `uem` first | `zazawan vowogal uem thedel.` | *Azawan walks anyway.* | I |
 
-The negatives use the same endings: `thedel` / `thedem` / `theder` forbid, `thuxedel` / `thuxedem` / `thuxeder` refuse.
+The negatives use the same endings: `thedel` / `thedem` / `theder` forbid, `huxedel` / `huxedem` / `huxeder` refuse.
 
 <!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`thuxegol`](../sakes.md#consent) | a binding agreement | *by agreement* / *they signed on* | I |
-| [`thuxegom`](../sakes.md#consent) | the affected said yes; they can take it back | *they agreed* | I |
-| [`thuxegor`](../sakes.md#consent) | assumed or inferred | *I think they're OK with it* | I |
-| [`thuxedel`](../sakes.md#consent) | a binding refusal | *they opted out* | I |
-| [`thuxedem`](../sakes.md#consent) | the affected said no | *they refused* | I |
-| [`thuxeder`](../sakes.md#consent) | presumed absent | *they probably don't want it* | I |
+| [`huxegol`](../sakes.md#consent) | a binding agreement | *by agreement* / *they signed on* | I |
+| [`huxegom`](../sakes.md#consent) | the affected said yes; they can take it back | *they agreed* | I |
+| [`huxegor`](../sakes.md#consent) | assumed or inferred | *I think they're OK with it* | I |
+| [`huxedel`](../sakes.md#consent) | a binding refusal | *they opted out* | I |
+| [`huxedem`](../sakes.md#consent) | the affected said no | *they refused* | I |
+| [`huxeder`](../sakes.md#consent) | presumed absent | *they probably don't want it* | I |
 
 ## Don't mix up {#dont-mix-up}
 
@@ -262,7 +262,7 @@ The negatives use the same endings: `thedel` / `thedem` / `theder` forbid, `thux
 | `thoyem` *if* ([other routes remain](../causation.md#only-if)) | | `tholum` *only if* ([the outcome needs it](../causation.md#only-if)) |
 | `thavem` *because* ([a cause, no blame](../causation.md#fault)) | | `thavel` *fault* ([someone did wrong](../causation.md#fault)) |
 | `thavem` *because* ([the condition](../causation.md#cause)) | | `thegem` *mechanism* ([how it is produced](../causation.md#cause)) |
-| `thegom` *may* ([anyone with standing allows it](../sakes.md#permission)) | | `thuxegom` *the affected agreed* ([their own yes](../sakes.md#consent)) |
+| `thegom` *may* ([anyone with standing allows it](../sakes.md#permission)) | | `huxegom` *the affected agreed* ([their own yes](../sakes.md#consent)) |
 | `thegom` *may* ([the act is allowed](../sakes.md#permission)) | | `thumem` *has to* ([the act is demanded](../sakes.md#requirement)) |
 | `thanathem` *ought to, for relatedness* ([advice for a sake](../sakes.md#sake-force)) | | `thanathom` *for relatedness* ([why it is done](../sakes.md#sake-preference)) |
 | `thanatham` *thank you* ([my sake is met](../sakes.md#thanks-sorry)) | | `thanathum behon` *I'm sorry* ([your sake is hurt](../sakes.md#thanks-sorry)) |

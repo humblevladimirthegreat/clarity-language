@@ -92,6 +92,14 @@ The adverb describes the walking. The stance word describes your claim about it.
 
 A stance is yours **now**, as you speak. To give a stance you held at another time (*I was sure then*), see [stance as-of](relations.md#stance-as-of).
 
+`/th/` is for what is in a mind. With nothing else marked, that mind is yours. To give someone else's view, you name them and say how you know it ([whose view](knowing.md#holder)).
+
+### Intention adverbs {#intention-adverbs}
+
+Some `/h/` words say something about the doer that others could check: that they [plan](intention.md#plan) it, [decided](intention.md#decision-revisability) it, are [trying](intention.md#try) it, [can](intention.md#ability-fallback) do it, or that the one it happens to [agreed](sakes.md#consent). These are **intention adverbs**. Two more `/h/` words keep the books on an outcome: whether it [still counts](knowing.md#residue-and-former-climate). Unlike *hastily*, each of these covers the **whole clause** wherever it sits, the way a stance does.
+
+A plan, a decision, or an ability does not say the act happens: *plans to walk* is not *walks*. A try and a consent do say it happens.
+
 ### Extra nouns (`/b/`) {#extra-nouns}
 
 `/b/` marks an **extra noun**: a person or thing beyond the subject and direct object. It has two jobs. You tell them apart by the word **immediately before** the `/b/` word.
@@ -143,7 +151,7 @@ The role letters you have used so far:
 | `/ɡ/` | adjective (a property of the noun) | **ɡ** ≈ grade (a rating of the noun) |
 | `/w/` | extra detail on the next `/ɡ/`, `/h/`, or `/th/` word | **w** ≈ with (stuck to that host) |
 | `/h/` | adverb (how / when / where) | **h** starts *how* / *when* / *where* |
-| `/th/` | stance (how sure, how known, why, as if) | **th** ≈ *think* (your stance on the claim) |
+| `/th/` | stance (how sure, how known, why, as if): what is in a mind | **th** ≈ *think* (your stance on the claim) |
 
 ### Practice {#beginner-practice}
 

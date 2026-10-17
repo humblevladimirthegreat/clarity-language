@@ -44,6 +44,7 @@ IDs are stable (code and other meta pages cite them). Retired IDs are not reused
 | D-42 | `/th/` on the record or scroll root (`therem`, `thozem`) | either would be read as a channel, and each bundles jobs the channels keep apart: footage is your own senses (LIVE / MEMORY, and footage you watched can be misremembered), a document is someone else's word (REPORTED), a schedule is a PLAN, and a tale is NOTIONAL when made up or REPORTED when passed on as true. A stance word on these roots would blur exactly those lines. Parser: `retiredChannelRoot` | knowing.md |
 | D-43 | A `/b/` hosted by a call or reaction (`yuhohul bazawan` as *hooray for Azawan*) | a `/b/` right after a `/y/` word opens the body as the person who receives (*Alahen, tell Azawan …*), a natural order after a call; hosting it would take that away. A reaction's target already has hook + `/b/` (`yuhohul el bazawan`). A `gl-` adjective before the call or reaction still hosts its own `/b/` | speech-moves.md |
 | D-44 | Word order carries no meaning beyond the speech act's usual order: no information focus by fronting, and the usual order is never required. Rejected: verb first in yes/no questions and prohibitions | the usual orders are redundancy for a missed act word, so order is spent on that one job. Focus by fronting would make every reordered statement sound like another act; contrast already has `&`, and plain new information is clear from context. Only a command starts with its verb, so a lost `yol` / `yul` falls back to a statement, never to an order to act. A bare-verb body (`yul vowogal`) has no order to vary; `yul yul` covers it | speech-moves.md, questions.md, clause.md |
+| D-46 | `/th/` is what is in a mind (the speaker's, or a holder's through the seam); what someone did or can do that others could check is an `/h/` intention adverb: PLAN, DECISION, ATTEMPT, hostless ability, CONSENT, and the books words RESIDUE and FORMER. WANT and motive stay `/th/`; permission, prohibition and requirement stay `/th/` whole. WANT takes no `/b/` person (`thohum balahen`); someone else's want goes through a holder (`thunemalahen thohum`, and after `uem` the holder then WANT). Parser: `wantHost` | a stance letter that also held facts about the subject made *the subject's own plan* and *my doubt* look alike, and let WANT + `/b/` state another person's wish with no grounds, against the warrant-for-others'-views invariant. A plan, a decision, a try and a yes are said and acted on openly, so they need no channel. The deontics keep their default owner, the speaker (*you may go* is a performative); splitting them across two letters would separate the rule, person and custom endings of one family | clause.md, intention.md, knowing.md, sakes.md |
 | D-45 | A `/b/` right after a measure amount (`bagazem grurel bahaben`) or an equative's factor (`gelavam hradul bahaben`). Parser: `slotlessHost` | a `/b/` right after any `/ɡ/`, `/h/` or `/th/` word completes it. Reading this one as the clause's own extra noun would make that rule depend on the number's marker (a cardinal amount, but not an ordinal or label, would let it go), so a listener could not attach a `/b/` from the words alone. Hosting it would need a reading with no job: the amount already counts the unit, and the equative's other item is already in its list | numbers-applied.md, comparatives.md |
 
 ## Rejected alternatives
@@ -56,18 +57,18 @@ IDs are stable (code and other meta pages cite them). Retired IDs are not reused
 |---------|-------------|
 | Typical, Average, Social / Professional, Everyone | PATTERN `thobam` (population in `/b/` when needed), REQUIRE for a custom or rule, or a superlative |
 | my standard | REQUIRE `thumem`, or the attitude `thevegem` |
-| Best-effort | ABIL `thuboxal` |
+| Best-effort | ABIL `huboxal` |
 | the nine sake bars | the met sake word (`thegatham`, `thoyutham`, …) |
 
 ### Contrary to a stance (`uem`)
 
 The stance after `uem` must have content the event can contradict: a norm, an intention, a wish, a report, or an expectation. The parser rejects other stances (`frameKind`). Those cells are open in [unassigned-reserved](unassigned-reserved.md).
 
-### Whose want, plan, or decision
+### Whose plan or decision
 
 A plan with both an owner and a date keeps the person in PLAN's hosted `/b/` and puts the date on a time pole (`huwem bral`). Rejected:
 
-- **A holder seam (`thamamalahen`).** A seam grants access to someone's view and hands them the whole clause.
+- **A holder seam on PLAN.** A seam grants access to someone's view and hands them the whole clause; a plan is an `/h/` fact the owner states openly (D-46).
 - **A person + time join in the one slot.** That puts two kinds in one slot.
 
 ### Stand-in dependents

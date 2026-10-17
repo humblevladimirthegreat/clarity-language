@@ -284,14 +284,14 @@ z-Alahen | g-police
 
 #### What changes {#beginner-what-changes}
 
-**1.** `zazawan thamar vezewel.` / `zazawan thamal vezewel.`
+**1.** `zazawan hamar vezewel.` / `zazawan hamal vezewel.`
 
 ::: details Show answer
-z-Azawan | th-plan-sketch | v-swim
+z-Azawan | h-plan-sketch | v-swim
 
-z-Azawan | th-plan-atlas | v-swim
+z-Azawan | h-plan-atlas | v-swim
 
-With **`thamar`**, Azawan only intends to swim: the direction, details open. With **`thamal`**, Azawan is fully prepared, with hurdles planned for.
+With **`hamar`**, Azawan only intends to swim: the direction, details open. With **`hamal`**, Azawan is fully prepared, with hurdles planned for.
 
 **Rule:** [Plan](intention.md#plan)
 :::
@@ -592,14 +592,14 @@ With **`hul`**, Alahen fights, but not at night, and other times are left open. 
 **Rule:** [More occasions](restrictors.md#more-occasions)
 :::
 
-**2.** `zazawan thehul vamol.` / `zazawan thehur vamol.`
+**2.** `zazawan hehul vamol.` / `zazawan hehur vamol.`
 
 ::: details Show answer
-z-Azawan | th-DECISION-irreversible | v-pay
+z-Azawan | h-DECISION-irreversible | v-pay
 
-z-Azawan | th-DECISION-temporary | v-pay
+z-Azawan | h-DECISION-temporary | v-pay
 
-With **`thehul`**, Azawan has decided for good to pay. With **`thehur`**, Azawan has decided to pay only for now.
+With **`hehul`**, Azawan has decided for good to pay. With **`hehur`**, Azawan has decided to pay only for now.
 
 **Rule:** [Decision (revisability)](intention.md#decision)
 :::

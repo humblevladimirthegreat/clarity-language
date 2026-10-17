@@ -221,7 +221,7 @@ Wave 1 decisions:
 Wave 2 decisions:
 - **Applied in the wave check:** bare `v-tell` is *speak*, not *speak up* (not a sense alias, and it adds *voicing an objection*). A note that repeats *Taking 22 July as now* (*a placeholder*) is dropped, as on relations.md. RESIDUE is *had left and was still gone*, as on knowing.md. Generic `oben` is *one* / *you* (people in general).
 - **Strange examples:** blue dogs are red (spans.md, keeping *only the color is what Azawan says*) or black (pronouns.md, next to a red dog); *the book sits above the tree* is *a bird sits above the dog*; a spoken quote is written down, not seen; *saw …* with no object is *walk*. On say-reasons.md `## Practice`, a bare *see* gains *a fire* (`davahel`, already in the bank), so the guard lists added constructions there.
-- **Gaps for the editor** (neither side edited):
+- **Gaps for the editor** (resolved 2026-10-17: `bozan`; a punched undergoer in roles.md practice and the result note; `doexarahal` *a finish line*; DECISION moved to `/h/`, so `huhum` dates it; WANT is the speaker's unless a holder names someone else, design-decisions D-46):
   - pronouns.md topic pronoun block: `zalaher dozan vezebel` is glossed *Alahen tells Azawan*, but `/d/` on *tell* is what is said. Fix with `bozan`, or a verb whose `/d/` is a person.
   - roles.md: `duxagozal` is *something constructed*, but § result says a newly made thing is `ao` (`daoxagozal`).
   - roles.md: `doexuvudel` is *a destination* (from *go*), but **-l** takes the concrete sense, so the parser glosses `goal-x-footprints`.

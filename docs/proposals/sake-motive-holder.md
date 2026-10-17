@@ -120,10 +120,10 @@ The existing `zamun vowogal.` block becomes the first example.
 ## Open questions
 
 1. **What does a motive word assert on someone else's act, with no holder?** The proposal reads `zazawan vezebel thanathom` as *the act serves my stake, as I see it*: your framing of what the act is for, not a report of Azawan's reasons.
-   - (a) Keep that reading and teach it as written above. *Recommended*: it keeps every sake word the speaker's, as the rule already says.
+   - (a) Keep that reading and teach it as written above. *Recommended*: it keeps every sake word the speaker's, as the rule already says. EDITOR: AGREED
    - (b) Allow motive without a holder only on your own acts, so motive on someone else's act always needs a holder. That is stricter and simpler to teach, but it rejects a form the parser accepts. It would need an `unassigned-reserved.md` row and a parser rejection.
 2. **Whose stake is plain prescription for?** By the rule, `zahaben vezehel thoyuthel` (no `/b/`) is advice to sing for **my** health. Claritish reads the same shape as the listener's health.
-   - (a) Keep the rule. Advice for the advisee names them in `/b/` (the rewrites above), and Claritish changes to match. *Recommended*: one rule for every sake word, and naming whose good the advice serves is the point of the feature.
+   - (a) Keep the rule. Advice for the advisee names them in `/b/` (the rewrites above), and Claritish changes to match. *Recommended*: one rule for every sake word, and naming whose good the advice serves is the point of the feature. EDITOR: AGREED
    - (b) Make the advisee the default for prescription only. That fixes Claritish and the old examples for free, but it breaks the "every sake word is yours" rule that the motive design depends on.
 3. **Thanks and sorry to someone else's stake** (`thanathum balahen`, *owns up to a harm to Alahen*) are not affected: the `/b/` names the stake. No change.
 4. **The learner's name as a teaching device.** Step 3 removes most of the places a reader sees their own name. Keep it in greetings and bids only (*recommended*), or also keep one `SELF` sentence on pronouns.md showing a name used where the mention must outlast the conversation.

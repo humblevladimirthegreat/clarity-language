@@ -693,7 +693,7 @@ Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To 
 
 ### Permission (`thegol` / `thegom` / `thegor`) {#permission}
 
-English *may* / *is allowed to* says a restriction is lifted. Put **`thegol`**, **`thegom`**, or **`thegor`** on the clause: stance **`th`** on the root **`ego`** (🟢 *green circle*). The ending says **where the permission comes from**: a rule, a person, or nobody. Use **-l** when a rule, policy, or formal right allows it. Use **-m** when a person grants it; that person is the speaker unless a `/b/` right after the permission word names someone else. Use **-r** when no one granted it but no one objected either. If you do not know, use **-m**.
+English *may* / *is allowed to* says a restriction is lifted. Put **`thegol`**, **`thegom`**, or **`thegor`** on the clause: stance **`th`** on the root **`ego`** (🟢 *green circle*). The ending says **where the permission comes from**: a rule, a person, or nobody. Use **-l** when a rule, policy, or formal right allows it. Use **-m** when a person grants it; that person is the speaker unless a `/b/` right after the permission word names someone else. A person who grants something does it openly, so that `/b/` is a party to the permission, not a [holder](knowing.md#holder) whose mind you report. Use **-r** when no one granted it but no one objected either. If you do not know, use **-m**.
 
 > `zazawan vowogal thegom.`
 >
@@ -766,67 +766,67 @@ English *must* / *has to* / *is supposed to* puts a demand on an act without nam
 
 **Compare with:** [prescription](#sake-force) **`the`** says the act *ought* to serve a named sake, a reason you can check. Requirement says only that a rule, a person, or custom demands it. A [command](speech-moves.md#speech-act-beginner) **`yel`** is the speaker telling the listener now; **`thumem`** reports a demand, which may be someone else's.
 
-### Consent (`thuxegol` / `thuxegom` / `thuxegor`) {#consent}
+### Consent (`huxegol` / `huxegom` / `huxegor`) {#consent}
 
-Consent is permission from **the one the act happens to**: their body, their things, their time. Put **`thuxegol`**, **`thuxegom`**, or **`thuxegor`** on the clause: stance **`th`**, then role vowel **`u`** (the one it happens to), mid-word **`x`**, and the root **`ego`**. A `/b/` right after the consent word names who consents. That slot holds one noun; when several people are affected, fill it with a [plural](plurality.md) or a [join](joins.md). The actor's own consent is always implied, so **with no `/b/` the only person affected is the actor**, and the clause reads as *letting yourself*.
+Consent is permission from **the one the act happens to**: their body, their things, their time. Put **`huxegol`**, **`huxegom`**, or **`huxegor`** on the clause: **`h`**, then role vowel **`u`** (the one it happens to), mid-word **`x`**, and the root **`ego`**. A yes is something people say or sign openly, so consent is an [intention adverb](clause.md#intention-adverbs) on `/h/`, not a stance: it covers the whole clause and needs no channel. A `/b/` right after the consent word names who consents. That slot holds one noun; when several people are affected, fill it with a [plural](plurality.md) or a [join](joins.md). The actor's own consent is always implied, so **with no `/b/` the only person affected is the actor**, and the clause reads as *letting yourself*.
 
-The ending says **how binding the yes is**, with the same cues as [permission](#permission): **-l** ≈ law, **-m** ≈ mouth, **-r** ≈ read the room. Use **-l** for a binding agreement: they signed on in advance, and withdrawing has terms. Use **-m** when they said yes; they can take it back at any time. Use **-r** when you are assuming or inferring it and no one said yes. If you know they said yes but not how binding it is, use **-m**.
+The ending says **how binding the yes is**, with the same cues as [permission](#permission): **-l** ≈ law, **-m** ≈ mouth, **-r** ≈ read the room. Use **-l** for a binding agreement: they signed on in advance, and withdrawing has terms. Use **-m** when they said yes; they can take it back at any time. Use **-r** when no one said yes and it is taken as given. If you know they said yes but not how binding it is, use **-m**.
 
-> `zazawan vezebel thuxegom bahaben.`
+> `zazawan vezebel huxegom bahaben.`
 >
-> z-Azawan | v-tell | [th-CONSENT-given | b-Ahaben]
+> z-Azawan | v-tell | [h-CONSENT-given | b-Ahaben]
 >
 > "Azawan tells, and Ahaben said yes to it."
 
-> `zazawan vezebel thuxegol bahaben.`
+> `zazawan vezebel huxegol bahaben.`
 >
-> z-Azawan | v-tell | [th-CONSENT-contract | b-Ahaben]
+> z-Azawan | v-tell | [h-CONSENT-contract | b-Ahaben]
 >
 > "Azawan tells, as Ahaben agreed to in advance."
 
-> `zazawan vezebel thuxegor bahaben balahen bal.`
+> `zazawan vezebel huxegor bahaben balahen bal.`
 >
-> z-Azawan | v-tell | [th-CONSENT-assumed | [b-Ahaben | b-Alahen | b-and]]
+> z-Azawan | v-tell | [h-CONSENT-assumed | [b-Ahaben | b-Alahen | b-and]]
 >
 > "Azawan tells, assuming Ahaben and Alahen are OK with it."
 
-> `zalahen vezebal thuxegom.`
+> `zalahen vezebal huxegom.`
 >
-> z-Alahen | v-sleep | th-CONSENT-given
+> z-Alahen | v-sleep | h-CONSENT-given
 >
 > "Alahen lets themself sleep."
 
-**-r** is allowed but visibly weaker. Choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*. On yourself, **-r** is half-hearted: `zSELFn vehahel thuxegor.` is *I suppose I'm OK with sitting*. **-l** on yourself is a vow: `zSELFn vehahel thuxegol.` is *I've committed myself to sitting*.
+**-r** is allowed but visibly weaker. Choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*. On yourself, **-r** is half-hearted: `zSELFn vehahel huxegor.` is *I suppose I'm OK with sitting*. **-l** on yourself is a vow: `zSELFn vehahel huxegol.` is *I've committed myself to sitting*.
 
-**Promise:** a vow said to someone is a promise. The listener is the one you promise by default: `zSELFn vowogal thuxegol.`, said to someone, is *I promise (you) to walk*. To name a different person as the one you promise, add the *for* hook ([extra noun](hooks.md#extra-noun)).
+**Promise:** a vow said to someone is a promise. The listener is the one you promise by default: `zSELFn vowogal huxegol.`, said to someone, is *I promise (you) to walk*. To name a different person as the one you promise, add the *for* hook ([extra noun](hooks.md#extra-noun)).
 
-> `zSELFn vowogal thuxegol el bahaben.`
+> `zSELFn vowogal huxegol el bahaben.`
 >
-> z-SELF | v-walk | th-CONSENT-contract | [for | b-Ahaben]
+> z-SELF | v-walk | h-CONSENT-contract | [for | b-Ahaben]
 >
 > "I promise Ahaben I'll walk."
 
 The weaker endings stay weaker on purpose: **-m** is *I'll do it* (you can still back out), and **-r** cannot pass for a promise.
 
-The negatives **`thuxedel`** / **`thuxedem`** / **`thuxeder`** use the same endings. **-l** is a binding refusal: they opted out, and the matter is settled. **-m** means they said no. Any no withdraws an ordinary **-m** yes; only a **-l** agreement has terms for withdrawing. **-r** means they probably don't want it; with no `/b/`, it is *not letting yourself*.
+The negatives **`huxedel`** / **`huxedem`** / **`huxeder`** use the same endings. **-l** is a binding refusal: they opted out, and the matter is settled. **-m** means they said no. Any no withdraws an ordinary **-m** yes; only a **-l** agreement has terms for withdrawing. **-r** means they probably don't want it; with no `/b/`, it is *not letting yourself*.
 
 <!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thuxegol`** | a binding agreement; withdrawing it has terms | *by agreement* / *they signed on* | **-l** ≈ law: they signed on, like a contract |
-| **`thuxegom`** | the affected said yes; they can take it back (default) | *they agreed* / *I let myself* | **-m** ≈ mouth: they said yes |
-| **`thuxegor`** | consent assumed or inferred | *I think they're OK with it* | **-r** ≈ read the room: you're guessing they're OK |
-| **`thuxedel`** | a binding refusal | *they opted out* | **-l** ≈ law: they opted out on record |
-| **`thuxedem`** | the affected said no | *they refused* | **-m** ≈ mouth: they said no |
-| **`thuxeder`** | consent presumed absent | *they probably don't want it* / *I won't let myself* | **-r** ≈ read the room: they probably don't want it |
+| **`huxegol`** | a binding agreement; withdrawing it has terms | *by agreement* / *they signed on* | **-l** ≈ law: they signed on, like a contract |
+| **`huxegom`** | the affected said yes; they can take it back (default) | *they agreed* / *I let myself* | **-m** ≈ mouth: they said yes |
+| **`huxegor`** | consent assumed or inferred | *I think they're OK with it* | **-r** ≈ read the room: you're guessing they're OK |
+| **`huxedel`** | a binding refusal | *they opted out* | **-l** ≈ law: they opted out on record |
+| **`huxedem`** | the affected said no | *they refused* | **-m** ≈ mouth: they said no |
+| **`huxeder`** | consent presumed absent | *they probably don't want it* / *I won't let myself* | **-r** ≈ read the room: they probably don't want it |
 
-To check in, ask: `yom zazawan vezebel thuxegom.` (*Are you still OK with this?*).
+To check in, ask: `yom zazawan vezebel huxegom.` (*Are you still OK with this?*).
 
-**Compare with:** permission **`thegom`** can come from anyone with the standing to grant it: `zazawan vezebel thegom balahen.` means Alahen allowed it, which is not the same as the listener agreeing. `zSELFn vehahel thegom.` is *I'm allowed to sit* (someone let me); `zSELFn vehahel thuxegom.` is *I let myself sit*.
+**Compare with:** permission **`thegom`** can come from anyone with the standing to grant it: `zazawan vezebel thegom balahen.` means Alahen allowed it, which is not the same as the listener agreeing. `zSELFn vehahel thegom.` is *I'm allowed to sit* (someone let me); `zSELFn vehahel huxegom.` is *I let myself sit*.
 
 ### Contrary to a stance (`uem`) {#contrary-to-stance}
 
-English *against the rules*, *against Alahen's will*, and *contrary to the plan* say that the event happens even though a rule, a person, or a plan says otherwise. Put the hook **`uem`** *contrary to* right before a `/th/` stance word. The stance then says what the event goes against, and it no longer applies to the claim. `zazawan vowogal thedel.` says Azawan is not allowed to walk; `zazawan vowogal uem thedel.` says Azawan walks anyway. (cue: **ue** ≈ undo aimed at; **-m** the opposing frame, which the stance spells out)
+English *against the rules*, *against Alahen's will*, and *contrary to the plan* say that the event happens even though a rule, a person, or a plan says otherwise. Put the hook **`uem`** *contrary to* right before a `/th/` stance word or an [intention adverb](clause.md#intention-adverbs). That word then says what the event goes against, and it no longer applies to the claim. `zazawan vowogal thedel.` says Azawan is not allowed to walk; `zazawan vowogal uem thedel.` says Azawan walks anyway. (cue: **ue** ≈ undo aimed at; **-m** the opposing frame, which the stance spells out)
 
 > `zazawan vowogal uem thedel.`
 >
@@ -836,9 +836,9 @@ English *against the rules*, *against Alahen's will*, and *contrary to the plan*
 
 The stance keeps its endings and its hosted `/b/`. On a refusal, the `/b/` is the person who said no, so the pair is English *against their will*:
 
-> `zazawan vezebel uem thuxedem balahen.`
+> `zazawan vezebel uem huxedem balahen.`
 >
-> z-Azawan | v-tell | [contrary-to | [th-CONSENT-refused | b-Alahen]]
+> z-Azawan | v-tell | [contrary-to | [h-CONSENT-refused | b-Alahen]]
 >
 > "Azawan tells, against Alahen's will." (Alahen said no)
 
@@ -850,15 +850,15 @@ The stance keeps its endings and its hosted `/b/`. On a refusal, the `/b/` is th
 
 A [plan](intention.md#plan) after **`uem`** is the subject's own unless a `/b/` names whose plan it is. A [speaker attitude](#speaker-attitude) after **`uem`** is what you were hoping for.
 
-> `zazawan vowogal uem thamam.`
+> `zazawan vowogal uem hamam.`
 >
-> z-Azawan | v-walk | [contrary-to | th-plan-itinerary]
+> z-Azawan | v-walk | [contrary-to | h-plan-itinerary]
 >
 > "Azawan walks, contrary to their own plan."
 
-> `zazawan vowogal uem thamam balahen.`
+> `zazawan vowogal uem hamam balahen.`
 >
-> z-Azawan | v-walk | [contrary-to | [th-plan-itinerary | b-Alahen]]
+> z-Azawan | v-walk | [contrary-to | [h-plan-itinerary | b-Alahen]]
 >
 > "Azawan walks, contrary to Alahen's plan."
 
@@ -876,17 +876,17 @@ Only the stance right after **`uem`** is what the event goes against. A stance a
 >
 > "Azawan walks against the rules, and I'm allowing it."
 
-The stance after **`uem`** has to say something the event can go against: a ban, a requirement, a refusal, a plan, or what you hoped.
+The word after **`uem`** has to say something the event can go against: a ban, a requirement, a refusal, a plan, a decision, a want, or what you hoped.
 
 | After **`uem`** | English |
 |-----------------|---------|
 | ban **`thedel`** / **`thedem`** / **`theder`** | *against the rules* / *though I forbade it* / *though people frown on it* |
 | requirement **`thumel`** / **`thumem`** / **`thumer`** | *contrary to regulations* / *against my orders* / *contrary to custom* |
-| refusal **`thuxedel`** / **`thuxedem`** / **`thuxeder`** | *against their will* (they opted out / they said no / they probably don't want it) |
-| plan **`thamar`** / **`thamam`** / **`thamal`** | *contrary to the plan* |
+| refusal **`huxedel`** / **`huxedem`** / **`huxeder`** | *against their will* (they opted out / they said no / they probably don't want it) |
+| plan **`hamar`** / **`hamam`** / **`hamal`** | *contrary to the plan* |
 | speaker attitude, such as **`thevegem`** | *against my hopes* |
 
-Permission and consent given (**`thegom`**, **`thuxegom`**) only lift a restriction, so nothing can go against them. Sake words cannot follow **`uem`** either: to say an act goes against someone's interest, put an [unmet](#sake-changeability) sake word on the clause (`zazawan vowogal thegathum balahen.` *Azawan's walking harms Alahen's interests*).
+Permission and consent given (**`thegom`**, **`huxegom`**) only lift a restriction, so nothing can go against them. Sake words cannot follow **`uem`** either: to say an act goes against someone's interest, put an [unmet](#sake-changeability) sake word on the clause (`zazawan vowogal thegathum balahen.` *Azawan's walking harms Alahen's interests*).
 
 **Compare with:** *despite the rain* is **`uem`** or **`hezom`** with a noun in `/b/` (`zazawan vowogal uem berehel.`). *Although Alahen said no* as a full sentence is **`hezom barl`** plus that sentence. The sentence after **`barl`** needs an event or a thing, so a stance word alone cannot fill it; use **`uem`** with the stance instead.
 
@@ -1071,10 +1071,10 @@ z-Ahaben | v-sit | th-REQUIRE-expected
 *Ahaben is supposed to sit.*
 :::
 
-**5.** `zazawan vebevol thuxegor balahen.`
+**5.** `zazawan vebevol huxegor balahen.`
 
 ::: details Show answer
-z-Azawan | v-pray | [th-CONSENT-assumed | b-Alahen]
+z-Azawan | v-pray | [h-CONSENT-assumed | b-Alahen]
 
 *Azawan prays, assuming Alahen is OK with it.*
 :::

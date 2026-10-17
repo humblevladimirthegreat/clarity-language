@@ -90,7 +90,7 @@ Once the conversation has a matching event, **-r** means the scene of **that** e
 
 `zexagozal` is a place where something is constructed (the **-l** sense of *construct*). A construction site as a kind of place, with no event in mind, is the dictionary word `dagezal`.
 
-**Compare with:** `zaxagozal` is who constructs; `duxagozal` is what is constructed. To say where a constructing in your sentence happens (*constructs in a house*), put the place on that clause with the extra-noun [hook](hooks.md#extra-noun) **`al`** plus `/b/`. The scene word is for naming the place itself.
+**Compare with:** `zaxagozal` is who constructs. What gets built did not exist before, so it is not an undergoer: it is the [result](#result). To say where a constructing in your sentence happens (*constructs in a house*), put the place on that clause with the extra-noun [hook](hooks.md#extra-noun) **`al`** plus `/b/`. The scene word is for naming the place itself.
 
 ### The extra `/b/` party (`o`)
 
@@ -334,14 +334,14 @@ z-Ahaben | d-scene-x-sleep | v-see
 Role vowel **`e`** names the scene; **`a`** would be someone who sleeps.
 :::
 
-**2.** *Ahaben sees something constructed.* `zahaben duxagozal vahahal.` or `zahaben daxagozal vahahal.`
+**2.** *Ahaben sees someone punched.* `zahaben duxabahel vahahal.` or `zahaben daxabahel vahahal.`
 
 ::: details Show answer
-`zahaben duxagozal vahahal.`
+`zahaben duxabahel vahahal.`
 
-z-Ahaben | d-patient-x-construct | v-see
+z-Ahaben | d-patient-x-punch | v-see
 
-Role vowel **`u`** names what the constructing happens to; **`a`** is who constructs.
+Role vowel **`u`** names who the punching happens to; **`a`** is who punches.
 :::
 
 #### Fix it {#beginner-fix-it}
@@ -408,15 +408,15 @@ A movement has three more parts: where it heads, where it comes out of, and the 
 
 | Agazan | Names | English | Cue |
 |--------|-------|---------|-----|
-| `…oexROOT…` | the **goal** of the event | *a destination* (from *go*), *a target* | **oe**, as in **`oel`** *toward* |
+| `…oexROOT…` | the **goal** of the event | *a finish line* (from *run*), *a target* | **oe**, as in **`oel`** *toward* |
 | `…uaxROOT…` | the **source** it comes out of | *a spring* (from *pour*), *a quarry* | **ua**, as in **`ual`** *out of* |
 | `…uoxROOT…` | the **path** it goes by | *a walkway* (from *walk*), *a route* | **uo**, as in **`uol`** *through* |
 
-> `zazawan doexuvudel vahahal.`
+> `zazawan doexarahal vahahal.`
 >
-> z-Azawan | d-goal-x-footprints | v-see
+> z-Azawan | d-goal-x-run | v-see
 >
-> "Azawan sees a destination."
+> "Azawan sees a finish line."
 
 > `zalahen duoxowogal vahahal.`
 >

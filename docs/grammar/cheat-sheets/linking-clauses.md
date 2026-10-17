@@ -258,8 +258,8 @@ Whose-now is speech-now unless you move it. `huhum` claims the moment as real; `
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [As of a date](../relations.md#as-of) | `zalahen thamom huhum b_#22,7 vedabal.` | *As of 22 July, Alahen had left and was still gone.* | A |
-| [Resume the same now](../relations.md#as-of) | `zalahen thamom huhum b_#22,7 vedabal. xazawan thamom huhur vowogal.` | *…As of that same day, Azawan's walk still counted too.* | A |
+| [As of a date](../relations.md#as-of) | `zalahen hamom huhum b_#22,7 vedabal.` | *As of 22 July, Alahen had left and was still gone.* | A |
+| [Resume the same now](../relations.md#as-of) | `zalahen hamom huhum b_#22,7 vedabal. xazawan hamom huhur vowogal.` | *…As of that same day, Azawan's walk still counted too.* | A |
 | [Stance then](../relations.md#stance-as-of) | `zalahen thuhum b_#22,7 thovum vedabal.` | *On 22 July, I thought Alahen might leave.* | A |
 | [Back then](../relations.md#stance-as-of) | `zalahen thuhum brul thovum vedabal.` | *Back then, I thought Alahen might leave.* | A |
 

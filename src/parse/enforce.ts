@@ -504,15 +504,19 @@ function isTimePole(word: LexWord): boolean {
   return word.pos === "h" && word.overlay?.kind === "clause_pole" && TIME_POLES.has(word.overlay.gloss);
 }
 
-/** A `/th/` channel or PLAN: what licenses an offset from now (design-decisions D-10). */
+/** A `/th/` channel or an `/h/` PLAN: what licenses an offset from now (design-decisions D-10). */
 function isWarrant(word: LexWord): boolean {
-  return word.pos === "th" && (word.overlay?.kind === "evidential" || word.overlay?.kind === "plan");
+  return (word.pos === "th" && word.overlay?.kind === "evidential") || isPlan(word);
+}
+
+function isPlan(word: LexWord): boolean {
+  return word.pos === "h" && word.overlay?.kind === "plan";
 }
 
 /** MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one (knowing.md#dated-channel). */
 function enforceChannelSign(word: LexWord, hosted: HUnit["hosted"]): void {
   const sign = offsetSign(hosted?.bound, hosted?.amount);
-  if (!sign || word.pos !== "th" || !word.overlay) return;
+  if (!sign || (word.pos !== "th" && !isPlan(word)) || !word.overlay) return;
   const base = word.overlay.gloss.split(".")[0];
   const wrong =
     (word.overlay.kind === "evidential" && base === "MEMORY" && sign !== "-") ||
@@ -587,6 +591,17 @@ function enforceFeelingLandmark(words: LexWord[], hosted: Hosted | undefined): v
       throw new ConstructionError("feelingLandmark", `${word.raw} ${hosted.bound.raw}`);
     }
   }
+}
+
+/**
+ * WANT hosts no person: with no holder it is the speaker's want, and someone else's want goes through a holder seam,
+ * so a `/b/` cannot slip in another person's wish with no grounds (intention.md#want). A time offset is fine.
+ */
+function enforceWantHost(unit: HUnit): void {
+  const bound = unit.hosted?.bound;
+  if (unit.word.pos !== "th" || unit.word.overlay?.kind !== "want" || !bound) return;
+  if (bound.family.kind === "number") return;
+  throw new ConstructionError("wantHost", `${unit.word.raw} ${bound.raw}`);
 }
 
 /** `uem` + a stance: the stance must say something the event can go against, and holds no stand-in (sakes.md#contrary-to-stance). */
@@ -726,6 +741,7 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
         case "hUnit":
           enforceFeelingLandmark([node.unit.word], node.unit.hosted);
           enforceAsOfWord(node.unit.word, node.unit.hosted?.bound);
+          enforceWantHost(node.unit);
           return;
         case "clauseCoord": {
           const last = node.coord.links.at(-1);

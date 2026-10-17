@@ -451,7 +451,7 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 | *deal* / *bargain* (a swap) | `zazawan dugul hehem bamol vehem.` | trades a book for money |
 | *deal* (*a great deal*) | `thobam zel gral` | more than the usual amount |
 | *bid* / *offer* (a price) | `zazawan damol vebel hehem bugul.` | offers money in exchange for the book |
-| *contract* (agreement) | `thuxegol` on the clause | CONSENT, binding |
+| *contract* (agreement) | `huxegol` on the clause | CONSENT, binding |
 | *figure out* / *find out* | `zazawan dugul vamagal.` | finds the object |
 | *figure* (shape) | `zevevol` | a frame |
 | *object* (a thing) | `zar` | an unnamed thing |

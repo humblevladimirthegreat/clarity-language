@@ -648,9 +648,9 @@ English *as of Friday*, *would*, *was going to*, and *if he had* mix two times: 
 
 Agazan keeps the two apart. With no extra marking, whose-now is **speech-now**, the moment you are speaking. To move it, write a hosted pair: **`huhum`** when you claim that moment as real (a dated entry in the record), **`huram`** when it is only a placeholder you are not claiming. Put the moment (the snapshot) in `/b/` immediately after. (cue: 📒 *ledger* stamps a dated line in the books; 🔖 *bookmark* holds the place without stamping)
 
-> `zalahen thamom huhum b_#22,7 vedabal.`
+> `zalahen hamom huhum b_#22,7 vedabal.`
 >
-> z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
+> z-Alahen | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 >
 > "As of 22 July, Alahen had left and was still gone."
 
@@ -664,9 +664,9 @@ With nothing else marked, the sitting happens at that now.
 
 The pair covers only its own clause. To keep the same whose-now in a following `/x/` clause, repeat the **same word** with **-r** and no `/b/` (`huhur` / `hurar`). A new pair with its own `/b/` replaces whose-now, whether it repeats the word or switches between `huhum` and `huram`. A clause (or a noun or adjective, below) takes at most one *as-of* pair.
 
-> `zalahen thamom huhum b_#22,7 vedabal. xazawan thamom huhur vowogal.`
+> `zalahen hamom huhum b_#22,7 vedabal. xazawan hamom huhur vowogal.`
 >
-> z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | th-RESIDUE | h-as-of.ledger | v-walk
+> z-Alahen | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | h-RESIDUE | h-as-of.ledger | v-walk
 >
 > "As of 22 July, Alahen had left and was still gone. As of that same day, Azawan's walk still counted too."
 
@@ -686,12 +686,12 @@ Do not put a bare person in `/b/` to mean “from Alahen’s now.” A person af
 Once whose-now is set, these count from it:
 
 - A [forecast](knowing.md#forecast) offset (`bral`) counts forward **from** that now.
-- [PLAN](intention.md#plan-predict) is planned **from** that now.
+- [PLAN](intention.md#plan-predict) is planned **from** that now, and a [DECISION](intention.md#decision) is held **at** that now.
 - [RESIDUE](knowing.md#residue) is what is still left over **at** that now.
 - [FORMER](knowing.md#former-climate) means the pattern no longer held **at** that now.
 - A bare verb happens **at** that now.
 
-[MAY](knowing.md#may), [DECISION](intention.md#decision), [CAUSE](causation.md#cause), and every other stance still count from speech-now; to move them too, use [stance as-of](#stance-as-of). Evidentials, apart from LIVE at the snapshot, still say how *you* know at speech-now.
+[MAY](knowing.md#may), [CAUSE](causation.md#cause), and every other stance still count from speech-now; to move them too, use [stance as-of](#stance-as-of). Evidentials, apart from LIVE at the snapshot, still say how *you* know at speech-now.
 
 > `zazawan zalahen zel wuhum b_#22,7 gamadam.`
 >
@@ -701,9 +701,9 @@ Once whose-now is set, these count from it:
 
 Here the snapshot covers only *challenging*. It does not reach a verb: a verb in this clause would still count from speech-now unless the clause had its own `/h/` pair.
 
-> `zamol thamom huhum bedabal.`
+> `zamol hamom huhum bedabal.`
 >
-> z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
+> z-money | h-RESIDUE | [h-as-of.ledger | b-departure]
 >
 > "As of the departure, the money still stood."
 
@@ -715,23 +715,23 @@ Here the snapshot covers only *challenging*. It does not reach a verb: a verb in
 
 *Before the departure* places the sitting itself; *as of 22 July* only sets the now the clause is measured from. The two times are separate.
 
-> `zalahen vowogal ol b_#22,7. xalahen thamom huhum b=_#22,7 vedabal.`
+> `zalahen vowogal ol b_#22,7. xalahen hamom huhum b=_#22,7 vedabal.`
 >
-> z-Alahen | v-walk | [at | b-_22,7] . x-Alahen | th-RESIDUE | [h-as-of.ledger | b-←_22,7] | v-departure
+> z-Alahen | v-walk | [at | b-_22,7] . x-Alahen | h-RESIDUE | [h-as-of.ledger | b-←_22,7] | v-departure
 >
 > "Alahen walked on 22 July. As of that day, Alahen had left and was still gone."
 
-> `zalahen thamom vedabal huhum barl zalahen vezebel.`
+> `zalahen hamom vedabal huhum barl zalahen vezebel.`
 >
-> z-Alahen | th-RESIDUE | v-departure | [h-as-of.ledger | b-that-clause] | z-Alahen | v-tell
+> z-Alahen | h-RESIDUE | v-departure | [h-as-of.ledger | b-that-clause] | z-Alahen | v-tell
 >
 > "As of when Alahen spoke, Alahen had left and was still gone."
 
 The speaking only sets the now; it is not what is left over.
 
-> `zalahen thamom huhum b_#22,7 vedabal. xazawan thobam bral huram b_#23,7 vowogal.`
+> `zalahen hamom huhum b_#22,7 vedabal. xazawan thobam bral huram b_#23,7 vowogal.`
 >
-> z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | [th-PATTERN | b-later] | [h-as-of.bookmark | b-_23,7] | v-walk
+> z-Alahen | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | [th-PATTERN | b-later] | [h-as-of.bookmark | b-_23,7] | v-walk
 >
 > "As of 22 July, Alahen had left and was still gone. Taking 23 July as now, Azawan would walk, going by the pattern."
 
@@ -750,7 +750,7 @@ An *as-of* pair inside a finished inner clause cannot be resumed later in the ma
 
 ### Stance as-of {#stance-as-of}
 
-A stance is yours at speech-now: `thovum` is how unsure you are **as you speak**, and a sake or feeling word is how you stand **now**. English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself. Put the same *as-of* pair on `/th/`: **`thuhum`** for a real now, **`thuram`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, DECISION, CAUSE, sakes, and feelings, then reads from that now.
+A stance is yours at speech-now: `thovum` is how unsure you are **as you speak**, and a sake or feeling word is how you stand **now**. English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself. Put the same *as-of* pair on `/th/`: **`thuhum`** for a real now, **`thuram`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, WANT, CAUSE, sakes, and feelings, then reads from that now.
 
 > `zalahen thuhum b_#22,7 thovum vedabal.`
 >
@@ -821,7 +821,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
-| *RESIDUE* | `thamom` |
+| *RESIDUE* | `hamom` |
 | *PATTERN* | `thobam` |
 | *MAY* | `thovum` |
 | *book* | `ugul` |
@@ -836,9 +836,9 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *As of 22 July, Alahen had left and was still gone.*
 
 ::: details Show answer
-`zalahen thamom huhum b_#22,7 vedabal.`
+`zalahen hamom huhum b_#22,7 vedabal.`
 
-z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
+z-Alahen | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
 
 **2.** *the book as of 22 July*
@@ -867,10 +867,10 @@ z-book | [g-as-of.ledger | b-_22,7]
 
 #### Agazan → English {#advanced-agazan-to-english}
 
-**1.** `zahaben thamom huhum b_#23,7 vedabal. xazawan thamom huhur vehahel.`
+**1.** `zahaben hamom huhum b_#23,7 vedabal. xazawan hamom huhur vehahel.`
 
 ::: details Show answer
-z-Ahaben | th-RESIDUE | [h-as-of.ledger | b-_23,7] | v-departure . x-Azawan | th-RESIDUE | h-as-of.ledger | v-sit
+z-Ahaben | h-RESIDUE | [h-as-of.ledger | b-_23,7] | v-departure . x-Azawan | h-RESIDUE | h-as-of.ledger | v-sit
 
 *As of 23 July, Ahaben had left and was still gone. As of that same day, Azawan had sat down and was still sitting.*
 :::
@@ -883,10 +883,10 @@ z-Ahaben | th-RESIDUE | [h-as-of.ledger | b-_23,7] | v-departure . x-Azawan | th
 *Taking 22 July as now, it would rain, going by the pattern.*
 :::
 
-**3.** `zamol thamom huhum bedabal.`
+**3.** `zamol hamom huhum bedabal.`
 
 ::: details Show answer
-z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
+z-money | h-RESIDUE | [h-as-of.ledger | b-departure]
 
 *As of the departure, the money still stood.*
 :::

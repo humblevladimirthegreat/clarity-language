@@ -359,6 +359,8 @@ export type Unit =
       onLeft?: true;
       /** `uem` + a `/th/` stance: the opposing frame the event goes contrary to (sakes.md#contrary-to-stance). */
       frame?: HUnit;
+      /** WANT after a holder frame: the holder's wish the event goes against (intention.md#want). */
+      heldWant?: LexWord;
     }
   | { kind: "writingSpan"; word: LexWord }
   | { kind: "island"; island: IslandUnit }

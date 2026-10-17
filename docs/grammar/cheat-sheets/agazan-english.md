@@ -109,13 +109,21 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `hager` | STILL phasal (the state continues); -r for now: about to end | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `hagum` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `hahem` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
+| `hamal` | plan mood atlas map-resolution (includes backups; fully prepared) | [Plan](../intention.md#plan) | B |
+| `hamam` | plan mood itinerary map-resolution (steps on the map) | [Plan](../intention.md#plan) | B |
+| `hamar` | plan mood sketch map-resolution (direction-only intention) | [Plan](../intention.md#plan) | B |
+| `hamom` | residue mood (outcome still on the current tally) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
 | `han` | join-relation with or including (adverb + argument) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `hanom` | AFTER clause pole (just-after) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `haon` | join-relation among options (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `hazam` | locative between (two landmarks) | [Locative relations](../relations.md#locative-relations) | I |
 | `hebum` | locative across (edge to far edge of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
 | `hehem` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](../relations.md#exchange) | B |
+| `hehul` | decision mood irreversible changeability (settled pick) | [Decision (revisability)](../intention.md#decision-revisability) | I |
+| `hehum` | decision mood modifiable changeability (open to revision) | [Decision (revisability)](../intention.md#decision-revisability) | I |
+| `hehur` | decision mood temporary changeability (pick for now) | [Decision (revisability)](../intention.md#decision-revisability) | I |
 | `hen` | join-relation prioritizing (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
+| `henom` | former-climate mood (not the climate claimed now) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
 | `heveham` | BY clause pole (deadline: done at or before the endpoint) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `hewel` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `hewem` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
@@ -131,6 +139,10 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `homam` | UNTIL clause pole (endpoint bound) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `hon` | join-relation exclusively for (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `huan` | join-relation excluding (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
+| `hubom` | hostless ability fallback (capacity) | [When there is no single verb (ubo)](../intention.md#ability-fallback) | I |
+| `hudul` | attempt mood committed (keep going until it works or is ruled out) | [Try](../intention.md#try) | I |
+| `hudum` | attempt mood (commitment unstated) | [Try](../intention.md#try) | I |
+| `hudur` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](../intention.md#try) | I |
 | `huen` | join-relation deprioritizing (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `hugem` | locative around (figure on all sides of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
 | `huhum` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
@@ -143,6 +155,12 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `hurar` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `huwem` | WHILE clause pole (concurrent) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `huwum` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
+| `huxedel` | binding refusal by the affected (a settled opt-out) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
+| `huxedem` | consent refused outright by the affected (withdraws any earlier revocable yes) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
+| `huxeder` | consent presumed absent from the affected (they probably don't want it) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
+| `huxegol` | consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
+| `huxegom` | consent given outright by the affected (the /b/ or else the actor); revocable any time | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
+| `huxegor` | consent assumed or inferred from the affected (the /b/ or else the actor) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
 | `huzel` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `huzem` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `huzer` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
@@ -156,10 +174,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `thahol` | intuition evidential with strong evidence (strong gut sense) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thahom` | intuition evidential (gut sense you cannot fully spell out) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `thahor` | intuition evidential with weak evidence (faint hunch) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thamal` | plan mood atlas map-resolution (includes backups; fully prepared) | [Plan](../intention.md#plan) | B |
-| `thamam` | plan mood itinerary map-resolution (steps on the map) | [Plan](../intention.md#plan) | B |
-| `thamar` | plan mood sketch map-resolution (direction-only intention) | [Plan](../intention.md#plan) | B |
-| `thamom` | residue mood (outcome still on the current tally) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
 | `thavel` | BECAUSE clause pole with fault (the reason broke a norm) | [Fault](../causation.md#fault) | I |
 | `thavem` | BECAUSE clause pole (explanatory reason) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `thaver` | BECAUSE clause pole with a share (the reason contributed among others) | [Fault](../causation.md#fault) | I |
@@ -174,10 +188,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `thegol` | permission from a rule policy or formal right (no one in particular grants it) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
 | `thegom` | permission granted by a person (speaker by default or the /b/ grantor) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
 | `thegor` | tacit permission (no one objected; nobody granted it) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
-| `thehul` | decision mood irreversible changeability (settled pick) | [Decision (revisability)](../intention.md#decision-revisability) | I |
-| `thehum` | decision mood modifiable changeability (open to revision) | [Decision (revisability)](../intention.md#decision-revisability) | I |
-| `thehur` | decision mood temporary changeability (pick for now) | [Decision (revisability)](../intention.md#decision-revisability) | I |
-| `thenom` | former-climate mood (not the climate claimed now) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
 | `thevol` | memory evidential with strong evidence (vivid memory) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thevom` | memory evidential (remembered firsthand / reconstructive) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `thevor` | memory evidential with weak evidence (hazy memory) | [Evidence strength](../knowing.md#evidence-strength) | I |
@@ -201,10 +211,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `thovum` | may mood (could be; default) | [MAY](../knowing.md#may) | B |
 | `thovur` | may mood who-knows hold (leave unsettled; may never know) | [Hold endings (MAY)](../knowing.md#hold-endings-may) | B |
 | `thoyem` | IF clause pole (one-way conditional) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `thubom` | hostless ability fallback (capacity) | [When there is no single verb (ubo)](../intention.md#ability-fallback) | I |
-| `thudul` | attempt mood committed (keep going until it works or is ruled out) | [Try](../intention.md#try) | I |
-| `thudum` | attempt mood (commitment unstated) | [Try](../intention.md#try) | I |
-| `thudur` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](../intention.md#try) | I |
 | `thugul` | deduced evidential with strong evidence (every step could be shown) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thugum` | deduced evidential (follows from the premises) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `thugur` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Evidence strength](../knowing.md#evidence-strength) | I |
@@ -218,12 +224,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `thuner` | clues evidential with weak evidence (a weak clue) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thuram` | AS-OF stance pole (unasserted whose-now / placeholder now) | [Stance as-of](../relations.md#stance-as-of) | A |
 | `thurar` | AS-OF stance pole (unasserted whose-now / placeholder now) resume | [Stance as-of](../relations.md#stance-as-of) | A |
-| `thuxedel` | binding refusal by the affected (a settled opt-out) | [Consent (thuxegol / thuxegom / thuxegor)](../sakes.md#consent) | I |
-| `thuxedem` | consent refused outright by the affected (withdraws any earlier revocable yes) | [Consent (thuxegol / thuxegom / thuxegor)](../sakes.md#consent) | I |
-| `thuxeder` | consent presumed absent from the affected (they probably don't want it) | [Consent (thuxegol / thuxegom / thuxegor)](../sakes.md#consent) | I |
-| `thuxegol` | consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms | [Consent (thuxegol / thuxegom / thuxegor)](../sakes.md#consent) | I |
-| `thuxegom` | consent given outright by the affected (the /b/ or else the actor); revocable any time | [Consent (thuxegol / thuxegom / thuxegor)](../sakes.md#consent) | I |
-| `thuxegor` | consent assumed or inferred from the affected (the /b/ or else the actor) | [Consent (thuxegol / thuxegom / thuxegor)](../sakes.md#consent) | I |
 <!-- /generated -->
 
 ## `/v/` words {#v-words}

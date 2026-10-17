@@ -81,10 +81,10 @@ describe("classify", () => {
   });
 
   it("overlay mood on residue and former-climate", () => {
-    const residue = expectOverlay("thamom");
+    const residue = expectOverlay("hamom");
     assert.equal(residue.overlay?.kind, "residue");
     assert.equal(residue.overlay?.gloss, "RESIDUE");
-    const former = expectOverlay("thenom");
+    const former = expectOverlay("henom");
     assert.equal(former.overlay?.kind, "former_climate");
     assert.equal(former.overlay?.gloss, "FORMER");
   });
@@ -142,7 +142,7 @@ describe("classify", () => {
   });
 
   it("hostless ability overlay", () => {
-    const word = expectReading("thubom", "ability");
+    const word = expectReading("hubom", "ability");
     assert.ok(word.overlay);
     assert.equal(word.overlay!.senseForm, "ubom");
   });

@@ -213,6 +213,7 @@ export function visitUnit(unit: Unit, v: Visitor): void {
       for (const mod of unit.modifiers) v.word?.(mod, "hookModifier");
       v.word?.(unit.word, "hook");
       if (unit.frame) visitHUnit(unit.frame, v);
+      if (unit.heldWant) v.word?.(unit.heldWant, "unit");
       return;
     case "island":
       visitIsland(unit.island, v);

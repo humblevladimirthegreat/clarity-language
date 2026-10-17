@@ -44,14 +44,14 @@ describe("morphGlossLine — clause joins go between clauses", () => {
   });
   it("glosses a resume of a resume as the original referent", () => {
     expectLine(
-      "zazawan thamal vowogal xon zazawar vezehel xon zazawar vezebal.",
-      "[z-Azawan | th-plan-atlas | v-walk | x-or-else | z-←Azawan | v-sing | x-or-else | z-←Azawan | v-sleep]",
+      "zazawan hamal vowogal xon zazawar vezehel xon zazawar vezebal.",
+      "[z-Azawan | h-plan-atlas | v-walk | x-or-else | z-←Azawan | v-sing | x-or-else | z-←Azawan | v-sleep]",
     );
   });
   it("glosses the sequence fallback after an attempt", () => {
     expectLine(
-      "zazawan thudur vowogal xon zazawar vezehel.",
-      "[z-Azawan | th-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | v-sing]",
+      "zazawan hudur vowogal xon zazawar vezehel.",
+      "[z-Azawan | h-ATTEMPT-trial | v-walk | x-or-else | z-←Azawan | v-sing]",
     );
   });
 });
@@ -194,9 +194,9 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zamunx", "z-speaker-x");
     expectLine("zehonx", "z-listener-x");
     expectLine("thodom", "th-LIVE");
-    expectLine("thamom", "th-RESIDUE");
-    expectLine("thenom", "th-FORMER");
-    expectLine("thamar", "th-plan-sketch");
+    expectLine("hamom", "h-RESIDUE");
+    expectLine("henom", "h-FORMER");
+    expectLine("hamar", "h-plan-sketch");
     expectLine("gugol", "g-SAME");
   });
 
@@ -210,7 +210,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("derl", "d-to-clause");
     expectLine("durl", "d-lest-clause");
     expectLine("darm", "d-that-clause.open");
-    expectLine("thuboxel", "th-ABIL-unable-temporary");
+    expectLine("huboxel", "h-ABIL-unable-temporary");
   });
 
   it("lexicon senses use packed role English when present", () => {
@@ -267,8 +267,8 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("inclusive we", () => {
     expectLine(
-      "yael xodum zahan thamar vowogal vul.",
-      "y-yes | x-therefore | z-interlocutors | th-plan-sketch | [v-walk | v-not]",
+      "yael xodum zahan hamar vowogal vul.",
+      "y-yes | x-therefore | z-interlocutors | h-plan-sketch | [v-walk | v-not]",
     );
   });
 

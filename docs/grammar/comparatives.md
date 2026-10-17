@@ -436,41 +436,41 @@ English *three times bigger* usually means the same ratio: use **`zoel`** with `
 
 ### Comparing against a stance (bars) {#bars}
 
-English *more than planned* and *later than planned* rank one thing against a **value a stance sets**, not against another person: the plan sets how much and when. Write that `/th/` stance word where the second name would go, right before the rank join. That word is the **bar**. The join closes everything before it, so the bar is part of the comparison: it says what you rank against. It is not your stance on the whole sentence.
+English *more than planned* and *later than planned* rank one thing against a **value a stance sets**, not against another person: the plan sets how much and when. Write that `/th/` stance word, or that [intention adverb](clause.md#intention-adverbs) on `/h/` (PLAN, FORMER, ability, consent), where the second name would go, right before the rank join. That word is the **bar**. The join closes everything before it, so the bar is part of the comparison: it says what you rank against. It is not your stance on the whole sentence.
 
-> `zazawan thamam zel bral vevahal.`
+> `zazawan hamam zel bral vevahal.`
 >
-> [z-Azawan | th-plan-itinerary | z-rank/more | b-later] | v-arrival
+> [z-Azawan | h-plan-itinerary | z-rank/more | b-later] | v-arrival
 >
 > "Azawan arrives later than planned."
 
 The same stance word **after** the fence has its ordinary reading, a stance on the whole sentence. With one ranked name, the fence is then a [superlative](#superlatives):
 
-> `zazawan zel bral vevahal thamam.`
+> `zazawan zel bral vevahal hamam.`
 >
-> [z-Azawan | z-rank/more | b-later] | v-arrival | th-plan-itinerary
+> [z-Azawan | z-rank/more | b-later] | v-arrival | h-plan-itinerary
 >
 > "Azawan plans to arrive last."
 
 A bar fence ranks **one** item against **one** bar: with a bar, there is no second name and no second bar. Any of the rank joins works (**`zel`**, **`zuel`**, **`zoel`**, and their open **-m** forms), and the bar keeps its own ending. The fence can rank an object or a recipient the same way:
 
-> `zazawan dozolx thamam del gral vagadel.`
+> `zazawan dozolx hamam del gral vagadel.`
 >
-> z-Azawan | [d-strawberry-x | th-plan-itinerary | d-rank/more | g-amount] | v-eat
+> z-Azawan | [d-strawberry-x | h-plan-itinerary | d-rank/more | g-amount] | v-eat
 >
 > "Azawan eats more strawberries than planned."
 
-> `zazawan vezebel balahen thamam bel hral.`
+> `zazawan vezebel balahen hamam bel hral.`
 >
-> z-Azawan | v-tell | [b-Alahen | th-plan-itinerary | b-rank/more | h-how-often]
+> z-Azawan | v-tell | [b-Alahen | h-plan-itinerary | b-rank/more | h-how-often]
 >
 > "Azawan tells Alahen more often than planned."
 
 A [hook](hooks.md) and its `/b/` on the ranked item go right before the bar, the way they go right before a join word:
 
-> `zugul om bamun thamam zel garagam.`
+> `zugul om bamun hamam zel garagam.`
 >
-> [[z-book | [near | b-speaker]] | th-plan-itinerary | z-rank/more | g-heavy]
+> [[z-book | [near | b-speaker]] | h-plan-itinerary | z-rank/more | g-heavy]
 >
 > "This book is heavier than planned."
 
@@ -504,7 +504,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
-| *PLAN* | `thamam` |
+| *PLAN* | `hamam` |
 | *heavy* | `aragam` |
 | *intensity* | `ahegem` |
 | *mango* | `amegol` |
@@ -557,9 +557,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **6.** *Ahaben is heavier than planned.*
 
 ::: details Show answer
-`zahaben thamam zel garagam.`
+`zahaben hamam zel garagam.`
 
-[z-Ahaben | th-plan-itinerary | z-rank/more | g-heavy]
+[z-Ahaben | h-plan-itinerary | z-rank/more | g-heavy]
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -676,14 +676,14 @@ Intermediate ranked against a plan, and [sake bars](sakes.md#sake-bars) rank aga
 | CLUES `thunem` | what was worked out | *than calculated* / *than it should be* |
 | REPORTED `thewam` | what was said or written | *than advertised* / *than they said* / *than the stories say* |
 | INTUITION `thahom` | your gut expectation | *than I expected* |
-| FORMER `thenom` | how it used to be | *than it used to be* / *increasingly* |
+| FORMER `henom` | how it used to be | *than it used to be* / *increasingly* |
 | NOTIONAL `thavom` | the imagined case | *than imagined* / *than in theory* |
-| PLAN `thamam` | the plan or the schedule | *than planned* / *than scheduled* |
+| PLAN `hamam` | the plan or the schedule | *than planned* / *than scheduled* |
 | WANT `thohul` / `thohum` / `thohur` | the level wanted | *than wanted* / *than I wanted* |
-| ABIL `thuboxal` | what can be done | *as … as possible* |
+| ABIL `huboxal` | what can be done | *as … as possible* |
 | REQUIRE `thumel` / `thumem` / `thumer` | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* |
 | PERMIT `thegol` / `thegom` / `thegor` | the rule, the grant, or what is tolerated | *over the limit* / *more than they allow* / *than tolerated* |
-| CONSENT `thuxegom` | the agreed terms | *more than agreed* |
+| CONSENT `huxegom` | the agreed terms | *more than agreed* |
 | speaker attitude (`thevegem`, `thewedam`) | the case you hoped for or feared | *than hoped* / *than feared* |
 
 The bar's ending keeps its own job: on a channel it is [evidence strength](knowing.md#evidence-strength) (`thobal` *than it reliably is*, `thobar` *than the few cases so far*).
@@ -706,19 +706,19 @@ The bar's ending keeps its own job: on a channel it is [evidence strength](knowi
 >
 > "Azawan is sleepier than I expected."
 
-> `zazawan thenom zel gezebul.`
+> `zazawan henom zel gezebul.`
 >
-> [z-Azawan | th-FORMER | z-rank/more | g-sleepy]
+> [z-Azawan | h-FORMER | z-rank/more | g-sleepy]
 >
 > "Azawan is sleepier than they used to be."
 
-> `zugul thohum balahen zuel garagam.`
+> `zugul thohum zuel garagam.`
 >
-> [z-book | [th-WANT-unstated | b-Alahen] | z-rank/less | g-heavy]
+> [z-book | th-WANT-unstated | z-rank/less | g-heavy]
 >
-> "The book is lighter than Alahen wanted."
+> "The book is lighter than I wanted."
 
-The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on WANT, REQUIRE, PERMIT, and CONSENT it is the person who wants, demands, grants, or agrees. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
+The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on REQUIRE, PERMIT, and CONSENT it is the person who demands, grants, or agrees. WANT takes no `/b/`: for someone else's wants, put a [holder](knowing.md#holder) on the clause. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
 
 > `zugul thewam balahen zuel gagazam.`
 >
@@ -760,11 +760,11 @@ To rank one kind against another, keep one kind as the item and put the other in
 
 A CLUES or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): the next sentence is the grounds you worked the bar out from.
 
-**Ability.** The ability word [`ubo`](intention.md#ability-fallback) as the bar is the limit of **what can be done**. A tie against **`thuboxal`** is *as … as possible*. The ability vowel says how fixed that limit is, so rank **`zel`** against **`thuboxel`** is *more than can be done for now*, and against **`thuboxul`** *more than could ever be done*.
+**Ability.** The ability word [`ubo`](intention.md#ability-fallback) as the bar is the limit of **what can be done**. A tie against **`huboxal`** is *as … as possible*. The ability vowel says how fixed that limit is, so rank **`zel`** against **`huboxel`** is *more than can be done for now*, and against **`huboxul`** *more than could ever be done*.
 
-> `zalahen thuboxal zoel hadehum vowogal.`
+> `zalahen huboxal zoel hadehum vowogal.`
 >
-> [z-Alahen | th-ABIL-able | z-equal-rank | h-haste] | v-walk
+> [z-Alahen | h-ABIL-able | z-equal-rank | h-haste] | v-walk
 >
 > "Alahen walks as hastily as possible."
 
@@ -823,8 +823,8 @@ English *many*, *few*, *often*, and *late* rank against an unstated baseline, an
 | *than usual* (the same person or thing) | PATTERN **`thobam`** with no `/b/` |
 | *too much* / *enough* / *not enough* | a met sake bar (`thegatham`), `zel` / `zoel` / `zuel` |
 | *too late* / *too soon* | a met sake bar (`thegatham`), `zel` / `zuel` with `bral` |
-| *as … as possible* | ABIL **`thuboxal`**, `zoel` |
-| *more and more* / *increasingly* | FORMER **`thenom`**, `zel` |
+| *as … as possible* | ABIL **`huboxal`**, `zoel` |
+| *more and more* / *increasingly* | FORMER **`henom`**, `zel` |
 
 The bar is never dropped. A single-item `zagadulx zel gral` already means *the most cats* (a [superlative](#superlatives)).
 
@@ -853,7 +853,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *PATTERN* | `thobam` |
 | *MEMORY* | `thevom` |
 | *REPORTED* | `thewam` |
-| *FORMER* | `thenom` |
+| *FORMER* | `henom` |
 | *capacity* | `ubom` |
 | *agility* | `ahagum` |
 | *trumpet* | `adawol` |
@@ -880,9 +880,9 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **3.** *Azawan is as showy as possible.*
 
 ::: details Show answer
-`zazawan thuboxal zoel gahudom.`
+`zazawan huboxal zoel gahudom.`
 
-[z-Azawan | th-ABIL-able | z-equal-rank | g-showmanship]
+[z-Azawan | h-ABIL-able | z-equal-rank | g-showmanship]
 :::
 
 **4.** *There are many trumpets.* (more than usual)
@@ -941,10 +941,10 @@ After the fence, PATTERN is a stance on the whole superlative; before the rank j
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zahaben thenom zel gebudam.` / `zahaben thevom zel gebudam.`
+**1.** `zahaben henom zel gebudam.` / `zahaben thevom zel gebudam.`
 
 ::: details Show answer
-[z-Ahaben | th-FORMER | z-rank/more | g-artistry]
+[z-Ahaben | h-FORMER | z-rank/more | g-artistry]
 
 [z-Ahaben | th-MEMORY | z-rank/more | g-artistry]
 
