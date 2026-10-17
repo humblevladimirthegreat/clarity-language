@@ -1,4 +1,3 @@
-https://main.d2xds94zsgwptg.amplifyapp.com
 
 redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds94zsgwptg/redirects
 
@@ -9,10 +8,9 @@ use [skip-cd] for amplify to not deploy.
 # TODO
 -claritish editor
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
-consider removing forward links (including prose)
-
-llm-gloss-prompt:
--phase 3 eval script (first run: 200 pairs, Opus judge, reports in tmp/)
+-consider removing forward links (including prose)
+-add "Copy Translation Prompt" button to Inspect page.
+-named frames in the gloss: a titled **-n** name built from a published root prints its Agazan spelling (`h-Eveden`, `h-Amaban`, `v-Azehen`), so a gloss reader can't recover the English the docs give (*according to Temperature*, *in Emergency*, *performs Intrusion*; word-endings.md Intermediate practice). House-cast names are built the same way and stay untranslated. Options: gloss **-n** on `v` / `g` / `h` by the root's sense (`h-Temperature`), or keep the spelling in the doc English. Found by the phase 3 eval of the LLM gloss prompt.
 
 save for near end of limit resets:
 -final exam

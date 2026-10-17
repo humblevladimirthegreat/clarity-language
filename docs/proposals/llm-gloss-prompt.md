@@ -1,6 +1,6 @@
 # Translation prompt from the parser
 
-Status: phase 1, steps 1 (policy edits), 2 (extractor and lint, warn mode until step 7, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review): waves 1 to 5 done (wave 4 ran before wave 3), waves 3 and 5 awaiting the editor's review of their diffs ([as built](#phase-1-step-5-as-built)). Step 6 (wave check) ran after each wave. Step 7 (lint to error, [as built](#phase-1-step-7-as-built)) done. The editor items are [settled](#phase-1-still-open). Phase 2 built ([as built](#phase-2-as-built)) and revised after phase 1 ([revision](#phase-2-revision)). Phase 3: the two prep items are done ([before phase 3](#before-phase-3)); the evaluation script is not built yet. Not design authority; fold into tooling and meta docs, then drop.
+Status: phase 1, steps 1 (policy edits), 2 (extractor and lint, warn mode until step 7, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review): waves 1 to 5 done (wave 4 ran before wave 3), waves 3 and 5 awaiting the editor's review of their diffs ([as built](#phase-1-step-5-as-built)). Step 6 (wave check) ran after each wave. Step 7 (lint to error, [as built](#phase-1-step-7-as-built)) done. The editor items are [settled](#phase-1-still-open). Phase 2 built ([as built](#phase-2-as-built)) and revised after phase 1 ([revision](#phase-2-revision)). Phase 3: the two prep items are done ([before phase 3](#before-phase-3)); the evaluation script is built (`npm run llm-eval`, [as built](#phase-3-as-built)). Not design authority; fold into tooling and meta docs, then drop.
 
 ## Problem
 
@@ -359,7 +359,7 @@ Both done.
 A script, not part of `npm test` (it calls a model and costs money). It runs the real prompt over the doc pairs and reports where it fails:
 
 1. For each pair (or a sample), build the prompt with that pair and any pair sharing its gloss held out of the example pool.
-2. Translate with an isolated model: `claude -p --model haiku --tools "" --setting-sources "" --strict-mcp-config --no-session-persistence --system-prompt …`, run from an empty directory so no project `AGENTS.md` loads. This works locally today with no API key.
+2. Translate with an isolated model: `claude -p --model claude-haiku-5-5 --tools "" --setting-sources "" --strict-mcp-config --no-session-persistence --system-prompt …`, run from an empty directory so no project `AGENTS.md` loads. This works locally today with no API key. Use the full model ID: this CLI version resolves the `haiku` alias to Haiku 4.5 (the [pilot](#pilot) ran on it).
 3. Judge with a stronger model, given the doc line and the reply, in two parts:
    - **Sentence**: same claim as the doc sentence? *same* / *partly* / *wrong*, plus which gloss piece was misread. Meaning, not wording: *walks if it rains* matches *walks if there is rain*.
    - **Note**: if the doc has a note, does the reply's note (or sentence) carry the same point? If the doc has none, an extra note counts against the reply only when it is wrong.
@@ -368,6 +368,14 @@ A script, not part of `npm test` (it calls a model and costs money). It runs the
 Run it on the smallest model you expect people to paste into. A prompt that works on Haiku will work on larger models.
 
 **First run (editor's settings):** 200 pairs sampled across the example blocks, table rows, and checkpoint answers; translated by Haiku and judged by Opus; reports written to `tmp/llm-eval/` (gitignored), not committed.
+
+<a id="phase-3-as-built"></a>
+**As built.** [`scripts/llm-eval.ts`](../../scripts/llm-eval.ts), `npm run llm-eval -- [--n 200] [--seed 1] [--concurrency 4] [--translator …] [--judge …] [--fresh]`. Defaults `claude-haiku-5-5` and `claude-opus-5-5`; each call fails unless the CLI's `modelUsage` names the model asked for.
+
+- **Sample.** Seeded shuffle, split across example blocks, table rows, and checkpoint answers in proportion to their pools. The prompt is the real `buildPrompt` with every pool pair sharing the input's gloss removed.
+- **Judge.** Sees the whole translation prompt, the gloss, the doc line, and the parsed reply; returns structured output: sentence *same* / *partly* / *wrong* with the misread gloss pieces, and note *carried* / *partly* / *missing* / *wrong* (doc has a note), *none* / *extra-ok* / *extra-wrong* (doc has none), or *not-scored* (checkpoint answers). A reply not in the `ENGLISH:` format fails the sentence with no judge call.
+- **Score.** A pair's miss is the worse of sentence (0, 0.5, 1) and note (0, 0.5, 1). The report ranks constructions and labels (n ≥ 3) by total miss, with misread pieces, each feature's note share across the index, and a "possible missed notes" list (replies keep adding a correct note where under 20% of doc examples have one).
+- **Output.** `tmp/llm-eval/results.jsonl` (a rerun with the same settings reuses rows whose prompt is unchanged; `--fresh` redoes all), `report.md`, `report.json`.
 
 ## Pilot
 <a id="pilot"></a>

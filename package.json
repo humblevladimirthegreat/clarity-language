@@ -12,6 +12,7 @@
     "parse-snapshot": "tsx scripts/parse-snapshot.ts",
     "lint:agazan": "tsx scripts/lint-agazan-docs.ts",
     "free-english-review": "tsx scripts/free-english-review.ts",
+    "llm-eval": "tsx scripts/llm-eval.ts",
     "docs:publish": "vitepress build docs/grammar && tsx scripts/publish-docs-extras.mjs",
     "docs:preview": "vitepress preview docs/grammar",
     "convert-word": "tsx scripts/convert-word.ts",

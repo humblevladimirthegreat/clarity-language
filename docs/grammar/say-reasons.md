@@ -179,7 +179,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 
 > `zalahen vazagal thegem bazawan.`
 >
-> z-Alahen | v-skull | [th-CAUSE | b-Azawan]
+> z-Alahen | v-die | [th-CAUSE | b-Azawan]
 >
 > "Azawan kills Alahen."
 

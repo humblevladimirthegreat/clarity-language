@@ -584,7 +584,7 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 
 > `zalahen vazagal thavel barl zazawan vagevel.`
 >
-> z-Alahen | v-skull | [th-because.fault | b-that-clause] | z-Azawan | v-gun
+> z-Alahen | v-die | [th-because.fault | b-that-clause] | z-Azawan | v-gun
 >
 > "Azawan murdered Alahen." (shot dead; the death is Azawan's fault)
 

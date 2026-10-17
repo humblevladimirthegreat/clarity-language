@@ -27,7 +27,11 @@ export type ConstructionEntry = { anchor: string; summary: string; reader?: stri
 
 /** Shared by the three rank-fence bar productions (comparatives.md#bars). */
 const BAR_READER =
-  "A `th-` word (or an intention `h-` word) inside a ranking bracket, right before the rank word, is what the item is ranked against: `[z-X | th-plan-itinerary | z-rank/more | b-later] | v-departure` = X leaves later than planned; a pattern there = than usual. The same word outside the bracket covers the whole sentence.";
+  "A `th-` word (or an intention `h-` word) inside a ranking bracket, right before the rank word, is what the item is ranked against: `[z-X | th-plan-itinerary | z-rank/more | b-later] | v-departure` = X leaves later than planned; a pattern there = than usual (`rank/less | g-strength` = less strong than usual); a permission there = than allowed. The same word outside the bracket covers the whole sentence.";
+
+/** Shared by every label-scope seam vowel (predication.md#label-scope). */
+const SCOPE_READER =
+  "`-th-` plus a scope word after a label or a `ROLE-x-verb` says how far the label reaches: `-th-episode` this time only, `-th-role` as their practiced role (`g-agent-x-teach-th-role` = is a teacher), `-th-pair` toward one `b-` party only, `-th-type` the kind of person they are, `-th-on-pair` this time toward that party, `-th-using` using the role as a tool, `-th-toward-role` becoming one (not wanting to be), `-th-except-episode` / `-th-except-pair` that type except this time / with that party, `-th-outside-role` not in that capacity.";
 
 /** Sentence grammar: `rule.childKey` (sub-rule, token type, or LABEL). */
 export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
@@ -221,14 +225,24 @@ export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = 
 export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
   role: { anchor: "roles.md#role-compounds", summary: "role compound" },
   pointer: { anchor: "pronouns.md#role-pointers", summary: "role pointer" },
-  sake: { anchor: "sakes.md#met", summary: "sake word" },
+  sake: {
+    anchor: "sakes.md#met",
+    summary: "sake word",
+    reader:
+      "A sake word `SAKE-STANCE-ending` (competence, relatedness, pleasure, purpose, …) says how something stands toward that payoff, for the speaker unless a `b-` right after it or a holder says whose. `met` = it serves it, `unmet` = it costs it, `motive` = done for that payoff, `ought` = advice that the act would serve it (`-offered` unasked, `-invited` asked for, `-trial` worth a try); with `ought` the verb is what ought to happen, not what happens. On `g-` after a noun it is about that thing of mine; on `th-` it is about the whole event: `z-X | v-sing | th-pleasure-met-any-term` = X sings, and I enjoy it. With a capital tail (`-INTERNAL-SURGING`, `-AIMED-FLOWING`) it is one feeling: say it with the plain English emotion word (unmet competence = anxious or frustrated, unmet relatedness aimed at a `b-` person = irritated with them, met competence = proud or confident), not piece by piece. `[w-FEELING | g-stimulus]` after a noun = that feeling about the noun.",
+  },
   scope: { anchor: "predication.md#label-scope", summary: "label scope" },
-  lateral: { anchor: "roles.md#viewpoint-laterals", summary: "viewpoint lateral" },
+  lateral: {
+    anchor: "roles.md#viewpoint-laterals",
+    summary: "viewpoint lateral",
+    reader:
+      "A direction joined by `-th-` to a person or pointer is a side of that one's facing, not a compass point: north-th = ahead of them, south-th = behind, west-th = on their left, east-th = on their right (`h-west-th-X` = on X's left). `-th-landmark` with a `b-` noun is that thing's own front: `[g-north-th-landmark | b-car]` = in front of the car. A bare direction is the compass point.",
+  },
   holder: {
     anchor: "knowing.md#holder",
     summary: "holder seam",
     reader:
-      "`th-TAG-X` (a stance tag joined to a person X, or to a `←` pointer): the sentence gives that person's view, and the tag says how the speaker knows it. `th-CLUES-X` = I gather X thinks …; `th-MAY-X` = maybe X thinks ….",
+      "`th-TAG-X` (a stance tag joined to a person X, or to a `←` pointer): the sentence gives that person's view, and the tag says how the speaker knows it. `th-CLUES-X` = I gather X thinks …; `th-MAY-X` = maybe X thinks …. Every other `th-` word in that sentence (a want, plan, decision, or feeling) is then X's, not the speaker's: `th-WANT-unstated | th-CLUES-X` = I gather X wants …; a feeling word with `th-CLUES-listener` = it sounds like you feel that.",
   },
   ability: { anchor: "x-compounds.md#conversation-length", summary: "ability compound" },
   numeric: { anchor: "numeric-derivation.md#numeric-derivation", summary: "numeric derivation" },
@@ -371,16 +385,16 @@ type Vowel = "a" | "e" | "o" | "u";
 
 /** Label scope: each seam vowel (predication.md#label-scope). */
 const SCOPE_FEATURE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
-  "vowel.a": { anchor: "predication.md#label-scope", summary: "this episode tha" },
-  "vowel.e": { anchor: "predication.md#label-scope", summary: "practiced role the" },
-  "vowel.o": { anchor: "predication.md#label-scope", summary: "this pair tho" },
-  "vowel.u": { anchor: "predication.md#label-scope", summary: "type across scenes thu" },
-  "vowel.ao": { anchor: "predication.md#scope-stacks", summary: "episode on this pair thao" },
-  "vowel.ae": { anchor: "predication.md#scope-stacks", summary: "using the role thae" },
-  "vowel.oe": { anchor: "predication.md#scope-stacks", summary: "toward the role thoe" },
-  "vowel.ua": { anchor: "predication.md#scope-stacks", summary: "type except this episode thua" },
-  "vowel.uo": { anchor: "predication.md#scope-stacks", summary: "type except this pair thuo" },
-  "vowel.ue": { anchor: "predication.md#scope-stacks", summary: "not in that capacity thue" },
+  "vowel.a": { anchor: "predication.md#label-scope", summary: "this episode tha", reader: SCOPE_READER },
+  "vowel.e": { anchor: "predication.md#label-scope", summary: "practiced role the", reader: SCOPE_READER },
+  "vowel.o": { anchor: "predication.md#label-scope", summary: "this pair tho", reader: SCOPE_READER },
+  "vowel.u": { anchor: "predication.md#label-scope", summary: "type across scenes thu", reader: SCOPE_READER },
+  "vowel.ao": { anchor: "predication.md#scope-stacks", summary: "episode on this pair thao", reader: SCOPE_READER },
+  "vowel.ae": { anchor: "predication.md#scope-stacks", summary: "using the role thae", reader: SCOPE_READER },
+  "vowel.oe": { anchor: "predication.md#scope-stacks", summary: "toward the role thoe", reader: SCOPE_READER },
+  "vowel.ua": { anchor: "predication.md#scope-stacks", summary: "type except this episode thua", reader: SCOPE_READER },
+  "vowel.uo": { anchor: "predication.md#scope-stacks", summary: "type except this pair thuo", reader: SCOPE_READER },
+  "vowel.ue": { anchor: "predication.md#scope-stacks", summary: "not in that capacity thue", reader: SCOPE_READER },
 };
 
 /** Sakes: each stance vowel, and the endings on it (sakes.md). */
@@ -515,8 +529,17 @@ export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "er" | "or" 
   uam: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uam" },
   uol: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uol" },
   uom: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uom" },
-  uel: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uel" },
-  uem: { anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m", summary: "uem" },
+  uel: {
+    anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m",
+    summary: "uel",
+    reader: "`A | outside | B` between two values is a band and everything beyond it: `z-two | outside | z-nine` = below 2 or above 9.",
+  },
+  uem: {
+    anchor: "hooks.md#extra-noun-stacked-vowels-and-loose-m",
+    summary: "uem",
+    reader:
+      "`[contrary-to | th-…]` = against that one stance (my plan, my wishes). A holder first makes it that person's, as one stance: `[contrary-to | th-CLUES-X | th-plan-itinerary]` = against X's plan, as far as I can tell.",
+  },
 };
 
 /** Span features: the written fidelity marks (spans.md). */

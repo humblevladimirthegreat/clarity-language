@@ -27,7 +27,7 @@ export const GLOSS_READER = {
   layout: [
     "Words are separated by ` | `. Sentences are separated by ` . `.",
     "`[ … ]` groups the words that fill one slot. Nesting shows what modifies what: `[z-dog | g-blue]` is a blue dog, `[in | b-house]` is in the house.",
-    "A join word comes last in its bracket and says how the items combine: `[d-tea | d-coffee | d-or-exactly-one]` = tea or coffee, exactly one of them.",
+    "A join word comes last in its bracket and says how the items combine: `[d-tea | d-coffee | d-or-exactly-one]` = tea or coffee, exactly one of them. With one item before it, a closed join says that item is the whole list: `[z-X | z-and]` = just X, nothing more (`.open` is what leaves a list open).",
     "`LABEL[ … ]` is a package: `CITE[…]` quoted wording, `ASIDE[…]` a side remark, `SCOPE[…]` a group that a word scopes over, `NAME[…]` a titled phrase. `OPAQUE[\"…\"]` is a foreign word or raw writing: keep it as written.",
   ],
   /** One line per written prefix (clause.md#role-letters), plus prefix-less hooks under `""`. */
@@ -41,7 +41,7 @@ export const GLOSS_READER = {
     gl: "adjective written before the noun it describes",
     w: "detail (often degree) on the next `g-`, `h-`, or `th-` word",
     h: "adverb: how, when, where; with a `b-` noun in its bracket, a relation (`[h-while | b-month]`). A plan, decision, try, ability, consent, RESIDUE or FORMER on `h-` covers the whole sentence; a plan or decision does not say the act happens",
-    th: "what is in a mind: by default the speaker's stance on the claim (how they know it, how sure they are, why, as if, a want); with a person joined to a channel (`th-CLUES-Azawan`), that person's view",
+    th: "what is in a mind: by default the speaker's stance on the claim (how they know it, how sure they are, why, as if, a want, a plan, a decision, a feeling), never the subject's: `z-X | th-WANT-unstated | v-sing` = I want X to sing, and `z-X | th-plan-itinerary | v-go` = I plan for X to go. With a person joined to a channel (`th-CLUES-Azawan`), that person's view",
     x: "links this sentence to the one before (`x-however`), or names the topic",
     "": "no prefix: a hook. Between two words of the same role it relates them, and the right one is what holds: `d-tea | instead | d-coffee` = coffee instead of tea. With a `b-` noun in its bracket it is a relation (`[from | b-dog]`)",
   } as Record<string, string>,
@@ -60,10 +60,11 @@ export const GLOSS_READER = {
   } as Record<string, string>,
   pieces: [
     "`-x-` inside one word joins the pieces of a compound. `ROLE-x-verb` names someone by their part in that kind of event: `z-agent-x-teach` = someone who teaches.",
-    "A trailing `-x` adds associates: `z-Azawan-x` = Azawan and their people; `y-listener-x` = all of you. On a verb or adjective, they do it or are it as a group.",
+    "A trailing `-x` adds associates: `z-Azawan-x` = Azawan and their people; `y-listener-x` = all of you. On a kind of thing, not a name, it is just several of that kind: `z-dog-x` = dogs (no others added). On a verb or adjective, they do it or are it as a group.",
     "`←X` refers back to X, mentioned earlier: `z-←Azawan` = Azawan again (he, she, they); `z-←agent-x-teach` = the one who taught, in that earlier event.",
     "`←ROLE.same` = whoever had that part in the latest sentence that had one (he, she, it, they). `.self` = this sentence's own ROLE (themself). `.other` = the other one, an earlier and different one. `.unsaid` = whoever it was, when that sentence left the part unsaid.",
     "A dot joins the pieces of one label: words of one English phrase (`in.other.words`), or a variant of the word (`CLUES.strong`, `as-of.ledger`).",
+    "A time amount in a bracket right after a stance word dates the event from now: `[th-REPORTED | [b-hour | g-three]]` = in three hours, `g-minus-three` = three hours ago; `[b-day | g-one]` = tomorrow. `b-+-e-` = a moment from now (about to), `b---e-` = a moment ago (just); with `.about`, soon / recently.",
     "`_` before digits marks a label, code, clock time, or date written in digits, not an amount (`h-_15,30` = at 15:30). `g-2nd` is an ordinal.",
     "`tag.A` names the phrase before it \"A\" for later; `←tag.A` is that one again.",
     "A tone mark before a word colors that word; alone before the sentence it colors the whole sentence: `!` strong feeling, `?` unsure, `%` joking, `&` this one and not another, `;` warm.",
@@ -351,9 +352,14 @@ export function buildPrompt(
   for (const [tail, text] of Object.entries(GLOSS_READER.tails)) {
     if (new RegExp(`[A-Za-z]\\${tail}(?![A-Za-z-])`).test(shown)) legend.push(`- \`${tail}\` after a word: ${text}`);
   }
+  // Several constructions can share one note (the bar productions, the scope vowels).
+  const readers = new Set<string>();
   for (const id of [...new Set(constructions)].sort()) {
     const reader = context.readers.get(id);
-    if (reader) legend.push(`- ${reader}`);
+    if (reader && !readers.has(reader)) {
+      readers.add(reader);
+      legend.push(`- ${reader}`);
+    }
   }
   if (legend.length > 0) out.push("", "## Tags used here", "", ...legend);
 
@@ -375,7 +381,7 @@ export function buildPrompt(
     out.push("Give the sentence only, with no note.");
   } else {
     out.push(
-      "If the gloss marks something your sentence still leaves out (whose feeling or clue it is, whether a list is closed or open, cause versus blame, who a pointer refers to), add one short plain-English note in parentheses after the sentence. Otherwise add nothing, and never a note that repeats the sentence. A note never uses gloss tags or grammar terms.",
+      "If the gloss marks something your sentence still leaves out (whose feeling or clue it is, whether a list is closed or open, cause versus blame, who a pointer refers to), add one short plain-English note in parentheses after the sentence. Otherwise add nothing, and never a note that repeats the sentence. A note never uses gloss tags or grammar terms, and is about the meaning, never about the gloss: no note on what the gloss leaves unsaid, on tense, or on how you read it.",
     );
   }
   const shape = loose ? 'ENGLISH: "<sentence>"' : 'ENGLISH: "<sentence>" (<note>), with the note optional';
