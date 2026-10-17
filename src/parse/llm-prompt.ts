@@ -27,7 +27,7 @@ export const GLOSS_READER = {
   layout: [
     "Words are separated by ` | `. Sentences are separated by ` . `.",
     "`[ … ]` groups the words that fill one slot. Nesting shows what modifies what: `[z-dog | g-blue]` is a blue dog, `[in | b-house]` is in the house.",
-    "A join word comes last in its bracket and says how the items combine: `[d-tea | d-coffee | d-or-exactly-one]` = tea or coffee (pick one).",
+    "A join word comes last in its bracket and says how the items combine: `[d-tea | d-coffee | d-or-exactly-one]` = tea or coffee, exactly one of them.",
     "`LABEL[ … ]` is a package: `CITE[…]` quoted wording, `ASIDE[…]` a side remark, `SCOPE[…]` a group that a word scopes over, `NAME[…]` a titled phrase. `OPAQUE[\"…\"]` is a foreign word or raw writing: keep it as written.",
   ],
   /** One line per written prefix (clause.md#role-letters), plus prefix-less hooks under `""`. */
@@ -107,7 +107,7 @@ export const GLOSS_READER = {
   } as Record<string, string>,
   rules: [
     "Capitalized words like Azawan, Alahen, Ahaben are personal names.",
-    "No tense is marked: choose natural English tense, present by default.",
+    "No tense is marked on the verb. Use the present by default. Use the past when the gloss puts the event before now (a past date or day, MEMORY, RESIDUE, FORMER, a past as-of) or reports an event that is over (hearsay or clues about something that happened, a quote). Use will for a forecast or a later date. Never add a time word the gloss does not have.",
     "Keep vague things vague: do not add a gender, a time, or a count the gloss leaves open. Use they / them for a person whose gender is not given.",
   ],
 };
@@ -149,14 +149,20 @@ const LABEL_RE = /(?<![A-Za-z])([A-Z]{2,}(?:-[A-Z]+)*)(?![a-z])/g;
 
 /**
  * SMALLCAPS labels in a gloss line (quoted payloads skipped). A hyphenated run is one label
- * (`ON-BEHALF`) or several joined (`CLUES-TOPIC`, `AIMED-FLOWING`), so both the run and its pieces are listed.
+ * (`ON-BEHALF`), several joined (`CLUES-TOPIC`, `AIMED-FLOWING`), or both (`ON-BEHALF-FLOWING`),
+ * so every contiguous sub-run is listed; the legend keeps the ones it can explain.
  */
 export function glossLabels(gloss: string): string[] {
   const flat = gloss.replace(/"(?:[^"]|"")*"/g, '""');
   const out = new Set<string>();
   for (const m of flat.matchAll(LABEL_RE)) {
-    out.add(m[1]!);
-    if (m[1]!.includes("-")) for (const piece of m[1]!.split("-")) if (piece.length > 1) out.add(piece);
+    const pieces = m[1]!.split("-");
+    for (let i = 0; i < pieces.length; i++) {
+      for (let j = i + 1; j <= pieces.length; j++) {
+        const run = pieces.slice(i, j).join("-");
+        if (run.length > 1) out.add(run);
+      }
+    }
   }
   return [...out].sort();
 }
@@ -193,10 +199,16 @@ export type SelectOptions = {
   weights?: Map<string, number>;
 };
 
+/** A feature at least this weight (in about a third of the index or fewer) is rare enough to pick an example for. */
+const RARE_WEIGHT = 1;
+/** Examples shown even when nothing rare is shared, so the model still sees the reply format. */
+const MIN_EXAMPLES = 2;
+
 /**
  * Greedy pick: each next example covers the most rare input features not already covered,
- * less a small cost for features the input does not use. At least one pick has a note and,
- * when the pool allows, at least one has none.
+ * less a small cost for features the input does not use. Picking stops when no example covers a
+ * new rare feature, once {@link MIN_EXAMPLES} are in. A note example is added when one shares a
+ * rare feature with the input; at least one pick has no note when the pool allows.
  */
 export function selectExamples(
   input: { constructions: readonly string[]; labels: readonly string[] },
@@ -238,26 +250,43 @@ export function selectExamples(
     return top;
   };
 
+  const rare = (f: string) => wanted.has(f) && weight(f) >= RARE_WEIGHT;
+  const sharesRare = (pair: ExamplePair) => features(pair.constructions, pair.labels).some(rare);
+  const addsRare = (pair: ExamplePair) => features(pair.constructions, pair.labels).some((f) => rare(f) && !covered.has(f));
+
   const picked: ExamplePair[] = [];
   const take = (pair: ExamplePair) => {
     picked.push(pair);
     for (const f of features(pair.constructions, pair.labels)) covered.add(f);
   };
   while (picked.length < count) {
+    const next = best(pool.filter((pair) => !picked.includes(pair) && addsRare(pair)));
+    if (!next) break;
+    take(next);
+  }
+  while (picked.length < Math.min(count, MIN_EXAMPLES)) {
     const next = best(pool.filter((pair) => !picked.includes(pair)));
     if (!next) break;
     take(next);
   }
 
-  // Show both shapes: a note exists, and most sentences need none. Greedy order puts the
-  // weakest pick last, so a swap replaces it.
-  const ensure = (hasNote: boolean) => {
+  // Show both shapes: a note exists, and most sentences need none. A note example must share
+  // something rare, or the model learns to annotate the wrong thing. With no room left, greedy
+  // order puts the weakest pick last, so a swap replaces it.
+  const ensure = (hasNote: boolean, relevant: boolean) => {
     if (picked.length === 0 || picked.some((pair) => (pair.note != null) === hasNote)) return;
-    const swap = best(pool.filter((pair) => !picked.includes(pair) && (pair.note != null) === hasNote));
-    if (swap) picked[picked.length - 1] = swap;
+    const room = picked.length < count;
+    // A swap pushes out a pick, so its replacement must be relevant too.
+    const needRare = relevant || !room;
+    const swap = best(
+      pool.filter((pair) => !picked.includes(pair) && (pair.note != null) === hasNote && (!needRare || sharesRare(pair))),
+    );
+    if (!swap) return;
+    if (room) picked.push(swap);
+    else picked[picked.length - 1] = swap;
   };
-  ensure(true);
-  if (picked.length > 1) ensure(false);
+  ensure(true, true);
+  if (picked.length > 1) ensure(false, false);
   return picked;
 }
 
@@ -339,12 +368,14 @@ export function buildPrompt(
   out.push("", "## Task", "");
   out.push(
     "Write what a fluent English speaker would say. Keep who does what to whom, negation, and any stance that changes the claim (whose view it is, how it is known, a plan or a want).",
+    'When English has a natural phrase for a tag ("it looks like", "I can see it", "as I remember", "used to"), put it in the sentence. The examples show the usual phrase for each tag: reuse it.',
+    "Do not add a source, reason, time, or count the gloss does not have.",
   );
   if (loose) {
     out.push("Give the sentence only, with no note.");
   } else {
     out.push(
-      "If the gloss marks something your sentence leaves out (whose feeling or clue it is, whether a list is closed or open, cause versus blame, who a pointer refers to), add one short plain-English note in parentheses after the sentence. Otherwise add nothing. A note never uses gloss tags or grammar terms.",
+      "If the gloss marks something your sentence still leaves out (whose feeling or clue it is, whether a list is closed or open, cause versus blame, who a pointer refers to), add one short plain-English note in parentheses after the sentence. Otherwise add nothing, and never a note that repeats the sentence. A note never uses gloss tags or grammar terms.",
     );
   }
   const shape = loose ? 'ENGLISH: "<sentence>"' : 'ENGLISH: "<sentence>" (<note>), with the note optional';

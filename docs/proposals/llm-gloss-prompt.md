@@ -1,6 +1,6 @@
 # Translation prompt from the parser
 
-Status: phase 1, steps 1 (policy edits), 2 (extractor and lint, warn mode until step 7, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review): waves 1 to 5 done (wave 4 ran before wave 3), waves 3 and 5 awaiting the editor's review of their diffs ([as built](#phase-1-step-5-as-built)). Step 6 (wave check) ran after each wave. Step 7 (lint to error, [as built](#phase-1-step-7-as-built)) done. The editor items are [settled](#phase-1-still-open). Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
+Status: phase 1, steps 1 (policy edits), 2 (extractor and lint, warn mode until step 7, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review): waves 1 to 5 done (wave 4 ran before wave 3), waves 3 and 5 awaiting the editor's review of their diffs ([as built](#phase-1-step-5-as-built)). Step 6 (wave check) ran after each wave. Step 7 (lint to error, [as built](#phase-1-step-7-as-built)) done. The editor items are [settled](#phase-1-still-open). Phase 2 built ([as built](#phase-2-as-built)) and revised after phase 1 ([revision](#phase-2-revision)). Phase 3 not started; two items are queued for it ([before phase 3](#before-phase-3)). Not design authority; fold into tooling and meta docs, then drop.
 
 ## Problem
 
@@ -325,12 +325,31 @@ Prints plain text, not JSON. A parse failure prints the parser error and exits 1
 Code: [`llm-prompt.ts`](../../src/parse/llm-prompt.ts) (core, selection, prompt; pure), [`llm-examples.ts`](../../src/parse/llm-examples.ts) (doc examples, terminology glosses, reader notes), tests in `llm-prompt.test.ts`. Where it differs from the plan above:
 
 - **Index cache.** Built on first use and cached at `dist/parse/llm-examples.json`, rebuilt when anything under `docs/grammar/*.md`, `src/`, or `data/` is newer. About 3 s to build; then the CLI costs the same as a plain parse.
-- **Example source.** Blockquote example blocks on the top-level grammar pages only (926 distinct glosses today, 88 with a note). A dialogue block's Agazan lines are joined. Tables and checkpoint answers are not used yet. A block is skipped when its free English line does not split as `"…"` plus at most one `(…)`, when it has backticks or links, when the quotes hold more `(…)` than the gloss allows (asides, scope islands, tag letters), or when the gloss has an unbound `←"…"`. So every phase 1 page pass adds examples.
+- **Example source.** Blockquote example blocks on the top-level grammar pages (926 distinct glosses when built, 88 with a note; table rows were added in the [revision](#phase-2-revision)). A dialogue block's Agazan lines are joined. Checkpoint answers are not used: they are the phase 3 test set. A block is skipped when its free English line does not split as `"…"` plus at most one `(…)`, when it has backticks or links, when the quotes hold more `(…)` than the gloss allows (asides, scope islands, tag letters), or when the gloss has an unbound `←"…"`. So every phase 1 page pass adds examples.
 - **Core size.** About 4 KB, not 1.5 KB: role names, pointer vowels, tone marks, and the hook reading (`d-tea | instead | d-coffee` = coffee instead of tea) all proved necessary.
 - **Variant tails** of overlay labels (`.strong`, `.weak`, `.fault`, `.share`, `.ledger`, `.bookmark`, `.lasting`, …) are a fixed `GLOSS_READER.tails` table, shown in the legend only when a gloss uses one, not `reader` notes per overlay row. The test fails when an overlay gloss has a tail with no line.
 - **Hyphenated labels.** `CLUES-TOPIC` (a holder) and `AIMED-FLOWING` (emotion pieces) are legend-matched by piece; `ON-BEHALF` by the whole run.
-- **Seed `reader` notes:** holder (`word.xFamily.holder`), date (`number.calendar`), rank (`join.e`), and bars (`sentence.{z,d,b}CoordPart.bar`), from the pilot misses. Their examples are not doc sentences, so a note never hands the model the answer to a held-out pair.
-- **Filler examples.** When nothing in the index shares a rare feature with the input, the greedy pick falls back to the shortest glosses, and the forced note example can be one whose note is still teaching commentary (*office handle on first mention*). Phase 1 removes those notes.
+- **Seed `reader` notes:** holder (`word.xFamily.holder`), date (`number.calendar`), rank (`join.e`), and bars (`sentence.{z,d,b}CoordPart.bar`), from the pilot misses. The holder note's examples turned out to be doc sentences ([before phase 3](#before-phase-3)).
+- **Filler examples.** When nothing in the index shares a rare feature with the input, the greedy pick fell back to the shortest glosses, and the forced note example could be one whose note was still teaching commentary (*office handle on first mention*). Fixed in the [revision](#phase-2-revision).
+
+### Revision after phase 1
+<a id="phase-2-revision"></a>
+
+Phase 2 was built before phase 1, so it was revised to match what phase 1 settled:
+
+- **Rules match glosses.md.** The core's tense rule is the [English lemma](../meta/glosses.md#english-lemma) rule (past for a past date, MEMORY, RESIDUE, FORMER, a past as-of, hearsay or clues about a finished event, a quote; *will* for a forecast; no added time word). The task carries [sentence first](../meta/glosses.md#sentence-first): put the natural phrase for a tag in the sentence and reuse the examples' phrase, add nothing the gloss lacks, and never a note that repeats the sentence. The core's join example no longer puts a note inside the English.
+- **Table rows are examples.** Grammar-page table cells that translate an Agazan phrase or sentence now follow the convention ([grammar-table gloss](../meta/glosses.md#grammar-table-gloss-free-english-only)), so the index reads them through the lint's `tableEnglish`. An example block wins when both give the same gloss. Contrast tables put a section's forms side by side, each in the house English, so the examples now carry each tag's usual phrase; the legend keeps the terminology Gloss cell for what the tag means rather than parsing a phrase out of each owning table.
+- **`SELF` slots** are filled as the speaker before parsing, as the review lists do, so greeting and conversation-length examples are no longer skipped.
+- **Selection.** An example is picked only when it covers a rare input feature (weight ≥ 1, about a third of the index or fewer) not yet covered; padding stops at two examples, so a plain input still shows the reply format. A note example is added only when it shares a rare feature with the input; a note about something else teaches the model to annotate the wrong thing.
+- **Joined labels.** A run like `ON-BEHALF-FLOWING` lists every sub-run, so the legend finds `ON-BEHALF` and `FLOWING`; before, it split to `ON` and `BEHALF` and explained neither. Table rows were the first examples with such a run.
+
+Index after the revision: 1,134 distinct glosses, 181 with a note (was 926 and 88).
+
+### Before phase 3
+<a id="before-phase-3"></a>
+
+- **Checkpoint answers are the test set.** The Agazan → English answers (about 300) follow the convention and are not in the example pool, so the evaluation needs no hold-out for them. A note is never required in an answer, so the judge scores only the sentence there; the note score comes from the held-out example blocks.
+- **The holder `reader` note gives away the answer.** It reads `th-CLUES-Azawan` = *I gather Azawan thinks …*, the knowing.md example's own wording, so phase 3 would score every holder pair too high. Reword it with names and a channel no doc example uses, or leave reader notes out for pairs from the section the note cites. Check the other seed notes the same way.
 
 ## Phase 3: evaluation
 <a id="evaluation"></a>

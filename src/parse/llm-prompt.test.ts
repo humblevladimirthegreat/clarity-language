@@ -11,6 +11,7 @@ import {
   constructionReaders,
   docExamples,
   examplePair,
+  tableExamples,
   terminologyLabelGlosses,
 } from "./llm-examples.js";
 import {
@@ -58,10 +59,16 @@ describe("translation prompt core", () => {
   });
 
   it("has a legend line for every capital label a doc gloss uses", () => {
-    const labels = new Set([...printableLabels(tables.overlays.values()), ...index.flatMap((pair) => pair.labels)]);
+    // Whole runs as printed (glossLabels also lists their sub-runs).
+    const runs = index.flatMap((pair) =>
+      [...pair.gloss.replace(/"(?:[^"]|"")*"/g, '""').matchAll(/(?<![A-Za-z])([A-Z]{2,}(?:-[A-Z]+)*)(?![a-z])/g)].map((m) => m[1]!),
+    );
+    const labels = new Set([...printableLabels(tables.overlays.values()), ...runs]);
     const known = (label: string) => terminology.has(label) || !!GLOSS_READER.labels[label];
-    // A joined run (`CLUES-TOPIC`) is covered by its pieces.
-    const missing = [...labels].filter((label) => !known(label) && !(label.includes("-") && label.split("-").every(known)));
+    // A joined run (`CLUES-TOPIC`, `ON-BEHALF-FLOWING`) is covered when it splits into known labels.
+    const covered = (pieces: string[]): boolean =>
+      pieces.length === 0 || pieces.some((_, k) => known(pieces.slice(0, k + 1).join("-")) && covered(pieces.slice(k + 1)));
+    const missing = [...labels].filter((label) => !covered(label.split("-")));
     assert.deepEqual(missing.filter((label) => !["CITE", "ASIDE", "SCOPE", "NAME", "OPAQUE"].includes(label)).sort(), []);
   });
 
@@ -101,6 +108,18 @@ describe("doc examples", () => {
     assert.ok(aside?.gloss.includes("ASIDE["));
   });
 
+  it("reads table rows with italic English", () => {
+    const md = ["| Job | Example | English |", "|------|---------|---------|", "| x | `zazawan vowogal.` | *Azawan walks.* (alone) |"].join("\n");
+    assert.deepEqual(tableExamples(md), [{ agazan: "zazawan vowogal.", free: "*Azawan walks.* (alone)", line: 3, delimiter: "*" }]);
+    const row = examplePair(tableExamples(md)[0]!, "x.md:3", tables);
+    assert.deepEqual([row?.sentence, row?.note], ["Azawan walks.", "alone"]);
+  });
+
+  it("fills a SELF slot with the speaker", () => {
+    const self = examplePair({ agazan: "SELFxan.", free: '"I have time; we can stay."', line: 1 }, "x.md:1", tables);
+    assert.match(self?.gloss ?? "", /^speaker/);
+  });
+
   it("indexes doc examples with their constructions and labels", () => {
     assert.ok(index.length > 500, `index has ${index.length} examples`);
     const pattern = index.find((pair) => pair.labels.includes("PATTERN"));
@@ -133,10 +152,21 @@ describe("selectExamples", () => {
     assert.ok(!picked.some((p) => p.gloss === "z-dog | v-walk"));
   });
 
-  it("shows at least one example with a note and one without", () => {
-    const picked = selectExamples({ constructions: common, labels: [] }, pool, { count: 2 });
+  it("shows an example with a note when one shares something rare, and one without", () => {
+    const picked = selectExamples({ constructions: [...common, "word.xFamily.holder"], labels: [] }, pool, { count: 2 });
     assert.ok(picked.some((p) => p.note != null));
     assert.ok(picked.some((p) => p.note == null));
+  });
+
+  it("does not force in a note example that shares nothing rare", () => {
+    const picked = selectExamples({ constructions: common, labels: [] }, pool, { count: 4 });
+    assert.ok(!picked.some((p) => p.note != null));
+  });
+
+  it("stops at the minimum when nothing else shares a rare feature", () => {
+    const picked = selectExamples({ constructions: [...common, "join.e"], labels: [] }, pool, { count: 4 });
+    assert.equal(picked.length, 2);
+    assert.equal(picked[0]!.gloss, "[z-A | z-B | z-rank/more | g-big]");
   });
 
   it("picks none for count 0", () => {

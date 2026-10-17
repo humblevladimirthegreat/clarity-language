@@ -24,6 +24,7 @@ describe("splitFreeEnglish", () => {
     assert.deepEqual(splitFreeEnglish('"Azawan walks."'), one("Azawan walks."));
     assert.deepEqual(splitFreeEnglish('"tea or coffee." (pick one)'), one("tea or coffee.", "pick one"));
     assert.deepEqual(splitFreeEnglish('"A." (whose (left))'), one("A.", "whose (left)"));
+    assert.deepEqual(splitFreeEnglish("*3 to 5* (`[3, 5)`)", "*"), one("3 to 5", "`[3, 5)`"));
   });
 
   it("splits italics in a checkpoint", () => {
@@ -215,6 +216,7 @@ describe("tableEnglish", () => {
     );
     assert.deepEqual(tableEnglish(sheet(["| `hadem` | here | *here*, *this* | B |"], "| Agazan | Use | English | Stage |")), []);
     assert.deepEqual(tableEnglish(sheet(["| Join | `A xol B` | *(A or B)* | B |"])), []);
+    assert.deepEqual(tableEnglish("| English | Agazan |\n|---|---|\n| *walks, strolls* | `zazawan vowogal.` |"), []);
   });
 
   it("splits pieces and pairs them with the Example pieces", () => {

@@ -52,9 +52,10 @@ export type ExampleBlock = {
   free: { text: string; index: number }[];
 };
 
+/** Parentheses balance outside backticks (a note may quote `[3, 5)`). */
 function balanced(text: string): boolean {
   let depth = 0;
-  for (const ch of text) {
+  for (const ch of text.replace(/`[^`]*`/g, "")) {
     if (ch === "(") depth += 1;
     else if (ch === ")" && --depth < 0) return false;
   }
@@ -288,7 +289,8 @@ function translatedAgazan(cell: string): string[] | null {
  * an italic **English…**, **Gloss**, or **Free English** cell in a row whose **Example**,
  * **Examples**, **Agazan**, or **Form** cell holds only phrases and sentences, outside
  * `<!-- generated -->` blocks. A single word's senses (`*here*, *this*`), templates, and cells not
- * in italics are glosses or descriptions, not free English, and are skipped. A cell holding several
+ * in italics are glosses or descriptions, not free English, and are skipped; so is an English
+ * column left of the Agazan, which keys a lookup by English job. A cell holding several
  * examples (` · ` or `; `) gives one line per piece, paired with the matching Agazan piece when
  * the counts agree.
  */
@@ -318,7 +320,7 @@ export function tableEnglish(markdown: string): FreeEnglishLine[] {
     if (!agazan) continue;
     header.forEach((name, column) => {
       const cell = cells[column];
-      if (!/^(English|Gloss|Free English)/.test(name) || !cell?.text.startsWith("*")) return;
+      if (column < source || !/^(English|Gloss|Free English)/.test(name) || !cell?.text.startsWith("*")) return;
       const pieces = cellPieces(cell.text);
       pieces.forEach((piece, n) => {
         const text = pieces.length === agazan.length ? agazan[n]! : agazan.join(" ");
