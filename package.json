@@ -27,7 +27,7 @@
     "compound-fill": "tsx scripts/compound-fill.ts",
     "lint:lexicon": "tsx scripts/lint-lexicon-published.ts",
     "unused-roots": "tsx scripts/unused-roots.ts",
-    "test": "tsx --test src/*.test.ts src/**/*.test.ts docs/grammar/.vitepress/components/*.test.ts docs/grammar/.vitepress/lib/*.test.ts scripts/lib/*.test.ts",
+    "test": "node scripts/test.mjs",
     "parse": "node scripts/parse.mjs",
     "find": "node scripts/find.mjs",
     "find-english": "node scripts/find-english.mjs"
