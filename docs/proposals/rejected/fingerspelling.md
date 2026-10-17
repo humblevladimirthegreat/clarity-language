@@ -1,6 +1,6 @@
 # Proposal: one-handed fingerspelling (STS subset + Chinese **z**)
 
-**Status:** REJECTED. Spelling one letter per hold is slow, and the borrowed inventory takes 18 shapes from three source alphabets with no shared logic. Adopted instead: the sign adaptation in `musical-phonology.md`. It signs one syllable per beat with both hands, uses finger-count shapes for the digit letters, and shares its shapes with the piano channel.  
+**Status:** REJECTED. Spelling one letter per hold is slow, and the borrowed inventory takes 18 shapes from three source alphabets with no shared logic. Adopted instead: the signed channel in `manual-phonology.md`. It signs one syllable per beat with both hands, uses finger-count shapes for the digit letters, and shares its shapes with the piano and touch channels.  
 **Related:** [phonology.md § letter names](../../grammar/phonology.md#letter-names) (spoken spelling recitation); [phonology.md § phonotactics](../../grammar/phonology.md#phonotactics) (word-final **-x**); silent use when speech is not possible  
 **Design authority:** spoken grammar is unchanged. This is an optional **manual spelling channel** for existing letters. It does not add lexicon, morphology, or a sign language.
 
