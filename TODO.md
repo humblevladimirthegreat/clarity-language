@@ -8,8 +8,8 @@ use [skip-cd] for amplify to not deploy.
 # TODO
 -claritish editor
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
--consider removing forward links (including prose)
--finish grammar-cheat-sheets.md
+-consider removing forward mentions/links (including prose)
+-vocab flashcards generator
 
 save for near end of limit resets:
 -final exam

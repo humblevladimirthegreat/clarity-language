@@ -1,5 +1,5 @@
 // Keep cheat sheets in step with the pages they summarize
-// (docs/proposals/grammar-cheat-sheets.md, layers 2 and 3). Generated blocks
+// (docs/meta/grammar-docs.md, "Cheat sheets": hand-written rows and opted-in tables). Generated blocks
 // (layer 1) are skipped here: scripts/cheat-sheet-blocks.ts holds them to the data.
 //
 // Grammar sheets:

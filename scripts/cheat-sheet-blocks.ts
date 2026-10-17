@@ -1,4 +1,4 @@
-// Generated blocks on cheat sheets (docs/proposals/grammar-cheat-sheets.md, layer 1).
+// Generated blocks on cheat sheets (docs/meta/grammar-docs.md, "Cheat sheets").
 //
 // A sheet marks a block the data owns:
 //

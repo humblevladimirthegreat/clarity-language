@@ -53,6 +53,8 @@ When you finish a level, take its review under **Level reviews** in the sidebar 
 
 The sidebar **Tools** list includes [Terminology](terminology.md) for the English names these pages use for grammar (with a short gloss and a link to the teaching section), plus Lexicon and [Inspect](inspect.md) for roots and word-by-word breakdowns.
 
+The sidebar **Cheat Sheets** group has one printable page per part of the grammar, for looking up a form you have already met. Each row is tagged **B** / **I** / **A** for its level and links to the section that teaches it.
+
 ### Tables: Use, English, Same root as, and Cue
 <a id="cues"></a>
 
