@@ -17,6 +17,7 @@ import {
   tableExamples,
   terminologyLabelGlosses,
 } from "./llm-examples.js";
+import { passageGlosses, promptForPassage } from "./llm-passage.js";
 import {
   buildPrompt,
   EMITTED_ROLES,
@@ -226,5 +227,16 @@ describe("buildPrompt", () => {
   it("explains a variant tail only when a gloss uses it", () => {
     assert.doesNotMatch(buildPrompt(["z-Azawan | v-walk"], [], context, { examples: 0 }), /`\.strong`/);
     assert.match(buildPrompt(["z-Azawan | th-CLUES.strong | v-walk"], [], context, { examples: 0 }), /`\.strong` after a word: strong evidence/);
+  });
+});
+
+describe("promptForPassage", () => {
+  const context: PromptContext = { index: [], labelGlosses: new Map(), readers: new Map() };
+
+  it("numbers one gloss line per input and adds the final stop", () => {
+    const glosses = passageGlosses(["zazawan vowogal.", "zazawan vowogal"], tables);
+    assert.equal(glosses.length, 2);
+    const prompt = promptForPassage(["zazawan vowogal.", "zazawan vowogal"], tables, context);
+    assert.ok(prompt.trimEnd().endsWith(`## Gloss lines\n\n1 ${glosses[0]}\n2 ${glosses[1]}`));
   });
 });

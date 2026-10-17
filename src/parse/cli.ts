@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import { readFileSync } from "node:fs";
 
-import { loadDefaultTables, morphGlossLine, parse, SentenceParseError } from "./index.js";
+import { loadDefaultTables, parse, SentenceParseError } from "./index.js";
 import { unknownWords } from "./lexicon-check.js";
 import { loadPromptContext } from "./llm-examples.js";
-import { buildPrompt } from "./llm-prompt.js";
+import { promptForPassage } from "./llm-passage.js";
 
 const USAGE = [
   "Usage: node scripts/parse.mjs [--check-ambiguity] [--check-lexicon] [--constructions] '<Agazan text>' ['<Agazan text>' ...]",
@@ -60,26 +60,10 @@ if (inputs.length === 0) {
   process.exit(1);
 }
 
-/** Each input's gloss line, glossed after the inputs before it so a `←` can reach back into them. */
-function passageGlosses(texts: string[]): string[] {
-  const tables = loadDefaultTables();
-  const sentences = texts.map((text) => (/[.]$/.test(text) ? text : `${text}.`));
-  const out: string[] = [];
-  let before = "";
-  sentences.forEach((_, k) => {
-    const upTo = morphGlossLine(sentences.slice(0, k + 1).join(" "), tables, { strict: true });
-    out.push(k > 0 && upTo.startsWith(`${before} . `) ? upTo.slice(before.length + 3) : morphGlossLine(sentences[k]!, tables, { strict: true }));
-    before = upTo;
-  });
-  return out;
-}
-
 if (llmPrompt) {
   try {
     const tables = loadDefaultTables();
-    const passage = parse(inputs.map((text) => (/[.]$/.test(text) ? text : `${text}.`)).join(" "), tables, { constructions: true });
-    const glosses = passageGlosses(inputs);
-    const prompt = buildPrompt(glosses, passage.constructions ?? [], loadPromptContext(tables), { loose, examples });
+    const prompt = promptForPassage(inputs, tables, loadPromptContext(tables), { loose, examples });
     process.stdout.write(prompt);
   } catch (error) {
     console.error(error instanceof Error ? error.message : String(error));

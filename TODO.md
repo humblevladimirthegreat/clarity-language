@@ -9,7 +9,7 @@ use [skip-cd] for amplify to not deploy.
 -claritish editor
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -consider removing forward links (including prose)
--add "Copy Translation Prompt" button to Inspect page. It should note the model should be as smart as Opus 5.5
+-finish grammar-cheat-sheets.md
 
 save for near end of limit resets:
 -final exam

@@ -23,3 +23,5 @@ export type {
 } from "./inspect.js";
 export type { ClassifyTables } from "./classify.js";
 export type { LexWord } from "./types.js";
+export { promptForPassage } from "./llm-passage.js";
+export type { ExamplePair, PromptContext } from "./llm-prompt.js";
