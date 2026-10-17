@@ -886,7 +886,7 @@ The word after **`uem`** has to say something the event can go against: a ban, a
 | plan **`thamar`** / **`thamam`** / **`thamal`** | *contrary to my plan* |
 | speaker attitude, such as **`thevegem`** | *against my hopes* |
 
-Permission and consent given (**`thegom`**, **`huxegom`**) only lift a restriction, so nothing can go against them. Sake words cannot follow **`uem`** either: to say an act goes against someone's interest, put an [unmet](#sake-changeability) sake word on the clause (`zazawan vowogal thegathum balahen.` *Azawan's walking harms Alahen's interests*).
+Permission given (**`thegom`**) only lifts a restriction, so nothing can go against it. Consent given (**`huxegol`**, **`huxegom`**, **`huxegor`**) cannot follow **`uem`** either: a listener who misses **`uem`** would hear that the person agreed. A yes that was taken back is a no, so use the refusal: `zazawan vezebel uem huxedem bahaben.` To say you broke a promise, give the promise its own sentence after **`hezom barl`**: `zamun vezebal hezom barl zamun vowogal huxegol.` (*I sleep, although I promised to walk.*) Sake words cannot follow **`uem`** either: to say an act goes against someone's interest, put an [unmet](#sake-changeability) sake word on the clause (`zazawan vowogal thegathum balahen.` *Azawan's walking harms Alahen's interests*).
 
 **Compare with:** *despite the rain* is **`uem`** or **`hezom`** with a noun in `/b/` (`zazawan vowogal uem berehel.`). *Although Alahen said no* as a full sentence is **`hezom barl`** plus that sentence. The sentence after **`barl`** needs an event or a thing, so a stance word alone cannot fill it; use **`uem`** with the stance instead.
 

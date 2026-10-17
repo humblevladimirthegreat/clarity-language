@@ -129,7 +129,8 @@ Source: [hooks.md](../grammar/hooks.md#ranges), [sakes.md](../grammar/sakes.md#c
 - **open:** stacked **-r** at the front of a sentence (`aor …`, `aer …`, `uor …`). Extra-noun point-back is assigned; as sentence glue they have no guess (*For example, anyway?* *In fact, as I said?*). Parser: `hookDiscourseStack`.
 - **open:** discourse **`oel`** / **`ual`** / **`uol`** / **`uel`** (and **-m** / **-n**) at the front of a sentence. *Toward*, *out of*, *through* and *against* give no guessable sentence-to-sentence glue (guesses range from *Alternatively* to *Apart from that*). The parser rejects them.
 - **open:** a hook + `barl` other than `ul` (`hookStandIn`). Most have no guess (*in that…*, *at that…*). *Contrary to* an event is `hezom barl`, and no job has turned up for `uem barl`.
-- **open:** `uem` before a stance with no content an event can contradict (`frameKind`): PERMIT, given CONSENT (they only lift a restriction), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Alahen's interest* is `thegathum balahen`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
+- **open:** `uem` before a stance with no content an event can contradict (`frameKind`): PERMIT (it only lifts a restriction), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Alahen's interest* is `thegathum balahen`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
+- **closed (D-49):** `uem` before given CONSENT (`uem huxegom balahen`, `uem huxegol`), on yourself or with a `/b/` (`frameKind`).
 
 ## Role compounds
 

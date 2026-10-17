@@ -333,6 +333,8 @@ Unlike PLAN, DECISION carries **no time**. It says what you chose, not that the 
 
 **Compare with:** [PLAN](#plan-predict) says how fully you have planned a later act. DECISION says how readily you may change a choice, whenever the act falls.
 
+**Compare with:** [consent](sakes.md#consent) on yourself is a yes you give openly. `zamun vowogal huxegol.` is *I promise to walk*, which others can hold you to; `zamun thehul vowogal.` is *I've decided for good to walk*, a choice only you can see.
+
 #### Endings: changeability
 <a id="decision-changeability"></a>
 

@@ -16,6 +16,8 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 | *so that* / *in order to* | same shape: **`hogom`** ([so that](dependents.md#so-that)); NP intended get = **`hogom`** + `/b/` **noun** |
 | *despite* (NP) | same **`hezom`** (or **`gezom`**) + `/b/` **noun**, not a second pole |
 | *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uem`** + the stance it goes against: `uem thedel` / `uem huxedem balahen` / `uem thamam` / `uem thehul` / `uem thewam` ([contrary to a stance](sakes.md#contrary-to-stance)) |
+| *though I promised* / *breaking my promise* | **`hezom barl`** + the promise as its own sentence: `zamun vezebal hezom barl zamun vowogal huxegol.` (*I sleep, although I promised to walk*) ([contrary to a stance](sakes.md#contrary-to-stance)) |
+| *after they took back their yes* / *more than they agreed to* | a yes taken back is a no: **`uem huxedem balahen`**; past the agreed terms is the consent bar **`huxegom`** ([every bar](comparatives.md#stance-bars)) |
 | *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`barl`**: **`thunem barl`** / **`thobam barl`** ([evidence clause](knowing.md#evidence-clause)) |
 | *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xodum`** ([continue](dependents.md#continue-x)) |
 | *it follows that* / *necessarily, then* (a deduction from the last sentence) | **`xodul`** ([sentence linkers](dependents.md#sentence-linkers)) |
