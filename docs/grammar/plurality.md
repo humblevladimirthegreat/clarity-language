@@ -22,7 +22,7 @@ To point back to that group (or to a prior person **and** their associates), add
 >
 > z-←Azawan-x | v-sit
 >
-> "They (that one and associates) sit."
+> "They sit." (Azawan and associates)
 
 A [role pointer](pronouns.md#role-pointers) takes **-x** the same way: that one and associates, or the whole group when the earlier slot held a joined list.
 
@@ -30,7 +30,7 @@ A [role pointer](pronouns.md#role-pointers) takes **-x** the same way: that one 
 >
 > z-Azawan | v-walk . z-←agent.same-x | v-sit
 >
-> "Azawan walks. They and associates sit."
+> "Azawan walks. They sit." (Azawan and associates)
 
 To introduce several things of one kind (English *some cats*), use **-lx** (concrete) or **-mx** (abstract). Plain **-l** / **-m** introduce one thing. With **-x** added, they introduce an **indefinite group**: a set of that kind in this situation, with no anchor and no associates.
 
@@ -52,7 +52,7 @@ An extra noun takes **-x** the same way. Here the recipient is Alahen and associ
 >
 > z-Azawan | v-tell | b-Alahen-x
 >
-> "Azawan tells Alahen and associates."
+> "Azawan talks to Alahen and associates."
 
 **Compare with:** English *cats* can mean the kind in general. **-lx** means only a set in this situation.
 
@@ -75,25 +75,25 @@ Inclusive *you and I* is **`aha`** ([special pronouns](pronouns.md#special-prono
 >
 > z-listener-x | v-walk
 >
-> "You all (the addressees) walk."
+> "You all walk." (everyone I'm talking to)
 
 > `zamunx vehahel.`
 >
 > z-speaker-x | v-sit
 >
-> "Speaker and associates (not you) sit."
+> "My people and I sit." (not you)
 
 > `zalahenx vehahel.`
 >
 > z-Alahen-x | v-sit
 >
-> "You (Alahen) and your associates sit."
+> "You and your associates sit." (said to Alahen)
 
 > `zahan vowogal.`
 >
 > z-interlocutors | v-walk
 >
-> "We (you and I) walk."
+> "We walk." (you and I)
 
 The same roots take the role letter of the slot they fill. As a direct object they are **`damunx`**, **`dehonx`**, **`dahan`**:
 
@@ -101,13 +101,13 @@ The same roots take the role letter of the slot they fill. As a direct object th
 >
 > z-Azawan | d-speaker-x | v-see
 >
-> "Azawan sees speaker and associates." (not you)
+> "Azawan sees me and my people." (not you)
 
 > `zazawan dehonx vahahal.`
 >
 > z-Azawan | d-listener-x | v-see
 >
-> "Azawan sees you all." (the addressees)
+> "Azawan sees you all." (everyone I'm talking to)
 
 > `zazawan dahan vahahal.`
 >
@@ -128,7 +128,7 @@ The same roots take the role letter of the slot they fill. As a direct object th
 >
 > z-interlocutors-x | v-walk
 >
-> "We (you, I and our associates) walk."
+> "We all walk." (you, I and our people)
 
 **Compare with:** inclusive *we* uses **`aha`** (`zahan`), not **`amunx`**. **`amunx`** leaves you out, **`ehonx`** leaves the speaker out, and **`ahanx`** takes in both and the people around you. Nonspecific *someone* (**`una`**) names no group, so it takes no **-x**: *some people* is `zobelx`.
 
@@ -195,7 +195,7 @@ z-Azawan-x | v-sit
 z-Azawan | d-basket-x | v-see
 :::
 
-**4.** *We all (you, I and our people) see a sandwich.*
+**4.** *We all see a sandwich.* (you, I and our people)
 
 ::: details Show answer
 `zahanx dazal vahahal.`
@@ -203,7 +203,7 @@ z-Azawan | d-basket-x | v-see
 z-interlocutors-x | d-sandwich | v-see
 :::
 
-**5.** *Azawan pours wine. They and associates sit.*
+**5.** *Azawan pours wine. They sit.* (Azawan and associates)
 
 ::: details Show answer
 `zazawan dawahel vobohol. zaxarx vehahel.`
@@ -213,7 +213,7 @@ z-Azawan | d-wine | v-pour . z-←agent.same-x | v-sit
 **Also correct:** `zazawan dawahel vobohol. zazawarx vehahel.`
 :::
 
-**6.** *You all (the addressees) sit.*
+**6.** *You all sit.* (everyone I'm talking to)
 
 ::: details Show answer
 `zehonx vehahel.`
@@ -236,7 +236,7 @@ z-Ahaben-x | d-sandwich | v-see
 ::: details Show answer
 z-speaker-x | v-sit
 
-*I and my people (not you) sit.*
+*My people and I sit.* (not you)
 :::
 
 **3.** `zalahen vehahel. zalaherx dazal vahahal.`
@@ -244,7 +244,7 @@ z-speaker-x | v-sit
 ::: details Show answer
 z-Alahen | v-sit . z-←Alahen-x | d-sandwich | v-see
 
-*Alahen sits. They (Alahen and associates) see a sandwich.*
+*Alahen sits. They see a sandwich.* (Alahen and associates)
 :::
 
 **4.** `zazawan danavalx vahahal.`
@@ -260,7 +260,7 @@ z-Azawan | d-knife-x | v-see
 ::: details Show answer
 y-question | z-listener-x | v-sit
 
-*Do you all sit?*
+*Are you all sitting?*
 :::
 
 **6.** `zahan dawahel vobohol.`
@@ -268,7 +268,7 @@ y-question | z-listener-x | v-sit
 ::: details Show answer
 z-interlocutors | d-wine | v-pour
 
-*We (you and I) pour wine.*
+*We pour wine.* (you and I)
 :::
 
 #### Pick one {#beginner-pick-one}
@@ -295,7 +295,7 @@ z-Azawan | d-Alahen-x | v-see
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *We (you and I) sit.* <!-- lint: error -->`zamunx vehahel.`
+**1.** *We sit.* (you and I) <!-- lint: error -->`zamunx vehahel.`
 
 ::: details Show answer
 `zahan vehahel.`
@@ -347,7 +347,7 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 >
 > z-Azawan-x | v-sing-x
 >
-> "They (Azawan and associates) sing as one outing."
+> "They sing as one outing." (Azawan and associates)
 
 | Agazan | Use | English |
 |--------|-----|---------|
@@ -482,7 +482,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *They (Azawan and associates) sing as one outing.*
+**1.** *They sing as one outing.* (Azawan and associates)
 
 ::: details Show answer
 `zazawanx vezehelx.`
@@ -577,7 +577,7 @@ y-Alahen-x
 ::: details Show answer
 z-sheet-music-x | g-heavy
 
-*The sheets of music are heavy.* (each, or either way)
+*The sheets of music are heavy.* (each one or the whole pile, not said which)
 :::
 
 #### Pick one {#intermediate-pick-one}
@@ -604,7 +604,7 @@ A call is `/y/` with **-nx**; `zahabenx.` only says Ahaben and associates are th
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *They (Ahaben and associates) sing.* <!-- lint: error -->`zahaben vezehelx.`
+**1.** *They sing.* (Ahaben and associates) <!-- lint: error -->`zahaben vezehelx.`
 
 ::: details Show answer
 `zahabenx vezehel.`

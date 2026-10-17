@@ -61,17 +61,17 @@ Each item in a verb-phrase join is a verb plus the words that go with it, and an
 >
 > z-Azawan | [v-walk | [b-Ahaben | v-tell] | v-and]
 >
-> "Azawan walks and tells Ahaben."
+> "Azawan walks and talks to Ahaben."
 
 When every item is a bare verb, a `/d/` right after the join is SHARED, the object of every verb: `vahahal vabovul vam dabovul` → *sees and tempts an apple*.
 
 An adverb `/h/` before all the joined verbs, or SHARED after the join, covers every item. An `/h/` inside an item covers only that item. A [stance](clause.md#stance-th) `/th/` word after the join is not SHARED: like any stance word, it is about the whole claim.
 
-> `zazawan dababol vugugel hugem bavahel vehahel val.`
+> `zazawan dababol vugugel hugem bavahel vagadel val.`
 >
-> z-Azawan | d-popcorn | [v-cooking | [[h-around | b-fire] | v-sit] | v-and]
+> z-Azawan | d-popcorn | [v-cooking | [[h-around | b-fire] | v-eat] | v-and]
 >
-> "Azawan cooked popcorn and sat around the fire."
+> "Azawan cooked popcorn and ate it around the fire."
 
 > `zazawan vowogal varahal val hahegem.`
 >
@@ -113,13 +113,13 @@ All the clauses in an `/x/` join share one speech act. Any `/y/` word goes befor
 >
 > [z-Azawan | v-walk | x-and-then | z-Alahen | v-run]
 >
-> "Azawan walks and then Alahen runs."
+> "Azawan walks, and then Alahen runs."
 
 > `zazawan vowogal xol zalahen varahal xal zahaben vezebal.`
 >
 > [[z-Azawan | v-walk | x-or-exactly-one | z-Alahen | v-run] | x-and | z-Ahaben | v-sleep]
 >
-> "(Azawan walks or Alahen runs) and Ahaben sleeps."
+> "Either Azawan walks or Alahen runs, and Ahaben sleeps." (only one of the first two)
 
 ### Stance joins {#stance-joins}
 
@@ -135,7 +135,7 @@ When English would deny or weigh **how you stand** toward a claim (*not because�
 >
 > z-Azawan | v-walk | th-MEMORY | th-REPORTED | th-or-exactly-one
 >
-> "Azawan walks: I either saw it or was told, one of the two."
+> "Azawan walked; I either saw it or was told, not both."
 
 The other join vowels work on stance words the same way they work on a phrase list ([recap](joins.md#join-type-vowel-series)). A rank join says which ground matters most: the first stance word is the main one.
 
@@ -143,7 +143,7 @@ The other join vowels work on stance words the same way they work on a phrase li
 >
 > z-Azawan | v-walk | th-MEMORY | th-REPORTED | th-rank/more
 >
-> "Azawan walks: I mainly saw it, and I was also told."
+> "Azawan walked; I know mainly because I saw it, and also because I was told."
 
 | Vowel | After stance words | Example reading |
 |---|---|---|
@@ -175,7 +175,7 @@ The same join after DEDUCED and an *if* pole says a conclusion **does not follow
 >
 > z-Azawan | v-teach | th-DEDUCED | th-if | th-not | b-that-clause | [z-Azawan | g-agent-x-teach-th-role]
 >
-> "That Azawan teaches doesn't follow from Azawan being a teacher."
+> "If Azawan is a teacher, it doesn't follow that Azawan teaches."
 
 **Compare with:** `thugum thul thoyem barl` denies only the channel: *if P, then Q*, but you do not know that by deduction.
 
@@ -237,7 +237,7 @@ When someone *does* a list move to a thing (*includes*, *chooses*, *leaves out*)
 >
 > z-Azawan | d-apple | v-includes
 >
-> "Azawan includes an apple."
+> "Azawan adds an apple."
 
 For an associative group (*Alahen and company*), put noun **-x** on the object as usual. **-x** on the verb itself is [collective](plurality.md#verbs-v).
 
@@ -323,6 +323,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *finish-line* | `evehal` | 🏁 |
 | *teamwork* | `ahodom` | 🤾 from *handball* |
 | *medal* | `amedal` | 🏅 |
+| *group* | `azewel` | 👥 |
 
 **Review:**
 
@@ -341,7 +342,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan includes the medal.*
+**1.** *Azawan adds the medal.*
 
 ::: details Show answer
 `zazawan damedal van.`
@@ -381,7 +382,7 @@ z-Alahen | [v-run | v-punch | v-and]
 z-Alahen | v-run | [th-because | b-medal] | th-not
 :::
 
-**6.** *Azawan screams: I either saw it or was told, one of the two.*
+**6.** *Azawan screamed; I either saw it or was told, not both.*
 
 ::: details Show answer
 `zazawan vezugel thevom thewam thol.`
@@ -428,7 +429,7 @@ z-teamwork | [g-open-to | b-Azawan]
 ::: details Show answer
 z-Ahaben | v-run | th-MEMORY | th-REPORTED | th-rank/more
 
-*Ahaben runs: I mainly saw it, and I was also told.*
+*Ahaben ran; I know mainly because I saw it, and also because I was told.*
 :::
 
 **6.** `yol thar zazawan varahal.`
@@ -451,7 +452,7 @@ z-Alahen | [h-refusing | b-medal] | v-run
 **`u`** rejects that member; **`han`** would run *with* the medal.
 :::
 
-**2.** *Azawan punches; before that, Alahen screams.* `zazawan vabahel xuen zalahen vezugel.` or `zazawan vabahel xan zalahen vezugel.`
+**2.** *Azawan punches; before that, Alahen screamed.* `zazawan vabahel xuen zalahen vezugel.` or `zazawan vabahel xan zalahen vezugel.`
 
 ::: details Show answer
 `zazawan vabahel xuen zalahen vezugel.`
@@ -463,12 +464,12 @@ z-Alahen | [h-refusing | b-medal] | v-run
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *the finish line, including Ahaben* <!-- lint: error -->`zevehal al bahaben.`
+**1.** *a group including Ahaben* <!-- lint: error -->`zazewel al bahaben.`
 
 ::: details Show answer
-`zevehal gan bahaben.`
+`zazewel gan bahaben.`
 
-z-finish-line | [g-including | b-Ahaben]
+z-group | [g-including | b-Ahaben]
 
 Before a `/b/` noun, the hook **`al`** means *in*; *including* an extra member is the join-relation **`gan`**.
 :::

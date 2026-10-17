@@ -4,6 +4,61 @@ This document contains a record of features that have been posted to the r/conla
 
 Use this document for styling examples when producing more posts, and seeing what has already been posted. New posts should be added at the top under this section.
 
+### Command vs Prohibition Redundancy
+
+Sentences in Agazan start with a speech act word: yal for statements (usually omitted), yol for questions, yel for commands, and yul for prohibitions. Being only a single vowel apart can lead to mishearing though, so each act also has its own usual word order for redundancy:
+
+* statement - verb last
+* question - verb second
+* command - verb first
+* prohibition - verb last, like a statement
+
+Prohibition uses the same word order as statement because that is less dangerous to confuse than sharing the same word order as a command. In the third and fourth examples below, note that even if you mishear the act word, the word order means that you can't confuse "Don't eat the mushroom" with "Eat the mushroom." At worst you hear "(Someone) eats the mushroom" a description rather than an instruction.
+
+> `(yal) zazawan damahul vagadel.`
+>
+> /(ˈjäl) ˈzä.zä.wän ˈdä.mä.ɦʉl ˈvä.ɡä.de̞l/
+>
+> z-Azawan | d-mushroom | v-eat
+>
+> "Azawan eats the mushroom."
+
+> `yol zazawan vagadel damahul.`
+>
+> /ˈjo̞l ˈzä.zä.wän ˈvä.ɡä.de̞l ˈdä.mä.ɦʉl/
+>
+> y-question | z-Azawan | v-eat | d-mushroom
+>
+> "Does Azawan eat the mushroom?"
+
+> `yel vagadel damahul.`
+>
+> /ˈje̞l ˈvä.ɡä.de̞l ˈdä.mä.ɦʉl/
+>
+> y-command | v-eat | d-mushroom
+>
+> "Eat the mushroom."
+
+> `yul damahul vagadel.`
+>
+> /ˈjʉl ˈdä.mä.ɦʉl ˈvä.ɡä.de̞l/
+>
+> y-prohibition | d-mushroom | v-eat
+>
+> "Don't eat the mushroom."
+
+When you want to be extra sure that *don't* isn't missed, you can also say `yul` twice for emphasis.
+
+> `yul yul damahul vagadel.`
+>
+> /ˈjʉl ˈjʉl ˈdä.mä.ɦʉl ˈvä.ɡä.de̞l/
+>
+> y-prohibition | y-prohibition | d-mushroom | v-eat
+>
+> "Don't eat the mushroom. I mean it."
+
+Full docs: https://clarityconlang.com/grammar/speech-moves.html#act-word-order
+
 ### Labels Say How Far They Reach
 
 Judging a person's character from one action is a common cognitive distortion (the fundamental attribution error), and treating that character as a fixed essence (Essentialism) makes it worse. Both make us less compassionate towards others.

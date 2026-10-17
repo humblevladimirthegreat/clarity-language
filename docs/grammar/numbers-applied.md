@@ -33,7 +33,7 @@ English makes a label plural to name the whole run of labels that start with it:
 >
 > z-Azawan | v-walk | [h-while | b-_90-x]
 >
-> "Azawan walks in the ’90s."
+> "Azawan walked in the ’90s."
 
 ### Time {#time}
 
@@ -69,7 +69,7 @@ Clock and date together:
 >
 > z-Azawan | v-walk | [h-while | [b-year | g-_1962]]
 >
-> "Azawan walks in 1962."
+> "Azawan walked in 1962."
 
 Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** with digits repeats a clock time or date already mentioned; digitless `hror` asks *when?* / *what time?* in a question ([digitless](numbers.md#digitless)). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
@@ -157,7 +157,7 @@ To give a range of numbers (*from 3 to 5*, *3 through 5*), write the two ends wi
 >
 > z-three | through | z-five
 >
-> "From 3 to 5."
+> "From 3 to 5." (both ends included)
 
 Between two numbers, *3, including 5* has nothing to include into, so **`al`** reads as *through*: the band from A reaching and including B. This reading needs both endpoints to be the **same kind** of number (both amounts, both ranks, or both labels / times), each with digits. A number with no digits keeps the ordinary hook (`zral al zraval` = *some number of them, including 5*), and so do mixed kinds.
 
@@ -379,7 +379,7 @@ z-bottle-x | g-50yo
 
 z-ten | outside | z-20
 
-*Outside 10–20.*
+*Below 10 or above 20.*
 :::
 
 **5.** `h_#1,4 zalahen vowogal.`
@@ -405,7 +405,7 @@ h-_1,4 | z-Alahen | v-walk
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Alahen sees spoon 3.* (its label) `zalahen duzubul grorel vahahal.` or `zalahen duzubul grarel vahahal.`
+**1.** *Alahen sees spoon 3.* `zalahen duzubul grorel vahahal.` or `zalahen duzubul grarel vahahal.`
 
 ::: details Show answer
 `zalahen duzubul grorel vahahal.`
@@ -582,7 +582,7 @@ For a side branch, nest a second anchor: first step to the relative, then from t
 >
 > [z-Alahen | [g-#-e0 | [b-person | [g-#-1e-1 | b-Azawan]]]] | v-walk
 >
-> "Alahen, a sibling of Azawan's first parent, walks." (Azawan's aunt or uncle)
+> "Alahen, Azawan's aunt or uncle, walks." (a sibling of the first of Azawan's parents)
 
 **Compare with:** friends, bosses, and other non-kin relations are not generations, so these forms do not name them.
 

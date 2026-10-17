@@ -44,7 +44,7 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 >
 > z-bedroom
 >
-> "a bedroom."
+> "a bedroom"
 
 <!-- cheat-sheet: roles-comparing -->
 | Agazan | Use | English | Cue |
@@ -111,7 +111,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 [z-bell | z-doorbell | z-and]
 :::
 
-**2.** *a hammer and a wrench (and possibly more)*
+**2.** *a hammer and a wrench* (and possibly more)
 
 ::: details Show answer
 `zahavol zerevul zam.`
@@ -182,7 +182,7 @@ z-Ahaben | d-wood-x-saw | v-see
 ::: details Show answer
 [z-wrench | z-bell | z-and.open]
 
-*a wrench and a bell (and possibly more)*
+*a wrench and a bell* (and possibly more)
 :::
 
 **5.** `zazawan derehelogodul vahahal.`
@@ -318,7 +318,7 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 >
 > Alahen-ask
 >
-> "Alahen, one slot." (the conversation lasts for one ask)
+> "Alahen here. I only have time for one thing."
 
 **Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [sake](sakes.md) word takes **`th`** + vowel instead (`gulothal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**. In a clause body, a name with **`x`**, a vowel, and **-n** is not a word.
 
@@ -373,7 +373,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *(Your name), I'm here; we can stay.*
+**1.** *I have time; we can stay.* (hello, with your own name)
 
 ::: details Show answer
 `SELFxan.`
@@ -381,7 +381,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 SELF-presence
 :::
 
-**2.** *Alahen, a few minutes.* (calling)
+**2.** *Alahen, I have a few minutes.* (calling)
 
 ::: details Show answer
 `yalahexen.`
@@ -389,7 +389,7 @@ SELF-presence
 y-Alahen-minutes
 :::
 
-**3.** *Ahaben, just passing.* (calling)
+**3.** *Ahaben, I'm just passing by.* (calling)
 
 ::: details Show answer
 `yahabexun.`
@@ -397,7 +397,7 @@ y-Alahen-minutes
 y-Ahaben-passing
 :::
 
-**4.** *Azawan, a few minutes. Alahen sees the doorbell.*
+**4.** *Azawan, I have a few minutes. Alahen sees the doorbell.*
 
 ::: details Show answer
 `yazawaxen zalahen doyelebehul vahahal.`
@@ -428,7 +428,7 @@ z-Avavu-x-Azavu-x-Ogazan
 ::: details Show answer
 SELF-ask
 
-*(Your name), one ask.* / *I'm about to leave.*
+*I only have time for one thing.* / *I'm about to leave.* (arriving / leaving)
 :::
 
 **2.** `yazawaxun zalahen vezugel.`
@@ -436,7 +436,7 @@ SELF-ask
 ::: details Show answer
 y-Azawan-passing | z-Alahen | v-scream
 
-*Azawan, just passing: Alahen screams.*
+*Azawan, I'm just passing by. Alahen screams.*
 :::
 
 **3.** `zavavuxebedel.`
@@ -452,7 +452,7 @@ z-flower-x-plate
 ::: details Show answer
 y-Ahaben-minutes | z-Azawan | d-flower | v-see
 
-*Ahaben, a few minutes: Azawan sees a flower.*
+*Ahaben, I have a few minutes. Azawan sees a flower.*
 :::
 
 **5.** `SELFxen.` (said when leaving)
@@ -483,7 +483,7 @@ z-croissant-x-plate
 The last root is the kind (a plate); the root before **`x`** narrows it.
 :::
 
-**2.** *Ahaben, one ask.* (calling) `yahabexon.` or `yahabexen.`
+**2.** *Ahaben, I have time for just one thing.* (calling) `yahabexon.` or `yahabexen.`
 
 ::: details Show answer
 `yahabexon.`

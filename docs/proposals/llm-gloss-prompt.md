@@ -1,6 +1,6 @@
 # Translation prompt from the parser
 
-Status: phase 1, steps 1 (policy edits), 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review) in progress: waves 1 and 2 done, wave 2 awaiting the editor's review of its diff ([as built](#phase-1-step-5-as-built)). Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
+Status: phase 1, steps 1 (policy edits), 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review) in progress: waves 1, 2 and 4 done, wave 4 awaiting the editor's review of its diff, wave 3 not started ([as built](#phase-1-step-5-as-built)). Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
 
 ## Problem
 
@@ -210,7 +210,7 @@ Waves. Pages heavy in referent, scope, or turn judgments run at `xhigh`; the res
 | 1 | **hooks**, **joins**, **sakes**, **questions**, comparatives, say-people-places | done | 68 (was 101) |
 | 2 | **spans**, **pronouns**, relations, roles, intention, say-reasons | done | 47 (was 68) |
 | 3 | **speech-moves**, dependents, numbers, predication, restrictors, review | | |
-| 4 | **plurality**, causation, x-compounds, word-endings + phonology, numbers-applied + english, join-across-roles | | |
+| 4 | **plurality**, causation, x-compounds, word-endings + phonology, numbers-applied + english, join-across-roles | done, awaiting the editor's review | 12 (was 47; all on wave 3 pages and say-reasons) |
 | 5 | say-tense + say-questions, say-amounts + numeric-derivation | | |
 
 Wave 1 decisions:
@@ -228,6 +228,21 @@ Wave 2 decisions:
   - say-reasons.md *As of 22 July, Alahen had decided to walk*: relations.md § as-of says `/h/` *as-of* moves only the event, so the decision is still now.
   - intention.md WANT (*Alahen wants Azawan to walk*) states someone else's want with no holder. knowing.md settles PLAN (it needs no channel), not WANT, which is closer to a feeling.
 - **For `sake-motive-holder.md`:** say-reasons.md sake words that read as someone else's motive: the blocks at lines 116 and 262, and the table rows *motivation* (252), *biased* / *bias* (285–286), and *deserves* (557, 562, no `/b/` for whose stake). Folded; *deserves* stays as the speaker's view of what is fair.
+
+Wave 4 (run before wave 3; wave 3's pages are still unreviewed):
+- **Applied in the wave check:** cheat-sheet rows that quote changed examples (numbers.md 4, why-allowed.md 12, roles-comparing.md 1); `core` cell for `azewe` (*group*, now in the join-across-roles.md Fix it). Cheat-sheet English cells take a note like any free English line.
+- **Strange examples:** join-across-roles.md *cooked popcorn and sat around the fire* is *ate it* (the shared object needs a verb that takes it); the Fix it's *finish line including Ahaben* is *a group including Ahaben*.
+- **For the editor to confirm:**
+  - Past tense where the Agazan fixes the time: *walked in the ’90s* / *in 1962* (numbers-applied.md), MEMORY and rank evidence lines (join-across-roles.md).
+  - Greetings are *Hello.* (said by Ahaben), and *Hello.* / *Goodbye.* where both uses are taught (word-endings.md). Own-name lines on x-compounds.md use a note (*hello, with your own name*), not a literal `SELF`, which the site would show as *speaker*.
+  - plurality.md writes the addressee set as *(everyone I'm talking to)*, not glosses.md's *(the addressees)*, and speaker **-x** as *My people and I* (not you), from the table.
+  - causation.md `wegem gelevam` is *walks, straining* (something is causing the strain); fallback *exerted*, as on say-amounts.md.
+  - word-endings.md checkpoint notes *(the dictionary form)* repeat the checkpoint's own instruction and could go.
+  - phonology.md and numbers.md *Three cats.* for `zagadulx grarel.`, which parses as a sentence (*There are three cats.*).
+  - plurality.md *sing as one outing* follows the table's phrase but reads oddly for singing. Collective **-x** *(but not individually)*: the prose does not say the property fails for each member; the Pick one answer says *heavy only together*.
+  - x-compounds.md `gagayoxalaval` is an adjective, but its English (*love in the crush sense*) is a noun phrase; a cheat sheet quotes it.
+- **Gap:** join-across-roles.md never says whether a `/d/` before a verb-phrase join is shared by every verb or belongs to the first. The parser reads it as shared; there is no stated way to give only the first verb an object.
+- **For wave 3:** review.md line 126 (`zazawan vezebel balahenx.`) still reads *tells*; plurality.md now has *talks to Alahen and associates*.
 
 ## Phase 2: the prompt
 

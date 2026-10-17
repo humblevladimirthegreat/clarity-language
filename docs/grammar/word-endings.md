@@ -49,7 +49,7 @@ To say hello or a simple goodbye, say your own name: the named citation, followe
 >
 > SELF
 >
-> Your name, said as hello or goodbye.
+> "Hello." / "Goodbye." (said by you)
 
 The greeting names **you**, not the person you greet, so it works the same for a stranger whose name you don't know and for a whole room: `SELFn.` said to a group is *hi, all*.
 
@@ -95,7 +95,7 @@ The word bank lists the roots this checkpoint introduces. **English** is what yo
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *school* (citation)
+**1.** *school* (the dictionary form)
 
 ::: details Show answer
 `uzugul`
@@ -103,7 +103,7 @@ The word bank lists the roots this checkpoint introduces. **English** is what yo
 school
 :::
 
-**2.** *knowledge* (citation)
+**2.** *knowledge* (the dictionary form)
 
 ::: details Show answer
 `ugum`
@@ -111,7 +111,7 @@ school
 knowledge
 :::
 
-**3.** *alert* (citation)
+**3.** *alert* (the dictionary form)
 
 ::: details Show answer
 `ebehum`
@@ -119,7 +119,7 @@ knowledge
 alert
 :::
 
-**4.** *courage*, as a name (citation)
+**4.** *courage* (as a name)
 
 ::: details Show answer
 `alahen`
@@ -127,7 +127,7 @@ alert
 Alahen
 :::
 
-**5.** *Hello, the speaker is Azawan.*
+**5.** *Hello.* (said by Azawan)
 
 ::: details Show answer
 `azawan.`
@@ -135,7 +135,7 @@ Alahen
 Azawan
 :::
 
-**6.** *Hello, say it with your own name.*
+**6.** *Hello.* (said by you)
 
 ::: details Show answer
 `SELFn.`
@@ -196,7 +196,7 @@ beauty
 
 Ahaben
 
-*Ahaben.* (hello, the speaker is Ahaben)
+*Hello.* / *Goodbye.* (said by Ahaben)
 :::
 
 #### Pick one {#beginner-pick-one}
@@ -211,7 +211,7 @@ scrutiny
 *Scrutiny* is the abstract sense of the root, so it takes **-m**; `amagal` is *magnify*.
 :::
 
-**2.** *Azawan*, in a list of names `azawal` or `azawan`
+**2.** *Azawan* (in a list of names) `azawal` or `azawan`
 
 ::: details Show answer
 `azawan`
@@ -249,7 +249,7 @@ A brand, a product line, a work, or a yearly event counts as one named thing, ev
 >
 > z-Ahaben | v-Ezehen
 >
-> "Ahaben sings Ezehen" (that titled song).
+> "Ahaben sings Ezehen." (that titled song)
 
 The rest of the role map (same **-n**):
 
@@ -434,7 +434,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan sits according to Hospital* (the named frame).
+**1.** *Azawan sits according to Hospital.* (the named frame)
 
 ::: details Show answer
 `zazawan vehahel hahazon.`
@@ -442,7 +442,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Azawan | v-sit | h-Ahazon
 :::
 
-**2.** *The bed is an Azawan* (the brand).
+**2.** *The bed is an Azawan.* (the brand)
 
 ::: details Show answer
 `zebedal gazawan.`
@@ -450,7 +450,7 @@ z-Azawan | v-sit | h-Ahazon
 z-bed | g-Azawan
 :::
 
-**3.** *Ahaben observes Sleep* (the ward's titled rest hour).
+**3.** *Ahaben observes Sleep.* (the ward's titled rest hour)
 
 ::: details Show answer
 `zahaben vezeban.`
@@ -458,7 +458,7 @@ z-bed | g-Azawan
 z-Ahaben | v-Ezeban
 :::
 
-**4.** *Azawan sees Hospital-Bed* (the ward's name).
+**4.** *Azawan sees Hospital-Bed.* (the ward's name)
 
 ::: details Show answer
 `zazawan dahazoxebedan vahahal.`
@@ -468,7 +468,7 @@ z-Azawan | d-Ahazo-x-Ebedan | v-see
 **Also correct:** `zazawan vahahal dahazoxebedan.`
 :::
 
-**5.** *There is a big Ahaben* (one bed of that brand).
+**5.** *There is a big Ahaben.* (one bed of that brand)
 
 ::: details Show answer
 `zahabeln gelavam.`
@@ -491,7 +491,7 @@ z-Alahen | d-japan-flag | v-see
 ::: details Show answer
 z-Alahen | v-write | h-Eveden
 
-*Alahen writes according to Temperature* (the named standard).
+*Alahen writes according to Temperature.* (the named standard)
 :::
 
 **2.** `zahaben vazehen.`
@@ -499,7 +499,7 @@ z-Alahen | v-write | h-Eveden
 ::: details Show answer
 z-Ahaben | v-Azehen
 
-*Ahaben performs Intrusion* (that titled procedure).
+*Ahaben performs Intrusion.* (that titled procedure)
 :::
 
 **3.** `zalahen varahal hamaban.`
@@ -507,7 +507,7 @@ z-Ahaben | v-Azehen
 ::: details Show answer
 z-Alahen | v-run | h-Amaban
 
-*Alahen runs in Emergency* (the named frame).
+*Alahen runs in Emergency.* (the named frame)
 :::
 
 **4.** `zazawan dahabeln vahahal. zahaber gelavam.`
@@ -536,7 +536,7 @@ z-bed | g-japanese
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Alahen sees an Azawan* (one bed of that brand). `zalahen dazawaln vahahal.` or `zalahen dazawan vahahal.`
+**1.** *Alahen sees an Azawan.* (one bed of that brand) `zalahen dazawaln vahahal.` or `zalahen dazawan vahahal.`
 
 ::: details Show answer
 `zalahen dazawaln vahahal.`
@@ -546,7 +546,7 @@ z-Alahen | d-Azawan.instance | v-see
 **-ln** is one thing the name applies to; **-n** is the brand itself.
 :::
 
-**2.** *Ahaben performs Emergency* (the titled drill). `zahaben vamaban.` or `zahaben vamabal.`
+**2.** *Ahaben performs Emergency.* (the titled drill) `zahaben vamaban.` or `zahaben vamabal.`
 
 ::: details Show answer
 `zahaben vamaban.`

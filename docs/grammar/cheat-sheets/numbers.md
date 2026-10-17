@@ -196,7 +196,7 @@ The digit-string marker `_` holds a phone, room, channel, or serial number. Grou
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [A code as object](../numbers-applied.md#digit-strings) | `zazawan d_555,123,4567 vahahal.` | *Azawan sees 555-123-4567.* | I |
-| [Plural label](../numbers-applied.md#plural-labels) | `zazawan vowogal huwem b_90x.` | *Azawan walks in the ’90s.* | I |
+| [Plural label](../numbers-applied.md#plural-labels) | `zazawan vowogal huwem b_90x.` | *Azawan walked in the ’90s.* | I |
 
 ### Time and date {#time}
 
@@ -214,7 +214,7 @@ A digit string under `/h/` with no relation word before it. Clock is `h_…`; a 
 |-----|---------|---------|-------|
 | [At a time](../numbers-applied.md#time) | `h_15,30 zazawan vowogal.` | *At 15:30 Azawan walks.* | I |
 | [In March](../numbers-applied.md#time) | `zazawan vowogal huwem bumuham grerel.` | *Azawan walks in March.* | I |
-| [In 1962](../numbers-applied.md#time) | `zazawan vowogal huwem bavawem g_1962.` | *Azawan walks in 1962.* | I |
+| [In 1962](../numbers-applied.md#time) | `zazawan vowogal huwem bavawem g_1962.` | *Azawan walked in 1962.* | I |
 | [From … to](../numbers-applied.md#time) | `zazawan ul b_9 vowogal oel b_17.` | *Azawan walks from 9:00 to 17:00.* | I |
 
 Digitless `hrol` is *some clock or date*; `hror` asks *when?* *Three times* (`hrarel`) is not a clock time.
@@ -277,7 +277,7 @@ Write both ends with the hook `al`: `A al B`. It reads as *through* when both en
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [3 to 5](../numbers-applied.md#ranges) | `zrarel al zraval.` | *From 3 to 5.* | I |
+| [3 to 5](../numbers-applied.md#ranges) | `zrarel al zraval.` | *From 3 to 5.* (both ends included) | I |
 | [Of a noun](../numbers-applied.md#ranges) | `zodogal grarel al graval vowogal.` | *Three to five dogs walk.* | I |
 | [Hours](../numbers-applied.md#ranges) | `zagazem grarel al graval.` | *Three to five hours.* | I |
 
@@ -436,7 +436,7 @@ On a family tree, put the anchor person in `/b/` right after the number.
 | [Second child](../numbers-applied.md#kin-generations) | `zahadol g#2e1 bazawan vowogal.` | *Azawan's second child walks.* | A |
 | [Children](../numbers-applied.md#kin-generations) | `grebawol` | the focus's own children | A |
 | [Grandchildren](../numbers-applied.md#kin-generations) | `grebadul` | the focus's grandchildren | A |
-| [Aunt or uncle](../numbers-applied.md#kin-generations) | `zalahen grebazol bobel g#1e-1 bazawan vowogal.` | *Alahen, a sibling of Azawan's first parent, walks.* | A |
+| [Aunt or uncle](../numbers-applied.md#kin-generations) | `zalahen grebazol bobel g#1e-1 bazawan vowogal.` | *Alahen, Azawan's aunt or uncle, walks.* (a sibling of the first of Azawan's parents) | A |
 
 Only kin make generations: friends and bosses are [social relations](../relations.md#social-relations).
 

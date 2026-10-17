@@ -24,15 +24,15 @@ Write the outcome first, then the pole, then the condition as the pole's `/b/`. 
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [If, after a verb](../causation.md#if) | `zazawan vowogal thoyem berehel.` | *Azawan walks if there is rain.* | B |
+| [If, after a verb](../causation.md#if) | `zazawan vowogal thoyem berehel.` | *Azawan walks if it rains.* | B |
 | [If, after a noun](../causation.md#if) | `zerehel goyem bagavul.` | *There is rain if there are clouds.* | B |
-| [Only if](../causation.md#only-if) | `zazawan vowogal tholum berehel.` | *Azawan walks only if there is rain.* | B |
-| [Condition is a whole sentence](../causation.md#dependent): `barl`, then the sentence | `zazawan vowogal thoyem barl zalahen vezebal.` | *Azawan walks if Alahen sleeps.* | I |
-| [Because](../causation.md#only-because) | `zazawan vowogal thavem barl zalahen vezebal.` | *Azawan walks because Alahen sleeps.* | I |
-| [If and only if](../causation.md#only-because) | `zazawan vowogal thedam barl zalahen vezebal.` | *Azawan walks if and only if Alahen sleeps.* | I |
-| [Only because](../causation.md#only-because) | `zazawan vowogal tholum thavem berehel.` | *Azawan walks only because there is rain.* | I |
-| [Unless](../causation.md#only-because): `burl` for `barl` | `zazawan vowogal thoyem burl zalahen vezebal.` | *Azawan walks unless Alahen sleeps.* | I |
-| [Even if](../causation.md#only-because) | `zazawan vowogal hezom thoyem barl zalahen vezebal.` | *Azawan walks even if Alahen sleeps.* | I |
+| [Only if](../causation.md#only-if) | `zazawan vowogal tholum berehel.` | *Azawan walks only if it rains.* | B |
+| [Condition is a whole sentence](../causation.md#dependent): `barl`, then the sentence | `zazawan vowogal thoyem barl zalahen vezebal.` | *Azawan walks if Alahen is asleep.* | I |
+| [Because](../causation.md#only-because) | `zazawan vowogal thavem barl zalahen vezebal.` | *Azawan walks because Alahen is asleep.* | I |
+| [If and only if](../causation.md#only-because) | `zazawan vowogal thedam barl zalahen vezebal.` | *Azawan walks if and only if Alahen is asleep.* | I |
+| [Only because](../causation.md#only-because) | `zazawan vowogal tholum thavem berehel.` | *Azawan walks only because of the rain.* | I |
+| [Unless](../causation.md#only-because): `burl` for `barl` | `zazawan vowogal thoyem burl zalahen vezebal.` | *Azawan walks unless Alahen is asleep.* | I |
+| [Even if](../causation.md#only-because) | `zazawan vowogal hezom thoyem barl zalahen vezebal.` | *Azawan walks even if Alahen is asleep.* | I |
 
 A noun after a because pole names an act or a thing, never a person. For *because of Alahen*, give what Alahen did as a sentence after `barl`.
 
@@ -49,7 +49,7 @@ The ending on the because pole says whether anyone did wrong.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Fault, on an act](../causation.md#fault) | `zazawan vedabal thavel barl zalahen vezebel.` | *Azawan left, and Alahen's telling was wrong.* | I |
+| [Fault, on an act](../causation.md#fault) | `zazawan vedabal thavel barl zalahen vezebel.` | *Azawan left because Alahen spoke, and Alahen was wrong to.* | I |
 | [A share](../causation.md#fault) | `zazawan vedabal thaver berehel.` | *The rain is part of why Azawan left.* | I |
 
 ### CAUSE: the mechanism {#cause}
@@ -58,9 +58,9 @@ The ending on the because pole says whether anyone did wrong.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Mechanism](../causation.md#cause) | `zazawan vowogal thegem thoyem berehel.` | *Azawan walks if there is rain (as mechanism).* | I |
-| [Make someone do it](../causation.md#make): causer in `/b/`, no pole | `zalahen vezebel thegem bazawan.` | *Azawan makes Alahen tell.* | I |
-| [One adjective only](../causation.md#cause): `wegem` | `zazawan wegem gelevam vowogal.` | *Azawan walks, exerted; that is how it works.* | I |
+| [Mechanism](../causation.md#cause) | `zazawan vowogal thegem thoyem berehel.` | *Azawan walks if it rains.* (rain as the mechanism) | I |
+| [Make someone do it](../causation.md#make): causer in `/b/`, no pole | `zalahen vezebel thegem bazawan.` | *Azawan makes Alahen speak.* | I |
+| [One adjective only](../causation.md#cause): `wegem` | `zazawan wegem gelevam vowogal.` | *Azawan walks, straining.* (something is causing the strain) | I |
 
 ## The sakes {#sakes}
 

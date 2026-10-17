@@ -177,7 +177,7 @@ Name + **`x`** + one vowel + **-n**, on a greeting or a call. At arrival it says
 |-----|---------|---------|-------|
 | [Arriving](../x-compounds.md#conversation-length) | `SELFxan.` | *I have time; we can stay.* | I |
 | [Calling with a bid](../x-compounds.md#conversation-length) | `yalahexen.` | *Alahen, I have a few minutes.* | I |
-| [The other bid](../x-compounds.md#conversation-length) | `alahexon.` | *Alahen, one slot.* | I |
+| [The other bid](../x-compounds.md#conversation-length) | `alahexon.` | *Alahen here. I only have time for one thing.* | I |
 | [Leaving soon](../x-compounds.md#conversation-length) | `SELFxen.` | *I'm leaving soon.* | I |
 
 ## More, as much, less {#comparing}
