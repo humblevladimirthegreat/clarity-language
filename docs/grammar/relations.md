@@ -22,7 +22,7 @@ When English says something **resembles** a model (*walks like a duck*, *a house
 >
 > z-Azawan | [[w-very | h-like] | b-duck] | v-walk
 >
-> "Azawan walks very like a duck."
+> "Azawan walks very much like a duck."
 
 On a noun, the same root is **`gumum`**:
 
@@ -92,7 +92,7 @@ When English says someone **acts as another person’s agent** (*tells on behalf
 >
 > z-Azawan | [h-on-behalf-of | b-Alahen] | v-tell
 >
-> "Azawan tells on behalf of Alahen."
+> "Azawan speaks on behalf of Alahen."
 
 A recipient `/b/` can follow once the pair is complete: `zazawan hadem balahen vezebel bahaben` (*tells Ahaben on behalf of Alahen*). On a noun, the same root is **`gadem`** (`dugul gadem balahen` *a book on behalf of Alahen*). As a plain noun, `zadel` is *an id*.
 
@@ -175,7 +175,7 @@ z-Alahen | [h-on-behalf-of | b-Azawan] | v-write
 z-Ahaben | [d-pencil | [g-like | b-Azawan]] | v-find
 :::
 
-**5.** *Alahen sneaks very like a duck.*
+**5.** *Alahen sneaks very much like a duck.*
 
 ::: details Show answer
 `zalahen welavam humum badagul vezevul.`
@@ -222,7 +222,7 @@ z-Azawan | h-haste | v-walk | [h-like | b-that-clause] | z-duck | v-run
 ::: details Show answer
 z-guard | [h-like | b-Azawan] | v-tell | b-Ahaben
 
-*The guard tells Ahaben, like Azawan does.*
+*The guard talks to Ahaben, like Azawan does.*
 :::
 
 **5.** `zazawan welavam gumum badagul.`
@@ -230,12 +230,12 @@ z-guard | [h-like | b-Azawan] | v-tell | b-Ahaben
 ::: details Show answer
 z-Azawan | [[w-very | g-like] | b-duck]
 
-*Azawan is very like a duck.*
+*Azawan is very much like a duck.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Azawan tells Ahaben on behalf of Alahen.* `zazawan hadem balahen vezebel bahaben.` or `zazawan hadem bahaben vezebel balahen.`
+**1.** *Azawan talks to Ahaben on behalf of Alahen.* `zazawan hadem balahen vezebel bahaben.` or `zazawan hadem bahaben vezebel balahen.`
 
 ::: details Show answer
 `zazawan hadem balahen vezebel bahaben.`
@@ -377,25 +377,25 @@ English *of* also names how one noun sits toward another (*a hand of Alahen*, *a
 >
 > z-Azawan | [d-hand | [g-part-of | b-Alahen]] | v-see
 >
-> "Azawan sees a hand of Alahen."
+> "Azawan sees one of Alahen's hands."
 
 > `zazawan dedebul gahem bedehel vahahal.`
 >
 > z-Azawan | [d-teapot | [g-contents | b-tea]] | v-see
 >
-> "Azawan sees a teapot of tea."
+> "Azawan sees a teapot full of tea."
 
 > `zazawan dahazal guwum buwul vahahal.`
 >
 > z-Azawan | [d-house | [g-material | b-wood]] | v-see
 >
-> "Azawan sees a house of wood."
+> "Azawan sees a house made of wood."
 
 > `zalahen gagum bezagal vowogal.`
 >
 > [z-Alahen | [g-origin | b-skyline]] | v-walk
 >
-> "Alahen of the city walks."
+> "Alahen, who is from the city, walks."
 
 On an event, the same roots take `/h/` (`zazawan vageval huwum buwul` *Azawan crafts out of wood*; `zalahen vowogal hagum bezagal` *Alahen walks, originating from the city*). As plain nouns, the same roots name ordinary things (`zobol` *a bone*; `zahel` *a jar*; `zuwul` *wood*; `zagul` *a country*).
 
@@ -540,7 +540,7 @@ z-Ahaben | [from | b-house] | v-walk | [at | b-station]
 z-Azawan | v-sit | [h-between | [b-luggage | b-train | b-and]]
 :::
 
-**4.** *Ahaben sees a teapot of wine.*
+**4.** *Ahaben sees a teapot full of wine.*
 
 ::: details Show answer
 `zahaben dedebul gahem bawahel vahahal.`
@@ -652,13 +652,15 @@ Agazan keeps the two apart. With no extra marking, whose-now is **speech-now**, 
 >
 > z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 >
-> "As of 22 July, Alahen had still left."
+> "As of 22 July, Alahen had left and was still gone."
 
 > `zazawan huhum b_#22,7 vehahel al bahazal.`
 >
 > z-Azawan | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 >
-> "As of 22 July, Azawan is in a house." (the event is concurrent with that now)
+> "As of 22 July, Azawan is sitting in a house."
+
+With nothing else marked, the sitting happens at that now.
 
 The pair covers only its own clause. To keep the same whose-now in a following `/x/` clause, repeat the **same word** with **-r** and no `/b/` (`huhur` / `hurar`). A new pair with its own `/b/` replaces whose-now, whether it repeats the word or switches between `huhum` and `huram`. A clause (or a noun or adjective, below) takes at most one *as-of* pair.
 
@@ -666,7 +668,7 @@ The pair covers only its own clause. To keep the same whose-now in a following `
 >
 > z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | th-RESIDUE | h-as-of.ledger | v-walk
 >
-> "As of 22 July, Alahen had still left. Azawan had still walked, same books."
+> "As of 22 July, Alahen had left and was still gone. As of that same day, Azawan's walk still counted too."
 
 The role letter says what the snapshot applies to: `/h/` the whole clause, `/ɡ/` one noun (`guhum` *the tab as of Friday*), and `/w/` the `/ɡ/` adjective immediately after the pair (`wuhum b_#22,7 gamadam`). These are separate, so one clause may carry a clause snapshot and an adjective snapshot at once. A noun or adjective snapshot does not reach the verb: if the **verb** should also count from that now, the clause needs its own `/h/` *as-of* (or a resume).
 
@@ -695,37 +697,45 @@ Once whose-now is set, these count from it:
 >
 > [z-Azawan | z-Alahen | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 >
-> "As of 22 July, Azawan is more challenging than Alahen." (`/w/` does not retarget the verb)
+> "As of 22 July, Azawan is more challenging than Alahen."
+
+Here the snapshot covers only *challenging*. It does not reach a verb: a verb in this clause would still count from speech-now unless the clause had its own `/h/` pair.
 
 > `zamol thamom huhum bedabal.`
 >
 > z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
 >
-> "As of the leaving, the money still stood."
+> "As of the departure, the money still stood."
 
 > `zazawan huhum b_#22,7 habam bedabal vehahel al bahazal.`
 >
 > z-Azawan | [h-as-of.ledger | b-_22,7] | [h-before | b-departure] | v-sit | [in | b-house]
 >
-> "As of 22 July, Azawan is in a house before the leaving." (whose-now and the event's own time are separate)
+> "As of 22 July, Azawan is sitting in a house before the departure."
+
+*Before the departure* places the sitting itself; *as of 22 July* only sets the now the clause is measured from. The two times are separate.
 
 > `zalahen vowogal ol b_#22,7. xalahen thamom huhum b=_#22,7 vedabal.`
 >
 > z-Alahen | v-walk | [at | b-_22,7] . x-Alahen | th-RESIDUE | [h-as-of.ledger | b-←_22,7] | v-departure
 >
-> "Alahen walks on 22 July. As of that date, the leaving still stood."
+> "Alahen walked on 22 July. As of that day, Alahen had left and was still gone."
 
 > `zalahen thamom vedabal huhum barl zalahen vezebel.`
 >
 > z-Alahen | th-RESIDUE | v-departure | [h-as-of.ledger | b-that-clause] | z-Alahen | v-tell
 >
-> "As of when Alahen told it, the departure still stood." (the telling sets whose-now; it is not what is left over)
+> "As of when Alahen spoke, Alahen had left and was still gone."
+
+The speaking only sets the now; it is not what is left over.
 
 > `zalahen thamom huhum b_#22,7 vedabal. xazawan thobam bral huram b_#23,7 vowogal.`
 >
 > z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Azawan | [th-PATTERN | b-later] | [h-as-of.bookmark | b-_23,7] | v-walk
 >
-> "As of 22 July, Alahen had still left. From a 23 July placeholder, Azawan would walk, going by the pattern." (a new pair replaces whose-now)
+> "As of 22 July, Alahen had left and was still gone. Taking 23 July as now, Azawan would walk, going by the pattern."
+
+The second sentence's own pair replaces the 22 July now.
 
 An *as-of* pair inside a finished inner clause cannot be resumed later in the main clause. `huhur` on its own parses, but write it only after a clause that set whose-now with `huhum` and a `/b/`.
 
@@ -746,13 +756,13 @@ A stance is yours at speech-now: `thovum` is how unsure you are **as you speak**
 >
 > z-Alahen | [th-as-of.ledger | b-_22,7] | th-MAY | v-departure
 >
-> "On 22 July, I thought Alahen might leave." (the doubt was then; nothing is said about now)
+> "On 22 July, I thought Alahen might leave." (no claim about what I think now)
 
 > `zalahen thovum vedabal.`
 >
 > z-Alahen | th-MAY | v-departure
 >
-> "Maybe Alahen left." (the doubt is now)
+> "Alahen might leave."
 
 `/th/` *as-of* moves only the stances. `/h/` *as-of* moves the event's books. A clause may carry one of each, so a past stance can sit next to a past event:
 
@@ -768,7 +778,7 @@ With **`thuram`**, the stance is one you would hold, not one you held:
 >
 > z-Alahen | th-MAY | v-departure | [th-as-of.bookmark | b-that-clause] | z-Azawan | v-tell
 >
-> "Once Azawan told, I'd think Alahen might leave." (a placeholder now for the doubt)
+> "Once Azawan had spoken, I'd think Alahen might leave."
 
 Resume works as on `/h/`: **`thuhur`** / **`thurar`** with no `/b/` on the next `/x/` clause keeps the same stance-now.
 
@@ -823,7 +833,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 #### English → Agazan {#advanced-english-to-agazan}
 
-**1.** *As of 22 July, Alahen had still left.*
+**1.** *As of 22 July, Alahen had left and was still gone.*
 
 ::: details Show answer
 `zalahen thamom huhum b_#22,7 vedabal.`
@@ -862,7 +872,7 @@ z-book | [g-as-of.ledger | b-_22,7]
 ::: details Show answer
 z-Ahaben | th-RESIDUE | [h-as-of.ledger | b-_23,7] | v-departure . x-Azawan | th-RESIDUE | h-as-of.ledger | v-sit
 
-*As of 23 July, Ahaben had still left. Azawan had still sat, same books.*
+*As of 23 July, Ahaben had left and was still gone. As of that same day, Azawan had sat down and was still sitting.*
 :::
 
 **2.** `thobam bral huram b_#22,7 verehel.`
@@ -870,7 +880,7 @@ z-Ahaben | th-RESIDUE | [h-as-of.ledger | b-_23,7] | v-departure . x-Azawan | th
 ::: details Show answer
 [th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain
 
-*Taking 22 July as now (a placeholder), it would rain, going by the pattern.*
+*Taking 22 July as now, it would rain, going by the pattern.*
 :::
 
 **3.** `zamol thamom huhum bedabal.`
@@ -878,7 +888,7 @@ z-Ahaben | th-RESIDUE | [h-as-of.ledger | b-_23,7] | v-departure . x-Azawan | th
 ::: details Show answer
 z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
 
-*As of the leaving, the money still stood.*
+*As of the departure, the money still stood.*
 :::
 
 **4.** `zalahen thovum vedabal thuram barl zazawan vezebel.`
@@ -886,7 +896,7 @@ z-money | th-RESIDUE | [h-as-of.ledger | b-departure]
 ::: details Show answer
 z-Alahen | th-MAY | v-departure | [th-as-of.bookmark | b-that-clause] | z-Azawan | v-tell
 
-*Once Azawan told, I'd think Alahen might leave.*
+*Once Azawan had spoken, I'd think Alahen might leave.*
 :::
 
 #### Pick one {#advanced-pick-one}

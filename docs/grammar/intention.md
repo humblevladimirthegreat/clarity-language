@@ -82,7 +82,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *Azawan intends to sit.*
+**1.** *Azawan intends to sit down.*
 
 ::: details Show answer
 `zazawan thamar vehahel.`
@@ -98,7 +98,7 @@ z-Azawan | th-plan-sketch | v-sit
 z-Alahen | th-plan-itinerary | d-pawn | v-find
 :::
 
-**3.** *Ahaben is fully prepared to tell Alahen.*
+**3.** *Ahaben is fully prepared to talk to Alahen.*
 
 ::: details Show answer
 `zahaben thamal vezebel balahen.`
@@ -153,7 +153,7 @@ z-Azawan | th-plan-atlas | d-pawn | v-find
 ::: details Show answer
 z-Ahaben | th-plan-itinerary | v-tell | b-Azawan
 
-*Ahaben plans to tell Azawan.*
+*Ahaben plans to talk to Azawan.*
 :::
 
 **4.** `zalahen vavadal. xodum zazawan thamam vehahel.`
@@ -161,7 +161,7 @@ z-Ahaben | th-plan-itinerary | v-tell | b-Azawan
 ::: details Show answer
 z-Alahen | v-fight . x-therefore | z-Azawan | th-plan-itinerary | v-sit
 
-*Alahen fights. Therefore Azawan plans to sit.*
+*Alahen is fighting. Therefore, Azawan plans to sit down.*
 :::
 
 **5.** `zazawan thamar dalahen vabahel.`
@@ -228,7 +228,7 @@ For English *could* about a skill someone used to have, add [FORMER](knowing.md#
 >
 > z-Azawan | v-sing-able | th-FORMER
 >
-> "Azawan could sing." (as a former ability)
+> "Azawan used to be able to sing."
 
 As a quality, the same word goes on `/ɡ/`: `zazawan gezehexal` (*Azawan is able to sing*). Without the ability vowel, `zazawan vezehel` is just *Azawan sings*.
 
@@ -309,7 +309,7 @@ Sometimes English *can* / *can't* is not about one named verb or quality: the ac
 >
 > z-Azawan | th-ABIL-unable-temporary
 >
-> "Azawan can't right now." (no single activity named)
+> "Azawan can't right now."
 
 ### Decision (revisability)
 <a id="decision"></a>
@@ -352,7 +352,7 @@ PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** t
 >
 > z-Alahen | th-plan-sketch | th-DECISION-temporary | v-walk
 >
-> "Alahen is thinking of walking, and has decided only for now."
+> "Alahen is thinking of walking and, for now, has decided to."
 
 To say an event goes against a decision (*though they had decided not to*), put DECISION after the hook **`uem`** ([contrary to a stance](sakes.md#contrary-to-stance)). It is the subject's own decision unless a `/b/` after it names whose it is.
 
@@ -470,7 +470,7 @@ On **`ohu`**, **-l / -m / -r** say how long the wanting lasts. **-n** is ordinar
 >
 > z-Alahen | th-WANT-passing | v-sing
 >
-> "Alahen feels like singing." (a whim)
+> "Alahen feels like singing."
 
 A want, a [plan](#plan-predict), and a [decision](#decision) are three different steps, so they stack in that order:
 
@@ -537,13 +537,13 @@ English *will* can state a plan or a forecast. A plan uses [PLAN](#plan-predict)
 >
 > [th-PATTERN | b-later] | v-rain
 >
-> "It will rain." (going by the usual pattern)
+> "It will rain, going by the pattern."
 
 > `zalahen thamam thunel bral vehahel.`
 >
 > z-Alahen | th-plan-itinerary | [th-CLUES.strong | b-later] | v-sit
 >
-> "Alahen plans to sit, and the clues strongly say it will happen."
+> "Alahen plans to sit down, and it looks like that will happen." (strong clues)
 
 **Compare with:** without an offset, a channel is about what is happening now or already so (**`thodom`** if you are watching it now; **`thevom`** if you remember watching it). Add **`bral`** when the claim is about a **later** event.
 
@@ -597,7 +597,7 @@ z-Azawan | v-write-able | [on | b-clipboard]
 z-Alahen | v-write-unable-modifiable
 :::
 
-**3.** *Alahen has decided to sit, and can still change that.*
+**3.** *Alahen has decided to sit down, and can still change that.*
 
 ::: details Show answer
 `zalahen thehum vehahel.`
@@ -605,7 +605,7 @@ z-Alahen | v-write-unable-modifiable
 z-Alahen | th-DECISION-modifiable | v-sit
 :::
 
-**4.** *Ahaben gives telling a try.*
+**4.** *Ahaben gives speaking a try.*
 
 ::: details Show answer
 `zahaben thudur vezebel.`
@@ -613,7 +613,7 @@ z-Alahen | th-DECISION-modifiable | v-sit
 z-Ahaben | th-ATTEMPT-trial | v-tell
 :::
 
-**5.** *Azawan feels like singing.* (a whim)
+**5.** *Azawan feels like singing.*
 
 ::: details Show answer
 `zazawan thohur vezehel.`
@@ -660,7 +660,7 @@ z-Ahaben | th-plan-itinerary | th-DECISION-irreversible | d-page | v-write
 ::: details Show answer
 z-Azawan | v-tell | [contrary-to | th-DECISION-modifiable]
 
-*Azawan tells, though they had decided not to.*
+*Azawan speaks, though they had decided not to.*
 :::
 
 **5.** `zalahen thudur vezehel xon zalaher varadal.`

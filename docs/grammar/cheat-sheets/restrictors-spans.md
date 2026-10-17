@@ -133,15 +133,15 @@ A one-word name is an ordinary **-n** word (`donodan`), not a span.
 | [A loan verb](../spans.md#pos) | <code>zalahen v&lt;google&gt; dazawan.</code> | *Alahen googled Azawan.* | B |
 | [A loan adjective](../spans.md#pos) | <code>zodogal g&lt;rouge&gt; vowogal.</code> | *A rouge dog walks.* | B |
 | [A quoted question](../spans.md#quote-acts) | `zazawan d[yol zalahen vowogal] vezebel.` | *Azawan said, “Does Alahen walk?”* | I |
-| [Point back at a quote](../spans.md#span-noun) | `zalahen d[azawan] vezebel. zahaben duxar vahahal.` | *Alahen said “Azawan.” Ahaben saw that.* | I |
+| [Point back at a quote](../spans.md#span-noun) | `zalahen d[azawan] vezebel. zahaben duxar varadal.` | *Alahen said “Azawan.” Ahaben wrote that down.* | I |
 | [Topic from a title](../spans.md#topic-quotes) | `x@[onodan alahen] dozan vezehel.` | *Now, about Onodan Alahen: it is sung.* | I |
-| [An aside as a clause](../spans.md#asides) | `zazawan vowogal th(zalahen vezebal).` | *Azawan walks (Alahen sleeps).* | B |
+| [An aside as a clause](../spans.md#asides) | `zazawan vowogal th(zalahen vezebal).` | *Azawan walks (Alahen is asleep).* | B |
 | [An aside on a noun](../spans.md#asides) | `zazawan g(zazawar vowogal) vezehel.` | *Azawan, who walks, sings.* | B |
-| [An aside on one word](../spans.md#asides) | `zodogal w(zazawan vezebel) gubuhel vowogal.` | *A (so Azawan says) blue dog walks.* | B |
-| [An aside before the noun](../spans.md#gl-spans) | `gl(gubuhel) zodogal gamazam vowogal.` | *The small dog (it is blue) walks.* | I |
+| [An aside on one word](../spans.md#asides) | `zodogal w(zazawan vezebel) geredal vowogal.` | *A (so Azawan says) red dog walks.* | B |
+| [An aside before the noun](../spans.md#gl-spans) | `gl(geredal) zodogal gamazam vowogal.` | *The small dog (it is red) walks.* | I |
 | [A loan adjective before the noun](../spans.md#gl-spans) | <code>gl&lt;rouge&gt; zodogal vowogal.</code> | *A rouge dog walks.* | I |
 | [A loan degree word](../spans.md#pos) | <code>zodogal w&lt;molto&gt; gubuhel vowogal.</code> | *A molto blue dog walks.* | B |
-| [Aside inside a cite](../spans.md#nesting) | `zazawan d[ th(hagawal) azawan ] vezebel.` | *Azawan said “Azawan” (quietly).* | A |
+| [Aside inside a cite](../spans.md#nesting) | `zazawan d[ th(hagawal) azawan ] vezebel.` | *Azawan said “(quietly) Azawan.”* | A |
 
 ### Calls and mentions {#calls-mentions}
 
@@ -183,9 +183,9 @@ Braces `{ … }` group one chunk so a binder inside reaches only it. The edges a
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [A possibility, on one chunk](../spans.md#scope-islands) | `zazawan { hegewem zodogal geredal } vahahal.` | *Azawan saw, as a possibility, the red dog.* | I |
-| [A join, on one pair](../spans.md#scope-islands) | `zazawan { zalahen zal } zam vahahal.` | *Azawan and (just Alahen) saw …* | I |
-| [A recipient first, then the binder](../spans.md#scope-islands) | `zazawan { balahen hegewem } vezebel.` | *Azawan told Alahen, possibly* | I |
+| [A possibility, on one chunk](../spans.md#scope-islands) | `zazawan { hegewem zodogal geredal } vahahal.` | *Azawan saw what was possibly a red dog.* | I |
+| [A join, on one pair](../spans.md#scope-islands) | `zazawan { zalahen zal } zam vowogal.` | *Azawan and (just Alahen) walk.* | I |
+| [A recipient first, then the binder](../spans.md#scope-islands) | `zazawan { balahen hegewem } vezebel.` | *Azawan talks, possibly to Alahen.* | I |
 
 ## Don't mix up {#dont-mix-up}
 

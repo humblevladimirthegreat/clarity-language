@@ -51,7 +51,7 @@ Endings on a pointer: **-r** the same one, **-l** [a new one](../pronouns.md#a-n
 |-----|---------|---------|-------|
 | [Same action again](../pronouns.md#cross-role-recast): change only the role letter | `zalahen vazawar.` | *Alahen does the same with Azawan.* | I |
 | [Each other](../pronouns.md#reciprocal) | `zazawan zalahen zal vahahal hedam.` | *Azawan and Alahen see each other.* | I |
-| [A new one with a new property](../pronouns.md#cross-role-recast) | `zalahen dar godogar gubuhel vahahal.` | *Alahen sees a blue one.* | I |
+| [A new one with a new property](../pronouns.md#cross-role-recast) | `zalahen dar godogar gabagol vahahal.` | *Alahen sees a black one.* | I |
 
 ### Tags {#tags}
 

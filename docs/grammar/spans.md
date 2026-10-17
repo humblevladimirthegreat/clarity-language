@@ -103,15 +103,15 @@ The inside is ordinary Agazan: a fragment, or a clause with the **same speech ac
 >
 > z-Azawan | v-walk | th-ASIDE[z-Alahen | v-sleep]
 >
-> "Azawan walks (Alahen sleeps)."
+> "Azawan walks (Alahen is asleep)."
 
 A noun aside adds something about a noun the listener already has. It does not pick out which one, the way a plain adjective can:
 
-> `zodogal g(gubuhel) vowogal.`
+> `zodogal g(geredal) vowogal.`
 >
-> [z-dog | g-ASIDE[g-blue]] | v-walk
+> [z-dog | g-ASIDE[g-red]] | v-walk
 >
-> "The dog (it is blue) walks."
+> "The dog (it is red) walks."
 
 > `zazawan g(zazawar vowogal) vezehel.`
 >
@@ -121,11 +121,11 @@ A noun aside adds something about a noun the listener already has. It does not p
 
 A `/w/` aside narrows the comment to one word. Here only the color is what Azawan says:
 
-> `zodogal w(zazawan vezebel) gubuhel vowogal.`
+> `zodogal w(zazawan vezebel) geredal vowogal.`
 >
-> [z-dog | [w-ASIDE[z-Azawan | v-tell] | g-blue]] | v-walk
+> [z-dog | [w-ASIDE[z-Azawan | v-tell] | g-red]] | v-walk
 >
-> "A (so Azawan says) blue dog walks."
+> "A (so Azawan says) red dog walks."
 
 An `/h/` aside is a side detail about the action itself, not about your claim:
 
@@ -171,19 +171,19 @@ To use a foreign verb, adjective, adverb, or degree word (*googled*, *rouge*, *m
 >
 > z-Alahen | v-OPAQUE["google"] | d-Azawan
 >
-> "Alahen googled Azawan." (loan verb)
+> "Alahen googled Azawan." (a borrowed word)
 
 > <code>zodogal g&lt;rouge&gt; vowogal.</code>
 >
 > [z-dog | g-OPAQUE["rouge"]] | v-walk
 >
-> "A rouge dog walks." (loan adjective)
+> "A rouge dog walks." (a borrowed word)
 
 > <code>zazawan vezebel b@&lt;Sam&gt;.</code>
 >
 > z-Azawan | v-tell | b-NAME.OPAQUE["Sam"]
 >
-> "Azawan tells Sam." (a foreign name as the recipient)
+> "Azawan talks to Sam." (a foreign name)
 
 The letter before the bracket belongs to the whole span. Agazan words inside a cite start with **their own** role letters.
 
@@ -234,7 +234,7 @@ z-Azawan | d-CITE[Azawan] | v-tell
 z-Alahen | d-CITE.about[z-Ahaben | v-sing] | v-write
 :::
 
-**3.** *Alahen tells Sam.* (a foreign name as the recipient)
+**3.** *Alahen talks to Sam.* (a foreign name)
 
 ::: details Show answer
 <code>zalahen vezebel b@&lt;Sam&gt;.</code>
@@ -281,7 +281,7 @@ z-Alahen | d-NAME.CITE[Onodan | Alahen] | v-write
 ::: details Show answer
 z-Alahen | v-OPAQUE["google"] | d-Onodan
 
-*Alahen googled Onodan.* (a loan verb)
+*Alahen googled Onodan.* (a borrowed word)
 :::
 
 **3.** `zahaben g(zahaber vezehel) vowogal.`
@@ -289,7 +289,7 @@ z-Alahen | v-OPAQUE["google"] | d-Onodan
 ::: details Show answer
 [z-Ahaben | g-ASIDE[z-←Ahaben | v-sing]] | v-walk
 
-*Ahaben, who sings, walks.* (extra information about Ahaben)
+*Ahaben, who sings, walks.*
 :::
 
 **4.** <code>y&lt;Bravo&gt;.</code>
@@ -297,7 +297,7 @@ z-Alahen | v-OPAQUE["google"] | d-Onodan
 ::: details Show answer
 y-OPAQUE["Bravo"]
 
-*Bravo!* (a foreign reaction)
+*Bravo!* (a foreign word)
 :::
 
 **5.** `zahaben d~@[onodan alahen] vezehel.`
@@ -395,7 +395,7 @@ With **-n**, the mention is a **name** as spelling (the title, which could be ch
 >
 > z-Azawan | [gl-NAME.MENTION | d-OPAQUE["onodan"]] | v-rejection
 >
-> "Azawan dislikes the name “onodan.”" (might still like the work)
+> "Azawan dislikes the name “onodan.”" (not the work)
 
 **Compare with:** `donodan` is *Onodan* (the work or person). <code>glelen d&lt;onodan&gt;</code> is only the **name**.
 
@@ -413,11 +413,11 @@ A marker before a [topic span](#topic-quotes) works the same way:
 
 A span fills a role like any noun, so a [role pointer](pronouns.md#role-pointers) for that role can point back to it. After a cite, `duxar` is *that quote*: the latest thing done to.
 
-> `zalahen d[azawan] vezebel. zahaben duxar vahahal.`
+> `zalahen d[azawan] vezebel. zahaben duxar varadal.`
 >
-> z-Alahen | d-CITE[Azawan] | v-tell . z-Ahaben | d-←patient.same | v-see
+> z-Alahen | d-CITE[Azawan] | v-tell . z-Ahaben | d-←patient.same | v-write
 >
-> "Alahen said “Azawan.” Ahaben saw that."
+> "Alahen said “Azawan.” Ahaben wrote that down."
 
 The same holds for a loan word or any other span, and `duxal` is [another one](pronouns.md#a-new-one) of what the span holds.
 
@@ -429,11 +429,11 @@ A span in a `/v/` slot (`v[vazadal]`) has no resume pronoun.
 
 A span on `/ɡ/` can also come **before** its noun, the way a [`gl-` adjective](clause.md#left-bound-adjectives) does: write **`gl`** before the bracket. It describes the next noun, so a noun must follow it. A noun aside before the noun (`gl(…)`) keeps the spot after the noun free for a plain adjective that picks out which one.
 
-> `gl(gubuhel) zodogal gamazam vowogal.`
+> `gl(geredal) zodogal gamazam vowogal.`
 >
-> [gl-ASIDE[g-blue] | z-dog | g-small] | v-walk
+> [gl-ASIDE[g-red] | z-dog | g-small] | v-walk
 >
-> "The small dog (it is blue) walks."
+> "The small dog (it is red) walks."
 
 A loan adjective or a cite leans the same way:
 
@@ -453,7 +453,7 @@ A span with **`@`** names the work or product itself: <code>d@&lt;iPhone&gt;</co
 >
 > z-Alahen | d-NAME.OPAQUE.instance["iPhone"] | v-see
 >
-> "Alahen sees an iPhone." (one phone)
+> "Alahen sees an iPhone."
 
 | Agazan | Use | English |
 |--------|-----|---------|
@@ -506,7 +506,9 @@ Sometimes a word like *possibly*, or a join, should apply to only part of the se
 >
 > z-Azawan | SCOPE[h-possibility | [z-dog | g-red]] | v-see
 >
-> "Azawan saw, as a possibility, the red dog." (*possibility* targets that chunk).
+> "Azawan saw what was possibly a red dog."
+
+Here **`hegewem`** reaches only *a red dog*, not the seeing.
 
 A [tone mark](speech-moves.md#tone-marks) written right before the opening brace colors the whole island (`!{ hegewem zodogal geredal }`).
 
@@ -535,11 +537,11 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening brace
 | Join **inside** | joins only interior conjuncts |
 | Join **outside** with island nearby | ordinary lookback (edges do not filter an outside join) |
 
-> `zazawan { zalahen zal } zam vahahal.`
+> `zazawan { zalahen zal } zam vowogal.`
 >
-> [z-Azawan | SCOPE[z-Alahen | z-and] | z-and.open] | v-see
+> [z-Azawan | SCOPE[z-Alahen | z-and] | z-and.open] | v-walk
 >
-> "Azawan and (just Alahen) saw …."
+> "Azawan and (just Alahen) walk."
 
 A `/b/` right after an `/h/` word is hosted by it ([extra nouns](clause.md#extra-nouns)). To put a recipient `/b/` in an island, write it **before** the binder:
 
@@ -547,7 +549,7 @@ A `/b/` right after an `/h/` word is hosted by it ([extra nouns](clause.md#extra
 >
 > z-Azawan | SCOPE[b-Alahen | h-possibility] | v-tell
 >
-> "Azawan tells, possibly, Alahen."
+> "Azawan talks, possibly to Alahen."
 
 The word before the island must not be a `/ɡ/`, `/h/`, or `/th/` word either, or it would host that `/b/` across the edge.
 
@@ -588,6 +590,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *lie* | `valahal` |
 | *small* | `gamazam` |
 | *tell* | `vezebel` |
+| *write* | `varadal` |
 | *see* | `vahahal` |
 | *punch* | `vabahel` |
 | *walk* | `vowogal` |
@@ -602,12 +605,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Alahen | d-CITE[z-Azawan | v-attest] | v-tell
 :::
 
-**2.** *Alahen said “Azawan.” Ahaben saw that.* (a pointer to the quote)
+**2.** *Alahen said “Azawan.” Ahaben wrote that down.* (*that* is the quote)
 
 ::: details Show answer
-`zalahen d[azawan] vezebel. zahaben duxar vahahal.`
+`zalahen d[azawan] vezebel. zahaben duxar varadal.`
 
-z-Alahen | d-CITE[Azawan] | v-tell . z-Ahaben | d-←patient.same | v-see
+z-Alahen | d-CITE[Azawan] | v-tell . z-Ahaben | d-←patient.same | v-write
 :::
 
 **3.** *The word “onoda” is small.*
@@ -634,7 +637,7 @@ z-Azawan | d-CITE[y-question | z-Alahen | v-lie] | v-tell
 z-Ahaben | d-NAME.CITE.instance[Onodan | Alahen] | v-see
 :::
 
-**6.** *Alahen tells, possibly, Ahaben.*
+**6.** *Alahen talks, possibly to Ahaben.*
 
 ::: details Show answer
 `zalahen { bahaben hegewem } vezebel.`
@@ -682,7 +685,7 @@ z-Ahaben | d-CITE.about[z-Azawan | v-attest] | v-tell
 ::: details Show answer
 z-Ahaben | !SCOPE[h-possibility | d-lie] | v-see
 
-*Ahaben saw, as a possibility, the lie!*
+*Ahaben saw what was possibly a lie!*
 :::
 
 **6.** `gl(gamazam) zalahen dazawan vabahel.`
@@ -690,7 +693,7 @@ z-Ahaben | !SCOPE[h-possibility | d-lie] | v-see
 ::: details Show answer
 [gl-ASIDE[g-small] | z-Alahen] | d-Azawan | v-punch
 
-*Alahen, who is small, punches Azawan.* (the aside comes before the name)
+*Alahen, who is small, punches Azawan.*
 :::
 
 #### Pick one {#intermediate-pick-one}
@@ -705,7 +708,7 @@ z-Azawan | d-NAME.CITE[Onodan | Alahen] | v-rejection
 **`@`** makes the span the work; bare brackets quote the words.
 :::
 
-**2.** *Azawan saw, as a possibility, the lie.* (only the lie is a possibility) `zazawan { hegewem dalahal } vahahal.` or `zazawan hegewem dalahal vahahal.`
+**2.** *Azawan saw what was possibly a lie.* `zazawan { hegewem dalahal } vahahal.` or `zazawan hegewem dalahal vahahal.`
 
 ::: details Show answer
 `zazawan { hegewem dalahal } vahahal.`
@@ -737,7 +740,7 @@ A closing bracket normally ends one span, with its wording complete. Two written
 >
 > z-Azawan | d-CITE[flaw]# | v-tell
 >
-> "Azawan said “bug…”" (trailing off)
+> "Azawan said “bug…”"
 
 | Writing | Use | English | Cue |
 |---------|-----|---------|-----|
@@ -756,7 +759,7 @@ When one packaged chunk sits inside another (a quote that contains a parenthetic
 >
 > z-Azawan | d-CITE[th-ASIDE[h-quiet] | Azawan] | v-tell
 >
-> "Azawan said “Azawan” (quietly)." (hello)
+> "Azawan said “(quietly) Azawan.”" (hello)
 
 The same nest works as <code>d[ z&lt;…&gt; ]</code> or <code>d~[ d&lt;…&gt; ]</code>.
 
@@ -794,7 +797,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 z-Alahen | d-CITE[flaw]# | v-tell
 :::
 
-**2.** *Azawan wrote “flaw” (quietly).* (the aside is inside the quote)
+**2.** *Azawan wrote “(quietly) flaw.”*
 
 ::: details Show answer
 `zazawan d[ th(hagawal) abogam ] varadal.`
@@ -802,7 +805,7 @@ z-Alahen | d-CITE[flaw]# | v-tell
 z-Azawan | d-CITE[th-ASIDE[h-quiet] | flaw] | v-write
 :::
 
-**3.** *Ahaben said “flaw…”, closing every open span.*
+**3.** *Ahaben said “flaw…”* (the quote trails off; close every open bracket at once)
 
 ::: details Show answer
 `zahaben d[abogam#|] vezebel.`
@@ -841,7 +844,7 @@ z-Alahen | d-CITE[th-ASIDE[h-quiet] | z-Azawan | v-write] | v-tell
 ::: details Show answer
 z-Azawan | d-CITE[z-Alahen | v-write]# | v-tell
 
-*Azawan said “Alahen writes…”* (trailing off)
+*Azawan said “Alahen writes…”*
 :::
 
 **4.** `zalahen d[abogam#] vezebel. zahaben duxar varadal.`
@@ -849,7 +852,7 @@ z-Azawan | d-CITE[z-Alahen | v-write]# | v-tell
 ::: details Show answer
 z-Alahen | d-CITE[flaw]# | v-tell . z-Ahaben | d-←patient.same | v-write
 
-*Alahen said “flaw…”. Ahaben wrote that down.*
+*Alahen said “flaw…” Ahaben wrote that down.*
 :::
 
 #### Pick one {#advanced-pick-one}

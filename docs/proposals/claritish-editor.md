@@ -88,6 +88,19 @@ The emotion compose is the hardest drop-in to build by hand: sake, stance, endin
 
 An optional side panel counts, for the whole text, the cues still in plain English: *2 unmarked guesses · 1 label on a person · 1 should with no reason given*. It is a mirror, not a score: no totals, no colours that read as pass or fail, no nudge to reach zero. Each line jumps to its cue.
 
+### Self-talk by name (possible feature)
+
+When people reflect on a hard moment, talking to themselves by their own name or as *you* (*Jordan, that meeting was rough*) instead of *I* seems to lower emotional reactivity and make the problem feel more manageable. This is **distanced self-talk** (Kross et al. 2014, *Journal of Personality and Social Psychology*; Moser et al. 2017, *Scientific Reports*). Most of the evidence comes from lab studies of private reflection, so the editor should offer it as something to try, not as a proven fix. It does not apply to messages about yourself sent to other people: there, saying your own name for *I* just sounds odd.
+
+This is not a Claritish drop-in. It changes English words, not Agazan, and adds no form. So it sits apart from the lesson cards:
+
+- **Only in journal mode.** A toggle marks the draft as *for me* (a journal entry, notes to yourself). Self-talk cues fire only there, never on a message to someone else.
+- **Cues:** harsh self-talk in the first person: *why do I always*, *I can't believe I*, *I'm so stupid*, *I ruined*, *what's wrong with me*. A self-label (*I'm an idiot*) is already a [Labels](../grammar/claritish/labels.md) cue; self-talk joins it under *Also here* rather than adding a second mark.
+- **Card:** one line on the idea, then a preview that rewrites the sentence to address the writer by name: *I can't believe I said that* → *Jordan, you said something you regret. What would you tell a friend who did that?* The name is the one from the site's name helper ([`useLearnerName`](../grammar/.vitepress/composables/useLearnerName.ts)), in its English form; with no name chosen, the card offers *you*. **Keep *I*** is as prominent as *Try it*.
+- **No count.** The mirror panel does not count self-talk cues. It is an offer, not a habit to score.
+
+Before building it: the card copy needs a source. Claritish adds no content of its own, so either a short note in the Claritish [Feelings](../grammar/claritish/feelings.md) or [Labels](../grammar/claritish/labels.md) lesson teaches the idea and the card quotes it, or the feature stays an editor-only tip with its wording in the trigger data. See [open question 6](#open-questions).
+
 ### For the person reading
 
 Claritish is usually sent to someone who has not learned it.
@@ -200,7 +213,9 @@ Each phase ships on its own and leaves the site in a usable state.
 
 - A browser extension that runs the same matcher in other text boxes (email, chat). The matcher and data are already client-side, so this is packaging, but it brings permission and privacy review.
 - "Match my progress": tie the lesson filter to the lessons the reader has opened.
+- [Self-talk by name](#self-talk-by-name-possible-feature): journal mode, the self-talk cues, and their card. It needs nothing from Phases 0 to 4 except the matcher and cards.
 
+<a id="open-questions"></a>
 ## Open questions
 
 1. **Where the page lives.** A last page in the Claritish sidebar after the cheat sheet, a link from the cheat sheet, or a separate *Tools* section. The track rules say the cheat sheet is the last page and sets `next: false`.
@@ -208,3 +223,4 @@ Each phase ships on its own and leaves the site in a usable state.
 3. **Dropping the English cue.** Offer by default (closer to the lesson examples) or keep the cue by default (less editing of the writer's words).
 4. **Mirror panel** default on or off.
 5. **CodeMirror vs Tiptap**, if adding a dependency is a concern.
+6. **Self-talk by name.** (a) A short Claritish lesson note on distanced self-talk, which the card quotes, so it follows the "no copy written twice" goal. (b) An editor-only tip with its wording in the trigger data. (c) Leave it out. (a) is the most consistent with the track; it also makes it the one Claritish idea that is not an Agazan drop-in, which the [track rules](../meta/grammar-docs.md#claritish-track) would need to allow.

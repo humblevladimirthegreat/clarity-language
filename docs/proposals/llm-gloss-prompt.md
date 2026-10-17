@@ -1,6 +1,6 @@
 # Translation prompt from the parser
 
-Status: phase 1, steps 1 (policy edits), 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review) in progress: wave 1 done, awaiting the editor's review of its diff ([as built](#phase-1-step-5-as-built)). Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
+Status: phase 1, steps 1 (policy edits), 2 (extractor and warn-mode lint, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review) in progress: waves 1 and 2 done, wave 2 awaiting the editor's review of its diff ([as built](#phase-1-step-5-as-built)). Phase 2 built ([as built](#phase-2-as-built)); its examples improve as phase 1 lands. Not design authority; fold into tooling and meta docs, then drop.
 
 ## Problem
 
@@ -208,7 +208,7 @@ Waves. Pages heavy in referent, scope, or turn judgments run at `xhigh`; the res
 | Wave | Pages (`xhigh` in bold) | Status | Lines with findings after |
 |------|-------------------------|--------|---------------------------|
 | 1 | **hooks**, **joins**, **sakes**, **questions**, comparatives, say-people-places | done | 68 (was 101) |
-| 2 | **spans**, **pronouns**, relations, roles, intention, say-reasons | | |
+| 2 | **spans**, **pronouns**, relations, roles, intention, say-reasons | done | 47 (was 68) |
 | 3 | **speech-moves**, dependents, numbers, predication, restrictors, review | | |
 | 4 | **plurality**, causation, x-compounds, word-endings + phonology, numbers-applied + english, join-across-roles | | |
 | 5 | say-tense + say-questions, say-amounts + numeric-derivation | | |
@@ -217,6 +217,17 @@ Wave 1 decisions:
 - **Applied:** fill-ask `…or` on one item is *Any X?*, as the [arity table](../grammar/questions.md#fill-ask-arity) says. The parser's label went from `which` to `any`. Bare `v-tell` is *talks* / *speaks*, now a rule in [glosses.md § sentence first](../meta/glosses.md#sentence-first).
 - **Guard exception:** the joins.md respectively example swaps SAME for *like* (`gumum`), so the guard reports one construction change there. The editor approved it.
 - **Open:** whose motive and whose stake on sakes.md, in `sake-motive-holder.md`. Waves leave sake words' English as it is until that lands.
+
+Wave 2 decisions:
+- **Applied in the wave check:** bare `v-tell` is *speak*, not *speak up* (not a sense alias, and it adds *voicing an objection*). A note that repeats *Taking 22 July as now* (*a placeholder*) is dropped, as on relations.md. RESIDUE is *had left and was still gone*, as on knowing.md. Generic `oben` is *one* / *you* (people in general).
+- **Strange examples:** blue dogs are red (spans.md, keeping *only the color is what Azawan says*) or black (pronouns.md, next to a red dog); *the book sits above the tree* is *a bird sits above the dog*; a spoken quote is written down, not seen; *saw …* with no object is *walk*. On say-reasons.md `## Practice`, a bare *see* gains *a fire* (`davahel`, already in the bank), so the guard lists added constructions there.
+- **Gaps for the editor** (neither side edited):
+  - pronouns.md topic pronoun block: `zalaher dozan vezebel` is glossed *Alahen tells Azawan*, but `/d/` on *tell* is what is said. Fix with `bozan`, or a verb whose `/d/` is a person.
+  - roles.md: `duxagozal` is *something constructed*, but § result says a newly made thing is `ao` (`daoxagozal`).
+  - roles.md: `doexuvudel` is *a destination* (from *go*), but **-l** takes the concrete sense, so the parser glosses `goal-x-footprints`.
+  - say-reasons.md *As of 22 July, Alahen had decided to walk*: relations.md § as-of says `/h/` *as-of* moves only the event, so the decision is still now.
+  - intention.md WANT (*Alahen wants Azawan to walk*) states someone else's want with no holder. knowing.md settles PLAN (it needs no channel), not WANT, which is closer to a feeling.
+- **For `sake-motive-holder.md`:** say-reasons.md sake words that read as someone else's motive: the blocks at lines 116 and 262, and the table rows *motivation* (252), *biased* / *bias* (285–286), and *deserves* (557, 562, no `/b/` for whose stake).
 
 ## Phase 2: the prompt
 

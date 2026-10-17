@@ -28,9 +28,9 @@ Write a thing letter (`/z/` `/d/` `/b/`), the role vowel, mid-word **`x`**, the 
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [The one, from an earlier event](../roles.md#this-instance-r): **-r** | `zazawan vehahel. zaxehaher vowogal.` | *Azawan sits. The one sitting walks.* | B |
+| [The one, from an earlier event](../roles.md#this-instance-r): **-r** | `zazawan vehahel. zaxehaher vowogal.` | *Azawan sits. The one who sat walks.* | B |
 | [A noun in the stem](../roles.md#role-compounds): another **`x`** | `zaxodogaxowogal varahal.` | *Someone who walks dogs runs.* | B |
-| [Is one who](../roles.md#saying-someone-is-a-teacher): on `/ɡ/` | `zazawan gaxedehol.` | *Azawan is one who teaches.* | B |
+| [Is one who](../roles.md#saying-someone-is-a-teacher): on `/ɡ/` | `zazawan gaxedehol.` | *Azawan is someone who teaches.* | B |
 | [The usual role](../roles.md#usual-role): **`the`** before the ending | `zaxedehothel varahal.` | *A teacher runs.* | I |
 | [Is a teacher](../roles.md#usual-role) | `zazawan gaxedehothel.` | *Azawan is a teacher.* | I |
 | [The event itself](../roles.md#the-event-itself): no vowel | `davadal` | *a fight* | B |
@@ -121,7 +121,7 @@ The anchor can be `amu` *speaker*, `eho` *listener*, a name, or a role pointer o
 | [Their left](../roles.md#viewpoint-laterals) | `zazawan vowogal. zalahen vehahel hewezathaxar.` | *Azawan walks. Alahen sits on their left.* | I |
 | [Up](../roles.md#gravity) | `yel vowogal habahal.` | *Walk up.* | I |
 | [Under](../roles.md#viewpoint-vs-landmark) | `zodogal vezebal hadahel bedehul.` | *The dog sleeps under the tree.* | I |
-| [Above](../roles.md#viewpoint-vs-landmark) | `zugul vehahel gabahal bedehul.` | *The book sits above the tree.* | I |
+| [Above](../roles.md#viewpoint-vs-landmark) | `zebedul vehahel gabahal bodogal.` | *A bird sits above the dog.* | I |
 | [Left of a landmark](../roles.md#viewpoint-vs-landmark) | `zugul gewezathazawan bedehul.` | *The book is left of the tree, from Azawan's view.* | I |
 | [Behind](../roles.md#landmark-facing) | `zodogal vehahel gazavathol bahazal.` | *The dog sits behind the house.* | I |
 

@@ -178,7 +178,7 @@ The relation word takes the other noun as its `/b/` right after it. Use `/h/` on
 | [Alike](../relations.md#like-resembles) | `zazawan zalahen zal gumum.` | *Azawan and Alahen are alike.* | B |
 | [Exactly like](../relations.md#exactly-like) | `zazawan humul badagul vowogal.` | *Azawan walks exactly like a duck.* | I |
 | [In exchange](../relations.md#exchange) | `zazawan dugul hehem bahavol vehem.` | *Azawan trades a book for a hammer.* | B |
-| [On behalf of](../relations.md#proxy) | `zazawan hadem balahen vezebel.` | *Azawan tells on behalf of Alahen.* | B |
+| [On behalf of](../relations.md#proxy) | `zazawan hadem balahen vezebel.` | *Azawan speaks on behalf of Alahen.* | B |
 
 ### Where, around, between {#locative}
 
@@ -214,10 +214,10 @@ English *of* names how one noun sits toward another. The `/b/` is what comes aft
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Part of](../relations.md#of-relations) | `zazawan dahadal gobom balahen vahahal.` | *Azawan sees a hand of Alahen.* | I |
-| [Contents of](../relations.md#of-relations) | `zazawan dedebul gahem bedehel vahahal.` | *Azawan sees a teapot of tea.* | I |
-| [Made of](../relations.md#of-relations) | `zazawan dahazal guwum buwul vahahal.` | *Azawan sees a house of wood.* | I |
-| [From](../relations.md#of-relations) | `zalahen gagum bezagal vowogal.` | *Alahen of the city walks.* | I |
+| [Part of](../relations.md#of-relations) | `zazawan dahadal gobom balahen vahahal.` | *Azawan sees one of Alahen's hands.* | I |
+| [Contents of](../relations.md#of-relations) | `zazawan dedebul gahem bedehel vahahal.` | *Azawan sees a teapot full of tea.* | I |
+| [Made of](../relations.md#of-relations) | `zazawan dahazal guwum buwul vahahal.` | *Azawan sees a house made of wood.* | I |
+| [From](../relations.md#of-relations) | `zalahen gagum bezagal vowogal.` | *Alahen, who is from the city, walks.* | I |
 | [A piece of](../relations.md#of-relations): substance first | `zazawan debevul gozazom vahahal.` | *Azawan sees a piece of bread.* | I |
 
 ### Social ties {#social}
@@ -258,8 +258,8 @@ Whose-now is speech-now unless you move it. `huhum` claims the moment as real; `
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [As of a date](../relations.md#as-of) | `zalahen thamom huhum b_#22,7 vedabal.` | *As of 22 July, Alahen had still left.* | A |
-| [Resume the same now](../relations.md#as-of) | `zalahen thamom huhum b_#22,7 vedabal. xazawan thamom huhur vowogal.` | *…Azawan had still walked, same books.* | A |
+| [As of a date](../relations.md#as-of) | `zalahen thamom huhum b_#22,7 vedabal.` | *As of 22 July, Alahen had left and was still gone.* | A |
+| [Resume the same now](../relations.md#as-of) | `zalahen thamom huhum b_#22,7 vedabal. xazawan thamom huhur vowogal.` | *…As of that same day, Azawan's walk still counted too.* | A |
 | [Stance then](../relations.md#stance-as-of) | `zalahen thuhum b_#22,7 thovum vedabal.` | *On 22 July, I thought Alahen might leave.* | A |
 | [Back then](../relations.md#stance-as-of) | `zalahen thuhum brul thovum vedabal.` | *Back then, I thought Alahen might leave.* | A |
 

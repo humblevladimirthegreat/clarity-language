@@ -49,7 +49,7 @@ To build the **-r** form, take the whole stem of the earlier verb. In `vehahel` 
 >
 > z-Azawan | v-sit . z-←agent-x-sit | v-walk
 >
-> "Azawan sits. The one sitting walks."
+> "Azawan sits. The one who sat walks."
 
 ### The undergoer (`u`)
 
@@ -102,7 +102,7 @@ English *the one told* names who gets the telling. In a sentence, that person is
 > z-Azawan | v-tell
 > z-←recipient-x-tell | v-run
 >
-> "Azawan tells. The one told runs."
+> "Azawan speaks. The one spoken to runs."
 
 You can name that party with no prior telling: `zoxezebel` is someone told something (the **-l** sense of *speech*).
 
@@ -114,7 +114,7 @@ Some stems name a **relation** (who is bound to whom), not an action. The other 
 > z-Azawan | [g-bond | b-Alahen]
 > z-←recipient-x-bond | v-run
 >
-> "Azawan is bound to Alahen. That other party of the bond runs."
+> "Azawan is bound to Alahen. The one Azawan is bound to runs."
 
 **Compare with:** *for someone* (who the act is meant to benefit) is the extra-noun hook **`el`** plus `/b/`, not the recipient.
 
@@ -168,19 +168,19 @@ To say someone **is one who teaches**, put the same role compound on `/ɡ/`, as 
 >
 > z-Azawan | g-agent-x-teach
 >
-> "Azawan is one who teaches."
+> "Azawan is someone who teaches."
 
 > `zazawan gaxavadal.`
 >
 > z-Azawan | g-agent-x-fight
 >
-> "Azawan is one who fights."
+> "Azawan is someone who fights."
 
 > `zazawan gaxavadam.`
 >
 > z-Azawan | g-agent-x-struggle
 >
-> "Azawan is one who struggles."
+> "Azawan is someone who struggles."
 
 After another noun, the same `/ɡ/` word picks out which one you mean by that role.
 
@@ -232,7 +232,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-agent-x-construct | v-run
 :::
 
-**2.** *Azawan tells. The one told sleeps.*
+**2.** *Azawan speaks. The one spoken to sleeps.*
 
 ::: details Show answer
 `zazawan vezebel. zoxezeber vezebal.`
@@ -256,7 +256,7 @@ z-Alahen | d-Azawan | v-punch . z-←patient-x-punch | v-scream
 z-Ahaben | d-construction | v-see
 :::
 
-**5.** *Azawan is one who constructs.*
+**5.** *Azawan is someone who constructs.*
 
 ::: details Show answer
 `zazawan gaxagozal.`
@@ -279,7 +279,7 @@ z-Alahen | d-fight | v-see
 ::: details Show answer
 z-guard | d-scene-x-construct | v-see
 
-*The guard sees a place where something is constructed.*
+*The guard sees a place where something is built.*
 :::
 
 **2.** `zahaben vagozal. zaxagozar dehevul vahahal.`
@@ -287,7 +287,7 @@ z-guard | d-scene-x-construct | v-see
 ::: details Show answer
 z-Ahaben | v-construct . z-←agent-x-construct | d-helmet | v-see
 
-*Ahaben constructs. The one constructing sees a helmet.*
+*Ahaben builds. The one building sees a helmet.*
 :::
 
 **3.** `zazawan vavadal. zahaben dexavadar vahahal.`
@@ -311,7 +311,7 @@ z-Alahen | [d-guard | g-agent-x-sleep] | v-see
 ::: details Show answer
 z-patient-x-punch | v-scream
 
-*Someone punched screams.*
+*Someone who gets punched screams.*
 :::
 
 **6.** `zazawan vezebal al bagezal. zalahen dexar vahahal.`
@@ -346,7 +346,7 @@ Role vowel **`u`** names what the constructing happens to; **`a`** is who constr
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Azawan is one who sleeps.* <!-- lint: error -->`zazawan gezebal.`
+**1.** *Azawan is someone who sleeps.* <!-- lint: error -->`zazawan gezebal.`
 
 ::: details Show answer
 `zazawan gaxezebal.`
@@ -398,7 +398,7 @@ With **-r**, it is the tool used in **that** event.
 >
 > z-Azawan | v-fight . z-Alahen | d-←instrument-x-fight | v-see
 >
-> "Azawan fights. Alahen sees what Azawan fought with."
+> "Azawan fights. Alahen sees what Azawan fights with."
 
 **Compare with:** *writes with a pen* on the same clause is still the hook **`ael`** plus `/b/`. The compound names the tool as its own noun.
 
@@ -621,11 +621,11 @@ Gravity works the same way: bare **`adahe`** + `/b/` is *under* the landmark, an
 >
 > "The dog sleeps under the tree."
 
-> `zugul vehahel gabahal bedehul.`
+> `zebedul vehahel gabahal bodogal.`
 >
-> z-book | v-sit | [g-up | b-tree]
+> z-bird | v-sit | [g-up | b-dog]
 >
-> "The book sits above the tree."
+> "A bird sits above the dog."
 
 **Compare with:** locative *at* / *on* / *inside* name how the figure sits relative to the landmark ([locative relations](relations.md#locative-relations)), not a compass heading.
 
@@ -722,7 +722,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Alahen is a thief.* (as a practiced role)
+**1.** *Alahen is a thief.* (stealing is what Alahen regularly does)
 
 ::: details Show answer
 `zalahen gaxaraguthem.`
@@ -801,7 +801,7 @@ z-Ahaben | v-construct . z-Alahen | d-←result-x-construct | v-see
 ::: details Show answer
 z-Azawan | v-walk . z-Alahen | d-←path-x-walk | v-see
 
-*Azawan walks. Alahen sees the way Azawan walks.*
+*Azawan walks. Alahen sees the path Azawan walks.*
 :::
 
 **5.** `zazawan vuvudel oel behebal. zalahen doexar vahahal.`

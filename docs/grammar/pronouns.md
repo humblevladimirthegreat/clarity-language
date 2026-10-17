@@ -67,13 +67,13 @@ The role letter is the slot **now**, so a pointer can move someone to a new role
 >
 > z-Azawan | d-Alahen | v-see . z-←patient.same | v-run
 >
-> "Azawan sees Alahen. He runs."
+> "Azawan sees Alahen. They run." (Alahen)
 
 > `zazawan vezebel balahen. zoxar varahal.`
 >
 > z-Azawan | v-tell | b-Alahen . z-←recipient.same | v-run
 >
-> "Azawan tells Alahen. He runs."
+> "Azawan talks to Alahen. They run." (Alahen)
 
 A sentence with nobody in that part does not count. *It rains* has no doer, so `zaxar` reaches past it:
 
@@ -107,7 +107,9 @@ English *the other one* skips the person you just mentioned. Pointer vowel **`o`
 >
 > z-Azawan | v-walk . z-Alahen | v-run . z-Alahen | v-sit . z-←agent.other | v-sleep
 >
-> "Azawan walks. Alahen runs. Alahen sits. The other one sleeps." (`zaxar` would be Alahen)
+> "Azawan walks. Alahen runs. Alahen sits. The other one sleeps." (Azawan)
+
+Here `zaxar` would be Alahen, the latest doer.
 
 **`o`** goes with the three role vowels above: `zaxor`, `zuxor`, `zoxor`.
 
@@ -135,23 +137,23 @@ A pointer with **-r** is the same one again. To say a **new** one of the same ki
 >
 > z-Azawan | d-cookie | v-see . z-Alahen | d-←patient.same.new | v-see
 >
-> "Azawan sees a cookie. Alahen sees one too." (a different cookie; `duxar` would be the same cookie)
+> "Azawan sees a cookie. Alahen sees one too." (a different cookie)
 
 **-l** copies only the noun, never the words that described it, so you can change the description. After a red dog, the pointer is just *a dog*, and a `/ɡ/` word after it gives the new property, as in the next example. To keep the old property, say it again on a `/ɡ/` word after the pointer.
 
-> `zazawan dodogal geredal vahahal. zalahen duxal gubuhel vahahal.`
+> `zazawan dodogal geredal vahahal. zalahen duxal gabagol vahahal.`
 >
-> z-Azawan | [d-dog | g-red] | v-see . z-Alahen | [d-←patient.same.new | g-blue] | v-see
+> z-Azawan | [d-dog | g-red] | v-see . z-Alahen | [d-←patient.same.new | g-black] | v-see
 >
-> "Azawan sees a red dog. Alahen sees a blue one."
+> "Azawan sees a red dog. Alahen sees a black one."
 
 In a yes/no question, a pointer works like any other noun and keeps the same meaning:
 
-> `zazawan dodogal geredal vahahal. yol zalahen vahahal duxal gubuhel.`
+> `zazawan dodogal geredal vahahal. yol zalahen vahahal duxal gabagol.`
 >
-> z-Azawan | [d-dog | g-red] | v-see . y-question | z-Alahen | v-see | [d-←patient.same.new | g-blue]
+> z-Azawan | [d-dog | g-red] | v-see . y-question | z-Alahen | v-see | [d-←patient.same.new | g-black]
 >
-> "Azawan sees a red dog. Does Alahen see a blue one?"
+> "Azawan sees a red dog. Does Alahen see a black one?"
 
 **-l** takes pointer vowels **`a`**, **`e`** and **`o`**, and every role vowel: `zaxal` is another one like the latest doer. It has no reading with **`u`**, because an unsaid part has no kind to copy, and none after a [special pronoun](#special-pronouns) such as *I* or *you*. After a name, **-l** is a new thing that name applies to, and after a joined list it is a new group of the same make-up.
 
@@ -165,13 +167,13 @@ English often blurs *what they did* with *who they are*. A pointer with **-m** (
 >
 > z-Azawan | d-Alahen | v-punch . z-Ahaben | d-←agent.same | v-see
 >
-> "Azawan punches Alahen. Ahaben sees them." (sees Azawan)
+> "Azawan punches Alahen. Ahaben sees them." (Azawan)
 
 > `zazawan dalahen vabahel. zahaben daxam vahahal.`
 >
 > z-Azawan | d-Alahen | v-punch . z-Ahaben | d-←agent.same.part | v-see
 >
-> "Azawan punches Alahen. Ahaben sees what they did." (sees the punch as Azawan's act, not Azawan)
+> "Azawan punches Alahen. Ahaben sees what they did." (Azawan's punch, not Azawan)
 
 Each role vowel names a different part: `zaxam` is the doing, `zuxam` what it was for the one it happened to, and `zoxam` what reached the one told. Pointer vowels **`a`**, **`o`** and **`u`** work as before (`zaxom` *what the other one did*; `zaxum` *what was done, by whoever*). **`e`** and **-x** have no reading with **-m**: a share cannot be part of the very event being described (**`e`**), and it is not a group of people (**-x**).
 
@@ -187,7 +189,9 @@ When a proper name is available, prefer that name (and its **-r** resume), inclu
 >
 > z-SELF | v-walk
 >
-> "I walk." You name yourself rather than saying *I*.
+> "I walk."
+
+You name yourself rather than saying *I*.
 
 Use **`amu`** (*speaker*) and **`eho`** (*listener*) when what matters is the conversation role, not a name. **`eho`** is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun, [below](#generic-pronoun).
 
@@ -209,7 +213,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 >
 > z-interlocutors | v-walk
 >
-> "We (you and I) walk."
+> "We walk." (you and I)
 
 **`una`** names a nonspecific **individual** (*someone*), not a particular person you have already named. Once that person is in the conversation, resume them with whole-stem **-r**.
 
@@ -238,7 +242,7 @@ English *one* and generic *you* (*one never knows*, *you feel awful when that ha
 >
 > z-ONE | v-sleep
 >
-> "One sleeps." / "You sleep."
+> "One sleeps." / "You sleep." (people in general)
 
 The generic pronoun takes no number and no **-x**, because it already means people at large. **`obel`** *a person* and **`obem`** *humanity* keep their own senses. English *they say* is [hearsay](knowing.md#evidentiality), not a generic *they*. The every-kind joins can say *people in general* as a phrase; **`oben`** is the one-word pronoun for it ([joins](joins.md#generic-neighbors)).
 
@@ -305,7 +309,7 @@ z-Alahen | d-knife | v-find . z-Ahaben | d-←knife | v-see
 z-speaker | d-listener | v-see
 :::
 
-**4.** *Someone punches Ahaben. She screams.*
+**4.** *Someone punches Ahaben. They scream.* (Ahaben)
 
 ::: details Show answer
 `zunan dahaben vabahel. zuxar vezugel.`
@@ -315,7 +319,7 @@ z-someone | d-Ahaben | v-punch . z-←patient.same | v-scream
 **Also correct:** `zunan dahaben vabahel. zahaber vezugel.`
 :::
 
-**5.** *Azawan sees a cookie. Alahen finds one too.*
+**5.** *Azawan sees a cookie. Alahen finds one.*
 
 ::: details Show answer
 `zazawan dugugol vahahal. zalahen duxal vamagal.`
@@ -323,7 +327,7 @@ z-someone | d-Ahaben | v-punch . z-←patient.same | v-scream
 z-Azawan | d-cookie | v-see . z-Alahen | d-←patient.same.new | v-find
 :::
 
-**6.** *We (you and I) cook.*
+**6.** *We cook.* (you and I)
 
 ::: details Show answer
 `zahan vugugal.`
@@ -338,7 +342,7 @@ z-interlocutors | v-cook
 ::: details Show answer
 z-Ahaben | v-cook . z-Alahen | v-pour . z-←agent.other | v-scream
 
-*Ahaben cooks. Alahen pours. The other one (Ahaben) screams.*
+*Ahaben cooks. Alahen pours. The other one screams.* (Ahaben)
 :::
 
 **2.** `dugugol vamagal. zaxur vezugel.`
@@ -354,7 +358,7 @@ d-cookie | v-find . z-←agent.unsaid | v-scream
 ::: details Show answer
 z-Alahen | d-Azawan | v-punch . z-Ahaben | d-←agent.same.part | v-see
 
-*Alahen punches Azawan. Ahaben sees what he did.*
+*Alahen punches Azawan. Ahaben sees what they did.* (Alahen's punch, not Alahen)
 :::
 
 **4.** `zoben vezugel.`
@@ -378,12 +382,12 @@ z-Azawan | v-see | d-←agent.self
 ::: details Show answer
 z-Azawan | v-tell | b-Ahaben . z-←recipient.same | d-cookie | v-cook
 
-*Azawan tells Ahaben. She cooks a cookie.*
+*Azawan talks to Ahaben. They cook a cookie.* (Ahaben)
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Azawan sees Alahen. He (Alahen) screams.* `zazawan dalahen vahahal. zuxar vezugel.` or `zazawan dalahen vahahal. zaxar vezugel.`
+**1.** *Azawan sees Alahen. They scream.* (Alahen) `zazawan dalahen vahahal. zuxar vezugel.` or `zazawan dalahen vahahal. zaxar vezugel.`
 
 ::: details Show answer
 `zazawan dalahen vahahal. zuxar vezugel.`
@@ -393,7 +397,7 @@ z-Azawan | d-Alahen | v-see . z-←patient.same | v-scream
 Alahen was the one seen, role vowel **`u`**; `zaxar` is the doer, Azawan.
 :::
 
-**2.** *Azawan tells Alahen. Ahaben sees him (Alahen).* `zazawan vezebel balahen. zahaben doxar vahahal.` or `zazawan vezebel balahen. zahaben daxar vahahal.`
+**2.** *Azawan talks to Alahen. Ahaben sees them.* (Alahen) `zazawan vezebel balahen. zahaben doxar vahahal.` or `zazawan vezebel balahen. zahaben daxar vahahal.`
 
 ::: details Show answer
 `zazawan vezebel balahen. zahaben doxar vahahal.`
@@ -491,13 +495,13 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 | verb antecedent, `/h/` … `-r` | recast as manner | *by doing so* / *thereby* |
 | adjective antecedent, noun … `-r` | recast as entity | *the … one* / *that quality* |
 
-For English *one* (*a blue one*, *the red one*) of a noun a [role pointer](#a-new-one) reaches, write that pointer with **-l** and the new property on `/ɡ/`. For a noun no pointer reaches (a topic, a noun inside a quote, a hook landmark with no role vowel), write the unspecified **`dar`** *something* and resume the noun as a kind on `/ɡ/`, then add the new property. A resume on `/d/` would be the same dog; **`dar`** with a `/ɡ/` resume is another thing of the dog kind.
+For English *one* (*a black one*, *the red one*) of a noun a [role pointer](#a-new-one) reaches, write that pointer with **-l** and the new property on `/ɡ/`. For a noun no pointer reaches (a topic, a noun inside a quote, a hook landmark with no role vowel), write the unspecified **`dar`** *something* and resume the noun as a kind on `/ɡ/`, then add the new property. A resume on `/d/` would be the same dog; **`dar`** with a `/ɡ/` resume is another thing of the dog kind.
 
-> `zazawan dodogal geredal vahahal. zalahen dar godogar gubuhel vahahal.`
+> `zazawan dodogal geredal vahahal. zalahen dar godogar gabagol vahahal.`
 >
-> z-Azawan | [d-dog | g-red] | v-see . z-Alahen | [d-something | g-←dog] | g-blue | v-see
+> z-Azawan | [d-dog | g-red] | v-see . z-Alahen | [d-something | g-←dog] | g-black | v-see
 >
-> "Azawan sees a red dog. Alahen sees a blue one."
+> "Azawan sees a red dog. Alahen sees a black one."
 
 ### Each other {#reciprocal}
 
@@ -563,7 +567,7 @@ With no phrase to tag, a tag holds a placeholder, as in *suppose A tells E*:
 >
 > z-tag.A | v-tell | b-tag.E . z-←tag.E | d-cookie | v-eat
 >
-> "A tells E. E eats a cookie."
+> "A talks to E. E eats a cookie."
 
 A tag with **-m** is a [share](#share): A's part in the latest earlier sentence where A filled a part, in whatever role. `zaxam` picks the event by role; `zwam` picks it by who.
 
@@ -623,7 +627,7 @@ English *now, about Azawan…*, *speaking of dogs…*, and *so, back to Azawan�
 >
 > x-Azawan
 >
-> "About Azawan."
+> "Now, about Azawan."
 
 **Every return is explicit.** There is one topic, not a stack. Coming back from a side topic, or from a new frame, means naming the old topic again with `xazawar`.
 
@@ -709,7 +713,7 @@ A return makes no claim by itself, but it does set the topic, so leaving it out 
 >
 > z-Azawan | v-walk . z-Alahen | v-run . x-←Azawan | z-TOPIC | v-sit
 >
-> "Azawan walks. Alahen runs. Going back to Azawan: Azawan sits."
+> "Azawan walks. Alahen runs. Back to Azawan: Azawan sits."
 
 ### Groups as the topic {#topic-groups}
 
@@ -797,7 +801,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Alahen | v-pour . z-Azawan | v-←pour
 :::
 
-**2.** *A tomato is red. A watermelon is such.*
+**2.** *A tomato is red. So is a watermelon.*
 
 ::: details Show answer
 `zadedol geredal. zowodal geredar.`

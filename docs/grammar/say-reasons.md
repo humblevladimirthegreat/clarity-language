@@ -65,7 +65,7 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 >
 > z-Azawan | th-CLUES.strong | v-walk
 >
-> "Obviously Azawan walks."
+> "Obviously, Azawan is walking." (strong clues)
 
 > `zalahen thovum vedabal.`
 >
@@ -77,7 +77,7 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 >
 > z-Azawan | th-NOTIONAL-suppose | v-walk
 >
-> "Assume Azawan walks."
+> "Assume Azawan is walking."
 
 > `zazawan thegathum vedabal.`
 >
@@ -117,25 +117,25 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 >
 > z-Azawan | v-tell | th-relatedness-motive-any-term
 >
-> "Azawan's reason for telling is relatedness." (he justifies it as care for the tie)
+> "Azawan's reason for talking is relatedness." (Azawan justifies it as care for the tie)
 
 > `zazawan vowogal hogom barl zalahen vehahel.`
 >
 > z-Azawan | v-walk | [h-so-that | b-that-clause] | z-Alahen | v-sit
 >
-> "Azawan walks so that Alahen sits." (the purpose of the walk)
+> "Azawan walks so that Alahen sits."
 
 > `zazawan vedabal thavel barl zalahen vezebel.`
 >
 > z-Azawan | v-departure | [th-because.fault | b-that-clause] | z-Alahen | v-tell
 >
-> "Alahen is to blame for Azawan's leaving." (the telling broke a norm)
+> "Azawan left because Alahen spoke, and Alahen was wrong to."
 
 > `thanathumam thavel barl zSELFn vezebel.`
 >
 > th-relatedness-unmet-modifiable-INTERNAL-FLOWING | [th-because.fault | b-that-clause] | z-SELF | v-tell
 >
-> "I feel guilty for telling." (a cost to a tie, held inside, and my telling broke a norm)
+> "I feel guilty for speaking." (a cost to a tie, held inside, and my speaking broke a norm)
 
 What makes the feeling guilt is the fault pole on **your own** act. The feeling word alone says only that a tie is under strain, the same word as *hurt*. With the because pole and someone else's act, the same feeling is *hurt*:
 
@@ -143,7 +143,7 @@ What makes the feeling guilt is the fault pole on **your own** act. The feeling 
 >
 > th-relatedness-unmet-modifiable-INTERNAL-SURGING | [th-because | b-that-clause] | z-Alahen | v-tell
 >
-> "I'm hurt that Alahen told."
+> "I'm hurt that Alahen spoke."
 
 Put the **act** in `/b/` after a fault pole, not the person ([fault](causation.md#fault)). *Guilty* is then *the wrong rests on that act*, and it leaves room for *Alahen did a wrong thing* without *Alahen is bad*.
 
@@ -226,13 +226,13 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 >
 > z-Azawan | h-already | v-knowledge | d-that-clause | z-dog | v-run
 >
-> "Azawan realizes that the dog runs."
+> "Azawan realizes that the dog is running."
 
 > `zazawan dalahen vevom hewem.`
 >
 > z-Azawan | d-Alahen | v-memory | h-no-longer
 >
-> "Azawan forgets Alahen."
+> "Azawan has forgotten Alahen."
 
 **Compare with:** *explain* with no reason is just tell (**`vezebel`**). *Make something real* is [create](#cause-verbs).
 
@@ -314,13 +314,13 @@ English *because* and *if* can hide whether you **assert the dependent as a worl
 >
 > z-Azawan | v-walk | [th-because | b-rain]
 >
-> "Azawan walks because it rains." Rain is asserted as the reason.
+> "Azawan walks because it rains." (the rain is stated as fact)
 
 > `zazawan vowogal thoyem berehel.`
 >
 > z-Azawan | v-walk | [th-if | b-rain]
 >
-> "Azawan walks if it rains." Rain is not asserted; the main sentence is under that opportunity.
+> "Azawan walks if it rains." (whether it rains is left open)
 
 English *If he'd left, the door would still be locked* is not this pole. Write bookmark [*as-of*](relations.md#as-of) (`huram`) plus [RESIDUE](knowing.md#residue) / a [forecast](knowing.md#forecast) (a channel such as CLUES plus `bral`) as needed, with **no** `thoyem`. `thoyem` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `thoyem` plus a **date** in *as-of* `/b/`.
 
@@ -366,7 +366,7 @@ English often uses *because* for **speaker grounds** (*it rained, because the st
 >
 > v-rain | [th-CLUES.strong | b-that-clause] | [z-cloud | g-gray]
 >
-> "It is raining, judging by the gray clouds."
+> "It is raining, judging by the gray clouds." (strong clues)
 
 Use **`thavem barl`** only when Q is also asserted as a world-foundation, what made P happen. For a soft *could be* with no grounds stated, put [MAY](knowing.md#may) (`thovum`, …) on the main sentence.
 
@@ -402,7 +402,7 @@ An argument has three parts, and each has its own slot. The **link** between pre
 >
 > z-Azawan | [v-walk | v-not] | th-DEDUCED | [th-if | b-that-clause] | z-Azawan | v-sleep
 >
-> "If Azawan sleeps, it follows that Azawan isn't walking." (the two rule each other out)
+> "If Azawan is asleep, it follows that Azawan isn't walking." (I'm only saying the two can't both hold)
 
 **Compare with:** *it obviously follows* from strong clues (*obviously, it rained*) is CLUES (`thunel`), not a deduction: the clues make it likely, not certain. *Because* in the sense of what made it happen is **`thavem`** ([factivity](#factivity)).
 
@@ -421,7 +421,7 @@ To talk **about** an argument rather than make one, use the dictionary words. Ea
 >
 > z-argument | [g-well-founded | g-not]
 >
-> "The argument isn't sound." (a step fails, or a premise is false)
+> "The argument isn't sound."
 
 A word about the argument does not make it. *The argument is valid* names the link without stating it; to give the link itself, use **`thugum thoyem barl`** from the table above. *A premise* says nothing on whether you grant it; *an assumption* you only toy with is **`thavor`** ([reason nouns](#reason-nouns)). *Conclusion* in the sense of *the end* of a talk or story is `ogovem`, not `ebehamevehal`.
 
@@ -436,7 +436,7 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 >
 > [z-rain | [g-if | b-cloud]] | h-always
 >
-> "There is rain if there are clouds, as a standing pattern."
+> "It always rains if there are clouds."
 
 **Compare with:** to say how you know a general claim, put a channel on it ([channels on a generalization](knowing.md#universality)). **CAUSE** is **`thegem`**.
 
@@ -450,9 +450,9 @@ English *I hope X will happen* is two claims: you want it, and you expect it. **
 >
 > th-hope | [th-INTUITION.weak | b-+-e-.about] | h-no-longer | v-rain
 >
-> "I hope the rain stops soon."
+> "I hope the rain stops soon, though it's just a hunch."
 
-**Compare with:** **`thevegem`** with no channel and no offset is hope about now: `zazawan thevegem vowogal.` is *Hopefully Azawan walks.*
+**Compare with:** **`thevegem`** with no channel and no offset is hope about now: `zazawan thevegem vowogal.` is *Hopefully Azawan is walking.*
 
 ## Judging and helping {#judging}
 
@@ -536,7 +536,7 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 >
 > z-speech | [g-correct | g-not]
 >
-> "The telling is wrong."
+> "What was said is wrong." (it isn't correct)
 
 > `zahaben thevegem zuel gahabel.`
 >
@@ -653,25 +653,25 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 >
 > z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 >
-> "As of 22 July, Alahen’s leaving still counted."
+> "As of 22 July, Alahen had left and was still gone."
 
 > `zazawan thodom huhum b_#22,7 vowogal.`
 >
 > z-Azawan | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
 >
-> "Azawan is walking, we're there on 22 July."
+> "It's 22 July, and I can see Azawan walking."
 
 > `zalahen thevom huhum b_#22,7 thamom vedabal. xazawan thevom huhur vowogal.`
 >
 > z-Alahen | th-MEMORY | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-MEMORY | h-as-of.ledger | v-walk
 >
-> "I remember: as of 22 July, Alahen's leaving still counted. Azawan was walking, also from memory, against the same books."
+> "I remember that as of 22 July, Alahen had left and was still gone. I also remember Azawan walking at that point."
 
 > `zazawan hual vezebel thenom huhum b_#22,7.`
 >
 > z-Azawan | h-always | v-tell | th-FORMER | [h-as-of.ledger | b-_22,7]
 >
-> "As of 22 July, Azawan's always telling was already a former pattern."
+> "As of 22 July, Azawan's habit of always talking was already in the past."
 
 [NOTIONAL](knowing.md#notional) may stack with *as-of* (*as if, from Friday’s books*). Serious English *if he had* stays bookmark `huram`, not play.
 
@@ -679,7 +679,7 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 >
 > z-Alahen | th-NOTIONAL | [h-as-of.ledger | b-_22,7] | v-departure
 >
-> "As if, from the 22 July books, Alahen were leaving."
+> "Imagine that, as of 22 July, Alahen is leaving."
 
 ### Plan and forecast against a snapshot
 <a id="as-of-intention"></a>
@@ -698,13 +698,13 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 >
 > [th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | [th-PATTERN | b-later] | h-as-of.bookmark | v-walk
 >
-> "Taking 22 July as now (a placeholder), it would rain, going by the pattern. Azawan would walk too, on the same placeholder."
+> "Taking 22 July as now, it would rain, going by the pattern. From that same now, Azawan would walk too, going by the pattern."
 
 > `zalahen thehum vowogal huhum b_#22,7.`
 >
 > z-Alahen | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 >
-> "As of 22 July, Alahen had decided to walk, and that pick is still revisable now."
+> "As of 22 July, Alahen had decided to walk, and Alahen can still change that."
 
 ## Feelings: when and why {#feelings}
 
@@ -791,13 +791,13 @@ A direction locus says where the charge **goes**. It does not say who **caused**
 >
 > [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]] | [th-because | b-that-clause] | z-Alahen | v-tell
 >
-> "Resentful at Alahen about the memo, because Alahen told."
+> "Resentful at Alahen about the memo, because Alahen spoke." (a cause, and no one is blamed)
 
 > `zumel wanathumol gobum balahen thovum thavel barl zalahen vezebel.`
 >
 > [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]] | th-MAY | [th-because.fault | b-that-clause] | z-Alahen | v-tell
 >
-> "Resentful at Alahen about the memo; maybe Alahen was wrong to tell."
+> "Resentful at Alahen about the memo; maybe Alahen was wrong to speak."
 
 Put an **act** after the pole (`barl zalahen vezebel`), not the person. A feeling can be aimed at Alahen; blame goes on what Alahen did.
 
@@ -868,15 +868,15 @@ Short drills for these recipes. Try each item before opening **Show answer**. **
 
 #### English → Agazan {#reasons-causation-english-to-agazan}
 
-**1.** *Alahen pours because Ahaben sees.* (the seeing is asserted)
+**1.** *Alahen pours because Ahaben sees a fire.* (Ahaben really does see one)
 
 ::: details Show answer
-`zalahen vobohol thavem barl zahaben vahahal.`
+`zalahen vobohol thavem barl zahaben davahel vahahal.`
 
-z-Alahen | v-pour | [th-because | b-that-clause] | z-Ahaben | v-see
+z-Alahen | v-pour | [th-because | b-that-clause] | z-Ahaben | d-fire | v-see
 :::
 
-**2.** *Azawan pours if there is a test-tube.* (the test-tube is not asserted)
+**2.** *Azawan pours if there is a test tube.* (there may or may not be one)
 
 ::: details Show answer
 `zazawan vobohol thoyem budul.`
@@ -884,7 +884,7 @@ z-Alahen | v-pour | [th-because | b-that-clause] | z-Ahaben | v-see
 z-Azawan | v-pour | [th-if | b-test-tube]
 :::
 
-**3.** *Azawan may be pouring.* (*could be*, not a world-reason)
+**3.** *Azawan may be pouring.* (just a guess)
 
 ::: details Show answer
 `zazawan thovum vobohol.`
@@ -900,7 +900,7 @@ z-Azawan | th-MAY | v-pour
 z-Azawan | th-MAY | v-sit | [th-because | b-that-clause] | z-Alahen | v-pour
 :::
 
-**5.** *Melting happens if there is fire, as a standing pattern.*
+**5.** *Melting always happens if there is fire.*
 
 ::: details Show answer
 `zemehul goyem bavahel hual.`
@@ -933,25 +933,25 @@ z-Azawan | v-pour | [th-because | b-fire]
 
 z-Alahen | v-pour | [th-if | b-test-tube]
 
-*Alahen pours if there is a test-tube.*
+*Alahen pours if there is a test tube.*
 :::
 
-**3.** `zahaben thovum vahahal.`
+**3.** `zahaben thovum davahel vahahal.`
 
 ::: details Show answer
 
-z-Ahaben | th-MAY | v-see
+z-Ahaben | th-MAY | d-fire | v-see
 
-*Ahaben may be seeing.*
+*Maybe Ahaben sees a fire.*
 :::
 
-**4.** `zalahen thovum vobohol thavem barl zahaben vahahal.`
+**4.** `zalahen thovum vobohol thavem barl zahaben davahel vahahal.`
 
 ::: details Show answer
 
-z-Alahen | th-MAY | v-pour | [th-because | b-that-clause] | z-Ahaben | v-see
+z-Alahen | th-MAY | v-pour | [th-because | b-that-clause] | z-Ahaben | d-fire | v-see
 
-*Alahen may be pouring, because Ahaben sees.*
+*Alahen may be pouring, because Ahaben sees a fire.*
 :::
 
 **5.** `zazawan varahal thoyem bavahel hual.`
@@ -1002,7 +1002,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. PL
 z-Alahen | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 :::
 
-**2.** *Taking 22 July as now (a placeholder), it would rain, going by the pattern.*
+**2.** *Taking 22 July as now, it would rain, going by the pattern.*
 
 ::: details Show answer
 `thobam bral huram b_#22,7 verehel.`
@@ -1010,7 +1010,7 @@ z-Alahen | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 [th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain
 :::
 
-**3.** *As of 22 July, Alahen had decided to walk, and that pick is still revisable now.*
+**3.** *As of 22 July, Alahen had decided to walk, and Alahen can still change that.*
 
 ::: details Show answer
 `zalahen thehum vowogal huhum b_#22,7.`
@@ -1026,7 +1026,7 @@ z-Alahen | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 
 [th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain . x-Azawan | [th-PATTERN | b-later] | h-as-of.bookmark | v-walk
 
-*Taking 22 July as now (a placeholder), it would rain, going by the pattern. Azawan would walk too, on the same placeholder.*
+*Taking 22 July as now, it would rain, going by the pattern. From that same now, Azawan would walk too, going by the pattern.*
 :::
 
 **2.** `zalahen thamar vowogal huhum b_#22,7.`
@@ -1044,7 +1044,7 @@ z-Alahen | th-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 
 z-Alahen | th-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 
-*As of 22 July, Alahen had decided to walk, and that pick is still revisable now.*
+*As of 22 July, Alahen had decided to walk, and Alahen can still change that.*
 :::
 
 ### Knowledge against a dated now {#reasons-knowing-practice}
@@ -1069,7 +1069,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 #### English → Agazan {#reasons-knowing-english-to-agazan}
 
-**1.** *As of 22 July, Alahen’s leaving still counted.*
+**1.** *As of 22 July, Alahen had left and was still gone.*
 
 ::: details Show answer
 `zalahen thamom huhum b_#22,7 vedabal.`
@@ -1077,7 +1077,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
 
-**2.** *Azawan is walking, we're there on 22 July.*
+**2.** *It's 22 July, and I can see Azawan walking.*
 
 ::: details Show answer
 `zazawan thodom huhum b_#22,7 vowogal.`
@@ -1085,7 +1085,7 @@ z-Alahen | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 z-Azawan | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
 :::
 
-**3.** *As of 22 July, Alahen's leaving may still have counted.*
+**3.** *As of 22 July, Alahen may have left and still been gone.*
 
 ::: details Show answer
 `zalahen thovum thamom huhum b_#22,7 vedabal.`
@@ -1101,7 +1101,7 @@ z-Alahen | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 
 z-Alahen | th-MEMORY | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure
 
-*I remember: as of 22 July, Alahen's leaving still counted.*
+*I remember that as of 22 July, Alahen had left and was still gone.*
 :::
 
 **2.** `zalahen thevom huhum b_#22,7 thamom vedabal. xazawan thevom huhur vowogal.`
@@ -1110,7 +1110,7 @@ z-Alahen | th-MEMORY | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure
 
 z-Alahen | th-MEMORY | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x-Azawan | th-MEMORY | h-as-of.ledger | v-walk
 
-*I remember: as of 22 July, Alahen's leaving still counted. Azawan was walking, also from memory, against the same books.*
+*I remember that as of 22 July, Alahen had left and was still gone. I also remember Azawan walking at that point.*
 :::
 
 **3.** `zalahen thovum thamom huhum b_#22,7 vedabal.`
@@ -1119,7 +1119,7 @@ z-Alahen | th-MEMORY | [h-as-of.ledger | b-_22,7] | th-RESIDUE | v-departure . x
 
 z-Alahen | th-MAY | th-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 
-*As of 22 July, Alahen's leaving may still have counted.*
+*As of 22 July, Alahen may have left and still been gone.*
 :::
 
 ### Feelings: when and why {#reasons-feelings-practice}
@@ -1180,5 +1180,5 @@ Short drills for these recipes. A channel and offset after **`gobum`** date the 
 
 [z-speech | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]] | [th-because.fault | b-that-clause] | z-Alahen | v-tell
 
-*Resentful at Alahen about the dialogue; Alahen was wrong to tell.*
+*Resentful at Alahen about the dialogue; Alahen was wrong to speak.*
 :::
