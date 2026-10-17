@@ -117,7 +117,7 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 >
 > z-Azawan | v-tell | th-relatedness-motive-any-term | th-REPORTED-Azawan
 >
-> "I hear Azawan's reason for talking is feeling connected." (someone else's reason takes a [holder](knowing.md#holder))
+> "I hear Azawan's reason for talking is feeling connected." (for someone else's reason, say [how you know it](knowing.md#holder))
 
 > `zazawan vowogal hogom barl zalahen vehahel.`
 >

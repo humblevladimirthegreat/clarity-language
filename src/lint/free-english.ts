@@ -289,8 +289,10 @@ export function noteFindings(note: string, labels: ReadonlySet<string>): Omit<Fr
   for (const m of note.matchAll(/(?<![A-Za-z])[A-Z][A-Z-]*[A-Z](?![A-Za-z])/g)) {
     if (labels.has(m[0])) out.push({ kind: "note-label", detail: `the note uses the gloss label ${m[0]}` });
   }
+  // A link target is not wording the reader sees (`[how you know it](knowing.md#holder)`).
+  const prose = note.replace(/\]\([^)]*\)/g, "]");
   // A longer term that matches covers the shorter ones inside it (*loan verb*, not also *verb*).
-  const terms = TERM_RES.filter(({ re }) => re.test(note)).map(({ term }) => term.toLowerCase());
+  const terms = TERM_RES.filter(({ re }) => re.test(prose)).map(({ term }) => term.toLowerCase());
   for (const term of terms) {
     if (terms.some((other) => other !== term && other.includes(term))) continue;
     out.push({ kind: "note-term", detail: `the note uses the grammar term "${term}"` });

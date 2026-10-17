@@ -191,7 +191,7 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | [Against someone's wishes](../knowing.md#holder) | `zalahen vezebal uem thunemazawan thohum.` | *Alahen sleeps, against Azawan's wishes, as far as I can tell.* | A |
 | [Someone else's plan](../knowing.md#holder): a holder | `zazawan thewamazawan thamam vowogal.` | *I hear Azawan plans to walk.* | A |
 | [Someone else's decision](../knowing.md#holder): a holder | `zazawan thunemazawan thehum vowogal.` | *I gather Azawan has decided to walk, and can still change that.* | A |
-| [Plan, and when](../intention.md#plan-predict) | `zamun thamam bral vehahel.` | *I plan to sit down later.* | I |
+| [Plan, and when](../intention.md#predict-evidentiality) | `zamun thamam bral vehahel.` | *I plan to sit down later.* | I |
 | [Try, failing that](../intention.md#fallback): `xon` | `zazawan hudur vowogal xon zazawar vezehel.` | *Azawan gives walking a try; failing that, Azawan sings.* | I |
 | [A plan with backups](../intention.md#fallback) | `zamun thamal vowogal xon zamun thamal vezehel xon zamun thamal vezebal.` | *walk; failing that, sing; failing that, sleep* | I |
 

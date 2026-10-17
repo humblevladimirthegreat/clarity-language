@@ -392,12 +392,6 @@ English *will* can make a forecast: a claim that something will happen. Agazan h
 
 A schedule is not a forecast: it is someone's [PLAN](intention.md#plan-predict). Someone else's plan is their view, so it goes through a [holder](#holder), and the holder's channel says how you know about it.
 
-> `zazawan thewalazawan bagadal thamam vezebel.`
->
-> z-Azawan | [th-REPORTED.strong-Azawan | b-calendar] | th-plan-itinerary | v-tell
->
-> "Going by the official calendar, Azawan plans to speak."
-
 <a id="forecast-question"></a>
 
 In a [question](questions.md#question), the channel asks what the **listener's** answer rests on: *going by the pattern you see, will it rain?* The listener answers with that channel or names a different one. Pick the channel you expect them to have: CLUES (`thunem`) when they would work it out from clues, REPORTED (`thewam`) when they would go by what they heard or read.
@@ -1261,6 +1255,14 @@ The holder may be the [topic pronoun](pronouns.md#topic-pronoun), whoever the co
 > z-Azawan | th-CLUES-Alahen | th-plan-itinerary | v-walk
 >
 > "I gather Alahen plans for Azawan to walk."
+
+The seam word keeps its `/b/` source like any channel. A schedule is a plan you know from a record, so put the record in `/b/`:
+
+> `zazawan thewalazawan bagadal thamam vezebel.`
+>
+> z-Azawan | [th-REPORTED.strong-Azawan | b-calendar] | th-plan-itinerary | v-tell
+>
+> "Going by the official calendar, Azawan plans to speak."
 
 > `zazawan thunemazawan thehum vowogal.`
 >

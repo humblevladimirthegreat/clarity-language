@@ -87,6 +87,22 @@ describe("lintWordBankMarkdown", () => {
     assert.deepEqual(lintWordBankMarkdown(md("your name"), tables), []);
     assert.equal(lintWordBankMarkdown(md("speaker"), tables).length, 1);
   });
+
+  it("accepts *I* / *you* for the speaker and listener specials", () => {
+    const md = (english: string, agazan: string) => `### Translation practice
+
+**Roots used here:**
+
+| English | Agazan |
+|---------|--------|
+| *${english}* | \`${agazan}\` |
+`;
+    for (const [english, agazan] of [["I", "amun"], ["speaker", "amun"], ["you", "ehon"], ["listener", "ehon"]]) {
+      assert.deepEqual(lintWordBankMarkdown(md(english!, agazan!), tables), [], `${english} ${agazan}`);
+    }
+    assert.equal(lintWordBankMarkdown(md("I", "amul"), tables).length, 1);
+    assert.equal(lintWordBankMarkdown(md("you", "amun"), tables).length, 1);
+  });
 });
 
 describe("lintWordBankUsage", () => {

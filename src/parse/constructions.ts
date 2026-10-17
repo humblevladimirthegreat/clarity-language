@@ -198,7 +198,7 @@ export const TOKEN_CONSTRUCTIONS: Record<TokenBranch, ConstructionEntry> = {
   yVocative: { anchor: "speech-moves.md#vocative", summary: "/y/ name (-n), named span, or resume (-r): a vocative" },
   yInterjection: { anchor: "speech-moves.md#interjections-reactions", summary: "/y/ word in -l / -m, or an unnamed span: an interjection" },
   linker: { anchor: "dependents.md#continue-x", summary: "/x/ content word: a sentence linker, or a topic word" },
-  clauseAdverb: { anchor: "clause.md#intention-adverbs", summary: "intention adverb on /h/ (try, ability, consent, RESIDUE, FORMER): covers the whole clause like a /th/ word" },
+  clauseAdverb: { anchor: "sakes.md#consent", summary: "intention adverb on /h/ (try, ability, consent, RESIDUE, FORMER): covers the whole clause like a /th/ word" },
   tagAssign: { anchor: "pronouns.md#tag-pronouns", summary: "bare tag -l: names the phrase before it, or a new referent" },
   content: { anchor: "phonology.md#word-edges", summary: "content word in its role slot" },
   citationFallback: { anchor: "phonology.md#word-edges", summary: "word with no role letter: names, filling no slot" },

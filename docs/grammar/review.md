@@ -19,6 +19,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
+| *I* | `amun` |
 | *school* | `uzugul` |
 | *guard* | `agavol` |
 | *angry* | `anegel` |

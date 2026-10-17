@@ -884,7 +884,6 @@ The word after **`uem`** has to say something the event can go against: a ban, a
 | requirement **`thumel`** / **`thumem`** / **`thumer`** | *contrary to regulations* / *against my orders* / *contrary to custom* |
 | refusal **`huxedel`** / **`huxedem`** / **`huxeder`** | *against their will* (they opted out / they said no / they probably don't want it) |
 | plan **`thamar`** / **`thamam`** / **`thamal`** | *contrary to my plan* |
-| decision **`thehul`** / **`thehum`** / **`thehur`** | *against my decision* |
 | speaker attitude, such as **`thevegem`** | *against my hopes* |
 
 Permission and consent given (**`thegom`**, **`huxegom`**) only lift a restriction, so nothing can go against them. Sake words cannot follow **`uem`** either: to say an act goes against someone's interest, put an [unmet](#sake-changeability) sake word on the clause (`zazawan vowogal thegathum balahen.` *Azawan's walking harms Alahen's interests*).

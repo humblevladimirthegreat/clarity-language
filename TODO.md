@@ -10,6 +10,12 @@ use [skip-cd] for amplify to not deploy.
 -claritish editor
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 
+llm-gloss-prompt:
+-phase 1.5 wave 5
+-phase 1.6 (confirm this is necessary)
+-revise phase 2 (accidentally done before phase 1)
+-phase 3
+
 save for near end of limit resets:
 -final exam
 -do rest of ngsl
