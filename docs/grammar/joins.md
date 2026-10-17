@@ -504,7 +504,7 @@ A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaini
 
 More items of the same role go *before* the join, not after it.
 
-SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a [scale](comparatives.md#manner-scale) after rank **`e`** / **`ue`**, equative **`oe`**, or sequence **`ae`**. After a verb join, only an `/h/` is SHARED. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
+SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a [scale](comparatives.md#manner-scale) after rank **`e`** / **`ue`**, equative **`oe`**, or sequence **`ae`**. After a verb join, a `/d/` object, a recipient `/b/`, or an `/h/` adverb is SHARED: every verb takes it ([verb-phrase forms](join-across-roles.md#vp-clause-forms)). Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
 
 > `zazawan zalahen zal hahegem vowogal.`
 >

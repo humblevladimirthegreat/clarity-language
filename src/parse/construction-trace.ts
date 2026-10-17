@@ -3,7 +3,7 @@ import type { CstElement, CstNode, IToken } from "chevrotain";
 import { classifyTokenBranch, isLexWordPayload, type TokenPayload } from "./tokens.js";
 import { POLAR_GROUP, RESTRICTOR_GROUP, type JoinSeries } from "./constructions.js";
 import { isDigitless, leadForceKind } from "./series.js";
-import { isGreeting, isKindReference, isScaleShared, visitResult } from "./ast-walk.js";
+import { isGreeting, isKindReference, isScaleShared, visitResult, vpUnitLists } from "./ast-walk.js";
 import { numberMarkerIdentity } from "./resolve.js";
 import type { Clause, LexWord, NumberStem, ParseResult, ResolveInfo } from "./types.js";
 
@@ -179,7 +179,7 @@ function leadForceName(token: CstElement): string | undefined {
  * Rules that only reshape a run for the parser (a right-recursive run of adjectives): their children trace as the rule
  * that holds them, so a run adds no construction of its own.
  */
-const TRANSPARENT_RULES = new Set(["clauseRest", "barsGrounds", "trailingAdjRun", "vpTailAfterEndOpen", "vpTailAfterEndClosed", "vpTailAfterMoreOpen", "vpTailAfterMoreClosed", "vpItemsStart", "vpItemsAfterD", "vpItemsAfterB", "vpItemsAfterH"]);
+const TRANSPARENT_RULES = new Set(["clauseRest", "barsGrounds", "trailingAdjRun", "vpTailAfterEndOpen", "vpTailAfterEndClosed", "vpTailAfterMoreOpen", "vpTailAfterMoreClosed", "vpItemsStart", "vpItemsAfterD", "vpItemsAfterB", "vpItemsAfterH", "vpItemsAfterHook"]);
 
 /** Labels of a rule's right-recursive rest (a run of the rule itself, or a transparent rule): no construction of their own. */
 const TRANSPARENT_KEYS = new Set(["leftEdgeRest", "clauseRest"]);
@@ -291,6 +291,14 @@ export function addReadingConstructions(result: ParseResult, out: Set<string>): 
     },
     // A `gral` / `hral` scale parses as an ordinary shared `/ɡ/` / `/h/`; `bral` has its own grammar label (`sharedAfterJoin.scale`).
     enter(node) {
+      if (node.kind === "vp") {
+        if (node.coord.parts[0]?.itemUnits?.some((e) => e.verb === node.coord.parts[0]!.items[0])) out.add("reading.verbFirstItem");
+        if (node.coord.parts.some((part) => part.sharedUnits?.some((u) => u.kind === "np"))) out.add("reading.verbSharedNoun");
+      }
+      if (node.kind === "clause" || node.kind === "island" || node.kind === "vp") {
+        const lists = node.kind === "clause" ? [node.clause.units] : node.kind === "island" ? [node.island.units] : vpUnitLists(node.coord);
+        if (lists.some((units) => units.some((u) => u.kind === "hook" && u.fromTo))) out.add("reading.fromTo");
+      }
       if (node.kind !== "shared" || !isScaleShared(node.item)) return;
       if (node.item.word.pos === "g") out.add("reading.amountScale");
       if (node.item.word.pos === "h") out.add("reading.frequencyScale");

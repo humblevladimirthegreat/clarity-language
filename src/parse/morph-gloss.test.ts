@@ -661,8 +661,49 @@ describe("morphGlossLine — verb-phrase join items", () => {
     expectLine("zazawan vugugel dababol vehahel val.", "z-Azawan | [v-cooking | [d-popcorn | v-sit] | v-and]");
   });
 
-  it("leaves an /h/ before the first verb outside the list, and a joinless verb chain flat", () => {
-    expectLine("zazawan hadehum vowogal varahal val.", "z-Azawan | h-haste | [v-walk | v-run | v-and]");
+  it("puts the words between the subject and the first verb in the first item, and leaves a joinless verb chain flat", () => {
+    expectLine("zazawan hadehum vugugel varahal val.", "z-Azawan | [[h-haste | v-cooking] | v-run | v-and]");
+    expectLine(
+      "zazawan dababol vugugel hugem bavahel vehahel val.",
+      "z-Azawan | [[d-popcorn | v-cooking] | [[h-around | b-fire] | v-sit] | v-and]",
+    );
+    expectLine("zazawan bahaben vezebel bazawan vamol val.", "z-Azawan | [[b-Ahaben | v-tell] | [b-Azawan | v-pay] | v-and]");
     expectLine("zazawan vowogal hadehum varahal.", "z-Azawan | v-walk | h-haste | v-run");
+  });
+
+  it("shares words before the subject, and /d/ /b/ /h/ after the join", () => {
+    expectLine("dababol zazawan vugugel vagadel val.", "d-popcorn | z-Azawan | [v-cooking | v-eat | v-and]");
+    expectLine("hadehum zazawan vugugel varahal val.", "h-haste | z-Azawan | [v-cooking | v-run | v-and]");
+    expectLine("h_15,30 zazawan vowogal varahal val.", "h-_15,30 | z-Azawan | [v-walk | v-run | v-and]");
+    expectLine("zazawan vugugel vagadel val dababol.", "z-Azawan | [v-cooking | v-eat | v-and | d-popcorn]");
+    expectLine("zazawan vugugel varahal val hadehum.", "z-Azawan | [v-cooking | v-run | v-and | h-haste]");
+    expectLine("zazawan vugugel vagadel val bahaben hahegem.", "z-Azawan | [v-cooking | v-eat | v-and | b-Ahaben | h-intensity]");
+    expectLine("dababol vugugel vagadel val zazawan.", "d-popcorn | [v-cooking | v-eat | v-and] | z-Azawan");
+  });
+
+  it("keeps a /th/ word at the edge of the first item outside it, and one inside it in its bracket", () => {
+    expectLine("zazawan thevegam vowogal varahal val.", "z-Azawan | th-doubt | [v-walk | v-run | v-and]");
+    expectLine("zazawan dababol thevegam vugugel vagadel val.", "z-Azawan | [[d-popcorn | th-doubt | v-cooking] | v-eat | v-and]");
+  });
+
+  it("leaves a one-verb denial as it is", () => {
+    expectLine("zazawan dababol vahahal vul.", "z-Azawan | d-popcorn | [v-see | v-not]");
+  });
+
+  it("takes an extra-noun hook into the item of the verb after it", () => {
+    expectLine("zazawan vowogal ul b_9 varahal val.", "z-Azawan | [v-walk | [[from | b-_9] | v-run] | v-and]");
+    expectLine("zazawan vowogal ul barl zalahen vezebal.", "z-Azawan | v-walk | [from | b-that-clause] | z-Alahen | v-sleep");
+  });
+});
+
+describe("morphGlossLine — from … to", () => {
+  it("reads ul X oel Y as one unit, wherever it sits", () => {
+    expectLine("zazawan ul b_9 oel b_17 vowogal.", "z-Azawan | [from | b-_9 | toward | b-_17] | v-walk");
+    expectLine("zazawan vowogal varahal val ul b_9 oel b_17.", "z-Azawan | [v-walk | v-run | v-and] | [from | b-_9 | toward | b-_17]");
+    expectLine("zazawan vowogal ul b_9 oel b_17 varahal val.", "z-Azawan | [v-walk | [[from | b-_9 | toward | b-_17] | v-run] | v-and]");
+  });
+
+  it("keeps the straddling form as two extra nouns", () => {
+    expectLine("zazawan ul b_9 vowogal oel b_17.", "z-Azawan | [from | b-_9] | v-walk | [toward | b-_17]");
   });
 });

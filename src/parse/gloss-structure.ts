@@ -23,6 +23,7 @@ import type {
   NpPackage,
   ParseResult,
   Unit,
+  VpCoord,
   Utterance,
   BoundJoin,
 } from "./types.js";
@@ -107,11 +108,13 @@ function fences<T>(
   item: (x: T) => GlossNode | undefined,
   /** Kind reference (`zuan` + kind) is not a named package; only a noun list can hold one. */
   isKind: (part: (typeof parts)[number]) => boolean = () => false,
+  /** Shared words after the join that are whole units (a verb list's shared `/d/` / `/b/`). */
+  sharedAfter: (part: (typeof parts)[number]) => GlossNode[] = () => [],
 ): GlossNode[] {
   let acc: GlossNode[] = [];
   for (const part of parts) {
     const items = part.items.map(item);
-    const sharedNodes = part.shared.map((s) => shared(cur, s));
+    const sharedNodes = [...part.shared.map((s) => shared(cur, s)), ...sharedAfter(part)];
     if (!part.join) {
       acc = [...acc, ...items, ...sharedNodes].filter((n): n is GlossNode => n !== undefined);
       continue;
@@ -149,13 +152,13 @@ function unitNodes(cur: Cursor, unit: Unit): GlossNode[] {
       return np(cur, unit.coord);
     case "vp":
       return fences(cur, unit.coord.parts, (w) => {
-        // Words before a later verb of the list are that verb's item: `[v-walk | [h-haste | v-run] | v-and]`.
+        // Words before a verb of the list are that verb's item: `[v-walk | [h-haste | v-run] | v-and]`.
         const pre = unit.coord.parts.flatMap((p) => p.itemUnits ?? []).find((e) => e.verb === w);
-        const preNodes = pre ? pre.units.flatMap((u) => unitNodes(cur, u)) : [];
+        const preNodes = pre ? unitListNodes(cur, pre.units) : [];
         const hosted = unit.coord.parts.flatMap((p) => p.hostedVerbs ?? []).find((h) => h.verb.raw === w.raw);
         const verb = hosted ? group([cur.take(w), cur.take(hosted.hosted.bound)]) : cur.take(w);
         return preNodes.length > 0 ? group([...preNodes, verb]) : verb;
-      });
+      }, undefined, (part) => unitListNodes(cur, (part as VpCoord["parts"][number]).sharedUnits ?? []));
     case "gCoord":
       return gCoordNodes(cur, unit.coord);
     case "predicate":
@@ -215,10 +218,20 @@ function attachLeft(out: GlossNode[], kinds: NodeKind[], pair: GlossNode): void 
   kinds.push(kind);
 }
 
-/** Clause units, with hook packages: extra noun `[in | b-house]`, named hook `NAME[a | on | b]`. */
+/** Clause units, then the sentence a stand-in opens. */
 function clauseNodes(cur: Cursor, clause: Clause): GlossNode[] {
+  const out = unitListNodes(cur, clause.units);
+  if (clause.dependent) {
+    const orodo = cur.take(clause.dependent.orodo);
+    if (orodo) out.push(orodo);
+    out.push(...clauseNodes(cur, clause.dependent.clause));
+  }
+  return out;
+}
+
+/** One unit list, with hook packages: extra noun `[in | b-house]`, from–to `[from | b-_9 | toward | b-_17]`, named hook `NAME[a | on | b]`. */
+function unitListNodes(cur: Cursor, units: Unit[]): GlossNode[] {
   const out: GlossNode[] = [];
-  const units = clause.units;
   const nodes = units.map((u) => unitNodes(cur, u));
   const kinds: NodeKind[] = [];
   const push = (node: GlossNode, kind: NodeKind = "plain"): void => {
@@ -239,6 +252,13 @@ function clauseNodes(cur: Cursor, clause: Clause): GlossNode[] {
     const next = units[k + 1];
     const pairs = unit.kind === "hook" && (unit.job === "extraNoun" || unit.job === "genitive" || unit.job === "resume");
     if (isHookUnit(unit) && pairs && next?.kind === "np" && next.coord.level === "b") {
+      const last = out.at(-1);
+      // The end of a from–to joins the `ul` pair's bracket: `[from | b-_9 | toward | b-_17]`.
+      if (unit.fromTo && last?.t === "group" && !last.label) {
+        out[out.length - 1] = { ...last, kids: [...last.kids, ...here, ...nodes[k + 1]!] };
+        k += 1;
+        continue;
+      }
       const node = group([...here, ...nodes[k + 1]!]);
       if (node) {
         if (unit.onLeft && out.length > 0) attachLeft(out, kinds, node);
@@ -250,11 +270,6 @@ function clauseNodes(cur: Cursor, clause: Clause): GlossNode[] {
     // An `/h/` or `/ɡ/` host with its hosted `/b/` is a landmark for a pair that follows.
     const hosted = (unit.kind === "h" && unit.unit.hosted) || (unit.kind === "predicate" && unit.adj.hosted);
     here.forEach((node, i) => push(node, hosted && i === here.length - 1 ? "landmark" : "plain"));
-  }
-  if (clause.dependent) {
-    const orodo = cur.take(clause.dependent.orodo);
-    if (orodo) push(orodo);
-    out.push(...clauseNodes(cur, clause.dependent.clause));
   }
   return out;
 }

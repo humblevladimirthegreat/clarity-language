@@ -103,6 +103,7 @@ Source: [joins.md](../grammar/joins.md), [join-across-roles.md](../grammar/join-
 - **open:** **`/th/`…-n**. Join-relations frame a noun or an event, and a stance is neither, so no reading composes.
 - **open:** stacked **-r** outside a question on `/th/` (`thaor` … `thuer` are fill-asks only), and on `/z/` `/d/` `/b/` `/v/` `/x/` `/ɡ/` joins (`zuar`, `vaor`, `xuar`, `gaor`). No statement wants a stacked blank, and no question has asked for one on these joins. Parser: `stackedJoinResume`.
 - **open:** clause sequence **-n** beyond `xan` `xon` `xun` `xaon` `xuen` (`xuan`, `xuon`, `xen`, `xaen`, `xoen`). No reading is guessable: `xen` and `xaen` put rank or order into a sequence that is already ordered, `xoen` could be *at the same time* or *in either order*, and `xuan` / `xuon` (*everything but* / *anything but*) have no clause job. `xen` is also a departure mark after a name.
+- **closed (D-47):** a shared `/d/` or recipient `/b/` (before the subject or after the join) on a joined verb that has its own (`dababol vugugel vagadel val dabovul`).
 - **closed (D-39):** a single-item clause join (`A xul` *not the case that A*, `A xal` *only A happened*).
 - **open:** a rank or sequence join (`e` / `ue` / `ae`) with a number as a threshold, and a SHARED continuum word. In a rank or sequence fence a number is one of the items, so a threshold reading is not guessable. Ranges use hooks and [rays](../grammar/numbers-applied.md#rays).
 

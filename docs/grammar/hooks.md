@@ -231,6 +231,8 @@ English often puts *since* first (*Since Alahen fell asleep, Azawan has been wal
 
 **`ul`** is the only hook that takes **`barl`**. Every other hook needs a real noun in `/b/`.
 
+To give the stretch an end too (*from the thunderstorm to the bell*), use a [from … to](numbers-applied.md#time) unit.
+
 **Compare with:** *since* meaning *because* is **`thavem barl`**. Agazan keeps the time reading and the cause reading apart.
 
 ### Practice {#beginner-practice}
@@ -456,7 +458,7 @@ A hook + `/b/` right after a landmark (the `/b/` of another extra, or of a word 
 >
 > "Azawan walks in the village near me."
 
-Several extra-noun hooks on one clause are several extras (*from* one landmark *toward* another). To keep the second one on the clause, put a non-`/b/` word between the first landmark and the next hook; the verb can sit there (`ul bezedel vowogal oel bedehal`). Extra-noun **-n** makes the hook and its landmark a name, as on same-role hooks; the landmark keeps its own ending.
+Several extra-noun hooks on one clause are several extras. To keep the second one on the clause, put a non-`/b/` word between the first landmark and the next hook. *From* one landmark *to* another needs no gap: it is one [from … to](numbers-applied.md#time) unit. Extra-noun **-n** makes the hook and its landmark a name, as on same-role hooks; the landmark keeps its own ending.
 
 With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the general setting, not the exact contact, source, tool, or opponent. It is not a second copy of the same extra.
 
@@ -886,6 +888,8 @@ A range **-r** always has a word on each side (`oer` / `uar` / `uer`). With noth
 > z-Azawan | strictly-between | z-Ahaben | v-sleep
 >
 > "Everyone between Azawan and Ahaben sleeps." (not Azawan or Ahaben themselves)
+
+Right after an `ul` extra noun, `oel` + `/b/` is not a range: `ul X oel Y` is one [from … to](numbers-applied.md#time) unit.
 
 Between two numbers with digits, plain **`al`** and **`ul`** also make a range, because *3, including 5* has nothing to include into: [ranges](numbers-applied.md#ranges).
 

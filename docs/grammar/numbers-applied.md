@@ -73,7 +73,27 @@ Clock and date together:
 
 Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** with digits repeats a clock time or date already mentioned; digitless `hror` asks *when?* / *what time?* in a question ([digitless](numbers.md#digitless)). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
-For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](hooks.md#extra-noun-intermediate)). As with any two extra nouns, keep a non-`/b/` word, such as the verb, between them.
+For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](hooks.md#extra-noun-intermediate)). Right after an `ul` extra noun, `oel` and its `/b/` close the pair: `ul X oel Y` is one unit, *from X to Y*, not a [range](hooks.md#ranges). It works for any two endpoints, not only times.
+
+> `zazawan ul b_9 oel b_17 vowogal.`
+>
+> 🔊 `zazawan ul bronal oel browolel vowogal.`
+>
+> z-Azawan | [from | b-_9 | toward | b-_17] | v-walk
+>
+> "Azawan walks from 9:00 to 17:00."
+
+Like any other word, the unit sits where its scope should be: with [joined verbs](join-across-roles.md#vp-clause-forms), before one verb for that verb alone, or after the join for every verb.
+
+> `zazawan vowogal varahal val ul b_9 oel b_17.`
+>
+> 🔊 `zazawan vowogal varahal val ul bronal oel browolel.`
+>
+> z-Azawan | [v-walk | v-run | v-and] | [from | b-_9 | toward | b-_17]
+>
+> "Azawan walks and runs from 9:00 to 17:00."
+
+With one verb, the two halves may also sit on either side of it, as two extra nouns:
 
 > `zazawan ul b_9 vowogal oel b_17.`
 >

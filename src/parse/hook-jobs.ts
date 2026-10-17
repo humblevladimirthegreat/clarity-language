@@ -12,7 +12,7 @@
  * - `resume`: a resume hook (`-r`) that points back.
  * - `frame`: `uem` + a `/th/` stance it holds as the opposing frame (sakes.md#contrary-to-stance).
  */
-import { visitResult, visitUnit } from "./ast-walk.js";
+import { visitResult, visitUnit, vpUnitLists } from "./ast-walk.js";
 import { topicEffect } from "./linkers.js";
 import type { LexWord, ParseResult, Unit } from "./types.js";
 
@@ -109,6 +109,23 @@ function genitiveHost(units: Unit[], index: number, afterTopic: boolean): "noun"
   }
 }
 
+/** The hook's vowels, without its ending (`oel` → `oe`). */
+function hookVowels(word: LexWord): string | undefined {
+  return word.family.kind === "hook" ? word.family.form.slice(0, -1) : undefined;
+}
+
+/**
+ * `oel` + `/b/` right after an `ul` extra noun closes one *from … to* unit, not a range (numbers-applied.md#time):
+ * `ul b_9 oel b_17`. Plain and loose endings only; the `ul` pair must stand on the clause, not on a landmark.
+ */
+function closesFromTo(units: Unit[], index: number): boolean {
+  const unit = units[index];
+  const from = units[index - 2];
+  if (unit?.kind !== "hook" || from?.kind !== "hook" || !isBNoun(units[index - 1]) || !isBNoun(units[index + 1])) return false;
+  const plain = (w: LexWord) => w.ending === "l" || w.ending === "m";
+  return hookVowels(unit.word) === "oe" && plain(unit.word) && hookVowels(from.word) === "u" && plain(from.word) && from.job === "extraNoun" && !from.onLeft;
+}
+
 /** `afterTopic`: this clause opens right after a topic word, which is the noun a first hook describes (pronouns.md#topic). */
 function hookJob(units: Unit[], index: number, afterJoin: boolean, afterTopic: boolean): HookJob {
   const unit = units[index];
@@ -141,6 +158,11 @@ export function assignHookJobs(result: ParseResult): void {
   const assign = (units: Unit[], clauseAfterJoin: boolean, clauseAfterTopic: boolean): void => {
     units.forEach((unit, index) => {
       if (unit.kind !== "hook") return;
+      if (closesFromTo(units, index)) {
+        unit.job = "extraNoun";
+        unit.fromTo = true;
+        return;
+      }
       unit.job = hookJob(units, index, index === 0 && clauseAfterJoin, index === 0 && clauseAfterTopic);
       // A genitive, or an extra-noun hook right after a landmark `/b/`, describes what is on its left.
       const prevPos = unitWords(units[index - 1]).filter((w) => w.pos !== "w").at(-1)?.pos;
@@ -159,6 +181,7 @@ export function assignHookJobs(result: ParseResult): void {
       }
       if (node.kind === "clause") assign(node.clause.units, afterJoin.has(node.clause), afterTopic.has(node.clause));
       if (node.kind === "island") assign(node.island.units, false, false);
+      if (node.kind === "vp") for (const units of vpUnitLists(node.coord)) assign(units, false, false);
     },
   });
 }
@@ -172,8 +195,9 @@ export function hookJobsByPosition(result: ParseResult): Map<number, HookJob> {
       if (node.kind === "clause") {
         for (const unit of node.clause.units) if (unit.kind === "hook" && unit.word.at !== undefined && unit.job) jobs.set(unit.word.at, unit.job);
       }
-      if (node.kind === "island") {
-        for (const unit of node.island.units) if (unit.kind === "hook" && unit.word.at !== undefined && unit.job) jobs.set(unit.word.at, unit.job);
+      const lists = node.kind === "island" ? [node.island.units] : node.kind === "vp" ? vpUnitLists(node.coord) : [];
+      for (const units of lists) {
+        for (const unit of units) if (unit.kind === "hook" && unit.word.at !== undefined && unit.job) jobs.set(unit.word.at, unit.job);
       }
       if (node.kind === "gPackage" && node.pkg.word.family.kind === "hook" && node.pkg.word.at !== undefined) jobs.set(node.pkg.word.at, "extraNoun");
     },

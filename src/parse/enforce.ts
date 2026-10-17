@@ -63,7 +63,8 @@ import {
   WritingSpanZ,
   Z,
 } from "./tokens.js";
-import { isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, visitUnit, type AstNode, type Visitor } from "./ast-walk.js";
+import { doubledVerbSlot } from "./verb-items.js";
+import { isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, visitUnit, vpUnitLists, type AstNode, type Visitor } from "./ast-walk.js";
 import { forcePairKind, KIND_SERIES, RANK_SERIES } from "./series.js";
 import type {
   AnaphorBind,
@@ -660,6 +661,8 @@ function enforceDependentContent(clause: Clause): void {
 /** Checks over one unit list (a clause body or an island): hosts, stand-ins, hooks, as-of counts, edges. */
 function enforceUnitList(units: Unit[], tables: ClassifyTables): void {
   enforceIslandEdges(units);
+  const doubled = doubledVerbSlot(units);
+  if (doubled) throw new ConstructionError("verbSharedOwn", doubled.slot === "d" ? "two objects for one verb" : "two recipients for one verb");
   enforceRespectively(units);
   let hAsOf = 0;
   let thAsOf = 0;
@@ -726,8 +729,11 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
             enforceLeadingFence(node.coord.parts as { items: unknown[]; join?: LexWord }[], (part) => part.items.length === 0);
           }
           return;
-        case "g":
         case "vp":
+          for (const units of vpUnitLists(node.coord)) enforceUnitList(units, tables);
+          enforceLeadingFence(node.coord.parts as { items: unknown[]; join?: LexWord }[], (part) => part.items.length === 0);
+          return;
+        case "g":
           enforceLeadingFence(node.coord.parts as { items: unknown[]; join?: LexWord }[], (part) => part.items.length === 0);
           return;
         case "gPackage":

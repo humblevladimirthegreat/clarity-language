@@ -215,7 +215,7 @@ A digit string under `/h/` with no relation word before it. Clock is `h_…`; a 
 | [At a time](../numbers-applied.md#time) | `h_15,30 zazawan vowogal.` | *At 15:30 Azawan walks.* | I |
 | [In March](../numbers-applied.md#time) | `zazawan vowogal huwem bumuham grerel.` | *Azawan walks in March.* | I |
 | [In 1962](../numbers-applied.md#time) | `zazawan vowogal huwem bavawem g_1962.` | *Azawan walked in 1962.* | I |
-| [From … to](../numbers-applied.md#time) | `zazawan ul b_9 vowogal oel b_17.` | *Azawan walks from 9:00 to 17:00.* | I |
+| [From … to](../numbers-applied.md#time) | `zazawan ul b_9 oel b_17 vowogal.` | *Azawan walks from 9:00 to 17:00.* | I |
 
 Digitless `hrol` is *some clock or date*; `hror` asks *when?* *Three times* (`hrarel`) is not a clock time.
 

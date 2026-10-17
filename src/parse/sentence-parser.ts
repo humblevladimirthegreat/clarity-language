@@ -102,6 +102,7 @@ import {
 import { isNamedStandIn, isStandIn } from "./classify.js";
 import { assignHookJobs } from "./hook-jobs.js";
 import { topicEffect } from "./linkers.js";
+import { scopeClause, scopeIsland } from "./verb-items.js";
 import { BAR_SERIES, isScaleStem, RANK_SERIES } from "./series.js";
 import type {
   BodyClause,
@@ -1011,14 +1012,17 @@ class AgazanSentenceParser extends CstParser {
   public vpItemsAfterD = this.vpItemsRule("vpItemsAfterD", "d");
   public vpItemsAfterB = this.vpItemsRule("vpItemsAfterB", "b");
   public vpItemsAfterH = this.vpItemsRule("vpItemsAfterH", "h");
+  public vpItemsAfterHook = this.vpItemsRule("vpItemsAfterHook", "hook");
 
-  private vpItemsRule(name: string, state: "start" | "d" | "b" | "h") {
+  private vpItemsRule(name: string, state: "start" | "d" | "b" | "h" | "hook") {
     return this.RULE(name, () => {
+      // A hook with its `/b/` (an extra noun) is item material too, so `ul b_9 oel b_17` before a verb is that verb's.
       const kinds = [
         { kind: "d", unit: this.vpItemUnitD, next: () => this.vpItemsAfterD },
         { kind: "b", unit: this.vpItemUnitB, next: () => this.vpItemsAfterB },
         { kind: "h", unit: state === "h" ? this.vpItemUnitHSingle : this.vpItemUnitH, next: () => this.vpItemsAfterH },
-      ].filter((k) => k.kind !== state || k.kind === "h");
+        { kind: "hook", unit: this.vpItemUnitHook, next: () => this.vpItemsAfterHook },
+      ].filter((k) => k.kind !== state || k.kind === "h" || k.kind === "hook");
       this.or(
         1,
         kinds.map((k, i) => ({
@@ -1050,6 +1054,11 @@ class AgazanSentenceParser extends CstParser {
       { ALT: () => this.SUBRULE(this.hCoord) },
       { ALT: () => this.SUBRULE(this.hSingle, { LABEL: "hCoord" }) },
     ]);
+  });
+
+  /** A hook in a verb's item: an extra-noun hook, whose `/b/` comes next as its own unit (hooks.md#extra-noun). */
+  public vpItemUnitHook = this.RULE("vpItemUnitHook", () => {
+    this.SUBRULE(this.hookUnitClosed, { LABEL: "hookUnit" });
   });
 
   public vpItemUnitHSingle = this.RULE("vpItemUnitHSingle", () => {
@@ -1763,6 +1772,10 @@ function mergeIslandJoins(units: Unit[]): Unit[] {
 }
 
 function finalizeClause(units: Unit[]): Clause {
+  return scopeClause(splitClause(units));
+}
+
+function splitClause(units: Unit[]): Clause {
   const resolved = disambiguateClause(mergeAdjLists(mergeIslandJoins(units)));
 
   for (let i = 0; i < resolved.length - 1; i++) {
@@ -2079,7 +2092,7 @@ function hostedType(token: IToken, before: IToken[], after: IToken[]): TokenType
  * not: it ends the main clause, so a verb after it starts the next sentence (dependents.md#dependent-clauses).
  */
 const VP_ITEM_MATERIAL = [
-  D, B, WritingSpanD, WritingSpanB, TagD, TagB, JoinD, JoinB, ItemHook, Bar, HScale, BScale, Factor,
+  D, B, WritingSpanD, WritingSpanB, TagD, TagB, JoinD, JoinB, ItemHook, HookHosting, Bar, HScale, BScale, Factor,
   H, JoinH, HSharedV, HostedB, Amount, G, W,
 ];
 
@@ -2286,7 +2299,7 @@ function joinFromClose(close: CstNode | undefined): { join?: LexWord; shared: Co
 }
 
 function buildIsland(cst: CstNode): IslandUnit {
-  return { units: chainUnits(cst).flatMap(expandUnits) };
+  return scopeIsland({ units: chainUnits(cst).flatMap(expandUnits) });
 }
 
 /** The unit nodes of a clause or island, in order: each `unit` rule holds one unit and the rest of the chain. */

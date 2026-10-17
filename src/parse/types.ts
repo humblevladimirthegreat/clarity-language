@@ -322,6 +322,11 @@ export type VpCoord = {
      * `/h/` units and `/d/` `/b/` phrases, in spoken order before `verb`.
      */
     itemUnits?: { verb: LexWord; units: Unit[] }[];
+    /**
+     * Words right after the list's last join that every verb shares (join-across-roles.md#vp-clause-forms): `/d/`
+     * and `/b/` phrases and `/h/` units, in spoken order after the join's own shared adverb.
+     */
+    sharedUnits?: Unit[];
   }[];
 };
 
@@ -361,6 +366,8 @@ export type Unit =
       frame?: HUnit;
       /** WANT after a holder frame: the holder's wish the event goes against (intention.md#want). */
       heldWant?: LexWord;
+      /** `oel` + `/b/` right after an `ul` extra noun: the end of one *from … to* unit (numbers-applied.md#time). */
+      fromTo?: true;
     }
   | { kind: "writingSpan"; word: LexWord }
   | { kind: "island"; island: IslandUnit }

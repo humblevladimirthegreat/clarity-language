@@ -87,7 +87,7 @@ The vowel picks the act. Its cues are **a** add / hold, **o** one / pick, **e** 
 
 ### Word order for each act {#act-word-order}
 
-The first letter of each word already says its role, so any order of the body means the same thing. Each act still has a **usual order**. Use it: the act word is one short syllable, and if a listener misses it, the order still tells them which act you meant.
+The first letter of each word already says its role, so any order of the body means the same thing (with joined verbs, a word's place says which verb it goes with: [verb-phrase forms](join-across-roles.md#vp-clause-forms)). Each act still has a **usual order**. Use it: the act word is one short syllable, and if a listener misses it, the order still tells them which act you meant.
 
 > `zazawan dabegol vabahel.`
 >
@@ -123,7 +123,7 @@ Only a command starts with its verb. A question or prohibition whose act word ge
 | command | verb first | the action comes first: do it |
 | prohibition | verb late, as in a statement | the action is held back |
 
-The person who receives (`/b/`) stays right after the verb, wherever the verb goes: `yel vamol bazawan.` *Pay Azawan!* A question with no subject puts another word before its verb, so that it still does not start with the verb.
+The person who receives (`/b/`) stays right after the verb, wherever the verb goes: `yel vamol bazawan.` *Pay Azawan!* With [joined verbs](join-across-roles.md#vp-clause-forms), the whole join counts as the verb, so a `/b/` right after the join word receives from every verb. A question with no subject puts another word before its verb, so that it still does not start with the verb.
 
 ### Practice {#beginner-practice}
 

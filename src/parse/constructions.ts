@@ -120,6 +120,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "vpItemUnit.dCoord": { anchor: "join-across-roles.md#vp-clause-forms", summary: "/d/ phrase inside a verb item" },
   "vpItemUnit.bCoord": { anchor: "join-across-roles.md#vp-clause-forms", summary: "/b/ phrase inside a verb item" },
   "vpItemUnit.hCoord": { anchor: "join-across-roles.md#vp-clause-forms", summary: "/h/ unit inside a verb item" },
+  "vpItemUnit.hookUnit": { anchor: "join-across-roles.md#vp-clause-forms", summary: "extra-noun hook inside a verb item" },
   "vJoinClose.W": { anchor: "joins.md#respectively", summary: "respectively /w/ before a verb join word" },
   "vJoinClose.JoinV": { anchor: "joins.md#and-lists-a", summary: "/v/ join fence" },
   "vJoinClose.sharedAfterJoin": { anchor: "join-across-roles.md#vp-clause-forms", summary: "shared /h/ after a verb join (covers every verb)" },
@@ -303,6 +304,9 @@ export const READING_CONSTRUCTIONS = {
   frequencyScale: { anchor: "comparatives.md#frequency-scale", summary: "digitless hral after a rank join: how often" },
   bareQuestion: { anchor: "questions.md#question", summary: "yol. / yom. with no body: Huh? / Hm?" },
   greeting: { anchor: "word-endings.md#greeting", summary: "a named citation said alone: hello / goodbye" },
+  verbFirstItem: { anchor: "join-across-roles.md#vp-clause-forms", summary: "words between the subject and the first joined verb: that verb's own" },
+  verbSharedNoun: { anchor: "join-across-roles.md#vp-clause-forms", summary: "/d/ or /b/ right after a verb join: every verb's" },
+  fromTo: { anchor: "numbers-applied.md#time", summary: "ul + /b/ + oel + /b/: one from … to unit" },
 } satisfies Record<string, ConstructionEntry>;
 
 /** Tone marks: each mark, and each scope it colors (speech-moves.md § tone marks). */
@@ -605,6 +609,7 @@ export function constructionRegistry(overlays: Iterable<OverlayEntrySource>): Ma
  * anchor is the section that states the rule, so an error sends the reader there.
  */
 export const REJECTIONS = {
+  verbSharedOwn: { anchor: "join-across-roles.md#vp-clause-forms", summary: "a joined verb with its own object or recipient takes no shared one: say it in that verb's item, or share it and drop the item's own" },
   genitiveHost: { anchor: "hooks.md#genitive", summary: "`em` + `/b/` follows the noun B uses" },
   forcePair: { anchor: "speech-moves.md#emphatic-prohibition", summary: "only `yul yul` and `yal yol` / `yam yol` stack two act words" },
   polarOrder: { anchor: "questions.md#polar-stance", summary: "a polar word is one answer or one tag: not two in a row, and not before an act word (an answer and then a question are two turns)" },

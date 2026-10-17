@@ -30,7 +30,7 @@ A name you already cite with **-n** (`azawan`) keeps **-n** in the sentence:
 
 The **direct object** is who or what the action is done to. Mark it with `/d/`. The usual order is **Subject – Direct Object – Verb**.
 
-Because the first letter already says each word’s role, you may move those three words without changing who did what or what the sentence means. Moving a word does not stress it either. The usual order is still the one to use, because listeners expect it.
+Because the first letter already says each word’s role, you may move those three words without changing who did what or what the sentence means. Moving a word does not stress it either. The usual order is still the one to use, because listeners expect it. Joined verbs are the one exception: there a word's place says which verb it goes with ([verb-phrase forms](join-across-roles.md#vp-clause-forms)).
 
 > `zodogal dagadul vahahal.`
 >
@@ -70,7 +70,7 @@ To say how strongly a property holds (*very* angry), add a word marked with `/w/
 
 ### Adverbs (`/h/`) {#adverbs-h}
 
-An **adverb** says how, when, or where an action happens. Mark it with `/h/`. You may place it anywhere in the sentence, and several adverbs can sit next to each other (`hadehum halahom` *hastily and quietly*).
+An **adverb** says how, when, or where an action happens. Mark it with `/h/`. You may place it anywhere in the sentence, and several adverbs can sit next to each other (`hadehum halahom` *hastily and quietly*). With joined verbs, its place says which verb it describes ([verb-phrase forms](join-across-roles.md#vp-clause-forms)).
 
 > `zodogal hadehum vowogal.`
 >
@@ -128,7 +128,7 @@ A `/w/` word still goes before the host, so the host and its `/b/` stay side by 
 >
 > "A dog sleeps like Azawan."
 
-**Unhosted: who receives.** A `/b/` word anywhere else is the person who receives what the verb passes on: who gets the thing given, or who hears what is told. What is given or said is still `/d/`. A clause has at most one of these. Its usual place is right after the verb: **Subject – Direct Object – Verb – Extra noun**.
+**Unhosted: who receives.** A `/b/` word anywhere else is the person who receives what the verb passes on: who gets the thing given, or who hears what is told. What is given or said is still `/d/`. Each verb has at most one of these. Its usual place is right after the verb: **Subject – Direct Object – Verb – Extra noun**.
 
 > `zazawan vezebel balahen.`
 >
@@ -626,7 +626,7 @@ An adjective before its noun takes **`gl-`**; a plain `/ɡ/` word describes the 
 
 ### English emphasis and clefts {#english-emphasis}
 
-English often moves or stresses a word to single it out: *It's a cat that Azawan sees*, *It was Azawan who saw the cat*, or a stressed *Azawan saw the cat*. Agazan word order carries no emphasis. A sentence's usual order is set by its [speech act](speech-moves.md#act-word-order), and any other order means exactly the same. When you translate, ask what the English emphasis is doing.
+English often moves or stresses a word to single it out: *It's a cat that Azawan sees*, *It was Azawan who saw the cat*, or a stressed *Azawan saw the cat*. Agazan word order carries no emphasis. A sentence's usual order is set by its [speech act](speech-moves.md#act-word-order), and any other order means exactly the same (with joined verbs, a word's place says which verb it goes with, [verb-phrase forms](join-across-roles.md#vp-clause-forms)). When you translate, ask what the English emphasis is doing.
 
 If the English sets one person or thing against others (*Azawan, not someone else*), put the [contrastive focus](speech-moves.md#tone-marks) mark **`&`** on that word.
 

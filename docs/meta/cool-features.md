@@ -10,10 +10,10 @@ Sentences in Agazan start with a speech act word: yal for statements (usually om
 
 * statement - verb last
 * question - verb second
-* command - verb first
+* command - verb first (after the act word)
 * prohibition - verb last (like a statement)
 
-Prohibition uses the same word order as statement because that is less dangerous to confuse than sharing the same word order as a command. In the third and fourth examples below, note that even if you mishear the act word, the word order means that you can't confuse "Don't eat the mushroom" with "Eat the mushroom." At worst you hear "(Someone) eats the mushroom" a description rather than an instruction.
+Prohibitions use the same word order as statements because that is less dangerous to confuse than sharing the same word order as a command. In the third and fourth examples below, note that even if you miss or mistake the first word, the word order means that you can't confuse "Don't eat the mushroom" with "Eat the mushroom." At worst you hear "(Someone) eats the mushroom" a description rather than an instruction.
 
 > `(yal) zazawan damahul vagadel.`
 >

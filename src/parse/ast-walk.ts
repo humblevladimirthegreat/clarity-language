@@ -313,6 +313,11 @@ function visitGCoord(coord: GCoord, v: Visitor): void {
   v.exit?.(node);
 }
 
+/** A verb list's own unit lists: each item's words before its verb, and the words every verb shares after the join. */
+export function vpUnitLists(coord: VpCoord): Unit[][] {
+  return coord.parts.flatMap((part) => [...(part.itemUnits ?? []).map((e) => e.units), ...(part.sharedUnits ? [part.sharedUnits] : [])]);
+}
+
 function visitVp(coord: VpCoord, v: Visitor): void {
   const node: AstNode = { kind: "vp", coord };
   if (v.enter?.(node) === SKIP) return;
@@ -325,6 +330,7 @@ function visitVp(coord: VpCoord, v: Visitor): void {
     for (const mod of part.joinModifiers ?? []) v.word?.(mod, "joinModifier");
     if (part.join) v.join?.(part.join, { kind: "vp", coord, index });
     visitShared(part.join, part.shared, v);
+    for (const unit of part.sharedUnits ?? []) visitUnit(unit, v);
   });
   v.exit?.(node);
 }

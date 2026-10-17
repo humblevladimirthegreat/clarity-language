@@ -49,7 +49,7 @@ Under `/v/`, `/ɡ/`, and `/h/`, a join word with **-n** names a list move instea
 
 Stacked vowels take no **-r** under `/v/` or `/x/` (the *none* cells); only a stance join has stacked **-r**, as a [fill-ask](#standalone-stance-joins).
 
-Each item in a verb-phrase join is a verb plus the words that go with it, and an item ends at its verb: an `/h/`, `/d/`, or `/b/` word between two joined verbs belongs to the verb after it. In `vowogal hadehum varahal val`, *hastily* is on *run*, not *walk*. In the same way, an object or a `/b/` party between two verbs goes only with the second verb:
+Each item in a verb-phrase join is a verb plus the words that go with it, and an item ends at its verb. One rule places every word: **a word before a verb belongs to that verb.** An `/h/`, `/d/`, or `/b/` word, or a hook with its `/b/`, between two joined verbs belongs to the verb after it. In `vowogal hadehum varahal val`, *hastily* is on *run*, not *walk*. In the same way, an object or a `/b/` party between two verbs goes only with the second verb:
 
 > `zazawan vowogal dahaben vahahal val.`
 >
@@ -63,21 +63,69 @@ Each item in a verb-phrase join is a verb plus the words that go with it, and an
 >
 > "Azawan walks and talks to Ahaben."
 
-When every item is a bare verb, a `/d/` right after the join is SHARED, the object of every verb: `vahahal vabovul vam dabovul` → *sees and tempts an apple*.
+The first item starts at the subject: the words between the subject and the first verb belong to the first verb. With no subject in the clause, the first item reaches back to the start of the clause.
 
-An adverb `/h/` before all the joined verbs, or SHARED after the join, covers every item. An `/h/` inside an item covers only that item. A [stance](clause.md#stance-th) `/th/` word after the join is not SHARED: like any stance word, it is about the whole claim.
+> `zazawan dababol vugugel hugem bavahel vehahel val.`
+>
+> z-Azawan | [[d-popcorn | v-cooking] | [[h-around | b-fire] | v-sit] | v-and]
+>
+> "Azawan cooked popcorn and sat around the fire."
 
-> `zazawan dababol vugugel hugem bavahel vagadel val.`
+> `zazawan hadehum vugugel varahal val.`
 >
-> z-Azawan | d-popcorn | [v-cooking | [[h-around | b-fire] | v-eat] | v-and]
+> z-Azawan | [[h-haste | v-cooking] | v-run | v-and]
 >
-> "Azawan cooked popcorn and ate it around the fire."
+> "Azawan cooks hastily and runs."
+
+Each verb takes its own recipient the same way, so one clause can name two:
+
+> `zalahen bahaben vezebel bazawan vamol val.`
+>
+> z-Alahen | [[b-Ahaben | v-tell] | [b-Azawan | v-pay] | v-and]
+>
+> "Alahen talks to Ahaben and pays Azawan."
+
+A hook with its `/b/` is an item word too:
+
+> `zazawan vowogal al bahedem vezebal val.`
+>
+> z-Azawan | [v-walk | [[in | b-locality] | v-sleep] | v-and]
+>
+> "Azawan walks, and sleeps in the village."
+
+Words that every verb shares go in one of two places. **After the join**, a `/d/` object, a recipient `/b/`, or an `/h/` adverb is SHARED: every verb takes it. The join counts as *the verb*, so a recipient right after it is in its [usual place](speech-moves.md#act-word-order). Put a shared recipient before a shared adverb, since a `/b/` right after an `/h/` would complete the `/h/` ([extra nouns](clause.md#extra-nouns)).
+
+> `zazawan vugugel vagadel val dababol.`
+>
+> z-Azawan | [v-cooking | v-eat | v-and | d-popcorn]
+>
+> "Azawan cooks and eats popcorn."
 
 > `zazawan vowogal varahal val hahegem.`
 >
 > z-Azawan | [v-walk | v-run | v-and | h-intensity]
 >
 > "Azawan walks and runs, both intensely."
+
+> `zalahen vezebel vamol val bazawan hahegem.`
+>
+> z-Alahen | [v-tell | v-pay | v-and | b-Azawan | h-intensity]
+>
+> "Alahen talks to Azawan and pays them, both intensely."
+
+**Before the subject**, a word covers every verb. That is the place for scene-setting words (`h_15,30 zazawan vowogal varahal val` *at 15:30 Azawan walks and runs*), and for a shared object when you want the verbs last. English works the same way: a fronted object is shared, and *cooked popcorn and ate* is not.
+
+> `dababol zazawan vugugel vagadel val.`
+>
+> d-popcorn | z-Azawan | [v-cooking | v-eat | v-and]
+>
+> "Popcorn, Azawan cooked and ate."
+
+A verb that has its own object takes no shared object, and a verb that has its own recipient takes no shared recipient. After `dababol vugugel vagadel val`, a shared object would give *cook* two objects, so it is not a sentence. Put the second object in its own verb's item instead (`dababol vugugel dabovul vagadel val`).
+
+A [stance](clause.md#stance-th) `/th/` word and an [intention adverb](clause.md#intention-adverbs) are never item words, wherever they sit: like any stance word, each is about the whole claim. A `/b/` right after an `/h/`, `/ɡ/`, or `/th/` word still completes that word.
+
+With no subject, a statement with a shared object starts with its verbs (`vugugel vagadel val dababol`), which is the usual order for a command. Name the subject when the act could be misheard.
 
 A rank join on verb phrases puts the acts in order of priority, so the earlier act is the one preferred: *would rather walk than run*.
 

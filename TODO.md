@@ -10,6 +10,12 @@ use [skip-cd] for amplify to not deploy.
 -claritish editor
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 
+Where the build time goes
+lint agazan sets the build time: 185s, against about 64s for test, the next slowest step running alongside it. Profiling it showed:
+
+73% (about 123s): building error messages for parses that are expected to fail. The template checker in template-trace.ts fills a template's placeholders with sample words and keeps trying combinations, up to 4,000 of them, until 6 parse. Most attempts fail on purpose, and it ignores why. But on every failure the parser library (Chevrotain, in raiseNoAltException) works out the full list of what it expected next, purely to write an error message. That work alone takes about 115s, the largest single cost.
+
+
 save for near end of limit resets:
 -final exam
 -do rest of ngsl
