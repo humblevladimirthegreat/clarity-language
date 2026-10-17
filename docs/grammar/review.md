@@ -554,14 +554,14 @@ z-Alahen | v-climb | [through | b-window]
 **Rule:** [Extra noun: stacked vowels](hooks.md#extra-noun-intermediate)
 :::
 
-**7.** *Ahaben ought to try cooking, to serve the physical sake* (worth a try). `zahaben vugugal thoyuther.` or `zahaben vugugal thoyuthor.`
+**7.** *Ahaben could try cooking, to see whether it's good for their health* (worth a try). `zahaben vugugal thoyuther baxer.` or `zahaben vugugal thoyuthor baxer.`
 
 ::: details Show answer
-`zahaben vugugal thoyuther.`
+`zahaben vugugal thoyuther baxer.`
 
-z-Ahaben | v-cook | th-physical-ought-trial
+z-Ahaben | v-cook | [th-physical-ought-trial | b-←agent.self]
 
-**`the`** is the *ought*, and **-r** makes it a move worth trying; `thoyuthor` would say Ahaben cooks for the physical sake, right away.
+**`the`** is the *ought*, and **-r** makes it a move worth trying; `thoyuthor` would be a motive, not advice: Ahaben cooks, serving their health right away.
 
 **Rule:** [Prescription](sakes.md#sake-force)
 :::

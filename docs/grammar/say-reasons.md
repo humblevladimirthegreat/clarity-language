@@ -113,11 +113,11 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 >
 > "The reason Azawan left is the rain."
 
-> `zazawan vezebel thanathom.`
+> `zazawan vezebel thanathom thewamazawan.`
 >
-> z-Azawan | v-tell | th-relatedness-motive-any-term
+> z-Azawan | v-tell | th-relatedness-motive-any-term | th-REPORTED-Azawan
 >
-> "Azawan's reason for talking is relatedness." (Azawan justifies it as care for the tie)
+> "I hear Azawan's reason for talking is feeling connected." (someone else's reason takes a [holder](knowing.md#holder))
 
 > `zazawan vowogal hogom barl zalahen vehahel.`
 >
@@ -249,7 +249,7 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 | *circumstance* / *context* | a dependent after `barl` (`huwem barl`, `thavem barl`) | the situation as a clause |
 | *requirement* / *demand* | `thumel` / `thumem` / `thumer` | rule, person, or expectation |
 | *necessary* / *unnecessary* | `thumel` on the act; *more than needed* is the sake bar `thegatham zel` | required by a rule; past what the need asks |
-| *motivation* / *motive* | `zazawan vowogal thanathom.` | does it for relatedness |
+| *motivation* / *motive* | `zamun vowogal thanathom.` | my reason; someone else's motive takes a [holder](knowing.md#holder) |
 | *satisfaction* / *pleasure* | `thozotham.` | pleasure, met |
 | *desire* / *wish* | `zazawan thohum vowogal.` | I want Azawan to walk; someone else's wish takes a [holder](knowing.md#holder) |
 | *regret* (for the harm) | `thanathum behon.` | unmet relatedness, yours |
@@ -259,11 +259,11 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 | *truth* / *to tell the truth* | `thaveham` | revelation |
 | *experience* (first-hand) | `thevom` | MEMORY, remembered as seen |
 
-> `zazawan vowogal thanathom.`
+> `zamun vowogal thanathom.`
 >
-> z-Azawan | v-walk | th-relatedness-motive-any-term
+> z-speaker | v-walk | th-relatedness-motive-any-term
 >
-> "Azawan walks for relatedness." (that is the motive)
+> "I walk to feel connected." (that is my motive)
 
 > `thozotham.`
 >
@@ -282,8 +282,8 @@ English *biased* says a view may be bent by what the holder wants from it. Agaza
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *I may be biased* | `zamun thovum vevegal thegathom.` | I may think this for a stake of my own |
-| *biased* (someone else) | `zazawan vevegal thegathom.` | Azawan thinks it for a stake |
-| *bias* (the noun, *Azawan's bias*) | `zazawan vevegal thegathom.` | the view held for a stake; [point back](dependents.md#which-noun) to it to name it |
+| *biased* (someone else) | `zazawan vevegal thegathom baxer.` | as you see it, Azawan's view serves a stake of their own |
+| *bias* (the noun, *Azawan's bias*) | `zazawan vevegal thegathom baxer.` | the view held for a stake; [point back](dependents.md#which-noun) to it to name it |
 | *I'd like to believe* / *wishful thinking* | `zamun thohum vevegal darl zalahen vowogal.` | I want to think that Alahen walks |
 | *overconfident* | `zamun thunem zel gegehom.` | surer than the clues warrant |
 | *underconfident* | `zazawan thunem zuel gegehom.` | less sure than the clues warrant |

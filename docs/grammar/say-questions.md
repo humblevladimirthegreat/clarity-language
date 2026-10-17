@@ -296,11 +296,11 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 >
 > "Let's walk." (a suggestion)
 
-> `zehon vowogal thanathem.`
+> `zehon vowogal thanathem behon.`
 >
-> z-listener | v-walk | th-relatedness-ought-offered
+> z-listener | v-walk | [th-relatedness-ought-offered | b-listener]
 >
-> "You should walk; I recommend it." (unasked advice)
+> "You should walk; it would help you feel connected." (unasked advice)
 
 > `zazawan vabubam dalahen.`
 >

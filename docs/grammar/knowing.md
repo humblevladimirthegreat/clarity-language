@@ -1256,6 +1256,14 @@ The holder may be the [topic pronoun](pronouns.md#topic-pronoun), whoever the co
 >
 > "Alahen sleeps, against Azawan's wishes, as far as I can tell."
 
+**Someone else's motive** goes the same way. A [motive](sakes.md#sake-preference) word alone names what the act serves for you; it does not say why the actor does it. After a holder, the motive is the holder's, and the seam word says how you know their reason.
+
+> `zazawan vezebel thanathom thunemazawan.`
+>
+> z-Azawan | v-tell | th-relatedness-motive-any-term | th-CLUES-Azawan
+>
+> "I gather Azawan talks to feel connected."
+
 **The seam word is yours; the rest of the clause is the holder's.** The word that carries the name says how **you** know about the holder's view: you inferred it, heard it, guess it, or are imagining it. You claim nothing about whether the holder is right, and nothing about your own view. Everything else in the clause, wherever it sits, belongs to the holder:
 
 | In the clause | With no holder | With a holder |

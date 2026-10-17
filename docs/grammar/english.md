@@ -34,7 +34,7 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 | swap (*a book for a hammer*) | **`hehem`** + `/b/` | [Exchange](relations.md#exchange) |
 | intended get (*works for a money-bag*) | hook **`el`** + `/b/` | [Hooks](hooks.md#extra-noun) |
 | intended outcome (*practices for a race*) | **`hogom`** + `/b/` | [So that](dependents.md#so-that) |
-| sake as reason (*walks for relatedness*) | sake **`tho`** on `/th/` | [Motive](sakes.md#sake-preference) |
+| sake as reason (*I walk to feel connected*) | sake **`tho`** on `/th/` | [Motive](sakes.md#sake-preference) |
 | noun’s purpose (*my gift for relatedness*) | sake **`tho`** on `/ɡ/` | [Motive](sakes.md#sake-preference) |
 | someone's sake (*for Alahen's sake*, *good for Alahen*) | sake word + `/b/` | [Whose stake](sakes.md#whose-stake) |
 | *my* belonging + sake (*my tent serves the physical sake*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |

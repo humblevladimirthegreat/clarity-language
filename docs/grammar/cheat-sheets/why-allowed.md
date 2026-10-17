@@ -107,10 +107,10 @@ The scale runs **-l** most settled, **-m** the default, **-r** most passing. Whe
 | [Serves, lasting](../sakes.md#time-horizon-endings-on-met) | `zebel ganathal.` | *My gift serves relatedness in the long term.* | B |
 | [Detracts](../sakes.md#sake-changeability) | `zugul gulothum.` | *My book detracts from competence (modifiable).* | B |
 | [Costly now, good later](../sakes.md#sake-changeability) | `zugul gozothur gulothal.` | *My book is a slog for now, but builds lasting competence.* | B |
-| [On the event](../sakes.md#word-shape) | `zazawan vezebel thulotham.` | *Azawan talks, and that serves competence.* | B |
+| [On the event](../sakes.md#word-shape) | `zazawan vezebel thulotham.` | *Azawan talks, and that boosts my confidence.* | B |
 | [Not your noun](../sakes.md#personal-possession): `gobum` | `zabezam wahuthur gobum.` | *the gathering, passing harm to autonomy* | B |
-| [Ought](../sakes.md#sake-force) | `zazawan vezebel thanathem.` | *Azawan ought to talk, to serve relatedness (offered).* | I |
-| [Motive](../sakes.md#sake-preference) | `zazawan vezebel thanathom.` | *Azawan talks for relatedness.* | I |
+| [Ought](../sakes.md#sake-force) | `zazawan vezebel thanathem baxer.` | *Azawan ought to talk; it would help them feel connected (offered).* | I |
+| [Motive](../sakes.md#sake-preference) | `zamun vezebel thanathom.` | *I talk to feel connected.* | I |
 | [Whose stake](../sakes.md#whose-stake): the person in `/b/` | `zazawan vezebel thanathom balahen.` | *Azawan talks for Alahen's sake.* | I |
 | [Not your noun, their stake](../sakes.md#whose-stake) | `zebel ganathal balahen.` | *My gift serves Alahen's relatedness.* | I |
 

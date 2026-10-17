@@ -8,10 +8,12 @@
 
 | Drop-in | Stance | Meaning |
 |---------|--------|---------|
-| `thanathem` | prescription | this act ought to be done, for how connected you two are |
-| `thanathom` | motive | this act is being done for how connected you two are |
+| `thanathem` | prescription | this act ought to be done, for my need to feel connected |
+| `thanathom` | motive | this act is being done for my need to feel connected |
 
-Both are built like the thanks and sorry words from Thanks and sorry that say why: `th` + sake + a stance + an ending. There the stance said a need was **met** (`tha`) or **unmet** (`thu`). **Prescription** `the` says the act ought to serve the need, and **motive** `tho` says the need is why the act is happening. So `thoyuthem` is *that's worth doing for your health*, and `thadothom` is *I'm doing it to understand*.
+Both are built like the thanks and sorry words from Thanks and sorry that say why: `th` + sake + a stance + an ending. There the stance said a need was **met** (`tha`) or **unmet** (`thu`). **Prescription** `the` says the act ought to serve the need, and **motive** `tho` says the need is why the act is happening. So `thoyuthem` is *that's worth doing for my health*, and `thadothom` is *I'm doing it to understand*.
+
+The need is always **yours**, the speaker's, even when someone else does the act. *Open the window `thoyuthem`* asks for it for your own health, not theirs. These drop-ins never say why someone else acts: their reasons are in their mind, not in your sentence.
 
 The drop-in goes where an English adverb or tag would go, and it covers the clause it sits in.
 
@@ -40,19 +42,19 @@ One vowel apart, and four different jobs. `thanatham` and `thanathum` are the th
 
 ## Examples {#examples}
 
-> Take the window seat `thozothem`.  
+> Turn the music down `thozothem`.  
 > Put the deadline in writing `thadothel`.  
 > I walked instead of driving `thoyuthor`.  
 > I'm keeping Thursdays free `thanathol`.  
 > Try swapping the agenda order `thamether`.
 
-*Put the deadline in writing `thadothel`* is advice they asked for, and it says what the writing is for: so everyone understands the same date. *I walked instead of driving `thoyuthor`* gives a reason with no *should* in it, and the **-r** says the payoff was today's walk, not a fitness plan. *Try swapping the agenda order `thamether`* offers the move as a trial, aimed at whether the meeting feels worth having, which is easier to turn down than *you should*.
+*Put the deadline in writing `thadothel`* is advice they asked for, and it says what the writing is for: so you understand the date the same way they do. *I walked instead of driving `thoyuthor`* gives a reason with no *should* in it, and the **-r** says the payoff was today's walk, not a fitness plan. *Try swapping the agenda order `thamether`* offers the move as a trial, aimed at whether the meeting feels worth your time, which is easier to turn down than *you should*.
 
 ## Practice {#practice}
 
 Add the drop-in that fits the note.
 
-**1.** *Call your brother back.* (an ought; the two of you staying close, and he's asked you before to nudge him about this)
+**1.** *Call your brother back.* (an ought; you want the family close, and the listener has asked you before to nudge them about this)
 
 ::: details Show answer
 Call your brother back `thanathel`.
@@ -64,7 +66,7 @@ Call your brother back `thanathel`.
 I took the long way home `thozothor`.
 :::
 
-**3.** *Move the one-on-one to the morning.* (an ought; worth trying, to see whether it helps them do the work well)
+**3.** *Move the one-on-one to the morning.* (an ought; worth trying, to see whether it helps you do the work well)
 
 ::: details Show answer
 Move the one-on-one to the morning `thulother`.

@@ -329,17 +329,17 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 >
 > "Azawan must walk." (the rules say so)
 
-> `zazawan vezebel thanathem.`
+> `zazawan vezebel thanathem baxer.`
 >
-> z-Azawan | v-tell | th-relatedness-ought-offered
+> z-Azawan | v-tell | [th-relatedness-ought-offered | b-←agent.self]
 >
-> "Azawan should tell, to serve relatedness." (offered)
+> "Azawan should tell; it would help them feel connected." (offered)
 
-> `zazawan thanathem vezebel vul.`
+> `zazawan thanathem baxer vezebel vul.`
 >
-> z-Azawan | th-relatedness-ought-offered | [v-tell | v-not]
+> z-Azawan | [th-relatedness-ought-offered | b-←agent.self] | [v-tell | v-not]
 >
-> "Azawan shouldn't tell, to serve relatedness." (offered)
+> "Azawan shouldn't tell; it would hurt their sense of connection." (offered)
 
 For *should have*, date the ought with [stance as-of](relations.md#stance-as-of) **`thuhum`**; **`thuhum brul`** is *back then*. The ought then reads from that past moment. English also implies the act did not happen; if that matters, say it in its own sentence.
 

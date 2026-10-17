@@ -146,7 +146,7 @@ On `/th/`, the sake word says how the event itself stands toward the sake:
 >
 > z-Azawan | v-tell | th-competence-met-any-term
 >
-> "Azawan talks, and that serves competence."
+> "Azawan talks, and that boosts my confidence."
 
 Without mid-word **`th`**, the root keeps its everyday sense: `gahul` is *ballot-like*, and `hozol` is the adverb from *strawberry*.
 
@@ -248,7 +248,7 @@ z-wind | [w-physical-unmet-passing | g-stimulus]
 z-thunderstorm | [w-pleasure-unmet-modifiable | g-stimulus]
 :::
 
-**5.** *Azawan cooks, and that serves pleasure right now.*
+**5.** *Azawan cooks, and I enjoy it right now.*
 
 ::: details Show answer
 `zazawan vugugal thozothar.`
@@ -295,7 +295,7 @@ z-cookie | g-pleasure-met-immediate
 ::: details Show answer
 z-Azawan | v-sing | th-competence-unmet-modifiable
 
-*Azawan sings, and that detracts from competence.* (modifiable)
+*Azawan sings, and that knocks my confidence.* (modifiable)
 :::
 
 **5.** `zededul gozothur goyuthal.`
@@ -326,7 +326,7 @@ z-knife | g-competence-unmet-modifiable
 **`thu`** detracts from the sake; **`tha`** serves it.
 :::
 
-**2.** *Ahaben sings, and that serves pleasure.* `zahaben vezehel thozotham.` or `zahaben gozotham vezehel.`
+**2.** *Ahaben sings, and I enjoy it.* `zahaben vezehel thozotham.` or `zahaben gozotham vezehel.`
 
 ::: details Show answer
 `zahaben vezehel thozotham.`
@@ -443,7 +443,7 @@ Raw feeling (contacting a sensation without judgment) may go unlabeled. To name 
 ### Prescription (`the`): ought this act for this sake
 <a id="sake-force"></a>
 
-When English puts *should* / *ought to* on **doing** something for a named sake (*Ahaben ought to sing to serve the physical sake*), put a `/th/` word on the clause: sake root, mid-word **`th`**, **`e`**, then an ending. The clause's verb names the act that ought to count toward the sake. The sentence then says the act *ought* to happen; it does not report that the act is already happening.
+When English puts *should* / *ought to* on **doing** something for a named sake (*Ahaben ought to sing; it's good for their health*), put a `/th/` word on the clause: sake root, mid-word **`th`**, **`e`**, then an ending. The clause's verb names the act that ought to count toward the sake. The sentence then says the act *ought* to happen; it does not report that the act is already happening.
 
 The ending says why you think the move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the sake. Use **-r** for a trial: the move is worth trying to see whether it serves the sake, not a settled recommendation. These endings describe why the move is offered and what it aims at, not whether it succeeds. How firmly you put the act on the listener is a separate choice, made by the speech-act word on `/y/` (**`yel`** / **`yem`**, **`yal`** / **`yam`**). If none of the three reasons applies, drop **`the`**.
 
@@ -451,7 +451,7 @@ The ending says why you think the move is welcome. Use **-l** when the person in
 
 **Compare with:** a [forecast](knowing.md#forecast) (a channel plus `bral`) when English *should* is really a prediction about what will pay off the sake, not a prescribed *ought*. To report that the act is happening, drop **`the`** and say the verb alone.
 
-**Compare with:** [motive](#sake-preference) **`tho`** plus a [request](speech-moves.md#speech-act) **`yem`** when the speaker wants **their own** sake served. **`the`** is advice about the sake named on this word.
+**Compare with:** to ask someone to act for **your** sake, make it a [request](speech-moves.md#speech-act) (**`yem`**) with [motive](#sake-preference) **`tho`**. **`the`** is advice.
 
 <!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Cue |
@@ -460,42 +460,46 @@ The ending says why you think the move is welcome. Use **-l** when the person in
 | `…them` | an unsolicited offer meant to serve the sake | *offered* | **-m** ≈ open offer |
 | `…ther` | a move worth trying, to see whether it serves the sake | *worth a try* | **-r** ≈ right now (a trial run) |
 
-> `zazawan vezebel thanathem.`
->
-> z-Azawan | v-tell | th-relatedness-ought-offered
->
-> "Azawan ought to talk, to serve relatedness." (unasked advice)
+A sake word with no `/b/` is about **your** sake, so advice for the other person's own good names them in `/b/` right after the sake word. In the same sentence, that is the [themself](pronouns.md#themself) pointer **`baxer`**. The `/b/` says whose stake the act serves, not why they would do it.
 
-> `zahaben vezehel thoyuthel.`
+> `zazawan vezebel thanathem baxer.`
 >
-> z-Ahaben | v-sing | th-physical-ought-invited
+> z-Azawan | v-tell | [th-relatedness-ought-offered | b-←agent.self]
 >
-> "Ahaben ought to sing, to serve the physical sake." (Ahaben asked for advice)
+> "Azawan ought to talk; it would help them feel connected." (unasked advice)
 
-> `zalahen vabayal thanather.`
+> `zahaben vezehel thoyuthel baxer.`
 >
-> z-Alahen | v-bow | th-relatedness-ought-trial
+> z-Ahaben | v-sing | [th-physical-ought-invited | b-←agent.self]
 >
-> "Alahen ought to try bowing, to see whether it serves relatedness."
+> "Ahaben ought to sing; it's good for their health." (Ahaben asked for advice)
+
+> `zalahen vabayal thanather baxer.`
+>
+> z-Alahen | v-bow | [th-relatedness-ought-trial | b-←agent.self]
+>
+> "Alahen could try bowing, to see whether it helps them feel connected."
 
 A move meant to **prevent** harm to the sake is a *so that … not* dependent ([so that](dependents.md#so-that)): **`hogom`** + **`burl`**, then the outcome to keep off.
 
-> `zalahen vabayal thanathem hogom burl zazawan vedabal.`
+> `zalahen vabayal thanathem baxer hogom burl zazawan vedabal.`
 >
-> z-Alahen | v-bow | th-relatedness-ought-offered | [h-so-that | b-lest-clause] | z-Azawan | v-departure
+> z-Alahen | v-bow | [th-relatedness-ought-offered | b-←agent.self] | [h-so-that | b-lest-clause] | z-Azawan | v-departure
 >
-> "Alahen ought to bow for relatedness, so that Azawan does not leave."
+> "Alahen ought to bow to stay connected, so that Azawan does not leave."
 
 ### Motive (`tho`): time horizon
 <a id="sake-preference"></a>
 
 English *doing this for …* and *for the sake of …* name a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the sake root, mid-word **`th`**, **`o`**, then an ending. That ending is the **time horizon**, on the same settled-to-passing scale as [met](#time-horizon-endings-on-met): whether the act serves the sake over time or right away. If you do not know, use **-m**. To say this is the usual reason, add **`hual`** after the motive word (**`…thom`** plus **`hual`**).
 
-> `zazawan vezebel thanathom.`
+> `zamun vezebel thanathom.`
 >
-> z-Azawan | v-tell | th-relatedness-motive-any-term
+> z-speaker | v-tell | th-relatedness-motive-any-term
 >
-> "Azawan talks for relatedness."
+> "I talk to feel connected."
+
+The reason is yours. On someone else's act, a motive word still names what the act serves **for you**: `zazawan vezebel thanathom` is *Azawan talks, and to me it is about feeling connected*. It does not say why Azawan talks; their reasons are in their mind, and Agazan has no way to say a reason belongs to whoever is acting.
 
 **Not the same job as:** prescription **`the`**, which says the act *ought* to serve this sake. **`tho`** describes why the act is happening: *doing it for this sake*.
 
@@ -552,7 +556,7 @@ Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met a
 | `gl-` + sake word | the same adjective before the **belonging** | `glanathal zebel` |
 | `th…tha…` on the clause | the event serves the sake | *tells: competence is met* (`thulotha…`) |
 | `th…the…` on the clause | prescription: the act ought to serve the sake | *ought … for this sake* (`thanathe…`); ending = [invited / offered / trial](#sake-force) |
-| `th…tho…` on the clause | motive | *Azawan … (for relatedness)* (`thanatho…`) |
+| `th…tho…` on the clause | motive | *I talk (to feel connected)* (`thanatho…`) |
 | `/w/` before a sake `/ɡ/` | extra detail on that adjective | *very relatedness-serving* |
 
 Prescription **`the`** goes on `/th/` only: it is about an act, and a noun is not an act. For what a noun is **for**, use **`tho`**. On **`the`**, use **-l** for an invitation, **-m** for an offer, and **-r** for a trial. On **`thu`** and **`tho`**, prefer **-m** when you cannot tell which ending fits.
@@ -561,15 +565,17 @@ For several sakes, write several `/ɡ/` or `/th/` words (`gulothal ganathal`), o
 
 A `/w/` word before a sake word on `/ɡ/` grades that adjective. A `/w/` sake word immediately before **`gobum`** is the sake itself.
 
-> `zazawan vezebel thulothal thanathom.`
+> `zamun vezebel thulothal thanathom.`
 >
-> z-Azawan | v-tell | th-competence-met-lasting | th-relatedness-motive-any-term
+> z-speaker | v-tell | th-competence-met-lasting | th-relatedness-motive-any-term
 >
-> "Azawan talks for relatedness, and it builds lasting competence too."
+> "I talk to feel connected, and it builds my confidence for the long run."
 
 ### Whose stake {#whose-stake}
 
 A sake word with no `/b/` is about **your** sake. To say it is someone else's, put that person in `/b/` right after the sake word. This works on every stance and every placement: met, unmet and motive on a noun, and met, unmet, prescription and motive on the clause.
+
+This holds on someone else's act too. `zazawan vezebel thanatham` is *Azawan talks, and that helps me feel connected*: what the act serves is your stake, as you see it. A `/b/` names whose stake the act serves, not whose reason it is.
 
 > `zazawan vezebel thanathom balahen.`
 >
@@ -978,6 +984,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
+| *speaker* | `amun` |
 | *listener* | `ehon` |
 | *competence* | `ulol` |
 | *physical* | `oyul` |
@@ -989,20 +996,20 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan ought to pray to serve relatedness.* (unasked advice)
+**1.** *Azawan ought to pray; it would help them feel connected.* (unasked advice)
 
 ::: details Show answer
-`zazawan vebevol thanathem.`
+`zazawan vebevol thanathem baxer.`
 
-z-Azawan | v-pray | th-relatedness-ought-offered
+z-Azawan | v-pray | [th-relatedness-ought-offered | b-←agent.self]
 :::
 
-**2.** *Alahen kneels for an immediate sense of purpose.*
+**2.** *I kneel for a quick sense of purpose.*
 
 ::: details Show answer
-`zalahen venehal thamethor.`
+`zamun venehal thamethor.`
 
-z-Alahen | v-kneel | th-purpose-motive-immediate
+z-speaker | v-kneel | th-purpose-motive-immediate
 :::
 
 **3.** *Ahaben prays for Alahen's relatedness in the long term.*
@@ -1089,14 +1096,14 @@ z-Alahen | v-sleep | [contrary-to | th-FORBID-disallowed]
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azawan kneels for relatedness.* (why Azawan is doing it) `zazawan venehal thanathom.` or `zazawan venehal thanathem.`
+**1.** *I kneel to feel connected.* (my reason for kneeling) `zamun venehal thanathom.` or `zamun venehal thanathem.`
 
 ::: details Show answer
-`zazawan venehal thanathom.`
+`zamun venehal thanathom.`
 
-z-Azawan | v-kneel | th-relatedness-motive-any-term
+z-speaker | v-kneel | th-relatedness-motive-any-term
 
-**`tho`** describes the motive; **`the`** says Azawan *ought* to kneel.
+**`tho`** gives your reason; **`the`** would say you *ought* to kneel.
 :::
 
 **2.** *Alahen is allowed to sleep.* (the rules allow it) `zalahen vezebal thegol.` or `zalahen vezebal thegom.`
