@@ -94,6 +94,68 @@ ASL transfer is **not** a goal. STS and ASL share some shapes on **different** l
 4. **Icelandic Þ for th** — Iceland's **þ** is the voiceless *th* of *thin*; the Agazan **th** (*tho*, cue *though*) may be the voiced one, so the match is by letter, not sound. SignWiki states no licence for the still, so link it; do not copy it. The ISL source is only a still plus a video on the [Árni Magnússon Institute page](https://ait.arnastofnun.is/grein.php?id=406); check the exact thumb/little-finger contact before drawing the chart. No other manual alphabet searched (ASL, Danish, Norwegian, Faroese, Irish, Greek) had a documented single **th** sign.
 5. **Non-dominant / left-handed** — mirror; pick one convention in the chart.
 
+## Alternative: number-based alphabet (prototype only)
+
+**Status:** not adopted; worth a prototype and a speed test. The borrowed inventory above stays the default.
+
+**Idea:** sign the letter's **position in the alphabet** with one-hand number signs, so one rule replaces 18 borrowed shapes. [Letter names](../grammar/phonology.md#letter-names) already list the alphabet in order: the ten [digit-syllable](../grammar/phonology.md#digit-letters) consonants come first (**w d r m v g l h n z** = 1 to 9, then 0), then **b y th x**, then the vowels **u a o e**.
+
+Four banks, each signed with a plain **finger count** (extended fingers, no thumb-to-finger shapes):
+
+| Bank | Letters | Finger count |
+|------|---------|--------------|
+| **1** | **w d r m v** | 1 to 5 |
+| **2** | **g l h n z** | 1 to 5 (the digits 6 to 9, then 0) |
+| **3** | **b y th x** | 1 to 4 |
+| **4** | **u a o e** | 1 to 4 |
+
+So the whole alphabet needs only the shapes for 1 to 5. The thumb-touching 6 to 9 shapes are never used for letters.
+
+**Markers (open):**
+- **Bank:** four states from two position-independent features, so the sign still reads when held above the head across a crowd. Orientation is defined relative to the room (vertical or horizontal), not the forearm. Not an extra finger, because 5 already uses every finger. Position (height) is not used.
+
+  | | Fingers up | Fingers sideways |
+  |---|---|---|
+  | **Straight** | bank 1 (**w d r m v**) | bank 2 (**g l h n z**) |
+  | **Hooked** | bank 3 (**b y th x**) | bank 4 (**u a o e**) |
+
+  - **Orientation:** up vs sideways, tips toward the signer's non-dominant side (mirrored for left-handed signers, see open question 5).
+  - **Finger shape:** straight vs hooked (claw). The **thumb is the fifth finger** and is never hooked. Only banks 3 and 4 are hooked, and they need counts 1 to 4, so a hooked 5 (which could read as a fist) is never signed.
+  - The two features carry meaning: straight vs hooked separates the digit letters from the other eight, and up vs sideways marks which half of each pair.
+  - Weak point to test: hooked 1 may read as a plain pointing finger, and hooked 2 and 3 are the most likely to be misread at distance.
+  - Fallbacks if hooked reads badly: finger spread (together vs spread), or a third orientation (diagonal) for one pair. Spread is undefined for a count of 1, so banks using it would start their counts at 2.
+- **Numeral vs letter:** numerals reuse banks 1 and 2 by context (1 to 5 upright, 6 to 0 sideways, both straight), so the shape for 3 is both the numeral and **r**. Context decides which: whether the signer is spelling a word or giving a number. Spoken Agazan separates the two by form (letter name **ro** vs digit syllable **re**), so this is a deliberate loss in the manual channel. This also settles open question 3 above (digit-hand overlap with **we / da / …**) by design.
+- **Vowels:** bank 4 holds all four. The opposite-vowel pairs **a↔u** and **o↔e** (see [letter names](../grammar/phonology.md#digit-letters)) could be a thumb flip between pair members; untested.
+
+**Count set:** pick one convention and say so, since index-first and thumb-first counting differ by region. Only 1 to 5 are needed for letters.
+
+**Why try it:**
+- One rule plus ten numbers learners need anyway, not 18 shapes from three source languages. No ASL false-friend notes in the chart.
+- Still one-handed static holds, no path.
+
+**Risks:**
+- **Reading speed.** Latin-glyph signs look like letters. Finger counts are easy to read, but a letter now needs both a count and a bank state, and telling four bank states apart at distance is the weak point. Test by having several people spell real words.
+- **Count convention.** Index-first and thumb-first counting differ by region; letters need only 1 to 5.
+- **No external source.** The chart would be drawn in-house, unlike the borrowed inventory with linked official images.
+- **Memory.** Learners must know letter order. The phonology table already teaches it.
+
+### Tactile use (hand-over-hand)
+
+The channel can be received by touch. The receiver rests a hand lightly over the signer's signing hand and feels the shape, as Deafblind users already receive fingerspelling. No new signs are needed.
+
+- **Finger count:** felt directly. The thumb stays the fifth finger.
+- **Orientation (up vs sideways):** felt as the direction of the fingers under the receiver's palm. With the receiver's hand as the reference, "up" and "sideways" are defined by the signer's hand, so the signer must hold the room-relative orientation steadily.
+- **Straight vs hooked:** felt as the curl of the fingers; hooked fingers should be easy to feel.
+- **Word edge:** the signer lifts the hand briefly, since a visual drop or hold is not available to the receiver.
+
+**Why hand-over-hand:** it reuses the whole visual inventory, so both channels share one chart.
+
+**Tap-on-body (noted, not specified):** tapping on the receiver's arm or hand would map flat pads vs fingertips to straight vs hooked, and fingers along vs across the receiver's arm to up vs sideways. It needs a fixed reference zone on the receiver (palm or back of hand, not the forearm, whose touch resolution is too coarse to tell 2 from 3 fingers apart). Treat it as a separate design if hand-over-hand proves insufficient.
+
+**Open:** test whether four bank states stay distinguishable by touch, whether the receiver's resting hand blurs the hooked vs straight difference, and whether the lift-off word edge is clear in a fast word.
+
+**Prototype test:** spell 20 real Agazan words with both inventories, measure recognition accuracy and time per word at conversation distance, and compare.
+
 ## Absorb sketch
 
 Not a core-grammar morph. If accepted: a short **optional** section (likely [phonology.md](../grammar/phonology.md) Advanced, or a sibling `docs/grammar/` page linked from phonology) with the 18-sign chart, the three source citations (STS, Chinese, Icelandic), and “spelling = letter names.” Grammar pages stay free of proposal links until then.
