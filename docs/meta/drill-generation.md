@@ -392,7 +392,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **DECISION** | `intention.md` Intermediate |
 | Emotion compose | `sakes.md` Intermediate |
 | Numbered alternatives | `numbers-applied.md` Intermediate |
-| PLAN bar (`hamam zel`) | `comparatives.md` Intermediate |
+| PLAN bar (`thamam zel`) | `comparatives.md` Intermediate |
 | Sake bars (`thegatham zoel`) | `sakes.md` Intermediate |
 | Channel, FORMER, ABIL, REQUIRE, attitude bars | `comparatives.md` Advanced |
 | `ROOT l NUM` derivation | `numeric-derivation.md` Advanced |

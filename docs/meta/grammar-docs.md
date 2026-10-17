@@ -387,7 +387,7 @@ Learner tables under `docs/grammar/` almost never publish a **bare stem** (`odog
 | Publish | Example |
 |---------|---------|
 | Citation of this row’s sense | `odogal` *dog*; `agawam` *volume*; `azawan` *Azawan*; `odul` *therefore* |
-| Inflected form the row teaches | `thovum`, `hamam`, `xodum`, `zaxavadal`; drill-bank `vahahal` *see* |
+| Inflected form the row teaches | `thovum`, `thamam`, `xodum`, `zaxavadal`; drill-bank `vahahal` *see* |
 | Special with its default ending | citation `amun` / `ehon` / `ahan` / `unan`; in-clause `zamun` when the slot is the point |
 
 Do **not** call `odoga` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/th/` (or `/x/`) word, not the stem (`ahul` or `thahum`, not `ahu`; `ovul` or `thovum`, not `ovu`). Combinability (`tha` / `the`, hold endings) belongs in a **pattern** column (`…thal`) or in extra inflected rows, not by stripping the ending.

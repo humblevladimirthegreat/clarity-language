@@ -223,7 +223,9 @@ English *will* mixes plan and prediction, and *I want to* can sound like a promi
 
 Agazan splits them: [want](intention.md#want) for what you wish for, without meaning to do it yet; [PLAN](intention.md#plan-predict) for what you mean to do; [DECISION](intention.md#decision) for how revisable a pick is; and a [forecast](knowing.md#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `bral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
 
-Splitting these helps you hold a want without owing it to anyone, avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and keep a revisable pick from sounding locked forever.
+All three are in a mind, so with nothing else marked they are yours; someone else's want, plan, or decision takes a [holder](knowing.md#holder) that says how you know it.
+
+Splitting these helps you hold a want without owing it to anyone, avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and keep a revisable pick from sounding locked forever. Marking how you know someone else's intention keeps a guess about what they mean to do from passing as fact.
 
 **Compare with:** English *will*. Use PLAN for intention, an evidence word plus `bral` for a forecast, and DECISION for how firm the pick is.
 
@@ -247,7 +249,7 @@ In English: [Claritish: Decisions and tries](claritish/decisions-and-tries.md).
 
 A plan made in English often names only the first choice, and either stays vague or has to be complete before you act.
 
-A [fallback](intention.md#fallback) joins an attempt to its backup with `xon`: *try A; failing that, B*. The backup counts only if the attempt before it fails. The [PLAN](intention.md#plan-predict) ending says how much of the plan is drawn: backups included, steps filled in, or only a direction. No level is better, and a sketch is often all a small or early plan needs.
+A [fallback](intention.md#fallback) joins an attempt to its backup with `xon`: *try A; failing that, B*. The backup counts only if the attempt before it fails. The [PLAN](intention.md#plan-predict) ending says how much of the plan is drawn: backups included, steps filled in, or only a direction. No level is better, and a sketch is often all a small or early plan needs; for a plan that matters, the atlas ending is a prompt to ask what could go wrong.
 
 Naming the backup before you start helps a setback turn into the next step instead of a dead end, and matching plan detail to the task keeps planning from becoming a reason not to start.
 

@@ -259,10 +259,10 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Later than planned](../comparatives.md#bars) | `zazawan hamam zel bral vevahal.` | *Azawan arrives later than planned.* | I |
-| [Stance after the fence](../comparatives.md#bars) | `zazawan zel bral vevahal hamam.` | *Azawan plans to arrive last.* | I |
-| [More than planned, on an object](../comparatives.md#bars) | `zazawan dozolx hamam del gral vagadel.` | *Azawan eats more strawberries than planned.* | I |
-| [Often, on a recipient](../comparatives.md#bars) | `zazawan vezebel balahen hamam bel hral.` | *Azawan tells Alahen more often than planned.* | I |
+| [Later than planned](../comparatives.md#bars) | `zazawan thamam zel bral vevahal.` | *Azawan arrives later than planned.* | I |
+| [Stance after the fence](../comparatives.md#bars) | `zazawan zel bral vevahal thamam.` | *I plan for Azawan to arrive last.* | I |
+| [More than planned, on an object](../comparatives.md#bars) | `zazawan dozolx thamam del gral vagadel.` | *Azawan eats more strawberries than planned.* | I |
+| [Often, on a recipient](../comparatives.md#bars) | `zazawan vezebel balahen thamam bel hral.` | *Azawan tells Alahen more often than planned.* | I |
 | [Than usual](../comparatives.md#stance-bars) | `zazawan thobam zel gezebul.` | *Azawan is sleepier than usual.* | A |
 | [Than I remember](../comparatives.md#stance-bars) | `zazawan thevom zel gelavam.` | *Azawan is bigger than I remember.* | A |
 | [Than advertised](../comparatives.md#stance-bars) | `zugul thewam zuel gagazam.` | *The book is less clear than advertised.* | A |
@@ -288,7 +288,7 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [INTUITION `thahom`](../comparatives.md#stance-bars) | your gut expectation | *than I expected* | A |
 | [FORMER `henom`](../comparatives.md#stance-bars) | how it used to be | *than it used to be* / *increasingly* | A |
 | [NOTIONAL `thavom`](../comparatives.md#stance-bars) | the imagined case | *than imagined* / *than in theory* | A |
-| [PLAN `hamam`](../comparatives.md#stance-bars) | the plan or the schedule | *than planned* / *than scheduled* | A |
+| [PLAN `thamam`](../comparatives.md#stance-bars) | the plan or the schedule | *than planned* / *than scheduled* | A |
 | [WANT `thohul` / `thohum` / `thohur`](../comparatives.md#stance-bars) | the level wanted | *than wanted* / *than I wanted* | A |
 | [ABIL `huboxal`](../comparatives.md#stance-bars) | what can be done | *as … as possible* | A |
 | [REQUIRE `thumel` / `thumem` / `thumer`](../comparatives.md#stance-bars) | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* | A |
@@ -327,7 +327,7 @@ English *many* and *often* rank against an unstated baseline. Agazan names the b
 | `zoel` *as … as* ([a tie](../comparatives.md#equatives)) | | `zuel` *not as … as* ([below](../comparatives.md#comparative-arity)) |
 | `zel gamadam` *no most* ([standalone](../comparatives.md#comparative-arity)) | | `zer gamadam` *whatever ranks highest* ([someone is on top](../comparatives.md#comparative-arity)) |
 | `zalahen zazawan zel hahegem vowogal` *more intensely than* ([ranks the manner](../comparatives.md#manner-scale)) | | `gahegem` *more intense* ([a quality of the people](../comparatives.md#manner-scale)) |
-| `zazawan hamam zel bral vevahal` *later than planned* ([a bar before the join](../comparatives.md#bars)) | | `zazawan zel bral vevahal hamam` *plans to be last* ([a stance after](../comparatives.md#bars)) |
+| `zazawan thamam zel bral vevahal` *later than planned* ([a bar before the join](../comparatives.md#bars)) | | `zazawan zel bral vevahal thamam` *I plan for them to be last* ([a stance after](../comparatives.md#bars)) |
 | `zaxedehol` *someone who teaches* ([any one who does it](../roles.md#role-compounds)) | | `zaxedehothel` *a teacher* ([the usual role](../roles.md#usual-role)) |
 | `zaxedehor` *the one teaching* ([this instance](../roles.md#role-compounds)) | | `gaxedehol` *is one who teaches* ([a label](../roles.md#saying-someone-is-a-teacher)) |
 | `daexaradal` *a writing tool* ([a compound](../roles.md#instrument)) | | `ael` *using* ([a hook on the clause](../hooks.md#extra-noun)) |

@@ -23,10 +23,10 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 | Word | **-l** lasting | **-m** default | **-r** right now |
 |------|----------------|----------------|------------------|
 | [could be](could-be.md) | `thovul` and I'll find out | `thovum` could be | `thovur` who knows |
-| [decided](decisions-and-tries.md) | `hehul` for good | `hehum` can still change | `hehur` for now |
+| [decided](decisions-and-tries.md) | `thehul` for good | `thehum` can still change | `thehur` for now |
 | [tries](decisions-and-tries.md) | `hudul` committed to trying | `hudum` tries | `hudur` a trial run |
 | [wants](wants-and-plans.md) | `thohul` for a long time | `thohum` wants to | `thohur` feels like it now |
-| [planned](wants-and-plans.md) | `hamal` backups ready | `hamam` steps laid out | `hamar` only the direction |
+| [planned](wants-and-plans.md) | `thamal` backups ready | `thamam` steps laid out | `thamar` only the direction |
 
 ## [How you know](how-you-know.md) {#how-you-know}
 

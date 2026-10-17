@@ -44,8 +44,8 @@ describe("morphGlossLine — clause joins go between clauses", () => {
   });
   it("glosses a resume of a resume as the original referent", () => {
     expectLine(
-      "zazawan hamal vowogal xon zazawar vezehel xon zazawar vezebal.",
-      "[z-Azawan | h-plan-atlas | v-walk | x-or-else | z-←Azawan | v-sing | x-or-else | z-←Azawan | v-sleep]",
+      "zazawan thamal vowogal xon zazawar vezehel xon zazawar vezebal.",
+      "[z-Azawan | th-plan-atlas | v-walk | x-or-else | z-←Azawan | v-sing | x-or-else | z-←Azawan | v-sleep]",
     );
   });
   it("glosses the sequence fallback after an attempt", () => {
@@ -196,7 +196,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("thodom", "th-LIVE");
     expectLine("hamom", "h-RESIDUE");
     expectLine("henom", "h-FORMER");
-    expectLine("hamar", "h-plan-sketch");
+    expectLine("thamar", "th-plan-sketch");
     expectLine("gugol", "g-SAME");
   });
 
@@ -267,8 +267,8 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("inclusive we", () => {
     expectLine(
-      "yael xodum zahan hamar vowogal vul.",
-      "y-yes | x-therefore | z-interlocutors | h-plan-sketch | [v-walk | v-not]",
+      "yael xodum zahan thamar vowogal vul.",
+      "y-yes | x-therefore | z-interlocutors | th-plan-sketch | [v-walk | v-not]",
     );
   });
 

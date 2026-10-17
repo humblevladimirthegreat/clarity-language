@@ -390,13 +390,13 @@ English *will* can make a forecast: a claim that something will happen. Agazan h
 >
 > "I have a faint hunch Alahen will leave."
 
-A schedule is not a forecast: it is someone's [PLAN](intention.md#plan-predict), and the channel says how you know about it.
+A schedule is not a forecast: it is someone's [PLAN](intention.md#plan-predict). Someone else's plan is their view, so it goes through a [holder](#holder), and the holder's channel says how you know about it.
 
-> `zazawan hamam vezebel thewal bagadal.`
+> `zazawan thewalazawan bagadal thamam vezebel.`
 >
-> z-Azawan | h-plan-itinerary | v-tell | [th-REPORTED.strong | b-calendar]
+> z-Azawan | [th-REPORTED.strong-Azawan | b-calendar] | th-plan-itinerary | v-tell
 >
-> "Azawan is scheduled to speak, going by the official calendar."
+> "Going by the official calendar, Azawan plans to speak."
 
 <a id="forecast-question"></a>
 
@@ -410,7 +410,7 @@ In a [question](questions.md#question), the channel asks what the **listener's**
 
 On a [feeling](sakes.md#emotion-compose) (a sake word with a locus and a motion ending, before **`gobum`**), the channel and offset date the **stimulus**. On a [feeling with no object](sakes.md#feeling-no-object), they date a stimulus you leave unnamed. The feeling itself stays now; to date a stance, use [stance as-of](relations.md#stance-as-of).
 
-**Compare with:** [PLAN](intention.md#plan-predict) (`hamam`) says what someone **intends** to do. It is an [intention adverb](clause.md#intention-adverbs) on `/h/`, something the doer says and acts on openly, so it needs no channel. A forecast is a claim about the world. To say **how much** later (*in three hours*), replace `bral` with a measured [dated channel](#dated-channel). *Could be* with nothing behind it is [MAY](#may), not a forecast.
+**Compare with:** [PLAN](intention.md#plan-predict) (`thamam`) says what you **intend** to do. Your own intention needs no channel; someone else's goes through a [holder](#holder). A forecast is a claim about the world. To say **how much** later (*in three hours*), replace `bral` with a measured [dated channel](#dated-channel). *Could be* with nothing behind it is [MAY](#may), not a forecast.
 
 ### Evidence clause (`barl`) {#evidence-clause}
 
@@ -803,7 +803,7 @@ English *sleepier than usual* and *bigger than it looks* compare against an expe
 | FORMER `henom` | how it used to be | *than it used to be* |
 | NOTIONAL `thavom` | the imagined case | *than imagined* |
 
-MAY and MIRATIVE give no expected value to compare against, so neither can be a bar. *Than scheduled* ranks against a plan: that is the [PLAN bar](comparatives.md#bars) (`hamam`).
+MAY and MIRATIVE give no expected value to compare against, so neither can be a bar. *Than scheduled* ranks against a plan: that is the [PLAN bar](comparatives.md#bars) (`thamam`).
 
 ### Channels after `uem` {#channel-frame}
 
@@ -830,7 +830,7 @@ English *contrary to what I was told* and *against my gut* say the event went ag
 | REPORTED `thewam` | what was said or written | *contrary to what I was told* / *contrary to legend* |
 | INTUITION `thahom` | your gut expectation | *against my gut* |
 
-*Off schedule* goes against a plan: **`uem hamam`** ([contrary to a stance](sakes.md#contrary-to-stance)). MIRATIVE already says the claim ran against what you expected, so it does not follow **`uem`**. MAY, NOTIONAL, RESIDUE, and FORMER do not either: none of them is something the event could go against.
+*Off schedule* goes against a plan: **`uem thamam`** ([contrary to a stance](sakes.md#contrary-to-stance)). MIRATIVE already says the claim ran against what you expected, so it does not follow **`uem`**. MAY, NOTIONAL, RESIDUE, and FORMER do not either: none of them is something the event could go against.
 
 **Compare with:** `zazawan thezum vowogal.` says the walking surprised you. `zazawan vowogal uem thahom.` says your gut expected otherwise, whether or not the news surprised you.
 
@@ -1017,7 +1017,7 @@ The scream is your evidence, so it goes after CLUES; **`thavem`** would make the
 
 The `/th/` words on this page (MAY, the channels, NOTIONAL) and the `/h/` words RESIDUE and FORMER cover the whole sentence. When one applies only to a single `/ɡ/` adjective, put the same word on `/w/` right before that adjective instead.
 
-Only words about **how you know** or **how things stand** move to `/w/` this way: the ones above, [CAUSE](causation.md#cause), the [*already* / *still* words](#phasal), and [*can* with `ubo`](intention.md#ability-fallback). A plan, decision, try, or want stays on its own letter (`/h/`, or `/th/` for WANT): on `/w/` the same spelling is the ordinary word of its root (`wamam` *as planned*, `wehum` *decidedly*, `wudum` *tentatively*, `wohum` *wishfully*).
+Only words about **how you know** or **how things stand** move to `/w/` this way: the ones above, [CAUSE](causation.md#cause), the [*already* / *still* words](#phasal), and [*can* with `ubo`](intention.md#ability-fallback). A plan, decision, try, or want stays on its own letter (`/th/`, or `/h/` for a try): on `/w/` the same spelling is the ordinary word of its root (`wamam` *as planned*, `wehum` *decidedly*, `wudum` *tentatively*, `wohum` *wishfully*).
 
 > `zazawan dahodal wevom geredal vahahal.`
 >
@@ -1063,9 +1063,9 @@ Some channels only point one way:
 | **`thodom`** LIVE | no offset | the scene is in view now |
 | **`thobam`** PATTERN | **`-`** or **`+`** | **`-`**: it happened then, if the pattern held; **`+`**: it will, if the pattern holds |
 | **`thunem`** CLUES, **`thewam`** REPORTED, **`thahom`** INTUITION | **`-`** or **`+`** | the channel does not fix the time |
-| [PLAN](intention.md#plan-predict) **`hamam`** | **`+`** only | the intended act is later |
+| [PLAN](intention.md#plan-predict) **`thamam`** | **`+`** only | the intended act is later |
 
-The wrong sign on a one-way word (**`thevom`** with **`+`**, **`hamam`** with **`-`**) is not a sentence.
+The wrong sign on a one-way word (**`thevom`** with **`+`**, **`thamam`** with **`-`**) is not a sentence.
 
 A [carried](#carry-forward) channel keeps its offset. Date the first sentence of a story, and the bare sentences after it happen then too, so a past story needs no tense and no offset on every line. A new offset starts a new frame.
 
@@ -1242,13 +1242,31 @@ The holder may be the [topic pronoun](pronouns.md#topic-pronoun), whoever the co
 >
 > "I gather one would think Alahen left."
 
-**Someone else's want** goes the same way. [WANT](intention.md#want) alone is yours; after a holder it is theirs, and the seam word says how you know what they want. After **`uem`** ([contrary to a stance](sakes.md#contrary-to-stance)), write the holder word, then WANT, for *against their wishes*.
+**Someone else's want, plan, or decision** goes the same way. [WANT](intention.md#want), [PLAN](intention.md#plan-predict), and [DECISION](intention.md#decision) alone are yours; after a holder they are theirs, and the seam word says how you know what they want, plan, or chose. After **`uem`** ([contrary to a stance](sakes.md#contrary-to-stance)), write the holder word, then the stance, for *against their wishes* or *against their plan*.
 
 > `zazawan thewamazawan thohum vowogal.`
 >
 > z-Azawan | th-REPORTED-Azawan | th-WANT-unstated | v-walk
 >
 > "I hear Azawan wants to walk."
+
+> `zazawan thewamazawan thamam vowogal.`
+>
+> z-Azawan | th-REPORTED-Azawan | th-plan-itinerary | v-walk
+>
+> "I hear Azawan plans to walk."
+
+> `zazawan thunemalahen thamam vowogal.`
+>
+> z-Azawan | th-CLUES-Alahen | th-plan-itinerary | v-walk
+>
+> "I gather Alahen plans for Azawan to walk."
+
+> `zazawan thunemazawan thehum vowogal.`
+>
+> z-Azawan | th-CLUES-Azawan | th-DECISION-modifiable | v-walk
+>
+> "I gather Azawan has decided to walk, and can still change that."
 
 > `zalahen vezebal uem thunemazawan thohum.`
 >
@@ -1269,7 +1287,7 @@ The holder may be the [topic pronoun](pronouns.md#topic-pronoun), whoever the co
 | In the clause | With no holder | With a holder |
 |---------------|----------------|---------------|
 | The event | you assert it | what the holder takes to be so; you do not assert it |
-| MAY, MIRATIVE, CAUSE poles, WANT, prescription | yours | the holder's |
+| MAY, MIRATIVE, CAUSE poles, WANT, PLAN, DECISION, prescription | yours | the holder's |
 | [Sake](sakes.md) words and [emotion compose](sakes.md#emotion-compose), with their endings | your stake and feeling | the holder's stake and feeling |
 | A `/ɡ/` sake's *my* reading ([personal possession](sakes.md#personal-possession)) | your belonging | the holder's belonging |
 | Another evidential | how you know | how the holder knows |

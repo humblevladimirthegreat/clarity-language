@@ -28,9 +28,9 @@ An English tense bundles up to three questions: **when** the event sits, **how y
 | *is walking* | they are in the middle of it | the event root on `/ɡ/`: `zazawan gowogal` ([in progress](predication.md#in-progress)) |
 | *is still walking* | the state goes on | **`hagem`** |
 | *has stopped walking* | the state ended | **`hewem`** |
-| *will walk* | a plan | PLAN **`hamam`** |
+| *will walk* | your plan | PLAN **`thamam`**; someone else's plan takes a [holder](knowing.md#holder) |
 | *will walk* | a forecast | channel + **`bral`** ([forecast](knowing.md#forecast)) |
-| *is going to walk* | a plan, or clues say so | PLAN, or CLUES + **`bral`** |
+| *is going to walk* | your plan, or clues say so | PLAN, or CLUES + **`bral`** |
 | *is about to walk* / *will walk soon* | a hair / a short while after now | **`brabul`** / **`brabum`** on a channel |
 | *just walked* | a hair before now | **`brubul`** on a channel |
 | *was going to walk* | intention as of a past moment | PLAN + *as-of* |
@@ -106,13 +106,13 @@ English *had left* means the leaving counted **as of** an earlier moment. Write 
 >
 > "As of 22 July, Alahen had left, and it still counted."
 
-*Was going to* is PLAN with the same *as-of*:
+*Was going to* is PLAN with the stance *as-of* **`thuhum`** ([stance as-of](relations.md#stance-as-of)), since a plan is a stance:
 
-> `zazawan hamam vowogal huhum b_#22,7.`
+> `zamun thamam vowogal thuhum b_#22,7.`
 >
-> z-Azawan | h-plan-itinerary | v-walk | [h-as-of.ledger | b-_22,7]
+> z-speaker | th-plan-itinerary | v-walk | [th-as-of.ledger | b-_22,7]
 >
-> "As of 22 July, Azawan was going to walk."
+> "As of 22 July, I was going to walk."
 
 ### Progressive: mid-way, in view, or still {#progressive}
 
@@ -148,15 +148,21 @@ English *will* is three different claims.
 
 | English *will* | Agazan |
 |----------------|--------|
-| I mean to | PLAN **`hamam`** ([endings](intention.md#plan-map-resolution) show how much is drawn) |
+| I mean to | PLAN **`thamam`** ([endings](intention.md#plan-map-resolution) show how much is drawn) |
 | the world will | channel + **`bral`** |
 | I promise | consent **`huxegol`** ([promise](sakes.md#consent)) |
 
-> `zazawan hamam vowogal.`
+> `zamun thamam vowogal.`
 >
-> z-Azawan | h-plan-itinerary | v-walk
+> z-speaker | th-plan-itinerary | v-walk
 >
-> "Azawan will walk." (that is the plan)
+> "I will walk." (that is the plan)
+
+> `zazawan thewamazawan thamam vowogal.`
+>
+> z-Azawan | th-REPORTED-Azawan | th-plan-itinerary | v-walk
+>
+> "Azawan will walk, I hear." (that is Azawan's plan)
 
 > `thobam bral verehel.`
 >
@@ -287,7 +293,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 | *possible* / *potentially* | MAY **`thovum`** |
 | *acceptable* / *privilege* | permission **`thegol`** |
 | *expect* / *anticipate* | a forecast: a channel + **`bral`**; when custom expects it, **`thumer`** |
-| *shall* | PLAN **`hamam`** |
+| *shall* | PLAN **`thamam`** |
 | *have to* | **`thumem`** |
 | *do* / *does* / *did* (helper: *Do you walk?*) | no word: the verb under **`yol`** |
 
@@ -365,9 +371,9 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 
 | English | Agazan |
 |---------|--------|
-| *will* (willing) | PLAN **`hamam`**, or consent **`huxegom`** (*I'll do it*, you can back out) |
+| *will* (willing) | PLAN **`thamam`**, or consent **`huxegom`** (*I'll do it*, you can back out) |
 | *I want*, *I feel like* | WANT **`thohum`** (**`thohul`** lasting, **`thohur`** passing); someone else's want takes a [holder](knowing.md#holder): **`thewamazawan thohum`** |
-| *thinking of* | PLAN sketch **`hamar`** |
+| *intend to*, details open | PLAN sketch **`thamar`** |
 | *hopefully* | **`thevegem`** |
 | *tries to* | **`hudum`** |
 | *if only …*, *I wish …* | WANT alone, which is already your own: **`thohum`** |
@@ -385,11 +391,11 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 >
 > "If only Azawan would walk."
 
-> `zalahen hamar vowogal.`
+> `zamun thamar vowogal.`
 >
-> z-Alahen | h-plan-sketch | v-walk
+> z-speaker | th-plan-sketch | v-walk
 >
-> "Alahen is thinking of a walk." (a sketch is plenty)
+> "I intend to go for a walk." (a sketch is plenty)
 
 > `zalahen hudur vezehel.`
 >

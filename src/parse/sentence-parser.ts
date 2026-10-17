@@ -221,10 +221,11 @@ function isHolderWord(token: IToken): boolean {
   return family?.kind === "x" && family.xFamily === "holder";
 }
 
-/** A `/th/` WANT word (intention.md#want). */
-function isWantWord(token: IToken): boolean {
+/** A `/th/` WANT, PLAN or DECISION word (intention.md#whose-intention). */
+function isIntentionStance(token: IToken): boolean {
   const word = token.payload as LexWord | undefined;
-  return tokenIs(token, HTh) && word?.pos === "th" && word.overlay?.kind === "want";
+  const kind = word?.overlay?.kind;
+  return tokenIs(token, HTh) && word?.pos === "th" && (kind === "want" || kind === "plan" || kind === "decision");
 }
 
 /** `uem` *contrary to*: a `/th/` stance right after it is its opposing frame (sakes.md#contrary-to-stance). */
@@ -2071,7 +2072,7 @@ function hostedType(token: IToken, before: IToken[], after: IToken[]): TokenType
   const host = before.at(-1);
   if (!host) return undefined;
   if (isStanceWord(token) && isFrameHook(host)) return HFrame;
-  if (host.tokenType === HFrame && isHolderWord(host) && isWantWord(token)) return HFrameHeld;
+  if (host.tokenType === HFrame && isHolderWord(host) && isIntentionStance(token)) return HFrameHeld;
   if (tokenIs(token, H) && isRankNounJoin(before[skipWBack(before, before.length - 1)])) return HScale;
   if (token.tokenType === HPlain && before[skipWBack(before, before.length - 1)]?.tokenType === JoinV) return HSharedV;
   if (tokenIs(token, B) && isRankNounJoin(host) && scaleNumberAhead(token)) return BScale;
@@ -2462,7 +2463,7 @@ function buildHookUnit(cst: CstNode): Extract<Unit, { kind: "hook" }> {
     word: lexWordFromToken(childToken(cst, "Hook")!),
     modifiers: childTokens(cst, "W").map(lexWordFromToken),
     ...(frame ? { frame: buildHUnit(frame) } : {}),
-    ...(frame && childToken(frame, "Held") ? { heldWant: lexWordFromToken(childToken(frame, "Held")!) } : {}),
+    ...(frame && childToken(frame, "Held") ? { heldIntention: lexWordFromToken(childToken(frame, "Held")!) } : {}),
   };
 }
 

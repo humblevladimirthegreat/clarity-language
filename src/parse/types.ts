@@ -364,8 +364,8 @@ export type Unit =
       onLeft?: true;
       /** `uem` + a `/th/` stance: the opposing frame the event goes contrary to (sakes.md#contrary-to-stance). */
       frame?: HUnit;
-      /** WANT after a holder frame: the holder's wish the event goes against (intention.md#want). */
-      heldWant?: LexWord;
+      /** WANT, PLAN or DECISION after a holder frame: the holder's wish, plan or choice the event goes against (intention.md#whose-intention). */
+      heldIntention?: LexWord;
       /** `oel` + `/b/` right after an `ul` extra noun: the end of one *from … to* unit (numbers-applied.md#time). */
       fromTo?: true;
     }

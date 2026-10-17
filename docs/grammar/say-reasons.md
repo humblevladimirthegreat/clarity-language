@@ -15,7 +15,7 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 | *although* / *while* / *whilst* / *until* / *till* / *before* / *after* | same pole + **`barl`** shape on adverb `/h/`, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hezom`** / **`huwem`** / **`homam`** / … |
 | *so that* / *in order to* | same shape: **`hogom`** ([so that](dependents.md#so-that)); NP intended get = **`hogom`** + `/b/` **noun** |
 | *despite* (NP) | same **`hezom`** (or **`gezom`**) + `/b/` **noun**, not a second pole |
-| *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uem`** + the stance it goes against: `uem thedel` / `uem huxedem balahen` / `uem hamam` / `uem hehul bamun` / `uem thewam` ([contrary to a stance](sakes.md#contrary-to-stance)) |
+| *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uem`** + the stance it goes against: `uem thedel` / `uem huxedem balahen` / `uem thamam` / `uem thehul` / `uem thewam` ([contrary to a stance](sakes.md#contrary-to-stance)) |
 | *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`barl`**: **`thunem barl`** / **`thobam barl`** ([evidence clause](knowing.md#evidence-clause)) |
 | *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xodum`** ([continue](dependents.md#continue-x)) |
 | *it follows that* / *necessarily, then* (a deduction from the last sentence) | **`xodul`** ([sentence linkers](dependents.md#sentence-linkers)) |
@@ -166,13 +166,13 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 | *discard* | `zugul veledol thegem bazawan.` | the book is disposed of |
 | *prevent* (make it not happen) | `zalahen vedabal vul thegem bazawan.` | Alahen does not leave, Azawan makes that so |
 | *prevent* (act so that it will not) | `zazawan vowogal hogom burl zalahen vedabal.` | Azawan walks so that Alahen does not leave |
-| *persuade* | `zalahen hehum vowogal thegem bazawan.` | Alahen decides to walk, Azawan makes that happen |
+| *persuade* | `zalahen thunemalahen thehum vowogal thegem bazawan.` | as I gather, Alahen has decided to walk, and Azawan made that happen |
 | *introduce* | `zalahen velehal dazawan thegem bahaben.` | Alahen learns Azawan, Ahaben makes it happen: *make learned* |
 | *show* / *display* / *reveal* | `zalahen dodogal vahahal thegem bazawan.` | Alahen sees the dog, Azawan makes it happen |
 | *create* (bring into being) | `zodogal thegem bazawan.` | the dog exists, Azawan makes it happen |
 | *create* (make by work) | `zazawan dodogal vamevel.` | the production root |
 | *excite* / *thrill* | `zalahen vegevol thegem bazawan.` | Alahen is delighted, Azawan makes it happen |
-| *encourage* / *inspire* / *motivate* | `zalahen hamar vowogal thegem bazawan.` | Alahen is thinking of walking, Azawan makes that happen |
+| *encourage* / *inspire* / *motivate* | `zalahen thunemalahen thamar vowogal thegem bazawan.` | as I gather, Alahen intends to walk, and Azawan made that happen |
 | *convince* (of a claim) | `zalahen vegehol dazawan thegem bahaben.` | Alahen trusts Azawan, Ahaben makes it happen |
 
 > `zalahen vazagal thegem bazawan.`
@@ -181,11 +181,11 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 >
 > "Azawan kills Alahen."
 
-> `zalahen hehum vowogal thegem bazawan.`
+> `zalahen thunemalahen thehum vowogal thegem bazawan.`
 >
-> z-Alahen | h-DECISION-modifiable | v-walk | [th-CAUSE | b-Azawan]
+> z-Alahen | th-CLUES-Alahen | th-DECISION-modifiable | v-walk | [th-CAUSE | b-Azawan]
 >
-> "Azawan persuades Alahen to walk." (Alahen has decided, and can still change that)
+> "I gather Azawan persuaded Alahen to walk." (Alahen has decided, and can still change that)
 
 > `zazawan vowogal hogom burl zalahen vedabal.`
 >
@@ -193,7 +193,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 >
 > "Azawan walks so that Alahen does not leave."
 
-**Compare with:** *get someone to* by asking is tell plus a *to* [stand-in](dependents.md#stand-in), not **`thegem`**. **`thegem`** says the causer made it happen. Persuading puts the decision mood on the one persuaded, so a later change of mind stays possible.
+**Compare with:** *get someone to* by asking is tell plus a *to* [stand-in](dependents.md#stand-in), not **`thegem`**. **`thegem`** says the causer made it happen. Persuading puts the decision on the one persuaded, so a later change of mind stays possible. Their decision is in their mind, so a [holder](knowing.md#holder) says how you know it.
 
 ### Know, mean, explain, realize, forget, become {#mind-verbs}
 
@@ -204,7 +204,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | English | Agazan | Reading |
 |---------|--------|---------|
 | *mean* (signify) | `zezebel dodogal vezebelovul.` | the word carries the meaning *dog* |
-| *mean* (intend) | `zazawan hamam vowogal.` | plans to walk ([intention](intention.md#plan-predict)) |
+| *mean* (intend) | `zamun thamam vowogal.` | I plan to walk ([intention](intention.md#plan-predict)) |
 | *define* | `zazawan dezebelovul hahehom bodogal vezebel.` | tells the meaning, about the dog |
 | *explain* | `zazawan vezebel balahen darl zalahen vowogal thavem barl zodogal varahal.` | tells Alahen that the walk has the run as its reason |
 | *describe* | `zazawan hahehom bodogal vezebel balahen.` | tells Alahen about the dog |
@@ -686,13 +686,13 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 **Needs:** [PLAN](intention.md#plan-predict) · [forecasts](knowing.md#forecast) · [DECISION](intention.md#decision) · [*as-of*](relations.md#as-of)
 
-[PLAN](intention.md#plan-predict) and a [forecast](knowing.md#forecast) (channel + `bral`) without a hosted pair score against **speech-now**. With [*as-of*](relations.md#as-of), PLAN is the intention **from** that now (*was going to*), and the forecast offset counts **after** that now (*would rain*). Repeat the channel and `bral` on the next clause; resume whose-now with `huhur` / `hurar`. [DECISION](intention.md#decision) is an `/h/` word too, so it is the pick as it stood **at** that now.
+[PLAN](intention.md#plan-predict), [DECISION](intention.md#decision), and a [forecast](knowing.md#forecast) (channel + `bral`) without a hosted pair score against **speech-now**. PLAN and DECISION are stances, so the stance pair **`thuhum`** ([stance as-of](relations.md#stance-as-of)) dates them: the plan as it stood **at** that now, aimed later than it (*was going to*), and the pick as it stood then. With an event pair ([*as-of*](relations.md#as-of)), the forecast offset counts **after** that now (*would rain*). Repeat the channel and `bral` on the next clause; resume whose-now with `huhur` / `hurar`.
 
-> `zalahen hamar vowogal huhum b_#22,7.`
+> `zamun thamar vowogal thuhum b_#22,7.`
 >
-> z-Alahen | h-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
+> z-speaker | th-plan-sketch | v-walk | [th-as-of.ledger | b-_22,7]
 >
-> "As of 22 July, Alahen was going to walk."
+> "As of 22 July, I was going to walk."
 
 > `thobam bral huram b_#22,7 verehel. xazawan thobam bral hurar vowogal.`
 >
@@ -700,11 +700,11 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 >
 > "Taking 22 July as now, it would rain, going by the pattern. From that same now, Azawan would walk too, going by the pattern."
 
-> `zalahen hehum vowogal huhum b_#22,7.`
+> `zamun thehum vowogal thuhum b_#22,7.`
 >
-> z-Alahen | h-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
+> z-speaker | th-DECISION-modifiable | v-walk | [th-as-of.ledger | b-_22,7]
 >
-> "As of 22 July, Alahen had decided to walk, and could still change that then."
+> "As of 22 July, I had decided to walk, and could still change that then."
 
 ## Feelings: when and why {#feelings}
 
@@ -982,24 +982,24 @@ Short drills for these recipes. Try each item before opening **Show answer**. PL
 
 | English | Agazan |
 |---------|--------|
+| *I* | `amun` |
 | *Azawan* | `azawan` |
-| *Alahen* | `alahen` |
 | *walk* | `vowogal` |
 | *rain* | `verehel` |
-| *plan-sketch* | `hamar` |
+| *plan-sketch* | `thamar` |
 | *PATTERN* | `thobam` |
-| *as-of.ledger* | `huhum` |
+| *as-of.ledger* (stance) | `thuhum` |
 | *as-of.bookmark* | `huram` |
-| *DECISION-modifiable* | `hehum` |
+| *DECISION-modifiable* | `thehum` |
 
 #### English → Agazan {#reasons-plans-english-to-agazan}
 
-**1.** *As of 22 July, Alahen was going to walk.*
+**1.** *As of 22 July, I was going to walk.*
 
 ::: details Show answer
-`zalahen hamar vowogal huhum b_#22,7.`
+`zamun thamar vowogal thuhum b_#22,7.`
 
-z-Alahen | h-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
+z-speaker | th-plan-sketch | v-walk | [th-as-of.ledger | b-_22,7]
 :::
 
 **2.** *Taking 22 July as now, it would rain, going by the pattern.*
@@ -1010,12 +1010,12 @@ z-Alahen | h-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
 [th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain
 :::
 
-**3.** *As of 22 July, Alahen had decided to walk, and could still change that then.*
+**3.** *As of 22 July, I had decided to walk, and could still change that then.*
 
 ::: details Show answer
-`zalahen hehum vowogal huhum b_#22,7.`
+`zamun thehum vowogal thuhum b_#22,7.`
 
-z-Alahen | h-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
+z-speaker | th-DECISION-modifiable | v-walk | [th-as-of.ledger | b-_22,7]
 :::
 
 #### Agazan → English {#reasons-plans-agazan-to-english}
@@ -1029,22 +1029,22 @@ z-Alahen | h-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
 *Taking 22 July as now, it would rain, going by the pattern. From that same now, Azawan would walk too, going by the pattern.*
 :::
 
-**2.** `zalahen hamar vowogal huhum b_#22,7.`
+**2.** `zamun thamar vowogal thuhum b_#22,7.`
 
 ::: details Show answer
 
-z-Alahen | h-plan-sketch | v-walk | [h-as-of.ledger | b-_22,7]
+z-speaker | th-plan-sketch | v-walk | [th-as-of.ledger | b-_22,7]
 
-*As of 22 July, Alahen was going to walk.*
+*As of 22 July, I was going to walk.*
 :::
 
-**3.** `zalahen hehum vowogal huhum b_#22,7.`
+**3.** `zamun thehum vowogal thuhum b_#22,7.`
 
 ::: details Show answer
 
-z-Alahen | h-DECISION-modifiable | v-walk | [h-as-of.ledger | b-_22,7]
+z-speaker | th-DECISION-modifiable | v-walk | [th-as-of.ledger | b-_22,7]
 
-*As of 22 July, Alahen had decided to walk, and could still change that then.*
+*As of 22 July, I had decided to walk, and could still change that then.*
 :::
 
 ### Knowledge against a dated now {#reasons-knowing-practice}

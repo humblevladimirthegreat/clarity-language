@@ -436,41 +436,41 @@ English *three times bigger* usually means the same ratio: use **`zoel`** with `
 
 ### Comparing against a stance (bars) {#bars}
 
-English *more than planned* and *later than planned* rank one thing against a **value a stance sets**, not against another person: the plan sets how much and when. Write that `/th/` stance word, or that [intention adverb](clause.md#intention-adverbs) on `/h/` (PLAN, FORMER, ability, consent), where the second name would go, right before the rank join. That word is the **bar**. The join closes everything before it, so the bar is part of the comparison: it says what you rank against. It is not your stance on the whole sentence.
+English *more than planned* and *later than planned* rank one thing against a **value a stance sets**, not against another person: the plan sets how much and when. Write that `/th/` stance word, or that [intention adverb](clause.md#intention-adverbs) on `/h/` (FORMER, ability, consent), where the second name would go, right before the rank join. That word is the **bar**. The join closes everything before it, so the bar is part of the comparison: it says what you rank against. It is not your stance on the whole sentence.
 
-> `zazawan hamam zel bral vevahal.`
+> `zazawan thamam zel bral vevahal.`
 >
-> [z-Azawan | h-plan-itinerary | z-rank/more | b-later] | v-arrival
+> [z-Azawan | th-plan-itinerary | z-rank/more | b-later] | v-arrival
 >
 > "Azawan arrives later than planned."
 
 The same stance word **after** the fence has its ordinary reading, a stance on the whole sentence. With one ranked name, the fence is then a [superlative](#superlatives):
 
-> `zazawan zel bral vevahal hamam.`
+> `zazawan zel bral vevahal thamam.`
 >
-> [z-Azawan | z-rank/more | b-later] | v-arrival | h-plan-itinerary
+> [z-Azawan | z-rank/more | b-later] | v-arrival | th-plan-itinerary
 >
-> "Azawan plans to arrive last."
+> "I plan for Azawan to arrive last."
 
 A bar fence ranks **one** item against **one** bar: with a bar, there is no second name and no second bar. Any of the rank joins works (**`zel`**, **`zuel`**, **`zoel`**, and their open **-m** forms), and the bar keeps its own ending. The fence can rank an object or a recipient the same way:
 
-> `zazawan dozolx hamam del gral vagadel.`
+> `zazawan dozolx thamam del gral vagadel.`
 >
-> z-Azawan | [d-strawberry-x | h-plan-itinerary | d-rank/more | g-amount] | v-eat
+> z-Azawan | [d-strawberry-x | th-plan-itinerary | d-rank/more | g-amount] | v-eat
 >
 > "Azawan eats more strawberries than planned."
 
-> `zazawan vezebel balahen hamam bel hral.`
+> `zazawan vezebel balahen thamam bel hral.`
 >
-> z-Azawan | v-tell | [b-Alahen | h-plan-itinerary | b-rank/more | h-how-often]
+> z-Azawan | v-tell | [b-Alahen | th-plan-itinerary | b-rank/more | h-how-often]
 >
 > "Azawan tells Alahen more often than planned."
 
 A [hook](hooks.md) and its `/b/` on the ranked item go right before the bar, the way they go right before a join word:
 
-> `zugul om bamun hamam zel garagam.`
+> `zugul om bamun thamam zel garagam.`
 >
-> [[z-book | [near | b-speaker]] | h-plan-itinerary | z-rank/more | g-heavy]
+> [[z-book | [near | b-speaker]] | th-plan-itinerary | z-rank/more | g-heavy]
 >
 > "This book is heavier than planned."
 
@@ -504,7 +504,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Azawan* | `azawan` |
 | *Alahen* | `alahen` |
 | *Ahaben* | `ahaben` |
-| *PLAN* | `hamam` |
+| *PLAN* | `thamam` |
 | *heavy* | `aragam` |
 | *intensity* | `ahegem` |
 | *mango* | `amegol` |
@@ -557,9 +557,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **6.** *Ahaben is heavier than planned.*
 
 ::: details Show answer
-`zahaben hamam zel garagam.`
+`zahaben thamam zel garagam.`
 
-[z-Ahaben | h-plan-itinerary | z-rank/more | g-heavy]
+[z-Ahaben | th-plan-itinerary | z-rank/more | g-heavy]
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
@@ -678,7 +678,7 @@ Intermediate ranked against a plan, and [sake bars](sakes.md#sake-bars) rank aga
 | INTUITION `thahom` | your gut expectation | *than I expected* |
 | FORMER `henom` | how it used to be | *than it used to be* / *increasingly* |
 | NOTIONAL `thavom` | the imagined case | *than imagined* / *than in theory* |
-| PLAN `hamam` | the plan or the schedule | *than planned* / *than scheduled* |
+| PLAN `thamam` | the plan or the schedule | *than planned* / *than scheduled* |
 | WANT `thohul` / `thohum` / `thohur` | the level wanted | *than wanted* / *than I wanted* |
 | ABIL `huboxal` | what can be done | *as … as possible* |
 | REQUIRE `thumel` / `thumem` / `thumer` | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* |

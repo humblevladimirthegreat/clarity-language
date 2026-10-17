@@ -25,7 +25,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **CLUES** | Evidential: reasoned from clues about this case | `thunem` | [Knowing](knowing.md#evidentiality) |
 | **COLLAPSE** | Emotion locus: out of fight, giving up | `wanathumual` | [Sakes](sakes.md#emotion-compose) |
 | **CONSENT** | Consent of the affected party | `huxegom` | [Sakes](sakes.md#consent) |
-| **DECISION** | Pick-firmness mood | `hehum` | [Intention](intention.md#decision) |
+| **DECISION** | Pick-firmness mood | `thehum` | [Intention](intention.md#decision) |
 | **DEDUCED** | Evidential: must hold if the premises hold | `thugum` | [Knowing](knowing.md#deduction) |
 | **FAWN** | Emotion locus: placating a target | `wanathumaem` | [Sakes](sakes.md#emotion-compose) |
 | **FLOWING** | Emotion motion: steady, a current you can ride | `wanathumem` | [Sakes](sakes.md#emotion-compose) |
@@ -44,7 +44,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **OPAQUE** | An opaque span: foreign or raw writing | <code>d&lt;kimchi&gt;</code> | [Spans](spans.md#loans) |
 | **PATTERN** | Evidential: from regularity | `thobam` | [Knowing](knowing.md#evidentiality) |
 | **PERMIT** | Permission, positive | `thegol` | [Sakes](sakes.md#permission) |
-| **PLAN** | Intention-framing mood | `hamam` | [Intention](intention.md#plan-predict) |
+| **PLAN** | Intention-framing mood | `thamam` | [Intention](intention.md#plan-predict) |
 | **REPORTED** | Evidential: said or written by someone else | `thewam` | [Knowing](knowing.md#evidentiality) |
 | **REQUIRE** | Requirement (*must*) without a sake | `thumel` | [Sakes](sakes.md#requirement) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `hamom` | [Knowing](knowing.md#residue) |

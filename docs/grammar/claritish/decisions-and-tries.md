@@ -8,7 +8,7 @@
 
 | Drop-in | Meaning |
 |---------|---------|
-| `hehul` / `hehum` / `hehur` | decided for good / decided, can still change / decided for now |
+| `thehul` / `thehum` / `thehur` | decided for good / decided, can still change / decided for now |
 | `hudul` / `hudum` / `hudur` | committed to trying / tries / a trial run |
 
 The endings are back on the settled-to-passing scale: **-l** for good, **-m** the default, **-r** right now only.
@@ -18,10 +18,10 @@ A trial run (`hudur`) plans for failure: if it doesn't work, finding that out wa
 ## Examples {#examples}
 
 > I'm going vegetarian `hudur`.  
-> We're moving to Denver `hehul`.  
-> I'm taking the job `hehum`.  
+> We're moving to Denver `thehul`.  
+> I'm taking the job `thehum`.  
 > I'm learning piano `hudul`.  
-> We're skipping the party `hehur`.
+> We're skipping the party `thehur`.
 
 *I'm learning piano `hudul`* says you'll keep at it until it works or is ruled out.
 
@@ -38,13 +38,13 @@ I'm quitting coffee `hudur`.
 **2.** *We're selling the house.* (decided for good)
 
 ::: details Show answer
-We're selling the house `hehul`.
+We're selling the house `thehul`.
 :::
 
 **3.** *I'm staying home tonight.* (decided for now)
 
 ::: details Show answer
-I'm staying home tonight `hehur`.
+I'm staying home tonight `thehur`.
 :::
 
 <!-- Source (editors): intention.md#decision, intention.md#try. -->

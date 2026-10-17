@@ -96,9 +96,9 @@ A stance is yours **now**, as you speak. To give a stance you held at another ti
 
 ### Intention adverbs {#intention-adverbs}
 
-Some `/h/` words say something about the doer that others could check: that they [plan](intention.md#plan) it, [decided](intention.md#decision-revisability) it, are [trying](intention.md#try) it, [can](intention.md#ability-fallback) do it, or that the one it happens to [agreed](sakes.md#consent). These are **intention adverbs**. Two more `/h/` words keep the books on an outcome: whether it [still counts](knowing.md#residue-and-former-climate). Unlike *hastily*, each of these covers the **whole clause** wherever it sits, the way a stance does.
+Some `/h/` words say something about the doer that others could check: that they are [trying](intention.md#try) it, [can](intention.md#ability-fallback) do it, or that the one it happens to [agreed](sakes.md#consent). These are **intention adverbs**. Two more `/h/` words keep the books on an outcome: whether it [still counts](knowing.md#residue-and-former-climate). Unlike *hastily*, each of these covers the **whole clause** wherever it sits, the way a stance does. A [plan](intention.md#plan) or a [decision](intention.md#decision-revisability) is in a mind, so it is a `/th/` stance instead.
 
-A plan, a decision, or an ability does not say the act happens: *plans to walk* is not *walks*. A try and a consent do say it happens.
+An ability does not say the act happens: *can walk* is not *walks*. A try and a consent do say it happens.
 
 ### Extra nouns (`/b/`) {#extra-nouns}
 

@@ -48,6 +48,9 @@ const CLOSED_ROWS = {
   // no channel on `/th/` (knowing.md#evidentiality): a record is REPORTED, a tale NOTIONAL
   record: { emoji: "⏺️", root: "ere" },
   scroll: { emoji: "📜", root: "oze" },
+  // no intention on `/h/` (intention.md#plan): PLAN and DECISION are `/th/` stances
+  map: { emoji: "🗺️", root: "ama" },
+  check: { emoji: "✅", root: "ehu" },
   // template sample filler
   walk: { emoji: "🚶", root: "owoga" },
   // the nine sake roots (sakes.md#sake-inventory); knot, tool and ballot are also template sample fillers

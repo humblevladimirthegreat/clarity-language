@@ -66,12 +66,12 @@ amom,h,💰,residue,RESIDUE,residue mood (outcome still on the current tally),mo
 amom,w,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,knowing.md#mood-on-one-adjective
 enom,h,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,knowing.md#residue-and-former-climate
 enom,w,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,knowing.md#mood-on-one-adjective
-amar,h,🗺️,plan,plan-sketch,plan mood sketch map-resolution (direction-only intention),map charts a route; sketch plan is intention without steps,intention.md#plan
-amam,h,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps on the map),map charts a route; itinerary plan fills in how,intention.md#plan
-amal,h,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups,intention.md#plan
-ehul,h,✅,decision,DECISION-irreversible,decision mood irreversible changeability (settled pick),checkmark confirms a pick; irreversible decision is settled as final,intention.md#decision-revisability
-ehum,h,✅,decision,DECISION-modifiable,decision mood modifiable changeability (open to revision),checkmark confirms a pick; modifiable decision stays open to change,intention.md#decision-revisability
-ehur,h,✅,decision,DECISION-temporary,decision mood temporary changeability (pick for now),checkmark confirms a pick; temporary decision holds only this moment,intention.md#decision-revisability
+amar,th,🗺️,plan,plan-sketch,plan mood sketch map-resolution (direction only; details left open),map charts a route; sketch plan is intention without steps,intention.md#plan
+amam,th,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps on the map; detail unstated),map charts a route; itinerary plan fills in how,intention.md#plan
+amal,th,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups,intention.md#plan
+ehul,th,✅,decision,DECISION-irreversible,decision mood irreversible changeability (settled pick; no time),checkmark confirms a pick; irreversible decision is settled as final,intention.md#decision-revisability
+ehum,th,✅,decision,DECISION-modifiable,decision mood modifiable changeability (open to revision; no time),checkmark confirms a pick; modifiable decision stays open to change,intention.md#decision-revisability
+ehur,th,✅,decision,DECISION-temporary,decision mood temporary changeability (pick for now; no time),checkmark confirms a pick; temporary decision holds only this moment,intention.md#decision-revisability
 ovum,th,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off,knowing.md#may
 ovum,w,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off,knowing.md#mood-on-one-adjective
 ovul,th,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),"thought balloon plus looking: could be, and you are seeking",knowing.md#hold-endings-may

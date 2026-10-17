@@ -344,6 +344,10 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (word.pos === "th" && (stemRoot === CLOSED.record || stemRoot === CLOSED.scroll) && word.ending !== "n") {
     throw new ConstructionError("retiredChannelRoot", word.raw);
   }
+  // The map and check roots are no `/h/` word: a plan or decision is in a mind, a `/th/` stance (intention.md#plan).
+  if (word.pos === "h" && (stemRoot === CLOSED.map || stemRoot === CLOSED.check) && word.ending !== "n") {
+    throw new ConstructionError("retiredIntentionRoot", word.raw);
+  }
   if (word.pos === "th" && word.family.kind === "number") enforceStanceNumber(word, word.family.stem);
   if (word.pos === "w" && word.family.kind === "number") enforceDegreeNumber(word, word.family.stem);
   if (word.plural && isGenericPronoun(word)) throw new ConstructionError("genericPlural", word.raw);
@@ -505,19 +509,19 @@ function isTimePole(word: LexWord): boolean {
   return word.pos === "h" && word.overlay?.kind === "clause_pole" && TIME_POLES.has(word.overlay.gloss);
 }
 
-/** A `/th/` channel or an `/h/` PLAN: what licenses an offset from now (design-decisions D-10). */
+/** A `/th/` channel or PLAN: what licenses an offset from now (design-decisions D-10). */
 function isWarrant(word: LexWord): boolean {
   return (word.pos === "th" && word.overlay?.kind === "evidential") || isPlan(word);
 }
 
 function isPlan(word: LexWord): boolean {
-  return word.pos === "h" && word.overlay?.kind === "plan";
+  return word.pos === "th" && word.overlay?.kind === "plan";
 }
 
 /** MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one (knowing.md#dated-channel). */
 function enforceChannelSign(word: LexWord, hosted: HUnit["hosted"]): void {
   const sign = offsetSign(hosted?.bound, hosted?.amount);
-  if (!sign || (word.pos !== "th" && !isPlan(word)) || !word.overlay) return;
+  if (!sign || word.pos !== "th" || !word.overlay) return;
   const base = word.overlay.gloss.split(".")[0];
   const wrong =
     (word.overlay.kind === "evidential" && base === "MEMORY" && sign !== "-") ||
@@ -595,14 +599,17 @@ function enforceFeelingLandmark(words: LexWord[], hosted: Hosted | undefined): v
 }
 
 /**
- * WANT hosts no person: with no holder it is the speaker's want, and someone else's want goes through a holder seam,
- * so a `/b/` cannot slip in another person's wish with no grounds (intention.md#want). A time offset is fine.
+ * WANT, PLAN and DECISION host no person: with no holder they are the speaker's own, and someone else's goes through a
+ * holder seam, so a `/b/` cannot slip in another person's wish, plan or choice with no grounds (intention.md#whose-intention).
+ * WANT and PLAN take a time offset; DECISION carries no time, so it takes no `/b/` at all.
  */
-function enforceWantHost(unit: HUnit): void {
+function enforceIntentionHost(unit: HUnit): void {
   const bound = unit.hosted?.bound;
-  if (unit.word.pos !== "th" || unit.word.overlay?.kind !== "want" || !bound) return;
-  if (bound.family.kind === "number") return;
-  throw new ConstructionError("wantHost", `${unit.word.raw} ${bound.raw}`);
+  const kind = unit.word.overlay?.kind;
+  if (unit.word.pos !== "th" || !bound || (kind !== "want" && kind !== "plan" && kind !== "decision")) return;
+  const offset = bound.family.kind === "number" || unit.hosted?.amount?.family.kind === "number";
+  if (kind !== "decision" && offset) return;
+  throw new ConstructionError("intentionHost", `${unit.word.raw} ${bound.raw}`);
 }
 
 /** `uem` + a stance: the stance must say something the event can go against, and holds no stand-in (sakes.md#contrary-to-stance). */
@@ -747,7 +754,7 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
         case "hUnit":
           enforceFeelingLandmark([node.unit.word], node.unit.hosted);
           enforceAsOfWord(node.unit.word, node.unit.hosted?.bound);
-          enforceWantHost(node.unit);
+          enforceIntentionHost(node.unit);
           return;
         case "clauseCoord": {
           const last = node.coord.links.at(-1);

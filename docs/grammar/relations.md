@@ -686,7 +686,6 @@ Do not put a bare person in `/b/` to mean “from Alahen’s now.” A person af
 Once whose-now is set, these count from it:
 
 - A [forecast](knowing.md#forecast) offset (`bral`) counts forward **from** that now.
-- [PLAN](intention.md#plan-predict) is planned **from** that now, and a [DECISION](intention.md#decision) is held **at** that now.
 - [RESIDUE](knowing.md#residue) is what is still left over **at** that now.
 - [FORMER](knowing.md#former-climate) means the pattern no longer held **at** that now.
 - A bare verb happens **at** that now.
@@ -750,7 +749,7 @@ An *as-of* pair inside a finished inner clause cannot be resumed later in the ma
 
 ### Stance as-of {#stance-as-of}
 
-A stance is yours at speech-now: `thovum` is how unsure you are **as you speak**, and a sake or feeling word is how you stand **now**. English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself. Put the same *as-of* pair on `/th/`: **`thuhum`** for a real now, **`thuram`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, WANT, CAUSE, sakes, and feelings, then reads from that now.
+A stance is yours at speech-now: `thovum` is how unsure you are **as you speak**, and a sake or feeling word is how you stand **now**. English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself. Put the same *as-of* pair on `/th/`: **`thuhum`** for a real now, **`thuram`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, WANT, CAUSE, sakes, and feelings, then reads from that now. A [PLAN](intention.md#plan-predict) is then planned **from** that now, and a [DECISION](intention.md#decision) is held **at** it.
 
 > `zalahen thuhum b_#22,7 thovum vedabal.`
 >

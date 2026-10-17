@@ -854,19 +854,13 @@ The stance keeps its endings and its hosted `/b/`. On a refusal, the `/b/` is th
 >
 > "Ahaben sits, against Alahen's orders."
 
-A [plan](intention.md#plan) after **`uem`** is the subject's own unless a `/b/` names whose plan it is. A [speaker attitude](#speaker-attitude) after **`uem`** is what you were hoping for.
+A [plan](intention.md#plan) after **`uem`** is your own, like any stance. Someone else's plan takes a [holder](knowing.md#holder) between **`uem`** and the plan. A [speaker attitude](#speaker-attitude) after **`uem`** is what you were hoping for.
 
-> `zazawan vowogal uem hamam.`
+> `zazawan vowogal uem thamam.`
 >
-> z-Azawan | v-walk | [contrary-to | h-plan-itinerary]
+> z-Azawan | v-walk | [contrary-to | th-plan-itinerary]
 >
-> "Azawan walks, contrary to their own plan."
-
-> `zazawan vowogal uem hamam balahen.`
->
-> z-Azawan | v-walk | [contrary-to | [h-plan-itinerary | b-Alahen]]
->
-> "Azawan walks, contrary to Alahen's plan."
+> "Azawan walks, contrary to my plan."
 
 > `zazawan vowogal uem thevegem.`
 >
@@ -889,7 +883,8 @@ The word after **`uem`** has to say something the event can go against: a ban, a
 | ban **`thedel`** / **`thedem`** / **`theder`** | *against the rules* / *though I forbade it* / *though people frown on it* |
 | requirement **`thumel`** / **`thumem`** / **`thumer`** | *contrary to regulations* / *against my orders* / *contrary to custom* |
 | refusal **`huxedel`** / **`huxedem`** / **`huxeder`** | *against their will* (they opted out / they said no / they probably don't want it) |
-| plan **`hamar`** / **`hamam`** / **`hamal`** | *contrary to the plan* |
+| plan **`thamar`** / **`thamam`** / **`thamal`** | *contrary to my plan* |
+| decision **`thehul`** / **`thehum`** / **`thehur`** | *against my decision* |
 | speaker attitude, such as **`thevegem`** | *against my hopes* |
 
 Permission and consent given (**`thegom`**, **`huxegom`**) only lift a restriction, so nothing can go against them. Sake words cannot follow **`uem`** either: to say an act goes against someone's interest, put an [unmet](#sake-changeability) sake word on the clause (`zazawan vowogal thegathum balahen.` *Azawan's walking harms Alahen's interests*).

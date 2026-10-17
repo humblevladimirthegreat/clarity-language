@@ -9,7 +9,7 @@
 | Drop-in | Meaning |
 |---------|---------|
 | `thohul` / `thohum` / `thohur` | has wanted this for a long time / wants to / feels like it right now |
-| `hamal` / `hamam` / `hamar` | planned with backups ready / the steps laid out / only the direction |
+| `thamal` / `thamam` / `thamar` | planned with backups ready / the steps laid out / only the direction |
 
 The drop-in goes where an English adverb or tag would go, and it covers the clause it sits in.
 
@@ -17,17 +17,17 @@ The endings are the settled-to-passing scale again: **-l** lasting, **-m** the d
 
 Leave both words off when you are only saying what happens. *I'm visiting in March* with nothing added is a plain report, not a promise and not a wish.
 
-A want word does not say you mean to act, and a plan word is not a forecast: it says what someone means to do, not what the world will do. Neither one claims the thing happened.
+A want word does not say you mean to act, and a plan word is not a forecast: it says what you mean to do, not what the world will do. Neither one claims the thing happened.
 
 ## Examples {#examples}
 
 > I'm taking a sabbatical `thohum`.  
 > I'm going back to school `thohul`.  
 > I'm calling in sick `thohur`.  
-> I'm moving in the spring `hamal`.  
-> We're redoing the kitchen `hamar`.
+> I'm moving in the spring `thamal`.  
+> We're redoing the kitchen `thamar`.
 
-*I'm going back to school `thohul`* is a want that keeps coming back, and still nothing you owe anyone; *I'm calling in sick `thohur`* is the same shape for a wish that will have passed by lunchtime. *I'm moving in the spring `hamal`* says the plan already covers what happens if the lease falls through, while *we're redoing the kitchen `hamar`* admits that nothing past the idea is settled.
+*I'm going back to school `thohul`* is a want that keeps coming back, and still nothing you owe anyone; *I'm calling in sick `thohur`* is the same shape for a wish that will have passed by lunchtime. *I'm moving in the spring `thamal`* says the plan already covers what happens if the lease falls through, while *we're redoing the kitchen `thamar`* admits that nothing past the idea is settled.
 
 ## Practice {#practice}
 
@@ -36,7 +36,7 @@ Add the drop-in that fits the note.
 **1.** *I'm switching teams.* (you mean to, and you've worked out what to do if it falls through)
 
 ::: details Show answer
-I'm switching teams `hamal`.
+I'm switching teams `thamal`.
 :::
 
 **2.** *I'm writing a novel.* (a wish that keeps coming back; you aren't saying you mean to)
@@ -48,13 +48,13 @@ I'm writing a novel `thohul`.
 **3.** *We're spending August in Lisbon.* (you have the direction; nothing is booked)
 
 ::: details Show answer
-We're spending August in Lisbon `hamar`.
+We're spending August in Lisbon `thamar`.
 :::
 
 **4.** *I'm trading my shift away.* (you mean to, and you have the steps)
 
 ::: details Show answer
-I'm trading my shift away `hamam`.
+I'm trading my shift away `thamam`.
 :::
 
 <!-- Source (editors): intention.md#want, intention.md#plan-predict. -->

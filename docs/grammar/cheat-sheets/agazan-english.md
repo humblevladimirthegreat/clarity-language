@@ -109,9 +109,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `hager` | STILL phasal (the state continues); -r for now: about to end | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `hagum` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `hahem` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
-| `hamal` | plan mood atlas map-resolution (includes backups; fully prepared) | [Plan](../intention.md#plan) | B |
-| `hamam` | plan mood itinerary map-resolution (steps on the map) | [Plan](../intention.md#plan) | B |
-| `hamar` | plan mood sketch map-resolution (direction-only intention) | [Plan](../intention.md#plan) | B |
 | `hamom` | residue mood (outcome still on the current tally) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
 | `han` | join-relation with or including (adverb + argument) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `hanom` | AFTER clause pole (just-after) | [Because, if, although (poles)](../dependents.md#poles) | B |
@@ -119,9 +116,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `hazam` | locative between (two landmarks) | [Locative relations](../relations.md#locative-relations) | I |
 | `hebum` | locative across (edge to far edge of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
 | `hehem` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](../relations.md#exchange) | B |
-| `hehul` | decision mood irreversible changeability (settled pick) | [Decision (revisability)](../intention.md#decision-revisability) | I |
-| `hehum` | decision mood modifiable changeability (open to revision) | [Decision (revisability)](../intention.md#decision-revisability) | I |
-| `hehur` | decision mood temporary changeability (pick for now) | [Decision (revisability)](../intention.md#decision-revisability) | I |
 | `hen` | join-relation prioritizing (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `henom` | former-climate mood (not the climate claimed now) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
 | `heveham` | BY clause pole (deadline: done at or before the endpoint) | [Because, if, although (poles)](../dependents.md#poles) | B |
@@ -174,6 +168,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `thahol` | intuition evidential with strong evidence (strong gut sense) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thahom` | intuition evidential (gut sense you cannot fully spell out) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `thahor` | intuition evidential with weak evidence (faint hunch) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `thamal` | plan mood atlas map-resolution (includes backups; fully prepared) | [Plan](../intention.md#plan) | B |
+| `thamam` | plan mood itinerary map-resolution (steps on the map; detail unstated) | [Plan](../intention.md#plan) | B |
+| `thamar` | plan mood sketch map-resolution (direction only; details left open) | [Plan](../intention.md#plan) | B |
 | `thavel` | BECAUSE clause pole with fault (the reason broke a norm) | [Fault](../causation.md#fault) | I |
 | `thavem` | BECAUSE clause pole (explanatory reason) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `thaver` | BECAUSE clause pole with a share (the reason contributed among others) | [Fault](../causation.md#fault) | I |
@@ -188,6 +185,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | `thegol` | permission from a rule policy or formal right (no one in particular grants it) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
 | `thegom` | permission granted by a person (speaker by default or the /b/ grantor) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
 | `thegor` | tacit permission (no one objected; nobody granted it) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
+| `thehul` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
+| `thehum` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
+| `thehur` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
 | `thevol` | memory evidential with strong evidence (vivid memory) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thevom` | memory evidential (remembered firsthand / reconstructive) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `thevor` | memory evidential with weak evidence (hazy memory) | [Evidence strength](../knowing.md#evidence-strength) | I |

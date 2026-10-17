@@ -485,7 +485,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `gezebul` | `g-sleepy` | *sleepy* |
 | `thevom` | `th-MEMORY` | *per memory* |
 | `thodom` | `th-LIVE` | *from the scene* |
-| `hamar` | `h-plan-sketch` | *as a sketch plan* |
+| `thamar` | `th-plan-sketch` | *as a sketch plan* |
 | `gugol` | `g-SAME` | *identical to* (identity host) |
 | `von` | `v-choose` | *chooses (exactly one)* |
 
@@ -527,9 +527,9 @@ No note: *as I remember* already says whose memory it is. Do not render the over
 
 ### Inclusive *we* (interlocutors)
 
-> `yael xodum zahan hamar vowogal vul.`
+> `yael xodum zahan thamar vowogal vul.`
 >
-> y-yes | x-therefore | z-interlocutors | h-plan-sketch | [v-walk | v-not]
+> y-yes | x-therefore | z-interlocutors | th-plan-sketch | [v-walk | v-not]
 >
 > "Yes — so we're planning not to walk."
 

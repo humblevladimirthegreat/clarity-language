@@ -160,15 +160,15 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 <!-- generated: overlays pos=th|h kind=want|plan|decision|attempt -->
 | Agazan | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `hamal` | plan mood atlas map-resolution (includes backups; fully prepared) | [Plan](../intention.md#plan) | B |
-| `hamam` | plan mood itinerary map-resolution (steps on the map) | [Plan](../intention.md#plan) | B |
-| `hamar` | plan mood sketch map-resolution (direction-only intention) | [Plan](../intention.md#plan) | B |
-| `hehul` | decision mood irreversible changeability (settled pick) | [Decision (revisability)](../intention.md#decision-revisability) | I |
-| `hehum` | decision mood modifiable changeability (open to revision) | [Decision (revisability)](../intention.md#decision-revisability) | I |
-| `hehur` | decision mood temporary changeability (pick for now) | [Decision (revisability)](../intention.md#decision-revisability) | I |
 | `hudul` | attempt mood committed (keep going until it works or is ruled out) | [Try](../intention.md#try) | I |
 | `hudum` | attempt mood (commitment unstated) | [Try](../intention.md#try) | I |
 | `hudur` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](../intention.md#try) | I |
+| `thamal` | plan mood atlas map-resolution (includes backups; fully prepared) | [Plan](../intention.md#plan) | B |
+| `thamam` | plan mood itinerary map-resolution (steps on the map; detail unstated) | [Plan](../intention.md#plan) | B |
+| `thamar` | plan mood sketch map-resolution (direction only; details left open) | [Plan](../intention.md#plan) | B |
+| `thehul` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
+| `thehum` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
+| `thehur` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
 | `thohul` | want mood lasting (a wish that keeps returning) | [Want](../intention.md#want) | I |
 | `thohum` | want mood (duration unstated) | [Want](../intention.md#want) | I |
 | `thohur` | want mood passing (a whim that fades) | [Want](../intention.md#want) | I |
@@ -176,26 +176,26 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Plan](../intention.md#plan-predict) | `zazawan hamam vowogal.` | *Azawan plans to walk.* | B |
-| [Plan, sketch](../intention.md#plan-predict) | `zalahen hamar vowogal.` | *Alahen is thinking of walking.* | B |
-| [Plan, atlas](../intention.md#plan-predict) | `zahaben hamal vowogal.` | *Ahaben is fully prepared to walk.* | B |
-| [Decision](../intention.md#decision) | `zalahen hehum vezehel.` | *Alahen has decided to sing, and can still change that.* | I |
+| [Plan](../intention.md#plan-predict): yours | `zamun thamam vowogal.` | *I plan to walk.* | B |
+| [Plan, sketch](../intention.md#plan-predict) | `zamun thamar vowogal.` | *I intend to walk; the details are open.* | B |
+| [Plan, atlas](../intention.md#plan-predict) | `zamun thamal vowogal.` | *I'm fully prepared to walk.* | B |
+| [Decision](../intention.md#decision): yours, no time | `zamun thehum vezehel.` | *I've decided to sing, and can still change that.* | I |
 | [Try](../intention.md#try) | `zazawan hudum varadal.` | *Azawan tries to write.* | I |
 | [Trial run](../intention.md#try) | `zalahen hudur vezehel.` | *Alahen gives singing a try.* | I |
 | [Committed](../intention.md#try) | `zalahen hudul vowogal.` | *Alahen keeps trying to walk.* | I |
 | [Want](../intention.md#want): yours | `zazawan thohum vowogal.` | *I want Azawan to walk.* | I |
 | [Someone else's want](../knowing.md#holder): a holder | `zazawan thewamazawan thohum vowogal.` | *I hear Azawan wants to walk.* | A |
 | [Want, a whim](../intention.md#want-endings) | `zalahen thohur vezehel.` | *Right now I feel like having Alahen sing.* | I |
-| [Stacked: want, then plan](../intention.md#want-endings) | `zazawan thohul hamam vowogal.` | *I have long wanted Azawan to walk, and Azawan plans to.* | I |
+| [Stacked: want, then plan](../intention.md#want-endings) | `zamun thohul thamam vowogal.` | *I have long wanted to walk, and I plan to.* | I |
 | [Against my wishes](../intention.md#want-endings) | `zazawan vowogal uem thohum.` | *Azawan walks, against my wishes.* | I |
 | [Against someone's wishes](../knowing.md#holder) | `zalahen vezebal uem thunemazawan thohum.` | *Alahen sleeps, against Azawan's wishes, as far as I can tell.* | A |
-| [Someone else's plan](../intention.md#whose-intention) | `zazawan hamam balahen vowogal.` | *Alahen plans for Azawan to walk.* | I |
-| [Someone else's decision](../intention.md#whose-intention) | `zazawan hehum balahen vowogal.` | *Alahen has decided that Azawan walks.* | I |
-| [Plan, and when](../intention.md#whose-intention) | `zazawan hamam balahen vowogal huwem bral.` | *Alahen plans for Azawan to walk later.* | I |
+| [Someone else's plan](../knowing.md#holder): a holder | `zazawan thewamazawan thamam vowogal.` | *I hear Azawan plans to walk.* | A |
+| [Someone else's decision](../knowing.md#holder): a holder | `zazawan thunemazawan thehum vowogal.` | *I gather Azawan has decided to walk, and can still change that.* | A |
+| [Plan, and when](../intention.md#plan-predict) | `zamun thamam bral vehahel.` | *I plan to sit down later.* | I |
 | [Try, failing that](../intention.md#fallback): `xon` | `zazawan hudur vowogal xon zazawar vezehel.` | *Azawan gives walking a try; failing that, Azawan sings.* | I |
-| [A plan with backups](../intention.md#fallback) | `zazawan hamal vowogal xon zazawar hamal vezehel xon zazawar hamal vezebal.` | *walk; failing that, sing; failing that, sleep* | I |
+| [A plan with backups](../intention.md#fallback) | `zamun thamal vowogal xon zamun thamal vezehel xon zamun thamal vezebal.` | *walk; failing that, sing; failing that, sleep* | I |
 
-The `/b/` right after PLAN holds whose plan it is or when the act comes, not both.
+The `/b/` right after PLAN is only ever a time. WANT, PLAN, and DECISION take no `/b/` for whose they are.
 
 ### Ability {#ability}
 
@@ -226,8 +226,8 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | `thovum` *could be* ([a guess, no reasons](../knowing.md#may)) | | `thunem` *from the clues* ([reasons you worked out](../knowing.md#evidentiality)) |
 | `thewam` *so they say* ([someone said it](../knowing.md#evidentiality)) | | `thavom` *imagine* ([a scene you make up](../knowing.md#notional-as-if-framing)) |
 | `thunel` *strong clues* ([how good your evidence is](../knowing.md#evidence-strength)) | | `threrel` *third-hand* ([how many hands](../knowing.md#hand-depth)) |
-| `thobam bral` *will, by the pattern* ([a forecast](../knowing.md#forecast)) | | `hamam` *plans to* ([an intention](../intention.md#plan-predict)) |
+| `thobam bral` *will, by the pattern* ([a forecast](../knowing.md#forecast)) | | `thamam` *I plan to* ([an intention](../intention.md#plan-predict)) |
 | `hamom` *still in effect* ([the outcome stays](../knowing.md#residue-and-former-climate)) | | `hagem` *still* ([the state goes on](../knowing.md#phasal)) |
-| `hehum` *has decided* ([how open the choice is](../intention.md#decision)) | | `hamam` *plans* ([how worked out](../intention.md#plan-predict)) |
+| `thehum` *I've decided* ([how open the choice is, no time](../intention.md#decision)) | | `thamam` *I plan* ([how worked out, still ahead](../intention.md#plan-predict)) |
 | `hudum` *tries* ([acts, outcome open](../intention.md#try)) | | `vezehexal` *can sing* ([a claim about ability](../intention.md#can)) |
-| `thohum` *I want* ([your own wanting](../intention.md#want)) | | `hehum balahen` *Alahen decides* ([nothing asked of the subject](../intention.md#whose-intention)) |
+| `thohum` *I want* ([your own wanting](../intention.md#want)) | | `thewamazawan thamam` *I hear Azawan plans* ([someone else's plan](../knowing.md#holder)) |

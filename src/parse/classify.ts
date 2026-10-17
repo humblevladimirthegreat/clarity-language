@@ -446,11 +446,11 @@ export function isGroundsChannel(word: LexWord, tables: ClassifyTables): boolean
   return row?.kind === "evidential" && GROUNDS_CHANNELS.has(row.gloss.split(".")[0]!);
 }
 
-/** Closed `/h/` kinds that cover the whole clause: plans, decisions, tries, ability, consent, the books (clause.md#intention-adverbs). */
-const CLAUSE_ADVERB_KINDS = new Set(["plan", "decision", "attempt", "ability", "deontic", "residue", "former_climate"]);
+/** Closed `/h/` kinds that cover the whole clause: tries, ability, consent, the books (clause.md#intention-adverbs). */
+const CLAUSE_ADVERB_KINDS = new Set(["attempt", "ability", "deontic", "residue", "former_climate"]);
 
 /**
- * An `/h/` intention adverb (PLAN, DECISION, ATTEMPT, hostless ability, consent) or a books word (RESIDUE, FORMER):
+ * An `/h/` intention adverb (ATTEMPT, hostless ability, consent) or a books word (RESIDUE, FORMER):
  * it covers the whole clause wherever it sits, and the grammar treats it like a `/th/` word (clause.md#intention-adverbs).
  */
 export function isClauseAdverb(word: LexWord): boolean {
