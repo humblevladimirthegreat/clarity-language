@@ -27,7 +27,7 @@ export type ConstructionEntry = { anchor: string; summary: string; reader?: stri
 
 /** Shared by the three rank-fence bar productions (comparatives.md#bars). */
 const BAR_READER =
-  "A `th-` word (or an intention `h-` word) inside a ranking bracket, right before the rank word, is what the item is ranked against: `[z-Alahen | th-plan-itinerary | z-rank/more | b-later] | v-departure` = Alahen leaves later than planned; a pattern there = than usual. The same word outside the bracket covers the whole sentence.";
+  "A `th-` word (or an intention `h-` word) inside a ranking bracket, right before the rank word, is what the item is ranked against: `[z-X | th-plan-itinerary | z-rank/more | b-later] | v-departure` = X leaves later than planned; a pattern there = than usual. The same word outside the bracket covers the whole sentence.";
 
 /** Sentence grammar: `rule.childKey` (sub-rule, token type, or LABEL). */
 export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
@@ -228,7 +228,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
     anchor: "knowing.md#holder",
     summary: "holder seam",
     reader:
-      "`th-TAG-Name` (a stance tag joined to a person, or to a `←` pointer): the sentence gives that person's view, and the tag says how the speaker knows it. `th-CLUES-Azawan` = I gather Azawan thinks …; `th-MAY-Azawan` = maybe Azawan thinks ….",
+      "`th-TAG-X` (a stance tag joined to a person X, or to a `←` pointer): the sentence gives that person's view, and the tag says how the speaker knows it. `th-CLUES-X` = I gather X thinks …; `th-MAY-X` = maybe X thinks ….",
   },
   ability: { anchor: "x-compounds.md#conversation-length", summary: "ability compound" },
   numeric: { anchor: "numeric-derivation.md#numeric-derivation", summary: "numeric derivation" },
@@ -418,7 +418,7 @@ export const JOIN_SERIES_CONSTRUCTIONS: Record<JoinSeries, ConstructionEntry> = 
     anchor: "joins.md#rank-e",
     summary: "rank",
     reader:
-      "`rank/more` closes a bracket that ranks its items on the word after it, earlier above later: `[z-Alahen | z-Azawan | z-rank/more | g-tall]` = Alahen is taller than Azawan. With one item, it is the top of all (the biggest).",
+      "`rank/more` closes a bracket that ranks its items on the word after it, earlier above later: `[z-X | z-Y | z-rank/more | g-tall]` = X is taller than Y. With one item, it is the top of all (the biggest).",
   },
   ae: { anchor: "joins.md#sequence-ae", summary: "sequence (first = start)" },
   oe: { anchor: "comparatives.md#equatives-oe-shared-scale", summary: "equal rank" },

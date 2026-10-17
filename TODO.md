@@ -12,8 +12,7 @@ use [skip-cd] for amplify to not deploy.
 consider removing forward links (including prose)
 
 llm-gloss-prompt:
--before phase 3: see llm-gloss-prompt.md § before phase 3
--phase 3
+-phase 3 eval script (first run: 200 pairs, Opus judge, reports in tmp/)
 
 save for near end of limit resets:
 -final exam

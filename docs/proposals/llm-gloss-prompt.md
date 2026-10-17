@@ -1,6 +1,6 @@
 # Translation prompt from the parser
 
-Status: phase 1, steps 1 (policy edits), 2 (extractor and lint, warn mode until step 7, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review): waves 1 to 5 done (wave 4 ran before wave 3), waves 3 and 5 awaiting the editor's review of their diffs ([as built](#phase-1-step-5-as-built)). Step 6 (wave check) ran after each wave. Step 7 (lint to error, [as built](#phase-1-step-7-as-built)) done. The editor items are [settled](#phase-1-still-open). Phase 2 built ([as built](#phase-2-as-built)) and revised after phase 1 ([revision](#phase-2-revision)). Phase 3 not started; two items are queued for it ([before phase 3](#before-phase-3)). Not design authority; fold into tooling and meta docs, then drop.
+Status: phase 1, steps 1 (policy edits), 2 (extractor and lint, warn mode until step 7, [as built](#phase-1-step-2-as-built)), and 3 (review lists, [as built](#phase-1-step-3-as-built)) done, with the [finding categories](#finding-categories) sorted and their four rules written. Step 4 (calibration, [as built](#phase-1-step-4-as-built)) done and approved. Step 4b (scripted fixes, [as built](#phase-1-step-4b-as-built)) done. Step 5 (page review): waves 1 to 5 done (wave 4 ran before wave 3), waves 3 and 5 awaiting the editor's review of their diffs ([as built](#phase-1-step-5-as-built)). Step 6 (wave check) ran after each wave. Step 7 (lint to error, [as built](#phase-1-step-7-as-built)) done. The editor items are [settled](#phase-1-still-open). Phase 2 built ([as built](#phase-2-as-built)) and revised after phase 1 ([revision](#phase-2-revision)). Phase 3: the two prep items are done ([before phase 3](#before-phase-3)); the evaluation script is not built yet. Not design authority; fold into tooling and meta docs, then drop.
 
 ## Problem
 
@@ -329,7 +329,7 @@ Code: [`llm-prompt.ts`](../../src/parse/llm-prompt.ts) (core, selection, prompt;
 - **Core size.** About 4 KB, not 1.5 KB: role names, pointer vowels, tone marks, and the hook reading (`d-tea | instead | d-coffee` = coffee instead of tea) all proved necessary.
 - **Variant tails** of overlay labels (`.strong`, `.weak`, `.fault`, `.share`, `.ledger`, `.bookmark`, `.lasting`, …) are a fixed `GLOSS_READER.tails` table, shown in the legend only when a gloss uses one, not `reader` notes per overlay row. The test fails when an overlay gloss has a tail with no line.
 - **Hyphenated labels.** `CLUES-TOPIC` (a holder) and `AIMED-FLOWING` (emotion pieces) are legend-matched by piece; `ON-BEHALF` by the whole run.
-- **Seed `reader` notes:** holder (`word.xFamily.holder`), date (`number.calendar`), rank (`join.e`), and bars (`sentence.{z,d,b}CoordPart.bar`), from the pilot misses. The holder note's examples turned out to be doc sentences ([before phase 3](#before-phase-3)).
+- **Seed `reader` notes:** holder (`word.xFamily.holder`), date (`number.calendar`), rank (`join.e`), and bars (`sentence.{z,d,b}CoordPart.bar`), from the pilot misses. The holder and bar notes' examples turned out to be doc sentences; all seed notes now use placeholder names ([before phase 3](#before-phase-3)).
 - **Filler examples.** When nothing in the index shares a rare feature with the input, the greedy pick fell back to the shortest glosses, and the forced note example could be one whose note was still teaching commentary (*office handle on first mention*). Fixed in the [revision](#phase-2-revision).
 
 ### Revision after phase 1
@@ -348,8 +348,10 @@ Index after the revision: 1,134 distinct glosses, 181 with a note (was 926 and 8
 ### Before phase 3
 <a id="before-phase-3"></a>
 
-- **Checkpoint answers are the test set.** The Agazan → English answers (about 300) follow the convention and are not in the example pool, so the evaluation needs no hold-out for them. A note is never required in an answer, so the judge scores only the sentence there; the note score comes from the held-out example blocks.
-- **The holder `reader` note gives away the answer.** It reads `th-CLUES-Azawan` = *I gather Azawan thinks …*, the knowing.md example's own wording, so phase 3 would score every holder pair too high. Reword it with names and a channel no doc example uses, or leave reader notes out for pairs from the section the note cites. Check the other seed notes the same way.
+Both done.
+
+- **Checkpoint answers are the test set.** `buildTestSet` in [`llm-examples.ts`](../../src/parse/llm-examples.ts) reads the Agazan → English answers through the lint's extractor: 305 distinct glosses, 43 with a note. They are not in the example pool, so the evaluation needs no hold-out for them; 25 share a gloss with a pool example, which the prompt already skips as the input's own. A note is never required in an answer, so the judge scores only the sentence there; the note score comes from the held-out example blocks.
+- **Reader notes use placeholder names.** The holder note read `th-CLUES-Azawan` = *I gather Azawan thinks …*, the opening of three knowing.md answers, and the bar note's *Alahen leaves later than planned* was comparatives.md's *Azawan arrives later than planned* with the name and verb swapped. Every cast name has a holder example somewhere, so no swap of names would do: the holder, bar, and rank notes now write X and Y (`th-CLUES-X` = I gather X thinks …). A unit test fails when a reader note uses any name a doc gloss uses. The usual phrases themselves (*I gather … thinks*, *than usual*) stay: teaching the phrase is what the note is for, and a user's prompt gets the same help.
 
 ## Phase 3: evaluation
 <a id="evaluation"></a>
@@ -364,6 +366,8 @@ A script, not part of `npm test` (it calls a model and costs money). It runs the
 4. Report the failure rate per construction ID and per label. The worst rows are the next `reader` notes to write, or terminology Gloss cells to sharpen. A construction whose doc examples rarely have a note while replies keep adding the same correct one is a hint that phase 1 missed a required note.
 
 Run it on the smallest model you expect people to paste into. A prompt that works on Haiku will work on larger models.
+
+**First run (editor's settings):** 200 pairs sampled across the example blocks, table rows, and checkpoint answers; translated by Haiku and judged by Opus; reports written to `tmp/llm-eval/` (gitignored), not committed.
 
 ## Pilot
 <a id="pilot"></a>

@@ -7,7 +7,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
-import { exampleBlocks, extraParens, splitFreeEnglish, tableEnglish } from "../lint/free-english.js";
+import { exampleBlocks, extractFreeEnglish, extraParens, splitFreeEnglish, tableEnglish } from "../lint/free-english.js";
 import { fillSelf } from "../learner-name.js";
 import type { ClassifyTables } from "./classify.js";
 import { constructionRegistry } from "./constructions.js";
@@ -41,6 +41,18 @@ export function tableExamples(markdown: string): DocExample[] {
 export { splitFreeEnglish };
 
 const stripEmphasis = (text: string) => text.replace(/\*+([^*]+)\*+/g, "$1");
+
+/**
+ * Agazan → English checkpoint answers (italic). Never in the example pool, so they are the
+ * evaluation's test set: no example has to be held out to score one.
+ */
+export function checkpointAnswers(markdown: string): DocExample[] {
+  return extractFreeEnglish(markdown).flatMap((line) =>
+    line.kind !== "ag-en" || line.agazan == null
+      ? []
+      : [{ agazan: line.agazan, free: line.text, line: markdown.slice(0, line.index).split("\n").length, delimiter: "*" as const }],
+  );
+}
 
 /**
  * The example a prompt may show for one doc block, or null when the block does not fit the
@@ -93,6 +105,22 @@ export function buildExampleIndex(grammarDir: string, tables: ClassifyTables): E
     if (!pair || seen.has(pair.gloss)) continue;
     seen.add(pair.gloss);
     out.push(pair);
+  }
+  return out;
+}
+
+/** Every usable checkpoint answer on the top-level grammar pages, one per distinct gloss. */
+export function buildTestSet(grammarDir: string, tables: ClassifyTables): ExamplePair[] {
+  const seen = new Set<string>();
+  const out: ExamplePair[] = [];
+  for (const page of grammarPages(grammarDir)) {
+    const markdown = readFileSync(join(grammarDir, page), "utf8");
+    for (const example of checkpointAnswers(markdown)) {
+      const pair = examplePair(example, `${page}:${example.line}`, tables);
+      if (!pair || seen.has(pair.gloss)) continue;
+      seen.add(pair.gloss);
+      out.push(pair);
+    }
   }
   return out;
 }

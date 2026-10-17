@@ -4,10 +4,13 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
 
+import { PRACTICE } from "../lint/practice-fixtures.js";
 import { glossLabels as printableLabels } from "../lint/terminology-docs.js";
 import { loadDefaultTables } from "./index.js";
 import {
   buildExampleIndex,
+  buildTestSet,
+  checkpointAnswers,
   constructionReaders,
   docExamples,
   examplePair,
@@ -79,6 +82,15 @@ describe("translation prompt core", () => {
     }
     for (const [id, text] of readers) assert.doesNotMatch(text, /\/[a-zɡ]{1,2}\//, id);
   });
+
+  it("writes reader notes with placeholder names, so a note never gives away a doc example's answer", () => {
+    // Every capitalized word a doc gloss uses as a noun (house cast, offices, places).
+    const names = new Set(index.flatMap((pair) => [...pair.gloss.matchAll(/\b[a-z]{1,2}-←?([A-Z][a-z]+)\b/g)].map((m) => m[1]!)));
+    for (const [id, text] of constructionReaders(tables)) {
+      const used = [...names].filter((name) => new RegExp(`\\b${name}\\b`).test(text));
+      assert.deepEqual(used, [], `${id} names ${used.join(", ")}; write X / Y`);
+    }
+  });
 });
 
 describe("doc examples", () => {
@@ -113,6 +125,14 @@ describe("doc examples", () => {
     assert.deepEqual(tableExamples(md), [{ agazan: "zazawan vowogal.", free: "*Azawan walks.* (alone)", line: 3, delimiter: "*" }]);
     const row = examplePair(tableExamples(md)[0]!, "x.md:3", tables);
     assert.deepEqual([row?.sentence, row?.note], ["Azawan walks.", "alone"]);
+  });
+
+  it("reads Agazan → English checkpoint answers as the test set", () => {
+    const answers = checkpointAnswers(PRACTICE);
+    assert.equal(answers.length, 3);
+    assert.ok(answers.every((answer) => answer.delimiter === "*" && answer.free.startsWith("*")));
+    const testSet = buildTestSet(grammarDir, tables);
+    assert.ok(testSet.length > 250, `test set has ${testSet.length} answers`);
   });
 
   it("fills a SELF slot with the speaker", () => {
