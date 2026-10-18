@@ -161,6 +161,13 @@ No adjective for someone else's feeling: it would bypass the holder warrant. A n
 
 **No default reading of a motive as the actor's own.** A motive word on someone else's act stays your stake, as every sake word does. Reading it as the actor's reason would state what is in their mind without a warrant. Someone else's motive goes through a holder (`thanathom thunemazawan`), as their feelings do. The same holds for prescription: plain `the` is advice for your stake, and advice for the advisee's own good names them in `/b/`.
 
+### Young and sexed animals {#young-and-sexed-animals}
+
+*Puppy*, *mare* and *ewe* are the animal's root plus a `/ɡ/` adjective (`zodogal gahadol`, `zohozal geveval`), taught in [young, male and female animals](../grammar/say-people-places.md#young-animals). Two alternatives were rejected:
+
+- **A live `x` compound** (`zahadoxodogal`, *child* + *dog*). A compound's left root narrows the head without saying how. The dictionary's *baby* + *room* is a room **for** a baby, so *child* + *dog* reads as *a dog for children* just as easily as *a young dog*. The adjective says the dog **is** young. The compound stays legal, but it is not what the recipe teaches.
+- **A dictionary row per English word** (*puppy*, *mare*, *gelding*, *cygnet*). Age and sex are properties of one animal, not kinds of it: a puppy becomes a dog. Rule 1 of [when a compound earns a row](lexicon.md#when-a-compound-earns-a-row) keeps out a thing plus a property. Rows would also add hundreds of English-specific words that one pattern already covers, and the [kin words](../grammar/say-people-places.md#kin-words) say sex with the same adjectives.
+
 ### Denying a list
 
 A **u** join after a closed list denies the list as a whole: it is single-item *not X*, with the list as X (`val vul` *not both*). The rejected reading denied each item and kept the list's vowel. It made `val vul` a second *neither*, it made `vol vul` say the same as plain `vol`, and it left *not both* with no form.

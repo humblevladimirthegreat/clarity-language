@@ -69,10 +69,13 @@ export const ROLE_LINKS: Readonly<Record<string, string>> = {
 /** Classes the lexicon leaves out on purpose (wordnet-index.ts routes) → the sections that say them. */
 export const ROUTE_LINKS: Readonly<Record<RouteClass, string[]>> = {
   kin: ["numbers-applied.md#kin-generations", "say-people-places.md#kin-words"],
-  young: ["clause.md#adjectives-ɡ"],
-  female: ["clause.md#adjectives-ɡ"],
-  male: ["clause.md#adjectives-ɡ"],
+  young: ["say-people-places.md#young-animals", "clause.md#adjectives-ɡ"],
+  female: ["say-people-places.md#young-animals", "clause.md#adjectives-ɡ"],
+  male: ["say-people-places.md#young-animals", "clause.md#adjectives-ɡ"],
 };
+
+/** The lexicon sense whose root is the `/ɡ/` word for each animal class (*young* is the child root). */
+export const ROUTE_QUALIFIERS: Readonly<Record<Exclude<RouteClass, "kin">, string>> = { young: "child", female: "female", male: "male" };
 
 /** A listed compound reached from its parts, and a live `x` compound built from them. */
 export const COMPOUND_LINKS = { listed: "x-compounds.md#lexical-compounds", live: "x-compounds.md#ordinary-compound-order" } as const;

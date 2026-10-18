@@ -12,7 +12,7 @@ import type { Band } from "../lint/learning-order.js";
 import { BANDS } from "../lint/learning-order.js";
 import { grammarPath, matchCues, type CueIndex, type GrammarJob } from "./cues.js";
 import type { CompoundRow } from "../lexicon-compounds.js";
-import { COMPOUND_LINKS, detectClause, detectWord, ROLE_LINKS, ROUTE_LINKS, type DetectorHit } from "./detectors.js";
+import { COMPOUND_LINKS, detectClause, detectWord, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, type DetectorHit } from "./detectors.js";
 import { lookupLexicon, rootsByForm, sideEnding, type LexiconIndex, type LexiconSuggestion } from "./lexicon.js";
 import { doerVerb, tagEnglish, type ClauseFeatures, type TaggedTerm, type WordClass } from "./tag.js";
 import { lookupRoute, lookupWordnet, senseSuggestions, type RouteClass, type WordnetIndex, type WordnetPos } from "./wordnet-index.js";
@@ -88,6 +88,8 @@ export type ClassSuggestion = {
   /** Young and sexed animals: the animal's root, and the root for *young* / *female* / *male*. */
   animal?: RootSuggestion;
   qualifier?: LexiconSuggestion;
+  /** The animal's word and the `/ɡ/` word, as said (`zodogal gahadol` *puppy*). */
+  phrase?: string;
 };
 /**
  * A live `x` compound built from a modifier noun and a head noun that have roots
@@ -193,8 +195,10 @@ function classSuggestion(data: HelperData, t: TaggedTerm, role: string | undefin
   if (route.class === "kin") return out;
   const animal = route.sense ? senseSuggestions(data.lexicon, route.sense)[0] : undefined;
   if (animal) out.animal = asRootSuggestion(data, animal, role);
-  const qualifier = lookupLexicon(data.lexicon, [route.class])[0];
+  const qualifier = senseSuggestions(data.lexicon, ROUTE_QUALIFIERS[route.class]).find((s) => s.tier === "root");
   if (qualifier) out.qualifier = qualifier;
+  const adjective = qualifier && asRootSuggestion(data, qualifier, "ɡ").word;
+  if (out.animal?.word && adjective) out.phrase = `${out.animal.word} ${adjective}`;
   return out;
 }
 

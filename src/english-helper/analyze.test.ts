@@ -96,7 +96,7 @@ describe("WordNet tiers and routes", () => {
       pupper: [{ sense: "dog", tier: "broader", pos: "n" }],
       blarg: [{ sense: "car", tier: "synonym", pos: "v" }],
     },
-    routes: { cousin: { class: "kin" }, sister: { class: "kin" }, puppy: { class: "young", sense: "dog" } },
+    routes: { cousin: { class: "kin" }, sister: { class: "kin" }, piglet: { class: "young", sense: "dog" } },
   };
   const withWordnet = { ...data, wordnet };
   const slotsOf = (text: string) => analyzeEnglish(withWordnet, text).clauses.flatMap((c) => c.slots);
@@ -126,11 +126,12 @@ describe("WordNet tiers and routes", () => {
   });
 
   it("says a young animal as the animal's root plus a /ɡ/ word", () => {
-    const route = slotsOf("Azawan sees a puppy.").find((s) => s.text === "puppy")!.suggestions.find((s): s is ClassSuggestion => s.kind === "class")!;
+    const route = slotsOf("Azawan sees a piglet.").find((s) => s.text === "piglet")!.suggestions.find((s): s is ClassSuggestion => s.kind === "class")!;
     assert.equal(route.class, "young");
     assert.equal(route.animal!.form, root("dog"));
-    assert.ok(route.qualifier);
-    assert.deepEqual(route.links, ["clause.md#adjectives-ɡ"]);
+    assert.equal(route.qualifier!.form, root("child"));
+    assert.equal(route.phrase, `d${root("dog")}l g${root("child")}l`);
+    assert.equal(route.links[0], "say-people-places.md#young-animals");
   });
 });
 

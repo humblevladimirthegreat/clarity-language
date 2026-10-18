@@ -72,7 +72,8 @@ function suggestionLine(data: HelperData, s: Suggestion): string {
       if (s.class === "kin") return `route    kin term  → ${s.links.map((l) => link(data, l)).join(" · ")}`;
       const animal = s.animal ? `${s.animal.emoji ? `${s.animal.emoji} ` : ""}${s.animal.form} "${s.animal.sense}"${s.animal.word ? ` \`${s.animal.word}\`` : ""}` : "the animal's root";
       const qualifier = s.qualifier ? `${s.qualifier.emoji ? `${s.qualifier.emoji} ` : ""}${s.qualifier.form} *${s.class}*` : `*${s.class}*`;
-      return `route    ${s.class} animal: ${animal} + /ɡ/ ${qualifier}  → ${s.links.map((l) => link(data, l)).join(" · ")}`;
+      const phrase = s.phrase ? `\`${s.phrase}\`  ` : "";
+      return `route    ${s.class} animal: ${phrase}${animal} + /ɡ/ ${qualifier}  → ${s.links.map((l) => link(data, l)).join(" · ")}`;
     }
     case "live": {
       const parts = s.parts.map((p) => `${p.emoji ? `${p.emoji} ` : ""}${p.form} "${p.sense}"`).join(" + ");

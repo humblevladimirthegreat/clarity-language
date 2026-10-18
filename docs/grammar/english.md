@@ -4,7 +4,7 @@ These pages are recipes, not lessons. Each one shows how forms you already learn
 
 | Page | For English like |
 |------|------------------|
-| [People, things and places](say-people-places.md) | *as for X*, *whose*, *someone's act*, *would rather*, *different from*, office titles, *do the same to it* |
+| [People, things and places](say-people-places.md) | *as for X*, *whose*, *someone's act*, *would rather*, *different from*, office titles, *sister*, *puppy* / *mare*, *do the same to it* |
 | [Amounts, sizes and time](say-amounts.md) | *from least to most*, *both are*, *two meters taller*, *most of*, *25% of*, *hard to*, units, dates |
 | [Reasons, knowledge and plans](say-reasons.md) | *because* vs *if*, *judging by*, *know*, *biased*, *overconfident*, *would have*, habits, *start / stop doing*, *as of 22 July*, *dreading* / *I felt then* / *it's their fault* |
 | [Asking and answering](say-questions.md) | *You saw WHAT?*, *Really?*, *asks who*, *ask her to*, *Just X?* / *How about X?*, *admittedly*, *What a big dog!*, *by the way* |

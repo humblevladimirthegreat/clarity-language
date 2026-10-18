@@ -277,6 +277,42 @@ English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family 
 
 For *uncle* and *grandfather*, use `gemehel` for `geveval`.
 
+### Young, male and female animals {#young-animals}
+
+**Needs:** [Adjectives `/ɡ/`](clause.md#adjectives-ɡ)
+
+English *puppy*, *kitten*, *mare* and *ewe* each pack an animal together with its age or sex. Agazan says the animal's root, then an adjective: **`gahadol`** *young* (the child root), **`gebebel`** *newborn* (the baby root), **`geveval`** *female*, **`gemehel`** *male*. These are the same adjectives the [kin words](#kin-words) use for *sister* and *brother*.
+
+> `zodogal gahadol vowogal.`
+>
+> [z-dog | g-child] | v-walk
+>
+> "A puppy walks."
+
+Adjectives stack, so a female lamb is sheep, young, female.
+
+> `zazawan dehebel gahadol geveval vahahal.`
+>
+> z-Azawan | [d-sheep | g-child | g-female] | v-see
+>
+> "Azawan sees a female lamb."
+
+| English | Agazan |
+|---------|--------|
+| *puppy* | `zodogal gahadol` |
+| *kitten* | `zagadul gahadol` |
+| *lamb* | `zehebel gahadol` |
+| *foal* | `zohozal gahadol` |
+| *duckling* | `zadagul gahadol` |
+| *newborn calf* | `zagawul gebebel` |
+| *mare* | `zohozal geveval` |
+| *stallion* | `zohozal gemehel` |
+| *ewe* | `zehebel geveval` |
+| *lioness* | `zalahel geveval` |
+| *hen* | `zehegal geveval` |
+
+Some young and some males already have a root of their own. Use it: `zehagal` *chick* and `zuruzel` *rooster*. A young animal that looks like a different creature has its own dictionary word too, such as `zebadelabogal` *caterpillar*.
+
 ### Buying and selling {#buy-sell}
 
 **Needs:** [Exchange](relations.md#exchange)
