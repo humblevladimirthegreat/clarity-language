@@ -31,7 +31,9 @@
     "test": "node scripts/test.mjs",
     "parse": "node scripts/parse.mjs",
     "find": "node scripts/find.mjs",
-    "find-english": "node scripts/find-english.mjs"
+    "find-english": "node scripts/find-english.mjs",
+    "english-helper": "node scripts/english-helper.mjs",
+    "english-helper-recall": "tsx scripts/english-helper-recall.ts"
   },
   "engines": {
     "node": ">=24"
@@ -41,6 +43,7 @@
   "dependencies": {
     "chevrotain": "^13.2.0",
     "chevrotain-allstar": "^0.5.0",
+    "compromise": "^14.18.0",
     "minisearch": "^7.2.0"
   },
   "devDependencies": {

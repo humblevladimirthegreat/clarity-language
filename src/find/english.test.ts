@@ -6,7 +6,7 @@ import { loadDefaultTables } from "../parse/index.js";
 import { listMarkdown } from "../markdown-files.js";
 import { parsePublishedCsv } from "../lexicon-search.js";
 import { dataPath } from "../repo-paths.js";
-import { collectEnglishEntries, collectRootEntries, searchEnglish, tokens } from "./english.js";
+import { collectEnglishEntries, collectRootEntries, lintRecipeTables, searchEnglish, tokens } from "./english.js";
 
 const tables = loadDefaultTables();
 
@@ -132,5 +132,54 @@ describe("collectRootEntries", () => {
   it("covers the real lexicon aliases", () => {
     const real = collectRootEntries(parsePublishedCsv(readFileSync(dataPath("lexicon-published.csv"), "utf8")));
     assert.ok(real.some((e) => e.alias));
+  });
+});
+
+describe("recipe table harvest", () => {
+  const markdown = `## One English word, many jobs {#many-jobs}
+
+### *'s* / *of* {#of}
+
+| English itch | Agazan job | Teach |
+|--------------|------------|-------|
+| in B's use (*Azawan's dog*) | hook **\`em\`** + \`/b/\` | [Whose](hooks.md#genitive) |
+
+## Everyday words {#everyday-words}
+
+| English itch | Agazan job | Teach |
+|--------------|------------|-------|
+| *on* / *onto* (*sits on a chair*) | hook **\`aol\`** + \`/b/\` | [Hooks](hooks.md#extra-noun) |
+`;
+
+  it("keeps the Teach link and the cue words", () => {
+    const [of, on] = entriesOf(markdown);
+    assert.deepEqual([of!.teach, of!.cues], ["hooks.md#genitive", ["'s", "of"]]);
+    assert.deepEqual([on!.teach, on!.cues], ["hooks.md#extra-noun", ["on", "onto"]]);
+  });
+
+  it("lints the many-jobs shape", () => {
+    const bad = `## One English word, many jobs {#many-jobs}
+
+### By
+
+| English | Agazan |
+|---------|--------|
+| tool | \`ael\` |
+`;
+    assert.deepEqual(
+      lintRecipeTables(bad, "page.md").map((f) => f.line),
+      [3, 5],
+    );
+    assert.deepEqual(lintRecipeTables(markdown, "page.md"), []);
+  });
+
+  it("finds a table the harvest cannot read", () => {
+    assert.equal(lintRecipeTables("| Unit | Example |\n|---|---|\n| newton | `bavavam` |\n", "page.md").length, 1);
+  });
+
+  it("passes on the recipe pages", () => {
+    const pages = listMarkdown("docs/grammar").filter((f) => /\/(english|say-[a-z-]+)\.md$/.test(f));
+    assert.ok(pages.length > 1);
+    assert.deepEqual(pages.flatMap((f) => lintRecipeTables(readFileSync(f, "utf8"), f)), []);
   });
 });

@@ -1670,7 +1670,11 @@ class AgazanSentenceParser extends CstParser {
   }
 }
 
-const parserInstance = new AgazanSentenceParser();
+// Built on first use: construction takes seconds, and many importers never parse a sentence.
+let parserInstance: AgazanSentenceParser | undefined;
+function sentenceParser(): AgazanSentenceParser {
+  return (parserInstance ??= new AgazanSentenceParser());
+}
 let lastCst: CstNode | undefined;
 
 function punctFromToken(token: IToken): PunctKind {
@@ -2860,14 +2864,15 @@ function buildUtterances(cst: CstNode, tokens: IToken[]): Utterance[] {
 
 export function parseSentenceTokens(input: IToken[]): ParseResult {
   const tokens = markContext(input);
-  parserInstance.input = tokens;
-  const cst = parserInstance.document();
+  const parser = sentenceParser();
+  parser.input = tokens;
+  const cst = parser.document();
   lastCst = cst;
 
-  if (parserInstance.errors.length > 0) {
+  if (parser.errors.length > 0) {
     throw new SentenceParseError(
-      parserInstance.errors.map((e) => e.message).join("; "),
-      parserInstance.errors,
+      parser.errors.map((e) => e.message).join("; "),
+      parser.errors,
     );
   }
 
@@ -2885,5 +2890,5 @@ export function parseSentenceTokensWithCst(tokens: IToken[]): { result: ParseRes
 
 /** Grammar productions keyed by rule name (the sentence-layer construction inventory). */
 export function sentenceGrammar(): ReturnType<AgazanSentenceParser["getGAstProductions"]> {
-  return parserInstance.getGAstProductions();
+  return sentenceParser().getGAstProductions();
 }

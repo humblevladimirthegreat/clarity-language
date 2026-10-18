@@ -32,6 +32,14 @@ export type EnglishEntry = {
   tokens: string[];
   /** Root entries only: the cue is a search-only `english_aliases` synonym, not a sense. */
   alias?: boolean;
+  /** Table rows only: the first link in a `Teach` column (`hooks.md#extra-noun`), relative to the page. */
+  teach?: string;
+  /**
+   * Table rows only: the English words the row answers. Under `#many-jobs` they are the italic
+   * words of the `###` heading (`### *by*`); elsewhere, the italic words of the first `English…`
+   * cell before its parenthetical (`*in* / *into* (*runs into a train*)`).
+   */
+  cues?: string[];
 };
 
 /** Page label for entries that come from the published lexicon, not a grammar page. */
@@ -77,6 +85,11 @@ const FORM_HEADER = /^(agazan|form|agazan job)$/i;
 const ENGLISH_HEADER = /^(english\b.*|use|reading|you mean|meaning|gloss|for english like|.* sense)$/i;
 /** Columns that are neither the form nor English: mnemonics, pronunciation, notes. */
 const OTHER_HEADER = /^(cue|ipa|same root as|teach|anatomy|notes|why|example|examples)$/i;
+const TEACH_HEADER = /^teach$/i;
+/** The English column whose italics are the cue words (`English`, `English itch`, `English *will*`). */
+const CUE_HEADER = /^english\b/i;
+/** The recipe section whose `###` headings name the English cue of each table under them. */
+export const MANY_JOBS_ID = "many-jobs";
 const ROLE_PREFIX = /^(th|[zdbvgwhxy])-/;
 
 function stem(word: string): string {
@@ -135,25 +148,72 @@ function formColumn(header: string[], body: string[][]): number {
   );
 }
 
-/** Table rows with an Agazan column and at least one English column. */
-function tableRows(lines: string[]): { form: string; english: string; line: number }[] {
-  const rows: { form: string; english: string; line: number }[] = [];
-  for (let i = 0; i + 1 < lines.length; i++) {
-    if (!isTableRow(lines[i]!) || !isDividerRow(lines[i + 1]!) || (i > 0 && isTableRow(lines[i - 1]!))) continue;
-    const header = splitRow(lines[i]!).map(plainText);
+export type TableRow = { form: string; english: string; line: number; teach?: string; cues?: string[] };
+
+/** Italic words or phrases in a cell, as written (`*in* / *into*` → `in`, `into`). */
+export function italicCues(text: string): string[] {
+  return [...text.matchAll(/(?<![*\w])\*([^*]+)\*(?![*\w])/g)].map((m) => plainText(m[1]!)).filter(Boolean);
+}
+
+/** An English cell's cue words: italics before its first parenthesis. */
+function cellCues(cell: string): string[] {
+  return italicCues(cell.split("(")[0]!);
+}
+
+function firstLink(cell: string): string | undefined {
+  return cell.match(/\]\(([^)\s]+)\)/)?.[1];
+}
+
+type Heading = { level: number; text: string; id?: string };
+
+function heading(line: string): Heading | undefined {
+  const m = line.match(/^(#{1,6})\s+(.*?)\s*(?:\{#([^}]+)\})?\s*$/);
+  return m ? { level: m[1]!.length, text: m[2]!, id: m[3] } : undefined;
+}
+
+/** One Markdown table with the headings it sits under. */
+export type RawTable = { header: string[]; body: string[][]; line: number; h2?: Heading; h3?: Heading };
+
+/** Every table on a page, with its nearest `##` and `###` headings. Fenced code is skipped. */
+export function pageTables(lines: string[]): RawTable[] {
+  const out: RawTable[] = [];
+  let h2: Heading | undefined;
+  let h3: Heading | undefined;
+  let fenced = false;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]!;
+    if (/^\s*(```|~~~)/.test(line)) fenced = !fenced;
+    if (fenced) continue;
+    const h = heading(line);
+    if (h?.level === 2) [h2, h3] = [h, undefined];
+    else if (h?.level === 3) h3 = h;
+    if (i + 1 >= lines.length || !isTableRow(line) || !isDividerRow(lines[i + 1]!) || (i > 0 && isTableRow(lines[i - 1]!))) continue;
     let end = i + 2;
     while (end < lines.length && isTableRow(lines[end]!)) end++;
-    const body = lines.slice(i + 2, end).map(splitRow);
+    out.push({ header: splitRow(line).map(plainText), body: lines.slice(i + 2, end).map(splitRow), line: i + 1, h2, h3 });
+    i = end - 1;
+  }
+  return out;
+}
+
+/** Table rows with an Agazan column and at least one English column. */
+function tableRows(lines: string[]): TableRow[] {
+  const rows: TableRow[] = [];
+  for (const { header, body, line, h2, h3 } of pageTables(lines)) {
     const formCol = formColumn(header, body);
     const englishCols = header.flatMap((h, c) => (c !== formCol && ENGLISH_HEADER.test(h) ? [c] : []));
-    if (formCol >= 0 && englishCols.length > 0) {
-      body.forEach((cells, r) => {
-        const form = tableForm(cells[formCol] ?? "");
-        const english = englishCols.map((c) => cells[c] ?? "").filter((c) => plainText(c)).join(" — ");
-        if (form && english) rows.push({ form, english, line: i + 3 + r });
-      });
-    }
-    i = end - 1;
+    if (formCol < 0 || englishCols.length === 0) continue;
+    const teachCol = header.findIndex((h) => TEACH_HEADER.test(h));
+    const cueCol = header.findIndex((h) => CUE_HEADER.test(h));
+    const headingCues = h2?.id === MANY_JOBS_ID && h3 ? italicCues(h3.text) : undefined;
+    body.forEach((cells, r) => {
+      const form = tableForm(cells[formCol] ?? "");
+      const english = englishCols.map((c) => cells[c] ?? "").filter((c) => plainText(c)).join(" — ");
+      if (!form || !english) return;
+      const teach = teachCol >= 0 ? firstLink(cells[teachCol] ?? "") : undefined;
+      const cues = headingCues ?? (cueCol >= 0 ? cellCues(cells[cueCol] ?? "") : undefined);
+      rows.push({ form, english, line: line + 2 + r, ...(teach ? { teach } : {}), ...(cues?.length ? { cues } : {}) });
+    });
   }
   return rows;
 }
@@ -181,7 +241,7 @@ export function collectEnglishEntries(markdown: string, page: string, tables: Cl
 
   const entries: EnglishEntry[] = [];
   const seenGloss = new Set<string>();
-  const add = (kind: EntryKind, form: string, english: string, offset: number) => {
+  const add = (kind: EntryKind, form: string, english: string, offset: number, extra: Pick<EnglishEntry, "teach" | "cues"> = {}) => {
     const section = sectionAt(sections, offset);
     if (section.ignored) return;
     const toks = tokens(english);
@@ -191,7 +251,7 @@ export function collectEnglishEntries(markdown: string, page: string, tables: Cl
       if (seenGloss.has(key)) return;
       seenGloss.add(key);
     }
-    entries.push({ english, form, kind, page, line: lineOf(offset), slug: section.slug, title: section.title, band: section.band, tokens: toks });
+    entries.push({ english, form, kind, page, line: lineOf(offset), slug: section.slug, title: section.title, band: section.band, tokens: toks, ...extra });
   };
   const addGlosses = (agazan: string, offset: number) => {
     let words: { raw: string; gloss: string }[];
@@ -213,7 +273,9 @@ export function collectEnglishEntries(markdown: string, page: string, tables: Cl
     if (item.loose) add("practice", item.agazan, item.loose, item.index);
     addGlosses(item.agazan, item.index);
   }
-  for (const row of tableRows(text.split("\n"))) add("table", row.form, row.english, lineStarts[row.line - 1]!);
+  for (const { form, english, line, teach, cues } of tableRows(text.split("\n"))) {
+    add("table", form, english, lineStarts[line - 1]!, { ...(teach ? { teach } : {}), ...(cues ? { cues } : {}) });
+  }
   return entries;
 }
 
@@ -296,4 +358,50 @@ export function searchEnglish(entries: readonly EnglishEntry[], phrase: string, 
   // A cheat sheet repeats its owning pages, so on a tie the owning page comes first.
   const onSheet = (s: SectionHit) => (s.page.includes("/cheat-sheets/") ? 1 : 0);
   return sections.sort((a, b) => b.score - a.score || onSheet(a) - onSheet(b) || byEntry(a.hits[0]!, b.hits[0]!));
+}
+
+export type RecipeTableFinding = { page: string; line: number; message: string };
+
+/**
+ * The recipe-page structure the English helper reads (english.md, say-*.md): under
+ * `#many-jobs` each `###` heading is a list of italic cues and each table is
+ * `English itch | Agazan job | Teach` with a link in every `Teach` cell; every other
+ * table with Agazan in it has an Agazan and an English column the harvest recognizes.
+ */
+export function lintRecipeTables(markdown: string, page: string): RecipeTableFinding[] {
+  const findings: RecipeTableFinding[] = [];
+  const lines = markdown.split("\n");
+  for (let i = 0; i < lines.length; i++) {
+    const h = heading(lines[i]!);
+    if (h?.level !== 2 || h.id !== MANY_JOBS_ID) continue;
+    for (let j = i + 1; j < lines.length; j++) {
+      const sub = heading(lines[j]!);
+      if (sub && sub.level <= 2) break;
+      if (sub?.level === 3 && !/^\*[^*]+\*(\s*\/\s*\*[^*]+\*)*$/.test(sub.text)) {
+        findings.push({ page, line: j + 1, message: `#${MANY_JOBS_ID} heading "${sub.text}" is not a list of italic English cues` });
+      }
+    }
+  }
+  for (const table of pageTables(lines)) {
+    const where = { page, line: table.line };
+    if (table.h2?.id === MANY_JOBS_ID) {
+      if (table.header.join(" | ") !== "English itch | Agazan job | Teach") {
+        findings.push({ ...where, message: `#${MANY_JOBS_ID} table header is "${table.header.join(" | ")}", not "English itch | Agazan job | Teach"` });
+        continue;
+      }
+      if (!table.h3) findings.push({ ...where, message: `#${MANY_JOBS_ID} table has no \`###\` cue heading` });
+      table.body.forEach((cells, r) => {
+        if (!firstLink(cells[2] ?? "")) findings.push({ page, line: table.line + 2 + r, message: "Teach cell has no link" });
+      });
+      continue;
+    }
+    // A table with no Agazan at all (a page index) is not a recipe table.
+    if (!table.body.some((cells) => cells.some((cell) => /`[^`]+`/.test(cell)))) continue;
+    const formCol = formColumn(table.header, table.body);
+    const englishCol = table.header.findIndex((h, c) => c !== formCol && ENGLISH_HEADER.test(h));
+    if (formCol < 0 || englishCol < 0) {
+      findings.push({ ...where, message: `table "${table.header.join(" | ")}" has no ${formCol < 0 ? "Agazan" : "English"} column the English harvest recognizes` });
+    }
+  }
+  return findings;
 }

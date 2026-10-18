@@ -12,11 +12,12 @@
  * --include-examples adds docs/examples.
  */
 import { existsSync, readFileSync } from "node:fs";
-import { relative } from "node:path";
+import { join, relative } from "node:path";
 
 import { loadDefaultTables } from "../parse/index.js";
 import { parsePublishedCsv } from "../lexicon-search.js";
-import { dataPath } from "../repo-paths.js";
+import { dataPath, REPO_ROOT } from "../repo-paths.js";
+import { loadEnglishEntries } from "../find/entries-cache.js";
 import { listMarkdown } from "../markdown-files.js";
 import { BANDS, type Band } from "../lint/learning-order.js";
 import { collectEnglishEntries, collectRootEntries, ENTRY_KINDS, plainText, searchEnglish, type EntryKind, type SectionHit } from "../find/english.js";
@@ -57,11 +58,10 @@ for (let i = 0; i < args.length; i++) {
 }
 if (phrases.length === 0) usage("give at least one English phrase");
 
-const roots = paths.length ? paths : ["docs/grammar", ...(includeExamples ? ["docs/examples"] : [])].filter((dir) => existsSync(dir));
-const tables = loadDefaultTables();
-const entries = roots.flatMap((root) =>
-  listMarkdown(root).flatMap((file) => collectEnglishEntries(readFileSync(file, "utf8"), relative(process.cwd(), file), tables)),
-);
+// The default folders come from the shared cache; explicit paths are read fresh.
+const entries = paths.length
+  ? paths.flatMap((root) => listMarkdown(root).flatMap((file) => collectEnglishEntries(readFileSync(file, "utf8"), relative(process.cwd(), file), loadDefaultTables())))
+  : ["docs/grammar", ...(includeExamples ? ["docs/examples"] : [])].filter((dir) => existsSync(join(REPO_ROOT, dir))).flatMap((dir) => loadEnglishEntries(dir));
 
 if (paths.length === 0) entries.push(...collectRootEntries(parsePublishedCsv(readFileSync(dataPath("lexicon-published.csv"), "utf8"))));
 

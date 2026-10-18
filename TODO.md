@@ -10,10 +10,12 @@ use [skip-cd] for amplify to not deploy.
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -consider removing forward mentions/links (including prose)
 -vocab flashcards generator
+-english to agazan helper
+-site visitor statistics
+-contact form / about me
 
 save for near end of limit resets:
 -final exam
--do rest of ngsl
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.
 -review published-lexicon for psychology - are there any abstract roots that are prone to cognitive biases that would benefit from special attention such as carefully choosing the concrete
 

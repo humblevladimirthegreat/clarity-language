@@ -37,8 +37,8 @@ English *both are challenging* (or *Azawan and Alahen are challenging*) says **e
 
 Equality **`oe`** with a shared scale needs **two or more** names. **`oe`** with no shared scale is a tie among the names (equal rank).
 
-| Example | Reading |
-|---------|---------|
+| Agazan | Reading |
+|--------|---------|
 | `zazawan zalahen zahaben zoel gamadam` | *Azawan, Alahen, and Ahaben are equally challenging* |
 | `zodogal zagadul zoel gamadam` | *the dog is as challenging as the cat* |
 
@@ -446,8 +446,8 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bezezem g
 
 **Common derived (optional)**: unit metaphor on a dedicated root; related **quantity** stays on the original row:
 
-| Unit | Unit root (metaphor) | Example | Quantity (unchanged) |
-|------|----------------------|---------|----------------------|
+| English unit | Unit root (metaphor) | Example | Quantity (unchanged) |
+|--------------|----------------------|---------|----------------------|
 | newton | `avava` *newton* | `bavavam g+10` | `abahe` *force* |
 | pascal | `edaze` *pascal* | `bedazem g+101325` | `agabe` *pressure* |
 | joule | `azahe` *joule* | `bazahem g+500` | `abado` *energy* |

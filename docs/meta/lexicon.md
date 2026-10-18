@@ -44,11 +44,14 @@ Never a seed:
 - **Gendered person and profession variants** (man-X, woman-X). Use the neutral person form.
 - **Visual variants of an existing seed:** an animal's face next to its body (🐴 next to 🐎), near-identical faces (🤣 next to 😂), the globe regions, colored hearts, books and squares, clock times, skin tones, and left- or right-facing versions.
 - One seed per row, one row per seed.
+- **No good emoji:** flag the sense for human review rather than seeding it loosely.
 
 ### Labels and senses
 
 - **Concrete label:** the English word people use for the thing, not the Unicode name (*cupid*, not *heart with arrow*; *villain*, not *angry face with horns*). Flag rows follow [flag rows](#flag-rows). `convert-word` needs a CMU pronunciation for the label. Add a missing one to `CMU_OVERRIDES` in [`src/cmu-dict.ts`](../../src/cmu-dict.ts) rather than bending the label.
 - **Multiword labels and glosses:** join the words with hyphens, never spaces: *gas-pump*, *black-pepper*, *wedding-dress*. This holds for concrete labels, compound glosses and aliases alike.
+- **Units:** a unit (*mile*, *foot*, *pound*), imperial ones included, is an abstract sense on an existing root (*mile* on `ubuda`), not a new row.
+- **Kin pairs:** a gendered kin pair (*mother* / *father*) is allowed, unlike gendered profession variants.
 - **Abstract and aliases:** never repeat another row's concrete, abstract or `english_aliases` entry. When a new row takes over a sense, move the alias off the old row (🌍 *earth* took *world* and *earth* from 🌐).
 
 ### No English puns
@@ -73,6 +76,8 @@ When a root's spelling is not yet known (a proposal, a draft page, a planned ove
 
 - **Three letters:** rows backed by an overlay, plus the marked pronouns. These are annealed so short roots stay apart from each other.
 - **Five letters:** every other row, frequent senses first.
+
+A sense being common in English (a high word-frequency rank) does not earn a three-letter root.
 
 So a row that gains its first overlay needs a `convert-word --only` run to get a three-letter root. A row that loses its last overlay keeps its short root until the next full `--lexicon` run, which may lengthen it.
 
@@ -119,7 +124,7 @@ When a needed head is missing, add it before writing its compounds, since moving
 `npm run compound-fill` drafts compounds one head at a time, naming roots by seed or English label, never by spelling:
 
 1. `heads` lists heads by compound count; `heads 🐦 🐟` shows each head's row and compounds.
-2. `synsets <word>` lists WordNet noun senses; `candidates <synset> [--depth N --max-rank N] [--triage]` lists hyponyms by frequency and hides covered senses.
+2. `synsets <word>` lists WordNet noun senses; `candidates <synset> [--depth N --max-rank N]` lists hyponyms by frequency and hides covered senses.
 3. `check <word>…` reports exact hits on a root, alias, compound or overlay gloss. For near matches use `find-english --kind root` and `lexicon-search`.
 4. Write a draft CSV with the header `english,left,join,head,abstract,mnemonic`. The mnemonic opens *"<left> specifying <head> is …"*. `draft <file>` prints each stem, the validator's errors and extra warnings.
 5. `draft <file> --write` appends the rows, only when no row has an error. Then run `npm run check-compounds`, `npm test`, and `npm run cheat-sheet-blocks -- --write`.

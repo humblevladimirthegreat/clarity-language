@@ -5,7 +5,7 @@
  * Run: npm run compound-fill -- heads                       (heads by compound count)
  *      npm run compound-fill -- heads 🐦 bird house          (one head: its row and compounds)
  *      npm run compound-fill -- synsets herb spice           (WordNet noun senses, to pick a synset)
- *      npm run compound-fill -- candidates herb.n.02 spice.n.02 [--depth N] [--max-rank N] [--all] [--triage]
+ *      npm run compound-fill -- candidates herb.n.02 spice.n.02 [--depth N] [--max-rank N] [--all]
  *      npm run compound-fill -- check basil mint parsley     (or `-` for one word per line on stdin)
  *      npm run compound-fill -- draft path/to/draft.csv [--write]
  *
@@ -36,11 +36,10 @@ import { parseCsv } from "../src/csv.js";
 import { parseCompoundCsv, serializeCompoundCsv } from "../src/lexicon-compounds.js";
 import { parseOverlayCsv, parsePublishedCsv } from "../src/lexicon-search.js";
 import { ensureFrequencyFile, loadFrequencyRanks } from "../src/lexicon-place.js";
-import { dataPath, REPO_ROOT } from "../src/repo-paths.js";
+import { dataPath } from "../src/repo-paths.js";
 import { ensureWordnet, NounWordnet } from "../src/wordnet.js";
 
 const compoundsPath = dataPath("lexicon-compounds.csv");
-const TRIAGE = `${REPO_ROOT}/docs/proposals/ngsl-lexicon-triage.csv`;
 /** Rank for a lemma outside the 50k frequency list, multiword lemmas included. */
 const UNRANKED = 50001;
 
@@ -155,7 +154,7 @@ type Candidate = {
 
 async function candidates(
   synsets: string[],
-  options: { depth: number; maxRank: number; all: boolean; triage: boolean },
+  options: { depth: number; maxRank: number; all: boolean },
   lexicon: Lexicon,
   json: boolean,
 ): Promise<number> {
@@ -163,13 +162,13 @@ async function candidates(
   const freq = loadFrequencyRanks();
   const wordnet = synsets.length ? new NounWordnet(await ensureWordnet()) : undefined;
   const found = new Map<string, Candidate>();
-  const add = (words: string[], source: string, gloss: string, rank?: number) => {
+  const add = (words: string[], source: string, gloss: string) => {
     const lemmas = words.filter((w) => w === w.toLowerCase());
     const word = lemmas[0];
     if (!word || found.has(word)) return;
     const hits = lemmas.flatMap((w) => senseCoverage(w, lexicon));
     const best = Math.min(...lemmas.map((w) => freq.get(w) ?? UNRANKED));
-    found.set(word, { word, synonyms: lemmas.slice(1), source, gloss, rank: rank ?? best, hits });
+    found.set(word, { word, synonyms: lemmas.slice(1), source, gloss, rank: best, hits });
   };
 
   let failed = 0;
@@ -184,12 +183,6 @@ async function candidates(
       for (const child of wordnet!.hyponyms(root, options.depth)) {
         add(child.words, `${name}${child.depth > 1 ? ` (depth ${child.depth})` : ""}`, child.gloss);
       }
-    }
-  }
-  if (options.triage) {
-    for (const row of parseCsv(readFileSync(TRIAGE, "utf8")).rows) {
-      if (row.fix !== "Compound" || /^(Not )?applied/i.test(row.note ?? "")) continue;
-      add([row.lemma!], "ngsl-triage", row.proposal ?? "", Number(row.rank));
     }
   }
 
@@ -279,7 +272,6 @@ async function main(): Promise<number> {
   if (flag("--help") || flag("-h")) usage();
   const json = flag("--json");
   const all = flag("--all");
-  const triage = flag("--triage");
   const write = flag("--write");
   const depth = Number(value("--depth") ?? 1);
   const maxRank = Number(value("--max-rank") ?? Infinity);
@@ -300,8 +292,8 @@ async function main(): Promise<number> {
       return check(words, lexicon, json);
     }
     case "candidates": {
-      if (rest.length === 0 && !triage) usage();
-      return candidates(rest, { depth, maxRank, all, triage }, lexicon, json);
+      if (rest.length === 0) usage();
+      return candidates(rest, { depth, maxRank, all }, lexicon, json);
     }
     case "draft": {
       const path = rest[0];
