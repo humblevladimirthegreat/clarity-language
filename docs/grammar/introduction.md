@@ -90,4 +90,4 @@ I would also like to thank the Conlangs community on Reddit for their wealth of 
 
 I also thank all the beta testers and reviewers for their feedback and questions.
 
-The grammar site is built with VitePress. Parsing uses Chevrotain (with chevrotain-allstar) and Peggy. Lexicon search uses MiniSearch, and the English helper uses Compromise and data derived from WordNet 3.1.
+The grammar site is built with VitePress. Parsing uses Chevrotain (with chevrotain-allstar) and Peggy. Lexicon search uses MiniSearch, and the English helper uses Compromise and data derived from Open English WordNet.

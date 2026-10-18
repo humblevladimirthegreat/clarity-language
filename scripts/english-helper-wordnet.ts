@@ -5,7 +5,8 @@
  *
  * Run: npm run english-helper-wordnet   (after a lexicon CSV change; the staleness test says when)
  *
- * Fetches WordNet 3.1 into tmp/wordnet/ once. The output holds English words only, never root
+ * Fetches Open English WordNet 2025 into tmp/oewn-2025/ (and the WordNet 3.1 index files, for
+ * SemCor counts, into tmp/wordnet-3.1/) once. The output holds English words only, never root
  * spellings, so it is committed and neither the site build nor CI needs WordNet.
  *
  * - synonym: shares a synset with a sense, both within their first SYNONYM_RANK senses; or an
@@ -27,7 +28,7 @@ import { buildLexiconIndex } from "../src/english-helper/lexicon.js";
 import { WORDNET_INDEX_VERSION, wordnetInputs, type RouteClass, type WordnetEntry, type WordnetIndex, type WordnetRoute } from "../src/english-helper/wordnet-index.js";
 import { parseCompoundCsv, parseOverlayCsv, parsePublishedCsv } from "../src/lexicon-search.js";
 import { dataPath, REPO_ROOT } from "../src/repo-paths.js";
-import { ensureWordnet, Wordnet, WORDNET_POS, type Synset } from "../src/wordnet.js";
+import { ensureSemcorCounts, ensureWordnet, Wordnet, WORDNET_POS, type Synset } from "../src/wordnet.js";
 
 const OUT = `${REPO_ROOT}/src/generated/english-wordnet.json`;
 const SYNONYM_RANK = 3;
@@ -41,7 +42,7 @@ const published = parsePublishedCsv(readFileSync(dataPath("lexicon-published.csv
 const compounds = parseCompoundCsv(readFileSync(dataPath("lexicon-compounds.csv"), "utf8"));
 const overlays = parseOverlayCsv(readFileSync(dataPath("lexicon-overlays.csv"), "utf8"));
 const lexicon = buildLexiconIndex(published, compounds, overlays);
-const wn = new Wordnet(await ensureWordnet());
+const wn = new Wordnet(await ensureWordnet(), await ensureSemcorCounts());
 
 /** A lexicon key as WordNet spells it (`living-room` is in WordNet both ways). */
 const wnForm = (key: string) => (wn.offsets(key, "n").length || wn.offsets(key, "v").length ? key : key.replace(/-/g, " "));
@@ -68,6 +69,12 @@ function add(lemma: string, entry: WordnetEntry, score: number): void {
 }
 
 /**
+ * Extra children for the broader tier. OEWN files role nouns (*architect*, *banker*) under
+ * *doer*, a causal agent, not under *person* as WordNet 3.1 did.
+ */
+const grafts = new Map([[wn.lookup("person.n.01")[0]!.offset, wn.hyponyms(wn.lookup("doer.n.01")[0]!)]]);
+
+/**
  * Senses with a root, compound or overlay row. A root takes its part of speech at use time, so
  * each is read in every WordNet part of speech (*walk* the noun and the verb).
  */
@@ -87,7 +94,7 @@ for (const { sense, form } of targets) {
     });
     if (p !== "n" && p !== "v") continue;
     synsets.slice(0, BROADER_RANK).forEach((synset, r) => {
-      for (const child of wn.hyponyms(synset)) {
+      for (const child of [...wn.hyponyms(synset), ...(grafts.get(synset.offset) ?? [])]) {
         for (const word of child.words) if (rank(word, child) < MEMBER_RANK) add(word, { sense, tier: "broader", pos: p }, 30 + r + rank(word, child));
         for (const grandchild of wn.hyponyms(child)) {
           for (const word of grandchild.words) {

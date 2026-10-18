@@ -1,22 +1,28 @@
 /**
- * Read-only access to Princeton WordNet 3.1 (WNDB format), all four parts of speech: synsets,
+ * Read-only access to Open English WordNet 2025 (WNDB format), all four parts of speech: synsets,
  * hypernyms, hyponyms, similar-to and derivation pointers. Used
  * by the compound-fill candidate pass and the English helper's reverse index
- * (scripts/english-helper-wordnet.ts). The dictionary is fetched once into `tmp/wordnet/`.
+ * (scripts/english-helper-wordnet.ts). The dictionary is fetched once into `tmp/oewn-2025/`.
+ *
+ * OEWN carries no SemCor tag counts, so the frequency hint comes from the Princeton WordNet 3.1
+ * index files (`ensureSemcorCounts`), matched by lemma.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { gunzipSync } from "node:zlib";
+import { gunzipSync, inflateRawSync } from "node:zlib";
 
 import { REPO_ROOT } from "./repo-paths.js";
 
-const WORDNET_DIR = join(REPO_ROOT, "tmp", "wordnet");
-const WORDNET_URL = "https://registry.npmjs.org/wordnet-db/-/wordnet-db-3.1.14.tgz";
+const WORDNET_DIR = join(REPO_ROOT, "tmp", "oewn-2025");
+const WORDNET_URL = "https://en-word.net/downloads/english-wordnet-2025.zip";
+const SEMCOR_DIR = join(REPO_ROOT, "tmp", "wordnet-3.1");
+const SEMCOR_URL = "https://registry.npmjs.org/wordnet-db/-/wordnet-db-3.1.14.tgz";
 
 export const WORDNET_POS = ["n", "v", "a", "r"] as const;
 export type WordnetPos = (typeof WORDNET_POS)[number];
 const FILE_POS: Record<WordnetPos, string> = { n: "noun", v: "verb", a: "adj", r: "adv" };
-const WORDNET_FILES = WORDNET_POS.flatMap((pos) => [`index.${FILE_POS[pos]}`, `data.${FILE_POS[pos]}`]);
+const INDEX_FILES = WORDNET_POS.map((pos) => `index.${FILE_POS[pos]}`);
+const WORDNET_FILES = [...INDEX_FILES, ...WORDNET_POS.map((pos) => `data.${FILE_POS[pos]}`)];
 
 export type Pointer = {
   /** `@` hypernym, `~` hyponym, `+` derivation, `&` similar-to, … */
@@ -60,19 +66,45 @@ export function untar(archive: Buffer): Map<string, Buffer> {
   return files;
 }
 
-export async function ensureWordnet(): Promise<string> {
-  if (WORDNET_FILES.every((name) => existsSync(join(WORDNET_DIR, name)))) return WORDNET_DIR;
-  const res = await fetch(WORDNET_URL);
-  if (!res.ok) throw new Error(`fetch ${WORDNET_URL}: ${res.status}`);
-  const files = untar(gunzipSync(Buffer.from(await res.arrayBuffer())));
-  mkdirSync(WORDNET_DIR, { recursive: true });
-  for (const name of WORDNET_FILES) {
-    const body = files.get(`package/dict/${name}`);
-    if (!body) throw new Error(`${WORDNET_URL} has no dict/${name}`);
-    writeFileSync(join(WORDNET_DIR, name), body);
+/** Files of a zip archive by path (stored or deflated entries). */
+export function unzip(archive: Buffer): Map<string, Buffer> {
+  const files = new Map<string, Buffer>();
+  const end = archive.lastIndexOf(Buffer.from([0x50, 0x4b, 0x05, 0x06]));
+  if (end < 0) throw new Error("not a zip archive");
+  let pos = archive.readUInt32LE(end + 16);
+  for (let n = archive.readUInt16LE(end + 10); n > 0; n--) {
+    const method = archive.readUInt16LE(pos + 10);
+    const size = archive.readUInt32LE(pos + 20);
+    const nameLength = archive.readUInt16LE(pos + 28);
+    const local = archive.readUInt32LE(pos + 42);
+    const name = archive.subarray(pos + 46, pos + 46 + nameLength).toString("utf8");
+    pos += 46 + nameLength + archive.readUInt16LE(pos + 30) + archive.readUInt16LE(pos + 32);
+    const start = local + 30 + archive.readUInt16LE(local + 26) + archive.readUInt16LE(local + 28);
+    const body = archive.subarray(start, start + size);
+    if (!name.endsWith("/")) files.set(name, method === 8 ? inflateRawSync(body) : body);
   }
-  return WORDNET_DIR;
+  return files;
 }
+
+/** Fetch `names` out of the archive at `url` into `dir`, once. */
+async function ensureFiles(dir: string, url: string, names: string[], extract: (archive: Buffer) => Map<string, Buffer>, prefix: string): Promise<string> {
+  if (names.every((name) => existsSync(join(dir, name)))) return dir;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`fetch ${url}: ${res.status}`);
+  const files = extract(Buffer.from(await res.arrayBuffer()));
+  mkdirSync(dir, { recursive: true });
+  for (const name of names) {
+    const body = files.get(`${prefix}${name}`);
+    if (!body) throw new Error(`${url} has no ${prefix}${name}`);
+    writeFileSync(join(dir, name), body);
+  }
+  return dir;
+}
+
+export const ensureWordnet = () => ensureFiles(WORDNET_DIR, WORDNET_URL, WORDNET_FILES, unzip, "oewn2025/");
+
+/** Princeton WordNet 3.1 index files, read only for their SemCor tag counts. */
+export const ensureSemcorCounts = () => ensureFiles(SEMCOR_DIR, SEMCOR_URL, INDEX_FILES, (a) => untar(gunzipSync(a)), "package/dict/");
 
 /** Parse one `data.*` line. Adjective satellites (`s`) count as `a`. */
 export function parseDataLine(line: string): Synset {
@@ -105,25 +137,33 @@ export function parseDataLine(line: string): Synset {
 
 export type Hyponym = Synset & { depth: number };
 
+/** `index.*` lines as lemma, synset offsets (most frequent first) and SemCor-tagged sense count. */
+function* indexLines(dir: string, pos: WordnetPos): Generator<[string, number[], number]> {
+  for (const line of readFileSync(join(dir, `index.${FILE_POS[pos]}`), "utf8").split("\n")) {
+    if (!line || line.startsWith(" ")) continue;
+    const parts = line.trim().split(" ");
+    const senseCount = Number(parts[2]);
+    yield [parts[0]!, parts.slice(-senseCount).map(Number), Number(parts[parts.length - senseCount - 1])];
+  }
+}
+
 export class Wordnet {
   private readonly data = new Map<WordnetPos, Buffer>();
   private readonly index = new Map<WordnetPos, Map<string, number[]>>();
   /** Lemma → how many of its senses are tagged in SemCor, all parts of speech: a frequency hint. */
   private readonly taggedCounts = new Map<string, number>();
 
-  constructor(dir: string) {
+  /** `countsDir` holds index files whose SemCor tag counts back `tagged` (`ensureSemcorCounts`). */
+  constructor(dir: string, countsDir?: string) {
     for (const pos of WORDNET_POS) {
       this.data.set(pos, readFileSync(join(dir, `data.${FILE_POS[pos]}`)));
       const index = new Map<string, number[]>();
-      for (const line of readFileSync(join(dir, `index.${FILE_POS[pos]}`), "utf8").split("\n")) {
-        if (!line || line.startsWith(" ")) continue;
-        const parts = line.trim().split(" ");
-        const senseCount = Number(parts[2]);
-        index.set(parts[0]!, parts.slice(-senseCount).map(Number));
-        const tagged = Number(parts[parts.length - senseCount - 1]);
-        if (tagged) this.taggedCounts.set(parts[0]!, (this.taggedCounts.get(parts[0]!) ?? 0) + tagged);
-      }
+      for (const [lemma, offsets] of indexLines(dir, pos)) index.set(lemma, offsets);
       this.index.set(pos, index);
+      if (!countsDir) continue;
+      for (const [lemma, , tagged] of indexLines(countsDir, pos)) {
+        if (tagged) this.taggedCounts.set(lemma, (this.taggedCounts.get(lemma) ?? 0) + tagged);
+      }
     }
   }
 

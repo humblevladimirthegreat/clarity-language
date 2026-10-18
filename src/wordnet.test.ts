@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
+import { deflateRawSync } from "node:zlib";
 
-import { parseDataLine, untar } from "./wordnet.js";
+import { parseDataLine, untar, unzip } from "./wordnet.js";
 
 describe("wordnet", () => {
   it("parses a data.noun line, keeping plain hyponyms only", () => {
@@ -38,5 +39,44 @@ describe("wordnet", () => {
     body.write("hello");
     const files = untar(Buffer.concat([header, body, Buffer.alloc(1024)]));
     assert.equal(files.get("package/dict/index.noun")?.toString(), "hello");
+  });
+
+  it("reads stored and deflated files out of a zip archive", () => {
+    const entries = [
+      { name: "oewn2025/", method: 0, body: Buffer.alloc(0), size: 0 },
+      { name: "oewn2025/index.noun", method: 0, body: Buffer.from("hello"), size: 5 },
+      { name: "oewn2025/data.noun", method: 8, body: deflateRawSync("world world"), size: 11 },
+    ];
+    const locals: Buffer[] = [];
+    const centrals: Buffer[] = [];
+    let offset = 0;
+    for (const { name, method, body, size } of entries) {
+      const local = Buffer.alloc(30);
+      local.writeUInt32LE(0x04034b50, 0);
+      local.writeUInt16LE(method, 8);
+      local.writeUInt32LE(body.length, 18);
+      local.writeUInt32LE(size, 22);
+      local.writeUInt16LE(name.length, 26);
+      const central = Buffer.alloc(46);
+      central.writeUInt32LE(0x02014b50, 0);
+      central.writeUInt16LE(method, 10);
+      central.writeUInt32LE(body.length, 20);
+      central.writeUInt32LE(size, 24);
+      central.writeUInt16LE(name.length, 28);
+      central.writeUInt32LE(offset, 42);
+      locals.push(local, Buffer.from(name), body);
+      centrals.push(central, Buffer.from(name));
+      offset += 30 + name.length + body.length;
+    }
+    const directory = Buffer.concat(centrals);
+    const end = Buffer.alloc(22);
+    end.writeUInt32LE(0x06054b50, 0);
+    end.writeUInt16LE(entries.length, 10);
+    end.writeUInt32LE(directory.length, 12);
+    end.writeUInt32LE(offset, 16);
+    const files = unzip(Buffer.concat([...locals, directory, end]));
+    assert.deepEqual([...files.keys()], ["oewn2025/index.noun", "oewn2025/data.noun"]);
+    assert.equal(files.get("oewn2025/index.noun")?.toString(), "hello");
+    assert.equal(files.get("oewn2025/data.noun")?.toString(), "world world");
   });
 });
