@@ -395,6 +395,8 @@ export type RecipeTableFinding = { page: string; line: number; message: string }
  * `#many-jobs` each `###` heading is a list of italic cues and each table is
  * `English itch | Agazan job | Teach` with a link in every `Teach` cell; every other
  * table with Agazan in it has an Agazan and an English column the harvest recognizes.
+ * No harvest markers on the tables: the heading, header and `Teach` cell already say everything,
+ * and this lint fails the build on a shape the harvest can't read instead of skipping it quietly.
  */
 export function lintRecipeTables(markdown: string, page: string): RecipeTableFinding[] {
   const findings: RecipeTableFinding[] = [];

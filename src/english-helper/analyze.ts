@@ -239,7 +239,9 @@ function topRoot(slot: Slot | undefined): RootSuggestion | undefined {
 /**
  * Two nouns in a row (*bed room*, *tea shop*): the listed compound when their roots are a row's
  * left root and head, else a live `x` compound when the word parser accepts it. An adjective
- * before a noun (*a blue dog*) is a thing and a property, never a compound.
+ * before a noun (*a blue dog*) is a thing and a property, never a compound. No meaning-level
+ * guessing (*sleeping room* → the bedroom compound): paraphrase is the LLM prompt's job
+ * (llm-prompt.ts), and WordNet multiword synonyms count only because they are listed.
  */
 function compoundSuggestions(data: HelperData, modifier: { term: TaggedTerm; slot: Slot } | undefined, head: RootSuggestion | undefined, role: string | undefined): (RootSuggestion | LiveSuggestion)[] {
   const left = topRoot(modifier?.slot);

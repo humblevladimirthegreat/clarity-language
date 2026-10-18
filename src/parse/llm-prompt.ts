@@ -8,6 +8,8 @@ import { MORPH_FORM_SUFFIXES, ROLE_VOWEL } from "./morph-gloss.js";
 
 /** One doc example: its gloss, its free English split into sentence and note, and its features. */
 export type ExamplePair = {
+  /** The Agazan as written, with the learner name filled in (the English helper prompt shows it). */
+  agazan: string;
   gloss: string;
   sentence: string;
   note: string | null;
@@ -305,6 +307,8 @@ export type PromptContext = {
   labelGlosses: ReadonlyMap<string, string>;
   /** Construction ID → reader note (only constructions that have one). */
   readers: ReadonlyMap<string, string>;
+  /** Construction ID → teaching anchor (`page.md#id`), for the English helper prompt. */
+  anchors?: ReadonlyMap<string, string>;
   weights?: Map<string, number>;
 };
 

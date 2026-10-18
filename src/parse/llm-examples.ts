@@ -76,6 +76,7 @@ export function examplePair(example: DocExample, source: string, tables: Classif
   if (gloss.includes('←"')) return null;
   if (extraParens(split.parts.join(" "), gloss) > 0) return null;
   return {
+    agazan,
     gloss,
     sentence: stripEmphasis(sentence),
     note: note == null ? null : stripEmphasis(note),
@@ -145,6 +146,11 @@ export function constructionReaders(tables: ClassifyTables): Map<string, string>
   return out;
 }
 
+/** Construction ID → the `page.md#id` that teaches it, for every construction. */
+export function constructionAnchors(tables: ClassifyTables): Map<string, string> {
+  return new Map([...constructionRegistry(tables.overlays.values())].map(([id, entry]) => [id, entry.anchor]));
+}
+
 function newestMtime(path: string): number {
   if (!existsSync(path)) return 0;
   const stat = statSync(path);
@@ -177,5 +183,6 @@ export function loadPromptContext(tables: ClassifyTables): PromptContext {
     index,
     labelGlosses: terminologyLabelGlosses(readFileSync(join(GRAMMAR_DIR, "terminology.md"), "utf8")),
     readers: constructionReaders(tables),
+    anchors: constructionAnchors(tables),
   };
 }

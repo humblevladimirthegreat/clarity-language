@@ -150,7 +150,7 @@ describe("doc examples", () => {
 });
 
 function pair(gloss: string, constructions: string[], note: string | null = null): ExamplePair {
-  return { gloss, sentence: gloss, note, constructions, labels: glossLabels(gloss), source: "x.md:1" };
+  return { agazan: "", gloss, sentence: gloss, note, constructions, labels: glossLabels(gloss), source: "x.md:1" };
 }
 
 describe("selectExamples", () => {

@@ -5,6 +5,7 @@ import publishedCsv from '@data/lexicon-published.csv?raw'
 import overlayCsv from '@data/lexicon-overlays.csv?raw'
 import compoundCsv from '@data/lexicon-compounds.csv?raw'
 import type { Analysis, Band, HelperData, HelperPayload, Slot, SuggestionChip } from '@english-helper-browser'
+import type { PromptContext } from '@parse-browser'
 import { useClassifyTables } from '../composables/useClassifyTables'
 import { useInspectorText } from '../composables/useInspectorText'
 
@@ -116,6 +117,46 @@ async function copy(form: string) {
   }
 }
 
+/** The helper prompt's doc examples are the inspector's (one shared chunk), started on mount so a click rarely waits. */
+const promptContext = shallowRef<PromptContext | null>(null)
+const promptCopied = ref(false)
+const promptError = ref('')
+let promptCopiedTimer = 0
+
+const canCopyPrompt = computed(() => Boolean(helper.value && data.value && promptContext.value && english.value.trim()))
+
+async function loadPromptContext() {
+  const { data: loaded } = await import('../lib/llm-context.data')
+  promptContext.value = {
+    index: loaded.index.map((pair) => ({ ...pair, source: '' })),
+    labelGlosses: new Map(loaded.labelGlosses),
+    readers: new Map(loaded.readers),
+    anchors: new Map(loaded.anchors),
+  }
+}
+
+/** Same prompt as `english-helper.mjs --llm-prompt`: each non-empty line is one input. */
+async function copyPrompt() {
+  if (!helper.value || !data.value || !promptContext.value) return
+  promptError.value = ''
+  const inputs = english.value.split('\n').map((line) => line.trim()).filter(Boolean)
+  try {
+    const prompt = helper.value.promptForEnglish(inputs, data.value, promptContext.value, stage.value ? { stage: stage.value } : {})
+    await navigator.clipboard.writeText(prompt)
+    promptCopied.value = true
+    window.clearTimeout(promptCopiedTimer)
+    promptCopiedTimer = window.setTimeout(() => {
+      promptCopied.value = false
+    }, COPIED_MS)
+  } catch (err) {
+    promptError.value = err instanceof Error ? err.message : String(err)
+  }
+}
+
+watch([english, stage], () => {
+  promptError.value = ''
+})
+
 async function sendToInspector() {
   if (!draft.value.trim()) return
   inspectorText.value = draft.value
@@ -134,11 +175,15 @@ onMounted(() => {
     .catch((err) => {
       loadError.value = err instanceof Error ? err.message : String(err)
     })
+  loadPromptContext().catch((err) => {
+    promptError.value = `Could not load the prompt examples. ${err instanceof Error ? err.message : String(err)}`
+  })
 })
 
 onBeforeUnmount(() => {
   window.clearTimeout(analyzeTimer)
   window.clearTimeout(copiedTimer)
+  window.clearTimeout(promptCopiedTimer)
 })
 </script>
 
@@ -163,6 +208,16 @@ onBeforeUnmount(() => {
         {{ level.label }}
       </button>
     </div>
+    <div class="prompt-row">
+      <button type="button" class="prompt-button" :disabled="!canCopyPrompt" @click="copyPrompt">
+        {{ promptCopied ? 'Copied' : 'Copy Helper Prompt' }}
+      </button>
+      <span class="prompt-note">
+        An Agazan-writing prompt for an LLM: these suggestions, the writing rules, and matching doc
+        examples, one numbered line per English line. Paste its answer in the draft box below.
+      </span>
+    </div>
+    <p v-if="promptError" class="warn" role="status">{{ promptError }}</p>
     <p v-if="loadError" class="warn">Could not load the English helper. {{ loadError }}</p>
     <p v-else-if="!data" class="status">Loading the English helper…</p>
     <p v-if="analyzeError" class="warn" role="status">{{ analyzeError }}</p>
@@ -320,6 +375,41 @@ textarea:focus {
   color: var(--vp-c-text-2);
   font-size: 0.85rem;
   cursor: pointer;
+}
+
+.prompt-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.85rem;
+  margin: 0.65rem 0 0;
+}
+
+.prompt-button {
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--vp-c-brand-1);
+  border-radius: 8px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-brand-1);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.prompt-button:hover:not(:disabled) {
+  background: var(--vp-c-brand-soft);
+}
+
+.prompt-button:disabled {
+  border-color: var(--vp-c-divider);
+  color: var(--vp-c-text-3);
+  cursor: not-allowed;
+}
+
+.prompt-note {
+  flex: 1 1 16rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.85rem;
 }
 
 .levels button.active {

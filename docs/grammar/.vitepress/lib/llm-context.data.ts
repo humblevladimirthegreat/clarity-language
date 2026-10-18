@@ -2,11 +2,13 @@ import { loadDefaultTables } from '../../../../src/parse/index.ts'
 import { loadPromptContext } from '../../../../src/parse/llm-examples.ts'
 import type { ExamplePair } from '../../../../src/parse/llm-prompt.ts'
 
-/** The translation prompt's doc inputs, JSON-safe, for the Inspect page's Copy Translation Prompt. */
+/** The translation prompts' doc inputs, JSON-safe, for the Inspect page's Copy Translation Prompt and Copy Helper Prompt. */
 export type LlmContextData = {
   index: Omit<ExamplePair, 'source'>[]
   labelGlosses: [string, string][]
   readers: [string, string][]
+  /** Construction ID → teaching anchor, for the English helper's Copy Helper Prompt. */
+  anchors: [string, string][]
 }
 
 declare const data: LlmContextData
@@ -19,6 +21,7 @@ export default {
       index: context.index.map(({ source: _source, ...pair }) => pair),
       labelGlosses: [...context.labelGlosses],
       readers: [...context.readers],
+      anchors: [...(context.anchors ?? [])],
     }
   },
 }

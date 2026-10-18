@@ -33,6 +33,7 @@ export type {
 } from "./analyze.js";
 export { featureLabels, leadNote, plainTitle, roleReading, suggestionChip, type SuggestionChip } from "./describe.js";
 export { BANDS, type Band } from "../lint/learning-order.js";
+export { promptForEnglish } from "./llm-prompt.js";
 
 /** The helper's grammar-page data, JSON-safe: what the docs say, read once at build time. */
 export type HelperPayload = {
