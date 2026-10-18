@@ -150,12 +150,12 @@ So the test is: `/b/` right after the hook, and no recipient `/b/` right before 
 The four one-vowel hooks name the everyday extras:
 
 <!-- cheat-sheet: joins-hooks -->
-| Agazan | Name | Use | Cue |
-|--------|------|-----|-----|
-| **`al`** | **in** | containment | **a** ≈ add (into a volume) |
-| **`ol`** | **at** | coincidence with a point | **o** ≈ one (the one point) |
-| **`ul`** | **from** | source of a path | **u** ≈ undo (leave) |
-| **`el`** | **for** | who or what the act is meant for | **e** ≈ order (aim the act) |
+| Agazan | English | Use | Cue |
+|--------|---------|-----|-----|
+| **`al`** | *in* | containment | **a** ≈ add (into a volume) |
+| **`ol`** | *at* | coincidence with a point | **o** ≈ one (the one point) |
+| **`ul`** | *from* | source of a path | **u** ≈ undo (leave) |
+| **`el`** | *for* | who or what the act is meant for | **e** ≈ order (aim the act) |
 
 > `zodogal vezebal al bahazal.`
 >

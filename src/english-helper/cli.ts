@@ -69,7 +69,7 @@ function suggestionLine(data: HelperData, s: Suggestion): string {
       return `live     /${s.role}/ \`${s.form}\`  ${parts}, built on the spot  → ${link(data, s.link)}`;
     }
     case "job":
-      return `${s.itch}  \`${s.form}\`  → ${link(data, s.link)}`;
+      return `${s.itch}  \`${s.form}\`${s.phrase ? `  say \`${s.phrase}\`` : ""}  → ${link(data, s.link)}`;
     case "detector":
       return `${s.label}  → ${s.links.map((l) => link(data, l)).join(" · ")}`;
     case "role": {
@@ -78,7 +78,7 @@ function suggestionLine(data: HelperData, s: Suggestion): string {
       return `route    role compound \`${s.form}\`  ${reading}; ${s.emoji ? `${s.emoji} ` : ""}${parts} "${s.sense}"  → ${link(data, s.link)}`;
     }
     case "entry":
-      return `grammar  \`${s.form}\` "${s.english}"  → ${link(data, s.link)}`;
+      return `grammar  \`${s.form}\` "${s.english}"${s.phrase ? `  say \`${s.phrase}\`` : ""}  → ${link(data, s.link)}`;
   }
 }
 

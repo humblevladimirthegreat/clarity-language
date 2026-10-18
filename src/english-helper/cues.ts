@@ -63,22 +63,46 @@ function usableCue(cue: string): boolean {
   return !/…|\.\.\.|\b(?!I\b)[A-Z]\b/.test(cue) && !/^(a|an|the) \S/i.test(cue);
 }
 
+/** A form that is only a vowel series (`a`, `ua`): a recap row, not a word to say. */
+const BARE_VOWELS = /^[aeiou]{1,3}$/;
+
+/**
+ * The section on `page` named for the cue (`### Including (`am` / `al`)` for *including*), and
+ * the forms its heading names. A recap table under one section (*including* … *except* under
+ * `### Except`) then links each cue where it is taught. An `<a id>` beats the heading's own id.
+ */
+function namedSection(sections: ReadonlyMap<string, { title: string }>, page: string, cue: string): { link: string; forms: string[] } | undefined {
+  let best: { link: string; title: string } | undefined;
+  for (const [link, { title }] of sections) {
+    if (!link.startsWith(`${page}#`) || title.replace(/\s*\(.*\)\s*$/, "").replace(/[`*]/g, "").toLowerCase() !== cue.toLowerCase()) continue;
+    if (!best || link.length < best.link.length) best = { link, title };
+  }
+  const forms = best?.title.match(/\(([^)]*)\)\s*$/)?.[1]!.replace(/[`*]/g, "").split("/").map((f) => f.trim()) ?? [];
+  return best && { link: best.link, forms: forms.filter((f) => /^[a-z]+$/.test(f)) };
+}
+
 /**
  * The cue index. `words` splits a cue the way the tagger splits input
- * (tag.ts `cueWords`), so `can't` in a table matches *can not* in a sentence.
+ * (tag.ts `cueWords`), so `can't` in a table matches *can not* in a sentence. With `sections`
+ * (`page.md#id` → title), a row is relinked to a same-page section named for its cue.
  */
-export function buildCueIndex(entries: readonly EnglishEntry[], words: (cue: string) => string[]): CueIndex {
+export function buildCueIndex(entries: readonly EnglishEntry[], words: (cue: string) => string[], sections?: ReadonlyMap<string, { title: string }>): CueIndex {
   const index: CueIndex = new Map();
   for (const entry of entries) {
     if (entry.kind !== "table" || !entry.cues?.length || !teachingEntry(entry)) continue;
-    const link = entry.teach ? resolveLink(entry.page, entry.teach) : `${grammarPath(entry.page)}#${entry.slug}`;
+    const page = grammarPath(entry.page);
+    const rowLink = entry.teach ? resolveLink(entry.page, entry.teach) : `${page}#${entry.slug}`;
     for (const cue of entry.cues) {
       if (!usableCue(cue)) continue;
       const key = words(cue).join(" ");
       if (!key || key.split(" ").length > MAX_CUE_WORDS) continue;
+      const named = !entry.teach && sections ? namedSection(sections, page, cue) : undefined;
+      const link = named?.link ?? rowLink;
+      const form = named?.forms.length && BARE_VOWELS.test(entry.form) ? named.forms.join(" / ") : entry.form;
       const list = index.get(key) ?? [];
-      if (list.some((j) => j.source === `${grammarPath(entry.page)}:${entry.line}`)) continue;
-      list.push({ cue, itch: plainText(entry.english), form: entry.form, link, source: `${grammarPath(entry.page)}:${entry.line}`, ...(entry.band ? { band: entry.band } : {}) });
+      // The same row, or the same form again from one page (a beginner row and its intermediate grid) or for one section.
+      if (list.some((j) => j.source === `${page}:${entry.line}` || (j.form === form && (j.source.startsWith(`${page}:`) || j.link === link)))) continue;
+      list.push({ cue, itch: plainText(entry.english), form, link, source: `${page}:${entry.line}`, ...(entry.band ? { band: entry.band } : {}) });
       index.set(key, list);
     }
   }

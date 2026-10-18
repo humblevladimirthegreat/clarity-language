@@ -44,11 +44,12 @@ export function loadWordnetIndex(): WordnetIndex | undefined {
 export function helperPayload(): HelperPayload {
   const entries = loadGrammarEntries();
   const wordnet = loadWordnetIndex();
+  const sections = loadSections();
   return {
     // The cue index has already read `cues` and `teach`; the entries only answer one-word lookups.
     entries: entries.filter(teachingEntry).map(({ cues: _cues, teach: _teach, ...entry }) => entry),
-    cues: [...buildCueIndex(entries, cueWords)],
-    sections: [...loadSections()],
+    cues: [...buildCueIndex(entries, cueWords, sections)],
+    sections: [...sections],
     ...(wordnet ? { wordnet } : {}),
   };
 }

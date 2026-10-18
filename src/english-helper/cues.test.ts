@@ -55,6 +55,33 @@ describe("buildCueIndex", () => {
   });
 });
 
+describe("buildCueIndex with section titles", () => {
+  const hooks = `# Hooks
+
+### Including (\`am\` / \`al\`)
+<a id="including"></a>
+
+### Except (\`ul\`)
+<a id="except"></a>
+
+| Agazan | Use | English | Cue |
+|--------|-----|---------|-----|
+| **a** | add a member | *including*: A, including B | **a** ≈ add |
+| **u** | subtract | *except*: A except B | **u** ≈ undo |
+`;
+  const sections = new Map([
+    ["hooks.md#including-am--al", { title: "Including (am / al)" }],
+    ["hooks.md#including", { title: "Including (am / al)" }],
+    ["hooks.md#except", { title: "Except (ul)" }],
+  ]);
+  const named = buildCueIndex(collectEnglishEntries(hooks, "docs/grammar/hooks.md", loadDefaultTables()), cueWords, sections);
+
+  it("links a recap row to the same-page section named for its cue, with that section's forms", () => {
+    assert.deepEqual([named.get("including")![0]!.link, named.get("including")![0]!.form], ["hooks.md#including", "am / al"]);
+    assert.deepEqual([named.get("except")![0]!.link, named.get("except")![0]!.form], ["hooks.md#except", "ul"]);
+  });
+});
+
 describe("matchCues", () => {
   it("takes the longest run first and lets a one-word cue match a lemma", () => {
     const normals = ["sits", "next", "to", "it", "by", "cars"];

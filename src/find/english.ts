@@ -140,12 +140,7 @@ function tableForm(cell: string): string {
 function formColumn(header: string[], body: string[][]): number {
   const named = header.findIndex((h) => FORM_HEADER.test(h));
   if (named >= 0) return named;
-  return header.findIndex(
-    (h, c) =>
-      !ENGLISH_HEADER.test(h) &&
-      !OTHER_HEADER.test(h) &&
-      body.filter((row) => /`[^`]+`/.test(row[c] ?? "")).length * 2 >= body.length,
-  );
+  return header.findIndex((_, c) => agazanColumn(header, body, c));
 }
 
 export type TableRow = { form: string; english: string; line: number; teach?: string; cues?: string[] };
@@ -196,10 +191,43 @@ export function pageTables(lines: string[]): RawTable[] {
   return out;
 }
 
+/** A column of mostly backticked Agazan that is not named as English or a note. */
+function agazanColumn(header: string[], body: string[][], c: number): boolean {
+  return !ENGLISH_HEADER.test(header[c] ?? "") && !OTHER_HEADER.test(header[c] ?? "") && body.filter((row) => /`[^`]+`/.test(row[c] ?? "")).length * 2 >= body.length;
+}
+
+/**
+ * A grid of form / English column pairs (`| **-l** | English | **-m** | English |`): each pair is
+ * its own row, so every English column gives cues. The other pairs ride along in the English
+ * cell, so a row still shows its partner (`*in* (**-m** `am`: *amid*)`).
+ */
+function pairedRows(header: string[], body: string[][], line: number): TableRow[] | undefined {
+  const pairs = header.flatMap((h, c) => (CUE_HEADER.test(header[c + 1] ?? "") && agazanColumn(header, body, c) ? [c] : []));
+  if (pairs.length < 2) return undefined;
+  const rows: TableRow[] = [];
+  body.forEach((cells, r) => {
+    for (const c of pairs) {
+      const form = tableForm(cells[c] ?? "");
+      const own = cells[c + 1] ?? "";
+      if (!form || !plainText(own)) continue;
+      const partners = pairs.filter((p) => p !== c && tableForm(cells[p] ?? "")).map((p) => `**${plainText(header[p]!)}** \`${tableForm(cells[p]!)}\`: ${cells[p + 1] ?? ""}`);
+      const english = partners.length ? `${own} (${partners.join("; ")})` : own;
+      const cues = cellCues(own);
+      rows.push({ form, english, line: line + 2 + r, ...(cues.length ? { cues } : {}) });
+    }
+  });
+  return rows;
+}
+
 /** Table rows with an Agazan column and at least one English column. */
 function tableRows(lines: string[]): TableRow[] {
   const rows: TableRow[] = [];
   for (const { header, body, line, h2, h3 } of pageTables(lines)) {
+    const paired = pairedRows(header, body, line);
+    if (paired) {
+      rows.push(...paired);
+      continue;
+    }
     const formCol = formColumn(header, body);
     const englishCols = header.flatMap((h, c) => (c !== formCol && ENGLISH_HEADER.test(h) ? [c] : []));
     if (formCol < 0 || englishCols.length === 0) continue;

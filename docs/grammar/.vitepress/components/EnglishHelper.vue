@@ -71,10 +71,12 @@ function features(clause: Analysis['clauses'][number]): string {
 }
 
 /** `*see*` → italic runs, for the English notes. */
-function marked(text: string): { text: string; em: boolean }[] {
-  return text.split(/(\*[^*]+\*)/).filter(Boolean).map((part) =>
-    part.startsWith('*') && part.endsWith('*') && part.length > 2 ? { text: part.slice(1, -1), em: true } : { text: part, em: false },
-  )
+function marked(text: string): { text: string; em?: boolean; code?: boolean }[] {
+  return text.split(/(\*[^*]+\*|`[^`]+`)/).filter(Boolean).map((part) => {
+    if (part.length > 2 && part.startsWith('*') && part.endsWith('*')) return { text: part.slice(1, -1), em: true }
+    if (part.length > 2 && part.startsWith('`') && part.endsWith('`')) return { text: part.slice(1, -1), code: true }
+    return { text: part }
+  })
 }
 
 function href(link: string): string {
@@ -174,7 +176,7 @@ onBeforeUnmount(() => {
         <ul v-if="clause.detectors.length" class="clause-detectors">
           <li v-for="(d, i) in clause.detectors" :key="i" class="chip tier-grammar">
             <span class="note">
-              <template v-for="(part, k) in marked(d.label)" :key="k"><em v-if="part.em">{{ part.text }}</em><template v-else>{{ part.text }}</template></template>
+              <template v-for="(part, k) in marked(d.label)" :key="k"><em v-if="part.em">{{ part.text }}</em><code v-else-if="part.code">{{ part.text }}</code><template v-else>{{ part.text }}</template></template>
             </span>
             <span class="links">
               <a v-for="link in d.links" :key="link" :href="href(link)">{{ sectionTitle(link) }}</a>
@@ -217,8 +219,11 @@ onBeforeUnmount(() => {
                 </button>
                 <code v-else-if="chip.form" class="form">{{ chip.form }}</code>
                 <span class="note">
-                  <template v-for="(part, m) in marked(chip.note)" :key="m"><em v-if="part.em">{{ part.text }}</em><template v-else>{{ part.text }}</template></template>
+                  <template v-for="(part, m) in marked(chip.note)" :key="m"><em v-if="part.em">{{ part.text }}</em><code v-else-if="part.code">{{ part.text }}</code><template v-else>{{ part.text }}</template></template>
                 </span>
+                <button v-if="chip.phrase" type="button" class="form copy phrase" title="Copy the hook with its landmark" @click="copy(chip.phrase)">
+                  <code>{{ copied === chip.phrase ? 'Copied' : chip.phrase }}</code>
+                </button>
                 <span v-if="chip.links.length" class="links">
                   <a v-for="link in chip.links" :key="link" :href="href(link)">{{ sectionTitle(link) }}</a>
                 </span>
@@ -234,6 +239,9 @@ onBeforeUnmount(() => {
                     <code>{{ chip.form }}</code>
                   </a>
                   <span class="note">{{ chip.note }}</span>
+                  <button v-if="chip.phrase" type="button" class="form copy phrase" title="Copy the hook with its landmark" @click="copy(chip.phrase)">
+                    <code>{{ copied === chip.phrase ? 'Copied' : chip.phrase }}</code>
+                  </button>
                 </li>
               </ul>
             </div>

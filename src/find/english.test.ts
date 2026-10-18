@@ -44,6 +44,18 @@ describe("collectEnglishEntries", () => {
     );
   });
 
+  it("reads each form / English pair of a grid as its own row, with its cues", () => {
+    const entries = entriesOf(`| **-l** | English | **-m** | English | Cue |
+|--------|---------|--------|---------|-----|
+| **\`al\`** | *in* | **\`am\`** | *amid* | **a** ≈ add |
+`);
+    assert.deepEqual(
+      entries.map((e) => [e.form, e.cues]),
+      [["al", ["in"]], ["am", ["amid"]]],
+    );
+    assert.equal(entries[0]!.english, "*in* (**-m** `am`: *amid*)");
+  });
+
   it("skips a table with no Agazan column", () => {
     assert.deepEqual(entriesOf("| English | Notes |\n|---|---|\n| walk | slow |\n"), []);
   });

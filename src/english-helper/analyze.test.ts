@@ -55,7 +55,10 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
     const by = slots("Azawan walks by the station.").find((s) => s.text === "by")!;
     const jobs = by.suggestions.filter((s): s is JobSuggestion => s.kind === "job");
     assert.ok(jobs.length >= 3);
-    assert.ok(jobs.every((j) => j.source.startsWith("english.md:")));
+    const recipe = jobs.filter((j) => j.source.startsWith("english.md:"));
+    assert.deepEqual(jobs.slice(0, recipe.length), recipe);
+    const lines = recipe.map((j) => Number(j.source.split(":")[1]));
+    assert.deepEqual(lines, [...lines].sort((a, b) => a - b));
   });
 
   it("points function words and clause grammar at their sections", () => {
@@ -132,6 +135,45 @@ describe("WordNet tiers and routes", () => {
     assert.equal(route.qualifier!.form, root("child"));
     assert.equal(route.phrase, `d${root("dog")}l g${root("child")}l`);
     assert.equal(route.links[0], "say-people-places.md#young-animals");
+  });
+});
+
+describe("hooks", () => {
+  const hookSlot = (text: string, word: string) => slots(text).find((s) => s.text === word)!;
+  const roleWord = (slot: Slot) => slot.suggestions.find((s): s is RootSuggestion => s.kind === "lexicon")?.word;
+
+  it("spells a preposition's hook with the landmark noun after it", () => {
+    const jobs = hookSlot("A dog sleeps in the house.", "in").suggestions.filter((s): s is JobSuggestion => s.kind === "job");
+    assert.ok(jobs.some((j) => j.phrase === `al ${roleWord(hookSlot("A dog sleeps in the house.", "house"))}`));
+  });
+
+  it("does not spell a range or same-role row as a place phrase", () => {
+    const jobs = hookSlot("Azawan walks from the house to the station.", "to").suggestions.filter((s): s is JobSuggestion => s.kind === "job");
+    assert.ok(jobs.some((j) => j.phrase?.startsWith("ol ")));
+    assert.ok(!jobs.some((j) => j.link.endsWith("#ranges") && j.phrase));
+  });
+
+  it("reads both columns of the -l / -m grid as cues", () => {
+    assert.ok(hookSlot("A cloth sits over the table.", "over").suggestions.some((s) => s.kind === "job" && s.form.startsWith("aom")));
+    assert.ok(hookSlot("Alahen sits among the guards.", "among").suggestions.some((s) => s.kind === "job" && s.form.startsWith("am")));
+  });
+
+  it("keeps the role of the phrase before a same-role hook", () => {
+    assert.match(roleWord(hookSlot("Azawan drinks coffee instead of tea.", "tea"))!, /^d/);
+    assert.equal(roleWord(hookSlot("The family walks, except Azawan.", "Azawan")), "zazawan");
+    assert.match(roleWord(hookSlot("Azawan sees the dog, except the cat.", "cat"))!, /^d/);
+    assert.ok(hookSlot("The family walks, except Azawan.", "except").suggestions.some((s) => s.kind === "detector" && s.id === "same-role-hook"));
+  });
+
+  it("falls back to an extra-noun hook for a preposition no row names", () => {
+    const atop = hookSlot("The dog sleeps atop the house.", "atop");
+    assert.deepEqual(atop.suggestions.map((s) => s.kind === "detector" && s.id), ["extra-noun-hook"]);
+  });
+
+  it("notes from … to, a hook after a landmark, and a stranded question hook", () => {
+    assert.ok(hookSlot("Azawan walks from the house to the station.", "to").suggestions.some((s) => s.kind === "detector" && s.id === "from-to"));
+    assert.ok(hookSlot("The dog sleeps in the house near the station.", "near").suggestions.some((s) => s.kind === "detector" && s.id === "hook-on-landmark"));
+    assert.ok(hookSlot("What does Azawan write with?", "with").suggestions.some((s) => s.kind === "detector" && s.id === "hook-blank"));
   });
 });
 

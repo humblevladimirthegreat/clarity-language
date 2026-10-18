@@ -12,7 +12,7 @@ import type { Band } from "../lint/learning-order.js";
 import { BANDS } from "../lint/learning-order.js";
 import { grammarPath, matchCues, type CueIndex, type GrammarJob } from "./cues.js";
 import type { CompoundRow } from "../lexicon-compounds.js";
-import { COMPOUND_LINKS, detectClause, detectWord, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, type DetectorHit } from "./detectors.js";
+import { COMPOUND_LINKS, detectClause, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
 import { lookupLexicon, rootsByForm, sideEnding, type LexiconIndex, type LexiconSuggestion } from "./lexicon.js";
 import { doerVerb, tagEnglish, type ClauseFeatures, type TaggedTerm, type WordClass } from "./tag.js";
 import { lookupRoute, lookupWordnet, senseSuggestions, type RouteClass, type WordnetIndex, type WordnetPos } from "./wordnet-index.js";
@@ -51,9 +51,11 @@ export type RootSuggestion = LexiconSuggestion & {
   /** A listed compound whose left root and head are the two words' own roots (*bed room*). */
   fromParts?: { left: string; head: string };
 };
-export type JobSuggestion = GrammarJob & { kind: "job"; tier: "grammar" };
+/** A hook job or entry followed by a noun spells the whole phrase: the hook, then the noun's `/b/` word (`al bahazal`). */
+type HookPhrase = { phrase?: string };
+export type JobSuggestion = GrammarJob & HookPhrase & { kind: "job"; tier: "grammar" };
 export type DetectorSuggestion = DetectorHit & { kind: "detector"; tier: "grammar" };
-export type EntrySuggestion = { kind: "entry"; tier: "grammar"; form: string; english: string; link: string; band?: Band };
+export type EntrySuggestion = HookPhrase & { kind: "entry"; tier: "grammar"; form: string; english: string; link: string; band?: Band };
 /**
  * A role compound for a doer noun (*teacher*, *dog walker*): the `route` tier, since the lexicon
  * leaves doers out on purpose. `usual` adds **`the`** (*a teacher*, the usual role); without it
@@ -131,8 +133,25 @@ const ARTICLES = new Set(["a", "an", "the"]);
 /** Auxiliaries that carry tense, aspect or question order and nothing else. */
 const BARE_AUX = new Set(["be", "is", "are", "am", "was", "were", "been", "being", "have", "has", "had", "having", "do", "does", "did"]);
 
-/** The role letter a word class implies; a noun's by position (after a preposition `b`, after the verb `d`). */
-function classRole(terms: readonly TaggedTerm[], i: number): string | undefined {
+/** The same-role hook ending at `j` (*except*, *instead of*), and where it starts. */
+function sameRoleAt(terms: readonly TaggedTerm[], j: number): number | undefined {
+  if (SAME_ROLE_HOOKS[terms[j]!.normal]) return j;
+  if (j > 0 && SAME_ROLE_HOOKS[`${terms[j - 1]!.normal} ${terms[j]!.normal}`]) return j - 1;
+  return undefined;
+}
+
+/** The nearest noun before `j`: the phrase a same-role hook at `j` copies its role from. */
+function leftNoun(terms: readonly TaggedTerm[], j: number): number | undefined {
+  for (let k = j - 1; k >= 0; k--) if (terms[k]!.cls === "noun") return k;
+  return undefined;
+}
+
+/**
+ * The role letter a word class implies; a noun's by position (after a preposition `b`, after the
+ * verb `d`). After a same-role hook (*the family, except Azawan*) a noun keeps the role of the noun
+ * before it, in `outer` (the sentence's earlier clauses) when the hook opens its clause.
+ */
+function classRole(terms: readonly TaggedTerm[], i: number, outer: readonly TaggedTerm[] = []): string | undefined {
   const t = terms[i]!;
   if (t.cls === "verb") return "v";
   if (t.cls === "adjective") return "ɡ";
@@ -140,6 +159,15 @@ function classRole(terms: readonly TaggedTerm[], i: number): string | undefined 
   if (t.cls !== "noun") return undefined;
   for (let j = i - 1; j >= 0; j--) {
     const p = terms[j]!;
+    const same = sameRoleAt(terms, j);
+    if (same !== undefined) {
+      const left = leftNoun(terms, same);
+      if (left !== undefined) return classRole(terms, left, outer);
+      const outerLeft = leftNoun(outer, outer.length);
+      if (outerLeft !== undefined) return classRole(outer, outerLeft);
+      j = same;
+      continue;
+    }
     if (p.cls === "preposition") return "b";
     if (p.cls === "verb" || p.cls === "auxiliary" || p.cls === "modal") return "d";
   }
@@ -330,6 +358,55 @@ function filterDetector(data: HelperData, d: DetectorHit, stage: Band | undefine
   return links.length ? { ...d, links, kind: "detector", tier: "grammar" } : undefined;
 }
 
+/** Classes that may sit between a hook and its landmark noun (*in the big house*). */
+const BEFORE_LANDMARK: ReadonlySet<WordClass> = new Set(["adjective", "number", "determiner"]);
+
+/** A noun or pronoun after `end`, past articles, adjectives and numbers: the hook's landmark. */
+function nounFollows(terms: readonly TaggedTerm[], end: number): boolean {
+  for (const t of terms.slice(end)) {
+    if (ARTICLES.has(t.normal) || BEFORE_LANDMARK.has(t.cls)) continue;
+    return t.cls === "noun" || t.cls === "pronoun";
+  }
+  return false;
+}
+
+const HOOK_FORM = /^[aeiou]{1,2}[lmnr]$/;
+const HOSTED_FORM = /^[hɡg][a-z]+$/;
+
+/** Sections whose lone-hook rows are extra-noun hooks (a lone `al` elsewhere may be a range or *including*). */
+const EXTRA_NOUN_SECTION = /^hooks\.md#extra-noun/;
+
+/**
+ * The word a job's form puts before its `/b/` landmark: a hook with `/b/` (`om / /b/`) or alone
+ * in an extra-noun section (`al`), or a hosted relation with `/b/` (`hadahel / gadahel / /b/`).
+ */
+function hookHead(form: string, link: string): string | undefined {
+  const parts = form.split(" / ").map((p) => p.trim());
+  const head = parts[0]!;
+  if (HOOK_FORM.test(head) && (parts.includes("/b/") || (parts.length === 1 && EXTRA_NOUN_SECTION.test(link)))) return head;
+  if (HOSTED_FORM.test(head) && parts.includes("/b/")) return head;
+  return undefined;
+}
+
+/** The `/b/` word of the noun slot after slot `n`, past skipped words and modifiers. */
+function landmarkWord(slots: readonly Slot[], n: number): string | undefined {
+  for (const next of slots.slice(n + 1)) {
+    if (next.skipped || BEFORE_LANDMARK.has(next.cls)) continue;
+    if (next.cls !== "noun") return undefined;
+    return next.suggestions.find((s): s is RootSuggestion => s.kind === "lexicon" && !!s.word?.startsWith("b"))?.word;
+  }
+  return undefined;
+}
+
+/** Spell each hook job with the landmark that follows it (`al bahazal`). */
+function spellHookPhrases(slots: readonly Slot[]): void {
+  slots.forEach((slot, n) => {
+    const hooks = slot.suggestions.filter((s): s is JobSuggestion | EntrySuggestion => (s.kind === "job" || s.kind === "entry") && !!hookHead(s.form, s.link));
+    const landmark = hooks.length ? landmarkWord(slots, n) : undefined;
+    if (landmark) for (const s of hooks) s.phrase = `${hookHead(s.form, s.link)} ${landmark}`;
+  });
+}
+
 function readingOf(t: TaggedTerm): string | undefined {
   if (t.forced) return `forced: ${t.cls} *${t.lemma}*`;
   if (CONTENT.has(t.cls) && t.lemma !== t.normal) return `read as ${t.cls} *${t.lemma}*`;
@@ -341,8 +418,10 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
   const clauses: AnalyzedClause[] = [];
   const gaps: Gap[] = [];
   for (const sentence of tagEnglish(text)) {
+    const outer: TaggedTerm[] = [];
     for (const clause of sentence.clauses) {
       const terms = clause.terms;
+      const roleOf = (k: number) => classRole(terms, k, outer);
       const cueMatches = matchCues(
         data.cues,
         terms.map((t) => t.normal),
@@ -369,7 +448,7 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
         const one = run.length === 1;
         const jobs: JobSuggestion[] = (match?.jobs ?? []).map((j) => ({ ...j, kind: "job", tier: "grammar" }));
         const detectors = one ? detectWord(t, terms[end]).flatMap((d) => filterDetector(data, d, stage) ?? []) : [];
-        const role = classRole(terms, i);
+        const role = roleOf(i);
         const roots = useNgram ? ngram.hits.map((s) => asRootSuggestion(data, s, role)) : one && CONTENT.has(t.cls) ? rootSuggestions(data, t, role) : [];
         // A doer noun with a root of its own (*flower*) is not an *-er* participle or a role compound.
         const prev = terms[i - 1];
@@ -392,6 +471,26 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
         if (!suggestions.length && !skipped && !t.proper) {
           suggestions = entrySuggestions(data, [...new Set([t.lemma, t.normal])]).filter((s) => withinStage(data, s, stage));
         }
+        // A preposition or same-role cue run: the shape its hook takes, and a hook when no row names one.
+        const hookWord = run.map((r) => r.normal).join(" ");
+        if (!skipped && (SAME_ROLE_HOOKS[hookWord] || (t.cls === "preposition" && !t.proper))) {
+          const inClause = leftNoun(terms, i);
+          const outerLeft = inClause === undefined ? leftNoun(outer, outer.length) : undefined;
+          const left =
+            inClause !== undefined ? { text: terms[inClause]!.text, role: roleOf(inClause) } : outerLeft !== undefined ? { text: outer[outerLeft]!.text, role: classRole(outer, outerLeft) } : undefined;
+          const before = terms[i - 1]?.cls === "noun" ? i - 1 : undefined;
+          const hits = detectHook({
+            word: hookWord,
+            next: terms[end],
+            ...(before !== undefined ? { before: { text: terms[before]!.text, role: roleOf(before) } } : {}),
+            ...(left ? { left } : {}),
+            afterFrom: terms.slice(0, i).some((p) => p.normal === "from" && p.cls === "preposition"),
+            stranded: clause.features.question && end === terms.length,
+            hook: suggestions.some((s) => (s.kind === "job" || s.kind === "entry") && !!hookHead(s.form, s.link)),
+          });
+          if (!suggestions.length && nounFollows(terms, end)) hits.push(extraNounHook(hookWord));
+          suggestions.push(...hits.flatMap((d) => filterDetector(data, d, stage) ?? []));
+        }
         // WordNet leads and live compounds rank below every listed match and grammar row.
         suggestions.push(...[...leads, ...routes, ...live].filter((s) => withinStage(data, s, stage)));
         const slot: Slot = { text: run.map((r) => r.text).join(" "), lemma: one ? t.lemma : run.map((r) => r.normal).join(" "), cls: one ? t.cls : useNgram ? "noun" : "other", suggestions };
@@ -404,8 +503,10 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
         }
         i = end;
       }
+      spellHookPhrases(slots);
       const detectors = detectClause(clause.features).flatMap((d) => filterDetector(data, d, stage) ?? []);
       clauses.push({ text: clause.text, features: clause.features, detectors, slots });
+      outer.push(...terms);
     }
   }
   return { clauses, gaps };

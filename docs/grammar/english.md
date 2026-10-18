@@ -12,7 +12,7 @@ These pages are recipes, not lessons. Each one shows how forms you already learn
 
 ## One English word, many jobs {#many-jobs}
 
-English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick the Agazan job, then open the section that teaches it.
+English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover several jobs. Pick the Agazan job, then open the section that teaches it.
 
 ### *by*
 
@@ -40,6 +40,18 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 | *my* belonging + sake (*my tent serves the physical sake*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
 | duration (*for three hours*) | measure phrase | [Measure phrases](numbers-applied.md#measure-phrases) |
 | frame one sentence (*as for Azawan*) | **`hahehom`** + `/b/` | [As-for](say-people-places.md#as-for) |
+
+### *to*
+
+| English itch | Agazan job | Teach |
+|--------------|------------|-------|
+| recipient / addressee (*gives a book to Alahen*) | unhosted `/b/` | [Extra nouns](clause.md#extra-nouns) |
+| goal reached (*walks to the station*, *from a house to a station*) | hook **`ol`** (*at*) + `/b/`; for *from … to*, **`ul`** + the source first | [Locative relations](relations.md#locative-relations) |
+| heading for, not there yet (*on the way to the train*) | hook **`oel`** (*toward*) + `/b/` | [Hooks](hooks.md#extra-noun-intermediate) |
+| a stretch of time (*from the storm to the bell*) | one *from … to* unit: **`ul`** + start, **`oel`** + end | [Time](numbers-applied.md#time) |
+| end of a number range (*from 3 to 5*) | **`al`** between the two numbers | [Ranges](numbers-applied.md#ranges) |
+| end of a range on a line (*Azawan to Ahaben in the queue*) | **`oel`** between two words in one role | [Ranges](hooks.md#ranges) |
+| purpose (*walks to sit*, *in order to sit*) | **`hogom barl`** + the sentence, naming who sits | [So that](dependents.md#so-that) |
 
 ### *'s* / *of* {#of}
 
@@ -87,6 +99,14 @@ English *by*, *for*, *about*, *as*, and *against* each cover several jobs. Pick 
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](knowing.md#notional) |
 | dated books (*as of Friday*) | **`huhum` / `huram`** + `/b/` | [*As-of*](relations.md#as-of) |
 
+### *since*
+
+| English itch | Agazan job | Teach |
+|--------------|------------|-------|
+| from a time on (*has sat since the storm*) | hook **`ul`** (*from*) + the time in `/b/` | [Since](hooks.md#since) |
+| from an event on (*since Alahen fell asleep*) | **`ul barl`** + the sentence | [Since](hooks.md#since) |
+| reason (*since Alahen walks*) | **`thavem barl`** | [Because](causation.md#because) |
+
 ### *against*
 
 | English itch | Agazan job | Teach |
@@ -110,6 +130,8 @@ One English word, one row: the form that says it and the section that teaches it
 | *on* / *onto* / *upon* (*sits on a chair*, *climbs onto the table*) | hook **`aol`** + `/b/`; the verb says whether anything moves | [Hooks](hooks.md#extra-noun) |
 | *on it* (*sits on it too*) | resume hook **`aor`** | [Point back](hooks.md#hook-resume) |
 | *beside* / *next to* / *nearby* (*sleeps near me*) | hook **`om`** + `/b/` | [Hooks](hooks.md#extra-noun), [here and there](hooks.md#deixis) |
+| *among* / *amid* (*sits among the guards*) | hook **`am`** + `/b/` | [Hooks](hooks.md#extra-noun-intermediate) |
+| *over* (*a cloth over the table*: the landmark's face as the setting) | hook **`aom`** + `/b/`; plain height (*above the table*) is gravity **`habahal`** | [Hooks](hooks.md#extra-noun-intermediate), [Gravity](roles.md#gravity) |
 | *under* / *below* / *beneath* (*sleeps under the tree*) | gravity down **`hadahel`** (on a noun, **`gadahel`**) + `/b/` | [Gravity](roles.md#gravity) |
 | *above* / *upper* (*the book above the tree*) | gravity up **`habahal`** (on a noun, **`gabahal`**) + `/b/` | [Gravity](roles.md#gravity) |
 | *left side* / *right side* / *behind* / *in front of* (*behind the house*) | a direction with **`th`** + **`o`** + `/b/` landmark, such as `gazavathol bahazal` | [Landmark's own front](roles.md#landmark-facing) |
@@ -131,6 +153,18 @@ One English word, one row: the form that says it and the section that teaches it
 | *beyond* / *farther than* | rank on distance: `zahazal zel gazedam` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
 | *versus* / *against* (*Azawan versus Alahen*) | hook **`uel`** + `/b/` | [Hooks](hooks.md#extra-noun) |
 | *somewhere* / *nowhere* / *everywhere* / *elsewhere* | **`ol bar`** / **`ol bal`** / **`ol bual`** / **`ol bur`** | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites) |
+
+### Including, except, instead {#same-slot}
+
+These hooks sit between two phrases in the **same role**, so the second phrase keeps the first one's role letter: *the family, except Azawan* is `zavahal ul zazawan`, not `bazawan`.
+
+| English itch | Agazan job | Teach |
+|--------------|------------|-------|
+| *including* (*the family, including Azawan*) | hook **`al`** (**`am`**: and maybe more) between the two | [Including](hooks.md#including) |
+| *even* (*Alahen walks, and even Azawan does*) | surprise **`wezum`** before **`al`**: `zalahen wezum al zazawan vowogal` | [Detail on the hook](hooks.md#hook-w) |
+| *except* / *excluding* / *other than* (*the family except Azawan*) | hook **`ul`** (**`um`**: and maybe others) between the two | [Except](hooks.md#except) |
+| *instead of* / *rather than* (*coffee instead of tea*) | hook **`ol`**, with what you expected first: `dedehel ol dagavel` | [Instead](hooks.md#instead) |
+| *or rather* (*tired, or rather, sleepy*) | hook **`el`** between the two wordings | [Rather](hooks.md#rather) |
 
 ### Coming, going and following {#motion}
 

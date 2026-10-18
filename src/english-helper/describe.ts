@@ -43,9 +43,10 @@ export function plainTitle(title: string): string {
 
 /**
  * One suggestion as the Inspect page shows it: `form` is Agazan (copied on click when `copy`),
- * `note` is English with `*italic*` marks, `links` are `page.md#id` sections.
+ * `note` is English with `*italic*` and `` `code` `` marks, `links` are `page.md#id` sections, and
+ * `phrase` is a hook spelled with the landmark after it (copied on click).
  */
-export type SuggestionChip = { tier: Tier; emoji?: string; form?: string; copy?: boolean; note: string; links: string[] };
+export type SuggestionChip = { tier: Tier; emoji?: string; form?: string; copy?: boolean; note: string; links: string[]; phrase?: string };
 
 function senseNote(s: RootSuggestion): string {
   const parts = [s.name ? `name on "${s.sense}" + -n` : `"${s.sense}"`];
@@ -61,11 +62,11 @@ export function suggestionChip(s: Suggestion): SuggestionChip {
       return { tier: s.tier, ...(s.emoji ? { emoji: s.emoji } : {}), form: s.word ?? s.form, copy: true, note: senseNote(s), links };
     }
     case "job":
-      return { tier: s.tier, form: s.form, note: s.itch, links: [s.link] };
+      return { tier: s.tier, form: s.form, note: s.itch, links: [s.link], ...(s.phrase ? { phrase: s.phrase } : {}) };
     case "detector":
       return { tier: s.tier, note: s.label, links: s.links };
     case "entry":
-      return { tier: s.tier, form: s.form, note: `"${s.english}"`, links: [s.link] };
+      return { tier: s.tier, form: s.form, note: `"${s.english}"`, links: [s.link], ...(s.phrase ? { phrase: s.phrase } : {}) };
     case "role": {
       const parts = s.modifier ? `${s.modifier.root} + ${s.root}` : s.root;
       return { tier: s.tier, ...(s.emoji ? { emoji: s.emoji } : {}), form: s.form, copy: true, note: `role compound: ${roleReading(s)}; ${parts} "${s.sense}"`, links: [s.link] };
