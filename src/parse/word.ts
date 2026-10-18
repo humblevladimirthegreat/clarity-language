@@ -1,6 +1,6 @@
 import { parse as peggyParse, SyntaxError as PeggySyntaxError } from "../generated/word-parser.js";
 
-import { scanWordTokens } from "./span-scan.js";
+import { lowerNative, scanWordTokens } from "./span-scan.js";
 import type { MorphWord } from "./types.js";
 
 export class WordParseError extends Error {
@@ -27,7 +27,7 @@ function readResumeSense(word: MorphWord): MorphWord {
 /** Parse one Agazan word from surface text (Stage 1 Peggy grammar). */
 export function parseWord(input: string): MorphWord {
   try {
-    return readResumeSense(peggyParse(input.trim()) as MorphWord);
+    return readResumeSense(peggyParse(lowerNative(input.trim())) as MorphWord);
   } catch (error) {
     if (error instanceof PeggySyntaxError) {
       throw new WordParseError(error);
@@ -76,7 +76,7 @@ function morphKey(word: MorphWord): string {
 
 /** Full-word morph matches if each Peggy alternative is tried on its own (no ordered choice). */
 export function probeMorphWord(input: string): { source: string; word: MorphWord }[] {
-  const text = input.trim();
+  const text = lowerNative(input.trim());
   if (!text) return [];
 
   const hits: { source: string; word: MorphWord }[] = [];

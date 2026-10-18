@@ -157,7 +157,7 @@ describe("parseWord — spans and writing atoms", () => {
     assert.deepEqual(proper.family, {
       kind: "writingSpan",
       bracket: "[",
-      payload: "Hamlet",
+      payload: "hamlet",
       marks: ["@"],
     });
   });
@@ -175,6 +175,19 @@ describe("parseWord — spans and writing atoms", () => {
     if (word.family.kind === "writingSpan") {
       assert.equal(word.family.payload, " vuwurul d<]> ");
     }
+  });
+});
+
+describe("parseWord — capitals", () => {
+  it("reads native capitals as lowercase (phonology.md#beginner)", () => {
+    assert.deepEqual(parseWord("ZAzawan"), parseWord("zazawan"));
+    assert.deepEqual(parseWord("D[Azawan]"), parseWord("d[azawan]"));
+  });
+
+  it("keeps capitals inside an opaque span (spans.md#loans)", () => {
+    const word = parseWord("D@<NaCl>");
+    assert.equal(word.pos, "d");
+    assert.equal(word.family.kind === "writingSpan" && word.family.payload, "NaCl");
   });
 });
 
@@ -427,10 +440,6 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
 });
 
 describe("parseWord — illegal shapes", () => {
-  it("rejects capital role letter Zazawan (clause.md capitalization)", () => {
-    assert.throws(() => parseWord("Zazawan"), WordParseError);
-  });
-
   it("rejects ROOT l 1 with no number marker (numeric-derivation.md)", () => {
     assert.throws(() => parseWord("zolovel1l"), WordParseError);
   });

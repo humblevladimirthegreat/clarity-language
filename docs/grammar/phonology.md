@@ -7,7 +7,7 @@ How to **sound out** Agazan. Each letter has one pronunciation. Syllables end wi
 
 Pronounce each letter the same way every time. A **syllable** is one beat with one vowel. Spell the beats you actually say: a consonant starts a beat, and the last consonant of a content word (a word built on a root, such as a noun or verb) is where that word ends.
 
-Write native Agazan in **lowercase**. Two vowel letters in a row are two syllables. Say each vowel as its own beat.
+Write native Agazan in **lowercase**. A capital means nothing extra: read it as the same letter in lowercase. Two vowel letters in a row are two syllables. Say each vowel as its own beat.
 
 <!-- Sync: the IPA in the vowel and consonant tables must match LETTER_IPA in src/tts/phonemes.ts. Change both together. -->
 

@@ -5,6 +5,29 @@ const OPEN_CLOSE: Record<string, string> = {
   "<": ">",
 };
 
+/**
+ * Native text is unicase lowercase (phonology.md#beginner), so read any capital as its lowercase letter.
+ * Opaque payloads (`<…>`) keep their spelling (spans.md#loans). Same length as the input, so offsets hold.
+ */
+export function lowerNative(text: string): string {
+  let out = "";
+  let i = 0;
+  while (i < text.length) {
+    if (text[i] === "<") {
+      const gt = text.indexOf(">", i + 1);
+      const end = gt < 0 ? text.length : gt + 1;
+      out += text.slice(i, end);
+      i = end;
+      continue;
+    }
+    const lt = text.indexOf("<", i);
+    const end = lt < 0 ? text.length : lt;
+    out += text.slice(i, end).replace(/[A-Z]/g, (c) => c.toLowerCase());
+    i = end;
+  }
+  return out;
+}
+
 /** Index just after a paired span starting at `openAt` (the opening bracket). */
 export function scanPairedEnd(text: string, openAt: number): number | undefined {
   const open = text[openAt];
@@ -106,7 +129,7 @@ function peelPunct(chunk: string): string {
 
 /** Word tokens: writing spans stay whole; island edges skipped; trailing `.?!` peeled. */
 export function scanWordTokens(text: string): string[] {
-  const trimmed = text.trim();
+  const trimmed = lowerNative(text.trim());
   if (!trimmed) return [];
   const tokens: string[] = [];
   let i = 0;
@@ -146,6 +169,7 @@ export function scanWordTokens(text: string): string[] {
  * and any leading tone mark or trailing sentence mark left on its chunk.
  */
 export function scanChunks(text: string): { text: string; start: number }[] {
+  text = lowerNative(text);
   const chunks: { text: string; start: number }[] = [];
   let i = 0;
   while (i < text.length) {

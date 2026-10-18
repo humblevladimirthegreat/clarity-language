@@ -1,6 +1,6 @@
 import type { MorphWord } from "./types.js";
 import { classifyAll, type ClassifyTables } from "./classify.js";
-import { toneRunLength, writingSpanEnd } from "./span-scan.js";
+import { lowerNative, toneRunLength, writingSpanEnd } from "./span-scan.js";
 import {
   lexWordToToken,
   surfaceAtomToToken,
@@ -37,7 +37,7 @@ function peelTrailingPunct(raw: string): { word: string; punct?: PunctKind } {
 
 /** Split utterance text into Peggy words and peeled surface atoms. */
 export function segmentUtterance(text: string): TokenizeSegment[] {
-  const trimmed = text.trim();
+  const trimmed = lowerNative(text.trim());
   if (!trimmed) return [];
 
   const segments: TokenizeSegment[] = [];
