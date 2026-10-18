@@ -34,7 +34,8 @@
     "find-english": "node scripts/find-english.mjs",
     "english-helper": "node scripts/english-helper.mjs",
     "english-helper-recall": "tsx scripts/english-helper-recall.ts",
-    "english-helper-wordnet": "tsx scripts/english-helper-wordnet.ts"
+    "english-helper-wordnet": "tsx scripts/english-helper-wordnet.ts",
+    "flashcards": "tsx scripts/flashcards.ts"
   },
   "engines": {
     "node": ">=24"

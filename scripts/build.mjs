@@ -59,6 +59,7 @@ const jobs = [
   run("lint agazan", bin("tsx"), ["scripts/lint-agazan-docs.ts"], { buffer: true }),
   run("eslint", bin("eslint"), ["--cache", "--cache-location", "node_modules/.cache/eslint", "docs/grammar/.vitepress/components"], { buffer: true }),
   run("docs:publish", "npm", ["run", "-s", "docs:publish"], { buffer: true }),
+  run("flashcards", "npm", ["run", "-s", "flashcards"], { buffer: true }),
 ];
 const failed = (await Promise.all(jobs)).filter((r) => r.code !== 0);
 

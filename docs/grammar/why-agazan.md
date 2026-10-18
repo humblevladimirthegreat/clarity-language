@@ -16,6 +16,8 @@ Here is a common ruminating thought in English: *I failed. I'm no good at this, 
 
 > `zagayam thahor gulothum. zamun vevegoxom.`
 >
+> /zä.ɡä.jäm ðä.ɦo̞ɹ ɡʉ.lo̞.ðʉm. zä.mʉn ve̞.ve̞.ɡo̞.ʒo̞m/
+>
 > z-failure | th-INTUITION.weak | g-competence-unmet-modifiable . z-speaker | v-triumph-unable-modifiable
 >
 > "It's only a faint hunch, but my failure set back my competence, in a way that can change. I can't succeed yet."

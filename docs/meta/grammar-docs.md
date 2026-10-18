@@ -413,7 +413,7 @@ Resume teaching may talk about a “whole stem” in running prose; the Agazan c
 - Never link to or mention `meta/`, `examples/`, `proposals/`, `data/`, or repo-root files from a grammar page.
 - One canonical anchor per concept (`<a id="…">`), matching the current heading. When a heading changes, retarget links; do not keep the old id — [one current heading, one current id](#one-current-heading).
 - Do not dump the whole related-inventory into the lead paragraph.
-- **IPA and pronunciation** belong in [phonology.md](../grammar/phonology.md) (letter table, teaching cues) and on the [Inspect](../grammar/inspect.md) tool (**IPA:** beside **Speak Agazan** transcribes the same spoken forms). Other grammar pages use orthographic letters (`y`, `x`, `/y/`, `/x/`) — never IPA transcriptions or sound cues in running examples. If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
+- **IPA and pronunciation** belong in [phonology.md](../grammar/phonology.md) (letter table, teaching cues) and on the [Inspect](../grammar/inspect.md) tool (**IPA:** beside **Speak Agazan** transcribes the same spoken forms). Other grammar pages use orthographic letters (`y`, `x`, `/y/`, `/x/`) — never IPA transcriptions or sound cues in running examples (the one exception is the opening sentence in [why-agazan.md](../grammar/why-agazan.md#at-a-glance), which shows its IPA). If a learner needs how a letter sounds, link once to phonology (peer in `grammar/`).
 
 ### Teach now; don’t preview later
 <a id="teach-now-dont-preview-later"></a>
