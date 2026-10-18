@@ -6,7 +6,7 @@ What Agazan is for, what it looks like, a tour of the features that serve its ai
 
 Agazan builds psychological concepts and self-improvement techniques into its vocabulary and grammar, so that using the language nudges you toward healthier habits of thought.
 
-The design aims at three outcomes: [compassion](#compassion), [rationality](#rationality), and [empowerment](#empowerment). [Psychological features](#psychological-features) describes each one with the features that serve it.
+Its psychological goals are three outcomes: [compassion](#compassion), [rationality](#rationality), and [empowerment](#empowerment). [Psychological features](#psychological-features) describes each one with the features that serve it. Agazan also has [structural goals](introduction.md#structural-goals): every sentence has exactly one reading, the sounds are easy to sing, and a few patterns do many jobs.
 
 Agazan is not therapy, and its effects are a design intent, not a proven result. The language is in beta ([limits](#limits)).
 
