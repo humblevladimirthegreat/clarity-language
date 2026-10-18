@@ -1,18 +1,18 @@
 # Why Agazan
 
-Why Agazan exists, what it looks like, a tour of the features that serve its aims, and what it does not claim.
+What Agazan is for, what it looks like, a tour of the features that serve its aims, and what it does not claim.
 
 ## Purpose {#purpose}
 
-Agazan encodes psychological concepts and self-improvement techniques into vocabulary and grammar so that using the language nudges you toward better habits.
+Agazan builds psychological concepts and self-improvement techniques into its vocabulary and grammar, so that using the language nudges you toward healthier habits of thought.
 
-The design aims at three outcomes: [compassion](#compassion), [rationality](#rationality), and [empowerment](#empowerment). Each is described with the features that serve it under [Psychological features](#psychological-features).
+The design aims at three outcomes: [compassion](#compassion), [rationality](#rationality), and [empowerment](#empowerment). [Psychological features](#psychological-features) describes each one with the features that serve it.
 
-Agazan is not therapy, and its effects are design intent, not a proven result. The language is in beta ([limits](#limits)).
+Agazan is not therapy, and its effects are a design intent, not a proven result. The language is in beta ([limits](#limits)).
 
 ## Agazan at a glance {#at-a-glance}
 
-A common rumination in English: *I failed. I'm no good at this, and I never will be.* English lets you say that without checking any of it. Here is how the same thought might come out in Agazan:
+Here is a common ruminating thought in English: *I failed. I'm no good at this, and I never will be.* English lets you say all of that without checking any of it. Here is how the same thought might come out in Agazan:
 
 > `zagayam thahor gulothum. zamun vevegoxom.`
 >
@@ -20,31 +20,31 @@ A common rumination in English: *I failed. I'm no good at this, and I never will
 >
 > "It's only a faint hunch, but my failure set back my competence, in a way that can change. I can't succeed yet."
 
-Five words, and three of them make you choose what English skips. Each choice is a question about the thought itself, and answering it honestly is what turned *never* into *yet*:
+That is five words, and three of them make you choose something English lets you skip. Each choice is a question about the thought itself, and answering it honestly is what turned *never* into *yet*:
 
-- `thahor` says how you know: a gut sense, and only a faint one. Other words say you saw it, remember it, read it from clues, or were told, and other endings say the hunch is strong. Said once, it covers the next sentence too ([evidentiality](knowing.md#evidentiality)).
-- `gulothum` names what the failure costs: competence, one of the [sakes](sakes.md) (things that are good for a person). Its ending says the cost can change with effort or circumstance; other endings say it is lasting, or only for now. Other sakes, such as relatedness or purpose, name a different cost, and the met stance names a gain instead. The sake word also makes the failure yours, with no separate word for *my*.
+- `thahor` says how you know: a gut sense, and only a faint one. Other words say you saw it, remember it, worked it out from clues, or were told, and other endings say the hunch is strong. Said once, it covers the next sentence too ([evidentiality](knowing.md#evidentiality)).
+- `gulothum` names what the failure costs: competence, one of the [sakes](sakes.md) (things that are good for a person). Its ending says the cost can change with effort or circumstance; other endings say it is lasting, or only for now. Other sakes, such as relatedness or purpose, name a different cost, and swapping the *unmet* vowel for the *met* one names a gain instead. The sake word also makes the failure yours, with no separate word for *my*.
 - `vevegoxom` is *can't succeed*, but only *yet*: it may still change. Other vowels say *right now* (you usually can) or *never* ([ability](intention.md#ability)).
 
-Agazan does not force the gentler answer. You could still say *I can never succeed* (`zamun vevegoxum.`), call the hunch strong, or call the cost lasting, and sometimes that is true. But English *I'll never be good at this* never asks how you know or how lasting it is, so the harsh version goes by unchecked. In Agazan you cannot say *can't* without choosing among *right now*, *yet*, and *never*, and that one moment of choosing is often enough to notice that *yet* is the honest answer.
+Agazan does not force the gentler answer. You can still say *I can never succeed* (`zamun vevegoxum.`), call the hunch strong, or call the cost lasting, and sometimes that is true. But English *I'll never be good at this* does not ask how you know or how lasting it is, so the harsh version slips by unchecked. In Agazan you cannot say *can't* without choosing among *right now*, *yet*, and *never*, and that one moment of choosing is often enough to notice that *yet* is the honest answer.
 
-The first letter of each word names its job: `/z/` the subject, `/ɡ/` what the subject is, `/v/` the verb, `/th/` what is in your mind. Word order is free, and every sentence has exactly one reading. [Inspect](inspect.md) opens with this sentence loaded, so you can click through each word.
+The first letter of each word tells you its role in the sentence: `/z/` the subject, `/ɡ/` what the subject is, `/v/` the verb, `/th/` what is in your mind. Because the roles live on the letters, word order is free, and every sentence still has exactly one reading. [Inspect](inspect.md) opens with this sentence loaded, so you can click through each word.
 
 ## Try it in English first {#try-it-in-english}
 
-You don't have to learn the whole language to start using these ideas! [Claritish](claritish/index.md) is short lessons on dropping single Agazan words into everyday English. English *I'm anxious* can mean right now or the kind of person you are. *I'm `anxious-tha`* says it is this stretch, not who you are, and English needs a whole extra clause for that. Other lessons cover how you know, how far a label reaches, thanks that name the need, and more.
+You don't have to learn the whole language to start using these ideas. [Claritish](claritish/index.md) is a set of short lessons on dropping single Agazan words into everyday English. For example, English *I'm anxious* can mean anxious right now or an anxious person. *I'm `anxious-tha`* says it is this stretch, not who you are, where English would need a whole extra clause. Other lessons cover how you know, how far a label reaches, thanks that name the need, and more.
 
-Every word Claritish teaches is already real Agazan, so nothing you learn there is thrown away. [Start with the Claritish introduction](claritish/index.md); each lesson is short.
+Every word Claritish teaches is already real Agazan, so nothing you learn there is wasted. [Start with the Claritish introduction](claritish/index.md).
 
 ## Psychological features {#psychological-features}
 
-This section tours how the three aims show up in vocabulary and grammar. The features are grouped by the thinking trap each one answers, and the groups sit under the aims. Each feature says what English blurs, what Agazan marks instead, and what that helps you do; the linked pages teach the actual forms. A group names the habit its features push against, not a bias they have been shown to cure ([limits](#limits)).
+This section tours how the three aims show up in vocabulary and grammar. Under each aim, the features are grouped by the thinking trap they answer. Each feature says what English blurs, what Agazan marks instead, and what that helps you do; the linked pages teach the actual forms. A group's name is the habit its features push against, not a bias they have been shown to cure ([limits](#limits)).
 
 ### Compassion {#compassion}
 
 Support self-acceptance and acceptance of others, and make judgments visible when they arise.
 
-Praise can name the sake a person’s work actually served instead of stopping at a vague *good*. A flash of anger or anxiety can be described by the unmet sake behind it, how strongly it stirs, and where it sits, so the feeling points at something you can act on instead of stopping at a blank label. And *can’t* comes in kinds: temporary, modifiable, or irreversible. A block never has to read as who someone is. *Because* says what made something happen without claiming anyone is to blame, unless you choose to say so.
+Praise can name the sake a person’s work actually served instead of stopping at a vague *good*. A flash of anger or anxiety can be described by the unmet sake behind it, how strongly it stirs, and where it sits, so the feeling points at something you can act on rather than a blank label. *Can’t* comes in kinds (temporary, modifiable, or irreversible), so a block never has to read as who someone is. And *because* says what made something happen without claiming anyone is to blame, unless you choose to say so.
 
 #### Treating a moment as identity {#trap-identity}
 
@@ -56,7 +56,7 @@ English *Alahen is angry* can mean one outburst or the kind of person Alahen is.
 
 [Label scope](predication.md#label-scope) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Azawan*), or about a type that follows the person across scenes.
 
-Marking a label's reach helps you describe what happened without turning it into who someone is, including yourself.
+Marking a label's reach helps you describe what happened without turning it into a verdict on who someone is, yourself included.
 
 In English: [Claritish: Labels](claritish/labels.md).
 
@@ -70,11 +70,11 @@ Saying *can’t right now* or *may yet change* instead of *impossible* helps you
 
 ##### What still counts, and what used to be true
 
-English *has…* and *used to* mix two questions: **when** something happened, and whether it **still matters now**. *Used to* also leaves open whether a habit still describes you today.
+English *has done* and *used to* mix two questions: **when** something happened, and whether it **still matters now**. *Used to* also leaves open whether a habit still describes you today.
 
 [RESIDUE](knowing.md#residue) says the result of a past event still counts now (a debt still unpaid, a door still shut). [FORMER](knowing.md#former-climate) says a pattern was usual but you are **not** claiming it as how things are now (cue: usual weather vs today’s report). Neither word is a past tense: each can combine with what you see now, what you remember, or a forecast.
 
-Marking residue keeps rumination optional: an event you mention without it counts as closed. Marking a former pattern lets “I always was this way” become a description you can stop giving. [As-of](relations.md#as-of) names the moment that leftovers and patterns are measured from (*as of Friday*), so you can weigh an old situation from its own date instead of against today. For English *if they had … they would*, the as-of moment is a placeholder you do not claim is real, which is not the same as pretending.
+Because residue is marked, an event you mention without it counts as closed, so carrying a past event forward is a choice rather than a default, and rumination stays optional. Marking a former pattern lets *I was always this way* describe the past without claiming the present. [As-of](relations.md#as-of) names the moment that leftovers and patterns are measured from (*as of Friday*), so you can weigh an old situation by its own date instead of against today. For English *if they had … they would*, the as-of moment is a placeholder you do not claim is real, which is not the same as pretending.
 
 #### Treating a feeling as a label {#trap-feeling}
 
@@ -103,15 +103,15 @@ Opaque labels (*angry*, *anxious*, *proud*) hide which sake is in play and what 
 
 Agazan [builds an emotion](sakes.md#emotion-compose) from three parts: a [sake](sakes.md) and how it stands (usually met or unmet), where the feeling sits or what it points at, and its motion (surging, flowing, or still).
 
-Building the feeling from those parts helps you ask for what would actually help instead of stopping at the label.
+Building the feeling from those parts shows you what to ask for, instead of leaving you stuck at the label.
 
 In English: [Claritish: Feelings in three parts](claritish/feelings.md).
 
 ##### Thanks that name the need {#thanks-that-name-the-need}
 
-English *thank you* says you are grateful but not for what.
+English *thank you* says you are grateful, but not for what.
 
-Agazan has no set phrase for [thanks](sakes.md#thanks-sorry). You say which of your sakes was met, and saying it to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](sakes.md#whose-stake)). Put the sake word right after a thing you own and it thanks that thing, with no separate word for *my*, so appreciating what you already have takes one word ([personal possession](sakes.md#personal-possession)).
+Agazan has no set phrase for [thanks](sakes.md#thanks-sorry). Instead, you say which of your sakes was met; saying that to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](sakes.md#whose-stake)). Put the sake word right after a thing you own and it appreciates that thing, with no separate word for *my*, so appreciating what you already have takes one word ([personal possession](sakes.md#personal-possession)).
 
 Naming the need that was met makes thanks specific, which helps both of you notice what actually helped.
 
@@ -119,7 +119,7 @@ In English: [Claritish: Thanks and sorry that say why](claritish/thanks-and-sorr
 
 #### Treating a cause as a fault {#trap-fault}
 
-An explanation of what made something happen slides into blame, and one cause among several carries the whole outcome. The feature here keeps cause, blame, and a share of the cause apart.
+An explanation of what made something happen slides into blame, and one cause among several ends up carrying the whole outcome. The feature here keeps cause, blame, and a share of the cause apart.
 
 ##### Cause, blame, and share {#cause-blame-and-share}
 
@@ -137,7 +137,7 @@ Claims can say how you know: memory, a report, a pattern, clues, a deduction. A 
 
 A *because* or an *if* says what kind of link it claims. When the “must” is really an ought, the sentence shows the value behind it instead of treating a wish as necessity.
 
-Choice lists can say whether they are open or closed, so two options cannot smuggle themselves in as the only ones.
+A list of choices can say whether it is open or closed, so two options cannot pass themselves off as the only ones.
 
 #### Treating a guess as fact {#trap-certainty}
 
@@ -149,7 +149,7 @@ It is easy to treat a *could be* that keeps looping in your head as settled fact
 
 [Evidentiality](knowing.md#evidentiality) lets a claim about the world name **how you know**: a live look, memory, a pattern, clues, a report, or a gut sense. **MEMORY** is recalling a scene from earlier, and memory can be wrong. A live look (**LIVE**) is sensing it while it is still in view. Name the channel once and it carries over your next claims, so a whole story can rest visibly on one *so they say*.
 
-The [ending](knowing.md#evidence-strength) on that evidence word says how strong the evidence is (a vivid memory or a hazy one, a reliable source or a rumor), separately from how likely the claim is. Marking how you know helps you catch overconfidence and hearsay before you treat a take as settled fact.
+The [ending](knowing.md#evidence-strength) on that evidence word says how strong the evidence is (a vivid memory or a hazy one, a reliable source or a rumor), separately from how likely the claim is. Marking how you know helps you catch overconfidence and hearsay before a claim hardens into settled fact.
 
 A [deduction](knowing.md#deduction) is its own channel, apart from strong clues: it says the claim **must** hold if its premises do, and its ending says how far you checked the steps. *It obviously follows* is easy to say about a conclusion the clues only make likely; keeping the two apart, and marking whether you grant the premises at all, helps you catch a leap dressed as a proof.
 
@@ -169,11 +169,11 @@ A link between events, a habit, or an ought gets treated as a law the world must
 
 ##### Causes and *if*
 
-Everyday English *because*, *leads to*, and *have to* blur three splits: a condition that is enough vs one that is required, a reason in the world vs your grounds for saying something, and a wish vs a law of nature.
+Everyday English *because*, *leads to*, and *have to* blur three distinctions: a condition that is enough vs one that is required, a reason in the world vs your grounds for saying something, and a wish vs a law of nature.
 
 [Causation](causation.md) gives each link its own word: *if*, *only if*, *because*, and *if and only if*. An intended result (*so that*) uses a separate word, `hogom` ([so that](dependents.md#so-that)): the action is aimed at that outcome without claiming it happens, and it is not the same as acting for a sake ([motive](sakes.md#sake-preference), `tho`). When the “rule” is really an ought (*hard work should earn promotion*), say it with a sakes [prescription](sakes.md#sake-force) (`the`) on the act, not with a causation word.
 
-Keeping those splits apart helps you stop treating wishes and habits as if the world must obey them.
+Keeping these apart helps you stop treating wishes and habits as laws the world must obey.
 
 #### Treating a few options as all of them {#trap-frames}
 
@@ -217,11 +217,11 @@ In English: [Claritish: Allowed, required, agreed](claritish/allowed-required-ag
 
 ##### Wanting, planning, and deciding {#wanting-planning-and-deciding}
 
-English *will* mixes plan and prediction, and *I want to* can sound like a promise. It is easy to talk as if the future were already known (a certain prediction that fuels anxiety or overconfidence), while a pick often sounds more locked than it is.
+English *will* mixes plan and prediction, and *I want to* can sound like a promise. It is easy to talk as if the future were already known, and a confident prediction can fuel anxiety or overconfidence. A pick, meanwhile, often sounds more locked than it is.
 
 Agazan splits them: [want](intention.md#want) for what you wish for, without meaning to do it yet; [PLAN](intention.md#plan-predict) for what you mean to do; [DECISION](intention.md#decision) for how revisable a pick is; and a [forecast](knowing.md#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `bral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
 
-All three are in a mind, so with nothing else marked they are yours; someone else's want, plan, or decision takes a [holder](knowing.md#holder) that says how you know it.
+Wants, plans, and decisions all live in someone's mind, so with nothing else marked they are yours; someone else's want, plan, or decision takes a [holder](knowing.md#holder) that says how you know it.
 
 Splitting these helps you hold a want without owing it to anyone, avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and keep a revisable pick from sounding locked forever. Marking how you know someone else's intention keeps a guess about what they mean to do from passing as fact.
 
@@ -245,9 +245,9 @@ In English: [Claritish: Decisions and tries](claritish/decisions-and-tries.md).
 
 ##### Planning the backup first {#planning-the-backup-first}
 
-A plan made in English often names only the first choice, and either stays vague or has to be complete before you act.
+A plan made in English often names only the first choice, and it either stays vague or feels like it has to be complete before you act.
 
-A [fallback](intention.md#fallback) joins an attempt to its backup with `xon`: *try A; failing that, B*. The backup counts only if the attempt before it fails. The [PLAN](intention.md#plan-predict) ending says how much of the plan is drawn: backups included, steps filled in, or only a direction. No level is better, and a sketch is often all a small or early plan needs; for a plan that matters, the atlas ending is a prompt to ask what could go wrong.
+A [fallback](intention.md#fallback) joins an attempt to its backup with `xon`: *try A; failing that, B*. The backup counts only if the attempt before it fails. The [PLAN](intention.md#plan-predict) ending says how much of the plan is drawn: backups included, steps filled in, or only a direction. No level is better, and a sketch is often all a small or early plan needs; for a plan that matters, the backups-included ending is a prompt to ask what could go wrong.
 
 Naming the backup before you start helps a setback turn into the next step instead of a dead end, and matching plan detail to the task keeps planning from becoming a reason not to start.
 
@@ -273,17 +273,17 @@ Marking an assumed yes as an assumption helps you check before acting, and marki
 
 ##### How long you can talk {#how-long-you-can-talk}
 
-English *hi* does not say whether you can stay, whether you have only a few minutes, whether you have one thing to ask, or whether you are only passing by.
+English *hi* does not say whether you can stay a while, have only a few minutes, have one thing to ask, or are just passing by.
 
 A [greeting](word-endings.md#greeting) is your own name said as a sentence (`SELFn.`). Calling someone is a [vocative](speech-moves.md#vocative). A [conversation-length bid](x-compounds.md#conversation-length) adds one vowel to your name: open-ended, a few minutes, one thing to ask, or passing by. The other person can answer with their own bid; the **shorter** bid sets the limit for both of you. When you leave, the same form says whether you are leaving soon, about to leave, or leaving now. The vowel describes the conversation, not either person.
 
-Marking the opening that way helps you agree to the talk without a greeting committing you to unlimited time.
+Marking the opening that way lets you agree on how long to talk, so saying hello never commits you to unlimited time.
 
 ### Conceptual metaphors {#conceptual-metaphors}
 
-Abstract ideas are hard to hold; without a concrete picture, the psychologically useful reading of a word slips away in the moment. This cuts across the groups above.
+Abstract ideas are hard to hold onto; without a concrete picture, the psychologically useful reading of a word slips away in the moment. This cuts across all the groups above.
 
-Many roots have an **abstract** sense beside a **concrete** one, so an idea you cannot see is tied to a familiar scene that already carries the caution. Examples:
+Many roots have an **abstract** sense beside a **concrete** one, so an idea you cannot see is tied to a familiar scene that already carries the caution. For example:
 
 - [Memory as fishing](knowing.md#evidentiality) ([a guess as fact](#trap-certainty)): cast into opaque water; you may pull up a fish or a **boot** (the memory can be wrong).
 - [Live look as attesting](knowing.md#live-vs-memory) ([a guess as fact](#trap-certainty)): you report what you see while the scene is still in view.
@@ -294,19 +294,19 @@ Many roots have an **abstract** sense beside a **concrete** one, so an idea you 
 - [Mechanism as gears](causation.md#cause) ([a wish as a law](#trap-wish-as-law)): you say *how* a result comes about, like gears meshing, not only that it follows.
 - [Affect as water](sakes.md#emotion-compose) ([a feeling as a label](#trap-feeling)): surging, flowing, or still water (motion) plus where the feeling sits or points, instead of an opaque emotion label that hides the sake.
 
-Conceptual metaphors help you reach and remember the healthier frame by tying it to a concrete picture that already encodes the bias you are trying to catch.
+Because each picture already carries a warning against the trap, it helps you reach for the healthier frame in the moment and remember it later.
 
 ## Why language can help {#why-language-can-help}
 
 Unhelpful thoughts are often automatic: catastrophizing a small setback into “my life is ruined,” treating two options as the only ones, or labeling a feeling as *anger* without naming which sake is unmet. (A sake is something that is good for you, such as autonomy, competence, or connection with others.) Healthier framings exist, but they are hard to reach in the moment.
 
-Agazan puts those framings into ordinary words and optional extra pieces on words. When you speak or think in the language, the helpful distinction is already sitting in the sentence shape.
+Agazan puts those framings into ordinary words and into optional pieces added to words. When you speak or think in the language, the helpful distinction is already built into the sentence.
 
 ## Limits {#limits}
 
 Agazan encodes psychological concepts and techniques, but it is **not therapy, counseling, or medical advice**, and it is not a substitute for professional care when you need it.
 
-The design *aims* at compassion, rationality, and empowerment, and each feature is chosen to target a common, everyday problem, preferring research when it exists. That is design intent, **not a claim** that speaking or studying Agazan has been shown to improve mental health or other outcomes.
+The design *aims* at compassion, rationality, and empowerment, and each feature is chosen to target a common, everyday problem, drawing on research where it exists. That is design intent, **not a claim** that speaking or studying Agazan has been shown to improve mental health or other outcomes.
 
 The language is currently in **beta**: grammar, lexicon, and these docs can change as the design settles.
 
@@ -314,28 +314,28 @@ The language is currently in **beta**: grammar, lexicon, and these docs can chan
 
 ### Can a language change how you think?
 
-Some people doubt that a language can influence its speakers’ thoughts (the claim that it can is the weak Sapir-Whorf hypothesis). I make no claims here about whether it happens for natural languages, but for Agazan specifically, I give the following argument:
+Some people doubt that a language can influence how its speakers think (the claim that it can is the weak form of the Sapir-Whorf hypothesis). I make no claim here about natural languages, but for Agazan specifically, I offer this argument:
 
-1. The way a concept is framed (phrased) affects how people think about it (a well-established phenomenon in [psychology](https://en.wikipedia.org/wiki/Framing_effect_(psychology)) and the [social sciences generally](https://en.wikipedia.org/wiki/Framing_(social_sciences))).
-2. Agazan’s vocabulary and grammar ensure particular frames for certain concepts (using the design laid out on this page and in the linked grammar docs).
-3. Therefore, Agazan influences how speakers think.
+1. The way a concept is framed (phrased) affects how people think about it. This is well established in [psychology](https://en.wikipedia.org/wiki/Framing_effect_(psychology)) and the [social sciences generally](https://en.wikipedia.org/wiki/Framing_(social_sciences)).
+2. Agazan’s vocabulary and grammar build particular frames into how certain concepts are expressed, as laid out on this page and in the linked grammar docs.
+3. Therefore, Agazan influences how its speakers think.
 
 ### Ethical considerations {#ethical-considerations}
 
-Some are reminded of Newspeak from 1984, where a totalitarian government alters the language to influence the populace into being more compliant. What makes Newspeak unethical is that the language is forced upon an unwitting populace.
+Some people are reminded of Newspeak from *1984*, where a totalitarian government alters the language to make the populace more compliant. What makes Newspeak unethical is that it is forced on people who do not know what it is doing to them.
 
-For Agazan and similar languages, as long as using the language is voluntary, and the speaker knows how the language influences their thoughts (and the language delivers on those promises), then it is morally good. Learning the language is like enrolling in a self-help course to change your thought patterns: clearly ethical if it changes you in the healthy way you want. [Claritish](claritish/index.md) lets you sample the effect in English before you commit to anything more.
+For Agazan and languages like it, as long as using the language is voluntary, the speaker knows how it influences their thoughts, and the language delivers on those promises, it is morally good. Learning the language is like enrolling in a self-help course to change your thought patterns: clearly ethical if it changes you in the healthy way you want. [Claritish](claritish/index.md) lets you sample the effect in English before you commit to anything more.
 
-Language influences but does not determine thought. Speakers who wish to think or communicate in a way discouraged by the language are still capable of doing so (though the sentences will likely be longer).
+Language influences thought but does not determine it. Speakers who want to think or communicate in a way the language discourages can still do so, though their sentences will likely be longer.
 
 ### Language evolution {#language-evolution}
 
-Some think that the inevitable change to languages that happens over decades of use will lead to the constructed language eventually being “watered down” to the point where it no longer has the properties that make the language beneficial.
+Some expect that the change every language goes through over decades of use will eventually water Agazan down until it loses the properties that make it beneficial.
 
-While the language can and should change to keep up with the times, I am optimistic that it will retain or even strengthen its beneficial properties because the people who choose to learn the language want those beneficial properties and so will adopt changes in line with the language’s goals.
+The language can and should change to keep up with the times, but I am optimistic that it will keep or even strengthen its beneficial properties. The people who choose to learn it want those properties, so they will tend to adopt changes in line with the language’s goals.
 
-Even if the language does lose its potency over a century, having a positive impact for many people over such a long period of time is still a worthwhile accomplishment.
+Even if the language does lose its potency over a century, a positive impact on many people over that long a time is still worth achieving.
 
 ## Next {#next}
 
-To try the ideas in English first, start with [Claritish](claritish/index.md). To go straight to the language, continue with [introduction.md](introduction.md) for the name, grammar design, and how to learn these docs, then [phonology.md](phonology.md#beginner) for letters, [word-endings.md](word-endings.md#beginner) for citation endings, [clause.md](clause.md#beginner) for clause shape, [speech-moves.md](speech-moves.md#beginner) for turns, then [dependents.md](dependents.md#beginner). Community updates: [Agazan on Reddit](https://www.reddit.com/r/ClarityLanguage).
+To try the ideas in English first, start with [Claritish](claritish/index.md). To go straight to the language, continue with [introduction.md](introduction.md) for the name, the grammar's design, and how to use these docs, then [phonology.md](phonology.md#beginner) for letters, [word-endings.md](word-endings.md#beginner) for citation endings, [clause.md](clause.md#beginner) for clause shape, [speech-moves.md](speech-moves.md#beginner) for turns, then [dependents.md](dependents.md#beginner). Community updates: [Agazan on Reddit](https://www.reddit.com/r/ClarityLanguage).
