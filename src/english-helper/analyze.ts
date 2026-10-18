@@ -260,7 +260,8 @@ function compoundSuggestions(data: HelperData, modifier: { term: TaggedTerm; slo
 
 /**
  * A run of two or three content words ending in a noun whose joined form is a lexicon or WordNet
- * sense (*living room*, *living-room*): the run is one slot. Longest first.
+ * sense (*living room*, *living-room*): the run is one slot. Longest first. A WordNet lead joins
+ * the run only when its last noun has no lexicon sense, so *big hand* stays *big* + *hand*.
  */
 function ngramMatch(data: HelperData, terms: readonly TaggedTerm[], i: number): { end: number; hits: LexiconSuggestion[] } | undefined {
   for (let len = Math.min(3, terms.length - i); len >= 2; len--) {
@@ -269,7 +270,8 @@ function ngramMatch(data: HelperData, terms: readonly TaggedTerm[], i: number): 
     const words = [...run.slice(0, -1).map((t) => t.normal), run[len - 1]!.lemma];
     const keys = [words.join(" "), words.join("-"), words.join("")];
     const hits = lookupLexicon(data.lexicon, keys).filter((s) => s.tier !== "alias");
-    const leads = !hits.length && data.wordnet ? lookupWordnet(data.wordnet, data.lexicon, keys, "n").filter((s) => s.tier === "synonym") : [];
+    const headListed = lookupLexicon(data.lexicon, [run[len - 1]!.lemma, run[len - 1]!.normal]).some((s) => s.tier !== "alias");
+    const leads = !hits.length && !headListed && data.wordnet ? lookupWordnet(data.wordnet, data.lexicon, keys, "n").filter((s) => s.tier === "synonym") : [];
     if (hits.length || leads.length) return { end: i + len, hits: [...hits, ...leads] };
   }
   return undefined;

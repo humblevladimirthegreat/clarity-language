@@ -36,7 +36,7 @@ Third-party dependencies keep their own licenses (see package-lock.json).
 Third-party data
 ----------------
 
-src/generated/english-wordnet.json (the English helper's word index, also served by the grammar site) is derived from Open English WordNet 2025 (https://en-word.net), with word frequencies from the SemCor counts in WordNet 3.1. Neither is covered by the licenses above.
+src/generated/english-wordnet.json (the English helper's word index, also served by the grammar site) is derived from Open English WordNet 2025 (https://en-word.net). It is not covered by the licenses above.
 
 Open English WordNet 2025 is provided by the Open English WordNet team under the Creative Commons Attribution 4.0 International License (CC BY 4.0). It is itself derived from WordNet 3.1, whose license follows.
 

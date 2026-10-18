@@ -98,6 +98,8 @@ describe("WordNet tiers and routes", () => {
       automobile: [{ sense: "car", tier: "synonym", pos: "n" }],
       pupper: [{ sense: "dog", tier: "broader", pos: "n" }],
       blarg: [{ sense: "car", tier: "synonym", pos: "v" }],
+      "motor carriage": [{ sense: "car", tier: "synonym", pos: "n" }],
+      "big dog": [{ sense: "car", tier: "synonym", pos: "n" }],
     },
     routes: { cousin: { class: "kin" }, sister: { class: "kin" }, piglet: { class: "young", sense: "dog" } },
   };
@@ -112,6 +114,12 @@ describe("WordNet tiers and routes", () => {
     assert.equal(lead!.lead, "car");
     assert.equal(lead!.form, root("car"));
     assert.equal(lead!.word, `d${root("car")}l`);
+  });
+
+  it("joins a run on a WordNet phrase lead only when its last noun has no lexicon sense", () => {
+    const carriage = slotsOf("Azawan sees the motor carriage.").find((s) => s.text === "motor carriage")!;
+    assert.equal(lexical(carriage)[0]!.lead, "car");
+    assert.ok(slotsOf("Azawan sees the big dog.").some((s) => s.text === "dog"));
   });
 
   it("offers a broader sense, only for the part of speech WordNet links", () => {

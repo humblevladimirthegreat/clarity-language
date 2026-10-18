@@ -5,8 +5,7 @@
  *
  * Run: npm run english-helper-wordnet   (after a lexicon CSV change; the staleness test says when)
  *
- * Fetches Open English WordNet 2025 into tmp/oewn-2025/ (and the WordNet 3.1 index files, for
- * SemCor counts, into tmp/wordnet-3.1/) once. The output holds English words only, never root
+ * Fetches Open English WordNet 2025 into tmp/oewn-2025/ once. The output holds English words only, never root
  * spellings, so it is committed and neither the site build nor CI needs WordNet.
  *
  * - synonym: shares a synset with a sense, both within their first SYNONYM_RANK senses; or an
@@ -14,21 +13,17 @@
  * - broader: a hyponym one or two levels under one of a sense's first BROADER_RANK senses.
  * - routes: hyponyms of *relative* (kin), and animals whose gloss opens *young* / *female* /
  *   *male*, with the nearest lexicon sense above them.
- * Words the lexicon already has are left out (the ladder never falls through to them), and so
- * are words with no sense tagged in SemCor (WordNet's frequency hint), which keeps the file small
- * enough for the browser.
+ * Words the lexicon already has are left out (the ladder never falls through to them).
  */
 import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync } from "node:fs";
 import { gzipSync } from "node:zlib";
 
-import nlp from "compromise";
-
 import { buildLexiconIndex } from "../src/english-helper/lexicon.js";
 import { WORDNET_INDEX_VERSION, wordnetInputs, type RouteClass, type WordnetEntry, type WordnetIndex, type WordnetRoute } from "../src/english-helper/wordnet-index.js";
 import { parseCompoundCsv, parseOverlayCsv, parsePublishedCsv } from "../src/lexicon-search.js";
 import { dataPath, REPO_ROOT } from "../src/repo-paths.js";
-import { ensureSemcorCounts, ensureWordnet, Wordnet, WORDNET_POS, type Synset } from "../src/wordnet.js";
+import { ensureWordnet, Wordnet, WORDNET_POS, type Synset } from "../src/wordnet.js";
 
 const OUT = `${REPO_ROOT}/src/generated/english-wordnet.json`;
 const SYNONYM_RANK = 3;
@@ -42,7 +37,7 @@ const published = parsePublishedCsv(readFileSync(dataPath("lexicon-published.csv
 const compounds = parseCompoundCsv(readFileSync(dataPath("lexicon-compounds.csv"), "utf8"));
 const overlays = parseOverlayCsv(readFileSync(dataPath("lexicon-overlays.csv"), "utf8"));
 const lexicon = buildLexiconIndex(published, compounds, overlays);
-const wn = new Wordnet(await ensureWordnet(), await ensureSemcorCounts());
+const wn = new Wordnet(await ensureWordnet());
 
 /** A lexicon key as WordNet spells it (`living-room` is in WordNet both ways). */
 const wnForm = (key: string) => (wn.offsets(key, "n").length || wn.offsets(key, "v").length ? key : key.replace(/-/g, " "));
@@ -54,12 +49,9 @@ function rank(lemma: string, synset: Synset): number {
 }
 
 const found = new Map<string, (WordnetEntry & { score: number })[]>();
-/** English words compromise knows: with SemCor tags, the frequency hint. */
-const known = (nlp.world() as { model: { one: { lexicon: Record<string, string> } } }).model.one.lexicon;
-const common = (lemma: string) => wn.tagged(lemma) > 0 || lemma in known;
 
 function add(lemma: string, entry: WordnetEntry, score: number): void {
-  if (lemma !== lemma.toLowerCase() || direct.has(lemma) || /\d/.test(lemma) || !common(lemma)) return;
+  if (lemma !== lemma.toLowerCase() || direct.has(lemma) || /\d/.test(lemma)) return;
   const list = found.get(lemma) ?? [];
   const same = list.find((e) => e.sense === entry.sense && e.pos === entry.pos);
   if (same && same.score <= score) return;

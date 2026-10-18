@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { deflateRawSync } from "node:zlib";
 
-import { parseDataLine, untar, unzip } from "./wordnet.js";
+import { parseDataLine, unzip } from "./wordnet.js";
 
 describe("wordnet", () => {
   it("parses a data.noun line, keeping plain hyponyms only", () => {
@@ -28,17 +28,6 @@ describe("wordnet", () => {
 
   it("drops an adjective's syntactic marker", () => {
     assert.deepEqual(parseDataLine("00001740 00 a 01 galore(ip) 0 000 | in plenty  ").words, ["galore"]);
-  });
-
-  it("reads files out of a ustar archive", () => {
-    const header = Buffer.alloc(512);
-    header.write("package/dict/index.noun", 0);
-    header.write("00000000005\0", 124);
-    header.write("0", 156);
-    const body = Buffer.alloc(512);
-    body.write("hello");
-    const files = untar(Buffer.concat([header, body, Buffer.alloc(1024)]));
-    assert.equal(files.get("package/dict/index.noun")?.toString(), "hello");
   });
 
   it("reads stored and deflated files out of a zip archive", () => {
