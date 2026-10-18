@@ -13,7 +13,7 @@ Ask in order. Prefer the **earlier** stage when a concept sits on a boundary and
 
 1. **Usable after one short explanation?**  
    Can someone use it in ordinary dialogue after roughly one paragraph and a couple of examples (and at most a second of thought once practiced)?  
-   If yes → **beginner** (or at least not advanced). Aligns with the language’s [easy-to-use feature criterion](../grammar/why-agazan.md#criterion-for-features).
+   If yes → **beginner** (or at least not advanced). Aligns with the language’s [easy-to-use feature criterion](feature-criteria.md#easy-to-use).
 
 2. **Does it depend on another subsystem already being fluent?**  
    If the form only makes sense after joins, numbers, values, spans, etc. are already comfortable → at least **intermediate**.  
@@ -38,7 +38,7 @@ Read **`docs/grammar/`** only, in stage order. [why-agazan.md](../grammar/why-ag
 
 ### Beginner
 
-1. [why-agazan.md](../grammar/why-agazan.md) — psychological purpose, limits, feature criteria, benefit tour (not a learning stage)
+1. [why-agazan.md](../grammar/why-agazan.md) — psychological purpose, limits, benefit tour (not a learning stage)
 2. [introduction.md](../grammar/introduction.md) — name, grammar design, how to learn
 3. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges)
 4. [word-endings.md Beginner](../grammar/word-endings.md#beginner) (citation **-l** / **-m** / **-n**)

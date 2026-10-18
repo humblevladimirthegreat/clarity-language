@@ -178,7 +178,7 @@ Do **not** keep a heading whose only job is to say there is nothing here. Learne
 4. Inside each stage: **concept → English job → Agazan shape → one consequence → 1–3 examples → (optional contrast) → full table if needed**. Cue in the same block or in the **Cue** column, not as the lead. Inside **Beginner**, H3 order is **dependency order for this page’s job** ([Beginner stage shape](#beginner-stage-shape)), not inventory order. On clause pages that is building a clause; citation notes are last (or already taught on [word-endings.md](../grammar/word-endings.md)). Later stages: [Intermediate and Advanced stage shape](#later-stage-shape). [Explain before you slogan](doc-style.md#explain-before-you-slogan).
 5. Optional **See also** at the end — a few precise related forms only; no long link walls in the lead (and no lead preview of later peers — [teach now; don’t preview later](#teach-now-dont-preview-later)).
 
-Front matter that orients (psychological purpose / limits / feature criteria / benefit tour — [why-agazan.md](../grammar/why-agazan.md); grammar design / how to learn — [introduction.md](../grammar/introduction.md)) is not a learning stage. Reading order lives in the path / sidebar — not repeated as Prerequisites.
+Front matter that orients (psychological purpose / limits / benefit tour — [why-agazan.md](../grammar/why-agazan.md); grammar design / how to learn — [introduction.md](../grammar/introduction.md)) is not a learning stage. Reading order lives in the path / sidebar — not repeated as Prerequisites.
 
 ## Teach in this order
 <a id="teach-in-this-order"></a>
@@ -498,7 +498,7 @@ Grammar cheat sheets live in `docs/grammar/cheat-sheets/`, one printable page pe
 | Gloss format | [glosses.md](glosses.md) |
 | Level rubric / reading order | [learning-levels.md](learning-levels.md) ([cross-doc path](learning-levels.md#cross-doc-path)) |
 | Doc content / teaching order | This page ([Beginner stage shape](#beginner-stage-shape), [later-stage shape](#later-stage-shape), [cues](#cues-columns), [Compare with](#compare-with)); wording and voice: [doc-style.md](doc-style.md), [claritish-style.md](claritish-style.md) |
-| Goals / feature criteria | [why-agazan.md](../grammar/why-agazan.md) (psych); [introduction.md](../grammar/introduction.md) (grammar design, [cue tables](../grammar/introduction.md#cues)) |
+| Goals / feature criteria | [why-agazan.md](../grammar/why-agazan.md) (psych aims); [feature-criteria.md](feature-criteria.md) (test for a new psych feature); [introduction.md](../grammar/introduction.md) (grammar design, [cue tables](../grammar/introduction.md#cues)) |
 | Clause grammar (one clause) | [clause.md](../grammar/clause.md) |
 | Hosted relation catalog | [relations.md](../grammar/relations.md) |
 | Dependents / continue (`/x/`, stand-ins) | [dependents.md](../grammar/dependents.md) |

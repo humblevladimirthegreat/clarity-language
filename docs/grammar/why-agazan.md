@@ -1,42 +1,40 @@
 # Why Agazan
 
-Why Agazan exists, what it does not claim, how its features are chosen, and a tour of the features that serve its aims.
+Why Agazan exists, what it looks like, a tour of the features that serve its aims, and what it does not claim.
 
 ## Purpose {#purpose}
 
-Agazan encodes psychological concepts and self-improvement techniques into vocabulary and grammar so that using the language nudges you toward better habits. For example, a single word for *can’t* can say whether the block is only temporary, may still change, or will not. That split keeps a hard moment from hardening into a fixed identity about who you are.
+Agazan encodes psychological concepts and self-improvement techniques into vocabulary and grammar so that using the language nudges you toward better habits.
 
 The design aims at three outcomes: [compassion](#compassion), [rationality](#rationality), and [empowerment](#empowerment). Each is described with the features that serve it under [Psychological features](#psychological-features).
 
-### Try it in English first {#try-it-in-english}
+Agazan is not therapy, and its effects are design intent, not a proven result. The language is in beta ([limits](#limits)).
 
-Do you have to learn a whole language to use these ideas? No. [Claritish](claritish/index.md) is short lessons on dropping single Agazan words into everyday English, where an English adverb or tag would go. In *The package arrives Friday `thovum`*, one word says *it could be so*, and English has no single word for that. Other lessons cover how you know, how far a label reaches, thanks that name the need, and more.
+## Agazan at a glance {#at-a-glance}
+
+A common rumination in English: *I failed. I'm no good at this, and I never will be.* English lets you say that without checking any of it. Here is how the same thought might come out in Agazan:
+
+> `zagayam thahor gulothum. zamun vevegoxom.`
+>
+> z-failure | th-INTUITION.weak | g-competence-unmet-modifiable . z-speaker | v-triumph-unable-modifiable
+>
+> "It's only a faint hunch, but my failure set back my competence, in a way that can change. I can't succeed yet."
+
+Five words, and three of them make you choose what English skips. Each choice is a question about the thought itself, and answering it honestly is what turned *never* into *yet*:
+
+- `thahor` says how you know: a gut sense, and only a faint one. Other words say you saw it, remember it, read it from clues, or were told, and other endings say the hunch is strong. Said once, it covers the next sentence too ([evidentiality](knowing.md#evidentiality)).
+- `gulothum` names what the failure costs: competence, one of the [sakes](sakes.md) (things that are good for a person). Its ending says the cost can change with effort or circumstance; other endings say it is lasting, or only for now. Other sakes, such as relatedness or purpose, name a different cost, and the met stance names a gain instead. The sake word also makes the failure yours, with no separate word for *my*.
+- `vevegoxom` is *can't succeed*, but only *yet*: it may still change. Other vowels say *right now* (you usually can) or *never* ([ability](intention.md#ability)).
+
+Agazan does not force the gentler answer. You could still say *I can never succeed* (`zamun vevegoxum.`), call the hunch strong, or call the cost lasting, and sometimes that is true. But English *I'll never be good at this* never asks how you know or how lasting it is, so the harsh version goes by unchecked. In Agazan you cannot say *can't* without choosing among *right now*, *yet*, and *never*, and that one moment of choosing is often enough to notice that *yet* is the honest answer.
+
+The first letter of each word names its job: `/z/` the subject, `/ɡ/` what the subject is, `/v/` the verb, `/th/` what is in your mind. Word order is free, and every sentence has exactly one reading. [Inspect](inspect.md) opens with this sentence loaded, so you can click through each word.
+
+## Try it in English first {#try-it-in-english}
+
+You don't have to learn the whole language to start using these ideas! [Claritish](claritish/index.md) is short lessons on dropping single Agazan words into everyday English. English *I'm anxious* can mean right now or the kind of person you are. *I'm `anxious-tha`* says it is this stretch, not who you are, and English needs a whole extra clause for that. Other lessons cover how you know, how far a label reaches, thanks that name the need, and more.
 
 Every word Claritish teaches is already real Agazan, so nothing you learn there is thrown away. [Start with the Claritish introduction](claritish/index.md); each lesson is short.
-
-## Limits {#limits}
-
-Agazan encodes psychological concepts and techniques, but it is **not therapy, counseling, or medical advice**, and it is not a substitute for professional care when you need it.
-
-The design *aims* at compassion, rationality, and empowerment, and prefers research when it exists ([feature criteria](#criterion-for-features)). That is design intent, **not a claim** that speaking or studying Agazan has been shown to improve mental health or other outcomes.
-
-The language is currently in **beta**: grammar, lexicon, and these docs can change as the design settles.
-
-## Why language can help {#why-language-can-help}
-
-Unhelpful thoughts are often automatic: catastrophizing a small setback into “my life is ruined,” treating two options as the only ones, or labeling a feeling as *anger* without naming which sake is unmet. (A sake is something that is good for you, such as autonomy, competence, or connection with others.) Healthier framings exist, but they are hard to reach in the moment.
-
-Agazan puts those framings into ordinary words and optional extra pieces on words. When you speak or think in the language, the helpful distinction is already sitting in the sentence shape.
-
-## Criterion for features {#criterion-for-features}
-
-A psychological feature must meet these criteria:
-
-- **Helps with language goals.** Supports compassion, rationality, and/or empowerment. Prefer research when it exists; user testing is fine when research is scarce.
-- **Addresses a common problem.** Targets biases or friction that show up for most people. Rare edge cases do not justify heavy machinery.
-- **Easy to use.** Explainable in roughly one paragraph plus a couple of examples; usable in sentences with at most about one extra second of thought after practice.
-- **Avoids shame.** No option should read as the socially “correct” default. Each choice has situations where it belongs.
-- **Reminders where they are needed.** Nudge compassion, rationality, or empowerment mainly where those failures are likely. Some extra nudges are fine; pointless ones should stay rare. Nudges stay **optional and targeted**.
 
 ## Psychological features {#psychological-features}
 
@@ -297,6 +295,20 @@ Many roots have an **abstract** sense beside a **concrete** one, so an idea you 
 - [Affect as water](sakes.md#emotion-compose) ([a feeling as a label](#trap-feeling)): surging, flowing, or still water (motion) plus where the feeling sits or points, instead of an opaque emotion label that hides the sake.
 
 Conceptual metaphors help you reach and remember the healthier frame by tying it to a concrete picture that already encodes the bias you are trying to catch.
+
+## Why language can help {#why-language-can-help}
+
+Unhelpful thoughts are often automatic: catastrophizing a small setback into “my life is ruined,” treating two options as the only ones, or labeling a feeling as *anger* without naming which sake is unmet. (A sake is something that is good for you, such as autonomy, competence, or connection with others.) Healthier framings exist, but they are hard to reach in the moment.
+
+Agazan puts those framings into ordinary words and optional extra pieces on words. When you speak or think in the language, the helpful distinction is already sitting in the sentence shape.
+
+## Limits {#limits}
+
+Agazan encodes psychological concepts and techniques, but it is **not therapy, counseling, or medical advice**, and it is not a substitute for professional care when you need it.
+
+The design *aims* at compassion, rationality, and empowerment, and each feature is chosen to target a common, everyday problem, preferring research when it exists. That is design intent, **not a claim** that speaking or studying Agazan has been shown to improve mental health or other outcomes.
+
+The language is currently in **beta**: grammar, lexicon, and these docs can change as the design settles.
 
 ## Criticisms {#criticisms}
 

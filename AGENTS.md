@@ -14,7 +14,7 @@ Each row names what the file owns. The file is the authority; this table is only
 
 | Source | Owns |
 |--------|------|
-| `why-agazan.md` | Psychological purpose, limits, feature criteria, learner tour. Site home. |
+| `why-agazan.md` | Psychological purpose, limits, learner tour. Site home. |
 | `introduction.md` | Name, design goals, learning path. |
 | `clause.md` | **Source of truth** for one-clause grammar: role letters, default order, hosting, chaining. Other docs own their subsystems. |
 | `phonology.md` | Phonology, phonotactics, letter names. |
@@ -69,6 +69,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `lexicon.md` | Root spellings, root length, respelling, moving an overlay to another row. |
 | `design-decisions.md` | Why a form or reading is deliberately absent, and rejected alternatives. Not a restatement of grammar pages; settled readings go on grammar pages, never here. |
 | `unassigned-reserved.md` | Every spelling with no reading, marked open (no natural reading yet) or closed (by a design decision). Never linked from grammar pages. |
+| `feature-criteria.md` | The test a psychological feature must pass to enter the language. |
 | `language-name.md` | Why the name is Agazan. |
 | `proposals.md` | Notes for `docs/proposals/`, never link to proposal pages (filenames in backticks only). |
 | `site-redirects.md` | Public URL remaps. |
