@@ -47,7 +47,7 @@ Each call returns `{score 1–5, reason, tag?}`. A subject is **flagged** when b
 | `overload` | same-abstract pair | duplicate sense or ambiguous gloss (tag) |
 | `special-form-conflict` | published abstract × overlay gloss | published row duplicates a closed special form |
 
-`pairs` builds candidates without the model (inflection-aware shared abstract / concrete / alias, overlay gloss collisions), then adds the closest embedding pairs (ranked, not thresholded: nomic similarities all sit high) and, with `--scan`, one 100k-context prompt that asks the model for groups of near-synonyms among all abstracts.
+`pairs` builds candidates without the model (inflection-aware shared abstract / concrete, overlay gloss collisions; aliases may repeat, so a shared alias is not a candidate), then adds the closest embedding pairs (ranked, not thresholded: nomic similarities all sit high) and, with `--scan`, one 100k-context prompt that asks the model for groups of near-synonyms among all abstracts.
 
 ## Protected roots
 

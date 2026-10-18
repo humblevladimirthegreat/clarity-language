@@ -4,7 +4,7 @@ import type { ChatMessage } from "./llm-client.js";
 import { isProtectedRow, overlayHosts, type LexiconData } from "./lexicon-review-subjects.js";
 import type { Subject } from "./lexicon-review-types.js";
 
-export type PairKind = "same-abstract" | "same-concrete" | "alias" | "embedding" | "cluster" | "overlay";
+export type PairKind = "same-abstract" | "same-concrete" | "embedding" | "cluster" | "overlay";
 
 type Side = { id: string; text: string; protected: boolean };
 
@@ -12,9 +12,8 @@ const KIND_RANK: Record<PairKind, number> = {
   "same-abstract": 0,
   overlay: 1,
   "same-concrete": 2,
-  alias: 3,
-  cluster: 4,
-  embedding: 5,
+  cluster: 3,
+  embedding: 4,
 };
 
 function rowSide(row: PublishedRow, hosts: ReturnType<typeof overlayHosts>): Side {
@@ -73,7 +72,6 @@ export function exactPairs(data: LexiconData, map: PairMap = new Map()): PairMap
     row,
     abstract: forms(row.abstract),
     concrete: forms(row.concrete),
-    aliases: new Set((row.englishAliases ?? []).flatMap((a) => [...forms(a)])),
     side: rowSide(row, hosts),
   }));
 
@@ -83,15 +81,6 @@ export function exactPairs(data: LexiconData, map: PairMap = new Map()): PairMap
       const b = rows[j]!;
       if (intersects(a.abstract, b.abstract)) addPair(map, pairSubject(a.side, b.side, "same-abstract"));
       else if (intersects(a.concrete, b.concrete)) addPair(map, pairSubject(a.side, b.side, "same-concrete"));
-      else if (
-        intersects(a.aliases, b.abstract) ||
-        intersects(a.aliases, b.concrete) ||
-        intersects(b.aliases, a.abstract) ||
-        intersects(b.aliases, a.concrete) ||
-        intersects(a.aliases, b.aliases)
-      ) {
-        addPair(map, pairSubject(a.side, b.side, "alias"));
-      }
     }
   }
 

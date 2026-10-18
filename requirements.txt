@@ -1,0 +1,2 @@
+# Python tooling (installed into .venv by the devcontainer postCreateCommand)
+genanki==0.13.1

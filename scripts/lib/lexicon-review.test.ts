@@ -192,11 +192,12 @@ test("sampleForGold is seeded, takes suspects first, and labels start empty", ()
   assert.ok(a.every((e) => e.label === ""));
 });
 
-test("exactPairs finds same-abstract, alias and overlay collisions", () => {
+test("exactPairs finds same-abstract collisions and skips shared aliases", () => {
   const pairs = exactPairs(data);
   const kinds = new Map([...pairs].map(([k, s]) => [k, s.data.pairKind]));
   assert.equal(kinds.get("A|B"), "same-abstract");
-  assert.equal(kinds.get("C|D"), "alias");
+  // C lists "anger" as an alias and D has it as its abstract: aliases may repeat
+  assert.equal(kinds.get("C|D"), undefined);
   // E hosts the overlay glossed "readiness", so its own pair is skipped
   assert.ok(![...kinds.keys()].some((k) => k.includes("overlay:abum")));
   assert.equal(pairs.get("A|B")!.protected, false);

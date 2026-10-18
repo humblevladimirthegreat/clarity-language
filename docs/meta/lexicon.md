@@ -52,7 +52,8 @@ Never a seed:
 - **Multiword labels and glosses:** join the words with hyphens, never spaces: *gas-pump*, *black-pepper*, *wedding-dress*. This holds for concrete labels, compound glosses and aliases alike.
 - **Units:** a unit (*mile*, *foot*, *pound*), imperial ones included, is an abstract sense on an existing root (*mile* on `ubuda`), not a new row.
 - **Kin pairs:** a gendered kin pair (*mother* / *father*) is allowed, unlike gendered profession variants.
-- **Abstract and aliases:** never repeat another row's concrete, abstract or `english_aliases` entry. When a new row takes over a sense, move the alias off the old row (🌍 *earth* took *world* and *earth* from 🌐).
+- **Abstract senses:** never repeat another row's concrete or abstract. When a new row takes over a sense, move it off the old row.
+- **Aliases may repeat:** an `english_aliases` cue may also be another row's alias or sense. A cue that fits several roots lists all of them, so lexicon search finds each one. Within a row, an alias still never repeats that row's own concrete or abstract.
 
 ### No English puns
 
