@@ -1,22 +1,19 @@
 /**
- * Builds the English helper's data in Node: the lexicon index from the CSVs, the grammar-page
- * English entries (the shared cache in src/find/entries-cache.ts), the cue index, section bands,
- * and the committed WordNet reverse index.
+ * Builds the English helper's data in Node: the grammar-page English entries (the shared cache in
+ * src/find/entries-cache.ts), the cue index, section bands, and the committed WordNet reverse
+ * index, assembled with the lexicon CSVs by browser.ts `createHelperData`.
  */
 import { existsSync, readFileSync } from "node:fs";
 import { join, relative } from "node:path";
 
 import { loadGrammarEntries } from "../find/entries-cache.js";
-import { parseCompoundCsv, parseOverlayCsv, parsePublishedCsv } from "../lexicon-search.js";
 import { pageSections } from "../lint/learning-order.js";
 import { listMarkdown } from "../markdown-files.js";
 import { loadDefaultTables } from "../parse/index.js";
-import { classifyAll } from "../parse/classify.js";
-import { parseWords } from "../parse/word.js";
 import { dataPath, REPO_ROOT } from "../repo-paths.js";
 import type { HelperData, SectionInfo } from "./analyze.js";
+import { createHelperData, type HelperPayload } from "./browser.js";
 import { buildCueIndex, grammarPath, teachingEntry } from "./cues.js";
-import { buildLexiconIndex } from "./lexicon.js";
 import { cueWords } from "./tag.js";
 import type { WordnetIndex } from "./wordnet-index.js";
 
@@ -43,27 +40,24 @@ export function loadWordnetIndex(): WordnetIndex | undefined {
   return existsSync(WORDNET_INDEX_PATH) ? (JSON.parse(readFileSync(WORDNET_INDEX_PATH, "utf8")) as WordnetIndex) : undefined;
 }
 
-export function loadHelperData(): HelperData {
-  const published = parsePublishedCsv(readFileSync(dataPath("lexicon-published.csv"), "utf8"));
-  const compounds = parseCompoundCsv(readFileSync(dataPath("lexicon-compounds.csv"), "utf8"));
-  const overlays = parseOverlayCsv(readFileSync(dataPath("lexicon-overlays.csv"), "utf8"));
+/** The grammar-page data the analyzer needs, JSON-safe (the Inspect page reads it at site build). */
+export function helperPayload(): HelperPayload {
   const entries = loadGrammarEntries();
-  const tables = loadDefaultTables();
   const wordnet = loadWordnetIndex();
   return {
-    lexicon: buildLexiconIndex(published, compounds, overlays),
-    cues: buildCueIndex(entries, cueWords),
-    entries: entries.filter(teachingEntry),
-    sections: loadSections(),
+    // The cue index has already read `cues` and `teach`; the entries only answer one-word lookups.
+    entries: entries.filter(teachingEntry).map(({ cues: _cues, teach: _teach, ...entry }) => entry),
+    cues: [...buildCueIndex(entries, cueWords)],
+    sections: [...loadSections()],
     ...(wordnet ? { wordnet } : {}),
-    compoundParts: new Map(compounds.map((r) => [`${r.left}+${r.right}`, r])),
-    // Word shape and lexicon only: the sentence parser takes seconds to build, and one word needs no clause.
-    wordParses: (word) => {
-      try {
-        return classifyAll(parseWords(word), tables).every((w) => w.reading !== "unknown");
-      } catch {
-        return false;
-      }
-    },
   };
+}
+
+export function loadHelperData(): HelperData {
+  const csv = (name: string) => readFileSync(dataPath(name), "utf8");
+  return createHelperData(
+    helperPayload(),
+    { published: csv("lexicon-published.csv"), overlays: csv("lexicon-overlays.csv"), compounds: csv("lexicon-compounds.csv") },
+    loadDefaultTables(),
+  );
 }

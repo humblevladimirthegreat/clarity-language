@@ -4,6 +4,7 @@ import './custom.css'
 import Layout from './Layout.vue'
 import LexiconSearch from '../components/LexiconSearch.vue'
 import GlossViewer from '../components/GlossViewer.vue'
+import EnglishHelper from '../components/EnglishHelper.vue'
 import AgazanInspect from '../components/AgazanInspect.vue'
 import IpaPlay from '../components/IpaPlay.vue'
 import NameHelper from '../components/NameHelper.vue'
@@ -17,6 +18,7 @@ export default {
   enhanceApp({ app }) {
     app.component('LexiconSearch', LexiconSearch)
     app.component('GlossViewer', GlossViewer)
+    app.component('EnglishHelper', EnglishHelper)
     app.component('AgazanInspect', AgazanInspect)
     app.component('IpaPlay', IpaPlay)
     app.component('NameHelper', NameHelper)

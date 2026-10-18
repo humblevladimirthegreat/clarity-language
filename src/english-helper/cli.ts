@@ -11,6 +11,7 @@
  */
 import { BANDS, type Band } from "../lint/learning-order.js";
 import { analyzeEnglish, slotTier, type Analysis, type HelperData, type Slot, type Suggestion } from "./analyze.js";
+import { featureLabels, leadNote, plainTitle, roleReading } from "./describe.js";
 import { COMPOUND_LINKS } from "./detectors.js";
 import { loadHelperData } from "./load.js";
 
@@ -41,19 +42,7 @@ const results = inputs.map((input) => ({ input, analysis: analyzeEnglish(data, i
 
 function link(data: HelperData, target: string): string {
   const title = data.sections.get(target)?.title;
-  return title ? `${target} (${title.replace(/[`*]/g, "")})` : target;
-}
-
-function leadNote(tier: string, lead: string, via: string | undefined): string {
-  if (tier === "synonym") return via === "similar" ? `similar to *${lead}*` : via === "derived" ? `derived from *${lead}*` : `same meaning as *${lead}*`;
-  return via ? `a kind of *${via}*, a kind of *${lead}*` : `a kind of *${lead}*`;
-}
-
-/** *teach* → *teaches*, *walk* → *walks*, *carry* → *carries*. */
-function thirdPerson(verb: string): string {
-  if (/(s|sh|ch|x|z|o)$/.test(verb)) return `${verb}es`;
-  if (/[^aeiou]y$/.test(verb)) return `${verb.slice(0, -1)}ies`;
-  return `${verb}s`;
+  return title ? `${target} (${plainTitle(title)})` : target;
 }
 
 function suggestionLine(data: HelperData, s: Suggestion): string {
@@ -84,7 +73,7 @@ function suggestionLine(data: HelperData, s: Suggestion): string {
     case "detector":
       return `${s.label}  → ${s.links.map((l) => link(data, l)).join(" · ")}`;
     case "role": {
-      const reading = s.usual ? `usual role (a ${s.modifier ? `${s.modifier.english} ` : ""}${s.noun})` : `someone who ${thirdPerson(s.verb)}${s.modifier ? ` ${s.modifier.english}s` : ""}`;
+      const reading = roleReading(s);
       const parts = s.modifier ? `${s.modifier.root} + ${s.root}` : s.root;
       return `route    role compound \`${s.form}\`  ${reading}; ${s.emoji ? `${s.emoji} ` : ""}${parts} "${s.sense}"  → ${link(data, s.link)}`;
     }
@@ -94,18 +83,7 @@ function suggestionLine(data: HelperData, s: Suggestion): string {
 }
 
 function featureLine(analysis: Analysis["clauses"][number]): string {
-  const f = analysis.features;
-  return [
-    f.tense ?? "no verb tense",
-    f.perfect && "perfect",
-    f.progressive && "progressive",
-    f.usedTo && "used to",
-    f.modals.length && `modal ${f.modals.join("/")}`,
-    f.negated && "negated",
-    f.question ? "question" : "statement",
-  ]
-    .filter(Boolean)
-    .join(" · ");
+  return featureLabels(analysis.features).join(" · ");
 }
 
 function printSlot(slot: Slot, width: number): void {

@@ -29,6 +29,7 @@ export default defineConfig({
     resolve: {
       alias: {
         '@data': dataDir,
+        '@english-helper-browser': `${srcDir}/english-helper/browser.ts`,
         '@lexicon-search': `${srcDir}/lexicon-search.ts`,
         '@learner-name': `${srcDir}/learner-name.ts`,
         '@parse-browser': `${srcDir}/parse/browser.ts`,

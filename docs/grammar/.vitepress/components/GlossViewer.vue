@@ -8,14 +8,14 @@ import {
   type PromptContext,
 } from '@parse-browser'
 import { useClassifyTables } from '../composables/useClassifyTables'
+import { useInspectorText } from '../composables/useInspectorText'
 import { previewPhonemes } from '@tts-browser'
 import GlossOverlay from './GlossOverlay.vue'
 
-const SAMPLE = 'zazawan vowogal.'
 const ERROR_IDLE_MS = 1000
 const COPIED_MS = 1200
 
-const text = ref(SAMPLE)
+const text = useInspectorText()
 
 const { tables, status, errorMessage } = useClassifyTables()
 
