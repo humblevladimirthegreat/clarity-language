@@ -11,6 +11,7 @@
  */
 import { BANDS, type Band } from "../lint/learning-order.js";
 import { analyzeEnglish, slotTier, type Analysis, type HelperData, type Slot, type Suggestion } from "./analyze.js";
+import { COMPOUND_LINKS } from "./detectors.js";
 import { loadHelperData } from "./load.js";
 
 function usage(message: string, code = 2): never {
@@ -43,6 +44,11 @@ function link(data: HelperData, target: string): string {
   return title ? `${target} (${title.replace(/[`*]/g, "")})` : target;
 }
 
+function leadNote(tier: string, lead: string, via: string | undefined): string {
+  if (tier === "synonym") return via === "similar" ? `similar to *${lead}*` : via === "derived" ? `derived from *${lead}*` : `same meaning as *${lead}*`;
+  return via ? `a kind of *${via}*, a kind of *${lead}*` : `a kind of *${lead}*`;
+}
+
 /** *teach* → *teaches*, *walk* → *walks*, *carry* → *carries*. */
 function thirdPerson(verb: string): string {
   if (/(s|sh|ch|x|z|o)$/.test(verb)) return `${verb}es`;
@@ -58,7 +64,19 @@ function suggestionLine(data: HelperData, s: Suggestion): string {
       const where = s.anchor ? `  ${s.pos ? `on /${s.pos}/ ` : ""}→ ${link(data, s.anchor)}` : "";
       const byPos = s.roles?.length ? `  [english_by_pos: ${s.roles.join(", ")}]` : "";
       const sense = s.name ? `name on "${s.sense}" + -n` : `"${s.sense}"${s.side ? ` (${s.side})` : ""}`;
-      return `${s.tier.padEnd(8)} ${role}${s.emoji ? `${s.emoji} ` : ""}${s.form}  ${sense}${word}${where}${byPos}`;
+      const lead = s.lead ? `  (WordNet lead: ${leadNote(s.tier, s.lead, s.via)})` : "";
+      const parts = s.fromParts ? `  (dictionary word for *${s.fromParts.left}* + *${s.fromParts.head}* → ${link(data, COMPOUND_LINKS.listed)})` : "";
+      return `${s.tier.padEnd(8)} ${role}${s.emoji ? `${s.emoji} ` : ""}${s.form}  ${sense}${word}${where}${byPos}${lead}${parts}`;
+    }
+    case "class": {
+      if (s.class === "kin") return `route    kin term  → ${s.links.map((l) => link(data, l)).join(" · ")}`;
+      const animal = s.animal ? `${s.animal.emoji ? `${s.animal.emoji} ` : ""}${s.animal.form} "${s.animal.sense}"${s.animal.word ? ` \`${s.animal.word}\`` : ""}` : "the animal's root";
+      const qualifier = s.qualifier ? `${s.qualifier.emoji ? `${s.qualifier.emoji} ` : ""}${s.qualifier.form} *${s.class}*` : `*${s.class}*`;
+      return `route    ${s.class} animal: ${animal} + /ɡ/ ${qualifier}  → ${s.links.map((l) => link(data, l)).join(" · ")}`;
+    }
+    case "live": {
+      const parts = s.parts.map((p) => `${p.emoji ? `${p.emoji} ` : ""}${p.form} "${p.sense}"`).join(" + ");
+      return `live     /${s.role}/ \`${s.form}\`  ${parts}, built on the spot  → ${link(data, s.link)}`;
     }
     case "job":
       return `${s.itch}  \`${s.form}\`  → ${link(data, s.link)}`;

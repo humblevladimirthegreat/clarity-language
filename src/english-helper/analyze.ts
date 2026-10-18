@@ -11,11 +11,13 @@ import { searchEnglish } from "../find/english.js";
 import type { Band } from "../lint/learning-order.js";
 import { BANDS } from "../lint/learning-order.js";
 import { grammarPath, matchCues, type CueIndex, type GrammarJob } from "./cues.js";
-import { detectClause, detectWord, ROLE_LINKS, type DetectorHit } from "./detectors.js";
+import type { CompoundRow } from "../lexicon-compounds.js";
+import { COMPOUND_LINKS, detectClause, detectWord, ROLE_LINKS, ROUTE_LINKS, type DetectorHit } from "./detectors.js";
 import { lookupLexicon, rootsByForm, sideEnding, type LexiconIndex, type LexiconSuggestion } from "./lexicon.js";
 import { doerVerb, tagEnglish, type ClauseFeatures, type TaggedTerm, type WordClass } from "./tag.js";
+import { lookupRoute, lookupWordnet, senseSuggestions, type RouteClass, type WordnetIndex, type WordnetPos } from "./wordnet-index.js";
 
-/** Every tier, best first. Phase 1 fills root, alias, compound, overlay, grammar and gap. */
+/** Every tier, best first. */
 export const TIERS = ["root", "alias", "compound", "overlay", "grammar", "synonym", "broader", "route", "live", "gap"] as const;
 export type Tier = (typeof TIERS)[number];
 
@@ -30,6 +32,10 @@ export type HelperData = {
   sections: ReadonlyMap<string, SectionInfo>;
   /** Spelled words are shown only when this accepts them (the word parser). */
   wordParses?: (word: string) => boolean;
+  /** The WordNet reverse index (`synonym`, `broader`, and class routes); absent, those tiers stay empty. */
+  wordnet?: WordnetIndex;
+  /** Listed compounds by `left+head` root, for two English words whose roots make one (*bed room*). */
+  compoundParts?: ReadonlyMap<string, CompoundRow>;
 };
 
 export type RootSuggestion = LexiconSuggestion & {
@@ -42,6 +48,8 @@ export type RootSuggestion = LexiconSuggestion & {
   name?: boolean;
   /** Role letter + form + ending, when the word parser accepts it. */
   word?: string;
+  /** A listed compound whose left root and head are the two words' own roots (*bed room*). */
+  fromParts?: { left: string; head: string };
 };
 export type JobSuggestion = GrammarJob & { kind: "job"; tier: "grammar" };
 export type DetectorSuggestion = DetectorHit & { kind: "detector"; tier: "grammar" };
@@ -68,7 +76,34 @@ export type RoleSuggestion = {
   modifier?: { english: string; root: string };
   link: string;
 };
-export type Suggestion = RootSuggestion | JobSuggestion | DetectorSuggestion | EntrySuggestion | RoleSuggestion;
+/**
+ * A word in a class the lexicon leaves out on purpose (wordnet-index.ts routes): a kin term, or a
+ * young or sexed animal, said as the animal's root plus a `/ɡ/` word (*puppy* → *dog* + *young*).
+ */
+export type ClassSuggestion = {
+  kind: "class";
+  tier: "route";
+  class: RouteClass;
+  links: string[];
+  /** Young and sexed animals: the animal's root, and the root for *young* / *female* / *male*. */
+  animal?: RootSuggestion;
+  qualifier?: LexiconSuggestion;
+};
+/**
+ * A live `x` compound built from a modifier noun and a head noun that have roots
+ * ([adding another piece](x-compounds.md#ordinary-compound-order)): open, no lexicon row.
+ */
+export type LiveSuggestion = {
+  kind: "live";
+  tier: "live";
+  /** Role letter + stem + ending, accepted by the word parser. */
+  form: string;
+  stem: string;
+  role: string;
+  parts: { english: string; form: string; emoji: string; sense: string }[];
+  link: string;
+};
+export type Suggestion = RootSuggestion | JobSuggestion | DetectorSuggestion | EntrySuggestion | RoleSuggestion | ClassSuggestion | LiveSuggestion;
 
 export type Slot = {
   /** The English word or cue run, as written. */
@@ -123,18 +158,89 @@ function nameRoot(data: HelperData, t: TaggedTerm): LexiconSuggestion | undefine
   return t.normal.endsWith("n") ? byForm.get(t.normal.slice(0, -1)) : undefined;
 }
 
+/** Tiers whose form is a root or compound stem, so role letter + form + ending spells a word. */
+const SPELLED_TIERS = new Set<LexiconSuggestion["tier"]>(["root", "compound", "synonym", "broader"]);
+
+function asRootSuggestion(data: HelperData, s: LexiconSuggestion, role: string | undefined, name = false): RootSuggestion {
+  const out: RootSuggestion = { ...s, kind: "lexicon", ...(role ? { role } : {}), ...(role && ROLE_LINKS[role] ? { roleLink: ROLE_LINKS[role] } : {}), ...(name ? { name: true } : {}) };
+  const ending = name ? "n" : sideEnding(s.side);
+  if (role && ending && SPELLED_TIERS.has(s.tier)) {
+    const word = `${spellRole(role)}${s.form}${ending}`;
+    if (!data.wordParses || data.wordParses(word)) out.word = word;
+  }
+  return out;
+}
+
 function rootSuggestions(data: HelperData, t: TaggedTerm, role: string | undefined): RootSuggestion[] {
   const name = t.proper ? nameRoot(data, t) : undefined;
   const hits = name ? [name] : lookupLexicon(data.lexicon, [...new Set([t.lemma, t.normal])]);
-  return hits.map((s) => {
-    const out: RootSuggestion = { ...s, kind: "lexicon", ...(role ? { role } : {}), ...(role && ROLE_LINKS[role] ? { roleLink: ROLE_LINKS[role] } : {}), ...(name ? { name: true } : {}) };
-    const ending = name ? "n" : sideEnding(s.side);
-    if (role && ending && (s.tier === "root" || s.tier === "compound")) {
-      const word = `${spellRole(role)}${s.form}${ending}`;
-      if (!data.wordParses || data.wordParses(word)) out.word = word;
-    }
-    return out;
-  });
+  return hits.map((s) => asRootSuggestion(data, s, role, !!name));
+}
+
+const CLASS_POS: Partial<Record<WordClass, WordnetPos>> = { noun: "n", verb: "v", adjective: "a", adverb: "r" };
+
+/** WordNet leads for a content word with no lexicon sense: `synonym`, then `broader`. */
+function leadSuggestions(data: HelperData, t: TaggedTerm, role: string | undefined): RootSuggestion[] {
+  if (!data.wordnet) return [];
+  return lookupWordnet(data.wordnet, data.lexicon, [...new Set([t.lemma, t.normal])], CLASS_POS[t.cls]).map((s) => asRootSuggestion(data, s, role));
+}
+
+/** A kin term or a young or sexed animal: the class's sections, and for an animal its root and qualifier. */
+function classSuggestion(data: HelperData, t: TaggedTerm, role: string | undefined): ClassSuggestion | undefined {
+  const route = data.wordnet && lookupRoute(data.wordnet, [...new Set([t.lemma, t.normal])]);
+  if (!route) return undefined;
+  const out: ClassSuggestion = { kind: "class", tier: "route", class: route.class, links: ROUTE_LINKS[route.class] };
+  if (route.class === "kin") return out;
+  const animal = route.sense ? senseSuggestions(data.lexicon, route.sense)[0] : undefined;
+  if (animal) out.animal = asRootSuggestion(data, animal, role);
+  const qualifier = lookupLexicon(data.lexicon, [route.class])[0];
+  if (qualifier) out.qualifier = qualifier;
+  return out;
+}
+
+/** The slot's own top root, when it is a root-tier sense: what a compound is built from. */
+function topRoot(slot: Slot | undefined): RootSuggestion | undefined {
+  const first = slot?.suggestions[0];
+  return first?.kind === "lexicon" && first.tier === "root" && !first.name ? first : undefined;
+}
+
+/**
+ * Two nouns in a row (*bed room*, *tea shop*): the listed compound when their roots are a row's
+ * left root and head, else a live `x` compound when the word parser accepts it. An adjective
+ * before a noun (*a blue dog*) is a thing and a property, never a compound.
+ */
+function compoundSuggestions(data: HelperData, modifier: { term: TaggedTerm; slot: Slot } | undefined, head: RootSuggestion | undefined, role: string | undefined): (RootSuggestion | LiveSuggestion)[] {
+  const left = topRoot(modifier?.slot);
+  if (!modifier || !left || !head || head.tier !== "root" || !role) return [];
+  const row = data.compoundParts?.get(`${left.form}+${head.form}`);
+  if (row) {
+    const listed: LexiconSuggestion = { tier: "compound", form: row.stem, emoji: "", sense: row.concrete, side: "concrete" };
+    return [{ ...asRootSuggestion(data, listed, role), fromParts: { left: modifier.term.normal, head: head.sense } }];
+  }
+  const ending = sideEnding(head.side);
+  if (!ending) return [];
+  const stem = `${left.form}x${head.form}`;
+  const form = `${spellRole(role)}${stem}${ending}`;
+  if (data.wordParses && !data.wordParses(form)) return [];
+  const part = (english: string, s: RootSuggestion) => ({ english, form: s.form, emoji: s.emoji, sense: s.sense });
+  return [{ kind: "live", tier: "live", form, stem, role, parts: [part(modifier.term.normal, left), part(head.sense, head)], link: COMPOUND_LINKS.live }];
+}
+
+/**
+ * A run of two or three content words ending in a noun whose joined form is a lexicon or WordNet
+ * sense (*living room*, *living-room*): the run is one slot. Longest first.
+ */
+function ngramMatch(data: HelperData, terms: readonly TaggedTerm[], i: number): { end: number; hits: LexiconSuggestion[] } | undefined {
+  for (let len = Math.min(3, terms.length - i); len >= 2; len--) {
+    const run = terms.slice(i, i + len);
+    if (!run.every((t) => CONTENT.has(t.cls) && !t.proper) || run[len - 1]!.cls !== "noun") continue;
+    const words = [...run.slice(0, -1).map((t) => t.normal), run[len - 1]!.lemma];
+    const keys = [words.join(" "), words.join("-"), words.join("")];
+    const hits = lookupLexicon(data.lexicon, keys).filter((s) => s.tier !== "alias");
+    const leads = !hits.length && data.wordnet ? lookupWordnet(data.wordnet, data.lexicon, keys, "n").filter((s) => s.tier === "synonym") : [];
+    if (hits.length || leads.length) return { end: i + len, hits: [...hits, ...leads] };
+  }
+  return undefined;
 }
 
 /** The event roots an English verb maps to: root-tier senses, `english_by_pos` verbs first. */
@@ -208,7 +314,8 @@ function withinStage(data: HelperData, s: Suggestion, stage: Band | undefined): 
     const band = bandOf(data, link, own);
     return !band || BANDS.indexOf(band) <= max;
   };
-  if (s.kind === "job" || s.kind === "role") return ok(s.link);
+  if (s.kind === "job" || s.kind === "role" || s.kind === "live") return ok(s.link);
+  if (s.kind === "class") return s.links.some((l) => ok(l));
   if (s.kind === "entry") return ok(s.link, s.band);
   if (s.kind === "lexicon") return (!s.anchor || ok(s.anchor)) && (!s.roleLink || ok(s.roleLink));
   return true;
@@ -247,29 +354,43 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
           first.proper = true;
         }
         // A name is not a cue: table rows that mention *Azawan* are examples, not its job.
-        const match = auxBeforeVerb(first, i) || first.proper ? undefined : cueMatches.find((m) => m.start === i);
-        const end = match && match.end - match.start > 1 ? match.end : i + 1;
+        const cue = auxBeforeVerb(first, i) || first.proper ? undefined : cueMatches.find((m) => m.start === i);
+        // A multi-word lexicon sense (*living room*) is one slot, unless a longer cue starts here.
+        const ngram = ngramMatch(data, terms, i);
+        const useNgram = ngram && (!cue || cue.end <= ngram.end);
+        const match = useNgram ? undefined : cue;
+        const end = useNgram ? ngram.end : match && match.end - match.start > 1 ? match.end : i + 1;
         const run = terms.slice(i, end);
         const t = run[run.length - 1]!;
         const one = run.length === 1;
         const jobs: JobSuggestion[] = (match?.jobs ?? []).map((j) => ({ ...j, kind: "job", tier: "grammar" }));
         const detectors = one ? detectWord(t, terms[end]).flatMap((d) => filterDetector(data, d, stage) ?? []) : [];
         const role = classRole(terms, i);
-        const roots = one && CONTENT.has(t.cls) ? rootSuggestions(data, t, role) : [];
+        const roots = useNgram ? ngram.hits.map((s) => asRootSuggestion(data, s, role)) : one && CONTENT.has(t.cls) ? rootSuggestions(data, t, role) : [];
         // A doer noun with a root of its own (*flower*) is not an *-er* participle or a role compound.
         const prev = terms[i - 1];
+        const prevSlot = slots[slots.length - 1];
         const modifier = prev?.cls === "noun" && !prev.proper ? prev : undefined;
         const roles = one && t.cls === "noun" && !roots.length ? roleSuggestions(data, t, role, modifier) : [];
+        const compounds = one && t.cls === "noun" && modifier && prevSlot?.text === prev!.text ? compoundSuggestions(data, { term: modifier, slot: prevSlot }, roots[0], role) : [];
+        const listed = compounds.filter((c) => c.kind === "lexicon");
+        const live = compounds.filter((c) => c.kind === "live");
+        const leads = one && CONTENT.has(t.cls) && !roots.length && !roles.length && !t.proper ? leadSuggestions(data, t, role) : [];
+        // A kin cue row (*aunt*) already names the kin section; the class route is for the words the tables leave out.
+        const klass = one && t.cls === "noun" && !roots.length && !t.proper ? classSuggestion(data, t, role) : undefined;
+        const routes = klass && !jobs.some((j) => klass.links.includes(j.link)) ? [klass] : [];
         const shownDetectors = roots.length ? detectors.filter((d) => d.id !== "participle") : detectors;
         // A table row that spells the same role compound repeats it; the built one says how it is made.
         const shownJobs = jobs.filter((j) => !roles.some((r) => j.form === r.form));
-        let suggestions: Suggestion[] = [...roots, ...roles, ...shownJobs, ...shownDetectors].filter((s) => withinStage(data, s, stage));
+        let suggestions: Suggestion[] = [...listed, ...roots, ...roles, ...shownJobs, ...shownDetectors].filter((s) => withinStage(data, s, stage));
         const skipped =
           one && !suggestions.length && (ARTICLES.has(t.normal) || (BARE_AUX.has(t.normal) && auxBeforeVerb(t, i)) || (t.normal === "to" && terms[end]?.cls === "verb"));
         if (!suggestions.length && !skipped && !t.proper) {
           suggestions = entrySuggestions(data, [...new Set([t.lemma, t.normal])]).filter((s) => withinStage(data, s, stage));
         }
-        const slot: Slot = { text: run.map((r) => r.text).join(" "), lemma: one ? t.lemma : run.map((r) => r.normal).join(" "), cls: one ? t.cls : "other", suggestions };
+        // WordNet leads and live compounds rank below every listed match and grammar row.
+        suggestions.push(...[...leads, ...routes, ...live].filter((s) => withinStage(data, s, stage)));
+        const slot: Slot = { text: run.map((r) => r.text).join(" "), lemma: one ? t.lemma : run.map((r) => r.normal).join(" "), cls: one ? t.cls : useNgram ? "noun" : "other", suggestions };
         const reading = one ? readingOf(t) : undefined;
         if (reading) slot.reading = reading;
         if (skipped) slot.skipped = true;

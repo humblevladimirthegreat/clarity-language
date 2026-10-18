@@ -14,7 +14,8 @@ export const LEXICON_TIERS = ["root", "alias", "compound", "overlay"] as const;
 export type LexiconTier = (typeof LEXICON_TIERS)[number];
 
 export type LexiconSuggestion = {
-  tier: LexiconTier;
+  /** `synonym` / `broader` are WordNet leads (wordnet-index.ts), never a lexicon sense of the word itself. */
+  tier: LexiconTier | "synonym" | "broader";
   /** Root, compound stem, or overlay sense form. */
   form: string;
   emoji: string;
@@ -27,6 +28,9 @@ export type LexiconSuggestion = {
   /** Overlays: the role letter the overlay lives on, and the section that teaches it. */
   pos?: string;
   anchor?: string;
+  /** WordNet leads: the lexicon sense word the lead points at, and how WordNet links them. */
+  lead?: string;
+  via?: string;
 };
 
 export type LexiconIndex = Map<string, LexiconSuggestion[]>;
@@ -79,7 +83,8 @@ export function buildLexiconIndex(published: readonly PublishedRow[], compounds:
     if (r.abstract) add(index, r.abstract, { tier: "compound", form: r.stem, emoji: "", side: "abstract" });
   }
   for (const r of overlays) add(index, r.gloss, { tier: "overlay", form: r.senseForm, emoji: r.emoji, pos: r.pos, anchor: r.anchor });
-  for (const list of index.values()) list.sort((a, b) => LEXICON_TIERS.indexOf(a.tier) - LEXICON_TIERS.indexOf(b.tier));
+  const order = (s: LexiconSuggestion) => (LEXICON_TIERS as readonly string[]).indexOf(s.tier);
+  for (const list of index.values()) list.sort((a, b) => order(a) - order(b));
   return index;
 }
 

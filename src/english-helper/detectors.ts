@@ -5,6 +5,7 @@
  * detectors.test.ts fails when an anchor stops existing.
  */
 import type { ClauseFeatures, TaggedTerm } from "./tag.js";
+import type { RouteClass } from "./wordnet-index.js";
 
 export type DetectorHit = {
   /** Detector id (`past`, `modal-can`, …). */
@@ -65,6 +66,17 @@ export const ROLE_LINKS: Readonly<Record<string, string>> = {
   h: "clause.md#adverbs-h",
 };
 
+/** Classes the lexicon leaves out on purpose (wordnet-index.ts routes) → the sections that say them. */
+export const ROUTE_LINKS: Readonly<Record<RouteClass, string[]>> = {
+  kin: ["numbers-applied.md#kin-generations", "say-people-places.md#kin-words"],
+  young: ["clause.md#adjectives-ɡ"],
+  female: ["clause.md#adjectives-ɡ"],
+  male: ["clause.md#adjectives-ɡ"],
+};
+
+/** A listed compound reached from its parts, and a live `x` compound built from them. */
+export const COMPOUND_LINKS = { listed: "x-compounds.md#lexical-compounds", live: "x-compounds.md#ordinary-compound-order" } as const;
+
 const THIRD_PERSON = new Set(["he", "she", "it", "they", "him", "her", "them", "his", "its", "their", "theirs", "hers"]);
 
 export const WORD_DETECTORS: readonly WordDetector[] = [
@@ -88,6 +100,8 @@ export const WORD_DETECTORS: readonly WordDetector[] = [
 export function detectorLinks(): string[] {
   return [
     ...Object.values(ROLE_LINKS),
+    ...Object.values(ROUTE_LINKS).flat(),
+    ...Object.values(COMPOUND_LINKS),
     ...CLAUSE_DETECTORS.flatMap((d) => d.links),
     ...WORD_DETECTORS.flatMap((d) => d.links),
     ...Object.values(MODAL_LINKS).flat(),

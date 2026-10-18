@@ -37,7 +37,7 @@ import { parseCompoundCsv, serializeCompoundCsv } from "../src/lexicon-compounds
 import { parseOverlayCsv, parsePublishedCsv } from "../src/lexicon-search.js";
 import { ensureFrequencyFile, loadFrequencyRanks } from "../src/lexicon-place.js";
 import { dataPath } from "../src/repo-paths.js";
-import { ensureWordnet, NounWordnet } from "../src/wordnet.js";
+import { ensureWordnet, Wordnet } from "../src/wordnet.js";
 
 const compoundsPath = dataPath("lexicon-compounds.csv");
 /** Rank for a lemma outside the 50k frequency list, multiword lemmas included. */
@@ -122,7 +122,7 @@ function check(words: string[], lexicon: Lexicon, json: boolean): number {
 }
 
 async function synsets(lemmas: string[], json: boolean): Promise<number> {
-  const wordnet = new NounWordnet(await ensureWordnet());
+  const wordnet = new Wordnet(await ensureWordnet());
   const rows = lemmas.flatMap((lemma) =>
     wordnet.lookup(lemma).map((synset, i) => ({
       name: `${lemma.replace(/ /g, "_")}.n.${String(i + 1).padStart(2, "0")}`,
@@ -160,7 +160,7 @@ async function candidates(
 ): Promise<number> {
   await ensureFrequencyFile();
   const freq = loadFrequencyRanks();
-  const wordnet = synsets.length ? new NounWordnet(await ensureWordnet()) : undefined;
+  const wordnet = synsets.length ? new Wordnet(await ensureWordnet()) : undefined;
   const found = new Map<string, Candidate>();
   const add = (words: string[], source: string, gloss: string) => {
     const lemmas = words.filter((w) => w === w.toLowerCase());

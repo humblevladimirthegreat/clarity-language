@@ -6,8 +6,9 @@
  * Run: npm run english-helper-recall
  *      npm run english-helper-recall -- --json
  *
- * Roots: a lexicon suggestion with the same form, at its rank among that slot's lexicon
- * suggestions (top-1, top-3, lower), or else a grammar suggestion whose form contains it.
+ * Roots: a lexicon suggestion with the same form (WordNet leads included), at its rank among that
+ * slot's lexicon suggestions (top-1, top-3, lower), or else a grammar, route or live suggestion
+ * whose form or parts contain it. Found roots are also counted by the tier that found them.
  * A missed root whose sense matches a word of the sentence is a tagging miss (the word was
  * there but read as a function word or under another lemma); the rest are cue misses.
  * Constructions: a suggestion links the construction's home anchor, or at least its page.
@@ -19,7 +20,7 @@ import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 import { serializeCsv } from "../src/csv.js";
-import { analyzeEnglish, type Analysis, type Suggestion } from "../src/english-helper/analyze.js";
+import { analyzeEnglish, TIERS, type Analysis, type Suggestion } from "../src/english-helper/analyze.js";
 import { loadHelperData } from "../src/english-helper/load.js";
 import { tagEnglish } from "../src/english-helper/tag.js";
 import { fillSelf } from "../src/learner-name.js";
@@ -51,34 +52,64 @@ function usedRoots(tree: unknown): string[] {
   return [...new Set(out)];
 }
 
+/** Live `x` compound stems (two roots, no lexicon row) the parse tree uses. */
+function usedLiveStems(tree: unknown): string[] {
+  const out: string[] = [];
+  const walk = (node: unknown) => {
+    if (Array.isArray(node)) return node.forEach(walk);
+    if (!node || typeof node !== "object") return;
+    const family = (node as { family?: { kind: string; xFamily?: string; leftRoots?: string[]; rightRoots?: string[] } }).family;
+    if (family?.kind === "x" && family.xFamily === "compound" && family.leftRoots?.length === 1 && family.rightRoots?.length === 1) {
+      out.push(`${family.leftRoots[0]}x${family.rightRoots[0]}`);
+    }
+    for (const value of Object.values(node)) if (value && typeof value === "object") walk(value);
+  };
+  walk(tree);
+  return [...new Set(out)];
+}
+
 function links(s: Suggestion): string[] {
-  if (s.kind === "job" || s.kind === "entry" || s.kind === "role") return [s.link];
-  if (s.kind === "detector") return s.links;
+  if (s.kind === "job" || s.kind === "entry" || s.kind === "role" || s.kind === "live") return [s.link];
+  if (s.kind === "detector" || s.kind === "class") return s.links;
   return [s.anchor, s.roleLink].filter((l): l is string => !!l);
+}
+
+/** Forms a non-lexicon suggestion spells or builds on. */
+function forms(s: Suggestion): string[] {
+  if (s.kind === "class") return [s.animal?.form, s.qualifier?.form].filter((f): f is string => !!f);
+  if (s.kind === "live") return s.parts.map((p) => p.form);
+  if (s.kind === "lexicon" || s.kind === "detector") return [];
+  return [s.form];
 }
 
 type RootResult = "top1" | "top3" | "lower" | "grammar" | "tagging" | "missed";
 
-function rootResult(analysis: Analysis, root: string, sentenceWords: Set<string>): RootResult {
+/** The result, and the tier of the suggestion that found the root. */
+function rootResult(analysis: Analysis, root: string, sentenceWords: Set<string>): { result: RootResult; tier?: string } {
   let best = Infinity;
-  let grammar = false;
+  let bestTier: string | undefined;
+  let other: string | undefined;
   for (const slot of analysis.clauses.flatMap((c) => c.slots)) {
     const lexical = slot.suggestions.filter((s) => s.kind === "lexicon");
     const rank = lexical.findIndex((s) => s.form === root);
-    if (rank >= 0) best = Math.min(best, rank);
-    if (slot.suggestions.some((s) => s.kind !== "lexicon" && s.kind !== "detector" && s.form.includes(root))) grammar = true;
+    if (rank >= 0 && rank < best) [best, bestTier] = [rank, lexical[rank]!.tier];
+    other ??= slot.suggestions.find((s) => forms(s).some((f) => f.includes(root)))?.tier;
   }
-  if (best === 0) return "top1";
-  if (best < 3) return "top3";
-  if (best < Infinity) return "lower";
-  if (grammar) return "grammar";
-  for (const word of sentenceWords) if ((data.lexicon.get(word) ?? []).some((s) => s.form === root)) return "tagging";
-  return "missed";
+  if (best === 0) return { result: "top1", tier: bestTier };
+  if (best < 3) return { result: "top3", tier: bestTier };
+  if (best < Infinity) return { result: "lower", tier: bestTier };
+  if (other) return { result: "grammar", tier: other };
+  for (const word of sentenceWords) if ((data.lexicon.get(word) ?? []).some((s) => s.form === root)) return { result: "tagging" };
+  return { result: "missed" };
 }
 
 type Row = { source: string; english: string; agazan: string; roots: number; found: number; missed: string; constructions: number; anchor_hits: number; page_hits: number; missed_constructions: string };
 const rows: Row[] = [];
 const rootTally = new Map<RootResult, number>();
+/** Roots found, by the tier of the suggestion that found them (WordNet leads, routes and live compounds apart). */
+const tierTally = new Map<string, number>();
+/** Two-root live `x` compounds in the reference, how many the helper built, and how many it offered in all. */
+const liveTally = { uses: 0, suggested: 0, offered: 0 };
 const missedRoots = new Map<string, { count: number; result: RootResult }>();
 const constructionTally = new Map<string, { uses: number; anchor: number; page: number }>();
 
@@ -92,22 +123,30 @@ for (const page of pages) {
     seen.add(pair.gloss);
     const agazan = fillSelf(example.agazan);
     let roots: string[];
+    let liveStems: string[];
     try {
-      roots = usedRoots(parseWithTables(agazan, tables));
+      const tree = parseWithTables(agazan, tables);
+      roots = usedRoots(tree);
+      liveStems = usedLiveStems(tree);
     } catch {
       continue;
     }
     const analysis = analyzeEnglish(data, pair.sentence);
     const words = new Set(tagEnglish(pair.sentence).flatMap((s) => s.clauses.flatMap((c) => c.terms.flatMap((t) => [t.normal, t.lemma]))));
-    const results = roots.map((root) => ({ root, result: rootResult(analysis, root, words) }));
-    for (const { root, result } of results) {
+    const results = roots.map((root) => ({ root, ...rootResult(analysis, root, words) }));
+    for (const { root, result, tier } of results) {
       rootTally.set(result, (rootTally.get(result) ?? 0) + 1);
+      if (tier) tierTally.set(tier, (tierTally.get(tier) ?? 0) + 1);
       if (result === "missed" || result === "tagging") {
         const m = missedRoots.get(root) ?? { count: 0, result };
         m.count++;
         missedRoots.set(root, m);
       }
     }
+    const builtStems = new Set(analysis.clauses.flatMap((c) => c.slots.flatMap((s) => s.suggestions.flatMap((x) => (x.kind === "live" ? [x.stem] : [])))));
+    liveTally.uses += liveStems.length;
+    liveTally.suggested += liveStems.filter((stem) => builtStems.has(stem)).length;
+    liveTally.offered += builtStems.size;
     const suggested = analysis.clauses.flatMap((c) => [...c.detectors, ...c.slots.flatMap((s) => s.suggestions)]).flatMap(links);
     const suggestedPages = new Set(suggested.map((l) => l.split("#")[0]));
     const missedConstructions: string[] = [];
@@ -162,6 +201,8 @@ const senseOf = (root: string) => {
 const summary = {
   examples: rows.length,
   roots: Object.fromEntries([...rootTally].map(([k, v]) => [k, v])),
+  liveCompounds: liveTally,
+  foundByTier: Object.fromEntries(TIERS.filter((t) => tierTally.has(t)).map((t) => [t, tierTally.get(t)!])),
   rootRecall: { top1: pct(rootTally.get("top1") ?? 0, totalRoots), top3: pct((rootTally.get("top1") ?? 0) + (rootTally.get("top3") ?? 0), totalRoots), anywhere: pct(totalRoots - (rootTally.get("missed") ?? 0) - (rootTally.get("tagging") ?? 0), totalRoots) },
   constructions: { uses: constructionUses, anchor: pct(anchorUses, constructionUses), page: pct(pageUses, constructionUses), structural: [...structural].sort() },
   missedRoots: [...missedRoots].sort((a, b) => b[1].count - a[1].count).slice(0, 30).map(([root, m]) => ({ root, sense: senseOf(root), ...m })),
@@ -177,6 +218,8 @@ else {
   console.log(`${rows.length} doc example pairs → tmp/english-helper-recall.csv`);
   console.log(`roots: ${totalRoots} uses — top-1 ${summary.rootRecall.top1}, top-3 ${summary.rootRecall.top3}, anywhere ${summary.rootRecall.anywhere}`);
   for (const [k, v] of [...rootTally].sort((a, b) => b[1] - a[1])) console.log(`  ${k.padEnd(8)} ${v}`);
+  console.log(`live x compounds: ${liveTally.suggested} of ${liveTally.uses} two-root uses built (${liveTally.offered} offered in all)`);
+  console.log(`found by tier: ${Object.entries(summary.foundByTier).map(([t, n]) => `${t} ${n}`).join(", ")}`);
   console.log(`constructions: ${constructionUses} uses — home anchor suggested ${summary.constructions.anchor}, home page ${summary.constructions.page}`);
   console.log(`  (${structural.size} structural constructions in ≥${STRUCTURE_SHARE * 100}% of examples not counted)`);
   console.log("\nmost-missed roots (* = tagging miss: the word was in the sentence):");
