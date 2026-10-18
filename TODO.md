@@ -3,6 +3,9 @@ redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds9
 
 my name: obogan (innovation) gazagan (clarity)
 
+discord invite:
+https://discord.gg/CAMGw2Akhc
+
 use [skip-cd] for amplify to not deploy. 
 
 # TODO

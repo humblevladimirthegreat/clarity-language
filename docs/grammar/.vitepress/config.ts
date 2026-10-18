@@ -56,6 +56,10 @@ export default defineConfig({
       { text: 'Saying it in Agazan', link: '/english' },
       { text: 'Claritish', link: '/claritish/' },
     ],
+    socialLinks: [
+      { icon: 'reddit', link: 'https://www.reddit.com/r/ClarityLanguage', ariaLabel: 'Agazan on Reddit' },
+      { icon: 'discord', link: 'https://discord.gg/CAMGw2Akhc', ariaLabel: 'Agazan on Discord' },
+    ],
     sidebar: [
       {
         text: 'Claritish: Agazan in English',

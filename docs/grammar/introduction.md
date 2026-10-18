@@ -26,7 +26,7 @@ In a clause, every content word (a word built on a root, such as a noun, verb, o
 
 ### Referential {#referential}
 
-English *it* and *they* can point to almost anything mentioned earlier. In Agazan, a pronoun copies the whole stem of an earlier word (the word without its role letter and ending) and points to the **most recently mentioned** word with that stem, so a fixed rule picks the one thing it means. A shorter **role pointer** names someone by the part they played in a recent event (*the latest doer*, *the other one*). A few special pronouns cover the speaker, the listener, and similar roles.
+English *it* and *they* can point to almost anything mentioned earlier. In Agazan, a pronoun copies the whole stem of an earlier word (the word without its role letter and ending) and points to the **most recently mentioned** word with that stem, so a fixed rule picks the one thing it means. A shorter **role pointer** names someone by the part they played in a recent event (*the latest doer*, *the other one*). A few special pronouns cover the speaker, the listener, and similar roles. When you need to keep several referents apart, you can give each a **tag** (A, E, O, U), and when the talk is about one thing, a **topic** is set overtly and one pronoun always means it.
 
 ### Semantic {#semantic}
 

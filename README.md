@@ -1,6 +1,6 @@
 # clarity-language
 
-Tooling and design docs for [Agazan](https://www.reddit.com/r/ClarityLanguage). Language design lives under `docs/` (see [AGENTS.md](AGENTS.md)); this package holds lexicon helpers and related scripts. A web UI may come later.
+Tooling and design docs for [Agazan](https://www.reddit.com/r/ClarityLanguage). Language design lives under `docs/` (see [AGENTS.md](AGENTS.md)); this package holds lexicon helpers and related scripts. A web UI may come later. Community: [Reddit](https://www.reddit.com/r/ClarityLanguage) and [Discord](https://discord.gg/CAMGw2Akhc).
 
 ## Setup
 
