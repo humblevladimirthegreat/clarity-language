@@ -6,7 +6,9 @@
 
 ## Problem
 
-The Claritish lessons teach a drop-in at the moment of reading. The habit they target shows up later, while the learner is writing an ordinary message: the *probably* that hides a guess, the *I heard* that passes on a rumor, the *he's a liar* that turns one act into a nature. Nothing catches that moment. The cheat sheet helps only if the writer already noticed the trap and went to look it up.
+The Claritish lessons teach a drop-in at the moment of reading. The habit they target shows up later, in conversation and in private writing: the *probably* that hides a guess, the *I heard* that passes on a rumor, the *he's a liar* that turns one act into a nature. Spoken Claritish with other people happens in the moment, out loud, where no tool can sit beside it. A journal entry is different: it can be looked at while it is written, and nothing catches the trap there yet. The cheat sheet helps only if the writer already noticed the trap and went to look it up.
+
+So the editor is for **private journaling**: the writer talking to themselves, read by no one else.
 
 Each lesson's `## The gap` section already names those English words. A client-side editor can watch for them while the writer types, explain the trap in one line, and help pick the drop-in that fits.
 
@@ -24,6 +26,7 @@ Each lesson's `## The gap` section already names those English words. A client-s
 - Full Agazan: no role letters, joins, or clause grammar. The editor knows only Claritish drop-ins.
 - New forms or new readings. A cue with no fitting drop-in is not a trigger. If a cue looks like it needs one, it goes to the usual grammar gap process, not into the editor.
 - Rewriting the user's text without being asked.
+- Writing for other readers. The editor is for private journaling, so it has no recipient preview, gloss footnotes, or export for someone who has not learned Claritish. Spoken Claritish can still be used with other people; the editor just isn't where that happens.
 
 ## User experience
 
@@ -39,7 +42,7 @@ The editor scans each sentence for **cues**, English words and phrases from the 
 | [Can and can't](../grammar/claritish/can-and-cant.md) | *can't, cannot, unable to, not able to* |
 | [Thanks and sorry](../grammar/claritish/thanks-and-sorry.md) | *thanks, thank you, sorry, I apologize* |
 | [Allowed, required, agreed](../grammar/claritish/allowed-required-agreed.md) | *can I, may I, you have to, must, not allowed, is that OK* |
-| [Oughts and motives](../grammar/claritish/oughts-and-motives.md) | *you should, ought to, I did it for you* |
+| [Oughts and motives](../grammar/claritish/oughts-and-motives.md) | *you should, ought to, I did it for you* (the writer's own act only) |
 | [Wants and plans](../grammar/claritish/wants-and-plans.md) | *I want to, I'd like to, I'm going to, I will, planning to* |
 | [Decisions and tries](../grammar/claritish/decisions-and-tries.md) | *I've decided, I'll try, let's try* |
 | [Feelings](../grammar/claritish/feelings.md) | emotion words: *anxious, resentful, proud, stressed, upset* |
@@ -60,12 +63,14 @@ Hover, or the keyboard shortcut, opens a card on the marked cue:
 2. **One or two questions** that pick the form, with the default answer first:
    - *probably*: "What will you do about the guess?" → *find out* / *leave it at could be* / *just a passing thought* → `thovul` / `thovum` / `thovur`
    - *I heard*: "How do you know?" → channel; then "How strong is it?" → ending
-   - *thanks*: "What did it do for you?" → sake; then "How long will it stay with you?" → ending
+   - *thanks*: "What did it do for you?" → sake; then "How long will it stay with you?" → ending. When the thanks is for something the writer owns (*my old coat*), the card offers the `g` word after the noun instead: `goyuthal`
+   - *you should*: "Which need of yours would it serve?" → sake; then "Why is the advice welcome?" → *they invited it* / *my own offer* / *worth a try* → ending. The need is always the writer's, even when someone else does the act. If none of the three is true, the card offers only *Leave it in English*, as the lesson says
+   - *I did it for you*: "Which need of yours did it serve?" → sake; then "When does the payoff land?" → ending
    - *I can't*: "Not right now, not yet, or never?" → `-xe` / `-xo` / `-xu`
 3. **Preview** of the sentence with the drop-in in place, and the English gloss of the form.
 4. **Actions:** *Use this*, **Leave it in English** (as prominent as *Use this*), ▶ pronounce, *Learn this* (link to the lesson anchor).
 
-*Use this* places the drop-in the way the lessons do ([placement](../meta/grammar-docs.md#claritish-track)): after the clause for stance words, as a hyphen suffix on the English host for label scope and ability, and before the word it colours for tone marks. Where the lesson's examples drop the English cue (*I think the store is closed* → *The store is closed `thovum`*), the preview offers to drop it too, and the writer can keep it.
+*Use this* places the drop-in the way the lessons do ([placement](../meta/grammar-docs.md#claritish-track)): after the clause for stance words, as a hyphen suffix on the English host for label scope and ability, right after the English noun for a thanks to something the writer owns, and before the word it colours for tone marks. Where the lesson's examples drop the English cue (*I think the store is closed* → *The store is closed `thovum`*), the preview offers to drop it too, and the writer can keep it.
 
 Drop-ins are written plainly in the editor, without backticks, as in real use.
 
@@ -78,7 +83,7 @@ Drop-ins are written plainly in the editor, without backticks, as in real use.
 ### Writing without a cue
 
 - **Slash commands.** `/sorry`, `/thanks`, `/know`, `/sure`, `/feel`, `/can`, `/tone` open the matching card at the cursor with no English cue needed.
-- **Autocomplete.** After `th`, offer drop-ins from enabled lessons only, each with its gloss.
+- **Autocomplete.** As the writer types the start of a drop-in, offer matching drop-ins from enabled lessons only, each with its gloss. Most drop-ins start with `th`, but the try and consent words start with `h` and a thanks for something you own with `g`, so the prefixes come from the generated form list, not a fixed `th` trigger.
 
 ### Feelings composer
 
@@ -87,26 +92,6 @@ The emotion compose is the hardest drop-in to build by hand: sake, stance, endin
 ### Mirror panel
 
 An optional side panel counts, for the whole text, the cues still in plain English: *2 unmarked guesses · 1 label on a person · 1 should with no reason given*. It is a mirror, not a score: no totals, no colours that read as pass or fail, no nudge to reach zero. Each line jumps to its cue.
-
-### Self-talk by name (possible feature)
-
-When people reflect on a hard moment, talking to themselves by their own name or as *you* (*Jordan, that meeting was rough*) instead of *I* seems to lower emotional reactivity and make the problem feel more manageable. This is **distanced self-talk** (Kross et al. 2014, *Journal of Personality and Social Psychology*; Moser et al. 2017, *Scientific Reports*). Most of the evidence comes from lab studies of private reflection, so the editor should offer it as something to try, not as a proven fix. It does not apply to messages about yourself sent to other people: there, saying your own name for *I* just sounds odd.
-
-This is not a Claritish drop-in. It changes English words, not Agazan, and adds no form. So it sits apart from the lesson cards:
-
-- **Only in journal mode.** A toggle marks the draft as *for me* (a journal entry, notes to yourself). Self-talk cues fire only there, never on a message to someone else.
-- **Cues:** harsh self-talk in the first person: *why do I always*, *I can't believe I*, *I'm so stupid*, *I ruined*, *what's wrong with me*. A self-label (*I'm an idiot*) is already a [Labels](../grammar/claritish/labels.md) cue; self-talk joins it under *Also here* rather than adding a second mark.
-- **Card:** one line on the idea, then a preview that rewrites the sentence to address the writer by name: *I can't believe I said that* → *Jordan, you said something you regret. What would you tell a friend who did that?* The name is the one from the site's name helper ([`useLearnerName`](../grammar/.vitepress/composables/useLearnerName.ts)), in its English form; with no name chosen, the card offers *you*. **Keep *I*** is as prominent as *Try it*.
-- **No count.** The mirror panel does not count self-talk cues. It is an offer, not a habit to score.
-
-Before building it: the card copy needs a source. Claritish adds no content of its own, so either a short note in the Claritish [Feelings](../grammar/claritish/feelings.md) or [Labels](../grammar/claritish/labels.md) lesson teaches the idea and the card quotes it, or the feature stays an editor-only tip with its wording in the trigger data. See [open question 6](#open-questions).
-
-### For the person reading
-
-Claritish is usually sent to someone who has not learned it.
-
-- **Recipient preview** shows the message as a non-learner sees it, with each drop-in's gloss on hover.
-- **Copy with footnotes** copies the text with a numbered gloss for each drop-in and one link to the [Claritish intro](../grammar/claritish/index.md). **Copy plain** copies the text as written.
 
 ### Practice mode
 
@@ -134,7 +119,7 @@ Alternative: Tiptap is already a dev dependency (used only by a lint script). It
 
 | File | Source | Holds |
 |------|--------|-------|
-| `data/claritish-triggers.csv` (new, hand-written) | Editors | One row per cue: id, lesson anchor, pattern, placement (`after-clause` / `suffix` / `before-word`), whether to offer dropping the cue, flow id, gap excerpt |
+| `data/claritish-triggers.csv` (new, hand-written) | Editors | One row per cue: id, lesson anchor, pattern, placement (`after-clause` / `suffix` / `after-noun` / `before-word`), whether to offer dropping the cue, flow id, gap excerpt |
 | `data/claritish-flows.json` (new, hand-written) | Editors | Question flows: prompts and choices. Each choice names a **cheat sheet cell** (row label × column header), never a spelling |
 | `src/generated/claritish-editor.json` | Build | Resolved forms, glosses, gap excerpts, lesson URLs: everything the component needs, nothing it must look up |
 
@@ -147,6 +132,7 @@ The forms are read from the **cheat sheet**, which `lint-cheat-sheets.ts` alread
 - **Labels** need *pronoun + copula + (a / an / so / such a)? + trait word*. Start with a curated trait-word list in the trigger data. Add part-of-speech tagging (e.g. compromise.js) only if the list misses too much.
 - **Feelings** use an emotion-word list in the trigger data.
 - **Exclusions** per cue for common non-trap uses: *I think so*, *thanks to*, *sorry?* as a request to repeat, *can't wait*, *I'm going to the store*.
+- **Motive cues need a first-person subject.** *I did it for you* is a cue; *she did it for you* is not. A motive drop-in names the writer's own need, never why someone else acts, so there is no drop-in to offer for another person's reasons.
 - Matching re-runs on the changed paragraph only, debounced.
 
 ### Storage
@@ -178,11 +164,12 @@ Each phase ships on its own and leaves the site in a usable state.
 
 - `ClaritishEditor.vue` on CodeMirror 6, on its page.
 - Cue marking for the three lessons, one mark per sentence, quoted text skipped.
+- After-clause placement, and after-noun placement for a thanks to something owned.
 - Help card: gap line, question flow, preview, *Use this*, *Leave it in English*, ▶ pronounce, *Learn this*.
 - Lesson filter, *Leave it*, *Never for this phrase*, saved draft.
 - Example round-trip and false-positive tests for the three lessons.
 
-**Done when:** a learner can paste a message, see cues from the three lessons, and add or decline a drop-in for each with the keyboard alone.
+**Done when:** a learner can write or paste a journal entry, see cues from the three lessons, and add or decline a drop-in for each with the keyboard alone.
 
 ### Phase 2: all simple lessons, and reading back
 
@@ -201,19 +188,17 @@ Each phase ships on its own and leaves the site in a usable state.
 
 **Done when:** the Labels and Feelings examples round-trip, and the composer can build every feeling form the lesson shows.
 
-### Phase 4: reflection and sharing
+### Phase 4: reflection and practice
 
 - Mirror panel.
-- Recipient preview, *Copy with footnotes*, *Copy plain*.
 - Practice mode over the lesson examples.
 
-**Done when:** a message can go from draft to clipboard with glosses a non-learner can follow.
+**Done when:** the mirror panel counts every enabled lesson's cues, and every lesson's examples load as practice prompts.
 
 ### Later, if wanted
 
-- A browser extension that runs the same matcher in other text boxes (email, chat). The matcher and data are already client-side, so this is packaging, but it brings permission and privacy review.
 - "Match my progress": tie the lesson filter to the lessons the reader has opened.
-- [Self-talk by name](#self-talk-by-name-possible-feature): journal mode, the self-talk cues, and their card. It needs nothing from Phases 0 to 4 except the matcher and cards.
+- Self-talk by name, a card that is not a drop-in: see `self-talk-by-name.md`.
 
 <a id="open-questions"></a>
 ## Open questions
@@ -223,4 +208,3 @@ Each phase ships on its own and leaves the site in a usable state.
 3. **Dropping the English cue.** Offer by default (closer to the lesson examples) or keep the cue by default (less editing of the writer's words).
 4. **Mirror panel** default on or off.
 5. **CodeMirror vs Tiptap**, if adding a dependency is a concern.
-6. **Self-talk by name.** (a) A short Claritish lesson note on distanced self-talk, which the card quotes, so it follows the "no copy written twice" goal. (b) An editor-only tip with its wording in the trigger data. (c) Leave it out. (a) is the most consistent with the track; it also makes it the one Claritish idea that is not an Agazan drop-in, which the [track rules](../meta/grammar-docs.md#claritish-track) would need to allow.

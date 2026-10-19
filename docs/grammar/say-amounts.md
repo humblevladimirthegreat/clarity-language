@@ -336,7 +336,7 @@ English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an 
 | *cheap* / *inexpensive* | `thobam zuel gadahum` |
 | *weak* / *feeble* / *frail* | `thobam zuel gabezem` (less strength than usual) |
 | *busy* / *hard-working* | `thobam zel gozewem` (more effort than usual) |
-| *far* / *distant* / *remote* | `thobam zel gazedam` (farther than usual) |
+| *far* / *far away* / *distant* / *remote* | `thobam zel gazedam` (farther than usual) |
 | *wide* / *broad* | `thobam zel gorodam` |
 | *narrow* | `thobam zuel gorodam` |
 | *deep* | `thobam zel gebegem` |

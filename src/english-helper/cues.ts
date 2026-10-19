@@ -19,6 +19,8 @@ export type GrammarJob = {
   link: string;
   /** Where the row is, `page.md:line`. */
   source: string;
+  /** The cue's place among its row's cues: 0 when the row is mainly for this word. */
+  rank: number;
   band?: Band;
 };
 
@@ -44,7 +46,7 @@ export function grammarPath(page: string): string {
 }
 
 /** A `Teach` link relative to its page, as a docs/grammar path (`hooks.md#extra-noun`). */
-function resolveLink(page: string, link: string): string {
+export function resolveLink(page: string, link: string): string {
   if (link.startsWith("#")) return `${grammarPath(page)}${link}`;
   const dir = grammarPath(page).split("/").slice(0, -1);
   const parts = [...dir];
@@ -84,7 +86,8 @@ function namedSection(sections: ReadonlyMap<string, { title: string }>, page: st
 /**
  * The cue index. `words` splits a cue the way the tagger splits input
  * (tag.ts `cueWords`), so `can't` in a table matches *can not* in a sentence. With `sections`
- * (`page.md#id` → title), a row is relinked to a same-page section named for its cue.
+ * (`page.md#id` → title), a row is relinked to a same-page section named for its cue. A row whose
+ * first cue is the word (*you*) comes before one that lists it later (*one*, generic *you*).
  */
 export function buildCueIndex(entries: readonly EnglishEntry[], words: (cue: string) => string[], sections?: ReadonlyMap<string, { title: string }>): CueIndex {
   const index: CueIndex = new Map();
@@ -92,7 +95,7 @@ export function buildCueIndex(entries: readonly EnglishEntry[], words: (cue: str
     if (entry.kind !== "table" || !entry.cues?.length || !teachingEntry(entry)) continue;
     const page = grammarPath(entry.page);
     const rowLink = entry.teach ? resolveLink(entry.page, entry.teach) : `${page}#${entry.slug}`;
-    for (const cue of entry.cues) {
+    for (const [rank, cue] of entry.cues.entries()) {
       if (!usableCue(cue)) continue;
       const key = words(cue).join(" ");
       if (!key || key.split(" ").length > MAX_CUE_WORDS) continue;
@@ -102,10 +105,11 @@ export function buildCueIndex(entries: readonly EnglishEntry[], words: (cue: str
       const list = index.get(key) ?? [];
       // The same row, or the same form again from one page (a beginner row and its intermediate grid) or for one section.
       if (list.some((j) => j.source === `${page}:${entry.line}` || (j.form === form && (j.source.startsWith(`${page}:`) || j.link === link)))) continue;
-      list.push({ cue, itch: plainText(entry.english), form, link, source: `${page}:${entry.line}`, ...(entry.band ? { band: entry.band } : {}) });
+      list.push({ cue, itch: plainText(entry.english), form, link, source: `${page}:${entry.line}`, rank, ...(entry.band ? { band: entry.band } : {}) });
       index.set(key, list);
     }
   }
+  for (const list of index.values()) list.sort((a, b) => a.rank - b.rank);
   return index;
 }
 

@@ -218,7 +218,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 <!-- cheat-sheet: people-pointing -->
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`amun`** | speaker in this conversation (`zamun` in subject slot) | *I* | `amul` *microphone* | 🎤: the live voice of the person talking |
+| **`amun`** | speaker in this conversation (`zamun` in subject slot) | *I*, *me* | `amul` *microphone* | 🎤: the live voice of the person talking |
 | **`ehon`** | listener in this conversation (`zehon` / `dehon` in clause) | *you* | `ehol` *headphones* | 🎧: the one receiving the sound |
 | **`ahan`** | speaker and addressees together (`zahan` in subject slot) | *we* (you and I) | `ahal` *handshake* | 🤝: sharing the floor together |
 | **`unan`** | nonspecific individual (`zunan` in subject slot) | *someone* | `unal` *neutral* | 😐: not a particular person |

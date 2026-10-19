@@ -82,6 +82,14 @@ A sense being common in English (a high word-frequency rank) does not earn a thr
 
 So a row that gains its first overlay needs a `convert-word --only` run to get a three-letter root. A row that loses its last overlay keeps its short root until the next full `--lexicon` run, which may lengthen it.
 
+### Second consonant
+
+A five-letter root never has **l**, **m**, **n** or **r** as its second consonant (`SECOND_CONSONANT_BAN` in [`src/word-converter.ts`](../../src/word-converter.ts)). Those four letters are the join letters of [dictionary compounds](#dictionary-compounds), and the ban keeps compound stems readable by position.
+
+A nine-letter stem is either a three-letter left root + join + five-letter head, or a five-letter left root + join + three-letter head. Letter 4 is the left root's second consonant in the second shape, so with the ban a reader can find the join without knowing the lexicon: if letter 4 is **l / m / n / r**, it is the join; otherwise letter 6 is. Without the ban, a stem shaped `VCV l VlV CV` would split both ways. Seven- and eleven-letter stems split only one way, so they do not need the ban.
+
+`check-compounds` would still reject a real two-way split, but only against the roots that exist; the ban makes the seam visible to a learner. Lifting it would take a full `--lexicon --all` re-placement.
+
 ## Respelling a row
 
 After `convert-word`, run the retie procedure in `AGENTS.md` (`retie-docs` dry run, then `--write`, then build and test). A retie changes the spelling of the same sense everywhere, and code never spells a root as a string literal; use [`src/closed-roots.ts`](../../src/closed-roots.ts).

@@ -87,6 +87,58 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
     assert.ok(advanced() > 0);
     assert.equal(advanced("beginner"), 0);
   });
+
+  it("reads *me* as the speaker", () => {
+    const me = slots("Azawan sees me.").find((s) => s.text === "me")!;
+    assert.ok(me.suggestions.some((s) => s.kind === "job" && s.link === "pronouns.md#special-pronouns"));
+  });
+
+  it("lists a row whose first cue is the word before one that lists it later", () => {
+    const you = slots("You walk.").find((s) => s.text === "You")!;
+    const ranks = you.suggestions.filter((s): s is JobSuggestion => s.kind === "job").map((j) => j.rank);
+    assert.equal(ranks[0], 0);
+    assert.deepEqual(ranks, [...ranks].sort((a, b) => a - b));
+  });
+
+  it("spells an alias both ways and lists it after a grammar row for the word", () => {
+    const grateful = slots("I am grateful.").find((s) => s.text === "grateful")!;
+    assert.equal(grateful.suggestions[0]!.kind, "job");
+    const alias = grateful.suggestions.find((s): s is RootSuggestion => s.kind === "lexicon" && s.tier === "alias")!;
+    assert.equal(alias.word, undefined);
+    assert.deepEqual(
+      alias.sideWords!.map((w) => [w.side, w.word]),
+      [
+        ["concrete", `g${alias.form}l`],
+        ["abstract", `g${alias.form}m`],
+      ],
+    );
+  });
+
+  it("spells a lone count word, but not one of several number words", () => {
+    const three = slots("Azawan sees three books.").find((s) => s.text === "three")!;
+    assert.ok(three.suggestions.some((s) => s.kind === "detector" && s.id === "number" && s.form === "grarel"));
+    const third = slots("Azawan sees the third book.").find((s) => s.text === "third")!;
+    assert.ok(third.suggestions.some((s) => s.kind === "detector" && s.form === "grerel"));
+    const many = slots("Azawan sees twenty one books.").flatMap((s) => s.suggestions);
+    assert.ok(!many.some((s) => s.kind === "detector" && s.form));
+  });
+
+  it("shows a doc example for a detector, through a recipe row's teach link", () => {
+    const my = slots("My cat runs.").find((s) => s.text === "My")!;
+    const possessive = my.suggestions.find((s) => s.kind === "detector" && s.id === "possessive-pronoun");
+    assert.ok(possessive?.kind === "detector" && possessive.example);
+    assert.equal(possessive.example.link, "hooks.md#genitive");
+    assert.match(possessive.example.english, /\bmy\b/i);
+  });
+
+  it("shows a doc example for a grammar row whose form is only a pattern", () => {
+    const that = slots("Azawan is tired, and Alahen is that too.").flatMap((s) => s.suggestions);
+    const patterns = that.filter((s): s is JobSuggestion => s.kind === "job" && /^\/[ɡw]\//.test(s.form));
+    assert.ok(patterns.length > 0);
+    assert.ok(patterns.every((j) => j.example));
+    const spelled = that.filter((s): s is JobSuggestion => s.kind === "job" && /^[a-z]+$/.test(s.form));
+    assert.ok(spelled.every((j) => !j.example));
+  });
 });
 
 describe("WordNet tiers and routes", () => {

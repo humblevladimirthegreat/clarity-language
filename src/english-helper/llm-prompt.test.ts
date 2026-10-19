@@ -107,4 +107,24 @@ describe("verifyDraft", () => {
     const broken = verifyDraft(doc.sentence, `${doc.agazan.replace(/\.$/, "")}q.`, tables);
     assert.ok(broken.error);
   });
+
+  it("lines up each word's sense with the English word that suggested its root", () => {
+    const rootOf = (english: string, word: string, tier: string) =>
+      analyzeEnglish(data, english)
+        .clauses.flatMap((c) => c.slots)
+        .find((s) => s.text === word)!
+        .suggestions.find((s): s is RootSuggestion => s.kind === "lexicon" && s.tier === tier)!.form;
+    const cat = rootOf("The cat sleeps.", "cat", "root");
+    const sleep = rootOf("The cat sleeps.", "sleeps", "root");
+    const right = verifyDraft("The cat sleeps.", `z${cat}l v${sleep}l.`, tables, data);
+    assert.deepEqual(right.words!.map((w) => [w.side, w.english, w.check]), [
+      ["concrete", "cat", undefined],
+      ["concrete", "sleeps", undefined],
+    ]);
+    const abstract = verifyDraft("The cat sleeps.", `z${cat}m v${sleep}l.`, tables, data);
+    assert.equal(abstract.words![0]!.check, "other-side");
+    const grateful = rootOf("I am grateful.", "grateful", "alias");
+    const alias = verifyDraft("I am grateful.", `g${grateful}l.`, tables, data);
+    assert.equal(alias.words![0]!.check, "alias");
+  });
 });

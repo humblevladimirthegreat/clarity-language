@@ -189,6 +189,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 | *today* / *now* | a channel with an offset of zero: `thunem bazazam grazol` (zero days); with `bagazem` it is *right now* |
 | *yesterday* / *tomorrow* | a channel with one day back or ahead: `bazazam gruwol` / `bazazam grawol` |
 | *tonight* | today plus *at night*: `thunem bazazam grazol` and **`huwem banadal`** |
+| *last night* / *tomorrow night* | a channel with one day back or ahead, plus *at night*: `thevom bazazam gruwol huwem banadal` |
 | *recently* / *recent* | a channel + **`brubum`** (*a short while before now*; **`brubul`** is *just now*) |
 | *forever* / *permanent* | a measure phrase with an unbounded amount: `bavawem grabal` (for `permanent`, add **`hagem`**) |
 | *eventually* / *ultimately* | **`xrebal`** opens the last point (*Finally, …*) |

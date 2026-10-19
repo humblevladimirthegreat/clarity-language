@@ -57,6 +57,9 @@ export type TaggedTerm = {
   tense?: "past" | "present";
   /** Verbs and adjectives used as nouns: `-ing`, `-ed` participle, or `-er` doer shape. */
   shape?: "ing" | "ed" | "er";
+  /** Numbers: what this word alone counts (*three*, *3* → 3; *third* → 3 with `ordinal`). */
+  value?: number;
+  ordinal?: boolean;
 };
 
 export type ClauseFeatures = {
@@ -152,6 +155,11 @@ function toTerm(t: JsonTerm, input: string, initial: boolean): TaggedTerm {
   else if (t.tags.includes("PresentTense")) term.tense = "present";
   const shape = shapeOf(t, cls);
   if (shape) term.shape = shape;
+  if (cls === "number") {
+    const value = (nlp(t.text).numbers().get() as unknown[])[0];
+    if (typeof value === "number") term.value = value;
+    if (t.tags.includes("Ordinal")) term.ordinal = true;
+  }
   return term;
 }
 

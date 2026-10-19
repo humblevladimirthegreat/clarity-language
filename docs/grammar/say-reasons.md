@@ -49,7 +49,7 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 | *apparently* (a glimpse) | `thodor` | LIVE, a glimpse |
 | *presumably* (by the usual pattern) | `thobam` | PATTERN |
 | *presumably* (a weak clue) | `thuner` | CLUES, thin |
-| *guess* / *I guess* / *perhaps* / *maybe* / *possibly* | `thovum` | MAY, could be |
+| *guess* / *I guess* / *perhaps* / *maybe* / *possibly* / *not sure* / *unsure* | `thovum` | MAY, could be |
 | *guess* (a passing thought) | `thovur` | MAY, who knows |
 | *guess* (a gut hunch) | `thahor` | INTUITION, faint |
 | *assume* / *suppose* | `thavor` | NOTIONAL, toy with it for now |
@@ -471,6 +471,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 | *meaningful* / *worthwhile* | `wametham gobum` | purpose, met |
 | *pointless* / *futile* | `wamethum gobum` | purpose, unmet |
 | *glad to help* / *rewarding to give* | `thebetham.` | the act met your beneficence |
+| *grateful* / *thankful* / *appreciate* (your own thanks) | `thanatham.`, or the met word for the sake that was served | your sake, met: the thanks ([thanks and sorry](sakes.md#thanks-sorry)) |
 | *benefit* / *benefits Alahen* | `thanatham balahen` | the act met Alahen's sake |
 | *advantage* (a lead over someone) | `zel` with the scale | rank against the other |
 | *satisfy* (you) | `thanatham behon` | the act met your sake |
@@ -591,7 +592,7 @@ Many English adjectives are the plain opposite of something that has a root (*un
 | *general* / *generally true* | `zuam` with the kind | every member, as a rule |
 | *universal* / *absolute* / *without exception* | `zual` with the kind | every member, no exceptions |
 | *comprehensive* / *covers everything* | `zual` with the scope | every member, nothing left out |
-| *sure* / *confident* (I am) | stance number `th+e` | certain, no exceptions |
+| *sure* / *confident* (I am) | stance number `thrabal` (`th+e`) | certain, no exceptions |
 | *proud* (of something) | `wulothamam gobum` after the thing | competence met, held inside, flowing |
 
 > `zugul gagazam gul.`

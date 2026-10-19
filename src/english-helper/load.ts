@@ -46,8 +46,8 @@ export function helperPayload(): HelperPayload {
   const wordnet = loadWordnetIndex();
   const sections = loadSections();
   return {
-    // The cue index has already read `cues` and `teach`; the entries only answer one-word lookups.
-    entries: entries.filter(teachingEntry).map(({ cues: _cues, teach: _teach, ...entry }) => entry),
+    // The cue index has already read `cues`; the entries answer one-word lookups, and `teach` leads a recipe row to its examples.
+    entries: entries.filter(teachingEntry).map(({ cues: _cues, ...entry }) => entry),
     cues: [...buildCueIndex(entries, cueWords, sections)],
     sections: [...sections],
     ...(wordnet ? { wordnet } : {}),

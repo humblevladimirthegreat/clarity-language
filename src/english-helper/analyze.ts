@@ -10,7 +10,8 @@ import type { EnglishEntry } from "../find/english.js";
 import { searchEnglish } from "../find/english.js";
 import type { Band } from "../lint/learning-order.js";
 import { BANDS } from "../lint/learning-order.js";
-import { grammarPath, matchCues, type CueIndex, type GrammarJob } from "./cues.js";
+import { markerToSpeech, digitsToSyllables } from "../tts/numbers.js";
+import { grammarPath, matchCues, resolveLink, type CueIndex, type GrammarJob } from "./cues.js";
 import type { CompoundRow } from "../lexicon-compounds.js";
 import { COMPOUND_LINKS, detectClause, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
 import { lookupLexicon, rootsByForm, sideEnding, type LexiconIndex, type LexiconSuggestion } from "./lexicon.js";
@@ -50,12 +51,19 @@ export type RootSuggestion = LexiconSuggestion & {
   word?: string;
   /** A listed compound whose left root and head are the two words' own roots (*bed room*). */
   fromParts?: { left: string; head: string };
+  /** Aliases: the word on each side of the row (`gebevol` *pray*, `gebevom` *gratitude*), since a search word fits either. */
+  sideWords?: { side: "concrete" | "abstract"; sense: string; word: string }[];
 };
+/** A doc example from the section a suggestion links, so the prompt shows the job in a sentence. */
+export type SectionExample = { form: string; english: string; link: string };
 /** A hook job or entry followed by a noun spells the whole phrase: the hook, then the noun's `/b/` word (`al bahazal`). */
 type HookPhrase = { phrase?: string };
-export type JobSuggestion = GrammarJob & HookPhrase & { kind: "job"; tier: "grammar" };
-export type DetectorSuggestion = DetectorHit & { kind: "detector"; tier: "grammar" };
-export type EntrySuggestion = HookPhrase & { kind: "entry"; tier: "grammar"; form: string; english: string; link: string; band?: Band };
+/** Shown when the suggestion spells no word of its own (a pattern, a detector). */
+type Exampled = { example?: SectionExample };
+export type JobSuggestion = GrammarJob & HookPhrase & Exampled & { kind: "job"; tier: "grammar" };
+/** `form`: the word the detector spells for this English word (a number: `grarel` *three*). */
+export type DetectorSuggestion = DetectorHit & Exampled & { kind: "detector"; tier: "grammar"; form?: string };
+export type EntrySuggestion = HookPhrase & Exampled & { kind: "entry"; tier: "grammar"; form: string; english: string; link: string; band?: Band };
 /**
  * A role compound for a doer noun (*teacher*, *dog walker*): the `route` tier, since the lexicon
  * leaves doers out on purpose. `usual` adds **`the`** (*a teacher*, the usual role); without it
@@ -198,6 +206,14 @@ function asRootSuggestion(data: HelperData, s: LexiconSuggestion, role: string |
     const word = `${spellRole(role)}${s.form}${ending}`;
     if (!data.wordParses || data.wordParses(word)) out.word = word;
   }
+  if (role && s.tier === "alias" && s.senses) {
+    const sides = (["concrete", "abstract"] as const).flatMap((side) => {
+      const sense = s.senses![side];
+      const word = `${spellRole(role)}${s.form}${sideEnding(side)}`;
+      return sense && (!data.wordParses || data.wordParses(word)) ? [{ side, sense, word }] : [];
+    });
+    if (sides.length) out.sideWords = sides;
+  }
   return out;
 }
 
@@ -338,6 +354,88 @@ function entrySuggestions(data: HelperData, words: readonly string[]): EntrySugg
   return out.slice(0, 3);
 }
 
+type ExampleIndex = { examples: Map<string, EnglishEntry[]>; rows: Map<string, EnglishEntry[]> };
+const exampleIndexes = new WeakMap<readonly EnglishEntry[], ExampleIndex>();
+
+/** Doc examples by section, and table rows with a `Teach` link by section. */
+function exampleIndex(data: HelperData): ExampleIndex {
+  let index = exampleIndexes.get(data.entries);
+  if (index) return index;
+  index = { examples: new Map(), rows: new Map() };
+  for (const entry of data.entries) {
+    const link = `${grammarPath(entry.page)}#${entry.slug}`;
+    const map = entry.kind === "example" ? index.examples : entry.kind === "table" && entry.teach ? index.rows : undefined;
+    if (map) map.set(link, [...(map.get(link) ?? []), entry]);
+  }
+  exampleIndexes.set(data.entries, index);
+  return index;
+}
+
+function escapeRegExp(text: string): string {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/**
+ * A doc example for a suggestion's sections: one in a linked section whose English says one of
+ * `words`; else one in the section a linked table row teaches, when the row says the word
+ * (*my house* in english.md → *My dog sleeps.* in hooks.md); else the first in a linked section.
+ */
+export function sectionExample(data: HelperData, links: readonly string[], words: readonly string[]): SectionExample | undefined {
+  const { examples, rows } = exampleIndex(data);
+  const said = words.length ? new RegExp(`\\b(${words.map(escapeRegExp).join("|")})\\b`, "i") : undefined;
+  const pick = (link: string, entry: EnglishEntry | undefined) => entry && { form: entry.form, english: entry.english, link };
+  if (said) {
+    for (const link of links) {
+      const hit = pick(link, examples.get(link)?.find((e) => said.test(e.english)));
+      if (hit) return hit;
+    }
+    for (const link of links) {
+      for (const row of rows.get(link) ?? []) {
+        if (!said.test(row.english)) continue;
+        const taught = resolveLink(row.page, row.teach!);
+        const list = examples.get(taught) ?? [];
+        const hit = pick(taught, list.find((e) => said.test(e.english)) ?? list[0]);
+        if (hit) return hit;
+      }
+    }
+  }
+  for (const link of links) {
+    const hit = pick(link, examples.get(link)?.[0]);
+    if (hit) return hit;
+  }
+  return undefined;
+}
+
+/** A form with no piece the word parser reads as words (`/ɡ/ / -r`, `one of six linkers + -m`): a pattern, not a spelling. */
+function patternForm(data: HelperData, form: string): boolean {
+  if (!data.wordParses) return false;
+  return !form.split(" / ").some((piece) => {
+    const words = piece.trim().replace(/[.?!]$/, "").split(/\s+/);
+    return words.length > 0 && words.every((w) => /^[a-z]/.test(w) && data.wordParses!(w));
+  });
+}
+
+/** Detectors, and grammar rows whose form is only a pattern, get an example of the job in a sentence. */
+function addExamples(data: HelperData, suggestions: Suggestion[], words: readonly string[]): void {
+  for (const s of suggestions) {
+    if (s.kind === "detector") {
+      if (s.form) continue;
+      const example = sectionExample(data, s.links, words);
+      if (example) s.example = example;
+    } else if ((s.kind === "job" || s.kind === "entry") && patternForm(data, s.form)) {
+      const example = sectionExample(data, [s.link], words);
+      if (example) s.example = example;
+    }
+  }
+}
+
+/** A lone count or rank word spelled as a `/ɡ/` number word ([counts](numbers.md#counts)): *three* → `grarel`, *third* → `grerel`. */
+function numberWord(data: HelperData, t: TaggedTerm): string | undefined {
+  if (t.value === undefined || !Number.isInteger(t.value) || t.value < 0) return undefined;
+  const word = `g${markerToSpeech(t.ordinal ? "#" : "+")}${digitsToSyllables(String(t.value))}l`;
+  return !data.wordParses || data.wordParses(word) ? word : undefined;
+}
+
 function bandOf(data: HelperData, link: string, own?: Band): Band | undefined {
   return data.sections.get(link)?.band ?? own;
 }
@@ -452,6 +550,9 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
         const one = run.length === 1;
         const jobs: JobSuggestion[] = (match?.jobs ?? []).map((j) => ({ ...j, kind: "job", tier: "grammar" }));
         const detectors = one ? detectWord(t, terms[end]).flatMap((d) => filterDetector(data, d, stage) ?? []) : [];
+        // A number next to another (*twenty one*) is one amount the words alone do not spell.
+        const count = one && t.cls === "number" && terms[i - 1]?.cls !== "number" && terms[end]?.cls !== "number" ? numberWord(data, t) : undefined;
+        for (const d of detectors) if (d.id === "number" && count) d.form = count;
         const role = roleOf(i);
         const roots = useNgram ? ngram.hits.map((s) => asRootSuggestion(data, s, role)) : one && CONTENT.has(t.cls) ? rootSuggestions(data, t, role) : [];
         // A doer noun with a root of its own (*flower*) is not an *-er* participle or a role compound.
@@ -469,7 +570,10 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
         const shownDetectors = roots.length ? detectors.filter((d) => d.id !== "participle") : detectors;
         // A table row that spells the same role compound repeats it; the built one says how it is made.
         const shownJobs = jobs.filter((j) => !roles.some((r) => j.form === r.form));
-        let suggestions: Suggestion[] = [...listed, ...roots, ...roles, ...shownJobs, ...shownDetectors].filter((s) => withinStage(data, s, stage));
+        // An alias is a search word, not a sense: a grammar row for the word (*grateful*) comes first.
+        const senses = roots.filter((s) => s.tier !== "alias");
+        const aliases = roots.filter((s) => s.tier === "alias");
+        let suggestions: Suggestion[] = [...listed, ...senses, ...roles, ...shownJobs, ...shownDetectors, ...aliases].filter((s) => withinStage(data, s, stage));
         const skipped =
           one && !suggestions.length && (ARTICLES.has(t.normal) || (BARE_AUX.has(t.normal) && auxBeforeVerb(t, i)) || (t.normal === "to" && terms[end]?.cls === "verb"));
         if (!suggestions.length && !skipped && !t.proper) {
@@ -497,6 +601,7 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
         }
         // WordNet leads and live compounds rank below every listed match and grammar row.
         suggestions.push(...[...leads, ...routes, ...live].filter((s) => withinStage(data, s, stage)));
+        addExamples(data, suggestions, [...new Set(run.flatMap((r) => [r.normal, r.lemma]))]);
         const slot: Slot = { text: run.map((r) => r.text).join(" "), lemma: one ? t.lemma : run.map((r) => r.normal).join(" "), cls: one ? t.cls : useNgram ? "noun" : "other", suggestions };
         const reading = one ? readingOf(t) : undefined;
         if (reading) slot.reading = reading;
@@ -509,6 +614,7 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
       }
       spellHookPhrases(slots);
       const detectors = detectClause(clause.features).flatMap((d) => filterDetector(data, d, stage) ?? []);
+      addExamples(data, detectors, []);
       clauses.push({ text: clause.text, features: clause.features, detectors, slots });
       outer.push(...terms);
     }

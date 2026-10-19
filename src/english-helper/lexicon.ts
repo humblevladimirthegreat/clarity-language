@@ -31,6 +31,8 @@ export type LexiconSuggestion = {
   /** WordNet leads: the lexicon sense word the lead points at, and how WordNet links them. */
   lead?: string;
   via?: string;
+  /** Aliases: the row's own senses. A search word belongs to neither side, so both are shown. */
+  senses?: { concrete?: string; abstract?: string };
 };
 
 export type LexiconIndex = Map<string, LexiconSuggestion[]>;
@@ -76,7 +78,8 @@ export function buildLexiconIndex(published: readonly PublishedRow[], compounds:
     }
   }
   for (const r of published) {
-    for (const alias of r.englishAliases ?? []) add(index, alias, { tier: "alias", form: r.root, emoji: r.emoji });
+    const senses = { ...(r.concrete ? { concrete: r.concrete } : {}), ...(r.abstract ? { abstract: r.abstract } : {}) };
+    for (const alias of r.englishAliases ?? []) add(index, alias, { tier: "alias", form: r.root, emoji: r.emoji, senses });
   }
   for (const r of compounds) {
     if (r.concrete) add(index, r.concrete, { tier: "compound", form: r.stem, emoji: "", side: "concrete" });

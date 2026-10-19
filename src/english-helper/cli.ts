@@ -31,7 +31,7 @@ function usage(message: string, code = 2): never {
       "       english-helper.mjs '<english>' --verify '<agazan draft>' ['<english>' --verify '<draft>'…] [--json]",
       "  --llm-prompt  print an English → Agazan prompt for an LLM (several inputs make one numbered prompt)",
       "  --examples N  with --llm-prompt: how many doc examples to show (default 6; 0 for none)",
-      "  --verify      parse a draft, list words the lexicon does not know, and print its morph gloss, beside the English",
+      "  --verify      parse a draft, list words the lexicon does not know, print its morph gloss, and line up each word's sense with the English",
     ].join("\n"),
   );
   process.exit(code);
@@ -71,7 +71,8 @@ if (llmPrompt && json) usage("--llm-prompt prints text; it does not combine with
 
 if (drafts.length > 0) {
   const tables = loadDefaultTables();
-  const verified = inputs.map((english, k) => verifyDraft(english, drafts[k]!, tables));
+  const data = loadHelperData();
+  const verified = inputs.map((english, k) => verifyDraft(english, drafts[k]!, tables, data));
   if (json) console.log(JSON.stringify(verified, null, 2));
   else console.log(verified.map((v) => verifiedLines(v).join("\n")).join("\n\n"));
   if (verified.some((v) => v.error || v.unknown.length > 0)) process.exit(1);

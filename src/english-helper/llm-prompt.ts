@@ -181,7 +181,8 @@ function writingRules(inputs: readonly HelperInput[]): string[] {
     `- Each word of a sentence is one lowercase word: role letter + root + ending, with no hyphen or space${example ? ` (${example})` : ""}. The role letter is the word's job, and it is the same as the gloss prefix described below: \`z\` subject, \`d\` direct object, \`b\` extra noun, \`v\` verb, \`g\` adjective, \`gl\` adjective before its noun, \`w\` degree, \`h\` adverb, \`th\` stance, \`y\` turn word, \`x\` link. \`th\` is one letter.`,
     "- The ending: `-l` for a first mention in the root's everyday, concrete sense; `-m` for the root's abstract sense; `-n` for a name.",
     "- A root line in the analysis gives the root, its sense, and (after `→`) the whole word when the analyzer could build it. It guesses the role letter and ending from the English, so change them to fit your sentence.",
-    "- A grammar line gives an English cue, the form the teaching section writes for that job (in backticks), and the section. The examples below show many of these forms in sentences.",
+    "- An `alias` line is a search word for the root, not one of its senses. It spells the word both ways, `-l` with the concrete sense and `-m` with the abstract one: use the word whose sense means what the English says (*grateful* is the abstract *gratitude*, not the concrete *pray*).",
+    "- A grammar line gives an English cue, the form the teaching section writes for that job (in backticks), and the section. When the form is a pattern, or the line names no form, the `e.g.` line under it is a doc sentence that uses the job: copy its shape. The examples below show many more of these forms in sentences.",
     "- Usual order: subject, direct object, verb, then the extra noun that receives (who is given or told). An adjective goes right after its noun; a `w` word goes right before the word it grades; `h` and `th` words may go anywhere. A `b` word right after a `g`, `h` or `th` word completes that word, so keep a recipient away from them.",
     "- End each statement with a period. Words the analysis marks as having no word of their own (articles, bare auxiliaries) are not written.",
   ];
@@ -264,7 +265,7 @@ export function buildHelperPrompt(
     "- The analyzer matches words, not meanings. Choosing between suggestions, and rephrasing by meaning, is your job: for a gap, say the same thing with suggested roots if you can (*a room for sleeping* for a word with no root), or leave it out and name it in the note.",
     "- Leads are guesses: use one only when its sense fits the sentence.",
     "- Keep who does what to whom, negation, and the speaker's stance. Do not add what the English does not say.",
-    "- If you can run commands in the Agazan repository, check each draft before you reply: `node scripts/english-helper.mjs '<english>' --verify '<draft>'` shows the parse error, or the word-by-word gloss and any word the lexicon does not know. Fix every error. Then run `node scripts/parse.mjs --llm-prompt '<draft>'`, answer that prompt, and compare its English with the input. Revise when the meaning differs.",
+    "- If you can run commands in the Agazan repository, check each draft before you reply: `node scripts/english-helper.mjs '<english>' --verify '<draft>'` shows the parse error, or the word-by-word gloss, any word the lexicon does not know, and under `senses:` the sense each word's ending picks beside the English word it came from. Fix every error, and every sense line marked to check. Then run `node scripts/parse.mjs --llm-prompt '<draft>'`, answer that prompt, and compare its English with the input. Revise when the meaning differs.",
   );
   const shape = "AGAZAN: <sentence> (<note>)";
   out.push(
