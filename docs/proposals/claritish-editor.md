@@ -51,7 +51,7 @@ The editor scans each sentence for **cues**, English words and phrases from the 
 A cue gets a soft dotted underline in the lesson's colour, never a red squiggle. To keep the noise down:
 
 - **One mark per sentence.** When several cues fire, show the one from the earliest lesson in track order. The others show in its card under *Also here*.
-- **Lesson filter.** A row of toggles, one per lesson, defaulting to the first three lessons. Only enabled lessons mark text, so the editor grows with the learner instead of flagging every *can't* on day one. A "match my progress" option could later follow which lessons the reader has opened.
+- **Lesson filter.** A row of toggles, one per lesson, all on by default. Only enabled lessons mark text, so a writer who has not reached a lesson yet can turn it off. A "match my progress" option could later follow which lessons the reader has opened.
 - **Ignore.** *Leave it* dismisses one mark. *Never for this phrase* is stored per browser.
 - **Skip quoted text.** Text inside quotation marks and code spans is someone else's words or not prose, so it is not scanned.
 
@@ -70,7 +70,7 @@ Hover, or the keyboard shortcut, opens a card on the marked cue:
 3. **Preview** of the sentence with the drop-in in place, and the English gloss of the form.
 4. **Actions:** *Use this*, **Leave it in English** (as prominent as *Use this*), ▶ pronounce, *Learn this* (link to the lesson anchor).
 
-*Use this* places the drop-in the way the lessons do ([placement](../meta/grammar-docs.md#claritish-track)): after the clause for stance words, as a hyphen suffix on the English host for label scope and ability, right after the English noun for a thanks to something the writer owns, and before the word it colours for tone marks. Where the lesson's examples drop the English cue (*I think the store is closed* → *The store is closed `thovum`*), the preview offers to drop it too, and the writer can keep it.
+*Use this* places the drop-in the way the lessons do ([placement](../meta/grammar-docs.md#claritish-track)): after the clause for stance words, as a hyphen suffix on the English host for label scope and ability, right after the English noun for a thanks to something the writer owns, and before the word it colours for tone marks. Where the lesson's examples drop the English cue (*I think the store is closed* → *The store is closed `thovum`*), the preview drops it too by default, matching the lesson, and the writer can keep it with one click.
 
 Drop-ins are written plainly in the editor, without backticks, as in real use.
 
@@ -91,7 +91,7 @@ The emotion compose is the hardest drop-in to build by hand: sake, stance, endin
 
 ### Mirror panel
 
-An optional side panel counts, for the whole text, the cues still in plain English: *2 unmarked guesses · 1 label on a person · 1 should with no reason given*. It is a mirror, not a score: no totals, no colours that read as pass or fail, no nudge to reach zero. Each line jumps to its cue.
+A side panel, on by default and closable, counts for the whole text, the cues still in plain English: *2 unmarked guesses · 1 label on a person · 1 should with no reason given*. It is a mirror, not a score: no totals, no colours that read as pass or fail, no nudge to reach zero. Each line jumps to its cue.
 
 ### Practice mode
 
@@ -107,13 +107,13 @@ Loads a lesson's English example sentences with the drop-ins removed as prompts.
 
 ### Where it lives
 
-A Vue component `ClaritishEditor.vue` in [`.vitepress/components`](../grammar/.vitepress/components/), registered like `AgazanInspect`, rendered inside `<ClientOnly>` on one page. Where that page goes is an open question (below).
+A Vue component `ClaritishEditor.vue` in [`.vitepress/components`](../grammar/.vitepress/components/), registered like `AgazanInspect`, rendered inside `<ClientOnly>` on its own page, `docs/grammar/claritish/editor.md`. The page is the last in the Claritish sidebar, right after the cheat sheet, and takes over `next: false` from it. Like the cheat sheet, it adds no forms and links only to lessons.
 
 ### Editor engine
 
-**CodeMirror 6** (`@codemirror/state`, `view`, `lint`, `autocomplete`). Messages are plain text, and CodeMirror has the parts this needs built in: lint diagnostics with actions, hover tooltips, decorations, autocomplete, and keyboard access. It is a new dependency, but a mature, well-documented one, and it only ships in the site bundle for this page.
+**CodeMirror 6** (`@codemirror/state`, `view`, `lint`, `autocomplete`). Journal entries are plain text, and CodeMirror has the parts this needs built in: lint diagnostics with actions, hover tooltips, decorations, autocomplete, and keyboard access. It is a new dependency, but a mature, well-documented one, and it only ships in the site bundle for this page.
 
-Alternative: Tiptap is already a dev dependency (used only by a lint script). It is rich-text oriented and has no lint or hover layer, so every card and underline would be custom ProseMirror decoration code, which is the riskier path.
+Tiptap was considered, since it is already a dev dependency (used only by a lint script), and passed over: it is rich-text oriented and has no lint or hover layer, so every card and underline would be custom ProseMirror decoration code, which is the riskier path.
 
 ### Data, generated at build
 
@@ -149,62 +149,48 @@ Draft text, lesson toggles, and the never-flag list in `localStorage`, wrapped i
 
 ## Phased plan
 
-Each phase ships on its own and leaves the site in a usable state.
+Each phase ships on its own and leaves the site in a usable state. Phase 1 carries the new parts (CodeMirror, the matcher, the flow format), so it gets reviewed in the running site before later phases build on it.
 
-### Phase 0: data and build plumbing
+### Phase 1: data, plumbing, and the minimum editor
 
-- Write `data/claritish-triggers.csv` and `data/claritish-flows.json` for **How sure are you?**, **How do you know?**, and **Thanks and sorry**.
+Three lessons, end to end: **How sure are you?**, **How do you know?**, and **Thanks and sorry**.
+
+- Write `data/claritish-triggers.csv` and `data/claritish-flows.json` for the three lessons.
 - Factor the cheat sheet table parser out of `lint-cheat-sheets.ts` into a shared module and generate `src/generated/claritish-editor.json`.
 - Add the flow lint and the gap coverage lint, limited to the three lessons.
-- Add rows for the two new data files to the sources-of-truth table in `AGENTS.md`, and a short editor note (in `claritish-style.md` or its own meta page) on writing triggers and card copy.
-
-**Done when:** the build produces the JSON, a deliberately broken flow fails it, and the three lessons' gaps are covered.
-
-### Phase 1: minimum useful editor
-
-- `ClaritishEditor.vue` on CodeMirror 6, on its page.
+- `ClaritishEditor.vue` on CodeMirror 6, on `claritish/editor.md`. Add the page to the Claritish sidebar after the cheat sheet, move `next: false` to it, and name it on the intro page.
 - Cue marking for the three lessons, one mark per sentence, quoted text skipped.
 - After-clause placement, and after-noun placement for a thanks to something owned.
-- Help card: gap line, question flow, preview, *Use this*, *Leave it in English*, ▶ pronounce, *Learn this*.
-- Lesson filter, *Leave it*, *Never for this phrase*, saved draft.
+- Help card: gap line, question flow, preview (English cue dropped by default), *Use this*, *Leave it in English*, ▶ pronounce, *Learn this*.
+- Lesson filter (all on), *Leave it*, *Never for this phrase*, saved draft.
 - Example round-trip and false-positive tests for the three lessons.
+- Editor notes: rows for the two new data files in the sources-of-truth table in `AGENTS.md`; the [Claritish track](../meta/grammar-docs.md#claritish-track) rules updated for the editor page (it, not the cheat sheet, is the last page and sets `next: false`); and a short note (in `claritish-style.md` or its own meta page) on writing triggers and card copy.
 
-**Done when:** a learner can write or paste a journal entry, see cues from the three lessons, and add or decline a drop-in for each with the keyboard alone.
+**Done when:** the build produces the JSON and fails on a deliberately broken flow, the three lessons' gaps are covered, and a learner can write or paste a journal entry, see cues from the three lessons, and add or decline a drop-in for each with the keyboard alone.
 
-### Phase 2: all simple lessons, and reading back
+### Phase 2: the simple lessons, reading back, and reflection
+
+Everything here reuses the Phase 1 matcher and cards.
 
 - Triggers and flows for **Can and can't**, **Allowed, required, agreed**, **Oughts and motives**, **Wants and plans**, **Decisions and tries**, and **Tone marks**.
 - Hyphen-suffix placement and before-word placement for tone marks.
 - Hover gloss on existing drop-ins, near-miss suggestions.
 - Slash commands and autocomplete.
-- Gap coverage lint extended to every lesson.
+- Mirror panel, on by default.
+- Practice mode over the examples of every lesson with cues.
+- Gap coverage lint, round-trip tests, and false-positive corpus extended to these lessons.
 
-**Done when:** every lesson except Labels and Feelings has cues, and every cheat sheet form can be inserted from a card or a slash command.
+**Done when:** every lesson except Labels and Feelings has cues, every cheat sheet form outside those two lessons can be inserted from a card or a slash command, and the mirror panel and practice mode cover every lesson with cues.
 
 ### Phase 3: Labels and Feelings
 
-- Labels pattern with the trait-word list; measure misses against the lesson examples and a sample of everyday text, and decide on part-of-speech tagging from that.
+- Labels pattern with the trait-word list. Measure misses against the lesson examples and a sample of everyday text, and bring the numbers to the editors, who decide whether to add part-of-speech tagging.
 - Emotion-word list and the feelings composer with its part-by-part breakdown.
+- Both lessons in the mirror panel, practice mode, and every lint and test.
 
-**Done when:** the Labels and Feelings examples round-trip, and the composer can build every feeling form the lesson shows.
-
-### Phase 4: reflection and practice
-
-- Mirror panel.
-- Practice mode over the lesson examples.
-
-**Done when:** the mirror panel counts every enabled lesson's cues, and every lesson's examples load as practice prompts.
+**Done when:** the Labels and Feelings examples round-trip, the composer can build every feeling form the lesson shows, and the gap coverage lint covers every lesson.
 
 ### Later, if wanted
 
 - "Match my progress": tie the lesson filter to the lessons the reader has opened.
 - Self-talk by name, a card that is not a drop-in: see `self-talk-by-name.md`.
-
-<a id="open-questions"></a>
-## Open questions
-
-1. **Where the page lives.** A last page in the Claritish sidebar after the cheat sheet, a link from the cheat sheet, or a separate *Tools* section. The track rules say the cheat sheet is the last page and sets `next: false`.
-2. **Default lessons.** Three lessons on by default, all on, or "only lessons you've opened".
-3. **Dropping the English cue.** Offer by default (closer to the lesson examples) or keep the cue by default (less editing of the writer's words).
-4. **Mirror panel** default on or off.
-5. **CodeMirror vs Tiptap**, if adding a dependency is a concern.

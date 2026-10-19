@@ -13,7 +13,7 @@ import { BANDS } from "../lint/learning-order.js";
 import { markerToSpeech, digitsToSyllables } from "../tts/numbers.js";
 import { grammarPath, matchCues, resolveLink, type CueIndex, type GrammarJob } from "./cues.js";
 import type { CompoundRow } from "../lexicon-compounds.js";
-import { COMPOUND_LINKS, detectClause, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
+import { COMPOUND_LINKS, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
 import { lookupLexicon, rootsByForm, sideEnding, type LexiconIndex, type LexiconSuggestion } from "./lexicon.js";
 import { doerVerb, tagEnglish, type ClauseFeatures, type TaggedTerm, type WordClass } from "./tag.js";
 import { lookupRoute, lookupWordnet, senseSuggestions, type RouteClass, type WordnetIndex, type WordnetPos } from "./wordnet-index.js";
@@ -354,7 +354,12 @@ function entrySuggestions(data: HelperData, words: readonly string[]): EntrySugg
   return out.slice(0, 3);
 }
 
+/** By `page.md#slug`, and by `page.md|title` for a link to an `<a id>` alias of the heading. */
 type ExampleIndex = { examples: Map<string, EnglishEntry[]>; rows: Map<string, EnglishEntry[]> };
+
+function titleKey(page: string, title: string): string {
+  return `${page}|${title.replace(/[`*]/g, "")}`;
+}
 const exampleIndexes = new WeakMap<readonly EnglishEntry[], ExampleIndex>();
 
 /** Doc examples by section, and table rows with a `Teach` link by section. */
@@ -363,9 +368,8 @@ function exampleIndex(data: HelperData): ExampleIndex {
   if (index) return index;
   index = { examples: new Map(), rows: new Map() };
   for (const entry of data.entries) {
-    const link = `${grammarPath(entry.page)}#${entry.slug}`;
     const map = entry.kind === "example" ? index.examples : entry.kind === "table" && entry.teach ? index.rows : undefined;
-    if (map) map.set(link, [...(map.get(link) ?? []), entry]);
+    for (const key of [`${grammarPath(entry.page)}#${entry.slug}`, titleKey(grammarPath(entry.page), entry.title)]) map?.set(key, [...(map.get(key) ?? []), entry]);
   }
   exampleIndexes.set(data.entries, index);
   return index;
@@ -381,7 +385,13 @@ function escapeRegExp(text: string): string {
  * (*my house* in english.md → *My dog sleeps.* in hooks.md); else the first in a linked section.
  */
 export function sectionExample(data: HelperData, links: readonly string[], words: readonly string[]): SectionExample | undefined {
-  const { examples, rows } = exampleIndex(data);
+  const index = exampleIndex(data);
+  const at = (map: Map<string, EnglishEntry[]>, link: string) => {
+    const title = data.sections.get(link)?.title;
+    return map.get(link) ?? (title ? map.get(titleKey(link.split("#")[0]!, title)) : undefined);
+  };
+  const examples = { get: (link: string) => at(index.examples, link) };
+  const rows = { get: (link: string) => at(index.rows, link) };
   const said = words.length ? new RegExp(`\\b(${words.map(escapeRegExp).join("|")})\\b`, "i") : undefined;
   const pick = (link: string, entry: EnglishEntry | undefined) => entry && { form: entry.form, english: entry.english, link };
   if (said) {
@@ -599,6 +609,9 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
           if (!suggestions.length && nounFollows(terms, end)) hits.push(extraNounHook(hookWord));
           suggestions.push(...hits.flatMap((d) => filterDetector(data, d, stage) ?? []));
         }
+        // *that* / *whether* opening a clause: the opener's job replaces *that* as a pronoun or determiner.
+        const opener = one ? detectClauseOpener(t.normal, terms[i - 1] ?? outer[outer.length - 1], terms[end]).flatMap((d) => filterDetector(data, d, stage) ?? []) : [];
+        if (opener.length) suggestions = [...opener, ...suggestions.filter((s) => s.kind !== "job" && s.kind !== "entry")];
         // WordNet leads and live compounds rank below every listed match and grammar row.
         suggestions.push(...[...leads, ...routes, ...live].filter((s) => withinStage(data, s, stage)));
         addExamples(data, suggestions, [...new Set(run.flatMap((r) => [r.normal, r.lemma]))]);

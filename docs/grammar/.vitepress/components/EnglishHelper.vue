@@ -236,6 +236,7 @@ onBeforeUnmount(() => {
             <span class="links">
               <a v-for="link in d.links" :key="link" :href="href(link)">{{ sectionTitle(link) }}</a>
             </span>
+            <span v-if="d.example" class="example">e.g. <code>{{ d.example.form }}</code> {{ d.example.english }}</span>
           </li>
         </ul>
         <div class="slots">
@@ -282,6 +283,7 @@ onBeforeUnmount(() => {
                 <span v-if="chip.links.length" class="links">
                   <a v-for="link in chip.links" :key="link" :href="href(link)">{{ sectionTitle(link) }}</a>
                 </span>
+                <span v-if="chip.example" class="example">e.g. <code>{{ chip.example.form }}</code> {{ chip.example.english }}</span>
               </li>
             </ul>
             <div v-if="chipsOf(slot, true).length" class="jobs">
@@ -297,6 +299,7 @@ onBeforeUnmount(() => {
                   <button v-if="chip.phrase" type="button" class="form copy phrase" title="Copy the hook with its landmark" @click="copy(chip.phrase)">
                     <code>{{ copied === chip.phrase ? 'Copied' : chip.phrase }}</code>
                   </button>
+                  <span v-if="chip.example" class="example">e.g. <code>{{ chip.example.form }}</code> {{ chip.example.english }}</span>
                 </li>
               </ul>
             </div>
@@ -586,6 +589,10 @@ li + li {
   color: var(--vp-c-text-1);
 }
 
+.example {
+  font-size: 0.8rem;
+  color: var(--vp-c-text-2);
+}
 .links {
   display: flex;
   flex-wrap: wrap;

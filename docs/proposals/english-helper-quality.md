@@ -1,0 +1,167 @@
+# Proposal: Checking and improving the English helper
+
+**Status:** PROPOSED. The tools named under *What exists* are built; everything under *Plan* is not.  
+**Related:** [`src/english-helper/`](../../src/english-helper/) (analyzer, prompt, `--verify`), [`scripts/english-helper-recall.ts`](../../scripts/english-helper-recall.ts), [`scripts/frequency-coverage.ts`](../../scripts/frequency-coverage.ts), [`scripts/llm-eval.ts`](../../scripts/llm-eval.ts) (the Agazan → English counterpart), [translation checkpoints](../meta/translation-exercises.md), [recipe track](../meta/grammar-docs.md#recipe-track).  
+**Design authority:** none. This is a process for the tool. Every fix it produces is either tool code or a doc row that teaches a form a grammar page already owns. A missing form is logged as a grammar gap, never invented here.
+
+## Problem
+
+`node scripts/english-helper.mjs --llm-prompt` is meant to give a translator everything needed to write Agazan from English without opening the grammar. A hand test on five new sentences found that the prompt fell short in several ways:
+
+- It linked a section without showing the form (*my*, *three*).
+- It had no suggestion at all for common words (*me*, *last night*, *not sure*).
+- It offered an alias root on its wrong sense (*grateful* → `-l` *pray*).
+- It printed digit notation that read like a spelling (`th+e`).
+- It never reached the language's own feature for the word (thanks as a met sake word).
+- Its notes and examples were for constructions the input didn't use.
+- `--verify` passed every one of those drafts, because it only checks that a draft parses.
+
+All of those are fixed now. They were found by chance, though, and the only standing measure has a blind spot. `npm run english-helper-recall` scores the analyzer on the doc example pairs, which are the same English that the cue rows, aliases and jobs were written against. It says nothing about English the docs never wrote, and it can't see whether a form is actually *in the prompt* or only linked.
+
+We need a repeatable loop: a held-out test set, free metrics that answer "could the translator copy this instead of opening the docs?", a worklist ranked by impact, a fixed place for each kind of fix, and a regression net.
+
+## Goals
+
+1. **Measure self-containment.** For a sentence with a reference translation, report whether every word of the reference can be found in the prompt (spelled, or as a pattern shown in an example), and which words can't.
+2. **Measure on held-out English.** Score on English the cue rows were not written from, beside the in-sample doc pairs.
+3. **Rank the work.** Turn every miss into one row of a worklist, weighted by how often the English comes up.
+4. **Route every fix to its owner.** Each failure class has one place its fix belongs: a doc row, tool code, or a logged grammar gap.
+5. **Never regress silently.** Pinned regression cases and a metrics baseline both fail loudly.
+6. **Stay free by default.** Everything but the optional model eval is deterministic and runs offline.
+
+## Non-goals
+
+- New grammar. When the reference needs a form no page teaches, or the English has no Agazan way to say it yet, that's a grammar gap: log it with the `find-english.mjs` phrases tried, and leave the decision to the editor.
+- Writing Agazan sentences inside the analyzer. The helper stays suggestion-only.
+- Tuning to the test set. Held-out sentences are never copied into cue rows or examples. A fix has to work for the class of word, not for the one sentence.
+
+## What exists
+
+| Tool | Measures | Limit |
+|------|----------|-------|
+| `npm run english-helper-recall` | root recall (top-1, top-3, anywhere), construction recall (home anchor, home page), most-missed roots and constructions | in-sample doc pairs only; a linked section counts as found even if the prompt never shows the form |
+| `npx tsx scripts/frequency-coverage.ts` | which of NGSL's 2,809 frequent lemmas the lexicon or a grammar row knows | word by word, no context, no prompt |
+| `english-helper.mjs --verify` | parse, unknown words, and each content word's sense next to the English that suggested its root | checks one draft; no aggregate |
+| `npm run llm-eval` | Agazan → English prompt quality, with a judge model | other direction; costs money |
+| tests in `src/english-helper/*.test.ts` | pinned behavior per feature | written ad hoc, one feature at a time |
+
+## Plan
+
+### 1. Test sets
+
+Three sets, each scored separately:
+
+| Set | Source | Role |
+|-----|--------|------|
+| **doc** | doc example pairs (what `english-helper-recall` reads today) | in-sample: catches breakage, overstates quality |
+| **checkpoint** | English → Agazan practice items, with their **Also correct** answers ([`src/lint/practice-items.ts`](../../src/lint/practice-items.ts)); 68 sections today | held out from the example pool, with several right answers each |
+| **wild** | a committed list of plain English sentences grouped by phenomenon (pronouns, possessives, numbers, time words, feelings, stance, clauses, questions, comparatives, kin, places) at each stage | no reference Agazan; scored on gaps, noise and size, and is the input for the model eval |
+
+The wild set is written once (around 20 sentences per phenomenon), checked in as a TSV, and grown only through the triage loop below. It stores no Agazan, so root respelling never touches it.
+
+### 2. Free metrics
+
+Extend `english-helper-recall` into a report over all three sets (`--set doc|checkpoint|wild`, default all):
+
+| Metric | Definition | Sets |
+|--------|-----------|------|
+| **root recall** | as today | doc, checkpoint |
+| **construction recall** | as today | doc, checkpoint |
+| **word in prompt** | share of reference words found verbatim anywhere in the prompt: a root line's word, an alias's two words, a job form or phrase, a detector form, an example sentence | doc, checkpoint |
+| **pattern in prompt** | of the rest, the share whose construction appears in a shown example's parse (the translator can copy the shape) | doc, checkpoint |
+| **self-contained** | share of sentences where every reference word is *word in prompt* or *pattern in prompt*. **The headline number.** | doc, checkpoint |
+| **gap rate** | slots with no suggestion, by word class, with the top lemmas | all |
+| **top-1 right** | share of slots whose first suggestion is the one the reference used | doc, checkpoint |
+| **noise** | suggestions per slot, jobs per slot, and how often a guess tier (alias, WordNet, live) ranks above a grammar row | all |
+| **prompt size** | characters per sentence, median and 90th percentile | all |
+| **verify precision** | `--verify` on each reference answer: every *check* flag on a correct answer is a false alarm | checkpoint |
+| **verify recall** | `--verify` on reference answers with one planted error each (`-l` ↔ `-m`, an alias on its other side, a grammar row's word with another ending): share flagged | checkpoint |
+
+When an *Also correct* answer exists, a word counts as found if it matches any accepted answer. A checkpoint word missing from the prompt is the clearest sign of a link without a form.
+
+The report writes `tmp/english-helper-report.md` and `tmp/english-helper-worklist.csv`.
+
+### 3. The worklist
+
+One row per miss, with columns `set, english, word, kind, lemma, frequency, owner, suggested_fix`:
+
+- `kind` is the failure class (below).
+- `frequency` is the lemma's NGSL rank, or the number of test sentences that hit it, so *me* outranks *aardvark*.
+- `owner` and `suggested_fix` are filled in from the routing table.
+
+Rows are sorted by frequency, then by how many sentences share the miss.
+
+### 4. Failure classes and where each fix goes
+
+| Class | Symptom | Fix goes in | Example |
+|-------|---------|-------------|---------|
+| **missing cue** | a common word or phrase gets a gap or only a wrong lead, but a page already teaches its form | an italic cue on the owning recipe row (`say-*.md`, `english.md`) or the owning section's table | *me* on the `amun` row; *not sure* on the MAY row |
+| **link without form** | a detector or row points at a section, but the prompt never spells the form | the analyzer: a speller (numbers), or an `e.g.` from the section, following `Teach` links | *my* → `em bamun` example; *three* → `grarel` |
+| **pattern read as spelling** | a row's form is notation (`th+e`, `/ɡ/ / -r`) with no spelled word or example | the doc cell spells the word; the analyzer shows an example for any form that is only a pattern | *sure* → `thrabal` |
+| **joined prose cell** | a recipe cell's prose (`X and Y`) becomes ` / ` alternatives | the doc cell becomes one code span | *last night* |
+| **wrong side** | an alias or lead on the sense the English doesn't mean | the analyzer spells both sides; `--verify` flags it | *grateful* → *pray* |
+| **feature not reached** | the English has a dedicated Agazan feature (sakes, evidentials, clusivity), but the helper offers only a root | a recipe row that names the feature for that English word | *grateful* → met sake word |
+| **ranking** | the right suggestion is there but below a worse one | cue rank, tier order or slot order in the analyzer | listener *you* above generic *you* |
+| **tagger** | wrong word class or lemma from compromise | `tag.ts` overrides, or a context rule in the analyzer | *that* tagged as a preposition |
+| **opener / structure** | a clause-level English structure with no detector | `detectors.ts` (pointers only), with its links in `detectorLinks` | *that* + clause → `darl` |
+| **prompt noise** | notes, examples or leads the input doesn't need | `llm-prompt.ts` selection | fragment examples; unrelated reader notes |
+| **verify blind spot** | a wrong draft passes `--verify` | `verify.ts` | a parse with no sense check |
+| **grammar gap** | no page teaches a form for the meaning | **nothing in the tool.** Log it with the `find-english.mjs` phrases tried, for an editor's decision | |
+
+Two rules keep fixes honest:
+
+- **Before adding a cue row,** run `find-english.mjs` and open the owning section. The row must restate a form the section already teaches, and the build must pass.
+- **When a fix fixes one sentence, find its class.** Then confirm the fix works on at least two other sentences of that class from the wild set.
+
+### 5. Regression net
+
+- **Cases file.** `src/english-helper/cases.tsv` holds one line per pinned behavior: English, the slot word, and an expectation. Supported expectations:
+  - `link:<page.md#id>` — some suggestion links this section;
+  - `first:<kind>` — the first suggestion is of this kind;
+  - `sense:<english sense>` — a root with this sense is suggested;
+  - `form:<number or closed word>` — this word is spelled;
+  - `no-gap`;
+  - `not:<page.md#id>` — no suggestion links this section.
+
+  Expectations name senses and sections, never root spellings, so a retie never breaks them. One `analyze.test.ts` test runs the file. Adding a case is one line, and each worklist fix adds at least one.
+- **Baseline.** `src/generated/english-helper-baseline.json` holds the headline metrics per set. `english-helper-recall --check` fails when one drops by more than a set tolerance (start at 0.5 points), and `--write-baseline` updates the file. The check doesn't run in `npm test` (docs change the numbers); it runs in the triage loop and before a commit that touches `src/english-helper/` or a recipe table.
+
+### 6. Model eval (optional, costs money)
+
+Add `npm run english-helper-eval`, built on `llm-eval`'s runner. For each sampled checkpoint item:
+
+1. Build the helper prompt, with the item's own doc pair held out.
+2. Translate with a small model. Give it tool access to `--verify` only if the run is testing that loop.
+3. Parse the reply. Record parse failure, unknown words, and *check* flags from `--verify`.
+4. Back-translate with the Agazan → English prompt and have a stronger model judge it against the item's English, keeping who did what, negation and stance.
+5. Report miss rate by failure class (from which slot's word went wrong), by construction, and by stage.
+
+Results are cached by prompt hash, like `llm-eval`. Run it only when asked, and sample (default `--n 100`).
+
+### 7. The loop
+
+Each round:
+
+1. `npm run english-helper-recall` (all sets, `--check`). Read the report's headline and the top 30 worklist rows.
+2. Group the rows by class. Take the largest group whose fix belongs in the tool or in an existing doc row.
+3. Fix it in the place the routing table names. Add a `cases.tsv` line per behavior.
+4. Rerun the report. Confirm the headline went up on **checkpoint** and **wild**, not just **doc**, and that nothing else fell past tolerance. Write the new baseline.
+5. Log grammar gaps from the worklist with their tried phrases. Don't resolve them.
+6. `npm run build`, then `npm test`, then commit (`[skip-cd]`).
+
+Every few rounds, or after a big grammar change, run the model eval on a sample to check that the free metrics still track real translation quality. If they diverge, the metrics need fixing before the loop continues.
+
+## Phases
+
+1. **Checkpoint set and self-containment metrics.** Read practice items into the recall script; add *word in prompt*, *pattern in prompt* and *self-contained*; write the worklist. This shows how big the problem is.
+2. **Cases file and baseline.** Move the ad hoc feature tests that fit the format into `cases.tsv`; add `--check` and `--write-baseline`.
+3. **Wild set.** Write the phenomenon-grouped sentences; add gap rate, noise and prompt-size scoring for sets with no reference.
+4. **Verify precision and recall.** Planted-error drafts from checkpoint answers.
+5. **Model eval.** Only after phases 1–4 settle, so its misses can be read against the free metrics.
+
+## Open questions
+
+- **Tolerance and noise.** Doc edits move the doc-set numbers for reasons unrelated to the helper. Should the baseline track only checkpoint and wild, with doc as a smoke test?
+- **Who writes the wild set.** A model can draft it fast, but it must not be drafted from the cue rows, or it stops being held out. Drafting from the NGSL list and the phenomenon list alone may be enough.
+- **Stage.** Should the checkpoint scores use `--stage` set to each item's own band, so a beginner item is scored on what a beginner prompt shows?
+- **Example budget.** The `e.g.` sentences make the prompt longer. Prompt size should be weighed against *self-contained*, probably as characters per self-contained sentence.

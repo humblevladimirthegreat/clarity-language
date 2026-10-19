@@ -167,6 +167,38 @@ export function detectHook(c: HookContext): DetectorHit[] {
   return out;
 }
 
+/** Sections for *that* / *whether* opening a clause. */
+export const OPENER_LINKS = {
+  /** *tells Alahen that the dog runs*: a stand-in, then the clause as the next sentence. */
+  content: ["dependents.md#dependent-clauses"],
+  /** *glad that it rains*: the feeling word goes on the clause it is about. */
+  feeling: ["sakes.md#feeling-no-object"],
+  /** *the dog that runs*: two sentences. */
+  relative: ["dependents.md#which-noun"],
+} as const;
+
+/** Words that start a clause after *that*: a subject pronoun, a name or noun, or an article. */
+const CLAUSE_START = new Set(["noun", "pronoun", "determiner", "number"]);
+
+/**
+ * *that* or *whether* opening a clause. After a verb, an adjective or a name, a clause start
+ * (*that the dog runs*) is content: a stand-in. After a common noun, a verb (*the dog that runs*)
+ * is a relative clause. *that* alone (*I know that*) is neither.
+ */
+export function detectClauseOpener(word: string, prev?: TaggedTerm, next?: TaggedTerm): DetectorHit[] {
+  if (word === "whether") {
+    return [{ id: "whether-clause", label: "*whether* + a clause: the stand-in `dorl` last in the main sentence, then the clause as the next sentence", links: [...OPENER_LINKS.content] }];
+  }
+  if (word !== "that" || !prev || !next) return [];
+  if (prev.cls === "noun" && !prev.proper && (next.cls === "verb" || next.cls === "auxiliary" || next.cls === "modal")) {
+    return [{ id: "relative-that", label: `*${prev.text} that* + a verb: no relative word; say the clause as its own sentence, then the noun again`, links: [...OPENER_LINKS.relative] }];
+  }
+  if (!CLAUSE_START.has(next.cls) || !(prev.cls === "verb" || prev.cls === "adjective" || prev.cls === "noun" || prev.cls === "pronoun")) return [];
+  const content: DetectorHit = { id: "that-clause", label: "*that* + a clause: a stand-in last in the main sentence (`darl` for what is said or thought), then the clause as the next sentence", links: [...OPENER_LINKS.content] };
+  if (prev.cls !== "adjective") return [content];
+  return [{ id: "feeling-that", label: `*${prev.text} that* + a clause: no stand-in; say the clause as the sentence, with the feeling word on \`/th/\` in it`, links: [...OPENER_LINKS.feeling] }, content];
+}
+
 /** The fallback for a preposition + noun that no table row names. */
 export function extraNounHook(word: string): DetectorHit {
   return { id: "extra-noun-hook", label: `*${word}* + a noun: an extra-noun hook, then the noun in \`/b/\``, links: [...HOOK_LINKS.extraNoun] };
@@ -177,6 +209,7 @@ export function detectorLinks(): string[] {
   return [
     ...Object.values(SAME_ROLE_HOOKS),
     ...Object.values(HOOK_LINKS).flat(),
+    ...Object.values(OPENER_LINKS).flat(),
     ...Object.values(ROLE_LINKS),
     ...Object.values(ROUTE_LINKS).flat(),
     ...Object.values(COMPOUND_LINKS),

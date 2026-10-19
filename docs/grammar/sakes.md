@@ -609,7 +609,15 @@ A feeling word with a direction tail already uses its `/b/` for the landmark ([e
 
 ### Feeling with no object {#feeling-no-object}
 
-On the clause, a feeling word is about the clause's event: `zalahen vowogal thanathamar` is *moved that Alahen walks*. With no event at all, a feeling word on `/th/` is a whole sentence about **you**: how you feel right now, with nothing as its object.
+On the clause, a feeling word is about the clause's event, so English *moved that …* or *glad that …* puts the feeling on the clause it names:
+
+> `zalahen vowogal thanathamar.`
+>
+> z-Alahen | v-walk | th-relatedness-met-any-term-INTERNAL-SURGING
+>
+> "I'm moved that Alahen walks."
+
+With no event at all, a feeling word on `/th/` is a whole sentence about **you**: how you feel right now, with nothing as its object.
 
 > `thulothuruor.`
 >

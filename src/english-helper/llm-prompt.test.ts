@@ -27,8 +27,21 @@ describe("English helper prompt", () => {
     assert.ok(prompt.trimEnd().endsWith(english));
     assert.ok(prompt.includes('clause 1  "My sister could not come."'));
     const examples = examplesIn(prompt);
-    assert.ok(examples.length >= 2 && examples.length <= 6, `${examples.length} examples`);
+    const inline = analyzeEnglish(data, english)
+      .clauses.flatMap((c) => [...c.detectors, ...c.slots.flatMap((s) => s.suggestions)])
+      .flatMap((s) => ((s.kind === "detector" || s.kind === "job" || s.kind === "entry") && s.example ? [s.example.form] : []));
+    assert.ok(inline.length > 0);
+    assert.ok(examples.length >= 2 && examples.length <= 6 + new Set(inline).size, `${examples.length} examples`);
+    for (const agazan of inline) assert.ok(examples.includes(agazan), agazan);
     for (const agazan of examples) assert.ok(context.index.some((pair) => pair.agazan === agazan), agazan);
+  });
+
+  it("explains only the constructions its examples use", () => {
+    const prompt = promptForEnglish(["The cat sleeps on the green book."], data, context);
+    const shown = new Set(context.index.filter((pair) => examplesIn(prompt).includes(pair.agazan)).flatMap((pair) => pair.constructions));
+    for (const [id, reader] of context.readers) {
+      if (prompt.includes(`- ${reader}`)) assert.ok(shown.has(id), id);
+    }
   });
 
   it("picks examples that cover the input's roots", () => {
@@ -90,6 +103,14 @@ describe("selectHelperExamples", () => {
     assert.equal(picked.length, 2);
     assert.ok(picked.includes("zeeeel veeeel."));
     assert.ok(picked.some((a) => a.includes("aaaa") || a.includes("bbbb")));
+  });
+
+  it("shows a fragment only for a feature no sentence has", () => {
+    const withFragments = [...pool, pair("hgggm baaaal", "until one"), pair("hhhhhm bkkkkl", "before rain")];
+    const picked = selectHelperExamples(new Map([["root:aaaa", 1], ["root:kkkk", 1]]), withFragments, 6).map((p) => p.agazan);
+    assert.ok(!picked.includes("hgggm baaaal"));
+    assert.ok(picked.includes("hhhhhm bkkkkl"));
+    assert.ok(picked.some((a) => a.includes("aaaa") && a.endsWith(".")));
   });
 
   it("matches an English lemma against its inflections", () => {

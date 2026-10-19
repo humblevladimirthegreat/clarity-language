@@ -131,6 +131,18 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
     assert.match(possessive.example.english, /\bmy\b/i);
   });
 
+  it("reads *that* and *whether* opening a clause", () => {
+    const opener = (text: string) =>
+      slots(text)
+        .find((s) => s.text === "that" || s.text === "whether")!
+        .suggestions.flatMap((s) => (s.kind === "detector" ? [s.id] : s.kind === "job" ? ["job"] : []));
+    assert.deepEqual(opener("Azawan tells Alahen that the dog runs."), ["that-clause"]);
+    assert.deepEqual(opener("Azawan is glad that it rains."), ["feeling-that", "that-clause"]);
+    assert.deepEqual(opener("The dog that runs is big."), ["relative-that"]);
+    assert.deepEqual(opener("Azawan sees whether Alahen walks."), ["whether-clause"]);
+    assert.ok(opener("I know that.").every((id) => id === "job"));
+  });
+
   it("shows a doc example for a grammar row whose form is only a pattern", () => {
     const that = slots("Azawan is tired, and Alahen is that too.").flatMap((s) => s.suggestions);
     const patterns = that.filter((s): s is JobSuggestion => s.kind === "job" && /^\/[ɡw]\//.test(s.form));

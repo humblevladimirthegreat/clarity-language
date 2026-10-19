@@ -113,10 +113,17 @@ function has(example: Indexed, feature: string): boolean {
   }
 }
 
+/** A table cell that is a phrase, not a sentence (`homam barl` *until*): no closing punctuation. */
+function fragment(pair: ExamplePair): boolean {
+  return !/[.?!]$/.test(pair.agazan.trim());
+}
+
 /**
  * Greedy pick: each next example covers the most input features not already covered, weighted by
  * rarity across the index, less a small cost for length. Stops when nothing new is covered, once
  * {@link MIN_EXAMPLES} are in; an example that shares no feature with the input is never picked.
+ * A fragment counts only the features no whole sentence has, so it shows a form only when no
+ * sentence can.
  */
 export function selectHelperExamples(
   wanted: ReadonlyMap<string, number>,
@@ -127,11 +134,14 @@ export function selectHelperExamples(
   const pool = index.map(indexed);
   const hits = new Map<Indexed, string[]>();
   const df = new Map<string, number>();
+  const inSentence = new Set<string>();
   for (const example of pool) {
     const found = [...wanted.keys()].filter((f) => has(example, f));
     hits.set(example, found);
     for (const f of found) df.set(f, (df.get(f) ?? 0) + 1);
+    if (!fragment(example.pair)) for (const f of found) inSentence.add(f);
   }
+  for (const example of pool) if (fragment(example.pair)) hits.set(example, hits.get(example)!.filter((f) => !inSentence.has(f)));
   const weight = (f: string) => (wanted.get(f) ?? 0) * Math.log(pool.length / (df.get(f) ?? pool.length));
   const covered = new Set<string>();
   const gain = (example: Indexed) => hits.get(example)!.reduce((sum, f) => sum + (covered.has(f) ? 0 : weight(f)), 0);
@@ -188,10 +198,12 @@ function writingRules(inputs: readonly HelperInput[]): string[] {
   ];
 }
 
-/** Reader notes for the constructions the suggested sections teach and the examples use. */
-function readerNotes(links: ReadonlySet<string>, examples: readonly ExamplePair[], context: PromptContext): string[] {
+/**
+ * Reader notes for the constructions the shown examples use. A section the analysis links can
+ * home many constructions the input never needs, so the notes follow the glosses on the page.
+ */
+function readerNotes(examples: readonly ExamplePair[], context: PromptContext): string[] {
   const ids = new Set<string>();
-  for (const [id, anchor] of context.anchors ?? []) if (links.has(anchor)) ids.add(id);
   for (const pair of examples) for (const id of pair.constructions) ids.add(id);
   const out = new Set<string>();
   for (const id of [...ids].sort()) {
@@ -215,6 +227,19 @@ function legend(examples: readonly ExamplePair[], context: PromptContext): strin
   return out;
 }
 
+/** The doc sentences the analysis shows under its lines (`e.g.`), as indexed pairs with their gloss. */
+function inlineExamples(inputs: readonly HelperInput[], index: readonly ExamplePair[]): ExamplePair[] {
+  const forms = new Set<string>();
+  for (const { analysis } of inputs) {
+    for (const clause of analysis.clauses) {
+      for (const s of [...clause.detectors, ...clause.slots.flatMap((slot) => slot.suggestions)]) {
+        if ((s.kind === "detector" || s.kind === "job" || s.kind === "entry") && s.example) forms.add(s.example.form);
+      }
+    }
+  }
+  return [...forms].flatMap((form) => index.find((pair) => pair.agazan === form) ?? []);
+}
+
 /** The whole prompt for `inputs` (one numbered English line each when there are several). */
 export function buildHelperPrompt(
   inputs: readonly HelperInput[],
@@ -223,10 +248,12 @@ export function buildHelperPrompt(
   options: HelperPromptOptions = {},
 ): string {
   const several = inputs.length > 1;
-  const { wanted, links } = inputFeatures(inputs, context.anchors ?? new Map());
+  const { wanted } = inputFeatures(inputs, context.anchors ?? new Map());
   const englishInputs = new Set(inputs.map((input) => input.english.trim().toLowerCase()));
   const pool = context.index.filter((pair) => !englishInputs.has(pair.sentence.trim().toLowerCase()));
-  const examples = selectHelperExamples(wanted, pool, options.examples ?? 6);
+  const picked = selectHelperExamples(wanted, pool, options.examples ?? 6);
+  // The analysis's own `e.g.` sentences follow, glossed, so the model can read the shape it copies.
+  const examples = options.examples === 0 ? picked : [...picked, ...inlineExamples(inputs, pool).filter((pair) => !picked.includes(pair))];
 
   const out: string[] = [];
   out.push(
@@ -238,7 +265,7 @@ export function buildHelperPrompt(
   out.push("", renderCore());
   out.push("", "In the examples, each gloss word is one Agazan word, in the same order, and its prefix is that word's role letter.");
 
-  const tags = [...legend(examples, context), ...readerNotes(links, examples, context).map((reader) => `- ${reader}`)];
+  const tags = [...legend(examples, context), ...readerNotes(examples, context).map((reader) => `- ${reader}`)];
   if (tags.length > 0) out.push("", "## Tags and constructions used here", "", ...tags);
 
   out.push("", "## Analysis", "");
