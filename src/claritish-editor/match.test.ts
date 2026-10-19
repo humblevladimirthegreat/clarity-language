@@ -3,11 +3,13 @@ import { describe, it } from "node:test";
 
 import { buildEditorData } from "./data.js";
 import { compileTrigger, createScanner, dismissKey, parsePattern, matchAt, sentences, tokenize, type ScanOptions } from "./match.js";
+import { indexForms } from "./types.js";
 
 const { data } = buildEditorData();
 const triggers = data.triggers.map(compileTrigger);
 const order = data.lessons.map((l) => l.id);
-const formsByLesson = new Map(Object.entries(data.formsByLesson).map(([k, v]) => [k, new Set(v)]));
+const forms = indexForms(data.flows).formsByLesson;
+const formsByLesson = new Map(Object.entries(forms).map(([k, v]) => [k, new Set(v)]));
 
 function options(over: Partial<ScanOptions> = {}): ScanOptions {
   return { enabled: new Set(order), never: new Set(), dismissed: new Set(), formsByLesson, ...over };
@@ -79,6 +81,15 @@ describe("cues", () => {
     ["I'm going to try running.", "try", "I'm going to try"],
     ["Let's try the new place.", "trial", "Let's try"],
     ["Mondays again lol", "laughing", "lol"],
+    ["He's a liar.", "label", "He's a liar"],
+    ["I'm such an idiot.", "label", "I'm such an idiot"],
+    ["I was so lazy this morning.", "label", "I was so lazy"],
+    ["You're being really selfish.", "label", "You're being really selfish"],
+    ["He's anxious.", "label-emotion", "He's anxious"],
+    ["I'm so anxious about tomorrow.", "feeling-unmet", "I'm so anxious"],
+    ["I felt proud of the team.", "feeling-met", "I felt proud"],
+    ["It makes me so angry.", "feeling-unmet", "makes me so angry"],
+    ["Feeling a bit overwhelmed today.", "feeling-unmet", "Feeling a bit overwhelmed"],
     ["See you soon <3", "hearts", "<3"],
   ];
   for (const [text, trigger, cue] of cases) {
@@ -122,6 +133,14 @@ describe("cues", () => {
     "You don't have to come.",
     "She did it for you.",
     "I got to see the coast.",
+    "She's a nurse.",
+    "He was anxious about the move.",
+    "She's upset about the news.",
+    "I'm afraid so.",
+    "I'm happy to help.",
+    "That's stupid.",
+    "I can't say why.",
+    "My sister was upset.",
   ];
   for (const text of quiet) {
     it(`raises nothing for “${text}”`, () => {
@@ -156,9 +175,10 @@ describe("cues", () => {
   });
 
   it("does not flag a sentence that already has a drop-in from the cue's lesson", () => {
-    const form = data.formsByLesson[order[0]!]![0]!;
+    const form = forms[order[0]!]![0]!;
     assert.equal(scan(`I think it rained ${form}.`).length, 0);
     assert.equal(scan("%You're the worst.").length, 0);
     assert.equal(scan("I can't sing, but I drive-xe.").length, 0);
+    assert.equal(scan(`He's a liar${forms.labels![0]!}.`).length, 0);
   });
 });

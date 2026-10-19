@@ -3,7 +3,8 @@
 // - every trigger's lesson, flow, defaults, patterns, and gap sentence exist;
 // - gap coverage: each italic English phrase in a cued lesson's `## The gap` raises one of
 //   that lesson's cues, or matches a row marked exempt with its reason;
-// - every slash command names a flow and answers it has.
+// - every slash command names a flow and answers it has;
+// - every `@list` a cue names is in data/claritish-words.csv, and no word is in two lists.
 // Also gathers what reading back needs: each form's English, each cued lesson's practice items,
 // and the English words close enough to a form to look like a near miss.
 // Node only: the page loads the result through a VitePress data loader.
@@ -19,22 +20,23 @@ import type { Joiner, Placement } from "./place.js";
 import { findDropIns, findNearMisses } from "./read-back.js";
 import { plain, readFormula, readSheet, readSwap, resolveRef, type Sheet, type SheetRef } from "./sheet.js";
 import {
-  answerKey,
+  answerPaths,
   dependsKey,
+  indexForms,
   type EditorChoice,
   type EditorCommand,
   type EditorData,
   type EditorFlow,
-  type EditorGloss,
+  type EditorForm,
   type EditorLesson,
-  type EditorOutcome,
+  type EditorPiece,
   type EditorQuestion,
   type EditorTrigger,
   type PracticeItem,
 } from "./types.js";
 
 const CLARITISH = join(REPO_ROOT, "docs", "grammar", "claritish");
-const PLACEMENTS: readonly Placement[] = ["after-clause", "after-noun", "suffix", "before-word"];
+const PLACEMENTS: readonly Placement[] = ["after-clause", "after-noun", "suffix", "on-cue", "before-word"];
 const JOINERS: readonly Joiner[] = ["space", "comma", "sentence"];
 /** Letters typed before autocomplete offers a drop-in (`EditorData.autocompleteMin`). */
 const AUTOCOMPLETE_MIN = 4;
@@ -52,12 +54,22 @@ type FlowSpec = {
     labelFrom?: SheetRef;
     choices: { value: string; label?: string; requires?: EditorChoice["requires"]; none?: string }[];
   }[];
-  forms: { when?: Record<string, string>; placement?: Placement; parts: Part[]; gloss: SheetRef[] }[];
+  forms: {
+    when?: Record<string, string>;
+    placement?: Placement;
+    /** Join the parts with nothing, as one word (a feeling), not with a space (`thanathum behon`). */
+    oneWord?: boolean;
+    breakdown?: boolean;
+    parts: Part[];
+    gloss: SheetRef[];
+  }[];
 };
 
 export type EditorSources = {
   triggersCsv: string;
   flowsJson: string;
+  /** Word lists the cues name as `@list`. */
+  wordsCsv: string;
   sheet: string;
   /** Intro page: the lesson list gives track order. */
   index: string;
@@ -74,6 +86,7 @@ export function readSources(): EditorSources {
   return {
     triggersCsv: readData("claritish-triggers.csv"),
     flowsJson: readData("claritish-flows.json"),
+    wordsCsv: readData("claritish-words.csv"),
     sheet: readFileSync(join(CLARITISH, "cheat-sheet.md"), "utf8"),
     index,
     lessons,
@@ -111,10 +124,19 @@ function section(markdown: string, id: string): string | undefined {
   return (end < 0 ? rest : rest.slice(0, end)).trim();
 }
 
-/** A lesson's practice items: `**1.** *Prompt.* (note)`, then the answer in `::: details`. */
+/**
+ * A lesson's practice items: `**1.** *Prompt.* (note)`, then the answer in `::: details`. A prompt
+ * not in italics is an instruction with no English to start from (*How you feel right now, with
+ * no clause.*): the item starts empty, and the instruction leads the note.
+ */
 export function lessonPractice(markdown: string): Omit<PracticeItem, "forms">[] {
-  const re = /^\*\*\d+\.\*\* \*(.+?)\*\s*(?:\((.+)\))?\s*\n\n::: details Show answer\n(.+)\n:::/gm;
-  return [...markdown.matchAll(re)].map((m) => ({ prompt: m[1]!, note: m[2] ?? "", answer: m[3]!.replace(/`/g, "").trim() }));
+  const re = /^\*\*\d+\.\*\* (?:\*(.+?)\*|([^*\s][^(\n]*?))\s*(?:\((.+)\))?\s*\n\n::: details Show answer\n(.+)\n:::/gm;
+  return [...markdown.matchAll(re)].map((m) => {
+    const answer = m[4]!.replace(/`/g, "").trim();
+    if (m[1] !== undefined) return { prompt: m[1], note: m[3] ?? "", answer };
+    const instruction = m[2]!.trim().replace(/\.$/, "");
+    return { prompt: "", note: m[3] ? `${instruction}: ${m[3]}` : instruction, answer };
+  });
 }
 
 function gapSentences(gap: string): string[] {
@@ -125,20 +147,81 @@ function splitList(cell: string | undefined): string[] {
   return (cell ?? "").split("|").map((s) => s.trim()).filter(Boolean);
 }
 
-/** Every combination of one choice per question, leaving out choices that end in no drop-in. */
-function answerPaths(questions: FlowSpec["questions"]): Record<string, string>[] {
-  let paths: Record<string, string>[] = [{}];
-  for (const q of questions) paths = paths.flatMap((p) => q.choices.filter((c) => !c.none).map((c) => ({ ...p, [q.id]: c.value })));
-  return paths;
+/** Word lists by name (data/claritish-words.csv). */
+function readWords(csv: string, problems: string[]): Map<string, string[]> {
+  const lists = new Map<string, string[]>();
+  const listOf = new Map<string, string>();
+  for (const row of parseCsv(csv).rows) {
+    const list = row.list ?? "";
+    const word = row.word ?? "";
+    const where = `claritish-words.csv ${list} ${word}`;
+    if (!/^[a-z][a-z-]*$/.test(list)) problems.push(`${where}: a list name is lowercase letters and hyphens`);
+    if (!/^\p{Ll}+(?:'\p{Ll}+)?$/u.test(word)) problems.push(`${where}: a list word is one lowercase word`);
+    const other = listOf.get(word);
+    if (other) problems.push(`claritish-words.csv: ${word} is in ${other === list ? `${list} twice` : `both ${other} and ${list}`}`);
+    listOf.set(word, list);
+    lists.set(list, [...(lists.get(list) ?? []), word]);
+  }
+  return lists;
+}
+
+/** `@trait` in a pattern → every word of that list, as alternatives; `(@trait)` stays optional. */
+function expandLists(pattern: string, lists: ReadonlyMap<string, readonly string[]>): string {
+  return pattern
+    .trim()
+    .split(/\s+/)
+    .map((token) => {
+      const m = /^(\(?)@([a-z-]+)(\)?)$/.exec(token);
+      if (!m) {
+        if (token.includes("@")) throw new Error(`a word list is a token of its own: \`${token}\` in \`${pattern}\``);
+        return token;
+      }
+      const words = lists.get(m[2]!);
+      if (!words) throw new Error(`no word list \`${m[2]}\` in claritish-words.csv (pattern \`${pattern}\`)`);
+      return `${m[1]}${words.join("/")}${m[3]}`;
+    })
+    .join(" ");
+}
+
+/** `q=v&…`, naming one answer path in a problem. */
+function pathName(answers: Readonly<Record<string, string>>): string {
+  return Object.entries(answers).map(([q, v]) => `${q}=${v}`).join("&");
 }
 
 /** `{id}` placeholders in a ref. */
 function placeholders(ref: SheetRef): string[] {
-  return [ref.row, ref.col, ref.cell, ref.line].flatMap((v) => [...(v ?? "").matchAll(/\{([\w-]+)\}/g)].map((m) => m[1]!));
+  return [ref.row, ref.col, ref.cell, ref.line, ref.item].flatMap((v) => [...(v ?? "").matchAll(/\{([\w-]+)\}/g)].map((m) => m[1]!));
 }
 
-function resolvePart(sheet: Sheet, part: Part, answers: Record<string, string>): string {
-  if (!("formula" in part)) return resolveRef(sheet, part, answers);
+const literal = (text: string): EditorPiece => ({ reads: [], values: { "": text } });
+
+/** The piece a ref spells: its value for each combination of the answers it reads, within the form's `when`. */
+function refPiece(
+  sheet: Sheet,
+  ref: SheetRef,
+  questions: FlowSpec["questions"],
+  when: Readonly<Record<string, string>>,
+  onError: (path: string, message: string) => void,
+): EditorPiece {
+  const ids = new Set(placeholders(ref));
+  const read = questions
+    .filter((q) => ids.has(q.id))
+    .map((q) => ({ ...q, choices: q.choices.filter((c) => when[q.id] === undefined || c.value === when[q.id]) }));
+  const reads = read.map((q) => q.id);
+  const values: Record<string, string> = {};
+  for (const answers of answerPaths(read)) {
+    try {
+      values[dependsKey(reads, answers)] = resolveRef(sheet, ref, answers);
+    } catch (err) {
+      onError(pathName(answers), (err as Error).message);
+    }
+  }
+  return { reads, values };
+}
+
+/** A part's pieces: one for a ref, and one per literal and slot of a formula. */
+function partPieces(sheet: Sheet, part: Part, piece: (ref: SheetRef) => EditorPiece): EditorPiece[] {
+  if (!("formula" in part)) return [piece(part)];
   const formula = readFormula(resolveRef(sheet, part.formula));
   const swap = part.swap ? readSwap(resolveRef(sheet, part.swap)) : undefined;
   const slots = formula.flatMap((p) => ("slot" in p ? [p.slot] : []));
@@ -146,17 +229,8 @@ function resolvePart(sheet: Sheet, part: Part, answers: Record<string, string>):
   if ([...slots].sort().join() !== [...named].sort().join()) {
     throw new Error(`formula slots are ${slots.join(", ")}; the flow fills ${named.join(", ")}`);
   }
-  let swapped = !swap;
-  const out = formula.map((p) => {
-    if ("slot" in p) return resolveRef(sheet, part.slots[p.slot]!, answers);
-    if (swap && p.literal === swap.from) {
-      swapped = true;
-      return swap.to;
-    }
-    return p.literal;
-  });
-  if (!swapped) throw new Error(`swap \`${swap!.from}\` is not a literal of the formula`);
-  return out.join("");
+  if (swap && !formula.some((p) => "literal" in p && p.literal === swap.from)) throw new Error(`swap \`${swap.from}\` is not a literal of the formula`);
+  return formula.map((p) => ("slot" in p ? piece(part.slots[p.slot]!) : literal(swap && p.literal === swap.from ? swap.to : p.literal)));
 }
 
 /** The first ref in a form that reads `{question}` and no other answer, for a choice with no label of its own. */
@@ -216,32 +290,36 @@ function buildFlow(sheet: Sheet, id: string, spec: FlowSpec, problems: string[])
       }),
     };
   });
-  const outcomes: Record<string, EditorOutcome> = {};
+  const forms: EditorForm[] = spec.forms.map((f) => {
+    if (f.placement && !PLACEMENTS.includes(f.placement)) problems.push(`${where}: unknown placement \`${f.placement}\``);
+    const piece = (ref: SheetRef) => refPiece(sheet, ref, spec.questions, f.when ?? {}, (path, message) => problems.push(`${where}: ${path}: ${message}`));
+    const pieces: EditorPiece[] = [];
+    f.parts.forEach((part, i) => {
+      if (i && !f.oneWord) pieces.push(literal(" "));
+      try {
+        pieces.push(...partPieces(sheet, part, piece));
+      } catch (err) {
+        problems.push(`${where}: ${(err as Error).message}`);
+      }
+    });
+    return {
+      ...(f.when ? { when: f.when } : {}),
+      ...(f.placement ? { placement: f.placement } : {}),
+      pieces,
+      gloss: f.gloss.map(piece),
+      ...(f.breakdown ? { breakdown: true } : {}),
+    };
+  });
   for (const answers of answerPaths(spec.questions)) {
-    const form = spec.forms.find((f) => Object.entries(f.when ?? {}).every(([q, v]) => answers[q] === v));
-    const key = answerKey(questions, answers);
-    if (!form) {
-      problems.push(`${where}: no form for ${key}`);
-      continue;
-    }
-    if (form.placement && !PLACEMENTS.includes(form.placement)) problems.push(`${where}: unknown placement \`${form.placement}\``);
-    try {
-      const gloss = form.gloss.map((ref) => resolveRef(sheet, ref, answers)).filter((g) => g && g !== "default");
-      outcomes[key] = {
-        form: form.parts.map((part) => resolvePart(sheet, part, answers)).join(" "),
-        gloss: [...new Set(gloss)],
-        ...(form.placement ? { placement: form.placement } : {}),
-      };
-    } catch (err) {
-      problems.push(`${where}: ${key}: ${(err as Error).message}`);
-    }
+    if (!forms.some((f) => Object.entries(f.when ?? {}).every(([q, v]) => answers[q] === v))) problems.push(`${where}: no form for ${pathName(answers)}`);
   }
-  return { id, lesson: spec.lesson, questions, outcomes };
+  return { id, lesson: spec.lesson, questions, forms };
 }
 
 export function buildEditorData(sources: EditorSources = readSources()): { data: EditorData; problems: string[] } {
   const problems: string[] = [];
   const sheet = readSheet(sources.sheet);
+  const lists = readWords(sources.wordsCsv, problems);
   const order = trackOrder(sources.index);
 
   let flowSpecs: Record<string, FlowSpec> = {};
@@ -262,9 +340,11 @@ export function buildEditorData(sources: EditorSources = readSources()): { data:
     const where = `claritish-triggers.csv ${row.id}`;
     const lesson = row.lesson ?? "";
     const markdown = sources.lessons.get(lesson);
-    const cues = splitList(row.cue);
-    const exclude = splitList(row.exclude);
+    let cues: string[];
+    let exclude: string[];
     try {
+      cues = splitList(row.cue).map((p) => expandLists(p, lists));
+      exclude = splitList(row.exclude).map((p) => expandLists(p, lists));
       for (const p of [...cues, ...exclude]) parsePattern(p);
     } catch (err) {
       problems.push(`${where}: ${(err as Error).message}`);
@@ -332,13 +412,7 @@ export function buildEditorData(sources: EditorSources = readSources()): { data:
     .filter((id) => cued.includes(id))
     .map((id) => ({ id, title: plain(/^#\s+(.*?)\s*(?:\{#[\w-]+\})?\s*$/m.exec(sources.lessons.get(id)!)?.[1] ?? id), learn: `claritish/${id}.html#forms` }));
 
-  const formsByLesson: Record<string, string[]> = {};
-  const glossary: Record<string, EditorGloss> = {};
-  for (const flow of Object.values(flows)) {
-    const forms = new Set([...(formsByLesson[flow.lesson] ?? []), ...Object.values(flow.outcomes).map((o) => o.form)]);
-    formsByLesson[flow.lesson] = [...forms];
-    for (const outcome of Object.values(flow.outcomes)) glossary[outcome.form] ??= { gloss: outcome.gloss, lesson: flow.lesson };
-  }
+  const { glossary } = indexForms(flows);
 
   const commands: EditorCommand[] = [];
   for (const [id, spec] of Object.entries(flowSpecs)) {
@@ -369,11 +443,14 @@ export function buildEditorData(sources: EditorSources = readSources()): { data:
 
   // English words a near miss would flag (*thunder* for `thuner`), or that start a form and would
   // open autocomplete (*than*): recomputed from the forms, so a new form or a respelling brings its own.
+  // A suffix's host is English too, so the word after a hyphen counts as well (*twenty-two*, `-tho`);
+  // a two-letter one stays a near miss (`lied-ta`).
   const wordForms = [...known].filter((f) => /^\p{Ll}/u.test(f));
   const english = [
     ...findNearMisses(sources.englishWords.join(" "), known).map((m) => m.text),
+    ...findNearMisses(sources.englishWords.filter((w) => w.length >= 3).map((w) => `a-${w}`).join(" "), known).map((m) => m.text.slice(2)),
     ...sources.englishWords.filter((w) => w.length >= AUTOCOMPLETE_MIN && wordForms.some((f) => f.startsWith(w) && f !== w)),
   ];
 
-  return { data: { lessons, triggers, flows, commands, formsByLesson, glossary, practice, english, autocompleteMin: AUTOCOMPLETE_MIN }, problems };
+  return { data: { lessons, triggers, flows, commands, practice, english, autocompleteMin: AUTOCOMPLETE_MIN }, problems };
 }

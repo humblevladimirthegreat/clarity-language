@@ -106,6 +106,19 @@ describe("suffix placement", () => {
   });
 });
 
+describe("on-cue placement", () => {
+  const onCue = (text: string) => place(text, { placement: "on-cue" }).replace(FORM, "-S");
+  const cases: [string, string][] = [
+    ["He's a liar.", "He's a liar-S."],
+    ["I was so lazy this morning.", "I was so lazy-S this morning."],
+    ["She's rude, to him at least.", "She's rude-S, to him at least."],
+    ["Long day. You're such a jerk", "Long day. You're such a jerk-S"],
+  ];
+  for (const [input, output] of cases) {
+    it(`“${input}” → “${output}”, keeping the cue`, () => assert.equal(onCue(input), output));
+  }
+});
+
 describe("before-word placement", () => {
   const mark = (text: string, dropCue: boolean) => applyChanges(text, placeDropIn(cueIn(text), "%", { placement: "before-word", joiner: "space", dropCue })).text;
 

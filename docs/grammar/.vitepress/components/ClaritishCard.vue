@@ -2,9 +2,9 @@
 import { computed, nextTick, ref, shallowRef, watch } from 'vue'
 import { withBase } from 'vitepress'
 import {
-  answerKey,
   applyChanges,
   choiceLabel,
+  outcomeFor,
   placeAtCommand,
   placeDropIn,
   type CommandAt,
@@ -103,7 +103,15 @@ const none = computed(() => {
   return undefined
 })
 
-const outcome = computed(() => (none.value ? undefined : props.flow.outcomes[answerKey(props.flow.questions, answers.value)]))
+const outcome = computed(() => (none.value ? undefined : outcomeFor(props.flow, answers.value)))
+
+/** A composed word part by part (a feeling): each part's letters over the answer that picked them. */
+const breakdown = computed(() =>
+  outcome.value?.breakdown?.map((part) => {
+    const q = questions.value.find((x) => x.id === part.question)
+    return { text: part.text, label: q?.choices.find((c) => c.value === answers.value[q.id])?.label ?? '' }
+  }),
+)
 const placement = computed(() => outcome.value?.placement ?? props.trigger?.placement ?? 'after-clause')
 
 const canDrop = computed(() => {
@@ -185,7 +193,7 @@ defineExpose({ focus, root })
     </p>
 
     <template v-for="q in questions" :key="q.id">
-      <fieldset v-if="q.choices.length > 1" class="question">
+      <fieldset v-if="q.choices.length > 1" :class="['question', { many: q.choices.length > 4, few: q.choices.length <= 3 }]">
         <legend>{{ q.prompt }}</legend>
         <label v-for="(c, i) in q.choices" :key="c.value" class="choice" :for="`cl-${flow.id}-${q.id}-${i}`">
           <input :id="`cl-${flow.id}-${q.id}-${i}`" v-model="answers[q.id]" type="radio" :name="`cl-${flow.id}-${q.id}`" :value="c.value" />
@@ -200,9 +208,17 @@ defineExpose({ focus, root })
       <p v-else class="sentence" aria-live="polite">
         {{ preview.before }}<mark>{{ preview.form }}</mark>{{ preview.after }}
       </p>
+      <table v-if="breakdown" class="breakdown">
+        <tr>
+          <th v-for="(part, i) in breakdown" :key="i" scope="col"><code>{{ part.text }}</code></th>
+        </tr>
+        <tr>
+          <td v-for="(part, i) in breakdown" :key="i">{{ part.label }}</td>
+        </tr>
+      </table>
       <p class="gloss">
         <code>{{ outcome.form }}</code>
-        <span>{{ outcome.gloss.join(' · ') }}</span>
+        <span v-if="!breakdown">{{ outcome.gloss.join(' · ') }}</span>
         <button v-if="ipa" type="button" class="say" :aria-expanded="showIpa" @click="showIpa = !showIpa">Say it</button>
       </p>
       <p v-if="showIpa && ipa" class="ipa">/{{ ipa }}/ <span class="ipa-note">every vowel is its own beat</span></p>
@@ -231,6 +247,8 @@ defineExpose({ focus, root })
 <style scoped>
 .card {
   width: min(30rem, 100%);
+  max-height: min(36rem, 80vh);
+  overflow-y: auto;
   box-sizing: border-box;
   padding: 0.8rem 0.95rem;
   border: 1px solid var(--vp-c-divider);
@@ -281,6 +299,49 @@ defineExpose({ focus, root })
   gap: 0.4rem;
   line-height: 1.4;
   cursor: pointer;
+}
+
+/* Long menus (sakes, loci) in two columns, short ones on one line, so a composed word fits one card. */
+.question.many {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 0.8rem;
+}
+
+.question.many legend {
+  grid-column: 1 / -1;
+}
+
+.question.few {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1rem;
+}
+
+@media (max-width: 30rem) {
+  .question.many {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.breakdown {
+  display: table;
+  width: 100%;
+  margin: 0.4rem 0 0;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.breakdown th,
+.breakdown td {
+  padding: 0.15rem 0.3rem;
+  border: 1px solid var(--vp-c-divider);
+  text-align: left;
+  vertical-align: top;
+}
+
+.breakdown td {
+  color: var(--vp-c-text-2);
 }
 
 .preview {

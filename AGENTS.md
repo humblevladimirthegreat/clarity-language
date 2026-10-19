@@ -56,6 +56,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `data/lexicon-overlays.csv` | Closed overlay inventory and the anchor that teaches each row, [overlay kinds](docs/meta/parser-pipeline.md#overlay-kinds). New overlays attach to an existing published row. |
 | `data/claritish-triggers.csv` | Journal editor cues: the English patterns each Claritish lesson's gap names, their exclusions, flow, placement, and mirror wording, [editor cards](docs/meta/claritish-style.md#editor-cards). |
 | `data/claritish-flows.json` | Journal editor question flows and slash commands: each answer names a Claritish cheat sheet cell, never a spelling, [editor cards](docs/meta/claritish-style.md#editor-cards). |
+| `data/claritish-words.csv` | Journal editor word lists the cues name as `@list`: the trait words a label names, the emotion words a feeling names, and the degree words between, [editor cards](docs/meta/claritish-style.md#editor-cards). |
 
 ### Editor notes (`docs/meta/`, not published)
 

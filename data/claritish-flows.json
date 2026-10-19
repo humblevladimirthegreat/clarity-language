@@ -56,6 +56,28 @@
       }
     ]
   },
+  "scope": {
+    "lesson": "labels",
+    "commands": { "label": {} },
+    "questions": [
+      {
+        "id": "scope",
+        "prompt": "Label scope: how far does the label reach?",
+        "choices": [
+          { "value": "this episode" },
+          { "value": "a practiced role" },
+          { "value": "this pair" },
+          { "value": "a type across scenes" }
+        ]
+      }
+    ],
+    "forms": [
+      {
+        "parts": [{ "section": "suffixes", "cell": "{scope}" }],
+        "gloss": [{ "section": "suffixes", "cell": "{scope}", "take": "english" }]
+      }
+    ]
+  },
   "thanks": {
     "lesson": "thanks-and-sorry",
     "commands": { "thanks": {} },
@@ -400,6 +422,83 @@
       {
         "parts": [{ "section": "settled", "row": "tries", "col": "{ending}" }],
         "gloss": [{ "section": "settled", "row": "tries", "col": "{ending}", "take": "english" }]
+      }
+    ]
+  },
+  "feeling": {
+    "lesson": "feelings",
+    "commands": { "feel": {} },
+    "questions": [
+      {
+        "id": "sake",
+        "prompt": "Which need is at stake?",
+        "choices": [
+          { "value": "autonomy" },
+          { "value": "competence" },
+          { "value": "understanding" },
+          { "value": "purpose" },
+          { "value": "relatedness" },
+          { "value": "beneficence" },
+          { "value": "pleasure" },
+          { "value": "physical" },
+          { "value": "a sake, unspecified" }
+        ]
+      },
+      {
+        "id": "stance",
+        "prompt": "Is the need met, or unmet?",
+        "choices": [{ "value": "met" }, { "value": "unmet" }]
+      },
+      {
+        "id": "ending",
+        "prompt": "How lasting is it?",
+        "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
+      },
+      {
+        "id": "locus",
+        "prompt": "Emotion locus: where does the feeling sit, or what does it point at?",
+        "choices": [
+          { "value": "mine" },
+          { "value": "the atmosphere" },
+          { "value": "can't place" },
+          { "value": "aimed at someone" },
+          { "value": "turning to someone" },
+          { "value": "pushing back" },
+          { "value": "felt on someone's behalf" },
+          { "value": "moving off" },
+          { "value": "out of fight" },
+          { "value": "using yourself" }
+        ]
+      },
+      {
+        "id": "motion",
+        "prompt": "Emotion motion: how does it move?",
+        "choices": [{ "value": "-m" }, { "value": "-l" }, { "value": "-r" }]
+      }
+    ],
+    "forms": [
+      {
+        "oneWord": true,
+        "breakdown": true,
+        "parts": [
+          {
+            "formula": { "section": "sakes", "line": "Sake word" },
+            "slots": {
+              "sake": { "section": "sakes", "table": 1, "cell": "{sake}" },
+              "stance": { "section": "sakes", "table": 2, "row": "{stance}", "col": "Stance" },
+              "ending": { "section": "sakes", "table": 2, "col": "{ending}", "take": "ending" }
+            }
+          },
+          { "section": "feelings", "table": 2, "cell": "{locus}" },
+          { "section": "feelings", "line": "Motion ending", "item": "{motion}", "take": "ending" }
+        ],
+        "gloss": [
+          { "section": "sakes", "table": 1, "cell": "{sake}", "take": "english" },
+          { "section": "sakes", "table": 2, "row": "{stance}", "col": "Stance", "take": "english" },
+          { "section": "settled", "col": "{ending}", "take": "col" },
+          { "section": "feelings", "table": 2, "cell": "{locus}", "take": "english" },
+          { "section": "feelings", "line": "Motion ending", "item": "{motion}", "take": "english" }
+        ]
       }
     ]
   },

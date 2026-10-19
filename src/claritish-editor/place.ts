@@ -5,10 +5,11 @@ import type { Cue, Span, Token } from "./match.js";
 /**
  * `after-clause`: where English puts *probably*; `after-noun`: right after the English noun (a
  * thanks to something owned); `suffix`: a hyphen suffix on the English verb after the cue, which
- * replaces the cue (*I can't sing* → *I sing-xu*); `before-word`: a tone mark at the start of the
- * sentence, coloring all of it.
+ * replaces the cue (*I can't sing* → *I sing-xu*); `on-cue`: a hyphen suffix on the cue's last
+ * word, which stays (*He's a liar* → *He's a liar-the*); `before-word`: a tone mark at the start of
+ * the sentence, coloring all of it.
  */
-export type Placement = "after-clause" | "after-noun" | "suffix" | "before-word";
+export type Placement = "after-clause" | "after-noun" | "suffix" | "on-cue" | "before-word";
 
 /** How an after-clause drop-in joins the clause: `space` (`closed thovum`), `comma` (`Thanks, thoyutham`), or `sentence` (`I'm late. thanathum behon`). */
 export type Joiner = "space" | "comma" | "sentence";
@@ -16,7 +17,7 @@ export type Joiner = "space" | "comma" | "sentence";
 export type PlaceOptions = {
   placement: Placement;
   joiner: Joiner;
-  /** Remove the English cue, as the lesson's examples do. Ignored when the cue is the whole sentence; always so for `suffix`. */
+  /** Remove the English cue, as the lesson's examples do. Ignored when the cue is the whole sentence and for `on-cue`; always so for `suffix`. */
   dropCue: boolean;
   /** The owned noun phrase, for `after-noun`. */
   noun?: Span;
@@ -55,10 +56,11 @@ export function placeDropIn(cue: Cue, form: string, options: PlaceOptions): Plac
   const outside = (t: Token) => t.word && (t.to <= cue.from || t.from >= cue.to);
   const wordsOutside = sentence.tokens.some(outside);
   const suffix = options.placement === "suffix";
-  const drop = (options.dropCue || suffix) && wordsOutside;
+  const onCue = options.placement === "on-cue";
+  const drop = !onCue && (options.dropCue || suffix) && wordsOutside;
 
-  const host = suffix ? suffixHost(cue) : undefined;
-  if (suffix && !host) return [];
+  const host = suffix ? suffixHost(cue) : onCue ? sentence.tokens.filter((t) => t.word && t.from >= cue.from && t.to <= cue.to).pop() : undefined;
+  if ((suffix || onCue) && !host) return [];
 
   const changes: PlacedChange[] = [];
   let removal: Change | undefined;

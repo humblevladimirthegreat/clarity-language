@@ -84,12 +84,57 @@ function sharedStart(a: string, b: string): number {
   return i;
 }
 
+/** Forms in a trie: the feelings forms share long starts, so a search drops whole branches at once. */
+type Trie = { children: Map<string, Trie>; form?: string };
+
+/** One trie per letter that must match: the first, or the one after the hyphen for a suffix. */
+type FormIndex = Map<string, Trie>;
+
+function indexByLead(forms: readonly string[]): FormIndex {
+  const out: FormIndex = new Map();
+  for (const f of forms) {
+    const lead = f[0] === "-" ? f[1]! : f[0]!;
+    let node: Trie = out.get(lead) ?? { children: new Map() };
+    out.set(lead, node);
+    for (const ch of f) {
+      const next: Trie = node.children.get(ch) ?? { children: new Map() };
+      node.children.set(ch, next);
+      node = next;
+    }
+    node.form = f;
+  }
+  return out;
+}
+
+/** The most a long form allows (`allowed`). */
+const MAX_ALLOWED = 2;
+
+/** Forms in `trie` within `max` edits of `word`, with their distance: Levenshtein rows down the trie. */
+function within(word: string, trie: Trie, max: number): { f: string; d: number }[] {
+  const out: { f: string; d: number }[] = [];
+  const walk = (node: Trie, prev: number[]) => {
+    if (node.form !== undefined && prev[word.length]! <= max) out.push({ f: node.form, d: prev[word.length]! });
+    for (const [ch, child] of node.children) {
+      const row = [prev[0]! + 1];
+      let best = row[0]!;
+      for (let j = 1; j <= word.length; j++) {
+        row[j] = Math.min(prev[j]! + 1, row[j - 1]! + 1, prev[j - 1]! + (word[j - 1] === ch ? 0 : 1));
+        best = Math.min(best, row[j]!);
+      }
+      if (best <= max) walk(child, row);
+    }
+  };
+  walk(trie, Array.from({ length: word.length + 1 }, (_, j) => j));
+  return out;
+}
+
 /** Forms `word` is a near miss of, closest first (then the longest shared start: `thovom` → `thovum`); each shares its first letter (after the hyphen, for a suffix). */
-function closest(word: string, forms: readonly string[]): string[] {
-  return forms
-    .filter((f) => (word[0] === "-" ? f[1] === word[1] : f[0] === word[0]))
-    .map((f) => ({ f, d: distance(word, f, allowed(f)), p: sharedStart(word, f) }))
+function closest(word: string, forms: FormIndex): string[] {
+  const trie = forms.get(word[0] === "-" ? word[1]! : word[0]!);
+  if (!trie) return [];
+  return within(word, trie, MAX_ALLOWED)
     .filter(({ f, d }) => d > 0 && d <= allowed(f))
+    .map(({ f, d }) => ({ f, d, p: sharedStart(word, f) }))
     .sort((a, b) => a.d - b.d || b.p - a.p || a.f.localeCompare(b.f))
     .map(({ f }) => f);
 }
@@ -98,7 +143,8 @@ function closest(word: string, forms: readonly string[]): string[] {
  * Words that look like a drop-in but are not one: `thovom` (did you mean `thovum`?), `tovum`
  * (no `t`: `thovum`), `sing-xol` (suffixes take no ending: `sing-xo`). Drop-ins are lowercase, so
  * a capitalized word (a name, a sentence start) is never a near miss, and neither is a word in
- * `english`: the English words the build found within reach of a form (*thunder*, `thuner`).
+ * `english`: the English words the build found within reach of a form (*thunder*, `thuner`), alone
+ * or after a hyphen (*twenty-two*, `-tho`).
  */
 export function findNearMisses(
   text: string,
@@ -108,6 +154,8 @@ export function findNearMisses(
   const found = options.found ?? findDropIns(text, known);
   const words = [...known].filter((f) => /^\p{Ll}+$/u.test(f));
   const suffixes = [...known].filter((f) => /^-\p{Ll}+$/u.test(f));
+  const wordsByLead = indexByLead(words);
+  const suffixesByLead = indexByLead(suffixes);
   const out: NearMiss[] = [];
   for (const chunk of text.matchAll(CHUNK_RE)) {
     const from = chunk.index!;
@@ -119,23 +167,24 @@ export function findNearMisses(
     if (hyphen > 0) {
       const host = raw.slice(0, hyphen);
       const suffix = word.slice(hyphen);
+      if (options.english?.has(suffix.slice(1))) continue;
       if (/[lmr]$/.test(suffix) && suffixes.includes(suffix.slice(0, -1))) {
         out.push({ from, to, text: raw, suggestions: [host + suffix.slice(0, -1)], reason: "ending" });
       } else if (/t(?!h)/.test(suffix) && suffixes.includes(suffix.replace(/t(?!h)/g, "th"))) {
         out.push({ from, to, text: raw, suggestions: [host + suffix.replace(/t(?!h)/g, "th")], reason: "no-t" });
       } else {
-        const near = closest(suffix, suffixes);
+        const near = closest(suffix, suffixesByLead);
         if (near.length) out.push({ from, to, text: raw, suggestions: near.map((s) => host + s), reason: "spelling" });
       }
       continue;
     }
     if (word.length < 4 || !/^\p{Ll}+$/u.test(raw) || options.english?.has(word)) continue;
     const withTh = word.replace(/t(?!h)/g, "th");
-    if (withTh !== word && words.includes(withTh)) {
+    if (withTh !== word && known.has(withTh)) {
       out.push({ from, to, text: raw, suggestions: [withTh], reason: "no-t" });
       continue;
     }
-    const near = closest(word, words);
+    const near = closest(word, wordsByLead);
     if (near.length) out.push({ from, to, text: raw, suggestions: near.slice(0, 3), reason: "spelling" });
   }
   return out;

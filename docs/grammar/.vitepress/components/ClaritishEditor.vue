@@ -31,6 +31,7 @@ import {
   dismissKey,
   findDropIns,
   findNearMisses,
+  indexForms,
   normalize,
   sameDropIns,
   type CommandAt,
@@ -57,15 +58,16 @@ const SAVE_IDLE_MS = 400
 const HOVER_OPEN_MS = 350
 const HOVER_CLOSE_MS = 250
 const SAMPLE =
-  "I think the store is closed, so I went home. Apparently Marco quit.\nSorry, I forgot to call you back. Thanks for covering my shift!\nI can't run this week. You should call your sister. I'll try the new class lol"
+  "I think the store is closed, so I went home. Apparently Marco quit. I was so lazy this morning.\nSorry, I forgot to call you back. Thanks for covering my shift!\nI can't run this week. You should call your sister. I'll try the new class lol\nI'm anxious about the review."
 
 const lessonOrder = data.lessons.map((l) => l.id)
 const toneOf = (lesson: string) => Math.max(0, lessonOrder.indexOf(lesson)) % 4
 const lessonById = new Map(data.lessons.map((l) => [l.id, l]))
 const triggers = data.triggers.map(compileTrigger)
 const triggerById = new Map(data.triggers.map((t) => [t.id, t]))
-const formsByLesson = new Map(Object.entries(data.formsByLesson).map(([k, v]) => [k, new Set(v)]))
-const known = new Set(Object.keys(data.glossary))
+const { formsByLesson: formsOfLesson, glossary } = indexForms(data.flows)
+const formsByLesson = new Map(Object.entries(formsOfLesson).map(([k, v]) => [k, new Set(v)]))
+const known = new Set(Object.keys(glossary))
 const english = new Set(data.english)
 const commandByName = new Map(data.commands.map((c) => [c.name, c]))
 const scan = createScanner(triggers, lessonOrder)
@@ -99,14 +101,14 @@ const enabled = computed(() => new Set(lessonOrder.filter((id) => !off.value.has
 /** A found drop-in's English: its form's gloss, each mark's for a run of tone marks. */
 function glossOf(drop: Pick<FoundDropIn, 'form' | 'marks'>): string {
   if (drop.marks) {
-    const parts = drop.marks.map((m) => data.glossary[m]?.gloss.join(', ') ?? m)
+    const parts = drop.marks.map((m) => glossary[m]?.gloss.join(', ') ?? m)
     return parts.join(' + ') + (drop.form.length > drop.marks.length ? ' (doubled: more)' : '')
   }
-  return data.glossary[drop.form]?.gloss.join(' · ') ?? ''
+  return glossary[drop.form]?.gloss.join(' · ') ?? ''
 }
 
 function lessonOfForm(drop: Pick<FoundDropIn, 'form' | 'marks'>) {
-  return lessonById.get(data.glossary[drop.marks?.[0] ?? drop.form]?.lesson ?? '')
+  return lessonById.get(glossary[drop.marks?.[0] ?? drop.form]?.lesson ?? '')
 }
 
 function ipaOf(form: string): string {
@@ -427,10 +429,10 @@ function commandSource(ctx: CompletionContext): CompletionResult | null {
 }
 
 /** Forms of enabled lessons, for autocomplete. */
-const offered = computed(() => [...enabled.value].flatMap((id) => data.formsByLesson[id] ?? []).filter((f) => /^[\p{Ll}-]/u.test(f)))
+const offered = computed(() => [...enabled.value].flatMap((id) => formsOfLesson[id] ?? []).filter((f) => /^[\p{Ll}-]/u.test(f)))
 
 function dropInOption(form: string): Completion {
-  return { label: form, detail: data.glossary[form]?.gloss.join(' · '), type: 'dropin' }
+  return { label: form, detail: glossary[form]?.gloss.join(' · '), type: 'dropin' }
 }
 
 function dropInSource(ctx: CompletionContext): CompletionResult | null {

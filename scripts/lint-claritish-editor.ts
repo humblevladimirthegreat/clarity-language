@@ -2,6 +2,7 @@
 // cheat sheet cell, every trigger is well formed, and each cued lesson's gap is covered.
 // The checks live in src/claritish-editor/data.ts, which the editor page loads too.
 import { buildEditorData } from "../src/claritish-editor/data.js";
+import { answerPaths } from "../src/claritish-editor/types.js";
 
 const { data, problems } = buildEditorData();
 
@@ -10,6 +11,6 @@ if (problems.length) {
   for (const p of problems) console.error(`  ${p}`);
   process.exitCode = 1;
 } else {
-  const outcomes = Object.values(data.flows).reduce((n, f) => n + Object.keys(f.outcomes).length, 0);
+  const outcomes = Object.values(data.flows).reduce((n, f) => n + answerPaths(f.questions).length, 0);
   console.log(`OK: ${data.triggers.length} trigger(s) in ${data.lessons.length} lesson(s); ${Object.keys(data.flows).length} flow(s) resolve to ${outcomes} form(s) on the cheat sheet.`);
 }

@@ -1,6 +1,6 @@
 # Proposal: Claritish writing editor
 
-**Status:** PARTIALLY IMPLEMENTED. Phases 1 and 2 are built: the [journal editor](../../grammar/claritish/editor.md) covers every lesson except Labels and Feelings, with read-back, slash commands, autocomplete, the mirror panel, and practice mode. Phase 3 is proposed. Where the build differs from the plan below, the plan says so under [Phase 1 as built](#phase-1-as-built) and [Phase 2 as built](#phase-2-as-built).  
+**Status:** PARTIALLY IMPLEMENTED. Phases 1–3 are built: the [journal editor](../../grammar/claritish/editor.md) covers every lesson, with read-back, slash commands, autocomplete, the mirror panel, practice mode, and the feelings composer. Only *Later, if wanted* is still proposed. Where the build differs from the plan below, the plan says so under [Phase 1 as built](#phase-1-as-built), [Phase 2 as built](#phase-2-as-built), and [Phase 3 as built](#phase-3-as-built).  
 **Related:** [Claritish track](../../meta/grammar-docs.md#claritish-track) (what a drop-in is, placement, the cheat sheet), [Claritish wording and voice](../../meta/claritish-style.md), [the gap sections](../../grammar/claritish/index.md#lessons) of each lesson, [`scripts/lint-cheat-sheets.ts`](../../../scripts/lint-cheat-sheets.ts), `syntax-highlighting.md` (a separate idea for structure highlighting in full Agazan).  
 **Design authority:** none. The editor adds no forms. It points at lessons and drop-ins that already exist.
 
@@ -212,6 +212,18 @@ Everything here reuses the Phase 1 matcher and cards.
 - Both lessons in the mirror panel, practice mode, and every lint and test.
 
 **Done when:** the Labels and Feelings examples round-trip, the composer can build every feeling form the lesson shows, and the gap coverage lint covers every lesson.
+
+### Phase 3 as built {#phase-3-as-built}
+
+- **Flows ship pieces, not outcomes.** A feeling has 1620 spellings, so a flow now holds piece tables (text by the answers it reads) and the page joins them (`outcomeFor`, `indexForms` in `src/claritish-editor/types.ts`). The page data shrank from 68 KB to 58 KB with every feeling included. Near misses search a trie of the forms, so the build stays under a second.
+- **Word lists** live in `data/claritish-words.csv` (`trait`, `emotion-unmet`, `emotion-met`, `degree`), and a cue names one as `@list`. No word sits in two lists; the build checks it.
+- **Labels** mark a negative trait word after a pronoun and a copula, with the new `on-cue` placement: the suffix goes on the label, which stays (*He's a liar* → *liar-the*). Someone else's painful emotion word in the present tense (*He's anxious*) is a label too, unless *about* / *today* / … already pin it to one episode. No praise words. `/label` covers *He lied* and *She's a nurse*, which have no trait word.
+- **Feelings** mark an emotion word only in the first person, and the word stays in the sentence. The card is the composer: five questions (long menus in two columns) and a breakdown table under the preview, built from the pieces. `/feel` opens it on its own; a practice item with no English prompt starts empty.
+- **Measured label misses** (the editors' call on part-of-speech tagging; logged in `TODO.md`):
+  - Hand-labeled journal sample: the word list caught 34 of 50 label sentences, with 1 false positive in 25 near-labels. Compromise's tags caught 17 of 50, with 5 false positives, mostly role nouns (*nurse*, *teacher*, *brother*). The two together caught 38 of 50, with 6 false positives.
+  - The grammar docs' free English (1149 sentences): the list marks none.
+  - The list's misses are subjects that are not pronouns (*my boss*, *Mark*) and words not in the list.
+- **Also:** *can't say why* no longer raises a Can and can't cue. English after a hyphen (*twenty-two*, *bow-tie*) is never a near miss of a label suffix, while `lied-ta` still is.
 
 ### Later, if wanted
 

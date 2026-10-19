@@ -3,13 +3,16 @@ import { describe, it } from "node:test";
 
 import { buildEditorData } from "./data.js";
 import { distance, findDropIns, findNearMisses, sameDropIns } from "./read-back.js";
+import { answerPaths, indexForms, outcomeFor } from "./types.js";
 
 const { data } = buildEditorData();
-const known = new Set(Object.keys(data.glossary));
+const { glossary } = indexForms(data.flows);
+const known = new Set(Object.keys(glossary));
 const english = new Set(data.english);
 /** Real forms, read from the data rather than spelled here. */
-const could = data.flows.guess!.outcomes["plan=-m"]!.form;
-const sorry = Object.values(data.flows.sorry!.outcomes)[0]!.form;
+const could = outcomeFor(data.flows.guess!, { plan: "-m" })!.form;
+const sorry = outcomeFor(data.flows.sorry!, answerPaths(data.flows.sorry!.questions)[0]!)!.form;
+const episode = outcomeFor(data.flows.scope!, { scope: "this episode" })!.form;
 
 describe("drop-ins in the text", () => {
   it("finds words, suffixes, set phrases, and tone marks", () => {
@@ -44,6 +47,22 @@ describe("near misses", () => {
   it("explains an ending on a suffix", () => {
     const [miss] = findNearMisses("I sing-xol.", known);
     assert.deepEqual([miss?.reason, miss?.suggestions], ["ending", ["sing-xo"]]);
+  });
+
+  it("explains a `t` and an ending on a label suffix", () => {
+    const [noT] = findNearMisses(`He lied${episode.replace("th", "t")}.`, known, { english });
+    assert.deepEqual([noT?.reason, noT?.suggestions], ["no-t", [`lied${episode}`]]);
+    const [ending] = findNearMisses(`He lied${episode}l.`, known, { english });
+    assert.deepEqual([ending?.reason, ending?.suggestions], ["ending", [`lied${episode}`]]);
+  });
+
+  it("suggests the feeling word two letters away", () => {
+    const feeling = outcomeFor(data.flows.feeling!, { sake: "competence", stance: "unmet", ending: "-r", locus: "the atmosphere", motion: "-r" })!.form;
+    const typo = `${feeling.slice(0, -3)}x${feeling.slice(-2)}`;
+    const [miss] = findNearMisses(`The review is tomorrow ${typo}.`, known, { english });
+    assert.ok(miss?.suggestions.includes(feeling), miss?.suggestions.join() ?? "no near miss");
+    assert.deepEqual(findDropIns(`The review is tomorrow ${feeling}.`, known).map((d) => d.form), [feeling]);
+    assert.deepEqual(glossary[feeling]?.lesson, "feelings");
   });
 
   it("offers every suffix one letter away", () => {

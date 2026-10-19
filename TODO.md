@@ -9,13 +9,17 @@ https://discord.gg/CAMGw2Akhc
 use [skip-cd] for amplify to not deploy. 
 
 # TODO
--claritish editor
 -consider Promoting common non-nouns and compound-word parts to be three letter. 
 -consider removing forward mentions/links (including prose)
 -vocab flashcards generator
 -site visitor statistics
 -contact form / about me
+-on a phone-width screen, every page on the site scrolls sideways by about 11 px, because of VitePress's top navigation bar.
 -reconsider adjective bars (poor/rich, weak/strong)
+
+-reconsider number names (is there a more optimal way to assign spellings to numbers rather than english cues? perhaps accounting for compound words, numbers-derived.md and proposed manual-phonology.md and number-mnemonic.md). Alphabet would be reordered accordingly. The retie pipeline would likely need to be improved to allow this.
+
+-claritish editor phase 3 follow-ups (docs/proposals/partially-implemented/claritish-editor.md, Phase 3 as built): decide on part-of-speech tagging for label cues (measured: word list 34/50 recall, 1/25 false positives; compromise POS 17/50, 5/25, mostly role nouns like nurse/teacher; together 38/50, 6/25); the misses are non-pronoun subjects (my boss, Mark, Dad) and words not in the trait list (ridiculous, sensitive, impossible, clueless, creep, cheap, plurals like idiots, hyphenated two-faced); consider per-emotion-word card presets (confused → understanding); commit phase 2 + 3 together
 
 save for near end of limit resets:
 -final exam

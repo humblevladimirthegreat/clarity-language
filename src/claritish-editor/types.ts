@@ -47,19 +47,41 @@ export type EditorQuestion = {
   dependsOn?: string[];
 };
 
+/** Text that depends on some answers: one value per combination of the answers it reads. */
+export type EditorPiece = {
+  /** Question ids, in question order; none for a piece no answer changes (`th` of a formula, a space). */
+  reads: string[];
+  /** By `dependsKey(reads, answers)`. */
+  values: Record<string, string>;
+};
+
+/** One way to spell the flow's drop-in: the first form whose `when` the answers match. */
+export type EditorForm = {
+  when?: Record<string, string>;
+  placement?: Placement;
+  /** Joined with nothing: a space between words is a piece of its own. */
+  pieces: EditorPiece[];
+  gloss: EditorPiece[];
+  /** Show the word part by part, as the cheat sheet does (the feelings composer). */
+  breakdown?: boolean;
+};
+
+/** A part of a form, and the question whose answer spells it. */
+export type BreakdownPart = { text: string; question?: string };
+
 export type EditorOutcome = {
   form: string;
   /** The form's parts in English, from the sheet. */
   gloss: string[];
   placement?: Placement;
+  breakdown?: BreakdownPart[];
 };
 
 export type EditorFlow = {
   id: string;
   lesson: string;
   questions: EditorQuestion[];
-  /** By `answerKey`. */
-  outcomes: Record<string, EditorOutcome>;
+  forms: EditorForm[];
 };
 
 /** A slash command: `/name` at the cursor opens `flow` with no English cue. */
@@ -91,12 +113,9 @@ export type EditorData = {
   /** Lessons with cues, in track order. */
   lessons: EditorLesson[];
   triggers: EditorTrigger[];
+  /** Every form a flow can produce, and its English: `indexForms(flows)`. */
   flows: Record<string, EditorFlow>;
   commands: EditorCommand[];
-  /** Every form each lesson's flows can produce. */
-  formsByLesson: Record<string, string[]>;
-  /** Every form the flows can produce, with its English. */
-  glossary: Record<string, EditorGloss>;
   /** Practice items of each lesson with cues. */
   practice: Record<string, PracticeItem[]>;
   /**
@@ -108,11 +127,6 @@ export type EditorData = {
   autocompleteMin: number;
 };
 
-/** Outcome key for one answer per question. */
-export function answerKey(questions: readonly EditorQuestion[], answers: Readonly<Record<string, string>>): string {
-  return questions.map((q) => `${q.id}=${answers[q.id] ?? ""}`).join("&");
-}
-
 /** Key into `EditorChoice.labels`: the answers to the questions a label depends on. */
 export function dependsKey(dependsOn: readonly string[], answers: Readonly<Record<string, string>>): string {
   return dependsOn.map((id) => answers[id] ?? "").join("&");
@@ -122,4 +136,59 @@ export function dependsKey(dependsOn: readonly string[], answers: Readonly<Recor
 export function choiceLabel(question: EditorQuestion, choice: EditorChoice, answers: Readonly<Record<string, string>>): string {
   if (!question.dependsOn || !choice.labels) return choice.label;
   return choice.labels[dependsKey(question.dependsOn, answers)] ?? choice.label;
+}
+
+/** Every combination of one choice per question, leaving out choices that end in no drop-in. */
+export function answerPaths(questions: readonly { id: string; choices: readonly { value: string; none?: string }[] }[]): Record<string, string>[] {
+  let paths: Record<string, string>[] = [{}];
+  for (const q of questions) paths = paths.flatMap((p) => q.choices.filter((c) => !c.none).map((c) => ({ ...p, [q.id]: c.value })));
+  return paths;
+}
+
+/** The drop-in for one answer per question, or none when no form fits them. */
+export function outcomeFor(flow: EditorFlow, answers: Readonly<Record<string, string>>): EditorOutcome | undefined {
+  const form = flow.forms.find((f) => Object.entries(f.when ?? {}).every(([q, v]) => answers[q] === v));
+  if (!form) return undefined;
+  const read = (piece: EditorPiece) => piece.values[dependsKey(piece.reads, answers)];
+  const texts = form.pieces.map(read);
+  if (texts.some((t) => t === undefined)) return undefined;
+  const gloss = form.gloss.map(read).filter((g): g is string => Boolean(g) && g !== "default");
+  const outcome: EditorOutcome = { form: texts.join(""), gloss: [...new Set(gloss)] };
+  if (form.placement) outcome.placement = form.placement;
+  if (form.breakdown) {
+    // A piece no answer changes (`th`) belongs to the part after it: `th` + `ulo` is `thulo`.
+    const parts: BreakdownPart[] = [];
+    let lead = "";
+    form.pieces.forEach((piece, i) => {
+      if (!piece.reads.length) {
+        lead += texts[i];
+        return;
+      }
+      parts.push({ text: lead + texts[i], ...(piece.reads.length === 1 ? { question: piece.reads[0] } : {}) });
+      lead = "";
+    });
+    if (lead) parts.push({ text: lead });
+    outcome.breakdown = parts;
+  }
+  return outcome;
+}
+
+/** Every form each lesson's flows can produce, and each form's English. */
+export function indexForms(flows: Readonly<Record<string, EditorFlow>>): {
+  formsByLesson: Record<string, string[]>;
+  glossary: Record<string, EditorGloss>;
+} {
+  const formsByLesson: Record<string, string[]> = {};
+  const glossary: Record<string, EditorGloss> = {};
+  for (const flow of Object.values(flows)) {
+    const forms = new Set(formsByLesson[flow.lesson] ?? []);
+    for (const answers of answerPaths(flow.questions)) {
+      const outcome = outcomeFor(flow, answers);
+      if (!outcome) continue;
+      forms.add(outcome.form);
+      glossary[outcome.form] ??= { gloss: outcome.gloss, lesson: flow.lesson };
+    }
+    formsByLesson[flow.lesson] = [...forms];
+  }
+  return { formsByLesson, glossary };
 }

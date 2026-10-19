@@ -18,6 +18,8 @@ export type SheetRef = {
   cell?: string;
   /** A prose line in the section, by its opening words. */
   line?: string;
+  /** With `line`: one entry of a line that lists endings (`**-l** still, **-m** flowing`), by its ending (`-l`). */
+  item?: string;
   /** What to read: the cell's first form (default), its English, the row label, the header's English, or the header's ending letter. */
   take?: "span" | "english" | "row" | "col" | "ending";
 };
@@ -94,7 +96,10 @@ function tableOf(sheet: Sheet, ref: SheetRef): SheetTable {
 /** The text a ref reads: a form for `span`, English otherwise. */
 export function resolveRef(sheet: Sheet, ref: SheetRef, answers: Readonly<Record<string, string>> = {}): string {
   const where = `#${ref.section}${ref.table ? ` table ${ref.table}` : ""}`;
-  if (ref.line !== undefined) return sheetLine(sheet, ref.section, fill(ref.line, answers));
+  if (ref.line !== undefined) {
+    const line = sheetLine(sheet, ref.section, fill(ref.line, answers));
+    return ref.item === undefined ? line : lineItem(line, fill(ref.item, answers), ref.take ?? "span", where);
+  }
   const table = tableOf(sheet, ref);
   const take = ref.take ?? "span";
   let cell: string;
@@ -149,6 +154,16 @@ function sheetLine(sheet: Sheet, section: string, opening: string): string {
   const lines = (sheet.lines.get(section) ?? []).filter((l) => plain(l).startsWith(opening));
   if (lines.length !== 1) throw new Error(`${lines.length ? "several lines" : "no line"} in sheet section #${section} start with \`${opening}\``);
   return lines[0]!;
+}
+
+/** An entry of a line that lists endings: `-m` in `Motion ending: **-l** still, **-m** flowing.` → `m` or `flowing`. */
+function lineItem(line: string, item: string, take: NonNullable<SheetRef["take"]>, where: string): string {
+  const entries = [...line.matchAll(/\*\*-([a-z])\*\*\s*([^,.;]+)/g)].map((m) => ({ ending: m[1]!, english: m[2]!.trim() }));
+  const entry = entries.find((e) => `-${e.ending}` === item);
+  if (!entry) throw new Error(`item \`${item}\` is not on the line \`${plain(line)}\` in ${where}`);
+  if (take === "ending") return entry.ending;
+  if (take === "english") return entry.english;
+  throw new Error(`take \`${take}\` does not apply to a line item in ${where}`);
 }
 
 /** A word formula on the sheet: `` Sake word: `th` + sake + stance + ending. `` → literal and slot parts. */
