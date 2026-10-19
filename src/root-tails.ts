@@ -205,53 +205,41 @@ export function validateTails(
   return errors;
 }
 
-/**
- * First-consonant pairs that sound alike: same manner of articulation, differing in place
- * (stops, nasals, approximants, voiced fricatives), and `v` / `b`.
- */
-const CONFUSABLE = new Set(["bd", "bg", "dg", "mn", "lr", "rw", "wy", "vz", "bv"]);
+/** Prefixes a kind spreads over: first vowel × first consonant. */
+export const PREFIXES = 4 * 12;
 
-export function confusable(a: string, b: string): boolean {
-  return CONFUSABLE.has(a < b ? a + b : b + a);
+/** Fewest confusing pairs `n` roots of one kind can have: spread evenly over the {@link PREFIXES}. */
+export function evenSpreadPairs(n: number): number {
+  const q = Math.floor(n / PREFIXES);
+  const r = n % PREFIXES;
+  return r * ((q + 1) * q) / 2 + (PREFIXES - r) * (q * (q - 1)) / 2;
 }
 
+/**
+ * A confusing pair is two roots of the same kind whose first two letters match. Nothing else counts:
+ * roots of different kinds are told apart by the tail.
+ */
 export type TailMetrics = {
-  /** Same-kind one-letter pairs by the position that differs: first vowel, first consonant, middle vowel, second consonant, final vowel. */
-  sameKindAt: number[];
-  /** Of the same-kind first-consonant pairs, those between letters that sound alike. */
-  confusableFirst: number;
-  /** Same-kind two-letter pairs. */
-  sameKindNear: number;
-  /** One-letter pairs across kinds: told apart by the tail, so not counted as confusing. */
-  crossKind: number;
+  /** Confusing pairs. */
+  confusing: number;
+  /** Rows and confusing pairs per kind. */
+  byKind: Map<string, { rows: number; pairs: number }>;
 };
 
-/** Pair counts for five-letter roots, each with its row's kind. */
+/** Confusing-pair counts for five-letter roots, each with its row's kind. */
 export function tailMetrics(entries: readonly { root: string; kind: string }[]): TailMetrics {
-  const sameKindAt = [0, 0, 0, 0, 0];
-  let confusableFirst = 0;
-  let sameKindNear = 0;
-  let crossKind = 0;
-  for (let i = 0; i < entries.length; i++) {
-    const a = entries[i]!;
-    for (let j = i + 1; j < entries.length; j++) {
-      const b = entries[j]!;
-      let distance = 0;
-      let at = -1;
-      for (let k = 0; k < 5 && distance < 3; k++) {
-        if (a.root[k] !== b.root[k]) {
-          distance++;
-          at = k;
-        }
-      }
-      const sameKind = a.kind === b.kind;
-      if (distance === 1 && !sameKind) crossKind++;
-      if (distance === 1 && sameKind) {
-        sameKindAt[at]!++;
-        if (at === 1 && confusable(a.root[1]!, b.root[1]!)) confusableFirst++;
-      }
-      if (distance === 2 && sameKind) sameKindNear++;
-    }
+  const buckets = new Map<string, number>();
+  const byKind = new Map<string, { rows: number; pairs: number }>();
+  let total = 0;
+  for (const { root, kind } of entries) {
+    const key = `${kind}\t${root.slice(0, 2)}`;
+    const before = buckets.get(key) ?? 0;
+    buckets.set(key, before + 1);
+    const entry = byKind.get(kind) ?? { rows: 0, pairs: 0 };
+    entry.rows++;
+    entry.pairs += before;
+    byKind.set(kind, entry);
+    total += before;
   }
-  return { sameKindAt, confusableFirst, sameKindNear, crossKind };
+  return { confusing: total, byKind };
 }

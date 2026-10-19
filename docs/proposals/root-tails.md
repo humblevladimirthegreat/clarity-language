@@ -11,7 +11,7 @@
 - A five-letter root `V C V C V` has two parts. The **onset** (the first three letters) keeps roots apart. The **tail** (the second consonant and the final vowel) carries meaning.
 - The **second consonant** says what **kind** of thing the root's concrete sense is: a creature, a person, a feeling, a food, a tool, and so on. There are twelve kinds, one per root consonant, and each is anchored to a job that letter already has in the grammar.
 - The **final vowel** says the thing's **shape or job**, reusing the vowel series: **a** holds, **o** one whole, **e** in a line or in order, **u** takes away.
-- The onset is chosen for **distinctiveness** against roots of the **same kind**, weighted by the letter that differs and by meaning, and for a **first consonant that matches the English word's**. Roots of different kinds are told apart by the tail and cost nothing. Learning order plays no part; the [phase 3](#phase-3) lint covers teaching. The full English echo becomes a tie-break.
+- The onset is chosen so that few roots of the **same kind** share its **first two letters**, and for a **first consonant that matches the English word's**. Roots of different kinds are told apart by the tail and cost nothing. Learning order plays no part; the [phase 3](#phase-3) lint covers teaching. The full English echo becomes a tie-break.
 - The **second-consonant ban is lifted**. The tail needs all twelve consonants second. Two checks replace the ban ([ban lift](#ban-lift)).
 - Three-letter roots and the final vowel of named (flag) rows are exempt.
 - [Phase 1](#phase-1) builds the whole new lexicon in a separate file and reports on it, without touching the live lexicon. [Phase 2](#phase-2) replaces the live roots and reties the docs. [Phase 3](#phase-3) lints the checkpoints so look-alike words aren't taught close together. Nothing is pinned, 👓 included; the language name is chosen at the end of phase 1, once the new 👓 root is known.
@@ -32,7 +32,7 @@ Today `convert-word` ranks candidates by how closely they echo the English label
 
 **1349 of 1351** five-letter roots are one letter from another root. The 171 core roots form **253 one-letter pairs among themselves**. 👓 *glasses* is one letter from *house*, *mouse*, *clock*, *calendar*, *quiet*, *climb* and *croissant*. Most of these pairs differ only in a vowel, the part the echo doesn't cue. Words that look alike and are learned close together are a well-documented source of confusion in vocabulary learning.
 
-These counts take every one-letter pair. Counted the way the placer now counts them, as same-kind pairs only ([scoring](#onset-scoring)), the live lexicon has 1003; most of its pairs cross kinds. The [phase 1 run](#phase-1-run) compares the two on that measure.
+These counts take every one-letter pair. Counted the way the placer now counts them, as same-kind pairs that share their first two letters ([scoring](#onset-scoring)), the live lexicon has 3506. The [phase 1 run](#phase-1-run) compares the two on that measure.
 
 ### What a tail gives instead
 
@@ -122,23 +122,15 @@ The `o` default will be the fullest vowel in most kinds. That's acceptable: `o` 
 
 With the ban lifted, there are 4 × 12 × 4 × 12 × 4 = **9216** five-letter roots. A set in which every two roots differ in at least two letters holds at most **768** of them (9216 ÷ 12: drop one consonant and the rest must still be unique). With about 1350 five-letter rows, **at least 43% of roots will have a one-letter neighbor**, under any placement. The goal is to make those neighbors harmless, not to remove them.
 
-Inside one tail cell, 192 onsets are possible, but at most **16** can be two letters apart from each other. The busiest cells (the `o` cells of the largest kinds) hold about 45 rows, so some one-letter pairs inside a cell are unavoidable. The in-cell rule below (a one-letter pair differs in the first consonant) allows at most **48** rows per cell, four per first consonant.
-
-Named rows can't meet the in-cell rule: with the final vowel free, at most 192 of their 283 rows fit it. For named rows the rule is only a cost.
-
-The 43% bound counts every pair. Only same-kind pairs are [scored](#onset-scoring), and inside one kind the bound is much tighter: a cell of 45 rows over 16 onset-vowel patterns leaves about three rows per pattern, each pair of them differing only in the first consonant.
+The 43% bound counts every pair. Only [confusing pairs](#onset-scoring) are scored: two roots of the same kind that share their first two letters. Each kind has **48** such prefixes (4 first vowels × 12 first consonants), whatever its shapes, so a kind of up to 48 rows can have none. Past 48, some are unavoidable. Spread evenly, a kind of *n* rows has at least *r*·C(*q*+1, 2) + (48 − *r*)·C(*q*, 2) confusing pairs, where *q* = ⌊*n* / 48⌋ and *r* = *n* mod 48. That floor is 26 to 88 pairs for the eleven shaped kinds and 695 for the 283 named rows: **1326** in all.
 
 ### Scoring {#onset-scoring}
 
-A confusing pair is one where a slip lands on a word that fits the same context. Context catches a slip that changes the kind (a creature where a tool was meant), not one inside the kind. So placement counts only **roots of the same kind**: for each candidate onset it adds a penalty for each same-kind root one letter away (and a smaller one for two letters away), weighted by:
-
-1. **Where the difference is.** An onset vowel costs the most, then the shape vowel, then the first consonant. A named row's final vowel carries no meaning, so it costs as much as an onset vowel. Inside a tail cell, a one-letter pair must differ in the first consonant (named rows excepted, [capacity](#capacity)).
-2. **How alike the letters sound.** A first-consonant pair between letters that sound alike costs three times as much: the stops `b d g`, the nasals `m n`, `l r`, `r w`, `w y`, `v z` and `v b`. Inside a full cell the first-consonant pairs can't be avoided, so this spends them on contrasts that are easy to hear.
-3. **Meaning distance.** WordNet closeness (already indexed for `english-helper`) raises the cost of a pair of close senses, such as *cat* and *dog*.
+A confusing pair is one where a slip lands on a word that fits the same context. Context catches a slip that changes the kind (a creature where a tool was meant), not one inside the kind. So **a pair is confusing if and only if the two roots are the same kind and their first two letters match exactly**. Placement adds 1 for each confusing pair. Nothing else counts: not the letters that differ, not how alike they sound, not how close the meanings are, and not roots two letters apart.
 
 Roots of different kinds cost nothing, whatever letters they share: the tail tells them apart. **Learning order isn't a factor.** A checkpoint can always pick other words, so teaching choices shouldn't decide spellings. The [phase 3](#phase-3) lint keeps look-alike roots out of nearby checkpoints instead, for learners who don't know the tails yet.
 
-A candidate whose first consonant isn't the English label's first consonant (mapped as the echo maps it: p/b, t/d, k/g, s/z, f/v merge) also costs a fixed amount. It's set equal to one onset-vowel neighbor and above any single first-consonant neighbor, so a root gives up its English first consonant only to avoid a costlier neighbor or several. The onset is the only part of the root that can echo English, since the tail is fixed, and the first consonant is the strongest cue. Scoring the full echo instead would pull the onset vowels toward English, but distinctiveness needs those letters most.
+A candidate whose first consonant isn't the English label's first consonant (mapped as the echo maps it: p/b, t/d, k/g, s/z, f/v merge) also costs a fixed amount, equal to two confusing pairs, so a root gives up its English first consonant only to avoid two or more. The onset is the only part of the root that can echo English, since the tail is fixed, and the first consonant is the strongest cue. Scoring the full echo instead would pull the onset vowels toward English, but distinctiveness needs those letters most.
 
 **Placement order:** CSV order, then an annealing pass, like the one that already separates three-letter roots. The objective is global, so after annealing the order matters only for ties.
 
@@ -225,9 +217,7 @@ Phase 1 changes nothing that exists: not [`lexicon-published.csv`](../../data/le
    - It applies the [hook-compound check](#hook-compounds) against today's three-letter roots, and the [listed-compound constraint](#listed-compounds) against compound stems spelled with the new roots.
 4. **Report:** the same run prints, for the live roots and the new ones:
    - the share of roots whose first consonant is the English label's;
-   - same-kind one-letter pairs by the letter that differs, and first-consonant pairs between letters that sound alike;
-   - same-kind two-letter pairs, and one-letter pairs across kinds (not counted);
-   - roots per tail cell, against what the in-cell rule fits;
+   - confusing pairs, in total and per kind beside the even-spread floor ([capacity](#capacity));
    - any check it couldn't satisfy;
    - the new 👓 root.
 5. **`npm test`:** fails when:
@@ -242,42 +232,52 @@ Phase 1 ends when the report is accepted and the language name is chosen from th
 
 ### Phase 1 run (2026-10-19) {#phase-1-run}
 
-Built: [`data/lexicon-tails.csv`](../../data/lexicon-tails.csv), [`src/root-tails.ts`](../../src/root-tails.ts) (letter map, CSV, checks, metrics), [`src/root-tails-place.ts`](../../src/root-tails-place.ts) (placer), [`scripts/lib/convert-tails.ts`](../../scripts/lib/convert-tails.ts) (`npm run convert-word -- --tails [--steps N]`), and [`src/root-tails.test.ts`](../../src/root-tails.test.ts). `check-compounds` also runs the tails checks. The run is seeded, so a rerun with the same data gives the same roots. Only same-kind pairs are scored, the first consonant is scored against the English label's ([onset scoring](#onset-scoring)), and the tie-breaks run full echo first, then stops ([tie-breaks](#tie-breaks)). Live roots are counted with the kind their row has in `lexicon-tails.csv`, so both columns count the same pairs.
+Built: [`data/lexicon-tails.csv`](../../data/lexicon-tails.csv), [`src/root-tails.ts`](../../src/root-tails.ts) (letter map, CSV, checks, metrics), [`src/root-tails-place.ts`](../../src/root-tails-place.ts) (placer), [`scripts/lib/convert-tails.ts`](../../scripts/lib/convert-tails.ts) (`npm run convert-word -- --tails [--steps N]`), and [`src/root-tails.test.ts`](../../src/root-tails.test.ts). `check-compounds` also runs the tails checks. The run is seeded, so a rerun with the same data gives the same roots. Only confusing pairs (same kind, same first two letters) are scored, the first consonant is scored against the English label's ([onset scoring](#onset-scoring)), and the tie-breaks run full echo first, then stops ([tie-breaks](#tie-breaks)). Live roots are counted with the kind their row has in `lexicon-tails.csv`, so both columns count the same pairs.
 
 **Current report:**
 
 | | Live | Tails |
 |---|---|---|
-| First consonant is the label's first consonant | 95.0% | 80.4% |
-| Same-kind one-letter pairs | 1003 | 3025 |
-| … differing in an onset vowel (first or middle) | 156 | 182 |
-| … differing in the first consonant | 374 | 2682 |
-| … … between letters that sound alike | 67 | 133 |
-| … differing in the second consonant | 295 | 0 |
-| … differing in the final vowel | 178 | 161 |
-| Same-kind two-letter pairs | 6895 | 12888 |
-| One-letter pairs across kinds (not counted) | 8633 | 1168 |
+| First consonant is the label's first consonant | 95.0% | 90.2% |
+| Confusing pairs (same kind, same first two letters) | 3506 | 1547 |
 
-Every check is met: tails, the in-cell rule outside named rows, the hook check, and listed compounds. The new 👓 root is `agabo` (*body*, *one*). The house cast gets *swan* `ezuze`, *lion* `uluzu` and *hibiscus* `uhelo`, all with different onsets. These spellings are phase 1 output only. Nothing outside `docs/proposals/` and the files above uses them.
+| Kind | Rows | Live pairs | Tails pairs | Floor ([capacity](#capacity)) |
+|---|---|---|---|---|
+| creature `z` | 113 | 267 | 106 | 82 |
+| person `y` | 85 | 126 | 49 | 37 |
+| mind `m` | 84 | 133 | 52 | 36 |
+| body `b` | 114 | 238 | 104 | 84 |
+| doing `v` | 115 | 248 | 107 | 86 |
+| place `h` | 74 | 117 | 42 | 26 |
+| nature `l` | 85 | 112 | 55 | 37 |
+| food `d` | 116 | 351 | 103 | 88 |
+| tool `w` | 94 | 172 | 70 | 46 |
+| sign `g` | 113 | 284 | 104 | 82 |
+| counting `r` | 75 | 121 | 38 | 27 |
+| named `n` | 283 | 1337 | 717 | 695 |
+
+Every check is met: tails, the hook check, the holder check, and listed compounds. The new 👓 root is `ugabo` (*body*, *one*). The house cast gets *swan* `azaze`, *lion* `olazu` and *hibiscus* `uhalo`, all with different onsets. These spellings are phase 1 output only. Nothing outside `docs/proposals/` and the files above uses them.
 
 **Tuning to review:**
 
-- **Tails triple the confusing pairs.** Counted by kind, the live lexicon has 1003 same-kind one-letter pairs and the tails lexicon 3025. A live root's kind-mates are spread over all 9216 forms. Under tails they share two letters by construction, so a cell of about 45 rows has only 192 onsets to spread over. Nearly all the added pairs differ in the first consonant, the most audible letter and the one on the stressed first beat, and only 133 of them pair letters that sound alike. Onset-vowel pairs, the worst kind, stay close to live (182 against 156, all among named rows). This is [cost 2](#costs) measured. Spreading rows more evenly over the four shapes would lower it: pairs grow with the square of a cell's size, and the `o` cells hold 39 to 45 rows while some others hold under 15.
-- **Echo weighting, measured.** As a pure tie-break the echo decided almost nothing. Weighting the full echo bought matches only by pulling the onset vowels too. A first-consonant cost does better. Under the same-kind scoring:
+- **Tails cut the confusing pairs by more than half.** The live lexicon has 3506 and the tails lexicon 1547, against a floor of 1326. The 221 pairs above the floor are the price of the first-consonant cost: English first consonants are skewed toward `b`, `g` and `z`, so matching them crowds those prefixes.
+- **Named rows hold most of the pairs.** 717 of 1547 (floor 695): 283 rows over 48 prefixes is about six per prefix. Flags are rarely core, and a learner looks them up.
+- **First-consonant weight, measured.** Each step up trades confusing pairs for matches. With the weight at 0 the run lands 6 pairs above the floor, so the annealer finds close to the best spread:
 
-  | First-consonant weight (`FIRST_W`) | Matches | Same-kind one-letter pairs | Same-kind two-letter pairs |
-  |---|---|---|---|
-  | 0 (tie-break only) | 27.7% | 3578 | 11.0k |
-  | 1 | 74.4% | 3448 | 11.5k |
-  | 2 (current) | 80.4% | 3025 | 12.9k |
-  | 4 | 84.1% | 2811 | 13.7k |
+  | First-consonant weight (`FIRST_W`) | Matches | Confusing pairs |
+  |---|---|---|
+  | 0 (tie-break only) | 69.2% | 1332 |
+  | 0.5 | 78.8% | 1332 |
+  | 1 | 83.8% | 1395 |
+  | 2 (current) | 90.2% | 1547 |
+  | 3 | 93.7% | 1674 |
+  | 4 | 96.1% | 1802 |
 
-  The knee is at 2. A higher weight moves pairs from one letter apart to two letters apart (each one-letter first-consonant pair costs about two two-letter pairs). The ceiling sits below 95% because each cell holds only four roots per first consonant (the in-cell rule), and English first consonants are skewed toward `b`, `g` and `z`.
-- **Tight cells.** The in-cell rule fits 48 rows per cell, and 45 in the *mind* and *nature* cells after the hook check. The report prints each cell as rows / capacity. A cell within a few rows of its capacity is hard to pack: *nature* / *one* at 44 of 45 left a violation. Moving *cloudy* and *foggy* to *takes-away* (they hide the sun, like *fog*) and *earth* to *holds* brought it to 41. The *body*, *doing* and *food* `o` cells sit at 45 of 48. In annealing the in-cell rule starts as a small cost and stiffens to hard; a repair pass then tries every move, swap and two-row chain for a row still breaking a hard rule.
+  At 0.5 the matches are free: ties between equally spread onsets go to the English first consonant. Above that each point of matches costs more: about 13 pairs from 0.5 to 1, rising to about 50 from 3 to 4. At 4 the tails match more first consonants than live does, with about half its confusing pairs.
 
 **Kind and shape calls in the first fill** (the emoji subgroup seeded the draft; the label decided). Calls beyond the [edge rules](#kinds), for review:
 
-- **Shapes were spread to keep every cell under its capacity.** The `o` defaults first overfilled several cells (creature, doing, food, body, nature, person, up to 69 rows).
+- **Shapes were spread to keep every cell under the capacity of an earlier in-cell rule.** The `o` defaults first overfilled several cells (creature, doing, food, body, nature, person, up to 69 rows). The current scoring counts pairs across a kind's shapes, so the spread no longer affects it.
 - **Holds (`a`):** herd, flock, school and colony animals (*sheep*, *cow*, *fish*, *penguin*, *ant*, *bee*). Garments that wrap the body, shoes and gloves. Vehicles that carry passengers (*car*, *bus*, *ship*, *airplane*), team sports (*soccer*, *rugby*), drinks and uncountable foods (*rice*, *butter*, *candy*).
 - **Takes away (`u`):** predators and pests (*wolf*, *eagle*, *rat*, *fly*). Cleaning things that remove dirt (*soap*, *broom*, *toothbrush*). Foods that hide a filling (*dumpling*, *burrito*). Sour or burning foods (*vinegar*, *pepper*). Every prohibition sign.
 - **Line (`e`):** long creatures and tall ones (*horse*, *giraffe*, *bug*), long foods (*banana*, *noodles*), ranked roles (*judge*, *teach*, *elder*), arrows, and the clock family.
@@ -332,7 +332,7 @@ On main today, `convert-word --lexicon --all` stops with `short roots too close 
 ## Costs
 
 1. **Kinds and shapes are judgment calls at the edges.** Is a basket a tool or a container? Is a lamp a tool or a fixture? The edge rules and the tie rule settle most cases; the columns record the call so it's made once.
-2. **Same-kind neighbors share a tail.** *Cat* and *dog* end the same and differ only in the onset. The [onset scoring](#onset-scoring) keeps such pairs apart, and the tail stays two letters for this reason. Even so, the phase 1 run has three times as many same-kind one-letter pairs as the live lexicon, nearly all differing in the first consonant ([phase 1 run](#phase-1-run)).
+2. **Same-kind neighbors share a tail.** *Cat* and *dog* end the same and differ only in the onset. The [onset scoring](#onset-scoring) keeps same-kind roots from sharing their first two letters where it can. Past 48 rows a kind must have some such pairs: 1326 at the floor, and 1547 in the [phase 1 run](#phase-1-run), against 3506 in the live lexicon.
 3. **The same letter has two jobs by position.** At the start of a word `z` marks the subject; in a tail it means creature. The parser isn't affected, since positions differ, and the role letters are already the anchors. Teach the tails as a memory aid, never as a rule of grammar.
 4. **Named rows are crowded.** 283 rows share one kind, so some flags will be one letter apart. Flags are rarely core, and a learner looks them up.
 5. **Two seams read by knowing the roots.** Nine-letter dictionary words and six-letter hook compounds on three-letter roots no longer read by letter position. The lints keep each to one reading.

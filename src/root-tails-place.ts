@@ -1,7 +1,7 @@
 /**
  * Root-tails placer (proposal `root-tails.md`, phase 1): each five-letter row's tail comes from its
- * kind and shape, and its onset is chosen for distinctiveness against roots of the same kind, and
- * to start with the English label's first consonant. Rows are placed greedily in CSV order, then
+ * kind and shape, and its onset is chosen so that few roots of the same kind share its first two letters,
+ * and to start with the English label's first consonant. Rows are placed greedily in CSV order, then
  * annealed. Learning order plays no part (the phase 3 lint keeps look-alikes apart in teaching). The live placer
  * (src/lexicon-place.ts) is untouched: its second-consonant ban and echo ranking stay in force.
  */
@@ -9,42 +9,24 @@ import { echo } from "./echo-metric.ts";
 import type { CompoundRow } from "./lexicon-compounds.ts";
 import { isExtraNounHook } from "./parse/hook-compounds.ts";
 import { PHONEME_MAP } from "./pronunciation-map.ts";
-import { confusable, FREE_VOWEL_KIND, KIND_LETTERS, onsetClash, SHAPE_VOWELS, type Kind, type Shape } from "./root-tails.ts";
+import { FREE_VOWEL_KIND, KIND_LETTERS, onsetClash, SHAPE_VOWELS, type Kind, type Shape } from "./root-tails.ts";
 
 const V = "aeou";
 const C = "bdghylmnrvwz";
 const RADIX = [4, 12, 4, 12, 4] as const;
 const FORMS = 4 * 12 * 4 * 12 * 4;
 const JOINS = new Set(["l", "m", "n", "r"]);
-/** Named rows are too many for the in-cell rule (283 rows; at most 192 fit it), so it is only a cost there. */
-const NAMED = C.indexOf(KIND_LETTERS[FREE_VOWEL_KIND]);
 
 /**
- * Cost of a one-letter pair of the same kind, by the position that differs: an onset vowel most, then the
- * shape vowel, then the first consonant. A named row's final vowel has no meaning, so it costs as an onset vowel.
- * Roots of different kinds cost nothing: the tail tells them apart.
- */
-const POS_W = [2, 0.5, 2, 0, 0.9] as const;
-const NAMED_FINAL_W = 2;
-/** First consonants that sound alike ({@link confusable}) cost this many times more. */
-const CONFUSABLE_W = 3;
-/** Two-letter pair of the same kind. */
-const NEAR_W = 0.25;
-/** WordNet closeness (0–1) adds up to this much to a pair. */
-const MEANING_W = 2;
-/**
  * A first consonant that isn't the English label's first consonant (the echo the onset can carry; the
- * tail fixes the rest). At 2 it equals one onset-vowel neighbor and outweighs any single first-consonant neighbor
- * (0.5, or 1.5 between letters that sound alike), so a root gives up its English first consonant only to avoid a
- * costlier neighbor or several.
+ * tail fixes the rest). Each confusing pair (same kind, same first two letters) costs 1, so at 2 a root
+ * gives up its English first consonant only to avoid two or more confusing pairs.
  */
 const FIRST_W = 2;
 /** Tie-breaks, far below any pair cost: the full English echo, then fewer stops (which decide only within 0.01 of echo). */
 const ECHO_W = 0.002;
 const STOP_W = 0.00001;
 const HARD = 1000;
-/** In-cell cost when annealing starts, below the cost of a typical row. */
-const IN_CELL_START = 2;
 
 export type TailPlaceRow = {
   kind: Kind;
@@ -63,8 +45,6 @@ export type TailPlaceInput = {
   /** `/th/` holder host forms (`holderHostForms`): no root may start with one. */
   holderHosts?: ReadonlySet<string>;
   compounds: TailCompound[];
-  /** Closeness of two rows' senses, 0–1 (WordNet). */
-  closeness?: (a: number, b: number) => number;
   steps?: number;
   seed?: number;
 };
@@ -90,34 +70,17 @@ export function decode(code: number): string {
   return out.join("");
 }
 
-/** Codes one letter away (with the position that differs) and two letters away, for every form. */
-function neighborTables(): { d1: Int32Array; d1Pos: Int8Array; d1Count: number; d2: Int32Array; d2Count: number } {
-  const d1Count = 3 + 11 + 3 + 11 + 3;
-  const d2Count = 3 * 11 * 2 + 3 * 3 * 3 + 3 * 11 * 4 + 11 * 11;
-  const d1 = new Int32Array(FORMS * d1Count);
-  const d1Pos = new Int8Array(FORMS * d1Count);
-  const d2 = new Int32Array(FORMS * d2Count);
-  const weights = [1, 1, 1, 1, 1];
-  for (let i = 3; i >= 0; i--) weights[i] = weights[i + 1]! * RADIX[i + 1]!;
-  for (let code = 0; code < FORMS; code++) {
-    const digits = RADIX.map((_, i) => Math.floor(code / weights[i]!) % RADIX[i]!);
-    let n1 = 0;
-    let n2 = 0;
-    for (let p = 0; p < 5; p++) {
-      for (let a = 0; a < RADIX[p]!; a++) {
-        if (a === digits[p]) continue;
-        const one = code + (a - digits[p]!) * weights[p]!;
-        d1[code * d1Count + n1] = one;
-        d1Pos[code * d1Count + n1++] = p;
-        for (let q = p + 1; q < 5; q++) {
-          for (let b = 0; b < RADIX[q]!; b++) {
-            if (b !== digits[q]) d2[code * d2Count + n2++] = one + (b - digits[q]!) * weights[q]!;
-          }
-        }
-      }
-    }
+/** Codes of the other roots with the same first two letters and the same kind: any middle vowel, any final vowel. */
+function siblings(code: number): number[] {
+  const middle = Math.floor(code / 48) % 4;
+  const final = code % 4;
+  const base = code - middle * 48 - final;
+  const out: number[] = [];
+  for (let b = 0; b < 4; b++) for (let e = 0; e < 4; e++) {
+    const other = base + b * 48 + e;
+    if (other !== code) out.push(other);
   }
-  return { d1, d1Pos, d1Count, d2, d2Count };
+  return out;
 }
 
 /** Every root a row may take: its tail, any onset, minus the hook and holder checks. */
@@ -153,7 +116,7 @@ function rng(seed: number): () => number {
 export function placeTailRoots(input: TailPlaceInput): TailPlacement {
   const { rows, shortRoots, holderHosts } = input;
   const n = rows.length;
-  const { d1, d1Pos, d1Count, d2, d2Count } = neighborTables();
+  const sibs = Array.from({ length: FORMS }, (_, code) => siblings(code));
   const cands = rows.map((row) => candidates(row, shortRoots, holderHosts));
   const unary = rows.map((row, i) => {
     const first = firstConsonant(row.cmu);
@@ -166,17 +129,7 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
     return costs;
   });
 
-  // Pair weight from meaning; the letters that differ set the rest at use time.
-  const pairW = new Float32Array(n * n);
-  for (let a = 0; a < n; a++) {
-    for (let b = a + 1; b < n; b++) {
-      pairW[a * n + b] = pairW[b * n + a] = 1 + MEANING_W * (input.closeness?.(a, b) ?? 0);
-    }
-  }
-
   const occupant = new Int32Array(FORMS).fill(-1);
-  /** Cost of breaking the in-cell rule: hard, except while annealing, where it starts soft so a full cell can repack. */
-  let inCellW = HARD;
   const codes = new Int32Array(n).fill(-1);
 
   // Listed compounds: current stems, and nine-letter stems indexed by their five-letter ends.
@@ -220,21 +173,6 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
     for (const index of memberOf[i]!) restem(index);
   };
 
-  const pairCost = (i: number, j: number, other: number, pos: number) => {
-    const code = codes[i]!;
-    const kind = Math.floor(code / 4) % 12;
-    if (kind !== Math.floor(other / 4) % 12) return 0;
-    const w = pairW[i * n + j]!;
-    if (pos < 0) return NEAR_W * w;
-    // Inside a tail cell, a one-letter pair must differ in the first consonant.
-    if (pos !== 1 && pos !== 4 && kind !== NAMED) return inCellW;
-    if (pos === 1) {
-      const sound = confusable(C[Math.floor(code / 192) % 12]!, C[Math.floor(other / 192) % 12]!) ? CONFUSABLE_W : 1;
-      return POS_W[1] * sound * w;
-    }
-    return (pos === 4 && kind === NAMED ? NAMED_FINAL_W : POS_W[pos]!) * w;
-  };
-
   const compoundBreaks = (i: number) => {
     let count = 0;
     for (const index of memberOf[i]!) if (splitsTwice(stems[index]!)) count++;
@@ -248,15 +186,10 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
   const localCost = (i: number) => {
     const code = codes[i]!;
     let cost = unary[i]!.get(code)!;
-    for (let k = 0; k < d1Count; k++) {
-      const other = d1[code * d1Count + k]!;
+    // Each confusing pair costs 1.
+    for (const other of sibs[code]!) {
       const j = occupant[other]!;
-      if (j >= 0 && j !== i) cost += pairCost(i, j, other, d1Pos[code * d1Count + k]!);
-    }
-    for (let k = 0; k < d2Count; k++) {
-      const other = d2[code * d2Count + k]!;
-      const j = occupant[other]!;
-      if (j >= 0 && j !== i) cost += pairCost(i, j, other, -1);
+      if (j >= 0 && j !== i) cost++;
     }
     return cost + HARD * compoundBreaks(i);
   };
@@ -284,9 +217,7 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
   const allowed = (k: number, code: number) => unary[k]!.has(code);
   let temperature = 0.5;
   const cooling = Math.pow(0.000001 / temperature, 1 / Math.max(1, steps));
-  inCellW = IN_CELL_START;
-  const stiffening = Math.pow(HARD / IN_CELL_START, 1 / Math.max(1, steps));
-  for (let step = 0; step < steps; step++, temperature *= cooling, inCellW *= stiffening) {
+  for (let step = 0; step < steps; step++, temperature *= cooling) {
     const i = Math.floor(rnd() * n);
     const list = cands[i]!;
     const code = list[Math.floor(rnd() * list.length)]!;
@@ -308,9 +239,7 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
     if (k >= 0) setCode(k, code);
   }
 
-  inCellW = HARD;
-
-  // Repair: a nearly full cell can leave a row breaking a hard rule that random moves don't reach.
+  // Repair: a row can be left breaking a hard rule (a listed compound's second split) that random moves don't reach.
   // For each such row, try every root in its tail: free, swapped with its holder, or with the holder moved to a free root.
   const breaks = (i: number) => localCost(i) >= HARD;
   for (let round = 0; round < 20; round++) {
@@ -354,38 +283,10 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
 
   const roots = [...codes].map(decode);
   const unmet: string[] = [];
-  for (let i = 0; i < n; i++) {
-    const code = codes[i]!;
-    for (let k = 0; k < d1Count; k++) {
-      const j = occupant[d1[code * d1Count + k]!]!;
-      if (j > i && d1Pos[code * d1Count + k] !== 1 && code % 48 === codes[j]! % 48 && Math.floor(code / 4) % 12 !== NAMED) {
-        unmet.push(`${roots[i]} ~ ${roots[j]}: one letter apart in the same tail cell, not in the first consonant`);
-      }
-    }
-  }
   compounds.forEach((c, index) => {
     if (splitsTwice(stems[index]!)) unmet.push(`compound ${stems[index]} splits two ways`);
   });
   return { roots, unmet };
-}
-
-/**
- * Most rows one tail cell can hold under the in-cell rule: per first consonant, onsets with distinct first
- * and distinct middle vowels, minus onsets the hook and holder checks block. 48 unless the tail consonant is l / m / r.
- */
-export function cellCapacity(kind: Kind, shortRoots: ReadonlySet<string>, holderHosts?: ReadonlySet<string>): number {
-  const consonant = KIND_LETTERS[kind];
-  const perms = (list: string[]): string[][] =>
-    list.length <= 1 ? [list] : list.flatMap((x, i) => perms([...list.slice(0, i), ...list.slice(i + 1)]).map((rest) => [x, ...rest]));
-  let total = 0;
-  for (const c of C) {
-    let best = 0;
-    for (const perm of perms([...V])) {
-      best = Math.max(best, [...V].filter((a, i) => !onsetClash(`${a}${c}${perm[i]}${consonant}o`, shortRoots, holderHosts)).length);
-    }
-    total += best;
-  }
-  return total;
 }
 
 /** Resolve listed compounds to row indices: `rowOfRoot` maps a live five-letter root to its tails row. */

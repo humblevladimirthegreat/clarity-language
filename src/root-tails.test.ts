@@ -7,7 +7,7 @@ import { readData } from "./repo-paths.ts";
 import { decode, encode, firstConsonant, placeTailRoots } from "./root-tails-place.ts";
 import { glossCollisions } from "./parse/gloss-inverse.ts";
 import { retieTables } from "./retie/tables.ts";
-import { holderClash, holderHostForms, hookClash, parseTailsCsv, tailMetrics, tailOf, tailsRootMap, validateTails, type TailRow } from "./root-tails.ts";
+import { evenSpreadPairs, holderClash, holderHostForms, hookClash, parseTailsCsv, tailMetrics, tailOf, tailsRootMap, validateTails, type TailRow } from "./root-tails.ts";
 
 const published = (emoji: string, concrete: string, root: string): PublishedRow =>
   ({ emoji, concrete, root, abstract: "", mnemonic: "", englishByPos: "", posEnglish: emptyPosEnglish() });
@@ -118,19 +118,24 @@ describe("validateTails", () => {
 });
 
 describe("tailMetrics", () => {
-  it("counts same-kind pairs by the letter that differs, and cross-kind pairs apart", () => {
+  it("counts same-kind pairs that share their first two letters, and nothing else", () => {
     const m = tailMetrics([
       { root: "abazo", kind: "creature" },
-      { root: "adazo", kind: "creature" },
       { root: "abezo", kind: "creature" },
-      { root: "abaze", kind: "creature" },
+      { root: "abuze", kind: "creature" },
+      { root: "ebazo", kind: "creature" },
+      { root: "adazo", kind: "creature" },
       { root: "abawo", kind: "tool" },
-      { root: "ehulo", kind: "nature" },
     ]);
-    assert.deepEqual(m.sameKindAt, [0, 1, 1, 0, 1]);
-    assert.equal(m.confusableFirst, 1);
-    assert.equal(m.sameKindNear, 3);
-    assert.equal(m.crossKind, 1);
+    assert.equal(m.confusing, 3);
+    assert.deepEqual(m.byKind.get("creature"), { rows: 5, pairs: 3 });
+    assert.deepEqual(m.byKind.get("tool"), { rows: 1, pairs: 0 });
+  });
+
+  it("floors a kind's pairs at an even spread over the 48 prefixes", () => {
+    assert.equal(evenSpreadPairs(48), 0);
+    assert.equal(evenSpreadPairs(50), 2);
+    assert.equal(evenSpreadPairs(100), 4 * 3 + 44 * 1);
   });
 });
 
@@ -149,11 +154,8 @@ describe("placeTailRoots", () => {
       assert.ok(!shortRoots.has(root.slice(0, 3)), root);
     });
     roots.slice(30).forEach((root) => assert.match(root, /^[aeou][bdghylmnrvwz][aeou]n[aeou]$/));
-    const cell = roots.slice(0, 30);
-    for (const a of cell) for (const b of cell) {
-      const diff = [...a].flatMap((letter, i) => (letter === b[i] ? [] : [i]));
-      if (diff.length === 1) assert.equal(diff[0], 1, `${a} ~ ${b}`);
-    }
+    // 30 rows of one kind fit in its 48 first-two-letter prefixes, so none share them.
+    assert.equal(new Set(roots.slice(0, 30).map((root) => root.slice(0, 2))).size, 30);
   });
 
   it("keeps every root clear of the holder check", () => {
