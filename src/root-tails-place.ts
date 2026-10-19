@@ -9,7 +9,7 @@ import { echo } from "./echo-metric.ts";
 import type { CompoundRow } from "./lexicon-compounds.ts";
 import { isExtraNounHook } from "./parse/hook-compounds.ts";
 import { PHONEME_MAP } from "./pronunciation-map.ts";
-import { confusable, FREE_VOWEL_KIND, hookClash, KIND_LETTERS, SHAPE_VOWELS, type Kind, type Shape } from "./root-tails.ts";
+import { confusable, FREE_VOWEL_KIND, KIND_LETTERS, onsetClash, SHAPE_VOWELS, type Kind, type Shape } from "./root-tails.ts";
 
 const V = "aeou";
 const C = "bdghylmnrvwz";
@@ -60,6 +60,8 @@ export type TailPlaceInput = {
   rows: TailPlaceRow[];
   /** Published three-letter roots, which keep their spelling. */
   shortRoots: ReadonlySet<string>;
+  /** `/th/` holder host forms (`holderHostForms`): no root may start with one. */
+  holderHosts?: ReadonlySet<string>;
   compounds: TailCompound[];
   /** Closeness of two rows' senses, 0–1 (WordNet). */
   closeness?: (a: number, b: number) => number;
@@ -118,14 +120,14 @@ function neighborTables(): { d1: Int32Array; d1Pos: Int8Array; d1Count: number; 
   return { d1, d1Pos, d1Count, d2, d2Count };
 }
 
-/** Every root a row may take: its tail, any onset, minus the hook check. */
-function candidates(row: TailPlaceRow, shortRoots: ReadonlySet<string>): number[] {
+/** Every root a row may take: its tail, any onset, minus the hook and holder checks. */
+function candidates(row: TailPlaceRow, shortRoots: ReadonlySet<string>, holderHosts?: ReadonlySet<string>): number[] {
   const consonant = KIND_LETTERS[row.kind];
   const vowels = row.kind === FREE_VOWEL_KIND || !row.shape ? V : SHAPE_VOWELS[row.shape];
   const out: number[] = [];
   for (const a of V) for (const c of C) for (const b of V) for (const e of vowels) {
     const root = a + c + b + consonant + e;
-    if (!hookClash(root, shortRoots)) out.push(encode(root));
+    if (!onsetClash(root, shortRoots, holderHosts)) out.push(encode(root));
   }
   return out;
 }
@@ -149,10 +151,10 @@ function rng(seed: number): () => number {
 }
 
 export function placeTailRoots(input: TailPlaceInput): TailPlacement {
-  const { rows, shortRoots } = input;
+  const { rows, shortRoots, holderHosts } = input;
   const n = rows.length;
   const { d1, d1Pos, d1Count, d2, d2Count } = neighborTables();
-  const cands = rows.map((row) => candidates(row, shortRoots));
+  const cands = rows.map((row) => candidates(row, shortRoots, holderHosts));
   const unary = rows.map((row, i) => {
     const first = firstConsonant(row.cmu);
     const costs = new Map<number, number>();
@@ -369,9 +371,9 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
 
 /**
  * Most rows one tail cell can hold under the in-cell rule: per first consonant, onsets with distinct first
- * and distinct middle vowels, minus onsets the hook check blocks. 48 unless the tail consonant is l / m.
+ * and distinct middle vowels, minus onsets the hook and holder checks block. 48 unless the tail consonant is l / m / r.
  */
-export function cellCapacity(kind: Kind, shortRoots: ReadonlySet<string>): number {
+export function cellCapacity(kind: Kind, shortRoots: ReadonlySet<string>, holderHosts?: ReadonlySet<string>): number {
   const consonant = KIND_LETTERS[kind];
   const perms = (list: string[]): string[][] =>
     list.length <= 1 ? [list] : list.flatMap((x, i) => perms([...list.slice(0, i), ...list.slice(i + 1)]).map((rest) => [x, ...rest]));
@@ -379,7 +381,7 @@ export function cellCapacity(kind: Kind, shortRoots: ReadonlySet<string>): numbe
   for (const c of C) {
     let best = 0;
     for (const perm of perms([...V])) {
-      best = Math.max(best, [...V].filter((a, i) => !hookClash(`${a}${c}${perm[i]}${consonant}o`, shortRoots)).length);
+      best = Math.max(best, [...V].filter((a, i) => !onsetClash(`${a}${c}${perm[i]}${consonant}o`, shortRoots, holderHosts)).length);
     }
     total += best;
   }

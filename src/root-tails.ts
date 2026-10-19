@@ -6,7 +6,8 @@
  */
 import { escapeCsvField, parseCsv } from "./csv.ts";
 import { factorizationsForStem, retieCompoundRows, type CompoundRow } from "./lexicon-compounds.ts";
-import type { PublishedRow } from "./lexicon-search.ts";
+import type { OverlayRow, PublishedRow } from "./lexicon-search.ts";
+import { HOLDER_HOST_KINDS } from "./parse/classify.ts";
 import { isExtraNounHook } from "./parse/hook-compounds.ts";
 
 /** Kind → second consonant. */
@@ -90,6 +91,31 @@ export function hookClash(root: string, shortRoots: ReadonlySet<string>): boolea
   return root.length === 5 && HOOK_JOINS.has(root[3]!) && shortRoots.has(root.slice(0, 3));
 }
 
+/**
+ * `/th/` sense forms that take a holder after their grade letter (`ugur`, `odor`: host root + **-l / -m / -r**,
+ * knowing.md#holder). The classifier reads any `/th/` stem that starts with one and is not a published root
+ * as a holder seam ([`holderSeam`](parse/classify.ts)).
+ */
+export function holderHostForms(overlays: Iterable<OverlayRow>): Set<string> {
+  const forms = new Set<string>();
+  for (const row of overlays) if (row.pos === "th" && HOLDER_HOST_KINDS.has(row.kind)) forms.add(row.senseForm);
+  return forms;
+}
+
+/**
+ * A five-letter root that starts with a holder host form (`ugur` + `u`): every compound and hook compound
+ * built on it reads on `/th/` as that host + grade + a holder (`thugurumamol` = DEDUCED.weak of `umamo`).
+ * Only an **l / m / r** second consonant can spell a grade, so the second-consonant ban used to rule it out.
+ */
+export function holderClash(root: string, holderHosts: ReadonlySet<string>): boolean {
+  return root.length === 5 && holderHosts.has(root.slice(0, 4));
+}
+
+/** The onset checks a placed root must pass: the hook check and the holder check. */
+export function onsetClash(root: string, shortRoots: ReadonlySet<string>, holderHosts: ReadonlySet<string> = new Set()): boolean {
+  return hookClash(root, shortRoots) || holderClash(root, holderHosts);
+}
+
 /** Old published root → tails root, for every five-letter row that has one; three-letter roots map to themselves. */
 export function tailsRootMap(published: readonly PublishedRow[], tails: readonly TailRow[]): Map<string, string> {
   const byKey = new Map(tails.filter((row) => row.root).map((row) => [tailKey(row), row.root]));
@@ -107,13 +133,15 @@ export type TailError = { key: string; reason: string };
 /**
  * Checks `npm test` runs over `lexicon-tails.csv`: one row per published five-letter row and no
  * other; kind and shape from their closed sets (no shape on a named row); every placed root unique,
- * in its tail, clear of the hook check; every listed compound, spelled with the new roots, splits one way.
+ * in its tail, clear of the hook and holder checks; every listed compound, spelled with the new roots, splits one way.
  * An empty root is a row added since the last `convert-word -- --tails` run and is not checked.
  */
 export function validateTails(
   tails: readonly TailRow[],
   published: readonly PublishedRow[],
   compounds: readonly CompoundRow[],
+  /** {@link holderHostForms} of the live overlays. */
+  holderHosts: ReadonlySet<string> = new Set(),
 ): TailError[] {
   const errors: TailError[] = [];
   const longKeys = new Set(published.filter((row) => row.root.length === 5).map(tailKey));
@@ -152,6 +180,9 @@ export function validateTails(
     seenRoots.set(row.root, label);
     if (hookClash(row.root, shortRoots)) {
       errors.push({ key: label, reason: `root ${row.root} reads as ${row.root.slice(0, 3)} + join + hook before -l / -m` });
+    }
+    if (holderClash(row.root, holderHosts)) {
+      errors.push({ key: label, reason: `root ${row.root} starts with the holder host ${row.root.slice(0, 4)}: its compounds read as a holder seam on /th/` });
     }
   }
   for (const key of longKeys) {

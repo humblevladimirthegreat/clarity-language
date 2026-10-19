@@ -70,6 +70,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `translation-exercises.md` | Translation checkpoint policy. |
 | `drill-generation.md` | Procedure for adding checkpoints. |
 | `lexicon.md` | Root spellings, root length, respelling, moving an overlay to another row. |
+| `retie.md` | Known retie limits: the language-name pass, skipped pages, docs and tests to fix by hand after `--write`. |
 | `design-decisions.md` | Why a form or reading is deliberately absent, and rejected alternatives. Not a restatement of grammar pages; settled readings go on grammar pages, never here. |
 | `unassigned-reserved.md` | Every spelling with no reading, marked open (no natural reading yet) or closed (by a design decision). Never linked from grammar pages. |
 | `feature-criteria.md` | The test a psychological feature must pass to enter the language. |

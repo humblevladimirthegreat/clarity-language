@@ -1,3 +1,4 @@
+<!-- retie: skip -->
 # Language name (editors)
 
 English **Agazan** is the published 👓 *glasses* root **`agaza`** (metaphorical *clarity*) plus proper **-n**, the same name shape as house-cast **`zazawan`**. Learner wording and the English gloss live only in [introduction.md](../grammar/introduction.md) — do not restate that gloss here or in [AGENTS.md](../../AGENTS.md).

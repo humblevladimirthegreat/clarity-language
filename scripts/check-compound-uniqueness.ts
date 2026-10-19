@@ -12,9 +12,9 @@ import {
   validateCompoundRows,
   type CompoundValidationError,
 } from "../src/lexicon-compounds.js";
-import { parsePublishedCsv } from "../src/lexicon-search.js";
+import { parseOverlayCsv, parsePublishedCsv } from "../src/lexicon-search.js";
 import { dataPath } from "../src/repo-paths.js";
-import { parseTailsCsv, validateTails } from "../src/root-tails.js";
+import { holderHostForms, parseTailsCsv, validateTails } from "../src/root-tails.js";
 
 const publishedPath = dataPath("lexicon-published.csv");
 const compoundsPath = dataPath("lexicon-compounds.csv");
@@ -49,7 +49,12 @@ function main(): void {
   const compounds = parseCompoundCsv(readFileSync(compoundsPath, "utf8"));
   const errors: CompoundValidationError[] = [
     ...validateCompoundRows(compounds, publishedRoots, publishedSenses),
-    ...validateTails(parseTailsCsv(readFileSync(dataPath("lexicon-tails.csv"), "utf8")), published, compounds).map((e) => ({
+    ...validateTails(
+      parseTailsCsv(readFileSync(dataPath("lexicon-tails.csv"), "utf8")),
+      published,
+      compounds,
+      holderHostForms(parseOverlayCsv(readFileSync(dataPath("lexicon-overlays.csv"), "utf8"))),
+    ).map((e) => ({
       stem: e.key,
       reason: `lexicon-tails.csv: ${e.reason}`,
     })),

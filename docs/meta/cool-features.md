@@ -1,3 +1,4 @@
+<!-- retie: skip -->
 # Cool Features Posts
 
 This document contains a record of features that have been posted to the r/conlangs Cool Features You've Added thread. It does not necessarily describe the current state of the language as these are produced over time and the language could have changed in the meantime. 

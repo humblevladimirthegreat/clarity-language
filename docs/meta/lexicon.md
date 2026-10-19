@@ -92,7 +92,7 @@ A nine-letter stem is either a three-letter left root + join + five-letter head,
 
 ## Respelling a row
 
-After `convert-word`, run the retie procedure in `AGENTS.md` (`retie-docs` dry run, then `--write`, then build and test). A retie changes the spelling of the same sense everywhere, and code never spells a root as a string literal; use [`src/closed-roots.ts`](../../src/closed-roots.ts).
+After `convert-word`, run the retie procedure in `AGENTS.md` (`retie-docs` dry run, then `--write`, then build and test). A retie changes the spelling of the same sense everywhere, and code never spells a root as a string literal; use [`src/closed-roots.ts`](../../src/closed-roots.ts). What the retie still leaves to a person (the language name, skipped pages, tests it cannot follow): [retie known issues](retie.md).
 
 ## Moving an overlay to another row
 

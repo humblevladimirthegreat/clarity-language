@@ -567,7 +567,7 @@ function tailLateral(word: MorphWord, tables: ClassifyTables): MorphWord | undef
 }
 
 /** Overlay kinds whose `/th/` word can take a holder after its grade letter (knowing.md#holder). */
-const HOLDER_HOST_KINDS = new Set(["evidential", "may", "notional"]);
+export const HOLDER_HOST_KINDS = new Set(["evidential", "may", "notional"]);
 
 /**
  * `HOST GRADE NAME` on `/th/`: an evidential, MAY or NOTIONAL root, its own **-l / -m / -r** as the seam,

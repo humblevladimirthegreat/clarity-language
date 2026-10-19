@@ -564,7 +564,7 @@ A lexicon retie rewrites Agazan it can see as a word. Write so each spelling has
 
 - Agazan in prose is one backtick span: a whole word, or a whole sentence or phrase. Italics are English (*sleep*, *one*, *Azawan*), even when the letters happen to spell an Agazan word. A retie never rewrites italics, so Agazan in italics goes stale. A cite interior that is Agazan is that span. When prose names the two parts of a compound, each part is its own span; the whole stem stays one span when that word is what the example parses.
 - A heading whose backtick form is a published root, a compound stem, or an overlay sense form gets an explicit English `{#id}` that does not contain that spelling (`` ### Gravity (`abaha` / `adahe`) {#gravity} ``). Closed letters and hooks (`a`, `hal`, `am`) may stay in the auto slug. Recipe headings follow the same rule.
-- `<!-- retie: skip -->` is only for a page that records past spellings, never a page under `docs/grammar/`.
+- `<!-- retie: skip -->` is only for a page that records past spellings, or an editor note whose Agazan only illustrates tooling (a CLI call, a parser stage), never a page under `docs/grammar/`. A skipped page's examples go stale on purpose; do not copy one into a grammar page.
 - Code names a closed root by emoji in [`src/closed-roots.ts`](../../src/closed-roots.ts), not by a string spelling.
 
 The house-cast English name (*Azawan*) stays. It is the capitalised root, and the retie rewrites that copy from the named word.

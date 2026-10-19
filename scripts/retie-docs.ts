@@ -51,7 +51,7 @@ const markdownDirs = [
 const SKIP_DIRS = [join(REPO_ROOT, "docs", "proposals", "rejected")];
 /** TODO.md is planning notes and is never retied. */
 const topLevelMarkdown = ["AGENTS.md", "README.md"].map((name) => join(REPO_ROOT, name));
-/** Page-level opt-out for records of past spellings (the marker on a line of its own, not quoted in prose). */
+/** Page-level opt-out for records of past spellings and tooling notes (the marker on a line of its own, not quoted in prose). */
 const RETIE_SKIP_RE = /^<!--\s*retie:\s*skip\s*-->\s*$/m;
 const compoundsPath = dataPath("lexicon-compounds.csv");
 const overlaysPath = dataPath("lexicon-overlays.csv");
@@ -174,6 +174,7 @@ async function main(): Promise<void> {
   const newLanguageRoot = closedRootsIn(tables.current.published).glasses;
   const keep = new Set([`${oldLanguageRoot}n`, namedEnglish(oldLanguageRoot)]);
   // A dated log of past spellings (`<!-- retie: skip -->`) keeps them: retieing it would rewrite history.
+  // A tooling note keeps its illustrative Agazan as written.
   const markdownFiles = [...markdownDirs.filter(existsSync).flatMap((dir) => listMarkdown(dir)), ...topLevelMarkdown.filter(existsSync)].filter(
     (file) => {
       if (SKIP_DIRS.some((dir) => file.startsWith(`${dir}/`))) return false;
@@ -369,7 +370,7 @@ async function main(): Promise<void> {
   const currentRoots = publishedRoots;
   for (const file of sourceDirs.flatMap((dir) => listSource(dir))) {
     const original = readFileSync(file, "utf8");
-    const result = rewriteSourceLiterals(original, file, { map, tables: tables.old, follow, english, currentRoots, keep });
+    const result = rewriteSourceLiterals(original, file, { map, tables: tables.old, current: tables.current, follow, english, currentRoots, keep });
     const rel = relative(REPO_ROOT, file);
     for (const item of result.reviews) {
       review(`${rel}:${lineNumberAt(original, item.index)}  review  ${item.reason}`);

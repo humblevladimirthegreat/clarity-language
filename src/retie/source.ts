@@ -13,7 +13,7 @@ import { isAgazanRootShape } from "../root-shape.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import { parseWord } from "../parse/word.js";
 
-import type { FollowPairs } from "./follow.js";
+import { followPairs, type FollowPairs } from "./follow.js";
 import { retieCore } from "./rebuild.js";
 import { contentStemRoots } from "./resume.js";
 import { rewriteMarkdown, type RetieReview } from "./markdown.js";
@@ -30,7 +30,8 @@ export type SourceLiteral = {
 };
 
 /**
- * String literals (and template literals without `${…}`) found by the TypeScript parser.
+ * String literals and template literal text found by the TypeScript parser: a template with `${…}`
+ * gives each text piece between substitutions (`` `zazawan uem ${held}.` `` → `zazawan uem `, `.`).
  * For a `.vue` file, pass only a `<script>` body and add its offset. Escaped literals are
  * skipped (their source text is not their value).
  */
@@ -42,6 +43,11 @@ export function sourceLiterals(source: string, fileName = "source.ts"): SourceLi
       const start = node.getStart(file) + 1;
       const body = source.slice(start, node.getEnd() - 1);
       out.push(body.includes("\\") ? { index: start, body, escaped: true } : { index: start, body });
+    } else if (ts.isTemplateHead(node) || ts.isTemplateMiddle(node) || ts.isTemplateTail(node)) {
+      // A head opens with `` ` `` and a middle or tail with `}`; a head or middle closes with `${`, a tail with `` ` ``.
+      const start = node.getStart(file) + 1;
+      const body = source.slice(start, node.getEnd() - (ts.isTemplateTail(node) ? 1 : 2));
+      if (body) out.push(body.includes("\\") ? { index: start, body, escaped: true } : { index: start, body });
     } else if (ts.isRegularExpressionLiteral(node)) {
       // A pattern that quotes Agazan (`/`wonathumer` does not appear/`); flags after the last slash.
       const start = node.getStart(file) + 1;
@@ -83,6 +89,8 @@ export type SourceRetieContext = {
   currentRoots: ReadonlySet<string>;
   /** Words and English names never respelled (the language's own name, renamed by hand). */
   keep?: ReadonlySet<string>;
+  /** The lexicon after the retie: with it, a named word's gloss pairs its English names (`Uzuhe`-x-… ). */
+  current?: ClassifyTables;
 };
 
 /**
@@ -104,12 +112,23 @@ export function rewriteSourceLiterals(source: string, fileName: string, ctx: Sou
   const realLexicon = isTest && REAL_LEXICON_RE.test(source);
   const literals = fileName.endsWith(".vue") ? vueLiterals(source) : sourceLiterals(source, fileName);
   // In a test, a bare old root as a literal (`root: "eye"`, `"abede"`) is a fixture the file defines for itself:
-  // words on that root are about the fixture, not the lexicon, so this file never respells them.
+  // words on that root are about the fixture, not the lexicon, so this file never respells them. A test that
+  // asserts a real root names it through `CLOSED` instead (`assert.equal(root, CLOSED.walk)`), so it follows.
   // Outside tests, such a literal names a real row (`LANGUAGE_ROOT = "agala"`) and stays reported.
   const fixtures = new Set(
     isTest ? literals.map((literal) => literal.body).filter((body) => /^[a-z]+$/.test(body) && ctx.map.has(body)) : [],
   );
-  const fileCtx = fixtures.size > 0 ? { ...ctx, map: new Map([...ctx.map].filter(([root]) => !fixtures.has(root))) } : ctx;
+  // A fixture keeps its English name too (`root: "azawa"` and *Azawan* stay together).
+  const fixtureNames = new Set([...fixtures].map(namedEnglish));
+  const fileCtx =
+    fixtures.size > 0
+      ? {
+          ...ctx,
+          map: new Map([...ctx.map].filter(([root]) => !fixtures.has(root))),
+          follow: { ...ctx.follow, names: new Map([...ctx.follow.names].filter(([name]) => !fixtureNames.has(name))) },
+          keep: new Set([...(ctx.keep ?? []), ...fixtureNames]),
+        }
+      : ctx;
   const results = literals.map((literal) => rewriteLiteral(literal, isTest, realLexicon, fileCtx));
   keepFileConsistent(results, fileCtx);
 
@@ -142,6 +161,12 @@ export function rewriteSourceLiterals(source: string, fileName: string, ctx: Sou
     }
   }
   return { text, changes, reviews };
+}
+
+/** Markdown held in a string: its code spans close (a pattern cut mid-span, `` vahahal\.` ``, is plain text). */
+function isMarkdown(value: string): boolean {
+  const ticks = value.match(/`/g)?.length ?? 0;
+  return ticks > 0 && ticks % 2 === 0;
 }
 
 /** A test reads the real lexicon when it loads the default tables, the lexicon CSVs, or closed roots. */
@@ -255,7 +280,7 @@ function rewriteLiteral(literal: SourceLiteral, isTest: boolean, realLexicon: bo
   let value = decoded.value;
   const local: RetieChange[] = [];
   const cls = rewritableClass(value, isTest, ctx);
-  if (value.includes("`")) {
+  if (isMarkdown(value)) {
     // Markdown held in a string (a doc fixture, a word-bank row): retie it as a page.
     const md = rewriteMarkdown(value, ctx.map, ctx.tables, { deferFollow: true, english: ctx.english, keep: ctx.keep });
     value = md.text;
@@ -286,9 +311,11 @@ function rewriteLiteral(literal: SourceLiteral, isTest: boolean, realLexicon: bo
  */
 function retieStaleTokens(value: string, ctx: SourceRetieContext, local: RetieChange[]): string {
   const written = new Set(local.flatMap((change) => change.to.match(/[a-z]+/g) ?? []));
+  // Read with the old lexicon's shapes, so a lateral or a holder seam (`hewezathaxar`, `thunemazawan`) moves too.
+  const rewrite = resumeRewrite(ctx.map, ctx.tables);
   return value.replace(/(?<![A-Za-z])[a-z]{3,}(?![A-Za-z])/g, (word, offset: number) => {
-    if (written.has(word) || isEnglish(word, ctx) || isKept(word, ctx) || !staleRoot(word, ctx)) return word;
-    const next = ctx.map.get(word) ?? retieCore(word, ctx.map);
+    if (written.has(word) || isEnglish(word, ctx) || isKept(word, ctx)) return word;
+    const next = ctx.map.get(word) ?? rewrite(word);
     if (!next || next === word) return word;
     local.push({ from: word, to: next, index: offset });
     return next;
@@ -354,13 +381,22 @@ function keepFileConsistent(results: LiteralResult[], ctx: SourceRetieContext): 
     if (result.sentence) continue;
     for (const [from, to] of wordPairs(result.changes)) if (!kept.has(from)) add(wordMap, from, to);
   }
+  // A name the file followed in English (`"Alahen's house"`) is also its lowercase token (`normal === "alahen"`).
   for (const result of results) {
-    // A literal whose only changes were English names (`z-Azawan` in a pattern) still takes the file's word changes.
-    if (!result.decoded || result.changes.some((change) => /^[a-z]/.test(change.from)) || wordMap.size === 0) continue;
+    for (const { from, to } of result.changes) {
+      if (/^[A-Z][a-z]+$/.test(from) && /^[A-Z][a-z]+$/.test(to)) add(wordMap, from.toLowerCase(), to.toLowerCase());
+    }
+  }
+  for (const result of results) {
+    // A literal the pass read only in part (`"hewezathaxar→zazawan"`: one word respelled) takes the rest of the
+    // file's word changes; words it already wrote are new spellings and never move twice.
+    // Markdown in a string was retied as a page, which decides each word itself (an opaque payload stays).
+    if (!result.decoded || result.sentence || result.lone || isMarkdown(result.decoded.value) || wordMap.size === 0) continue;
     const { index } = result.literal;
+    const own = new Set(result.changes.flatMap((change) => words(change.to)));
     result.value = result.value.replace(/(?<![A-Za-z])[a-z]+(?![A-Za-z])/g, (word, offset: number) => {
       const next = wordMap.get(word);
-      if (next === undefined || isEnglish(word, ctx) || isKept(word, ctx)) return word;
+      if (next === undefined || own.has(word) || isEnglish(word, ctx) || isKept(word, ctx)) return word;
       result.changes.push({ from: word, to: next, index: index + (result.decoded!.at[offset] ?? offset) });
       return next;
     });
@@ -374,13 +410,19 @@ function keepFileConsistent(results: LiteralResult[], ctx: SourceRetieContext): 
       if (a !== undefined && b !== undefined && a !== b && !isKept(namedEnglish(a), ctx)) names.set(namedEnglish(a), namedEnglish(b));
     }
   }
+  // Each piece of an x-compound name (`z-Uzuhe-x-Agave-x-Edehen`), paired from the word's gloss before and after.
+  if (ctx.current) {
+    const glossed = followPairs(results.flatMap((result) => result.changes.filter((change) => /^[a-z]/.test(change.from))), { old: ctx.tables, current: ctx.current });
+    for (const [from, to] of glossed.names) if (!names.has(from) && !isKept(from, ctx)) names.set(from, to);
+  }
   if (names.size === 0) return;
   for (const result of results) {
     if (!result.decoded) continue;
     const { index } = result.literal;
+    const own = new Set(result.changes.map((change) => change.to));
     result.value = result.value.replace(NAME_RE, (name, offset: number) => {
       const next = names.get(name);
-      if (next === undefined) return name;
+      if (next === undefined || own.has(name)) return name;
       result.changes.push({ from: name, to: next, index: index + (result.decoded!.at[offset] ?? offset) });
       return next;
     });

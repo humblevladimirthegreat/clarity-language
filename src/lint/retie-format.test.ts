@@ -52,10 +52,11 @@ describe("lintRetieFormat", () => {
 describe("retie-format — letter names", () => {
   const table = "| Agazan | Name | Cue |\n|--|--|--|\n| `d` | `da` | x |\n| `g` | `ga` | x |\n| `th` | `tho` | x |\n| `a` | `a` | x |\n| `u` | `u` | x |\n";
   it("flags a marked spell-out line whose names no longer spell its word", () => {
-    const page = `${table}\n<!-- retie: letter-names -->\n\`\`\`text\n\`agadu\` → \`a\` \`ga\` \`a\` \`da\` \`a\`\n\`\`\`\n`;
+    // Not a word (`agad`): the next retie must not respell this fixture.
+    const page = `${table}\n<!-- retie: letter-names -->\n\`\`\`text\n\`agad\` → \`a\` \`ga\` \`u\`\n\`\`\`\n`;
     const findings = lintRetieFormat(page, tablesOf([]));
     assert.equal(findings.length, 1);
-    assert.match(findings[0]!.detail, /`a` `ga` `a` `da` `u`/);
+    assert.match(findings[0]!.detail, /`a` `ga` `a` `da`/);
   });
 
   it("respells the names after a retie, reading th as one letter", () => {

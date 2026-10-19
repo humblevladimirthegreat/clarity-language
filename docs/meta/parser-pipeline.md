@@ -1,5 +1,7 @@
 # Parser pipeline
 
+<!-- retie: skip -->
+
 **Status:** CURRENT  
 **Design authority:** [`docs/grammar/`](../grammar/introduction.md) — parsers implement the docs; they do not define the language.
 
@@ -71,7 +73,7 @@ Agazan text
 ParseResult  (utterances + resolve)
 ```
 
-Public entry: `parse(text)` in [`src/parse/index.ts`](../../src/parse/index.ts). CLI: `node scripts/parse.mjs 'zazawan vawalal.'` (several quoted inputs, or `-` for one per line on stdin)
+Public entry: `parse(text)` in [`src/parse/index.ts`](../../src/parse/index.ts). CLI: `node scripts/parse.mjs 'zazawan vowogal.'` (several quoted inputs, or `-` for one per line on stdin)
 
 ### Stage 1 — Peggy (characters → `MorphWord`)
 

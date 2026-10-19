@@ -4,6 +4,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
 
+import { CLOSED } from "./closed-roots.js";
 import {
   factorizationsForStem,
   parseCompoundCsv,
@@ -71,8 +72,8 @@ describe("lexicon-compounds", () => {
     const errors = validateCompoundRows(
       [
         {
-          stem: "owogalul",
-          left: "owoga",
+          stem: `${CLOSED.walk}lul`,
+          left: CLOSED.walk,
           join: "l",
           right: "ul",
           concrete: "leave",

@@ -2,10 +2,12 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
 import { parseCompoundCsv, type CompoundRow } from "./lexicon-compounds.ts";
-import { emptyPosEnglish, parsePublishedCsv, type PublishedRow } from "./lexicon-search.ts";
+import { emptyPosEnglish, parseOverlayCsv, parsePublishedCsv, type PublishedRow } from "./lexicon-search.ts";
 import { readData } from "./repo-paths.ts";
 import { decode, encode, firstConsonant, placeTailRoots } from "./root-tails-place.ts";
-import { hookClash, parseTailsCsv, tailMetrics, tailOf, validateTails, type TailRow } from "./root-tails.ts";
+import { glossCollisions } from "./parse/gloss-inverse.ts";
+import { retieTables } from "./retie/tables.ts";
+import { holderClash, holderHostForms, hookClash, parseTailsCsv, tailMetrics, tailOf, tailsRootMap, validateTails, type TailRow } from "./root-tails.ts";
 
 const published = (emoji: string, concrete: string, root: string): PublishedRow =>
   ({ emoji, concrete, root, abstract: "", mnemonic: "", englishByPos: "", posEnglish: emptyPosEnglish() });
@@ -18,8 +20,17 @@ describe("lexicon-tails.csv", () => {
       parseTailsCsv(readData("lexicon-tails.csv")),
       parsePublishedCsv(readData("lexicon-published.csv")),
       parseCompoundCsv(readData("lexicon-compounds.csv")),
+      holderHostForms(parseOverlayCsv(readData("lexicon-overlays.csv"))),
     );
     assert.deepEqual(errors.map((e) => `${e.key}: ${e.reason}`), []);
+  });
+
+  it("gives every root + ending its own gloss label once the tails roots are live", () => {
+    // The live lint (lexicon-published-lint.test.ts) run ahead on the phase 2 lexicon: a seam the
+    // second-consonant ban used to rule out shows here, not after the retie.
+    const map = tailsRootMap(parsePublishedCsv(readData("lexicon-published.csv")), parseTailsCsv(readData("lexicon-tails.csv")));
+    for (const [from, to] of map) if (from === to) map.delete(from);
+    assert.deepEqual(glossCollisions(retieTables(map).current), []);
   });
 });
 
@@ -36,6 +47,14 @@ describe("tails", () => {
     assert.ok(hookClash("abamo", short));
     assert.ok(!hookClash("abana", short));
     assert.ok(!hookClash("ebala", short));
+  });
+
+  it("flags a root that starts with a /th/ holder host form", () => {
+    const hosts = holderHostForms(parseOverlayCsv(readData("lexicon-overlays.csv")));
+    const host = [...hosts][0]!;
+    assert.match(host, /^[aeou][bdghylmnrvwz][aeou][lmr]$/);
+    assert.ok(holderClash(`${host}u`, hosts));
+    assert.ok(!holderClash(`${host.slice(0, 3)}vu`, hosts));
   });
 
   it("maps a label's first English consonant to its Agazan letter", () => {
@@ -135,6 +154,15 @@ describe("placeTailRoots", () => {
       const diff = [...a].flatMap((letter, i) => (letter === b[i] ? [] : [i]));
       if (diff.length === 1) assert.equal(diff[0], 1, `${a} ~ ${b}`);
     }
+  });
+
+  it("keeps every root clear of the holder check", () => {
+    // Every counting (`r`) onset's first three letters spell a host + `r`: the placer must skip each one.
+    const holderHosts = new Set(["abar", "ebor", "uzur"]);
+    const rows = Array.from({ length: 40 }, () => ({ kind: "counting" as const, shape: "one" as const, cmu: "" }));
+    const { roots, unmet } = placeTailRoots({ rows, shortRoots: new Set(), holderHosts, compounds: [], steps: 5_000 });
+    assert.deepEqual(unmet, []);
+    for (const root of roots) assert.ok(!holderHosts.has(root.slice(0, 4)), root);
   });
 
   it("never leaves a listed compound with a second split", () => {

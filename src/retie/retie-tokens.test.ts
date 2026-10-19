@@ -554,7 +554,8 @@ describe("source literals (2026-09-28 fixes)", () => {
     const escaped = rewriteSourceLiterals('const md = "> \\`zazawan vowogal.\\`\\n>\\n> \\"Azawan walks.\\"";\n', "x.test.ts", ctx);
     assert.equal(escaped.text, 'const md = "> \\`zululon vowogal.\\`\\n>\\n> \\"Ululon walks.\\"";\n');
     assert.equal(escaped.reviews.length, 0);
-    const partial = rewriteSourceLiterals('expect("yael [[zazawan zam] zazawan zal]");\n', "x.test.ts", ctx);
+    // In a test with its own tables, a word the tokenizer cannot reach is reported, not respelled.
+    const partial = rewriteSourceLiterals('createClassifyTablesFromRows(rows, []);\nexpect("yael [[zazawan zam] zazawan zal]");\n', "x.test.ts", ctx);
     assert.ok(partial.reviews.some((review) => /azawa/.test(review.reason)));
   });
 });
@@ -642,8 +643,9 @@ describe("source literals — tests that read the real lexicon", () => {
   });
 
   it("only reports them in a test with its own tables", () => {
-    const { text, reviews } = rewriteSourceLiterals(body, "x.test.ts", ctx);
-    assert.equal(text, body.replace("`theha`", "`thehu`"));
+    const own = `createClassifyTablesFromRows(rows, []);\n${body}`;
+    const { text, reviews } = rewriteSourceLiterals(own, "x.test.ts", ctx);
+    assert.equal(text, own.replace("`theha`", "`thehu`"));
     assert.equal(reviews.length, 2);
   });
 });
@@ -669,7 +671,7 @@ describe("source literals — fixtures, patterns and names", () => {
   };
 
   it("leaves words on a root the test defines as its own fixture", () => {
-    const source = 'const row = { root: "eye" };\nlint("| *see* | `veyel` |");\n';
+    const source = 'const t = createClassifyTablesFromRows([{ root: "eye" }], []);\nlint("| *see* | `veyel` |");\n';
     assert.equal(rewriteSourceLiterals(source, "x.test.ts", ctx).text, source);
   });
 
@@ -718,6 +720,36 @@ describe("retie fixes (2026-10-19 root-tails dry run)", () => {
     };
     const source = "assert.match(out, /documented: z-Ululon \\| v-walk\\n/);\n";
     assert.equal(rewriteSourceLiterals(source, "x.test.ts", ctx).text, "assert.match(out, /documented: z-Alahen \\| v-walk\\n/);\n");
+  });
+
+  it("reties template pieces, laterals and holder seams in a test, and pairs x-compound names from glosses", () => {
+    const map = mapOf(["azawa", "ozoze"], ["eweza", "elege"], ["uzuhe", "uzudo"], ["agave", "oguda"], ["edehe", "edada"]);
+    const tables = bridgeTables(map);
+    const ctx = {
+      map,
+      tables: tables.old,
+      current: tables.current,
+      follow: { names: new Map(), words: new Map() },
+      english: new Set<string>(),
+      currentRoots: new Set<string>(),
+    };
+    const source = [
+      "const t = loadDefaultTables();",
+      'frameOf(`zazawan vowogal uem thunemazawan ${held}.`);',
+      'assert.deepEqual(pointers("zazawan vowogal hewezathaxer."), ["hewezathaxer→zazawan"]);',
+      'expectLine("zuzuhexagavexedehen", "z-Uzuhe-x-Agave-x-Edehen");',
+      "",
+    ].join("\n");
+    assert.equal(
+      rewriteSourceLiterals(source, "x.test.ts", ctx).text,
+      [
+        "const t = loadDefaultTables();",
+        'frameOf(`zozozen vowogal uem thunemozozen ${held}.`);',
+        'assert.deepEqual(pointers("zozozen vowogal helegethaxer."), ["helegethaxer→zozozen"]);',
+        'expectLine("zuzudoxogudaxedadan", "z-Uzudo-x-Oguda-x-Edadan");',
+        "",
+      ].join("\n"),
+    );
   });
 
   it("follows names inside a markdown fence (an example page), not a text fence", () => {

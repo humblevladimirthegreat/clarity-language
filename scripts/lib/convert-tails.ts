@@ -8,10 +8,11 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { CLOSED } from "../../src/closed-roots.js";
 import { loadPron } from "../../src/echo-metric.js";
 import { parseCompoundCsv } from "../../src/lexicon-compounds.js";
-import { parsePublishedCsv } from "../../src/lexicon-search.js";
+import { parseOverlayCsv, parsePublishedCsv } from "../../src/lexicon-search.js";
 import { dataPath } from "../../src/repo-paths.js";
 import { cellCapacity, firstConsonant, placeTailRoots, tailCompounds, type TailPlaceRow } from "../../src/root-tails-place.js";
 import {
+  holderHostForms,
   KIND_LETTERS,
   parseTailsCsv,
   serializeTailsCsv,
@@ -54,8 +55,9 @@ export async function convertTails(options: { steps?: number } = {}): Promise<vo
   const published = parsePublishedCsv(readFileSync(dataPath("lexicon-published.csv"), "utf8"));
   const compounds = parseCompoundCsv(readFileSync(dataPath("lexicon-compounds.csv"), "utf8"));
   const tails = parseTailsCsv(readFileSync(tailsPath, "utf8"));
+  const holderHosts = holderHostForms(parseOverlayCsv(readFileSync(dataPath("lexicon-overlays.csv"), "utf8")));
 
-  const structural = validateTails(tails.map((row) => ({ ...row, root: "" })), published, compounds);
+  const structural = validateTails(tails.map((row) => ({ ...row, root: "" })), published, compounds, holderHosts);
   if (structural.length > 0) {
     throw new Error(`lexicon-tails.csv:\n${structural.map((e) => `  ${e.key}: ${e.reason}`).join("\n")}`);
   }
@@ -77,6 +79,7 @@ export async function convertTails(options: { steps?: number } = {}): Promise<vo
   const placement = placeTailRoots({
     rows,
     shortRoots,
+    holderHosts,
     compounds: tailCompounds(compounds, rowOfRoot, shortRoots),
     closeness: await wordnetCloseness(tails.map((row) => row.concrete)),
     steps: options.steps,
@@ -86,7 +89,7 @@ export async function convertTails(options: { steps?: number } = {}): Promise<vo
 
   const checks = [
     ...placement.unmet,
-    ...validateTails(next, published, compounds).map((e) => `${e.key}: ${e.reason}`),
+    ...validateTails(next, published, compounds, holderHosts).map((e) => `${e.key}: ${e.reason}`),
   ];
   printReport(next, published, checks, pron);
 }
@@ -118,13 +121,14 @@ function printReport(tails: TailRow[], published: ReturnType<typeof parsePublish
 
   console.log("");
   const shortRoots = new Set(published.map((row) => row.root).filter((root) => root.length === 3));
+  const holderHosts = holderHostForms(parseOverlayCsv(readFileSync(dataPath("lexicon-overlays.csv"), "utf8")));
   console.log("roots per tail cell (/ most the in-cell rule fits):");
   const kinds = Object.keys(KIND_LETTERS) as Kind[];
   const shapes = Object.keys(SHAPE_VOWELS) as Shape[];
   console.log(`  ${"".padEnd(10)}${shapes.map((s) => s.padStart(12)).join("")}${"total".padStart(8)}`);
   for (const kind of kinds) {
     const mine = tails.filter((row) => row.kind === kind);
-    const cap = cellCapacity(kind, shortRoots);
+    const cap = cellCapacity(kind, shortRoots, holderHosts);
     const cells = kind === "named" ? shapes.map(() => "") : shapes.map((shape) => `${mine.filter((row) => row.shape === shape).length}/${cap}`);
     console.log(`  ${`${kind} ${KIND_LETTERS[kind]}`.padEnd(10)}${cells.map((c) => c.padStart(12)).join("")}${String(mine.length).padStart(8)}`);
   }

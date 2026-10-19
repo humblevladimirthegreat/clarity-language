@@ -1,3 +1,4 @@
+<!-- retie: skip -->
 # Syntax test results
 
 Editors only — not linked from grammar pages. Findings from translating the syntax test corpus ([syntax-test-corpus](syntax-test-corpus.md)) for Phase 2a of the expressiveness review (`docs/proposals/expressiveness-review.md`). Each row is a point where the translator had to stop, paraphrase heavily, or settle for an approximation. Rows cite `STC-nn`.

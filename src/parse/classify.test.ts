@@ -4,6 +4,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
 
+import { CLOSED } from "../closed-roots.js";
 import {
   classify,
   createClassifyTables,
@@ -272,7 +273,7 @@ describe("classify", () => {
     assert.equal(word.lexicalCompound, true);
     assert.equal(word.rootGloss?.concrete, "leave");
     if (word.family.kind === "content") {
-      assert.equal(word.family.roots[0], "owoga");
+      assert.equal(word.family.roots[0], CLOSED.walk);
     }
   });
 
@@ -340,8 +341,8 @@ describe("classify", () => {
 describe("lexiconContentRoots", () => {
   it("collects content and compound hosts; skips spans, numbers, foreign", () => {
     const emptyKnown = knownLexiconRoots(createClassifyTablesFromRows([], []));
-    assert.deepEqual(lexiconContentRoots(parseWord("zazawan")), ["azawa"]);
-    assert.deepEqual(unknownLexiconContentRoots(parseWord("zazawan"), emptyKnown), ["azawa"]);
+    assert.deepEqual(lexiconContentRoots(parseWord("zazawan")), [CLOSED.swan]);
+    assert.deepEqual(unknownLexiconContentRoots(parseWord("zazawan"), emptyKnown), [CLOSED.swan]);
     assert.deepEqual(lexiconContentRoots(parseWord("g+3")), []);
     assert.deepEqual(lexiconContentRoots(parseWord("d<sushi>")), []);
     assert.deepEqual(lexiconContentRoots(parseWord("yal")), []);
