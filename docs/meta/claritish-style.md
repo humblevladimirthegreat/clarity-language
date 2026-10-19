@@ -83,16 +83,22 @@ The [journal editor](grammar-docs.md#claritish-track) is for private journaling:
 
 **Cues** (`data/claritish-triggers.csv`, one row per English habit):
 
-- `cue`: patterns separated by ` | `. Words are space-separated; `a/b` is a choice of words, `(…)` an optional word, `*` any letters inside a word (`*ing`), and punctuation is its own word (`sorry ?`). A contraction is one word, so write `I'm sorry | I am sorry`, not `I'm/I am sorry`.
+- `cue`: patterns separated by ` | `. Words are space-separated; `a/b` is a choice of words, `(…)` an optional word, `*` any letters inside a word (`*ing`), and punctuation is its own word (`sorry ?`, `; )`, `can't ./,/!`). A contraction is one word, so write `I'm sorry | I am sorry`, not `I'm/I am sorry`.
 - `exclude`: patterns for the common uses that are not the trap (*I think so*, *thanks to the rain*, *sorry to hear*). An exclusion that overlaps a cue silences it.
 - `flow` and `defaults`: the question flow, and any answer the cue already implies (`channel=reported` for *I heard*).
-- `placement` (`after-clause`, `after-noun`), `join` (`space`, `comma`, or `sentence` for a drop-in that follows the sentence, as the thanks and sorry examples do), and `drop_cue` (`yes` when the lesson's examples leave the English cue out).
+- `placement`: `after-clause`, `after-noun`, `suffix` (a hyphen suffix on the English verb after the cue, which replaces the cue: *I can't sing* → `sing-xu`), or `before-word` (a tone mark at the start of the sentence). `join` (`space`, `comma`, or `sentence` for a drop-in that follows the sentence, as the thanks and sorry examples do), and `drop_cue` (`yes` when the lesson's examples leave the English cue out).
 - `gap_sentence`: which sentence of the lesson's `## The gap` the card shows, so the trap is never written twice.
+- `mirror`: the mirror panel's name for the habit, one and many, split by `/` (`unmarked guess/unmarked guesses`). Rows for the same habit share it. It describes what is left in English, never a fault: no *missing*, no *should*.
 - `exempt`: a reason, for an italic gap phrase that is not a cue (the drop-in's own meaning). Such a row raises nothing.
 
 Every italic phrase in a cued lesson's gap must raise one of that lesson's cues or match an exempt row; the build checks it. A cue with no fitting drop-in is not a cue: it goes to the grammar gap process, not into the editor.
 
-**Flows** (`data/claritish-flows.json`): each question's answers name a place on the [cheat sheet](../grammar/claritish/cheat-sheet.md), never a spelling: a row label, a column header (`-l`), a cell by its English (`autonomy`), or a prose line (the `Sake word:` formula). `{question}` in a reference is filled with the answer. A choice with no `label` takes the sheet's own English.
+**Flows** (`data/claritish-flows.json`): each question's answers name a place on the [cheat sheet](../grammar/claritish/cheat-sheet.md), never a spelling: a row label, a column header (`-l`), a cell by its English (`autonomy`) or by the meaning in the cell beside it (`can never` for `-xu`), or a prose line (the `Sake word:` formula). `{question}` in a reference is filled with the answer. A choice with no `label` takes the sheet's own English; a question's `labelFrom` reads labels that depend on an earlier answer (*tolerated* for allowed, *by custom* for required).
+
+- `commands`: the slash commands that open the flow with no English cue (`/sure`), each with any answers it presets (`"plan": { "kind": "planned" }`). A command puts its drop-in where it was typed: a suffix joins the word before it, a tone mark the word after it.
+- A choice with `"requires": "command"` is offered only from a command (*can*, which no English cue asks for). A choice with `none` ends in no drop-in: the card shows its line and offers only *Leave it in English*, for a lesson that says when to leave the word off.
+
+**Reading back** needs no data of its own. Hover glosses and near misses (`thovom` → `thovum`) come from the forms the flows produce. English words that come close to a form (*thunder*, *than*) are found at build from the English helper's WordNet index and compromise's lexicon, so they are never flagged and never open autocomplete; a new form brings its own.
 
 **Card copy:** questions ask what the writer means (*What will you do about the guess?*), with the lesson's default answer first. Use the grammar's terms as the lessons do, and nothing that implies English is a mistake: no *fix*, *error*, or *should*. *Leave it in English* is a normal outcome.
 

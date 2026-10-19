@@ -1,6 +1,7 @@
 // Cue matching for the Claritish editor: sentences, tokens, cue patterns, and the one mark
 // per sentence. Pure and browser-safe; the trigger rows come from data/claritish-triggers.csv
 // through the editor data (data.ts).
+import { findDropIns } from "./read-back.js";
 
 export type Span = { from: number; to: number };
 
@@ -92,14 +93,15 @@ export function quotedSpans(text: string): Span[] {
 
 /**
  * `I (just) think/guess (that)`: space-separated tokens, `a/b` alternatives, `(…)` optional,
- * `*` inside a token for any letters (`*ing`). Punctuation is its own token (`sorry ?`).
+ * `*` inside a token for any letters (`*ing`). Punctuation is its own token (`sorry ?`, `; )`).
  */
 export function parsePattern(src: string): Pattern {
   const out: Pattern = [];
   for (const raw of src.trim().split(/\s+/)) {
     const optional = raw.startsWith("(") && raw.endsWith(")");
     const body = optional ? raw.slice(1, -1) : raw;
-    if (!body || /[()]/.test(body)) throw new Error(`bad pattern token \`${raw}\` in \`${src}\``);
+    // A bracket is literal only in a token of punctuation alone (`; )`).
+    if (!body || (/[()]/.test(body) && /[\p{L}\p{N}]/u.test(body))) throw new Error(`bad pattern token \`${raw}\` in \`${src}\``);
     out.push({ alts: body.split("/").map(normalize), optional });
   }
   if (!out.some((t) => !t.optional)) throw new Error(`pattern \`${src}\` has no required token`);
@@ -203,10 +205,7 @@ export function dismissKey(cue: Cue): string {
 }
 
 function hasForm(sentence: Sentence, forms: ReadonlySet<string> | undefined): boolean {
-  if (!forms?.size) return false;
-  const words = sentence.text.split(/[\s,.;:!?"“”()]+/).filter(Boolean);
-  // Multi-word forms (`… behon`) are checked as text; single words as whole words.
-  return [...forms].some((form) => (form.includes(" ") ? sentence.text.includes(form) : words.includes(form)));
+  return Boolean(forms?.size) && findDropIns(sentence.text, forms!).length > 0;
 }
 
 /**

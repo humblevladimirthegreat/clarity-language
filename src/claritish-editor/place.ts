@@ -1,9 +1,14 @@
 // Where *Use this* puts a drop-in, as text changes against the document
 // (docs/meta/grammar-docs.md#claritish-track, placement). Pure and browser-safe.
-import type { Cue, Span } from "./match.js";
+import type { Cue, Span, Token } from "./match.js";
 
-/** `after-clause`: where English puts *probably*; `after-noun`: right after the English noun (a thanks to something owned). */
-export type Placement = "after-clause" | "after-noun";
+/**
+ * `after-clause`: where English puts *probably*; `after-noun`: right after the English noun (a
+ * thanks to something owned); `suffix`: a hyphen suffix on the English verb after the cue, which
+ * replaces the cue (*I can't sing* → *I sing-xu*); `before-word`: a tone mark at the start of the
+ * sentence, coloring all of it.
+ */
+export type Placement = "after-clause" | "after-noun" | "suffix" | "before-word";
 
 /** How an after-clause drop-in joins the clause: `space` (`closed thovum`), `comma` (`Thanks, thoyutham`), or `sentence` (`I'm late. thanathum behon`). */
 export type Joiner = "space" | "comma" | "sentence";
@@ -11,7 +16,7 @@ export type Joiner = "space" | "comma" | "sentence";
 export type PlaceOptions = {
   placement: Placement;
   joiner: Joiner;
-  /** Remove the English cue, as the lesson's examples do. Ignored when the cue is the whole sentence. */
+  /** Remove the English cue, as the lesson's examples do. Ignored when the cue is the whole sentence; always so for `suffix`. */
   dropCue: boolean;
   /** The owned noun phrase, for `after-noun`. */
   noun?: Span;
@@ -26,7 +31,20 @@ const TERMINAL = /[.!?…]+["”’')\]]*$/;
 /** A change whose insert holds the drop-in names it in `form`. */
 export type PlacedChange = Change & { form?: string };
 
-/** Changes that place `form` for `cue`. */
+/** Adverbs between *can't* and its verb (*I can't even sing*): the suffix skips them. */
+const SKIP_TO_VERB = new Set(["even", "really", "just", "quite", "ever", "always", "still", "actually", "honestly", "possibly", "simply", "totally"]);
+
+/** The verb a suffix attaches to: the first word after the cue, past any adverbs, before any punctuation. */
+function suffixHost(cue: Cue): Token | undefined {
+  for (const token of cue.sentence.tokens) {
+    if (token.from < cue.to) continue;
+    if (!token.word) return undefined;
+    if (!SKIP_TO_VERB.has(token.norm)) return token;
+  }
+  return undefined;
+}
+
+/** Changes that place `form` for `cue`; none when a suffix has no verb to attach to. */
 export function placeDropIn(cue: Cue, form: string, options: PlaceOptions): PlacedChange[] {
   const { sentence } = cue;
   const text = sentence.text;
@@ -34,8 +52,13 @@ export function placeDropIn(cue: Cue, form: string, options: PlaceOptions): Plac
   const cueFrom = cue.from - base;
   const cueTo = cue.to - base;
   const atStart = OPENERS.test(text.slice(0, cueFrom));
-  const wordsOutside = sentence.tokens.some((t) => t.word && (t.to <= cue.from || t.from >= cue.to));
-  const drop = options.dropCue && wordsOutside;
+  const outside = (t: Token) => t.word && (t.to <= cue.from || t.from >= cue.to);
+  const wordsOutside = sentence.tokens.some(outside);
+  const suffix = options.placement === "suffix";
+  const drop = (options.dropCue || suffix) && wordsOutside;
+
+  const host = suffix ? suffixHost(cue) : undefined;
+  if (suffix && !host) return [];
 
   const changes: PlacedChange[] = [];
   let removal: Change | undefined;
@@ -43,7 +66,14 @@ export function placeDropIn(cue: Cue, form: string, options: PlaceOptions): Plac
 
   let at: number;
   let insert: string;
-  if (options.placement === "after-noun" && options.noun) {
+  if (host) {
+    at = host.to - base;
+    insert = form;
+  } else if (options.placement === "before-word") {
+    const first = sentence.tokens.find((t) => t.word && (!drop || outside(t)));
+    at = (first?.from ?? base) - base;
+    insert = form;
+  } else if (options.placement === "after-noun" && options.noun) {
     at = options.noun.to - base;
     insert = ` ${form}`;
   } else if (options.joiner === "sentence") {
@@ -54,14 +84,34 @@ export function placeDropIn(cue: Cue, form: string, options: PlaceOptions): Plac
     insert = `${options.joiner === "comma" ? "," : ""} ${form}`;
   }
 
-  if (removal && at === removal.to) {
-    // The drop-in lands where the cue was cut (`closed, I think.` → `closed thovum.`).
-    changes.push({ from: removal.from + base, to: removal.to + base, insert: removal.insert + insert, form });
+  if (removal && at >= removal.from && at <= removal.to) {
+    // The drop-in lands where the cue was cut (`closed, I think.` → `closed thovum.`); a tone mark
+    // goes before the re-capitalized letter (`lol you're` → `%you're`).
+    const merged = options.placement === "before-word" ? insert + removal.insert : removal.insert + insert;
+    changes.push({ from: removal.from + base, to: removal.to + base, insert: merged, form });
   } else {
     if (removal) changes.push({ from: removal.from + base, to: removal.to + base, insert: removal.insert });
     changes.push({ from: at + base, to: at + base, insert, form });
   }
   return changes.sort((a, b) => a.from - b.from);
+}
+
+/**
+ * Changes that replace a slash command (`/sure`) in `line` (at document offset `base`) with
+ * `form`: a suffix joins the word before it (`sing /can` → `sing-xo`), a tone mark the word after
+ * it, and any other drop-in takes the command's place. None when a suffix has no word before it.
+ */
+export function placeAtCommand(line: string, base: number, command: Span, form: string): PlacedChange[] {
+  const before = line.slice(0, command.from - base);
+  const after = line.slice(command.to - base);
+  if (form.startsWith("-")) {
+    const m = /\p{L}(\s?)$/u.exec(before);
+    return m ? [{ from: command.from - m[1]!.length, to: command.to, insert: form, form }] : [];
+  }
+  if (!/[\p{L}\p{N}]/u.test(form)) {
+    return [{ from: command.from, to: command.to + /^[ \t]*/.exec(after)![0].length, insert: form, form }];
+  }
+  return [{ from: command.from, to: command.to, insert: /^[\p{L}\p{N}]/u.test(after) ? `${form} ` : form, form }];
 }
 
 /** The cut that removes the cue with its commas and spacing, re-capitalizing a sentence start. */

@@ -1,6 +1,6 @@
 # Proposal: Claritish writing editor
 
-**Status:** PARTIALLY IMPLEMENTED. Phase 1 is built: the [journal editor](../../grammar/claritish/editor.md) covers How sure are you?, How do you know?, and Thanks and sorry. Phases 2 and 3 are proposed. Where Phase 1 differs from the plan below, the plan says so under [Phase 1 as built](#phase-1-as-built).  
+**Status:** PARTIALLY IMPLEMENTED. Phases 1 and 2 are built: the [journal editor](../../grammar/claritish/editor.md) covers every lesson except Labels and Feelings, with read-back, slash commands, autocomplete, the mirror panel, and practice mode. Phase 3 is proposed. Where the build differs from the plan below, the plan says so under [Phase 1 as built](#phase-1-as-built) and [Phase 2 as built](#phase-2-as-built).  
 **Related:** [Claritish track](../../meta/grammar-docs.md#claritish-track) (what a drop-in is, placement, the cheat sheet), [Claritish wording and voice](../../meta/claritish-style.md), [the gap sections](../../grammar/claritish/index.md#lessons) of each lesson, [`scripts/lint-cheat-sheets.ts`](../../../scripts/lint-cheat-sheets.ts), `syntax-highlighting.md` (a separate idea for structure highlighting in full Agazan).  
 **Design authority:** none. The editor adds no forms. It points at lessons and drop-ins that already exist.
 
@@ -190,6 +190,20 @@ Everything here reuses the Phase 1 matcher and cards.
 - Gap coverage lint, round-trip tests, and false-positive corpus extended to these lessons.
 
 **Done when:** every lesson except Labels and Feelings has cues, every cheat sheet form outside those two lessons can be inserted from a card or a slash command, and the mirror panel and practice mode cover every lesson with cues.
+
+### Phase 2 as built {#phase-2-as-built}
+
+- ***Can't* cues** are *can't*, *cannot*, *can not*, *couldn't*, *could not*, *unable to*, and *(not / isn't …) able to*. The suffix replaces the cue and joins the next verb (*I can't sing* → *I sing-xu*), so some cuts leave broken English (*I'm unable to sleep* → *I'm sleep-xe*, and *couldn't* loses its past tense); that is accepted. *Can't wait*, *can't be*, *couldn't care*, inverted questions, and a *can't* with no verb after it are excluded.
+- **No *can I*.** In a journal it is mostly self-doubt (*can I do this?*), not a request for permission. The permission cues are *may I*, *allowed to*, *is it OK to*, and the like. The gap's bare *can*, *may*, *should*, and *OK* are exempt rows: marking every one would flood the text.
+- **Tone cues** are *lol*, *haha*, *jk*, *just kidding*, winking emoji and `;)`, hearts and `<3`, and *you're the worst*. ALL CAPS and *!!!* need matching outside the token patterns, and *!!!* has no clean replacement, so they are left out; `/s` and `j/k` cannot be written as patterns, since `/` separates alternatives. A cue's mark goes at the start of the sentence, coloring all of it. A stack (`?!`) takes one `/tone` per mark.
+- **Choices beyond the plan.** A choice can be offered only from a command (*can*, the `-xa` suffix, has no English cue), end in no drop-in (*None of these* on an ought, which says to leave the ought word off), or take labels from an earlier answer (*tolerated* / *frowned on* / *by custom*; a want's endings versus a plan's).
+- **Sixteen commands**, one or more per flow: `/sure`, `/know`, `/can`, `/thanks`, `/sorry`, `/allowed`, `/forbidden`, `/required`, `/agreed`, `/ought`, `/motive`, `/want`, `/plan`, `/decide`, `/try`, `/tone`. Typing `/` lists them, and Alt+Enter right after one opens it too. *Leave it in English* on a command card removes the command's text.
+- **Autocomplete takes Tab, not Enter**, for drop-ins: an English line break should never turn into a drop-in. Enter takes a command. Drop-ins are offered after four letters, and never for an English word that starts a form (*than*, *game*).
+- **English exceptions.** A handful of English words fall within near-miss reach of a form (*thunder*, `thuner`; *theater*). The build finds them in the English helper's WordNet index and compromise's lexicon and ships them as a short list, recomputed from the forms, so a new form or a respelling brings its own. Capitalized words, and the word being typed, are never near misses. Ties among suggestions go to the longest shared start (`thovom` → `thovum` first). With the cursor in a near miss, its tip shows and Alt+Enter takes the first suggestion.
+- **Mirror wording per habit**, in a `mirror` column of the trigger data (`unmarked guess/unmarked guesses`). Each line jumps to the next cue of its habit.
+- **Practice uses the practice items, not the examples.** Practice items carry the note the comparison needs, and their English prompt is clean, while removing a drop-in from some examples leaves broken English (*asked for `huxegom`*). *Compare with the lesson* shows the lesson's answer and both glosses; a different drop-in that fits the note still counts, and the writer is the judge. Practice swaps the text with a fresh undo history and never saves over the journal draft.
+- **New dependency:** `@codemirror/autocomplete`.
+- **Checked** in headless Chromium: cue cards for *can't*, *should* (*None of these*), and *I'll* (labels following the wish or plan answer); `/sure`, `/can`, `/tone`, and *Leave it in English* on a command; autocomplete by Tab, not Enter, and none after *than*; hover glosses with IPA; a near miss taken by Alt+Enter; mirror jump and close; practice compare, and the journal restored after practice and a reload.
 
 ### Phase 3: Labels and Feelings
 

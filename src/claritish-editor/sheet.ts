@@ -14,7 +14,7 @@ export type SheetRef = {
   row?: string;
   /** Column header, matched the same way (`-l`, `Stance`). */
   col?: string;
-  /** A cell anywhere in the table, by its English (`autonomy`). */
+  /** A form cell anywhere in the table, by its English (`autonomy`) or the meaning in the cell beside it (`can never`). */
   cell?: string;
   /** A prose line in the section, by its opening words. */
   line?: string;
@@ -100,8 +100,10 @@ export function resolveRef(sheet: Sheet, ref: SheetRef, answers: Readonly<Record
   let cell: string;
   let rowLabel = "";
   if (ref.cell !== undefined) {
-    const all = table.rows.flat();
-    cell = all[pick(all.map(cellEnglish), fill(ref.cell, answers), `cell in ${where}`)]!;
+    const entries = formCells(table);
+    const entry = entries[pick(entries.map((e) => e.english), fill(ref.cell, answers), `cell in ${where}`)]!;
+    if (take === "english") return entry.english;
+    cell = entry.cell;
   } else {
     let col: number | undefined;
     if (ref.col !== undefined) {
@@ -126,6 +128,21 @@ export function resolveRef(sheet: Sheet, ref: SheetRef, answers: Readonly<Record
   const form = spans(cell)[0];
   if (!form) throw new Error(`cell \`${cell}\` in ${where} has no form`);
   return form;
+}
+
+/**
+ * The cells that hold a form, each with its English: the cell's own (`` `ahu` autonomy ``), or,
+ * for a cell that is only a form, the form-less cell to its right (`` | `-xo` | can't yet | ``).
+ */
+function formCells(table: SheetTable): { cell: string; english: string }[] {
+  return table.rows.flatMap((row) =>
+    row.flatMap((cell, i) => {
+      if (!spans(cell).length) return [];
+      const next = row[i + 1] ?? "";
+      const english = cellEnglish(cell) || (spans(next).length ? "" : plain(next));
+      return [{ cell, english }];
+    }),
+  );
 }
 
 function sheetLine(sheet: Sheet, section: string, opening: string): string {

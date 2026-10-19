@@ -4,7 +4,10 @@ import { withBase } from 'vitepress'
 import {
   answerKey,
   applyChanges,
+  choiceLabel,
+  placeAtCommand,
   placeDropIn,
+  type CommandAt,
   type Cue,
   type EditorFlow,
   type EditorLesson,
@@ -16,11 +19,15 @@ import { previewPhonemes } from '@tts-browser'
 
 type OwnedNounModule = typeof import('@claritish-owned-noun')
 
+/** A card opens on an English cue (`cue` and `trigger`) or on a slash command (`command`). */
 const props = defineProps<{
-  cue: Cue
+  cue?: Cue
+  trigger?: EditorTrigger
+  command?: CommandAt
+  /** Answers a command preselects. */
+  commandDefaults?: Record<string, string>
   /** The other cues in the sentence (*Also here*). */
   also: Cue[]
-  trigger: EditorTrigger
   flow: EditorFlow
   lesson: EditorLesson
   /** Colour slot of the lesson. */
@@ -41,11 +48,18 @@ const answers = ref<Record<string, string>>({})
 const keepCue = ref(false)
 const showIpa = ref(false)
 
-/** compromise loads only for a flow that asks about an owned thing. */
+/** The text the card works in: the cue's sentence, or the command's line. */
+const context = computed(() =>
+  props.command
+    ? { text: props.command.line, from: props.command.lineFrom }
+    : { text: props.cue!.sentence.text, from: props.cue!.sentence.from },
+)
+
+/** compromise loads only for a cue card whose flow asks about an owned thing; a command goes where it was typed. */
 const ownedNounModule = shallowRef<OwnedNounModule | null>(null)
-const needsNoun = computed(() => props.flow.questions.some((q) => q.choices.some((c) => c.requires === 'owned-noun')))
+const needsNoun = computed(() => !props.command && props.flow.questions.some((q) => q.choices.some((c) => c.requires === 'owned-noun')))
 const noun = computed<(Span & { text: string }) | undefined>(() =>
-  ownedNounModule.value?.ownedNoun(props.cue.sentence.text, props.cue.sentence.from),
+  props.cue ? ownedNounModule.value?.ownedNoun(props.cue.sentence.text, props.cue.sentence.from) : undefined,
 )
 
 watch(
@@ -62,54 +76,77 @@ const questions = computed(() =>
   props.flow.questions.map((q) => ({
     ...q,
     choices: q.choices
-      .filter((c) => c.requires !== 'owned-noun' || noun.value)
-      .map((c) => (c.requires === 'owned-noun' && noun.value ? { ...c, label: `${c.label}: ${noun.value.text}` } : c)),
+      .filter((c) => (c.requires === 'command' ? props.command : c.requires === 'owned-noun' ? props.command || noun.value : true))
+      .map((c) => {
+        const label = choiceLabel(q, c, answers.value)
+        return { ...c, label: c.requires === 'owned-noun' && noun.value ? `${label}: ${noun.value.text}` : label }
+      }),
   })),
 )
 
 function reset() {
+  const preset = props.command ? props.commandDefaults ?? {} : props.trigger?.defaults ?? {}
   const next: Record<string, string> = {}
-  for (const q of props.flow.questions) next[q.id] = props.trigger.defaults[q.id] ?? q.choices[0]!.value
+  for (const q of props.flow.questions) next[q.id] = preset[q.id] ?? q.choices[0]!.value
   answers.value = next
   keepCue.value = false
   showIpa.value = false
 }
-watch(() => [props.cue.from, props.cue.trigger], reset, { immediate: true })
+watch(() => [props.cue?.from, props.cue?.trigger, props.command?.from, props.flow.id], reset, { immediate: true })
 
-const outcome = computed(() => props.flow.outcomes[answerKey(props.flow.questions, answers.value)])
+/** An answer that no drop-in fits (*None of these* for an ought): the card says so. */
+const none = computed(() => {
+  for (const q of props.flow.questions) {
+    const note = q.choices.find((c) => c.value === answers.value[q.id])?.none
+    if (note) return note
+  }
+  return undefined
+})
 
-const canDrop = computed(() =>
-  props.trigger.dropCue &&
-  props.cue.sentence.tokens.some((t) => t.word && (t.to <= props.cue.from || t.from >= props.cue.to)),
-)
+const outcome = computed(() => (none.value ? undefined : props.flow.outcomes[answerKey(props.flow.questions, answers.value)]))
+const placement = computed(() => outcome.value?.placement ?? props.trigger?.placement ?? 'after-clause')
+
+const canDrop = computed(() => {
+  const cue = props.cue
+  if (!cue || !props.trigger?.dropCue || placement.value !== 'after-clause') return false
+  return cue.sentence.tokens.some((t) => t.word && (t.to <= cue.from || t.from >= cue.to))
+})
 
 const changes = computed<PlacedChange[]>(() => {
   const o = outcome.value
   if (!o) return []
-  const placement = o.placement ?? props.trigger.placement
-  return placeDropIn(props.cue, o.form, {
-    placement,
-    joiner: props.trigger.joiner,
-    dropCue: canDrop.value && !keepCue.value && placement === 'after-clause',
+  if (props.command) return placeAtCommand(props.command.line, props.command.lineFrom, props.command, o.form)
+  return placeDropIn(props.cue!, o.form, {
+    placement: placement.value,
+    joiner: props.trigger!.joiner,
+    dropCue: canDrop.value && !keepCue.value,
     noun: noun.value,
   })
 })
 
+/** A suffix with no English verb to join. */
+const noHost = computed(() => Boolean(outcome.value && !changes.value.length))
+
 const preview = computed(() => {
-  const { text, form } = applyChanges(props.cue.sentence.text, changes.value, props.cue.sentence.from)
+  const { text, form } = applyChanges(context.value.text, changes.value, context.value.from)
   if (!form) return { before: text, form: '', after: '' }
   return { before: text.slice(0, form.from), form: text.slice(form.from, form.to), after: text.slice(form.to) }
 })
 
-const ipa = computed(() => (outcome.value ? previewPhonemes(outcome.value.form).words.map((w) => w.ipa).join(' ') : ''))
+const ipa = computed(() => {
+  const form = outcome.value?.form
+  if (!form || !/^\p{L}/u.test(form)) return ''
+  return previewPhonemes(form).words.map((w) => w.ipa).join(' ')
+})
 
 /** `*see*` → italic runs, for the gap line. */
 const gapParts = computed(() =>
-  props.trigger.gap.split(/(\*[^*]+\*)/).filter(Boolean).map((part) =>
+  (props.trigger?.gap ?? '').split(/(\*[^*]+\*)/).filter(Boolean).map((part) =>
     part.length > 2 && part.startsWith('*') && part.endsWith('*') ? { text: part.slice(1, -1), em: true } : { text: part, em: false },
   ),
 )
 
+const heading = computed(() => (props.command ? `/${props.command.name}` : `“${props.cue!.text}”`))
 const learnHref = computed(() => withBase(`/${props.lesson.learn}`))
 
 function titleOf(id: string): string {
@@ -117,7 +154,7 @@ function titleOf(id: string): string {
 }
 
 function use() {
-  if (outcome.value) emit('use', changes.value, outcome.value.form)
+  if (outcome.value && changes.value.length) emit('use', changes.value, outcome.value.form)
 }
 
 /** Focus the first answer, or *Use this* when there is nothing to choose. */
@@ -135,15 +172,15 @@ defineExpose({ focus, root })
     ref="root"
     class="card"
     role="dialog"
-    :aria-label="`${lesson.title}: ${cue.text}`"
+    :aria-label="`${lesson.title}: ${heading}`"
     :style="{ '--cl-tone': `var(--cl-tone-${tone})` }"
     @keydown.esc.stop.prevent="emit('close')"
   >
     <header class="card-head">
       <span class="lesson">{{ lesson.title }}</span>
-      <span class="cue">“{{ cue.text }}”</span>
+      <span class="cue">{{ heading }}</span>
     </header>
-    <p class="gap">
+    <p v-if="trigger" class="gap">
       <template v-for="(part, i) in gapParts" :key="i"><em v-if="part.em">{{ part.text }}</em><template v-else>{{ part.text }}</template></template>
     </p>
 
@@ -157,27 +194,29 @@ defineExpose({ focus, root })
       </fieldset>
     </template>
 
-    <div v-if="outcome" class="preview">
-      <p class="sentence" aria-live="polite">
+    <p v-if="none" class="preview none" aria-live="polite">{{ none }}</p>
+    <div v-else-if="outcome" class="preview">
+      <p v-if="noHost" class="sentence" aria-live="polite">Type <code>/{{ command?.name ?? 'can' }}</code> right after the English verb it is about.</p>
+      <p v-else class="sentence" aria-live="polite">
         {{ preview.before }}<mark>{{ preview.form }}</mark>{{ preview.after }}
       </p>
       <p class="gloss">
         <code>{{ outcome.form }}</code>
         <span>{{ outcome.gloss.join(' · ') }}</span>
-        <button type="button" class="say" :aria-expanded="showIpa" @click="showIpa = !showIpa">Say it</button>
+        <button v-if="ipa" type="button" class="say" :aria-expanded="showIpa" @click="showIpa = !showIpa">Say it</button>
       </p>
-      <p v-if="showIpa" class="ipa">/{{ ipa }}/ <span class="ipa-note">every vowel is its own beat</span></p>
-      <label v-if="canDrop && (outcome.placement ?? trigger.placement) === 'after-clause'" class="keep" for="cl-keep-cue">
+      <p v-if="showIpa && ipa" class="ipa">/{{ ipa }}/ <span class="ipa-note">every vowel is its own beat</span></p>
+      <label v-if="canDrop" class="keep" for="cl-keep-cue">
         <input id="cl-keep-cue" v-model="keepCue" type="checkbox" />
-        Keep “{{ cue.text }}” in the sentence
+        Keep “{{ cue!.text }}” in the sentence
       </label>
     </div>
 
     <div class="actions">
-      <button type="button" class="use" :disabled="!outcome" @click="use">Use this</button>
+      <button v-if="!none" type="button" class="use" :disabled="!outcome || noHost" @click="use">Use this</button>
       <button type="button" class="leave" @click="emit('leave')">Leave it in English</button>
       <a class="learn" :href="learnHref">Learn this</a>
-      <button type="button" class="never" @click="emit('never')">Never for “{{ cue.text }}”</button>
+      <button v-if="cue" type="button" class="never" @click="emit('never')">Never for “{{ cue.text }}”</button>
     </div>
 
     <div v-if="also.length" class="also">
@@ -253,6 +292,11 @@ defineExpose({ focus, root })
 
 .sentence {
   margin: 0;
+  line-height: 1.5;
+}
+
+.preview.none {
+  margin-top: 0;
   line-height: 1.5;
 }
 

@@ -2,27 +2,56 @@
 // - every flow choice resolves to a cheat sheet cell, and every answer path to a form;
 // - every trigger's lesson, flow, defaults, patterns, and gap sentence exist;
 // - gap coverage: each italic English phrase in a cued lesson's `## The gap` raises one of
-//   that lesson's cues, or matches a row marked exempt with its reason.
+//   that lesson's cues, or matches a row marked exempt with its reason;
+// - every slash command names a flow and answers it has.
+// Also gathers what reading back needs: each form's English, each cued lesson's practice items,
+// and the English words close enough to a form to look like a near miss.
 // Node only: the page loads the result through a VitePress data loader.
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
+
+import nlp from "compromise";
 
 import { parseCsv } from "../csv.js";
 import { REPO_ROOT, readData } from "../repo-paths.js";
 import { compileTrigger, parsePattern, sentenceCues, sentences, type CompiledTrigger } from "./match.js";
 import type { Joiner, Placement } from "./place.js";
+import { findDropIns, findNearMisses } from "./read-back.js";
 import { plain, readFormula, readSheet, readSwap, resolveRef, type Sheet, type SheetRef } from "./sheet.js";
-import { answerKey, type EditorData, type EditorFlow, type EditorLesson, type EditorOutcome, type EditorQuestion, type EditorTrigger } from "./types.js";
+import {
+  answerKey,
+  dependsKey,
+  type EditorChoice,
+  type EditorCommand,
+  type EditorData,
+  type EditorFlow,
+  type EditorGloss,
+  type EditorLesson,
+  type EditorOutcome,
+  type EditorQuestion,
+  type EditorTrigger,
+  type PracticeItem,
+} from "./types.js";
 
 const CLARITISH = join(REPO_ROOT, "docs", "grammar", "claritish");
-const PLACEMENTS: readonly Placement[] = ["after-clause", "after-noun"];
+const PLACEMENTS: readonly Placement[] = ["after-clause", "after-noun", "suffix", "before-word"];
 const JOINERS: readonly Joiner[] = ["space", "comma", "sentence"];
+/** Letters typed before autocomplete offers a drop-in (`EditorData.autocompleteMin`). */
+const AUTOCOMPLETE_MIN = 4;
 
 type FormulaPart = { formula: SheetRef; swap?: SheetRef; slots: Record<string, SheetRef> };
 type Part = SheetRef | FormulaPart;
 type FlowSpec = {
   lesson: string;
-  questions: { id: string; prompt: string; choices: { value: string; label?: string; requires?: "owned-noun" }[] }[];
+  /** Slash command name → answers it preselects. */
+  commands?: Record<string, Record<string, string>>;
+  questions: {
+    id: string;
+    prompt: string;
+    /** Choice labels that read an earlier answer (`{kind}`) as well as the choice (`{source}`). */
+    labelFrom?: SheetRef;
+    choices: { value: string; label?: string; requires?: EditorChoice["requires"]; none?: string }[];
+  }[];
   forms: { when?: Record<string, string>; placement?: Placement; parts: Part[]; gloss: SheetRef[] }[];
 };
 
@@ -34,6 +63,8 @@ export type EditorSources = {
   index: string;
   /** Lesson Markdown by id (file stem). */
   lessons: Map<string, string>;
+  /** English words to keep out of near misses: the WordNet index's headwords and compromise's lexicon. */
+  englishWords: readonly string[];
 };
 
 export function readSources(): EditorSources {
@@ -46,7 +77,23 @@ export function readSources(): EditorSources {
     sheet: readFileSync(join(CLARITISH, "cheat-sheet.md"), "utf8"),
     index,
     lessons,
+    englishWords: englishWords(),
   };
+}
+
+let englishCache: string[] | undefined;
+
+/** Lowercase single English words from the English helper's WordNet index and compromise's lexicon. */
+function englishWords(): string[] {
+  if (!englishCache) {
+    // Every quoted word in the index: its headwords, and the lexicon senses they point to (*theater*).
+    const wordnet = readFileSync(join(REPO_ROOT, "src", "generated", "english-wordnet.json"), "utf8");
+    const lexicon = (nlp as unknown as { model(): { one: { lexicon: Record<string, unknown> } } }).model().one.lexicon;
+    const quoted = [...wordnet.matchAll(/"(\p{Ll}+)"/gu)].map((m) => m[1]!);
+    const words = new Set([...quoted, ...Object.keys(lexicon)].filter((w) => /^\p{Ll}+$/u.test(w)));
+    englishCache = [...words];
+  }
+  return englishCache;
 }
 
 /** Lesson ids in the intro page's lesson list, then its other lesson links (the bonus). */
@@ -64,6 +111,12 @@ function section(markdown: string, id: string): string | undefined {
   return (end < 0 ? rest : rest.slice(0, end)).trim();
 }
 
+/** A lesson's practice items: `**1.** *Prompt.* (note)`, then the answer in `::: details`. */
+export function lessonPractice(markdown: string): Omit<PracticeItem, "forms">[] {
+  const re = /^\*\*\d+\.\*\* \*(.+?)\*\s*(?:\((.+)\))?\s*\n\n::: details Show answer\n(.+)\n:::/gm;
+  return [...markdown.matchAll(re)].map((m) => ({ prompt: m[1]!, note: m[2] ?? "", answer: m[3]!.replace(/`/g, "").trim() }));
+}
+
 function gapSentences(gap: string): string[] {
   return gap.replace(/\s+/g, " ").split(/(?<=[.!?])\s+(?=[\p{Lu}*])/u);
 }
@@ -72,11 +125,16 @@ function splitList(cell: string | undefined): string[] {
   return (cell ?? "").split("|").map((s) => s.trim()).filter(Boolean);
 }
 
-/** Every combination of one choice per question. */
+/** Every combination of one choice per question, leaving out choices that end in no drop-in. */
 function answerPaths(questions: FlowSpec["questions"]): Record<string, string>[] {
   let paths: Record<string, string>[] = [{}];
-  for (const q of questions) paths = paths.flatMap((p) => q.choices.map((c) => ({ ...p, [q.id]: c.value })));
+  for (const q of questions) paths = paths.flatMap((p) => q.choices.filter((c) => !c.none).map((c) => ({ ...p, [q.id]: c.value })));
   return paths;
+}
+
+/** `{id}` placeholders in a ref. */
+function placeholders(ref: SheetRef): string[] {
+  return [ref.row, ref.col, ref.cell, ref.line].flatMap((v) => [...(v ?? "").matchAll(/\{([\w-]+)\}/g)].map((m) => m[1]!));
 }
 
 function resolvePart(sheet: Sheet, part: Part, answers: Record<string, string>): string {
@@ -101,25 +159,45 @@ function resolvePart(sheet: Sheet, part: Part, answers: Record<string, string>):
   return out.join("");
 }
 
-/** The first ref in a form that reads `{question}`, for a choice with no label of its own. */
+/** The first ref in a form that reads `{question}` and no other answer, for a choice with no label of its own. */
 function labelRef(form: FlowSpec["forms"][number], question: string): SheetRef | undefined {
   const refs: SheetRef[] = [...form.gloss, ...form.parts.flatMap((p) => ("formula" in p ? Object.values(p.slots) : [p]))];
-  return refs.find((r) => [r.row, r.col, r.cell].some((v) => v?.includes(`{${question}}`)));
+  return refs.find((r) => placeholders(r).length > 0 && placeholders(r).every((id) => id === question));
 }
 
 function buildFlow(sheet: Sheet, id: string, spec: FlowSpec, problems: string[]): EditorFlow {
   const where = `claritish-flows.json ${id}`;
-  const questions: EditorQuestion[] = spec.questions.map((q) => {
+  const questions: EditorQuestion[] = spec.questions.map((q, qi) => {
     if (!q.choices.length) problems.push(`${where}: question ${q.id} has no choices`);
     const values = q.choices.map((c) => c.value);
     if (new Set(values).size !== values.length) problems.push(`${where}: question ${q.id} repeats a choice`);
+    const dependsOn = q.labelFrom ? [...new Set(placeholders(q.labelFrom).filter((id) => id !== q.id))] : [];
+    const earlier = spec.questions.slice(0, qi);
+    for (const id of dependsOn) {
+      if (!earlier.some((e) => e.id === id)) problems.push(`${where}: question ${q.id} labels read {${id}}, which is not an earlier question`);
+    }
+    const combos = answerPaths(earlier.filter((e) => dependsOn.includes(e.id)));
     return {
       id: q.id,
       prompt: q.prompt,
+      ...(dependsOn.length ? { dependsOn } : {}),
       choices: q.choices.map((c) => {
+        const labels: Record<string, string> = {};
+        if (q.labelFrom && !c.none) {
+          for (const combo of combos) {
+            try {
+              const label = resolveRef(sheet, q.labelFrom, { ...combo, [q.id]: c.value });
+              if (label) labels[dependsKey(dependsOn, combo)] = label;
+            } catch (err) {
+              problems.push(`${where}: choice ${q.id}=${c.value}: ${(err as Error).message}`);
+            }
+          }
+        }
         let label = c.label;
+        const ref = labelRef(spec.forms[0]!, q.id);
+        // A label that always depends on an earlier answer shows the one for the first choices.
+        if (label === undefined && !ref && combos.length) label = labels[dependsKey(dependsOn, combos[0]!)];
         if (label === undefined) {
-          const ref = labelRef(spec.forms[0]!, q.id);
           try {
             if (!ref) throw new Error("no ref reads this question");
             label = resolveRef(sheet, ref, { [q.id]: c.value });
@@ -128,7 +206,13 @@ function buildFlow(sheet: Sheet, id: string, spec: FlowSpec, problems: string[])
             label = c.value;
           }
         }
-        return { value: c.value, label, ...(c.requires ? { requires: c.requires } : {}) };
+        return {
+          value: c.value,
+          label,
+          ...(c.requires ? { requires: c.requires } : {}),
+          ...(c.none ? { none: c.none } : {}),
+          ...(Object.keys(labels).length ? { labels } : {}),
+        };
       }),
     };
   });
@@ -212,7 +296,21 @@ export function buildEditorData(sources: EditorSources = readSources()): { data:
     const gapText = section(markdown, "gap");
     const gap = gapText ? gapSentences(gapText)[Number(row.gap_sentence) - 1] : undefined;
     if (!gap) problems.push(`${where}: ${lesson}.md has no gap sentence ${row.gap_sentence}`);
-    triggers.push({ id: row.id!, lesson, cues, exclude, flow: row.flow!, defaults, placement, joiner, dropCue: row.drop_cue === "yes", gap: gap ?? "" });
+    const mirror = (row.mirror ?? "").split("/").map((s) => s.trim());
+    if (mirror.length !== 2 || !mirror[0] || !mirror[1]) problems.push(`${where}: mirror must be \`one/many\` (\`unmarked guess/unmarked guesses\`)`);
+    triggers.push({
+      id: row.id!,
+      lesson,
+      cues,
+      exclude,
+      flow: row.flow!,
+      defaults,
+      placement,
+      joiner,
+      dropCue: row.drop_cue === "yes",
+      gap: gap ?? "",
+      mirror: [mirror[0] ?? "", mirror[1] ?? ""],
+    });
   }
 
   // Gap coverage: the English words a cued lesson's gap names.
@@ -235,10 +333,47 @@ export function buildEditorData(sources: EditorSources = readSources()): { data:
     .map((id) => ({ id, title: plain(/^#\s+(.*?)\s*(?:\{#[\w-]+\})?\s*$/m.exec(sources.lessons.get(id)!)?.[1] ?? id), learn: `claritish/${id}.html#forms` }));
 
   const formsByLesson: Record<string, string[]> = {};
+  const glossary: Record<string, EditorGloss> = {};
   for (const flow of Object.values(flows)) {
     const forms = new Set([...(formsByLesson[flow.lesson] ?? []), ...Object.values(flow.outcomes).map((o) => o.form)]);
     formsByLesson[flow.lesson] = [...forms];
+    for (const outcome of Object.values(flow.outcomes)) glossary[outcome.form] ??= { gloss: outcome.gloss, lesson: flow.lesson };
   }
 
-  return { data: { lessons, triggers, flows, formsByLesson }, problems };
+  const commands: EditorCommand[] = [];
+  for (const [id, spec] of Object.entries(flowSpecs)) {
+    const flow = flows[id]!;
+    for (const [name, defaults] of Object.entries(spec.commands ?? {})) {
+      const where = `claritish-flows.json ${id}: command /${name}`;
+      if (!/^[a-z]+$/.test(name)) problems.push(`${where}: a command name is lowercase letters`);
+      if (commands.some((c) => c.name === name)) problems.push(`${where}: another flow has /${name}`);
+      const picked: string[] = [];
+      for (const [q, v] of Object.entries(defaults)) {
+        const choice = flow.questions.find((x) => x.id === q)?.choices.find((c) => c.value === v);
+        if (!choice) problems.push(`${where}: \`${q}=${v}\` names no question and choice`);
+        else picked.push(choice.label);
+      }
+      const title = lessons.find((l) => l.id === flow.lesson)?.title ?? flow.lesson;
+      commands.push({ name, flow: id, defaults, hint: [title, ...picked].join(": ") });
+    }
+  }
+
+  const known = new Set(Object.keys(glossary));
+  const practice: Record<string, PracticeItem[]> = {};
+  for (const lesson of lessons) {
+    practice[lesson.id] = lessonPractice(sources.lessons.get(lesson.id)!).map((item) => ({
+      ...item,
+      forms: findDropIns(item.answer, known).map((d) => d.form),
+    }));
+  }
+
+  // English words a near miss would flag (*thunder* for `thuner`), or that start a form and would
+  // open autocomplete (*than*): recomputed from the forms, so a new form or a respelling brings its own.
+  const wordForms = [...known].filter((f) => /^\p{Ll}/u.test(f));
+  const english = [
+    ...findNearMisses(sources.englishWords.join(" "), known).map((m) => m.text),
+    ...sources.englishWords.filter((w) => w.length >= AUTOCOMPLETE_MIN && wordForms.some((f) => f.startsWith(w) && f !== w)),
+  ];
+
+  return { data: { lessons, triggers, flows, commands, formsByLesson, glossary, practice, english, autocompleteMin: AUTOCOMPLETE_MIN }, problems };
 }

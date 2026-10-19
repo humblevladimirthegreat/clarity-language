@@ -4,7 +4,7 @@ import { describe, it } from "node:test";
 import { buildEditorData } from "./data.js";
 import { compileTrigger, createScanner, type Cue } from "./match.js";
 import { ownedNoun } from "./owned-noun.js";
-import { applyChanges, placeDropIn, type PlaceOptions } from "./place.js";
+import { applyChanges, placeAtCommand, placeDropIn, type PlaceOptions } from "./place.js";
 
 const { data } = buildEditorData();
 const scanner = createScanner(data.triggers.map(compileTrigger), data.lessons.map((l) => l.id));
@@ -83,5 +83,63 @@ describe("after-noun placement", () => {
 
   it("stops the noun phrase before a date word", () => {
     assert.equal(ownedNoun("Grateful for my running shoes today.")?.text, "my running shoes");
+  });
+});
+
+describe("suffix placement", () => {
+  const suffix = (text: string) => place(text, { placement: "suffix", dropCue: false }).replace(FORM, "-S");
+  const cases: [string, string][] = [
+    ["I can't sing.", "I sing-S."],
+    ["He can't read music.", "He read-S music."],
+    ["I can't even breathe.", "I even breathe-S."],
+    ["Can't sleep.", "Sleep-S."],
+    ["I cannot drink milk", "I drink-S milk"],
+    ["I couldn't sleep.", "I sleep-S."],
+    ["I'm not able to focus.", "I'm focus-S."],
+  ];
+  for (const [input, output] of cases) {
+    it(`“${input}” → “${output}”, always dropping the cue`, () => assert.equal(suffix(input), output));
+  }
+
+  it("places nothing when no verb follows", () => {
+    assert.deepEqual(placeDropIn(cueIn("I can't"), FORM, { placement: "suffix", joiner: "space", dropCue: true }), []);
+  });
+});
+
+describe("before-word placement", () => {
+  const mark = (text: string, dropCue: boolean) => applyChanges(text, placeDropIn(cueIn(text), "%", { placement: "before-word", joiner: "space", dropCue })).text;
+
+  it("puts the mark at the start of the sentence", () => {
+    assert.equal(mark("You're the worst.", false), "%You're the worst.");
+    assert.equal(mark("Long day. You're the worst.", false), "Long day. %You're the worst.");
+  });
+
+  it("drops a laugh at either end", () => {
+    assert.equal(mark("Mondays again lol", true), "%Mondays again");
+    assert.equal(mark("lol mondays again", true), "%mondays again");
+    assert.equal(mark("Lol mondays again", true), "%Mondays again");
+  });
+});
+
+describe("command placement", () => {
+  function command(line: string, form: string): string {
+    const m = /\/[a-z]+/.exec(line)!;
+    return applyChanges(line, placeAtCommand(line, 0, { from: m.index, to: m.index + m[0].length }, form)).text;
+  }
+
+  it("puts a word in the command's place", () => {
+    assert.equal(command("The store is closed /sure.", "FORM"), "The store is closed FORM.");
+    assert.equal(applyChanges("/sureit rained", placeAtCommand("/sureit rained", 0, { from: 0, to: 5 }, "FORM")).text, "FORM it rained");
+  });
+
+  it("joins a suffix to the word before it", () => {
+    assert.equal(command("I sing /can in public", "-xo"), "I sing-xo in public");
+    assert.equal(command("I sing/can", "-xo"), "I sing-xo");
+    assert.deepEqual(placeAtCommand("/can sing", 0, { from: 0, to: 4 }, "-xo"), []);
+  });
+
+  it("joins a tone mark to the word after it", () => {
+    assert.equal(command("/tone You're the worst.", "%"), "%You're the worst.");
+    assert.equal(command("We went /tone Tuesday.", "&"), "We went &Tuesday.");
   });
 });

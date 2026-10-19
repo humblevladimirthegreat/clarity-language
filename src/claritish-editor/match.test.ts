@@ -63,6 +63,23 @@ describe("cues", () => {
     ["Thanks for the ride!", "thanks", "Thanks"],
     ["I'm so sorry I missed it.", "sorry", "I'm so sorry"],
     ["I feel like something's wrong.", "i-feel-like", "I feel like"],
+    ["I can't sing in front of people.", "cant", "can't"],
+    ["I couldn't sleep last night.", "cant", "couldn't"],
+    ["I'm unable to focus today.", "cant", "unable to"],
+    ["She isn't able to drive yet.", "cant", "isn't able to"],
+    ["We're not allowed to park here.", "forbidden", "not allowed"],
+    ["I have to finish the report.", "required", "have to"],
+    ["I borrowed your car without asking.", "assumed-ok", "without asking"],
+    ["You should call her.", "you-should", "You should"],
+    ["She should apologize.", "should", "should"],
+    ["I did it for you.", "did-it-for", "I did it for you"],
+    ["I want to visit in March.", "want", "I want to"],
+    ["I'll call her tomorrow.", "plan", "I'll"],
+    ["I've decided to quit.", "decided", "I've decided"],
+    ["I'm going to try running.", "try", "I'm going to try"],
+    ["Let's try the new place.", "trial", "Let's try"],
+    ["Mondays again lol", "laughing", "lol"],
+    ["See you soon <3", "hearts", "<3"],
   ];
   for (const [text, trigger, cue] of cases) {
     it(`flags *${cue}* in “${text}”`, () => {
@@ -84,7 +101,6 @@ describe("cues", () => {
     "I believe in you.",
     "I feel like going for a walk.",
     "I feel like a fool.",
-    "Maybe we should leave early.",
     "I might go to the gym.",
     "She speaks clearly.",
     "Remember to call Mom.",
@@ -92,12 +108,30 @@ describe("cues", () => {
     'He said "I think it is broken" and left.',
     "I thought about it all day.",
     "The package arrived on Friday.",
+    "I can't wait to see you.",
+    "That can't be right.",
+    "Why can't I sleep?",
+    "I couldn't care less.",
+    "It couldn't be better.",
+    "No, I can't.",
+    "I'm going to the store.",
+    "I'll be fine.",
+    "I should have called.",
+    "It should be fine.",
+    "Should I call her?",
+    "You don't have to come.",
+    "She did it for you.",
+    "I got to see the coast.",
   ];
   for (const text of quiet) {
     it(`raises nothing for “${text}”`, () => {
       assert.deepEqual(scan(text).map((m) => m.cue.text), []);
     });
   }
+
+  it("marks *maybe we should* for the should, not the maybe", () => {
+    assert.deepEqual(scan("Maybe we should leave early.").map((m) => m.cue.trigger), ["you-should"]);
+  });
 
   it("puts one mark on a sentence, from the earliest lesson, and the rest under Also here", () => {
     const [mark, ...rest] = scan("Apparently I think the store is closed.");
@@ -124,5 +158,7 @@ describe("cues", () => {
   it("does not flag a sentence that already has a drop-in from the cue's lesson", () => {
     const form = data.formsByLesson[order[0]!]![0]!;
     assert.equal(scan(`I think it rained ${form}.`).length, 0);
+    assert.equal(scan("%You're the worst.").length, 0);
+    assert.equal(scan("I can't sing, but I drive-xe.").length, 0);
   });
 });
