@@ -75,3 +75,24 @@ Lessons carry no full Agazan sentences and no morph gloss lines. Explain a drop-
 <a id="back-references"></a>
 
 Lessons carry no numbers. A lesson may name an earlier lesson by title, in plain text, when it reuses its form ("start from a thanks or sorry word from Thanks and sorry that say why"), as a reminder of one word, not a recap. No links between lessons, no links into the grammar, and no previews of lessons ahead outside the list on the intro page.
+
+## Editor cues and cards
+<a id="editor-cards"></a>
+
+The [journal editor](grammar-docs.md#claritish-track) is for private journaling: the writer talking to themselves. Its cues and card questions are hand-written data, its forms are not.
+
+**Cues** (`data/claritish-triggers.csv`, one row per English habit):
+
+- `cue`: patterns separated by ` | `. Words are space-separated; `a/b` is a choice of words, `(…)` an optional word, `*` any letters inside a word (`*ing`), and punctuation is its own word (`sorry ?`). A contraction is one word, so write `I'm sorry | I am sorry`, not `I'm/I am sorry`.
+- `exclude`: patterns for the common uses that are not the trap (*I think so*, *thanks to the rain*, *sorry to hear*). An exclusion that overlaps a cue silences it.
+- `flow` and `defaults`: the question flow, and any answer the cue already implies (`channel=reported` for *I heard*).
+- `placement` (`after-clause`, `after-noun`), `join` (`space`, `comma`, or `sentence` for a drop-in that follows the sentence, as the thanks and sorry examples do), and `drop_cue` (`yes` when the lesson's examples leave the English cue out).
+- `gap_sentence`: which sentence of the lesson's `## The gap` the card shows, so the trap is never written twice.
+- `exempt`: a reason, for an italic gap phrase that is not a cue (the drop-in's own meaning). Such a row raises nothing.
+
+Every italic phrase in a cued lesson's gap must raise one of that lesson's cues or match an exempt row; the build checks it. A cue with no fitting drop-in is not a cue: it goes to the grammar gap process, not into the editor.
+
+**Flows** (`data/claritish-flows.json`): each question's answers name a place on the [cheat sheet](../grammar/claritish/cheat-sheet.md), never a spelling: a row label, a column header (`-l`), a cell by its English (`autonomy`), or a prose line (the `Sake word:` formula). `{question}` in a reference is filled with the answer. A choice with no `label` takes the sheet's own English.
+
+**Card copy:** questions ask what the writer means (*What will you do about the guess?*), with the lesson's default answer first. Use the grammar's terms as the lessons do, and nothing that implies English is a mistake: no *fix*, *error*, or *should*. *Leave it in English* is a normal outcome.
+

@@ -29,6 +29,8 @@ export default defineConfig({
     resolve: {
       alias: {
         '@data': dataDir,
+        '@claritish-editor-browser': `${srcDir}/claritish-editor/browser.ts`,
+        '@claritish-owned-noun': `${srcDir}/claritish-editor/owned-noun.ts`,
         '@english-helper-browser': `${srcDir}/english-helper/browser.ts`,
         '@lexicon-search': `${srcDir}/lexicon-search.ts`,
         '@learner-name': `${srcDir}/learner-name.ts`,
@@ -79,6 +81,7 @@ export default defineConfig({
           { text: 'Bonus: Tone marks', link: '/claritish/tone-marks' },
           { text: 'Learn the full language', link: '/claritish/learn-agazan' },
           { text: 'Cheat sheet', link: '/claritish/cheat-sheet' },
+          { text: 'Journal editor', link: '/claritish/editor' },
         ],
       },
       {

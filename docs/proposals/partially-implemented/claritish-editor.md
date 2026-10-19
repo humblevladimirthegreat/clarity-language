@@ -1,7 +1,7 @@
 # Proposal: Claritish writing editor
 
-**Status:** PROPOSED. Nothing here is built.  
-**Related:** [Claritish track](../meta/grammar-docs.md#claritish-track) (what a drop-in is, placement, the cheat sheet), [Claritish wording and voice](../meta/claritish-style.md), [the gap sections](../grammar/claritish/index.md#lessons) of each lesson, [`scripts/lint-cheat-sheets.ts`](../../scripts/lint-cheat-sheets.ts), `syntax-highlighting.md` (a separate idea for structure highlighting in full Agazan).  
+**Status:** PARTIALLY IMPLEMENTED. Phase 1 is built: the [journal editor](../../grammar/claritish/editor.md) covers How sure are you?, How do you know?, and Thanks and sorry. Phases 2 and 3 are proposed. Where Phase 1 differs from the plan below, the plan says so under [Phase 1 as built](#phase-1-as-built).  
+**Related:** [Claritish track](../../meta/grammar-docs.md#claritish-track) (what a drop-in is, placement, the cheat sheet), [Claritish wording and voice](../../meta/claritish-style.md), [the gap sections](../../grammar/claritish/index.md#lessons) of each lesson, [`scripts/lint-cheat-sheets.ts`](../../../scripts/lint-cheat-sheets.ts), `syntax-highlighting.md` (a separate idea for structure highlighting in full Agazan).  
 **Design authority:** none. The editor adds no forms. It points at lessons and drop-ins that already exist.
 
 ## Problem
@@ -16,7 +16,7 @@ Each lesson's `## The gap` section already names those English words. A client-s
 
 1. **Spot the habit where it happens.** Mark English cues that a lesson's gap names, while the writer is typing.
 2. **Help choose, don't hand over a table.** Ask the question the lesson implies and build the drop-in from the answer.
-3. **Never call English wrong.** Plain English stays a first-class choice, as every lesson says ([say when to leave it out](../meta/claritish-style.md#forms)).
+3. **Never call English wrong.** Plain English stays a first-class choice, as every lesson says ([say when to leave it out](../../meta/claritish-style.md#forms)).
 4. **Stay in step with the lessons.** No spelling, gloss, or trap description is written twice. A lesson edit or a root respelling reaches the editor through the build.
 5. **Private by construction.** Text never leaves the browser: no server, no analytics on content.
 
@@ -36,17 +36,17 @@ The editor scans each sentence for **cues**, English words and phrases from the 
 
 | Lesson | Example cues |
 |--------|--------------|
-| [How sure are you?](../grammar/claritish/could-be.md) | *I think, probably, maybe, I guess, might, definitely* |
-| [How do you know?](../grammar/claritish/how-you-know.md) | *apparently, I heard, they say, I remember, must have, obviously, I feel like* |
-| [Labels](../grammar/claritish/labels.md) | pronoun + *is / are / was* + trait word: *he's a liar, you're so lazy, I'm an idiot* |
-| [Can and can't](../grammar/claritish/can-and-cant.md) | *can't, cannot, unable to, not able to* |
-| [Thanks and sorry](../grammar/claritish/thanks-and-sorry.md) | *thanks, thank you, sorry, I apologize* |
-| [Allowed, required, agreed](../grammar/claritish/allowed-required-agreed.md) | *can I, may I, you have to, must, not allowed, is that OK* |
-| [Oughts and motives](../grammar/claritish/oughts-and-motives.md) | *you should, ought to, I did it for you* (the writer's own act only) |
-| [Wants and plans](../grammar/claritish/wants-and-plans.md) | *I want to, I'd like to, I'm going to, I will, planning to* |
-| [Decisions and tries](../grammar/claritish/decisions-and-tries.md) | *I've decided, I'll try, let's try* |
-| [Feelings](../grammar/claritish/feelings.md) | emotion words: *anxious, resentful, proud, stressed, upset* |
-| [Tone marks](../grammar/claritish/tone-marks.md) | *lol, jk, /s*, a winking emoji, ALL CAPS, *!!!*, *you're the worst* |
+| [How sure are you?](../../grammar/claritish/could-be.md) | *I think, probably, maybe, I guess, might, definitely* |
+| [How do you know?](../../grammar/claritish/how-you-know.md) | *apparently, I heard, they say, I remember, must have, obviously, I feel like* |
+| [Labels](../../grammar/claritish/labels.md) | pronoun + *is / are / was* + trait word: *he's a liar, you're so lazy, I'm an idiot* |
+| [Can and can't](../../grammar/claritish/can-and-cant.md) | *can't, cannot, unable to, not able to* |
+| [Thanks and sorry](../../grammar/claritish/thanks-and-sorry.md) | *thanks, thank you, sorry, I apologize* |
+| [Allowed, required, agreed](../../grammar/claritish/allowed-required-agreed.md) | *can I, may I, you have to, must, not allowed, is that OK* |
+| [Oughts and motives](../../grammar/claritish/oughts-and-motives.md) | *you should, ought to, I did it for you* (the writer's own act only) |
+| [Wants and plans](../../grammar/claritish/wants-and-plans.md) | *I want to, I'd like to, I'm going to, I will, planning to* |
+| [Decisions and tries](../../grammar/claritish/decisions-and-tries.md) | *I've decided, I'll try, let's try* |
+| [Feelings](../../grammar/claritish/feelings.md) | emotion words: *anxious, resentful, proud, stressed, upset* |
+| [Tone marks](../../grammar/claritish/tone-marks.md) | *lol, jk, /s*, a winking emoji, ALL CAPS, *!!!*, *you're the worst* |
 
 A cue gets a soft dotted underline in the lesson's colour, never a red squiggle. To keep the noise down:
 
@@ -70,7 +70,7 @@ Hover, or the keyboard shortcut, opens a card on the marked cue:
 3. **Preview** of the sentence with the drop-in in place, and the English gloss of the form.
 4. **Actions:** *Use this*, **Leave it in English** (as prominent as *Use this*), ▶ pronounce, *Learn this* (link to the lesson anchor).
 
-*Use this* places the drop-in the way the lessons do ([placement](../meta/grammar-docs.md#claritish-track)): after the clause for stance words, as a hyphen suffix on the English host for label scope and ability, right after the English noun for a thanks to something the writer owns, and before the word it colours for tone marks. Where the lesson's examples drop the English cue (*I think the store is closed* → *The store is closed `thovum`*), the preview drops it too by default, matching the lesson, and the writer can keep it with one click.
+*Use this* places the drop-in the way the lessons do ([placement](../../meta/grammar-docs.md#claritish-track)): after the clause for stance words, as a hyphen suffix on the English host for label scope and ability, right after the English noun for a thanks to something the writer owns, and before the word it colours for tone marks. Where the lesson's examples drop the English cue (*I think the store is closed* → *The store is closed `thovum`*), the preview drops it too by default, matching the lesson, and the writer can keep it with one click.
 
 Drop-ins are written plainly in the editor, without backticks, as in real use.
 
@@ -78,7 +78,7 @@ Drop-ins are written plainly in the editor, without backticks, as in real use.
 
 - **Hover a drop-in** to see its gloss and the lesson it comes from.
 - **Near misses.** A word that looks like a drop-in but is not one gets a suggestion: `thovom` → *did you mean `thovum`?*; `lied-ta` → *no `t` in Agazan: `-tha`?*; `lied-thal` → *suffixes take no ending*. Matching is against the generated form list, by edit distance, not against the parser.
-- **Pronounce** any drop-in with the existing [TTS](../../src/tts/browser.ts).
+- **Pronounce** any drop-in with the existing [TTS](../../../src/tts/browser.ts).
 
 ### Writing without a cue
 
@@ -87,7 +87,7 @@ Drop-ins are written plainly in the editor, without backticks, as in real use.
 
 ### Feelings composer
 
-The emotion compose is the hardest drop-in to build by hand: sake, stance, ending, locus, motion. The `/feel` card (and an emotion-word cue) opens three pickers, **need**, **emotion locus**, **emotion motion**, plus met / unmet and the ending, and builds the word live with the same part-by-part breakdown the [cheat sheet](../grammar/claritish/cheat-sheet.md#feelings) shows. The emotion word in the English stays where it is unless the writer removes it.
+The emotion compose is the hardest drop-in to build by hand: sake, stance, ending, locus, motion. The `/feel` card (and an emotion-word cue) opens three pickers, **need**, **emotion locus**, **emotion motion**, plus met / unmet and the ending, and builds the word live with the same part-by-part breakdown the [cheat sheet](../../grammar/claritish/cheat-sheet.md#feelings) shows. The emotion word in the English stays where it is unless the writer removes it.
 
 ### Mirror panel
 
@@ -99,15 +99,15 @@ Loads a lesson's English example sentences with the drop-ins removed as prompts.
 
 ## Content rules
 
-- **Card copy** follows [Claritish wording and voice](../meta/claritish-style.md): the grammar's terms (*evidential channel*, *label scope*, *sake*, *emotion locus*), each glossed in plain English on first use. No Claritish-only coinages.
-- **No forms in code.** Spellings come from the build, never from string literals in the editor or the trigger data, matching the [closed-roots rule](../../src/closed-roots.ts).
+- **Card copy** follows [Claritish wording and voice](../../meta/claritish-style.md): the grammar's terms (*evidential channel*, *label scope*, *sake*, *emotion locus*), each glossed in plain English on first use. No Claritish-only coinages.
+- **No forms in code.** Spellings come from the build, never from string literals in the editor or the trigger data, matching the [closed-roots rule](../../../src/closed-roots.ts).
 - **Nothing implies English is a mistake.** No "fix", "error", or "should" in the UI. *Leave it in English* is a normal outcome, not a dismissal.
 
 ## Architecture
 
 ### Where it lives
 
-A Vue component `ClaritishEditor.vue` in [`.vitepress/components`](../grammar/.vitepress/components/), registered like `AgazanInspect`, rendered inside `<ClientOnly>` on its own page, `docs/grammar/claritish/editor.md`. The page is the last in the Claritish sidebar, right after the cheat sheet, and takes over `next: false` from it. Like the cheat sheet, it adds no forms and links only to lessons.
+A Vue component `ClaritishEditor.vue` in [`.vitepress/components`](../../grammar/.vitepress/components/), registered like `AgazanInspect`, rendered inside `<ClientOnly>` on its own page, `docs/grammar/claritish/editor.md`. The page is the last in the Claritish sidebar, right after the cheat sheet, and takes over `next: false` from it. Like the cheat sheet, it adds no forms and links only to lessons.
 
 ### Editor engine
 
@@ -121,7 +121,7 @@ Tiptap was considered, since it is already a dev dependency (used only by a lint
 |------|--------|-------|
 | `data/claritish-triggers.csv` (new, hand-written) | Editors | One row per cue: id, lesson anchor, pattern, placement (`after-clause` / `suffix` / `after-noun` / `before-word`), whether to offer dropping the cue, flow id, gap excerpt |
 | `data/claritish-flows.json` (new, hand-written) | Editors | Question flows: prompts and choices. Each choice names a **cheat sheet cell** (row label × column header), never a spelling |
-| `src/generated/claritish-editor.json` | Build | Resolved forms, glosses, gap excerpts, lesson URLs: everything the component needs, nothing it must look up |
+| [`claritish-editor.data.ts`](../../grammar/.vitepress/lib/claritish-editor.data.ts) (VitePress data loader) | Build, from [`src/claritish-editor/data.ts`](../../../src/claritish-editor/data.ts) | Resolved forms, glosses, gap excerpts, lesson URLs: everything the component needs, nothing it must look up |
 
 The forms are read from the **cheat sheet**, which `lint-cheat-sheets.ts` already keeps equal to the lesson tables, and its table parsing can be shared. So a lesson edit or a respelling (via `retie-docs`) reaches the editor with no editor-side change. The build fails when a flow names a cheat sheet cell that does not exist.
 
@@ -164,9 +164,18 @@ Three lessons, end to end: **How sure are you?**, **How do you know?**, and **Th
 - Help card: gap line, question flow, preview (English cue dropped by default), *Use this*, *Leave it in English*, ▶ pronounce, *Learn this*.
 - Lesson filter (all on), *Leave it*, *Never for this phrase*, saved draft.
 - Example round-trip and false-positive tests for the three lessons.
-- Editor notes: rows for the two new data files in the sources-of-truth table in `AGENTS.md`; the [Claritish track](../meta/grammar-docs.md#claritish-track) rules updated for the editor page (it, not the cheat sheet, is the last page and sets `next: false`); and a short note (in `claritish-style.md` or its own meta page) on writing triggers and card copy.
+- Editor notes: rows for the two new data files in the sources-of-truth table in `AGENTS.md`; the [Claritish track](../../meta/grammar-docs.md#claritish-track) rules updated for the editor page (it, not the cheat sheet, is the last page and sets `next: false`); and a short note (in `claritish-style.md` or its own meta page) on writing triggers and card copy.
 
 **Done when:** the build produces the JSON and fails on a deliberately broken flow, the three lessons' gaps are covered, and a learner can write or paste a journal entry, see cues from the three lessons, and add or decline a drop-in for each with the keyboard alone.
+
+### Phase 1 as built {#phase-1-as-built}
+
+- **No generated JSON file.** The editor data is built at site build by a VitePress data loader that calls `src/claritish-editor/data.ts`, as the English helper's data is. Nothing can go stale, and `scripts/lint-claritish-editor.ts` runs the same checks in `npm run build`.
+- **Flows read more than cells.** A flow answer names a row × column cell, a column header (for an ending letter), a cell by its English (the sakes grid), or a prose line on the sheet: the `Sake word:` formula and the `` `g` for `th` `` swap. The sorry phrase is the formula word plus the `Says` cell's form. Thanks and sorry need this because the sheet teaches them as a formula, not a table of forms.
+- **A third placement detail, `join`.** After-clause drop-ins join with a space (`closed thovum`), a comma when the English cue stays (`Thanks for the ride, thoyutham`), or as their own sentence (`I cancelled again. thanathum behon`), matching each lesson's examples.
+- **Pronounce shows IPA.** The site has no audio synthesis (the earlier engine was removed; `diphone-tts.md` is its replacement), so *Say it* shows the IPA from `src/tts` until that lands.
+- **Owned nouns** come from compromise's term tags (`my`, adjectives, nouns), loaded only when a thanks card opens. The card offers *The thing itself: my …* whenever the sentence has one, so it also appears for *my shift*; the writer decides.
+- **Component tests** are not in `npm test`: CodeMirror needs real layout, which happy-dom lacks. The matcher and placement are pure modules with their own tests, and the page was checked in headless Chromium (keyboard-only open, answer, *Use this*, *Leave it in English*, Escape, hover, filter, saved draft).
 
 ### Phase 2: the simple lessons, reading back, and reflection
 

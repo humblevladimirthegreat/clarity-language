@@ -1,0 +1,16 @@
+id,lesson,cue,exclude,flow,defaults,placement,join,drop_cue,gap_sentence,exempt
+i-think,could-be,I (just/really) think/guess/suppose/reckon/believe (that),I (just/really) think/guess/suppose/believe so | I (just/really) think about/of | I believe in,guess,,after-clause,space,yes,1,
+probably,could-be,probably | likely | presumably,,guess,,after-clause,space,yes,2,
+maybe,could-be,maybe | perhaps | possibly,maybe/perhaps (we/you/I) should/could | maybe/perhaps I'll/we'll,guess,,after-clause,space,yes,2,
+definitely,could-be,definitely | certainly | surely | undoubtedly,,guess,,after-clause,space,yes,2,
+might,could-be,might,I/we might | might as well | might want/like,guess,,after-clause,space,yes,2,
+could-be,could-be,could be,,,,,,,,the drop-in's own meaning: the gap names it as what Agazan says instead
+apparently,how-you-know,apparently | supposedly | allegedly | reportedly,,evidence,channel=reported,after-clause,space,yes,1,
+i-heard,how-you-know,I (just) heard (that) | I read that/somewhere (that),,evidence,channel=reported,after-clause,space,yes,1,
+they-say,how-you-know,they/people say/said (that) | rumor/rumour has it (that) | word is (that),,evidence,channel=reported,after-clause,space,yes,1,
+i-remember,how-you-know,I (clearly/distinctly) remember/recall (that),I remember/recall to/when,evidence,channel=from memory,after-clause,space,yes,1,
+must-have,how-you-know,must have | must've,,evidence,channel=worked out,after-clause,space,no,2,
+obviously,how-you-know,obviously | evidently,,evidence,channel=worked out,after-clause,space,yes,2,
+i-feel-like,how-you-know,I (just) feel/felt like/that,I (just) feel/felt like *ing | I (just) feel/felt like a/an,evidence,channel=intuition,after-clause,space,yes,2,
+thanks,thanks-and-sorry,thanks | thank you | I'm grateful (that/for) | I am grateful (that/for),thanks to | no thanks | no thank you,thanks,,after-clause,comma,no,1,
+sorry,thanks-and-sorry,sorry | I'm (so/really/very) sorry | I am (so/really/very) sorry | I (really) apologize/apologise | my apologies | my bad,sorry ? | sorry to hear | sorry for your loss | feel/felt sorry | sorry state,sorry,,after-clause,sentence,yes,1,

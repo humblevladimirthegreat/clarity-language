@@ -20,6 +20,7 @@ import { readdirSync, readFileSync } from "node:fs";
 import { join, posix } from "node:path";
 
 import { classifyAgazanSpan } from "../src/lint/agazan-docs.js";
+import { spans, tables } from "../src/lint/cheat-sheet-tables.js";
 import { pageSections, type PageSections } from "../src/lint/learning-order.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
 import { REPO_ROOT } from "../src/repo-paths.js";
@@ -46,16 +47,12 @@ const SHEETS: Record<string, string> = {
 };
 
 const CLARITISH_SHEET = "cheat-sheet.md";
-const CLARITISH_NOT_LESSONS = new Set(["index.md", "learn-agazan.md", CLARITISH_SHEET]);
+const CLARITISH_NOT_LESSONS = new Set(["index.md", "learn-agazan.md", CLARITISH_SHEET, "editor.md"]);
 const CLARITISH_PATTERN_ONLY = new Set(["feelings.md"]);
 
 const MARKER_RE = /<!--\s*cheat-sheet:\s*(\S+)\s*-->/g;
 
 const problems: string[] = [];
-
-function spans(text: string): string[] {
-  return [...text.matchAll(/`([^`\n]+)`/g)].map((m) => m[1]!);
-}
 
 /** Spans the lint holds to a source: words, phrases, and sentences, not templates or English. */
 function formSpans(text: string): string[] {
@@ -78,40 +75,6 @@ function variants(form: string): string[] {
 }
 
 // ---------------------------------------------------------------- grammar
-
-type Table = { header: string; rows: { text: string; index: number }[]; index: number; intro: string };
-
-/** Pipe tables, each with the prose between the nearest heading above it and the table. */
-function tables(markdown: string): Table[] {
-  const out: Table[] = [];
-  const lines = markdown.split("\n");
-  let offset = 0;
-  let intro: string[] = [];
-  let current: Table | undefined;
-  let generated = false;
-  for (const line of lines) {
-    // Generated blocks are owned by the data and checked by cheat-sheet-blocks.ts.
-    if (/^<!--\s*generated:/.test(line)) generated = true;
-    else if (/^<!--\s*\/generated\s*-->/.test(line)) generated = false;
-    if (generated) {
-      current = undefined;
-    } else if (line.startsWith("|")) {
-      if (!current) {
-        current = { header: line, rows: [], index: offset, intro: intro.join("\n") };
-        out.push(current);
-      } else if (!/^\|[\s|:-]+\|?\s*$/.test(line)) {
-        current.rows.push({ text: line, index: offset });
-      }
-    } else {
-      if (current) intro = [];
-      current = undefined;
-      if (/^#{1,6}\s/.test(line)) intro = [];
-      else intro.push(line);
-    }
-    offset += line.length + 1;
-  }
-  return out;
-}
 
 /** Link targets (`page.md`, `page.md#id`, `#id`) in a line of the sheet, outside code. */
 function linkTargets(text: string): string[] {

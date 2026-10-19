@@ -81,7 +81,7 @@ The four endings are the four digits a root cannot end in:
 | **-n** | **9** | a character with that name |
 | **-r** | **3** | the same thing again (a repeat) |
 
-So a one-onset root fills the four cells of its digit. With `ega` *egg* (**6**):
+Any one-onset root can take any of the four endings. With `ega` *egg* (**6**):
 
 | Word | Scene | Digits |
 |------|-------|--------|
@@ -89,6 +89,8 @@ So a one-onset root fills the four cells of its digit. With `ega` *egg* (**6**):
 | `zegam` | potential (egg's abstract sense) | **64** |
 | `zegan` | someone named Egg | **69** |
 | `zegar` | that egg again | **63** |
+
+The canonical list still gives each cell **its own root** ([usability bar](#v1-usability-bar)): four scenes of one picture blur together in a palace. The table only shows how the endings read.
 
 The ending cells (second digit 3, 4, 7, 9) and the two-onset cells (second digit 1, 2, 5, 6, 8, 0) never overlap, so decode stays unique once you know which list a palace slot uses. Only the four plain endings count; a peg on the 00–99 list never uses `-ln`, `-rl`, `-rm` or `-rth`. A word that the grammar reads as something else is not a peg: `ozo` *strawberry* + **-n** / **-r** is the [topic pronoun](../grammar/pronouns.md), so pick another zero root for **09** and **03**.
 
@@ -173,7 +175,9 @@ The same one-onset roots serve as 0–9 pegs and, with an ending, fill the 40 en
 | 9 | 5 (`ana` *knot*, `ano` *sand*) | 8 (`anaya` *onion*, `anaba` *knob*) | 12 |
 | 0 | 8 (`ezo` *zebra*, `ozo` *strawberry*) | 66 | 63 |
 
-Every digit has at least 13 one-onset roots, so 0–9 and all 40 ending cells are covered today with no lexicon growth.
+Distinct roots need **five** non-flag one-onset roots per digit: one 0–9 peg and one root for each of the four ending cells. The thinnest digit, **9**, has 11 (10 with an abstract sense), and **3**, **4** and **7** have 13–15, so every digit clears the bar today with no lexicon growth. Digit 9 leans on face and mood seeds (*neutral*, *unimpressed*), which picture less well than *knot* or *onion*.
+
+Lexicon growth adds choice slowly for 3, 4, 7 and 9. **l / m / n / r** can only be a five-letter root's first consonant, and with a filler (`b` / `y`) for the second, so few new seeds land there. Spellings come from `convert-word`, so growth cannot be aimed at a digit.
 
 ### Two-onset cells
 
@@ -211,19 +215,18 @@ Working examples (illustration, not the canonical list):
 | `zavabon` *someone named Vampire* | v + **-n** | **59** |
 | `zorobar` *that robot again* | r + **-r** | **33** |
 
-### v1 usability bar
+### v1 usability bar {#v1-usability-bar}
 
-1. **Publish a canonical 00–99 list**: one preferred word per cell. For two-onset cells, prefer `core` roots, then concrete nouns over abstract senses; never flags or names. For ending cells, prefer roots whose abstract sense pictures well (for **-m**).
+1. **Publish a canonical 00–99 list**: one preferred word per cell, and **no root used twice** across the 0–9 and 00–99 lists. For two-onset cells, prefer `core` roots, then concrete nouns over abstract senses; never flags or names. For ending cells, give the **-m** cell the root whose abstract sense pictures best, and the **-l** cell the most concrete one.
 2. **Cover 41** with the backup split until a seed lands on `m_w`.
 3. **Keep the list retie-safe**: store the row (seed / sense), never the spelling, and derive digits from the current root. A respelling can move a row to a different cell, so a check should flag any cell that empties.
 
 ## Open questions
 
-1. **One root or four per first digit in the ending cells.** One root per digit (`zegal`, `zegam`, `zegan`, `zegar`) makes the ending cells easy to learn, but four scenes of one picture may blur together in a palace. Four different roots keep images distinct.
-2. **Canonical list location.** A small `data/` peg file (row + digits + scene) keeps grammar pages free of a 100-row table; a grammar Advanced appendix is heavier for learners.
-3. **Three-letter rows as pegs.** These rows also carry closed grammar overlays. Their seeds picture well (*egg*, *map*, *heart*), but a learner may hear the overlay first. Should the canonical list prefer five-letter filler roots?
-4. **Names and flags.** Exclude country / flag roots and other proper-name senses from the canonical list (weak scenes, easy to confuse with spelling). The **-n** ending cells are the exception: there the name is the scene.
-5. **Where to mention the method:** [numbers.md](../grammar/numbers.md) Beginner (one sentence plus a link), or Advanced / a sibling page after absorb. The letter-name table already teaches the digit letters in order, which is a natural hook.
+1. **Canonical list location.** A small `data/` peg file (row + digits + scene) keeps grammar pages free of a 100-row table; a grammar Advanced appendix is heavier for learners.
+2. **Three-letter rows as pegs.** These rows also carry closed grammar overlays. Their seeds picture well (*egg*, *map*, *heart*), but a learner may hear the overlay first. Should the canonical list prefer five-letter filler roots?
+3. **Names and flags.** Exclude country / flag roots and other proper-name senses from the canonical list (weak scenes, easy to confuse with spelling). The **-n** ending cells are the exception: there the name is the scene.
+4. **Where to mention the method:** [numbers.md](../grammar/numbers.md) Beginner (one sentence plus a link), or Advanced / a sibling page after absorb. The letter-name table already teaches the digit letters in order, which is a natural hook.
 
 ## Absorb sketch
 

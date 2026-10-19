@@ -43,7 +43,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `numeric-derivation.md` | Root + number derivation (advanced only). |
 | `review.md` | **Level reviews**: one `### Practice` band per level, read after every stage page; adds no forms and no words, [level reviews](docs/meta/translation-exercises.md#level-reviews). |
 | `english.md` + `say-*.md` | **Saying it in Agazan** recipe track, keyed by English job. Outside stage order; stage pages never link to it, [recipe track](docs/meta/grammar-docs.md#recipe-track). New gap resolutions that add no form go here. |
-| `claritish/` | **Claritish** on-ramp: closed Agazan words dropped into English, an intro page, ten lessons, a bonus tone-marks lesson, a closing plug, and a one-page cheat sheet. Adds no forms; never links into the grammar except the closing page, [Claritish track](docs/meta/grammar-docs.md#claritish-track). |
+| `claritish/` | **Claritish** on-ramp: closed Agazan words dropped into English, an intro page, ten lessons, a bonus tone-marks lesson, a closing plug, a one-page cheat sheet, and a journal editor. Adds no forms; never links into the grammar except the closing page, [Claritish track](docs/meta/grammar-docs.md#claritish-track). |
 | `cheat-sheets/` | **Cheat Sheets** sidebar: one printable lookup page per subsystem, plus Agazan → English and Exceptions; each row links to its owning section. Tables between `<!-- generated -->` markers come from the data via `npm run cheat-sheet-blocks -- --write`; never edit them by hand. Adds no forms, [cheat sheets](docs/meta/grammar-docs.md#cheat-sheets). |
 | `terminology.md` | English names for grammatical features. Teaching pages do not link into it except [How to learn](docs/grammar/introduction.md#how-to-learn). |
 
@@ -54,6 +54,8 @@ Each row names what the file owns. The file is the authority; this table is only
 | `data/lexicon-published.csv` | Published roots: each has a concrete sense and usually an emoji or pictograph seed, [seeds](docs/meta/lexicon.md#seeds-concrete-senses-and-pictographs). PoS and ending applied at use time. The `core` column is the core vocabulary order, [core vocabulary](docs/meta/lexicon.md#core-vocabulary-column). |
 | `data/lexicon-compounds.csv` | Conventional compounds without mid-word `x`, with the same `core` column. |
 | `data/lexicon-overlays.csv` | Closed overlay inventory and the anchor that teaches each row, [overlay kinds](docs/meta/parser-pipeline.md#overlay-kinds). New overlays attach to an existing published row. |
+| `data/claritish-triggers.csv` | Journal editor cues: the English patterns each Claritish lesson's gap names, their exclusions, flow, and placement, [editor cards](docs/meta/claritish-style.md#editor-cards). |
+| `data/claritish-flows.json` | Journal editor question flows: each answer names a Claritish cheat sheet cell, never a spelling, [editor cards](docs/meta/claritish-style.md#editor-cards). |
 
 ### Editor notes (`docs/meta/`, not published)
 

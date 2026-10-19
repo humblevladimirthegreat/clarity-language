@@ -6,6 +6,7 @@ import LexiconSearch from '../components/LexiconSearch.vue'
 import GlossViewer from '../components/GlossViewer.vue'
 import EnglishHelper from '../components/EnglishHelper.vue'
 import AgazanInspect from '../components/AgazanInspect.vue'
+import ClaritishEditor from '../components/ClaritishEditor.vue'
 import IpaPlay from '../components/IpaPlay.vue'
 import NameHelper from '../components/NameHelper.vue'
 import PrintButton from '../components/PrintButton.vue'
@@ -20,6 +21,7 @@ export default {
     app.component('GlossViewer', GlossViewer)
     app.component('EnglishHelper', EnglishHelper)
     app.component('AgazanInspect', AgazanInspect)
+    app.component('ClaritishEditor', ClaritishEditor)
     app.component('IpaPlay', IpaPlay)
     app.component('NameHelper', NameHelper)
     app.component('PrintButton', PrintButton)
