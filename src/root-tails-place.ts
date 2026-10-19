@@ -1,14 +1,15 @@
 /**
  * Root-tails placer (proposal `root-tails.md`, phase 1): each five-letter row's tail comes from its
- * kind and shape, and its onset is chosen for distinctiveness. Core rows go first in `core` order,
- * then the rest in CSV order, each greedily; an annealing pass follows. The live placer
+ * kind and shape, and its onset is chosen for distinctiveness against roots of the same kind, and
+ * to start with the English label's first consonant. Rows are placed greedily in CSV order, then
+ * annealed. Learning order plays no part (the phase 3 lint keeps look-alikes apart in teaching). The live placer
  * (src/lexicon-place.ts) is untouched: its second-consonant ban and echo ranking stay in force.
  */
 import { echo } from "./echo-metric.ts";
 import type { CompoundRow } from "./lexicon-compounds.ts";
 import { isExtraNounHook } from "./parse/hook-compounds.ts";
 import { PHONEME_MAP } from "./pronunciation-map.ts";
-import { FREE_VOWEL_KIND, hookClash, KIND_LETTERS, SHAPE_VOWELS, type Kind, type Shape } from "./root-tails.ts";
+import { confusable, FREE_VOWEL_KIND, hookClash, KIND_LETTERS, SHAPE_VOWELS, type Kind, type Shape } from "./root-tails.ts";
 
 const V = "aeou";
 const C = "bdghylmnrvwz";
@@ -18,23 +19,26 @@ const JOINS = new Set(["l", "m", "n", "r"]);
 /** Named rows are too many for the in-cell rule (283 rows; at most 192 fit it), so it is only a cost there. */
 const NAMED = C.indexOf(KIND_LETTERS[FREE_VOWEL_KIND]);
 
-/** One-letter pair cost by the position that differs: an onset vowel costs most, the first consonant least. */
-const POS_W = [1, 0.25, 1, 0.4, 0.6] as const;
-/** Two-letter pair cost. */
-const NEAR_W = 0.15;
-/** Neighbor in the same tail cell, or of the same kind. */
-const SAME_CELL_W = 2;
-const SAME_KIND_W = 1.5;
-/** Core roots introduced close together: up to 1 + this at the same checkpoint. */
-const CORE_W = 3;
+/**
+ * Cost of a one-letter pair of the same kind, by the position that differs: an onset vowel most, then the
+ * shape vowel, then the first consonant. A named row's final vowel has no meaning, so it costs as an onset vowel.
+ * Roots of different kinds cost nothing: the tail tells them apart.
+ */
+const POS_W = [2, 0.5, 2, 0, 0.9] as const;
+const NAMED_FINAL_W = 2;
+/** First consonants that sound alike ({@link confusable}) cost this many times more. */
+const CONFUSABLE_W = 3;
+/** Two-letter pair of the same kind. */
+const NEAR_W = 0.25;
 /** WordNet closeness (0–1) adds up to this much to a pair. */
 const MEANING_W = 2;
 /**
  * A first consonant that isn't the English label's first consonant (the echo the onset can carry; the
- * tail fixes the rest). It outweighs any single neighbor short of a close pair of core or same-sense
- * roots, so a root gives up its English first consonant only to avoid several neighbors.
+ * tail fixes the rest). At 2 it equals one onset-vowel neighbor and outweighs any single first-consonant neighbor
+ * (0.5, or 1.5 between letters that sound alike), so a root gives up its English first consonant only to avoid a
+ * costlier neighbor or several.
  */
-const FIRST_W = 4;
+const FIRST_W = 2;
 /** Tie-breaks, far below any pair cost: the full English echo, then fewer stops (which decide only within 0.01 of echo). */
 const ECHO_W = 0.002;
 const STOP_W = 0.00001;
@@ -47,8 +51,6 @@ export type TailPlaceRow = {
   shape: Shape | "";
   /** CMU pronunciation of the label; empty loses only the echo tie-break. */
   cmu: string;
-  /** Index of the row's core checkpoint in path order; null when not core. */
-  coreRank: number | null;
 };
 
 /** A listed compound by member: a row index (five-letter, placed here) or a fixed three-letter root. */
@@ -162,15 +164,11 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
     return costs;
   });
 
-  // Pair weight from meaning and learning order; the tail letters add the cell weight at use time.
+  // Pair weight from meaning; the letters that differ set the rest at use time.
   const pairW = new Float32Array(n * n);
   for (let a = 0; a < n; a++) {
     for (let b = a + 1; b < n; b++) {
-      let w = 1 + MEANING_W * (input.closeness?.(a, b) ?? 0);
-      const ra = rows[a]!.coreRank;
-      const rb = rows[b]!.coreRank;
-      if (ra !== null && rb !== null) w *= 1 + CORE_W / (1 + Math.abs(ra - rb));
-      pairW[a * n + b] = pairW[b * n + a] = w;
+      pairW[a * n + b] = pairW[b * n + a] = 1 + MEANING_W * (input.closeness?.(a, b) ?? 0);
     }
   }
 
@@ -223,14 +221,16 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
   const pairCost = (i: number, j: number, other: number, pos: number) => {
     const code = codes[i]!;
     const kind = Math.floor(code / 4) % 12;
-    const sameKind = kind === Math.floor(other / 4) % 12;
-    const sameCell = sameKind && code % 4 === other % 4;
-    const cell = sameCell ? SAME_CELL_W : sameKind ? SAME_KIND_W : 1;
+    if (kind !== Math.floor(other / 4) % 12) return 0;
     const w = pairW[i * n + j]!;
-    if (pos < 0) return NEAR_W * cell * w;
+    if (pos < 0) return NEAR_W * w;
     // Inside a tail cell, a one-letter pair must differ in the first consonant.
-    if (sameCell && pos !== 1 && kind !== NAMED) return inCellW;
-    return POS_W[pos]! * cell * w;
+    if (pos !== 1 && pos !== 4 && kind !== NAMED) return inCellW;
+    if (pos === 1) {
+      const sound = confusable(C[Math.floor(code / 192) % 12]!, C[Math.floor(other / 192) % 12]!) ? CONFUSABLE_W : 1;
+      return POS_W[1] * sound * w;
+    }
+    return (pos === 4 && kind === NAMED ? NAMED_FINAL_W : POS_W[pos]!) * w;
   };
 
   const compoundBreaks = (i: number) => {
@@ -259,12 +259,8 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
     return cost + HARD * compoundBreaks(i);
   };
 
-  // Greedy: core rows by checkpoint, then the rest in CSV order.
-  const order = rows
-    .map((row, i) => ({ i, rank: row.coreRank ?? Infinity }))
-    .sort((a, b) => a.rank - b.rank || a.i - b.i)
-    .map(({ i }) => i);
-  for (const i of order) {
+  // Greedy, in CSV order.
+  for (let i = 0; i < n; i++) {
     let best = -1;
     let bestCost = Infinity;
     for (const code of cands[i]!) {

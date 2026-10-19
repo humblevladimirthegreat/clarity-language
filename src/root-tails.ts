@@ -174,40 +174,53 @@ export function validateTails(
   return errors;
 }
 
+/**
+ * First-consonant pairs that sound alike: same manner of articulation, differing in place
+ * (stops, nasals, approximants, voiced fricatives), and `v` / `b`.
+ */
+const CONFUSABLE = new Set(["bd", "bg", "dg", "mn", "lr", "rw", "wy", "vz", "bv"]);
+
+export function confusable(a: string, b: string): boolean {
+  return CONFUSABLE.has(a < b ? a + b : b + a);
+}
+
 export type TailMetrics = {
-  roots: number;
-  /** Roots with a published root one letter away. */
-  withNeighbor: number;
-  corePairs: number;
-  /** One-letter pairs by the position that differs: first vowel, first consonant, middle vowel, kind, shape. */
-  pairsAt: number[];
+  /** Same-kind one-letter pairs by the position that differs: first vowel, first consonant, middle vowel, second consonant, final vowel. */
+  sameKindAt: number[];
+  /** Of the same-kind first-consonant pairs, those between letters that sound alike. */
+  confusableFirst: number;
+  /** Same-kind two-letter pairs. */
+  sameKindNear: number;
+  /** One-letter pairs across kinds: told apart by the tail, so not counted as confusing. */
+  crossKind: number;
 };
 
-/** Distinctiveness numbers for a set of five-letter roots; `core` marks the core ones. */
-export function tailMetrics(roots: readonly string[], core: ReadonlySet<string>): TailMetrics {
-  const set = new Set(roots);
-  const neighbors = new Map<string, string[]>();
-  for (const root of roots) {
-    const out: string[] = [];
-    for (let i = 0; i < root.length; i++) {
-      for (const letter of i % 2 ? "bdghylmnrvwz" : "aeou") {
-        if (letter === root[i]) continue;
-        const other = root.slice(0, i) + letter + root.slice(i + 1);
-        if (set.has(other)) out.push(other);
+/** Pair counts for five-letter roots, each with its row's kind. */
+export function tailMetrics(entries: readonly { root: string; kind: string }[]): TailMetrics {
+  const sameKindAt = [0, 0, 0, 0, 0];
+  let confusableFirst = 0;
+  let sameKindNear = 0;
+  let crossKind = 0;
+  for (let i = 0; i < entries.length; i++) {
+    const a = entries[i]!;
+    for (let j = i + 1; j < entries.length; j++) {
+      const b = entries[j]!;
+      let distance = 0;
+      let at = -1;
+      for (let k = 0; k < 5 && distance < 3; k++) {
+        if (a.root[k] !== b.root[k]) {
+          distance++;
+          at = k;
+        }
       }
-    }
-    neighbors.set(root, out);
-  }
-  let withNeighbor = 0;
-  let corePairs = 0;
-  const pairsAt = [0, 0, 0, 0, 0];
-  for (const [root, list] of neighbors) {
-    if (list.length > 0) withNeighbor++;
-    for (const other of list) {
-      if (other <= root) continue;
-      if (core.has(root) && core.has(other)) corePairs++;
-      pairsAt[[...root].findIndex((letter, i) => letter !== other[i])]!++;
+      const sameKind = a.kind === b.kind;
+      if (distance === 1 && !sameKind) crossKind++;
+      if (distance === 1 && sameKind) {
+        sameKindAt[at]!++;
+        if (at === 1 && confusable(a.root[1]!, b.root[1]!)) confusableFirst++;
+      }
+      if (distance === 2 && sameKind) sameKindNear++;
     }
   }
-  return { roots: roots.length, withNeighbor, corePairs, pairsAt };
+  return { sameKindAt, confusableFirst, sameKindNear, crossKind };
 }

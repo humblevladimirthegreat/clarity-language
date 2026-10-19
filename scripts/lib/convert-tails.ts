@@ -3,18 +3,13 @@
  * (proposal `root-tails.md`, phase 1), write only its `root` column, and print the report.
  * Nothing else is read for writing: the live lexicon, compounds, overlays and docs stay as they are.
  */
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { readFileSync, writeFileSync } from "node:fs";
 
-import { levelReviewPage, readingOrder } from "../../docs/grammar/.vitepress/lib/reading-order.js";
 import { CLOSED } from "../../src/closed-roots.js";
-import { stageCheckpoints } from "../../src/core-vocabulary.js";
 import { loadPron } from "../../src/echo-metric.js";
 import { parseCompoundCsv } from "../../src/lexicon-compounds.js";
 import { parsePublishedCsv } from "../../src/lexicon-search.js";
-import { sidebarPage } from "../../src/lint/learning-order.js";
-import { loadDefaultTables } from "../../src/parse/index.js";
-import { dataPath, REPO_ROOT } from "../../src/repo-paths.js";
+import { dataPath } from "../../src/repo-paths.js";
 import { cellCapacity, firstConsonant, placeTailRoots, tailCompounds, type TailPlaceRow } from "../../src/root-tails-place.js";
 import {
   KIND_LETTERS,
@@ -31,22 +26,6 @@ import {
 import { ensureWordnet, Wordnet } from "../../src/wordnet.js";
 
 const tailsPath = dataPath("lexicon-tails.csv");
-const grammarDir = join(REPO_ROOT, "docs", "grammar");
-
-/** Checkpoint anchor → index in path order. */
-function checkpointRanks(): Map<string, number> {
-  const pages = [...readingOrder.map((item) => sidebarPage(item.link)), levelReviewPage];
-  const checkpoints = stageCheckpoints(
-    pages,
-    (page) => {
-      const path = join(grammarDir, page);
-      return existsSync(path) ? readFileSync(path, "utf8") : undefined;
-    },
-    loadDefaultTables(),
-    levelReviewPage,
-  );
-  return new Map(checkpoints.map((checkpoint, index) => [checkpoint.anchor, index]));
-}
 
 /** Hypernym sets (with the synset itself) of each label's first WordNet sense; Jaccard overlap is closeness. */
 async function wordnetCloseness(labels: string[]): Promise<(a: number, b: number) => number> {
@@ -83,22 +62,17 @@ export async function convertTails(options: { steps?: number } = {}): Promise<vo
 
   const byKey = new Map(published.map((row) => [tailKey(row), row]));
   const shortRoots = new Set(published.map((row) => row.root).filter((root) => root.length === 3));
-  const ranks = checkpointRanks();
   let pron = new Map<string, string>();
   try {
     pron = loadPron();
   } catch {
     // no pronunciation cache: every row loses only the echo tie-break
   }
-  const rows: TailPlaceRow[] = tails.map((row) => {
-    const core = byKey.get(tailKey(row))!.core ?? "";
-    return {
-      kind: row.kind as Kind,
-      shape: row.shape as Shape | "",
-      cmu: pron.get(row.concrete) ?? "",
-      coreRank: core ? (ranks.get(core) ?? ranks.size) : null,
-    };
-  });
+  const rows: TailPlaceRow[] = tails.map((row) => ({
+    kind: row.kind as Kind,
+    shape: row.shape as Shape | "",
+    cmu: pron.get(row.concrete) ?? "",
+  }));
   const rowOfRoot = new Map(tails.map((row, index) => [byKey.get(tailKey(row))!.root, index]));
   const placement = placeTailRoots({
     rows,
@@ -120,11 +94,10 @@ export async function convertTails(options: { steps?: number } = {}): Promise<vo
 function printReport(tails: TailRow[], published: ReturnType<typeof parsePublishedCsv>, checks: string[], pron: Map<string, string>): void {
   const byKey = new Map(published.map((row) => [tailKey(row), row]));
   const live = published.filter((row) => row.root.length === 5);
-  const before = tailMetrics(live.map((row) => row.root), new Set(live.filter((row) => row.core).map((row) => row.root)));
-  const after = tailMetrics(
-    tails.map((row) => row.root),
-    new Set(tails.filter((row) => byKey.get(tailKey(row))?.core).map((row) => row.root)),
-  );
+  // Live roots are counted with the kind their row has here, so both columns use the same pairs.
+  const kindOf = new Map(tails.map((row) => [tailKey(row), row.kind]));
+  const before = tailMetrics(live.map((row) => ({ root: row.root, kind: kindOf.get(tailKey(row)) ?? "" })));
+  const after = tailMetrics(tails);
   const line = (label: string, a: string, b: string) => console.log(`  ${label.padEnd(44)}${a.padStart(8)}${b.padStart(8)}`);
   console.log(`lexicon-tails.csv: ${tails.length} roots placed`);
   console.log("");
@@ -134,14 +107,14 @@ function printReport(tails: TailRow[], published: ReturnType<typeof parsePublish
     return pct(scored.filter((row) => row.root[1] === firstConsonant(pron.get(row.concrete)!)).length, scored.length);
   };
   line("first consonant is the label's first consonant", echoed(live), echoed(tails));
-  line("one-letter pairs among core roots", String(before.corePairs), String(after.corePairs));
-  line("roots with a one-letter neighbor", pct(before.withNeighbor, before.roots), pct(after.withNeighbor, after.roots));
-  line("  (floor under any placement: 43%)", "", "");
   const sum = (list: number[]) => String(list.reduce((x, y) => x + y, 0));
-  line("one-letter pairs", sum(before.pairsAt), sum(after.pairsAt));
-  ["first vowel", "first consonant", "middle vowel", "second consonant (kind)", "final vowel (shape)"].forEach((label, at) =>
-    line(`  differing in the ${label}`, String(before.pairsAt[at]), String(after.pairsAt[at])),
-  );
+  line("same-kind one-letter pairs", sum(before.sameKindAt), sum(after.sameKindAt));
+  ["first vowel", "first consonant", "middle vowel", "second consonant", "final vowel"].forEach((label, at) => {
+    line(`  differing in the ${label}`, String(before.sameKindAt[at]), String(after.sameKindAt[at]));
+    if (at === 1) line("    between letters that sound alike", String(before.confusableFirst), String(after.confusableFirst));
+  });
+  line("same-kind two-letter pairs", String(before.sameKindNear), String(after.sameKindNear));
+  line("one-letter pairs across kinds (not counted)", String(before.crossKind), String(after.crossKind));
 
   console.log("");
   const shortRoots = new Set(published.map((row) => row.root).filter((root) => root.length === 3));

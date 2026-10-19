@@ -99,19 +99,27 @@ describe("validateTails", () => {
 });
 
 describe("tailMetrics", () => {
-  it("counts neighbors, core pairs and the position that differs", () => {
-    const m = tailMetrics(["abazo", "agazo", "abezo", "uzuzu"], new Set(["abazo", "agazo"]));
-    assert.equal(m.withNeighbor, 3);
-    assert.equal(m.corePairs, 1);
-    assert.deepEqual(m.pairsAt, [0, 1, 1, 0, 0]);
+  it("counts same-kind pairs by the letter that differs, and cross-kind pairs apart", () => {
+    const m = tailMetrics([
+      { root: "abazo", kind: "creature" },
+      { root: "adazo", kind: "creature" },
+      { root: "abezo", kind: "creature" },
+      { root: "abaze", kind: "creature" },
+      { root: "abawo", kind: "tool" },
+      { root: "ehulo", kind: "nature" },
+    ]);
+    assert.deepEqual(m.sameKindAt, [0, 1, 1, 0, 1]);
+    assert.equal(m.confusableFirst, 1);
+    assert.equal(m.sameKindNear, 3);
+    assert.equal(m.crossKind, 1);
   });
 });
 
 describe("placeTailRoots", () => {
   it("places every row in its tail, apart, and clear of the hook check", () => {
     const rows = [
-      ...Array.from({ length: 30 }, (_, i) => ({ kind: "nature" as const, shape: "one" as const, cmu: "", coreRank: i < 10 ? i : null })),
-      ...Array.from({ length: 10 }, () => ({ kind: "named" as const, shape: "" as const, cmu: "", coreRank: null })),
+      ...Array.from({ length: 30 }, (_, i) => ({ kind: "nature" as const, shape: "one" as const, cmu: "" })),
+      ...Array.from({ length: 10 }, () => ({ kind: "named" as const, shape: "" as const, cmu: "" })),
     ];
     const shortRoots = new Set(["aba", "aga", "ozo"]);
     const { roots, unmet } = placeTailRoots({ rows, shortRoots, compounds: [], steps: 20_000 });
@@ -135,8 +143,8 @@ describe("placeTailRoots", () => {
     const shortRoots = new Set<string>();
     for (const a of "aeou") for (const c of "bdghylmnrvwz") for (const b of "aeou") shortRoots.add(a + c + b);
     const rows = [
-      { kind: "named" as const, shape: "" as const, cmu: "", coreRank: 0 },
-      ...Array.from({ length: 48 }, () => ({ kind: "body" as const, shape: "holds" as const, cmu: "", coreRank: null })),
+      { kind: "named" as const, shape: "" as const, cmu: "" },
+      ...Array.from({ length: 48 }, () => ({ kind: "body" as const, shape: "holds" as const, cmu: "" })),
     ];
     const { roots, unmet } = placeTailRoots({ rows, shortRoots, compounds: [{ left: 0, join: "r", right: "aba" }], steps: 20_000 });
     assert.deepEqual(unmet, []);
