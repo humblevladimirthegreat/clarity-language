@@ -33,7 +33,7 @@ import { hookJobsByPosition, type HookJob } from "./hook-jobs.js";
 import { JOIN_SERIES } from "./series.js";
 import { classifyAll, overlayKey, type ClassifyTables } from "./classify.js";
 import type { PublishedRow } from "../lexicon-search.js";
-import { CLOSED, namedEnglish } from "../closed-roots.js";
+import { CLOSED, closedDerived, namedEnglish, withLexiconClosedRoots } from "../closed-roots.js";
 import { linkerEnglish } from "./linkers.js";
 import {
   buildGlossTree,
@@ -441,6 +441,10 @@ export type MorphGlossOptions = {
 };
 
 export function morphGlossLine(text: string, tables: ClassifyTables, options: MorphGlossOptions = {}): string {
+  return withLexiconClosedRoots(tables.published, () => morphGlossLineIn(text, tables, options));
+}
+
+function morphGlossLineIn(text: string, tables: ClassifyTables, options: MorphGlossOptions): string {
   const normalized = normalizeAgazan(text);
   const finalMark = text.trim().match(/[?!]$/)?.[0];
   const { words, ctxByIndex, parsed } = analyzeLine(normalized, tables, options);

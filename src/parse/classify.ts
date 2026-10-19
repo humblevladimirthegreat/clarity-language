@@ -16,7 +16,7 @@ import {
   hookCompoundFromMorph,
 } from "./hook-compounds.js";
 import type { LexOverlay, LexReading, LexWord, MorphWord, PointerVowel, RoleVowel } from "./types.js";
-import { CLOSED } from "../closed-roots.js";
+import { CLOSED, closedDerived, withLexiconClosedRoots } from "../closed-roots.js";
 import { JOIN_SERIES } from "./series.js";
 
 function sakeRootsFromOverlays(overlays: Iterable<OverlayRow>): Set<string> {
@@ -622,6 +622,10 @@ function heldPointer(word: MorphWord, tables: ClassifyTables): MorphWord | undef
  * where the word grammar alone saw a sake shape (`gewezatheman` = *west* `th` *speaker*).
  */
 export function classifiedShape(word: MorphWord, tables: ClassifyTables): MorphWord {
+  return withLexiconClosedRoots(tables.published, () => classifiedShapeIn(word, tables));
+}
+
+function classifiedShapeIn(word: MorphWord, tables: ClassifyTables): MorphWord {
   const shaped = tailLateral(word, tables) ?? landmarkLateral(word) ?? labelScope(word, tables) ?? word;
   return holderSeam(shaped, tables) ?? shaped;
 }
@@ -740,6 +744,10 @@ function classifyUnlisted(word: MorphWord, tables: ClassifyTables): LexWord {
 }
 
 export function classify(word: MorphWord, tables: ClassifyTables): LexWord {
+  return withLexiconClosedRoots(tables.published, () => classifyIn(word, tables));
+}
+
+function classifyIn(word: MorphWord, tables: ClassifyTables): LexWord {
   const shaped = classifiedShape(word, tables);
   for (const rule of CLASSIFY_RULES) {
     const read = rule.match(shaped, tables);

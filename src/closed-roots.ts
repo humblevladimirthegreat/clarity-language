@@ -77,6 +77,76 @@ export const CLOSED_ENTRIES: ReadonlyArray<{ name: ClosedName } & ClosedRow> = O
   ([name, row]) => ({ name: name as ClosedName, ...row }),
 );
 
+const CLOSED_NAMES = Object.keys(CLOSED_ROWS) as ClosedName[];
+
+/** Bumped whenever {@link CLOSED} is respelled, so values built from it are rebuilt. */
+let version = 0;
+/** The lexicon whose spellings {@link CLOSED} holds right now, when one was given. */
+let activeLexicon: object | undefined;
+
+/**
+ * A value built from {@link CLOSED} (a set of roots, a gloss table), rebuilt after
+ * {@link withLexiconClosedRoots} respells it. Never copy a closed root into a module constant.
+ */
+export function closedDerived<T>(build: () => T): () => T {
+  let builtAt = -1;
+  let value: T;
+  return () => {
+    if (builtAt !== version) {
+      value = build();
+      builtAt = version;
+    }
+    return value;
+  };
+}
+
+type LexiconRows = ReadonlyMap<string, { emoji: string; root: string }>;
+
+const ROOTS_BY_LEXICON = new WeakMap<object, Record<ClosedName, string>>();
+
+/**
+ * Closed roots as a lexicon spells them, by emoji. An entry whose emoji the lexicon lacks
+ * (a test fixture) keeps this file's spelling.
+ */
+export function closedRootsIn(published: LexiconRows): Record<ClosedName, string> {
+  let roots = ROOTS_BY_LEXICON.get(published);
+  if (!roots) {
+    const byEmoji = new Map<string, string>();
+    for (const row of published.values()) if (row.emoji) byEmoji.set(row.emoji, row.root);
+    roots = Object.fromEntries(
+      CLOSED_NAMES.map((name) => [name, byEmoji.get(CLOSED_ROWS[name].emoji) ?? CLOSED_ROWS[name].root]),
+    ) as Record<ClosedName, string>;
+    ROOTS_BY_LEXICON.set(published, roots);
+  }
+  return roots;
+}
+
+/**
+ * Run `fn` with {@link CLOSED} spelled as `published` spells it. Parse, gloss and classify entry
+ * points call this with their tables, so text read against another lexicon (the pre-retie side of
+ * a retie) reads its house cast, pronouns and arrows with that lexicon's spellings.
+ */
+export function withLexiconClosedRoots<T>(published: LexiconRows, fn: () => T): T {
+  if (activeLexicon === published) return fn();
+  const roots = closedRootsIn(published);
+  const previous = activeLexicon;
+  const saved = CLOSED_NAMES.some((name) => CLOSED[name] !== roots[name]) ? { ...CLOSED } : undefined;
+  activeLexicon = published;
+  if (saved) {
+    Object.assign(CLOSED, roots);
+    version += 1;
+  }
+  try {
+    return fn();
+  } finally {
+    activeLexicon = previous;
+    if (saved) {
+      Object.assign(CLOSED, saved);
+      version += 1;
+    }
+  }
+}
+
 /** English name of a named root: the root + **-n**, capitalised (`azawa` → *Azawan*). */
 export function namedEnglish(root: string): string {
   return `${root.charAt(0).toUpperCase()}${root.slice(1)}n`;

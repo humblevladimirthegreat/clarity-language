@@ -5,9 +5,11 @@
  *      npm run convert-word -- --unique fishing
  *      npm run convert-word -- --lexicon --only breaker
  *      npm run convert-word -- --lexicon --all
+ *      npm run convert-word -- --tails [--steps N]
  *
  * --lexicon requires --only or --all (never re-places the whole lexicon by default).
  * --lexicon also writes tmp/lexicon-retie-map.json for npm run retie-docs.
+ * --tails places data/lexicon-tails.csv by root tails and writes only its root column (scripts/lib/convert-tails.ts).
  */
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -31,6 +33,7 @@ import {
   toUniqueAgazanWord,
 } from "../src/word-converter.js";
 import { REPO_ROOT, dataPath } from "../src/repo-paths.js";
+import { convertTails } from "./lib/convert-tails.js";
 import { compoundPartDrift, retieSenseForm, rowMatchesOnly } from "../src/retie/lexicon.js";
 
 const publishedPath = dataPath("lexicon-published.csv");
@@ -42,6 +45,8 @@ const OVERLAY_HEADERS = ["sense_form", "pos", "emoji", "kind", "gloss", "definit
 
 type CliOptions = {
   lexicon: boolean;
+  tails: boolean;
+  steps?: number;
   all: boolean;
   only: string[];
   input: string;
@@ -52,6 +57,8 @@ type CliOptions = {
 function parseArgs(argv: string[]): CliOptions {
   let unique = false;
   let lexicon = false;
+  let tails = false;
+  let steps: number | undefined;
   let all = false;
   let syllables = 2;
   const only: string[] = [];
@@ -65,6 +72,18 @@ function parseArgs(argv: string[]): CliOptions {
     }
     if (arg === "--lexicon") {
       lexicon = true;
+      continue;
+    }
+    if (arg === "--tails") {
+      tails = true;
+      continue;
+    }
+    if (arg === "--steps") {
+      const value = argv[++i];
+      if (!value || !Number.isInteger(Number(value)) || Number(value) < 0) {
+        throw new Error("Missing or invalid value for --steps");
+      }
+      steps = Number(value);
       continue;
     }
     if (arg === "--all") {
@@ -100,6 +119,15 @@ function parseArgs(argv: string[]): CliOptions {
   }
 
   const input = parts.join(" ").trim();
+  if (tails) {
+    if (lexicon || input || unique) {
+      throw new Error("--tails takes no other mode or input");
+    }
+    return { lexicon, tails, steps, all, only, input, unique, syllables };
+  }
+  if (steps !== undefined) {
+    throw new Error("--steps requires --tails");
+  }
   if (!lexicon && !input) {
     printUsage();
     throw new Error("Missing input text");
@@ -118,18 +146,21 @@ function parseArgs(argv: string[]): CliOptions {
     throw new Error("--lexicon requires --only <row> or --all (re-places the whole lexicon)");
   }
 
-  return { lexicon, all, only, input, unique, syllables };
+  return { lexicon, tails, all, only, input, unique, syllables };
 }
 
 function printUsage(): void {
   console.error(`Usage: npm run convert-word -- <english> [--unique] [--syllables N]
        npm run convert-word -- --lexicon (--only LITERAL|EMOJI|ROOT | --all)
+       npm run convert-word -- --tails [--steps N]
 
 --lexicon rewrites the published/overlay/compound CSVs and dumps tmp/lexicon-retie-map.json.
 Eligible rows (overlay-backed, or the marked pronouns) take annealed three-letter roots.
 Every other row takes a five-letter root, frequent senses first, regret order on ties.
 --only limits --lexicon to matching published rows (repeatable or comma-separated).
 --all re-places every published row; --lexicon needs one of --only or --all.
+--tails places every row of data/lexicon-tails.csv by its kind and shape (root-tails phase 1),
+writes only that file's root column, and prints the report. --steps sets the annealing steps.
 
 Examples:
   npm run convert-word -- fishing
@@ -345,6 +376,10 @@ async function convertLexicon(only: string[]): Promise<void> {
 
 async function main(): Promise<void> {
   const options = parseArgs(process.argv.slice(2));
+  if (options.tails) {
+    await convertTails({ steps: options.steps });
+    return;
+  }
   if (options.lexicon) {
     await convertLexicon(options.only);
     return;

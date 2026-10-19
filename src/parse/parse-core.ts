@@ -1,5 +1,6 @@
 import type { IToken } from "chevrotain";
 
+import { withLexiconClosedRoots } from "../closed-roots.js";
 import { collectAmbiguity } from "./ambiguity.js";
 import { diagnoseParseError, enforceResult, enforceTokens, enforceTones } from "./enforce.js";
 import type { ClassifyTables } from "./classify.js";
@@ -9,12 +10,16 @@ import { parseSentenceTokensWithCst } from "./sentence-parser.js";
 import { tokenizeUtterance } from "./tokenize.js";
 import type { ParseOptions, ParseResult } from "./types.js";
 
-/** End-to-end parse with caller-supplied lexicon tables (browser-safe). */
+/** End-to-end parse with caller-supplied lexicon tables (browser-safe). Closed roots read as `tables` spell them. */
 export function parseWithTables(
   text: string,
   tables: ClassifyTables,
   options: ParseOptions = {},
 ): ParseResult {
+  return withLexiconClosedRoots(tables.published, () => parseIn(text, tables, options));
+}
+
+function parseIn(text: string, tables: ClassifyTables, options: ParseOptions): ParseResult {
   const toned = enforceTones(tokenizeUtterance(text, tables));
   const tokens = toned.tokens;
   enforceTokens(tokens, tables);
