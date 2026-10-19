@@ -341,7 +341,7 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 
 | English | Agazan | Reading |
 |---------|--------|---------|
-| *give* / *provide* / *contribute* | `zazawan dugul vebel balahen.` | the book goes to Alahen |
+| *give* / *provide* / *contribute* / *submit* / *hand in* | `zazawan dugul vebel balahen.` | the book goes to Alahen |
 | *get* / *receive* / *acquire* (a thing handed over) | the same sentence | the receiver is the `/b/` |
 | *giver* / *supplier* / *provider* | `zaxebel` | doer of the giving |
 | *receiver* | `zoxebel` | the one given to |

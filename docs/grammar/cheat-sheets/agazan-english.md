@@ -331,6 +331,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `abagalamol` | *refund* |  |
 | `abagalugol` | *small-change* |  |
 | `abagelemadal` | *copper* |  |
+| `abagelevevul` | *cable* |  |
 | `abagemegel` | *generator* |  |
 | `abagolebavul` | *blackberry* |  |
 | `abagolebedul` | *crow* |  |
@@ -381,6 +382,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `abogulegal` | *omelet* |  |
 | `abogulozozal` | *syrup* |  |
 | `abogulunudal` | *lasagna* |  |
+| `abohelevezal` | *cheek* |  |
 | `abohomozel` | *folktale* |  |
 | `abohomuduhal` | *folk-song* |  |
 | `abovulawahel` | *cider* |  |
@@ -416,6 +418,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `adavolewal` | *eardrum* |  |
 | `adawolemadal` | *brass* |  |
 | `adayelagadel` | *fork* |  |
+| `adazamahal` | *encounter* |  |
 | `adazamedegal` | *lottery-ticket* |  |
 | `adazolagadel` | *dinner* |  |
 | `adazolanadal` | *evening* |  |
@@ -596,6 +599,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `alavulobodal` | *lifeboat* |  |
 | `aledelaladul` | *thunder* |  |
 | `alegeloragel` | *liver* |  |
+| `alegomazewel` | *panel* |  |
 | `alegomeladel` | *veteran* |  |
 | `alegomezebel` | *jargon* |  |
 | `aludelabogal` | *firefly* |  |

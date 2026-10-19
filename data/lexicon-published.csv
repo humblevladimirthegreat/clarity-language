@@ -23,7 +23,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🫣,peek,ebaga,surveillance,peek to spy; surveillance is watching without being the seen act,,monitor; glance,
 🤫,hush,aheha,confidentiality,a hushed whisper keeps the matter private,,,
 🤔,think,evega,doubt,think shows doubt,,understand; consider; consideration; reckon,clause.md#beginner-practice
-🫡,salute,azadu,respect,a salute honors someone; respect is honoring their worth,,civil; admire,
+🫡,salute,azadu,respect,a salute honors someone; respect is honoring their worth,,civil; admire; honor,
 🤐,secret,ezege,discretion,secret lips stay discreet,,private,
 🤨,skeptical,azoge,suspicion,a raised brow doubts someone; suspicion is expecting something is wrong,,suspect,
 😐,neutral,una,impartiality,a neutral face takes no side; impartiality is judging without favor,,,
@@ -68,7 +68,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🥹,touched,adeho,,,,,
 😨,fear,evehe,threat-appraisal,fear means dread; threat-appraisal is the unobservable reading of danger,,afraid; scare; frighten,
 😰,anxious,anago,apprehension,anxious means anxiety; apprehension is the unobservable expected harm,,nervous; anxiety,predication.md#intermediate-practice
-😢,teardrop,edoda,sadness,a teardrop shows sadness,,sorrow; sad,
+😢,teardrop,edoda,sadness,a teardrop shows sadness,,sorrow; sad; tear,
 😭,cry,agahu,anguish,sob shows anguish,,,knowing.md#beginner-practice
 😱,scream,ezuge,horror,scream shows horror,,,dependents.md#beginner-practice
 😞,disappointed,edebo,disillusion,disappointed shows disappointment; disillusion is the unobservable fall from a frame,,,
@@ -139,7 +139,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🫶,care,egehe,kindness,heart hands offer care; kindness is warmth shown to others,,tender,
 👐,open-hands,ahawu,openness,open hands hide nothing; openness is having nothing to hide,,,
 🤲,cupped-hands,ogaba,receptiveness,cupped hands wait to receive; receptiveness is being ready to take in,,,
-🤝,handshake,aha,co-participation,handshake seals shared presence; co-participation is sharing the floor,,participate; interaction; membership; participation,
+🤝,handshake,aha,co-participation,handshake seals shared presence; co-participation is sharing the floor,,participate; interaction; membership; participation; engage,
 🙏,pray,ebevo,gratitude,pray expresses gratitude,,grateful; appreciate,sakes.md#intermediate-practice
 ✍️,write,arada,authorship,write puts words on the page; authorship is claiming those words,,author,questions.md#beginner-practice
 💅,nail-polish,eneba,,,,,
@@ -197,7 +197,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🧑‍🚀,orbit,oraba,exploration,orbiting seeks exploration,,explore,
 🧑‍🚒,firefight,avova,,,,,
 👮,police,abaze,authority,policing wields authority,,,predication.md#beginner-practice
-🕵️,investigate,une,inference,investigating follows clues; inference is reasoning from what the clues show,,interpretation; infer,
+🕵️,investigate,une,inference,investigating follows clues; inference is reasoning from what the clues show,,interpretation; infer; implication; derive,
 💂,guard,agavo,protection,guarding provides protection,,protect,dependents.md#beginner-practice
 🥷,sneak,ezevu,stealth,sneaking moves with stealth,,,speech-moves.md#beginner-practice
 👷,construct,agoza,fabrication,construction builds structures,,build; install; formation; implement; implementation; architecture,roles.md#beginner-practice
@@ -284,7 +284,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🐈‍⬛,black-cat,agudu,omen,a black cat crossing your path is read as an omen; an omen is a sign taken to predict what comes,,,
 🦁,lion,alahe,courage,brave as a lion,,,
 🐅,tiger,adege,ferocity,fight like a tiger,,,
-🐆,leopard,elebe,nature,a leopard cannot change its spots,,environmental; wild; organic,
+🐆,leopard,elebe,nature,a leopard cannot change its spots,,environmental; wild; organic; natural,
 🫎,moose,umuza,,,,,
 🫏,donkey,adoge,,,,,
 🐎,horse,ohoza,,,,,
@@ -374,7 +374,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🪲,beetle,ebada,hardiness,a beetle's hard shell shrugs off hits,,solid; hard; firm; firmly,
 🐞,ladybug,elede,luck,ladybug brings luck,,lucky; fortune; fortunate,
 🦗,grasshopper,aguza,,,,,
-🪳,cockroach,agogo,resilience,cockroach survives anything,,,
+🪳,cockroach,agogo,resilience,cockroach survives anything,,survival; survive,
 🕷️,spider,azaba,entrapment,spider traps its prey,,,
 🕸️,cobweb,agebe,network,a cobweb connects everything,,net; web,
 🦂,scorpion,ozogo,betrayal,scorpion stings the hand that feeds,,,
@@ -407,13 +407,13 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🍃,leaf,elevo,,,,,
 🍂,fallen-leaf,eleve,autumn,leaves fall in autumn; autumn is the season of falling leaves,,,
 🪹,empty-nest,eno,emptiness,empty nest shows emptiness,,empty,
-🪺,nest,eneza,nurture,nest nurtures young,,sustain,
+🪺,nest,eneza,nurture,nest nurtures young,,sustain; rear,
 🍄,mushroom,amahu,proliferation,mushrooms pop up overnight,,,
 🪾,dead-tree,ededa,decay,dead tree shows decay,,,
 🍇,grape,egeba,disparagement,sour grapes runs down what you cannot reach,,,
 🍈,fruit,uvavu,,a melon stands for fruit: the sweet seed-bearing food of a plant,,,
 🍉,watermelon,owoda,refreshment,watermelon is cold juicy water on a hot day,,,joins.md#beginner-practice
-🍊,tangerine,adehe,skin,a tangerine peel is its outer covering; skin is the outer covering of a body,,orange-fruit,
+🍊,tangerine,adehe,skin,a tangerine peel is its outer covering; skin is the outer covering of a body,,orange-fruit; surface,
 🍋,lemon,elehu,defect,a lemon is a bad deal,,,
 🍋‍🟩,lime,alahu,zest,lime adds zest and tang,g:sour,tart; tangy,
 🍌,banana,abayo,madness,to go bananas is to lose your head,,,
@@ -628,7 +628,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🛟,life-buoy,alavu,rescue,a lifebuoy is thrown to pull someone from the water,,,
 🛶,canoe,agawo,lake,a canoe floats on a lake,,,
 🚤,boat,oboda,superficiality,speedboat skims; superficiality is staying on the surface of meaning,,,roles.md#intermediate-practice
-🚢,ship,eheba,voyage,ship crosses open seas; voyage is a long sea journey,,journey; sail,roles.md#intermediate-practice
+🚢,ship,eheba,voyage,ship crosses open seas; voyage is a long sea journey,,journey; sail; trip; tour,roles.md#intermediate-practice
 ✈️,airplane,erabe,,,,plane; aircraft; flight,
 🛫,departure,edaba,abandonment,plane lifting off leaves the ground; departure is setting out,,abandon,knowing.md#beginner-practice
 🛬,arrival,evaha,reaching,plane touching down reaches destination; arrival is reaching the end,,,comparatives.md#intermediate-practice
@@ -757,7 +757,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🪢,knot,ana,bond,knot ties two ends together; bond is holding fast together,,bind; integrate,
 🕶️,sunglasses,ozaga,unbothered,sunglasses hide the eyes; cool is calm unbothered style,,,
 🥽,goggles,agogu,,,,,
-🥼,lab-coat,alego,expertise,lab coat marks scientific work; expertise is specialized knowledge,,technical; master; talent; specialist; specialize; pro; qualification; expert,
+🥼,lab-coat,alego,expertise,lab coat marks scientific work; expertise is specialized knowledge,,technical; master; talent; specialist; specialize; pro; qualification; expert; professional,
 🦺,vest,eveze,safety,the vest keeps workers safe; safety is freedom from harm,,safe; secure; insurance; insure,
 👔,necktie,enege,neck,a necktie hangs at the neck; the neck joins head and body,,,
 👕,shirt,ehada,casual,a shirt is everyday wear; casual is relaxed informal,,t-shirt,
@@ -864,7 +864,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 📜,scroll,oze,tale,scroll records a tale; tale is a told story,,historical; narrative,
 📄,page,abehe,documentation,page is a sheet; record is the unobservable keeping,,sheet; document; text,predication.md#beginner-practice
 📰,newspaper,unuze,news,a newspaper prints what happened today,,article; magazine; coverage; journal,hooks.md#intermediate-practice
-📑,tab,adeba,organization,a tab sorts open pages into their own slots,,organize; arrangement; system,
+📑,tab,adeba,organization,a tab sorts open pages into their own slots,,organize; arrangement; system; format,
 🔖,bookmark,ura,reminder,a bookmark holds your place to come back to,,remind,
 🏷️,label,aleba,classification,a label sorts things into named groups,,category; class; mark,
 🪙,coin,ugo,same,coin has two faces of one thing; same is two labels for one referent,,,predication.md#beginner-practice
@@ -888,7 +888,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ✏️,pencil,ebeyo,draft,pencil marks can be erased; draft is tentative first version,,outline,word-endings.md#beginner-practice
 🖊️,pen,ebewe,commitment,pen ink stays on the page; commitment is a binding promise,,dedicate,intention.md#intermediate-practice
 🖌️,paintbrush,ebuda,artistry,brush paints with flowing strokes; artistry is skilled creative work,,art; paint; illustration; brush; draw; illustrate; stroke,comparatives.md#advanced-practice
-🖍️,crayon,egeye,boldness,crayon marks with thick color; boldness is strong visible stroke,,,
+🖍️,crayon,egeye,boldness,crayon marks with thick color; boldness is strong visible stroke,,nerve,
 📝,memo,ume,policy,memo records a standing decision; policy is a standing rule,,regulation; guideline; law; legal,
 🪌,eraser,oreze,correction,an eraser rubs out a mistake; correction is setting a mistake right,,,
 💼,briefcase,ebeve,business,briefcase carries work affairs; business is commercial affairs,z:job,task; affair; enterprise; profession; company,
@@ -1017,7 +1017,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ↖️,northwest,onove,,,,,
 ↕️,vertical,evade,hierarchy,up and down; hierarchy ranks higher and lower,,,
 ↔️,east-west,eda,reciprocity,east-west arrow runs both ways; reciprocity is mutual give and take,,mutual,pronouns.md#intermediate-practice
-↩️,back,abaga,revert,return arrow curves back left; revert is going back to before,,,
+↩️,back,abaga,revert,return arrow curves back left; revert is going back to before,,rear,
 ↪️,forward,ovowe,redirect,return arrow curves forward right; redirect is sending another way,,proceed; forth,
 ⤴️,curve-up,abewe,improvement,the arrow turns upward; improvement is getting better,,improve; enhance; reform; slope,
 ⤵️,curve-down,egada,setback,the arrow turns downward; a setback puts progress back,,,
@@ -1078,7 +1078,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ➗,divide,edava,,,,split,
 🟰,equals,egawa,equality,both sides equal; equality is equal standing,,peer; equivalent; equation,
 ♾️,infinity,oneve,boundlessness,infinity loop never closes; boundlessness is the unobservable without-limit,,,
-‼️,bang,abawe,,,,knock; snap,
+‼️,bang,abawe,,,,knock; snap; pop; tap,
 ⁉️,interrobang,unede,,,,,
 ❓,question-mark,egewe,possibility,a questionmark marks the open case; possibility is maybe-so,,theory; hypothesis,spans.md#intermediate-practice
 ❗,exclamation,egaza,importance,an exclamation calls attention; importance is mattering,,crucial; significance,
@@ -1128,7 +1128,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🏁,finish-line,eveha,terminus,checkered flag marks finish,,,join-across-roles.md#intermediate-practice
 🚩,sport,ozobo,alarm,red flag raises warning,,,
 🏴,flag,avago,anarchy,black flag suggests anarchy,,,
-🏳️,parley,abaye,surrender,waving a white flag gives up the fight,,,
+🏳️,parley,abaye,surrender,waving a white flag gives up the fight,,submit,
 🏳️‍🌈,homosexual,ohoze,pride,rainbow flag shows pride,,gay,
 🏳️‍⚧️,transgender-flag,aduhe,,,,,
 🏴‍☠️,robbery,arabe,exploitation,the pirate flag signals open robbery; exploitation is taking through power without visible force,v:rob; m.v:exploit,,
@@ -1408,7 +1408,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 𝄐,fermata,evada,lingering,a fermata holds a note longer than its beat; lingering is staying past the expected time,,,
 𝄒,breath-mark,amago,breather,a breath mark gives the singer a moment to breathe; a breather is a short break to recover,,,
 𝄓,caesura,ezahu,interruption,a caesura cuts the music off mid-flow; an interruption breaks off what was going on,,,
-𝄞,clef,egoge,context,a clef at the start tells you how to read every note after it; context is what tells you how to read what follows,,,
+𝄞,clef,egoge,context,a clef at the start tells you how to read every note after it; context is what tells you how to read what follows,,background,
 𝆒,crescendo,egahe,escalation,a crescendo grows louder and louder; escalation is growing more intense step by step,,,
 𝆓,decrescendo,edago,de-escalation,a decrescendo grows softer; de-escalation is easing intensity down,,,
 🝏,scepter,azeba,dominion,a scepter is held by the one who rules; dominion is rule over a realm,,,
@@ -1417,3 +1417,5 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 ,oven,avayo,,,,,
 ,vinegar,evoge,,,,,
 ,whistle,eweze,,,,,
+,chip,ahebu,,,,fragment; crisp,
+,strip,ezude,,,,,

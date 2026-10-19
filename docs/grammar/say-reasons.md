@@ -48,6 +48,7 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 | *apparently* (so they say) | `thewam` | REPORTED |
 | *apparently* (a glimpse) | `thodor` | LIVE, a glimpse |
 | *presumably* (by the usual pattern) | `thobam` | PATTERN |
+| *naturally* / *of course* (as you would expect) | `thobal` | PATTERN, a well-established one |
 | *presumably* (a weak clue) | `thuner` | CLUES, thin |
 | *guess* / *I guess* / *perhaps* / *maybe* / *possibly* / *not sure* / *unsure* | `thovum` | MAY, could be |
 | *guess* (a passing thought) | `thovur` | MAY, who knows |
@@ -166,6 +167,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 | *feed* (a child, nurture) | `zalahen vevedol dazawan.` | the nurturing root, no `thegem` |
 | *remove* | `zugul vedabal ual bexagadel thegem bazawan.` | the book leaves the table, Azawan makes it happen |
 | *discard* | `zugul veledol thegem bazawan.` | the book is disposed of |
+| *ensure* / *make sure* (that it happens) | `zalahen vedabal thegem bazawan.` | Alahen leaves, Azawan makes it happen |
 | *prevent* (make it not happen) | `zalahen vedabal vul thegem bazawan.` | Alahen does not leave, Azawan makes that so |
 | *prevent* (act so that it will not) | `zazawan vowogal hogom burl zalahen vedabal.` | Azawan walks so that Alahen does not leave |
 | *persuade* | `zalahen thunemalahen thehum vowogal thegem bazawan.` | as I gather, Alahen has decided to walk, and Azawan made that happen |

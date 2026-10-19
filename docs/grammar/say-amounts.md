@@ -276,7 +276,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | English | Agazan |
 |---------|--------|
 | *always* / *constantly* | `hual` |
-| *usually* / *normally* / *generally* / *regularly* (*as a rule*) | `huam` |
+| *usually* / *normally* / *generally* / *regularly* / *typically* (*as a rule*) | `huam` |
 | *often* / *frequently* | `thobam zel hral` before the verb |
 | *frequent* / *regular* / *usual* (*a regular visitor*, *the usual route*) | put the frequency on the verb: `zazawan vuvudel huam.` (Azawan usually comes) |
 | *sometimes* / *occasionally* | `har` |
@@ -303,7 +303,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *enough* / *sufficient* / *adequate* / *full* (as much as is needed) | `zagadulx thegatham zoel gral` |
 | *too many* / *excess* / *extra* / *spare* (more than needed) | `zagadulx thegatham zel gral` |
 | *quantity* (*how many*) | the amount scale `gral` |
-| *normal* / *standard* / *ordinary* / *medium* / *average* (*normally big*) | the PATTERN bar with `zoel`: `zodogal thobam zoel gelavam` |
+| *normal* / *typical* / *standard* / *ordinary* / *medium* / *average* (*normally big*) | the PATTERN bar with `zoel`: `zodogal thobam zoel gelavam` |
 | *single* (*just one*) | the plain number `g+1` |
 | *secondary* / *second* | the rank `g#2` |
 | *whole* / *entire* / *complete* / *total* / *ideal* (nothing lacking) | `gahahom` (*perfection*) |
@@ -334,6 +334,8 @@ English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an 
 |---------|--------|
 | *expensive* / *costly* / *pricey* | `thobam zel gadahum` (costs more than usual) |
 | *cheap* / *inexpensive* | `thobam zuel gadahum` |
+| *rich* / *wealthy* | `thobam zel gegedom` (more wealth than usual) |
+| *poor* (*little money*) | `thobam zuel gegedom` |
 | *weak* / *feeble* / *frail* | `thobam zuel gabezem` (less strength than usual) |
 | *busy* / *hard-working* | `thobam zel gozewem` (more effort than usual) |
 | *far* / *far away* / *distant* / *remote* | `thobam zel gazedam` (farther than usual) |

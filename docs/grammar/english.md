@@ -153,6 +153,7 @@ One English word, one row: the form that says it and the section that teaches it
 | *beyond* / *farther than* | rank on distance: `zahazal zel gazedam` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
 | *versus* / *against* (*Azawan versus Alahen*) | hook **`uel`** + `/b/` | [Hooks](hooks.md#extra-noun) |
 | *somewhere* / *nowhere* / *everywhere* / *elsewhere* | **`ol bar`** / **`ol bal`** / **`ol bual`** / **`ol bur`** | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites) |
+| *anywhere* (any place will do) / *not … anywhere* | **`ol bor`** (*at any one*); with a denial, **`ol bal`** (*nowhere*) | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites), [unspecified member](joins.md#unspecified-member-r-phrase) |
 
 ### Including, except, instead {#same-slot}
 
@@ -205,6 +206,8 @@ English often makes an adjective from a noun by adding an ending (*gold* → *go
 | *musical* | `gumuyum` (*composition*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *biological* | `gahadem` (of life) | [Adjectives](clause.md#adjectives-ɡ) |
 | *institutional* / *political* / *public* (run by the state) | `gagedum` (*institution*) | [Adjectives](clause.md#adjectives-ɡ) |
+| *natural* (of nature) | `gelebem` (*nature*) | [Adjectives](clause.md#adjectives-ɡ) |
+| *efficient* | `gavagemozewel` (*efficiency*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *financial* | `gamol` (of money) | [Adjectives](clause.md#adjectives-ɡ) |
 | *physical* (of the body) | `gegezem` (*body*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *agricultural* | `gavavom` (*cultivation*) | [Adjectives](clause.md#adjectives-ɡ) |

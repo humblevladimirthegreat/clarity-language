@@ -15,7 +15,7 @@ use [skip-cd] for amplify to not deploy.
 -vocab flashcards generator
 -site visitor statistics
 -contact form / about me
--ngsl full
+-reconsider adjective bars (poor/rich, weak/strong)
 
 -english helper leads (decide; never auto-add): *could not* has no past-inability job (say-tense#ability-words); *hastily* is a gap (-ly adverb over the *haste* sense; WordNet derivation stops at *hasty*); *aboard* / *underneath* tagged as adjectives, so no hook fallback; *per* takes the extra-noun fallback though it is a rate; lexicon misses in `npm run english-helper-recall` (tmp/english-helper-recall.csv: *leave* / *departure*, *asleep*)
 
