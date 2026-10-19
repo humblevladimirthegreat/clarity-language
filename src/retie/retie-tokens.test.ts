@@ -15,6 +15,7 @@ import {
 import { rewriteSourceLiterals, sourceLiterals } from "./source.js";
 import { rewriteParsedWord } from "./rebuild.js";
 import { parseWord } from "../parse/word.js";
+import { followProse } from "./follow.js";
 import { lineNumberAt, peelChunk, retieCore } from "./tokens.js";
 import { retieTables as bridgeTables } from "./tables.js";
 import { verifyRetiedSpans } from "./verify.js";
@@ -389,10 +390,18 @@ describe("English copies follow their Agazan", () => {
     assert.equal(text, "> `zalahen vawalal.`\n>\n> z-Alahen | v-walk\n>\n> \"Alahen walks.\"\n\n| *Alahen* | `alahen` |\n");
   });
 
-  it("leaves an opaque span's payload and its quoted copies alone", () => {
+  it("leaves an opaque loan's payload and its quoted copy alone", () => {
+    const input = "> `zazawan d<odoga> vahahal.`\n>\n> z-Azawan | d-OPAQUE[\"odoga\"] | v-see\n";
+    const { text } = rewriteMarkdown(input, map, undefined, {
+      follow: { names: new Map(), words: new Map([["odoga", "uzugo"]]) },
+    });
+    assert.equal(text, input);
+  });
+
+  it("reties a mention's payload and its quoted copies: it spells an Agazan word", () => {
     const input = "> `glelel z<odoga> gamazam.`\n>\n> [gl-MENTION | z-OPAQUE[\"odoga\"]] | g-small\n>\n> \"The word “odoga” is small.\"\n";
     const { text } = rewriteMarkdown(input, map);
-    assert.equal(text, input);
+    assert.equal(text, input.replaceAll("odoga", "uzugo"));
   });
 
   it("does not touch names inside code or link targets", () => {
@@ -683,5 +692,37 @@ describe("source literals — fixtures, patterns and names", () => {
       rewriteSourceLiterals(source, "x.test.ts", ctx).text,
       'preview("d[zadagal zagadul]");\nassert.deepEqual(spoken, ["zadagal", "zagadul"]);\n',
     );
+  });
+});
+
+describe("retie fixes (2026-10-19 root-tails dry run)", () => {
+  it("keeps a resume's -rl / -rm sense when its root moves", () => {
+    const map = mapOf(["odoga", "awozo"]);
+    assert.equal(retieCore("dodogarl", map), "dawozorl");
+    assert.equal(retieCore("dodogarm", map), "dawozorm");
+  });
+
+  it("never respells a kept word: the language name is renamed by hand", () => {
+    const map = mapOf(["agaza", "emabo"]);
+    const input = "| Surface | `` `agazan.` `` |\n\nFences take ` ```agazan `.\n";
+    assert.equal(rewriteMarkdown(input, map, undefined, { keep: new Set(["agazan", "Agazan"]) }).text, input);
+  });
+
+  it("follows names in a regex literal with escapes, and writes the escapes back", () => {
+    const ctx = {
+      map: mapOf(["ululo", "alahe"]),
+      tables: loadDefaultTables(),
+      follow: { names: new Map([["Ululon", "Alahen"]]), words: new Map() },
+      english: new Set<string>(),
+      currentRoots: new Set<string>(),
+    };
+    const source = "assert.match(out, /documented: z-Ululon \\| v-walk\\n/);\n";
+    assert.equal(rewriteSourceLiterals(source, "x.test.ts", ctx).text, "assert.match(out, /documented: z-Alahen \\| v-walk\\n/);\n");
+  });
+
+  it("follows names inside a markdown fence (an example page), not a text fence", () => {
+    const input = "```markdown\n> z-Ululon | v-walk\n```\n\n```text\nUlulon\n```\n";
+    const { text } = followProse(input, { names: new Map([["Ululon", "Alahen"]]), words: new Map() });
+    assert.equal(text, "```markdown\n> z-Alahen | v-walk\n```\n\n```text\nUlulon\n```\n");
   });
 });

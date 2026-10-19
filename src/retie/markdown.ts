@@ -65,6 +65,8 @@ export type RewriteOptions = {
   english?: ReadonlySet<string>;
   /** Leave names, quoted payloads and morph lines for the caller's `finishFollow` (after every page is read). */
   deferFollow?: boolean;
+  /** Words never respelled or reviewed (the language's own name, renamed by hand). */
+  keep?: ReadonlySet<string>;
 };
 
 const REWRITE_CLASSES = new Set(["sentence", "phrase", "word", "template"]);
@@ -83,6 +85,8 @@ export function rewriteMarkdown(
   const pair = asRetieTables(tables ?? loadDefaultTables());
   const parseTables = pair.old;
   const english = options.english ?? ENGLISH_IN_CODE;
+  const keep = options.keep ?? new Set<string>();
+  const guard = (rewrite: CoreRewrite): CoreRewrite => (core, at) => (keep.has(core) ? null : rewrite(core, at));
   const parses = (text: string): boolean => {
     try {
       parse(text.trim(), parseTables);
@@ -94,12 +98,12 @@ export function rewriteMarkdown(
 
   const wouldChange = (text: string): boolean => {
     const probe: RetieChange[] = [];
-    rewritePlainTokens(text, (core) => retieCore(core, map), 0, probe);
+    rewritePlainTokens(text, guard((core) => retieCore(core, map)), 0, probe);
     return probe.length > 0;
   };
 
   const rewriteAgazan = (text: string, index: number, cls: string): string => {
-    const base = resumeRewrite(map, parseTables);
+    const base = guard(resumeRewrite(map, parseTables));
     // A template or fragment can cut a word before its ending (`gonogotha…`): retie it with a filler ending.
     const rewrite: CoreRewrite =
       cls === "template" || cls === "marked-fragment"
@@ -132,11 +136,16 @@ export function rewriteMarkdown(
       const before = changes.length;
       const out = rewritePlainTokens(
         text,
-        (core, at) =>
-          isAgazanLintCandidate(core) && !english.has(core) ? retieCore(core, map) : null,
+        guard((core) => (isAgazanLintCandidate(core) && !english.has(core) ? retieCore(core, map) : null)),
         index,
         changes,
       );
+      // Notation between Agazan words (`owogal + ul → owogalul`) has no English to check.
+      const notation = (text.match(/[^\s`]+/g) ?? []).every((chunk) => {
+        const { core } = peelChunk(chunk);
+        return !/[A-Za-z]/.test(chunk) || (isAgazanLintCandidate(core) && !english.has(core));
+      });
+      if (notation && changes.length > before) return out;
       reviews.push({
         text,
         index,
@@ -181,7 +190,11 @@ export function rewriteMarkdown(
         return inner.text;
       }
       // Unmarked fences fail the lint anyway; treat them like `agazan` so the retie is not lost.
-      return eachLine(text, index, rewriteLine, info !== "" && info !== "agazan");
+      const reviewed = reviews.length;
+      const out = eachLine(text, index, rewriteLine, info !== "" && info !== "agazan");
+      // A letter-names fence is respelled from its word afterwards (letter-names.ts): nothing to review.
+      if (meta.marker && /^retie:\s*letter-names$/.test(meta.marker)) reviews.length = reviewed;
+      return out;
     }
     return rewriteLine(text, index);
   };
@@ -221,7 +234,7 @@ export function rewriteMarkdown(
   const proseWords = (text: string, index: number): string =>
     forEachPlainChunk(text, index, (chunk, chunkIndex) => {
       const { prefix, core } = peelChunk(chunk);
-      if (!core || english.has(core.toLowerCase())) return chunk;
+      if (!core || english.has(core.toLowerCase()) || keep.has(core)) return chunk;
       const next = retieCore(core, map);
       if (next == null || next === core) return chunk;
       reviews.push({

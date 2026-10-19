@@ -523,22 +523,25 @@ function isDeonticNo(row: OverlayRow, tables: ClassifyTables): boolean {
 }
 
 /** Arrow-rose roots (roles.md#arrow-rose-compass-vs-face); `DIR th o` on these is a landmark lateral. */
-export const ARROW_ROOTS = new Set([
-  CLOSED.north,
-  CLOSED.northeast,
-  CLOSED.east,
-  CLOSED.southeast,
-  CLOSED.south,
-  CLOSED.southwest,
-  CLOSED.west,
-  CLOSED.northwest,
-]);
+export const arrowRoots = closedDerived(
+  () =>
+    new Set([
+      CLOSED.north,
+      CLOSED.northeast,
+      CLOSED.east,
+      CLOSED.southeast,
+      CLOSED.south,
+      CLOSED.southwest,
+      CLOSED.west,
+      CLOSED.northwest,
+    ]),
+);
 
 /** `DIR th o` parses as a sake shape; on an arrow root it is the landmark's own facing. */
 function landmarkLateral(word: MorphWord): MorphWord | undefined {
   const family = word.family;
   if (family.kind !== "x" || family.xFamily !== "sake" || family.stanceVowel !== "o" || family.horizon) return undefined;
-  if (family.leftRoots.length !== 1 || !ARROW_ROOTS.has(family.leftRoots[0]!)) return undefined;
+  if (family.leftRoots.length !== 1 || !arrowRoots().has(family.leftRoots[0]!)) return undefined;
   return { ...word, family: { kind: "x", xFamily: "lateral", leftRoots: family.leftRoots, rightRoots: [], landmark: true } };
 }
 
@@ -837,6 +840,10 @@ export type ClassifyHit = {
 };
 
 export function classifyHits(word: MorphWord, tables: ClassifyTables): ClassifyHit[] {
+  return withLexiconClosedRoots(tables.published, () => classifyHitsIn(word, tables));
+}
+
+function classifyHitsIn(word: MorphWord, tables: ClassifyTables): ClassifyHit[] {
   const shaped = classifiedShape(word, tables);
   const hits: ClassifyHit[] = [];
   for (const rule of CLASSIFY_RULES) {

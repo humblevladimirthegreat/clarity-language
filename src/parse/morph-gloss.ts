@@ -62,10 +62,9 @@ import type {
   ResolveInfo,
 } from "./types.js";
 
-const HOUSE_CAST_ROOTS = [CLOSED.swan, CLOSED.lion, CLOSED.hibiscus];
-
-const HOUSE_CAST: Record<string, string> = Object.fromEntries(
-  HOUSE_CAST_ROOTS.map((root) => [root, namedEnglish(root)]),
+const houseCast = closedDerived(
+  (): Record<string, string> =>
+    Object.fromEntries([CLOSED.swan, CLOSED.lion, CLOSED.hibiscus].map((root) => [root, namedEnglish(root)])),
 );
 
 /** Number writing mark → form suffix (glosses.md § Round trip). */
@@ -87,18 +86,22 @@ function numberMarkSuffix(word: LexWord, ctx: MorphGlossContext): string {
   return NUMBER_MARK_SUFFIX[word.family.writingEndingMark ?? SPELLED_ENDING_MARK[word.ending ?? ""] ?? ""] ?? "";
 }
 
-const SPECIAL_PRONOUN: Record<string, string> = {
-  [CLOSED.microphone]: "speaker",
-  [CLOSED.headphones]: "listener",
-  [CLOSED.handshake]: "interlocutors",
-  [CLOSED.neutral]: "someone",
-};
+const specialPronoun = closedDerived(
+  (): Record<string, string> => ({
+    [CLOSED.microphone]: "speaker",
+    [CLOSED.headphones]: "listener",
+    [CLOSED.handshake]: "interlocutors",
+    [CLOSED.neutral]: "someone",
+  }),
+);
 
 /** The topic and generic pronouns gloss in capitals on `/z/` `/d/` `/b/` only (glosses.md § Specials). */
-const MARKED_PRONOUN: Record<string, string> = {
-  [CLOSED.star]: "TOPIC",
-  [CLOSED.person]: "ONE",
-};
+const markedPronoun = closedDerived(
+  (): Record<string, string> => ({
+    [CLOSED.star]: "TOPIC",
+    [CLOSED.person]: "ONE",
+  }),
+);
 
 /** Standalone readings ([joins.md § Beginner forms](../../docs/grammar/joins.md#beginner-forms)). */
 const JOIN_JOB_STANDALONE: Record<string, string> = {
@@ -1007,7 +1010,7 @@ function sensePieces(
       return [`←${senseLabel(ctx.antecedent, tables, {})}`];
     }
     if (family.kind === "content") {
-      const house = family.roots.map((root) => HOUSE_CAST[root]).find(Boolean);
+      const house = family.roots.map((root) => houseCast()[root]).find(Boolean);
       if (house) return [`←${house}`];
       // No antecedent: the stem's own sense, or the stem itself (glosses.md § Anaphors).
       // Overlay -r (map resolution, changeability, …) is an ending, not a resume.
@@ -1511,8 +1514,8 @@ function writingSpanLabel(
   if (family.kind !== "writingSpan") return "span";
   const payload = family.payload;
   const stem = payload.endsWith("n") ? payload.slice(0, -1) : payload;
-  if (HOUSE_CAST[stem] && payload.endsWith("n")) return HOUSE_CAST[stem]!;
-  if (HOUSE_CAST[payload]) return HOUSE_CAST[payload]!;
+  if (houseCast()[stem] && payload.endsWith("n")) return houseCast()[stem]!;
+  if (houseCast()[payload]) return houseCast()[payload]!;
   return payload;
 }
 
@@ -1598,11 +1601,11 @@ function rootSense(
   }
 
   const nounSlot = opts.holder || opts.pos === undefined || opts.pos === "z" || opts.pos === "d" || opts.pos === "b";
-  if (ending === "n" && nounSlot && MARKED_PRONOUN[root]) return MARKED_PRONOUN[root]!;
+  if (ending === "n" && nounSlot && markedPronoun()[root]) return markedPronoun()[root]!;
 
   if (ending === "n" || opts.named) {
-    if (HOUSE_CAST[root]) return HOUSE_CAST[root]!;
-    if (SPECIAL_PRONOUN[root]) return SPECIAL_PRONOUN[root]!;
+    if (houseCast()[root]) return houseCast()[root]!;
+    if (specialPronoun()[root]) return specialPronoun()[root]!;
     if (opts.named) return titleAgazanName(root, opts.nameLast !== false);
   }
 

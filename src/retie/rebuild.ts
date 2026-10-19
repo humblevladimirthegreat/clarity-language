@@ -52,10 +52,6 @@ function posPrefix(word: MorphWord): string {
   return word.gl ? `${word.pos}l` : word.pos;
 }
 
-function endingAndPlural(word: MorphWord): string {
-  return `${word.ending ?? ""}${word.plural ? "x" : ""}`;
-}
-
 function mapRoots(roots: string[], map: ReadonlyMap<string, string>): string[] {
   return roots.map((root) => map.get(root) ?? root);
 }
@@ -82,7 +78,8 @@ export function rewriteParsedWord(
     if (!rootsChanged(family.roots, next)) {
       return null;
     }
-    return `${posPrefix(word)}${next.join("x")}${endingAndPlural(word)}`;
+    // Spliced into the raw word, so fields the rebuild does not list (a resume's -rl / -rm sense) stay.
+    return spliceRoots(word, family.roots, next);
   }
   if (family.kind !== "x") {
     return null;
@@ -137,7 +134,7 @@ function rewriteWritingSpan(
   map: ReadonlyMap<string, string>,
   scope?: ResumeScope,
 ): string | null {
-  if (family.bracket === "<") {
+  if (family.bracket === "<" && !scope?.opaque) {
     return null;
   }
   const nextPayload = rewriteSpanPayload(family.payload, map, scope);
@@ -193,11 +190,15 @@ function rebuildX(
   left: string[],
   right: string[] | undefined,
 ): string | null {
-  // Swap each moved root in place, in order, so everything else in the word (role / stance /
-  // locus vowels, emotion horizon, landmark `o`, number stem, ending) stays exactly as written.
+  return spliceRoots(word, [...family.leftRoots, ...(family.rightRoots ?? [])], [...left, ...(right ?? [])]);
+}
+
+/**
+ * Swap each moved root in place, in order, so everything else in the word (role / stance /
+ * locus vowels, emotion horizon, landmark `o`, number stem, ending, resume sense) stays exactly as written.
+ */
+function spliceRoots(word: MorphWord, oldRoots: string[], newRoots: string[]): string | null {
   const prefix = posPrefix(word);
-  const oldRoots = [...family.leftRoots, ...(family.rightRoots ?? [])];
-  const newRoots = [...left, ...(right ?? [])];
   let rest = word.raw.slice(prefix.length);
   let out = "";
   for (let i = 0; i < oldRoots.length; i++) {

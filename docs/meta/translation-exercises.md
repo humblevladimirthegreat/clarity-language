@@ -110,7 +110,7 @@ Checkpoint English and Agazan **imply** this cast. Do not lecture it in spoilers
 
 | Name | Root sense | Checkpoint stance |
 |------|------------|-------------------|
-| **Ahaben** (`ahaben`) | *beauty* (🌺 hibiscus) | A **womahan**. She is the person Azawan and Alahen want to impress; in the setting she is often *seen*, *told*, or the one the stakes are *for* — the occasion, not the rival. |
+| **Ahaben** (`ahaben`) | *beauty* (🌺 hibiscus) | A **woman**. She is the person Azawan and Alahen want to impress; in the setting she is often *seen*, *told*, or the one the stakes are *for* — the occasion, not the rival. |
 | **Azawan** (`azawan`) | *grace* (🦢 swan) | **Non-binary**. Competes for Ahaben’s affection by staying too composed **in this setting**: waits, tells, sits, follows the ordinary procedure. Polite while Alahen escalates. |
 | **Alahen** (`alahen`) | *courage* (🦁 lion) | A **man**. Competes by treating the setting as a dare: the one who runs the alarm, throws the punch, or attempts the robbery. Bravery that invents a threat. |
 

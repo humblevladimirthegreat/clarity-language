@@ -9,11 +9,11 @@
 import { tokenMatcher, type IToken, type TokenType } from "chevrotain";
 
 import type { ClassifyTables } from "./classify.js";
-import { ARROW_ROOTS, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChannel, isStandIn } from "./classify.js";
+import { arrowRoots, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChannel, isStandIn } from "./classify.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { isTopicCompound, isTopicSpan, linkerEnglish, topicEffect } from "./linkers.js";
 import { CLOSED } from "../closed-roots.js";
-import { isGenericPronoun, isTopicPronoun, ROLE_PRONOUN_ROOTS } from "./resolve.js";
+import { isGenericPronoun, isTopicPronoun, rolePronounRoots } from "./resolve.js";
 import { parseHookCompoundCite } from "./hook-compounds.js";
 import type { HookJob } from "./hook-jobs.js";
 import { markContext, SentenceParseError } from "./sentence-parser.js";
@@ -243,7 +243,7 @@ function enforceNameInstance(word: LexWord): void {
   if (word.ending !== "ln") return;
   if (word.gl || (word.pos && !["z", "d", "b"].includes(word.pos))) throw new ConstructionError("nameInstanceSlot", word.raw);
   const roots = word.family.kind === "content" ? word.family.roots : [];
-  if (roots.some((root) => ROLE_PRONOUN_ROOTS.has(root) || root === CLOSED.star || root === CLOSED.person)) {
+  if (roots.some((root) => rolePronounRoots().has(root) || root === CLOSED.star || root === CLOSED.person)) {
     throw new ConstructionError("nameInstanceSlot", word.raw);
   }
 }
@@ -382,15 +382,15 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   }
   if (family.kind === "x" && family.xFamily === "scope") {
     if (word.pos && !SCOPE_POS.has(word.pos)) throw new ConstructionError("labelScopeSlot", word.raw);
-    if (family.leftRoots.some((root) => ARROW_ROOTS.has(root))) throw new ConstructionError("labelScopeArrow", word.raw);
-    if (word.ending === "n" && family.leftRoots.some((root) => ROLE_PRONOUN_ROOTS.has(root))) throw new ConstructionError("labelScopeStem", word.raw);
+    if (family.leftRoots.some((root) => arrowRoots().has(root))) throw new ConstructionError("labelScopeArrow", word.raw);
+    if (word.ending === "n" && family.leftRoots.some((root) => rolePronounRoots().has(root))) throw new ConstructionError("labelScopeStem", word.raw);
   }
   if (family.kind === "x" && family.xFamily === "role" && !word.overlay) {
     const callEnding = word.ending === "n" || word.ending === "r";
     if (word.pos && (!ROLE_COMPOUND_POS.has(word.pos) || (word.pos === "y" && !callEnding))) {
       throw new ConstructionError("roleCompoundSlot", word.raw);
     }
-    if (word.ending === "n" && (family.rightRoots ?? []).some((root) => ROLE_PRONOUN_ROOTS.has(root))) {
+    if (word.ending === "n" && (family.rightRoots ?? []).some((root) => rolePronounRoots().has(root))) {
       throw new ConstructionError("roleCompoundStem", word.raw);
     }
     if (family.scopeVowel && word.pos && !SCOPE_POS.has(word.pos)) throw new ConstructionError("labelScopeSlot", word.raw);
@@ -806,7 +806,7 @@ function enforceTagHost(node: AstNode): void {
   if (node.kind !== "npPackage" || !node.pkg.tag) return;
   const head = node.pkg.head;
   const root = head.family.kind === "content" && head.family.roots.length === 1 ? head.family.roots[0]! : undefined;
-  const special = head.ending === "n" && root !== undefined && ROLE_PRONOUN_ROOTS.has(root);
+  const special = head.ending === "n" && root !== undefined && rolePronounRoots().has(root);
   if (special || isTopicPronoun(head) || isGenericPronoun(head) || head.family.kind === "tag") {
     throw new ConstructionError("tagPronoun", `${head.raw} ${node.pkg.tag.raw}`);
   }
@@ -913,7 +913,7 @@ function enforcePointer(bind: AnaphorBind): void {
   if (bind.ownSlot) throw new ConstructionError("pointerOwnSlot", word.raw);
   if (!bind.antecedent) throw new ConstructionError("pointerUnbound", word.raw);
   if (word.ending === "l" && bind.antecedent.family.kind === "content") {
-    const special = bind.antecedent.family.roots.some((root) => ROLE_PRONOUN_ROOTS.has(root)) || isGenericPronoun(bind.antecedent);
+    const special = bind.antecedent.family.roots.some((root) => rolePronounRoots().has(root)) || isGenericPronoun(bind.antecedent);
     if (special) throw new ConstructionError("pointerNewSpecial", word.raw);
   }
 }

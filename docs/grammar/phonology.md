@@ -148,8 +148,9 @@ The table is in **alphabetical order**. The ten letters that begin a [digit syll
 | `o` | `o` | *Cambodia* (no glide) |
 | `e` | `e` | *bet* |
 
+<!-- retie: letter-names -->
 ```text
-`agadu` → `a` `ga` `a` `da` `a`
+`agadu` → `a` `ga` `a` `da` `u`
 ```
 
 In a clause, a letter you talk about (such as `z`) is a [mention](spans.md#mention); read it aloud by its letter name (`ze`).

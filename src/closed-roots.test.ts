@@ -4,7 +4,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
 
-import { CLOSED_ENTRIES, namedEnglish, resyncClosedRootsSource } from "./closed-roots.js";
+import { CLOSED, CLOSED_ENTRIES, closedDerived, namedEnglish, resyncClosedRootsSource, withLexiconClosedRoots } from "./closed-roots.js";
 import { parsePublishedCsv } from "./lexicon-search.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -34,5 +34,19 @@ describe("closed roots", () => {
 
   it("names a root as its **-n** citation, capitalised", () => {
     assert.equal(namedEnglish("azawa"), "Azawan");
+  });
+
+  it("read as the lexicon in hand spells them, by emoji, and restore afterwards", () => {
+    const swans = closedDerived(() => new Set([CLOSED.swan]));
+    const before = CLOSED.swan;
+    const other = new Map([["oxoxo", { emoji: "🦢", root: "oxoxo" }]]);
+    withLexiconClosedRoots(other, () => {
+      assert.equal(CLOSED.swan, "oxoxo");
+      assert.ok(swans().has("oxoxo"));
+      // An emoji the lexicon lacks keeps this file's spelling.
+      assert.equal(CLOSED.lion, CLOSED_ENTRIES.find((entry) => entry.name === "lion")!.root);
+    });
+    assert.equal(CLOSED.swan, before);
+    assert.ok(swans().has(before));
   });
 });

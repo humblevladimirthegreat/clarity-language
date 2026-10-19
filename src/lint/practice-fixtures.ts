@@ -4,26 +4,36 @@
  * passes all checks.
  */
 import { createClassifyTablesFromRows, type ClassifyTables } from "../parse/classify.js";
+import { loadDefaultTables } from "../parse/index.js";
 import { emptyPosEnglish, parseEnglishByPos } from "../lexicon-search.js";
 
+/**
+ * Six rows spelled as the published lexicon spells their emoji, so a retie that respells
+ * {@link PRACTICE} and the tests built on it leaves this lexicon in step with them.
+ */
 export function houseTables(): ClassifyTables {
-  const row = (root: string, concrete: string, englishByPos = "") => ({
-    emoji: "",
-    concrete,
-    abstract: "",
-    root,
-    mnemonic: "",
-    englishByPos,
-    posEnglish: englishByPos ? parseEnglishByPos(englishByPos, { concrete }) : emptyPosEnglish(),
-  });
+  const published = [...loadDefaultTables().published.values()];
+  const row = (emoji: string, concrete: string, englishByPos = "") => {
+    const root = published.find((candidate) => candidate.emoji === emoji)?.root;
+    if (!root) throw new Error(`practice fixture: no published row for ${emoji}`);
+    return {
+      emoji,
+      concrete,
+      abstract: "",
+      root,
+      mnemonic: "",
+      englishByPos,
+      posEnglish: englishByPos ? parseEnglishByPos(englishByPos, { concrete }) : emptyPosEnglish(),
+    };
+  };
   return createClassifyTablesFromRows(
     [
-      row("azawa", "swan"),
-      row("alahe", "lion"),
-      row("ahabe", "hibiscus"),
-      row("ahaha", "eye", "v:see"),
-      row("ehahe", "chair", "v:sit"),
-      row("owoga", "foot", "v:walk"),
+      row("🦢", "swan"),
+      row("🦁", "lion"),
+      row("🌺", "hibiscus"),
+      row("👁️", "eye", "v:see"),
+      row("🪑", "chair", "v:sit"),
+      row("🚶", "foot", "v:walk"),
     ],
     [],
   );

@@ -1,4 +1,4 @@
-import { CLOSED } from "../closed-roots.js";
+import { CLOSED, closedDerived } from "../closed-roots.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import { parseWithTables } from "../parse/parse-core.js";
 
@@ -18,27 +18,33 @@ const SLOT_RE = /…|\.\.\.|[A-Z][A-Z0-9₀-₉]*/g;
 /** A character that continues a word (so a slot next to it is part of that word). */
 const WORD_CHAR_RE = /[a-z0-9#+_~@=±-]/;
 
-const SWAN = CLOSED.swan;
-const WALK = CLOSED.walk;
-const WORD_FILLERS = [
-  `z${SWAN}n`, `v${WALK}l`, `g${SWAN}l`, `b${SWAN}n`, `z${SWAN}n v${WALK}l`, `d${SWAN}n`, `h${SWAN}l`, `w${SWAN}l`,
-];
-const NAMED_FILLERS: Record<string, string[]> = {
-  HOOK: ["al", "am", "ul", "ol", "el", "aol"],
-  BODY: [`z${SWAN}n v${WALK}l`, `v${WALK}l`],
-  LINKER: ["xal", "xol"],
-  JOIN: ["zal", "zol", "zel"],
-};
-const LEADING_FILLERS = [
-  "z", "d", "v", "g", "b", "h", "w", "x", "y", "th",
-  `z${SWAN}`, `v${WALK}`, `g${SWAN}`, `g${CLOSED.knot}`, `g${CLOSED.tool}`, `th${CLOSED.knot}`, `w${CLOSED.ballot}`,
-  "g+", "g+2", "g~+", "g#", "grawozozo",
-];
-const TRAILING_FILLERS = ["", "l", "n", "m", "r", "2", "2l", "2n", `${SWAN}l`, `${SWAN}n`, `${WALK}l`, "a", "ul"];
+/** Sample fillers, spelled from the closed roots of the lexicon being read. */
+const fillers = closedDerived(() => {
+  const swan = CLOSED.swan;
+  const walk = CLOSED.walk;
+  return {
+    swan,
+    word: [`z${swan}n`, `v${walk}l`, `g${swan}l`, `b${swan}n`, `z${swan}n v${walk}l`, `d${swan}n`, `h${swan}l`, `w${swan}l`],
+    named: {
+      HOOK: ["al", "am", "ul", "ol", "el", "aol"],
+      BODY: [`z${swan}n v${walk}l`, `v${walk}l`],
+      LINKER: ["xal", "xol"],
+      JOIN: ["zal", "zol", "zel"],
+    } as Record<string, string[]>,
+    leading: [
+      "z", "d", "v", "g", "b", "h", "w", "x", "y", "th",
+      `z${swan}`, `v${walk}`, `g${swan}`, `g${CLOSED.knot}`, `g${CLOSED.tool}`, `th${CLOSED.knot}`, `w${CLOSED.ballot}`,
+      "g+", "g+2", "g~+", "g#", "grawozozo",
+    ],
+    trailing: ["", "l", "n", "m", "r", "2", "2l", "2n", `${swan}l`, `${swan}n`, `${walk}l`, "a", "ul"],
+    root: [swan, walk],
+    /** Sake roots, for sake patterns (`g…tha…`). */
+    sake: [CLOSED.knot, CLOSED.tool],
+    fragmentBefore: ["", `z${swan}n`, `z${swan}n v${walk}l`],
+    fragmentAfter: ["", `z${swan}n`, `v${walk}l`],
+  };
+});
 const NUMBER_FILLERS = ["2", "3", "2l", "3l", "2n", "3n"];
-const ROOT_FILLERS = [SWAN, WALK];
-/** Sake roots, for sake patterns (`g…tha…`). */
-const SAKE_FILLERS = [CLOSED.knot, CLOSED.tool];
 
 type Slot = { start: number; end: number; options: string[] };
 
@@ -47,15 +53,15 @@ function slotOptions(text: string, start: number, end: number): string[] {
   const before = start > 0 && WORD_CHAR_RE.test(text[start - 1]!);
   const after = end < text.length && WORD_CHAR_RE.test(text[end]!);
   if (!before && !after) {
-    if (name === "…" || name === "...") return WORD_FILLERS;
-    return NAMED_FILLERS[name.replace(/[0-9₀-₉]+$/, "")] ?? WORD_FILLERS;
+    if (name === "…" || name === "...") return fillers().word;
+    return fillers().named[name.replace(/[0-9₀-₉]+$/, "")] ?? fillers().word;
   }
   if (name === "N") return NUMBER_FILLERS;
-  if (name === "ROOT") return ROOT_FILLERS;
+  if (name === "ROOT") return fillers().root;
   if (name === "DIR") return [CLOSED.west, CLOSED.north];
-  if (name === "ANCHOR") return [CLOSED.headphones, SWAN];
-  if (before && after) return ["", ...ROOT_FILLERS, ...SAKE_FILLERS, "a", "x", "l"];
-  return after ? LEADING_FILLERS : TRAILING_FILLERS;
+  if (name === "ANCHOR") return [CLOSED.headphones, fillers().swan];
+  if (before && after) return ["", ...fillers().root, ...fillers().sake, "a", "x", "l"];
+  return after ? fillers().leading : fillers().trailing;
 }
 
 function findSlots(text: string): Slot[] {
@@ -163,8 +169,6 @@ export function traceTemplate(text: string, tables: ClassifyTables): string[] {
   throw new Error("no filling of the template's slots parses");
 }
 
-const FRAGMENT_BEFORE = ["", "zazawan", "zazawan vowogal"];
-const FRAGMENT_AFTER = ["", "zazawan", "vowogal"];
 
 /** A shape with sample context slots before and after it, plus any slots of its own. */
 function withContext(shape: string): [string, Slot[]] {
@@ -173,9 +177,9 @@ function withContext(shape: string): [string, Slot[]] {
   return [
     template,
     [
-      { start: 0, end: 1, options: FRAGMENT_BEFORE },
+      { start: 0, end: 1, options: fillers().fragmentBefore },
       ...inner,
-      { start: template.length - 1, end: template.length, options: [...FRAGMENT_AFTER, `h${SWAN}l`] },
+      { start: template.length - 1, end: template.length, options: [...fillers().fragmentAfter, `h${fillers().swan}l`] },
     ],
   ];
 }
@@ -184,8 +188,8 @@ function withContext(shape: string): [string, Slot[]] {
 export function traceFragment(text: string, tables: ClassifyTables): string[] {
   const [template] = withContext(text.trim());
   const slots: Slot[] = [
-    { start: 0, end: 1, options: FRAGMENT_BEFORE },
-    { start: template.length - 1, end: template.length, options: FRAGMENT_AFTER },
+    { start: 0, end: 1, options: fillers().fragmentBefore },
+    { start: template.length - 1, end: template.length, options: fillers().fragmentAfter },
   ];
   const ids = traceFilled(template, slots, tables);
   if (!ids) throw new Error("the fragment does not parse with any context before or after it");

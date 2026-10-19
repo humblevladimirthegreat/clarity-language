@@ -4,7 +4,7 @@
  * English must be a lexicon / overlay / morph sense for that Agazan spelling, and a bank lists
  * exactly the content roots its drills use.
  */
-import { CLOSED } from "../closed-roots.js";
+import { CLOSED, closedDerived } from "../closed-roots.js";
 import { classify, lexiconContentRoots, type ClassifyTables } from "../parse/classify.js";
 import { derivedHookGloss, hookCompoundFromMorph } from "../parse/hook-compounds.js";
 import { senseFormEnding, senseFormRoot, type OverlayKind } from "../lexicon-search.js";
@@ -112,14 +112,16 @@ function checkPair(
 
 // A bank may give the speaker / listener special as plain *I* / *you* as well as
 // *speaker* / *listener* (translation-exercises.md#vocab-table).
-const SPECIAL_BANK_ENGLISH: Record<string, string> = {
-  [CLOSED.microphone]: "i",
-  [CLOSED.headphones]: "you",
-};
+const specialBankEnglish = closedDerived(
+  (): Record<string, string> => ({
+    [CLOSED.microphone]: "i",
+    [CLOSED.headphones]: "you",
+  }),
+);
 
 function specialPronounEnglish(morph: ReturnType<typeof parseWord>): string | undefined {
   if (morph.ending !== "n" || morph.family.kind !== "content" || morph.family.roots.length !== 1) return undefined;
-  return SPECIAL_BANK_ENGLISH[morph.family.roots[0]!];
+  return specialBankEnglish()[morph.family.roots[0]!];
 }
 
 function allowedSenses(

@@ -13,10 +13,11 @@
  * marked shared short cut blocks `--write`, as does a map whose old spellings the word
  * grammar cannot read or that was already applied.
  */
+import { execFileSync } from "node:child_process";
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
 
-import { CLOSED_ENTRIES } from "../src/closed-roots.js";
+import { CLOSED_ENTRIES, closedRootsIn, namedEnglish } from "../src/closed-roots.js";
 import { parseCompoundCsv, validateCompoundRows } from "../src/lexicon-compounds.js";
 import { ensureFrequencyFile, loadFrequencyRanks } from "../src/lexicon-place.js";
 import { listMarkdown } from "../src/markdown-files.js";
@@ -33,7 +34,8 @@ import {
   unreadableOldRoots,
 } from "../src/retie/map.js";
 import { rewriteSourceLiterals } from "../src/retie/source.js";
-import { lineNumberAt } from "../src/retie/tokens.js";
+import { respellLetterNames } from "../src/retie/letter-names.js";
+import { lineNumberAt, peelChunk } from "../src/retie/tokens.js";
 import { lexiconConverted, retieTables } from "../src/retie/tables.js";
 import { verifyRetiedSpans } from "../src/retie/verify.js";
 import { REPO_ROOT, dataPath } from "../src/repo-paths.js";
@@ -43,7 +45,10 @@ const markdownDirs = [
   join(REPO_ROOT, "docs", "grammar"),
   join(REPO_ROOT, "docs", "examples"),
   join(REPO_ROOT, "docs", "meta"),
+  join(REPO_ROOT, "docs", "proposals"),
 ];
+/** Rejected proposals record a past design, spelled as it was. */
+const SKIP_DIRS = [join(REPO_ROOT, "docs", "proposals", "rejected")];
 /** TODO.md is planning notes and is never retied. */
 const topLevelMarkdown = ["AGENTS.md", "README.md"].map((name) => join(REPO_ROOT, name));
 /** Page-level opt-out for records of past spellings (the marker on a line of its own, not quoted in prose). */
@@ -107,7 +112,7 @@ function printUsage(): void {
   console.error(`Usage: npm run retie-docs -- [--map PATH] [--write] [--force]
 
 Reads ${RETIE_MAP_RELATIVE_PATH} (from convert-word --lexicon) and reties Agazan in
-docs/grammar/, docs/examples/, docs/meta/, AGENTS.md, README.md, string literals
+docs/grammar/, docs/examples/, docs/meta/, docs/proposals/ (not rejected/), AGENTS.md, README.md, string literals
 under src/ (tests included), scripts/ and the grammar site, and overlay anchors.
 convert-word --lexicon already retied the lexicon CSVs; this only checks them.
 Default is a dry-run. --write refuses on a blocking finding (map collision, unreadable old
@@ -163,9 +168,15 @@ async function main(): Promise<void> {
   // Pre-retie text reads against the old lexicon, retied text against the current one.
   const tables = retieTables(map);
   const english = await commonEnglish();
+  // The language's own name is the 👓 root + -n. It is renamed by hand, never by a retie:
+  // the English name, identifiers (`agazan` fences, `lint:agazan`), file names and URLs all carry it.
+  const oldLanguageRoot = closedRootsIn(tables.old.published).glasses;
+  const newLanguageRoot = closedRootsIn(tables.current.published).glasses;
+  const keep = new Set([`${oldLanguageRoot}n`, namedEnglish(oldLanguageRoot)]);
   // A dated log of past spellings (`<!-- retie: skip -->`) keeps them: retieing it would rewrite history.
   const markdownFiles = [...markdownDirs.filter(existsSync).flatMap((dir) => listMarkdown(dir)), ...topLevelMarkdown.filter(existsSync)].filter(
     (file) => {
+      if (SKIP_DIRS.some((dir) => file.startsWith(`${dir}/`))) return false;
       if (!RETIE_SKIP_RE.test(readFileSync(file, "utf8"))) return true;
       console.log(`${relative(REPO_ROOT, file)}  skipped (retie: skip)`);
       return false;
@@ -201,10 +212,19 @@ async function main(): Promise<void> {
   })) {
     block(`map  old root ${oldRoot} is not a legal spelling now; do spelling-rule passes before convert-word --lexicon or after the retie`);
   }
+  // A collision only a proposal sees (a coined form there) is the proposal's to fix, not a block.
+  const proposalsDir = join(REPO_ROOT, "docs", "proposals");
+  const inUse = (files: string[]) => rootsInUse(files.map((file) => sources.get(file)!));
+  const learnerRoots = inUse(markdownFiles.filter((file) => !file.startsWith(`${proposalsDir}/`)));
   for (const collision of checkMapCollisions(map, {
-    rootsInUse: rootsInUse([...sources.values()]),
+    rootsInUse: inUse(markdownFiles),
     englishWords: ENGLISH_IN_CODE,
   })) {
+    if (collision.reason.startsWith("already spells") && !learnerRoots.has(collision.newRoot)) {
+      warnings += 1;
+      console.warn(`collision  ${collision.newRoot}  ${collision.reason} (only in docs/proposals/: fix the proposal)`);
+      continue;
+    }
     block(`collision  ${collision.newRoot}  ${collision.reason}`);
   }
 
@@ -232,9 +252,13 @@ async function main(): Promise<void> {
   // (a house-cast name can sit in prose on a page with no code for it).
   const firstPass = new Map<string, RetieMarkdownResult>();
   for (const file of markdownFiles) {
-    firstPass.set(file, rewriteMarkdown(sources.get(file)!, map, tables, { deferFollow: true, english }));
+    firstPass.set(file, rewriteMarkdown(sources.get(file)!, map, tables, { deferFollow: true, english, keep }));
   }
   const follow = mergeFollowPairs(...[...firstPass.values()].map((result) => result.followPairs));
+  for (const word of keep) {
+    follow.names.delete(word);
+    follow.words.delete(word);
+  }
   const results = new Map<string, RetieMarkdownResult>();
   for (const file of markdownFiles) {
     results.set(file, finishFollow(sources.get(file)!, firstPass.get(file)!, follow, tables));
@@ -243,7 +267,7 @@ async function main(): Promise<void> {
   // A bare short resume in prose reads as its stem's root; the retie can change which root that is.
   // One the retie left unchanged takes the spelling that keeps its reading; the rest are warned.
   for (const [file, result] of results) {
-    const drifts = bareResumeDrift(sources.get(file)!, result.text, map, tables, english);
+    const drifts = bareResumeDrift(sources.get(file)!, result.text, map, tables, english, follow.names);
     const kept = applyResumeKeeps(result.text, drifts);
     if (kept.applied.length > 0) {
       results.set(file, {
@@ -260,6 +284,17 @@ async function main(): Promise<void> {
     }
   }
 
+  // A word spelled out letter by letter (`<!-- retie: letter-names -->`) takes its new letters' names.
+  for (const [file, result] of results) {
+    const spelled = respellLetterNames(result.text);
+    if (spelled.fixes.length === 0) continue;
+    results.set(file, {
+      ...result,
+      text: spelled.text,
+      changes: [...result.changes, ...spelled.fixes.map((fix) => ({ from: fix.from, to: fix.to, index: fix.index }))],
+    });
+  }
+
   // Heading ids spelled from Agazan move with it; links and overlay anchors follow.
   const renames: AnchorRenames = new Map();
   for (const file of markdownFiles) {
@@ -272,10 +307,15 @@ async function main(): Promise<void> {
     const original = sources.get(file)!;
     const result = results.get(file)!;
     const rel = relative(REPO_ROOT, file);
+    // Respellings keep their length, so an index the follow pass rewrote lines up with the review.
+    const followed = result.followChanges.map((change) => change.index);
     for (const item of result.reviews) {
+      // A capitalised name or a quoted payload in prose is the follow pass's job; it was respelled with its Agazan.
+      if (follow.names.has(peelChunk(item.text).core)) continue;
+      if (followed.some((at) => at >= item.index && at < item.index + item.text.length)) continue;
       review(`${rel}:${lineNumberAt(original, item.index)}  review  \`${item.text}\`  (${item.reason})`);
     }
-    for (const failure of verifyRetiedSpans(result.spans, map, tables)) {
+    for (const failure of verifyRetiedSpans(result.spans, map, tables, keep)) {
       const line = lineNumberAt(original, failure.span.index);
       const rendered = `${rel}:${line}  ${failure.level}  \`${failure.span.before}\` → \`${failure.span.after}\`  (${failure.detail})`;
       if (failure.level === "info") {
@@ -329,7 +369,7 @@ async function main(): Promise<void> {
   const currentRoots = publishedRoots;
   for (const file of sourceDirs.flatMap((dir) => listSource(dir))) {
     const original = readFileSync(file, "utf8");
-    const result = rewriteSourceLiterals(original, file, { map, tables: tables.old, follow, english, currentRoots });
+    const result = rewriteSourceLiterals(original, file, { map, tables: tables.old, follow, english, currentRoots, keep });
     const rel = relative(REPO_ROOT, file);
     for (const item of result.reviews) {
       review(`${rel}:${lineNumberAt(original, item.index)}  review  ${item.reason}`);
@@ -356,6 +396,12 @@ async function main(): Promise<void> {
     console.error(`${lintCount} lint finding(s) the retie would add to grammar pages (blocking).`);
   }
 
+  if (oldLanguageRoot !== newLanguageRoot) {
+    console.log(
+      `language name  👓 ${oldLanguageRoot} → ${newLanguageRoot}: ${[...keep].join(" / ")} left as is; rename the language by hand (docs/meta/language-name.md)`,
+    );
+  }
+
   const summary = `${total} reties in ${written.length} files; ${reviewCount} to review; ${warnings} warning; ${info} info; ${blocking} blocking`;
   if (!options.write) {
     console.log(`Dry-run: ${summary}. Pass --write to apply.`);
@@ -371,7 +417,13 @@ async function main(): Promise<void> {
   writeFileSync(options.mapPath, `${JSON.stringify(stamped, null, 2)}\n`);
   console.log(`Wrote ${summary}. Stamped ${relative(REPO_ROOT, options.mapPath)} as applied.`);
 
-  console.log("Next: npm run build and npm test, then read the review list above.");
+  // Files generated from the lexicon: regenerate rather than retie.
+  for (const script of [["cheat-sheet-blocks", "--", "--write"], ["english-helper-wordnet"]]) {
+    console.log(`npm run ${script.join(" ")}`);
+    execFileSync("npm", ["run", "--silent", ...script], { cwd: REPO_ROOT, stdio: "inherit" });
+  }
+
+  console.log("Next: npm run build, npm test and npm run grammar-check, then read the review list above.");
 }
 
 main().catch((err: unknown) => {

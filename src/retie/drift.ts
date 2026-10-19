@@ -4,6 +4,7 @@
  */
 import { basename } from "node:path";
 
+import { withLexiconClosedRoots } from "../closed-roots.js";
 import { fillSelf } from "../learner-name.js";
 import { ENGLISH_IN_CODE, lintAgazanMarkdown, lintAgazanSpans } from "../lint/agazan-docs.js";
 import { formatMorphGlossFinding, lintMorphGlossMarkdown } from "../lint/morph-gloss-docs.js";
@@ -15,7 +16,7 @@ import { morphGlossLine } from "../parse/morph-gloss.js";
 import { parseWord } from "../parse/word.js";
 import { retieCore } from "./rebuild.js";
 import { antecedentStemRoots } from "./resume.js";
-import type { RetieTables } from "./tables.js";
+import { fillSelfFor, type RetieTables } from "./tables.js";
 import { forEachMarkdownCodeToken, lineNumberAt, peelChunk } from "./tokens.js";
 
 /** A bare resume whose reading the retie changed: `was` → `reads`, and `keep` restores `was` when some spelling does. */
@@ -49,7 +50,10 @@ export function bareResumeDrift(
   map: ReadonlyMap<string, string>,
   tables: RetieTables,
   english: ReadonlySet<string>,
+  /** English names the follow pass respells (`Azawan` → `Uzuzen`): a resume of the house cast keeps its reading. */
+  names: ReadonlyMap<string, string> = new Map(),
 ): BareResumeDrift[] {
+  const renamed = (gloss: string) => gloss.replace(/(?<![A-Za-z])[A-Z][a-z]+(?![A-Za-z])/g, (name) => names.get(name) ?? name);
   const bare = (text: string) => {
     const tokens: { chunk: string; index: number; block: number }[] = [];
     forEachMarkdownCodeToken(text, (token) => tokens.push(token));
@@ -79,7 +83,8 @@ export function bareResumeDrift(
     }
     const was = gloss(from, tables.old);
     const reads = gloss(core, tables.current);
-    if (was === reads) continue;
+    // Nothing to keep when the old spelling did not parse (a coined form in a proposal).
+    if (renamed(was) === reads || was === "(does not parse)") continue;
     // The spelling that keeps the old reading when that reading was the stem's own root (`zerar` ←ear → `zemar`).
     let keep: string | undefined;
     try {
@@ -121,7 +126,12 @@ export function applyResumeKeeps(after: string, drifts: readonly BareResumeDrift
 
 /** Doc-lint findings for one page (same checks as `npm run build`, minus site-wide ones). */
 export function lintPage(rel: string, source: string, tables: ClassifyTables): string[] {
-  const text = fillSelf(source);
+  // Template fillers and bank specials spell closed roots as `tables` does (the pre-retie lexicon for a baseline).
+  return withLexiconClosedRoots(tables.published, () => lintPageIn(rel, source, tables));
+}
+
+function lintPageIn(rel: string, source: string, tables: ClassifyTables): string[] {
+  const text = fillSelfFor(source, tables);
   const out: string[] = [];
   for (const issue of lintAgazanMarkdown(text, tables)) {
     out.push(`${rel}:${lineNumberAt(text, issue.index)}  \`${issue.token}\`  ${issue.kind}  (${issue.detail})`);

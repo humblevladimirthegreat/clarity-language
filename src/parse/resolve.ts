@@ -26,7 +26,7 @@ import type {
 } from "./types.js";
 import { isDigitless, isRhetorical, KIND_SERIES, SCALE_SERIES } from "./series.js";
 import { isGreeting, isScaleShared, isSharedGPackage, visitResult, type Visitor, type WordSlot } from "./ast-walk.js";
-import { CLOSED } from "../closed-roots.js";
+import { CLOSED, closedDerived } from "../closed-roots.js";
 import { topicEffect } from "./linkers.js";
 
 const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
@@ -166,7 +166,7 @@ function isNumberAnaphor(word: LexWord): boolean {
 }
 
 /** Special pronouns name conversation roles, not people, so they take no number. */
-export const ROLE_PRONOUN_ROOTS = new Set([CLOSED.microphone, CLOSED.headphones, CLOSED.handshake, CLOSED.neutral]);
+export const rolePronounRoots = closedDerived(() => new Set([CLOSED.microphone, CLOSED.headphones, CLOSED.handshake, CLOSED.neutral]));
 
 function isNounSlot(word: LexWord): boolean {
   return word.pos === "z" || word.pos === "d" || word.pos === "b";
@@ -205,7 +205,7 @@ function topicKeyOf(word: LexWord): string {
 function nameKey(word: LexWord): string | undefined {
   if (word.ending !== "n" || word.family.kind === "joinMarker") return undefined;
   const roots = contentRoots(word);
-  if (roots.length === 0 || roots.some((root) => ROLE_PRONOUN_ROOTS.has(root))) return undefined;
+  if (roots.length === 0 || roots.some((root) => rolePronounRoots().has(root))) return undefined;
   if (isTopicPronoun(word) || isGenericPronoun(word)) return undefined;
   return `${roots.join("x")}${word.plural ? "+x" : ""}`;
 }

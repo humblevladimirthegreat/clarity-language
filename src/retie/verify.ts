@@ -90,6 +90,8 @@ export function verifyRetiedSpans(
   spans: readonly RetiedSpan[],
   map: ReadonlyMap<string, string>,
   tables: ClassifyTables | RetieTables,
+  /** Words left as written on purpose (the language's name): a span of these alone is not stale. */
+  keep: ReadonlySet<string> = new Set(),
 ): RetieVerifyFailure[] {
   const { old, current } = asRetieTables(tables);
   const failures: RetieVerifyFailure[] = [];
@@ -104,7 +106,8 @@ export function verifyRetiedSpans(
       const stale = before.shape.roots.find(
         (root) => root !== self && map.has(root) && map.get(root) !== root,
       );
-      if (stale) {
+      const keptOnly = (span.before.match(/[A-Za-z]+/g) ?? []).every((word) => keep.has(word));
+      if (stale && !keptOnly) {
         failures.push({ span, level: "blocking", detail: `left unretied, but it reads root ${stale} (now ${map.get(stale)})` });
       }
       continue;

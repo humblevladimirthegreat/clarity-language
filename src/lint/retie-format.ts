@@ -4,6 +4,7 @@
  */
 import { grammarHeadings } from "./grammar-anchors.js";
 import { ENGLISH_IN_CODE } from "./agazan-docs.js";
+import { respellLetterNames } from "../retie/letter-names.js";
 import { contentStemRoots } from "../retie/resume.js";
 import { hasClosedOverlay, type ClassifyTables } from "../parse/classify.js";
 import { parseWord } from "../parse/word.js";
@@ -79,5 +80,8 @@ export function lintRetieFormat(markdown: string, tables: ClassifyTables): Retie
     });
   }
   out.push(...headingFindings(markdown, tables));
+  for (const fix of respellLetterNames(markdown).fixes) {
+    out.push({ index: fix.index, detail: `letter names do not spell the word: write ${fix.to}` });
+  }
   return out;
 }

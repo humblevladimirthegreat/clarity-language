@@ -56,7 +56,7 @@ Concrete and abstract stay on **separate labeled lines**, never one merged gloss
 
 **Production cards have one answer.** A row’s concrete and abstract never repeat another row’s ([labels and senses](../../meta/lexicon.md#labels-and-senses)), so the glosses on the front pick out one stem. Aliases may repeat across rows; they help recall but do not have to identify the row on their own. An overlay’s production front leads with its `definition` (*autonomy sake*), which keeps it apart from a root whose sense shares the overlay’s short `gloss`. A compound whose sense collides with a root’s is a lexicon fix, found by the note-builder test.
 
-**Compound parts** show the stem’s left root, boundary letter, and head (`ebeda + l + uruhe`) with each root’s concrete gloss. The compound becomes readable from roots the learner already knows, and the boundary letter is drilled in passing.
+**Compound parts** show the stem’s left root, boundary letter, and head (`ebeda` + `l` + `uruhe`) with each root’s concrete gloss. The compound becomes readable from roots the learner already knows, and the boundary letter is drilled in passing.
 
 ### Fields
 

@@ -25,6 +25,8 @@ export type SourceLiteral = {
   body: string;
   /** Has an escape (`\\``): its source text is not its value, so it is decoded before rewriting. */
   escaped?: boolean;
+  /** A regular expression body: its escapes (`\|`, `\d`) are read as regex escapes. */
+  regex?: boolean;
 };
 
 /**
@@ -45,7 +47,7 @@ export function sourceLiterals(source: string, fileName = "source.ts"): SourceLi
       const start = node.getStart(file) + 1;
       const text = source.slice(start - 1, node.getEnd());
       const body = text.slice(1, text.lastIndexOf("/"));
-      if (/[a-z]{3,}/.test(body)) out.push(body.includes("\\") ? { index: start, body, escaped: true } : { index: start, body });
+      if (/[a-z]{3,}/.test(body)) out.push({ index: start, body, regex: true, ...(body.includes("\\") ? { escaped: true } : {}) });
     }
     ts.forEachChild(node, visit);
   };
@@ -79,6 +81,8 @@ export type SourceRetieContext = {
   english: ReadonlySet<string>;
   /** Roots published after the retie (a literal spelling one is current, not stale). */
   currentRoots: ReadonlySet<string>;
+  /** Words and English names never respelled (the language's own name, renamed by hand). */
+  keep?: ReadonlySet<string>;
 };
 
 /**
@@ -86,6 +90,10 @@ export type SourceRetieContext = {
  * `lint:agazan`, file names, storage keys. They follow the language's English name, not a root.
  */
 const SOURCE_IDENTIFIERS = new Set(["agazan"]);
+
+function isKept(word: string, ctx: SourceRetieContext): boolean {
+  return SOURCE_IDENTIFIERS.has(word) || (ctx.keep?.has(word) ?? false);
+}
 
 const NAME_RE = /(?<![A-Za-z])[A-Z][a-z]+(?![A-Za-z])/g;
 const OVERLAY_ID_RE = /^overlay\.([a-z]+)\.([a-z]+)$/;
@@ -144,6 +152,29 @@ type Decoded = { body: string; value: string; at: number[] };
 
 const ESCAPES: Record<string, string> = { n: "\n", t: "\t", r: "\r", "\\": "\\", '"': '"', "'": "'", "`": "`", $: "$" };
 
+/** A letter or digit escape in a regex (`\d`, `\n`): one non-letter stand-in, so the letter runs around it stay apart. */
+const REGEX_LETTER_ESCAPE = "\u0001";
+
+/**
+ * Decode a regex body: `\|` reads as `|`, and a letter or digit escape as one non-letter stand-in.
+ * A retie rewrites only letter runs, so {@link encodeValue} writes every escape back as written.
+ */
+export function decodeRegexLiteral(body: string): Decoded {
+  let value = "";
+  const at: number[] = [];
+  for (let i = 0; i < body.length; i++) {
+    at.push(i);
+    if (body[i] !== "\\" || i + 1 >= body.length) {
+      value += body[i];
+      continue;
+    }
+    const next = body[i + 1]!;
+    value += /[A-Za-z0-9]/.test(next) ? REGEX_LETTER_ESCAPE : next;
+    i += 1;
+  }
+  return { body, value, at };
+}
+
 /** Decode simple escapes (`\n`, `\``); null for any other (`\u…`, a line continuation). */
 export function decodeLiteral(body: string): Decoded | null {
   let value = "";
@@ -200,7 +231,7 @@ type LiteralResult = {
 };
 
 function rewriteLiteral(literal: SourceLiteral, isTest: boolean, realLexicon: boolean, ctx: SourceRetieContext): LiteralResult {
-  const decoded = /[a-z]/.test(literal.body) ? decodeLiteral(literal.body) : null;
+  const decoded = !/[a-z]/.test(literal.body) ? null : literal.regex ? decodeRegexLiteral(literal.body) : decodeLiteral(literal.body);
   const result: LiteralResult = { literal, decoded, value: decoded?.value ?? literal.body, changes: [], sentence: false, lone: false };
   if (!decoded) return result;
   const { index } = literal;
@@ -226,11 +257,12 @@ function rewriteLiteral(literal: SourceLiteral, isTest: boolean, realLexicon: bo
   const cls = rewritableClass(value, isTest, ctx);
   if (value.includes("`")) {
     // Markdown held in a string (a doc fixture, a word-bank row): retie it as a page.
-    const md = rewriteMarkdown(value, ctx.map, ctx.tables, { deferFollow: true, english: ctx.english });
+    const md = rewriteMarkdown(value, ctx.map, ctx.tables, { deferFollow: true, english: ctx.english, keep: ctx.keep });
     value = md.text;
     local.push(...md.changes);
   } else if (cls) {
-    value = rewritePlainTokens(value, resumeRewrite(ctx.map, ctx.tables), 0, local);
+    const rewrite = resumeRewrite(ctx.map, ctx.tables);
+    value = rewritePlainTokens(value, (core, at) => (isKept(core, ctx) ? null : rewrite(core, at)), 0, local);
     result.sentence = cls !== "word";
     result.lone = cls === "word";
   }
@@ -255,7 +287,7 @@ function rewriteLiteral(literal: SourceLiteral, isTest: boolean, realLexicon: bo
 function retieStaleTokens(value: string, ctx: SourceRetieContext, local: RetieChange[]): string {
   const written = new Set(local.flatMap((change) => change.to.match(/[a-z]+/g) ?? []));
   return value.replace(/(?<![A-Za-z])[a-z]{3,}(?![A-Za-z])/g, (word, offset: number) => {
-    if (written.has(word) || isEnglish(word, ctx) || SOURCE_IDENTIFIERS.has(word) || !staleRoot(word, ctx)) return word;
+    if (written.has(word) || isEnglish(word, ctx) || isKept(word, ctx) || !staleRoot(word, ctx)) return word;
     const next = ctx.map.get(word) ?? retieCore(word, ctx.map);
     if (!next || next === word) return word;
     local.push({ from: word, to: next, index: offset });
@@ -323,11 +355,12 @@ function keepFileConsistent(results: LiteralResult[], ctx: SourceRetieContext): 
     for (const [from, to] of wordPairs(result.changes)) if (!kept.has(from)) add(wordMap, from, to);
   }
   for (const result of results) {
-    if (!result.decoded || result.changes.length > 0 || wordMap.size === 0) continue;
+    // A literal whose only changes were English names (`z-Azawan` in a pattern) still takes the file's word changes.
+    if (!result.decoded || result.changes.some((change) => /^[a-z]/.test(change.from)) || wordMap.size === 0) continue;
     const { index } = result.literal;
-    result.value = result.decoded.value.replace(/(?<![A-Za-z])[a-z]+(?![A-Za-z])/g, (word, offset: number) => {
+    result.value = result.value.replace(/(?<![A-Za-z])[a-z]+(?![A-Za-z])/g, (word, offset: number) => {
       const next = wordMap.get(word);
-      if (next === undefined || isEnglish(word, ctx)) return word;
+      if (next === undefined || isEnglish(word, ctx) || isKept(word, ctx)) return word;
       result.changes.push({ from: word, to: next, index: index + (result.decoded!.at[offset] ?? offset) });
       return next;
     });
@@ -338,7 +371,7 @@ function keepFileConsistent(results: LiteralResult[], ctx: SourceRetieContext): 
     for (const [from, to] of wordPairs(result.changes)) {
       const a = nameRoot(from);
       const b = nameRoot(to);
-      if (a !== undefined && b !== undefined && a !== b) names.set(namedEnglish(a), namedEnglish(b));
+      if (a !== undefined && b !== undefined && a !== b && !isKept(namedEnglish(a), ctx)) names.set(namedEnglish(a), namedEnglish(b));
     }
   }
   if (names.size === 0) return;
@@ -398,7 +431,7 @@ function reviewStale(
 ): void {
   for (const match of text.matchAll(/(?<![A-Za-z])[a-z]{3,}(?![A-Za-z])/g)) {
     const word = match[0];
-    if (written.has(word) || isEnglish(word, ctx) || SOURCE_IDENTIFIERS.has(word)) continue;
+    if (written.has(word) || isEnglish(word, ctx) || isKept(word, ctx)) continue;
     const stale = staleRoot(word, ctx);
     if (stale) {
       reviews.push({

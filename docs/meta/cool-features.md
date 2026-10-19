@@ -65,10 +65,10 @@ Judging a person's character from one action is a common cognitive distortion (t
 
 Agazan lets any label mark how essential we treat the behavior with an infix before the ending letter:
 
-- **tha** — this one occasion: *gozovothal* "lazy this time" (one slow day is not a trait)
-- **the** — a pattern with exceptions: *gozovothel* "tends to be lazy" (as opposed to being a consistently lazy person)
-- **tho** — true in one relationship: *gozovothom balahen* "lazy as far as Alahen is concerned" (Alahen's opinion, not a confirmed trait)
-- **thu** — a name only, not an explanation: *gozovothul* "what gets called lazy" (society's view is not a confirmed trait)
+- **tha** — this one occasion: `gozovothal` "lazy this time" (one slow day is not a trait)
+- **the** — a pattern with exceptions: `gozovothel` "tends to be lazy" (as opposed to being a consistently lazy person)
+- **tho** — true in one relationship: `gozovothom balahen` "lazy as far as Alahen is concerned" (Alahen's opinion, not a confirmed trait)
+- **thu** — a name only, not an explanation: `gozovothul` "what gets called lazy" (society's view is not a confirmed trait)
 
 It's an optional efficient way to express a more charitable view of someone's trait.
 
@@ -478,7 +478,7 @@ Grammatical number in /r/ClarityLanguage is marked by a particle that goes in fr
 **yo\[number\]** \- at most \[number\]
 
 Generally if you specify the number, you just give the order of magnitude rather than a precise number.   
-**yebehum** \- at least 100 (hundreds)
+**`yebehum`** \- at least 100 (hundreds)
 
 ## **Habitual Tenses**
 
@@ -620,13 +620,13 @@ Labeling, or ascribing (usually negative) qualities to a person based on their b
 
 *huzedon*: (verb) introduce a universal statement with no known counterexamples (speaker is implied subject)
 
-*vabewalol*: (direct object)  conversation
+`vabewalol`: (direct object)  conversation
 
 *relz*: (modifier) our (1st person plural posessive)
 
 *zunon*: (conjunction) the intersection of the class of objects before and after this conjunction
 
-*vadadel*: (direct object) longness
+`vadadel`: (direct object) longness
 
 Literal: I can think of no examples where our conversations are long.
 

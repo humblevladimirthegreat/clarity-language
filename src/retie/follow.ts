@@ -71,9 +71,17 @@ export function followPairs(changes: readonly RetieChange[], tables: ClassifyTab
 function plainName(word: string): string[] {
   try {
     const parsed = parseWord(word);
-    if (parsed.ending !== "n" || parsed.family.kind !== "content" || parsed.family.roots.length !== 1) return [];
-    const stem = `${parsed.family.roots[0]!}n`;
-    return [stem.charAt(0).toUpperCase() + stem.slice(1)];
+    if (parsed.ending !== "n" || parsed.plural) return [];
+    if (parsed.family.kind === "content" && parsed.family.roots.length === 1) {
+      const stem = `${parsed.family.roots[0]!}n`;
+      return [stem.charAt(0).toUpperCase() + stem.slice(1)];
+    }
+    // An x-compound name is one name in English, spelled as the word without its role letter (`zohuxaluden` → *Ohuxaluden*).
+    if (parsed.family.kind === "x" && parsed.family.xFamily === "compound") {
+      const stem = word.slice(parsed.pos?.length ?? 0);
+      return /^[a-z]+$/.test(stem) ? [stem.charAt(0).toUpperCase() + stem.slice(1)] : [];
+    }
+    return [];
   } catch {
     return [];
   }
@@ -100,9 +108,22 @@ function replaceWords(text: string, re: RegExp, pairs: ReadonlyMap<string, strin
 /** Quoted payloads: curly “…” in English, `["…"]` in morph lines. */
 const QUOTED_RE = /“([^”\n]*)”|\["([^"\n]*)"\]/g;
 
+/** A name shouted in English (`AZAWAN`) follows like its capitalised form. */
+const CAPS_RE = /(?<![A-Za-z])[A-Z]{3,}(?![A-Za-z])/g;
+
 function followText(text: string, base: number, pairs: FollowPairs, changes: RetieChange[]): string {
   let out = replaceWords(text, NAME_RE, pairs.names, base, changes);
-  out = out.replace(QUOTED_RE, (whole, curly: string | undefined, bracket: string | undefined, offset: number) => {
+  out = out.replace(CAPS_RE, (word, offset: number) => {
+    const next = pairs.names.get(word.charAt(0) + word.slice(1).toLowerCase());
+    if (next === undefined) return word;
+    changes.push({ from: word, to: next.toUpperCase(), index: base + offset });
+    return next.toUpperCase();
+  });
+  out = out.replace(QUOTED_RE, (whole, curly: string | undefined, bracket: string | undefined, offset: number, all: string) => {
+    // An opaque loan's payload is not Agazan and is never retied; a mention's is (`[gl-MENTION | z-OPAQUE["…"]]`).
+    if (bracket !== undefined && /OPAQUE$/.test(all.slice(0, offset)) && !/MENTION \| [^\]|]*$/.test(all.slice(0, offset))) {
+      return whole;
+    }
     const inner = curly ?? bracket!;
     const innerAt = whole.indexOf(inner);
     const next = replaceWords(inner, /(?<![A-Za-z])[a-z]+(?![A-Za-z])/g, pairs.words, base + offset + innerAt, changes);
@@ -115,6 +136,22 @@ function followText(text: string, base: number, pairs: FollowPairs, changes: Ret
 const PROTECTED_RE =
   /^(```|~~~)[^\n]*\n[\s\S]*?^\1[^\n]*$|`[^`\n]*`|<code>[\s\S]*?<\/code>|\]\([^)\n]*\)|<!--(?!\s*gloss:)[\s\S]*?-->|\{#[^}\n]*\}/gm;
 
+/** A ` ```markdown ` fence is an example page (glosses.md): its prose follows like the page's own. */
+function markdownFence(block: string, base: number, pairs: FollowPairs, changes: RetieChange[]): string | undefined {
+  const fence = /^(```|~~~)(markdown|md)[ \t]*\n([\s\S]*\n)(\1[^\n]*)$/.exec(block);
+  if (!fence) return undefined;
+  const bodyAt = fence[1]!.length + fence[2]!.length + block.slice(fence[1]!.length + fence[2]!.length).indexOf("\n") + 1;
+  const inner = followProse(fence[3]!, pairs);
+  for (const change of inner.changes) changes.push({ ...change, index: change.index + base + bodyAt });
+  return block.slice(0, bodyAt) + inner.text + fence[4]!;
+}
+
+/** Inline code that shows a free-English line as written (`` `"Azawan walks."` ``, glosses.md): its names follow. */
+function englishCode(span: string, base: number, pairs: FollowPairs, changes: RetieChange[]): string | undefined {
+  if (!/^`"[^"`\n]*"`$/.test(span)) return undefined;
+  return `\`${followText(span.slice(1, -1), base + 1, pairs, changes)}\``;
+}
+
 /**
  * Rewrite names and quoted payloads in prose, morph lines and `<!-- gloss: … -->` comments.
  * Code spans, link targets and pinned heading ids are left as they are.
@@ -125,7 +162,8 @@ export function followProse(markdown: string, pairs: FollowPairs): { text: strin
   let text = "";
   let at = 0;
   for (const match of markdown.matchAll(PROTECTED_RE)) {
-    text += followText(markdown.slice(at, match.index!), at, pairs, changes) + match[0];
+    text += followText(markdown.slice(at, match.index!), at, pairs, changes);
+    text += markdownFence(match[0], match.index!, pairs, changes) ?? englishCode(match[0], match.index!, pairs, changes) ?? match[0];
     at = match.index! + match[0].length;
   }
   text += followText(markdown.slice(at), at, pairs, changes);
