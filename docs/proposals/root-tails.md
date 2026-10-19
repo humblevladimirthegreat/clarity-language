@@ -62,7 +62,7 @@ Examples below write roots as patterns (`VCVza`), never as spellings ([placehold
 
 The kind follows the row's **concrete sense**, as its label names it. The abstract sense takes the tail of its concrete seed: *compassion* sounds like a body part because it's reached through *heart*.
 
-Row counts are from the phase 1 draft of `lexicon-tails.csv` (2026-10-19). The edge rules exist partly to balance the kinds: outside the named rows, every kind lands between 63 and 127 rows.
+Row counts are from the phase 1 draft of `lexicon-tails.csv` (2026-10-19). The edge rules exist partly to balance the kinds: outside the named rows, every kind lands between 74 and 116 rows.
 
 | Letter | Kind | Anchor in the grammar | Examples | Rows |
 |--------|------|------------------------|----------|--------|
@@ -70,13 +70,13 @@ Row counts are from the phase 1 draft of `lexicon-tails.csv` (2026-10-19). The e
 | `y` | **people**: persons, kin, roles, and actions only a person could do | `y` + name calls someone | baby, elder, police, villain, teach, judge | 85 |
 | `m` | **mind and feeling**: faces, emotions, mental states | **-m** is the abstract ending | grin, pensive, angry, starstruck, thought | 84 |
 | `b` | **the body and what goes on it**: body parts, clothing, jewelry, what you carry, body care, medicine | `/b/` is the *bolted-on* piece | hand, nose, glove, crown, bag, soap, bandage | 114 |
-| `v` | **doing, playing and moving**: actions any creature could do, sports, games and toys, events, vehicles | `/v/` is the action | run, fall, soccer, dice, kite, party, train | 127 |
+| `v` | **doing, playing and moving**: actions any creature could do, sports, games and toys, events, vehicles | `/v/` is the action | run, fall, soccer, dice, kite, party, train | 115 |
 | `h` | **places and fixtures**: buildings, landscapes, rooms, what's built in | `/h/` is *where* | house, bridge, mountain, cave, door, bed | 74 |
 | `l` | **nature and raw stuff**: plants, weather, sky, materials, colors | **-l** is the concrete ending | tree, flower, fire, cloud, gold, red | 85 |
 | `d` | **food and drink**, with dishware and kitchen gear | `/d/` is *done to* (eaten) | bread, apple, tea, plate, spoon, pan | 116 |
 | `w` | **tools and things you use** | `/w/` is *with* (the instrument) | knife, hammer, broom, lamp, key, phone | 94 |
 | `g` | **signs, marks and writing**: symbols, arrows, paper, letters | `/ɡ/` is *grade*, a mark on something | arrow, warning, circle, book, envelope | 113 |
-| `r` | **counting, time, money and rhythm**: numbers, charts, clocks, coins, music | `r` after a role letter starts a number | clock, coin, calendar, bar-chart, drum, music note | 63 |
+| `r` | **counting, time, money and rhythm**: numbers, charts, clocks, coins, music, dance, dated events | `r` after a role letter starts a number | clock, coin, calendar, bar-chart, drum, music note, dance, birthday | 75 |
 | `n` | **named places and traditions**: countries, religions, zodiac | **-n** is the name ending | country flags, orthodox-cross, aries | 283 |
 
 Edge rules:

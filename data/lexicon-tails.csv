@@ -183,7 +183,7 @@ emoji,concrete,kind,shape,root
 🧑‍🎤,sing,person,one,uzoyo
 🧑‍🎨,craft,person,one,agoyo
 🧑‍✈️,pilot,person,line,eboye
-🧑‍🚀,orbit,doing,one,aruvo
+🧑‍🚀,orbit,counting,one,aruvo
 🧑‍🚒,firefight,person,takes-away,uvayu
 👮,police,person,line,obuye
 💂,guard,person,takes-away,ugayu
@@ -218,16 +218,16 @@ emoji,concrete,kind,shape,root
 🫈,bigfoot,creature,one,abozo
 💆,massage,person,one,omeyo
 💇,hair,body,line,uhube
-🚶,walk,doing,line,uwuve
+🚶,walk,counting,line,uwuve
 🧍,stand,doing,one,ozovo
 🧎,kneel,doing,one,enuvo
 🧑‍🦼,power-chair,doing,one,abuvo
 🧑‍🦽,propel,doing,line,ebave
 🏃,run,doing,line,aruve
-🧑‍🩰,ballet,doing,line,eyave
-🕺,dance,doing,one,emevo
+🧑‍🩰,ballet,counting,line,eyave
+🕺,dance,counting,one,emevo
 🕴️,levitate,doing,line,oleve
-👯,partying,doing,holds,unova
+👯,partying,counting,holds,unova
 🧖,sauna,place,holds,ozuha
 🧗,climb,doing,line,ogeve
 🤺,fencing,doing,takes-away,uvevu
@@ -235,7 +235,7 @@ emoji,concrete,kind,shape,root
 ⛷️,ski,doing,line,anove
 🏂,snowboard,doing,line,enave
 🏄,surf,doing,line,ezave
-🚣,row,doing,line,oreve
+🚣,row,counting,line,oreve
 🏊,swim,doing,one,ehuvo
 🏋️,lift,doing,one,olovo
 🚴,bike,doing,one,uyavo
@@ -478,7 +478,7 @@ emoji,concrete,kind,shape,root
 🍦,ice-cream,food,one,ozado
 🍩,doughnut,food,one,ududo
 🍪,cookie,food,one,uyodo
-🎂,birthday,doing,one,ubavo
+🎂,birthday,counting,one,ubavo
 🍰,cake,food,one,ugedo
 🧁,cupcake,food,one,aledo
 🥧,pie,food,holds,ebeda
@@ -541,7 +541,7 @@ emoji,concrete,kind,shape,root
 🏬,department-store,place,holds,edeha
 🏭,factory,place,one,uvoho
 🏰,castle,place,one,ogoho
-💒,wedding,doing,holds,ewova
+💒,wedding,counting,holds,ewova
 🗼,tower,place,line,adahe
 🗽,statue,place,line,ezohe
 ⛪,church,place,one,oheho
@@ -599,8 +599,8 @@ emoji,concrete,kind,shape,root
 🚤,boat,doing,holds,owuva
 🚢,ship,doing,holds,elova
 ✈️,airplane,doing,holds,ureva
-🛫,departure,doing,takes-away,odavu
-🛬,arrival,doing,one,avevo
+🛫,departure,counting,takes-away,odavu
+🛬,arrival,counting,one,avevo
 🪂,parachute,doing,one,obovo
 💺,seat,place,one,ezaho
 🚁,helicopter,doing,holds,ahava
@@ -646,7 +646,7 @@ emoji,concrete,kind,shape,root
 💧,droplet,nature,one,edolo
 🌊,ocean,nature,holds,udola
 🎃,jack-o-lantern,doing,one,ahevo
-🎄,christmas-tree,doing,line,aguve
+🎄,christmas-tree,counting,line,aguve
 🎆,fireworks,doing,holds,avova
 🎇,sparkle,doing,line,azove
 🧨,firecracker,doing,takes-away,evuvu
@@ -1002,7 +1002,7 @@ emoji,concrete,kind,shape,root
 🔆,bright,nature,one,ebalo
 📶,signal,sign,line,ezage
 🛜,wireless,sign,one,uwogo
-📳,vibrate,doing,one,ovavo
+📳,vibrate,counting,one,ovavo
 📴,phone-off,sign,takes-away,uvugu
 ♀️,female,sign,one,ovago
 ♂️,male,sign,one,amugo
