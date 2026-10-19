@@ -22,14 +22,13 @@
 2. **The vowel is redundant, but it does not catch the likeliest mishearings.** Each digit consonant has exactly one vowel, so 30 of the 40 consonant + vowel pairs are not digits. That should let a listener notice a misheard consonant. But the most confusable pairs share a vowel: `du` / `gu` (d/g), `re` / `le` (r/l), `mo` / `wo` (both lip sounds), `va` / `ha` (weak fricatives). Mishearing one of those gives another valid digit, so the error goes unnoticed.
 3. **The exponent filler is confusable with a digit.** `bu` (negative exponent) and `gu` (6) differ only in b vs g.
 4. **Digit 3 sounds like the rank marker** (`re`), so *the 33rd* is `grererel`.
-5. **Mnemonic gap.** A five-letter root never has `l` / `m` / `n` / `r` as its second consonant ([second consonant](../meta/lexicon.md#second-consonant)), and today those four letters carry digits 3, 4, 7 and 9. Under the current table, no root ends in those digits. That gap is the main reason `number-mnemonic.md` needs its ending trick.
 
 ## Goals
 
 1. **The table follows from rules,** not English cues: a consonant order and a vowel cycle.
 2. **Every likely mishearing of a single consonant gives a syllable that is not a digit,** among digits and between a digit and a number filler.
 3. **Strong consonants on the most frequent leading digits** (Benford: 1 > 2 > 3 …).
-4. **Root letters suit the digit-onset mnemonic:** the rarest root letters carry no digit, so every two-digit cell has several roots.
+4. **Root letters suit the digit-onset mnemonic:** the rarest root letters carry no digit, so no two-digit cell is empty.
 5. **One consonant per digit,** so the finger code and the mnemonic keep a 1:1 digit ↔ letter map.
 
 ## Non-goals
@@ -46,14 +45,14 @@
 Inside a number word, digits must avoid `th` (the group separator) and `x` (the compound seam and plural). Of the remaining twelve letters (`w d r m v g l h n z b y`), ten carry digits and two become the number fillers. That leaves 66 possible filler pairs. They were scored on two tests:
 
 - **Confusion test** ([below](#confusion-test)): only 14 of the 66 pairs allow a vowel-cycle assignment with no confusable clash.
-- **Mnemonic coverage** (published lexicon, flag roots counted): `y` has to be a filler, because it is the rarest root letter (25 first consonants, 60 second consonants). Every pair with `y` as a digit leaves empty cells. Among the pairs with `y`, **`w` + `y`** is the only one where every two-digit cell has at least 5 roots and every digit letter has at least 6 one-digit roots.
+- **Mnemonic coverage** (the lexicon after a simulated re-placement with the second-consonant ban lifted, under English-echo placement, all 100 two-digit cells, flag roots counted; `root-tails.md` changes which letters are rare, so this test needs a rerun): `y` has to be a filler, because it is the rarest root letter (25 first consonants, 60 second consonants in today's lexicon). Of the 66 pairs, **`w` + `y`** is the only one that leaves no two-digit cell empty.
 
 | Fillers | Fewest roots in a two-digit cell | Cells with < 3 roots | Fewest one-digit roots for a letter | Two-digit cells with a `core` root |
 |---------|---------------------------------|-------------------|--------------------------------|------------------------------|
-| **w y** | **5** | **0** | 6 | **51** / 60 |
-| h y | 2 | 2 | 15 | 45 |
-| b y (today) | 2 | 1 | 13 | 48 |
-| d y | 2 | 2 | 17 | 44 |
+| **w y** | **1** | **4** | 9 | **68** / 100 |
+| h y | 0 | 12 | 8 | 58 |
+| b y (today) | 0 | 12 | 14 | 60 |
+| d y | 0 | 13 | 13 | 56 |
 
 So the digit letters are **`b d g v z h l r m n`**, and the fillers are **`w`** (exponent sign) and **`y`** (points, as today).
 
@@ -102,9 +101,9 @@ The fricative block has to start at 4. With `w` as the exponent filler, `v` (con
   - 8 = r: the figure 8 loops back on itself, and **-r** is the ending that points back.
   - 7 = l: a 7 looks roughly like an upside-down L.
   - 9 = n: by elimination.
-- **Coverage is the same for every arrangement.** An ending cell in the mnemonic uses a one-digit root for its first digit. Every digit letter has at least 6 one-digit roots with an abstract sense, so `-m`'s requirement never binds.
+- **Coverage is the same for every arrangement.** The mnemonic reads both digits from root consonants, so moving digits among `l r n m` only relabels cells.
 
-The mnemonic-first alternative is `no re mu la`. It puts the concrete `-l` scene on the most frequent second digit (0), but it adds the d/l and b/m clashes and has weaker hooks ([open question 2](#open-questions)).
+The alternative `no re mu la` adds the d/l and b/m clashes and has weaker hooks.
 
 ### Confusion test {#confusion-test}
 
@@ -170,18 +169,18 @@ Numeric-derivation stems change the same way: `raba` → `rawa` (`zalavalrabal` 
 | Alternative | Why not |
 |-------------|---------|
 | **Keep today's letters, reorder only** (place walk with the vowel cycle: `mu wa vo de zu na lo re gu ha`) | It passes digit–digit confusions but fails at the exponent: `bu` vs 9 `gu`. With `b` / `y` as fillers, no order that follows a single principle passes digits and fillers together. |
-| **Base 5** (five consonants; a rounded vowel for 1–5, `a` for +5) | Fewer facts to learn, and `r` is freed. But n and n+5 differ only in the vowel, so a misheard vowel gives a valid digit off by five, with nothing in the syllable to catch it. Mnemonic coverage drops to 43–94 of 100 cells, depending on the consonant set (flag roots excluded). |
+| **Base 5** (five consonants; a rounded vowel for 1–5, `a` for +5) | Fewer facts to learn, and `r` is freed. But n and n+5 differ only in the vowel, so a misheard vowel gives a valid digit off by five, with nothing in the syllable to catch it. Mnemonic coverage drops to 43–94 of 100 cells, depending on the consonant set (flag roots excluded; measured on today's lexicon, before `root-tails.md`). |
 | **`r` as exponent** (`ra` / `ru`; fillers `r` + `y`, so `b` becomes a digit) | `r` would mean sign and kind and nothing else. But the exponent comes right after the marker, so roughly 30% of the number words in the docs would open with a repeated syllable (`grara…`). The dropped syllable would be the order of magnitude, and the result would still be a valid number. It also stacks up r's: `graral`, `grarar`. |
-| **`h` + `y` fillers** (`gu ba do le ru za wo ve nu ma`) | The deepest stock of one-digit roots, but 2 two-digit cells have fewer than 3 roots, the exponent `ha` / `hu` is weaker still, and the best order has no rule. |
-| **`m` + `n` fillers** (nasal exponent and points) | Only 2 of `l m n r` are digits, so the mnemonic gap is smallest. But the fillers are confusable with each other (`na` / `ma`, `nu` / `mu`), and this can't be avoided with four point roles. |
-| **Place walk on `w` / `y`** (`mu ba vo re lu za do ne gu ha`) | Passes and keeps zero = breath. But the ending letters land on 1, 4, 5 and 8, so the mnemonic's ending cells are scattered instead of being "second digit 7–0". |
+| **`h` + `y` fillers** (`gu ba do le ru za wo ve nu ma`) | A deep stock of one-digit roots, but it leaves empty two-digit cells, the exponent `ha` / `hu` is weaker still, and the best order has no rule. |
+| **`m` + `n` fillers** (nasal exponent and points) | The fillers are confusable with each other (`na` / `ma`, `nu` / `mu`), and this can't be avoided with four point roles. |
+| **Place walk on `w` / `y`** (`mu ba vo re lu za do ne gu ha`) | Passes and keeps zero = breath. It was set aside because the ending letters land on 1, 4, 5 and 8, which scattered the mnemonic's old ending cells. The mnemonic no longer reads endings, so that reason is gone ([open question 2](#open-questions)). |
 | **Place walk back to front on `w` / `y`** | Puts `h`, the weakest consonant, on 1, the most frequent leading digit. |
 | **Marker harmony** (each digit copies the marker vowel) | The sign would be heard on every digit, but there would be no vowel redundancy left to catch a misheard consonant. |
 
 ## Open questions
 
 1. **Listening test.** The confusion weights and robustness ranking come from published phonetics and common second-language errors, not from Agazan listeners. Before absorbing, play the proposed table and the strongest alternatives to listeners in noise. Include speakers of Japanese, Korean and Spanish.
-2. **Ending block.** Choose between `lo re nu ma` (no clashes, hooks; the x0 mnemonic cells get the abstract `-m` scene) and `no re mu la` (concrete scene on x0; d/l and b/m clashes).
+2. **Ending block or place walk.** The mnemonic no longer reads endings, so putting the four ending letters on 7–0 rests only on its hooks. Compare the proposed table again with the place walk on `w` / `y` (`mu ba vo re lu za do ne gu ha`), which also passes and keeps zero = breath.
 3. **Exponent strength.** If `wa` / `wu` tests badly, the fallback is `h` + `y` fillers with exponent `ha` / `hu`. Expect it to test about as badly, since `h` is the weakest consonant. Otherwise go back to `b` / `y` fillers and drop the filler-confusion requirement.
 4. **Hook for 9.** `nu` has none. A hook that needs no English would complete the block.
 
