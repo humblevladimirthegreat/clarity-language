@@ -141,6 +141,10 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 *Three times an hour* is a count per unit. Write the count, then the divider **`hruwol`** (*÷1*), then the unit as `/b/` right after it. The divider hosts the unit, so the `/b/` is structural, not a recipient.
 
+| English | Agazan |
+|---------|--------|
+| *per* (*per hour*, *three times an hour*) | the count, then **`hruwol`**, then the unit in `/b/` |
+
 > `zazawan vowogal hrarel hruwol bagazem.`
 >
 > z-Azawan | v-walk | h-three | [h-divided-by-one | b-hour]

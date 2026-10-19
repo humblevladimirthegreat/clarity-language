@@ -81,6 +81,8 @@ const FORCE_TAG = { n: "Noun", v: "Verb", adj: "Adjective", adv: "Adverb" } as c
 const FORCE_CLASS = { n: "noun", v: "verb", adj: "adjective", adv: "adverb" } as const;
 const NEGATIVES = new Set(["not", "never", "no", "nobody", "nothing", "nowhere", "none", "neither", "nor"]);
 const MODALS = new Set(["can", "could", "may", "might", "must", "shall", "should", "will", "would", "ought"]);
+/** Prepositions the library tags as adjectives (*aboard the train*, *underneath the table*). */
+const PREPOSITIONS = new Set(["aboard", "underneath", "beneath"]);
 const POSSESSIVE_PRONOUNS = new Set(["my", "your", "his", "her", "its", "our", "their", "mine", "yours", "hers", "ours", "theirs"]);
 
 const model = (nlp.world() as { model: unknown }).model as { one: { lexicon: Record<string, string> }; two: { switches: Record<string, string> } };
@@ -112,7 +114,7 @@ function classOf(t: JsonTerm): WordClass {
   if (has("Pronoun") || POSSESSIVE_PRONOUNS.has(t.normal)) return "pronoun";
   if (has("Value") || has("Cardinal") || has("Ordinal")) return "number";
   if (has("Determiner")) return "determiner";
-  if (has("Preposition")) return "preposition";
+  if (has("Preposition") || PREPOSITIONS.has(t.normal)) return "preposition";
   if (has("Conjunction")) return "conjunction";
   if (has("Verb")) return "verb";
   if (has("Adjective")) return "adjective";

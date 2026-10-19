@@ -17,8 +17,6 @@ use [skip-cd] for amplify to not deploy.
 -contact form / about me
 -reconsider adjective bars (poor/rich, weak/strong)
 
--english helper leads (decide; never auto-add): *could not* has no past-inability job (say-tense#ability-words); *hastily* is a gap (-ly adverb over the *haste* sense; WordNet derivation stops at *hasty*); *aboard* / *underneath* tagged as adjectives, so no hook fallback; *per* takes the extra-noun fallback though it is a rate; lexicon misses in `npm run english-helper-recall` (tmp/english-helper-recall.csv: *leave* / *departure*, *asleep*)
-
 save for near end of limit resets:
 -final exam
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.

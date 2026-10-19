@@ -64,10 +64,11 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
   it("points function words and clause grammar at their sections", () => {
     const analysis = analyzeEnglish(data, "My sister couldn't come yesterday.");
     const [clause] = analysis.clauses;
-    const could = clause!.slots.find((s) => s.text === "could")!;
-    assert.ok(could.suggestions.some((s) => s.kind === "detector" && s.links.includes("say-tense.md#can-may")));
+    const could = clause!.slots.find((s) => s.text === "could not")!;
+    assert.ok(could.suggestions.some((s) => s.kind === "job" && s.link === "say-tense.md#can-may"));
     assert.ok(clause!.slots.find((s) => s.text === "sister")!.suggestions.some((s) => s.kind === "job" && s.link.startsWith("say-people-places.md#kin-words")));
-    assert.ok(clause!.slots.find((s) => s.text === "not")!.suggestions.some((s) => s.kind === "detector" && s.id === "negation"));
+    const not = analyzeEnglish(data, "My sister did not come.").clauses[0]!.slots.find((s) => s.text === "not")!;
+    assert.ok(not.suggestions.some((s) => s.kind === "detector" && s.id === "negation"));
     assert.ok(analyzeEnglish(data, "Azawan walked.").clauses[0]!.detectors.some((d) => d.id === "past"));
   });
 
@@ -242,10 +243,39 @@ describe("hooks", () => {
     assert.deepEqual(atop.suggestions.map((s) => s.kind === "detector" && s.id), ["extra-noun-hook"]);
   });
 
+  it("names the hook for a preposition the library tags as an adjective", () => {
+    assert.ok(hookSlot("We went aboard the train.", "aboard").suggestions.some((s) => s.kind === "job" && s.link === "relations.md#locative-relations"));
+    assert.ok(hookSlot("The cat slept underneath the table.", "underneath").suggestions.some((s) => s.kind === "job" && s.link === "roles.md#gravity"));
+  });
+
+  it("routes per to the rate recipe, not an extra-noun hook", () => {
+    const per = hookSlot("Five dollars per hour.", "per").suggestions;
+    assert.ok(per.some((s) => s.kind === "job" && s.link === "say-amounts.md#per-unit"));
+    assert.ok(!per.some((s) => s.kind === "detector" && s.id === "extra-noun-hook"));
+  });
+
   it("notes from … to, a hook after a landmark, and a stranded question hook", () => {
     assert.ok(hookSlot("Azawan walks from the house to the station.", "to").suggestions.some((s) => s.kind === "detector" && s.id === "from-to"));
     assert.ok(hookSlot("The dog sleeps in the house near the station.", "near").suggestions.some((s) => s.kind === "detector" && s.id === "hook-on-landmark"));
     assert.ok(hookSlot("What does Azawan write with?", "with").suggestions.some((s) => s.kind === "detector" && s.id === "hook-blank"));
+  });
+});
+
+describe("could not", () => {
+  it("lists both couldn't jobs for the modal and its negative", () => {
+    const slot = slots("She could not swim.").find((s) => s.text === "could not")!;
+    const links = slot.suggestions.filter((s): s is JobSuggestion => s.kind === "job").map((j) => j.form);
+    assert.ok(links.some((f) => f.includes("henom")));
+    assert.ok(links.some((f) => f.includes("hudum")));
+  });
+});
+
+describe("aliases", () => {
+  it("finds the root for an English word only an alias names", () => {
+    for (const text of ["He left hastily.", "He is asleep."]) {
+      const slot = slots(text).at(-1)!;
+      assert.ok(slot.suggestions.some((s) => s.kind === "lexicon" && s.tier === "alias"), text);
+    }
   });
 });
 

@@ -110,13 +110,13 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 💥,boom,ubuhu,consequence,collision bursts; consequence is the unobservable follow-on,,outcome; result; effect,
 💫,dizzy,edezu,dazzle,dizzy stars swirl until the eyes are overwhelmed,,,
 💦,sweat,ozewe,effort,sweat drops show hard work; effort is work that costs you,,labor; strain,
-💨,dash,adehu,haste,dash of wind moves fast; haste is moving quickly,,rush,clause.md#beginner-practice
+💨,dash,adehu,haste,dash of wind moves fast; haste is moving quickly,,rush; hasty,clause.md#beginner-practice
 🕳️,hole,ohaho,void,a hole is an empty space with nothing in it,,gap,
 💬,speech,ezebe,discourse,speech is audible; discourse is the unobservable social practice,v:tell,say; talk; word; speak; language; discuss; discussion; description; communicate; communication; report; declare,dependents.md#beginner-practice
 👁️‍🗨️,attest,odo,testimony,eye-in-speech attests; testimony is the claim that seeing warrants saying,,swear; demonstrate,questions.md#intermediate-practice
 🗯️,rant,aradu,outrage,rant shows outrage,,complain; complaint,
 💭,thought,ovu,commentary,thought balloon floats a take over the scene; commentary is mind storying instead of bare contact,,idea; concept; notion; remark; theoretical; comment,
-💤,sleep,ezeba,restoration,sleep means rest; restoration is the unobservable replenishing,,,roles.md#beginner-practice
+💤,sleep,ezeba,restoration,sleep means rest; restoration is the unobservable replenishing,,asleep,roles.md#beginner-practice
 👋,wave,eweva,acknowledgment,a wave acknowledges someone; acknowledgment is the unobservable uptake,,acknowledge; recognition; greet; gesture,
 ✋,hand,ahada,,,,,
 🫴,palm-up,abowa,offering,a palm held up holds something out to take; an offering is what you hold out,,offer,
@@ -630,7 +630,7 @@ emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core
 🚤,boat,oboda,superficiality,speedboat skims; superficiality is staying on the surface of meaning,,,roles.md#intermediate-practice
 🚢,ship,eheba,voyage,ship crosses open seas; voyage is a long sea journey,,journey; sail; trip; tour,roles.md#intermediate-practice
 ✈️,airplane,erabe,,,,plane; aircraft; flight,
-🛫,departure,edaba,abandonment,plane lifting off leaves the ground; departure is setting out,,abandon,knowing.md#beginner-practice
+🛫,departure,edaba,abandonment,plane lifting off leaves the ground; departure is setting out,,abandon; leave; depart,knowing.md#beginner-practice
 🛬,arrival,evaha,reaching,plane touching down reaches destination; arrival is reaching the end,,,comparatives.md#intermediate-practice
 🪂,parachute,ebahu,descent,parachute slows a fall; descent is coming down safely,,sink,
 💺,seat,ezeda,passive,seat holds you while others move; passive is not acting yourself,,,numbers.md#intermediate-practice

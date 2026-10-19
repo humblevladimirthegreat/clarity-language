@@ -126,13 +126,13 @@ One English word, one row: the form that says it and the section that teaches it
 
 | English itch | Agazan job | Teach |
 |--------------|------------|-------|
-| *in* / *into* / *inside* / *within* (*runs into a train*, *sits inside the house*) | hook **`al`** + `/b/`; the verb says whether anything moves | [Locative relations](relations.md#locative-relations) |
+| *in* / *into* / *inside* / *within* / *aboard* (*runs into a train*, *sits inside the house*) | hook **`al`** + `/b/`; the verb says whether anything moves; leave out the `/b/` when the place is clear (*went aboard*) | [Locative relations](relations.md#locative-relations) |
 | *on* / *onto* / *upon* (*sits on a chair*, *climbs onto the table*) | hook **`aol`** + `/b/`; the verb says whether anything moves | [Hooks](hooks.md#extra-noun) |
 | *on it* (*sits on it too*) | resume hook **`aor`** | [Point back](hooks.md#hook-resume) |
 | *beside* / *next to* / *nearby* (*sleeps near me*) | hook **`om`** + `/b/` | [Hooks](hooks.md#extra-noun), [here and there](hooks.md#deixis) |
 | *among* / *amid* (*sits among the guards*) | hook **`am`** + `/b/` | [Hooks](hooks.md#extra-noun-intermediate) |
 | *over* (*a cloth over the table*: the landmark's face as the setting) | hook **`aom`** + `/b/`; plain height (*above the table*) is gravity **`habahal`** | [Hooks](hooks.md#extra-noun-intermediate), [Gravity](roles.md#gravity) |
-| *under* / *below* / *beneath* (*sleeps under the tree*) | gravity down **`hadahel`** (on a noun, **`gadahel`**) + `/b/` | [Gravity](roles.md#gravity) |
+| *under* / *below* / *beneath* / *underneath* (*sleeps under the tree*) | gravity down **`hadahel`** (on a noun, **`gadahel`**) + `/b/` | [Gravity](roles.md#gravity) |
 | *above* / *upper* (*the book above the tree*) | gravity up **`habahal`** (on a noun, **`gabahal`**) + `/b/` | [Gravity](roles.md#gravity) |
 | *left side* / *right side* / *behind* / *in front of* (*behind the house*) | a direction with **`th`** + **`o`** + `/b/` landmark, such as `gazavathol bahazal` | [Landmark's own front](roles.md#landmark-facing) |
 | *with* / *alongside* / *along with* (*runs with Alahen*) | **`han`** + `/b/` | [Join-relations](join-across-roles.md#join-relations) |

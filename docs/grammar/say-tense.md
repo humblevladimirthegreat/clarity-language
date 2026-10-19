@@ -247,6 +247,8 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 | *can* | able | verb + **`xa`** ([can](intention.md#can)) |
 | *can't* | not now / not yet / never | **`xe`** / **`xo`** / **`xu`** |
 | *could* | used to be able | **`xa`** + FORMER **`henom`** |
+| *couldn't* | couldn't back then | **`xe`** / **`xo`** / **`xu`** + FORMER **`henom`** |
+| *couldn't* | tried, that one time | try **`hudum`** ([try](intention.md#try)) + the [simple past](#simple-past); the sentence leaves the outcome open |
 | *could*, *might*, *may* | it could be | MAY **`thovum`** |
 | *may*, *is allowed to* | a rule / a person / no objection | **`thegol`** / **`thegom`** / **`thegor`** |
 | *may not* | forbidden | **`thedel`** / **`thedem`** / **`theder`** |

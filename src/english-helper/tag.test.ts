@@ -25,6 +25,12 @@ describe("tagEnglish", () => {
     assert.equal(terms("Cats sleep.")[0]!.lemma, "cat");
   });
 
+  it("reads a preposition the library tags as an adjective", () => {
+    for (const word of ["aboard", "underneath", "beneath"]) {
+      assert.equal(terms(`We sat ${word} the train.`).find((x) => x.normal === word)!.cls, "preposition");
+    }
+  });
+
   it("expands contractions into a negative word", () => {
     const t = terms("My sister couldn't come.");
     assert.deepEqual(t.map((x) => x.normal), ["my", "sister", "could", "not", "come"]);
