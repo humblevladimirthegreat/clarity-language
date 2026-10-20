@@ -9,6 +9,7 @@ import { CLOSED } from "../../src/closed-roots.js";
 import { loadPron } from "../../src/echo-metric.js";
 import { parseCompoundCsv } from "../../src/lexicon-compounds.js";
 import { parseOverlayCsv, parsePublishedCsv } from "../../src/lexicon-search.js";
+import { isFlagLabel } from "../../src/flag-label.js";
 import { dataPath } from "../../src/repo-paths.js";
 import { firstConsonant, placeTailRoots, tailCompounds, type TailPlaceRow } from "../../src/root-tails-place.js";
 import {
@@ -88,11 +89,12 @@ function printReport(tails: TailRow[], published: ReturnType<typeof parsePublish
   console.log(`lexicon-tails.csv: ${tails.length} roots placed`);
   console.log("");
   line("", "live", "tails");
+  // Flags are left out of the first-consonant share.
   const echoed = (rows: { concrete: string; root: string }[]) => {
-    const scored = rows.filter((row) => firstConsonant(pron.get(row.concrete) ?? ""));
+    const scored = rows.filter((row) => !isFlagLabel(row.concrete) && firstConsonant(pron.get(row.concrete) ?? ""));
     return pct(scored.filter((row) => row.root[1] === firstConsonant(pron.get(row.concrete)!)).length, scored.length);
   };
-  line("first consonant is the label's first consonant", echoed(live), echoed(tails));
+  line("first consonant is the label's (excluding flags)", echoed(live), echoed(tails));
   line("confusing pairs / same-kind pairs", share(before.confusing, before.possible), share(after.confusing, after.possible));
   line("  flags", share(before.flag, before.flagPossible), share(after.flag, after.flagPossible));
   line("  excluding flags", share(before.nonFlag, before.nonFlagPossible), share(after.nonFlag, after.nonFlagPossible));

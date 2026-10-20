@@ -2,7 +2,7 @@
 
 <!-- retie: skip -->
 
-**Status:** PROPOSED. Phase 1 is built and in review ([first run](#phase-1-run)); phases 2 and 3 are not started. Three [phases](#phases): phase 1 builds the new lexicon beside the live one, phase 2 replaces and reties, and phase 3 adds a lint that keeps look-alike words out of nearby checkpoints.  
+**Status:** PROPOSED. Phase 1 is accepted ([run](#phase-1-run)), and the language name is **Egabon** (`egabo` + **-n**); phases 2 and 3 are not started. Three [phases](#phases): phase 1 builds the new lexicon beside the live one, phase 2 replaces and reties, and phase 3 adds a lint that keeps look-alike words out of nearby checkpoints.  
 **Related:** `tail-suffix.md`; [lexicon editing](../meta/lexicon.md) ([§ root spellings](../meta/lexicon.md#root-spellings-come-from-convert-word), [§ root length](../meta/lexicon.md#root-length), [§ second consonant](../meta/lexicon.md#second-consonant), [§ seeds](../meta/lexicon.md#seeds-concrete-senses-and-pictographs), [§ core vocabulary](../meta/lexicon.md#core-vocabulary-column)); [clause.md § role letters](../grammar/clause.md#role-letters); [speech-moves.md § speech act](../grammar/speech-moves.md#speech-act-beginner) (the vowel series); [word-endings.md](../grammar/word-endings.md); [x-compounds.md § lexical compounds](../grammar/x-compounds.md#lexical-compounds); [hooks.md § hook compounds](../grammar/hooks.md#hook-compounds); [numeric-derivation.md](../grammar/numeric-derivation.md); [language-name.md](../meta/language-name.md); [`src/word-converter.ts`](../../src/word-converter.ts) (`SECOND_CONSONANT_BAN`, `longRootCandidates`, `rankRoots`); [`src/echo-metric.ts`](../../src/echo-metric.ts); [`src/lexicon-place.ts`](../../src/lexicon-place.ts); [`src/lexicon-compounds.ts`](../../src/lexicon-compounds.ts) (`factorizationsForStem`, `validateCompoundRows`); [`src/parse/hook-compounds.ts`](../../src/parse/hook-compounds.ts) (`parseHookCompoundCite`); [`src/closed-roots.ts`](../../src/closed-roots.ts); `number-mnemonic.md` and `number-respelling.md` ([interactions](#interactions)).  
 **Design authority:** none until absorbed. One grammar line changes: a hook compound's left piece must be a dictionary root ([hook compounds](#hook-compounds)). The grammar pages don't teach root spellings, so the tails reach learners through a new section in Advanced [phonology](../grammar/phonology.md#advanced), which dictionary views link to ([phase 2](#phase-2)).
 
@@ -222,7 +222,7 @@ Phase 1 changes nothing that exists: not [`lexicon-published.csv`](../../data/le
    - The second-consonant ban is off in this path only. `SECOND_CONSONANT_BAN` stays in force for the live path.
    - It applies the [hook-compound check](#hook-compounds) against today's three-letter roots, and the [listed-compound constraint](#listed-compounds) against compound stems spelled with the new roots.
 4. **Report:** the same run prints, for the live roots and the new ones:
-   - the share of roots whose first consonant is the English label's;
+   - the share of non-flag roots whose first consonant is the English label's;
    - confusing pairs, in total and per kind beside the even-spread floor ([capacity](#capacity));
    - any check it couldn't satisfy;
    - the new 👓 root.
@@ -244,7 +244,7 @@ Built: [`data/lexicon-tails.csv`](../../data/lexicon-tails.csv), [`src/root-tail
 
 | | Live | Tails |
 |---|---|---|
-| First consonant is the label's first consonant | 95.0% | 90.1% |
+| First consonant is the label's, excluding flags | 96.0% | 91.4% |
 | Confusing pairs / same-kind pairs | 3402 (3.9%) | 1448 (1.6%) |
 | Flags | 1206 (3.5%) | 609 (1.8%) |
 | Excluding flags | 2189 (4.1%) | 837 (1.6%) |
