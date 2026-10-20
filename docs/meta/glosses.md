@@ -8,7 +8,7 @@ A gloss should answer: *what is each Agazan piece doing in the clause — in Eng
 
 | Goal | Gloss does | Gloss does not |
 |------|------------|----------------|
-| Slot + sense | Show PoS letter and the **active English sense** | Quote Agazan phonology (`amu`, `agawa`, …), except [opaque interiors](#span-interiors) |
+| Slot + sense | Show PoS letter and the **active English sense** | Quote Agazan phonology (`amu`, `ogawo`, …), except [opaque interiors](#span-interiors) |
 | Separate senses | Treat concrete / abstract / proper / overlay as **different English roots** | Chain etymology (`microphone→speaker`) |
 | Endings | Drop **-l** / **-m** / **-n** when they only pick which sense-root applies | Repeat those endings after a sense that already encodes them |
 | Structure | Keep mid-word `x` pieces, **-x**, and binding visible | Invent full English syntax for Agazan structure; copy writing glyphs (`@` / `~`) into the gloss |
@@ -37,17 +37,17 @@ Worked examples in grammar pages use a **blockquote**, not a code fence (so Mark
 **When the morph line earns its place** (PoS letters, several words, mid-word **`x`**, binding, …):
 
 ```markdown
-> `zazawan godogal.`
+> `zuzazon godozol.`
 >
-> z-Azawan | g-dog
+> z-Uzazon | g-dog
 >
-> "Azawan is a dog."
+> "Uzazon is a dog."
 ```
 
 **When it would only repeat the quote**, omit it — typical of a simple [citation](../grammar/word-endings.md#citation-forms) whose sense *is* the English:
 
 ```markdown
-> `azawal`
+> `uzazol`
 >
 > "swan"
 ```
@@ -55,22 +55,22 @@ Worked examples in grammar pages use a **blockquote**, not a code fence (so Mark
 A **complex citation** still gets a gloss if the morph unpacks structure the quote does not. An `x`-compound name is one word in Agazan and one name in English; the gloss shows the pieces:
 
 ```markdown
-> `ohuxaluden`
+> `ohuxulowon`
 >
 > wish-x-guidance
 >
-> "Ohuxaluden"
+> "Ohuxulowon"
 ```
 
 | Line | Markup | Why |
 |------|--------|-----|
 | Surface | `` `agazan.` `` | Copyable Agazan; the only code span |
 | Morph | `z-dog | v-walk` | English labels; roman (no italics, no per-token backticks); spaced ` | ` between **words** |
-| Free English | `"A dog walks."` | Straight double quotes. A [note](#free-english-sentence-and-note) goes **after** the closing quote: `"Ahaben sings the Sing."` (that titled performance). Parentheses inside the quotes only for an aside, a scope island, or a tag letter ([inside parentheses](#inside-parentheses)). |
+| Free English | `"A dog walks."` | Straight double quotes. A [note](#free-english-sentence-and-note) goes **after** the closing quote: `"Ehalon sings the Sing."` (that titled performance). Parentheses inside the quotes only for an aside, a scope island, or a tag letter ([inside parentheses](#inside-parentheses)). |
 
 Do **not** prefix the gloss with `gloss:`.
 
-**Skip the morph line** when **`lint:agazan`** would treat it as redundant: single-segment parser morph whose English body matches the in-block loose line (same readable words, ignoring quotes and trailing `.?!`). That is a redundancy test, not “citation vs sentence.” Simple `azawal` / `"swan"` omits; `zazawan vowogal.` keeps `z-Azawan | v-walk` because that is not `"Azawan walks."`. Keep the line whenever it shows something the quote hides: role letters, several words, mid-word **`x`** pieces, binding, join jobs. No in-block loose line → omitting morph stays allowed.
+**Skip the morph line** when **`lint:agazan`** would treat it as redundant: single-segment parser morph whose English body matches the in-block loose line (same readable words, ignoring quotes and trailing `.?!`). That is a redundancy test, not “citation vs sentence.” Simple `uzazol` / `"swan"` omits; `zuzazon voworel.` keeps `z-Azawan | v-walk` because that is not `"Uzazon walks."`. Keep the line whenever it shows something the quote hides: role letters, several words, mid-word **`x`** pieces, binding, join jobs. No in-block loose line → omitting morph stays allowed.
 
 ### Word separator
 <a id="gloss-separator"></a>
@@ -101,28 +101,28 @@ The note is the careful reading written as a fact, not as an awkward second sent
 
 | Job | Example | Allowed |
 |-----|---------|---------|
-| An [aside](../grammar/spans.md#asides) span | "Azawan walks (quietly)." | One group per aside. An aside may also come out as commas or *by the way* |
-| A [scope island](../grammar/spans.md#scope-islands) | "Azawan and (just water)." | One group per island. English has no other way to fence a group, so the parentheses are the translation |
+| An [aside](../grammar/spans.md#asides) span | "Uzazon walks (quietly)." | One group per aside. An aside may also come out as commas or *by the way* |
+| A [scope island](../grammar/spans.md#scope-islands) | "Uzazon and (just water)." | One group per island. English has no other way to fence a group, so the parentheses are the translation |
 | A [tag](../grammar/pronouns.md#tag-pronouns) letter, right after the noun it names | "A dog (A) sees a cookie (E). A cat sees A." | A single capital letter, once per tag the sentence sets; later sentences use the letter as a name |
 
-Grouping that English can say does not use parentheses: *either Azawan walks or Alahen runs, and Ahaben sleeps*; *a challenging dog and a challenging cat*. A tone mark is English hedging or stress, not *(?)*: "Azawan saw a dog, I think." (unsure about just the dog).
+Grouping that English can say does not use parentheses: *either Uzazon walks or Olozun runs, and Ehalon sleeps*; *a challenging dog and a challenging cat*. A tone mark is English hedging or stress, not *(?)*: "Uzazon saw a dog, I think." (unsure about just the dog).
 
 **Alternative renderings.** When English has more than one natural rendering and the section teaches the range (polar answers, a sense that is *everything* or *everyone*), list them with ` / `: "Yes." / "True." / "Got it." A note, if any, goes after the last one and covers them all. Do not list alternatives that only vary wording.
 
-**Dialogue turns.** A block with more than one speaker's turn writes one quote per turn, as English prints dialogue: "Did Azawan walk?" "Well… Azawan sat." A note, if any, goes after the last turn and names the turn it is about. Do not mix turns and alternatives on one line.
+**Dialogue turns.** A block with more than one speaker's turn writes one quote per turn, as English prints dialogue: "Did Uzazon walk?" "Well… Uzazon sat." A note, if any, goes after the last turn and names the turn it is about. Do not mix turns and alternatives on one line.
 
 | Not this | This |
 |----------|------|
 | "tea or coffee (pick one)." | "tea or coffee." (pick one) |
 | "You all (everyone I'm talking to) walk." | "You all walk." (everyone I'm talking to) |
-| "Azawan walks if there is rain (as mechanism)." | "Azawan walks if it rains." (rain as the mechanism) |
-| "You (Alahen) and your associates sit." | "You and your associates sit." (said to Alahen) |
-| "Alahen left, so they say. Did Alahen run? Alahen sang (so they say)." | "Alahen left, so they say. Did Alahen run? Alahen sang." (the singing is hearsay too) |
-| "Azawan walks (quietly)." with an aside span | Unchanged: the parentheses translate the aside |
+| "Uzazon walks if there is rain (as mechanism)." | "Uzazon walks if it rains." (rain as the mechanism) |
+| "You (Olozun) and your associates sit." | "You and your associates sit." (said to Olozun) |
+| "Olozun left, so they say. Did Olozun run? Olozun sang (so they say)." | "Olozun left, so they say. Did Olozun run? Olozun sang." (the singing is hearsay too) |
+| "Uzazon walks (quietly)." with an aside span | Unchanged: the parentheses translate the aside |
 
 **Several sentences on one line.** The note still goes after the closing quote and names which sentence it is about (*the singing is hearsay too*). Never put the note in the middle of the quote.
 
-**Checkpoints.** Agazan → English answers and English → Agazan prompts are italic, not quoted. They follow the same shape with italics in place of the quotes: *Ahaben sees that Alahen sneaks.* (a note, when there is one). The sentence's period goes inside the italics, and nothing follows the note. Alternatives and turns are italic too: *No.* / *False.*; *Didn’t Azawan tell?* *True, Azawan didn’t.* (confirm the negative). An instruction to the learner is a note, not text between the italics. The learner's own name is the `SELF` slot, never *(Your name)*. A note is never required in a checkpoint answer; it is allowed when the checkpoint drills the marking ([translation exercises](translation-exercises.md)).
+**Checkpoints.** Agazan → English answers and English → Agazan prompts are italic, not quoted. They follow the same shape with italics in place of the quotes: *Ehalon sees that Olozun sneaks.* (a note, when there is one). The sentence's period goes inside the italics, and nothing follows the note. Alternatives and turns are italic too: *No.* / *False.*; *Didn’t Uzazon tell?* *True, Uzazon didn’t.* (confirm the negative). An instruction to the learner is a note, not text between the italics. The learner's own name is the `SELF` slot, never *(Your name)*. A note is never required in a checkpoint answer; it is allowed when the checkpoint drills the marking ([translation exercises](translation-exercises.md)).
 
 ### When a note is required
 <a id="note-required"></a>
@@ -140,10 +140,10 @@ When the sentence already says it (*as I remember*, *I gather*, *exactly one of*
 **Sentence first.** When English has a natural phrase for the marking, put it in the sentence and add no note: *I can see it*, *as I remember*, *it looks like*, *going by the pattern*, *by definition*, *used to*. Take the phrase from the English column of the owning table, and use the same phrase for the same marking across the page. A note is for what the sentence cannot say without turning awkward: *strong clues*, *the singing is hearsay too*, *not something else*.
 
 - **Nothing the gloss lacks.** Neither the sentence nor the note adds a source, reason, or time the gloss does not have: a bare CLUES channel is *it looks like*, not *from the clouds*.
-- **No restating.** Drop a note that repeats the sentence (*Maybe Azawan thinks Alahen left.* needs no *a guess about Azawan's view*).
+- **No restating.** Drop a note that repeats the sentence (*Maybe Uzazon thinks Olozun left.* needs no *a guess about Uzazon's view*).
 - **Contrasts with another form** (*quitting for good is …*) are teaching, not translation. When a table just above already shows the other form, drop the contrast; otherwise move it to a prose line or a [Compare with](grammar-docs.md#compare-with) line.
 - **A bare verb English cannot leave bare.** When the verb's sense list has an alias that stands alone, use it and leave the Agazan as it is: `v-tell` with nothing told is *talks* / *speaks*, not *tells*. Change the root only when the example needs a different act.
-- **English → Agazan prompts** may use the note to pick between two correct answers, in plain English: *A sleepy Alahen stands.* (*sleepy* first), not *(adjective before the noun)*.
+- **English → Agazan prompts** may use the note to pick between two correct answers, in plain English: *A sleepy Olozun stands.* (*sleepy* first), not *(adjective before the noun)*.
 
 ### What a note never contains
 <a id="note-contents"></a>
@@ -151,7 +151,7 @@ When the sentence already says it (*as I remember*, *I gather*, *exactly one of*
 A note is a translation, so it never contains:
 
 - Agazan forms, backticks, or gloss labels (`th-CLUES`, `PATTERN`).
-- Grammar terms (*holder*, *mirative*, */w/*). Say *the surprise is Azawan’s*, not *mirative with an Azawan holder*.
+- Grammar terms (*holder*, *mirative*, */w/*). Say *the surprise is Uzazon’s*, not *mirative with an Uzazon holder*.
 - Teaching commentary about how the form works (*whose-now and the event’s own time are separate*). That goes in a prose line under the block, or in a [Compare with](grammar-docs.md#compare-with) line.
 
 Explanation that is not translation (*You name yourself rather than saying I.*) goes on its own line under the block, not after the quote.
@@ -163,7 +163,7 @@ The sentence drops these. A [note](#note-required) carries one only when it is r
 
 | Agazan distinction | The sentence does |
 |---------------------|-----------------|
-| Cast resumes and role pointers (`zazawar`, `zaxar` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
+| Cast resumes and role pointers (`zuzazor`, `zaxar` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
 | Join packaging (open `zam` vs closed `zal`, exclusive `dol`, fence shape) | Plain *and / or*; no “exactly one”, no open-list footnotes |
 | Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
@@ -182,12 +182,12 @@ The sentence drops these. A [note](#note-required) carries one only when it is r
 - Force English can say (*please*, *don’t*, *I wonder*)
 - Stance that changes the verb (*can't* vs *ought not* vs unmet sake as content)
 - Comparatives / equatives / causation / plan when they are the point of the turn
-- Mention spans as *the word “odoga”* / *the phrase “…”* (Agazan spelling, not the English lemma) — [span interiors](#span-interiors)
+- Mention spans as *the word “odozo”* / *the phrase “…”* (Agazan spelling, not the English lemma) — [span interiors](#span-interiors)
 - Opaque interiors as the same blob (`kimchi`, `FBI`)
 
 ### Example (same Agazan, sentence and note)
 
-> `yol zehon dedehel dagavel dol von.`
+> `yol zehon dedadal dogadal dol von.`
 >
 > y-question | z-listener | [d-tea | d-coffee | d-or-exactly-one] | v-choose
 >
@@ -206,17 +206,17 @@ Published strings share one phonological root, but **concrete**, **abstract**, a
 | `zamul` | `z-microphone` | `z-ugobo(microphone)-l`, `z-microphone-l` |
 | `zamum` | `z-speaker` | `z-ugobo(microphone→speaker)-m` |
 | `zamun` | `z-speaker` | `z-ugobo(speaker)-n`, `z-speaker-n` |
-| `gagawal` | `g-quiet` | `g-uzumu(quiet)-l` |
-| `gagawam` | `g-volume` | `g-uzumu(quiet→volume)-m`, `g-volume-m` |
+| `gogawol` | `g-quiet` | `g-uzumu(quiet)-l` |
+| `gogawom` | `g-volume` | `g-uzumu(quiet→volume)-m`, `g-volume-m` |
 | `hevol` | `h-fishing` | `h-uvuvu(fishing)-l` |
 | `thevom` | `th-MEMORY` | `h-uvuvu(fishing→MEMORY)-m` |
-| `gahazam` | `g-home` | `g-ohohu(house→home)-m` |
+| `gawuhom` | `g-home` | `g-ohohu(house→home)-m` |
 
 Same English label for `zamum` and `zamun` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agazan line and from [word-endings.md](../grammar/word-endings.md). The gloss’s job is the **sense**, not a second orthography.
 
 **Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Agazan letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
 
-**Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zamun` / `zehon` / `zahan` / `zunan` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. The topic pronoun and the generic pronoun gloss in capitals on `/z/` `/d/` `/b/` and as a holder (`zozan` → `z-TOPIC`, `zoben` → `z-ONE`, `thunemozan` → `th-CLUES-TOPIC`); on any other slot they are ordinary names. A topic word glosses as its noun (`xazawan` → `x-Azawan`, `xazawar` → `x-←Azawan`), and `hahehom` as `h-as-for`. **Stand-ins** (`darl` / `dorl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
+**Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zamun` / `zehon` / `zahan` / `zunan` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. The topic pronoun and the generic pronoun gloss in capitals on `/z/` `/d/` `/b/` and as a holder (`zozan` → `z-TOPIC`, `zoben` → `z-ONE`, `thunemozan` → `th-CLUES-TOPIC`); on any other slot they are ordinary names. A topic word glosses as its noun (`xuzazon` → `x-Azawan`, `xuzazor` → `x-←Azawan`), and `hohagem` as `h-as-for`. **Stand-ins** (`darl` / `dorl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
 
 ### Ordinary lexicon plus packed role English
 <a id="no-lexicon-pos-specials"></a>
@@ -225,14 +225,14 @@ Morph uses the published **concrete** or **abstract** for that ending, unless `e
 
 | Agazan | Morph | Free English |
 |--------|--------|------------------------------|
-| `vahahal` | `v-see` | *sees* |
-| `vehahel` | `v-sit` | *sits* |
-| `vezebel` | `v-tell` | *tells* |
-| `al bahazal` | `in | b-house` | *in a house* |
-| `welavam` | `w-very` | *very* |
-| `zahahal` | `z-eye` | *the eye* (no packing on `/z/`) |
+| `vanobol` | `v-see` | *sees* |
+| `vehuhol` | `v-sit` | *sits* |
+| `vezeyel` | `v-tell` | *tells* |
+| `al bawuhol` | `in | b-house` | *in a house* |
+| `weluzom` | `w-very` | *very* |
+| `zanobol` | `z-eye` | *the eye* (no packing on `/z/`) |
 
-The checkpoint **English** column and the quoted line may say *see* / *sit* / *tell*. Packed **role English** makes the morph line match that lemma when `english_by_pos` lists it for this role and sense (`vahahal` → `v-see`). Do not invent a lemma that is not in that cell.
+The checkpoint **English** column and the quoted line may say *see* / *sit* / *tell*. Packed **role English** makes the morph line match that lemma when `english_by_pos` lists it for this role and sense (`vanobol` → `v-see`). Do not invent a lemma that is not in that cell.
 
 ### Role English (lookup and morph)
 <a id="role-english"></a>
@@ -314,8 +314,8 @@ A morph line corresponds **one-to-one** with its Agazan. From the gloss alone yo
 - **One label per form.** Each (PoS, root, ending) maps to one English label. Two roots never share an English sense: when they would, reword one row in the lexicon. `npm run lint:lexicon` checks this, and `npm test` round-trips every glossed example in `docs/grammar/`.
 - **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](../grammar/numbers.md#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word that prefers shorthand (`grawodul` → `g-twelve.spelled`; `g+12` → `g-twelve`), `.short` on shorthand that prefers spelling — no digit or one digit (`g+3` → `g-three.short`; `grarel` → `g-three`; `g+` → `g-more-than-one.short`).
 - **Ordinals use digits** (`gredul` → `g-2nd`, `gruedul` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
-- **Role-compound resumes** keep their role: `daexaradar` → `d-←instrument-x-write`, `duxaradar` → `d-←patient-x-write`. A bare `d-←write` would merge the doer, scene, undergoer, tool, … of one event.
-- **Role pointers** gloss their role and pointer vowel, never the referent: `zaxar` → `z-←agent.same`, `duxor` → `d-←patient.other`, `daxer` → `d-←agent.self`, `zaxur` → `z-←agent.unsaid`. **-l** adds `.new` and **-m** adds `.part` (`duxal` → `d-←patient.same.new`, `zaxam` → `z-←agent.same.part`, `zoxom` → `z-←recipient.other.part`, `zaxum` → `z-←agent.unsaid.part`). The role label is the role-compound one (`recipient` for **`o`**, `instrument` for **`ae`**, …). A pointer inside a seam keeps the seam's host: holder `thunemaxar` → `th-CLUES-←agent.same`, lateral anchor `hewezathaxar` → `h-west-th-←agent.same`.
+- **Role-compound resumes** keep their role: `daexuruyer` → `d-←instrument-x-write`, `duxuruyer` → `d-←patient-x-write`. A bare `d-←write` would merge the doer, scene, undergoer, tool, … of one event.
+- **Role pointers** gloss their role and pointer vowel, never the referent: `zaxar` → `z-←agent.same`, `duxor` → `d-←patient.other`, `daxer` → `d-←agent.self`, `zaxur` → `z-←agent.unsaid`. **-l** adds `.new` and **-m** adds `.part` (`duxal` → `d-←patient.same.new`, `zaxam` → `z-←agent.same.part`, `zoxom` → `z-←recipient.other.part`, `zaxum` → `z-←agent.unsaid.part`). The role label is the role-compound one (`recipient` for **`o`**, `instrument` for **`ae`**, …). A pointer inside a seam keeps the seam's host: holder `thunemaxar` → `th-CLUES-←agent.same`, lateral anchor `howehethaxar` → `h-west-th-←agent.same`.
 - **Unknown words fail.** A content word the lexicon cannot gloss has no morph line: a root missing from the lexicon, or **-m** on a root with no abstract sense (unless a closed overlay defines that **-m** form). `lint:agazan` reports it.
 - **Quoted pass-through.** Raw payloads (opaque interiors, and a resume stem with no known antecedent) go in straight double quotes: `z-OPAQUE["odoga"]`. A `"` inside the payload is written `""`.
 
@@ -349,9 +349,9 @@ The lexicon **concrete** and **abstract** fields, overlay **definition** labels 
 | dance, run, walk, climb, swim | `dance`, `run`, `walk`, … | `dancing`, `running`, `walking`, … |
 | choose, think, sing | `choose`, `think`, `sing` | `choosing`, `thinks`, `sang` |
 
-Agazan does not mark English tense or progressive aspect on the root. Conjugation belongs only in **free English** (`"Azawan walks."`, `"they are dancing."`). Morph stays `v-walk` / `v-dance` even when the quote uses *walks* / *dancing*.
+Agazan does not mark English tense or progressive aspect on the root. Conjugation belongs only in **free English** (`"Uzazon walks."`, `"they are dancing."`). Morph stays `v-walk` / `v-dance` even when the quote uses *walks* / *dancing*.
 
-**Tense in free English.** Write the present by default (*Azawan walks.*). Write the past when the Agazan puts the event before now (a past date or day offset, MEMORY, RESIDUE, FORMER, an as-of time in the past: *Azawan walked in 1962.*, *Azawan walked, I remember it.*), or when the sentence reports an event that is over: hearsay or clues about something that happened (*Alahen left, so they say.*, *It looks like Alahen fought.*) or a quote someone said (*Azawan said, “Alahen talks.”*). A forecast or a later date takes *will*. Tense never licenses a time word: write *walked*, not *walked yesterday*, unless the Agazan has the day.
+**Tense in free English.** Write the present by default (*Uzazon walks.*). Write the past when the Agazan puts the event before now (a past date or day offset, MEMORY, RESIDUE, FORMER, an as-of time in the past: *Uzazon walked in 1962.*, *Uzazon walked, I remember it.*), or when the sentence reports an event that is over: hearsay or clues about something that happened (*Olozun left, so they say.*, *It looks like Olozun fought.*) or a quote someone said (*Uzazon said, “Olozun talks.”*). A forecast or a later date takes *will*. Tense never licenses a time word: write *walked*, not *walked yesterday*, unless the Agazan has the day.
 
 **Keep *-ing*** only when that string is not a verb lemma — a kind English names that way (`hearing-aid`, `lightning`, `wedding`), a closed tag the grammar already froze, or when stripping it would collide with another published literal (`fishing` vs `fish`, `cooking` vs `cook`, `partying` vs `party`). Do not append *-ing* to mark “this row is used as `/v/`.”
 
@@ -368,10 +368,10 @@ A [resume](../grammar/pronouns.md#resume-r) spells its antecedent's whole stem, 
 
 | Case | Agazan | Morph gloss |
 |------|--------|-------------|
-| Resume of a name | `zazawar` | `z-←Azawan` |
-| Resume of a content word | `vezebar` | `v-←sleep` |
+| Resume of a name | `zuzazor` | `z-←Uzazon` |
+| Resume of a content word | `vuzevor` | `v-←sleep` |
 | Compound name | `zubunexunower` | `z-←Ubune-x-Unowen` |
-| Resume of one of a name (**-ln**) | `zazawar` after `dazawaln` | `z-←Azawan.instance` |
+| Resume of one of a name (**-ln**) | `zuzazor` after `duzazoln` | `z-←Azawan.instance` |
 | Resume of a prior content word | | `z-←someone` / `d-←tea` |
 | No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
 | Fill-ask / unspecified member | `zar` | `z-wh` / `z-something` (as the docs require for that form) |
@@ -387,9 +387,9 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 
 | Agazan | Morph gloss | Free English | Resume |
 |--------|-------------|--------------|--------|
-| `zazawan` | `z-Azawan` | *Azawan* | `zazawar` → `z-←Azawan` |
-| `zalahen` | `z-Alahen` | *Alahen* | `zalaher` → `z-←Alahen` |
-| `zahaben` | `z-Ahaben` | *Ahaben* | `zahaber` → `z-←Ahaben` |
+| `zuzazon` | `z-Uzazon` | *Uzazon* | `zuzazor` → `z-←Azawan` |
+| `zolozun` | `z-Olozun` | *Olozun* | `zolozur` → `z-←Alahen` |
+| `zehalon` | `z-Ehalon` | *Ehalon* | `zehalor` → `z-←Ahaben` |
 
 ### Mid-word `x` families
 
@@ -397,12 +397,12 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 
 | Family | Example Agazan | Morph gloss |
 |--------|-----------------|-------------|
-| Ordinary / name compound | `yabubaxazovan` | `y-Ubune-x-Unowen` |
-| Ordinary (three roots) | `zagavexedehexowoden` | `z-Ogove-x-Adeda-x-Unuden` |
-| Ability / values stance | `vowogaxel` | `v-walk-unable-temporary` |
+| Ordinary / name compound | `yanadoxazolon` | `y-Ubune-x-Unowen` |
+| Ordinary (three roots) | `zogadaxedadaxowolan` | `z-Ogove-x-Adeda-x-Unuden` |
+| Ability / values stance | `voworexel` | `v-walk-unable-temporary` |
 | Values stance on need | `thulothom` | `th-competence-motive-any-term` |
-| Role compound | `zaxavadal` | `z-agent-x-fight` |
-| Span | `th(hagawal)` | `th-ASIDE[h-quiet]` ([labeled bracket](#phrase-brackets)) |
+| Role compound | `zaxavavul` | `z-agent-x-fight` |
+| Span | `th(hogawol)` | `th-ASIDE[h-quiet]` ([labeled bracket](#phrase-brackets)) |
 | Number / enumeration | `xrebul` | `x-starting-with` |
 
 For **hyphenated names**, gloss each piece (`y-Ubune-x-Unowen`, `z-Ogove-x-Adeda-x-Unuden`). Mid-word **`x`** stays visible as `-x-`. Do not put Agazan letters in the english slot, except [opaque interiors](#span-interiors).
@@ -414,22 +414,22 @@ A **mention** is a **word or phrase** as that spelling, not a quoted utterance a
 
 | Kind | Agazan | Morph | Free English |
 |------|--------|-------|--------------|
-| Mention (one word) | <code>glelel z&lt;odoga&gt;</code> | `[gl-MENTION \| z-OPAQUE["odoga"]]` | *The word “odoga” is small.* |
-| Mention (phrase) | <code>glelel z&lt;zazawan vezehel&gt;</code> | `[gl-MENTION \| z-OPAQUE["zazawan vezehel"]]` | *The phrase “zazawan vezehel” is small.* |
-| Mention name-string | <code>glelen d&lt;onodan&gt;</code> | `[gl-NAME.MENTION \| d-OPAQUE["onodan"]]` | *the name “onodan”* (the title-string, not the work) |
+| Mention (one word) | <code>glelel z&lt;odoga&gt;</code> | `[gl-MENTION \| z-OPAQUE["odoga"]]` | *The word “odozo” is small.* |
+| Mention (phrase) | <code>glelel z&lt;zazawan vezehel&gt;</code> | `[gl-MENTION \| z-OPAQUE["zazawan vezehel"]]` | *The phrase “zuzazon vezeyol” is small.* |
+| Mention name-string | <code>glelen d&lt;onodan&gt;</code> | `[gl-NAME.MENTION \| d-OPAQUE["onodan"]]` | *the name “onoron”* (the title-string, not the work) |
 | Opaque | `d<kimchi>` | `d-OPAQUE["kimchi"]` | The same blob |
-| Cite | `d[azawan]` | `d-CITE[Azawan]` | Translation of the **utterance** (*said “judge.”*) |
-| Cite **`@`** | `d@[onodan alahen]` | `d-NAME.CITE[Onodan \| Alahen]` | The **work** (*dislikes Onodan Alahen*) |
+| Cite | `d[uzazon]` | `d-CITE[Uzazon]` | Translation of the **utterance** (*said “judge.”*) |
+| Cite **`@`** | `d@[onoron olozun]` | `d-NAME.CITE[Onoron \| Olozun]` | The **work** (*dislikes Onoron Olozun*) |
 
 Words inside a cite or aside are glossed as usual. They sit in a new clause, so they keep their own role letters and brackets. Opaque interiors are never glossed.
 
 Speech/writing reports (*said “X,”* *sang “X,”* *don’t “halt”*) are **cite**, even when English says *the word X*. Do not mark that object with the mention marker. Sense-talk about a lexeme (*is a noun*, *is archaic*) is still mention; there is no extra “translate the lemma” rule — keep *the word/phrase “…”*.
 
-> <code>glelel z&lt;odoga&gt; gamazam.</code>
+> <code>glelel z&lt;odoga&gt; gumazom.</code>
 >
 > [gl-MENTION | z-OPAQUE["odoga"]] | g-small
 >
-> "The word “odoga” is small."
+> "The word “odozo” is small."
 
 ### Underspecification and joins
 
@@ -473,18 +473,18 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 | Agazan | Morph gloss | Free English (separate) |
 |---------|-------------|-------------------------|
-| `azawan.` | `Azawan` | *Azawan.* (hello) |
-| `yalahexen` | `y-Alahen-minutes` | *Alahen — a few minutes.* |
+| `uzazon.` | `Uzazon` | *Uzazon.* (hello) |
+| `yolozuxen` | `y-Olozun-minutes` | *Olozun — a few minutes.* |
 | `yael` | `y-yes` | *Yes.* |
 | `yol` | `y-question` | *(yes/no or fill-ask)* |
 | `zamul` | `z-microphone` | *a microphone* |
 | `zamun` | `z-speaker` | *I* / *the speaker* |
 | `zehon` | `z-listener` | *you* / *the listener* |
-| `zazawan` | `z-Azawan` | *Azawan* |
+| `zuzazon` | `z-Uzazon` | *Uzazon* |
 | `zahan` | `z-interlocutors` | *we* (speaker ∪ address set) |
 | `zamunx` | `z-speaker-x` | *I and associates* |
 | `zehonx` | `z-listener-x` | *you-all* (address set) |
-| `gezebul` | `g-sleepy` | *sleepy* |
+| `gozumol` | `g-sleepy` | *sleepy* |
 | `thevom` | `th-MEMORY` | *per memory* |
 | `thodom` | `th-LIVE` | *from the scene* |
 | `thamar` | `th-plan-sketch` | *as a sketch plan* |
@@ -493,17 +493,17 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Dialogue turn (morph + loose free)
 
-> `yael zamun zam zehon zal gezebul.`
+> `yael zamun zam zehon zal gozumol.`
 >
 > y-yes | [[z-speaker | z-and.open] | z-listener | z-and | g-sleepy]
 >
 > "Yes — you and I are sleepy."
 
-(Prefer **`zahan gezebul`** when the point is interlocutor *we*, not an explicit two-name census.)
+(Prefer **`zahan gozumol`** when the point is interlocutor *we*, not an explicit two-name census.)
 
 ### Metaphor vs overlay vs literal
 
-> `xezom thevom zerehel.`
+> `xezom thevom zurelal.`
 >
 > x-however | th-MEMORY | z-rain
 >
@@ -513,7 +513,7 @@ No note: *as I remember* already says whose memory it is. Do not render the over
 
 ### Ability + value motive
 
-> `yuel zamun vowogaxel thulothom.`
+> `yuel zamun voworexel thulothom.`
 >
 > y-no | z-speaker | v-walk-unable-temporary | th-competence-motive-any-term
 >
@@ -521,7 +521,7 @@ No note: *as I remember* already says whose memory it is. Do not render the over
 
 ### Numbered alternative + unmet pleasure
 
-> `xrebul zehegom grewol. zamunx thozothur.`
+> `xrebul zayovam grewol. zamunx thozothur.`
 >
 > x-starting-with | [z-problem | g-1st] . z-speaker-x | th-pleasure-unmet-passing
 >
@@ -529,7 +529,7 @@ No note: *as I remember* already says whose memory it is. Do not render the over
 
 ### Inclusive *we* (interlocutors)
 
-> `yael xodum zahan thamar vowogal vul.`
+> `yael xodum zahan thamar voworel vul.`
 >
 > y-yes | x-therefore | z-interlocutors | th-plan-sketch | [v-walk | v-not]
 >
@@ -562,7 +562,7 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 | `zam` / `hal` / `am` as the whole morph | Agazan letters where the job belongs | `z-and.open` / `h-only-when` / `including.open` |
 | `z-microphone-l` | Ending already chose the literal root | `z-microphone` |
 | `z-microphone→speaker` | Etymology chain | `z-speaker` |
-| `v-see` for `vahahal` with no `v:see` cell | Invented PoS lemma | Fill `english_by_pos` first, then morph follows |
+| `v-see` for `vanobol` with no `v:see` cell | Invented PoS lemma | Fill `english_by_pos` first, then morph follows |
 | Morph line that is only idiomatic English | Confuses layers | Morph + separate quoted free line |
 | Morph gloss that matches the quoted English | Redundant; the quote already is the sense | Omit that line when `lint:agazan` agrees ([example block](#example-block)). Keep it when it unpacks **`x`**, PoS, several words, … |
 | `gloss:` + per-token backticks inside a code fence | Markdown renders raw; Agazan and gloss look the same | Blockquote; backticks on Agazan only |

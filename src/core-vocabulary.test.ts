@@ -60,7 +60,7 @@ ${intermediate}
 
 describe("stageCheckpoints", () => {
   const pages: Record<string, string> = {
-    "a.md": page(`| *Azawan* | \`${CLOSED.swan}n\` |\n| *dog* | \`${dog}l\` |`, `| *book* | \`${book}l\` |`),
+    "a.md": page(`| *Uzazon* | \`${CLOSED.swan}n\` |\n| *dog* | \`${dog}l\` |`, `| *book* | \`${book}l\` |`),
     "b.md": page(`| *dog* | \`${dog}l\` |\n| *walk* | \`v${CLOSED.walk}l\` |`, `| *dog* | \`${dog}l\` |`),
   };
   const checkpoints = stageCheckpoints(["a.md", "b.md"], (p) => pages[p], tables);
@@ -109,7 +109,7 @@ describe("stageCheckpoints, converted", () => {
 
 | English | Agazan | Cue |
 |---------|--------|-----|
-| *Azawan* | \`${CLOSED.swan}n\` | 🦢 |
+| *Uzazon* | \`${CLOSED.swan}n\` | 🦢 |
 | *dog* | \`${dog}l\` | 🐕 |
 
 **Review:**

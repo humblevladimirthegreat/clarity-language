@@ -1,20 +1,23 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
+import { CLOSED } from "../closed-roots.js";
 import { loadDefaultTables } from "../parse/index.js";
 import { applyResumeKeeps, bareResumeDrift, lintPage, newLintFindings, rootsInUse } from "./drift.js";
 import { retieTables } from "./tables.js";
 
 const tables = loadDefaultTables();
-const CLEAN = "Say `zazawan vowogal.` here.\n";
-const BROKEN = "Say `zazawan vozqzqol.` here.\n";
+// Real roots through CLOSED: src/retie/ is never retied, so its fixtures name the live lexicon.
+const SWAN = `z${CLOSED.swan}n`;
+const CLEAN = `Say \`${SWAN} v${CLOSED.walk}l.\` here.\n`;
+const BROKEN = `Say \`${SWAN} vozqzqol.\` here.\n`;
 
 describe("rootsInUse", () => {
   it("collects content roots of non-resume words in code spans", () => {
-    const roots = rootsInUse(["Say `zazawan vowogal.` and `zazawar`.", "`thagazam`"]);
-    assert.ok(roots.has("azawa"));
-    assert.ok(roots.has("agaza"));
-    assert.ok(!roots.has("zazawar"));
+    const roots = rootsInUse([`Say \`${SWAN} v${CLOSED.walk}l.\` and \`z${CLOSED.swan}r\`.`, `\`th${CLOSED.glasses}m\``]);
+    assert.ok(roots.has(CLOSED.swan));
+    assert.ok(roots.has(CLOSED.glasses));
+    assert.ok(!roots.has(`z${CLOSED.swan}r`));
   });
 
   it("skips English in code spans", () => {

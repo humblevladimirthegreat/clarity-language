@@ -71,7 +71,7 @@ Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org
 
 A content word ends in one of four consonants: `-l`, `-m`, `-n`, or `-r`. That last consonant is the audible end of the word. Inside the word, consonants start syllables. They do not close a syllable in the middle.
 
-`azawan` = *a-za-wan*. `odogal` = *o-do-gal*.
+`uzazon` = *a-za-wan*. `odozol` = *o-do-gal*.
 
 ## Intermediate {#intermediate}
 
@@ -82,7 +82,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 ### Phonotactics (word shape)
 <a id="phonotactics"></a>
 
-Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-r`. Here is the full shape of that word, in order, written as one lowercase token (`zazawan`).
+Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-r`. Here is the full shape of that word, in order, written as one lowercase token (`zuzazon`).
 
 <!-- cheat-sheet: sounds-spelling -->
 | Agazan | Use | English |
@@ -92,14 +92,14 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Root(s) **V(CV)+** | content | start with a vowel; each later consonant starts a new syllable |
 | Mid-word `x` | productive compound seam | joins two roots inside one word |
 | Mid-word `th` | stance seam | joins a sake to its stance vowel ([sakes](sakes.md)), any other root to a scope vowel ([label scope](predication.md#label-scope)), or a direction to whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals)) |
-| Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`ebedaluruhe` *bedroom*) |
+| Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`ebeholuruha` *bedroom*) |
 | `-l` / `-m` / `-n` / `-r` | [word ending](word-endings.md) | audible end of the content word |
 | Name instance **`-ln`** | [one of a name](word-endings.md#name-instance--ln) | word-final coda `ln` |
 | Optional `-x` | [plural](plurality.md) after the ending | word-final `-lx` / `-mx` / `-nx` / `-rx` / `-lnx` (letter `x`) |
 | Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` |
 | Backward stand-in **`-rth`** | [pointing back](dependents.md#stand-in-back) | word-final coda `rth`; the only word-final `th` |
 
-A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubuhel`: prefix `z`, root `ubuhe`, ending `-l`). Each spelling has only one pronunciation. Writing does not mark stress. Musical rhythm may still place emphasis.
+A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubulol`: prefix `z`, root `ubulo`, ending `-l`). Each spelling has only one pronunciation. Writing does not mark stress. Musical rhythm may still place emphasis.
 
 Some short grammar words stack two vowels (a join such as **ua**). A stack always puts its vowels in [alphabetical order](#letter-names) (**u**, **a**, **o**, **e**): **u** comes first and **e** comes last. That gives six stacks: **ua**, **uo**, **ue**, **ao**, **ae**, and **oe**. The two vowels stay two separate syllables.
 
@@ -109,7 +109,7 @@ Some short grammar words stack two vowels (a join such as **ua**). A stack alway
 
 When English says *how many* or *which place*, Agazan uses a [number word](numbers.md). A number word puts `r` right after the role letter. Ordinary words never have that cluster, because their roots start with a vowel, so a role letter followed directly by `r` tells you a number is coming. The marker is `ra`, `ru`, `re`, or `ro`; counting from the end is written `#-`, spelled and spoken **rue** before the digits. Two vowels in a row stay two separate syllables.
 
-> `zagadulx grarel.`
+> `zegazolx grarel.`
 >
 > z-cat-x | g-three
 >
@@ -150,7 +150,7 @@ The table is in **alphabetical order**. The ten letters that begin a [digit syll
 
 <!-- retie: letter-names -->
 ```text
-`agadu` → `a` `ga` `a` `da` `u`
+`egazo` → `e` `ga` `a` `ze` `o`
 ```
 
 In a clause, a letter you talk about (such as `z`) is a [mention](spans.md#mention); read it aloud by its letter name (`ze`).
@@ -192,9 +192,9 @@ Legal clusters: left-hanging `gl-`; number-word role letter + `r`; [tag pronoun]
 
 Try singing a short Agazan line quickly at a high but comfortable pitch:
 
-`zazawan gamadam.`
+`zuzazon gumahom.`
 
-/ zä.zä.wän ɡä.mä.däm /
+/ zʉ.zä.zo̞n ɡʉ.mä.ɦo̞m /
 
 A line that piles up close vowels, clusters, and mid-word stops is harder to sustain even when it is only a little harder to speak:
 
@@ -206,9 +206,9 @@ Give every syllable about the same length, and keep its vowel full however fast 
 
 Each word takes a light stress on its **first syllable**. Since the rule never changes, spelling does not mark it. The ending consonant already tells a listener where a word stops; the stressed first beat tells them where the next one starts, so fast speech still splits into words. A [number word](numbers.md) stresses the last digit of each group instead.
 
-`zazawan gamadam.`
+`zuzazon gumahom.`
 
-/ ˈzä.zä.wän ˈɡä.mä.däm /
+/ ˈzʉ.zä.zo̞n ˈɡʉ.mä.ɦo̞m /
 
 **Hold the ending.** Let the final `-l`, `-m`, `-n` or `-r` sound for a moment instead of clipping it. It is often the only difference between two words (`vul`, `vum`, `vur`), and all four are sounds you can hold. In singing, put the cutoff on it.
 

@@ -16,215 +16,215 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agazan |
 |---------|--------|
-| *Azawan* | `azawan` |
-| *Alahen* | `alahen` |
-| *Ahaben* | `ahaben` |
+| *Uzazon* | `uzazon` |
+| *Olozun* | `olozun` |
+| *Ehalon* | `ehalon` |
 | *I* | `amun` |
-| *school* | `uzugul` |
-| *guard* | `agavol` |
-| *angry* | `anegel` |
-| *umbrella* | `amebel` |
-| *police* | `abazel` |
-| *see* | `vahahal` |
-| *run* | `varahal` |
-| *duck* | `adagul` |
-| *sing* | `vezehel` |
-| *tomato* | `adedol` |
-| *smell* | `vonozal` |
-| *wind* | `ewedul` |
-| *sneak* | `vezevul` |
-| *tell* | `vezebel` |
+| *school* | `uzuhol` |
+| *guard* | `ayoyul` |
+| *angry* | `onemul` |
+| *umbrella* | `omebol` |
+| *police* | `ebayel` |
+| *see* | `vanobol` |
+| *run* | `varuvel` |
+| *duck* | `udazal` |
+| *sing* | `vezeyol` |
+| *tomato* | `ududol` |
+| *smell* | `vonobol` |
+| *wind* | `ewolol` |
+| *sneak* | `vezeyul` |
+| *tell* | `vezeyel` |
 | *sandwich* | `azal` |
-| *salad* | `azavul` |
-| *cook* | `vugugal` |
-| *scream* | `vezugel` |
-| *fight* | `vavadal` |
-| *mango* | `amegol` |
-| *watermelon* | `owodal` |
-| *write* | `varadal` |
-| *swim* | `vezewel` |
-| *night* | `anadal` |
-| *intensity* | `ahegem` |
-| *helmet* | `ehevul` |
+| *salad* | `azadal` |
+| *cook* | `vugayol` |
+| *scream* | `vazomul` |
+| *fight* | `vavavul` |
+| *mango* | `amadol` |
+| *watermelon* | `owodol` |
+| *write* | `vuruyel` |
+| *swim* | `vezevol` |
+| *night* | `anurol` |
+| *intensity* | `uhavem` |
+| *helmet* | `ehebol` |
 | *physical* | `oyul` |
-| *punch* | `vabahel` |
+| *punch* | `vabavul` |
 | *wood* | `uwul` |
-| *basket* | `abezal` |
+| *basket* | `ubawal` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *An angry Alahen sees an umbrella.*
+**1.** *An angry Olozun sees an umbrella.*
 
 ::: details Show answer
-`zalahen ganegel damebel vahahal.`
+`zolozun gonemul domebol vanobol.`
 
-[z-Alahen | g-angry] | d-umbrella | v-see
+[z-Olozun | g-angry] | d-umbrella | v-see
 
-**Also correct:** `damebel zalahen ganegel vahahal.`
+**Also correct:** `domebol zolozun gonemul vanobol.`
 
 **Rule:** [Adjectives](clause.md#adjectives-ɡ)
 :::
 
-**2.** *Ahaben sees a guard. The guard runs.*
+**2.** *Ehalon sees a guard. The guard runs.*
 
 ::: details Show answer
-`zahaben dagavol vahahal. zagavor varahal.`
+`zehalon dayoyul vanobol. zayoyur varuvel.`
 
-z-Ahaben | d-guard | v-see . z-←guard | v-run
+z-Ehalon | d-guard | v-see . z-←guard | v-run
 
-**Also correct:** `zahaben dagavol vahahal. zuxar varahal.`
+**Also correct:** `zehalon dayoyul vanobol. zuxar varuvel.`
 
 **Rule:** [Resume with -r](pronouns.md#resume-r)
 :::
 
-**3.** *Azawan sings like a duck.*
+**3.** *Uzazon sings like a duck.*
 
 ::: details Show answer
-`zazawan humum badagul vezehel.`
+`zuzazon humum budazal vezeyol.`
 
-z-Azawan | [h-like | b-duck] | v-sing
+z-Uzazon | [h-like | b-duck] | v-sing
 
 **Rule:** [Like (resembles)](relations.md#like-resembles)
 :::
 
-**4.** *Ahaben smells three tomatoes.*
+**4.** *Ehalon smells three tomatoes.*
 
 ::: details Show answer
-`zahaben dadedolx grarel vonozal.`
+`zehalon dududolx grarel vonobol.`
 
-z-Ahaben | [d-tomato-x | g-three] | v-smell
+z-Ehalon | [d-tomato-x | g-three] | v-smell
 
 **Rule:** [Counts](numbers.md#counts)
 :::
 
-**5.** *Ahaben sings if there is wind.*
+**5.** *Ehalon sings if there is wind.*
 
 ::: details Show answer
-`zahaben vezehel thoyem bewedul.`
+`zehalon vezeyol thoyem bewolol.`
 
-z-Ahaben | v-sing | [th-if | b-wind]
+z-Ehalon | v-sing | [th-if | b-wind]
 
 **Rule:** [If](causation.md#if)
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zahaben vahahal darl zalahen vezevul.`
+**1.** `zehalon vanobol darl zolozun vezeyul.`
 
 ::: details Show answer
-z-Ahaben | v-see | d-that-clause | z-Alahen | v-sneak
+z-Ehalon | v-see | d-that-clause | z-Olozun | v-sneak
 
-*Ahaben sees that Alahen sneaks.*
+*Ehalon sees that Olozun sneaks.*
 
 **Rule:** [Dependent clauses](dependents.md#dependent-clauses)
 :::
 
-**2.** `zazawan vezebel balahenx.`
+**2.** `zuzazon vezeyel bolozunx.`
 
 ::: details Show answer
-z-Azawan | v-tell | b-Alahen-x
+z-Uzazon | v-tell | b-Olozun-x
 
-*Azawan talks to Alahen and associates.*
+*Uzazon talks to Olozun and associates.*
 
 **Rule:** [Associative group](plurality.md#associative)
 :::
 
-**3.** `zazawan dazal ol dazavul vugugal.`
+**3.** `zuzazon dazal ol dazadal vugayol.`
 
 ::: details Show answer
-z-Azawan | d-sandwich | instead | d-salad | v-cook
+z-Uzazon | d-sandwich | instead | d-salad | v-cook
 
-*Azawan cooks a salad instead of a sandwich.*
+*Uzazon cooks a salad instead of a sandwich.*
 
 **Rule:** [Instead](hooks.md#instead-ol)
 :::
 
-**4.** `zahaben vezehel th(zalahen vezugel).`
+**4.** `zehalon vezeyol th(zolozun vazomul).`
 
 ::: details Show answer
-z-Ahaben | v-sing | th-ASIDE[z-Alahen | v-scream]
+z-Ehalon | v-sing | th-ASIDE[z-Olozun | v-scream]
 
-*Ahaben sings (Alahen is screaming).*
+*Ehalon sings (Olozun is screaming).*
 
 **Rule:** [Asides](spans.md#asides-th)
 :::
 
-**5.** `zalahen thovum vavadal.`
+**5.** `zolozun thovum vavavul.`
 
 ::: details Show answer
-z-Alahen | th-MAY | v-fight
+z-Olozun | th-MAY | v-fight
 
-*Alahen may be fighting.*
+*Olozun may be fighting.*
 
 **Rule:** [MAY](knowing.md#may)
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *education* `uzugul` or `uzugum`
+**1.** *education* `uzuhol` or `uzuhom`
 
 ::: details Show answer
-`uzugum`
+`uzuhom`
 
 education
 
-*Education* is the abstract sense of the root, so it takes **-m**; `uzugul` is a *school*.
+*Education* is the abstract sense of the root, so it takes **-m**; `uzuhol` is a *school*.
 
 **Rule:** [First mention, abstract](word-endings.md#abstract-m)
 :::
 
-**2.** *Azawan sees a mango or a watermelon: exactly one of the two.* `zazawan damegol dowodal dol vahahal.` or `zazawan damegol dowodal dal vahahal.`
+**2.** *Uzazon sees a mango or a watermelon: exactly one of the two.* `zuzazon damadol dowodol dol vanobol.` or `zuzazon damadol dowodol dal vanobol.`
 
 ::: details Show answer
-`zazawan damegol dowodal dol vahahal.`
+`zuzazon damadol dowodol dol vanobol.`
 
-z-Azawan | [d-mango | d-watermelon | d-or-exactly-one] | v-see
+z-Uzazon | [d-mango | d-watermelon | d-or-exactly-one] | v-see
 
 **`dol`** picks one of the items; **`dal`** would be *a mango and a watermelon*.
 
 **Rule:** [Choice (o)](joins.md#choice-o)
 :::
 
-**3.** *What does Alahen write?* `yol ?dar zalahen varadal.` or `yol ?dur zalahen varadal.`
+**3.** *What does Olozun write?* `yol ?dar zolozun vuruyel.` or `yol ?dur zolozun vuruyel.`
 
 ::: details Show answer
-`yol ?dar zalahen varadal.`
+`yol ?dar zolozun vuruyel.`
 
-y-question | ?d-wh | z-Alahen | v-write
+y-question | ?d-wh | z-Olozun | v-write
 
 **`dar`** asks *what*; **`dur`** asks *what else*.
 
 **Rule:** [Fill-ask](questions.md#fill-ask)
 :::
 
-**4.** *Ahaben swims only at night.* `zahaben vezewel hanadal hal.` or `zahaben vezewel hanadal ham.`
+**4.** *Ehalon swims only at night.* `zehalon vezevol hanurol hal.` or `zehalon vezevol hanurol ham.`
 
 ::: details Show answer
-`zahaben vezewel hanadal hal.`
+`zehalon vezevol hanurol hal.`
 
-z-Ahaben | v-swim | h-night | h-only-when
+z-Ehalon | v-swim | h-night | h-only-when
 
 Closed **`hal`** says night is the only time; open **`ham`** leaves room for other times.
 
 **Rule:** [Only when / never](restrictors.md#only-when-never-hal)
 :::
 
-**5.** *Azawan is more intense than Alahen.* `zazawan zalahen zel gahegem.` or `zalahen zazawan zel gahegem.`
+**5.** *Uzazon is more intense than Olozun.* `zuzazon zolozun zel guhavem.` or `zolozun zuzazon zel guhavem.`
 
 ::: details Show answer
-`zazawan zalahen zel gahegem.`
+`zuzazon zolozun zel guhavem.`
 
-[z-Azawan | z-Alahen | z-rank/more | g-intensity]
+[z-Uzazon | z-Olozun | z-rank/more | g-intensity]
 
 The first name before **`zel`** ranks higher.
 
 **Rule:** [Comparatives](comparatives.md#comparatives-e)
 :::
 
-**6.** *My helmet serves the physical sake in the long term.* `zehevul goyuthal.` or `zehevul goyuthul.`
+**6.** *My helmet serves the physical sake in the long term.* `zehebol goyuthal.` or `zehebol goyuthul.`
 
 ::: details Show answer
-`zehevul goyuthal.`
+`zehebol goyuthal.`
 
 z-helmet | g-physical-met-lasting
 
@@ -233,59 +233,59 @@ z-helmet | g-physical-met-lasting
 **Rule:** [Met](sakes.md#met)
 :::
 
-**7.** *Azawan sees someone who was punched.* `zazawan duxabahel vahahal.` or `zazawan daxabahel vahahal.`
+**7.** *Uzazon sees someone who was punched.* `zuzazon duxabavul vanobol.` or `zuzazon daxabavul vanobol.`
 
 ::: details Show answer
-`zazawan duxabahel vahahal.`
+`zuzazon duxabavul vanobol.`
 
-z-Azawan | d-patient-x-punch | v-see
+z-Uzazon | d-patient-x-punch | v-see
 
 Role vowel **`u`** names who the punch happens to; **`a`** is who punches.
 
 **Rule:** [The undergoer](roles.md#the-undergoer-u)
 :::
 
-**8.** *a wood basket* `zuwuxabezal.` or `zabezaxuwul.`
+**8.** *a wood basket* `zuwuxubawal.` or `zubawaxuwul.`
 
 ::: details Show answer
-`zuwuxabezal.`
+`zuwuxubawal.`
 
 z-wood-x-basket
 
-A wood basket is a kind of basket, so *basket* comes last; `zabezaxuwul` would be a kind of wood.
+A wood basket is a kind of basket, so *basket* comes last; `zubawaxuwul` would be a kind of wood.
 
 **Rule:** [Two roots, one word](x-compounds.md#two-roots-one-word)
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Ahaben, don’t run!* <!-- lint: error -->`yahaben yel varahal.`
+**1.** *Ehalon, don’t run!* <!-- lint: error -->`yehalon yel varuvel.`
 
 ::: details Show answer
-`yahaben yul varahal.`
+`yehalon yul varuvel.`
 
-y-Ahaben | y-prohibition | v-run
+y-Ehalon | y-prohibition | v-run
 
-*Don’t* is **`yul`**; **`yel`** tells Ahaben to run.
+*Don’t* is **`yul`**; **`yel`** tells Ehalon to run.
 
 **Rule:** [Speech act](speech-moves.md#speech-act-statement-question-command)
 :::
 
-**2.** *Alahen is a police officer.* <!-- lint: error -->`zalahen gugol babazel.`
+**2.** *Olozun is a police officer.* <!-- lint: error -->`zolozun gugol bebayel.`
 
 ::: details Show answer
-`zalahen gabazel.`
+`zolozun gebayel.`
 
-z-Alahen | g-police
+z-Olozun | g-police
 
-**`gugol`** says Alahen and the police are one and the same; to put Alahen in a kind, the kind word goes on `/ɡ/`.
+**`gugol`** says Olozun and the police are one and the same; to put Olozun in a kind, the kind word goes on `/ɡ/`.
 
 **Rule:** [Kind / role](predication.md#classification)
 :::
 
 #### What changes {#beginner-what-changes}
 
-**1.** `zamun thamar vezewel.` / `zamun thamal vezewel.`
+**1.** `zamun thamar vezevol.` / `zamun thamal vezevol.`
 
 ::: details Show answer
 z-speaker | th-plan-sketch | v-swim
@@ -309,186 +309,186 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agazan |
 |---------|--------|
-| *Azawan* | `azawan` |
-| *Alahen* | `alahen` |
-| *Ahaben* | `ahaben` |
+| *Uzazon* | `uzazon` |
+| *Olozun* | `olozun` |
+| *Ehalon* | `ehalon` |
 | *your name* | `SELFn` |
 | *sandwich* | `azal` |
-| *salad* | `azavul` |
-| *see* | `vahahal` |
-| *guard* | `agavol` |
-| *angry* | `anegel` |
-| *walk* | `vowogal` |
-| *cry* | `vagahul` |
-| *swim* | `vezewel` |
-| *climb* | `vagayal` |
+| *salad* | `azadal` |
+| *see* | `vanobol` |
+| *guard* | `ayoyul` |
+| *angry* | `onemul` |
+| *walk* | `voworel` |
+| *cry* | `vugamul` |
+| *swim* | `vezevol` |
+| *climb* | `vugavel` |
 | *therefore* | `xodum` |
-| *tent* | `ededul` |
-| *bucket* | `abegul` |
-| *cook* | `vugugal` |
-| *cookie* | `ugugol` |
-| *police* | `abazel` |
-| *duck* | `adagul` |
-| *window* | `ewedol` |
-| *fight* | `vavadal` |
-| *night* | `anadal` |
-| *hammer* | `ahavol` |
+| *tent* | `edehol` |
+| *bucket* | `ubowal` |
+| *cook* | `vugayol` |
+| *cookie* | `ogudol` |
+| *police* | `ebayel` |
+| *duck* | `udazal` |
+| *window* | `ewehol` |
+| *fight* | `vavavul` |
+| *night* | `anurol` |
+| *hammer* | `ahawol` |
 | *wood* | `uwul` |
-| *write* | `varadal` |
-| *knife* | `anaval` |
-| *slow* | `ezehom` |
-| *wind* | `ewedul` |
+| *write* | `vuruyel` |
+| *knife* | `onawul` |
+| *slow* | `azuzom` |
+| *wind* | `ewolol` |
 | *physical* | `oyul` |
-| *sit* | `vehahel` |
-| *west* | `ewezal` |
+| *sit* | `vehuhol` |
+| *west* | `owehel` |
 | *pay* | `vamol` |
-| *hour* | `agazem` |
-| *sleep* | `vezebal` |
+| *hour* | `alarum` |
+| *sleep* | `vuzevol` |
 | *CLUES* | `thunem` |
-| *sing* | `vezehel` |
+| *sing* | `vezeyol` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Ahaben climbs. It follows that Ahaben doesn't swim.*
+**1.** *Ehalon climbs. It follows that Ehalon doesn't swim.*
 
 ::: details Show answer
-`zahaben vagayal. xodul zahaben vezewel vul.`
+`zehalon vugavel. xodul zehalon vezevol vul.`
 
-z-Ahaben | v-climb . x-it-follows | z-Ahaben | [v-swim | v-not]
+z-Ehalon | v-climb . x-it-follows | z-Ehalon | [v-swim | v-not]
 
 **Rule:** [Sentence linkers](dependents.md#sentence-linkers)
 :::
 
-**2.** *Ahaben is not a police officer.*
+**2.** *Ehalon is not a police officer.*
 
 ::: details Show answer
-`zahaben gabazel gul.`
+`zehalon gebayel gul.`
 
-z-Ahaben | [g-police | g-not]
+z-Ehalon | [g-police | g-not]
 
 **Rule:** [Classification packaging](predication.md#classification-packaging)
 :::
 
-**3.** *Ahaben sees a hammer made of wood.*
+**3.** *Ehalon sees a hammer made of wood.*
 
 ::: details Show answer
-`zahaben dahavol guwum buwul vahahal.`
+`zehalon dahawol guwum buwul vanobol.`
 
-z-Ahaben | [d-hammer | [g-material | b-wood]] | v-see
+z-Ehalon | [d-hammer | [g-material | b-wood]] | v-see
 
-**Also correct:** `zahaben vahahal dahavol guwum buwul.`
+**Also correct:** `zehalon vanobol dahawol guwum buwul.`
 
 **Rule:** [Of relations](relations.md#of-relations)
 :::
 
-**4.** *Ahaben swims as slowly as Alahen.*
+**4.** *Ehalon swims as slowly as Olozun.*
 
 ::: details Show answer
-`zahaben zalahen zoel hezehom vezewel.`
+`zehalon zolozun zoel hazuzom vezevol.`
 
-[z-Ahaben | z-Alahen | z-equal-rank | h-slow] | v-swim
+[z-Ehalon | z-Olozun | z-equal-rank | h-slow] | v-swim
 
 **Rule:** [Manner scale](comparatives.md#manner-scale)
 :::
 
-**5.** *Alahen cries because of the wind.*
+**5.** *Olozun cries because of the wind.*
 
 ::: details Show answer
-`zalahen vagahul thavem bewedul.`
+`zolozun vugamul thavem bewolol.`
 
-z-Alahen | v-cry | [th-because | b-wind]
+z-Olozun | v-cry | [th-because | b-wind]
 
 **Rule:** [Because, iff, and only because](causation.md#only-because)
 :::
 
-**6.** *Alahen sits on Ahaben's left.*
+**6.** *Olozun sits on Ehalon's left.*
 
 ::: details Show answer
-`zalahen vehahel hewezathahaben.`
+`zolozun vehuhol howehethehalon.`
 
-z-Alahen | v-sit | h-west-th-Ahaben
+z-Olozun | v-sit | h-west-th-Ehalon
 
 **Rule:** [Viewpoint laterals](roles.md#viewpoint-laterals)
 :::
 
-**7.** *Azawan would rather cook than fight.*
+**7.** *Uzazon would rather cook than fight.*
 
 ::: details Show answer
-`zazawan vugugal vavadal vel.`
+`zuzazon vugayol vavavul vel.`
 
-z-Azawan | [v-cook | v-fight | v-rank/more]
+z-Uzazon | [v-cook | v-fight | v-rank/more]
 
 **Rule:** [Verb-phrase and clause forms](join-across-roles.md#vp-clause-forms)
 :::
 
-**8.** *Ahaben sleeps about two hours.*
+**8.** *Ehalon sleeps about two hours.*
 
 ::: details Show answer
-`zahaben bagazem gradum vezebal.`
+`zehalon balarum gradum vuzevol.`
 
-z-Ahaben | [b-hour | g-two.about] | v-sleep
+z-Ehalon | [b-hour | g-two.about] | v-sleep
 
 **Rule:** [Measure phrases](numbers-applied.md#measure-phrases)
 :::
 
-**9.** *I gather Ahaben thinks Alahen sings.*
+**9.** *I gather Ehalon thinks Olozun sings.*
 
 ::: details Show answer
-`zalahen thunemahaben vezehel.`
+`zolozun thunemehalon vezeyol.`
 
-z-Alahen | th-CLUES-Ahaben | v-sing
+z-Olozun | th-CLUES-Ehalon | v-sing
 
 **Rule:** [Whose view (holder)](knowing.md#holder)
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zahaben dededul vahahal. zahaben vahahar dabegul.`
+**1.** `zehalon dedehol vanobol. zehalon vanobor dubowal.`
 
 ::: details Show answer
-z-Ahaben | d-tent | v-see . z-Ahaben | v-←see | d-bucket
+z-Ehalon | d-tent | v-see . z-Ehalon | v-←see | d-bucket
 
-*Ahaben sees a tent. Ahaben sees a bucket too.*
+*Ehalon sees a tent. Ehalon sees a bucket too.*
 
 **Rule:** [How English approximates -r](pronouns.md#how-english-approximates-r)
 :::
 
-**2.** `zalahen zadagul em balaher zal vezewel.`
+**2.** `zolozun zudazal em bolozur zal vezevol.`
 
 ::: details Show answer
-[z-Alahen | [z-duck | [used-by | b-←Alahen]] | z-and] | v-swim
+[z-Olozun | [z-duck | [used-by | b-←Olozun]] | z-and] | v-swim
 
-*Alahen and their duck swim.*
+*Olozun and their duck swim.*
 
 **Rule:** [SHARED after the join](joins.md#shared-after-the-join)
 :::
 
-**3.** `zahaben glelel d[azawan] varadal.`
+**3.** `zehalon glelel d[uzazon] vuruyel.`
 
 ::: details Show answer
-z-Ahaben | [gl-MENTION | d-CITE[Azawan]] | v-write
+z-Ehalon | [gl-MENTION | d-CITE[Uzazon]] | v-write
 
-*Ahaben writes the word “azawan.”*
+*Ehalon writes the word “uzazon.”*
 
 **Rule:** [Mention](spans.md#mention)
 :::
 
-**4.** `zazawan danavalx grarel vahahal. zahaben dugugolx grarer vahahal.`
+**4.** `zuzazon donawulx grarel vanobol. zehalon dogudolx grarer vanobol.`
 
 ::: details Show answer
-z-Azawan | [d-knife-x | g-three] | v-see . z-Ahaben | [d-cookie-x | g-←three] | v-see
+z-Uzazon | [d-knife-x | g-three] | v-see . z-Ehalon | [d-cookie-x | g-←three] | v-see
 
-*Azawan sees three knives. Ahaben sees three cookies, the same number.*
+*Uzazon sees three knives. Ehalon sees three cookies, the same number.*
 
 **Rule:** [Number endings](numbers.md#number-endings)
 :::
 
-**5.** `SELFxen. alahexan.`
+**5.** `SELFxen. olozuxan.`
 
 ::: details Show answer
-SELF-minutes . Alahen-presence
+SELF-minutes . Olozun-presence
 
-*I have a few minutes.* *Alahen here. I have time; we can stay.* (the first greeting is with your own name)
+*I have a few minutes.* *Olozun here. I have time; we can stay.* (the first greeting is with your own name)
 
 The lesser bid sets the limit, so the talk lasts a few minutes.
 
@@ -497,96 +497,96 @@ The lesser bid sets the limit, so the talk lasts a few minutes.
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azawan sees Salad-Instead-of-Sandwich.* (a café name) `zazawan dazal on dazavul vahahal.` or `zazawan dazal ol dazavul vahahal.`
+**1.** *Uzazon sees Salad-Instead-of-Sandwich.* (a café name) `zuzazon dazal on dazadal vanobol.` or `zuzazon dazal ol dazadal vanobol.`
 
 ::: details Show answer
-`zazawan dazal on dazavul vahahal.`
+`zuzazon dazal on dazadal vanobol.`
 
-z-Azawan | NAME[d-sandwich | instead | d-salad] | v-see
+z-Uzazon | NAME[d-sandwich | instead | d-salad] | v-see
 
 **-n** on the hook names the whole phrase; **`ol`** would be *a salad instead of a sandwich*.
 
 **Rule:** [Titled phrases](word-endings.md#titled-phrases)
 :::
 
-**2.** *Alahen walks like an angry guard.* `zalahen humum bagavol ganegel vowogal.` or `zalahen ganegel humum bagavol vowogal.`
+**2.** *Olozun walks like an angry guard.* `zolozun humum bayoyul gonemul voworel.` or `zolozun gonemul humum bayoyul voworel.`
 
 ::: details Show answer
-`zalahen humum bagavol ganegel vowogal.`
+`zolozun humum bayoyul gonemul voworel.`
 
-z-Alahen | [h-like | [b-guard | g-angry]] | v-walk
+z-Olozun | [h-like | [b-guard | g-angry]] | v-walk
 
-After the `/b/` of a host, a plain adjective describes that extra noun; right after `zalahen`, *angry* describes Alahen.
+After the `/b/` of a host, a plain adjective describes that extra noun; right after `zolozun`, *angry* describes Olozun.
 
 **Rule:** [Complex chaining](clause.md#complex-chaining)
 :::
 
-**3.** *Ahaben, please don't cry.* `yahaben yum vagahul.` or `yahaben yul vagahul.`
+**3.** *Ehalon, please don't cry.* `yehalon yum vugamul.` or `yehalon yul vugamul.`
 
 ::: details Show answer
-`yahaben yum vagahul.`
+`yehalon yum vugamul.`
 
-y-Ahaben | y-soft-prohibition | v-cry
+y-Ehalon | y-soft-prohibition | v-cry
 
 **-m** asks softly; **`yul`** is a firm *don't*.
 
 **Rule:** [Speech act: firm and soft](speech-moves.md#speech-act)
 :::
 
-**4.** *Alahen and Ahaben each cook three cookies.* `zalahen zahaben zal vugugal dugugolx grarel.` or `zalahen zahaben zal vugugalx dugugolx grarel.`
+**4.** *Olozun and Ehalon each cook three cookies.* `zolozun zehalon zal vugayol dogudolx grarel.` or `zolozun zehalon zal vugayolx dogudolx grarel.`
 
 ::: details Show answer
-`zalahen zahaben zal vugugal dugugolx grarel.`
+`zolozun zehalon zal vugayol dogudolx grarel.`
 
-[z-Alahen | z-Ahaben | z-and] | v-cook | [d-cookie-x | g-three]
+[z-Olozun | z-Ehalon | z-and] | v-cook | [d-cookie-x | g-three]
 
-With a plain verb, each of them cooks three; **`vugugalx`** would make three in all, between them.
+With a plain verb, each of them cooks three; **`vugayolx`** would make three in all, between them.
 
 **Rule:** [Verbs (/v/): collective](plurality.md#verbs-v)
 :::
 
-**5.** *Alahen cried, or am I wrong?* `zalahen vagahul. yol yuel.` or `zalahen vagahul. yol yael.`
+**5.** *Olozun cried, or am I wrong?* `zolozun vugamul. yol yuel.` or `zolozun vugamul. yol yael.`
 
 ::: details Show answer
-`zalahen vagahul. yol yuel.`
+`zolozun vugamul. yol yuel.`
 
-z-Alahen | v-cry . y-question | y-no
+z-Olozun | v-cry . y-question | y-no
 
 The tag **`yol yuel`** invites a correction; **`yol yael`** leans toward agreement (*…, right?*).
 
 **Rule:** [Tags: asking for an answer](questions.md#tags)
 :::
 
-**6.** *Alahen climbs through the window.* `zalahen vagayal uol bewedol.` or `zalahen vagayal ual bewedol.`
+**6.** *Olozun climbs through the window.* `zolozun vugavel uol bewehol.` or `zolozun vugavel ual bewehol.`
 
 ::: details Show answer
-`zalahen vagayal uol bewedol.`
+`zolozun vugavel uol bewehol.`
 
-z-Alahen | v-climb | [through | b-window]
+z-Olozun | v-climb | [through | b-window]
 
 **`uol`** passes through the window; **`ual`** is *out of* it.
 
 **Rule:** [Extra noun: stacked vowels](hooks.md#extra-noun-intermediate)
 :::
 
-**7.** *Ahaben could try cooking, to see whether it's good for their health.* `zahaben vugugal thoyuther baxer.` or `zahaben vugugal thoyuthor baxer.`
+**7.** *Ehalon could try cooking, to see whether it's good for their health.* `zehalon vugayol thoyuther baxer.` or `zehalon vugayol thoyuthor baxer.`
 
 ::: details Show answer
-`zahaben vugugal thoyuther baxer.`
+`zehalon vugayol thoyuther baxer.`
 
-z-Ahaben | v-cook | [th-physical-ought-trial | b-←agent.self]
+z-Ehalon | v-cook | [th-physical-ought-trial | b-←agent.self]
 
-**`the`** is the *ought*, and **-r** makes it a move worth trying; `thoyuthor` would be a motive, not advice: Ahaben cooks, serving their health right away.
+**`the`** is the *ought*, and **-r** makes it a move worth trying; `thoyuthor` would be a motive, not advice: Ehalon cooks, serving their health right away.
 
 **Rule:** [Prescription](sakes.md#sake-force)
 :::
 
-**8.** *It looks like Alahen fought.* (strong clues) `zalahen thunel vavadal.` or `zalahen thunem vavadal.`
+**8.** *It looks like Olozun fought.* (strong clues) `zolozun thunel vavavul.` or `zolozun thunem vavavul.`
 
 ::: details Show answer
-`zalahen thunel vavadal.`
+`zolozun thunel vavavul.`
 
-z-Alahen | th-CLUES.strong | v-fight
+z-Olozun | th-CLUES.strong | v-fight
 
 **-l** says you could show the clues; **`thunem`** only describes them.
 
@@ -595,14 +595,14 @@ z-Alahen | th-CLUES.strong | v-fight
 
 #### What changes {#intermediate-what-changes}
 
-**1.** `zalahen vavadal hanadal hul.` / `zalahen vavadal hanadal hual.`
+**1.** `zolozun vavavul hanurol hul.` / `zolozun vavavul hanurol hual.`
 
 ::: details Show answer
-z-Alahen | v-fight | h-night | h-not-when
+z-Olozun | v-fight | h-night | h-not-when
 
-z-Alahen | v-fight | h-night | h-always-except
+z-Olozun | v-fight | h-night | h-always-except
 
-With **`hul`**, Alahen fights, but not at night, and other times are left open. With **`hual`**, Alahen fights at every time except at night.
+With **`hul`**, Olozun fights, but not at night, and other times are left open. With **`hual`**, Olozun fights at every time except at night.
 
 **Rule:** [More occasions](restrictors.md#more-occasions)
 :::
@@ -631,150 +631,150 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 | English | Agazan |
 |---------|--------|
-| *Azawan* | `azawan` |
-| *Alahen* | `alahen` |
-| *Ahaben* | `ahaben` |
-| *baguette* | `ubogel` |
-| *school* | `uzugul` |
-| *umbrella* | `amebel` |
-| *tomato* | `adedol` |
-| *watermelon* | `owodal` |
-| *quiet* | `agawal` |
-| *station* | `ezedel` |
-| *cook* | `vugugal` |
-| *sit* | `vehahel` |
+| *Uzazon* | `uzazon` |
+| *Olozun* | `olozun` |
+| *Ehalon* | `ehalon` |
+| *baguette* | `uyodol` |
+| *school* | `uzuhol` |
+| *umbrella* | `omebol` |
+| *tomato* | `ududol` |
+| *watermelon* | `owodol` |
+| *quiet* | `ogawol` |
+| *station* | `uyehol` |
+| *cook* | `vugayol` |
+| *sit* | `vehuhol` |
 | *as-of.ledger* | `huhum` |
 | *REPORTED* | `thewam` |
 | *MEMORY* | `thevom` |
-| *hour* | `agazem` |
-| *walk* | `vowogal` |
-| *write* | `varadal` |
-| *sleepy* | `ezebul` |
-| *sleep* | `vezebal` |
-| *see* | `vahahal` |
+| *hour* | `alarum` |
+| *walk* | `voworel` |
+| *write* | `vuruyel` |
+| *sleepy* | `ozumol` |
+| *sleep* | `vuzevol` |
+| *see* | `vanobol` |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
-**1.** *It was Alahen, not someone else, who cooked a tomato.*
+**1.** *It was Olozun, not someone else, who cooked a tomato.*
 
 ::: details Show answer
-`&zalahen dadedol vugugal.`
+`&zolozun dududol vugayol.`
 
-&z-Alahen | d-tomato | v-cook
+&z-Olozun | d-tomato | v-cook
 
 **Rule:** [English emphasis and clefts](clause.md#english-emphasis)
 :::
 
-**2.** *As of 3 May, Azawan is sitting in a school.*
+**2.** *As of 3 May, Uzazon is sitting in a school.*
 
 ::: details Show answer
-`zazawan huhum b_#3,5 vehahel al buzugul.`
+`zuzazon huhum b_#3,5 vehuhol al buzuhol.`
 
-z-Azawan | [h-as-of.ledger | b-_3,5] | v-sit | [in | b-school]
+z-Uzazon | [h-as-of.ledger | b-_3,5] | v-sit | [in | b-school]
 
 **Rule:** [As-of (whose now)](relations.md#as-of)
 :::
 
-**3.** *Ahaben sees a station that I remember as quiet.*
+**3.** *Ehalon sees a station that I remember as quiet.*
 
 ::: details Show answer
-`zahaben dezedel wevom gagawal vahahal.`
+`zehalon duyehol wevom gogawol vanobol.`
 
-z-Ahaben | [d-station | [w-MEMORY | g-quiet]] | v-see
+z-Ehalon | [d-station | [w-MEMORY | g-quiet]] | v-see
 
 **Rule:** [Mood on one adjective](knowing.md#mood-on-adjective)
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
 
-**1.** `zahaben dezedel vowogaloel.`
+**1.** `zehalon duyehol voworeloel.`
 
 ::: details Show answer
-z-Ahaben | d-station | v-head-for
+z-Ehalon | d-station | v-head-for
 
-*Ahaben heads for the station.*
+*Ehalon heads for the station.*
 
 **Rule:** [Hook compounds](hooks.md#hook-compounds)
 :::
 
-**2.** `zahaben d[amebel#] varadal.`
+**2.** `zehalon d[omebol#] vuruyel.`
 
 ::: details Show answer
-z-Ahaben | d-CITE[umbrella]# | v-write
+z-Ehalon | d-CITE[umbrella]# | v-write
 
-*Ahaben wrote “umbrella…”*
+*Ehalon wrote “umbrella…”*
 
 **Rule:** [Editorial close and close-all](spans.md#close-forms-complete-editorial-close-all)
 :::
 
-**3.** `zazawan gagawalrabal.`
+**3.** `zuzazon gogawolrabal.`
 
 ::: details Show answer
-z-Azawan | g-quiet-l-infinity
+z-Uzazon | g-quiet-l-infinity
 
-*Azawan is the essence of quiet.*
+*Uzazon is the essence of quiet.*
 
 **Rule:** [Numeric derivation](numeric-derivation.md#numeric-derivation)
 :::
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Alahen cooks “Tomato and Watermelon.”* (the familiar dish) `zalahen dadedol dowodal dan vugugal.` or `zalahen dadedol dowodal dal vugugal.`
+**1.** *Olozun cooks “Tomato and Watermelon.”* (the familiar dish) `zolozun dududol dowodol dan vugayol.` or `zolozun dududol dowodol dal vugayol.`
 
 ::: details Show answer
-`zalahen dadedol dowodal dan vugugal.`
+`zolozun dududol dowodol dan vugayol.`
 
-z-Alahen | NAME[d-tomato | d-watermelon | d-and] | v-cook
+z-Olozun | NAME[d-tomato | d-watermelon | d-and] | v-cook
 
 **-n** on the join names the list as one set phrase; **`dal`** is just *a tomato and a watermelon*.
 
 **Rule:** [Named phrase](joins.md#named-list)
 :::
 
-**2.** *Alahen is sleepier than Ahaben said.* `zalahen thewam bahaben zel gezebul.` or `zalahen zel gezebul thewam bahaben.`
+**2.** *Olozun is sleepier than Ehalon said.* `zolozun thewam behalon zel gozumol.` or `zolozun zel gozumol thewam behalon.`
 
 ::: details Show answer
-`zalahen thewam bahaben zel gezebul.`
+`zolozun thewam behalon zel gozumol.`
 
-[z-Alahen | [th-REPORTED | b-Ahaben] | z-rank/more | g-sleepy]
+[z-Olozun | [th-REPORTED | b-Ehalon] | z-rank/more | g-sleepy]
 
-Before the rank join, REPORTED is the bar: what Ahaben said sets the level. After the fence it is a stance on the whole superlative: *Alahen is the sleepiest, Ahaben says*.
+Before the rank join, REPORTED is the bar: what Ehalon said sets the level. After the fence it is a stance on the whole superlative: *Olozun is the sleepiest, Ehalon says*.
 
 **Rule:** [Every bar](comparatives.md#stance-bars)
 :::
 
-**3.** *Azawan sees a huge but finite number of baguettes.* `zazawan dubogelx grabam vahahal.` or `zazawan dubogelx grabal vahahal.`
+**3.** *Uzazon sees a huge but finite number of baguettes.* `zuzazon duyodolx grabam vanobol.` or `zuzazon duyodolx grabal vanobol.`
 
 ::: details Show answer
-`zazawan dubogelx grabam vahahal.`
+`zuzazon duyodolx grabam vanobol.`
 
-z-Azawan | [d-baguette-x | g-plus-infinity.about] | v-see
+z-Uzazon | [d-baguette-x | g-plus-infinity.about] | v-see
 
 Open **-m** keeps the amount finite, just very large; **`grabal`** is infinitely many.
 
 **Rule:** [Digitless exponents](numbers.md#digitless-exponents)
 :::
 
-**4.** *Azawan, whom I remember as sleepy, is sleeping.* `zazawan wevom gezebul vezebal.` or `zazawan gezebul vezebal thevom.`
+**4.** *Uzazon, whom I remember as sleepy, is sleeping.* `zuzazon wevom gozumol vuzevol.` or `zuzazon gozumol vuzevol thevom.`
 
 ::: details Show answer
-`zazawan wevom gezebul vezebal.`
+`zuzazon wevom gozumol vuzevol.`
 
-[z-Azawan | [w-MEMORY | g-sleepy]] | v-sleep
+[z-Uzazon | [w-MEMORY | g-sleepy]] | v-sleep
 
-On `/w/` right before the adjective, MEMORY covers only *sleepy*; **`thevom`** on `/th/` covers the whole sentence: *I remember sleepy Azawan sleeping*.
+On `/w/` right before the adjective, MEMORY covers only *sleepy*; **`thevom`** on `/th/` covers the whole sentence: *I remember sleepy Uzazon sleeping*.
 
 **Rule:** [Mood on one adjective](knowing.md#mood-on-adjective)
 :::
 
 #### Fix it {#advanced-fix-it}
 
-**1.** *I saw Ahaben sleep two hours ago.* <!-- lint: error -->`zahaben thevom bagazem gradul vezebal.`
+**1.** *I saw Ehalon sleep two hours ago.* <!-- lint: error -->`zehalon thevom balarum gradul vuzevol.`
 
 ::: details Show answer
-`zahaben thevom bagazem grudul vezebal.`
+`zehalon thevom balarum grudul vuzevol.`
 
-z-Ahaben | [th-MEMORY | [b-hour | g-minus-two]] | v-sleep
+z-Ehalon | [th-MEMORY | [b-hour | g-minus-two]] | v-sleep
 
 The offset is signed and counts from now, so *ago* needs **`ru`** (minus); MEMORY with a later offset is not a sentence.
 
@@ -783,14 +783,14 @@ The offset is signed and counts from now, so *ago* needs **`ru`** (minus); MEMOR
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zazawan dezedel vowogalul.` / `zazawan dezedel vowogalum.`
+**1.** `zuzazon duyehol voworelul.` / `zuzazon duyehol voworelum.`
 
 ::: details Show answer
-z-Azawan | d-station | v-leave
+z-Uzazon | d-station | v-leave
 
-z-Azawan | d-station | v-recede
+z-Uzazon | d-station | v-recede
 
-With **`ul`** fused, Azawan leaves the station. With **`um`**, Azawan only recedes from it, moving away without leaving it behind.
+With **`ul`** fused, Uzazon leaves the station. With **`um`**, Uzazon only recedes from it, moving away without leaving it behind.
 
 **Rule:** [Hook compounds](hooks.md#hook-compounds)
 :::

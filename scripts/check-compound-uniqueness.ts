@@ -1,6 +1,6 @@
 /**
  * Validate data/lexicon-compounds.csv against published roots and uniqueness rules,
- * and data/lexicon-tails.csv against the hook-compound and listed-compound checks (src/root-tails.ts).
+ * and the published roots against their tails and the hook-compound and holder checks (src/root-tails.ts).
  *
  * Run: npm run check-compounds
  *      npm run check-compounds -- --json
@@ -14,7 +14,7 @@ import {
 } from "../src/lexicon-compounds.js";
 import { parseOverlayCsv, parsePublishedCsv } from "../src/lexicon-search.js";
 import { dataPath } from "../src/repo-paths.js";
-import { holderHostForms, parseTailsCsv, validateTails } from "../src/root-tails.js";
+import { holderHostForms, validateRootTails } from "../src/root-tails.js";
 
 const publishedPath = dataPath("lexicon-published.csv");
 const compoundsPath = dataPath("lexicon-compounds.csv");
@@ -49,14 +49,12 @@ function main(): void {
   const compounds = parseCompoundCsv(readFileSync(compoundsPath, "utf8"));
   const errors: CompoundValidationError[] = [
     ...validateCompoundRows(compounds, publishedRoots, publishedSenses),
-    ...validateTails(
-      parseTailsCsv(readFileSync(dataPath("lexicon-tails.csv"), "utf8")),
+    ...validateRootTails(
       published,
-      compounds,
       holderHostForms(parseOverlayCsv(readFileSync(dataPath("lexicon-overlays.csv"), "utf8"))),
     ).map((e) => ({
       stem: e.key,
-      reason: `lexicon-tails.csv: ${e.reason}`,
+      reason: `lexicon-published.csv: ${e.reason}`,
     })),
   ];
 

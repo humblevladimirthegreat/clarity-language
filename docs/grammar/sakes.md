@@ -59,7 +59,7 @@ Each sake answers a different question about what pays off. Ask the question, th
 
 To say that a belonging of yours **serves** a sake (pays it off), write that thing as a noun, then a `/ɡ/` word: sake root, mid-word **`th`**, **`a`**, then an ending. That adjective describes the noun. The ending says the payoff's **time horizon**: whether the payoff lasts or arrives right away. With **-m**, you leave the time horizon unstated:
 
-> `zahazal gulotham.`
+> `zawuhol gulotham.`
 >
 > z-house | g-competence-met-any-term
 >
@@ -142,22 +142,22 @@ A sake word ends in **-l**, **-m**, or **-r**, from that stance’s table. It ne
 
 On `/th/`, the sake word says how the event itself stands toward the sake:
 
-> `zazawan vezebel thulotham.`
+> `zuzazon vezeyel thulotham.`
 >
-> z-Azawan | v-tell | th-competence-met-any-term
+> z-Uzazon | v-tell | th-competence-met-any-term
 >
-> "Azawan talks, and that boosts my confidence."
+> "Uzazon talks, and that boosts my confidence."
 
 Without mid-word **`th`**, the root keeps its everyday sense: `gahul` is *ballot-like*, and `hozol` is the adverb from *strawberry*.
 
 ### Personal possession {#personal-possession}
 <a id="stimulus"></a>
 
-A sake word on `/ɡ/` also says the noun is **yours**, with no separate word for *my*. That shortcut makes thanks and costs cheap to say about the things you already call *my X*. To say who owns something without naming a sake, use `gegabem` plus `/b/` ([joins](joins.md#scope-fence-p-join)). Someone else's thing uses that pair too, never a sake word alone on `/ɡ/`.
+A sake word on `/ɡ/` also says the noun is **yours**, with no separate word for *my*. That shortcut makes thanks and costs cheap to say about the things you already call *my X*. To say who owns something without naming a sake, use `gagogom` plus `/b/` ([joins](joins.md#scope-fence-p-join)). Someone else's thing uses that pair too, never a sake word alone on `/ɡ/`.
 
 When the noun is **not** yours (weather, a gathering, another person’s church), follow it with the adjective **`gobum`**, *as stimulus*: the thing you react to, not something you keep. Put the same met or unmet word you would use on `/ɡ/` on `/w/` immediately before **`gobum`**, as extra detail on it. (cue: ☝️ *point*: you point at the thing; you do not hold it)
 
-> `zabezam wahuthur gobum.`
+> `zubawam wahuthur gobum.`
 >
 > z-gathering | [w-autonomy-unmet-passing | g-stimulus]
 >
@@ -165,7 +165,7 @@ When the noun is **not** yours (weather, a gathering, another person’s church)
 
 The same `/w/` sake word can sit before any adjective. Then it is about **that property**: the tea's heat is what serves pleasure, not the tea as a whole. **`gobum`** is the case where the property is the noun itself, as the thing you react to.
 
-> `zedehel wozotham gahadul.`
+> `zedadal wozotham guhamol.`
 >
 > z-tea | [w-pleasure-met-any-term | g-hot]
 >
@@ -187,9 +187,9 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agazan | Cue |
 |---------|--------|-----|
-| *tent* | `ededul` | ⛺ |
-| *wind* | `ewedul` | 🌬️ |
-| *calendar* | `agadal` | 📅 |
+| *tent* | `edehol` | ⛺ |
+| *wind* | `ewolol` | 🌬️ |
+| *calendar* | `agarel` | 📅 |
 | *autonomy* | `ahul` | 🗳️ from *ballot*: voting is choosing for yourself |
 | *competence* | `ulol` | 🧰 from *tool*: the kit that gets things working |
 | *understanding* | `adol` | 💡 from *lightbulb*: the light goes on when it makes sense |
@@ -203,23 +203,23 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agazan |
 |---------|--------|
-| *Azawan* | `azawan` |
-| *Ahaben* | `ahaben` |
-| *knife* | `anaval` |
-| *bucket* | `abegul` |
-| *cookie* | `ugugol` |
-| *rain* | `erehel` |
-| *thunderstorm* | `avodel` |
-| *night* | `anadal` |
-| *cook* | `vugugal` |
-| *sing* | `vezehel` |
+| *Uzazon* | `uzazon` |
+| *Ehalon* | `ehalon` |
+| *knife* | `onawul` |
+| *bucket* | `ubowal` |
+| *cookie* | `ogudol` |
+| *rain* | `urelal` |
+| *thunderstorm* | `ovelul` |
+| *night* | `anurol` |
+| *cook* | `vugayol` |
+| *sing* | `vezeyol` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
 **1.** *My tent serves the physical sake in the long term.*
 
 ::: details Show answer
-`zededul goyuthal.`
+`zedehol goyuthal.`
 
 z-tent | g-physical-met-lasting
 :::
@@ -227,7 +227,7 @@ z-tent | g-physical-met-lasting
 **2.** *My knife is good for me.*
 
 ::: details Show answer
-`zanaval gegatham.`
+`zonawul gegatham.`
 
 z-knife | g-sake-met-any-term
 :::
@@ -235,7 +235,7 @@ z-knife | g-sake-met-any-term
 **3.** *The wind detracts from the physical sake right now.* (passing)
 
 ::: details Show answer
-`zewedul woyuthur gobum.`
+`zewolol woyuthur gobum.`
 
 z-wind | [w-physical-unmet-passing | g-stimulus]
 :::
@@ -243,30 +243,30 @@ z-wind | [w-physical-unmet-passing | g-stimulus]
 **4.** *The thunderstorm detracts from pleasure.* (modifiable)
 
 ::: details Show answer
-`zavodel wozothum gobum.`
+`zovelul wozothum gobum.`
 
 z-thunderstorm | [w-pleasure-unmet-modifiable | g-stimulus]
 :::
 
-**5.** *Azawan cooks, and I enjoy it right now.*
+**5.** *Uzazon cooks, and I enjoy it right now.*
 
 ::: details Show answer
-`zazawan vugugal thozothar.`
+`zuzazon vugayol thozothar.`
 
-z-Azawan | v-cook | th-pleasure-met-immediate
+z-Uzazon | v-cook | th-pleasure-met-immediate
 :::
 
 **6.** *My calendar detracts from autonomy.* (modifiable)
 
 ::: details Show answer
-`zagadal gahuthum.`
+`zagarel gahuthum.`
 
 z-calendar | g-autonomy-unmet-modifiable
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zabegul gebethal.`
+**1.** `zubowal gebethal.`
 
 ::: details Show answer
 z-bucket | g-beneficence-met-lasting
@@ -274,7 +274,7 @@ z-bucket | g-beneficence-met-lasting
 *My bucket serves beneficence in the long term.*
 :::
 
-**2.** `zerehel woyuthum gobum.`
+**2.** `zurelal woyuthum gobum.`
 
 ::: details Show answer
 z-rain | [w-physical-unmet-modifiable | g-stimulus]
@@ -282,7 +282,7 @@ z-rain | [w-physical-unmet-modifiable | g-stimulus]
 *The rain detracts from the physical sake.* (modifiable)
 :::
 
-**3.** `zugugol gozothar.`
+**3.** `zogudol gozothar.`
 
 ::: details Show answer
 z-cookie | g-pleasure-met-immediate
@@ -290,15 +290,15 @@ z-cookie | g-pleasure-met-immediate
 *My cookie is a pleasure right now.*
 :::
 
-**4.** `zazawan vezehel thulothum.`
+**4.** `zuzazon vezeyol thulothum.`
 
 ::: details Show answer
-z-Azawan | v-sing | th-competence-unmet-modifiable
+z-Uzazon | v-sing | th-competence-unmet-modifiable
 
-*Azawan sings, and that knocks my confidence.* (modifiable)
+*Uzazon sings, and that knocks my confidence.* (modifiable)
 :::
 
-**5.** `zededul gozothur goyuthal.`
+**5.** `zedehol gozothur goyuthal.`
 
 ::: details Show answer
 [z-tent | g-pleasure-unmet-passing | g-physical-met-lasting]
@@ -306,7 +306,7 @@ z-Azawan | v-sing | th-competence-unmet-modifiable
 *My tent is unpleasant for now, but it serves the physical sake in the long term.*
 :::
 
-**6.** `zanadal wadotham gobum.`
+**6.** `zanurol wadotham gobum.`
 
 ::: details Show answer
 z-night | [w-understanding-met-any-term | g-stimulus]
@@ -316,32 +316,32 @@ z-night | [w-understanding-met-any-term | g-stimulus]
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *My knife detracts from competence.* (modifiable) `zanaval gulothum.` or `zanaval gulotham.`
+**1.** *My knife detracts from competence.* (modifiable) `zonawul gulothum.` or `zonawul gulotham.`
 
 ::: details Show answer
-`zanaval gulothum.`
+`zonawul gulothum.`
 
 z-knife | g-competence-unmet-modifiable
 
 **`thu`** detracts from the sake; **`tha`** serves it.
 :::
 
-**2.** *Ahaben sings, and I enjoy it.* `zahaben vezehel thozotham.` or `zahaben gozotham vezehel.`
+**2.** *Ehalon sings, and I enjoy it.* `zehalon vezeyol thozotham.` or `zehalon gozotham vezeyol.`
 
 ::: details Show answer
-`zahaben vezehel thozotham.`
+`zehalon vezeyol thozotham.`
 
-z-Ahaben | v-sing | th-pleasure-met-any-term
+z-Ehalon | v-sing | th-pleasure-met-any-term
 
-The singing is an event, so its sake word goes on `/th/`; on `/ɡ/` after `zahaben` it would describe Ahaben.
+The singing is an event, so its sake word goes on `/th/`; on `/ɡ/` after `zehalon` it would describe Ehalon.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *The rain serves pleasure.* <!-- lint: error -->`zerehel gozotham.`
+**1.** *The rain serves pleasure.* <!-- lint: error -->`zurelal gozotham.`
 
 ::: details Show answer
-`zerehel wozotham gobum.`
+`zurelal wozotham gobum.`
 
 z-rain | [w-pleasure-met-any-term | g-stimulus]
 
@@ -354,9 +354,9 @@ A sake word alone on `/ɡ/` says the rain is yours; for a thing you do not keep,
 
 English emotion words (*anxious*, *resentful*, *proud*) often do **judgment or explanation** work: one label packs in what is at stake and why it feels that way. In Agazan you name the pieces instead, on **one word**: the [sake stance](#sakes) on the situation, a **locus** (where the feeling sits or what it points at), and a **motion ending** (how the feeling moves). The sake word keeps its stance vowel and its ending letter, then adds the locus (the vowels of a [hook](hooks.md#extra-noun)) and the motion ending. You can then say what you make of a situation without leaning on a single emotion word.
 
-Put that word where any sake word goes: on `/ɡ/` after a belonging, on `/w/` immediately before [stimulus](#stimulus) **`gobum`** when the noun is not yours, or on `/th/` by itself when the feeling has [no object](#feeling-no-object). For the bare noun *emotion*, with no judgment to explain, use the compound `zaholohahal` (the water of the heart).
+Put that word where any sake word goes: on `/ɡ/` after a belonging, on `/w/` immediately before [stimulus](#stimulus) **`gobum`** when the noun is not yours, or on `/th/` by itself when the feeling has [no object](#feeling-no-object). For the bare noun *emotion*, with no judgment to explain, use the compound `zaholohelal` (the water of the heart).
 
-> `zezebel wulothuraor gobum.`
+> `zezeyel wulothuraor gobum.`
 >
 > z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]
 >
@@ -388,11 +388,11 @@ A direction names the **dominant** pull when feelings mix; use two feeling words
 
 Name the landmark with a `/b/` word right after the feeling (after **`gobum`** when the feeling is on `/w/`): the target of a direction, or the situation for CIRCUM. INTERNAL and UNPLACED take no `/b/`: they have no landmark. A direction with no `/b/` points at the stimulus noun when there is one, otherwise at someone unnamed.
 
-> `zumel wanathumol gobum balahen.`
+> `zumel wanathumol gobum bolozun.`
 >
-> z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]
+> z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Olozun]
 >
-> "I resent Alahen over the memo, holding it in."
+> "I resent Olozun over the memo, holding it in."
 
 The motion ending says how the feeling moves, on the [settled-to-passing scale](#settled-to-passing): **-l** is the most settled, **-m** is the ordinary case, and **-r** the most passing, lasting only right now. (cue: a feeling is water: still, a current, or a wave)
 
@@ -406,44 +406,44 @@ Motion is how the feeling moves, not how strong it is. Strong but steady anger i
 
 Say how **strong** the feeling is with a [degree word](clause.md#degree-w) on `/w/` right before the feeling word. Before a `/ɡ/` feeling it grades that adjective as usual. Before a `/w/` feeling, it grades the feeling, not the stimulus. With no degree word, strength is unstated.
 
-> `zebeyom wohahal gulothamar.`
+> `zebewom wohelal gulothamar.`
 >
 > z-draft | [w-ocean | g-competence-met-any-term-INTERNAL-SURGING]
 >
 > "I'm overwhelmingly proud of my draft."
 
-> `zumel wamazam wanathumom gobum balahen.`
+> `zumel wumazom wanathumom gobum bolozun.`
 >
-> z-memo | [[w-small | w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | b-Alahen]
+> z-memo | [[w-small | w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | b-Olozun]
 >
-> "I feel a mild, steady irritation at Alahen over the memo."
+> "I feel a mild, steady irritation at Olozun over the memo."
 
 The locus plus the motion ending is the **emotion tail**. It goes on met **`tha`**, motive **`tho`**, and unmet **`thu`** words. Prescription **`the`** is advice, not a feeling, so it takes no tail. A word with no tail (`wulothur`) is an ordinary sake word.
 
 <!-- cheat-sheet: why-allowed -->
 | Agazan | English |
 |---------|---------|
-| `zezebel wulothuraor gobum` | *anxious about the dialogue* (competence at stake, temporary; hangs over the room; surging) |
-| `zozazom wanathumual gobum` | *given up over the division* (unmet relatedness; out of fight; still) |
-| `zebeyom gulothamar` | *proud of the draft* (met competence; held inside; surging) |
-| `zumel wanathumem gobum bazawan` | *upset for Azawan about the memo* (unmet relatedness; on Azawan's behalf; flowing) |
-| `zezebel wanathumum gobum balahen` | *avoiding Alahen over the dialogue* (unmet relatedness; moving off from Alahen; flowing) |
-| `zezebel wanathumaem gobum balahen` | *placating Alahen about the dialogue* (unmet relatedness; appeasing Alahen; flowing) |
-| `zumel wanathumoem gobum bazawan` | *upset about the memo and turning to Azawan for comfort* (unmet relatedness; seeking Azawan; flowing) |
+| `zezeyel wulothuraor gobum` | *anxious about the dialogue* (competence at stake, temporary; hangs over the room; surging) |
+| `zozowum wanathumual gobum` | *given up over the division* (unmet relatedness; out of fight; still) |
+| `zebewom gulothamar` | *proud of the draft* (met competence; held inside; surging) |
+| `zumel wanathumem gobum buzazon` | *upset for Uzazon about the memo* (unmet relatedness; on Uzazon's behalf; flowing) |
+| `zezeyel wanathumum gobum bolozun` | *avoiding Olozun over the dialogue* (unmet relatedness; moving off from Olozun; flowing) |
+| `zezeyel wanathumaem gobum bolozun` | *placating Olozun about the dialogue* (unmet relatedness; appeasing Olozun; flowing) |
+| `zumel wanathumoem gobum buzazon` | *upset about the memo and turning to Uzazon for comfort* (unmet relatedness; seeking Uzazon; flowing) |
 | `zumel wanathumuer gobum` | *objecting to the memo* (unmet relatedness; pushing against the memo; surging) |
-| `zezebel wamethumal gobum` | *the dialogue feels pointless* (unmet purpose; held inside; still) |
-| `zebeyom gebethamam` | *glad my draft helped* (met beneficence; held inside; flowing) |
-| `zezebel wamazam wulothuruom gobum` | *a little uneasy about the dialogue, and I can't say why* (competence at stake, temporary; slightly; unplaced; flowing) |
-| `zezebel wulothumuer gezehom` | *the dialogue is frustratingly slow* (unmet competence on the slowness; pushing against it; surging) |
+| `zezeyel wamethumal gobum` | *the dialogue feels pointless* (unmet purpose; held inside; still) |
+| `zebewom gebethamam` | *glad my draft helped* (met beneficence; held inside; flowing) |
+| `zezeyel wumazom wulothuruom gobum` | *a little uneasy about the dialogue, and I can't say why* (competence at stake, temporary; slightly; unplaced; flowing) |
+| `zezeyel wulothumuer gazuzom` | *the dialogue is frustratingly slow* (unmet competence on the slowness; pushing against it; surging) |
 
-Raw feeling (contacting a sensation without judgment) may go unlabeled. To name a feeling without explaining it, its lexicon root works as an ordinary [property](predication.md) word: `zamun ganegel` (*I am angry*). Use the full compose when an emotion word would have done judgment work.
+Raw feeling (contacting a sensation without judgment) may go unlabeled. To name a feeling without explaining it, its lexicon root works as an ordinary [property](predication.md) word: `zamun gonemul` (*I am angry*). Use the full compose when an emotion word would have done judgment work.
 
 **Compare with:** *could be* uses [MAY](knowing.md#may) (`thovum`). *Because of* is a causal claim with the because pole. The stimulus says what the feeling is **about**; a direction `/b/` says what it is **aimed at**; the because pole says what **caused** it.
 
 ### Prescription (`the`): ought this act for this sake
 <a id="sake-force"></a>
 
-When English puts *should* / *ought to* on **doing** something for a named sake (*Ahaben ought to sing; it's good for their health*), put a `/th/` word on the clause: sake root, mid-word **`th`**, **`e`**, then an ending. The clause's verb names the act that ought to count toward the sake. The sentence then says the act *ought* to happen; it does not report that the act is already happening.
+When English puts *should* / *ought to* on **doing** something for a named sake (*Ehalon ought to sing; it's good for their health*), put a `/th/` word on the clause: sake root, mid-word **`th`**, **`e`**, then an ending. The clause's verb names the act that ought to count toward the sake. The sentence then says the act *ought* to happen; it does not report that the act is already happening.
 
 The ending says why you think the move is welcome. Use **-l** when the person invited this move, explicitly or through a clear standing invitation. Use **-m** for an unsolicited offer meant to serve the sake. Use **-r** for a trial: the move is worth trying to see whether it serves the sake, not a settled recommendation. These endings describe why the move is offered and what it aims at, not whether it succeeds. How firmly you put the act on the listener is a separate choice, made by the speech-act word on `/y/` (**`yel`** / **`yem`**, **`yal`** / **`yam`**). If none of the three reasons applies, drop **`the`**.
 
@@ -462,44 +462,44 @@ The ending says why you think the move is welcome. Use **-l** when the person in
 
 A sake word with no `/b/` is about **your** sake, so advice for the other person's own good names them in `/b/` right after the sake word. In the same sentence, that is the [themself](pronouns.md#themself) pointer **`baxer`**. The `/b/` says whose stake the act serves, not why they would do it.
 
-> `zazawan vezebel thanathem baxer.`
+> `zuzazon vezeyel thanathem baxer.`
 >
-> z-Azawan | v-tell | [th-relatedness-ought-offered | b-←agent.self]
+> z-Uzazon | v-tell | [th-relatedness-ought-offered | b-←agent.self]
 >
-> "Azawan ought to talk; it would help them feel connected." (unasked advice)
+> "Uzazon ought to talk; it would help them feel connected." (unasked advice)
 
-> `zahaben vezehel thoyuthel baxer.`
+> `zehalon vezeyol thoyuthel baxer.`
 >
-> z-Ahaben | v-sing | [th-physical-ought-invited | b-←agent.self]
+> z-Ehalon | v-sing | [th-physical-ought-invited | b-←agent.self]
 >
-> "Ahaben ought to sing; it's good for their health." (Ahaben asked for advice)
+> "Ehalon ought to sing; it's good for their health." (Ehalon asked for advice)
 
-> `zalahen vabayal thanather baxer.`
+> `zolozun vabayol thanather baxer.`
 >
-> z-Alahen | v-bow | [th-relatedness-ought-trial | b-←agent.self]
+> z-Olozun | v-bow | [th-relatedness-ought-trial | b-←agent.self]
 >
-> "Alahen could try bowing, to see whether it helps them feel connected."
+> "Olozun could try bowing, to see whether it helps them feel connected."
 
 A move meant to **prevent** harm to the sake is a *so that … not* dependent ([so that](dependents.md#so-that)): **`hogom`** + **`burl`**, then the outcome to keep off.
 
-> `zalahen vabayal thanathem baxer hogom burl zazawan vedabal.`
+> `zolozun vabayol thanathem baxer hogom burl zuzazon veyorul.`
 >
-> z-Alahen | v-bow | [th-relatedness-ought-offered | b-←agent.self] | [h-so-that | b-lest-clause] | z-Azawan | v-departure
+> z-Olozun | v-bow | [th-relatedness-ought-offered | b-←agent.self] | [h-so-that | b-lest-clause] | z-Uzazon | v-departure
 >
-> "Alahen ought to bow to stay connected, so that Azawan does not leave."
+> "Olozun ought to bow to stay connected, so that Uzazon does not leave."
 
 ### Motive (`tho`): time horizon
 <a id="sake-preference"></a>
 
 English *doing this for …* and *for the sake of …* name a **motive**: why the action is happening, as a description, not a *should*. Write `/th/` on the clause with the sake root, mid-word **`th`**, **`o`**, then an ending. That ending is the **time horizon**, on the same settled-to-passing scale as [met](#time-horizon-endings-on-met): whether the act serves the sake over time or right away. If you do not know, use **-m**. To say this is the usual reason, add **`hual`** after the motive word (**`…thom`** plus **`hual`**).
 
-> `zamun vezebel thanathom.`
+> `zamun vezeyel thanathom.`
 >
 > z-speaker | v-tell | th-relatedness-motive-any-term
 >
 > "I talk to feel connected."
 
-The reason is yours. On someone else's act, a motive word still names what the act serves **for you**: `zazawan vezebel thanathom` is *Azawan talks, and to me it is about feeling connected*. It does not say why Azawan talks; their reasons are in their mind, and Agazan has no way to say a reason belongs to whoever is acting.
+The reason is yours. On someone else's act, a motive word still names what the act serves **for you**: `zuzazon vezeyel thanathom` is *Uzazon talks, and to me it is about feeling connected*. It does not say why Uzazon talks; their reasons are in their mind, and Agazan has no way to say a reason belongs to whoever is acting.
 
 **Not the same job as:** prescription **`the`**, which says the act *ought* to serve this sake. **`tho`** describes why the act is happening: *doing it for this sake*.
 
@@ -507,9 +507,9 @@ On `/ɡ/`, the same stance gives **your** noun’s purpose (*my gift for related
 
 **For other English *for*, use:**
 
-- an intended **event** (*walks so that Alahen sits*): [so that](dependents.md#so-that) (**`hogom`**), not a sake
+- an intended **event** (*walks so that Olozun sits*): [so that](dependents.md#so-that) (**`hogom`**), not a sake
 - the other side of a swap (*a book for a hammer*): [exchange](relations.md#exchange) (`hehem`)
-- acting for someone (*tells on behalf of Alahen*): [proxy](relations.md#proxy) (`hadem`)
+- acting for someone (*tells on behalf of Olozun*): [proxy](relations.md#proxy) (`hadem`)
 
 A reason held **to keep a cost off** is a *so that … not* dependent ([so that](dependents.md#so-that), **`hogom burl`**), as with prescription.
 
@@ -524,7 +524,7 @@ Neither end is better; a good day needs both, and doing something for a payoff r
 
 A motive word takes the [emotion tail](#emotion-compose) too. The feeling is then a pull toward the payoff, as English *curious* or *eager* is:
 
-> `zezebel wadothomom gobum.`
+> `zezeyel wadothomom gobum.`
 >
 > z-speech | [w-understanding-motive-any-term-AIMED-FLOWING | g-stimulus]
 >
@@ -552,7 +552,7 @@ Beginner already attached `/ɡ/` after a noun and `/th/` on the clause for met a
 | `g…thu…` after a noun | criticism: **your** noun detracts from the sake | *my book (detracts from competence)* (`gulothu…`) |
 | `g…tho…` after a noun | **your** noun’s purpose is this sake | *my gift for relatedness* (`ganatho…`) |
 | `/w/` sake + `gobum` | the same stances on a noun that is **not** yours | *the gathering (detracts from autonomy)* (`wahuthu… gobum`) |
-| `/w/` sake + another adjective | the stance on that one property | *pleasantly hot* (`wozotham gahadul`) |
+| `/w/` sake + another adjective | the stance on that one property | *pleasantly hot* (`wozotham guhamol`) |
 | `gl-` + sake word | the same adjective before the **belonging** | `glanathal zebel` |
 | `th…tha…` on the clause | the event serves the sake | *tells: competence is met* (`thulotha…`) |
 | `th…the…` on the clause | prescription: the act ought to serve the sake | *ought … for this sake* (`thanathe…`); ending = [invited / offered / trial](#sake-force) |
@@ -565,7 +565,7 @@ For several sakes, write several `/ɡ/` or `/th/` words (`gulothal ganathal`), o
 
 A `/w/` word before a sake word on `/ɡ/` grades that adjective. A `/w/` sake word immediately before **`gobum`** is the sake itself.
 
-> `zamun vezebel thulothal thanathom.`
+> `zamun vezeyel thulothal thanathom.`
 >
 > z-speaker | v-tell | th-competence-met-lasting | th-relatedness-motive-any-term
 >
@@ -575,47 +575,47 @@ A `/w/` word before a sake word on `/ɡ/` grades that adjective. A `/w/` sake wo
 
 A sake word with no `/b/` is about **your** sake. To say it is someone else's, put that person in `/b/` right after the sake word. This works on every stance and every placement: met, unmet and motive on a noun, and met, unmet, prescription and motive on the clause.
 
-This holds on someone else's act too. `zazawan vezebel thanatham` is *Azawan talks, and that helps me feel connected*: what the act serves is your stake, as you see it. A `/b/` names whose stake the act serves, not whose reason it is.
+This holds on someone else's act too. `zuzazon vezeyel thanatham` is *Uzazon talks, and that helps me feel connected*: what the act serves is your stake, as you see it. A `/b/` names whose stake the act serves, not whose reason it is.
 
-> `zazawan vezebel thanathom balahen.`
+> `zuzazon vezeyel thanathom bolozun.`
 >
-> z-Azawan | v-tell | [th-relatedness-motive-any-term | b-Alahen]
+> z-Uzazon | v-tell | [th-relatedness-motive-any-term | b-Olozun]
 >
-> "Azawan talks for Alahen's sake." (Alahen's relatedness)
+> "Uzazon talks for Olozun's sake." (Olozun's relatedness)
 
-> `zalahen vabayal thanathem bazawan.`
+> `zolozun vabayol thanathem buzazon.`
 >
-> z-Alahen | v-bow | [th-relatedness-ought-offered | b-Azawan]
+> z-Olozun | v-bow | [th-relatedness-ought-offered | b-Uzazon]
 >
-> "Alahen ought to bow, for Azawan's relatedness." (unasked advice)
+> "Olozun ought to bow, for Uzazon's relatedness." (unasked advice)
 
-> `zebel ganathal balahen.`
+> `zebel ganathal bolozun.`
 >
-> z-present | [g-relatedness-met-lasting | b-Alahen]
+> z-present | [g-relatedness-met-lasting | b-Olozun]
 >
-> "My gift serves Alahen's relatedness in the long term."
+> "My gift serves Olozun's relatedness in the long term."
 
-> `zabezam wanathul gobum balahen.`
+> `zubawam wanathul gobum bolozun.`
 >
-> z-gathering | [[w-relatedness-unmet-irreversible | g-stimulus] | b-Alahen]
+> z-gathering | [[w-relatedness-unmet-irreversible | g-stimulus] | b-Olozun]
 >
-> "The gathering does lasting harm to Alahen's relatedness."
+> "The gathering does lasting harm to Olozun's relatedness."
 
-The `/b/` names whose **stake** it is, not who **owns** the noun. On `/ɡ/` the noun is still yours: `zebel ganathal balahen` is *my gift, good for Alahen*. Someone else's thing is `gegabem` plus `/b/`, or **`gobum`**.
+The `/b/` names whose **stake** it is, not who **owns** the noun. On `/ɡ/` the noun is still yours: `zebel ganathal bolozun` is *my gift, good for Olozun*. Someone else's thing is `gagogom` plus `/b/`, or **`gobum`**.
 
 A feeling word with a direction tail already uses its `/b/` for the landmark ([emotion compose](#emotion-compose)), so it cannot also name whose stake.
 
-**Compare with:** the *for* hook (`el balahen`) names who the act is for without naming which sake.
+**Compare with:** the *for* hook (`el bolozun`) names who the act is for without naming which sake.
 
 ### Feeling with no object {#feeling-no-object}
 
 On the clause, a feeling word is about the clause's event, so English *moved that …* or *glad that …* puts the feeling on the clause it names:
 
-> `zalahen vowogal thanathamar.`
+> `zolozun voworel thanathamar.`
 >
-> z-Alahen | v-walk | th-relatedness-met-any-term-INTERNAL-SURGING
+> z-Olozun | v-walk | th-relatedness-met-any-term-INTERNAL-SURGING
 >
-> "I'm moved that Alahen walks."
+> "I'm moved that Olozun walks."
 
 With no event at all, a feeling word on `/th/` is a whole sentence about **you**: how you feel right now, with nothing as its object.
 
@@ -627,13 +627,13 @@ With no event at all, a feeling word on `/th/` is a whole sentence about **you**
 
 A lone feeling can still name what caused it. The cause is not the object: the feeling is not *about* the rain.
 
-> `thulothuruor thavem berehel.`
+> `thulothuruor thavem burelal.`
 >
 > th-competence-unmet-passing-UNPLACED-SURGING | [th-because | b-rain]
 >
 > "I'm anxious, and the rain caused it."
 
-**Compare with:** a lone noun before the feeling is an [existence](predication.md#existence) clause, so the noun's being there is the stimulus: `zalahen thulothuruor.` is *anxious that Alahen is here*, not *Alahen is anxious*.
+**Compare with:** a lone noun before the feeling is an [existence](predication.md#existence) clause, so the noun's being there is the stimulus: `zolozun thulothuruor.` is *anxious that Olozun is here*, not *Olozun is anxious*.
 
 ### Thanks and sorry {#thanks-sorry}
 
@@ -681,57 +681,57 @@ Add an emotion tail to say how the thanks moves you:
 | `…thum behon` | the harm can be softened (default) | *I'm sorry* |
 | `…thur behon` | the harm is passing | *my bad* |
 
-The `/b/` can name anyone: `thanathum balahen.` owns up to a harm to Alahen, even when you are telling someone else.
+The `/b/` can name anyone: `thanathum bolozun.` owns up to a harm to Olozun, even when you are telling someone else.
 
-**Compare with:** a met word with a `/b/` person (`thanatham balahen.`) says the act met **Alahen's** sake: *Alahen appreciated it*, not your thanks.
+**Compare with:** a met word with a `/b/` person (`thanatham bolozun.`) says the act met **Olozun's** sake: *Olozun appreciated it*, not your thanks.
 
 ### Hopefully and other attitudes {#speaker-attitude}
 
-English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, feel about the whole claim. In Agazan, put the content root for that feeling on `/th/` with **-m**. It is always the speaker's attitude, never the subject's. For the subject's manner (*Azawan walks hopefully*), use `/h/` (`hevegem`).
+English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, feel about the whole claim. In Agazan, put the content root for that feeling on `/th/` with **-m**. It is always the speaker's attitude, never the subject's. For the subject's manner (*Uzazon walks hopefully*), use `/h/` (`hoyuyom`).
 
 | Agazan | Use | English | Same root as |
 |--------|-----|---------|--------------|
-| **`thevegem`** | you want it, and it is still open | *hopefully* | `evegel` *crossed-fingers* |
-| **`theledem`** | it went well by chance | *luckily* | `eledel` *ladybug* |
-| **`thewedam`** | it concerns you | *worryingly* | `ewedal` *worried* |
+| **`thoyuyom`** | you want it, and it is still open | *hopefully* | `oyuyol` *crossed-fingers* |
+| **`tholezom`** | it went well by chance | *luckily* | `olezol` *ladybug* |
+| **`thewomum`** | it concerns you | *worryingly* | `ewomul` *worried* |
 
-> `zazawan thevegem vowogal.`
+> `zuzazon thoyuyom voworel.`
 >
-> z-Azawan | th-hope | v-walk
+> z-Uzazon | th-hope | v-walk
 >
-> "Hopefully Azawan is walking."
+> "Hopefully Uzazon is walking."
 
 Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To say *hopefully … will*, add a real [evidence channel](knowing.md#forecast) as well. Hope says how you feel about the claim; the channel says what backs it.
 
-**Compare with:** a hunch with no evidence is INTUITION ([evidentiality](knowing.md#evidentiality)). **`thevegem`** says you want the outcome; INTUITION says your gut expects it.
+**Compare with:** a hunch with no evidence is INTUITION ([evidentiality](knowing.md#evidentiality)). **`thoyuyom`** says you want the outcome; INTUITION says your gut expects it.
 
 ### Permission (`thegol` / `thegom` / `thegor`) {#permission}
 
 English *may* / *is allowed to* says a restriction is lifted. Put **`thegol`**, **`thegom`**, or **`thegor`** on the clause: stance **`th`** on the root **`ego`** (🟢 *green circle*). The ending says **where the permission comes from**: a rule, a person, or nobody. Use **-l** when a rule, policy, or formal right allows it. Use **-m** when a person grants it; that person is the speaker unless a `/b/` right after the permission word names someone else. A person who grants something does it openly, so that `/b/` is a party to the permission. Use **-r** when no one granted it but no one objected either. If you do not know, use **-m**.
 
-> `zazawan vowogal thegom.`
+> `zuzazon voworel thegom.`
 >
-> z-Azawan | v-walk | th-PERMIT-granted
+> z-Uzazon | v-walk | th-PERMIT-granted
 >
-> "Azawan may walk; I'm allowing it."
+> "Uzazon may walk; I'm allowing it."
 
-> `zazawan vowogal thegom balahen.`
+> `zuzazon voworel thegom bolozun.`
 >
-> z-Azawan | v-walk | [th-PERMIT-granted | b-Alahen]
+> z-Uzazon | v-walk | [th-PERMIT-granted | b-Olozun]
 >
-> "Alahen lets Azawan walk."
+> "Olozun lets Uzazon walk."
 
-> `zahaben vehahel thegol.`
+> `zehalon vehuhol thegol.`
 >
-> z-Ahaben | v-sit | th-PERMIT-allowed
+> z-Ehalon | v-sit | th-PERMIT-allowed
 >
-> "The rules allow Ahaben to sit."
+> "The rules allow Ehalon to sit."
 
-> `zalahen vezebal thegor.`
+> `zolozun vuzevol thegor.`
 >
-> z-Alahen | v-sleep | th-PERMIT-tolerated
+> z-Olozun | v-sleep | th-PERMIT-tolerated
 >
-> "Alahen sleeps, and no one is stopping it."
+> "Olozun sleeps, and no one is stopping it."
 
 The negatives use the root **`ede`** (⛔ *no entry*) with the same endings.
 
@@ -745,7 +745,7 @@ The negatives use the root **`ede`** (⛔ *no entry*) with the same endings.
 | **`thedem`** | a person forbids it | *may not* / *I won't let you* | **-m** ≈ mouth: someone said no |
 | **`theder`** | frowned on: no one forbade it, but it is not welcome | *people won't like it* | **-r** ≈ read the room: nobody said no, but it's not welcome |
 
-To **ask** for permission, put the clause under [ask](questions.md#question): `yom zamun vehahel thegom.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
+To **ask** for permission, put the clause under [ask](questions.md#question): `yom zamun vehuhol thegom.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
 
 **Compare with:** [prescription](#sake-force) **`the`** says the act *ought* to serve a sake; permission only says the act is *allowed*. [Ability](intention.md#incapability) says someone *can* do it; permission says whether they *may*.
 
@@ -753,23 +753,23 @@ To **ask** for permission, put the clause under [ask](questions.md#question): `y
 
 English *must* / *has to* / *is supposed to* puts a demand on an act without naming a sake. Put **`thumel`**, **`thumem`**, or **`thumer`** on the clause: stance **`th`** on the root **`ume`** (📝 *memo*). The endings follow permission. Use **-l** when a rule, policy, or law requires it. Use **-m** when a person demands it; that person is the speaker unless a `/b/` right after the requirement word names someone else. Use **-r** when nothing is written and no one demands it, but people expect it. If you do not know, use **-m**.
 
-> `zazawan vowogal thumel.`
+> `zuzazon voworel thumel.`
 >
-> z-Azawan | v-walk | th-REQUIRE-rule
+> z-Uzazon | v-walk | th-REQUIRE-rule
 >
-> "The rules require Azawan to walk."
+> "The rules require Uzazon to walk."
 
-> `zahaben vehahel thumem balahen.`
+> `zehalon vehuhol thumem bolozun.`
 >
-> z-Ahaben | v-sit | [th-REQUIRE-demanded | b-Alahen]
+> z-Ehalon | v-sit | [th-REQUIRE-demanded | b-Olozun]
 >
-> "Alahen makes Ahaben sit."
+> "Olozun makes Ehalon sit."
 
-> `zalahen vezebal thumer.`
+> `zolozun vuzevol thumer.`
 >
-> z-Alahen | v-sleep | th-REQUIRE-expected
+> z-Olozun | v-sleep | th-REQUIRE-expected
 >
-> "Alahen is supposed to sleep."
+> "Olozun is supposed to sleep."
 
 <!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Cue |
@@ -786,39 +786,39 @@ Consent is permission from **the one the act happens to**: their body, their thi
 
 The ending says **how binding the yes is**, with the same cues as [permission](#permission): **-l** ≈ law, **-m** ≈ mouth, **-r** ≈ read the room. Use **-l** for a binding agreement: they signed on in advance, and withdrawing has terms. Use **-m** when they said yes; they can take it back at any time. Use **-r** when no one said yes and it is taken as given. If you know they said yes but not how binding it is, use **-m**.
 
-> `zazawan vezebel huxegom bahaben.`
+> `zuzazon vezeyel huxegom behalon.`
 >
-> z-Azawan | v-tell | [h-CONSENT-given | b-Ahaben]
+> z-Uzazon | v-tell | [h-CONSENT-given | b-Ehalon]
 >
-> "Azawan tells, and Ahaben said yes to it."
+> "Uzazon tells, and Ehalon said yes to it."
 
-> `zazawan vezebel huxegol bahaben.`
+> `zuzazon vezeyel huxegol behalon.`
 >
-> z-Azawan | v-tell | [h-CONSENT-contract | b-Ahaben]
+> z-Uzazon | v-tell | [h-CONSENT-contract | b-Ehalon]
 >
-> "Azawan tells, as Ahaben agreed to in advance."
+> "Uzazon tells, as Ehalon agreed to in advance."
 
-> `zazawan vezebel huxegor bahaben balahen bal.`
+> `zuzazon vezeyel huxegor behalon bolozun bal.`
 >
-> z-Azawan | v-tell | [h-CONSENT-assumed | [b-Ahaben | b-Alahen | b-and]]
+> z-Uzazon | v-tell | [h-CONSENT-assumed | [b-Ehalon | b-Olozun | b-and]]
 >
-> "Azawan tells, assuming Ahaben and Alahen are OK with it."
+> "Uzazon tells, assuming Ehalon and Olozun are OK with it."
 
-> `zalahen vezebal huxegom.`
+> `zolozun vuzevol huxegom.`
 >
-> z-Alahen | v-sleep | h-CONSENT-given
+> z-Olozun | v-sleep | h-CONSENT-given
 >
-> "Alahen lets themself sleep."
+> "Olozun lets themself sleep."
 
-**-r** is allowed but visibly weaker. Choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*. On yourself, **-r** is half-hearted: `zamun vehahel huxegor.` is *I suppose I'm OK with sitting*. **-l** on yourself is a vow: `zamun vehahel huxegol.` is *I've committed myself to sitting*.
+**-r** is allowed but visibly weaker. Choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*. On yourself, **-r** is half-hearted: `zamun vehuhol huxegor.` is *I suppose I'm OK with sitting*. **-l** on yourself is a vow: `zamun vehuhol huxegol.` is *I've committed myself to sitting*.
 
-**Promise:** a vow said to someone is a promise. The listener is the one you promise by default: `zamun vowogal huxegol.`, said to someone, is *I promise (you) to walk*. To name a different person as the one you promise, add the *for* hook ([extra noun](hooks.md#extra-noun)).
+**Promise:** a vow said to someone is a promise. The listener is the one you promise by default: `zamun voworel huxegol.`, said to someone, is *I promise (you) to walk*. To name a different person as the one you promise, add the *for* hook ([extra noun](hooks.md#extra-noun)).
 
-> `zamun vowogal huxegol el bahaben.`
+> `zamun voworel huxegol el behalon.`
 >
-> z-speaker | v-walk | h-CONSENT-contract | [for | b-Ahaben]
+> z-speaker | v-walk | h-CONSENT-contract | [for | b-Ehalon]
 >
-> "I promise Ahaben I'll walk."
+> "I promise Ehalon I'll walk."
 
 The weaker endings stay weaker on purpose: **-m** is *I'll do it* (you can still back out), and **-r** cannot pass for a promise.
 
@@ -834,55 +834,55 @@ The negatives **`huxedel`** / **`huxedem`** / **`huxeder`** use the same endings
 | **`huxedem`** | the affected said no | *they refused* | **-m** ≈ mouth: they said no |
 | **`huxeder`** | consent presumed absent | *they probably don't want it* / *I won't let myself* | **-r** ≈ read the room: they probably don't want it |
 
-To check in, ask: `yom zazawan vezebel huxegom.` (*Are you still OK with this?*).
+To check in, ask: `yom zuzazon vezeyel huxegom.` (*Are you still OK with this?*).
 
-**Compare with:** permission **`thegom`** can come from anyone with the standing to grant it: `zazawan vezebel thegom balahen.` means Alahen allowed it, which is not the same as the listener agreeing. `zamun vehahel thegom.` is *I'm allowed to sit* (someone let me); `zamun vehahel huxegom.` is *I let myself sit*.
+**Compare with:** permission **`thegom`** can come from anyone with the standing to grant it: `zuzazon vezeyel thegom bolozun.` means Olozun allowed it, which is not the same as the listener agreeing. `zamun vehuhol thegom.` is *I'm allowed to sit* (someone let me); `zamun vehuhol huxegom.` is *I let myself sit*.
 
 ### Contrary to a stance (`uem`) {#contrary-to-stance}
 
-English *against the rules*, *against Alahen's will*, and *contrary to the plan* say that the event happens even though a rule, a person, or a plan says otherwise. Put the hook **`uem`** *contrary to* right before a `/th/` stance word or an [intention adverb](clause.md#intention-adverbs). That word then says what the event goes against, and it no longer applies to the claim. `zazawan vowogal thedel.` says Azawan is not allowed to walk; `zazawan vowogal uem thedel.` says Azawan walks anyway. (cue: **ue** ≈ undo aimed at; **-m** the opposing frame, which the stance spells out)
+English *against the rules*, *against Olozun's will*, and *contrary to the plan* say that the event happens even though a rule, a person, or a plan says otherwise. Put the hook **`uem`** *contrary to* right before a `/th/` stance word or an [intention adverb](clause.md#intention-adverbs). That word then says what the event goes against, and it no longer applies to the claim. `zuzazon voworel thedel.` says Uzazon is not allowed to walk; `zuzazon voworel uem thedel.` says Uzazon walks anyway. (cue: **ue** ≈ undo aimed at; **-m** the opposing frame, which the stance spells out)
 
-> `zazawan vowogal uem thedel.`
+> `zuzazon voworel uem thedel.`
 >
-> z-Azawan | v-walk | [contrary-to | th-FORBID-disallowed]
+> z-Uzazon | v-walk | [contrary-to | th-FORBID-disallowed]
 >
-> "Azawan walks against the rules."
+> "Uzazon walks against the rules."
 
 The stance keeps its endings and its hosted `/b/`. On a refusal, the `/b/` is the person who said no, so the pair is English *against their will*:
 
-> `zazawan vezebel uem huxedem balahen.`
+> `zuzazon vezeyel uem huxedem bolozun.`
 >
-> z-Azawan | v-tell | [contrary-to | [h-CONSENT-refused | b-Alahen]]
+> z-Uzazon | v-tell | [contrary-to | [h-CONSENT-refused | b-Olozun]]
 >
-> "Azawan tells, against Alahen's will." (Alahen said no)
+> "Uzazon tells, against Olozun's will." (Olozun said no)
 
-> `zahaben vehahel uem thumem balahen.`
+> `zehalon vehuhol uem thumem bolozun.`
 >
-> z-Ahaben | v-sit | [contrary-to | [th-REQUIRE-demanded | b-Alahen]]
+> z-Ehalon | v-sit | [contrary-to | [th-REQUIRE-demanded | b-Olozun]]
 >
-> "Ahaben sits, against Alahen's orders."
+> "Ehalon sits, against Olozun's orders."
 
 A [plan](intention.md#plan) after **`uem`** is your own, like any stance. A [speaker attitude](#speaker-attitude) after **`uem`** is what you were hoping for.
 
-> `zazawan vowogal uem thamam.`
+> `zuzazon voworel uem thamam.`
 >
-> z-Azawan | v-walk | [contrary-to | th-plan-itinerary]
+> z-Uzazon | v-walk | [contrary-to | th-plan-itinerary]
 >
-> "Azawan walks, contrary to my plan."
+> "Uzazon walks, contrary to my plan."
 
-> `zazawan vowogal uem thevegem.`
+> `zuzazon voworel uem thoyuyom.`
 >
-> z-Azawan | v-walk | [contrary-to | th-hope]
+> z-Uzazon | v-walk | [contrary-to | th-hope]
 >
-> "Azawan walks, against my hopes."
+> "Uzazon walks, against my hopes."
 
 Only the stance right after **`uem`** is what the event goes against. A stance anywhere else in the clause still applies to the claim:
 
-> `zazawan vowogal uem thedel thegom.`
+> `zuzazon voworel uem thedel thegom.`
 >
-> z-Azawan | v-walk | [contrary-to | th-FORBID-disallowed] | th-PERMIT-granted
+> z-Uzazon | v-walk | [contrary-to | th-FORBID-disallowed] | th-PERMIT-granted
 >
-> "Azawan walks against the rules, and I'm allowing it."
+> "Uzazon walks against the rules, and I'm allowing it."
 
 The word after **`uem`** has to say something the event can go against: a ban, a requirement, a refusal, a plan, a decision, a want, or what you hoped.
 
@@ -892,29 +892,29 @@ The word after **`uem`** has to say something the event can go against: a ban, a
 | requirement **`thumel`** / **`thumem`** / **`thumer`** | *contrary to regulations* / *against my orders* / *contrary to custom* |
 | refusal **`huxedel`** / **`huxedem`** / **`huxeder`** | *against their will* (they opted out / they said no / they probably don't want it) |
 | plan **`thamar`** / **`thamam`** / **`thamal`** | *contrary to my plan* |
-| speaker attitude, such as **`thevegem`** | *against my hopes* |
+| speaker attitude, such as **`thoyuyom`** | *against my hopes* |
 
-Permission given (**`thegom`**) only lifts a restriction, so nothing can go against it. Consent given (**`huxegol`**, **`huxegom`**, **`huxegor`**) cannot follow **`uem`** either: a listener who misses **`uem`** would hear that the person agreed. A yes that was taken back is a no, so use the refusal: `zazawan vezebel uem huxedem bahaben.` To say you broke a promise, give the promise its own sentence after **`hezom barl`**: `zamun vezebal hezom barl zamun vowogal huxegol.` (*I sleep, although I promised to walk.*) Sake words cannot follow **`uem`** either: to say an act goes against someone's interest, put an [unmet](#sake-changeability) sake word on the clause (`zazawan vowogal thegathum balahen.` *Azawan's walking harms Alahen's interests*).
+Permission given (**`thegom`**) only lifts a restriction, so nothing can go against it. Consent given (**`huxegol`**, **`huxegom`**, **`huxegor`**) cannot follow **`uem`** either: a listener who misses **`uem`** would hear that the person agreed. A yes that was taken back is a no, so use the refusal: `zuzazon vezeyel uem huxedem behalon.` To say you broke a promise, give the promise its own sentence after **`hezom barl`**: `zamun vuzevol hezom barl zamun voworel huxegol.` (*I sleep, although I promised to walk.*) Sake words cannot follow **`uem`** either: to say an act goes against someone's interest, put an [unmet](#sake-changeability) sake word on the clause (`zuzazon voworel thegathum bolozun.` *Uzazon's walking harms Olozun's interests*).
 
-**Compare with:** *despite the rain* is **`uem`** or **`hezom`** with a noun in `/b/` (`zazawan vowogal uem berehel.`). *Although Alahen said no* as a full sentence is **`hezom barl`** plus that sentence. The sentence after **`barl`** needs an event or a thing, so a stance word alone cannot fill it; use **`uem`** with the stance instead.
+**Compare with:** *despite the rain* is **`uem`** or **`hezom`** with a noun in `/b/` (`zuzazon voworel uem burelal.`). *Although Olozun said no* as a full sentence is **`hezom barl`** plus that sentence. The sentence after **`barl`** needs an event or a thing, so a stance word alone cannot fill it; use **`uem`** with the stance instead.
 
 ### Enough and too (sake bars) {#sake-bars}
 
 English *enough* and *too much* compare an amount with **what a need requires**. Write a met sake word on `/th/` as the [bar](comparatives.md#bars) right before a rank join: it stands for what that sake needs, and the rank join compares the amount with it. The equal-rank join **`zoel`** is *enough*. Rank **`zel`** is *too much*, and **`zuel`** is *not enough*. Use the unspecified sake **`ega`** when you do not name which sake.
 
-> `zedehel thegatham zoel gral.`
+> `zedadal thegatham zoel gral.`
 >
 > [z-tea | th-sake-met-any-term | z-equal-rank | g-amount]
 >
 > "There is enough tea."
 
-> `zedehel thegatham zel gral.`
+> `zedadal thegatham zel gral.`
 >
 > [z-tea | th-sake-met-any-term | z-rank/more | g-amount]
 >
 > "There is too much tea."
 
-> `zedehel thegatham zuel gral.`
+> `zedadal thegatham zuel gral.`
 >
 > [z-tea | th-sake-met-any-term | z-rank/less | g-amount]
 >
@@ -922,7 +922,7 @@ English *enough* and *too much* compare an amount with **what a need requires**.
 
 The bar keeps its [time-horizon ending](#time-horizon-endings-on-met), which now says **how long the payoff has to last**: **`thegathal`** is *enough to last*, and **`thegathar`** is *enough for now*.
 
-> `zedehel thegathar zoel gral.`
+> `zedadal thegathar zoel gral.`
 >
 > [z-tea | th-sake-met-immediate | z-equal-rank | g-amount]
 >
@@ -930,25 +930,25 @@ The bar keeps its [time-horizon ending](#time-horizon-endings-on-met), which now
 
 Name a sake to say which need sets the limit. With a quality as the scale, the same pattern gives *too ADJ* and *ADJ enough*. To say **whose** stake it is, put that person in `/b/` right after the bar.
 
-> `zedehel thoyutham zel gahadul.`
+> `zedadal thoyutham zel guhamol.`
 >
 > [z-tea | th-physical-met-any-term | z-rank/more | g-hot]
 >
 > "The tea is too hot to be safe."
 
-> `zedehel thoyutham balahen zel gahadul.`
+> `zedadal thoyutham bolozun zel guhamol.`
 >
-> [z-tea | [th-physical-met-any-term | b-Alahen] | z-rank/more | g-hot]
+> [z-tea | [th-physical-met-any-term | b-Olozun] | z-rank/more | g-hot]
 >
-> "The tea is too hot for Alahen's health."
+> "The tea is too hot for Olozun's health."
 
 On the [time scale](comparatives.md#time-scale), a sake bar is *too late* and *too early*:
 
-> `zazawan thegatham zuel bral vevahal.`
+> `zuzazon thegatham zuel bral vevurol.`
 >
-> [z-Azawan | th-sake-met-any-term | z-rank/less | b-later] | v-arrival
+> [z-Uzazon | th-sake-met-any-term | z-rank/less | b-later] | v-arrival
 >
-> "Azawan arrives too early."
+> "Uzazon arrives too early."
 
 | Agazan | Use | English |
 |--------|-----|---------|
@@ -956,9 +956,9 @@ On the [time scale](comparatives.md#time-scale), a sake bar is *too late* and *t
 | met sake bar + **`zel`** | past what the sake needs | *too much* / *too ADJ* / *too late* |
 | met sake bar + **`zuel`** | short of what the sake needs | *not enough* / *too early* |
 | bar ending **-l** / **-m** / **-r** | how long the payoff has to last | *enough to last* / *enough* / *enough for now* |
-| `/b/` right after the bar | whose stake | *too hot for Alahen* |
+| `/b/` right after the bar | whose stake | *too hot for Olozun* |
 
-**Compare with:** the same met word after the fence is about the whole claim: `zedehel zel gahadul thoyutham` is *the tea is the hottest, and that serves my health*.
+**Compare with:** the same met word after the fence is about the whole claim: `zedadal zel guhamol thoyutham` is *the tea is the hottest, and that serves my health*.
 
 ### Practice {#intermediate-practice}
 
@@ -970,9 +970,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agazan | Cue |
 |---------|--------|-----|
-| *pray* | `vebevol` | 🙏 |
-| *kneel* | `venehal` | 🧎 |
-| *candle* | `agogal` | 🕯️ |
+| *pray* | `vebeyal` | 🙏 |
+| *kneel* | `venevol` | 🧎 |
+| *candle* | `agawol` | 🕯️ |
 | *relatedness* | `anal` | 🪢 from *knot*: ties people together |
 | *purpose* | `amel` | 🧭 from *compass*: a heading worth following |
 | *permission* | `thegom` | 🟢 from *green*: go ahead |
@@ -983,43 +983,43 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agazan |
 |---------|--------|
-| *Azawan* | `azawan` |
-| *Alahen* | `alahen` |
-| *Ahaben* | `ahaben` |
+| *Uzazon* | `uzazon` |
+| *Olozun* | `olozun` |
+| *Ehalon* | `ehalon` |
 | *speaker* | `amun` |
 | *listener* | `ehon` |
 | *competence* | `ulol` |
 | *physical* | `oyul` |
 | *stimulus* | `gobum` |
-| *bell* | `ebehul` |
-| *heavy* | `aragam` |
-| *sit* | `vehahel` |
-| *sleep* | `vezebal` |
+| *bell* | `eberol` |
+| *heavy* | `aralom` |
+| *sit* | `vehuhol` |
+| *sleep* | `vuzevol` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan ought to pray; it would help them feel connected.* (unasked advice)
+**1.** *Uzazon ought to pray; it would help them feel connected.* (unasked advice)
 
 ::: details Show answer
-`zazawan vebevol thanathem baxer.`
+`zuzazon vebeyal thanathem baxer.`
 
-z-Azawan | v-pray | [th-relatedness-ought-offered | b-←agent.self]
+z-Uzazon | v-pray | [th-relatedness-ought-offered | b-←agent.self]
 :::
 
 **2.** *I kneel for a quick sense of purpose.*
 
 ::: details Show answer
-`zamun venehal thamethor.`
+`zamun venevol thamethor.`
 
 z-speaker | v-kneel | th-purpose-motive-immediate
 :::
 
-**3.** *Ahaben prays for Alahen's relatedness in the long term.*
+**3.** *Ehalon prays for Olozun's relatedness in the long term.*
 
 ::: details Show answer
-`zahaben vebevol thanathol balahen.`
+`zehalon vebeyal thanathol bolozun.`
 
-z-Ahaben | v-pray | [th-relatedness-motive-lasting | b-Alahen]
+z-Ehalon | v-pray | [th-relatedness-motive-lasting | b-Olozun]
 :::
 
 **4.** *Thank you, that meant a lot to me.*
@@ -1030,25 +1030,25 @@ z-Ahaben | v-pray | [th-relatedness-motive-lasting | b-Alahen]
 th-relatedness-met-any-term
 :::
 
-**5.** *Ahaben lets Azawan kneel.*
+**5.** *Ehalon lets Uzazon kneel.*
 
 ::: details Show answer
-`zazawan venehal thegom bahaben.`
+`zuzazon venevol thegom behalon.`
 
-z-Azawan | v-kneel | [th-PERMIT-granted | b-Ahaben]
+z-Uzazon | v-kneel | [th-PERMIT-granted | b-Ehalon]
 :::
 
 **6.** *The candle is too heavy to be safe.*
 
 ::: details Show answer
-`zagogal thoyutham zel garagam.`
+`zagawol thoyutham zel garalom.`
 
 [z-candle | th-physical-met-any-term | z-rank/more | g-heavy]
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zebehul wanathumor gobum.`
+**1.** `zeberol wanathumor gobum.`
 
 ::: details Show answer
 z-bell | [w-relatedness-unmet-modifiable-AIMED-SURGING | g-stimulus]
@@ -1072,58 +1072,58 @@ th-competence-unmet-passing-UNPLACED-SURGING
 *I'm sorry.* (that hurt your sense of connection)
 :::
 
-**4.** `zahaben vehahel thumer.`
+**4.** `zehalon vehuhol thumer.`
 
 ::: details Show answer
-z-Ahaben | v-sit | th-REQUIRE-expected
+z-Ehalon | v-sit | th-REQUIRE-expected
 
-*Ahaben is supposed to sit.*
+*Ehalon is supposed to sit.*
 :::
 
-**5.** `zazawan vebevol huxegor balahen.`
+**5.** `zuzazon vebeyal huxegor bolozun.`
 
 ::: details Show answer
-z-Azawan | v-pray | [h-CONSENT-assumed | b-Alahen]
+z-Uzazon | v-pray | [h-CONSENT-assumed | b-Olozun]
 
-*Azawan prays, assuming Alahen is OK with it.*
+*Uzazon prays, assuming Olozun is OK with it.*
 :::
 
-**6.** `zalahen vezebal uem thedel.`
+**6.** `zolozun vuzevol uem thedel.`
 
 ::: details Show answer
-z-Alahen | v-sleep | [contrary-to | th-FORBID-disallowed]
+z-Olozun | v-sleep | [contrary-to | th-FORBID-disallowed]
 
-*Alahen sleeps against the rules.*
+*Olozun sleeps against the rules.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *I kneel to feel connected.* (my reason for kneeling) `zamun venehal thanathom.` or `zamun venehal thanathem.`
+**1.** *I kneel to feel connected.* (my reason for kneeling) `zamun venevol thanathom.` or `zamun venevol thanathem.`
 
 ::: details Show answer
-`zamun venehal thanathom.`
+`zamun venevol thanathom.`
 
 z-speaker | v-kneel | th-relatedness-motive-any-term
 
 **`tho`** gives your reason; **`the`** would say you *ought* to kneel.
 :::
 
-**2.** *Alahen is allowed to sleep.* (the rules allow it) `zalahen vezebal thegol.` or `zalahen vezebal thegom.`
+**2.** *Olozun is allowed to sleep.* (the rules allow it) `zolozun vuzevol thegol.` or `zolozun vuzevol thegom.`
 
 ::: details Show answer
-`zalahen vezebal thegol.`
+`zolozun vuzevol thegol.`
 
-z-Alahen | v-sleep | th-PERMIT-allowed
+z-Olozun | v-sleep | th-PERMIT-allowed
 
 **-l** is permission from a rule; **-m** is a person granting it.
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *My candle serves relatedness.* <!-- lint: error -->`zagogal thanatham.`
+**1.** *My candle serves relatedness.* <!-- lint: error -->`zagawol thanatham.`
 
 ::: details Show answer
-`zagogal ganatham.`
+`zagawol ganatham.`
 
 z-candle | g-relatedness-met-any-term
 

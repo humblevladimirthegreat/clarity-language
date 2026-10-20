@@ -58,8 +58,8 @@ describe("English helper prompt", () => {
 
   it("numbers several inputs and never shows an input's own doc pair", () => {
     const pair = context.index.find((p) => p.note == null && p.sentence.split(" ").length >= 3)!;
-    const prompt = promptForEnglish([pair.sentence, "Azawan walks."], data, context);
-    assert.ok(prompt.includes(`1 ${pair.sentence}\n2 Azawan walks.`));
+    const prompt = promptForEnglish([pair.sentence, "Uzazon walks."], data, context);
+    assert.ok(prompt.includes(`1 ${pair.sentence}\n2 Uzazon walks.`));
     assert.ok(!examplesIn(prompt).includes(pair.agazan));
   });
 
@@ -67,7 +67,7 @@ describe("English helper prompt", () => {
     // The Inspect page gets the context through a VitePress data loader, Maps as entry arrays.
     const json = JSON.parse(JSON.stringify({ ...context, labelGlosses: [...context.labelGlosses], readers: [...context.readers], anchors: [...context.anchors!] }));
     const page = { index: json.index, labelGlosses: new Map(json.labelGlosses), readers: new Map(json.readers), anchors: new Map(json.anchors) } as typeof context;
-    const text = ["The teacher gave Alahen a book.", "We drink tea instead of coffee."];
+    const text = ["The teacher gave Olozun a book.", "We drink tea instead of coffee."];
     assert.equal(promptForEnglish(text, data, page), promptForEnglish(text, data, context));
   });
 

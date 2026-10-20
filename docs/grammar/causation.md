@@ -6,17 +6,17 @@ English *if*, *only if*, and *because* each tie a condition to an outcome. Agaza
 
 ### If {#if}
 
-English *if* says a condition is enough for an outcome: whenever the condition holds, the outcome holds too (*Azawan walks if it rains*). Write the **outcome** first, then the *if* pole (root **`oye`**), then the condition as its `/b/` word. Saying *if* does not claim the condition is true, and other routes to the outcome may still work. It does not say how the condition leads there either: only that the link holds. (cue: 🚪 *door*: walk through only if it opens)
+English *if* says a condition is enough for an outcome: whenever the condition holds, the outcome holds too (*Uzazon walks if it rains*). Write the **outcome** first, then the *if* pole (root **`oye`**), then the condition as its `/b/` word. Saying *if* does not claim the condition is true, and other routes to the outcome may still work. It does not say how the condition leads there either: only that the link holds. (cue: 🚪 *door*: walk through only if it opens)
 
 The pole's role letter follows the outcome. Use `/th/` (**`thoyem`**) when the outcome is an **event** (the verb). Use `/ɡ/` (**`goyem`**) when the outcome is a **noun**. A common noun with a `/ɡ/` word after it says the thing exists ([*there is …*](predication.md#existence)), so a noun outcome says *there is X if there is Y*. Keep the pole and its `/b/` together.
 
-> `zazawan vowogal thoyem berehel.`
+> `zuzazon voworel thoyem burelal.`
 >
-> z-Azawan | v-walk | [th-if | b-rain]
+> z-Uzazon | v-walk | [th-if | b-rain]
 >
-> "Azawan walks if it rains."
+> "Uzazon walks if it rains."
 
-> `zerehel goyem bagavul.`
+> `zurelal goyem bagolol.`
 >
 > z-rain | [g-if | b-cloud]
 >
@@ -30,13 +30,13 @@ As a plain noun, the same root is `zoyel` *a door*.
 
 English *only if* (or *needs*) says the outcome cannot hold without the condition. Use the same shape with the *only if* pole (root **`olu`**): **`tholum`** after a verb, **`golum`** after a noun. Other things may also be required, and again you do not claim the condition is true. (cue: 🧻 *paper-roll*: without it the situation does not run)
 
-> `zazawan vowogal tholum berehel.`
+> `zuzazon voworel tholum burelal.`
 >
-> z-Azawan | v-walk | [th-only-if | b-rain]
+> z-Uzazon | v-walk | [th-only-if | b-rain]
 >
-> "Azawan walks only if it rains."
+> "Uzazon walks only if it rains."
 
-> `zerehel golum bagavul.`
+> `zurelal golum bagolol.`
 >
 > z-rain | [g-only-if | b-cloud]
 >
@@ -64,72 +64,72 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agazan | Cue |
 |---------|--------|-----|
 | *seedling* | `uzel` | 🌱 |
-| *flower* | `avavul` | 💮 |
-| *sun* | `azahel` | ☀️ |
-| *window* | `ewedol` | 🪟 |
-| *bucket* | `abegul` | 🪣 |
+| *flower* | `ovalol` | 💮 |
+| *sun* | `uzalol` | ☀️ |
+| *window* | `ewehol` | 🪟 |
+| *bucket* | `ubowal` | 🪣 |
 | *only if* | `tholum` | 🧻 from *paper-roll*: without it the situation does not run |
 
 **Review:**
 
 | English | Agazan |
 |---------|--------|
-| *Azawan* | `azawan` |
-| *Alahen* | `alahen` |
-| *Ahaben* | `ahaben` |
+| *Uzazon* | `uzazon` |
+| *Olozun* | `olozun` |
+| *Ehalon* | `ehalon` |
 | *if* | `thoyem` |
-| *rain* | `erehel` |
-| *night* | `anadal` |
-| *sing* | `vezehel` |
-| *see* | `vahahal` |
-| *find* | `vamagal` |
-| *sit* | `vehahel` |
+| *rain* | `urelal` |
+| *night* | `anurol` |
+| *sing* | `vezeyol` |
+| *see* | `vanobol` |
+| *find* | `vemawol` |
+| *sit* | `vehuhol` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *Azawan sings if there is sun.*
+**1.** *Uzazon sings if there is sun.*
 
 ::: details Show answer
-`zazawan vezehel thoyem bazahel.`
+`zuzazon vezeyol thoyem buzalol.`
 
-z-Azawan | v-sing | [th-if | b-sun]
+z-Uzazon | v-sing | [th-if | b-sun]
 :::
 
 **2.** *There is a flower only if there is a seedling.*
 
 ::: details Show answer
-`zavavul golum buzel.`
+`zovalol golum buzel.`
 
 z-flower | [g-only-if | b-seedling]
 :::
 
-**3.** *Ahaben sees a flower only if there is a window.*
+**3.** *Ehalon sees a flower only if there is a window.*
 
 ::: details Show answer
-`zahaben davavul vahahal tholum bewedol.`
+`zehalon dovalol vanobol tholum bewehol.`
 
-z-Ahaben | d-flower | v-see | [th-only-if | b-window]
+z-Ehalon | d-flower | v-see | [th-only-if | b-window]
 :::
 
 **4.** *There are seedlings if there is rain.*
 
 ::: details Show answer
-`zuzelx goyem berehel.`
+`zuzelx goyem burelal.`
 
 z-seedling-x | [g-if | b-rain]
 :::
 
-**5.** *Alahen finds a bucket if Azawan sings.*
+**5.** *Olozun finds a bucket if Uzazon sings.*
 
 ::: details Show answer
-`zalahen dabegul vamagal thoyem barl zazawan vezehel.`
+`zolozun dubowal vemawol thoyem barl zuzazon vezeyol.`
 
-z-Alahen | d-bucket | v-find | [th-if | b-that-clause] | z-Azawan | v-sing
+z-Olozun | d-bucket | v-find | [th-if | b-that-clause] | z-Uzazon | v-sing
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zavavulx goyem bazahel.`
+**1.** `zovalolx goyem buzalol.`
 
 ::: details Show answer
 z-flower-x | [g-if | b-sun]
@@ -137,15 +137,15 @@ z-flower-x | [g-if | b-sun]
 *There are flowers if there is sun.*
 :::
 
-**2.** `zahaben dabegul vamagal tholum berehel.`
+**2.** `zehalon dubowal vemawol tholum burelal.`
 
 ::: details Show answer
-z-Ahaben | d-bucket | v-find | [th-only-if | b-rain]
+z-Ehalon | d-bucket | v-find | [th-only-if | b-rain]
 
-*Ahaben finds a bucket only if it rains.*
+*Ehalon finds a bucket only if it rains.*
 :::
 
-**3.** `zuzel golum babegul.`
+**3.** `zuzel golum bubowal.`
 
 ::: details Show answer
 z-seedling | [g-only-if | b-bucket]
@@ -153,52 +153,52 @@ z-seedling | [g-only-if | b-bucket]
 *There is a seedling only if there is a bucket.*
 :::
 
-**4.** `zalahen vezehel tholum barl zahaben davavul vahahal.`
+**4.** `zolozun vezeyol tholum barl zehalon dovalol vanobol.`
 
 ::: details Show answer
-z-Alahen | v-sing | [th-only-if | b-that-clause] | z-Ahaben | d-flower | v-see
+z-Olozun | v-sing | [th-only-if | b-that-clause] | z-Ehalon | d-flower | v-see
 
-*Alahen sings only if Ahaben sees a flower.*
+*Olozun sings only if Ehalon sees a flower.*
 :::
 
-**5.** `zazawan davavulx vahahal thoyem banadal.`
+**5.** `zuzazon dovalolx vanobol thoyem banurol.`
 
 ::: details Show answer
-z-Azawan | d-flower-x | v-see | [th-if | b-night]
+z-Uzazon | d-flower-x | v-see | [th-if | b-night]
 
-*Azawan sees some flowers if it is night.*
+*Uzazon sees some flowers if it is night.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *There is a flower if there is rain.* `zavavul goyem berehel.` or `zavavul thoyem berehel.`
+**1.** *There is a flower if there is rain.* `zovalol goyem burelal.` or `zovalol thoyem burelal.`
 
 ::: details Show answer
-`zavavul goyem berehel.`
+`zovalol goyem burelal.`
 
 z-flower | [g-if | b-rain]
 
 The outcome is a noun (there is a flower), so the pole takes `/ɡ/`; `/th/` attaches it to an event.
 :::
 
-**2.** *Alahen sits if it is night.* `zalahen vehahel thoyem banadal.` or `zalahen vehahel thoyem danadal.`
+**2.** *Olozun sits if it is night.* `zolozun vehuhol thoyem banurol.` or `zolozun vehuhol thoyem danurol.`
 
 ::: details Show answer
-`zalahen vehahel thoyem banadal.`
+`zolozun vehuhol thoyem banurol.`
 
-z-Alahen | v-sit | [th-if | b-night]
+z-Olozun | v-sit | [th-if | b-night]
 
 The condition is the pole's extra noun, so it takes `/b/` right after **`thoyem`**.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Ahaben sings only if there is sun.* <!-- lint: error -->`zahaben vezehel golum bazahel.`
+**1.** *Ehalon sings only if there is sun.* <!-- lint: error -->`zehalon vezeyol golum buzalol.`
 
 ::: details Show answer
-`zahaben vezehel tholum bazahel.`
+`zehalon vezeyol tholum buzalol.`
 
-z-Ahaben | v-sing | [th-only-if | b-sun]
+z-Ehalon | v-sing | [th-only-if | b-sun]
 
 The outcome is the singing, an event, so the pole is **`tholum`**; **`golum`** would hang it on a noun.
 :::
@@ -208,25 +208,25 @@ The outcome is the singing, an event, so the pole is **`tholum`**; **`golum`** w
 ### A following sentence
 <a id="dependent"></a>
 
-When the condition is a **whole sentence** (*if Alahen sleeps*), keep the same pole and use the stand-in **`barl`** as its `/b/` word. The next sentence is the condition that **`barl`** stands for. Keep the pole and **`barl`** together, last in the main sentence. The condition sentence always names its own subject. See [dependent clauses](dependents.md#dependent-clauses).
+When the condition is a **whole sentence** (*if Olozun sleeps*), keep the same pole and use the stand-in **`barl`** as its `/b/` word. The next sentence is the condition that **`barl`** stands for. Keep the pole and **`barl`** together, last in the main sentence. The condition sentence always names its own subject. See [dependent clauses](dependents.md#dependent-clauses).
 
 ```text
 main sentence …  thoyem / tholum / …  barl   [dependent sentence]
 ```
 
-> `zazawan vowogal thoyem barl zalahen vezebal.`
+> `zuzazon voworel thoyem barl zolozun vuzevol.`
 >
-> z-Azawan | v-walk | [th-if | b-that-clause] | z-Alahen | v-sleep
+> z-Uzazon | v-walk | [th-if | b-that-clause] | z-Olozun | v-sleep
 >
-> "Azawan walks if Alahen is asleep."
+> "Uzazon walks if Olozun is asleep."
 
-> `zazawan vowogal tholum barl zalahen vezebal.`
+> `zuzazon voworel tholum barl zolozun vuzevol.`
 >
-> z-Azawan | v-walk | [th-only-if | b-that-clause] | z-Alahen | v-sleep
+> z-Uzazon | v-walk | [th-only-if | b-that-clause] | z-Olozun | v-sleep
 >
-> "Azawan walks only if Alahen is asleep."
+> "Uzazon walks only if Olozun is asleep."
 
-Several conditions can sit inside `/b/` as a [join](joins.md) (`thoyem bagavul bozezol baom` *if clouds and/or snow*).
+Several conditions can sit inside `/b/` as a [join](joins.md) (`thoyem bagolol bozulal baom` *if clouds and/or snow*).
 
 **Related form:** to join two full sentences with *and also*, use a clause [join](joins.md) (`xam`), not a pole.
 
@@ -245,51 +245,51 @@ Beginner's *if* and *only if* do not claim the condition is true. The table comp
 | **`tholum thavem` / `golum gavem`** | needed; condition asserted | *only because* / *depends on* | | 🧻 then 🧱: needed, and named as a fact |
 | **`thedam` / `gedam`** | both ways; condition not asserted | *if and only if* | `edal` *east-west* | ↔️: each side only with the other |
 
-> `zazawan vowogal thavem barl zalahen vezebal.`
+> `zuzazon voworel thavem barl zolozun vuzevol.`
 >
-> z-Azawan | v-walk | [th-because | b-that-clause] | z-Alahen | v-sleep
+> z-Uzazon | v-walk | [th-because | b-that-clause] | z-Olozun | v-sleep
 >
-> "Azawan walks because Alahen is asleep."
+> "Uzazon walks because Olozun is asleep."
 
-> `zerehel gavem bagavul.`
+> `zurelal gavem bagolol.`
 >
 > z-rain | [g-because | b-cloud]
 >
 > "There is rain because of the clouds."
 
-> `zazawan vowogal thedam barl zalahen vezebal.`
+> `zuzazon voworel thedam barl zolozun vuzevol.`
 >
-> z-Azawan | v-walk | [th-iff | b-that-clause] | z-Alahen | v-sleep
+> z-Uzazon | v-walk | [th-iff | b-that-clause] | z-Olozun | v-sleep
 >
-> "Azawan walks if and only if Alahen is asleep."
+> "Uzazon walks if and only if Olozun is asleep."
 
 *Only because* stacks two poles: **`tholum`** (the outcome needs it), then **`thavem`** with the condition (and it is a fact).
 
-> `zazawan vowogal tholum thavem berehel.`
+> `zuzazon voworel tholum thavem burelal.`
 >
-> z-Azawan | v-walk | th-only-if | [th-because | b-rain]
+> z-Uzazon | v-walk | th-only-if | [th-because | b-rain]
 >
-> "Azawan walks only because of the rain."
+> "Uzazon walks only because of the rain."
 
-A noun after a because pole names an **act or a thing**, not a person. For *because of Alahen*, say what Alahen did as a sentence after **`barl`**. A name in that `/b/` slot is a named event or place (a storm, a city), never the person.
+A noun after a because pole names an **act or a thing**, not a person. For *because of Olozun*, say what Olozun did as a sentence after **`barl`**. A name in that `/b/` slot is a named event or place (a storm, a city), never the person.
 
-**Related form:** *not because of X* (the outcome still holds; only the reason is denied) closes the pole with a [stance join](join-across-roles.md#stance-joins). Denying the outcome itself is `vowogal vul`.
+**Related form:** *not because of X* (the outcome still holds; only the reason is denied) closes the pole with a [stance join](join-across-roles.md#stance-joins). Denying the outcome itself is `voworel vul`.
 
 English *unless* means *if … not*. Keep **`thoyem`**, but use the stand-in **`burl`** instead of **`barl`** ([stand-in vowels](dependents.md#stand-in)): the outcome holds unless the next sentence is true.
 
-> `zazawan vowogal thoyem burl zalahen vezebal.`
+> `zuzazon voworel thoyem burl zolozun vuzevol.`
 >
-> z-Azawan | v-walk | [th-if | b-lest-clause] | z-Alahen | v-sleep
+> z-Uzazon | v-walk | [th-if | b-lest-clause] | z-Olozun | v-sleep
 >
-> "Azawan walks unless Alahen is asleep."
+> "Uzazon walks unless Olozun is asleep."
 
 For *even if*, put the *although* pole **`hezom`** right before **`thoyem`**. You still do not claim the condition is true, and the outcome holds either way.
 
-> `zazawan vowogal hezom thoyem barl zalahen vezebal.`
+> `zuzazon voworel hezom thoyem barl zolozun vuzevol.`
 >
-> z-Azawan | v-walk | h-although | [th-if | b-that-clause] | z-Alahen | v-sleep
+> z-Uzazon | v-walk | h-although | [th-if | b-that-clause] | z-Olozun | v-sleep
 >
-> "Azawan walks even if Alahen is asleep."
+> "Uzazon walks even if Olozun is asleep."
 
 | Agazan | English |
 |--------|---------|
@@ -307,25 +307,25 @@ For *even if*, put the *although* pole **`hezom`** right before **`thoyem`**. Yo
 | **`thavem`** | the reason made it happen; no fault claimed | *because* | **-m** ≈ the ordinary case |
 | **`thaver`** | the reason is one share among others | *partly because* / *played a part* | **-r** ≈ one wall of several holding it up |
 
-> `zazawan vedabal thavel barl zalahen vezebel.`
+> `zuzazon veyorul thavel barl zolozun vezeyel.`
 >
-> z-Azawan | v-departure | [th-because.fault | b-that-clause] | z-Alahen | v-tell
+> z-Uzazon | v-departure | [th-because.fault | b-that-clause] | z-Olozun | v-tell
 >
-> "Azawan left because Alahen spoke, and Alahen was wrong to."
+> "Uzazon left because Olozun spoke, and Olozun was wrong to."
 
-> `zazawan vedabal thavem barl zalahen vezebel.`
+> `zuzazon veyorul thavem barl zolozun vezeyel.`
 >
-> z-Azawan | v-departure | [th-because | b-that-clause] | z-Alahen | v-tell
+> z-Uzazon | v-departure | [th-because | b-that-clause] | z-Olozun | v-tell
 >
-> "Azawan left because Alahen spoke." (no one is to blame)
+> "Uzazon left because Olozun spoke." (no one is to blame)
 
-> `zazawan vedabal thaver berehel.`
+> `zuzazon veyorul thaver burelal.`
 >
-> z-Azawan | v-departure | [th-because.share | b-rain]
+> z-Uzazon | v-departure | [th-because.share | b-rain]
 >
-> "The rain is part of why Azawan left."
+> "The rain is part of why Uzazon left."
 
-The rule from [*because*](#only-because) matters most here: the act goes in `/b/`, not the person (`barl zalahen vezebel` *that Alahen spoke*, never `balahen`). So fault lands on what someone did, which leaves room for *Alahen did a wrong thing* without *Alahen is bad*. A thing or circumstance (`berehel`) is fine in `/b/`, because there is no person to blame.
+The rule from [*because*](#only-because) matters most here: the act goes in `/b/`, not the person (`barl zolozun vezeyel` *that Olozun spoke*, never `bolozun`). So fault lands on what someone did, which leaves room for *Olozun did a wrong thing* without *Olozun is bad*. A thing or circumstance (`burelal`) is fine in `/b/`, because there is no person to blame.
 
 Fault is still a claim. You can hedge it with [MAY](knowing.md#may) right before the pole (`thovum thavel barl …`), or pair **`tholum`** with it for *only because of that fault*.
 
@@ -336,39 +336,39 @@ English *that is what makes it happen* points at **how** a result comes about (t
 
 As plain words, the same root is `zegel` *a machine* and `vegel` *to operate / engage*.
 
-> `zazawan vowogal thegem thoyem berehel.`
+> `zuzazon voworel thegem thoyem burelal.`
 >
-> z-Azawan | v-walk | th-CAUSE | [th-if | b-rain]
+> z-Uzazon | v-walk | th-CAUSE | [th-if | b-rain]
 >
-> "Azawan walks if it rains." (rain as the mechanism)
+> "Uzazon walks if it rains." (rain as the mechanism)
 
-> `zalahen vobohol thegem thavem bavahel.`
+> `zolozun vabovul thegem thavem bavalul.`
 >
-> z-Alahen | v-pour | th-CAUSE | [th-because | b-fire]
+> z-Olozun | v-pour | th-CAUSE | [th-because | b-fire]
 >
-> "Fire is what makes Alahen pour."
+> "Fire is what makes Olozun pour."
 
 On `/w/` (`wegem`), right before an adjective, CAUSE applies only to that adjective: the mechanism produces that one property.
 
-> `zazawan wegem gelevam vowogal.`
+> `zuzazon wegem gulevom voworel.`
 >
-> [z-Azawan | [w-CAUSE | g-exertion]] | v-walk
+> [z-Uzazon | [w-CAUSE | g-exertion]] | v-walk
 >
-> "Azawan walks, straining." (something is causing the strain)
+> "Uzazon walks, straining." (something is causing the strain)
 
 **Compare with:** *because* / *if* name the condition (`thavem` / `thoyem`). CAUSE says that the link is the mechanism.
 
 #### Make someone do it {#make}
 
-In English *Azawan makes Alahen speak*, Azawan makes it happen and Alahen does the speaking. Keep the one who does it (Alahen) as the subject of the verb. Put the one who makes it happen in a `/b/` word right after **`thegem`**, with no pole.
+In English *Uzazon makes Olozun speak*, Uzazon makes it happen and Olozun does the speaking. Keep the one who does it (Olozun) as the subject of the verb. Put the one who makes it happen in a `/b/` word right after **`thegem`**, with no pole.
 
-> `zalahen vezebel thegem bazawan.`
+> `zolozun vezeyel thegem buzazon.`
 >
-> z-Alahen | v-tell | [th-CAUSE | b-Azawan]
+> z-Olozun | v-tell | [th-CAUSE | b-Uzazon]
 >
-> "Azawan makes Alahen speak."
+> "Uzazon makes Olozun speak."
 
-When a pole follows **`thegem`**, the `/b/` belongs to the pole, as above (`thegem thavem bavahel` *because of fire, as mechanism*).
+When a pole follows **`thegem`**, the `/b/` belongs to the pole, as above (`thegem thavem bavalul` *because of fire, as mechanism*).
 
 **Compare with:** *let* is [permission](sakes.md#permission), which puts the one who allows it in the same `/b/` slot. *Get someone to* (ask, persuade) is tell + a *to* [stand-in](dependents.md#stand-in).
 
@@ -386,7 +386,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agazan | Cue |
 |---------|--------|-----|
-| *pressure* | `agabem` | 🗜️ from *clamp* |
+| *pressure* | `oyewam` | 🗜️ from *clamp* |
 | *CAUSE* | `thegem` | ⚙️ from *machine*: how the result comes about |
 | *iff* | `thedam` | ↔️ from *east-west*: each side only with the other |
 
@@ -394,155 +394,155 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agazan |
 |---------|--------|
-| *Azawan* | `azawan` |
-| *Alahen* | `alahen` |
-| *Ahaben* | `ahaben` |
+| *Uzazon* | `uzazon` |
+| *Olozun* | `olozun` |
+| *Ehalon* | `ehalon` |
 | *if* | `thoyem` |
 | *only if* | `tholum` |
 | *because* | `thavem` |
 | *although* | `hezom` |
-| *rain* | `erehel` |
-| *bell* | `ebehul` |
-| *departure* | `vedabal` |
-| *sit* | `vehahel` |
-| *pour* | `vobohol` |
-| *tell* | `vezebel` |
-| *run* | `varahal` |
-| *see* | `vahahal` |
-| *scream* | `vezugel` |
+| *rain* | `urelal` |
+| *bell* | `eberol` |
+| *departure* | `veyorul` |
+| *sit* | `vehuhol` |
+| *pour* | `vabovul` |
+| *tell* | `vezeyel` |
+| *run* | `varuvel` |
+| *see* | `vanobol` |
+| *scream* | `vazomul` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan runs if Alahen speaks.*
+**1.** *Uzazon runs if Olozun speaks.*
 
 ::: details Show answer
-`zazawan varahal thoyem barl zalahen vezebel.`
+`zuzazon varuvel thoyem barl zolozun vezeyel.`
 
-z-Azawan | v-run | [th-if | b-that-clause] | z-Alahen | v-tell
+z-Uzazon | v-run | [th-if | b-that-clause] | z-Olozun | v-tell
 :::
 
 **2.** *There is pressure because of the rain.*
 
 ::: details Show answer
-`zagabem gavem berehel.`
+`zoyewam gavem burelal.`
 
 z-pressure | [g-because | b-rain]
 :::
 
-**3.** *Ahaben sits only because of the rain.*
+**3.** *Ehalon sits only because of the rain.*
 
 ::: details Show answer
-`zahaben vehahel tholum thavem berehel.`
+`zehalon vehuhol tholum thavem burelal.`
 
-z-Ahaben | v-sit | th-only-if | [th-because | b-rain]
+z-Ehalon | v-sit | th-only-if | [th-because | b-rain]
 :::
 
-**4.** *Azawan pours unless Alahen sits.*
+**4.** *Uzazon pours unless Olozun sits.*
 
 ::: details Show answer
-`zazawan vobohol thoyem burl zalahen vehahel.`
+`zuzazon vabovul thoyem burl zolozun vehuhol.`
 
-z-Azawan | v-pour | [th-if | b-lest-clause] | z-Alahen | v-sit
+z-Uzazon | v-pour | [th-if | b-lest-clause] | z-Olozun | v-sit
 :::
 
-**5.** *Alahen ran because Azawan poured, and Azawan was wrong to.*
+**5.** *Olozun ran because Uzazon poured, and Uzazon was wrong to.*
 
 ::: details Show answer
-`zalahen varahal thavel barl zazawan vobohol.`
+`zolozun varuvel thavel barl zuzazon vabovul.`
 
-z-Alahen | v-run | [th-because.fault | b-that-clause] | z-Azawan | v-pour
+z-Olozun | v-run | [th-because.fault | b-that-clause] | z-Uzazon | v-pour
 :::
 
-**6.** *Azawan makes Ahaben speak.*
+**6.** *Uzazon makes Ehalon speak.*
 
 ::: details Show answer
-`zahaben vezebel thegem bazawan.`
+`zehalon vezeyel thegem buzazon.`
 
-z-Ahaben | v-tell | [th-CAUSE | b-Azawan]
+z-Ehalon | v-tell | [th-CAUSE | b-Uzazon]
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zazawan vehahel thedam barl zalahen vobohol.`
+**1.** `zuzazon vehuhol thedam barl zolozun vabovul.`
 
 ::: details Show answer
-z-Azawan | v-sit | [th-iff | b-that-clause] | z-Alahen | v-pour
+z-Uzazon | v-sit | [th-iff | b-that-clause] | z-Olozun | v-pour
 
-*Azawan sits if and only if Alahen pours.*
+*Uzazon sits if and only if Olozun pours.*
 :::
 
-**2.** `zalahen vobohol thegem thavem bagabem.`
+**2.** `zolozun vabovul thegem thavem boyewam.`
 
 ::: details Show answer
-z-Alahen | v-pour | th-CAUSE | [th-because | b-pressure]
+z-Olozun | v-pour | th-CAUSE | [th-because | b-pressure]
 
-*Pressure is what makes Alahen pour.*
+*Pressure is what makes Olozun pour.*
 :::
 
-**3.** `zahaben varahal hezom thoyem barl zazawan vezebel.`
+**3.** `zehalon varuvel hezom thoyem barl zuzazon vezeyel.`
 
 ::: details Show answer
-z-Ahaben | v-run | h-although | [th-if | b-that-clause] | z-Azawan | v-tell
+z-Ehalon | v-run | h-although | [th-if | b-that-clause] | z-Uzazon | v-tell
 
-*Ahaben runs even if Azawan speaks.*
+*Ehalon runs even if Uzazon speaks.*
 :::
 
-**4.** `zazawan vedabal thaver berehel.`
+**4.** `zuzazon veyorul thaver burelal.`
 
 ::: details Show answer
-z-Azawan | v-departure | [th-because.share | b-rain]
+z-Uzazon | v-departure | [th-because.share | b-rain]
 
-*The rain is part of why Azawan left.*
+*The rain is part of why Uzazon left.*
 :::
 
-**5.** `zazawan vehahel thavem barl zalahen debehul vahahal.`
+**5.** `zuzazon vehuhol thavem barl zolozun deberol vanobol.`
 
 ::: details Show answer
-z-Azawan | v-sit | [th-because | b-that-clause] | z-Alahen | d-bell | v-see
+z-Uzazon | v-sit | [th-because | b-that-clause] | z-Olozun | d-bell | v-see
 
-*Azawan sits because Alahen sees the bell.*
+*Uzazon sits because Olozun sees the bell.*
 :::
 
-**6.** `zahaben vezugel thegem balahen.`
+**6.** `zehalon vazomul thegem bolozun.`
 
 ::: details Show answer
-z-Ahaben | v-scream | [th-CAUSE | b-Alahen]
+z-Ehalon | v-scream | [th-CAUSE | b-Olozun]
 
-*Alahen makes Ahaben scream.*
+*Olozun makes Ehalon scream.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Azawan sits because Alahen pours.* (no one is to blame) `zazawan vehahel thavem barl zalahen vobohol.` or `zazawan vehahel thavel barl zalahen vobohol.`
+**1.** *Uzazon sits because Olozun pours.* (no one is to blame) `zuzazon vehuhol thavem barl zolozun vabovul.` or `zuzazon vehuhol thavel barl zolozun vabovul.`
 
 ::: details Show answer
-`zazawan vehahel thavem barl zalahen vobohol.`
+`zuzazon vehuhol thavem barl zolozun vabovul.`
 
-z-Azawan | v-sit | [th-because | b-that-clause] | z-Alahen | v-pour
+z-Uzazon | v-sit | [th-because | b-that-clause] | z-Olozun | v-pour
 
 **-m** is the plain cause; **-l** would say the pouring broke a rule.
 :::
 
-**2.** *Alahen runs unless Ahaben speaks.* `zalahen varahal thoyem burl zahaben vezebel.` or `zalahen varahal thoyem barl zahaben vezebel.`
+**2.** *Olozun runs unless Ehalon speaks.* `zolozun varuvel thoyem burl zehalon vezeyel.` or `zolozun varuvel thoyem barl zehalon vezeyel.`
 
 ::: details Show answer
-`zalahen varahal thoyem burl zahaben vezebel.`
+`zolozun varuvel thoyem burl zehalon vezeyel.`
 
-z-Alahen | v-run | [th-if | b-lest-clause] | z-Ahaben | v-tell
+z-Olozun | v-run | [th-if | b-lest-clause] | z-Ehalon | v-tell
 
 *Unless* is *if … not*: keep **`thoyem`** and use **`burl`**.
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Azawan left because Alahen spoke.* <!-- lint: error -->`zazawan vedabal thavem balahen.`
+**1.** *Uzazon left because Olozun spoke.* <!-- lint: error -->`zuzazon veyorul thavem bolozun.`
 
 ::: details Show answer
-`zazawan vedabal thavem barl zalahen vezebel.`
+`zuzazon veyorul thavem barl zolozun vezeyel.`
 
-z-Azawan | v-departure | [th-because | b-that-clause] | z-Alahen | v-tell
+z-Uzazon | v-departure | [th-because | b-that-clause] | z-Olozun | v-tell
 
-A because pole takes the act, not the person: say what Alahen did after **`barl`**.
+A because pole takes the act, not the person: say what Olozun did after **`barl`**.
 :::
 
 ## See also

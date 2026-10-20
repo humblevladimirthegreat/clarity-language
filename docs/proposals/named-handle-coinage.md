@@ -8,8 +8,8 @@
 
 English offices often have a **short name** (*FBI*) beside a long title. Agazan already has:
 
-- Long native titles: `ROOT x ROOT` … + **-n** (`zabogoxululon`).
-- Short names: ordinary proper names from the **published** lexicon (`zabogon`).
+- Long native titles: `ROOT x ROOT` … + **-n** (`zabanoxululon`).
+- Short names: ordinary proper names from the **published** lexicon (`zabanon`).
 - Foreign letter-names: loans / opaque spans (`z<FBI>n`).
 
 Harvest would mint a **new** native root from the title’s content roots, so the short name is recoverable from the long title without picking an existing lemma (and without treating the acronym as foreign).
@@ -26,7 +26,7 @@ Institutions mint a native handle from the long title’s **content roots** (ski
 
 | Step | Do |
 |------|----|
-| 1 | From each content root, take **first vowel + next consonant** (`abogo` → `ab`, `alodo` → `al`, `ululo` → `ul`) |
+| 1 | From each content root, take **first vowel + next consonant** (`abano` → `ab`, `alonu` → `al`, `ululo` → `ul`) |
 | 2 | Concatenate those pieces **without** mid-word **`x`** |
 | 3 | If the string ends in a consonant, add the **last root’s 2nd vowel** (the same cut as a [short resume](../grammar/pronouns.md)) |
 | 4 | If that root already names something else, **lengthen** (include the next vowel of a distinctive root) |
@@ -34,7 +34,7 @@ Institutions mint a native handle from the long title’s **content roots** (ski
 Two-root example (step 4: `ab`+`ul`+ last root’s 2nd vowel is published `abulu`, so lengthen):
 
 ```
-`abogo` × `ululo` → `ab` + `ul` + `o` → `abulo` → `zabulon`
+`abano` × `ululo` → `ab` + `ul` + `o` → `abulo` → `zabulon`
 ```
 
 Hearers treat the handle as a **name**. Full-root resume of `abulo` is `zabulor` (not `zabulur`, which is published `abulu` + **-r**). Mention of the **form** stays `{abulo}`; the office as referent is `zabulon`. Foreign acronyms stay loans / opaque; they do not use this harvest.
@@ -46,7 +46,7 @@ Citation of the handle is prefix-less `abulon`.
 A three-root run of the same algorithm:
 
 ```
-`abogo` × `alodo` × `ululo` → `ab` + `al` + `ul` + `o` → `abalulo` → `zabalulon`
+`abano` × `alonu` × `ululo` → `ab` + `al` + `ul` + `o` → `abalulo` → `zabalulon`
 ```
 
 That only shows “more title roots ⇒ a longer coined stem.” A handle’s job is a **short** stand-in for a long `x`-title. Two `VC` pieces plus a final vowel is ordinary `VCVCV` (`abulo`). Three pieces is `VCVCVCV` (`abalulo`), already in the weight class of keeping the full title. Unbounded harvest would mint still heavier “handles.”
@@ -55,7 +55,7 @@ If this proposal is absorbed, prefer **cap at two content roots** (first and las
 
 ## Why it is not in grammar
 
-Current language does not ask speakers to invent roots. Handles already work as published names (`zabogon`) beside the long title (`zabogoxululon`). Harvest needs extra tooling (unpublished stems in docs, resume collisions with nearby published roots) for a job the lexicon already covers.
+Current language does not ask speakers to invent roots. Handles already work as published names (`zabanon`) beside the long title (`zabanoxululon`). Harvest needs extra tooling (unpublished stems in docs, resume collisions with nearby published roots) for a job the lexicon already covers.
 
 ## Absorb sketch (if yes)
 

@@ -16,7 +16,7 @@ function entriesOf(markdown: string) {
 
 describe("tokens", () => {
   it("drops stop words and markdown, and stems", () => {
-    assert.deepEqual(tokens("*Azawan* walks to the `hill`"), ["azawan", "walk", "hill"]);
+    assert.deepEqual(tokens("*Uzazon* walks to the `hill`"), ["uzazon", "walk", "hill"]);
     assert.deepEqual(tokens("stories"), ["story"]);
   });
 });
@@ -65,27 +65,27 @@ describe("collectEnglishEntries", () => {
 
 ### Point back {#hook-resume}
 
-> \`or zazawan vowogal.\`
+> \`or zuzazon voworel.\`
 >
-> "Anyway, Azawan walks."
+> "Anyway, Uzazon walks."
 `);
     const example = entries.find((e) => e.kind === "example")!;
-    assert.equal(example.english, "Anyway, Azawan walks.");
+    assert.equal(example.english, "Anyway, Uzazon walks.");
     assert.equal(example.slug, "hook-resume");
     assert.equal(example.band, "intermediate");
     assert.equal(example.line, 5);
     const gloss = entries.find((e) => e.kind === "gloss" && e.form === "or")!;
     assert.equal(gloss.english, "anyway");
-    assert.ok(entries.some((e) => e.kind === "gloss" && e.form === "vowogal" && e.english === "walk"));
+    assert.ok(entries.some((e) => e.kind === "gloss" && e.form === "voworel" && e.english === "walk"));
   });
 });
 
 describe("searchEnglish", () => {
   const entries = entriesOf(`### Walking
 
-> \`zazawan vowogal.\`
+> \`zuzazon voworel.\`
 >
-> "Azawan walks."
+> "Uzazon walks."
 
 ### From the end
 
@@ -125,7 +125,7 @@ describe("taught cues in docs/grammar", () => {
 });
 
 describe("collectRootEntries", () => {
-  const csv = "emoji,concrete,root,abstract,mnemonic,english_by_pos,english_aliases,core\n😀,grin,egeva,delight,m,v:smile,glad; joy,\n";
+  const csv = "emoji,concrete,root,kind,shape,abstract,mnemonic,english_by_pos,english_aliases,core\n😀,grin,egeva,mind,one,delight,m,v:smile,glad; joy,\n";
   const entries = collectRootEntries(parsePublishedCsv(csv));
 
   it("indexes senses, per-PoS lemmas and aliases under the owning root", () => {
@@ -154,7 +154,7 @@ describe("recipe table harvest", () => {
 
 | English itch | Agazan job | Teach |
 |--------------|------------|-------|
-| in B's use (*Azawan's dog*) | hook **\`em\`** + \`/b/\` | [Whose](hooks.md#genitive) |
+| in B's use (*Uzazon's dog*) | hook **\`em\`** + \`/b/\` | [Whose](hooks.md#genitive) |
 
 ## Everyday words {#everyday-words}
 
@@ -186,7 +186,7 @@ describe("recipe table harvest", () => {
   });
 
   it("finds a table the harvest cannot read", () => {
-    assert.equal(lintRecipeTables("| Unit | Example |\n|---|---|\n| newton | `bavavam` |\n", "page.md").length, 1);
+    assert.equal(lintRecipeTables("| Unit | Example |\n|---|---|\n| newton | `bavovam` |\n", "page.md").length, 1);
   });
 
   it("passes on the recipe pages", () => {

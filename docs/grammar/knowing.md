@@ -6,17 +6,17 @@ English *I think* can be a guess, a memory, or a conclusion from clues, and the 
 
 ### MAY {#may}
 
-To say something **could be** so without claiming that it is (*Alahen may be leaving*), keep the ordinary verb and add **`ovu`** plus an ending as a [stance](clause.md#stance-th) word on `/th/`. This word is called **MAY**. The sentence now says the leaving is possible, not that it happens, and it gives no reason for thinking so. This matters most for painful guesses (a rejection, a blow, a loss), which English *I think* easily turns into facts. Start with **`thovum`**, *may* / *could be*. (cue: 💭 *thought*: a balloon over the scene)
+To say something **could be** so without claiming that it is (*Olozun may be leaving*), keep the ordinary verb and add **`ovu`** plus an ending as a [stance](clause.md#stance-th) word on `/th/`. This word is called **MAY**. The sentence now says the leaving is possible, not that it happens, and it gives no reason for thinking so. This matters most for painful guesses (a rejection, a blow, a loss), which English *I think* easily turns into facts. Start with **`thovum`**, *may* / *could be*. (cue: 💭 *thought*: a balloon over the scene)
 
-Without the `/th/` word, you are reporting that it happens. As a plain noun the root keeps its own meaning (`zovul` *a thought*); the verb *think* is a different root, `vevegal`.
+Without the `/th/` word, you are reporting that it happens. As a plain noun the root keeps its own meaning (`zovul` *a thought*); the verb *think* is a different root, `vovemol`.
 
-> `zalahen thovum vedabal dahaben.`
+> `zolozun thovum veyorul dehalon.`
 >
-> z-Alahen | th-MAY | v-departure | d-Ahaben
+> z-Olozun | th-MAY | v-departure | d-Ehalon
 >
-> "Alahen may be leaving Ahaben."
+> "Olozun may be leaving Ehalon."
 
-**Compare with:** `zazawan vevegal.` is *Azawan thinks*, a report of the act of thinking; it does not mark anything as a guess. For a likelihood in numbers (*70% likely*), use the [stance number](numbers.md#number-as-stance-by-marker) **`th+N`**.
+**Compare with:** `zuzazon vovemol.` is *Uzazon thinks*, a report of the act of thinking; it does not mark anything as a guess. For a likelihood in numbers (*70% likely*), use the [stance number](numbers.md#number-as-stance-by-marker) **`th+N`**.
 
 ### Hold endings (MAY)
 <a id="may-hold"></a>
@@ -31,25 +31,25 @@ The ending on MAY says whether you mean to follow up on the *could be*: with **-
 
 When you are not sure, use **`thovum`**: it says *could be* and nothing about following up.
 
-> `zalahen thovul vabahel dazawan.`
+> `zolozun thovul vabavul duzazon.`
 >
-> z-Alahen | th-MAY-find-out | v-punch | d-Azawan
+> z-Olozun | th-MAY-find-out | v-punch | d-Uzazon
 >
-> "Alahen may be punching Azawan, I'll find out."
+> "Olozun may be punching Uzazon, I'll find out."
 
 In a yes/no question, **`thovul`** says you are asking in order to find out:
 
-> `yol zazawan vabahel thovul dalahen.`
+> `yol zuzazon vabavul thovul dolozun.`
 >
-> y-question | z-Azawan | v-punch | th-MAY-find-out | d-Alahen
+> y-question | z-Uzazon | v-punch | th-MAY-find-out | d-Olozun
 >
-> "Might Azawan be punching Alahen? Let's find out."
+> "Might Uzazon be punching Olozun? Let's find out."
 
-> `zahaben thovur vagahul.`
+> `zehalon thovur vugamul.`
 >
-> z-Ahaben | th-MAY-who-knows | v-cry
+> z-Ehalon | th-MAY-who-knows | v-cry
 >
-> "Ahaben may be crying, who knows."
+> "Ehalon may be crying, who knows."
 
 ### Practice {#beginner-practice}
 
@@ -61,142 +61,142 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agazan | Cue |
 |---------|--------|-----|
-| *departure* | `vedabal` | 🛫 |
-| *cry* | `vagahul` | 😭 |
-| *fight* | `vavadal` | 🫯 |
-| *eat* | `vagadel` | 🍴 from *cutlery* |
+| *departure* | `veyorul` | 🛫 |
+| *cry* | `vugamul` | 😭 |
+| *fight* | `vavavul` | 🫯 |
+| *eat* | `vogadol` | 🍴 from *cutlery* |
 | *MAY* | `thovum` | 💭 from *thought*: a balloon over the scene |
 
 **Review:**
 
 | English | Agazan |
 |---------|--------|
-| *Azawan* | `azawan` |
-| *Alahen* | `alahen` |
-| *Ahaben* | `ahaben` |
-| *think* | `vevegal` |
+| *Uzazon* | `uzazon` |
+| *Olozun* | `olozun` |
+| *Ehalon* | `ehalon` |
+| *think* | `vovemol` |
 | *pay* | `vamol` |
-| *tell* | `vezebel` |
-| *wine* | `awahel` |
-| *pour* | `vobohol` |
-| *scream* | `vezugel` |
+| *tell* | `vezeyel` |
+| *wine* | `awadal` |
+| *pour* | `vabovul` |
+| *scream* | `vazomul` |
 | *sandwich* | `azal` |
-| *punch* | `vabahel` |
+| *punch* | `vabavul` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *Ahaben may be leaving Azawan.*
+**1.** *Ehalon may be leaving Uzazon.*
 
 ::: details Show answer
-`zahaben thovum vedabal dazawan.`
+`zehalon thovum veyorul duzazon.`
 
-z-Ahaben | th-MAY | v-departure | d-Azawan
+z-Ehalon | th-MAY | v-departure | d-Uzazon
 :::
 
-**2.** *Azawan may be fighting Alahen, I'll find out.*
+**2.** *Uzazon may be fighting Olozun, I'll find out.*
 
 ::: details Show answer
-`zazawan thovul vavadal dalahen.`
+`zuzazon thovul vavavul dolozun.`
 
-z-Azawan | th-MAY-find-out | v-fight | d-Alahen
+z-Uzazon | th-MAY-find-out | v-fight | d-Olozun
 :::
 
-**3.** *Alahen may be crying, who knows.*
+**3.** *Olozun may be crying, who knows.*
 
 ::: details Show answer
-`zalahen thovur vagahul.`
+`zolozun thovur vugamul.`
 
-z-Alahen | th-MAY-who-knows | v-cry
+z-Olozun | th-MAY-who-knows | v-cry
 :::
 
-**4.** *Azawan thinks.* (an act of thinking)
+**4.** *Uzazon thinks.* (an act of thinking)
 
 ::: details Show answer
-`zazawan vevegal.`
+`zuzazon vovemol.`
 
-z-Azawan | v-think
+z-Uzazon | v-think
 :::
 
-**5.** *Could Ahaben be paying?*
+**5.** *Could Ehalon be paying?*
 
 ::: details Show answer
-`yol zahaben vamol thovum.`
+`yol zehalon vamol thovum.`
 
-y-question | z-Ahaben | v-pay | th-MAY
+y-question | z-Ehalon | v-pay | th-MAY
 :::
 
-**6.** *Alahen may be telling Azawan.*
+**6.** *Olozun may be telling Uzazon.*
 
 ::: details Show answer
-`zalahen thovum vezebel bazawan.`
+`zolozun thovum vezeyel buzazon.`
 
-z-Alahen | th-MAY | v-tell | b-Azawan
+z-Olozun | th-MAY | v-tell | b-Uzazon
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zazawan thovum dawahel vobohol.`
+**1.** `zuzazon thovum dawadal vabovul.`
 
 ::: details Show answer
-z-Azawan | th-MAY | d-wine | v-pour
+z-Uzazon | th-MAY | d-wine | v-pour
 
-*Azawan may be pouring wine.*
+*Uzazon may be pouring wine.*
 :::
 
-**2.** `zahaben thovul vezugel.`
+**2.** `zehalon thovul vazomul.`
 
 ::: details Show answer
-z-Ahaben | th-MAY-find-out | v-scream
+z-Ehalon | th-MAY-find-out | v-scream
 
-*Ahaben may be screaming, I'll find out.*
+*Ehalon may be screaming, I'll find out.*
 :::
 
-**3.** `yol zalahen vavadal thovul dazawan.`
+**3.** `yol zolozun vavavul thovul duzazon.`
 
 ::: details Show answer
-y-question | z-Alahen | v-fight | th-MAY-find-out | d-Azawan
+y-question | z-Olozun | v-fight | th-MAY-find-out | d-Uzazon
 
-*Might Alahen be fighting Azawan? Let's find out.*
+*Might Olozun be fighting Uzazon? Let's find out.*
 :::
 
-**4.** `zazawan thovur dazal vagadel.`
+**4.** `zuzazon thovur dazal vogadol.`
 
 ::: details Show answer
-z-Azawan | th-MAY-who-knows | d-sandwich | v-eat
+z-Uzazon | th-MAY-who-knows | d-sandwich | v-eat
 
-*Azawan may be eating a sandwich, who knows.*
+*Uzazon may be eating a sandwich, who knows.*
 :::
 
-**5.** `zahaben thovum vabahel dalahen.`
+**5.** `zehalon thovum vabavul dolozun.`
 
 ::: details Show answer
-z-Ahaben | th-MAY | v-punch | d-Alahen
+z-Ehalon | th-MAY | v-punch | d-Olozun
 
-*Ahaben may be punching Alahen.*
+*Ehalon may be punching Olozun.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Azawan may be crying, I'll find out.* `zazawan thovul vagahul.` or `zazawan thovur vagahul.`
+**1.** *Uzazon may be crying, I'll find out.* `zuzazon thovul vugamul.` or `zuzazon thovur vugamul.`
 
 ::: details Show answer
-`zazawan thovul vagahul.`
+`zuzazon thovul vugamul.`
 
-z-Azawan | th-MAY-find-out | v-cry
+z-Uzazon | th-MAY-find-out | v-cry
 
 **-l** commits to settling it; **-r** is a passing thought you are not pursuing.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Ahaben may be leaving.* (a guess, not a claim) <!-- lint: error -->`zahaben vedabal.`
+**1.** *Ehalon may be leaving.* (a guess, not a claim) <!-- lint: error -->`zehalon veyorul.`
 
 ::: details Show answer
-`zahaben thovum vedabal.`
+`zehalon thovum veyorul.`
 
-z-Ahaben | th-MAY | v-departure
+z-Ehalon | th-MAY | v-departure
 
-Without **`thovum`**, the sentence reports that Ahaben is leaving.
+Without **`thovum`**, the sentence reports that Ehalon is leaving.
 :::
 
 ## Intermediate {#intermediate}
@@ -211,17 +211,17 @@ The seven channels come in four kinds. Two are **direct**: you sensed it yoursel
 
 Verbs have **no past or future form**. Two channels place the event in time because of how you know it: **LIVE** means the scene is in your senses as you speak, and **MEMORY** means you remember sensing it (so it is past). The other channels do not place the event. When a reasoned or reported event happened at another time, add a when-frame: [*before* / *after* / *while*](dependents.md#time-poles), a clock or date, or a [signed offset](#dated-channel) on the channel. A claim that something **will** happen is a [forecast](#forecast): a channel plus a later offset, so a forecast always says how you know.
 
-> `zazawan thodom vowogal.`
+> `zuzazon thodom voworel.`
 >
-> z-Azawan | th-LIVE | v-walk
+> z-Uzazon | th-LIVE | v-walk
 >
-> "Azawan is walking, I can see it."
+> "Uzazon is walking, I can see it."
 
-> `zazawan thevom vowogal.`
+> `zuzazon thevom voworel.`
 >
-> z-Azawan | th-MEMORY | v-walk
+> z-Uzazon | th-MEMORY | v-walk
 >
-> "Azawan walked, I remember it."
+> "Uzazon walked, I remember it."
 
 **For *could be* with nothing behind it, use:** [MAY](#may). When English *I think* means you have reasons (you worked it out, you heard it, you sense it), pick the channel for those reasons instead.
 
@@ -237,21 +237,21 @@ Verbs have **no past or future form**. Two channels place the event in time beca
 
 Pick one channel for how you know.
 
-> `zalahen thewam varadal.`
+> `zolozun thewam vuruyel.`
 >
-> z-Alahen | th-REPORTED | v-write
+> z-Olozun | th-REPORTED | v-write
 >
-> "Alahen writes, so they say."
+> "Olozun writes, so they say."
 
-> `zalahen thahom vezebal.`
+> `zolozun thahom vuzevol.`
 >
-> z-Alahen | th-INTUITION | v-sleep
+> z-Olozun | th-INTUITION | v-sleep
 >
-> "Alahen is asleep, my gut says."
+> "Olozun is asleep, my gut says."
 
 LIVE covers every sense, not only sight: a sound in earshot, cold on your skin, an ache in your knee. MEMORY is the same senses, remembered. A screen or a recording extends your senses, so footage is LIVE while you watch it and MEMORY once you have watched it, with the device as the [source](#source). A document is REPORTED: someone wrote it, so it reached you from someone else.
 
-**Compare with:** the act of seeing is the ordinary verb **`vahahal`**; LIVE only says how you know the claim. In the same way, hearing a door is an ordinary `/v/` verb, not REPORTED. A feeling such as fear or hope is an [emotion compose](sakes.md#emotion-compose); INTUITION is a way of knowing, not a feeling about the event. Something a schedule says will happen is someone's [PLAN](intention.md#plan-predict), and a tale you tell for its own sake is [NOTIONAL](#notional).
+**Compare with:** the act of seeing is the ordinary verb **`vanobol`**; LIVE only says how you know the claim. In the same way, hearing a door is an ordinary `/v/` verb, not REPORTED. A feeling such as fear or hope is an [emotion compose](sakes.md#emotion-compose); INTUITION is a way of knowing, not a feeling about the event. Something a schedule says will happen is someone's [PLAN](intention.md#plan-predict), and a tale you tell for its own sake is [NOTIONAL](#notional).
 
 **Related form:** to deny only the channel (*it happened, but I did not see it*), close the evidential with a [stance join](join-across-roles.md#stance-joins). Two channels you cannot choose between use the same kind of join.
 
@@ -282,33 +282,33 @@ Two rows stretch the word *show*. A live view is gone once the moment passes, so
 
 DEDUCED grades how far you checked the steps, not the premises. A step can be airtight and still start from a false premise, so a deduction is only as good as what it was deduced from ([deduction](#deduction)).
 
-> `zalahen thewar vedabal.`
+> `zolozun thewar veyorul.`
 >
-> z-Alahen | th-REPORTED.weak | v-departure
+> z-Olozun | th-REPORTED.weak | v-departure
 >
-> "Rumor has it Alahen left."
+> "Rumor has it Olozun left."
 
-> `zazawan thevol vowogal.`
+> `zuzazon thevol voworel.`
 >
-> z-Azawan | th-MEMORY.strong | v-walk
+> z-Uzazon | th-MEMORY.strong | v-walk
 >
-> "Azawan walked, I remember it clearly."
+> "Uzazon walked, I remember it clearly."
 
 ### Second-hand and further (`th#N`) {#hand-depth}
 
 English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source* count the hands between the person who was there and you. A channel does not say that. Add a [stance number](numbers.md#number-as-stance-by-marker) with the rank marker after the channel: **`th#N`** (from 2) is *N-th hand*. The channel says what form the claim reached you in, and the number says how far that is from the event. So `thredul` (`th#2`) is one step removed: told by someone who was there, or written by someone who asked them. `threrel` (`th#3`) is two steps removed: told by someone who was told, or compiled from reports. (cue: **`e`** ≈ order, the place in the chain)
 
-> `zalahen thewam threrel vedabal.`
+> `zolozun thewam threrel veyorul.`
 >
-> z-Alahen | th-REPORTED | th-3rd-hand | v-departure
+> z-Olozun | th-REPORTED | th-3rd-hand | v-departure
 >
-> "I heard third-hand that Alahen left."
+> "I heard third-hand that Olozun left."
 
-> `zalahen thewal bunuzel thredul vedabal.`
+> `zolozun thewal bunugal thredul veyorul.`
 >
-> z-Alahen | [th-REPORTED.strong | b-newspaper] | th-2nd-hand | v-departure
+> z-Olozun | [th-REPORTED.strong | b-newspaper] | th-2nd-hand | v-departure
 >
-> "Alahen left, according to a newspaper article by someone who interviewed people who were there."
+> "Olozun left, according to a newspaper article by someone who interviewed people who were there."
 
 Alone, `th#N` says the claim was passed on to you, without saying in what form. After a channel it adds the form: REPORTED (a retelling, a secondary source, or lore passed down), PATTERN (cases you know only from reports), or CLUES (clues you know only from reports). The number counts the hands on the evidence, never the reasoning steps: a conclusion drawn from your own clues is plain CLUES. First-hand has no number, because that is a channel: `th#N` with LIVE or MEMORY (`thodom`, `thevom`) is not used. The usual number endings apply: **-m** *about N-th hand* (`threrem`), **-r** with a digit *the same depth as before* (`threrer`). Digitless `threr` under a question asks *how many hands?*
 
@@ -316,19 +316,19 @@ Alone, `th#N` says the claim was passed on to you, without saying in what form. 
 
 ### Source (`/b/` after the channel) {#source}
 
-English *according to Azawan* and *going by the camera* name **who or what you got the claim from**. Put that noun in `/b/` right after the channel. The channel is its [host](clause.md#extra-nouns), so the `/b/` is the source, not someone who receives anything.
+English *according to Uzazon* and *going by the camera* name **who or what you got the claim from**. Put that noun in `/b/` right after the channel. The channel is its [host](clause.md#extra-nouns), so the `/b/` is the source, not someone who receives anything.
 
-> `zalahen thewam bazawan vedabal.`
+> `zolozun thewam buzazon veyorul.`
 >
-> z-Alahen | [th-REPORTED | b-Azawan] | v-departure
+> z-Olozun | [th-REPORTED | b-Uzazon] | v-departure
 >
-> "Alahen left, according to Azawan."
+> "Olozun left, according to Uzazon."
 
-> `zalahen thodom bagahol vezebal.`
+> `zolozun thodom bugawol vuzevol.`
 >
-> z-Alahen | [th-LIVE | b-camera] | v-sleep
+> z-Olozun | [th-LIVE | b-camera] | v-sleep
 >
-> "Alahen is asleep, going by the camera." (watching the feed now)
+> "Olozun is asleep, going by the camera." (watching the feed now)
 
 What you put in that `/b/` decides what it does. A person or other noun is the source: a speaker or a document on REPORTED, a screen or a recording on LIVE and MEMORY. A time [measure phrase](numbers-applied.md#measure-phrases) is an offset that dates the event instead ([dated channel](#dated-channel)).
 
@@ -338,11 +338,11 @@ What you put in that `/b/` decides what it does. A person or other noun is the s
 
 English *it turns out*, *to my surprise*, and *so … after all* say the news ran **against what you expected**. Put **`thezum`** on the clause. This `/th/` word is called **MIRATIVE**. It is not a channel: it says nothing about how you know, so add a channel beside it when you want to say that too.
 
-> `zalahen thezum vedabal.`
+> `zolozun thezum veyorul.`
 >
-> z-Alahen | th-MIRATIVE | v-departure
+> z-Olozun | th-MIRATIVE | v-departure
 >
-> "Alahen left, it turns out."
+> "Olozun left, it turns out."
 
 The ending says how firm the expectation was that the news overturned. If you do not know, use **-m**.
 
@@ -352,11 +352,11 @@ The ending says how firm the expectation was that the news overturned. If you do
 | `thezum` | it runs against what you expected (default) | *it turns out*, *surprisingly* | **-m** ≈ the ordinary case |
 | `thezur` | it runs against a loose expectation | *oh*, *as it happens* | **-r** ≈ a passing guess |
 
-> `zalahen thodom thezul vowogal.`
+> `zolozun thodom thezul voworel.`
 >
-> z-Alahen | th-LIVE | th-MIRATIVE.firm | v-walk
+> z-Olozun | th-LIVE | th-MIRATIVE.firm | v-walk
 >
-> "Alahen is walking, I see it, and I never expected that."
+> "Olozun is walking, I see it, and I never expected that."
 
 The mirative says only that the news was unexpected, not whether it is good or bad. To say how it lands, add a [feeling](sakes.md#emotion-compose): the mirative after **`gobum`** says the stimulus was unexpected.
 
@@ -368,33 +368,33 @@ The mirative says only that the news was unexpected, not whether it is good or b
 
 **Compare with:** *even* on the including hook ([`wezum al`](hooks.md#hook-w)) singles out the one unexpected member of a set. **`thezum`** says the whole claim was unexpected. For *surprisingly* on one adjective (*surprisingly tired*), put the ordinary word **`wezum`** (*amazement*) on `/w/` right before it, the same word that grades the hook in *even*:
 
-> `zazawan wezum gadadal vowogal.`
+> `zuzazon wezum gadamul voworel.`
 >
-> [z-Azawan | [w-amazement | g-tired]] | v-walk
+> [z-Uzazon | [w-amazement | g-tired]] | v-walk
 >
-> "Azawan walks, surprisingly tired."
+> "Uzazon walks, surprisingly tired."
 
 ### Forecasts (`bral`) {#forecast}
 
 English *will* can make a forecast: a claim that something will happen. Agazan has no *will* word for this. Use a channel and put **`bral`** right after it in `/b/`: a number with a plus sign and no digits, meaning *some time after now*. Because a forecast needs a channel, it always says what it rests on; for a hunch, that channel is INTUITION. The mirror, **`brul`**, is *some time before now*, for a past claim with no measured amount.
 
-> `thobam bral verehel.`
+> `thobam bral vurelal.`
 >
 > [th-PATTERN | b-later] | v-rain
 >
 > "It will rain, going by the pattern."
 
-> `zalahen thahor bral vedabal.`
+> `zolozun thahor bral veyorul.`
 >
-> z-Alahen | [th-INTUITION.weak | b-later] | v-departure
+> z-Olozun | [th-INTUITION.weak | b-later] | v-departure
 >
-> "I have a faint hunch Alahen will leave."
+> "I have a faint hunch Olozun will leave."
 
 <a id="forecast-question"></a>
 
 In a [question](questions.md#question), the channel asks what the **listener's** answer rests on: *going by the pattern you see, will it rain?* The listener answers with that channel or names a different one. Pick the channel you expect them to have: CLUES (`thunem`) when they would work it out from clues, REPORTED (`thewam`) when they would go by what they heard or read.
 
-> `yol thobam bral verehel.`
+> `yol thobam bral vurelal.`
 >
 > y-question | [th-PATTERN | b-later] | v-rain
 >
@@ -408,19 +408,19 @@ On a [feeling](sakes.md#emotion-compose) (a sake word with a locus and a motion 
 
 English *judging by*, *going by*, and *given that* name the **grounds** for a claim: the fact that tells you it holds. The three reasoned channels take grounds: CLUES (`thunem`, from clues), PATTERN (`thobam`, from cases that repeat) and DEDUCED (`thugum`, from premises). Each one takes **`barl`** as its `/b/`. The main sentence stops after `barl`, and the next sentence is the grounds ([dependent clauses](dependents.md#dependent-clauses)). You state the claim, the strength of your grounds, and the grounds themselves in one sentence.
 
-> `zalahen vabahel thunem barl zazawan vezugel.`
+> `zolozun vabavul thunem barl zuzazon vazomul.`
 >
-> z-Alahen | v-punch | [th-CLUES | b-that-clause] | z-Azawan | v-scream
+> z-Olozun | v-punch | [th-CLUES | b-that-clause] | z-Uzazon | v-scream
 >
-> "Alahen punched, judging by the fact that Azawan is screaming."
+> "Olozun punched, judging by the fact that Uzazon is screaming."
 
-Grounds are not a cause. With [`thavem barl`](causation.md#only-because), the clause after `barl` is what made the event happen. With a reasoned channel, it is only how you know the event happened: the screaming did not make Alahen punch.
+Grounds are not a cause. With [`thavem barl`](causation.md#only-because), the clause after `barl` is what made the event happen. With a reasoned channel, it is only how you know the event happened: the screaming did not make Olozun punch.
 
-> `zazawan vezugel thavem barl zalahen vabahel.`
+> `zuzazon vazomul thavem barl zolozun vabavul.`
 >
-> z-Azawan | v-scream | [th-because | b-that-clause] | z-Alahen | v-punch
+> z-Uzazon | v-scream | [th-because | b-that-clause] | z-Olozun | v-punch
 >
-> "Azawan screams because Alahen punches."
+> "Uzazon screams because Olozun punches."
 
 <!-- cheat-sheet: knowing-intending -->
 | You say | The clause after `barl` is | Form |
@@ -431,7 +431,7 @@ Grounds are not a cause. With [`thavem barl`](causation.md#only-because), the cl
 
 The ending on the channel grades the grounds ([evidence strength](#evidence-strength)): **-l** for strong clues or a well-established pattern, **-m** by default, **-r** for a weak clue or a few cases. Strong clues still fall short of a proof: when the claim **must** hold if the grounds do, use DEDUCED ([deduction](#deduction)).
 
-> `verehel thunel barl zagavul gegeval.`
+> `vurelal thunel barl zagolol gegulol.`
 >
 > v-rain | [th-CLUES.strong | b-that-clause] | [z-cloud | g-gray]
 >
@@ -439,7 +439,7 @@ The ending on the channel grades the grounds ([evidence strength](#evidence-stre
 
 For a **forecast**, keep the [offset](#forecast) and put `barl` after it. The pattern is what you go by, and the grounds clause says what you see now.
 
-> `verehel thobal bral barl zagavul gegeval.`
+> `vurelal thobal bral barl zagolol gegulol.`
 >
 > v-rain | [th-PATTERN.strong | [b-later | b-that-clause]] | [z-cloud | g-gray]
 >
@@ -447,13 +447,13 @@ For a **forecast**, keep the [offset](#forecast) and put `barl` after it. The pa
 
 You assert the grounds, the way you assert a cause. If you are not sure of them, say so inside the grounds clause with its own channel:
 
-> `zalahen vabahel thunem barl zazawan thodom vezugel.`
+> `zolozun vabavul thunem barl zuzazon thodom vazomul.`
 >
-> z-Alahen | v-punch | [th-CLUES | b-that-clause] | z-Azawan | th-LIVE | v-scream
+> z-Olozun | v-punch | [th-CLUES | b-that-clause] | z-Uzazon | th-LIVE | v-scream
 >
-> "Alahen punched, judging by the fact that Azawan is screaming, which I can hear."
+> "Olozun punched, judging by the fact that Uzazon is screaming, which I can hear."
 
-**Compare with:** a noun in `/b/` after any channel is its [source](#source) (`thewam bazawan` *according to Azawan*), and no other channel takes `barl`. A cause or condition word may not come before the channel. Put the channel first (`thunem thavem barl`) to say both that you inferred it and that it was caused. *Could be* with no grounds is [MAY](#may).
+**Compare with:** a noun in `/b/` after any channel is its [source](#source) (`thewam buzazon` *according to Uzazon*), and no other channel takes `barl`. A cause or condition word may not come before the channel. Put the channel first (`thunem thavem barl`) to say both that you inferred it and that it was caused. *Could be* with no grounds is [MAY](#may).
 
 ### Live vs memory {#live-vs-memory}
 <a id="memory-record"></a>
@@ -464,19 +464,19 @@ You assert the grounds, the way you assert a cause. If you are not sure of them,
 
 English *I see it* and *I saw it* both report watching; they differ in when you watched. LIVE **`thodom`** is for a scene still in your senses as you speak. MEMORY **`thevom`** is for a scene you remember sensing, so the event is past. Do not put both on one claim. English *I witnessed it* is MEMORY, not LIVE. (cue: memory is fishing: you pull the episode back, and it may not be what you hoped, the way a line can come up with a boot)
 
-> `zazawan thevom vahahal dubudal.`
+> `zuzazon thevom vanobol duyobal.`
 >
-> z-Azawan | th-MEMORY | v-see | d-boot
+> z-Uzazon | th-MEMORY | v-see | d-boot
 >
-> "Azawan saw a boot, as I remember it."
+> "Uzazon saw a boot, as I remember it."
 
 Footage works the same way. While you watch, it is LIVE with the device as the source; once you have watched it, it is MEMORY, because your memory of the footage can slip just as a memory of the scene can.
 
-> `zazawan thevom bagahol vowogal.`
+> `zuzazon thevom bugawol voworel.`
 >
-> z-Azawan | [th-MEMORY | b-camera] | v-walk
+> z-Uzazon | [th-MEMORY | b-camera] | v-walk
 >
-> "Azawan walked, as I remember from the camera."
+> "Uzazon walked, as I remember from the camera."
 
 | Agazan | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -488,42 +488,42 @@ Footage works the same way. While you watch, it is LIVE with the device as the s
 
 English tells a story with one *they say* or *I remember* at the start, and every sentence after it rests on the same ground. Agazan does the same. Once you put a channel on a claim, your later claims with no channel keep it: the channel is your **frame**. You name the channel once, then keep talking.
 
-> `zalahen thewam vedabal. zalahen varahal. zalahen vezehel.`
+> `zolozun thewam veyorul. zolozun varuvel. zolozun vezeyol.`
 >
-> z-Alahen | th-REPORTED | v-departure . z-Alahen | v-run . z-Alahen | v-sing
+> z-Olozun | th-REPORTED | v-departure . z-Olozun | v-run . z-Olozun | v-sing
 >
-> "Alahen left, so they say. Alahen ran. Alahen sang." (all three are what you heard)
+> "Olozun left, so they say. Olozun ran. Olozun sang." (all three are what you heard)
 
 The frame is **yours**. It covers only your own claims, and someone else who replies never inherits it. Their reply does not end it either: when you go on telling, your frame is still in force.
 
-**Which sentences take the frame:** your statements with no channel of their own, including a statement after a call, an interjection, or an answer word (`yael zalahen varahal.` *yes, Alahen ran* keeps your frame). A [question](questions.md#question) does not take it, because a channel in a question asks about the listener's grounds ([forecasts](#forecast-question)). A command, request, or prohibition does not take it, because it is not a claim. Neither ends the frame, so your next statement picks it up again.
+**Which sentences take the frame:** your statements with no channel of their own, including a statement after a call, an interjection, or an answer word (`yael zolozun varuvel.` *yes, Olozun ran* keeps your frame). A [question](questions.md#question) does not take it, because a channel in a question asks about the listener's grounds ([forecasts](#forecast-question)). A command, request, or prohibition does not take it, because it is not a claim. Neither ends the frame, so your next statement picks it up again.
 
-> `zalahen thewam vedabal. yol zalahen varahal. zalahen vezehel.`
+> `zolozun thewam veyorul. yol zolozun varuvel. zolozun vezeyol.`
 >
-> z-Alahen | th-REPORTED | v-departure . y-question | z-Alahen | v-run . z-Alahen | v-sing
+> z-Olozun | th-REPORTED | v-departure . y-question | z-Olozun | v-run . z-Olozun | v-sing
 >
-> "Alahen left, so they say. Did Alahen run? Alahen sang." (the singing is hearsay too)
+> "Olozun left, so they say. Did Olozun run? Olozun sang." (the singing is hearsay too)
 
 **What does not end it:** a new [topic](pronouns.md#topic) or a return to one, the [sentence linkers](dependents.md#sentence-linkers) (*therefore*, *however*, *meanwhile*, *next*, *but*), clause joins, asides, a [MIRATIVE](#mirative), or MAY. A story moves from one person to the next, and a surprise inside it is still part of it.
 
-> `zazawan thewam vowogal. xalahen zozan vehahel.`
+> `zuzazon thewam voworel. xolozun zozan vehuhol.`
 >
-> z-Azawan | th-REPORTED | v-walk . x-Alahen | z-TOPIC | v-sit
+> z-Uzazon | th-REPORTED | v-walk . x-Olozun | z-TOPIC | v-sit
 >
-> "Azawan walked, so they say. Now, about Alahen: Alahen sat." (the sitting is hearsay too)
+> "Uzazon walked, so they say. Now, about Olozun: Olozun sat." (the sitting is hearsay too)
 
 **What ends it:**
 
 - **A new frame.** Any channel replaces it, and so does [NOTIONAL](#notional). From there on, the new one carries.
 - **The statement word, written out.** **`yal`** (or **`yam`** / **`yar`**) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](speech-moves.md#speech-act) changes the meaning. A rhetorical **`yal yol`** is a question, so it does not count.
-- **`xavazem`** *by the way*: a digression leaves what you were telling. To go back, name the channel again.
+- **`xavadom`** *by the way*: a digression leaves what you were telling. To go back, name the channel again.
 - **A goodbye**, which ends the conversation.
 
-> `zalahen thewam vedabal. yal zalahen vezebal.`
+> `zolozun thewam veyorul. yal zolozun vuzevol.`
 >
-> z-Alahen | th-REPORTED | v-departure . y-statement | z-Alahen | v-sleep
+> z-Olozun | th-REPORTED | v-departure . y-statement | z-Olozun | v-sleep
 >
-> "Alahen left, so they say. Alahen is asleep." (the second claim no longer rests on the report)
+> "Olozun left, so they say. Olozun is asleep." (the second claim no longer rests on the report)
 
 A [quote](spans.md#writing) keeps its speaker's frame: nothing carries into it from outside, and your own frame resumes after it.
 
@@ -536,45 +536,45 @@ English *has left* and *used to tell* mix two things: when the event happened, a
 
 **RESIDUE** (`amo`) says the result still counts: an unpaid tab, a door that is still shut. Without it, you make no claim that anything is left over (the event is over and done, or nothing remains from it). As a plain noun, `zamom` is *debt*. (cue: 💰 a debt still on the books)
 
-> `zalahen hamom vedabal.`
+> `zolozun hamom veyorul.`
 >
-> z-Alahen | h-RESIDUE | v-departure
+> z-Olozun | h-RESIDUE | v-departure
 >
-> "Alahen has left and is still gone."
+> "Olozun has left and is still gone."
 
-> `zalahen thevom hamom vedabal.`
+> `zolozun thevom hamom veyorul.`
 >
-> z-Alahen | th-MEMORY | h-RESIDUE | v-departure
+> z-Olozun | th-MEMORY | h-RESIDUE | v-departure
 >
-> "I remember Alahen leaving, and Alahen is still gone."
+> "I remember Olozun leaving, and Olozun is still gone."
 
-> `zalahen thodom hamom vedabal.`
+> `zolozun thodom hamom veyorul.`
 >
-> z-Alahen | th-LIVE | h-RESIDUE | v-departure
+> z-Olozun | th-LIVE | h-RESIDUE | v-departure
 >
-> "Alahen has left and is still gone, I can see it." (what is left over is in view)
+> "Olozun has left and is still gone, I can see it." (what is left over is in view)
 
 **Compare with:** [*after*](dependents.md#time-poles) (`hanom boyel`) orders two events. **`hamom`** does not say the leaving was earlier; it says the **outcome is still in effect**. [LIVE](#live-vs-memory) is how you know, not what is left over. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
 
-**FORMER** (`eno`) says a usual pattern held, but you are **not** claiming it holds now: *Azawan always sings* as a past habit. Without it, [always](restrictors.md) **`hual`** describes the pattern as it stands now. As a plain noun, `zenom` is *emptiness*. (cue: 🪹 the nesting season is over; a former climate, not today's weather)
+**FORMER** (`eno`) says a usual pattern held, but you are **not** claiming it holds now: *Uzazon always sings* as a past habit. Without it, [always](restrictors.md) **`hual`** describes the pattern as it stands now. As a plain noun, `zenom` is *emptiness*. (cue: 🪹 the nesting season is over; a former climate, not today's weather)
 
-> `zazawan hual vezehel henom.`
+> `zuzazon hual vezeyol henom.`
 >
-> z-Azawan | h-always | v-sing | h-FORMER
+> z-Uzazon | h-always | v-sing | h-FORMER
 >
-> "Azawan always used to sing." (no claim about now)
+> "Uzazon always used to sing." (no claim about now)
 
-> `zazawan hual vezehel henom thevom.`
+> `zuzazon hual vezeyol henom thevom.`
 >
-> z-Azawan | h-always | v-sing | h-FORMER | th-MEMORY
+> z-Uzazon | h-always | v-sing | h-FORMER | th-MEMORY
 >
-> "Azawan always used to sing, as I remember."
+> "Uzazon always used to sing, as I remember."
 
-> `zazawan hual vezehel henom thobam bral.`
+> `zuzazon hual vezeyol henom thobam bral.`
 >
-> z-Azawan | h-always | v-sing | h-FORMER | [th-PATTERN | b-later]
+> z-Uzazon | h-always | v-sing | h-FORMER | [th-PATTERN | b-later]
 >
-> "Going by the pattern, always singing will be something Azawan used to do."
+> "Going by the pattern, always singing will be something Uzazon used to do."
 
 **Compare with:** PATTERN **`thobam`** says how you know (from repeated cases); it does not say the pattern is over. **`henom`** is not a past tense either: it works with LIVE and in a forecast.
 
@@ -598,23 +598,23 @@ English *already*, *still*, *not yet*, and *no longer* do not place an event in 
 | **`huzem`** | the change is expected but has not come | *not yet* | `uzel` *seedling* | 🌱: not grown yet |
 | **`hewem`** | the state has stopped | *no longer* / *not anymore* | `ewel` *wilt* | 🥀: no longer fresh |
 
-> `zazawan hagem vowogal.`
+> `zuzazon hagem voworel.`
 >
-> z-Azawan | h-still | v-walk
+> z-Uzazon | h-still | v-walk
 >
-> "Azawan is still walking."
+> "Uzazon is still walking."
 
-> `zazawan huzem vowogal.`
+> `zuzazon huzem voworel.`
 >
-> z-Azawan | h-not-yet | v-walk
+> z-Uzazon | h-not-yet | v-walk
 >
-> "Azawan hasn't walked yet."
+> "Uzazon hasn't walked yet."
 
-> `zazawan hewem vowogal ol bahazal.`
+> `zuzazon hewem voworel ol bawuhol.`
 >
-> z-Azawan | h-no-longer | v-walk | [at | b-house]
+> z-Uzazon | h-no-longer | v-walk | [at | b-house]
 >
-> "Azawan doesn't walk at the house anymore."
+> "Uzazon doesn't walk at the house anymore."
 
 The ending says how settled the current stage is, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). Use **-m** when it could change back, or when you do not know. Use **-l** when it is not expected to. Use **-r** when it holds only for now: it is likely to change back soon, or, on *not yet*, the change may never come.
 
@@ -630,25 +630,25 @@ The ending says how settled the current stage is, on the same settled-to-passing
 | `huzer` | not yet, and it may never come | *not yet, maybe never* |
 | `hewer` | stopped for now; expected to resume | *paused* / *not for now* |
 
-> `zalahen hohal vedabal.`
+> `zolozun hohal veyorul.`
 >
-> z-Alahen | h-already.lasting | v-departure
+> z-Olozun | h-already.lasting | v-departure
 >
-> "Alahen has already left, for good."
+> "Olozun has already left, for good."
 
-> `zazawan hewer vowogal.`
+> `zuzazon hewer voworel.`
 >
-> z-Azawan | h-no-longer.for-now | v-walk
+> z-Uzazon | h-no-longer.for-now | v-walk
 >
-> "Azawan has stopped walking for now." (expected to start again)
+> "Uzazon has stopped walking for now." (expected to start again)
 
 When only one `/ɡ/` adjective is still or no longer so, write the same word under `/w/` immediately before that adjective.
 
-> `zazawan dagadul wagem gezebul vahahal.`
+> `zuzazon degazol wagem gozumol vanobol.`
 >
-> z-Azawan | [d-cat | [w-still | g-sleepy]] | v-see
+> z-Uzazon | [d-cat | [w-still | g-sleepy]] | v-see
 >
-> "Azawan sees a cat that is still sleepy."
+> "Uzazon sees a cat that is still sleepy."
 
 **Compare with:** RESIDUE **`hamom`** says the outcome of a finished event is **still in effect**, not that the act goes on. FORMER **`henom`** retires a usual **pattern**; **`hewem`** says any state or act has stopped.
 
@@ -656,17 +656,17 @@ When only one `/ɡ/` adjective is still or no longer so, write the same word und
 
 English *has ever* / *has never* asks whether something happened at least once, at no particular time. Use *already* **`hoham`** with *sometimes* **`har`** ([restrictors](restrictors.md)): the change has come, on some unnamed occasion. For *has never*, use bare **`hal`** (*never*).
 
-> `zazawan hoham vezewel har.`
+> `zuzazon hoham vezevol har.`
 >
-> z-Azawan | h-already | v-swim | h-sometimes
+> z-Uzazon | h-already | v-swim | h-sometimes
 >
-> "Azawan has swum at some point."
+> "Uzazon has swum at some point."
 
-> `zazawan vezewel hal.`
+> `zuzazon vezevol hal.`
 >
-> z-Azawan | v-swim | h-never
+> z-Uzazon | v-swim | h-never
 >
-> "Azawan has never swum."
+> "Uzazon has never swum."
 
 ### Notional (as-if framing)
 <a id="notional"></a>
@@ -674,25 +674,25 @@ English *has ever* / *has never* asks whether something happened at least once, 
 
 To talk about a scene that is only imagined (*imagine …*, *as if …*, *for the sake of argument*), keep the ordinary verb and add **`avo`** plus an ending on `/th/`. This word is called **NOTIONAL**. The sentence now describes an imagined scene and makes no claim that it happens, so a pretend walk still uses the ordinary verb *walk*. (cue: 🎭 *theater*: a stage mask)
 
-> `zazawan thavom vowogal.`
+> `zuzazon thavom voworel.`
 >
-> z-Azawan | th-NOTIONAL | v-walk
+> z-Uzazon | th-NOTIONAL | v-walk
 >
-> "Imagine Azawan walking."
+> "Imagine Uzazon walking."
 
 **For *could be*, use:** [MAY](#may).
 
 NOTIONAL [carries forward](#carry-forward) like a channel, so a story you make up, or a supposition you reason through, runs over several sentences. *Once upon a time* is NOTIONAL on the first sentence.
 
-> `zazawan thavom vowogal. zazawan vehahel. zazawan vezehel.`
+> `zuzazon thavom voworel. zuzazon vehuhol. zuzazon vezeyol.`
 >
-> z-Azawan | th-NOTIONAL | v-walk . z-Azawan | v-sit . z-Azawan | v-sing
+> z-Uzazon | th-NOTIONAL | v-walk . z-Uzazon | v-sit . z-Uzazon | v-sing
 >
-> "Imagine Azawan walking. Azawan sits down. Azawan sings."
+> "Imagine Uzazon walking. Uzazon sits down. Uzazon sings."
 
 A legend that people pass on as true is not NOTIONAL: it is REPORTED, often with a [hand count](#hand-depth).
 
-**Compare with:** *walks like a duck* is a real walk; only its manner matches the model ([simile](relations.md#similative) `humum`). *Tells on behalf of Alahen* is a real telling, and Azawan is still the teller ([proxy](relations.md#proxy) `hadem`).
+**Compare with:** *walks like a duck* is a real walk; only its manner matches the model ([simile](relations.md#similative) `humum`). *Tells on behalf of Olozun* is a real telling, and Uzazon is still the teller ([proxy](relations.md#proxy) `hadem`).
 
 ### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>
@@ -707,36 +707,36 @@ The ending on NOTIONAL says what the imagining is for: with **-l** you rehearse 
 
 When you are not sure, use **`thavom`**.
 
-> `zahaben thavol vezehel.`
+> `zehalon thavol vezeyol.`
 >
-> z-Ahaben | th-NOTIONAL-rehearse | v-sing
+> z-Ehalon | th-NOTIONAL-rehearse | v-sing
 >
-> "Ahaben practices singing." (an imagined run-through, to prepare)
+> "Ehalon practices singing." (an imagined run-through, to prepare)
 
-> `zazawan thavor varadal.`
+> `zuzazon thavor vuruyel.`
 >
-> z-Azawan | th-NOTIONAL-suppose | v-write
+> z-Uzazon | th-NOTIONAL-suppose | v-write
 >
-> "Suppose Azawan writes."
+> "Suppose Uzazon writes."
 
 ### Deduction (`thugum`) {#deduction}
 <a id="deduced"></a>
 
 English *it follows that*, *P, so Q* and *by deduction* claim more than good evidence: if the premises hold, the conclusion **must** hold. Put DEDUCED (**`thugum`**) on the conclusion and the premises after **`barl`**, as in any [evidence clause](#evidence-clause). Join several premises with a [clause join](joins.md#clause-joins); a join after a stand-in stays in the dependent, so every premise is grounds. You assert the premises and the conclusion.
 
-> `zazawan vedehol thugum barl zual gaxedehothel vedehol xam zazawan gaxedehothel.`
+> `zuzazon vodeyel thugum barl zual gaxodeyethel vodeyel xam zuzazon gaxodeyethel.`
 >
-> z-Azawan | v-teach | [th-DEDUCED | b-that-clause] | [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Azawan | g-agent-x-teach-th-role]
+> z-Uzazon | v-teach | [th-DEDUCED | b-that-clause] | [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Uzazon | g-agent-x-teach-th-role]
 >
-> "Azawan teaches, since every teacher teaches and Azawan is a teacher."
+> "Uzazon teaches, since every teacher teaches and Uzazon is a teacher."
 
 To claim only that the conclusion follows, put a [pole](causation.md#only-because) between the channel and **`barl`**. The pole is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
 
-> `zazawan vedehol thugum thoyem barl zual gaxedehothel vedehol xam zazawan gaxedehothel.`
+> `zuzazon vodeyel thugum thoyem barl zual gaxodeyethel vodeyel xam zuzazon gaxodeyethel.`
 >
-> z-Azawan | v-teach | th-DEDUCED | [th-if | b-that-clause] | [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Azawan | g-agent-x-teach-th-role]
+> z-Uzazon | v-teach | th-DEDUCED | [th-if | b-that-clause] | [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Uzazon | g-agent-x-teach-th-role]
 >
-> "If every teacher teaches and Azawan is a teacher, it follows that Azawan teaches."
+> "If every teacher teaches and Uzazon is a teacher, it follows that Uzazon teaches."
 
 <!-- cheat-sheet: knowing-intending -->
 | You claim | Form | You assert |
@@ -752,19 +752,19 @@ The ending grades how far you checked the steps ([evidence strength](#evidence-s
 
 When the premises come first, open the conclusion with the linker **`xodul`** *it follows that* ([sentence linkers](dependents.md#sentence-linkers)). It reaches back to the one sentence before it, so join every premise into that sentence.
 
-> `zual gaxedehothel vedehol xam zazawan gaxedehothel. xodul zazawan vedehol.`
+> `zual gaxodeyethel vodeyel xam zuzazon gaxodeyethel. xodul zuzazon vodeyel.`
 >
-> [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Azawan | g-agent-x-teach-th-role] . x-it-follows | z-Azawan | v-teach
+> [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Uzazon | g-agent-x-teach-th-role] . x-it-follows | z-Uzazon | v-teach
 >
-> "Every teacher teaches, and Azawan is a teacher. It follows that Azawan teaches."
+> "Every teacher teaches, and Uzazon is a teacher. It follows that Uzazon teaches."
 
 A linker is not a channel, so the conclusion keeps your [frame](#carry-forward): a deduction from a report is still REPORTED. To reason from a premise you do not grant, suppose it with [NOTIONAL](#notional) **`thavor`**. The frame carries, so every step after it stays supposed. To keep what you found, state the link with its own channel, which ends the supposition:
 
-> `zazawan thavor gaxedehothel. xodul zazawan vedehol. zazawan vedehol thugum thoyem barl zazawan gaxedehothel.`
+> `zuzazon thavor gaxodeyethel. xodul zuzazon vodeyel. zuzazon vodeyel thugum thoyem barl zuzazon gaxodeyethel.`
 >
-> z-Azawan | th-NOTIONAL-suppose | g-agent-x-teach-th-role . x-it-follows | z-Azawan | v-teach . z-Azawan | v-teach | th-DEDUCED | [th-if | b-that-clause] | [z-Azawan | g-agent-x-teach-th-role]
+> z-Uzazon | th-NOTIONAL-suppose | g-agent-x-teach-th-role . x-it-follows | z-Uzazon | v-teach . z-Uzazon | v-teach | th-DEDUCED | [th-if | b-that-clause] | [z-Uzazon | g-agent-x-teach-th-role]
 >
-> "Suppose Azawan is a teacher. Then Azawan teaches. So if Azawan is a teacher, it follows that Azawan teaches."
+> "Suppose Uzazon is a teacher. Then Uzazon teaches. So if Uzazon is a teacher, it follows that Uzazon teaches."
 
 **Compare with:** strong clues (`thunel`) make a claim likely, but it can still fail with every clue true. A deduction cannot fail unless a premise does. *Because* (`thavem`) says what made it happen; a deduction says only what must be true.
 
@@ -772,17 +772,17 @@ A linker is not a channel, so the conclusion keeps your [frame](#carry-forward):
 
 English *sleepier than usual* and *bigger than it looks* compare against an expectation. Put the channel right before the rank word (**`zel`** / **`zuel`** / **`zoel`**) as the comparison's [bar](comparatives.md#bars). The bar is then **what that channel led you to expect**, not how you know the claim. After the comparison, the same word is the claim's channel again.
 
-> `zazawan thobam zel gezebul.`
+> `zuzazon thobam zel gozumol.`
 >
-> [z-Azawan | th-PATTERN | z-rank/more | g-sleepy]
+> [z-Uzazon | th-PATTERN | z-rank/more | g-sleepy]
 >
-> "Azawan is sleepier than usual."
+> "Uzazon is sleepier than usual."
 
-> `zazawan zel gezebul thobam.`
+> `zuzazon zel gozumol thobam.`
 >
-> [z-Azawan | z-rank/more | g-sleepy] | th-PATTERN
+> [z-Uzazon | z-rank/more | g-sleepy] | th-PATTERN
 >
-> "Azawan is the sleepiest, going by the pattern."
+> "Uzazon is the sleepiest, going by the pattern."
 
 | Channel as the bar | Ranks against | English |
 |--------------------|---------------|---------|
@@ -801,17 +801,17 @@ MAY and MIRATIVE give no expected value to compare against, so neither can be a 
 
 English *contrary to what I was told* and *against my gut* say the event went against what a source led you to expect. Put the channel after the hook **`uem`** (*contrary to*), the same way as a ban or a plan ([contrary to a stance](sakes.md#contrary-to-stance)). The pair names what the event goes **against**; the channel then says nothing about how you know the claim.
 
-> `zazawan vowogal uem thewam.`
+> `zuzazon voworel uem thewam.`
 >
-> z-Azawan | v-walk | [contrary-to | th-REPORTED]
+> z-Uzazon | v-walk | [contrary-to | th-REPORTED]
 >
-> "Azawan walks, contrary to what I was told."
+> "Uzazon walks, contrary to what I was told."
 
-> `zazawan vowogal uem thahom.`
+> `zuzazon voworel uem thahom.`
 >
-> z-Azawan | v-walk | [contrary-to | th-INTUITION]
+> z-Uzazon | v-walk | [contrary-to | th-INTUITION]
 >
-> "Azawan walks, against my gut."
+> "Uzazon walks, against my gut."
 
 | After **`uem`** | Goes against | English |
 |-----------------|--------------|---------|
@@ -824,134 +824,134 @@ English *contrary to what I was told* and *against my gut* say the event went ag
 
 *Off schedule* goes against a plan: **`uem thamam`** ([contrary to a stance](sakes.md#contrary-to-stance)). MIRATIVE already says the claim ran against what you expected, so it does not follow **`uem`**. MAY, NOTIONAL, RESIDUE, and FORMER do not either: none of them is something the event could go against.
 
-**Compare with:** `zazawan thezum vowogal.` says the walking surprised you. `zazawan vowogal uem thahom.` says your gut expected otherwise, whether or not the news surprised you.
+**Compare with:** `zuzazon thezum voworel.` says the walking surprised you. `zuzazon voworel uem thahom.` says your gut expected otherwise, whether or not the news surprised you.
 
 ### Whose view (holder) {#holder}
 <a id="holder-seam"></a>
 
-English *Azawan thinks…*, *she's upset*, and *he doubts it* report what is in someone else's mind as if you could see it. In Agazan, you name whose view a sentence gives (the **holder**) by joining their name onto a channel, [MAY](#may), or [NOTIONAL](#notional). Keep that word's own last letter (**-l**, **-m**, or **-r**) and write the name straight after it: `thunem` plus `azawan` is `thunemazawan`. The joining letter is the **seam**. This is the only way to name a holder, so you can never report someone's view without saying how you know it. (cue: the name hangs off the way you know it)
+English *Uzazon thinks…*, *she's upset*, and *he doubts it* report what is in someone else's mind as if you could see it. In Agazan, you name whose view a sentence gives (the **holder**) by joining their name onto a channel, [MAY](#may), or [NOTIONAL](#notional). Keep that word's own last letter (**-l**, **-m**, or **-r**) and write the name straight after it: `thunem` plus `uzazon` is `thunemuzazon`. The joining letter is the **seam**. This is the only way to name a holder, so you can never report someone's view without saying how you know it. (cue: the name hangs off the way you know it)
 
-> `zalahen thunemazawan vedabal.`
+> `zolozun thunemuzazon veyorul.`
 >
-> z-Alahen | th-CLUES-Azawan | v-departure
+> z-Olozun | th-CLUES-Uzazon | v-departure
 >
-> "I gather Azawan thinks Alahen left."
+> "I gather Uzazon thinks Olozun left."
 
-> `zalahen thewamazawan vedabal.`
+> `zolozun thewamuzazon veyorul.`
 >
-> z-Alahen | th-REPORTED-Azawan | v-departure
+> z-Olozun | th-REPORTED-Uzazon | v-departure
 >
-> "I hear Azawan thinks Alahen left."
+> "I hear Uzazon thinks Olozun left."
 
-> `zalahen thovumazawan vedabal.`
+> `zolozun thovumuzazon veyorul.`
 >
-> z-Alahen | th-MAY-Azawan | v-departure
+> z-Olozun | th-MAY-Uzazon | v-departure
 >
-> "Maybe Azawan thinks Alahen left."
+> "Maybe Uzazon thinks Olozun left."
 
-> `zalahen thavomazawan vedabal.`
+> `zolozun thavomuzazon veyorul.`
 >
-> z-Alahen | th-NOTIONAL-Azawan | v-departure
+> z-Olozun | th-NOTIONAL-Uzazon | v-departure
 >
-> "Imagine it as Azawan sees it: Alahen left."
+> "Imagine it as Uzazon sees it: Olozun left."
 
 The seam letter keeps its meaning: [evidence strength](#evidence-strength) on a channel, the [hold](#may-hold) on MAY or NOTIONAL. The name keeps its own **-n** at the end. **-n** is never a seam.
 
-> `zalahen thunelazawan vedabal.`
+> `zolozun thuneluzazon veyorul.`
 >
-> z-Alahen | th-CLUES.strong-Azawan | v-departure
+> z-Olozun | th-CLUES.strong-Uzazon | v-departure
 >
-> "I have strong clues that Azawan thinks Alahen left."
+> "I have strong clues that Uzazon thinks Olozun left."
 
-> `zalahen thewarazawan vedabal.`
+> `zolozun thewaruzazon veyorul.`
 >
-> z-Alahen | th-REPORTED.weak-Azawan | v-departure
+> z-Olozun | th-REPORTED.weak-Uzazon | v-departure
 >
-> "Rumor has it Azawan thinks Alahen left."
+> "Rumor has it Uzazon thinks Olozun left."
 
 A holder [carries forward](#carry-forward) like a channel. After it, your bare claims go on giving that person's view, until a new frame, so you can tell a stretch of the story as they see it.
 
-> `zalahen thunemazawan vedabal. zalahen vezebal.`
+> `zolozun thunemuzazon veyorul. zolozun vuzevol.`
 >
-> z-Alahen | th-CLUES-Azawan | v-departure . z-Alahen | v-sleep
+> z-Olozun | th-CLUES-Uzazon | v-departure . z-Olozun | v-sleep
 >
-> "I gather Azawan thinks Alahen left. Alahen is asleep." (the sleeping is Azawan's view too)
+> "I gather Uzazon thinks Olozun left. Olozun is asleep." (the sleeping is Uzazon's view too)
 
 The holder word ends the way a noun for that person would. **-n** is a name. **-r** [resumes](pronouns.md#resume-r) someone already named, which is English *he* / *she* / *they*, and a [role pointer](pronouns.md#role-pointers) on **-r** works too (`thunemaxar`, *I gather the latest doer thinks*). Add [associative **-x**](plurality.md#associative) after the ending for the person and their associates. A kind of person on **-lx** is some people of that kind.
 
-> `zazawan vowogal. zalahen thunemazawar vedabal.`
+> `zuzazon voworel. zolozun thunemuzazor veyorul.`
 >
-> z-Azawan | v-walk . z-Alahen | th-CLUES-←Azawan | v-departure
+> z-Uzazon | v-walk . z-Olozun | th-CLUES-←Uzazon | v-departure
 >
-> "Azawan walks. I gather they think Alahen left."
+> "Uzazon walks. I gather they think Olozun left."
 
-> `zazawan vowogal. zalahen thunemaxar vedabal.`
+> `zuzazon voworel. zolozun thunemaxar veyorul.`
 >
-> z-Azawan | v-walk . z-Alahen | th-CLUES-←agent.same | v-departure
+> z-Uzazon | v-walk . z-Olozun | th-CLUES-←agent.same | v-departure
 >
-> "Azawan walks. I gather they think Alahen left." (the latest doer: Azawan)
+> "Uzazon walks. I gather they think Olozun left." (the latest doer: Uzazon)
 
-> `zalahen thunemazawanx vedabal.`
+> `zolozun thunemuzazonx veyorul.`
 >
-> z-Alahen | th-CLUES-Azawan-x | v-departure
+> z-Olozun | th-CLUES-Uzazon-x | v-departure
 >
-> "I gather Azawan and co. think Alahen left."
+> "I gather Uzazon and co. think Olozun left."
 
-> `zalahen thunemobelx vedabal.`
+> `zolozun thunemobelx veyorul.`
 >
-> z-Alahen | th-CLUES-person-x | v-departure
+> z-Olozun | th-CLUES-person-x | v-departure
 >
-> "I gather some people think Alahen left."
+> "I gather some people think Olozun left."
 
 The holder may be the [topic pronoun](pronouns.md#topic-pronoun), whoever the conversation is about now, or the [generic pronoun](pronouns.md#generic-pronoun), the generic view. The generic pronoun takes no **-x**.
 
-> `xazawan thunemozan zalahen vedabal.`
+> `xuzazon thunemozan zolozun veyorul.`
 >
-> x-Azawan | th-CLUES-TOPIC | z-Alahen | v-departure
+> x-Uzazon | th-CLUES-TOPIC | z-Olozun | v-departure
 >
-> "Now, about Azawan: I gather Azawan thinks Alahen left."
+> "Now, about Uzazon: I gather Uzazon thinks Olozun left."
 
-> `thunemoben zalahen vedabal.`
+> `thunemoben zolozun veyorul.`
 >
-> th-CLUES-ONE | z-Alahen | v-departure
+> th-CLUES-ONE | z-Olozun | v-departure
 >
-> "I gather one would think Alahen left."
+> "I gather one would think Olozun left."
 
 **Someone else's plan** goes the same way. [PLAN](intention.md#plan-predict) alone is yours; after a holder it is theirs, and the seam word says how you know what they plan. After **`uem`** ([contrary to a stance](sakes.md#contrary-to-stance)), write the holder word, then the plan, for *against their plan*.
 
-> `zazawan thewamazawan thamam vowogal.`
+> `zuzazon thewamuzazon thamam voworel.`
 >
-> z-Azawan | th-REPORTED-Azawan | th-plan-itinerary | v-walk
+> z-Uzazon | th-REPORTED-Uzazon | th-plan-itinerary | v-walk
 >
-> "I hear Azawan plans to walk."
+> "I hear Uzazon plans to walk."
 
-> `zazawan thunemalahen thamam vowogal.`
+> `zuzazon thunemolozun thamam voworel.`
 >
-> z-Azawan | th-CLUES-Alahen | th-plan-itinerary | v-walk
+> z-Uzazon | th-CLUES-Olozun | th-plan-itinerary | v-walk
 >
-> "I gather Alahen plans for Azawan to walk."
+> "I gather Olozun plans for Uzazon to walk."
 
 The seam word keeps its `/b/` source like any channel. A schedule is not a forecast: it is a plan you know from a record, so put the record in `/b/`:
 
-> `zazawan thewalazawan bagadal thamam vezebel.`
+> `zuzazon thewaluzazon bagarel thamam vezeyel.`
 >
-> z-Azawan | [th-REPORTED.strong-Azawan | b-calendar] | th-plan-itinerary | v-tell
+> z-Uzazon | [th-REPORTED.strong-Uzazon | b-calendar] | th-plan-itinerary | v-tell
 >
-> "Going by the official calendar, Azawan plans to speak."
+> "Going by the official calendar, Uzazon plans to speak."
 
-> `zazawan vowogal uem thunemalahen thamam.`
+> `zuzazon voworel uem thunemolozun thamam.`
 >
-> z-Azawan | v-walk | [contrary-to | th-CLUES-Alahen | th-plan-itinerary]
+> z-Uzazon | v-walk | [contrary-to | th-CLUES-Olozun | th-plan-itinerary]
 >
-> "Azawan walks, against Alahen's plan, as far as I can tell."
+> "Uzazon walks, against Olozun's plan, as far as I can tell."
 
 **Someone else's motive** goes the same way. A [motive](sakes.md#sake-preference) word alone names what the act serves for you; it does not say why the actor does it. After a holder, the motive is the holder's, and the seam word says how you know their reason.
 
-> `zazawan vezebel thanathom thunemazawan.`
+> `zuzazon vezeyel thanathom thunemuzazon.`
 >
-> z-Azawan | v-tell | th-relatedness-motive-any-term | th-CLUES-Azawan
+> z-Uzazon | v-tell | th-relatedness-motive-any-term | th-CLUES-Uzazon
 >
-> "I gather Azawan talks to feel connected."
+> "I gather Uzazon talks to feel connected."
 
 **The seam word is yours; the rest of the clause is the holder's.** The word that carries the name says how **you** know about the holder's view: you inferred it, heard it, guess it, or are imagining it. You claim nothing about whether the holder is right, and nothing about your own view. Everything else in the clause, wherever it sits, belongs to the holder:
 
@@ -965,63 +965,63 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 | The grounds after an inferring or pattern host's [`barl`](#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
 | A comparison [bar](comparatives.md#bars) | your expectation | the holder's expectation |
 
-> `zumel wanathumol gobum balahen thunemazawan.`
+> `zumel wanathumol gobum bolozun thunemuzazon.`
 >
-> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Alahen]] | th-CLUES-Azawan
+> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Olozun]] | th-CLUES-Uzazon
 >
-> "I gather Azawan resents Alahen over the memo, holding it in."
+> "I gather Uzazon resents Olozun over the memo, holding it in."
 
-> `zalahen thunemazawan thodom vedabal.`
+> `zolozun thunemuzazon thodom veyorul.`
 >
-> z-Alahen | th-CLUES-Azawan | th-LIVE | v-departure
+> z-Olozun | th-CLUES-Uzazon | th-LIVE | v-departure
 >
-> "I gather Azawan is watching Alahen leave."
+> "I gather Uzazon is watching Olozun leave."
 
-> `zalahen thezum thunemazawan vedabal.`
+> `zolozun thezum thunemuzazon veyorul.`
 >
-> z-Alahen | th-MIRATIVE | th-CLUES-Azawan | v-departure
+> z-Olozun | th-MIRATIVE | th-CLUES-Uzazon | v-departure
 >
-> "I gather Alahen's leaving surprised Azawan." (the surprise is Azawan's)
+> "I gather Olozun's leaving surprised Uzazon." (the surprise is Uzazon's)
 
 A holder on a comparison bar names **whose expectation** you rank against. Inside the fence the seam covers only the bar: the ranking itself is still your claim.
 
-> `zazawan thahomalahen zel gezebul.`
+> `zuzazon thahomolozun zel gozumol.`
 >
-> [z-Azawan | th-INTUITION-Alahen | z-rank/more | g-sleepy]
+> [z-Uzazon | th-INTUITION-Olozun | z-rank/more | g-sleepy]
 >
-> "Azawan is sleepier than Alahen expected."
+> "Uzazon is sleepier than Olozun expected."
 
 A holder on a channel after [**`uem`**](#channel-frame) names **whose view** the event goes against. The seam covers only that pair: the event is still your claim.
 
-> `zazawan vowogal uem thewamalahen.`
+> `zuzazon voworel uem thewamolozun.`
 >
-> z-Azawan | v-walk | [contrary-to | th-REPORTED-Alahen]
+> z-Uzazon | v-walk | [contrary-to | th-REPORTED-Olozun]
 >
-> "Azawan walks, contrary to what I hear Alahen thinks."
+> "Uzazon walks, contrary to what I hear Olozun thinks."
 
 A [feeling with no object](sakes.md#feeling-no-object) works the same way: the holder makes it someone else's feeling.
 
-> `thulothuruor thunemalahen.`
+> `thulothuruor thunemolozun.`
 >
-> th-competence-unmet-passing-UNPLACED-SURGING | th-CLUES-Alahen
+> th-competence-unmet-passing-UNPLACED-SURGING | th-CLUES-Olozun
 >
-> "I gather Alahen is anxious."
+> "I gather Olozun is anxious."
 
-Pronouns and speech moves stay yours: **`amun`** is still you, and the sentence is still your turn. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thewamazawan bral` is *I hear Azawan expects it*. A holder is not a [source](#source): a source in `/b/` is where a claim came to you from, and the claim stays yours to pass on; a holder makes the claim the holder's view.
+Pronouns and speech moves stay yours: **`amun`** is still you, and the sentence is still your turn. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thewamuzazon bral` is *I hear Uzazon expects it*. A holder is not a [source](#source): a source in `/b/` is where a claim came to you from, and the claim stays yours to pass on; a holder makes the claim the holder's view.
 
 **One clause, one holder.** The holder covers its clause and any dependent sentence inside it; a new `/x/` sentence is yours again unless it has its own seam word. A dependent with its own seam word switches holder for that sentence only. That is how you take a stance on someone else's stance: your stance in the main sentence, theirs in a dependent.
 
-> `wanathum gobum zarl zalahen wanathum gobum thunemazawan.`
+> `wanathum gobum zarl zolozun wanathum gobum thunemuzazon.`
 >
-> [w-relatedness-unmet-modifiable | g-stimulus] | z-that-clause | [z-Alahen | [w-relatedness-unmet-modifiable | g-stimulus]] | th-CLUES-Azawan
+> [w-relatedness-unmet-modifiable | g-stimulus] | z-that-clause | [z-Olozun | [w-relatedness-unmet-modifiable | g-stimulus]] | th-CLUES-Uzazon
 >
-> "It sits badly with me that, as I gather, Alahen sits badly with Azawan."
+> "It sits badly with me that, as I gather, Olozun sits badly with Uzazon."
 
-The first sake word has no holder, so it is yours. The second is Azawan's.
+The first sake word has no holder, so it is yours. The second is Uzazon's.
 
 Only the seven channels, MAY, and NOTIONAL take a holder: they are the ways you can have access to someone else's view. When they told you in their own words, a [cite](spans.md#writing) keeps their wording instead.
 
-**Compare with:** being upset **for** Azawan is your own feeling about Azawan's stake (the ON-BEHALF locus in [emotion compose](sakes.md#emotion-compose)); with a holder the feeling is Azawan's. *On behalf of* Azawan is [proxy](relations.md#proxy) (`hadem`). A `/b/` on [permission](sakes.md#permission) or [consent](sakes.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](x-compounds.md#lexical-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
+**Compare with:** being upset **for** Uzazon is your own feeling about Uzazon's stake (the ON-BEHALF locus in [emotion compose](sakes.md#emotion-compose)); with a holder the feeling is Uzazon's. *On behalf of* Uzazon is [proxy](relations.md#proxy) (`hadem`). A `/b/` on [permission](sakes.md#permission) or [consent](sakes.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](x-compounds.md#lexical-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
 
 ### Practice {#intermediate-practice}
 
@@ -1033,9 +1033,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agazan | Cue |
 |---------|--------|-----|
-| *mute* | `vamuyul` | 🔇 |
-| *cloud* | `agavul` | ☁️ |
-| *gray* | `egeval` | 🩶 |
+| *mute* | `vumuwul` | 🔇 |
+| *cloud* | `agolol` | ☁️ |
+| *gray* | `egulol` | 🩶 |
 | *LIVE* | `thodom` | 👁️‍🗨️ from *attest*: seen at the scene |
 | *MEMORY* | `thevom` | 🎣 from *fishing*: pulled up from memory |
 | *PATTERN* | `thobam` | 🐾 from *paw-prints*: a trail of cases |
@@ -1051,97 +1051,97 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agazan |
 |---------|--------|
-| *Azawan* | `azawan` |
-| *Alahen* | `alahen` |
-| *Ahaben* | `ahaben` |
-| *camera* | `agahol` |
-| *radio* | `eredel` |
-| *rain* | `erehel` |
-| *departure* | `vedabal` |
-| *tell* | `vezebel` |
-| *see* | `vahahal` |
-| *sing* | `vezehel` |
-| *scream* | `vezugel` |
-| *punch* | `vabahel` |
-| *sleep* | `vezebal` |
+| *Uzazon* | `uzazon` |
+| *Olozun* | `olozun` |
+| *Ehalon* | `ehalon` |
+| *camera* | `ugawol` |
+| *radio* | `arewol` |
+| *rain* | `urelal` |
+| *departure* | `veyorul` |
+| *tell* | `vezeyel` |
+| *see* | `vanobol` |
+| *sing* | `vezeyol` |
+| *scream* | `vazomul` |
+| *punch* | `vabavul` |
+| *sleep* | `vuzevol` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *I can see that Azawan has left and is still gone.*
+**1.** *I can see that Uzazon has left and is still gone.*
 
 ::: details Show answer
-`zazawan thodom hamom vedabal.`
+`zuzazon thodom hamom veyorul.`
 
-z-Azawan | th-LIVE | h-RESIDUE | v-departure
+z-Uzazon | th-LIVE | h-RESIDUE | v-departure
 :::
 
-**2.** *I heard third-hand that Alahen screams.*
+**2.** *I heard third-hand that Olozun screams.*
 
 ::: details Show answer
-`zalahen thewam threrel vezugel.`
+`zolozun thewam threrel vazomul.`
 
-z-Alahen | th-REPORTED | th-3rd-hand | v-scream
+z-Olozun | th-REPORTED | th-3rd-hand | v-scream
 :::
 
-**3.** *Going by a well-established pattern, Azawan will tell Ahaben.*
+**3.** *Going by a well-established pattern, Uzazon will tell Ehalon.*
 
 ::: details Show answer
-`zazawan thobal bral vezebel bahaben.`
+`zuzazon thobal bral vezeyel behalon.`
 
-z-Azawan | [th-PATTERN.strong | b-later] | v-tell | b-Ahaben
+z-Uzazon | [th-PATTERN.strong | b-later] | v-tell | b-Ehalon
 :::
 
-**4.** *Azawan has sung at some point.*
+**4.** *Uzazon has sung at some point.*
 
 ::: details Show answer
-`zazawan hoham vezehel har.`
+`zuzazon hoham vezeyol har.`
 
-z-Azawan | h-already | v-sing | h-sometimes
+z-Uzazon | h-already | v-sing | h-sometimes
 :::
 
-**5.** *I gather Alahen's singing surprised Azawan.* (the surprise is Azawan's)
+**5.** *I gather Olozun's singing surprised Uzazon.* (the surprise is Uzazon's)
 
 ::: details Show answer
-`zalahen thezum thunemazawan vezehel.`
+`zolozun thezum thunemuzazon vezeyol.`
 
-z-Alahen | th-MIRATIVE | th-CLUES-Azawan | v-sing
+z-Olozun | th-MIRATIVE | th-CLUES-Uzazon | v-sing
 :::
 
-**6.** *Imagine Alahen muting the radio.*
+**6.** *Imagine Olozun muting the radio.*
 
 ::: details Show answer
-`zalahen thavom vamuyul deredel.`
+`zolozun thavom vumuwul darewol.`
 
-z-Alahen | th-NOTIONAL | v-mute | d-radio
+z-Olozun | th-NOTIONAL | v-mute | d-radio
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `zalahen thevom bagahol vezehel.`
+**1.** `zolozun thevom bugawol vezeyol.`
 
 ::: details Show answer
-z-Alahen | [th-MEMORY | b-camera] | v-sing
+z-Olozun | [th-MEMORY | b-camera] | v-sing
 
-*Alahen sang, as I remember from the camera.*
+*Olozun sang, as I remember from the camera.*
 :::
 
-**2.** `zalahen thevom vahahal deredel. yal zalahen vezebal.`
+**2.** `zolozun thevom vanobol darewol. yal zolozun vuzevol.`
 
 ::: details Show answer
-z-Alahen | th-MEMORY | v-see | d-radio . y-statement | z-Alahen | v-sleep
+z-Olozun | th-MEMORY | v-see | d-radio . y-statement | z-Olozun | v-sleep
 
-*Alahen saw a radio, as I remember. Alahen is asleep.* (the second claim does not rest on memory)
+*Olozun saw a radio, as I remember. Olozun is asleep.* (the second claim does not rest on memory)
 :::
 
-**3.** `zalahen huzel vedabal.`
+**3.** `zolozun huzel veyorul.`
 
 ::: details Show answer
-z-Alahen | h-not-yet.lasting | v-departure
+z-Olozun | h-not-yet.lasting | v-departure
 
-*Alahen hasn't left yet, but will.*
+*Olozun hasn't left yet, but will.*
 :::
 
-**4.** `verehel thobal bral barl zagavul gegeval.`
+**4.** `vurelal thobal bral barl zagolol gegulol.`
 
 ::: details Show answer
 v-rain | [th-PATTERN.strong | [b-later | b-that-clause]] | [z-cloud | g-gray]
@@ -1149,52 +1149,52 @@ v-rain | [th-PATTERN.strong | [b-later | b-that-clause]] | [z-cloud | g-gray]
 *It will rain, going by the well-established pattern, given the gray clouds.*
 :::
 
-**5.** `zalahen henom zel gegeval.`
+**5.** `zolozun henom zel gegulol.`
 
 ::: details Show answer
-[z-Alahen | h-FORMER | z-rank/more | g-gray]
+[z-Olozun | h-FORMER | z-rank/more | g-gray]
 
-*Alahen is grayer than Alahen used to be.*
+*Olozun is grayer than Olozun used to be.*
 :::
 
-**6.** `zahaben vezehel uem thewam.`
+**6.** `zehalon vezeyol uem thewam.`
 
 ::: details Show answer
-z-Ahaben | v-sing | [contrary-to | th-REPORTED]
+z-Ehalon | v-sing | [contrary-to | th-REPORTED]
 
-*Ahaben sings, contrary to what I was told.*
+*Ehalon sings, contrary to what I was told.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *There are gray clouds, and there is rain if there are gray clouds; so there is rain, and you could write out every step.* `zerehel thugul barl zagavul gegeval xam zerehel goyem bagavul gegeval.` or `zerehel thugum barl zagavul gegeval xam zerehel goyem bagavul gegeval.`
+**1.** *There are gray clouds, and there is rain if there are gray clouds; so there is rain, and you could write out every step.* `zurelal thugul barl zagolol gegulol xam zurelal goyem bagolol gegulol.` or `zurelal thugum barl zagolol gegulol xam zurelal goyem bagolol gegulol.`
 
 ::: details Show answer
-`zerehel thugul barl zagavul gegeval xam zerehel goyem bagavul gegeval.`
+`zurelal thugul barl zagolol gegulol xam zurelal goyem bagolol gegulol.`
 
 z-rain | [th-DEDUCED.strong | b-that-clause] | [[z-cloud | g-gray] | x-and.open | z-rain | [g-if | [b-cloud | g-gray]]]
 
 DEDUCED with **-l** means you could show every step; **-m** means you could name the premises and the rule.
 :::
 
-**2.** *Ahaben practices singing.* `zahaben thavol vezehel.` or `zahaben thavom vezehel.`
+**2.** *Ehalon practices singing.* `zehalon thavol vezeyol.` or `zehalon thavom vezeyol.`
 
 ::: details Show answer
-`zahaben thavol vezehel.`
+`zehalon thavol vezeyol.`
 
-z-Ahaben | th-NOTIONAL-rehearse | v-sing
+z-Ehalon | th-NOTIONAL-rehearse | v-sing
 
 NOTIONAL with **-l** is a rehearsal; **-m** only imagines the singing.
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Alahen punched, judging by the fact that Azawan screams.* <!-- lint: error -->`zalahen vabahel thavem barl zazawan vezugel.`
+**1.** *Olozun punched, judging by the fact that Uzazon screams.* <!-- lint: error -->`zolozun vabavul thavem barl zuzazon vazomul.`
 
 ::: details Show answer
-`zalahen vabahel thunem barl zazawan vezugel.`
+`zolozun vabavul thunem barl zuzazon vazomul.`
 
-z-Alahen | v-punch | [th-CLUES | b-that-clause] | z-Azawan | v-scream
+z-Olozun | v-punch | [th-CLUES | b-that-clause] | z-Uzazon | v-scream
 
 The scream is your evidence, so it goes after CLUES; **`thavem`** would make the scream the cause of the punch.
 :::
@@ -1208,23 +1208,23 @@ The `/th/` words on this page (MAY, the channels, NOTIONAL) and the `/h/` words 
 
 Only words about **how you know** or **how things stand** move to `/w/` this way: the ones above, [CAUSE](causation.md#cause), the [*already* / *still* words](#phasal), and [*can* with `ubo`](intention.md#ability-fallback). A plan, decision, try, or want stays on its own letter (`/th/`, or `/h/` for a try): on `/w/` the same spelling is the ordinary word of its root (`wamam` *as planned*, `wehum` *decidedly*, `wudum` *tentatively*, `wohum` *wishfully*).
 
-> `zazawan dahodal wevom geredal vahahal.`
+> `zuzazon dahobol wevom gerolol vanobol.`
 >
-> z-Azawan | [d-hat | [w-MEMORY | g-red]] | v-see
+> z-Uzazon | [d-hat | [w-MEMORY | g-red]] | v-see
 >
-> "Azawan sees a hat that I remember as red."
+> "Uzazon sees a hat that I remember as red."
 
-> `zazawan dahodal wodom geredal vahahal.`
+> `zuzazon dahobol wodom gerolol vanobol.`
 >
-> z-Azawan | [d-hat | [w-LIVE | g-red]] | v-see
+> z-Uzazon | [d-hat | [w-LIVE | g-red]] | v-see
 >
-> "Azawan sees a hat that I can see is red."
+> "Uzazon sees a hat that I can see is red."
 
-> `zazawan wamom gadadal vowogal.`
+> `zuzazon wamom gadamul voworel.`
 >
-> [z-Azawan | [w-RESIDUE | g-tired]] | v-walk
+> [z-Uzazon | [w-RESIDUE | g-tired]] | v-walk
 >
-> "Azawan walks, still tired." (the tiredness from earlier has not worn off)
+> "Uzazon walks, still tired." (the tiredness from earlier has not worn off)
 
 ### Dated channel (signed offset) {#dated-channel}
 <a id="ago"></a>
@@ -1232,17 +1232,17 @@ Only words about **how you know** or **how things stand** move to `/w/` this way
 
 English *three hours ago* and *in three hours* count from now. Agazan counts from the channel instead: put a [measure phrase](numbers-applied.md#measure-phrases) in `/b/` immediately after the evidential. Any other noun there is the [source](#source); a time measure is the offset. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
 
-> `zazawan thevom bagazem grurel vowogal.`
+> `zuzazon thevom balarum grurel voworel.`
 >
-> z-Azawan | [th-MEMORY | [b-hour | g-minus-three]] | v-walk
+> z-Uzazon | [th-MEMORY | [b-hour | g-minus-three]] | v-walk
 >
-> "I saw Azawan walk three hours ago."
+> "I saw Uzazon walk three hours ago."
 
-> `zalahen thewam bagazem grarel vedabal.`
+> `zolozun thewam balarum grarel veyorul.`
 >
-> z-Alahen | [th-REPORTED | [b-hour | g-three]] | v-departure
+> z-Olozun | [th-REPORTED | [b-hour | g-three]] | v-departure
 >
-> "I hear Alahen leaves in three hours."
+> "I hear Olozun leaves in three hours."
 
 Some channels only point one way:
 
@@ -1258,15 +1258,15 @@ The wrong sign on a one-way word (**`thevom`** with **`+`**, **`thamam`** with *
 
 A [carried](#carry-forward) channel keeps its offset. Date the first sentence of a story, and the bare sentences after it happen then too, so a past story needs no tense and no offset on every line. A new offset starts a new frame.
 
-> `zazawan thevom bazazam gruwol vowogal. zazawan vehahel.`
+> `zuzazon thevom bozarom gruwol voworel. zuzazon vehuhol.`
 >
-> z-Azawan | [th-MEMORY | [b-day | g-minus-one]] | v-walk . z-Azawan | v-sit
+> z-Uzazon | [th-MEMORY | [b-day | g-minus-one]] | v-walk . z-Uzazon | v-sit
 >
-> "I saw Azawan walk yesterday. Azawan sat down." (the sitting was yesterday too, as I remember)
+> "I saw Uzazon walk yesterday. Uzazon sat down." (the sitting was yesterday too, as I remember)
 
-A signed measure in the `/b/` of a [time pole](dependents.md#time-poles) (**`homam`** *until*, **`heveham`** *by*, **`habam`** *before*, **`hanom`** *after*, **`huwem`** *during*) counts from now, the same way. The pole itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel of its own (a carried frame does not count). So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a pole to slip in a past or future with no warrant. An absolute date in the pole (`homam b_#22,7`) needs none of this.
+A signed measure in the `/b/` of a [time pole](dependents.md#time-poles) (**`homam`** *until*, **`hevehum`** *by*, **`habam`** *before*, **`hanom`** *after*, **`huwem`** *during*) counts from now, the same way. The pole itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel of its own (a carried frame does not count). So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a pole to slip in a past or future with no warrant. An absolute date in the pole (`homam b_#22,7`) needs none of this.
 
-> `yel vaheham zehon homam bazazam grawol.`
+> `yel vehamum zehon homam bozarom grawol.`
 >
 > y-command | v-confidentiality | z-listener | [h-until | [b-day | g-one]]
 >
@@ -1274,13 +1274,13 @@ A signed measure in the `/b/` of a [time pole](dependents.md#time-poles) (**`hom
 
 For *just* and *about to*, use the [just-short](numbers.md#just-short) amount with no unit: **`brubul`** is *a hair before now*, **`brabul`** is *a hair after now*.
 
-> `zazawan thevom brubul vowogal.`
+> `zuzazon thevom brubul voworel.`
 >
-> z-Azawan | [th-MEMORY | b---e-] | v-walk
+> z-Uzazon | [th-MEMORY | b---e-] | v-walk
 >
-> "I just saw Azawan walk."
+> "I just saw Uzazon walk."
 
-> `thunem brabul verehel.`
+> `thunem brabul vurelal.`
 >
 > [th-CLUES | b-+-e-] | v-rain
 >
@@ -1288,7 +1288,7 @@ For *just* and *about to*, use the [just-short](numbers.md#just-short) amount wi
 
 For *soon*, soften that hair with open **-m**: **`brabum`** is *a short while after now*. It is later than *about to* (`brabul`) but still close, unlike open-ended *later* (`bral`).
 
-> `thunem brabum verehel.`
+> `thunem brabum vurelal.`
 >
 > [th-CLUES | b-+-e-.about] | v-rain
 >
@@ -1296,25 +1296,25 @@ For *soon*, soften that hair with open **-m**: **`brabum`** is *a short while af
 
 The mirror, **`brubum`**, is *a short while before now*: *recently*.
 
-> `zazawan thevom brubum vowogal.`
+> `zuzazon thevom brubum voworel.`
 >
-> z-Azawan | [th-MEMORY | b---e-.about] | v-walk
+> z-Uzazon | [th-MEMORY | b---e-.about] | v-walk
 >
-> "I saw Azawan walk recently."
+> "I saw Uzazon walk recently."
 
-> `zalahen thobam bagazem grurel vezebal.`
+> `zolozun thobam balarum grurel vuzevol.`
 >
-> z-Alahen | [th-PATTERN | [b-hour | g-minus-three]] | v-sleep
+> z-Olozun | [th-PATTERN | [b-hour | g-minus-three]] | v-sleep
 >
-> "Going by the pattern, Alahen slept three hours ago."
+> "Going by the pattern, Olozun slept three hours ago."
 
 A channel used as a comparison [bar](comparatives.md#bars) takes the same offset, which dates the bar: MEMORY with a day before is *than yesterday*.
 
-> `zazawan thevom bazazam gruwol zel gezebul.`
+> `zuzazon thevom bozarom gruwol zel gozumol.`
 >
-> [z-Azawan | [th-MEMORY | [b-day | g-minus-one]] | z-rank/more | g-sleepy]
+> [z-Uzazon | [th-MEMORY | [b-day | g-minus-one]] | z-rank/more | g-sleepy]
 >
-> "Azawan is sleepier than yesterday."
+> "Uzazon is sleepier than yesterday."
 
 With an [as-of](relations.md#as-of) pair, the offset counts from the as-of moment instead of from the moment you speak.
 
@@ -1324,19 +1324,19 @@ With an [as-of](relations.md#as-of) pair, the offset counts from the as-of momen
 
 Agazan has no short *now* word. Say *now* with an offset of **zero**: the event sits no time away from the moment you speak. The channel stays, so *now* still says how you know it.
 
-> `zalahen thunem bagazem grazol vezebal.`
+> `zolozun thunem balarum grazol vuzevol.`
 >
-> z-Alahen | [th-CLUES | [b-hour | g-zero]] | v-sleep
+> z-Olozun | [th-CLUES | [b-hour | g-zero]] | v-sleep
 >
-> "Alahen must be asleep right now."
+> "Olozun must be asleep right now."
 
 The unit sets how wide *now* is. Zero hours is *right now*; zero [days](numbers-applied.md#stock-units) is *today*.
 
-> `zazawan thewam bazazam grazol vezehel.`
+> `zuzazon thewam bozarom grazol vezeyol.`
 >
-> z-Azawan | [th-REPORTED | [b-day | g-zero]] | v-sing
+> z-Uzazon | [th-REPORTED | [b-day | g-zero]] | v-sing
 >
-> "I hear Azawan sings today."
+> "I hear Uzazon sings today."
 
 Use zero on a channel that takes either sign. **LIVE** `thodom` already means *now in view*, so it needs no offset. **MEMORY** takes **`-`** only and PLAN takes **`+`** only, so zero is not a sentence on them.
 
@@ -1346,46 +1346,46 @@ Use zero on a channel that takes either sign. **LIVE** `thodom` already means *n
 
 English *always*, *usually*, *every*, and *never* make a general claim. The [universal fences](joins.md#universals-domains-generics) (`zual` / `zuam`) and the [restrictors](restrictors.md) (`hual` / `huam` / `hal`) already say **who** or **when** the claim covers, and their ending says how many exceptions it allows: closed **-l** allows none, and open **-m** leaves them open, as on any list (*usually*, *as a rule*). No other word is needed for the claim itself.
 
-> `zazawan huam vowogal.`
+> `zuzazon huam voworel.`
 >
-> z-Azawan | h-always.open | v-walk
+> z-Uzazon | h-always.open | v-walk
 >
-> "Azawan usually walks."
+> "Uzazon usually walks."
 
 To say **how you know** the general claim, add a [channel](#evidentiality). On a clause with a universal fence or restrictor, the channel is your warrant for the whole generalization, not for one case, and its [ending](#evidence-strength) says how much backs it.
 
-> `zazawan hual vowogal thobar.`
+> `zuzazon hual voworel thobar.`
 >
-> z-Azawan | h-always | v-walk | th-PATTERN.weak
+> z-Uzazon | h-always | v-walk | th-PATTERN.weak
 >
-> "Azawan always walks, from the few cases I have seen."
+> "Uzazon always walks, from the few cases I have seen."
 
-> `zual gaxedehothel vedehol thugul.`
+> `zual gaxodeyethel vodeyel thugul.`
 >
 > [z-everything | g-agent-x-teach-th-role] | v-teach | th-DEDUCED.strong
 >
 > "It follows that every teacher teaches." (every step could be shown)
 
-> `zalahen hal vabahel thewal bazagul.`
+> `zolozun hal vabavul thewal bozaval.`
 >
-> z-Alahen | h-never | v-punch | [th-REPORTED.strong | b-soccer]
+> z-Olozun | h-never | v-punch | [th-REPORTED.strong | b-soccer]
 >
-> "Alahen never punches, per the soccer rules."
+> "Olozun never punches, per the soccer rules."
 
 The fence says how far the claim reaches, and the channel says what it rests on. Keep the two apart: *always, as far as I have checked* is closed **`hual`** with a weak channel, because you claim no exceptions on thin evidence. Open **`huam`** does not claim that: it leaves the exceptions open.
 
 | English | Fence or restrictor | Channel | Example |
 |---------|---------------------|---------|---------|
-| *usually*, *as a rule* | `huam` / `zuam` | any, or none | `zazawan huam vowogal.` |
-| *always, as far as I have checked* | `hual` / `zual` | a weak channel | `zazawan hual vowogal thobar.` |
-| *it follows that every …* | `zual` | DEDUCED.strong `thugul` | `zual gaxedehothel vedehol thugul.` |
-| *by definition* | `zual` + `thedam barl` | none | `zual gobel gaxedehothel thedam barl zober vedehol.` |
-| *under the rules of …* | `hal` / `hual` | REPORTED.strong with the rules in `/b/` | `zalahen hal vabahel thewal bazagul.` |
-| *cats are sleepy* (in general) | `zuam` + kind | any, or none | `zuam gagadul gezebul thobam.` |
+| *usually*, *as a rule* | `huam` / `zuam` | any, or none | `zuzazon huam voworel.` |
+| *always, as far as I have checked* | `hual` / `zual` | a weak channel | `zuzazon hual voworel thobar.` |
+| *it follows that every …* | `zual` | DEDUCED.strong `thugul` | `zual gaxodeyethel vodeyel thugul.` |
+| *by definition* | `zual` + `thedam barl` | none | `zual gobel gaxodeyethel thedam barl zober vodeyel.` |
+| *under the rules of …* | `hal` / `hual` | REPORTED.strong with the rules in `/b/` | `zolozun hal vabavul thewal bozaval.` |
+| *cats are sleepy* (in general) | `zuam` + kind | any, or none | `zuam gegazol gozumol thobam.` |
 
-A [cause or condition](causation.md) on a general claim says how things work. It holds for **each** member or occasion, the same way the verb does. Inside the sentence after **`barl`**, resume the kind with **-r** (`zagadur`) to mean *that same one*: each cat, in turn.
+A [cause or condition](causation.md) on a general claim says how things work. It holds for **each** member or occasion, the same way the verb does. Inside the sentence after **`barl`**, resume the kind with **-r** (`zegazor`) to mean *that same one*: each cat, in turn.
 
-> `zual gagadul vezebal thegem thoyem barl zagadur gezebul.`
+> `zual gegazol vuzevol thegem thoyem barl zegazor gozumol.`
 >
 > [z-everything | g-cat] | v-sleep | th-CAUSE | [th-if | b-that-clause] | [z-←cat | g-sleepy]
 >
@@ -1393,13 +1393,13 @@ A [cause or condition](causation.md) on a general claim says how things work. It
 
 A **definition** works both ways: whatever has the property is that kind, and every member of the kind has it. Write it on a closed fence with **`thedam`** (*if and only if*, from [causation](causation.md#only-because)). The grounds sentence is the defining property. A definition needs no channel, because it is a decision about a word, not a report about the world.
 
-> `zual gobel gaxedehothel thedam barl zober vedehol.`
+> `zual gobel gaxodeyethel thedam barl zober vodeyel.`
 >
 > [z-everything | g-person] | g-agent-x-teach-th-role | [th-iff | b-that-clause] | z-←person | v-teach
 >
 > "By definition, a person is a teacher if and only if they teach."
 
-The channel stays on the main sentence and covers the whole generalization. Put it before the pole, as with the [evidence clause](#evidence-clause): `zual gagadul vezebal thobal thoyem barl …` is *going by a well-established pattern, every cat sleeps when …*.
+The channel stays on the main sentence and covers the whole generalization. Put it before the pole, as with the [evidence clause](#evidence-clause): `zual gegazol vuzevol thobal thoyem barl …` is *going by a well-established pattern, every cat sleeps when …*.
 
 **Compare with:** a general claim you are **not** giving as today's report is [FORMER](#former-climate) (`henom`). *Every cat must sleep* as a rule someone sets is [REQUIRE](sakes.md#requirement) (`thumem`), not a law of how things work. *Maybe every cat sleeps* is [MAY](#may) on the same clause.
 
@@ -1413,75 +1413,75 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 | English | Agazan | Cue |
 |---------|--------|-----|
-| *cat* | `agadul` | 🐈 |
-| *hat* | `ahodal` | 🧢 |
+| *cat* | `egazol` | 🐈 |
+| *hat* | `ahobol` | 🧢 |
 
 **Review:**
 
 | English | Agazan |
 |---------|--------|
-| *Azawan* | `azawan` |
-| *Alahen* | `alahen` |
+| *Uzazon* | `uzazon` |
+| *Olozun* | `olozun` |
 | *LIVE* | `thodom` |
 | *MEMORY* | `thevom` |
 | *PATTERN* | `thobam` |
 | *CAUSE* | `thegem` |
 | *if* | `thoyem` |
-| *sleepy* | `ezebul` |
-| *red* | `eredal` |
-| *hour* | `agazem` |
-| *camera* | `agahol` |
-| *walk* | `vowogal` |
-| *write* | `varadal` |
-| *sit* | `vehahel` |
-| *sleep* | `vezebal` |
-| *see* | `vahahal` |
+| *sleepy* | `ozumol` |
+| *red* | `erolol` |
+| *hour* | `alarum` |
+| *camera* | `ugawol` |
+| *walk* | `voworel` |
+| *write* | `vuruyel` |
+| *sit* | `vehuhol` |
+| *sleep* | `vuzevol` |
+| *see* | `vanobol` |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
-**1.** *Alahen sees a hat that I can see is red.*
+**1.** *Olozun sees a hat that I can see is red.*
 
 ::: details Show answer
-`zalahen dahodal wodom geredal vahahal.`
+`zolozun dahobol wodom gerolol vanobol.`
 
-z-Alahen | [d-hat | [w-LIVE | g-red]] | v-see
+z-Olozun | [d-hat | [w-LIVE | g-red]] | v-see
 :::
 
-**2.** *I saw Azawan write three hours ago.*
+**2.** *I saw Uzazon write three hours ago.*
 
 ::: details Show answer
-`zazawan thevom bagazem grurel varadal.`
+`zuzazon thevom balarum grurel vuruyel.`
 
-z-Azawan | [th-MEMORY | [b-hour | g-minus-three]] | v-write
+z-Uzazon | [th-MEMORY | [b-hour | g-minus-three]] | v-write
 :::
 
 **3.** *Cats sleep, as a rule, going by the pattern.*
 
 ::: details Show answer
-`zuam gagadul vezebal thobam.`
+`zuam gegazol vuzevol thobam.`
 
 [z-everything.open | g-cat] | v-sleep | th-PATTERN
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
 
-**1.** `zazawan hual vehahel thobar.`
+**1.** `zuzazon hual vehuhol thobar.`
 
 ::: details Show answer
-z-Azawan | h-always | v-sit | th-PATTERN.weak
+z-Uzazon | h-always | v-sit | th-PATTERN.weak
 
-*Azawan always sits, going by the few cases I have seen.*
+*Uzazon always sits, going by the few cases I have seen.*
 :::
 
-**2.** `zalahen thobam bagazem grurel vezebal.`
+**2.** `zolozun thobam balarum grurel vuzevol.`
 
 ::: details Show answer
-z-Alahen | [th-PATTERN | [b-hour | g-minus-three]] | v-sleep
+z-Olozun | [th-PATTERN | [b-hour | g-minus-three]] | v-sleep
 
-*Going by the pattern, Alahen slept three hours ago.*
+*Going by the pattern, Olozun slept three hours ago.*
 :::
 
-**3.** `zual gagadul vezebal thegem thoyem barl zagadur gezebul.`
+**3.** `zual gegazol vuzevol thegem thoyem barl zegazor gozumol.`
 
 ::: details Show answer
 [z-everything | g-cat] | v-sleep | th-CAUSE | [th-if | b-that-clause] | [z-←cat | g-sleepy]
@@ -1489,34 +1489,34 @@ z-Alahen | [th-PATTERN | [b-hour | g-minus-three]] | v-sleep
 *Every cat sleeps when it is sleepy; that is how it works.*
 :::
 
-**4.** `zazawan thevom brubul dagahol vahahal.`
+**4.** `zuzazon thevom brubul dugawol vanobol.`
 
 ::: details Show answer
-z-Azawan | [th-MEMORY | b---e-] | d-camera | v-see
+z-Uzazon | [th-MEMORY | b---e-] | d-camera | v-see
 
-*I just saw Azawan look at the camera.*
+*I just saw Uzazon look at the camera.*
 :::
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *I saw Azawan walk recently.* `zazawan thevom brubum vowogal.` or `zazawan thevom brubul vowogal.`
+**1.** *I saw Uzazon walk recently.* `zuzazon thevom brubum voworel.` or `zuzazon thevom brubul voworel.`
 
 ::: details Show answer
-`zazawan thevom brubum vowogal.`
+`zuzazon thevom brubum voworel.`
 
-z-Azawan | [th-MEMORY | b---e-.about] | v-walk
+z-Uzazon | [th-MEMORY | b---e-.about] | v-walk
 
 Open **-m** softens the hair into *a short while ago*; **-l** is *just now*.
 :::
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zazawan dahodal wevom geredal vahahal.` / `zazawan dahodal wodom geredal vahahal.`
+**1.** `zuzazon dahobol wevom gerolol vanobol.` / `zuzazon dahobol wodom gerolol vanobol.`
 
 ::: details Show answer
-z-Azawan | [d-hat | [w-MEMORY | g-red]] | v-see
+z-Uzazon | [d-hat | [w-MEMORY | g-red]] | v-see
 
-z-Azawan | [d-hat | [w-LIVE | g-red]] | v-see
+z-Uzazon | [d-hat | [w-LIVE | g-red]] | v-see
 
 Both channels sit on the adjective only: the red is remembered in the first, seen live in the second.
 :::

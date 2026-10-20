@@ -50,7 +50,7 @@ Never a seed:
 
 - **Concrete label:** the English word people use for the thing, not the Unicode name (*cupid*, not *heart with arrow*; *villain*, not *angry face with horns*). Flag rows follow [flag rows](#flag-rows). `convert-word` needs a CMU pronunciation for the label. Add a missing one to `CMU_OVERRIDES` in [`src/cmu-dict.ts`](../../src/cmu-dict.ts) rather than bending the label.
 - **Multiword labels and glosses:** join the words with hyphens, never spaces: *gas-pump*, *black-pepper*, *wedding-dress*. This holds for concrete labels, compound glosses and aliases alike.
-- **Units:** a unit (*mile*, *foot*, *pound*), imperial ones included, is an abstract sense on an existing root (*mile* on `ubuda`), not a new row.
+- **Units:** a unit (*mile*, *foot*, *pound*), imperial ones included, is an abstract sense on an existing root (*mile* on `uyoba`), not a new row.
 - **Kin pairs:** a gendered kin pair (*mother* / *father*) is allowed, unlike gendered profession variants.
 - **Abstract senses:** never repeat another row's concrete or abstract. When a new row takes over a sense, move it off the old row.
 - **Aliases may repeat:** an `english_aliases` cue may also be another row's alias or sense. A cue that fits several roots lists all of them, so lexicon search finds each one. Within a row, an alias still never repeats that row's own concrete or abstract.
@@ -118,7 +118,7 @@ Add a row only when all of these hold:
 4. **The head is the most specific root that fits**, and the entry is a *kind of* the head's concrete.
 5. **The left root narrows the head in a way a learner can guess**, or the mnemonic makes the link easy to remember, never through an English pun ([no English puns](#no-english-puns)).
 
-Some English words stay out by design: kin terms are [kin generations](../grammar/numbers-applied.md#kin-generations), doers are [role compounds](../grammar/roles.md#role-compounds), and a tie between people is a [social relation](../grammar/relations.md#social-relations) unless English has a fixed noun for the person (*friend*). Young and sexed animals are the animal's root plus a `/ɡ/` adjective: `gahadol` *young*, `gebebel` *newborn*, `geveval` *female*, `gemehel` *male* ([young, male and female animals](../grammar/say-people-places.md#young-animals)). There are two exceptions. A seed that already pictures one stays a root (🐤 *chick*, 🐓 *rooster*). A young animal that looks like a different creature gets its own row (*caterpillar*, *tadpole*), because a learner can't picture it from *young* plus the adult animal. Why not compounds: [design decisions](design-decisions.md#young-and-sexed-animals).
+Some English words stay out by design: kin terms are [kin generations](../grammar/numbers-applied.md#kin-generations), doers are [role compounds](../grammar/roles.md#role-compounds), and a tie between people is a [social relation](../grammar/relations.md#social-relations) unless English has a fixed noun for the person (*friend*). Young and sexed animals are the animal's root plus a `/ɡ/` adjective: `gahayol` *young*, `gubuyol` *newborn*, `gavegol` *female*, `gemegol` *male* ([young, male and female animals](../grammar/say-people-places.md#young-animals)). There are two exceptions. A seed that already pictures one stays a root (🐤 *chick*, 🐓 *rooster*). A young animal that looks like a different creature gets its own row (*caterpillar*, *tadpole*), because a learner can't picture it from *young* plus the adult animal. Why not compounds: [design decisions](design-decisions.md#young-and-sexed-animals).
 
 ### Compound heads
 

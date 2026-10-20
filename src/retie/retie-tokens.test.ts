@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
+import { CLOSED } from "../closed-roots.js";
 import { loadDefaultTables } from "../parse/index.js";
 import { rewriteMarkdown } from "./markdown.js";
 import { headingIdRenames, relinkMarkdown, relinkOverlayAnchors } from "./anchors.js";
@@ -333,17 +334,20 @@ describe("verifyRetiedSpans", () => {
   });
 
   const tables = loadDefaultTables();
+  // Live roots through CLOSED (src/retie/ is never retied): swan moves to lion's spelling.
+  const live = mapOf([CLOSED.swan, CLOSED.lion]);
+  const { swan, walk, wave } = CLOSED;
 
   it("passes a clean retie, including a respelled resume", () => {
-    const { spans } = rewriteMarkdown("`zazawan vowogal. zazawar vehahel.`", map);
-    assert.deepEqual(verifyRetiedSpans(spans, map, tables), []);
+    const { spans } = rewriteMarkdown(`\`z${swan}n v${walk}l. z${swan}r v${wave}l.\``, live);
+    assert.deepEqual(verifyRetiedSpans(spans, live, tables), []);
   });
 
   it("catches a rewrite that changes something the map does not", () => {
-    const spans = [{ before: "zazawan vowogal.", after: "zalahen vehahel.", index: 0, cls: "sentence" }];
-    const failures = verifyRetiedSpans(spans, map, tables);
+    const spans = [{ before: `z${swan}n v${walk}l.`, after: `z${CLOSED.lion}n v${wave}l.`, index: 0, cls: "sentence" }];
+    const failures = verifyRetiedSpans(spans, live, tables);
     assert.equal(failures.length, 1);
-    assert.match(failures[0]!.detail, /owoga/);
+    assert.match(failures[0]!.detail, new RegExp(walk));
   });
 
   it("blocks a tree change with no new resume link", () => {
@@ -491,10 +495,13 @@ describe("retie map file", () => {
 
 describe("resume binds after a retie", () => {
   it("blocks a resume left on the old root", () => {
-    const tables = bridgeTables(mapOf(["adana", "azado"]));
+    // walk (live) moves to a spelling no row has.
+    const { swan, lion, walk } = CLOSED;
+    const moved = mapOf([walk, "ububu"]);
+    const tables = bridgeTables(moved);
     const failures = verifyRetiedSpans(
-      [{ before: "zazawan vadanal xon zalahen vadanar.", after: "zazawan vazadol xon zalahen vadanar.", index: 0, cls: "sentence" }],
-      mapOf(["adana", "azado"]),
+      [{ before: `z${swan}n v${walk}l xon z${lion}n v${walk}r.`, after: `z${swan}n vububul xon z${lion}n v${walk}r.`, index: 0, cls: "sentence" }],
+      moved,
       tables,
     );
     assert.equal(failures[0]?.level, "blocking");

@@ -4,7 +4,7 @@ Status: idea. Not design authority; fold into grammar / meta docs, then drop. Bu
 
 ## Problem
 
-A reader looking for one passage on a long page (*where did they talk about the dog?*) has to read line by line. Agazan words are hard to tell apart at a glance: almost every root is five letters with alternating vowels and consonants, so `zodogal` and `zazawal` have the same outline. Nothing on the page stands out except the text itself.
+A reader looking for one passage on a long page (*where did they talk about the dog?*) has to read line by line. Agazan words are hard to tell apart at a glance: almost every root is five letters with alternating vowels and consonants, so `zodozol` and `zuzazol` have the same outline. Nothing on the page stands out except the text itself.
 
 The fix aims at **scannability** (finding a passage), not reading speed.
 
@@ -15,7 +15,7 @@ An earlier sketch replaced every word with its root's emoji, with the part-of-sp
 - **The space saved is small.** Example words average 6.4 letters, about 3.6 em with the space. An emoji with its small letters takes about 1.55 em, so lines get roughly 2.3× shorter at the same size. Emoji need a larger size to be told apart, and the lines need more height, so a page shrinks only about 1.3 to 1.8×. These are estimates from typical font sizes; nothing was built to measure it.
 - **Less space does not mean faster reading.** Readers can only use dense text quickly after years of learning thousands of signs, as Chinese readers do. A learner who knows only some of the pictures may read them slower than spelled words.
 - **When everything is a picture, nothing stands out.** A picture is easy to find among words, but hard to find among a page of other pictures, and many emoji look alike (yellow faces, brown food, flags).
-- **Abstract senses do not match their picture.** `azawam` *grace* would show 🦢, so a reader looking for *grace* has to know the picture first.
+- **Abstract senses do not match their picture.** `uzazom` *grace* would show 🦢, so a reader looking for *grace* has to know the picture first.
 - **It replaces the text.** Searching the page, copying and pasting, and learning the spellings would all break.
 - **It shows no structure.** It does not show where a topic starts or which list a word belongs to.
 
@@ -27,12 +27,12 @@ Use pictures only where they make a passage easy to find: one per **topic stretc
 
 | Topic event | Margin |
 |-------------|--------|
-| Introduce (`xodogal`) | the root's emoji at the top of a new rule |
-| Return (`xazawar`) | the same emoji with a return mark, so a reader can see the talk came back |
-| Clear (`xevavem`, `xavazem`) | the rule ends; nothing until the next topic |
+| Introduce (`xodozol`) | the root's emoji at the top of a new rule |
+| Return (`xuzazor`) | the same emoji with a return mark, so a reader can see the talk came back |
+| Clear (`xevewem`, `xavadom`) | the rule ends; nothing until the next topic |
 | No topic | no rule, no picture |
 
-A name made from a root has that root's picture: `xazawan` *now, about Azawan* shows 🦢. So people and places get pictures too, not only things.
+A name made from a root has that root's picture: `xuzazon` *now, about Uzazon* shows 🦢. So people and places get pictures too, not only things.
 
 ### When there is no picture
 
@@ -68,8 +68,8 @@ Topic stretches matter on long text: dialogues, readings, and multi-paragraph pa
 
 ## Open questions
 
-- **Abstract topics.** `xazawam` (*grace* as topic) would show 🦢. Show it anyway, show it with a mark for *abstract sense*, or fall back to text?
-- **Compound topics.** A noun pair (`xebeyaxabodel` *peanut butter*), a multipart name, or a [role compound](../grammar/roles.md#role-compounds) (`xaxedehol` *people who teach*): show each part's picture (up to two), only the head's, or text?
+- **Abstract topics.** `xuzazom` (*grace* as topic) would show 🦢. Show it anyway, show it with a mark for *abstract sense*, or fall back to text?
+- **Compound topics.** A noun pair (`xonedaxawudal` *peanut butter*), a multipart name, or a [role compound](../grammar/roles.md#role-compounds) (`xaxodeyel` *people who teach*): show each part's picture (up to two), only the head's, or text?
 - **Repeated introductions.** When the same root is introduced again (not returned), should the picture be the same, or marked as a new stretch about a new one of that kind?
 - **Long stretches.** Should a stretch that runs past one screen repeat its picture at the top of each screen while scrolling?
 

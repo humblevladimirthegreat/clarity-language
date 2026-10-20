@@ -4,7 +4,7 @@ import { describe, it } from "node:test";
 import { PRACTICE } from "./practice-fixtures.js";
 import { fixPromptRanges, practiceItems } from "./practice-items.js";
 
-const details = (n: number) => Array.from({ length: n }, (_, i) => `**${i + 1}.** *x*\n\n::: details Show answer\n\`zazawan vehahel.\`\n:::\n`).join("\n");
+const details = (n: number) => Array.from({ length: n }, (_, i) => `**${i + 1}.** *x*\n\n::: details Show answer\n\`zuzazon vehuhol.\`\n:::\n`).join("\n");
 
 describe("practiceItems", () => {
   it("types items by H4 and reads prompts and spoilers", () => {
@@ -15,9 +15,9 @@ describe("practiceItems", () => {
       ["en-ag1", "en-ag2", "en-ag3", "ag-en1", "ag-en2", "ag-en3", "pick1", "fix1", "changes1"],
     );
     const [first] = items;
-    assert.equal(first!.promptEnglish, "Ahaben sees Azawan.");
+    assert.equal(first!.promptEnglish, "Ehalon sees Uzazon.");
     assert.deepEqual(first!.spoiler.map((line) => line.kind), ["agazan", "text", "also"]);
-    assert.deepEqual(first!.alsoCorrect.map((span) => span.text), ["dazawan zahaben vahahal.", "yal zahaben dazawan vahahal."]);
+    assert.deepEqual(first!.alsoCorrect.map((span) => span.text), ["duzazon zehalon vanobol.", "yal zehalon duzazon vanobol."]);
     const pick = items.find((item) => item.type === "pick")!;
     assert.equal(pick.promptSpans.length, 2);
     const fix = items.find((item) => item.type === "fix")!;
@@ -60,8 +60,8 @@ ${details(2)}
 describe("practiceItems, level review", () => {
   it("reads a **Rule:** line and skips the checkpoint counts", () => {
     const md = PRACTICE.replace(
-      "**Also correct:** \`dazawan zahaben vahahal.\`, \`yal zahaben dazawan vahahal.\`",
-      "**Also correct:** \`dazawan zahaben vahahal.\`\n\n**Rule:** [Role letters](clause.md#role-letters)",
+      "**Also correct:** \`duzazon zehalon vanobol.\`, \`yal zehalon duzazon vanobol.\`",
+      "**Also correct:** \`duzazon zehalon vanobol.\`\n\n**Rule:** [Role letters](clause.md#role-letters)",
     ).replace(/#### Pick one[\s\S]*$/, "");
     const { items, findings } = practiceItems(md, { review: true });
     assert.deepEqual(items[0]!.spoiler.map((line) => line.kind), ["agazan", "text", "also", "rule"]);
@@ -74,6 +74,6 @@ describe("fixPromptRanges", () => {
   it("covers only Fix it prompt lines", () => {
     const ranges = fixPromptRanges(PRACTICE);
     assert.equal(ranges.length, 1);
-    assert.match(PRACTICE.slice(ranges[0]!.start, ranges[0]!.end), /^\*\*1\.\*\* \*Alahen sees Azawan\.\* <!-- lint: error -->/);
+    assert.match(PRACTICE.slice(ranges[0]!.start, ranges[0]!.end), /^\*\*1\.\*\* \*Olozun sees Uzazon\.\* <!-- lint: error -->/);
   });
 });

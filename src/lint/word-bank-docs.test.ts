@@ -50,7 +50,7 @@ const BANK = `### Translation practice
 
 | English | Agazan | Same root as |
 |---------|--------|--------------|
-| *Azawan* | \`azawan\` | |
+| *Uzazon* | \`uzazon\` | |
 | *see* | \`veyel\` | \`eyel\` *eye* |
 `;
 
@@ -125,47 +125,47 @@ ${drills.map((d, i) => `**${i + 1}.** *…*\n\n::: details Show answer\n\`${d}\`
   const kinds = (md: string) => lintWordBankUsage(md, tables).map((f) => `${f.kind} ${f.roots.join(",")}`);
 
   it("accepts a bank that lists exactly the drill roots", () => {
-    const md = page(["*Azawan* | `azawan`", "*run* | `arahal`"], ["zazawan varahal."]);
+    const md = page(["*Uzazon* | `uzazon`", "*run* | `aruvel`"], ["zuzazon varuvel."]);
     assert.deepEqual(kinds(md), []);
   });
 
   it("flags a drill root with no row, at its use line", () => {
-    const md = page(["*Azawan* | `azawan`"], ["zazawan varahal."]);
+    const md = page(["*Uzazon* | `uzazon`"], ["zuzazon varuvel."]);
     const findings = lintWordBankUsage(md, tables);
-    assert.deepEqual(kinds(md), ["missing araha"]);
-    assert.equal(md.split("\n")[findings[0]!.line - 1], "`zazawan varahal.`");
+    assert.deepEqual(kinds(md), ["missing aruve"]);
+    assert.equal(md.split("\n")[findings[0]!.line - 1], "`zuzazon varuvel.`");
   });
 
   it("flags unused rows, house names included", () => {
-    const md = page(["*Azawan* | `azawan`", "*Alahen* | `alahen`", "*run* | `arahal`", "*dog* | `odogal`"], ["zazawan varahal."]);
-    assert.deepEqual(kinds(md), ["unused alahe", "unused odoga"]);
+    const md = page(["*Uzazon* | `uzazon`", "*Olozun* | `olozun`", "*run* | `aruvel`", "*dog* | `odozol`"], ["zuzazon varuvel."]);
+    assert.deepEqual(kinds(md), ["unused olozu", "unused odozo"]);
   });
 
   it("matches roots, not spellings: other roles, full-root resumes, role compounds", () => {
-    const rows = ["*Azawan* | `azawan`", "*tell* | `vezebel`", "*run* | `arahal`", "*dog* | `odogal`", "*scream* | `vezugel`"];
-    const md = page(rows, ["zazawan vezebel. zoxezeber varahal.", "zodogal varahal. zodogar vezugel."]);
+    const rows = ["*Uzazon* | `uzazon`", "*tell* | `vezeyel`", "*run* | `aruvel`", "*dog* | `odozol`", "*scream* | `vazomul`"];
+    const md = page(rows, ["zuzazon vezeyel. zoxezeyer varuvel.", "zodozol varuvel. zodozor vazomul."]);
     assert.deepEqual(kinds(md), []);
   });
 
   it("reads a resume as its antecedent's root", () => {
-    const md = page(["*Azawan* | `azawan`", "*run* | `arahal`", "*scream* | `vezugel`"], ["zazawan varahal. zazawar vezugel."]);
+    const md = page(["*Uzazon* | `uzazon`", "*run* | `aruvel`", "*scream* | `vazomul`"], ["zuzazon varuvel. zuzazor vazomul."]);
     assert.deepEqual(kinds(md), []);
   });
 
   it("needs no row for an overlay, but a row for one must be used", () => {
-    const rows = ["*Azawan* | `azawan`", "*run* | `arahal`"];
-    assert.deepEqual(kinds(page(rows, ["zazawan thovum varahal."])), []);
-    assert.deepEqual(kinds(page([...rows, "*MAY* | `thovum`"], ["zazawan varahal."])), ["unused ovu"]);
+    const rows = ["*Uzazon* | `uzazon`", "*run* | `aruvel`"];
+    assert.deepEqual(kinds(page(rows, ["zuzazon thovum varuvel."])), []);
+    assert.deepEqual(kinds(page([...rows, "*MAY* | `thovum`"], ["zuzazon varuvel."])), ["unused ovu"]);
   });
 
   it("covers the SELF slot only with the *your name* row", () => {
-    assert.deepEqual(kinds(page(["*run* | `arahal`"], ["zSELFn varahal."])).map((k) => k.split(" ")[0]), ["missing"]);
-    assert.deepEqual(kinds(page(["*your name* | `SELFn`", "*run* | `arahal`"], ["zSELFn varahal."])), []);
+    assert.deepEqual(kinds(page(["*run* | `aruvel`"], ["zSELFn varuvel."])).map((k) => k.split(" ")[0]), ["missing"]);
+    assert.deepEqual(kinds(page(["*your name* | `SELFn`", "*run* | `aruvel`"], ["zSELFn varuvel."])), []);
   });
 
   it("does not count spans in the lead or the bank as drill uses", () => {
-    const md = page(["*Azawan* | `azawan`", "*run* | `arahal`", "*dog* | `odogal`"], ["zazawan varahal."], "Compare `zodogal varahal.`");
-    assert.deepEqual(kinds(md), ["unused odoga"]);
+    const md = page(["*Uzazon* | `uzazon`", "*run* | `aruvel`", "*dog* | `odozol`"], ["zuzazon varuvel."], "Compare `zodozol varuvel.`");
+    assert.deepEqual(kinds(md), ["unused odozo"]);
   });
 });
 
@@ -173,7 +173,7 @@ describe("converted checkpoint bank", () => {
   const tables = houseTables();
   const kinds = (md: string) => lintWordBankUsage(md, tables).map((f) => `${f.kind} ${f.roots.join(",")}`);
   const shape = (md: string) => lintPracticeBank(md, tables).map((f) => f.detail);
-  const NEW_SEE = "| *see* | `vahahal` | 👁️ from *eye* |\n";
+  const NEW_SEE = "| *see* | `vanobol` | 👁️ from *eye* |\n";
   const REVIEW = (rows: string) =>
     `**Review:**\n\n| English | Agazan |\n|---------|--------|\n${rows}\n\n#### English → Agazan {#beginner-english-to-agazan}`;
   const withReview = (rows: string) => PRACTICE.replace(NEW_SEE, "").replace("#### English → Agazan {#beginner-english-to-agazan}", REVIEW(rows));
@@ -185,20 +185,20 @@ describe("converted checkpoint bank", () => {
   });
 
   it("does not count the Fix it wrong form as a use, and flags the unused row", () => {
-    const md = PRACTICE.replace("<!-- lint: error -->`zazawan dalahen vahahal.`", "<!-- lint: error -->`zazawan dalahen vowogal.`");
+    const md = PRACTICE.replace("<!-- lint: error -->`zuzazon dolozun vanobol.`", "<!-- lint: error -->`zuzazon dolozun voworel.`");
     // Swap out the translation items' *walk*, so only the wrong form spells it.
-    const onlyFix = md.replace("`zalahen vowogal.`", "`zalahen vehahel.`").replace("`zahaben vowogal.`", "`zahaben vehahel.`");
-    assert.deepEqual(kinds(onlyFix), ["unused owoga"]);
+    const onlyFix = md.replace("`zolozun voworel.`", "`zolozun vehuhol.`").replace("`zehalon voworel.`", "`zehalon vehuhol.`");
+    assert.deepEqual(kinds(onlyFix), ["unused owore"]);
   });
 
   it("reads New words and Review together", () => {
-    const md = withReview("| *see* | `vahahal` |");
+    const md = withReview("| *see* | `vanobol` |");
     assert.deepEqual(kinds(md), []);
     assert.deepEqual(shape(md), []);
   });
 
   it("flags a drill root in neither group", () => {
-    assert.deepEqual(kinds(PRACTICE.replace(NEW_SEE, "")), ["missing ahaha"]);
+    assert.deepEqual(kinds(PRACTICE.replace(NEW_SEE, "")), ["missing anobo"]);
   });
 
   it("flags a converted checkpoint with no bank", () => {
@@ -208,26 +208,26 @@ describe("converted checkpoint bank", () => {
   });
 
   it("checks Review English against the lexicon", () => {
-    const findings = lintWordBankMarkdown(withReview("| *chair* | `vahahal` |"), tables);
-    assert.deepEqual(findings.map((f) => [f.agazan, f.english]), [["vahahal", "chair"]]);
+    const findings = lintWordBankMarkdown(withReview("| *chair* | `vanobol` |"), tables);
+    assert.deepEqual(findings.map((f) => [f.agazan, f.english]), [["vanobol", "chair"]]);
   });
 
   it("needs a cue on every New words row", () => {
-    assert.deepEqual(shape(PRACTICE.replace("| 👁️ from *eye* |", "| |")), ["**New words** row `vahahal` has no Cue"]);
+    assert.deepEqual(shape(PRACTICE.replace("| 👁️ from *eye* |", "| |")), ["**New words** row `vanobol` has no Cue"]);
   });
 
   it("checks the columns of each group", () => {
     assert.match(shape(PRACTICE.replace("| English | Agazan | Cue |\n|---------|--------|-----|", "| English | Agazan |\n|---------|--------|")).join("\n"), /\*\*New words\*\* columns are English · Agazan; use English · Agazan · Cue/);
-    const md = withReview("| *see* | `vahahal` |").replace("| English | Agazan |\n|---------|--------|\n| *see*", "| English | Agazan | Cue |\n|---------|--------|-----|\n| *see*");
+    const md = withReview("| *see* | `vanobol` |").replace("| English | Agazan |\n|---------|--------|\n| *see*", "| English | Agazan | Cue |\n|---------|--------|-----|\n| *see*");
     assert.match(shape(md).join("\n"), /\*\*Review\*\* columns are English · Agazan · Cue; use English · Agazan/);
   });
 
   it("flags a root listed twice", () => {
-    assert.match(shape(withReview("| *see* | `vahahal` |").replace("| *sit* | `vehahel`", "| *see* | `vahahal` | 👁️ |\n| *sit* | `vehahel`")).join("\n"), /root ahaha .* is already listed/);
+    assert.match(shape(withReview("| *see* | `vanobol` |").replace("| *sit* | `vehuhol`", "| *see* | `vanobol` | 👁️ |\n| *sit* | `vehuhol`")).join("\n"), /root anobo .* is already listed/);
   });
 
   it("flags a legacy Roots used here table", () => {
-    const md = PRACTICE.replace("**New words:**", "**Roots used here:**\n\n| English | Agazan |\n|---|---|\n| *see* | `vahahal` |\n\n**New words:**");
+    const md = PRACTICE.replace("**New words:**", "**Roots used here:**\n\n| English | Agazan |\n|---|---|\n| *see* | `vanobol` |\n\n**New words:**");
     assert.match(shape(md).join("\n"), /not \*\*Roots used here\*\*/);
   });
 });

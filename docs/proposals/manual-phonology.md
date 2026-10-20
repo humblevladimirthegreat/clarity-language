@@ -150,7 +150,7 @@ The right hand's thumb rests on C♯5 and fingers 2–5 on D♯5, F♯5, G♯5, 
 
 The white keys carry no letters.
 
-`zazawan gamadam.`
+`zuzazon gumahom.`
 
 | Syllable | Right hand | Left hand |
 |----------|------------|-----------|
@@ -220,7 +220,7 @@ The code held up in the air in the **shape** form, received by eye. It is a **ma
 
 The hands are held at chest height, palms toward the viewer, with the consonant hand's fingers pointing up and the vowel hand's pointing sideways toward it ([handedness](#handedness)). Left-handed signers mirror the layout; the sideways fingers show the vowel hand either way.
 
-- `zazawan gamadam.`: consonant hand horns · horns · index · *open hand, held* ‖ L · flat · V · *flat, held*; vowel hand V (sideways) on every beat, fist on the codas
+- `zuzazon gumahom.`: consonant hand horns · horns · index · *open hand, held* ‖ L · flat · V · *flat, held*; vowel hand V (sideways) on every beat, fist on the codas
 - `thoyem`: hooked three / three fingers · hooked V / flat · *flat, held*
 - `xodum`: claw / three fingers · V / index · *flat, held*
 

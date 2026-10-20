@@ -16,33 +16,33 @@ You named something (A), and you want to say English *including B* about it. Put
 A HOOK B
 ```
 
-> `zavahal al zazawan.`
+> `zovayal al zuzazon.`
 >
-> z-family | including | z-Azawan
+> z-family | including | z-Uzazon
 >
-> "The family, including Azawan."
+> "The family, including Uzazon."
 
-Because a hook starts with a vowel, the [last consonant](phonology.md#word-edges) of the word before it may slide over and start the hook's syllable, in speech and in song: `zavahal al` can sound like *za-va-ha-lal*. That is fine. They are still two words, and the listener can still tell where the hook starts.
+Because a hook starts with a vowel, the [last consonant](phonology.md#word-edges) of the word before it may slide over and start the hook's syllable, in speech and in song: `zovayal al` can sound like *za-va-ha-lal*. That is fine. They are still two words, and the listener can still tell where the hook starts.
 
-**Compare with:** packaging two members as a list uses a [join](joins.md) (`zodogal zagadul zam` *a dog and a cat*). A hook adds B to A's slot; it does not name a pair.
+**Compare with:** packaging two members as a list uses a [join](joins.md) (`zodozol zegazol zam` *a dog and a cat*). A hook adds B to A's slot; it does not name a pair.
 
 ### Rather (`el`)
 <a id="rather"></a>
 
 To correct your own wording, English says *A, or rather B*. Use the same `A HOOK B` shape with vowel **e**: **`el`**. B is a better way to say A. It describes the **same** thing, so it is not an extra member (as with *including*) and not a different thing in A's place (as with *instead*). (cue: **e** ≈ order.)
 
-> `zazawan gadadal el gezebul.`
+> `zuzazon gadamul el gozumol.`
 >
-> [z-Azawan | g-tired] | rather | g-sleepy
+> [z-Uzazon | g-tired] | rather | g-sleepy
 >
-> "Azawan is tired, or rather, sleepy."
+> "Uzazon is tired, or rather, sleepy."
 
 ### Instead (`ol`)
 <a id="instead"></a>
 
 For English *B instead of A*, use the same shape with vowel **o**: `A ol B`. A, on the left, is what you named or expected first. B, on the right, is what really belongs in that slot. The order is the reverse of the English. (cue: **o** ≈ one.)
 
-> `dedehel ol dagavel.`
+> `dedadal ol dogadal.`
 >
 > d-tea | instead | d-coffee
 >
@@ -50,32 +50,32 @@ For English *B instead of A*, use the same shape with vowel **o**: `A ol B`. A, 
 
 A and B can play any role, as long as both play the same one. They can even be **verbs**:
 
-> `zazawan varahal ol vowogal.`
+> `zuzazon varuvel ol voworel.`
 >
-> z-Azawan | v-run | instead | v-walk
+> z-Uzazon | v-run | instead | v-walk
 >
-> "Azawan walks instead of running."
+> "Uzazon walks instead of running."
 
-**Compare with:** *Azawan tells on behalf of Alahen* keeps Azawan as the teller (a [proxy](relations.md#proxy) relation); **`ol`** puts someone else in that slot.
+**Compare with:** *Uzazon tells on behalf of Olozun* keeps Uzazon as the teller (a [proxy](relations.md#proxy) relation); **`ol`** puts someone else in that slot.
 
 ### Except (`ul`)
 <a id="except"></a>
 
 For English *A except B*, use vowel **u**: `A ul B`. What you say holds for A with B taken out. (cue: **u** ≈ undo.)
 
-> `zavahal ul zazawan.`
+> `zovayal ul zuzazon.`
 >
-> z-family | except | z-Azawan
+> z-family | except | z-Uzazon
 >
-> "The family except Azawan."
+> "The family except Uzazon."
 
 The left side can be the clause standalone **`xual`** *everything* ([clause joins](joins.md#clause-joins)). The right side is then a clause:
 
-> `xual ul zazawan vowogal.`
+> `xual ul zuzazon voworel.`
 >
-> x-everything | except | z-Azawan | v-walk
+> x-everything | except | z-Uzazon | v-walk
 >
-> "Everything happened except that Azawan walked."
+> "Everything happened except that Uzazon walked."
 
 | Agazan | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -94,17 +94,17 @@ The ending on an `A HOOK B` hook says whether B is complete. **-l** says B is th
 | **-l** (`al` / `el` / `ol` / `ul`) | B is the whole story you stand behind | unmarked (*including B*, *except B*, …) | **l** ≈ locked |
 | **-m** (`am` / `em` / `om` / `um`) | B is not the only one | *and maybe more* | **m** ≈ maybe more |
 
-> `zavahal am zazawan.`
+> `zovayal am zuzazon.`
 >
-> z-family | including.open | z-Azawan
+> z-family | including.open | z-Uzazon
 >
-> "The family, including Azawan and maybe more."
+> "The family, including Uzazon and maybe more."
 
-> `zavahal um zazawan.`
+> `zovayal um zuzazon.`
 >
-> z-family | except.open | z-Azawan
+> z-family | except.open | z-Uzazon
 >
-> "The family except Azawan, and maybe others."
+> "The family except Uzazon, and maybe others."
 
 ### Glue this sentence to prior talk {#discourse-hooks}
 
@@ -117,25 +117,25 @@ English can open a sentence with *Additionally*, *In other words*, *Instead*, or
 | `ol …` | this claim replaces the last one | *Instead, …* / *Actually, …* | **o** ≈ one |
 | `ul …` | an exception to what was just said | *Except, …* | **u** ≈ undo |
 
-> `al zazawan vowogal.`
+> `al zuzazon voworel.`
 >
-> additionally | z-Azawan | v-walk
+> additionally | z-Uzazon | v-walk
 >
-> "Additionally, Azawan walks."
+> "Additionally, Uzazon walks."
 
-> `ol zalahen vezebal.`
+> `ol zolozun vuzevol.`
 >
-> instead | z-Alahen | v-sleep
+> instead | z-Olozun | v-sleep
 >
-> "Instead, Alahen sleeps."
+> "Instead, Olozun sleeps."
 
 Use the same **`ol …`** for *actually* when you correct what someone expected: the new claim replaces the old one.
 
-> `el zahaben godogal.`
+> `el zehalon godozol.`
 >
-> in.other.words | z-Ahaben | g-dog
+> in.other.words | z-Ehalon | g-dog
 >
-> "In other words, Ahaben is a dog."
+> "In other words, Ehalon is a dog."
 
 The hook is glue only when the next word is not a `/b/` word. With a `/b/` word right after it, even the stand-in **`barl`**, it is an [extra-noun hook](#extra-noun) instead.
 
@@ -143,9 +143,9 @@ The hook is glue only when the next word is not a `/b/` word. With a `/b/` word 
 
 ### Extra noun (`/b/` after the hook) {#extra-noun}
 
-English prepositions such as *in*, *at*, *from*, and *for* add a place, a source, or someone who benefits. In Agazan, put a hook right before a `/b/` [extra noun](clause.md#extra-nouns). The hook says how that noun, its **landmark**, relates to the event (or to the noun just before the hook). This is not the recipient, which takes no hook (`zazawan vezebel balahen` *tells Alahen*).
+English prepositions such as *in*, *at*, *from*, and *for* add a place, a source, or someone who benefits. In Agazan, put a hook right before a `/b/` [extra noun](clause.md#extra-nouns). The hook says how that noun, its **landmark**, relates to the event (or to the noun just before the hook). This is not the recipient, which takes no hook (`zuzazon vezeyel bolozun` *tells Olozun*).
 
-So the test is: `/b/` right after the hook, and no recipient `/b/` right before it. Right after a recipient, the hook is same-role *including* (`bazawan al balahen`).
+So the test is: `/b/` right after the hook, and no recipient `/b/` right before it. Right after a recipient, the hook is same-role *including* (`buzazon al bolozun`).
 
 The four one-vowel hooks name the everyday extras:
 
@@ -157,7 +157,7 @@ The four one-vowel hooks name the everyday extras:
 | **`ul`** | *from* | source of a path | **u** ≈ undo (leave) |
 | **`el`** | *for* | who or what the act is meant for | **e** ≈ order (aim the act) |
 
-> `zodogal vezebal al bahazal.`
+> `zodozol vuzevol al bawuhol.`
 >
 > z-dog | v-sleep | [in | b-house]
 >
@@ -165,69 +165,69 @@ The four one-vowel hooks name the everyday extras:
 
 To ask *where?*, put the fill-ask blank **`bar`** after the hook (`ol bar` *where?*, `ul bar` *where from?*). See [Where?](questions.md#where).
 
-> `zalahen vehahel ol bedabel.`
+> `zolozun vehuhol ol bodehol.`
 >
-> z-Alahen | v-sit | [at | b-table]
+> z-Olozun | v-sit | [at | b-table]
 >
-> "Alahen sits at a table."
+> "Olozun sits at a table."
 
-> `zazawan dawahel vobohol ul bedebul.`
+> `zuzazon dawadal vabovul ul budedal.`
 >
-> z-Azawan | d-wine | v-pour | [from | b-teapot]
+> z-Uzazon | d-wine | v-pour | [from | b-teapot]
 >
-> "Azawan pours wine from a teapot."
+> "Uzazon pours wine from a teapot."
 
-> `zazawan vugugal el bavahal.`
+> `zuzazon vugayol el bovayal.`
 >
-> z-Azawan | v-cook | [for | b-family]
+> z-Uzazon | v-cook | [for | b-family]
 >
-> "Azawan cooks for a family."
+> "Uzazon cooks for a family."
 
-When `/b/` is a person or group, **`el`** names who the act is meant to benefit, as in *cooks for Alahen*: what the act brings is meant to reach them.
+When `/b/` is a person or group, **`el`** names who the act is meant to benefit, as in *cooks for Olozun*: what the act brings is meant to reach them.
 
-> `zazawan vugugal el balahen.`
+> `zuzazon vugayol el bolozun.`
 >
-> z-Azawan | v-cook | [for | b-Alahen]
+> z-Uzazon | v-cook | [for | b-Olozun]
 >
-> "Azawan cooks for Alahen."
+> "Uzazon cooks for Olozun."
 
 These hooks take **-l**: the landmark is the exact place, point, source, or goal.
 
 To say where something is (*there is a dog in a house*), write the noun with no verb, then the hook and its `/b/`. A noun alone says the thing [exists](predication.md#existence), and the hook places it.
 
-> `zodogal al bahazal.`
+> `zodozol al bawuhol.`
 >
 > z-dog | [in | b-house]
 >
 > "There is a dog in a house."
 
-**Compare with:** *Additionally, Azawan walks* is a hook at the front whose next word is **not** `/b/` (`al zazawan vowogal`). *Like a duck* is still a hosted [simile](relations.md#similative). *Tells on behalf of Alahen* is [proxy](relations.md#proxy). Naming the **place of an event** as its own noun (*a sleep-place*, *that scream-place*) is a [role compound](roles.md#role-compounds) with vowel **`e`**, not this hook on the same clause.
+**Compare with:** *Additionally, Uzazon walks* is a hook at the front whose next word is **not** `/b/` (`al zuzazon voworel`). *Like a duck* is still a hosted [simile](relations.md#similative). *Tells on behalf of Olozun* is [proxy](relations.md#proxy). Naming the **place of an event** as its own noun (*a sleep-place*, *that scream-place*) is a [role compound](roles.md#role-compounds) with vowel **`e`**, not this hook on the same clause.
 
 ### Since (`ul` on a time) {#since}
 
 For *since* (from a starting point, and still true now), use **`ul`** *from* with a time instead of a place: *from the thunderstorm on*. [**`hanom`**](dependents.md#time-poles) *after* only places the event later. **`ul`** says the event has gone on from that point until now. (cue: **u** ≈ undo: leave the starting point behind)
 
-> `zazawan vehahel ul bavodel.`
+> `zuzazon vehuhol ul bovelul.`
 >
-> z-Azawan | v-sit | [from | b-thunderstorm]
+> z-Uzazon | v-sit | [from | b-thunderstorm]
 >
-> "Azawan has been sitting since the thunderstorm."
+> "Uzazon has been sitting since the thunderstorm."
 
 For *since* before a sentence, put **`barl`** after **`ul`** and the starting event after it.
 
-> `zazawan vowogal ul barl zalahen vezebal.`
+> `zuzazon voworel ul barl zolozun vuzevol.`
 >
-> z-Azawan | v-walk | [from | b-that-clause] | z-Alahen | v-sleep
+> z-Uzazon | v-walk | [from | b-that-clause] | z-Olozun | v-sleep
 >
-> "Azawan has been walking since Alahen fell asleep."
+> "Uzazon has been walking since Olozun fell asleep."
 
-English often puts *since* first (*Since Alahen fell asleep, Azawan has been walking*). Agazan keeps **`ul barl`** after the main clause, because the sentence after **`barl`** runs to the period. As a short answer, the pair and the starting event can stand alone:
+English often puts *since* first (*Since Olozun fell asleep, Uzazon has been walking*). Agazan keeps **`ul barl`** after the main clause, because the sentence after **`barl`** runs to the period. As a short answer, the pair and the starting event can stand alone:
 
-> `ul barl zalahen vezebal.`
+> `ul barl zolozun vuzevol.`
 >
-> [from | b-that-clause] | z-Alahen | v-sleep
+> [from | b-that-clause] | z-Olozun | v-sleep
 >
-> "Since Alahen fell asleep."
+> "Since Olozun fell asleep."
 
 **`ul`** is the only hook that takes **`barl`**. Every other hook needs a real noun in `/b/`.
 
@@ -245,97 +245,97 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Agazan | Cue |
 |---------|--------|-----|
-| *table* | `edabel` | 𓊲 |
-| *salad* | `azavul` | 🥗 |
-| *family* | `avahal` | 👪 |
-| *teapot* | `edebul` | 🫖 |
-| *beer* | `ebehol` | 🍺 |
+| *table* | `odehol` | 𓊲 |
+| *salad* | `azadal` | 🥗 |
+| *family* | `ovayal` | 👪 |
+| *teapot* | `udedal` | 🫖 |
+| *beer* | `ebadal` | 🍺 |
 
 **Review:**
 
 | English | Agazan |
 |---------|--------|
-| *Azawan* | `azawan` |
-| *Alahen* | `alahen` |
-| *Ahaben* | `ahaben` |
-| *cook* | `vugugal` |
-| *pour* | `vobohol` |
-| *cookie* | `ugugol` |
-| *wine* | `awahel` |
+| *Uzazon* | `uzazon` |
+| *Olozun* | `olozun` |
+| *Ehalon* | `ehalon` |
+| *cook* | `vugayol` |
+| *pour* | `vabovul` |
+| *cookie* | `ogudol` |
+| *wine* | `awadal` |
 | *sandwich* | `azal` |
-| *sit* | `vehahel` |
+| *sit* | `vehuhol` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *The family, including Azawan, cooks.*
+**1.** *The family, including Uzazon, cooks.*
 
 ::: details Show answer
-`zavahal al zazawan vugugal.`
+`zovayal al zuzazon vugayol.`
 
-z-family | including | z-Azawan | v-cook
+z-family | including | z-Uzazon | v-cook
 :::
 
-**2.** *Alahen pours wine instead of beer.*
+**2.** *Olozun pours wine instead of beer.*
 
 ::: details Show answer
-`zalahen debehol ol dawahel vobohol.`
+`zolozun debadal ol dawadal vabovul.`
 
-z-Alahen | d-beer | instead | d-wine | v-pour
+z-Olozun | d-beer | instead | d-wine | v-pour
 
-**Also correct:** `zalahen vobohol debehol ol dawahel.`
+**Also correct:** `zolozun vabovul debadal ol dawadal.`
 :::
 
-**3.** *Azawan cooks a salad for Ahaben.*
+**3.** *Uzazon cooks a salad for Ehalon.*
 
 ::: details Show answer
-`zazawan dazavul vugugal el bahaben.`
+`zuzazon dazadal vugayol el behalon.`
 
-z-Azawan | d-salad | v-cook | [for | b-Ahaben]
+z-Uzazon | d-salad | v-cook | [for | b-Ehalon]
 :::
 
-**4.** *Additionally, Ahaben sits.*
+**4.** *Additionally, Ehalon sits.*
 
 ::: details Show answer
-`al zahaben vehahel.`
+`al zehalon vehuhol.`
 
-additionally | z-Ahaben | v-sit
+additionally | z-Ehalon | v-sit
 :::
 
 **5.** *There is a family at a table.*
 
 ::: details Show answer
-`zavahal ol bedabel.`
+`zovayal ol bodehol.`
 
 z-family | [at | b-table]
 :::
 
-**6.** *The family, except Alahen, sits.*
+**6.** *The family, except Olozun, sits.*
 
 ::: details Show answer
-`zavahal ul zalahen vehahel.`
+`zovayal ul zolozun vehuhol.`
 
-z-family | except | z-Alahen | v-sit
+z-family | except | z-Olozun | v-sit
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `zazawan dugugol vugugal el bavahal.`
+**1.** `zuzazon dogudol vugayol el bovayal.`
 
 ::: details Show answer
-z-Azawan | d-cookie | v-cook | [for | b-family]
+z-Uzazon | d-cookie | v-cook | [for | b-family]
 
-*Azawan cooks a cookie for a family.*
+*Uzazon cooks a cookie for a family.*
 :::
 
-**2.** `ol zalahen debehol vobohol.`
+**2.** `ol zolozun debadal vabovul.`
 
 ::: details Show answer
-instead | z-Alahen | d-beer | v-pour
+instead | z-Olozun | d-beer | v-pour
 
-*Instead, Alahen pours beer.*
+*Instead, Olozun pours beer.*
 :::
 
-**3.** `zawahel al bedebul.`
+**3.** `zawadal al budedal.`
 
 ::: details Show answer
 z-wine | [in | b-teapot]
@@ -343,60 +343,60 @@ z-wine | [in | b-teapot]
 *There is wine in a teapot.*
 :::
 
-**4.** `zavahal am zalahen vehahel.`
+**4.** `zovayal am zolozun vehuhol.`
 
 ::: details Show answer
-z-family | including.open | z-Alahen | v-sit
+z-family | including.open | z-Olozun | v-sit
 
-*The family, including Alahen and maybe more, sits.*
+*The family, including Olozun and maybe more, sits.*
 :::
 
-**5.** `zahaben dazal el dazavul vugugal.`
+**5.** `zehalon dazal el dazadal vugayol.`
 
 ::: details Show answer
-z-Ahaben | d-sandwich | rather | d-salad | v-cook
+z-Ehalon | d-sandwich | rather | d-salad | v-cook
 
-*Ahaben cooks a sandwich, or rather a salad.*
+*Ehalon cooks a sandwich, or rather a salad.*
 :::
 
-**6.** `zalahen vehahel ul barl zazawan vugugal.`
+**6.** `zolozun vehuhol ul barl zuzazon vugayol.`
 
 ::: details Show answer
-z-Alahen | v-sit | [from | b-that-clause] | z-Azawan | v-cook
+z-Olozun | v-sit | [from | b-that-clause] | z-Uzazon | v-cook
 
-*Alahen has been sitting since Azawan cooked.*
+*Olozun has been sitting since Uzazon cooked.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Alahen pours wine from a teapot.* `zalahen dawahel vobohol ul bedebul.` or `zalahen dawahel vobohol al bedebul.`
+**1.** *Olozun pours wine from a teapot.* `zolozun dawadal vabovul ul budedal.` or `zolozun dawadal vabovul al budedal.`
 
 ::: details Show answer
-`zalahen dawahel vobohol ul bedebul.`
+`zolozun dawadal vabovul ul budedal.`
 
-z-Alahen | d-wine | v-pour | [from | b-teapot]
+z-Olozun | d-wine | v-pour | [from | b-teapot]
 
 **`ul`** before `/b/` is the source, *from*; **`al`** would be *in* the teapot.
 :::
 
-**2.** *The family except Alahen, and maybe others, cooks.* `zavahal um zalahen vugugal.` or `zavahal ul zalahen vugugal.`
+**2.** *The family except Olozun, and maybe others, cooks.* `zovayal um zolozun vugayol.` or `zovayal ul zolozun vugayol.`
 
 ::: details Show answer
-`zavahal um zalahen vugugal.`
+`zovayal um zolozun vugayol.`
 
-z-family | except.open | z-Alahen | v-cook
+z-family | except.open | z-Olozun | v-cook
 
-Open **-m** leaves room for more exceptions; **`ul`** says Alahen is the only one.
+Open **-m** leaves room for more exceptions; **`ul`** says Olozun is the only one.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Alahen cooks for the family.* <!-- lint: error -->`zalahen vugugal el davahal.`
+**1.** *Olozun cooks for the family.* <!-- lint: error -->`zolozun vugayol el dovayal.`
 
 ::: details Show answer
-`zalahen vugugal el bavahal.`
+`zolozun vugayol el bovayal.`
 
-z-Alahen | v-cook | [for | b-family]
+z-Olozun | v-cook | [for | b-family]
 
 The noun after a *for* hook is an extra noun, so it takes `/b/`, not `/d/`.
 :::
@@ -431,15 +431,15 @@ At the front of a sentence, **-m** says this sentence is one of several you coul
 
 To make a whole `A HOOK B` phrase into a name (a store, a title, a handle), give the hook **-n** ([titled phrases](word-endings.md#titled-phrases)). Otherwise use **-l** or **-m**. The two sides keep their usual endings (kinds **-l**, abstracts **-m**, a name **-n**).
 
-> `dedehel on dagavel.`
+> `dedadal on dogadal.`
 >
 > NAME[d-tea | instead | d-coffee]
 >
 > "Coffee-Instead-of-Tea" (a cafe name)
 
-**Compare with:** *no dog* / *not X* uses a prefixed [join](joins.md#join-series-ending-shared) (`zodogal zul`). The hook **`ul`**, with no role letter, always takes a B out of A.
+**Compare with:** *no dog* / *not X* uses a prefixed [join](joins.md#join-series-ending-shared) (`zodozol zul`). The hook **`ul`**, with no role letter, always takes a B out of A.
 
-> `zodogal zul.`
+> `zodozol zul.`
 >
 > [z-dog | z-not]
 >
@@ -448,15 +448,15 @@ To make a whole `A HOOK B` phrase into a name (a store, a title, a handle), give
 ### Extra noun: stacked vowels and loose **-m**
 <a id="extra-noun-intermediate"></a>
 
-Beginner already used the one-vowel extra-noun hooks (*in* / *at* / *from* / *for*). Hooks with two vowels name the rest of the everyday extras. The test is the same: `/b/` comes right after the hook, and the word right before the hook (skipping any `/w/`) is **not** a recipient `/b/` (so `bazawan al balahen` is *including*).
+Beginner already used the one-vowel extra-noun hooks (*in* / *at* / *from* / *for*). Hooks with two vowels name the rest of the everyday extras. The test is the same: `/b/` comes right after the hook, and the word right before the hook (skipping any `/w/`) is **not** a recipient `/b/` (so `buzazon al bolozun` is *including*).
 
 A hook + `/b/` right after a landmark (the `/b/` of another extra, or of a word such as a [locative relation](relations.md#locative-relations)) describes that landmark, not the clause: *the village near me*.
 
-> `zazawan vowogal al bahedem om bamun.`
+> `zuzazon voworel al bahuhom om bamun.`
 >
-> z-Azawan | v-walk | [in | [b-locality | [near | b-speaker]]]
+> z-Uzazon | v-walk | [in | [b-locality | [near | b-speaker]]]
 >
-> "Azawan walks in the village near me."
+> "Uzazon walks in the village near me."
 
 Several extra-noun hooks on one clause are several extras. To keep the second one on the clause, put a non-`/b/` word between the first landmark and the next hook. *From* one landmark *to* another needs no gap: it is one [from … to](numbers-applied.md#time) unit. Extra-noun **-n** makes the hook and its landmark a name, as on same-role hooks; the landmark keeps its own ending.
 
@@ -476,67 +476,67 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 | **`ael`** | *using* | **`aem`** | *by* | **ae** ≈ add to the aim: the means that serves it; **-m** the channel |
 | **`uel`** | *against* | **`uem`** | *contrary to* | **ue** ≈ undo aimed at; **-m** the opposing frame |
 
-> `zazawan vehahel aol behahel.`
+> `zuzazon vehuhol aol behuhol.`
 >
-> z-Azawan | v-sit | [on | b-chair]
+> z-Uzazon | v-sit | [on | b-chair]
 >
-> "Azawan sits on a chair."
+> "Uzazon sits on a chair."
 
-> `zazawan dugul ael bebewel varadal.`
+> `zuzazon dugul ael babewol vuruyel.`
 >
-> z-Azawan | d-book | [using | b-pen] | v-write
+> z-Uzazon | d-book | [using | b-pen] | v-write
 >
-> "Azawan writes a book with a pen."
+> "Uzazon writes a book with a pen."
 
 **Compare with:** hook **`oel`** names where a path **ends** (*toward X*). A [sequence](joins.md#sequence-ae) join on one noun, **`zael`**, names where it **starts** (*from X on*).
 
-> `zazawan uel bagavol vavadal.`
+> `zuzazon uel bayoyul vavavul.`
 >
-> z-Azawan | [against | b-guard] | v-fight
+> z-Uzazon | [against | b-guard] | v-fight
 >
-> "Azawan fights against a guard."
+> "Uzazon fights against a guard."
 
-> `zazawan vuvudel aem bedehal.`
+> `zuzazon vevubel aem bodevel.`
 >
-> z-Azawan | v-go | [by | b-train]
+> z-Uzazon | v-go | [by | b-train]
 >
-> "Azawan goes by train."
+> "Uzazon goes by train."
 
-> `zazawan vowogal uem berehel.`
+> `zuzazon voworel uem burelal.`
 >
-> z-Azawan | v-walk | [contrary-to | b-rain]
+> z-Uzazon | v-walk | [contrary-to | b-rain]
 >
-> "Azawan walks despite the rain."
+> "Uzazon walks despite the rain."
 
 To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`ael`**, the same way as [Where?](questions.md#where).
 
-> `yol ael bar zazawan dugul varadal.`
+> `yol ael bar zuzazon dugul vuruyel.`
 >
-> y-question | [using | b-wh] | z-Azawan | d-book | v-write
+> y-question | [using | b-wh] | z-Uzazon | d-book | v-write
 >
-> "What does Azawan write the book with?"
+> "What does Uzazon write the book with?"
 
-**Compare with:** some English prepositions use other forms. Company *with Alahen* is a [join-relation](join-across-roles.md#join-relations), and so is *without*. *Like* is a [simile](relations.md#similative). *Between* is a hosted pair plus a `/b/` join ([relations](relations.md#locative-relations)). *So that Alahen sits* is **`hogom barl`**.
+**Compare with:** some English prepositions use other forms. Company *with Olozun* is a [join-relation](join-across-roles.md#join-relations), and so is *without*. *Like* is a [simile](relations.md#similative). *Between* is a hosted pair plus a `/b/` join ([relations](relations.md#locative-relations)). *So that Olozun sits* is **`hogom barl`**.
 
 ### Whose (`em`) {#genitive}
 
-English *Azawan's dog* often means the dog is in Azawan's **use**: Azawan keeps it, walks it, feeds it. Put **`em`** right after the noun, then the user in `/b/`. `em` says B uses the thing or has access to it. It does not say who owns it. (cue: **`el`** is *for B*, a get meant to reach B; **`em`** says it already reached B and is in B's use)
+English *Uzazon's dog* often means the dog is in Uzazon's **use**: Uzazon keeps it, walks it, feeds it. Put **`em`** right after the noun, then the user in `/b/`. `em` says B uses the thing or has access to it. It does not say who owns it. (cue: **`el`** is *for B*, a get meant to reach B; **`em`** says it already reached B and is in B's use)
 
-> `zodogal em bazawan varahal.`
+> `zodozol em buzazon varuvel.`
 >
-> [z-dog | [used-by | b-Azawan]] | v-run
+> [z-dog | [used-by | b-Uzazon]] | v-run
 >
-> "Azawan's dog runs." (the dog Azawan keeps)
+> "Uzazon's dog runs." (the dog Uzazon keeps)
 
-> `zazawan dahazal em balahen vahahal.`
+> `zuzazon dawuhol em bolozun vanobol.`
 >
-> z-Azawan | [d-house | [used-by | b-Alahen]] | v-see
+> z-Uzazon | [d-house | [used-by | b-Olozun]] | v-see
 >
-> "Azawan sees Alahen's house." (the house Alahen lives in)
+> "Uzazon sees Olozun's house." (the house Olozun lives in)
 
 For *my* and *your*, put the [speaker or listener](pronouns.md#special-pronouns) in `/b/`: `em bamun` is *my*, `em behon` is *your*.
 
-> `zodogal em bamun vezebal.`
+> `zodozol em bamun vuzevol.`
 >
 > [z-dog | [used-by | b-speaker]] | v-sleep
 >
@@ -544,7 +544,7 @@ For *my* and *your*, put the [speaker or listener](pronouns.md#special-pronouns)
 
 To describe the thing, put its `/ɡ/` word **between** the noun and **`em`**. The adjective stays on the noun, and `em` still attaches to the noun. A `/ɡ/` word **after** the `/b/` describes B instead ([complex chaining](clause.md#complex-chaining)).
 
-> `zodogal gelavam em bamun vezebal.`
+> `zodozol geluzom em bamun vuzevol.`
 >
 > [z-dog | g-big | [used-by | b-speaker]] | v-sleep
 >
@@ -552,55 +552,55 @@ To describe the thing, put its `/ɡ/` word **between** the noun and **`em`**. Th
 
 With no verb, the same order is a sentence. A noun marked with `em` is one the listener can pick out, so the `/ɡ/` word is a [property](predication.md#classification-property), not *there is …*.
 
-> `zodogal gelavam em bamun.`
+> `zodozol geluzom em bamun.`
 >
 > [z-dog | g-big | [used-by | b-speaker]]
 >
 > "My dog is big."
 
-**Compare with:** `zodogal gelavam.` is *There is a big dog* ([existence](predication.md#existence)): a new noun with no `em` introduces the thing. `zodogal em bamun gelavam` puts *big* on the speaker, not the dog. `zodogal em bamun.` alone says your dog is here (*there's my dog*).
+**Compare with:** `zodozol geluzom.` is *There is a big dog* ([existence](predication.md#existence)): a new noun with no `em` introduces the thing. `zodozol em bamun geluzom` puts *big* on the speaker, not the dog. `zodozol em bamun.` alone says your dog is here (*there's my dog*).
 
-Things B uses include places B lives or sits, tools and rides B uses, ideas B works with, and B's turn, time, or occasion: *Azawan's birthday* is the day that is Azawan's to have.
+Things B uses include places B lives or sits, tools and rides B uses, ideas B works with, and B's turn, time, or occasion: *Uzazon's birthday* is the day that is Uzazon's to have.
 
-> `zebeval em bazawan.`
+> `zoberol em buzazon.`
 >
-> [z-birthday | [used-by | b-Azawan]]
+> [z-birthday | [used-by | b-Uzazon]]
 >
-> "It's Azawan's birthday."
+> "It's Uzazon's birthday."
 
 Other kinds of *'s* each have their own word:
 
 | English *'s* | Use |
 |--------------|-----|
-| legal ownership (*the dog Azawan owns*) | `gegabem` + `/b/` |
-| a person tied to B (*Azawan's friend*, *boss*, *patient*) | a tie on `/ɡ/` ([relations](relations.md#social-relations)) |
-| part of B (*Azawan's hand*), what B is made of or comes from | [of relations](relations.md#of-relations) |
-| a feeling B has (*Azawan's anger*) | [emotion compose](sakes.md#emotion-compose) |
-| something B made (*the book Azawan wrote*) | a [role compound](roles.md#role-compounds) |
+| legal ownership (*the dog Uzazon owns*) | `gagogom` + `/b/` |
+| a person tied to B (*Uzazon's friend*, *boss*, *patient*) | a tie on `/ɡ/` ([relations](relations.md#social-relations)) |
+| part of B (*Uzazon's hand*), what B is made of or comes from | [of relations](relations.md#of-relations) |
+| a feeling B has (*Uzazon's anger*) | [emotion compose](sakes.md#emotion-compose) |
+| something B made (*the book Uzazon wrote*) | a [role compound](roles.md#role-compounds) |
 
-**`em`** always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `em` + `/b/` is not a sentence there. For someone's act (*Azawan's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun).
+**`em`** always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `em` + `/b/` is not a sentence there. For someone's act (*Uzazon's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun).
 
-**`em`** never takes a person on the left: a person is not something someone uses. **`gegabem`** never does either, because no one owns a person: a person tied to B takes a [tie](relations.md#social-relations) (*Azawan's patient* is care, `gobadam`). **`em`** never names a feeling or trait either, and neither does [*part of*](relations.md#of-relations): a feeling or trait stays something B has, not something B uses or is made of. A feeling uses [emotion compose](sakes.md#emotion-compose); a trait is a `/ɡ/` word on B.
+**`em`** never takes a person on the left: a person is not something someone uses. **`gagogom`** never does either, because no one owns a person: a person tied to B takes a [tie](relations.md#social-relations) (*Uzazon's patient* is care, `gubalom`). **`em`** never names a feeling or trait either, and neither does [*part of*](relations.md#of-relations): a feeling or trait stays something B has, not something B uses or is made of. A feeling uses [emotion compose](sakes.md#emotion-compose); a trait is a `/ɡ/` word on B.
 
-**Compare with:** *for Azawan* is `el`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
+**Compare with:** *for Uzazon* is `el`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
 
 ### Opening a sentence with stacked hooks {#stacked-discourse}
 
 English *In fact, …* or *What's more, …* adds a point that goes further than what came before. At the front of a sentence, with no `/b/` right after it, the two-vowel hook **`ael`** does this job. (cue: **ae** ≈ add, ranked upward)
 
-> `ael zalahen vezebal.`
+> `ael zolozun vuzevol.`
 >
-> in.fact | z-Alahen | v-sleep
+> in.fact | z-Olozun | v-sleep
 >
-> "In fact, Alahen sleeps."
+> "In fact, Olozun sleeps."
 
 Opening with **`aol …`** gives English *For example, …*: this sentence is one case of what you just said. (cue: **ao** ≈ add one: a single sample) With **-m**, `aom …` adds *among others* and `aem …` adds *in fact, and maybe more*. No other two-vowel hook opens a sentence: for *next*, *by the way*, and *on the contrary*, use a [linker](dependents.md#sentence-linkers).
 
-> `zavahal vowogal. aol zalahen vowogal.`
+> `zovayal voworel. aol zolozun voworel.`
 >
-> z-family | v-walk . for.example | z-Alahen | v-walk
+> z-family | v-walk . for.example | z-Olozun | v-walk
 >
-> "The family walks. For example, Alahen walks."
+> "The family walks. For example, Olozun walks."
 
 **Compare with:** `al …` *Additionally* adds a separate point next to the last one; `aol …` gives an instance of it. Inside a clause, *such as* is `am` (*including, and maybe more*).
 
@@ -615,13 +615,13 @@ For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](jo
 | **`ol bal`** | *nowhere* |
 | **`ol bual`** | *everywhere* |
 
-> `zazawan vowogal ol bual.`
+> `zuzazon voworel ol bual.`
 >
-> z-Azawan | v-walk | [at | b-everything]
+> z-Uzazon | v-walk | [at | b-everything]
 >
-> "Azawan walks everywhere."
+> "Uzazon walks everywhere."
 
-> `zodogal vezebal ol bal.`
+> `zodozol vuzevol ol bal.`
 >
 > z-dog | v-sleep | [at | b-none]
 >
@@ -632,7 +632,7 @@ For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](jo
 
 English *here*, *there*, *this*, and *that* point at things by their distance from the speaker. Agazan points from a **person in the conversation** instead: put a place hook before the [speaker, listener, or interlocutors](pronouns.md#special-pronouns) in `/b/`. You always say whose *here* you mean, the same way Agazan says whose *left* you mean ([viewpoint laterals](roles.md#viewpoint-laterals)).
 
-Names come first. When you know who is talking or listening, use their name as the landmark (`om bazawan` *near Azawan*). Use speaker and listener when the conversation role itself matters, or when you have no name to use.
+Names come first. When you know who is talking or listening, use their name as the landmark (`om buzazon` *near Uzazon*). Use speaker and listener when the conversation role itself matters, or when you have no name to use.
 
 <!-- cheat-sheet: joins-hooks -->
 | Agazan | Landmark | English |
@@ -644,61 +644,61 @@ Names come first. When you know who is talking or listening, use their name as t
 
 Use `ol` in place of `om` for the exact spot (`ol bamun` *right where I am*).
 
-> `zodogal om bamun vehahel.`
+> `zodozol om bamun vehuhol.`
 >
 > z-dog | [near | b-speaker] | v-sit
 >
 > "This dog sits here by me."
 
-> `zazawan dugul om behon vahahal.`
+> `zuzazon dugul om behon vanobol.`
 >
-> z-Azawan | d-book | [near | b-listener] | v-see
+> z-Uzazon | d-book | [near | b-listener] | v-see
 >
-> "Azawan sees that book by you."
+> "Uzazon sees that book by you."
 
-> `zalahen vezebal um bahan.`
+> `zolozun vuzevol um bahan.`
 >
-> z-Alahen | v-sleep | [away-from | b-interlocutors]
+> z-Olozun | v-sleep | [away-from | b-interlocutors]
 >
-> "Alahen sleeps over there." (away from both you and me)
+> "Olozun sleeps over there." (away from both you and me)
 
-English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agazan names the landmark with the plain motion verb **`vuvudel`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vuvudel` says nothing about how someone travels; use `vowogal` (*walk*) or `varahal` (*run*) only when the manner matters.
+English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agazan names the landmark with the plain motion verb **`vevubel`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vevubel` says nothing about how someone travels; use `voworel` (*walk*) or `varuvel` (*run*) only when the manner matters.
 
-> `zazawan vuvudel oel bamun.`
+> `zuzazon vevubel oel bamun.`
 >
-> z-Azawan | v-go | [toward | b-speaker]
+> z-Uzazon | v-go | [toward | b-speaker]
 >
-> "Azawan comes over to me."
+> "Uzazon comes over to me."
 
-> `zalahen vuvudel oel behon.`
+> `zolozun vevubel oel behon.`
 >
-> z-Alahen | v-go | [toward | b-listener]
+> z-Olozun | v-go | [toward | b-listener]
 >
-> "Alahen is coming to you."
+> "Olozun is coming to you."
 
-> `zazawan vuvudel ul bamun.`
+> `zuzazon vevubel ul bamun.`
 >
-> z-Azawan | v-go | [from | b-speaker]
+> z-Uzazon | v-go | [from | b-speaker]
 >
-> "Azawan goes away from me."
+> "Uzazon goes away from me."
 
-With an object, `vuvudel` moves something else: `zazawan vuvudel dehahel.` *Azawan moves the chair.* When the mover goes along with the thing, use **`valagel`** (*carry*). The same hooks then give English *bring* and *take*:
+With an object, `vevubel` moves something else: `zuzazon vevubel dehuhol.` *Uzazon moves the chair.* When the mover goes along with the thing, use **`vulabal`** (*carry*). The same hooks then give English *bring* and *take*:
 
-> `zazawan valagel dabegol oel bamun.`
+> `zuzazon vulabal dabagal oel bamun.`
 >
-> z-Azawan | v-carry | d-box | [toward | b-speaker]
+> z-Uzazon | v-carry | d-box | [toward | b-speaker]
 >
-> "Azawan brings me the box."
+> "Uzazon brings me the box."
 
-> `zazawan valagel dabegol ul bamun.`
+> `zuzazon vulabal dabagal ul bamun.`
 >
-> z-Azawan | v-carry | d-box | [from | b-speaker]
+> z-Uzazon | v-carry | d-box | [from | b-speaker]
 >
-> "Azawan takes the box away." (away from where I am)
+> "Uzazon takes the box away." (away from where I am)
 
 In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#stand-in)), `om bamun` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
 
-**Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zodogar`), not a place. *Where?* is `ol bar` ([Where?](questions.md#where)). *There* for a place already named is a [resume hook](#hook-resume).
+**Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zodozor`), not a place. *Where?* is `ol bar` ([Where?](questions.md#where)). *There* for a place already named is a [resume hook](#hook-resume).
 
 ### Point back (`or` / `ar` / `ur` / `er`) {#hook-resume}
 
@@ -712,13 +712,13 @@ English *there*, *from there*, and *for it* point back to a place or thing alrea
 | `ur` | the place already named, as a source | *from there* |
 | `er` | the one already named, as a goal | *for that* / *for it* |
 
-> `zazawan vehahel ol bahazal. zalahen vehahel or.`
+> `zuzazon vehuhol ol bawuhol. zolozun vehuhol or.`
 >
-> z-Azawan | v-sit | [at | b-house] . z-Alahen | v-sit | there
+> z-Uzazon | v-sit | [at | b-house] . z-Olozun | v-sit | there
 >
-> "Azawan sits at the house. Alahen sits there too."
+> "Uzazon sits at the house. Olozun sits there too."
 
-> `zodogal vezebal al bahazal. zodogar varahal ur.`
+> `zodozol vuzevol al bawuhol. zodozor varuvel ur.`
 >
 > z-dog | v-sleep | [in | b-house] . z-←dog | v-run | from.there
 >
@@ -733,23 +733,23 @@ Stacked extra-noun vowels point back the same way: the vowels keep the extra the
 | `aer` | the means already named | *with it* |
 | `uor` | the path already named | *through there* |
 
-> `zazawan vehahel aol behahel. zalahen vehahel aor.`
+> `zuzazon vehuhol aol behuhol. zolozun vehuhol aor.`
 >
-> z-Azawan | v-sit | [on | b-chair] . z-Alahen | v-sit | on.it
+> z-Uzazon | v-sit | [on | b-chair] . z-Olozun | v-sit | on.it
 >
-> "Azawan sits on a chair. Alahen sits on it too."
+> "Uzazon sits on a chair. Olozun sits on it too."
 
-> `zazawan dugul ael bebewel varadal. zalahen varadal aer.`
+> `zuzazon dugul ael babewol vuruyel. zolozun vuruyel aer.`
 >
-> z-Azawan | d-book | [using | b-pen] | v-write . z-Alahen | v-write | with.it
+> z-Uzazon | d-book | [using | b-pen] | v-write . z-Olozun | v-write | with.it
 >
-> "Azawan writes a book with a pen. Alahen writes with it too."
+> "Uzazon writes a book with a pen. Olozun writes with it too."
 
-> `zazawan vowogal uol bahazal. zalahen vowogal uor.`
+> `zuzazon voworel uol bawuhol. zolozun voworel uor.`
 >
-> z-Azawan | v-walk | [through | b-house] . z-Alahen | v-walk | through.there
+> z-Uzazon | v-walk | [through | b-house] . z-Olozun | v-walk | through.there
 >
-> "Azawan walks through the house. Alahen walks through there too."
+> "Uzazon walks through the house. Olozun walks through there too."
 
 At the front of a sentence, a resume hook points back to an earlier stretch of talk, not just the last sentence.
 
@@ -760,29 +760,29 @@ At the front of a sentence, a resume hook points back to an earlier stretch of t
 | `ar …` | add to an earlier point, not the last one | *Going back to that, …* | **a** ≈ add |
 | `ur …` | drop the last point | *Never mind that, …* | **u** ≈ undo |
 
-> `or zazawan vowogal.`
+> `or zuzazon voworel.`
 >
-> anyway | z-Azawan | v-walk
+> anyway | z-Uzazon | v-walk
 >
-> "Anyway, Azawan walks."
+> "Anyway, Uzazon walks."
 
-> `ur zalahen vezebal.`
+> `ur zolozun vuzevol.`
 >
-> never.mind.that | z-Alahen | v-sleep
+> never.mind.that | z-Olozun | v-sleep
 >
-> "Never mind that: Alahen sleeps."
+> "Never mind that: Olozun sleeps."
 
-**Compare with:** `ol …` *Instead* replaces the last claim. `or …` *Anyway* leaves the side topic standing and returns to the main one; it leaves the [topic](pronouns.md#topic) alone too, so after a side topic the full return is `or xazawar …`. To go back to a **person or thing** rather than a line of talk, return to it as the [topic](pronouns.md#topic-return) (`xazawar`), which also makes it the topic again.
+**Compare with:** `ol …` *Instead* replaces the last claim. `or …` *Anyway* leaves the side topic standing and returns to the main one; it leaves the [topic](pronouns.md#topic) alone too, so after a side topic the full return is `or xuzazor …`. To go back to a **person or thing** rather than a line of talk, return to it as the [topic](pronouns.md#topic-return) (`xuzazor`), which also makes it the topic again.
 
 ### Parallel chains {#parallel-chains}
 
 To say more than one thing about the **same** A (*including B but except C*, or two *including*s), keep adding hooks after B: `A HOOK₁ B HOOK₂ C`. Each hook applies to A, not to the B before it, and each has its own vowel and ending. So C is never tucked under B the way English *including (B except C)* can be.
 
-> `zavahal am zazawan ul zalahen.`
+> `zovayal am zuzazon ul zolozun.`
 >
-> z-family | including.open | z-Azawan | except | z-Alahen
+> z-family | including.open | z-Uzazon | except | z-Olozun
 >
-> "The family, including Azawan and maybe more, except Alahen."
+> "The family, including Uzazon and maybe more, except Olozun."
 
 | Chain | English |
 |-------|---------|
@@ -791,7 +791,7 @@ To say more than one thing about the **same** A (*including B but except C*, or 
 | `A am B ul C` | A including B, and maybe more, except C |
 | `A ul B ul C` | A except B and except C |
 
-**Compare with:** a [list join](joins.md) after the hook is finished first, and the whole list becomes B: `zodogal ol zagadul zebedul zam` is *a cat and a bird (and possibly more) instead of a dog*.
+**Compare with:** a [list join](joins.md) after the hook is finished first, and the whole list becomes B: `zodozol ol zegazol zobezol zam` is *a cat and a bird (and possibly more) instead of a dog*.
 
 ### Discourse placements {#discourse-placements}
 
@@ -808,11 +808,11 @@ A sentence opening takes only one discourse hook; you cannot chain them the way 
 
 On a later clause in a [clause `/x/` join](joins.md#clause-joins), the hook goes right after the join, before that clause’s body: `A xam al B` → *A and additionally B*. Before an **`/x/`** linker (*therefore*, *however*, …), it applies to the linker and the rest of the sentence together: `al xodum …` → *Additionally, therefore …*. When one connective is enough, prefer plain `al …` or plain `xodum …`.
 
-> `yazawan al zalahen vowogal.`
+> `yuzazon al zolozun voworel.`
 >
-> y-Azawan | additionally | z-Alahen | v-walk
+> y-Uzazon | additionally | z-Olozun | v-walk
 >
-> "Azawan! Additionally, Alahen walks."
+> "Uzazon! Additionally, Olozun walks."
 
 The call comes first, then the discourse hook, then the body.
 
@@ -824,47 +824,47 @@ To add detail to the hook itself (*hesitantly excepting*, *never excepting*), pu
 
 On a same-role hook, the detail describes the *except* (or *including*, *rather*, *instead*). An `/h/` word in the clause still describes the verb.
 
-> `zavahal wezogom ul zazawan.`
+> `zovayal wezegom ul zuzazon.`
 >
-> z-family | [w-hesitation | except] | z-Azawan
+> z-family | [w-hesitation | except] | z-Uzazon
 >
-> "The family, hesitantly excepting Azawan."
+> "The family, hesitantly excepting Uzazon."
 
-> `zavahal wal ul zazawan.`
+> `zovayal wal ul zuzazon.`
 >
-> z-family | [w-never | except] | z-Azawan
+> z-family | [w-never | except] | z-Uzazon
 >
-> "The family, never excepting Azawan."
+> "The family, never excepting Uzazon."
 
 A surprise word on the *including* hook gives English *even*: **`wezum al`** adds B and says openly that B is the one nobody expected.
 
-> `zalahen wezum al zazawan vowogal.`
+> `zolozun wezum al zuzazon voworel.`
 >
-> z-Alahen | [w-amazement | including] | z-Azawan | v-walk
+> z-Olozun | [w-amazement | including] | z-Uzazon | v-walk
 >
-> "Alahen walks, and even Azawan does."
+> "Olozun walks, and even Uzazon does."
 
-**Compare with:** `zavahal ul zazawan hadehum vugugal` puts haste on the **cooking**, not on the except.
+**Compare with:** `zovayal ul zuzazon hedarem vugayol` puts haste on the **cooking**, not on the except.
 
 On an extra-noun hook, `/w/` goes before the hook and `/b/` still comes right after it. A `/ɡ/` word after the landmark still describes the landmark.
 
-> `zodogal vezebal wal al bahazal.`
+> `zodozol vuzevol wal al bawuhol.`
 >
 > z-dog | v-sleep | [[w-never | in] | b-house]
 >
 > "A dog sleeps, never in a house."
 
-A discourse hook takes `/w/` the same way: `welavam al zazawan vowogal` is *Additionally, very much so, Azawan walks.* A `/b/` right after the hook still makes it an extra-noun hook, not a discourse hook.
+A discourse hook takes `/w/` the same way: `weluzom al zuzazon voworel` is *Additionally, very much so, Uzazon walks.* A `/b/` right after the hook still makes it an extra-noun hook, not a discourse hook.
 
 ### Ranges (`oel` / `ual` / `uel`) {#ranges}
 
 When the items sit on a line with an order (people in a queue, days, chapters, numbers), English *A through B* names a **range**: A, B, and everything between. Put a stacked hook between two words in the same role: `A HOOK B`. Between same-role words these hooks name only ranges; with `/b/` on the right and no `/b/` on the left, they are [extra-noun hooks](#extra-noun) (*toward*, *out of*, *against*).
 
-> `zazawan oel zahaben vowogal.`
+> `zuzazon oel zehalon voworel.`
 >
-> z-Azawan | through | z-Ahaben | v-walk
+> z-Uzazon | through | z-Ehalon | v-walk
 >
-> "Everyone from Azawan through Ahaben walks."
+> "Everyone from Uzazon through Ehalon walks."
 
 <!-- cheat-sheet: joins-hooks -->
 | Agazan | Use | English | Cue |
@@ -875,19 +875,19 @@ When the items sit on a line with an order (people in a queue, days, chapters, n
 
 The range runs from A to B, in the order you say them. Endings work as on other hooks: **-m** makes the ends soft (*roughly A through B*), and **-n** names the range as a whole. **-r** stands in for one member you are not naming, and under a [question](questions.md#fill-ask-r) it asks which one:
 
-> `zazawan uar zahaben vezebal.`
+> `zuzazon uar zehalon vuzevol.`
 >
-> z-Azawan | some.strictly-between | z-Ahaben | v-sleep
+> z-Uzazon | some.strictly-between | z-Ehalon | v-sleep
 >
-> "Someone between Azawan and Ahaben sleeps."
+> "Someone between Uzazon and Ehalon sleeps."
 
 A range **-r** always has a word on each side (`oer` / `uar` / `uer`). With nothing on the right, stacked extra-noun **-r** still [points back](#hook-resume) (`aor` *on it*).
 
-> `zazawan ual zahaben vezebal.`
+> `zuzazon ual zehalon vuzevol.`
 >
-> z-Azawan | strictly-between | z-Ahaben | v-sleep
+> z-Uzazon | strictly-between | z-Ehalon | v-sleep
 >
-> "Everyone between Azawan and Ahaben sleeps." (not Azawan or Ahaben themselves)
+> "Everyone between Uzazon and Ehalon sleeps." (not Uzazon or Ehalon themselves)
 
 Right after an `ul` extra noun, `oel` + `/b/` is not a range: `ul X oel Y` is one [from … to](numbers-applied.md#time) unit.
 
@@ -895,13 +895,13 @@ Between two numbers with digits, plain **`al`** and **`ul`** also make a range, 
 
 A word right after B describes B alone, not the range. To describe the range itself, put `/w/` right before the hook:
 
-> `zazawan wezum oel zahaben vowogal.`
+> `zuzazon wezum oel zehalon voworel.`
 >
-> z-Azawan | [w-amazement | through] | z-Ahaben | v-walk
+> z-Uzazon | [w-amazement | through] | z-Ehalon | v-walk
 >
-> "Everyone from Azawan all the way through Ahaben walks." (a surprisingly wide range)
+> "Everyone from Uzazon all the way through Ehalon walks." (a surprisingly wide range)
 
-**Compare with:** `zazawan zahaben zal` is *Azawan and Ahaben*, the two ends only. `zazawan zahaben zael` is *Azawan, then Ahaben*, an order with nothing between. Spatial *between a train and a station* is a [relation](relations.md#spatial-path), not a range.
+**Compare with:** `zuzazon zehalon zal` is *Uzazon and Ehalon*, the two ends only. `zuzazon zehalon zael` is *Uzazon, then Ehalon*, an order with nothing between. Spatial *between a train and a station* is a [relation](relations.md#spatial-path), not a range.
 
 ### Practice {#intermediate-practice}
 
@@ -913,204 +913,204 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agazan | Cue |
 |---------|--------|-----|
-| *newspaper* | `unuzel` | 📰 |
-| *camera* | `agahol` | 📷 |
-| *radio* | `eredel` | 📻 |
+| *newspaper* | `unugal` | 📰 |
+| *camera* | `ugawol` | 📷 |
+| *radio* | `arewol` | 📻 |
 
 **Review:**
 
 | English | Agazan |
 |---------|--------|
-| *Azawan* | `azawan` |
-| *Alahen* | `alahen` |
-| *Ahaben* | `ahaben` |
+| *Uzazon* | `uzazon` |
+| *Olozun* | `olozun` |
+| *Ehalon* | `ehalon` |
 | *speaker* | `amun` |
-| *family* | `avahal` |
-| *page* | `abehel` |
-| *pencil* | `ebeyol` |
+| *family* | `ovayal` |
+| *page* | `ebogol` |
+| *pencil* | `ebewol` |
 | *surprise* | `ezul` |
-| *big* | `gelavam` |
-| *write* | `varadal` |
-| *sit* | `vehahel` |
-| *run* | `varahal` |
-| *see* | `vahahal` |
-| *find* | `vamagal` |
+| *big* | `geluzom` |
+| *write* | `vuruyel` |
+| *sit* | `vehuhol` |
+| *run* | `varuvel` |
+| *see* | `vanobol` |
+| *find* | `vemawol` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *Azawan writes on the page.*
+**1.** *Uzazon writes on the page.*
 
 ::: details Show answer
-`zazawan varadal aol babehel.`
+`zuzazon vuruyel aol bebogol.`
 
-z-Azawan | v-write | [on | b-page]
+z-Uzazon | v-write | [on | b-page]
 :::
 
-**2.** *Alahen writes a newspaper using a pencil.*
+**2.** *Olozun writes a newspaper using a pencil.*
 
 ::: details Show answer
-`zalahen dunuzel ael bebeyol varadal.`
+`zolozun dunugal ael bebewol vuruyel.`
 
-z-Alahen | d-newspaper | [using | b-pencil] | v-write
+z-Olozun | d-newspaper | [using | b-pencil] | v-write
 :::
 
-**3.** *There's Ahaben's radio.*
+**3.** *There's Ehalon's radio.*
 
 ::: details Show answer
-`zeredel em bahaben.`
+`zarewol em behalon.`
 
-[z-radio | [used-by | b-Ahaben]]
+[z-radio | [used-by | b-Ehalon]]
 :::
 
 **4.** *The radio is here.* (near me)
 
 ::: details Show answer
-`zeredel om bamun.`
+`zarewol om bamun.`
 
 z-radio | [near | b-speaker]
 :::
 
-**5.** *Azawan sits at the radio. Alahen sits there too.*
+**5.** *Uzazon sits at the radio. Olozun sits there too.*
 
 ::: details Show answer
-`zazawan vehahel ol beredel. zalahen vehahel or.`
+`zuzazon vehuhol ol barewol. zolozun vehuhol or.`
 
-z-Azawan | v-sit | [at | b-radio] . z-Alahen | v-sit | there
+z-Uzazon | v-sit | [at | b-radio] . z-Olozun | v-sit | there
 :::
 
-**6.** *The family, even Azawan, writes.*
+**6.** *The family, even Uzazon, writes.*
 
 ::: details Show answer
-`zavahal wezum al zazawan varadal.`
+`zovayal wezum al zuzazon vuruyel.`
 
-z-family | [w-amazement | including] | z-Azawan | v-write
+z-family | [w-amazement | including] | z-Uzazon | v-write
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `ael zalahen varadal.`
+**1.** `ael zolozun vuruyel.`
 
 ::: details Show answer
-in.fact | z-Alahen | v-write
+in.fact | z-Olozun | v-write
 
-*In fact, Alahen writes.*
+*In fact, Olozun writes.*
 :::
 
-**2.** `zalahen dagahol vamagal ol bal.`
+**2.** `zolozun dugawol vemawol ol bal.`
 
 ::: details Show answer
-z-Alahen | d-camera | v-find | [at | b-none]
+z-Olozun | d-camera | v-find | [at | b-none]
 
-*Alahen doesn't find the camera anywhere.*
+*Olozun doesn't find the camera anywhere.*
 :::
 
-**3.** `zavahal am zazawan ul zalahen varadal.`
+**3.** `zovayal am zuzazon ul zolozun vuruyel.`
 
 ::: details Show answer
-z-family | including.open | z-Azawan | except | z-Alahen | v-write
+z-family | including.open | z-Uzazon | except | z-Olozun | v-write
 
-*The family, including Azawan and maybe more, but not Alahen, writes.*
+*The family, including Uzazon and maybe more, but not Olozun, writes.*
 :::
 
-**4.** `zazawan oel zahaben varadal.`
+**4.** `zuzazon oel zehalon vuruyel.`
 
 ::: details Show answer
-z-Azawan | through | z-Ahaben | v-write
+z-Uzazon | through | z-Ehalon | v-write
 
-*Everyone from Azawan through Ahaben writes.*
+*Everyone from Uzazon through Ehalon writes.*
 :::
 
-**5.** `yazawan al zalahen varahal.`
+**5.** `yuzazon al zolozun varuvel.`
 
 ::: details Show answer
-y-Azawan | additionally | z-Alahen | v-run
+y-Uzazon | additionally | z-Olozun | v-run
 
-*Azawan! Additionally, Alahen runs.*
+*Uzazon! Additionally, Olozun runs.*
 :::
 
-**6.** `zahaben dunuzel om deredel vahahal.`
+**6.** `zehalon dunugal om darewol vanobol.`
 
 ::: details Show answer
-z-Ahaben | d-newspaper | instead.open | d-radio | v-see
+z-Ehalon | d-newspaper | instead.open | d-radio | v-see
 
-*Ahaben sees the radio instead of the newspaper.* (one possible replacement)
+*Ehalon sees the radio instead of the newspaper.* (one possible replacement)
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Ahaben runs toward the radio.* `zahaben varahal oel beredel.` or `zahaben varahal ul beredel.`
+**1.** *Ehalon runs toward the radio.* `zehalon varuvel oel barewol.` or `zehalon varuvel ul barewol.`
 
 ::: details Show answer
-`zahaben varahal oel beredel.`
+`zehalon varuvel oel barewol.`
 
-z-Ahaben | v-run | [toward | b-radio]
+z-Ehalon | v-run | [toward | b-radio]
 
 **`oel`** names where the path ends; **`ul`** is *from* the radio.
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Azawan's camera is big.* <!-- lint: error -->`zagahol em bazawan gelavam.`
+**1.** *Uzazon's camera is big.* <!-- lint: error -->`zugawol em buzazon geluzom.`
 
 ::: details Show answer
-`zagahol gelavam em bazawan.`
+`zugawol geluzom em buzazon.`
 
-[z-camera | g-big | [used-by | b-Azawan]]
+[z-camera | g-big | [used-by | b-Uzazon]]
 
-Put the camera's `/ɡ/` word before **`em`**; after the `/b/` it describes Azawan.
+Put the camera's `/ɡ/` word before **`em`**; after the `/b/` it describes Uzazon.
 :::
 
 ## Advanced {#advanced}
 
 ### Hook compounds (cite + extra-noun hook) {#hook-compounds}
 
-English has single verbs for moving in relation to a place: *enter*, *leave*, *oppose*. Agazan makes them by **fusing** an extra-noun hook onto the end of a citation: *walk* + *from* (`vowogal ul bezedel` *walks from a station*) becomes one word, *leave*. Every hook in the extra-noun grid can fuse this way.
+English has single verbs for moving in relation to a place: *enter*, *leave*, *oppose*. Agazan makes them by **fusing** an extra-noun hook onto the end of a citation: *walk* + *from* (`voworel ul buyehol` *walks from a station*) becomes one word, *leave*. Every hook in the extra-noun grid can fuse this way.
 
 Keep the left word’s own **-l** or **-m**, then write the hook, with no mid-word **`x`**. The dictionary form is the **citation** (no role letter), because the same stem can sit under `/z/` or `/ɡ/` as well as `/v/`.
 
 ```text
 CITE + HOOK
-owogal + ul → owogalul
+oworel + ul → oworelul
 ```
 
-In a clause, add a role letter to that citation (`vowogalul`). The extra participant is an ordinary object (`/d/`), not `/b/` (that would still be a recipient after a verb).
+In a clause, add a role letter to that citation (`voworelul`). The extra participant is an ordinary object (`/d/`), not `/b/` (that would still be a recipient after a verb).
 
-> `zazawan dezedel vowogalul.`
+> `zuzazon duyehol voworelul.`
 >
-> z-Azawan | d-station | v-leave
+> z-Uzazon | d-station | v-leave
 >
-> "Azawan leaves a station."
+> "Uzazon leaves a station."
 
-> `owogalul`
+> `oworelul`
 >
 > leave
 >
 > "leave" (the dictionary form)
 
-The left ending is part of the stem, so two different left roots stay distinct once the hook is attached. In speech that ending starts the hook's syllable, so no consonant closes a syllable mid-word: `owogalul` is *o-wo-ga-lul*.
+The left ending is part of the stem, so two different left roots stay distinct once the hook is attached. In speech that ending starts the hook's syllable, so no consonant closes a syllable mid-word: `oworelul` is *o-wo-ga-lul*.
 
 | Hook | Free extra-noun | Fused **-l** | Fused **-m** | Citation (from *walk*) |
 |------|-----------------|--------------|--------------|------------------------|
-| **`al` / `am`** | *in* / *amid* | *enter* | *mill amid* | `owogalal` / `owogalam` |
-| **`aol` / `aom`** | *on* / *over* | *mount* | *cover* | `owogalaol` / `owogalaom` |
-| **`ol` / `om`** | *at* / *near* | *attend* | *adjoin* | `owogalol` / `owogalom` |
-| **`oel` / `oem`** | *toward* / *in the direction of* | *head for* | *orient* | `owogaloel` / `owogaloem` |
-| **`ul` / `um`** | *from* / *away from* | *leave* | *recede* | `owogalul` / `owogalum` |
-| **`ual` / `uam`** | *out of* / *out from among* | *exit* | *pick out* | `owogalual` / `owogaluam` |
-| **`uol` / `uom`** | *through* / *by way of* | *traverse* | *relay* | `owogaluol` / `owogaluom` |
-| **`el` / `em`** | *for* / *used by* | *serve* | *have in use* | `owogalel` / `owogalem` |
-| **`ael` / `aem`** | *using* / *by* | *wield* | *channel* | `owogalael` / `owogalaem` |
-| **`uel` / `uem`** | *against* / *contrary to* | *oppose* | *defy* | `owogaluel` / `owogaluem` |
+| **`al` / `am`** | *in* / *amid* | *enter* | *mill amid* | `oworelal` / `oworelam` |
+| **`aol` / `aom`** | *on* / *over* | *mount* | *cover* | `oworelaol` / `oworelaom` |
+| **`ol` / `om`** | *at* / *near* | *attend* | *adjoin* | `oworelol` / `oworelom` |
+| **`oel` / `oem`** | *toward* / *in the direction of* | *head for* | *orient* | `oworeloel` / `oworeloem` |
+| **`ul` / `um`** | *from* / *away from* | *leave* | *recede* | `oworelul` / `oworelum` |
+| **`ual` / `uam`** | *out of* / *out from among* | *exit* | *pick out* | `oworelual` / `oworeluam` |
+| **`uol` / `uom`** | *through* / *by way of* | *traverse* | *relay* | `oworeluol` / `oworeluom` |
+| **`el` / `em`** | *for* / *used by* | *serve* | *have in use* | `oworelel` / `oworelem` |
+| **`ael` / `aem`** | *using* / *by* | *wield* | *channel* | `oworelael` / `oworelaem` |
+| **`uel` / `uem`** | *against* / *contrary to* | *oppose* | *defy* | `oworeluel` / `oworeluem` |
 
-> `zalahen dedehel vowogalel.`
+> `zolozun dedadal voworelel.`
 >
-> z-Alahen | d-tea | v-serve
+> z-Olozun | d-tea | v-serve
 >
-> "Alahen serves tea."
+> "Olozun serves tea."
 
-Other roots fuse the same way: `vezebeluel` *contradict* is *tell* fused with *against*. The dictionary lists these words as citations (`owogalul`, not `vowogalul`).
+Other roots fuse the same way: `vezeyeluel` *contradict* is *tell* fused with *against*. The dictionary lists these words as citations (`oworelul`, not `voworelul`).
 
-**Compare with:** `vowogal ul bezedel` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* never fuse; they are always separate hook words. A [lexical compound](x-compounds.md#lexical-compounds) like *bedroom* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
+**Compare with:** `voworel ul buyehol` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* never fuse; they are always separate hook words. A [lexical compound](x-compounds.md#lexical-compounds) like *bedroom* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
 
 ### Practice {#advanced-practice}
 
@@ -1128,103 +1128,103 @@ Short drills for Advanced. Try each item before opening **Show answer**. Each fu
 
 | English | Agazan |
 |---------|--------|
-| *Azawan* | `azawan` |
-| *Alahen* | `alahen` |
-| *Ahaben* | `ahaben` |
-| *walk* | `vowogal` |
-| *tell* | `vezebel` |
-| *boat* | `obodal` |
-| *ship* | `ehebal` |
-| *guard* | `agavol` |
-| *fog* | `avegel` |
-| *ice* | `azahol` |
+| *Uzazon* | `uzazon` |
+| *Olozun* | `olozun` |
+| *Ehalon* | `ehalon` |
+| *walk* | `voworel` |
+| *tell* | `vezeyel` |
+| *boat* | `oboval` |
+| *ship* | `eheval` |
+| *guard* | `ayoyul` |
+| *fog* | `ovalul` |
+| *ice* | `azulol` |
 
 #### English → Agazan {#advanced-english-to-agazan}
 
-**1.** *Azawan leaves a boat.*
+**1.** *Uzazon leaves a boat.*
 
 ::: details Show answer
-`zazawan dobodal vowogalul.`
+`zuzazon doboval voworelul.`
 
-z-Azawan | d-boat | v-leave
+z-Uzazon | d-boat | v-leave
 :::
 
-**2.** *Alahen heads for the anchor.*
+**2.** *Olozun heads for the anchor.*
 
 ::: details Show answer
-`zalahen dagel vowogaloel.`
+`zolozun dagel voworeloel.`
 
-z-Alahen | d-anchor | v-head-for
+z-Olozun | d-anchor | v-head-for
 :::
 
-**3.** *Ahaben exits the fog.*
+**3.** *Ehalon exits the fog.*
 
 ::: details Show answer
-`zahaben davegel vowogalual.`
+`zehalon dovalul voworelual.`
 
-z-Ahaben | d-fog | v-exit
+z-Ehalon | d-fog | v-exit
 :::
 
-**4.** *Azawan contradicts Alahen.* (*tell* fused with *against*)
+**4.** *Uzazon contradicts Olozun.* (*tell* fused with *against*)
 
 ::: details Show answer
-`zazawan dalahen vezebeluel.`
+`zuzazon dolozun vezeyeluel.`
 
-z-Azawan | d-Alahen | v-tell-oppose
+z-Uzazon | d-Olozun | v-tell-oppose
 :::
 
 #### Agazan → English {#advanced-agazan-to-english}
 
-**1.** `davegel zalahen vowogalul.`
+**1.** `dovalul zolozun voworelul.`
 
 ::: details Show answer
-d-fog | z-Alahen | v-leave
+d-fog | z-Olozun | v-leave
 
-*Alahen leaves the fog.*
+*Olozun leaves the fog.*
 :::
 
-**2.** `zazawan dazahol vowogaluol.`
+**2.** `zuzazon dazulol voworeluol.`
 
 ::: details Show answer
-z-Azawan | d-ice | v-traverse
+z-Uzazon | d-ice | v-traverse
 
-*Azawan crosses the ice.*
+*Uzazon crosses the ice.*
 :::
 
-**3.** `zalahen dehebal vowogalal.`
+**3.** `zolozun deheval voworelal.`
 
 ::: details Show answer
-z-Alahen | d-ship | v-enter
+z-Olozun | d-ship | v-enter
 
-*Alahen enters a ship.*
+*Olozun enters a ship.*
 :::
 
-**4.** `zahaben dagavol vowogaluel.`
+**4.** `zehalon dayoyul voworeluel.`
 
 ::: details Show answer
-z-Ahaben | d-guard | v-oppose
+z-Ehalon | d-guard | v-oppose
 
-*Ahaben opposes the guard.*
+*Ehalon opposes the guard.*
 :::
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Azawan enters the ship.* `zazawan dehebal vowogalal.` or `zazawan behebal vowogalal.`
+**1.** *Uzazon enters the ship.* `zuzazon deheval voworelal.` or `zuzazon beheval voworelal.`
 
 ::: details Show answer
-`zazawan dehebal vowogalal.`
+`zuzazon deheval voworelal.`
 
-z-Azawan | d-ship | v-enter
+z-Uzazon | d-ship | v-enter
 
 A fused verb takes its extra participant as an ordinary object, `/d/`; after a verb, `/b/` is a recipient.
 :::
 
 #### Fix it {#advanced-fix-it}
 
-**1.** *leave* (the dictionary form) <!-- lint: error -->`vowogalul.`
+**1.** *leave* (the dictionary form) <!-- lint: error -->`voworelul.`
 
 ::: details Show answer
-`owogalul.`
+`oworelul.`
 
 leave
 

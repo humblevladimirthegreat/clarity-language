@@ -35,7 +35,7 @@ export const GLOSS_READER = {
   ],
   /** One line per written prefix (clause.md#role-letters), plus prefix-less hooks under `""`. */
   prefixes: {
-    y: "a turn word before the sentence: a call (`y-Azawan` = Azawan, …), a reaction, yes / no, or the speech act (`y-question` asks, `y-command` orders)",
+    y: "a turn word before the sentence: a call (`y-Uzazon` = Uzazon, …), a reaction, yes / no, or the speech act (`y-question` asks, `y-command` orders)",
     z: "subject: who acts, or who or what the sentence is about",
     d: "direct object: who or what is acted on",
     b: "extra noun: alone, the one the act is to or for; in a bracket after a relation word, that word's object (`[in | b-house]`)",
@@ -44,7 +44,7 @@ export const GLOSS_READER = {
     gl: "adjective written before the noun it describes",
     w: "detail (often degree) on the next `g-`, `h-`, or `th-` word",
     h: "adverb: how, when, where; with a `b-` noun in its bracket, a relation (`[h-while | b-month]`). A plan, decision, try, ability, consent, RESIDUE or FORMER on `h-` covers the whole sentence; a plan or decision does not say the act happens",
-    th: "what is in a mind: by default the speaker's stance on the claim (how they know it, how sure they are, why, as if, a want, a plan, a decision, a feeling), never the subject's: `z-X | th-WANT-unstated | v-sing` = I want X to sing, and `z-X | th-plan-itinerary | v-go` = I plan for X to go. With a person joined to a channel (`th-CLUES-Azawan`), that person's view",
+    th: "what is in a mind: by default the speaker's stance on the claim (how they know it, how sure they are, why, as if, a want, a plan, a decision, a feeling), never the subject's: `z-X | th-WANT-unstated | v-sing` = I want X to sing, and `z-X | th-plan-itinerary | v-go` = I plan for X to go. With a person joined to a channel (`th-CLUES-Uzazon`), that person's view",
     x: "links this sentence to the one before (`x-however`), or names the topic",
     "": "no prefix: a hook. Between two words of the same role it relates them, and the right one is what holds: `d-tea | instead | d-coffee` = coffee instead of tea. With a `b-` noun in its bracket it is a relation (`[from | b-dog]`)",
   } as Record<string, string>,
@@ -63,8 +63,8 @@ export const GLOSS_READER = {
   } as Record<string, string>,
   pieces: [
     "`-x-` inside one word joins the pieces of a compound. `ROLE-x-verb` names someone by their part in that kind of event: `z-agent-x-teach` = someone who teaches.",
-    "A trailing `-x` adds associates: `z-Azawan-x` = Azawan and their people; `y-listener-x` = all of you. On a kind of thing, not a name, it is just several of that kind: `z-dog-x` = dogs (no others added). On a verb or adjective, they do it or are it as a group.",
-    "`←X` refers back to X, mentioned earlier: `z-←Azawan` = Azawan again (he, she, they); `z-←agent-x-teach` = the one who taught, in that earlier event.",
+    "A trailing `-x` adds associates: `z-Uzazon-x` = Uzazon and their people; `y-listener-x` = all of you. On a kind of thing, not a name, it is just several of that kind: `z-dog-x` = dogs (no others added). On a verb or adjective, they do it or are it as a group.",
+    "`←X` refers back to X, mentioned earlier: `z-←Uzazon` = Uzazon again (he, she, they); `z-←agent-x-teach` = the one who taught, in that earlier event.",
     "`←ROLE.same` = whoever had that part in the latest sentence that had one (he, she, it, they). `.self` = this sentence's own ROLE (themself). `.other` = the other one, an earlier and different one. `.unsaid` = whoever it was, when that sentence left the part unsaid.",
     "A dot joins the pieces of one label: words of one English phrase (`in.other.words`), or a variant of the word (`CLUES.strong`, `as-of.ledger`).",
     "A time amount in a bracket right after a stance word dates the event from now: `[th-REPORTED | [b-hour | g-three]]` = in three hours, `g-minus-three` = three hours ago; `[b-day | g-one]` = tomorrow. `b-+-e-` = a moment from now (about to), `b---e-` = a moment ago (just); with `.about`, soon / recently.",
@@ -81,7 +81,7 @@ export const GLOSS_READER = {
     ".self": "see `←ROLE.same` above",
     ".other": "see `←ROLE.same` above",
     ".unsaid": "see `←ROLE.same` above",
-    ".instance": "one thing the name applies to (an Azawan, one of them)",
+    ".instance": "one thing the name applies to (an Uzazon, one of them)",
     ".about": "approximately; on a quoted span, a paraphrase",
     ".named": "used as a fixed name or title",
     ".again": "the same number as before",
@@ -110,7 +110,7 @@ export const GLOSS_READER = {
     ONE: "people in general (one, you)",
   } as Record<string, string>,
   rules: [
-    "Capitalized words like Azawan, Alahen, Ahaben are personal names.",
+    "Capitalized words like Uzazon, Olozun, Ehalon are personal names.",
     "No tense is marked on the verb. Use the present by default. Use the past when the gloss puts the event before now (a past date or day, MEMORY, RESIDUE, FORMER, a past as-of) or reports an event that is over (hearsay or clues about something that happened, a quote). Use will for a forecast or a later date. Never add a time word the gloss does not have.",
     "Keep vague things vague: do not add a gender, a time, or a count the gloss leaves open. Use they / them for a person whose gender is not given.",
   ],

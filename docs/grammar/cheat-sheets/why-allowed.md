@@ -24,17 +24,17 @@ Write the outcome first, then the pole, then the condition as the pole's `/b/`. 
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [If, after a verb](../causation.md#if) | `zazawan vowogal thoyem berehel.` | *Azawan walks if it rains.* | B |
-| [If, after a noun](../causation.md#if) | `zerehel goyem bagavul.` | *There is rain if there are clouds.* | B |
-| [Only if](../causation.md#only-if) | `zazawan vowogal tholum berehel.` | *Azawan walks only if it rains.* | B |
-| [Condition is a whole sentence](../causation.md#dependent): `barl`, then the sentence | `zazawan vowogal thoyem barl zalahen vezebal.` | *Azawan walks if Alahen is asleep.* | I |
-| [Because](../causation.md#only-because) | `zazawan vowogal thavem barl zalahen vezebal.` | *Azawan walks because Alahen is asleep.* | I |
-| [If and only if](../causation.md#only-because) | `zazawan vowogal thedam barl zalahen vezebal.` | *Azawan walks if and only if Alahen is asleep.* | I |
-| [Only because](../causation.md#only-because) | `zazawan vowogal tholum thavem berehel.` | *Azawan walks only because of the rain.* | I |
-| [Unless](../causation.md#only-because): `burl` for `barl` | `zazawan vowogal thoyem burl zalahen vezebal.` | *Azawan walks unless Alahen is asleep.* | I |
-| [Even if](../causation.md#only-because) | `zazawan vowogal hezom thoyem barl zalahen vezebal.` | *Azawan walks even if Alahen is asleep.* | I |
+| [If, after a verb](../causation.md#if) | `zuzazon voworel thoyem burelal.` | *Uzazon walks if it rains.* | B |
+| [If, after a noun](../causation.md#if) | `zurelal goyem bagolol.` | *There is rain if there are clouds.* | B |
+| [Only if](../causation.md#only-if) | `zuzazon voworel tholum burelal.` | *Uzazon walks only if it rains.* | B |
+| [Condition is a whole sentence](../causation.md#dependent): `barl`, then the sentence | `zuzazon voworel thoyem barl zolozun vuzevol.` | *Uzazon walks if Olozun is asleep.* | I |
+| [Because](../causation.md#only-because) | `zuzazon voworel thavem barl zolozun vuzevol.` | *Uzazon walks because Olozun is asleep.* | I |
+| [If and only if](../causation.md#only-because) | `zuzazon voworel thedam barl zolozun vuzevol.` | *Uzazon walks if and only if Olozun is asleep.* | I |
+| [Only because](../causation.md#only-because) | `zuzazon voworel tholum thavem burelal.` | *Uzazon walks only because of the rain.* | I |
+| [Unless](../causation.md#only-because): `burl` for `barl` | `zuzazon voworel thoyem burl zolozun vuzevol.` | *Uzazon walks unless Olozun is asleep.* | I |
+| [Even if](../causation.md#only-because) | `zuzazon voworel hezom thoyem barl zolozun vuzevol.` | *Uzazon walks even if Olozun is asleep.* | I |
 
-A noun after a because pole names an act or a thing, never a person. For *because of Alahen*, give what Alahen did as a sentence after `barl`.
+A noun after a because pole names an act or a thing, never a person. For *because of Olozun*, give what Olozun did as a sentence after `barl`.
 
 ### Fault and share {#fault}
 
@@ -49,8 +49,8 @@ The ending on the because pole says whether anyone did wrong.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Fault, on an act](../causation.md#fault) | `zazawan vedabal thavel barl zalahen vezebel.` | *Azawan left because Alahen spoke, and Alahen was wrong to.* | I |
-| [A share](../causation.md#fault) | `zazawan vedabal thaver berehel.` | *The rain is part of why Azawan left.* | I |
+| [Fault, on an act](../causation.md#fault) | `zuzazon veyorul thavel barl zolozun vezeyel.` | *Uzazon left because Olozun spoke, and Olozun was wrong to.* | I |
+| [A share](../causation.md#fault) | `zuzazon veyorul thaver burelal.` | *The rain is part of why Uzazon left.* | I |
 
 ### CAUSE: the mechanism {#cause}
 
@@ -58,9 +58,9 @@ The ending on the because pole says whether anyone did wrong.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Mechanism](../causation.md#cause) | `zazawan vowogal thegem thoyem berehel.` | *Azawan walks if it rains.* (rain as the mechanism) | I |
-| [Make someone do it](../causation.md#make): causer in `/b/`, no pole | `zalahen vezebel thegem bazawan.` | *Azawan makes Alahen speak.* | I |
-| [One adjective only](../causation.md#cause): `wegem` | `zazawan wegem gelevam vowogal.` | *Azawan walks, straining.* (something is causing the strain) | I |
+| [Mechanism](../causation.md#cause) | `zuzazon voworel thegem thoyem burelal.` | *Uzazon walks if it rains.* (rain as the mechanism) | I |
+| [Make someone do it](../causation.md#make): causer in `/b/`, no pole | `zolozun vezeyel thegem buzazon.` | *Uzazon makes Olozun speak.* | I |
+| [One adjective only](../causation.md#cause): `wegem` | `zuzazon wegem gulevom voworel.` | *Uzazon walks, straining.* (something is causing the strain) | I |
 
 ## The sakes {#sakes}
 
@@ -103,16 +103,16 @@ The scale runs **-l** most settled, **-m** the default, **-r** most passing. Whe
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Serves, on a noun](../sakes.md#met) | `zahazal gulotham.` | *My house serves competence.* | B |
+| [Serves, on a noun](../sakes.md#met) | `zawuhol gulotham.` | *My house serves competence.* | B |
 | [Serves, lasting](../sakes.md#time-horizon-endings-on-met) | `zebel ganathal.` | *My gift serves relatedness in the long term.* | B |
 | [Detracts](../sakes.md#sake-changeability) | `zugul gulothum.` | *My book detracts from competence.* (modifiable) | B |
 | [Costly now, good later](../sakes.md#sake-changeability) | `zugul gozothur gulothal.` | *My book is a slog for now, but builds lasting competence.* | B |
-| [On the event](../sakes.md#word-shape) | `zazawan vezebel thulotham.` | *Azawan talks, and that boosts my confidence.* | B |
-| [Not your noun](../sakes.md#personal-possession): `gobum` | `zabezam wahuthur gobum.` | *the gathering, passing harm to autonomy* | B |
-| [Ought](../sakes.md#sake-force) | `zazawan vezebel thanathem baxer.` | *Azawan ought to talk; it would help them feel connected.* (unasked advice) | I |
-| [Motive](../sakes.md#sake-preference) | `zamun vezebel thanathom.` | *I talk to feel connected.* | I |
-| [Whose stake](../sakes.md#whose-stake): the person in `/b/` | `zazawan vezebel thanathom balahen.` | *Azawan talks for Alahen's sake.* | I |
-| [Not your noun, their stake](../sakes.md#whose-stake) | `zebel ganathal balahen.` | *My gift serves Alahen's relatedness.* | I |
+| [On the event](../sakes.md#word-shape) | `zuzazon vezeyel thulotham.` | *Uzazon talks, and that boosts my confidence.* | B |
+| [Not your noun](../sakes.md#personal-possession): `gobum` | `zubawam wahuthur gobum.` | *the gathering, passing harm to autonomy* | B |
+| [Ought](../sakes.md#sake-force) | `zuzazon vezeyel thanathem baxer.` | *Uzazon ought to talk; it would help them feel connected.* (unasked advice) | I |
+| [Motive](../sakes.md#sake-preference) | `zamun vezeyel thanathom.` | *I talk to feel connected.* | I |
+| [Whose stake](../sakes.md#whose-stake): the person in `/b/` | `zuzazon vezeyel thanathom bolozun.` | *Uzazon talks for Olozun's sake.* | I |
+| [Not your noun, their stake](../sakes.md#whose-stake) | `zebel ganathal bolozun.` | *My gift serves Olozun's relatedness.* | I |
 
 ### Thanks and sorry {#thanks-sorry}
 
@@ -133,8 +133,8 @@ A lone met word is a whole sentence about you: *my sake is met*. Sorry is about 
 | [Thanks](../sakes.md#thanks-sorry) | `thanatham.` | *That meant a lot to me.* | I |
 | [Moved](../sakes.md#thanks-sorry) | `thanathamar.` | *I'm so moved.* | I |
 | [Sorry](../sakes.md#thanks-sorry) | `thanathum behon.` | *That hurt your sense of connection.* | I |
-| [Sorry, to another's sake](../sakes.md#thanks-sorry) | `thanathum balahen.` | *owns up to a harm to Alahen* | I |
-| [Appreciated by another](../sakes.md#thanks-sorry) | `thanatham balahen.` | *Alahen appreciated it* | I |
+| [Sorry, to another's sake](../sakes.md#thanks-sorry) | `thanathum bolozun.` | *owns up to a harm to Olozun* | I |
+| [Appreciated by another](../sakes.md#thanks-sorry) | `thanatham bolozun.` | *Olozun appreciated it* | I |
 
 ### Speaker attitude {#attitude}
 
@@ -143,9 +143,9 @@ Your feeling about the whole claim, on `/th/` with **-m**. It is never the subje
 <!-- cheat-sheet: why-allowed -->
 | Agazan | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`thevegem`](../sakes.md#speaker-attitude) | you want it, and it is still open | *hopefully* | I |
-| [`theledem`](../sakes.md#speaker-attitude) | it went well by chance | *luckily* | I |
-| [`thewedam`](../sakes.md#speaker-attitude) | it concerns you | *worryingly* | I |
+| [`thoyuyom`](../sakes.md#speaker-attitude) | you want it, and it is still open | *hopefully* | I |
+| [`tholezom`](../sakes.md#speaker-attitude) | it went well by chance | *luckily* | I |
+| [`thewomum`](../sakes.md#speaker-attitude) | it concerns you | *worryingly* | I |
 
 ## Feelings {#feelings}
 
@@ -179,25 +179,25 @@ Motion is how the feeling moves, not how strong it is. For strength, put a [degr
 <!-- cheat-sheet: why-allowed -->
 | Agazan | English | Stage |
 |--------|---------|-------|
-| [`zezebel wulothuraor gobum`](../sakes.md#emotion-compose) | *anxious about the dialogue* | I |
-| [`zozazom wanathumual gobum`](../sakes.md#emotion-compose) | *given up over the division* | I |
-| [`zebeyom gulothamar`](../sakes.md#emotion-compose) | *proud of the draft* | I |
-| [`zumel wanathumem gobum bazawan`](../sakes.md#emotion-compose) | *upset for Azawan about the memo* | I |
-| [`zezebel wanathumum gobum balahen`](../sakes.md#emotion-compose) | *avoiding Alahen over the dialogue* | I |
-| [`zezebel wanathumaem gobum balahen`](../sakes.md#emotion-compose) | *placating Alahen about the dialogue* | I |
-| [`zumel wanathumoem gobum bazawan`](../sakes.md#emotion-compose) | *upset, turning to Azawan for comfort* | I |
+| [`zezeyel wulothuraor gobum`](../sakes.md#emotion-compose) | *anxious about the dialogue* | I |
+| [`zozowum wanathumual gobum`](../sakes.md#emotion-compose) | *given up over the division* | I |
+| [`zebewom gulothamar`](../sakes.md#emotion-compose) | *proud of the draft* | I |
+| [`zumel wanathumem gobum buzazon`](../sakes.md#emotion-compose) | *upset for Uzazon about the memo* | I |
+| [`zezeyel wanathumum gobum bolozun`](../sakes.md#emotion-compose) | *avoiding Olozun over the dialogue* | I |
+| [`zezeyel wanathumaem gobum bolozun`](../sakes.md#emotion-compose) | *placating Olozun about the dialogue* | I |
+| [`zumel wanathumoem gobum buzazon`](../sakes.md#emotion-compose) | *upset, turning to Uzazon for comfort* | I |
 | [`zumel wanathumuer gobum`](../sakes.md#emotion-compose) | *objecting to the memo* | I |
-| [`zezebel wamethumal gobum`](../sakes.md#emotion-compose) | *the dialogue feels pointless* | I |
-| [`zebeyom gebethamam`](../sakes.md#emotion-compose) | *glad my draft helped* | I |
-| [`zezebel wamazam wulothuruom gobum`](../sakes.md#emotion-compose) | *a little uneasy, and I can't say why* | I |
-| [`zezebel wulothumuer gezehom`](../sakes.md#emotion-compose) | *the dialogue is frustratingly slow* | I |
+| [`zezeyel wamethumal gobum`](../sakes.md#emotion-compose) | *the dialogue feels pointless* | I |
+| [`zebewom gebethamam`](../sakes.md#emotion-compose) | *glad my draft helped* | I |
+| [`zezeyel wumazom wulothuruom gobum`](../sakes.md#emotion-compose) | *a little uneasy, and I can't say why* | I |
+| [`zezeyel wulothumuer gazuzom`](../sakes.md#emotion-compose) | *the dialogue is frustratingly slow* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [A feeling with no object](../sakes.md#feeling-no-object) | `thulothuruor.` | *I'm anxious.* | I |
-| [Name its cause](../sakes.md#feeling-no-object) | `thulothuruor thavem berehel.` | *I'm anxious, and the rain caused it.* | I |
-| [A feeling about an event](../sakes.md#feeling-no-object) | `zalahen vowogal thanathamar` | *moved that Alahen walks* | I |
-| [Naming it plainly](../sakes.md#emotion-compose) | `zamun ganegel` | *I am angry* | I |
+| [Name its cause](../sakes.md#feeling-no-object) | `thulothuruor thavem burelal.` | *I'm anxious, and the rain caused it.* | I |
+| [A feeling about an event](../sakes.md#feeling-no-object) | `zolozun voworel thanathamar` | *moved that Olozun walks* | I |
+| [Naming it plainly](../sakes.md#emotion-compose) | `zamun gonemul` | *I am angry* | I |
 
 ## Allowed and required {#deontic}
 
@@ -225,22 +225,22 @@ Each is a `/th/` word on the clause. The ending says where the rule comes from: 
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Permission, granted](../sakes.md#permission) | `zazawan vowogal thegom.` | *Azawan may walk; I'm allowing it.* | I |
-| [Permission, by someone](../sakes.md#permission) | `zazawan vowogal thegom balahen.` | *Alahen lets Azawan walk.* | I |
-| [Permission, by rule](../sakes.md#permission) | `zahaben vehahel thegol.` | *Ahaben is allowed to sit.* | I |
-| [Tolerated](../sakes.md#permission) | `zalahen vezebal thegor.` | *no one is stopping it* | I |
-| [Ask permission](../sakes.md#permission) | `yom zamun vehahel thegom.` | *May I sit?* | I |
-| [Requirement, by rule](../sakes.md#requirement) | `zazawan vowogal thumel.` | *The rules require Azawan to walk.* | I |
-| [Requirement, by a person](../sakes.md#requirement) | `zahaben vehahel thumem balahen.` | *Alahen makes Ahaben sit.* | I |
-| [Requirement, by custom](../sakes.md#requirement) | `zalahen vezebal thumer.` | *Alahen is supposed to sleep.* | I |
-| [Consent](../sakes.md#consent): who it happens to, in `/b/` | `zazawan vezebel huxegom bahaben.` | *Azawan tells, and Ahaben said yes.* | I |
-| [Binding consent](../sakes.md#consent) | `zazawan vezebel huxegol bahaben.` | *as Ahaben agreed in advance* | I |
-| [Assumed consent, several people](../sakes.md#consent) | `zazawan vezebel huxegor bahaben balahen bal.` | *assuming Ahaben and Alahen are OK* | I |
-| [Consent, no `/b/`](../sakes.md#consent): only the actor | `zalahen vezebal huxegom.` | *Alahen lets themself sleep.* | I |
-| [A promise](../sakes.md#consent) | `zamun vowogal huxegol.` | *I promise to walk.* (to you) | I |
-| [Promise to someone else](../sakes.md#consent) | `zamun vowogal huxegol el bahaben.` | *I promise Ahaben I'll walk.* | I |
-| [Check in](../sakes.md#consent) | `yom zazawan vezebel huxegom.` | *Are you still OK with this?* | I |
-| [Contrary to a stance](../sakes.md#contrary-to-stance): `uem` first | `zazawan vowogal uem thedel.` | *Azawan walks anyway.* | I |
+| [Permission, granted](../sakes.md#permission) | `zuzazon voworel thegom.` | *Uzazon may walk; I'm allowing it.* | I |
+| [Permission, by someone](../sakes.md#permission) | `zuzazon voworel thegom bolozun.` | *Olozun lets Uzazon walk.* | I |
+| [Permission, by rule](../sakes.md#permission) | `zehalon vehuhol thegol.` | *Ehalon is allowed to sit.* | I |
+| [Tolerated](../sakes.md#permission) | `zolozun vuzevol thegor.` | *no one is stopping it* | I |
+| [Ask permission](../sakes.md#permission) | `yom zamun vehuhol thegom.` | *May I sit?* | I |
+| [Requirement, by rule](../sakes.md#requirement) | `zuzazon voworel thumel.` | *The rules require Uzazon to walk.* | I |
+| [Requirement, by a person](../sakes.md#requirement) | `zehalon vehuhol thumem bolozun.` | *Olozun makes Ehalon sit.* | I |
+| [Requirement, by custom](../sakes.md#requirement) | `zolozun vuzevol thumer.` | *Olozun is supposed to sleep.* | I |
+| [Consent](../sakes.md#consent): who it happens to, in `/b/` | `zuzazon vezeyel huxegom behalon.` | *Uzazon tells, and Ehalon said yes.* | I |
+| [Binding consent](../sakes.md#consent) | `zuzazon vezeyel huxegol behalon.` | *as Ehalon agreed in advance* | I |
+| [Assumed consent, several people](../sakes.md#consent) | `zuzazon vezeyel huxegor behalon bolozun bal.` | *assuming Ehalon and Olozun are OK* | I |
+| [Consent, no `/b/`](../sakes.md#consent): only the actor | `zolozun vuzevol huxegom.` | *Olozun lets themself sleep.* | I |
+| [A promise](../sakes.md#consent) | `zamun voworel huxegol.` | *I promise to walk.* (to you) | I |
+| [Promise to someone else](../sakes.md#consent) | `zamun voworel huxegol el behalon.` | *I promise Ehalon I'll walk.* | I |
+| [Check in](../sakes.md#consent) | `yom zuzazon vezeyel huxegom.` | *Are you still OK with this?* | I |
+| [Contrary to a stance](../sakes.md#contrary-to-stance): `uem` first | `zuzazon voworel uem thedel.` | *Uzazon walks anyway.* | I |
 
 The negatives use the same endings: `thedel` / `thedem` / `theder` forbid, `huxedel` / `huxedem` / `huxeder` refuse.
 

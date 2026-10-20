@@ -223,7 +223,7 @@ function judgePrompt(item: Item, prompt: string, reply: { sentence: string; note
     `Reference: ${doc}`,
     `Reply: ${reply.note == null ? `"${reply.sentence}"` : `"${reply.sentence}" (${reply.note})`}`,
     "",
-    'SENTENCE: does the reply sentence make the same claim as the reference sentence? Judge meaning, not wording: "walks if it rains" matches "walks if there is rain"; a different but natural tense is fine when the gloss leaves tense open. "same" = same claim; "partly" = the core is right but a piece of meaning is lost, added, or shifted (who, negation, stance, scope, count, list closure); "wrong" = a different claim. In misread, list the gloss pieces (copied verbatim from the gloss, e.g. "th-CLUES-Azawan" or "z-rank/more") that the reply misread; empty when same. sentenceWhy: one short sentence.',
+    'SENTENCE: does the reply sentence make the same claim as the reference sentence? Judge meaning, not wording: "walks if it rains" matches "walks if there is rain"; a different but natural tense is fine when the gloss leaves tense open. "same" = same claim; "partly" = the core is right but a piece of meaning is lost, added, or shifted (who, negation, stance, scope, count, list closure); "wrong" = a different claim. In misread, list the gloss pieces (copied verbatim from the gloss, e.g. "th-CLUES-Uzazon" or "z-rank/more") that the reply misread; empty when same. sentenceWhy: one short sentence.',
     noteRule,
     "noteWhy: one short sentence (empty when none or not-scored).",
   ].join("\n");

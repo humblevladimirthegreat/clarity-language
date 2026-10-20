@@ -51,19 +51,19 @@ The same onsets as the respelled digit syllables in `number-respelling.md`:
 | 9 | **n** | nu |
 | 0 | **m** | ma |
 
-Vowels never encode a digit. The same skeleton with different vowels is the **same number**: `ogoda` *gold*, `egeda` *guitar*, `agade` *cutlery* and `ogode` *cold* are all **32**. Use that freedom to pick a vivid picture; don't treat `u` / `a` / `o` / `e` as extra digits.
+Vowels never encode a digit. The same skeleton with different vowels is the **same number**: `ogelo` *gold*, `ugoro` *guitar*, `ogado` *cutlery* and `ogumo` *cold* are all **32**. Use that freedom to pick a vivid picture; don't treat `u` / `a` / `o` / `e` as extra digits.
 
 ## Payload vs silent
 
 **Payload** (left to right, **inside the root**): `b d g v z h l r n m`.
 
-**Fillers:** `w` and `y`. They add a syllable without adding a digit. A five-letter root with one filler and one digit letter is a **one-onset** root (`erewe` *railway* → **r** → **8**). Roots never contain `x` or `th`.
+**Fillers:** `w` and `y`. They add a syllable without adding a digit. A five-letter root with one filler and one digit letter is a **one-onset** root (`erehe` *railway* → **r** → **8**). Roots never contain `x` or `th`.
 
 **Always silent:**
 
 - All vowels.
-- The role letter, and the `l` of left-hanging `gl-`. The role letter changes a word's job, not what you picture: `zodogal` and `dodogal` are the same dog. It also has its own job in [person–action–object](#optional-person-action-object).
-- **The ending** (**-l / -m / -n / -r**). Picture the seed whatever the ending: `zodogal` and `zodogam` are both the dog, **23**.
+- The role letter, and the `l` of left-hanging `gl-`. The role letter changes a word's job, not what you picture: `zodozol` and `dodozol` are the same dog. It also has its own job in [person–action–object](#optional-person-action-object).
+- **The ending** (**-l / -m / -n / -r**). Picture the seed whatever the ending: `zodozol` and `zodozom` are both the dog, **23**.
 - Plural **-x**, name instance **-ln**, and the stand-in codas **-rl / -rm / -rth**.
 - Mid-word **x** (compound seam) and mid-word **th** (stance seam).
 
@@ -73,7 +73,7 @@ So the role letter, the ending and every coda sit outside the root. Read only th
 
 ### Dictionary compounds
 
-A [dictionary compound](../grammar/x-compounds.md#lexical-compounds) is one stem: left root + join letter + head root. The join letter (**l / m / n / r**) **counts**: it is spelled and heard like any root letter, so decoding never needs to know where the seam is. `zebedaluruhel` *bedroom* is **b d l r h** → **12786**.
+A [dictionary compound](../grammar/x-compounds.md#lexical-compounds) is one stem: left root + join letter + head root. The join letter (**l / m / n / r**) **counts**: it is spelled and heard like any root letter, so decoding never needs to know where the seam is. `zebeholuruhal` *bedroom* is **b d l r h** → **12786**.
 
 A compound has three or more onsets, so it doesn't fit a fixed-length slot. Compounds are optional long pegs for a palace slot set to their own length. They aren't part of the canonical bank.
 
@@ -104,11 +104,11 @@ Decoding is unique. That is the gap in the English Major system this closes.
 | 5 letters `VCVCV`, two digit letters | 2 onsets | **00–99** |
 | Dictionary compound | 3–5 onsets | long chunk (optional) |
 
-Three-letter roots with a filler consonant (`oye` *door*) and five-letter roots with two fillers (`oyoyo` *yoyo*) carry no digit.
+Three-letter roots with a filler consonant (`oye` *door*) and five-letter roots with two fillers (`oyavo` *yoyo*) carry no digit.
 
 Phone-style groups already match how they're spoken (`555,123,4567`): one image per comma group, or 2-digit chunks with the 3-digit groups split 2+1.
 
-**2381** → **23 | 81**: `zodogal` *dog*, `zarabal` *rabbit*.
+**2381** → **23 | 81**: `zodozol` *dog*, `zarazol` *rabbit*.
 
 **5970** → **59 | 70**. Neither cell has a root today. Under `root-tails.md`, a root's second consonant is its kind, so **59** is a named root (a flag) with **z** first, and **70** is a mind-and-feeling root with **l** first. Which rows land there is up to placement.
 
@@ -124,7 +124,7 @@ The same 00–99 pegs work here; the role letter picks the job, so no second map
 
 Read the digits in the clause's default order (subject, object, verb), so six digits fill one locus:
 
-> `zodogal deredel vegezal.`
+> `zodozol darewol vegayol.`
 >
 > z-dog | d-radio | v-kiss
 >
@@ -134,11 +134,11 @@ Each word is a two-onset root, so each fills two digits.
 
 ## Optional: count layer {#count-layer}
 
-A three-digit chunk is a **count** plus a two-digit peg: **415** = four of the **15** peg (`abaza` *bus stop*).
+A three-digit chunk is a **count** plus a two-digit peg: **415** = four of the **15** peg (`ubaho` *bus stop*).
 
 - **Capacity:** 3 digits per image instead of 2.
 - **Decoding:** the count is the first digit, and the peg reads as usual. On a three-digit list, a single item still counts as 1, so `162` is one item of peg 62, never the bare peg.
-- **Speech:** the image is ordinary Agazan, a noun with a count. Plural **-x** stays silent, so `zabazalx` is still peg 15.
+- **Speech:** the image is ordinary Agazan, a noun with a count. Plural **-x** stays silent, so `zubaholx` is still peg 15.
 
 **Show the count as a hand shape, not as copies.** People take in up to about four items at a glance; five and more have to be counted, and a mental image is hard to count accurately. Zero copies can't be pictured at all. The finger code in `manual-phonology.md` gives every digit a count shape in alphabet order: runs of fingers for 1–4, the thumb for 5, thumb plus a run for 6–9, horns for 0. So the count becomes a hand held over the peg scene. That covers zero and the large counts with no special case. If the finger code stays unbuilt, use copies for 1–4 and a hand for the rest.
 
@@ -181,14 +181,14 @@ Working examples (current spellings that the simulated re-placement keeps):
 
 | Word | Payload | Digits |
 |------|---------|--------|
-| `zebedal` *bed* | b d | **12** |
-| `zodogal` *dog* | d g | **23** |
-| `zegabal` *eggplant* | g b | **31** |
-| `zavagel` *factory* | v g | **43** |
-| `zozazol` *saw* | z z | **55** |
-| `zehedal` *head* | h d | **62** |
-| `zarabal` *rabbit* | r b | **81** |
-| `zerevel` *refresh* | r v | **84** |
+| `zebehol` *bed* | b d | **12** |
+| `zodozol` *dog* | d g | **23** |
+| `zeladol` *eggplant* | g b | **31** |
+| `zavahol` *factory* | v g | **43** |
+| `zozowul` *saw* | z z | **55** |
+| `zehabol` *head* | h d | **62** |
+| `zarazol` *rabbit* | r b | **81** |
+| `zoregol` *refresh* | r v | **84** |
 
 The cells ending in 7, 8, 9 and 0 have no roots until `root-tails.md` is absorbed. From the echo-placement simulation: 🍽️ *plate* (**17**), 🦣 *mammoth* (**00**), ⏰ *alarm clock* (**78**), ℹ️ *information* (**90**).
 

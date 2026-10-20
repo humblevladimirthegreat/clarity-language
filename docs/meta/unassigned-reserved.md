@@ -103,7 +103,7 @@ Source: [joins.md](../grammar/joins.md), [join-across-roles.md](../grammar/join-
 - **open:** **`/th/`…-n**. Join-relations frame a noun or an event, and a stance is neither, so no reading composes.
 - **open:** stacked **-r** outside a question on `/th/` (`thaor` … `thuer` are fill-asks only), and on `/z/` `/d/` `/b/` `/v/` `/x/` `/ɡ/` joins (`zuar`, `vaor`, `xuar`, `gaor`). No statement wants a stacked blank, and no question has asked for one on these joins. Parser: `stackedJoinResume`.
 - **open:** clause sequence **-n** beyond `xan` `xon` `xun` `xaon` `xuen` (`xuan`, `xuon`, `xen`, `xaen`, `xoen`). No reading is guessable: `xen` and `xaen` put rank or order into a sequence that is already ordered, `xoen` could be *at the same time* or *in either order*, and `xuan` / `xuon` (*everything but* / *anything but*) have no clause job. `xen` is also a departure mark after a name.
-- **closed (D-47):** a shared `/d/` or recipient `/b/` (before the subject or after the join) on a joined verb that has its own (`dababol vugugel vagadel val dabovul`).
+- **closed (D-47):** a shared `/d/` or recipient `/b/` (before the subject or after the join) on a joined verb that has its own (`doradal vugudol vogadol val daledol`).
 - **closed (D-39):** a single-item clause join (`A xul` *not the case that A*, `A xal` *only A happened*).
 - **open:** a rank or sequence join (`e` / `ue` / `ae`) with a number as a threshold, and a SHARED continuum word. In a rank or sequence fence a number is one of the items, so a threshold reading is not guessable. Ranges use hooks and [rays](../grammar/numbers-applied.md#rays).
 
@@ -118,8 +118,8 @@ Source: [comparatives.md](../grammar/comparatives.md#bars)
 
 Source: [relations.md](../grammar/relations.md)
 
-- **open:** a relation root on `/w/` with `/b/` (`wumum bazawan`). Only the as-of pair (`wuhum` / `wuram`) takes `/b/` on `/w/`. No learner reaches for it: *as big as Azawan* is the equative, and *like Azawan* goes on the noun (`gumum`) or the verb (`humum`).
-- **closed (D-34):** a social tie on `/h/` (`hemezem bazawan` *as a friend of Azawan*).
+- **open:** a relation root on `/w/` with `/b/` (`wumum buzazon`). Only the as-of pair (`wuhum` / `wuram`) takes `/b/` on `/w/`. No learner reaches for it: *as big as Uzazon* is the equative, and *like Uzazon* goes on the noun (`gumum`) or the verb (`humum`).
+- **closed (D-34):** a social tie on `/h/` (`hameyom buzazon` *as a friend of Uzazon*).
 
 ## Hooks — in-clause
 
@@ -129,8 +129,8 @@ Source: [hooks.md](../grammar/hooks.md#ranges), [sakes.md](../grammar/sakes.md#c
 - **open:** stacked **-r** at the front of a sentence (`aor …`, `aer …`, `uor …`). Extra-noun point-back is assigned; as sentence glue they have no guess (*For example, anyway?* *In fact, as I said?*). Parser: `hookDiscourseStack`.
 - **open:** discourse **`oel`** / **`ual`** / **`uol`** / **`uel`** (and **-m** / **-n**) at the front of a sentence. *Toward*, *out of*, *through* and *against* give no guessable sentence-to-sentence glue (guesses range from *Alternatively* to *Apart from that*). The parser rejects them.
 - **open:** a hook + `barl` other than `ul` (`hookStandIn`). Most have no guess (*in that…*, *at that…*). *Contrary to* an event is `hezom barl`, and no job has turned up for `uem barl`.
-- **open:** `uem` before a stance with no content an event can contradict (`frameKind`): PERMIT (it only lifts a restriction), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Alahen's interest* is `thegathum balahen`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
-- **closed (D-49):** `uem` before given CONSENT (`uem huxegom balahen`, `uem huxegol`), on yourself or with a `/b/` (`frameKind`).
+- **open:** `uem` before a stance with no content an event can contradict (`frameKind`): PERMIT (it only lifts a restriction), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Olozun's interest* is `thegathum bolozun`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
+- **closed (D-49):** `uem` before given CONSENT (`uem huxegom bolozun`, `uem huxegol`), on yourself or with a `/b/` (`frameKind`).
 
 ## Role compounds
 
@@ -138,10 +138,10 @@ Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds
 
 - **open:** a role compound on `/v/` / `/w/` / `/th/`. A role compound names a participant, and these slots take none: it fills `/z/` `/d/` `/b/` `/ɡ/`, sets a topic under `/x/`, and calls under `/y/`. Parser: `roleCompoundSlot`.
 - **closed (D-34):** a role compound on `/h/`.
-- **open:** a role compound as a piece of an ordinary compound, or two role vowels in a word. Not guessable: the first **`x`** decides the family, so an inner role vowel reads as part of the stem. *Noun + agent* is the role compound's own stem (`zaxodogaxowogal`).
+- **open:** a role compound as a piece of an ordinary compound, or two role vowels in a word. Not guessable: the first **`x`** decides the family, so an inner role vowel reads as part of the stem. *Noun + agent* is the role compound's own stem (`zaxodozoxoworel`).
 - **open:** a special pronoun (root + **-n**) as a role-compound stem or a label-scope host (`zaxamun`, `zamuthan`). It is neither an event nor a label. Parser: `roleCompoundStem`, `labelScopeStem`.
-- **open:** ability (`x` + vowel) on a `/z/` / `/d/` / `/b/` noun, a name, a pronoun, or `/h/` (`zodogaxal`). *Can* belongs to an act or a quality, and a noun or an adverb is neither. Ability is on `/v/` and `/ɡ/` (plus hostless `ubo`). Parser: `abilitySlot`.
-- **open:** name + `x` + vowel + **-n** in a clause body (`zalahen zazawaxon varahal.`). A bid is said to someone when arriving or leaving; inside a clause it has no job. That shape is a conversation-length bid only as a citation or a `/y/` call.
+- **open:** ability (`x` + vowel) on a `/z/` / `/d/` / `/b/` noun, a name, a pronoun, or `/h/` (`zodozoxal`). *Can* belongs to an act or a quality, and a noun or an adverb is neither. Ability is on `/v/` and `/ɡ/` (plus hostless `ubo`). Parser: `abilitySlot`.
+- **open:** name + `x` + vowel + **-n** in a clause body (`zolozun zuzazoxon varuvel.`). A bid is said to someone when arriving or leaving; inside a clause it has no job. That shape is a conversation-length bid only as a citation or a `/y/` call.
 
 ## Role pointers
 
@@ -161,7 +161,7 @@ Source: [pronouns.md](../grammar/pronouns.md#tag-pronouns)
 - **closed (D-24):** a tag on `/y/` / `/x/` (`ywar`, `xwar`).
 - **open:** a tag on `/v/` / `/ɡ/` / `/h/` / `/w/` / `/th/`, or with `gl-` (`vwar`). A tag names a participant, and these slots take none. Parser: `tagSlot`.
 - **open:** the stand-in endings on a tag (`zwarl`, `zwarm`). No job yet. Parser: `tagEnding`.
-- **open:** **-x** on a tag **-l** or **-m** (`zwalx`, `zwamx`). A share is a part, not a group; a group is tagged through its plural phrase (`zodogalx zwal`). Parser: `tagPlural`.
+- **open:** **-x** on a tag **-l** or **-m** (`zwalx`, `zwamx`). A share is a part, not a group; a group is tagged through its plural phrase (`zodozolx zwal`). Parser: `tagPlural`.
 - **open:** a tag on a word that is already a fixed pronoun: a special pronoun, the generic or topic pronoun, or another tag (`zamun zwal`, `zozan zwal`, `zwar zwel`). It already has one short form, and a second label for the same pronoun would only rename it. Parser: `tagPronoun`.
 - **open:** a tag pair with **-l** (`zwael`). After a two-item list it could tag the items in order or the group as one, so neither reading is guessable; each tag is assigned on its own. Parser: `tagPairAssign`.
 - **open:** **-x** on a tag pair **-m** (`zwaemx`), as on any share.
@@ -213,9 +213,9 @@ Source: [dependents.md](../grammar/dependents.md#stand-in)
 
 Source: [dependents.md](../grammar/dependents.md#sentence-linkers)
 
-- **closed (D-32):** a linker and a topic word in one sentence (`xezom xazawan …`).
-- **open:** a linker with no clause after it (`xezom.`). A linker joins the last sentence to the one it starts, so alone it links to nothing; *however* as a reply of its own has not come up. The clearing linkers `xevavem` and `xavazem` stand alone, since clearing the topic is a move of its own. Parser: `linkerAlone`.
-- **open:** firm **-l** on *meanwhile* (`xagagal`), *next* (`xevavel`), and *by the way* (`xavazel`). Not guessable: firmness fits a link that can hold more or less surely (*it follows that*, *nevertheless*, *on the contrary*), and *meanwhile*, *next* and *by the way* claim no such link. The parser rejects them.
+- **closed (D-32):** a linker and a topic word in one sentence (`xezom xuzazon …`).
+- **open:** a linker with no clause after it (`xezom.`). A linker joins the last sentence to the one it starts, so alone it links to nothing; *however* as a reply of its own has not come up. The clearing linkers `xevewem` and `xavadom` stand alone, since clearing the topic is a move of its own. Parser: `linkerAlone`.
+- **open:** firm **-l** on *meanwhile* (`xogerel`), *next* (`xevewel`), and *by the way* (`xavadol`). Not guessable: firmness fits a link that can hold more or less surely (*it follows that*, *nevertheless*, *on the contrary*), and *meanwhile*, *next* and *by the way* claim no such link. The parser rejects them.
 
 ## Turn words (`/y/`)
 
@@ -224,11 +224,11 @@ Source: [speech-moves.md](../grammar/speech-moves.md#speech-act), [describing a 
 - **closed (closed-root endings):** act and polar series with **-n** (`yan` / `yon` / `yen` / `yun`, `yaen` / …). On `/y/`, **-n** calls someone.
 - **closed (closed-root endings):** a fill-ask blank for the act itself (*are you asking or telling?*). `yar` / `yor` / `yer` / `yur` are the [for-now acts](../grammar/speech-moves.md#act-r).
 - **closed (D-31):** a polar word before an act word, or two polar words in a row; a topic-only question.
-- **open:** an asking tag with a body after it (`yol yael zazawan vowogal.`). The tag asks about the sentence before it and is a turn of its own; a body after it would be a second move in the same turn, and no question has asked for one. Parser: `tagBody`.
-- **closed (D-43):** a `/b/` hosted by a call or reaction; `yuhohul bazawan` is a reaction and then a body with a recipient.
-- **open:** `/w/` on a call (`welavam yalahen`). The person called is not more or less called. Parser: `turnWordModifier`.
-- **open:** `/w/` on an act word or a polar word (`welavam yel`). Firm / soft already grades the act, and the polar stance has its own strengths. The parser rejects them.
-- **open:** `gl-`, `/ɡ/`, or `/w/` on a number cheer or a `/y/` span (`yrabarel gelavam`, `y<…> gelavam`). A number cheer already carries its own size, and a span's inside is not graded. Parser: `turnWordModifier`.
+- **open:** an asking tag with a body after it (`yol yael zuzazon voworel.`). The tag asks about the sentence before it and is a turn of its own; a body after it would be a second move in the same turn, and no question has asked for one. Parser: `tagBody`.
+- **closed (D-43):** a `/b/` hosted by a call or reaction; `yohomal buzazon` is a reaction and then a body with a recipient.
+- **open:** `/w/` on a call (`weluzom yolozun`). The person called is not more or less called. Parser: `turnWordModifier`.
+- **open:** `/w/` on an act word or a polar word (`weluzom yel`). Firm / soft already grades the act, and the polar stance has its own strengths. The parser rejects them.
+- **open:** `gl-`, `/ɡ/`, or `/w/` on a number cheer or a `/y/` span (`yrabarel geluzom`, `y<…> geluzom`). A number cheer already carries its own size, and a span's inside is not graded. Parser: `turnWordModifier`.
 - **open:** a mention or an aside under `/y/` (`ySpanType`). A mention talks about a word and an aside comments on the sentence, so neither calls nor reacts.
 
 ## Spans
@@ -237,27 +237,27 @@ Source: [spans.md](../grammar/spans.md)
 
 - **open:** an aside under `/z/` `/d/` `/b/` `/v/` (`d(…)`); a cite, opaque or mention under `/th/` (`th[…]`). An aside comments and fills no slot of the verb, and no job has asked for a quoted or foreign stance word: a foreign phrase goes in an aside or a `/y/` interjection. Parser: `spanSlot`.
 - **open:** a span resume (`d[=]`). The shape is not guessable, and a span is an ordinary noun for role pointers (`duxar`).
-- **open:** a resume pronoun for a span in a `/v/` slot (`v[vazadal]`). A verb span echoes wording, so there is no stem to resume.
+- **open:** a resume pronoun for a span in a `/v/` slot (`v[vuzahul]`). A verb span echoes wording, so there is no stem to resume.
 
 ## Values and sakes
 
 Source: [sakes.md](../grammar/sakes.md)
 
-- **open:** forced listener / third-person possessives on sake ascription. A `/ɡ/` sake already means the speaker's belonging ([personal possession](../grammar/sakes.md#personal-possession)); anyone else's noun is **`gobum`** or ownership (`gegabem`), so a second possessive reading would compete.
+- **open:** forced listener / third-person possessives on sake ascription. A `/ɡ/` sake already means the speaker's belonging ([personal possession](../grammar/sakes.md#personal-possession)); anyone else's noun is **`gobum`** or ownership (`gagogom`), so a second possessive reading would compete.
 - **open:** a sake word on `/z/` `/d/` `/b/` `/v/` `/h/` `/x/` `/y/` (`sakeSlot`). A sake word is a stance on a belonging, an unowned noun, or the clause, and these slots are none of those. *Walks healthily* is the clause stance (`thoyutham`).
 - **open:** prescription **`the`** on a noun (`ganathel`, `wanathel gobum`). Its endings are the warrant for a move, and a noun is not a move; what a noun is for is **`tho`** (`ganathom`).
 - **closed (D-36):** **-n** on a sake word.
-- **open:** a `/b/` after an INTERNAL or UNPLACED feeling (`wanathumal gobum balahen`). A placement locus has no landmark; someone else's stake is ON-BEHALF (`e`) or a holder.
+- **open:** a `/b/` after an INTERNAL or UNPLACED feeling (`wanathumal gobum bolozun`). A placement locus has no landmark; someone else's stake is ON-BEHALF (`e`) or a holder.
 
 ## Role-letter structure
 
 Source: [clause.md](../grammar/clause.md)
 
-- **open:** a `gl-` adjective with no noun after it (`zazawan glubuhel.`, `zazawan dedehal glubuhel vahahal.`). It describes the next noun, and there is none; an adjective on the noun before it is a plain `/ɡ/` word. Parser: `glNoNoun`.
+- **open:** a `gl-` adjective with no noun after it (`zuzazon glubulol.`, `zuzazon dodevel glubulol vanobol.`). It describes the next noun, and there is none; an adjective on the noun before it is a plain `/ɡ/` word. Parser: `glNoNoun`.
 - **open:** lean **`l`** on any role letter but `/ɡ/`: `zl-` / `dl-` / `bl-` / `vl-` / `hl-` / `thl-` / `wl-`. No job: a noun modifying a noun is mid-word **`x`** ([x-compounds](../grammar/x-compounds.md#ordinary-compound-order)); an event root on `/ɡ/` or in `gl-` is already an act [in progress](../grammar/predication.md#in-progress); `/h/` and `/th/` already go anywhere; `/w/` already sits before its host.
 - **open:** `/w/` before `/z/`, `/d/`, `/b/`, or `/v/`. Not guessable: *very* on a verb could mean how intensely, how often, or how fully, and an `/h/` adverb says which (a degree word before a manner adverb); degree on a noun goes through an adjective.
 - **closed (D-22):** a hosted `/b/` after `/z/`, `/d/`, `/v/`, or `/w/`.
-- **closed (D-46):** a person in `/b/` after WANT or PLAN (`thohum balahen`, `thamam balahen`), and any `/b/` after DECISION (`thehum balahen`, `thehum bral`). Someone else's want, plan or decision goes through a holder. Parser: `intentionHost`.
+- **closed (D-46):** a person in `/b/` after WANT or PLAN (`thohum bolozun`, `thamam bolozun`), and any `/b/` after DECISION (`thehum bolozun`, `thehum bral`). Someone else's want, plan or decision goes through a holder. Parser: `intentionHost`.
 - **closed (D-48):** `/h/` on the map or check root (`hamam`, `hehum`, any ending but **-n**). Parser: `retiredIntentionRoot`.
 
 ## Vowel series and tone marks

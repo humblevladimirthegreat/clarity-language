@@ -9,8 +9,8 @@ function boundaryTags(plan: ReturnType<typeof previewSpeech>): string[] {
 
 describe("previewSpeech", () => {
   it("passes through already speech-shaped words", () => {
-    const plan = previewSpeech("zazawan vawalal.");
-    assert.deepEqual(plan.spoken, ["zazawan", "vawalal"]);
+    const plan = previewSpeech("zuzazon vawalal.");
+    assert.deepEqual(plan.spoken, ["zuzazon", "vawalal"]);
     assert.ok(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "period"));
   });
 
@@ -33,31 +33,31 @@ describe("previewSpeech", () => {
   });
 
   it("speaks a multi-token cite without opens or closes", () => {
-    assert.deepEqual(previewSpeech("d[zadagal zagadul]").spoken, ["zadagal", "zagadul"]);
-    assert.deepEqual(previewSpeech("d@[zadagal zagadul]").spoken, ["zadagal", "zagadul"]);
+    assert.deepEqual(previewSpeech("d[zodaval zegazol]").spoken, ["zodaval", "zegazol"]);
+    assert.deepEqual(previewSpeech("d@[zodaval zegazol]").spoken, ["zodaval", "zegazol"]);
   });
 
   it("tags island edges without skipping them", () => {
-    const plan = previewSpeech("{ zazawan vawalal }");
+    const plan = previewSpeech("{ zuzazon vawalal }");
     assert.deepEqual(boundaryTags(plan), ["islandEnter", "islandExit"]);
-    assert.deepEqual(plan.spoken, ["zazawan", "vawalal"]);
+    assert.deepEqual(plan.spoken, ["zuzazon", "vawalal"]);
     assert.equal(plan.skipped.length, 0);
   });
 
   it("tags island in join scope example", () => {
-    const plan = previewSpeech("zazawan { zununel zal } zam.");
-    assert.deepEqual(plan.spoken, ["zazawan", "zununel", "zal", "zam"]);
+    const plan = previewSpeech("zuzazon { zununel zal } zam.");
+    assert.deepEqual(plan.spoken, ["zuzazon", "zununel", "zal", "zam"]);
     assert.ok(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "islandEnter"));
     assert.ok(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "islandExit"));
   });
 
   it("adds question boundary", () => {
-    const plan = previewSpeech("yol zazawan vawalal?");
+    const plan = previewSpeech("yol zuzazon vawalal?");
     assert.ok(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "qmark"));
   });
 
   it("adds xContinue before discourse linker after period", () => {
-    const plan = previewSpeech("zazawan vawalal. xamalal zululon vurunul.");
+    const plan = previewSpeech("zuzazon vawalal. xamalal zululon vurunul.");
     const tags = boundaryTags(plan);
     assert.ok(tags.includes("period"));
     assert.ok(tags.includes("xContinue"));
@@ -68,7 +68,7 @@ describe("previewSpeech", () => {
   });
 
   it("adds xContinue before clause join", () => {
-    const plan = previewSpeech("zazawan vawalal zululon vurunul xan.");
+    const plan = previewSpeech("zuzazon vawalal zululon vurunul xan.");
     assert.ok(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "xContinue"));
     const xIdx = plan.tokens.findIndex((t) => t.kind === "boundary" && t.tag === "xContinue");
     const joinIdx = plan.tokens.findIndex((t) => t.kind === "word" && t.raw === "xan");
@@ -76,8 +76,8 @@ describe("previewSpeech", () => {
   });
 
   it("adds yTurn before polar second turn", () => {
-    const plan = previewSpeech("zazawan vawalal. yael.");
-    assert.deepEqual(plan.spoken, ["zazawan", "vawalal", "yael"]);
+    const plan = previewSpeech("zuzazon vawalal. yael.");
+    assert.deepEqual(plan.spoken, ["zuzazon", "vawalal", "yael"]);
     const tags = boundaryTags(plan);
     assert.ok(tags.includes("period"));
     assert.ok(tags.includes("yTurn"));
@@ -87,7 +87,7 @@ describe("previewSpeech", () => {
   });
 
   it("uses softM for soft force statement", () => {
-    const plan = previewSpeech("yam zazawan vawalal.");
+    const plan = previewSpeech("yam zuzazon vawalal.");
     assert.ok(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "softM"));
     assert.equal(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "period"), false);
   });
@@ -99,13 +99,13 @@ describe("previewSpeech", () => {
   });
 
   it("does not add yTurn after period before reviser", () => {
-    const plan = previewSpeech("zazawan vawalal. al zululon vawalal.");
+    const plan = previewSpeech("zuzazon vawalal. al zululon vawalal.");
     assert.equal(plan.tokens.some((t) => t.kind === "boundary" && t.tag === "yTurn"), false);
   });
 
   it("skips unparsed tokens instead of throwing", () => {
-    const plan = previewSpeech("zazawan zl.");
-    assert.deepEqual(plan.spoken, ["zazawan"]);
+    const plan = previewSpeech("zuzazon zl.");
+    assert.deepEqual(plan.spoken, ["zuzazon"]);
     assert.ok(plan.skipped.some((s) => s.raw === "zl" && s.reason === "error"));
     assert.doesNotThrow(() => previewPhonemes("zl"));
   });
@@ -113,34 +113,34 @@ describe("previewSpeech", () => {
 
 describe("previewPhonemes", () => {
   it("builds IPA for a plain clause", () => {
-    const plan = previewPhonemes("zazawan gozezomum.");
+    const plan = previewPhonemes("zuzazon gozulamum.");
     assert.deepEqual(
       plan.words.map((w) => w.ipa),
-      ["zä.zä.wän", "ɡo̞.ze̞.zo̞.mʉm"],
+      ["zʉ.zä.zo̞n", "ɡo̞.zʉ.lä.mʉm"],
     );
-    assert.equal(plan.ipaPhonemes, "zäzäwän ɡo̞ze̞zo̞mʉm.");
+    assert.equal(plan.ipaPhonemes, "zʉzäzo̞n ɡo̞zʉlämʉm.");
   });
 
   it("builds a word-spaced IPA phoneme stream", () => {
-    const plan = previewPhonemes("zazawan vawalal.");
-    assert.equal(plan.ipaPhonemes, "zäzäwän väwäläl.");
+    const plan = previewPhonemes("zuzazon vawalal.");
+    assert.equal(plan.ipaPhonemes, "zʉzäzo̞n väwäläl.");
     const yuon = previewPhonemes("yuon");
     assert.equal(yuon.ipaPhonemes, "jʉo̞n");
   });
 
   it("includes punctuation cue between phoneme spans", () => {
-    const plan = previewPhonemes("zazawan vawalal?");
+    const plan = previewPhonemes("zuzazon vawalal?");
     assert.match(plan.ipaPhonemes, /\?$/);
   });
 
   it("uses comma dip before discourse linker", () => {
-    const plan = previewPhonemes("zazawan vawalal. xamalal zululon vurunul.");
+    const plan = previewPhonemes("zuzazon vawalal. xamalal zululon vurunul.");
     assert.match(plan.ipaPhonemes, /\.,/);
   });
 
   it("keeps word spaces inside islands without comma between words", () => {
-    const plan = previewPhonemes("{ zazawan vawalal }");
-    assert.match(plan.ipaPhonemes, /zäzäwän väwäläl/);
-    assert.doesNotMatch(plan.ipaPhonemes, /wän, vä/);
+    const plan = previewPhonemes("{ zuzazon vawalal }");
+    assert.match(plan.ipaPhonemes, /zʉzäzo̞n väwäläl/);
+    assert.doesNotMatch(plan.ipaPhonemes, /zo̞n, vä/);
   });
 });

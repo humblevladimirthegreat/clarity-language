@@ -1,30 +1,28 @@
 /**
- * Published-lexicon placement from the lexicon-revamp dry run
- * (scripts/prototype-lexicon-revamp.ts): frequency priority, regret among ties,
- * and annealed three-letter roots for overlay-backed and marked rows.
- * Everything else takes a five-letter root.
+ * Published-lexicon placement: annealed three-letter roots for overlay-backed and marked rows, with
+ * frequency priority, and root-tails five-letter roots (src/root-tails-place.ts) for everything else.
+ * A row with a root keeps its length; a new row takes three letters only when it is eligible.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
 import { echo, loadPron } from "./echo-metric.ts";
 import { buildPronunciationCache } from "./echo-pronunciation.ts";
+import type { CompoundRow } from "./lexicon-compounds.ts";
 import { isJoinOverlayKind, type OverlayRow } from "./lexicon-search.ts";
-import { longRootCandidates } from "./word-converter.ts";
 import { REPO_ROOT } from "./repo-paths.ts";
+import { holderHostForms, tailFieldsError, type Kind, type Shape } from "./root-tails.ts";
+import { placeTailRoots, tailCompounds, type TailPlaceRow } from "./root-tails-place.ts";
 
 const FREQ_FILE = join(REPO_ROOT, "tmp", "en_50k.txt");
 const FREQ_URL = "https://raw.githubusercontent.com/hermitdave/FrequencyWords/master/content/2018/en/en_50k.txt";
 const UNLISTED = 50001;
 const V = ["a", "e", "o", "u"];
 const C = ["b", "d", "g", "h", "y", "l", "m", "n", "r", "v", "w", "z"];
-const CANDIDATE_LIMIT = 400;
 const ECHO_W = 100;
 
-/** Rows the dry run forces onto a three-letter root (emoji → position slot). */
+/** Rows forced onto a three-letter root (emoji → position slot). */
 const MARKED: Record<string, string> = { "🤝": "pronoun", "😐": "pronoun", "🎤": "pronoun", "🎧": "pronoun", "⭐": "pronoun", "🧑": "pronoun" };
-/** Lower number is placed earlier. Glasses outranks every frequency rank. */
-const PRIORITY_OVERRIDES: Record<string, number> = { "👓": 0 };
 
 /** A root that stays put this run, with its overlay groups, so new short roots keep their spacing from it. */
 export type FixedRoot = { root: string; groups: Set<string> };
@@ -34,13 +32,18 @@ export type PlaceRow = {
   concrete: string;
   abstract: string;
   englishByPos: string;
+  /** Current root, if any: its length is kept. */
+  root?: string;
+  /** Root tail (`kind`, `shape` columns); a five-letter row needs both, a named row only `kind`. */
+  kind?: string;
+  shape?: string;
 };
 
 export type Placement = {
   emoji: string;
   concrete: string;
   root: string;
-  /** Three-letter annealed root, or a five-letter root from regret order. */
+  /** Three-letter annealed root, or a five-letter root-tails root. */
   length: 3 | 5;
 };
 
@@ -86,10 +89,8 @@ function sensesOf(row: PlaceRow): string[] {
   return [row.concrete, row.abstract, ...fromPos].map((sense) => sense.trim()).filter(Boolean);
 }
 
-/** Most frequent sense. Overrides replace that rank. */
+/** Most frequent sense. */
 export function rowPriority(row: PlaceRow, freqRank: Map<string, number>): number {
-  const override = PRIORITY_OVERRIDES[row.emoji];
-  if (override !== undefined) return override;
   return Math.min(...sensesOf(row).map((sense) => englishRank(sense, freqRank)));
 }
 
@@ -118,8 +119,7 @@ export function overlayGroups(overlays: OverlayRow[]): Map<string, Set<string>> 
 function indexRows(rows: PlaceRow[], overlays: OverlayRow[], pron: Map<string, string>, freqRank: Map<string, number>): Indexed[] {
   const byEmoji = new Map<string, Indexed>();
   const indexed: Indexed[] = rows.map((row, index) => {
-    const cmu = pron.get(row.concrete);
-    if (!cmu) throw new Error(`no pronunciation for ${row.concrete}: add it to CMU_OVERRIDES in src/cmu-dict.ts or relabel the row`);
+    const cmu = pron.get(row.concrete) ?? "";
     const item: Indexed = {
       row,
       index,
@@ -138,7 +138,8 @@ function indexRows(rows: PlaceRow[], overlays: OverlayRow[], pron: Map<string, s
   for (const item of indexed) {
     const slot = MARKED[item.row.emoji];
     if (slot) item.groups.add(`pos:${slot}`);
-    item.eligible = item.groups.size > 0;
+    const root = item.row.root ?? "";
+    item.eligible = root ? root.length === 3 : item.groups.size > 0;
   }
   return indexed;
 }
@@ -186,7 +187,7 @@ export function annealShortRoots(
   const echoScale = (item: Indexed) => 2 - shortRanks.indexOf(item.priority) / Math.max(1, shortRanks.length - 1);
   const unary = items.map((item) => {
     const costs = new Map<string, number>();
-    for (const form of pool) costs.set(form, ECHO_W * echoScale(item) * 4.5 * (1 - echo(form, item.cmu)));
+    for (const form of pool) costs.set(form, ECHO_W * echoScale(item) * 4.5 * (1 - (item.cmu ? echo(form, item.cmu) : 0)));
     return costs;
   });
   // Roots kept from earlier runs: spacing against them is fixed per form, so it folds into each row's own cost.
@@ -273,53 +274,9 @@ export function annealShortRoots(
 }
 
 /**
- * Among pending rows that share the best (lowest) priority, pick the one that
- * loses the most rank by missing its best free candidate.
+ * The pronunciation cache, rebuilt once when it is missing or lacks a label (a new or relabelled row).
+ * A label CMU lacks only loses the English cost and tie-breaks.
  */
-export function pickByRegret<T>(pending: T[], priorityOf: (item: T) => number, freeAt: (item: T, from: number) => number): T {
-  let pick: T | undefined;
-  let pickKey: [number, number] = [-Infinity, 0];
-  const top = Math.min(...pending.map((item) => priorityOf(item)));
-  for (const item of pending) {
-    if (priorityOf(item) !== top) continue;
-    const best = freeAt(item, 0);
-    const next = best === Infinity ? Infinity : freeAt(item, best + 1);
-    const regret = next === Infinity ? 1e6 : next - best;
-    if (regret > pickKey[0] || (regret === pickKey[0] && best < pickKey[1])) {
-      pick = item;
-      pickKey = [regret, best];
-    }
-  }
-  if (!pick) throw new Error("regret order found no row");
-  return pick;
-}
-
-function placeLongRoots(items: Indexed[], taken: Set<string>): Map<Indexed, string> {
-  const lists = new Map<Indexed, string[]>(
-    items.map((item) => [item, longRootCandidates(item.cmu).slice(0, CANDIDATE_LIMIT)]),
-  );
-  const pending = new Set(items);
-  const placed = new Map<Indexed, string>();
-  const nextFree = (item: Indexed, from: number) => {
-    const list = lists.get(item)!;
-    for (let k = from; k < list.length; k++) if (!taken.has(list[k]!)) return k;
-    return Infinity;
-  };
-  while (pending.size) {
-    const item = pickByRegret([...pending], (row) => row.priority, nextFree);
-    pending.delete(item);
-    const rank = nextFree(item, 0);
-    const root = lists.get(item)?.[rank];
-    if (rank === Infinity || !root) {
-      throw new Error(`no free five-letter root for ${item.row.concrete}`);
-    }
-    taken.add(root);
-    placed.set(item, root);
-  }
-  return placed;
-}
-
-/** The pronunciation cache, rebuilt once when it is missing or lacks a label (a new or relabelled row). */
 async function pronunciationsFor(rows: PlaceRow[]): Promise<Map<string, string>> {
   const covers = (pron: Map<string, string>) => rows.every((row) => !row.concrete.trim() || pron.has(row.concrete));
   try {
@@ -328,11 +285,7 @@ async function pronunciationsFor(rows: PlaceRow[]): Promise<Map<string, string>>
   } catch {
     // no cache yet
   }
-  const report = await buildPronunciationCache();
-  if (report.missing.length > 0) {
-    const labels = report.missing.map((row) => `${row.emoji} ${row.label}`).join(", ");
-    throw new Error(`no pronunciation for ${labels}: add each to CMU_OVERRIDES in src/cmu-dict.ts or relabel the row`);
-  }
+  await buildPronunciationCache();
   return loadPron();
 }
 
@@ -346,10 +299,14 @@ export async function placePublishedRoots(
   options: {
     skip?: Set<string>;
     blocked?: Iterable<string>;
-    /** Rows not being placed (emoji → current root); short ones constrain the anneal by overlay group. */
+    /** Rows not being placed (emoji → current root): short ones constrain the anneal by overlay group, long ones the tails. */
     kept?: Iterable<{ emoji: string; root: string }>;
+    /** Listed compounds, spelled with current roots: no placement may give one a second split. */
+    compounds?: readonly CompoundRow[];
     annealRestarts?: number;
     annealSteps?: number;
+    /** Tails annealing steps (src/root-tails-place.ts). */
+    tailSteps?: number;
   } = {},
 ): Promise<Placement[]> {
   await ensureFrequencyFile();
@@ -362,8 +319,9 @@ export async function placePublishedRoots(
     if (isJoinOverlayKind(overlay.kind) && overlay.senseForm) taken.add(overlay.senseForm);
   }
   const targets = indexed.filter((item) => item.row.concrete.trim() && !skip.has(item.row.emoji) && !skip.has(item.row.concrete));
+  const kept = [...(options.kept ?? [])];
   const groupsByEmoji = overlayGroups(overlays);
-  const fixed: FixedRoot[] = [...(options.kept ?? [])].flatMap(({ emoji, root }) => {
+  const fixed: FixedRoot[] = kept.flatMap(({ emoji, root }) => {
     const groups = groupsByEmoji.get(emoji);
     return root.length === 3 && groups ? [{ root, groups }] : [];
   });
@@ -372,8 +330,34 @@ export async function placePublishedRoots(
     taken,
     { restarts: options.annealRestarts, steps: options.annealSteps, fixed },
   );
-  for (const root of short.values()) taken.add(root);
-  const long = placeLongRoots(targets.filter((item) => !item.eligible), taken);
+
+  const longTargets = targets.filter((item) => !item.eligible);
+  const fieldErrors = longTargets.flatMap((item) => {
+    const error = tailFieldsError(item.row.kind ?? "", item.row.shape ?? "");
+    return error ? [`${item.row.emoji || item.row.concrete}: ${error}`] : [];
+  });
+  if (fieldErrors.length > 0) throw new Error(`five-letter rows need a kind and shape:\n  ${fieldErrors.join("\n  ")}`);
+  const shortRoots = new Set([...short.values(), ...kept.map((k) => k.root).filter((root) => root.length === 3)]);
+  const keptLong = kept.filter((k) => k.root.length === 5);
+  const tailRows: TailPlaceRow[] = [
+    ...longTargets.map((item) => ({ kind: item.row.kind as Kind, shape: (item.row.shape ?? "") as Shape | "", cmu: item.cmu })),
+    ...keptLong.map((k) => ({ kind: "named" as Kind, shape: "" as const, cmu: "", fixed: k.root })),
+  ];
+  const rowOfRoot = new Map<string, number>();
+  longTargets.forEach((item, i) => {
+    if (item.row.root) rowOfRoot.set(item.row.root, i);
+  });
+  keptLong.forEach((k, i) => rowOfRoot.set(k.root, longTargets.length + i));
+  const tails = placeTailRoots({
+    rows: tailRows,
+    shortRoots,
+    holderHosts: holderHostForms(overlays),
+    blocked: new Set([...taken].filter((form) => form.length === 5 && !rowOfRoot.has(form))),
+    compounds: tailCompounds(options.compounds ?? [], rowOfRoot, shortRoots),
+    steps: options.tailSteps,
+  });
+  if (tails.unmet.length > 0) throw new Error(`five-letter placement left checks unmet:\n  ${tails.unmet.join("\n  ")}`);
+  const long = new Map(longTargets.map((item, i) => [item, tails.roots[i]!]));
   return targets.map((item) => {
     const root = item.eligible ? short.get(item)! : long.get(item)!;
     return { emoji: item.row.emoji, concrete: item.row.concrete, root, length: item.eligible ? 3 : 5 };

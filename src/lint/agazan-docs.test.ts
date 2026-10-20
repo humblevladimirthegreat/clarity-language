@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
+import { CLOSED } from "../closed-roots.js";
 import { createClassifyTablesFromRows, type ClassifyTables } from "../parse/classify.js";
 import { emptyPosEnglish } from "../lexicon-search.js";
 import { forEachMarkdownCodeToken } from "../retie/tokens.js";
@@ -180,8 +181,8 @@ describe("lintAgazanSpans", () => {
   });
 
   it("parses multi-word phrases unless marked a fragment", () => {
-    assert.equal(lintAgazanSpans("`vowogal glugol`", tables)[0]?.kind, "phrase");
-    assert.deepEqual(lintAgazanSpans("<!-- lint: fragment -->`vowogal glugol`", tables), []);
+    assert.equal(lintAgazanSpans("`voworel glugol`", tables)[0]?.kind, "phrase");
+    assert.deepEqual(lintAgazanSpans("<!-- lint: fragment -->`voworel glugol`", tables), []);
     assert.equal(lintAgazanSpans("<!-- lint: skip -->`wo zo yo`", tables)[0]?.kind, "bad-marker");
   });
 
@@ -218,7 +219,7 @@ describe("lintAgazanSpans", () => {
   it("requires an info string on fenced blocks and checks agazan fences", () => {
     assert.equal(lintAgazanSpans("```\nA HOOK B\n```\n", tables)[0]?.kind, "unmarked-fence");
     assert.deepEqual(lintAgazanSpans("```text\nA HOOK B\n```\n", tables), []);
-    assert.equal(lintAgazanSpans("```text\nzazawan vowogal\n```\n", tables)[0]?.kind, "agazan-in-text-fence");
+    assert.equal(lintAgazanSpans("```text\nzazawan voworel\n```\n", tables)[0]?.kind, "agazan-in-text-fence");
     assert.equal(lintAgazanSpans("```agazan\nzul zazawan vazawal.\n```\n", tables)[0]?.kind, "sentence");
   });
 
@@ -235,8 +236,8 @@ describe("lintAgazanSpans", () => {
 
   it("lets a Fix it wrong form fail to parse, and uses none of its constructions", async () => {
     const { houseTables, PRACTICE } = await import("./practice-fixtures.js");
-    const md = PRACTICE.replace("<!-- lint: error -->`zazawan dalahen vahahal.`", "<!-- lint: error -->`zalahen dazawan.`");
-    const fix = md.indexOf("`zalahen dazawan.`") + 1;
+    const md = PRACTICE.replace("<!-- lint: error -->`zazawan dolozun vanobol.`", "<!-- lint: error -->`zolozun dazawan.`");
+    const fix = md.indexOf("`zolozun dazawan.`") + 1;
     const stats = emptySpanStats();
     const used: number[] = [];
     assert.deepEqual(lintAgazanSpans(md, houseTables(), stats, (_id, index) => used.push(index)), []);
@@ -247,7 +248,7 @@ describe("lintAgazanSpans", () => {
   it("rejects the error marker outside a Fix it prompt", async () => {
     const { houseTables, PRACTICE } = await import("./practice-fixtures.js");
     assert.equal(lintAgazanSpans("<!-- lint: error -->`zazawan`", tables)[0]?.kind, "bad-marker");
-    const md = PRACTICE.replace("**1.** `zalahen dahaben vahahal.`", "**1.** <!-- lint: error -->`zalahen dahaben vahahal.`");
+    const md = PRACTICE.replace("**1.** `zolozun dehalon vanobol.`", "**1.** <!-- lint: error -->`zolozun dehalon vanobol.`");
     assert.equal(lintAgazanSpans(md, houseTables())[0]?.kind, "bad-marker");
     assert.equal(lintAgazanSpans(md.replace("### Practice", "### Translation practice"), houseTables())[0]?.kind, "bad-marker");
   });
@@ -267,7 +268,10 @@ describe("lintBareRoots", () => {
     const { loadDefaultTables } = await import("../parse/index.js");
     const { lintBareRoots } = await import("./agazan-docs.js");
     const tables = loadDefaultTables();
-    const found = lintBareRoots("Use `azawa`, `tha`, `thehu`, and `ezuzo` or `thezuzo`.", tables).map((i) => i.text);
-    assert.deepEqual(found, ["ezuzo", "thezuzo"]);
+    // Spellings from the live lexicon, so a retie can't publish the unknown one.
+    const known = CLOSED.swan;
+    const unknown = ["ezuzo", "ububu", "ededu", "ogogo"].find((root) => !tables.published.has(root))!;
+    const found = lintBareRoots(`Use \`${known}\`, \`tha\`, \`thehu\`, and \`${unknown}\` or \`th${unknown}\`.`, tables).map((i) => i.text);
+    assert.deepEqual(found, [unknown, `th${unknown}`]);
   });
 });

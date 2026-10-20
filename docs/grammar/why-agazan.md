@@ -14,9 +14,9 @@ Agazan is not therapy, and its effects are a design intent, not a proven result.
 
 Here is a common ruminating thought in English: *I failed. I'm no good at this, and I never will be.* English lets you say all of that without checking any of it. Here is how the same thought might come out in Agazan:
 
-> `zagayam thahor gulothum. zamun vevegoxom.`
+> `zugavem thahor gulothum. zamun veverexom.`
 >
-> /zä.ɡä.jäm ðä.ɦo̞ɹ ɡʉ.lo̞.ðʉm. zä.mʉn ve̞.ve̞.ɡo̞.ʒo̞m/
+> /zʉ.ɡä.ve̞m ðä.ɦo̞ɹ ɡʉ.lo̞.ðʉm. zä.mʉn ve̞.ve̞.ɹe̞.ʒo̞m/
 >
 > z-failure | th-INTUITION.weak | g-competence-unmet-modifiable . z-speaker | v-triumph-unable-modifiable
 >
@@ -26,9 +26,9 @@ That is five words, and three of them make you choose something English lets you
 
 - `thahor` says how you know: a gut sense, and only a faint one. Other words say you saw it, remember it, worked it out from clues, or were told, and other endings say the hunch is strong. Said once, it covers the next sentence too ([evidentiality](knowing.md#evidentiality)).
 - `gulothum` names what the failure costs: competence, one of the [sakes](sakes.md) (things that are good for a person). Its ending says the cost can change with effort or circumstance; other endings say it is lasting, or only for now. Other sakes, such as relatedness or purpose, name a different cost, and swapping the *unmet* vowel for the *met* one names a gain instead. The sake word also makes the failure yours, with no separate word for *my*.
-- `vevegoxom` is *can't succeed*, but only *yet*: it may still change. Other vowels say *right now* (you usually can) or *never* ([ability](intention.md#ability)).
+- `veverexom` is *can't succeed*, but only *yet*: it may still change. Other vowels say *right now* (you usually can) or *never* ([ability](intention.md#ability)).
 
-Agazan does not force the gentler answer. You can still say *I can never succeed* (`zamun vevegoxum.`), call the hunch strong, or call the cost lasting, and sometimes that is true. But English *I'll never be good at this* does not ask how you know or how lasting it is, so the harsh version slips by unchecked. In Agazan you cannot say *can't* without choosing among *right now*, *yet*, and *never*, and that one moment of choosing is often enough to notice that *yet* is the honest answer.
+Agazan does not force the gentler answer. You can still say *I can never succeed* (`zamun veverexum.`), call the hunch strong, or call the cost lasting, and sometimes that is true. But English *I'll never be good at this* does not ask how you know or how lasting it is, so the harsh version slips by unchecked. In Agazan you cannot say *can't* without choosing among *right now*, *yet*, and *never*, and that one moment of choosing is often enough to notice that *yet* is the honest answer.
 
 The first letter of each word tells you its role in the sentence: `/z/` the subject, `/ɡ/` what the subject is, `/v/` the verb, `/th/` what is in your mind. Because the roles live on the letters, word order is free, and every sentence still has exactly one reading. [Inspect](inspect.md) opens with this sentence loaded, so you can click through each word.
 
@@ -54,9 +54,9 @@ A hard moment, a label, or a past pattern hardens into a fixed fact about a pers
 
 ##### How far a label reaches {#how-far-a-label-reaches}
 
-English *Alahen is angry* can mean one outburst or the kind of person Alahen is. One act slides into a verdict on someone's nature, and a name for a problem (*lazy*, *anxious*) starts to sound like its cause.
+English *Olozun is angry* can mean one outburst or the kind of person Olozun is. One act slides into a verdict on someone's nature, and a name for a problem (*lazy*, *anxious*) starts to sound like its cause.
 
-[Label scope](predication.md#label-scope) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Azawan*), or about a type that follows the person across scenes.
+[Label scope](predication.md#label-scope) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Uzazon*), or about a type that follows the person across scenes.
 
 Marking a label's reach helps you describe what happened without turning it into a verdict on who someone is, yourself included.
 

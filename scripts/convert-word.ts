@@ -1,15 +1,14 @@
 /**
- * Convert English text to an Agazan root from its CMU pronunciation.
+ * Place Agazan roots: published rows (--lexicon), or one English word.
  *
- * Run: npm run convert-word -- fishing
- *      npm run convert-word -- --unique fishing
+ * Run: npm run convert-word -- fishing                          (three-letter root by English echo)
+ *      npm run convert-word -- fishing --kind doing --shape one (five-letter root-tails root)
  *      npm run convert-word -- --lexicon --only breaker
  *      npm run convert-word -- --lexicon --all
- *      npm run convert-word -- --tails [--steps N]
+ *      npm run convert-word -- --report
  *
  * --lexicon requires --only or --all (never re-places the whole lexicon by default).
  * --lexicon also writes tmp/lexicon-retie-map.json for npm run retie-docs.
- * --tails places data/lexicon-tails.csv by root tails and writes only its root column (scripts/lib/convert-tails.ts).
  */
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -22,18 +21,21 @@ import {
   validateCompoundRows,
 } from "../src/lexicon-compounds.js";
 import { resyncClosedRootsSource } from "../src/closed-roots.js";
+import { lookupPronunciation } from "../src/cmu-dict.js";
+import { loadPron } from "../src/echo-metric.js";
 import { placePublishedRoots } from "../src/lexicon-place.js";
-import { isJoinOverlayKind, parseOverlayCsv } from "../src/lexicon-search.js";
+import { isJoinOverlayKind, parseOverlayCsv, parsePublishedCsv } from "../src/lexicon-search.js";
+import { holderHostForms, tailFieldsError, validateRootTails, type Kind, type Shape } from "../src/root-tails.js";
+import { placeTailRoots } from "../src/root-tails-place.js";
 import { RETIE_MAP_RELATIVE_PATH, serializeRetieMap, type RetiePair } from "../src/retie/map.js";
 import {
   AGAZAN_CONSONANTS,
   AGAZAN_VOWELS,
   letterDistribution,
   toAgazanWord,
-  toUniqueAgazanWord,
 } from "../src/word-converter.js";
 import { REPO_ROOT, dataPath } from "../src/repo-paths.js";
-import { convertTails } from "./lib/convert-tails.js";
+import { printTailsReport } from "./lib/tails-report.js";
 import { compoundPartDrift, retieSenseForm, rowMatchesOnly } from "../src/retie/lexicon.js";
 
 const publishedPath = dataPath("lexicon-published.csv");
@@ -45,37 +47,40 @@ const OVERLAY_HEADERS = ["sense_form", "pos", "emoji", "kind", "gloss", "definit
 
 type CliOptions = {
   lexicon: boolean;
-  tails: boolean;
+  report: boolean;
   steps?: number;
   all: boolean;
   only: string[];
   input: string;
-  unique: boolean;
-  syllables: number;
+  kind: string;
+  shape: string;
 };
 
 function parseArgs(argv: string[]): CliOptions {
-  let unique = false;
   let lexicon = false;
-  let tails = false;
+  let report = false;
   let steps: number | undefined;
   let all = false;
-  let syllables = 2;
+  let kind = "";
+  let shape = "";
   const only: string[] = [];
   const parts: string[] = [];
 
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i]!;
-    if (arg === "--unique") {
-      unique = true;
-      continue;
-    }
     if (arg === "--lexicon") {
       lexicon = true;
       continue;
     }
-    if (arg === "--tails") {
-      tails = true;
+    if (arg === "--report") {
+      report = true;
+      continue;
+    }
+    if (arg === "--kind" || arg === "--shape") {
+      const value = argv[++i];
+      if (!value) throw new Error(`Missing value for ${arg}`);
+      if (arg === "--kind") kind = value;
+      else shape = value;
       continue;
     }
     if (arg === "--steps") {
@@ -103,14 +108,6 @@ function parseArgs(argv: string[]): CliOptions {
       }
       continue;
     }
-    if (arg === "--syllables") {
-      const value = argv[++i];
-      if (!value || Number.isNaN(Number(value))) {
-        throw new Error("Missing or invalid value for --syllables");
-      }
-      syllables = Number(value);
-      continue;
-    }
     if (arg === "--help" || arg === "-h") {
       printUsage();
       process.exit(0);
@@ -119,14 +116,17 @@ function parseArgs(argv: string[]): CliOptions {
   }
 
   const input = parts.join(" ").trim();
-  if (tails) {
-    if (lexicon || input || unique) {
-      throw new Error("--tails takes no other mode or input");
+  if (report) {
+    if (lexicon || input) {
+      throw new Error("--report takes no other mode or input");
     }
-    return { lexicon, tails, steps, all, only, input, unique, syllables };
+    return { lexicon, report, all, only, input, kind, shape };
   }
-  if (steps !== undefined) {
-    throw new Error("--steps requires --tails");
+  if (steps !== undefined && !lexicon) {
+    throw new Error("--steps requires --lexicon");
+  }
+  if ((kind || shape) && (lexicon || !input)) {
+    throw new Error("--kind and --shape go with one English word");
   }
   if (!lexicon && !input) {
     printUsage();
@@ -146,25 +146,29 @@ function parseArgs(argv: string[]): CliOptions {
     throw new Error("--lexicon requires --only <row> or --all (re-places the whole lexicon)");
   }
 
-  return { lexicon, tails, all, only, input, unique, syllables };
+  return { lexicon, report, steps, all, only, input, kind, shape };
 }
 
 function printUsage(): void {
-  console.error(`Usage: npm run convert-word -- <english> [--unique] [--syllables N]
-       npm run convert-word -- --lexicon (--only LITERAL|EMOJI|ROOT | --all)
-       npm run convert-word -- --tails [--steps N]
+  console.error(`Usage: npm run convert-word -- <english> [--kind KIND [--shape SHAPE]]
+       npm run convert-word -- --lexicon (--only LITERAL|EMOJI|ROOT | --all) [--steps N]
+       npm run convert-word -- --report
 
+<english> alone prints the best three-letter root by English echo. With --kind (and --shape,
+except for a named row) it prints the five-letter root-tails root that word would take beside
+the published lexicon.
 --lexicon rewrites the published/overlay/compound CSVs and dumps tmp/lexicon-retie-map.json.
-Eligible rows (overlay-backed, or the marked pronouns) take annealed three-letter roots.
-Every other row takes a five-letter root, frequent senses first, regret order on ties.
---only limits --lexicon to matching published rows (repeatable or comma-separated).
---all re-places every published row; --lexicon needs one of --only or --all.
---tails places every row of data/lexicon-tails.csv by its kind and shape (root-tails phase 1),
-writes only that file's root column, and prints the report. --steps sets the annealing steps.
+A row keeps its root's length; a new row takes an annealed three-letter root when it is
+overlay-backed (or a marked pronoun), and a root-tails five-letter root from its kind and shape otherwise.
+--only limits --lexicon to matching published rows (repeatable or comma-separated); every other
+root stays put.
+--all re-places every five-letter row and keeps the three-letter roots; --lexicon needs one of
+--only or --all. --steps sets the five-letter annealing steps.
+--report prints the root-tails report for the published lexicon.
 
 Examples:
   npm run convert-word -- fishing
-  npm run convert-word -- --unique fishing
+  npm run convert-word -- knife --kind tool --shape takes-away
   npm run convert-word -- --lexicon --only breaker
   npm run convert-word -- --lexicon --all`);
 }
@@ -176,7 +180,7 @@ function pct(count: number, total: number): string {
   return `${((100 * count) / total).toFixed(1)}%`;
 }
 
-async function convertLexicon(only: string[]): Promise<void> {
+async function convertLexicon(only: string[], steps?: number): Promise<void> {
   const { headers, rows } = parseCsv(readFileSync(publishedPath, "utf8"));
   const overlays = parseOverlayCsv(readFileSync(overlayPath, "utf8"));
   const compoundRows = parseCompoundCsv(readFileSync(compoundsPath, "utf8"));
@@ -189,13 +193,16 @@ async function convertLexicon(only: string[]): Promise<void> {
   if (only.length > 0 && selected.length === 0) {
     throw new Error(`--only matched no published rows: ${only.join(", ")}`);
   }
+  // --all keeps the three-letter roots; --only places just the rows it names.
+  const isTarget = (row: Record<string, string>) =>
+    only.length > 0 ? rowMatchesOnly(row, only) : (row.root ?? "").trim().length !== 3;
 
   for (const row of rows) {
     const root = (row.root ?? "").trim();
     if (!root) {
       continue;
     }
-    if (!rowMatchesOnly(row, only)) {
+    if (!isTarget(row)) {
       used.add(root);
     }
   }
@@ -212,7 +219,7 @@ async function convertLexicon(only: string[]): Promise<void> {
   let changed = 0;
   let kept = 0;
 
-  const targets = only.length > 0 ? selected : rows;
+  const targets = rows.filter(isTarget);
   for (const row of targets) {
     if (!(row.concrete ?? "").trim()) skipped += 1;
   }
@@ -225,14 +232,19 @@ async function convertLexicon(only: string[]): Promise<void> {
         concrete,
         abstract: (row.abstract ?? "").trim(),
         englishByPos: (row.english_by_pos ?? "").trim(),
+        root: (row.root ?? "").trim(),
+        kind: (row.kind ?? "").trim(),
+        shape: (row.shape ?? "").trim(),
       }];
     }),
     overlays,
     {
       blocked: used,
       kept: rows
-        .filter((row) => !rowMatchesOnly(row, only) && (row.root ?? "").trim())
+        .filter((row) => !isTarget(row) && (row.root ?? "").trim())
         .map((row) => ({ emoji: (row.emoji ?? "").trim(), root: (row.root ?? "").trim() })),
+      compounds: compoundRows,
+      tailSteps: steps,
     },
   );
   // a seedless row is keyed by its concrete label
@@ -313,6 +325,11 @@ async function convertLexicon(only: string[]): Promise<void> {
   if (closed.missing.length > 0) {
     throw new Error(`src/closed-roots.ts names emoji with no published row: ${closed.missing.join(" ")}`);
   }
+  const placedRows = parsePublishedCsv(serializeCsv(headers, rows));
+  const tailErrors = validateRootTails(placedRows, holderHostForms(overlays));
+  if (tailErrors.length > 0) {
+    throw new Error(`Root tails after placement:\n${tailErrors.map((e) => `  ${e.key}: ${e.reason}`).join("\n")}`);
+  }
 
   if (changed > 0) {
     writeFileSync(publishedPath, serializeCsv(headers, rows));
@@ -372,22 +389,43 @@ async function convertLexicon(only: string[]): Promise<void> {
     }
     console.log(`letters: ${dist.letters}`);
   }
+  printTailsReport(placedRows, loadPron());
+}
+
+/** The five-letter root one English word would take beside the published lexicon, which stays put. */
+function tailRootFor(input: string, kind: string, shape: string): string {
+  const error = tailFieldsError(kind, shape);
+  if (error) throw new Error(error);
+  const published = parsePublishedCsv(readFileSync(publishedPath, "utf8"));
+  const overlays = parseOverlayCsv(readFileSync(overlayPath, "utf8"));
+  const shortRoots = new Set(published.map((row) => row.root).filter((root) => root.length === 3));
+  const kept = published.filter((row) => row.root.length === 5);
+  const blocked = new Set(overlays.filter((o) => isJoinOverlayKind(o.kind)).map((o) => o.senseForm));
+  const { roots } = placeTailRoots({
+    rows: [
+      { kind: kind as Kind, shape: shape as Shape | "", cmu: lookupPronunciation(input) },
+      ...kept.map((row) => ({ kind: row.kind as Kind, shape: "" as const, cmu: "", fixed: row.root })),
+    ],
+    shortRoots,
+    holderHosts: holderHostForms(overlays),
+    blocked,
+    compounds: [],
+    steps: 0,
+  });
+  return roots[0]!;
 }
 
 async function main(): Promise<void> {
   const options = parseArgs(process.argv.slice(2));
-  if (options.tails) {
-    await convertTails({ steps: options.steps });
+  if (options.report) {
+    printTailsReport(parsePublishedCsv(readFileSync(publishedPath, "utf8")), loadPron());
     return;
   }
   if (options.lexicon) {
-    await convertLexicon(options.only);
+    await convertLexicon(options.only, options.steps);
     return;
   }
-  const root = options.unique
-    ? toUniqueAgazanWord(options.input, new Set())
-    : toAgazanWord(options.input, options.syllables);
-  console.log(root);
+  console.log(options.kind ? tailRootFor(options.input, options.kind, options.shape) : toAgazanWord(options.input));
 }
 
 try {

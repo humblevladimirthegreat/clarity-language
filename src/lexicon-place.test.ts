@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { englishRank, loadFrequencyRanks, pickByRegret, placePublishedRoots, rowPriority } from "./lexicon-place.ts";
+import { englishRank, loadFrequencyRanks, placePublishedRoots, rowPriority } from "./lexicon-place.ts";
 import type { OverlayRow } from "./lexicon-search.ts";
 
 describe("frequency priority", () => {
@@ -29,30 +29,45 @@ describe("placement", () => {
     anchor: "sakes.md#x",
   };
 
-  it("gives overlay rows three letters and other rows five, with glasses first", () => {
+  it("ranks a row by its most frequent sense", () => {
     const ranks = loadFrequencyRanks();
-    const glasses = { emoji: "👓", concrete: "glasses", abstract: "clarity", englishByPos: "" };
     const grin = { emoji: "😀", concrete: "grin", abstract: "delight", englishByPos: "" };
-    assert.equal(rowPriority(glasses, ranks), 0);
-    assert.ok(rowPriority(grin, ranks) > 0);
+    assert.equal(rowPriority(grin, ranks), Math.min(englishRank("grin", ranks), englishRank("delight", ranks)));
   });
 
-  it("anneals an eligible row to three letters and keeps an ordinary row at five", async () => {
+  it("anneals an eligible row to three letters and gives an ordinary row its tail", async () => {
     const placed = await placePublishedRoots(
       [
         { emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "" },
-        { emoji: "😀", concrete: "grin", abstract: "delight", englishByPos: "" },
+        { emoji: "😀", concrete: "grin", abstract: "delight", englishByPos: "", kind: "mind", shape: "holds" },
       ],
       [overlay],
-      { annealRestarts: 1, annealSteps: 20 },
+      { annealRestarts: 1, annealSteps: 20, tailSteps: 100 },
     );
     const ballot = placed.find((row) => row.emoji === "🗳️")!;
     const grin = placed.find((row) => row.emoji === "😀")!;
     assert.equal(ballot.length, 3);
     assert.equal(ballot.root.length, 3);
     assert.equal(grin.length, 5);
-    assert.equal(grin.root.length, 5);
-    assert.notEqual(ballot.root, grin.root);
+    assert.match(grin.root, /^[aeou][bdghylmnrvwz][aeou]ma$/);
+  });
+
+  it("keeps a row's root length, and the other five-letter roots out of a re-placed row's way", async () => {
+    const placed = await placePublishedRoots(
+      [{ emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "", root: "egemo", kind: "mind", shape: "one" }],
+      [overlay],
+      { kept: [{ emoji: "😀", root: "egema" }], tailSteps: 100 },
+    );
+    assert.equal(placed[0]!.length, 5);
+    assert.match(placed[0]!.root, /^[aeou][bdghylmnrvwz][aeou]mo$/);
+    assert.notEqual(placed[0]!.root.slice(0, 2), "eg");
+  });
+
+  it("refuses a five-letter row with no kind", async () => {
+    await assert.rejects(
+      placePublishedRoots([{ emoji: "😀", concrete: "grin", abstract: "delight", englishByPos: "" }], [], { tailSteps: 0 }),
+      /need a kind and shape/,
+    );
   });
 
   it("keeps a new root two letters and a consonant away from a kept root in the same overlay group", async () => {
@@ -65,17 +80,5 @@ describe("placement", () => {
     const root = placed[0]!.root;
     assert.ok([...root].filter((letter, i) => letter !== "aba"[i]).length >= 2, root);
     assert.notEqual(root[1], "b", root);
-  });
-});
-
-describe("regret order", () => {
-  it("places the row that loses the most by missing its best free candidate", () => {
-    const rows = [
-      { name: "tight", priority: 3, free: [0, 1] },
-      { name: "loose", priority: 3, free: [0, 9] },
-      { name: "later", priority: 8, free: [0, 1] },
-    ];
-    const pick = pickByRegret(rows, (row) => row.priority, (row, from) => row.free.find((rank) => rank >= from) ?? Infinity);
-    assert.equal(pick.name, "loose");
   });
 });

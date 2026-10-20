@@ -5,7 +5,6 @@ import {
   letterDistribution,
   mappedSourceLetters,
   toAgazanWord,
-  toUniqueAgazanWord,
 } from "./word-converter.js";
 
 describe("spelling map", () => {
@@ -15,29 +14,10 @@ describe("spelling map", () => {
 });
 
 describe("pronunciation conversion", () => {
-  it("builds knife from its consonants, skipping the silent k", () => {
-    const root = toAgazanWord("knife", 3);
-    assert.equal(root.length, 5);
-    assert.equal(root[1], "n");
-    assert.equal(root[3], "v");
-    assert.equal(root.includes("g"), false);
-  });
-
-  it("maps coffee (K AA1 F IY0) to agave", () => {
-    assert.equal(toAgazanWord("coffee", 3), "agave");
-  });
-
-  it("returns a three-letter root for two syllables", () => {
-    const root = toAgazanWord("coffee", 2);
+  it("returns a three-letter root that echoes the word", () => {
+    const root = toAgazanWord("coffee");
     assert.equal(root.length, 3);
     assert.equal(root[1], "g");
-  });
-
-  it("assigns the next free candidate when the best root is taken", () => {
-    const used = new Set<string>();
-    const first = toUniqueAgazanWord("coffee", used);
-    assert.equal(first, toAgazanWord("coffee", 3));
-    assert.notEqual(toUniqueAgazanWord("coffee", used), first);
   });
 });
 

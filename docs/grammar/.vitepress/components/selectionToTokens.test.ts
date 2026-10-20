@@ -17,7 +17,7 @@ function fixture(): { document: Document; root: HTMLElement; english: HTMLElemen
   const root = document.createElement('div')
   root.innerHTML = `
     <p class="stream">
-      <span class="tok" ${TOKEN_INDEX_ATTR}="0">zazawan</span>
+      <span class="tok" ${TOKEN_INDEX_ATTR}="0">zuzazon</span>
       <span class="tok punct" ${TOKEN_INDEX_ATTR}="1"> </span>
       <span class="tok" ${TOKEN_INDEX_ATTR}="2">vawalal</span>
       <span class="tok punct" ${TOKEN_INDEX_ATTR}="3">.</span>
@@ -128,11 +128,11 @@ describe('findCoveringConstruction', () => {
 describe('endingChipIndex', () => {
   it('highlights the ending chip when only the suffix is selected', () => {
     const chips = ['/z/', 'zazawa', '-n named']
-    assert.equal(endingChipIndex('zazawan', 'n', chips, 6, 7), 2)
+    assert.equal(endingChipIndex('zuzazon', 'n', chips, 6, 7), 2)
   })
 
   it('returns null when the selection is not the ending suffix', () => {
     const chips = ['/z/', 'zazawa', '-n named']
-    assert.equal(endingChipIndex('zazawan', 'n', chips, 0, 3), null)
+    assert.equal(endingChipIndex('zuzazon', 'n', chips, 0, 3), null)
   })
 })

@@ -25,23 +25,23 @@ const PRACTICE = `### Translation practice
 
 #### English → Agazan
 
-**1.** *Azawan sits.*
+**1.** *Uzazon sits.*
 
 ::: details Show answer
-\`zazawan vayul.\`
+\`zuzazon vayul.\`
 
-z-Azawan | v-sit
+z-Uzazon | v-sit
 
 :::
 
 #### Agazan → English
 
-**1.** \`zazawan vayul.\`
+**1.** \`zuzazon vayul.\`
 
 ::: details Show answer
-z-Azawan | v-sit
+z-Uzazon | v-sit
 
-*Azawan sits.*
+*Uzazon sits.*
 :::
 `;
 
@@ -49,17 +49,17 @@ describe("extractTranslationExercises", () => {
   it("pairs spoiler and prompt Agazan with visible morph glosses", () => {
     const items = extractTranslationExercises(PRACTICE);
     assert.equal(items.length, 2);
-    assert.equal(items[0]!.agazan, "zazawan vayul.");
-    assert.equal(items[0]!.morph, "z-Azawan | v-sit");
-    assert.equal(items[1]!.agazan, "zazawan vayul.");
-    assert.equal(items[0]!.loose, "Azawan sits.");
-    assert.equal(items[1]!.loose, "Azawan sits.");
+    assert.equal(items[0]!.agazan, "zuzazon vayul.");
+    assert.equal(items[0]!.morph, "z-Uzazon | v-sit");
+    assert.equal(items[1]!.agazan, "zuzazon vayul.");
+    assert.equal(items[0]!.loose, "Uzazon sits.");
+    assert.equal(items[1]!.loose, "Uzazon sits.");
   });
 
   it("reads items under a converted Practice heading", () => {
     const items = extractTranslationExercises(PRACTICE.replace("### Translation practice", "### Practice"));
     assert.equal(items.length, 2);
-    assert.equal(items[0]!.morph, "z-Azawan | v-sit");
+    assert.equal(items[0]!.morph, "z-Uzazon | v-sit");
   });
 
   it("pairs decision items by type in a converted checkpoint", async () => {
@@ -67,12 +67,12 @@ describe("extractTranslationExercises", () => {
     const items = extractTranslationExercises(CONVERTED);
     const pairs = items.map((item) => [item.agazan, item.morph]);
     // Pick one and Fix it: the answer form and its morph, never the prompt forms.
-    assert.deepEqual(pairs[6], ["zazawan dalahen vahahal.", "z-Azawan | d-Alahen | v-see"]);
-    assert.deepEqual(pairs[7], ["zalahen dazawan vahahal.", "z-Alahen | d-Azawan | v-see"]);
+    assert.deepEqual(pairs[6], ["zuzazon dolozun vanobol.", "z-Uzazon | d-Olozun | v-see"]);
+    assert.deepEqual(pairs[7], ["zolozun duzazon vanobol.", "z-Olozun | d-Uzazon | v-see"]);
     // What changes: each sentence with its own morph line.
     assert.deepEqual(pairs.slice(8), [
-      ["zazawan vehahel.", "z-Azawan | v-sit"],
-      ["zalahen vehahel.", "z-Alahen | v-sit"],
+      ["zuzazon vehuhol.", "z-Uzazon | v-sit"],
+      ["zolozun vehuhol.", "z-Olozun | v-sit"],
     ]);
     assert.equal(items.length, 10);
   });
@@ -80,17 +80,17 @@ describe("extractTranslationExercises", () => {
   it("compares converted decision items to the parser", async () => {
     const { houseTables, PRACTICE: CONVERTED } = await import("./practice-fixtures.js");
     assert.deepEqual(lintMorphGlossMarkdown(CONVERTED, houseTables()).findings, []);
-    const wrong = CONVERTED.replace("z-Azawan | v-sit\n\nz-Alahen | v-sit", "z-Azawan | v-sit\n\nz-Alahen | v-walk");
+    const wrong = CONVERTED.replace("z-Uzazon | v-sit\n\nz-Olozun | v-sit", "z-Uzazon | v-sit\n\nz-Olozun | v-walk");
     assert.equal(lintMorphGlossMarkdown(wrong, houseTables()).findings[0]?.kind, "mismatch");
   });
 
   it("records missing morph when a numbered item has no morph gloss", () => {
     const md = `### Translation practice
 
-**1.** *Azawan sits.*
+**1.** *Uzazon sits.*
 
 ::: details Show answer
-\`zazawan vayul.\`
+\`zuzazon vayul.\`
 :::
 `;
     const items = extractTranslationExercises(md);
@@ -143,19 +143,19 @@ describe("lintMorphGlossMarkdown", () => {
   it("requires a morph gloss on every exercise in translation practice", () => {
     const md = `### Translation practice
 
-**1.** *Azawan sits.*
+**1.** *Uzazon sits.*
 
 ::: details Show answer
-\`zazawan vayul.\`
+\`zuzazon vayul.\`
 
-z-Azawan | v-sit
+z-Uzazon | v-sit
 
 :::
 
-**2.** *Azawan sits.*
+**2.** *Uzazon sits.*
 
 ::: details Show answer
-\`zazawan vayul.\`
+\`zuzazon vayul.\`
 :::
 `;
     const { findings } = lintMorphGlossMarkdown(md, tables);
@@ -163,16 +163,16 @@ z-Azawan | v-sit
   });
 
   it("does not require exercise glosses outside translation practice", () => {
-    const md = `> \`zazawan vayul.\`
+    const md = `> \`zuzazon vayul.\`
 >
-> z-Azawan | v-sit
+> z-Uzazon | v-sit
 `;
     const { findings } = lintMorphGlossMarkdown(md, tables);
     assert.equal(findings.some((f) => f.kind === "missing-gloss"), false);
   });
 
   it("allows omitted teach morph when parser output matches loose English", () => {
-    const md = `> \`azawal\`
+    const md = `> \`uzazol\`
 >
 > "swan"
 `;
@@ -184,9 +184,9 @@ z-Azawan | v-sit
   });
 
   it("requires teach morph when loose English is a full sentence", () => {
-    const md = `> \`zazawan vayul.\`
+    const md = `> \`zuzazon vayul.\`
 >
-> "Azawan sits."
+> "Uzazon sits."
 `;
     const { findings } = lintMorphGlossMarkdown(md, tables);
     assert.equal(
@@ -196,9 +196,9 @@ z-Azawan | v-sit
   });
 
   it("fails teach-block mismatches", () => {
-    const md = `> \`zazawan vayul.\`
+    const md = `> \`zuzazon vayul.\`
 >
-> z-Azawan | v-walk
+> z-Uzazon | v-walk
 `;
     const { findings } = lintMorphGlossMarkdown(md, tables);
     const mismatch = findings.find((f) => f.kind === "mismatch");
@@ -207,16 +207,16 @@ z-Azawan | v-sit
   });
 
   it("reports a sentence that does not parse instead of comparing word by word", () => {
-    const text = "> `zazawan vul vayul.`\n>\n> z-Azawan | v-not | v-sit\n";
+    const text = "> `zuzazon vul vayul.`\n>\n> z-Uzazon | v-not | v-sit\n";
     const { findings } = lintMorphGlossMarkdown(text, tables);
     assert.equal(findings[0]?.kind, "parse-error");
     assert.match(formatMorphGlossFinding("x.md", findings[0]!), /sentence does not parse/);
   });
 
   it("reports checked pair count", () => {
-    const md = `> \`zazawan vayul.\`
+    const md = `> \`zuzazon vayul.\`
 >
-> z-Azawan | v-sit
+> z-Uzazon | v-sit
 `;
     const { checked } = lintMorphGlossMarkdown(md, tables);
     assert.equal(checked, 1);
@@ -226,11 +226,11 @@ z-Azawan | v-sit
     const text = formatMorphGlossFinding("docs/grammar/clause.md", {
       kind: "mismatch",
       line: 10,
-      agazan: "zazawan vayul.",
-      documented: "z-Azawan | v-walk",
-      parser: "z-Azawan | v-sit",
+      agazan: "zuzazon vayul.",
+      documented: "z-Uzazon | v-walk",
+      parser: "z-Uzazon | v-sit",
     });
     assert.match(text, /docs\/grammar\/clause.md:10  morph gloss mismatch/);
-    assert.match(text, /documented: z-Azawan \| v-walk/);
+    assert.match(text, /documented: z-Uzazon \| v-walk/);
   });
 });

@@ -1,15 +1,12 @@
 /**
- * Root tails (proposal `root-tails.md`, phase 1): a five-letter root `V C V | C V` ends in a tail,
- * the second consonant naming the row's kind and the final vowel its job. `data/lexicon-tails.csv`
- * holds the kind, shape and placed root of every published five-letter row, beside the live lexicon.
- * This file owns the letter map, the CSV, and the checks {@link validateTails} runs.
+ * Root tails: a five-letter root `V C V | C V` ends in a tail, the second consonant naming the row's
+ * kind and the final vowel its job. The `kind` and `shape` columns of `data/lexicon-published.csv`
+ * record each five-letter row's tail. This file owns the letter map and the checks
+ * {@link validateRootTails} runs; the placer is src/root-tails-place.ts.
  */
-import { escapeCsvField, parseCsv } from "./csv.ts";
 import { isFlagLabel } from "./flag-label.ts";
-import { factorizationsForStem, retieCompoundRows, type CompoundRow } from "./lexicon-compounds.ts";
 import type { OverlayRow, PublishedRow } from "./lexicon-search.ts";
 import { HOLDER_HOST_KINDS } from "./parse/classify.ts";
-import { isExtraNounHook } from "./parse/hook-compounds.ts";
 
 /** Kind → second consonant. */
 export const KIND_LETTERS = {
@@ -41,10 +38,6 @@ export type Shape = keyof typeof SHAPE_VOWELS;
 /** The kind whose final vowel is free. */
 export const FREE_VOWEL_KIND: Kind = "named";
 
-export const TAILS_HEADERS = ["emoji", "concrete", "kind", "shape", "root"] as const;
-
-export type TailRow = { emoji: string; concrete: string; kind: string; shape: string; root: string };
-
 export function isKind(value: string): value is Kind {
   return Object.hasOwn(KIND_LETTERS, value);
 }
@@ -58,28 +51,11 @@ export function tailOf(kind: Kind, shape: Shape | ""): string {
   return KIND_LETTERS[kind] + (shape ? SHAPE_VOWELS[shape] : "");
 }
 
-/** Key shared with the published row: emoji, and the concrete label for a seedless row. */
-export function tailKey(row: { emoji: string; concrete: string }): string {
-  return `${row.emoji.trim()}\t${row.concrete.trim()}`;
-}
-
-export function parseTailsCsv(text: string): TailRow[] {
-  const { headers, rows } = parseCsv(text);
-  if (headers.join(",") !== TAILS_HEADERS.join(",")) {
-    throw new Error(`Unexpected lexicon-tails.csv header: ${headers.join(",")}`);
-  }
-  return rows.map((row) => ({
-    emoji: row.emoji ?? "",
-    concrete: row.concrete ?? "",
-    kind: row.kind ?? "",
-    shape: row.shape ?? "",
-    root: row.root ?? "",
-  }));
-}
-
-export function serializeTailsCsv(rows: readonly TailRow[]): string {
-  const lines = [TAILS_HEADERS.join(","), ...rows.map((row) => TAILS_HEADERS.map((h) => escapeCsvField(row[h])).join(","))];
-  return `${lines.join("\n")}\n`;
+/** Why a kind / shape pair can't spell a tail, or null when it can. */
+export function tailFieldsError(kind: string, shape: string): string | null {
+  if (!isKind(kind)) return `kind must be one of ${Object.keys(KIND_LETTERS).join(", ")} (got ${kind || "(empty)"})`;
+  if (kind === FREE_VOWEL_KIND) return shape === "" ? null : `a named row has no shape (got ${shape})`;
+  return isShape(shape) ? null : `shape must be one of ${Object.keys(SHAPE_VOWELS).join(", ")} (got ${shape || "(empty)"})`;
 }
 
 const HOOK_JOINS = new Set(["l", "m"]);
@@ -117,92 +93,43 @@ export function onsetClash(root: string, shortRoots: ReadonlySet<string>, holder
   return hookClash(root, shortRoots) || holderClash(root, holderHosts);
 }
 
-/** Old published root → tails root, for every five-letter row that has one; three-letter roots map to themselves. */
-export function tailsRootMap(published: readonly PublishedRow[], tails: readonly TailRow[]): Map<string, string> {
-  const byKey = new Map(tails.filter((row) => row.root).map((row) => [tailKey(row), row.root]));
-  const map = new Map<string, string>();
-  for (const row of published) {
-    if (!row.root) continue;
-    const next = row.root.length === 5 ? byKey.get(tailKey(row)) : row.root;
-    if (next) map.set(row.root, next);
-  }
-  return map;
-}
-
 export type TailError = { key: string; reason: string };
 
 /**
- * Checks `npm test` runs over `lexicon-tails.csv`: one row per published five-letter row and no
- * other; kind and shape from their closed sets (no shape on a named row); every placed root unique,
- * in its tail, clear of the hook and holder checks; every listed compound, spelled with the new roots, splits one way.
- * An empty root is a row added since the last `convert-word -- --tails` run and is not checked.
+ * Checks `npm test` and `check-compounds` run over the published lexicon: every five-letter row has a
+ * kind and shape from their closed sets (no shape on a named row) and a root that ends in its tail and
+ * clears the hook and holder checks; a three-letter row has neither column. Listed compounds that split two
+ * ways are `validateCompoundRows`'.
  */
-export function validateTails(
-  tails: readonly TailRow[],
+export function validateRootTails(
   published: readonly PublishedRow[],
-  compounds: readonly CompoundRow[],
-  /** {@link holderHostForms} of the live overlays. */
+  /** {@link holderHostForms} of the overlays. */
   holderHosts: ReadonlySet<string> = new Set(),
 ): TailError[] {
   const errors: TailError[] = [];
-  const longKeys = new Set(published.filter((row) => row.root.length === 5).map(tailKey));
   const shortRoots = new Set(published.map((row) => row.root).filter((root) => root.length === 3));
-  const seenKeys = new Set<string>();
-  const seenRoots = new Map<string, string>();
-
-  for (const row of tails) {
-    const key = tailKey(row);
-    const label = row.emoji || row.concrete;
-    if (seenKeys.has(key)) errors.push({ key: label, reason: "duplicate row" });
-    seenKeys.add(key);
-    if (!longKeys.has(key)) errors.push({ key: label, reason: "no published five-letter row with this emoji and concrete" });
-    if (!isKind(row.kind)) {
-      errors.push({ key: label, reason: `kind must be one of ${Object.keys(KIND_LETTERS).join(", ")} (got ${row.kind || "(empty)"})` });
+  for (const row of published) {
+    const key = row.emoji || row.concrete;
+    const kind = row.kind ?? "";
+    const shape = row.shape ?? "";
+    if (row.root.length !== 5) {
+      if (kind || shape) errors.push({ key, reason: `a ${row.root.length}-letter root has no kind or shape` });
       continue;
     }
-    if (row.kind === FREE_VOWEL_KIND ? row.shape !== "" : !isShape(row.shape)) {
-      errors.push({
-        key: label,
-        reason: row.kind === FREE_VOWEL_KIND
-          ? `a named row has no shape (got ${row.shape})`
-          : `shape must be one of ${Object.keys(SHAPE_VOWELS).join(", ")} (got ${row.shape || "(empty)"})`,
-      });
+    const fields = tailFieldsError(kind, shape);
+    if (fields) {
+      errors.push({ key, reason: fields });
       continue;
     }
-    if (!row.root) continue;
-    const tail = tailOf(row.kind, row.shape as Shape | "");
-    if (!/^[aeou][bdghylmnrvwz][aeou][bdghylmnrvwz][aeou]$/.test(row.root)) {
-      errors.push({ key: label, reason: `root ${row.root} is not V C V C V` });
-    } else if (!row.root.slice(3).startsWith(tail)) {
-      errors.push({ key: label, reason: `root ${row.root} does not end in its tail ${tail}` });
-    }
-    const earlier = seenRoots.get(row.root);
-    if (earlier) errors.push({ key: label, reason: `root ${row.root} is also ${earlier}` });
-    seenRoots.set(row.root, label);
+    const tail = tailOf(kind as Kind, shape as Shape | "");
+    if (!row.root.slice(3).startsWith(tail)) errors.push({ key, reason: `root ${row.root} does not end in its tail ${tail}` });
     if (hookClash(row.root, shortRoots)) {
-      errors.push({ key: label, reason: `root ${row.root} reads as ${row.root.slice(0, 3)} + join + hook before -l / -m` });
+      errors.push({ key, reason: `root ${row.root} reads as ${row.root.slice(0, 3)} + join + hook before -l / -m` });
     }
     if (holderClash(row.root, holderHosts)) {
-      errors.push({ key: label, reason: `root ${row.root} starts with the holder host ${row.root.slice(0, 4)}: its compounds read as a holder seam on /th/` });
+      errors.push({ key, reason: `root ${row.root} starts with the holder host ${row.root.slice(0, 4)}: its compounds read as a holder seam on /th/` });
     }
   }
-  for (const key of longKeys) {
-    if (!seenKeys.has(key)) errors.push({ key: key.split("\t").find(Boolean) ?? key, reason: "published five-letter row missing from lexicon-tails.csv" });
-  }
-
-  const map = tailsRootMap(published, tails);
-  const roots = new Set(map.values());
-  const retied = retieCompoundRows(compounds as CompoundRow[], map).rows;
-  retied.forEach((row, index) => {
-    const original = compounds[index]!;
-    // Hook compounds are the hook check's; a compound with an unplaced member is checked once it is placed.
-    if (isExtraNounHook(original.right) || !map.has(original.left) || !map.has(original.right)) return;
-    const splits = factorizationsForStem(row.stem, roots);
-    if (splits.length > 1) {
-      const alts = splits.map((s) => `${s.left}+${s.join}+${s.right}`).join(", ");
-      errors.push({ key: original.stem, reason: `compound spelled ${row.stem} with the new roots splits two ways (${alts})` });
-    }
-  });
   return errors;
 }
 

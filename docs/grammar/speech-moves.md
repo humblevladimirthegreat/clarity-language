@@ -14,23 +14,23 @@ The `/y/` words go at the start of the turn, before its **body** (the subject, o
 
 To call someone into the turn, put `/y/` before their name, which ends in **-n**. The call can be the whole turn or come before a clause. A `/y/` word that ends in **-n** is always a call.
 
-> `yalahen.`
+> `yolozun.`
 >
-> y-Alahen
+> y-Olozun
 >
-> "Alahen!" (calling Alahen)
+> "Olozun!" (calling Olozun)
 
-A `/ɡ/` word right after the call describes the person you call, as it would after any noun. So a full name calls with its family name (`yohun galuden.` *Ohun Aluden!*, [multipart names](word-endings.md#multipart-names)), and `yalahen gezebul.` is *sleepy Alahen!*.
+A `/ɡ/` word right after the call describes the person you call, as it would after any noun. So a full name calls with its family name (`yohun gulowon.` *Ohun Ulowon!*, [multipart names](word-endings.md#multipart-names)), and `yolozun gozumol.` is *sleepy Olozun!*.
 
-> `yohun galuden.`
+> `yohun gulowon.`
 >
-> [y-Ohun | g-Aluden]
+> [y-Ohun | g-Ulowon]
 >
-> "Ohun Aluden!" (calling Ohun Aluden)
+> "Ohun Ulowon!" (calling Ohun Ulowon)
 
-To call someone by what they are (*Waiter!*, *Doctor!*), use the kind as a title: it still ends in **-n**, so `yagavon` calls the guard. An occupation title is a [role compound](roles.md#role-compounds) with **-n**.
+To call someone by what they are (*Waiter!*, *Doctor!*), use the kind as a title: it still ends in **-n**, so `yayoyun` calls the guard. An occupation title is a [role compound](roles.md#role-compounds) with **-n**.
 
-**Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Alahen uses `/y/`; saying Alahen walks uses `/z/` (`zalahen vowogal`).
+**Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Olozun uses `/y/`; saying Olozun walks uses `/z/` (`zolozun voworel`).
 
 ### Interjections: reactions
 <a id="interjections"></a>
@@ -50,11 +50,11 @@ An **interjection** is a short reaction or exclamation that stands on its own. W
 >
 > "Amazing!"
 
-The ending tells a reaction from a call: **-n** calls someone (`yalahen`, `yagavon`), and **-l** / **-m** give the reaction itself. So `yagavol` is *Guard!* shouted as an alarm, and `yagavon` calls the guard over.
+The ending tells a reaction from a call: **-n** calls someone (`yolozun`, `yayoyun`), and **-l** / **-m** give the reaction itself. So `yayoyul` is *Guard!* shouted as an alarm, and `yayoyun` calls the guard over.
 
 A `/ɡ/` word right after a reaction describes it, as one after a call describes the person called.
 
-> `yezul gelavam.`
+> `yezul geluzom.`
 >
 > [y-surprise | g-big]
 >
@@ -69,7 +69,7 @@ Each turn does one thing: it states, asks, commands, or forbids. That is its **s
 
 When the turn is not a statement, put its act word immediately before the body:
 
-> `yel vowogal.`
+> `yel voworel.`
 >
 > y-command | v-walk
 >
@@ -89,25 +89,25 @@ The vowel picks the act. Its cues are **a** add / hold, **o** one / pick, **e** 
 
 The first letter of each word already says its role, so any order of the body means the same thing (with joined verbs, a word's place says which verb it goes with: [verb-phrase forms](join-across-roles.md#vp-clause-forms)). Each act still has a **usual order**. Use it: the act word is one short syllable, and if a listener misses it, the order still tells them which act you meant.
 
-> `zazawan dabegol vabahel.`
+> `zuzazon dabagal vabavul.`
 >
-> z-Azawan | d-box | v-punch
+> z-Uzazon | d-box | v-punch
 >
-> "Azawan punches the box."
+> "Uzazon punches the box."
 
-> `yol zazawan vabahel dabegol.`
+> `yol zuzazon vabavul dabagal.`
 >
-> y-question | z-Azawan | v-punch | d-box
+> y-question | z-Uzazon | v-punch | d-box
 >
-> "Does Azawan punch the box?"
+> "Does Uzazon punch the box?"
 
-> `yel vabahel dabegol.`
+> `yel vabavul dabagal.`
 >
 > y-command | v-punch | d-box
 >
 > "Punch the box!"
 
-> `yul dabegol vabahel.`
+> `yul dabagal vabavul.`
 >
 > y-prohibition | d-box | v-punch
 >
@@ -123,7 +123,7 @@ Only a command starts with its verb. A question or prohibition whose act word ge
 | command | verb first | the action comes first: do it |
 | prohibition | verb late, as in a statement | the action is held back |
 
-The person who receives (`/b/`) stays right after the verb, wherever the verb goes: `yel vamol bazawan.` *Pay Azawan!* With [joined verbs](join-across-roles.md#vp-clause-forms), the whole join counts as the verb, so a `/b/` right after the join word receives from every verb. A question with no subject puts another word before its verb, so that it still does not start with the verb.
+The person who receives (`/b/`) stays right after the verb, wherever the verb goes: `yel vamol buzazon.` *Pay Uzazon!* With [joined verbs](join-across-roles.md#vp-clause-forms), the whole join counts as the verb, so a `/b/` right after the join word receives from every verb. A question with no subject puts another word before its verb, so that it still does not start with the verb.
 
 ### Practice {#beginner-practice}
 
@@ -136,30 +136,30 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agazan | Cue |
 |---------|--------|-----|
 | *surprise* | `ezul` | 😮 |
-| *sit* | `vehahel` | 🪑 from *chair* |
-| *sneak* | `vezevul` | 🥷 |
-| *run* | `varahal` | 🏃 |
+| *sit* | `vehuhol` | 🪑 from *chair* |
+| *sneak* | `vezeyul` | 🥷 |
+| *run* | `varuvel` | 🏃 |
 
 **Review:**
 
 | English | Agazan |
 |---------|--------|
-| *Azawan* | `azawan` |
-| *Alahen* | `alahen` |
-| *Ahaben* | `ahaben` |
+| *Uzazon* | `uzazon` |
+| *Olozun* | `olozun` |
+| *Ehalon* | `ehalon` |
 | *pay* | `vamol` |
-| *haste* | `hadehum` |
-| *very* | `welavam` |
-| *angry* | `anegel` |
+| *haste* | `hedarem` |
+| *very* | `weluzom` |
+| *angry* | `onemul` |
 
 #### English → Agazan {#beginner-english-to-agazan}
 
-**1.** *Ahaben!* (calling Ahaben)
+**1.** *Ehalon!* (calling Ehalon)
 
 ::: details Show answer
-`yahaben.`
+`yehalon.`
 
-y-Ahaben
+y-Ehalon
 :::
 
 **2.** *Amazing!*
@@ -170,65 +170,65 @@ y-Ahaben
 y-amazement
 :::
 
-**3.** *Does Alahen pay Azawan?*
+**3.** *Does Olozun pay Uzazon?*
 
 ::: details Show answer
-`yol zalahen vamol bazawan.`
+`yol zolozun vamol buzazon.`
 
-y-question | z-Alahen | v-pay | b-Azawan
+y-question | z-Olozun | v-pay | b-Uzazon
 
-**Also correct:** `yol zalahen bazawan vamol.`
+**Also correct:** `yol zolozun buzazon vamol.`
 :::
 
-**4.** *Azawan, sit!*
+**4.** *Uzazon, sit!*
 
 ::: details Show answer
-`yazawan yel vehahel.`
+`yuzazon yel vehuhol.`
 
-y-Azawan | y-command | v-sit
+y-Uzazon | y-command | v-sit
 :::
 
 **5.** *Pay hastily!*
 
 ::: details Show answer
-`yel vamol hadehum.`
+`yel vamol hedarem.`
 
 y-command | v-pay | h-haste
 
-**Also correct:** `yel hadehum vamol.`
+**Also correct:** `yel hedarem vamol.`
 :::
 
 **6.** *Don’t pay hastily.*
 
 ::: details Show answer
-`yul hadehum vamol.`
+`yul hedarem vamol.`
 
 y-prohibition | h-haste | v-pay
 
 A prohibition keeps its verb late, as in a statement; only a command starts with its verb.
 
-**Also correct:** `yul vamol hadehum.`
+**Also correct:** `yul vamol hedarem.`
 :::
 
 #### Agazan → English {#beginner-agazan-to-english}
 
-**1.** `yazawan.`
+**1.** `yuzazon.`
 
 ::: details Show answer
-y-Azawan
+y-Uzazon
 
-*Azawan!* (calling Azawan)
+*Uzazon!* (calling Uzazon)
 :::
 
-**2.** `yol zahaben vehahel.`
+**2.** `yol zehalon vehuhol.`
 
 ::: details Show answer
-y-question | z-Ahaben | v-sit
+y-question | z-Ehalon | v-sit
 
-*Does Ahaben sit?*
+*Does Ehalon sit?*
 :::
 
-**3.** `yel varahal.`
+**3.** `yel varuvel.`
 
 ::: details Show answer
 y-command | v-run
@@ -244,38 +244,38 @@ y-surprise
 *What a surprise!*
 :::
 
-**5.** `yalahen yul varahal.`
+**5.** `yolozun yul varuvel.`
 
 ::: details Show answer
-y-Alahen | y-prohibition | v-run
+y-Olozun | y-prohibition | v-run
 
-*Alahen, don’t run!*
+*Olozun, don’t run!*
 :::
 
-**6.** `zahaben welavam ganegel vezevul.`
+**6.** `zehalon weluzom gonemul vezeyul.`
 
 ::: details Show answer
-[z-Ahaben | [w-very | g-angry]] | v-sneak
+[z-Ehalon | [w-very | g-angry]] | v-sneak
 
-*A very angry Ahaben sneaks.*
+*A very angry Ehalon sneaks.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Alahen!* (calling Alahen over) `yalahel.` or `yalahen.`
+**1.** *Olozun!* (calling Olozun over) `yolozul.` or `yolozun.`
 
 ::: details Show answer
-`yalahen.`
+`yolozun.`
 
-y-Alahen
+y-Olozun
 
-A call ends in **-n**; `yalahel` is a reaction, *Lion!*
+A call ends in **-n**; `yolozul` is a reaction, *Lion!*
 :::
 
-**2.** *Don’t sit.* `yel vehahel.` or `yul vehahel.`
+**2.** *Don’t sit.* `yel vehuhol.` or `yul vehuhol.`
 
 ::: details Show answer
-`yul vehahel.`
+`yul vehuhol.`
 
 y-prohibition | v-sit
 
@@ -284,12 +284,12 @@ y-prohibition | v-sit
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Does Azawan pay?* <!-- lint: error -->`zazawan vamol yol.`
+**1.** *Does Uzazon pay?* <!-- lint: error -->`zuzazon vamol yol.`
 
 ::: details Show answer
-`yol zazawan vamol.`
+`yol zuzazon vamol.`
 
-y-question | z-Azawan | v-pay
+y-question | z-Uzazon | v-pay
 
 The act word goes before the body; a `/y/` word after a finished body starts the next turn.
 :::
@@ -306,11 +306,11 @@ You already mark whether a turn is a statement, question, command, or prohibitio
 
 The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a** statement, **o** question, **e** command, **u** prohibition). With **-l** you stand behind the act. With **-m** you offer it softly and leave the other person free to take it up or not. **-r** marks an act you hold only [for now](#act-r). Write the act word whenever the turn is not a plain statement; a period still lets you omit **`yal`**. A statement word you do write also ends a [carried channel](knowing.md#carry-forward): the claim after it is in your own voice again.
 
-> `yam zazawan vowogal.`
+> `yam zuzazon voworel.`
 >
-> y-soft-statement | z-Azawan | v-walk
+> y-soft-statement | z-Uzazon | v-walk
 >
-> "For what it's worth, Azawan walks."
+> "For what it's worth, Uzazon walks."
 
 **Compare with:** [MAY](knowing.md#may) (`thovum`) marks the scene as *could be*. **`yam`** is still a statement; you put it forward without insisting the other person take it up.
 
@@ -328,13 +328,13 @@ The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a
 
 For *let's*, make a soft request with inclusive *we*, **`aha`** ([special pronouns](pronouns.md#special-pronouns)), as the subject. *Let's not* is the soft prohibition.
 
-> `yem vowogal zahan.`
+> `yem voworel zahan.`
 >
 > y-request | v-walk | z-interlocutors
 >
 > "Let's walk."
 
-> `yum zahan vezebal.`
+> `yum zahan vuzevol.`
 >
 > y-soft-prohibition | z-interlocutors | v-sleep
 >
@@ -354,23 +354,23 @@ A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` w
 | **`yer`** | **command for now**: do this until told otherwise | *for now, …* / *go ahead and … for now* | **e** order + **-r**: an instruction you expect to revisit |
 | **`yur`** | **hold off**: don't, for now | *hold off on …* / *don't … yet* | **u** undo + **-r**: take the action back, for now |
 
-> `yur vowogal.`
+> `yur voworel.`
 >
 > y-hold-off | v-walk
 >
 > "Hold off on walking for now."
 
-> `yar zazawan vowogal.`
+> `yar zuzazon voworel.`
 >
-> y-provisional-statement | z-Azawan | v-walk
+> y-provisional-statement | z-Uzazon | v-walk
 >
-> "As things stand, Azawan walks."
+> "As things stand, Uzazon walks."
 
 ### Emphatic prohibition {#emphatic-prohibition}
 
 When a missed *don't* would be dangerous, say **`yul`** twice among the opening `/y/` words. The repeat makes the prohibition louder; it never cancels it. Repeat only the opening act word: a `yul` after the body starts a new turn instead of adding emphasis.
 
-> `yul yul vezevul.`
+> `yul yul vezeyul.`
 >
 > y-prohibition | y-prohibition | v-sneak
 >
@@ -380,13 +380,13 @@ When a missed *don't* would be dangerous, say **`yul`** twice among the opening 
 
 A call or a reaction can also take an adjective **before** it, with [**`gl-`**](clause.md#left-bound-adjectives), the way a noun does. Its `/w/` and its `/b/` come along as usual.
 
-> `glalavam yalahen.`
+> `glelamam yolozun.`
 >
-> [gl-cherished | y-Alahen]
+> [gl-cherished | y-Olozun]
 >
-> "Dear Alahen!"
+> "Dear Olozun!"
 
-> `glegevom yebeval.`
+> `glogamam yoberol.`
 >
 > [gl-delight | y-birthday]
 >
@@ -394,7 +394,7 @@ A call or a reaction can also take an adjective **before** it, with [**`gl-`**](
 
 A reaction can also take a [degree word](clause.md#degree-w) right before it, to say how strongly it holds. A call takes none: the person you call is not more or less called.
 
-> `welavam yezum.`
+> `weluzom yezum.`
 >
 > [w-very | y-amazement]
 >
@@ -402,7 +402,7 @@ A reaction can also take a [degree word](clause.md#degree-w) right before it, to
 
 The degree word grades the reaction itself. A [tone mark](#tone-marks) is how you sound saying it, so the two can go together.
 
-To say who or what you react to (*hooray for Azawan*), add a [hook](hooks.md#extra-noun) and `/b/` after the reaction: `yuhohul el bazawan.` A bare `/b/` there would start the body as the person who receives.
+To say who or what you react to (*hooray for Uzazon*), add a [hook](hooks.md#extra-noun) and `/b/` after the reaction: `yohomal el buzazon.` A bare `/b/` there would start the body as the person who receives.
 
 ### Tone marks {#tone-marks}
 
@@ -423,91 +423,91 @@ Write the mark **before** what it colors, so you see the tone before you say the
 
 | Written | Colors |
 |---------|--------|
-| Attached to a word: `!zazawan` | that word |
+| Attached to a word: `!zuzazon` | that word |
 | Attached to a [span](spans.md): `!d[ … ]` | the span |
-| Standing alone, then a space: `! zazawan …` | the rest of the sentence, up to the period |
+| Standing alone, then a space: `! zuzazon …` | the rest of the sentence, up to the period |
 
-> `zazawan vahahal ?dodogal.`
+> `zuzazon vanobol ?dodozol.`
 >
-> z-Azawan | v-see | ?d-dog
+> z-Uzazon | v-see | ?d-dog
 >
-> "Azawan saw a dog, I think." (unsure about just the dog)
+> "Uzazon saw a dog, I think." (unsure about just the dog)
 
-> `! zazawan vowogal.`
+> `! zuzazon voworel.`
 >
-> ! | z-Azawan | v-walk
+> ! | z-Uzazon | v-walk
 >
-> "Azawan walks!"
+> "Uzazon walks!"
 
-> `zazawan vahahal &dodogal.`
+> `zuzazon vanobol &dodozol.`
 >
-> z-Azawan | v-see | &d-dog
+> z-Uzazon | v-see | &d-dog
 >
-> "Azawan saw a *dog*." (a dog, not something else)
+> "Uzazon saw a *dog*." (a dog, not something else)
 
 The other marks work the same way:
 
-> `zazawan !!vowogal.`
+> `zuzazon !!voworel.`
 >
-> z-Azawan | !!v-walk
+> z-Uzazon | !!v-walk
 >
-> "Azawan *walks*!!"
+> "Uzazon *walks*!!"
 
-> `?! zalahen vahahal dodogal.`
+> `?! zolozun vanobol dodozol.`
 >
-> ?! | z-Alahen | v-see | d-dog
+> ?! | z-Olozun | v-see | d-dog
 >
-> "Alahen saw a dog?!"
+> "Olozun saw a dog?!"
 
-> `%;zalahen vowogal.`
+> `%;zolozun voworel.`
 >
-> %;z-Alahen | v-walk
+> %;z-Olozun | v-walk
 >
-> "Good old Alahen walks." (teasing, but fond)
+> "Good old Olozun walks." (teasing, but fond)
 
-> `zazawan vahahal ??dodogal.`
+> `zuzazon vanobol ??dodozol.`
 >
-> z-Azawan | v-see | ??d-dog
+> z-Uzazon | v-see | ??d-dog
 >
-> "Azawan saw a dog, I think, but I'm really not sure." (unsure about just the dog)
+> "Uzazon saw a dog, I think, but I'm really not sure." (unsure about just the dog)
 
-> `%% zazawan vowogal.`
+> `%% zuzazon voworel.`
 >
-> %% | z-Azawan | v-walk
+> %% | z-Uzazon | v-walk
 >
-> "Azawan walks." (broad teasing)
+> "Uzazon walks." (broad teasing)
 
-> `zazawan vahahal &&dodogal.`
+> `zuzazon vanobol &&dodozol.`
 >
-> z-Azawan | v-see | &&d-dog
+> z-Uzazon | v-see | &&d-dog
 >
-> "Azawan saw a *dog*." (a dog, and definitely not something else)
+> "Uzazon saw a *dog*." (a dog, and definitely not something else)
 
-> `;;zalahen vahahal dodogal.`
+> `;;zolozun vanobol dodozol.`
 >
-> ;;z-Alahen | v-see | d-dog
+> ;;z-Olozun | v-see | d-dog
 >
-> "Dearest Alahen saw a dog."
+> "Dearest Olozun saw a dog."
 
-> `% zazawan vowogal.`
+> `% zuzazon voworel.`
 >
-> % | z-Azawan | v-walk
+> % | z-Uzazon | v-walk
 >
-> "Azawan walks." (joking)
+> "Uzazon walks." (joking)
 
-> `;zalahen vahahal dodogal.`
+> `;zolozun vanobol dodozol.`
 >
-> ;z-Alahen | v-see | d-dog
+> ;z-Olozun | v-see | d-dog
 >
-> "Dear Alahen saw a dog."
+> "Dear Olozun saw a dog."
 
 A mark on a span colors all of it:
 
-> `zazawan ?d[azawan] vezebel.`
+> `zuzazon ?d[uzazon] vezeyel.`
 >
-> z-Azawan | ?d-CITE[Azawan] | v-tell
+> z-Uzazon | ?d-CITE[Uzazon] | v-tell
 >
-> "Azawan said “Azawan,” I think." (unsure about just the quoted word)
+> "Uzazon said “Uzazon,” I think." (unsure about just the quoted word)
 
 **Compare with:** **`yol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling; [emotion compose](sakes.md#emotion-compose) states it as a claim, and the two can share a sentence.
 
@@ -525,22 +525,22 @@ English *frankly* and *to be clear* say in words how you are speaking. A tone ma
 <!-- cheat-sheet: talking -->
 | Agazan | English | Root |
 |--------|---------|------|
-| **`thagazam`** | *to be clear* / *to put it plainly* | clarity |
-| **`thaveham`** | *frankly* / *honestly* / *to tell the truth* | revelation |
+| **`thegabom`** | *to be clear* / *to put it plainly* | clarity |
+| **`thavewom`** | *frankly* / *honestly* / *to tell the truth* | revelation |
 
-> `thagazam zazawan vowogal.`
+> `thegabom zuzazon voworel.`
 >
-> th-clarity | z-Azawan | v-walk
+> th-clarity | z-Uzazon | v-walk
 >
-> "To be clear, Azawan walks."
+> "To be clear, Uzazon walks."
 
-> `thaveham zalahen vezebal.`
+> `thavewom zolozun vuzevol.`
 >
-> th-revelation | z-Alahen | v-sleep
+> th-revelation | z-Olozun | v-sleep
 >
-> "Honestly, Alahen is sleeping."
+> "Honestly, Olozun is sleeping."
 
-**Compare with:** the stance word describes your way of saying the claim, not the action. `/h/` on the same root (`hagazam`) would describe how the action itself is done.
+**Compare with:** the stance word describes your way of saying the claim, not the action. `/h/` on the same root (`hegabom`) would describe how the action itself is done.
 
 ### Number as interjection {#number-as-interjection}
 
@@ -556,41 +556,41 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agazan | Cue |
 |---------|--------|-----|
-| *trumpet* | `adawol` | 🎺 |
-| *clarity* | `thagazam` | 👓 from *glasses*: seeing it plainly |
-| *revelation* | `thaveham` | 🔦 from *flashlight*: showing what was hidden |
+| *trumpet* | `edarol` | 🎺 |
+| *clarity* | `thegabom` | 👓 from *glasses*: seeing it plainly |
+| *revelation* | `thavewom` | 🔦 from *flashlight*: showing what was hidden |
 
 **Review:**
 
 | English | Agazan |
 |---------|--------|
-| *Azawan* | `azawan` |
-| *Alahen* | `alahen` |
-| *Ahaben* | `ahaben` |
+| *Uzazon* | `uzazon` |
+| *Olozun* | `olozun` |
+| *Ehalon* | `ehalon` |
 | *interlocutors* | `ahan` |
-| *sing* | `vezehel` |
-| *stop* | `vazadal` |
-| *quiet* | `agawal` |
-| *run* | `varahal` |
-| *page* | `abehel` |
-| *write* | `varadal` |
-| *see* | `vahahal` |
-| *find* | `vamagal` |
+| *sing* | `vezeyol` |
+| *stop* | `vuzahul` |
+| *quiet* | `ogawol` |
+| *run* | `varuvel` |
+| *page* | `ebogol` |
+| *write* | `vuruyel` |
+| *see* | `vanobol` |
+| *find* | `vemawol` |
 
 #### English → Agazan {#intermediate-english-to-agazan}
 
-**1.** *For what it's worth, Ahaben sings.*
+**1.** *For what it's worth, Ehalon sings.*
 
 ::: details Show answer
-`yam zahaben vezehel.`
+`yam zehalon vezeyol.`
 
-y-soft-statement | z-Ahaben | v-sing
+y-soft-statement | z-Ehalon | v-sing
 :::
 
 **2.** *Let's sing.*
 
 ::: details Show answer
-`yem vezehel zahan.`
+`yem vezeyol zahan.`
 
 y-request | v-sing | z-interlocutors
 :::
@@ -598,7 +598,7 @@ y-request | v-sing | z-interlocutors
 **3.** *Hold off on stopping for now.*
 
 ::: details Show answer
-`yur vazadal.`
+`yur vuzahul.`
 
 y-hold-off | v-stop
 :::
@@ -606,46 +606,46 @@ y-hold-off | v-stop
 **4.** *Don't run. I mean it.*
 
 ::: details Show answer
-`yul yul varahal.`
+`yul yul varuvel.`
 
 y-prohibition | y-prohibition | v-run
 :::
 
-**5.** *Azawan sees a trumpet!* (strong feeling about the whole sentence)
+**5.** *Uzazon sees a trumpet!* (strong feeling about the whole sentence)
 
 ::: details Show answer
-`! zazawan dadawol vahahal.`
+`! zuzazon dedarol vanobol.`
 
-! | z-Azawan | d-trumpet | v-see
+! | z-Uzazon | d-trumpet | v-see
 :::
 
-**6.** *To be clear, Alahen sings quietly.*
+**6.** *To be clear, Olozun sings quietly.*
 
 ::: details Show answer
-`thagazam zalahen hagawal vezehel.`
+`thegabom zolozun hogawol vezeyol.`
 
-th-clarity | z-Alahen | h-quiet | v-sing
+th-clarity | z-Olozun | h-quiet | v-sing
 :::
 
 #### Agazan → English {#intermediate-agazan-to-english}
 
-**1.** `yom zalahen vamagal dadawol.`
+**1.** `yom zolozun vemawol dedarol.`
 
 ::: details Show answer
-y-soft-question | z-Alahen | v-find | d-trumpet
+y-soft-question | z-Olozun | v-find | d-trumpet
 
-*Does Alahen find the trumpet, I wonder?*
+*Does Olozun find the trumpet, I wonder?*
 :::
 
-**2.** `yer vezehel zazawan.`
+**2.** `yer vezeyol zuzazon.`
 
 ::: details Show answer
-y-command-for-now | v-sing | z-Azawan
+y-command-for-now | v-sing | z-Uzazon
 
-*For now, Azawan is to sing.*
+*For now, Uzazon is to sing.*
 :::
 
-**3.** `yum zahan vazadal.`
+**3.** `yum zahan vuzahul.`
 
 ::: details Show answer
 y-soft-prohibition | z-interlocutors | v-stop
@@ -653,46 +653,46 @@ y-soft-prohibition | z-interlocutors | v-stop
 *Let's not stop.*
 :::
 
-**4.** `thaveham zahaben dabehel varadal.`
+**4.** `thavewom zehalon debogol vuruyel.`
 
 ::: details Show answer
-th-revelation | z-Ahaben | d-page | v-write
+th-revelation | z-Ehalon | d-page | v-write
 
-*Honestly, Ahaben writes a page.*
+*Honestly, Ehalon writes a page.*
 :::
 
-**5.** `zalahen vahahal &dadawol.`
+**5.** `zolozun vanobol &dedarol.`
 
 ::: details Show answer
-z-Alahen | v-see | &d-trumpet
+z-Olozun | v-see | &d-trumpet
 
-*Alahen sees a trumpet.* (a trumpet, not something else)
+*Olozun sees a trumpet.* (a trumpet, not something else)
 :::
 
-**6.** `yar zazawan hagawal vezehel.`
+**6.** `yar zuzazon hogawol vezeyol.`
 
 ::: details Show answer
-y-provisional-statement | z-Azawan | h-quiet | v-sing
+y-provisional-statement | z-Uzazon | h-quiet | v-sing
 
-*As things stand, Azawan sings quietly.*
+*As things stand, Uzazon sings quietly.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Please sing.* `yem vezehel.` or `yel vezehel.`
+**1.** *Please sing.* `yem vezeyol.` or `yel vezeyol.`
 
 ::: details Show answer
-`yem vezehel.`
+`yem vezeyol.`
 
 y-request | v-sing
 
 Soft **-m** asks; firm **`yel`** commands.
 :::
 
-**2.** *Hold off on singing for now.* `yur vezehel.` or `yul vezehel.`
+**2.** *Hold off on singing for now.* `yur vezeyol.` or `yul vezeyol.`
 
 ::: details Show answer
-`yur vezehel.`
+`yur vezeyol.`
 
 y-hold-off | v-sing
 
@@ -701,10 +701,10 @@ y-hold-off | v-sing
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Don't stop. I mean it.* <!-- lint: error -->`yul vazadal yul.`
+**1.** *Don't stop. I mean it.* <!-- lint: error -->`yul vuzahul yul.`
 
 ::: details Show answer
-`yul yul vazadal.`
+`yul yul vuzahul.`
 
 y-prohibition | y-prohibition | v-stop
 

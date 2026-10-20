@@ -1,9 +1,8 @@
 /**
- * Root-tails placer (proposal `root-tails.md`, phase 1): each five-letter row's tail comes from its
- * kind and shape, and its onset is chosen so that few roots of the same kind share its first two letters,
- * and to start with the English label's first consonant. Rows are placed greedily in CSV order, then
- * annealed. Learning order plays no part (the phase 3 lint keeps look-alikes apart in teaching). The live placer
- * (src/lexicon-place.ts) is untouched: its second-consonant ban and echo ranking stay in force.
+ * Root-tails placer: each five-letter row's tail comes from its kind and shape, and its onset is chosen
+ * so that few roots of the same kind share its first two letters, and to start with the English label's
+ * first consonant. Rows are placed greedily in CSV order, then annealed. Learning order plays no part
+ * (a checkpoint lint keeps look-alikes apart in teaching). `placePublishedRoots` (src/lexicon-place.ts) calls it.
  */
 import { echo } from "./echo-metric.ts";
 import type { CompoundRow } from "./lexicon-compounds.ts";
@@ -33,6 +32,8 @@ export type TailPlaceRow = {
   shape: Shape | "";
   /** CMU pronunciation of the label; empty loses only the echo tie-break. */
   cmu: string;
+  /** A root kept as it is: the row is not placed, but its root counts against the others. */
+  fixed?: string;
 };
 
 /** A listed compound by member: a row index (five-letter, placed here) or a fixed three-letter root. */
@@ -44,6 +45,8 @@ export type TailPlaceInput = {
   shortRoots: ReadonlySet<string>;
   /** `/th/` holder host forms (`holderHostForms`): no root may start with one. */
   holderHosts?: ReadonlySet<string>;
+  /** Spellings no placed root may take (join-overlay sense forms, compound stems). */
+  blocked?: ReadonlySet<string>;
   compounds: TailCompound[];
   steps?: number;
   seed?: number;
@@ -83,14 +86,14 @@ function siblings(code: number): number[] {
   return out;
 }
 
-/** Every root a row may take: its tail, any onset, minus the hook and holder checks. */
-function candidates(row: TailPlaceRow, shortRoots: ReadonlySet<string>, holderHosts?: ReadonlySet<string>): number[] {
+/** Every root a row may take: its tail, any onset, minus the hook and holder checks and blocked spellings. */
+function candidates(row: TailPlaceRow, shortRoots: ReadonlySet<string>, holderHosts?: ReadonlySet<string>, blocked?: ReadonlySet<string>): number[] {
   const consonant = KIND_LETTERS[row.kind];
   const vowels = row.kind === FREE_VOWEL_KIND || !row.shape ? V : SHAPE_VOWELS[row.shape];
   const out: number[] = [];
   for (const a of V) for (const c of C) for (const b of V) for (const e of vowels) {
     const root = a + c + b + consonant + e;
-    if (!onsetClash(root, shortRoots, holderHosts)) out.push(encode(root));
+    if (!onsetClash(root, shortRoots, holderHosts) && !blocked?.has(root)) out.push(encode(root));
   }
   return out;
 }
@@ -117,7 +120,8 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
   const { rows, shortRoots, holderHosts } = input;
   const n = rows.length;
   const sibs = Array.from({ length: FORMS }, (_, code) => siblings(code));
-  const cands = rows.map((row) => candidates(row, shortRoots, holderHosts));
+  const cands = rows.map((row) => (row.fixed ? [] : candidates(row, shortRoots, holderHosts, input.blocked)));
+  const free = rows.flatMap((row, i) => (row.fixed ? [] : [i]));
   const unary = rows.map((row, i) => {
     const first = firstConsonant(row.cmu);
     const costs = new Map<number, number>();
@@ -194,8 +198,15 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
     return cost + HARD * compoundBreaks(i);
   };
 
+  rows.forEach((row, i) => {
+    if (!row.fixed) return;
+    const code = encode(row.fixed);
+    if (occupant[code]! >= 0) throw new Error(`fixed root ${row.fixed} is given twice`);
+    setCode(i, code);
+  });
+
   // Greedy, in CSV order.
-  for (let i = 0; i < n; i++) {
+  for (const i of free) {
     let best = -1;
     let bestCost = Infinity;
     for (const code of cands[i]!) {
@@ -214,11 +225,12 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
   // Anneal: move one row to another onset in its tail, or swap two rows that can take each other's root.
   const steps = input.steps ?? 1_500_000;
   const rnd = rng(input.seed ?? 12345);
+  /** A row may take a code: it is in the row's tail, and the row is not fixed. */
   const allowed = (k: number, code: number) => unary[k]!.has(code);
   let temperature = 0.5;
   const cooling = Math.pow(0.000001 / temperature, 1 / Math.max(1, steps));
-  for (let step = 0; step < steps; step++, temperature *= cooling) {
-    const i = Math.floor(rnd() * n);
+  for (let step = 0; step < steps && free.length > 0; step++, temperature *= cooling) {
+    const i = free[Math.floor(rnd() * free.length)]!;
     const list = cands[i]!;
     const code = list[Math.floor(rnd() * list.length)]!;
     const from = codes[i]!;
@@ -244,7 +256,7 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
   const breaks = (i: number) => localCost(i) >= HARD;
   for (let round = 0; round < 20; round++) {
     let fixed = false;
-    for (let i = 0; i < n; i++) {
+    for (const i of free) {
       if (!breaks(i)) continue;
       const from = codes[i]!;
       let best: { code: number; k: number; to: number } | null = null;
@@ -289,7 +301,7 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
   return { roots, unmet };
 }
 
-/** Resolve listed compounds to row indices: `rowOfRoot` maps a live five-letter root to its tails row. */
+/** Resolve listed compounds to row indices: `rowOfRoot` maps a current five-letter root to its row. */
 export function tailCompounds(compounds: readonly CompoundRow[], rowOfRoot: ReadonlyMap<string, number>, shortRoots: ReadonlySet<string>): TailCompound[] {
   const side = (root: string) => rowOfRoot.get(root) ?? (shortRoots.has(root) ? root : null);
   return compounds.flatMap((c) => {

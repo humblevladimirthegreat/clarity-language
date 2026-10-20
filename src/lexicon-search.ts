@@ -21,6 +21,10 @@ export type PublishedRow = {
   emoji: string;
   concrete: string;
   root: string;
+  /** Root tail: the kind of the concrete sense (`kind`), five-letter rows only (src/root-tails.ts). */
+  kind?: string;
+  /** Root tail: the job (`shape`), five-letter rows except named ones. */
+  shape?: string;
   abstract: string;
   mnemonic: string;
   englishByPos: string;
@@ -125,6 +129,8 @@ const PUBLISHED_HEADERS = [
   "emoji",
   "concrete",
   "root",
+  "kind",
+  "shape",
   "abstract",
   "mnemonic",
   "english_by_pos",
@@ -364,6 +370,8 @@ export function parsePublishedCsv(text: string): PublishedRow[] {
       emoji: row.emoji ?? "",
       concrete,
       root: row.root ?? "",
+      kind: row.kind ?? "",
+      shape: row.shape ?? "",
       abstract,
       mnemonic: row.mnemonic ?? "",
       englishByPos,

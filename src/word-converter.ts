@@ -52,11 +52,8 @@ const DIGIT_TO_LETTER: Record<string, string> = {
   "9": "u",
 };
 
-const MAX_ROOT_LENGTH = 5;
-
 /** Consonants the pronunciation generator may write. */
 const GENERATED_CONSONANTS = ["b", "d", "g", "h", "y", "l", "m", "n", "r", "v", "w", "z"] as const;
-const SECOND_CONSONANT_BAN = new Set(["l", "m", "n", "r"]);
 const STOPS = new Set(["b", "d", "g"]);
 
 function normalizeInput(input: string): string {
@@ -126,39 +123,6 @@ function rankRoots(roots: string[], cmu: string): string[] {
     .map(([root]) => root);
 }
 
-/**
- * Five-letter roots for a CMU pronunciation (`|` between words).
- * First consonant: the first consonant of the label, or of any of its words.
- * Second consonant: any letter except l/m/n/r, and a stop only when the English word has it.
- * Vowels: every combination. Ranked by the pronunciation metric.
- */
-export function longRootCandidates(cmu: string): string[] {
-  const words = phonemeWords(cmu);
-  const phones = words.flat();
-  const english = new Set(phones.filter(isConsonantPhone).map(letterOf));
-  const firsts = new Set(
-    words
-      .map((word) => word.find(isConsonantPhone))
-      .filter((phone): phone is string => !!phone)
-      .map(letterOf),
-  );
-  const c1s = firsts.size > 0 ? [...firsts] : [...GENERATED_CONSONANTS];
-  const c2s = GENERATED_CONSONANTS.filter((consonant) => !SECOND_CONSONANT_BAN.has(consonant) && (!STOPS.has(consonant) || english.has(consonant)));
-  const roots: string[] = [];
-  for (const c1 of c1s) {
-    for (const c2 of c2s) {
-      for (const a of AGAZAN_VOWELS) {
-        for (const b of AGAZAN_VOWELS) {
-          for (const c of AGAZAN_VOWELS) {
-            roots.push(a + c1 + b + c2 + c);
-          }
-        }
-      }
-    }
-  }
-  return rankRoots(roots, cmu);
-}
-
 /** Every three-letter root, ranked by the pronunciation metric against `cmu`. */
 export function shortRootCandidates(cmu: string): string[] {
   const roots: string[] = [];
@@ -170,20 +134,6 @@ export function shortRootCandidates(cmu: string): string[] {
     }
   }
   return rankRoots(roots, cmu);
-}
-
-/**
- * Pronunciation-ranked roots for an English word: five-letter candidates first, then three-letter.
- * Looks the word up in CMU. No spelling fallback.
- */
-export function* agazanRootCandidates(input: string): Generator<string> {
-  const cmu = lookupPronunciation(input);
-  const seen = new Set<string>();
-  for (const root of [...longRootCandidates(cmu), ...shortRootCandidates(cmu)]) {
-    if (root.length > MAX_ROOT_LENGTH || seen.has(root)) continue;
-    seen.add(root);
-    yield root;
-  }
 }
 
 /**
@@ -261,34 +211,13 @@ export function letterDistribution(roots: string[]): LetterDistribution {
 }
 
 /**
- * Best Agazan root for an English word, from its CMU pronunciation.
- * Two syllables → VCV; three syllables → VCVCV.
+ * Best three-letter Agazan root for an English word, from its CMU pronunciation. A five-letter root
+ * takes its tail from a kind and shape (`convert-word -- <english> --kind …`, src/root-tails-place.ts).
  */
-export function toAgazanWord(input: string, syllables: number): string {
-  if (syllables !== 2 && syllables !== 3) {
-    throw new Error("Syllable count must be 2 or 3");
-  }
-  const cmu = lookupPronunciation(input);
-  const best = (syllables === 2 ? shortRootCandidates(cmu) : longRootCandidates(cmu))[0];
+export function toAgazanWord(input: string): string {
+  const best = shortRootCandidates(lookupPronunciation(input))[0];
   if (!best) {
     throw new Error(`Could not build an Agazan root for "${input}"`);
   }
   return best;
-}
-
-/**
- * Assign a unique Agazan root: the best free pronunciation candidate
- * (five-letter roots before three-letter ones).
- */
-export function toUniqueAgazanWord(input: string, usedRoots: Set<string>): string {
-  for (const candidate of agazanRootCandidates(input)) {
-    if (!usedRoots.has(candidate)) {
-      usedRoots.add(candidate);
-      return candidate;
-    }
-  }
-
-  throw new Error(
-    `Could not assign unique Agazan root for "${input}" within ${MAX_ROOT_LENGTH} letters`,
-  );
 }
