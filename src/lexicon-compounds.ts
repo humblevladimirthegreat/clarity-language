@@ -15,10 +15,14 @@ export const COMPOUND_HEADERS = [
 
 export type CompoundJoin = "l" | "m" | "n" | "r";
 
+/** A tail-suffix row has no join: `left + suffix`. */
+export type CompoundRowJoin = CompoundJoin | "";
+
 export type CompoundRow = {
   stem: string;
   left: string;
-  join: CompoundJoin;
+  join: CompoundRowJoin;
+  /** A published root, a two-letter extra-noun hook, or (with an empty join) a tail suffix. */
   right: string;
   concrete: string;
   abstract: string;
@@ -48,7 +52,7 @@ export function retieCompoundRows(
   const changes: CompoundRetieChange[] = [];
   const next = rows.map((row, index) => {
     const left = map.get(row.left) ?? row.left;
-    const right = isExtraNounHook(row.right) ? row.right : (map.get(row.right) ?? row.right);
+    const right = isExtraNounHook(row.right) || isTailSuffix(row.right) ? row.right : (map.get(row.right) ?? row.right);
     const stem = `${left}${row.join}${right}`;
     const rowNum = index + 2;
     if (left !== row.left) {
@@ -79,6 +83,23 @@ export function serializeCompoundCsv(rows: CompoundRow[]): string {
 
 const JOIN_LETTERS = new Set<string>(["l", "m", "n", "r"]);
 
+/**
+ * Tail-suffix heads: a kind consonant plus a job vowel (src/root-tails.ts). No `l` / `m` (the
+ * hook-compound clash), `n` (named rows have no job) or `r` (counting wants a specific head).
+ */
+const SUFFIX_CONSONANTS = new Set<string>(["z", "y", "b", "v", "h", "d", "w", "g"]);
+const SUFFIX_VOWELS = new Set<string>(["a", "o", "e", "u"]);
+
+/** A two-letter kind + job tail that heads a listed compound on a five-letter left root. */
+export function isTailSuffix(right: string): boolean {
+  return right.length === 2 && SUFFIX_CONSONANTS.has(right[0]!) && SUFFIX_VOWELS.has(right[1]!);
+}
+
+/** Two three-letter members: never a listed shape, since that stem is also five letters + suffix. */
+function isShortPair(left: string, right: string): boolean {
+  return left.length === 3 && right.length === 3;
+}
+
 /** Content roots are `V(CV)+` and not a bare single vowel (join / reviser shape). */
 export function isCompoundMemberRoot(root: string): boolean {
   return isAgebonRootShape(root) && root.length >= 3;
@@ -99,6 +120,7 @@ export function potentialCompoundSplits(
     const right = stem.slice(i + 1);
     if (!isCompoundMemberRoot(left) || !isRoot(left)) continue;
     if (!isExtraNounHook(right) && (!isCompoundMemberRoot(right) || !isRoot(right))) continue;
+    if (isShortPair(left, right)) continue;
     splits.push({ left, join: join as CompoundJoin, right });
   }
   return splits;
@@ -113,7 +135,7 @@ export function parseCompoundCsv(text: string): CompoundRow[] {
   return rows.map((row) => ({
     stem: row.stem ?? "",
     left: row.left ?? "",
-    join: (row.join ?? "") as CompoundJoin,
+    join: (row.join ?? "") as CompoundRowJoin,
     right: row.right ?? "",
     concrete: row.concrete ?? "",
     abstract: row.abstract ?? "",
@@ -122,7 +144,7 @@ export function parseCompoundCsv(text: string): CompoundRow[] {
   }));
 }
 
-/** All published-root splits `L + join + R` that equal `stem`. */
+/** All published-root splits `L + join + R` that equal `stem`, 3 + join + 3 included (the suffix lint needs it). */
 export function factorizationsForStem(
   stem: string,
   publishedRoots: ReadonlySet<string>,
@@ -171,7 +193,8 @@ export function validateCompoundRows(
     }
     seenStems.add(stem);
 
-    if (!JOIN_LETTERS.has(join)) {
+    const suffix = !join && isTailSuffix(right);
+    if (!JOIN_LETTERS.has(join) && !suffix) {
       errors.push({ row: rowNum, stem, reason: `join must be l, m, n, or r (got ${join || "(empty)"})` });
     }
 
@@ -192,7 +215,14 @@ export function validateCompoundRows(
     }
 
     const hookRight = isExtraNounHook(right);
-    if (hookRight) {
+    if (suffix) {
+      if (left.length !== 5) {
+        errors.push({ row: rowNum, stem, reason: `a tail suffix takes a five-letter left root (got ${left})` });
+      }
+      for (const f of factorizationsForStem(stem, publishedRoots)) {
+        errors.push({ row: rowNum, stem, reason: `suffix stem also reads ${f.left}+${f.join}+${f.right}` });
+      }
+    } else if (hookRight) {
       if (join !== "l" && join !== "m") {
         errors.push({
           row: rowNum,
@@ -207,13 +237,16 @@ export function validateCompoundRows(
       if (!isCompoundMemberRoot(right)) {
         errors.push({ row: rowNum, stem, reason: `right is not a content root: ${right}` });
       }
+      if (isShortPair(left, right)) {
+        errors.push({ row: rowNum, stem, reason: "3 + join + 3 is not a listed shape (use a tail suffix or a five-letter member)" });
+      }
     }
 
     if (publishedRoots.has(stem)) {
       errors.push({ row: rowNum, stem, reason: "stem is already a published simple root" });
     }
 
-    if (!hookRight) {
+    if (!hookRight && !suffix) {
       const factorizations = factorizationsForStem(stem, publishedRoots);
       if (factorizations.length === 0) {
         errors.push({ row: rowNum, stem, reason: "no legal published-root factorization" });

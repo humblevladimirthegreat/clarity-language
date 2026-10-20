@@ -367,7 +367,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   }
   if (family.kind === "x" && family.xFamily === "ability") {
     if (word.reading === "greeting") {
-      return { line: "greeting bid, not ability", href: "x-compounds.html#conversation-length" };
+      return { line: "greeting bid, not ability", href: "compounds.html#conversation-length" };
     }
     return { line: "ability, not sakes", href: "intention.html#ability" };
   }
@@ -387,16 +387,16 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     return { line: "hook compound", href: "hooks.html#hook-compounds" };
   }
   if (word.lexicalCompound) {
-    return { line: "lexical compound", href: "x-compounds.html#lexical-compounds" };
+    return { line: "lexical compound", href: "compounds.html#lexical-compounds" };
   }
   if (word.potentialCompounds?.length) {
-    return { line: "lexical compound (unlisted)", href: "x-compounds.html#lexical-compounds" };
+    return { line: "lexical compound (unlisted)", href: "compounds.html#lexical-compounds" };
   }
   if (family.kind === "x" && family.xFamily === "compound") {
-    return { line: "ordinary compound", href: "x-compounds.html#families-by-shape" };
+    return { line: "ordinary compound", href: "compounds.html#families-by-shape" };
   }
   if (family.kind === "x") {
-    return { line: "mid-word x family", href: "x-compounds.html#families-by-shape" };
+    return { line: "mid-word x family", href: "compounds.html#families-by-shape" };
   }
   if (family.kind === "joinMarker") {
     if (sharedRole === "scale" || sharedRole === "equative") {

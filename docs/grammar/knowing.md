@@ -1021,7 +1021,7 @@ The first sake word has no holder, so it is yours. The second is Uzozen's.
 
 Only the seven channels, MAY, and NOTIONAL take a holder: they are the ways you can have access to someone else's view. When they told you in their own words, a [cite](spans.md#writing) keeps their wording instead.
 
-**Compare with:** being upset **for** Uzozen is your own feeling about Uzozen's stake (the ON-BEHALF locus in [emotion compose](sakes.md#emotion-compose)); with a holder the feeling is Uzozen's. *On behalf of* Uzozen is [proxy](relations.md#proxy) (`hadem`). A `/b/` on [permission](sakes.md#permission) or [consent](sakes.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](x-compounds.md#lexical-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
+**Compare with:** being upset **for** Uzozen is your own feeling about Uzozen's stake (the ON-BEHALF locus in [emotion compose](sakes.md#emotion-compose)); with a holder the feeling is Uzozen's. *On behalf of* Uzozen is [proxy](relations.md#proxy) (`hadem`). A `/b/` on [permission](sakes.md#permission) or [consent](sakes.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](compounds.md#lexical-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
 
 ### Practice {#intermediate-practice}
 

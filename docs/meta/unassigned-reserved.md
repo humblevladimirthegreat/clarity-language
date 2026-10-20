@@ -134,7 +134,7 @@ Source: [hooks.md](../grammar/hooks.md#ranges), [sakes.md](../grammar/sakes.md#c
 
 ## Role compounds
 
-Source: [roles.md](../grammar/roles.md), [x-compounds.md](../grammar/x-compounds.md)
+Source: [roles.md](../grammar/roles.md), [compounds.md](../grammar/compounds.md)
 
 - **open:** a role compound on `/v/` / `/w/` / `/th/`. A role compound names a participant, and these slots take none: it fills `/z/` `/d/` `/b/` `/ɡ/`, sets a topic under `/x/`, and calls under `/y/`. Parser: `roleCompoundSlot`.
 - **closed (D-34):** a role compound on `/h/`.
@@ -254,7 +254,7 @@ Source: [sakes.md](../grammar/sakes.md)
 Source: [clause.md](../grammar/clause.md)
 
 - **open:** a `gl-` adjective with no noun after it (`zuzozen glubulel.`, `zuzozen dedavel glubulel vawebol.`). It describes the next noun, and there is none; an adjective on the noun before it is a plain `/ɡ/` word. Parser: `glNoNoun`.
-- **open:** lean **`l`** on any role letter but `/ɡ/`: `zl-` / `dl-` / `bl-` / `vl-` / `hl-` / `thl-` / `wl-`. No job: a noun modifying a noun is mid-word **`x`** ([x-compounds](../grammar/x-compounds.md#ordinary-compound-order)); an event root on `/ɡ/` or in `gl-` is already an act [in progress](../grammar/predication.md#in-progress); `/h/` and `/th/` already go anywhere; `/w/` already sits before its host.
+- **open:** lean **`l`** on any role letter but `/ɡ/`: `zl-` / `dl-` / `bl-` / `vl-` / `hl-` / `thl-` / `wl-`. No job: a noun modifying a noun is mid-word **`x`** ([compounds](../grammar/compounds.md#ordinary-compound-order)); an event root on `/ɡ/` or in `gl-` is already an act [in progress](../grammar/predication.md#in-progress); `/h/` and `/th/` already go anywhere; `/w/` already sits before its host.
 - **open:** `/w/` before `/z/`, `/d/`, `/b/`, or `/v/`. Not guessable: *very* on a verb could mean how intensely, how often, or how fully, and an `/h/` adverb says which (a degree word before a manner adverb); degree on a noun goes through an adjective.
 - **closed (D-22):** a hosted `/b/` after `/z/`, `/d/`, `/v/`, or `/w/`.
 - **closed (D-46):** a person in `/b/` after WANT or PLAN (`thohum bolazun`, `thamam bolazun`), and any `/b/` after DECISION (`thehum bolazun`, `thehum bral`). Someone else's want, plan or decision goes through a holder. Parser: `intentionHost`.

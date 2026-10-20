@@ -393,7 +393,7 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 
 ### Mid-word `x` families
 
-Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/sakes.md), keep the stance **and** the ending table (contact / prescription warrant / time horizon / changeability): `thulothom` → `th-competence-motive-any-term`, not `th-competence-th-motive`.
+Gloss each piece by **family** ([compounds.md](../grammar/compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/sakes.md), keep the stance **and** the ending table (contact / prescription warrant / time horizon / changeability): `thulothom` → `th-competence-motive-any-term`, not `th-competence-th-motive`.
 
 | Family | Example Agebon | Morph gloss |
 |--------|-----------------|-------------|
@@ -588,6 +588,6 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 - [word-endings.md](../grammar/word-endings.md) — **-l** / **-m** / **-n** / **-r**
 - [lexicon.md](../grammar/lexicon.md) — overlays and closed labels
 - [pronouns.md](../grammar/pronouns.md) — **-r** and special pronouns
-- [x-compounds.md](../grammar/x-compounds.md) — mid-word `x` families
+- [compounds.md](../grammar/compounds.md) — mid-word `x` families
 - [clause.md](../grammar/clause.md#role-letters) — role letters in a sentence
 - [sakes.md](../grammar/sakes.md) — need stances and endings (morph keeps them; loose free usually drops channel / standing / force / changeability)

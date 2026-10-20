@@ -321,7 +321,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.deepEqual(word.family, { kind: "content", roots: ["ululo"] });
   });
 
-  it("parses ordinary x-compound zazawaxululon (x-compounds.md)", () => {
+  it("parses ordinary x-compound zazawaxululon (compounds.md)", () => {
     const word = parseOk("zazawaxululon");
     assert.equal(word.pos, "z");
     assert.equal(word.ending, "n");
@@ -396,7 +396,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.equal(gist.ending, "rm");
   });
 
-  it("parses ordinary compound zuzuzuxogoven (x-compounds.md)", () => {
+  it("parses ordinary compound zuzuzuxogoven (compounds.md)", () => {
     const word = parseOk("zuzuzuxogoven");
     assert.deepEqual(word.family, {
       kind: "x",
@@ -406,7 +406,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     });
   });
 
-  it("parses three-root ordinary compound zuzuzuxogovexadedan (x-compounds.md)", () => {
+  it("parses three-root ordinary compound zuzuzuxogovexadedan (compounds.md)", () => {
     const word = parseOk("zuzuzuxogovexadedan");
     assert.deepEqual(word.family, {
       kind: "x",

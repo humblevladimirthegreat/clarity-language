@@ -258,53 +258,6 @@ Every distinction Agebon makes is spelled in its letters, so a line sung on a si
 | `&` | Stressed and slowed | Held for its full length |
 | `;` | Soft, gentle | Smooth and connected, softer |
 
-### Root tails {#root-tails}
-
-A five-letter root ends in a **tail**, its last two letters, that hints at what it names. The second consonant says what **kind** of thing the root's concrete sense is, and the last vowel says what **job** it does. The first three letters are what keep a root apart from others of the same kind.
-
-The tail is a memory aid, not grammar. Nothing in a sentence reads it, and you never build a word from it. It just means that if you know what a thing is, you already know two letters of its root, and an unknown word in a text still tells you roughly what it names. Three-letter roots have no tail.
-
-Each letter reuses a job it already has somewhere in the grammar:
-
-| Second consonant | Kind | Example | Why this letter |
-|------------------|------|---------|-----------------|
-| `z` | creatures: animals, microbes | `agozo` *cat* | [`/z/`](clause.md#role-letters) is the one who acts |
-| `y` | people: persons, kin, roles, and what only a person does | `eboye` *baby* | [`/y/` + name](speech-moves.md#vocative) calls someone |
-| `m` | mind and feeling: faces, emotions, mental states | `evumu` *fear* | [**-m**](word-endings.md#abstract-m) is the abstract ending |
-| `b` | the body and what goes on it: parts, clothes, what you carry, medicine | `aheba` *hand* | [`/b/`](clause.md#role-letters) is the bolted-on piece |
-| `v` | doing, playing and moving: actions, sports, games, toys, vehicles | `aruve` *run* | [`/v/`](clause.md#role-letters) is the action |
-| `h` | places and fixtures: buildings, landscapes, rooms, headings | `aheha` *house* | [`/h/`](clause.md#role-letters) is where |
-| `l` | nature and raw stuff: plants, weather, sky, materials, colors | `adale` *tree* | [**-l**](word-endings.md#concrete-l) is the concrete ending |
-| `d` | food and drink, with dishes and kitchen gear | `oledo` *apple* | [`/d/`](clause.md#role-letters) is what is done to (eaten) |
-| `w` | tools and things you use | `anewu` *knife* | [`/w/`](clause.md#role-letters) is *with* |
-| `g` | signs, marks and writing | `awugu` *warning* | [`/ɡ/`](clause.md#role-letters) is a grade, a mark on something |
-| `r` | counting, time, money and rhythm | `agore` *clock* | `r` after a role letter starts a [number](numbers.md#counts) |
-| `n` | named places: countries | `azabana` *Japan* | [**-n**](word-endings.md#proper-name--n) is the name ending |
-
-The last vowel is the job, with the same vowel series as [joins](joins.md#beginner): **a** add, **o** one, **e** order, **u** undo.
-
-| Last vowel | Job | Examples |
-|------------|-----|----------|
-| `a` | holds or gathers: containers, groups, masses, what you go inside; or hollow, like a bowl | `abowa` *basket*, `oruda` *rice*, `uneza` *ant* (it lives in a colony) |
-| `o` | one whole thing: round or compact, like a ball | `agozo` *cat*, `oledo` *apple* |
-| `e` | order: ranked, in sequence, a stage or cycle, a path you travel or are led along; or long, like a road | `orahe` *road*, `agore` *clock*, `aruve` *run*, `urule` *rainbow* |
-| `u` | takes away or works against: cuts, removes, harms, stings, forbids; or sharp, like a blade | `anewu` *knife*, `ezozu` *snake*, `evumu` *fear* |
-
-When more than one job fits, try **u** first, then **a**, then **e**. A knife is one tool, but it cuts, so its root ends in `u`. When no job fits, the thing's outline decides: hollow `a`, long `e`, sharp `u`, round or compact `o`. A banana ends in `e` and an apple in `o`. For a feeling, it's which way the feeling points (toward others `a`, inward `o`); for an action, how it unfolds (with others `a`, along a course `e`). A country's last vowel is free, since a country has no job.
-
-In every kind but feelings, the **middle vowel** usually says how big the thing is:
-
-| Middle vowel | Size | Examples |
-|--------------|------|----------|
-| `a` | about your size or bigger | whale, ship, bed, bicycle |
-| `o` | between your hand and you | dog, chair, guitar |
-| `e` | no bigger than your hand | ant, key, apple, phone |
-| `u` | nothing you could measure: a stuff, an act, a symbol, a time | rice, red, run, arrow, night |
-
-This is a hint, not a rule: a few roots take another vowel to stay apart from a neighbor. Feelings have no size, so a feeling's middle vowel carries no meaning.
-
-A [compound](x-compounds.md#lexical-compounds) ends in its head root, so it keeps the head's tail.
-
 ### Thinking sounds {#thinking-sounds}
 
 When you need a moment in the middle of speaking, English fills the gap with *um* or *uh*. Agebon has two sounds for that gap, and each tells the listener what would help. Neither is a word, and neither is written.
@@ -322,6 +275,7 @@ Do not hold `u`: it is the undo vowel, so a held `u` can sound like a denial. A 
 
 - Citation (root + ending, no sentence): [word-endings.md](word-endings.md)
 - Role letters in a clause: [clause.md](clause.md#role-letters)
+- Root tails (what a five-letter root's last two letters hint at): [compounds.md](compounds.md#root-tails)
 - Numbers (role letter + `r` exception and [digit syllables](numbers.md#counts)): [numbers.md](numbers.md)
 - Mention spans (letter as form in a clause): [spans.md](spans.md)
-- Mid-word `x` and `th`: [x-compounds.md](x-compounds.md)
+- Mid-word `x` and `th`: [compounds.md](compounds.md)

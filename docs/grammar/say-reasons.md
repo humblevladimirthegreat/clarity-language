@@ -410,7 +410,7 @@ An argument has three parts, and each has its own slot. The **link** between pre
 
 **Compare with:** *it obviously follows* from strong clues (*obviously, it rained*) is CLUES (`thunel`), not a deduction: the clues make it likely, not certain. *Because* in the sense of what made it happen is **`thavem`** ([factivity](#factivity)).
 
-To talk **about** an argument rather than make one, use the dictionary words. Each is *reason* (`ebobo`, as in `zebobom` *the faculty of reason*) joined to a second root ([words you look up](x-compounds.md#lexical-compounds)).
+To talk **about** an argument rather than make one, use the dictionary words. Each is *reason* (`ebobo`, as in `zebobom` *the faculty of reason*) joined to a second root ([words you look up](compounds.md#lexical-compounds)).
 
 | English | Agebon | Built from |
 |---------|--------|------------|

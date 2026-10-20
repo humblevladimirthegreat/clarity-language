@@ -1,12 +1,12 @@
 # Numeric derivation {#numeric-derivation-page}
 
-To name a kind of thing by a number idea, join a [number](numbers.md) stem onto a content root, the way a [lexical compound](x-compounds.md#lexical-compounds) joins two roots: **-l** after the root's everyday sense, **-m** after its abstract sense. The number then describes the kind itself (its essence, its parts, its rank, its catalog code) instead of counting anything in the sentence. (cue: join then number **r**: **`lr`** / **`mr`**)
+To name a kind of thing by a number idea, join a [number](numbers.md) stem onto a content root, the way a [lexical compound](compounds.md#lexical-compounds) joins two roots: **-l** after the root's everyday sense, **-m** after its abstract sense. The number then describes the kind itself (its essence, its parts, its rank, its catalog code) instead of counting anything in the sentence. (cue: join then number **r**: **`lr`** / **`mr`**)
 
 ## Advanced {#advanced}
 
 ### Numeric derivation (`ROOT` × number stem) {#numeric-derivation}
 
-English often names a *kind of thing* with a number idea baked in (*essence of love*, *a three-part dialogue*, *specimen #1*). In Agebon you write the content root, a [lexical-compound](x-compounds.md#lexical-compounds) join (**-l** / **-m**), then a number stem. That stem has no role letter and no ending of its own; the role letter and one [word ending](word-endings.md) belong to the **whole derived word**. You can then use that word in any role: the number describes the kind, not how many there are. (cue: same glue as *bedroom*, right half is a number)
+English often names a *kind of thing* with a number idea baked in (*essence of love*, *a three-part dialogue*, *specimen #1*). In Agebon you write the content root, a [lexical-compound](compounds.md#lexical-compounds) join (**-l** / **-m**), then a number stem. That stem has no role letter and no ending of its own; the role letter and one [word ending](word-endings.md) belong to the **whole derived word**. You can then use that word in any role: the number describes the kind, not how many there are. (cue: same glue as *bedroom*, right half is a number)
 
 > `zulamalrabal.`
 >
@@ -22,7 +22,7 @@ PoS + ROOT + {l|m} + NUM + {-l|-m|-n|-r}
 |-------|-----|-----|
 | **PoS** | Ordinary slot for the derived word | |
 | **ROOT** | Any content root (`V(CV)+`) | |
-| **join** | Same letter as a [lexical compound](x-compounds.md#lexical-compounds): **-l** the root’s everyday sense, **-m** its abstract sense | `obaholuraha` *bedroom* uses **-l** |
+| **join** | Same letter as a [lexical compound](compounds.md#lexical-compounds): **-l** the root’s everyday sense, **-m** its abstract sense | `obaholuraha` *bedroom* uses **-l** |
 | **NUM** | Number stem: same marker / digits / digitless-exp body as [numbers.md](numbers.md), without a role letter and without its own ending. Tables below use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …). Actual words are always spelled CV (`raba`, `roba`, `rawoba`, …): [writing style](numbers.md#writing-style-numeric-vs-spelled) | spoken stem starts with **`r`**, so you hear **`lr`** or **`mr`** |
 | **Ending** | Word ending on the **whole word**, after the number: **-l** the kind itself, **-m** approximately that kind (*roughly a three-part dialogue*), **-n** a name, **-r** a resume. The join letter, not this ending, says whether the root is in its everyday or abstract sense. | |
 
@@ -49,7 +49,7 @@ The digitless number words (plus or minus infinity, first or last place, *more t
 | **`ROOTl+e`** | essence / absolute / pure type of ROOT | `zulamalrabal`: *essence of love* | **+e** = plus with no cap: nothing left to add |
 | **`ROOTl+e-`** | grain / seed / infinitesimal of ROOT | `zulamalrabul`: *grain of love* | **+e-** = that same plus, at the tiny end: a speck |
 | **`ROOTl-e`** | void of / absolute anti-ROOT | `zevumulrubal`: *void of fear* | **-e** = minus with no floor: none of the kind |
-| **`ROOTl-e-`** | **quasi-ROOT**: the shape of ROOT without treating it as fully real (English **`quasi-`**); **`ROOTl-e-1`** / **`ROOTl-e-2`** = [quasi-N](#quasi-n) | `zanalobelrubul`: *quasi-friend*; `zedamrubudul`: *quasi-pair* | **-e-** = imaginary amount: the outline, not the ledger |
+| **`ROOTl-e-`** | **quasi-ROOT**: the shape of ROOT without treating it as fully real (English **`quasi-`**); **`ROOTl-e-1`** / **`ROOTl-e-2`** = [quasi-N](#quasi-n) | `zahuyayolrubul`: *quasi-friend*; `zedamrubudul`: *quasi-pair* | **-e-** = imaginary amount: the outline, not the ledger |
 | **`ROOTl#e-`** | origin / prototype / onset-form of ROOT | `zulamalrebul`: *love in its beginning form* | **#e-** = start-place: the first rung |
 | **`ROOTl#e`** | telos / culmination / final form of ROOT | `zozemrebal`: *story’s final form* | **#e** = last place: where the kind finishes |
 | **`ROOTl+`** | poly- / multi-ROOT (unspecified >1) | `zehohamral`: *multi-faith* | **+** = more than one, how many unnamed |
@@ -62,7 +62,7 @@ The digitless number words (plus or minus infinity, first or last place, *more t
 
 English *quasi-* says something has the **shape or role** of a kind without counting as the real thing (*quasi-friend*, *quasi-official*). Spell that as **`ROOTl-e-`**: the kind’s outline, not a full claim that it is that kind. Change only the role letter to use it as a noun, verb, adjective, and so on.
 
-> `zuhelan ganalobelrubul.`
+> `zuhelan gahuyayolrubul.`
 >
 > z-Uhelan | g-friend-l-quasi
 >
@@ -70,12 +70,12 @@ English *quasi-* says something has the **shape or role** of a kind without coun
 
 | PoS | `…l-e-` | Examples |
 |-----|---------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | a quasi-entity | `zanalobelrubul`: *a quasi-friend*; `debamumrubul`: *a quasi-melancholy* |
-| **`/v/`** (verb) | to treat as quasi- / as-if that kind | `vanalobelrubul`: *to quasi-befriend* / treat as friend-shaped |
+| **`/z/` `/d/` `/b/`** (noun) | a quasi-entity | `zahuyayolrubul`: *a quasi-friend*; `debamumrubul`: *a quasi-melancholy* |
+| **`/v/`** (verb) | to treat as quasi- / as-if that kind | `vahuyayolrubul`: *to quasi-befriend* / treat as friend-shaped |
 | **`/ɡ/`** (adjective) | *quasi-* (ascribed) | `gezazomrubul`: *quasi-official* |
 | **`/h/`** (adverb) | under quasi- framing | `hezazomrubul`: *quasi-officially* |
 | **`/w/`** (extra detail) | host graded as quasi- | `webamumrubul gebamum`: *quasi-melancholy* |
-| **`/y/`** (interjection) | *Quasi-!* / *As if that kind!* | `yanalobelrubul` |
+| **`/y/`** (interjection) | *Quasi-!* / *As if that kind!* | `yahuyayolrubul` |
 
 **Compare with:** with no root, **`grubul`** is the [just short](numbers.md#just-short) amount, and **`vrubul`** / **`thrubul`** / **`yrubul`** / **`xrubul`** are that number as a verb, stance, interjection, or discourse word. After a root, **`ROOTl-e-`** makes *quasi-* that kind.
 
@@ -407,4 +407,4 @@ z-Uhelan | d-fire-l-telos | v-see
 
 - Free counts / ranks / number as verb / adverb / interjection / discourse: [numbers.md](numbers.md)
 - Labels, time, measure, ranges, percent: [numbers-applied.md](numbers-applied.md)
-- Lexical-compound join (**-l** / **-m**): [x-compounds.md](x-compounds.md#lexical-compounds)
+- Lexical-compound join (**-l** / **-m**): [compounds.md](compounds.md#lexical-compounds)

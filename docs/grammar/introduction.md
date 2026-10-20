@@ -30,7 +30,7 @@ English *it* and *they* can point to almost anything mentioned earlier. In Agebo
 
 ### Semantic {#semantic}
 
-Each dictionary entry has one sense. When a meaning is related to a word but belongs to a different area of life, it gets its own compound instead of becoming a second sense: the area first, then the kind. For example, *love* in the *crush* sense is its own compound, not a second meaning of *love*. The [compound pages](x-compounds.md) teach how to spell these.
+Each dictionary entry has one sense. When a meaning is related to a word but belongs to a different area of life, it gets its own compound instead of becoming a second sense: the area first, then the kind. For example, *love* in the *crush* sense is its own compound, not a second meaning of *love*. The [compound pages](compounds.md) teach how to spell these.
 
 ### Tools those goals make possible
 <a id="tools"></a>

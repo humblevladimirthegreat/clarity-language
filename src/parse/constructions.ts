@@ -196,7 +196,7 @@ export const TOKEN_CONSTRUCTIONS: Record<TokenBranch, ConstructionEntry> = {
   joinAct: { anchor: "join-across-roles.md#join-act-verbs", summary: "join-act verb" },
   joinRelationG: { anchor: "join-across-roles.md#join-relations", summary: "join-relation on /ɡ/" },
   joinRelationH: { anchor: "join-across-roles.md#join-relations", summary: "join-relation on /h/ or /th/" },
-  greeting: { anchor: "x-compounds.md#conversation-length", summary: "conversation-length bid (citation + x + vowel + -n)" },
+  greeting: { anchor: "compounds.md#conversation-length", summary: "conversation-length bid (citation + x + vowel + -n)" },
   polar: { anchor: "questions.md#polar-stance", summary: "polar stance particle" },
   force: { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "speech-act word" },
   yVocative: { anchor: "speech-moves.md#vocative", summary: "/y/ name (-n), named span, or resume (-r): a vocative" },
@@ -244,9 +244,9 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
     reader:
       "`th-TAG-X` (a stance tag joined to a person X, or to a `←` pointer): the sentence gives that person's view, and the tag says how the speaker knows it. `th-CLUES-X` = I gather X thinks …; `th-MAY-X` = maybe X thinks …. Every other `th-` word in that sentence (a want, plan, decision, or feeling) is then X's, not the speaker's: `th-WANT-unstated | th-CLUES-X` = I gather X wants …; a feeling word with `th-CLUES-listener` = it sounds like you feel that.",
   },
-  ability: { anchor: "x-compounds.md#conversation-length", summary: "ability compound" },
+  ability: { anchor: "compounds.md#conversation-length", summary: "ability compound" },
   numeric: { anchor: "numeric-derivation.md#numeric-derivation", summary: "numeric derivation" },
-  compound: { anchor: "x-compounds.md#two-roots-one-word", summary: "ordinary x compound" },
+  compound: { anchor: "compounds.md#two-roots-one-word", summary: "ordinary x compound" },
 };
 
 /** Readings only a closed overlay produces; those words trace `overlay.*` instead. */
@@ -262,7 +262,7 @@ export const WORD_READING_CONSTRUCTIONS: Record<Exclude<LexReading, OverlayOnlyR
   sake: { anchor: "sakes.md#met", summary: "sake reading" },
   ability: { anchor: "intention.md#ability", summary: "ability reading" },
   greeting: {
-    anchor: "x-compounds.md#conversation-length",
+    anchor: "compounds.md#conversation-length",
     summary: "conversation-length bid",
     reader:
       "A name joined to `-presence`, `-minutes`, `-ask`, or `-passing` is a hello (`SELF-…`) or a call (`y-X-…`) that also says how long the speaker can talk: `-presence` = I have time, we can stay; `-minutes` = I have a few minutes; `-ask` = I have one question or comment; `-passing` = just saying hi, not starting a talk. At a goodbye: leaving soon, about to leave, leaving now. It is the speaker's own time, a statement, never a question to the other person.",

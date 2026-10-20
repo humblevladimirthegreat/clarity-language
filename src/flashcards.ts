@@ -102,7 +102,7 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoot
     source: "compound",
     key: r.stem,
     guid: noteGuid("compound", r.stem),
-    fields: { ...empty, front: r.stem, concrete: r.concrete, abstract: r.abstract, parts: `${part(r.left)} + ${r.join} + ${part(r.right)}`, mnemonic: r.mnemonic },
+    fields: { ...empty, front: r.stem, concrete: r.concrete, abstract: r.abstract, parts: r.join ? `${part(r.left)} + ${r.join} + ${part(r.right)}` : `${part(r.left)} + ${r.right}`, mnemonic: r.mnemonic },
     tags: ["agebon::compound", ...coreTags("compound", r.stem, r.core)],
     core: r.core ?? "",
   }));

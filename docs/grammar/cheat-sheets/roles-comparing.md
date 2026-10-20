@@ -7,7 +7,7 @@ outline: false
 
 # Roles and comparing cheat sheet {#roles-comparing-cheat-sheet}
 
-A quick look at [role compounds](../roles.md), [mid-word `x`](../x-compounds.md), and [comparatives](../comparatives.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [role compounds](../roles.md), [mid-word `x`](../compounds.md), and [comparatives](../comparatives.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## Naming a part of an event {#roles}
 
@@ -132,11 +132,11 @@ After the role letter, look at both sides of the **first** **`x`**. A normal roo
 <!-- cheat-sheet: roles-comparing -->
 | Left of **`x`** | Right of **`x`** | Reading | Example | Stage |
 |-----------------|------------------|---------|---------|-------|
-| [full root](../x-compounds.md#families-by-shape) | full root | one ordinary compound | `zubedaxuyudal` *peanut butter*; `zohuxalowen` (a hyphenated name) | B |
-| [role vowel](../x-compounds.md#families-by-shape) | **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** | role pointer | `zaxar` *they*; `zaxal` *another one*; `zaxam` *what they did* | B |
-| [role vowel](../x-compounds.md#families-by-shape) | a longer root | role compound | `zaxuduyel` *someone who teaches* | B |
-| [name](../x-compounds.md#conversation-length) | a single vowel, then **-n** | conversation length | *Uzozen, I have time* | I |
-| [longer root](../x-compounds.md#families-by-shape) | a single vowel | [ability](../intention.md#ability) | *can't sing right now* | I |
+| [full root](../compounds.md#families-by-shape) | full root | one ordinary compound | `zubedaxuyudal` *peanut butter*; `zohuxalowen` (a hyphenated name) | B |
+| [role vowel](../compounds.md#families-by-shape) | **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** | role pointer | `zaxar` *they*; `zaxal` *another one*; `zaxam` *what they did* | B |
+| [role vowel](../compounds.md#families-by-shape) | a longer root | role compound | `zaxuduyel` *someone who teaches* | B |
+| [name](../compounds.md#conversation-length) | a single vowel, then **-n** | conversation length | *Uzozen, I have time* | I |
+| [longer root](../compounds.md#families-by-shape) | a single vowel | [ability](../intention.md#ability) | *can't sing right now* | I |
 
 Mid-word **`th`** is another family: a sake root and a vowel (`gulothal`), any other root and a vowel ([label scope](../predication.md#label-scope)), or a direction root and a facing person (`gowuhethuzozen`). After a sake root, root-shaped letters are always the emotion tail.
 
@@ -145,19 +145,19 @@ Mid-word **`th`** is another family: a sake root and a vowel (`gulothal`), any o
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [two words](../x-compounds.md#compound-vs-separate) | two things, or a property marked another way | `zehowol zerewol zam` *a hammer and a wrench*; `zudozol gubulel` *a blue dog* | B |
-| [**`x`** in the middle](../x-compounds.md#compound-vs-separate) | one thing; both roots audible | `gagomaxulamal` *in love* (the crush kind); `zubedaxuyudal` *peanut butter*; `zuzozexolazun` (one person) | B |
-| [dictionary word](../x-compounds.md#compound-vs-separate) | one familiar kind, one entry | `zobaholurahal` *bedroom*; `zezalal` *sunflower* | B |
+| [two words](../compounds.md#compound-vs-separate) | two things, or a property marked another way | `zehowol zerewol zam` *a hammer and a wrench*; `zudozol gubulel` *a blue dog* | B |
+| [**`x`** in the middle](../compounds.md#compound-vs-separate) | one thing; both roots audible | `gagomaxulamal` *in love* (the crush kind); `zubedaxuyudal` *peanut butter*; `zuzozexolazun` (one person) | B |
+| [dictionary word](../compounds.md#compound-vs-separate) | one familiar kind, one entry | `zobaholurahal` *bedroom*; `zezalal` *sunflower* | B |
 
 A dictionary compound joins its two roots with the left root's ending (**-l** everyday, **-m** abstract), never **`x`**. If the pairing is not listed, glue with **`x`** or use two words.
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | English | Stage |
 |--------|---------|-------|
-| [`zobaholurahal`](../x-compounds.md#lexical-compounds) | *bedroom* | B |
-| [`zoyelaboral`](../x-compounds.md#lexical-compounds) | *doorbell* | B |
-| [`zanalobel`](../x-compounds.md#lexical-compounds) | *friend* | B |
-| [`zerulalogobal`](../x-compounds.md#lexical-compounds) | *raincoat* | B |
+| [`zobaholurahal`](../compounds.md#lexical-compounds) | *bedroom* | B |
+| [`zoyelaboral`](../compounds.md#lexical-compounds) | *doorbell* | B |
+| [`zuzahalugul`](../compounds.md#lexical-compounds) | *textbook* | B |
+| [`zerulalogobal`](../compounds.md#lexical-compounds) | *raincoat* | B |
 
 More pieces: keep English order in one word, last root the kind (`zugudaxududaxuwolan` *Coffee-Tea-Water*, one named shop).
 
@@ -168,17 +168,17 @@ Name + **`x`** + one vowel + **-n**, on a greeting or a call. At arrival it says
 <!-- cheat-sheet: roles-comparing -->
 | Form | At arrival | At departure | Stage |
 |------|------------|--------------|-------|
-| [`SELFxan`](../x-compounds.md#conversation-length) | open-ended: *we can stay* | none | I |
-| [`SELFxen`](../x-compounds.md#conversation-length) | a few minutes | leaving soon | I |
-| [`SELFxon`](../x-compounds.md#conversation-length) | one slot: *one ask or comment* | about to leave | I |
-| [`SELFxun`](../x-compounds.md#conversation-length) | passing | leaving right now | I |
+| [`SELFxan`](../compounds.md#conversation-length) | open-ended: *we can stay* | none | I |
+| [`SELFxen`](../compounds.md#conversation-length) | a few minutes | leaving soon | I |
+| [`SELFxon`](../compounds.md#conversation-length) | one slot: *one ask or comment* | about to leave | I |
+| [`SELFxun`](../compounds.md#conversation-length) | passing | leaving right now | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Arriving](../x-compounds.md#conversation-length) | `SELFxan.` | *I have time; we can stay.* | I |
-| [Calling with a bid](../x-compounds.md#conversation-length) | `yolazuxen.` | *Olazun, I have a few minutes.* | I |
-| [The other bid](../x-compounds.md#conversation-length) | `olazuxon.` | *Olazun here. I only have time for one thing.* | I |
-| [Leaving soon](../x-compounds.md#conversation-length) | `SELFxen.` | *I'm leaving soon.* | I |
+| [Arriving](../compounds.md#conversation-length) | `SELFxan.` | *I have time; we can stay.* | I |
+| [Calling with a bid](../compounds.md#conversation-length) | `yolazuxen.` | *Olazun, I have a few minutes.* | I |
+| [The other bid](../compounds.md#conversation-length) | `olazuxon.` | *Olazun here. I only have time for one thing.* | I |
+| [Leaving soon](../compounds.md#conversation-length) | `SELFxen.` | *I'm leaving soon.* | I |
 
 ## More, as much, less {#comparing}
 
@@ -333,4 +333,4 @@ English *many* and *often* rank against an unstated baseline. Agebon names the b
 | `daexarayel` *a writing tool* ([a compound](../roles.md#instrument)) | | `ael` *using* ([a hook on the clause](../hooks.md#extra-noun)) |
 | `gowuhel` *west* ([compass](../roles.md#endings-and-resume)) | | `gowuhethuzozen` *Uzozen's left* ([a face](../roles.md#endings-and-resume)) |
 | `gowuhethuzozen badalel` *left of the tree, from Uzozen's view* ([a facing person](../roles.md#viewpoint-vs-landmark)) | | `gowuhethol bahehal` *on the house's left* ([the landmark's own front](../roles.md#landmark-facing)) |
-| `zobaholurahal` *bedroom* ([a dictionary word](../x-compounds.md#lexical-compounds)) | | `zubedaxuyudal` *peanut butter* ([glued with `x`](../x-compounds.md#compound-vs-separate)) |
+| `zobaholurahal` *bedroom* ([a dictionary word](../compounds.md#lexical-compounds)) | | `zubedaxuyudal` *peanut butter* ([glued with `x`](../compounds.md#compound-vs-separate)) |

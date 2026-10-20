@@ -11,7 +11,7 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 
 1. **Library-owned string and clause structure** — morphology, numbers, writing atoms, joins, spans, utterance framing.
 2. **Thin custom layer** — lexicon/overlay classification, token adapters, AST assembly, orchestration, resolve.
-3. **Doc sync** — mid-word **`x`** rule order mirrors [x-compounds.md](../grammar/x-compounds.md); number stems mirror [numbers.md](../grammar/numbers.md); sentence fences mirror [joins.md](../grammar/joins.md) / [spans.md](../grammar/spans.md) / [clause.md](../grammar/clause.md) / [dependents.md](../grammar/dependents.md).
+3. **Doc sync** — mid-word **`x`** rule order mirrors [compounds.md](../grammar/compounds.md); number stems mirror [numbers.md](../grammar/numbers.md); sentence fences mirror [joins.md](../grammar/joins.md) / [spans.md](../grammar/spans.md) / [clause.md](../grammar/clause.md) / [dependents.md](../grammar/dependents.md).
 4. **Testable stages** — morph fixtures, classify fixtures, sentence fixtures, and resolve fixtures fail independently.
 5. **No design authority creep** — if a parse fork is not in the docs, fix the docs or reject the input; do not paper over with backtracking across stages.
 
@@ -26,7 +26,7 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 
 | Layer | Library | Role |
 |-------|---------|------|
-| Word morph, number stems, writing forms | **[Peggy](https://peggyjs.org/)** | Ordered choice matches the [x-compounds decision order](../grammar/x-compounds.md#decision-order); generates JS + `.d.ts` at build time |
+| Word morph, number stems, writing forms | **[Peggy](https://peggyjs.org/)** | Ordered choice matches the [compounds decision order](../grammar/compounds.md#decision-order); generates JS + `.d.ts` at build time |
 | Sentence / joins / spans / stand-ins / framing | **[Chevrotain](https://chevrotain.io/)** | Grammar as TS; CST → sentence AST; operates on **typed word tokens**, not raw characters |
 | Overlays and open roots | CSV → `Map` | [`lexicon-overlays.csv`](../../data/lexicon-overlays.csv), [`lexicon-published.csv`](../../data/lexicon-published.csv), [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv) — classification, not parsing |
 | Anaphor / question / SHARED resolve | [`src/parse/resolve.ts`](../../src/parse/resolve.ts) | Discourse over a finished AST |
@@ -97,7 +97,7 @@ Semantic actions build a discriminated `MorphWord` only. **No lexicon calls insi
 
 1. Overlay hit on `(sense_form, pos)` → closed special vocabulary reading
 2. Else already-classified number stem → stay number
-3. Else value/ability vs [conversation length](../grammar/x-compounds.md#conversation-length) (named citation or `/y/` + **-n**) vs published root vs [hook compound](../grammar/hooks.md#hook-compounds) (citation + extra-noun hook) vs lexical-compound stem
+3. Else value/ability vs [conversation length](../grammar/compounds.md#conversation-length) (named citation or `/y/` + **-n**) vs published root vs [hook compound](../grammar/hooks.md#hook-compounds) (citation + extra-noun hook) vs lexical-compound stem
 4. Else unknown / foreign payload
 
 This is where join-act vs soft clause **-n**, mood vs manner, value vs ability, etc. become **readings** without re-parsing spelling.
@@ -234,7 +234,7 @@ The docs site bundles the parser and lexicon search through Vite (`@parse-browse
 
 **Shipped**
 
-- Peggy word grammar covers orthography, numbers (writing + speech), and [x-compounds](../grammar/x-compounds.md) decision order.
+- Peggy word grammar covers orthography, numbers (writing + speech), and [compounds](../grammar/compounds.md) decision order.
 - `classify` is table-driven from the lexicon CSVs. Overlay **`kind`** / **`gloss`** live on overlays only ([kinds](#overlay-kinds)).
 - Chevrotain sentence grammar covers framing, right-close joins, islands, and **stand-in** dependents.
 - Public `parse(text)` returns a typed AST plus `resolve`; fixture tests drawn from `docs/grammar/`.
@@ -265,7 +265,7 @@ The docs site bundles the parser and lexicon search through Vite (`@parse-browse
 | Clause grammar / `/y/` framing | [clause.md](../grammar/clause.md) |
 | Dependents / `/x/` continue / stand-ins | [dependents.md](../grammar/dependents.md) |
 | Hosted relations | [relations.md](../grammar/relations.md) |
-| Mid-word **`x`** families | [x-compounds.md](../grammar/x-compounds.md) |
+| Mid-word **`x`** families | [compounds.md](../grammar/compounds.md) |
 | Numbers | [numbers.md](../grammar/numbers.md) |
 | Joins | [joins.md](../grammar/joins.md) |
 | Spans | [spans.md](../grammar/spans.md) |

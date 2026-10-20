@@ -19,7 +19,7 @@ import { useLearnerName } from '../composables/useLearnerName'
 
 const DEBOUNCE_MS = 100
 /** Every root's tail links to the section that explains it. */
-const tailsHref = withBase('/phonology.html#root-tails')
+const tailsHref = withBase('/compounds.html#root-tails')
 
 const query = ref('')
 const status = ref<'loading' | 'ready' | 'error'>('loading')

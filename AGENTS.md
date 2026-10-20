@@ -17,7 +17,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `why-agebon.md` | Psychological purpose, limits, learner tour. Site home. |
 | `introduction.md` | Name, design goals, learning path. |
 | `clause.md` | **Source of truth** for one-clause grammar: role letters, default order, hosting, chaining. Other docs own their subsystems. |
-| `phonology.md` | Phonology, phonotactics, letter names, root tails. |
+| `phonology.md` | Phonology, phonotactics, letter names. |
 | `word-endings.md` | Word endings, proper names, titled phrases, citation forms, greetings. |
 | `pronouns.md` | Whole-stem resume, role pointers, tag, special, generic, and topic pronouns; the discourse topic. |
 | `plurality.md` | Plural, associative, address sets, clusivity, collectives. |
@@ -36,7 +36,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `intention.md` | Plan, decision, try / fallback, ability / incapability. |
 | `knowing.md` | MAY, evidentiality and evidence strength, forecasts, residue / former, notional, universality. |
 | `roles.md` | Role compounds, viewpoint laterals, landmark facing, gravity. |
-| `x-compounds.md` | Mid-word `x` families and the mid-word `th` seam, conversation length. |
+| `compounds.md` | Mid-word `x` families and the mid-word `th` seam, dictionary compounds, conversation length, root tails, tail suffixes. |
 | `spans.md` | Span fences, asides, scope islands. |
 | `numbers.md` | Numerals, digitless forms, exponents, stance numbers, group separator, writing style. |
 | `numbers-applied.md` | Digit strings, time and date, ranges, measure phrases. |

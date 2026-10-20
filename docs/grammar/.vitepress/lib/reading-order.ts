@@ -22,7 +22,7 @@ export const readingOrder = [
   { text: 'Sakes', link: '/sakes' },
   { text: 'Knowing', link: '/knowing' },
   { text: 'Role compounds', link: '/roles' },
-  { text: 'x-compounds', link: '/x-compounds' },
+  { text: 'Compounds', link: '/compounds' },
   { text: 'Intention', link: '/intention' },
   { text: 'Join across roles', link: '/join-across-roles' },
   { text: 'Numbers in use', link: '/numbers-applied' },

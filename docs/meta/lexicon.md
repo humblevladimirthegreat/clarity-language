@@ -18,7 +18,7 @@ A hand-picked spelling bypasses the checks that placement runs. Placement:
 
 - keeps a row's root length, and gives a new row three letters only when it is overlay-backed ([root length](#root-length))
 - builds a five-letter root's last two letters from the row's `kind` and `shape` ([root tails](#root-tails)), and picks its first three letters to keep same-kind roots apart ([onset](#onset))
-- skips roots already held by other rows and stems used in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv), and any root that would give a listed or hook compound a second split ([two seams](#two-seams)). A new three-letter root also clears the hook and holder checks against the five-letter roots that stay put; five-letter rows placed in the same run are checked against the new three-letter spellings.
+- skips roots already held by other rows and stems used in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv), and any root that would give a listed or hook compound a second split ([seams](#seams)). A new three-letter root also clears the hook and holder checks against the five-letter roots that stay put; five-letter rows placed in the same run are checked against the new three-letter spellings.
 - never spells a root with an English word the doc lint reads as English in code (*are*), since the retie refuses one
 - rewrites the overlay and compound rows that spell the old root, and writes `tmp/lexicon-retie-map.json` for `retie-docs`
 - prints the root-tails report (`npm run convert-word -- --report` prints it alone)
@@ -88,7 +88,7 @@ A placed row keeps its length. So a row that gains its first overlay keeps its f
 
 ## Root tails {#root-tails}
 
-A five-letter root `V C V C V` ends in a **tail**: its second consonant names the **kind** of thing its concrete sense is, and its final vowel the thing's **job**. The learner-facing letter map, with each letter's anchor in the grammar, is in [phonology.md § root tails](../grammar/phonology.md#root-tails). Three-letter roots have no tail.
+A five-letter root `V C V C V` ends in a **tail**: its second consonant names the **kind** of thing its concrete sense is, and its final vowel the thing's **job**. The learner-facing letter map, with each letter's anchor in the grammar, is in [compounds.md § root tails](../grammar/compounds.md#root-tails). Three-letter roots have no tail.
 
 The `kind` and `shape` columns of [`lexicon-published.csv`](../../data/lexicon-published.csv) record the call for each five-letter row, as a word (`creature`, `takes-away`), never as a letter; the letter map lives once in [`src/root-tails.ts`](../../src/root-tails.ts). `shape` is empty on a `named` row, whose final vowel is free, and both are empty on a three-letter row. The `size` column steers the middle vowel ([size](#size)). `npm test` fails on a five-letter row with no kind or shape, a missing or misplaced size, or a root that doesn't end in its tail. **Changing a row's kind, shape or size is a respelling:** rerun `convert-word --lexicon --only` on it, then the retie.
 
@@ -128,12 +128,13 @@ The first two letters keep roots apart, and the middle vowel follows the [size](
 
 Rows are placed greedily in CSV order, then annealed; the run is seeded, so the same data gives the same roots. Each kind has 48 first-two-letter prefixes, so past 48 rows some confusing pairs are unavoidable; the report prints each kind beside that floor.
 
-### Two seams {#two-seams}
+### Seams {#seams}
 
-A five-letter root may have any consonant second, so two seams read by knowing the roots rather than by letter position. Placement keeps each to one reading, and `npm test` and `check-compounds` check both:
+A five-letter root may have any consonant second, so three seams read by knowing the roots rather than by letter position. Placement keeps the first two to one reading, and `npm test` and `check-compounds` check all three:
 
 - **Nine-letter dictionary words.** A stem is 3 + join + 5 or 5 + join + 3, and with **l / m / n / r** second both can fit. `validateCompoundRows` rejects a listed stem with two published-root splits, and placement skips a root that would make one.
 - **Hook compounds.** A five-letter root with **l** or **m** second, plus **-l** or **-m**, spells the same letters as a three-letter root + ending + two-letter hook. The parser reads a hook compound only on a dictionary root ([hooks.md § hook compounds](../grammar/hooks.md#hook-compounds)), and placement never gives such a root an onset that is a three-letter root. A `/th/` holder host form (`ugur`) is never a root's first four letters either.
+- **Seven-letter dictionary words.** A tail-suffix stem whose left root has **l / m / r** second looks like 3 + join + 3. 3 + join + 3 is never listed, but `validateCompoundRows` still rejects a suffix stem whose two halves are published three-letter roots; pick another left root. Placement does not check this seam, so a respelling can trip it in `check-compounds`.
 
 ## Respelling a row
 
@@ -151,7 +152,11 @@ Moving a sense (an overlay) from one published row to another is a **replacement
 
 ## Dictionary compounds
 
-A row in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv) is one stem: **left root + boundary letter + head root** ([lexical compounds](../grammar/x-compounds.md#lexical-compounds)). The `join` column is the boundary letter, and it picks the sense of the **left** root only: **-l** when its concrete sense narrows the head (*bed* **-l** *room* = *bedroom*), **-m** when its abstract sense does (*formality* **-m** *shoe* = *dress shoe*), **-n** / **-r** for a name or a resume. The whole-word ending added at use picks the sense of the entry: **-l** reads the row's `concrete`, **-m** its `abstract`. Fill `abstract` only when the head's abstract sense really carries over (*bedroom* **-m** = *sanctum*), never because the left root has one.
+A row in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv) is one stem: **left root + boundary letter + head root** ([lexical compounds](../grammar/compounds.md#lexical-compounds)). The `join` column is the boundary letter, and it picks the sense of the **left** root only: **-l** when its concrete sense narrows the head (*bed* **-l** *room* = *bedroom*), **-m** when its abstract sense does (*formality* **-m** *shoe* = *dress shoe*), **-n** / **-r** for a name or a resume. The whole-word ending added at use picks the sense of the entry: **-l** reads the row's `concrete`, **-m** its `abstract`. Fill `abstract` only when the head's abstract sense really carries over (*bedroom* **-m** = *sanctum*), never because the left root has one.
+
+A **tail-suffix** row has an empty `join` and a two-letter `right`: a five-letter left root + a kind consonant + a job vowel ([tail suffixes](../grammar/compounds.md#tail-suffixes)). The consonant is one of `z y b v h d w g`, never `l` / `m` (a five-letter root + `lV` / `mV` + **-l** / **-m** spells a hook compound), `n` (countries have no job) or `r` (counting wants a specific head). The vowel follows the same job rules and tie order as a root's [shape](#shape). Use a suffix when the head **is** the kind (*friend* = *hug* + person `yo`); when the head is a more specific kind than its tail, list two full roots (*bedroom* ends in *room*).
+
+**No 3 + join + 3.** That seven-letter stem is also the shape of five letters + a suffix, so two three-letter roots never make a listed compound. Use a five-letter member on either side, or a suffix on a five-letter left. A three-letter root never takes a suffix: `VCV` + `CV` is a five-letter root.
 
 ### When a compound earns a row
 
@@ -181,9 +186,9 @@ When a needed head is missing, add it before writing its compounds, since moving
 2. `synsets <word>` lists WordNet noun senses; `candidates <synset> [--depth N --max-rank N]` lists hyponyms by frequency and hides covered senses.
 3. `check <word>…` reports exact hits on a root, alias, compound or overlay gloss. For near matches use `find-english --kind root` and `lexicon-search`.
 4. Write a draft CSV with the header `english,left,join,head,abstract,mnemonic`. The mnemonic opens *"<left> specifying <head> is …"*. `draft <file>` prints each stem, the validator's errors and extra warnings.
-5. `draft <file> --write` appends the rows, only when no row has an error. Then run `npm run check-compounds`, `npm test`, and `npm run cheat-sheet-blocks -- --write`.
+5. `draft <file> --write` appends the rows, only when no row has an error. `compound-fill` drafts two-root rows only; write a tail-suffix row by hand. Then run `npm run check-compounds`, `npm test`, and `npm run cheat-sheet-blocks -- --write`.
 
-`check-compounds` rejects a stem that is not left + boundary + head, a bad boundary letter, an unpublished or non-content root, a stem that is already a root or splits into published roots more than one way, the same root on both sides, a gloss that is already a published or compound sense, and a missing gloss or mnemonic. It does not catch an ending-plus-stem form that also reads as an overlay plus a root; the morph-gloss lint in `npm test` does. If a stem splits two ways, pick a different left root; never respell a root to make the split unique.
+`check-compounds` rejects a stem that is not left + boundary + head, a bad boundary letter, a 3 + join + 3 stem, a tail suffix that is not a legal kind + job or sits on a three-letter left, an unpublished or non-content root, a stem that is already a root or splits into published roots more than one way, the same root on both sides, a gloss that is already a published or compound sense, and a missing gloss or mnemonic. It does not catch an ending-plus-stem form that also reads as an overlay plus a root; the morph-gloss lint in `npm test` does. If a stem splits two ways, pick a different left root; never respell a root to make the split unique.
 
 ## Core vocabulary column
 

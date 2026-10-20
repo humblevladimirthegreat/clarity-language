@@ -476,7 +476,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🍲,soup,uzuda,food,holds,none,simmer,soup simmers over low heat for a long time,,stew,
 🫕,sauce,ozoda,food,holds,none,sharing,everyone dips into one shared pot of sauce,,,
 🥣,bowl,ubo,,,,capacity,a bowl holds what it can; capacity is how much fits,,,intention.md#intermediate-practice
-🥗,salad,azada,food,holds,none,,,,,x-compounds.md#intermediate-practice
+🥗,salad,azada,food,holds,none,,,,,compounds.md#intermediate-practice
 🍿,popcorn,ureda,food,holds,small,entertainment,popcorn at the show is entertainment,,entertain,
 🧈,butter,uyuda,food,holds,none,flattery,butter someone up with flattery,,,
 🧂,salt,ozuda,food,holds,none,skepticism,take it with a grain of salt,,,
@@ -529,7 +529,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🧉,mate,umuda,food,holds,none,fellowship,mate is shared fellowship,,fellow,
 🧊,ice,ozulo,nature,one,none,kelvin,ice marks thermodynamic temperature; kelvin is the SI temperature unit,,,restrictors.md#intermediate-practice
 🥢,stick,ezede,food,order,small,,chopsticks stand for any stick: a thin length of wood,,,
-🍽️,plate,uwoda,food,holds,medium,service,plate is set for service,,help; dish; assistance; favor; aid,x-compounds.md#intermediate-practice
+🍽️,plate,uwoda,food,holds,medium,service,plate is set for service,,help; dish; assistance; favor; aid,compounds.md#intermediate-practice
 🍴,cutlery,ageda,food,holds,small,provision,cutlery enables provision,v:eat,supply; resource; meal; food; diet,knowing.md#beginner-practice
 🥄,spoon,uzeda,food,holds,small,portion,spoon measures a portion,,component; segment,numbers-applied.md#intermediate-practice
 🔪,knife,anewu,tool,takes-away,small,severity,a knife cuts deep and hard,,sharp; severe,pronouns.md#beginner-practice
@@ -553,7 +553,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🏗️,building-site,ubahe,place,order,big,undertaking,a building site is a big job under way; an undertaking is a task taken on,,,
 🧱,wall,ave,,,,foundation,a wall stands on what is under it; foundation is the base layer,,basis; framework; underlie; base,
 🪨,rock,arolo,nature,one,medium,heavy,rock is hard to lift; heaviness is weight on a scale,,stone; weight; concrete; cement,plurality.md#intermediate-practice
-🪵,wood,uwu,,,,raw,wood is unfinished material; raw is unprocessed state,,log,x-compounds.md#beginner-practice
+🪵,wood,uwu,,,,raw,wood is unfinished material; raw is unprocessed state,,log,compounds.md#beginner-practice
 🛖,hut,ehaha,place,holds,big,locality,hut sits in a small settlement; locality is the near neighborhood,,local; neighborhood,
 🏘️,houses,ahaha,place,holds,big,town,houses in a cluster form a town; a town is a small settled place,,settlement,
 🏚️,derelict-house,udahu,place,takes-away,big,ruin,a derelict house shows decay; ruin is lasting damage,,,
@@ -923,8 +923,8 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🪃,boomerang,ubove,doing,order,medium,,,v:throw,,
 🏹,archery,uruve,doing,order,none,aim,archery sends an arrow to a target; aim is directing toward target,v:hunt,focus,
 🛡️,shield,ohowu,tool,takes-away,medium,defense,shield blocks incoming blows; defense is guarding against harm,,defend,
-🪚,saw,ozowu,tool,takes-away,medium,division,saw cuts material apart; division is splitting into parts,,section; sector; chapter; department; district,x-compounds.md#beginner-practice
-🔧,wrench,erewo,tool,one,small,workaround,wrench turns past a stuck bolt; workaround is an improvised bypass,,,x-compounds.md#beginner-practice
+🪚,saw,ozowu,tool,takes-away,medium,division,saw cuts material apart; division is splitting into parts,,section; sector; chapter; department; district,compounds.md#beginner-practice
+🔧,wrench,erewo,tool,one,small,workaround,wrench turns past a stuck bolt; workaround is an improvised bypass,,,compounds.md#beginner-practice
 🪛,screwdriver,ozewe,tool,order,small,assembly,screwdriver joins parts together; assembly is putting together,,,
 🔩,bolt,obewo,tool,one,small,ohm,a bolt limits current through the joint; ohm is the SI resistance unit,,,
 ⚙️,machine,ege,,,,mechanism,a machine runs on mechanism,,device; instrument; engine; motor; functional; gear; cog,

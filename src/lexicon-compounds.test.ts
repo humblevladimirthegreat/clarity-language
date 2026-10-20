@@ -68,6 +68,38 @@ describe("lexicon-compounds", () => {
     assert.ok(alts.length >= 2);
   });
 
+  const suffixRow = (stem: string, left: string, right: string, join: "" | "l" = "") => ({
+    stem,
+    left,
+    join,
+    right,
+    concrete: "friend",
+    abstract: "",
+    mnemonic: "note",
+  });
+
+  it("accepts a tail suffix on a five-letter left", () => {
+    const errors = validateCompoundRows([suffixRow("ahuyayo", "ahuya", "yo")], new Set(["ahuya"]));
+    assert.deepEqual(errors, []);
+  });
+
+  it("rejects a tail suffix on a three-letter left or with a banned consonant", () => {
+    const short = validateCompoundRows([suffixRow("anayo", "ana", "yo")], new Set(["ana"]));
+    assert.ok(short.some((e) => /five-letter left/.test(e.reason)));
+    const nature = validateCompoundRows([suffixRow("ahuyalo", "ahuya", "lo")], new Set(["ahuya"]));
+    assert.ok(nature.some((e) => /join must be/.test(e.reason)));
+  });
+
+  it("rejects a suffix stem that also reads 3 + join + 3", () => {
+    const errors = validateCompoundRows([suffixRow("abolobe", "abolo", "be")], new Set(["abolo", "abo", "obe"]));
+    assert.ok(errors.some((e) => /also reads abo\+l\+obe/.test(e.reason)));
+  });
+
+  it("rejects 3 + join + 3 two-root compounds", () => {
+    const errors = validateCompoundRows([suffixRow("analobe", "ana", "obe", "l")], new Set(["ana", "obe"]));
+    assert.ok(errors.some((e) => /3 \+ join \+ 3/.test(e.reason)));
+  });
+
   it("accepts extra-noun hook as the right member", () => {
     const errors = validateCompoundRows(
       [

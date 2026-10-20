@@ -360,11 +360,11 @@ The family name describes the given name, so the person is still one noun in one
 
 Put the family name first, as an [adjective before the noun](clause.md#left-bound-adjectives), only when your culture names people family first. The same family name can describe the family itself (`zavayal galowen` *the Alowen family*), and what the family uses takes the ordinary [*whose*](hooks.md#genitive) hook: `dahehal em bavayal galowen` is *the Alowen family’s house*.
 
-A full name works as a [greeting](#greeting) too: `ohun galowen.` is Ohun Alowen saying hello. A [call](speech-moves.md#vocative) takes the family name the same way (`yohun galowen.` *Ohun Alowen!*). A [conversation-length](x-compounds.md#conversation-length) bid goes on the given name, never on the family name.
+A full name works as a [greeting](#greeting) too: `ohun galowen.` is Ohun Alowen saying hello. A [call](speech-moves.md#vocative) takes the family name the same way (`yohun galowen.` *Ohun Alowen!*). A [conversation-length](compounds.md#conversation-length) bid goes on the given name, never on the family name.
 
 A family name is an adjective, so a `/b/` right after it would complete it as a [hosted extra noun](clause.md#extra-nouns). Put the person who receives after the verb, as usual: `zohun galowen vezuyel bolazun.` is *Ohun Alowen tells Olazun*.
 
-A **hyphenated name** (*Mary-Kate*, *Coffee-Tea*) is one word: roots join left to right with mid-word **`x`** ([ordinary compound order](x-compounds.md#ordinary-compound-order)), and **-n** names the whole.
+A **hyphenated name** (*Mary-Kate*, *Coffee-Tea*) is one word: roots join left to right with mid-word **`x`** ([ordinary compound order](compounds.md#ordinary-compound-order)), and **-n** names the whole.
 
 > `zohuxalowen vewurel.`
 >
@@ -574,5 +574,5 @@ A hyphenated name is one word joined with **`x`**; two **-n** words in the same 
 - [plurality.md](plurality.md): **-x** after the ending
 - [clause.md](clause.md): role letters; adding a first letter to a citation
 - [spans.md](spans.md#loans): mention / opaque when the **form** or a foreign acronym is the point
-- [x-compounds.md](x-compounds.md#ordinary-compound-order): long titles as ordinary compounds
+- [compounds.md](compounds.md#ordinary-compound-order): long titles as ordinary compounds
 - Titled phrases: [hooks.md](hooks.md#intermediate), [joins.md](joins.md#named-list), [spans.md](spans.md#when-required)

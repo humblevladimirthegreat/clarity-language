@@ -78,7 +78,7 @@ export const ROUTE_LINKS: Readonly<Record<RouteClass, string[]>> = {
 export const ROUTE_QUALIFIERS: Readonly<Record<Exclude<RouteClass, "kin">, string>> = { young: "child", female: "female", male: "male" };
 
 /** A listed compound reached from its parts, and a live `x` compound built from them. */
-export const COMPOUND_LINKS = { listed: "x-compounds.md#lexical-compounds", live: "x-compounds.md#ordinary-compound-order" } as const;
+export const COMPOUND_LINKS = { listed: "compounds.md#lexical-compounds", live: "compounds.md#ordinary-compound-order" } as const;
 
 const THIRD_PERSON = new Set(["he", "she", "it", "they", "him", "her", "them", "his", "its", "their", "theirs", "hers"]);
 

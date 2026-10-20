@@ -103,7 +103,7 @@ export type ClassSuggestion = {
 };
 /**
  * A live `x` compound built from a modifier noun and a head noun that have roots
- * ([adding another piece](x-compounds.md#ordinary-compound-order)): open, no lexicon row.
+ * ([adding another piece](compounds.md#ordinary-compound-order)): open, no lexicon row.
  */
 export type LiveSuggestion = {
   kind: "live";

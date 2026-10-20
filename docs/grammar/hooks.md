@@ -1111,7 +1111,7 @@ The left ending is part of the stem, so two different left roots stay distinct o
 
 Other roots fuse the same way: `vezuyeluel` *contradict* is *tell* fused with *against*. The dictionary lists these words as citations (`ewurelul`, not `vewurelul`).
 
-**Compare with:** `vewurel ul buyahel` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* never fuse; they are always separate hook words. A [lexical compound](x-compounds.md#lexical-compounds) like *bedroom* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
+**Compare with:** `vewurel ul buyahel` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* never fuse; they are always separate hook words. A [lexical compound](compounds.md#lexical-compounds) like *bedroom* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
 
 ### Practice {#advanced-practice}
 
@@ -1239,4 +1239,4 @@ The dictionary lists a hook compound as a citation, with no role letter.
 - *When* this hook counts: [restrictors.md](restrictors.md)
 - Prefix-less citation: [word-endings.md](word-endings.md#citation-forms)
 - Titled phrases: [word-endings.md](word-endings.md#titled-phrases)
-- Dictionary compounds without **`x`**: [x-compounds.md](x-compounds.md#lexical-compounds)
+- Dictionary compounds without **`x`**: [compounds.md](compounds.md#lexical-compounds)

@@ -277,7 +277,7 @@ Marking an assumed yes as an assumption helps you check before acting, and marki
 
 English *hi* does not say whether you can stay a while, have only a few minutes, have one thing to ask, or are just passing by.
 
-A [greeting](word-endings.md#greeting) is your own name said as a sentence (`SELFn.`). Calling someone is a [vocative](speech-moves.md#vocative). A [conversation-length bid](x-compounds.md#conversation-length) adds one vowel to your name: open-ended, a few minutes, one thing to ask, or passing by. The other person can answer with their own bid; the **shorter** bid sets the limit for both of you. When you leave, the same form says whether you are leaving soon, about to leave, or leaving now. The vowel describes the conversation, not either person.
+A [greeting](word-endings.md#greeting) is your own name said as a sentence (`SELFn.`). Calling someone is a [vocative](speech-moves.md#vocative). A [conversation-length bid](compounds.md#conversation-length) adds one vowel to your name: open-ended, a few minutes, one thing to ask, or passing by. The other person can answer with their own bid; the **shorter** bid sets the limit for both of you. When you leave, the same form says whether you are leaving soon, about to leave, or leaving now. The vowel describes the conversation, not either person.
 
 Marking the opening that way lets you agree on how long to talk, so saying hello never commits you to unlimited time.
 

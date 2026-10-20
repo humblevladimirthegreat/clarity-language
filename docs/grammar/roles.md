@@ -857,6 +857,6 @@ A bare arrow word is the compass; for someone's left, add **`th`** and whose fac
 ## See also
 
 - Event resume vs participant: [pronouns.md](pronouns.md)
-- Mid-word **`x`** families: [x-compounds.md](x-compounds.md)
+- Mid-word **`x`** families: [compounds.md](compounds.md)
 - Join-relations as relation roots: [join-across-roles.md](join-across-roles.md#join-relations)
 - Can / can’t (vowel right of **`x`**): [intention.md#ability](intention.md#ability)

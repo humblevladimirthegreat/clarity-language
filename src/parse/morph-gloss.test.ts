@@ -534,7 +534,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("quasi numeric derivation is English", () => {
-    expectLine("zuhelan ganalobelrubul", "z-Uhelan | g-friend-l-quasi");
+    expectLine("zuhelan gahuyayolrubul", "z-Uhelan | g-friend-l-quasi");
   });
 
   it("abstract numeric join is -m in the gloss", () => {

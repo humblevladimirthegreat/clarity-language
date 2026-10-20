@@ -3,7 +3,7 @@
 <!-- retie: skip -->
 
 **Status:** PROPOSED. Not built. Every spelling on this page is `convert-word` output against the lexicon at commit `9d7b975b`, from a dry run in a scratch worktree. A later respelling makes the tables stale, so regenerate them before building ([build](#build)).
-**Related:** `root-tails.md` (tails on five-letter roots); [lexicon.md § root tails](../meta/lexicon.md#root-tails), [§ root length](../meta/lexicon.md#root-length), [§ onset](../meta/lexicon.md#onset), [§ two seams](../meta/lexicon.md#two-seams); [phonology.md § root tails](../grammar/phonology.md#root-tails); [`src/lexicon-place.ts`](../../src/lexicon-place.ts) (`annealShortRoots`, `pairHard`, `shortRootGuards`); [`src/root-tails.ts`](../../src/root-tails.ts) (`validateRootTails`); [`data/lexicon-overlays.csv`](../../data/lexicon-overlays.csv).
+**Related:** `root-tails.md` (tails on five-letter roots); [lexicon.md § root tails](../meta/lexicon.md#root-tails), [§ root length](../meta/lexicon.md#root-length), [§ onset](../meta/lexicon.md#onset), [§ seams](../meta/lexicon.md#seams); [compounds.md § root tails](../grammar/compounds.md#root-tails); [`src/lexicon-place.ts`](../../src/lexicon-place.ts) (`annealShortRoots`, `pairHard`, `shortRootGuards`); [`src/root-tails.ts`](../../src/root-tails.ts) (`validateRootTails`); [`data/lexicon-overlays.csv`](../../data/lexicon-overlays.csv).
 **Design authority:** none until absorbed.
 
 ## Summary
@@ -135,7 +135,7 @@ Placement still keeps three-letter roots off the onset of a kept **l / m**-secon
 
 ### Five-letter roots that move {#five-letter-roots}
 
-Each of these clashes with a new three-letter root and is re-placed with its own kind, shape and size. *Hook*: an **l / m**-second root whose first three letters are a three-letter root reads as that root + join + a hook before **-l / -m** ([two seams](../meta/lexicon.md#two-seams)). *Holder*: a root that starts with a `/th/` holder host reads as a holder seam. The set is a fixed point: re-placing exactly these rows produces no other clash.
+Each of these clashes with a new three-letter root and is re-placed with its own kind, shape and size. *Hook*: an **l / m**-second root whose first three letters are a three-letter root reads as that root + join + a hook before **-l / -m** ([seams](../meta/lexicon.md#seams)). *Holder*: a root that starts with a `/th/` holder host reads as a holder seam. The set is a fixed point: re-placing exactly these rows produces no other clash.
 
 | Seed | Concrete | Kind | Now | Proposed | Why it moves |
 |---|---|---|---|---|---|
@@ -234,7 +234,7 @@ In a scratch worktree on `9d7b975b`:
 3. **Placement.** Run `npm run convert-word -- --lexicon --only <the three-letter rows>,<the clashing five-letter rows>`. If the lexicon changed since `9d7b975b`, recompute the five-letter set: the kept **l / m**-second roots whose onset is a new three-letter root, plus the roots that start with a new holder host. Repeat until the set stops changing (it did after one round here).
 4. **Retie.** Run `npm run retie-docs`, then `-- --write`, then `npm run build`, `npm test` and `npm run grammar-check`. Read the review list.
 5. **Docs.**
-   - [phonology.md § root tails](../grammar/phonology.md#root-tails): the tail applies to every root.
+   - [compounds.md § root tails](../grammar/compounds.md#root-tails): the tail applies to every root.
    - [lexicon.md](../meta/lexicon.md): [root tails](../meta/lexicon.md#root-tails) and [size](../meta/lexicon.md#size), where three-letter rows now carry kind and shape; the spacing rule in [root length](../meta/lexicon.md#root-length).
    - The `annealShortRoots` doc comment.
 

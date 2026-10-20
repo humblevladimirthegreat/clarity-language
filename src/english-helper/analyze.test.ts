@@ -302,7 +302,7 @@ describe("compounds", () => {
     assert.equal(live.kind, "live");
     assert.equal(live.stem, `${root("tea")}x${root("shop")}`);
     assert.equal(live.form, `b${live.stem}l`);
-    assert.equal(live.link, "x-compounds.md#ordinary-compound-order");
+    assert.equal(live.link, "compounds.md#ordinary-compound-order");
   });
 
   it("keeps an adjective and a noun as two words", () => {

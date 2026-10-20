@@ -442,7 +442,7 @@ A claim that something **will** happen: an evidential channel plus the later off
 
 A named citation is a hello (`uzozen.`). Add mid-word **`x`** plus **`a`** / **`e`** / **`o`** / **`u`** to say how long the conversation is expected to last: open-ended, a few minutes, one slot, or passing. At departure, **`xen`** means leaving soon, **`xon`** about to leave, and **`xun`** leaving now. When people set different lengths at arrival, the lesser bid holds.
 
-[Word endings](word-endings.md#greeting) · [X-compounds](x-compounds.md#conversation-length)
+[Word endings](word-endings.md#greeting) · [Compounds](compounds.md#conversation-length)
 
 ### Hold
 
@@ -612,7 +612,7 @@ Ending **-ln** (span mark **`^@`**): one thing a name applies to, such as one un
 
 FIELD × KIND with mid-word **`x`**; closed stem with join letter and no `x`.
 
-[x-compounds](x-compounds.md)
+[Compounds](compounds.md)
 
 **Compare with:** a [hook compound](hooks.md#hook-compounds) is a citation plus an extra-noun hook (`ewurelul` *leave*), still with no **`x`**.
 
@@ -715,6 +715,12 @@ Word-initial job letter.
 
 [Clause](clause.md#role-letters)
 
+### Root tail
+
+The last two letters of a five-letter root: a consonant for the kind of thing and a vowel for its job. A memory aid, not grammar.
+
+[Compounds](compounds.md#root-tails)
+
 ### Scope island
 
 `{ … }` with binder inside.
@@ -796,6 +802,12 @@ Utterance setting: statement / question / command / prohibition.
 *If* (enough) vs *only if* (needed) vs *because* / *iff*.
 
 [Causation](causation.md)
+
+### Tail suffix
+
+A dictionary word whose head is a bare root tail instead of a second root (`zahuyayol` *a friend*: *hug* + a person tail).
+
+[Compounds](compounds.md#tail-suffixes)
 
 ### Tag
 

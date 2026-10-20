@@ -169,7 +169,7 @@ At departure, use the reduced level: **-xen** means *leaving soon*, **-xon** mea
 
 The person responds likewise with their name and the suffix for their own preferred level of conversation. The lower level wins - if the initiator wants -xan but is responded to with -xen then they know to keep it brief.
 
-Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/x-compounds.html#conversation-length
+Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/compounds.html#conversation-length
 
 ### Pronouns Point by Role
 

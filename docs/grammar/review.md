@@ -254,7 +254,7 @@ z-wood-x-basket
 
 A wood basket is a kind of basket, so *basket* comes last; `zabowaxuwul` would be a kind of wood.
 
-**Rule:** [Two roots, one word](x-compounds.md#two-roots-one-word)
+**Rule:** [Two roots, one word](compounds.md#two-roots-one-word)
 :::
 
 #### Fix it {#beginner-fix-it}
@@ -492,7 +492,7 @@ SELF-minutes . Olazun-presence
 
 The lesser bid sets the limit, so the talk lasts a few minutes.
 
-**Rule:** [Conversation length](x-compounds.md#conversation-length)
+**Rule:** [Conversation length](compounds.md#conversation-length)
 :::
 
 #### Pick one {#intermediate-pick-one}

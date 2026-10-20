@@ -34,7 +34,6 @@ These keep their spellings on purpose and go stale after every retie. Never copy
 | `TODO.md` | planning notes (never retied) |
 | [cool-features.md](cool-features.md) | a record of posts as they were made |
 | [syntax-test-results.md](syntax-test-results.md) | a dated log of test runs, spelled as they ran |
-| `tail-suffix.md` | a proposal whose coined stems are not listed words; rework them by hand after a retie |
 
 A page opts out with `<!-- retie: skip -->` on a line of its own ([retie-safe writing](grammar-docs.md#retie-safe-writing)). Active proposals are retied.
 

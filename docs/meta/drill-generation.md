@@ -140,7 +140,7 @@ Path items joined with `·` are **co-located**, not ordered. Do **not** recycle 
 | 8 | `pronouns.md` · `plurality.md` |
 | 12 | `hooks.md` · `restrictors.md` |
 | 15 | `numbers.md` · `numbers-applied.md` · `comparatives.md` · `causation.md` |
-| 16 | `sakes.md` · `intention.md` · `knowing.md` · `roles.md` · `x-compounds.md` |
+| 16 | `sakes.md` · `intention.md` · `knowing.md` · `roles.md` · `compounds.md` |
 
 Later path numbers **may** recycle both siblings (e.g. joins Beginner may use pronouns **and** plurality Beginner).
 
@@ -216,9 +216,9 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `knowing.md` | Advanced | a film archive |
 | `roles.md` | Beginner | a construction site |
 | `roles.md` | Intermediate | a harbor |
-| `x-compounds.md` | Beginner | a hardware store |
-| `x-compounds.md` | Intermediate | a front porch |
-| `x-compounds.md` | Advanced | unset |
+| `compounds.md` | Beginner | a hardware store |
+| `compounds.md` | Intermediate | a front porch |
+| `compounds.md` | Advanced | unset |
 | `intention.md` | Beginner | a chess club |
 | `intention.md` | Intermediate | a board meeting |
 | `say-reasons.md` | Plans against a snapshot | a delayed departure board |
@@ -296,7 +296,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 16 | `intention.md` | **exists** | PLAN and host ability contrasts: **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (sake roots). Not role compounds (vowel *left* of `x`). Not conversation length (named citation or `/y/`) |
 | 16 | `knowing.md` | **exists** | **MAY** **`ovu`** + 2a holds (**`thovum`** default; **-l** find out; **-r** who knows) | Not evidentiality / NOTIONAL (Intermediate). Not **`yom`** (core Intermediate) unless you only recycle **`yol`** from core/questions Beginner |
 | 16 | `roles.md` | **exists** | Role compounds **`a`/`e`/`u`/`o` x ROOT`** (agent / place / patient / recipient; **`o`** = reltum on a relation); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
-| 16 | `x-compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`obaholuraha` / `analobe`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
+| 16 | `compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`obaholuraha` / `oyelabora`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
 | 16 | `intention.md` | **exists** | **PLAN** **`ama`** map-resolution endings | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling MAY / values unused unless the page contrast needs them |
 
 ### Intermediate then Advanced
@@ -342,7 +342,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`avo`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs; **holder** seam (someone else's view) | |
 | 16 | `knowing.md` | Advanced | **exists** | Mood on one adjective; dated channel; channels on a generalization | One checkpoint for the whole stage |
 | 16 | `roles.md` | Intermediate | **exists** | Viewpoint laterals **`DIR th ANCHOR`**; bare arrow roots = compass; gravity **`ayuhe`/`aduhe`**; name/listener anchor | Prefer `…thazawan` over silent speaker default. **`eho`/`amu`** only when testing role-anchor. Include at least one bare cardinal and one gravity item |
-| 16 | `x-compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](../grammar/word-endings.md#greeting) and [vocative](../grammar/speech-moves.md#vocative). Not ability (`vezuyoxel`). Not values |
+| 16 | `compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](../grammar/word-endings.md#greeting) and [vocative](../grammar/speech-moves.md#vocative). Not ability (`vezuyoxel`). Not values |
+| 16 | `compounds.md` | Advanced | skip | — | Root tails are a memory aid and tail-suffix words are dictionary entries: nothing to build or choose |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
 | 17 | `join-across-roles.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`, sequence `xan`); join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 17) |
 | 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`ehu`** changeability; forecast = evidential + `bral` vs PLAN; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
@@ -361,7 +362,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Means / simile / exchange / proxy hosted pairs | `relations.md` Beginner |
 | **`darl`**, *because* **`thavem barl`**, `/x/` linker after `.` | `dependents.md` Beginner |
 | Named citation greeting (`uzozen.`) | `word-endings.md` Beginner |
-| Conversation-length bid **`…xan` / `…xon` / `…xen` / `…xun`** on a citation or vocative | `x-compounds.md` Intermediate |
+| Conversation-length bid **`…xan` / `…xon` / `…xen` / `…xun`** on a citation or vocative | `compounds.md` Intermediate |
 | **`gl-`**, **`yam`/`yom`/`yem`/`yum`** as a *speech-act* system | `clause.md` Intermediate |
 | Locative relations; of-relations (`gobom` / `gahem` / `guwum` / `gagum`) | `relations.md` Intermediate |
 | Hosted *as-of* (`huhum` / `huram`) | `relations.md` Advanced |

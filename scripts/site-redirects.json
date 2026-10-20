@@ -94,6 +94,11 @@
       "from": "/grammar/why-egabon.html",
       "to": "/grammar/why-agebon.html",
       "note": "Public URL after the language was renamed Egabon → Agebon."
+    },
+    {
+      "from": "/grammar/x-compounds.html",
+      "to": "/grammar/compounds.html",
+      "note": "Public URL after renaming x-compounds.md to compounds.md."
     }
   ]
 }

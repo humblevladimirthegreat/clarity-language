@@ -194,7 +194,7 @@ English names a person by what they usually do (*a singer*, *a manager*). Agebon
 | `zaxugulawebothel` | *reader* | `ugulawebol` *read* |
 | `zaxegavalunewothel` | *driver* | `egavalunewol` *drive* |
 | `zaxehorelezuyethel` | *poet* | `ehorelezuyel` *poetry* |
-| `zaxamoluzethel` | *investor* | `amoluzel` *investment* |
+| `zaxamolabolothel` | *investor* | `amolabolol` *investment* |
 | `zaxamolamuyathel` | *employee* | `amolamuyal` *employment* |
 | `zuexamolamuyathel` | *employer* (the one who bears the cost) | `amolamuyal` *employment* |
 | `zaxahal` | *participant* | `ahal` *handshake* |

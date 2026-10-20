@@ -53,7 +53,7 @@ Read **`docs/grammar/`** only, in stage order. [why-agebon.md](../grammar/why-ag
 13. [relations.md Beginner](../grammar/relations.md#beginner)
 14. [spans.md](../grammar/spans.md#beginner)
 15. [numbers.md](../grammar/numbers.md#beginner) · [comparatives.md](../grammar/comparatives.md#beginner) · [causation.md](../grammar/causation.md#beginner)
-16. [sakes.md](../grammar/sakes.md#beginner) · [intention.md](../grammar/intention.md#beginner) · [knowing.md](../grammar/knowing.md#beginner) · [roles.md](../grammar/roles.md#beginner) · [x-compounds.md](../grammar/x-compounds.md#beginner) · [intention.md](../grammar/intention.md#beginner)
+16. [sakes.md](../grammar/sakes.md#beginner) · [intention.md](../grammar/intention.md#beginner) · [knowing.md](../grammar/knowing.md#beginner) · [roles.md](../grammar/roles.md#beginner) · [compounds.md](../grammar/compounds.md#beginner) · [intention.md](../grammar/intention.md#beginner)
 
 Then the [Beginner level review](../grammar/review.md#beginner) ([level reviews](translation-exercises.md#level-reviews)).
 

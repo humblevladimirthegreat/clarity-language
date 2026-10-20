@@ -249,7 +249,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 ### Ask, interview, conversation {#ask-words}
 
-**Needs:** [Ask](questions.md#question) · [Reported questions](#reported-questions) · [Stand-in vowels](dependents.md#stand-in) · [Speech act: firm and soft](speech-moves.md#speech-act) · [Conversation length](x-compounds.md#conversation-length) · [Call someone](speech-moves.md#vocative)
+**Needs:** [Ask](questions.md#question) · [Reported questions](#reported-questions) · [Stand-in vowels](dependents.md#stand-in) · [Speech act: firm and soft](speech-moves.md#speech-act) · [Conversation length](compounds.md#conversation-length) · [Call someone](speech-moves.md#vocative)
 
 English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yol`**. A request is **`yem`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`derl`**, and the person told is unhosted `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Agebon carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
 
