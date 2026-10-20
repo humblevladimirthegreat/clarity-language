@@ -1,6 +1,6 @@
 /**
  * Root tails (proposal `root-tails.md`, phase 1): a five-letter root `V C V | C V` ends in a tail,
- * the second consonant naming the row's kind and the final vowel its shape. `data/lexicon-tails.csv`
+ * the second consonant naming the row's kind and the final vowel its job. `data/lexicon-tails.csv`
  * holds the kind, shape and placed root of every published five-letter row, beside the live lexicon.
  * This file owns the letter map, the CSV, and the checks {@link validateTails} runs.
  */
@@ -27,11 +27,11 @@ export const KIND_LETTERS = {
   named: "n",
 } as const;
 
-/** Shape → final vowel. Named rows have none: their final vowel is free. */
+/** Job → final vowel. Named rows have none: their final vowel is free. */
 export const SHAPE_VOWELS = {
   holds: "a",
   one: "o",
-  line: "e",
+  order: "e",
   "takes-away": "u",
 } as const;
 

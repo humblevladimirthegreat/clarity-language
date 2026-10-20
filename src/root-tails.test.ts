@@ -36,7 +36,7 @@ describe("lexicon-tails.csv", () => {
 
 describe("tails", () => {
   it("spells a tail from kind and shape, and leaves a named row's vowel free", () => {
-    assert.equal(tailOf("creature", "line"), "ze");
+    assert.equal(tailOf("creature", "order"), "ze");
     assert.equal(tailOf("tool", "takes-away"), "wu");
     assert.equal(tailOf("named", ""), "n");
   });
@@ -102,7 +102,7 @@ describe("validateTails", () => {
     assert.ok(reasons([{ ...good[0]!, root: "ubeza" }, good[1]!, good[2]!]).some((r) => r.includes("does not end in its tail zo")));
     assert.ok(reasons([good[0]!, good[1]!, { ...good[2]!, root: "ubezo" }]).some((r) => r.includes("is also")));
     const nature = [published("🌳", "tree", "ehule")];
-    const errors = validateTails([tail("🌳", "tree", "nature", "line", "abale")], [...nature, rows[3]!], []);
+    const errors = validateTails([tail("🌳", "tree", "nature", "order", "abale")], [...nature, rows[3]!], []);
     assert.ok(errors.some((e) => e.reason.includes("reads as aba + join + hook")));
   });
 

@@ -3,14 +3,14 @@
 <!-- retie: skip -->
 
 **Status:** PROPOSED. Phase 1 is built and in review ([first run](#phase-1-run)); phases 2 and 3 are not started. Three [phases](#phases): phase 1 builds the new lexicon beside the live one, phase 2 replaces and reties, and phase 3 adds a lint that keeps look-alike words out of nearby checkpoints.  
-**Related:** [lexicon editing](../meta/lexicon.md) ([§ root spellings](../meta/lexicon.md#root-spellings-come-from-convert-word), [§ root length](../meta/lexicon.md#root-length), [§ second consonant](../meta/lexicon.md#second-consonant), [§ seeds](../meta/lexicon.md#seeds-concrete-senses-and-pictographs), [§ core vocabulary](../meta/lexicon.md#core-vocabulary-column)); [clause.md § role letters](../grammar/clause.md#role-letters); [speech-moves.md § speech act](../grammar/speech-moves.md#speech-act-beginner) (the vowel series); [word-endings.md](../grammar/word-endings.md); [x-compounds.md § lexical compounds](../grammar/x-compounds.md#lexical-compounds); [hooks.md § hook compounds](../grammar/hooks.md#hook-compounds); [numeric-derivation.md](../grammar/numeric-derivation.md); [language-name.md](../meta/language-name.md); [`src/word-converter.ts`](../../src/word-converter.ts) (`SECOND_CONSONANT_BAN`, `longRootCandidates`, `rankRoots`); [`src/echo-metric.ts`](../../src/echo-metric.ts); [`src/lexicon-place.ts`](../../src/lexicon-place.ts); [`src/lexicon-compounds.ts`](../../src/lexicon-compounds.ts) (`factorizationsForStem`, `validateCompoundRows`); [`src/parse/hook-compounds.ts`](../../src/parse/hook-compounds.ts) (`parseHookCompoundCite`); [`src/closed-roots.ts`](../../src/closed-roots.ts); `number-mnemonic.md` and `number-respelling.md` ([interactions](#interactions)).  
+**Related:** `tail-suffix.md`; [lexicon editing](../meta/lexicon.md) ([§ root spellings](../meta/lexicon.md#root-spellings-come-from-convert-word), [§ root length](../meta/lexicon.md#root-length), [§ second consonant](../meta/lexicon.md#second-consonant), [§ seeds](../meta/lexicon.md#seeds-concrete-senses-and-pictographs), [§ core vocabulary](../meta/lexicon.md#core-vocabulary-column)); [clause.md § role letters](../grammar/clause.md#role-letters); [speech-moves.md § speech act](../grammar/speech-moves.md#speech-act-beginner) (the vowel series); [word-endings.md](../grammar/word-endings.md); [x-compounds.md § lexical compounds](../grammar/x-compounds.md#lexical-compounds); [hooks.md § hook compounds](../grammar/hooks.md#hook-compounds); [numeric-derivation.md](../grammar/numeric-derivation.md); [language-name.md](../meta/language-name.md); [`src/word-converter.ts`](../../src/word-converter.ts) (`SECOND_CONSONANT_BAN`, `longRootCandidates`, `rankRoots`); [`src/echo-metric.ts`](../../src/echo-metric.ts); [`src/lexicon-place.ts`](../../src/lexicon-place.ts); [`src/lexicon-compounds.ts`](../../src/lexicon-compounds.ts) (`factorizationsForStem`, `validateCompoundRows`); [`src/parse/hook-compounds.ts`](../../src/parse/hook-compounds.ts) (`parseHookCompoundCite`); [`src/closed-roots.ts`](../../src/closed-roots.ts); `number-mnemonic.md` and `number-respelling.md` ([interactions](#interactions)).  
 **Design authority:** none until absorbed. One grammar line changes: a hook compound's left piece must be a dictionary root ([hook compounds](#hook-compounds)). The grammar pages don't teach root spellings, so the tails reach learners through a new section in Advanced [phonology](../grammar/phonology.md#advanced), which dictionary views link to ([phase 2](#phase-2)).
 
 ## Summary
 
 - A five-letter root `V C V C V` has two parts. The **onset** (the first three letters) keeps roots apart. The **tail** (the second consonant and the final vowel) carries meaning.
 - The **second consonant** says what **kind** of thing the root's concrete sense is: a creature, a person, a feeling, a food, a tool, and so on. There are twelve kinds, one per root consonant, and each is anchored to a job that letter already has in the grammar.
-- The **final vowel** says the thing's **shape or job**, reusing the vowel series: **a** holds, **o** one whole, **e** in a line or in order, **u** takes away.
+- The **final vowel** says the thing's **job**, reusing the vowel series: **a** holds, **o** one, **e** order, **u** takes away. Kind-specific pictures (a bowl, a road, a knife) are how that job shows up, not a second code. The same extra is what a tail suffix would add (`tail-suffix.md`).
 - The onset is chosen so that few roots of the **same kind** share its **first two letters**, and for a **first consonant that matches the English word's**. Roots of different kinds are told apart by the tail and cost nothing. Learning order plays no part; the [phase 3](#phase-3) lint covers teaching. The full English echo becomes a tie-break.
 - The **second-consonant ban is lifted**. The tail needs all twelve consonants second. Two checks replace the ban ([ban lift](#ban-lift)).
 - Three-letter roots and the final vowel of named (flag) rows are exempt.
@@ -36,7 +36,7 @@ These counts take every one-letter pair. Counted the way the placer now counts t
 
 ### What a tail gives instead
 
-- **Production:** a learner who knows what a thing is knows two of its five letters. A creature ends in `z`; a long creature ends in `ze`. What's left to memorize is the onset.
+- **Production:** a learner who knows what a thing is knows two of its five letters. A creature ends in `z`; a gathering creature ends in `za`. What's left to memorize is the onset.
 - **Recognition:** an unknown word in a text still says what kind of thing it names.
 - **Neighbors that make sense:** some one-letter neighbors are unavoidable ([capacity](#capacity)). When two roots differ only in the tail, the differing letter has a meaning, and that difference is a cue, not noise.
 - **One system:** each tail letter reuses a meaning the learner already met in the grammar (role letters, endings, the turn letter, the vowel series), so it adds no new code to learn.
@@ -52,7 +52,7 @@ onset      tail
 |------|---------|-----------|
 | Onset | first vowel, first consonant, middle vowel | [distinctiveness](#onset) |
 | Kind | second consonant | the row's [kind](#kinds) |
-| Shape | final vowel | the row's [shape](#shapes) |
+| Job | final vowel | the row's [job](#shapes) |
 
 Why the tail is two letters, not three: the onset needs room. With two tail letters, each tail cell has 192 onsets to choose from. With three, it would have 48, and the nearest neighbor of almost every root would be a root of the same kind and shape. That's the classic failure of category-based languages: a slip produces a plausible wrong meaning. The onset is also the most salient part of a word, which is where distinctiveness counts most.
 
@@ -94,26 +94,30 @@ Edge rules:
 - **Times of day** (night, sunrise, dusk) and the **zodiac** belt are `r`. The sky things (sun, moon, star) are `l`. Country flags and religion symbols stay `n`.
 - **Compounds** need no tag. A stem ends in its head root, so a kind of bird keeps the bird's tail.
 
-## Final vowel: shape or job {#shapes}
+## Final vowel: job {#shapes}
 
-The vowel series is reused unchanged: **a** add / hold, **o** one, **e** order, **u** undo.
+The vowel series is reused unchanged: **a** add / hold, **o** one, **e** order, **u** undo. The extra is the same on every kind, so a tail suffix (`tail-suffix.md`) can compose: the consonant names the kind, the vowel says what that kind does with (or how it stands to) the left root.
 
-| Vowel | In a tail | Things | People | Feelings | Doing | Places | Signs | Counting |
-|-------|-----------|--------|--------|----------|-------|--------|-------|----------|
-| `a` | **holds or gathers**: containers, groups, masses, open spaces | bowl, bag, rice, soup | parent, host, family | joy, love, gratitude | party, festival | field, sea, stadium | folder, chart | money, amount |
-| `o` | **one compact whole**, round; the default | ball, egg, apple, lamp | baby, a person | calm, surprise, thought | jump, one act | island, hut | circle, dot | coin, die |
-| `e` | **in a line or in order**: long, tall, pointed, ranked, in sequence | stick, pen, ladder, snake | king, judge, police | resolve, pride, respect | race, walk, train | road, river, north | arrow, letters | clock, calendar, rhythm |
-| `u` | **takes away or harms**: cuts, removes, hides, ends, forbids | knife, scissors, eraser, poison | thief, villain, ghost | fear, sadness, disgust | fight, fall, escape | cave, cemetery, volcano | warning, no-entry, cross | minus, hourglass, decrescendo |
+On a simple root there is no left piece. Read the vowel as the thing's own job.
 
-**Tie rule:** test **u → a → e → o**, and use the first that fits. A knife is long, but it cuts, so `u`. A basket is round, but it holds, so `a`. Anything left is `o`.
+| Vowel | Job | Things | People | Feelings | Doing | Places | Signs | Counting |
+|-------|-----|--------|--------|----------|-------|--------|-------|----------|
+| `a` | **holds or gathers**: containers, groups, masses, open spaces; as a suffix, the new thing holds the left | bowl, bag, rice, soup | parent, host, family | joy, love, gratitude | party, festival | field, sea, stadium | folder, chart | money, amount |
+| `o` | **one of the kind**, the default; as a suffix, a kind characterized by the left | ball, egg, apple, lamp | baby, a person | calm, surprise, thought | jump, one act | island, hut | circle, dot | coin, die |
+| `e` | **order**: ranked, sequenced, a path, a heading; as a suffix, arranged or in sequence from the left | ladder, clock, road | king, judge, police | salute, resolve | race, walk, train | road, north | arrow, skip | clock, calendar, rhythm |
+| `u` | **takes away or works against**: cuts, removes, hides, ends, forbids; as a suffix, undoes the left | knife, scissors, eraser, poison | thief, villain, ghost | fear, sadness, disgust | fight, fall, escape | cave, cemetery, volcano | warning, no-entry, cross | minus, hourglass, decrescendo |
 
-So *ant* is `VCVza` (a creature that lives in a colony), *snake* is `VCVze`, *wolf* is `VCVzu`, and *knife* is `VCVwu`.
+**Tie rule:** test **u → a → e → o**, and use the first that fits. A knife is also a tool you could call one of its kind, but it cuts, so `u`. A basket is one object, but it holds, so `a`. A road is a place, but it is a path, so `e`. Anything left is `o`.
 
-The `o` default will be the fullest vowel in most kinds. That's acceptable: `o` means "nothing special about its shape", which is easy to remember.
+Length, height, and a pointed outline are not a job. A snake harms, so `u`. A banana, a horse, a tower, and a pen are `o` unless another job fits (noodles as a mass `a`; a herd animal `a`; a ranked role `e`).
+
+So *ant* is `VCVza` (a creature that lives in a colony), *snake* is `VCVzu`, *wolf* is `VCVzu`, and *knife* is `VCVwu`.
+
+The `o` default will be the fullest vowel in most kinds. That's acceptable: `o` means "nothing special about its job", which is easy to remember.
 
 ## Exceptions {#exceptions}
 
-- **Named rows (`n`):** the final vowel is free. Shape means nothing for a country, and the free letter gives 271 rows four times the room.
+- **Named rows (`n`):** the final vowel is free. Job means nothing for a country, and the free letter gives 271 rows four times the room.
 - **Three-letter roots:** exempt. These 69 rows back the closed grammar overlays. Their single consonant is also their onset, and they need every letter to stay apart ([root length](../meta/lexicon.md#root-length)).
 - **No pins.** 👓 is placed like any row (worn, so `b`), and its spelling changes. The language name comes from this root ([language name](../meta/language-name.md)), so the name is settled once the re-placement shows the new root.
 - **Closed roots** ([`src/closed-roots.ts`](../../src/closed-roots.ts)) are respelled like any row; code names them by seed. The house cast's names follow their roots: *swan* and *lion* become `z` creatures and *hibiscus* an `l` plant, so all three names still differ in their onsets.
@@ -209,7 +213,7 @@ The work comes in three phases. The first two let the whole new lexicon be revie
 Phase 1 changes nothing that exists: not [`lexicon-published.csv`](../../data/lexicon-published.csv), the compound or overlay CSVs, the parser, nor any doc outside `docs/proposals/`. The live placement path keeps the ban and the echo ranking, so rows added during phase 1 are placed as they are today.
 
 1. **`data/lexicon-tails.csv`:** a new file with one row per published five-letter row. Its columns are `emoji` and `concrete` (the key, matching the published row), `kind`, `shape` and `root`.
-   - `kind` (*creature*, *person*, *mind*, …) and `shape` (*holds*, *one*, *line*, *takes-away*) store the meaning, not the letter, so the letter map lives in one place in code.
+   - `kind` (*creature*, *person*, *mind*, …) and `shape` (*holds*, *one*, *order*, *takes-away*) store the meaning, not the letter, so the letter map lives in one place in code.
    - `shape` is empty for named rows.
    - Three-letter rows aren't listed. They keep their roots in both phases.
 2. **First fill:** emoji subgroup as the default kind, overridden by label and the [edge rules](#kinds), then reviewed by hand. The emoji group only seeds the draft; the label decides. Shape is filled per row with the [tie rule](#shapes). An LLM draft with human review is fine, since every value is a short closed choice.
@@ -240,11 +244,11 @@ Built: [`data/lexicon-tails.csv`](../../data/lexicon-tails.csv), [`src/root-tail
 
 | | Live | Tails |
 |---|---|---|
-| First consonant is the label's first consonant | 95.0% | 89.8% |
-| Confusing pairs / same-kind pairs | 3451 (3.8%) | 1475 (1.6%) |
-| Flags | 1206 (3.5%) | 610 (1.8%) |
-| Excluding flags | 2180 (4.1%) | 822 (1.5%) |
-| Mixed flag / other same-kind | 65 (2.7%) | 43 (1.8%) |
+| First consonant is the label's first consonant | 95.0% | 89.9% |
+| Confusing pairs / same-kind pairs | 3451 (3.8%) | 1478 (1.6%) |
+| Flags | 1206 (3.5%) | 612 (1.8%) |
+| Excluding flags | 2180 (4.1%) | 825 (1.6%) |
+| Mixed flag / other same-kind | 65 (2.7%) | 41 (1.7%) |
 
 | Kind | Rows | Live pairs | Tails pairs | Floor ([capacity](#capacity)) |
 |---|---|---|---|---|
@@ -254,20 +258,20 @@ Built: [`data/lexicon-tails.csv`](../../data/lexicon-tails.csv), [`src/root-tail
 | body `b` | 114 | 238 (3.7%) | 104 (1.6%) | 84 |
 | doing `v` | 113 | 244 (3.9%) | 103 (1.6%) | 82 |
 | place `h` | 94 | 187 (4.3%) | 66 (1.5%) | 46 |
-| nature `l` | 85 | 112 (3.1%) | 55 (1.5%) | 37 |
+| nature `l` | 85 | 112 (3.1%) | 56 (1.6%) | 37 |
 | food `d` | 116 | 351 (5.3%) | 101 (1.5%) | 88 |
 | tool `w` | 94 | 172 (3.9%) | 68 (1.6%) | 46 |
 | sign `g` | 93 | 206 (4.8%) | 64 (1.5%) | 45 |
-| counting `r` | 89 | 152 (3.9%) | 64 (1.6%) | 41 |
+| counting `r` | 89 | 152 (3.9%) | 66 (1.7%) | 41 |
 | named `n` | 271 | 1265 (3.5%) | 652 (1.8%) | 635 |
 
-Every check is met: tails, the hook check, the holder check, and listed compounds. The new 👓 root is `egabo` (*body*, *one*). The house cast gets *swan* `azaze`, *lion* `ulezu` and *hibiscus* `ehalo`, all with different onsets. These spellings are phase 1 output only. Nothing outside `docs/proposals/` and the files above uses them.
+Every check is met: tails, the hook check, the holder check, and listed compounds. The new 👓 root is `agobo` (*body*, *one*). The house cast gets *swan* `azazo`, *lion* `ulozu` and *hibiscus* `ehalo`, all with different onsets. These spellings are phase 1 output only. Nothing outside `docs/proposals/` and the files above uses them.
 
 **Tuning to review:**
 
-- **Tails cut the confusing pairs by more than half.** The live lexicon has 3451 and the tails lexicon 1475, against a floor of 1251. The 224 pairs above the floor are the price of the first-consonant cost: English first consonants are skewed toward `b`, `g` and `z`, so matching them crowds those prefixes.
-- **Flags confuse 1.8% of flag–flag pairs** (610 of 34191; live 3.5%). Non-flags confuse 1.5% of their same-kind pairs (822 of 53113; live 4.1%). The flag base is one crowded kind; the rest are eleven smaller ones. Mixed pairs (one flag and one other same-kind root) are 43 of 2450 (1.8%). Flags are rarely core, and a learner looks them up.
-- **First-consonant weight, measured.** Each step up trades confusing pairs for matches. With the weight at 0 the run lands 6 pairs above the floor, so the annealer finds close to the best spread. The table is from the first fill, before the marks-vs-where move; the current report is the rerun:
+- **Tails cut the confusing pairs by more than half.** The live lexicon has 3451 and the tails lexicon 1478, against a floor of 1251. The 227 pairs above the floor are the price of the first-consonant cost: English first consonants are skewed toward `b`, `g` and `z`, so matching them crowds those prefixes.
+- **Flags confuse 1.8% of flag–flag pairs** (612 of 34191; live 3.5%). Non-flags confuse 1.6% of their same-kind pairs (825 of 53113; live 4.1%). The flag base is one crowded kind; the rest are eleven smaller ones. Mixed pairs (one flag and one other same-kind root) are 41 of 2450 (1.7%). Flags are rarely core, and a learner looks them up.
+- **First-consonant weight, measured.** Each step up trades confusing pairs for matches. With the weight at 0 the run lands 6 pairs above the floor, so the annealer finds close to the best spread. The table is from the first fill, before the marks-vs-where move and the job retune; the [current report](#phase-1-run) is the rerun after both:
 
   | First-consonant weight (`FIRST_W`) | Matches | Confusing pairs |
   |---|---|---|
@@ -282,10 +286,10 @@ Every check is met: tails, the hook check, the holder check, and listed compound
 
 **Kind and shape calls in the first fill** (the emoji subgroup seeded the draft; the label decided). Calls beyond the [edge rules](#kinds), for review:
 
-- **Shapes were spread to keep every cell under the capacity of an earlier in-cell rule.** The `o` defaults first overfilled several cells (creature, doing, food, body, nature, person, up to 69 rows). The current scoring counts pairs across a kind's shapes, so the spread no longer affects it.
+- **Jobs were spread under an earlier in-cell rule.** The `o` defaults first overfilled several cells. Scoring counts pairs across a kind's jobs, so the spread no longer affects it. A later pass dropped length-only `e` (long, tall, pointed) in favour of order, path, and rank.
 - **Holds (`a`):** herd, flock, school and colony animals (*sheep*, *cow*, *fish*, *penguin*, *ant*, *bee*). Garments that wrap the body, shoes and gloves. Vehicles that carry passengers (*car*, *bus*, *ship*, *airplane*), team sports (*soccer*, *rugby*), drinks and uncountable foods (*rice*, *butter*, *candy*).
 - **Takes away (`u`):** predators and pests (*wolf*, *eagle*, *rat*, *fly*). Cleaning things that remove dirt (*soap*, *broom*, *toothbrush*). Foods that hide a filling (*dumpling*, *burrito*). Sour or burning foods (*vinegar*, *pepper*). Every prohibition sign.
-- **Line (`e`):** long creatures and tall ones (*horse*, *giraffe*, *bug*), long foods (*banana*, *noodles*), ranked roles (*judge*, *teach*, *elder*), arrows, the clock family, and every zodiac sign (a belt in order).
+- **Order (`e`):** ranked roles (*judge*, *teach*, *elder*), paths and headings (*road*, *north*), clocks and the zodiac belt, skip marks, and doing that runs in sequence (*race*, *train*). Not merely long or tall: those default to `o` (*horse*, *banana*, *tower*, *pen*). Noodles and wrap-garments that used to sit here for length are `a` (a mass or a wrap). *Snake* is `u`.
 - **Kinds:** faces are *mind* unless the label names a thing (*mask*, *disguise* → *body*; *ranch* → *place*; *party* → *doing*). Gestures only a person makes are *person* (*wave*, *clap*, *thumbs-up*); bare hands are *body*. A being you address as someone is *person* (*ogre*, *vampire*, *alien*); an animal-shaped monster stays *creature* (*dragon*, *unicorn*). Measuring tools (*ruler*, *scale*, *thermometer*) and instruments are *counting*. Speakers and screens are *tool*. Colors, metals and gems are *nature*. The religion subgroup is *named*, except *peace* (*sign*), *atom* (*nature*) and *worship* (*person*). Zodiac signs are *counting* (a dated belt), not *sign*. The flag subgroup's non-country flags are *sign*, *doing* or *person* by label. Facility pictographs and compass headings that name a *where* (*traffic-light*, *north*, *accessible*) are *place*, same as *bus-stop* and *restroom*; a prohibition icon (*no-smoking*) stays *sign*. Scored games and races (*golf*, *baseball*, *dice*, *horse-race*) sit with *doing*, not *counting*.
 
 ### Phase 2: replace and retie {#phase-2}
@@ -307,7 +311,7 @@ Every check is met: tails, the hook check, the holder check, and listed compound
 6. **Regenerate:** run `npm run grammar-check`, `npm run english-helper-wordnet` and `npm run cheat-sheet-blocks -- --write`.
 7. **Docs:**
    - [Lexicon editing](../meta/lexicon.md): replace [root spellings](../meta/lexicon.md#root-spellings-come-from-convert-word) (the echo bullet) and [second consonant](../meta/lexicon.md#second-consonant) with the tail, the onset scoring and the two checks. Add the `kind` and `shape` columns and the edge rules.
-   - [phonology.md](../grammar/phonology.md#advanced) Advanced: a new section on root tails. It covers the twelve kinds with their anchors, the four shapes with the tie rule, and the free final vowel of named rows. It's taught as a memory aid, not a rule of grammar, and every dictionary view of a root links to it.
+   - [phonology.md](../grammar/phonology.md#advanced) Advanced: a new section on root tails. It covers the twelve kinds with their anchors, the four jobs with the tie rule, and the free final vowel of named rows. It's taught as a memory aid, not a rule of grammar, and every dictionary view of a root links to it.
    - [language-name.md](../meta/language-name.md) and every use of the name: the name chosen at the end of phase 1.
 8. **Measure:** rerun the report. It should match the accepted phase 1 report.
 9. **Follow-ups:** rerun the coverage tables in `number-mnemonic.md`. `number-respelling.md` re-picks its fillers.
@@ -333,11 +337,12 @@ On main today, `convert-word --lexicon --all` stops with `short roots too close 
 
 - **`number-mnemonic.md`:** a peg's second digit is now its root's **kind**. Under the respelled digits, every animal peg ends in 5 (`z`), every food peg in 2 (`d`), every flag peg in 9 (`n`), and so on. Every column of the 00–99 table fills from one kind. The mnemonic still never steers a spelling. Its coverage tables come from the echo-placement simulation and need a rerun.
 - **`number-respelling.md`:** its filler letters were picked by how rare each letter was as a root consonant under English-echo placement. Root tails set those frequencies by kind, so that proposal re-picks its fillers to fit the kind sizes settled here. This proposal doesn't adjust to it.
+- **`tail-suffix.md`:** listed compounds whose head is only the tail (`CV`). Depends on this letter map and on banning 3 + join + 3 compounds so a seven-letter stem can be five-letter left + suffix. Not started here.
 
 ## Costs
 
-1. **Kinds and shapes are judgment calls at the edges.** Is a basket a tool or a container? Is a lamp a tool or a fixture? The edge rules and the tie rule settle most cases; the columns record the call so it's made once.
-2. **Same-kind neighbors share a tail.** *Cat* and *dog* end the same and differ only in the onset. The [onset scoring](#onset-scoring) keeps same-kind roots from sharing their first two letters where it can. Past 48 rows a kind must have some such pairs: 1251 at the floor, and 1475 in the [phase 1 run](#phase-1-run), against 3451 in the live lexicon.
+1. **Kinds and jobs are judgment calls at the edges.** Is a basket a tool or a container? Is a lamp a tool or a fixture? The edge rules and the tie rule settle most cases; the columns record the call so it's made once.
+2. **Same-kind neighbors share a tail.** *Cat* and *dog* end the same and differ only in the onset. The [onset scoring](#onset-scoring) keeps same-kind roots from sharing their first two letters where it can. Past 48 rows a kind must have some such pairs: 1251 at the floor, and 1478 in the [phase 1 run](#phase-1-run), against 3451 in the live lexicon.
 3. **The same letter has two jobs by position.** At the start of a word `z` marks the subject; in a tail it means creature. The parser isn't affected, since positions differ, and the role letters are already the anchors. Teach the tails as a memory aid, never as a rule of grammar.
 4. **Named rows are crowded.** 271 rows share one kind, so some flags will be one letter apart. Flags are rarely core, and a learner looks them up.
 5. **Two seams read by knowing the roots.** Nine-letter dictionary words and six-letter hook compounds on three-letter roots no longer read by letter position. The lints keep each to one reading.
@@ -347,7 +352,8 @@ On main today, `convert-word --lexicon --all` stops with `short roots too close 
 | Alternative | Why not |
 |-------------|---------|
 | **Keep English echo as the main criterion** | It helps English speakers produce a half-remembered word, and little else; it gives nothing to other learners and leaves the vowels arbitrary ([motivation](#motivation)). Kept as a first-consonant cost, which carries most of its recall value, and a tie-break. |
-| **Cross-language sound symbolism** (round ↔ `m l o`, small ↔ `e u`, body parts naming themselves: lips `m`, nose `n`, tongue `l`) | Agazan's letters cover it poorly: voicing is free, there's no /i/, and `r` isn't trilled. It applies strongly to only about a quarter of rows, and it rests on outside intuitions, not on anything the learner learns in Agazan. The tail's shape vowels already capture its main contrasts (round `o`, container `a`, long `e`). |
+| **Cross-language sound symbolism** (round ↔ `m l o`, small ↔ `e u`, body parts naming themselves: lips `m`, nose `n`, tongue `l`) | Agazan's letters cover it poorly: voicing is free, there's no /i/, and `r` isn't trilled. It applies strongly to only about a quarter of rows, and it rests on outside intuitions, not on anything the learner learns in Agazan. The tail's job vowels already capture its main contrasts (default `o`, container `a`, path `e`). |
+| **Per-kind subcategory vowels** (`a` = mammal on creatures, room on places, …) | A suffix needs the vowel to compose with any kind. Forty-eight cell meanings drop the vowel series and recreate a Wilkins taxonomy inside each kind (`tail-suffix.md`). |
 | **Sound symbolism on the onset** | The onset is where distinctiveness lives. Symbolism there would pull related meanings toward the same first letters, where confusion costs most, and would compete with the tail's shape vowel. |
 | **A three-letter tail** (middle vowel too) | Leaves 48 onsets per cell, so most roots' nearest neighbor shares their kind and shape ([root shape](#root-shape)). |
 | **Kind at the start of the root** (the order of Wilkins-style philosophical languages) | Related words would share their most salient letters, and a slip would land on a sister meaning. |
@@ -361,7 +367,7 @@ The number of respellings and the retie effort aren't reasons to reject this. Th
 
 - every word has one parse (`grammar-check`);
 - every listed compound and every possible hook compound has one split;
-- a learner who knows a thing's kind and shape can predict its tail;
+- a learner who knows a thing's kind and job can predict its tail;
 - roots one letter apart aren't taught close together (the [phase 3](#phase-3) lint).
 
 The language name changing with its root isn't a reason to pin 👓.
