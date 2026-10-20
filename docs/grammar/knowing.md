@@ -1,6 +1,6 @@
 # Knowing {#knowing}
 
-English *I think* can be a guess, a memory, or a conclusion from clues, and the listener has to work out which. Agazan keeps the ordinary verb and adds a `/th/` stance word that says which: **MAY** for what could be so, or a word for how you know it. So a guess never passes for a report, and a report says what it rests on.
+English *I think* can be a guess, a memory, or a conclusion from clues, and the listener has to work out which. Egabon keeps the ordinary verb and adds a `/th/` stance word that says which: **MAY** for what could be so, or a word for how you know it. So a guess never passes for a report, and a report says what it rests on.
 
 ## Beginner {#beginner}
 
@@ -23,7 +23,7 @@ Without the `/th/` word, you are reporting that it happens. As a plain noun the 
 
 The ending on MAY says whether you mean to follow up on the *could be*: with **-l** you will find out, with **-m** you leave that unsaid (the default), and with **-r** it is a passing thought you are not pursuing. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). No ending is better than the others: finding out, leaving it at *may*, and letting it go are all fine choices. With **-n**, the word is an ordinary [name](word-endings.md#proper-name--n).
 
-| Agazan | Use | English | Same root as | Cue |
+| Egabon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thovul`** | could be, and you are **committed to settling it** | *may, I'll find out* / *let's find out* | `ovul` *thought* | 💭: balloon plus a magnifying glass (**-l** the full run) |
 | **`thovum`** | could be (default; follow-up unstated) | *may* / *could be* | `ovul` *thought* | 💭: balloon (**-m** middle) |
@@ -59,7 +59,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *departure* | `veyorul` | 🛫 |
 | *cry* | `vugamul` | 😭 |
@@ -69,7 +69,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -83,7 +83,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sandwich* | `azal` |
 | *punch* | `vabavul` |
 
-#### English → Agazan {#beginner-english-to-agazan}
+#### English → Egabon {#beginner-english-to-egabon}
 
 **1.** *Ehalon may be leaving Uzazon.*
 
@@ -133,7 +133,7 @@ y-question | z-Ehalon | v-pay | th-MAY
 z-Olozun | th-MAY | v-tell | b-Uzazon
 :::
 
-#### Agazan → English {#beginner-agazan-to-english}
+#### Egabon → English {#beginner-egabon-to-english}
 
 **1.** `zuzazon thovum dawadal vabovul.`
 
@@ -205,7 +205,7 @@ Without **`thovum`**, the sentence reports that Ehalon is leaving.
 <a id="evidential"></a>
 <a id="content-readings"></a>
 
-English often says how you know a claim: *I saw it*, *I heard*, *I figured*. Agazan keeps the ordinary verb and adds a `/th/` stance word for that, called an **evidential**. It names the **channel** the claim reached you through: sensing it now, memory, a pattern of cases, clues, a proof from premises, a report, or a gut sense. So the same walk can be reported seven ways, and the listener always knows what your claim rests on. Under other role letters the channel roots are ordinary words (`vodol` *to attest*, `dewal` *an ear*).
+English often says how you know a claim: *I saw it*, *I heard*, *I figured*. Egabon keeps the ordinary verb and adds a `/th/` stance word for that, called an **evidential**. It names the **channel** the claim reached you through: sensing it now, memory, a pattern of cases, clues, a proof from premises, a report, or a gut sense. So the same walk can be reported seven ways, and the listener always knows what your claim rests on. Under other role letters the channel roots are ordinary words (`vodol` *to attest*, `dewal` *an ear*).
 
 The seven channels come in four kinds. Two are **direct**: you sensed it yourself, now (LIVE) or earlier (MEMORY). Three are **reasoned**: you worked it out from similar cases (PATTERN), from clues about this case (CLUES), or from premises it must follow from (DEDUCED). One is **received**: someone else said or wrote it (REPORTED). One is **internal**: a sense you cannot fully spell out (INTUITION).
 
@@ -225,7 +225,7 @@ Verbs have **no past or future form**. Two channels place the event in time beca
 
 **For *could be* with nothing behind it, use:** [MAY](#may). When English *I think* means you have reasons (you worked it out, you heard it, you sense it), pick the channel for those reasons instead.
 
-| Agazan | Use | English | Same root as | Cue |
+| Egabon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thodom`** | LIVE: firsthand, sensed now | *live* / *from the scene* | `odol` *attest* | 👁️‍🗨️: sensing-and-saying while it is in view, in earshot, or on your skin |
 | **`thevom`** | MEMORY: firsthand, remembered | *from memory* | `evol` *fishing* | 🎣: you pull something back |
@@ -346,7 +346,7 @@ English *it turns out*, *to my surprise*, and *so … after all* say the news ra
 
 The ending says how firm the expectation was that the news overturned. If you do not know, use **-m**.
 
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | `thezul` | it overturns a firm expectation | *astonishingly*, *I never expected that* | **-l** ≈ the expectation was locked in |
 | `thezum` | it runs against what you expected (default) | *it turns out*, *surprisingly* | **-m** ≈ the ordinary case |
@@ -376,7 +376,7 @@ The mirative says only that the news was unexpected, not whether it is good or b
 
 ### Forecasts (`bral`) {#forecast}
 
-English *will* can make a forecast: a claim that something will happen. Agazan has no *will* word for this. Use a channel and put **`bral`** right after it in `/b/`: a number with a plus sign and no digits, meaning *some time after now*. Because a forecast needs a channel, it always says what it rests on; for a hunch, that channel is INTUITION. The mirror, **`brul`**, is *some time before now*, for a past claim with no measured amount.
+English *will* can make a forecast: a claim that something will happen. Egabon has no *will* word for this. Use a channel and put **`bral`** right after it in `/b/`: a number with a plus sign and no digits, meaning *some time after now*. Because a forecast needs a channel, it always says what it rests on; for a hunch, that channel is INTUITION. The mirror, **`brul`**, is *some time before now*, for a past claim with no measured amount.
 
 > `thobam bral vurelal.`
 >
@@ -478,7 +478,7 @@ Footage works the same way. While you watch, it is LIVE with the device as the s
 >
 > "Uzazon walked, as I remember from the camera."
 
-| Agazan | Use | English | Same root as | Cue |
+| Egabon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thodom`** | concurrent observation, by any sense | *live* / *from the scene* | `odol` *attest* | 👁️‍🗨️: sensing-and-saying while it is in view |
 | **`thevom`** | reconstructive / recalled observation | *I remember* / *from memory* | `evol` *fishing* | 🎣: retrieval from the water |
@@ -486,7 +486,7 @@ Footage works the same way. While you watch, it is LIVE with the device as the s
 ### Carrying a channel forward {#carry-forward}
 <a id="channel-frame-carry"></a>
 
-English tells a story with one *they say* or *I remember* at the start, and every sentence after it rests on the same ground. Agazan does the same. Once you put a channel on a claim, your later claims with no channel keep it: the channel is your **frame**. You name the channel once, then keep talking.
+English tells a story with one *they say* or *I remember* at the start, and every sentence after it rests on the same ground. Egabon does the same. Once you put a channel on a claim, your later claims with no channel keep it: the channel is your **frame**. You name the channel once, then keep talking.
 
 > `zolozun thewam veyorul. zolozun varuvel. zolozun vezeyol.`
 >
@@ -532,7 +532,7 @@ A [quote](spans.md#writing) keeps its speaker's frame: nothing carries into it f
 <a id="former-climate"></a>
 <a id="episode-standing"></a>
 
-English *has left* and *used to tell* mix two things: when the event happened, and how it stands now. Agazan places events in time with other tools: [*before* / *after* / *while*](dependents.md#time-poles), a clock or date, [LIVE](#live-vs-memory) / [MEMORY](#live-vs-memory), or a [forecast](#forecast). Two `/h/` words keep the books on how it stands. **RESIDUE** says the outcome of an event is still in effect now. **FORMER** says a usual pattern is not one you are claiming for now. Neither says when anything happened, so use them alongside a channel or a when-frame, never as a past or present tense.
+English *has left* and *used to tell* mix two things: when the event happened, and how it stands now. Egabon places events in time with other tools: [*before* / *after* / *while*](dependents.md#time-poles), a clock or date, [LIVE](#live-vs-memory) / [MEMORY](#live-vs-memory), or a [forecast](#forecast). Two `/h/` words keep the books on how it stands. **RESIDUE** says the outcome of an event is still in effect now. **FORMER** says a usual pattern is not one you are claiming for now. Neither says when anything happened, so use them alongside a channel or a when-frame, never as a past or present tense.
 
 **RESIDUE** (`amo`) says the result still counts: an unpaid tab, a door that is still shut. Without it, you make no claim that anything is left over (the event is over and done, or nothing remains from it). As a plain noun, `zamom` is *debt*. (cue: 💰 a debt still on the books)
 
@@ -580,7 +580,7 @@ English *has left* and *used to tell* mix two things: when the event happened, a
 
 Do not write **`henom`** right before **`hual`**: that spot holds the restrictor's list of occasions (*always except when …*). Put **`hual`** first (bare *always*) and FORMER after the verb, where a channel goes on a [general claim](#universality).
 
-| Agazan | Use | English | Same root as | Cue |
+| Egabon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hamom`** | outcome still in effect | *still counts* / residue | `amom` *debt* | 💰: unpaid balance still on the books |
 | **`henom`** | usual pattern not claimed for now | *former climate* | `enom` *emptiness* | 🪹: the nesting season is over |
@@ -589,9 +589,9 @@ Put RESIDUE and FORMER on `/h/`, anywhere in the sentence: like an [intention ad
 
 ### Already, still, not yet, no longer {#phasal}
 
-English *already*, *still*, *not yet*, and *no longer* do not place an event in time. Each compares what is true **now** with a change: has it come, or not? Like RESIDUE, that is about how things stand now, not when something happened, so Agazan uses four `/h/` words, not a tense. (cue: each root pictures the stage the change is at)
+English *already*, *still*, *not yet*, and *no longer* do not place an event in time. Each compares what is true **now** with a change: has it come, or not? Like RESIDUE, that is about how things stand now, not when something happened, so Egabon uses four `/h/` words, not a tense. (cue: each root pictures the stage the change is at)
 
-| Agazan | Use | English | Same root as | Cue |
+| Egabon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hoham`** | the change has happened | *already* | `ohal` *hatch* | 🐣: the chick is already out |
 | **`hagem`** | the state goes on | *still* | `agel` *anchor* | ⚓: the ship is held where it was |
@@ -619,7 +619,7 @@ English *already*, *still*, *not yet*, and *no longer* do not place an event in 
 The ending says how settled the current stage is, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). Use **-m** when it could change back, or when you do not know. Use **-l** when it is not expected to. Use **-r** when it holds only for now: it is likely to change back soon, or, on *not yet*, the change may never come.
 
 <!-- cheat-sheet: knowing-intending -->
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `hohal` | done, and it will stay done | *already, for good* |
 | `hagel` | goes on, with no end in sight | *still, and it will keep on* |
@@ -699,7 +699,7 @@ A legend that people pass on as true is not NOTIONAL: it is REPORTED, often with
 
 The ending on NOTIONAL says what the imagining is for: with **-l** you rehearse a scene to prepare for doing it, with **-m** you picture it with no further purpose (the default), and with **-r** you toy with a *what if* for the moment. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing), like the endings on [PLAN](intention.md#plan-predict). With **-n**, the word is an ordinary [name](word-endings.md#proper-name--n).
 
-| Agazan | Use | English | Same root as | Cue |
+| Egabon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thavol`** | rehearse a possible scene to prepare for action | *let’s practice…* / *try acting as if…* | `avol` *theater* | 🎭: practice a scene |
 | **`thavom`** | imagine a scene without a further purpose (default) | *imagine…* / *as if…* | `avol` *theater* | 🎭: picture a scene |
@@ -829,7 +829,7 @@ English *contrary to what I was told* and *against my gut* say the event went ag
 ### Whose view (holder) {#holder}
 <a id="holder-seam"></a>
 
-English *Uzazon thinks…*, *she's upset*, and *he doubts it* report what is in someone else's mind as if you could see it. In Agazan, you name whose view a sentence gives (the **holder**) by joining their name onto a channel, [MAY](#may), or [NOTIONAL](#notional). Keep that word's own last letter (**-l**, **-m**, or **-r**) and write the name straight after it: `thunem` plus `uzazon` is `thunemuzazon`. The joining letter is the **seam**. This is the only way to name a holder, so you can never report someone's view without saying how you know it. (cue: the name hangs off the way you know it)
+English *Uzazon thinks…*, *she's upset*, and *he doubts it* report what is in someone else's mind as if you could see it. In Egabon, you name whose view a sentence gives (the **holder**) by joining their name onto a channel, [MAY](#may), or [NOTIONAL](#notional). Keep that word's own last letter (**-l**, **-m**, or **-r**) and write the name straight after it: `thunem` plus `uzazon` is `thunemuzazon`. The joining letter is the **seam**. This is the only way to name a holder, so you can never report someone's view without saying how you know it. (cue: the name hangs off the way you know it)
 
 > `zolozun thunemuzazon veyorul.`
 >
@@ -1031,7 +1031,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *mute* | `vumuwul` | 🔇 |
 | *cloud* | `agolol` | ☁️ |
@@ -1049,7 +1049,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -1065,7 +1065,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *punch* | `vabavul` |
 | *sleep* | `vuzevol` |
 
-#### English → Agazan {#intermediate-english-to-agazan}
+#### English → Egabon {#intermediate-english-to-egabon}
 
 **1.** *I can see that Uzazon has left and is still gone.*
 
@@ -1115,7 +1115,7 @@ z-Olozun | th-MIRATIVE | th-CLUES-Uzazon | v-sing
 z-Olozun | th-NOTIONAL | v-mute | d-radio
 :::
 
-#### Agazan → English {#intermediate-agazan-to-english}
+#### Egabon → English {#intermediate-egabon-to-english}
 
 **1.** `zolozun thevom bugawol vezeyol.`
 
@@ -1230,7 +1230,7 @@ Only words about **how you know** or **how things stand** move to `/w/` this way
 <a id="ago"></a>
 <a id="time-offset"></a>
 
-English *three hours ago* and *in three hours* count from now. Agazan counts from the channel instead: put a [measure phrase](numbers-applied.md#measure-phrases) in `/b/` immediately after the evidential. Any other noun there is the [source](#source); a time measure is the offset. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
+English *three hours ago* and *in three hours* count from now. Egabon counts from the channel instead: put a [measure phrase](numbers-applied.md#measure-phrases) in `/b/` immediately after the evidential. Any other noun there is the [source](#source); a time measure is the offset. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
 
 > `zuzazon thevom balarum grurel voworel.`
 >
@@ -1322,7 +1322,7 @@ With an [as-of](relations.md#as-of) pair, the offset counts from the as-of momen
 
 #### Now and today {#now}
 
-Agazan has no short *now* word. Say *now* with an offset of **zero**: the event sits no time away from the moment you speak. The channel stays, so *now* still says how you know it.
+Egabon has no short *now* word. Say *now* with an offset of **zero**: the event sits no time away from the moment you speak. The channel stays, so *now* still says how you know it.
 
 > `zolozun thunem balarum grazol vuzevol.`
 >
@@ -1411,14 +1411,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *cat* | `egazol` | 🐈 |
 | *hat* | `ahobol` | 🧢 |
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -1437,7 +1437,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *sleep* | `vuzevol` |
 | *see* | `vanobol` |
 
-#### English → Agazan {#advanced-english-to-agazan}
+#### English → Egabon {#advanced-english-to-egabon}
 
 **1.** *Olozun sees a hat that I can see is red.*
 
@@ -1463,7 +1463,7 @@ z-Uzazon | [th-MEMORY | [b-hour | g-minus-three]] | v-write
 [z-everything.open | g-cat] | v-sleep | th-PATTERN
 :::
 
-#### Agazan → English {#advanced-agazan-to-english}
+#### Egabon → English {#advanced-egabon-to-english}
 
 **1.** `zuzazon hual vehuhol thobar.`
 

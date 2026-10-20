@@ -372,16 +372,16 @@ export type CompareMorphGlossResult = {
 };
 
 export type ExampleBlockPair = {
-  agazan: string;
+  egabon: string;
   morph: string;
-  agazanIndex: number;
+  egabonIndex: number;
 };
 
 export type TeachBlock = {
-  agazan: string;
+  egabon: string;
   morph: string | null;
   loose: string | null;
-  agazanIndex: number;
+  egabonIndex: number;
 };
 
 /** English / TAG body of one word (no PoS prefix). Overlay chips use this. */
@@ -437,7 +437,7 @@ export function morphGlossFor(
   return `${prefix}-${body}`;
 }
 
-/** Morph line for an Agazan string: words joined by ` | `, units in `[ … ]` (glosses.md § Phrase brackets). */
+/** Morph line for an Egabon string: words joined by ` | `, units in `[ … ]` (glosses.md § Phrase brackets). */
 export type MorphGlossOptions = {
   /** Throw when the sentence does not parse, instead of glossing word by word (lint uses this). */
   strict?: boolean;
@@ -448,7 +448,7 @@ export function morphGlossLine(text: string, tables: ClassifyTables, options: Mo
 }
 
 function morphGlossLineIn(text: string, tables: ClassifyTables, options: MorphGlossOptions): string {
-  const normalized = normalizeAgazan(text);
+  const normalized = normalizeEgabon(text);
   const finalMark = text.trim().match(/[?!]$/)?.[0];
   const { words, ctxByIndex, parsed } = analyzeLine(normalized, tables, options);
   const braces: number[] = [];
@@ -540,13 +540,13 @@ function lastLeafIndex(node: GlossNode): number | undefined {
 
 /** Each word's leaf gloss in its line context (inverse index input). */
 export function morphGlossWords(text: string, tables: ClassifyTables): { raw: string; gloss: string }[] {
-  const { words, ctxByIndex } = analyzeLine(normalizeAgazan(text), tables);
+  const { words, ctxByIndex } = analyzeLine(normalizeEgabon(text), tables);
   return words.map((word, i) => ({ raw: word.raw, gloss: wordGloss(word, tables, ctxByIndex[i] ?? {}) }));
 }
 
 /** Per-word bracket marks for the gloss overlay (same tree as {@link morphGlossLine}). */
 export function morphGlossBrackets(text: string, tables: ClassifyTables): WordBrackets[] {
-  const normalized = normalizeAgazan(text);
+  const normalized = normalizeEgabon(text);
   const { words, parsed } = analyzeLine(normalized, tables);
   const braces: number[] = [];
   let wordIdx = 0;
@@ -657,21 +657,21 @@ export function normalizeMorphLine(line: string): string {
     .replace(/[ \t]+/g, " ");
 }
 
-export function normalizeAgazan(text: string): string {
+export function normalizeEgabon(text: string): string {
   let t = text.normalize("NFC").trim();
   if (/[.?!]$/.test(t)) t = t.slice(0, -1).trimEnd();
   return t;
 }
 
 export function compareMorphGloss(
-  agazan: string,
+  egabon: string,
   documented: string,
   tables: ClassifyTables,
 ): CompareMorphGlossResult {
   const expected = normalizeMorphLine(documented);
   try {
     const actual = normalizeMorphLine(
-      morphGlossLine(agazan.normalize("NFC").trim(), tables, { strict: true }),
+      morphGlossLine(egabon.normalize("NFC").trim(), tables, { strict: true }),
     );
     return { ok: expected === actual, expected, actual };
   } catch (error) {
@@ -708,13 +708,13 @@ function morphSegmentBodyForLooseCompare(segment: string): string {
  * See [glosses.md#example-block](../../docs/meta/glosses.md#example-block).
  */
 export function morphRedundantWithLoose(
-  agazan: string,
+  egabon: string,
   loose: string,
   tables: ClassifyTables,
 ): boolean {
   let canonical: string;
   try {
-    canonical = normalizeMorphLine(morphGlossLine(normalizeAgazan(agazan), tables, { strict: true }));
+    canonical = normalizeMorphLine(morphGlossLine(normalizeEgabon(egabon), tables, { strict: true }));
   } catch {
     return false;
   }
@@ -782,7 +782,7 @@ function normalizeBlockMorphLine(source: string): string {
   return source.replace(/\s+·\s+/g, " | ").replace(/\s+;\s+/g, " | ");
 }
 
-/** glosses.md-style teach blockquotes: backticked Agazan, optional morph, optional quoted loose English. */
+/** glosses.md-style teach blockquotes: backticked Egabon, optional morph, optional quoted loose English. */
 export function extractTeachBlocks(markdown: string): TeachBlock[] {
   const blocks: TeachBlock[] = [];
   const lines = markdown.split(/\r?\n/);
@@ -797,8 +797,8 @@ export function extractTeachBlocks(markdown: string): TeachBlock[] {
     const nonempty = block.filter((row) => row.text.trim().length > 0);
     const first = nonempty[0];
     if (!first) continue;
-    const agazan = unwrapCode(first.text.trim());
-    if (!agazan) continue;
+    const egabon = unwrapCode(first.text.trim());
+    if (!egabon) continue;
 
     let morph: string | null = null;
     let loose: string | null = null;
@@ -816,7 +816,7 @@ export function extractTeachBlocks(markdown: string): TeachBlock[] {
       }
     }
 
-    blocks.push({ agazan, morph, loose, agazanIndex: first.abs });
+    blocks.push({ egabon, morph, loose, egabonIndex: first.abs });
   }
   return blocks;
 }
@@ -829,9 +829,9 @@ export function extractExampleBlocks(markdown: string): ExampleBlockPair[] {
   for (const block of extractTeachBlocks(markdown)) {
     if (!block.morph) continue;
     pairs.push({
-      agazan: block.agazan,
+      egabon: block.egabon,
       morph: block.morph,
-      agazanIndex: block.agazanIndex,
+      egabonIndex: block.egabonIndex,
     });
   }
   return pairs;
@@ -845,7 +845,7 @@ function stripBlockquote(line: string): string {
   return line.replace(/^[ \t]*>[ \t]?/, "");
 }
 
-/** Agazan in a backtick span, or in `<code>` with `<` / `>` as entities (a raw `<…>` span is a Vue tag in Markdown). */
+/** Egabon in a backtick span, or in `<code>` with `<` / `>` as entities (a raw `<…>` span is a Vue tag in Markdown). */
 function unwrapCode(text: string): string | null {
   const m = text.match(/^`([^`]+)`\.?$/);
   if (m) return m[1]!;
@@ -1522,7 +1522,7 @@ function writingSpanLabel(
 function contentBody(word: LexWord, roots: string[], tables: ClassifyTables): string {
   if (word.overlay) return overlayLabel(word.overlay);
   if (word.lexicalCompound) {
-    if (isNameEnding(word.ending)) return titleAgazanName(roots[0] ?? "compound", true);
+    if (isNameEnding(word.ending)) return titleEgabonName(roots[0] ?? "compound", true);
     const lemma = word.ending === "m" ? word.rootGloss?.abstract : word.rootGloss?.concrete;
     return hyphenEnglish(lemma || word.rootGloss?.concrete || roots[0] || "compound");
   }
@@ -1606,7 +1606,7 @@ function rootSense(
   if (ending === "n" || opts.named) {
     if (houseCast()[root]) return houseCast()[root]!;
     if (specialPronoun()[root]) return specialPronoun()[root]!;
-    if (opts.named) return titleAgazanName(root, opts.nameLast !== false);
+    if (opts.named) return titleEgabonName(root, opts.nameLast !== false);
   }
 
   if (tables.sakeGloss.has(root) && opts.sake) {
@@ -1622,7 +1622,7 @@ function rootSense(
   return root;
 }
 
-function titleAgazanName(root: string, withN: boolean): string {
+function titleEgabonName(root: string, withN: boolean): string {
   const stem = withN ? `${root}n` : root;
   return stem.charAt(0).toUpperCase() + stem.slice(1);
 }

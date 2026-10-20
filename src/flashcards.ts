@@ -53,21 +53,21 @@ export type PackId = (typeof PACK_IDS)[number];
 export type PackDeck = { name: string; id: number; notes: FlashcardNote[] };
 export type Pack = { id: PackId; decks: PackDeck[] };
 
-const DECK_ROOT = "Agazan";
+const DECK_ROOT = "Egabon";
 
 /** Anki GUID from the source and stable key, never from row order. */
 export function noteGuid(source: NoteSource, key: string): string {
-  return createHash("sha256").update(`agazan/${source}/${key}`).digest("base64url").slice(0, 12);
+  return createHash("sha256").update(`egabon/${source}/${key}`).digest("base64url").slice(0, 12);
 }
 
 /** Stable Anki deck id from the deck name, in genanki's recommended range [2^30, 2^31). */
 export function deckId(name: string): number {
-  return (1 << 30) + (createHash("sha256").update(`agazan-deck/${name}`).digest().readUInt32BE(0) % (1 << 30));
+  return (1 << 30) + (createHash("sha256").update(`egabon-deck/${name}`).digest().readUInt32BE(0) % (1 << 30));
 }
 
-/** `speech-moves.md#intermediate-practice` → `agazan::core::speech-moves::intermediate`. */
+/** `speech-moves.md#intermediate-practice` → `egabon::core::speech-moves::intermediate`. */
 function coreTag(cell: string, band: Band): string {
-  return `agazan::core::${cell.split("#")[0]!.replace(/\.md$/, "")}::${band}`;
+  return `egabon::core::${cell.split("#")[0]!.replace(/\.md$/, "")}::${band}`;
 }
 
 function earliestBand(bands: readonly (Band | undefined)[]): Band | undefined {
@@ -90,7 +90,7 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoot
     key: r.root,
     guid: noteGuid("root", r.root),
     fields: { ...empty, front: r.root, concrete: r.concrete, abstract: r.abstract, aliases: (r.englishAliases ?? []).join(", "), mnemonic: r.mnemonic },
-    tags: ["agazan::root", ...coreTags("root", r.root, r.core)],
+    tags: ["egabon::root", ...coreTags("root", r.root, r.core)],
     core: r.core ?? "",
   }));
 
@@ -103,7 +103,7 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoot
     key: r.stem,
     guid: noteGuid("compound", r.stem),
     fields: { ...empty, front: r.stem, concrete: r.concrete, abstract: r.abstract, parts: `${part(r.left)} + ${r.join} + ${part(r.right)}`, mnemonic: r.mnemonic },
-    tags: ["agazan::compound", ...coreTags("compound", r.stem, r.core)],
+    tags: ["egabon::compound", ...coreTags("compound", r.stem, r.core)],
     core: r.core ?? "",
   }));
 
@@ -125,10 +125,10 @@ export function buildNotes(inputs: Omit<FlashcardInputs, "pageTitle" | "sakeRoot
       guid: noteGuid("overlay", senseForm),
       fields: { ...empty, front: senseForm, concrete: first.gloss, abstract: first.definition, mnemonic: first.mnemonic, kind: first.kind },
       tags: [
-        "agazan::overlay",
-        `agazan::overlay::${first.kind}`,
-        ...[...new Set(rows.map((r) => r.pos))].map((pos) => `agazan::pos::${pos}`),
-        ...(stage ? [`agazan::stage::${stage}`] : []),
+        "egabon::overlay",
+        `egabon::overlay::${first.kind}`,
+        ...[...new Set(rows.map((r) => r.pos))].map((pos) => `egabon::pos::${pos}`),
+        ...(stage ? [`egabon::stage::${stage}`] : []),
       ],
       core: "",
     };
@@ -227,7 +227,7 @@ export function packTsv(pack: Pack): string {
   const lines = [
     "#separator:tab",
     "#html:false",
-    "#notetype:Agazan lexicon",
+    "#notetype:Egabon lexicon",
     "#deck column:1",
     "#guid column:2",
     `#tags column:${NOTE_FIELDS.length + 3}`,

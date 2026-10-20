@@ -12,7 +12,7 @@ export type UnknownWord = {
  * lexicon has the word. Walk a parse result and list every word whose reading is `unknown`; an
  * unlisted compound stem shows up here with its possible split. Words the lexicon lists
  * (published roots, `lexicon-compounds.csv` stems, overlays) are not reported. An opaque or foreign
- * span is not Agazan, so it is skipped; a cite, mention, or aside is checked by its interior words.
+ * span is not Egabon, so it is skipped; a cite, mention, or aside is checked by its interior words.
  */
 export function unknownWords(result: unknown): UnknownWord[] {
   const found: UnknownWord[] = [];

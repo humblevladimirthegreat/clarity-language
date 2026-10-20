@@ -136,14 +136,14 @@ describe("extractFreeEnglish", () => {
     assert.equal(lines.length, 2);
     assert.deepEqual(lines[0], {
       kind: "example",
-      agazan: "zuzazon voworel.",
+      egabon: "zuzazon voworel.",
       morph: null,
       text: '"Uzazon walks." (alone)',
       index: md.indexOf('"Uzazon walks."'),
       delimiter: '"',
       split: { sentence: "Uzazon walks.", note: "alone", parts: ["Uzazon walks."], join: "one" },
     });
-    assert.equal(lines[1]!.agazan, "zuzazon vodeyel. zaxodeyer vuzevol.");
+    assert.equal(lines[1]!.egabon, "zuzazon vodeyel. zaxodeyer vuzevol.");
     assert.equal(lines[1]!.morph, "z-Uzazon | v-teach . z-←agent-x-teach | v-sleep");
   });
 
@@ -151,7 +151,7 @@ describe("extractFreeEnglish", () => {
     const md = [
       "### Practice {#beginner-practice}",
       "",
-      "#### English → Agazan {#beginner-english-to-agazan}",
+      "#### English → Egabon {#beginner-english-to-egabon}",
       "",
       "**1.** *Uzazon walks.* (alone)",
       "",
@@ -161,7 +161,7 @@ describe("extractFreeEnglish", () => {
       "z-Uzazon | v-walk",
       ":::",
       "",
-      "#### Agazan → English {#beginner-agazan-to-english}",
+      "#### Egabon → English {#beginner-egabon-to-english}",
       "",
       "**1.** `zuzazon voworel.`",
       "",
@@ -179,11 +179,11 @@ describe("extractFreeEnglish", () => {
       "`zuzazon voworel.`",
       ":::",
     ].join("\n");
-    const lines = extractFreeEnglish(md).map(({ kind, agazan, morph, text }) => ({ kind, agazan, morph, text }));
+    const lines = extractFreeEnglish(md).map(({ kind, egabon, morph, text }) => ({ kind, egabon, morph, text }));
     assert.deepEqual(lines, [
-      { kind: "en-ag", agazan: "zuzazon voworel.", morph: "z-Uzazon | v-walk", text: "*Uzazon walks.* (alone)" },
-      { kind: "ag-en", agazan: "zuzazon voworel.", morph: "z-Uzazon | v-walk", text: "*Uzazon walks.* (alone)" },
-      { kind: "fix", agazan: "zuzazon voworel.", morph: null, text: "*Uzazon walks.*" },
+      { kind: "en-ag", egabon: "zuzazon voworel.", morph: "z-Uzazon | v-walk", text: "*Uzazon walks.* (alone)" },
+      { kind: "ag-en", egabon: "zuzazon voworel.", morph: "z-Uzazon | v-walk", text: "*Uzazon walks.* (alone)" },
+      { kind: "fix", egabon: "zuzazon voworel.", morph: null, text: "*Uzazon walks.*" },
     ]);
   });
 });
@@ -208,24 +208,24 @@ describe("tableEnglish", () => {
   const sheet = (rows: string[], header = "| Job | Example | English | Stage |") =>
     [header, "|-----|---------|---------|-------|", ...rows].join("\n");
 
-  it("reads italic English cells beside an Agazan phrase or sentence", () => {
+  it("reads italic English cells beside an Egabon phrase or sentence", () => {
     const md = sheet(["| Walk | `zuzazon voworel.` | *Uzazon walks.* (alone) | B |", "| Kin | `grebuwol` | the layer above the focus | A |"]);
     assert.deepEqual(
-      tableEnglish(md).map(({ agazan, text }) => ({ agazan, text })),
-      [{ agazan: "zuzazon voworel.", text: "*Uzazon walks.* (alone)" }],
+      tableEnglish(md).map(({ egabon, text }) => ({ egabon, text })),
+      [{ egabon: "zuzazon voworel.", text: "*Uzazon walks.* (alone)" }],
     );
-    assert.deepEqual(tableEnglish(sheet(["| `hadem` | here | *here*, *this* | B |"], "| Agazan | Use | English | Stage |")), []);
+    assert.deepEqual(tableEnglish(sheet(["| `hadem` | here | *here*, *this* | B |"], "| Egabon | Use | English | Stage |")), []);
     assert.deepEqual(tableEnglish(sheet(["| Join | `A xol B` | *(A or B)* | B |"])), []);
-    assert.deepEqual(tableEnglish("| English | Agazan |\n|---|---|\n| *walks, strolls* | `zuzazon voworel.` |"), []);
+    assert.deepEqual(tableEnglish("| English | Egabon |\n|---|---|\n| *walks, strolls* | `zuzazon voworel.` |"), []);
   });
 
   it("splits pieces and pairs them with the Example pieces", () => {
     const md = sheet(["| Acts | `yel voworel.` · `yul voworel.` | *Walk!* · *Don't walk.* (a ban) | B |"]);
     assert.deepEqual(
-      tableEnglish(md).map(({ agazan, text }) => ({ agazan, text })),
+      tableEnglish(md).map(({ egabon, text }) => ({ egabon, text })),
       [
-        { agazan: "yel voworel.", text: "*Walk!*" },
-        { agazan: "yul voworel.", text: "*Don't walk.* (a ban)" },
+        { egabon: "yel voworel.", text: "*Walk!*" },
+        { egabon: "yul voworel.", text: "*Don't walk.* (a ban)" },
       ],
     );
   });

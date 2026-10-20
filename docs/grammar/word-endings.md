@@ -60,7 +60,7 @@ The greeting names **you**, not the person you greet, so it works the same for a
 The last letters you just used, on the same root `uzazo`:
 
 <!-- cheat-sheet: word-shape-clause -->
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | `uzazol` | first mention, everyday kind | *swan* | **l** ≈ concrete |
 | `uzazom` | first mention, published abstract | *grace* | **m** ≈ abstract |
@@ -77,11 +77,11 @@ Short drills for Beginner. Try each item before opening **Show answer**. Choose 
 
 **Setting:** a classroom
 
-The word bank lists the roots this checkpoint introduces. **English** is what you produce; **Agazan** is its citation; **Cue** is a memory aid, and names the root's other sense when it has one. Later checkpoints add a **Review** table of words met earlier.
+The word bank lists the roots this checkpoint introduces. **English** is what you produce; **Egabon** is its citation; **Cue** is a memory aid, and names the root's other sense when it has one. Later checkpoints add a **Review** table of words met earlier.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *school* | `uzuhol` | 🏫: a school teaches, so its abstract is *education* |
 | *book* | `ugul` | 📖: a book holds *knowledge* |
@@ -93,7 +93,7 @@ The word bank lists the roots this checkpoint introduces. **English** is what yo
 | *Ehalon* | `ehalon` | 🌺 *hibiscus*, abstract *beauty* |
 | *your name* | `SELFn` | from the name helper above |
 
-#### English → Agazan {#beginner-english-to-agazan}
+#### English → Egabon {#beginner-english-to-egabon}
 
 **1.** *school*
 
@@ -143,7 +143,7 @@ Uzazon
 SELF
 :::
 
-#### Agazan → English {#beginner-agazan-to-english}
+#### Egabon → English {#beginner-egabon-to-english}
 
 **1.** `uzuhom`
 
@@ -253,7 +253,7 @@ A brand, a product line, a work, or a yearly event counts as one named thing, ev
 
 The rest of the role map (same **-n**):
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` + **-n** | this named entity | person, place, titled work, brand or product line (*Uzazon*, *Paris*, *the Odyssey*; *book by* **[Rowling]**) |
 | `/v/` + **-n** | this named event, rite, or titled action | *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]** |
@@ -282,7 +282,7 @@ What counts as one depends on what the name names:
 | a person | someone with that name (*another Uzazon*) |
 
 <!-- cheat-sheet: word-shape-clause -->
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `duzazon` | the named thing itself | *Uzazon* (the brand) |
 | `duzazoln` | one thing the name applies to | *an Uzazon* |
@@ -313,7 +313,7 @@ A country root and a tradition root use all four endings, with one job each:
 > "Uzazon is Japanese."
 
 <!-- cheat-sheet: word-shape-clause -->
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `ohunan` | the named country | *Japan* |
 | `dohunal` | its flag | *a Japanese flag* |
@@ -340,7 +340,7 @@ A one-word name, a hyphenated name with mid-word **`x`**, and each part of a ful
 
 ### Multipart names {#multipart-names}
 
-English writes a given name and a family name as two words (*Ohun Ulowon*). Agazan does too. The given name fills the slot with **-n**, and the family name follows it as a `/ɡ/` word with **-n**: like a brand, a family is a named group the person falls under. Given name first is the usual order.
+English writes a given name and a family name as two words (*Ohun Ulowon*). Egabon does too. The given name fills the slot with **-n**, and the family name follows it as a `/ɡ/` word with **-n**: like a brand, a family is a named group the person falls under. Given name first is the usual order.
 
 > `zohun gulowon voworel.`
 >
@@ -351,7 +351,7 @@ English writes a given name and a family name as two words (*Ohun Ulowon*). Agaz
 The family name describes the given name, so the person is still one noun in one slot. A resume repeats the given name’s stem, so `zohur` points back to Ohun Ulowon, and you can drop the family name once the person is known.
 
 <!-- cheat-sheet: word-shape-clause -->
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `ohun gulowon` | citation of a full name | *Ohun Ulowon* |
 | `zohun gulowon` | full name in a noun slot | *Ohun Ulowon* |
@@ -372,7 +372,7 @@ A **hyphenated name** (*Mary-Kate*, *Coffee-Tea*) is one word: roots join left t
 >
 > "Ohuxulowon walks."
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `zohuxulowon` | hyphenated given name | *Ohuxulowon* |
 | `zohuxulowon gulowon` | hyphenated given name and a family name | *Ohuxulowon Ulowon* |
@@ -380,7 +380,7 @@ A **hyphenated name** (*Mary-Kate*, *Coffee-Tea*) is one word: roots join left t
 
 A business or product name uses the same pieces. A compact label is one **`x`** word. A product under a maker’s name takes the maker as its `/ɡ/` name, as a person takes a family name (*a Mustang by Ford*). A name with grammar inside it, such as a verb or *instead of*, is a [titled phrase](#titled-phrases) or a [span](spans.md#when-required), where any role letter can appear.
 
-A nativized loan (a foreign word adapted into an Agazan root, plus an ordinary ending) takes the same four endings as any content word. A **lexical compound** also fills one slot: it is one stem, written without mid-word **`x`** (`zebeholuruhal` *bedroom*).
+A nativized loan (a foreign word adapted into an Egabon root, plus an ordinary ending) takes the same four endings as any content word. A **lexical compound** also fills one slot: it is one stem, written without mid-word **`x`** (`zebeholuruhal` *bedroom*).
 
 **Compare with:** `zohun gulowon.` alone is a sentence: *Ohun is an Ulowon* ([classification](predication.md#classification)). The citation `ohun gulowon` has no role letter, so it only names. Two people in one role take a [join](joins.md#right-close) after them (`zohun zulowon zal`).
 
@@ -389,7 +389,7 @@ A nativized loan (a foreign word adapted into an Agazan root, plus an ordinary e
 
 Beginner used the ending to say how to take a content word’s meaning. On an `/x/` continue word, the ending instead picks what the word does:
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | one of six linkers + **-m** (firm **-l** on three) | glue one finished sentence to the next | *but*, *therefore*, … ([linkers](dependents.md#sentence-linkers)) |
 | other `/x/` root + **-l** / **-m** / **-n** | introduce a [topic](pronouns.md#topic) | *now, about X*; *let’s now talk about X* |
@@ -410,7 +410,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *hospital-bed* (ward name) | `uhahoxebehon` | 🏥 *hospital* **x** 🛏️ *bed*: one ward's name |
 | *Temperature* (named standard) | `huveren` | 🌡️ from *thermometer* |
@@ -419,7 +419,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -432,7 +432,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *big* | `geluzom` |
 | *Japanese* | `ohunam` |
 
-#### English → Agazan {#intermediate-english-to-agazan}
+#### English → Egabon {#intermediate-english-to-egabon}
 
 **1.** *Uzazon sits according to Hospital.* (the named frame)
 
@@ -484,7 +484,7 @@ z-Ehalon.instance | g-big
 z-Olozun | d-japan-flag | v-see
 :::
 
-#### Agazan → English {#intermediate-agazan-to-english}
+#### Egabon → English {#intermediate-egabon-to-english}
 
 **1.** `zolozun vuruyel huveren.`
 

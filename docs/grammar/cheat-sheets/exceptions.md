@@ -7,7 +7,7 @@ outline: false
 
 # Exceptions cheat sheet
 
-A quick look at the places where Agazan breaks one of its own patterns. Each row gives the usual pattern, the words that break it, and a link to the page that teaches them.
+A quick look at the places where Egabon breaks one of its own patterns. Each row gives the usual pattern, the words that break it, and a link to the page that teaches them.
 
 ## `-n` that is not a name {#n-not-a-name}
 

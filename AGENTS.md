@@ -1,8 +1,8 @@
-# Agazan
+# Egabon
 
 Constructed language and tooling that encode psychologically useful distinctions into vocabulary and grammar (compassion / rationality / empowerment themes: gratitude, bias awareness, authentic choice). Unambiguous syntax supports computational tools; phonology aims to be easy to sing.
 
-Always call the language **Agazan** (Clarity is a legacy name). Do not restate the English gloss from [`docs/grammar/introduction.md`](docs/grammar/introduction.md). The name is tied to the glasses root, [language-name.md](docs/meta/language-name.md). Grammar and in-scope editor blurbs show **only the current language**: current published spellings and current English names. No former-name notes or dual spellings, [present the current language only](docs/meta/grammar-docs.md#present-the-current-language-only).
+Always call the language **Egabon** (Clarity is a legacy name). Do not restate the English gloss from [`docs/grammar/introduction.md`](docs/grammar/introduction.md). The name is tied to the glasses root, [language-name.md](docs/meta/language-name.md). Grammar and in-scope editor blurbs show **only the current language**: current published spellings and current English names. No former-name notes or dual spellings, [present the current language only](docs/meta/grammar-docs.md#present-the-current-language-only).
 
 **This file routes; it does not teach.** Never trust a form or meaning from memory or from this file, open the owning doc. What belongs here: [AGENTS.md policy](docs/meta/agents-md.md).
 
@@ -14,10 +14,10 @@ Each row names what the file owns. The file is the authority; this table is only
 
 | Source | Owns |
 |--------|------|
-| `why-agazan.md` | Psychological purpose, limits, learner tour. Site home. |
+| `why-egabon.md` | Psychological purpose, limits, learner tour. Site home. |
 | `introduction.md` | Name, design goals, learning path. |
 | `clause.md` | **Source of truth** for one-clause grammar: role letters, default order, hosting, chaining. Other docs own their subsystems. |
-| `phonology.md` | Phonology, phonotactics, letter names. |
+| `phonology.md` | Phonology, phonotactics, letter names, root tails. |
 | `word-endings.md` | Word endings, proper names, titled phrases, citation forms, greetings. |
 | `pronouns.md` | Whole-stem resume, role pointers, tag, special, generic, and topic pronouns; the discourse topic. |
 | `plurality.md` | Plural, associative, address sets, clusivity, collectives. |
@@ -42,16 +42,16 @@ Each row names what the file owns. The file is the authority; this table is only
 | `numbers-applied.md` | Digit strings, time and date, ranges, measure phrases. |
 | `numeric-derivation.md` | Root + number derivation (advanced only). |
 | `review.md` | **Level reviews**: one `### Practice` band per level, read after every stage page; adds no forms and no words, [level reviews](docs/meta/translation-exercises.md#level-reviews). |
-| `english.md` + `say-*.md` | **Saying it in Agazan** recipe track, keyed by English job. Outside stage order; stage pages never link to it, [recipe track](docs/meta/grammar-docs.md#recipe-track). New gap resolutions that add no form go here. |
-| `claritish/` | **Claritish** on-ramp: closed Agazan words dropped into English, an intro page, ten lessons, a bonus tone-marks lesson, a closing plug, a one-page cheat sheet, and a journal editor. Adds no forms; never links into the grammar except the closing page, [Claritish track](docs/meta/grammar-docs.md#claritish-track). |
-| `cheat-sheets/` | **Cheat Sheets** sidebar: one printable lookup page per subsystem, plus Agazan → English and Exceptions; each row links to its owning section. Tables between `<!-- generated -->` markers come from the data via `npm run cheat-sheet-blocks -- --write`; never edit them by hand. Adds no forms, [cheat sheets](docs/meta/grammar-docs.md#cheat-sheets). |
+| `english.md` + `say-*.md` | **Saying it in Egabon** recipe track, keyed by English job. Outside stage order; stage pages never link to it, [recipe track](docs/meta/grammar-docs.md#recipe-track). New gap resolutions that add no form go here. |
+| `claritish/` | **Claritish** on-ramp: closed Egabon words dropped into English, an intro page, ten lessons, a bonus tone-marks lesson, a closing plug, a one-page cheat sheet, and a journal editor. Adds no forms; never links into the grammar except the closing page, [Claritish track](docs/meta/grammar-docs.md#claritish-track). |
+| `cheat-sheets/` | **Cheat Sheets** sidebar: one printable lookup page per subsystem, plus Egabon → English and Exceptions; each row links to its owning section. Tables between `<!-- generated -->` markers come from the data via `npm run cheat-sheet-blocks -- --write`; never edit them by hand. Adds no forms, [cheat sheets](docs/meta/grammar-docs.md#cheat-sheets). |
 | `terminology.md` | English names for grammatical features. Teaching pages do not link into it except [How to learn](docs/grammar/introduction.md#how-to-learn). |
 
 ### Data
 
 | Source | Owns |
 |--------|------|
-| `data/lexicon-published.csv` | Published roots: each has a concrete sense and usually an emoji or pictograph seed, [seeds](docs/meta/lexicon.md#seeds-concrete-senses-and-pictographs). PoS and ending applied at use time. The `core` column is the core vocabulary order, [core vocabulary](docs/meta/lexicon.md#core-vocabulary-column). |
+| `data/lexicon-published.csv` | Published roots: each has a concrete sense and usually an emoji or pictograph seed, [seeds](docs/meta/lexicon.md#seeds-concrete-senses-and-pictographs). PoS and ending applied at use time. The `core` column is the core vocabulary order, [core vocabulary](docs/meta/lexicon.md#core-vocabulary-column). `kind` and `shape` spell a five-letter root's tail, [root tails](docs/meta/lexicon.md#root-tails). |
 | `data/lexicon-compounds.csv` | Conventional compounds without mid-word `x`, with the same `core` column. |
 | `data/lexicon-overlays.csv` | Closed overlay inventory and the anchor that teaches each row, [overlay kinds](docs/meta/parser-pipeline.md#overlay-kinds). New overlays attach to an existing published row. |
 | `data/claritish-triggers.csv` | Journal editor cues: the English patterns each Claritish lesson's gap names, their exclusions, flow, placement, and mirror wording, [editor cards](docs/meta/claritish-style.md#editor-cards). |
@@ -62,7 +62,7 @@ Each row names what the file owns. The file is the authority; this table is only
 
 | Source | Owns |
 |--------|------|
-| `grammar-docs.md` | Content and teaching policy for grammar pages, house cast, retie-safe writing, marking Agazan, cheat sheets. |
+| `grammar-docs.md` | Content and teaching policy for grammar pages, house cast, retie-safe writing, marking Egabon, cheat sheets. |
 | `doc-style.md` | Wording and voice. |
 | `claritish-style.md` | Wording and voice for the Claritish track, and the hyphenated English host. |
 | `glosses.md` | Morph and free gloss rules. |
@@ -74,7 +74,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `design-decisions.md` | Why a form or reading is deliberately absent, and rejected alternatives. Not a restatement of grammar pages; settled readings go on grammar pages, never here. |
 | `unassigned-reserved.md` | Every spelling with no reading, marked open (no natural reading yet) or closed (by a design decision). Never linked from grammar pages. |
 | `feature-criteria.md` | The test a psychological feature must pass to enter the language. |
-| `language-name.md` | Why the name is Agazan. |
+| `language-name.md` | Why the name is Egabon. |
 | `proposals.md` | Notes for `docs/proposals/`, never link to proposal pages (filenames in backticks only). |
 | `site-redirects.md` | Public URL remaps. |
 | `agents-md.md` | What belongs in this file. |
@@ -84,20 +84,20 @@ Each row names what the file owns. The file is the authority; this table is only
 
 - Node ≥ 24 (runs `.ts` natively; see `.nvmrc`).
 - Tests run with **`npm test`** (Node's built-in runner via `tsx --test`). Vitest is intentionally **not** installed, never run bare `npx vitest`. Use `npx --no-install <tool>` to check for a CLI; avoid bare `npx <tool>` for tools this repo does not depend on.
-- Language design work goes through `introduction.md`, `why-agazan.md`, `clause.md` and the linked grammar docs (and `TODO.md` until absorbed). Do **not** treat any parser implementation as design authority until it matches the docs.
+- Language design work goes through `introduction.md`, `why-egabon.md`, `clause.md` and the linked grammar docs (and `TODO.md` until absorbed). Do **not** treat any parser implementation as design authority until it matches the docs.
 - **Parser changes ship with grammar changes:** a change to what the parser accepts, rejects, or how it reads a form lands in the same change as the grammar-doc edit that teaches it (the owning page, plus `unassigned-reserved.md` for a newly rejected spelling and `design-decisions.md` when the rejection has a reason beyond *no reading yet*). Never change parser behavior without the matching grammar edit.
 - **Orthography invariants** ([phonology](docs/grammar/phonology.md)): `th` is one letter written with two characters, and there is no `t`. No hyphen after the PoS letter. Native text is unicase lowercase; capitals only inside foreign / opaque payloads ([spans](docs/grammar/spans.md)). Named reference is marked by ending, not case. Prefer published lexicon roots when the gloss matches.
 - **Example sentences**: do not add a leading assertion turn to every example when it is omissible, see [clause.md](docs/grammar/clause.md) and [speech-moves.md](docs/grammar/speech-moves.md).
 - **Learner name slot:** **`SELF`** is the reader's own name, only where the name is the form (greeting, conversation-length bid, self-introduction); plain *I* is not the slot: [first person](docs/meta/grammar-docs.md#house-cast). The site fills it ([`src/learner-name.ts`](src/learner-name.ts)).
 - **One tree per sentence:** after changing `src/parse/sentence-parser.ts` (rules or `markContext`), run **`npm run grammar-check`** (about a minute; not part of `npm test`). It fails on any `GATE`, LR(1) conflict, or doc sentence with two trees; turn a new choice into structure or a token mark, never a gate.
-- **Parsing Agazan:** run **`node scripts/parse.mjs '<sentence>'`** directly (not `npm run parse` or `tsx src/parse/cli.ts`). It rebuilds automatically when `src/` changes. Pass several quoted inputs in one call (JSON array out), or `-` for one input per line on stdin. Add `--check-ambiguity` as needed, and `--check-lexicon` to list words the lexicon does not know (a stem that only parses is not a lexicon word, and an unlisted compound shows its possible split).
-- **Translating Agazan to English:** run **`node scripts/parse.mjs --llm-prompt '<sentence>'`** (several quoted inputs make one passage; `--loose` for no note) and follow the prompt it prints. It is self-contained: how to read the morph gloss, the tags and constructions that sentence uses, and the closest doc examples with their English. Use it instead of reading grammar pages to work out what a sentence means. It is built from the docs, so where it and a grammar page disagree, the page wins: fix the prompt's source (core in [`src/parse/llm-prompt.ts`](src/parse/llm-prompt.ts), `reader` notes in [`src/parse/constructions.ts`](src/parse/constructions.ts)). `npm run llm-eval` scores it on doc pairs; it calls models and costs money, so run it only when asked.
+- **Parsing Egabon:** run **`node scripts/parse.mjs '<sentence>'`** directly (not `npm run parse` or `tsx src/parse/cli.ts`). It rebuilds automatically when `src/` changes. Pass several quoted inputs in one call (JSON array out), or `-` for one input per line on stdin. Add `--check-ambiguity` as needed, and `--check-lexicon` to list words the lexicon does not know (a stem that only parses is not a lexicon word, and an unlisted compound shows its possible split).
+- **Translating Egabon to English:** run **`node scripts/parse.mjs --llm-prompt '<sentence>'`** (several quoted inputs make one passage; `--loose` for no note) and follow the prompt it prints. It is self-contained: how to read the morph gloss, the tags and constructions that sentence uses, and the closest doc examples with their English. Use it instead of reading grammar pages to work out what a sentence means. It is built from the docs, so where it and a grammar page disagree, the page wins: fix the prompt's source (core in [`src/parse/llm-prompt.ts`](src/parse/llm-prompt.ts), `reader` notes in [`src/parse/constructions.ts`](src/parse/constructions.ts)). `npm run llm-eval` scores it on doc pairs; it calls models and costs money, so run it only when asked.
 - **Searching examples by construction:** grep is fine for a fixed spelling. For grammar questions use **`node scripts/find.mjs`** with `key=value[,…]` terms (`role`, `ending`, `root`, `family`, `overlay`, `unit`, `raw`). Each value is a regex that must match the whole field, and `key!=value` negates: e.g. `--word role=v,ending=r`, `--seq 'role!=[zdb]' family=hook,raw=em role=b`, `--word 'raw=.*em'`, `--construction 'overlay.<form>*'` or `'/regex/'`. Add `--count` or `--json`.
 - **Finding a form from an English cue:** run **`node scripts/find-english.mjs '<phrase>'`** before logging a grammar gap, and log the phrases you tried in the gap row. It searches example English, word glosses, table rows, and practice in `docs/grammar/`, plus published-root senses and `english_aliases` synonyms (`--kind root`), grouped by owning section. Add `--stage`, `--kind`, `--json`, or `--count`.
-- **English → Agazan suggestions:** run **`node scripts/english-helper.mjs '<english>'`** for per-clause root and grammar-section suggestions. It only suggests and never writes the sentence. Add `--stage`, `--json`, or force a reading with `saw/n` (`/v`, `/adj`, `/adv`). `--llm-prompt` wraps the suggestions in a prompt for an LLM to write the sentence; `--verify '<draft>'` (one per English input) parses a draft beside its English. `npm run english-helper-recall` scores it on doc pairs (free). After a lexicon CSV change, run `npm run english-helper-wordnet` to regenerate its WordNet index (`npm test` fails when it is stale).
+- **English → Egabon suggestions:** run **`node scripts/english-helper.mjs '<english>'`** for per-clause root and grammar-section suggestions. It only suggests and never writes the sentence. Add `--stage`, `--json`, or force a reading with `saw/n` (`/v`, `/adj`, `/adv`). `--llm-prompt` wraps the suggestions in a prompt for an LLM to write the sentence; `--verify '<draft>'` (one per English input) parses a draft beside its English. `npm run english-helper-recall` scores it on doc pairs (free). After a lexicon CSV change, run `npm run english-helper-wordnet` to regenerate its WordNet index (`npm test` fails when it is stale).
 - **New root spellings:** always generate them with `npm run convert-word`, never by hand. Root length, moving an overlay to another row, and the full procedure: [lexicon editing](docs/meta/lexicon.md).
 - **Respelling roots:** after `npm run convert-word -- --lexicon --only …` (or `--all` for the whole lexicon), run **`npm run retie-docs`** (dry run), then **`npm run retie-docs -- --write`**, then `npm run build` and `npm test`, and read the review list and warnings. Never bulk-replace old roots across Markdown. Code never spells a root as a string literal, use [`src/closed-roots.ts`](src/closed-roots.ts). `--lexicon` requires `--only LITERAL` (matching rows only) or `--all`. Writing rules that keep pages retie-safe: [retie-safe writing](docs/meta/grammar-docs.md#retie-safe-writing).
-- **After editing Markdown** under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run build`**: no separate lint command. Skip it when the only changes are under `docs/meta/` or `docs/proposals/`. The build checks emphasis syntax, Vue-illegal tags, proposal links, that Agazan in code spans parses and uses lexicon roots, morph glosses, checkpoint word banks and their core vocabulary, the terminology page, and dead URLs, details in [marking Agazan](docs/meta/grammar-docs.md#marking-agazan). Write `*a* / *b*`, not `*a*/*b*`; in bold text put forms in backticks only.
+- **After editing Markdown** under `docs/` (or `AGENTS.md` / `TODO.md`), run **`npm run build`**: no separate lint command. Skip it when the only changes are under `docs/meta/` or `docs/proposals/`. The build checks emphasis syntax, Vue-illegal tags, proposal links, that Egabon in code spans parses and uses lexicon roots, morph glosses, checkpoint word banks and their core vocabulary, the terminology page, and dead URLs, details in [marking Egabon](docs/meta/grammar-docs.md#marking-egabon). Write `*a* / *b*`, not `*a*/*b*`; in bold text put forms in backticks only.
 - **Commits made by AI:** always append **`[skip-cd]`** to the commit message so Amplify doesn't start a build.
 - **Bash permission classifier errors:** if a Bash call fails because the auto-mode classifier gave no verdict, retry the same call up to 5 times with exponential backoff (for example 1, 5, 25, 125, 625 seconds). If it still fails, stop working and tell the user. Do not switch to workarounds.
 

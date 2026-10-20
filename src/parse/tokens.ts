@@ -12,9 +12,9 @@ export type SurfaceAtom =
 
 export type TokenPayload = LexWord | SurfaceAtom;
 
-export type AgazanTokenType = ReturnType<typeof createToken>;
+export type EgabonTokenType = ReturnType<typeof createToken>;
 
-function wordToken(name: string, categories: AgazanTokenType[] = []): AgazanTokenType {
+function wordToken(name: string, categories: EgabonTokenType[] = []): EgabonTokenType {
   return createToken({ name, pattern: Lexer.NA, categories });
 }
 
@@ -81,7 +81,7 @@ export const GGl = wordToken("GGl", [G]);
  */
 export const GL_TARGETS = ["Z", "D", "B", "Turn", "Citation", "Linker", "Other"] as const;
 export type GlTarget = (typeof GL_TARGETS)[number];
-export const GGlBefore = Object.fromEntries(GL_TARGETS.map((target) => [target, wordToken(`GGl${target}`, [GGl])])) as Record<GlTarget, AgazanTokenType>;
+export const GGlBefore = Object.fromEntries(GL_TARGETS.map((target) => [target, wordToken(`GGl${target}`, [GGl])])) as Record<GlTarget, EgabonTokenType>;
 /** A `/w/` word. An as-of `/w/` opens a pair with the `/b/` after it (relations.md#as-of); every other `/w/` grades what follows. */
 export const W = wordToken("W");
 export const WPlain = wordToken("WPlain", [W]);
@@ -132,7 +132,7 @@ const wGroupsOf = (target: WTarget) => (Object.keys(W_GROUPS) as WGroupName[]).f
 export const WBefore = {
   ...Object.fromEntries((Object.keys(W_GROUPS) as WGroupName[]).map((group) => [group, wordToken(`WBefore${group}`)])),
   ...Object.fromEntries(W_TARGETS.map((target) => [target, wordToken(`WBefore${target}`)])),
-} as Record<WTarget | WGroupName, AgazanTokenType>;
+} as Record<WTarget | WGroupName, EgabonTokenType>;
 for (const target of W_TARGETS) for (const group of wGroupsOf(target)) WBefore[target]!.CATEGORIES!.push(WBefore[group]!);
 /** A kind's `/w/` words before any target of a group (`WGroup.Plain.G`). */
 export const WGroup = Object.fromEntries(
@@ -140,9 +140,9 @@ export const WGroup = Object.fromEntries(
     kind,
     Object.fromEntries((Object.keys(W_GROUPS) as WGroupName[]).map((group) => [group, wordToken(`W${kind}${group}`)])),
   ]),
-) as Record<WKind, Record<WGroupName, AgazanTokenType>>;
+) as Record<WKind, Record<WGroupName, EgabonTokenType>>;
 export const WLeaf = Object.fromEntries(
-  (Object.entries(W_KINDS) as [WKind, AgazanTokenType][]).map(([kind, category]) => [
+  (Object.entries(W_KINDS) as [WKind, EgabonTokenType][]).map(([kind, category]) => [
     kind,
     Object.fromEntries(
       W_TARGETS.map((target) => [
@@ -151,7 +151,7 @@ export const WLeaf = Object.fromEntries(
       ]),
     ),
   ]),
-) as Record<WKind, Record<WTarget, AgazanTokenType>>;
+) as Record<WKind, Record<WTarget, EgabonTokenType>>;
 /** An `/h/` adverb or a `/th/` stance word. A plain adjective after either host's `/b/` describes that noun (clause.md#complex-chaining). */
 export const H = wordToken("H");
 export const HPlain = wordToken("HPlain", [H]);
@@ -371,9 +371,9 @@ const CONTENT_BY_POS = {
   th: HTh,
 } as const;
 
-const TAG_BY_POS: Partial<Record<string, AgazanTokenType>> = { z: TagZ, d: TagD, b: TagB };
-const ODO_BY_POS: Partial<Record<string, AgazanTokenType>> = { z: OdoZ, d: OdoD, b: OdoB };
-const WRITING_SPAN_BY_POS: Partial<Record<string, AgazanTokenType>> = { z: WritingSpanZ, d: WritingSpanD, b: WritingSpanB };
+const TAG_BY_POS: Partial<Record<string, EgabonTokenType>> = { z: TagZ, d: TagD, b: TagB };
+const ODO_BY_POS: Partial<Record<string, EgabonTokenType>> = { z: OdoZ, d: OdoD, b: OdoB };
+const WRITING_SPAN_BY_POS: Partial<Record<string, EgabonTokenType>> = { z: WritingSpanZ, d: WritingSpanD, b: WritingSpanB };
 
 function isForceWord(word: LexWord): boolean {
   if (word.pos !== "y" || word.family.kind !== "joinMarker") return false;
@@ -410,7 +410,7 @@ export type TokenBranch =
   | "content"
   | "citationFallback";
 
-export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; branch: TokenBranch } {
+export function classifyTokenBranch(word: LexWord): { type: EgabonTokenType; branch: TokenBranch } {
   const { family, pos, reading } = word;
 
   if (family.kind === "hook") return { type: HookPlain, branch: "hook" };
@@ -467,7 +467,7 @@ export function classifyTokenBranch(word: LexWord): { type: AgazanTokenType; bra
   return { type: Citation, branch: "citationFallback" };
 }
 
-export function classifyToTokenType(word: LexWord): AgazanTokenType {
+export function classifyToTokenType(word: LexWord): EgabonTokenType {
   return classifyTokenBranch(word).type;
 }
 

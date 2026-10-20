@@ -99,7 +99,7 @@ A dependent runs to the end of the written sentence, so `dorl P xol Q` is *wheth
 ### General claims
 
 - **No universality moods** (COMMON, UNCOUNTERED, FORMAL, NATURAL, RULE: `ugalu` / `ebebo` / `oza` / `aledo` / `emudu` on `/th/`). Each mixed two jobs the language keeps apart: how far a claim reaches is the fence or restrictor, and what it rests on is a channel.
-- **Open -m never asserts an amount.** Rejected: *just about everything* / *hardly anything* for the empty forms (`zam`, `zuam`, `ham`, …). Those readings assert an amount -m never states, and they made the counting forms read unlike deny, menu, and rank. Agazan does not split *I have not checked* from *I know of exceptions but am not listing them*.
+- **Open -m never asserts an amount.** Rejected: *just about everything* / *hardly anything* for the empty forms (`zam`, `zuam`, `ham`, …). Those readings assert an amount -m never states, and they made the counting forms read unlike deny, menu, and rank. Egabon does not split *I have not checked* from *I know of exceptions but am not listing them*.
 - **The kind itself is `zuan` + SHARED kind.** Rejected:
   - `zelegom` + kind: it names the label or category, not the lineage (*the cat category was domesticated* is wrong).
   - **-n** on the kind root: `zegazon` is a creature named Cat.

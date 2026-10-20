@@ -85,7 +85,7 @@ function overlayRows(params: Params): string {
     .map((o) => ({ form: o.pos + o.senseForm, o }))
     .sort((a, b) => a.form.localeCompare(b.form));
   return table(
-    ["Agazan", "English", "Taught in", "Stage"],
+    ["Egabon", "English", "Taught in", "Stage"],
     rows.map(({ form, o }) => {
       const { link, stage } = sectionCell(o.anchor);
       return [`\`${form}\``, cell(o.definition || o.gloss), link, stage];
@@ -130,7 +130,7 @@ const CLOSED_WORDS: ReadonlyArray<{ name: ClosedName; form: (root: string) => st
 
 function closedWordRows(): string {
   return table(
-    ["Agazan", "English", "Taught in", "Stage"],
+    ["Egabon", "English", "Taught in", "Stage"],
     CLOSED_WORDS.map((w) => ({ ...w, spelled: w.form(CLOSED[w.name]) }))
       .sort((a, b) => a.spelled.localeCompare(b.spelled))
       .map((w) => {
@@ -149,7 +149,7 @@ function compoundRows(): string {
       return { concrete, cells: [`\`${concrete}\``, `*${c.concrete}*`, abstract] };
     })
     .sort((a, b) => a.concrete.localeCompare(b.concrete));
-  return table(["Agazan", "English", "Abstract (**-m**)"], rows.map((r) => r.cells));
+  return table(["Egabon", "English", "Abstract (**-m**)"], rows.map((r) => r.cells));
 }
 
 const SOURCES: Record<string, (params: Params) => string> = {

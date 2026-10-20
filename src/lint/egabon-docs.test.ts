@@ -7,14 +7,14 @@ import { emptyPosEnglish } from "../lexicon-search.js";
 import { forEachMarkdownCodeToken } from "../retie/tokens.js";
 
 import {
-  classifyAgazanSpan,
+  classifyEgabonSpan,
   emptySpanStats,
-  isAgazanLintCandidate,
-  lintAgazanSpans,
-  lintAgazanMarkdown,
-  lintAgazanToken,
+  isEgabonLintCandidate,
+  lintEgabonSpans,
+  lintEgabonMarkdown,
+  lintEgabonToken,
   peelLintChunk,
-} from "./agazan-docs.js";
+} from "./egabon-docs.js";
 
 function tablesOf(opts?: {
   published?: Array<{ root: string; concrete?: string; abstract?: string }>;
@@ -33,30 +33,30 @@ function tablesOf(opts?: {
   );
 }
 
-describe("isAgazanLintCandidate", () => {
+describe("isEgabonLintCandidate", () => {
   it("skips fragments, slash PoS, teaching glosses, and placeholders", () => {
-    assert.equal(isAgazanLintCandidate("/y/"), false);
-    assert.equal(isAgazanLintCandidate("-r"), false);
-    assert.equal(isAgazanLintCandidate("gl-"), false);
-    assert.equal(isAgazanLintCandidate("e"), true);
-    assert.equal(isAgazanLintCandidate("z-dog"), false);
-    assert.equal(isAgazanLintCandidate("z-Azawan"), false);
-    assert.equal(isAgazanLintCandidate("ROOTl-e-"), false);
-    assert.equal(isAgazanLintCandidate("…axul"), false);
-    assert.equal(isAgazanLintCandidate("level"), false);
-    assert.equal(isAgazanLintCandidate("x"), false);
-    assert.equal(isAgazanLintCandidate("xa"), false);
-    assert.equal(isAgazanLintCandidate("ax"), false);
-    assert.equal(isAgazanLintCandidate("are"), false);
+    assert.equal(isEgabonLintCandidate("/y/"), false);
+    assert.equal(isEgabonLintCandidate("-r"), false);
+    assert.equal(isEgabonLintCandidate("gl-"), false);
+    assert.equal(isEgabonLintCandidate("e"), true);
+    assert.equal(isEgabonLintCandidate("z-dog"), false);
+    assert.equal(isEgabonLintCandidate("z-Azawan"), false);
+    assert.equal(isEgabonLintCandidate("ROOTl-e-"), false);
+    assert.equal(isEgabonLintCandidate("…axul"), false);
+    assert.equal(isEgabonLintCandidate("level"), false);
+    assert.equal(isEgabonLintCandidate("x"), false);
+    assert.equal(isEgabonLintCandidate("xa"), false);
+    assert.equal(isEgabonLintCandidate("ax"), false);
+    assert.equal(isEgabonLintCandidate("are"), false);
   });
 
   it("keeps full words, citations, numbers, and foreign payloads", () => {
-    assert.equal(isAgazanLintCandidate("zazawan"), true);
-    assert.equal(isAgazanLintCandidate("azawa"), true);
-    assert.equal(isAgazanLintCandidate("g+3"), true);
-    assert.equal(isAgazanLintCandidate("d<sushi>"), true);
-    assert.equal(isAgazanLintCandidate("z<Sam>n"), true);
-    assert.equal(isAgazanLintCandidate("x#e-"), true);
+    assert.equal(isEgabonLintCandidate("zazawan"), true);
+    assert.equal(isEgabonLintCandidate("azawa"), true);
+    assert.equal(isEgabonLintCandidate("g+3"), true);
+    assert.equal(isEgabonLintCandidate("d<sushi>"), true);
+    assert.equal(isEgabonLintCandidate("z<Sam>n"), true);
+    assert.equal(isEgabonLintCandidate("x#e-"), true);
   });
 });
 
@@ -69,7 +69,7 @@ describe("peelLintChunk", () => {
   });
 });
 
-describe("lintAgazanToken", () => {
+describe("lintEgabonToken", () => {
   const tables = tablesOf({
     published: [
       { root: "azawa", concrete: "dog" },
@@ -80,47 +80,47 @@ describe("lintAgazanToken", () => {
   });
 
   it("accepts known content, numbers, revisers, joins, and foreign spans", () => {
-    assert.equal(lintAgazanToken("zazawan", tables), null);
-    assert.equal(lintAgazanToken("uzumum", tables), null);
-    assert.equal(lintAgazanToken("azawa", tables), null);
-    assert.equal(lintAgazanToken("g+3", tables), null);
-    assert.equal(lintAgazanToken("al", tables), null);
-    assert.equal(lintAgazanToken("yal", tables), null);
-    assert.equal(lintAgazanToken("d<jam>", tables), null);
-    assert.equal(lintAgazanToken("just", tables), null);
-    assert.equal(lintAgazanToken("jal", tables)?.detail, "`j` is not a letter; write `y`");
-    assert.equal(lintAgazanToken("d<sushi>", tables), null);
-    assert.equal(lintAgazanToken("d[hi]", tables), null);
-    assert.equal(lintAgazanToken("xuxun", tables), null);
-    assert.equal(lintAgazanToken("thegera", tables), null);
+    assert.equal(lintEgabonToken("zazawan", tables), null);
+    assert.equal(lintEgabonToken("uzumum", tables), null);
+    assert.equal(lintEgabonToken("azawa", tables), null);
+    assert.equal(lintEgabonToken("g+3", tables), null);
+    assert.equal(lintEgabonToken("al", tables), null);
+    assert.equal(lintEgabonToken("yal", tables), null);
+    assert.equal(lintEgabonToken("d<jam>", tables), null);
+    assert.equal(lintEgabonToken("just", tables), null);
+    assert.equal(lintEgabonToken("jal", tables)?.detail, "`j` is not a letter; write `y`");
+    assert.equal(lintEgabonToken("d<sushi>", tables), null);
+    assert.equal(lintEgabonToken("d[hi]", tables), null);
+    assert.equal(lintEgabonToken("xuxun", tables), null);
+    assert.equal(lintEgabonToken("thegera", tables), null);
   });
 
-  it("skips English in backticks and flags illegal Agazan shapes", () => {
-    assert.equal(lintAgazanToken("e", tables), null);
-    assert.equal(lintAgazanToken("ae", tables), null);
-    assert.equal(lintAgazanToken("g+", tables), null);
-    assert.equal(lintAgazanToken("and", tables), null);
-    assert.equal(lintAgazanToken("would", tables), null);
-    assert.equal(lintAgazanToken("dog", tables), null);
-    assert.equal(lintAgazanToken("when", tables), null);
-    const illegal = lintAgazanToken("zolovexrabal", tables);
+  it("skips English in backticks and flags illegal Egabon shapes", () => {
+    assert.equal(lintEgabonToken("e", tables), null);
+    assert.equal(lintEgabonToken("ae", tables), null);
+    assert.equal(lintEgabonToken("g+", tables), null);
+    assert.equal(lintEgabonToken("and", tables), null);
+    assert.equal(lintEgabonToken("would", tables), null);
+    assert.equal(lintEgabonToken("dog", tables), null);
+    assert.equal(lintEgabonToken("when", tables), null);
+    const illegal = lintEgabonToken("zolovexrabal", tables);
     assert.equal(illegal?.kind, "parse");
   });
 
   it("flags unknown content roots and unknown bare roots", () => {
-    const word = lintAgazanToken("zububul", tables);
+    const word = lintEgabonToken("zububul", tables);
     assert.equal(word?.kind, "unknown-root");
-    const bare = lintAgazanToken("ububu", tables);
+    const bare = lintEgabonToken("ububu", tables);
     assert.equal(bare?.kind, "unknown-root");
-    const named = lintAgazanToken("zububun", tables);
+    const named = lintEgabonToken("zububun", tables);
     assert.equal(named?.kind, "unknown-root");
-    assert.equal(lintAgazanToken("zazawaxululon", tables), null);
-    const title = lintAgazanToken("zazawaxububun", tables);
+    assert.equal(lintEgabonToken("zazawaxululon", tables), null);
+    const title = lintEgabonToken("zazawaxububun", tables);
     assert.equal(title?.kind, "unknown-root");
   });
 });
 
-describe("lintAgazanMarkdown", () => {
+describe("lintEgabonMarkdown", () => {
   const tables = tablesOf({
     published: [{ root: "azawa", concrete: "dog" }],
   });
@@ -136,7 +136,7 @@ describe("lintAgazanMarkdown", () => {
       "<!-- `zububun` -->",
       "see [x](zububun.md)",
     ].join("\n");
-    const issues = lintAgazanMarkdown(text, tables);
+    const issues = lintEgabonMarkdown(text, tables);
     assert.deepEqual(
       issues.map((i) => `${i.kind}:${i.token}`),
       ["unknown-root:zububul", "parse:zolovexrabal"],
@@ -150,7 +150,7 @@ describe("lintAgazanMarkdown", () => {
         { root: "ululo", concrete: "wave" },
       ], });
     const text = "`zazawan vorugulal. zululon vorugular.` then `vorugular`";
-    const issues = lintAgazanMarkdown(text, tables);
+    const issues = lintEgabonMarkdown(text, tables);
     assert.deepEqual(
       issues.map((i) => `${i.kind}:${i.token}`),
       ["unknown-root:vorugular"],
@@ -168,69 +168,69 @@ describe("forEachMarkdownCodeToken", () => {
   });
 });
 
-describe("lintAgazanSpans", () => {
+describe("lintEgabonSpans", () => {
   const tables = tablesOf();
 
   it("parses whole sentences: a join before its conjuncts fails", () => {
     const text = "> `yol zazawan vul vazawal. yael.`\n>\n> y-question | z-Azawan | v-not | v-swan . y-yes\n";
-    const issues = lintAgazanSpans(text, tables);
+    const issues = lintEgabonSpans(text, tables);
     assert.equal(issues.length, 1);
     assert.equal(issues[0]!.kind, "sentence");
     assert.match(issues[0]!.detail, /closes its conjuncts/);
-    assert.deepEqual(lintAgazanSpans("`yol zazawan vazawal vul. yael.`", tables), []);
+    assert.deepEqual(lintEgabonSpans("`yol zazawan vazawal vul. yael.`", tables), []);
   });
 
   it("parses multi-word phrases unless marked a fragment", () => {
-    assert.equal(lintAgazanSpans("`voworel glugol`", tables)[0]?.kind, "phrase");
-    assert.deepEqual(lintAgazanSpans("<!-- lint: fragment -->`voworel glugol`", tables), []);
-    assert.equal(lintAgazanSpans("<!-- lint: skip -->`wo zo yo`", tables)[0]?.kind, "bad-marker");
+    assert.equal(lintEgabonSpans("`voworel glugol`", tables)[0]?.kind, "phrase");
+    assert.deepEqual(lintEgabonSpans("<!-- lint: fragment -->`voworel glugol`", tables), []);
+    assert.equal(lintEgabonSpans("<!-- lint: skip -->`wo zo yo`", tables)[0]?.kind, "bad-marker");
   });
 
   it("traces fragments with context supplied around them", () => {
     const used = new Set<string>();
-    assert.deepEqual(lintAgazanSpans("<!-- lint: fragment -->`zam zal`", tables, undefined, (id) => used.add(id)), []);
+    assert.deepEqual(lintEgabonSpans("<!-- lint: fragment -->`zam zal`", tables, undefined, (id) => used.add(id)), []);
     assert.ok(used.has("join.a"));
-    assert.equal(lintAgazanSpans("<!-- lint: fragment -->`zul zul zo`", tables)[0]?.kind, "fragment");
+    assert.equal(lintEgabonSpans("<!-- lint: fragment -->`zul zul zo`", tables)[0]?.kind, "fragment");
   });
 
   it("traces templates by filling their slots", () => {
     const trace = (span: string): Set<string> => {
       const used = new Set<string>();
-      assert.deepEqual(lintAgazanSpans(span, tables, undefined, (id) => used.add(id)), []);
+      assert.deepEqual(lintEgabonSpans(span, tables, undefined, (id) => used.add(id)), []);
       return used;
     };
     const hook = trace("`A am B`");
     assert.ok(hook.has("hook.am"));
     assert.ok(![...hook].some((id) => id.startsWith("hook.") && id !== "hook.am"));
     assert.ok(trace("`…l#N`").has("word.xFamily.numeric"));
-    assert.equal(lintAgazanSpans("`d[…`", tables)[0]?.kind, "template");
-    assert.equal(lintAgazanSpans("`zo zo …`", tables)[0]?.kind, "template");
-    assert.equal(classifyAgazanSpan("ROOT"), "english");
+    assert.equal(lintEgabonSpans("`d[…`", tables)[0]?.kind, "template");
+    assert.equal(lintEgabonSpans("`zo zo …`", tables)[0]?.kind, "template");
+    assert.equal(classifyEgabonSpan("ROOT"), "english");
   });
 
-  it("fails spans that mix Agazan and other words without a class", () => {
-    assert.equal(classifyAgazanSpan("zazawan runs fast"), "unclassified");
-    assert.equal(lintAgazanSpans("`zazawan runs fast`", tables)[0]?.kind, "unclassified");
-    assert.equal(classifyAgazanSpan("A am B"), "template");
-    assert.equal(classifyAgazanSpan("zazawan …"), "template");
-    assert.equal(classifyAgazanSpan("fast"), "english");
+  it("fails spans that mix Egabon and other words without a class", () => {
+    assert.equal(classifyEgabonSpan("zazawan runs fast"), "unclassified");
+    assert.equal(lintEgabonSpans("`zazawan runs fast`", tables)[0]?.kind, "unclassified");
+    assert.equal(classifyEgabonSpan("A am B"), "template");
+    assert.equal(classifyEgabonSpan("zazawan …"), "template");
+    assert.equal(classifyEgabonSpan("fast"), "english");
   });
 
-  it("requires an info string on fenced blocks and checks agazan fences", () => {
-    assert.equal(lintAgazanSpans("```\nA HOOK B\n```\n", tables)[0]?.kind, "unmarked-fence");
-    assert.deepEqual(lintAgazanSpans("```text\nA HOOK B\n```\n", tables), []);
-    assert.equal(lintAgazanSpans("```text\nzazawan voworel\n```\n", tables)[0]?.kind, "agazan-in-text-fence");
-    assert.equal(lintAgazanSpans("```agazan\nzul zazawan vazawal.\n```\n", tables)[0]?.kind, "sentence");
+  it("requires an info string on fenced blocks and checks egabon fences", () => {
+    assert.equal(lintEgabonSpans("```\nA HOOK B\n```\n", tables)[0]?.kind, "unmarked-fence");
+    assert.deepEqual(lintEgabonSpans("```text\nA HOOK B\n```\n", tables), []);
+    assert.equal(lintEgabonSpans("```text\nzazawan voworel\n```\n", tables)[0]?.kind, "egabon-in-text-fence");
+    assert.equal(lintEgabonSpans("```egabon\nzul zazawan vazawal.\n```\n", tables)[0]?.kind, "sentence");
   });
 
   it("checks HTML <code> spans and rejects unknown markers", () => {
-    assert.equal(lintAgazanSpans("<code>zul zazawan vazawal.</code>", tables)[0]?.kind, "sentence");
-    assert.equal(lintAgazanSpans("<!-- lint: nope -->`zazawan`", tables)[0]?.kind, "bad-marker");
+    assert.equal(lintEgabonSpans("<code>zul zazawan vazawal.</code>", tables)[0]?.kind, "sentence");
+    assert.equal(lintEgabonSpans("<!-- lint: nope -->`zazawan`", tables)[0]?.kind, "bad-marker");
   });
 
   it("traces a written <…> fence in <code> as a loan", () => {
     const ids: string[] = [];
-    lintAgazanSpans("<code>zazawan d&lt;kimchi&gt; veyel.</code>", tables, emptySpanStats(), (id) => ids.push(id));
+    lintEgabonSpans("<code>zazawan d&lt;kimchi&gt; veyel.</code>", tables, emptySpanStats(), (id) => ids.push(id));
     assert.ok(ids.includes("word.family.foreign"));
   });
 
@@ -240,22 +240,22 @@ describe("lintAgazanSpans", () => {
     const fix = md.indexOf("`zolozun dazawan.`") + 1;
     const stats = emptySpanStats();
     const used: number[] = [];
-    assert.deepEqual(lintAgazanSpans(md, houseTables(), stats, (_id, index) => used.push(index)), []);
+    assert.deepEqual(lintEgabonSpans(md, houseTables(), stats, (_id, index) => used.push(index)), []);
     assert.equal(stats["marked-error"], 1);
     assert.ok(!used.includes(fix));
   });
 
   it("rejects the error marker outside a Fix it prompt", async () => {
     const { houseTables, PRACTICE } = await import("./practice-fixtures.js");
-    assert.equal(lintAgazanSpans("<!-- lint: error -->`zazawan`", tables)[0]?.kind, "bad-marker");
+    assert.equal(lintEgabonSpans("<!-- lint: error -->`zazawan`", tables)[0]?.kind, "bad-marker");
     const md = PRACTICE.replace("**1.** `zolozun dehalon vanobol.`", "**1.** <!-- lint: error -->`zolozun dehalon vanobol.`");
-    assert.equal(lintAgazanSpans(md, houseTables())[0]?.kind, "bad-marker");
-    assert.equal(lintAgazanSpans(md.replace("### Practice", "### Translation practice"), houseTables())[0]?.kind, "bad-marker");
+    assert.equal(lintEgabonSpans(md, houseTables())[0]?.kind, "bad-marker");
+    assert.equal(lintEgabonSpans(md.replace("### Practice", "### Translation practice"), houseTables())[0]?.kind, "bad-marker");
   });
 
   it("counts every span in exactly one class", () => {
     const stats = emptySpanStats();
-    lintAgazanSpans("`zazawan vazawal.` `zazawan` `fast` `A am B` <!-- lint: fragment -->`zul zazawan`", tables, stats);
+    lintEgabonSpans("`zazawan vazawal.` `zazawan` `fast` `A am B` <!-- lint: fragment -->`zul zazawan`", tables, stats);
     assert.deepEqual(
       [stats.sentence, stats.word, stats.english, stats.template, stats["marked-fragment"]],
       [1, 1, 1, 1, 1],
@@ -266,7 +266,7 @@ describe("lintAgazanSpans", () => {
 describe("lintBareRoots", () => {
   it("flags a bare root missing from the lexicon, not a published one or a th seam", async () => {
     const { loadDefaultTables } = await import("../parse/index.js");
-    const { lintBareRoots } = await import("./agazan-docs.js");
+    const { lintBareRoots } = await import("./egabon-docs.js");
     const tables = loadDefaultTables();
     // Spellings from the live lexicon, so a retie can't publish the unknown one.
     const known = CLOSED.swan;

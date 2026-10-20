@@ -213,7 +213,7 @@ onBeforeUnmount(() => {
         {{ promptCopied ? 'Copied' : 'Copy Helper Prompt' }}
       </button>
       <span class="prompt-note">
-        An Agazan-writing prompt for an LLM: these suggestions, the writing rules, and matching doc
+        An Egabon-writing prompt for an LLM: these suggestions, the writing rules, and matching doc
         examples, one numbered line per English line. Paste its answer in the draft box below.
       </span>
     </div>
@@ -319,7 +319,7 @@ onBeforeUnmount(() => {
 
     <div class="draft">
       <label for="english-helper-draft">
-        <span class="draft-label">Your Agazan draft</span>
+        <span class="draft-label">Your Egabon draft</span>
         <textarea
           id="english-helper-draft"
           v-model="draft"

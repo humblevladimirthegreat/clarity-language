@@ -13,7 +13,7 @@ describe("lintPracticeItems", () => {
   });
 
   it("flags an Also correct variant with another reading, or one that repeats the answer", () => {
-    assert.match(lint(PRACTICE.replace("`duzazon zehalon vanobol.`, ", "`zuzazon dehalon vanobol.`, ")).join("\n"), /English → Agazan 1: variant `zuzazon dehalon vanobol\.` has a different morph reading/);
+    assert.match(lint(PRACTICE.replace("`duzazon zehalon vanobol.`, ", "`zuzazon dehalon vanobol.`, ")).join("\n"), /English → Egabon 1: variant `zuzazon dehalon vanobol\.` has a different morph reading/);
     assert.match(lint(PRACTICE.replace("`duzazon zehalon vanobol.`, ", "`zehalon duzazon vanobol.`, ")).join("\n"), /repeats the main answer/);
   });
 
@@ -25,9 +25,9 @@ describe("lintPracticeItems", () => {
     assert.match(lint(md.replace("The one who sees takes **z-**.\n\n", "")).join("\n"), /Pick one 1: answer needs one line on why/);
   });
 
-  it("flags Also correct outside English → Agazan", () => {
+  it("flags Also correct outside English → Egabon", () => {
     const md = PRACTICE.replace("*Olozun sees Ehalon.*\n", "*Olozun sees Ehalon.*\n\n**Also correct:** `dehalon zolozun vanobol.`\n");
-    assert.match(lint(md).join("\n"), /Agazan → English 1: \*\*Also correct:\*\* belongs only/);
+    assert.match(lint(md).join("\n"), /Egabon → English 1: \*\*Also correct:\*\* belongs only/);
   });
 
   it("flags a Pick one pair with one reading, or with other roots", () => {

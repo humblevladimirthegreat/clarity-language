@@ -1,5 +1,5 @@
 /**
- * Check Agazan words in docs/grammar/ code spans: they must parse, and
+ * Check Egabon words in docs/grammar/ code spans: they must parse, and
  * content / x-family host roots must be in the lexicon.
  *
  * Morph-gloss pairs (example blockquotes, Morph-column tables, and visible
@@ -15,20 +15,20 @@
  * The level review page comes after every stage page: it introduces no roots, and each band's
  * items link back to every stage checkpoint of that level (src/lint/level-review.ts).
  * Free English lines on top-level grammar pages are checked for the sentence-and-note shape
- * (src/lint/free-english.ts); so are table English cells that translate an Agazan phrase or
+ * (src/lint/free-english.ts); so are table English cells that translate an Egabon phrase or
  * sentence, there and on cheat sheets, for shape and parentheses inside the sentence.
  * On the number pages, shorthand number examples need a
  * pronunciation row that matches the spoken form computed from the shorthand.
  * Mismatches, leftover ambiguity, and missing morph glosses fail the run.
  * Findings print to stdout. Each file logs morph coverage counts.
  *
- * Run: npm run lint:agazan
- *      npm run lint:agazan -- [paths...] [--check-ambiguity] [--order-report]
+ * Run: npm run lint:egabon
+ *      npm run lint:egabon -- [paths...] [--check-ambiguity] [--order-report]
  */
 import { readFileSync } from "node:fs";
 import { basename, dirname, join, relative, resolve } from "node:path";
 
-import { emptySpanStats, lintAgazanMarkdown, lintAgazanSpans, lintBareRoots } from "../src/lint/agazan-docs.js";
+import { emptySpanStats, lintEgabonMarkdown, lintEgabonSpans, lintBareRoots } from "../src/lint/egabon-docs.js";
 import {
   formatMorphGlossFinding,
   lintMorphGlossMarkdown,
@@ -97,9 +97,9 @@ function parseCli(argv: string[]): { paths: string[]; orderReport: boolean } {
   let orderReport = false;
   for (const arg of argv) {
     if (arg === "--help" || arg === "-h") {
-      console.error(`Usage: npm run lint:agazan -- [paths...] [--check-ambiguity]
+      console.error(`Usage: npm run lint:egabon -- [paths...] [--check-ambiguity]
 
-Checks backticked and fenced Agazan words under docs/grammar/.
+Checks backticked and fenced Egabon words under docs/grammar/.
 Morph-gloss mismatches, leftover ambiguity, missing morph glosses, coverage
 gaps, and translation word-bank English/lexicon mismatches fail. Word banks
 must list every drill content root, and every row must be used.
@@ -279,7 +279,7 @@ function main(): void {
     // `SELF` slots are checked as the unset default (`zeman`, `z-speaker`); no newlines change.
     const original = fillSelf(source);
     const rel = relative(REPO_ROOT, file);
-    const issues = lintAgazanMarkdown(original, tables);
+    const issues = lintEgabonMarkdown(original, tables);
     for (const issue of issues) {
       count += 1;
       const line = lineNumberAt(original, issue.index);
@@ -316,7 +316,7 @@ function main(): void {
       spanCount += 1;
       console.error(`${rel}:${lineNumberAt(original, issue.index)}  \`${issue.text}\`  bare-root  (root ${issue.root} is not in the lexicon; write the current root)`);
     }
-    for (const issue of lintAgazanSpans(original, tables, spanStats, used)) {
+    for (const issue of lintEgabonSpans(original, tables, spanStats, used)) {
       spanCount += 1;
       const line = lineNumberAt(original, issue.index);
       console.error(`${rel}:${line}  \`${issue.text}\`  ${issue.kind}  (${issue.detail})`);
@@ -405,10 +405,10 @@ function main(): void {
   }
 
   if (count > 0) {
-    console.error(`\n${count} Agazan word issue(s) in docs/grammar/.`);
+    console.error(`\n${count} Egabon word issue(s) in docs/grammar/.`);
   }
   if (spanCount > 0) {
-    console.error(`\n${spanCount} Agazan sentence / span issue(s) in docs/grammar/.`);
+    console.error(`\n${spanCount} Egabon sentence / span issue(s) in docs/grammar/.`);
   }
   if (duplicateIdCount > 0) {
     console.error(
@@ -417,7 +417,7 @@ function main(): void {
   }
   if (retieFormatCount > 0) {
     console.error(
-      `\n${retieFormatCount} retie-format issue(s). Pin an English heading id, put Agazan in backticks, or fix the shared-prefix mark (docs/meta/grammar-docs.md).`,
+      `\n${retieFormatCount} retie-format issue(s). Pin an English heading id, put Egabon in backticks, or fix the shared-prefix mark (docs/meta/grammar-docs.md).`,
     );
   }
   if (terminologyCount > 0) {
@@ -486,7 +486,7 @@ function main(): void {
     process.exit(1);
   }
   console.log("OK: overlay hosts match the published lexicon.");
-  console.log("OK: Agazan words in docs/grammar/ parse as legal and match the lexicon.");
+  console.log("OK: Egabon words in docs/grammar/ parse as legal and match the lexicon.");
   console.log(
     `OK: code spans — ${spanStats.sentence} sentence(s) and ${spanStats.phrase} phrase(s) parsed; ` +
       `${spanStats.template} template(s) and ${spanStats["marked-fragment"]} fragment(s) traced; ` +

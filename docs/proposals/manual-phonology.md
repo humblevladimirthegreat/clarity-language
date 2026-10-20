@@ -2,11 +2,11 @@
 
 **Status:** PROPOSED. Nothing here is built.  
 **Related:** [phonology.md](../grammar/phonology.md) (letters, [alphabet order](../grammar/phonology.md#letter-names), [opposite vowels](../grammar/phonology.md#opposite-vowels), [phonotactics](../grammar/phonology.md#phonotactics), [rhythm and stress](../grammar/phonology.md#rhythm-and-stress), [speech edges](../grammar/phonology.md#speech-edges)); [numbers.md § Counts](../grammar/numbers.md#counts) (digit letters); [clause.md § Role letters](../grammar/clause.md#role-letters) (`/th/` stance); [dependents.md § Continue](../grammar/dependents.md#continue-x) (`/x/`); [`data/lexicon-published.csv`](../../data/lexicon-published.csv); `diphone-singing.md` (a separate tooling idea for sung speech); rejected alternatives `musical-chords.md` (twelve-note chords) and `fingerspelling.md` (one-handed letter spelling).  
-**Design authority:** none. Spoken and sung Agazan keep the normal phonology. This is a second way to produce the language, with the fingers instead of the voice, like drummed or whistled speech. It adds no forms, readings, or spellings.
+**Design authority:** none. Spoken and sung Egabon keep the normal phonology. This is a second way to produce the language, with the fingers instead of the voice, like drummed or whistled speech. It adds no forms, readings, or spellings.
 
 ## Motivation
 
-Agazan's spelling is phonemic, its syllables have a fixed shape, and its word edges are clear, so a small set of finger shapes can stand in for its letters. One **finger code** assigns every letter a shape on one of two hands. The code is then carried by whatever the fingers touch or show:
+Egabon's spelling is phonemic, its syllables have a fixed shape, and its word edges are clear, so a small set of finger shapes can stand in for its letters. One **finger code** assigns every letter a shape on one of two hands. The code is then carried by whatever the fingers touch or show:
 
 | Channel | The fingers… | Received by |
 |---------|--------------|-------------|
@@ -207,7 +207,7 @@ A pressed shape has no finger direction, so in palm press the receiver tells the
 
 ### Signed
 
-The code held up in the air in the **shape** form, received by eye. It is a **manual code** for Agazan sounds, like fingerspelling or Cued Speech, not a sign language: it has no lexical signs and makes no use of signing space.
+The code held up in the air in the **shape** form, received by eye. It is a **manual code** for Egabon sounds, like fingerspelling or Cued Speech, not a sign language: it has no lexical signs and makes no use of signing space.
 
 | Code | Signed |
 |------|--------|

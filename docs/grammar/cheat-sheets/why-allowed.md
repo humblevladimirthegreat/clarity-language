@@ -41,7 +41,7 @@ A noun after a because pole names an act or a thing, never a person. For *becaus
 The ending on the because pole says whether anyone did wrong.
 
 <!-- cheat-sheet: why-allowed -->
-| Agazan | Use | English | Stage |
+| Egabon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`thavel`](../causation.md#fault) | the reason broke a norm | *it's their fault* / *to blame* | I |
 | [`thavem`](../causation.md#fault) | the reason made it happen; no fault claimed | *because* | I |
@@ -85,7 +85,7 @@ A sake is a kind of payoff. A sake word is a sake root, mid-word `th`, a stance 
 ### Which stance vowel {#stance-vowels}
 
 <!-- cheat-sheet: why-allowed -->
-| Agazan | Use | English | Ending says | Stage |
+| Egabon | Use | English | Ending says | Stage |
 |--------|-----|---------|-------------|-------|
 | [**`tha`**](../sakes.md#met) | the belonging or event pays off this sake | *serves* / *met* | [time horizon](../sakes.md#time-horizon-endings-on-met) | B |
 | [**`thu`**](../sakes.md#word-shape) | it subtracts from this sake | *detracts from* / *unmet* | [changeability](../sakes.md#sake-changeability) | B |
@@ -119,7 +119,7 @@ The scale runs **-l** most settled, **-m** the default, **-r** most passing. Whe
 A lone met word is a whole sentence about you: *my sake is met*. Sorry is about their sake, so name them in `/b/`.
 
 <!-- cheat-sheet: why-allowed -->
-| Agazan | Use | English | Stage |
+| Egabon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`…thal`](../sakes.md#thanks-sorry) | the help lasts | *that will stay with me* | I |
 | [`…tham`](../sakes.md#thanks-sorry) | horizon unstated | *thank you* | I |
@@ -141,7 +141,7 @@ A lone met word is a whole sentence about you: *my sake is met*. Sorry is about 
 Your feeling about the whole claim, on `/th/` with **-m**. It is never the subject's.
 
 <!-- cheat-sheet: why-allowed -->
-| Agazan | Use | English | Stage |
+| Egabon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`thoyuyom`](../sakes.md#speaker-attitude) | you want it, and it is still open | *hopefully* | I |
 | [`tholezom`](../sakes.md#speaker-attitude) | it went well by chance | *luckily* | I |
@@ -177,7 +177,7 @@ An [emotion](../sakes.md#emotion-compose) is built on one word: the sake word, a
 Motion is how the feeling moves, not how strong it is. For strength, put a [degree word](../clause.md#degree-w) on `/w/` before it. A direction `/b/` names the landmark, so it cannot also name whose stake.
 
 <!-- cheat-sheet: why-allowed -->
-| Agazan | English | Stage |
+| Egabon | English | Stage |
 |--------|---------|-------|
 | [`zezeyel wulothuraor gobum`](../sakes.md#emotion-compose) | *anxious about the dialogue* | I |
 | [`zozowum wanathumual gobum`](../sakes.md#emotion-compose) | *given up over the division* | I |
@@ -204,7 +204,7 @@ Motion is how the feeling moves, not how strong it is. For strength, put a [degr
 Each is a `/th/` word on the clause. The ending says where the rule comes from: **-l** a rule, **-m** a person (the speaker, or the `/b/`), **-r** custom or nobody. When unsure, use **-m**.
 
 <!-- generated: overlays kind=deontic -->
-| Agazan | English | Taught in | Stage |
+| Egabon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `huxedel` | binding refusal by the affected (a settled opt-out) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
 | `huxedem` | consent refused outright by the affected (withdraws any earlier revocable yes) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
@@ -245,7 +245,7 @@ Each is a `/th/` word on the clause. The ending says where the rule comes from: 
 The negatives use the same endings: `thedel` / `thedem` / `theder` forbid, `huxedel` / `huxedem` / `huxeder` refuse.
 
 <!-- cheat-sheet: why-allowed -->
-| Agazan | Use | English | Stage |
+| Egabon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`huxegol`](../sakes.md#consent) | a binding agreement | *by agreement* / *they signed on* | I |
 | [`huxegom`](../sakes.md#consent) | the affected said yes; they can take it back | *they agreed* | I |

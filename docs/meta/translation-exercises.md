@@ -18,7 +18,7 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 | **Inside each feature** | Worked examples only (house style) |
 | **End of a page stage** (e.g. [clause.md Beginner](../grammar/clause.md#beginner) → [practice](../grammar/clause.md#beginner-practice)) | Short checkpoint for *that page’s* stack |
 | **End of whole Beginner / Intermediate / Advanced** (cross-doc) | Required [level review](#level-reviews) on [review.md](../grammar/review.md), one band per level; do **not** duplicate a review on every grammar file |
-| **After a real trap** | At most 1–2 items *if* English pulls the wrong Agazan shape (e.g. *because* as a verb, a general *to be*, opaque `<>` when the page is not teaching loans) |
+| **After a real trap** | At most 1–2 items *if* English pulls the wrong Egabon shape (e.g. *because* as a verb, a general *to be*, opaque `<>` when the page is not teaching loans) |
 
 **When to add a stage checkpoint:** if the learner can misuse the form in the *next* section’s examples, put drills at the **end of this stage**. If the form is mostly recognition (a small closed table), the worked example is enough.
 
@@ -41,10 +41,10 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 <a id="principles"></a>
 
 1. **One new stack per item** — recycle prior stage **morphology**; do not introduce a *construction* the section has not taught. **Content** roots follow the [core vocabulary](#core-vocabulary): at most 5 new, at least 3 review. They do not have to appear in teaching examples.
-2. **Both directions** — English → Agazan (production) and Agazan → English (parsing). Production is harder; keep those items shorter / fewer if the set grows.
-3. **Directions are not mirrors** — no Agazan → English item may be the same proposition as any English → Agazan item on that checkpoint (same participants + same verb + same extra morph), and no [decision item](#item-types) may repeat a translation item's proposition. Production tests this stage’s new morph in a short sentence. Parsing uses a **different packaging** of the same morph (legal order scramble, omitted recoverable **`yal`**, a denser nest, resume **-r**, an English false friend) or an **offset scene** (same setting, different who-does-what). Recognition-only traps (*because* as a verb, classification vs identity) belong in Agazan → English, not as production clones. Parsing may be one clause or one extra `/ɡ/` longer than production; do not invert the production list.
-4. **Pure Agazan in early checkpoints** — published roots and closed specials only; `PoS<…>ENDING` / opaque spans only when the page is teaching loans or spans. Mention spans keep the **Agazan spelling** in morph; free English is *the word “…”* / *the phrase “…”* ([glosses.md](glosses.md#span-interiors)). *Said “X”* is **cite**, not mention. Cite **`@`** is the **work** (one-word work is ordinary **-n**, not `d@[onoron]`). The mention marker **`glelen`** is the **name**, including a one-word name (`glelen d<uzugon>`).
-5. **Spoiler answers** — VitePress `::: details Show answer` (or a clear custom label). The answer is the Agazan sentence or free English, plus a **morph gloss** line when `lint:agazan` does not treat parser output as redundant with that loose line ([glosses.md](glosses.md#example-block) format — roman `z-Azawan | v-sit`, not `gloss:`). **English → Agazan:** Agazan line, blank line, morph (when required). **Agazan → English:** morph (when required), blank line, italic English (Agazan stays on the prompt). Italic English in answers and in English → Agazan prompts follows the [sentence and note](glosses.md#free-english-sentence-and-note) shape with italics in place of quotes: `*sentence.* (note)`. A note is never required in a checkpoint; add one only when the checkpoint drills the marking the sentence drops. When a morph line is present, `lint:agazan` compares it to the [parser](glosses.md#role-english) (`v-see` when packed).
+2. **Both directions** — English → Egabon (production) and Egabon → English (parsing). Production is harder; keep those items shorter / fewer if the set grows.
+3. **Directions are not mirrors** — no Egabon → English item may be the same proposition as any English → Egabon item on that checkpoint (same participants + same verb + same extra morph), and no [decision item](#item-types) may repeat a translation item's proposition. Production tests this stage’s new morph in a short sentence. Parsing uses a **different packaging** of the same morph (legal order scramble, omitted recoverable **`yal`**, a denser nest, resume **-r**, an English false friend) or an **offset scene** (same setting, different who-does-what). Recognition-only traps (*because* as a verb, classification vs identity) belong in Egabon → English, not as production clones. Parsing may be one clause or one extra `/ɡ/` longer than production; do not invert the production list.
+4. **Pure Egabon in early checkpoints** — published roots and closed specials only; `PoS<…>ENDING` / opaque spans only when the page is teaching loans or spans. Mention spans keep the **Egabon spelling** in morph; free English is *the word “…”* / *the phrase “…”* ([glosses.md](glosses.md#span-interiors)). *Said “X”* is **cite**, not mention. Cite **`@`** is the **work** (one-word work is ordinary **-n**, not `d@[onoron]`). The mention marker **`glelen`** is the **name**, including a one-word name (`glelen d<uzugon>`).
+5. **Spoiler answers** — VitePress `::: details Show answer` (or a clear custom label). The answer is the Egabon sentence or free English, plus a **morph gloss** line when `lint:egabon` does not treat parser output as redundant with that loose line ([glosses.md](glosses.md#example-block) format — roman `z-Azawan | v-sit`, not `gloss:`). **English → Egabon:** Egabon line, blank line, morph (when required). **Egabon → English:** morph (when required), blank line, italic English (Egabon stays on the prompt). Italic English in answers and in English → Egabon prompts follows the [sentence and note](glosses.md#free-english-sentence-and-note) shape with italics in place of quotes: `*sentence.* (note)`. A note is never required in a checkpoint; add one only when the checkpoint drills the marking the sentence drops. When a morph line is present, `lint:egabon` compares it to the [parser](glosses.md#role-english) (`v-see` when packed).
 6. **Small sets, one bank** — item counts per band are in [drill-generation.md](drill-generation.md#execute); translation is about two thirds of a checkpoint. Put the checkpoint's words once above the drills, split into **New words** and **Review** ([vocab table](#vocab-table)). Do not default the bank to *walk* / *sleep* / *dog*.
 7. **Setting vocab, not example glue** — the [example root bank](drill-generation.md#root-bank) is for **worked examples** on grammar pages (*walk*, *sleep*, *dog*, *house*, …). Each **checkpoint** names one [setting](#checkpoint-setting) and uses **setting** content roots (plus house names). Those roots need not match the example bank. Certify each new content root in [lexicon-published.csv](../../data/lexicon-published.csv) (or overlays / compounds when that English is a hosted overlay or lemma). Do **not** edit teaching examples just to seed drills. Do **not** invent stems.
 8. **Test the decision, not the dictionary** — good items force a choice this stage taught (role letter, **-l** / **-m**, **`darl` last**, omit recoverable **`yal`**, …). The setting is packaging; the morph is the test. A translation item also tests vocabulary recall; the [decision items](#item-types) isolate the choice, so aim them at the stage's main decision.
@@ -53,7 +53,7 @@ Per-feature teaching already has its practice: rule → cue → 1–3 worked exa
 11. **Plausible scenes** — every prompt is something a person or animal could actually do **in this setting**. Do **not** write surreal props-as-agents (*a book sleeps*, *the blue house sings*). If the page’s stack is not a people scene (citation-only, number charts, span fences), keep items plausible for *that* decision.
 12. **Settings that show** — at least half the items in each translation direction use a root or a situation that belongs to the setting (*withdraw*, *teller*, a queue at the counter for a bank). Review roots from other settings may fill the rest. Optional flavor: a list that climbs in tension (ordinary errand → strain → peak) and the [love triangle](#house-scene). When you climb, do not make the peak a morph trap (English homograph, untaught overlay), do not mock appearance, and do not lecture the plot in spoilers.
 13. **Decision items** — add 2–3 [decision items](#item-types) per checkpoint. Every form in them follows the same recycle and leak rules as the translation items.
-14. **Accepted alternatives** — when a learner is likely to write a legal variant of an English → Agazan answer, list it on an **Also correct:** line ([template](#template)). Likely variants: a legal reordering, an omitted recoverable word, a pointer for a resume of the same one. Each variant has the same morph reading as the main answer; a variant that reads differently is not an alternative. Do not list every legal permutation.
+14. **Accepted alternatives** — when a learner is likely to write a legal variant of an English → Egabon answer, list it on an **Also correct:** line ([template](#template)). Likely variants: a legal reordering, an omitted recoverable word, a pointer for a resume of the same one. Each variant has the same morph reading as the main answer; a variant that reads differently is not an alternative. Do not list every legal permutation.
 
 ## Decision items
 <a id="item-types"></a>
@@ -62,14 +62,14 @@ Three item types aimed straight at the stage's decision. Each sits under its own
 
 | Type | Prompt | Answer |
 |------|--------|--------|
-| **Pick one** | English sentence and two Agazan forms that differ only in this stage's decision | The right form, its morph line, and one line on why |
-| **Fix it** | English meaning and an Agazan sentence with one error an English speaker would make | The corrected sentence, its morph line, and one line naming the error |
-| **What changes** | Two Agazan sentences that differ in one morph | A morph line for each, then the difference in meaning in plain English |
+| **Pick one** | English sentence and two Egabon forms that differ only in this stage's decision | The right form, its morph line, and one line on why |
+| **Fix it** | English meaning and an Egabon sentence with one error an English speaker would make | The corrected sentence, its morph line, and one line naming the error |
+| **What changes** | Two Egabon sentences that differ in one morph | A morph line for each, then the difference in meaning in plain English |
 
 - Both **Pick one** forms are legal and parse. The wrong one is wrong for *this* English, not ill-formed.
 - The **Fix it** correction parses. The error is a real learner error (English word order, a missing role letter, the wrong ending), not a random spelling. When the error is a spelling the parser rejects, [unassigned-reserved.md](unassigned-reserved.md) must not list a reading for it.
 - **What changes** uses only taught morphs on both sides, and both sentences parse.
-- `lint:agazan` checks the item shapes in the [template](#template) and these rules: both **Pick one** forms parse, read differently, and use the same content roots; the answer is one of them. The **Fix it** wrong form carries `<!-- lint: error -->` and may fail to parse, but when it parses it must read differently from the correction. The two **What changes** sentences differ in exactly one word. Each **Also correct:** variant must have the same morph reading as the main answer: clause order, an explicit or omitted **`yal`**, and a pointer in place of a resume of the same one do not count as differences. A hook moves with its `/b/`, `/h/` words keep their order, and a fresh noun is a new one, so a resume in place of a repeated noun, **-r** against **-l** or **-m**, a role compound against the event's own **-r**, swapped hook sides, and reordered `/h/` words all read differently. It also checks item counts ([drill-generation.md](drill-generation.md#execute)) and H4 order. Whether a form is a real learner error, or the right decision, stays with the author.
+- `lint:egabon` checks the item shapes in the [template](#template) and these rules: both **Pick one** forms parse, read differently, and use the same content roots; the answer is one of them. The **Fix it** wrong form carries `<!-- lint: error -->` and may fail to parse, but when it parses it must read differently from the correction. The two **What changes** sentences differ in exactly one word. Each **Also correct:** variant must have the same morph reading as the main answer: clause order, an explicit or omitted **`yal`**, and a pointer in place of a resume of the same one do not count as differences. A hook moves with its `/b/`, `/h/` words keep their order, and a fresh noun is a new one, so a resume in place of a repeated noun, **-r** against **-l** or **-m**, a role compound against the event's own **-r**, swapped hook sides, and reordered `/h/` words all read differently. It also checks item counts ([drill-generation.md](drill-generation.md#execute)) and H4 order. Whether a form is a real learner error, or the right decision, stays with the author.
 - Use whichever types fit the stage; a checkpoint need not have all three.
 
 ## Core vocabulary
@@ -84,7 +84,7 @@ The `core` column of the lexicon CSVs orders the learner's content roots by the 
 | **Source** | New roots come from the core list in order. A setting may pull a later core root forward; then move its `core` cell to this checkpoint, which owns its introduction |
 | **Non-core roots** | A content root with an empty `core` cell that the setting needs becomes core here: set its cell to this checkpoint, and it counts as new |
 
-`lint:agazan` checks these rules on `### Practice` checkpoints in path order: each **New words** root has its `core` cell on this checkpoint and each **Review** root an earlier one, the cap, the review minimum (fewer only when fewer than 3 core roots come before), and no `core` cell naming this checkpoint for a root its **New words** leaves out. House names, the `SELF` slot, specials, and sake roots go under **New words** only on the first checkpoint whose bank lists them. Whether a new root is the next in core order stays with the author.
+`lint:egabon` checks these rules on `### Practice` checkpoints in path order: each **New words** root has its `core` cell on this checkpoint and each **Review** root an earlier one, the cap, the review minimum (fewer only when fewer than 3 core roots come before), and no `core` cell naming this checkpoint for a root its **New words** leaves out. House names, the `SELF` slot, specials, and sake roots go under **New words** only on the first checkpoint whose bank lists them. Whether a new root is the next in core order stays with the author.
 
 ## Checkpoint setting
 <a id="checkpoint-setting"></a>
@@ -106,7 +106,7 @@ Worked examples on the grammar page stay in the [example root bank](drill-genera
 ## House scene (checkpoints)
 <a id="house-scene"></a>
 
-Checkpoint English and Agazan **imply** this cast. Do not lecture it in spoilers or captions. Do not put this paragraph on grammar pages (those still use names only).
+Checkpoint English and Egabon **imply** this cast. Do not lecture it in spoilers or captions. Do not put this paragraph on grammar pages (those still use names only).
 
 | Name | Root sense | Checkpoint stance |
 |------|------------|-------------------|
@@ -114,7 +114,7 @@ Checkpoint English and Agazan **imply** this cast. Do not lecture it in spoilers
 | **Uzazon** (`uzazon`) | *grace* (🦢 swan) | **Non-binary**. Competes for Ehalon’s affection by staying too composed **in this setting**: waits, tells, sits, follows the ordinary procedure. Polite while Olozun escalates. |
 | **Olozun** (`olozun`) | *courage* (🦁 lion) | A **man**. Competes by treating the setting as a dare: the one who runs the alarm, throws the punch, or attempts the robbery. Bravery that invents a threat. |
 
-**English pronouns match Agazan pronouns only.** A name word (`zuzazon`, `dehalon`, vocative `yehalon`) is *Uzazon* / *Ehalon* in English — never *they* / *her*. Use *they* / *them* (Uzazon), *he* / *him* (Olozun), or *she* / *her* (Ehalon) **only** when the Agazan form is a pronoun: a resume **-r**, a role pointer, or the specials **`amu` / `eho` / `aha` / `una`**, and only on a checkpoint that is teaching those. Parentheticals follow the same rule (*calling Ehalon*, not *calling her*). *I* / *you* through **`amun`** / **`ehon`** are allowed from pronouns.md Beginner on; before that, no *I* except a greeting with the **`SELF`** slot.
+**English pronouns match Egabon pronouns only.** A name word (`zuzazon`, `dehalon`, vocative `yehalon`) is *Uzazon* / *Ehalon* in English — never *they* / *her*. Use *they* / *them* (Uzazon), *he* / *him* (Olozun), or *she* / *her* (Ehalon) **only** when the Egabon form is a pronoun: a resume **-r**, a role pointer, or the specials **`amu` / `eho` / `aha` / `una`**, and only on a checkpoint that is teaching those. Parentheticals follow the same rule (*calling Ehalon*, not *calling her*). *I* / *you* through **`amun`** / **`ehon`** are allowed from pronouns.md Beginner on; before that, no *I* except a greeting with the **`SELF`** slot.
 
 **Love triangle (optional flavor):** Uzazon and Olozun compete for Ehalon’s affection **inside the setting**. Imply it with who *sees* whom, who *tells* whom, who stays composed, who raises the stakes. Do not write “Uzazon loves Ehalon” as a dictionary item unless that stage already taught a matching root. Do not use *Grace* / *Courage* / *Beauty* in free English — the names stay *Uzazon* / *Olozun* / *Ehalon*.
 
@@ -134,17 +134,17 @@ Short drills for Beginner. Try each item before opening **Show answer**. …
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *…* | `…` | … |
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *…* | `…` |
 
-#### English → Agazan {#beginner-english-to-agazan}
+#### English → Egabon {#beginner-english-to-egabon}
 
 **1.** *…*
 
@@ -156,7 +156,7 @@ z-… | v-…
 **Also correct:** `…`
 :::
 
-#### Agazan → English {#beginner-agazan-to-english}
+#### Egabon → English {#beginner-egabon-to-english}
 
 **1.** `…`
 
@@ -203,23 +203,23 @@ The difference in plain English.
 :::
 ````
 
-Number items from **1** under each H4. Keep the two translation directions first; the decision-item H4s follow in this order and appear only when used. **Also correct:** comes last in an English → Agazan answer, with variants comma-separated; omit the line when no likely variant exists. Omit **Review** on a checkpoint with no earlier core roots.
+Number items from **1** under each H4. Keep the two translation directions first; the decision-item H4s follow in this order and appear only when used. **Also correct:** comes last in an English → Egabon answer, with variants comma-separated; omit the line when no likely variant exists. Omit **Review** on a checkpoint with no earlier core roots.
 
-Omit recoverable **`yal`** unless the drill is teaching speech act. Match role letters and sense endings to the grammar page ([clause.md](../grammar/clause.md#role-letters), [word ending](../grammar/word-endings.md)). English items that need a person use house names (*Uzazon waits*), not *I* / *you*. English *they* / *he* / *she* only when the Agazan is a pronoun ([house scene](#house-scene)).
+Omit recoverable **`yal`** unless the drill is teaching speech act. Match role letters and sense endings to the grammar page ([clause.md](../grammar/clause.md#role-letters), [word ending](../grammar/word-endings.md)). English items that need a person use house names (*Uzazon waits*), not *I* / *you*. English *they* / *he* / *she* only when the Egabon is a pronoun ([house scene](#house-scene)).
 
 ### Vocab table
 <a id="vocab-table"></a>
 
 | Group | Columns | Rows |
 |-------|---------|------|
-| **New words** | English · Agazan · Cue | Roots this checkpoint introduces ([core vocabulary](#core-vocabulary)), plus house names and the `SELF` row on their first checkpoint |
-| **Review** | English · Agazan | Every other content root the items use, house names included. No cue |
+| **New words** | English · Egabon · Cue | Roots this checkpoint introduces ([core vocabulary](#core-vocabulary)), plus house names and the `SELF` row on their first checkpoint |
+| **Review** | English · Egabon | Every other content root the items use, house names included. No cue |
 
 - One sense per row (split house names `uzazon` / `olozun` / `ehalon`). Do not pack several pairs into one row.
 - **English** is the published lemma for that spelling (literal, metaphor, or packed role English); `build` checks it against the lexicon. Do not put an inflected English word in the bank (*running*, *hasty*, *the lie*) when the lemma is *run* / *haste* / *lie*; prompts may still use the obvious related form. SI nicknames (*gram*, *liter*) stay in **Cue** until that unit has its own published lemma. English is not an ending tag (`(**-m**)`). House people use the nativized name (`*Azawan*`). Overlay **English** is the overlay gloss (`*MEMORY*`). Role compounds use the morph sense (`*agent-building*`). Named **`x`** stems use the hyphenated host lemmas (`*hospital-bed*`). Speaker/listener specials use *I* / *you* or *speaker* / *listener*.
-- **Agazan** is the [citation](../grammar/word-endings.md#citation-forms) of the English sense (`odozol`, `ogawom` *volume*), ending on, not a bare stem (`odozo`). It is the in-clause word only when the English matches only with a role or `/x/` / `/h/` / `/w/` letter (`vanobol` *see*, `vehuhol` *sit*, `vezeyel` *tell*, `xodum` *therefore*, `hedarem` *haste*). Closed specials use their default ending (`ugobon`). Inner **`x`** pieces and other exceptions: [citation in tables](grammar-docs.md#citation-in-tables).
-- Every **New words** row has a **Cue**. When **Agazan** is not the citation of the English, the cue names the citation sense (`👁️ from *eye*`, `🔈 from *quiet*`). When a root has no useful cue, give the emoji alone. A cue is never the English to produce, and never a mid-dot prose list.
-- `lint:agazan` checks the columns of each group, the English, a cue on every **New words** row, one row per root across both groups, and that the bank lists exactly the content roots the drills use. The **Fix it** wrong form is not a use.
+- **Egabon** is the [citation](../grammar/word-endings.md#citation-forms) of the English sense (`odozol`, `ogawom` *volume*), ending on, not a bare stem (`odozo`). It is the in-clause word only when the English matches only with a role or `/x/` / `/h/` / `/w/` letter (`vanobol` *see*, `vehuhol` *sit*, `vezeyel` *tell*, `xodum` *therefore*, `hedarem` *haste*). Closed specials use their default ending (`ugobon`). Inner **`x`** pieces and other exceptions: [citation in tables](grammar-docs.md#citation-in-tables).
+- Every **New words** row has a **Cue**. When **Egabon** is not the citation of the English, the cue names the citation sense (`👁️ from *eye*`, `🔈 from *quiet*`). When a root has no useful cue, give the emoji alone. A cue is never the English to produce, and never a mid-dot prose list.
+- `lint:egabon` checks the columns of each group, the English, a cue on every **New words** row, one row per root across both groups, and that the bank lists exactly the content roots the drills use. The **Fix it** wrong form is not a use.
 
 **Caption and legend:** the captions are **`New words:`** and **`Review:`**. Spell out what the columns mean only on the first converted banks ([clause.md](../grammar/clause.md#beginner-practice) Beginner, [word-endings.md](../grammar/word-endings.md#beginner-practice) Beginner), and update the [How to learn](../grammar/introduction.md#cues) legend when the first page converts.
 
@@ -233,16 +233,16 @@ Each level ends with a review: the matching band of [review.md](../grammar/revie
 | **Coverage** | One item per stage checkpoint of the level, aimed at that page's main decision (its allowlist **Introduces** cell). Up to 3 extra items may revisit a page |
 | **Mix** | Mostly **Pick one** and short translation: **Pick one** at least a third of the items, at least 3 items per translation direction, **Fix it** + **What changes** at most a quarter |
 | **Rule link** | Every answer ends with `**Rule:** [Section title](page.md#id)` after **Also correct:**, linking the stage section that teaches the decision (not its checkpoint), in the same level |
-| **Vocabulary** | **Review** only (English · Agazan): no **New words**, house names and `SELF` included. Prefer roots unused longest (`npm run core-vocabulary -- --for review.md:<band>`) |
+| **Vocabulary** | **Review** only (English · Egabon): no **New words**, house names and `SELF` included. Prefer roots unused longest (`npm run core-vocabulary -- --for review.md:<band>`) |
 | **Setting** | None: the items range over every page, so there is no **Setting:** line. House cast, plausible scenes, and *I* as `amun` (or `SELF` in a greeting or bid) still apply |
 | **No copies** | No item repeats a stage checkpoint item's proposition. A review revisits the same decision with other words or another packaging |
 
-`lint:agazan` checks the **Rule:** line and its target, that every stage checkpoint of the band has an item linking its page, the item counts and mix, and (with the core rules) that the bank has no **New words**. Whether an item hits the page's main decision, and the no-copy rule, stay with the author.
+`lint:egabon` checks the **Rule:** line and its target, that every stage checkpoint of the band has an item linking its page, the item counts and mix, and (with the core rules) that the bank has no **New words**. Whether an item hits the page's main decision, and the no-copy rule, stay with the author.
 
 ## Legacy checkpoints
 <a id="legacy-checkpoints"></a>
 
-A checkpoint headed `### Translation practice {#<band>-translation-practice}` predates this standard. It has one **Roots used here** bank (English · Agazan, with **Same root as** / **Cue** where a row needs them) and translation items only. The **Roots used here** bank checks run only on legacy checkpoints; checks for this standard run only on `### Practice` sections. Morph lines and drill coverage are checked on both.
+A checkpoint headed `### Translation practice {#<band>-translation-practice}` predates this standard. It has one **Roots used here** bank (English · Egabon, with **Same root as** / **Cue** where a row needs them) and translation items only. The **Roots used here** bank checks run only on legacy checkpoints; checks for this standard run only on `### Practice` sections. Morph lines and drill coverage are checked on both.
 
 - Do not write a new legacy checkpoint.
 - A drill-coverage fix on a legacy checkpoint adds 1–3 translation items in its existing format and bank.

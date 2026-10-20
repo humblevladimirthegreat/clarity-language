@@ -42,7 +42,7 @@ export function plainTitle(title: string): string {
 }
 
 /**
- * One suggestion as the Inspect page shows it: `form` is Agazan (copied on click when `copy`),
+ * One suggestion as the Inspect page shows it: `form` is Egabon (copied on click when `copy`),
  * `note` is English with `*italic*` and `` `code` `` marks, `links` are `page.md#id` sections, and
  * `phrase` is a hook spelled with the landmark after it (copied on click).
  */

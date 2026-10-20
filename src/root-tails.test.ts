@@ -42,7 +42,7 @@ describe("tails", () => {
     assert.ok(!holderClash(`${host.slice(0, 3)}vu`, hosts));
   });
 
-  it("maps a label's first English consonant to its Agazan letter", () => {
+  it("maps a label's first English consonant to its Egabon letter", () => {
     assert.equal(firstConsonant("G L AE1 S AH0 Z"), "g");
     assert.equal(firstConsonant("EH1 R | K IH1 S"), "r");
     assert.equal(firstConsonant("AY1"), null);

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import MiniSearch from 'minisearch'
 import { computed, onMounted, onUnmounted, ref, shallowRef } from 'vue'
+import { withBase } from 'vitepress'
 import publishedCsv from '@data/lexicon-published.csv?raw'
 import overlayCsv from '@data/lexicon-overlays.csv?raw'
 import {
@@ -17,6 +18,8 @@ import { nameBanReason } from '@learner-name'
 import { useLearnerName } from '../composables/useLearnerName'
 
 const DEBOUNCE_MS = 100
+/** Every root's tail links to the section that explains it. */
+const tailsHref = withBase('/phonology.html#root-tails')
 
 const query = ref('')
 const status = ref<'loading' | 'ready' | 'error'>('loading')
@@ -61,6 +64,11 @@ function concreteLabel(row: LexiconSearchResult): string {
   if (row.concrete) return row.concrete
   if (row.overlayOnly) return row.overlays[0]?.definition || '(overlay)'
   return '—'
+}
+
+/** A five-letter root's tail in words (`creature · one`); a named root has no job. */
+function tailLabel(row: LexiconSearchResult): string {
+  return row.shape ? `${row.kind} · ${row.shape.replace('-', ' ')}` : row.kind ?? ''
 }
 
 function onInput(event: Event) {
@@ -118,7 +126,7 @@ onUnmounted(() => {
           <tr>
             <th scope="col">Emoji</th>
             <th scope="col">Concrete</th>
-            <th scope="col">Agazan</th>
+            <th scope="col">Egabon</th>
             <th scope="col">Abstract</th>
             <th scope="col">Role English</th>
             <th scope="col">Overlays</th>
@@ -139,6 +147,7 @@ onUnmounted(() => {
             </td>
             <td class="root">
               {{ row.root }}
+              <a v-if="row.kind" class="tail" :href="tailsHref" title="What the root's last two letters mean">{{ tailLabel(row) }}</a>
               <span v-if="learner.chosen.value === row.root" class="my-name">✓ your name</span>
               <button
                 v-else
@@ -327,6 +336,13 @@ tbody tr:hover {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+}
+
+.tail {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--vp-c-text-3);
+  font-size: 0.78rem;
 }
 
 .match-fields {

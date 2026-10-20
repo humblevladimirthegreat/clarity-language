@@ -17,24 +17,24 @@ import { parseWithTables } from "./parse-core.js";
 import { REPO_ROOT } from "../repo-paths.js";
 
 /**
- * One example: an example block's Agazan lines joined and its one free English line, or a table
- * row's Agazan and its italic English cell (`delimiter` `*`).
+ * One example: an example block's Egabon lines joined and its one free English line, or a table
+ * row's Egabon and its italic English cell (`delimiter` `*`).
  */
-export type DocExample = { agazan: string; free: string; line: number; delimiter?: "*" };
+export type DocExample = { egabon: string; free: string; line: number; delimiter?: "*" };
 
 /** Example blocks with exactly one free English line ([free-english.ts](../lint/free-english.ts) reads the blocks). */
 export function docExamples(markdown: string): DocExample[] {
   return exampleBlocks(markdown)
     .filter((block) => block.free.length === 1)
-    .map((block) => ({ agazan: block.agazan, free: block.free[0]!.text, line: block.line + 1 }));
+    .map((block) => ({ egabon: block.egabon, free: block.free[0]!.text, line: block.line + 1 }));
 }
 
-/** Table rows that translate an Agazan phrase or sentence, one per English piece. */
+/** Table rows that translate an Egabon phrase or sentence, one per English piece. */
 export function tableExamples(markdown: string): DocExample[] {
   return tableEnglish(markdown).flatMap((cell) =>
-    cell.agazan == null
+    cell.egabon == null
       ? []
-      : [{ agazan: cell.agazan, free: cell.text, line: markdown.slice(0, cell.index).split("\n").length, delimiter: "*" as const }],
+      : [{ egabon: cell.egabon, free: cell.text, line: markdown.slice(0, cell.index).split("\n").length, delimiter: "*" as const }],
   );
 }
 
@@ -43,14 +43,14 @@ export { splitFreeEnglish };
 const stripEmphasis = (text: string) => text.replace(/\*+([^*]+)\*+/g, "$1");
 
 /**
- * Agazan → English checkpoint answers (italic). Never in the example pool, so they are the
+ * Egabon → English checkpoint answers (italic). Never in the example pool, so they are the
  * evaluation's test set: no example has to be held out to score one.
  */
 export function checkpointAnswers(markdown: string): DocExample[] {
   return extractFreeEnglish(markdown).flatMap((line) =>
-    line.kind !== "ag-en" || line.agazan == null
+    line.kind !== "ag-en" || line.egabon == null
       ? []
-      : [{ agazan: line.agazan, free: line.text, line: markdown.slice(0, line.index).split("\n").length, delimiter: "*" as const }],
+      : [{ egabon: line.egabon, free: line.text, line: markdown.slice(0, line.index).split("\n").length, delimiter: "*" as const }],
   );
 }
 
@@ -64,19 +64,19 @@ export function examplePair(example: DocExample, source: string, tables: Classif
   if (!split) return null;
   const { sentence, note } = split;
   if (/`|\]\(/.test(sentence + (note ?? ""))) return null;
-  const agazan = fillSelf(example.agazan);
+  const egabon = fillSelf(example.egabon);
   let gloss: string;
   let constructions: string[];
   try {
-    gloss = morphGlossLine(agazan, tables, { strict: true });
-    constructions = parseWithTables(agazan, tables, { constructions: true }).constructions ?? [];
+    gloss = morphGlossLine(egabon, tables, { strict: true });
+    constructions = parseWithTables(egabon, tables, { constructions: true }).constructions ?? [];
   } catch {
     return null;
   }
   if (gloss.includes('←"')) return null;
   if (extraParens(split.parts.join(" "), gloss) > 0) return null;
   return {
-    agazan,
+    egabon,
     gloss,
     sentence: stripEmphasis(sentence),
     note: note == null ? null : stripEmphasis(note),

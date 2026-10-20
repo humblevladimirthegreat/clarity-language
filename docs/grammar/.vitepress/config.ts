@@ -12,9 +12,9 @@ const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
 const srcDir = fileURLToPath(new URL('../../../src', import.meta.url))
 
 export default defineConfig({
-  title: 'Agazan Grammar',
+  title: 'Egabon Grammar',
   description:
-    'Learner grammar for Agazan — compassion, rationality, and empowerment encoded in vocabulary and grammar.',
+    'Learner grammar for Egabon — compassion, rationality, and empowerment encoded in vocabulary and grammar.',
   base: '/grammar/',
   // Repo root `dist/grammar/` so Amplify can publish `dist/` and serve at /grammar/
   outDir: '../../dist/grammar',
@@ -49,22 +49,22 @@ export default defineConfig({
   },
   themeConfig: {
     nav: [
-      { text: 'Why Agazan', link: '/' },
-      { text: 'Agazan Introduction', link: '/introduction' },
+      { text: 'Why Egabon', link: '/' },
+      { text: 'Egabon Introduction', link: '/introduction' },
       { text: 'Clause', link: '/clause' },
       { text: 'Lexicon', link: '/lexicon' },
       { text: 'Inspect', link: '/inspect' },
       { text: 'Terminology', link: '/terminology' },
-      { text: 'Saying it in Agazan', link: '/english' },
+      { text: 'Saying it in Egabon', link: '/english' },
       { text: 'Claritish', link: '/claritish/' },
     ],
     socialLinks: [
-      { icon: 'reddit', link: 'https://www.reddit.com/r/ClarityLanguage', ariaLabel: 'Agazan on Reddit' },
-      { icon: 'discord', link: 'https://discord.gg/CAMGw2Akhc', ariaLabel: 'Agazan on Discord' },
+      { icon: 'reddit', link: 'https://www.reddit.com/r/ClarityLanguage', ariaLabel: 'Egabon on Reddit' },
+      { icon: 'discord', link: 'https://discord.gg/CAMGw2Akhc', ariaLabel: 'Egabon on Discord' },
     ],
     sidebar: [
       {
-        text: 'Claritish: Agazan in English',
+        text: 'Claritish: Egabon in English',
         collapsed: true,
         items: [
           { text: 'Claritish Introduction', link: '/claritish/' },
@@ -79,13 +79,13 @@ export default defineConfig({
           { text: 'Decisions and tries', link: '/claritish/decisions-and-tries' },
           { text: 'Feelings in three parts', link: '/claritish/feelings' },
           { text: 'Bonus: Tone marks', link: '/claritish/tone-marks' },
-          { text: 'Learn the full language', link: '/claritish/learn-agazan' },
+          { text: 'Learn the full language', link: '/claritish/learn-egabon' },
           { text: 'Cheat sheet', link: '/claritish/cheat-sheet' },
           { text: 'Journal editor', link: '/claritish/editor' },
         ],
       },
       {
-        text: 'Agazan Lessons',
+        text: 'Egabon Lessons',
         items: readingOrder,
       },
       {
@@ -93,7 +93,7 @@ export default defineConfig({
         items: levelReviews,
       },
       {
-        text: 'Saying it in Agazan',
+        text: 'Saying it in Egabon',
         items: [
           { text: 'Overview', link: '/english' },
           { text: 'People, things and places', link: '/say-people-places' },
@@ -125,7 +125,7 @@ export default defineConfig({
           { text: 'Linking clauses', link: '/cheat-sheets/linking-clauses' },
           { text: 'Roles and comparing', link: '/cheat-sheets/roles-comparing' },
           { text: 'Numbers', link: '/cheat-sheets/numbers' },
-          { text: 'Agazan → English', link: '/cheat-sheets/agazan-english' },
+          { text: 'Egabon → English', link: '/cheat-sheets/egabon-english' },
           { text: 'Exceptions', link: '/cheat-sheets/exceptions' },
         ],
       },

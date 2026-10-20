@@ -19,7 +19,7 @@ import type { ExtraNounHook } from "./hook-compounds.js";
 import type { AnaphorKind, Ending, LexReading, MorphWordFamily, PointerVowel, Pos, RoleVowel, XFamily } from "./types.js";
 
 /**
- * `summary` is for maintainers (Agazan terms allowed). `reader`, when set, explains the
+ * `summary` is for maintainers (Egabon terms allowed). `reader`, when set, explains the
  * construction in gloss notation to someone who knows only the translation prompt's fixed
  * core ([llm-prompt.ts](./llm-prompt.ts)); only constructions a careful reader still misreads get one.
  */

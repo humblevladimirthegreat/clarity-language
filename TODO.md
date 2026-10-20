@@ -18,8 +18,7 @@ use [skip-cd] for amplify to not deploy.
 -reconsider adjective bars (poor/rich, weak/strong)
 -consider replacing some compounds with tail suffixes, rename x-compounds to just compounds
 -consider respelling three-letter overlays with tails
--for flags, prioritize english echo, or just drop
--for locations without flags, consider allowing n suffix head
+-for named jurisdictions, heavily prioritize english echo even over normal syllable rules (still has to start with vowel and use alphabet). Alternatively use their official bird/plant/etc with n suffix and vowel indicating local/state/federal/supernational. Or just use opaque spans?
 
 -claritish editor phase 3 follow-ups (docs/proposals/partially-implemented/claritish-editor.md, Phase 3 as built): decide on part-of-speech tagging for label cues (measured: word list 34/50 recall, 1/25 false positives; compromise POS 17/50, 5/25, mostly role nouns like nurse/teacher; together 38/50, 6/25); the misses are non-pronoun subjects (my boss, Mark, Dad) and words not in the trait list (ridiculous, sensitive, impossible, clueless, creep, cheap, plurals like idiots, hyphenated two-faced); consider per-emotion-word card presets (confused → understanding). address the vitepress build warning while you're at it (caused by ClaritishCard)
 

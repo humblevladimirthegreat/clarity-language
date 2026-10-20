@@ -123,7 +123,7 @@ A [hook](../clause.md#complex-chaining) followed by `/b/` means *in* / *at* / *f
 
 ## Predication {#predication}
 
-Agazan has no word for *is*. The kind of claim comes from the pattern.
+Egabon has no word for *is*. The kind of claim comes from the pattern.
 
 ### Saying what someone is {#is}
 

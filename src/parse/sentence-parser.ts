@@ -172,7 +172,7 @@ type ChainState = "start" | NpSlot | "v" | "g" | "h" | "zFree" | "dFree" | "bFre
 type UnitEnd = "closed" | "open" | "shared" | "bare";
 type ParserRule = ParserMethod<[], CstNode>;
 
-/** How a noun list's join ends (see {@link AgazanSentenceParser.npJoinCloseRule}). */
+/** How a noun list's join ends (see {@link EgabonSentenceParser.npJoinCloseRule}). */
 const CLOSE_ENDS = ["Bare", "Open", "Shared", "Closed"] as const;
 type CloseEnd = (typeof CLOSE_ENDS)[number];
 /** How a list part ends: as its join, `Tagged` by a group tag, and `Grounds…` when its last bar hosts `barl`. */
@@ -181,7 +181,7 @@ const PART_ENDS: PartEnd[] = [...CLOSE_ENDS, "Tagged", ...([...CLOSE_ENDS, "Tagg
 /** How a list ends: as its last part (`Closed` covers `Tagged`). */
 const LIST_ENDS = [...CLOSE_ENDS, ...CLOSE_ENDS.map((end) => `Grounds${end}` as const)] as const;
 type ListEnd = CloseEnd | `Grounds${CloseEnd}`;
-/** Where a list part stands (see {@link AgazanSentenceParser.npCoordPartRule}). */
+/** Where a list part stands (see {@link EgabonSentenceParser.npCoordPartRule}). */
 type PartStart = "First" | "Rest" | "Free";
 
 /** The head tokens of a noun phrase at each slot: a noun, a stand-in, or a written span. */
@@ -333,7 +333,7 @@ const errorMessageProvider: IParserErrorMessageProvider = {
     `${stoppedAt(actual[0]!, previous, ruleName)}; expected at least one of: ${expectedList(expectedIterationPaths.map((path) => path[0]!))}`,
 };
 
-class AgazanSentenceParser extends CstParser {
+class EgabonSentenceParser extends CstParser {
   public lookahead(index: number): IToken {
     return this.LA(index);
   }
@@ -1671,9 +1671,9 @@ class AgazanSentenceParser extends CstParser {
 }
 
 // Built on first use: construction takes seconds, and many importers never parse a sentence.
-let parserInstance: AgazanSentenceParser | undefined;
-function sentenceParser(): AgazanSentenceParser {
-  return (parserInstance ??= new AgazanSentenceParser());
+let parserInstance: EgabonSentenceParser | undefined;
+function sentenceParser(): EgabonSentenceParser {
+  return (parserInstance ??= new EgabonSentenceParser());
 }
 let lastCst: CstNode | undefined;
 
@@ -1860,7 +1860,7 @@ function childNodes(parent: CstNode, key: string): CstNode[] {
   return (parent.children[key] ?? []) as CstNode[];
 }
 
-/** The adjective packages under `gPackage`, in order, with a trailing run ({@link AgazanSentenceParser.trailingAdjRun}) flattened. */
+/** The adjective packages under `gPackage`, in order, with a trailing run ({@link EgabonSentenceParser.trailingAdjRun}) flattened. */
 function adjNodes(parent: CstNode): CstNode[] {
   return childNodes(parent, "gPackage").flatMap((node) => (node.name === "trailingAdjRun" ? adjNodes(node) : [node]));
 }
@@ -2383,7 +2383,7 @@ function npCoordCst(parent: CstNode): CstNode | undefined {
 /** A noun list rule, or the rest of a list (`zCoordClosed`, `zCoordRestBare`, …). */
 const NP_LIST_RULE = /^[zdb]Coord(Rest|Free)?(Grounds)?(Bare|Open|Shared|Closed)$/;
 
-/** A noun list's parts, in order, with its right-recursive rest ({@link AgazanSentenceParser.npRules}) flattened. */
+/** A noun list's parts, in order, with its right-recursive rest ({@link EgabonSentenceParser.npRules}) flattened. */
 function npPartNodes(parent: CstNode): CstNode[] {
   return childNodes(parent, `${parent.name[0]}CoordPart`).flatMap((node) => (NP_LIST_RULE.test(node.name) ? npPartNodes(node) : [node]));
 }
@@ -2392,7 +2392,7 @@ function npCoordParts(cst: CstNode): CstNode[] {
   return NP_LIST_RULE.test(cst.name) ? npPartNodes(cst) : [cst];
 }
 
-/** A part's bars, in order, with the run before `barl` ({@link AgazanSentenceParser.barsGrounds}) flattened. */
+/** A part's bars, in order, with the run before `barl` ({@link EgabonSentenceParser.barsGrounds}) flattened. */
 function barNodes(parent: CstNode): CstNode[] {
   return childNodes(parent, "bar").flatMap((node) => (node.name === "barsGrounds" ? barNodes(node) : [node]));
 }
@@ -2439,12 +2439,12 @@ function buildNpCoord(cst: CstNode): NpCoord {
   return { level, parts: built };
 }
 
-/** A verb list's parts, in order, with the right-recursive tail ({@link AgazanSentenceParser.vpCoord}) flattened. */
+/** A verb list's parts, in order, with the right-recursive tail ({@link EgabonSentenceParser.vpCoord}) flattened. */
 function vpPartNodes(parent: CstNode): CstNode[] {
   return childNodes(parent, "vpCoordPart").flatMap((node) => (node.name.startsWith("vpTail") ? vpPartNodes(node) : [node]));
 }
 
-/** A verb part's item units, in order, with their chain ({@link AgazanSentenceParser.vpItemsStart}) flattened. */
+/** A verb part's item units, in order, with their chain ({@link EgabonSentenceParser.vpItemsStart}) flattened. */
 function vpItemNodes(parent: CstNode): CstNode[] {
   return childNodes(parent, "vpItemUnit").flatMap((node) => (node.name.startsWith("vpItems") ? vpItemNodes(node) : [node]));
 }
@@ -2768,7 +2768,7 @@ function impliedForceFromPolars(polars: LexWord[]): ImpliedForce | undefined {
   return last.ending === "m" ? "yam" : "yal";
 }
 
-/** One left-edge node with its right-recursive rest ({@link AgazanSentenceParser.leftEdgeForce}) merged in, in order. */
+/** One left-edge node with its right-recursive rest ({@link EgabonSentenceParser.leftEdgeForce}) merged in, in order. */
 function flattenEdge(cst: CstNode): CstNode {
   const rest = childNodes(cst, "leftEdgeRest")[0];
   if (!rest) return cst;
@@ -2889,6 +2889,6 @@ export function parseSentenceTokensWithCst(tokens: IToken[]): { result: ParseRes
 }
 
 /** Grammar productions keyed by rule name (the sentence-layer construction inventory). */
-export function sentenceGrammar(): ReturnType<AgazanSentenceParser["getGAstProductions"]> {
+export function sentenceGrammar(): ReturnType<EgabonSentenceParser["getGAstProductions"]> {
   return sentenceParser().getGAstProductions();
 }

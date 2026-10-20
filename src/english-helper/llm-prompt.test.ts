@@ -14,14 +14,14 @@ const data = loadHelperData();
 const context = loadPromptContext(tables);
 
 function examplesIn(prompt: string): string[] {
-  return [...prompt.matchAll(/^AGAZAN: (.+)$/gm)].map((m) => m[1]!).filter((line) => !line.startsWith("<"));
+  return [...prompt.matchAll(/^EGABON: (.+)$/gm)].map((m) => m[1]!).filter((line) => !line.startsWith("<"));
 }
 
 describe("English helper prompt", () => {
   it("carries the skeleton, the rules, doc examples, and the English", () => {
     const english = "My sister could not come.";
     const prompt = promptForEnglish([english], data, context);
-    for (const heading of ["## How to write Agazan", "## How to read the gloss", "## Analysis", "## Examples", "## Task", "## English"]) {
+    for (const heading of ["## How to write Egabon", "## How to read the gloss", "## Analysis", "## Examples", "## Task", "## English"]) {
       assert.ok(prompt.includes(heading), heading);
     }
     assert.ok(prompt.trimEnd().endsWith(english));
@@ -32,13 +32,13 @@ describe("English helper prompt", () => {
       .flatMap((s) => ((s.kind === "detector" || s.kind === "job" || s.kind === "entry") && s.example ? [s.example.form] : []));
     assert.ok(inline.length > 0);
     assert.ok(examples.length >= 2 && examples.length <= 6 + new Set(inline).size, `${examples.length} examples`);
-    for (const agazan of inline) assert.ok(examples.includes(agazan), agazan);
-    for (const agazan of examples) assert.ok(context.index.some((pair) => pair.agazan === agazan), agazan);
+    for (const egabon of inline) assert.ok(examples.includes(egabon), egabon);
+    for (const egabon of examples) assert.ok(context.index.some((pair) => pair.egabon === egabon), egabon);
   });
 
   it("explains only the constructions its examples use", () => {
     const prompt = promptForEnglish(["The cat sleeps on the green book."], data, context);
-    const shown = new Set(context.index.filter((pair) => examplesIn(prompt).includes(pair.agazan)).flatMap((pair) => pair.constructions));
+    const shown = new Set(context.index.filter((pair) => examplesIn(prompt).includes(pair.egabon)).flatMap((pair) => pair.constructions));
     for (const [id, reader] of context.readers) {
       if (prompt.includes(`- ${reader}`)) assert.ok(shown.has(id), id);
     }
@@ -53,14 +53,14 @@ describe("English helper prompt", () => {
       .map((s) => s.form);
     assert.ok(roots.length >= 2);
     const examples = examplesIn(buildHelperPrompt([{ english, analysis }], data, context));
-    for (const root of roots) assert.ok(examples.some((agazan) => agazan.includes(root)), `${root}:\n${examples.join("\n")}`);
+    for (const root of roots) assert.ok(examples.some((egabon) => egabon.includes(root)), `${root}:\n${examples.join("\n")}`);
   });
 
   it("numbers several inputs and never shows an input's own doc pair", () => {
     const pair = context.index.find((p) => p.note == null && p.sentence.split(" ").length >= 3)!;
     const prompt = promptForEnglish([pair.sentence, "Uzazon walks."], data, context);
     assert.ok(prompt.includes(`1 ${pair.sentence}\n2 Uzazon walks.`));
-    assert.ok(!examplesIn(prompt).includes(pair.agazan));
+    assert.ok(!examplesIn(prompt).includes(pair.egabon));
   });
 
   it("builds the same prompt from the page's JSON context", () => {
@@ -80,8 +80,8 @@ describe("English helper prompt", () => {
   });
 });
 
-function pair(agazan: string, sentence: string, constructions: string[] = []): ExamplePair {
-  return { agazan, gloss: agazan, sentence, note: null, constructions, labels: [], source: "x.md:1" };
+function pair(egabon: string, sentence: string, constructions: string[] = []): ExamplePair {
+  return { egabon, gloss: egabon, sentence, note: null, constructions, labels: [], source: "x.md:1" };
 }
 
 describe("selectHelperExamples", () => {
@@ -99,7 +99,7 @@ describe("selectHelperExamples", () => {
       ["root:bbbb", 1],
       ["c:rare.construction", 1],
     ]);
-    const picked = selectHelperExamples(wanted, pool, 6).map((p) => p.agazan);
+    const picked = selectHelperExamples(wanted, pool, 6).map((p) => p.egabon);
     assert.equal(picked.length, 2);
     assert.ok(picked.includes("zeeeel veeeel."));
     assert.ok(picked.some((a) => a.includes("aaaa") || a.includes("bbbb")));
@@ -107,7 +107,7 @@ describe("selectHelperExamples", () => {
 
   it("shows a fragment only for a feature no sentence has", () => {
     const withFragments = [...pool, pair("hgggm baaaal", "until one"), pair("hhhhhm bkkkkl", "before rain")];
-    const picked = selectHelperExamples(new Map([["root:aaaa", 1], ["root:kkkk", 1]]), withFragments, 6).map((p) => p.agazan);
+    const picked = selectHelperExamples(new Map([["root:aaaa", 1], ["root:kkkk", 1]]), withFragments, 6).map((p) => p.egabon);
     assert.ok(!picked.includes("hgggm baaaal"));
     assert.ok(picked.includes("hhhhhm bkkkkl"));
     assert.ok(picked.some((a) => a.includes("aaaa") && a.endsWith(".")));
@@ -121,11 +121,11 @@ describe("selectHelperExamples", () => {
 
 describe("verifyDraft", () => {
   it("passes a doc sentence and reports a broken one", () => {
-    const doc = context.index.find((p) => p.note == null && !p.agazan.includes("<"))!;
-    const ok = verifyDraft(doc.sentence, doc.agazan, tables);
+    const doc = context.index.find((p) => p.note == null && !p.egabon.includes("<"))!;
+    const ok = verifyDraft(doc.sentence, doc.egabon, tables);
     assert.equal(ok.error, undefined);
     assert.equal(ok.gloss, doc.gloss);
-    const broken = verifyDraft(doc.sentence, `${doc.agazan.replace(/\.$/, "")}q.`, tables);
+    const broken = verifyDraft(doc.sentence, `${doc.egabon.replace(/\.$/, "")}q.`, tables);
     assert.ok(broken.error);
   });
 

@@ -12,14 +12,17 @@ npm run convert-word -- --lexicon --only LITERAL
 
 `--only` takes a concrete literal, emoji, or root (repeatable or comma-separated) and limits the run to those published rows; every other row keeps its root. `--lexicon` alone is refused; `--lexicon --all` re-places the whole lexicon.
 
+`--all` re-places every five-letter row and keeps the three-letter roots.
+
 A hand-picked spelling bypasses the checks that placement runs. Placement:
 
-- derives the root from the English pronunciation (CMU dictionary), so it sounds like its cue
-- skips roots already held by other rows and stems used in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv)
-- picks the root's length from the row's role (below)
+- keeps a row's root length, and gives a new row three letters only when it is overlay-backed ([root length](#root-length))
+- builds a five-letter root's last two letters from the row's `kind` and `shape` ([root tails](#root-tails)), and picks its first three letters to keep same-kind roots apart ([onset](#onset))
+- skips roots already held by other rows and stems used in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv), and any root that would give a listed or hook compound a second split ([two seams](#two-seams))
 - rewrites the overlay and compound rows that spell the old root, and writes `tmp/lexicon-retie-map.json` for `retie-docs`
+- prints the root-tails report (`npm run convert-word -- --report` prints it alone)
 
-`npm run convert-word -- <english>` (no `--lexicon`) only prints a candidate. Use it to explore, not as a source for a hand edit.
+`npm run convert-word -- <english>` (no `--lexicon`) only prints a candidate: a three-letter root by English echo, or with `--kind` and `--shape` the five-letter root that word would take beside the lexicon. Use it to explore, not as a source for a hand edit.
 
 ## Seeds: concrete senses and pictographs
 
@@ -76,19 +79,50 @@ When a root's spelling is not yet known (a proposal, a draft page, a planned ove
 ## Root length
 
 - **Three letters:** rows backed by an overlay, plus the marked pronouns. These are annealed so short roots stay apart from each other.
-- **Five letters:** every other row, frequent senses first.
+- **Five letters:** every other row, spelled by its [root tail](#root-tails).
 
 A sense being common in English (a high word-frequency rank) does not earn a three-letter root.
 
-So a row that gains its first overlay needs a `convert-word --only` run to get a three-letter root. A row that loses its last overlay keeps its short root until the next full `--lexicon` run, which may lengthen it.
+A placed row keeps its length. So a row that gains its first overlay keeps its five-letter root, and one that loses its last overlay keeps its short root, until an editor decides to change it: clear the row's root (and fill or clear `kind` and `shape`), then run `convert-word --only` on it.
 
-### Second consonant
+## Root tails {#root-tails}
 
-A five-letter root never has **l**, **m**, **n** or **r** as its second consonant (`SECOND_CONSONANT_BAN` in [`src/word-converter.ts`](../../src/word-converter.ts)). Those four letters are the join letters of [dictionary compounds](#dictionary-compounds), and the ban keeps compound stems readable by position.
+A five-letter root `V C V C V` ends in a **tail**: its second consonant names the **kind** of thing its concrete sense is, and its final vowel the thing's **job**. The learner-facing letter map, with each letter's anchor in the grammar, is in [phonology.md § root tails](../grammar/phonology.md#root-tails). Three-letter roots have no tail.
 
-A nine-letter stem is either a three-letter left root + join + five-letter head, or a five-letter left root + join + three-letter head. Letter 4 is the left root's second consonant in the second shape, so with the ban a reader can find the join without knowing the lexicon: if letter 4 is **l / m / n / r**, it is the join; otherwise letter 6 is. Without the ban, a stem shaped `VCV l VlV CV` would split both ways. Seven- and eleven-letter stems split only one way, so they do not need the ban.
+The `kind` and `shape` columns of [`lexicon-published.csv`](../../data/lexicon-published.csv) record the call for each five-letter row, as a word (`creature`, `takes-away`), never as a letter; the letter map lives once in [`src/root-tails.ts`](../../src/root-tails.ts). `shape` is empty on a `named` row, whose final vowel is free, and both are empty on a three-letter row. `npm test` fails on a five-letter row with no kind or shape, or a root that doesn't end in its tail. **Changing a row's kind or shape is a respelling:** rerun `convert-word --lexicon --only` on it, then the retie.
 
-`check-compounds` would still reject a real two-way split, but only against the roots that exist; the ban makes the seam visible to a learner. Lifting it would take a full `--lexicon --all` re-placement.
+### Kind {#kind}
+
+The kind follows the row's **concrete** sense, as its label names it. The abstract sense takes the tail of its seed: *compassion* is a body root because it is reached through *heart*. Edge rules:
+
+- **People vs doing:** an action only a person could do (teach, judge, cook, pray) is `person`. An action any creature could do (run, climb, fall) is `doing`.
+- **People vs creatures:** a being you address as someone (ogre, vampire, alien) is `person`. An animal or animal-shaped monster (dragon, unicorn) is `creature`.
+- **On the body:** what is worn, carried or put on the body (ring, bag, lipstick, soap, bandage, pill) is `body`, not `tool`. Parts of creatures (wing, horn, paw prints) are `body` too.
+- **Play:** toys, game pieces, sports, scored games and races (ball, dice, kite, golf, horse race) are `doing`.
+- **Kitchen:** dishware and cooking gear (plate, spoon, pan, teapot) are `food`.
+- **Fixtures vs tools:** a thing built into a place (door, window, bed, toilet) is `place`. A thing you pick up and use (broom, key) is `tool`. Speakers and screens are `tool`; measuring tools and instruments are `counting`.
+- **Marks vs where:** a thing whose job is a mark on a surface (writing, paper, a symbol, a UI button, a prohibition icon, a religion mark) is `sign`. A thing that occupies or names a location (street furniture, a facility pictograph, a compass heading) is `place`. Buildings of worship stay `place`; worship and pray are `person`.
+- **Paper vs tools:** a thing that carries marks (book, envelope, label) is `sign`. A thing that makes them (pen, brush) is `tool`.
+- **Faces** are `mind` unless the label names a thing (*mask* is `body`). Gestures only a person makes (wave, clap) are `person`; bare hands are `body`.
+- **Colors, metals and gems** are `nature`. **Numbers, charts, clocks, times of day and the zodiac** are `counting`; sun, moon and stars are `nature`. Country and territory flags are `named`; other flags take the kind their label names.
+- **Compounds** need no kind: a stem ends in its head root, so it keeps the head's tail.
+
+### Shape {#shape}
+
+The shape is the thing's job, from the vowel series: `holds` (**a**: containers, groups, masses, open spaces), `one` (**o**: one of its kind, the default), `order` (**e**: ranked, sequenced, a path or heading), `takes-away` (**u**: cuts, removes, hides, ends, forbids, harms). **Tie rule:** test `takes-away`, then `holds`, then `order`, and take the first that fits; anything left is `one`. Length, height and a pointed outline are not a job: a banana, a tower and a pen are `one`.
+
+### Onset {#onset}
+
+The first three letters keep roots apart. A **confusing pair** is two roots of the same kind whose first two letters match; placement adds 1 for each. Roots of different kinds cost nothing, since the tail tells them apart, and learning order plays no part. A first consonant that is not the English label's first consonant (p/b, t/d, k/g, s/z, f/v merged) costs 2, so a root gives it up only to avoid two or more confusing pairs. Ties go to the closer full English echo, then to fewer stops (`b d g`). A label CMU doesn't know only loses the English cost and the tie-breaks.
+
+Rows are placed greedily in CSV order, then annealed; the run is seeded, so the same data gives the same roots. Each kind has 48 first-two-letter prefixes, so past 48 rows some confusing pairs are unavoidable; the report prints each kind beside that floor.
+
+### Two seams {#two-seams}
+
+A five-letter root may have any consonant second, so two seams read by knowing the roots rather than by letter position. Placement keeps each to one reading, and `npm test` and `check-compounds` check both:
+
+- **Nine-letter dictionary words.** A stem is 3 + join + 5 or 5 + join + 3, and with **l / m / n / r** second both can fit. `validateCompoundRows` rejects a listed stem with two published-root splits, and placement skips a root that would make one.
+- **Hook compounds.** A five-letter root with **l** or **m** second, plus **-l** or **-m**, spells the same letters as a three-letter root + ending + two-letter hook. The parser reads a hook compound only on a dictionary root ([hooks.md § hook compounds](../grammar/hooks.md#hook-compounds)), and placement never gives such a root an onset that is a three-letter root. A `/th/` holder host form (`ugur`) is never a root's first four letters either.
 
 ## Respelling a row
 

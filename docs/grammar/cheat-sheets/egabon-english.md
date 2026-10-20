@@ -5,7 +5,7 @@ outline: false
 
 <PrintButton />
 
-# Agazan → English cheat sheet {#agazan-english-cheat-sheet}
+# Egabon → English cheat sheet {#egabon-english-cheat-sheet}
 
 Met a short word you can't place? Find its family by shape, then look it up in the tables below, sorted by spelling. Every table except the first is built from the dictionary, so it always matches the grammar, and each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
@@ -30,7 +30,7 @@ Every join and hook, with its English: [Joins and hooks cheat sheet](joins-hooks
 The pronouns are shown without a role letter: add the one for their slot (`zamun` *I* as subject). The sentence linkers are shown whole.
 
 <!-- generated: closed-words -->
-| Agazan | English | Taught in | Stage |
+| Egabon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `ahan` | *we* (you and I) | [Special pronouns](../pronouns.md#special-pronouns) | B |
 | `amun` | *I* (the speaker) | [Special pronouns](../pronouns.md#special-pronouns) | B |
@@ -52,7 +52,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 ## `/ɡ/` words {#g-words}
 
 <!-- generated: overlays pos=g -->
-| Agazan | English | Taught in | Stage |
+| Egabon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `gabam` | BEFORE clause pole (ahead-of) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
 | `gadem` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](../relations.md#proxy) | B |
@@ -99,7 +99,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 ## `/h/` words {#h-words}
 
 <!-- generated: overlays pos=h -->
-| Agazan | English | Taught in | Stage |
+| Egabon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `habam` | BEFORE clause pole (ahead-of) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `hadem` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](../relations.md#proxy) | B |
@@ -163,7 +163,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 ## `/th/` words {#th-words}
 
 <!-- generated: overlays pos=th -->
-| Agazan | English | Taught in | Stage |
+| Egabon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `thahol` | intuition evidential with strong evidence (strong gut sense) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thahom` | intuition evidential (gut sense you cannot fully spell out) | [Evidentiality](../knowing.md#evidentiality) | I |
@@ -229,7 +229,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 ## `/v/` words {#v-words}
 
 <!-- generated: overlays pos=v -->
-| Agazan | English | Taught in | Stage |
+| Egabon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `vaen` | join-act starts with object | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
 | `van` | join-act includes or adds object | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
@@ -246,7 +246,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 ## `/w/` words {#w-words}
 
 <!-- generated: overlays pos=w -->
-| Agazan | English | Taught in | Stage |
+| Egabon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `wagel` | STILL phasal (the state continues); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `wagem` | STILL phasal (the state continues); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
@@ -321,7 +321,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 [Words you look up, not build](../x-compounds.md#lexical-compounds): two roots fused with a join letter, plus [hook compounds](../hooks.md#hook-compounds) (a citation fused with a hook). Shown as citations.
 
 <!-- generated: compounds -->
-| Agazan | English | Abstract (**-m**) |
+| Egabon | English | Abstract (**-m**) |
 |--------|---------|-------------------|
 | `ababolulol` | *first-aid-kit* |  |
 | `abadolegal` | *omelet* |  |

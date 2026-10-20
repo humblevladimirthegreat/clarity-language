@@ -1,6 +1,6 @@
 # Hosted relations
 
-Some English prepositions need a content root of their own (*like*, *for* in a swap, *on behalf of*, *between*, *part of*, *as of*). Agazan writes each one as a **relation** word on `/h/` (or `/ɡ/` on a noun), followed by an extra noun in `/b/` that completes it. Everyday *in* / *at* / *from* / *for* (a get) / *using* are [hooks](hooks.md#extra-noun) instead.
+Some English prepositions need a content root of their own (*like*, *for* in a swap, *on behalf of*, *between*, *part of*, *as of*). Egabon writes each one as a **relation** word on `/h/` (or `/ɡ/` on a noun), followed by an extra noun in `/b/` that completes it. Everyday *in* / *at* / *from* / *for* (a get) / *using* are [hooks](hooks.md#extra-noun) instead.
 
 ## Beginner {#beginner}
 
@@ -59,7 +59,7 @@ With no `/b/` after a joined subject, the model is the other members: each one r
 **Compare with:** a `/b/` word with no relation word before it is the recipient. *In a house* is a [hook](hooks.md#extra-noun) (`al bawuhol`). *Using* a tool is also a [hook](hooks.md#extra-noun). Giving **one** person two labels is not resemblance, so it does not use this pair. *As sleepy as* compares how far two things have a quality, not whether one resembles the other. *As if they walk* says the walk may not be real; with *like*, the walk is real.
 
 <!-- cheat-sheet: linking-clauses -->
-| Agazan | Use | English | Same root as | Cue |
+| Egabon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`humum` / `gumum`** | resemblance to a model | *like* | `umul` *mirror* | 🪞: the image is of the model |
 
@@ -79,7 +79,7 @@ On a noun, the same root is **`gehem`** (`dugul gehem bahawol` *a book for a ham
 **Compare with:** a `/b/` word with no relation word before it is the recipient (*a book for Olozun* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun). *Like a duck* is [simile](#similative). *In a house* is a hook (`al`).
 
 <!-- cheat-sheet: linking-clauses -->
-| Agazan | Use | English | Same root as | Cue |
+| Egabon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hehem` / `gehem`** | consideration / countervalue | *in exchange for* | `ehel` *currency-exchange* | 💱: the arrows swap one side for the other |
 
@@ -99,7 +99,7 @@ A recipient `/b/` can follow once the pair is complete: `zuzazon hadem bolozun v
 **Compare with:** a `/b/` word with no relation word before it is who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`).
 
 <!-- cheat-sheet: linking-clauses -->
-| Agazan | Use | English | Same root as | Cue |
+| Egabon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hadem` / `gadem`** | authorized agency | *on behalf of* | `adel` *id* | 🪪: the card stands as their face |
 
@@ -111,7 +111,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *hammer* | `ahawol` | 🔨 |
 | *duck* | `udazal` | 🦆 |
@@ -122,7 +122,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -139,7 +139,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *run* | `varuvel` |
 | *tell* | `vezeyel` |
 
-#### English → Agazan {#beginner-english-to-agazan}
+#### English → Egabon {#beginner-english-to-egabon}
 
 **1.** *Olozun walks like a guard.*
 
@@ -191,7 +191,7 @@ z-Olozun | [[w-very | h-like] | b-duck] | v-sneak
 [z-Uzazon | z-Ehalon | z-and] | h-like | v-walk
 :::
 
-#### Agazan → English {#beginner-agazan-to-english}
+#### Egabon → English {#beginner-egabon-to-english}
 
 **1.** `zolozun hadem behalon vamol.`
 
@@ -360,7 +360,7 @@ On a noun it is **`gebum`**: *Uzazon, across the station, sits.* As a plain noun
 As a plain noun, `zugel` is *a carousel*. **`om`** *near* says only that the person or thing is close, not that it surrounds the landmark.
 
 <!-- cheat-sheet: linking-clauses -->
-| Agazan | Use | English | Same root as | Cue |
+| Egabon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hazam` / `gazam`** | position between two landmarks | *between* | `azal` *sandwich* | 🥪: the filling sits between two sides |
 | **`hebum` / `gebum`** | path from one edge of the landmark to the far edge | *across* | `ebul` *bridge* | 🌉: a bridge spans the gap |
@@ -410,7 +410,7 @@ For *a piece of* a mass, put the substance first and `gozowum` right after it. W
 Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in* hook (`al`), not `gahem`.
 
 <!-- cheat-sheet: linking-clauses -->
-| Agazan | Use | English | Same root as | Cue |
+| Egabon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`hobom` / `gobom`** | constitutive piece | *part of* | `obol` *bone* | 🦴: the piece that holds the body’s shape |
 | **`hahem` / `gahem`** | filling of a vessel | *contents of* | `ahel` *jar* | 🫙: the vessel named by what it stores |
@@ -454,7 +454,7 @@ With no `/b/` after a joined subject, the tie points at the other members, as wi
 Any root whose abstract sense is a tie works this way (`gohoyam` *partner of*, `ganam` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zolozun gameyom buzazon`, `zoxameyor` is *the other party of that friendship* (Uzazon).
 
 <!-- cheat-sheet: linking-clauses -->
-| Agazan | Use | English | Same root as |
+| Egabon | Use | English | Same root as |
 |--------|-----|---------|--------------|
 | **`gameyom`** + `/b/` | companion of `/b/` | *friend of* | `ameyol` *Mrs Claus* |
 | **`gegebem`** + `/b/` | the one `/b/` answers to | *boss of* | `egebel` *crown* |
@@ -479,7 +479,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *station* | `uyehol` | 🚉 |
 | *house* | `awuhol` | 🏠 |
@@ -493,7 +493,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -514,7 +514,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vanobol` |
 | *find* | `vemawol` |
 
-#### English → Agazan {#intermediate-english-to-agazan}
+#### English → Egabon {#intermediate-english-to-egabon}
 
 **1.** *Olozun runs exactly like a duck.*
 
@@ -564,7 +564,7 @@ z-Ehalon | [g-companionship | b-Olozun]
 z-Olozun | v-run | [h-across | b-station]
 :::
 
-#### Agazan → English {#intermediate-agazan-to-english}
+#### Egabon → English {#intermediate-egabon-to-english}
 
 **1.** `zehalon ual bodevel voworel ol buyehol.`
 
@@ -646,7 +646,7 @@ Both landmarks fill the one `/b/` slot after **`hazam`**, so join them with **`b
 
 English *as of Friday*, *would*, *was going to*, and *if he had* mix two times: **when the event happens**, and **which “now”** the rest of the sentence is measured from (what is still left over, what used to be the pattern, what is planned, what is forecast). Call that second one *whose-now*.
 
-Agazan keeps the two apart. With no extra marking, whose-now is **speech-now**, the moment you are speaking. To move it, write a hosted pair: **`huhum`** when you claim that moment as real (a dated entry in the record), **`huram`** when it is only a placeholder you are not claiming. Put the moment (the snapshot) in `/b/` immediately after. (cue: 📒 *ledger* stamps a dated line in the books; 🔖 *bookmark* holds the place without stamping)
+Egabon keeps the two apart. With no extra marking, whose-now is **speech-now**, the moment you are speaking. To move it, write a hosted pair: **`huhum`** when you claim that moment as real (a dated entry in the record), **`huram`** when it is only a placeholder you are not claiming. Put the moment (the snapshot) in `/b/` immediately after. (cue: 📒 *ledger* stamps a dated line in the books; 🔖 *bookmark* holds the place without stamping)
 
 > `zolozun hamom huhum b_#22,7 veyorul.`
 >
@@ -741,7 +741,7 @@ An *as-of* pair inside a finished inner clause cannot be resumed later in the ma
 **Compare with:** [*after*](dependents.md#time-poles) **`hanom`** and extra-noun **`ol`** *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](causation.md#if) **`thoyem`** is a condition judged at speech-now, not English *if he had* (`huram`). [NOTIONAL](knowing.md#notional) is pretend, not a placeholder now. [Scope islands](joins.md#scope-islands-join) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the evidential, resume the *as-of*, or both.
 
 <!-- cheat-sheet: linking-clauses -->
-| Agazan | Use | English | Same root as | Cue |
+| Egabon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`huhum` / `guhum` / `wuhum`** | asserted whose-now | *as of* (dated ledger) | `uhul` *ledger* | 📒: a dated line in the books |
 | **`huram` / `guram` / `wuram`** | unasserted whose-now | *as of* (placeholder now) | `ural` *bookmark* | 🔖: hold the place without stamping |
@@ -794,7 +794,7 @@ Changing your mind is then a change of now, not a contradiction: *I was fairly s
 **Compare with:** an evidential is how you know **at speech-now**, even under `/th/` *as-of*. Someone else's stance takes a [holder](knowing.md#holder); with one, `thuhum` dates **their** stance. *I remember feeling it* is a remembering channel (`thevom`) plus `thuhum`.
 
 <!-- cheat-sheet: linking-clauses -->
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thuhum`** | stances as of a real now | *I thought / I felt (then)* | 📒: a dated line |
 | **`thuram`** | stances as of a now you are not claiming | *I would think / I'd feel* | 🔖: a held place |
@@ -808,14 +808,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *as-of.ledger* | `huhum` | 📒 from *ledger*: a dated line in the books |
 | *as-of.bookmark* | `huram` | 🔖 from *bookmark*: hold the place without stamping |
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -830,7 +830,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *sit* | `vehuhol` |
 | *tell* | `vezeyel` |
 
-#### English → Agazan {#advanced-english-to-agazan}
+#### English → Egabon {#advanced-english-to-egabon}
 
 **1.** *As of 22 July, Olozun had left and was still gone.*
 
@@ -864,7 +864,7 @@ z-book | [g-as-of.ledger | b-_22,7]
 [th-as-of.ledger | b-_22,7] | th-MAY | v-rain
 :::
 
-#### Agazan → English {#advanced-agazan-to-english}
+#### Egabon → English {#advanced-egabon-to-english}
 
 **1.** `zehalon hamom huhum b_#23,7 veyorul. xuzazon hamom huhur vehuhol.`
 

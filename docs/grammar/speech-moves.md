@@ -78,7 +78,7 @@ When the turn is not a statement, put its act word immediately before the body:
 The vowel picks the act. Its cues are **a** add / hold, **o** one / pick, **e** order / instruct, **u** undo / take back. The same four vowels, with the same cues, come back in many small word families later on.
 
 <!-- cheat-sheet: talking -->
-| Agazan | Use | Cue |
+| Egabon | Use | Cue |
 |--------|-----|-----|
 | **`yal`** | statement (often omitted) | **a** ≈ add (hold the claim) |
 | **`yol`** | question: yes/no and fill-in ask | **o** ≈ one (pick from a menu) |
@@ -133,7 +133,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *surprise* | `ezul` | 😮 |
 | *sit* | `vehuhol` | 🪑 from *chair* |
@@ -142,7 +142,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -152,7 +152,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *very* | `weluzom` |
 | *angry* | `onemul` |
 
-#### English → Agazan {#beginner-english-to-agazan}
+#### English → Egabon {#beginner-english-to-egabon}
 
 **1.** *Ehalon!* (calling Ehalon)
 
@@ -210,7 +210,7 @@ A prohibition keeps its verb late, as in a statement; only a command starts with
 **Also correct:** `yul vamol hedarem.`
 :::
 
-#### Agazan → English {#beginner-agazan-to-english}
+#### Egabon → English {#beginner-egabon-to-english}
 
 **1.** `yuzazon.`
 
@@ -302,7 +302,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 ### Speech act: firm and soft {#speech-act}
 
-You already mark whether a turn is a statement, question, command, or prohibition. The ending of the act word adds **how firmly** you mean it. English softens with extra words (*please*, *perhaps*, *for what it's worth*); Agazan changes only the ending.
+You already mark whether a turn is a statement, question, command, or prohibition. The ending of the act word adds **how firmly** you mean it. English softens with extra words (*please*, *perhaps*, *for what it's worth*); Egabon changes only the ending.
 
 The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a** statement, **o** question, **e** command, **u** prohibition). With **-l** you stand behind the act. With **-m** you offer it softly and leave the other person free to take it up or not. **-r** marks an act you hold only [for now](#act-r). Write the act word whenever the turn is not a plain statement; a period still lets you omit **`yal`**. A statement word you do write also ends a [carried channel](knowing.md#carry-forward): the claim after it is in your own voice again.
 
@@ -315,7 +315,7 @@ The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a
 **Compare with:** [MAY](knowing.md#may) (`thovum`) marks the scene as *could be*. **`yam`** is still a statement; you put it forward without insisting the other person take it up.
 
 <!-- cheat-sheet: talking -->
-| Agazan | Use | Cue |
+| Egabon | Use | Cue |
 |--------|-----|-----|
 | **`yal`** | **statement**: claim or description | **a** add + **-l**: stand behind |
 | **`yam`** | **soft statement**: offered, not insisted (*for what it's worth*) | **a** add + **-m**: hold, but leave it open |
@@ -347,7 +347,7 @@ A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` w
 **-r** marks an act you hold only **for now**: provisional, and you expect to revisit it.
 
 <!-- cheat-sheet: talking -->
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`yar`** | **provisional statement**: held until something better comes | *as things stand* / *for now, I take it that…* | **a** add + **-r**: a claim held for now |
 | **`yor`** | **working question**: asked to proceed, expect to re-ask | *just checking, …?* / *for now, is it…?* | **o** menu + **-r**: an ask for now |
@@ -523,7 +523,7 @@ A mark on a span colors all of it:
 English *frankly* and *to be clear* say in words how you are speaking. A tone mark cannot do that, because it changes only your voice. Instead, use a stance word (`/th/`, [clause](clause.md#stance-th)) built on an ordinary root. Like any stance word, it may sit anywhere in the sentence; the start is usual.
 
 <!-- cheat-sheet: talking -->
-| Agazan | English | Root |
+| Egabon | English | Root |
 |--------|---------|------|
 | **`thegabom`** | *to be clear* / *to put it plainly* | clarity |
 | **`thavewom`** | *frankly* / *honestly* / *to tell the truth* | revelation |
@@ -554,7 +554,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *trumpet* | `edarol` | 🎺 |
 | *clarity* | `thegabom` | 👓 from *glasses*: seeing it plainly |
@@ -562,7 +562,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -577,7 +577,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vanobol` |
 | *find* | `vemawol` |
 
-#### English → Agazan {#intermediate-english-to-agazan}
+#### English → Egabon {#intermediate-english-to-egabon}
 
 **1.** *For what it's worth, Ehalon sings.*
 
@@ -627,7 +627,7 @@ y-prohibition | y-prohibition | v-run
 th-clarity | z-Olozun | h-quiet | v-sing
 :::
 
-#### Agazan → English {#intermediate-agazan-to-english}
+#### Egabon → English {#intermediate-egabon-to-english}
 
 **1.** `yom zolozun vemawol dedarol.`
 

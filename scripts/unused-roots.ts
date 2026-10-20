@@ -1,5 +1,5 @@
 /**
- * Report legal 2- and 3-syllable Agazan roots not yet used in lexicon-published.csv.
+ * Report legal 2- and 3-syllable Egabon roots not yet used in lexicon-published.csv.
  *
  * Run: npm run unused-roots
  *      npm run unused-roots -- --syllables 2
@@ -9,7 +9,7 @@
 import { readFileSync } from "node:fs";
 
 import { parseCsv } from "../src/csv.js";
-import { allAgazanRoots, isAgazanRootShape } from "../src/word-converter.js";
+import { allEgabonRoots, isEgabonRootShape } from "../src/word-converter.js";
 import { dataPath } from "../src/repo-paths.js";
 
 const publishedPath = dataPath("lexicon-published.csv");
@@ -88,7 +88,7 @@ function loadUsedRoots(path: string): Set<string> {
     if (!root) {
       continue;
     }
-    if (!isAgazanRootShape(root)) {
+    if (!isEgabonRootShape(root)) {
       console.warn(`Skipping non-V(CV)+ published root: ${root}`);
       continue;
     }
@@ -99,7 +99,7 @@ function loadUsedRoots(path: string): Set<string> {
 }
 
 function reportBand(syllables: SyllableBand, used: Set<string>): BandReport {
-  const inventory = allAgazanRoots(syllables);
+  const inventory = allEgabonRoots(syllables);
   const unused = inventory.filter((root) => !used.has(root));
   return {
     syllables,

@@ -1,8 +1,8 @@
-/** The Agazan sentences and phrases in docs/grammar/, as the parser checks see them. */
+/** The Egabon sentences and phrases in docs/grammar/, as the parser checks see them. */
 import { readFileSync } from "node:fs";
 import { join, relative } from "node:path";
 
-import { classifyAgazanSpan, walkAgazanSpans } from "../lint/agazan-docs.js";
+import { classifyEgabonSpan, walkEgabonSpans } from "../lint/egabon-docs.js";
 import { listMarkdown } from "../markdown-files.js";
 import { REPO_ROOT } from "../repo-paths.js";
 
@@ -13,10 +13,10 @@ export function docSpans(root = REPO_ROOT): DocSpan[] {
   const spans = new Map<string, DocSpan>();
   for (const path of listMarkdown(join(root, "docs", "grammar"))) {
     const file = relative(root, path);
-    walkAgazanSpans(readFileSync(path, "utf8"), {
+    walkEgabonSpans(readFileSync(path, "utf8"), {
       text: (span) => {
         const text = span.trim();
-        const cls = classifyAgazanSpan(text);
+        const cls = classifyEgabonSpan(text);
         if ((cls === "sentence" || cls === "phrase") && !spans.has(text)) spans.set(text, { file, text });
       },
     });

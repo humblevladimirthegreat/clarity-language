@@ -12,7 +12,7 @@ const A = `# Page A
 
 ### Translation practice {#beginner-translation-practice}
 
-#### English → Agazan
+#### English → Egabon
 
 ## Intermediate
 

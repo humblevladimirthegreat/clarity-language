@@ -1,10 +1,10 @@
 /**
- * English that copies an Agazan spelling follows the retie of that spelling:
+ * English that copies an Egabon spelling follows the retie of that spelling:
  * a named **-n** word's English name (`zululon` → *Ululon*) and a quoted payload
  * (`d["odoga"]` → *“odoga”*, `d-CITE["odoga"]`). Only prose is touched;
  * code was already retied.
  */
-import { ENGLISH_IN_CODE } from "../lint/agazan-docs.js";
+import { ENGLISH_IN_CODE } from "../lint/egabon-docs.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import { morphGlossLine } from "../parse/morph-gloss.js";
 import { parseWord } from "../parse/word.js";
@@ -15,7 +15,7 @@ import type { RetieChange } from "./tokens.js";
 export type FollowPairs = {
   /** Capitalised English name → new name (`Ululon` → `Alahen`). */
   names: Map<string, string>;
-  /** Lowercase Agazan word → new spelling, for quoted payloads. */
+  /** Lowercase Egabon word → new spelling, for quoted payloads. */
   words: Map<string, string>;
 };
 
@@ -120,7 +120,7 @@ function followText(text: string, base: number, pairs: FollowPairs, changes: Ret
     return next.toUpperCase();
   });
   out = out.replace(QUOTED_RE, (whole, curly: string | undefined, bracket: string | undefined, offset: number, all: string) => {
-    // An opaque loan's payload is not Agazan and is never retied; a mention's is (`[gl-MENTION | z-OPAQUE["…"]]`).
+    // An opaque loan's payload is not Egabon and is never retied; a mention's is (`[gl-MENTION | z-OPAQUE["…"]]`).
     if (bracket !== undefined && /OPAQUE$/.test(all.slice(0, offset)) && !/MENTION \| [^\]|]*$/.test(all.slice(0, offset))) {
       return whole;
     }

@@ -1,9 +1,9 @@
 /**
  * Search the docs by English phrase: the English-side counterpart of find.mjs.
  *
- * Indexes the English the grammar pages already pair with Agazan: each
+ * Indexes the English the grammar pages already pair with Egabon: each
  * example's quoted English, each word's parser gloss, table rows with an
- * Agazan column and an English column, and translation-practice prompts.
+ * Egabon column and an English column, and translation-practice prompts.
  * Hits are grouped by the section that owns them, best section first.
  */
 import type { ClassifyTables } from "../parse/classify.js";
@@ -19,7 +19,7 @@ export type EntryKind = (typeof ENTRY_KINDS)[number];
 export type EnglishEntry = {
   /** English as the doc writes it (markdown kept). */
   english: string;
-  /** Agazan form the English is paired with. */
+  /** Egabon form the English is paired with. */
   form: string;
   kind: EntryKind;
   page: string;
@@ -81,7 +81,7 @@ export const SYNONYMS: readonly (readonly string[])[] = [
 ];
 
 const STOP_WORDS = new Set(["a", "an", "the", "to", "of", "is", "it"]);
-const FORM_HEADER = /^(agazan|form|agazan job)$/i;
+const FORM_HEADER = /^(egabon|form|egabon job)$/i;
 const ENGLISH_HEADER = /^(english\b.*|use|reading|you mean|meaning|gloss|for english like|.* sense)$/i;
 /** Columns that are neither the form nor English: mnemonics, pronunciation, notes. */
 const OTHER_HEADER = /^(cue|ipa|same root as|teach|anatomy|notes|why|example|examples)$/i;
@@ -134,13 +134,13 @@ function tableForm(cell: string): string {
 }
 
 /**
- * The form column: an `Agazan` / `Form` header, else the first other column
- * whose rows are mostly backticked Agazan (`| English | Bar |`, `| Marker | Use | English |`).
+ * The form column: an `Egabon` / `Form` header, else the first other column
+ * whose rows are mostly backticked Egabon (`| English | Bar |`, `| Marker | Use | English |`).
  */
 function formColumn(header: string[], body: string[][]): number {
   const named = header.findIndex((h) => FORM_HEADER.test(h));
   if (named >= 0) return named;
-  return header.findIndex((_, c) => agazanColumn(header, body, c));
+  return header.findIndex((_, c) => egabonColumn(header, body, c));
 }
 
 export type TableRow = { form: string; english: string; line: number; teach?: string; cues?: string[] };
@@ -191,8 +191,8 @@ export function pageTables(lines: string[]): RawTable[] {
   return out;
 }
 
-/** A column of mostly backticked Agazan that is not named as English or a note. */
-function agazanColumn(header: string[], body: string[][], c: number): boolean {
+/** A column of mostly backticked Egabon that is not named as English or a note. */
+function egabonColumn(header: string[], body: string[][], c: number): boolean {
   return !ENGLISH_HEADER.test(header[c] ?? "") && !OTHER_HEADER.test(header[c] ?? "") && body.filter((row) => /`[^`]+`/.test(row[c] ?? "")).length * 2 >= body.length;
 }
 
@@ -202,7 +202,7 @@ function agazanColumn(header: string[], body: string[][], c: number): boolean {
  * cell, so a row still shows its partner (`*in* (**-m** `am`: *amid*)`).
  */
 function pairedRows(header: string[], body: string[][], line: number): TableRow[] | undefined {
-  const pairs = header.flatMap((h, c) => (CUE_HEADER.test(header[c + 1] ?? "") && agazanColumn(header, body, c) ? [c] : []));
+  const pairs = header.flatMap((h, c) => (CUE_HEADER.test(header[c + 1] ?? "") && egabonColumn(header, body, c) ? [c] : []));
   if (pairs.length < 2) return undefined;
   const rows: TableRow[] = [];
   body.forEach((cells, r) => {
@@ -219,7 +219,7 @@ function pairedRows(header: string[], body: string[][], line: number): TableRow[
   return rows;
 }
 
-/** Table rows with an Agazan column and at least one English column. */
+/** Table rows with an Egabon column and at least one English column. */
 function tableRows(lines: string[]): TableRow[] {
   const rows: TableRow[] = [];
   for (const { header, body, line, h2, h3 } of pageTables(lines)) {
@@ -250,7 +250,7 @@ function glossEnglish(gloss: string): string {
   return gloss.replace(ROLE_PREFIX, "").replace(/[-.]/g, " ").trim();
 }
 
-/** Every English ↔ Agazan pairing on one page. See-also sections are skipped. */
+/** Every English ↔ Egabon pairing on one page. See-also sections are skipped. */
 export function collectEnglishEntries(markdown: string, page: string, tables: ClassifyTables): EnglishEntry[] {
   const text = fillSelf(markdown);
   const { sections } = pageSections(page, text);
@@ -281,10 +281,10 @@ export function collectEnglishEntries(markdown: string, page: string, tables: Cl
     }
     entries.push({ english, form, kind, page, line: lineOf(offset), slug: section.slug, title: section.title, band: section.band, tokens: toks, ...extra });
   };
-  const addGlosses = (agazan: string, offset: number) => {
+  const addGlosses = (egabon: string, offset: number) => {
     let words: { raw: string; gloss: string }[];
     try {
-      words = morphGlossWords(agazan, tables);
+      words = morphGlossWords(egabon, tables);
     } catch {
       // The docs lint reports spans that do not parse.
       return;
@@ -293,13 +293,13 @@ export function collectEnglishEntries(markdown: string, page: string, tables: Cl
   };
 
   for (const block of extractTeachBlocks(text)) {
-    const offset = lineStarts[block.agazanIndex] ?? 0;
-    if (block.loose) add("example", block.agazan, block.loose, offset);
-    addGlosses(block.agazan, offset);
+    const offset = lineStarts[block.egabonIndex] ?? 0;
+    if (block.loose) add("example", block.egabon, block.loose, offset);
+    addGlosses(block.egabon, offset);
   }
   for (const item of extractTranslationExercises(text)) {
-    if (item.loose) add("practice", item.agazan, item.loose, item.index);
-    addGlosses(item.agazan, item.index);
+    if (item.loose) add("practice", item.egabon, item.loose, item.index);
+    addGlosses(item.egabon, item.index);
   }
   for (const { form, english, line, teach, cues } of tableRows(text.split("\n"))) {
     add("table", form, english, lineStarts[line - 1]!, { ...(teach ? { teach } : {}), ...(cues ? { cues } : {}) });
@@ -393,8 +393,8 @@ export type RecipeTableFinding = { page: string; line: number; message: string }
 /**
  * The recipe-page structure the English helper reads (english.md, say-*.md): under
  * `#many-jobs` each `###` heading is a list of italic cues and each table is
- * `English itch | Agazan job | Teach` with a link in every `Teach` cell; every other
- * table with Agazan in it has an Agazan and an English column the harvest recognizes.
+ * `English itch | Egabon job | Teach` with a link in every `Teach` cell; every other
+ * table with Egabon in it has an Egabon and an English column the harvest recognizes.
  * No harvest markers on the tables: the heading, header and `Teach` cell already say everything,
  * and this lint fails the build on a shape the harvest can't read instead of skipping it quietly.
  */
@@ -415,8 +415,8 @@ export function lintRecipeTables(markdown: string, page: string): RecipeTableFin
   for (const table of pageTables(lines)) {
     const where = { page, line: table.line };
     if (table.h2?.id === MANY_JOBS_ID) {
-      if (table.header.join(" | ") !== "English itch | Agazan job | Teach") {
-        findings.push({ ...where, message: `#${MANY_JOBS_ID} table header is "${table.header.join(" | ")}", not "English itch | Agazan job | Teach"` });
+      if (table.header.join(" | ") !== "English itch | Egabon job | Teach") {
+        findings.push({ ...where, message: `#${MANY_JOBS_ID} table header is "${table.header.join(" | ")}", not "English itch | Egabon job | Teach"` });
         continue;
       }
       if (!table.h3) findings.push({ ...where, message: `#${MANY_JOBS_ID} table has no \`###\` cue heading` });
@@ -425,12 +425,12 @@ export function lintRecipeTables(markdown: string, page: string): RecipeTableFin
       });
       continue;
     }
-    // A table with no Agazan at all (a page index) is not a recipe table.
+    // A table with no Egabon at all (a page index) is not a recipe table.
     if (!table.body.some((cells) => cells.some((cell) => /`[^`]+`/.test(cell)))) continue;
     const formCol = formColumn(table.header, table.body);
     const englishCol = table.header.findIndex((h, c) => c !== formCol && ENGLISH_HEADER.test(h));
     if (formCol < 0 || englishCol < 0) {
-      findings.push({ ...where, message: `table "${table.header.join(" | ")}" has no ${formCol < 0 ? "Agazan" : "English"} column the English harvest recognizes` });
+      findings.push({ ...where, message: `table "${table.header.join(" | ")}" has no ${formCol < 0 ? "Egabon" : "English"} column the English harvest recognizes` });
     }
   }
   return findings;

@@ -8,7 +8,7 @@ Recipes for English *as for*, *whose*, *different from*, official titles, and po
 
 **Needs:** [Adverbs](clause.md#adverbs-h) · [Extra nouns](clause.md#extra-nouns)
 
-English *as for X* or *regarding X* names who or what the sentence is about, even when X is not the subject or object. In Agazan, put **`hohagem`** *as for* in `/h/` and X in a hosted `/b/` right after it: `hohagem buzazon` is *as for Uzazon*. The rest of the sentence keeps its free order. (cue: #️⃣ *hash*: a hashtag marks what the post is about.)
+English *as for X* or *regarding X* names who or what the sentence is about, even when X is not the subject or object. In Egabon, put **`hohagem`** *as for* in `/h/` and X in a hosted `/b/` right after it: `hohagem buzazon` is *as for Uzazon*. The rest of the sentence keeps its free order. (cue: #️⃣ *hash*: a hashtag marks what the post is about.)
 
 > `hohagem buzazon zolozun degazol vanobol.`
 >
@@ -159,7 +159,7 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 >
 > "Ugun announces." (Ugun is an office, named here for the first time)
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `zugun` | handle: one root + **-n** | default talk, including first mention |
 | `zuguxolozun` | long title: hyphenated name (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
@@ -178,7 +178,7 @@ Resume the handle like any name: its whole stem + **-r** (`zugur`).
 
 **Needs:** [Role compounds (the doer)](roles.md#role-compounds) · [The usual role](roles.md#usual-role) · [Saying someone is a teacher](roles.md#saying-someone-is-a-teacher)
 
-English names a person by what they usually do (*a singer*, *a manager*). Agazan builds that noun from the event root: person letter, **`a`**, **`x`**, the root, then **`the`** and the ending ([the usual role](roles.md#usual-role)). `zaxezeyothel` is *a singer* from `ezeyol` *sing*, and on `/ɡ/` (`gaxezeyothel`) it says someone is one. Without **`the`**, `zaxezeyol` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
+English names a person by what they usually do (*a singer*, *a manager*). Egabon builds that noun from the event root: person letter, **`a`**, **`x`**, the root, then **`the`** and the ending ([the usual role](roles.md#usual-role)). `zaxezeyothel` is *a singer* from `ezeyol` *sing*, and on `/ɡ/` (`gaxezeyothel`) it says someone is one. Without **`the`**, `zaxezeyol` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
 
 > `zaxoleyothel vuruyel.`
 >
@@ -186,7 +186,7 @@ English names a person by what they usually do (*a singer*, *a manager*). Agazan
 >
 > "A student writes."
 
-| Agazan | English | Same root as |
+| Egabon | English | Same root as |
 |--------|---------|--------------|
 | `zaxoleyothel` | *student* / *pupil* | `oleyol` *learn* |
 | `zaxodeyethel` | *teacher* / *professor* / *coach* | `odeyel` *teach* |
@@ -257,7 +257,7 @@ English *as a teacher, I …* has no one-word form (`/h/` already means manner).
 
 **Needs:** [Kin](numbers-applied.md#kin-generations) · [Adjectives `/ɡ/`](clause.md#adjectives-ɡ)
 
-English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family tree and a sex. Agazan says the layer with the kin number and the sex with **`gemegol`** *male* or **`gavegol`** *female*, after `zobel` *person*. Put the person the tie is from in `/b/` right after the number.
+English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family tree and a sex. Egabon says the layer with the kin number and the sex with **`gemegol`** *male* or **`gavegol`** *female*, after `zobel` *person*. Put the person the tie is from in `/b/` right after the number.
 
 > `zobel gavegol grebazol buzazon.`
 >
@@ -265,7 +265,7 @@ English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family 
 >
 > "Uzazon's sister."
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *mother* / *mom* | `zobel gavegol grebuwol buzazon` |
 | *father* / *dad* | `zobel gemegol grebuwol buzazon` |
@@ -281,7 +281,7 @@ For *uncle* and *grandfather*, use `gemegol` for `gavegol`.
 
 **Needs:** [Adjectives `/ɡ/`](clause.md#adjectives-ɡ)
 
-English *puppy*, *kitten*, *mare* and *ewe* each pack an animal together with its age or sex. Agazan says the animal's root, then an adjective: **`gahayol`** *young* (the child root), **`gubuyol`** *newborn* (the baby root), **`gavegol`** *female*, **`gemegol`** *male*. These are the same adjectives the [kin words](#kin-words) use for *sister* and *brother*.
+English *puppy*, *kitten*, *mare* and *ewe* each pack an animal together with its age or sex. Egabon says the animal's root, then an adjective: **`gahayol`** *young* (the child root), **`gubuyol`** *newborn* (the baby root), **`gavegol`** *female*, **`gemegol`** *male*. These are the same adjectives the [kin words](#kin-words) use for *sister* and *brother*.
 
 > `zodozol gahayol voworel.`
 >
@@ -297,7 +297,7 @@ Adjectives stack, so a female lamb is sheep, young, female.
 >
 > "Uzazon sees a female lamb."
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *puppy* | `zodozol gahayol` |
 | *kitten* | `zegazol gahayol` |
@@ -317,7 +317,7 @@ Some young and some males already have a root of their own. Use it: `zehezol` *c
 
 **Needs:** [Exchange](relations.md#exchange)
 
-English *buy* and *sell* are two views of one swap. Agazan has one trading verb, `vehem`, and **`hehem`** names what is given in return. Put what changes hands in `/d/` and what it is swapped for in `/b/`. Money in `/d/` and the goods in `/b/` is *buy*; the goods in `/d/` and money in `/b/` is *sell*.
+English *buy* and *sell* are two views of one swap. Egabon has one trading verb, `vehem`, and **`hehem`** names what is given in return. Put what changes hands in `/d/` and what it is swapped for in `/b/`. Money in `/d/` and the goods in `/b/` is *buy*; the goods in `/d/` and money in `/b/` is *sell*.
 
 > `zuzazon damol hehem bugul vehem.`
 >
@@ -337,9 +337,9 @@ English *buy* and *sell* are two views of one swap. Agazan has one trading verb,
 
 **Needs:** [The extra `/b/` party (`o`)](roles.md#role-compounds) · [Extra noun (`el`, `em`)](hooks.md#extra-noun) · [Exchange](relations.md#exchange) · [Coordinated lists](joins.md#respectively) · [Fault](causation.md#fault)
 
-English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Agazan keeps the giving verb `vebel` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in unhosted `/b/` after the verb ([recipient](clause.md#extra-nouns)). To name the parties from the verb itself, use the [role compounds](roles.md#role-compounds): **`zaxebel`** is the giver (*supplier*, *provider*) and **`zoxebel`** is the recipient (*receiver*). **-r** (`zoxeber`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vagarol` (*credit*, with the *lend* sense): the borrower is the recipient.
+English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several views of one handing-over. Egabon keeps the giving verb `vebel` (*present*) and moves the view by where you put people. The thing sits in `/d/`, and the one who gets it sits in unhosted `/b/` after the verb ([recipient](clause.md#extra-nouns)). To name the parties from the verb itself, use the [role compounds](roles.md#role-compounds): **`zaxebel`** is the giver (*supplier*, *provider*) and **`zoxebel`** is the recipient (*receiver*). **-r** (`zoxeber`) is *this* recipient of the latest giving. *Lend* and *borrow* work the same way on `vagarol` (*credit*, with the *lend* sense): the borrower is the recipient.
 
-| English | Agazan | Reading |
+| English | Egabon | Reading |
 |---------|--------|---------|
 | *give* / *provide* / *contribute* / *submit* / *hand in* | `zuzazon dugul vebel bolozun.` | the book goes to Olozun |
 | *get* / *receive* / *acquire* (a thing handed over) | the same sentence | the receiver is the `/b/` |
@@ -384,9 +384,9 @@ English *give*, *get*, *receive*, *provide*, *lend* and *borrow* are several vie
 
 **Needs:** [Rank joins](joins.md#rank-joins) · [Join-act verbs](join-across-roles.md#join-act-verbs) · [Join-relations](join-across-roles.md#join-relations) · [Of relations](relations.md#of-relations) · [Whose](hooks.md#genitive) · [Exchange](relations.md#exchange) · [Proxy](relations.md#proxy) · [Simile](relations.md#similative)
 
-Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer*) say how two things **stand to each other** more than what anyone does. Agazan writes that stance as a hosted relation word with the other thing in `/b/`, or as a join-act verb when someone really acts on a thing. Pick the relation, and keep the ordinary verb for the activity.
+Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer*) say how two things **stand to each other** more than what anyone does. Egabon writes that stance as a hosted relation word with the other thing in `/b/`, or as a join-act verb when someone really acts on a thing. Pick the relation, and keep the ordinary verb for the activity.
 
-| English | Agazan | Reading |
+| English | Egabon | Reading |
 |---------|--------|---------|
 | *join* / *associate with* (come along) | `zuzazon voworel han bolozun.` | walks in company with Olozun |
 | *join* / *admit* (take into a set) | `zuzazon dugadom vaon.` | admits the object; more may follow |
@@ -436,9 +436,9 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 
 **Needs:** [Of relations](relations.md#of-relations) · [Role compounds](roles.md#role-compounds) · [Universals](joins.md#universals-domains-generics) · [Joins](joins.md) · [Adjectives](clause.md#adjectives-ɡ) · [Equatives](comparatives.md#equatives) · [Adverbs](clause.md#adverbs-h) · [Stacked discourse hooks](hooks.md#stacked-discourse)
 
-English makes nouns for a part, a kind, a role, and a manner. Agazan has no separate noun for most of them. A part is a relation to its whole, a kind is the classification root, a role is a role compound on the verb, and a manner is an adverb. Pick the job and write that.
+English makes nouns for a part, a kind, a role, and a manner. Egabon has no separate noun for most of them. A part is a relation to its whole, a kind is the classification root, a role is a role compound on the verb, and a manner is an adverb. Pick the job and write that.
 
-| English | Agazan | Reading |
+| English | Egabon | Reading |
 |---------|--------|---------|
 | *piece* / *fragment* / *feature* | `zahawol gobom bawuhol.` | a part of the whole |
 | *cluster* / *bunch* | the kind with **-x**: `zodozolx` | a set here ([group words](say-amounts.md#group-words)) |
@@ -477,9 +477,9 @@ English makes nouns for a part, a kind, a role, and a manner. Agazan has no sepa
 
 **Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Exchange](relations.md#exchange) · [Between](relations.md#locative-relations) · [Number as verb](numbers.md#number-as-verb-by-marker) · [Role pointers](pronouns.md#role-pointers) · [Consent](sakes.md#consent) · [Joins](joins.md) · [Role letters](clause.md#role-letters)
 
-An English noun like *case* or *board* covers several jobs, and Agazan has a different word for each. Decide which job you mean first, then write that word. Where a job is a whole clause (*in that case*, *a deal*), the recipe is a clause, not a noun.
+An English noun like *case* or *board* covers several jobs, and Egabon has a different word for each. Decide which job you mean first, then write that word. Where a job is a whole clause (*in that case*, *a deal*), the recipe is a clause, not a noun.
 
-| English | Agazan | Reading |
+| English | Egabon | Reading |
 |---------|--------|---------|
 | *case* (*in that case*) | `thoyem barl` | if |
 | *case* (lawsuit) | `zahayelayoval` | a problem put before a judge |
@@ -584,9 +584,9 @@ An English noun like *case* or *board* covers several jobs, and Agazan has a dif
 
 **Needs:** [The event itself](roles.md#the-event-itself) · [Role compounds](roles.md#role-compounds) · [Someone's act](#someones-act) · [Fault](causation.md#fault) · [Label scope](predication.md#label-scope) · [Proxy](relations.md#proxy) · [Exchange](relations.md#exchange)
 
-English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *comparison*). Agazan has no separate noun for them. Put the verb stem on a thing letter with no role vowel to name the act itself, put **`ux`** in the vowel slot to name the thing the act happens to, or say the act as a sentence and resume it with **-r**. A wrongness or a pattern is the pole or label on the act, not a different noun.
+English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *comparison*). Egabon has no separate noun for them. Put the verb stem on a thing letter with no role vowel to name the act itself, put **`ux`** in the vowel slot to name the thing the act happens to, or say the act as a sentence and resume it with **-r**. A wrongness or a pattern is the pole or label on the act, not a different noun.
 
-| English | Agazan | Reading |
+| English | Egabon | Reading |
 |---------|--------|---------|
 | *contribution* / *acquisition* (the act) | `zebel` | a giving, seen as a whole |
 | *contribution* (what is given) / *acquisition* (what is got) | `zuxebel` | the thing the giving happens to |
@@ -638,7 +638,7 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 
 Some English words have a second or third sense that a published root already carries as a synonym. Look the sense up first; most of these need no new word, only the right ending (**-m** for the abstract sense) or the right host.
 
-| English | Agazan | Reading |
+| English | Egabon | Reading |
 |---------|--------|---------|
 | *just* / *fair* (even-handed) | `zuzazon gulerem.` | fair |
 | *last* (final) | `zuzazon gogoham.` | final |
@@ -685,7 +685,7 @@ English *another dog* and *the other one* name something outside the ones alread
 >
 > "Uzazon sees another dog."
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *similar* (*similar to Olozun*) | `gumum bolozun` |
 | *similarly* (*walks like Olozun*) | `humum bolozun` |
@@ -701,7 +701,7 @@ For *how much* they differ, use a [measured differential](say-amounts.md#measure
 
 **Needs:** [Resume](pronouns.md#resume-r)
 
-English *himself*, *herself*, *itself* and *themself* say the object is the same one as the subject. Put the subject's resume (**-r**) in `/d/`. Agazan does not mark sex or number in the resume, so one form covers all of them. With plural **-x** on the subject and the resume it is *themselves*, and with the inclusive *we* (`zahan`) it is *ourselves*.
+English *himself*, *herself*, *itself* and *themself* say the object is the same one as the subject. Put the subject's resume (**-r**) in `/d/`. Egabon does not mark sex or number in the resume, so one form covers all of them. With plural **-x** on the subject and the resume it is *themselves*, and with the inclusive *we* (`zahan`) it is *ourselves*.
 
 > `zuzazon vanobol duzazor.`
 >
@@ -737,7 +737,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 
 #### Antecedent was a noun (`/z/`, `/d/`, or `/b/`)
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` … `-r` | ordinary 3rd-person slot | *he / she / it / they*; *that (one)* (`/b/` still follows the host relation) |
 | `/v/` … `-r` | the same action again, now involving that entity | *do the same to / with it* |
@@ -793,7 +793,7 @@ Examples:
 
 #### Antecedent was a verb (`/v/`)
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` … `-r` | the doing as a noun | *that action / event / doing* (not the agent/place/patient/recipient; use [role compounds](roles.md#role-compounds)) |
 | `/v/` … `-r` | same action again | *do so* / *do that* |
@@ -849,7 +849,7 @@ Examples:
 
 #### Antecedent was an adjective (`/ɡ/`)
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` … `-r` | the property as an entity | *the … one*; *that quality*; *those who are …* |
 | `/v/` … `-r` | act characterized by the property | *be/do that* |
@@ -905,7 +905,7 @@ Examples:
 
 #### Antecedent was an adjective extra (`/w/`)
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` … `-r` | the degree / scale / criterion as a thing | *that degree / scale / criterion* |
 | `/ɡ/` … `-r` | host property under that frame again | that property |
@@ -954,7 +954,7 @@ Examples:
 
 #### Antecedent was an adverb (`/h/`)
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` … `-r` | the adjunct as a noun | *that time / place / manner / reason* |
 | `/v/` … `-r` | act under that occasion | that doing |
@@ -1010,7 +1010,7 @@ Examples:
 
 #### Antecedent was `/y/` or `/x/`
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | same class (`/y/` or `/x/`) … `-r` | repeat that vocative, interjection, or linker | same call or glue again |
 | `/x/` … `-r` from a noun antecedent | return: sets the [topic](pronouns.md#topic) again | *Going back to subject X* |
@@ -1050,7 +1050,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 >
 > "Uzazon walks. Therefore Olozun runs."
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | **`odum`** (bare) | talk moves on | *progress*; discourse **`xodum`** *therefore* |
 | **`owehem`** (bare) | talk comes back | *return* |
@@ -1067,7 +1067,7 @@ When *east* / *west* / *southwest* name a move in the talk, not a map point, wri
 
 When a fence glyph (`[` / `]` / `(` / `)` / `<` / `>` / `{` / `}` / `=` / `|` / `#`) or a [tone mark](speech-moves.md#tone-marks) (`!` / `?`) must appear **as content**, wrap that token in an **opaque** `<…>` span. The outer span’s wording is the opaque **interior** (the wrapper is packaging, not extra cited words).
 
-```agazan
+```egabon
 d[ vuruyel d<]> ]
 d[ d<|> ]
 d[ vezeyel d<#> ]
@@ -1077,7 +1077,7 @@ d[ vezeyel d<#> ]
 
 Opaque `d<…>` closes on the first `>`. If the blob **contains** `>`, write it as a cite instead, which closes on the first `]`:
 
-```agazan
+```egabon
 d[code > 1]
 ```
 
@@ -1089,7 +1089,7 @@ d[code > 1]
 
 These three English nouns each hide two jobs. *Role* is the function someone plays. Say it as a kind on `/ɡ/`, or as the usual doer of the event with a role compound and **`the`**. *Title* is either the name of a work or a claim to own something. *Address* is either speaking to someone or a speech.
 
-| English | Agazan | Reading |
+| English | Egabon | Reading |
 |---------|--------|---------|
 | *role* (the function someone plays) | `zolozun gaxodeyethel.` | the usual role: role compound with **`the`** on `/ɡ/` |
 | *title* (the name of a work) | `d@[onoron olozun]` | cite with **`@`** |
@@ -1110,7 +1110,7 @@ These three English nouns each hide two jobs. *Role* is the function someone pla
 
 **Needs:** [Mention](spans.md#mention)
 
-To talk about a word, a phrase or a whole sentence as a thing in itself, use a mention: the marker **`glelel`**, then the span. English *the word …*, *the phrase …* and *the sentence …* all use the same frame. The span holds the Agazan interior, and its role letter still says what the mention does in the clause.
+To talk about a word, a phrase or a whole sentence as a thing in itself, use a mention: the marker **`glelel`**, then the span. English *the word …*, *the phrase …* and *the sentence …* all use the same frame. The span holds the Egabon interior, and its role letter still says what the mention does in the clause.
 
 > <code>glelel z&lt;odoga&gt; gumazom.</code>
 >
@@ -1134,7 +1134,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agazan | Same root as | Cue |
+| English | Egabon | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Uzazon* | `uzazon` | | |
 | *Olozun* | `olozun` | | |
@@ -1148,7 +1148,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *punch* | `vabavul` | | |
 | *scream* | `vazomul` | | |
 
-#### English → Agazan {#people-pointing-back-english-to-agazan}
+#### English → Egabon {#people-pointing-back-english-to-egabon}
 
 **1.** *Uzazon hits mute. Olozun does the same with them.*
 
@@ -1190,7 +1190,7 @@ z-radio | g-red . z-←red | v-scream
 z-Olozun | v-punch . z-←punch | g-big
 :::
 
-#### Agazan → English {#people-pointing-back-agazan-to-english}
+#### Egabon → English {#people-pointing-back-egabon-to-english}
 
 **1.** `zarewol geluzom. zuzuwol garewor.`
 
@@ -1245,7 +1245,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -1255,7 +1255,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *tell* | `vezeyel` |
 | *as for* | `hohagem` |
 
-#### English → Agazan {#people-as-for-english-to-agazan}
+#### English → Egabon {#people-as-for-english-to-egabon}
 
 **1.** *As for Uzazon, Olozun sees a ticket.*
 
@@ -1265,7 +1265,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 [h-topic | b-Uzazon] | z-Olozun | d-ticket | v-see
 :::
 
-#### Agazan → English {#people-as-for-agazan-to-english}
+#### Egabon → English {#people-as-for-egabon-to-english}
 
 **1.** `hohagem behalon zuzazon vezeyel bolozun.`
 
@@ -1284,7 +1284,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agazan | Same root as |
+| English | Egabon | Same root as |
 |---------|--------|--------------|
 | *Uzazon* | `uzazon` | |
 | *Ehalon* | `ehalon` | |
@@ -1292,7 +1292,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *diagnosis-hospital* (office full title) | `ezuboxuhahon` | |
 | *see* | `vanobol` | `anobol` *eye* |
 
-#### English → Agazan {#people-handles-english-to-agazan}
+#### English → Egabon {#people-handles-english-to-egabon}
 
 **1.** *Ezubon sees Ehalon.* (Ezubon is an office, named here for the first time)
 
@@ -1302,7 +1302,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 z-Ezubon | v-see | d-Ehalon
 :::
 
-#### Agazan → English {#people-handles-agazan-to-english}
+#### Egabon → English {#people-handles-egabon-to-english}
 
 **1.** `zezuboxuhahon vanobol duzazon.`
 
@@ -1320,7 +1320,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -1328,7 +1328,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *tell* | `vezeyel` |
 | *write* | `vuruyel` |
 
-#### English → Agazan {#people-literal-english-to-agazan}
+#### English → Egabon {#people-literal-english-to-egabon}
 
 **1.** *Uzazon said “write ]”.*
 
@@ -1348,7 +1348,7 @@ z-Ehalon | d-CITE["code > 1"] | v-tell
 A cite, because an angle-bracket fence would close on the first `>`.
 :::
 
-#### Agazan → English {#people-literal-agazan-to-english}
+#### Egabon → English {#people-literal-egabon-to-english}
 
 **1.** <code>zuzazon d[ d&lt;xuxul&gt; ] vezeyel.</code>
 

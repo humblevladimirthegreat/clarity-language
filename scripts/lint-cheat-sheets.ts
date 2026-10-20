@@ -5,11 +5,11 @@
 // Grammar sheets:
 // - Every table row links to an owning section: in the row itself, the table's
 //   header row, or the prose between the nearest heading and the table.
-// - Every Agazan word, phrase, or sentence in a row appears in one of those
+// - Every Egabon word, phrase, or sentence in a row appears in one of those
 //   linked sections (heading to the end of its subtree), verbatim or, for one
 //   word, with its -l / -m / -r ending swapped. Templates and English are skipped.
 // - A table on a grammar page marked `<!-- cheat-sheet: ID -->` is opted in:
-//   every Agazan form in it must be on sheet ID.
+//   every Egabon form in it must be on sheet ID.
 //
 // Claritish sheet: every drop-in in a lesson table appears on the sheet, and
 // every drop-in on the sheet comes from a lesson (verbatim, or with its ending
@@ -19,7 +19,7 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { join, posix } from "node:path";
 
-import { classifyAgazanSpan } from "../src/lint/agazan-docs.js";
+import { classifyEgabonSpan } from "../src/lint/egabon-docs.js";
 import { spans, tables } from "../src/lint/cheat-sheet-tables.js";
 import { pageSections, type PageSections } from "../src/lint/learning-order.js";
 import { lineNumberAt } from "../src/retie/tokens.js";
@@ -42,12 +42,12 @@ const SHEETS: Record<string, string> = {
   "roles-comparing": "roles-comparing.md",
   numbers: "numbers.md",
   "joins-hooks": "joins-hooks.md",
-  "agazan-english": "agazan-english.md",
+  "egabon-english": "egabon-english.md",
   exceptions: "exceptions.md",
 };
 
 const CLARITISH_SHEET = "cheat-sheet.md";
-const CLARITISH_NOT_LESSONS = new Set(["index.md", "learn-agazan.md", CLARITISH_SHEET, "editor.md"]);
+const CLARITISH_NOT_LESSONS = new Set(["index.md", "learn-egabon.md", CLARITISH_SHEET, "editor.md"]);
 const CLARITISH_PATTERN_ONLY = new Set(["feelings.md"]);
 
 const MARKER_RE = /<!--\s*cheat-sheet:\s*(\S+)\s*-->/g;
@@ -56,7 +56,7 @@ const problems: string[] = [];
 
 /** Spans the lint holds to a source: words, phrases, and sentences, not templates or English. */
 function formSpans(text: string): string[] {
-  return spans(text).filter((s) => ["word", "phrase", "sentence"].includes(classifyAgazanSpan(s)));
+  return spans(text).filter((s) => ["word", "phrase", "sentence"].includes(classifyEgabonSpan(s)));
 }
 
 const swapEnding = (span: string) =>

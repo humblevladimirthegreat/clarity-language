@@ -1,6 +1,6 @@
 import { escapeCsvField, parseCsv } from "./csv.js";
 import { isExtraNounHook } from "./parse/hook-compounds.js";
-import { isAgazanRootShape } from "./root-shape.js";
+import { isEgabonRootShape } from "./root-shape.js";
 
 export const COMPOUND_HEADERS = [
   "stem",
@@ -81,7 +81,7 @@ const JOIN_LETTERS = new Set<string>(["l", "m", "n", "r"]);
 
 /** Content roots are `V(CV)+` and not a bare single vowel (join / reviser shape). */
 export function isCompoundMemberRoot(root: string): boolean {
-  return isAgazanRootShape(root) && root.length >= 3;
+  return isEgabonRootShape(root) && root.length >= 3;
 }
 
 export type CompoundSplit = { left: string; join: CompoundJoin; right: string };

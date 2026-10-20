@@ -1,7 +1,7 @@
-/** CMU phoneme → Agazan letter (docs/proposals/echo-metric.md). Shared by the lookup, the metric, and the converter. */
+/** CMU phoneme → Egabon letter (docs/proposals/echo-metric.md). Shared by the lookup, the metric, and the converter. */
 
 /**
- * Phoneme → Agazan letter. `x` and `th` never occur in roots, so SH / ZH → h and TH / DH → v.
+ * Phoneme → Egabon letter. `x` and `th` never occur in roots, so SH / ZH → h and TH / DH → v.
  * Vowels map by quality; stress is kept on the phoneme for the metric.
  */
 export const PHONEME_MAP: Record<string, string> = {
@@ -14,8 +14,8 @@ export const PHONEME_MAP: Record<string, string> = {
   UH: "u", UW: "u",
 };
 
-/** Agazan sound string; unstressed AH0 ("uh") is written `·` (never scored against a root); `|` (word break) → space. */
-export function toAgazan(phones: string[]): string {
+/** Egabon sound string; unstressed AH0 ("uh") is written `·` (never scored against a root); `|` (word break) → space. */
+export function toEgabon(phones: string[]): string {
   return phones.map((p) => {
     if (p === "|") return " ";
     if (p === "AH0") return "·";

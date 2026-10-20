@@ -4,7 +4,7 @@
  * ([glosses.md § Phrase brackets](../docs/meta/glosses.md#phrase-brackets)).
  *
  * Dry-run by default; `--write` saves. Covers blockquote lines, `Morph` table
- * cells, and translation-exercise gloss lines — the same pairs `lint:agazan` checks.
+ * cells, and translation-exercise gloss lines — the same pairs `lint:egabon` checks.
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { loadDefaultTables } from "../src/parse/index.js";

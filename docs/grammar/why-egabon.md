@@ -1,18 +1,18 @@
-# Why Agazan
+# Why Egabon
 
-What Agazan is for, what it looks like, a tour of the features that serve its aims, and what it does not claim.
+What Egabon is for, what it looks like, a tour of the features that serve its aims, and what it does not claim.
 
 ## Purpose {#purpose}
 
-Agazan builds psychological concepts and self-improvement techniques into its vocabulary and grammar, so that using the language nudges you toward healthier habits of thought.
+Egabon builds psychological concepts and self-improvement techniques into its vocabulary and grammar, so that using the language nudges you toward healthier habits of thought.
 
-Its psychological goals are three outcomes: [compassion](#compassion), [rationality](#rationality), and [empowerment](#empowerment). [Psychological features](#psychological-features) describes each one with the features that serve it. Agazan also has [structural goals](introduction.md#structural-goals): every sentence has exactly one reading, the sounds are easy to sing, and a few patterns do many jobs.
+Its psychological goals are three outcomes: [compassion](#compassion), [rationality](#rationality), and [empowerment](#empowerment). [Psychological features](#psychological-features) describes each one with the features that serve it. Egabon also has [structural goals](introduction.md#structural-goals): every sentence has exactly one reading, the sounds are easy to sing, and a few patterns do many jobs.
 
-Agazan is not therapy, and its effects are a design intent, not a proven result. The language is in beta ([limits](#limits)).
+Egabon is not therapy, and its effects are a design intent, not a proven result. The language is in beta ([limits](#limits)).
 
-## Agazan at a glance {#at-a-glance}
+## Egabon at a glance {#at-a-glance}
 
-Here is a common ruminating thought in English: *I failed. I'm no good at this, and I never will be.* English lets you say all of that without checking any of it. Here is how the same thought might come out in Agazan:
+Here is a common ruminating thought in English: *I failed. I'm no good at this, and I never will be.* English lets you say all of that without checking any of it. Here is how the same thought might come out in Egabon:
 
 > `zugavem thahor gulothum. zamun veverexom.`
 >
@@ -28,19 +28,19 @@ That is five words, and three of them make you choose something English lets you
 - `gulothum` names what the failure costs: competence, one of the [sakes](sakes.md) (things that are good for a person). Its ending says the cost can change with effort or circumstance; other endings say it is lasting, or only for now. Other sakes, such as relatedness or purpose, name a different cost, and swapping the *unmet* vowel for the *met* one names a gain instead. The sake word also makes the failure yours, with no separate word for *my*.
 - `veverexom` is *can't succeed*, but only *yet*: it may still change. Other vowels say *right now* (you usually can) or *never* ([ability](intention.md#ability)).
 
-Agazan does not force the gentler answer. You can still say *I can never succeed* (`zamun veverexum.`), call the hunch strong, or call the cost lasting, and sometimes that is true. But English *I'll never be good at this* does not ask how you know or how lasting it is, so the harsh version slips by unchecked. In Agazan you cannot say *can't* without choosing among *right now*, *yet*, and *never*, and that one moment of choosing is often enough to notice that *yet* is the honest answer.
+Egabon does not force the gentler answer. You can still say *I can never succeed* (`zamun veverexum.`), call the hunch strong, or call the cost lasting, and sometimes that is true. But English *I'll never be good at this* does not ask how you know or how lasting it is, so the harsh version slips by unchecked. In Egabon you cannot say *can't* without choosing among *right now*, *yet*, and *never*, and that one moment of choosing is often enough to notice that *yet* is the honest answer.
 
 The first letter of each word tells you its role in the sentence: `/z/` the subject, `/ɡ/` what the subject is, `/v/` the verb, `/th/` what is in your mind. Because the roles live on the letters, word order is free, and every sentence still has exactly one reading. [Inspect](inspect.md) opens with this sentence loaded, so you can click through each word.
 
 ## Try it in English first {#try-it-in-english}
 
-You don't have to learn the whole language to start using these ideas. [Claritish](claritish/index.md) is a set of short lessons on dropping single Agazan words into everyday English. For example, English *I'm anxious* can mean anxious right now or an anxious person. *I'm `anxious-tha`* says it is this stretch, not who you are, where English would need a whole extra clause. Other lessons cover how you know, how far a label reaches, thanks that name the need, and more.
+You don't have to learn the whole language to start using these ideas. [Claritish](claritish/index.md) is a set of short lessons on dropping single Egabon words into everyday English. For example, English *I'm anxious* can mean anxious right now or an anxious person. *I'm `anxious-tha`* says it is this stretch, not who you are, where English would need a whole extra clause. Other lessons cover how you know, how far a label reaches, thanks that name the need, and more.
 
-Every word Claritish teaches is already real Agazan, so nothing you learn there is wasted. [Start with the Claritish introduction](claritish/index.md).
+Every word Claritish teaches is already real Egabon, so nothing you learn there is wasted. [Start with the Claritish introduction](claritish/index.md).
 
 ## Psychological features {#psychological-features}
 
-This section tours how the three aims show up in vocabulary and grammar. Under each aim, the features are grouped by the thinking trap they answer. Each feature says what English blurs, what Agazan marks instead, and what that helps you do; the linked pages teach the actual forms. A group's name is the habit its features push against, not a bias they have been shown to cure ([limits](#limits)).
+This section tours how the three aims show up in vocabulary and grammar. Under each aim, the features are grouped by the thinking trap they answer. Each feature says what English blurs, what Egabon marks instead, and what that helps you do; the linked pages teach the actual forms. A group's name is the habit its features push against, not a bias they have been shown to cure ([limits](#limits)).
 
 ### Compassion {#compassion}
 
@@ -86,7 +86,7 @@ A feeling, a thanks, or a *should* arrives as a single opaque label, so what is 
 
 English often blurs *I want*, *I need*, *I should*, and *this is good for me*, so gratitude, motive, and ought run together.
 
-Agazan’s [sakes](sakes.md) are a fixed list of things that are good for a person (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or unspecified), and each sake word also says how you stand toward that sake:
+Egabon’s [sakes](sakes.md) are a fixed list of things that are good for a person (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical, or unspecified), and each sake word also says how you stand toward that sake:
 
 | Stance       | Meaning                                                                                                                                         |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -103,7 +103,7 @@ In English: [Claritish: Oughts and motives](claritish/oughts-and-motives.md).
 
 Opaque labels (*angry*, *anxious*, *proud*) hide which sake is in play and what to ask for.
 
-Agazan [builds an emotion](sakes.md#emotion-compose) from three parts: a [sake](sakes.md) and how it stands (usually met or unmet), where the feeling sits or what it points at, and its motion (surging, flowing, or still).
+Egabon [builds an emotion](sakes.md#emotion-compose) from three parts: a [sake](sakes.md) and how it stands (usually met or unmet), where the feeling sits or what it points at, and its motion (surging, flowing, or still).
 
 Building the feeling from those parts shows you what to ask for, instead of leaving you stuck at the label.
 
@@ -113,7 +113,7 @@ In English: [Claritish: Feelings in three parts](claritish/feelings.md).
 
 English *thank you* says you are grateful, but not for what.
 
-Agazan has no set phrase for [thanks](sakes.md#thanks-sorry). Instead, you say which of your sakes was met; saying that to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](sakes.md#whose-stake)). Put the sake word right after a thing you own and it appreciates that thing, with no separate word for *my*, so appreciating what you already have takes one word ([personal possession](sakes.md#personal-possession)).
+Egabon has no set phrase for [thanks](sakes.md#thanks-sorry). Instead, you say which of your sakes was met; saying that to the person who acted is the thanks. The ending says whether the payoff lasts or is only for now. To name someone else's sake instead, put that person right after the sake word ([whose stake](sakes.md#whose-stake)). Put the sake word right after a thing you own and it appreciates that thing, with no separate word for *my*, so appreciating what you already have takes one word ([personal possession](sakes.md#personal-possession)).
 
 Naming the need that was met makes thanks specific, which helps both of you notice what actually helped.
 
@@ -221,7 +221,7 @@ In English: [Claritish: Allowed, required, agreed](claritish/allowed-required-ag
 
 English *will* mixes plan and prediction, and *I want to* can sound like a promise. It is easy to talk as if the future were already known, and a confident prediction can fuel anxiety or overconfidence. A pick, meanwhile, often sounds more locked than it is.
 
-Agazan splits them: [want](intention.md#want) for what you wish for, without meaning to do it yet; [PLAN](intention.md#plan-predict) for what you mean to do; [DECISION](intention.md#decision) for how revisable a pick is; and a [forecast](knowing.md#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `bral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
+Egabon splits them: [want](intention.md#want) for what you wish for, without meaning to do it yet; [PLAN](intention.md#plan-predict) for what you mean to do; [DECISION](intention.md#decision) for how revisable a pick is; and a [forecast](knowing.md#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `bral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
 
 Wants, plans, and decisions all live in someone's mind, so with nothing else marked they are yours; someone else's want, plan, or decision takes a [holder](knowing.md#holder) that says how you know it.
 
@@ -302,13 +302,13 @@ Because each picture already carries a warning against the trap, it helps you re
 
 Unhelpful thoughts are often automatic: catastrophizing a small setback into “my life is ruined,” treating two options as the only ones, or labeling a feeling as *anger* without naming which sake is unmet. (A sake is something that is good for you, such as autonomy, competence, or connection with others.) Healthier framings exist, but they are hard to reach in the moment.
 
-Agazan puts those framings into ordinary words and into optional pieces added to words. When you speak or think in the language, the helpful distinction is already built into the sentence.
+Egabon puts those framings into ordinary words and into optional pieces added to words. When you speak or think in the language, the helpful distinction is already built into the sentence.
 
 ## Limits {#limits}
 
-Agazan encodes psychological concepts and techniques, but it is **not therapy, counseling, or medical advice**, and it is not a substitute for professional care when you need it.
+Egabon encodes psychological concepts and techniques, but it is **not therapy, counseling, or medical advice**, and it is not a substitute for professional care when you need it.
 
-The design *aims* at compassion, rationality, and empowerment, and each feature is chosen to target a common, everyday problem, drawing on research where it exists. That is design intent, **not a claim** that speaking or studying Agazan has been shown to improve mental health or other outcomes.
+The design *aims* at compassion, rationality, and empowerment, and each feature is chosen to target a common, everyday problem, drawing on research where it exists. That is design intent, **not a claim** that speaking or studying Egabon has been shown to improve mental health or other outcomes.
 
 The language is currently in **beta**: grammar, lexicon, and these docs can change as the design settles.
 
@@ -316,23 +316,23 @@ The language is currently in **beta**: grammar, lexicon, and these docs can chan
 
 ### Can a language change how you think?
 
-Some people doubt that a language can influence how its speakers think (the claim that it can is the weak form of the Sapir-Whorf hypothesis). I make no claim here about natural languages, but for Agazan specifically, I offer this argument:
+Some people doubt that a language can influence how its speakers think (the claim that it can is the weak form of the Sapir-Whorf hypothesis). I make no claim here about natural languages, but for Egabon specifically, I offer this argument:
 
 1. The way a concept is framed (phrased) affects how people think about it. This is well established in [psychology](https://en.wikipedia.org/wiki/Framing_effect_(psychology)) and the [social sciences generally](https://en.wikipedia.org/wiki/Framing_(social_sciences)).
-2. Agazan’s vocabulary and grammar build particular frames into how certain concepts are expressed, as laid out on this page and in the linked grammar docs.
-3. Therefore, Agazan influences how its speakers think.
+2. Egabon’s vocabulary and grammar build particular frames into how certain concepts are expressed, as laid out on this page and in the linked grammar docs.
+3. Therefore, Egabon influences how its speakers think.
 
 ### Ethical considerations {#ethical-considerations}
 
 Some people are reminded of Newspeak from *1984*, where a totalitarian government alters the language to make the populace more compliant. What makes Newspeak unethical is that it is forced on people who do not know what it is doing to them.
 
-For Agazan and languages like it, as long as using the language is voluntary, the speaker knows how it influences their thoughts, and the language delivers on those promises, it is morally good. Learning the language is like enrolling in a self-help course to change your thought patterns: clearly ethical if it changes you in the healthy way you want. [Claritish](claritish/index.md) lets you sample the effect in English before you commit to anything more.
+For Egabon and languages like it, as long as using the language is voluntary, the speaker knows how it influences their thoughts, and the language delivers on those promises, it is morally good. Learning the language is like enrolling in a self-help course to change your thought patterns: clearly ethical if it changes you in the healthy way you want. [Claritish](claritish/index.md) lets you sample the effect in English before you commit to anything more.
 
 Language influences thought but does not determine it. Speakers who want to think or communicate in a way the language discourages can still do so, though their sentences will likely be longer.
 
 ### Language evolution {#language-evolution}
 
-Some expect that the change every language goes through over decades of use will eventually water Agazan down until it loses the properties that make it beneficial.
+Some expect that the change every language goes through over decades of use will eventually water Egabon down until it loses the properties that make it beneficial.
 
 The language can and should change to keep up with the times, but I am optimistic that it will keep or even strengthen its beneficial properties. The people who choose to learn it want those properties, so they will tend to adopt changes in line with the language’s goals.
 

@@ -7,11 +7,11 @@ import { loadPromptContext } from "./llm-examples.js";
 import { promptForPassage } from "./llm-passage.js";
 
 const USAGE = [
-  "Usage: node scripts/parse.mjs [--check-ambiguity] [--check-lexicon] [--constructions] '<Agazan text>' ['<Agazan text>' ...]",
+  "Usage: node scripts/parse.mjs [--check-ambiguity] [--check-lexicon] [--constructions] '<Egabon text>' ['<Egabon text>' ...]",
   "       node scripts/parse.mjs [--check-ambiguity] [--check-lexicon] [--constructions] - < inputs.txt   (one input per line)",
-  "       node scripts/parse.mjs --llm-prompt [--loose] [--examples N] '<Agazan text>' ['<Agazan text>' ...]",
+  "       node scripts/parse.mjs --llm-prompt [--loose] [--examples N] '<Egabon text>' ['<Egabon text>' ...]",
   "  --check-lexicon  exit 1 and list words the lexicon does not know (a stem that only parses is not a lexicon word)",
-  "  --llm-prompt     print a translation prompt for an LLM with no Agazan context (several inputs make one passage)",
+  "  --llm-prompt     print a translation prompt for an LLM with no Egabon context (several inputs make one passage)",
   "  --loose          with --llm-prompt: ask for the sentence only, no note",
   "  --examples N     with --llm-prompt: how many doc examples to show (default 4; 0 for none)",
 ].join("\n");

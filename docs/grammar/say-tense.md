@@ -1,6 +1,6 @@
 # Tense, aspect and modals
 
-Recipes for English *walked* / *has walked* / *will walk* / *used to walk*, and for *can* / *may* / *must* / *should*. Verbs in Agazan carry no tense. Every form here is taught on a grammar page; each recipe links what it needs.
+Recipes for English *walked* / *has walked* / *will walk* / *used to walk*, and for *can* / *may* / *must* / *should*. Verbs in Egabon carry no tense. Every form here is taught on a grammar page; each recipe links what it needs.
 
 ## Tense and aspect {#tense}
 
@@ -8,9 +8,9 @@ Recipes for English *walked* / *has walked* / *will walk* / *used to walk*, and 
 
 **Needs:** [Evidentiality](knowing.md#evidentiality) · [Forecasts](knowing.md#forecast) · [Dated channel](knowing.md#dated-channel) · [RESIDUE and FORMER](knowing.md#residue) · [Already, still, not yet](knowing.md#phasal) · [*as-of*](relations.md#as-of)
 
-An English tense bundles up to three questions: **when** the event sits, **how you know** it, and whether it **still counts** now. Agazan asks them separately. Pick the row for the English form, then the job you mean.
+An English tense bundles up to three questions: **when** the event sits, **how you know** it, and whether it **still counts** now. Egabon asks them separately. Pick the row for the English form, then the job you mean.
 
-| English | You mean | Agazan |
+| English | You mean | Egabon |
 |---------|----------|--------|
 | *walks* (now) | you are watching it | LIVE **`thodom`** |
 | *walks* (now) | no channel named | bare verb ([this stretch](intention.md#predict-evidentiality)), unless an earlier channel is still [carried](knowing.md#carry-forward) |
@@ -146,7 +146,7 @@ For *was walking when …*, keep the ordinary verb and hang the other event on [
 
 English *will* is three different claims.
 
-| English *will* | Agazan |
+| English *will* | Egabon |
 |----------------|--------|
 | I mean to | PLAN **`thamam`** ([endings](intention.md#plan-map-resolution) show how much is drawn) |
 | the world will | channel + **`bral`** |
@@ -184,7 +184,7 @@ English *will* is three different claims.
 
 English time words (*today*, *previously*, *continue*) mostly ride on the same channels and offsets as tense. Each row says which one.
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *today* / *now* | a channel with an offset of zero: `thunem bozarom grazol` (zero days); with `balarum` it is *right now* |
 | *yesterday* / *tomorrow* | a channel with one day back or ahead: `bozarom gruwol` / `bozarom grawol` |
@@ -242,7 +242,7 @@ For *would* in a condition (*if Olozun swam, Uzazon would walk*), see [remote an
 
 English *can* and *may* each carry several meanings. Pick the meaning.
 
-| English | You mean | Agazan |
+| English | You mean | Egabon |
 |---------|----------|--------|
 | *can* | able | verb + **`xa`** ([can](intention.md#can)) |
 | *can't* | not now / not yet / never | **`xe`** / **`xo`** / **`xu`** |
@@ -287,7 +287,7 @@ English *can* and *may* each carry several meanings. Pick the meaning.
 
 English adjectives and verbs built on *can* and *may* take the same forms as the modals.
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *capable* / *ability* / *capability* | the verb or quality with **`xa`**: `zuzazon gezeyoxal` (*able to sing*); with no single verb, **`huboxal`** |
 | *afford* (*can pay*) | `zuzazon vamoxal dugul` |
@@ -318,7 +318,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 
 English *must* and *should* differ in what stands behind the demand. Choose the source.
 
-| English | You mean | Agazan |
+| English | You mean | Egabon |
 |---------|----------|--------|
 | *must*, *is required to* | a rule requires it | **`thumel`** |
 | *has to*, *I need you to* | a person demands it | **`thumem`** |
@@ -372,7 +372,7 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 
 **Needs:** [Plan](intention.md#plan-predict) · [Want](intention.md#want) · [Try](intention.md#try) · [Hopefully](sakes.md#speaker-attitude) · [Speech act](speech-moves.md#speech-act)
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *will* (willing) | PLAN **`thamam`**, or consent **`huxegom`** (*I'll do it*, you can back out) |
 | *I want*, *I feel like* | WANT **`thohum`** (**`thohul`** lasting, **`thohur`** passing); someone else's want takes a [holder](knowing.md#holder): **`thewamuzazon thohum`** |
@@ -416,7 +416,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -425,7 +425,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *tell* | `vezeyel` |
 | *rain* | `vurelal` |
 
-#### English → Agazan {#tense-english-to-agazan}
+#### English → Egabon {#tense-english-to-egabon}
 
 **1.** *Uzazon walked, I remember it.*
 

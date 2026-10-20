@@ -159,7 +159,7 @@ let typing: { from: number; to: number } | null = null
 
 const REASONS: Record<NearMiss['reason'], string> = {
   ending: 'Suffixes take no ending.',
-  'no-t': 'Agazan has no t; it writes th.',
+  'no-t': 'Egabon has no t; it writes th.',
   spelling: 'Close to a drop-in.',
 }
 

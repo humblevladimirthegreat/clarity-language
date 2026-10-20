@@ -1,14 +1,14 @@
 /**
- * Retie Agazan in the docs, AGENTS.md / README.md, and source string literals
+ * Retie Egabon in the docs, AGENTS.md / README.md, and source string literals
  * from the map dumped by convert-word --lexicon (which already retied the lexicon CSVs).
  *
  * Run: npm run retie-docs
  *      npm run retie-docs -- --write
  *      npm run retie-docs -- --map tmp/lexicon-retie-map.json --write
  *
- * Only spans the doc lint reads as Agazan are rewritten (plus emphasised prose runs that parse
- * as an Agazan sentence or phrase); other hits are listed for review. English copies follow
- * their Agazan: named-word names, quoted payloads, morph lines, and heading anchors.
+ * Only spans the doc lint reads as Egabon are rewritten (plus emphasised prose runs that parse
+ * as an Egabon sentence or phrase); other hits are listed for review. English copies follow
+ * their Egabon: named-word names, quoted payloads, morph lines, and heading anchors.
  * A rewrite that stops parsing, moves an unmapped root, rebinds a resume, or splits a
  * marked shared short cut blocks `--write`, as does a map whose old spellings the word
  * grammar cannot read or that was already applied.
@@ -21,7 +21,7 @@ import { CLOSED_ENTRIES, closedRootsIn, namedEnglish } from "../src/closed-roots
 import { parseCompoundCsv, validateCompoundRows } from "../src/lexicon-compounds.js";
 import { ensureFrequencyFile, loadFrequencyRanks } from "../src/lexicon-place.js";
 import { listMarkdown } from "../src/markdown-files.js";
-import { ENGLISH_IN_CODE } from "../src/lint/agazan-docs.js";
+import { ENGLISH_IN_CODE } from "../src/lint/egabon-docs.js";
 import { loadDefaultTables } from "../src/parse/index.js";
 import { parseWord } from "../src/parse/word.js";
 import { headingIdRenames, relinkMarkdown, relinkOverlayAnchors, type AnchorRenames } from "../src/retie/anchors.js";
@@ -56,7 +56,7 @@ const RETIE_SKIP_RE = /^<!--\s*retie:\s*skip\s*-->\s*$/m;
 const compoundsPath = dataPath("lexicon-compounds.csv");
 const overlaysPath = dataPath("lexicon-overlays.csv");
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
-/** Source whose string literals hold Agazan. The retie tool's own tests use their own maps. */
+/** Source whose string literals hold Egabon. The retie tool's own tests use their own maps. */
 const sourceDirs = [join(REPO_ROOT, "src"), join(REPO_ROOT, "scripts"), join(grammarDir, ".vitepress")];
 /** Skipped by the source scan. `closed-roots.ts` is resynced by emoji in `convert-word --lexicon`. */
 const SOURCE_SKIP = [
@@ -111,7 +111,7 @@ function parseArgs(argv: string[]): CliOptions {
 function printUsage(): void {
   console.error(`Usage: npm run retie-docs -- [--map PATH] [--write] [--force]
 
-Reads ${RETIE_MAP_RELATIVE_PATH} (from convert-word --lexicon) and reties Agazan in
+Reads ${RETIE_MAP_RELATIVE_PATH} (from convert-word --lexicon) and reties Egabon in
 docs/grammar/, docs/examples/, docs/meta/, docs/proposals/ (not rejected/), AGENTS.md, README.md, string literals
 under src/ (tests included), scripts/ and the grammar site, and overlay anchors.
 convert-word --lexicon already retied the lexicon CSVs; this only checks them.
@@ -169,12 +169,12 @@ async function main(): Promise<void> {
   const tables = retieTables(map);
   const english = await commonEnglish();
   // The language's own name is the 👓 root + -n. It is renamed by hand, never by a retie:
-  // the English name, identifiers (`agazan` fences, `lint:agazan`), file names and URLs all carry it.
+  // the English name, identifiers (`egabon` fences, `lint:egabon`), file names and URLs all carry it.
   const oldLanguageRoot = closedRootsIn(tables.old.published).glasses;
   const newLanguageRoot = closedRootsIn(tables.current.published).glasses;
   const keep = new Set([`${oldLanguageRoot}n`, namedEnglish(oldLanguageRoot)]);
   // A dated log of past spellings (`<!-- retie: skip -->`) keeps them: retieing it would rewrite history.
-  // A tooling note keeps its illustrative Agazan as written.
+  // A tooling note keeps its illustrative Egabon as written.
   const markdownFiles = [...markdownDirs.filter(existsSync).flatMap((dir) => listMarkdown(dir)), ...topLevelMarkdown.filter(existsSync)].filter(
     (file) => {
       if (SKIP_DIRS.some((dir) => file.startsWith(`${dir}/`))) return false;
@@ -296,7 +296,7 @@ async function main(): Promise<void> {
     });
   }
 
-  // Heading ids spelled from Agazan move with it; links and overlay anchors follow.
+  // Heading ids spelled from Egabon move with it; links and overlay anchors follow.
   const renames: AnchorRenames = new Map();
   for (const file of markdownFiles) {
     const moved = headingIdRenames(sources.get(file)!, results.get(file)!.text);
@@ -311,7 +311,7 @@ async function main(): Promise<void> {
     // Respellings keep their length, so an index the follow pass rewrote lines up with the review.
     const followed = result.followChanges.map((change) => change.index);
     for (const item of result.reviews) {
-      // A capitalised name or a quoted payload in prose is the follow pass's job; it was respelled with its Agazan.
+      // A capitalised name or a quoted payload in prose is the follow pass's job; it was respelled with its Egabon.
       if (follow.names.has(peelChunk(item.text).core)) continue;
       if (followed.some((at) => at >= item.index && at < item.index + item.text.length)) continue;
       review(`${rel}:${lineNumberAt(original, item.index)}  review  \`${item.text}\`  (${item.reason})`);
@@ -331,9 +331,9 @@ async function main(): Promise<void> {
     }
     for (const change of result.changes) {
       console.log(`${rel}:${lineNumberAt(original, change.index)}  ${change.from} → ${change.to}`);
-      // Code spans are Agazan by policy; only an emphasised prose run can hold English.
+      // Code spans are Egabon by policy; only an emphasised prose run can hold English.
       if (change.prose && english.has(change.from)) {
-        review(`${rel}:${lineNumberAt(original, change.index)}  review  ${change.from} is also an English word; check it was Agazan`);
+        review(`${rel}:${lineNumberAt(original, change.index)}  review  ${change.from} is also an English word; check it was Egabon`);
       }
     }
     for (const change of result.followChanges) {

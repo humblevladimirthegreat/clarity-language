@@ -1,8 +1,8 @@
 <!-- retie: skip -->
 # Language name (editors)
 
-English **Agazan** is the published 👓 *glasses* root **`agaza`** (metaphorical *clarity*) plus proper **-n**, the same name shape as house-cast **`zazawan`**. Learner wording and the English gloss live only in [introduction.md](../grammar/introduction.md) — do not restate that gloss here or in [AGENTS.md](../../AGENTS.md).
+English **Egabon** is the published 👓 *glasses* root **`egabo`** (metaphorical *clarity*) plus proper **-n**, the same name shape as the house cast's names (`uzazo` + **-n**). Learner wording and the English gloss live only in [introduction.md](../grammar/introduction.md) — do not restate that gloss here or in [AGENTS.md](../../AGENTS.md).
 
-**Why this root.** Lexicon forms come from CSV-order uniqueness in the word converter. Glasses is the first published row, so it keeps the converter’s first 5-letter fit **`agaza`**. The language name tracks that root.
+**Why this root.** 👓 is placed like every other row, with no pin: its tail says it is worn on the body (`b`) and has no special job (`o`), and its onset comes from root-tails placement ([root spellings](lexicon.md#root-spellings-come-from-convert-word)). The name tracks that root. When a retie moves 👓, the name moves with it in a hand pass ([retie § language name](retie.md#language-name)).
 
 Grammar pages must **not** link here (editor note only).

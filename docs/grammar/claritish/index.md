@@ -4,13 +4,13 @@ prev: false
 
 # Claritish Introduction {#claritish}
 
-**Claritish** is English with a few Agazan words dropped in. Each drop-in says something English has no word for: how sure you are, how you know, what a thank-you was for. You keep speaking English and add the word where an English adverb or tag would go.
+**Claritish** is English with a few Egabon words dropped in. Each drop-in says something English has no word for: how sure you are, how you know, what a thank-you was for. You keep speaking English and add the word where an English adverb or tag would go.
 
 > The package arrives Friday `thovum`.
 
 *`thovum`* means *could be*. It covers the clause it sits in, so the sentence says the package might arrive Friday, and nothing more.
 
-Every drop-in is a real Agazan word, spelled exactly as Agazan spells it, so each one you learn is already part of the full language. You can stop after any lesson and keep what you have.
+Every drop-in is a real Egabon word, spelled exactly as Egabon spells it, so each one you learn is already part of the full language. You can stop after any lesson and keep what you have.
 
 In your own writing, drop-ins need no marking: no italics, no quotes. These pages set them in `code font` only so you can spot them.
 
@@ -29,6 +29,6 @@ Each lesson is short, with a few examples and a practice set. They build on each
 - [Decisions and tries](decisions-and-tries.md): how settled a decision is, and a try that is only a trial.
 - [Feelings in three parts](feelings.md): a feeling as a need, a place, and a motion.
 
-[Bonus: tone marks](tone-marks.md) adds seven marks that say how you mean a sentence, the [Learn the full language](learn-agazan.md) page shows where the words go in the full language, the [cheat sheet](cheat-sheet.md) puts every drop-in on one page, and the [journal editor](editor.md) marks the habits in your own writing as you type.
+[Bonus: tone marks](tone-marks.md) adds seven marks that say how you mean a sentence, the [Learn the full language](learn-egabon.md) page shows where the words go in the full language, the [cheat sheet](cheat-sheet.md) puts every drop-in on one page, and the [journal editor](editor.md) marks the habits in your own writing as you type.
 
 <!-- Entry page of the Claritish track; adds no forms and teaches no drop-in beyond the one example. Keep the lesson list in step with the sidebar in .vitepress/config.ts (docs/meta/grammar-docs.md#claritish-track). -->

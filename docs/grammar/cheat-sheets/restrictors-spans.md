@@ -37,7 +37,7 @@ Two manner adverbs in a row, with no restrictor, both describe the walk: `zuzazo
 The vowel picks the reading and the ending says how open the list is: **-l** closed, **-m** open, **-r** an unspecified member. The same map works on `/w/` (`wal`, `wam`, `wual`, and so on).
 
 <!-- cheat-sheet: restrictors-spans -->
-| Agazan | Use | English (with occasions) | English (bare) | Stage |
+| Egabon | Use | English (with occasions) | English (bare) | Stage |
 |--------|-----|--------------------------|----------------|-------|
 | [**`hal` / `ham`**](../restrictors.md#more-occasions) | listed times | *only when…* / *when…, among others* | *never* / *never, as far as I know* | B |
 | [**`hol` / `hom`**](../restrictors.md#more-occasions) | one exclusive menu | *either when A or when B (not both)* | | I |
@@ -49,7 +49,7 @@ The vowel picks the reading and the ending says how open the list is: **-l** clo
 ### Ranked {#ranked}
 
 <!-- cheat-sheet: restrictors-spans -->
-| Agazan | Use | English | Stage |
+| Egabon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [**`hel` / `hem`**](../restrictors.md#more-occasions) | priority | *preferably when A ≻ when B* | I |
 | [**`hael` / `haem`**](../restrictors.md#more-occasions) | in order | *first when A, then when B* | I |
@@ -63,7 +63,7 @@ With several occasions before `huel`, the last listed is the first choice.
 **-r** points at some time without saying which, so nothing needs to come before it.
 
 <!-- cheat-sheet: restrictors-spans -->
-| Agazan | Use | English (with occasions) | English (bare) | Stage |
+| Egabon | Use | English (with occasions) | English (bare) | Stage |
 |--------|-----|--------------------------|----------------|-------|
 | [**`har`**](../restrictors.md#more-occasions) | some member of the listed times | *sometimes among these* | *sometimes* | B |
 | [**`hor`**](../restrictors.md#more-occasions) | some member of a one-choice menu | *anytime among these* | *anytime* | B |
@@ -90,10 +90,10 @@ A **span** is a role letter and a pair of brackets. The letter is the role of th
 
 | Bracket | Inside is | Use | Example | Stage |
 |---------|-----------|-----|---------|-------|
-| [`[…]`](../spans.md#writing) | Agazan | cite: what someone said, a title | `zuzazon d[uzazon] vezeyel.` | B |
-| [<code>&lt;…&gt;</code>](../spans.md#loans) | not Agazan | opaque: a foreign word, code, a name | <code>zuzazon d&lt;kimchi&gt; vanobol.</code> | B |
-| [`th(…)`](../spans.md#asides) | Agazan | aside: a side comment; `g(…)` on a noun, `w(…)` on the next word, `h(…)` on the action | `zuzazon voworel th(hogawol).` | B |
-| [`{ … }`](../spans.md#scope-islands) | Agazan | scope island: a binder inside reaches only that chunk | `zuzazon { hegegom zodozol gerolol } vanobol.` | I |
+| [`[…]`](../spans.md#writing) | Egabon | cite: what someone said, a title | `zuzazon d[uzazon] vezeyel.` | B |
+| [<code>&lt;…&gt;</code>](../spans.md#loans) | not Egabon | opaque: a foreign word, code, a name | <code>zuzazon d&lt;kimchi&gt; vanobol.</code> | B |
+| [`th(…)`](../spans.md#asides) | Egabon | aside: a side comment; `g(…)` on a noun, `w(…)` on the next word, `h(…)` on the action | `zuzazon voworel th(hogawol).` | B |
+| [`{ … }`](../spans.md#scope-islands) | Egabon | scope island: a binder inside reaches only that chunk | `zuzazon { hegegom zodozol gerolol } vanobol.` | I |
 
 When the lexicon has a matching root, write the ordinary word, not a span. An aside holds the same speech act as the outer sentence and never goes under `/y/`, `/z/`, `/d/`, `/b/`, or `/v/`.
 
@@ -114,7 +114,7 @@ A one-word name is an ordinary **-n** word (`donoron`), not a span.
 ### Which slot {#slot}
 
 <!-- cheat-sheet: restrictors-spans -->
-| Agazan | Use | English | Stage |
+| Egabon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`/d/`](../spans.md#pos) | object | *said / wrote / saw “…”* | B |
 | [`/z/`](../spans.md#pos) | subject | a foreign name as the subject | B |

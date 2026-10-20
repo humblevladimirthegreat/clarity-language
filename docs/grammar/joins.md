@@ -1,6 +1,6 @@
 # Joins
 
-When English would pack several things that play the same role into one slot (*a dog and a cat*, *walks and runs*), Agazan writes those items in a row and then one join word after them. That last word is how you know the list has ended. This pattern of items, then the join, is called a **right-close fence**. The join starts with the same role letter as the items (`z` for subjects, `v` for verbs, `x` for whole clauses).
+When English would pack several things that play the same role into one slot (*a dog and a cat*, *walks and runs*), Egabon writes those items in a row and then one join word after them. That last word is how you know the list has ended. This pattern of items, then the join, is called a **right-close fence**. The join starts with the same role letter as the items (`z` for subjects, `v` for verbs, `x` for whole clauses).
 
 Sometimes you only care that the items belong together, with no ranking among them (*and*, *or*, *not*): that is a **set**. Sometimes you care which item comes first (*X first*, *A before B*): that is a **rank**.
 
@@ -93,7 +93,7 @@ When English would offer a menu and ask to *pick one*, or leave the pick *(optio
 
 The join still comes last when there is only one item, or none. How many items sit before it is the **arity**:
 
-| Arity | Agazan | Use | English |
+| Arity | Egabon | Use | English |
 |-------|--------|-----|---------|
 | **List** (2+) | `A B zam` | close a multi-item set | ordinary *and* / *or* |
 | **Single-item** (1) | `A zal` | that one item is the whole story | *just X* |
@@ -177,7 +177,7 @@ Write the items in that order, then a join with vowel **e**. The earlier item ou
 
 When English says *something* or *someone*, or *one of these* without saying which, put ending **-r** on the join. The join then stands for one member of its list that you are not naming. **-r** goes only on a join with one vowel (**a** / **o** / **e** / **u**), not on a two-vowel join such as **ua**.
 
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | `zar` / `var` / `xar` | unspecified member of an add-set | *something* / *do something* / *something happened* | **a** ≈ add |
 | `zor` / `vor` / `xor` | unspecified member of a menu | *anything* / *do anything* | **o** ≈ one |
@@ -208,7 +208,7 @@ Write A and B, then `zar`: the join still closes the list, and **-r** means some
 
 ### Vowels and endings (recap) {#join-type-vowel-series}
 
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** | add the items | *and* | **a** ≈ add |
 | **o** | exclusive choice | exclusive *or* | **o** ≈ one |
@@ -216,7 +216,7 @@ Write A and B, then `zar`: the join still closes the list, and **-r** means some
 | **ua** | universal; one listed item is the leftover | standalone *everything*; one item *everything but* | **u** ≈ undo, then **a** ≈ add |
 | **e** | rank among items | *A before B*; one item *only X matters* | **e** ≈ order |
 
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **-l** | the listed items are the only ones in play | (no extra words) | **l** ≈ locked list |
 | **-m** | other items may exist | *(and possibly more)*; empty: *as far as I know* | **m** ≈ maybe more |
@@ -229,7 +229,7 @@ The same vowels and endings work under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`
 With two or more items, each join reads as taught above. This table collects the readings for a join with only one item before it, or none.
 
 <!-- cheat-sheet: joins-hooks -->
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `zal` / `zam` | standalone | *nothing* / *nobody* · *nothing, as far as I know* |
 | `zol` / `zom` | standalone | *no options* · *no pick, as far as I know* |
@@ -278,7 +278,7 @@ A clause join never sits on one clause alone. To deny or single out one clause, 
 
 A join word with no clause before it stands for a clause of its own: `xal.` *nothing happened*, `xar` *something happened*, `xur` *something else happened*, `xual` *everything happened*. That join word can also be one item of a clause list:
 
-| Agazan | English |
+| Egabon | English |
 |--------|---------|
 | `zuzazon voworel xam xar.` | *Uzazon walks, for one* (and something else happened too) |
 | `zuzazon voworel xol xal.` | *Uzazon may walk* (Uzazon walks, or nothing happens) |
@@ -296,7 +296,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *bread* | `eredol` | 🍞 |
 | *tomato* | `ududol` | 🍅 |
@@ -306,7 +306,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -316,7 +316,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vanobol` |
 | *scream* | `vazomul` |
 
-#### English → Agazan {#beginner-english-to-agazan}
+#### English → Egabon {#beginner-english-to-egabon}
 
 **1.** *bread and a tomato* (and possibly more)
 
@@ -370,7 +370,7 @@ z-Ehalon | v-pay | b-none
 [z-Uzazon | z-rank/more]
 :::
 
-#### Agazan → English {#beginner-agazan-to-english}
+#### Egabon → English {#beginner-egabon-to-english}
 
 **1.** `zagawal zam.`
 
@@ -530,7 +530,7 @@ When English would say two people are *as ADJ as* each other, use a tie: a rank 
 
 Beginner already used *everything but* (**`ua`**). A leading **u** inverts **o** and **e** the same way: **uo** offers everything outside the list, and **ue** reverses a ranking.
 
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **ua** | invert add | *everything but* the listed | **u** ≈ undo + **a** ≈ add |
 | **uo** | invert menu | *anything but* the listed (free choice outside) | **u** ≈ undo + **o** ≈ one |
@@ -629,7 +629,7 @@ Beginner already used single-item *just X* and standalone *nothing* / *everythin
 
 **Rank: single-item**
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | **…el** (`zel` / …) | closed rank of one | *only X matters* / *X, period*; + SHARED scale → superlative ([comparatives](comparatives.md)) |
 | **…em** (`zem` / …) | open rank of one | *X first* / *mainly X*; + SHARED scale → open superlative |
@@ -647,7 +647,7 @@ Beginner already used single-item *just X* and standalone *nothing* / *everythin
 
 Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *there is no biggest*). Standalone **ue** says nothing is at the bottom (no least, no veto). Neither says the items are tied (that is **`oe`**), and neither picks out *whichever is on top* (that is **`zer`**). Closed **-l** states it as a fact about the set; open **-m** says only that you know of none.
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | **…el** (`zel` / …) | closed empty rank | *no favorite* / *nobody's first*; + SHARED scale → *there is no biggest* |
 | **…em** (`zem` / …) | open empty rank | *no favorite, as far as I know*; + SHARED scale → *no biggest comes to mind* |
@@ -663,7 +663,7 @@ Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *ther
 
 **Set: single-item**
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | **…al** (`zal` / …) | closed add of one | *just X* / *only X* |
 | **…am** (`zam` / …) | open add of one | *X, for one* / *X (and possibly more)* |
@@ -686,7 +686,7 @@ Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *ther
 
 **Set: standalone**
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | **…al** (`zal` / …) | closed empty add | *nothing* / *nobody* |
 | **…am** (`zam` / …) | open empty add | *nothing, as far as I know* |
@@ -727,7 +727,7 @@ When English would deny a list as a whole (*not both*), close the list with its 
 >
 > "not exactly one of walk and run." (both, or neither)
 
-| Agazan | English |
+| Egabon | English |
 |--------|---------|
 | `voworel varuvel vul` | *neither walk nor run* |
 | `voworel varuvel val vul` | *not both walk and run* |
@@ -740,7 +740,7 @@ When English would deny a list as a whole (*not both*), close the list with its 
 When English would say *every cat* rather than *everything but the cat*, write **`ua`** and put the kind as a shared adjective after the join (`zual gegazol`). Any nouns listed before that join are leftovers excluded from that kind. The same **`ua`** join covers both *every K* and *everything but X*.
 
 <!-- cheat-sheet: joins-hooks -->
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-------|---------|
 | standalone `zual` | empty invert-add | *everything* / *everyone* |
 | `zual` + SHARED `/ɡ/` | closed every-kind | *every K* (`zual gegazol` = *every cat*) |
@@ -794,7 +794,7 @@ To deny *every cat* as a whole (*not every cat*, *not all cats*), close the **`z
 
 Where the denial goes changes the claim:
 
-| Agazan | What it says | English |
+| Egabon | What it says | English |
 |--------|--------------|---------|
 | `zul gegazol vuzevol.` | none of the cats sleeps | *No cat sleeps.* |
 | `zual gegazol vuzevol vul.` | each cat, one by one, does not sleep | *Every cat stays awake* (= no cat sleeps) |
@@ -878,7 +878,7 @@ To choose, ask whether one member could have the property. If none could, the cl
 > "The wolf is rare."
 
 <!-- cheat-sheet: joins-hooks -->
-| Agazan | Covers | English |
+| Egabon | Covers | English |
 |--------|--------|---------|
 | `zual gegazol` | each cat in this situation, no exceptions | *every cat* |
 | `zuam gegazol` | the members, as a rule | *cats in general* |
@@ -890,7 +890,7 @@ A [cause or condition](causation.md) on a `zuan` clause is about the kind, not e
 
 #### People in general (`oben`) {#generic-neighbors}
 
-English *one*, generic *you*, and *people* make a claim about people as a rule. Agazan has a pronoun for this as well as the every-kind joins. The [generic pronoun](pronouns.md#generic-pronoun) `oben` works like a one-word version of the open every-kind `zuam gobel`: a default that allows exceptions, not a claim about everyone.
+English *one*, generic *you*, and *people* make a claim about people as a rule. Egabon has a pronoun for this as well as the every-kind joins. The [generic pronoun](pronouns.md#generic-pronoun) `oben` works like a one-word version of the open every-kind `zuam gobel`: a default that allows exceptions, not a claim about everyone.
 
 | Form | Picks | English |
 |------|-------|---------|
@@ -907,7 +907,7 @@ For *everyone, no exceptions*, use `zual gobel`. As a topic, `xoben` (*now, abou
 
 When one list sits inside another (*(tea or coffee) and water*), write the inner items, then their join, then the outer item, then the outer join. Each join sits after only the stretch it closes. You nest by stacking right-close joins; a flat list still uses a single join after all its members. Clause joins group by position instead ([clause joins](#clause-joins)).
 
-| Pattern | Agazan | English |
+| Pattern | Egabon | English |
 |---------|--------|---------|
 | flat | `zedadal zogadal zowolal zol` | *tea or coffee or water* |
 | nested | `zedadal zogadal zol zowolal zal` | *either tea or coffee, and water* |
@@ -921,7 +921,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *ring* | `urubol` | 💍 |
 | *veil* | `ovebul` | 👰 |
@@ -932,7 +932,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -944,7 +944,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *punch* | `vabavul` |
 | *see* | `vanobol` |
 
-#### English → Agazan {#intermediate-english-to-agazan}
+#### English → Egabon {#intermediate-english-to-egabon}
 
 **1.** *everything but wine and beer*
 
@@ -994,7 +994,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [[v-kiss | v-walk | v-and] | v-not]
 :::
 
-#### Agazan → English {#intermediate-agazan-to-english}
+#### Egabon → English {#intermediate-egabon-to-english}
 
 **1.** `zovebul zuol.`
 
@@ -1084,7 +1084,7 @@ The kind goes after **`zual`** as a SHARED `/ɡ/`; a noun before the join is the
 
 A join takes every same-role item before it. When English groups a small list inside a bigger one of the same role (*Uzazon and (just water)*), wrap the small list and its join in **`{ … }`**, called a scope island. The join inside the island takes members only from between those marks. One island per clause; material outside needs its own outer join. An island holds at most one phrase and may close partway through it ([scope islands](spans.md#scope-islands)).
 
-| Agazan | English |
+| Egabon | English |
 |--------|---------|
 | `zuzazon { zowolal zal } zam` | *Uzazon and (just water)* |
 | `zuzazon { zal } zam` | *Uzazon and nothing* |
@@ -1157,14 +1157,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *dove* | `adazol` | 🕊️ |
 | *imprimatur* | `ezezom` | 🦭 from *seal*: the stamp of approval |
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -1173,7 +1173,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *pen* | `abewol` |
 | *see* | `vanobol` |
 
-#### English → Agazan {#advanced-english-to-agazan}
+#### English → Egabon {#advanced-english-to-egabon}
 
 **1.** *a page or a pen* (the familiar set phrase)
 
@@ -1207,7 +1207,7 @@ NAME[z-and]
 z-Olozun | [d-dove | d-something-else] | v-see
 :::
 
-#### Agazan → English {#advanced-agazan-to-english}
+#### Egabon → English {#advanced-egabon-to-english}
 
 **1.** `zoen.`
 
@@ -1271,7 +1271,7 @@ Lookup grids that restate forms taught above; nothing here is new.
 
 Most other phrase joins need two or more items. These edge readings keep a defined sense at every arity, or mix two joins by nesting.
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | **…ul** / **…um** / **…un** | deny at every arity | standalone *no*; one item *not X*; multi *none of* |
 | **…ar** / **…or** / **…er** / **…ur** | unspecified member at every arity | [unspecified **-r**](#unspecified-member-r-phrase) |

@@ -48,7 +48,7 @@ export const NOT_CORE_ROOTS: ReadonlySet<string> = new Set([
 /** Which bank lists the root: legacy **Roots used here**, or converted **New words** / **Review**. */
 export type BankGroup = "roots" | "new" | "review";
 
-export type BankEntry = { root: string; english: string; agazan: string; group: BankGroup; /** 1-based. */ line: number };
+export type BankEntry = { root: string; english: string; egabon: string; group: BankGroup; /** 1-based. */ line: number };
 
 export type Checkpoint = {
   /** `page.md#id` of the checkpoint heading (`### Practice`, or legacy `### Translation practice`). */
@@ -110,12 +110,12 @@ export function stageCheckpoints(
         const cast: BankEntry[] = [];
         const seen = new Set<string>();
         for (const { row, group } of rows) {
-          if (!row.agazan) continue;
-          for (const { root, overlay } of bankUses(row.agazan, tables)) {
+          if (!row.egabon) continue;
+          for (const { root, overlay } of bankUses(row.egabon, tables)) {
             // A closed overlay word is grammar, taught by its owning section.
             if (overlay || seen.has(root)) continue;
             seen.add(root);
-            const entry = { root, english: row.english ?? "", agazan: row.agazan, group, line: row.lineIndex + 1 };
+            const entry = { root, english: row.english ?? "", egabon: row.egabon, group, line: row.lineIndex + 1 };
             (NOT_CORE_ROOTS.has(root) ? cast : entries).push(entry);
           }
         }
@@ -164,7 +164,7 @@ export type SpacingWord = {
   root: string;
   english: string;
   /** Bank form from the nearest checkpoint that lists the root; the bare root when none does. */
-  agazan: string;
+  egabon: string;
   /** The root's `core` cell. */
   core: string;
 };
@@ -209,7 +209,7 @@ export function spacingPlan(
     // Prefer the latest use at or before `near`, else the first use after it.
     const pick = [...at].reverse().find((i) => i <= near) ?? at[0];
     const e = pick === undefined ? undefined : checkpoints[pick]!.entries.find((x) => x.root === root);
-    return { root, english: e?.english ?? gloss(root) ?? root, agazan: e?.agazan ?? root, core: core.get(root)! };
+    return { root, english: e?.english ?? gloss(root) ?? root, egabon: e?.egabon ?? root, core: core.get(root)! };
   };
 
   const introduce: SpacingWord[] = [];
@@ -269,7 +269,7 @@ export function lintCoreCounts(checkpoints: readonly Checkpoint[], core: Readonl
   checkpoints.forEach((c, i) => {
     if (!c.converted) return;
     const push = (line: number, detail: string) => findings.push({ page: c.page, line, detail });
-    const word = (e: BankEntry) => `*${e.english}* \`${e.agazan}\``;
+    const word = (e: BankEntry) => `*${e.english}* \`${e.egabon}\``;
     const fresh = c.entries.filter((e) => e.group === "new");
     const review = c.entries.filter((e) => e.group === "review");
 

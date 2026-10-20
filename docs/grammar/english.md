@@ -1,4 +1,4 @@
-# Saying it in Agazan
+# Saying it in Egabon
 
 These pages are recipes, not lessons. Each one shows how forms you already learned answer an English question, and links the grammar it needs. Read them in any order once the linked sections are familiar.
 
@@ -12,11 +12,11 @@ These pages are recipes, not lessons. Each one shows how forms you already learn
 
 ## One English word, many jobs {#many-jobs}
 
-English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover several jobs. Pick the Agazan job, then open the section that teaches it.
+English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover several jobs. Pick the Egabon job, then open the section that teaches it.
 
 ### *by*
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | who does the action (*seen by Uzazon*) | subject `/z/` | [Who acts](clause.md#beginner) |
 | tool (*writes by / with a hammer*) | hook **`ael`** (*using*) + `/b/` | [Hooks](hooks.md#extra-noun) |
@@ -28,7 +28,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 ### *for*
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | recipient / addressee (*tells Olozun*) | unhosted `/b/` | [Extra nouns](clause.md#extra-nouns) |
 | swap (*a book for a hammer*) | **`hehem`** + `/b/` | [Exchange](relations.md#exchange) |
@@ -43,7 +43,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 ### *to*
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | recipient / addressee (*gives a book to Olozun*) | unhosted `/b/` | [Extra nouns](clause.md#extra-nouns) |
 | goal reached (*walks to the station*, *from a house to a station*) | hook **`ol`** (*at*) + `/b/`; for *from … to*, **`ul`** + the source first | [Locative relations](relations.md#locative-relations) |
@@ -55,7 +55,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 ### *'s* / *of* {#of}
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | in B's use (*Uzazon's dog*, *my house*, *my seat*), B's turn or occasion (*Uzazon's birthday*) | hook **`em`** + `/b/` | [Whose](hooks.md#genitive) |
 | care of a person (*Uzazon's patient*) | **`gubalom`** + `/b/` | [Social relations](relations.md#social-relations) |
@@ -70,7 +70,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 ### *about*
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | regarding / as for (*about Uzazon*) | **`hohagem`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | now, about (*now, about Uzazon*; *speaking of Uzazon*) | `/x/` + the noun: **`xuzazon`** | [Topic](pronouns.md#topic) |
@@ -82,7 +82,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 ### *as*
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | kind / role (*Uzazon as a dog*) | classification `/ɡ/` | [Kind / role](predication.md#classification) |
 | same one (*Olozun as Uzazon*) | **`SAME`** + `/b/` | [Identity](predication.md#identity) |
@@ -101,7 +101,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 ### *since*
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | from a time on (*has sat since the storm*) | hook **`ul`** (*from*) + the time in `/b/` | [Since](hooks.md#since) |
 | from an event on (*since Olozun fell asleep*) | **`ul barl`** + the sentence | [Since](hooks.md#since) |
@@ -109,7 +109,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 ### *against*
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | opponent (*fights against a guard*, *Uzazon versus Olozun*) | hook **`uel`** + `/b/` | [Hooks](hooks.md#extra-noun-intermediate) |
 | a rule, a person's no, or a plan (*against the rules*, *against their will*, *contrary to the plan*, *against my decision*) | hook **`uem`** + the `/th/` stance it goes against | [Contrary to a stance](sakes.md#contrary-to-stance) |
@@ -124,7 +124,7 @@ One English word, one row: the form that says it and the section that teaches it
 
 ### Place and path {#place-path}
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | *in* / *into* / *inside* / *within* / *aboard* (*runs into a train*, *sits inside the house*) | hook **`al`** + `/b/`; the verb says whether anything moves; leave out the `/b/` when the place is clear (*went aboard*) | [Locative relations](relations.md#locative-relations) |
 | *on* / *onto* / *upon* (*sits on a chair*, *climbs onto the table*) | hook **`aol`** + `/b/`; the verb says whether anything moves | [Hooks](hooks.md#extra-noun) |
@@ -159,7 +159,7 @@ One English word, one row: the form that says it and the section that teaches it
 
 These hooks sit between two phrases in the **same role**, so the second phrase keeps the first one's role letter: *the family, except Uzazon* is `zovayal ul zuzazon`, not `buzazon`.
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | *including* (*the family, including Uzazon*) | hook **`al`** (**`am`**: and maybe more) between the two | [Including](hooks.md#including) |
 | *even* (*Olozun walks, and even Uzazon does*) | surprise **`wezum`** before **`al`**: `zolozun wezum al zuzazon voworel` | [Detail on the hook](hooks.md#hook-w) |
@@ -169,7 +169,7 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 
 ### Coming, going and following {#motion}
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | *come* (*is coming to you*) | motion verb `vevubel` + hook **`oel`** + `/b/` for the person it heads to | [Here and there](hooks.md#deixis) |
 | *bring* / *take* (*brings me the package*) | `vulabal` (*carry*) + object + **`oel`** (toward) or **`ul`** (away from) | [Here and there](hooks.md#deixis) |
@@ -179,7 +179,7 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 
 ### Matched lists and last resorts {#matched-lists}
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | *X and Y are A and B, respectively* | the subject list, the adjective list, then **`wazem`** before the second join: `zuzazon zolozun zal geluzom gumazom wazem gal` | [Respectively](joins.md#respectively) |
 | *X and Y walk and run, respectively* | the same shape on verbs: `zuzazon zolozun zal voworel varuvel wazem val` | [Respectively](joins.md#respectively) |
@@ -187,7 +187,7 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 
 ### *some-* and *any-* words {#some-any}
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | *something* / *someone* / *thing* / *stuff* (unnamed) | **`zar`**; with a kind, `zobel zar` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
 | *anything* / *anyone* / *anybody* | **`zor`**; with a kind, `zobel zor` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
@@ -195,9 +195,9 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 
 ### Adjectives made from a noun (*golden*, *royal*, *solar*) {#noun-adjectives}
 
-English often makes an adjective from a noun by adding an ending (*gold* → *golden*, *sun* → *solar*). Agazan needs no ending for that. Put the noun's root on `/ɡ/` ([adjectives](clause.md#adjectives-ɡ)): the adjective means *of that kind*. A root whose sense is an event reads as an act [in progress](#participles) instead. The ending picks the sense: **-l** is the everyday thing, **-m** is the abstract quality. Use **-l** for stuff you can touch (*gold*, *sun*) and **-m** for a quality or field (*royalty*, *life*, *institution*). For *made of*, the [of-relation](relations.md#of-relations) with the stuff in `/b/` says it outright.
+English often makes an adjective from a noun by adding an ending (*gold* → *golden*, *sun* → *solar*). Egabon needs no ending for that. Put the noun's root on `/ɡ/` ([adjectives](clause.md#adjectives-ɡ)): the adjective means *of that kind*. A root whose sense is an event reads as an act [in progress](#participles) instead. The ending picks the sense: **-l** is the everyday thing, **-m** is the abstract quality. Use **-l** for stuff you can touch (*gold*, *sun*) and **-m** for a quality or field (*royalty*, *life*, *institution*). For *made of*, the [of-relation](relations.md#of-relations) with the stuff in `/b/` says it outright.
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | *golden* | `gogelol` (made of gold: `guwum bogelol`) | [Adjectives](clause.md#adjectives-ɡ), [of relations](relations.md#of-relations) |
 | *wooden* | `guwul` (made of wood: `guwum buwul`) | [Of relations](relations.md#of-relations) |
@@ -225,9 +225,9 @@ English often makes an adjective from a noun by adding an ending (*gold* → *go
 
 ### *-ing*, *-er*, and *-ed* words (*walking*, *teacher*, *seen*) {#participles}
 
-English builds several words from one verb: *walking*, *walker*, *walked*. Agazan picks the job instead: a person or thing in the middle of the act, someone who does it, someone it is their role, or someone it happens to.
+English builds several words from one verb: *walking*, *walker*, *walked*. Egabon picks the job instead: a person or thing in the middle of the act, someone who does it, someone it is their role, or someone it happens to.
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | *walking* (*a walking dog*, *Uzazon is walking*) | the event root on `/ɡ/`: `dodozol goworel` | [In progress](predication.md#in-progress) |
 | *walking* after a thing root (*a sitting guard*) | a bare role compound: `dayoyul gaxehuhol` (*a guard who sits*) | [Role compounds](roles.md#role-compounds) |
@@ -251,7 +251,7 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agaza
 
 ### Topic and talk {#topic-talk}
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | *now, about Uzazon*, *speaking of Uzazon* | `/x/` + the noun: **`xuzazon`** | [Topic](pronouns.md#topic) |
 | *now, about Sam* (a foreign name) | <code>x@&lt;Sam&gt;</code> | [Topic](pronouns.md#topic), [spans](spans.md#topic-quotes) |
@@ -266,7 +266,7 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agaza
 
 ### Greetings {#greetings}
 
-| English itch | Agazan job | Teach |
+| English itch | Egabon job | Teach |
 |--------------|------------|-------|
 | *hi* / *hello* / *goodbye* | your own name said with a period: `SELFn.` | [Greeting](word-endings.md#greeting) |
 | full name (*Ohun Ulowon*), family-first name, *Mary-Kate* | given name, then the family name on `/ɡ/` + **-n** (`zohun gulowon`); a hyphenated name is one **`x`** word | [Multipart names](word-endings.md#multipart-names) |

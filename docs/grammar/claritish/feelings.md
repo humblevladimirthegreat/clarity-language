@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-One English emotion word (*anxious*, *resentful*, *proud*) hides three things: which need is at stake, where the feeling sits or what it points at, and how it moves. A single label can be a judgment in disguise. Agazan names the three parts in one word.
+One English emotion word (*anxious*, *resentful*, *proud*) hides three things: which need is at stake, where the feeling sits or what it points at, and how it moves. A single label can be a judgment in disguise. Egabon names the three parts in one word.
 
 ## The forms {#forms}
 

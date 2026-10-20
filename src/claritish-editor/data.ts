@@ -112,7 +112,7 @@ function englishWords(): string[] {
 /** Lesson ids in the intro page's lesson list, then its other lesson links (the bonus). */
 function trackOrder(index: string): string[] {
   const ids = [...index.matchAll(/\]\(([\w-]+)\.md\)/g)].map((m) => m[1]!);
-  return [...new Set(ids)].filter((id) => id !== "learn-agazan" && id !== "cheat-sheet" && id !== "editor");
+  return [...new Set(ids)].filter((id) => id !== "learn-egabon" && id !== "cheat-sheet" && id !== "editor");
 }
 
 /** The prose of a lesson section (`## … {#gap}`), up to the next heading. */

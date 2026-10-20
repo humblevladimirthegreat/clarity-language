@@ -1,23 +1,23 @@
 # Phonology and phonotactics
 <a id="phonology"></a>
 
-How to **sound out** Agazan. Each letter has one pronunciation. Syllables end with a consonant only at the end of the word (one rare number-word exception is under [Advanced](#singability-constraints)), so you know when words stop.
+How to **sound out** Egabon. Each letter has one pronunciation. Syllables end with a consonant only at the end of the word (one rare number-word exception is under [Advanced](#singability-constraints)), so you know when words stop.
 
 ## Beginner {#beginner}
 
 Pronounce each letter the same way every time. A **syllable** is one beat with one vowel. Spell the beats you actually say: a consonant starts a beat, and the last consonant of a content word (a word built on a root, such as a noun or verb) is where that word ends.
 
-Write native Agazan in **lowercase**. A capital means nothing extra: read it as the same letter in lowercase. Two vowel letters in a row are two syllables. Say each vowel as its own beat.
+Write native Egabon in **lowercase**. A capital means nothing extra: read it as the same letter in lowercase. Two vowel letters in a row are two syllables. Say each vowel as its own beat.
 
 <!-- Sync: the IPA in the vowel and consonant tables must match LETTER_IPA in src/tts/phonemes.ts. Change both together. -->
 
 ### Vowels
 
-Agazan has four vowel letters. In English, a vowel letter’s sound depends on the letters around it; each Agazan vowel always has the same sound.
+Egabon has four vowel letters. In English, a vowel letter’s sound depends on the letters around it; each Egabon vowel always has the same sound.
 
 The cue words below are pronounced as in Standard American English.
 
-| Agazan | IPA | Cue |
+| Egabon | IPA | Cue |
 |--------|-----|-----|
 | `u` | /ʉ/ <IpaPlay file="Close_central_rounded_vowel.ogg" label="u" /> | *you* (without the *y*) |
 | `a` | /ä/ <IpaPlay file="Open_central_unrounded_vowel.ogg" label="a" /> | *spa* (like Spanish *casa*) |
@@ -39,10 +39,10 @@ To find `u`, start from `a`: keep the tongue centered, close the jaw, and round 
 
 ### Consonants
 
-A consonant starts a syllable. Many consonants have a **voiced** sound (vocal cords buzzing, as in *zoo*) and an unvoiced one (as in *sea*), and Agazan treats the two as the same letter. Prefer the voiced sound so you can hold a sung note; the unvoiced one is fine for style.
+A consonant starts a syllable. Many consonants have a **voiced** sound (vocal cords buzzing, as in *zoo*) and an unvoiced one (as in *sea*), and Egabon treats the two as the same letter. Prefer the voiced sound so you can hold a sung note; the unvoiced one is fine for style.
 <!-- Consonant order is alphabet order: the ten digit letters in digit order (w d r m v g l h n z = 1–9, 0), then b y th x. The alphabet / letter-name recitation ends with the vowels u a o e, the same order as vowel stacks. -->
 
-| Agazan | IPA | Cue | Unvoiced variant |
+| Egabon | IPA | Cue | Unvoiced variant |
 |--------|-----|-----|------------------|
 | `w` | /w/ <IpaPlay file="Voiced_labio-velar_approximant.ogg" label="w" /> | *we* | |
 | `d` | /d/ <IpaPlay file="Voiced_alveolar_plosive.ogg" label="d" /> | *do* | /t/ <IpaPlay file="Voiceless_alveolar_plosive.ogg" label="unvoiced d" />, *toe* |
@@ -63,7 +63,7 @@ A consonant starts a syllable. Many consonants have a **voiced** sound (vocal co
 `x` sounds different from English *x*. The rest are familiar. `y` is always a consonant, never a vowel.
 :::
 
-`th` is **one letter** written with two characters. Agazan has no `t`, so `th` never means `t` followed by `h`.
+`th` is **one letter** written with two characters. Egabon has no `t`, so `th` never means `t` followed by `h`.
 
 Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) by [Peter Isotalo](https://commons.wikimedia.org/wiki/User:Peter_Isotalo), except /ɹ/ by [Erutuon](https://commons.wikimedia.org/wiki/File:Alveolar_approximant.ogg).
 
@@ -85,7 +85,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-r`. Here is the full shape of that word, in order, written as one lowercase token (`zuzazon`).
 
 <!-- cheat-sheet: sounds-spelling -->
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | Role letter | first letter | role in the clause (subject, verb, …) |
 | Optional `l` after `/ɡ/` | adjective before the noun | `gl-` looks ahead to the next noun |
@@ -107,7 +107,7 @@ Some short grammar words stack two vowels (a join such as **ua**). A stack alway
 
 ### Number-word exception {#number-word-exception}
 
-When English says *how many* or *which place*, Agazan uses a [number word](numbers.md). A number word puts `r` right after the role letter. Ordinary words never have that cluster, because their roots start with a vowel, so a role letter followed directly by `r` tells you a number is coming. The marker is `ra`, `ru`, `re`, or `ro`; counting from the end is written `#-`, spelled and spoken **rue** before the digits. Two vowels in a row stay two separate syllables.
+When English says *how many* or *which place*, Egabon uses a [number word](numbers.md). A number word puts `r` right after the role letter. Ordinary words never have that cluster, because their roots start with a vowel, so a role letter followed directly by `r` tells you a number is coming. The marker is `ra`, `ru`, `re`, or `ro`; counting from the end is written `#-`, spelled and spoken **rue** before the digits. Two vowels in a row stay two separate syllables.
 
 > `zegazolx grarel.`
 >
@@ -122,12 +122,12 @@ When English says *how many* or *which place*, Agazan uses a [number word](numbe
 ### Letter names {#letter-names}
 <a id="letter-names-and-digits"></a>
 
-When you **spell a word aloud** or **name a letter**, say the Agazan name for it. Pause between names so two names do not run into one syllable.
+When you **spell a word aloud** or **name a letter**, say the Egabon name for it. Pause between names so two names do not run into one syllable.
 
 The table is in **alphabetical order**. The ten letters that begin a [digit syllable](#digit-letters) come first, in digit order (1 to 9, then 0), so `w` is the first letter and `z` the tenth. The other consonants follow, and the vowels come last.
 
 <!-- cheat-sheet: sounds-spelling -->
-| Agazan | Name | Cue |
+| Egabon | Name | Cue |
 |--------|------|-----|
 | `w` | `we` | *wet* |
 | `d` | `da` | *Dada* |
@@ -159,7 +159,7 @@ In a clause, a letter you talk about (such as `z`) is a [mention](spans.md#menti
 Ten letters also begin a [digit syllable](numbers.md#counts). The letter name uses the [opposite vowel](#opposite-vowels) (`a`↔`u`, `o`↔`e`), so naming the letter is not the same as counting.
 
 <!-- cheat-sheet: sounds-spelling -->
-| Agazan | Digit syllable | Name | Cue |
+| Egabon | Digit syllable | Name | Cue |
 |--------|----------------|------|-----|
 | `w` | `wo` (1) | `we` | `o` ↔ `e` |
 | `d` | `du` (2) | `da` | `u` ↔ `a` |
@@ -176,9 +176,9 @@ Ten letters also begin a [digit syllable](numbers.md#counts). The letter name us
 
 ### Singability constraints {#singability-constraints}
 
-These choices about word shape make Agazan easier to sing:
+These choices about word shape make Egabon easier to sing:
 
-| Constraint | Why it helps | How Agazan keeps it |
+| Constraint | Why it helps | How Egabon keeps it |
 |------------|--------------|---------------------|
 | One vowel per letter | Sliding from one vowel to another mid-note forces the mouth to change | Stacked vowels = separate syllables |
 | Few consonant clusters | Clusters are harder to say quickly | Ordinary shape is consonant-then-vowel at the start of a syllable; limited clusters below |
@@ -190,7 +190,7 @@ These choices about word shape make Agazan easier to sing:
 
 Legal clusters: left-hanging `gl-`; number-word role letter + `r`; [tag pronoun](pronouns.md#tag-pronouns) role letter + `w` (`zw`, `dw`, `bw`); lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`. The lexical join before `r` is the only syllable-final consonant inside a word.
 
-Try singing a short Agazan line quickly at a high but comfortable pitch:
+Try singing a short Egabon line quickly at a high but comfortable pitch:
 
 `zuzazon gumahom.`
 
@@ -202,7 +202,7 @@ A line that piles up close vowels, clusters, and mid-word stops is harder to sus
 
 ### Rhythm and stress {#rhythm-and-stress}
 
-Give every syllable about the same length, and keep its vowel full however fast you talk. English weakens unstressed vowels to *uh* (the second *a* in *banana*). Agazan never does, because many words differ by one vowel (`val`, `vol`, `vul`), and weak vowels would make them sound alike.
+Give every syllable about the same length, and keep its vowel full however fast you talk. English weakens unstressed vowels to *uh* (the second *a* in *banana*). Egabon never does, because many words differ by one vowel (`val`, `vol`, `vul`), and weak vowels would make them sound alike.
 
 Each word takes a light stress on its **first syllable**. Since the rule never changes, spelling does not mark it. The ending consonant already tells a listener where a word stops; the stressed first beat tells them where the next one starts, so fast speech still splits into words. A [number word](numbers.md) stresses the last digit of each group instead.
 
@@ -214,7 +214,7 @@ Each word takes a light stress on its **first syllable**. Since the rule never c
 
 ### Words never said quietly {#never-quiet}
 
-English swallows small words that change the meaning: *can* and *can't* often differ by one weak sound, and *I think* is usually mumbled. In Agazan, give these words their full stress even when the words around them are light:
+English swallows small words that change the meaning: *can* and *can't* often differ by one weak sound, and *I think* is usually mumbled. In Egabon, give these words their full stress even when the words around them are light:
 
 | Words | Why |
 |-------|-----|
@@ -248,7 +248,7 @@ The level pitch on list items matters because the join word comes last: it lets 
 
 ### Singing on one note {#one-note}
 
-Every distinction Agazan makes is spelled in its letters, so a line sung on a single pitch still says everything it says in speech. When a melody takes over your pitch, voice each [tone mark](speech-moves.md#tone-marks) with how you shape the note:
+Every distinction Egabon makes is spelled in its letters, so a line sung on a single pitch still says everything it says in speech. When a melody takes over your pitch, voice each [tone mark](speech-moves.md#tone-marks) with how you shape the note:
 
 | Mark | In speech | In song |
 |------|-----------|---------|
@@ -258,9 +258,45 @@ Every distinction Agazan makes is spelled in its letters, so a line sung on a si
 | `&` | Stressed and slowed | Held for its full length |
 | `;` | Soft, gentle | Smooth and connected, softer |
 
+### Root tails {#root-tails}
+
+A five-letter root ends in a **tail**, its last two letters, that hints at what it names. The second consonant says what **kind** of thing the root's concrete sense is, and the last vowel says what **job** it does. The first three letters are what keep a root apart from others of the same kind.
+
+The tail is a memory aid, not grammar. Nothing in a sentence reads it, and you never build a word from it. It just means that if you know what a thing is, you already know two letters of its root, and an unknown word in a text still tells you roughly what it names. Three-letter roots have no tail.
+
+Each letter reuses a job it already has somewhere in the grammar:
+
+| Second consonant | Kind | Example | Why this letter |
+|------------------|------|---------|-----------------|
+| `z` | creatures: animals, microbes | `egazo` *cat* | [`/z/`](clause.md#role-letters) is the one who acts |
+| `y` | people: persons, kin, roles, and what only a person does | `ubuyo` *baby* | [`/y/` + name](speech-moves.md#vocative) calls someone |
+| `m` | mind and feeling: faces, emotions, mental states | `evumu` *fear* | [**-m**](word-endings.md#abstract-m) is the abstract ending |
+| `b` | the body and what goes on it: parts, clothes, what you carry, medicine | `ahebo` *hand* | [`/b/`](clause.md#role-letters) is the bolted-on piece |
+| `v` | doing, playing and moving: actions, sports, games, toys, vehicles | `aruve` *run* | [`/v/`](clause.md#role-letters) is the action |
+| `h` | places and fixtures: buildings, landscapes, rooms, headings | `awuho` *house* | [`/h/`](clause.md#role-letters) is where |
+| `l` | nature and raw stuff: plants, weather, sky, materials, colors | `odelo` *tree* | [**-l**](word-endings.md#concrete-l) is the concrete ending |
+| `d` | food and drink, with dishes and kitchen gear | `aledo` *apple* | [`/d/`](clause.md#role-letters) is what is done to (eaten) |
+| `w` | tools and things you use | `onawu` *knife* | [`/w/`](clause.md#role-letters) is *with* |
+| `g` | signs, marks and writing | `awogu` *warning* | [`/ɡ/`](clause.md#role-letters) is a grade, a mark on something |
+| `r` | counting, time, money and rhythm | `ogere` *clock* | `r` after a role letter starts a [number](numbers.md#counts) |
+| `n` | named places: countries | `ohuna` *Japan* | [**-n**](word-endings.md#proper-name--n) is the name ending |
+
+The last vowel is the job, with the same vowel series as [joins](joins.md#beginner): **a** add, **o** one, **e** order, **u** undo.
+
+| Last vowel | Job | Examples |
+|------------|-----|----------|
+| `a` | holds or gathers: containers, groups, masses | `ubawa` *basket*, `arada` *rice*, `aneza` *ant* (it lives in a colony) |
+| `o` | just one of its kind | `egazo` *cat*, `aledo` *apple* |
+| `e` | order: ranked, in sequence, a path | `orohe` *road*, `ogere` *clock*, `aruve` *run* |
+| `u` | takes away or works against: cuts, removes, harms, forbids | `onawu` *knife*, `uzezu` *snake*, `evumu` *fear* |
+
+When more than one job fits, try **u** first, then **a**, then **e**, and use **o** when none fits. A knife is one tool, but it cuts, so its root ends in `u`. Length and height are not a job: a banana and a tower end in `o`. A country's last vowel is free, since a country has no job.
+
+A [compound](x-compounds.md#lexical-compounds) ends in its head root, so it keeps the head's tail.
+
 ### Thinking sounds {#thinking-sounds}
 
-When you need a moment in the middle of speaking, English fills the gap with *um* or *uh*. Agazan has two sounds for that gap, and each tells the listener what would help. Neither is a word, and neither is written.
+When you need a moment in the middle of speaking, English fills the gap with *um* or *uh*. Egabon has two sounds for that gap, and each tells the listener what would help. Neither is a word, and neither is written.
 
 | Sound | Means | The listener | Cue |
 |-------|-------|--------------|-----|

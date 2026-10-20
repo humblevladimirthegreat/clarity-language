@@ -94,7 +94,7 @@ Follow the [template](translation-exercises.md#template). Lead: *Short drills fo
 | Intermediate, productive | **5–6** | **2–3** |
 | Advanced, or a thin generate row | **3–4** | **2** |
 
-Both directions. Spoilers = Agazan or **loose** free English plus a visible morph line in the spoiler ([translation-exercises.md](translation-exercises.md#template)). Add **Also correct:** where a learner is likely to write a legal variant. Omit recoverable **`yal`**. House names in English prompts (*Uzazon waits*). Test the decision this stage taught; package it in the setting, not as a clone of the walk/sleep teach line ([principles](translation-exercises.md#principles)). Aim the [decision items](translation-exercises.md#item-types) at the stage's main decision.
+Both directions. Spoilers = Egabon or **loose** free English plus a visible morph line in the spoiler ([translation-exercises.md](translation-exercises.md#template)). Add **Also correct:** where a learner is likely to write a legal variant. Omit recoverable **`yal`**. House names in English prompts (*Uzazon waits*). Test the decision this stage taught; package it in the setting, not as a clone of the walk/sleep teach line ([principles](translation-exercises.md#principles)). Aim the [decision items](translation-exercises.md#item-types) at the stage's main decision.
 
 When replacing a legacy checkpoint, retarget its `core` cells and any links to `#<band>-translation-practice` (such as the ones on [translation-exercises.md](translation-exercises.md)) to `#<band>-practice`.
 
@@ -160,7 +160,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 
 | File | Band | Setting |
 |------|------|---------|
-| `why-agazan.md` | — | — |
+| `why-egabon.md` | — | — |
 | `introduction.md` | — | — |
 | `index.md` | — | — |
 | `lexicon.md` | — | — |
@@ -232,7 +232,7 @@ Default people: [house cast](grammar-docs.md#house-cast) — `zuzazon` / `zolozu
 
 **This table is for worked examples** on grammar pages (and for morph leak checks when a teach line uses these stems). **Checkpoints do not default to it.** Checkpoint content comes from the [setting](translation-exercises.md#checkpoint-setting) plus house names.
 
-Tokens here are **stems for matching** (path allowlist / leak checks). Learner bank cells on a checkpoint use [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables). Do not copy `(**-m**)` from this **Sense** column into learner **English**. Checkpoint **English** is the uninflected published lemma for that cell (literal, metaphor, or packed role English); inflected drill prompts (*running*) are fine. When English is not the citation kind, the Agazan cell is the in-clause word and the **New words** cue names the citation sense: *see* → `vanobol` / `` `anobol` *eye* ``; *sit* → `vehuhol` / `` `ehuhol` *chair* ``; *tell* → `vezeyel` / `` `ezeyel` *speech* ``; *therefore* → `xodum` / `` `odul` *east* ``; *however* → `xezom`; *although* → `hezom` (NP *despite* is the same `/h/` word + `/b/` noun); *so-that* → `hogom` (NP intended *for* is the same `/h/` word + `/b/` noun); *meanwhile* → `xogerem`; *haste* → `hedarem` / `` `edarel` *dash* ``; *quietude* → `haluzum`; *volume* → `wogawom`; *topic* → `hohagel`. *because* / *inside* already list the `/h/` word (`thavem`, `hugegom`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odozol`; *next clause* stays `oyel`).
+Tokens here are **stems for matching** (path allowlist / leak checks). Learner bank cells on a checkpoint use [citations or the inflected form the row teaches](grammar-docs.md#citation-in-tables). Do not copy `(**-m**)` from this **Sense** column into learner **English**. Checkpoint **English** is the uninflected published lemma for that cell (literal, metaphor, or packed role English); inflected drill prompts (*running*) are fine. When English is not the citation kind, the Egabon cell is the in-clause word and the **New words** cue names the citation sense: *see* → `vanobol` / `` `anobol` *eye* ``; *sit* → `vehuhol` / `` `ehuhol` *chair* ``; *tell* → `vezeyel` / `` `ezeyel` *speech* ``; *therefore* → `xodum` / `` `odul` *east* ``; *however* → `xezom`; *although* → `hezom` (NP *despite* is the same `/h/` word + `/b/` noun); *so-that* → `hogom` (NP intended *for* is the same `/h/` word + `/b/` noun); *meanwhile* → `xogerem`; *haste* → `hedarem` / `` `edarel` *dash* ``; *quietude* → `haluzum`; *volume* → `wogawom`; *topic* → `hohagel`. *because* / *inside* already list the `/h/` word (`thavem`, `hugegom`). Do not inflect a row whose English is still the citation kind (`*dog*` stays `odozol`; *next clause* stays `oyel`).
 
 | Root | Sense in examples |
 |------|-------------------|
@@ -273,7 +273,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 
 | Path | File | Status | Introduces (test these) | Sibling OK / notes |
 |------|------|--------|-------------------------|--------------------|
-| — | `why-agazan.md` | skip | — | orientation |
+| — | `why-egabon.md` | skip | — | orientation |
 | — | `introduction.md` | skip | — | orientation |
 | 3 | `phonology.md` | skip | — | not translation |
 | 4 | `word-endings.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor; **greeting** named citation with period (`uzazon.`) | No sentences with role letters. No **-r**. Pointers to **-x** / **`gl-`**: do **not** make those the item. No vocative `/y/` |
@@ -419,7 +419,7 @@ For each spoiler token family:
 Converted (`### Practice`) checkpoints only:
 
 9. More than **5** new core roots, or fewer than **3** review roots, or a new root out of core order without its `core` cell moved → **fail**.
-10. A **New words** row with no **Cue**, a **Review** row with one, a **Same root as** column, or a non-citation **Agazan** cell whose cue does not name the citation sense → **fail**.
+10. A **New words** row with no **Cue**, a **Review** row with one, a **Same root as** column, or a non-citation **Egabon** cell whose cue does not name the citation sense → **fail**.
 11. Fewer than half the items in a translation direction use a root or situation of the setting → **fail**.
 12. A **Pick one** form or **Fix it** correction that does not parse, a **Pick one** pair that differs in more than this stage's decision, a **Fix it** error no learner would make (or a rejected spelling with a reading in [unassigned-reserved.md](unassigned-reserved.md)), or a **What changes** pair with an untaught morph → **fail**.
 13. An **Also correct:** variant whose morph reading differs from the main answer → **fail**. A likely variant (reordering, omitted recoverable word, resume form) that is missing → rewrite.

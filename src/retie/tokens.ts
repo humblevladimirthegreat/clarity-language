@@ -11,7 +11,7 @@ export type RetieChange = {
   from: string;
   to: string;
   index: number;
-  /** Rewritten from an emphasised prose run, not a code span (only there can English be mistaken for Agazan). */
+  /** Rewritten from an emphasised prose run, not a code span (only there can English be mistaken for Egabon). */
   prose?: boolean;
 };
 
@@ -302,7 +302,7 @@ function nextMarkup(input: string, from: number): number {
 export function resumeRewrite(map: ReadonlyMap<string, string>, tables?: ClassifyTables): CoreRewrite {
   const reshape = tables ? (word: MorphWord) => classifiedShape(word, tables) : undefined;
   if (!tables) return (core) => retieCore(core, map, { reshape });
-  // A mention marker (`glelel`) makes the next `<…>` span a spelling of Agazan, which moves with its roots.
+  // A mention marker (`glelel`) makes the next `<…>` span a spelling of Egabon, which moves with its roots.
   const mentions = new Set([...tables.overlays.values()].filter((row) => row.kind === "mention").map((row) => `${row.pos}l${row.senseForm}`));
   let afterMention = false;
   return (core) => {

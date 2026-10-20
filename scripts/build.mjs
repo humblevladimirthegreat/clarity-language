@@ -57,7 +57,7 @@ const jobs = [
   run("lint cheat sheets", bin("tsx"), ["scripts/lint-cheat-sheets.ts"], { buffer: true }),
   run("lint claritish editor", bin("tsx"), ["scripts/lint-claritish-editor.ts"], { buffer: true }),
   run("cheat sheet blocks", bin("tsx"), ["scripts/cheat-sheet-blocks.ts"], { buffer: true }),
-  run("lint agazan", bin("tsx"), ["scripts/lint-agazan-docs.ts"], { buffer: true }),
+  run("lint egabon", bin("tsx"), ["scripts/lint-egabon-docs.ts"], { buffer: true }),
   run("eslint", bin("eslint"), ["--cache", "--cache-location", "node_modules/.cache/eslint", "docs/grammar/.vitepress/components"], { buffer: true }),
   run("docs:publish", "npm", ["run", "-s", "docs:publish"], { buffer: true }),
   run("flashcards", "npm", ["run", "-s", "flashcards"], { buffer: true }),

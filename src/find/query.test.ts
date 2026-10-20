@@ -85,11 +85,11 @@ describe("example words", () => {
 });
 
 describe("collectExamples", () => {
-  it("reads inline, <code>, and agazan fence spans, and skips fragments", () => {
+  it("reads inline, <code>, and egabon fence spans, and skips fragments", () => {
     const md = [
       "Say `zuzazon voworel.` or <code>zolozun voworel.</code>.",
       "",
-      "```agazan",
+      "```egabon",
       "zuzazon vuzevol.",
       "```",
       "",

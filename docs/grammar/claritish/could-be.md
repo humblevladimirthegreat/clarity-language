@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-English *I think* often hides a guess. *Probably*, *maybe*, and *definitely* are vague, and people read them very differently. Agazan has one word for *could be*. Its ending says what you plan to do about the guess.
+English *I think* often hides a guess. *Probably*, *maybe*, and *definitely* are vague, and people read them very differently. Egabon has one word for *could be*. Its ending says what you plan to do about the guess.
 
 ## The forms {#forms}
 

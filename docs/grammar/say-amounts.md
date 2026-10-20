@@ -37,7 +37,7 @@ English *both are challenging* (or *Uzazon and Olozun are challenging*) says **e
 
 Equality **`oe`** with a shared scale needs **two or more** names. **`oe`** with no shared scale is a tie among the names (equal rank).
 
-| Agazan | Reading |
+| Egabon | Reading |
 |--------|---------|
 | `zuzazon zolozun zehalon zoel gumahom` | *Uzazon, Olozun, and Ehalon are equally challenging* |
 | `zodozol zegazol zoel gumahom` | *the dog is as challenging as the cat* |
@@ -90,7 +90,7 @@ For *two meters taller*, see [measured differentials](#measured-differentials). 
 
 **Needs:** [Percent](numbers-applied.md#percent-and-percentage-points) · [Associative `-x`](plurality.md#associative) · [Resume](pronouns.md#resume-r)
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `zegazolx g+25%` | percent grades the modified noun | *25% of the cats* |
 | `dudulx g+95%` | same, object slot | *95% of the tests* |
@@ -141,7 +141,7 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 *Three times an hour* is a count per unit. Write the count, then the divider **`hruwol`** (*÷1*), then the unit as `/b/` right after it. The divider hosts the unit, so the `/b/` is structural, not a recipient.
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *per* (*per hour*, *three times an hour*) | the count, then **`hruwol`**, then the unit in `/b/` |
 
@@ -174,7 +174,7 @@ A bare `/z/` (or other freestanding) **`…yo`** percent with no named whole is 
 
 A range hook with **-r** names **one value in the band** without saying which.
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `z+3 ar z+5` | some value in the inclusive band | *some value from 3 to 5* |
 | `z+3 ur z+5` | some value in the band, 5 left out | *some value from 3 up to 5* |
@@ -191,9 +191,9 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 **Needs:** [Degree](clause.md#degree-w) · [Number as verb and adverb](numbers.md#special-number-as-verb-and-adverb) · [Number as stance](numbers.md#special-number-as-stance)
 
-English degree words (*really*, *quite*, *barely*) say how far a quality or an action goes. Agazan has stock degree words for the adjective or adverb that follows them, and a pair for *barely* and *almost*. A claim you are sure of takes the stance number `th+e`.
+English degree words (*really*, *quite*, *barely*) say how far a quality or an action goes. Egabon has stock degree words for the adjective or adverb that follows them, and a pair for *barely* and *almost*. A claim you are sure of takes the stance number `th+e`.
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *very* / *really* / *highly* / *truly* | `weluzom` before the adjective or adverb |
 | *extremely* / *greatly* / *dramatically* / *significantly* / *considerably* | `wohelal` |
@@ -223,7 +223,7 @@ English degree words (*really*, *quite*, *barely*) say how far a quality or an a
 
 English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the abstract ending **-m**, as in `hedarem` *hastily*. When the quality is the root's everyday sense and the abstract sense is something else, use **-l**: `ugego` is *correct* and its abstract sense is *inclusion*, so *properly* is `hugegol`.
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *quickly* | `hevagem` |
 | *carefully* | `huyelom` |
@@ -275,9 +275,9 @@ The easy / hard pair on a quality ranks effort against a bar ([vague amounts](co
 
 **Needs:** [Always](restrictors.md#always-hual) · [Sometimes](restrictors.md#sometimes--anytime--some-other-time) · [Frequency scale](comparatives.md#frequency-scale)
 
-English *always*, *usually*, *often* and *sometimes* sit on a scale from every time to some time. Agazan uses the restrictor for the ends and the frequency scale for *often*. For *every day*, hang a unit on `huwem` *while* with `bual` (*everything*).
+English *always*, *usually*, *often* and *sometimes* sit on a scale from every time to some time. Egabon uses the restrictor for the ends and the frequency scale for *often*. For *every day*, hang a unit on `huwem` *while* with `bual` (*everything*).
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *always* / *constantly* | `hual` |
 | *usually* / *normally* / *generally* / *regularly* / *typically* (*as a rule*) | `huam` |
@@ -301,7 +301,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 **Needs:** [Vague amounts](comparatives.md#vague-amounts) · [Bars](comparatives.md#bars) · [Place on a scale](comparatives.md#place-on-a-scale) · [Measure phrases](numbers-applied.md#measure-phrases) · [Rays](numbers-applied.md#rays) · [Fractions](numbers-applied.md#fractions)
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *numerous* / *considerable* (*many cats*) | `zegazolx thobam zel gral` |
 | *enough* / *sufficient* / *adequate* / *full* (as much as is needed) | `zegazolx thegatham zoel gral` |
@@ -332,9 +332,9 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 **Needs:** [Vague amounts](comparatives.md#vague-amounts) · [Every bar](comparatives.md#stance-bars) · [Adjectives](clause.md#adjectives-ɡ) · [Important](say-reasons.md#sake-words)
 
-English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an unstated usual. Agazan always states the bar. Write the PATTERN bar **`thobam`** (*than usual*), then the rank word (**`zel`** for *more than*, **`zuel`** for *less than*), then the quality as an adjective. The quality is the root that names what is measured, in its abstract sense (**-m**): cost, strength, effort.
+English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an unstated usual. Egabon always states the bar. Write the PATTERN bar **`thobam`** (*than usual*), then the rank word (**`zel`** for *more than*, **`zuel`** for *less than*), then the quality as an adjective. The quality is the root that names what is measured, in its abstract sense (**-m**): cost, strength, effort.
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *expensive* / *costly* / *pricey* | `thobam zel godarom` (costs more than usual) |
 | *cheap* / *inexpensive* | `thobam zuel godarom` |
@@ -370,9 +370,9 @@ English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an 
 
 **Needs:** [One item or none](joins.md#standalone-phrase) · [Join vowels and endings](joins.md#join-type-vowel-series) · [Stacked discourse hooks](hooks.md#stacked-discourse) · [Dated channel](knowing.md#now)
 
-English *just*, *only*, *especially* and *also* point at one item and say how it stands among the others. Agazan does that with a [join](joins.md) that has one item in front of it. The vowel says what the item is worth among the rest: **`zal`** (the closed ending) says it is the whole story, **`zem`** (the open ending) says it comes first and others may follow, and **`zel`** says it is the only one that matters. For *also*, there is no word to hang on the item: open the next sentence with the discourse hook **`al`**, which adds a separate point.
+English *just*, *only*, *especially* and *also* point at one item and say how it stands among the others. Egabon does that with a [join](joins.md) that has one item in front of it. The vowel says what the item is worth among the rest: **`zal`** (the closed ending) says it is the whole story, **`zem`** (the open ending) says it comes first and others may follow, and **`zel`** says it is the only one that matters. For *also*, there is no word to hang on the item: open the next sentence with the discourse hook **`al`**, which adds a separate point.
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *just Uzazon* / *only* / *merely* / *simply* / *alone* / *a mere* / *this particular one* | `zuzazon zal`, the join after the one item |
 | *especially Uzazon* / *particularly* / *specifically* / *mainly* / *primarily* / *largely* / *in particular* / *main* (*the main one*) | `zuzazon zem` |
@@ -407,9 +407,9 @@ English *just*, *only*, *especially* and *also* point at one item and say how it
 
 **Needs:** [Associative group](plurality.md#associative) · [Vague amounts](comparatives.md#vague-amounts) · [Unspecified member](joins.md#unspecified-member-r) · [Ranges](numbers-applied.md#ranges) · [Of relations](relations.md#of-relations)
 
-English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). Agazan has no noun for the set itself. It marks the kind as a **group in this situation** with **-x** after the ending (**-lx** for everyday things), and a number or a vague amount says how big. A set of people, flowers or cats is the kind plus **-x**, not a separate word.
+English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). Egabon has no noun for the set itself. It marks the kind as a **group in this situation** with **-x** after the ending (**-lx** for everyday things), and a number or a vague amount says how big. A set of people, flowers or cats is the kind plus **-x**, not a separate word.
 
-| English | Agazan | Reading |
+| English | Egabon | Reading |
 |---------|--------|---------|
 | *group* / *bunch* | `zodozolx` | some dogs, as a set here |
 | *crowd* | `zobelx thobam zel gral` | people, more than usual |
@@ -502,7 +502,7 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 >
 > "Uzazon names solution 2."
 
-| Agazan | Use | English | Same root as | Cue |
+| Egabon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`ayovam`** | numbered-alternative problem | *problem* (something to fit / solve) | `ayoval` *puzzle-piece* | 🧩: pieces must fit |
 | **`egewom`** | numbered-alternative solution | *solution* (what unlocks it) | `egewol` *key* | 🔑: opens what was locked |
@@ -526,7 +526,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agazan | Same root as |
+| English | Egabon | Same root as |
 |---------|--------|--------------|
 | *Uzazon* | `uzazon` | |
 | *Olozun* | `olozun` | |
@@ -535,7 +535,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *exertion* | `ulevom` | `ulevol` *lift* |
 | *gram* | `oburom` | `oburol` *pound* |
 
-#### English → Agazan {#amounts-comparing-english-to-agazan}
+#### English → Egabon {#amounts-comparing-english-to-egabon}
 
 **1.** *Uzazon and Ehalon are heavy.*
 
@@ -561,7 +561,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 [z-Uzazon | z-Olozun | z-Ehalon | z-in-order | g-heavy]
 :::
 
-#### Agazan → English {#amounts-comparing-agazan-to-english}
+#### Egabon → English {#amounts-comparing-egabon-to-english}
 
 **1.** `zolozun zehalon zal gulevom.`
 
@@ -589,14 +589,14 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Agazan | Same root as |
+| English | Egabon | Same root as |
 |---------|--------|--------------|
 | *Uzazon* | `uzazon` | |
 | *Olozun* | `olozun` | |
 | *challenge* | `gumahom` | |
 | *as-of.ledger* | `wuhum` | |
 
-#### English → Agazan {#amounts-snapshot-english-to-agazan}
+#### English → Egabon {#amounts-snapshot-english-to-egabon}
 
 **1.** *As of 22 July, Uzazon is more challenging than Olozun.*
 
@@ -606,7 +606,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 [z-Uzazon | z-Olozun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 :::
 
-#### Agazan → English {#amounts-snapshot-agazan-to-english}
+#### Egabon → English {#amounts-snapshot-egabon-to-english}
 
 **1.** `zuzazon zolozun zel wuhum b_#22,7 gumahom.`
 

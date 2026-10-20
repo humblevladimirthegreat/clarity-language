@@ -6,7 +6,7 @@ To name a kind of thing by a number idea, join a [number](numbers.md) stem onto 
 
 ### Numeric derivation (`ROOT` × number stem) {#numeric-derivation}
 
-English often names a *kind of thing* with a number idea baked in (*essence of love*, *a three-part dialogue*, *specimen #1*). In Agazan you write the content root, a [lexical-compound](x-compounds.md#lexical-compounds) join (**-l** / **-m**), then a number stem. That stem has no role letter and no ending of its own; the role letter and one [word ending](word-endings.md) belong to the **whole derived word**. You can then use that word in any role: the number describes the kind, not how many there are. (cue: same glue as *bedroom*, right half is a number)
+English often names a *kind of thing* with a number idea baked in (*essence of love*, *a three-part dialogue*, *specimen #1*). In Egabon you write the content root, a [lexical-compound](x-compounds.md#lexical-compounds) join (**-l** / **-m**), then a number stem. That stem has no role letter and no ending of its own; the role letter and one [word ending](word-endings.md) belong to the **whole derived word**. You can then use that word in any role: the number describes the kind, not how many there are. (cue: same glue as *bedroom*, right half is a number)
 
 > `zelamalrabal.`
 >
@@ -26,7 +26,7 @@ PoS + ROOT + {l|m} + NUM + {-l|-m|-n|-r}
 | **NUM** | Number stem: same marker / digits / digitless-exp body as [numbers.md](numbers.md), without a role letter and without its own ending. Tables below use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …). Actual words are always spelled CV (`raba`, `roba`, `rawoba`, …): [writing style](numbers.md#writing-style-numeric-vs-spelled) | spoken stem starts with **`r`**, so you hear **`lr`** or **`mr`** |
 | **Ending** | Word ending on the **whole word**, after the number: **-l** the kind itself, **-m** approximately that kind (*roughly a three-part dialogue*), **-n** a name, **-r** a resume. The join letter, not this ending, says whether the root is in its everyday or abstract sense. | |
 
-The **Agazan** columns below write the shape in shorthand (`ROOTl+e`), but a real word is always spelled out (`zelamalrabal`): shorthand is for free numbers only. After the abstract sense, the join is **-m**: `zelamamrabal`.
+The **Egabon** columns below write the shape in shorthand (`ROOTl+e`), but a real word is always spelled out (`zelamalrabal`): shorthand is for free numbers only. After the abstract sense, the join is **-m**: `zelamamrabal`.
 
 A final **-m** makes the kind approximate:
 
@@ -44,7 +44,7 @@ A stem with digits has one digit only: **`+N` / `-N`** (how many parts) or **`#N
 
 The digitless number words (plus or minus infinity, first or last place, *more than one*) also work as stems. After a root and the join, they say **what the kind is** at a limit: its essence, its smallest grain, its absence, its first or final form, many of it, or its undoing.
 
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ROOTl+e`** | essence / absolute / pure type of ROOT | `zelamalrabal`: *essence of love* | **+e** = plus with no cap: nothing left to add |
 | **`ROOTl+e-`** | grain / seed / infinitesimal of ROOT | `zelamalrabul`: *grain of love* | **+e-** = that same plus, at the tiny end: a speck |
@@ -85,12 +85,12 @@ For *quasi-* with a **number of parts** (*as if one*, *as if a pair*), write **`
 
 **Compare with:** with no root, **`grubuwol`** / **`grubudul`** are real negative amounts in the order-of-magnitude bands −1 / −2.
 
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ROOTl-e-1`** | quasi-unit / as-if singleton: unit-shaped without being a real one (twin **`ROOTl+1`**) | `zadewomrubuwol`: *a quasi-single voice* / as-if primary voice | **-e-** outline + **1** = as-if one |
 | **`ROOTl-e-2`** | quasi-dual / imaginary duality: pair/mutual *as if*, not real reciprocity (twin **`ROOTl+2`**) | `gabewomrubudul`: *quasi-mutual commitment*; `zedamrubudul`: *quasi-pair / as-if partnership* | **-e-** outline + **2** = as-if a pair |
 
-| Agazan | Use |
+| Egabon | Use |
 |--------|-----|
 | **`ROOTl+2`** | real dual / mutual structure |
 | **`ROOTl-2`** | privative: non-reciprocal / one-sided |
@@ -111,7 +111,7 @@ English *a pair of…*, *three-part…*, *primary…* can say **how many parts t
 >
 > "Uzazon sees mutual commitment."
 
-| Agazan | Use | English | `-N` | Privative English | Cue |
+| Egabon | Use | English | `-N` | Privative English | Cue |
 |--------|-----|---------|------|-------------------|-----|
 | **`ROOTl+1`** | unit / primary / singleton | `zadewomrawol`: *a single / primary voice*; SI measure nouns use published unit metaphors instead ([measure phrases](numbers-applied.md#measure-phrases)) | `zadewomruwol` | *an indistinct / non-singular voice* | **1** = one piece |
 | **`ROOTl+2`** | dual / mutual / reciprocal / pair | `gabewomradul`: *mutual commitment* | `gabewomrudul` | *one-sided commitment* | **2** = two sides |
@@ -157,7 +157,7 @@ With a final **-m**, the wipe is only approximate: nearly emptied.
 
 The [zero × exponent](numbers.md#zero-exponent) stems from free numbers also work after a root. There they say the kind is **wiped out, or leaves a residue**, instead of naming an amount. Free **`vrazobal`** is *annihilate* with no kind attached; **`voderamrazobal`** is *annihilate the score*.
 
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ROOTl+0e`** | total null / absolute wipe of the kind | `voderamrazobal`: *annihilate the score* (kind); `zamomrazobal`: *a totally wiped debt-kind* | **0** empty × **e** unbounded = wipe with no leftover scale |
 | **`ROOTl+0e-`** | sterile / null grain of ROOT | `zoyuyomrazobul`: *sterile hope*; `zeregolrazobul`: *registration with no seed* | **0e-** = empty at the tiny end: no seed |
@@ -188,7 +188,7 @@ On a free number, **`±0e-1`** is an amount. After a root, the same stems wipe t
 #### Rank-annihilated morph (`#0e`)
 <a id="rank-annihilated-morph"></a>
 
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ROOTl#0e`** | rank-annihilated / disqualified form of ROOT: place wiped as a kind property | `zumahomrezobal`: *a disqualified challenge (as type)*; `vumahomrezobal`: *to disqualify that challenge-kind*. Free **`g#0e`** is *disqualified place in this series*. | **#** is place; **0e** wipes that place |
 
@@ -207,7 +207,7 @@ English *first draft*, *secondary adventure*, *third-order problem* can name **w
 >
 > "Olozun writes a first draft."
 
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ROOTl#1`** | first-class / premiere / first-order | `debewomrewol`: *a first-draft* (kind); `debewom g#1` *the first draft (in this stack)* | **#1** = first place, not “one piece” |
 | **`ROOTl#2`** | secondary / second-order / backup | `gemavomredul`: *a secondary adventure* | **#2** = the next slot after first |
@@ -240,7 +240,7 @@ When English makes a code part of what a thing is (*specimen #1*, *room 12* as a
 >
 > "Uzazon sees specimen #1."
 
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ROOTl_`** | ROOT as something that **bears a code** (taggable unit; code unnamed) | `zodewalrol`: *a coded specimen* / *a specimen-as-ID* | **`_`** = catalog stamp, digits not yet filled |
 | **`ROOTl_N`** | **specimen / item #N**: the code is part of the kind | `zodewalrowol`: *specimen #1*; `zawuholrowodul`: *room-12* as a coded kind; `bawuholrowodul`: *room-12* as `/b/` | the digits **are** the name, not a count |
@@ -254,7 +254,7 @@ Digitless **`+`/`-`/`#`** on ROOT = *what the kind is*; digitless **`_`** = *how
 
 With a digitless exponent, **`_`** describes the **catalog**, not a size: label ∞ means *the naming system has no bound*, and its tiny end is an empty slot before any code is assigned.
 
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ROOTl_e`** | open / unbounded catalog: ∞-tagged, open ID space, any code in an unbounded ledger | `zedegolrobal`: *open-ended ticket ID* / *∞-catalogued ticket* | **`_e`** = a code space with no last ID |
 | **`ROOTl_e-`** | proto-label / unassigned slot: pre-code, atomic empty tag | `zedegolrobul`: *unassigned ticket slot* | **`_e-`** = the catalog’s empty first slot |
@@ -276,7 +276,7 @@ With a digitless exponent, **`_`** describes the **catalog**, not a size: label 
 
 To exaggerate a kind for comic effect (*a gazillion-mess*, *an umpteenth attempt*), put a mantissa before a digitless exponent, as in free [hyperbole](numbers.md#hyperbole-gazillion). Use **`1`** as the mantissa unless the joke needs another digit. Label hyperbole (`_1e` / `_1e-`) is catalog comedy: [infinite labels](#infinite-labels).
 
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ROOTl+1e`** | *gazillion-ROOT* (comic huge) | `zazolamrawobal`: *a gazillion-mess* | **1e** = one × unbounded: comic huge |
 | **`ROOTl+1e-`** | *gazillionth-ROOT* (comic tiny) | `zudavomrawobul`: *a gazillionth-of-a-chance* | **1e-** = one × unbounded tiny |
@@ -294,7 +294,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *gold* | `ogelol` | 🥇 |
 | *fire* | `avalul` | 🔥 |
@@ -302,7 +302,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -311,7 +311,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *pour* | `vabovul` |
 | *see* | `vanobol` |
 
-#### English → Agazan {#advanced-english-to-agazan}
+#### English → Egabon {#advanced-english-to-egabon}
 
 **1.** *Uzazon hammers a grain of gold.*
 
@@ -345,7 +345,7 @@ z-Uzazon | d-gold-l-quasi | v-pour
 z-Olozun | v-gold-l-+-0e
 :::
 
-#### Agazan → English {#advanced-agazan-to-english}
+#### Egabon → English {#advanced-egabon-to-english}
 
 **1.** `zehalon dogelolrabal vanobol.`
 

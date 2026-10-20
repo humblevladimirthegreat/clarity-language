@@ -1,5 +1,5 @@
 /**
- * The English ↔ Agazan entries of a docs folder (src/find/english.ts), cached under dist/find/.
+ * The English ↔ Egabon entries of a docs folder (src/find/english.ts), cached under dist/find/.
  * Collecting them parses every gloss, which builds the sentence parser and takes seconds; the
  * cache is rebuilt when the folder, src, or data change. Pages are relative to the repo root.
  */

@@ -1,5 +1,5 @@
 /**
- * `--verify`: the parser's existing checks on an Agazan draft, to show beside its English: a
+ * `--verify`: the parser's existing checks on an Egabon draft, to show beside its English: a
  * sentence parse, the lexicon check (`parse.mjs --check-lexicon`), and the morph gloss the
  * Inspect page shows. With the helper data it also lines up each content word's sense with the
  * English word whose suggestions named its root, so a parse that reads *pray* for *grateful*
@@ -30,12 +30,12 @@ export type WordSense = {
   spelled?: string;
 };
 
-export type Verified = { english: string; agazan: string; gloss?: string; error?: string; unknown: UnknownWord[]; words?: WordSense[] };
+export type Verified = { english: string; egabon: string; gloss?: string; error?: string; unknown: UnknownWord[]; words?: WordSense[] };
 
 type WordNode = { raw: string; ending?: string; family: { kind: string; roots?: string[] }; rootGloss?: { concrete?: string; abstract?: string } };
 
 /** Every one-root content word in the parse tree, in sentence order. */
-function contentWords(tree: unknown, agazan: string): WordNode[] {
+function contentWords(tree: unknown, egabon: string): WordNode[] {
   const out: WordNode[] = [];
   const walk = (node: unknown) => {
     if (Array.isArray(node)) return node.forEach(walk);
@@ -45,7 +45,7 @@ function contentWords(tree: unknown, agazan: string): WordNode[] {
     for (const value of Object.values(node)) if (value && typeof value === "object") walk(value);
   };
   walk(tree);
-  const order = agazan.toLowerCase().split(/[^a-z_+#~-]+/);
+  const order = egabon.toLowerCase().split(/[^a-z_+#~-]+/);
   // A shared word sits in the tree more than once (a ranking bracket repeats its scale): keep as many as the draft writes.
   const left = new Map<string, number>();
   for (const raw of order) left.set(raw, (left.get(raw) ?? 0) + 1);
@@ -117,15 +117,15 @@ function senseOf(word: WordNode, suggested: ReturnType<typeof suggestedRoots> | 
   return out;
 }
 
-export function verifyDraft(english: string, agazan: string, tables: ClassifyTables, data?: HelperData): Verified {
+export function verifyDraft(english: string, egabon: string, tables: ClassifyTables, data?: HelperData): Verified {
   try {
-    const tree = parseWithTables(agazan, tables);
+    const tree = parseWithTables(egabon, tables);
     const unknown = unknownWords(tree);
     const suggested = data ? suggestedRoots(data, english) : undefined;
-    const words = contentWords(tree, agazan).flatMap((w) => senseOf(w, suggested) ?? []);
-    return { english, agazan, gloss: morphGlossLine(agazan, tables), unknown, ...(data ? { words } : {}) };
+    const words = contentWords(tree, egabon).flatMap((w) => senseOf(w, suggested) ?? []);
+    return { english, egabon, gloss: morphGlossLine(egabon, tables), unknown, ...(data ? { words } : {}) };
   } catch (error) {
-    return { english, agazan, error: error instanceof Error ? error.message : String(error), unknown: [] };
+    return { english, egabon, error: error instanceof Error ? error.message : String(error), unknown: [] };
   }
 }
 
@@ -151,7 +151,7 @@ function wordLine(w: WordSense, width: number): string {
 }
 
 export function verifiedLines(v: Verified): string[] {
-  const out = [`English: ${v.english}`, `Agazan:  ${v.agazan}`];
+  const out = [`English: ${v.english}`, `Egabon:  ${v.egabon}`];
   if (v.error) out.push(`parse error: ${v.error}`);
   if (v.gloss) out.push(`gloss:   ${v.gloss}`);
   for (const word of v.unknown) {

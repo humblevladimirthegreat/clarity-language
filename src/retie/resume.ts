@@ -7,7 +7,7 @@ import type { Ending, MorphWord, MorphWordFamily } from "../parse/types.js";
 export type ResumeScope = {
   /** The shape the classifier reads under the old spellings (a lateral the word grammar saw as a sake). */
   reshape?: (word: MorphWord) => MorphWord;
-  /** Retie an opaque `<…>` payload too: it follows a mention marker, so it spells Agazan (spans.md#mention). */
+  /** Retie an opaque `<…>` payload too: it follows a mention marker, so it spells Egabon (spans.md#mention). */
   opaque?: boolean;
 };
 

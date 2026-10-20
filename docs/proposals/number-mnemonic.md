@@ -12,7 +12,7 @@ This proposal can't be absorbed before both.
 
 English memory systems (Major / Herigone) turn digits into consonants, then add vowels to make picture-words. Their map is many-to-one (`1` = *t* or *d*, `6` = *j/sh/ch/g*, …), so encoding and decoding work against each other.
 
-Agazan gives each digit **one unique onset**, and the [alphabet](../grammar/phonology.md#letter-names) starts with those ten letters in digit order. The mnemonic should be that map, not a parallel code. A number becomes a **root consonant skeleton**, and published roots become the pictures.
+Egabon gives each digit **one unique onset**, and the [alphabet](../grammar/phonology.md#letter-names) starts with those ten letters in digit order. The mnemonic should be that map, not a parallel code. A number becomes a **root consonant skeleton**, and published roots become the pictures.
 
 Every published root has a concrete seed, usually an emoji ([seeds](../meta/lexicon.md#seeds-concrete-senses-and-pictographs)). The seed is the one sense that pictures reliably, so **every peg is a root pictured as its seed**. The [root length](../meta/lexicon.md#root-length) policy fixes two shapes, three letters (`VCV`) and five letters (`VCVCV`). Those line up with 0–9 and 00–99 pegs.
 
@@ -138,7 +138,7 @@ A three-digit chunk is a **count** plus a two-digit peg: **415** = four of the *
 
 - **Capacity:** 3 digits per image instead of 2.
 - **Decoding:** the count is the first digit, and the peg reads as usual. On a three-digit list, a single item still counts as 1, so `162` is one item of peg 62, never the bare peg.
-- **Speech:** the image is ordinary Agazan, a noun with a count. Plural **-x** stays silent, so `zubaholx` is still peg 15.
+- **Speech:** the image is ordinary Egabon, a noun with a count. Plural **-x** stays silent, so `zubaholx` is still peg 15.
 
 **Show the count as a hand shape, not as copies.** People take in up to about four items at a glance; five and more have to be counted, and a mental image is hard to count accurately. Zero copies can't be pictured at all. The finger code in `manual-phonology.md` gives every digit a count shape in alphabet order: runs of fingers for 1–4, the thumb for 5, thumb plus a run for 6–9, horns for 0. So the count becomes a hand held over the peg scene. That covers zero and the large counts with no special case. If the finger code stays unbuilt, use copies for 1–4 and a hand for the rest.
 

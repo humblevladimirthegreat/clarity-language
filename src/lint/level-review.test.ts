@@ -12,7 +12,7 @@ const stage = (name: string) => `# Page ${name}
 
 ### Practice {#beginner-practice}
 
-#### English → Agazan
+#### English → Egabon
 
 ## Intermediate
 
@@ -34,7 +34,7 @@ const review = (items: string) => `# Level reviews
 
 ### Practice {#beginner-practice}
 
-#### English → Agazan
+#### English → Egabon
 
 ${items}
 `;
@@ -68,20 +68,20 @@ describe("lintLevelReview", () => {
       ].join("\n"),
     );
     const out = findings(md).filter((d) => !counts(d));
-    assert.ok(out.includes("English → Agazan 1: answer needs a **Rule:** link to the section it tests"));
-    assert.ok(out.includes("English → Agazan 2: **Rule:** link a.md#more is not in a.md beginner"));
-    assert.ok(out.includes("English → Agazan 3: **Rule:** link a.md#beginner-practice is a checkpoint; link the section that teaches the rule"));
-    assert.ok(out.includes("English → Agazan 4: **Rule:** link a.md#gone names no section"));
-    assert.ok(out.includes("English → Agazan 5: write the rule as **Rule:** [Section title](page.md#id)"));
-    assert.ok(out.includes("English → Agazan 6: **Rule:** must be the last line of the answer"));
+    assert.ok(out.includes("English → Egabon 1: answer needs a **Rule:** link to the section it tests"));
+    assert.ok(out.includes("English → Egabon 2: **Rule:** link a.md#more is not in a.md beginner"));
+    assert.ok(out.includes("English → Egabon 3: **Rule:** link a.md#beginner-practice is a checkpoint; link the section that teaches the rule"));
+    assert.ok(out.includes("English → Egabon 4: **Rule:** link a.md#gone names no section"));
+    assert.ok(out.includes("English → Egabon 5: write the rule as **Rule:** [Section title](page.md#id)"));
+    assert.ok(out.includes("English → Egabon 6: **Rule:** must be the last line of the answer"));
     assert.ok(out.some((d) => d.startsWith("no item has a **Rule:** link to b.md beginner")));
   });
 
   it("checks the review mix: one item per checkpoint, translation minimum, Pick one share", () => {
     const md = review([item(1, "**Rule:** [Basics](a.md#basics)"), item(2, "**Rule:** [Basics](b.md#basics)")].join("\n"));
     assert.deepEqual(findings(md).filter(counts), [
-      "2 English → Agazan item(s); use at least 3",
-      "0 Agazan → English item(s); use at least 3",
+      "2 English → Egabon item(s); use at least 3",
+      "0 Egabon → English item(s); use at least 3",
       "0 Pick one item(s); use at least 1 (a third of the review)",
     ]);
   });

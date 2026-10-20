@@ -1,4 +1,4 @@
-const SORTABLE = new Set(['english', 'agazan'])
+const SORTABLE = new Set(['english', 'egabon'])
 
 export function headerCells(table: HTMLTableElement): Element[] {
   const fromHead = table.querySelectorAll('thead th, thead td')
@@ -13,7 +13,7 @@ export function headerLabels(table: HTMLTableElement): string[] {
 
 export function isRootsUsedTable(table: HTMLTableElement): boolean {
   const labels = headerLabels(table).map((label) => label.toLowerCase())
-  return labels.includes('english') && labels.includes('agazan')
+  return labels.includes('english') && labels.includes('egabon')
 }
 
 export function cellSortKey(text: string): string {

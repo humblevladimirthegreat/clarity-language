@@ -1,5 +1,5 @@
 /**
- * Place Agazan roots: published rows (--lexicon), or one English word.
+ * Place Egabon roots: published rows (--lexicon), or one English word.
  *
  * Run: npm run convert-word -- fishing                          (three-letter root by English echo)
  *      npm run convert-word -- fishing --kind doing --shape one (five-letter root-tails root)
@@ -29,10 +29,10 @@ import { holderHostForms, tailFieldsError, validateRootTails, type Kind, type Sh
 import { placeTailRoots } from "../src/root-tails-place.js";
 import { RETIE_MAP_RELATIVE_PATH, serializeRetieMap, type RetiePair } from "../src/retie/map.js";
 import {
-  AGAZAN_CONSONANTS,
-  AGAZAN_VOWELS,
+  EGABON_CONSONANTS,
+  EGABON_VOWELS,
   letterDistribution,
-  toAgazanWord,
+  toEgabonWord,
 } from "../src/word-converter.js";
 import { REPO_ROOT, dataPath } from "../src/repo-paths.js";
 import { printTailsReport } from "./lib/tails-report.js";
@@ -380,11 +380,11 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
   if (assigned.length > 0) {
     console.log("");
     console.log(`vowels (${dist.vowelTokens} tokens):`);
-    for (const v of AGAZAN_VOWELS) {
+    for (const v of EGABON_VOWELS) {
       console.log(`  ${v}  ${dist.vowels[v]}  ${pct(dist.vowels[v], dist.vowelTokens)}`);
     }
     console.log(`consonants (${dist.consonantTokens} tokens):`);
-    for (const c of AGAZAN_CONSONANTS) {
+    for (const c of EGABON_CONSONANTS) {
       console.log(`  ${c}  ${dist.consonants[c]}  ${pct(dist.consonants[c], dist.consonantTokens)}`);
     }
     console.log(`letters: ${dist.letters}`);
@@ -425,7 +425,7 @@ async function main(): Promise<void> {
     await convertLexicon(options.only, options.steps);
     return;
   }
-  console.log(options.kind ? tailRootFor(options.input, options.kind, options.shape) : toAgazanWord(options.input));
+  console.log(options.kind ? tailRootFor(options.input, options.kind, options.shape) : toEgabonWord(options.input));
 }
 
 try {

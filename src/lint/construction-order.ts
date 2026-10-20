@@ -1,6 +1,6 @@
 /**
  * Where constructions are used relative to where they are taught: the anchor-page
- * coverage check and the learning-order check run by `lint:agazan` over the full corpus.
+ * coverage check and the learning-order check run by `lint:egabon` over the full corpus.
  */
 import type { ConstructionEntry } from "../parse/constructions.js";
 import { lineNumberAt } from "../retie/tokens.js";

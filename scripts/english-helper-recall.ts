@@ -1,7 +1,7 @@
 /**
  * Recall of the English helper on doc example pairs (free, deterministic). Runs the analyzer
  * on the English side of every example the translation prompt can show (llm-examples.ts) and
- * checks how many of the roots and constructions the reference Agazan uses it suggests.
+ * checks how many of the roots and constructions the reference Egabon uses it suggests.
  *
  * Run: npm run english-helper-recall
  *      npm run english-helper-recall -- --json
@@ -103,7 +103,7 @@ function rootResult(analysis: Analysis, root: string, sentenceWords: Set<string>
   return { result: "missed" };
 }
 
-type Row = { source: string; english: string; agazan: string; roots: number; found: number; missed: string; constructions: number; anchor_hits: number; page_hits: number; missed_constructions: string };
+type Row = { source: string; english: string; egabon: string; roots: number; found: number; missed: string; constructions: number; anchor_hits: number; page_hits: number; missed_constructions: string };
 const rows: Row[] = [];
 const rootTally = new Map<RootResult, number>();
 /** Roots found, by the tier of the suggestion that found them (WordNet leads, routes and live compounds apart). */
@@ -121,11 +121,11 @@ for (const page of pages) {
     const pair = examplePair(example, `${page}:${example.line}`, tables);
     if (!pair || seen.has(pair.gloss)) continue;
     seen.add(pair.gloss);
-    const agazan = fillSelf(example.agazan);
+    const egabon = fillSelf(example.egabon);
     let roots: string[];
     let liveStems: string[];
     try {
-      const tree = parseWithTables(agazan, tables);
+      const tree = parseWithTables(egabon, tables);
       roots = usedRoots(tree);
       liveStems = usedLiveStems(tree);
     } catch {
@@ -171,7 +171,7 @@ for (const page of pages) {
     rows.push({
       source: pair.source,
       english: pair.sentence,
-      agazan,
+      egabon,
       roots: roots.length,
       found,
       missed: results.filter((r) => r.result === "missed" || r.result === "tagging").map((r) => `${r.root}${r.result === "tagging" ? "*" : ""}`).join(" "),

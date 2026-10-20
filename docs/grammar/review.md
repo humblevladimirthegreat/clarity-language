@@ -14,7 +14,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -51,7 +51,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *wood* | `uwul` |
 | *basket* | `ubawal` |
 
-#### English → Agazan {#beginner-english-to-agazan}
+#### English → Egabon {#beginner-english-to-egabon}
 
 **1.** *An angry Olozun sees an umbrella.*
 
@@ -107,7 +107,7 @@ z-Ehalon | v-sing | [th-if | b-wind]
 **Rule:** [If](causation.md#if)
 :::
 
-#### Agazan → English {#beginner-agazan-to-english}
+#### Egabon → English {#beginner-egabon-to-english}
 
 **1.** `zehalon vanobol darl zolozun vezeyul.`
 
@@ -307,7 +307,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -347,7 +347,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *CLUES* | `thunem` |
 | *sing* | `vezeyol` |
 
-#### English → Agazan {#intermediate-english-to-agazan}
+#### English → Egabon {#intermediate-english-to-egabon}
 
 **1.** *Ehalon climbs. It follows that Ehalon doesn't swim.*
 
@@ -441,7 +441,7 @@ z-Olozun | th-CLUES-Ehalon | v-sing
 **Rule:** [Whose view (holder)](knowing.md#holder)
 :::
 
-#### Agazan → English {#intermediate-agazan-to-english}
+#### Egabon → English {#intermediate-egabon-to-english}
 
 **1.** `zehalon dedehol vanobol. zehalon vanobor dubowal.`
 
@@ -629,7 +629,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -653,7 +653,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *sleep* | `vuzevol` |
 | *see* | `vanobol` |
 
-#### English → Agazan {#advanced-english-to-agazan}
+#### English → Egabon {#advanced-english-to-egabon}
 
 **1.** *It was Olozun, not someone else, who cooked a tomato.*
 
@@ -685,7 +685,7 @@ z-Ehalon | [d-station | [w-MEMORY | g-quiet]] | v-see
 **Rule:** [Mood on one adjective](knowing.md#mood-on-adjective)
 :::
 
-#### Agazan → English {#advanced-agazan-to-english}
+#### Egabon → English {#advanced-egabon-to-english}
 
 **1.** `zehalon duyehol voworeloel.`
 

@@ -1,12 +1,12 @@
 # Proposal: Checking and improving the English helper
 
 **Status:** PROPOSED. The tools named under *What exists* are built; everything under *Plan* is not.  
-**Related:** [`src/english-helper/`](../../src/english-helper/) (analyzer, prompt, `--verify`), [`scripts/english-helper-recall.ts`](../../scripts/english-helper-recall.ts), [`scripts/frequency-coverage.ts`](../../scripts/frequency-coverage.ts), [`scripts/llm-eval.ts`](../../scripts/llm-eval.ts) (the Agazan → English counterpart), [translation checkpoints](../meta/translation-exercises.md), [recipe track](../meta/grammar-docs.md#recipe-track).  
+**Related:** [`src/english-helper/`](../../src/english-helper/) (analyzer, prompt, `--verify`), [`scripts/english-helper-recall.ts`](../../scripts/english-helper-recall.ts), [`scripts/frequency-coverage.ts`](../../scripts/frequency-coverage.ts), [`scripts/llm-eval.ts`](../../scripts/llm-eval.ts) (the Egabon → English counterpart), [translation checkpoints](../meta/translation-exercises.md), [recipe track](../meta/grammar-docs.md#recipe-track).  
 **Design authority:** none. This is a process for the tool. Every fix it produces is either tool code or a doc row that teaches a form a grammar page already owns. A missing form is logged as a grammar gap, never invented here.
 
 ## Problem
 
-`node scripts/english-helper.mjs --llm-prompt` is meant to give a translator everything needed to write Agazan from English without opening the grammar. A hand test on five new sentences found that the prompt fell short in several ways:
+`node scripts/english-helper.mjs --llm-prompt` is meant to give a translator everything needed to write Egabon from English without opening the grammar. A hand test on five new sentences found that the prompt fell short in several ways:
 
 - It linked a section without showing the form (*my*, *three*).
 - It had no suggestion at all for common words (*me*, *last night*, *not sure*).
@@ -31,8 +31,8 @@ We need a repeatable loop: a held-out test set, free metrics that answer "could 
 
 ## Non-goals
 
-- New grammar. When the reference needs a form no page teaches, or the English has no Agazan way to say it yet, that's a grammar gap: log it with the `find-english.mjs` phrases tried, and leave the decision to the editor.
-- Writing Agazan sentences inside the analyzer. The helper stays suggestion-only.
+- New grammar. When the reference needs a form no page teaches, or the English has no Egabon way to say it yet, that's a grammar gap: log it with the `find-english.mjs` phrases tried, and leave the decision to the editor.
+- Writing Egabon sentences inside the analyzer. The helper stays suggestion-only.
 - Tuning to the test set. Held-out sentences are never copied into cue rows or examples. A fix has to work for the class of word, not for the one sentence.
 
 ## What exists
@@ -42,7 +42,7 @@ We need a repeatable loop: a held-out test set, free metrics that answer "could 
 | `npm run english-helper-recall` | root recall (top-1, top-3, anywhere), construction recall (home anchor, home page), most-missed roots and constructions | in-sample doc pairs only; a linked section counts as found even if the prompt never shows the form |
 | `npx tsx scripts/frequency-coverage.ts` | which of NGSL's 2,809 frequent lemmas the lexicon or a grammar row knows | word by word, no context, no prompt |
 | `english-helper.mjs --verify` | parse, unknown words, and each content word's sense next to the English that suggested its root | checks one draft; no aggregate |
-| `npm run llm-eval` | Agazan → English prompt quality, with a judge model | other direction; costs money |
+| `npm run llm-eval` | Egabon → English prompt quality, with a judge model | other direction; costs money |
 | tests in `src/english-helper/*.test.ts` | pinned behavior per feature | written ad hoc, one feature at a time |
 
 ## Plan
@@ -54,10 +54,10 @@ Three sets, each scored separately:
 | Set | Source | Role |
 |-----|--------|------|
 | **doc** | doc example pairs (what `english-helper-recall` reads today) | in-sample: catches breakage, overstates quality |
-| **checkpoint** | English → Agazan practice items, with their **Also correct** answers ([`src/lint/practice-items.ts`](../../src/lint/practice-items.ts)); 68 sections today | held out from the example pool, with several right answers each |
-| **wild** | a committed list of plain English sentences grouped by phenomenon (pronouns, possessives, numbers, time words, feelings, stance, clauses, questions, comparatives, kin, places) at each stage | no reference Agazan; scored on gaps, noise and size, and is the input for the model eval |
+| **checkpoint** | English → Egabon practice items, with their **Also correct** answers ([`src/lint/practice-items.ts`](../../src/lint/practice-items.ts)); 68 sections today | held out from the example pool, with several right answers each |
+| **wild** | a committed list of plain English sentences grouped by phenomenon (pronouns, possessives, numbers, time words, feelings, stance, clauses, questions, comparatives, kin, places) at each stage | no reference Egabon; scored on gaps, noise and size, and is the input for the model eval |
 
-The wild set is written once (around 20 sentences per phenomenon), checked in as a TSV, and grown only through the triage loop below. It stores no Agazan, so root respelling never touches it.
+The wild set is written once (around 20 sentences per phenomenon), checked in as a TSV, and grown only through the triage loop below. It stores no Egabon, so root respelling never touches it.
 
 ### 2. Free metrics
 
@@ -100,7 +100,7 @@ Rows are sorted by frequency, then by how many sentences share the miss.
 | **pattern read as spelling** | a row's form is notation (`th+e`, `/ɡ/ / -r`) with no spelled word or example | the doc cell spells the word; the analyzer shows an example for any form that is only a pattern | *sure* → `thrabal` |
 | **joined prose cell** | a recipe cell's prose (`X and Y`) becomes ` / ` alternatives | the doc cell becomes one code span | *last night* |
 | **wrong side** | an alias or lead on the sense the English doesn't mean | the analyzer spells both sides; `--verify` flags it | *grateful* → *pray* |
-| **feature not reached** | the English has a dedicated Agazan feature (sakes, evidentials, clusivity), but the helper offers only a root | a recipe row that names the feature for that English word | *grateful* → met sake word |
+| **feature not reached** | the English has a dedicated Egabon feature (sakes, evidentials, clusivity), but the helper offers only a root | a recipe row that names the feature for that English word | *grateful* → met sake word |
 | **ranking** | the right suggestion is there but below a worse one | cue rank, tier order or slot order in the analyzer | listener *you* above generic *you* |
 | **tagger** | wrong word class or lemma from compromise | `tag.ts` overrides, or a context rule in the analyzer | *that* tagged as a preposition |
 | **opener / structure** | a clause-level English structure with no detector | `detectors.ts` (pointers only), with its links in `detectorLinks` | *that* + clause → `darl` |
@@ -133,7 +133,7 @@ Add `npm run english-helper-eval`, built on `llm-eval`'s runner. For each sample
 1. Build the helper prompt, with the item's own doc pair held out.
 2. Translate with a small model. Give it tool access to `--verify` only if the run is testing that loop.
 3. Parse the reply. Record parse failure, unknown words, and *check* flags from `--verify`.
-4. Back-translate with the Agazan → English prompt and have a stronger model judge it against the item's English, keeping who did what, negation and stance.
+4. Back-translate with the Egabon → English prompt and have a stronger model judge it against the item's English, keeping who did what, negation and stance.
 5. Report miss rate by failure class (from which slot's word went wrong), by construction, and by stage.
 
 Results are cached by prompt hash, like `llm-eval`. Run it only when asked, and sample (default `--n 100`).

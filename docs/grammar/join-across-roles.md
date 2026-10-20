@@ -10,7 +10,7 @@ The join vowels you use on noun lists also join other things: verb phrases under
 When English tells events in time order (*and then*), put ending **-n** on a clause join (`/x/`). Narrative *and then* is **`xan`**. Like every clause join, it goes [between](joins.md#clause-joins) the clauses: `A xan B xan C` reads one step at a time. The clauses keep one speech act; this **-n** orders them rather than naming a person.
 
 <!-- cheat-sheet: joins-hooks -->
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | `xan` | sequence add | *and then…* | **a** ≈ add |
 | `xon` | sequence menu | *or maybe…*; after an [attempt](intention.md#try), *failing that…* | **o** ≈ one |
@@ -306,7 +306,7 @@ These are ordinary content verbs. To refer back to a join-act you already named,
 
 Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 
-| Agazan | Use | English | Cue | Example |
+| Egabon | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
 | **`van`** | hold the object in the set | *includes / adds* | **a** ≈ add (hold / inventory) | `zuzazon daledol van` |
 | **`von`** | lock the object as the sole pick | *chooses (as the one choice)* | **o** ≈ one (single pick) | `zuzazon dedadal von` |
@@ -341,7 +341,7 @@ When English ties one extra thing to a noun or an action by a list move (*a cupc
 
 For several members, put a [phrase join](joins.md) **inside** the `/b/` phrase (`gan bonedal bugadom bal`). For an unnamed member or none at all, use a [standalone](joins.md#standalone-phrase) `/b/` join as the only `/b/` word (`gan bar` = *including something*; `guan bal` = *excluding nothing*).
 
-| Agazan | Use | English | Cue | Example |
+| Egabon | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
 | **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | **a** ≈ add (hold the extra member) | `zugadol gan bonedal`; `zuzazon han bolozun voworel` |
 | **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **o** ≈ one (lock that pick) | `zahevam gon buzazon`; `… hon buzazon voworel` |
@@ -366,7 +366,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *finish-line* | `evehul` | 🏁 |
 | *teamwork* | `ahevam` | 🤾 from *handball* |
@@ -375,7 +375,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -388,7 +388,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *punch* | `vabavul` |
 | *scream* | `vazomul` |
 
-#### English → Agazan {#intermediate-english-to-agazan}
+#### English → Egabon {#intermediate-english-to-egabon}
 
 **1.** *Uzazon adds the medal.*
 
@@ -438,7 +438,7 @@ z-Olozun | v-run | [th-because | b-medal] | th-not
 z-Uzazon | v-scream | th-MEMORY | th-REPORTED | th-or-exactly-one
 :::
 
-#### Agazan → English {#intermediate-agazan-to-english}
+#### Egabon → English {#intermediate-egabon-to-english}
 
 **1.** `zolozun doderal von.`
 

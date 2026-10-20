@@ -1,7 +1,7 @@
 # Comparatives, superlatives, and equatives
 <a id="comparatives-page"></a>
 
-English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in **order** on that quality. *As … as* says they sit at the **same height**. *Both are challenging* only says **each has** the quality; it does not say who ranks higher or whether they match. Agazan writes the first two with a rank join from [joins](joins.md#rank-joins) followed by the shared adjective, and the third with an ordinary *and*-list.
+English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in **order** on that quality. *As … as* says they sit at the **same height**. *Both are challenging* only says **each has** the quality; it does not say who ranks higher or whether they match. Egabon writes the first two with a rank join from [joins](joins.md#rank-joins) followed by the shared adjective, and the third with an ordinary *and*-list.
 
 ## Beginner {#beginner}
 <a id="overview"></a>
@@ -82,7 +82,7 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 **Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zuzazon zolozun zal gumahom`): each has the quality. It does not rank them or say they match. Use **`oe`** only for *as … as*.
 
 <!-- cheat-sheet: roles-comparing -->
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | Rank **`e`** (`zel`) | rank on a shared quality | *more … than* / *the …-est* | **`e`** ≈ order |
 | Equality **`oe`** (`zoel` / `zoem`) | same height on the quality | *as … as* / *about as … as* | **`oe`** ≈ one + order (one shared rank) |
@@ -95,7 +95,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *slow* | `azuzom` | 🐌 from *snail* |
 | *agility* | `evevem` | 🏑 from *field hockey* |
@@ -104,7 +104,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -114,7 +114,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *angry* | `onemul` |
 | *sleepy* | `ozumol` |
 
-#### English → Agazan {#beginner-english-to-agazan}
+#### English → Egabon {#beginner-english-to-egabon}
 
 **1.** *Uzazon is more agile than Olozun.*
 
@@ -164,7 +164,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 [z-Uzazon | z-rank/more | g-angry]
 :::
 
-#### Agazan → English {#beginner-agazan-to-english}
+#### Egabon → English {#beginner-egabon-to-english}
 
 **1.** `zehalon zel gevevem.`
 
@@ -256,7 +256,7 @@ The first item before **`zel`** ranks higher.
 Beginner already used two names plus **`zel`** (*more … than*) and one name (*the …-est*). The same shared-scale pattern also uses reverse rank **`ue`** (*less … than* / *the least*) and **zero** names.
 
 <!-- cheat-sheet: roles-comparing -->
-| Agazan | Use | English | Cue |
+| Egabon | Use | English | Cue |
 |---------|-----|---------|-----|
 | **Multi (2+)** + shared scale under **`e` / `ue`** | comparative ladder | earlier above later (`e`); later above earlier under **`ue`** | **`e`** ≈ order; **`u`** ≈ undo |
 | **Single-item (1)** + shared scale under **`e` / `ue`** | superlative | *the …-est* / *the least …* under **`ue`** | one name is the extreme |
@@ -348,7 +348,7 @@ When English would say *more cats than dogs*, you rank **how many**, not a quali
 >
 > "There are as many cats as dogs."
 
-The noun decides whether English says *many* or *much*: cats are counted, tea is measured. Agazan uses the same **`gral`** for both.
+The noun decides whether English says *many* or *much*: cats are counted, tea is measured. Egabon uses the same **`gral`** for both.
 
 Open **`gram`** ranks by a **rough impression** instead of a count: *it looks like more cats than dogs*. Use **`gral`** when you counted or measured, and **`gram`** when you are going by how it seems.
 
@@ -475,7 +475,7 @@ A [hook](hooks.md) and its `/b/` on the ranked item go right before the bar, the
 > "This book is heavier than planned."
 
 <!-- cheat-sheet: roles-comparing -->
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | name + bar + **`zel`** | above the bar | *more than planned* / *later than planned* |
 | name + bar + **`zuel`** | below the bar | *less than planned* / *earlier than planned* |
@@ -492,14 +492,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *lift* | `vulevol` | 🏋️: its abstract is *exertion* |
 | *arrival* | `vevurol` | 🛬 |
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -512,7 +512,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *doughnut* | `ododol` |
 | *sleep* | `vuzevol` |
 
-#### English → Agazan {#intermediate-english-to-agazan}
+#### English → Egabon {#intermediate-english-to-egabon}
 
 **1.** *Uzazon is less heavy than Olozun.*
 
@@ -562,7 +562,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-Ehalon | th-plan-itinerary | z-rank/more | g-heavy]
 :::
 
-#### Agazan → English {#intermediate-agazan-to-english}
+#### Egabon → English {#intermediate-egabon-to-english}
 
 **1.** `zolozun zel wredul garalom.`
 
@@ -800,7 +800,7 @@ Only these stances set a value. A [cause or condition pole](causation.md), [MAY]
 
 ### Vague amounts (*many* / *few*) {#vague-amounts}
 
-English *many*, *few*, *often*, and *late* rank against an unstated baseline, and *too much*, *too late*, and *as fast as possible* against an unstated need or limit. Agazan always names the bar: put it in the fence and rank on [amount](#amount-scale), the [frequency scale](#frequency-scale), or the [time scale](#time-scale).
+English *many*, *few*, *often*, and *late* rank against an unstated baseline, and *too much*, *too late*, and *as fast as possible* against an unstated need or limit. Egabon always names the bar: put it in the fence and rank on [amount](#amount-scale), the [frequency scale](#frequency-scale), or the [time scale](#time-scale).
 
 > `zegazolx thobam zel gral.`
 >
@@ -836,7 +836,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *artistry* | `obewom` | 🖌️ from *paintbrush* |
 | *showmanship* | `ahodom` | 🌭 from *hotdog* |
@@ -845,7 +845,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -859,7 +859,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *trumpet* | `edarol` |
 | *sing* | `vezeyol` |
 
-#### English → Agazan {#advanced-english-to-agazan}
+#### English → Egabon {#advanced-english-to-egabon}
 
 **1.** *Uzazon sings better than usual.*
 
@@ -893,7 +893,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 [z-trumpet-x | th-PATTERN | z-rank/more | g-amount]
 :::
 
-#### Agazan → English {#advanced-agazan-to-english}
+#### Egabon → English {#advanced-egabon-to-english}
 
 **1.** `zolozun thahom zel gezeyol.`
 

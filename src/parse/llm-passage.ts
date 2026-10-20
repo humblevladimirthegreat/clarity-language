@@ -1,5 +1,5 @@
 /**
- * The translation prompt for a passage of raw Agazan: parse it for constructions, gloss each
+ * The translation prompt for a passage of raw Egabon: parse it for constructions, gloss each
  * input, and hand both to [llm-prompt.ts](./llm-prompt.ts). Shared by the parse CLI and the
  * Inspect page, so neither needs node:fs.
  */

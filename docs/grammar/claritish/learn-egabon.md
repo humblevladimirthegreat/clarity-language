@@ -1,4 +1,4 @@
-# Learn the full language {#learn-agazan}
+# Learn the full language {#learn-egabon}
 
 ## What you can say now {#recap}
 
@@ -15,7 +15,7 @@ With a handful of drop-ins, your English now says:
 
 ## These were never add-ons {#never-add-ons}
 
-Every drop-in you learned is a real Agazan word, spelled the same way. In the full language they sit inside sentences built for them, and they stack: one sentence can carry a tone, a channel, a try, and a sake at once.
+Every drop-in you learned is a real Egabon word, spelled the same way. In the full language they sit inside sentences built for them, and they stack: one sentence can carry a tone, a channel, a try, and a sake at once.
 
 > `;zolozun thodom hudur vezeyol thozothar.`
 >
@@ -25,10 +25,10 @@ Every drop-in you learned is a real Agazan word, spelled the same way. In the fu
 
 ## What Claritish can't do {#limits}
 
-In English, these distinctions show up only when you remember to add them. Most of the time you won't, and the old shortcuts come back: the guess that sounds like a fact, the rumor that sounds like a sighting, the one act that becomes a person's nature. Agazan is built around these distinctions, so they are there every time you speak, write, or think in it.
+In English, these distinctions show up only when you remember to add them. Most of the time you won't, and the old shortcuts come back: the guess that sounds like a fact, the rumor that sounds like a sighting, the one act that becomes a person's nature. Egabon is built around these distinctions, so they are there every time you speak, write, or think in it.
 
-## Start learning Agazan {#start}
+## Start learning Egabon {#start}
 
-**[Start learning Agazan →](../introduction.md#how-to-learn)**
+**[Start learning Egabon →](../introduction.md#how-to-learn)**
 
 <!-- Closing page of the Claritish track: the only Claritish page that links into the grammar (docs/meta/grammar-docs.md#claritish-track). -->

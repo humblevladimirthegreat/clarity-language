@@ -12,8 +12,8 @@ export type PracticeItemType = "en-ag" | "ag-en" | "pick" | "fix" | "changes";
 
 /** H4 titles in template order. */
 export const PRACTICE_H4: readonly { type: PracticeItemType; title: string }[] = [
-  { type: "en-ag", title: "English → Agazan" },
-  { type: "ag-en", title: "Agazan → English" },
+  { type: "en-ag", title: "English → Egabon" },
+  { type: "ag-en", title: "Egabon → English" },
   { type: "pick", title: "Pick one" },
   { type: "fix", title: "Fix it" },
   { type: "changes", title: "What changes" },
@@ -32,7 +32,7 @@ export type PracticeSpan = { text: string; index: number; marker?: string };
  * `speech`: a 🔊 pronunciation row under a number answer ([number-speech-docs.ts](number-speech-docs.ts)).
  * `rule`: the **Rule:** link that ends a level review answer.
  */
-export type SpoilerLineKind = "agazan" | "also" | "english" | "speech" | "rule" | "text";
+export type SpoilerLineKind = "egabon" | "also" | "english" | "speech" | "rule" | "text";
 export type SpoilerLine = { text: string; index: number; kind: SpoilerLineKind };
 
 export type PracticeItem = {
@@ -167,7 +167,7 @@ function readItem(
     if (!trimmed) continue;
     const index = starts[i]! + lines[i]!.indexOf(trimmed);
     const kind = spoilerKind(trimmed);
-    spoiler.push({ text: kind === "agazan" ? trimmed.slice(1, -1) : trimmed, index, kind });
+    spoiler.push({ text: kind === "egabon" ? trimmed.slice(1, -1) : trimmed, index, kind });
     if (kind === "also") alsoCorrect.push(...spans(trimmed, index));
   }
   return {
@@ -184,7 +184,7 @@ function readItem(
 }
 
 function spoilerKind(trimmed: string): SpoilerLineKind {
-  if (/^`[^`]+`$/.test(trimmed)) return "agazan";
+  if (/^`[^`]+`$/.test(trimmed)) return "egabon";
   if (ALSO_RE.test(trimmed)) return "also";
   if (RULE_RE.test(trimmed)) return "rule";
   if (trimmed.startsWith(SPEECH_MARK)) return "speech";

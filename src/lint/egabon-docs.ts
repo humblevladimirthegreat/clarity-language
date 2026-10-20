@@ -17,18 +17,18 @@ import { parseWord, WordParseError } from "../parse/word.js";
 import { traceFragment, traceTemplate } from "./template-trace.js";
 import { fixPromptRanges } from "./practice-items.js";
 import { forEachMarkdownCodeSpan, forEachMarkdownCodeToken, type MarkdownCodeSpan } from "../retie/tokens.js";
-import { isAgazanRootShape } from "../root-shape.js";
+import { isEgabonRootShape } from "../root-shape.js";
 
-export type AgazanLintKind = "parse" | "unknown-root";
+export type EgabonLintKind = "parse" | "unknown-root";
 
-export type AgazanLintIssue = {
+export type EgabonLintIssue = {
   token: string;
   index: number;
-  kind: AgazanLintKind;
+  kind: EgabonLintKind;
   detail: string;
 };
 
-/** Letters, digits, and morph glyphs that can appear in a spelled Agazan word. */
+/** Letters, digits, and morph glyphs that can appear in a spelled Egabon word. */
 const WORD_CHAR_RE = /^[aeouhtwdjybgzmnvlrx0-9+\-#_.,=@~^%±[\]{}()]+$/;
 
 const TEACHING_GLOSS_RE = /^(?:th|[zdbvgwhxy])-(?:[a-z@]+$|[<[{(])/;
@@ -36,7 +36,7 @@ const TEACHING_GLOSS_RE = /^(?:th|[zdbvgwhxy])-(?:[a-z@]+$|[<[{(])/;
 /** Mid-word x family fragments (`x`, `xa`, `ax`), not full words. */
 const X_FRAGMENT_RE = /^[aeou]?x[aeou]?$/;
 
-/** English that can appear in grammar backticks and also look Agazan-shaped. */
+/** English that can appear in grammar backticks and also look Egabon-shaped. */
 export const ENGLISH_IN_CODE = new Set([
   "are",
   "bare",
@@ -84,7 +84,7 @@ function prefixedBareRoot(core: string): string | null {
   const posLen = core.startsWith("th") ? 2 : POS.includes(core[0]!) ? 1 : 0;
   if (posLen === 0) return null;
   const rest = core.slice(posLen);
-  if (isAgazanRootShape(rest) && rest.length >= 3) return rest;
+  if (isEgabonRootShape(rest) && rest.length >= 3) return rest;
   return null;
 }
 
@@ -93,14 +93,14 @@ function prefixedBareRoot(core: string): string | null {
  * English in backticks (`and`, `would`, `dog`) does not match.
  */
 /** `j` standing where `y` would make a native word (`jal`, `agaja`). Payloads `<…>` keep their own spelling. */
-function nativeJIsAgazan(core: string): boolean {
+function nativeJIsEgabon(core: string): boolean {
   if (!withoutForeignPayloads(core).includes("j")) return false;
   const asY = core.replace(/<[^>]*>|j/g, (m) => (m === "j" ? "y" : m));
   try {
     parseWord(asY);
     return true;
   } catch {
-    return looksLikeFullSpelledWord(asY) || isAgazanRootShape(asY);
+    return looksLikeFullSpelledWord(asY) || isEgabonRootShape(asY);
   }
 }
 
@@ -114,7 +114,7 @@ function looksLikeFullSpelledWord(core: string): boolean {
 }
 
 /** Full-word candidate: skip fragments, IPA, slash PoS, teaching glosses, placeholders. */
-export function isAgazanLintCandidate(core: string): boolean {
+export function isEgabonLintCandidate(core: string): boolean {
   if (!core) return false;
   if (core.includes("/")) return false;
   if (core.startsWith("-")) return false;
@@ -131,20 +131,20 @@ export function isAgazanLintCandidate(core: string): boolean {
   return true;
 }
 
-export function lintAgazanToken(
+export function lintEgabonToken(
   core: string,
   tables: ClassifyTables,
   known: ReadonlySet<string> = knownLexiconRoots(tables),
   resumeStems: ReadonlySet<string> = new Set(),
-): { kind: AgazanLintKind; detail: string } | null {
-  if (!isAgazanLintCandidate(core)) {
+): { kind: EgabonLintKind; detail: string } | null {
+  if (!isEgabonLintCandidate(core)) {
     return null;
   }
-  if (nativeJIsAgazan(core)) {
+  if (nativeJIsEgabon(core)) {
     return { kind: "parse", detail: "`j` is not a letter; write `y`" };
   }
 
-  if (isAgazanRootShape(core) && core.length >= 3) {
+  if (isEgabonRootShape(core) && core.length >= 3) {
     if (!known.has(core)) {
       return { kind: "unknown-root", detail: `not in the lexicon: ${core}` };
     }
@@ -184,9 +184,9 @@ export function lintAgazanToken(
   return null;
 }
 
-export function lintAgazanMarkdown(text: string, tables: ClassifyTables): AgazanLintIssue[] {
+export function lintEgabonMarkdown(text: string, tables: ClassifyTables): EgabonLintIssue[] {
   const known = knownLexiconRoots(tables);
-  const issues: AgazanLintIssue[] = [];
+  const issues: EgabonLintIssue[] = [];
 
   let currentBlock = -1;
   let resumeStems = new Set<string>();
@@ -200,7 +200,7 @@ export function lintAgazanMarkdown(text: string, tables: ClassifyTables): Agazan
     if (!core) {
       return;
     }
-    const hit = lintAgazanToken(core, tables, known, resumeStems);
+    const hit = lintEgabonToken(core, tables, known, resumeStems);
     collectResumeStems(core, known, resumeStems);
     if (!hit) {
       return;
@@ -220,7 +220,7 @@ export function lintAgazanMarkdown(text: string, tables: ClassifyTables): Agazan
     for (const chunk of match[1]!.matchAll(/\S+/g)) {
       const { prefix, core } = peelLintChunk(decodeEntities(chunk[0]));
       if (!core) continue;
-      const hit = lintAgazanToken(core, tables, known, htmlStems);
+      const hit = lintEgabonToken(core, tables, known, htmlStems);
       collectResumeStems(core, known, htmlStems);
       if (hit) issues.push({ token: core, index: base + chunk.index! + prefix.length, ...hit });
     }
@@ -235,7 +235,7 @@ function hasOverlay(word: Parameters<typeof classify>[0], tables: ClassifyTables
 
 /** Whole stems (`owogala` of `vowogalal`) a later **-r** in the block can resume ([pronouns.md](docs/grammar/pronouns.md#resume-r)). */
 function collectResumeStems(core: string, known: ReadonlySet<string>, into: Set<string>): void {
-  if (!isAgazanLintCandidate(core)) return;
+  if (!isEgabonLintCandidate(core)) return;
   let word;
   try {
     word = parseWord(core);
@@ -247,25 +247,25 @@ function collectResumeStems(core: string, known: ReadonlySet<string>, into: Set<
 }
 
 /**
- * Whole-span checks ([grammar-docs.md § Marking Agazan](../../docs/meta/grammar-docs.md#marking-agazan)).
+ * Whole-span checks ([grammar-docs.md § Marking Egabon](../../docs/meta/grammar-docs.md#marking-egabon)).
  *
  * Every code span gets exactly one class, and no class skips silently:
- * - **sentence**: ends in `.` / `?` / `!` and starts with an Agazan word → must parse as a sentence.
- * - **phrase**: two or more words, all Agazan-shaped, no final mark → must parse (or be marked a fragment).
+ * - **sentence**: ends in `.` / `?` / `!` and starts with an Egabon word → must parse as a sentence.
+ * - **phrase**: two or more words, all Egabon-shaped, no final mark → must parse (or be marked a fragment).
  * - **template**: has `…` / `...` or an all-caps placeholder (`A am B`, `DIR th ANCHOR`) → slots are filled
  *   with sample words and it must parse ([template-trace.ts](template-trace.ts)).
- * - **word**: one word → the per-word lint ({@link lintAgazanMarkdown}) covers it.
- * - **english**: no Agazan-shaped word at all (placeholders alone, like `ROOT` or `NUM`, count as English).
+ * - **word**: one word → the per-word lint ({@link lintEgabonMarkdown}) covers it.
+ * - **english**: no Egabon-shaped word at all (placeholders alone, like `ROOT` or `NUM`, count as English).
  * - **marked-fragment**: `<!-- lint: fragment -->` right before the span → parsed with context supplied
  *   around it. `<!-- lint: skip -->` is not allowed.
  * - **marked-error**: `<!-- lint: error -->` right before the wrong form in a **Fix it** prompt
  *   ([practice-items.ts](practice-items.ts)) → need not parse, and its constructions are not used.
  *   Anywhere else the marker fails.
- * Anything else (Agazan and non-Agazan words mixed, no final mark) is **unclassified** and fails.
- * Fenced blocks need an info string: `agazan` (each line is checked like a span) or `text` (notation,
- * not Agazan: a line that reads as an Agazan phrase or sentence fails).
+ * Anything else (Egabon and non-Egabon words mixed, no final mark) is **unclassified** and fails.
+ * Fenced blocks need an info string: `egabon` (each line is checked like a span) or `text` (notation,
+ * not Egabon: a line that reads as an Egabon phrase or sentence fails).
  */
-export type AgazanSpanClass =
+export type EgabonSpanClass =
   | "sentence"
   | "phrase"
   | "template"
@@ -275,26 +275,26 @@ export type AgazanSpanClass =
   | "marked-error"
   | "text-fence";
 
-export type AgazanSpanIssueKind =
+export type EgabonSpanIssueKind =
   | "sentence"
   | "phrase"
   | "template"
   | "fragment"
   | "unclassified"
   | "unmarked-fence"
-  | "agazan-in-text-fence"
+  | "egabon-in-text-fence"
   | "bad-marker";
 
-export type AgazanSpanIssue = {
+export type EgabonSpanIssue = {
   text: string;
   index: number;
-  kind: AgazanSpanIssueKind;
+  kind: EgabonSpanIssueKind;
   detail: string;
 };
 
-export type AgazanSpanStats = Record<AgazanSpanClass, number>;
+export type EgabonSpanStats = Record<EgabonSpanClass, number>;
 
-export function emptySpanStats(): AgazanSpanStats {
+export function emptySpanStats(): EgabonSpanStats {
   return {
     sentence: 0,
     phrase: 0,
@@ -320,21 +320,21 @@ function spanWords(text: string): string[] {
     .filter((core) => core && !SPAN_NEUTRAL.has(core));
 }
 
-/** Class of one span (or one line of an `agazan` fence), before parsing. */
-export function classifyAgazanSpan(text: string): AgazanSpanClass | "unclassified" {
+/** Class of one span (or one line of an `egabon` fence), before parsing. */
+export function classifyEgabonSpan(text: string): EgabonSpanClass | "unclassified" {
   const trimmed = text.trim();
   const words = spanWords(trimmed);
   if (words.length === 0) return "english";
-  const agazan = words.filter(isAgazanLintCandidate);
-  if (/[.?!]$/.test(trimmed) && isAgazanLintCandidate(words[0]!)) return "sentence";
+  const egabon = words.filter(isEgabonLintCandidate);
+  if (/[.?!]$/.test(trimmed) && isEgabonLintCandidate(words[0]!)) return "sentence";
   if (/…|\.\.\./.test(trimmed) || words.some((w) => PLACEHOLDER_RE.test(w))) {
-    // Placeholders alone (`ROOT`, `NUM`, `…`) name a slot, with no Agazan to trace.
+    // Placeholders alone (`ROOT`, `NUM`, `…`) name a slot, with no Egabon to trace.
     const rest = trimmed.replace(/…|\.\.\.|[A-Z][A-Z0-9₀-₉]*/g, "");
     return /[a-z]/.test(rest) ? "template" : "english";
   }
-  if (agazan.length === 0) return "english";
+  if (egabon.length === 0) return "english";
   if (words.length === 1) return "word";
-  if (agazan.length === words.length) return "phrase";
+  if (egabon.length === words.length) return "phrase";
   return "unclassified";
 }
 
@@ -355,17 +355,17 @@ function lintSpanText(
   text: string,
   index: number,
   tables: ClassifyTables,
-  stats: AgazanSpanStats,
-  issues: AgazanSpanIssue[],
+  stats: EgabonSpanStats,
+  issues: EgabonSpanIssue[],
   used?: ConstructionSink,
 ): void {
-  const cls = classifyAgazanSpan(text);
+  const cls = classifyEgabonSpan(text);
   if (cls === "unclassified") {
     issues.push({
       text,
       index,
       kind: "unclassified",
-      detail: "mixes Agazan and other words; fix it, or mark it <!-- lint: fragment -->",
+      detail: "mixes Egabon and other words; fix it, or mark it <!-- lint: fragment -->",
     });
     return;
   }
@@ -395,7 +395,7 @@ function lintTraced(
   index: number,
   kind: "template" | "fragment",
   trace: () => string[],
-  issues: AgazanSpanIssue[],
+  issues: EgabonSpanIssue[],
   used?: ConstructionSink,
 ): void {
   try {
@@ -414,7 +414,7 @@ export function decodeEntities(text: string): string {
 /** A single-word span exercises its word-level and slot constructions (`word.*`, `token.*`). */
 function addWordSpanConstructions(text: string, index: number, tables: ClassifyTables, used: ConstructionSink): void {
   const { core } = peelLintChunk(text.trim());
-  if (!isAgazanLintCandidate(core)) return;
+  if (!isEgabonLintCandidate(core)) return;
   try {
     const word = classify(parseWord(core), tables);
     used(`token.${classifyTokenBranch(word).branch}`, index);
@@ -424,20 +424,20 @@ function addWordSpanConstructions(text: string, index: number, tables: ClassifyT
   }
 }
 
-/** How {@link walkAgazanSpans} hands out a page's code spans. */
-export type AgazanSpanVisitor = {
-  /** Span text the lint checks as Agazan: inline spans, `agazan` fence lines, and `<code>` bodies. */
+/** How {@link walkEgabonSpans} hands out a page's code spans. */
+export type EgabonSpanVisitor = {
+  /** Span text the lint checks as Egabon: inline spans, `egabon` fence lines, and `<code>` bodies. */
   text: (text: string, index: number) => void;
   /** A span preceded by a `<!-- lint: … -->` marker (`marker` is the text after `lint:`, or undefined if malformed). */
   marked?: (span: MarkdownCodeSpan, marker: string | undefined) => void;
-  /** A fence with a non-`agazan` info string. */
+  /** A fence with a non-`egabon` info string. */
   otherFence?: (span: MarkdownCodeSpan) => void;
   /** A fence with no info string. */
   unmarkedFence?: (span: MarkdownCodeSpan) => void;
 };
 
 /** Walk a page's code spans the way the docs lint reads them. */
-export function walkAgazanSpans(text: string, visit: AgazanSpanVisitor): void {
+export function walkEgabonSpans(text: string, visit: EgabonSpanVisitor): void {
   forEachMarkdownCodeSpan(text, (span) => {
     if (span.marker?.startsWith("lint:")) {
       visit.marked?.(span, LINT_MARKER_RE.exec(span.marker)?.[1]);
@@ -445,7 +445,7 @@ export function walkAgazanSpans(text: string, visit: AgazanSpanVisitor): void {
     }
     if (span.kind === "fence") {
       const info = span.info.split(/\s+/)[0] ?? "";
-      if (info === "agazan") {
+      if (info === "egabon") {
         let offset = 0;
         for (const line of span.text.split("\n")) {
           if (line.trim()) visit.text(line, span.index + offset);
@@ -471,16 +471,16 @@ export function walkAgazanSpans(text: string, visit: AgazanSpanVisitor): void {
  * Lint code spans. When `used` is given, it receives the construction IDs
  * ([constructions.ts](../parse/constructions.ts)) the page's examples exercise.
  */
-export function lintAgazanSpans(
+export function lintEgabonSpans(
   text: string,
   tables: ClassifyTables,
-  stats: AgazanSpanStats = emptySpanStats(),
+  stats: EgabonSpanStats = emptySpanStats(),
   used?: ConstructionSink,
-): AgazanSpanIssue[] {
-  const issues: AgazanSpanIssue[] = [];
+): EgabonSpanIssue[] {
+  const issues: EgabonSpanIssue[] = [];
   let fixPrompts: { start: number; end: number }[] | undefined;
 
-  walkAgazanSpans(text, {
+  walkEgabonSpans(text, {
     text: (body, index) => lintSpanText(body, index, tables, stats, issues, used),
     marked: (span, marker) => {
       if (marker === "fragment") {
@@ -513,13 +513,13 @@ export function lintAgazanSpans(
       stats["text-fence"] += 1;
       let offset = 0;
       for (const line of span.text.split("\n")) {
-        const cls = line.trim() ? classifyAgazanSpan(line) : "english";
+        const cls = line.trim() ? classifyEgabonSpan(line) : "english";
         if (cls === "sentence" || cls === "phrase") {
           issues.push({
             text: line,
             index: span.index + offset,
-            kind: "agazan-in-text-fence",
-            detail: "reads as Agazan; put it in an ```agazan fence",
+            kind: "egabon-in-text-fence",
+            detail: "reads as Egabon; put it in an ```egabon fence",
           });
         }
         offset += line.length + 1;
@@ -530,7 +530,7 @@ export function lintAgazanSpans(
         text: span.text.split("\n")[0] ?? "",
         index: span.index,
         kind: "unmarked-fence",
-        detail: "fenced block needs an info string: ```agazan (checked) or ```text (not Agazan)",
+        detail: "fenced block needs an info string: ```egabon (checked) or ```text (not Egabon)",
       });
     },
   });
@@ -547,11 +547,11 @@ export type BareRootIssue = { text: string; index: number; root: string };
  */
 export function lintBareRoots(text: string, tables: ClassifyTables): BareRootIssue[] {
   const issues: BareRootIssue[] = [];
-  walkAgazanSpans(text, {
+  walkEgabonSpans(text, {
     text: (span, index) => {
       const m = /^(?:th|[zdbvgwhxy])?([aeou][a-z]+)$/.exec(span.trim());
       const root = m?.[1];
-      if (!root || !isAgazanRootShape(root)) return;
+      if (!root || !isEgabonRootShape(root)) return;
       if (tables.published.has(root) || tables.compounds.has(root)) return;
       issues.push({ text: span.trim(), index, root });
     },

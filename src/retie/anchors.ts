@@ -1,5 +1,5 @@
 /**
- * A heading that spells Agazan (`### Ability (`egera`)`) gets a slug from that spelling, so a
+ * A heading that spells Egabon (`### Ability (`egera`)`) gets a slug from that spelling, so a
  * retie renames its id. Links to the old id, on any page, and overlay `anchor` cells follow.
  */
 import { dirname, resolve } from "node:path";

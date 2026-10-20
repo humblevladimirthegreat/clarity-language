@@ -1,6 +1,6 @@
 # Pronouns
 
-English *he*, *she*, *it*, and *they* point back to someone or something already named. You already write the endings **-l** / **-m** / **-n** on a [citation](word-endings.md) and on content words. Agazan points back with the fourth ending, **-r**: write the role letter for the slot the word fills in this sentence (subject, object, and so on), then the earlier word’s whole stem, then **-r**. For someone in a recent sentence, a shorter **role pointer** names them by the part they played instead.
+English *he*, *she*, *it*, and *they* point back to someone or something already named. You already write the endings **-l** / **-m** / **-n** on a [citation](word-endings.md) and on content words. Egabon points back with the fourth ending, **-r**: write the role letter for the slot the word fills in this sentence (subject, object, and so on), then the earlier word’s whole stem, then **-r**. For someone in a recent sentence, a shorter **role pointer** names them by the part they played instead.
 
 ## Beginner {#beginner}
 
@@ -15,7 +15,7 @@ After you have already named a person or thing, the next sentence can point back
 >
 > "Uzazon walks. Uzazon sits."
 
-**Compare with:** English often uses *the* for a kind already in the conversation (*A dog walks. **The** dog sits.*). Agazan uses **-r** for that job, not a separate article.
+**Compare with:** English often uses *the* for a kind already in the conversation (*A dog walks. **The** dog sits.*). Egabon uses **-r** for that job, not a separate article.
 
 > `zodozol voworel. zodozor vehuhol.`
 >
@@ -216,7 +216,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 > "Someone sleeps."
 
 <!-- cheat-sheet: people-pointing -->
-| Agazan | Use | English | Same root as | Cue |
+| Egabon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`amun`** | speaker in this conversation (`zamun` in subject slot) | *I*, *me* | `amul` *microphone* | 🎤: the live voice of the person talking |
 | **`ehon`** | listener in this conversation (`zehon` / `dehon` in clause) | *you* | `ehol` *headphones* | 🎧: the one receiving the sound |
@@ -228,7 +228,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 
 ### Generic pronoun {#generic-pronoun}
 
-English *one* and generic *you* (*one never knows*, *you feel awful when that happens*) say something about people in general, not about the person listening. Agazan gives that its own pronoun: **`obe`** *person* with **-n**, in `/z/`, `/d/`, or `/b/`. It means any person, as a rule, with exceptions allowed. It claims nothing about a particular individual (that is **`una`**) and nothing about the listener (that is **`eho`**), so a speaker has to choose between reporting their own experience and making a general claim. (cue: 🧑 is the emoji for a person in general)
+English *one* and generic *you* (*one never knows*, *you feel awful when that happens*) say something about people in general, not about the person listening. Egabon gives that its own pronoun: **`obe`** *person* with **-n**, in `/z/`, `/d/`, or `/b/`. It means any person, as a rule, with exceptions allowed. It claims nothing about a particular individual (that is **`una`**) and nothing about the listener (that is **`eho`**), so a speaker has to choose between reporting their own experience and making a general claim. (cue: 🧑 is the emoji for a person in general)
 
 > `zoben vuzevol.`
 >
@@ -246,7 +246,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *cook* | `vugayol` | 🧑‍🍳 from *cook*, the person at the stove |
 | *pour* | `vabovul` | 🫗 |
@@ -260,7 +260,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -271,7 +271,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *scream* | `vazomul` |
 | *tell* | `vezeyel` |
 
-#### English → Agazan {#beginner-english-to-agazan}
+#### English → Egabon {#beginner-english-to-egabon}
 
 **1.** *Uzazon pours. They cook.*
 
@@ -327,7 +327,7 @@ z-Uzazon | d-cookie | v-see . z-Olozun | d-←patient.same.new | v-find
 z-interlocutors | v-cook
 :::
 
-#### Agazan → English {#beginner-agazan-to-english}
+#### Egabon → English {#beginner-egabon-to-english}
 
 **1.** `zehalon vugayol. zolozun vabovul. zaxor vazomul.`
 
@@ -417,7 +417,7 @@ Generic *you* is **`oben`**; **`ehon`** is always the person actually listening.
 
 Beginner used whole-stem **-r** in the same slot as the earlier word (*he sits*). The resume keeps the earlier word’s role letter, and the English for it depends on that slot:
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `/z/` … `-r` after `/z/` | same subject again | *he / she / it / they*; *that one* |
 | `/d/` … `-r` after `/d/` | same object again | *him / her / it / them*; *that one* |
@@ -479,7 +479,7 @@ Sometimes you still mean that person or thing, but you need a **different** slot
 >
 > "Uzazon sits. Olozun does the same with Uzazon."
 
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | noun antecedent, `/v/` … `-r` | the same action again, now involving that entity | *do the same to / with it* |
 | noun antecedent, `/ɡ/` … `-r` | recast as kind | *of that kind* (not possession) |
@@ -511,7 +511,7 @@ With **-l**, **`hedal`** is strictly pairwise: every one of them does it to ever
 
 ### Addressing several people
 
-English *you* does not say whether you are talking to one person or several. Agazan does: one addressee is **`eho`**, and the listener root plus associative **-x** (**`ehonx`**) names everyone this turn addresses. That is everyone the turn’s calls named, plus anyone you were already addressing. Inclusive *shall we* is still **`aha`**, and soft **`zaham`** hedges whether you really share the act.
+English *you* does not say whether you are talking to one person or several. Egabon does: one addressee is **`eho`**, and the listener root plus associative **-x** (**`ehonx`**) names everyone this turn addresses. That is everyone the turn’s calls named, plus anyone you were already addressing. Inclusive *shall we* is still **`aha`**, and soft **`zaham`** hedges whether you really share the act.
 
 > `zehonx vehuhol.`
 >
@@ -526,7 +526,7 @@ English *you* does not say whether you are talking to one person or several. Aga
 English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells E*. A **tag** is that label. You choose it, and it stays on the same referent however many others come and go. Write the role letter, **`w`**, a tag vowel, and an ending. The four vowels are four tags, named by the vowel's [letter name](phonology.md#letter-names): A, E, O, U. Roots start with a vowel, so a consonant right after the role letter is always a marker: `r` starts a [number word](numbers.md), and `w` starts a tag. (cue: **w** ≈ *we call it*: the label you and the listener agree on)
 
 <!-- cheat-sheet: people-pointing -->
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `zodozol zwal` | a phrase, then tag + **-l** in the same role: assign | *a dog, call it A* |
 | `zwal` | tag + **-l** with no phrase before it | *someone A*: a new referent with no name |
@@ -578,7 +578,7 @@ A tag lasts until it is assigned again or the conversation ends with a [goodbye]
 A stacked vowel names two tags together. There are six stacks, one for each pair of tags: `zwaer` is *A and E*, `zwaor` *A and O*, `zwoer` *O and E*, `zwuar` *U and A*, `zwuor` *U and O*, and `zwuer` *U and E*. Each pair has this one spelling, whichever tag you name first.
 
 <!-- cheat-sheet: people-pointing -->
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `zwaer` | pair + **-r**: both, together | *A and E* |
 | `zwaem` | pair + **-m**: their parts in the latest earlier event both took part in | *what A and E did* |
@@ -598,10 +598,10 @@ Both tags must already be assigned. A pair never assigns: to tag two things, tag
 
 ### Topic {#topic}
 
-English *now, about Uzazon…*, *speaking of dogs…*, and *so, back to Uzazon…* say what the talk is about from here on, and every later *he* or *it* follows. Agazan makes that overt as a **topic**. It is set only by an `/x/` word at the start of a sentence: `/x/`, then the thing the talk is about, then its ending. Nothing else sets one. Being named first, being the subject, and [*as for*](clause.md#adverbs-h) do not, so a listener or a tool can tell at every point what the topic is.
+English *now, about Uzazon…*, *speaking of dogs…*, and *so, back to Uzazon…* say what the talk is about from here on, and every later *he* or *it* follows. Egabon makes that overt as a **topic**. It is set only by an `/x/` word at the start of a sentence: `/x/`, then the thing the talk is about, then its ending. Nothing else sets one. Being named first, being the subject, and [*as for*](clause.md#adverbs-h) do not, so a listener or a tool can tell at every point what the topic is.
 
 <!-- cheat-sheet: people-pointing -->
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | `xuzazon` | introduce a person | *now, about Uzazon* |
 | `xodozol` | introduce a kind | *now, about a dog* |
@@ -690,7 +690,7 @@ Introduce, return, and clear each start a new **topic stretch**.
 Both set the topic. The difference is the ordinary difference between **-r** and a first mention:
 
 <!-- cheat-sheet: people-pointing -->
-| Agazan | Topic | English |
+| Egabon | Topic | English |
 |--------|-------|---------|
 | `xuzazon` | Uzazon | *now, about Uzazon* (a name picks out the same person either way) |
 | `xuzazor` | Uzazon, the one mentioned before | *back to Uzazon* |
@@ -747,7 +747,7 @@ To ask what the talk is about, ask *which topic?*: the fill-ask blank `zar`, the
 >
 > "Which topic?" / "What are we talking about?"
 
-**Compare with:** English *topic* covers several jobs, and Agazan keeps them apart. The discourse topic is `/x/`. A sentence frame is `hohagem` *as for*. `&` contrasts one phrase ([tone marks](speech-moves.md#tone-marks)). `zal` / `zem` / `zel` rank among others. Only `/x/` sets the topic.
+**Compare with:** English *topic* covers several jobs, and Egabon keeps them apart. The discourse topic is `/x/`. A sentence frame is `hohagem` *as for*. `&` contrasts one phrase ([tone marks](speech-moves.md#tone-marks)). `zal` / `zem` / `zel` rank among others. Only `/x/` sets the topic.
 
 ### Practice {#intermediate-practice}
 
@@ -757,7 +757,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *harvest* | `vegulam` | 🌾 from *grain*: bringing the crop in |
 | *red* | `erolol` | 🔴 |
@@ -768,7 +768,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -783,7 +783,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vanobol` |
 | *scream* | `vazomul` |
 
-#### English → Agazan {#intermediate-english-to-agazan}
+#### English → Egabon {#intermediate-english-to-egabon}
 
 **1.** *Olozun pours. Uzazon does too.*
 
@@ -833,7 +833,7 @@ x-Uzazon | z-TOPIC | v-harvest . z-Olozun | d-TOPIC | v-see
 [h-as-for | b-family] | z-Olozun | v-harvest
 :::
 
-#### Agazan → English {#intermediate-agazan-to-english}
+#### Egabon → English {#intermediate-egabon-to-english}
 
 **1.** `zolozun humum buzazon vabovul. zehalon humur vegulam.`
 

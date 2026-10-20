@@ -39,11 +39,11 @@ const page = (beginner: string, intermediate: string) => `# Page
 
 **Roots used here:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 ${beginner}
 
-#### English → Agazan
+#### English → Egabon
 
 ## Intermediate
 
@@ -51,11 +51,11 @@ ${beginner}
 
 **Roots used here:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 ${intermediate}
 
-#### English → Agazan
+#### English → Egabon
 `;
 
 describe("stageCheckpoints", () => {
@@ -90,7 +90,7 @@ describe("stageCheckpoints", () => {
 });
 
 function entry(root: string, group: BankGroup, line = 1): BankEntry {
-  return { root, english: root, agazan: root, group, line };
+  return { root, english: root, egabon: root, group, line };
 }
 
 function cp(anchor: string, converted: boolean, entries: BankEntry[], cast: BankEntry[] = [], review = false): Checkpoint {
@@ -107,18 +107,18 @@ describe("stageCheckpoints, converted", () => {
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *Uzazon* | \`${CLOSED.swan}n\` | 🦢 |
 | *dog* | \`${dog}l\` | 🐕 |
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *book* | \`${book}l\` |
 
-#### English → Agazan
+#### English → Egabon
 `;
   const [checkpoint] = stageCheckpoints(["a.md"], () => md, tables);
 
@@ -220,7 +220,7 @@ describe("spacingPlan", () => {
   const plan = spacingPlan(checkpoints, core, 2, (root) => `gloss ${root}`);
 
   it("introduces this checkpoint's core roots, bank order first", () => {
-    assert.deepEqual(plan.introduce.map((w) => [w.root, w.english, w.agazan]), [["n1", "n1", "n1"], ["n4", "gloss n4", "n4"]]);
+    assert.deepEqual(plan.introduce.map((w) => [w.root, w.english, w.egabon]), [["n1", "n1", "n1"], ["n4", "gloss n4", "n4"]]);
   });
 
   it("offers later core roots in path order", () => {

@@ -105,8 +105,8 @@ function countFindings(items: readonly PracticeItem[], checkpoints: number, inde
 }
 
 const LABEL: Record<PracticeItem["type"], string> = {
-  "en-ag": "English → Agazan",
-  "ag-en": "Agazan → English",
+  "en-ag": "English → Egabon",
+  "ag-en": "Egabon → English",
   pick: "Pick one",
   fix: "Fix it",
   changes: "What changes",

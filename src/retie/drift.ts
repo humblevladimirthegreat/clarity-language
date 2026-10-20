@@ -6,7 +6,7 @@ import { basename } from "node:path";
 
 import { withLexiconClosedRoots } from "../closed-roots.js";
 import { fillSelf } from "../learner-name.js";
-import { ENGLISH_IN_CODE, lintAgazanMarkdown, lintAgazanSpans } from "../lint/agazan-docs.js";
+import { ENGLISH_IN_CODE, lintEgabonMarkdown, lintEgabonSpans } from "../lint/egabon-docs.js";
 import { formatMorphGlossFinding, lintMorphGlossMarkdown } from "../lint/morph-gloss-docs.js";
 import { formatNumberSpeechFinding, lintNumberSpeechMarkdown, NUMBER_SPEECH_FILES } from "../lint/number-speech-docs.js";
 import { lintRetieFormat } from "../lint/retie-format.js";
@@ -31,7 +31,7 @@ export function rootsInUse(texts: string[]): Set<string> {
       try {
         for (const root of antecedentStemRoots(parseWord(core))) roots.add(root);
       } catch {
-        // not an Agazan word
+        // not an Egabon word
       }
     });
   }
@@ -133,10 +133,10 @@ export function lintPage(rel: string, source: string, tables: ClassifyTables): s
 function lintPageIn(rel: string, source: string, tables: ClassifyTables): string[] {
   const text = fillSelfFor(source, tables);
   const out: string[] = [];
-  for (const issue of lintAgazanMarkdown(text, tables)) {
+  for (const issue of lintEgabonMarkdown(text, tables)) {
     out.push(`${rel}:${lineNumberAt(text, issue.index)}  \`${issue.token}\`  ${issue.kind}  (${issue.detail})`);
   }
-  for (const issue of lintAgazanSpans(text, tables)) {
+  for (const issue of lintEgabonSpans(text, tables)) {
     out.push(`${rel}:${lineNumberAt(text, issue.index)}  \`${issue.text}\`  ${issue.kind}  (${issue.detail})`);
   }
   for (const finding of lintMorphGlossMarkdown(text, tables).findings) {

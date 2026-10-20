@@ -9,7 +9,7 @@ You already write one clause with [role letters](clause.md#role-letters) and sta
 ### Which person or thing (*who / that / which*)
 <a id="which-noun"></a>
 
-English can describe a noun with a whole clause that starts with *who*, *that*, or *which* (*the guard who sits*). Agazan has no such word. Write **two sentences** instead: first say the inner clause as an ordinary sentence, then use the same person or thing in the next sentence.
+English can describe a noun with a whole clause that starts with *who*, *that*, or *which* (*the guard who sits*). Egabon has no such word. Write **two sentences** instead: first say the inner clause as an ordinary sentence, then use the same person or thing in the next sentence.
 
 > `zayoyul vehuhol. zuzazon vezeyel bayoyul.`
 >
@@ -51,7 +51,7 @@ For English *whether*, change the vowel to **`o`**: **`dorl`**. The inner senten
 
 ### Because, if, although (poles) {#poles}
 
-Words like *because*, *if*, and *although* attach a dependent clause as a reason, a condition, a contrast, or a time. Agazan uses a pair for this: a **pole** word that names the link, then the stand-in **`barl`** right after it. The pole is a relation word, so **`barl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`barl`** at the very end. Only a [stance join](join-across-roles.md#stance-join-before-barl) may come between them.
+Words like *because*, *if*, and *although* attach a dependent clause as a reason, a condition, a contrast, or a time. Egabon uses a pair for this: a **pole** word that names the link, then the stand-in **`barl`** right after it. The pole is a relation word, so **`barl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`barl`** at the very end. Only a [stance join](join-across-roles.md#stance-join-before-barl) may come between them.
 
 The pole's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* describe the event itself, so they are adverbs on `/h/`.
 
@@ -66,7 +66,7 @@ A pole uses the abstract sense of its root, not the everyday object, so it ends 
 You can also say:
 
 <!-- cheat-sheet: linking-clauses -->
-| Agazan | English | Same root as | Cue |
+| Egabon | English | Same root as | Cue |
 |--------|---------|--------------|-----|
 | **`thavem barl`** | *because* | `avel` *wall* | 🧱: the cause is what the result sits on |
 | **`thoyem barl`** | *if* | `oyel` *door* | 🚪: walk through only if it opens |
@@ -80,7 +80,7 @@ You can also say:
 | **`hanom barl`** | *after* | `anol` *sand* | ⌛: the sand has already run through |
 | **`hogom barl`** | *so that* / *in order to* | `ogol` *goal* | 🥅: you act so the shot counts |
 
-A command or request makes no claim, so an *if* pole on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Agazan keeps the usual order, with **`barl`** last.
+A command or request makes no claim, so an *if* pole on it limits the instruction instead: do this only in that case. English often puts *if* first (*if X, do Y*); Egabon keeps the usual order, with **`barl`** last.
 
 > `yel voworel thoyem barl zolozun vehuhol.`
 >
@@ -140,7 +140,7 @@ For *as soon as* / *once*, keep **`hanom`** *after* and put the haste word **`we
 
 For *since* (from a starting point up to now), see [*from* on a time](hooks.md#since). *Since* meaning *because* is **`thavem barl`**.
 
-Agazan verbs have no past or future form. *Before*, *after*, *while*, and *until* place this event in time relative to the next sentence. A **result** that is still left over, and a **state that used to hold**, are stance words on `/th/`, not times ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
+Egabon verbs have no past or future form. *Before*, *after*, *while*, and *until* place this event in time relative to the next sentence. A **result** that is still left over, and a **state that used to hold**, are stance words on `/th/`, not times ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
 
 ### So that (*in order to*) {#so-that}
 
@@ -154,7 +154,7 @@ English *so that* names the outcome an event aims at (*walks so that Olozun sits
 >
 > "Uzazon walks so that Olozun sits."
 
-English *in order to* drops the person who sits. Agazan still names them in the inner `/z/`:
+English *in order to* drops the person who sits. Egabon still names them in the inner `/z/`:
 
 > `zuzazon voworel hogom barl zuzazon vehuhol.`
 >
@@ -190,7 +190,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *guard* | `ayoyul` | 💂 |
 | *see* | `vanobol` | 👁️ from *eye* |
@@ -206,7 +206,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -217,7 +217,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *haste* | `hedarem` |
 | *angry* | `onemul` |
 
-#### English → Agazan {#beginner-english-to-agazan}
+#### English → Egabon {#beginner-english-to-egabon}
 
 **1.** *Uzazon tells Olozun that Ehalon sneaks.*
 
@@ -271,7 +271,7 @@ z-guard | v-scream . z-Uzazon | v-tell | b-guard
 z-Olozun | v-scream | [h-so-that | b-that-clause] | z-guard | v-run
 :::
 
-#### Agazan → English {#beginner-agazan-to-english}
+#### Egabon → English {#beginner-egabon-to-english}
 
 **1.** `zehalon vazomul. xodum zayoyul varuvel.`
 
@@ -383,7 +383,7 @@ A **period** closes the sentence body in writing, whatever the speech act. Speec
 Beginner already used *therefore*. It is one of six **sentence linkers**: `/x/` words that connect a finished sentence to the one after it. Each one uses its root's **abstract** sense, so it ends in **-m**.
 
 <!-- cheat-sheet: linking-clauses -->
-| English | Agazan | Abstract of | Cue | Example |
+| English | Egabon | Abstract of | Cue | Example |
 |---------|--------|-------------|-----|---------|
 | *therefore* | **`xodum`** | `odum` *progress* | ➡️: the sun’s path, so the talk moves on | `xodum` |
 | *however* | **`xezom`** | `ezom` *contrast* | 🦓: two stripes, still one animal | `xezom` |
@@ -399,7 +399,7 @@ A linker reaches back to **one** sentence: the one that ends at the period befor
 Three linkers also take **-l** for a **firm** link: the link holds with no room for doubt, on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). (cue: **-l** ≈ lasting: the link holds)
 
 <!-- cheat-sheet: linking-clauses -->
-| Agazan | Use | English |
+| Egabon | Use | English |
 |--------|-----|---------|
 | **`xodul`** | the next claim must hold if the last sentence does: a deduction | *it follows that* / *necessarily, then* |
 | **`xezol`** | the contrast stands whatever the last claim said | *nevertheless* / *even so* |
@@ -592,7 +592,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Agazan | Cue |
+| English | Egabon | Cue |
 |---------|--------|-----|
 | *luggage* | `ulabal` | 🧳 |
 | *however* | `xezom` | 🦓 from *zebra*: two stripes, still one animal |
@@ -605,7 +605,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Agazan |
+| English | Egabon |
 |---------|--------|
 | *Uzazon* | `uzazon` |
 | *Olozun* | `olozun` |
@@ -625,7 +625,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *tell* | `vezeyel` |
 | *scream* | `vazomul` |
 
-#### English → Agazan {#intermediate-english-to-agazan}
+#### English → Egabon {#intermediate-english-to-egabon}
 
 **1.** *Uzazon sees the train. However, Olozun runs.*
 
@@ -675,7 +675,7 @@ z-Olozun | [d-luggage | [g-before | b-departure]] | v-see
 z-Ehalon | v-sit | [th-if | b-lest-clause] | z-train | v-departure
 :::
 
-#### Agazan → English {#intermediate-agazan-to-english}
+#### Egabon → English {#intermediate-egabon-to-english}
 
 **1.** `zolozun vezeyel. xogerem zehalon dogobal vemawol.`
 
@@ -768,7 +768,7 @@ A stand-in's vowel says what kind of content follows, and its first letter says 
 Each content type has one lexicalized form; there is no closed / open pair here.
 
 <!-- cheat-sheet: linking-clauses -->
-| Agazan | Dependent content | English |
+| Egabon | Dependent content | English |
 |--------|-------------------|---------|
 | **`varn`** | statement-like (`a`) | *state…* |
 | **`vorn`** | question-like (`o`) | *question…* |

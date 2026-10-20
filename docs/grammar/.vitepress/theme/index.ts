@@ -5,7 +5,7 @@ import Layout from './Layout.vue'
 import LexiconSearch from '../components/LexiconSearch.vue'
 import GlossViewer from '../components/GlossViewer.vue'
 import EnglishHelper from '../components/EnglishHelper.vue'
-import AgazanInspect from '../components/AgazanInspect.vue'
+import EgabonInspect from '../components/EgabonInspect.vue'
 import ClaritishEditor from '../components/ClaritishEditor.vue'
 import IpaPlay from '../components/IpaPlay.vue'
 import NameHelper from '../components/NameHelper.vue'
@@ -20,7 +20,7 @@ export default {
     app.component('LexiconSearch', LexiconSearch)
     app.component('GlossViewer', GlossViewer)
     app.component('EnglishHelper', EnglishHelper)
-    app.component('AgazanInspect', AgazanInspect)
+    app.component('EgabonInspect', EgabonInspect)
     app.component('ClaritishEditor', ClaritishEditor)
     app.component('IpaPlay', IpaPlay)
     app.component('NameHelper', NameHelper)
