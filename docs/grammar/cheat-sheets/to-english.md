@@ -57,11 +57,11 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `gabam` | BEFORE clause pole (ahead-of) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
 | `gadam` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `gaen` | join-relation starting with (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `gagom` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](../relations.md#proxy) | B |
 | `gaham` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `gahum` | BECAUSE clause pole (explanatory reason) | [Because, iff, and only because](../causation.md#only-because) | I |
 | `galam` | AFTER clause pole (just-after) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
 | `gan` | join-relation including (adjective + argument) | [Join-relations](../join-across-roles.md#join-relations) | I |
+| `ganom` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](../relations.md#proxy) | B |
 | `gaon` | join-relation open to (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `garum` | UNTIL clause pole (endpoint bound) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
 | `gebom` | ONLY-IF clause pole (necessary condition) | [Only if](../causation.md#only-if) | B |
@@ -71,6 +71,8 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `geham` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](../relations.md#exchange) | B |
 | `gehem` | IFF clause pole (biconditional) | [Because, iff, and only because](../causation.md#only-because) | I |
 | `gen` | join-relation prioritizing (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
+| `genam` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
+| `genar` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `gerem` | WHILE clause pole (concurrent) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
 | `gevahum` | BY clause pole (deadline: done at or before the endpoint) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
 | `gevam` | locative around (figure on all sides of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
@@ -79,8 +81,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `gezom` | ALTHOUGH clause pole (concession; NP despite) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `gobem` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `goen` | join-relation on a par with (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `gogam` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
-| `gogar` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `gohem` | locative across (edge to far edge of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
 | `gohom` | IF clause pole (one-way conditional) | [If](../causation.md#if) | B |
 | `gon` | join-relation exclusive for (sole pick adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
@@ -89,10 +89,10 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `goyem` | stimulus (sake about a noun you do not possess) | [Personal possession](../sakes.md#personal-possession) | B |
 | `guan` | join-relation without or excluding (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `guen` | join-relation deprioritizing (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `gugem` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](../relations.md#as-of) | A |
-| `guger` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `gulem` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `gun` | join-relation against or anti- (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
+| `gunem` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](../relations.md#as-of) | A |
+| `guner` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `guon` | join-relation open to anything but (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
 <!-- /generated -->
 
@@ -104,11 +104,11 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `habam` | BEFORE clause pole (ahead-of) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `hadam` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `haen` | join-relation starting with (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `hagom` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](../relations.md#proxy) | B |
 | `haham` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `hahem` | SO-THAT-RESULT clause pole (outcome that follows from the host) | [Result (so … that)](../dependents.md#result-pole) | I |
 | `halam` | AFTER clause pole (just-after) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `han` | join-relation with or including (adverb + argument) | [Join-relations](../join-across-roles.md#join-relations) | I |
+| `hanom` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](../relations.md#proxy) | B |
 | `haon` | join-relation among options (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
 | `harum` | UNTIL clause pole (endpoint bound) | [Because, if, although (poles)](../dependents.md#poles) | B |
@@ -125,6 +125,8 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `helem` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `heler` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `hen` | join-relation prioritizing (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
+| `henam` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
+| `henar` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `herem` | WHILE clause pole (concurrent) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `hevahum` | BY clause pole (deadline: done at or before the endpoint) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `hevam` | locative around (figure on all sides of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
@@ -134,8 +136,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `hobem` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `hodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](../intention.md#ability-fallback) | I |
 | `hoen` | join-relation equating or tying (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `hogam` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
-| `hogar` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `hohem` | locative across (edge to far edge of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
 | `hon` | join-relation exclusively for (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `hovam` | SO-THAT clause pole (intended outcome; NP for-goal) | [Because, if, although (poles)](../dependents.md#poles) | B |
@@ -144,10 +144,10 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](../intention.md#try) | I |
 | `huan` | join-relation excluding (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `huen` | join-relation deprioritizing (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `hugem` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](../relations.md#as-of) | A |
-| `huger` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `hulem` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `hun` | join-relation refusing (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
+| `hunem` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](../relations.md#as-of) | A |
+| `huner` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `huon` | join-relation barring anything but (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `huvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `huvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
@@ -177,13 +177,13 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `thalel` | want mood lasting (a wish that keeps returning) | [Want](../intention.md#want) | I |
 | `thalem` | want mood (duration unstated) | [Want](../intention.md#want) | I |
 | `thaler` | want mood passing (a whim that fades) | [Want](../intention.md#want) | I |
+| `thanal` | deduced evidential with strong evidence (every step could be shown) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `thanam` | deduced evidential (follows from the premises) | [Evidentiality](../knowing.md#evidentiality) | I |
+| `thanar` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thebal` | reported evidential with strong evidence (reliable source) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thebam` | reported evidential (hearsay / said or written by someone else / reportative) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `thebar` | reported evidential with weak evidence (rumor) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thebom` | ONLY-IF clause pole (necessary condition) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `thegal` | deduced evidential with strong evidence (every step could be shown) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thegam` | deduced evidential (follows from the premises) | [Evidentiality](../knowing.md#evidentiality) | I |
-| `thegar` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thegul` | disallowed by a rule policy or formal ban | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
 | `thegum` | forbidden by a person (speaker by default or the /b/ forbidder) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
 | `thegur` | tacitly disapproved (no one forbade it outright) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
@@ -191,6 +191,8 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `themol` | mirative mood overturning a firm expectation | [Mirative (themom)](../knowing.md#mirative) | I |
 | `themom` | mirative mood (newly found out and not expected) | [Mirative (themom)](../knowing.md#mirative) | I |
 | `themor` | mirative mood against a loose expectation | [Mirative (themom)](../knowing.md#mirative) | I |
+| `thenam` | AS-OF stance pole (asserted whose-now / dated ledger) | [Stance as-of](../relations.md#stance-as-of) | A |
+| `thenar` | AS-OF stance pole (asserted whose-now / dated ledger) resume | [Stance as-of](../relations.md#stance-as-of) | A |
 | `thevul` | memory evidential with strong evidence (vivid memory) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thevum` | memory evidential (remembered firsthand / reconstructive) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `thevur` | memory evidential with weak evidence (hazy memory) | [Evidence strength](../knowing.md#evidence-strength) | I |
@@ -201,8 +203,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `theyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Hold endings (NOTIONAL)](../knowing.md#hold-endings-notional) | I |
 | `theyum` | notional mood default hold (imagining a scene without a further purpose) | [Notional (as-if framing)](../knowing.md#notional-as-if-framing) | I |
 | `theyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Hold endings (NOTIONAL)](../knowing.md#hold-endings-notional) | I |
-| `thogam` | AS-OF stance pole (asserted whose-now / dated ledger) | [Stance as-of](../relations.md#stance-as-of) | A |
-| `thogar` | AS-OF stance pole (asserted whose-now / dated ledger) resume | [Stance as-of](../relations.md#stance-as-of) | A |
 | `thogol` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
 | `thogom` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
 | `thogor` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
@@ -213,17 +213,17 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `thomal` | may mood find-out hold (I'll / let's find out) | [Hold endings (MAY)](../knowing.md#hold-endings-may) | B |
 | `thomam` | may mood (could be; default) | [MAY](../knowing.md#may) | B |
 | `thomar` | may mood who-knows hold (leave unsettled; may never know) | [Hold endings (MAY)](../knowing.md#hold-endings-may) | B |
+| `thonal` | required by a rule policy or law (no one in particular demands it) | [Requirement (thonal / thonam / thonar)](../sakes.md#requirement) | I |
+| `thonam` | required by a person (speaker by default or the /b/ who demands it) | [Requirement (thonal / thonam / thonar)](../sakes.md#requirement) | I |
+| `thonar` | expected by custom (no rule and no one demanding it) | [Requirement (thonal / thonam / thonar)](../sakes.md#requirement) | I |
 | `thubel` | pattern evidential with strong evidence (well-established pattern) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thubem` | pattern evidential (from trail of cases) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `thuber` | pattern evidential with weak evidence (a few cases) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thugal` | required by a rule policy or law (no one in particular demands it) | [Requirement (thugal / thugam / thugar)](../sakes.md#requirement) | I |
-| `thugam` | required by a person (speaker by default or the /b/ who demands it) | [Requirement (thugal / thugam / thugar)](../sakes.md#requirement) | I |
-| `thugar` | expected by custom (no rule and no one demanding it) | [Requirement (thugal / thugam / thugar)](../sakes.md#requirement) | I |
-| `thugem` | AS-OF stance pole (unasserted whose-now / placeholder now) | [Stance as-of](../relations.md#stance-as-of) | A |
-| `thuger` | AS-OF stance pole (unasserted whose-now / placeholder now) resume | [Stance as-of](../relations.md#stance-as-of) | A |
 | `thugol` | live evidential with strong evidence (clear full view) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thugom` | live evidential (sensed now: in view / in earshot / on the skin) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `thugor` | live evidential with weak evidence (a glimpse) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `thunem` | AS-OF stance pole (unasserted whose-now / placeholder now) | [Stance as-of](../relations.md#stance-as-of) | A |
+| `thuner` | AS-OF stance pole (unasserted whose-now / placeholder now) resume | [Stance as-of](../relations.md#stance-as-of) | A |
 <!-- /generated -->
 
 ## `/v/` words {#v-words}
@@ -251,6 +251,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `wabol` | intuition evidential with strong evidence (strong gut sense) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wabom` | intuition evidential (gut sense you cannot fully spell out) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wabor` | intuition evidential with weak evidence (faint hunch) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wanal` | deduced evidential with strong evidence (every step could be shown) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wanam` | deduced evidential (follows from the premises) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wanar` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `waram` | residue mood (outcome still on the current tally) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wavol` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `wavom` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
@@ -261,13 +264,12 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `webal` | reported evidential with strong evidence (reliable source) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `webam` | reported evidential (hearsay / said or written by someone else / reportative) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `webar` | reported evidential with weak evidence (rumor) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wegal` | deduced evidential with strong evidence (every step could be shown) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wegam` | deduced evidential (follows from the premises) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wegar` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `welam` | former-climate mood (not the climate claimed now) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `welel` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `welem` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `weler` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `wenam` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
+| `wenar` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `wevul` | memory evidential with strong evidence (vivid memory) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wevum` | memory evidential (remembered firsthand / reconstructive) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wevur` | memory evidential with weak evidence (hazy memory) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
@@ -279,8 +281,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `weyum` | notional mood default hold (imagining a scene without a further purpose) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `weyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](../intention.md#ability-fallback) | I |
-| `wogam` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
-| `wogar` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `womal` | may mood find-out hold (I'll / let's find out) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `womam` | may mood (could be; default) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `womar` | may mood who-knows hold (leave unsettled; may never know) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
@@ -288,11 +288,11 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `wubel` | pattern evidential with strong evidence (well-established pattern) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wubem` | pattern evidential (from trail of cases) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wuber` | pattern evidential with weak evidence (a few cases) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wugem` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](../relations.md#as-of) | A |
-| `wuger` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `wugol` | live evidential with strong evidence (clear full view) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wugom` | live evidential (sensed now: in view / in earshot / on the skin) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wugor` | live evidential with weak evidence (a glimpse) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wunem` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](../relations.md#as-of) | A |
+| `wuner` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `wuvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `wuvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `wuvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
@@ -305,13 +305,13 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 <!-- generated: sakes -->
 | Serves | Detracts from | Sake | Taught in | Stage |
 |--------|---------------|------|-----------|-------|
-| `thagatham` | `thagathum` | autonomy (choice / agency) | [Word shape](../sakes.md#word-shape) | B |
 | `thawotham` | `thawothum` | relatedness (bond / belonging) | [Word shape](../sakes.md#word-shape) | B |
 | `thewatham` | `thewathum` | beneficence (making someone better off) | [Word shape](../sakes.md#word-shape) | B |
 | `thobatham` | `thobathum` | physical (body / health / safety / shelter) | [Word shape](../sakes.md#word-shape) | B |
 | `thodotham` | `thodothum` | pleasure (sweetness / enjoyment) | [Word shape](../sakes.md#word-shape) | B |
 | `thowotham` | `thowothum` | understanding (sense-making / learning) | [Word shape](../sakes.md#word-shape) | B |
 | `thudatham` | `thudathum` | unspecified (potential) | [Word shape](../sakes.md#word-shape) | B |
+| `thunatham` | `thunathum` | autonomy (choice / agency) | [Word shape](../sakes.md#word-shape) | B |
 | `thuretham` | `thurethum` | purpose (direction / meaning) | [Word shape](../sakes.md#word-shape) | B |
 | `thuwatham` | `thuwathum` | competence (readiness / efficacy) | [Word shape](../sakes.md#word-shape) | B |
 <!-- /generated -->
@@ -331,16 +331,17 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `abebalahebal` | *palm-of-hand* |  |
 | `abebamaral` | *donation* |  |
 | `abebuwal` | *first-aid-kit* |  |
-| `abevalogel` | *detective-story* |  |
+| `abevalonel` | *detective-story* |  |
 | `abewamodudal` | *energy-drink* |  |
 | `abezulogulal` | *silk* |  |
-| `abohalebogal` | *cheque* |  |
+| `abohalebonal` | *cheque* |  |
 | `abohalegeral` | *debit-card* |  |
 | `abolanurul` | *midnight* |  |
 | `abolohalal` | *emotion* |  |
 | `aboluzurel` | *noon* |  |
 | `abowalobel` | *rib* |  |
 | `abowalulovol` | *basketball* |  |
+| `abunulugebal` | *boxing-gloves* |  |
 | `adahaladurel` | *drought* |  |
 | `adahalowulal` | *oasis* |  |
 | `adalogomul` | *fridge* |  |
@@ -351,7 +352,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `adedoluhudal` | *orange-juice* |  |
 | `adobalerebel` | *belt* |  |
 | `adobalogulal` | *denim* |  |
-| `adowolegal` | *audiobook* |  |
+| `adowolanal` | *audiobook* |  |
 | `adugumobobol` | *elbow* |  |
 | `aduhehol` | *basement* |  |
 | `aduhelovemol` | *chin* |  |
@@ -363,8 +364,6 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `agahelehohal` | *cathedral* |  |
 | `agahemaral` | *tax* |  |
 | `agaheyal` | *political-party* |  |
-| `agalagahel` | *democracy* |  |
-| `agalayayal` | *electorate* |  |
 | `agalelarolol` | *meteorite* |  |
 | `agayuludozol` | *guard-dog* |  |
 | `agazalahehal` | *barn* |  |
@@ -378,7 +377,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `agedalezedel` | *chopsticks* |  |
 | `agedamabohal` | *food-bank* |  |
 | `agedelegodol` | *carrot-cake* |  |
-| `agelonogal` | *atlas* |  |
+| `agelononal` | *atlas* |  |
 | `agevoluguval` | *card-game* |  |
 | `agolalogulal` | *lace* |  |
 | `agorelayal` | *appointment* |  |
@@ -388,19 +387,18 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `agudamewel` | *blender* |  |
 | `agudamudal` | *scrambled-eggs* |  |
 | `agudamuhudal` | *smoothie* |  |
-| `agugumovehal` | *estate* |  |
 | `agulalawebol` | *landscape* |  |
 | `agulaloyulal` | *carpet* |  |
 | `agulaluvobel` | *sole* |  |
-| `aguvelezedel` | *golf-club* |  |
-| `aguvelulovol` | *golf-ball* |  |
+| `agunelezedel` | *golf-club* |  |
+| `agunelulovol` | *golf-ball* |  |
 | `aguyomodudal` | *potion* |  |
-| `aguyomogel` | *fantasy* |  |
+| `aguyomonel` | *fantasy* |  |
 | `ahahalorahel` | *street* |  |
-| `ahaladogul` | *export* |  |
+| `ahaladonul` | *export* |  |
 | `ahalagahel` | *government* |  |
+| `ahalanonal` | *import* |  |
 | `ahalehahal` | *county* |  |
-| `ahalenogal` | *import* |  |
 | `ahaludurel` | *anthem* |  |
 | `ahalugobel` | *president* |  |
 | `ahaluzedal` | *province* |  |
@@ -431,20 +429,19 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ahoyemuzahal` | *high-school* |  |
 | `ahubelowal` | *artery* |  |
 | `ahubelurobol` | *heart-organ* |  |
-| `ahubemegal` | *biography* |  |
+| `ahubemanal` | *biography* |  |
 | `ahudalawudal` | *mead* |  |
 | `ahulamahul` | *cliff* |  |
 | `ahularolol` | *brick* |  |
-| `ahulebogal` | *wallpaper* |  |
-| `ahulebogel` | *poster* |  |
+| `ahulebonal` | *wallpaper* |  |
+| `ahulebonel` | *poster* |  |
 | `ahulobolol` | *ivy* |  |
 | `ahulorahel` | *alley* |  |
-| `ahuvelezedel` | *hockey-stick* |  |
 | `ahuyalohalal` | *bay* |  |
 | `ahuyayol` | *friend* | `ahuyayom` *allegiance* |
 | `alalamahul` | *dune* |  |
 | `alalarolol` | *sandstone* |  |
-| `alalebogal` | *sandpaper* |  |
+| `alalebonal` | *sandpaper* |  |
 | `alalewulel` | *sandstorm* |  |
 | `alalobogal` | *sandbox* |  |
 | `alayelaral` | *pension* |  |
@@ -457,6 +454,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `alowelabezul` | *firefly* |  |
 | `alowolovewol` | *smartphone* |  |
 | `alululazuwal` | *thunder* |  |
+| `alunohal` | *gym* |  |
 | `amahulamezol` | *hill* |  |
 | `amahulevezal` | *trout* |  |
 | `amahulezemul` | *altitude-sickness* |  |
@@ -468,15 +466,21 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `amedalozodal` | *salsa* |  |
 | `amewalomulol` | *iron* |  |
 | `amezomagedal` | *snack* |  |
-| `amezomebogel` | *paragraph* |  |
+| `amezomebonel` | *paragraph* |  |
 | `amezomedalel` | *bush* |  |
 | `amezomewahal` | *clinic* |  |
 | `amezomezuyel` | *summary* |  |
-| `amezomogel` | *anecdote* |  |
+| `amezomonel` | *anecdote* |  |
 | `amezoyol` | *dwarf* |  |
 | `amugoluzahal` | *medical-school* |  |
-| `amurulodegel` | *coupon* |  |
+| `amuruludenel` | *coupon* |  |
 | `amuyumezuyel` | *insult* |  |
+| `analagahel` | *publisher* |  |
+| `analahehal` | *library* |  |
+| `analahohal` | *bookshop* |  |
+| `analawebol` | *read* |  |
+| `analuyowol` | *publication* |  |
+| `anamerewol` | *technology* |  |
 | `anedamezemul` | *diabetes* |  |
 | `anedamoludal` | *rum* |  |
 | `anedulebelal` | *chives* |  |
@@ -485,8 +489,9 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `anewulewowul` | *dagger* |  |
 | `anobaladal` | *lid* |  |
 | `anobalonedul` | *acorn* |  |
+| `anonamohol` | *entrance* |  |
 | `anozalehubal` | *fur* |  |
-| `anozalogel` | *fable* |  |
+| `anozalonel` | *fable* |  |
 | `anurulezulol` | *frost* |  |
 | `anurulubezel` | *moth* |  |
 | `anurululowal` | *night-light* |  |
@@ -497,10 +502,10 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `arahalunobal` | *cowboy-boot* |  |
 | `aralamurul` | *discount* |  |
 | `aralamuyal` | *employment* |  |
+| `aralanonal` | *revenue* |  |
 | `aralayuhel` | *inflation* |  |
-| `aralebogal` | *banknote* |  |
-| `aralebogel` | *budget* |  |
-| `aralenogal` | *revenue* |  |
+| `aralebonal` | *banknote* |  |
+| `aralebonel` | *budget* |  |
 | `aralobolol` | *investment* |  |
 | `araluzurel` | *payday* |  |
 | `araveluraval` | *jet* |  |
@@ -537,7 +542,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `avululovulul` | *smoke* |  |
 | `avululowal` | *chimney* |  |
 | `avulululel` | *firewood* |  |
-| `avuvamegal` | *yearbook* |  |
+| `avuvamanal` | *yearbook* |  |
 | `avuvulovehal` | *battlefield* |  |
 | `avuvuyal` | *army* |  |
 | `avuyalahehal` | *farmhouse* |  |
@@ -559,7 +564,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ayabahal` | *bathroom* |  |
 | `ayabalogobal` | *bathrobe* |  |
 | `ayabalogulal` | *towel* |  |
-| `ayalebogel` | *contract* |  |
+| `ayalebonel` | *contract* |  |
 | `ayamezuyel` | *negotiation* |  |
 | `ayayahal` | *hall* |  |
 | `ayayamaduyel` | *committee* |  |
@@ -577,9 +582,9 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `azudalawudal` | *mulled-wine* |  |
 | `azudalududal` | *chai* |  |
 | `azudaluzudal` | *curry* |  |
-| `azuvalehobal` | *jersey* |  |
-| `azuvaluhobal` | *cleats* |  |
-| `azuvalulovol` | *soccer-ball* |  |
+| `azunalehobal` | *jersey* |  |
+| `azunaluhobal` | *cleats* |  |
+| `azunalulovol` | *soccer-ball* |  |
 | `azuvelavobal` | *life-jacket* |  |
 | `azuveluhobal` | *flipper* |  |
 | `ebalayayal` | *audience* |  |
@@ -587,7 +592,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ebalugebal` | *earmuffs* |  |
 | `ebavalorahel` | *canal* |  |
 | `ebazemahehal` | *museum* |  |
-| `ebazemogel` | *myth* |  |
+| `ebazemonel` | *myth* |  |
 | `ebazoledalel` | *bamboo* |  |
 | `ebazulanedal` | *gummy-bear* |  |
 | `ebazulevezal` | *salmon* |  |
@@ -600,7 +605,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ebelalozodal` | *pesto* |  |
 | `ebelalududal` | *herbal-tea* |  |
 | `ebewelarolol` | *chalk* |  |
-| `ebewelonogal` | *sketchbook* |  |
+| `ebewelononal` | *sketchbook* |  |
 | `ebeweloruyol` | *editing* |  |
 | `ebobaludobal` | *underwear* |  |
 | `ebobolonedul` | *walnut* |  |
@@ -616,13 +621,13 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ebodolanewul` | *bread-knife* |  |
 | `ebodolewel` | *toaster* |  |
 | `ebodolugelal` | *wheat* |  |
-| `ebogalabezul` | *wasp* |  |
-| `ebogalobogal` | *carton* |  |
-| `ebogalomulol` | *foil* |  |
 | `ebohalagevol` | *postcard* |  |
 | `ebohaloderol` | *postage* |  |
+| `ebonalabezul` | *wasp* |  |
+| `ebonalobogal` | *carton* |  |
+| `ebonalomulol` | *foil* |  |
 | `eboraladahel` | *bell-tower* |  |
-| `eboromogel` | *folktale* |  |
+| `eboromonel` | *folktale* |  |
 | `eboromudurel` | *folk-song* |  |
 | `ebowularolol` | *ore* |  |
 | `ebowumehaval` | *submarine* |  |
@@ -642,21 +647,15 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `edeboledalel` | *willow* |  |
 | `edodalovulul` | *steam* |  |
 | `edoholuguval` | *board-game* |  |
+| `edunalulovol` | *tennis-ball* |  |
 | `eduremazebol` | *scan* |  |
 | `eduremevemul` | *panic* |  |
-| `eduvalulovol` | *tennis-ball* |  |
-| `egalagahel` | *publisher* |  |
-| `egalahehal` | *library* |  |
-| `egalahohal` | *bookshop* |  |
-| `egalawebol` | *read* |  |
-| `egaluyowol` | *publication* |  |
-| `egamerewol` | *technology* |  |
 | `egavalahehal` | *garage* |  |
 | `egavalohozul` | *traffic* |  |
 | `egavalulowal` | *headlight* |  |
 | `egavalunewol` | *drive* |  |
 | `egavaluzahal` | *driving-school* |  |
-| `egayulogel` | *ghost-story* |  |
+| `egayulonel` | *ghost-story* |  |
 | `egedalobolol` | *vine* |  |
 | `egedalovehal` | *vineyard* |  |
 | `egedaluhudal` | *grape-juice* |  |
@@ -667,11 +666,11 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `egewomagevol` | *tarot-card* |  |
 | `egohuledovol` | *building-block* |  |
 | `egorelazuwal` | *tick* |  |
-| `egugolebogel` | *questionnaire* |  |
+| `egugolebonel` | *questionnaire* |  |
 | `egugolezuyel` | *interview* |  |
 | `egugoluguval` | *quiz* |  |
-| `eguyemegal` | *novel* |  |
-| `eguyemogel` | *fiction* |  |
+| `eguyemanal` | *novel* |  |
+| `eguyemonel` | *fiction* |  |
 | `ehahalahahal` | *village* |  |
 | `ehahamezuyel` | *dialect* |  |
 | `ehahayol` | *neighbor* |  |
@@ -682,7 +681,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ehavalabahal` | *harbor* |  |
 | `ehavalagahel` | *navy* |  |
 | `ehavalahehal` | *port* |  |
-| `ehavalogal` | *logbook* |  |
+| `ehavalenal` | *logbook* |  |
 | `ehavamuvahol` | *tourism* |  |
 | `ehavayal` | *crew* |  |
 | `ehazologoral` | *density* |  |
@@ -695,7 +694,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ehobolabezul` | *louse* |  |
 | `ehobolezemul` | *headache* |  |
 | `ehobuyul` | *soldier* |  |
-| `ehohalegal` | *scripture* |  |
+| `ehohalanal` | *scripture* |  |
 | `ehohalezuyel` | *sermon* |  |
 | `ehohaludurel` | *hymn* |  |
 | `ehohaluzahal` | *seminary* |  |
@@ -722,14 +721,12 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `elewulugahal` | *locker* |  |
 | `elewumahehal` | *prison* |  |
 | `elewuyol` | *prisoner* |  |
-| `elogalebogel` | *letter* |  |
 | `elowulebaval` | *lifeboat* |  |
-| `eluvohal` | *gym* |  |
-| `emahelagol` | *passport* |  |
+| `emahelanol` | *passport* |  |
 | `emalemelel` | *evolution* |  |
 | `emodalagulal` | *clay* |  |
 | `emodalavodal` | *kiln* |  |
-| `emugalunogal` | *newsletter* |  |
+| `emunalunonal` | *newsletter* |  |
 | `enamulobebul` | *painkiller* |  |
 | `enebaloyel` | *fingernail* |  |
 | `enewulewel` | *sewing-machine* |  |
@@ -737,11 +734,11 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `enobalorahel` | *career* |  |
 | `enobamagevol` | *business-card* |  |
 | `enobamudurel` | *jingle* |  |
-| `enobamunogal` | *advertisement* |  |
-| `enogamohol` | *entrance* |  |
-| `enuromegal` | *music-album* |  |
+| `enobamunonal` | *advertisement* |  |
+| `enonalebonel` | *letter* |  |
+| `enuromanal` | *music-album* |  |
 | `enuyalaral` | *inheritance* |  |
-| `enuyalebogel` | *testament* |  |
+| `enuyalebonel` | *testament* |  |
 | `enuyayol` | *aristocrat* |  |
 | `erebelunobel` | *bow-tie* |  |
 | `eredaloludal` | *gin* |  |
@@ -760,9 +757,9 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `eruyelavayal` | *dynasty* |  |
 | `evahulegaval` | *race-car* |  |
 | `evalamezemul` | *pandemic* |  |
-| `evemolegal` | *philosophy* |  |
+| `evemolanal` | *philosophy* |  |
 | `everelazahal` | *championship* |  |
-| `eveyologel` | *fairy-tale* |  |
+| `eveyolonel` | *fairy-tale* |  |
 | `evezalezedel` | *fishing-rod* |  |
 | `evezalurobol` | *gill* |  |
 | `evezazal` | *shoal* |  |
@@ -776,10 +773,10 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `evulebaval` | *fishing boat* |  |
 | `evulovulal` | *fishing-line* |  |
 | `ewahalanewul` | *scalpel* |  |
-| `ewalebogal` | *wrapping-paper* |  |
+| `ewalebonal` | *wrapping-paper* |  |
 | `ewalegeral` | *gift-card* |  |
 | `eweleraval` | *locomotive* |  |
-| `ewelonogal` | *manual* |  |
+| `ewelononal` | *manual* |  |
 | `ewemamudurel` | *serenade* |  |
 | `ewolazuwal` | *echo* |  |
 | `ewuleladahel` | *windmill* |  |
@@ -790,21 +787,19 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ewulelozulal` | *blizzard* |  |
 | `ewuleluraval` | *glider* |  |
 | `ewuleluvelal` | *dandelion* |  |
-| `ewuvalezedel` | *baseball-bat* |  |
-| `ewuvalugebal` | *baseball-glove* |  |
 | `eyodalebelal` | *oregano* |  |
 | `eyodalomudol` | *pepperoni* |  |
 | `eyoledovol` | *doll* |  |
 | `eyorelomulol` | *brass* |  |
 | `eyulayayal` | *troupe* |  |
-| `eyulebogel` | *script* |  |
+| `eyulebonel` | *script* |  |
 | `eyuludobal` | *costume* |  |
 | `ezahemadozol` | *pigeon* |  |
 | `ezahemeruyel` | *mayor* |  |
-| `ezazomebogel` | *certificate* |  |
+| `ezazomebonel` | *certificate* |  |
 | `ezewulehubal` | *haircut* |  |
 | `ezobumubezol` | *vulture* |  |
-| `ezobumunogal` | *obituary* |  |
+| `ezobumunonal` | *obituary* |  |
 | `ezomulehubal` | *eyebrow* |  |
 | `ezozulazuwal` | *hiss* |  |
 | `ezozulevezal` | *eel* |  |
@@ -821,22 +816,22 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ezuvoluvelal` | *poppy* |  |
 | `ezuyelabeval` | *riddle* |  |
 | `ezuyelalobal` | *consultation* |  |
-| `ezuyelanegol` | *noun* |  |
-| `ezuyelegal` | *dictionary* |  |
+| `ezuyelanal` | *dictionary* |  |
+| `ezuyelanenol` | *noun* |  |
 | `ezuyelezobal` | *verb* |  |
 | `ezuyelomal` | *meaning* |  |
-| `ezuyelugal` | *grammar* |  |
+| `ezuyelonal` | *grammar* |  |
 | `ezuyeyal` | *conference* |  |
 | `ezuyoyal` | *choir* |  |
 | `ezuyulogobal` | *cape* |  |
-| `ezuyumogel` | *epic* |  |
+| `ezuyumonel` | *epic* |  |
 | `obahohal` | *bedroom* | `obahoham` *sanctum* |
 | `obaholadurel` | *bedtime* |  |
 | `obaholahehal` | *dormitory* |  |
 | `obaholamobal` | *sleeping-bag* |  |
 | `obaholeraval` | *sleeping car* |  |
-| `obahologel` | *bedtime-story* |  |
 | `obahologulal` | *bedsheet* |  |
+| `obaholonel` | *bedtime-story* |  |
 | `obaholuzahal` | *boarding-school* |  |
 | `obamezemul` | *asthma* |  |
 | `obayelahehal` | *police-station* |  |
@@ -845,7 +840,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `obayemaral` | *fine* |  |
 | `obayemenamul` | *penalty* |  |
 | `obebulahohal` | *pharmacy* |  |
-| `obebulebogel` | *prescription* |  |
+| `obebulebonel` | *prescription* |  |
 | `obebulugahal` | *medicine-cabinet* |  |
 | `obebumolubal` | *ointment* |  |
 | `obelabebul` | *plaster-cast* |  |
@@ -861,10 +856,10 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `obodalorudal` | *fried-rice* |  |
 | `obogahal` | *storeroom* |  |
 | `obogalahehal` | *warehouse* |  |
-| `obogalebogal` | *cardboard* |  |
+| `obogalebonal` | *cardboard* |  |
 | `obogaledavel` | *freight train* |  |
 | `obogalehaval` | *freighter* |  |
-| `obogalogal` | *inventory* |  |
+| `obogalenal` | *inventory* |  |
 | `obololadal` | *flowerpot* |  |
 | `obololobel` | *stem* |  |
 | `obololowal` | *hose* |  |
@@ -880,19 +875,20 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `obulelenamul` | *bruise* |  |
 | `obuleluvelal` | *violet* |  |
 | `obuleluvodal` | *plum* |  |
+| `obunalezedel` | *baseball-bat* |  |
+| `obunalugebal` | *baseball-glove* |  |
+| `obunelulovol` | *bowling-ball* |  |
 | `obuvulawodal` | *pitcher* |  |
 | `obuvulowulal` | *waterfall* |  |
 | `odawulagedal` | *fork* |  |
 | `odazulebelal` | *tarragon* |  |
-| `odegeloderol` | *fare* |  |
-| `odegeluguval` | *lottery* |  |
 | `odelolewel` | *pump* |  |
 | `odelolezulol` | *icicle* |  |
 | `odeloluzudal` | *broth* |  |
 | `oderoleyobal` | *wallet* |  |
-| `oderomebogel` | *invoice* |  |
+| `oderomebonel` | *invoice* |  |
 | `odevomayal` | *encounter* |  |
-| `odevomodegel` | *lottery-ticket* |  |
+| `odevomudenel` | *lottery-ticket* |  |
 | `odobamadobal` | *slacks* |  |
 | `odobamehobal` | *dress-shirt* |  |
 | `odobamogobal` | *blazer* |  |
@@ -907,8 +903,6 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ogalalehaval` | *spaceship* |  |
 | `ogebewal` | *rake* |  |
 | `ogedalebodol` | *cornbread* |  |
-| `ogelobogal` | *literature* |  |
-| `ogemugahal` | *bookcase* |  |
 | `ogewoyol` | *celebrity* |  |
 | `ogobalanobal` | *hood* |  |
 | `ogobalugahal` | *closet* |  |
@@ -925,7 +919,8 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ogozalarolol` | *reef* |  |
 | `ogozulehedol` | *goat-cheese* |  |
 | `ogugalarayel` | *blog* |  |
-| `ogugalebogel` | *website* |  |
+| `ogugalebonel` | *website* |  |
+| `ogunumovehal` | *estate* |  |
 | `ohalalagulal` | *seabed* |  |
 | `ohalalegudal` | *seaweed* |  |
 | `ohalalezemul` | *seasickness* |  |
@@ -961,7 +956,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ohovamuguval` | *hide-and-seek* |  |
 | `ohowulezebul` | *vaccine* |  |
 | `ohozumowulal` | *river* |  |
-| `ohuvemuguval` | *tag* |  |
+| `ohunemuguval` | *tag* |  |
 | `olamalehazol` | *popularity* |  |
 | `olamalezuyel` | *praise* |  |
 | `olamaludurel` | *love-song* |  |
@@ -976,12 +971,11 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `olelududal` | *green-tea* |  |
 | `oludalurobol` | *liver* |  |
 | `olugemezuyel` | *slang* |  |
-| `oluvelulovol` | *bowling-ball* |  |
 | `omalezuyel` | *advice* |  |
-| `omamunogal` | *editorial* |  |
+| `omamunonal` | *editorial* |  |
 | `omezulezemul` | *malaria* |  |
 | `omezumobolol` | *weed* |  |
-| `omobalebogel` | *diploma* |  |
+| `omobalebonel` | *diploma* |  |
 | `omudalonedul` | *almond* |  |
 | `omudalugudal` | *latte* |  |
 | `omudaluyudal` | *cream* |  |
@@ -991,9 +985,12 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `omudolozodal` | *gravy* |  |
 | `omuloladal` | *can* |  |
 | `omulolovulal` | *wire* |  |
+| `onamagahel` | *parliament* |  |
 | `onebologulal` | *handkerchief* |  |
 | `onedulazudal` | *nutmeg* |  |
 | `oneduledalel` | *oak* |  |
+| `onelobogal` | *literature* |  |
+| `onemugahal` | *bookcase* |  |
 | `onuvolulobel` | *knee* |  |
 | `orahehel` | *corridor* |  |
 | `orahelarolol` | *gravel* |  |
@@ -1008,8 +1005,8 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `orudalonudal` | *rice-noodles* |  |
 | `orudalovehal` | *paddy* |  |
 | `orugemedovol` | *spinning-top* |  |
-| `oruvelebaval` | *rowboat* |  |
-| `oruvelezedel` | *oar* |  |
+| `orunelebaval` | *rowboat* |  |
+| `orunelezedel` | *oar* |  |
 | `oruyularal` | *loot* |  |
 | `oruyulehaval` | *pirate ship* |  |
 | `ovahaladahel` | *skyscraper* |  |
@@ -1037,6 +1034,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `owulalagulal` | *mud* |  |
 | `owulalohohul` | *well* |  |
 | `owulalowal` | *pipe* |  |
+| `owunayal` | *league* |  |
 | `owurelael` | *wield* |  |
 | `owurelaem` | *channel* |  |
 | `owurelal` | *enter* |  |
@@ -1105,9 +1103,9 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ubuleleredal` | *blueberry* |  |
 | `ubuloleredal` | *blackberry* |  |
 | `ubulolubezol` | *crow* |  |
+| `ubunalezedel` | *pool-cue* |  |
+| `ubunalulovol` | *billiard-ball* |  |
 | `uburelagevol` | *birthday-card* |  |
-| `ubuvalezedel` | *pool-cue* |  |
-| `ubuvalulovol` | *billiard-ball* |  |
 | `udalozodal` | *mayonnaise* |  |
 | `udaluhebal` | *eggshell* |  |
 | `udamuvelal` | *bud* |  |
@@ -1119,6 +1117,8 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `udedolebelal` | *basil* |  |
 | `udedolozodal` | *tomato-sauce* |  |
 | `udedumezemul` | *stomachache* |  |
+| `udeneloderol` | *fare* |  |
+| `udeneluguval` | *lottery* |  |
 | `udobaladuhel` | *skirt* |  |
 | `udoralebal` | *eardrum* |  |
 | `udoralezedel` | *drum-stick* |  |
@@ -1140,7 +1140,6 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ugahalobogal` | *drawer* |  |
 | `ugalalanedal` | *marshmallow* |  |
 | `ugalalogulal` | *cotton* |  |
-| `ugamagahel` | *parliament* |  |
 | `ugarolanedal` | *candy-cane* |  |
 | `ugaroledalel` | *fir* |  |
 | `ugaroludurel` | *carol* |  |
@@ -1171,14 +1170,15 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `uguvalagevol` | *playing-card* |  |
 | `uguvalorol` | *token* |  |
 | `uguyehal` | *kitchen* |  |
+| `uguyelanal` | *cookbook* |  |
 | `uguyelanobal` | *chef-hat* |  |
-| `uguyelebogel` | *recipe* |  |
-| `uguyelegal` | *cookbook* |  |
+| `uguyelebonel` | *recipe* |  |
 | `uguyeludobal` | *apron* |  |
 | `uguyoyal` | *guild* |  |
 | `uhamumaral` | *bribe* |  |
 | `uhavalabezul` | *dragonfly* |  |
 | `uhewaludaval` | *tow truck* |  |
+| `uhunelezedel` | *hockey-stick* |  |
 | `uhuralorol` | *cent* |  |
 | `uhuyelabeval` | *lawsuit* |  |
 | `uhuyelagahel` | *law-court* |  |
@@ -1216,8 +1216,10 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `umeralezozul` | *rattlesnake* |  |
 | `umezulobebul` | *antibiotic* |  |
 | `umezulobolol` | *algae* |  |
-| `umugolegal` | *encyclopedia* |  |
+| `umugolanal` | *encyclopedia* |  |
 | `umugomuvewel` | *documentary* |  |
+| `unalagahel` | *democracy* |  |
+| `unalayayal` | *electorate* |  |
 | `unedolonudal` | *lasagna* |  |
 | `unedolozodal` | *syrup* |  |
 | `unedoludal` | *omelet* |  |
@@ -1226,14 +1228,13 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `unezalamahul` | *anthill* |  |
 | `unezazal` | *colony* |  |
 | `unobalowulal` | *puddle* |  |
-| `unogalulowal` | *reading-lamp* |  |
-| `unuvulugebal` | *boxing-gloves* |  |
+| `unonalulowal` | *reading-lamp* |  |
 | `uravalagahel` | *air-force* |  |
 | `uravalehaval` | *aircraft carrier* |  |
 | `uravalenobal` | *airline* |  |
 | `uravalomulol` | *aluminum* |  |
 | `uravalorahel` | *runway* |  |
-| `urelonogal` | *guidebook* |  |
+| `urelononal` | *guidebook* |  |
 | `urugeloderol` | *subscription* |  |
 | `urugeludurel` | *chant* |  |
 | `urugulomulol` | *uranium* |  |
@@ -1263,11 +1264,11 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `uvodalegodol` | *fruitcake* |  |
 | `uvodalozodal` | *jam* |  |
 | `uvogalabeval` | *jigsaw* |  |
-| `uvogalegal` | *comic* |  |
+| `uvogalanal` | *comic* |  |
 | `uvorelezozul` | *cobra* |  |
 | `uvorelobolol` | *reed* |  |
 | `uvuguluvelal` | *lily* |  |
-| `uvuvalehobul` | *football-helmet* |  |
+| `uvunalehobul` | *football-helmet* |  |
 | `uvuyoloyel` | *thumb* |  |
 | `uwalobogal` | *toolbox* |  |
 | `uwalurahal` | *workshop* |  |
@@ -1275,7 +1276,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `uwewelabulol` | *candlelight* |  |
 | `uwewelovulal` | *wick* |  |
 | `uwodahal` | *dining-room* |  |
-| `uwodalebogel` | *menu* |  |
+| `uwodalebonel` | *menu* |  |
 | `uwodaleraval` | *dining car* |  |
 | `uwodalewel` | *dishwasher* |  |
 | `uwodalogulal` | *napkin* |  |
@@ -1289,7 +1290,6 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `uwumumezemul` | *hangover* |  |
 | `uwuralegodol` | *wedding-cake* |  |
 | `uwuraludobal` | *wedding-dress* |  |
-| `uwuvayal` | *league* |  |
 | `uyazalubezol` | *ostrich* |  |
 | `uyedolazadal` | *potato-salad* |  |
 | `uyedololudal` | *vodka* |  |
@@ -1301,7 +1301,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `uyudalugedol` | *shortbread* |  |
 | `uzahahol` | *classroom* |  |
 | `uzahalahoyel` | *schoolchild* |  |
-| `uzahalegal` | *textbook* | `uzahalegam` *canon* |
+| `uzahalanal` | *textbook* | `uzahalanam` *canon* |
 | `uzahalevahul` | *graduate* |  |
 | `uzahaloderol` | *tuition* |  |
 | `uzahalovehal` | *campus* |  |
@@ -1331,6 +1331,6 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `uzudamudal` | *boiled-egg* |  |
 | `uzureladurul` | *afternoon* |  |
 | `uzuremabulol` | *daylight* |  |
-| `uzuremonogal` | *diary* |  |
+| `uzuremononal` | *diary* |  |
 | `uzuyuyal` | *gang* |  |
 <!-- /generated -->

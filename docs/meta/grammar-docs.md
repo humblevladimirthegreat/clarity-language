@@ -390,7 +390,7 @@ Learner tables under `docs/grammar/` almost never publish a **bare stem** (`udoz
 | Inflected form the row teaches | `thomam`, `thagem`, `xahem`, `zaxavuvul`; drill-bank `vawebol` *see* |
 | Special with its default ending | citation `uwon` / `awan` / `ayan` / `umon`; in-clause `zuwon` when the slot is the point |
 
-Do **not** call `udozo` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/th/` (or `/x/`) word, not the stem (`agal` or `thagam`, not `aga`; `omal` or `thomam`, not `oma`). Combinability (`tha` / `the`, hold endings) belongs in a **pattern** column (`…thal`) or in extra inflected rows, not by stripping the ending.
+Do **not** call `udozo` a citation. Overlay / need / linker / mood inventories use the citation or the floating `/th/` (or `/x/`) word, not the stem (`unal` or `thunam`, not `una`; `omal` or `thomam`, not `oma`). Combinability (`tha` / `the`, hold endings) belongs in a **pattern** column (`…thal`) or in extra inflected rows, not by stripping the ending.
 
 **Exceptions** (a stem or non-word is the right **Agebon** cell):
 

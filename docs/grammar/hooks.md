@@ -481,7 +481,7 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 >
 > "Uzozen sits on a chair."
 
-> `zuzozen degal ael babewel varayel.`
+> `zuzozen danal ael babewel varayel.`
 >
 > z-Uzozen | d-book | [using | b-pen] | v-write
 >
@@ -509,7 +509,7 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 
 To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`ael`**, the same way as [Where?](questions.md#where).
 
-> `yol ael bar zuzozen degal varayel.`
+> `yol ael bar zuzozen danal varayel.`
 >
 > y-question | [using | b-wh] | z-Uzozen | d-book | v-write
 >
@@ -571,7 +571,7 @@ Other kinds of *'s* each have their own word:
 
 | English *'s* | Use |
 |--------------|-----|
-| legal ownership (*the dog Uzozen owns*) | `gagugum` + `/b/` |
+| legal ownership (*the dog Uzozen owns*) | `gogunum` + `/b/` |
 | a person tied to B (*Uzozen's friend*, *boss*, *patient*) | a tie on `/ɡ/` ([relations](relations.md#social-relations)) |
 | part of B (*Uzozen's hand*), what B is made of or comes from | [of relations](relations.md#of-relations) |
 | a feeling B has (*Uzozen's anger*) | [emotion compose](sakes.md#emotion-compose) |
@@ -579,7 +579,7 @@ Other kinds of *'s* each have their own word:
 
 **`em`** always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `em` + `/b/` is not a sentence there. For someone's act (*Uzozen's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun).
 
-**`em`** never takes a person on the left: a person is not something someone uses. **`gagugum`** never does either, because no one owns a person: a person tied to B takes a [tie](relations.md#social-relations) (*Uzozen's patient* is care, `gobolom`). **`em`** never names a feeling or trait either, and neither does [*part of*](relations.md#of-relations): a feeling or trait stays something B has, not something B uses or is made of. A feeling uses [emotion compose](sakes.md#emotion-compose); a trait is a `/ɡ/` word on B.
+**`em`** never takes a person on the left: a person is not something someone uses. **`gogunum`** never does either, because no one owns a person: a person tied to B takes a [tie](relations.md#social-relations) (*Uzozen's patient* is care, `gobolom`). **`em`** never names a feeling or trait either, and neither does [*part of*](relations.md#of-relations): a feeling or trait stays something B has, not something B uses or is made of. A feeling uses [emotion compose](sakes.md#emotion-compose); a trait is a `/ɡ/` word on B.
 
 **Compare with:** *for Uzozen* is `el`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
 
@@ -649,7 +649,7 @@ Use `ol` in place of `om` for the exact spot (`ol buwon` *right where I am*).
 >
 > "This dog sits here by me."
 
-> `zuzozen degal om bawan vawebol.`
+> `zuzozen danal om bawan vawebol.`
 >
 > z-Uzozen | d-book | [near | b-listener] | v-see
 >
@@ -738,7 +738,7 @@ Stacked extra-noun vowels point back the same way: the vowels keep the extra the
 >
 > "Uzozen sits on a chair. Olazun sits on it too."
 
-> `zuzozen degal ael babewel varayel. zolazun varayel aer.`
+> `zuzozen danal ael babewel varayel. zolazun varayel aer.`
 >
 > z-Uzozen | d-book | [using | b-pen] | v-write . z-Olazun | v-write | with.it
 >
@@ -912,7 +912,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *newspaper* | `unogal` | 📰 |
+| *newspaper* | `unonal` | 📰 |
 | *camera* | `ogewol` | 📷 |
 | *radio* | `erowol` | 📻 |
 | *pencil* | `ebewel` | ✏️ |
@@ -926,7 +926,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *speaker* | `uwon` |
 | *family* | `avayal` |
-| *page* | `ebogel` |
+| *page* | `ebonel` |
 | *surprise* | `emol` |
 | *big* | `gelazom` |
 | *write* | `varayel` |
@@ -940,7 +940,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Uzozen writes on the page.*
 
 ::: details Show answer
-`zuzozen varayel aol bebogel.`
+`zuzozen varayel aol bebonel.`
 
 z-Uzozen | v-write | [on | b-page]
 :::
@@ -948,7 +948,7 @@ z-Uzozen | v-write | [on | b-page]
 **2.** *Olazun writes a newspaper using a pencil.*
 
 ::: details Show answer
-`zolazun dunogal ael bebewel varayel.`
+`zolazun dunonal ael bebewel varayel.`
 
 z-Olazun | d-newspaper | [using | b-pencil] | v-write
 :::
@@ -1027,7 +1027,7 @@ y-Uzozen | additionally | z-Olazun | v-run
 *Uzozen! Additionally, Olazun runs.*
 :::
 
-**6.** `zahelan dunogal om derowol vawebol.`
+**6.** `zahelan dunonal om derowol vawebol.`
 
 ::: details Show answer
 z-Ahelan | d-newspaper | instead.open | d-radio | v-see

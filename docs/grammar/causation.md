@@ -349,7 +349,7 @@ As plain words, the same root is `zewel` *a machine* and `vewel` *to operate / e
 
 On `/w/` (`wewem`), right before an adjective, CAUSE applies only to that adjective: the mechanism produces that one property.
 
-> `zuzozen wewem geluvom vowurel.`
+> `zuzozen wewem galunom vowurel.`
 >
 > [z-Uzozen | [w-CAUSE | g-exertion]] | v-walk
 >

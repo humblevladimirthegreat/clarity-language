@@ -68,13 +68,13 @@ With no `/b/` after a joined subject, the model is the other members: each one r
 
 When English names the **other side of a swap** (*a book for a hammer*), use the same hosted pair as *like*. The relation word is **`heham`**. Put what is given in return in `/b/` right after it. That extra noun is the other half of the trade, not who receives the book. (cue: 💱 *currency-exchange*: the arrows swap one thing for another; `/b/` is the other side)
 
-> `zuzozen degal heham behowol veham.`
+> `zuzozen danal heham behowol veham.`
 >
 > z-Uzozen | d-book | [h-in-exchange-for | b-hammer] | v-convertibility
 >
 > "Uzozen trades a book for a hammer."
 
-On a noun, the same root is **`geham`** (`degal geham behowol` *a book for a hammer*). As a plain noun, `zehal` is *a currency exchange*. As a verb, `veham` is *to trade* (the convertibility act).
+On a noun, the same root is **`geham`** (`danal geham behowol` *a book for a hammer*). As a plain noun, `zehal` is *a currency exchange*. As a verb, `veham` is *to trade* (the convertibility act).
 
 **Compare with:** a `/b/` word with no relation word before it is the recipient (*a book for Olazun* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun). *Like a duck* is [simile](#similative). *In a house* is a hook (`al`).
 
@@ -86,22 +86,22 @@ On a noun, the same root is **`geham`** (`degal geham behowol` *a book for a ham
 ### Proxy (*on behalf of*) {#proxy}
 <a id="on-behalf-of"></a>
 
-When English says someone **acts as another person’s agent** (*tells on behalf of Olazun*), use the same hosted pair as [*like*](#similative). The relation word is **`hagom`**. Put that person in `/b/` right after it. The subject does the act; `/b/` is the person they act for, not who hears the telling. (cue: 🪪 *id*: the card stands as an authorized face; `/b/` is that person)
+When English says someone **acts as another person’s agent** (*tells on behalf of Olazun*), use the same hosted pair as [*like*](#similative). The relation word is **`hanom`**. Put that person in `/b/` right after it. The subject does the act; `/b/` is the person they act for, not who hears the telling. (cue: 🪪 *id*: the card stands as an authorized face; `/b/` is that person)
 
-> `zuzozen hagom bolazun vezuyel.`
+> `zuzozen hanom bolazun vezuyel.`
 >
 > z-Uzozen | [h-on-behalf-of | b-Olazun] | v-tell
 >
 > "Uzozen speaks on behalf of Olazun."
 
-A recipient `/b/` can follow once the pair is complete: `zuzozen hagom bolazun vezuyel bahelan` (*tells Ahelan on behalf of Olazun*). On a noun, the same root is **`gagom`** (`degal gagom bolazun` *a book on behalf of Olazun*). As a plain noun, `zagol` is *an id*.
+A recipient `/b/` can follow once the pair is complete: `zuzozen hanom bolazun vezuyel bahelan` (*tells Ahelan on behalf of Olazun*). On a noun, the same root is **`ganom`** (`danal ganom bolazun` *a book on behalf of Olazun*). As a plain noun, `zanol` is *an id*.
 
 **Compare with:** a `/b/` word with no relation word before it is who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`).
 
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hagom` / `gagom`** | authorized agency | *on behalf of* | `agol` *id* | 🪪: the card stands as their face |
+| **`hanom` / `ganom`** | authorized agency | *on behalf of* | `anol` *id* | 🪪: the card stands as their face |
 
 ### Practice {#beginner-practice}
 
@@ -118,7 +118,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *walk* | `vowurel` | 🚶 |
 | *like* | `hewom` | 🪞 from *mirror*: the image is of the model |
 | *in-exchange-for* | `heham` | 💱 from *currency-exchange*: the arrows swap one side for the other |
-| *on-behalf-of* | `hagom` | 🪪 from *id*: the card stands as their face |
+| *on-behalf-of* | `hanom` | 🪪 from *id*: the card stands as their face |
 
 **Review:**
 
@@ -162,7 +162,7 @@ z-Ahelan | d-money | [h-in-exchange-for | b-knife] | v-pay
 **3.** *Olazun writes on behalf of Uzozen.*
 
 ::: details Show answer
-`zolazun hagom buzozen varayel.`
+`zolazun hanom buzozen varayel.`
 
 z-Olazun | [h-on-behalf-of | b-Uzozen] | v-write
 :::
@@ -193,7 +193,7 @@ z-Olazun | [[w-very | h-like] | b-duck] | v-peek
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zolazun hagom bahelan varal.`
+**1.** `zolazun hanom bahelan varal.`
 
 ::: details Show answer
 z-Olazun | [h-on-behalf-of | b-Ahelan] | v-pay
@@ -235,14 +235,14 @@ z-Uzozen | [[w-very | g-like] | b-duck]
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Uzozen talks to Ahelan on behalf of Olazun.* `zuzozen hagom bolazun vezuyel bahelan.` or `zuzozen hagom bahelan vezuyel bolazun.`
+**1.** *Uzozen talks to Ahelan on behalf of Olazun.* `zuzozen hanom bolazun vezuyel bahelan.` or `zuzozen hanom bahelan vezuyel bolazun.`
 
 ::: details Show answer
-`zuzozen hagom bolazun vezuyel bahelan.`
+`zuzozen hanom bolazun vezuyel bahelan.`
 
 z-Uzozen | [h-on-behalf-of | b-Olazun] | v-tell | b-Ahelan
 
-The `/b/` right after **`hagom`** is the one acted for; the next `/b/` is who hears it.
+The `/b/` right after **`hanom`** is the one acted for; the next `/b/` is who hears it.
 :::
 
 **2.** *Ahelan walks like a duck.* `zahelan hewom budozal vowurel.` or `zahelan budozal hewom vowurel.`
@@ -420,7 +420,7 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in
 
 **Compare with:**
 
-- Plain *Uzozen's*, with no particular tie, is the hook [`em`](hooks.md#genitive) (`zudozol em buzozen`). Ownership is `gagugum` + `/b/` ([joins](joins.md#scope-fence-p-join)). A need from [sakes](sakes.md) on `/ɡ/` also says the thing is the speaker's.
+- Plain *Uzozen's*, with no particular tie, is the hook [`em`](hooks.md#genitive) (`zudozol em buzozen`). Ownership is `gogunum` + `/b/` ([joins](joins.md#scope-fence-p-join)). A need from [sakes](sakes.md) on `/ɡ/` also says the thing is the speaker's.
 - Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](#locative-relations)).
 - *A house like Uzozen’s* is [simile](#similative) (`gewom`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`geham`).
 - `gobem` is a part that belongs to the thing's structure (a bone of the body); `gozowum` is a piece taken off it (a slice of bread).
@@ -469,7 +469,7 @@ A tie of care (*Uzozen's patient*, *Uzozen's team*) is **`gobolom`**: `/b/` look
 >
 > "Olazun is in Uzozen's care."
 
-**Compare with:** kin uses generation numbers ([kin generations](numbers-applied.md#kin-generations)). Plain *Uzozen's*, with the tie left unsaid, is the hook [`em`](hooks.md#genitive). Ownership is `gagugum`. *Part of* is `gobem`.
+**Compare with:** kin uses generation numbers ([kin generations](numbers-applied.md#kin-generations)). Plain *Uzozen's*, with the tie left unsaid, is the hook [`em`](hooks.md#genitive). Ownership is `gogunum`. *Part of* is `gobem`.
 
 ### Practice {#intermediate-practice}
 
@@ -500,7 +500,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *duck* | `udozal` |
 | *train* | `edavel` |
-| *ticket* | `odegel` |
+| *ticket* | `udenel` |
 | *luggage* | `elobal` |
 | *teapot* | `edodal` |
 | *wine* | `awudal` |
@@ -582,7 +582,7 @@ z-ant-x | v-sit | [h-around | b-luggage]
 *Ants sit around the luggage.*
 :::
 
-**3.** `zolazun dodegel gaham buyahel vumewol.`
+**3.** `zolazun dudenel gaham buyahel vumewol.`
 
 ::: details Show answer
 z-Olazun | [d-ticket | [g-origin | b-station]] | v-find
@@ -646,15 +646,15 @@ Both landmarks fill the one `/b/` slot after **`hedam`**, so join them with **`b
 
 English *as of Friday*, *would*, *was going to*, and *if he had* mix two times: **when the event happens**, and **which “now”** the rest of the sentence is measured from (what is still left over, what used to be the pattern, what is planned, what is forecast). Call that second one *whose-now*.
 
-Agebon keeps the two apart. With no extra marking, whose-now is **speech-now**, the moment you are speaking. To move it, write a hosted pair: **`hogam`** when you claim that moment as real (a dated entry in the record), **`hugem`** when it is only a placeholder you are not claiming. Put the moment (the snapshot) in `/b/` immediately after. (cue: 📒 *ledger* stamps a dated line in the books; 🔖 *bookmark* holds the place without stamping)
+Agebon keeps the two apart. With no extra marking, whose-now is **speech-now**, the moment you are speaking. To move it, write a hosted pair: **`henam`** when you claim that moment as real (a dated entry in the record), **`hunem`** when it is only a placeholder you are not claiming. Put the moment (the snapshot) in `/b/` immediately after. (cue: 📒 *ledger* stamps a dated line in the books; 🔖 *bookmark* holds the place without stamping)
 
-> `zolazun haram hogam b_#22,7 velurul.`
+> `zolazun haram henam b_#22,7 velurul.`
 >
 > z-Olazun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 >
 > "As of 22 July, Olazun had left and was still gone."
 
-> `zuzozen hogam b_#22,7 vuhohol al bahehal.`
+> `zuzozen henam b_#22,7 vuhohol al bahehal.`
 >
 > z-Uzozen | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 >
@@ -662,15 +662,15 @@ Agebon keeps the two apart. With no extra marking, whose-now is **speech-now**, 
 
 With nothing else marked, the sitting happens at that now.
 
-The pair covers only its own clause. To keep the same whose-now in a following `/x/` clause, repeat the **same word** with **-r** and no `/b/` (`hogar` / `huger`). A new pair with its own `/b/` replaces whose-now, whether it repeats the word or switches between `hogam` and `hugem`. A clause (or a noun or adjective, below) takes at most one *as-of* pair.
+The pair covers only its own clause. To keep the same whose-now in a following `/x/` clause, repeat the **same word** with **-r** and no `/b/` (`henar` / `huner`). A new pair with its own `/b/` replaces whose-now, whether it repeats the word or switches between `henam` and `hunem`. A clause (or a noun or adjective, below) takes at most one *as-of* pair.
 
-> `zolazun haram hogam b_#22,7 velurul. xuzozen haram hogar vowurel.`
+> `zolazun haram henam b_#22,7 velurul. xuzozen haram henar vowurel.`
 >
 > z-Olazun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Uzozen | h-RESIDUE | h-as-of.ledger | v-walk
 >
 > "As of 22 July, Olazun had left and was still gone. As of that same day, Uzozen's walk still counted too."
 
-The role letter says what the snapshot applies to: `/h/` the whole clause, `/ɡ/` one noun (`gogam` *the tab as of Friday*), and `/w/` the `/ɡ/` adjective immediately after the pair (`wogam b_#22,7 gamahum`). These are separate, so one clause may carry a clause snapshot and an adjective snapshot at once. A noun or adjective snapshot does not reach the verb: if the **verb** should also count from that now, the clause needs its own `/h/` *as-of* (or a resume).
+The role letter says what the snapshot applies to: `/h/` the whole clause, `/ɡ/` one noun (`genam` *the tab as of Friday*), and `/w/` the `/ɡ/` adjective immediately after the pair (`wenam b_#22,7 gamahum`). These are separate, so one clause may carry a clause snapshot and an adjective snapshot at once. A noun or adjective snapshot does not reach the verb: if the **verb** should also count from that now, the clause needs its own `/h/` *as-of* (or a resume).
 
 The `/b/` after the pair can be:
 
@@ -681,7 +681,7 @@ The `/b/` after the pair can be:
 
 It is never an offset from speech-now such as *three hours ago*: that would date the event without saying how you know the date, so an undated past event needs a [dated channel](knowing.md#dated-channel). The *as-of* word already carries the date, so do not also write a separate `h_#22,7` for the same snapshot. A bare `h_#…` with no pair dates the event itself ([time](numbers-applied.md#time)). A clock time, *before*, or *after* may sit beside an *as-of* pair.
 
-Do not put a bare person in `/b/` to mean “from Olazun’s now.” A person after `hagom` is [proxy](#proxy). To mean *as of when Olazun told it*, use **`barl`** and a sentence: `hogam barl zolazun vezuyel`.
+Do not put a bare person in `/b/` to mean “from Olazun’s now.” A person after `hanom` is [proxy](#proxy). To mean *as of when Olazun told it*, use **`barl`** and a sentence: `henam barl zolazun vezuyel`.
 
 Once whose-now is set, these count from it:
 
@@ -692,7 +692,7 @@ Once whose-now is set, these count from it:
 
 [MAY](knowing.md#may), [CAUSE](causation.md#cause), and every other stance still count from speech-now. Evidentials, apart from LIVE at the snapshot, still say how *you* know at speech-now.
 
-> `zuzozen zolazun zel wogam b_#22,7 gamahum.`
+> `zuzozen zolazun zel wenam b_#22,7 gamahum.`
 >
 > [z-Uzozen | z-Olazun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 >
@@ -700,13 +700,13 @@ Once whose-now is set, these count from it:
 
 Here the snapshot covers only *challenging*. It does not reach a verb: a verb in this clause would still count from speech-now unless the clause had its own `/h/` pair.
 
-> `zaral haram hogam belurul.`
+> `zaral haram henam belurul.`
 >
 > z-money | h-RESIDUE | [h-as-of.ledger | b-departure]
 >
 > "As of the departure, the money still stood."
 
-> `zuzozen hogam b_#22,7 habam belurul vuhohol al bahehal.`
+> `zuzozen henam b_#22,7 habam belurul vuhohol al bahehal.`
 >
 > z-Uzozen | [h-as-of.ledger | b-_22,7] | [h-before | b-departure] | v-sit | [in | b-house]
 >
@@ -714,13 +714,13 @@ Here the snapshot covers only *challenging*. It does not reach a verb: a verb in
 
 *Before the departure* places the sitting itself; *as of 22 July* only sets the now the clause is measured from. The two times are separate.
 
-> `zolazun vowurel ol b_#22,7. xolazun haram hogam b=_#22,7 velurul.`
+> `zolazun vowurel ol b_#22,7. xolazun haram henam b=_#22,7 velurul.`
 >
 > z-Olazun | v-walk | [at | b-_22,7] . x-Olazun | h-RESIDUE | [h-as-of.ledger | b-←_22,7] | v-departure
 >
 > "Olazun walked on 22 July. As of that day, Olazun had left and was still gone."
 
-> `zolazun haram velurul hogam barl zolazun vezuyel.`
+> `zolazun haram velurul henam barl zolazun vezuyel.`
 >
 > z-Olazun | h-RESIDUE | v-departure | [h-as-of.ledger | b-that-clause] | z-Olazun | v-tell
 >
@@ -728,7 +728,7 @@ Here the snapshot covers only *challenging*. It does not reach a verb: a verb in
 
 The speaking only sets the now; it is not what is left over.
 
-> `zolazun haram hogam b_#22,7 velurul. xuzozen thubem bral hugem b_#23,7 vowurel.`
+> `zolazun haram henam b_#22,7 velurul. xuzozen thubem bral hunem b_#23,7 vowurel.`
 >
 > z-Olazun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Uzozen | [th-PATTERN | b-later] | [h-as-of.bookmark | b-_23,7] | v-walk
 >
@@ -736,22 +736,22 @@ The speaking only sets the now; it is not what is left over.
 
 The second sentence's own pair replaces the 22 July now.
 
-An *as-of* pair inside a finished inner clause cannot be resumed later in the main clause. `hogar` on its own parses, but write it only after a clause that set whose-now with `hogam` and a `/b/`.
+An *as-of* pair inside a finished inner clause cannot be resumed later in the main clause. `henar` on its own parses, but write it only after a clause that set whose-now with `henam` and a `/b/`.
 
-**Compare with:** [*after*](dependents.md#time-poles) **`halam`** and extra-noun **`ol`** *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](causation.md#if) **`thohom`** is a condition judged at speech-now, not English *if he had* (`hugem`). [NOTIONAL](knowing.md#notional) is pretend, not a placeholder now. [Scope islands](joins.md#scope-islands-join) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the evidential, resume the *as-of*, or both.
+**Compare with:** [*after*](dependents.md#time-poles) **`halam`** and extra-noun **`ol`** *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](causation.md#if) **`thohom`** is a condition judged at speech-now, not English *if he had* (`hunem`). [NOTIONAL](knowing.md#notional) is pretend, not a placeholder now. [Scope islands](joins.md#scope-islands-join) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the evidential, resume the *as-of*, or both.
 
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`hogam` / `gogam` / `wogam`** | asserted whose-now | *as of* (dated ledger) | `ogal` *ledger* | 📒: a dated line in the books |
-| **`hugem` / `gugem` / `wugem`** | unasserted whose-now | *as of* (placeholder now) | `ugel` *bookmark* | 🔖: hold the place without stamping |
-| **`hogar` / `huger`** | resume that whose-now | *same books* | same | **-r** restates the stem; no `/b/` |
+| **`henam` / `genam` / `wenam`** | asserted whose-now | *as of* (dated ledger) | `enal` *ledger* | 📒: a dated line in the books |
+| **`hunem` / `gunem` / `wunem`** | unasserted whose-now | *as of* (placeholder now) | `unel` *bookmark* | 🔖: hold the place without stamping |
+| **`henar` / `huner`** | resume that whose-now | *same books* | same | **-r** restates the stem; no `/b/` |
 
 ### Stance as-of {#stance-as-of}
 
-A stance is yours at speech-now: `thomam` is how unsure you are **as you speak**, and a sake or feeling word is how you stand **now**. English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself. Put the same *as-of* pair on `/th/`: **`thogam`** for a real now, **`thugem`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, WANT, CAUSE, sakes, and feelings, then reads from that now. A [PLAN](intention.md#plan-predict) is then planned **from** that now, and a [DECISION](intention.md#decision) is held **at** it.
+A stance is yours at speech-now: `thomam` is how unsure you are **as you speak**, and a sake or feeling word is how you stand **now**. English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself. Put the same *as-of* pair on `/th/`: **`thenam`** for a real now, **`thunem`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, WANT, CAUSE, sakes, and feelings, then reads from that now. A [PLAN](intention.md#plan-predict) is then planned **from** that now, and a [DECISION](intention.md#decision) is held **at** it.
 
-> `zolazun thogam b_#22,7 thomam velurul.`
+> `zolazun thenam b_#22,7 thomam velurul.`
 >
 > z-Olazun | [th-as-of.ledger | b-_22,7] | th-MAY | v-departure
 >
@@ -765,40 +765,40 @@ A stance is yours at speech-now: `thomam` is how unsure you are **as you speak**
 
 `/th/` *as-of* moves only the stances. `/h/` *as-of* moves the event's books. A clause may carry one of each, so a past stance can sit next to a past event:
 
-> `zolazun thogam b_#22,7 thomam hogam b_#22,7 velurul.`
+> `zolazun thenam b_#22,7 thomam henam b_#22,7 velurul.`
 >
 > z-Olazun | [th-as-of.ledger | b-_22,7] | th-MAY | [h-as-of.ledger | b-_22,7] | v-departure
 >
 > "On 22 July, I thought Olazun might have left by then."
 
-With **`thugem`**, the stance is one you would hold, not one you held:
+With **`thunem`**, the stance is one you would hold, not one you held:
 
-> `zolazun thomam velurul thugem barl zuzozen vezuyel.`
+> `zolazun thomam velurul thunem barl zuzozen vezuyel.`
 >
 > z-Olazun | th-MAY | v-departure | [th-as-of.bookmark | b-that-clause] | z-Uzozen | v-tell
 >
 > "Once Uzozen had spoken, I'd think Olazun might leave."
 
-Resume works as on `/h/`: **`thogar`** / **`thuger`** with no `/b/` on the next `/x/` clause keeps the same stance-now.
+Resume works as on `/h/`: **`thenar`** / **`thuner`** with no `/b/` on the next `/x/` clause keeps the same stance-now.
 
 Unlike the event pair, stance *as-of* also takes a signed [offset](knowing.md#dated-channel) from speech-now in its `/b/`, because it dates only your stance, not the event. Digitless **`brul`** is *back then*, with no amount claimed:
 
-> `zolazun thogam brul thomam velurul.`
+> `zolazun thenam brul thomam velurul.`
 >
 > z-Olazun | [th-as-of.ledger | b-earlier] | th-MAY | v-departure
 >
 > "Back then, I thought Olazun might leave."
 
-Changing your mind is then a change of now, not a contradiction: *I was fairly sure on the 22nd* (`thogam`) and *I'm unsure now* (no pair) are both true.
+Changing your mind is then a change of now, not a contradiction: *I was fairly sure on the 22nd* (`thenam`) and *I'm unsure now* (no pair) are both true.
 
-**Compare with:** an evidential is how you know **at speech-now**, even under `/th/` *as-of*. Someone else's stance takes a [holder](knowing.md#holder); with one, `thogam` dates **their** stance. *I remember feeling it* is a remembering channel (`thevum`) plus `thogam`.
+**Compare with:** an evidential is how you know **at speech-now**, even under `/th/` *as-of*. Someone else's stance takes a [holder](knowing.md#holder); with one, `thenam` dates **their** stance. *I remember feeling it* is a remembering channel (`thevum`) plus `thenam`.
 
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thogam`** | stances as of a real now | *I thought / I felt (then)* | 📒: a dated line |
-| **`thugem`** | stances as of a now you are not claiming | *I would think / I'd feel* | 🔖: a held place |
-| **`thogar` / `thuger`** | resume that stance-now | *still as I saw it then* | **-r** restates |
+| **`thenam`** | stances as of a real now | *I thought / I felt (then)* | 📒: a dated line |
+| **`thunem`** | stances as of a now you are not claiming | *I would think / I'd feel* | 🔖: a held place |
+| **`thenar` / `thuner`** | resume that stance-now | *still as I saw it then* | **-r** restates |
 
 ### Practice {#advanced-practice}
 
@@ -810,8 +810,8 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *as-of.ledger* | `hogam` | 📒 from *ledger*: a dated line in the books |
-| *as-of.bookmark* | `hugem` | 🔖 from *bookmark*: hold the place without stamping |
+| *as-of.ledger* | `henam` | 📒 from *ledger*: a dated line in the books |
+| *as-of.bookmark* | `hunem` | 🔖 from *bookmark*: hold the place without stamping |
 
 **Review:**
 
@@ -823,7 +823,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *RESIDUE* | `haram` |
 | *PATTERN* | `thubem` |
 | *MAY* | `thomam` |
-| *book* | `egal` |
+| *book* | `anal` |
 | *challenge* | `amahum` |
 | *rain* | `erulal` |
 | *departure* | `velurul` |
@@ -835,7 +835,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *As of 22 July, Olazun had left and was still gone.*
 
 ::: details Show answer
-`zolazun haram hogam b_#22,7 velurul.`
+`zolazun haram henam b_#22,7 velurul.`
 
 z-Olazun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
@@ -843,7 +843,7 @@ z-Olazun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 **2.** *the book as of 22 July*
 
 ::: details Show answer
-`zegal gogam b_#22,7.`
+`zanal genam b_#22,7.`
 
 z-book | [g-as-of.ledger | b-_22,7]
 :::
@@ -851,7 +851,7 @@ z-book | [g-as-of.ledger | b-_22,7]
 **3.** *As of 22 July, Uzozen is more challenging than Olazun.*
 
 ::: details Show answer
-`zuzozen zolazun zel wogam b_#22,7 gamahum.`
+`zuzozen zolazun zel wenam b_#22,7 gamahum.`
 
 [z-Uzozen | z-Olazun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 :::
@@ -859,14 +859,14 @@ z-book | [g-as-of.ledger | b-_22,7]
 **4.** *On 22 July, I thought it might rain.* (the doubt was then)
 
 ::: details Show answer
-`thogam b_#22,7 thomam verulal.`
+`thenam b_#22,7 thomam verulal.`
 
 [th-as-of.ledger | b-_22,7] | th-MAY | v-rain
 :::
 
 #### Agebon → English {#advanced-agebon-to-english}
 
-**1.** `zahelan haram hogam b_#23,7 velurul. xuzozen haram hogar vuhohol.`
+**1.** `zahelan haram henam b_#23,7 velurul. xuzozen haram henar vuhohol.`
 
 ::: details Show answer
 z-Ahelan | h-RESIDUE | [h-as-of.ledger | b-_23,7] | v-departure . x-Uzozen | h-RESIDUE | h-as-of.ledger | v-sit
@@ -874,7 +874,7 @@ z-Ahelan | h-RESIDUE | [h-as-of.ledger | b-_23,7] | v-departure . x-Uzozen | h-R
 *As of 23 July, Ahelan had left and was still gone. As of that same day, Uzozen had sat down and was still sitting.*
 :::
 
-**2.** `thubem bral hugem b_#22,7 verulal.`
+**2.** `thubem bral hunem b_#22,7 verulal.`
 
 ::: details Show answer
 [th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain
@@ -882,7 +882,7 @@ z-Ahelan | h-RESIDUE | [h-as-of.ledger | b-_23,7] | v-departure . x-Uzozen | h-R
 *Taking 22 July as now, it would rain, going by the pattern.*
 :::
 
-**3.** `zaral haram hogam belurul.`
+**3.** `zaral haram henam belurul.`
 
 ::: details Show answer
 z-money | h-RESIDUE | [h-as-of.ledger | b-departure]
@@ -890,7 +890,7 @@ z-money | h-RESIDUE | [h-as-of.ledger | b-departure]
 *As of the departure, the money still stood.*
 :::
 
-**4.** `zolazun thomam velurul thugem barl zuzozen vezuyel.`
+**4.** `zolazun thomam velurul thunem barl zuzozen vezuyel.`
 
 ::: details Show answer
 z-Olazun | th-MAY | v-departure | [th-as-of.bookmark | b-that-clause] | z-Uzozen | v-tell
@@ -900,10 +900,10 @@ z-Olazun | th-MAY | v-departure | [th-as-of.bookmark | b-that-clause] | z-Uzozen
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *On 22 July, I thought Olazun might leave.* (the doubt was then) `zolazun thogam b_#22,7 thomam velurul.` or `zolazun hogam b_#22,7 thomam velurul.`
+**1.** *On 22 July, I thought Olazun might leave.* (the doubt was then) `zolazun thenam b_#22,7 thomam velurul.` or `zolazun henam b_#22,7 thomam velurul.`
 
 ::: details Show answer
-`zolazun thogam b_#22,7 thomam velurul.`
+`zolazun thenam b_#22,7 thomam velurul.`
 
 z-Olazun | [th-as-of.ledger | b-_22,7] | th-MAY | v-departure
 
@@ -912,13 +912,13 @@ On `/th/` the pair moves the stance; on `/h/` it moves the event's books and lea
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zuzozen hogam b_#22,7 vuhohol.` / `zuzozen hugem b_#22,7 vuhohol.`
+**1.** `zuzozen henam b_#22,7 vuhohol.` / `zuzozen hunem b_#22,7 vuhohol.`
 
 ::: details Show answer
 z-Uzozen | [h-as-of.ledger | b-_22,7] | v-sit
 
 z-Uzozen | [h-as-of.bookmark | b-_22,7] | v-sit
 
-**`hogam`** claims 22 July as a real dated entry (*as of 22 July, Uzozen sits*); **`hugem`** only takes it as a placeholder now (*taking 22 July as now, Uzozen would sit*).
+**`henam`** claims 22 July as a real dated entry (*as of 22 July, Uzozen sits*); **`hunem`** only takes it as a placeholder now (*taking 22 July as now, Uzozen would sit*).
 :::
 

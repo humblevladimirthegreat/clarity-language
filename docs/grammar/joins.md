@@ -477,7 +477,7 @@ A hook belongs to one item the same way. Put the hook and its `/b/` right after 
 
 Only the item just before the join word takes a hook this way. A hook anywhere else in the clause is an extra noun of the clause.
 
-> `zudozol zagozol zam gagugum buzozen.`
+> `zudozol zagozol zam gogunum buzozen.`
 >
 > [z-dog | z-cat | z-and.open | [g-ownership | b-Uzozen]]
 >
@@ -485,13 +485,13 @@ Only the item just before the join word takes a hook this way. A hook anywhere e
 
 A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaining](clause.md#complex-chaining).
 
-> `zudozol zagozol zam gagugum buzozen guzemol.`
+> `zudozol zagozol zam gogunum buzozen guzemol.`
 >
 > [z-dog | z-cat | z-and.open | [g-ownership | [b-Uzozen | g-sleepy]]]
 >
 > "Sleepy Uzozen's dog and cat." (and possibly more)
 
-**Compare with:** *part of* / *contents of* / *made of* / origin *from* use [of relations](relations.md#of-relations), not `agugu`. A [sakes](sakes.md) need on `/ɡ/` already means the speaker’s belonging (`guwathal` *my … serves competence*).
+**Compare with:** *part of* / *contents of* / *made of* / origin *from* use [of relations](relations.md#of-relations), not `ogunu`. A [sakes](sakes.md) need on `/ɡ/` already means the speaker’s belonging (`guwathal` *my … serves competence*).
 
 | Join family | Use of SHARED `/ɡ/` |
 |-------------|----------------------|
@@ -506,7 +506,7 @@ More items of the same role go *before* the join, not after it.
 
 SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a [scale](comparatives.md#manner-scale) after rank **`e`** / **`ue`**, equative **`oe`**, or sequence **`ae`**. After a verb join, a `/d/` object, a recipient `/b/`, or an `/h/` adverb is SHARED: every verb takes it ([verb-phrase forms](join-across-roles.md#vp-clause-forms)). Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
 
-> `zuzozen zolazun zal hahuvem vowurel.`
+> `zuzozen zolazun zal huhunem vowurel.`
 >
 > [z-Uzozen | z-Olazun | z-and] | h-intensity | v-walk
 >
@@ -831,7 +831,7 @@ With **`zul`** the two readings say the same thing: `zul gudozol gubulol.` is bo
 
 When a joined subject shares one thing marked [**`SAME`**](predication.md#identity) with no `/b/`, the members are compared with each other: they all have *the same one*.
 
-> `zuzozen zolazun zal degal gorol varayel.`
+> `zuzozen zolazun zal danal gorol varayel.`
 >
 > [z-Uzozen | z-Olazun | z-and] | [d-book | g-SAME] | v-write
 >
@@ -1169,7 +1169,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
 | *Ahelan* | `ahelan` |
-| *page* | `ebogel` |
+| *page* | `ebonel` |
 | *pen* | `abewel` |
 | *see* | `vawebol` |
 
@@ -1178,7 +1178,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *a page or a pen* (the familiar set phrase)
 
 ::: details Show answer
-`zebogel zabewel zon.`
+`zebonel zabewel zon.`
 
 NAME[z-page | z-pen | z-or-exactly-one]
 :::
@@ -1225,7 +1225,7 @@ NAME[z-equal-rank]
 *Uzozen and nothing*
 :::
 
-**3.** `zezazom zebogel zur.`
+**3.** `zezazom zebonel zur.`
 
 ::: details Show answer
 [z-imprimatur | z-page | z-something-else]
@@ -1233,7 +1233,7 @@ NAME[z-equal-rank]
 *something other than the seal and the page*
 :::
 
-**4.** `zolazun debogel dabewel dan vawebol.`
+**4.** `zolazun debonel dabewel dan vawebol.`
 
 ::: details Show answer
 z-Olazun | NAME[d-page | d-pen | d-and] | v-see
@@ -1253,10 +1253,10 @@ z-Olazun | NAME[d-page | d-pen | d-and] | v-see
 The island keeps **`zal`** on the dove alone; without braces it closes Uzozen and the dove together.
 :::
 
-**2.** *“Page and Pen”* (the familiar set phrase) `zebogel zabewel zan.` or `zebogel zabewel zal.`
+**2.** *“Page and Pen”* (the familiar set phrase) `zebonel zabewel zan.` or `zebonel zabewel zal.`
 
 ::: details Show answer
-`zebogel zabewel zan.`
+`zebonel zabewel zan.`
 
 NAME[z-page | z-pen | z-and]
 

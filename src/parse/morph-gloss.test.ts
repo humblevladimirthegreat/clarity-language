@@ -58,10 +58,10 @@ describe("morphGlossLine — clause joins go between clauses", () => {
 
 describe("morphGlossLine — SHARED only where it can describe the join", () => {
   it("leaves an /h/ after a set noun join on the verb", () => {
-    expectLine("zuzozen zolazun zal hahuvem vowurel.", "[z-Uzozen | z-Olazun | z-and] | h-intensity | v-walk");
+    expectLine("zuzozen zolazun zal huhunem vowurel.", "[z-Uzozen | z-Olazun | z-and] | h-intensity | v-walk");
   });
   it("keeps an /h/ after a rank noun join as the scale", () => {
-    expectLine("zuzozen zolazun zel hahuvem vowurel.", "[z-Uzozen | z-Olazun | z-rank/more | h-intensity] | v-walk");
+    expectLine("zuzozen zolazun zel huhunem vowurel.", "[z-Uzozen | z-Olazun | z-rank/more | h-intensity] | v-walk");
   });
   it("reads a /ɡ/ after a /ɡ/ join as the next item, so adjective lists nest", () => {
     expectLine(
@@ -70,7 +70,7 @@ describe("morphGlossLine — SHARED only where it can describe the join", () => 
     );
   });
   it("leaves an /h/ after a /ɡ/ join on the verb", () => {
-    expectLine("zudozol gerulel gamezom gal hahuvem vowurel.", "[z-dog | [g-red | g-small | g-and]] | h-intensity | v-walk");
+    expectLine("zudozol gerulel gamezom gal huhunem vowurel.", "[z-dog | [g-red | g-small | g-and]] | h-intensity | v-walk");
   });
   it("reads al / ul between number endpoints as a range", () => {
     expectLine("zudozol grarel al graval vowurel.", "[z-dog | g-three] | through | g-five | v-walk");
@@ -448,10 +448,10 @@ describe("compareMorphGloss", () => {
 
   it("values bake stance and ending grain", () => {
     expectLine("zewal gawothal", "z-present | g-relatedness-met-lasting");
-    expectLine("zabowam wagathur goyem", "z-gathering | [w-autonomy-unmet-passing | g-stimulus]");
+    expectLine("zabowam wunathur goyem", "z-gathering | [w-autonomy-unmet-passing | g-stimulus]");
     expectLine("zezuyel wuwathuraor goyem", "z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]");
     expectLine("zebewem guwathamar", "z-draft | g-competence-met-any-term-INTERNAL-SURGING");
-    expectLine("zugal wawothumuer goyem", "z-memo | [w-relatedness-unmet-modifiable-RESISTING-SURGING | g-stimulus]");
+    expectLine("zonal wawothumuer goyem", "z-memo | [w-relatedness-unmet-modifiable-RESISTING-SURGING | g-stimulus]");
     expectLine("gawothaluom", "g-relatedness-met-lasting-UNPLACED-FLOWING");
   });
 
@@ -565,7 +565,7 @@ describe("morphGlossLine — th stance letter", () => {
     expectLine("zuzozen wuzemol thugom vawebol awebolul.", "z-Uzozen | [w-sleepy | th-LIVE] | v-see | eye-leave");
     expectLine("thahum barl zuzozen vuhohol.", "[th-because | b-that-clause] | z-Uzozen | v-sit");
     expectLine("theyem barl zuzozen vuhohol.", "[th-CLUES | b-that-clause] | z-Uzozen | v-sit");
-    expectLine("thegal barl zuzozen vuhohol.", "[th-DEDUCED.strong | b-that-clause] | z-Uzozen | v-sit");
+    expectLine("thanal barl zuzozen vuhohol.", "[th-DEDUCED.strong | b-that-clause] | z-Uzozen | v-sit");
     expectLine("thubel bral barl zuzozen vuhohol.", "[th-PATTERN.strong | [b-later | b-that-clause]] | z-Uzozen | v-sit");
     expectLine("zuzozen vuhohol th(zolazun vowurel).", "z-Uzozen | v-sit | th-ASIDE[z-Olazun | v-walk]");
   });
@@ -678,7 +678,7 @@ describe("morphGlossLine — verb-phrase join items", () => {
     expectLine("h_15,30 zuzozen vowurel varuvel val.", "h-_15,30 | z-Uzozen | [v-walk | v-run | v-and]");
     expectLine("zuzozen vugudel vagedal val duredal.", "z-Uzozen | [v-cooking | v-eat | v-and | d-popcorn]");
     expectLine("zuzozen vugudel varuvel val hedurem.", "z-Uzozen | [v-cooking | v-run | v-and | h-haste]");
-    expectLine("zuzozen vugudel vagedal val bahelan hahuvem.", "z-Uzozen | [v-cooking | v-eat | v-and | b-Ahelan | h-intensity]");
+    expectLine("zuzozen vugudel vagedal val bahelan huhunem.", "z-Uzozen | [v-cooking | v-eat | v-and | b-Ahelan | h-intensity]");
     expectLine("duredal vugudel vagedal val zuzozen.", "d-popcorn | [v-cooking | v-eat | v-and] | z-Uzozen");
   });
 

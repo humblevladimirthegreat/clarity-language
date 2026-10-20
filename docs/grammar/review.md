@@ -44,7 +44,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *write* | `varayel` |
 | *swim* | `vazuvel` |
 | *night* | `anurul` |
-| *intensity* | `ahuvem` |
+| *intensity* | `uhunem` |
 | *helmet* | `ehobul` |
 | *physical* | `obal` |
 | *punch* | `vanuvul` |
@@ -209,10 +209,10 @@ Closed **`hal`** says night is the only time; open **`ham`** leaves room for oth
 **Rule:** [Only when / never](restrictors.md#only-when-never-hal)
 :::
 
-**5.** *Uzozen is more intense than Olazun.* `zuzozen zolazun zel gahuvem.` or `zolazun zuzozen zel gahuvem.`
+**5.** *Uzozen is more intense than Olazun.* `zuzozen zolazun zel guhunem.` or `zolazun zuzozen zel guhunem.`
 
 ::: details Show answer
-`zuzozen zolazun zel gahuvem.`
+`zuzozen zolazun zel guhunem.`
 
 [z-Uzozen | z-Olazun | z-rank/more | g-intensity]
 
@@ -643,7 +643,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *station* | `uyahel` |
 | *cook* | `vuguyel` |
 | *sit* | `vuhohol` |
-| *as-of.ledger* | `hogam` |
+| *as-of.ledger* | `henam` |
 | *REPORTED* | `thebam` |
 | *MEMORY* | `thevum` |
 | *hour* | `agorum` |
@@ -668,7 +668,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **2.** *As of 3 May, Uzozen is sitting in a school.*
 
 ::: details Show answer
-`zuzozen hogam b_#3,5 vuhohol al buzahal.`
+`zuzozen henam b_#3,5 vuhohol al buzahal.`
 
 z-Uzozen | [h-as-of.ledger | b-_3,5] | v-sit | [in | b-school]
 

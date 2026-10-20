@@ -19,7 +19,7 @@ English *someone who teaches* names a person from what they do, from the same id
 
 The last letter is the ordinary [word ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** its abstract sense. `zaxuduyel` is *someone who teaches*; `zaxavuvul` is *someone who fights*; `zaxavuvum` is *someone who struggles*. No teaching or fight needs to come up earlier in the conversation, and the word says nothing about how often: one lesson is enough.
 
-When the event is a dictionary word built from two roots, the role compound takes the whole word as its stem: `zaxegalawebol` is *someone who reads*, from `egalawebol` *read*.
+When the event is a dictionary word built from two roots, the role compound takes the whole word as its stem: `zaxanalawebol` is *someone who reads*, from `analawebol` *read*.
 
 A noun that specifies the event goes in the same stem, before the event and joined to it with another **`x`**: `zaxudozoxowurel` is *someone who walks dogs* (the doer of *dog-walking*). The noun's part in the event is as open as in English (*dog walker*, *coffee maker*); for an exact part, use a [hook](hooks.md#extra-noun) or a second sentence. **-r** resumes the whole stem.
 
@@ -605,7 +605,7 @@ English *up* / *down* usually follows the pull of gravity, not anyone’s facing
 
 English *left of the tree, from Uzozen’s view* needs both a facing person and a landmark. Put the facing person after **`th`**; put the tree, door, or wall in `/b/`. The `/b/` word is the landmark, not whose left it is.
 
-> `zegal gowuhethuzozen bedalel.`
+> `zanal gowuhethuzozen bedalel.`
 >
 > z-book | [g-west-th-Uzozen | b-tree]
 >

@@ -12,15 +12,15 @@ English doesn't mark whether a claim was seen, remembered, worked out, or heard 
 | `thevum` | from memory (you sensed it before) |
 | `thubem` | from the pattern (similar cases you know of) |
 | `theyem` | worked out from clues about this case |
-| `thegam` | deduced: it must follow from what you already grant |
+| `thanam` | deduced: it must follow from what you already grant |
 | `thebam` | reported: someone told you, or you read it |
 | `thabom` | intuition: a gut sense |
 
 Seven channels is a menu; you don't need to memorize it. A recording counts as your own senses: `thugom` while you watch it, `thevum` once you have. A document counts as a report.
 
-Clues and a deduction are not the same. Clues make a claim likely, and it can still fail with every clue true. A deduction can't fail unless something it starts from is false. Save `thegam` for *it follows*, *so it must be*, not for *it's obvious*.
+Clues and a deduction are not the same. Clues make a claim likely, and it can still fail with every clue true. A deduction can't fail unless something it starts from is false. Save `thanam` for *it follows*, *so it must be*, not for *it's obvious*.
 
-Swap the ending to say **how strong the evidence is**: **-l** strong, **-m** the default, **-r** weak. `thebar` is a rumor, `thevul` is a vivid memory, and `thabor` is a faint hunch. For a pattern, `thubel` is a well-established one and `thuber` rests on a few cases. For a deduction, the ending grades how far you checked the steps: `thegal` you could show every step, `thegar` it seems to follow but you haven't checked. Strength is how much the claim rests on, not how likely the event is. A solid source can still report something unlikely.
+Swap the ending to say **how strong the evidence is**: **-l** strong, **-m** the default, **-r** weak. `thebar` is a rumor, `thevul` is a vivid memory, and `thabor` is a faint hunch. For a pattern, `thubel` is a well-established one and `thuber` rests on a few cases. For a deduction, the ending grades how far you checked the steps: `thanal` you could show every step, `thanar` it seems to follow but you haven't checked. Strength is how much the claim rests on, not how likely the event is. A solid source can still report something unlikely.
 
 This is the same settled-to-passing scale as in How sure are you?: solid evidence is lasting (**-l**), and a rumor could shift at any moment (**-r**).
 
@@ -71,7 +71,7 @@ Something's wrong `thabom`.
 **5.** *The package was delivered to the old address.* (it must have been, given the address on the order; you traced every step)
 
 ::: details Show answer
-The package was delivered to the old address `thegal`.
+The package was delivered to the old address `thanal`.
 :::
 
 <!-- Source (editors): knowing.md#evidentiality, knowing.md#evidence-strength, knowing.md#carry-forward, knowing.md#deduction. -->

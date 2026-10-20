@@ -239,7 +239,7 @@ Tokens here are **stems for matching** (path allowlist / leak checks). Learner b
 | `uzoze` / `olazu` / `ahela` | names **Uzozen** / **Olazun** / **Ahelan** |
 | `udozo` | *dog* |
 | `agozo` | *cat* |
-| `ega` | *book* |
+| `ana` | *book* |
 | `aheha` | *house* |
 | `ogugo` | *inclusion* / *inside* (**-m**) |
 | `ubule` | *blue* |
@@ -280,7 +280,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 5 | `clause.md` | **exists** | PoS letters; SVO; `/ɡ/` after noun; `/w/`; `/h/`; hosted `/ɡ|h/`+`/b/` (*like*); unhosted `/b/` recipient/addressee; house names; **-l** / **-m** / **-n** as used in examples | Do not use **`gl-`**, **`darl`**, `/x/`, nested **`barl`**, letter **-r** mechanism, **-x**, joins. Greeting citations are word-endings. No conversation-length **`x`** vowel |
 | 6 | `speech-moves.md` | **exists** | Turn start; call a person; conventional interjection; statement / question / command / prohibition; omit recoverable **`yal`** | Recycle clause bodies and house names; no hooks, polar stance, soft forms, or numbers |
 | 7 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`thahum` / `thohom` / `thehem` / `hezom` / `herem` / `harum` / `habam` / `halam` / `hovam` **`barl`**; *despite* = **`hezom`** + `/b/` noun); `/x/` continue vs `/y/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`barl`**, letter **-r** mechanism. Recycle speech-moves **`yol`/`yel`/`yul`** |
-| 13 | `relations.md` | **exists** | Hosted pair for simile **`hewom`**, exchange **`heham`**, proxy **`hagom`** | Recycle clause hosted `/b/` and hooks extra-noun. No *between*, no of-relations, no **`barl`**. Not **`hahebam`** |
+| 13 | `relations.md` | **exists** | Hosted pair for simile **`hewom`**, exchange **`heham`**, proxy **`hanom`** | Recycle clause hosted `/b/` and hooks extra-noun. No *between*, no of-relations, no **`barl`**. Not **`hahebam`** |
 | 8 | `pronouns.md` | **exists** | Whole-stem **-r**; role pointers (`zaxar`, `duxar`, `daxer`, `zaxor`); specials **`uwo` / `awa` / `aya` / `umo`** (when the *role* is the point); inclusive *we* **`aya`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
 | 8 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aya`** as the *not this* for inclusive *we*. **`uwo`/`awa`** only on person-role items |
 | 9 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zudozol`; identity **`gorol` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`azawdavraga` / `uzuda`) OK if already taught in this stage |
@@ -311,7 +311,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 6 | `speech-moves.md` | Intermediate | **exists** | **`yam`/`yom`/`yem`/`yum`**; opening hooks before an act word; number-as-interjection pointer only if the stage’s examples already show it | Do not require numbers Intermediate readings |
 | 7 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xahem`, `xezom`, …); nested **`barl`**; stand-in vowels | Recycle Beginner **`darl`/`barl`** |
 | 13 | `relations.md` | Intermediate | **exists** | *between* **`hedam`**; of-relations (`gobem`, `gadam`, `gulem`, `gaham`); recycle extra-noun hooks for other place talk | *Between* recycles joins Beginner `/b/` join |
-| 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`hogam` / `hugem`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, forecast, calendar `b_#…`. Not persist hooks |
+| 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`henam` / `hunem`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, forecast, calendar `b_#…`. Not persist hooks |
 | 4 | `word-endings.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); full names (given + `/ɡ/` family **-n**) and hyphenated names `ROOTxROOT`+**-n**; [titled phrases](../grammar/word-endings.md#titled-phrases) (hook / join / span **-n**, inner **-l** / **-m**) | Not value/ability/plan ending tables |
 | 4 | `word-endings.md` | Advanced | skip | — | no Advanced stage |
 | 9 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aya`** vs name join vs name…**-x** | |
@@ -365,7 +365,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Conversation-length bid **`…xan` / `…xon` / `…xen` / `…xun`** on a citation or vocative | `compounds.md` Intermediate |
 | **`gl-`**, **`yam`/`yom`/`yem`/`yum`** as a *speech-act* system | `clause.md` Intermediate |
 | Locative relations; of-relations (`gobem` / `gadam` / `gulem` / `gaham`) | `relations.md` Intermediate |
-| Hosted *as-of* (`hogam` / `hugem`) | `relations.md` Advanced |
+| Hosted *as-of* (`henam` / `hunem`) | `relations.md` Advanced |
 | Remaining `/x/` linkers, nested **`barl`**, stand-in vowels | `dependents.md` Intermediate |
 | **-l** / **-m** / **-n** as a *choice* on a citation | `word-endings.md` Beginner |
 | Whole-stem **-r** and role pointers; **`uwo`/`awa`/`aya`/`umo`** | `pronouns.md` Beginner |

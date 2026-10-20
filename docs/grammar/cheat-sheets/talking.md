@@ -129,7 +129,7 @@ The blank **-r** takes a vowel; the count is how many items you listed before it
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Report a question](../questions.md#embedded-whether) | `zuzozen vawebol dorl zolazun vowurel.` | *Uzozen sees whether Olazun walks.* | B |
-| [Blank belongs to *whether*](../questions.md#blank-in-dependent) | `yol zawan vegam dorl zar vowurel.` | *Do you know who walks?* | I |
+| [Blank belongs to *whether*](../questions.md#blank-in-dependent) | `yol zawan vanam dorl zar vowurel.` | *Do you know who walks?* | I |
 | [Blank belongs to the outer question](../questions.md#blank-in-dependent) | `yol zawan vevemol darl zar vowurel.` | *Who do you think walks?* | I |
 | [Question you don't want answered](../questions.md#rhetorical): `yal` before `yol` | `yal yol zar vegemal.` | *Who cares?* (nobody) | I |
 | [Musing](../questions.md#rhetorical) | `yam yol zar vegemal.` | *Who really cares, though?* | I |

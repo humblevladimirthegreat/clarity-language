@@ -64,7 +64,7 @@ English *two meters taller* still ranks two people on one quality, and it also n
 
 To score the shared adjective as of a dated now, write [*as-of*](relations.md#as-of) on `/w/` immediately before that `/ɡ/` word, with `/b/` between them. That snapshot does not retarget the verb; the clause still needs `/h/` *as-of* if the event also scores against that now.
 
-> `zuzozen zolazun zel wogam b_#22,7 gamahum.`
+> `zuzozen zolazun zel wenam b_#22,7 gamahum.`
 >
 > [z-Uzozen | z-Olazun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 >
@@ -229,7 +229,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 | *carefully* | `hayulem` |
 | *gently* | `hegemam` |
 | *properly* / *correctly* | `hogugol` |
-| *properly* (*up to standard*) | the doer, then `thugal zoel hogugol` (as correctly as the rules require) |
+| *properly* (*up to standard*) | the doer, then `thonal zoel hogugol` (as correctly as the rules require) |
 | *precisely* / *accurately* | `hubugom` |
 | *neatly* / *in an orderly way* | `henodam` |
 | *seriously* | `hozedom` |
@@ -253,19 +253,19 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 >
 > "Uzozen walks carefully."
 
-The easy / hard pair on a quality ranks effort against a bar ([vague amounts](comparatives.md#vague-amounts)): `zegal thubem zuel guzubam` is *the book is easy* (less effort than usual), and `zel` in place of `zuel` is *hard*.
+The easy / hard pair on a quality ranks effort against a bar ([vague amounts](comparatives.md#vague-amounts)): `zanal thubem zuel guzubam` is *the book is easy* (less effort than usual), and `zel` in place of `zuel` is *hard*.
 
 *Hard to* + a verb puts the same effort scale on whoever would do it: they can, but only with more effort than usual. Write the doer as the ranked item, the bar, the rank word and **`huzubam`**, then the verb with [*can*](intention.md#can) **`xa`**.
 
-> `zuzozen thubem zel huzubam degal varayexal.`
+> `zuzozen thubem zel huzubam danal varayexal.`
 >
 > [z-Uzozen | th-PATTERN | z-rank/more | h-effort] | d-book | v-write-able
 >
 > "The book is hard for Uzozen to write."
 
-*Properly* in the sense of *up to standard* names the standard as a bar ([every bar](comparatives.md#stance-bars)): REQUIRE **`thugal`** is the rule, and a tie meets it. Use **`thugar`** for what is customary.
+*Properly* in the sense of *up to standard* names the standard as a bar ([every bar](comparatives.md#stance-bars)): REQUIRE **`thonal`** is the rule, and a tie meets it. Use **`thonar`** for what is customary.
 
-> `zuzozen thugal zoel hogugol varayel.`
+> `zuzozen thonal zoel hogugol varayel.`
 >
 > [z-Uzozen | th-REQUIRE-rule | z-equal-rank | h-correct] | v-write
 >
@@ -352,7 +352,7 @@ English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an 
 | *picky* / *choosy* / *particular* (fussy) | `thubem zel guhugom` (more selective than usual) |
 | *major* / *significant* (matters more than usual) | `thubem zel gurethal` ([important](say-reasons.md#sake-words)) |
 
-> `zegal thubem zel goderom.`
+> `zanal thubem zel goderom.`
 >
 > [z-book | th-PATTERN | z-rank/more | g-cost]
 >
@@ -415,7 +415,7 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 | *crowd* | `zeyolx thubem zel gral` | people, more than usual |
 | *pair* (two of a kind) | `zudozolx g+2` | two dogs |
 | *couple* (two people who are together) | `zagayal` | the everyday sense of `agaya` |
-| *titled group* (the group named Ehuvan) | `zehuvanx` | named, **-nx** |
+| *titled group* (the group named Ahunan) | `zahunanx` | named, **-nx** |
 | *member* (of a group) | `gobem` + `/b/` group | part of the group |
 | *member* (unspecified, of a menu or list) | `zor` | anything among the listed |
 | *list* (*a list of cats and dogs*) | `zagozol zudozol zal` | an and-list |
@@ -435,11 +435,11 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 >
 > "There is a crowd." (more people than usual)
 
-> `zuzozen gobem behuvanx vowurel.`
+> `zuzozen gobem bahunanx vowurel.`
 >
-> [z-Uzozen | [g-part-of | b-Ehuvan-x]] | v-walk
+> [z-Uzozen | [g-part-of | b-Ahunan-x]] | v-walk
 >
-> "Uzozen, a member of the group Ehuvan, walks."
+> "Uzozen, a member of the group Ahunan, walks."
 
 **Compare with:** a named group needs its own name (**-nx**). *A few* or *several* is an approximate number ([how many](#quantity-words)).
 
@@ -485,7 +485,7 @@ Use **`harum`** for *until* / *till*, **`hevahum`** for *by*, **`habam`** for *b
 
 **Needs:** [Time](numbers-applied.md#time) · [*as-of*](relations.md#as-of)
 
-Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftover, climate, plan, and forecast score against is [*as-of*](relations.md#as-of) (`hogam` / `hugem` plus `/b/`). Put the date on that pole (`hogam b_#22,7`); do not also write spare `h_#22,7` for the same snapshot. Clock / *before* / *after* may sit beside *as-of*: books vs event-when are different jobs.
+Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftover, climate, plan, and forecast score against is [*as-of*](relations.md#as-of) (`henam` / `hunem` plus `/b/`). Put the date on that pole (`henam b_#22,7`); do not also write spare `h_#22,7` for the same snapshot. Clock / *before* / *after* may sit beside *as-of*: books vs event-when are different jobs.
 
 ## Brainstorming {#brainstorming}
 
@@ -532,7 +532,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *Olazun* | `olazun` | |
 | *Ahelan* | `ahelan` | |
 | *heavy* | `arolom` | `arolol` *rock* |
-| *exertion* | `eluvom` | `eluvol` *lift* |
+| *exertion* | `alunom` | `alunol` *lift* |
 | *gram* | `eberom` | `eberol` *pound* |
 
 #### English → Agebon {#amounts-comparing-english-to-agebon}
@@ -563,7 +563,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 #### Agebon → English {#amounts-comparing-agebon-to-english}
 
-**1.** `zolazun zahelan zal geluvom.`
+**1.** `zolazun zahelan zal galunom.`
 
 ::: details Show answer
 
@@ -594,21 +594,21 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *Uzozen* | `uzozen` | |
 | *Olazun* | `olazun` | |
 | *challenge* | `gamahum` | |
-| *as-of.ledger* | `wogam` | |
+| *as-of.ledger* | `wenam` | |
 
 #### English → Agebon {#amounts-snapshot-english-to-agebon}
 
 **1.** *As of 22 July, Uzozen is more challenging than Olazun.*
 
 ::: details Show answer
-`zuzozen zolazun zel wogam b_#22,7 gamahum.`
+`zuzozen zolazun zel wenam b_#22,7 gamahum.`
 
 [z-Uzozen | z-Olazun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 :::
 
 #### Agebon → English {#amounts-snapshot-agebon-to-english}
 
-**1.** `zuzozen zolazun zel wogam b_#22,7 gamahum.`
+**1.** `zuzozen zolazun zel wenam b_#22,7 gamahum.`
 
 ::: details Show answer
 

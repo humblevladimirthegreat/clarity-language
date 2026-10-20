@@ -118,7 +118,7 @@ Source: [comparatives.md](../grammar/comparatives.md#bars)
 
 Source: [relations.md](../grammar/relations.md)
 
-- **open:** a relation root on `/w/` with `/b/` (`wewom buzozen`). Only the as-of pair (`wogam` / `wugem`) takes `/b/` on `/w/`. No learner reaches for it: *as big as Uzozen* is the equative, and *like Uzozen* goes on the noun (`gewom`) or the verb (`hewom`).
+- **open:** a relation root on `/w/` with `/b/` (`wewom buzozen`). Only the as-of pair (`wenam` / `wunem`) takes `/b/` on `/w/`. No learner reaches for it: *as big as Uzozen* is the equative, and *like Uzozen* goes on the noun (`gewom`) or the verb (`hewom`).
 - **closed (D-34):** a social tie on `/h/` (`humayam buzozen` *as a friend of Uzozen*).
 
 ## Hooks — in-clause
@@ -178,7 +178,7 @@ Source: [pronouns.md](../grammar/pronouns.md), [plurality.md](../grammar/plurali
 
 - **open:** **-x** on `/h/` / `/w/` and the six linkers. An adverb, a degree word, or a linker names no group.
 - **closed (D-37):** **-x** on a `/th/` stance word.
-- **closed (D-42):** `/th/` on the record or scroll root (`thegom`, `thogem`, any ending but **-n**). Parser: `retiredChannelRoot`.
+- **closed (D-42):** `/th/` on the record or scroll root (`thegom`, `thonem`, any ending but **-n**). Parser: `retiredChannelRoot`.
 - **open:** **-x** on an interjection (`/y/` **-l** / **-m**). An interjection addresses no one.
 - **open:** the nonspecific *someone* `umon` as a topic or with **-x** (`xumon`, `umonx`). `umon` names no particular person or group: a topic is someone in particular, and *some people* is `zeyolx`.
 - **open:** the topic pronoun as a topic word or a resume (`xalon`, `zalor`). The topic pronoun is the topic itself, so there is nothing to set or return to.
@@ -204,7 +204,7 @@ An **-r** grade on a closed root without its own **-r** would take away the live
 - **open:** clause-pole **-l** beyond *because* (`thahul`) and *by* (`arul`). Neither guess fits these poles. The nearest, *if* **-l** as *by rule* (`thohol`), is not a stronger *if* but a rule, which `thohom` plus a deontic says.
 - **open:** CAUSE **-l** as *compel* (`thewel`). **-l** is not guessable here, and refused consent plus CAUSE ([consent](../grammar/sakes.md#consent)) says more: it names whose will was overridden.
 - **open:** RESIDUE and FORMER **-l** (`tharal`, `thelal`). Two guesses compete: *for good*, as on the phasals (`havol`), and *strong*, as on the channels.
-- **open:** **-l** on exchange (`eha`), proxy (`ago`), the of-relations, the locatives, stimulus (`oye`), and *respectively* (`uba`). *Strongest* is the only guess, and none of these has needed it (*exactly between*?).
+- **open:** **-l** on exchange (`eha`), proxy (`ano`), the of-relations, the locatives, stimulus (`oye`), and *respectively* (`uba`). *Strongest* is the only guess, and none of these has needed it (*exactly between*?).
 
 ## Stand-ins and dependents
 
@@ -249,7 +249,7 @@ Source: [spans.md](../grammar/spans.md)
 
 Source: [sakes.md](../grammar/sakes.md)
 
-- **open:** forced listener / third-person possessives on sake ascription. A `/ɡ/` sake already means the speaker's belonging ([personal possession](../grammar/sakes.md#personal-possession)); anyone else's noun is **`goyem`** or ownership (`gagugum`), so a second possessive reading would compete.
+- **open:** forced listener / third-person possessives on sake ascription. A `/ɡ/` sake already means the speaker's belonging ([personal possession](../grammar/sakes.md#personal-possession)); anyone else's noun is **`goyem`** or ownership (`gogunum`), so a second possessive reading would compete.
 - **open:** a sake word on `/z/` `/d/` `/b/` `/v/` `/h/` `/x/` `/y/` (`sakeSlot`). A sake word is a stance on a belonging, an unowned noun, or the clause, and these slots are none of those. *Walks healthily* is the clause stance (`thobatham`).
 - **open:** prescription **`the`** on a noun (`gawothel`, `wawothel goyem`). Its endings are the warrant for a move, and a noun is not a move; what a noun is for is **`tho`** (`gawothom`).
 - **closed (D-36):** **-n** on a sake word.

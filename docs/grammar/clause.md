@@ -181,7 +181,7 @@ The word bank has two tables. **New words** are introduced here: **English** is 
 | *Ahelan* | `ahelan` |
 | *find* | `vumewol` |
 | *eraser* | `urewul` |
-| *book* | `egal` |
+| *book* | `anal` |
 | *bell* | `eboral` |
 
 #### English → Agebon {#beginner-english-to-agebon}
@@ -262,7 +262,7 @@ z-Olazun | d-bell | v-find | [h-like | b-Uzozen]
 *Olazun finds a bell, like Uzozen.*
 :::
 
-**4.** `zahelan thevemom degal vumewol.`
+**4.** `zahelan thevemom danal vumewol.`
 
 ::: details Show answer
 z-Ahelan | th-doubt | d-book | v-find
@@ -461,7 +461,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *ticket* | `odegel` | 🎫 |
+| *ticket* | `udenel` | 🎫 |
 | *train* | `edavel` | 🚆 |
 | *blue* | `ubulel` | 🔵 |
 | *stand* | `vawuvol` | 🧍 |
@@ -517,7 +517,7 @@ z-Ahelan | d-train | h-again | v-see
 **4.** *A ticket was seen.*
 
 ::: details Show answer
-`dodegel vawebol.`
+`dudenel vawebol.`
 
 d-ticket | v-see
 :::
@@ -580,7 +580,7 @@ z-train | h-again | v-stand
 *A train stands still again.*
 :::
 
-**6.** `zahelan dodegel gorol vawebol.`
+**6.** `zahelan dudenel gorol vawebol.`
 
 ::: details Show answer
 z-Ahelan | [d-ticket | g-SAME] | v-see

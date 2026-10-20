@@ -1,6 +1,6 @@
 sense_form,pos,emoji,kind,gloss,definition,mnemonic,anchor
-agam,th,🗳️,sake,autonomy,autonomy sake (choice / agency),ballot records choice; choice is agency and self-direction,sakes.md#word-shape
-agam,w,🗳️,sake,autonomy,autonomy sake (choice / agency),ballot records choice; choice is agency and self-direction,sakes.md#personal-possession
+unam,th,🗳️,sake,autonomy,autonomy sake (choice / agency),ballot records choice; choice is agency and self-direction,sakes.md#word-shape
+unam,w,🗳️,sake,autonomy,autonomy sake (choice / agency),ballot records choice; choice is agency and self-direction,sakes.md#personal-possession
 uwam,th,🧰,sake,competence,competence sake (readiness / efficacy),a tool readies you for the job; readiness is prepared skill,sakes.md#word-shape
 uwam,w,🧰,sake,competence,competence sake (readiness / efficacy),a tool readies you for the job; readiness is prepared skill,sakes.md#personal-possession
 urem,th,🧭,sake,purpose,purpose sake (direction / meaning),compass gives a heading; direction is an aim that matters,sakes.md#word-shape
@@ -41,12 +41,12 @@ eyer,th,🕵️,evidential,CLUES.weak,clues evidential with weak evidence (a wea
 eyem,w,🕵️,evidential,CLUES,clues evidential (reasoned from clues about this case),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
 eyel,w,🕵️,evidential,CLUES.strong,clues evidential with strong evidence (strong clues),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
 eyer,w,🕵️,evidential,CLUES.weak,clues evidential with weak evidence (a weak clue),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
-egam,th,📖,evidential,DEDUCED,deduced evidential (follows from the premises),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#evidentiality
-egal,th,📖,evidential,DEDUCED.strong,deduced evidential with strong evidence (every step could be shown),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#evidence-strength
-egar,th,📖,evidential,DEDUCED.weak,deduced evidential with weak evidence (seems to follow; steps unchecked),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#evidence-strength
-egam,w,📖,evidential,DEDUCED,deduced evidential (follows from the premises),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#mood-on-one-adjective
-egal,w,📖,evidential,DEDUCED.strong,deduced evidential with strong evidence (every step could be shown),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#mood-on-one-adjective
-egar,w,📖,evidential,DEDUCED.weak,deduced evidential with weak evidence (seems to follow; steps unchecked),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#mood-on-one-adjective
+anam,th,📖,evidential,DEDUCED,deduced evidential (follows from the premises),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#evidentiality
+anal,th,📖,evidential,DEDUCED.strong,deduced evidential with strong evidence (every step could be shown),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#evidence-strength
+anar,th,📖,evidential,DEDUCED.weak,deduced evidential with weak evidence (seems to follow; steps unchecked),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#evidence-strength
+anam,w,📖,evidential,DEDUCED,deduced evidential (follows from the premises),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#mood-on-one-adjective
+anal,w,📖,evidential,DEDUCED.strong,deduced evidential with strong evidence (every step could be shown),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#mood-on-one-adjective
+anar,w,📖,evidential,DEDUCED.weak,deduced evidential with weak evidence (seems to follow; steps unchecked),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#mood-on-one-adjective
 ebam,th,👂,evidential,REPORTED,reported evidential (hearsay / said or written by someone else / reportative),ear enables listening; taking in what others pass on under /th/ is the reported channel,knowing.md#evidentiality
 ebal,th,👂,evidential,REPORTED.strong,reported evidential with strong evidence (reliable source),ear enables listening; taking in what others pass on under /th/ is the reported channel,knowing.md#evidence-strength
 ebar,th,👂,evidential,REPORTED.weak,reported evidential with weak evidence (rumor),ear enables listening; taking in what others pass on under /th/ is the reported channel,knowing.md#evidence-strength
@@ -112,22 +112,22 @@ alam,g,⌛,clause_pole,after,AFTER clause pole (just-after),the sand has just ru
 ovam,h,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#poles
 ovam,g,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#poles
 ahem,h,➡️,clause_pole,so-result,SO-THAT-RESULT clause pole (outcome that follows from the host),east is the way things move on; the dependent is what the host led to,dependents.md#result-pole
-ogam,h,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
-ogam,g,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
-ogam,w,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
-ogam,th,📒,clause_pole,as-of.ledger,AS-OF stance pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#stance-as-of
-ogar,h,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#as-of
-ogar,g,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#as-of
-ogar,w,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#as-of
-ogar,th,📒,clause_pole,as-of.ledger,AS-OF stance pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#stance-as-of
-ugem,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#as-of
-ugem,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#as-of
-ugem,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#as-of
-ugem,th,🔖,clause_pole,as-of.bookmark,AS-OF stance pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#stance-as-of
-uger,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
-uger,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
-uger,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
-uger,th,🔖,clause_pole,as-of.bookmark,AS-OF stance pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#stance-as-of
+enam,h,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
+enam,g,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
+enam,w,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
+enam,th,📒,clause_pole,as-of.ledger,AS-OF stance pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#stance-as-of
+enar,h,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#as-of
+enar,g,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#as-of
+enar,w,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#as-of
+enar,th,📒,clause_pole,as-of.ledger,AS-OF stance pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#stance-as-of
+unem,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#as-of
+unem,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#as-of
+unem,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#as-of
+unem,th,🔖,clause_pole,as-of.bookmark,AS-OF stance pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#stance-as-of
+uner,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
+uner,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
+uner,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
+uner,th,🔖,clause_pole,as-of.bookmark,AS-OF stance pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#stance-as-of
 ewem,th,⚙️,cause,CAUSE,CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make),a machine runs on mechanism; mechanism frames how the link works,causation.md#cause
 ewem,w,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),a machine runs on mechanism; mechanism frames how the link works,causation.md#cause
 an,v,,join_act,includes,join-act includes or adds object,set join a+n as verb; includes adds this object to the set,join-across-roles.md#join-act-verbs
@@ -172,8 +172,8 @@ ewol,h,🪞,similative,exactly-like,similative exactly like (manner match),mirro
 ewol,g,🪞,similative,exactly-like,similative exactly like (type match),mirror shows a reflection; -l locks the match to the model in /b/,relations.md#exactly-like
 eham,h,💱,exchange,in-exchange-for,exchange in-exchange-for (consideration / countervalue),currency arrows swap one for another; in-exchange-for is the other side of the swap in /b/,relations.md#exchange
 eham,g,💱,exchange,in-exchange-for,exchange in-exchange-for (consideration / countervalue),currency arrows swap one for another; in-exchange-for is the other side of the swap in /b/,relations.md#exchange
-agom,h,🪪,proxy,on-behalf-of,proxy on-behalf-of (authorized agency),id card stands as an authorized face; on-behalf-of is whose agency /b/ holds,relations.md#proxy
-agom,g,🪪,proxy,on-behalf-of,proxy on-behalf-of (authorized agency),id card stands as an authorized face; on-behalf-of is whose agency /b/ holds,relations.md#proxy
+anom,h,🪪,proxy,on-behalf-of,proxy on-behalf-of (authorized agency),id card stands as an authorized face; on-behalf-of is whose agency /b/ holds,relations.md#proxy
+anom,g,🪪,proxy,on-behalf-of,proxy on-behalf-of (authorized agency),id card stands as an authorized face; on-behalf-of is whose agency /b/ holds,relations.md#proxy
 oyem,g,☝️,stimulus,stimulus,stimulus (sake about a noun you do not possess),pointing finger marks the thing you are scoring; stimulus is the noun as a sake-target not a belonging,sakes.md#personal-possession
 obem,h,🦴,of_relation,part-of,of-relation part-of (constitutive piece),bone is a piece of the body; part-of is the meronym in /b/'s whole,relations.md#of-relations
 obem,g,🦴,of_relation,part-of,of-relation part-of (constitutive piece),bone is a piece of the body; part-of is the meronym in /b/'s whole,relations.md#of-relations
@@ -189,9 +189,9 @@ oler,th,🟢,deontic,PERMIT-tolerated,tacit permission (no one objected; nobody 
 egul,th,⛔,deontic,FORBID-disallowed,disallowed by a rule policy or formal ban,standing no-entry sign; the rule blocks the way,sakes.md#permission
 egum,th,⛔,deontic,FORBID-forbidden,forbidden by a person (speaker by default or the /b/ forbidder),no-entry sign put up by someone; a person blocks the way,sakes.md#permission
 egur,th,⛔,deontic,FORBID-frowned-on,tacitly disapproved (no one forbade it outright),no-entry sign half-raised; nobody said no but it is not welcome,sakes.md#permission
-ugal,th,📝,deontic,REQUIRE-rule,required by a rule policy or law (no one in particular demands it),memo of standing policy; a rule on paper says you must,sakes.md#requirement
-ugam,th,📝,deontic,REQUIRE-demanded,required by a person (speaker by default or the /b/ who demands it),memo handed to you by someone; a person says you must,sakes.md#requirement
-ugar,th,📝,deontic,REQUIRE-expected,expected by custom (no rule and no one demanding it),unwritten memo everyone knows; you are supposed to,sakes.md#requirement
+onal,th,📝,deontic,REQUIRE-rule,required by a rule policy or law (no one in particular demands it),memo of standing policy; a rule on paper says you must,sakes.md#requirement
+onam,th,📝,deontic,REQUIRE-demanded,required by a person (speaker by default or the /b/ who demands it),memo handed to you by someone; a person says you must,sakes.md#requirement
+onar,th,📝,deontic,REQUIRE-expected,expected by custom (no rule and no one demanding it),unwritten memo everyone knows; you are supposed to,sakes.md#requirement
 uxolel,h,🟢,deontic,CONSENT-contract,consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms,green light signed in advance by the one it happens to; they agreed on paper,sakes.md#consent
 uxolem,h,🟢,deontic,CONSENT-given,consent given outright by the affected (the /b/ or else the actor); revocable any time,green light from the one it happens to; they said yes,sakes.md#consent
 uxoler,h,🟢,deontic,CONSENT-assumed,consent assumed or inferred from the affected (the /b/ or else the actor),green light guessed from the one it happens to; I think they're OK with it,sakes.md#consent

@@ -131,11 +131,11 @@ Who counts as an associate is [open unless you say](../plurality.md#associate-re
 | [One shared act](../plurality.md#verbs-v) | `zuzozenx vezuyolx` | *they sing as one performance* | I |
 | [Joint doing, others unnamed](../plurality.md#verbs-v) | `zuzozen vezuyolx` | *Uzozen sings jointly* | I |
 | [The group as one unit](../plurality.md#verbs-v) | `zavayal vowurelx` | *the family walks as one unit* | I |
-| [Property of each member](../plurality.md#adjectives-g) | `zavogal zuwal zal garolom` | *the file-box and the toolbox are each heavy* | I |
-| [Property of the whole](../plurality.md#adjectives-g) | `zavogal zuwal zal garolomx` | *heavy together* | I |
+| [Property of each member](../plurality.md#adjectives-g) | `zavonal zuwal zal garolom` | *the file-box and the toolbox are each heavy* | I |
+| [Property of the whole](../plurality.md#adjectives-g) | `zavonal zuwal zal garolomx` | *heavy together* | I |
 | [Group-level size](../plurality.md#adjectives-g) | `zavayal gogalam` | *the family is vast* | I |
-| [Members, plain](../plurality.md#adjectives-g) | `zavogalx garolom` | *the file-boxes are heavy* | I |
-| [Members, collectively](../plurality.md#adjectives-g) | `zavogalx garolomx` | *the file-boxes are heavy collectively* | I |
+| [Members, plain](../plurality.md#adjectives-g) | `zavonalx garolom` | *the file-boxes are heavy* | I |
+| [Members, collectively](../plurality.md#adjectives-g) | `zavonalx garolomx` | *the file-boxes are heavy collectively* | I |
 | [Call a group](../plurality.md#vocatives-y) | `yawanx` | *hey, you all* | I |
 
 ## Don't mix up {#dont-mix-up}

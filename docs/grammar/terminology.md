@@ -26,7 +26,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **COLLAPSE** | Emotion locus: out of fight, giving up | `wawothumual` | [Sakes](sakes.md#emotion-compose) |
 | **CONSENT** | Consent of the affected party | `huxolem` | [Sakes](sakes.md#consent) |
 | **DECISION** | Pick-firmness mood | `thogom` | [Intention](intention.md#decision) |
-| **DEDUCED** | Evidential: must hold if the premises hold | `thegam` | [Knowing](knowing.md#deduction) |
+| **DEDUCED** | Evidential: must hold if the premises hold | `thanam` | [Knowing](knowing.md#deduction) |
 | **FAWN** | Emotion locus: placating a target | `wawothumaem` | [Sakes](sakes.md#emotion-compose) |
 | **FLOWING** | Emotion motion: steady, a current you can ride | `wawothumem` | [Sakes](sakes.md#emotion-compose) |
 | **FORBID** | Permission, negative | `thegul` | [Sakes](sakes.md#permission) |
@@ -46,7 +46,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **PERMIT** | Permission, positive | `tholel` | [Sakes](sakes.md#permission) |
 | **PLAN** | Intention-framing mood | `thagem` | [Intention](intention.md#plan-predict) |
 | **REPORTED** | Evidential: said or written by someone else | `thebam` | [Knowing](knowing.md#evidentiality) |
-| **REQUIRE** | Requirement (*must*) without a sake | `thugal` | [Sakes](sakes.md#requirement) |
+| **REQUIRE** | Requirement (*must*) without a sake | `thonal` | [Sakes](sakes.md#requirement) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Knowing](knowing.md#residue) |
 | **RESISTING** | Emotion locus: pushing against a target | `wawothumuer` | [Sakes](sakes.md#emotion-compose) |
 | **SAME** | Identity copula | `gorol` | [Predication](predication.md#identity) |
@@ -403,7 +403,7 @@ Hosted **`heham`** / **`geham`** plus consideration `/b/` (*in exchange for* a h
 
 ### Proxy (*on behalf of*)
 
-Hosted **`hagom`** / **`gagom`** plus principal `/b/` (*on behalf of* Olazun). Not hook *instead*, not recipient `/b/`.
+Hosted **`hanom`** / **`ganom`** plus principal `/b/` (*on behalf of* Olazun). Not hook *instead*, not recipient `/b/`.
 
 [Relations](relations.md#proxy)
 

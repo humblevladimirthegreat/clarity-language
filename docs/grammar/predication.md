@@ -124,7 +124,7 @@ The second label is a `/b/` whatever it is: a common noun or a pronoun works as 
 
 With **no** `/b/` after it, `gorol` points back to the one already mentioned: *the same one again*. Put `gorol` after the thing.
 
-> `zolazun degal gorol varayel.`
+> `zolazun danal gorol varayel.`
 >
 > z-Olazun | [d-book | g-SAME] | v-write
 >
@@ -143,7 +143,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Agebon | Cue |
 |---------|--------|-----|
 | *police* | `obayel` | 👮 |
-| *page* | `ebogel` | 📄 |
+| *page* | `ebonel` | 📄 |
 | *Japanese* | `azabanam` | 🇯🇵 from *Japan flag*: belonging takes **-m** |
 | *challenge* | `amahum` | ⛰️ from *mountain* |
 | **SAME** | `orol` | 🪙 from *coin*: two faces, one substance |
@@ -200,7 +200,7 @@ z-police | [g-SAME | b-Uzozen]
 **5.** *There is a page.*
 
 ::: details Show answer
-`zebogel.`
+`zebonel.`
 
 z-page
 :::
@@ -247,7 +247,7 @@ z-police | g-run
 *There is a police officer running.*
 :::
 
-**5.** `zahelan debogel gorol vawebol.`
+**5.** `zahelan debonel gorol vawebol.`
 
 ::: details Show answer
 z-Ahelan | [d-page | g-SAME] | v-see

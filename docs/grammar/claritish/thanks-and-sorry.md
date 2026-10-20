@@ -8,7 +8,7 @@
 
 | Sake | Need | What pays off |
 |------|------|---------------|
-| `aga` | autonomy | *I chose it.* |
+| `una` | autonomy | *I chose it.* |
 | `uwa` | competence | *It worked; I can do this.* |
 | `owo` | understanding | *It makes sense; I learned something.* |
 | `ure` | purpose | *It matters.* |
@@ -52,7 +52,7 @@ Thank or apologize, naming the sake the note gives.
 **1.** *You let me pick the restaurant.* (thanks; autonomy)
 
 ::: details Show answer
-You let me pick the restaurant. `thagatham`.
+You let me pick the restaurant. `thunatham`.
 :::
 
 **2.** *I forgot your birthday.* (sorry; relatedness, and the harm can be mended)

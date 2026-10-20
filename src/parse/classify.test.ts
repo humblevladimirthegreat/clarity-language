@@ -137,7 +137,7 @@ describe("classify", () => {
   });
 
   it("sake on sake host compounds; bare sake root is ordinary", () => {
-    expectReading("thagathal", "sake");
+    expectReading("thunathal", "sake");
     expectReading("gawothal", "sake");
     expectReading("hodol", "ordinary");
   });
@@ -205,13 +205,13 @@ describe("classify", () => {
   });
 
   it("proxy overlay on /h/ /ɡ/ and ordinary id on other letters", () => {
-    const behalf = expectOverlay("hagom", "proxy");
+    const behalf = expectOverlay("hanom", "proxy");
     assert.ok(behalf.overlay);
     assert.equal(behalf.overlay!.kind, "proxy");
     assert.equal(behalf.overlay!.gloss, "on-behalf-of");
-    const adj = expectOverlay("gagom", "proxy");
+    const adj = expectOverlay("ganom", "proxy");
     assert.equal(adj.overlay!.gloss, "on-behalf-of");
-    const card = expectReading("zagol", "ordinary");
+    const card = expectReading("zanol", "ordinary");
     assert.equal(card.overlay, undefined);
   });
 
@@ -339,12 +339,12 @@ describe("classify", () => {
   });
 
   it("as-of ledger and bookmark overlays on /h/ /ɡ/ /w/ /th/, including resume", () => {
-    for (const form of ["hogam", "gogam", "wogam", "thogam", "hogar", "gogar", "wogar", "thogar"]) {
+    for (const form of ["henam", "genam", "wenam", "thenam", "henar", "genar", "wenar", "thenar"]) {
       const word = expectOverlay(form);
       assert.equal(word.overlay?.kind, "clause_pole");
       assert.equal(word.overlay?.gloss, "as-of.ledger");
     }
-    for (const form of ["hugem", "gugem", "wugem", "thugem", "huger", "guger", "wuger", "thuger"]) {
+    for (const form of ["hunem", "gunem", "wunem", "thunem", "huner", "guner", "wuner", "thuner"]) {
       const word = expectOverlay(form);
       assert.equal(word.overlay?.kind, "clause_pole");
       assert.equal(word.overlay?.gloss, "as-of.bookmark");

@@ -56,12 +56,12 @@ describe("lintTerminology", () => {
     const body = [
       "### Emotion",
       "",
-      "Say `wonathugar` with **ACT**; the root `ezuye`.",
+      "Say `wonathonar` with **ACT**; the root `ezuye`.",
       "",
       "[Feelings](sakes.md#nowhere)",
     ].join("\n");
     const out = lint(terminology([INTERNAL], body), ["INTERNAL"]).join("\n");
-    assert.match(out, /`wonathugar` does not appear/);
+    assert.match(out, /`wonathonar` does not appear/);
     assert.match(out, /\*\*ACT\*\*/);
     assert.match(out, /bare root `ezuye`/);
     assert.match(out, /sakes\.md#nowhere is not an anchor/);

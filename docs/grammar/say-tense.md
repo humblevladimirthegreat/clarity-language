@@ -100,15 +100,15 @@ English *has left* mixes three ideas. Choose the one you mean.
 
 English *had left* means the leaving counted **as of** an earlier moment. Write the same stance and add *as-of* with that moment in `/b/`.
 
-> `zolazun haram hogam b_#22,7 velurul.`
+> `zolazun haram henam b_#22,7 velurul.`
 >
 > z-Olazun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 >
 > "As of 22 July, Olazun had left and was still gone."
 
-*Was going to* is PLAN with the stance *as-of* **`thogam`** ([stance as-of](relations.md#stance-as-of)), since a plan is a stance:
+*Was going to* is PLAN with the stance *as-of* **`thenam`** ([stance as-of](relations.md#stance-as-of)), since a plan is a stance:
 
-> `zuwon thagem vowurel thogam b_#22,7.`
+> `zuwon thagem vowurel thenam b_#22,7.`
 >
 > z-speaker | th-plan-itinerary | v-walk | [th-as-of.ledger | b-_22,7]
 >
@@ -290,14 +290,14 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 | English | Agebon |
 |---------|--------|
 | *capable* / *ability* / *capability* | the verb or quality with **`xa`**: `zuzozen gezuyoxal` (*able to sing*); with no single verb, **`hodaxal`** |
-| *afford* (*can pay*) | `zuzozen varaxal degal` |
+| *afford* (*can pay*) | `zuzozen varaxal danal` |
 | *visible* / *invisible* | the undergoer with ability: `zudozol guxaweboxal` / `zudozol guxaweboxul` |
 | *blind* | `zuzozen gaweboxul` (*can never see*) |
 | *possible* / *potentially* | MAY **`thomam`** |
 | *acceptable* / *privilege* | permission **`tholel`** |
-| *expect* / *anticipate* | a forecast: a channel + **`bral`**; when custom expects it, **`thugar`** |
+| *expect* / *anticipate* | a forecast: a channel + **`bral`**; when custom expects it, **`thonar`** |
 | *shall* | PLAN **`thagem`** |
-| *have to* | **`thugam`** |
+| *have to* | **`thonam`** |
 | *do* / *does* / *did* (helper: *Do you walk?*) | no word: the verb under **`yol`** |
 
 > `zudozol guxaweboxal.`
@@ -320,19 +320,19 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 
 | English | You mean | Agebon |
 |---------|----------|--------|
-| *must*, *is required to* | a rule requires it | **`thugal`** |
-| *has to*, *I need you to* | a person demands it | **`thugam`** |
-| *is supposed to* | custom expects it | **`thugar`** |
+| *must*, *is required to* | a rule requires it | **`thonal`** |
+| *has to*, *I need you to* | a person demands it | **`thonam`** |
+| *is supposed to* | custom expects it | **`thonar`** |
 | *do it!* | you tell the listener now | command **`yel`** |
 | *should*, *ought to* | it serves a named sake | sake + **`the`** |
 | *shouldn't*, *ought not to* | the ought, with the act denied | sake + **`the`** before the act, **`vul`** after the verb |
-| *should have*, *ought to have* | the ought held at a past moment | stance as-of **`thogam`** + sake + **`the`** |
+| *should have*, *ought to have* | the ought held at a past moment | stance as-of **`thenam`** + sake + **`the`** |
 | *has to* (for a reason) | why they do it | sake + **`tho`** |
 | *should* (it will pay off) | a forecast | channel + **`bral`** |
 | *mustn't* | you forbid it now | prohibition **`yul`** |
 | *don't have to*, *needn't* | not doing it is allowed | permission **`tholem`** (**`tholel`** when a rule allows it) before the act + **`vul`** |
 
-> `zuzozen vowurel thugal.`
+> `zuzozen vowurel thonal.`
 >
 > z-Uzozen | v-walk | th-REQUIRE-rule
 >
@@ -350,9 +350,9 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 >
 > "Uzozen shouldn't talk; it would hurt their sense of connection." (unasked advice)
 
-For *should have*, date the ought with [stance as-of](relations.md#stance-as-of) **`thogam`**; **`thogam brul`** is *back then*. The ought then reads from that past moment. English also implies the act did not happen; if that matters, say it in its own sentence.
+For *should have*, date the ought with [stance as-of](relations.md#stance-as-of) **`thenam`**; **`thenam brul`** is *back then*. The ought then reads from that past moment. English also implies the act did not happen; if that matters, say it in its own sentence.
 
-> `zawan thogam brul thudathem vezuyel. zawan vezuyel vul.`
+> `zawan thenam brul thudathem vezuyel. zawan vezuyel vul.`
 >
 > z-listener | [th-as-of.ledger | b-earlier] | th-sake-ought-offered | v-tell . z-listener | [v-tell | v-not]
 >
@@ -366,7 +366,7 @@ For *should have*, date the ought with [stance as-of](relations.md#stance-as-of)
 >
 > "Uzozen doesn't have to walk." (not walking is allowed)
 
-**Compare with:** requirement reports a demand, which may be someone else's; **`yel`** is you telling the listener. Requirement with a denied act (`zuzozen thugam vowurel vul`) is *Uzozen is required not to walk*, which is *mustn't*, not *doesn't have to*.
+**Compare with:** requirement reports a demand, which may be someone else's; **`yel`** is you telling the listener. Requirement with a denied act (`zuzozen thonam vowurel vul`) is *Uzozen is required not to walk*, which is *mustn't*, not *doesn't have to*.
 
 ### Will, want, try, let's {#will-want}
 
@@ -486,7 +486,7 @@ z-Uzozen | v-walk | th-PERMIT-granted
 **8.** *Uzozen must walk; it's the rule.*
 
 ::: details Show answer
-`zuzozen vowurel thugal.`
+`zuzozen vowurel thonal.`
 
 z-Uzozen | v-walk | th-REQUIRE-rule
 :::

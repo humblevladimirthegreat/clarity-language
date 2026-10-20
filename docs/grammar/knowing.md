@@ -231,7 +231,7 @@ Verbs have **no past or future form**. Two channels place the event in time beca
 | **`thevum`** | MEMORY: firsthand, remembered | *from memory* | `evul` *fishing* | 🎣: you pull something back |
 | **`thubem`** | PATTERN: similar cases | *from the pattern* | `ubel` *paw-prints* | 🐾: cases left behind |
 | **`theyem`** | CLUES: reasoned from clues about this case | *from the clues* / *apparently* | `eyel` *investigate* | 🕵️: you work the clues |
-| **`thegam`** | DEDUCED: it must hold if the premises hold | *it follows* / *by deduction* | `egal` *book* | 📖: a book already holds what it says; a deduction reads out only what the premises hold |
+| **`thanam`** | DEDUCED: it must hold if the premises hold | *it follows* / *by deduction* | `anal` *book* | 📖: a book already holds what it says; a deduction reads out only what the premises hold |
 | **`thebam`** | REPORTED: someone else said or wrote it | *so they say* / *according to…* | `ebal` *ear* | 👂: you take in what others pass on |
 | **`thabom`** | INTUITION: a gut sense | *my gut says* | `abol` *heart* | ❤️: knowing you cannot fully spell out |
 
@@ -274,7 +274,7 @@ Strength grades your evidence, not how sure you feel and not how likely the even
 | MEMORY | vividness of memory | `thevul` a vivid memory | `thevum` | `thevur` a hazy memory |
 | PATTERN | number and consistency of cases | `thubel` a well-established pattern | `thubem` | `thuber` a few cases |
 | CLUES | strength of clues | `theyel` strong clues | `theyem` | `theyer` a weak clue |
-| DEDUCED | how far you checked the steps | `thegal` every step could be shown | `thegam` | `thegar` it seems to follow, steps unchecked |
+| DEDUCED | how far you checked the steps | `thanal` every step could be shown | `thanam` | `thanar` it seems to follow, steps unchecked |
 | REPORTED | reliability of the source | `thebal` a reliable source or an authoritative document | `thebam` | `thebar` a rumor or an unofficial note |
 | INTUITION | how well you can state the basis | `thabol` a strong gut sense | `thabom` | `thabor` a faint hunch |
 
@@ -304,7 +304,7 @@ English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source
 >
 > "I heard third-hand that Olazun left."
 
-> `zolazun thebal bunogal thredul velurul.`
+> `zolazun thebal bunonal thredul velurul.`
 >
 > z-Olazun | [th-REPORTED.strong | b-newspaper] | th-2nd-hand | v-departure
 >
@@ -406,7 +406,7 @@ On a [feeling](sakes.md#emotion-compose) (a sake word with a locus and a motion 
 
 ### Evidence clause (`barl`) {#evidence-clause}
 
-English *judging by*, *going by*, and *given that* name the **grounds** for a claim: the fact that tells you it holds. The three reasoned channels take grounds: CLUES (`theyem`, from clues), PATTERN (`thubem`, from cases that repeat) and DEDUCED (`thegam`, from premises). Each one takes **`barl`** as its `/b/`. The main sentence stops after `barl`, and the next sentence is the grounds ([dependent clauses](dependents.md#dependent-clauses)). You state the claim, the strength of your grounds, and the grounds themselves in one sentence.
+English *judging by*, *going by*, and *given that* name the **grounds** for a claim: the fact that tells you it holds. The three reasoned channels take grounds: CLUES (`theyem`, from clues), PATTERN (`thubem`, from cases that repeat) and DEDUCED (`thanam`, from premises). Each one takes **`barl`** as its `/b/`. The main sentence stops after `barl`, and the next sentence is the grounds ([dependent clauses](dependents.md#dependent-clauses)). You state the claim, the strength of your grounds, and the grounds themselves in one sentence.
 
 > `zolazun vanuvul theyem barl zuzozen varemul.`
 >
@@ -427,7 +427,7 @@ Grounds are not a cause. With [`thahum barl`](causation.md#only-because), the cl
 |---------|----------------------------|------|
 | what made it happen | the cause | `thahum barl` |
 | what has to hold for it to happen | the condition | `thohom barl` / `thebom barl` / `thehem barl` |
-| how you know it happened | your grounds | `theyem barl` / `thubem barl` / `thegam barl` |
+| how you know it happened | your grounds | `theyem barl` / `thubem barl` / `thanam barl` |
 
 The ending on the channel grades the grounds ([evidence strength](#evidence-strength)): **-l** for strong clues or a well-established pattern, **-m** by default, **-r** for a weak clue or a few cases. Strong clues still fall short of a proof: when the claim **must** hold if the grounds do, use DEDUCED ([deduction](#deduction)).
 
@@ -692,7 +692,7 @@ NOTIONAL [carries forward](#carry-forward) like a channel, so a story you make u
 
 A legend that people pass on as true is not NOTIONAL: it is REPORTED, often with a [hand count](#hand-depth).
 
-**Compare with:** *walks like a duck* is a real walk; only its manner matches the model ([simile](relations.md#similative) `hewom`). *Tells on behalf of Olazun* is a real telling, and Uzozen is still the teller ([proxy](relations.md#proxy) `hagom`).
+**Compare with:** *walks like a duck* is a real walk; only its manner matches the model ([simile](relations.md#similative) `hewom`). *Tells on behalf of Olazun* is a real telling, and Uzozen is still the teller ([proxy](relations.md#proxy) `hanom`).
 
 ### Hold endings (NOTIONAL)
 <a id="notional-hold"></a>
@@ -719,12 +719,12 @@ When you are not sure, use **`theyum`**.
 >
 > "Suppose Uzozen writes."
 
-### Deduction (`thegam`) {#deduction}
+### Deduction (`thanam`) {#deduction}
 <a id="deduced"></a>
 
-English *it follows that*, *P, so Q* and *by deduction* claim more than good evidence: if the premises hold, the conclusion **must** hold. Put DEDUCED (**`thegam`**) on the conclusion and the premises after **`barl`**, as in any [evidence clause](#evidence-clause). Join several premises with a [clause join](joins.md#clause-joins); a join after a stand-in stays in the dependent, so every premise is grounds. You assert the premises and the conclusion.
+English *it follows that*, *P, so Q* and *by deduction* claim more than good evidence: if the premises hold, the conclusion **must** hold. Put DEDUCED (**`thanam`**) on the conclusion and the premises after **`barl`**, as in any [evidence clause](#evidence-clause). Join several premises with a [clause join](joins.md#clause-joins); a join after a stand-in stays in the dependent, so every premise is grounds. You assert the premises and the conclusion.
 
-> `zuzozen vuduyel thegam barl zual gaxuduyethel vuduyel xam zuzozen gaxuduyethel.`
+> `zuzozen vuduyel thanam barl zual gaxuduyethel vuduyel xam zuzozen gaxuduyethel.`
 >
 > z-Uzozen | v-teach | [th-DEDUCED | b-that-clause] | [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Uzozen | g-agent-x-teach-th-role]
 >
@@ -732,7 +732,7 @@ English *it follows that*, *P, so Q* and *by deduction* claim more than good evi
 
 To claim only that the conclusion follows, put a [pole](causation.md#only-because) between the channel and **`barl`**. The pole is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
 
-> `zuzozen vuduyel thegam thohom barl zual gaxuduyethel vuduyel xam zuzozen gaxuduyethel.`
+> `zuzozen vuduyel thanam thohom barl zual gaxuduyethel vuduyel xam zuzozen gaxuduyethel.`
 >
 > z-Uzozen | v-teach | th-DEDUCED | [th-if | b-that-clause] | [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Uzozen | g-agent-x-teach-th-role]
 >
@@ -741,14 +741,14 @@ To claim only that the conclusion follows, put a [pole](causation.md#only-becaus
 <!-- cheat-sheet: knowing-intending -->
 | You claim | Form | You assert |
 |-----------|------|------------|
-| *P, so Q* | Q `thegam barl` P | P and Q |
-| *Q follows from P* | Q `thegam thohom barl` P | only the link |
-| *P and Q come to the same thing* | Q `thegam thehem barl` P | only the link, both ways |
-| *P rules out Q* | Q denied with `vul`, then `thegam thohom barl` P | only that P and Q cannot both hold |
+| *P, so Q* | Q `thanam barl` P | P and Q |
+| *Q follows from P* | Q `thanam thohom barl` P | only the link |
+| *P and Q come to the same thing* | Q `thanam thehem barl` P | only the link, both ways |
+| *P rules out Q* | Q denied with `vul`, then `thanam thohom barl` P | only that P and Q cannot both hold |
 
 To say a conclusion **does not** follow (*that doesn't follow*, *a non sequitur*), deny the channel and the pole together with a [stance join before `barl`](join-across-roles.md#stance-join-before-barl). You deny the link and claim nothing about P or Q: either may still be true.
 
-The ending grades how far you checked the steps ([evidence strength](#evidence-strength)): **`thegal`** when you could write out every step, **`thegam`** when you could name the premises and the rule, **`thegar`** when it only seems to follow.
+The ending grades how far you checked the steps ([evidence strength](#evidence-strength)): **`thanal`** when you could write out every step, **`thanam`** when you could name the premises and the rule, **`thanar`** when it only seems to follow.
 
 When the premises come first, open the conclusion with the linker **`xahel`** *it follows that* ([sentence linkers](dependents.md#sentence-linkers)). It reaches back to the one sentence before it, so join every premise into that sentence.
 
@@ -760,7 +760,7 @@ When the premises come first, open the conclusion with the linker **`xahel`** *i
 
 A linker is not a channel, so the conclusion keeps your [frame](#carry-forward): a deduction from a report is still REPORTED. To reason from a premise you do not grant, suppose it with [NOTIONAL](#notional) **`theyur`**. The frame carries, so every step after it stays supposed. To keep what you found, state the link with its own channel, which ends the supposition:
 
-> `zuzozen theyur gaxuduyethel. xahel zuzozen vuduyel. zuzozen vuduyel thegam thohom barl zuzozen gaxuduyethel.`
+> `zuzozen theyur gaxuduyethel. xahel zuzozen vuduyel. zuzozen vuduyel thanam thohom barl zuzozen gaxuduyethel.`
 >
 > z-Uzozen | th-NOTIONAL-suppose | g-agent-x-teach-th-role . x-it-follows | z-Uzozen | v-teach . z-Uzozen | v-teach | th-DEDUCED | [th-if | b-that-clause] | [z-Uzozen | g-agent-x-teach-th-role]
 >
@@ -965,7 +965,7 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 | The grounds after an inferring or pattern host's [`barl`](#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
 | A comparison [bar](comparatives.md#bars) | your expectation | the holder's expectation |
 
-> `zugal wawothumol goyem bolazun theyemuzozen.`
+> `zonal wawothumol goyem bolazun theyemuzozen.`
 >
 > [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Olazun]] | th-CLUES-Uzozen
 >
@@ -1021,7 +1021,7 @@ The first sake word has no holder, so it is yours. The second is Uzozen's.
 
 Only the seven channels, MAY, and NOTIONAL take a holder: they are the ways you can have access to someone else's view. When they told you in their own words, a [cite](spans.md#writing) keeps their wording instead.
 
-**Compare with:** being upset **for** Uzozen is your own feeling about Uzozen's stake (the ON-BEHALF locus in [emotion compose](sakes.md#emotion-compose)); with a holder the feeling is Uzozen's. *On behalf of* Uzozen is [proxy](relations.md#proxy) (`hagom`). A `/b/` on [permission](sakes.md#permission) or [consent](sakes.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](compounds.md#lexical-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
+**Compare with:** being upset **for** Uzozen is your own feeling about Uzozen's stake (the ON-BEHALF locus in [emotion compose](sakes.md#emotion-compose)); with a holder the feeling is Uzozen's. *On behalf of* Uzozen is [proxy](relations.md#proxy) (`hanom`). A `/b/` on [permission](sakes.md#permission) or [consent](sakes.md#consent) names someone who granted or agreed openly, not a holder whose mind you report. A [dictionary compound](compounds.md#lexical-compounds) also joins with an ending letter, but it is a listed word; the holder seam is built on the spot, and only after these closed hosts.
 
 ### Practice {#intermediate-practice}
 
@@ -1040,7 +1040,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *MEMORY* | `thevum` | 🎣 from *fishing*: pulled up from memory |
 | *PATTERN* | `thubem` | 🐾 from *paw-prints*: a trail of cases |
 | *CLUES* | `theyem` | 🕵️ from *investigate*: worked out from clues |
-| *DEDUCED* | `thegam` | 📖 from *book*: read out of the premises |
+| *DEDUCED* | `thanam` | 📖 from *book*: read out of the premises |
 | *REPORTED* | `thebam` | 👂 from *ear*: someone said so |
 | *NOTIONAL* | `theyum` | 🎭 from *theater*: an imagined scene |
 | *RESIDUE* | `haram` | 💰 from *money*: a debt left standing |
@@ -1167,10 +1167,10 @@ z-Ahelan | v-sing | [contrary-to | th-REPORTED]
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *There are gray clouds, and there is rain if there are gray clouds; so there is rain, and you could write out every step.* `zerulal thegal barl zugalal gegulol xam zerulal gohom bugalal gegulol.` or `zerulal thegam barl zugalal gegulol xam zerulal gohom bugalal gegulol.`
+**1.** *There are gray clouds, and there is rain if there are gray clouds; so there is rain, and you could write out every step.* `zerulal thanal barl zugalal gegulol xam zerulal gohom bugalal gegulol.` or `zerulal thanam barl zugalal gegulol xam zerulal gohom bugalal gegulol.`
 
 ::: details Show answer
-`zerulal thegal barl zugalal gegulol xam zerulal gohom bugalal gegulol.`
+`zerulal thanal barl zugalal gegulol xam zerulal gohom bugalal gegulol.`
 
 z-rain | [th-DEDUCED.strong | b-that-clause] | [[z-cloud | g-gray] | x-and.open | z-rain | [g-if | [b-cloud | g-gray]]]
 
@@ -1360,13 +1360,13 @@ To say **how you know** the general claim, add a [channel](#evidentiality). On a
 >
 > "Uzozen always walks, from the few cases I have seen."
 
-> `zual gaxuduyethel vuduyel thegal.`
+> `zual gaxuduyethel vuduyel thanal.`
 >
 > [z-everything | g-agent-x-teach-th-role] | v-teach | th-DEDUCED.strong
 >
 > "It follows that every teacher teaches." (every step could be shown)
 
-> `zolazun hal vanuvul thebal bazuval.`
+> `zolazun hal vanuvul thebal bazunal.`
 >
 > z-Olazun | h-never | v-punch | [th-REPORTED.strong | b-soccer]
 >
@@ -1378,9 +1378,9 @@ The fence says how far the claim reaches, and the channel says what it rests on.
 |---------|---------------------|---------|---------|
 | *usually*, *as a rule* | `huam` / `zuam` | any, or none | `zuzozen huam vowurel.` |
 | *always, as far as I have checked* | `hual` / `zual` | a weak channel | `zuzozen hual vowurel thuber.` |
-| *it follows that every …* | `zual` | DEDUCED.strong `thegal` | `zual gaxuduyethel vuduyel thegal.` |
+| *it follows that every …* | `zual` | DEDUCED.strong `thanal` | `zual gaxuduyethel vuduyel thanal.` |
 | *by definition* | `zual` + `thehem barl` | none | `zual geyol gaxuduyethel thehem barl zeyor vuduyel.` |
-| *under the rules of …* | `hal` / `hual` | REPORTED.strong with the rules in `/b/` | `zolazun hal vanuvul thebal bazuval.` |
+| *under the rules of …* | `hal` / `hual` | REPORTED.strong with the rules in `/b/` | `zolazun hal vanuvul thebal bazunal.` |
 | *cats are sleepy* (in general) | `zuam` + kind | any, or none | `zuam gagozol guzemol thubem.` |
 
 A [cause or condition](causation.md) on a general claim says how things work. It holds for **each** member or occasion, the same way the verb does. Inside the sentence after **`barl`**, resume the kind with **-r** (`zagozor`) to mean *that same one*: each cat, in turn.
@@ -1401,7 +1401,7 @@ A **definition** works both ways: whatever has the property is that kind, and ev
 
 The channel stays on the main sentence and covers the whole generalization. Put it before the pole, as with the [evidence clause](#evidence-clause): `zual gagozol vezuvol thubel thohom barl …` is *going by a well-established pattern, every cat sleeps when …*.
 
-**Compare with:** a general claim you are **not** giving as today's report is [FORMER](#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is [REQUIRE](sakes.md#requirement) (`thugam`), not a law of how things work. *Maybe every cat sleeps* is [MAY](#may) on the same clause.
+**Compare with:** a general claim you are **not** giving as today's report is [FORMER](#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is [REQUIRE](sakes.md#requirement) (`thonam`), not a law of how things work. *Maybe every cat sleeps* is [MAY](#may) on the same clause.
 
 ### Practice {#advanced-practice}
 

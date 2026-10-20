@@ -59,7 +59,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 |--------------|------------|-------|
 | in B's use (*Uzozen's dog*, *my house*, *my seat*), B's turn or occasion (*Uzozen's birthday*) | hook **`em`** + `/b/` | [Whose](hooks.md#genitive) |
 | care of a person (*Uzozen's patient*) | **`gobolom`** + `/b/` | [Social relations](relations.md#social-relations) |
-| legal ownership (*the dog Uzozen owns*) | **`gagugum`** + `/b/` | [Of relations](relations.md#of-relations) |
+| legal ownership (*the dog Uzozen owns*) | **`gogunum`** + `/b/` | [Of relations](relations.md#of-relations) |
 | social tie (*Uzozen's friend*) | tie root on `/ɡ/` **-m** + `/b/` | [Social relations](relations.md#social-relations) |
 | part / contents / material (*a hand of Olazun*, *a teapot of tea*) | **`gobem`** / **`gadam`** / **`gulem`** + `/b/` | [Of relations](relations.md#of-relations) |
 | origin (*Olazun of the city*, *the sound of the drums*) | **`gaham`** + `/b/` | [Of relations](relations.md#of-relations) |
@@ -97,7 +97,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | how close (*exactly like*, *a bit like*) | **`hewol`** for an exact match (`hewol budozal`), or `/w/` before **`hewom`**: `wubugom hewom budozal` (*precisely*), `wamezom hewom budozal` (*a bit*) | [Exactly like](relations.md#exactly-like), [simile](relations.md#similative), [degree words](clause.md#degree-w) |
 | resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`hewom barl`** + the event | [Simile](relations.md#similative) |
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](knowing.md#notional) |
-| dated books (*as of Friday*) | **`hogam` / `hugem`** + `/b/` | [*As-of*](relations.md#as-of) |
+| dated books (*as of Friday*) | **`henam` / `hunem`** + `/b/` | [*As-of*](relations.md#as-of) |
 
 ### *since*
 

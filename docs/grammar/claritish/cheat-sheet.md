@@ -35,7 +35,7 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 | from memory | `thevul` | `thevum` | `thevur` |
 | from the pattern | `thubel` | `thubem` | `thuber` |
 | worked out from clues | `theyel` | `theyem` | `theyer` |
-| deduced: must follow | `thegal` | `thegam` | `thegar` |
+| deduced: must follow | `thanal` | `thanam` | `thanar` |
 | reported: told or read | `thebal` | `thebam` | `thebar` |
 | intuition: a gut sense | `thabol` | `thabom` | `thabor` |
 
@@ -45,7 +45,7 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 |-|------------------|--------------------|----------------------|
 | allowed | `tholel` | `tholem` | `tholer` tolerated |
 | forbidden | `thegul` | `thegum` | `thegur` frowned on |
-| required | `thugal` | `thugam` | `thugar` by custom |
+| required | `thonal` | `thonam` | `thonar` by custom |
 | agreed (the affected person) | `huxolel` in advance | `huxolem` said yes, can take it back | `huxoler` assumed OK |
 
 ## Suffixes on English words {#suffixes}
@@ -61,7 +61,7 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 
 | Sake, need | Sake, need | Sake, need |
 |------------|------------|------------|
-| `aga` autonomy | `ure` purpose | `odo` pleasure |
+| `una` autonomy | `ure` purpose | `odo` pleasure |
 | `uwa` competence | `awo` relatedness | `oba` physical: health, rest, safety |
 | `owo` understanding | `ewa` beneficence | `uda` a sake, unspecified |
 

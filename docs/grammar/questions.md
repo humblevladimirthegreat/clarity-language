@@ -259,7 +259,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *find* | `vumewol` |
 | *see* | `vawebol` |
 | *eraser* | `urewul` |
-| *book* | `egal` |
+| *book* | `anal` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
@@ -335,7 +335,7 @@ y-question | z-wh-else | d-eraser | v-find
 *Who else finds an eraser?*
 :::
 
-**3.** `yol zal vumewol degal.`
+**3.** `yol zal vumewol danal.`
 
 ::: details Show answer
 y-question | z-none | v-find | d-book
@@ -661,7 +661,7 @@ To ask *whose?*, write the [hook **`em`**](hooks.md#genitive) (*used by*) after 
 >
 > "Whose dog walks?"
 
-Answer with the hook and the user, as a [citation](word-endings.md#citation-forms): `em buzozen.` ("Uzozen's."). For ownership rather than use, see [`gagugum`](joins.md#scope-fence-p-join).
+Answer with the hook and the user, as a [citation](word-endings.md#citation-forms): `em buzozen.` ("Uzozen's."). For ownership rather than use, see [`gogunum`](joins.md#scope-fence-p-join).
 
 ### How? {#how}
 
@@ -704,7 +704,7 @@ To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in
 
 English puts *who* in different places in *Do you know who walks?* and *Who do you think walks?*. In the first, the inner clause asks; in the second, the main question asks. In Agebon the blank stays in the inner clause both times (it never moves to the front of the outer sentence), and the stand-in's vowel says which question it belongs to. **`dorl`** (*whether*) is itself question-like, so its blank belongs to it, and the outer **`yol`** is yes/no. **`darl`** (*that*) is statement-like and cannot ask, so its blank belongs to the outer **`yol`**.
 
-> `yol zawan vegam dorl zar vowurel.`
+> `yol zawan vanam dorl zar vowurel.`
 >
 > y-question | z-listener | v-knowledge | d-whether-clause | z-wh | v-walk
 >
@@ -716,7 +716,7 @@ English puts *who* in different places in *Do you know who walks?* and *Who do y
 >
 > "Who do you think walks?"
 
-If the outer sentence has a blank of its own, that blank is the main question and the inner one stays with `dorl`: `yol zar vegam dorl zar vowurel.` is *Who knows who walks?* Under a statement, `dorl` plus a blank is a [reported question](#embedded-whether).
+If the outer sentence has a blank of its own, that blank is the main question and the inner one stays with `dorl`: `yol zar vanam dorl zar vowurel.` is *Who knows who walks?* Under a statement, `dorl` plus a blank is a [reported question](#embedded-whether).
 
 ### Yes/no with single-item / standalone
 <a id="yes-no-single-item-standalone"></a>
@@ -793,7 +793,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sit* | `vuhohol` |
 | *find* | `vumewol` |
 | *think* | `vevemol` |
-| *knowledge* | `vegam` |
+| *knowledge* | `vanam` |
 | *lie* | `valamul` |
 | *walk* | `vowurel` |
 | *sleep* | `vezuvol` |
@@ -922,10 +922,10 @@ y-reject-frame
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Do you know who walks?* <!-- lint: error -->`yol zawan vegam darl zar vowurel.`
+**1.** *Do you know who walks?* <!-- lint: error -->`yol zawan vanam darl zar vowurel.`
 
 ::: details Show answer
-`yol zawan vegam dorl zar vowurel.`
+`yol zawan vanam dorl zar vowurel.`
 
 y-question | z-listener | v-knowledge | d-whether-clause | z-wh | v-walk
 

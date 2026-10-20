@@ -41,16 +41,16 @@ The motion endings are the settled-to-passing scale applied to water: still wate
 
 > We shipped the draft `thuwathamar`.  
 > The review is tomorrow `thuwathuraor`.  
-> He rewrote my memo `thagathumuem`.  
-> My sister got laid off `thagathulem`.  
+> He rewrote my memo `thunathumuem`.  
+> My sister got laid off `thunathulem`.  
 > `thuwathuruol`, and I can't say why.
 
 | Drop-in | What it says | Instead of | The three parts |
 |---------|--------------|------------|-----------------|
 | `thuwathamar` | a rush of *I pulled it off*, kept to myself | *proud* | competence met; held inside; surging |
 | `thuwathuraor` | *can I measure up?* hanging over everything, in waves, for now | *anxious* | competence at stake for now; over the room; surging |
-| `thagathumuem` | a steady push back at losing my say, while it can still change | *objecting* | autonomy unmet; pushing back; flowing |
-| `thagathulem` | a steady ache on her behalf: her say was taken for good | *upset for her* | autonomy unmet for good; on her behalf; flowing |
+| `thunathumuem` | a steady push back at losing my say, while it can still change | *objecting* | autonomy unmet; pushing back; flowing |
+| `thunathulem` | a steady ache on her behalf: her say was taken for good | *upset for her* | autonomy unmet for good; on her behalf; flowing |
 | `thuwathuruol` | a quiet *can I handle this?* from nowhere I can point to | *uneasy* | competence at stake for now; can't place it; still |
 
 ## Practice {#practice}
@@ -66,7 +66,7 @@ My friend remembered my favorite song `thawothamar`.
 **2.** *The meeting ran two hours over.* (autonomy unmet, default ending; pushing back; flowing)
 
 ::: details Show answer
-The meeting ran two hours over `thagathumuem`.
+The meeting ran two hours over `thunathumuem`.
 :::
 
 **3.** How you feel right now, with no clause. (purpose unmet, default ending; held inside; still)

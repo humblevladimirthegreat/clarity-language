@@ -136,7 +136,7 @@ Agebon has no word for *is*. The kind of claim comes from the pattern.
 | [Something exists](../predication.md#existence) | a lone new noun | `zudozol.` | *There is a dog.* | B |
 | | a new noun + `/ɡ/` | `zudozol gelazom.` | *There is a big dog.* | B |
 | [Same person](../predication.md#identity) | `gorol` + `/b/`, side by side | `zolazun gorol buzozen.` | *Olazun is Uzozen.* (one person, two names) | B |
-| [Same one again](../predication.md#identity) | `gorol`, no `/b/` | `zolazun degal gorol varayel.` | *Olazun is writing the same book.* (the book already mentioned) | B |
+| [Same one again](../predication.md#identity) | `gorol`, no `/b/` | `zolazun danal gorol varayel.` | *Olazun is writing the same book.* (the book already mentioned) | B |
 | [Basically the same](../predication.md#same-endings) | **-m** | `zolazun gorom buzozen` | *Olazun is basically Uzozen.* | I |
 | [Not the same](../predication.md#same-endings) | `gul` after the pair | `zolazun gorol buzozen gul` | *Olazun is not Uzozen.* | I |
 | [The one who is Uzozen](../predication.md#same-endings) | inside a noun phrase | `zeyol gorol buzozen` | *the person who is Uzozen* | I |

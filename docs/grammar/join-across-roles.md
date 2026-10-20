@@ -101,13 +101,13 @@ Words that every verb shares go in one of two places. **After the join**, a `/d/
 >
 > "Uzozen cooks and eats popcorn."
 
-> `zuzozen vowurel varuvel val hahuvem.`
+> `zuzozen vowurel varuvel val huhunem.`
 >
 > z-Uzozen | [v-walk | v-run | v-and | h-intensity]
 >
 > "Uzozen walks and runs, both intensely."
 
-> `zolazun vezuyel varal val buzozen hahuvem.`
+> `zolazun vezuyel varal val buzozen huhunem.`
 >
 > z-Olazun | [v-tell | v-pay | v-and | b-Uzozen | h-intensity]
 >
@@ -219,13 +219,13 @@ When the grounds are a whole clause (*not because Olazun runs*), the pole takes 
 
 The same join after DEDUCED and an *if* pole says a conclusion **does not follow** from its premises ([deduction](knowing.md#deduction)). You deny the link and claim nothing about either clause.
 
-> `zuzozen vuduyel thegam thohom thul barl zuzozen gaxuduyethel.`
+> `zuzozen vuduyel thanam thohom thul barl zuzozen gaxuduyethel.`
 >
 > z-Uzozen | v-teach | th-DEDUCED | th-if | th-not | b-that-clause | [z-Uzozen | g-agent-x-teach-th-role]
 >
 > "If Uzozen is a teacher, it doesn't follow that Uzozen teaches."
 
-**Compare with:** `thegam thul thohom barl` denies only the channel: *if P, then Q*, but you do not know that by deduction.
+**Compare with:** `thanam thul thohom barl` denies only the channel: *if P, then Q*, but you do not know that by deduction.
 
 Only one join fits there, and only when the last stance word before it is a pole with no `/b/` yet. The same works for every join vowel and every pole, and for a channel that takes grounds ([evidence clause](knowing.md#evidence-clause)).
 
@@ -333,18 +333,18 @@ When English ties one extra thing to a noun or an action by a list move (*a cupc
 
 **`gan`** always needs its `/b/` word (`gan b…`). To talk about the word itself, with no `/b/`, use a [mention](spans.md#mention) span.
 
-**Compare with:** *writes with a hammer* is an extra-noun [hook](hooks.md#extra-noun) (`ael` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Olazun* is [proxy](relations.md#proxy) (`hagom`), not **`hon`** *exclusively for*. **`uel`** is *against* that party, not **`hun`** *refusing*.
+**Compare with:** *writes with a hammer* is an extra-noun [hook](hooks.md#extra-noun) (`ael` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Olazun* is [proxy](relations.md#proxy) (`hanom`), not **`hon`** *exclusively for*. **`uel`** is *against* that party, not **`hun`** *refusing*.
 
 **Not the same job as:** adjective [joins](joins.md) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
 
-**For *including* as an afterthought, use:** a [hook](hooks.md) (`al`, …). `zehuvam gan buzozen` is *a team including Uzozen*; `zehuvam al zuzozen` is *the team, including Uzozen*.
+**For *including* as an afterthought, use:** a [hook](hooks.md) (`al`, …). `zahunam gan buzozen` is *a team including Uzozen*; `zahunam al zuzozen` is *the team, including Uzozen*.
 
 For several members, put a [phrase join](joins.md) **inside** the `/b/` phrase (`gan bubedal bugedam bal`). For an unnamed member or none at all, use a [standalone](joins.md#standalone-phrase) `/b/` join as the only `/b/` word (`gan bar` = *including something*; `guan bal` = *excluding nothing*).
 
 | Agebon | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
 | **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | **a** ≈ add (hold the extra member) | `zugedal gan bubedal`; `zuzozen han bolazun vowurel` |
-| **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **o** ≈ one (lock that pick) | `zehuvam gon buzozen`; `… hon buzozen vowurel` |
+| **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **o** ≈ one (lock that pick) | `zahunam gon buzozen`; `… hon buzozen vowurel` |
 | **`gaon` / `haon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to* (more may follow); `/h/` *among options* | **ao** ≈ add + one (admit, still open) | `zugedal gaon bubedal`; `… haon bubedal vowurel` |
 | **`gun` / `hun`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *against / anti-*; `/h/` *refusing* | **u** ≈ undo (reject that member) | `zugedal gun bubedal`; `… hun bomudol vowurel` |
 | **`guan` / `huan`** | `/ɡ/` or `/h/` toward `/b/` | *without / excluding* | **ua** ≈ undo + add (leave that member out) | `zugedal guan bubedal`; `… huan bubedal vowurel` |
@@ -369,7 +369,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agebon | Cue |
 |---------|--------|-----|
 | *finish-line* | `evahul` | 🏁 |
-| *teamwork* | `ehuvam` | 🤾 from *handball* |
+| *teamwork* | `ahunam` | 🤾 from *handball* |
 | *group* | `ayayal` | 👥 |
 
 **Review:**
@@ -455,7 +455,7 @@ z-finish-line | [g-without | b-trophy]
 *The finish line without the trophy.*
 :::
 
-**3.** `zehuvam gaon buzozen.`
+**3.** `zahunam gaon buzozen.`
 
 ::: details Show answer
 z-teamwork | [g-open-to | b-Uzozen]

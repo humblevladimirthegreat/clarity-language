@@ -84,7 +84,7 @@ The word bank lists the roots this checkpoint introduces. **English** is what yo
 | English | Agebon | Cue |
 |---------|--------|-----|
 | *school* | `uzahal` | 🏫: a school teaches, so its abstract is *education* |
-| *book* | `egal` | 📖: a book holds *knowledge* |
+| *book* | `anal` | 📖: a book holds *knowledge* |
 | *eraser* | `urewul` | 🪌: an eraser rubs out a mistake, so its abstract is *correction* |
 | *bell* | `eboral` | 🔔: a bell rings to warn, so its abstract is *alert* |
 | *magnify* | `umewol` | 🔍: close looking, so its abstract is *scrutiny* |
@@ -106,7 +106,7 @@ school
 **2.** *knowledge*
 
 ::: details Show answer
-`egam`
+`anam`
 
 knowledge
 :::

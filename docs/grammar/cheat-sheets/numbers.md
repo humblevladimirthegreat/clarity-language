@@ -25,7 +25,7 @@ A number word is one word: role letter, marker, one syllable per digit, ending. 
 |-----|---------|---------|-------|
 | [Count](../numbers.md#counts) | `zagozolx grarel.` | *There are three cats.* | B |
 | [Count, many digits](../numbers.md#counts): one word | `graduzol` | *twenty* | B |
-| [Ordinal](../numbers.md#ordinals): `re` for `ra` | `zegal gredul.` | *There is a second book.* | B |
+| [Ordinal](../numbers.md#ordinals): `re` for `ra` | `zanal gredul.` | *There is a second book.* | B |
 | [More than one](../numbers.md#more-than-one) | `zagozolx gral.` | *There is more than one cat.* | B |
 
 ### The marker {#marker}
@@ -230,7 +230,7 @@ Put the amount on the unit's noun as `/ɡ/`. Each unit is the abstract **-m** of
 | [gram](../numbers-applied.md#stock-units) | `ebero` | `beberom g+5` | `eberol` *pound* (banknote) | I |
 | [second](../numbers-applied.md#stock-units) | `azere` | `bazerem g+3` | `azerel` *stopwatch* | I |
 | [minute](../numbers-applied.md#stock-units) | `emure` | `bemurem g+5` | `emurel` *three-o'clock* | I |
-| [liter](../numbers-applied.md#stock-units) | `ubuva` | `bubuvam g+1` | `ubuval` *pool* | I |
+| [liter](../numbers-applied.md#stock-units) | `ubuna` | `bubunam g+1` | `ubunal` *pool* | I |
 | [ampere](../numbers-applied.md#stock-units) | `ogava` | `bogavam g+2` | `ogaval` *cable-car* | I |
 | [kelvin](../numbers-applied.md#stock-units) | `ezulo` | `bezulom g+300` | `ezulol` *ice* | I |
 | [mole](../numbers-applied.md#stock-units) | `omowo` | `bomowom g+1` | `omowol` *microscope* | I |
@@ -392,7 +392,7 @@ Marker `ue` (written `#-`, spoken `rue`) counts from the last place within the s
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Penultimate](../numbers.md#from-the-end) | `zegal gruedul.` | *There is a second-to-last book.* | A |
+| [Penultimate](../numbers.md#from-the-end) | `zanal gruedul.` | *There is a second-to-last book.* | A |
 | [Penultimate time](../numbers.md#from-the-end) | `h#-2` | *the penultimate time* | A |
 
 Two marker vowels in one word: speak `u` first.

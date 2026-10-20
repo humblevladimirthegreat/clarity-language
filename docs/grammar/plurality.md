@@ -387,7 +387,7 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 
 English *the boxes are heavy* can mean each box or the pile. Put **-x** on the **adjective** (after its ending) when the property holds of the noun's group **as one unit**. Without **-x**, the adjective leaves open whether it holds of each member or of the whole pile. With **-x**, a pile can be heavy when no single box is.
 
-> `zavogalx garolomx.`
+> `zavonalx garolomx.`
 >
 > z-file-box-x | g-heavy-x
 >
@@ -403,11 +403,11 @@ After nouns joined into a list with **`a`** ([joins](joins.md)), one plain `/ɡ/
 <!-- cheat-sheet: people-pointing -->
 | Agebon | English |
 |--------|---------|
-| `zavogal zuwal zal garolom` | *the file-box and the tool are each heavy* |
-| `zavogal zuwal zal garolomx` | *the file-box and the tool are heavy together* (collective) |
+| `zavonal zuwal zal garolom` | *the file-box and the tool are each heavy* |
+| `zavonal zuwal zal garolomx` | *the file-box and the tool are heavy together* (collective) |
 | `zavayal gogalam` | *the family is vast* (group-level size) |
-| `zavogalx garolom` | *the file-boxes are heavy* (members / plain) |
-| `zavogalx garolomx` | *the file-boxes are heavy collectively* |
+| `zavonalx garolom` | *the file-boxes are heavy* (members / plain) |
+| `zavonalx garolomx` | *the file-boxes are heavy collectively* |
 
 **-rx** on `/ɡ/` resumes a prior **collective** adjective (*still collectively so*).
 
@@ -476,7 +476,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *topic* | `alon` |
 | *family* | `avayal` |
 | *trumpet* | `eyorel` |
-| *page* | `ebogel` |
+| *page* | `ebonel` |
 | *sing* | `vezuyol` |
 | *see* | `vawebol` |
 
@@ -517,7 +517,7 @@ y-listener-x
 **5.** *Uzozen and Olazun see three pages between them.*
 
 ::: details Show answer
-`zuzozen zolazun zal vawebolx debogelx grarel.`
+`zuzozen zolazun zal vawebolx debonelx grarel.`
 
 [z-Uzozen | z-Olazun | z-and] | v-see-x | [d-page-x | g-three]
 :::
@@ -548,7 +548,7 @@ z-family | v-sing-x
 *Olazun and Ahelan each see two sheets of music.*
 :::
 
-**3.** `zebogel zeyorel zal garolomx.`
+**3.** `zebonel zeyorel zal garolomx.`
 
 ::: details Show answer
 [z-page | z-trumpet | z-and | g-heavy-x]

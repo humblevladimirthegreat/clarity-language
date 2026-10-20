@@ -146,7 +146,7 @@ Each unit is a metaphor on a published root. The **Literal on same root** column
 | gram | `ebero` *gram* | `beberom g+5` | `eberol` *pound* (banknote) | 💷: standard mass |
 | second | `azere` *second* | `bazerem g+3` | `azerel` *stopwatch* | ⏱️: short tick |
 | minute | `emure` *minute* | `bemurem g+5` | `emurel` *three-o'clock* | 🕒: the hand steps one minute at a time |
-| liter | `ubuva` *liter* | `bubuvam g+1` | `ubuval` *pool* | 🎱: liquid volume |
+| liter | `ubuna` *liter* | `bubunam g+1` | `ubunal` *pool* | 🎱: liquid volume |
 | ampere | `ogava` *ampere* | `bogavam g+2` | `ogaval` *cable-car* | 🚠: current along a line |
 | kelvin | `ezulo` *kelvin* | `bezulom g+300` | `ezulol` *ice* | 🧊: thermodynamic temperature |
 | mole | `omowo` *mole* | `bomowom g+1` | `omowol` *microscope* | 🔬: amount of substance |

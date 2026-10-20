@@ -10,7 +10,7 @@ English *can*, *may*, *should*, and *OK* blur who allowed something, and whether
 |---------|---------|
 | `tholel` / `tholem` / `tholer` | allowed by a rule / by a person / tolerated |
 | `thegul` / `thegum` / `thegur` | forbidden by a rule / by a person / frowned on |
-| `thugal` / `thugam` / `thugar` | required by a rule / by a person / by custom |
+| `thonal` / `thonam` / `thonar` | required by a rule / by a person / by custom |
 | `huxolel` / `huxolem` / `huxoler` | the affected person agreed in advance / said yes (and can take it back) / is assumed to be OK |
 
 The endings have a new job here: the **source**. Cue: **l ≈ law, m ≈ mouth, r ≈ read the room.** **-l** is a rule, **-m** is a person's word (the default), and **-r** is no one's word at all.
@@ -23,11 +23,11 @@ On the consent words, **-r** is allowed but visibly weaker: it puts *I assumed* 
 
 > I borrowed your car `huxoler`. I should have asked for `huxolem`.  
 > You can leave early `tholem`.  
-> We wear ties `thugar`, not `thugal`.  
-> Visitors sign in at the desk `thugal`.  
+> We wear ties `thonar`, not `thonal`.  
+> Visitors sign in at the desk `thonal`.  
 > No phones at dinner `thegum`.
 
-*We wear ties `thugar`, not `thugal`* says it's custom, not a rule.
+*We wear ties `thonar`, not `thonal`* says it's custom, not a rule.
 
 ## Practice {#practice}
 
@@ -48,7 +48,7 @@ I posted the photo of us `huxolem`.
 **3.** *People bring a dish.* (custom expects it)
 
 ::: details Show answer
-People bring a dish `thugar`.
+People bring a dish `thonar`.
 :::
 
 **4.** *Talking during the film.* (frowned on)

@@ -133,7 +133,7 @@ Rows are placed greedily in CSV order, then annealed; the run is seeded, so the 
 A five-letter root may have any consonant second, so two seams read by knowing the roots rather than by letter position. Placement keeps each to one reading, and `npm test` and `check-compounds` check both:
 
 - **Nine-letter dictionary words.** A stem is 3 + join + 5 or 5 + join + 3, and with **l / m / n / r** second both can fit. `validateCompoundRows` rejects a listed stem with two published-root splits, and placement skips a root that would make one.
-- **Holder hosts.** A five-letter root whose first four letters are a `/th/` holder host form (`egar`) would read on `/th/` as that host + grade + a holder. Placement never gives a root such an onset.
+- **Holder hosts.** A five-letter root whose first four letters are a `/th/` holder host form (`anar`) would read on `/th/` as that host + grade + a holder. Placement never gives a root such an onset.
 
 Hook compounds are not a seam: only a five-letter root fuses with a hook (D-50), so a five-letter root with **l** or **m** second, plus **-l** or **-m**, never reads as a three-letter root + ending + hook, and its onset may be any three-letter root.
 

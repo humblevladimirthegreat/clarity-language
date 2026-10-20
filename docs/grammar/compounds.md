@@ -50,7 +50,7 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | `zoholeboral` | door **-l** bell | doorbell | left piece everyday |
-| `zuzahalegal` | school **-l** book | textbook | left piece everyday |
+| `zuzahalanal` | school **-l** book | textbook | left piece everyday |
 | `zerulalogobal` | rain **-l** coat | raincoat | left piece everyday |
 | `…m…` | left root in its [abstract](word-endings.md#abstract-m) sense | same two roots, join **-m** | **m** ≈ meaning |
 
@@ -527,7 +527,7 @@ Each letter reuses a job it already has somewhere in the grammar:
 | `w` | tools and things you use | `anewu` *knife* | [`/w/`](clause.md#role-letters) is *with* |
 | `g` | signs and marks: symbols, letters, religion marks | `awugu` *warning* | [`/ɡ/`](clause.md#role-letters) is a grade, a mark on something |
 | `r` | counting, time, money and rhythm | `egore` *clock* | `r` after a role letter starts a [number](numbers.md#counts) |
-| `n` | titles: mail, paper, labels, and named sports | *newspaper*, *soccer* | [**-n**](word-endings.md#proper-name--n) is the name ending |
+| `n` | titles: mail, paper, labels, and named sports | `unona` *newspaper*, `azuna` *soccer* | [**-n**](word-endings.md#proper-name--n) is the name ending |
 
 The last vowel is the job, with the same vowel series as [joins](joins.md#beginner): **a** add, **o** one, **e** order, **u** undo.
 

@@ -788,7 +788,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
 | *Ahelan* | `ahelan` |
-| *page* | `ebogel` |
+| *page* | `ebonel` |
 | *tell* | `vezuyel` |
 | *write* | `varayel` |
 | *see* | `vawebol` |
@@ -822,7 +822,7 @@ z-Ahelan | d-CITE[flaw]#| | v-tell
 **4.** *Uzozen sees “flaw…” on the page.*
 
 ::: details Show answer
-`zuzozen d[abezum#] vawebol aol bebogel.`
+`zuzozen d[abezum#] vawebol aol bebonel.`
 
 z-Uzozen | d-CITE[flaw]# | v-see | [on | b-page]
 :::

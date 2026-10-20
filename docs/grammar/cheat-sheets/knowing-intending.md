@@ -24,7 +24,7 @@ Pick one channel for how you know. LIVE and MEMORY place the event in time; the 
 | MEMORY | direct | [`thevum`](../knowing.md#evidentiality) | *from memory* | I |
 | PATTERN | reasoned | [`thubem`](../knowing.md#evidentiality) | *from the pattern* | I |
 | CLUES | reasoned | [`theyem`](../knowing.md#evidentiality) | *from the clues* / *apparently* | I |
-| DEDUCED | reasoned | [`thegam`](../knowing.md#evidentiality) | *it follows* / *by deduction* | I |
+| DEDUCED | reasoned | [`thanam`](../knowing.md#evidentiality) | *it follows* / *by deduction* | I |
 | REPORTED | received | [`thebam`](../knowing.md#evidentiality) | *so they say* | I |
 | INTUITION | internal | [`thabom`](../knowing.md#evidentiality) | *my gut says* | I |
 
@@ -39,7 +39,7 @@ The ending grades your evidence: **-l** you could show it, **-m** you could desc
 | [MEMORY](../knowing.md#evidence-strength) | vividness | `thevul` a vivid memory | `thevum` | `thevur` a hazy memory | I |
 | [PATTERN](../knowing.md#evidence-strength) | cases, consistency | `thubel` well established | `thubem` | `thuber` a few cases | I |
 | [CLUES](../knowing.md#evidence-strength) | strength of clues | `theyel` strong clues | `theyem` | `theyer` a weak clue | I |
-| [DEDUCED](../knowing.md#evidence-strength) | how far you checked the steps | `thegal` every step shown | `thegam` | `thegar` seems to follow | I |
+| [DEDUCED](../knowing.md#evidence-strength) | how far you checked the steps | `thanal` every step shown | `thanam` | `thanar` seems to follow | I |
 | [REPORTED](../knowing.md#evidence-strength) | reliability of source | `thebal` a reliable source | `thebam` | `thebar` a rumor | I |
 | [INTUITION](../knowing.md#evidence-strength) | how well you can state it | `thabol` a strong sense | `thabom` | `thabor` a faint hunch | I |
 
@@ -69,7 +69,7 @@ What a `/b/` after a channel does: a person or thing is the [source](../knowing.
 |---------|------------------------|------|-------|
 | what made it happen | the cause | [`thahum barl`](../knowing.md#evidence-clause) | I |
 | what must hold for it | the condition | [`thohom barl`](../knowing.md#evidence-clause) / `thebom barl` / `thehem barl` | I |
-| how you know it happened | your grounds | [`theyem barl`](../knowing.md#evidence-clause) / `thubem barl` / `thegam barl` | I |
+| how you know it happened | your grounds | [`theyem barl`](../knowing.md#evidence-clause) / `thubem barl` / `thanam barl` | I |
 
 ### Deduction {#deduction}
 
@@ -78,11 +78,11 @@ What you assert depends on what sits before `barl`: the channel alone asserts th
 <!-- cheat-sheet: knowing-intending -->
 | You claim | Form | You assert | Stage |
 |-----------|------|------------|-------|
-| *P, so Q* | Q [`thegam barl`](../knowing.md#deduction) P | P and Q | I |
-| *Q follows from P* | Q [`thegam thohom barl`](../knowing.md#deduction) P | only the link | I |
-| *P and Q come to the same thing* | Q [`thegam thehem barl`](../knowing.md#deduction) P | only the link, both ways | I |
-| *P rules out Q* | Q denied with `vul`, then [`thegam thohom barl`](../knowing.md#deduction) P | only that P and Q cannot both hold | I |
-| *Q doesn't follow from P* | Q [`thegam thohom thul barl`](../join-across-roles.md#stance-join-before-barl) P | that the link fails | I |
+| *P, so Q* | Q [`thanam barl`](../knowing.md#deduction) P | P and Q | I |
+| *Q follows from P* | Q [`thanam thohom barl`](../knowing.md#deduction) P | only the link | I |
+| *P and Q come to the same thing* | Q [`thanam thehem barl`](../knowing.md#deduction) P | only the link, both ways | I |
+| *P rules out Q* | Q denied with `vul`, then [`thanam thohom barl`](../knowing.md#deduction) P | only that P and Q cannot both hold | I |
+| *Q doesn't follow from P* | Q [`thanam thohom thul barl`](../join-across-roles.md#stance-join-before-barl) P | that the link fails | I |
 
 ### Whose view {#holder}
 

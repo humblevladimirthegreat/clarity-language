@@ -134,7 +134,7 @@ describe("inspectText", () => {
   });
 
   it("Why distinguishes sakes from role compounds", () => {
-    const sake = inspectText("thagathal", tables).tokens[0];
+    const sake = inspectText("thunathal", tables).tokens[0];
     assert.equal(sake?.kind, "word");
     if (sake?.kind !== "word") return;
     assert.equal(sake.why?.line, "sakes (sake + th)");

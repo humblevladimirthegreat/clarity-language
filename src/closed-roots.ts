@@ -47,14 +47,14 @@ const CLOSED_ROWS = {
   northwest: { emoji: "↖️", root: "anuhe" },
   // no channel on `/th/` (knowing.md#evidentiality): a record is REPORTED, a tale NOTIONAL
   record: { emoji: "⏺️", root: "ego" },
-  scroll: { emoji: "📜", root: "oge" },
+  scroll: { emoji: "📜", root: "one" },
   // no intention on `/h/` (intention.md#plan): PLAN and DECISION are `/th/` stances
   map: { emoji: "🗺️", root: "age" },
   check: { emoji: "✅", root: "ogo" },
   // template sample filler
   walk: { emoji: "🚶", root: "owure" },
   // the nine sake roots (sakes.md#sake-inventory); knot, tool and ballot are also template sample fillers
-  ballot: { emoji: "🗳️", root: "aga" },
+  ballot: { emoji: "🗳️", root: "una" },
   tool: { emoji: "🧰", root: "uwa" },
   lightbulb: { emoji: "💡", root: "owo" },
   compass: { emoji: "🧭", root: "ure" },

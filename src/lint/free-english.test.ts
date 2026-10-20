@@ -214,7 +214,7 @@ describe("tableEnglish", () => {
       tableEnglish(md).map(({ agebon, text }) => ({ agebon, text })),
       [{ agebon: "zuzozen vowurel.", text: "*Uzozen walks.* (alone)" }],
     );
-    assert.deepEqual(tableEnglish(sheet(["| `hagom` | here | *here*, *this* | B |"], "| Agebon | Use | English | Stage |")), []);
+    assert.deepEqual(tableEnglish(sheet(["| `hanom` | here | *here*, *this* | B |"], "| Agebon | Use | English | Stage |")), []);
     assert.deepEqual(tableEnglish(sheet(["| Join | `A xol B` | *(A or B)* | B |"])), []);
     assert.deepEqual(tableEnglish("| English | Agebon |\n|---|---|\n| *walks, strolls* | `zuzozen vowurel.` |"), []);
   });

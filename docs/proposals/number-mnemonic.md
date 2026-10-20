@@ -108,7 +108,7 @@ Three-letter roots with a filler consonant (`oho` *door*) and five-letter roots 
 
 Phone-style groups already match how they're spoken (`555,123,4567`): one image per comma group, or 2-digit chunks with the 3-digit groups split 2+1.
 
-**2381** → **23 | 81**: `zodegel` *ticket*, `zorebol` *ring*.
+**2381** → **23 | 81**: `zudenel` *ticket*, `zorebol` *ring*.
 
 **5970** → **59 | 70**: `zezwedzerlandal` *Swiss flag*, `zulamal` *laugh*. A root's second consonant is its kind, so **59** is always a named root (a flag) with **z** first, and **70** a mind-and-feeling root with **l** first.
 
@@ -184,7 +184,7 @@ Working examples:
 |------|---------|--------|
 | `zabedol` *pear* | b d | **12** |
 | `zobolol` *plant* | b l | **17** |
-| `zodegel` *ticket* | d g | **23** |
+| `zudenel` *ticket* | d g | **23** |
 | `zagebol` *glasses* | g b | **31** |
 | `zuvogal` *frame* | v g | **43** |
 | `zezezal` *squirrel* | z z | **55** |

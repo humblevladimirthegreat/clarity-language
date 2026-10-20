@@ -30,7 +30,7 @@ So *three* is **g** + **ra** + **re** + **l**: **`grarel`**.
 >
 > "There are three cats."
 
-> `zuzozen degalx grarel vawebol.`
+> `zuzozen danalx grarel vawebol.`
 > z-Uzozen | [d-book-x | g-three] | v-see
 >
 > "Uzozen sees three books."
@@ -41,12 +41,12 @@ A number with more digits is still **one word**: one syllable per digit, left to
 
 To say **which place** a thing has in a series (*the first*, *the second*, …), swap the count marker **`ra`** for the rank marker **`re`**. **`gredul`** is *the second*.
 
-> `zegal gredul.`
+> `zanal gredul.`
 > z-book | g-2nd
 >
 > "There is a second book."
 
-> `zolazun degal grerel varayel.`
+> `zolazun danal grerel varayel.`
 > z-Olazun | [d-book | g-3rd] | v-write
 >
 > "Olazun writes the third book."
@@ -1154,7 +1154,7 @@ Digitless specials, zero × exponent, and hyperbole keep their meaning under [st
 
 To count **from the last place** (*penultimate*, *starting with the last one*), use marker **`ue`** (writing **`#-`**). Count back within the **same generation** (no exponent). Speech uses the marker vowels in u-first order: `#-` is spelled and pronounced **rue** before its digit syllables and ending (e.g. `gruedul`). The number’s role-letter-plus-`r` cluster distinguishes it from join **`ue`**.
 
-> `zegal gruedul.`
+> `zanal gruedul.`
 > z-book | g-2nd-from-end
 >
 > "There is a second-to-last book."

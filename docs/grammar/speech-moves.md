@@ -572,7 +572,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *stop* | `vozohul` |
 | *quiet* | `ogowul` |
 | *run* | `varuvel` |
-| *page* | `ebogel` |
+| *page* | `ebonel` |
 | *write* | `varayel` |
 | *see* | `vawebol` |
 | *find* | `vumewol` |
@@ -653,7 +653,7 @@ y-soft-prohibition | z-interlocutors | v-stop
 *Let's not stop.*
 :::
 
-**4.** `thavewem zahelan debogel varayel.`
+**4.** `thavewem zahelan debonel varayel.`
 
 ::: details Show answer
 th-revelation | z-Ahelan | d-page | v-write

@@ -168,7 +168,7 @@ The relation word takes the other noun as its `/b/` right after it. Use `/h/` on
 | [**`hewom` / `gewom`**](../relations.md#like-resembles) | resemblance to a model | *like* | B |
 | [**`hewol` / `gewol`**](../relations.md#exactly-like) | an exact match | *exactly like* | I |
 | [**`heham` / `geham`**](../relations.md#exchange) | the other side of a swap | *in exchange for* | B |
-| [**`hagom` / `gagom`**](../relations.md#proxy) | authorized agency | *on behalf of* | B |
+| [**`hanom` / `ganom`**](../relations.md#proxy) | authorized agency | *on behalf of* | B |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -177,8 +177,8 @@ The relation word takes the other noun as its `/b/` right after it. Use `/h/` on
 | [Like an event](../relations.md#like-resembles): `barl` | `zuzozen vowurel hewom barl zudozal vazuvel.` | *Uzozen walks the way a duck swims.* | B |
 | [Alike](../relations.md#like-resembles) | `zuzozen zolazun zal gewom.` | *Uzozen and Olazun are alike.* | B |
 | [Exactly like](../relations.md#exactly-like) | `zuzozen hewol budozal vowurel.` | *Uzozen walks exactly like a duck.* | I |
-| [In exchange](../relations.md#exchange) | `zuzozen degal heham behowol veham.` | *Uzozen trades a book for a hammer.* | B |
-| [On behalf of](../relations.md#proxy) | `zuzozen hagom bolazun vezuyel.` | *Uzozen speaks on behalf of Olazun.* | B |
+| [In exchange](../relations.md#exchange) | `zuzozen danal heham behowol veham.` | *Uzozen trades a book for a hammer.* | B |
+| [On behalf of](../relations.md#proxy) | `zuzozen hanom bolazun vezuyel.` | *Uzozen speaks on behalf of Olazun.* | B |
 
 ### Where, around, between {#locative}
 
@@ -240,28 +240,28 @@ Put the tie root on `/ɡ/` with **-m**, then the other person in `/b/`.
 
 ### As of {#as-of}
 
-Whose-now is speech-now unless you move it. `hogam` claims the moment as real; `hugem` only holds a place. `/h/` covers the clause, `/ɡ/` one noun, `/w/` the adjective right after, `/th/` the stances. A clause takes one pair; to keep the same whose-now, repeat the word with **-r** and no `/b/`.
+Whose-now is speech-now unless you move it. `henam` claims the moment as real; `hunem` only holds a place. `/h/` covers the clause, `/ɡ/` one noun, `/w/` the adjective right after, `/th/` the stances. A clause takes one pair; to keep the same whose-now, repeat the word with **-r** and no `/b/`.
 
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`hogam` / `gogam` / `wogam`**](../relations.md#as-of) | a real now | *as of* (dated ledger) | A |
-| [**`hugem` / `gugem` / `wugem`**](../relations.md#as-of) | a placeholder now | *as of* (placeholder now) | A |
-| [**`hogar` / `huger`**](../relations.md#as-of) | resume that whose-now | *same books* | A |
+| [**`henam` / `genam` / `wenam`**](../relations.md#as-of) | a real now | *as of* (dated ledger) | A |
+| [**`hunem` / `gunem` / `wunem`**](../relations.md#as-of) | a placeholder now | *as of* (placeholder now) | A |
+| [**`henar` / `huner`**](../relations.md#as-of) | resume that whose-now | *same books* | A |
 
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [**`thogam`**](../relations.md#stance-as-of) | stances as of a real now | *I thought / I felt (then)* | A |
-| [**`thugem`**](../relations.md#stance-as-of) | stances as of a now you are not claiming | *I would think / I'd feel* | A |
-| [**`thogar` / `thuger`**](../relations.md#stance-as-of) | resume that stance-now | *still as I saw it then* | A |
+| [**`thenam`**](../relations.md#stance-as-of) | stances as of a real now | *I thought / I felt (then)* | A |
+| [**`thunem`**](../relations.md#stance-as-of) | stances as of a now you are not claiming | *I would think / I'd feel* | A |
+| [**`thenar` / `thuner`**](../relations.md#stance-as-of) | resume that stance-now | *still as I saw it then* | A |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [As of a date](../relations.md#as-of) | `zolazun haram hogam b_#22,7 velurul.` | *As of 22 July, Olazun had left and was still gone.* | A |
-| [Resume the same now](../relations.md#as-of) | `zolazun haram hogam b_#22,7 velurul. xuzozen haram hogar vowurel.` | *…As of that same day, Uzozen's walk still counted too.* | A |
-| [Stance then](../relations.md#stance-as-of) | `zolazun thogam b_#22,7 thomam velurul.` | *On 22 July, I thought Olazun might leave.* | A |
-| [Back then](../relations.md#stance-as-of) | `zolazun thogam brul thomam velurul.` | *Back then, I thought Olazun might leave.* | A |
+| [As of a date](../relations.md#as-of) | `zolazun haram henam b_#22,7 velurul.` | *As of 22 July, Olazun had left and was still gone.* | A |
+| [Resume the same now](../relations.md#as-of) | `zolazun haram henam b_#22,7 velurul. xuzozen haram henar vowurel.` | *…As of that same day, Uzozen's walk still counted too.* | A |
+| [Stance then](../relations.md#stance-as-of) | `zolazun thenam b_#22,7 thomam velurul.` | *On 22 July, I thought Olazun might leave.* | A |
+| [Back then](../relations.md#stance-as-of) | `zolazun thenam brul thomam velurul.` | *Back then, I thought Olazun might leave.* | A |
 
 ## Same root as {#roots}
 
@@ -274,12 +274,12 @@ Each pole, linker, and relation word is the abstract sense of an ordinary root. 
 | [`habam`](../dependents.md#poles) *before*, [`halam`](../dependents.md#poles) *after*, [`hovam`](../dependents.md#poles) *so that* | `abal` 🎒, `alal` ⌛, `oval` 🥅 | B |
 | [`xahem`](../dependents.md#sentence-linkers), [`xezom`](../dependents.md#sentence-linkers), [`xegorem`](../dependents.md#sentence-linkers) | `ahem` ➡️, `ezom` 🦓, `egorem` 🕰️ | I |
 | [`xuvewem`](../dependents.md#sentence-linkers), [`xegohum`](../dependents.md#sentence-linkers), [`xuvedam`](../dependents.md#sentence-linkers) | `uvewem` 🎞️, `egohum` 🚧, `uvedam` 🍟 | I |
-| [`hewom`](../relations.md#like-resembles) *like*, [`heham`](../relations.md#exchange) *in exchange for*, [`hagom`](../relations.md#proxy) *on behalf of* | `ewol` 🪞, `ehal` 💱, `agol` 🪪 | B |
+| [`hewom`](../relations.md#like-resembles) *like*, [`heham`](../relations.md#exchange) *in exchange for*, [`hanom`](../relations.md#proxy) *on behalf of* | `ewol` 🪞, `ehal` 💱, `anol` 🪪 | B |
 | [`hedam`](../relations.md#locative-relations) *between*, [`hohem`](../relations.md#locative-relations) *across*, [`hevam`](../relations.md#locative-relations) *around* | `edal` 🥪, `ohel` 🌉, `eval` 🎠 | I |
 | [`hobem`](../relations.md#of-relations) *part of*, [`hadam`](../relations.md#of-relations) *contents of*, [`hulem`](../relations.md#of-relations) *made of* | `obel` 🦴, `adal` 🫙, `ulel` 🪵 | I |
 | [`haham`](../relations.md#of-relations) *from*, [`hozowum`](../relations.md#of-relations) *a piece of* | `ahal` 🗾, `ozowul` 🪚 | I |
 | [`gumayam`](../relations.md#social-relations) *friend*, [`gugobem`](../relations.md#social-relations) *boss*, [`gohuyam`](../relations.md#social-relations) *partner*, [`gobolom`](../relations.md#social-relations) *care* | `umayal` *Mrs Claus*, `ugobel` *crown*, `ohuyal` *holding hands*, `obolol` *house plant* | I |
-| [`hogam`](../relations.md#as-of) *as of* (ledger), [`hugem`](../relations.md#as-of) *as of* (placeholder) | `ogal` 📒, `ugel` 🔖 | A |
+| [`henam`](../relations.md#as-of) *as of* (ledger), [`hunem`](../relations.md#as-of) *as of* (placeholder) | `enal` 📒, `unel` 🔖 | A |
 
 ## Don't mix up {#dont-mix-up}
 
@@ -293,5 +293,5 @@ Each pole, linker, and relation word is the abstract sense of an ordinary root. 
 | `xahem` *therefore* ([starts a sentence](../dependents.md#continue-x)) | | `hezom barl` *although* ([attaches a clause](../dependents.md#poles)) |
 | `hewom` *like* ([resembles, and is real](../relations.md#like-resembles)) | | `hewol` *exactly like* ([a perfect match](../relations.md#exactly-like)) |
 | `gadam` *contents of* ([what a vessel holds](../relations.md#of-relations)) | | `al` *in* ([a place hook](../hooks.md#extra-noun-intermediate)) |
-| `hagom` *on behalf of* ([an agent](../relations.md#proxy)) | | `heham` *in exchange for* ([the other half of a swap](../relations.md#exchange)) |
-| `hogam` *as of* ([a dated now](../relations.md#as-of)) | | `halam` *after* ([a time for the event](../dependents.md#time-poles)) |
+| `hanom` *on behalf of* ([an agent](../relations.md#proxy)) | | `heham` *in exchange for* ([the other half of a swap](../relations.md#exchange)) |
+| `henam` *as of* ([a dated now](../relations.md#as-of)) | | `halam` *after* ([a time for the event](../dependents.md#time-poles)) |

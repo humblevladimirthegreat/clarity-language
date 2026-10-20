@@ -77,7 +77,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *lie* | `valamul` |
 | *write* | `varayel` |
 | *fight* | `vavuvul` |
-| *book* | `egal` |
+| *book* | `anal` |
 | *see* | `vawebol` |
 | *therefore* | `xahem` |
 | *punch* | `vanuvul` |
@@ -136,7 +136,7 @@ z-speaker | th-plan-atlas | d-Olazun | v-fight
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zuwon thager degal vawebol.`
+**1.** `zuwon thager danal vawebol.`
 
 ::: details Show answer
 z-speaker | th-plan-sketch | d-book | v-see
@@ -524,7 +524,7 @@ After a holder, WANT and DECISION are the holder's, just as PLAN is. After **`ue
 >
 > "Olazun sleeps, against Uzozen's wishes, as far as I can tell."
 
-**Compare with:** [requirement](sakes.md#requirement) `zuzozen vowurel thugam bolazun.` (*Olazun makes Uzozen walk*) puts a demand on Uzozen, who now owes the walk. **`zuzozen thogom vowurel.`** (*I've decided that Uzozen walks*) says only that you chose how things go, the way a coach decides who plays, with nothing asked of Uzozen.
+**Compare with:** [requirement](sakes.md#requirement) `zuzozen vowurel thonam bolazun.` (*Olazun makes Uzozen walk*) puts a demand on Uzozen, who now owes the walk. **`zuzozen thogom vowurel.`** (*I've decided that Uzozen walks*) says only that you chose how things go, the way a coach decides who plays, with nothing asked of Uzozen.
 
 ### Plan or forecast
 <a id="predict-evidentiality"></a>
@@ -577,7 +577,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Ahelan* | `ahelan` |
 | *I* | `uwon` |
 | *PLAN* | `thagem` |
-| *page* | `ebogel` |
+| *page* | `ebonel` |
 | *write* | `varayel` |
 | *sit* | `vuhohol` |
 | *tell* | `vezuyel` |
@@ -652,7 +652,7 @@ z-Uzozen | h-ABIL-unable-temporary
 *Uzozen can't right now.*
 :::
 
-**3.** `zahelan thagem thogol debogel varayel.`
+**3.** `zahelan thagem thogol debonel varayel.`
 
 ::: details Show answer
 z-Ahelan | th-plan-itinerary | th-DECISION-irreversible | d-page | v-write
