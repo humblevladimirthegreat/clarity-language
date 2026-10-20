@@ -51,4 +51,4 @@ setback responses:
 -distancing
 
 git stats:
-echo "Commits: $(git rev-list --count main)" && git log main --numstat --format= | awk '$1!="-"{a+=$1;d+=$2} END{print "Added: "a"\nDeleted: "d"\nTotal changed: "a+d"\nCurrent lines (A-D): "a-d}'
+echo "Commits: $(git rev-list --count main)" && git log main --numstat --format= | awk '$1!="-"{a+=$1;d+=$2} END{print "Added: "a"\nDeleted: "d"\nTotal changed: "a+d"\nCurrent lines: "a-d}'

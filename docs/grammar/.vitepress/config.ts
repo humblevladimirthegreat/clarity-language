@@ -44,6 +44,7 @@ export default defineConfig({
         '@lexicon-search': `${srcDir}/lexicon-search.ts`,
         '@learner-name': `${srcDir}/learner-name.ts`,
         '@cmu-lookup': `${srcDir}/cmu-lookup.ts`,
+        '@digit-pegs': `${srcDir}/digit-pegs.ts`,
         '@name-respell': `${srcDir}/name-respell.ts`,
         '@parse-browser': `${srcDir}/parse/browser.ts`,
         '@tts-browser': `${srcDir}/tts/browser.ts`,
@@ -114,6 +115,7 @@ export default defineConfig({
         items: [
           { text: 'Lexicon', link: '/lexicon' },
           { text: 'Inspect', link: '/inspect' },
+          { text: 'Number Pegs', link: '/pegs' },
           { text: 'Terminology', link: '/terminology' },
         ],
       },

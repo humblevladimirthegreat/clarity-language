@@ -119,6 +119,7 @@ const ALLOWED_HTML_TAGS = new Set([
   "video",
   "AgebonInspect",
   "ClaritishEditor",
+  "DigitPegs",
   "GlossOverlay",
   "EnglishHelper",
   "GlossViewer",

@@ -4,6 +4,7 @@ import './custom.css'
 import Layout from './Layout.vue'
 import LexiconSearch from '../components/LexiconSearch.vue'
 import NameRespell from '../components/NameRespell.vue'
+import DigitPegs from '../components/DigitPegs.vue'
 import GlossViewer from '../components/GlossViewer.vue'
 import EnglishHelper from '../components/EnglishHelper.vue'
 import AgebonInspect from '../components/AgebonInspect.vue'
@@ -20,6 +21,7 @@ export default {
   enhanceApp({ app }) {
     app.component('LexiconSearch', LexiconSearch)
     app.component('NameRespell', NameRespell)
+    app.component('DigitPegs', DigitPegs)
     app.component('GlossViewer', GlossViewer)
     app.component('EnglishHelper', EnglishHelper)
     app.component('AgebonInspect', AgebonInspect)

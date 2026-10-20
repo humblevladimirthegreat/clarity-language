@@ -186,7 +186,7 @@ The digit table is built from two rules (consonant groups, vowel cycle **u a o e
 
 The test covers digit pairs and digit–filler pairs. The exponent filler is checked on `a` / `u`, and the points filler `y` on all four vowels. The table passes every hard pair and every soft pair between digits. `y` still shares vowels with `l` and `r`, which no filler that uses all four vowels can avoid.
 
-**Fillers `w` + `y`.** Inside a number word, digits avoid `th` (the group separator) and `x` (the seam and plural). That leaves twelve letters for ten digits and two fillers. Keeping `y` keeps the points syllables. `w` and `y` are the two rarest first consonants of ordinary roots, so the digit-onset mnemonic keeps every 00–99 cell filled.
+**Fillers `w` + `y`.** Inside a number word, digits avoid `th` (the group separator) and `x` (the seam and plural). That leaves twelve letters for ten digits and two fillers. Keeping `y` keeps the points syllables. `w` and `y` are the two rarest first consonants of ordinary roots, so the [number pegs](../grammar/pegs.md) keep every 00–99 cell filled.
 
 **Ending block (7 l, 8 r, 9 n, 0 m).** `r` must sit on 7 or 8, because `ra` / `ru` would be the count and negative markers. Only arrangements with `m` on 0 also avoid the soft d/l, d/n and b/m clashes. The fricative block has to start at 4, because `v` and `r` can't take `a` / `u` next to the `w` filler.
 

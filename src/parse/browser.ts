@@ -1,4 +1,5 @@
-export { createClassifyTables } from "./classify.js";
+export { classifyAll, createClassifyTables } from "./classify.js";
+export { parseWords } from "./word.js";
 export { parseWithTables as parse } from "./parse-core.js";
 export {
   chipsFor,
