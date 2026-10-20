@@ -337,7 +337,7 @@ On main today, `convert-word --lexicon --all` stops with `short roots too close 
 
 - **`number-mnemonic.md`:** a peg's second digit is now its root's **kind**. Under the respelled digits, every animal peg ends in 5 (`z`), every food peg in 2 (`d`), every flag peg in 9 (`n`), and so on. Every column of the 00–99 table fills from one kind. The mnemonic still never steers a spelling. Its coverage tables come from the echo-placement simulation and need a rerun.
 - **`number-respelling.md`:** its filler letters were picked by how rare each letter was as a root consonant under English-echo placement. Root tails set those frequencies by kind, so that proposal re-picks its fillers to fit the kind sizes settled here. This proposal doesn't adjust to it.
-- **`tail-suffix.md`:** listed compounds whose head is only the tail (`CV`). Depends on this letter map and on banning 3 + join + 3 compounds so a seven-letter stem can be five-letter left + suffix. Not started here.
+- **`tail-suffix.md`:** listed compounds whose head is only the tail (`CV`). Depends on this letter map, on banning 3 + join + 3 compounds, and on banning `l` / `m` / `n` / `r` as suffix heads. Nature, mind, named, and counting stay on those letters. Not started here.
 
 ## Costs
 
