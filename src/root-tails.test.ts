@@ -128,8 +128,31 @@ describe("tailMetrics", () => {
       { root: "abawo", kind: "tool" },
     ]);
     assert.equal(m.confusing, 3);
-    assert.deepEqual(m.byKind.get("creature"), { rows: 5, pairs: 3 });
-    assert.deepEqual(m.byKind.get("tool"), { rows: 1, pairs: 0 });
+    assert.equal(m.flag, 0);
+    assert.equal(m.nonFlag, 3);
+    assert.equal(m.mixed, 0);
+    assert.deepEqual(m.byKind.get("creature"), { rows: 5, pairs: 3, possible: 10 });
+    assert.deepEqual(m.byKind.get("tool"), { rows: 1, pairs: 0, possible: 0 });
+  });
+
+  it("separates flag pairs from other same-kind pairs", () => {
+    const m = tailMetrics([
+      { root: "abane", kind: "named", concrete: "japan-flag" },
+      { root: "abano", kind: "named", concrete: "france-flag" },
+      { root: "abanu", kind: "named", concrete: "om" },
+      { root: "ebane", kind: "named", concrete: "spain-flag" },
+      { root: "abage", kind: "sign", concrete: "aries" },
+      { root: "abege", kind: "sign", concrete: "taurus" },
+    ]);
+    assert.equal(m.flag, 1);
+    assert.equal(m.nonFlag, 1);
+    assert.equal(m.mixed, 2);
+    assert.equal(m.confusing, 4);
+    assert.equal(m.flagRows, 3);
+    assert.equal(m.nonFlagRows, 3);
+    assert.equal(m.flagPossible, 3);
+    assert.equal(m.nonFlagPossible, 1);
+    assert.equal(m.mixedPossible, 3);
   });
 
   it("floors a kind's pairs at an even spread over the 48 prefixes", () => {

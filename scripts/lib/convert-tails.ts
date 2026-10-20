@@ -77,9 +77,14 @@ function printReport(tails: TailRow[], published: ReturnType<typeof parsePublish
   const live = published.filter((row) => row.root.length === 5);
   // Live roots are counted with the kind their row has here, so both columns use the same pairs.
   const kindOf = new Map(tails.map((row) => [tailKey(row), row.kind]));
-  const before = tailMetrics(live.map((row) => ({ root: row.root, kind: kindOf.get(tailKey(row)) ?? "" })));
-  const after = tailMetrics(tails);
-  const line = (label: string, a: string, b: string) => console.log(`  ${label.padEnd(52)}${a.padStart(8)}${b.padStart(8)}`);
+  const metricRows = (rows: { concrete: string; root: string }[]) =>
+    rows.map((row) => ({ root: row.root, kind: kindOf.get(tailKey(row)) ?? "", concrete: row.concrete }));
+  const before = tailMetrics(metricRows(live));
+  const after = tailMetrics(metricRows(tails));
+  // Rate: confusing pairs among the same-kind pairs that could share a prefix. Flags and other
+  // rows have different bases (one crowded kind vs eleven smaller ones).
+  const share = (count: number, possible: number) => (possible === 0 ? String(count) : `${count} (${pct(count, possible)})`);
+  const line = (label: string, a: string, b: string) => console.log(`  ${label.padEnd(52)}${a.padStart(16)}${b.padStart(16)}`);
   console.log(`lexicon-tails.csv: ${tails.length} roots placed`);
   console.log("");
   line("", "live", "tails");
@@ -88,15 +93,25 @@ function printReport(tails: TailRow[], published: ReturnType<typeof parsePublish
     return pct(scored.filter((row) => row.root[1] === firstConsonant(pron.get(row.concrete)!)).length, scored.length);
   };
   line("first consonant is the label's first consonant", echoed(live), echoed(tails));
-  line("confusing pairs (same kind, same first two letters)", String(before.confusing), String(after.confusing));
+  line("confusing pairs / same-kind pairs", share(before.confusing, before.possible), share(after.confusing, after.possible));
+  line("  flags", share(before.flag, before.flagPossible), share(after.flag, after.flagPossible));
+  line("  excluding flags", share(before.nonFlag, before.nonFlagPossible), share(after.nonFlag, after.nonFlagPossible));
+  if (before.mixed > 0 || after.mixed > 0) {
+    line("  mixed flag / other same-kind", share(before.mixed, before.mixedPossible), share(after.mixed, after.mixedPossible));
+  }
 
   console.log("");
   console.log("confusing pairs per kind (floor: rows spread evenly over the 48 first-two-letter prefixes):");
-  console.log(`  ${"".padEnd(12)}${["rows", "live", "tails", "floor"].map((h) => h.padStart(8)).join("")}`);
+  const pairPad = 16;
+  console.log(`  ${"".padEnd(12)}${["rows", "live", "tails", "floor"].map((h) => h.padStart(h === "live" || h === "tails" ? pairPad : 8)).join("")}`);
   for (const kind of Object.keys(KIND_LETTERS) as Kind[]) {
     const rows = after.byKind.get(kind)?.rows ?? 0;
-    const cells = [rows, before.byKind.get(kind)?.pairs ?? 0, after.byKind.get(kind)?.pairs ?? 0, evenSpreadPairs(rows)];
-    console.log(`  ${`${kind} ${KIND_LETTERS[kind]}`.padEnd(12)}${cells.map((c) => String(c).padStart(8)).join("")}`);
+    const possible = after.byKind.get(kind)?.possible ?? 0;
+    const livePairs = before.byKind.get(kind)?.pairs ?? 0;
+    const tailsPairs = after.byKind.get(kind)?.pairs ?? 0;
+    console.log(
+      `  ${`${kind} ${KIND_LETTERS[kind]}`.padEnd(12)}${String(rows).padStart(8)}${share(livePairs, possible).padStart(pairPad)}${share(tailsPairs, possible).padStart(pairPad)}${String(evenSpreadPairs(rows)).padStart(8)}`,
+    );
   }
 
   console.log("");

@@ -32,7 +32,7 @@ Today `convert-word` ranks candidates by how closely they echo the English label
 
 **1349 of 1351** five-letter roots are one letter from another root. The 171 core roots form **253 one-letter pairs among themselves**. 👓 *glasses* is one letter from *house*, *mouse*, *clock*, *calendar*, *quiet*, *climb* and *croissant*. Most of these pairs differ only in a vowel, the part the echo doesn't cue. Words that look alike and are learned close together are a well-documented source of confusion in vocabulary learning.
 
-These counts take every one-letter pair. Counted the way the placer now counts them, as same-kind pairs that share their first two letters ([scoring](#onset-scoring)), the live lexicon has 3497. The [phase 1 run](#phase-1-run) compares the two on that measure.
+These counts take every one-letter pair. Counted the way the placer now counts them, as same-kind pairs that share their first two letters ([scoring](#onset-scoring)), the live lexicon has 3451. The [phase 1 run](#phase-1-run) compares the two on that measure.
 
 ### What a tail gives instead
 
@@ -62,35 +62,36 @@ Examples below write roots as patterns (`VCVza`), never as spellings ([placehold
 
 The kind follows the row's **concrete sense**, as its label names it. The abstract sense takes the tail of its concrete seed: *compassion* sounds like a body part because it's reached through *heart*.
 
-Row counts are from the phase 1 draft of `lexicon-tails.csv` (2026-10-19). The edge rules exist partly to balance the kinds: outside the named rows, every kind lands between 84 and 116 rows.
+Row counts are from the phase 1 draft of `lexicon-tails.csv` (2026-10-19).
 
 | Letter | Kind | Anchor in the grammar | Examples | Rows |
 |--------|------|------------------------|----------|--------|
-| `z` | **creatures**: animals, monsters, microbes | `/z/` is *who acts* | cat, ant, owl, snake, lion, dragon | 113 |
-| `y` | **people**: persons, kin, roles, and actions only a person could do | `y` + name calls someone | baby, elder, police, villain, teach, judge | 85 |
+| `z` | **creatures**: animals, animal-shaped monsters, microbes | `/z/` is *who acts* | cat, ant, owl, snake, lion, dragon | 105 |
+| `y` | **people**: persons, kin, roles, folklore beings you address as someone, and actions only a person could do | `y` + name calls someone | baby, elder, police, villain, ogre, teach, judge | 93 |
 | `m` | **mind and feeling**: faces, emotions, mental states | **-m** is the abstract ending | grin, pensive, angry, starstruck, thought | 84 |
 | `b` | **the body and what goes on it**: body parts, clothing, jewelry, what you carry, body care, medicine | `/b/` is the *bolted-on* piece | hand, nose, glove, crown, bag, soap, bandage | 114 |
-| `v` | **doing, playing and moving**: actions any creature could do, field and snow sports, toys, vehicles | `/v/` is the action | run, fall, soccer, ski, kite, party, train | 91 |
+| `v` | **doing, playing and moving**: actions any creature could do, sports, scored games, toys, vehicles | `/v/` is the action | run, fall, soccer, golf, dice, ski, kite, party, train | 113 |
 | `h` | **places and fixtures**: buildings, landscapes, rooms, what's built in, street furniture, headings | `/h/` is *where* | house, mountain, bed, traffic-light, north | 94 |
 | `l` | **nature and raw stuff**: plants, weather, sky, materials, colors | **-l** is the concrete ending | tree, flower, fire, cloud, gold, red | 85 |
 | `d` | **food and drink**, with dishware and kitchen gear | `/d/` is *done to* (eaten) | bread, apple, tea, plate, spoon, pan | 116 |
 | `w` | **tools and things you use** | `/w/` is *with* (the instrument) | knife, hammer, broom, lamp, key, phone | 94 |
 | `g` | **signs, marks and writing**: symbols, paper, letters | `/ɡ/` is *grade*, a mark on something | warning, circle, book, envelope | 93 |
-| `r` | **counting, time, money and rhythm**: numbers, charts, clocks, coins, music, dance, dated events, scored games and races | `r` after a role letter starts a number | clock, coin, calendar, bar-chart, drum, music note, dance, birthday, dice, golf | 99 |
-| `n` | **named places and traditions**: countries, religions, zodiac | **-n** is the name ending | country flags, orthodox-cross, aries | 283 |
+| `r` | **counting, time, money and rhythm**: numbers, charts, clocks, coins, music, dance, dated events, zodiac | `r` after a role letter starts a number | clock, coin, calendar, bar-chart, drum, music note, dance, birthday, aries | 89 |
+| `n` | **named places and traditions**: countries, religions | **-n** is the name ending | country flags, orthodox-cross | 271 |
 
 Edge rules:
 
 - **People vs doing:** an action only a person could do (teach, judge, cook, pray) is `y`. An action any creature could do (run, climb, fall) is `v`.
+- **People vs creatures:** a being you address as someone (ogre, vampire, alien) is `y`. An animal or animal-shaped monster (dragon, unicorn) is `z`.
 - **On the body:** what is worn, carried or put on the body (ring, bag, lipstick, soap, bandage, pill) is `b`, not `w`.
-- **Play:** toys, game pieces and sports gear (ball, dice, kite, skis) are `v`, with the play.
+- **Play:** toys, game pieces, sports and scored games (ball, dice, kite, skis, golf, baseball) are `v`, with the play.
 - **Kitchen:** dishware and cooking gear (plate, spoon, pan, teapot) are `d`, with the food.
 - **Fixtures vs tools:** a thing built into a place (door, window, bed, toilet) is `h`. A thing you pick up and use (broom, key) is `w`.
 - **Marks vs where:** a thing whose job is a mark on a surface (writing, paper, a symbol, a UI button, a prohibition icon) is `g`. A thing whose job is to occupy or name a location (street furniture, a facility pictograph, a compass heading) is `h`.
 - **Paper vs tools:** a thing that carries marks (book, envelope, label) is `g`. A thing that makes them (pen, brush) is `w`.
 - **Colors** are `l`, a raw quality of stuff. **Numbers and charts** are `r`.
 - **Parts of creatures** (wing, horn, feather, paw-prints) are body (`b`), like a person's parts.
-- **Times of day** (night, sunrise, dusk) are `r`. The sky things (sun, moon, star) are `l`.
+- **Times of day** (night, sunrise, dusk) and the **zodiac** belt are `r`. The sky things (sun, moon, star) are `l`. Country flags and religion symbols stay `n`.
 - **Compounds** need no tag. A stem ends in its head root, so a kind of bird keeps the bird's tail.
 
 ## Final vowel: shape or job {#shapes}
@@ -112,7 +113,7 @@ The `o` default will be the fullest vowel in most kinds. That's acceptable: `o` 
 
 ## Exceptions {#exceptions}
 
-- **Named rows (`n`):** the final vowel is free. Shape means nothing for a country, and the free letter gives 283 rows four times the room.
+- **Named rows (`n`):** the final vowel is free. Shape means nothing for a country, and the free letter gives 271 rows four times the room.
 - **Three-letter roots:** exempt. These 69 rows back the closed grammar overlays. Their single consonant is also their onset, and they need every letter to stay apart ([root length](../meta/lexicon.md#root-length)).
 - **No pins.** 👓 is placed like any row (worn, so `b`), and its spelling changes. The language name comes from this root ([language name](../meta/language-name.md)), so the name is settled once the re-placement shows the new root.
 - **Closed roots** ([`src/closed-roots.ts`](../../src/closed-roots.ts)) are respelled like any row; code names them by seed. The house cast's names follow their roots: *swan* and *lion* become `z` creatures and *hibiscus* an `l` plant, so all three names still differ in their onsets.
@@ -123,7 +124,7 @@ The `o` default will be the fullest vowel in most kinds. That's acceptable: `o` 
 
 With the ban lifted, there are 4 × 12 × 4 × 12 × 4 = **9216** five-letter roots. A set in which every two roots differ in at least two letters holds at most **768** of them (9216 ÷ 12: drop one consonant and the rest must still be unique). With about 1350 five-letter rows, **at least 43% of roots will have a one-letter neighbor**, under any placement. The goal is to make those neighbors harmless, not to remove them.
 
-The 43% bound counts every pair. Only [confusing pairs](#onset-scoring) are scored: two roots of the same kind that share their first two letters. Each kind has **48** such prefixes (4 first vowels × 12 first consonants), whatever its shapes, so a kind of up to 48 rows can have none. Past 48, some are unavoidable. Spread evenly, a kind of *n* rows has at least *r*·C(*q*+1, 2) + (48 − *r*)·C(*q*, 2) confusing pairs, where *q* = ⌊*n* / 48⌋ and *r* = *n* mod 48. That floor is 36 to 88 pairs for the eleven shaped kinds and 695 for the 283 named rows: **1293** in all.
+The 43% bound counts every pair. Only [confusing pairs](#onset-scoring) are scored: two roots of the same kind that share their first two letters. Each kind has **48** such prefixes (4 first vowels × 12 first consonants), whatever its shapes, so a kind of up to 48 rows can have none. Past 48, some are unavoidable. Spread evenly, a kind of *n* rows has at least *r*·C(*q*+1, 2) + (48 − *r*)·C(*q*, 2) confusing pairs, where *q* = ⌊*n* / 48⌋ and *r* = *n* mod 48. That floor is 36 to 88 pairs for the eleven shaped kinds and 635 for the 271 named rows: **1251** in all.
 
 ### Scoring {#onset-scoring}
 
@@ -146,7 +147,7 @@ A missing CMU pronunciation no longer blocks a row; it only loses the first-cons
 
 ## Lifting the second-consonant ban {#ban-lift}
 
-The tail needs all twelve consonants in second place, so `SECOND_CONSONANT_BAN` goes. Under root tails, an `l` or `m` second means a nature or a mind root (169 rows). An `n` or `r` second means a named or a counting root (346 rows).
+The tail needs all twelve consonants in second place, so `SECOND_CONSONANT_BAN` goes. Under root tails, an `l` or `m` second means a nature or a mind root (169 rows). An `n` or `r` second means a named or a counting root (360 rows).
 
 ### What the ban protects today
 
@@ -233,36 +234,39 @@ Phase 1 ends when the report is accepted and the language name is chosen from th
 
 ### Phase 1 run (2026-10-19) {#phase-1-run}
 
-Built: [`data/lexicon-tails.csv`](../../data/lexicon-tails.csv), [`src/root-tails.ts`](../../src/root-tails.ts) (letter map, CSV, checks, metrics), [`src/root-tails-place.ts`](../../src/root-tails-place.ts) (placer), [`scripts/lib/convert-tails.ts`](../../scripts/lib/convert-tails.ts) (`npm run convert-word -- --tails [--steps N]`), and [`src/root-tails.test.ts`](../../src/root-tails.test.ts). `check-compounds` also runs the tails checks. The run is seeded, so a rerun with the same data gives the same roots. Only confusing pairs (same kind, same first two letters) are scored, the first consonant is scored against the English label's ([onset scoring](#onset-scoring)), and the tie-breaks run full echo first, then stops ([tie-breaks](#tie-breaks)). Live roots are counted with the kind their row has in `lexicon-tails.csv`, so both columns count the same pairs.
+Built: [`data/lexicon-tails.csv`](../../data/lexicon-tails.csv), [`src/root-tails.ts`](../../src/root-tails.ts) (letter map, CSV, checks, metrics), [`src/root-tails-place.ts`](../../src/root-tails-place.ts) (placer), [`scripts/lib/convert-tails.ts`](../../scripts/lib/convert-tails.ts) (`npm run convert-word -- --tails [--steps N]`), and [`src/root-tails.test.ts`](../../src/root-tails.test.ts). `check-compounds` also runs the tails checks. The run is seeded, so a rerun with the same data gives the same roots. Only confusing pairs (same kind, same first two letters) are scored, the first consonant is scored against the English label's ([onset scoring](#onset-scoring)), and the tie-breaks run full echo first, then stops ([tie-breaks](#tie-breaks)). Live roots are counted with the kind their row has in `lexicon-tails.csv`, so both columns count the same pairs. The report splits confusing pairs into flags (`*-flag` labels), all other pairs, and mixed pairs (one flag and one other same-kind root). Each rate is confusing pairs over the same-kind pairs that could share a prefix; flags and non-flags use their own bases.
 
 **Current report:**
 
 | | Live | Tails |
 |---|---|---|
-| First consonant is the label's first consonant | 95.0% | 90.1% |
-| Confusing pairs (same kind, same first two letters) | 3497 | 1532 |
+| First consonant is the label's first consonant | 95.0% | 89.8% |
+| Confusing pairs / same-kind pairs | 3451 (3.8%) | 1475 (1.6%) |
+| Flags | 1206 (3.5%) | 610 (1.8%) |
+| Excluding flags | 2180 (4.1%) | 822 (1.5%) |
+| Mixed flag / other same-kind | 65 (2.7%) | 43 (1.8%) |
 
 | Kind | Rows | Live pairs | Tails pairs | Floor ([capacity](#capacity)) |
 |---|---|---|---|---|
-| creature `z` | 113 | 267 | 106 | 82 |
-| person `y` | 85 | 126 | 49 | 37 |
-| mind `m` | 84 | 133 | 52 | 36 |
-| body `b` | 114 | 238 | 104 | 84 |
-| doing `v` | 91 | 166 | 65 | 43 |
-| place `h` | 94 | 187 | 66 | 46 |
-| nature `l` | 85 | 112 | 55 | 37 |
-| food `d` | 116 | 351 | 101 | 88 |
-| tool `w` | 94 | 172 | 68 | 46 |
-| sign `g` | 93 | 206 | 64 | 45 |
-| counting `r` | 99 | 202 | 83 | 54 |
-| named `n` | 283 | 1337 | 719 | 695 |
+| creature `z` | 105 | 238 (4.4%) | 88 (1.6%) | 66 |
+| person `y` | 93 | 153 (3.6%) | 60 (1.4%) | 45 |
+| mind `m` | 84 | 133 (3.8%) | 50 (1.4%) | 36 |
+| body `b` | 114 | 238 (3.7%) | 104 (1.6%) | 84 |
+| doing `v` | 113 | 244 (3.9%) | 103 (1.6%) | 82 |
+| place `h` | 94 | 187 (4.3%) | 66 (1.5%) | 46 |
+| nature `l` | 85 | 112 (3.1%) | 55 (1.5%) | 37 |
+| food `d` | 116 | 351 (5.3%) | 101 (1.5%) | 88 |
+| tool `w` | 94 | 172 (3.9%) | 68 (1.6%) | 46 |
+| sign `g` | 93 | 206 (4.8%) | 64 (1.5%) | 45 |
+| counting `r` | 89 | 152 (3.9%) | 64 (1.6%) | 41 |
+| named `n` | 271 | 1265 (3.5%) | 652 (1.8%) | 635 |
 
-Every check is met: tails, the hook check, the holder check, and listed compounds. The new 👓 root is `egabo` (*body*, *one*). The house cast gets *swan* `ezaze`, *lion* `ulozu` and *hibiscus* `uhalo`, all with different onsets. These spellings are phase 1 output only. Nothing outside `docs/proposals/` and the files above uses them.
+Every check is met: tails, the hook check, the holder check, and listed compounds. The new 👓 root is `egabo` (*body*, *one*). The house cast gets *swan* `azaze`, *lion* `ulezu` and *hibiscus* `ehalo`, all with different onsets. These spellings are phase 1 output only. Nothing outside `docs/proposals/` and the files above uses them.
 
 **Tuning to review:**
 
-- **Tails cut the confusing pairs by more than half.** The live lexicon has 3497 and the tails lexicon 1532, against a floor of 1293. The 239 pairs above the floor are the price of the first-consonant cost: English first consonants are skewed toward `b`, `g` and `z`, so matching them crowds those prefixes.
-- **Named rows hold most of the pairs.** 719 of 1532 (floor 695): 283 rows over 48 prefixes is about six per prefix. Flags are rarely core, and a learner looks them up.
+- **Tails cut the confusing pairs by more than half.** The live lexicon has 3451 and the tails lexicon 1475, against a floor of 1251. The 224 pairs above the floor are the price of the first-consonant cost: English first consonants are skewed toward `b`, `g` and `z`, so matching them crowds those prefixes.
+- **Flags confuse 1.8% of flag–flag pairs** (610 of 34191; live 3.5%). Non-flags confuse 1.5% of their same-kind pairs (822 of 53113; live 4.1%). The flag base is one crowded kind; the rest are eleven smaller ones. Mixed pairs (one flag and one other same-kind root) are 43 of 2450 (1.8%). Flags are rarely core, and a learner looks them up.
 - **First-consonant weight, measured.** Each step up trades confusing pairs for matches. With the weight at 0 the run lands 6 pairs above the floor, so the annealer finds close to the best spread. The table is from the first fill, before the marks-vs-where move; the current report is the rerun:
 
   | First-consonant weight (`FIRST_W`) | Matches | Confusing pairs |
@@ -281,8 +285,8 @@ Every check is met: tails, the hook check, the holder check, and listed compound
 - **Shapes were spread to keep every cell under the capacity of an earlier in-cell rule.** The `o` defaults first overfilled several cells (creature, doing, food, body, nature, person, up to 69 rows). The current scoring counts pairs across a kind's shapes, so the spread no longer affects it.
 - **Holds (`a`):** herd, flock, school and colony animals (*sheep*, *cow*, *fish*, *penguin*, *ant*, *bee*). Garments that wrap the body, shoes and gloves. Vehicles that carry passengers (*car*, *bus*, *ship*, *airplane*), team sports (*soccer*, *rugby*), drinks and uncountable foods (*rice*, *butter*, *candy*).
 - **Takes away (`u`):** predators and pests (*wolf*, *eagle*, *rat*, *fly*). Cleaning things that remove dirt (*soap*, *broom*, *toothbrush*). Foods that hide a filling (*dumpling*, *burrito*). Sour or burning foods (*vinegar*, *pepper*). Every prohibition sign.
-- **Line (`e`):** long creatures and tall ones (*horse*, *giraffe*, *bug*), long foods (*banana*, *noodles*), ranked roles (*judge*, *teach*, *elder*), arrows, and the clock family.
-- **Kinds:** faces are *mind* unless the label names a thing (*mask*, *disguise* → *body*; *ranch* → *place*; *party* → *doing*). Gestures only a person makes are *person* (*wave*, *clap*, *thumbs-up*); bare hands are *body*. Measuring tools (*ruler*, *scale*, *thermometer*) and instruments are *counting*. Speakers and screens are *tool*. Colors, metals and gems are *nature*. The religion and zodiac subgroups are *named*, except *peace* (*sign*), *atom* (*nature*) and *worship* (*person*). The flag subgroup's non-country flags are *sign*, *doing* or *person* by label. Facility pictographs and compass headings that name a *where* (*traffic-light*, *north*, *accessible*) are *place*, same as *bus-stop* and *restroom*; a prohibition icon (*no-smoking*) stays *sign*.
+- **Line (`e`):** long creatures and tall ones (*horse*, *giraffe*, *bug*), long foods (*banana*, *noodles*), ranked roles (*judge*, *teach*, *elder*), arrows, the clock family, and every zodiac sign (a belt in order).
+- **Kinds:** faces are *mind* unless the label names a thing (*mask*, *disguise* → *body*; *ranch* → *place*; *party* → *doing*). Gestures only a person makes are *person* (*wave*, *clap*, *thumbs-up*); bare hands are *body*. A being you address as someone is *person* (*ogre*, *vampire*, *alien*); an animal-shaped monster stays *creature* (*dragon*, *unicorn*). Measuring tools (*ruler*, *scale*, *thermometer*) and instruments are *counting*. Speakers and screens are *tool*. Colors, metals and gems are *nature*. The religion subgroup is *named*, except *peace* (*sign*), *atom* (*nature*) and *worship* (*person*). Zodiac signs are *counting* (a dated belt), not *sign*. The flag subgroup's non-country flags are *sign*, *doing* or *person* by label. Facility pictographs and compass headings that name a *where* (*traffic-light*, *north*, *accessible*) are *place*, same as *bus-stop* and *restroom*; a prohibition icon (*no-smoking*) stays *sign*. Scored games and races (*golf*, *baseball*, *dice*, *horse-race*) sit with *doing*, not *counting*.
 
 ### Phase 2: replace and retie {#phase-2}
 
@@ -333,9 +337,9 @@ On main today, `convert-word --lexicon --all` stops with `short roots too close 
 ## Costs
 
 1. **Kinds and shapes are judgment calls at the edges.** Is a basket a tool or a container? Is a lamp a tool or a fixture? The edge rules and the tie rule settle most cases; the columns record the call so it's made once.
-2. **Same-kind neighbors share a tail.** *Cat* and *dog* end the same and differ only in the onset. The [onset scoring](#onset-scoring) keeps same-kind roots from sharing their first two letters where it can. Past 48 rows a kind must have some such pairs: 1293 at the floor, and 1532 in the [phase 1 run](#phase-1-run), against 3497 in the live lexicon.
+2. **Same-kind neighbors share a tail.** *Cat* and *dog* end the same and differ only in the onset. The [onset scoring](#onset-scoring) keeps same-kind roots from sharing their first two letters where it can. Past 48 rows a kind must have some such pairs: 1251 at the floor, and 1475 in the [phase 1 run](#phase-1-run), against 3451 in the live lexicon.
 3. **The same letter has two jobs by position.** At the start of a word `z` marks the subject; in a tail it means creature. The parser isn't affected, since positions differ, and the role letters are already the anchors. Teach the tails as a memory aid, never as a rule of grammar.
-4. **Named rows are crowded.** 283 rows share one kind, so some flags will be one letter apart. Flags are rarely core, and a learner looks them up.
+4. **Named rows are crowded.** 271 rows share one kind, so some flags will be one letter apart. Flags are rarely core, and a learner looks them up.
 5. **Two seams read by knowing the roots.** Nine-letter dictionary words and six-letter hook compounds on three-letter roots no longer read by letter position. The lints keep each to one reading.
 
 ## Alternatives considered

@@ -5,7 +5,12 @@
  */
 export const FLAG_SUFFIX = "-flag";
 
+/** A country or territory flag row (`japan-flag`). */
+export function isFlagLabel(label: string): boolean {
+  return label.endsWith(FLAG_SUFFIX) && label.length > FLAG_SUFFIX.length;
+}
+
 /** `japan-flag` → `japan`; any other label is returned unchanged. */
 export function stripFlagSuffix(label: string): string {
-  return label.endsWith(FLAG_SUFFIX) && label.length > FLAG_SUFFIX.length ? label.slice(0, -FLAG_SUFFIX.length) : label;
+  return isFlagLabel(label) ? label.slice(0, -FLAG_SUFFIX.length) : label;
 }

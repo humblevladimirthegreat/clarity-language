@@ -5,6 +5,7 @@
  * This file owns the letter map, the CSV, and the checks {@link validateTails} runs.
  */
 import { escapeCsvField, parseCsv } from "./csv.ts";
+import { isFlagLabel } from "./flag-label.ts";
 import { factorizationsForStem, retieCompoundRows, type CompoundRow } from "./lexicon-compounds.ts";
 import type { OverlayRow, PublishedRow } from "./lexicon-search.ts";
 import { HOLDER_HOST_KINDS } from "./parse/classify.ts";
@@ -215,6 +216,11 @@ export function evenSpreadPairs(n: number): number {
   return r * ((q + 1) * q) / 2 + (PREFIXES - r) * (q * (q - 1)) / 2;
 }
 
+/** Same-kind pairs among `n` roots: every one of these could be confusing if the onsets matched. */
+export function possiblePairs(n: number): number {
+  return (n * (n - 1)) / 2;
+}
+
 /**
  * A confusing pair is two roots of the same kind whose first two letters match. Nothing else counts:
  * roots of different kinds are told apart by the tail.
@@ -222,24 +228,82 @@ export function evenSpreadPairs(n: number): number {
 export type TailMetrics = {
   /** Confusing pairs. */
   confusing: number;
+  /** Pairs where both roots are country or territory flags. */
+  flag: number;
+  /** Pairs where neither root is a flag. */
+  nonFlag: number;
+  /** Pairs of one flag and one other same-kind root (religion symbols that share a prefix with a flag). */
+  mixed: number;
+  /** Same-kind pairs that could be confusing if their first two letters matched. */
+  possible: number;
+  flagPossible: number;
+  nonFlagPossible: number;
+  mixedPossible: number;
+  flagRows: number;
+  nonFlagRows: number;
   /** Rows and confusing pairs per kind. */
-  byKind: Map<string, { rows: number; pairs: number }>;
+  byKind: Map<string, { rows: number; pairs: number; possible: number }>;
 };
 
+export type TailMetricRow = { root: string; kind: string; concrete?: string };
+
 /** Confusing-pair counts for five-letter roots, each with its row's kind. */
-export function tailMetrics(entries: readonly { root: string; kind: string }[]): TailMetrics {
-  const buckets = new Map<string, number>();
-  const byKind = new Map<string, { rows: number; pairs: number }>();
-  let total = 0;
-  for (const { root, kind } of entries) {
+export function tailMetrics(entries: readonly TailMetricRow[]): TailMetrics {
+  const buckets = new Map<string, { flag: number; other: number }>();
+  const split = new Map<string, { flag: number; other: number }>();
+  for (const { root, kind, concrete } of entries) {
+    const flag = concrete !== undefined && isFlagLabel(concrete);
     const key = `${kind}\t${root.slice(0, 2)}`;
-    const before = buckets.get(key) ?? 0;
-    buckets.set(key, before + 1);
-    const entry = byKind.get(kind) ?? { rows: 0, pairs: 0 };
-    entry.rows++;
-    entry.pairs += before;
-    byKind.set(kind, entry);
-    total += before;
+    const bucket = buckets.get(key) ?? { flag: 0, other: 0 };
+    if (flag) bucket.flag++;
+    else bucket.other++;
+    buckets.set(key, bucket);
+    const counts = split.get(kind) ?? { flag: 0, other: 0 };
+    if (flag) counts.flag++;
+    else counts.other++;
+    split.set(kind, counts);
   }
-  return { confusing: total, byKind };
+  const byKind = new Map<string, { rows: number; pairs: number; possible: number }>();
+  let flag = 0;
+  let nonFlag = 0;
+  let mixed = 0;
+  for (const [key, bucket] of buckets) {
+    const kind = key.slice(0, key.indexOf("\t"));
+    const entry = byKind.get(kind) ?? { rows: 0, pairs: 0, possible: 0 };
+    const rows = bucket.flag + bucket.other;
+    entry.rows += rows;
+    entry.pairs += possiblePairs(rows);
+    byKind.set(kind, entry);
+    flag += possiblePairs(bucket.flag);
+    nonFlag += possiblePairs(bucket.other);
+    mixed += bucket.flag * bucket.other;
+  }
+  let flagRows = 0;
+  let nonFlagRows = 0;
+  let flagPossible = 0;
+  let nonFlagPossible = 0;
+  let mixedPossible = 0;
+  for (const [kind, counts] of split) {
+    const rows = counts.flag + counts.other;
+    const entry = byKind.get(kind)!;
+    entry.possible = possiblePairs(rows);
+    flagRows += counts.flag;
+    nonFlagRows += counts.other;
+    flagPossible += possiblePairs(counts.flag);
+    nonFlagPossible += possiblePairs(counts.other);
+    mixedPossible += counts.flag * counts.other;
+  }
+  return {
+    confusing: flag + nonFlag + mixed,
+    flag,
+    nonFlag,
+    mixed,
+    possible: flagPossible + nonFlagPossible + mixedPossible,
+    flagPossible,
+    nonFlagPossible,
+    mixedPossible,
+    flagRows,
+    nonFlagRows,
+    byKind,
+  };
 }
