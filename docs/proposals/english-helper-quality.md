@@ -1,6 +1,6 @@
 # Proposal: Checking and improving the English helper
 
-**Status:** PARTIALLY IMPLEMENTED. Phase 1 is built: the **checkpoint** set, *word in prompt*, *pattern in prompt*, *self-contained*, and the worklist ([`src/english-helper/coverage.ts`](../../src/english-helper/coverage.ts)). Phase 2 is built: [`cases.tsv`](../../src/english-helper/cases.tsv) and the baseline (`--check`, `--write-baseline`). Phase 3 is built: the **wild** set ([`wild.tsv`](../../src/english-helper/wild.tsv)) and gap rate, noise and prompt size on every set. Phases 4–5 are not.  
+**Status:** PARTIALLY IMPLEMENTED. Phase 1 is built: the **checkpoint** set, *word in prompt*, *pattern in prompt*, *self-contained*, and the worklist ([`src/english-helper/coverage.ts`](../../src/english-helper/coverage.ts)). Phase 2 is built: [`cases.tsv`](../../src/english-helper/cases.tsv) and the baseline (`--check`, `--write-baseline`). Phase 3 is built: the **wild** set ([`wild.tsv`](../../src/english-helper/wild.tsv)) and gap rate, noise and prompt size on every set. Phase 4 is built: *verify precision* and *verify recall* on the checkpoint set ([`plant.ts`](../../src/english-helper/plant.ts)). Phase 5 is not.  
 **Related:** [`src/english-helper/`](../../src/english-helper/) (analyzer, prompt, `--verify`), [`scripts/english-helper-recall.ts`](../../scripts/english-helper-recall.ts), [`scripts/frequency-coverage.ts`](../../scripts/frequency-coverage.ts), [`scripts/llm-eval.ts`](../../scripts/llm-eval.ts) (the Agebon → English counterpart), [translation checkpoints](../meta/translation-exercises.md), [recipe track](../meta/grammar-docs.md#recipe-track).  
 **Design authority:** none. This is a process for the tool. Every fix it produces is either tool code or a doc row that teaches a form a grammar page already owns. A missing form is logged as a grammar gap, never invented here.
 
@@ -41,7 +41,7 @@ We need a repeatable loop: a held-out test set, free metrics that answer "could 
 |------|----------|-------|
 | `npm run english-helper-recall` (`--set doc\|checkpoint\|wild\|all`) | per set: root recall (top-1, top-3, anywhere), construction recall (home anchor, home page), *word in prompt*, *pattern in prompt*, *self-contained* (reference sets); gap rate by word class, noise, prompt size (every set); gap rate by phenomenon and stage (wild); most-missed roots, constructions and words; writes `tmp/english-helper-report.md` and `tmp/english-helper-worklist.csv` | the worklist sorts only four classes (*missing cue*, *link without form*, *tagger*, *ranking*) |
 | `npx tsx scripts/frequency-coverage.ts` | which of NGSL's 2,809 frequent lemmas the lexicon or a grammar row knows | word by word, no context, no prompt |
-| `english-helper.mjs --verify` | parse, unknown words, and each content word's sense next to the English that suggested its root | checks one draft; no aggregate |
+| `english-helper.mjs --verify` | parse, unknown words, and each content word's sense next to the English that suggested its root | checks one draft; aggregated by `english-helper-recall` on the checkpoint set |
 | `npm run llm-eval` | Agebon → English prompt quality, with a judge model | other direction; costs money |
 | tests in `src/english-helper/*.test.ts` | pinned behavior per feature | written ad hoc, one feature at a time |
 | `src/english-helper/cases.tsv` | one pinned behavior per line (`link:`, `not:`, `first:`, `has:`, `sense:`, `form:`, `no-gap`), run by `analyze.test.ts` | slot-level only; no stage column |
@@ -108,6 +108,7 @@ Rows are sorted by frequency, then by how many sentences share the miss.
 | **opener / structure** | a clause-level English structure with no detector | `detectors.ts` (pointers only), with its links in `detectorLinks` | *that* + clause → `darl` |
 | **prompt noise** | notes, examples or leads the input doesn't need | `llm-prompt.ts` selection | fragment examples; unrelated reader notes |
 | **verify blind spot** | a wrong draft passes `--verify` | `verify.ts` | a parse with no sense check |
+| **verify false alarm** | `--verify` puts a *check* on a correct answer's word | `verify.ts` when the check is too strict (*other-side*, *spelled*); a cue or sense when the English never suggested the root (*alias*, *unmatched*) | *hastily* reaching its root only as an alias |
 | **grammar gap** | no page teaches a form for the meaning | **nothing in the tool.** Log it with the `find-english.mjs` phrases tried, for an editor's decision | |
 
 Two rules keep fixes honest:
@@ -179,7 +180,18 @@ Every few rounds, or after a big grammar change, run the model eval on a sample 
    | prompt chars median | 12,583 | 12,329 | 12,894 |
 
    The wild set's gaps are mostly degree and quantity words (*more*, *better*, *each*, *every*, *both*), with comparatives (9.4%) and pronouns (10.5%) the worst phenomena and places the best (0%). No guess ever ranks above a grammar row, since the analyzer puts every guess tier after the jobs; the metric stays as a guard for that order.
-4. **Verify precision and recall.** Planted-error drafts from checkpoint answers.
+4. **Verify precision and recall.** Planted-error drafts from checkpoint answers. **Done.** Precision is the share of content words on accepted answers that `--verify` passes with no *check*; every check there is a *verify false alarm* row in the worklist. Recall plants one error per draft, one draft per eligible word of the first answer that verifies: a word `--verify` passes, moved to the other side's ending (*side*), or to the other ending when a grammar row spells it (*row-ending*), and an alias word on its other side (*alias-side*). A draft that stops parsing, or whose word does not land on the other side, is not counted; a miss is a *verify blind spot* row. `--verify` now marks a word matched by a grammar row's spelling (`row`), and takes the analysis when the caller has it. The baseline guards both (0.5 points). First numbers (2026-10-20):
+
+   | | checkpoint |
+   |---|---|
+   | accepted answers verified | 339 (none fail to parse) |
+   | **verify precision** (555 content words) | 89.4% |
+   | answers with no check | 83.8% |
+   | false alarms: alias / unmatched / other-side | 33 / 25 / 1 |
+   | **verify recall** (383 planted) | 99.5% |
+   | side / alias-side / row-ending | 99.4% of 347 / 100% of 28 / 100% of 8 |
+
+   Recall is near the ceiling because these plants are the errors `--verify` was built to catch. The false alarms are the more useful list: *alias* is mostly a few words reached only through an alias (*hastily*, *speak*, *say*), and *unmatched* is a root the English never suggested, which is also a root recall miss.
 5. **Model eval.** Only after phases 1–4 settle, so its misses can be read against the free metrics.
 
 ## Open questions

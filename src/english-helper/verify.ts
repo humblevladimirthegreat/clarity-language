@@ -9,7 +9,7 @@ import type { ClassifyTables } from "../parse/classify.js";
 import { unknownWords, type UnknownWord } from "../parse/lexicon-check.js";
 import { morphGlossLine } from "../parse/morph-gloss.js";
 import { parseWithTables } from "../parse/parse-core.js";
-import { analyzeEnglish, type HelperData, type Suggestion } from "./analyze.js";
+import { analyzeEnglish, type Analysis, type HelperData, type Suggestion } from "./analyze.js";
 
 type Side = "concrete" | "abstract";
 
@@ -28,6 +28,8 @@ export type WordSense = {
   english?: string;
   check?: "alias" | "other-side" | "spelled" | "unmatched";
   spelled?: string;
+  /** Matched by a grammar row that spells this word, not by a root suggestion. */
+  row?: true;
 };
 
 export type Verified = { english: string; agebon: string; gloss?: string; error?: string; unknown: UnknownWord[]; words?: WordSense[] };
@@ -62,7 +64,7 @@ type RootMatch = { english: string; side?: Side; alias: boolean };
 type FormMatch = { english: string; words: string[] };
 
 /** Root → the English words whose suggestions name it, with the side each one meant; and the words grammar rows spell. */
-function suggestedRoots(data: HelperData, english: string): { roots: Map<string, RootMatch[]>; forms: FormMatch[] } {
+function suggestedRoots(data: HelperData, english: string, analysis = analyzeEnglish(data, english)): { roots: Map<string, RootMatch[]>; forms: FormMatch[] } {
   const roots = new Map<string, RootMatch[]>();
   const forms: FormMatch[] = [];
   const addForm = (text: string, form: string | undefined) => {
@@ -90,7 +92,7 @@ function suggestedRoots(data: HelperData, english: string): { roots: Map<string,
         addForm(text, s.form);
     }
   };
-  for (const clause of analyzeEnglish(data, english).clauses) for (const slot of clause.slots) for (const s of slot.suggestions) visit(slot.text, s);
+  for (const clause of analysis.clauses) for (const slot of clause.slots) for (const s of slot.suggestions) visit(slot.text, s);
   return { roots, forms };
 }
 
@@ -109,7 +111,8 @@ function senseOf(word: WordNode, suggested: ReturnType<typeof suggestedRoots> | 
   const other = matches.find((m) => !m.alias && m.side === otherSide);
   const near = suggested.forms.flatMap((f) => f.words.filter((w) => w.includes(root)).map((w) => ({ english: f.english, spelled: w })))[0];
   const alias = matches.find((m) => m.alias);
-  if (same ?? exact) out.english = (same ?? exact)!.english;
+  if (same) out.english = same.english;
+  else if (exact) Object.assign(out, { english: exact.english, row: true });
   else if (other) Object.assign(out, { english: other.english, check: "other-side" });
   else if (near) Object.assign(out, { english: near.english, check: "spelled", spelled: near.spelled });
   else if (alias) Object.assign(out, { english: alias.english, check: "alias" });
@@ -117,11 +120,12 @@ function senseOf(word: WordNode, suggested: ReturnType<typeof suggestedRoots> | 
   return out;
 }
 
-export function verifyDraft(english: string, agebon: string, tables: ClassifyTables, data?: HelperData): Verified {
+/** `analysis`: the English's analysis, when the caller already has it. */
+export function verifyDraft(english: string, agebon: string, tables: ClassifyTables, data?: HelperData, analysis?: Analysis): Verified {
   try {
     const tree = parseWithTables(agebon, tables);
     const unknown = unknownWords(tree);
-    const suggested = data ? suggestedRoots(data, english) : undefined;
+    const suggested = data ? suggestedRoots(data, english, analysis) : undefined;
     const words = contentWords(tree, agebon).flatMap((w) => senseOf(w, suggested) ?? []);
     return { english, agebon, gloss: morphGlossLine(agebon, tables), unknown, ...(data ? { words } : {}) };
   } catch (error) {

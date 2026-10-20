@@ -33,6 +33,11 @@
  * (coverage.ts). A sentence is self-contained when no word is missing. With several accepted
  * answers, the one with the fewest missing words is scored.
  *
+ * Verify (checkpoint only): `--verify` on every accepted answer, where each *check* flag is a false
+ * alarm (precision: the share of content words with no flag), and on drafts with one planted
+ * error each (plant.ts: a word on the other side's ending, an alias on its other side, a grammar
+ * row's word with the other ending), where each flag is a catch (recall: the share flagged).
+ *
  * Baseline: src/generated/english-helper-baseline.json holds each set's headline metrics.
  * `--check` fails when one is worse than the baseline by more than its tolerance; it is not part
  * of `npm test`, since doc edits move the numbers. `--write-baseline` updates the sets it ran.
@@ -50,6 +55,8 @@ import { analyzeEnglish, suggestionLinks, TIERS, type Analysis, type Slot, type 
 import { coverWord, familyRoots, promptShows, treeWords, type Coverage, type PromptShows, type TreeWord } from "../src/english-helper/coverage.js";
 import { buildHelperPrompt } from "../src/english-helper/llm-prompt.js";
 import { loadHelperData } from "../src/english-helper/load.js";
+import { PLANT_KINDS, plantErrors, plantFlagged, type PlantKind } from "../src/english-helper/plant.js";
+import { verifyDraft, type Verified } from "../src/english-helper/verify.js";
 import { tagEnglish } from "../src/english-helper/tag.js";
 import { fillSelf } from "../src/learner-name.js";
 import { BANDS } from "../src/lint/learning-order.js";
@@ -194,8 +201,8 @@ function wildSentences(): Sentence[] {
 
 const sentencesOf = (set: SetName) => (set === "doc" ? docSentences() : set === "checkpoint" ? checkpointSentences() : wildSentences());
 
-type Kind = "missing cue" | "link without form" | "tagger" | "ranking";
-const KINDS: readonly Kind[] = ["missing cue", "link without form", "tagger", "ranking"];
+type Kind = "missing cue" | "link without form" | "tagger" | "ranking" | "verify false alarm" | "verify blind spot";
+const KINDS: readonly Kind[] = ["missing cue", "link without form", "tagger", "ranking", "verify false alarm", "verify blind spot"];
 const ROUTE: Record<Kind, { owner: string; fix: string }> = {
   "missing cue": {
     owner: "say-*.md / english.md row, or the owning section's table",
@@ -204,6 +211,11 @@ const ROUTE: Record<Kind, { owner: string; fix: string }> = {
   "link without form": { owner: "analyzer (describe.ts / analyze.ts)", fix: "the linked section spells this word: show it, or an e.g. sentence that uses it" },
   tagger: { owner: "tag.ts overrides, or a context rule in analyze.ts", fix: "the English word that names this root was read as a function word or under another lemma" },
   ranking: { owner: "analyzer: cue rank, tier order or slot order (analyze.ts)", fix: "a guess (alias, WordNet lead, live compound) ranks above a grammar row for this word" },
+  "verify false alarm": {
+    owner: "verify.ts, or the analyzer when the English never suggested the root",
+    fix: "--verify puts this check (in parentheses) on a correct answer's word: alias or unmatched usually means a missing cue or sense for the English word, other-side or spelled a check that is too strict",
+  },
+  "verify blind spot": { owner: "verify.ts", fix: "a draft with this planted error (in parentheses) passes --verify" },
 };
 
 /** Tiers that guess at a word rather than read a row written for it. */
@@ -294,7 +306,52 @@ type SetTally = {
   guessAbove: number;
   /** Wild set: sentences and gap slots by phenomenon and by stage. */
   groups: Map<string, { sentences: number; slots: number; gaps: number }>;
+  verify?: VerifyTally;
 };
+
+type VerifyTally = {
+  /** Accepted answers verified, and those with no flag and no unknown word. */
+  answers: number;
+  clean: number;
+  /** Answers `--verify` fails to parse (a parser and checker mismatch). */
+  errors: number;
+  words: number;
+  unknown: number;
+  checks: Map<string, number>;
+  plants: Map<PlantKind, { planted: number; flagged: number }>;
+};
+
+/** `--verify` on a sentence's accepted answers, and on drafts planted from its first verified answer. */
+function scoreVerify(sentence: Sentence, analysis: Analysis, t: VerifyTally): void {
+  let main: Verified | undefined;
+  for (const answer of sentence.answers) {
+    const v = verifyDraft(sentence.english, answer, tables, data, analysis);
+    if (v.error) {
+      t.errors++;
+      continue;
+    }
+    main ??= v;
+    t.answers++;
+    t.words += v.words?.length ?? 0;
+    t.unknown += v.unknown.length;
+    const flags = (v.words ?? []).filter((w) => w.check);
+    if (!flags.length && !v.unknown.length) t.clean++;
+    for (const w of flags) {
+      t.checks.set(w.check!, (t.checks.get(w.check!) ?? 0) + 1);
+      misses.push({ set: sentence.set, english: sentence.english, word: w.raw, kind: "verify false alarm", lemma: w.english?.toLowerCase() ?? "", link: w.check! });
+    }
+  }
+  if (!main) return;
+  for (const plant of plantErrors(main.agebon, main.words ?? [])) {
+    const flagged = plantFlagged(verifyDraft(sentence.english, plant.draft, tables, data, analysis), plant);
+    if (flagged === undefined) continue;
+    const p = t.plants.get(plant.kind) ?? { planted: 0, flagged: 0 };
+    p.planted++;
+    if (flagged) p.flagged++;
+    else misses.push({ set: sentence.set, english: sentence.english, word: plant.to, kind: "verify blind spot", lemma: plant.english?.toLowerCase() ?? "", link: `${plant.kind}: ${plant.from} → ${plant.to}` });
+    t.plants.set(plant.kind, p);
+  }
+}
 const tallies = new Map<SetName, SetTally>();
 
 for (const set of sets) {
@@ -314,6 +371,7 @@ for (const set of sets) {
     guessSlots: 0,
     guessAbove: 0,
     groups: new Map(),
+    ...(set === "checkpoint" ? { verify: { answers: 0, clean: 0, errors: 0, words: 0, unknown: 0, checks: new Map(), plants: new Map() } } : {}),
   };
   tallies.set(set, tally);
   for (const sentence of sentencesOf(set)) {
@@ -367,6 +425,7 @@ for (const set of sets) {
       continue;
     }
     const { tree } = best;
+    if (tally.verify) scoreVerify(sentence, analysis, tally.verify);
 
     const sentenceWords = new Set(tagEnglish(sentence.english).flatMap((s) => s.clauses.flatMap((c) => c.terms.flatMap((t) => [t.normal, t.lemma]))));
     const roots = usedRoots(tree);
@@ -507,6 +566,22 @@ function summarize(set: SetName) {
     gapRate: share(gapCount, t.slots),
     promptChars: median(t.promptChars),
   };
+  const v = t.verify;
+  const flaggedWords = v ? sum(v.checks) : 0;
+  const plants = v ? [...v.plants.values()].reduce((a, p) => ({ planted: a.planted + p.planted, flagged: a.flagged + p.flagged }), { planted: 0, flagged: 0 }) : undefined;
+  if (v && plants) Object.assign(headline, { verifyPrecision: share(v.words - flaggedWords, v.words), verifyRecall: share(plants.flagged, plants.planted) });
+  const verify = v && plants && {
+    answers: v.answers,
+    errors: v.errors,
+    words: v.words,
+    precision: pct(v.words - flaggedWords, v.words),
+    cleanAnswers: pct(v.clean, v.answers),
+    unknown: v.unknown,
+    falseAlarms: Object.fromEntries([...v.checks].sort((a, b) => b[1] - a[1])),
+    recall: pct(plants.flagged, plants.planted),
+    planted: plants.planted,
+    byPlant: Object.fromEntries(PLANT_KINDS.filter((k) => v.plants.has(k)).map((k) => [k, `${pct(v.plants.get(k)!.flagged, v.plants.get(k)!.planted)} of ${v.plants.get(k)!.planted}`])),
+  };
   const perSlot = (n: number) => (t.slots ? (n / t.slots).toFixed(2) : "-");
   return {
     sentences,
@@ -523,6 +598,7 @@ function summarize(set: SetName) {
       ),
     },
     noise: { suggestionsPerSlot: perSlot(t.suggestions), jobsPerSlot: perSlot(t.jobs), guessAboveGrammar: pct(t.guessAbove, t.guessSlots), guessSlots: t.guessSlots },
+    ...(verify ? { verify } : {}),
     groups: Object.fromEntries(
       [...t.groups]
         .sort((a, b) => bandOrder(a[0]) - bandOrder(b[0]))
@@ -572,6 +648,8 @@ const HEADLINE = [
   { key: "rootAnywhere", label: "root recall anywhere", better: "higher", tolerance: 0.5 },
   { key: "constructionPage", label: "construction recall page", better: "higher", tolerance: 0.5 },
   { key: "gapRate", label: "gap rate", better: "lower", tolerance: 0.5 },
+  { key: "verifyPrecision", label: "verify precision", better: "higher", tolerance: 0.5 },
+  { key: "verifyRecall", label: "verify recall", better: "higher", tolerance: 0.5 },
   { key: "promptChars", label: "prompt chars median", better: "lower", tolerance: 500 },
 ] as const;
 
@@ -625,9 +703,16 @@ metric("**gap rate** (slots with no suggestion)", (s) => `**${s.gaps.rate}** (${
 metric("suggestions / jobs per slot", (s) => `${s.noise.suggestionsPerSlot} / ${s.noise.jobsPerSlot}`);
 metric("guess above a grammar row", (s) => `${s.noise.guessAboveGrammar} of ${s.noise.guessSlots}`);
 metric("prompt chars median / p90", (s) => `${s.prompt.chars.median} / ${s.prompt.chars.p90}`);
+metric("**verify precision** (words with no check) / clean answers", (s) => (s.verify ? `**${s.verify.precision}** / ${s.verify.cleanAnswers}` : "-"));
+metric("**verify recall** (planted errors flagged)", (s) => (s.verify ? `**${s.verify.recall}** of ${s.verify.planted}` : "-"));
 metric(`misses: ${KINDS.join(" / ")}`, (s) => Object.values(s.missesByKind).join(" / "));
 for (const set of sets) {
   const s = summary[set]!;
+  if (s.verify) {
+    report.push("", `## Verify: ${set}`, "", `${s.verify.answers} accepted answers (${s.verify.errors} that \`--verify\` cannot parse), ${s.verify.words} content words, ${s.verify.unknown} not in the lexicon.`, "");
+    report.push("| False alarms by check | Words |", "|---|---|", ...Object.entries(s.verify.falseAlarms).map(([check, n]) => `| ${check} | ${n} |`));
+    report.push("", "| Planted error | Flagged |", "|---|---|", ...Object.entries(s.verify.byPlant).map(([kind, r]) => `| ${kind} | ${r} |`));
+  }
   report.push("", `## Gaps by word class: ${set}`, "", "| Class | Gaps | Top lemmas |", "|---|---|---|");
   for (const [cls, g] of Object.entries(s.gaps.byClass)) report.push(`| ${cls} | ${g.gaps} | ${g.top.map((l) => `*${l}*`).join(", ")} |`);
   if (Object.keys(s.groups).length) {
@@ -654,6 +739,10 @@ else {
       for (const w of topMisses(set, 15)) console.log(`  ${String(w.sentences).padStart(4)}  ${w.word.padEnd(14)} ${(w.lemma || "-").padEnd(10)} ${w.kind}`);
       console.log();
       continue;
+    }
+    if (s.verify) {
+      console.log(`verify: precision ${s.verify.precision} of ${s.verify.words} words (${s.verify.cleanAnswers} of ${s.verify.answers} answers clean; false alarms ${Object.entries(s.verify.falseAlarms).map(([k, n]) => `${k} ${n}`).join(", ")})`);
+      console.log(`  recall ${s.verify.recall} of ${s.verify.planted} planted errors (${Object.entries(s.verify.byPlant).map(([k, r]) => `${k} ${r}`).join(", ")})`);
     }
     console.log(`self-contained ${s.prompt.selfContained} — of ${s.prompt.words} reference words, ${s.prompt.wordInPrompt} in the prompt, ${s.prompt.patternInPrompt} of the rest a shown pattern, ${s.prompt.missing} missing`);
     console.log(`  misses: ${Object.entries(s.missesByKind).map(([k, n]) => `${k} ${n}`).join(", ")}; prompt chars median ${s.prompt.chars.median}, p90 ${s.prompt.chars.p90}`);

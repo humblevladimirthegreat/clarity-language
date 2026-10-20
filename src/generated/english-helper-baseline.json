@@ -18,7 +18,9 @@
       "rootAnywhere": 94.3,
       "constructionPage": 53.4,
       "gapRate": 3.4,
-      "promptChars": 12329
+      "promptChars": 12329,
+      "verifyPrecision": 89.4,
+      "verifyRecall": 99.5
     },
     "wild": {
       "sentences": 221,
