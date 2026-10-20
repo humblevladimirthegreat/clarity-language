@@ -112,7 +112,7 @@ The kind follows the row's **concrete** sense, as its label names it. The abstra
 
 The shape is the thing's job, from the vowel series: `holds` (**a**: containers, groups, masses, open spaces, what comes many at once, what stores, what you go inside), `one` (**o**: one whole, compact thing), `order` (**e**: ranked, sequenced, a stage or cycle, a path you travel or are led along, a heading), `takes-away` (**u**: cuts, removes, hides, ends, forbids, harms, stings, sickens, wards off). **Tie rule:** test `takes-away`, then `holds`, then `order`, and take the first that fits. Read `holds` literally (a building holds people, a hat holds the head, a bun holds its filling) and `order` broadly (ranked sets, life stages, cycles, what carries or leads you along a way).
 
-When no job fits, `one` is **not** the default. Use the fallback: for a thing you can see, its outline (hollow or open `holds`, long `order`, sharp or spiky `takes-away`, round or compact `one`); for a feeling or face, its direction (toward others `holds`, toward a standing or what comes next `order`, against `takes-away`, inward `one`); for an action, how it unfolds (with others `holds`, along a course `order`, stops or hurts `takes-away`, once on the spot `one`). Symbols of a faith or a gender stay `one`. Worked examples and per-kind counts: `root-tails.md` § final vowel.
+When no job fits, `one` is **not** the default. Use the fallback: for a thing you can see, its outline (hollow or open `holds`, long `order`, sharp or spiky `takes-away`, round or compact `one`); for a feeling or face, its direction (toward others `holds`, toward a standing or what comes next `order`, against `takes-away`, inward `one`); for an action, how it unfolds (with others `holds`, along a course `order`, stops or hurts `takes-away`, once on the spot `one`). Symbols of a faith or a gender stay `one`.
 
 ### Size {#size}
 
@@ -120,7 +120,7 @@ The size is how big the concrete sense is against a person, and it steers the ro
 
 Every five-letter row needs a size except in `mind`, where every row would be `none`; `mind`, `named` and three-letter rows stay empty, and a `mind` row's middle vowel goes to the echo. A three-letter root has no middle vowel, so size does not apply. In the mixed kinds, things get a measured size and the rest `none`: in `doing` a vehicle or toy versus an action, in `person` a being versus an act, in `sign` an object versus a symbol, in `title` a paper or mail object versus a sport or a legal-name mark, in `counting` a clock or instrument versus a time or number.
 
-It's a placement preference, not a check: the placer gives up the size vowel only in a crowded cell, and the tails report (`convert-word --report`) prints the share that match. Why size and not another reading: `root-tails.md` § middle vowel.
+It's a placement preference, not a check: the placer gives up the size vowel only in a crowded cell, and the tails report (`convert-word --report`) prints the share that match.
 
 ### Onset {#onset}
 
