@@ -16,7 +16,7 @@ const rootsTable = `
     <thead>
       <tr>
         <th>English</th>
-        <th>Egabon</th>
+        <th>Agebon</th>
         <th>Same root as</th>
         <th>Cue</th>
       </tr>
@@ -30,7 +30,7 @@ const rootsTable = `
   <table>
     <thead>
       <tr>
-        <th>Egabon</th>
+        <th>Agebon</th>
         <th>Use</th>
         <th>Cue</th>
       </tr>
@@ -51,7 +51,7 @@ function secondCol(table: HTMLTableElement): string[] {
 }
 
 describe('isRootsUsedTable', () => {
-  it('requires English and Egabon headers', () => {
+  it('requires English and Agebon headers', () => {
     const document = docWith(rootsTable)
     const tables = [...document.querySelectorAll('table')] as HTMLTableElement[]
     assert.equal(isRootsUsedTable(tables[0]!), true)
@@ -66,7 +66,7 @@ describe('cellSortKey', () => {
 })
 
 describe('enhanceRootsTables', () => {
-  it('makes only English and Egabon sortable', () => {
+  it('makes only English and Agebon sortable', () => {
     const document = docWith(rootsTable)
     enhanceRootsTables(document)
     const tables = [...document.querySelectorAll('table')] as HTMLTableElement[]
@@ -75,7 +75,7 @@ describe('enhanceRootsTables', () => {
     assert.equal(roots.querySelectorAll('button.roots-sort-btn').length, 2)
     assert.equal(other.querySelector('button'), null)
     const labels = [...roots.querySelectorAll('th')].map((th) => th.textContent)
-    assert.deepEqual(labels, ['English', 'Egabon', 'Same root as', 'Cue'])
+    assert.deepEqual(labels, ['English', 'Agebon', 'Same root as', 'Cue'])
   })
 
   it('cycles English sort then restores teaching order', () => {
@@ -97,12 +97,12 @@ describe('enhanceRootsTables', () => {
     assert.equal(table.querySelector('thead th')?.getAttribute('aria-sort'), 'none')
   })
 
-  it('sorts by Egabon independently', () => {
+  it('sorts by Agebon independently', () => {
     const document = docWith(rootsTable)
     enhanceRootsTables(document)
     const table = document.querySelector('table') as HTMLTableElement
-    const egabon = table.querySelector('button[aria-label="Sort by Egabon"]') as HTMLButtonElement
-    egabon.click()
+    const agebon = table.querySelector('button[aria-label="Sort by Agebon"]') as HTMLButtonElement
+    agebon.click()
     assert.deepEqual(secondCol(table), ['agada', 'awala', 'odogo'])
     assert.deepEqual(firstCol(table), ['cat', 'walk', 'dog'])
   })

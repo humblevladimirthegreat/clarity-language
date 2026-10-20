@@ -74,7 +74,7 @@ test("every check has a unique id and deterministic, different-variant prompts",
   assert.notDeepEqual(leap.prompt(s, 0), leap.prompt(s, 1));
 });
 
-test("prompts never contain the Egabon root", () => {
+test("prompts never contain the Agebon root", () => {
   for (const s of subjects) {
     for (const v of [0, 1] as const) {
       const text = JSON.stringify(leap.prompt(s, v));

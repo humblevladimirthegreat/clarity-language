@@ -4,12 +4,12 @@
 
 import { practiceRanges } from "./practice-sections.js";
 
-function isEgabonLine(trimmed: string): boolean {
+function isAgebonLine(trimmed: string): boolean {
   return /^`[^`]+`$/.test(trimmed);
 }
 
 function isMorphLine(trimmed: string): boolean {
-  if (!trimmed || isEgabonLine(trimmed)) return false;
+  if (!trimmed || isAgebonLine(trimmed)) return false;
   if (/^\*[^*].*\*$/.test(trimmed)) return false;
   if (/^[A-Za-z][A-Za-z0-9-]*$/.test(trimmed)) return true;
   return /\s\|\s/.test(trimmed);
@@ -23,7 +23,7 @@ function needsBlankBetween(current: string, next: string): boolean {
   const t = current.trim();
   const n = next.trim();
   if (!t || !n) return false;
-  if (isEgabonLine(t) && isMorphLine(n)) return true;
+  if (isAgebonLine(t) && isMorphLine(n)) return true;
   if (isMorphLine(t) && isLooseEnglish(n)) return true;
   return false;
 }

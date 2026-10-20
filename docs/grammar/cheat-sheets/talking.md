@@ -67,7 +67,7 @@ A [tone mark](../speech-moves.md#tone-marks) changes your voice only, never the 
 
 A stance word says in words how you are speaking, where a tone mark only changes your voice.
 
-| Egabon | English | Stage |
+| Agebon | English | Stage |
 |--------|---------|-------|
 | [`thagebom`](../speech-moves.md#speech-manner) | *to be clear* / *to put it plainly* | I |
 | [`thavewem`](../speech-moves.md#speech-manner) | *frankly* / *honestly* | I |
@@ -159,7 +159,7 @@ Write `y`, two vowels, then an ending. A turn holds one polar word; an answer fo
 After your sentence, write `yol` and a polar word as a turn of its own. It asks for that answer, so pick the one you want to make easy.
 
 <!-- cheat-sheet: talking -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`yol yael.`](../questions.md#tags) | confirm a claim | *…, right?* | B |
 | [`yol yuel.`](../questions.md#tags) | invite a correction | *…, or am I wrong?* | I |

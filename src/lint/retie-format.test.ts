@@ -36,8 +36,8 @@ describe("lintRetieFormat", () => {
     assert.deepEqual(lintRetieFormat(markdown, tables), []);
   });
 
-  it("leaves italic prose alone, even a word that spells Egabon", () => {
-    // Italics are English by policy; a root placement can make one spell Egabon (*buyer*: b + uye + r).
+  it("leaves italic prose alone, even a word that spells Agebon", () => {
+    // Italics are English by policy; a root placement can make one spell Agebon (*buyer*: b + uye + r).
     assert.deepEqual(lintRetieFormat("A *buyer* pays; *abaha* is italic.\n", tablesOf(["uye", "abaha"])), []);
   });
 
@@ -50,7 +50,7 @@ describe("lintRetieFormat", () => {
 });
 
 describe("retie-format — letter names", () => {
-  const table = "| Egabon | Name | Cue |\n|--|--|--|\n| `d` | `da` | x |\n| `g` | `ga` | x |\n| `th` | `tho` | x |\n| `a` | `a` | x |\n| `u` | `u` | x |\n";
+  const table = "| Agebon | Name | Cue |\n|--|--|--|\n| `d` | `da` | x |\n| `g` | `ga` | x |\n| `th` | `tho` | x |\n| `a` | `a` | x |\n| `u` | `u` | x |\n";
   it("flags a marked spell-out line whose names no longer spell its word", () => {
     // Not a word (`agad`): the next retie must not respell this fixture.
     const page = `${table}\n<!-- retie: letter-names -->\n\`\`\`text\n\`agad\` → \`a\` \`ga\` \`u\`\n\`\`\`\n`;

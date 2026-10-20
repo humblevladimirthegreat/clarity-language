@@ -1,6 +1,6 @@
 # The clause
 
-How to read and write one Egabon **clause** (roughly, one simple sentence): who does what, how each word is shaped, and the default order.
+How to read and write one Agebon **clause** (roughly, one simple sentence): who does what, how each word is shaped, and the default order.
 
 ## Beginner {#beginner}
 
@@ -142,7 +142,7 @@ A `/w/` word still goes before the host, so the host and its `/b/` stay side by 
 
 The role letters you have used so far:
 
-| Egabon | Use | Cue |
+| Agebon | Use | Cue |
 |--------|-----|-----|
 | `/z/` | subject (who acts) | **z** ≈ star (who the sentence is about) |
 | `/d/` | direct object (who is acted on) | **d** ≈ done to (sound of *acted on*) |
@@ -159,11 +159,11 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a bank
 
-The word bank has two tables. **New words** are introduced here: **English** is what you produce, and **Egabon** is its citation, or the word with its role letter when that letter is part of the English (*pay* is `vamol`, the money root as a verb). Then the **Cue** names the citation's sense (💰 from *money*). **Review** lists words from earlier checkpoints.
+The word bank has two tables. **New words** are introduced here: **English** is what you produce, and **Agebon** is its citation, or the word with its role letter when that letter is part of the English (*pay* is `vamol`, the money root as a verb). Then the **Cue** names the citation's sense (💰 from *money*). **Review** lists words from earlier checkpoints.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *pay* | `vamol` | 💰 from *money* |
 | *angry* | `unomul` | 😠 |
@@ -174,7 +174,7 @@ The word bank has two tables. **New words** are introduced here: **English** is 
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -184,7 +184,7 @@ The word bank has two tables. **New words** are introduced here: **English** is 
 | *book* | `ugul` |
 | *bell* | `aboral` |
 
-#### English → Egabon {#beginner-english-to-egabon}
+#### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *Uzozen pays Olazun.*
 
@@ -236,7 +236,7 @@ z-Uhelan | d-Uzozen | v-find
 **Also correct:** `zuhelan vumewol duzozen.`
 :::
 
-#### Egabon → English {#beginner-egabon-to-english}
+#### Agebon → English {#beginner-agebon-to-english}
 
 **1.** `dolazun zuhelan vumewol.`
 
@@ -320,7 +320,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 ### Adjectives before the noun (`gl-`) {#left-bound-adjectives}
 
-English puts the adjective before the noun (*an angry dog*). Egabon can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending), and that adjective describes the **next** noun instead of the one before it. This lets you choose the order for meter or emphasis, and it frees the spot after the noun for another adjective. (cue: **l** ≈ lean: the word leans toward the noun ahead.)
+English puts the adjective before the noun (*an angry dog*). Agebon can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending), and that adjective describes the **next** noun instead of the one before it. This lets you choose the order for meter or emphasis, and it frees the spot after the noun for another adjective. (cue: **l** ≈ lean: the word leans toward the noun ahead.)
 
 > `glunomul zudozol.`
 >
@@ -385,7 +385,7 @@ A verb can take several `/h/` or `/th/` units. Each plain word counts as one uni
 Beginner used **`welazom`** *very* before an adjective. The same `/w/` slot takes a few stock degree words, and each one works before an adverb as well as an adjective.
 
 <!-- cheat-sheet: word-shape-clause -->
-| Egabon | English | Cue |
+| Agebon | English | Cue |
 |--------|---------|-----|
 | `welazom` | *very* | 🐘: big, as a degree |
 | `wehalal` | *extremely* / *overwhelmingly* | 🌊: an ocean of it |
@@ -422,7 +422,7 @@ The same words also go right before a reaction, to say how strongly it holds ([d
 Two stock words go in `/h/` and describe the verb itself. Use **`halurem`** *kind of* / *sort of* to hedge the action, and **`hurugem`** for *again*.
 
 <!-- cheat-sheet: word-shape-clause -->
-| Egabon | English | Cue |
+| Agebon | English | Cue |
 |--------|---------|-----|
 | `halurem` | *kind of* / *sort of* | 📈: some degree, not a full one |
 | `hurugem` | *again* | 🔁: the same thing once more |
@@ -441,7 +441,7 @@ Two stock words go in `/h/` and describe the verb itself. Use **`halurem`** *kin
 
 ### Leaving out who acts {#no-subject}
 
-English uses the passive (*The cat was seen*, *Mistakes were made*) to avoid naming who acted. Egabon simply leaves out the `/z/` word. The verb and its object stay the same, and the sentence says nothing about who did it.
+English uses the passive (*The cat was seen*, *Mistakes were made*) to avoid naming who acted. Agebon simply leaves out the `/z/` word. The verb and its object stay the same, and the sentence says nothing about who did it.
 
 > `duzozen vawebol.`
 >
@@ -459,7 +459,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *ticket* | `odegel` | 🎫 |
 | *train* | `edavel` | 🚆 |
@@ -469,7 +469,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -486,7 +486,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *find* | `vumewol` |
 | *sit* | `vuhohol` |
 
-#### English → Egabon {#intermediate-english-to-egabon}
+#### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *A sleepy Olazun stands.* (*sleepy* first)
 
@@ -538,7 +538,7 @@ z-Olazun | [w-ocean | h-haste] | v-stand
 z-Olazun | [d-train | [w-very | g-blue]] | v-see
 :::
 
-#### Egabon → English {#intermediate-egabon-to-english}
+#### Agebon → English {#intermediate-agebon-to-english}
 
 **1.** `welazom glozumol zobayel vuhohol.`
 
@@ -626,7 +626,7 @@ An adjective before its noun takes **`gl-`**; a plain `/ɡ/` word describes the 
 
 ### English emphasis and clefts {#english-emphasis}
 
-English often moves or stresses a word to single it out: *It's a cat that Uzozen sees*, *It was Uzozen who saw the cat*, or a stressed *Uzozen saw the cat*. Egabon word order carries no emphasis. A sentence's usual order is set by its [speech act](speech-moves.md#act-word-order), and any other order means exactly the same (with joined verbs, a word's place says which verb it goes with, [verb-phrase forms](join-across-roles.md#vp-clause-forms)). When you translate, ask what the English emphasis is doing.
+English often moves or stresses a word to single it out: *It's a cat that Uzozen sees*, *It was Uzozen who saw the cat*, or a stressed *Uzozen saw the cat*. Agebon word order carries no emphasis. A sentence's usual order is set by its [speech act](speech-moves.md#act-word-order), and any other order means exactly the same (with joined verbs, a word's place says which verb it goes with, [verb-phrase forms](join-across-roles.md#vp-clause-forms)). When you translate, ask what the English emphasis is doing.
 
 If the English sets one person or thing against others (*Uzozen, not someone else*), put the [contrastive focus](speech-moves.md#tone-marks) mark **`&`** on that word.
 
@@ -644,10 +644,10 @@ If the English only puts the new part first, with no others to set it against (a
 >
 > "Uzozen sees a cat."
 
-Translating the other way, an Egabon sentence in an unusual order (a line fitted to a tune, say) becomes a plain English sentence.
+Translating the other way, an Agebon sentence in an unusual order (a line fitted to a tune, say) becomes a plain English sentence.
 
 <!-- cheat-sheet: word-shape-clause -->
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | `zuzozen dagozol vawebol.` | plain | *Uzozen sees a cat.* / *It's a cat that Uzozen sees.* (answering *what?*) |
 | `&zuzozen dagozol vawebol.` | subject contrasted | *It was Uzozen who saw the cat.* |
@@ -668,7 +668,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *balloon* | `aboval` | 🎈 |
 | *drum* | `emoral` | 🥁 |
@@ -677,7 +677,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -688,7 +688,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *punch* | `vanuvul` |
 | *sneak* | `vazuyul` |
 
-#### English → Egabon {#advanced-english-to-egabon}
+#### English → Agebon {#advanced-english-to-agebon}
 
 **1.** *Hastily, Uzozen punches a balloon.*
 
@@ -724,7 +724,7 @@ z-Olazun | &d-drum | v-punch
 &z-Uhelan | d-mask | v-see
 :::
 
-#### Egabon → English {#advanced-egabon-to-english}
+#### Agebon → English {#advanced-agebon-to-english}
 
 **1.** `dadorel zuhelan vawebol.`
 

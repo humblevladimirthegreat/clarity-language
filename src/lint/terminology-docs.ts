@@ -1,12 +1,12 @@
 /**
  * terminology.md staleness checks (docs/meta/grammar-docs.md): the SMALLCAPS label table
- * matches the labels morph lines print, each label's example shows it, every Egabon form on
+ * matches the labels morph lines print, each label's example shows it, every Agebon form on
  * the page appears on the page it links to, and every link anchor resolves.
  */
 import type { ClassifyTables } from "../parse/classify.js";
 import { MORPH_GLOSS_LABELS, morphGlossLine } from "../parse/morph-gloss.js";
-import { isEgabonRootShape } from "../root-shape.js";
-import { classifyEgabonSpan, decodeEntities, walkEgabonSpans } from "./egabon-docs.js";
+import { isAgebonRootShape } from "../root-shape.js";
+import { classifyAgebonSpan, decodeEntities, walkAgebonSpans } from "./agebon-docs.js";
 import { grammarHeadings } from "./grammar-anchors.js";
 import { anchorLinks, pageSections } from "./learning-order.js";
 
@@ -124,7 +124,7 @@ export function lintTerminology(
       continue;
     }
     if (!row.example) {
-      findings.push({ index: row.index, detail: `${row.label}: the Example cell must be one Egabon code span` });
+      findings.push({ index: row.index, detail: `${row.label}: the Example cell must be one Agebon code span` });
       continue;
     }
     if (!teach.includes(row.example)) {
@@ -151,13 +151,13 @@ export function lintTerminology(
 
   const list = entries(markdown);
   const rowLines = new Set(rows.map((r) => r.index));
-  walkEgabonSpans(markdown, {
+  walkAgebonSpans(markdown, {
     text: (span, index) => {
       const trimmed = span.trim();
       const entry = entryAt(list, index);
       if (entry && rowLines.has(entry.index)) return; // label rows: checked above
       const pagesLinked = entry ? [...entry.pages] : [];
-      if (/^[a-z]{3,}$/.test(trimmed) && isEgabonRootShape(trimmed)) {
+      if (/^[a-z]{3,}$/.test(trimmed) && isAgebonRootShape(trimmed)) {
         // A bare root is current only if a page it links cites that root too.
         if (pagesLinked.some((p) => text(p).includes(`\`${trimmed}\``))) return;
         findings.push({
@@ -166,7 +166,7 @@ export function lintTerminology(
         });
         return;
       }
-      const cls = classifyEgabonSpan(trimmed);
+      const cls = classifyAgebonSpan(trimmed);
       if (cls !== "word" && cls !== "phrase" && cls !== "sentence") return;
       if (!entry || entry.pages.size === 0) return;
       const escaped = trimmed.replace(/</g, "&lt;").replace(/>/g, "&gt;");

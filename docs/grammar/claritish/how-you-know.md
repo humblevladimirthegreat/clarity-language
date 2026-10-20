@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-English doesn't mark whether a claim was seen, remembered, worked out, or heard from someone. So a rumor can pass for an eyewitness report, and a strong hunch from the clues can pass for a proof. In Egabon, a claim can carry a word for the **channel** it came through.
+English doesn't mark whether a claim was seen, remembered, worked out, or heard from someone. So a rumor can pass for an eyewitness report, and a strong hunch from the clues can pass for a proof. In Agebon, a claim can carry a word for the **channel** it came through.
 
 ## The forms {#forms}
 

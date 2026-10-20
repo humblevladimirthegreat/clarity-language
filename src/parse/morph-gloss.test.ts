@@ -21,8 +21,8 @@ const tables = createClassifyTables(
   readFileSync(join(rootDir, "data", "lexicon-compounds.csv"), "utf8"),
 );
 
-function expectLine(egabon: string, morph: string): void {
-  assert.equal(morphGlossLine(egabon, tables), normalizeMorphLine(morph), egabon);
+function expectLine(agebon: string, morph: string): void {
+  assert.equal(morphGlossLine(agebon, tables), normalizeMorphLine(morph), agebon);
 }
 
 describe("morphGlossLine — clause joins go between clauses", () => {
@@ -346,7 +346,7 @@ describe("compareMorphGloss", () => {
     assert.equal(result.parseError, undefined);
   });
 
-  it("fails unparseable Egabon as parse, not gloss mismatch", () => {
+  it("fails unparseable Agebon as parse, not gloss mismatch", () => {
     const result = compareMorphGloss("z!!!", "z-nope", tables);
     assert.equal(result.ok, false);
     assert.ok(result.parseError);
@@ -397,7 +397,7 @@ describe("compareMorphGloss", () => {
 `;
     const [block] = extractTeachBlocks(md);
     assert.ok(block);
-    assert.equal(block!.egabon, "uzozen.");
+    assert.equal(block!.agebon, "uzozen.");
     assert.equal(block!.morph, "Uzozen");
     assert.equal(block!.loose, "Uzozen.");
   });
@@ -428,7 +428,7 @@ describe("compareMorphGloss", () => {
 `;
     const blocks = extractTeachBlocks(md);
     assert.equal(blocks.length, 2);
-    assert.equal(blocks[1]!.egabon, "! zuzozen vewurel.");
+    assert.equal(blocks[1]!.agebon, "! zuzozen vewurel.");
     assert.equal(blocks[1]!.morph, "! | z-Uzozen | v-walk");
     assert.equal(blocks[1]!.loose, "Uzozen walks!");
   });
@@ -442,7 +442,7 @@ describe("compareMorphGloss", () => {
 `;
     const [pair] = extractExampleBlocks(md);
     assert.ok(pair);
-    const result = compareMorphGloss(pair!.egabon, pair!.morph, tables);
+    const result = compareMorphGloss(pair!.agebon, pair!.morph, tables);
     assert.equal(result.ok, true, `${result.expected} vs ${result.actual}`);
   });
 
@@ -549,11 +549,11 @@ describe("morphGlossLine — extra fixtures", () => {
     assert.ok(pairs.length >= 6);
     for (const pair of pairs) {
       if (pair.morph.includes("←")) continue;
-      const result = compareMorphGloss(pair.egabon, pair.morph, tables);
+      const result = compareMorphGloss(pair.agebon, pair.morph, tables);
       assert.equal(
         result.ok,
         true,
-        `${pair.egabon} → documented ${pair.morph} vs parser ${result.actual}${result.parseError ? ` (${result.parseError})` : ""}`,
+        `${pair.agebon} → documented ${pair.morph} vs parser ${result.actual}${result.parseError ? ` (${result.parseError})` : ""}`,
       );
     }
   });

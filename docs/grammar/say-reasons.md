@@ -4,13 +4,13 @@ Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* do
 
 ## Reasons and conditions {#reasons}
 
-### English → Egabon {#english-cues}
+### English → Agebon {#english-cues}
 
 **Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Contrary to a stance](sakes.md#contrary-to-stance) · [Continue](dependents.md#continue-x) · [Sentence linkers](dependents.md#sentence-linkers) · [Stacked discourse hooks](hooks.md#stacked-discourse) · [Because](causation.md#only-because) · [Point back](hooks.md#hook-resume) · [Clause sequence](join-across-roles.md#clause-sequence)
 
 Time and discourse dependents use the same **`barl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
 
-| English | Egabon |
+| English | Agebon |
 |---------|---------|
 | *although* / *while* / *whilst* / *until* / *till* / *before* / *after* | same pole + **`barl`** shape on adverb `/h/`, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hezom`** / **`huwem`** / **`homam`** / … |
 | *so that* / *in order to* | same shape: **`hogom`** ([so that](dependents.md#so-that)); NP intended get = **`hogom`** + `/b/` **noun** |
@@ -38,9 +38,9 @@ Time and discourse dependents use the same **`barl`** hang as *if* / *because*. 
 
 **Needs:** [Evidence strength](knowing.md#evidence-strength) · [Deduction](knowing.md#deduction) · [MAY](knowing.md#may) · [Hold endings (NOTIONAL)](knowing.md#hold-endings-notional) · [Hopefully and other attitudes](sakes.md#speaker-attitude) · [Unmet](sakes.md#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](spans.md#asides) · [CAUSE](causation.md#cause) · [Every bar](comparatives.md#stance-bars)
 
-English adverbs like *obviously*, *apparently* and *presumably* say **how you know** a claim. Egabon has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: **-l** solid, **-m** ordinary, **-r** thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how **you** feel about the claim, so it is an attitude word.
+English adverbs like *obviously*, *apparently* and *presumably* say **how you know** a claim. Agebon has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: **-l** solid, **-m** ordinary, **-r** thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how **you** feel about the claim, so it is an attitude word.
 
-| English | Egabon | Reading |
+| English | Agebon | Reading |
 |---------|--------|---------|
 | *obviously* / *obvious* (it is in plain view) | `thodol` | LIVE, a clear full view |
 | *obviously* (the clues are strong) | `thunel` | CLUES, strong clues |
@@ -96,7 +96,7 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 
 English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each split the same way. Name which one you mean: what **made it happen** (the because pole), what the speaker is **doing it for** (a motive, on a sake), or the **faculty** of thinking (the abstract sense of `ebobo`).
 
-| English | Egabon | Reading |
+| English | Agebon | Reading |
 |---------|--------|---------|
 | *the reason it happened* | `thavem` + `/b/` | the because pole |
 | *my reason* / *justify (give your reasons)* | `…thom` on a sake (`thanathom`) | motive: doing it for that sake |
@@ -156,9 +156,9 @@ Put the **act** in `/b/` after a fault pole, not the person ([fault](causation.m
 
 **Needs:** [Make someone do it](causation.md#make) · [Decision](intention.md#decision) · [So that](dependents.md#so-that) · [Goal, source, path](roles.md#goal-source-path)
 
-English has a separate verb for *make someone do X* in many common cases: *kill* is *make die*, *feed* is *make eat*. Egabon has one way to say all of them. Keep the ordinary verb for what happens, let the one it happens to be the subject, and put the one who makes it happen in `/b/` right after **`thegem`** ([make](causation.md#make)). Change only the verb root.
+English has a separate verb for *make someone do X* in many common cases: *kill* is *make die*, *feed* is *make eat*. Agebon has one way to say all of them. Keep the ordinary verb for what happens, let the one it happens to be the subject, and put the one who makes it happen in `/b/` right after **`thegem`** ([make](causation.md#make)). Change only the verb root.
 
-| English | Egabon | Reading |
+| English | Agebon | Reading |
 |---------|--------|---------|
 | *kill* | `zolazun vezobul thegem buzozen.` | Olazun dies, Uzozen makes it happen |
 | *feed* | `zolazun vagazul thegem buzozen.` | Olazun eats, Uzozen makes it happen |
@@ -203,9 +203,9 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 
 **Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Embedded whether](questions.md#embedded-whether) · [Because](causation.md#only-because) · [Already, still, not yet](knowing.md#phasal) · [Can](intention.md#can) · [Existence](predication.md#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](comparatives.md#comparatives-e)
 
-English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mostly sit on a few plain moves: tell, know, remember, and whether the change has come. Egabon keeps those roots and adds the phasal word for the change, so *realize* is *already know* and *forget* is *no longer remember*. *Mean* in the sense of *signify* is the compound `ezuyelovu` (*meaning*, speech that carries a thought).
+English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mostly sit on a few plain moves: tell, know, remember, and whether the change has come. Agebon keeps those roots and adds the phasal word for the change, so *realize* is *already know* and *forget* is *no longer remember*. *Mean* in the sense of *signify* is the compound `ezuyelovu` (*meaning*, speech that carries a thought).
 
-| English | Egabon | Reading |
+| English | Agebon | Reading |
 |---------|--------|---------|
 | *mean* (signify) | `zezuyel dudozol vezuyelovul.` | the word carries the meaning *dog* |
 | *mean* (intend) | `zamun thamam vewurel.` | I plan to walk ([intention](intention.md#plan-predict)) |
@@ -244,9 +244,9 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 
 **Needs:** [If](causation.md#if) · [Only because](causation.md#only-because) · [Fault](causation.md#fault) · [Requirement](sakes.md#requirement) · [Motive](sakes.md#sake-preference) · [Met](sakes.md#time-horizon-endings-on-met) · [Thanks and sorry](sakes.md#thanks-sorry) · [Intention](intention.md#plan-predict) · [Speech manner](speech-moves.md#speech-manner) · [Evidentiality](knowing.md#evidentiality) · [Enough and too](sakes.md#sake-bars)
 
-English turns reasons and feelings into nouns (*condition*, *motivation*, *satisfaction*, *truth*). Egabon has no noun for most of them. It keeps the stance word on the clause, so the noun becomes a short claim about how you stand: a condition is the pole word, a motive is a sake, a requirement is a demand, a truth is how you vouch for it.
+English turns reasons and feelings into nouns (*condition*, *motivation*, *satisfaction*, *truth*). Agebon has no noun for most of them. It keeps the stance word on the clause, so the noun becomes a short claim about how you stand: a condition is the pole word, a motive is a sake, a requirement is a demand, a truth is how you vouch for it.
 
-| English | Egabon | Reading |
+| English | Agebon | Reading |
 |---------|--------|---------|
 | *condition* (*on the condition that*) | `thoyem barl` / `tholum barl` | if / only if |
 | *factor* (one cause among several) | `thaver barl` | a share of the fault or cause |
@@ -281,9 +281,9 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 
 **Needs:** [Motive](sakes.md#sake-preference) · [Want](intention.md#want) · [MAY](knowing.md#may) · [Speech manner](speech-moves.md#speech-manner) · [Every bar](comparatives.md#stance-bars)
 
-English *biased* says a view may be bent by what the holder wants from it. Egabon says that outright: put a [motive](sakes.md#sake-preference) on the thinking, so the view is held *for a stake*. Name the sake when you know which one, or use the unspecified sake **`ega`**. *Wishful thinking* and *I'd like to believe* are a want on the thinking itself. *Overconfident* ranks your trust against what the clues warrant: a CLUES [bar](comparatives.md#stance-bars) on *trust*.
+English *biased* says a view may be bent by what the holder wants from it. Agebon says that outright: put a [motive](sakes.md#sake-preference) on the thinking, so the view is held *for a stake*. Name the sake when you know which one, or use the unspecified sake **`ega`**. *Wishful thinking* and *I'd like to believe* are a want on the thinking itself. *Overconfident* ranks your trust against what the clues warrant: a CLUES [bar](comparatives.md#stance-bars) on *trust*.
 
-| English | Egabon | Reading |
+| English | Agebon | Reading |
 |---------|--------|---------|
 | *I may be biased* | `zamun thovum vovemol thegathom.` | I may think this for a stake of my own |
 | *biased* (someone else) | `zuzozen vovemol thegathom baxer.` | as you see it, Uzozen's view serves a stake of their own |
@@ -312,7 +312,7 @@ English *biased* says a view may be bent by what the holder wants from it. Egabo
 
 **Needs:** [If](causation.md#if) · [Because](causation.md#only-because) · [MAY](knowing.md#may) · [*as-of*](relations.md#as-of) · [RESIDUE](knowing.md#residue) · [forecasts](knowing.md#forecast)
 
-English *because* and *if* can hide whether you **assert the dependent as a world fact**. Egabon puts that choice on the pole: **`thavem`** asserts the condition as the reason the outcome rests on; **`thoyem`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary pole.
+English *because* and *if* can hide whether you **assert the dependent as a world fact**. Agebon puts that choice on the pole: **`thavem`** asserts the condition as the reason the outcome rests on; **`thoyem`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary pole.
 
 > `zuzozen vewurel thavem berulal.`
 >
@@ -390,7 +390,7 @@ Use **`thavem barl`** only when Q is also asserted as a world-foundation, what m
 
 An argument has three parts, and each has its own slot. The **link** between premises and conclusion is a pole (*if*, *if and only if*). **How you know** the link is the channel: DEDUCED (`thugum`) when the conclusion must hold. **Whether you grant the premises** depends on what sits before **`barl`**: the channel alone asserts them, and a pole between the channel and **`barl`** does not.
 
-| English | Egabon | You assert |
+| English | Agebon | You assert |
 |---------|--------|------------|
 | *P, so Q* / *since P, Q* (a proof) / *a sound argument* | Q **`thugum barl`** P | P and Q |
 | *P implies Q* / *Q follows from P* / *P entails Q* / *a valid argument* | Q **`thugum thoyem barl`** P | only the link |
@@ -412,7 +412,7 @@ An argument has three parts, and each has its own slot. The **link** between pre
 
 To talk **about** an argument rather than make one, use the dictionary words. Each is *reason* (`ebobo`, as in `zebobom` *the faculty of reason*) joined to a second root ([words you look up](x-compounds.md#lexical-compounds)).
 
-| English | Egabon | Built from |
+| English | Agebon | Built from |
 |---------|--------|------------|
 | *an argument* / *logic* | `ebobomolawel` / `ebobomolawem` | *reason* + *ladder*: steps from what you grant to what follows |
 | *a premise* | `ebobomavel` | *reason* + *wall*: what the argument stands on |
@@ -464,9 +464,9 @@ English *I hope X will happen* is two claims: you want it, and you expect it. **
 
 **Needs:** [Sake inventory](sakes.md#sake-inventory) · [Met](sakes.md#time-horizon-endings-on-met) · [Emotion compose](sakes.md#emotion-compose) · [Thanks and sorry](sakes.md#thanks-sorry) · [Bars](comparatives.md#bars)
 
-English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Egabon names the someone's **sake** (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`gobum`**. Put a person in `/b/` for whose sake it is.
+English *useful*, *helpful*, *important* and *benefit* judge a thing by what it does for someone. Agebon names the someone's **sake** (autonomy, competence, understanding, purpose, relatedness, beneficence, pleasure, physical). A met word says the thing serves that sake, and its ending says how long the payoff lasts. On a noun that is yours, the sake word sits on `/ɡ/`. On another noun, put it on `/w/` before **`gobum`**. Put a person in `/b/` for whose sake it is.
 
-| English | Egabon | Reading |
+| English | Agebon | Reading |
 |---------|--------|---------|
 | *useful* / *helpful* / *practical* / *relevant* (for getting things done) | `gulotham` | competence, met |
 | *important* / *critical* / *crucial* (it matters for the long run) | `wamethal gobum` | purpose, met, lasting |
@@ -527,7 +527,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 
 English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrect** (not matching), **morally wrong** (someone broke a norm), or **bad for someone** (a sake unmet). *Ugly* is **not beautiful**, **less beautiful than a bar**, or **unpleasant to me**.
 
-| English | Egabon | Reading |
+| English | Agebon | Reading |
 |---------|--------|---------|
 | *wrong* (incorrect) | `gogugol gul` | not correct, closed with **`gul`** |
 | *wrong* (morally) | `thavel barl` + the act | fault on the act ([fault](causation.md#fault)) |
@@ -557,7 +557,7 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 
 English *deserve* says something is owed without saying why. Name the ground. It is owed because giving it would be **fair**, because a **rule** gives a right to it, or because it was **earned** in exchange for effort.
 
-| English | Egabon | Reading |
+| English | Agebon | Reading |
 |---------|--------|---------|
 | *deserves* (it would be fair) | `zolazun demebel vebel buzozen holurem thegathem.` | Olazun ought to give Uzozen the medal, fairly |
 | *deserves* / *is entitled to* (a thing, by right) | `zolazun demebel vebel buzozen thumel.` | the rules require Olazun to give it |
@@ -582,9 +582,9 @@ English *deserve* says something is owed without saying why. Name the ground. It
 
 **Needs:** [Negation](joins.md#negation-u) · [Universals, domains and generics](joins.md#universals-domains-generics) · [Fault](causation.md#fault) · [Emotion compose](sakes.md#emotion-compose) · [Number as stance](numbers.md#special-number-as-stance)
 
-Many English adjectives are the plain opposite of something that has a root (*unclear*, *honest*, *false*). Egabon says the positive root and closes it with **`gul`** (*not*). Others claim how far something holds (*general*, *universal*, *absolute*). That is the universal fence: closed for no exceptions, open for *as a rule*. A few are a feeling (*proud*), which is an emotion compose, so the sake and the stimulus are named.
+Many English adjectives are the plain opposite of something that has a root (*unclear*, *honest*, *false*). Agebon says the positive root and closes it with **`gul`** (*not*). Others claim how far something holds (*general*, *universal*, *absolute*). That is the universal fence: closed for no exceptions, open for *as a rule*. A few are a feeling (*proud*), which is an emotion compose, so the sake and the stimulus are named.
 
-| English | Egabon | Reading |
+| English | Agebon | Reading |
 |---------|--------|---------|
 | *unclear* / *obscure* | `gagebom gul` | not clear |
 | *honest* / *truthful* / *sincere* | `galamum gul` | not deceiving |
@@ -623,7 +623,7 @@ Many English adjectives are the plain opposite of something that has a root (*un
 
 English *start* / *stop* / *finish* doing something are ordinary verbs. Put the activity in `/d/` as an ordinary noun (`dewurel` *a walk*).
 
-| English | Egabon | Same root as |
+| English | Agebon | Same root as |
 |---------|--------|--------------|
 | *start* | `vebugem` | ▶️ `ebugel` *play button* |
 | *stop* | `vozohul` | 🛑 `ozohul` *stop sign* |
@@ -812,7 +812,7 @@ Put an **act** after the pole (`barl zolazun vezuyel`), not the person. A feelin
 
 Most of these feelings are about the **understanding** sake: whether something makes sense. Surprise is different. It says the news ran against what you expected, so it is the [mirative](knowing.md#mirative), and a sake word says how the news lands.
 
-| English | Egabon | Reading |
+| English | Agebon | Reading |
 |---------|--------|---------|
 | *curious about* | `wadothomom gobum` | understanding as the motive, aimed at it, flowing |
 | *interested in* | `wadothamam gobum` | understanding met, held inside, flowing |
@@ -850,7 +850,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. **
 
 **Roots used here:**
 
-| English | Egabon | Same root as |
+| English | Agebon | Same root as |
 |---------|--------|--------------|
 | *Uzozen* | `uzozen` | |
 | *Olazun* | `olazun` | |
@@ -871,7 +871,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. **
 | *CLUES* | `thunem` | `unel` *investigate* |
 | *as-of.bookmark* | `huram` | |
 
-#### English → Egabon {#reasons-causation-english-to-egabon}
+#### English → Agebon {#reasons-causation-english-to-agebon}
 
 **1.** *Olazun pours because Uhelan sees a fire.* (Uhelan really does see one)
 
@@ -921,7 +921,7 @@ z-Uzozen | th-MAY | v-sit | [th-because | b-that-clause] | z-Olazun | v-pour
 z-test-tube | v-melt | h-RESIDUE | [th-CLUES | b-later] | [h-as-of.bookmark | b-that-clause] | z-Olazun | v-pour
 :::
 
-#### Egabon → English {#reasons-causation-egabon-to-english}
+#### Agebon → English {#reasons-causation-agebon-to-english}
 
 **1.** `zuzozen vobuvul thavem bavulul.`
 
@@ -985,7 +985,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. PL
 
 **Roots used here:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *I* | `amun` |
 | *Uzozen* | `uzozen` |
@@ -997,7 +997,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. PL
 | *as-of.bookmark* | `huram` |
 | *DECISION-modifiable* | `thehum` |
 
-#### English → Egabon {#reasons-plans-english-to-egabon}
+#### English → Agebon {#reasons-plans-english-to-agebon}
 
 **1.** *As of 22 July, I was going to walk.*
 
@@ -1023,7 +1023,7 @@ z-speaker | th-plan-sketch | v-walk | [th-as-of.ledger | b-_22,7]
 z-speaker | th-DECISION-modifiable | v-walk | [th-as-of.ledger | b-_22,7]
 :::
 
-#### Egabon → English {#reasons-plans-egabon-to-english}
+#### Agebon → English {#reasons-plans-agebon-to-english}
 
 **1.** `thobam bral huram b_#22,7 verulal. xuzozen thobam bral hurar vewurel.`
 
@@ -1060,7 +1060,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 **Roots used here:**
 
-| English | Egabon | Same root as | Cue |
+| English | Agebon | Same root as | Cue |
 |---------|--------|--------------|-----|
 | *Uzozen* | `uzozen` | | |
 | *Olazun* | `olazun` | | |
@@ -1072,7 +1072,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 | *MAY* | `thovum` | | |
 | *as-of.ledger* | `huhum` | | |
 
-#### English → Egabon {#reasons-knowing-english-to-egabon}
+#### English → Agebon {#reasons-knowing-english-to-agebon}
 
 **1.** *As of 22 July, Olazun had left and was still gone.*
 
@@ -1098,7 +1098,7 @@ z-Uzozen | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
 z-Olazun | th-MAY | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
 
-#### Egabon → English {#reasons-knowing-egabon-to-english}
+#### Agebon → English {#reasons-knowing-agebon-to-english}
 
 **1.** `zolazun thevom huhum b_#22,7 hamom verurul.`
 
@@ -1135,7 +1135,7 @@ Short drills for these recipes. A channel and offset after **`gobum`** date the 
 
 **Roots used here:**
 
-| English | Egabon | Same root as |
+| English | Agebon | Same root as |
 |---------|--------|--------------|
 | *Uzozen* | `uzozen` | |
 | *Olazun* | `olazun` | |
@@ -1150,7 +1150,7 @@ Short drills for these recipes. A channel and offset after **`gobum`** date the 
 | *because* | `thavem` | `avel` *wall* |
 | *because.fault* | `thavel` | `avel` *wall* |
 
-#### English → Egabon {#reasons-feelings-english-to-egabon}
+#### English → Agebon {#reasons-feelings-english-to-agebon}
 
 **1.** *Anxious about the dialogue that's coming, as a reliable source says.* (competence at stake for now; hangs over the room; surging)
 
@@ -1168,7 +1168,7 @@ Short drills for these recipes. A channel and offset after **`gobum`** date the 
 [z-memo | [[w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | b-Uzozen]] | [th-because | b-rain]
 :::
 
-#### Egabon → English {#reasons-feelings-egabon-to-english}
+#### Agebon → English {#reasons-feelings-agebon-to-english}
 
 **1.** `zumel wanathumol gobum thuhum bezuyel.`
 

@@ -1,7 +1,7 @@
 {
-  "name": "egabon",
+  "name": "agebon",
   "version": "0.1.0",
-  "description": "Egabon tooling — lexicon helpers and agent-facing docs",
+  "description": "Agebon tooling — lexicon helpers and agent-facing docs",
   "type": "module",
   "scripts": {
     "generate:word": "peggy --format es --dts --allowed-start-rules start,words,probe_writingSpan,probe_freeNumber,probe_hook,probe_prefixedWord,probe_citation,probe_prefixedX,probe_prefixedPlain,probe_prefixedJoin -o src/generated/word-parser.js src/parse/word.peggy",
@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit",
     "grammar-check": "tsx scripts/grammar-check.ts",
     "parse-snapshot": "tsx scripts/parse-snapshot.ts",
-    "lint:egabon": "tsx scripts/lint-egabon-docs.ts",
+    "lint:agebon": "tsx scripts/lint-agebon-docs.ts",
     "free-english-review": "tsx scripts/free-english-review.ts",
     "llm-eval": "tsx scripts/llm-eval.ts",
     "docs:publish": "vitepress build docs/grammar && tsx scripts/publish-docs-extras.mjs",

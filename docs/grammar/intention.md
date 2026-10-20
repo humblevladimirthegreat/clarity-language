@@ -1,6 +1,6 @@
 # Intention {#intention}
 
-English *will* and *going to* can state either an **intention** (what someone means to do) or a **forecast** (what someone expects to happen later). Egabon marks intention with a `/th/` stance word before an ordinary verb, and gives a forecast a different shape that always says what it rests on. So the listener can tell a chosen course from a claim about a future event.
+English *will* and *going to* can state either an **intention** (what someone means to do) or a **forecast** (what someone expects to happen later). Agebon marks intention with a `/th/` stance word before an ordinary verb, and gives a forecast a different shape that always says what it rests on. So the listener can tell a chosen course from a claim about a future event.
 
 ## Beginner {#beginner}
 
@@ -25,7 +25,7 @@ As a plain noun or verb, the root keeps its own meaning (`zamal` *a map*; `vamal
 
 The ending on PLAN says how much of the plan is worked out: **-l** for a plan with backups ready, **-m** for the steps, **-r** for just the direction. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). With **-n**, the word is an ordinary [name](word-endings.md#proper-name--n). **`thamam`** is the soft default: it claims a plan without saying how much is worked out.
 
-| Egabon | Use | English | Same root as | Cue |
+| Agebon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thamal`** | **atlas** | *am fully prepared to …*: hurdles are anticipated and prepared for | `amal` *plan-atlas* | **-l** ≈ lasting (detours already drawn, so it holds up) |
 | **`thamam`** | **itinerary** (soft default) | *plan to …*: steps laid out, or detail unstated | `amam` *plan-itinerary* | **-m** ≈ middle (the route, no backups) |
@@ -59,14 +59,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *pawn* | `obevel` | ♟️ |
 | *PLAN* | `thamam` | 🗺️ from *map*: a course you mean to take |
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *I* | `amun` |
 | *Uzozen* | `uzozen` |
@@ -84,7 +84,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *scream* | `vuyomul` |
 | *walk* | `vewurel` |
 
-#### English → Egabon {#beginner-english-to-egabon}
+#### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *I intend to sit down.* (just the direction)
 
@@ -134,7 +134,7 @@ z-Uzozen | th-plan-itinerary | v-write
 z-speaker | th-plan-atlas | d-Olazun | v-fight
 :::
 
-#### Egabon → English {#beginner-egabon-to-english}
+#### Agebon → English {#beginner-agebon-to-english}
 
 **1.** `zamun thamar dugul vawebol.`
 
@@ -213,7 +213,7 @@ z-speaker | th-plan-itinerary | v-walk
 ### Ability and incapability {#ability}
 <a id="incapability"></a>
 
-English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Egabon you fold that meaning into the verb or adjective itself. After the root, write **`x`**, then a vowel for *can* or for which kind of *can't*, then the same [ending](word-endings.md) the word would have without it.
+English *can* and *can't* usually sit in front of the verb (*can sing*, *can't sing*). In Agebon you fold that meaning into the verb or adjective itself. After the root, write **`x`**, then a vowel for *can* or for which kind of *can't*, then the same [ending](word-endings.md) the word would have without it.
 
 #### Can (`xa`)
 <a id="can"></a>
@@ -284,7 +284,7 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 > "Olazun can't sing right now."
 
 <!-- cheat-sheet: knowing-intending -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`xa`** | they can (this verb or quality) | *can* | **a** ≈ add (capability is in) |
 | **`xe`** | they can't, just for now (they usually can) | *can't right now* | **e** ≈ order (this moment's ranking) |
@@ -340,7 +340,7 @@ Unlike PLAN, DECISION carries **no time**. It says what you chose, not that the 
 
 The endings on DECISION run on the same settled-to-passing scale as [changeability](sakes.md#sake-changeability) on an unmet sake: **-l** irreversible, **-m** modifiable, **-r** temporary. With **-n**, the word is an ordinary [name](word-endings.md#proper-name--n). If you do not know how settled the decision is, use **-m**. How firm a choice will turn out is hard to know even for yourself, so **-m** claims nothing either way.
 
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thehul`** | **irreversible** | *have decided for good to …* | **-l** ≈ lasting (for good) |
 | **`thehum`** | **modifiable** (soft default if unknown) | *have decided to …, and can still change that* | **-m** ≈ open to change |
@@ -394,7 +394,7 @@ As a plain noun, the root keeps its own meaning (`zudul` *a test tube*).
 
 On **`udu`**, **-l / -m / -r** say how far the attempt will go. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know, use **-m**.
 
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`hudul`** | **committed** | *commits to trying …* / *keeps trying to …* until it works or is ruled out | **-l** the full run |
 | **`hudum`** | **unstated** (soft default) | *tries to …* | **-m** middle |
@@ -470,7 +470,7 @@ To want a person or thing (*want Uzozen*), name the act that would get it (*see*
 
 On **`ohu`**, **-l / -m / -r** say how long the wanting lasts. **-n** is ordinary [proper](word-endings.md#proper-name--n). If you do not know, use **-m**.
 
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thohul`** | a want that keeps coming back | *really want …* / *have long wanted …* | **-l** ≈ lasting (a steady star) |
 | **`thohum`** | duration unstated (soft default) | *want …* | **-m** ≈ open |
@@ -559,7 +559,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *clipboard* | `egowal` | 📋 |
 | *pen* | `abewel` | 🖊️ |
@@ -570,7 +570,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -584,7 +584,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sing* | `vezuyol` |
 | *find* | `vumewol` |
 
-#### English → Egabon {#intermediate-english-to-egabon}
+#### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *Uzozen can write on the clipboard.*
 
@@ -634,7 +634,7 @@ z-Uzozen | th-WANT-passing | v-sing
 z-speaker | th-DECISION-temporary | v-tell | b-Olazun
 :::
 
-#### Egabon → English {#intermediate-egabon-to-english}
+#### Agebon → English {#intermediate-agebon-to-english}
 
 **1.** `zolazun gaxarayexam.`
 

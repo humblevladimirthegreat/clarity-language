@@ -1,6 +1,6 @@
 # Causation {#causation}
 
-English *if*, *only if*, and *because* each tie a condition to an outcome. Egabon uses a pole word for each, and the poles keep three questions apart: whether the condition is **enough** for the outcome, whether the outcome **needs** it, and whether you claim the condition is a **fact**.
+English *if*, *only if*, and *because* each tie a condition to an outcome. Agebon uses a pole word for each, and the poles keep three questions apart: whether the condition is **enough** for the outcome, whether the outcome **needs** it, and whether you claim the condition is a **fact**.
 
 ## Beginner {#beginner}
 
@@ -46,7 +46,7 @@ As a plain noun, the same root is `zolul` *a paper-roll*.
 
 **Compare with:** *if* (`thoyem` / `goyem`) leaves other routes possible. *Only if* says the outcome needs this.
 
-| Egabon | Use | English | Same root as | Cue |
+| Agebon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thoyem` / `goyem`** | enough for the outcome; condition not asserted | *if* | `oyel` *door* | 🚪: walk through only if it opens |
 | **`tholum` / `golum`** | the outcome needs this; condition not asserted | *only if* / *needs* | `olul` *paper-roll* | 🧻: without it the situation does not run |
@@ -61,7 +61,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *sing* | `vezuyol` | 🧑‍🎤 |
 | *seedling* | `uzel` | 🌱 |
@@ -72,7 +72,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -84,7 +84,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *find* | `vumewol` |
 | *sit* | `vuhohol` |
 
-#### English → Egabon {#beginner-english-to-egabon}
+#### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *Uzozen sings if there is sun.*
 
@@ -126,7 +126,7 @@ z-seedling-x | [g-if | b-rain]
 z-Olazun | d-bucket | v-find | [th-if | b-that-clause] | z-Uzozen | v-sing
 :::
 
-#### Egabon → English {#beginner-egabon-to-english}
+#### Agebon → English {#beginner-agebon-to-english}
 
 **1.** `zovelalx goyem buzalel.`
 
@@ -236,7 +236,7 @@ Several conditions can sit inside `/b/` as a [join](joins.md) (`thoyem bugalal b
 
 Beginner's *if* and *only if* do not claim the condition is true. The table completes the set. Pick the pole by **which way the link runs** (the condition is enough, the outcome needs it, or both) and by whether you **claim** the condition is a fact. Poles take **-m**, on `/th/` after a verb and on `/ɡ/` after a noun. As plain words the roots take ordinary endings (`zavel` *a wall*; `zedam` *reciprocity*).
 
-| Egabon | Use | English | Same root as | Cue |
+| Agebon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`thoyem` / `goyem`** | enough; condition not asserted | *if* | `oyel` *door* | 🚪: walk through only if it opens |
 | **`thavem` / `gavem`** | enough; condition asserted as the reason | *because* | `avel` *wall* | 🧱: the cause is what the result sits on |
@@ -290,7 +290,7 @@ For *even if*, put the *although* pole **`hezom`** right before **`thoyem`**. Yo
 >
 > "Uzozen walks even if Olazun is asleep."
 
-| Egabon | English |
+| Agebon | English |
 |--------|---------|
 | **`thoyem burl`** | *unless* |
 | **`hezom thoyem barl`** | *even if* |
@@ -300,7 +300,7 @@ For *even if*, put the *although* pole **`hezom`** right before **`thoyem`**. Yo
 *Because* names what made the outcome happen. It does not say anyone did wrong. When you mean *it was their fault*, change the ending on the because pole. **-m** is the plain cause. **-l** says the reason broke a rule: someone did wrong. **-r** says it was one cause among others.
 
 <!-- cheat-sheet: why-allowed -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thavel`** | the reason broke a norm | *it's their fault* / *to blame* | **-l** ≈ locked on a broken rule |
 | **`thavem`** | the reason made it happen; no fault claimed | *because* | **-m** ≈ the ordinary case |
@@ -371,7 +371,7 @@ When a pole follows **`thegem`**, the `/b/` belongs to the pole, as above (`theg
 
 **Compare with:** *let* is [permission](sakes.md#permission), which puts the one who allows it in the same `/b/` slot. *Get someone to* (ask, persuade) is tell + a *to* [stand-in](dependents.md#stand-in).
 
-| Egabon | English |
+| Agebon | English |
 |--------|---------|
 | **`thegem`** + `/b/` | *make* (causer in `/b/`) |
 
@@ -383,7 +383,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *pressure* | `agewam` | 🗜️ from *clamp* |
 | *CAUSE* | `thegem` | ⚙️ from *machine*: how the result comes about |
@@ -391,7 +391,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -410,7 +410,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vawebol` |
 | *scream* | `vuyomul` |
 
-#### English → Egabon {#intermediate-english-to-egabon}
+#### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *Uzozen runs if Olazun speaks.*
 
@@ -460,7 +460,7 @@ z-Olazun | v-run | [th-because.fault | b-that-clause] | z-Uzozen | v-pour
 z-Uhelan | v-tell | [th-CAUSE | b-Uzozen]
 :::
 
-#### Egabon → English {#intermediate-egabon-to-english}
+#### Agebon → English {#intermediate-agebon-to-english}
 
 **1.** `zuzozen vuhohol thedam barl zolazun vobuvul.`
 

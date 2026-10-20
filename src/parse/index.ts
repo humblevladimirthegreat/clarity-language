@@ -29,7 +29,7 @@ export {
   morphGlossFor,
   morphGlossLine,
   morphRedundantWithLoose,
-  normalizeEgabon,
+  normalizeAgebon,
   normalizeLooseEnglish,
   normalizeMorphLine,
   senseLabel,

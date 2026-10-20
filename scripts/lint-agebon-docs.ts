@@ -1,5 +1,5 @@
 /**
- * Check Egabon words in docs/grammar/ code spans: they must parse, and
+ * Check Agebon words in docs/grammar/ code spans: they must parse, and
  * content / x-family host roots must be in the lexicon.
  *
  * Morph-gloss pairs (example blockquotes, Morph-column tables, and visible
@@ -15,20 +15,20 @@
  * The level review page comes after every stage page: it introduces no roots, and each band's
  * items link back to every stage checkpoint of that level (src/lint/level-review.ts).
  * Free English lines on top-level grammar pages are checked for the sentence-and-note shape
- * (src/lint/free-english.ts); so are table English cells that translate an Egabon phrase or
+ * (src/lint/free-english.ts); so are table English cells that translate an Agebon phrase or
  * sentence, there and on cheat sheets, for shape and parentheses inside the sentence.
  * On the number pages, shorthand number examples need a
  * pronunciation row that matches the spoken form computed from the shorthand.
  * Mismatches, leftover ambiguity, and missing morph glosses fail the run.
  * Findings print to stdout. Each file logs morph coverage counts.
  *
- * Run: npm run lint:egabon
- *      npm run lint:egabon -- [paths...] [--check-ambiguity] [--order-report]
+ * Run: npm run lint:agebon
+ *      npm run lint:agebon -- [paths...] [--check-ambiguity] [--order-report]
  */
 import { readFileSync } from "node:fs";
 import { basename, dirname, join, relative, resolve } from "node:path";
 
-import { emptySpanStats, lintEgabonMarkdown, lintEgabonSpans, lintBareRoots, lintNativeOpaque } from "../src/lint/egabon-docs.js";
+import { emptySpanStats, lintAgebonMarkdown, lintAgebonSpans, lintBareRoots, lintNativeOpaque } from "../src/lint/agebon-docs.js";
 import { lintStaleNames } from "../src/lint/stale-names.js";
 import {
   formatMorphGlossFinding,
@@ -101,9 +101,9 @@ function parseCli(argv: string[]): { paths: string[]; orderReport: boolean } {
   let orderReport = false;
   for (const arg of argv) {
     if (arg === "--help" || arg === "-h") {
-      console.error(`Usage: npm run lint:egabon -- [paths...] [--check-ambiguity]
+      console.error(`Usage: npm run lint:agebon -- [paths...] [--check-ambiguity]
 
-Checks backticked and fenced Egabon words under docs/grammar/.
+Checks backticked and fenced Agebon words under docs/grammar/.
 Morph-gloss mismatches, leftover ambiguity, missing morph glosses, coverage
 gaps, and translation word-bank English/lexicon mismatches fail. Word banks
 must list every drill content root, and every row must be used.
@@ -290,7 +290,7 @@ function main(): void {
     // `SELF` slots are checked as the unset default (`zeman`, `z-speaker`); no newlines change.
     const original = fillSelf(source);
     const rel = relative(REPO_ROOT, file);
-    const issues = lintEgabonMarkdown(original, tables);
+    const issues = lintAgebonMarkdown(original, tables);
     for (const issue of issues) {
       count += 1;
       const line = lineNumberAt(original, issue.index);
@@ -330,9 +330,9 @@ function main(): void {
     reportStaleNames(rel, source);
     for (const issue of lintNativeOpaque(original, tables)) {
       spanCount += 1;
-      console.error(`${rel}:${lineNumberAt(original, issue.index)}  \`${issue.text}\`  native-opaque  (<${issue.payload}> reads as Egabon; an opaque span holds foreign text, so write a foreign word or put Egabon in a cite […])`);
+      console.error(`${rel}:${lineNumberAt(original, issue.index)}  \`${issue.text}\`  native-opaque  (<${issue.payload}> reads as Agebon; an opaque span holds foreign text, so write a foreign word or put Agebon in a cite […])`);
     }
-    for (const issue of lintEgabonSpans(original, tables, spanStats, used)) {
+    for (const issue of lintAgebonSpans(original, tables, spanStats, used)) {
       spanCount += 1;
       const line = lineNumberAt(original, issue.index);
       console.error(`${rel}:${line}  \`${issue.text}\`  ${issue.kind}  (${issue.detail})`);
@@ -434,10 +434,10 @@ function main(): void {
   }
 
   if (count > 0) {
-    console.error(`\n${count} Egabon word issue(s) in docs/grammar/.`);
+    console.error(`\n${count} Agebon word issue(s) in docs/grammar/.`);
   }
   if (spanCount > 0) {
-    console.error(`\n${spanCount} Egabon sentence / span issue(s) in docs/grammar/.`);
+    console.error(`\n${spanCount} Agebon sentence / span issue(s) in docs/grammar/.`);
   }
   if (staleNameCount > 0) {
     console.error(`\n${staleNameCount} stale name(s). A house or example name follows its root; respell it from the lexicon.`);
@@ -449,7 +449,7 @@ function main(): void {
   }
   if (retieFormatCount > 0) {
     console.error(
-      `\n${retieFormatCount} retie-format issue(s). Pin an English heading id, put Egabon in backticks, or fix the shared-prefix mark (docs/meta/grammar-docs.md).`,
+      `\n${retieFormatCount} retie-format issue(s). Pin an English heading id, put Agebon in backticks, or fix the shared-prefix mark (docs/meta/grammar-docs.md).`,
     );
   }
   if (terminologyCount > 0) {
@@ -525,7 +525,7 @@ function main(): void {
     process.exit(1);
   }
   console.log("OK: overlay hosts match the published lexicon.");
-  console.log("OK: Egabon words in docs/grammar/ parse as legal and match the lexicon.");
+  console.log("OK: Agebon words in docs/grammar/ parse as legal and match the lexicon.");
   console.log(
     `OK: code spans — ${spanStats.sentence} sentence(s) and ${spanStats.phrase} phrase(s) parsed; ` +
       `${spanStats.template} template(s) and ${spanStats["marked-fragment"]} fragment(s) traced; ` +

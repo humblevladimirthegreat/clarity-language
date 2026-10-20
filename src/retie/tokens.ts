@@ -11,7 +11,7 @@ export type RetieChange = {
   from: string;
   to: string;
   index: number;
-  /** Rewritten from an emphasised prose run, not a code span (only there can English be mistaken for Egabon). */
+  /** Rewritten from an emphasised prose run, not a code span (only there can English be mistaken for Agebon). */
   prose?: boolean;
 };
 

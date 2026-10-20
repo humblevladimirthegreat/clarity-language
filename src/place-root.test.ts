@@ -3,7 +3,7 @@ import { describe, it } from "node:test";
 
 import { parseWord } from "./parse/word.ts";
 import { isPlaceRootShape, placeRoot } from "./place-root.ts";
-import { isEgabonRootShape } from "./root-shape.ts";
+import { isAgebonRootShape } from "./root-shape.ts";
 
 describe("placeRoot", () => {
   it("keeps a cluster and ends in a vowel", () => {
@@ -43,7 +43,7 @@ describe("isPlaceRootShape", () => {
 
   it("never matches an ordinary three- or five-letter root", () => {
     for (const root of ["aba", "ubezo", "ezana"]) {
-      assert.ok(isEgabonRootShape(root));
+      assert.ok(isAgebonRootShape(root));
       assert.ok(!isPlaceRootShape(root), root);
     }
   });

@@ -1,19 +1,19 @@
 # Gloss guidelines
 
-How to write **glosses** in Egabon docs and examples. Design authority for morphology stays in the linked grammar pages; this page standardizes the **reading aid** only.
+How to write **glosses** in Agebon docs and examples. Design authority for morphology stays in the linked grammar pages; this page standardizes the **reading aid** only.
 
 ## Goals
 
-A gloss should answer: *what is each Egabon piece doing in the clause — in English labels?*
+A gloss should answer: *what is each Agebon piece doing in the clause — in English labels?*
 
 | Goal | Gloss does | Gloss does not |
 |------|------------|----------------|
-| Slot + sense | Show PoS letter and the **active English sense** | Quote Egabon phonology (`amu`, `ogowu`, …), except [opaque interiors](#span-interiors) |
+| Slot + sense | Show PoS letter and the **active English sense** | Quote Agebon phonology (`amu`, `ogowu`, …), except [opaque interiors](#span-interiors) |
 | Separate senses | Treat concrete / abstract / proper / overlay as **different English roots** | Chain etymology (`microphone→speaker`) |
 | Endings | Drop **-l** / **-m** / **-n** when they only pick which sense-root applies | Repeat those endings after a sense that already encodes them |
-| Structure | Keep mid-word `x` pieces, **-x**, and binding visible | Invent full English syntax for Egabon structure; copy writing glyphs (`@` / `~`) into the gloss |
+| Structure | Keep mid-word `x` pieces, **-x**, and binding visible | Invent full English syntax for Agebon structure; copy writing glyphs (`@` / `~`) into the gloss |
 | Binding | Point **-r** at the antecedent when known | Collapse to English *he* / *she* / *it* |
-| Underspecification | Keep vague Egabon vague (`someone`, bare joins) | Sharpen into a specific English claim |
+| Underspecification | Keep vague Agebon vague (`someone`, bare joins) | Sharpen into a specific English claim |
 | Separation | Stay word-aligned | Replace the free English line |
 
 **Free English** (quoted line / table “Gloss” in grammar pages) answers *what would you say naturally?* — idiomatic paraphrase, tone, and discourse flow. Do not merge free English into the morph gloss. Free English is a **loose sentence plus an optional note** ([sentence and note](#free-english-sentence-and-note)).
@@ -22,9 +22,9 @@ A gloss should answer: *what is each Egabon piece doing in the clause — in Eng
 
 | Layer | Where | Form |
 |-------|--------|------|
-| **Morph gloss** | Dialogue turns, clause / phrase examples, teaching lines | Word-aligned pieces joined with spaced ` | `; one roman line (below). **Omit** when parser output is trivially redundant with in-block loose English ([when to skip](#example-block); `lint:egabon` enforces). |
-| **Free English** | Same places, under the morph gloss; one line | Natural sentence in `"double quotes"`, then at most one plain-English note in parentheses after the closing quote for what Egabon marks and the sentence drops ([sentence and note](#free-english-sentence-and-note)). Checkpoint answers and prompts use italics in place of the quotes |
-| **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English in **English** (often *italic* in table cells); a cell beside an Egabon phrase or sentence follows the [sentence and note](#free-english-sentence-and-note) shape ([grammar-table gloss](#grammar-table-gloss-free-english-only)). **Cue** is not a gloss ([cues](grammar-docs.md#cues-columns)). |
+| **Morph gloss** | Dialogue turns, clause / phrase examples, teaching lines | Word-aligned pieces joined with spaced ` | `; one roman line (below). **Omit** when parser output is trivially redundant with in-block loose English ([when to skip](#example-block); `lint:agebon` enforces). |
+| **Free English** | Same places, under the morph gloss; one line | Natural sentence in `"double quotes"`, then at most one plain-English note in parentheses after the closing quote for what Agebon marks and the sentence drops ([sentence and note](#free-english-sentence-and-note)). Checkpoint answers and prompts use italics in place of the quotes |
+| **Grammar-table gloss** | Inventory / contrast tables in grammar docs | Short free English in **English** (often *italic* in table cells); a cell beside an Agebon phrase or sentence follows the [sentence and note](#free-english-sentence-and-note) shape ([grammar-table gloss](#grammar-table-gloss-free-english-only)). **Cue** is not a gloss ([cues](grammar-docs.md#cues-columns)). |
 | **Lexicon fields** | `lexicon-published.csv` / overlays | Concrete / abstract / mnemonic / [role English](#role-english) / definition — **inputs** to morph glosses and lookup, not utterance glosses. Verb senses use the [uninflected lemma](#english-lemma). Concrete English in a **Cue** cell is still not the morph gloss. Morph does **not** take its english slot from role English. |
 
 Grammar tables may keep a column named **Gloss** for free English. When a table needs morphology, use a **Morph** column or a separate morph line in the same format as dialogues.
@@ -32,7 +32,7 @@ Grammar tables may keep a column named **Gloss** for free English. When a table 
 ## Example block layout
 <a id="example-block"></a>
 
-Worked examples in grammar pages use a **blockquote**, not a code fence (so Markdown can render). **Backticks mark Egabon only.**
+Worked examples in grammar pages use a **blockquote**, not a code fence (so Markdown can render). **Backticks mark Agebon only.**
 
 **When the morph line earns its place** (PoS letters, several words, mid-word **`x`**, binding, …):
 
@@ -52,7 +52,7 @@ Worked examples in grammar pages use a **blockquote**, not a code fence (so Mark
 > "swan"
 ```
 
-A **complex citation** still gets a gloss if the morph unpacks structure the quote does not. An `x`-compound name is one word in Egabon and one name in English; the gloss shows the pieces:
+A **complex citation** still gets a gloss if the morph unpacks structure the quote does not. An `x`-compound name is one word in Agebon and one name in English; the gloss shows the pieces:
 
 ```markdown
 > `ohuxalowen`
@@ -64,13 +64,13 @@ A **complex citation** still gets a gloss if the morph unpacks structure the quo
 
 | Line | Markup | Why |
 |------|--------|-----|
-| Surface | `` `egabon.` `` | Copyable Egabon; the only code span |
+| Surface | `` `agebon.` `` | Copyable Agebon; the only code span |
 | Morph | `z-dog | v-walk` | English labels; roman (no italics, no per-token backticks); spaced ` | ` between **words** |
 | Free English | `"A dog walks."` | Straight double quotes. A [note](#free-english-sentence-and-note) goes **after** the closing quote: `"Uhelan sings the Sing."` (that titled performance). Parentheses inside the quotes only for an aside, a scope island, or a tag letter ([inside parentheses](#inside-parentheses)). |
 
 Do **not** prefix the gloss with `gloss:`.
 
-**Skip the morph line** when **`lint:egabon`** would treat it as redundant: single-segment parser morph whose English body matches the in-block loose line (same readable words, ignoring quotes and trailing `.?!`). That is a redundancy test, not “citation vs sentence.” Simple `uzozel` / `"swan"` omits; `zuzozen vewurel.` keeps `z-Uzozen | v-walk` because that is not `"Uzozen walks."`. Keep the line whenever it shows something the quote hides: role letters, several words, mid-word **`x`** pieces, binding, join jobs. No in-block loose line → omitting morph stays allowed.
+**Skip the morph line** when **`lint:agebon`** would treat it as redundant: single-segment parser morph whose English body matches the in-block loose line (same readable words, ignoring quotes and trailing `.?!`). That is a redundancy test, not “citation vs sentence.” Simple `uzozel` / `"swan"` omits; `zuzozen vewurel.` keeps `z-Uzozen | v-walk` because that is not `"Uzozen walks."`. Keep the line whenever it shows something the quote hides: role letters, several words, mid-word **`x`** pieces, binding, join jobs. No in-block loose line → omitting morph stays allowed.
 
 ### Word separator
 <a id="gloss-separator"></a>
@@ -90,9 +90,9 @@ A free English line is a loose sentence, then at most one note:
 
 | Part | Job |
 |------|-----|
-| **Morph** | Keeps Egabon structure (PoS, binding, join job, stance tags, …) |
+| **Morph** | Keeps Agebon structure (PoS, binding, join job, stance tags, …) |
 | **Sentence** | What a fluent speaker would say. Drops distinctions English doesn’t mark ([drop](#drop-in-loose)), keeps what changes the claim ([keep](#keep-in-loose)) |
-| **Note** | Optional, one parenthetical **after** the closing quote. States in plain English what Egabon marks and the sentence drops: whose clue or feeling it is, an open or closed list, cause versus blame, whose *left*, what a stand-in refers to, how firm a decision is |
+| **Note** | Optional, one parenthetical **after** the closing quote. States in plain English what Agebon marks and the sentence drops: whose clue or feeling it is, an open or closed list, cause versus blame, whose *left*, what a stand-in refers to, how firm a decision is |
 
 The note is the careful reading written as a fact, not as an awkward second sentence. Do not add a second free English line.
 
@@ -122,7 +122,7 @@ Grouping that English can say does not use parentheses: *either Uzozen walks or 
 
 **Several sentences on one line.** The note still goes after the closing quote and names which sentence it is about (*the singing is hearsay too*). Never put the note in the middle of the quote.
 
-**Checkpoints.** Egabon → English answers and English → Egabon prompts are italic, not quoted. They follow the same shape with italics in place of the quotes: *Uhelan sees that Olazun sneaks.* (a note, when there is one). The sentence's period goes inside the italics, and nothing follows the note. Alternatives and turns are italic too: *No.* / *False.*; *Didn’t Uzozen tell?* *True, Uzozen didn’t.* (confirm the negative). An instruction to the learner is a note, not text between the italics. The learner's own name is the `SELF` slot, never *(Your name)*. A note is never required in a checkpoint answer; it is allowed when the checkpoint drills the marking ([translation exercises](translation-exercises.md)).
+**Checkpoints.** Agebon → English answers and English → Agebon prompts are italic, not quoted. They follow the same shape with italics in place of the quotes: *Uhelan sees that Olazun sneaks.* (a note, when there is one). The sentence's period goes inside the italics, and nothing follows the note. Alternatives and turns are italic too: *No.* / *False.*; *Didn’t Uzozen tell?* *True, Uzozen didn’t.* (confirm the negative). An instruction to the learner is a note, not text between the italics. The learner's own name is the `SELF` slot, never *(Your name)*. A note is never required in a checkpoint answer; it is allowed when the checkpoint drills the marking ([translation exercises](translation-exercises.md)).
 
 ### When a note is required
 <a id="note-required"></a>
@@ -142,15 +142,15 @@ When the sentence already says it (*as I remember*, *I gather*, *exactly one of*
 - **Nothing the gloss lacks.** Neither the sentence nor the note adds a source, reason, or time the gloss does not have: a bare CLUES channel is *it looks like*, not *from the clouds*.
 - **No restating.** Drop a note that repeats the sentence (*Maybe Uzozen thinks Olazun left.* needs no *a guess about Uzozen's view*).
 - **Contrasts with another form** (*quitting for good is …*) are teaching, not translation. When a table just above already shows the other form, drop the contrast; otherwise move it to a prose line or a [Compare with](grammar-docs.md#compare-with) line.
-- **A bare verb English cannot leave bare.** When the verb's sense list has an alias that stands alone, use it and leave the Egabon as it is: `v-tell` with nothing told is *talks* / *speaks*, not *tells*. Change the root only when the example needs a different act.
-- **English → Egabon prompts** may use the note to pick between two correct answers, in plain English: *A sleepy Olazun stands.* (*sleepy* first), not *(adjective before the noun)*.
+- **A bare verb English cannot leave bare.** When the verb's sense list has an alias that stands alone, use it and leave the Agebon as it is: `v-tell` with nothing told is *talks* / *speaks*, not *tells*. Change the root only when the example needs a different act.
+- **English → Agebon prompts** may use the note to pick between two correct answers, in plain English: *A sleepy Olazun stands.* (*sleepy* first), not *(adjective before the noun)*.
 
 ### What a note never contains
 <a id="note-contents"></a>
 
 A note is a translation, so it never contains:
 
-- Egabon forms, backticks, or gloss labels (`th-CLUES`, `PATTERN`).
+- Agebon forms, backticks, or gloss labels (`th-CLUES`, `PATTERN`).
 - Grammar terms (*holder*, *mirative*, */w/*). Say *the surprise is Uzozen’s*, not *mirative with an Uzozen holder*.
 - Teaching commentary about how the form works (*whose-now and the event’s own time are separate*). That goes in a prose line under the block, or in a [Compare with](grammar-docs.md#compare-with) line.
 
@@ -161,7 +161,7 @@ Explanation that is not translation (*You name yourself rather than saying I.*) 
 
 The sentence drops these. A [note](#note-required) carries one only when it is required; the never row stays out of the note too.
 
-| Egabon distinction | The sentence does |
+| Agebon distinction | The sentence does |
 |---------------------|-----------------|
 | Cast resumes and role pointers (`zuzozer`, `zaxar` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
@@ -182,10 +182,10 @@ The sentence drops these. A [note](#note-required) carries one only when it is r
 - Force English can say (*please*, *don’t*, *I wonder*)
 - Stance that changes the verb (*can't* vs *ought not* vs unmet sake as content)
 - Comparatives / equatives / causation / plan when they are the point of the turn
-- Mention spans as *the word “udozo”* / *the phrase “…”* (Egabon spelling, not the English lemma) — [span interiors](#span-interiors)
+- Mention spans as *the word “udozo”* / *the phrase “…”* (Agebon spelling, not the English lemma) — [span interiors](#span-interiors)
 - Opaque interiors as the same blob (`kimchi`, `FBI`)
 
-### Example (same Egabon, sentence and note)
+### Example (same Agebon, sentence and note)
 
 > `yol zehon dududal dugudal dol von.`
 >
@@ -199,9 +199,9 @@ On a page teaching exclusive *or*, the note is required. Elsewhere it is optiona
 
 ## Senses are separate roots
 
-Published strings share one phonological root, but **concrete**, **abstract**, and **proper / overlay** readings are **different gloss roots**. Gloss only the English sense that is active. Do **not** write the Egabon letters, and do **not** write **-l** / **-m** / **-n** when that ending only selected this sense.
+Published strings share one phonological root, but **concrete**, **abstract**, and **proper / overlay** readings are **different gloss roots**. Gloss only the English sense that is active. Do **not** write the Agebon letters, and do **not** write **-l** / **-m** / **-n** when that ending only selected this sense.
 
-| Egabon | Morph gloss | Not |
+| Agebon | Morph gloss | Not |
 |---------|-------------|-----|
 | `zamul` | `z-microphone` | `z-ugobo(microphone)-l`, `z-microphone-l` |
 | `zamum` | `z-speaker` | `z-ugobo(microphone→speaker)-m` |
@@ -212,9 +212,9 @@ Published strings share one phonological root, but **concrete**, **abstract**, a
 | `thevom` | `th-MEMORY` | `h-uvuvu(fishing→MEMORY)-m` |
 | `gaheham` | `g-home` | `g-ohohu(house→home)-m` |
 
-Same English label for `zamum` and `zamun` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Egabon line and from [word-endings.md](../grammar/word-endings.md). The gloss’s job is the **sense**, not a second orthography.
+Same English label for `zamum` and `zamun` is fine: both are the *speaker* sense-root; the written ending is recoverable from the Agebon line and from [word-endings.md](../grammar/word-endings.md). The gloss’s job is the **sense**, not a second orthography.
 
-**Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Egabon letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
+**Closed overlays** ([sense-form](../grammar/lexicon.md)): gloss the overlay reading for that `(sense_form, pos)`, not the ordinary lexicon literal. Prefer short stable **English** labels (`witnessed`, `MAY`, `SAME`, `plan`, `DECISION`, …). The Agebon letters themselves follow the [published host root](parser-pipeline.md#closed-forms-follow-lexicon), except vowel-only join stems (`an` / `on` / …).
 
 **Special pronouns** ([pronouns.md](../grammar/pronouns.md)): `zamun` / `zehon` / `zahan` / `zunan` → `z-speaker` / `z-listener` / `z-interlocutors` / `z-someone` — never emoji etymology. The topic pronoun and the generic pronoun gloss in capitals on `/z/` `/d/` `/b/` and as a holder (`zozan` → `z-TOPIC`, `zoben` → `z-ONE`, `thunemozan` → `th-CLUES-TOPIC`); on any other slot they are ordinary names. A topic word glosses as its noun (`xuzozen` → `x-Uzozen`, `xuzozer` → `x-←Uzozen`), and `hahugem` as `h-as-for`. **Stand-ins** (`darl` / `dorl` / …) gloss as `d-that-clause` / `d-whether-clause` / …, not as pronouns.
 
@@ -223,7 +223,7 @@ Same English label for `zamum` and `zamun` is fine: both are the *speaker* sense
 
 Morph uses the published **concrete** or **abstract** for that ending, unless `english_by_pos` lists a lemma for this role letter and sense ([role English](#role-english)). Do **not** invent a new English root just because the word is under `/v/`. Closed overlays, joins, hooks, speech-act vowels, and house names stay specials.
 
-| Egabon | Morph | Free English |
+| Agebon | Morph | Free English |
 |--------|--------|------------------------------|
 | `vawebol` | `v-see` | *sees* |
 | `vuhohol` | `v-sit` | *sits* |
@@ -237,7 +237,7 @@ The checkpoint **English** column and the quoted line may say *see* / *sit* / *t
 ### Role English (lookup and morph)
 <a id="role-english"></a>
 
-Published rows may pack **role English** in `english_by_pos` when the usual English lemma for a role is not a transparent conversion of the **active** sense-root. This is not an overlay and not a second Egabon meaning.
+Published rows may pack **role English** in `english_by_pos` when the usual English lemma for a role is not a transparent conversion of the **active** sense-root. This is not an overlay and not a second Agebon meaning.
 
 Packed form: `v:see; m.v:intuit; m.h:inside`. Bare keys (`v:see`) are **concrete** mismatches only. `m.` keys are **abstract** mismatches only. Neither copies onto the other sense. Omit a piece when English already converts the sense lemma (`perception` as `/v/` → *perceive*).
 
@@ -261,7 +261,7 @@ Do not use `english_by_pos` for this. That column is role English: one lemma per
 ```
 
 - **PoS** — single letter matching the written prefix (`y` `z` `d` `b` `v` `g` `w` `h` `x`). Left-bound adjectives: `gl-…`.
-- **english** — short English label for the **active** sense (hyphens OK inside a label: `that-clause`, `or-exactly-one`). **Uninflected lemma** for verb senses ([english lemma](#english-lemma)). **No** Egabon root letters. **No** writing glyphs **`@`** / **`~`** (those mark **-n** / **-m** in Egabon spelling only: numbers, span fences).
+- **english** — short English label for the **active** sense (hyphens OK inside a label: `that-clause`, `or-exactly-one`). **Uninflected lemma** for verb senses ([english lemma](#english-lemma)). **No** Agebon root letters. **No** writing glyphs **`@`** / **`~`** (those mark **-n** / **-m** in Agebon spelling only: numbers, span fences).
 - **`-x-`** — mid-word compound / stance / role / span hinge; each piece is English (or a stable TAG).
 - **-l / -m / -n** — **omit**. They only choose which English sense-root is in play. Do not re-spell them as `-l` / `-m` / `-n` or as `@` / `~`.
 - **Names** — the english slot is the **English name** (`z-Uzozen`, `z-Hamlet`, `z-Alowen`, `z-Unodu-x-Ezalan`), not the virtue or kind that formed the stem, and not `z-grace@`.
@@ -269,14 +269,14 @@ Do not use `english_by_pos` for this. That column is role English: one lemma per
 - **Prefix-less** hooks: English only — `instead`, `rather`, `additionally`, `in`, `using` (no fake PoS).
 - **Specials / overlays / joins** — still the overlay or join job (`z-speaker`, `v-and`), never `@` because the word happens to end in **-n**.
 
-Separate **words** with spaced `|` (`z-dog | v-walk`). Group words into [phrase brackets](#phrase-brackets). One morph gloss line per Egabon line (or per turn). In an [example block](#example-block), leave that line **roman** (no italics, no backticks on pieces; tables may still put a morph cell in backticks). Mid-word **`x`** stays inside one piece (`wish-x-guidance`). See [word separator](#gloss-separator).
+Separate **words** with spaced `|` (`z-dog | v-walk`). Group words into [phrase brackets](#phrase-brackets). One morph gloss line per Agebon line (or per turn). In an [example block](#example-block), leave that line **roman** (no italics, no backticks on pieces; tables may still put a morph cell in backticks). Mid-word **`x`** stays inside one piece (`wish-x-guidance`). See [word separator](#gloss-separator).
 
 ### Phrase brackets
 <a id="phrase-brackets"></a>
 
 The morph line shows **phrase structure**: which words form one unit and what modifies what. Wrap any unit of **two or more words** that fills one slot in `[ … ]`. Inside a bracket, words still use ` | `. A single word never gets brackets. Roles at clause level stay flat and unbracketed, because they are sisters under the verb: subject `z`, theme `d`, verb `v`, plain `h` / `th`, unhosted recipient `b`, linkers and `/y/`.
 
-A dependent sits next to the word it modifies, in Egabon order. Nesting shows attachment:
+A dependent sits next to the word it modifies, in Agebon order. Nesting shows attachment:
 
 | Unit | Morph gloss |
 |------|-------------|
@@ -307,7 +307,7 @@ The mention marker is a word, not a bracket: `glelel` → `gl-MENTION`, `glelen`
 ### Round trip
 <a id="round-trip"></a>
 
-A morph line corresponds **one-to-one** with its Egabon. From the gloss alone you can rebuild the exact written words, so glosses must never merge two forms:
+A morph line corresponds **one-to-one** with its Agebon. From the gloss alone you can rebuild the exact written words, so glosses must never merge two forms:
 
 - **Every written word is glossed**, including a spoken **`yal`**. A `yal` that was left out is not added.
 - **Sentence marks.** When one line holds several sentences, the mark between them stands alone with spaces: `z-Uzozen | v-walk . z-←Uzozen | v-judge`. A line-final period is implicit. A [tone mark](../grammar/speech-moves.md#tone-marks) is copied as written: attached to the glossed word or span it colors (`!z-Uzozen`), or standing alone with spaces for sentence scope (`! z-Uzozen | v-walk`).
@@ -316,7 +316,7 @@ A morph line corresponds **one-to-one** with its Egabon. From the gloss alone yo
 - **Ordinals use digits** (`gredul` → `g-2nd`, `gruedul` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
 - **Role-compound resumes** keep their role: `daexarayer` → `d-←instrument-x-write`, `duxarayer` → `d-←patient-x-write`. A bare `d-←write` would merge the doer, scene, undergoer, tool, … of one event.
 - **Role pointers** gloss their role and pointer vowel, never the referent: `zaxar` → `z-←agent.same`, `duxor` → `d-←patient.other`, `daxer` → `d-←agent.self`, `zaxur` → `z-←agent.unsaid`. **-l** adds `.new` and **-m** adds `.part` (`duxal` → `d-←patient.same.new`, `zaxam` → `z-←agent.same.part`, `zoxom` → `z-←recipient.other.part`, `zaxum` → `z-←agent.unsaid.part`). The role label is the role-compound one (`recipient` for **`o`**, `instrument` for **`ae`**, …). A pointer inside a seam keeps the seam's host: holder `thunemaxar` → `th-CLUES-←agent.same`, lateral anchor `howuhethaxar` → `h-west-th-←agent.same`.
-- **Unknown words fail.** A content word the lexicon cannot gloss has no morph line: a root missing from the lexicon, or **-m** on a root with no abstract sense (unless a closed overlay defines that **-m** form). `lint:egabon` reports it.
+- **Unknown words fail.** A content word the lexicon cannot gloss has no morph line: a root missing from the lexicon, or **-m** on a root with no abstract sense (unless a closed overlay defines that **-m** form). `lint:agebon` reports it.
 - **Quoted pass-through.** Raw payloads (opaque interiors, and a resume stem with no known antecedent) go in straight double quotes: `z-OPAQUE["kimchi"]`. A `"` inside the payload is written `""`.
 
 ### When an ending still appears in the gloss
@@ -349,9 +349,9 @@ The lexicon **concrete** and **abstract** fields, overlay **definition** labels 
 | dance, run, walk, climb, swim | `dance`, `run`, `walk`, … | `dancing`, `running`, `walking`, … |
 | choose, think, sing | `choose`, `think`, `sing` | `choosing`, `thinks`, `sang` |
 
-Egabon does not mark English tense or progressive aspect on the root. Conjugation belongs only in **free English** (`"Uzozen walks."`, `"they are dancing."`). Morph stays `v-walk` / `v-dance` even when the quote uses *walks* / *dancing*.
+Agebon does not mark English tense or progressive aspect on the root. Conjugation belongs only in **free English** (`"Uzozen walks."`, `"they are dancing."`). Morph stays `v-walk` / `v-dance` even when the quote uses *walks* / *dancing*.
 
-**Tense in free English.** Write the present by default (*Uzozen walks.*). Write the past when the Egabon puts the event before now (a past date or day offset, MEMORY, RESIDUE, FORMER, an as-of time in the past: *Uzozen walked in 1962.*, *Uzozen walked, I remember it.*), or when the sentence reports an event that is over: hearsay or clues about something that happened (*Olazun left, so they say.*, *It looks like Olazun fought.*) or a quote someone said (*Uzozen said, “Olazun talks.”*). A forecast or a later date takes *will*. Tense never licenses a time word: write *walked*, not *walked yesterday*, unless the Egabon has the day.
+**Tense in free English.** Write the present by default (*Uzozen walks.*). Write the past when the Agebon puts the event before now (a past date or day offset, MEMORY, RESIDUE, FORMER, an as-of time in the past: *Uzozen walked in 1962.*, *Uzozen walked, I remember it.*), or when the sentence reports an event that is over: hearsay or clues about something that happened (*Olazun left, so they say.*, *It looks like Olazun fought.*) or a quote someone said (*Uzozen said, “Olazun talks.”*). A forecast or a later date takes *will*. Tense never licenses a time word: write *walked*, not *walked yesterday*, unless the Agebon has the day.
 
 **Keep *-ing*** only when that string is not a verb lemma — a kind English names that way (`hearing-aid`, `lightning`, `wedding`), a closed tag the grammar already froze, or when stripping it would collide with another published literal (`fishing` vs `fish`, `cooking` vs `cook`, `partying` vs `party`). Do not append *-ing* to mark “this row is used as `/v/`.”
 
@@ -366,7 +366,7 @@ The binder **is** the gloss root. No trailing `-r` (resume is already marked by 
 
 A [resume](../grammar/pronouns.md#resume-r) spells its antecedent's whole stem, so the antecedent's label rebuilds the exact word.
 
-| Case | Egabon | Morph gloss |
+| Case | Agebon | Morph gloss |
 |------|--------|-------------|
 | Resume of a name | `zuzozer` | `z-←Uzozen` |
 | Resume of a content word | `vezuvor` | `v-←sleep` |
@@ -385,7 +385,7 @@ Do not write `z-←microphone` for a speaker antecedent.
 
 Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#house-cast)). Morph gloss is the **English name**. Free English is that same name, not the virtue word and not *I* / *you*. Resume uses that name (`z-←Uzozen`). Plain *I* is `amun`, glossed *speaker*. The learner's own name slot, used only where the name is the form (greeting, bid, introduction), glosses as a free-standing `SELF` (`SELF`, `SELF-presence`); the site renders *speaker* or the chosen English name ([first person](grammar-docs.md#house-cast)). Do not write `z-grace@`, `g-volume~`, or `z-grace-proper`.
 
-| Egabon | Morph gloss | Free English | Resume |
+| Agebon | Morph gloss | Free English | Resume |
 |--------|-------------|--------------|--------|
 | `zuzozen` | `z-Uzozen` | *Uzozen* | `zuzozer` → `z-←Uzozen` |
 | `zolazun` | `z-Olazun` | *Olazun* | `zolazur` → `z-←Olazun` |
@@ -395,7 +395,7 @@ Grammar examples use three single-root names ([grammar-docs.md](grammar-docs.md#
 
 Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) — English only. Drop sense-picking **-l / -m / -n**. On [values](../grammar/sakes.md), keep the stance **and** the ending table (contact / prescription warrant / time horizon / changeability): `thulothom` → `th-competence-motive-any-term`, not `th-competence-th-motive`.
 
-| Family | Example Egabon | Morph gloss |
+| Family | Example Agebon | Morph gloss |
 |--------|-----------------|-------------|
 | Ordinary / name compound | `yunoduxezalan` | `y-Unodu-x-Ezalan` |
 | Ordinary (three roots) | `zugudaxududaxuwolan` | `z-Uguda-x-Ududa-x-Uwolan` |
@@ -405,14 +405,14 @@ Gloss each piece by **family** ([x-compounds.md](../grammar/x-compounds.md)) —
 | Span | `th(hogowul)` | `th-ASIDE[h-quiet]` ([labeled bracket](#phrase-brackets)) |
 | Number / enumeration | `xrebul` | `x-starting-with` |
 
-For **hyphenated names**, gloss each piece (`y-Unodu-x-Ezalan`, `z-Uguda-x-Ududa-x-Uwolan`). Mid-word **`x`** stays visible as `-x-`. Do not put Egabon letters in the english slot, except [opaque interiors](#span-interiors).
+For **hyphenated names**, gloss each piece (`y-Unodu-x-Ezalan`, `z-Uguda-x-Ududa-x-Uwolan`). Mid-word **`x`** stays visible as `-x-`. Do not put Agebon letters in the english slot, except [opaque interiors](#span-interiors).
 
 ### Mention marker and opaque interiors
 <a id="span-interiors"></a>
 
-A **mention** is a **word or phrase** as that spelling, not a quoted utterance and not the English lemma. The **mention marker** (`glelel` / `glelen`) is a `gl-` word before the span, glossed `MENTION` / `NAME.MENTION`. The span is a cite when the spelling is Egabon and opaque when it is foreign. A one-word cite passes its spelling through in quotes (`CITE["udozo"]`); a longer cite is glossed as usual; an opaque interior passes through in quotes. Free English says *the word …* or *the phrase …* and keeps that spelling.
+A **mention** is a **word or phrase** as that spelling, not a quoted utterance and not the English lemma. The **mention marker** (`glelel` / `glelen`) is a `gl-` word before the span, glossed `MENTION` / `NAME.MENTION`. The span is a cite when the spelling is Agebon and opaque when it is foreign. A one-word cite passes its spelling through in quotes (`CITE["udozo"]`); a longer cite is glossed as usual; an opaque interior passes through in quotes. Free English says *the word …* or *the phrase …* and keeps that spelling.
 
-| Kind | Egabon | Morph | Free English |
+| Kind | Agebon | Morph | Free English |
 |------|--------|-------|--------------|
 | Mention (one word) | `glelel z[udozo]` | `[gl-MENTION \| z-CITE["udozo"]]` | *The word “udozo” is small.* |
 | Mention (phrase) | `glelel z[zuzozen vezuyol]` | `[gl-MENTION \| z-CITE[z-Uzozen \| v-sing]]` | *The phrase “zuzozen vezuyol” is small.* |
@@ -436,7 +436,7 @@ Speech/writing reports (*said “X,”* *sang “X,”* *don’t “halt”*) ar
 
 Bake join / hook **job** into the English label (including open vs closed when it matters). Do not re-attach sense-picking endings:
 
-| Egabon | Morph gloss |
+| Agebon | Morph gloss |
 |---------|-------------|
 | `zam` | `z-and.open` |
 | `zal` | `z-and` |
@@ -472,7 +472,7 @@ Bake join / hook **job** into the English label (including open vs closed when i
 
 ### Single words
 
-| Egabon | Morph gloss | Free English (separate) |
+| Agebon | Morph gloss | Free English (separate) |
 |---------|-------------|-------------------------|
 | `uzozen.` | `Uzozen` | *Uzozen.* (hello) |
 | `yolazuxen` | `y-Olazun-minutes` | *Olazun — a few minutes.* |
@@ -540,7 +540,7 @@ No note: *as I remember* already says whose memory it is. Do not render the over
 
 From comparative inventories — no morph line required (loose claim; parenthetical note OK when the row teaches packaging).
 
-An italic English cell beside an Egabon phrase or sentence (an **Egabon**, **Example**, or **Form** column) is that phrase's free English, on grammar pages and [cheat sheets](grammar-docs.md#cheat-sheets) alike: `*sentence*` plus at most one (note) after it, alternatives with ` / `, and parentheses inside only as [above](#inside-parentheses). Several examples in one cell are split by ` · ` or `; `, each with its own note. A single word's senses (`*here*, *this*`), a template, a cell not in italics (a description), and an English column left of the Egabon (a lookup keyed by English job) are not free English. `lint:egabon` checks the shape and the parentheses.
+An italic English cell beside an Agebon phrase or sentence (an **Agebon**, **Example**, or **Form** column) is that phrase's free English, on grammar pages and [cheat sheets](grammar-docs.md#cheat-sheets) alike: `*sentence*` plus at most one (note) after it, alternatives with ` / `, and parentheses inside only as [above](#inside-parentheses). Several examples in one cell are split by ` · ` or `; `, each with its own note. A single word's senses (`*here*, *this*`), a template, a cell not in italics (a description), and an English column left of the Agebon (a lookup keyed by English job) are not free English. `lint:agebon` checks the shape and the parentheses.
 
 | Example | Gloss |
 |---------|-------|
@@ -558,29 +558,29 @@ Foreign `<>` roots: use the donor sense as the English label (`g-big`).
 
 | Avoid | Why | Prefer |
 |-------|-----|--------|
-| `z-ugobo(speaker)-n` | Egabon letters + redundant ending | `z-speaker` |
+| `z-ugobo(speaker)-n` | Agebon letters + redundant ending | `z-speaker` |
 | `z-grace@` / `g-volume~` / `z-grace-proper` | Writing glyphs or the word *proper* in the gloss | `z-Uzozen` / `g-sleepy` |
-| `zam` / `hal` / `am` as the whole morph | Egabon letters where the job belongs | `z-and.open` / `h-only-when` / `including.open` |
+| `zam` / `hal` / `am` as the whole morph | Agebon letters where the job belongs | `z-and.open` / `h-only-when` / `including.open` |
 | `z-microphone-l` | Ending already chose the literal root | `z-microphone` |
 | `z-microphone→speaker` | Etymology chain | `z-speaker` |
 | `v-see` for `vawebol` with no `v:see` cell | Invented PoS lemma | Fill `english_by_pos` first, then morph follows |
 | Morph line that is only idiomatic English | Confuses layers | Morph + separate quoted free line |
-| Morph gloss that matches the quoted English | Redundant; the quote already is the sense | Omit that line when `lint:egabon` agrees ([example block](#example-block)). Keep it when it unpacks **`x`**, PoS, several words, … |
-| `gloss:` + per-token backticks inside a code fence | Markdown renders raw; Egabon and gloss look the same | Blockquote; backticks on Egabon only |
+| Morph gloss that matches the quoted English | Redundant; the quote already is the sense | Omit that line when `lint:agebon` agrees ([example block](#example-block)). Keep it when it unpacks **`x`**, PoS, several words, … |
+| `gloss:` + per-token backticks inside a code fence | Markdown renders raw; Agebon and gloss look the same | Blockquote; backticks on Agebon only |
 | Free English packed with cast letters / join footnotes / value endings | Duplicates morph; not “what you’d say” | Idiomatic sentence; a [note](#note-required) only for what a careful reader needs |
 | A note inside the quotes, or a second free English line | Two places for the same job | `"sentence."` (note) |
-| English *he* / *she* inside morph for **-r** | Hides Egabon binding | `z-←Antecedent` |
+| English *he* / *she* inside morph for **-r** | Hides Agebon binding | `z-←Antecedent` |
 | New synonym every example for the same overlay | Unstable inventory | Fixed labels (`witnessed`, `MAY`, …) |
 
 ## Checklist
 
-1. English senses only — no Egabon root spellings, except [mention / opaque interiors](#span-interiors). Verb senses are the uninflected lemma (`dance`, not `dancing`).
+1. English senses only — no Agebon root spellings, except [mention / opaque interiors](#span-interiors). Verb senses are the uninflected lemma (`dance`, not `dancing`).
 2. No `→` etymology chains.
 3. No **-l** / **-m** / **-n**, and no **`@`** / **`~`**, when they only selected the sense-root. Named **-n** is the English name (`z-Uzozen`), not `-n`, `@`, or `-proper`.
 4. Compounds / stance / role / span `x` pieces are always hyphenated segments (`y-Unodu-x-Ezalan`). Do not fuse a name into one unsegmented English label.
 5. **-r** uses `←…` (no trailing `-r`); **-x** stays as `-x`. Resume of a house name is `z-←Uzozen`, not `z-r`. Fill-ask is `z-wh`, not `z-ar`. `wh` is role-neutral (*who*, *what*, *where*, …), so the gloss never contradicts the translation; `wh-else` for **u**.
-6. Multi-word units are in [phrase brackets](#phrase-brackets), nested by attachment; packages use labeled brackets (`NAME[…]`, `CITE[…]`, `SCOPE[…]`). The line [round-trips](#round-trip) to the exact Egabon.
-7. Free English is on its own **quoted** line (or grammar-table Gloss column, or italic in a checkpoint): a loose sentence (or [alternatives or dialogue turns](#inside-parentheses)) plus at most one note after the closing quote, required when the section teaches the marking the sentence drops ([sentence and note](#free-english-sentence-and-note)). Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line only when `lint:egabon` treats parser output as redundant with that loose line).
+6. Multi-word units are in [phrase brackets](#phrase-brackets), nested by attachment; packages use labeled brackets (`NAME[…]`, `CITE[…]`, `SCOPE[…]`). The line [round-trips](#round-trip) to the exact Agebon.
+7. Free English is on its own **quoted** line (or grammar-table Gloss column, or italic in a checkpoint): a loose sentence (or [alternatives or dialogue turns](#inside-parentheses)) plus at most one note after the closing quote, required when the section teaches the marking the sentence drops ([sentence and note](#free-english-sentence-and-note)). Example blocks follow [example block layout](#example-block) (blockquote; skip a morph line only when `lint:agebon` treats parser output as redundant with that loose line).
 
 ## See also
 

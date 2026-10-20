@@ -1,13 +1,13 @@
 /**
- * English → Egabon helper: per-clause root and grammar suggestions for English input.
+ * English → Agebon helper: per-clause root and grammar suggestions for English input.
  *
  *   node scripts/english-helper.mjs 'My sister could not come.'
  *   node scripts/english-helper.mjs 'He saw/n the saw.' --stage beginner
  *   node scripts/english-helper.mjs 'Azawan walks.' --json
  *   node scripts/english-helper.mjs 'Azawan walks.' --llm-prompt
- *   node scripts/english-helper.mjs 'Azawan walks.' --verify '<egabon draft>'
+ *   node scripts/english-helper.mjs 'Azawan walks.' --verify '<agebon draft>'
  *
- * Suggestion-only: it never writes the Egabon sentence. A word with several jobs lists them
+ * Suggestion-only: it never writes the Agebon sentence. A word with several jobs lists them
  * all; pick by meaning and open the linked section. Force a reading with `word/n`, `/v`,
  * `/adj` or `/adv`. Words with no suggestion are listed as gaps with the forms tried.
  * `--llm-prompt` wraps the suggestions in a prompt for an LLM (llm-prompt.ts); `--verify` puts
@@ -28,8 +28,8 @@ function usage(message: string, code = 2): never {
       message,
       `usage: english-helper.mjs '<english>' ['<english>'…] [--json] [--stage ${BANDS.join("|")}]`,
       "       english-helper.mjs '<english>' ['<english>'…] --llm-prompt [--examples N] [--stage …]",
-      "       english-helper.mjs '<english>' --verify '<egabon draft>' ['<english>' --verify '<draft>'…] [--json]",
-      "  --llm-prompt  print an English → Egabon prompt for an LLM (several inputs make one numbered prompt)",
+      "       english-helper.mjs '<english>' --verify '<agebon draft>' ['<english>' --verify '<draft>'…] [--json]",
+      "  --llm-prompt  print an English → Agebon prompt for an LLM (several inputs make one numbered prompt)",
       "  --examples N  with --llm-prompt: how many doc examples to show (default 6; 0 for none)",
       "  --verify      parse a draft, list words the lexicon does not know, print its morph gloss, and line up each word's sense with the English",
     ].join("\n"),
@@ -57,9 +57,9 @@ for (let i = 0; i < args.length; i++) {
     if (!Number.isInteger(examples) || examples < 0) usage("--examples needs a whole number");
   } else if (arg === "--verify") {
     const draft = args[++i];
-    if (!draft) usage("--verify needs an Egabon draft");
+    if (!draft) usage("--verify needs an Agebon draft");
     drafts.push(draft);
-  } else if (arg === "--help" || arg === "-h") usage("Suggest Egabon roots and grammar sections for English.", 0);
+  } else if (arg === "--help" || arg === "-h") usage("Suggest Agebon roots and grammar sections for English.", 0);
   else if (arg.startsWith("--")) usage(`unknown flag ${arg}`);
   else inputs.push(arg);
 }

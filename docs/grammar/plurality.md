@@ -1,6 +1,6 @@
 # Plurality
 
-English *they* and *the Smiths* often mean a named person plus people around them, not a counted list. Egabon marks that **associative group** with optional **-x** after the [word ending](word-endings.md).
+English *they* and *the Smiths* often mean a named person plus people around them, not a counted list. Agebon marks that **associative group** with optional **-x** after the [word ending](word-endings.md).
 
 ## Beginner {#beginner}
 
@@ -56,7 +56,7 @@ An extra noun takes **-x** the same way. Here the recipient is Olazun and associ
 
 **Compare with:** English *cats* can mean the kind in general. **-lx** means only a set in this situation.
 
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | **-lx** | indefinite group (a set in this situation), concrete | *some cats* (a set in this situation) |
 | **-mx** | indefinite group (a set in this situation), abstract | same grouping on a **-m** root |
@@ -67,7 +67,7 @@ An extra noun takes **-x** the same way. Here the recipient is Olazun and associ
 ### Person-role **-x** {#person-role-x}
 <a id="clusivity"></a>
 
-English *we* and *you* do not say whether the listener is in the group (the split between *we including you* and *we without you* is called **clusivity**). Egabon puts **-x** on the speaker and listener roots. It still adds associates, but who is in the group follows each root's place in the conversation. Speaker **-x** is the speaker plus that person’s people, without the listener. Listener **-x** is the **address set**: everyone you are talking to right now, and not the speaker.
+English *we* and *you* do not say whether the listener is in the group (the split between *we including you* and *we without you* is called **clusivity**). Agebon puts **-x** on the speaker and listener roots. It still adds associates, but who is in the group follows each root's place in the conversation. Speaker **-x** is the speaker plus that person’s people, without the listener. Listener **-x** is the **address set**: everyone you are talking to right now, and not the speaker.
 
 Inclusive *you and I* is **`aha`** ([special pronouns](pronouns.md#special-pronouns)). With **-x** it adds the speaker’s and listener’s shared people (below).
 
@@ -116,7 +116,7 @@ The same roots take the role letter of the slot they fill. As a direct object th
 > "Uzozen sees us." (you and I)
 
 <!-- cheat-sheet: people-pointing -->
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | **`amunx`** | speaker plus that person’s people (listener not assumed); `zamunx` as subject, `damunx` as object | *I and my people* (not you) |
 | **`ehonx`** | all current addressees; `zehonx` as subject, `dehonx` as object | *you all* |
@@ -142,7 +142,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *ant* | `unezal` | 🐜 |
 | *basket* | `abowal` | 🧺 |
@@ -151,7 +151,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -167,7 +167,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *drink* | `vodudal` |
 | *knife* | `anewul` |
 
-#### English → Egabon {#beginner-english-to-egabon}
+#### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *Uzozen and associates sit.*
 
@@ -221,7 +221,7 @@ z-Uzozen | d-wine | v-drink . z-←agent.same-x | v-sit
 z-listener-x | v-sit
 :::
 
-#### Egabon → English {#beginner-egabon-to-english}
+#### Agebon → English {#beginner-agebon-to-english}
 
 **1.** `zuhelanx dazal vawebol.`
 
@@ -310,7 +310,7 @@ z-interlocutors | v-sit
 ### Associate-set resolution
 <a id="associate-resolution"></a>
 
-English *Uzozen and them* does not say who belongs. Egabon **-x** is the same: who counts is **open** unless you say. When the list matters, name the members with a [join](joins.md). When it does not, the listener guesses in this order: a group already named in the conversation, then the obvious group in the scene (this meeting, this household).
+English *Uzozen and them* does not say who belongs. Agebon **-x** is the same: who counts is **open** unless you say. When the list matters, name the members with a [join](joins.md). When it does not, the listener guesses in this order: a group already named in the conversation, then the obvious group in the scene (this meeting, this household).
 
 > `zuzozenx vewurel.`
 >
@@ -349,7 +349,7 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 >
 > "They sing as one performance." (Uzozen and associates)
 
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | subject set + singular `/v/` | how they act is left open | *they walk* (together, separately, or don’t care) |
 | subject set + `/v/`…**-x** | collective: one shared act | *they walk as one outing* |
@@ -357,7 +357,7 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 | group-kind singular (*the family*) + `/v/`…**-x** | the group acts as one unit | *the family walks as one unit* |
 
 <!-- cheat-sheet: people-pointing -->
-| Egabon | English |
+| Agebon | English |
 |--------|---------|
 | `zuzozenx vezuyol` | *Uzozen and associates sing* (together or each, or don’t care) |
 | `zuzozenx vezuyolx` | *they sing as one performance* |
@@ -393,7 +393,7 @@ English *the boxes are heavy* can mean each box or the pile. Put **-x** on the *
 >
 > "The file-boxes are heavy as a pile." (but not individually)
 
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | plural noun or list + singular `/ɡ/` | each member, or don’t care | *the boxes are heavy* |
 | plural noun or list + `/ɡ/`…**-x** | collective: the set as one pile | *heavy as a pile* |
@@ -401,7 +401,7 @@ English *the boxes are heavy* can mean each box or the pile. Put **-x** on the *
 After nouns joined into a list with **`a`** ([joins](joins.md)), one plain `/ɡ/` word applies to **each member**. With **-x**, it applies to the list **as one unit**.
 
 <!-- cheat-sheet: people-pointing -->
-| Egabon | English |
+| Agebon | English |
 |--------|---------|
 | `zavogal zulol zal garolom` | *the file-box and the tool are each heavy* |
 | `zavogal zulol zal garolomx` | *the file-box and the tool are heavy together* (collective) |
@@ -427,7 +427,7 @@ To call a group at the start of a turn, put **-x** on the call word (the vocativ
 >
 > "Hey, cats!"
 
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | **-nx** | a kind or a title as the group | *hey, kids*; *Team Alpha* |
 | **-rx** | prior addressee and associates | *hey, you (that one) and associates* |
@@ -460,14 +460,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *sheet-music* | `ehorel` | 🎼 |
 | *heavy* | `arolom` | 🪨 from *rock* |
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -480,7 +480,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sing* | `vezuyol` |
 | *see* | `vawebol` |
 
-#### English → Egabon {#intermediate-english-to-egabon}
+#### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *They sing as one performance.* (Uzozen and associates)
 
@@ -530,7 +530,7 @@ y-listener-x
 z-Uhelan-x | except | z-listener | v-sing
 :::
 
-#### Egabon → English {#intermediate-egabon-to-english}
+#### Agebon → English {#intermediate-agebon-to-english}
 
 **1.** `zavayal vezuyolx.`
 

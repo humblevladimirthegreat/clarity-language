@@ -1,7 +1,7 @@
 /**
  * Text a page derives from a spelling without being one: whole-line IPA (`/ ˈzʉ.zä.zo̞n /`),
  * italic syllable hints (*o-wo-re-lul*), and a word spelled aloud inline (`` `egazo` is `e` `ga` … ``).
- * The retie moves the Egabon; this pass makes each copy follow its word, using the page's own
+ * The retie moves the Agebon; this pass makes each copy follow its word, using the page's own
  * word changes, so text that never spelled a moved word is left alone.
  */
 import { toPhonemeWord } from "../tts/phonemes.js";

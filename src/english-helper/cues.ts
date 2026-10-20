@@ -13,7 +13,7 @@ export type GrammarJob = {
   cue: string;
   /** The row's English cell: what the job is for. */
   itch: string;
-  /** The row's Egabon cell, forms joined with ` / `. */
+  /** The row's Agebon cell, forms joined with ` / `. */
   form: string;
   /** The section that teaches the job, `page.md#id` relative to docs/grammar. */
   link: string;

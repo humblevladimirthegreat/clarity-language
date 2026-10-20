@@ -36,7 +36,7 @@ Library-first multi-stage parser for CLI checks, fixtures that lock the grammar 
 ## Pipeline
 
 ```text
-Egabon text
+Agebon text
     │
     ▼
 ┌──────────────────────────────────────┐

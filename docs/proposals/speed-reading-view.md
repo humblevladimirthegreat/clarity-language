@@ -4,7 +4,7 @@ Status: idea. Not design authority; fold into grammar / meta docs, then drop. Bu
 
 ## Problem
 
-A reader looking for one passage on a long page (*where did they talk about the dog?*) has to read line by line. Egabon words are hard to tell apart at a glance: almost every root is five letters with alternating vowels and consonants, so `zudozol` and `zuzozel` have the same outline. Nothing on the page stands out except the text itself.
+A reader looking for one passage on a long page (*where did they talk about the dog?*) has to read line by line. Agebon words are hard to tell apart at a glance: almost every root is five letters with alternating vowels and consonants, so `zudozol` and `zuzozel` have the same outline. Nothing on the page stands out except the text itself.
 
 The fix aims at **scannability** (finding a passage), not reading speed.
 

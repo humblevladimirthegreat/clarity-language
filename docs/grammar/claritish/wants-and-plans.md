@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-*I want to visit in March* and *I'm visiting in March* come out sounding like the same promise, so a wish said out loud quietly starts owing somebody something. *I will* hides the opposite question: whether you have the backups, the steps, or only a direction. Egabon keeps the wish and the intention in separate words, and the ending on each one says how much weight it carries.
+*I want to visit in March* and *I'm visiting in March* come out sounding like the same promise, so a wish said out loud quietly starts owing somebody something. *I will* hides the opposite question: whether you have the backups, the steps, or only a direction. Agebon keeps the wish and the intention in separate words, and the ending on each one says how much weight it carries.
 
 ## The forms {#forms}
 

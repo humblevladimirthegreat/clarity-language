@@ -1,10 +1,10 @@
 /**
- * English that copies an Egabon spelling follows the retie of that spelling:
+ * English that copies an Agebon spelling follows the retie of that spelling:
  * a named **-n** word's English name (`zululon` → *Ululon*) and a quoted payload
  * (`d["odoga"]` → *“odoga”*, `d-CITE["odoga"]`). Only prose is touched;
  * code was already retied.
  */
-import { ENGLISH_IN_CODE } from "../lint/egabon-docs.js";
+import { ENGLISH_IN_CODE } from "../lint/agebon-docs.js";
 import type { ClassifyTables } from "../parse/classify.js";
 import { morphGlossLine } from "../parse/morph-gloss.js";
 import { parseWord } from "../parse/word.js";
@@ -15,7 +15,7 @@ import type { RetieChange } from "./tokens.js";
 export type FollowPairs = {
   /** Capitalised English name → new name (`Ululon` → `Alahen`). */
   names: Map<string, string>;
-  /** Lowercase Egabon word → new spelling, for quoted payloads. */
+  /** Lowercase Agebon word → new spelling, for quoted payloads. */
   words: Map<string, string>;
   /**
    * House-cast names (`Uzazon` → `Uzozen`), from the closed roots rather than a page's code. They also follow

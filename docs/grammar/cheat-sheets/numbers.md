@@ -104,7 +104,7 @@ Drop every digit and the word says what kind of number, not its value. With **-r
 | [**`ro`**](../numbers.md#digitless) | `…_` | a digit-string or label | I |
 
 <!-- cheat-sheet: numbers -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`g=+` (`grar`)](../numbers.md#how-many) | fill a count or amount | *How many?* / *How much?* | I |
 | [`g=#` (`grer`)](../numbers.md#how-many) | fill a place in order | *Which place?* | I |
@@ -247,7 +247,7 @@ Put the amount on the unit's noun as `/ɡ/`. Each unit is the abstract **-m** of
 | [heat grade (not kelvin)](../numbers-applied.md#stock-units) | `avere` | `baverem g+37` | `averel` *thermometer* | I |
 
 <!-- cheat-sheet: numbers -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`bezerem g+2`](../numbers-applied.md#measure-phrases) | extra noun (`/b/`) | *two meters* | I |
 | [`zazerem g+3`; `deberom g+5`](../numbers-applied.md#measure-phrases) | subject / object / … | *three seconds*; *five grams* | I |
@@ -265,7 +265,7 @@ Quantities themselves (*heavy*, *duration*) are ordinary roots, not units.
 Write both ends with the hook `al`: `A al B`. It reads as *through* when both ends are the same kind of number with digits. `ul` excludes the end after it.
 
 <!-- cheat-sheet: numbers -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`zrarel al zraval`](../numbers-applied.md#ranges) | both ends in | *3 to 5* | I |
 | [`zrarel ul zraval`](../numbers-applied.md#ranges) | 5 left out | *3 up to but not including 5* | I |
@@ -284,7 +284,7 @@ Write both ends with the hook `al`: `A al B`. It reads as *through* when both en
 To limit to one end, make the other end infinity:
 
 <!-- cheat-sheet: numbers -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`zraval al zrabal`](../numbers-applied.md#rays) | 5 up to +∞ | *5 or more* | A |
 | [`zrabal ul zraval`](../numbers-applied.md#rays) | 5 left out | *more than 5* | A |
@@ -295,7 +295,7 @@ To limit to one end, make the other end infinity:
 Ranks take `grebal` (last) and `grebul` (first) as ends: `zredul al zrebal` is *2nd through last*. A named band uses **-n**, and **-r** stands for a value in it.
 
 <!-- cheat-sheet: numbers -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`z+13 an z+19`](../numbers-applied.md#named-ranges) | a named band | *the teens* | A |
 | [`zrarel ar zraval`](../numbers-applied.md#named-ranges) | some value in the band | *some value from 3 to 5* | A |
@@ -306,7 +306,7 @@ Ranks take `grebal` (last) and `grebul` (first) as ends: `zredul al zrebal` is *
 End a count with **`yo`** for a percent, **`yu`** for percentage points. A minus number right after a plain noun is a fraction.
 
 <!-- cheat-sheet: numbers -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [**`yo`**](../numbers-applied.md#percent-and-percentage-points) | percent of a whole | `25` in `25%`; those digits ÷ 100 | I |
 | [**`yu`**](../numbers-applied.md#percent-and-percentage-points) | percentage points | `2` in `+2%*`; those digits ÷ 100 | I |

@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-*I've decided* sounds final, and *I'll try* sounds like a hedge. Neither one says how settled you are. In Egabon, the ending on the decision or try word says it.
+*I've decided* sounds final, and *I'll try* sounds like a hedge. Neither one says how settled you are. In Agebon, the ending on the decision or try word says it.
 
 ## The forms {#forms}
 

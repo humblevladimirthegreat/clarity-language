@@ -1,7 +1,7 @@
 # Predication (classification and identity)
 <a id="predication"></a>
 
-English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Uzozen is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Olazun is Uzozen*): one person under two labels, not a category. Egabon uses a different word pattern for each.
+English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Uzozen is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Olazun is Uzozen*): one person under two labels, not a category. Agebon uses a different word pattern for each.
 
 ## Beginner {#beginner}
 
@@ -140,7 +140,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *police* | `obayel` | 👮 |
 | *page* | `ebogel` | 📄 |
@@ -150,7 +150,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -163,7 +163,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *run* | `varuvel` |
 | *see* | `vawebol` |
 
-#### English → Egabon {#beginner-english-to-egabon}
+#### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *Uzozen is a guard.*
 
@@ -213,7 +213,7 @@ z-page
 z-Olazun | g-peek
 :::
 
-#### Egabon → English {#beginner-egabon-to-english}
+#### Agebon → English {#beginner-agebon-to-english}
 
 **1.** `zuzozen gobayel.`
 
@@ -310,7 +310,7 @@ You already put a kind on `/ɡ/` after the name (*Uzozen is a dog*). The extra c
 > "Uzozen is not a dog."
 
 <!-- cheat-sheet: word-shape-clause -->
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | `/w/` hedge before the classifying `/ɡ/` | soft / hedged class | *Uzozen is something of a dog* / *a dog, sort of* |
 | `zuzozen gudozol hual` | characterizing / habitual | *Uzozen is always a dog* |
@@ -342,13 +342,13 @@ The `/ɡ/` word takes the verb's place in the [usual order](speech-moves.md#act-
 
 Beginner already used **`gugol`** (*is the same as*). Its other ending finishes the map.
 
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | **-l** | stand behind the match (closed) | *is* (the same as) |
 | **-m** | leave the match open | *same for our purposes* / *basically* |
 
 <!-- cheat-sheet: word-shape-clause -->
-| Egabon | English |
+| Agebon | English |
 |---------|---------|
 | `zolazun gugol buzozen` | *Olazun is Uzozen* (the same person) |
 | `zolazun gugom buzozen` | *Olazun is basically Uzozen* |
@@ -370,7 +370,7 @@ English *Olazun is angry* can mean one outburst or the kind of person Olazun is.
 A label with no scope vowel says nothing about how far it reaches. Use one when that reach matters, the way you would add *this time* or *a teacher* in English.
 
 <!-- cheat-sheet: word-shape-clause -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`tha`** | this episode: this stretch of doing | *angry this time*, *lied (this once)* | **a** ≈ add (one instance added) |
 | **`the`** | a practiced role: the office they inhabit | *a teacher*, *lying as their craft* | **e** ≈ order (a sequence of practice) |
@@ -462,7 +462,7 @@ A role compound carries one seam, so it takes this scope or the [ability](intent
 The four scope vowels also combine in pairs, the same pairs that [joins](joins.md) and [hooks](hooks.md) use. A pair that starts with **`u`** sets the second vowel's reach aside (*except this episode*, *except this pair*, *not in that role*). The other pairs have fixed meanings (*on*, *using*, *toward*); do not read them as the first vowel's meaning followed by the second's.
 
 <!-- cheat-sheet: word-shape-clause -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`thao`** | this episode **on** this pair | *teacher this time, to Olazun* | **ao** ≈ on |
 | **`thae`** | **using** the role as a means | *using teacher (as a tool)* | **ae** ≈ using |
@@ -517,7 +517,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *frame* | `uvogal` | 🖼️ |
 | *anxious* | `anumul` | 😰 |
@@ -526,7 +526,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -538,7 +538,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *lie* | `valamul` |
 | *see* | `vawebol` |
 
-#### English → Egabon {#intermediate-english-to-egabon}
+#### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *Uzozen is not a guard.*
 
@@ -588,7 +588,7 @@ z-Uzozen | g-agent-x-teach-th-role
 z-Uhelan | [v-lie-th-pair | b-Olazun]
 :::
 
-#### Egabon → English {#intermediate-egabon-to-english}
+#### Agebon → English {#intermediate-agebon-to-english}
 
 **1.** `zolazun gagayul hual.`
 

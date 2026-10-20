@@ -6,7 +6,7 @@
  */
 export { isPlaceRootShape } from "./root-shape.ts";
 
-/** CMU phoneme → Egabon letters. Seam letters (`x`, `th`) never occur, and diphthongs keep their glide. */
+/** CMU phoneme → Agebon letters. Seam letters (`x`, `th`) never occur, and diphthongs keep their glide. */
 const PLACE_MAP: Record<string, string> = {
   P: "b", B: "b", T: "d", D: "d", K: "g", G: "g", F: "v", V: "v",
   S: "z", Z: "z", SH: "z", ZH: "z", CH: "z", JH: "z", TH: "d", DH: "d",

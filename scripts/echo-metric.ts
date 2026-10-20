@@ -19,7 +19,7 @@ const PRON = 'tmp/echo-pron/pron.csv';
 const OUT = 'tmp/echo-pron';
 
 /** One tmp/echo-pron/pron.csv row (scripts/echo-pronunciation.ts). */
-type PronRow = { emoji: string; concrete: string; lookup: string; cmu: string; egabon: string; status: string };
+type PronRow = { emoji: string; concrete: string; lookup: string; cmu: string; agebon: string; status: string };
 
 // ---- CLI ----
 if (import.meta.main) {
@@ -27,11 +27,11 @@ if (import.meta.main) {
   const roots = new Map(parseCsv(readFileSync('data/lexicon-published.csv', 'utf8')).rows.map((r) => [r.emoji, r.root]));
   const scored = pron.map((r) => ({ ...r, root: roots.get(r.emoji)!, score: echo(roots.get(r.emoji)!, r.cmu) }))
     .sort((a, b) => a.score - b.score);
-  writeFileSync(`${OUT}/metric.csv`, serializeCsv(['emoji', 'concrete', 'root', 'egabon', 'score'], scored.map((r) => ({ ...r, score: r.score.toFixed(3) }))));
+  writeFileSync(`${OUT}/metric.csv`, serializeCsv(['emoji', 'concrete', 'root', 'agebon', 'score'], scored.map((r) => ({ ...r, score: r.score.toFixed(3) }))));
 
   const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / (xs.length || 1);
   const band = (lo: number, hi: number) => scored.filter((r) => r.score >= lo && r.score < hi).length;
-  const line = (r: (typeof scored)[number]) => `| ${r.emoji} | ${r.concrete} | \`${r.root}\` | ${r.egabon} | ${r.score.toFixed(2)} |`;
+  const line = (r: (typeof scored)[number]) => `| ${r.emoji} | ${r.concrete} | \`${r.root}\` | ${r.agebon} | ${r.score.toFixed(2)} |`;
   const table = ['| | concrete | root | sounds | echo |', '|---|---|---|---|---|'];
   writeFileSync(`${OUT}/metric.md`, [
     '# Echo metric (pronunciation)', '',
@@ -51,7 +51,7 @@ if (import.meta.main) {
     const traps = ['knife', 'thumb', 'laugh', 'hippopotamus', 'knot', 'wrench', 'lamb', 'ghost', 'phone', 'writing'];
     const picked = new Set(scored.filter((r) => traps.includes(r.concrete)));
     for (let i = 0; picked.size < 50; i++) picked.add(scored[Math.round((i * 37) % scored.length)]!);
-    writeFileSync(RATINGS, serializeCsv(['emoji', 'concrete', 'root', 'egabon', 'rating', 'note'], [...picked].sort((a, b) => a.concrete.localeCompare(b.concrete))
+    writeFileSync(RATINGS, serializeCsv(['emoji', 'concrete', 'root', 'agebon', 'rating', 'note'], [...picked].sort((a, b) => a.concrete.localeCompare(b.concrete))
       .map((r) => ({ ...r, rating: '', note: '' }))));
     console.log(`drafted ${RATINGS}: fill rating 0–3 (0 = no echo, 3 = obvious echo)`);
   }

@@ -11,7 +11,7 @@ A quick look at [dependents](../dependents.md) and [relations](../relations.md) 
 
 ## A sentence that fills a slot {#dependents}
 
-Egabon has no *who / that / which*. For a noun, write [two sentences](../dependents.md#which-noun). For a whole clause in a role, end the main sentence on a **stand-in** and write the clause right after it. Do not open that clause with `/y/`; it names its own `/z/`.
+Agebon has no *who / that / which*. For a noun, write [two sentences](../dependents.md#which-noun). For a whole clause in a role, end the main sentence on a **stand-in** and write the clause right after it. Do not open that clause with `/y/`; it names its own `/z/`.
 
 ### Stand-ins {#stand-ins}
 
@@ -61,7 +61,7 @@ Other role letters work the same way: `barth` after a pole (*because of that*), 
 **-rn** (or **-n** after two vowels) makes a fixed word for the kind of content. On `/v/` these verbs take the next sentence as their content.
 
 <!-- cheat-sheet: linking-clauses -->
-| Egabon | Takes | English | Stage |
+| Agebon | Takes | English | Stage |
 |--------|-------|---------|-------|
 | [**`varn`**](../dependents.md#stand-in-roles) | a statement | *state…* | A |
 | [**`vorn`**](../dependents.md#stand-in-roles) | a question | *question…* | A |
@@ -85,7 +85,7 @@ Other role letters work the same way: `barth` after a pole (*because of that*), 
 A **pole** names the link and takes the stand-in `barl` as its `/b/`. Keep the pair last, then the dependent sentence. Poles use the abstract **-m**. *Because* and *if* are stance, so `/th/`; the rest describe the event, so `/h/`. A noun in `/b/` in place of `barl` works too (*despite Olazun*); on a noun, swap the letter to `/ɡ/`.
 
 <!-- cheat-sheet: linking-clauses -->
-| Egabon | English | Stage |
+| Agebon | English | Stage |
 |--------|---------|-------|
 | [**`thavem barl`**](../dependents.md#poles) | *because* | B |
 | [**`thoyem barl`**](../dependents.md#poles) | *if* | B |
@@ -129,7 +129,7 @@ On a noun the poles are `guwem` *during*, `gabam` *before*, `ganom` *after*, `go
 A **linker** is an `/x/` word that opens the next sentence under the same speech act, with no act word of its own. Linkers use the abstract **-m**. Any other `/x/` word sets the [topic](../pronouns.md#topic). A linker and a topic word do not share a sentence.
 
 <!-- cheat-sheet: linking-clauses -->
-| English | Egabon | Stage |
+| English | Agebon | Stage |
 |---------|--------|-------|
 | [*therefore*](../dependents.md#continue-x) | **`xodum`** | B |
 | [*however*](../dependents.md#sentence-linkers) | **`xezom`** | I |
@@ -141,7 +141,7 @@ A **linker** is an `/x/` word that opens the next sentence under the same speech
 Three take **-l** for a firm link.
 
 <!-- cheat-sheet: linking-clauses -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [**`xodul`**](../dependents.md#sentence-linkers) | the next claim follows necessarily | *it follows that* | I |
 | [**`xezol`**](../dependents.md#sentence-linkers) | the contrast stands | *nevertheless* / *even so* | I |
@@ -225,7 +225,7 @@ English *of* names how one noun sits toward another. The `/b/` is what comes aft
 Put the tie root on `/ɡ/` with **-m**, then the other person in `/b/`.
 
 <!-- cheat-sheet: linking-clauses -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [**`gumayam`** + `/b/`](../relations.md#social-relations) | companion of `/b/` | *friend of* | I |
 | [**`gugobem`** + `/b/`](../relations.md#social-relations) | the one `/b/` answers to | *boss of* | I |
@@ -243,14 +243,14 @@ Put the tie root on `/ɡ/` with **-m**, then the other person in `/b/`.
 Whose-now is speech-now unless you move it. `huhum` claims the moment as real; `huram` only holds a place. `/h/` covers the clause, `/ɡ/` one noun, `/w/` the adjective right after, `/th/` the stances. A clause takes one pair; to keep the same whose-now, repeat the word with **-r** and no `/b/`.
 
 <!-- cheat-sheet: linking-clauses -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [**`huhum` / `guhum` / `wuhum`**](../relations.md#as-of) | a real now | *as of* (dated ledger) | A |
 | [**`huram` / `guram` / `wuram`**](../relations.md#as-of) | a placeholder now | *as of* (placeholder now) | A |
 | [**`huhur` / `hurar`**](../relations.md#as-of) | resume that whose-now | *same books* | A |
 
 <!-- cheat-sheet: linking-clauses -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [**`thuhum`**](../relations.md#stance-as-of) | stances as of a real now | *I thought / I felt (then)* | A |
 | [**`thuram`**](../relations.md#stance-as-of) | stances as of a now you are not claiming | *I would think / I'd feel* | A |

@@ -8,7 +8,7 @@ You can ask for *yes* or *no*, or you can leave a blank for *who* / *what* (a **
 
 ### Ask (`yol` / `yom`) {#question}
 
-A **question** asks for a reply instead of stating a fact. English marks it by moving words around (*Uzozen walks* → *Does Uzozen walk?*). Egabon marks it with the act word **`yol`** at the start of the turn, followed by the body (subject, verb, and so on). Every word keeps the form it would have in a statement. Only the usual order changes: the verb comes [second](speech-moves.md#act-word-order), right after the subject.
+A **question** asks for a reply instead of stating a fact. English marks it by moving words around (*Uzozen walks* → *Does Uzozen walk?*). Agebon marks it with the act word **`yol`** at the start of the turn, followed by the body (subject, verb, and so on). Every word keeps the form it would have in a statement. Only the usual order changes: the verb comes [second](speech-moves.md#act-word-order), right after the subject.
 
 Soft **`yom`** asks the same question more gently (wondering rather than pressing). End a written question with a period, like any sentence.
 
@@ -79,7 +79,7 @@ If the reply is just the fill, not a full sentence, write it as a [citation](wor
 >
 > "Uzozen."
 
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** (`zar` · `var` · `xar`) | ask for who or what | *Who/what?* / *What happened?* | **a** ≈ add |
 | **u** (`zur` · `vur` · `xur`) | ask for who or what else | *Who else?* / *What else?* | **u** ≈ undo |
@@ -164,7 +164,7 @@ When a sentence body follows *yes*, write **`yael`** then the body. You do not a
 
 A turn holds one polar word. Do not stack two, and do not put one before an act word: an answer followed by a question is two turns.
 
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 <!-- cheat-sheet: talking -->
 |--------|-----|---------|-----|
 | **`yael`** / soft **`yaem`** | the claim matches, or *got it* | *yes* / *true* · *I think so* | **a** ≈ add + **e** ≈ order (the claim lines up) |
@@ -241,7 +241,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *umbrella* | `omobul` | ☂️ |
 | *coat* | `ogobal` | 🧥 |
@@ -251,7 +251,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -261,7 +261,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *eraser* | `urewul` |
 | *book* | `ugul` |
 
-#### English → Egabon {#beginner-english-to-egabon}
+#### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *Does Uzozen find the key?* (with the rising tone)
 
@@ -317,7 +317,7 @@ z-Uhelan | v-write . y-question | y-yes
 y-no
 :::
 
-#### Egabon → English {#beginner-egabon-to-english}
+#### Agebon → English {#beginner-agebon-to-english}
 
 **1.** `yom zuhelan vawebol dogobal.`
 
@@ -407,7 +407,7 @@ The statement stays a statement; the tag **`yol yael.`** is its own short questi
 
 Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), and *sure* (**`yaol`**). The rest of the map is *reject this option*, *reject the question itself*, and *decline to answer*. The first vowel gives the family (**`a`** add: accept, **`u`** undo, **`o`** one). The second vowel says what you are answering (**`e`** the claim or the order, **`o`** this option, **`a`** the question's own premise).
 
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ae`** (`yael`) | the claim matches, or *got it*; comply with an order | *true* · *will do* | **a** ≈ add + **e** ≈ order (judged in line) |
 | **`ue`** (`yuel`) | flip / mismatch; refuse an order | *false* · *I won't* | **u** ≈ undo + **e** ≈ order (judged out of line) |
@@ -539,7 +539,7 @@ After a request or a suggestion, **`yol yaol.`** asks *okay?*: will they take it
 >
 > "Uzozen walked, or am I wrong?"
 
-| Egabon | Use | English |
+| Agebon | Use | English |
 <!-- cheat-sheet: talking -->
 |--------|-----|---------|
 | `yol yael.` | ask them to confirm a claim | *…, right?* |
@@ -596,7 +596,7 @@ To ask what something is **like** (*What color is it?*, *What kind of dog?*), pu
 >
 > "Big."
 
-| Egabon | English |
+| Agebon | English |
 <!-- cheat-sheet: talking -->
 |--------|---------|
 | **`gar`** | *What is it like?* / *What kind?* |
@@ -615,7 +615,7 @@ To ask *when?* / *in what case?*, put the blank **`har`** in the `/h/` slot (or 
 >
 > "When does Uhelan walk?"
 
-| Egabon | English (statement, bare) | English (under question, bare) |
+| Agebon | English (statement, bare) | English (under question, bare) |
 |--------|---------------------------|--------------------------------|
 | **`har`** / **`war`** | *sometimes* | *When?* / *In what case?* |
 
@@ -637,7 +637,7 @@ To ask *where?*, write an [extra-noun hook](hooks.md#extra-noun) (a short word l
 >
 > "What does the dog sleep in?"
 
-| Egabon | English |
+| Agebon | English |
 <!-- cheat-sheet: talking -->
 |--------|---------|
 | **`ol bar`** | *Where (at)?* |
@@ -691,7 +691,7 @@ To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in
 >
 > "What does Uzozen walk for?"
 
-| Egabon | English |
+| Agebon | English |
 <!-- cheat-sheet: talking -->
 |--------|---------|
 | **`thavem bar`** | *Why?* (*because of what?*) |
@@ -702,7 +702,7 @@ To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in
 
 ### A blank inside a dependent {#blank-in-dependent}
 
-English puts *who* in different places in *Do you know who walks?* and *Who do you think walks?*. In the first, the inner clause asks; in the second, the main question asks. In Egabon the blank stays in the inner clause both times (it never moves to the front of the outer sentence), and the stand-in's vowel says which question it belongs to. **`dorl`** (*whether*) is itself question-like, so its blank belongs to it, and the outer **`yol`** is yes/no. **`darl`** (*that*) is statement-like and cannot ask, so its blank belongs to the outer **`yol`**.
+English puts *who* in different places in *Do you know who walks?* and *Who do you think walks?*. In the first, the inner clause asks; in the second, the main question asks. In Agebon the blank stays in the inner clause both times (it never moves to the front of the outer sentence), and the stand-in's vowel says which question it belongs to. **`dorl`** (*whether*) is itself question-like, so its blank belongs to it, and the outer **`yol`** is yes/no. **`darl`** (*that*) is statement-like and cannot ask, so its blank belongs to the outer **`yol`**.
 
 > `yol zehon vugum dorl zar vewurel.`
 >
@@ -774,7 +774,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *phone* | `ovewol` | 📱 |
 | *attest* | `vodol` | 👁️‍🗨️ |
@@ -782,7 +782,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -798,7 +798,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *walk* | `vewurel` |
 | *sleep* | `vezuvol` |
 
-#### English → Egabon {#intermediate-english-to-egabon}
+#### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *Didn’t Uzozen tell?* *True, Uzozen didn’t.* (confirm the negative)
 
@@ -848,7 +848,7 @@ y-question | z-listener | v-think | d-that-clause | z-wh | v-lie
 y-request | v-attest | z-listener . y-question | y-sure
 :::
 
-#### Egabon → English {#intermediate-egabon-to-english}
+#### Agebon → English {#intermediate-agebon-to-english}
 
 **1.** `yol thavem bar zuzozen vewurel.`
 

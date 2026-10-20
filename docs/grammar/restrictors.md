@@ -60,7 +60,7 @@ To say *sometimes*, *anytime*, or *some other time* without naming the occasion 
 *Sometimes* is the usual English for `har`, alongside *never* and *always*. It says only that there is **some** such occasion, as *something* does on a [join](joins.md). It does not mean *often*.
 
 <!-- cheat-sheet: restrictors-spans -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`har`** | unspecified member of the time inventory | *sometimes* / *at some time* | **-r** names a member |
 | **`hor`** | unspecified member of a one-choice time menu | *anytime* (any one particular time, whichever you pick) | **o** ≈ one |
@@ -132,7 +132,7 @@ To say *never sleepy* or *sometimes sleepy*, limit only the adjective, not the w
 >
 > "Uhelan is sleepy at some other time."
 
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | `/h/` | limits the clause | *when the verb claim counts* | **h** starts *how* / *when* / *where* |
 | `/w/` | same map on the next adjective | *never sleepy* | **w** ≈ with (stuck to that host) |
@@ -144,7 +144,7 @@ To say *never sleepy* or *sometimes sleepy*, limit only the adjective, not the w
 To say *when it rains, among other times*, end the list with open **`ham`** instead of closed **`hal`**. Open **-m** leaves room for occasions you did not list, so the claim no longer means *only when*. Each listed occasion is one simple content word, and every occasion takes the same role letter as the restrictor (`/h/`, or `/w/` before an adjective). Bare **`ham`** is *never, as far as I know*. (cue: **a** ≈ add; **ua** ≈ undo then add.)
 
 <!-- cheat-sheet: restrictors-spans -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`hal` / `ham`** | listed times; empty list is *never* | *only when…* / *when…, among other occasions* · bare *never* / *never, as far as I know* | **a** ≈ add |
 | **`hual` / `huam`** | every time minus listed exceptions | *always except when…* · bare *always* / *usually* (*always, as far as I know*) | **u** ≈ undo then **a** ≈ add |
@@ -163,7 +163,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *swim* | `vazuvel` | 🏊 |
 | *sleepy* | `ozumol` | 😪 |
@@ -173,7 +173,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -183,7 +183,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *run* | `varuvel` |
 | *angry* | `unomul` |
 
-#### English → Egabon {#beginner-english-to-egabon}
+#### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *Uzozen swims only when it rains.*
 
@@ -233,7 +233,7 @@ z-Uhelan | [w-never | g-sleepy]
 z-Uzozen | v-swim | h-night | h-when.open
 :::
 
-#### Egabon → English {#beginner-egabon-to-english}
+#### Agebon → English {#beginner-agebon-to-english}
 
 **1.** `zuhelan vuhohol huam.`
 
@@ -353,7 +353,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 #### Set / invert / inclusive
 
 <!-- cheat-sheet: restrictors-spans -->
-| Egabon | Use | English (with occasions) | English (bare) | Cue |
+| Agebon | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
 | **`hal` / `ham`** | listed times; empty list is *never* | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never, as far as I know* | **a** ≈ add |
 | **`hol` / `hom`** | one exclusive time menu | *either when A or when B (not both)*; **`hom`** also allows *or never* | | **o** ≈ one |
@@ -369,7 +369,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 Closed **`hel`** ranks the listed occasions: the first one listed is the preferred time. Plain **`hal`** means *only when* these times, with no ranking among them.
 
 <!-- cheat-sheet: restrictors-spans -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`hel` / `hem`** | priority among occasions | *preferably when A ≻ when B…* (closed / open) | **e** ≈ order |
 | **`hael` / `haem`** | occasions in order | *first when A, then when B* (closed / open) | **a** ≈ add + **e** ≈ order |
@@ -395,7 +395,7 @@ One occasion before **`huel`** is the last resort: the claim counts there, but o
 Statement readings below. Asking *when*: [questions.md](questions.md#when).
 
 <!-- cheat-sheet: restrictors-spans -->
-| Egabon | Use | English (with occasions) | English (bare) | Cue |
+| Agebon | Use | English (with occasions) | English (bare) | Cue |
 |--------|-----|--------------------------|----------------|-----|
 | **`har`** | unspecified member of the listed times | *sometimes among these* | *sometimes* | **-r** some member |
 | **`hor`** | unspecified member of a one-choice time menu | *anytime among these* | *anytime* | **o** ≈ one + **-r** |
@@ -424,7 +424,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *climb* | `vuguvel` | 🧗 |
 | *snow* | `ozulal` | 🌨️ |
@@ -434,7 +434,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -448,7 +448,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *run* | `varuvel` |
 | *sleep* | `vezuvol` |
 
-#### English → Egabon {#intermediate-english-to-egabon}
+#### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *Uzozen climbs either when it snows or at night.* (not both)
 
@@ -498,7 +498,7 @@ y-question | h-when-best | z-interlocutors | v-climb
 z-Olazun | v-fall | [th-if | b-that-clause] | z-Uzozen | v-run
 :::
 
-#### Egabon → English {#intermediate-egabon-to-english}
+#### Agebon → English {#intermediate-agebon-to-english}
 
 **1.** `zuhelan vewurel havalul huol.`
 

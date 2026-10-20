@@ -18,7 +18,7 @@ Verbs have no tense. A `/th/` word says how you know, how you hold the claim, or
 Pick one channel for how you know. LIVE and MEMORY place the event in time; the others do not.
 
 <!-- cheat-sheet: knowing-intending -->
-| Channel | Kind | Egabon | English | Stage |
+| Channel | Kind | Agebon | English | Stage |
 |---------|------|--------|---------|-------|
 | LIVE | direct | [`thodom`](../knowing.md#evidentiality) | *live* / *from the scene* | I |
 | MEMORY | direct | [`thevom`](../knowing.md#evidentiality) | *from memory* | I |
@@ -113,7 +113,7 @@ A question, command, request, or prohibition does not take the frame, and does n
 MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words that cover the whole clause. MAY is *could be* with nothing behind it; NOTIONAL is an imagined scene; MIRATIVE says the news ran against what you expected; RESIDUE says an outcome still counts; FORMER says a usual pattern is not claimed for now.
 
 <!-- generated: overlays pos=th|h kind=may|notional|mirative|residue|former_climate -->
-| Egabon | English | Taught in | Stage |
+| Agebon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `hamom` | residue mood (outcome still on the current tally) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
 | `henom` | former-climate mood (not the climate claimed now) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
@@ -158,7 +158,7 @@ For *has ever*, use `hoham` with `har`; *has never* is `hal` ([ever / never](../
 A want, a plan, and a decision are three steps, and they stack in that order. A plan and a decision are `/h/` words, a want is a `/th/` word (yours unless a holder names someone else), and none says the act happens.
 
 <!-- generated: overlays pos=th|h kind=want|plan|decision|attempt -->
-| Egabon | English | Taught in | Stage |
+| Agebon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `hudul` | attempt mood committed (keep going until it works or is ruled out) | [Try](../intention.md#try) | I |
 | `hudum` | attempt mood (commitment unstated) | [Try](../intention.md#try) | I |
@@ -202,7 +202,7 @@ The `/b/` right after PLAN is only ever a time. WANT, PLAN, and DECISION take no
 After the root, write `x`, a vowel, and the ending the word would have anyway. Only a verb or adjective takes it; with no single verb, use `ubo`.
 
 <!-- cheat-sheet: knowing-intending -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [`xa`](../intention.md#can) | they can | *can* | I |
 | [`xe`](../intention.md#ability-stance) | can't, just for now | *can't right now* | I |

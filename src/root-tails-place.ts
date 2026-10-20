@@ -107,7 +107,7 @@ function candidates(row: TailPlaceRow, shortRoots: ReadonlySet<string>, holderHo
   return out;
 }
 
-/** Egabon letter for the first consonant of a CMU pronunciation's first word; null when it has none. */
+/** Agebon letter for the first consonant of a CMU pronunciation's first word; null when it has none. */
 export function firstConsonant(cmu: string): string | null {
   const phone = cmu.split("|")[0]!.trim().split(/\s+/).find((p) => p && !/\d$/.test(p));
   return phone ? (PHONEME_MAP[phone] ?? null) : null;

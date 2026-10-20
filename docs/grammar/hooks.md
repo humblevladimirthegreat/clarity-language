@@ -3,7 +3,7 @@
 
 ## Beginner {#beginner}
 
-English uses small words such as *including*, *instead*, *in*, and *for* to attach one piece to another. Egabon does this with **hooks**: short words with **no role letter** (no `z` / `v` / `g` / …), just a vowel (or two vowels) plus an ending. A hook attaches the piece on its right to something already in play: a phrase in the same role, the sentence before, or the clause itself as an extra noun.
+English uses small words such as *including*, *instead*, *in*, and *for* to attach one piece to another. Agebon does this with **hooks**: short words with **no role letter** (no `z` / `v` / `g` / …), just a vowel (or two vowels) plus an ending. A hook attaches the piece on its right to something already in play: a phrase in the same role, the sentence before, or the clause itself as an extra noun.
 
 The same spellings work in all three places. You tell them apart by what comes right **after** the hook, and by whether a `/b/` word comes right **before** it.
 
@@ -77,7 +77,7 @@ The left side can be the clause standalone **`xual`** *everything* ([clause join
 >
 > "Everything happened except that Uzozen walked."
 
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **a** | add a member in the same slot | *including*: A, including B | **a** ≈ add |
 | **e** | offer a better wording | *rather*: A, or rather B | **e** ≈ order |
@@ -89,7 +89,7 @@ The left side can be the clause standalone **`xual`** *everything* ([clause join
 The ending on an `A HOOK B` hook says whether B is complete. **-l** says B is the whole of it, like plain English *including B* or *except B*. **-m** says there may be more than B, like adding *and maybe more*. When you are unsure, prefer **-m**.
 
 <!-- cheat-sheet: joins-hooks -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **-l** (`al` / `el` / `ol` / `ul`) | B is the whole story you stand behind | unmarked (*including B*, *except B*, …) | **l** ≈ locked |
 | **-m** (`am` / `em` / `om` / `um`) | B is not the only one | *and maybe more* | **m** ≈ maybe more |
@@ -110,7 +110,7 @@ The ending on an `A HOOK B` hook says whether B is complete. **-l** says B is th
 
 English can open a sentence with *Additionally*, *In other words*, *Instead*, or *Except* to say how it connects to what was said before (this sentence-to-sentence connective is the *glue*). Put the same hook at the **front** of the sentence. What was already said plays A's role, and the whole new sentence is B. The vowels keep their meanings: add, say another way, replace, take out. (cue: same **a** / **o** / **e** / **u** map as in-clause.)
 
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | `al …` | add another point you stand behind | *Additionally, …* | **a** ≈ add |
 | `el …` | say the last point another way | *In other words, …* | **e** ≈ order |
@@ -143,14 +143,14 @@ The hook is glue only when the next word is not a `/b/` word. With a `/b/` word 
 
 ### Extra noun (`/b/` after the hook) {#extra-noun}
 
-English prepositions such as *in*, *at*, *from*, and *for* add a place, a source, or someone who benefits. In Egabon, put a hook right before a `/b/` [extra noun](clause.md#extra-nouns). The hook says how that noun, its **landmark**, relates to the event (or to the noun just before the hook). This is not the recipient, which takes no hook (`zuzozen vezuyel bolazun` *tells Olazun*).
+English prepositions such as *in*, *at*, *from*, and *for* add a place, a source, or someone who benefits. In Agebon, put a hook right before a `/b/` [extra noun](clause.md#extra-nouns). The hook says how that noun, its **landmark**, relates to the event (or to the noun just before the hook). This is not the recipient, which takes no hook (`zuzozen vezuyel bolazun` *tells Olazun*).
 
 So the test is: `/b/` right after the hook, and no recipient `/b/` right before it. Right after a recipient, the hook is same-role *including* (`buzozen al bolazun`).
 
 The four one-vowel hooks name the everyday extras:
 
 <!-- cheat-sheet: joins-hooks -->
-| Egabon | English | Use | Cue |
+| Agebon | English | Use | Cue |
 |--------|---------|-----|-----|
 | **`al`** | *in* | containment | **a** ≈ add (into a volume) |
 | **`ol`** | *at* | coincidence with a point | **o** ≈ one (the one point) |
@@ -221,7 +221,7 @@ For *since* before a sentence, put **`barl`** after **`ul`** and the starting ev
 >
 > "Uzozen has been walking since Olazun fell asleep."
 
-English often puts *since* first (*Since Olazun fell asleep, Uzozen has been walking*). Egabon keeps **`ul barl`** after the main clause, because the sentence after **`barl`** runs to the period. As a short answer, the pair and the starting event can stand alone:
+English often puts *since* first (*Since Olazun fell asleep, Uzozen has been walking*). Agebon keeps **`ul barl`** after the main clause, because the sentence after **`barl`** runs to the period. As a short answer, the pair and the starting event can stand alone:
 
 > `ul barl zolazun vezuvol.`
 >
@@ -233,7 +233,7 @@ English often puts *since* first (*Since Olazun fell asleep, Uzozen has been wal
 
 To give the stretch an end too (*from the thunderstorm to the bell*), use a [from … to](numbers-applied.md#time) unit.
 
-**Compare with:** *since* meaning *because* is **`thavem barl`**. Egabon keeps the time reading and the cause reading apart.
+**Compare with:** *since* meaning *because* is **`thavem barl`**. Agebon keeps the time reading and the cause reading apart.
 
 ### Practice {#beginner-practice}
 
@@ -243,7 +243,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *pour* | `vobuvul` | 🫗 |
 | *table* | `edohol` | 𓊲 |
@@ -253,7 +253,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -264,7 +264,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *sandwich* | `azal` |
 | *sit* | `vuhohol` |
 
-#### English → Egabon {#beginner-english-to-egabon}
+#### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *The family, including Uzozen, cooks.*
 
@@ -316,7 +316,7 @@ z-family | [at | b-table]
 z-family | except | z-Olazun | v-sit
 :::
 
-#### Egabon → English {#beginner-egabon-to-english}
+#### Agebon → English {#beginner-agebon-to-english}
 
 **1.** `zuzozen dugedol vuguyel el bavayal.`
 
@@ -607,7 +607,7 @@ Opening with **`aol …`** gives English *For example, …*: this sentence is on
 
 For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](joins.md#standalone-phrase) in the `/b/` slot after a place hook. Outside a question, **`bar`** is an unspecified member (*somewhere*), the same way **`zar`** is *someone*. Under **`yol`**, it is the *where?* blank.
 
-| Egabon | English |
+| Agebon | English |
 |--------|---------|
 | **`ol bar`** | *somewhere* (under **`yol`**: *where?*) |
 | **`ol bur`** | *somewhere else* |
@@ -629,12 +629,12 @@ For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](jo
 ### Here and there, this and that {#deixis}
 <a id="here-there"></a>
 
-English *here*, *there*, *this*, and *that* point at things by their distance from the speaker. Egabon points from a **person in the conversation** instead: put a place hook before the [speaker, listener, or interlocutors](pronouns.md#special-pronouns) in `/b/`. You always say whose *here* you mean, the same way Egabon says whose *left* you mean ([viewpoint laterals](roles.md#viewpoint-laterals)).
+English *here*, *there*, *this*, and *that* point at things by their distance from the speaker. Agebon points from a **person in the conversation** instead: put a place hook before the [speaker, listener, or interlocutors](pronouns.md#special-pronouns) in `/b/`. You always say whose *here* you mean, the same way Agebon says whose *left* you mean ([viewpoint laterals](roles.md#viewpoint-laterals)).
 
 Names come first. When you know who is talking or listening, use their name as the landmark (`om buzozen` *near Uzozen*). Use speaker and listener when the conversation role itself matters, or when you have no name to use.
 
 <!-- cheat-sheet: joins-hooks -->
-| Egabon | Landmark | English |
+| Agebon | Landmark | English |
 |--------|----------|---------|
 | `om bamun` | near the speaker | *here* / *this* |
 | `om behon` | near the listener | *there* / *that* (by you) |
@@ -661,7 +661,7 @@ Use `ol` in place of `om` for the exact spot (`ol bamun` *right where I am*).
 >
 > "Olazun sleeps over there." (away from both you and me)
 
-English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Egabon names the landmark with the plain motion verb **`vavobel`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vavobel` says nothing about how someone travels; use `vewurel` (*walk*) or `varuvel` (*run*) only when the manner matters.
+English *come* and *go* also point from a person, but they hide which one: *I'm coming* moves toward the listener, not the speaker. Agebon names the landmark with the plain motion verb **`vavobel`** (*go*) and a path hook: **`oel`** (*toward*) for *come*, **`ul`** (*from*) for *go away*. `vavobel` says nothing about how someone travels; use `vewurel` (*walk*) or `varuvel` (*run*) only when the manner matters.
 
 > `zuzozen vavobel oel bamun.`
 >
@@ -701,10 +701,10 @@ In reported speech, the speaker is still whoever says the whole sentence. After 
 
 ### Point back (`or` / `ar` / `ur` / `er`) {#hook-resume}
 
-English *there*, *from there*, and *for it* point back to a place or thing already named. In Egabon, give the extra-noun hook **-r** and leave out the `/b/` word: after the verb, the hook points back to the landmark already in play, the way [resume **-r**](pronouns.md#resume-r) does on a noun. A hook with **-r** has no noun on its right, and no phrase on its left to pair with (it is not a same-role hook).
+English *there*, *from there*, and *for it* point back to a place or thing already named. In Agebon, give the extra-noun hook **-r** and leave out the `/b/` word: after the verb, the hook points back to the landmark already in play, the way [resume **-r**](pronouns.md#resume-r) does on a noun. A hook with **-r** has no noun on its right, and no phrase on its left to pair with (it is not a same-role hook).
 
 <!-- cheat-sheet: joins-hooks -->
-| Egabon | Points back to | English |
+| Agebon | Points back to | English |
 |--------|----------------|---------|
 | `ar` | inside the place already named | *in there* / *in it* |
 | `or` | the place already named | *there* |
@@ -726,7 +726,7 @@ English *there*, *from there*, and *for it* point back to a place or thing alrea
 Stacked extra-noun vowels point back the same way: the vowels keep the extra they named (`aol` *on*, `ael` *using*, `uol` *through*), and **-r** drops the landmark.
 
 <!-- cheat-sheet: joins-hooks -->
-| Egabon | Points back to | English |
+| Agebon | Points back to | English |
 |--------|----------------|---------|
 | `aor` | the face already named | *on it* |
 | `aer` | the means already named | *with it* |
@@ -752,7 +752,7 @@ Stacked extra-noun vowels point back the same way: the vowels keep the extra the
 
 At the front of a sentence, a resume hook points back to an earlier stretch of talk, not just the last sentence.
 
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | `or …` | back to the main line after a side topic | *Anyway, …* | **o** ≈ one (the one main thread) |
 | `er …` | say an earlier point again | *As I said, …* | **e** ≈ order (the wording again) |
@@ -796,7 +796,7 @@ To say more than one thing about the **same** A (*including B but except C*, or 
 
 Beginner put a discourse hook at the front of a plain statement. It can sit in three more places, with the same spellings and vowel meanings:
 
-| Placement | Egabon | Use |
+| Placement | Agebon | Use |
 |-----------|--------|-----|
 | Before a written turn marker | `HOOK yal BODY` | The written **`yal`** / **`yol`** / …, after any vocatives and interjections |
 | Before a default-statement body | `HOOK BODY` | Implied **`yal`** ([speech moves](speech-moves.md#speech-act)) |
@@ -866,7 +866,7 @@ When the items sit on a line with an order (people in a queue, days, chapters, n
 > "Everyone from Uzozen through Uhelan walks."
 
 <!-- cheat-sheet: joins-hooks -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`oel`** | A, B, and everything between | *A through B* | **o** ≈ at + **e** ≈ for: start at A, head for B |
 | **`ual`** | only what lies between | *strictly between A and B* | **ua** ≈ take away both ends |
@@ -910,7 +910,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *newspaper* | `unogal` | 📰 |
 | *camera* | `ogewol` | 📷 |
@@ -919,7 +919,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -935,7 +935,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vawebol` |
 | *find* | `vumewol` |
 
-#### English → Egabon {#intermediate-english-to-egabon}
+#### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *Uzozen writes on the page.*
 
@@ -985,7 +985,7 @@ z-Uzozen | v-sit | [at | b-radio] . z-Olazun | v-sit | there
 z-family | [w-amazement | including] | z-Uzozen | v-write
 :::
 
-#### Egabon → English {#intermediate-egabon-to-english}
+#### Agebon → English {#intermediate-agebon-to-english}
 
 **1.** `ael zolazun varayel.`
 
@@ -1063,7 +1063,7 @@ Put the camera's `/ɡ/` word before **`em`**; after the `/b/` it describes Uzoze
 
 ### Hook compounds (cite + extra-noun hook) {#hook-compounds}
 
-English has single verbs for moving in relation to a place: *enter*, *leave*, *oppose*. Egabon makes them by **fusing** an extra-noun hook onto the end of a citation: *walk* + *from* (`vewurel ul buyahel` *walks from a station*) becomes one word, *leave*. Every hook in the extra-noun grid can fuse this way.
+English has single verbs for moving in relation to a place: *enter*, *leave*, *oppose*. Agebon makes them by **fusing** an extra-noun hook onto the end of a citation: *walk* + *from* (`vewurel ul buyahel` *walks from a station*) becomes one word, *leave*. Every hook in the extra-noun grid can fuse this way.
 
 Keep the left word’s own **-l** or **-m**, then write the hook, with no mid-word **`x`**. The dictionary form is the **citation** (no role letter), because the same stem can sit under `/z/` or `/ɡ/` as well as `/v/`.
 
@@ -1121,14 +1121,14 @@ Short drills for Advanced. Try each item before opening **Show answer**. Each fu
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *ship* | `ehaval` | 🚢 |
 | *anchor* | `agel` | ⚓ |
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -1140,7 +1140,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Each fu
 | *fog* | `avalul` |
 | *ice* | `ozulol` |
 
-#### English → Egabon {#advanced-english-to-egabon}
+#### English → Agebon {#advanced-english-to-agebon}
 
 **1.** *Uzozen leaves a boat.*
 
@@ -1174,7 +1174,7 @@ z-Uhelan | d-fog | v-exit
 z-Uzozen | d-Olazun | v-tell-oppose
 :::
 
-#### Egabon → English {#advanced-egabon-to-english}
+#### Agebon → English {#advanced-agebon-to-english}
 
 **1.** `davalul zolazun vewurelul.`
 

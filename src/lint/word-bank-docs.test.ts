@@ -48,7 +48,7 @@ const BANK = `### Translation practice
 
 **Roots used here:**
 
-| English | Egabon | Same root as |
+| English | Agebon | Same root as |
 |---------|--------|--------------|
 | *Uzozen* | \`uzozen\` | |
 | *see* | \`veyel\` | \`eyel\` *eye* |
@@ -66,13 +66,13 @@ describe("lintWordBankMarkdown", () => {
 
 **Roots used here:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *see* | \`vayul\` |
 `;
     const findings = lintWordBankMarkdown(md, tables);
     assert.equal(findings.length, 1);
-    assert.equal(findings[0]!.egabon, "vayul");
+    assert.equal(findings[0]!.agebon, "vayul");
     assert.equal(findings[0]!.english, "see");
   });
 
@@ -81,7 +81,7 @@ describe("lintWordBankMarkdown", () => {
 
 **Roots used here:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *${english}* | \`SELFn\` |
 `;
@@ -90,16 +90,16 @@ describe("lintWordBankMarkdown", () => {
   });
 
   it("accepts *I* / *you* for the speaker and listener specials", () => {
-    const md = (english: string, egabon: string) => `### Translation practice
+    const md = (english: string, agebon: string) => `### Translation practice
 
 **Roots used here:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
-| *${english}* | \`${egabon}\` |
+| *${english}* | \`${agebon}\` |
 `;
-    for (const [english, egabon] of [["I", "amun"], ["speaker", "amun"], ["you", "ehon"], ["listener", "ehon"]]) {
-      assert.deepEqual(lintWordBankMarkdown(md(english!, egabon!), tables), [], `${english} ${egabon}`);
+    for (const [english, agebon] of [["I", "amun"], ["speaker", "amun"], ["you", "ehon"], ["listener", "ehon"]]) {
+      assert.deepEqual(lintWordBankMarkdown(md(english!, agebon!), tables), [], `${english} ${agebon}`);
     }
     assert.equal(lintWordBankMarkdown(md("I", "amul"), tables).length, 1);
     assert.equal(lintWordBankMarkdown(md("you", "amun"), tables).length, 1);
@@ -109,7 +109,7 @@ describe("lintWordBankMarkdown", () => {
 describe("lintWordBankUsage", () => {
   const tables = loadDefaultTables();
   const bank = (rows: string[]) =>
-    ["| English | Egabon |", "|---------|--------|", ...rows.map((row) => `| ${row} |`)].join("\n");
+    ["| English | Agebon |", "|---------|--------|", ...rows.map((row) => `| ${row} |`)].join("\n");
   const page = (rows: string[], drills: string[], lead = "") => `### Translation practice
 
 Short drills. ${lead}
@@ -118,7 +118,7 @@ Short drills. ${lead}
 
 ${bank(rows)}
 
-#### English → Egabon
+#### English → Agebon
 
 ${drills.map((d, i) => `**${i + 1}.** *…*\n\n::: details Show answer\n\`${d}\`\n:::\n`).join("\n")}
 `;
@@ -175,8 +175,8 @@ describe("converted checkpoint bank", () => {
   const shape = (md: string) => lintPracticeBank(md, tables).map((f) => f.detail);
   const NEW_SEE = "| *see* | `vawebol` | 👁️ from *eye* |\n";
   const REVIEW = (rows: string) =>
-    `**Review:**\n\n| English | Egabon |\n|---------|--------|\n${rows}\n\n#### English → Egabon {#beginner-english-to-egabon}`;
-  const withReview = (rows: string) => PRACTICE.replace(NEW_SEE, "").replace("#### English → Egabon {#beginner-english-to-egabon}", REVIEW(rows));
+    `**Review:**\n\n| English | Agebon |\n|---------|--------|\n${rows}\n\n#### English → Agebon {#beginner-english-to-agebon}`;
+  const withReview = (rows: string) => PRACTICE.replace(NEW_SEE, "").replace("#### English → Agebon {#beginner-english-to-agebon}", REVIEW(rows));
 
   it("passes an exact New words bank", () => {
     assert.deepEqual(lintWordBankMarkdown(PRACTICE, tables), []);
@@ -209,7 +209,7 @@ describe("converted checkpoint bank", () => {
 
   it("checks Review English against the lexicon", () => {
     const findings = lintWordBankMarkdown(withReview("| *chair* | `vawebol` |"), tables);
-    assert.deepEqual(findings.map((f) => [f.egabon, f.english]), [["vawebol", "chair"]]);
+    assert.deepEqual(findings.map((f) => [f.agebon, f.english]), [["vawebol", "chair"]]);
   });
 
   it("needs a cue on every New words row", () => {
@@ -217,9 +217,9 @@ describe("converted checkpoint bank", () => {
   });
 
   it("checks the columns of each group", () => {
-    assert.match(shape(PRACTICE.replace("| English | Egabon | Cue |\n|---------|--------|-----|", "| English | Egabon |\n|---------|--------|")).join("\n"), /\*\*New words\*\* columns are English · Egabon; use English · Egabon · Cue/);
-    const md = withReview("| *see* | `vawebol` |").replace("| English | Egabon |\n|---------|--------|\n| *see*", "| English | Egabon | Cue |\n|---------|--------|-----|\n| *see*");
-    assert.match(shape(md).join("\n"), /\*\*Review\*\* columns are English · Egabon · Cue; use English · Egabon/);
+    assert.match(shape(PRACTICE.replace("| English | Agebon | Cue |\n|---------|--------|-----|", "| English | Agebon |\n|---------|--------|")).join("\n"), /\*\*New words\*\* columns are English · Agebon; use English · Agebon · Cue/);
+    const md = withReview("| *see* | `vawebol` |").replace("| English | Agebon |\n|---------|--------|\n| *see*", "| English | Agebon | Cue |\n|---------|--------|-----|\n| *see*");
+    assert.match(shape(md).join("\n"), /\*\*Review\*\* columns are English · Agebon · Cue; use English · Agebon/);
   });
 
   it("flags a root listed twice", () => {
@@ -227,7 +227,7 @@ describe("converted checkpoint bank", () => {
   });
 
   it("flags a legacy Roots used here table", () => {
-    const md = PRACTICE.replace("**New words:**", "**Roots used here:**\n\n| English | Egabon |\n|---|---|\n| *see* | `vawebol` |\n\n**New words:**");
+    const md = PRACTICE.replace("**New words:**", "**Roots used here:**\n\n| English | Agebon |\n|---|---|\n| *see* | `vawebol` |\n\n**New words:**");
     assert.match(shape(md).join("\n"), /not \*\*Roots used here\*\*/);
   });
 });

@@ -1,7 +1,7 @@
 # Proposal: Claritish writing editor
 
 **Status:** PARTIALLY IMPLEMENTED. Phases 1–3 are built: the [journal editor](../../grammar/claritish/editor.md) covers every lesson, with read-back, slash commands, autocomplete, the mirror panel, practice mode, and the feelings composer. Only *Later, if wanted* is still proposed. Where the build differs from the plan below, the plan says so under [Phase 1 as built](#phase-1-as-built), [Phase 2 as built](#phase-2-as-built), and [Phase 3 as built](#phase-3-as-built).  
-**Related:** [Claritish track](../../meta/grammar-docs.md#claritish-track) (what a drop-in is, placement, the cheat sheet), [Claritish wording and voice](../../meta/claritish-style.md), [the gap sections](../../grammar/claritish/index.md#lessons) of each lesson, [`scripts/lint-cheat-sheets.ts`](../../../scripts/lint-cheat-sheets.ts), `syntax-highlighting.md` (a separate idea for structure highlighting in full Egabon).  
+**Related:** [Claritish track](../../meta/grammar-docs.md#claritish-track) (what a drop-in is, placement, the cheat sheet), [Claritish wording and voice](../../meta/claritish-style.md), [the gap sections](../../grammar/claritish/index.md#lessons) of each lesson, [`scripts/lint-cheat-sheets.ts`](../../../scripts/lint-cheat-sheets.ts), `syntax-highlighting.md` (a separate idea for structure highlighting in full Agebon).  
 **Design authority:** none. The editor adds no forms. It points at lessons and drop-ins that already exist.
 
 ## Problem
@@ -23,7 +23,7 @@ Each lesson's `## The gap` section already names those English words. A client-s
 ## Non-goals
 
 - Grammar checking of English.
-- Full Egabon: no role letters, joins, or clause grammar. The editor knows only Claritish drop-ins.
+- Full Agebon: no role letters, joins, or clause grammar. The editor knows only Claritish drop-ins.
 - New forms or new readings. A cue with no fitting drop-in is not a trigger. If a cue looks like it needs one, it goes to the usual grammar gap process, not into the editor.
 - Rewriting the user's text without being asked.
 - Writing for other readers. The editor is for private journaling, so it has no recipient preview, gloss footnotes, or export for someone who has not learned Claritish. Spoken Claritish can still be used with other people; the editor just isn't where that happens.
@@ -77,7 +77,7 @@ Drop-ins are written plainly in the editor, without backticks, as in real use.
 ### Reading back what you wrote
 
 - **Hover a drop-in** to see its gloss and the lesson it comes from.
-- **Near misses.** A word that looks like a drop-in but is not one gets a suggestion: `thovom` → *did you mean `thovum`?*; `lied-ta` → *no `t` in Egabon: `-tha`?*; `lied-thal` → *suffixes take no ending*. Matching is against the generated form list, by edit distance, not against the parser.
+- **Near misses.** A word that looks like a drop-in but is not one gets a suggestion: `thovom` → *did you mean `thovum`?*; `lied-ta` → *no `t` in Agebon: `-tha`?*; `lied-thal` → *suffixes take no ending*. Matching is against the generated form list, by edit distance, not against the parser.
 - **Pronounce** any drop-in with the existing [TTS](../../../src/tts/browser.ts).
 
 ### Writing without a cue
@@ -107,7 +107,7 @@ Loads a lesson's English example sentences with the drop-ins removed as prompts.
 
 ### Where it lives
 
-A Vue component `ClaritishEditor.vue` in [`.vitepress/components`](../../grammar/.vitepress/components/), registered like `EgabonInspect`, rendered inside `<ClientOnly>` on its own page, `docs/grammar/claritish/editor.md`. The page is the last in the Claritish sidebar, right after the cheat sheet, and takes over `next: false` from it. Like the cheat sheet, it adds no forms and links only to lessons.
+A Vue component `ClaritishEditor.vue` in [`.vitepress/components`](../../grammar/.vitepress/components/), registered like `AgebonInspect`, rendered inside `<ClientOnly>` on its own page, `docs/grammar/claritish/editor.md`. The page is the last in the Claritish sidebar, right after the cheat sheet, and takes over `next: false` from it. Like the cheat sheet, it adds no forms and links only to lessons.
 
 ### Editor engine
 

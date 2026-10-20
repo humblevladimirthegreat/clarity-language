@@ -34,11 +34,11 @@ Ask in order. Prefer the **earlier** stage when a concept sits on a boundary and
 ## Cross-doc path
 <a id="cross-doc-path"></a>
 
-Read **`docs/grammar/`** only, in stage order. [why-egabon.md](../grammar/why-egabon.md) and [introduction.md](../grammar/introduction.md) are orientation (not stages).
+Read **`docs/grammar/`** only, in stage order. [why-agebon.md](../grammar/why-agebon.md) and [introduction.md](../grammar/introduction.md) are orientation (not stages).
 
 ### Beginner
 
-1. [why-egabon.md](../grammar/why-egabon.md) — psychological purpose, limits, benefit tour (not a learning stage)
+1. [why-agebon.md](../grammar/why-agebon.md) — psychological purpose, limits, benefit tour (not a learning stage)
 2. [introduction.md](../grammar/introduction.md) — name, grammar design, how to learn
 3. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges)
 4. [word-endings.md Beginner](../grammar/word-endings.md#beginner) (citation **-l** / **-m** / **-n**)
@@ -63,7 +63,7 @@ Then the [Beginner level review](../grammar/review.md#beginner) ([level reviews]
 
 ### Recipe track (outside the stages) {#recipe-track}
 
-[english.md](../grammar/english.md) and the `say-*.md` pages (**Saying it in Egabon**) sit outside the stage order and off the reading-order sidebar group. Each recipe answers an English job with forms taught elsewhere and lists them on a **Needs:** line. Stage pages never link to the track ([recipe track](grammar-docs.md#recipe-track)).
+[english.md](../grammar/english.md) and the `say-*.md` pages (**Saying it in Agebon**) sit outside the stage order and off the reading-order sidebar group. Each recipe answers an English job with forms taught elsewhere and lists them on a **Needs:** line. Stage pages never link to the track ([recipe track](grammar-docs.md#recipe-track)).
 
 ### Intermediate then Advanced
 
@@ -72,4 +72,4 @@ Then the [Beginner level review](../grammar/review.md#beginner) ([level reviews]
 
 Each level closes with its band of [review.md](../grammar/review.md): Intermediate after step 17, Advanced after step 18.
 
-Learner-facing reading order: site sidebar (**Egabon Lessons**); stage notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).
+Learner-facing reading order: site sidebar (**Agebon Lessons**); stage notes: [introduction.md § How to learn](../grammar/introduction.md#how-to-learn).

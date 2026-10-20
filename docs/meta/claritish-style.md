@@ -2,12 +2,12 @@
 
 Wording policies for editors writing the **Claritish** track under **`docs/grammar/claritish/`**. What the track is, the lesson shape, what counts as a drop-in, placement, and the link rules: [Claritish track](grammar-docs.md#claritish-track).
 
-[doc-style.md](doc-style.md) applies here unchanged: register, second person, punctuation over em dashes, one idea per heading, bold sparingly, Egabon in backticks, [plain language](doc-style.md#plain-language-no-assumed-linguistics). Claritish is the same voice aimed at a reader who has not opened the grammar and may never. This page adds only what is different, and owns the [hyphenated English host](#hyphenated-host), which exists in Claritish and nowhere in Egabon.
+[doc-style.md](doc-style.md) applies here unchanged: register, second person, punctuation over em dashes, one idea per heading, bold sparingly, Agebon in backticks, [plain language](doc-style.md#plain-language-no-assumed-linguistics). Claritish is the same voice aimed at a reader who has not opened the grammar and may never. This page adds only what is different, and owns the [hyphenated English host](#hyphenated-host), which exists in Claritish and nowhere in Agebon.
 
 ## Use the grammar's terms
 <a id="grammar-terms"></a>
 
-Name the feature the way the grammar names it. The reader is learning real Egabon words, so the English name they learn here must be the one they will meet again: **label scope** and **scope vowel**, **evidential channel**, **emotion locus** and **emotion motion**, **stance** word, **sake**, **tone mark**, **permission** / **requirement** / **consent**, **decision**, **try**. [terminology.md](../grammar/terminology.md) is the list; do not link to it from a lesson.
+Name the feature the way the grammar names it. The reader is learning real Agebon words, so the English name they learn here must be the one they will meet again: **label scope** and **scope vowel**, **evidential channel**, **emotion locus** and **emotion motion**, **stance** word, **sake**, **tone mark**, **permission** / **requirement** / **consent**, **decision**, **try**. [terminology.md](../grammar/terminology.md) is the list; do not link to it from a lesson.
 
 Do **not** coin a Claritish-only word for a feature that already has an English name. A track-local synonym costs the reader the term twice and makes the lesson stop transferring at the handoff.
 
@@ -19,21 +19,21 @@ Do **not** coin a Claritish-only word for a feature that already has an English 
 
 Gloss the term in plain English in the **same sentence as first use**, exactly as [doc-style](doc-style.md#plain-language-no-assumed-linguistics) requires: *the scope vowel, which says how far the label reaches*. Using the grammar's name is not a licence to leave it unglossed.
 
-Two terms the track owns, because the grammar has no name for them: **drop-in** (an Egabon word used inside an English sentence) and the **gap** section heading. Add no others.
+Two terms the track owns, because the grammar has no name for them: **drop-in** (an Agebon word used inside an English sentence) and the **gap** section heading. Add no others.
 
 **Naming a feature is not teaching its grammar.** Keep out the machinery the reader cannot use yet: role letters, hosting, slots and word order, joins, spans, citation forms, the concrete / abstract split. A lesson says what the word means and where it goes in the English sentence, and stops.
 
 ## The gap names an English failure
 <a id="the-gap"></a>
 
-`## The gap` is two or three sentences on the English habit that misleads, with the real English words in italics (*I think* hides a guess; *he's a liar* turns one act into someone's nature). Egabon enters only in the last sentence, as one clause saying what it names instead.
+`## The gap` is two or three sentences on the English habit that misleads, with the real English words in italics (*I think* hides a guess; *he's a liar* turns one act into someone's nature). Agebon enters only in the last sentence, as one clause saying what it names instead.
 
 The failure is psychological, not structural. A gap is a thinking trap the reader will recognize from their own week: the guess that sounds like a fact, the rumor that sounds like a sighting, the one act that becomes a nature. "English lacks a word for X" is not a gap on its own.
 
 | Smell | Why it fails | Prefer |
 |-------|--------------|--------|
-| Opens with the Egabon form or inventory | Nothing yet says why the reader wants it | Name what English loses first; the forms come under `## The forms` |
-| "Egabon marks evidentiality." | A feature announcement; no trap, and an unglossed term | "*He said it's fixed* and *I saw it's fixed* sound the same once you repeat them." |
+| Opens with the Agebon form or inventory | Nothing yet says why the reader wants it | Name what English loses first; the forms come under `## The forms` |
+| "Agebon marks evidentiality." | A feature announcement; no trap, and an unglossed term | "*He said it's fixed* and *I saw it's fixed* sound the same once you repeat them." |
 | A gap that is only tidiness (*English is inconsistent here*) | Gives the reader no reason to change how they talk | Name the cost: what gets believed, or who gets blamed |
 
 ## Forms, then placement, then endings
@@ -51,25 +51,25 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 ## The hyphenated English host
 <a id="hyphenated-host"></a>
 
-Claritish adds to an English word in two places: [label scope](../grammar/predication.md#label-scope), English word + `-th` + scope vowel (`lied-tha`), and [ability](../grammar/intention.md#ability-changeability), English verb + `-x` + vowel (`sing-xu`). The hyphen marks an English host and the letters after it are spelled exactly as Egabon spells them. Neither suffix takes an ending, because its vowel carries the meaning.
+Claritish adds to an English word in two places: [label scope](../grammar/predication.md#label-scope), English word + `-th` + scope vowel (`lied-tha`), and [ability](../grammar/intention.md#ability-changeability), English verb + `-x` + vowel (`sing-xu`). The hyphen marks an English host and the letters after it are spelled exactly as Agebon spells them. Neither suffix takes an ending, because its vowel carries the meaning.
 
-The hyphen belongs to Claritish only. Egabon writes these mid-word on an Egabon root with no hyphen (`valamuthal`, `vezuyoxal`; the ending is the one the Egabon word would take), so a lesson teaching a suffix never implies the hyphen survives into the full language.
+The hyphen belongs to Claritish only. Agebon writes these mid-word on an Agebon root with no hyphen (`valamuthal`, `vezuyoxal`; the ending is the one the Agebon word would take), so a lesson teaching a suffix never implies the hyphen survives into the full language.
 
 **Marking:** a hyphenated English host (`lied-tha`) is an English span, so the build does not parse it. Table rows for a suffix use `-tha` or `-xa`, not `…-tha` (a template that does not parse). A tone mark attaches to the English word it colors and is written bare (`%You're the worst.`), not as a backtick span.
 
 ## Examples and practice
 <a id="examples-practice"></a>
 
-About five one-line examples in a single blockquote, two trailing spaces per line. They are ordinary adult situations (a shipped draft, a delayed flight, a rewritten memo, a sister laid off), not toy sentences, and they carry no Egabon beyond the drop-in. The [house cast](grammar-docs.md#house-cast) stays out of the lessons; names appear only in the full sentence on the closing page.
+About five one-line examples in a single blockquote, two trailing spaces per line. They are ordinary adult situations (a shipped draft, a delayed flight, a rewritten memo, a sister laid off), not toy sentences, and they carry no Agebon beyond the drop-in. The [house cast](grammar-docs.md#house-cast) stays out of the lessons; names appear only in the full sentence on the closing page.
 
 After the block, one short paragraph unpacks two or three of the examples, not all five, and picks the ones where the ending or the scope does the work.
 
 Practice items give the English sentence in italics, then a parenthesized note saying **what the speaker means**, never which form to write ("(could be; you'll call and check)", not "(use `thovul`)"). A note may name the parts when the word is composed, as in Wants and plans. Answers go in `::: details Show answer`.
 
-## No Egabon sentences, no glosses
+## No Agebon sentences, no glosses
 <a id="no-glosses"></a>
 
-Lessons carry no full Egabon sentences and no morph gloss lines. Explain a drop-in by what it means, never by cutting it into Egabon morphemes. Where a word is built from parts, label the parts in plain English in a table (the need / locus / motion row), and that is the ceiling. The single glossed Egabon sentence on the closing page is the only one in the track.
+Lessons carry no full Agebon sentences and no morph gloss lines. Explain a drop-in by what it means, never by cutting it into Agebon morphemes. Where a word is built from parts, label the parts in plain English in a table (the need / locus / motion row), and that is the ceiling. The single glossed Agebon sentence on the closing page is the only one in the track.
 
 ## Back-references
 <a id="back-references"></a>

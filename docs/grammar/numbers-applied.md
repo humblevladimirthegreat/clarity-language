@@ -127,7 +127,7 @@ For a price (*for five grams*), put the same measure phrase in `/b/` after the [
 The amount hosts nothing, so no `/b/` comes right after it. Put any other extra noun elsewhere in the clause, such as after the verb.
 
 <!-- cheat-sheet: numbers -->
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | `bezerem g+2` | extra noun (`/b/`) | *two meters* |
 | `zazerem g+3`; `deberom g+5` | subject / object / … | *three seconds*; *five grams* |
@@ -200,7 +200,7 @@ A word after **B** describes **B** alone, and a word on the counted noun describ
 **Exclude an end with `ul`.** *3, except 5* reads as the band that stops short of 5: the hook excludes the endpoint **after** it. The ends are read in the order you say them, so to exclude the low end, say it second.
 
 <!-- cheat-sheet: numbers -->
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | `zrarel al zraval` | both ends in | *3 to 5* (`[3, 5]`) |
 | `zrarel ul zraval` | 5 left out | *3 up to but not including 5* (`[3, 5)`) |
@@ -227,7 +227,7 @@ To give a percent of a whole (*25% of the cats*), end a **count** number (`ra` /
 > "25% of the cats."
 
 <!-- cheat-sheet: numbers -->
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | **`yo`** | percent (portion of a whole) | everyday percent figure (`25` in `25%`); those digits ÷ 100 |
 | **`yu`** | percentage points (point-scale amount or delta) | point figure (`2` in `+2%*`); those digits ÷ 100 |
@@ -280,7 +280,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *pill* | `obebul` | 💊 |
 | *bottle* | `awodal` | 🍼 |
@@ -290,7 +290,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -299,7 +299,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vawebol` |
 | *scream* | `vuyomul` |
 
-#### English → Egabon {#intermediate-english-to-egabon}
+#### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *Uzozen sees 555-123-4567.*
 
@@ -356,7 +356,7 @@ z-Uzozen | [b-meter | g-two] | v-walk
 :::
 
 
-#### Egabon → English {#intermediate-egabon-to-english}
+#### Agebon → English {#intermediate-agebon-to-english}
 
 **1.** `zawodal g_7.`
 
@@ -478,7 +478,7 @@ English *5 or more* / *less than 5* is a **ray**: a band with only one end. Writ
 > "Less than 5."
 
 <!-- cheat-sheet: numbers -->
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | **`zraval al zrabal`** | 5 up to +∞ | *5 or more* (`≥ 5`) |
 | **`zrabal ul zraval`** | +∞ down to 5, 5 left out | *more than 5* (`> 5`) |
@@ -498,7 +498,7 @@ Ranks take the first and last place as ends. **`grebal`** is the last place and 
 The range hook takes the other hook endings too.
 
 <!-- cheat-sheet: numbers -->
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | `z+13 an z+19` | **-n**: a named band | *the teens* |
 | `zrarel ar zraval` | **-r**: some value in the band | *some value from 3 to 5* |

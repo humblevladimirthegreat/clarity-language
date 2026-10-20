@@ -3,7 +3,7 @@
  * Grammar pages: [retie-safe writing](../../docs/meta/grammar-docs.md#retie-safe-writing).
  */
 import { grammarHeadings } from "./grammar-anchors.js";
-import { ENGLISH_IN_CODE } from "./egabon-docs.js";
+import { ENGLISH_IN_CODE } from "./agebon-docs.js";
 import { respellLetterNames } from "../retie/letter-names.js";
 import { contentStemRoots } from "../retie/resume.js";
 import { hasClosedOverlay, type ClassifyTables } from "../parse/classify.js";

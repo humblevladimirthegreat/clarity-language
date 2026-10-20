@@ -14,9 +14,9 @@ The root-tails retie (2026-10-20: 1345 respelled roots, 17 of them closed roots)
 
 ## The language name {#language-name}
 
-The name is the 👓 root + **-n**. `retie-docs` never respells it: not `egabon`, not *Egabon*, not the `egabon` fence tag, `lint:egabon`, file names or URLs. When 👓 moves, the dry run prints `language name 👓 old → new`. Then run **`npm run rename-language`** (dry run), then **`npm run rename-language -- --write`**, in the same change as the retie: `introduction.md` names the root beside the name, so until then it shows the new root beside the old name. The script reads the old name from the `package.json` name and the new one from 👓 + **-n** (`--from` / `--to` override), and:
+The name is the 👓 root + **-n**. `retie-docs` never respells it: not `agebon`, not *Agebon*, not the `agebon` fence tag, `lint:agebon`, file names or URLs. When 👓 moves, the dry run prints `language name 👓 old → new`. Then run **`npm run rename-language`** (dry run), then **`npm run rename-language -- --write`**, in the same change as the retie: `introduction.md` names the root beside the name, so until then it shows the new root beside the old name. The script reads the old name from the `package.json` name and the new one from 👓 + **-n** (`--from` / `--to` override), and:
 
-- Respells the name in every tracked text file in its own casing (`Egabon`, `egabon`, `EGABON`): English prose, headings, word-bank headers (`| English | Egabon | Cue |`), the fence info string, lint kinds (`egabon-in-text-fence`), identifiers, the package name. Any other casing is listed for review.
+- Respells the name in every tracked text file in its own casing (`Agebon`, `agebon`, `AGEBON`): English prose, headings, word-bank headers (`| English | Agebon | Cue |`), the fence info string, lint kinds (`agebon-in-text-fence`), identifiers, the package name. Any other casing is listed for review.
 - Respells the old root only in [language-name.md](language-name.md); elsewhere that spelling may now be another row's root.
 - Moves every tracked path that carries the name, and adds a `pageMoves` row to `scripts/site-redirects.json` for each moved grammar page, retargeting older rows so redirects never chain. Paste the new Amplify JSON afterward ([site redirects](site-redirects.md)).
 - Refuses `--write` on a dirty tree, or when the new name already occurs, unless `--force`. After the rename, `npm run rename-language -- --from <old> --force` catches stragglers (edits merged later).
@@ -29,7 +29,7 @@ These keep their spellings on purpose and go stale after every retie. Never copy
 |------|-----|
 | `docs/proposals/rejected/` | a past design, spelled as it was |
 | `root-tails.md` | a dated record of the phase 1 run, spelled as it ran |
-| [parser-pipeline.md](parser-pipeline.md) | tooling notes; its Egabon only illustrates a CLI call |
+| [parser-pipeline.md](parser-pipeline.md) | tooling notes; its Agebon only illustrates a CLI call |
 | this page | its examples name old and new spellings |
 | `TODO.md` | planning notes (never retied) |
 | [cool-features.md](cool-features.md) | a record of posts as they were made |
@@ -43,8 +43,8 @@ A page opts out with `<!-- retie: skip -->` on a line of its own ([retie-safe wr
 - **Review items** are text the retie could not classify: a CLI call in code, coined forms in a proposal (`named-handle-coinage.md` derives a handle from root pieces, so it must be rerun by hand, and its `abulo` can collide with a new root). Collisions found only in proposals are warnings, not blocks.
 - **Examples that rest on a spelling coincidence** still parse and lint, so nothing reports them: two roots that shared a short stem, a full-root resume that was needed only because of a neighbor. Reread the [full-root resume](../grammar/pronouns.md#resume-r) examples after any retie.
 - **Bare-resume warnings** (`zazawar` reads another root now) mean a resume in prose binds by its stem; the warning names the spelling that keeps the old reading when one exists.
-- **Spans.** Every non-opaque span is Egabon and is retied word by word: a cite (`d[…]`, `d~[…]`), a nested cite, and each sentence inside one, punctuation and tone marks included. An opaque span (`d<kimchi>`) is foreign text and is never retied, its `OPAQUE["…"]` morph copy included, even after a mention marker. So a mention of an Egabon spelling is a cite (`glelel z[udozo]`), and `lint:egabon` fails an opaque payload spelled like Egabon (`native-opaque`).
-- **Names.** A named word's English name follows its code in prose and morph lines, plural (*some Uzozens*) and shouted (*UZOZEN*) included. House-cast names follow from the closed roots, so they also move inside code (a morph example in backticks) and on a page with no code for them. Source comments are never retied: write the rule there, not a house name. `lint:egabon` fails a capitalised name spelled like root + **-n** whose root is not in the lexicon (`stale-name`), on grammar pages and in `docs/meta/`; it cannot see an old name whose root another row has since taken.
+- **Spans.** Every non-opaque span is Agebon and is retied word by word: a cite (`d[…]`, `d~[…]`), a nested cite, and each sentence inside one, punctuation and tone marks included. An opaque span (`d<kimchi>`) is foreign text and is never retied, its `OPAQUE["…"]` morph copy included, even after a mention marker. So a mention of an Agebon spelling is a cite (`glelel z[udozo]`), and `lint:agebon` fails an opaque payload spelled like Agebon (`native-opaque`).
+- **Names.** A named word's English name follows its code in prose and morph lines, plural (*some Uzozens*) and shouted (*UZOZEN*) included. House-cast names follow from the closed roots, so they also move inside code (a morph example in backticks) and on a page with no code for them. Source comments are never retied: write the rule there, not a house name. `lint:agebon` fails a capitalised name spelled like root + **-n** whose root is not in the lexicon (`stale-name`), on grammar pages and in `docs/meta/`; it cannot see an old name whose root another row has since taken.
 - **IPA lines, syllable hints and inline spellings** follow the page's word changes (`src/retie/derived.ts`): a whole-line IPA (`/ ˈzʉ.zä.zo̞n /`), an italic hint whose letters spell a moved word (*o-wo-re-lul*), and `` `word` is `e` `ga` … `` when the names spell the word's old letters. IPA inside a table or prose is not touched, and a hint or spelling that was already wrong stays wrong: read the fixes the dry run lists.
 - **Letter names.** A line in a fence after `<!-- retie: letter-names -->` is respelled from its word ([phonology.md § letter names](../grammar/phonology.md#letter-names)); an inline spelling is the bullet above. Any other spelled-out word must be marked or fixed by hand.
 
@@ -55,7 +55,7 @@ A page opts out with `<!-- retie: skip -->` on a line of its own ([retie-safe wr
 | What | Where (2026-10-19) | Why it cannot follow |
 |------|--------------------|----------------------|
 | IPA expectations | `src/tts/phonemes.test.ts`, `src/tts/plan.test.ts` | IPA is derived from the spelling, not a copy of it |
-| A spelling that must stay unknown | `src/lint/egabon-docs.test.ts` (`ezuzo`) | the new lexicon may publish it |
+| A spelling that must stay unknown | `src/lint/agebon-docs.test.ts` (`ezuzo`) | the new lexicon may publish it |
 | Lexicon coincidences | `src/find/query.test.ts`, `src/parse/lexicon-check.test.ts`, `src/parse/inspect.test.ts` (possible compound splits) | the expected match exists only in the old lexicon |
 | Tests of the retie tool on real roots | `src/retie/drift.test.ts`, parts of `src/retie/retie-tokens.test.ts` | `src/retie/` is never retied, so its own fixtures stay put |
 

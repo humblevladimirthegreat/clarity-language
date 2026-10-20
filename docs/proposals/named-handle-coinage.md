@@ -6,7 +6,7 @@
 
 ## Motivation
 
-English offices often have a **short name** (*FBI*) beside a long title. Egabon already has:
+English offices often have a **short name** (*FBI*) beside a long title. Agebon already has:
 
 - Long native titles: `ROOT x ROOT` … + **-n** (`zabagezdanaxululon`).
 - Short names: ordinary proper names from the **published** lexicon (`zabagezdanan`).

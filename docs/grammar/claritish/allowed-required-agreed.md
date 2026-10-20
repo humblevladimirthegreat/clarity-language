@@ -2,7 +2,7 @@
 
 ## The gap {#gap}
 
-English *can*, *may*, *should*, and *OK* blur who allowed something, and whether the person it affects agreed or was only assumed to. Egabon has a word for each, and its ending says where the yes or no comes from.
+English *can*, *may*, *should*, and *OK* blur who allowed something, and whether the person it affects agreed or was only assumed to. Agebon has a word for each, and its ending says where the yes or no comes from.
 
 ## The forms {#forms}
 

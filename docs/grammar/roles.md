@@ -1,6 +1,6 @@
 # Role compounds {#roles}
 
-When English would name a person, place or time from an event (*a teacher* from *teach*, *the one told*, *a sleeping place*, *bedtime*), Egabon builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [word ending](word-endings.md). **`a`** is the doer, **`e`** is the scene of the event (where or when), **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
+When English would name a person, place or time from an event (*a teacher* from *teach*, *the one told*, *a sleeping place*, *bedtime*), Agebon builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [word ending](word-endings.md). **`a`** is the doer, **`e`** is the scene of the event (where or when), **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
 
 The ending decides whether you mean anyone in that part or the one from a particular event. With **-l**, **-m**, or **-n**, the word is anyone who does it, with no claim about how often: *someone who teaches*. With **-r**, it is the person or place of the latest matching event: *the one teaching*. To say it is their usual role, the kind English names as a job (*a teacher*), add a scope vowel after the stem ([the usual role](#usual-role)).
 
@@ -118,7 +118,7 @@ Some stems name a **relation** (who is bound to whom), not an action. The other 
 
 **Compare with:** *for someone* (who the act is meant to benefit) is the extra-noun hook **`el`** plus `/b/`, not the recipient.
 
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…axROOT…` | names the doer of an event | *someone who teaches* / *the one teaching* | **a** ≈ add (add a doer) |
 | `…exROOT…` | names the scene (place or time) of an event | *a place where someone sleeps* / *the place of that scream* | **e** ≈ order (the scene the act is ordered in) |
@@ -200,7 +200,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *construct* | `veguyel` | 👷 from *construct* |
 | *construction* | `egohul` | 🚧 |
@@ -209,7 +209,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -222,7 +222,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vawebol` |
 | *run* | `varuvel` |
 
-#### English → Egabon {#beginner-english-to-egabon}
+#### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *Someone who constructs runs.*
 
@@ -272,7 +272,7 @@ z-Uzozen | g-agent-x-construct
 z-Olazun | d-fight | v-see
 :::
 
-#### Egabon → English {#beginner-egabon-to-english}
+#### Agebon → English {#beginner-agebon-to-english}
 
 **1.** `zagayul dexeguyel vawebol.`
 
@@ -406,7 +406,7 @@ With **-r**, it is the tool used in **that** event.
 
 A movement has three more parts: where it heads, where it comes out of, and the way it goes. Each uses the two-vowel pair of the matching [extra-noun hook](hooks.md#extra-noun-intermediate).
 
-| Egabon | Names | English | Cue |
+| Agebon | Names | English | Cue |
 |--------|-------|---------|-----|
 | `…oexROOT…` | the **goal** of the event | *a finish line* (from *run*), *a target* | **oe**, as in **`oel`** *toward* |
 | `…uaxROOT…` | the **source** it comes out of | *a spring* (from *pour*), *a quarry* | **ua**, as in **`ual`** *out of* |
@@ -489,7 +489,7 @@ Each two-vowel pair also makes a [role pointer](#role-pointers-family): leave ou
 > "Olazun builds. Uzozen sees what Olazun built."
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | Names | Its `/b/` comes from |
+| Agebon | Names | Its `/b/` comes from |
 |--------|-------|----------------------|
 | `daexar` | the tool of the latest event | **`ael`** |
 | `doexar` | where it headed | **`oel`** |
@@ -550,7 +550,7 @@ For *their left*, put a [role pointer](pronouns.md#role-pointers) on **-r** afte
 >
 > "Uzozen walks. Olazun sits on their left." (Uzozen's left)
 
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | PoS | slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region) | same slots as other content |
 | DIR | an arrow-rose root | *north* / *ahead*, … |
@@ -565,7 +565,7 @@ For *their left*, put a [role pointer](pronouns.md#role-pointers) on **-r** afte
 The examples above used *west* / *left*. The other seven arrow roots work the same way: alone, each is a compass heading; with **`th`** and a facing person, it is that direction from the person’s body.
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`onuhel`** | compass heading, or ahead on a face | *north* / *ahead* | ⬆️ *up-arrow*: map north, or ahead if facing is north |
 | **`azuhel`** | compass heading, or back on a face | *south* / *back* | ⬇️ *down-arrow*: map south, or back if facing is north |
@@ -595,7 +595,7 @@ English *up* / *down* usually follows the pull of gravity, not anyone’s facing
 > "Up!"
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | Use | English | Same root as | Cue |
+| Agebon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
 | **`ayuhel`** | skyward, shared gravity frame | *up* | | ⏫: away from the pull |
 | **`aduhel`** | toward the pull, shared gravity frame | *down* | | ⏬: toward the pull |
@@ -630,7 +630,7 @@ Gravity works the same way: bare **`aduhe`** + `/b/` is *under* the landmark, an
 **Compare with:** locative *at* / *on* / *inside* name how the figure sits relative to the landmark ([locative relations](relations.md#locative-relations)), not a compass heading.
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | Bare DIR | compass / gravity | `gowuhel` *west*; `gayuhel` *up* |
 | **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gowuhethehon` *listener-left* |
@@ -658,7 +658,7 @@ This is [label scope](predication.md#label-scope) **`tho`** on a direction: the 
 The landmark's front is where its design or current use faces (a house's front door, a car's windshield). A DIR + **`th`** + **`o`** word always takes a `/b/` landmark.
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | English |
+| Agebon | English |
 |--------|---------|
 | `gazuhethol bahehal` | *behind the house* (its own back) |
 | `gonuhethol bahehal` | *in front of the house* |
@@ -670,7 +670,7 @@ The landmark's front is where its design or current use faces (a house's front d
 
 Write the ordinary [word ending](word-endings.md) at the end of the whole compound. In a viewpoint lateral, the ending applies to the **viewpoint anchor**, not to DIR: **-l** / **-m** describe the anchor’s reference, **-n** names the anchor, and **-r** resumes it. A bare direction word still takes its ending on the direction itself.
 
-| Egabon | Use | English |
+| Agebon | Use | English |
 |--------|-----|---------|
 | **-l** | indefinite / kind viewpoint anchor or unmarked path | left of a viewpoint |
 | **-m** | soft / hedged viewpoint anchor | left of a hedged viewpoint |
@@ -678,7 +678,7 @@ Write the ordinary [word ending](word-endings.md) at the end of the whole compou
 | **-r** | resume the most recent matching viewpoint anchor in a **`DIR th ANCHOR`** compound, or the anchor alone when it is the latest match: ordinary [pronoun](pronouns.md) rules | that viewpoint’s left |
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | English |
+| Agebon | English |
 |--------|---------|
 | `gowuhel` | *west* (shared map) |
 | `gowuhethuzozen` | *Uzozen’s left* |
@@ -695,7 +695,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *boat* | `ebaval` | 🚤 |
 | *island* | `elahol` | 🏝️ |
@@ -705,7 +705,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -720,7 +720,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vawebol` |
 | *scream* | `vuyomul` |
 
-#### English → Egabon {#intermediate-english-to-egabon}
+#### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *Olazun is a thief.* (stealing is what Olazun regularly does)
 
@@ -770,7 +770,7 @@ y-command | v-walk | z-Uhelan | h-west-th-Uzozen
 z-boat | v-sit | [g-west | b-island]
 :::
 
-#### Egabon → English {#intermediate-egabon-to-english}
+#### Agebon → English {#intermediate-agebon-to-english}
 
 **1.** `yel vavobel zolazun howuhel.`
 

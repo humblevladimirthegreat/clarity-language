@@ -2,7 +2,7 @@
 
 **Status:** PROPOSED. Nothing here is built.  
 **Related:** `claritish-editor.md` (the editor this would ride on: its matcher, help cards, and mirror panel), [Claritish track](../meta/grammar-docs.md#claritish-track), the [Labels](../grammar/claritish/labels.md) and [Feelings](../grammar/claritish/feelings.md) lessons.  
-**Design authority:** none. This changes English words, not Egabon, and adds no form.
+**Design authority:** none. This changes English words, not Agebon, and adds no form.
 
 ## Idea
 
@@ -22,7 +22,7 @@ This is not a Claritish drop-in, so it sits apart from the lesson cards.
 
 Claritish adds no content of its own, so the card's wording must come from somewhere:
 
-- **(a)** A short note in the Claritish [Feelings](../grammar/claritish/feelings.md) or [Labels](../grammar/claritish/labels.md) lesson teaches the idea, and the card quotes it. This keeps the editor's "no copy written twice" goal, but makes it the one Claritish idea that is not an Egabon drop-in, which the [track rules](../meta/grammar-docs.md#claritish-track) would need to allow.
+- **(a)** A short note in the Claritish [Feelings](../grammar/claritish/feelings.md) or [Labels](../grammar/claritish/labels.md) lesson teaches the idea, and the card quotes it. This keeps the editor's "no copy written twice" goal, but makes it the one Claritish idea that is not an Agebon drop-in, which the [track rules](../meta/grammar-docs.md#claritish-track) would need to allow.
 - **(b)** An editor-only tip, with its wording in the editor's trigger data.
 - **(c)** Leave it out.
 

@@ -110,7 +110,7 @@ The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, 
 
 [Stance joins](../join-across-roles.md#stance-joins) (`/th/`) work on the stance words before them, not the claim: `thavem berulal thul` *not because of the rain*. With clause grounds, the join goes [before `barl`](../join-across-roles.md#stance-join-before-barl): `thavem thul barl` *not because …*. [Alone](../join-across-roles.md#standalone-stance-joins), they say how to take the claim:
 
-| Egabon | English | Egabon | English |
+| Agebon | English | Agebon | English |
 |--------|---------|--------|---------|
 | `thal` | *at face value* | `thul` | *no judgment* |
 | `thual` | *all things considered* | `thel` | *impartially* |
@@ -169,7 +169,7 @@ Stage: `al` `ol` `ul` `el` **-l** are Beginner; the rest of the first three colu
 
 ### Handy phrases {#handy-phrases}
 
-| Egabon | English | Stage |
+| Agebon | English | Stage |
 |--------|---------|-------|
 | `ul barl` + clause | [*since*](../hooks.md#since) (that happened) | B |
 | `ol bar` | [*somewhere*](../hooks.md#place-indefinites); in a question, *where?* | I |

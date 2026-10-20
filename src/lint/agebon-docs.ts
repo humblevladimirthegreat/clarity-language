@@ -17,19 +17,19 @@ import { parseWord, WordParseError } from "../parse/word.js";
 import { traceFragment, traceTemplate } from "./template-trace.js";
 import { fixPromptRanges } from "./practice-items.js";
 import { forEachMarkdownCodeSpan, forEachMarkdownCodeToken, type MarkdownCodeSpan } from "../retie/tokens.js";
-import { isEgabonRootShape } from "../root-shape.js";
+import { isAgebonRootShape } from "../root-shape.js";
 import { ENGLISH_IN_CODE } from "../english-in-code.js";
 
-export type EgabonLintKind = "parse" | "unknown-root";
+export type AgebonLintKind = "parse" | "unknown-root";
 
-export type EgabonLintIssue = {
+export type AgebonLintIssue = {
   token: string;
   index: number;
-  kind: EgabonLintKind;
+  kind: AgebonLintKind;
   detail: string;
 };
 
-/** Letters, digits, and morph glyphs that can appear in a spelled Egabon word. */
+/** Letters, digits, and morph glyphs that can appear in a spelled Agebon word. */
 const WORD_CHAR_RE = /^[aeouhtwdjybgzmnvlrx0-9+\-#_.,=@~^%±[\]{}()]+$/;
 
 const TEACHING_GLOSS_RE = /^(?:th|[zdbvgwhxy])-(?:[a-z@]+$|[<[{(])/;
@@ -81,7 +81,7 @@ function prefixedBareRoot(core: string): string | null {
   const posLen = core.startsWith("th") ? 2 : POS.includes(core[0]!) ? 1 : 0;
   if (posLen === 0) return null;
   const rest = core.slice(posLen);
-  if (isEgabonRootShape(rest) && rest.length >= 3) return rest;
+  if (isAgebonRootShape(rest) && rest.length >= 3) return rest;
   return null;
 }
 
@@ -90,14 +90,14 @@ function prefixedBareRoot(core: string): string | null {
  * English in backticks (`and`, `would`, `dog`) does not match.
  */
 /** `j` standing where `y` would make a native word (`jal`, `agaja`). Payloads `<…>` keep their own spelling. */
-function nativeJIsEgabon(core: string): boolean {
+function nativeJIsAgebon(core: string): boolean {
   if (!withoutForeignPayloads(core).includes("j")) return false;
   const asY = core.replace(/<[^>]*>|j/g, (m) => (m === "j" ? "y" : m));
   try {
     parseWord(asY);
     return true;
   } catch {
-    return looksLikeFullSpelledWord(asY) || isEgabonRootShape(asY);
+    return looksLikeFullSpelledWord(asY) || isAgebonRootShape(asY);
   }
 }
 
@@ -111,7 +111,7 @@ function looksLikeFullSpelledWord(core: string): boolean {
 }
 
 /** Full-word candidate: skip fragments, IPA, slash PoS, teaching glosses, placeholders. */
-export function isEgabonLintCandidate(core: string): boolean {
+export function isAgebonLintCandidate(core: string): boolean {
   if (!core) return false;
   if (core.includes("/")) return false;
   if (core.startsWith("-")) return false;
@@ -128,20 +128,20 @@ export function isEgabonLintCandidate(core: string): boolean {
   return true;
 }
 
-export function lintEgabonToken(
+export function lintAgebonToken(
   core: string,
   tables: ClassifyTables,
   known: ReadonlySet<string> = knownLexiconRoots(tables),
   resumeStems: ReadonlySet<string> = new Set(),
-): { kind: EgabonLintKind; detail: string } | null {
-  if (!isEgabonLintCandidate(core)) {
+): { kind: AgebonLintKind; detail: string } | null {
+  if (!isAgebonLintCandidate(core)) {
     return null;
   }
-  if (nativeJIsEgabon(core)) {
+  if (nativeJIsAgebon(core)) {
     return { kind: "parse", detail: "`j` is not a letter; write `y`" };
   }
 
-  if (isEgabonRootShape(core) && core.length >= 3) {
+  if (isAgebonRootShape(core) && core.length >= 3) {
     if (!known.has(core)) {
       return { kind: "unknown-root", detail: `not in the lexicon: ${core}` };
     }
@@ -181,9 +181,9 @@ export function lintEgabonToken(
   return null;
 }
 
-export function lintEgabonMarkdown(text: string, tables: ClassifyTables): EgabonLintIssue[] {
+export function lintAgebonMarkdown(text: string, tables: ClassifyTables): AgebonLintIssue[] {
   const known = knownLexiconRoots(tables);
-  const issues: EgabonLintIssue[] = [];
+  const issues: AgebonLintIssue[] = [];
 
   let currentBlock = -1;
   let resumeStems = new Set<string>();
@@ -197,7 +197,7 @@ export function lintEgabonMarkdown(text: string, tables: ClassifyTables): Egabon
     if (!core) {
       return;
     }
-    const hit = lintEgabonToken(core, tables, known, resumeStems);
+    const hit = lintAgebonToken(core, tables, known, resumeStems);
     collectResumeStems(core, known, resumeStems);
     if (!hit) {
       return;
@@ -217,7 +217,7 @@ export function lintEgabonMarkdown(text: string, tables: ClassifyTables): Egabon
     for (const chunk of match[1]!.matchAll(/\S+/g)) {
       const { prefix, core } = peelLintChunk(decodeEntities(chunk[0]));
       if (!core) continue;
-      const hit = lintEgabonToken(core, tables, known, htmlStems);
+      const hit = lintAgebonToken(core, tables, known, htmlStems);
       collectResumeStems(core, known, htmlStems);
       if (hit) issues.push({ token: core, index: base + chunk.index! + prefix.length, ...hit });
     }
@@ -232,7 +232,7 @@ function hasOverlay(word: Parameters<typeof classify>[0], tables: ClassifyTables
 
 /** Whole stems (`owogala` of `vowogalal`) a later **-r** in the block can resume ([pronouns.md](docs/grammar/pronouns.md#resume-r)). */
 function collectResumeStems(core: string, known: ReadonlySet<string>, into: Set<string>): void {
-  if (!isEgabonLintCandidate(core)) return;
+  if (!isAgebonLintCandidate(core)) return;
   let word;
   try {
     word = parseWord(core);
@@ -244,25 +244,25 @@ function collectResumeStems(core: string, known: ReadonlySet<string>, into: Set<
 }
 
 /**
- * Whole-span checks ([grammar-docs.md § Marking Egabon](../../docs/meta/grammar-docs.md#marking-egabon)).
+ * Whole-span checks ([grammar-docs.md § Marking Agebon](../../docs/meta/grammar-docs.md#marking-agebon)).
  *
  * Every code span gets exactly one class, and no class skips silently:
- * - **sentence**: ends in `.` / `?` / `!` and starts with an Egabon word → must parse as a sentence.
- * - **phrase**: two or more words, all Egabon-shaped, no final mark → must parse (or be marked a fragment).
+ * - **sentence**: ends in `.` / `?` / `!` and starts with an Agebon word → must parse as a sentence.
+ * - **phrase**: two or more words, all Agebon-shaped, no final mark → must parse (or be marked a fragment).
  * - **template**: has `…` / `...` or an all-caps placeholder (`A am B`, `DIR th ANCHOR`) → slots are filled
  *   with sample words and it must parse ([template-trace.ts](template-trace.ts)).
- * - **word**: one word → the per-word lint ({@link lintEgabonMarkdown}) covers it.
- * - **english**: no Egabon-shaped word at all (placeholders alone, like `ROOT` or `NUM`, count as English).
+ * - **word**: one word → the per-word lint ({@link lintAgebonMarkdown}) covers it.
+ * - **english**: no Agebon-shaped word at all (placeholders alone, like `ROOT` or `NUM`, count as English).
  * - **marked-fragment**: `<!-- lint: fragment -->` right before the span → parsed with context supplied
  *   around it. `<!-- lint: skip -->` is not allowed.
  * - **marked-error**: `<!-- lint: error -->` right before the wrong form in a **Fix it** prompt
  *   ([practice-items.ts](practice-items.ts)) → need not parse, and its constructions are not used.
  *   Anywhere else the marker fails.
- * Anything else (Egabon and non-Egabon words mixed, no final mark) is **unclassified** and fails.
- * Fenced blocks need an info string: `egabon` (each line is checked like a span) or `text` (notation,
- * not Egabon: a line that reads as an Egabon phrase or sentence fails).
+ * Anything else (Agebon and non-Agebon words mixed, no final mark) is **unclassified** and fails.
+ * Fenced blocks need an info string: `agebon` (each line is checked like a span) or `text` (notation,
+ * not Agebon: a line that reads as an Agebon phrase or sentence fails).
  */
-export type EgabonSpanClass =
+export type AgebonSpanClass =
   | "sentence"
   | "phrase"
   | "template"
@@ -272,26 +272,26 @@ export type EgabonSpanClass =
   | "marked-error"
   | "text-fence";
 
-export type EgabonSpanIssueKind =
+export type AgebonSpanIssueKind =
   | "sentence"
   | "phrase"
   | "template"
   | "fragment"
   | "unclassified"
   | "unmarked-fence"
-  | "egabon-in-text-fence"
+  | "agebon-in-text-fence"
   | "bad-marker";
 
-export type EgabonSpanIssue = {
+export type AgebonSpanIssue = {
   text: string;
   index: number;
-  kind: EgabonSpanIssueKind;
+  kind: AgebonSpanIssueKind;
   detail: string;
 };
 
-export type EgabonSpanStats = Record<EgabonSpanClass, number>;
+export type AgebonSpanStats = Record<AgebonSpanClass, number>;
 
-export function emptySpanStats(): EgabonSpanStats {
+export function emptySpanStats(): AgebonSpanStats {
   return {
     sentence: 0,
     phrase: 0,
@@ -317,21 +317,21 @@ function spanWords(text: string): string[] {
     .filter((core) => core && !SPAN_NEUTRAL.has(core));
 }
 
-/** Class of one span (or one line of an `egabon` fence), before parsing. */
-export function classifyEgabonSpan(text: string): EgabonSpanClass | "unclassified" {
+/** Class of one span (or one line of an `agebon` fence), before parsing. */
+export function classifyAgebonSpan(text: string): AgebonSpanClass | "unclassified" {
   const trimmed = text.trim();
   const words = spanWords(trimmed);
   if (words.length === 0) return "english";
-  const egabon = words.filter(isEgabonLintCandidate);
-  if (/[.?!]$/.test(trimmed) && isEgabonLintCandidate(words[0]!)) return "sentence";
+  const agebon = words.filter(isAgebonLintCandidate);
+  if (/[.?!]$/.test(trimmed) && isAgebonLintCandidate(words[0]!)) return "sentence";
   if (/…|\.\.\./.test(trimmed) || words.some((w) => PLACEHOLDER_RE.test(w))) {
-    // Placeholders alone (`ROOT`, `NUM`, `…`) name a slot, with no Egabon to trace.
+    // Placeholders alone (`ROOT`, `NUM`, `…`) name a slot, with no Agebon to trace.
     const rest = trimmed.replace(/…|\.\.\.|[A-Z][A-Z0-9₀-₉]*/g, "");
     return /[a-z]/.test(rest) ? "template" : "english";
   }
-  if (egabon.length === 0) return "english";
+  if (agebon.length === 0) return "english";
   if (words.length === 1) return "word";
-  if (egabon.length === words.length) return "phrase";
+  if (agebon.length === words.length) return "phrase";
   return "unclassified";
 }
 
@@ -352,17 +352,17 @@ function lintSpanText(
   text: string,
   index: number,
   tables: ClassifyTables,
-  stats: EgabonSpanStats,
-  issues: EgabonSpanIssue[],
+  stats: AgebonSpanStats,
+  issues: AgebonSpanIssue[],
   used?: ConstructionSink,
 ): void {
-  const cls = classifyEgabonSpan(text);
+  const cls = classifyAgebonSpan(text);
   if (cls === "unclassified") {
     issues.push({
       text,
       index,
       kind: "unclassified",
-      detail: "mixes Egabon and other words; fix it, or mark it <!-- lint: fragment -->",
+      detail: "mixes Agebon and other words; fix it, or mark it <!-- lint: fragment -->",
     });
     return;
   }
@@ -392,7 +392,7 @@ function lintTraced(
   index: number,
   kind: "template" | "fragment",
   trace: () => string[],
-  issues: EgabonSpanIssue[],
+  issues: AgebonSpanIssue[],
   used?: ConstructionSink,
 ): void {
   try {
@@ -411,7 +411,7 @@ export function decodeEntities(text: string): string {
 /** A single-word span exercises its word-level and slot constructions (`word.*`, `token.*`). */
 function addWordSpanConstructions(text: string, index: number, tables: ClassifyTables, used: ConstructionSink): void {
   const { core } = peelLintChunk(text.trim());
-  if (!isEgabonLintCandidate(core)) return;
+  if (!isAgebonLintCandidate(core)) return;
   try {
     const word = classify(parseWord(core), tables);
     used(`token.${classifyTokenBranch(word).branch}`, index);
@@ -421,20 +421,20 @@ function addWordSpanConstructions(text: string, index: number, tables: ClassifyT
   }
 }
 
-/** How {@link walkEgabonSpans} hands out a page's code spans. */
-export type EgabonSpanVisitor = {
-  /** Span text the lint checks as Egabon: inline spans, `egabon` fence lines, and `<code>` bodies. */
+/** How {@link walkAgebonSpans} hands out a page's code spans. */
+export type AgebonSpanVisitor = {
+  /** Span text the lint checks as Agebon: inline spans, `agebon` fence lines, and `<code>` bodies. */
   text: (text: string, index: number) => void;
   /** A span preceded by a `<!-- lint: … -->` marker (`marker` is the text after `lint:`, or undefined if malformed). */
   marked?: (span: MarkdownCodeSpan, marker: string | undefined) => void;
-  /** A fence with a non-`egabon` info string. */
+  /** A fence with a non-`agebon` info string. */
   otherFence?: (span: MarkdownCodeSpan) => void;
   /** A fence with no info string. */
   unmarkedFence?: (span: MarkdownCodeSpan) => void;
 };
 
 /** Walk a page's code spans the way the docs lint reads them. */
-export function walkEgabonSpans(text: string, visit: EgabonSpanVisitor): void {
+export function walkAgebonSpans(text: string, visit: AgebonSpanVisitor): void {
   forEachMarkdownCodeSpan(text, (span) => {
     if (span.marker?.startsWith("lint:")) {
       visit.marked?.(span, LINT_MARKER_RE.exec(span.marker)?.[1]);
@@ -442,7 +442,7 @@ export function walkEgabonSpans(text: string, visit: EgabonSpanVisitor): void {
     }
     if (span.kind === "fence") {
       const info = span.info.split(/\s+/)[0] ?? "";
-      if (info === "egabon") {
+      if (info === "agebon") {
         let offset = 0;
         for (const line of span.text.split("\n")) {
           if (line.trim()) visit.text(line, span.index + offset);
@@ -468,16 +468,16 @@ export function walkEgabonSpans(text: string, visit: EgabonSpanVisitor): void {
  * Lint code spans. When `used` is given, it receives the construction IDs
  * ([constructions.ts](../parse/constructions.ts)) the page's examples exercise.
  */
-export function lintEgabonSpans(
+export function lintAgebonSpans(
   text: string,
   tables: ClassifyTables,
-  stats: EgabonSpanStats = emptySpanStats(),
+  stats: AgebonSpanStats = emptySpanStats(),
   used?: ConstructionSink,
-): EgabonSpanIssue[] {
-  const issues: EgabonSpanIssue[] = [];
+): AgebonSpanIssue[] {
+  const issues: AgebonSpanIssue[] = [];
   let fixPrompts: { start: number; end: number }[] | undefined;
 
-  walkEgabonSpans(text, {
+  walkAgebonSpans(text, {
     text: (body, index) => lintSpanText(body, index, tables, stats, issues, used),
     marked: (span, marker) => {
       if (marker === "fragment") {
@@ -510,13 +510,13 @@ export function lintEgabonSpans(
       stats["text-fence"] += 1;
       let offset = 0;
       for (const line of span.text.split("\n")) {
-        const cls = line.trim() ? classifyEgabonSpan(line) : "english";
+        const cls = line.trim() ? classifyAgebonSpan(line) : "english";
         if (cls === "sentence" || cls === "phrase") {
           issues.push({
             text: line,
             index: span.index + offset,
-            kind: "egabon-in-text-fence",
-            detail: "reads as Egabon; put it in an ```egabon fence",
+            kind: "agebon-in-text-fence",
+            detail: "reads as Agebon; put it in an ```agebon fence",
           });
         }
         offset += line.length + 1;
@@ -527,7 +527,7 @@ export function lintEgabonSpans(
         text: span.text.split("\n")[0] ?? "",
         index: span.index,
         kind: "unmarked-fence",
-        detail: "fenced block needs an info string: ```egabon (checked) or ```text (not Egabon)",
+        detail: "fenced block needs an info string: ```agebon (checked) or ```text (not Agebon)",
       });
     },
   });
@@ -544,11 +544,11 @@ export type BareRootIssue = { text: string; index: number; root: string };
  */
 export function lintBareRoots(text: string, tables: ClassifyTables): BareRootIssue[] {
   const issues: BareRootIssue[] = [];
-  walkEgabonSpans(text, {
+  walkAgebonSpans(text, {
     text: (span, index) => {
       const m = /^(?:th|[zdbvgwhxy])?([aeou][a-z]+)$/.exec(span.trim());
       const root = m?.[1];
-      if (!root || !isEgabonRootShape(root)) return;
+      if (!root || !isAgebonRootShape(root)) return;
       if (tables.published.has(root) || tables.compounds.has(root)) return;
       issues.push({ text: span.trim(), index, root });
     },
@@ -558,10 +558,10 @@ export function lintBareRoots(text: string, tables: ClassifyTables): BareRootIss
 
 export type NativeOpaqueIssue = { text: string; index: number; payload: string };
 
-/** One word of an opaque payload spelled like Egabon: a root shape, or a word that parses. */
-function readsAsEgabonWord(word: string, tables: ClassifyTables): boolean {
-  if (!/^[a-z]+$/.test(word) || !isEgabonLintCandidate(word)) return false;
-  if (isEgabonRootShape(word) || looksLikeFullSpelledWord(word)) return true;
+/** One word of an opaque payload spelled like Agebon: a root shape, or a word that parses. */
+function readsAsAgebonWord(word: string, tables: ClassifyTables): boolean {
+  if (!/^[a-z]+$/.test(word) || !isAgebonLintCandidate(word)) return false;
+  if (isAgebonRootShape(word) || looksLikeFullSpelledWord(word)) return true;
   try {
     classifiedShape(parseWord(word), tables);
     return true;
@@ -572,15 +572,15 @@ function readsAsEgabonWord(word: string, tables: ClassifyTables): boolean {
 
 /**
  * An opaque `<…>` payload is foreign text ([spans.md](../../docs/grammar/spans.md#loans)), so a retie never
- * moves it. A payload spelled like Egabon would go stale unseen: Egabon goes in a cite `[…]`.
+ * moves it. A payload spelled like Agebon would go stale unseen: Agebon goes in a cite `[…]`.
  */
 export function lintNativeOpaque(text: string, tables: ClassifyTables): NativeOpaqueIssue[] {
   const issues: NativeOpaqueIssue[] = [];
-  walkEgabonSpans(text, {
+  walkAgebonSpans(text, {
     text: (span, index) => {
       for (const match of span.matchAll(/<([^<>\n]+)>/g)) {
         const words = match[1]!.split(/\s+/).map((w) => w.replace(/[.,?!]+$/, "")).filter(Boolean);
-        if (words.length > 0 && words.every((w) => readsAsEgabonWord(w, tables))) {
+        if (words.length > 0 && words.every((w) => readsAsAgebonWord(w, tables))) {
           issues.push({ text: span.trim(), index, payload: match[1]! });
         }
       }

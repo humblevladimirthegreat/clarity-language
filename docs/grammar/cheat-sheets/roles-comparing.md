@@ -42,7 +42,7 @@ A role compound has one role vowel, left of the first **`x`**. Its stem is alway
 A role pointer drops the stem. The pointer vowel picks the event by position: **`a`** the latest, **`e`** this sentence's own, **`o`** the other, **`u`** the one that left the part unsaid. **-r** is the participant, **-l** a new one of its kind, **-m** its part.
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | Names | Its `/b/` comes from | Stage |
+| Agebon | Names | Its `/b/` comes from | Stage |
 |--------|-------|----------------------|-------|
 | [`daexar`](../roles.md#stacked-pointers) | the tool of the latest event | **`ael`** | I |
 | [`doexar`](../roles.md#stacked-pointers) | where it headed | **`oel`** | I |
@@ -66,7 +66,7 @@ The scene has no `zexor`, `zexol`, or `zexom`.
 Bare arrow words are compass headings. With mid-word **`th`** and a facing person they become that direction from the person's body. Gravity words need no facing person.
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | Compass | On a face | Stage |
+| Agebon | Compass | On a face | Stage |
 |--------|---------|-----------|-------|
 | [**`onuhel`**](../roles.md#arrow-rose-compass-vs-face) | *north* | *ahead* | I |
 | [**`azuhel`**](../roles.md#arrow-rose-compass-vs-face) | *south* | *back* | I |
@@ -78,14 +78,14 @@ Bare arrow words are compass headings. With mid-word **`th`** and a facing perso
 | [**`uzuhel`**](../roles.md#arrow-rose-compass-vs-face) | *southwest* | *back-left* | I |
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [**`ayuhel`**](../roles.md#gravity) | skyward, shared frame | *up* | I |
 | [**`aduhel`**](../roles.md#gravity) | toward the pull, shared frame | *down* | I |
 | [**`evuhel`**](../roles.md#gravity) | the vertical axis | *up–down axis* | I |
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [Bare DIR](../roles.md#viewpoint-vs-landmark) | compass / gravity | `gowuhel` *west*; `gayuhel` *up* | I |
 | [**`DIR th ANCHOR`**](../roles.md#viewpoint-vs-landmark) | that point on **ANCHOR's** facing rose | `gowuhethehon` *listener-left* | I |
@@ -95,7 +95,7 @@ Bare arrow words are compass headings. With mid-word **`th`** and a facing perso
 The anchor can be `amu` *speaker*, `eho` *listener*, a name, or a role pointer on **-r**. The ending applies to the anchor, not the direction.
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | English | Stage |
+| Agebon | English | Stage |
 |--------|---------|-------|
 | [`gowuhel`](../roles.md#endings-and-resume) | *west* (shared map) | I |
 | [`gowuhethuzozen`](../roles.md#endings-and-resume) | *Uzozen's left* | I |
@@ -105,7 +105,7 @@ The anchor can be `amu` *speaker*, `eho` *listener*, a name, or a role pointer o
 | [`gayuhel` / `hayuhel`](../roles.md#endings-and-resume) | gravity *up* | I |
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | English | Stage |
+| Agebon | English | Stage |
 |--------|---------|-------|
 | [`gazuhethol bahehal`](../roles.md#landmark-facing) | *behind the house* (its own back) | I |
 | [`gonuhethol bahehal`](../roles.md#landmark-facing) | *in front of the house* | I |
@@ -143,7 +143,7 @@ Mid-word **`th`** is another family: a sake root and a vowel (`gulothal`), any o
 ### One thing or two {#one-or-two}
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [two words](../x-compounds.md#compound-vs-separate) | two things, or a property marked another way | `zehowol zerewol zam` *a hammer and a wrench*; `zudozol gubulel` *a blue dog* | B |
 | [**`x`** in the middle](../x-compounds.md#compound-vs-separate) | one thing; both roots audible | `gagomaxulamal` *in love* (the crush kind); `zubedaxuyudal` *peanut butter*; `zuzozexolazun` (one person) | B |
@@ -152,7 +152,7 @@ Mid-word **`th`** is another family: a sake root and a vowel (`gulothal`), any o
 A dictionary compound joins its two roots with the left root's ending (**-l** everyday, **-m** abstract), never **`x`**. If the pairing is not listed, glue with **`x`** or use two words.
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | English | Stage |
+| Agebon | English | Stage |
 |--------|---------|-------|
 | [`zobaholurahal`](../x-compounds.md#lexical-compounds) | *bedroom* | B |
 | [`zoyelaboral`](../x-compounds.md#lexical-compounds) | *doorbell* | B |
@@ -185,7 +185,7 @@ Name + **`x`** + one vowel + **-n**, on a greeting or a call. At arrival it says
 Write the names, then the rank join, then the shared adjective on `/ɡ/`. **`e`** ranks the first higher; **`ue`** the first lower; **`oe`** ties. **-l** is firm, **-m** open.
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [Rank **`e`** (`zel`)](../comparatives.md#comparatives) | rank on a shared quality | *more … than* / *the …-est* | B |
 | [Equality **`oe`** (`zoel` / `zoem`)](../comparatives.md#equatives) | same height on the quality | *as … as* / *about as … as* | B |
@@ -205,7 +205,7 @@ Write the names, then the rank join, then the shared adjective on `/ɡ/`. **`e`*
 ### How many names {#arity}
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [**Multi (2+)** under **`e` / `ue`**](../comparatives.md#comparative-arity) | comparative ladder | earlier above later (`e`); later above earlier (`ue`) | I |
 | [**Single-item (1)** under **`e` / `ue`**](../comparatives.md#comparative-arity) | superlative | *the …-est* / *the least …* | I |
@@ -250,7 +250,7 @@ Keep the rank join; change what the shared word is.
 Put a `/th/` stance word where the second name would go, right before the rank join. It is the **bar**: the value that stance sets. After the fence it is an ordinary stance on the whole claim.
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | Use | English | Stage |
+| Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [name + bar + **`zel`**](../comparatives.md#bars) | above the bar | *more than planned* / *later than planned* | I |
 | [name + bar + **`zuel`**](../comparatives.md#bars) | below the bar | *less than planned* / *earlier than planned* | I |
@@ -300,7 +300,7 @@ The bar's ending keeps its own job: on a channel it is evidence strength (`thoba
 
 ### Vague amounts {#vague}
 
-English *many* and *often* rank against an unstated baseline. Egabon names the bar.
+English *many* and *often* rank against an unstated baseline. Agebon names the bar.
 
 <!-- cheat-sheet: roles-comparing -->
 | English | Bar and rank | Stage |

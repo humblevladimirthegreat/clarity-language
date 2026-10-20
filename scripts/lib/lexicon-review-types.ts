@@ -4,7 +4,7 @@ import type { ChatMessage } from "./llm-client.js";
 export type SubjectKind = "row" | "compound" | "alias" | "role" | "pair";
 
 /**
- * One thing to review, reduced to English fields. The model never sees Egabon, so `data`
+ * One thing to review, reduced to English fields. The model never sees Agebon, so `data`
  * carries concrete / abstract / mnemonic text only; `key` and `label` are for humans.
  */
 export type Subject = {

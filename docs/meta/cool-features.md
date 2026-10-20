@@ -7,7 +7,7 @@ Use this document for styling examples when producing more posts, and seeing wha
 
 ### Command vs Prohibition Redundancy via Word-Order
 
-Sentences in Egabon start with a speech act word: yal for statements (usually omitted), yol for questions, yel for commands, and yul for prohibitions. Being only a single vowel apart can lead to mishearing though, so each act also has its own usual word order for redundancy:
+Sentences in Agebon start with a speech act word: yal for statements (usually omitted), yol for questions, yel for commands, and yul for prohibitions. Being only a single vowel apart can lead to mishearing though, so each act also has its own usual word order for redundancy:
 
 * statement - verb last
 * question - verb second
@@ -64,7 +64,7 @@ Full docs: https://clarityconlang.com/grammar/speech-moves.html#act-word-order
 
 Judging a person's character from one action is a common cognitive distortion (the fundamental attribution error), and treating that character as a fixed essence (Essentialism) makes it worse. Both make us less compassionate towards others.
 
-Egabon lets any label mark how essential we treat the behavior with an infix before the ending letter:
+Agebon lets any label mark how essential we treat the behavior with an infix before the ending letter:
 
 - **tha** — this one occasion: `gozovothal` "lazy this time" (one slow day is not a trait)
 - **the** — a pattern with exceptions: `gozovothel` "tends to be lazy" (as opposed to being a consistently lazy person)
@@ -121,7 +121,7 @@ Full docs: https://clarityconlang.com/grammar/plurality.html#verbs-v
 
 ### *May* Says If You're Finding Out
 
-When we're unsure about something, we often just keep turning it over in our heads - *maybe he's mad at me, maybe he isn't* - which feels like figuring it out but never actually checks. Egabon makes you say whether you're going to find out.
+When we're unsure about something, we often just keep turning it over in our heads - *maybe he's mad at me, maybe he isn't* - which feels like figuring it out but never actually checks. Agebon makes you say whether you're going to find out.
 
 A possibility is marked with the stance word `ovu` (*may*), and its ending says what you're doing about it:
 
@@ -173,7 +173,7 @@ Full docs: https://main.d2xds94zsgwptg.amplifyapp.com/grammar/x-compounds.html#c
 
 ### Pronouns Point by Role
 
-English pronouns are often ambiguous as to what the antecedent is, especially *it*. Egabon pronouns point by the part someone played in a recent event, so the form itself tells you who or what you mean. There is no gender for pronouns, and not even animacy.
+English pronouns are often ambiguous as to what the antecedent is, especially *it*. Agebon pronouns point by the part someone played in a recent event, so the form itself tells you who or what you mean. There is no gender for pronouns, and not even animacy.
 
 The first letter is the part of speech in this sentence (`z-` subject, `d-` object, …). Then comes a role vowel (`a` the doer, `u` the one it happened to, `o` the extra party), `x`, a pointer vowel (`a` the latest, `o` the other one, `e` this same sentence), and -r.
 
@@ -251,7 +251,7 @@ Full Docs and real examples: [https://main.d2xds94zsgwptg.amplifyapp.com/grammar
 
 ### Egocentric Directions Require Viewpoint
 
-The egocentric direction terms (left/right/ahead/behind) are ambiguous because they are relative to some reference point that is usually omitted. We have all had to say or at least heard “No, the other left\!” because of a mismatched viewpoint where you meant your left but the addressee assumed their left. Egabon fixes this by requiring the viewpoint.
+The egocentric direction terms (left/right/ahead/behind) are ambiguous because they are relative to some reference point that is usually omitted. We have all had to say or at least heard “No, the other left\!” because of a mismatched viewpoint where you meant your left but the addressee assumed their left. Agebon fixes this by requiring the viewpoint.
 
 There is no word that simply means “left.” Instead, you use the word for “west” compounded with the point of reference. west-you, west-me, west-John means your left, my left, and John’s left respectively. Ditto for all other compass directions. This removes ambiguity and will probably also improve people’s sense of direction \- if compass directions are the default you’ll likely get better at knowing which way is North (like the Guugu Yimithirr tribe whose language does not have left/right at all and they only use compass directions).
 

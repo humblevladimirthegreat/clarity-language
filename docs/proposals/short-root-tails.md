@@ -214,7 +214,7 @@ In a scratch worktree on `9d7b975b`:
 - **Placement:** one `convert-word --lexicon --only` pass over the 69 three-letter rows and the 67 five-letter rows above, with no manual fixes. Run with the three-letter rows alone, placement stops inside the short anneal, because kept five-letter roots block too many tail spellings. Re-placing the clashing rows is required, not optional.
 - **Retie:** 6,757 reties in 97 files, 57 to review, nothing blocking.
 - **`grammar-check`:** all 2,720 doc sentences have exactly one tree.
-- **Egabon doc lint:** passes.
+- **Agebon doc lint:** passes.
 - **`npm test`:** 20 failing tests and suites, none of them a parser collision.
   - Literals the retie can't follow in tests: `hamom`, `gobom`, the `vawalal` TTS fixtures.
   - Unbound-resume examples that became real words: `zadar` now resumes jar (`ada`) and `zalar` sand (`ala`).

@@ -57,7 +57,7 @@ The one who sees takes **z-**.
     assert.equal(padExerciseSpoilerBlanks(md), md);
   });
 
-  it("inserts blank between Egabon and morph in details", () => {
+  it("inserts blank between Agebon and morph in details", () => {
     const md = `### Translation practice
 
 ::: details Show answer

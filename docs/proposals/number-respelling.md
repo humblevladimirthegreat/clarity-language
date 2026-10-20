@@ -124,7 +124,7 @@ The proposed table passes every hard pair. No two digits share a vowel across a 
 
 The alphabet opens with the digit letters in digit order, as today:
 
-| Egabon | `b` | `d` | `g` | `v` | `z` | `h` | `l` | `r` | `n` | `m` | `w` | `y` | `th` | `x` |
+| Agebon | `b` | `d` | `g` | `v` | `z` | `h` | `l` | `r` | `n` | `m` | `w` | `y` | `th` | `x` |
 |--------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|------|-----|
 | Digit syllable | bu (1) | da (2) | go (3) | ve (4) | zu (5) | ha (6) | lo (7) | re (8) | nu (9) | ma (0) | | | | |
 | Name | ba | du | ge | vo | za | hu | le | ro | na | mu | we | ya | tho | xu |
@@ -179,7 +179,7 @@ Numeric-derivation stems change the same way: `raba` → `rawa` (`zulamalrabal` 
 
 ## Open questions
 
-1. **Listening test.** The confusion weights and robustness ranking come from published phonetics and common second-language errors, not from Egabon listeners. Before absorbing, play the proposed table and the strongest alternatives to listeners in noise. Include speakers of Japanese, Korean and Spanish.
+1. **Listening test.** The confusion weights and robustness ranking come from published phonetics and common second-language errors, not from Agebon listeners. Before absorbing, play the proposed table and the strongest alternatives to listeners in noise. Include speakers of Japanese, Korean and Spanish.
 2. **Ending block or place walk.** The mnemonic no longer reads endings, so putting the four ending letters on 7–0 rests only on its hooks. Compare the proposed table again with the place walk on `w` / `y` (`mu ba vo re lu za do ne gu ha`), which also passes and keeps zero = breath.
 3. **Exponent strength.** If `wa` / `wu` tests badly, the fallback is `h` + `y` fillers with exponent `ha` / `hu`. Expect it to test about as badly, since `h` is the weakest consonant. Otherwise go back to `b` / `y` fillers and drop the filler-confusion requirement.
 4. **Hook for 9.** `nu` has none. A hook that needs no English would complete the block.

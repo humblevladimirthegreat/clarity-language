@@ -473,13 +473,13 @@ onBeforeUnmount(() => {
     ref="overlayRef"
     class="overlay"
     role="region"
-    aria-label="Egabon gloss overlay"
+    aria-label="Agebon gloss overlay"
     tabindex="0"
     @keydown="onKey"
   >
     <p
       class="stream"
-      aria-label="Egabon tokens"
+      aria-label="Agebon tokens"
       @pointerdown="onPointerDown"
       @pointermove="onPointerMove"
       @mouseup="onStreamMouseUp"

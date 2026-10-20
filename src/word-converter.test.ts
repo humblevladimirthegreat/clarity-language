@@ -4,7 +4,7 @@ import { describe, it } from "node:test";
 import {
   letterDistribution,
   mappedSourceLetters,
-  toEgabonWord,
+  toAgebonWord,
 } from "./word-converter.js";
 
 describe("spelling map", () => {
@@ -15,7 +15,7 @@ describe("spelling map", () => {
 
 describe("pronunciation conversion", () => {
   it("returns a three-letter root that echoes the word", () => {
-    const root = toEgabonWord("coffee");
+    const root = toAgebonWord("coffee");
     assert.equal(root.length, 3);
     assert.equal(root[1], "g");
   });

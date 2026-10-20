@@ -79,7 +79,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *baguette* | `ebodel` | 🥖 |
 | *croissant* | `agedol` | 🥐 |
@@ -89,7 +89,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -101,7 +101,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *see* | `vawebol` |
 | *find* | `vumewol` |
 
-#### English → Egabon {#beginner-english-to-egabon}
+#### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *There are three croissants.*
 
@@ -151,7 +151,7 @@ z-ant-x | g-twelve.spelled
 z-Uzozen | [d-cake | g-10th.spelled] | v-cook
 :::
 
-#### Egabon → English {#beginner-egabon-to-english}
+#### Agebon → English {#beginner-agebon-to-english}
 
 **1.** `zebodelx gramol.`
 
@@ -272,7 +272,7 @@ Change only the first letter. The marker and digits stay the same, and on these 
 Beginner already used **`ra`** (*how many*) and **`re`** (*which place from the start*). The marker vowel **V** completes that set: it says whether the word is a count, a rank, or a string of digits, and on a count it also gives the sign of the whole number. The table shows each marker's [shorthand](#writing-preferred-shorthand) symbol in parentheses. Forward ordinal **`e`** matches [rank join **e**](joins.md#rank-joins).
 
 <!-- cheat-sheet: numbers -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |---|---------|---------|-----|
 | **a** (`+`) | positive **scalar** (count or measure amount) | `g+3` *three cats*; `g+` *plural / more than one*; `z+3` *three* (subj); `b+12` *of size 12* | **`a`** ≈ add |
 | **u** (`-`) | negative **scalar** | `d-3` *−3* (obj); `z-` *some negative amount*; `g-2` signed measure on a noun | **`u`** ≈ undo |
@@ -312,7 +312,7 @@ A resume needs **at least one digit**: `grarer` = *that three again*; `gredur` =
 Beginner already used **`gral`** for *more than one*. Any marker may drop every digit group: **role letter + marker + ending** only. The marker still says what kind of number this is. With **-l** / **-m** / **-n**, the amount, rank, or label is **unspecified**. With **-r**, the word is a blank, like a standalone join **-r**: *some number* in a statement, *which number?* in a [fill-ask](questions.md#fill-ask-r).
 
 <!-- cheat-sheet: numbers -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|---------|---------|-----|
 | **`ra`** (`…+`) | unspecified **positive scalar**, specialized to **plural count / amount `>1`** | complements `…+0` (zero), `…+1` (one), `…+N` (exact N≥2) | **`a`** ≈ add |
 | **`ru`** (`…-`) | unspecified **negative scalar** | *some negative amount*; exact negatives keep digits (`…-N`) | **`u`** ≈ undo |
@@ -369,7 +369,7 @@ To ask for a **number**, write a [number word](numbers.md) with no digits and th
 > "How many cats does Uzozen see?"
 
 <!-- cheat-sheet: numbers -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | `g=+` (`grar`) | fill a count or amount | *How many?* / *How much?* | **a** ≈ add |
 | `g=#` (`grer`) | fill a place in order | *Which place?* (*which floor, which chapter*) | **e** ≈ order |
@@ -700,14 +700,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Use
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *seat* | `ozohol` | 💺 |
 | *trophy* | `udoral` | 🏆: its abstract is *score* |
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -717,7 +717,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Use
 | *run* | `varuvel` |
 | *punch* | `vanuvul` |
 
-#### English → Egabon {#intermediate-english-to-egabon}
+#### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *There are about three seats.*
 
@@ -769,7 +769,7 @@ z-+-e3 | d-trophy | v-see
 z-Uzozen | v-punch | th-70-percent-likely
 :::
 
-#### Egabon → English {#intermediate-egabon-to-english}
+#### Agebon → English {#intermediate-agebon-to-english}
 
 **1.** `zredul dudoral vawebol.`
 
@@ -1224,13 +1224,13 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *telescope* | `edowel` | 🔭 |
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -1240,7 +1240,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *seat* | `ozohol` |
 | *see* | `vawebol` |
 
-#### English → Egabon {#advanced-english-to-egabon}
+#### English → Agebon {#advanced-english-to-agebon}
 
 **1.** *There are infinitely many stars.*
 
@@ -1274,7 +1274,7 @@ x-finally | z-Uzozen | d-cloud-x | v-see
 z-Olazun | h---e- | d-star | v-see
 :::
 
-#### Egabon → English {#advanced-egabon-to-english}
+#### Agebon → English {#advanced-agebon-to-english}
 
 **1.** `zozalx grabam.`
 

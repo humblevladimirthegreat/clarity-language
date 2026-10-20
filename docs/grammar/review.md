@@ -14,7 +14,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -51,7 +51,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *wood* | `uwul` |
 | *basket* | `abowal` |
 
-#### English → Egabon {#beginner-english-to-egabon}
+#### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *An angry Olazun sees an umbrella.*
 
@@ -107,7 +107,7 @@ z-Uhelan | v-sing | [th-if | b-wind]
 **Rule:** [If](causation.md#if)
 :::
 
-#### Egabon → English {#beginner-egabon-to-english}
+#### Agebon → English {#beginner-agebon-to-english}
 
 **1.** `zuhelan vawebol darl zolazun vebomel.`
 
@@ -307,7 +307,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -347,7 +347,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *CLUES* | `thunem` |
 | *sing* | `vezuyol` |
 
-#### English → Egabon {#intermediate-english-to-egabon}
+#### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *Uhelan climbs. It follows that Uhelan doesn't swim.*
 
@@ -441,7 +441,7 @@ z-Olazun | th-CLUES-Uhelan | v-sing
 **Rule:** [Whose view (holder)](knowing.md#holder)
 :::
 
-#### Egabon → English {#intermediate-egabon-to-english}
+#### Agebon → English {#intermediate-agebon-to-english}
 
 **1.** `zuhelan dedehal vawebol. zuhelan vawebor dobowal.`
 
@@ -629,7 +629,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -653,7 +653,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *sleep* | `vezuvol` |
 | *see* | `vawebol` |
 
-#### English → Egabon {#advanced-english-to-egabon}
+#### English → Agebon {#advanced-english-to-agebon}
 
 **1.** *It was Olazun, not someone else, who cooked a tomato.*
 
@@ -685,7 +685,7 @@ z-Uhelan | [d-station | [w-MEMORY | g-quiet]] | v-see
 **Rule:** [Mood on one adjective](knowing.md#mood-on-adjective)
 :::
 
-#### Egabon → English {#advanced-egabon-to-english}
+#### Agebon → English {#advanced-agebon-to-english}
 
 **1.** `zuhelan duyahel vewureloel.`
 

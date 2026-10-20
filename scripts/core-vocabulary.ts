@@ -71,7 +71,7 @@ function printSpacing(checkpoints: Checkpoint[], core: ReadonlyMap<string, strin
     return row && (row.concrete || row.abstract);
   };
   const { checkpoint, introduce, pullForward, review } = spacingPlan(checkpoints, core, index, gloss);
-  const show = (w: SpacingWord) => `${w.english} \`${w.egabon}\``;
+  const show = (w: SpacingWord) => `${w.english} \`${w.agebon}\``;
 
   console.log(`${checkpoint.anchor}  (${checkpoint.band}, checkpoint ${index + 1} of ${checkpoints.length}${checkpoint.converted ? "" : ", legacy"})`);
   console.log("");
@@ -182,8 +182,8 @@ function main(): void {
   }
   const report = coreReport(checkpoints, core);
   for (const { checkpoint, fresh, review, overCap } of report) {
-    const shared = (e: { egabon: string }) => checkpoint.entries.filter((o) => o.egabon === e.egabon).length > 1;
-    const words = fresh.map((e) => `${e.english} \`${e.egabon}\`${shared(e) ? ` [${e.root}]` : ""}`).join(", ");
+    const shared = (e: { agebon: string }) => checkpoint.entries.filter((o) => o.agebon === e.agebon).length > 1;
+    const words = fresh.map((e) => `${e.english} \`${e.agebon}\`${shared(e) ? ` [${e.root}]` : ""}`).join(", ");
     console.log(`${overCap ? "OVER" : "    "} ${String(fresh.length).padStart(2)} new  ${String(review.length).padStart(2)} review  ${checkpoint.anchor}  ${words}`);
   }
   const over = report.filter((r) => r.overCap);

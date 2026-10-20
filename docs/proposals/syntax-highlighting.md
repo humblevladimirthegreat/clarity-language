@@ -1,4 +1,4 @@
-# Structure highlighting for Egabon examples
+# Structure highlighting for Agebon examples
 
 Status: idea. Not design authority; fold into grammar / meta docs, then drop.
 
@@ -34,9 +34,9 @@ The parser already computes most of this.
 
 The CLI's nested JSON is not the right shape. The prototype should emit a flat list of `{ word index, text range, annotation }`.
 
-## Which text is Egabon
+## Which text is Agebon
 
-Examples on grammar pages are written as a blockquote: the Egabon line as an inline code span, then a morph-gloss line as plain text, then the English. Only a few fenced blocks exist. So eligibility comes from the build's own classification of code spans ([marking Egabon](../meta/grammar-docs.md#marking-egabon)), not from fence tags:
+Examples on grammar pages are written as a blockquote: the Agebon line as an inline code span, then a morph-gloss line as plain text, then the English. Only a few fenced blocks exist. So eligibility comes from the build's own classification of code spans ([marking Agebon](../meta/grammar-docs.md#marking-agebon)), not from fence tags:
 
 | Class | Highlight |
 |-------|-----------|
@@ -45,21 +45,21 @@ Examples on grammar pages are written as a blockquote: the Egabon line as an inl
 | template, fragment | only if the build already parses it with sample context; otherwise leave plain |
 | English, unclassified | never |
 
-Morph-gloss lines (`z-Azawan | v-walk`) are not Egabon and must never be tagged or treated as such. They are plain text in a blockquote and are never touched.
+Morph-gloss lines (`z-Azawan | v-walk`) are not Agebon and must never be tagged or treated as such. They are plain text in a blockquote and are never touched.
 
 ### Fence tags
 
-An audit found two fenced blocks tagged `egabon`, both in [say-people-places.md](../grammar/say-people-places.md) (the fence-glyph examples near *opaque spans*). Both are Egabon cites, not glosses, so the tag is correct there. No incorrectly tagged gloss exists today.
+An audit found two fenced blocks tagged `agebon`, both in [say-people-places.md](../grammar/say-people-places.md) (the fence-glyph examples near *opaque spans*). Both are Agebon cites, not glosses, so the tag is correct there. No incorrectly tagged gloss exists today.
 
 Policy to keep:
 
-- A gloss, English line, table or diagram is never tagged `egabon`. Use `text`.
-- `egabon` is only for real Egabon, checked line by line by the build.
-- If the audit later finds a gloss tagged `egabon`, retag it `text` in the same change.
+- A gloss, English line, table or diagram is never tagged `agebon`. Use `text`.
+- `agebon` is only for real Agebon, checked line by line by the build.
+- If the audit later finds a gloss tagged `agebon`, retag it `text` in the same change.
 
 ## Warning
 
-`vitepress dev` prints *The language 'egabon' is not loaded* once per tagged fence (two). Register an `egabon` language in the VitePress config (a minimal grammar, or an alias to plain text) so the tag is known and the warning goes away. This is independent of the highlighting work and can ship first.
+`vitepress dev` prints *The language 'agebon' is not loaded* once per tagged fence (two). Register an `agebon` language in the VitePress config (a minimal grammar, or an alias to plain text) so the tag is known and the warning goes away. This is independent of the highlighting work and can ship first.
 
 ## Approach
 
@@ -88,7 +88,7 @@ This ships no parser to readers. [browser.ts](../../src/parse/browser.ts) sugges
 
 ## Plan
 
-1. Register the `egabon` language to silence the warning.
+1. Register the `agebon` language to silence the warning.
 2. Prototype: for a handful of doc examples, print the flat annotation list (fence extents, topic stretches, pronoun to antecedent) and check it by eye against the grammar pages.
 3. If the mapping holds, add the build-time transform and CSS.
 4. Fold the policy lines under *Fence tags* into [grammar-docs.md](../meta/grammar-docs.md) and drop this proposal.

@@ -6,7 +6,7 @@
  *      npm run rename-language -- --write
  *      npm run rename-language -- --from <old> --to <new> --write
  *
- * Every tracked text file: `Egabon` / `egabon` / `EGABON` take the same casing of the new name;
+ * Every tracked text file: `Agebon` / `agebon` / `AGEBON` take the same casing of the new name;
  * any other casing is listed for review and left as is. The old root (name minus -n) is respelled
  * only in docs/meta/language-name.md, since elsewhere it may now be another row's root.
  * Tracked paths carrying the name are `git mv`ed, and each moved grammar page gets a

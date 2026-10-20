@@ -6,14 +6,14 @@
 
 ## Motivation
 
-Learners can **look up** roots ([lexicon](../../grammar/lexicon.md)) and eventually **inspect** sentences in context (`gloss-overlay-ui.md`). They still lack a path to **retain** vocabulary: Egabon ↔ English mappings, concrete vs abstract senses, and the closed overlay inventory.
+Learners can **look up** roots ([lexicon](../../grammar/lexicon.md)) and eventually **inspect** sentences in context (`gloss-overlay-ui.md`). They still lack a path to **retain** vocabulary: Agebon ↔ English mappings, concrete vs abstract senses, and the closed overlay inventory.
 
-The data is already curated (`lexicon-published.csv`, `lexicon-compounds.csv`, `lexicon-overlays.csv`), and the `core` column already orders the learner's content roots by the checkpoint that introduces each one. Spaced repetition is a solved product problem (Anki and FSRS). The missing piece is a **thin generator** that emits Egabon-shaped notes from those CSVs: not a second dictionary, not a custom SRS engine, and not a fork of generic “AI vocab deck” tools that assume natural-language TTS and LLM enrichment.
+The data is already curated (`lexicon-published.csv`, `lexicon-compounds.csv`, `lexicon-overlays.csv`), and the `core` column already orders the learner's content roots by the checkpoint that introduces each one. Spaced repetition is a solved product problem (Anki and FSRS). The missing piece is a **thin generator** that emits Agebon-shaped notes from those CSVs: not a second dictionary, not a custom SRS engine, and not a fork of generic “AI vocab deck” tools that assume natural-language TTS and LLM enrichment.
 
 ## Goals
 
 1. Generate **importable study decks** from the lexicon CSVs (regenerable; CSV stays canonical).
-2. One note per word with **two cards**: recognition (Egabon → English) and production (English → Egabon). The English is the concrete and abstract glosses plus the `english_aliases` cues.
+2. One note per word with **two cards**: recognition (Agebon → English) and production (English → Agebon). The English is the concrete and abstract glosses plus the `english_aliases` cues.
 3. Ship **packs** in the order the grammar introduces words, so nobody is handed the full root list on day one and the deck matches what the checkpoints use.
 4. Prefer **Anki** for long-term review (scheduling, mobile, offline); one shared note type across every pack so a learner keeps one schedule.
 5. Keep generation **deterministic and gloss-locked**: no network fetch, no AI sense invention.
@@ -43,12 +43,12 @@ Stable keys: published `root`; compound `stem`; overlay `sense_form` (the `th` /
 
 ## Card
 
-One note type, **Egabon lexicon**, two cards per note.
+One note type, **Agebon lexicon**, two cards per note.
 
 | Card | Front | Back |
 |------|-------|------|
-| **Recognition** | Egabon stem (no PoS letter, no ending) | The English block; for a compound, its parts; mnemonic as a small optional line |
-| **Production** | The English block | Egabon stem; for a compound, its parts; mnemonic as a small optional line |
+| **Recognition** | Agebon stem (no PoS letter, no ending) | The English block; for a compound, its parts; mnemonic as a small optional line |
+| **Production** | The English block | Agebon stem; for a compound, its parts; mnemonic as a small optional line |
 
 The **English block** is the **concrete** gloss, the **abstract** gloss, and an **also** line of `english_aliases`, each labeled and omitted when empty.
 
@@ -75,7 +75,7 @@ An overlay has no concrete / abstract split; its `gloss` fills the concrete line
 
 `english_by_pos` is not shown on cards: it is role-English for glossing a stem in a given role, and the front has no role letter.
 
-**Tags** use Anki’s `::` hierarchy: `egabon::root` / `egabon::compound` / `egabon::overlay`; `egabon::core::<page>::<band>` from the `core` cell (e.g. `egabon::core::clause::beginner`); `egabon::overlay::<kind>`; `egabon::stage::<band>`.
+**Tags** use Anki’s `::` hierarchy: `agebon::root` / `agebon::compound` / `agebon::overlay`; `agebon::core::<page>::<band>` from the `core` cell (e.g. `agebon::core::clause::beginner`); `agebon::overlay::<kind>`; `agebon::stage::<band>`.
 
 **Citation vs sentence use:** cards study stems as in the lexicon. The PoS letter and reference ending are not on the card; learners add them when writing sentences ([role letters](../../grammar/clause.md#role-letters)).
 
@@ -87,11 +87,11 @@ All packs use the same note type. A pack is a filter over the note list plus dec
 
 | Pack | Contents | Source of the list |
 |------|----------|--------------------|
-| **Core** | Every published root and compound with a `core` cell. One subdeck per checkpoint, numbered in path order (`Egabon::Core::01 Clause · beginner`, …); within a subdeck, CSV order | `core` column, ordered by `stageCheckpoints` (reading order, every Beginner checkpoint, then Intermediate, then Advanced) |
+| **Core** | Every published root and compound with a `core` cell. One subdeck per checkpoint, numbered in path order (`Agebon::Core::01 Clause · beginner`, …); within a subdeck, CSV order | `core` column, ordered by `stageCheckpoints` (reading order, every Beginner checkpoint, then Intermediate, then Advanced) |
 | **Sakes** | The nine sake roots, each followed by its sake overlay note, in [sake inventory](../../grammar/sakes.md#sake-inventory) order | `sake` rows of `lexicon-overlays.csv`; each root is the overlay's host (`senseFormRoot`) |
 | **Everything** | All published roots and compounds, one deck per source | Published and compound CSVs |
 
-**Core follows the checkpoints.** A root’s `core` cell names the checkpoint that introduces it, so the Core subdecks are exactly the **New words** of each checkpoint, in the order a learner meets them. A learner unlocks the next subdeck as they reach its checkpoint. The column is hand-edited and linted (at most 5 new roots per checkpoint), so the pack inherits that pacing without its own list. Level reviews introduce no roots and get no subdeck. The checkpoints ask for English → Egabon translation from the first beginner band, which is why production cards ship with v1.
+**Core follows the checkpoints.** A root’s `core` cell names the checkpoint that introduces it, so the Core subdecks are exactly the **New words** of each checkpoint, in the order a learner meets them. A learner unlocks the next subdeck as they reach its checkpoint. The column is hand-edited and linted (at most 5 new roots per checkpoint), so the pack inherits that pacing without its own list. Level reviews introduce no roots and get no subdeck. The checkpoints ask for English → Agebon translation from the first beginner band, which is why production cards ship with v1.
 
 **Not core, not in Core.** House names, the `SELF` root, discourse-role specials, topic and generic pronouns, and the nine sake roots are never core ([core vocabulary column](../../meta/lexicon.md#core-vocabulary-column)): they are grammar, taught by their sections. They appear in **Everything**. The sake roots also get their own **Sakes** pack, since a learner names sakes from the beginner stage and the Core pack never carries them.
 
@@ -151,7 +151,7 @@ The downloadable decks (v2) are built by Amplify during `docs:publish`, not comm
 
 ## Regenerating (maintainers)
 
-- `npm run flashcards` writes `egabon-core`, `egabon-sakes`, and `egabon-everything` (`.apkg`, `.tsv`, and the `.json` handed to genanki) under `tmp/flashcards/`. `--pack core,sakes` picks packs, `--out <dir>` moves the output, `--tsv-only` skips Python.
+- `npm run flashcards` writes `agebon-core`, `agebon-sakes`, and `agebon-everything` (`.apkg`, `.tsv`, and the `.json` handed to genanki) under `tmp/flashcards/`. `--pack core,sakes` picks packs, `--out <dir>` moves the output, `--tsv-only` skips Python.
 - After packaging, `scripts/flashcards-check.py` imports every pack into a throwaway collection with Anki's own backend (the `anki` package, no GUI): the note type arrives, nothing conflicts, overlapping packs share notes, every card renders, and a second import adds nothing. `npm run build` runs `npm run flashcards`, so a lexicon edit that breaks a deck fails the build. A full run takes about 1.5 s.
 - The packager is `scripts/flashcards-package.py`, run as `.venv/bin/python` (the devcontainer creates the venv from `requirements.txt`, which pins `genanki` and `anki`). It owns the note type (fixed model id, templates, CSS); `src/flashcards.ts` owns the notes, GUIDs, deck ids, tags, and packs, and `npm test` covers it.
 - After any lexicon or `core` edit, regenerate; re-importing is covered in [Studying with the decks](#studying-with-the-decks).
@@ -169,14 +169,14 @@ Recommended use, for the learner. In v2 this becomes the copy beside the site do
 
 **Pacing with the checkpoints**
 
-- After import, suspend every Core card (Browse, search `deck:Egabon::Core`, select all, Suspend).
+- After import, suspend every Core card (Browse, search `deck:Agebon::Core`, select all, Suspend).
 - On reaching a checkpoint, unsuspend its subdeck (at most five words). New words then match the page being read, and the checkpoint's practice uses them right away.
-- Study from the top **Egabon** deck each day, so reviews from every subdeck come mixed.
+- Study from the top **Agebon** deck each day, so reviews from every subdeck come mixed.
 
 **Reviewing**
 
 - About 10 to 15 minutes a day. Do the reviews every day; when time is short, skip new cards, not reviews.
-- On a production card, say or write the Egabon before flipping. Grade **Again** when it did not come, **Good** when it did; **Hard** is a slow pass, not a fail.
+- On a production card, say or write the Agebon before flipping. Grade **Again** when it did not come, **Good** when it did; **Hard** is a slow pass, not a fail.
 - Use the mnemonic line on the back when a word will not stick, and the checkpoint practice on the site to use the word in a sentence.
 - A learner who only wants to read can suspend the Production card type.
 

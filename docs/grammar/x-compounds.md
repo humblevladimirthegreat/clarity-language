@@ -2,13 +2,13 @@
 <a id="x-compounds"></a>
 <a id="compound-parser"></a>
 
-Sometimes one Egabon word is two smaller meanings with **`x`** in the middle. The last letter (**-l** / **-m** / **-n** / **-r**) is still the ending of the **whole** word. What sits left and right of that **`x`** tells you which kind of word it is.
+Sometimes one Agebon word is two smaller meanings with **`x`** in the middle. The last letter (**-l** / **-m** / **-n** / **-r**) is still the ending of the **whole** word. What sits left and right of that **`x`** tells you which kind of word it is.
 
 ## Beginner {#beginner}
 
 ### Two roots, one word
 
-English often treats two words as one idea (*peanut butter*), or joins two names with a hyphen. In Egabon you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md#beginner) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
+English often treats two words as one idea (*peanut butter*), or joins two names with a hyphen. In Agebon you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md#beginner) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
 
 > `zubedaxuyudal.`
 >
@@ -24,7 +24,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 >
 > "in love" (the crush kind)
 
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | full root **`x`** full root | two roots, one word | `zubedaxuyudal` *peanut butter* | **x** ≈ plus |
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxuduyel` *someone who teaches* (**-r** *the one teaching*) | **a** doer / **e** scene / **u** undergoer / **o** extra `/b/` party |
@@ -36,7 +36,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 ### Words you look up, not build
 <a id="lexical-compounds"></a>
 
-English *bedroom*, *doorbell*, and *friend* feel like one word. Egabon lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *bed* and *room*.
+English *bedroom*, *doorbell*, and *friend* feel like one word. Agebon lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *bed* and *room*.
 
 Inside the dictionary spelling you can still see the two old roots, with a join letter instead of **`x`**. That letter is the [word ending](word-endings.md) of the **left** root: **-l** when that piece is the everyday kind, **-m** when it is the abstract sense (named **-n** or resume **-r** if that left piece is a name or a resume). The last letter of the word is still the ending of the **whole** entry. In a sentence you add a role letter and that whole-word ending, the same way you do for *dog* or *hammer*.
 
@@ -47,7 +47,7 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 > "a bedroom"
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | `zobaholurahal` | bed **-l** room | bedroom | left piece everyday |
 | `zoyelaboral` | door **-l** bell | doorbell | left piece everyday |
@@ -60,10 +60,10 @@ If the pairing is not in the dictionary, either glue with **`x`** (`zubedaxuyuda
 ### One thing or two?
 <a id="compound-vs-separate"></a>
 
-Ask how many things you mean. *A hammer and a wrench* is two tools, so two Egabon words (and a [join](joins.md) if you need *and*). *Peanut butter* is one food, so one word. *Bedroom* is also one thing, but that spelling is already in the dictionary, so there is no **`x`**.
+Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agebon words (and a [join](joins.md) if you need *and*). *Peanut butter* is one food, so one word. *Bedroom* is also one thing, but that spelling is already in the dictionary, so there is no **`x`**.
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | two words | two things, or a property already marked another way | `zehowol zerewol zam` *a hammer and a wrench*; `zudozol gubulel` *a blue dog* (`/ɡ/`) | |
 | **`x`** in the middle | one thing; you can still hear both roots | `gagomaxulamal` *in love* (the crush kind); `zubedaxuyudal` *peanut butter*; `zuzozexolazun` (one person) | **x** ≈ plus |
@@ -81,7 +81,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *doorbell* | `oyelaboral` | 🚪🔔 door **-l** bell |
 | *raincoat* | `erulalogobal` | 🌧️🧥 rain **-l** coat |
@@ -91,7 +91,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
@@ -101,7 +101,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *find* | `vumewol` |
 | *see* | `vawebol` |
 
-#### English → Egabon {#beginner-english-to-egabon}
+#### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *a bell and a doorbell*
 
@@ -151,7 +151,7 @@ z-Uzozen-x-Olazun
 z-Olazun | d-wood | v-see
 :::
 
-#### Egabon → English {#beginner-egabon-to-english}
+#### Agebon → English {#beginner-agebon-to-english}
 
 **1.** `zolazun doyelaboral vumewol.`
 
@@ -232,7 +232,7 @@ z-doorbell
 Beginner already used two roots glued with **`x`**, dictionary words with no **`x`**, and *someone who teaches*. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family.
 
 <!-- cheat-sheet: roles-comparing -->
-| Egabon | Use | English | Cue |
+| Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | role vowel(s) **`x`** **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** | [role pointer](pronouns.md#role-pointers) | `zaxar` *they* (whoever did the latest thing); `zaxal` *another one*; `zaxam` *what they did* | **a** again / **e** echo / **o** other / **u** unsaid |
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxuduyel` *someone who teaches* (**-r** *the one teaching*) | **a** doer / **e** scene / **u** undergoer / **o** extra `/b/` party |
@@ -282,7 +282,7 @@ The role vowels are **`a`** / **`e`** / **`u`** / **`o`** and the two-vowel pair
 
 ### Conversation length (name **`x`** vowel) {#conversation-length}
 
-English *I can stay a while* or *I only have a minute* tells the other person how long you can talk. In Egabon, add **`x`** and one vowel before **-n** on a [greeting](word-endings.md#greeting) (your own name with a period, `SELFn.`) or a [call](speech-moves.md#vocative) (their name under **`/y/`**, `yolazun.`). At arrival, the vowel sets how long you expect the conversation to last. At departure, the same form says how soon you are leaving. The vowel is about the conversation, not a grade of the person.
+English *I can stay a while* or *I only have a minute* tells the other person how long you can talk. In Agebon, add **`x`** and one vowel before **-n** on a [greeting](word-endings.md#greeting) (your own name with a period, `SELFn.`) or a [call](speech-moves.md#vocative) (their name under **`/y/`**, `yolazun.`). At arrival, the vowel sets how long you expect the conversation to last. At departure, the same form says how soon you are leaving. The vowel is about the conversation, not a grade of the person.
 
 > `SELFxan.`
 >
@@ -352,14 +352,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 **New words:**
 
-| English | Egabon | Cue |
+| English | Agebon | Cue |
 |---------|--------|-----|
 | *salad* | `azadal` | 🥗 |
 | *plate* | `uwodal` | 🍽️ |
 
 **Review:**
 
-| English | Egabon |
+| English | Agebon |
 |---------|--------|
 | *your name* | `SELFn` |
 | *Uzozen* | `uzozen` |
@@ -371,7 +371,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vawebol` |
 | *scream* | `vuyomul` |
 
-#### English → Egabon {#intermediate-english-to-egabon}
+#### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *I have time; we can stay.* (hello, with your own name)
 
@@ -421,7 +421,7 @@ z-salad-x-plate
 z-Ovela-x-Azada-x-Agedon
 :::
 
-#### Egabon → English {#intermediate-egabon-to-english}
+#### Agebon → English {#intermediate-agebon-to-english}
 
 **1.** `SELFxon.`
 

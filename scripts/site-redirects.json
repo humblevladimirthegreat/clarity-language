@@ -47,8 +47,8 @@
     },
     {
       "from": "/grammar/why-agelan.html",
-      "to": "/grammar/why-egabon.html",
-      "note": "Public URL after renaming why-agelan.md through why-agazan.md to why-egabon.md."
+      "to": "/grammar/why-agebon.html",
+      "note": "Public URL after renaming why-agelan.md through why-agazan.md to why-agebon.md."
     },
     {
       "from": "/grammar/joins-hooks-cheatsheet.html",
@@ -57,8 +57,8 @@
     },
     {
       "from": "/grammar/agazan-english-cheatsheet.html",
-      "to": "/grammar/cheat-sheets/egabon-english.html",
-      "note": "Public URL after moving agazan-english-cheatsheet.md into cheat-sheets/ and renaming it egabon-english.md."
+      "to": "/grammar/cheat-sheets/agebon-english.html",
+      "note": "Public URL after moving agazan-english-cheatsheet.md into cheat-sheets/ and renaming it agebon-english.md."
     },
     {
       "from": "/grammar/exceptions-cheatsheet.html",
@@ -67,18 +67,33 @@
     },
     {
       "from": "/grammar/why-agazan.html",
-      "to": "/grammar/why-egabon.html",
-      "note": "Public URL after renaming the language Agazan to Egabon (root tails respelled 👓)."
+      "to": "/grammar/why-agebon.html",
+      "note": "Public URL after renaming the language Agazan to Agebon (root tails respelled 👓)."
     },
     {
       "from": "/grammar/claritish/learn-agazan.html",
-      "to": "/grammar/claritish/learn-egabon.html",
-      "note": "Public URL after renaming the language Agazan to Egabon."
+      "to": "/grammar/claritish/learn-agebon.html",
+      "note": "Public URL after renaming the language Agazan to Agebon."
     },
     {
       "from": "/grammar/cheat-sheets/agazan-english.html",
-      "to": "/grammar/cheat-sheets/egabon-english.html",
-      "note": "Public URL after renaming the language Agazan to Egabon."
+      "to": "/grammar/cheat-sheets/agebon-english.html",
+      "note": "Public URL after renaming the language Agazan to Agebon."
+    },
+    {
+      "from": "/grammar/cheat-sheets/egabon-english.html",
+      "to": "/grammar/cheat-sheets/agebon-english.html",
+      "note": "Public URL after the language was renamed Egabon → Agebon."
+    },
+    {
+      "from": "/grammar/claritish/learn-egabon.html",
+      "to": "/grammar/claritish/learn-agebon.html",
+      "note": "Public URL after the language was renamed Egabon → Agebon."
+    },
+    {
+      "from": "/grammar/why-egabon.html",
+      "to": "/grammar/why-agebon.html",
+      "note": "Public URL after the language was renamed Egabon → Agebon."
     }
   ]
 }
