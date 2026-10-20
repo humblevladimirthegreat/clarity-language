@@ -72,7 +72,7 @@ Each vowel is a run in alphabet order (`u a o e` = 1 to 4). In the air, the fing
 | `e` | four fingers | 5 |
 | spare | thumb | 1 |
 
-Opposite vowels differ by one finger (`u` ↔ `a`, `o` ↔ `e`), so a letter name and its digit syllable (`da` / `du`) differ by one finger. The most frequent vowel, `a`, is the easy V shape.
+Opposite vowels differ by one finger (`u` ↔ `a`, `o` ↔ `e`), so a letter name and its digit syllable (`da` / `du`) differ by one finger. The most frequent vowel on the stressed first beat, `a`, is the easy V shape. In running text the four vowels are about equally common, so the count order costs the same either way; on first syllables (`a` 31%, `u` 28%, `o` 23%, `e` 18% in the doc example sentences) it is the cheaper direction.
 
 ### Consonant hand (dominant)
 
@@ -97,7 +97,7 @@ Opposite vowels differ by one finger (`u` ↔ `a`, `o` ↔ `e`), so a letter nam
 
 A digit's shape is its count held up, so number words come out naturally. The fist is never a letter, so it means *this hand is silent*.
 
-On piano, `x` is the one learned pair: a hooked run of four has no finger after the pinky. The most frequent first consonants in roots (`b`, `g`, `z`) are single notes.
+On piano, `x` is the one learned pair: a hooked run of four has no finger after the pinky. The most frequent first consonants in roots (`z`, `b`, `g`) are single notes.
 
 ### Syllable rules
 
@@ -121,25 +121,25 @@ Each channel has room the letters don't use: the white keys on piano; hand locat
 
 ### Alternatives considered
 
-- **Frequency hand.** Single fingers for the five most frequent consonants in roots (`g b d z h`), with the easiest pairs going to the next most frequent. It is faster to play but loses the count logic and has to be learned as a table.
+- **Frequency hand.** Single fingers for the five most frequent consonants in roots (`z b g d h`), with the easiest pairs going to the next most frequent. It is faster to play but loses the count logic and has to be learned as a table.
 - **One form (piano everywhere).** The earlier piano layout put single letters on single fingers. Raised in the air, it gave `r`, `h`, `y`, and `x` hard shapes, made `d` a lone middle finger, and made `a` a lone ring finger. Pressed into a palm, the receiver had to tell which single fingertip landed, which touch does poorly at speed.
-- **One form (shape everywhere).** Pressing whole runs on piano averages about 2.7 notes per consonant, and a quarter of consonants become four- or five-note clusters. Words ending in `-n` and `-m` would hold a black-key cluster, and a listener can't tell four notes from five by ear. In the bass, `e` would be a four-note cluster around C♯3, which is mud.
+- **One form (shape everywhere).** Pressing whole runs on piano averages about 2.7 notes per consonant, and a quarter of consonants become four- or five-note clusters. Words ending in `-n` and `-m` would hold a black-key cluster, and a listener can't tell four notes from five by ear. In the bass, `e` would be a four-note cluster around F♯3, which is mud.
 - **Separate shapes for `b y th x`.** A hooked index for `b`, crossed index + middle for `x`, a thumb–index circle for `th`, and thumb + index + pinky for `y`. Four unrelated shapes to learn, and two failed by touch: crossed fingertips land side by side exactly like `d`, and the circle's pinch lands where the index would, so `th` felt like `v`. Plain middle + ring + pinky for `th` and thumb + middle + ring + pinky for `x` fix that, but `th` / `g` and `x` / `r` then differ only by which end of the hand the dots sit at.
 
 ## Channels
 
 ### Piano
 
-Every note is a **black key**, so every sound belongs to one pentatonic scale (C♯ D♯ F♯ G♯ A♯) and nothing clashes. Each hand rests over one octave of five black keys, starting on C♯ for now (see [open question 1](#open-questions)), and plays **piano** forms. The layout is the same for every player: the left hand plays vowels and the right hand consonants ([handedness](#handedness)).
+Every note is a **black key**, so every sound belongs to one pentatonic scale (C♯ D♯ F♯ G♯ A♯) and nothing clashes. Each hand rests over one octave of five black keys, starting on F♯ ([starting key](#starting-key)), and plays **piano** forms. The layout is the same for every player: the left hand plays vowels and the right hand consonants ([handedness](#handedness)).
 
 The left hand is mirrored, with the pinky on the lowest key, so the vowels run down the keyboard:
 
-| Key | C♯3 | D♯3 | F♯3 | G♯3 | A♯3 |
+| Key | F♯3 | G♯3 | A♯3 | C♯4 | D♯4 |
 |-----|-----|-----|-----|-----|-----|
 | Finger | 5 | 4 | 3 | 2 | 1 |
 | Vowel | `e` | `o` | `a` | `u` | spare |
 
-The right hand's thumb rests on C♯5 and fingers 2–5 on D♯5, F♯5, G♯5, A♯5. The hands sit two octaves apart. That makes it obvious which hand a lone note belongs to (a coda or a syllable with no onset), and it keeps same-letter octaves from blending into one note.
+The right hand's thumb rests on F♯5 and fingers 2–5 on G♯5, A♯5, C♯6, D♯6. The hands sit two octaves apart. That makes it obvious which hand a lone note belongs to (a coda or a syllable with no onset), and it keeps same-letter octaves from blending into one note.
 
 | Code | Piano |
 |------|-------|
@@ -154,17 +154,24 @@ The white keys carry no letters.
 
 | Syllable | Right hand | Left hand |
 |----------|------------|-----------|
-| zu | C♯5 | G♯3 |
-| zo | C♯5 | D♯3 |
-| ze | C♯5 | C♯3 |
-| -n | C♯5+A♯5, held | none |
-| ga | G♯5 | F♯3 |
-| ma | D♯5+A♯5 | F♯3 |
-| hu | C♯5+D♯5 | G♯3 |
-| -m | D♯5+A♯5, held | none |
+| zu | F♯5 | C♯4 |
+| zo | F♯5 | G♯3 |
+| ze | F♯5 | F♯3 |
+| -n | F♯5+D♯6, held | none |
+| ga | C♯6 | A♯3 |
+| ma | G♯5+D♯6 | A♯3 |
+| hu | F♯5+G♯5 | C♯4 |
+| -m | G♯5+D♯6, held | none |
 
-- `thohom`: G♯5+A♯5 / D♯3 · C♯5+D♯5 / D♯3 · D♯5+A♯5 held
-- `xahem`: D♯5+G♯5 / F♯3 · C♯5+D♯5 / C♯3 · D♯5+A♯5 held
+- `thohom`: C♯6+D♯6 / G♯3 · F♯5+G♯5 / G♯3 · G♯5+D♯6 held
+- `xahem`: G♯5+C♯6 / A♯3 · F♯5+G♯5 / F♯3 · G♯5+D♯6 held
+
+#### Starting key
+
+Both hands start on F♯, the tonic of the black-key major pentatonic. The start key is the consonant thumb, and the thumb is in the most common letters: `z` alone is 30% of onsets in the doc example sentences, and the codas `-l` (thumb + 3) and `-n` (thumb + 5) are 75% of codas. So the start key is about a third of every note played, from any start, and it should be a key that sounds like home. From F♯:
+
+- The held `-l` coda is F♯ + A♯, a major third over the tonic (a fourth from every other start). `-n` is F♯ + D♯ and `-m` is G♯ + D♯.
+- The vowels `e a u` are F♯, A♯, C♯, the tonic chord, and the two most common stressed vowels (`a`, `u`) are its third and fifth. Only `o` (G♯) is off the chord. Reversing the vowel count would put stressed `a` on G♯.
 
 ### Guitar
 
@@ -228,7 +235,7 @@ The hands are held at chest height, palms toward the viewer, with the consonant 
 
 ## Open questions
 
-1. **Piano starting key:** Which black key should each hand start on? C♯ is a placeholder. The start changes which bass notes come up most: the frequent vowels `a` and `e` sit on the left middle finger and pinky, so they land a fourth apart from every start except F♯, where they are tonic and major third (F♯ and A♯). The letter shapes stay the same whatever the start. Settle it by listening to demos of the same passages played from each start.
+1. **Piano starting key:** F♯ ([starting key](#starting-key)) is chosen from letter counts. Confirm it by listening to demos of the same passages played from each start.
 2. **Guitar:** Which consonant gets which string subset? A count order would keep the digit logic.
 3. **Spares:** What should the spare shapes (vowel-hand thumb; consonant-hand pinky alone, middle + ring + pinky, thumb + index + pinky, thumb + a hooked run; piano 3 + 5) and the free layers carry? Candidates: the period, `/y/` turns, tone marks.
 4. **Speech edges:** The [speech edges](../grammar/phonology.md#speech-edges) (level pitch on list items, a reset at a new turn) need a rendering in each channel: dynamics and rests on piano, hand height or a pause in signing, a lift or press strength in touch.

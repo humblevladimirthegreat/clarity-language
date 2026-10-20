@@ -214,12 +214,16 @@ defineExpose({ focus, root })
         {{ preview.before }}<mark>{{ preview.form }}</mark>{{ preview.after }}
       </p>
       <table v-if="breakdown" class="breakdown">
-        <tr>
-          <th v-for="(part, i) in breakdown" :key="i" scope="col"><code>{{ part.text }}</code></th>
-        </tr>
-        <tr>
-          <td v-for="(part, i) in breakdown" :key="i">{{ part.label }}</td>
-        </tr>
+        <thead>
+          <tr>
+            <th v-for="(part, i) in breakdown" :key="i" scope="col"><code>{{ part.text }}</code></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td v-for="(part, i) in breakdown" :key="i">{{ part.label }}</td>
+          </tr>
+        </tbody>
       </table>
       <p class="gloss">
         <code>{{ outcome.form }}</code>
