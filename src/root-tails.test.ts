@@ -6,8 +6,8 @@ import { readData } from "./repo-paths.ts";
 import { decode, encode, firstConsonant, placeTailRoots } from "./root-tails-place.ts";
 import { evenSpreadPairs, holderClash, holderHostForms, hookClash, tailMetrics, tailOf, validateRootTails } from "./root-tails.ts";
 
-const published = (emoji: string, concrete: string, root: string, kind = "", shape = ""): PublishedRow =>
-  ({ emoji, concrete, root, kind, shape, abstract: "", mnemonic: "", englishByPos: "", posEnglish: emptyPosEnglish() });
+const published = (emoji: string, concrete: string, root: string, kind = "", shape = "", size = ""): PublishedRow =>
+  ({ emoji, concrete, root, kind, shape, size, abstract: "", mnemonic: "", englishByPos: "", posEnglish: emptyPosEnglish() });
 
 describe("lexicon-published.csv tails", () => {
   it("gives every five-letter row a kind, a shape and a root in its tail, clear of the hook and holder checks", () => {
@@ -55,11 +55,13 @@ describe("tails", () => {
 
 describe("validateRootTails", () => {
   const good = [
-    published("🐈", "cat", "ubezo", "creature", "one"),
-    published("🗡️", "knife", "uhowu", "tool", "takes-away"),
+    published("🐈", "cat", "ubezo", "creature", "one", "medium"),
+    published("🗡️", "knife", "uhowu", "tool", "takes-away", "medium"),
+    published("🤬", "rage", "agamu", "mind", "takes-away"),
     published("🇫🇷", "france-flag", "avranza", "named"),
     published("⭐", "star", "aba"),
   ];
+  const [cat, , rage, france, star] = good;
   const reasons = (rows: PublishedRow[]) => validateRootTails(rows).map((e) => e.reason);
 
   it("accepts rows in their tails", () => {
@@ -67,20 +69,29 @@ describe("validateRootTails", () => {
   });
 
   it("rejects a bad kind, a missing shape, a shape on a named row, and a tail on a three-letter row", () => {
-    assert.ok(reasons([{ ...good[0]!, kind: "animal" }]).some((r) => r.startsWith("kind must be")));
-    assert.ok(reasons([{ ...good[0]!, shape: "" }]).some((r) => r.startsWith("shape must be")));
-    assert.ok(reasons([{ ...good[2]!, shape: "one" }]).some((r) => r.startsWith("a named row has no shape")));
-    assert.ok(reasons([{ ...good[3]!, kind: "sign" }]).some((r) => r.includes("3-letter root has no kind")));
+    assert.ok(reasons([{ ...cat!, kind: "animal" }]).some((r) => r.startsWith("kind must be")));
+    assert.ok(reasons([{ ...cat!, shape: "" }]).some((r) => r.startsWith("shape must be")));
+    assert.ok(reasons([{ ...france!, shape: "one" }]).some((r) => r.startsWith("a named row has no shape")));
+    assert.ok(reasons([{ ...star!, kind: "sign" }]).some((r) => r.includes("3-letter root has no kind")));
+  });
+
+  it("needs a size on a sized kind, and rejects one where the kind has none", () => {
+    assert.ok(reasons([{ ...cat!, size: "" }]).some((r) => r === "a creature row needs a size"));
+    assert.ok(reasons([{ ...cat!, size: "huge" }]).some((r) => r.startsWith("size must be")));
+    assert.ok(reasons([{ ...rage!, size: "small" }]).some((r) => r.startsWith("a mind row has no size")));
+    assert.ok(reasons([{ ...france!, size: "big" }]).some((r) => r.startsWith("a named row has no size")));
+    assert.ok(reasons([{ ...star!, size: "small" }]).some((r) => r.includes("3-letter root has no kind, shape or size")));
+    assert.deepEqual(reasons([published("🚲", "bicycle", "obove", "doing", "order", "medium"), published("🏃", "run", "aruve", "doing", "order")]), []);
   });
 
   it("rejects a named row without a place-name root, and two places on one root", () => {
-    assert.ok(reasons([{ ...good[2]!, root: "agane" }]).some((r) => r.includes("is not a place-name root")));
-    assert.ok(reasons([good[2]!, published("🇫🇮", "finland-flag", "avranza", "named")]).some((r) => r.includes("is also 🇫🇷's")));
+    assert.ok(reasons([{ ...france!, root: "agane" }]).some((r) => r.includes("is not a place-name root")));
+    assert.ok(reasons([france!, published("🇫🇮", "finland-flag", "avranza", "named")]).some((r) => r.includes("is also 🇫🇷's")));
   });
 
   it("rejects a root outside its tail and a hook clash", () => {
-    assert.ok(reasons([{ ...good[0]!, root: "ubeza" }]).some((r) => r.includes("does not end in its tail zo")));
-    assert.ok(reasons([published("🌳", "tree", "abale", "nature", "order"), good[3]!]).some((r) => r.includes("reads as aba + join + hook")));
+    assert.ok(reasons([{ ...cat!, root: "ubeza" }]).some((r) => r.includes("does not end in its tail zo")));
+    assert.ok(reasons([published("🌳", "tree", "abale", "nature", "order", "big"), star!]).some((r) => r.includes("reads as aba + join + hook")));
   });
 });
 

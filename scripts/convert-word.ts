@@ -27,7 +27,7 @@ import { loadPron } from "../src/echo-metric.js";
 import { placePublishedRoots } from "../src/lexicon-place.js";
 import { isJoinOverlayKind, parseOverlayCsv, parsePublishedCsv } from "../src/lexicon-search.js";
 import { placeRoot } from "../src/place-root.js";
-import { holderHostForms, PLACE_KIND, tailFieldsError, validateRootTails, type Kind, type Shape } from "../src/root-tails.js";
+import { holderHostForms, PLACE_KIND, sizeFieldError, tailFieldsError, validateRootTails, type Kind, type Shape, type Size } from "../src/root-tails.js";
 import { placeTailRoots } from "../src/root-tails-place.js";
 import { RETIE_MAP_RELATIVE_PATH, serializeRetieMap, type RetiePair } from "../src/retie/map.js";
 import {
@@ -56,6 +56,7 @@ type CliOptions = {
   input: string;
   kind: string;
   shape: string;
+  size: string;
 };
 
 function parseArgs(argv: string[]): CliOptions {
@@ -65,6 +66,7 @@ function parseArgs(argv: string[]): CliOptions {
   let all = false;
   let kind = "";
   let shape = "";
+  let size = "";
   const only: string[] = [];
   const parts: string[] = [];
 
@@ -78,11 +80,12 @@ function parseArgs(argv: string[]): CliOptions {
       report = true;
       continue;
     }
-    if (arg === "--kind" || arg === "--shape") {
+    if (arg === "--kind" || arg === "--shape" || arg === "--size") {
       const value = argv[++i];
       if (!value) throw new Error(`Missing value for ${arg}`);
       if (arg === "--kind") kind = value;
-      else shape = value;
+      else if (arg === "--shape") shape = value;
+      else size = value;
       continue;
     }
     if (arg === "--steps") {
@@ -122,13 +125,13 @@ function parseArgs(argv: string[]): CliOptions {
     if (lexicon || input) {
       throw new Error("--report takes no other mode or input");
     }
-    return { lexicon, report, all, only, input, kind, shape };
+    return { lexicon, report, all, only, input, kind, shape, size };
   }
   if (steps !== undefined && !lexicon) {
     throw new Error("--steps requires --lexicon");
   }
-  if ((kind || shape) && (lexicon || !input)) {
-    throw new Error("--kind and --shape go with one English word");
+  if ((kind || shape || size) && (lexicon || !input)) {
+    throw new Error("--kind, --shape and --size go with one English word");
   }
   if (!lexicon && !input) {
     printUsage();
@@ -148,21 +151,22 @@ function parseArgs(argv: string[]): CliOptions {
     throw new Error("--lexicon requires --only <row> or --all (re-places the whole lexicon)");
   }
 
-  return { lexicon, report, steps, all, only, input, kind, shape };
+  return { lexicon, report, steps, all, only, input, kind, shape, size };
 }
 
 function printUsage(): void {
-  console.error(`Usage: npm run convert-word -- <english> [--kind KIND [--shape SHAPE]]
+  console.error(`Usage: npm run convert-word -- <english> [--kind KIND [--shape SHAPE] [--size SIZE]]
        npm run convert-word -- --lexicon (--only LITERAL|EMOJI|ROOT | --all) [--steps N]
        npm run convert-word -- --report
 
-<english> alone prints the best three-letter root by English echo. With --kind and --shape it
-prints the five-letter root-tails root that word would take beside the published lexicon; with
+<english> alone prints the best three-letter root by English echo. With --kind and --shape (and
+--size where the kind takes one) it prints the five-letter root-tails root that word would take
+beside the published lexicon; with
 --kind named alone, the place-name root.
 --lexicon rewrites the published/overlay/compound CSVs and dumps tmp/lexicon-retie-map.json.
 A row keeps its root's length; a new row takes an annealed three-letter root when it is
 overlay-backed (or a marked pronoun), a place-name root when its kind is named, and a root-tails
-five-letter root from its kind and shape otherwise.
+five-letter root from its kind and shape otherwise, its middle vowel steered by its size.
 --only limits --lexicon to matching published rows (repeatable or comma-separated); every other
 root stays put.
 --all re-places every five-letter and place-name row and keeps the three-letter roots; --lexicon needs one of
@@ -171,7 +175,7 @@ root stays put.
 
 Examples:
   npm run convert-word -- fishing
-  npm run convert-word -- knife --kind tool --shape takes-away
+  npm run convert-word -- knife --kind tool --shape takes-away --size medium
   npm run convert-word -- --lexicon --only breaker
   npm run convert-word -- --lexicon --all`);
 }
@@ -238,6 +242,7 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
         root: (row.root ?? "").trim(),
         kind: (row.kind ?? "").trim(),
         shape: (row.shape ?? "").trim(),
+        size: (row.size ?? "").trim(),
       }];
     }),
     overlays,
@@ -396,12 +401,12 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
 }
 
 /** The five-letter root one English word would take beside the published lexicon, which stays put; a place-name root for `--kind named`. */
-function tailRootFor(input: string, kind: string, shape: string): string {
+function tailRootFor(input: string, kind: string, shape: string, size: string): string {
   if (kind === PLACE_KIND) {
-    if (shape) throw new Error(`a ${PLACE_KIND} row has no shape`);
+    if (shape || size) throw new Error(`a ${PLACE_KIND} row has no shape or size`);
     return placeRoot(lookupPronunciation(input));
   }
-  const error = tailFieldsError(kind, shape);
+  const error = tailFieldsError(kind, shape) ?? sizeFieldError(kind as Kind, size);
   if (error) throw new Error(error);
   const published = parsePublishedCsv(readFileSync(publishedPath, "utf8"));
   const overlays = parseOverlayCsv(readFileSync(overlayPath, "utf8"));
@@ -410,7 +415,7 @@ function tailRootFor(input: string, kind: string, shape: string): string {
   const blocked = new Set(overlays.filter((o) => isJoinOverlayKind(o.kind)).map((o) => o.senseForm));
   const { roots } = placeTailRoots({
     rows: [
-      { kind: kind as Kind, shape: shape as Shape, cmu: lookupPronunciation(input) },
+      { kind: kind as Kind, shape: shape as Shape, size: (size || undefined) as Size | undefined, cmu: lookupPronunciation(input) },
       ...kept.map((row) => ({ cmu: "", fixed: row.root })),
     ],
     shortRoots,
@@ -432,7 +437,7 @@ async function main(): Promise<void> {
     await convertLexicon(options.only, options.steps);
     return;
   }
-  console.log(options.kind ? tailRootFor(options.input, options.kind, options.shape) : toEgabonWord(options.input));
+  console.log(options.kind ? tailRootFor(options.input, options.kind, options.shape, options.size) : toEgabonWord(options.input));
 }
 
 try {

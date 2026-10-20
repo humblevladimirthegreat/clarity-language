@@ -6,9 +6,9 @@ import { parseOverlayCsv, parsePublishedCsv } from "../lexicon-search.js";
 import { buildLexiconIndex, lookupLexicon, rootsByForm, splitSenses } from "./lexicon.js";
 
 const published = parsePublishedCsv(
-  "emoji,concrete,root,kind,shape,abstract,mnemonic,english_by_pos,english_aliases,core\n" +
-    "😀,grin,egevo,mind,one,delight,m,v:smile,glad; joy,\n" +
-    "🚶,walk,owoga,doing,order,,m,,stroll,\n",
+  "emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_aliases,core\n" +
+    "😀,grin,egevo,mind,one,,delight,m,v:smile,glad; joy,\n" +
+    "🚶,walk,owoga,doing,order,,,m,,stroll,\n",
 );
 const compounds = parseCompoundCsv("stem,left,join,right,concrete,abstract,mnemonic,core\nowogalegevo,owoga,l,egevo,glad walk,,m,\n");
 const overlays = parseOverlayCsv("sense_form,pos,emoji,kind,gloss,definition,mnemonic,anchor\nahum,th,🗳️,sake,autonomy,d,m,sakes.md#word-shape\n");

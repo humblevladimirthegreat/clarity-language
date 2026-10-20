@@ -13,7 +13,7 @@ import type { CompoundRow } from "./lexicon-compounds.ts";
 import { isJoinOverlayKind, type OverlayRow } from "./lexicon-search.ts";
 import { placeRoot } from "./place-root.ts";
 import { REPO_ROOT } from "./repo-paths.ts";
-import { holderHostForms, PLACE_KIND, tailFieldsError, type Kind, type Shape } from "./root-tails.ts";
+import { holderHostForms, PLACE_KIND, sizeFieldError, tailFieldsError, type Kind, type Shape, type Size } from "./root-tails.ts";
 import { placeTailRoots, tailCompounds, type TailPlaceRow } from "./root-tails-place.ts";
 
 const FREQ_FILE = join(REPO_ROOT, "tmp", "en_50k.txt");
@@ -39,6 +39,8 @@ export type PlaceRow = {
   /** Root tail (`kind`, `shape` columns); a five-letter row needs both, a `named` row only `kind`. */
   kind?: string;
   shape?: string;
+  /** Middle-vowel preference (`size` column), src/root-tails.ts. */
+  size?: string;
 };
 
 export type Placement = {
@@ -345,14 +347,14 @@ export async function placePublishedRoots(
   }
   const longTargets = targets.filter((item) => !item.eligible && item.row.kind !== PLACE_KIND);
   const fieldErrors = longTargets.flatMap((item) => {
-    const error = tailFieldsError(item.row.kind ?? "", item.row.shape ?? "");
+    const error = tailFieldsError(item.row.kind ?? "", item.row.shape ?? "") ?? sizeFieldError(item.row.kind as Kind, item.row.size ?? "");
     return error ? [`${item.row.emoji || item.row.concrete}: ${error}`] : [];
   });
-  if (fieldErrors.length > 0) throw new Error(`five-letter rows need a kind and shape:\n  ${fieldErrors.join("\n  ")}`);
+  if (fieldErrors.length > 0) throw new Error(`five-letter rows need a kind, a shape and (by kind) a size:\n  ${fieldErrors.join("\n  ")}`);
   const shortRoots = new Set([...short.values(), ...kept.map((k) => k.root).filter((root) => root.length === 3)]);
   const keptLong = kept.filter((k) => k.root.length === 5);
   const tailRows: TailPlaceRow[] = [
-    ...longTargets.map((item) => ({ kind: item.row.kind as Kind, shape: item.row.shape as Shape, cmu: item.cmu })),
+    ...longTargets.map((item) => ({ kind: item.row.kind as Kind, shape: item.row.shape as Shape, size: (item.row.size || undefined) as Size | undefined, cmu: item.cmu })),
     ...keptLong.map((k) => ({ cmu: "", fixed: k.root })),
   ];
   const rowOfRoot = new Map<string, number>();

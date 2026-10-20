@@ -1,14 +1,14 @@
 /**
  * Root-tails placer: each five-letter row's tail comes from its kind and shape, and its onset is chosen
  * so that few roots of the same kind share its first two letters, and to start with the English label's
- * first consonant. Rows are placed greedily in CSV order, then annealed. Learning order plays no part
+ * first consonant. A row's size steers its middle vowel. Rows are placed greedily in CSV order, then annealed. Learning order plays no part
  * (a checkpoint lint keeps look-alikes apart in teaching). `placePublishedRoots` (src/lexicon-place.ts) calls it.
  */
 import { echo } from "./echo-metric.ts";
 import type { CompoundRow } from "./lexicon-compounds.ts";
 import { isExtraNounHook } from "./parse/hook-compounds.ts";
 import { PHONEME_MAP } from "./pronunciation-map.ts";
-import { KIND_LETTERS, onsetClash, SHAPE_VOWELS, type Kind, type Shape } from "./root-tails.ts";
+import { KIND_LETTERS, onsetClash, SHAPE_VOWELS, SIZE_VOWELS, type Kind, type Shape, type Size } from "./root-tails.ts";
 
 const V = "aeou";
 const C = "bdghylmnrvwz";
@@ -22,6 +22,11 @@ const JOINS = new Set(["l", "m", "n", "r"]);
  * gives up its English first consonant only to avoid two or more confusing pairs.
  */
 const FIRST_W = 2;
+/**
+ * A middle vowel that isn't the row's size vowel. Confusing pairs ignore the middle vowel, so this trades
+ * only against the echo below it and the first consonant above it; it is given up only in a crowded cell.
+ */
+const SIZE_W = 0.01;
 /** Tie-breaks, far below any pair cost: the full English echo, then fewer stops (which decide only within 0.01 of echo). */
 const ECHO_W = 0.002;
 const STOP_W = 0.00001;
@@ -31,6 +36,8 @@ export type TailPlaceRow = {
   /** The row's tail; a fixed row needs none. */
   kind?: Kind;
   shape?: Shape;
+  /** Preferred middle vowel, by size; none leaves it to the echo. */
+  size?: Size;
   /** CMU pronunciation of the label; empty loses only the echo tie-break. */
   cmu: string;
   /** A root kept as it is: the row is not placed, but its root counts against the others. */
@@ -130,7 +137,8 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
     for (const code of cands[i]!) {
       const root = decode(code);
       const miss = first !== null && root[1] !== first ? FIRST_W : 0;
-      costs.set(code, miss + STOP_W * stops(root) + ECHO_W * (1 - (row.cmu ? echo(root, row.cmu) : 0)));
+      const sizeMiss = row.size && root[2] !== SIZE_VOWELS[row.size] ? SIZE_W : 0;
+      costs.set(code, miss + sizeMiss + STOP_W * stops(root) + ECHO_W * (1 - (row.cmu ? echo(root, row.cmu) : 0)));
     }
     return costs;
   });

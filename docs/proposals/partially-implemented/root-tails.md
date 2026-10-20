@@ -8,9 +8,10 @@
 
 ## Summary
 
-- A five-letter root `V C V C V` has two parts. The **onset** (the first three letters) keeps roots apart. The **tail** (the second consonant and the final vowel) carries meaning.
+- A five-letter root `V C V C V` has two parts. The **onset** (the first three letters) keeps roots apart: its first two letters are what distinctiveness scores, and its middle vowel hints at size. The **tail** (the second consonant and the final vowel) carries meaning.
 - The **second consonant** says what **kind** of thing the root's concrete sense is: a creature, a person, a feeling, a food, a tool, and so on. There are twelve kinds, one per root consonant, and each is anchored to a job that letter already has in the grammar.
 - The **final vowel** says the thing's **job**, reusing the vowel series: **a** holds, **o** one, **e** order, **u** takes away. Kind-specific pictures (a bowl, a road, a knife, a ball) are how that job shows up, not a second code; when no job fits, the row's outline (or, for feelings and actions, its direction) picks the picture ([fallback](#vowel-fallback)). The same extra is what a tail suffix would add (`tail-suffix.md`).
+- The **middle vowel** says the thing's **size** where it has one: **a** bigger than a person, **o** between a hand and a person, **e** fits in a closed hand, **u** no size of its own (a substance, color, weather). It's a placement preference, not part of the tail ([middle vowel](#middle-vowel)).
 - The onset is chosen so that few roots of the **same kind** share its **first two letters**, and for a **first consonant that matches the English word's**. Roots of different kinds are told apart by the tail and cost nothing. Learning order plays no part; the [phase 3](#phase-3) lint covers teaching. The full English echo becomes a tie-break.
 - The **second-consonant ban is lifted**. The tail needs all twelve consonants second. Two checks replace the ban ([ban lift](#ban-lift)).
 - Three-letter roots and the final vowel of named (flag) rows are exempt.
@@ -50,7 +51,8 @@ onset      tail
 
 | Part | Letters | Chosen by |
 |------|---------|-----------|
-| Onset | first vowel, first consonant, middle vowel | [distinctiveness](#onset) |
+| Onset | first vowel, first consonant | [distinctiveness](#onset) |
+| Size | middle vowel | the row's [size](#middle-vowel), where its kind has one; otherwise the English echo |
 | Kind | second consonant | the row's [kind](#kinds) |
 | Job | final vowel | the row's [job](#shapes) |
 
@@ -150,6 +152,39 @@ So *ant* is `VCVza` (a creature that lives in a colony), *snake* is `VCVzu`, *wo
 
 `o` is now the smallest vowel overall. It reads as "one whole lump": round, compact, or turned inward.
 
+## Middle vowel: size {#middle-vowel}
+
+Confusing pairs are scored on the first two letters only, so the middle vowel costs nothing to give a meaning. Before this it fell to the echo tie-break and was the arbitrary letter a learner had to memorize ([motivation](#motivation)). It now says how big the thing is, using the most robust vowel symbolism across languages (big ↔ open, small ↔ front):
+
+| Middle vowel | Size | Test | Examples |
+|--------------|------|------|----------|
+| `a` | `big` | bigger than a person | whale, ship, mountain, tree, house |
+| `o` | `medium` | between a hand and a person | cat, apple, chair, guitar, shoe |
+| `e` | `small` | you could hide it in your fist | ant, pea, key, tooth, ring |
+| `u` | `none` | no size of its own: you can't point at one and say how big it is | rice, water, blood, metal, wool, fog, red |
+
+The series reading is a memory aid: **a** add (more than you), **o** one ordinary thing, **u** undo (size taken away). `e` = small rests on the symbolism alone. When unsure between two sizes, take `medium`, so `a` and `e` stay rare enough to mean something.
+
+**Which rows.** A `size` is required on every five-letter row of the six kinds that name physical things: creature, body, nature, food, tool, place. In `doing`, an object row (a vehicle, a toy, a piece of gear) takes one and an action (run, sleep, a sport) doesn't. Mind, person, sign and counting take none; their middle vowel stays free for the echo. A feeling has no size, but marking every one `u` would tell the reader nothing the consonant hasn't, and would cost the echo.
+
+**Not "unknown".** The second medium vowel could have meant *varies* or *unknown size*. Every row names a known thing, and the learner remembers its typical size (a dog is medium), so *varies* is a line taggers and learners would draw differently. *No size of its own* is crisp, and it splits the final `a`: a middle `u` says a stuff (rice, soup), not a container (bowl, bag).
+
+**A preference, not a check.** The placer charges a root whose middle vowel isn't its size vowel a small cost, above the echo tie-break and below the first-consonant cost. Two rows of one kind, shape and size that share their first two letters can't share a middle vowel, so in a crowded cell one gives way. `npm test` checks the `size` value, not the root's middle vowel; the tails report shows the share that match.
+
+**Measured** (full `--all` placement, rough tags, before the column was drafted in full):
+
+| | No size | Big / small only | Big / small, medium → `o` or `u` | All four sizes |
+|---|---|---|---|---|
+| Big / small (/ none) rows on their vowel | 42% | 98% | 96% | 98% |
+| Medium rows on their vowel | — | — | 99% | 95.5% |
+| Confusing pairs (non-flag) | 846 | 838 | 837 | 813 |
+| Mean English echo | 0.715 | 0.713 | 0.685 | 0.680 |
+| First consonant is the label's | 90.5% | 90.2% | 90.1% | 89.3% |
+
+Confusing pairs move only by run-to-run noise. The cost is about 5% of the echo, nearly all in the vowels; the first consonant, which carries most of the echo's recall value, barely moves.
+
+The drafted column: 668 rows, 338 `medium`, 127 `big`, 118 `small`, 85 `none`.
+
 ## Exceptions {#exceptions}
 
 - **Named rows (`n`):** the final vowel is free. Job means nothing for a country, and the free letter gives 262 rows four times the room.
@@ -177,7 +212,7 @@ A candidate whose first consonant isn't the English label's first consonant (map
 
 ### Tie-breaks {#tie-breaks}
 
-When candidates score the same:
+The [size](#middle-vowel) preference comes first, as a small cost on a middle vowel that isn't the row's size vowel. Then, when candidates score the same:
 
 1. **English echo:** the whole label, scored by [`echo`](../../../src/echo-metric.ts), so the onset vowels echo when nothing else decides.
 2. **Ease of singing:** fewer stops (`b d g`), among candidates whose echo is about equal.
@@ -417,7 +452,10 @@ On main today, `convert-word --lexicon --all` stops with `short roots too close 
 | **Keep English echo as the main criterion** | It helps English speakers produce a half-remembered word, and little else; it gives nothing to other learners and leaves the vowels arbitrary ([motivation](#motivation)). Kept as a first-consonant cost, which carries most of its recall value, and a tie-break. |
 | **Cross-language sound symbolism** (round ↔ `m l o`, small ↔ `e u`, body parts naming themselves: lips `m`, nose `n`, tongue `l`) | Egabon's letters cover it poorly: voicing is free, there's no /i/, and `r` isn't trilled. It applies strongly to only about a quarter of rows, and it rests on outside intuitions, not on anything the learner learns in Egabon. The tail's job vowels and their [outline fallback](#vowel-fallback) already capture its main contrasts (round `o`, hollow `a`, long `e`, sharp `u`), learned inside Egabon. |
 | **Per-kind subcategory vowels** (`a` = mammal on creatures, room on places, …) | A suffix needs the vowel to compose with any kind. Forty-eight cell meanings drop the vowel series and recreate a Wilkins taxonomy inside each kind (`tail-suffix.md`). |
-| **Sound symbolism on the onset** | The onset is where distinctiveness lives. Symbolism there would pull related meanings toward the same first letters, where confusion costs most, and would compete with the tail's shape vowel. |
+| **Sound symbolism on the onset** | The onset is where distinctiveness lives. Symbolism on the first two letters would pull related meanings toward the same prefixes, where confusion costs most. The middle vowel is outside the scored prefix, so it carries [size](#middle-vowel) instead. |
+| **Shape symbolism on the middle vowel** (bouba / kiki) | Repeats the final vowel's outline fallback, and contradicts it in the same word: symbolism reads `u` as round, the tail reads it as sharp. |
+| **Size on tagged rows only** (others free) | Untagged rows take `a` and `e` by echo, so a middle `a` means nothing to a reader: the hint works for recall only. Requiring a size in the sized kinds makes it read both ways. |
+| **Middle `u` = unknown or varying size** | Size is remembered by the typical member; *varies* has no line two taggers would draw alike. *No size of its own* is crisp and splits stuff from containers. |
 | **`o` as the default job** (anything with no job is `o`) | `o` was 43–55% of most kinds, so the vowel told a learner little and `e` was nearly empty for creatures, feelings, food and nature. The [fallback](#vowel-fallback) gives every row a positive answer instead. |
 | **A different default vowel per kind** | Learners know the kind from the consonant, so balance within a kind is what matters, and a per-kind default leaves it unchanged. |
 | **A three-letter tail** (middle vowel too) | Leaves 48 onsets per cell, so most roots' nearest neighbor shares their kind and shape ([root shape](#root-shape)). |

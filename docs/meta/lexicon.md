@@ -89,7 +89,7 @@ A placed row keeps its length. So a row that gains its first overlay keeps its f
 
 A five-letter root `V C V C V` ends in a **tail**: its second consonant names the **kind** of thing its concrete sense is, and its final vowel the thing's **job**. The learner-facing letter map, with each letter's anchor in the grammar, is in [phonology.md § root tails](../grammar/phonology.md#root-tails). Three-letter roots have no tail.
 
-The `kind` and `shape` columns of [`lexicon-published.csv`](../../data/lexicon-published.csv) record the call for each five-letter row, as a word (`creature`, `takes-away`), never as a letter; the letter map lives once in [`src/root-tails.ts`](../../src/root-tails.ts). `shape` is empty on a `named` row, whose final vowel is free, and both are empty on a three-letter row. `npm test` fails on a five-letter row with no kind or shape, or a root that doesn't end in its tail. **Changing a row's kind or shape is a respelling:** rerun `convert-word --lexicon --only` on it, then the retie.
+The `kind` and `shape` columns of [`lexicon-published.csv`](../../data/lexicon-published.csv) record the call for each five-letter row, as a word (`creature`, `takes-away`), never as a letter; the letter map lives once in [`src/root-tails.ts`](../../src/root-tails.ts). `shape` is empty on a `named` row, whose final vowel is free, and both are empty on a three-letter row. The `size` column steers the middle vowel ([size](#size)). `npm test` fails on a five-letter row with no kind or shape, a missing or misplaced size, or a root that doesn't end in its tail. **Changing a row's kind, shape or size is a respelling:** rerun `convert-word --lexicon --only` on it, then the retie.
 
 ### Kind {#kind}
 
@@ -113,9 +113,17 @@ The shape is the thing's job, from the vowel series: `holds` (**a**: containers,
 
 When no job fits, `one` is **not** the default. Use the fallback: for a thing you can see, its outline (hollow or open `holds`, long `order`, sharp or spiky `takes-away`, round or compact `one`); for a feeling or face, its direction (toward others `holds`, toward a standing or what comes next `order`, against `takes-away`, inward `one`); for an action, how it unfolds (with others `holds`, along a course `order`, stops or hurts `takes-away`, once on the spot `one`). Symbols of a faith or a gender stay `one`. Worked examples and per-kind counts: [root-tails proposal § final vowel](../proposals/partially-implemented/root-tails.md#shapes).
 
+### Size {#size}
+
+The size is how big the concrete sense is against a person, and it steers the root's **middle vowel**: `big` (**a**: bigger than a person), `medium` (**o**: between a hand and a person), `small` (**e**: you could hide it in your fist), `none` (**u**: no size of its own, such as a substance, liquid, color, weather, light or direction). Judge the typical member (a dog is `medium`); when unsure between two sizes, take `medium`.
+
+Every five-letter row of `creature`, `body`, `nature`, `food`, `tool` and `place` needs a size. In `doing`, an object row (vehicle, toy, gear) takes one and an action or a sport stays empty. `mind`, `person`, `sign`, `counting`, `named` and three-letter rows stay empty; their middle vowel goes to the echo.
+
+It's a placement preference, not a check: the placer gives up the size vowel only in a crowded cell, and the tails report (`convert-word --report`) prints the share that match. Why size and not another reading: [root-tails proposal § middle vowel](../proposals/partially-implemented/root-tails.md#middle-vowel).
+
 ### Onset {#onset}
 
-The first three letters keep roots apart. A **confusing pair** is two roots of the same kind whose first two letters match; placement adds 1 for each. Roots of different kinds cost nothing, since the tail tells them apart, and learning order plays no part. A first consonant that is not the English label's first consonant (p/b, t/d, k/g, s/z, f/v merged) costs 2, so a root gives it up only to avoid two or more confusing pairs. Ties go to the closer full English echo, then to fewer stops (`b d g`). A label CMU doesn't know only loses the English cost and the tie-breaks.
+The first two letters keep roots apart, and the middle vowel follows the [size](#size). A **confusing pair** is two roots of the same kind whose first two letters match; placement adds 1 for each. Roots of different kinds cost nothing, since the tail tells them apart, and learning order plays no part. A first consonant that is not the English label's first consonant (p/b, t/d, k/g, s/z, f/v merged) costs 2, so a root gives it up only to avoid two or more confusing pairs. A middle vowel that isn't the size's costs 0.01. Ties go to the closer full English echo, then to fewer stops (`b d g`). A label CMU doesn't know only loses the English cost and the tie-breaks.
 
 Rows are placed greedily in CSV order, then annealed; the run is seeded, so the same data gives the same roots. Each kind has 48 first-two-letter prefixes, so past 48 rows some confusing pairs are unavoidable; the report prints each kind beside that floor.
 

@@ -1,7 +1,7 @@
 /**
  * Root tails: a five-letter root `V C V | C V` ends in a tail, the second consonant naming the row's
  * kind and the final vowel its job. The `kind` and `shape` columns of `data/lexicon-published.csv`
- * record each five-letter row's tail. This file owns the letter map and the checks
+ * record each five-letter row's tail; the `size` column steers the middle vowel. This file owns the letter map and the checks
  * {@link validateRootTails} runs; the placer is src/root-tails-place.ts. A `named` row (a country or
  * territory) takes a place-name root instead (src/place-root.ts), with no tail.
  */
@@ -33,8 +33,22 @@ export const SHAPE_VOWELS = {
   "takes-away": "u",
 } as const;
 
+/** Size → middle vowel. A placement preference, not a check: the placer gives up a size vowel only in a crowded cell. */
+export const SIZE_VOWELS = {
+  big: "a",
+  medium: "o",
+  small: "e",
+  none: "u",
+} as const;
+
 export type Kind = keyof typeof KIND_LETTERS;
 export type Shape = keyof typeof SHAPE_VOWELS;
+export type Size = keyof typeof SIZE_VOWELS;
+
+/** Kinds whose every row names a physical thing: each five-letter row needs a size. */
+export const SIZED_KINDS: ReadonlySet<Kind> = new Set(["creature", "body", "nature", "food", "tool", "place"]);
+/** Kinds that mix things and acts: an object row takes a size, an action none. */
+export const OPTIONAL_SIZE_KINDS: ReadonlySet<Kind> = new Set(["doing"]);
 
 /** The `kind` of a country or territory row, which takes a place-name root and no tail. */
 export const PLACE_KIND = "named";
@@ -47,6 +61,10 @@ export function isShape(value: string): value is Shape {
   return Object.hasOwn(SHAPE_VOWELS, value);
 }
 
+export function isSize(value: string): value is Size {
+  return Object.hasOwn(SIZE_VOWELS, value);
+}
+
 /** Tail letters for a row: consonant + vowel. */
 export function tailOf(kind: Kind, shape: Shape): string {
   return KIND_LETTERS[kind] + SHAPE_VOWELS[shape];
@@ -57,6 +75,14 @@ export function tailFieldsError(kind: string, shape: string): string | null {
   if (kind === PLACE_KIND) return `a ${PLACE_KIND} row takes a place-name root, not a tail`;
   if (!isKind(kind)) return `kind must be one of ${Object.keys(KIND_LETTERS).join(", ")} (got ${kind || "(empty)"})`;
   return isShape(shape) ? null : `shape must be one of ${Object.keys(SHAPE_VOWELS).join(", ")} (got ${shape || "(empty)"})`;
+}
+
+/** Why a five-letter row's size doesn't fit its kind, or null when it does. */
+export function sizeFieldError(kind: Kind, size: string): string | null {
+  if (size && !isSize(size)) return `size must be one of ${Object.keys(SIZE_VOWELS).join(", ")} (got ${size})`;
+  if (SIZED_KINDS.has(kind) && !size) return `a ${kind} row needs a size`;
+  if (size && !SIZED_KINDS.has(kind) && !OPTIONAL_SIZE_KINDS.has(kind)) return `a ${kind} row has no size (got ${size})`;
+  return null;
 }
 
 const HOOK_JOINS = new Set(["l", "m"]);
@@ -98,9 +124,9 @@ export type TailError = { key: string; reason: string };
 
 /**
  * Checks `npm test` and `check-compounds` run over the published lexicon: every five-letter row has a
- * kind and shape from their closed sets and a root that ends in its tail and clears the hook and holder
- * checks; a three-letter row has neither column; a `named` row has no shape and a place-name root no
- * other place shares. Listed compounds that split two ways are `validateCompoundRows`'.
+ * kind and shape from their closed sets, a size where its kind takes one, and a root that ends in its
+ * tail and clears the hook and holder checks; a three-letter row has none of the three; a `named` row
+ * has no shape or size and a place-name root no other place shares. The middle vowel is not checked. Listed compounds that split two ways are `validateCompoundRows`'.
  */
 export function validateRootTails(
   published: readonly PublishedRow[],
@@ -114,8 +140,10 @@ export function validateRootTails(
     const key = row.emoji || row.concrete;
     const kind = row.kind ?? "";
     const shape = row.shape ?? "";
+    const size = row.size ?? "";
     if (kind === PLACE_KIND) {
       if (shape) errors.push({ key, reason: `a ${PLACE_KIND} row has no shape (got ${shape})` });
+      if (size) errors.push({ key, reason: `a ${PLACE_KIND} row has no size (got ${size})` });
       if (!isPlaceRootShape(row.root)) errors.push({ key, reason: `root ${row.root} is not a place-name root` });
       const other = places.get(row.root);
       if (other) errors.push({ key, reason: `place-name root ${row.root} is also ${other}'s` });
@@ -123,7 +151,7 @@ export function validateRootTails(
       continue;
     }
     if (row.root.length !== 5) {
-      if (kind || shape) errors.push({ key, reason: `a ${row.root.length}-letter root has no kind or shape` });
+      if (kind || shape || size) errors.push({ key, reason: `a ${row.root.length}-letter root has no kind, shape or size` });
       continue;
     }
     const fields = tailFieldsError(kind, shape);
@@ -131,6 +159,8 @@ export function validateRootTails(
       errors.push({ key, reason: fields });
       continue;
     }
+    const sizeError = sizeFieldError(kind as Kind, size);
+    if (sizeError) errors.push({ key, reason: sizeError });
     const tail = tailOf(kind as Kind, shape as Shape);
     if (!row.root.slice(3).startsWith(tail)) errors.push({ key, reason: `root ${row.root} does not end in its tail ${tail}` });
     if (hookClash(row.root, shortRoots)) {

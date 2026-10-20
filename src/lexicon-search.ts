@@ -25,6 +25,8 @@ export type PublishedRow = {
   kind?: string;
   /** Root tail: the job (`shape`), five-letter rows except named ones. */
   shape?: string;
+  /** Middle-vowel preference: what the thing measures against a person (src/root-tails.ts). */
+  size?: string;
   abstract: string;
   mnemonic: string;
   englishByPos: string;
@@ -131,6 +133,7 @@ const PUBLISHED_HEADERS = [
   "root",
   "kind",
   "shape",
+  "size",
   "abstract",
   "mnemonic",
   "english_by_pos",
@@ -372,6 +375,7 @@ export function parsePublishedCsv(text: string): PublishedRow[] {
       root: row.root ?? "",
       kind: row.kind ?? "",
       shape: row.shape ?? "",
+      size: row.size ?? "",
       abstract,
       mnemonic: row.mnemonic ?? "",
       englishByPos,

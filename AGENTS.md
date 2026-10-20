@@ -51,7 +51,7 @@ Each row names what the file owns. The file is the authority; this table is only
 
 | Source | Owns |
 |--------|------|
-| `data/lexicon-published.csv` | Published roots: each has a concrete sense and usually an emoji or pictograph seed, [seeds](docs/meta/lexicon.md#seeds-concrete-senses-and-pictographs). PoS and ending applied at use time. The `core` column is the core vocabulary order, [core vocabulary](docs/meta/lexicon.md#core-vocabulary-column). `kind` and `shape` spell a five-letter root's tail, [root tails](docs/meta/lexicon.md#root-tails). |
+| `data/lexicon-published.csv` | Published roots: each has a concrete sense and usually an emoji or pictograph seed, [seeds](docs/meta/lexicon.md#seeds-concrete-senses-and-pictographs). PoS and ending applied at use time. The `core` column is the core vocabulary order, [core vocabulary](docs/meta/lexicon.md#core-vocabulary-column). `kind` and `shape` spell a five-letter root's tail, and `size` steers its middle vowel, [root tails](docs/meta/lexicon.md#root-tails). |
 | `data/lexicon-compounds.csv` | Conventional compounds without mid-word `x`, with the same `core` column. |
 | `data/lexicon-overlays.csv` | Closed overlay inventory and the anchor that teaches each row, [overlay kinds](docs/meta/parser-pipeline.md#overlay-kinds). New overlays attach to an existing published row. |
 | `data/claritish-triggers.csv` | Journal editor cues: the English patterns each Claritish lesson's gap names, their exclusions, flow, placement, and mirror wording, [editor cards](docs/meta/claritish-style.md#editor-cards). |

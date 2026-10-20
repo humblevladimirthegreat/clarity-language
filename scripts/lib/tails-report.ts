@@ -1,12 +1,13 @@
 /**
  * Root-tails report for `convert-word --lexicon` and `--report`: the share of five-letter roots that start
  * with the English label's first consonant, confusing pairs (same kind, same first two letters) in total
- * and per kind beside the even-spread floor, and the 👓 root the language name comes from.
+ * and per kind beside the even-spread floor, the share of sized roots whose middle vowel is their size's,
+ * and the 👓 root the language name comes from.
  */
 import { isFlagLabel } from "../../src/flag-label.js";
 import type { PublishedRow } from "../../src/lexicon-search.js";
 import { firstConsonant } from "../../src/root-tails-place.js";
-import { evenSpreadPairs, KIND_LETTERS, tailMetrics, type Kind } from "../../src/root-tails.js";
+import { evenSpreadPairs, isSize, KIND_LETTERS, SIZE_VOWELS, tailMetrics, type Kind } from "../../src/root-tails.js";
 
 function pct(count: number, total: number): string {
   return `${total === 0 ? "0.0" : ((100 * count) / total).toFixed(1)}%`;
@@ -25,6 +26,9 @@ export function printTailsReport(published: readonly PublishedRow[], pron: Map<s
   const echoed = scored.filter((row) => row.root[1] === firstConsonant(pron.get(row.concrete)!)).length;
   console.log("");
   line("first consonant is the label's (excluding flags)", pct(echoed, scored.length));
+  const sized = long.filter((row) => isSize(row.size ?? ""));
+  const sizeHits = sized.filter((row) => row.root[2] === SIZE_VOWELS[row.size as keyof typeof SIZE_VOWELS]).length;
+  line("middle vowel is the size's (sized rows)", pct(sizeHits, sized.length));
   line("confusing pairs / same-kind pairs", share(metrics.confusing, metrics.possible));
   line("  flags", share(metrics.flag, metrics.flagPossible));
   line("  excluding flags", share(metrics.nonFlag, metrics.nonFlagPossible));
