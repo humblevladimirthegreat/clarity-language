@@ -71,7 +71,7 @@ Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org
 
 A content word ends in one of four consonants: `-l`, `-m`, `-n`, or `-r`. That last consonant is the audible end of the word. Inside the word, consonants start syllables. They do not close a syllable in the middle.
 
-`uzazon` = *u-za-zon*. `odozol` = *o-do-zol*.
+`uzozen` = *u-zo-zen*. `udozol` = *u-do-zol*.
 
 ## Intermediate {#intermediate}
 
@@ -82,7 +82,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 ### Phonotactics (word shape)
 <a id="phonotactics"></a>
 
-Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-r`. Here is the full shape of that word, in order, written as one lowercase token (`zuzazon`).
+Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-r`. Here is the full shape of that word, in order, written as one lowercase token (`zuzozen`).
 
 <!-- cheat-sheet: sounds-spelling -->
 | Egabon | Use | English |
@@ -92,14 +92,14 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Root(s) **V(CV)+** | content | start with a vowel; each later consonant starts a new syllable |
 | Mid-word `x` | productive compound seam | joins two roots inside one word |
 | Mid-word `th` | stance seam | joins a sake to its stance vowel ([sakes](sakes.md)), any other root to a scope vowel ([label scope](predication.md#label-scope)), or a direction to whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals)) |
-| Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`ebeholuruha` *bedroom*) |
+| Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`obaholuraha` *bedroom*) |
 | `-l` / `-m` / `-n` / `-r` | [word ending](word-endings.md) | audible end of the content word |
 | Name instance **`-ln`** | [one of a name](word-endings.md#name-instance--ln) | word-final coda `ln` |
 | Optional `-x` | [plural](plurality.md) after the ending | word-final `-lx` / `-mx` / `-nx` / `-rx` / `-lnx` (letter `x`) |
 | Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` |
 | Backward stand-in **`-rth`** | [pointing back](dependents.md#stand-in-back) | word-final coda `rth`; the only word-final `th` |
 
-A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubulol`: prefix `z`, root `ubulo`, ending `-l`). Each spelling has only one pronunciation. Writing does not mark stress. Musical rhythm may still place emphasis.
+A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubulel`: prefix `z`, root `ubule`, ending `-l`). Each spelling has only one pronunciation. Writing does not mark stress. Musical rhythm may still place emphasis.
 
 Some short grammar words stack two vowels (a join such as **ua**). A stack always puts its vowels in [alphabetical order](#letter-names) (**u**, **a**, **o**, **e**): **u** comes first and **e** comes last. That gives six stacks: **ua**, **uo**, **ue**, **ao**, **ae**, and **oe**. The two vowels stay two separate syllables.
 
@@ -109,7 +109,7 @@ Some short grammar words stack two vowels (a join such as **ua**). A stack alway
 
 When English says *how many* or *which place*, Egabon uses a [number word](numbers.md). A number word puts `r` right after the role letter. Ordinary words never have that cluster, because their roots start with a vowel, so a role letter followed directly by `r` tells you a number is coming. The marker is `ra`, `ru`, `re`, or `ro`; counting from the end is written `#-`, spelled and spoken **rue** before the digits. Two vowels in a row stay two separate syllables.
 
-> `zegazolx grarel.`
+> `zagozolx grarel.`
 >
 > z-cat-x | g-three
 >
@@ -150,7 +150,7 @@ The table is in **alphabetical order**. The ten letters that begin a [digit syll
 
 <!-- retie: letter-names -->
 ```text
-`egazo` → `e` `ga` `a` `ze` `o`
+`agozo` → `a` `ga` `o` `ze` `o`
 ```
 
 In a clause, a letter you talk about (such as `z`) is a [mention](spans.md#mention); read it aloud by its letter name (`ze`).
@@ -192,9 +192,9 @@ Legal clusters: left-hanging `gl-`; number-word role letter + `r`; [tag pronoun]
 
 Try singing a short Egabon line quickly at a high but comfortable pitch:
 
-`zuzazon gumahom.`
+`zuzozen gamahum.`
 
-/ zʉ.zä.zo̞n ɡʉ.mä.ɦo̞m /
+/ zʉ.zo̞.ze̞n ɡä.mä.ɦʉm /
 
 A line that piles up close vowels, clusters, and mid-word stops is harder to sustain even when it is only a little harder to speak:
 
@@ -206,9 +206,9 @@ Give every syllable about the same length, and keep its vowel full however fast 
 
 Each word takes a light stress on its **first syllable**. Since the rule never changes, spelling does not mark it. The ending consonant already tells a listener where a word stops; the stressed first beat tells them where the next one starts, so fast speech still splits into words. A [number word](numbers.md) stresses the last digit of each group instead.
 
-`zuzazon gumahom.`
+`zuzozen gamahum.`
 
-/ ˈzʉ.zä.zo̞n ˈɡʉ.mä.ɦo̞m /
+/ ˈzʉ.zo̞.ze̞n ˈɡä.mä.ɦʉm /
 
 **Hold the ending.** Let the final `-l`, `-m`, `-n` or `-r` sound for a moment instead of clipping it. It is often the only difference between two words (`vul`, `vum`, `vur`), and all four are sounds you can hold. In singing, put the cutoff on it.
 
@@ -268,27 +268,27 @@ Each letter reuses a job it already has somewhere in the grammar:
 
 | Second consonant | Kind | Example | Why this letter |
 |------------------|------|---------|-----------------|
-| `z` | creatures: animals, microbes | `egazo` *cat* | [`/z/`](clause.md#role-letters) is the one who acts |
-| `y` | people: persons, kin, roles, and what only a person does | `ubuyo` *baby* | [`/y/` + name](speech-moves.md#vocative) calls someone |
+| `z` | creatures: animals, microbes | `agozo` *cat* | [`/z/`](clause.md#role-letters) is the one who acts |
+| `y` | people: persons, kin, roles, and what only a person does | `eboye` *baby* | [`/y/` + name](speech-moves.md#vocative) calls someone |
 | `m` | mind and feeling: faces, emotions, mental states | `evumu` *fear* | [**-m**](word-endings.md#abstract-m) is the abstract ending |
-| `b` | the body and what goes on it: parts, clothes, what you carry, medicine | `ahebo` *hand* | [`/b/`](clause.md#role-letters) is the bolted-on piece |
+| `b` | the body and what goes on it: parts, clothes, what you carry, medicine | `aheba` *hand* | [`/b/`](clause.md#role-letters) is the bolted-on piece |
 | `v` | doing, playing and moving: actions, sports, games, toys, vehicles | `aruve` *run* | [`/v/`](clause.md#role-letters) is the action |
-| `h` | places and fixtures: buildings, landscapes, rooms, headings | `awuho` *house* | [`/h/`](clause.md#role-letters) is where |
-| `l` | nature and raw stuff: plants, weather, sky, materials, colors | `odelo` *tree* | [**-l**](word-endings.md#concrete-l) is the concrete ending |
-| `d` | food and drink, with dishes and kitchen gear | `aledo` *apple* | [`/d/`](clause.md#role-letters) is what is done to (eaten) |
-| `w` | tools and things you use | `onawu` *knife* | [`/w/`](clause.md#role-letters) is *with* |
-| `g` | signs, marks and writing | `awogu` *warning* | [`/ɡ/`](clause.md#role-letters) is a grade, a mark on something |
-| `r` | counting, time, money and rhythm | `ogere` *clock* | `r` after a role letter starts a [number](numbers.md#counts) |
-| `n` | named places: countries | `ohuna` *Japan* | [**-n**](word-endings.md#proper-name--n) is the name ending |
+| `h` | places and fixtures: buildings, landscapes, rooms, headings | `aheha` *house* | [`/h/`](clause.md#role-letters) is where |
+| `l` | nature and raw stuff: plants, weather, sky, materials, colors | `adale` *tree* | [**-l**](word-endings.md#concrete-l) is the concrete ending |
+| `d` | food and drink, with dishes and kitchen gear | `oledo` *apple* | [`/d/`](clause.md#role-letters) is what is done to (eaten) |
+| `w` | tools and things you use | `anewu` *knife* | [`/w/`](clause.md#role-letters) is *with* |
+| `g` | signs, marks and writing | `awugu` *warning* | [`/ɡ/`](clause.md#role-letters) is a grade, a mark on something |
+| `r` | counting, time, money and rhythm | `agore` *clock* | `r` after a role letter starts a [number](numbers.md#counts) |
+| `n` | named places: countries | `azabana` *Japan* | [**-n**](word-endings.md#proper-name--n) is the name ending |
 
 The last vowel is the job, with the same vowel series as [joins](joins.md#beginner): **a** add, **o** one, **e** order, **u** undo.
 
 | Last vowel | Job | Examples |
 |------------|-----|----------|
-| `a` | holds or gathers: containers, groups, masses, what you go inside; or hollow, like a bowl | `ubawa` *basket*, `arada` *rice*, `aneza` *ant* (it lives in a colony) |
-| `o` | one whole thing: round or compact, like a ball | `egazo` *cat*, `aledo` *apple* |
-| `e` | order: ranked, in sequence, a stage or cycle, a path you travel or are led along; or long, like a road | `orohe` *road*, `ogere` *clock*, `aruve` *run*, `erole` *rainbow* |
-| `u` | takes away or works against: cuts, removes, harms, stings, forbids; or sharp, like a blade | `onawu` *knife*, `uzezu` *snake*, `evumu` *fear* |
+| `a` | holds or gathers: containers, groups, masses, what you go inside; or hollow, like a bowl | `abowa` *basket*, `oruda` *rice*, `uneza` *ant* (it lives in a colony) |
+| `o` | one whole thing: round or compact, like a ball | `agozo` *cat*, `oledo` *apple* |
+| `e` | order: ranked, in sequence, a stage or cycle, a path you travel or are led along; or long, like a road | `orahe` *road*, `agore` *clock*, `aruve` *run*, `urule` *rainbow* |
+| `u` | takes away or works against: cuts, removes, harms, stings, forbids; or sharp, like a blade | `anewu` *knife*, `ezozu` *snake*, `evumu` *fear* |
 
 When more than one job fits, try **u** first, then **a**, then **e**. A knife is one tool, but it cuts, so its root ends in `u`. When no job fits, the thing's outline decides: hollow `a`, long `e`, sharp `u`, round or compact `o`. A banana ends in `e` and an apple in `o`. For a feeling, it's which way the feeling points (toward others `a`, inward `o`); for an action, how it unfolds (with others `a`, along a course `e`). A country's last vowel is free, since a country has no job.
 

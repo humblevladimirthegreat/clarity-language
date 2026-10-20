@@ -16,8 +16,7 @@ use [skip-cd] for amplify to not deploy.
 -contact form / about me
 -on a phone-width screen, every page on the site scrolls sideways by about 11 px, because of VitePress's top navigation bar.
 -reconsider adjective bars (poor/rich, weak/strong)
--do tail-suffix.md, rename x-compounds to just compounds and place root-tails content there.
--tail vowel rebalance: 306 rows got a new `shape` in lexicon-published.csv (broader `e`, literal `holds`, outline/direction fallback instead of an `o` default), and the new `size` column (1005 rows, every kind but mind) steers the middle vowel; all keep their old roots. Review the drafted sizes, then respell with `convert-word --lexicon --all` (size touches most five-letter rows), then retie-docs, build, test. `npm test` fails on the tail check until then.
+-do tail-suffix.md, git mv x-compounds.md to just compounds.md and place root-tails content there instead of phonology.
 -number-respelling.md: re-pick the two number fillers against the root-tails lexicon. With `w` + `y` as fillers, tools and people drop out of the 00–99 mnemonic table, and column 9 is all flags (number-mnemonic.md § lexicon coverage, open question 6)
 -redo examples, lint instructions for look_alike_gap should mention that you may need to change the examples more
 

@@ -11,24 +11,24 @@ Start with a quote of what someone said.
 
 To quote wording (what someone said, a title, a proverb as words), write the role letter, then square brackets around the quoted words. That span is a **cite**. The whole quote fills one role, so *said “…”* works like *said something*. (cue: `[…]` like quote marks)
 
-Start with a one-word quote as the object of *said*. A [greeting](word-endings.md#greeting) is just your own name, so quoting Uzazon’s hello means quoting that name:
+Start with a one-word quote as the object of *said*. A [greeting](word-endings.md#greeting) is just your own name, so quoting Uzozen’s hello means quoting that name:
 
-> `zuzazon d[uzazon] vezeyel.`
+> `zuzozen d[uzozen] vezuyel.`
 >
-> z-Uzazon | d-CITE[Uzazon] | v-tell
+> z-Uzozen | d-CITE[Uzozen] | v-tell
 >
-> "Uzazon said “Uzazon.”" (hello)
+> "Uzozen said “Uzozen.”" (hello)
 
-The whole `d[uzazon]` is the direct object (who or what is acted on). When the quote is a whole Egabon sentence, each word inside starts with its own role letter, as in any sentence.
+The whole `d[uzozen]` is the direct object (who or what is acted on). When the quote is a whole Egabon sentence, each word inside starts with its own role letter, as in any sentence.
 
 ### Exact, paraphrase, proper
 <a id="when-required"></a>
 
 You can mark how faithful the quote is. Put the mark **after** the role letter, before the opening bracket.
 
-A span with no mark is **exact**: the words as they were said (`d[uzazon]`). Write **`~`** for a **paraphrase**, when you mean the gist, not the exact words (`d~[zuzazon vezeyol]`). Write **`@`** for a **proper** span: it names a work with a title of several words, such as a song, proverb, or book (`d@[onoron olozun]`). The span then means the work itself, not its title as a string of words.
+A span with no mark is **exact**: the words as they were said (`d[uzozen]`). Write **`~`** for a **paraphrase**, when you mean the gist, not the exact words (`d~[zuzozen vezuyol]`). Write **`@`** for a **proper** span: it names a work with a title of several words, such as a song, proverb, or book (`d@[onuron olazun]`). The span then means the work itself, not its title as a string of words.
 
-A work or person with a one-word name is an ordinary **-n** word (`donoron`), not `d@[onoron]`, unless a role letter or an ending is part of the title itself. The mark belongs to the brackets; the words inside keep their usual endings ([titled phrases](word-endings.md#titled-phrases)).
+A work or person with a one-word name is an ordinary **-n** word (`donuron`), not `d@[onuron]`, unless a role letter or an ending is part of the title itself. The mark belongs to the brackets; the words inside keep their usual endings ([titled phrases](word-endings.md#titled-phrases)).
 
 <!-- cheat-sheet: restrictors-spans -->
 | Egabon | Use | English | Cue |
@@ -37,39 +37,39 @@ A work or person with a one-word name is an ordinary **-n** word (`donoron`), no
 | **`~`** | paraphrase | the gist, not the exact words | **~** looks like “about / approximately” |
 | **`@`** | proper | the work known by that title | **@** like a social media handle |
 
-> `zolozun d~[zuzazon vezeyol] vuruyel.`
+> `zolazun d~[zuzozen vezuyol] varayel.`
 >
-> z-Olozun | d-CITE.about[z-Uzazon | v-sing] | v-write
+> z-Olazun | d-CITE.about[z-Uzozen | v-sing] | v-write
 >
-> "Olozun wrote something like “Uzazon sings.”"
+> "Olazun wrote something like “Uzozen sings.”"
 
-> `zehalon d@[onoron olozun] vezeyol.`
+> `zuhelan d@[onuron olazun] vezuyol.`
 >
-> z-Ehalon | d-NAME.CITE[Onoron | Olozun] | v-sing
+> z-Uhelan | d-NAME.CITE[Onuron | Olazun] | v-sing
 >
-> "Ehalon sang Onoron Olozun."
+> "Uhelan sang Onuron Olazun."
 
 **`~`** and **`@`** combine, `~` first: the span still names the work, but the title is only roughly that. Use it when you remember a title loosely.
 
-> `zehalon d~@[onoron olozun] vezeyol.`
+> `zuhelan d~@[onuron olazun] vezuyol.`
 >
-> z-Ehalon | d-NAME.CITE.about[Onoron | Olozun] | v-sing
+> z-Uhelan | d-NAME.CITE.about[Onuron | Olazun] | v-sing
 >
-> "Ehalon sang that song called something like Onoron Olozun."
+> "Uhelan sang that song called something like Onuron Olazun."
 
 ### Opaque and loan words {#loans}
 
 To use a word from another language, a bit of code, or any spelling that is not Egabon, write the role letter, then angle brackets around it. That span is **opaque**: the inside is taken exactly as spelled and is not read as Egabon words. Write no letter after the closing `>`. The faithfulness marks are the same as on a cite: none, **`~`**, or **`@`**.
 
-> <code>zuzazon d&lt;kimchi&gt; vanobol.</code>
+> <code>zuzozen d&lt;kimchi&gt; vawebol.</code>
 >
-> z-Uzazon | d-OPAQUE["kimchi"] | v-see
+> z-Uzozen | d-OPAQUE["kimchi"] | v-see
 >
-> "Uzazon saw kimchi." (a foreign word)
+> "Uzozen saw kimchi." (a foreign word)
 
 Inside <code>&lt;&gt;</code>, keep the source’s capital letters when its writing system has them (<code>d&lt;NaCl&gt;</code>, <code>d@&lt;iPhone&gt;</code>). Egabon letters outside the brackets are always [lowercase](phonology.md#beginner). Use **`@`** when the bracketed word is a name or title.
 
-When the lexicon already has a matching root, write the ordinary word (`degazol`), not a span.
+When the lexicon already has a matching root, write the ordinary word (`dagozol`), not a span.
 
 On its own, outside a sentence, a foreign name or word is written with no role letter: just the marks and the brackets (<code>@&lt;Sam&gt;</code>), like other [citation forms](word-endings.md#citation-forms). In a sentence the span fills a role, so it takes a role letter (<code>z@&lt;Sam&gt;</code>).
 
@@ -93,49 +93,49 @@ To add a side comment in parentheses, write a role letter, then **`(`** … **`)
 
 The inside is ordinary Egabon: a fragment, or a clause with the **same speech act** as the outer sentence (both statements, both questions, or both commands). An aside comments; it does not call anyone or react, so it never goes under `/y/`. It fills no slot of the verb either, so it never goes under `/z/`, `/d/`, `/b/`, or `/v/`.
 
-> `zuzazon voworel th(hogawol).`
+> `zuzozen vewurel th(hogowul).`
 >
-> z-Uzazon | v-walk | th-ASIDE[h-quiet]
+> z-Uzozen | v-walk | th-ASIDE[h-quiet]
 >
-> "Uzazon walks (quietly)."
+> "Uzozen walks (quietly)."
 
-> `zuzazon voworel th(zolozun vuzevol).`
+> `zuzozen vewurel th(zolazun vezuvol).`
 >
-> z-Uzazon | v-walk | th-ASIDE[z-Olozun | v-sleep]
+> z-Uzozen | v-walk | th-ASIDE[z-Olazun | v-sleep]
 >
-> "Uzazon walks (Olozun is asleep)."
+> "Uzozen walks (Olazun is asleep)."
 
 A noun aside adds something about a noun the listener already has. It does not pick out which one, the way a plain adjective can:
 
-> `zodozol g(gerolol) voworel.`
+> `zudozol g(gerulel) vewurel.`
 >
 > [z-dog | g-ASIDE[g-red]] | v-walk
 >
 > "The dog (it is red) walks."
 
-> `zuzazon g(zuzazor voworel) vezeyol.`
+> `zuzozen g(zuzozer vewurel) vezuyol.`
 >
-> [z-Uzazon | g-ASIDE[z-←Uzazon | v-walk]] | v-sing
+> [z-Uzozen | g-ASIDE[z-←Uzozen | v-walk]] | v-sing
 >
-> "Uzazon, who walks, sings."
+> "Uzozen, who walks, sings."
 
-A `/w/` aside narrows the comment to one word. Here only the color is what Uzazon says:
+A `/w/` aside narrows the comment to one word. Here only the color is what Uzozen says:
 
-> `zodozol w(zuzazon vezeyel) gerolol voworel.`
+> `zudozol w(zuzozen vezuyel) gerulel vewurel.`
 >
-> [z-dog | [w-ASIDE[z-Uzazon | v-tell] | g-red]] | v-walk
+> [z-dog | [w-ASIDE[z-Uzozen | v-tell] | g-red]] | v-walk
 >
-> "A (so Uzazon says) red dog walks."
+> "A (so Uzozen says) red dog walks."
 
 An `/h/` aside is a side detail about the action itself, not about your claim:
 
-> `zuzazon voworel h(al bebahal).`
+> `zuzozen vewurel h(al babohal).`
 >
-> z-Uzazon | v-walk | h-ASIDE[in | b-bank]
+> z-Uzozen | v-walk | h-ASIDE[in | b-bank]
 >
-> "Uzazon walks (in a bank)."
+> "Uzozen walks (in a bank)."
 
-A one-word comment with nothing to package is a plain word in that slot: `zuzazon voworel hogawol.`
+A one-word comment with nothing to package is a plain word in that slot: `zuzozen vewurel hogowul.`
 
 **For *because* / *if*, use:** [**`barl`**](dependents.md#poles) dependents, not an aside.
 
@@ -145,19 +145,19 @@ A one-word comment with nothing to package is a plain word in that slot: `zuzazo
 
 A span can fill any role a word can, not only the object. The letter before the bracket is the role of the **whole span** in the outer sentence, so ask what that chunk does there: the object of *said*, the subject of *is small*, and so on. A cite can even be the **verb**, when you echo an act as wording:
 
-> `yul zolozun v[vuzahul].`
+> `yul zolazun v[vozohul].`
 >
-> y-prohibition | z-Olozun | v-CITE[v-stop]
+> y-prohibition | z-Olazun | v-CITE[v-stop]
 >
-> "Don’t say “stop,” Olozun."
+> "Don’t say “stop,” Olazun."
 
 <!-- cheat-sheet: restrictors-spans -->
 | Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
-| `/d/` | object | *said / wrote / saw “…”* (`d[uzazon]`, <code>d&lt;kimchi&gt;</code>) | **d** ≈ done to |
+| `/d/` | object | *said / wrote / saw “…”* (`d[uzozen]`, <code>d&lt;kimchi&gt;</code>) | **d** ≈ done to |
 | `/z/` | subject | a foreign name as the subject (<code>z@&lt;Sam&gt;</code>) | **z** ≈ star (who it is about) |
 | `/b/` | extra party | a foreign name as the recipient (<code>b@&lt;Sam&gt;</code>) | **b** ≈ bolted on (the extra piece) |
-| `/v/` | verb | echo the act as wording (`v[vuzahul]`); a loan verb (<code>v&lt;google&gt;</code>) | **v** as in English *verb* |
+| `/v/` | verb | echo the act as wording (`v[vozohul]`); a loan verb (<code>v&lt;google&gt;</code>) | **v** as in English *verb* |
 | `/ɡ/` | adjective | a loan adjective (<code>g&lt;rouge&gt;</code>); an aside on the noun (`g(…)`) | **g** ≈ grade (a rating of the noun) |
 | `/w/` | extra detail | a loan degree word (<code>w&lt;molto&gt;</code>); an aside on the next word (`w(…)`) | **w** ≈ with (stuck to that host) |
 | `/h/` | adverb | a loan adverb (<code>h&lt;allegro&gt;</code>); an aside on the action (`h(…)`) | **h** starts *how* / *when* / *where* |
@@ -167,23 +167,23 @@ Only an aside goes under `/th/`. An aside also goes under `/ɡ/`, `/w/`, or `/h/
 
 To use a foreign verb, adjective, adverb, or degree word (*googled*, *rouge*, *molto*), put an opaque span in that slot. That is a **loan word**: the role letter says how the foreign word is used, and the inside keeps its own spelling.
 
-> <code>zolozun v&lt;google&gt; duzazon.</code>
+> <code>zolazun v&lt;google&gt; duzozen.</code>
 >
-> z-Olozun | v-OPAQUE["google"] | d-Uzazon
+> z-Olazun | v-OPAQUE["google"] | d-Uzozen
 >
-> "Olozun googled Uzazon." (a borrowed word)
+> "Olazun googled Uzozen." (a borrowed word)
 
-> <code>zodozol g&lt;rouge&gt; voworel.</code>
+> <code>zudozol g&lt;rouge&gt; vewurel.</code>
 >
 > [z-dog | g-OPAQUE["rouge"]] | v-walk
 >
 > "A rouge dog walks." (a borrowed word)
 
-> <code>zuzazon vezeyel b@&lt;Sam&gt;.</code>
+> <code>zuzozen vezuyel b@&lt;Sam&gt;.</code>
 >
-> z-Uzazon | v-tell | b-NAME.OPAQUE["Sam"]
+> z-Uzozen | v-tell | b-NAME.OPAQUE["Sam"]
 >
-> "Uzazon talks to Sam." (a foreign name)
+> "Uzozen talks to Sam." (a foreign name)
 
 The letter before the bracket belongs to the whole span. Egabon words inside a cite start with **their own** role letters.
 
@@ -197,10 +197,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
-| *dance* | `vudarol` | 🕺 |
-| *stop* | `vuzahul` | 🛑 |
-| *quiet* | `ogawol` | 🔈 |
-| *Ugoron* | `ugoron` | 🎸 from *guitar*: a dance's name |
+| *dance* | `vayurel` | 🕺 |
+| *stop* | `vozohul` | 🛑 |
+| *quiet* | `ogowul` | 🔈 |
+| *Ogoron* | `ogoron` | 🎸 from *guitar*: a dance's name |
 | *Sam* | <code>@&lt;Sam&gt;</code> | a foreign name |
 | *google* | <code>v&lt;google&gt;</code> | a loan verb |
 | *Bravo* | <code>&lt;Bravo&gt;</code> | a foreign word |
@@ -209,87 +209,87 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Egabon |
 |---------|--------|
-| *Uzazon* | `uzazon` |
-| *Olozun* | `olozun` |
-| *Ehalon* | `ehalon` |
-| *tell* | `vezeyel` |
-| *write* | `vuruyel` |
-| *walk* | `voworel` |
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Uhelan* | `uhelan` |
+| *tell* | `vezuyel` |
+| *write* | `varayel` |
+| *walk* | `vewurel` |
 
 #### English → Egabon {#beginner-english-to-egabon}
 
-**1.** *Uzazon said “Uzazon.”* (hello)
+**1.** *Uzozen said “Uzozen.”* (hello)
 
 ::: details Show answer
-`zuzazon d[uzazon] vezeyel.`
+`zuzozen d[uzozen] vezuyel.`
 
-z-Uzazon | d-CITE[Uzazon] | v-tell
+z-Uzozen | d-CITE[Uzozen] | v-tell
 :::
 
-**2.** *Olozun wrote something like “Ehalon dances.”*
+**2.** *Olazun wrote something like “Uhelan dances.”*
 
 ::: details Show answer
-`zolozun d~[zehalon vudarol] vuruyel.`
+`zolazun d~[zuhelan vayurel] varayel.`
 
-z-Olozun | d-CITE.about[z-Ehalon | v-dance] | v-write
+z-Olazun | d-CITE.about[z-Uhelan | v-dance] | v-write
 :::
 
-**3.** *Olozun talks to Sam.* (a foreign name)
+**3.** *Olazun talks to Sam.* (a foreign name)
 
 ::: details Show answer
-<code>zolozun vezeyel b@&lt;Sam&gt;.</code>
+<code>zolazun vezuyel b@&lt;Sam&gt;.</code>
 
-z-Olozun | v-tell | b-NAME.OPAQUE["Sam"]
+z-Olazun | v-tell | b-NAME.OPAQUE["Sam"]
 :::
 
-**4.** *Don’t say “stop,” Uzazon.*
+**4.** *Don’t say “stop,” Uzozen.*
 
 ::: details Show answer
-`yul zuzazon v[vuzahul].`
+`yul zuzozen v[vozohul].`
 
-y-prohibition | z-Uzazon | v-CITE[v-stop]
+y-prohibition | z-Uzozen | v-CITE[v-stop]
 :::
 
-**5.** *Sam, does Uzazon dance?*
+**5.** *Sam, does Uzozen dance?*
 
 ::: details Show answer
-<code>y@&lt;Sam&gt; yol zuzazon vudarol.</code>
+<code>y@&lt;Sam&gt; yol zuzozen vayurel.</code>
 
-y-NAME.OPAQUE["Sam"] | y-question | z-Uzazon | v-dance
+y-NAME.OPAQUE["Sam"] | y-question | z-Uzozen | v-dance
 :::
 
-**6.** *Olozun walks (quietly).*
+**6.** *Olazun walks (quietly).*
 
 ::: details Show answer
-`zolozun voworel th(hogawol).`
+`zolazun vewurel th(hogowul).`
 
-z-Olozun | v-walk | th-ASIDE[h-quiet]
+z-Olazun | v-walk | th-ASIDE[h-quiet]
 :::
 
 #### Egabon → English {#beginner-egabon-to-english}
 
-**1.** `zolozun d@[ugoron olozun] vuruyel.`
+**1.** `zolazun d@[ogoron olazun] varayel.`
 
 ::: details Show answer
-z-Olozun | d-NAME.CITE[Ugoron | Olozun] | v-write
+z-Olazun | d-NAME.CITE[Ogoron | Olazun] | v-write
 
-*Olozun wrote Ugoron Olozun.* (the work)
+*Olazun wrote Ogoron Olazun.* (the work)
 :::
 
-**2.** <code>zolozun v&lt;google&gt; dugoron.</code>
+**2.** <code>zolazun v&lt;google&gt; dogoron.</code>
 
 ::: details Show answer
-z-Olozun | v-OPAQUE["google"] | d-Ugoron
+z-Olazun | v-OPAQUE["google"] | d-Ogoron
 
-*Olozun googled Ugoron.* (a borrowed word)
+*Olazun googled Ogoron.* (a borrowed word)
 :::
 
-**3.** `zehalon g(zehalor vudarol) voworel.`
+**3.** `zuhelan g(zuhelar vayurel) vewurel.`
 
 ::: details Show answer
-[z-Ehalon | g-ASIDE[z-←Ehalon | v-dance]] | v-walk
+[z-Uhelan | g-ASIDE[z-←Uhelan | v-dance]] | v-walk
 
-*Ehalon, who dances, walks.*
+*Uhelan, who dances, walks.*
 :::
 
 **4.** <code>y&lt;Bravo&gt;.</code>
@@ -300,52 +300,52 @@ y-OPAQUE["Bravo"]
 *Bravo!* (a foreign word)
 :::
 
-**5.** `zehalon d~@[ugoron olozun] vudarol.`
+**5.** `zuhelan d~@[ogoron olazun] vayurel.`
 
 ::: details Show answer
-z-Ehalon | d-NAME.CITE.about[Ugoron | Olozun] | v-dance
+z-Uhelan | d-NAME.CITE.about[Ogoron | Olazun] | v-dance
 
-*Ehalon danced the piece called something like Ugoron Olozun.*
+*Uhelan danced the piece called something like Ogoron Olazun.*
 :::
 
-**6.** `zehalon d[vuzahul] vezeyel.`
+**6.** `zuhelan d[vozohul] vezuyel.`
 
 ::: details Show answer
-z-Ehalon | d-CITE[v-stop] | v-tell
+z-Uhelan | d-CITE[v-stop] | v-tell
 
-*Ehalon said “stop.”*
+*Uhelan said “stop.”*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Ehalon danced Ugoron Olozun.* (the dance) `zehalon d@[ugoron olozun] vudarol.` or `zehalon d[ugoron olozun] vudarol.`
+**1.** *Uhelan danced Ogoron Olazun.* (the dance) `zuhelan d@[ogoron olazun] vayurel.` or `zuhelan d[ogoron olazun] vayurel.`
 
 ::: details Show answer
-`zehalon d@[ugoron olozun] vudarol.`
+`zuhelan d@[ogoron olazun] vayurel.`
 
-z-Ehalon | d-NAME.CITE[Ugoron | Olozun] | v-dance
+z-Uhelan | d-NAME.CITE[Ogoron | Olazun] | v-dance
 
 **`@`** makes the span the work itself; bare brackets quote the words.
 :::
 
-**2.** *Uzazon said “Olozun stops.”* `zuzazon d[zolozun vuzahul] vezeyel.` or `zuzazon vezeyel th(zolozun vuzahul).`
+**2.** *Uzozen said “Olazun stops.”* `zuzozen d[zolazun vozohul] vezuyel.` or `zuzozen vezuyel th(zolazun vozohul).`
 
 ::: details Show answer
-`zuzazon d[zolozun vuzahul] vezeyel.`
+`zuzozen d[zolazun vozohul] vezuyel.`
 
-z-Uzazon | d-CITE[z-Olozun | v-stop] | v-tell
+z-Uzozen | d-CITE[z-Olazun | v-stop] | v-tell
 
 What was said is the object, so it is a cite in `/d/`; an aside only comments on the sentence.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Olozun danced Ugoron.* (a work with a one-word name) <!-- lint: error -->`zolozun d@[ugoron] vudarol.`
+**1.** *Olazun danced Ogoron.* (a work with a one-word name) <!-- lint: error -->`zolazun d@[ogoron] vayurel.`
 
 ::: details Show answer
-`zolozun dugoron vudarol.`
+`zolazun dogoron vayurel.`
 
-z-Olozun | d-Ugoron | v-dance
+z-Olazun | d-Ogoron | v-dance
 
 A one-word name is an ordinary **-n** word; **`@[…]`** is for titles of several words.
 :::
@@ -360,7 +360,7 @@ Apart from what is inside, `[…]` and <code>&lt;…&gt;</code> work the same wa
 
 ### Mention {#mention}
 
-To talk about a word or phrase itself, as a spelling (*the word “odozo” is small*), put the **mention marker** before a span. That is a **mention**: it is about the letters, not what they mean, and not a quote of what someone said (for that, use a [cite](#writing)). The marker is a [left-bound adjective](clause.md#left-bound-adjectives), so a listener hears *this is a word as spelling* before the span arrives. In English, write *the word …* or *the phrase …* and keep the Egabon spelling (`odozo`, not *dog*).
+To talk about a word or phrase itself, as a spelling (*the word “udozo” is small*), put the **mention marker** before a span. That is a **mention**: it is about the letters, not what they mean, and not a quote of what someone said (for that, use a [cite](#writing)). The marker is a [left-bound adjective](clause.md#left-bound-adjectives), so a listener hears *this is a word as spelling* before the span arrives. In English, write *the word …* or *the phrase …* and keep the Egabon spelling (`udozo`, not *dog*).
 
 The marker is the *letters* root `ele` as a `gl-` adjective, on **-l** (`glelel`) or **-n** (`glelen`). (cue: 🔤 a word is its letters)
 
@@ -371,65 +371,65 @@ The marker is the *letters* root `ele` as a `gl-` adjective, on **-l** (`glelel`
 
 The span itself is an ordinary [opaque](#loans) <code>&lt;…&gt;</code> (or a cite `[…]`), so the marker plus the span fills a slot like any noun:
 
-> <code>glelel z&lt;odoga&gt; gumazom.</code>
+> <code>glelel z&lt;udozo&gt; gamezom.</code>
 >
-> [gl-MENTION | z-OPAQUE["odoga"]] | g-small
+> [gl-MENTION | z-OPAQUE["udozo"]] | g-small
 >
-> "The word “odozo” is small."
+> "The word “udozo” is small."
 
-> <code>glelel z&lt;zazawan vezehel&gt; gumazom.</code>
+> <code>glelel z&lt;zuzozen vezuyol&gt; gamezom.</code>
 >
-> [gl-MENTION | z-OPAQUE["zazawan vezehel"]] | g-small
+> [gl-MENTION | z-OPAQUE["zuzozen vezuyol"]] | g-small
 >
-> "The phrase “zuzazon vezeyol” is small."
+> "The phrase “zuzozen vezuyol” is small."
 
-With **-n**, the mention is a **name** as spelling (the title, which could be changed), even when it is **one word**: <code>glelen d&lt;onodan&gt;</code> is not `donoron`. A cite with **`@`** is the **work**, and that span is for a title of **several words** (`d@[onoron olozun]`). The one-word *Onoron* as the work is an ordinary **-n** word (`donoron`).
+With **-n**, the mention is a **name** as spelling (the title, which could be changed), even when it is **one word**: <code>glelen d&lt;onodan&gt;</code> is not `donuron`. A cite with **`@`** is the **work**, and that span is for a title of **several words** (`d@[onuron olazun]`). The one-word *Onuron* as the work is an ordinary **-n** word (`donuron`).
 
-> `zuzazon d@[onoron olozun] vogegum.`
+> `zuzozen d@[onuron olazun] vegugum.`
 >
-> z-Uzazon | d-NAME.CITE[Onoron | Olozun] | v-rejection
+> z-Uzozen | d-NAME.CITE[Onuron | Olazun] | v-rejection
 >
-> "Uzazon dislikes Onoron Olozun." (the work)
+> "Uzozen dislikes Onuron Olazun." (the work)
 
-> <code>zuzazon glelen d&lt;onodan&gt; vogegum.</code>
+> <code>zuzozen glelen d&lt;onodan&gt; vegugum.</code>
 >
-> z-Uzazon | [gl-NAME.MENTION | d-OPAQUE["onodan"]] | v-rejection
+> z-Uzozen | [gl-NAME.MENTION | d-OPAQUE["onodan"]] | v-rejection
 >
-> "Uzazon dislikes the name “onoron.”" (not the work)
+> "Uzozen dislikes the name “onuron.”" (not the work)
 
-**Compare with:** `donoron` is *Onoron* (the work or person). <code>glelen d&lt;onodan&gt;</code> is only the **name**.
+**Compare with:** `donuron` is *Onuron* (the work or person). <code>glelen d&lt;onodan&gt;</code> is only the **name**.
 
 The marker is read as a marker only when it stands **directly before a span**. Anywhere else the same spelling is the ordinary adjective *lettered*. A mention marker does not go under `/y/`: a call or a reaction is not about a spelling. A `/w/` word is never a marker either, because `/w/` grades a `/ɡ/`, `/h/`, or `/th/` word, never a noun.
 
 A marker before a [topic span](#topic-quotes) works the same way:
 
-> <code>glelel x&lt;odoga&gt; zozan gumazom.</code>
+> <code>glelel x&lt;odoga&gt; zozan gamezom.</code>
 >
 > [gl-MENTION | x-OPAQUE["odoga"]] | z-TOPIC | g-small
 >
-> "Now, about the word “odozo”: it is small."
+> "Now, about the word “udozo”: it is small."
 
 ### A span is an ordinary noun {#span-noun}
 
 A span fills a role like any noun, so a [role pointer](pronouns.md#role-pointers) for that role can point back to it. After a cite, `duxar` is *that quote*: the latest thing done to.
 
-> `zolozun d[uzazon] vezeyel. zehalon duxar vuruyel.`
+> `zolazun d[uzozen] vezuyel. zuhelan duxar varayel.`
 >
-> z-Olozun | d-CITE[Uzazon] | v-tell . z-Ehalon | d-←patient.same | v-write
+> z-Olazun | d-CITE[Uzozen] | v-tell . z-Uhelan | d-←patient.same | v-write
 >
-> "Olozun said “Uzazon.” Ehalon wrote that down."
+> "Olazun said “Uzozen.” Uhelan wrote that down."
 
 The same holds for a loan word or any other span, and `duxal` is [another one](pronouns.md#a-new-one) of what the span holds.
 
 An aside gives role pointers nothing to point back to. A [tag](pronouns.md#tag-pronouns) assigned inside a cite or an aside does not hold outside it, and a pointer outside never reaches a word inside one.
 
-A span in a `/v/` slot (`v[vuzahul]`) has no resume pronoun.
+A span in a `/v/` slot (`v[vozohul]`) has no resume pronoun.
 
 ### Spans before the noun (`gl`) {#gl-spans}
 
 A span on `/ɡ/` can also come **before** its noun, the way a [`gl-` adjective](clause.md#left-bound-adjectives) does: write **`gl`** before the bracket. It describes the next noun, so a noun must follow it. A noun aside before the noun (`gl(…)`) keeps the spot after the noun free for a plain adjective that picks out which one.
 
-> `gl(gerolol) zodozol gumazom voworel.`
+> `gl(gerulel) zudozol gamezom vewurel.`
 >
 > [gl-ASIDE[g-red] | z-dog | g-small] | v-walk
 >
@@ -437,7 +437,7 @@ A span on `/ɡ/` can also come **before** its noun, the way a [`gl-` adjective](
 
 A loan adjective or a cite leans the same way:
 
-> <code>gl&lt;rouge&gt; zodozol voworel.</code>
+> <code>gl&lt;rouge&gt; zudozol vewurel.</code>
 >
 > [gl-OPAQUE["rouge"] | z-dog] | v-walk
 >
@@ -449,29 +449,29 @@ A loan adjective or a cite leans the same way:
 
 A span with **`@`** names the work or product itself: <code>d@&lt;iPhone&gt;</code> is the iPhone as a product. For one thing that name applies to (one phone, one copy of a book, one performance of a song), write **`^@`** in the mark slot instead. It is the span's form of the [**-ln**](word-endings.md#name-instance--ln) ending, and like **-ln** it brings a new thing into the conversation. (cue: **^** points up to the name the thing falls under)
 
-> <code>zolozun d^@&lt;iPhone&gt; vanobol.</code>
+> <code>zolazun d^@&lt;iPhone&gt; vawebol.</code>
 >
-> z-Olozun | d-NAME.OPAQUE.instance["iPhone"] | v-see
+> z-Olazun | d-NAME.OPAQUE.instance["iPhone"] | v-see
 >
-> "Olozun sees an iPhone."
+> "Olazun sees an iPhone."
 
 | Egabon | Use | English |
 |--------|-----|---------|
 | <code>d@&lt;iPhone&gt;</code> | the named product | *the iPhone* |
 | <code>d^@&lt;iPhone&gt;</code> | one unit of it | *an iPhone* |
-| `d@[onoron olozun]` | the named work | *Onoron Olozun* |
-| `d^@[onoron olozun]` | one copy or performance of it | *a copy of Onoron Olozun* |
-| `d~^@[onoron olozun]` | one copy of a work titled roughly that | *a copy of something like Onoron Olozun* |
+| `d@[onuron olazun]` | the named work | *Onuron Olazun* |
+| `d^@[onuron olazun]` | one copy or performance of it | *a copy of Onuron Olazun* |
+| `d~^@[onuron olazun]` | one copy of a work titled roughly that | *a copy of something like Onuron Olazun* |
 
 ### Act words in a quote {#quote-acts}
 
 A quoted question or command keeps its own [act word](speech-moves.md#speech-act-statement-question-command) inside the cite, the same way it keeps a tone mark. The outer sentence is still your claim (*said*), and `yol` or `yel` belongs to the quoted talk.
 
-> `zuzazon d[yol zolozun voworel] vezeyel.`
+> `zuzozen d[yol zolazun vewurel] vezuyel.`
 >
-> z-Uzazon | d-CITE[y-question | z-Olozun | v-walk] | v-tell
+> z-Uzozen | d-CITE[y-question | z-Olazun | v-walk] | v-tell
 >
-> "Uzazon said, “Does Olozun walk?”"
+> "Uzozen said, “Does Olazun walk?”"
 
 ### Topics in a quote {#topic-quotes}
 
@@ -479,13 +479,13 @@ A cite holds someone else's words, so a [topic](pronouns.md#topic) never carries
 
 A cite or opaque span can also be a topic word itself, under `/x/`: a titled work, a word as spelling (with the mention marker before it), or a foreign name.
 
-> `x@[onoron olozun] dozan vezeyol.`
+> `x@[onuron olazun] dozan vezuyol.`
 >
-> x-NAME.CITE[Onoron | Olozun] | d-TOPIC | v-sing
+> x-NAME.CITE[Onuron | Olazun] | d-TOPIC | v-sing
 >
-> "Now, about Onoron Olozun: it is sung."
+> "Now, about Onuron Olazun: it is sung."
 
-> <code>x@&lt;Sam&gt; zozan voworel.</code>
+> <code>x@&lt;Sam&gt; zozan vewurel.</code>
 >
 > x-NAME.OPAQUE["Sam"] | z-TOPIC | v-walk
 >
@@ -502,15 +502,15 @@ A **-r** inside a cite cannot find a word outside it: the quoted words were said
 
 Sometimes a word like *possibly*, or a join, should apply to only part of the sentence, a chunk of several words, not the whole clause. Put that chunk in braces **`{ … }`**, with the word that applies to it **inside**. That word is the island’s **binder**: it reaches only what the braces hold. Braces have no other use. Speech has no word for the edges: you hear a pause, then one tight phrase.
 
-> `zuzazon { hegegom zodozol gerolol } vanobol.`
+> `zuzozen { hegugom zudozol gerulel } vawebol.`
 >
-> z-Uzazon | SCOPE[h-possibility | [z-dog | g-red]] | v-see
+> z-Uzozen | SCOPE[h-possibility | [z-dog | g-red]] | v-see
 >
-> "Uzazon saw what was possibly a red dog."
+> "Uzozen saw what was possibly a red dog."
 
-Here **`hegegom`** reaches only *a red dog*, not the seeing.
+Here **`hegugom`** reaches only *a red dog*, not the seeing.
 
-A [tone mark](speech-moves.md#tone-marks) written right before the opening brace colors the whole island (`!{ hegegom zodozol gerolol }`).
+A [tone mark](speech-moves.md#tone-marks) written right before the opening brace colors the whole island (`!{ hegugom zudozol gerulel }`).
 
 **Compare with:** quoting, asides, mentions, and opaque blobs use [spans](#writing) (`d[…]`, `th(…)`, <code>d&lt;…&gt;</code>). Islands only group so a binder inside can target that chunk.
 
@@ -521,14 +521,14 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening brace
 - **One island per clause.** Islands do not nest.
 - Empty `{ }` has no reading.
 - **Binder required:** at least one scope-taking `/h/` or `/th/` and/or a [join](joins.md#scope-islands-join) particle **inside**. A [hook](hooks.md) is never a binder. A hook already reaches its whole stretch: `/w/` right before it grades the [whole span](hooks.md#spans), and a hook after a noun belongs to that noun.
-- Prefer spaces inside: `{ hegegom zodozol gerolol }`.
+- Prefer spaces inside: `{ hegugom zudozol gerulel }`.
 
 | Binder | Use inside the island |
 |--------|------------------------|
 | Scope-taking **`/h/`** or **`/th/`** | frames that **chunk** (prefer first in the island; see the `/b/` exception below) |
 | Prefixed **join** | joins **only** matching-role material **inside** ([scope islands](joins.md#scope-islands-join)) |
 
-`/h/` and a join may share one island (`{ hegegom zuzazon zolozun zam }`).
+`/h/` and a join may share one island (`{ hegugom zuzozen zolazun zam }`).
 
 | Placement | Reading |
 |-----------|---------|
@@ -537,25 +537,25 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening brace
 | Join **inside** | joins only interior conjuncts |
 | Join **outside** with island nearby | ordinary lookback (edges do not filter an outside join) |
 
-> `zuzazon { zolozun zal } zam voworel.`
+> `zuzozen { zolazun zal } zam vewurel.`
 >
-> [z-Uzazon | SCOPE[z-Olozun | z-and] | z-and.open] | v-walk
+> [z-Uzozen | SCOPE[z-Olazun | z-and] | z-and.open] | v-walk
 >
-> "Uzazon and (just Olozun) walk."
+> "Uzozen and (just Olazun) walk."
 
 A `/b/` right after an `/h/` word is hosted by it ([extra nouns](clause.md#extra-nouns)). To put a recipient `/b/` in an island, write it **before** the binder:
 
-> `zuzazon { bolozun hegegom } vezeyel.`
+> `zuzozen { bolazun hegugom } vezuyel.`
 >
-> z-Uzazon | SCOPE[b-Olozun | h-possibility] | v-tell
+> z-Uzozen | SCOPE[b-Olazun | h-possibility] | v-tell
 >
-> "Uzazon talks, possibly to Olozun."
+> "Uzozen talks, possibly to Olazun."
 
 The word before the island must not be a `/ɡ/`, `/h/`, or `/th/` word either, or it would host that `/b/` across the edge.
 
 An island can hold part of a phrase. Here only *not small* is grouped, so **`gul`** denies *small* alone and **`gal`** adds it to *red*:
 
-> `zodozol gerolol { gumazom gul } gal voworel.`
+> `zudozol gerulel { gamezom gul } gal vewurel.`
 >
 > [z-dog | [g-red | SCOPE[g-small | g-not] | g-and]] | v-walk
 >
@@ -573,174 +573,174 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
-| *Onoron* | `onoron` | 🎵 from *note*: a song's name |
-| *rejection* | `vogegum` | ❌ from *cross* |
-| *possibility* | `hegegom` | ❓ from *question mark* |
+| *Onuron* | `onuron` | 🎵 from *note*: a song's name |
+| *rejection* | `vegugum` | ❌ from *cross* |
+| *possibility* | `hegugom` | ❓ from *question mark* |
 | *letters* | `glelel` | 🔤: a word is its letters |
 
 **Review:**
 
 | English | Egabon |
 |---------|--------|
-| *Uzazon* | `uzazon` |
-| *Olozun* | `olozun` |
-| *Ehalon* | `ehalon` |
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Uhelan* | `uhelan` |
 | *topic* | `ozan` |
 | *attest* | `vodol` |
-| *lie* | `vulamul` |
-| *small* | `gumazom` |
-| *tell* | `vezeyel` |
-| *write* | `vuruyel` |
-| *see* | `vanobol` |
-| *punch* | `vabavul` |
-| *walk* | `voworel` |
+| *lie* | `valamul` |
+| *small* | `gamezom` |
+| *tell* | `vezuyel` |
+| *write* | `varayel` |
+| *see* | `vawebol` |
+| *punch* | `vanuvul` |
+| *walk* | `vewurel` |
 
 #### English → Egabon {#intermediate-english-to-egabon}
 
-**1.** *Olozun said “Uzazon attests.”*
+**1.** *Olazun said “Uzozen attests.”*
 
 ::: details Show answer
-`zolozun d[zuzazon vodol] vezeyel.`
+`zolazun d[zuzozen vodol] vezuyel.`
 
-z-Olozun | d-CITE[z-Uzazon | v-attest] | v-tell
+z-Olazun | d-CITE[z-Uzozen | v-attest] | v-tell
 :::
 
-**2.** *Olozun said “Uzazon.” Ehalon wrote that down.* (*that* is the quote)
+**2.** *Olazun said “Uzozen.” Uhelan wrote that down.* (*that* is the quote)
 
 ::: details Show answer
-`zolozun d[uzazon] vezeyel. zehalon duxar vuruyel.`
+`zolazun d[uzozen] vezuyel. zuhelan duxar varayel.`
 
-z-Olozun | d-CITE[Uzazon] | v-tell . z-Ehalon | d-←patient.same | v-write
+z-Olazun | d-CITE[Uzozen] | v-tell . z-Uhelan | d-←patient.same | v-write
 :::
 
 **3.** *The word “onoda” is small.*
 
 ::: details Show answer
-<code>glelel z&lt;onoda&gt; gumazom.</code>
+<code>glelel z&lt;onoda&gt; gamezom.</code>
 
 [gl-MENTION | z-OPAQUE["onoda"]] | g-small
 :::
 
-**4.** *Uzazon said, “Does Olozun lie?”*
+**4.** *Uzozen said, “Does Olazun lie?”*
 
 ::: details Show answer
-`zuzazon d[yol zolozun vulamul] vezeyel.`
+`zuzozen d[yol zolazun valamul] vezuyel.`
 
-z-Uzazon | d-CITE[y-question | z-Olozun | v-lie] | v-tell
+z-Uzozen | d-CITE[y-question | z-Olazun | v-lie] | v-tell
 :::
 
-**5.** *Ehalon sees a copy of Onoron Olozun.*
+**5.** *Uhelan sees a copy of Onuron Olazun.*
 
 ::: details Show answer
-`zehalon d^@[onoron olozun] vanobol.`
+`zuhelan d^@[onuron olazun] vawebol.`
 
-z-Ehalon | d-NAME.CITE.instance[Onoron | Olozun] | v-see
+z-Uhelan | d-NAME.CITE.instance[Onuron | Olazun] | v-see
 :::
 
-**6.** *Olozun talks, possibly to Ehalon.*
+**6.** *Olazun talks, possibly to Uhelan.*
 
 ::: details Show answer
-`zolozun { behalon hegegom } vezeyel.`
+`zolazun { buhelan hegugom } vezuyel.`
 
-z-Olozun | SCOPE[b-Ehalon | h-possibility] | v-tell
+z-Olazun | SCOPE[b-Uhelan | h-possibility] | v-tell
 :::
 
 #### Egabon → English {#intermediate-egabon-to-english}
 
-**1.** <code>zuzazon glelen d&lt;onodan&gt; vogegum.</code>
+**1.** <code>zuzozen glelen d&lt;onodan&gt; vegugum.</code>
 
 ::: details Show answer
-z-Uzazon | [gl-NAME.MENTION | d-OPAQUE["onoron"]] | v-rejection
+z-Uzozen | [gl-NAME.MENTION | d-OPAQUE["onuron"]] | v-rejection
 
-*Uzazon dislikes the name “onoron.”* (not the work)
+*Uzozen dislikes the name “onuron.”* (not the work)
 :::
 
-**2.** `x@[onoron olozun] zolozun dozan vogegum.`
+**2.** `x@[onuron olazun] zolazun dozan vegugum.`
 
 ::: details Show answer
-x-NAME.CITE[Onoron | Olozun] | z-Olozun | d-TOPIC | v-rejection
+x-NAME.CITE[Onuron | Olazun] | z-Olazun | d-TOPIC | v-rejection
 
-*Now, about Onoron Olozun: Olozun dislikes it.*
+*Now, about Onuron Olazun: Olazun dislikes it.*
 :::
 
-**3.** `zehalon d~[zuzazon vodol] vezeyel.`
+**3.** `zuhelan d~[zuzozen vodol] vezuyel.`
 
 ::: details Show answer
-z-Ehalon | d-CITE.about[z-Uzazon | v-attest] | v-tell
+z-Uhelan | d-CITE.about[z-Uzozen | v-attest] | v-tell
 
-*Ehalon said something like “Uzazon attests.”*
+*Uhelan said something like “Uzozen attests.”*
 :::
 
-**4.** `zolozun { zuzazon zal } zam vabavul.`
+**4.** `zolazun { zuzozen zal } zam vanuvul.`
 
 ::: details Show answer
-[z-Olozun | SCOPE[z-Uzazon | z-and] | z-and.open] | v-punch
+[z-Olazun | SCOPE[z-Uzozen | z-and] | z-and.open] | v-punch
 
-*Olozun and (just Uzazon) punched.*
+*Olazun and (just Uzozen) punched.*
 :::
 
 
-**5.** `zehalon !{ hegegom dulamul } vanobol.`
+**5.** `zuhelan !{ hegugom dalamul } vawebol.`
 
 ::: details Show answer
-z-Ehalon | !SCOPE[h-possibility | d-lie] | v-see
+z-Uhelan | !SCOPE[h-possibility | d-lie] | v-see
 
-*Ehalon saw what was possibly a lie!*
+*Uhelan saw what was possibly a lie!*
 :::
 
-**6.** `gl(gumazom) zolozun duzazon vabavul.`
+**6.** `gl(gamezom) zolazun duzozen vanuvul.`
 
 ::: details Show answer
-[gl-ASIDE[g-small] | z-Olozun] | d-Uzazon | v-punch
+[gl-ASIDE[g-small] | z-Olazun] | d-Uzozen | v-punch
 
-*Olozun, who is small, punches Uzazon.*
+*Olazun, who is small, punches Uzozen.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzazon dislikes Onoron Olozun.* (the work) `zuzazon d@[onoron olozun] vogegum.` or `zuzazon d[onoron olozun] vogegum.`
+**1.** *Uzozen dislikes Onuron Olazun.* (the work) `zuzozen d@[onuron olazun] vegugum.` or `zuzozen d[onuron olazun] vegugum.`
 
 ::: details Show answer
-`zuzazon d@[onoron olozun] vogegum.`
+`zuzozen d@[onuron olazun] vegugum.`
 
-z-Uzazon | d-NAME.CITE[Onoron | Olozun] | v-rejection
+z-Uzozen | d-NAME.CITE[Onuron | Olazun] | v-rejection
 
 **`@`** makes the span the work; bare brackets quote the words.
 :::
 
-**2.** *Uzazon saw what was possibly a lie.* `zuzazon { hegegom dulamul } vanobol.` or `zuzazon hegegom dulamul vanobol.`
+**2.** *Uzozen saw what was possibly a lie.* `zuzozen { hegugom dalamul } vawebol.` or `zuzozen hegugom dalamul vawebol.`
 
 ::: details Show answer
-`zuzazon { hegegom dulamul } vanobol.`
+`zuzozen { hegugom dalamul } vawebol.`
 
-z-Uzazon | SCOPE[h-possibility | d-lie] | v-see
+z-Uzozen | SCOPE[h-possibility | d-lie] | v-see
 
-Inside braces, **`hegegom`** reaches only that chunk; outside, it frames the whole seeing.
+Inside braces, **`hegugom`** reaches only that chunk; outside, it frames the whole seeing.
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Uzazon said, “Does Olozun walk?”* <!-- lint: error -->`yol zuzazon d[zolozun voworel] vezeyel.`
+**1.** *Uzozen said, “Does Olazun walk?”* <!-- lint: error -->`yol zuzozen d[zolazun vewurel] vezuyel.`
 
 ::: details Show answer
-`zuzazon d[yol zolozun voworel] vezeyel.`
+`zuzozen d[yol zolazun vewurel] vezuyel.`
 
-z-Uzazon | d-CITE[y-question | z-Olozun | v-walk] | v-tell
+z-Uzozen | d-CITE[y-question | z-Olazun | v-walk] | v-tell
 
-The quoted question keeps its act word inside the cite; **`yol`** outside asks whether Uzazon said it.
+The quoted question keeps its act word inside the cite; **`yol`** outside asks whether Uzozen said it.
 :::
 
 ## Advanced {#advanced}
 
 ### Editorial close and close-all {#close-forms-complete-editorial-close-all}
 
-A closing bracket normally ends one span, with its wording complete. Two written marks, placed just **inside** the closing bracket, change that. **`#`** keeps the wording as written but shows that it is cut off, trails off, or is faulty (*Uzazon said “bug…”*). **`|`** closes every span still open around it at once.
+A closing bracket normally ends one span, with its wording complete. Two written marks, placed just **inside** the closing bracket, change that. **`#`** keeps the wording as written but shows that it is cut off, trails off, or is faulty (*Uzozen said “bug…”*). **`|`** closes every span still open around it at once.
 
-> `zuzazon d[ubazom#] vezeyel.`
+> `zuzozen d[abezum#] vezuyel.`
 >
-> z-Uzazon | d-CITE[flaw]# | v-tell
+> z-Uzozen | d-CITE[flaw]# | v-tell
 >
-> "Uzazon said “bug…”"
+> "Uzozen said “bug…”"
 
 | Writing | Use | English | Cue |
 |---------|-----|---------|-----|
@@ -755,11 +755,11 @@ An editorial span still counts as quoted: a role pointer can reach it as it reac
 
 When one packaged chunk sits inside another (a quote that contains a parenthetical, or a cite wrapping an opaque blob), the spans nest, and each one closes with its own bracket.
 
-> `zuzazon d[ th(hogawol) uzazon ] vezeyel.`
+> `zuzozen d[ th(hogowul) uzozen ] vezuyel.`
 >
-> z-Uzazon | d-CITE[th-ASIDE[h-quiet] | Uzazon] | v-tell
+> z-Uzozen | d-CITE[th-ASIDE[h-quiet] | Uzozen] | v-tell
 >
-> "Uzazon said “(quietly) Uzazon.”" (hello)
+> "Uzozen said “(quietly) Uzozen.”" (hello)
 
 The same nest works as <code>d[ z&lt;…&gt; ]</code> or <code>d~[ d&lt;…&gt; ]</code>.
 
@@ -773,108 +773,108 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
-| *flaw* | `ubazom` | 🐛 from *bug* |
+| *flaw* | `abezum` | 🐛 from *bug* |
 
 **Review:**
 
 | English | Egabon |
 |---------|--------|
-| *Uzazon* | `uzazon` |
-| *Olozun* | `olozun` |
-| *Ehalon* | `ehalon` |
-| *page* | `ebogol` |
-| *tell* | `vezeyel` |
-| *write* | `vuruyel` |
-| *see* | `vanobol` |
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Uhelan* | `uhelan` |
+| *page* | `ebogel` |
+| *tell* | `vezuyel` |
+| *write* | `varayel` |
+| *see* | `vawebol` |
 
 #### English → Egabon {#advanced-english-to-egabon}
 
-**1.** *Olozun said “flaw…”* (the quote trails off)
+**1.** *Olazun said “flaw…”* (the quote trails off)
 
 ::: details Show answer
-`zolozun d[ubazom#] vezeyel.`
+`zolazun d[abezum#] vezuyel.`
 
-z-Olozun | d-CITE[flaw]# | v-tell
+z-Olazun | d-CITE[flaw]# | v-tell
 :::
 
-**2.** *Uzazon wrote “(quietly) flaw.”*
+**2.** *Uzozen wrote “(quietly) flaw.”*
 
 ::: details Show answer
-`zuzazon d[ th(hogawol) ubazom ] vuruyel.`
+`zuzozen d[ th(hogowul) abezum ] varayel.`
 
-z-Uzazon | d-CITE[th-ASIDE[h-quiet] | flaw] | v-write
+z-Uzozen | d-CITE[th-ASIDE[h-quiet] | flaw] | v-write
 :::
 
-**3.** *Ehalon said “flaw…”* (the quote trails off; close every open bracket at once)
+**3.** *Uhelan said “flaw…”* (the quote trails off; close every open bracket at once)
 
 ::: details Show answer
-`zehalon d[ubazom#|] vezeyel.`
+`zuhelan d[abezum#|] vezuyel.`
 
-z-Ehalon | d-CITE[flaw]#| | v-tell
+z-Uhelan | d-CITE[flaw]#| | v-tell
 :::
 
-**4.** *Uzazon sees “flaw…” on the page.*
+**4.** *Uzozen sees “flaw…” on the page.*
 
 ::: details Show answer
-`zuzazon d[ubazom#] vanobol aol bebogol.`
+`zuzozen d[abezum#] vawebol aol bebogel.`
 
-z-Uzazon | d-CITE[flaw]# | v-see | [on | b-page]
+z-Uzozen | d-CITE[flaw]# | v-see | [on | b-page]
 :::
 
 #### Egabon → English {#advanced-egabon-to-english}
 
-**1.** `zehalon d[ubazom] vuruyel.`
+**1.** `zuhelan d[abezum] varayel.`
 
 ::: details Show answer
-z-Ehalon | d-CITE[flaw] | v-write
+z-Uhelan | d-CITE[flaw] | v-write
 
-*Ehalon wrote “flaw.”*
+*Uhelan wrote “flaw.”*
 :::
 
-**2.** `zolozun d[ th(hogawol) zuzazon vuruyel ] vezeyel.`
+**2.** `zolazun d[ th(hogowul) zuzozen varayel ] vezuyel.`
 
 ::: details Show answer
-z-Olozun | d-CITE[th-ASIDE[h-quiet] | z-Uzazon | v-write] | v-tell
+z-Olazun | d-CITE[th-ASIDE[h-quiet] | z-Uzozen | v-write] | v-tell
 
-*Olozun said, “(quietly) Uzazon writes.”*
+*Olazun said, “(quietly) Uzozen writes.”*
 :::
 
-**3.** `zuzazon d[zolozun vuruyel#] vezeyel.`
+**3.** `zuzozen d[zolazun varayel#] vezuyel.`
 
 ::: details Show answer
-z-Uzazon | d-CITE[z-Olozun | v-write]# | v-tell
+z-Uzozen | d-CITE[z-Olazun | v-write]# | v-tell
 
-*Uzazon said “Olozun writes…”*
+*Uzozen said “Olazun writes…”*
 :::
 
-**4.** `zolozun d[ubazom#] vezeyel. zehalon duxar vuruyel.`
+**4.** `zolazun d[abezum#] vezuyel. zuhelan duxar varayel.`
 
 ::: details Show answer
-z-Olozun | d-CITE[flaw]# | v-tell . z-Ehalon | d-←patient.same | v-write
+z-Olazun | d-CITE[flaw]# | v-tell . z-Uhelan | d-←patient.same | v-write
 
-*Olozun said “flaw…” Ehalon wrote that down.*
+*Olazun said “flaw…” Uhelan wrote that down.*
 :::
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Ehalon said “flaw…”* (the quote trails off) `zehalon d[ubazom#] vezeyel.` or `zehalon d[ubazom] vezeyel.`
+**1.** *Uhelan said “flaw…”* (the quote trails off) `zuhelan d[abezum#] vezuyel.` or `zuhelan d[abezum] vezuyel.`
 
 ::: details Show answer
-`zehalon d[ubazom#] vezeyel.`
+`zuhelan d[abezum#] vezuyel.`
 
-z-Ehalon | d-CITE[flaw]# | v-tell
+z-Uhelan | d-CITE[flaw]# | v-tell
 
 **`#`** inside the closer keeps the wording but marks it cut off; a plain closer says it is complete.
 :::
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zuzazon d[ubazom#] vezeyel.` / `zuzazon d[ubazom#|] vezeyel.`
+**1.** `zuzozen d[abezum#] vezuyel.` / `zuzozen d[abezum#|] vezuyel.`
 
 ::: details Show answer
-z-Uzazon | d-CITE[flaw]# | v-tell
+z-Uzozen | d-CITE[flaw]# | v-tell
 
-z-Uzazon | d-CITE[flaw]#| | v-tell
+z-Uzozen | d-CITE[flaw]#| | v-tell
 
 Both quotes trail off; with **`|`**, the closer also shuts every span still open.
 :::

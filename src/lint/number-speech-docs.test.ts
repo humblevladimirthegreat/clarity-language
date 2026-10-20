@@ -5,31 +5,31 @@ import { lintNumberSpeechMarkdown, spokenForm } from "./number-speech-docs.js";
 
 describe("spokenForm", () => {
   it("spells out number shorthand and keeps other words", () => {
-    assert.equal(spokenForm("zegazolx g+3."), "zegazolx grarel.");
+    assert.equal(spokenForm("zagozolx g+3."), "zagozolx grarel.");
     assert.equal(spokenForm("h_15,30"), "hrowovathorezol");
   });
 });
 
 describe("lintNumberSpeechMarkdown", () => {
   it("accepts a matching row under a teach block", () => {
-    const md = "> `zegazolx g+3.`\n>\n> 🔊 `zegazolx grarel.`\n>\n> \"Three cats.\"\n";
+    const md = "> `zagozolx g+3.`\n>\n> 🔊 `zagozolx grarel.`\n>\n> \"Three cats.\"\n";
     assert.deepEqual(lintNumberSpeechMarkdown(md), []);
   });
 
   it("flags a missing row", () => {
-    const md = "> `zegazolx g+3.`\n>\n> \"Three cats.\"\n";
+    const md = "> `zagozolx g+3.`\n>\n> \"Three cats.\"\n";
     const [finding] = lintNumberSpeechMarkdown(md);
     assert.equal(finding?.documented, null);
-    assert.equal(finding?.expected, "zegazolx grarel.");
+    assert.equal(finding?.expected, "zagozolx grarel.");
   });
 
   it("flags a mismatched row", () => {
-    const md = "> `zegazolx g+3.`\n>\n> 🔊 `zegazolx gramol.`\n";
-    assert.equal(lintNumberSpeechMarkdown(md)[0]?.documented, "zegazolx gramol.");
+    const md = "> `zagozolx g+3.`\n>\n> 🔊 `zagozolx gramol.`\n";
+    assert.equal(lintNumberSpeechMarkdown(md)[0]?.documented, "zagozolx gramol.");
   });
 
   it("needs no row when writing already equals speech", () => {
-    assert.deepEqual(lintNumberSpeechMarkdown("> `zegazolx grarel.`\n"), []);
+    assert.deepEqual(lintNumberSpeechMarkdown("> `zagozolx grarel.`\n"), []);
   });
 
   it("pairs a spoken → written prompt with its answer", () => {

@@ -51,19 +51,19 @@ The same onsets as the respelled digit syllables in `number-respelling.md`:
 | 9 | **n** | nu |
 | 0 | **m** | ma |
 
-Vowels never encode a digit. The same skeleton with different vowels is the **same number**: `ogelo` *gold*, `ugoro` *guitar*, `ogado` *cutlery* and `ogumo` *cold* are all **32**. Use that freedom to pick a vivid picture; don't treat `u` / `a` / `o` / `e` as extra digits.
+Vowels never encode a digit. The same skeleton with different vowels is the **same number**: `egule` *gold*, `ogoro` *guitar*, `ageda` *cutlery* and `ogemu` *cold* are all **32**. Use that freedom to pick a vivid picture; don't treat `u` / `a` / `o` / `e` as extra digits.
 
 ## Payload vs silent
 
 **Payload** (left to right, **inside the root**): `b d g v z h l r n m`.
 
-**Fillers:** `w` and `y`. They add a syllable without adding a digit. A five-letter root with one filler and one digit letter is a **one-onset** root (`erehe` *railway* → **r** → **8**). Roots never contain `x` or `th`.
+**Fillers:** `w` and `y`. They add a syllable without adding a digit. A five-letter root with one filler and one digit letter is a **one-onset** root (`erahe` *railway* → **r** → **8**). Roots never contain `x` or `th`.
 
 **Always silent:**
 
 - All vowels.
-- The role letter, and the `l` of left-hanging `gl-`. The role letter changes a word's job, not what you picture: `zodozol` and `dodozol` are the same dog. It also has its own job in [person–action–object](#optional-person-action-object).
-- **The ending** (**-l / -m / -n / -r**). Picture the seed whatever the ending: `zodozol` and `zodozom` are both the dog, **23**.
+- The role letter, and the `l` of left-hanging `gl-`. The role letter changes a word's job, not what you picture: `zudozol` and `dudozol` are the same dog. It also has its own job in [person–action–object](#optional-person-action-object).
+- **The ending** (**-l / -m / -n / -r**). Picture the seed whatever the ending: `zudozol` and `zudozom` are both the dog, **23**.
 - Plural **-x**, name instance **-ln**, and the stand-in codas **-rl / -rm / -rth**.
 - Mid-word **x** (compound seam) and mid-word **th** (stance seam).
 
@@ -73,7 +73,7 @@ So the role letter, the ending and every coda sit outside the root. Read only th
 
 ### Dictionary compounds
 
-A [dictionary compound](../grammar/x-compounds.md#lexical-compounds) is one stem: left root + join letter + head root. The join letter (**l / m / n / r**) **counts**: it is spelled and heard like any root letter, so decoding never needs to know where the seam is. `zebeholuruhal` *bedroom* is **b d l r h** → **12786**.
+A [dictionary compound](../grammar/x-compounds.md#lexical-compounds) is one stem: left root + join letter + head root. The join letter (**l / m / n / r**) **counts**: it is spelled and heard like any root letter, so decoding never needs to know where the seam is. `zobaholurahal` *bedroom* is **b d l r h** → **12786**.
 
 A compound has three or more onsets, so it doesn't fit a fixed-length slot. Compounds are optional long pegs for a palace slot set to their own length. They aren't part of the canonical bank.
 
@@ -104,13 +104,13 @@ Decoding is unique. That is the gap in the English Major system this closes.
 | 5 letters `VCVCV`, two digit letters | 2 onsets | **00–99** |
 | Dictionary compound | 3–5 onsets | long chunk (optional) |
 
-Three-letter roots with a filler consonant (`oye` *door*) and five-letter roots with two fillers (`oyavo` *yoyo*) carry no digit.
+Three-letter roots with a filler consonant (`oye` *door*) and five-letter roots with two fillers (`oyevo` *yoyo*) carry no digit.
 
 Phone-style groups already match how they're spoken (`555,123,4567`): one image per comma group, or 2-digit chunks with the 3-digit groups split 2+1.
 
-**2381** → **23 | 81**: `zedegol` *ticket*, `zurubol` *ring*.
+**2381** → **23 | 81**: `zodegel` *ticket*, `zorebol` *ring*.
 
-**5970** → **59 | 70**: `zozenul` *Swiss flag*, `zalamal` *laugh*. A root's second consonant is its kind, so **59** is always a named root (a flag) with **z** first, and **70** a mind-and-feeling root with **l** first.
+**5970** → **59 | 70**: `zezwedzerlandal` *Swiss flag*, `zolamal` *laugh*. A root's second consonant is its kind, so **59** is always a named root (a flag) with **z** first, and **70** a mind-and-feeling root with **l** first.
 
 Don't encode the decimal point. Use two scenes (integer, then fraction) or two palace slots.
 
@@ -124,7 +124,7 @@ The same 00–99 pegs work here; the role letter picks the job, so no second map
 
 Read the digits in the clause's default order (subject, object, verb), so six digits fill one locus:
 
-> `zodozol darewol vegayol.`
+> `zudozol derowol veyuyal.`
 >
 > z-dog | d-radio | v-kiss
 >
@@ -134,11 +134,11 @@ Each word is a two-onset root, so each fills two digits.
 
 ## Optional: count layer {#count-layer}
 
-A three-digit chunk is a **count** plus a two-digit peg: **415** = four of the **15** peg (`ubaho` *bus stop*).
+A three-digit chunk is a **count** plus a two-digit peg: **415** = four of the **15** peg (`obahe` *bus stop*).
 
 - **Capacity:** 3 digits per image instead of 2.
 - **Decoding:** the count is the first digit, and the peg reads as usual. On a three-digit list, a single item still counts as 1, so `162` is one item of peg 62, never the bare peg.
-- **Speech:** the image is ordinary Egabon, a noun with a count. Plural **-x** stays silent, so `zubaholx` is still peg 15.
+- **Speech:** the image is ordinary Egabon, a noun with a count. Plural **-x** stays silent, so `zobahelx` is still peg 15.
 
 **Show the count as a hand shape, not as copies.** People take in up to about four items at a glance; five and more have to be counted, and a mental image is hard to count accurately. Zero copies can't be pictured at all. The finger code in `manual-phonology.md` gives every digit a count shape in alphabet order: runs of fingers for 1–4, the thumb for 5, thumb plus a run for 6–9, horns for 0. So the count becomes a hand held over the peg scene. That covers zero and the large counts with no special case. If the finger code stays unbuilt, use copies for 1–4 and a hand for the rest.
 
@@ -182,15 +182,15 @@ Working examples:
 
 | Word | Payload | Digits |
 |------|---------|--------|
-| `zubedol` *pear* | b d | **12** |
-| `zubalol` *plant* | b l | **17** |
-| `zedegol` *ticket* | d g | **23** |
-| `zegabol` *glasses* | g b | **31** |
-| `zovegal` *frame* | v g | **43** |
-| `zuzazal` *squirrel* | z z | **55** |
-| `zahodol` *hotdog* | h d | **62** |
-| `zalarul` *hourglass* | l r | **78** |
-| `zurubol` *ring* | r b | **81** |
+| `zabedol` *pear* | b d | **12** |
+| `zabolol` *plant* | b l | **17** |
+| `zodegel` *ticket* | d g | **23** |
+| `zagebol` *glasses* | g b | **31** |
+| `zuvogal` *frame* | v g | **43** |
+| `zezezal` *squirrel* | z z | **55** |
+| `zohedal` *hotdog* | h d | **62** |
+| `zagorul` *hourglass* | l r | **78** |
+| `zorebol` *ring* | r b | **81** |
 | `zaruvel` *run* | r v | **84** |
 | `zanumul` *anxious* | n m | **90** |
 | `zemamul` *melt* | m m | **00** |

@@ -14,7 +14,7 @@ function slots(text: string, stage?: "beginner" | "intermediate" | "advanced") {
 
 describe("analyzeEnglish on the real docs and lexicon", () => {
   it("suggests a root with the word its role spells", () => {
-    const dog = slots("Uzazon sees a dog.").find((s) => s.text === "dog")!;
+    const dog = slots("Uzozen sees a dog.").find((s) => s.text === "dog")!;
     const root = dog.suggestions.find((s): s is RootSuggestion => s.kind === "lexicon")!;
     assert.equal(root.tier, "root");
     assert.equal(root.role, "d");
@@ -23,10 +23,10 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
   });
 
   it("builds a house-cast name on its root with -n", () => {
-    const name = slots("Uzazon walks.")[0]!;
+    const name = slots("Uzozen walks.")[0]!;
     const root = name.suggestions.find((s): s is RootSuggestion => s.kind === "lexicon")!;
     assert.equal(root.name, true);
-    assert.equal(root.word, "zuzazon");
+    assert.equal(root.word, "zuzozen");
     assert.ok(name.suggestions.some((s) => s.kind === "detector" && s.id === "proper-name"));
   });
 
@@ -40,7 +40,7 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
   });
 
   it("stacks the noun before a doer into the stem", () => {
-    const walker = slots("Uzazon sees a dog walker.").find((s) => s.text === "walker")!;
+    const walker = slots("Uzozen sees a dog walker.").find((s) => s.text === "walker")!;
     const stacked = walker.suggestions.find((s): s is RoleSuggestion => s.kind === "role" && !!s.modifier)!;
     assert.equal(stacked.modifier!.english, "dog");
     assert.equal(stacked.form, `dax${stacked.modifier!.root}x${stacked.root}thel`);
@@ -52,7 +52,7 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
   });
 
   it("lists every job of a multi-job word, in table order", () => {
-    const by = slots("Uzazon walks by the station.").find((s) => s.text === "by")!;
+    const by = slots("Uzozen walks by the station.").find((s) => s.text === "by")!;
     const jobs = by.suggestions.filter((s): s is JobSuggestion => s.kind === "job");
     assert.ok(jobs.length >= 3);
     const recipe = jobs.filter((j) => j.source.startsWith("english.md:"));
@@ -69,20 +69,20 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
     assert.ok(clause!.slots.find((s) => s.text === "sister")!.suggestions.some((s) => s.kind === "job" && s.link.startsWith("say-people-places.md#kin-words")));
     const not = analyzeEnglish(data, "My sister did not come.").clauses[0]!.slots.find((s) => s.text === "not")!;
     assert.ok(not.suggestions.some((s) => s.kind === "detector" && s.id === "negation"));
-    assert.ok(analyzeEnglish(data, "Uzazon walked.").clauses[0]!.detectors.some((d) => d.id === "past"));
+    assert.ok(analyzeEnglish(data, "Uzozen walked.").clauses[0]!.detectors.some((d) => d.id === "past"));
   });
 
   it("skips articles and bare auxiliaries, and reports gaps", () => {
     const s = slots("The dog is walking.");
     assert.equal(slotTier(s.find((x) => x.text === "The")!), "skip");
     assert.equal(slotTier(s.find((x) => x.text === "is")!), "skip");
-    const { gaps } = analyzeEnglish(data, "Uzazon walks zxqv.");
+    const { gaps } = analyzeEnglish(data, "Uzozen walks zxqv.");
     assert.deepEqual(gaps.map((g) => g.lemma), ["zxqv"]);
   });
 
   it("hides sections above the chosen stage", () => {
     const advanced = (stage?: "beginner") =>
-      slots("Uzazon walks by the station.", stage)
+      slots("Uzozen walks by the station.", stage)
         .flatMap((s) => s.suggestions)
         .filter((s) => s.kind === "job" && data.sections.get(s.link)?.band === "intermediate").length;
     assert.ok(advanced() > 0);
@@ -90,7 +90,7 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
   });
 
   it("reads *me* as the speaker", () => {
-    const me = slots("Uzazon sees me.").find((s) => s.text === "me")!;
+    const me = slots("Uzozen sees me.").find((s) => s.text === "me")!;
     assert.ok(me.suggestions.some((s) => s.kind === "job" && s.link === "pronouns.md#special-pronouns"));
   });
 
@@ -116,11 +116,11 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
   });
 
   it("spells a lone count word, but not one of several number words", () => {
-    const three = slots("Uzazon sees three books.").find((s) => s.text === "three")!;
+    const three = slots("Uzozen sees three books.").find((s) => s.text === "three")!;
     assert.ok(three.suggestions.some((s) => s.kind === "detector" && s.id === "number" && s.form === "grarel"));
-    const third = slots("Uzazon sees the third book.").find((s) => s.text === "third")!;
+    const third = slots("Uzozen sees the third book.").find((s) => s.text === "third")!;
     assert.ok(third.suggestions.some((s) => s.kind === "detector" && s.form === "grerel"));
-    const many = slots("Uzazon sees twenty one books.").flatMap((s) => s.suggestions);
+    const many = slots("Uzozen sees twenty one books.").flatMap((s) => s.suggestions);
     assert.ok(!many.some((s) => s.kind === "detector" && s.form));
   });
 
@@ -137,15 +137,15 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
       slots(text)
         .find((s) => s.text === "that" || s.text === "whether")!
         .suggestions.flatMap((s) => (s.kind === "detector" ? [s.id] : s.kind === "job" ? ["job"] : []));
-    assert.deepEqual(opener("Uzazon tells Olozun that the dog runs."), ["that-clause"]);
-    assert.deepEqual(opener("Uzazon is glad that it rains."), ["feeling-that", "that-clause"]);
+    assert.deepEqual(opener("Uzozen tells Olazun that the dog runs."), ["that-clause"]);
+    assert.deepEqual(opener("Uzozen is glad that it rains."), ["feeling-that", "that-clause"]);
     assert.deepEqual(opener("The dog that runs is big."), ["relative-that"]);
-    assert.deepEqual(opener("Uzazon sees whether Olozun walks."), ["whether-clause"]);
+    assert.deepEqual(opener("Uzozen sees whether Olazun walks."), ["whether-clause"]);
     assert.ok(opener("I know that.").every((id) => id === "job"));
   });
 
   it("shows a doc example for a grammar row whose form is only a pattern", () => {
-    const that = slots("Uzazon is tired, and Olozun is that too.").flatMap((s) => s.suggestions);
+    const that = slots("Uzozen is tired, and Olazun is that too.").flatMap((s) => s.suggestions);
     const patterns = that.filter((s): s is JobSuggestion => s.kind === "job" && /^\/[ɡw]\//.test(s.form));
     assert.ok(patterns.length > 0);
     assert.ok(patterns.every((j) => j.example));
@@ -174,7 +174,7 @@ describe("WordNet tiers and routes", () => {
   const lexical = (slot: Slot) => slot.suggestions.filter((s): s is RootSuggestion => s.kind === "lexicon");
 
   it("falls back to a WordNet synonym, labeled with its lead", () => {
-    const [lead] = lexical(slotsOf("Uzazon sees the automobile.").find((s) => s.text === "automobile")!);
+    const [lead] = lexical(slotsOf("Uzozen sees the automobile.").find((s) => s.text === "automobile")!);
     assert.equal(lead!.tier, "synonym");
     assert.equal(lead!.lead, "car");
     assert.equal(lead!.form, root("car"));
@@ -182,14 +182,14 @@ describe("WordNet tiers and routes", () => {
   });
 
   it("joins a run on a WordNet phrase lead only when its last noun has no lexicon sense", () => {
-    const carriage = slotsOf("Uzazon sees the motor carriage.").find((s) => s.text === "motor carriage")!;
+    const carriage = slotsOf("Uzozen sees the motor carriage.").find((s) => s.text === "motor carriage")!;
     assert.equal(lexical(carriage)[0]!.lead, "car");
-    assert.ok(slotsOf("Uzazon sees the big dog.").some((s) => s.text === "dog"));
+    assert.ok(slotsOf("Uzozen sees the big dog.").some((s) => s.text === "dog"));
   });
 
   it("offers a broader sense, only for the part of speech WordNet links", () => {
-    assert.equal(lexical(slotsOf("Uzazon sees a pupper.").find((s) => s.text === "pupper")!)[0]!.tier, "broader");
-    assert.equal(lexical(slotsOf("Uzazon sees the blarg.").find((s) => s.text === "blarg")!).length, 0);
+    assert.equal(lexical(slotsOf("Uzozen sees a pupper.").find((s) => s.text === "pupper")!)[0]!.tier, "broader");
+    assert.equal(lexical(slotsOf("Uzozen sees the blarg.").find((s) => s.text === "blarg")!).length, 0);
   });
 
   it("routes a kin term to the kin sections, unless a cue row already does", () => {
@@ -202,7 +202,7 @@ describe("WordNet tiers and routes", () => {
   });
 
   it("says a young animal as the animal's root plus a /ɡ/ word", () => {
-    const route = slotsOf("Uzazon sees a piglet.").find((s) => s.text === "piglet")!.suggestions.find((s): s is ClassSuggestion => s.kind === "class")!;
+    const route = slotsOf("Uzozen sees a piglet.").find((s) => s.text === "piglet")!.suggestions.find((s): s is ClassSuggestion => s.kind === "class")!;
     assert.equal(route.class, "young");
     assert.equal(route.animal!.form, root("dog"));
     assert.equal(route.qualifier!.form, root("child"));
@@ -221,21 +221,21 @@ describe("hooks", () => {
   });
 
   it("does not spell a range or same-role row as a place phrase", () => {
-    const jobs = hookSlot("Uzazon walks from the house to the station.", "to").suggestions.filter((s): s is JobSuggestion => s.kind === "job");
+    const jobs = hookSlot("Uzozen walks from the house to the station.", "to").suggestions.filter((s): s is JobSuggestion => s.kind === "job");
     assert.ok(jobs.some((j) => j.phrase?.startsWith("ol ")));
     assert.ok(!jobs.some((j) => j.link.endsWith("#ranges") && j.phrase));
   });
 
   it("reads both columns of the -l / -m grid as cues", () => {
     assert.ok(hookSlot("A cloth sits over the table.", "over").suggestions.some((s) => s.kind === "job" && s.form.startsWith("aom")));
-    assert.ok(hookSlot("Olozun sits among the guards.", "among").suggestions.some((s) => s.kind === "job" && s.form.startsWith("am")));
+    assert.ok(hookSlot("Olazun sits among the guards.", "among").suggestions.some((s) => s.kind === "job" && s.form.startsWith("am")));
   });
 
   it("keeps the role of the phrase before a same-role hook", () => {
-    assert.match(roleWord(hookSlot("Uzazon drinks coffee instead of tea.", "tea"))!, /^d/);
-    assert.equal(roleWord(hookSlot("The family walks, except Uzazon.", "Uzazon")), "zuzazon");
-    assert.match(roleWord(hookSlot("Uzazon sees the dog, except the cat.", "cat"))!, /^d/);
-    assert.ok(hookSlot("The family walks, except Uzazon.", "except").suggestions.some((s) => s.kind === "detector" && s.id === "same-role-hook"));
+    assert.match(roleWord(hookSlot("Uzozen drinks coffee instead of tea.", "tea"))!, /^d/);
+    assert.equal(roleWord(hookSlot("The family walks, except Uzozen.", "Uzozen")), "zuzozen");
+    assert.match(roleWord(hookSlot("Uzozen sees the dog, except the cat.", "cat"))!, /^d/);
+    assert.ok(hookSlot("The family walks, except Uzozen.", "except").suggestions.some((s) => s.kind === "detector" && s.id === "same-role-hook"));
   });
 
   it("falls back to an extra-noun hook for a preposition no row names", () => {
@@ -255,9 +255,9 @@ describe("hooks", () => {
   });
 
   it("notes from … to, a hook after a landmark, and a stranded question hook", () => {
-    assert.ok(hookSlot("Uzazon walks from the house to the station.", "to").suggestions.some((s) => s.kind === "detector" && s.id === "from-to"));
+    assert.ok(hookSlot("Uzozen walks from the house to the station.", "to").suggestions.some((s) => s.kind === "detector" && s.id === "from-to"));
     assert.ok(hookSlot("The dog sleeps in the house near the station.", "near").suggestions.some((s) => s.kind === "detector" && s.id === "hook-on-landmark"));
-    assert.ok(hookSlot("What does Uzazon write with?", "with").suggestions.some((s) => s.kind === "detector" && s.id === "hook-blank"));
+    assert.ok(hookSlot("What does Uzozen write with?", "with").suggestions.some((s) => s.kind === "detector" && s.id === "hook-blank"));
   });
 });
 

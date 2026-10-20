@@ -50,7 +50,7 @@ const BANK = `### Translation practice
 
 | English | Egabon | Same root as |
 |---------|--------|--------------|
-| *Uzazon* | \`uzazon\` | |
+| *Uzozen* | \`uzozen\` | |
 | *see* | \`veyel\` | \`eyel\` *eye* |
 `;
 
@@ -125,37 +125,37 @@ ${drills.map((d, i) => `**${i + 1}.** *…*\n\n::: details Show answer\n\`${d}\`
   const kinds = (md: string) => lintWordBankUsage(md, tables).map((f) => `${f.kind} ${f.roots.join(",")}`);
 
   it("accepts a bank that lists exactly the drill roots", () => {
-    const md = page(["*Uzazon* | `uzazon`", "*run* | `aruvel`"], ["zuzazon varuvel."]);
+    const md = page(["*Uzozen* | `uzozen`", "*run* | `aruvel`"], ["zuzozen varuvel."]);
     assert.deepEqual(kinds(md), []);
   });
 
   it("flags a drill root with no row, at its use line", () => {
-    const md = page(["*Uzazon* | `uzazon`"], ["zuzazon varuvel."]);
+    const md = page(["*Uzozen* | `uzozen`"], ["zuzozen varuvel."]);
     const findings = lintWordBankUsage(md, tables);
     assert.deepEqual(kinds(md), ["missing aruve"]);
-    assert.equal(md.split("\n")[findings[0]!.line - 1], "`zuzazon varuvel.`");
+    assert.equal(md.split("\n")[findings[0]!.line - 1], "`zuzozen varuvel.`");
   });
 
   it("flags unused rows, house names included", () => {
-    const md = page(["*Uzazon* | `uzazon`", "*Olozun* | `olozun`", "*run* | `aruvel`", "*dog* | `odozol`"], ["zuzazon varuvel."]);
-    assert.deepEqual(kinds(md), ["unused olozu", "unused odozo"]);
+    const md = page(["*Uzozen* | `uzozen`", "*Olazun* | `olazun`", "*run* | `aruvel`", "*dog* | `udozol`"], ["zuzozen varuvel."]);
+    assert.deepEqual(kinds(md), ["unused olazu", "unused udozo"]);
   });
 
   it("matches roots, not spellings: other roles, full-root resumes, role compounds", () => {
-    const rows = ["*Uzazon* | `uzazon`", "*tell* | `vezeyel`", "*run* | `aruvel`", "*dog* | `odozol`", "*scream* | `vazomul`"];
-    const md = page(rows, ["zuzazon vezeyel. zoxezeyer varuvel.", "zodozol varuvel. zodozor vazomul."]);
+    const rows = ["*Uzozen* | `uzozen`", "*tell* | `vezuyel`", "*run* | `aruvel`", "*dog* | `udozol`", "*scream* | `vuyomul`"];
+    const md = page(rows, ["zuzozen vezuyel. zoxezuyer varuvel.", "zudozol varuvel. zudozor vuyomul."]);
     assert.deepEqual(kinds(md), []);
   });
 
   it("reads a resume as its antecedent's root", () => {
-    const md = page(["*Uzazon* | `uzazon`", "*run* | `aruvel`", "*scream* | `vazomul`"], ["zuzazon varuvel. zuzazor vazomul."]);
+    const md = page(["*Uzozen* | `uzozen`", "*run* | `aruvel`", "*scream* | `vuyomul`"], ["zuzozen varuvel. zuzozer vuyomul."]);
     assert.deepEqual(kinds(md), []);
   });
 
   it("needs no row for an overlay, but a row for one must be used", () => {
-    const rows = ["*Uzazon* | `uzazon`", "*run* | `aruvel`"];
-    assert.deepEqual(kinds(page(rows, ["zuzazon thovum varuvel."])), []);
-    assert.deepEqual(kinds(page([...rows, "*MAY* | `thovum`"], ["zuzazon varuvel."])), ["unused ovu"]);
+    const rows = ["*Uzozen* | `uzozen`", "*run* | `aruvel`"];
+    assert.deepEqual(kinds(page(rows, ["zuzozen thovum varuvel."])), []);
+    assert.deepEqual(kinds(page([...rows, "*MAY* | `thovum`"], ["zuzozen varuvel."])), ["unused ovu"]);
   });
 
   it("covers the SELF slot only with the *your name* row", () => {
@@ -164,8 +164,8 @@ ${drills.map((d, i) => `**${i + 1}.** *…*\n\n::: details Show answer\n\`${d}\`
   });
 
   it("does not count spans in the lead or the bank as drill uses", () => {
-    const md = page(["*Uzazon* | `uzazon`", "*run* | `aruvel`", "*dog* | `odozol`"], ["zuzazon varuvel."], "Compare `zodozol varuvel.`");
-    assert.deepEqual(kinds(md), ["unused odozo"]);
+    const md = page(["*Uzozen* | `uzozen`", "*run* | `aruvel`", "*dog* | `udozol`"], ["zuzozen varuvel."], "Compare `zudozol varuvel.`");
+    assert.deepEqual(kinds(md), ["unused udozo"]);
   });
 });
 
@@ -173,7 +173,7 @@ describe("converted checkpoint bank", () => {
   const tables = houseTables();
   const kinds = (md: string) => lintWordBankUsage(md, tables).map((f) => `${f.kind} ${f.roots.join(",")}`);
   const shape = (md: string) => lintPracticeBank(md, tables).map((f) => f.detail);
-  const NEW_SEE = "| *see* | `vanobol` | 👁️ from *eye* |\n";
+  const NEW_SEE = "| *see* | `vawebol` | 👁️ from *eye* |\n";
   const REVIEW = (rows: string) =>
     `**Review:**\n\n| English | Egabon |\n|---------|--------|\n${rows}\n\n#### English → Egabon {#beginner-english-to-egabon}`;
   const withReview = (rows: string) => PRACTICE.replace(NEW_SEE, "").replace("#### English → Egabon {#beginner-english-to-egabon}", REVIEW(rows));
@@ -185,20 +185,20 @@ describe("converted checkpoint bank", () => {
   });
 
   it("does not count the Fix it wrong form as a use, and flags the unused row", () => {
-    const md = PRACTICE.replace("<!-- lint: error -->`zuzazon dolozun vanobol.`", "<!-- lint: error -->`zuzazon dolozun voworel.`");
+    const md = PRACTICE.replace("<!-- lint: error -->`zuzozen dolazun vawebol.`", "<!-- lint: error -->`zuzozen dolazun vewurel.`");
     // Swap out the translation items' *walk*, so only the wrong form spells it.
-    const onlyFix = md.replace("`zolozun voworel.`", "`zolozun vehuhol.`").replace("`zehalon voworel.`", "`zehalon vehuhol.`");
-    assert.deepEqual(kinds(onlyFix), ["unused owore"]);
+    const onlyFix = md.replace("`zolazun vewurel.`", "`zolazun vuhohol.`").replace("`zuhelan vewurel.`", "`zuhelan vuhohol.`");
+    assert.deepEqual(kinds(onlyFix), ["unused ewure"]);
   });
 
   it("reads New words and Review together", () => {
-    const md = withReview("| *see* | `vanobol` |");
+    const md = withReview("| *see* | `vawebol` |");
     assert.deepEqual(kinds(md), []);
     assert.deepEqual(shape(md), []);
   });
 
   it("flags a drill root in neither group", () => {
-    assert.deepEqual(kinds(PRACTICE.replace(NEW_SEE, "")), ["missing anobo"]);
+    assert.deepEqual(kinds(PRACTICE.replace(NEW_SEE, "")), ["missing awebo"]);
   });
 
   it("flags a converted checkpoint with no bank", () => {
@@ -208,26 +208,26 @@ describe("converted checkpoint bank", () => {
   });
 
   it("checks Review English against the lexicon", () => {
-    const findings = lintWordBankMarkdown(withReview("| *chair* | `vanobol` |"), tables);
-    assert.deepEqual(findings.map((f) => [f.egabon, f.english]), [["vanobol", "chair"]]);
+    const findings = lintWordBankMarkdown(withReview("| *chair* | `vawebol` |"), tables);
+    assert.deepEqual(findings.map((f) => [f.egabon, f.english]), [["vawebol", "chair"]]);
   });
 
   it("needs a cue on every New words row", () => {
-    assert.deepEqual(shape(PRACTICE.replace("| 👁️ from *eye* |", "| |")), ["**New words** row `vanobol` has no Cue"]);
+    assert.deepEqual(shape(PRACTICE.replace("| 👁️ from *eye* |", "| |")), ["**New words** row `vawebol` has no Cue"]);
   });
 
   it("checks the columns of each group", () => {
     assert.match(shape(PRACTICE.replace("| English | Egabon | Cue |\n|---------|--------|-----|", "| English | Egabon |\n|---------|--------|")).join("\n"), /\*\*New words\*\* columns are English · Egabon; use English · Egabon · Cue/);
-    const md = withReview("| *see* | `vanobol` |").replace("| English | Egabon |\n|---------|--------|\n| *see*", "| English | Egabon | Cue |\n|---------|--------|-----|\n| *see*");
+    const md = withReview("| *see* | `vawebol` |").replace("| English | Egabon |\n|---------|--------|\n| *see*", "| English | Egabon | Cue |\n|---------|--------|-----|\n| *see*");
     assert.match(shape(md).join("\n"), /\*\*Review\*\* columns are English · Egabon · Cue; use English · Egabon/);
   });
 
   it("flags a root listed twice", () => {
-    assert.match(shape(withReview("| *see* | `vanobol` |").replace("| *sit* | `vehuhol`", "| *see* | `vanobol` | 👁️ |\n| *sit* | `vehuhol`")).join("\n"), /root anobo .* is already listed/);
+    assert.match(shape(withReview("| *see* | `vawebol` |").replace("| *sit* | `vuhohol`", "| *see* | `vawebol` | 👁️ |\n| *sit* | `vuhohol`")).join("\n"), /root awebo .* is already listed/);
   });
 
   it("flags a legacy Roots used here table", () => {
-    const md = PRACTICE.replace("**New words:**", "**Roots used here:**\n\n| English | Egabon |\n|---|---|\n| *see* | `vanobol` |\n\n**New words:**");
+    const md = PRACTICE.replace("**New words:**", "**Roots used here:**\n\n| English | Egabon |\n|---|---|\n| *see* | `vawebol` |\n\n**New words:**");
     assert.match(shape(md).join("\n"), /not \*\*Roots used here\*\*/);
   });
 });

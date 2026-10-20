@@ -16,7 +16,7 @@ function entriesOf(markdown: string) {
 
 describe("tokens", () => {
   it("drops stop words and markdown, and stems", () => {
-    assert.deepEqual(tokens("*Uzazon* walks to the `hill`"), ["uzazon", "walk", "hill"]);
+    assert.deepEqual(tokens("*Uzozen* walks to the `hill`"), ["uzozen", "walk", "hill"]);
     assert.deepEqual(tokens("stories"), ["story"]);
   });
 });
@@ -65,27 +65,27 @@ describe("collectEnglishEntries", () => {
 
 ### Point back {#hook-resume}
 
-> \`or zuzazon voworel.\`
+> \`or zuzozen vewurel.\`
 >
-> "Anyway, Uzazon walks."
+> "Anyway, Uzozen walks."
 `);
     const example = entries.find((e) => e.kind === "example")!;
-    assert.equal(example.english, "Anyway, Uzazon walks.");
+    assert.equal(example.english, "Anyway, Uzozen walks.");
     assert.equal(example.slug, "hook-resume");
     assert.equal(example.band, "intermediate");
     assert.equal(example.line, 5);
     const gloss = entries.find((e) => e.kind === "gloss" && e.form === "or")!;
     assert.equal(gloss.english, "anyway");
-    assert.ok(entries.some((e) => e.kind === "gloss" && e.form === "voworel" && e.english === "walk"));
+    assert.ok(entries.some((e) => e.kind === "gloss" && e.form === "vewurel" && e.english === "walk"));
   });
 });
 
 describe("searchEnglish", () => {
   const entries = entriesOf(`### Walking
 
-> \`zuzazon voworel.\`
+> \`zuzozen vewurel.\`
 >
-> "Uzazon walks."
+> "Uzozen walks."
 
 ### From the end
 
@@ -154,7 +154,7 @@ describe("recipe table harvest", () => {
 
 | English itch | Egabon job | Teach |
 |--------------|------------|-------|
-| in B's use (*Uzazon's dog*) | hook **\`em\`** + \`/b/\` | [Whose](hooks.md#genitive) |
+| in B's use (*Uzozen's dog*) | hook **\`em\`** + \`/b/\` | [Whose](hooks.md#genitive) |
 
 ## Everyday words {#everyday-words}
 
@@ -186,7 +186,7 @@ describe("recipe table harvest", () => {
   });
 
   it("finds a table the harvest cannot read", () => {
-    assert.equal(lintRecipeTables("| Unit | Example |\n|---|---|\n| newton | `bavovam` |\n", "page.md").length, 1);
+    assert.equal(lintRecipeTables("| Unit | Example |\n|---|---|\n| newton | `bavavam` |\n", "page.md").length, 1);
   });
 
   it("passes on the recipe pages", () => {

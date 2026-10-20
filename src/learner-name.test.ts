@@ -38,7 +38,7 @@ describe("eligibleNames", () => {
       assert.equal(eligibleRoots.has(root), false, root);
       assert.ok(reason(root), root);
     }
-    assert.match(reason(CLOSED.lion)!, /Olozun/);
+    assert.match(reason(CLOSED.lion)!, /Olazun/);
     // **-n** on a mood root (DECISION ✅, MAY 💭) is an ordinary proper name, so these stay eligible.
     for (const root of [rootOf("✅"), rootOf("💭")]) assert.equal(eligibleRoots.has(root), true, root);
     const flag = rows.find((row) => /[\u{1F1E6}-\u{1F1FF}]/u.test(row.emoji))!;
@@ -61,7 +61,7 @@ describe("suggestedNames", () => {
 describe("fillSelf", () => {
   it("fills words with the default speaker root", () => {
     assert.equal(DEFAULT_SELF_ROOT, CLOSED.microphone);
-    assert.equal(fillSelf("zSELFn voworel."), `z${CLOSED.microphone}n voworel.`);
+    assert.equal(fillSelf("zSELFn vewurel."), `z${CLOSED.microphone}n vewurel.`);
     assert.equal(fillSelf("SELFn."), `${CLOSED.microphone}n.`);
   });
 

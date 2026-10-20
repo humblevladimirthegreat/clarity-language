@@ -43,7 +43,7 @@ The name is what you say when you [spell a word aloud](../phonology.md#letter-na
 | `th` | /ð/ | *this* | /θ/ | `tho` | B |
 | `x` | /ʒ/ | *vision* (not English *x*) | /ʃ/ | `xu` | B |
 
-Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), then the other consonants. The vowels come last and name themselves (`u`, `a`, `o`, `e`). Pause between names: `egazo` is `e` `ga` `a` `ze` `o`. A letter you talk about in a clause is a [mention](../spans.md#mention), read by its name.
+Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), then the other consonants. The vowels come last and name themselves (`u`, `a`, `o`, `e`). Pause between names: `agozo` is `a` `ga` `o` `ze` `o`. A letter you talk about in a clause is a [mention](../spans.md#mention), read by its name.
 
 ## Word shape {#word-shape}
 
@@ -51,10 +51,10 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 
 | Rule | Example | Stage |
 |------|---------|-------|
-| [A content word ends in **-l**, **-m**, **-n**, or **-r**](../phonology.md#word-edges), the audible end | `uzazon` = *u-za-zon* | B |
-| [Inside a word, a consonant starts a syllable](../phonology.md#word-edges) and never closes one | `odozol` = *o-do-zol* | B |
-| [Roots are vowel-first](../phonology.md#phonotactics): **V(CV)+** | `zubulol` = `z` + `ubulo` + **-l** | I |
-| [A five-letter root's last two letters hint at its kind and job](../phonology.md#root-tails) | `egazo` *cat*: `z` a creature, `o` one of its kind | A |
+| [A content word ends in **-l**, **-m**, **-n**, or **-r**](../phonology.md#word-edges), the audible end | `uzozen` = *u-zo-zen* | B |
+| [Inside a word, a consonant starts a syllable](../phonology.md#word-edges) and never closes one | `udozol` = *u-do-zol* | B |
+| [Roots are vowel-first](../phonology.md#phonotactics): **V(CV)+** | `zubulel` = `z` + `ubule` + **-l** | I |
+| [A five-letter root's last two letters hint at its kind and job](../phonology.md#root-tails) | `agozo` *cat*: `z` a creature, `o` one of its kind | A |
 
 ### Parts of a word, in order {#parts-in-order}
 
@@ -62,7 +62,7 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 |------|------------|-------|
 | [Role letter](../phonology.md#phonotactics) | first letter: the word's job in the clause | I |
 | Optional `l` after `/ɡ/` | [adjective before the noun](../clause.md#left-bound-adjectives) | I |
-| Root(s) | vowel-first; a [dictionary compound](../phonology.md#phonotactics) is one long root (`ebeholuruha` *bedroom*); a root after a root is joined by mid-word `x` ([x-compounds](../x-compounds.md)) | I |
+| Root(s) | vowel-first; a [dictionary compound](../phonology.md#phonotactics) is one long root (`obaholuraha` *bedroom*); a root after a root is joined by mid-word `x` ([x-compounds](../x-compounds.md)) | I |
 | Mid-word `th` | the stance seam: [scope](../predication.md#label-scope), [sakes](../sakes.md), [viewpoint](../roles.md#viewpoint-laterals) | I |
 | **-l** / **-m** / **-n** / **-r** | the [word ending](../word-endings.md) | B |
 | **-ln** | [one of a name](../word-endings.md#name-instance--ln) | I |

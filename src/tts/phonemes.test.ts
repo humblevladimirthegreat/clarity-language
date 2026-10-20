@@ -5,13 +5,13 @@ import { isNativeSurface, toPhonemeWord, wordIpaPhones } from "./phonemes.js";
 
 describe("wordIpaPhones", () => {
   it("keeps citation dots on ipa and joins syllables without them", () => {
-    const word = toPhonemeWord("zuzazon");
-    assert.equal(word.ipa, "zʉ.zä.zo̞n");
-    assert.equal(wordIpaPhones(word), "zʉzäzo̞n");
+    const word = toPhonemeWord("zuzozen");
+    assert.equal(word.ipa, "zʉ.zo̞.ze̞n");
+    assert.equal(wordIpaPhones(word), "zʉzo̞ze̞n");
     const yuon = toPhonemeWord("yuon");
     assert.equal(yuon.ipa, "jʉ.o̞n");
     assert.equal(wordIpaPhones(yuon), "jʉo̞n");
-    assert.equal(wordIpaPhones(toPhonemeWord("gomonum")), "ɡo̞mo̞nʉm");
+    assert.equal(wordIpaPhones(toPhonemeWord("gomoldam")), "ɡo̞mo̞ldäm");
     assert.equal(wordIpaPhones(toPhonemeWord("yal")), "jäl");
   });
 });
@@ -46,9 +46,9 @@ describe("toPhonemeWord", () => {
     assert.equal(word.ipa, "jʉ.o̞n");
   });
 
-  it("keeps word-final -x as letter x /ʒ/ (zuzazonx)", () => {
-    const word = toPhonemeWord("zuzazonx");
-    assert.equal(word.ipa, "zʉ.zä.zo̞nʒ");
+  it("keeps word-final -x as letter x /ʒ/ (zuzozenx)", () => {
+    const word = toPhonemeWord("zuzozenx");
+    assert.equal(word.ipa, "zʉ.zo̞.ze̞nʒ");
     assert.equal(word.syllables.at(-1)?.ipa.endsWith("ʒ"), true);
   });
 
@@ -64,14 +64,14 @@ describe("toPhonemeWord", () => {
   });
 
   it("matches the phonology try-it line", () => {
-    assert.equal(toPhonemeWord("zuzazon").ipa, "zʉ.zä.zo̞n");
+    assert.equal(toPhonemeWord("zuzozen").ipa, "zʉ.zo̞.ze̞n");
     assert.equal(toPhonemeWord("gozulamum").ipa, "ɡo̞.zʉ.lä.mʉm");
   });
 });
 
 describe("isNativeSurface", () => {
   it("accepts ordinary words and rejects writing shorthand", () => {
-    assert.equal(isNativeSurface("zuzazon"), true);
+    assert.equal(isNativeSurface("zuzozen"), true);
     assert.equal(isNativeSurface("grarel"), true);
     assert.equal(isNativeSurface("g+3"), false);
     assert.equal(isNativeSurface("d[hi]"), false);

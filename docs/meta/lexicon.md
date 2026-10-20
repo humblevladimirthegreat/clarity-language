@@ -53,7 +53,7 @@ Never a seed:
 
 - **Concrete label:** the English word people use for the thing, not the Unicode name (*cupid*, not *heart with arrow*; *villain*, not *angry face with horns*). Flag rows follow [flag rows](#flag-rows). `convert-word` needs a CMU pronunciation for the label. Add a missing one to `CMU_OVERRIDES` in [`src/cmu-dict.ts`](../../src/cmu-dict.ts) rather than bending the label.
 - **Multiword labels and glosses:** join the words with hyphens, never spaces: *gas-pump*, *black-pepper*, *wedding-dress*. This holds for concrete labels, compound glosses and aliases alike.
-- **Units:** a unit (*mile*, *foot*, *pound*), imperial ones included, is an abstract sense on an existing root (*mile* on `uyoba`), not a new row.
+- **Units:** a unit (*mile*, *foot*, *pound*), imperial ones included, is an abstract sense on an existing root (*mile* on `unoba`), not a new row.
 - **Kin pairs:** a gendered kin pair (*mother* / *father*) is allowed, unlike gendered profession variants.
 - **Abstract senses:** never repeat another row's concrete or abstract. When a new row takes over a sense, move it off the old row.
 - **Aliases may repeat:** an `english_aliases` cue may also be another row's alias or sense. A cue that fits several roots lists all of them, so lexicon search finds each one. Within a row, an alias still never repeats that row's own concrete or abstract.
@@ -111,7 +111,7 @@ The kind follows the row's **concrete** sense, as its label names it. The abstra
 
 The shape is the thing's job, from the vowel series: `holds` (**a**: containers, groups, masses, open spaces, what comes many at once, what stores, what you go inside), `one` (**o**: one whole, compact thing), `order` (**e**: ranked, sequenced, a stage or cycle, a path you travel or are led along, a heading), `takes-away` (**u**: cuts, removes, hides, ends, forbids, harms, stings, sickens, wards off). **Tie rule:** test `takes-away`, then `holds`, then `order`, and take the first that fits. Read `holds` literally (a building holds people, a hat holds the head, a bun holds its filling) and `order` broadly (ranked sets, life stages, cycles, what carries or leads you along a way).
 
-When no job fits, `one` is **not** the default. Use the fallback: for a thing you can see, its outline (hollow or open `holds`, long `order`, sharp or spiky `takes-away`, round or compact `one`); for a feeling or face, its direction (toward others `holds`, toward a standing or what comes next `order`, against `takes-away`, inward `one`); for an action, how it unfolds (with others `holds`, along a course `order`, stops or hurts `takes-away`, once on the spot `one`). Symbols of a faith or a gender stay `one`. Worked examples and per-kind counts: [root-tails proposal § final vowel](../proposals/partially-implemented/root-tails.md#shapes).
+When no job fits, `one` is **not** the default. Use the fallback: for a thing you can see, its outline (hollow or open `holds`, long `order`, sharp or spiky `takes-away`, round or compact `one`); for a feeling or face, its direction (toward others `holds`, toward a standing or what comes next `order`, against `takes-away`, inward `one`); for an action, how it unfolds (with others `holds`, along a course `order`, stops or hurts `takes-away`, once on the spot `one`). Symbols of a faith or a gender stay `one`. Worked examples and per-kind counts: `root-tails.md` § final vowel.
 
 ### Size {#size}
 
@@ -119,7 +119,7 @@ The size is how big the concrete sense is against a person, and it steers the ro
 
 Every five-letter row needs a size except in `mind`, where every row would be `none`; `mind`, `named` and three-letter rows stay empty, and a `mind` row's middle vowel goes to the echo. In the mixed kinds, things get a measured size and the rest `none`: in `doing` a vehicle or toy versus an action or sport, in `person` a being versus an act, in `sign` a document versus a symbol, in `counting` a clock or instrument versus a time or number.
 
-It's a placement preference, not a check: the placer gives up the size vowel only in a crowded cell, and the tails report (`convert-word --report`) prints the share that match. Why size and not another reading: [root-tails proposal § middle vowel](../proposals/partially-implemented/root-tails.md#middle-vowel).
+It's a placement preference, not a check: the placer gives up the size vowel only in a crowded cell, and the tails report (`convert-word --report`) prints the share that match. Why size and not another reading: `root-tails.md` § middle vowel.
 
 ### Onset {#onset}
 
@@ -162,7 +162,7 @@ Add a row only when all of these hold:
 4. **The head is the most specific root that fits**, and the entry is a *kind of* the head's concrete.
 5. **The left root narrows the head in a way a learner can guess**, or the mnemonic makes the link easy to remember, never through an English pun ([no English puns](#no-english-puns)).
 
-Some English words stay out by design: kin terms are [kin generations](../grammar/numbers-applied.md#kin-generations), doers are [role compounds](../grammar/roles.md#role-compounds), and a tie between people is a [social relation](../grammar/relations.md#social-relations) unless English has a fixed noun for the person (*friend*). Young and sexed animals are the animal's root plus a `/ɡ/` adjective: `gahayol` *young*, `gubuyol` *newborn*, `gavegol` *female*, `gemegol` *male* ([young, male and female animals](../grammar/say-people-places.md#young-animals)). There are two exceptions. A seed that already pictures one stays a root (🐤 *chick*, 🐓 *rooster*). A young animal that looks like a different creature gets its own row (*caterpillar*, *tadpole*), because a learner can't picture it from *young* plus the adult animal. Why not compounds: [design decisions](design-decisions.md#young-and-sexed-animals).
+Some English words stay out by design: kin terms are [kin generations](../grammar/numbers-applied.md#kin-generations), doers are [role compounds](../grammar/roles.md#role-compounds), and a tie between people is a [social relation](../grammar/relations.md#social-relations) unless English has a fixed noun for the person (*friend*). Young and sexed animals are the animal's root plus a `/ɡ/` adjective: `gahoyel` *young*, `geboyel` *newborn*, `gevugol` *female*, `gemugol` *male* ([young, male and female animals](../grammar/say-people-places.md#young-animals)). There are two exceptions. A seed that already pictures one stays a root (🐤 *chick*, 🐓 *rooster*). A young animal that looks like a different creature gets its own row (*caterpillar*, *tadpole*), because a learner can't picture it from *young* plus the adult animal. Why not compounds: [design decisions](design-decisions.md#young-and-sexed-animals).
 
 ### Compound heads
 

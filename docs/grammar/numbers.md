@@ -25,15 +25,15 @@ Digits are spoken and written as these syllables:
 
 So *three* is **g** + **ra** + **re** + **l**: **`grarel`**.
 
-> `zegazolx grarel.`
+> `zagozolx grarel.`
 > z-cat-x | g-three
 >
 > "There are three cats."
 
-> `zuzazon dugulx grarel vanobol.`
-> z-Uzazon | [d-book-x | g-three] | v-see
+> `zuzozen dugulx grarel vawebol.`
+> z-Uzozen | [d-book-x | g-three] | v-see
 >
-> "Uzazon sees three books."
+> "Uzozen sees three books."
 
 A number with more digits is still **one word**: one syllable per digit, left to right. *Twenty* is **g** + **ra** + **du** + **zo** + **l**: **`graduzol`**.
 
@@ -46,10 +46,10 @@ To say **which place** a thing has in a series (*the first*, *the second*, …),
 >
 > "There is a second book."
 
-> `zolozun dugul grerel vuruyel.`
-> z-Olozun | [d-book | g-3rd] | v-write
+> `zolazun dugul grerel varayel.`
+> z-Olazun | [d-book | g-3rd] | v-write
 >
-> "Olozun writes the third book."
+> "Olazun writes the third book."
 
 | Marker | Use | English | Cue |
 |--------|--------|---------|-----|
@@ -62,9 +62,9 @@ The **`r`** right after the role letter tells you the word is a number: no other
 
 You can say the count is **more than one** without naming how many. Keep the count marker and leave the digits off: **`gral`**.
 
-This is a different tool from [**-x**](plurality.md) on the noun: **-x** says you mean a group (*cats* as a set), and **`gral`** says how much. Both may sit on the same noun (`zegazolx gral`).
+This is a different tool from [**-x**](plurality.md) on the noun: **-x** says you mean a group (*cats* as a set), and **`gral`** says how much. Both may sit on the same noun (`zagozolx gral`).
 
-> `zegazolx gral.`
+> `zagozolx gral.`
 > z-cat-x | g-more-than-one
 >
 > "There is more than one cat."
@@ -81,79 +81,79 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
-| *baguette* | `uyodol` | 🥖 |
-| *croissant* | `agudol` | 🥐 |
-| *cake* | `egedol` | 🎂 |
-| *doughnut* | `ododol` | 🍩 |
-| *smell* | `vonobol` | 👃 from *nose* |
+| *baguette* | `ebodel` | 🥖 |
+| *croissant* | `agedol` | 🥐 |
+| *cake* | `egodol` | 🎂 |
+| *doughnut* | `odedol` | 🍩 |
+| *smell* | `vonebol` | 👃 from *nose* |
 
 **Review:**
 
 | English | Egabon |
 |---------|--------|
-| *Uzazon* | `uzazon` |
-| *Olozun* | `olozun` |
-| *Ehalon* | `ehalon` |
-| *ant* | `anezal` |
-| *bread* | `eredol` |
-| *cookie* | `ogudol` |
-| *cook* | `vugayol` |
-| *see* | `vanobol` |
-| *find* | `vemawol` |
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Uhelan* | `uhelan` |
+| *ant* | `unezal` |
+| *bread* | `ebodol` |
+| *cookie* | `ugedol` |
+| *cook* | `vuguyel` |
+| *see* | `vawebol` |
+| *find* | `vumewol` |
 
 #### English → Egabon {#beginner-english-to-egabon}
 
 **1.** *There are three croissants.*
 
 ::: details Show answer
-`zagudolx grarel.`
+`zagedolx grarel.`
 
 z-croissant-x | g-three
 :::
 
-**2.** *Uzazon sees two cakes.*
+**2.** *Uzozen sees two cakes.*
 
 ::: details Show answer
-`zuzazon degedolx gradul vanobol.`
+`zuzozen degodolx gradul vawebol.`
 
-z-Uzazon | [d-cake-x | g-two] | v-see
+z-Uzozen | [d-cake-x | g-two] | v-see
 :::
 
-**3.** *Olozun finds the second doughnut.*
+**3.** *Olazun finds the second doughnut.*
 
 ::: details Show answer
-`zolozun dododol gredul vemawol.`
+`zolazun dodedol gredul vumewol.`
 
-z-Olozun | [d-doughnut | g-2nd] | v-find
+z-Olazun | [d-doughnut | g-2nd] | v-find
 :::
 
-**4.** *Ehalon smells more than one baguette.*
+**4.** *Uhelan smells more than one baguette.*
 
 ::: details Show answer
-`zehalon duyodolx gral vonobol.`
+`zuhelan debodelx gral vonebol.`
 
-z-Ehalon | [d-baguette-x | g-more-than-one] | v-smell
+z-Uhelan | [d-baguette-x | g-more-than-one] | v-smell
 :::
 
 **5.** *There are twelve ants.*
 
 ::: details Show answer
-`zanezalx grawodul.`
+`zunezalx grawodul.`
 
 z-ant-x | g-twelve.spelled
 :::
 
-**6.** *Uzazon cooks the tenth cake.*
+**6.** *Uzozen cooks the tenth cake.*
 
 ::: details Show answer
-`zuzazon degedol grewozol vugayol.`
+`zuzozen degodol grewozol vuguyel.`
 
-z-Uzazon | [d-cake | g-10th.spelled] | v-cook
+z-Uzozen | [d-cake | g-10th.spelled] | v-cook
 :::
 
 #### Egabon → English {#beginner-egabon-to-english}
 
-**1.** `zuyodolx gramol.`
+**1.** `zebodelx gramol.`
 
 ::: details Show answer
 z-baguette-x | g-four
@@ -161,15 +161,15 @@ z-baguette-x | g-four
 *There are four baguettes.*
 :::
 
-**2.** `zolozun deredol grerel vonobol.`
+**2.** `zolazun debodol grerel vonebol.`
 
 ::: details Show answer
-z-Olozun | [d-bread | g-3rd] | v-smell
+z-Olazun | [d-bread | g-3rd] | v-smell
 
-*Olozun smells the third loaf of bread.*
+*Olazun smells the third loaf of bread.*
 :::
 
-**3.** `zanezalx gral dogudol vanobol.`
+**3.** `zunezalx gral dugedol vawebol.`
 
 ::: details Show answer
 [z-ant-x | g-more-than-one] | d-cookie | v-see
@@ -177,15 +177,15 @@ z-Olozun | [d-bread | g-3rd] | v-smell
 *More than one ant sees a cookie.*
 :::
 
-**4.** `zehalon dagudolx graduzol vemawol.`
+**4.** `zuhelan dagedolx graduzol vumewol.`
 
 ::: details Show answer
-z-Ehalon | [d-croissant-x | g-20.spelled] | v-find
+z-Uhelan | [d-croissant-x | g-20.spelled] | v-find
 
-*Ehalon finds twenty croissants.*
+*Uhelan finds twenty croissants.*
 :::
 
-**5.** `zegedol grewol.`
+**5.** `zegodol grewol.`
 
 ::: details Show answer
 z-cake | g-1st
@@ -195,20 +195,20 @@ z-cake | g-1st
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Uzazon sees the second baguette.* `zuzazon duyodol gredul vanobol.` or `zuzazon duyodol gradul vanobol.`
+**1.** *Uzozen sees the second baguette.* `zuzozen debodel gredul vawebol.` or `zuzozen debodel gradul vawebol.`
 
 ::: details Show answer
-`zuzazon duyodol gredul vanobol.`
+`zuzozen debodel gredul vawebol.`
 
-z-Uzazon | [d-baguette | g-2nd] | v-see
+z-Uzozen | [d-baguette | g-2nd] | v-see
 
 Rank marker **`re`** gives the place in a series; **`ra`** would count two.
 :::
 
-**2.** *There are three doughnuts.* `zododolx grarel.` or `zododolx gral.`
+**2.** *There are three doughnuts.* `zodedolx grarel.` or `zodedolx gral.`
 
 ::: details Show answer
-`zododolx grarel.`
+`zodedolx grarel.`
 
 z-doughnut-x | g-three
 
@@ -217,14 +217,14 @@ z-doughnut-x | g-three
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Olozun sees four cakes.* <!-- lint: error -->`zolozun gramol degedolx vanobol.`
+**1.** *Olazun sees four cakes.* <!-- lint: error -->`zolazun gramol degodolx vawebol.`
 
 ::: details Show answer
-`zolozun degedolx gramol vanobol.`
+`zolazun degodolx gramol vawebol.`
 
-z-Olozun | [d-cake-x | g-four] | v-see
+z-Olazun | [d-cake-x | g-four] | v-see
 
-A number word is a `/ɡ/` word, so it goes after its noun; before `degedolx` it counts Olozun.
+A number word is a `/ɡ/` word, so it goes after its noun; before `degodolx` it counts Olazun.
 :::
 
 ## Intermediate {#intermediate}
@@ -254,7 +254,7 @@ Beginner put the number after a noun (*three cats*). You can also put the **numb
 
 Change only the first letter. The marker and digits stay the same, and on these four role letters the number still means a plain amount, rank, or code.
 
-> `zrarel vuzevol.`
+> `zrarel vezuvol.`
 > z-three | v-sleep
 >
 > "Three are sleeping."
@@ -319,7 +319,7 @@ Beginner already used **`gral`** for *more than one*. Any marker may drop every 
 | **`re`** (`…#`) | unspecified **rank from the start** | *some nth* / *some place*; exact ranks keep digits (`…#N`) | **`e`** ≈ order |
 | **`ro`** (`…_`) | unspecified **digit-string / label** | *some code*; *a label*; exact labels keep digits (`…_…`) | **`o`** ≈ one |
 
-**Compare with:** noun [**-x**](plurality.md) names a **group of things**. Digitless **`ra`** names a **count or amount above one** without saying how many. Both may sit on the same noun (`zegazolx gral`).
+**Compare with:** noun [**-x**](plurality.md) names a **group of things**. Digitless **`ra`** names a **count or amount above one** without saying how many. Both may sit on the same noun (`zagozolx gral`).
 
 On a `/b/` offset right after a channel, digitless **`bral`** is *later* and **`brul`** is *earlier*, with no amount claimed ([forecasts](knowing.md#forecast)).
 
@@ -327,7 +327,7 @@ On a `/b/` offset right after a channel, digitless **`bral`** is *later* and **`
 
 Open **`gram`** is a soft count: *a few* / *some*. It says there is more than one without claiming a number. Closed **`gral`** still means *more than one*.
 
-> `zegazolx gram vehuhol.`
+> `zagozolx gram vuhohol.`
 > [z-cat-x | g-more-than-one.about] | v-sit
 >
 > "A few cats sit."
@@ -336,7 +336,7 @@ Open **`gram`** is a soft count: *a few* / *some*. It says there is more than on
 
 A mass noun such as *tea* is not counted, so *more than one* makes no sense for it. On a mass noun, **`gral`** is *some*: an amount that is not zero.
 
-> `zedadal gral vehuhol.`
+> `zududal gral vuhohol.`
 > [z-tea | g-more-than-one] | v-sit
 >
 > "Some tea sits there."
@@ -345,28 +345,28 @@ A mass noun such as *tea* is not counted, so *more than one* makes no sense for 
 
 Words such as **`zar`** / **`zor`** stand for an unnamed **member of a set**. Digitless number **-r** stands for an unnamed **value** the same way: *some amount*, with no claim that it is more than one. Digitless number **-l** (and **-m** / **-n**) brings in an unnamed amount of that kind, and **`gral`** still says *more than one*.
 
-> `zuzazon drar vanobol.`
-> z-Uzazon | d-some-amount | v-see
+> `zuzozen drar vawebol.`
+> z-Uzozen | d-some-amount | v-see
 >
-> "Uzazon sees some number of them."
+> "Uzozen sees some number of them."
 
 In a question, the same word is the blank: *how many?* ([below](#how-many)).
 
-> `yol drar zuzazon vanobol.`
-> y-question | d-how-many | z-Uzazon | v-see
+> `yol drar zuzozen vawebol.`
+> y-question | d-how-many | z-Uzozen | v-see
 >
-> "How many does Uzazon see?"
+> "How many does Uzozen see?"
 
-To repeat a number already given, keep at least one digit: `zolozun drarel vanobol. zuzazon drarer vanobol.` *Olozun sees three. Uzazon sees those three too.*
+To repeat a number already given, keep at least one digit: `zolazun drarel vawebol. zuzozen drarer vawebol.` *Olazun sees three. Uzozen sees those three too.*
 
 #### How many? {#how-many}
 
 To ask for a **number**, write a [number word](numbers.md) with no digits and the **-r** ending (written **`=`** after the role letter). That empty number is the blank, the same way `zar` is the blank for *who?* ([fill-ask](questions.md#fill-ask-r)). The marker says which kind of number you want. (cue: **-r** names this member; the marker vowel says count, place, or code)
 
-> `yol degazolx grar zuzazon vanobol.`
-> y-question | [d-cat-x | g-how-many] | z-Uzazon | v-see
+> `yol dagozolx grar zuzozen vawebol.`
+> y-question | [d-cat-x | g-how-many] | z-Uzozen | v-see
 >
-> "How many cats does Uzazon see?"
+> "How many cats does Uzozen see?"
 
 <!-- cheat-sheet: numbers -->
 | Egabon | Use | English | Cue |
@@ -375,30 +375,30 @@ To ask for a **number**, write a [number word](numbers.md) with no digits and th
 | `g=#` (`grer`) | fill a place in order | *Which place?* (*which floor, which chapter*) | **e** ≈ order |
 | `g=_` (`gror`) | fill a code or label | *What number?* (*phone, room*) | **o** ≈ one |
 
-> `yol ol brer zolozun vehuhol.`
-> y-question | [at | b-which-place] | z-Olozun | v-sit
+> `yol ol brer zolazun vuhohol.`
+> y-question | [at | b-which-place] | z-Olazun | v-sit
 >
-> "Which place does Olozun sit in?" (first, second, and so on)
+> "Which place does Olazun sit in?" (first, second, and so on)
 
 Answer with the number as a [citation](word-endings.md#citation-forms) or a full sentence.
 
-**Compare with:** outside a question, the same word is *some number* (`zuzazon drar vanobol.` *Uzazon sees some number of them*). To repeat a number already given, keep a digit: `drarer` ([above](#digitless)).
+**Compare with:** outside a question, the same word is *some number* (`zuzozen drar vawebol.` *Uzozen sees some number of them*). To repeat a number already given, keep a digit: `drarer` ([above](#digitless)).
 
 #### How big? How fast? {#how-big}
 
 To ask **how much** of a quality, put the same blank on `/w/` immediately before the adjective or adverb: **`wrar`**. It is the degree slot that [*barely* / *almost*](#just-short) use.
 
-> `yol wrar geluzom zodozol.`
+> `yol wrar gelazom zudozol.`
 > y-question | [w-how-many | g-big] | z-dog
 >
 > "How big is the dog?"
 
-> `yol wrar hedarem zodozol varuvel.`
+> `yol wrar hodurem zudozol varuvel.`
 > y-question | [w-how-many | h-haste] | z-dog | v-run
 >
 > "How fast does the dog run?"
 
-To ask for an exact size in units, fill a [measure phrase](numbers-applied.md#measure-phrases) instead: `yol bezerem grar geluzom zodozol.` *How many meters big is the dog?*
+To ask for an exact size in units, fill a [measure phrase](numbers-applied.md#measure-phrases) instead: `yol bezerem grar gelazom zudozol.` *How many meters big is the dog?*
 
 Other role letters take the same blank: the marker with no digits and **-r** (on `/h/`, *how many times?*). Do not confuse that blank with **`har`** (*sometimes*), which is a [restrictor](restrictors.md), not a number.
 
@@ -486,9 +486,9 @@ Say a separator exactly where a comma is written, and nowhere else: `g+860` has 
 
 **Nested rank.** On an ordinal, each comma opens a place *within* the place before it, innermost first, as in dates: `g#2,3` is *seat 2 in row 3*; `g#16,4` is *verse 16 of chapter 4*. An exponent on an ordinal is [generation](numbers-applied.md#ordinal-generation), so a large ordinal is one group of plain digits: `g#1005` (*the 1005th*).
 
-> `zezehol g#2,3.`
+> `zozohol g#2,3.`
 >
-> 🔊 `zezehol gredutherel.`
+> 🔊 `zozohol gredutherel.`
 >
 > z-seat | g-#-2,3
 >
@@ -594,10 +594,10 @@ On `/h/`, the marker decides what kind of adverb the number is.
 | **`re`** | `h#N` | **Nth occurrence of the event (from the start)**: *for the Nth time*; *on the Nth try* (clause-event ordinal, not discourse list independence). |
 | **`ro`** | `h_…` | **Clock**: *at 15:30* (`h_15,30`). **Date** uses a calendar ordinal: *on 22 July 2026*. Channel, frequency, and other codes use a host relation + `/b/` (or `/ɡ/` on a noun). See [Time](numbers-applied.md#time). |
 
-> `zolozun voworel hrarel.`
-> z-Olozun | v-walk | h-three
+> `zolazun vewurel hrarel.`
+> z-Olazun | v-walk | h-three
 >
-> "Olozun walks three times."
+> "Olazun walks three times."
 
 Worked examples: `hrarel` *three times*; `hrurel` *÷3 / into 3*; `hrerel` *for the third time*; `h_15,30` *at 15:30*. A frequency code goes after a relation word: *on* (on `/h/`) + `b_101.1`.
 
@@ -644,20 +644,20 @@ Endings still apply (**-l** newly stated item, **-r** *as in (N) above* (with a 
 #### Number as degree (by marker) {#number-as-degree}
 <a id="place-on-a-scale"></a>
 
-On `/w/`, a number sits in the degree slot right before an adjective or adverb ([clause](clause.md#adjective-detail-w)). Only the ordinal marker gives a new reading: **`w#N`** (N from 2) is the **place on that scale**, in a [superlative](comparatives.md#place-on-a-scale) frame (`zuzazon zel wredul geluzom` *Uzazon is the second biggest*). The other number readings on `/w/` were already set: the blank **`wrar`** asks *how much?* ([how big](#how-big)), and the Advanced [just-short](#just-short) forms are *barely* / *almost*. A count or a fraction on `/w/` (`w+3`) is not used: a factor goes on `/h/` (`hradul` *twice*, [factor](comparatives.md#factor)).
+On `/w/`, a number sits in the degree slot right before an adjective or adverb ([clause](clause.md#adjective-detail-w)). Only the ordinal marker gives a new reading: **`w#N`** (N from 2) is the **place on that scale**, in a [superlative](comparatives.md#place-on-a-scale) frame (`zuzozen zel wredul gelazom` *Uzozen is the second biggest*). The other number readings on `/w/` were already set: the blank **`wrar`** asks *how much?* ([how big](#how-big)), and the Advanced [just-short](#just-short) forms are *barely* / *almost*. A count or a fraction on `/w/` (`w+3`) is not used: a factor goes on `/h/` (`hradul` *twice*, [factor](comparatives.md#factor)).
 
 #### Number as stance (by marker) {#number-as-stance-by-marker}
 <a id="likelihood"></a>
 
 `/th/` + number is your [stance](clause.md#stance-th) on the whole claim: how likely you think it is, or which numbered source it rests on. Spoken, it starts **`thr…`**, as in English *three*.
 
-> `zolozun voworel th+70.`
+> `zolazun vewurel th+70.`
 >
-> 🔊 `zolozun voworel thralezol.`
+> 🔊 `zolazun vewurel thralezol.`
 >
-> z-Olozun | v-walk | th-70-percent-likely
+> z-Olazun | v-walk | th-70-percent-likely
 >
-> "Olozun is probably walking." (I'd put it at 70%)
+> "Olazun is probably walking." (I'd put it at 70%)
 
 | Marker | Writing | Stance sense |
 |--------|---------|--------------|
@@ -702,76 +702,76 @@ Short drills for Intermediate. Try each item before opening **Show answer**. Use
 
 | English | Egabon | Cue |
 |---------|--------|-----|
-| *seat* | `ezehol` | 💺 |
-| *trophy* | `oderal` | 🏆: its abstract is *score* |
+| *seat* | `ozohol` | 💺 |
+| *trophy* | `udoral` | 🏆: its abstract is *score* |
 
 **Review:**
 
 | English | Egabon |
 |---------|--------|
-| *Uzazon* | `uzazon` |
-| *Olozun* | `olozun` |
-| *Ehalon* | `ehalon` |
-| *see* | `vanobol` |
-| *sit* | `vehuhol` |
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Uhelan* | `uhelan` |
+| *see* | `vawebol` |
+| *sit* | `vuhohol` |
 | *run* | `varuvel` |
-| *punch* | `vabavul` |
+| *punch* | `vanuvul` |
 
 #### English → Egabon {#intermediate-english-to-egabon}
 
 **1.** *There are about three seats.*
 
 ::: details Show answer
-`zezeholx grarem.`
+`zozoholx grarem.`
 
 z-seat-x | g-three.about
 :::
 
-**2.** *Olozun runs three times.*
+**2.** *Olazun runs three times.*
 
 ::: details Show answer
-`zolozun varuvel hrarel.`
+`zolazun varuvel hrarel.`
 
-z-Olozun | v-run | h-three
+z-Olazun | v-run | h-three
 :::
 
-**3.** *Point 2: Uzazon sits.*
+**3.** *Point 2: Uzozen sits.*
 
 ::: details Show answer
-`xredul zuzazon vehuhol.`
+`xredul zuzozen vuhohol.`
 
-x-2nd | z-Uzazon | v-sit
+x-2nd | z-Uzozen | v-sit
 :::
 
-**4.** *Olozun adds three to the score.*
+**4.** *Olazun adds three to the score.*
 
 ::: details Show answer
-`zolozun doderam vrarel.`
+`zolazun dudoram vrarel.`
 
-z-Olozun | d-score | v-three
+z-Olazun | d-score | v-three
 :::
 
 **5.** *Thousands see the trophy.* (somewhere from 1000 to 9999, no exact count)
 
 ::: details Show answer
-`zrabarel doderal vanobol.`
+`zrabarel dudoral vawebol.`
 
 z-+-e3 | d-trophy | v-see
 :::
 
-**6.** *Uzazon is probably throwing a punch.* (I'd put it at 70%)
+**6.** *Uzozen is probably throwing a punch.* (I'd put it at 70%)
 
 ::: details Show answer
-`zuzazon vabavul th+70.`
+`zuzozen vanuvul th+70.`
 
-🔊 `zuzazon vabavul thralezol.`
+🔊 `zuzozen vanuvul thralezol.`
 
-z-Uzazon | v-punch | th-70-percent-likely
+z-Uzozen | v-punch | th-70-percent-likely
 :::
 
 #### Egabon → English {#intermediate-egabon-to-english}
 
-**1.** `zredul doderal vanobol.`
+**1.** `zredul dudoral vawebol.`
 
 ::: details Show answer
 z-2nd | d-trophy | v-see
@@ -789,70 +789,70 @@ y-_3
 *Three!* (a score or label)
 :::
 
-**3.** `yol drar zolozun vanobol.`
+**3.** `yol drar zolazun vawebol.`
 
 ::: details Show answer
-y-question | d-how-many | z-Olozun | v-see
+y-question | d-how-many | z-Olazun | v-see
 
-*How many does Olozun see?*
+*How many does Olazun see?*
 :::
 
-**4.** `z+5e3,860 vehuhol.`
+**4.** `z+5e3,860 vuhohol.`
 
 ::: details Show answer
-🔊 `zrabareyavathahaguzol vehuhol.`
+🔊 `zrabareyavathahaguzol vuhohol.`
 
 z-5e3,860 | v-sit
 
 *5860 sit.*
 :::
 
-**5.** `zehalon vehuhol hrerel.`
+**5.** `zuhelan vuhohol hrerel.`
 
 ::: details Show answer
-z-Ehalon | v-sit | h-3rd
+z-Uhelan | v-sit | h-3rd
 
-*Ehalon sits for the third time.*
+*Uhelan sits for the third time.*
 :::
 
-**6.** `zehalon dezeholx g~+30 vanobol.`
+**6.** `zuhelan dozoholx g~+30 vawebol.`
 
 ::: details Show answer
-🔊 `zehalon dezeholx grarezom vanobol.`
+🔊 `zuhelan dozoholx grarezom vawebol.`
 
-z-Ehalon | [d-seat-x | g-30.about] | v-see
+z-Uhelan | [d-seat-x | g-30.about] | v-see
 
-*Ehalon sees about thirty seats.*
+*Uhelan sees about thirty seats.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Olozun sees about four seats.* `zolozun dezeholx gramom vanobol.` or `zolozun dezeholx gramol vanobol.`
+**1.** *Olazun sees about four seats.* `zolazun dozoholx gramom vawebol.` or `zolazun dozoholx gramol vawebol.`
 
 ::: details Show answer
-`zolozun dezeholx gramom vanobol.`
+`zolazun dozoholx gramom vawebol.`
 
-z-Olozun | [d-seat-x | g-four.about] | v-see
+z-Olazun | [d-seat-x | g-four.about] | v-see
 
 **-m** makes the number approximate; **-l** is exact.
 :::
 
-**2.** *Ehalon sees seat 5.* (its label) `zehalon dezehol groval vanobol.` or `zehalon dezehol graval vanobol.`
+**2.** *Uhelan sees seat 5.* (its label) `zuhelan dozohol groval vawebol.` or `zuhelan dozohol graval vawebol.`
 
 ::: details Show answer
-`zehalon dezehol groval vanobol.`
+`zuhelan dozohol groval vawebol.`
 
-z-Ehalon | [d-seat | g-_5.spelled] | v-see
+z-Uhelan | [d-seat | g-_5.spelled] | v-see
 
 A label is a digit string, marker **`ro`**; **`ra`** would count five.
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *There is a fifth seat.* <!-- lint: error -->`zezehol graval.`
+**1.** *There is a fifth seat.* <!-- lint: error -->`zozohol graval.`
 
 ::: details Show answer
-`zezehol greval.`
+`zozohol greval.`
 
 z-seat | g-5th
 
@@ -875,7 +875,7 @@ To say *infinitely many*, *last place*, *a gazillion*, or *absolutely zero*, wri
 | **Mantissa `≠0` + `ba`/`bu`∅** | hyperbole (*N gazillion* / *umpteenth*) |
 | **Mantissa `0` + `ba`/`bu`∅** | [zero × digitless exp](#zero-exponent) |
 
-> `zegazolx grabal.`
+> `zagozolx grabal.`
 > z-cat-x | g-plus-infinity
 >
 > "There are infinitely many cats."
@@ -938,16 +938,16 @@ On `/v/` and `/h/`, these special values (∞, last, start, a tiny amount) becom
 | **`v~-e-`** | *ease down a little* |
 | **`h+e`** | **unbounded multiplicity** (× without bound / unboundedly many times) |
 | **`h~+e`** | *many times but finite* |
-| **`h+e-`** | **barely**: the action clears one full time by a hair (`zuzazon h+e- vehuhol.` *Uzazon barely sits*) |
+| **`h+e-`** | **barely**: the action clears one full time by a hair (`zuzozen h+e- vuhohol.` *Uzozen barely sits*) |
 | **`h~+e-`** | *scraped by*: it happened, but only with strain |
-| **`h-e-`** | **almost**: the action falls a hair short of one full time (`zuzazon h-e- vehuhol.` *Uzazon almost sits*) |
+| **`h-e-`** | **almost**: the action falls a hair short of one full time (`zuzozen h-e- vuhohol.` *Uzozen almost sits*) |
 | **`h~-e-`** | *came close*: it fell short despite a real effort |
 
-**Margin vs effort:** **-l** (`hrabul` / `hrubul`) measures the margin: over or under by a hair. **`~`** (**-m**) reports the felt effort instead: `zuzazon hrabum vehuhol.` is *Uzazon managed to sit, just*; `zuzazon hrubum vehuhol.` is *Uzazon tried hard to sit and didn't quite*. Division into parts keeps its counted form `h-N`.
+**Margin vs effort:** **-l** (`hrabul` / `hrubul`) measures the margin: over or under by a hair. **`~`** (**-m**) reports the felt effort instead: `zuzozen hrabum vuhohol.` is *Uzozen managed to sit, just*; `zuzozen hrubum vuhohol.` is *Uzozen tried hard to sit and didn't quite*. Division into parts keeps its counted form `h-N`.
 
 **On a quality:** the same pair sits on `/w/` before an adjective or adverb. **`wrabul`** = *barely*; **`wrubul`** = *almost*.
 
-> `zodozol wrubul gonemul voworel.`
+> `zudozol wrubul gunomul vewurel.`
 > [z-dog | [w---e- | g-angry]] | v-walk
 >
 > "An almost angry dog walks."
@@ -1226,19 +1226,19 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
-| *telescope* | `udewol` | 🔭 |
+| *telescope* | `edowel` | 🔭 |
 
 **Review:**
 
 | English | Egabon |
 |---------|--------|
-| *Uzazon* | `uzazon` |
-| *Olozun* | `olozun` |
-| *Ehalon* | `ehalon` |
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Uhelan* | `uhelan` |
 | *star* | `ozal` |
-| *cloud* | `agolol` |
-| *seat* | `ezehol` |
-| *see* | `vanobol` |
+| *cloud* | `ugalal` |
+| *seat* | `ozohol` |
+| *see* | `vawebol` |
 
 #### English → Egabon {#advanced-english-to-egabon}
 
@@ -1253,25 +1253,25 @@ z-star-x | g-plus-infinity
 **2.** *There are one gazillion telescopes.*
 
 ::: details Show answer
-`zudewolx grawobal.`
+`zedowelx grawobal.`
 
 z-telescope-x | g-+-1e
 :::
 
-**3.** *Finally: Uzazon sees the clouds.*
+**3.** *Finally: Uzozen sees the clouds.*
 
 ::: details Show answer
-`xrebal zuzazon dagololx vanobol.`
+`xrebal zuzozen dugalalx vawebol.`
 
-x-finally | z-Uzazon | d-cloud-x | v-see
+x-finally | z-Uzozen | d-cloud-x | v-see
 :::
 
-**4.** *Olozun almost sees the star.*
+**4.** *Olazun almost sees the star.*
 
 ::: details Show answer
-`zolozun hrubul dozal vanobol.`
+`zolazun hrubul dozal vawebol.`
 
-z-Olozun | h---e- | d-star | v-see
+z-Olazun | h---e- | d-star | v-see
 :::
 
 #### Egabon → English {#advanced-egabon-to-english}
@@ -1284,23 +1284,23 @@ z-star-x | g-plus-infinity.about
 *There is a huge but finite number of stars.*
 :::
 
-**2.** `zolozun dozalx grarel gruawol vanobol.`
+**2.** `zolazun dozalx grarel gruawol vawebol.`
 
 ::: details Show answer
-z-Olozun | [d-star-x | g-three | g-plus-minus-1] | v-see
+z-Olazun | [d-star-x | g-three | g-plus-minus-1] | v-see
 
-*Olozun sees three stars, give or take one.*
+*Olazun sees three stars, give or take one.*
 :::
 
-**3.** `zehalon dezehol gruodul vanobol.`
+**3.** `zuhelan dozohol gruodul vawebol.`
 
 ::: details Show answer
-z-Ehalon | [d-seat | g-negative-label-2] | v-see
+z-Uhelan | [d-seat | g-negative-label-2] | v-see
 
-*Ehalon sees seat −2.* (a label below zero)
+*Uhelan sees seat −2.* (a label below zero)
 :::
 
-**4.** `zagololx grazobal.`
+**4.** `zugalalx grazobal.`
 
 ::: details Show answer
 z-cloud-x | g-+-0e
@@ -1310,12 +1310,12 @@ z-cloud-x | g-+-0e
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Uzazon barely sees the star.* `zuzazon hrabul dozal vanobol.` or `zuzazon hrubul dozal vanobol.`
+**1.** *Uzozen barely sees the star.* `zuzozen hrabul dozal vawebol.` or `zuzozen hrubul dozal vawebol.`
 
 ::: details Show answer
-`zuzazon hrabul dozal vanobol.`
+`zuzozen hrabul dozal vawebol.`
 
-z-Uzazon | h-+-e- | d-star | v-see
+z-Uzozen | h-+-e- | d-star | v-see
 
 **`ra`** clears one full time by a hair (*barely*); **`ru`** falls a hair short (*almost*).
 :::

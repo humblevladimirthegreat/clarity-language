@@ -15,12 +15,12 @@ const tables = createClassifyTables(
 );
 
 describe("inspectText", () => {
-  it("tokenizes zuzazon with PoS, named ending, and published gloss", () => {
-    const result = inspectText("zuzazon voworel.", tables);
+  it("tokenizes zuzozen with PoS, named ending, and published gloss", () => {
+    const result = inspectText("zuzozen vewurel.", tables);
     const first = result.tokens[0];
     assert.equal(first?.kind, "word");
     if (first?.kind !== "word") return;
-    assert.equal(first.raw, "zuzazon");
+    assert.equal(first.raw, "zuzozen");
     assert.equal(first.word.pos, "z");
     assert.equal(first.word.ending, "n");
     assert.ok(first.gloss.length > 0);
@@ -56,26 +56,26 @@ describe("inspectText", () => {
   });
 
   it("shows potential lexical compounds for an unlisted stem", () => {
-    const result = inspectText("zebeholozozul.", tables);
+    const result = inspectText("zobaholozezul.", tables);
     const token = result.tokens[0];
     assert.equal(token?.kind, "word");
     if (token?.kind !== "word") return;
     assert.equal(token.word.reading, "unknown");
     assert.deepEqual(
       token.word.potentialCompounds?.map(({ left, join, right }) => [left, join, right]),
-      [["ebeho", "l", "ozozu"]],
+      [["obaho", "l", "ozezu"]],
     );
     assert.match(token.gloss, /^unknown root \(maybe bed-l scorpion\)$/);
     assert.ok(token.chips.includes("potential compound"));
 
-    const listed = inspectText("zebeholuruhal.", tables).tokens[0];
+    const listed = inspectText("zobaholurahal.", tables).tokens[0];
     assert.equal(listed?.kind, "word");
     if (listed?.kind !== "word") return;
     assert.equal(listed.word.potentialCompounds, undefined);
   });
 
   it("keeps a Peggy failure as an error token beside valid words", () => {
-    const result = inspectText("zuzazon zolovexrabal voworel.", tables);
+    const result = inspectText("zuzozen zolovexrabal vewurel.", tables);
     const kinds = result.tokens.map((token) => token.kind);
     assert.deepEqual(kinds, ["word", "error", "word", "punct"]);
     const err = result.tokens[1];
@@ -87,14 +87,14 @@ describe("inspectText", () => {
   });
 
   it("surfaces a sentence warning when words parse but the clause does not", () => {
-    const result = inspectText("zuzazon voworel yol.", tables);
+    const result = inspectText("zuzozen vewurel yol.", tables);
     assert.ok(result.tokens.some((token) => token.kind === "word"));
     assert.ok(result.sentenceWarning);
     assert.equal(result.constructions.length, 0);
   });
 
   it("groups a right-close join as a construction", () => {
-    const result = inspectText("zezodol zegazol zam.", tables);
+    const result = inspectText("zozedol zagozol zam.", tables);
     const zam = result.tokens.find((token) => token.kind === "word" && token.raw === "zam");
     assert.equal(zam?.kind, "word");
     if (zam?.kind !== "word") return;
@@ -102,30 +102,30 @@ describe("inspectText", () => {
     const join = result.constructions.find((group) => group.kind === "join");
     assert.ok(join);
     const raws = join!.tokenIndices.map((i) => result.tokens[i]!.raw);
-    assert.deepEqual(raws, ["zezodol", "zegazol", "zam"]);
+    assert.deepEqual(raws, ["zozedol", "zagozol", "zam"]);
     const zamIdx = result.tokens.findIndex((token) => token.raw === "zam");
     assert.ok(join!.triggerIndices.includes(zamIdx));
   });
 
   it("reads the mention marker before a span", () => {
-    const result = inspectText("glelel z<odozo> gumazom.", tables);
+    const result = inspectText("glelel z<udozo> gamezom.", tables);
     const marker = result.tokens.find((token) => token.kind === "word" && token.raw === "glelel");
     assert.ok(marker?.kind === "word");
     assert.equal(marker.word.reading, "mention");
   });
 
   it("links -r to its antecedent", () => {
-    const result = inspectText("zolozun voworel. zolozur vehuhol.", tables);
-    const pronoun = result.tokens.find((token) => token.kind === "word" && token.raw === "zolozur");
+    const result = inspectText("zolazun vewurel. zolazur vuhohol.", tables);
+    const pronoun = result.tokens.find((token) => token.kind === "word" && token.raw === "zolazur");
     assert.equal(pronoun?.kind, "word");
     if (pronoun?.kind !== "word") return;
     const ant = pronoun.related?.find((rel) => rel.label === "antecedent");
-    assert.equal(ant?.raw, "zolozun");
-    assert.equal(result.tokens[ant!.tokenIndex]?.raw, "zolozun");
+    assert.equal(ant?.raw, "zolazun");
+    assert.equal(result.tokens[ant!.tokenIndex]?.raw, "zolazun");
   });
 
   it("Why links hook compounds", () => {
-    const token = inspectText("voworelul", tables).tokens[0];
+    const token = inspectText("vewurelul", tables).tokens[0];
     assert.equal(token?.kind, "word");
     if (token?.kind !== "word") return;
     assert.equal(token.why?.line, "hook compound");
@@ -162,7 +162,7 @@ describe("inspectText — phrase brackets", () => {
   });
 
   it("brackets a mention marker with its span", () => {
-    const tokens = inspectText("glelel z<odozo> gumazom.", tables).tokens;
+    const tokens = inspectText("glelel z<udozo> gamezom.", tables).tokens;
     const marker = tokens.find((token) => token.raw === "glelel");
     assert.ok(marker?.kind === "word");
     assert.deepEqual(marker.brackets?.open, ["["]);

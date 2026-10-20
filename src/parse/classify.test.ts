@@ -126,14 +126,14 @@ describe("classify", () => {
   });
 
   it("ability on non-sake host compound", () => {
-    expectReading("vahohoxel", "ability");
+    expectReading("vuhahaxel", "ability");
   });
 
   it("greeting bid on citation or /y/ vocative, not ability", () => {
-    expectReading("uzazoxan", "greeting");
-    expectReading("yuzazoxan", "greeting");
-    expectReading("yolozuxen", "greeting");
-    expectReading("ehaloxun", "greeting");
+    expectReading("uzozexan", "greeting");
+    expectReading("yuzozexan", "greeting");
+    expectReading("yolazuxen", "greeting");
+    expectReading("uhelaxun", "greeting");
   });
 
   it("sake on sake host compounds; bare sake root is ordinary", () => {
@@ -151,9 +151,9 @@ describe("classify", () => {
   it("between locative overlay remains; other place talk is ordinary on those roots", () => {
     const between = expectOverlay("gazam", "locative");
     assert.equal(between.overlay!.gloss, "between");
-    const pin = expectReading("zubewol", "ordinary");
+    const pin = expectReading("zabewul", "ordinary");
     assert.equal(pin.overlay, undefined);
-    expectReading("hugegom", "ordinary");
+    expectReading("hogugom", "ordinary");
   });
 
   it("of-relation overlays on /h/ /ɡ/ and ordinary pictures on other letters", () => {
@@ -183,12 +183,12 @@ describe("classify", () => {
   });
 
   it("hand root is ordinary without a means overlay", () => {
-    const hand = expectReading("zahebol", "ordinary");
+    const hand = expectReading("zahebal", "ordinary");
     assert.equal(hand.overlay, undefined);
   });
 
   it("-m on a root with no abstract sense is an unknown word", () => {
-    expectReading("hahebom", "unknown");
+    expectReading("hahebam", "unknown");
   });
 
   it("exchange overlay on /h/ /ɡ/ and ordinary booth on other letters", () => {
@@ -225,7 +225,7 @@ describe("classify", () => {
   });
 
   it("a root plus -n under /z/ is an ordinary name, not a named bar", () => {
-    for (const raw of ["zumun", "zogegon", "zahazan"]) {
+    for (const raw of ["zumun", "zogugan", "zahezan"]) {
       const word = expectReading(raw, "ordinary");
       assert.equal(word.overlay, undefined);
     }
@@ -247,7 +247,7 @@ describe("classify", () => {
   });
 
   it("lexical compound lemma glosses as one kind", () => {
-    const word = expectReading("zebeholuruhal", "ordinary");
+    const word = expectReading("zobaholurahal", "ordinary");
     assert.equal(word.family.kind, "content");
     assert.equal(word.lexicalCompound, true);
     assert.equal(word.rootGloss?.concrete, "bedroom");
@@ -261,14 +261,14 @@ describe("classify", () => {
   });
 
   it("listed three-letter hook compound parses as a fused citation", () => {
-    const word = expectReading("voworelual", "ordinary");
+    const word = expectReading("vewurelual", "ordinary");
     assert.equal(word.hookCompound?.hook, "ual");
     assert.equal(word.rootGloss?.concrete, "exit");
   });
 
   it("listed hook compound uses citation stem and fused gloss", () => {
-    const word = expectReading("voworelul", "ordinary");
-    assert.equal(word.hookCompound?.stem, "oworelul");
+    const word = expectReading("vewurelul", "ordinary");
+    assert.equal(word.hookCompound?.stem, "ewurelul");
     assert.equal(word.hookCompound?.hook, "ul");
     assert.equal(word.lexicalCompound, true);
     assert.equal(word.rootGloss?.concrete, "leave");
@@ -278,14 +278,14 @@ describe("classify", () => {
   });
 
   it("citation hook compound has no role letter", () => {
-    const word = expectReading("oworelul", "ordinary");
+    const word = expectReading("ewurelul", "ordinary");
     assert.equal(word.pos, undefined);
-    assert.equal(word.hookCompound?.stem, "oworelul");
+    assert.equal(word.hookCompound?.stem, "ewurelul");
     assert.equal(word.rootGloss?.concrete, "leave");
   });
 
   it("ordinary walk is not a hook compound", () => {
-    const word = expectReading("voworel", "ordinary");
+    const word = expectReading("vewurel", "ordinary");
     assert.equal(word.hookCompound, undefined);
     assert.equal(word.rootGloss?.concrete, "walk");
   });
@@ -355,11 +355,11 @@ describe("classify", () => {
 describe("lexiconContentRoots", () => {
   it("collects content and compound hosts; skips spans, numbers, foreign", () => {
     const emptyKnown = knownLexiconRoots(createClassifyTablesFromRows([], []));
-    assert.deepEqual(lexiconContentRoots(parseWord("zuzazon")), [CLOSED.swan]);
-    assert.deepEqual(unknownLexiconContentRoots(parseWord("zuzazon"), emptyKnown), [CLOSED.swan]);
+    assert.deepEqual(lexiconContentRoots(parseWord("zuzozen")), [CLOSED.swan]);
+    assert.deepEqual(unknownLexiconContentRoots(parseWord("zuzozen"), emptyKnown), [CLOSED.swan]);
     assert.deepEqual(lexiconContentRoots(parseWord("g+3")), []);
     assert.deepEqual(lexiconContentRoots(parseWord("d<sushi>")), []);
     assert.deepEqual(lexiconContentRoots(parseWord("yal")), []);
-    assert.equal(unknownLexiconContentRoots(parseWord("zuzazon"), knownLexiconRoots(tables)).length, 0);
+    assert.equal(unknownLexiconContentRoots(parseWord("zuzozen"), knownLexiconRoots(tables)).length, 0);
   });
 });

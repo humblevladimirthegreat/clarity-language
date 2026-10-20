@@ -1,6 +1,6 @@
 # Egabon Introduction
 
-**Egabon** (`egabo` + the name ending **-n**) translates to English *clarity*.
+**Egabon** (`agebo` + the name ending **-n**) translates to English *clarity*.
 
 Egabon has two kinds of goals: psychological goals, which say what the language is for, and structural goals, which shape how it is built. This page covers the structural goals and how to work through these docs.
 
@@ -64,7 +64,7 @@ Inventory tables on grammar pages use these columns:
 |--------|------------|
 | **Egabon** | The word or letter you write. If **Same root as** is blank, this is the citation form (how the word is written on its own, outside a sentence). The in-clause spelling, with its role letter, appears only when **Same root as** names the everyday kind. |
 | **Use** | What the form **does**: its job in the sentence (subject, question, *because* joining two sentences). This is the rule. |
-| **English** | What you would **say**: the sense to produce or understand. In translation practice, a person's English is their name (*Uzazon*), not the virtue word the name is built from. |
+| **English** | What you would **say**: the sense to produce or understand. In translation practice, a person's English is their name (*Uzozen*), not the virtue word the name is built from. |
 | **Same root as** | The everyday kind of the same root, written as a citation (**-l**), shown when the row's English is a different word from that citation's English: the *wall* root for a row whose English is *because*, or the *eye* root for *see*. Blank when the English already is the citation (a row whose English is *climb* for the *climb* root). Not every table has this column. |
 | **Cue** | A memory aid for the letter, vowel, or picture behind the row. |
 

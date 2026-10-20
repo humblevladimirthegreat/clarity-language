@@ -155,7 +155,7 @@ All are generated from the shorthand by the current speech rules with the new ta
 | `g-e` (−∞) | `grubal` | `gruwal` |
 | `g+1e` (*one gazillion*) | `grawobal` | `grabuwal` |
 
-Numeric-derivation stems change the same way: `raba` → `rawa` (`zelamalrabal` → `zalavalrawal` *essence of love*).
+Numeric-derivation stems change the same way: `raba` → `rawa` (`zulamalrabal` → `zalavalrawal` *essence of love*).
 
 ## Known costs
 

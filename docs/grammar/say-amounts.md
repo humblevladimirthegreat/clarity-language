@@ -10,26 +10,26 @@ Recipes for English comparisons, percentages, units and dates. Every form here i
 
 When English would say *from least to most ADJ* (*easiest to hardest*, a syllabus order), you are not naming a winner. You are listing items along the scale from its low end. Use [sequence](joins.md#sequence-ae) **`ae`** before the shared adjective: the first name is the **start** of the scale, the last is the far end.
 
-> `zuzazon zolozun zehalon zael gumahom.`
+> `zuzozen zolazun zuhelan zael gamahum.`
 >
-> [z-Uzazon | z-Olozun | z-Ehalon | z-in-order | g-challenge]
+> [z-Uzozen | z-Olazun | z-Uhelan | z-in-order | g-challenge]
 >
-> "Uzazon, Olozun, Ehalon, from least to most challenging."
+> "Uzozen, Olazun, Uhelan, from least to most challenging."
 
-**Compare with:** `zuzazon zolozun zehalon zel gumahom` puts Uzazon at the **top** (*most* challenging first). Rank **`e`** lists best-first; sequence **`ae`** lists start-first.
+**Compare with:** `zuzozen zolazun zuhelan zel gamahum` puts Uzozen at the **top** (*most* challenging first). Rank **`e`** lists best-first; sequence **`ae`** lists start-first.
 
 ### Distributive *both are ADJ*
 <a id="distributive-both"></a>
 
 **Needs:** [And-lists](joins.md#and-lists-a) · [Equatives](comparatives.md#equatives-oe-shared-scale)
 
-English *both are challenging* (or *Uzazon and Olozun are challenging*) says **each** has the quality. It does not rank them and does not say they match in height. Write the names, then set join **`a`** (`zal`), then a shared singular adjective (`/ɡ/`). Each name gets that adjective.
+English *both are challenging* (or *Uzozen and Olazun are challenging*) says **each** has the quality. It does not rank them and does not say they match in height. Write the names, then set join **`a`** (`zal`), then a shared singular adjective (`/ɡ/`). Each name gets that adjective.
 
-> `zuzazon zolozun zal gumahom.`
+> `zuzozen zolazun zal gamahum.`
 >
-> [z-Uzazon | z-Olozun | z-and | g-challenge]
+> [z-Uzozen | z-Olazun | z-and | g-challenge]
 >
-> "Uzazon and Olozun are both challenging."
+> "Uzozen and Olazun are both challenging."
 
 **Compare with:** *as challenging as* uses equality **`oe`** (`zoel`). *More challenging than* uses rank **`e`**.
 
@@ -39,8 +39,8 @@ Equality **`oe`** with a shared scale needs **two or more** names. **`oe`** with
 
 | Egabon | Reading |
 |--------|---------|
-| `zuzazon zolozun zehalon zoel gumahom` | *Uzazon, Olozun, and Ehalon are equally challenging* |
-| `zodozol zegazol zoel gumahom` | *the dog is as challenging as the cat* |
+| `zuzozen zolazun zuhelan zoel gamahum` | *Uzozen, Olazun, and Uhelan are equally challenging* |
+| `zudozol zagozol zoel gamahum` | *the dog is as challenging as the cat* |
 
 ### Measured differentials {#measured-differentials}
 <a id="measure-gap"></a>
@@ -49,13 +49,13 @@ Equality **`oe`** with a shared scale needs **two or more** names. **`oe`** with
 
 English *two meters taller* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit** (published abstract = SI name), and `/ɡ/` on the unit is the **amount** ([measure phrases](numbers-applied.md#measure-phrases)).
 
-> `zuzazon zolozun zel gadahom bezerem gradul.`
+> `zuzozen zolazun zel gadahem bezerem gradul.`
 >
-> [z-Uzazon | z-Olozun | z-rank/more | [g-height | [b-meter | g-two]]]
+> [z-Uzozen | z-Olazun | z-rank/more | [g-height | [b-meter | g-two]]]
 >
-> "Uzazon is two meters taller than Olozun."
+> "Uzozen is two meters taller than Olazun."
 
-**Related form:** vague *much* / *slightly* is shared `/w/` immediately before the scale adjective (`wohelal`), not a counted `/b/`.
+**Related form:** vague *much* / *slightly* is shared `/w/` immediately before the scale adjective (`wehalal`), not a counted `/b/`.
 
 ### Snapshot on a shared scale
 <a id="as-of-scale"></a>
@@ -64,11 +64,11 @@ English *two meters taller* still ranks two people on one quality, and it also n
 
 To score the shared adjective as of a dated now, write [*as-of*](relations.md#as-of) on `/w/` immediately before that `/ɡ/` word, with `/b/` between them. That snapshot does not retarget the verb; the clause still needs `/h/` *as-of* if the event also scores against that now.
 
-> `zuzazon zolozun zel wuhum b_#22,7 gumahom.`
+> `zuzozen zolazun zel wuhum b_#22,7 gamahum.`
 >
-> [z-Uzazon | z-Olozun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
+> [z-Uzozen | z-Olazun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 >
-> "As of 22 July, Uzazon is more challenging than Olozun."
+> "As of 22 July, Uzozen is more challenging than Olazun."
 
 ## Amounts and percents {#amounts}
 
@@ -78,11 +78,11 @@ To score the shared adjective as of a dated now, write [*as-of*](relations.md#as
 
 **Needs:** [Measure phrases](numbers-applied.md#measure-phrases) · [Exponents](numbers.md#exponents)
 
-Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / an exact count): `bezerem g+5400` or `bezerem g+5.4e3`; `boburom g+70e3`.
+Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / an exact count): `bezerem g+5400` or `bezerem g+5.4e3`; `beberom g+70e3`.
 
 **For *kilometers* / *milligrams*, use:** that scaled amount on the base unit. There is no *kilo-* / *milli-* / *mega-* stem.
 
-For *two meters taller*, see [measured differentials](#measured-differentials). Vague degree uses `/w/` on the scale (`zel wohelal gadahom …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
+For *two meters taller*, see [measured differentials](#measured-differentials). Vague degree uses `/w/` on the scale (`zel wehalal gadahem …`) with no unit. Duration and other clause measures use the same unit+amount habit in whatever slot the relation needs.
 
 ### Denominator (portion “of what”)
 <a id="percent-denominators"></a>
@@ -92,13 +92,13 @@ For *two meters taller*, see [measured differentials](#measured-differentials). 
 
 | Egabon | Use | English |
 |--------|-----|---------|
-| `zegazolx g+25%` | percent grades the modified noun | *25% of the cats* |
+| `zagozolx g+25%` | percent grades the modified noun | *25% of the cats* |
 | `dudulx g+95%` | same, object slot | *95% of the tests* |
 | `bobelx g+5%` under a host relation | same, `/b/` | *5% of the people* |
 
 For a count out of a group already named (*three of them*), resume the group and give the count.
 
-> `zegazolx vehuhol. zegazorx grarel varuvel.`
+> `zagozolx vuhohol. zagozorx grarel varuvel.`
 > z-cat-x | v-sit . [z-←cat-x-x | g-three] | v-run
 >
 > "The cats sit. Three of them run."
@@ -113,9 +113,9 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 *Most of the cats* means *more than half*: the band from all of them down to half, with half left out. Write **`g+100%`**, then **`ul`**, then **`g+50%`**. The hook excludes the endpoint after it.
 
-> `zegazolx g+100% ul g+50% vehuhol.`
+> `zagozolx g+100% ul g+50% vuhohol.`
 >
-> 🔊 `zegazolx grawozozoyol ul gravazoyol vehuhol.`
+> 🔊 `zagozolx grawozozoyol ul gravazoyol vuhohol.`
 >
 > [z-cat-x | g-100yo] | through-excluding | g-50yo | v-sit
 >
@@ -127,7 +127,7 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 *One in three cats* is the same share as *a third of the cats*. Write the [fraction](numbers-applied.md#fractions) **`g-N`** right after the noun.
 
-> `zegazolx grurel vehuhol.`
+> `zagozolx grurel vuhohol.`
 >
 > [z-cat-x | g-third-of] | v-sit
 >
@@ -145,13 +145,13 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 |---------|--------|
 | *per* (*per hour*, *three times an hour*) | the count, then **`hruwol`**, then the unit in `/b/` |
 
-> `zuzazon voworel hrarel hruwol balarum.`
+> `zuzozen vewurel hrarel hruwol bagorum.`
 >
-> z-Uzazon | v-walk | h-three | [h-divided-by-one | b-hour]
+> z-Uzozen | v-walk | h-three | [h-divided-by-one | b-hour]
 >
-> "Uzazon walks three times an hour."
+> "Uzozen walks three times an hour."
 
-A ratio (*three cats to one dog*) is a [factor](comparatives.md#factor) on the equative amount scale: `zegazolx zodozolx zoel gral hrarel` is *three times as many cats as dogs*.
+A ratio (*three cats to one dog*) is a [factor](comparatives.md#factor) on the equative amount scale: `zagozolx zudozolx zoel gral hrarel` is *three times as many cats as dogs*.
 
 ### Percent points, factors, and other wholes
 
@@ -195,81 +195,81 @@ English degree words (*really*, *quite*, *barely*) say how far a quality or an a
 
 | English | Egabon |
 |---------|--------|
-| *very* / *really* / *highly* / *truly* | `weluzom` before the adjective or adverb |
-| *extremely* / *greatly* / *dramatically* / *significantly* / *considerably* | `wohelal` |
-| *slightly* / *somewhat* | `wumazom` |
-| *completely* / *totally* / *entirely* / *fully* / *altogether* | `wuharam` |
-| *quite* / *fairly* / *pretty* / *reasonably* / *relatively* | `wadewom` |
-| *huge* | `wohelal geluzom` (*extremely big*) |
+| *very* / *really* / *highly* / *truly* | `welazom` before the adjective or adverb |
+| *extremely* / *greatly* / *dramatically* / *significantly* / *considerably* | `wehalal` |
+| *slightly* / *somewhat* | `wamezom` |
+| *completely* / *totally* / *entirely* / *fully* / *altogether* | `wuhuram` |
+| *quite* / *fairly* / *pretty* / *reasonably* / *relatively* | `wadowom` |
+| *huge* | `wehalal gelazom` (*extremely big*) |
 | *barely* / *hardly* | `hrabul` on the verb, `wrabul` before an adjective |
 | *almost* | `hrubul` on the verb, `wrubul` before an adjective |
 | *definitely* / *absolutely* / *certainly* | stance number `th+e` |
 
-> `zodozol wadewom geluzom voworel.`
+> `zudozol wadowom gelazom vewurel.`
 >
 > [z-dog | [w-quite | g-big]] | v-walk
 >
 > "A fairly big dog walks."
 
-> `zuzazon hrabul vehuhol.`
+> `zuzozen hrabul vuhohol.`
 >
-> z-Uzazon | h-+-e- | v-sit
+> z-Uzozen | h-+-e- | v-sit
 >
-> "Uzazon barely sits."
+> "Uzozen barely sits."
 
 ### How: *carefully*, *properly*, *gently*, *hard to* {#manner-words}
 
 **Needs:** [Adverbs `/h/`](clause.md#adverbs-h) · [Manner scale](comparatives.md#manner-scale) · [Every bar](comparatives.md#stance-bars) · [Can](intention.md#can)
 
-English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the abstract ending **-m**, as in `hedarem` *hastily*. When the quality is the root's everyday sense and the abstract sense is something else, use **-l**: `ugego` is *correct* and its abstract sense is *inclusion*, so *properly* is `hugegol`.
+English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the abstract ending **-m**, as in `hodurem` *hastily*. When the quality is the root's everyday sense and the abstract sense is something else, use **-l**: `ogugo` is *correct* and its abstract sense is *inclusion*, so *properly* is `hogugol`.
 
 | English | Egabon |
 |---------|--------|
-| *quickly* | `hevagem` |
-| *carefully* | `huyelom` |
-| *gently* | `hogemam` |
-| *properly* / *correctly* | `hugegol` |
-| *properly* (*up to standard*) | the doer, then `thumel zoel hugegol` (as correctly as the rules require) |
+| *quickly* | `havugem` |
+| *carefully* | `hayulem` |
+| *gently* | `hegumam` |
+| *properly* / *correctly* | `hogugol` |
+| *properly* (*up to standard*) | the doer, then `thumel zoel hogugol` (as correctly as the rules require) |
 | *precisely* / *accurately* | `hubugom` |
 | *neatly* / *in an orderly way* | `henodam` |
-| *seriously* | `hezodom` |
+| *seriously* | `hozedom` |
 | *surprisingly* / *suddenly* | `hezum` |
 | *surprisingly* + adjective (*surprisingly blue*) | `wezum` right before the `/ɡ/` word |
-| *pleasantly* / *usefully* / *frustratingly* + adjective (*pleasantly hot*) | a `/w/` sake word right before the `/ɡ/` word: `wozotham guhamol` ([personal possession](sakes.md#personal-possession)) |
-| *successfully* | `hemebom` |
-| *strongly* | `hubabom` |
-| *heavily* | `haralom` |
-| *perfectly* | `huharam` |
-| *significantly* (*matters a lot*) | `hegugom` |
-| *gradually* / *slowly* | `hazuzom` |
-| *widely* / *broadly* | `horohem` |
-| *deeply* | `hobewum` |
-| *easily* (*with less effort than usual*) | `thobam zuel hezebom` before the verb |
-| *hard to* / *easy to* + a verb (*hard to ignore*) | the doer, then `thobam zel hezebom` / `thobam zuel hezebom`, and the verb with *can* (`-xal`) |
+| *pleasantly* / *usefully* / *frustratingly* + adjective (*pleasantly hot*) | a `/w/` sake word right before the `/ɡ/` word: `wozotham gehamul` ([personal possession](sakes.md#personal-possession)) |
+| *successfully* | `hemebem` |
+| *strongly* | `hobobom` |
+| *heavily* | `harolom` |
+| *perfectly* | `huhuram` |
+| *significantly* (*matters a lot*) | `hagugem` |
+| *gradually* / *slowly* | `huzezam` |
+| *widely* / *broadly* | `horahem` |
+| *deeply* | `hebowum` |
+| *easily* (*with less effort than usual*) | `thobam zuel huzubam` before the verb |
+| *hard to* / *easy to* + a verb (*hard to ignore*) | the doer, then `thobam zel huzubam` / `thobam zuel huzubam`, and the verb with *can* (`-xal`) |
 
-> `zuzazon huyelom voworel.`
+> `zuzozen hayulem vewurel.`
 >
-> z-Uzazon | h-caution | v-walk
+> z-Uzozen | h-caution | v-walk
 >
-> "Uzazon walks carefully."
+> "Uzozen walks carefully."
 
-The easy / hard pair on a quality ranks effort against a bar ([vague amounts](comparatives.md#vague-amounts)): `zugul thobam zuel gezebom` is *the book is easy* (less effort than usual), and `zel` in place of `zuel` is *hard*.
+The easy / hard pair on a quality ranks effort against a bar ([vague amounts](comparatives.md#vague-amounts)): `zugul thobam zuel guzubam` is *the book is easy* (less effort than usual), and `zel` in place of `zuel` is *hard*.
 
-*Hard to* + a verb puts the same effort scale on whoever would do it: they can, but only with more effort than usual. Write the doer as the ranked item, the bar, the rank word and **`hezebom`**, then the verb with [*can*](intention.md#can) **`xa`**.
+*Hard to* + a verb puts the same effort scale on whoever would do it: they can, but only with more effort than usual. Write the doer as the ranked item, the bar, the rank word and **`huzubam`**, then the verb with [*can*](intention.md#can) **`xa`**.
 
-> `zuzazon thobam zel hezebom dugul vuruyexal.`
+> `zuzozen thobam zel huzubam dugul varayexal.`
 >
-> [z-Uzazon | th-PATTERN | z-rank/more | h-effort] | d-book | v-write-able
+> [z-Uzozen | th-PATTERN | z-rank/more | h-effort] | d-book | v-write-able
 >
-> "The book is hard for Uzazon to write."
+> "The book is hard for Uzozen to write."
 
 *Properly* in the sense of *up to standard* names the standard as a bar ([every bar](comparatives.md#stance-bars)): REQUIRE **`thumel`** is the rule, and a tie meets it. Use **`thumer`** for what is customary.
 
-> `zuzazon thumel zoel hugegol vuruyel.`
+> `zuzozen thumel zoel hogugol varayel.`
 >
-> [z-Uzazon | th-REQUIRE-rule | z-equal-rank | h-correct] | v-write
+> [z-Uzozen | th-REQUIRE-rule | z-equal-rank | h-correct] | v-write
 >
-> "Uzazon writes properly." (as correctly as the rules require)
+> "Uzozen writes properly." (as correctly as the rules require)
 
 ### How often {#frequency-words}
 
@@ -282,20 +282,20 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *always* / *constantly* | `hual` |
 | *usually* / *normally* / *generally* / *regularly* / *typically* (*as a rule*) | `huam` |
 | *often* / *frequently* | `thobam zel hral` before the verb |
-| *frequent* / *regular* / *usual* (*a regular visitor*, *the usual route*) | put the frequency on the verb: `zuzazon vevubel huam.` (Uzazon usually comes) |
+| *frequent* / *regular* / *usual* (*a regular visitor*, *the usual route*) | put the frequency on the verb: `zuzozen vavobel huam.` (Uzozen usually comes) |
 | *sometimes* / *occasionally* | `har` |
 | *never, as far as I know* / *as a rule, never* | `ham` |
 | *never* | `hal` |
-| *daily* | `huwem bual gozarom` |
-| *weekly* | `huwem bual gagarem` |
-| *monthly* | `huwem bual gumolom` |
-| *annually* | `huwem bual guvevam` |
+| *daily* | `huwem bual gazurem` |
+| *weekly* | `huwem bual gugorem` |
+| *monthly* | `huwem bual gumalem` |
+| *annually* | `huwem bual gavuvam` |
 
-> `zuzazon huwem bual gozarom voworel.`
+> `zuzozen huwem bual gazurem vewurel.`
 >
-> z-Uzazon | h-while | [b-everything | g-day] | v-walk
+> z-Uzozen | h-while | [b-everything | g-day] | v-walk
 >
-> "Uzazon walks daily."
+> "Uzozen walks daily."
 
 ### How many and how big {#quantity-words}
 
@@ -303,28 +303,28 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 | English | Egabon |
 |---------|--------|
-| *numerous* / *considerable* (*many cats*) | `zegazolx thobam zel gral` |
-| *enough* / *sufficient* / *adequate* / *full* (as much as is needed) | `zegazolx thegatham zoel gral` |
-| *too many* / *excess* / *extra* / *spare* (more than needed) | `zegazolx thegatham zel gral` |
+| *numerous* / *considerable* (*many cats*) | `zagozolx thobam zel gral` |
+| *enough* / *sufficient* / *adequate* / *full* (as much as is needed) | `zagozolx thegatham zoel gral` |
+| *too many* / *excess* / *extra* / *spare* (more than needed) | `zagozolx thegatham zel gral` |
 | *quantity* (*how many*) | the amount scale `gral` |
-| *normal* / *typical* / *standard* / *ordinary* / *medium* / *average* (*normally big*) | the PATTERN bar with `zoel`: `zodozol thobam zoel geluzom` |
+| *normal* / *typical* / *standard* / *ordinary* / *medium* / *average* (*normally big*) | the PATTERN bar with `zoel`: `zudozol thobam zoel gelazom` |
 | *single* (*just one*) | the plain number `g+1` |
 | *secondary* / *second* | the rank `g#2` |
-| *whole* / *entire* / *complete* / *total* / *ideal* (nothing lacking) | `guharam` (*perfection*) |
-| *several* | approximate number: `zegazolx gram` (*about five cats*) |
-| *multiple* (*more than one*) | a ray: `zegazolx g+2 al grabal` |
-| *minority* (*fewer than half*) | `zegazolx g+0% ul g+50%` |
+| *whole* / *entire* / *complete* / *total* / *ideal* (nothing lacking) | `guhuram` (*perfection*) |
+| *several* | approximate number: `zagozolx gram` (*about five cats*) |
+| *multiple* (*more than one*) | a ray: `zagozolx g+2 al grabal` |
+| *minority* (*fewer than half*) | `zagozolx g+0% ul g+50%` |
 | *exactly* / *precisely* / *specific* (*exactly five*) | the plain number `g+5`; `gram` is *about five* |
 | *literally* (*word for word*) | an exact quote: bare brackets, no `~` ([exact, paraphrase, proper](spans.md#when-required)) |
 | *a dozen* | `zegalx g+12` |
-| *a quarter of the cats* | `zegazolx g-4` (or `g+25%`) |
-| *two thirds of the cats*, *three quarters* | `zegazolx gradul grurel` (count, then [fraction](numbers-applied.md#fractions)) |
-| *a third of an hour* | `balarum grawol grurel` |
-| *the second biggest*, *the third tallest* | `zuzazon zel wredul geluzom` ([place on a scale](comparatives.md#place-on-a-scale)) |
+| *a quarter of the cats* | `zagozolx g-4` (or `g+25%`) |
+| *two thirds of the cats*, *three quarters* | `zagozolx gradul grurel` (count, then [fraction](numbers-applied.md#fractions)) |
+| *a third of an hour* | `bagorum grawol grurel` |
+| *the second biggest*, *the third tallest* | `zuzozen zel wredul gelazom` ([place on a scale](comparatives.md#place-on-a-scale)) |
 | *twice* / *double* (two times) | `h+2` before the verb |
-| *ratio* (*three cats to one dog*) | `zegazolx zodozolx zoel gral hrarel` ([factor](comparatives.md#factor)) |
+| *ratio* (*three cats to one dog*) | `zagozolx zudozolx zoel gral hrarel` ([factor](comparatives.md#factor)) |
 | *at least 5* / *at most 5* (*minimum* / *maximum*) | `zraval al zrabal` / `zrubal al zraval` |
-| *decade* / *century* | `buvevam g+10` / `buvevam g+100` |
+| *decade* / *century* | `bavuvam g+10` / `bavuvam g+100` |
 | *unit* | the measure phrase: `bezerem g+2` |
 | *estimate* (*I put it at 40*) | stance number `th+40` |
 
@@ -336,35 +336,35 @@ English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an 
 
 | English | Egabon |
 |---------|--------|
-| *expensive* / *costly* / *pricey* | `thobam zel godarom` (costs more than usual) |
-| *cheap* / *inexpensive* | `thobam zuel godarom` |
-| *rich* / *wealthy* | `thobam zel gegumam` (more wealth than usual) |
-| *poor* (*little money*) | `thobam zuel gegumam` |
-| *weak* / *feeble* / *frail* | `thobam zuel gubabom` (less strength than usual) |
-| *busy* / *hard-working* | `thobam zel gezebom` (more effort than usual) |
-| *far* / *far away* / *distant* / *remote* | `thobam zel gazavom` (farther than usual) |
-| *wide* / *broad* | `thobam zel gorohem` |
-| *narrow* | `thobam zuel gorohem` |
-| *deep* | `thobam zel gobewum` |
-| *shallow* | `thobam zuel gobewum` |
-| *thick* | `gabadol gul` (not flat) |
-| *remarkable* / *special* (unusual) / *outstanding* | `thobam zel` + the quality that stands out: `thobam zel geluzom` |
-| *picky* / *choosy* / *particular* (fussy) | `thobam zel gahogom` (more selective than usual) |
+| *expensive* / *costly* / *pricey* | `thobam zel goderom` (costs more than usual) |
+| *cheap* / *inexpensive* | `thobam zuel goderom` |
+| *rich* / *wealthy* | `thobam zel gugamam` (more wealth than usual) |
+| *poor* (*little money*) | `thobam zuel gugamam` |
+| *weak* / *feeble* / *frail* | `thobam zuel gobobom` (less strength than usual) |
+| *busy* / *hard-working* | `thobam zel guzubam` (more effort than usual) |
+| *far* / *far away* / *distant* / *remote* | `thobam zel gazavem` (farther than usual) |
+| *wide* / *broad* | `thobam zel gorahem` |
+| *narrow* | `thobam zuel gorahem` |
+| *deep* | `thobam zel gebowum` |
+| *shallow* | `thobam zuel gebowum` |
+| *thick* | `gunedol gul` (not flat) |
+| *remarkable* / *special* (unusual) / *outstanding* | `thobam zel` + the quality that stands out: `thobam zel gelazom` |
+| *picky* / *choosy* / *particular* (fussy) | `thobam zel guhugom` (more selective than usual) |
 | *major* / *significant* (matters more than usual) | `thobam zel gamethal` ([important](say-reasons.md#sake-words)) |
 
-> `zugul thobam zel godarom.`
+> `zugul thobam zel goderom.`
 >
 > [z-book | th-PATTERN | z-rank/more | g-cost]
 >
 > "The book is expensive."
 
-> `zuzazon thobam zuel gubabom.`
+> `zuzozen thobam zuel gobobom.`
 >
-> [z-Uzazon | th-PATTERN | z-rank/less | g-strength]
+> [z-Uzozen | th-PATTERN | z-rank/less | g-strength]
 >
-> "Uzazon is less strong than usual."
+> "Uzozen is less strong than usual."
 
-**Compare with:** any stance that sets a value can be the bar ([every bar](comparatives.md#stance-bars)). *More expensive than I expected* is INTUITION, `thahom zel godarom`, and *too expensive* is a sake bar, `thegatham zel godarom`. Bare *good* and *bad* have no root ([wrong, ugly](say-reasons.md#wrong-ugly)).
+**Compare with:** any stance that sets a value can be the bar ([every bar](comparatives.md#stance-bars)). *More expensive than I expected* is INTUITION, `thahom zel goderom`, and *too expensive* is a sake bar, `thegatham zel goderom`. Bare *good* and *bad* have no root ([wrong, ugly](say-reasons.md#wrong-ugly)).
 
 ### Just, only, also, especially {#focus-words}
 
@@ -374,30 +374,30 @@ English *just*, *only*, *especially* and *also* point at one item and say how it
 
 | English | Egabon |
 |---------|--------|
-| *just Uzazon* / *only* / *merely* / *simply* / *alone* / *a mere* / *this particular one* | `zuzazon zal`, the join after the one item |
-| *especially Uzazon* / *particularly* / *specifically* / *mainly* / *primarily* / *largely* / *in particular* / *main* (*the main one*) | `zuzazon zem` |
-| *only Uzazon matters* | `zuzazon zel` |
+| *just Uzozen* / *only* / *merely* / *simply* / *alone* / *a mere* / *this particular one* | `zuzozen zal`, the join after the one item |
+| *especially Uzozen* / *particularly* / *specifically* / *mainly* / *primarily* / *largely* / *in particular* / *main* (*the main one*) | `zuzozen zem` |
+| *only Uzozen matters* | `zuzozen zel` |
 | *also* / *too* / *as well* / *besides* / *in addition* | `al …` at the start of the next sentence |
 | *just now* (*a moment ago*) | `brubul` on a channel |
 | *just about to* | `brabul` on a channel |
 
-> `zuzazon zal voworel.`
+> `zuzozen zal vewurel.`
 >
-> [z-Uzazon | z-and] | v-walk
+> [z-Uzozen | z-and] | v-walk
 >
-> "Only Uzazon walks."
+> "Only Uzozen walks."
 
-> `zuzazon zem voworel.`
+> `zuzozen zem vewurel.`
 >
-> [z-Uzazon | z-rank/more.open] | v-walk
+> [z-Uzozen | z-rank/more.open] | v-walk
 >
-> "Uzazon in particular walks."
+> "Uzozen in particular walks."
 
-> `zuzazon voworel. al zolozun voworel.`
+> `zuzozen vewurel. al zolazun vewurel.`
 >
-> z-Uzazon | v-walk . additionally | z-Olozun | v-walk
+> z-Uzozen | v-walk . additionally | z-Olazun | v-walk
 >
-> "Uzazon walks. Also, Olozun walks."
+> "Uzozen walks. Also, Olazun walks."
 
 **Compare with:** *just* meaning *only a moment ago* is the hair before now (**`brubul`**, [recently](say-tense.md#time-words)), not a join. *Only when* is the restrictor **`hal`** ([restrictors](restrictors.md#beginner)), and *only if* is **`tholum`** ([only if](causation.md#only-if)).
 
@@ -411,19 +411,19 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 
 | English | Egabon | Reading |
 |---------|--------|---------|
-| *group* / *bunch* | `zodozolx` | some dogs, as a set here |
+| *group* / *bunch* | `zudozolx` | some dogs, as a set here |
 | *crowd* | `zobelx thobam zel gral` | people, more than usual |
-| *pair* (two of a kind) | `zodozolx g+2` | two dogs |
+| *pair* (two of a kind) | `zudozolx g+2` | two dogs |
 | *couple* (two people who are together) | `zagayal` | the everyday sense of `agaya` |
-| *titled group* (the group named Ahevan) | `zahevanx` | named, **-nx** |
+| *titled group* (the group named Ehuvan) | `zehuvanx` | named, **-nx** |
 | *member* (of a group) | `gobom` + `/b/` group | part of the group |
 | *member* (unspecified, of a menu or list) | `zor` | anything among the listed |
-| *list* (*a list of cats and dogs*) | `zegazol zodozol zal` | an and-list |
-| *list* (written) | `zogewal` | *clipboard* |
+| *list* (*a list of cats and dogs*) | `zagozol zudozol zal` | an and-list |
+| *list* (written) | `zegowal` | *clipboard* |
 | *range* (of numbers) | `zrarel al zraval` | the band from 3 to 5 |
 | *range* (of things: how far it reaches) | `zagum` | *scope*, the abstract sense of `agu` |
 
-> `zodozolx voworel.`
+> `zudozolx vewurel.`
 >
 > z-dog-x | v-walk
 >
@@ -435,11 +435,11 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 >
 > "There is a crowd." (more people than usual)
 
-> `zuzazon gobom bahevanx voworel.`
+> `zuzozen gobom behuvanx vewurel.`
 >
-> [z-Uzazon | [g-part-of | b-Ahevan-x]] | v-walk
+> [z-Uzozen | [g-part-of | b-Ehuvan-x]] | v-walk
 >
-> "Uzazon, a member of the group Ahevan, walks."
+> "Uzozen, a member of the group Ehuvan, walks."
 
 **Compare with:** a named group needs its own name (**-nx**). *A few* or *several* is an approximate number ([how many](#quantity-words)).
 
@@ -454,14 +454,14 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bezerem g
 
 | English unit | Unit root (metaphor) | Example | Quantity (unchanged) |
 |--------------|----------------------|---------|----------------------|
-| newton | `avova` *newton* | `bavovam g+10` | `abavu` *force* |
-| pascal | `udowo` *pascal* | `budowom g+101325` | `oyewa` *pressure* |
-| joule | `uzalo` *joule* | `buzalom g+500` | `uyawa` *energy* |
-| watt | `omovo` *watt* | `bomovom g+60` | `abawo` *power* |
-| hertz | `ezala` *hertz* | `bezalam g+50` | `adoro` *rhythm* |
-| ohm | `obowo` *ohm* | `bobowom g+100` | `egahu` *blockage* |
-| coulomb | `azevo` *coulomb* | `bazevom g+2` | `erazo` *charge* |
-| radian | `odago` *radian* | `bodagom g+1` | `erago` *cycle* |
+| newton | `avava` *newton* | `bavavam g+10` | `anuvu` *force* |
+| pascal | `odowa` *pascal* | `bodowam g+101325` | `agewa` *pressure* |
+| joule | `uzale` *joule* | `buzalem g+500` | `abewa` *energy* |
+| watt | `emave` *watt* | `bemavem g+60` | `ubewo` *power* |
+| hertz | `ezela` *hertz* | `bezelam g+50` | `emora` *rhythm* |
+| ohm | `obewo` *ohm* | `bobewom g+100` | `egohu` *blockage* |
+| coulomb | `alevo` *coulomb* | `balevom g+2` | `urazu` *charge* |
+| radian | `udugu` *radian* | `budugum g+1` | `aruge` *cycle* |
 
 **Related form:** general **`ROOTl+1`** (*primary / singleton of a kind*) is [numeric derivation](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
 
@@ -472,13 +472,13 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bezerem g
 
 English *until tomorrow* (also *till tomorrow*), *by tomorrow*, and *before next week* count from today. A command or a plan has no channel to count from, so the time pole takes the count itself: a signed measure in its `/b/` runs from now.
 
-> `yel vehamum zehon homam bozarom grawol.`
+> `yel vohomum zehon homam bazurem grawol.`
 >
 > y-command | v-confidentiality | z-listener | [h-until | [b-day | g-one]]
 >
 > "Keep the secret until tomorrow."
 
-Use **`homam`** for *until* / *till*, **`hevehum`** for *by*, **`habam`** for *before*, and **`hanom`** for *after*. A negative count runs back from now.
+Use **`homam`** for *until* / *till*, **`hevahum`** for *by*, **`habam`** for *before*, and **`hanom`** for *after*. A negative count runs back from now.
 
 ### Date as books vs event-when
 <a id="as-of-vs-clock"></a>
@@ -497,22 +497,22 @@ Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftove
 
 When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`), not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`grewol`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
 
-> `zuzazon degewom gredul vezeyel.`
-> z-Uzazon | [d-solution | g-2nd] | v-tell
+> `zuzozen dogewem gredul vezuyel.`
+> z-Uzozen | [d-solution | g-2nd] | v-tell
 >
-> "Uzazon names solution 2."
+> "Uzozen names solution 2."
 
 | Egabon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
-| **`ayovam`** | numbered-alternative problem | *problem* (something to fit / solve) | `ayoval` *puzzle-piece* | 🧩: pieces must fit |
-| **`egewom`** | numbered-alternative solution | *solution* (what unlocks it) | `egewol` *key* | 🔑: opens what was locked |
+| **`abevam`** | numbered-alternative problem | *problem* (something to fit / solve) | `abeval` *puzzle-piece* | 🧩: pieces must fit |
+| **`ogewem`** | numbered-alternative solution | *solution* (what unlocks it) | `ogewel` *key* | 🔑: opens what was locked |
 | **`ogol`** | numbered-alternative goal | *goal* (net you aim at) | | 🥅: the net you shoot for |
 | free **`g#N`** | rank in **this** numbered-alternative series | *candidate N* | | `#` = ordinal place |
 | soft **`g~#N`** | tentative ranking | *maybe candidate N* | | **-m** leaves the order open |
 
-**Recipe:** `zayovam grewol` / `zegewom gredul` / `zogol grewol`
+**Recipe:** `zabevam grewol` / `zogewem gredul` / `zogol grewol`
 
-Unnumbered `zayovam` is just *a problem*, not a candidate in a set, write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zayoval` *a puzzle piece*; `zegewol` *a key*; `vegewol` *to unlock*). Reframing the **same** situation is different wording of one frame, not a second digit.
+Unnumbered `zabevam` is just *a problem*, not a candidate in a set, write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zabeval` *a puzzle piece*; `zogewel` *a key*; `vogewel` *to unlock*). Reframing the **same** situation is different wording of one frame, not a second digit.
 
 **Compare with:** discourse *point N:* uses free **`x#N`** ([number as discourse](numbers.md#number-as-discourse-marker-by-marker)), a continue. Numbered alternatives are problem / solution / goal nouns plus **`g#N`**. Clause *so that* is [**`hogom`**](dependents.md#so-that), not **`ogol`**.
 
@@ -528,57 +528,57 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 | English | Egabon | Same root as |
 |---------|--------|--------------|
-| *Uzazon* | `uzazon` | |
-| *Olozun* | `olozun` | |
-| *Ehalon* | `ehalon` | |
-| *heavy* | `aralom` | `aralol` *rock* |
-| *exertion* | `ulevom` | `ulevol` *lift* |
-| *gram* | `oburom` | `oburol` *pound* |
+| *Uzozen* | `uzozen` | |
+| *Olazun* | `olazun` | |
+| *Uhelan* | `uhelan` | |
+| *heavy* | `arolom` | `arolol` *rock* |
+| *exertion* | `eluvom` | `eluvol` *lift* |
+| *gram* | `eberom` | `eberol` *pound* |
 
 #### English → Egabon {#amounts-comparing-english-to-egabon}
 
-**1.** *Uzazon and Ehalon are heavy.*
+**1.** *Uzozen and Uhelan are heavy.*
 
 ::: details Show answer
-`zuzazon zehalon zal garalom.`
+`zuzozen zuhelan zal garolom.`
 
-[z-Uzazon | z-Ehalon | z-and | g-heavy]
+[z-Uzozen | z-Uhelan | z-and | g-heavy]
 :::
 
-**2.** *Olozun is two grams heavier than Uzazon.*
+**2.** *Olazun is two grams heavier than Uzozen.*
 
 ::: details Show answer
-`zolozun zuzazon zel garalom boburom gradul.`
+`zolazun zuzozen zel garolom beberom gradul.`
 
-[z-Olozun | z-Uzazon | z-rank/more | [g-heavy | b-gram]] | g-two
+[z-Olazun | z-Uzozen | z-rank/more | [g-heavy | b-gram]] | g-two
 :::
 
-**3.** *Uzazon, Olozun, and Ehalon, from lightest to heaviest.*
+**3.** *Uzozen, Olazun, and Uhelan, from lightest to heaviest.*
 
 ::: details Show answer
-`zuzazon zolozun zehalon zael garalom.`
+`zuzozen zolazun zuhelan zael garolom.`
 
-[z-Uzazon | z-Olozun | z-Ehalon | z-in-order | g-heavy]
+[z-Uzozen | z-Olazun | z-Uhelan | z-in-order | g-heavy]
 :::
 
 #### Egabon → English {#amounts-comparing-egabon-to-english}
 
-**1.** `zolozun zehalon zal gulevom.`
+**1.** `zolazun zuhelan zal geluvom.`
 
 ::: details Show answer
 
-[z-Olozun | z-Ehalon | z-and | g-exertion]
+[z-Olazun | z-Uhelan | z-and | g-exertion]
 
-*Olozun and Ehalon are straining.*
+*Olazun and Uhelan are straining.*
 :::
 
-**2.** `zuzazon zolozun zel garalom boburom graval.`
+**2.** `zuzozen zolazun zel garolom beberom graval.`
 
 ::: details Show answer
 
-[z-Uzazon | z-Olozun | z-rank/more | [g-heavy | b-gram]] | g-five
+[z-Uzozen | z-Olazun | z-rank/more | [g-heavy | b-gram]] | g-five
 
-*Uzazon is five grams heavier than Olozun.*
+*Uzozen is five grams heavier than Olazun.*
 :::
 
 ### Comparing as of a date {#amounts-snapshot-practice}
@@ -591,28 +591,28 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 
 | English | Egabon | Same root as |
 |---------|--------|--------------|
-| *Uzazon* | `uzazon` | |
-| *Olozun* | `olozun` | |
-| *challenge* | `gumahom` | |
+| *Uzozen* | `uzozen` | |
+| *Olazun* | `olazun` | |
+| *challenge* | `gamahum` | |
 | *as-of.ledger* | `wuhum` | |
 
 #### English → Egabon {#amounts-snapshot-english-to-egabon}
 
-**1.** *As of 22 July, Uzazon is more challenging than Olozun.*
+**1.** *As of 22 July, Uzozen is more challenging than Olazun.*
 
 ::: details Show answer
-`zuzazon zolozun zel wuhum b_#22,7 gumahom.`
+`zuzozen zolazun zel wuhum b_#22,7 gamahum.`
 
-[z-Uzazon | z-Olozun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
+[z-Uzozen | z-Olazun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 :::
 
 #### Egabon → English {#amounts-snapshot-egabon-to-english}
 
-**1.** `zuzazon zolozun zel wuhum b_#22,7 gumahom.`
+**1.** `zuzozen zolazun zel wuhum b_#22,7 gamahum.`
 
 ::: details Show answer
 
-[z-Uzazon | z-Olozun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
+[z-Uzozen | z-Olazun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 
-*As of 22 July, Uzazon is more challenging than Olozun.*
+*As of 22 July, Uzozen is more challenging than Olazun.*
 :::

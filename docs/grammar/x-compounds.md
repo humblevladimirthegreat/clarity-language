@@ -10,7 +10,7 @@ Sometimes one Egabon word is two smaller meanings with **`x`** in the middle. Th
 
 English often treats two words as one idea (*peanut butter*), or joins two names with a hyphen. In Egabon you write both dictionary roots in **one** word and put **`x`** between them. The first letter of the word is still the [role letter](clause.md#beginner) (subject, verb, and so on). The [ending](word-endings.md) belongs to the whole word, not to the piece before **`x`** alone. (cue: **x** ≈ plus: two pieces make one word)
 
-> `zonedaxawudal.`
+> `zubedaxuyudal.`
 >
 > z-peanut-x-butter
 >
@@ -18,7 +18,7 @@ English often treats two words as one idea (*peanut butter*), or joins two names
 
 The last root is the kind of thing; the left root specifies it (what field, what extra label). You get one thing in the sentence, not two.
 
-> `gagamaxelamal.`
+> `gagomaxulamal.`
 >
 > g-crush-x-love
 >
@@ -26,8 +26,8 @@ The last root is the kind of thing; the left root specifies it (what field, what
 
 | Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
-| full root **`x`** full root | two roots, one word | `zonedaxawudal` *peanut butter* | **x** ≈ plus |
-| **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxodeyel` *someone who teaches* (**-r** *the one teaching*) | **a** doer / **e** scene / **u** undergoer / **o** extra `/b/` party |
+| full root **`x`** full root | two roots, one word | `zubedaxuyudal` *peanut butter* | **x** ≈ plus |
+| **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxuduyel` *someone who teaches* (**-r** *the one teaching*) | **a** doer / **e** scene / **u** undergoer / **o** extra `/b/` party |
 
 **Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](dependents.md#continue-x). That **`x`** is not this glue in the middle.
 
@@ -40,7 +40,7 @@ English *bedroom*, *doorbell*, and *friend* feel like one word. Egabon lists tho
 
 Inside the dictionary spelling you can still see the two old roots, with a join letter instead of **`x`**. That letter is the [word ending](word-endings.md) of the **left** root: **-l** when that piece is the everyday kind, **-m** when it is the abstract sense (named **-n** or resume **-r** if that left piece is a name or a resume). The last letter of the word is still the ending of the **whole** entry. In a sentence you add a role letter and that whole-word ending, the same way you do for *dog* or *hammer*.
 
-> `zebeholuruhal.`
+> `zobaholurahal.`
 >
 > z-bedroom
 >
@@ -49,13 +49,13 @@ Inside the dictionary spelling you can still see the two old roots, with a join 
 <!-- cheat-sheet: roles-comparing -->
 | Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
-| `zebeholuruhal` | bed **-l** room | bedroom | left piece everyday |
-| `zoyeleberol` | door **-l** bell | doorbell | left piece everyday |
+| `zobaholurahal` | bed **-l** room | bedroom | left piece everyday |
+| `zoyelaboral` | door **-l** bell | doorbell | left piece everyday |
 | `zanalobel` | bond **-l** person | friend | left piece everyday |
-| `zurelalogobal` | rain **-l** coat | raincoat | left piece everyday |
+| `zerulalogobal` | rain **-l** coat | raincoat | left piece everyday |
 | `…m…` | left root in its [abstract](word-endings.md#abstract-m) sense | same two roots, join **-m** | **m** ≈ meaning |
 
-If the pairing is not in the dictionary, either glue with **`x`** (`zonedaxawudal` *peanut butter*) or use two words.
+If the pairing is not in the dictionary, either glue with **`x`** (`zubedaxuyudal` *peanut butter*) or use two words.
 
 ### One thing or two?
 <a id="compound-vs-separate"></a>
@@ -65,9 +65,9 @@ Ask how many things you mean. *A hammer and a wrench* is two tools, so two Egabo
 <!-- cheat-sheet: roles-comparing -->
 | Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
-| two words | two things, or a property already marked another way | `zahawol zerewol zam` *a hammer and a wrench*; `zodozol gubulol` *a blue dog* (`/ɡ/`) | |
-| **`x`** in the middle | one thing; you can still hear both roots | `gagamaxelamal` *in love* (the crush kind); `zonedaxawudal` *peanut butter*; `zuzazoxolozun` (one person) | **x** ≈ plus |
-| dictionary word | one familiar kind, listed as a single entry | `zebeholuruhal` *bedroom*; `zazolol` *sunflower* | join letter in the entry, not **`x`** |
+| two words | two things, or a property already marked another way | `zehowol zerewol zam` *a hammer and a wrench*; `zudozol gubulel` *a blue dog* (`/ɡ/`) | |
+| **`x`** in the middle | one thing; you can still hear both roots | `gagomaxulamal` *in love* (the crush kind); `zubedaxuyudal` *peanut butter*; `zuzozexolazun` (one person) | **x** ≈ plus |
+| dictionary word | one familiar kind, listed as a single entry | `zobaholurahal` *bedroom*; `zezalal` *sunflower* | join letter in the entry, not **`x`** |
 
 **Compare with:** a property on a noun uses `/ɡ/` (or `/w/`). A list uses a [join](joins.md).
 
@@ -83,8 +83,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
-| *doorbell* | `oyeleberol` | 🚪🔔 door **-l** bell |
-| *raincoat* | `urelalogobal` | 🌧️🧥 rain **-l** coat |
+| *doorbell* | `oyelaboral` | 🚪🔔 door **-l** bell |
+| *raincoat* | `erulalogobal` | 🌧️🧥 rain **-l** coat |
 | *wrench* | `erewol` | 🔧 |
 | *saw* | `ozowul` | 🪚 |
 | *wood* | `uwul` | 🪵 |
@@ -93,20 +93,20 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Egabon |
 |---------|--------|
-| *Uzazon* | `uzazon` |
-| *Olozun* | `olozun` |
-| *Ehalon* | `ehalon` |
-| *hammer* | `ahawol` |
-| *bell* | `eberol` |
-| *find* | `vemawol` |
-| *see* | `vanobol` |
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Uhelan* | `uhelan` |
+| *hammer* | `ehowol` |
+| *bell* | `aboral` |
+| *find* | `vumewol` |
+| *see* | `vawebol` |
 
 #### English → Egabon {#beginner-english-to-egabon}
 
 **1.** *a bell and a doorbell*
 
 ::: details Show answer
-`zeberol zoyeleberol zal.`
+`zaboral zoyelaboral zal.`
 
 [z-bell | z-doorbell | z-and]
 :::
@@ -114,51 +114,51 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **2.** *a hammer and a wrench* (and possibly more)
 
 ::: details Show answer
-`zahawol zerewol zam.`
+`zehowol zerewol zam.`
 
 [z-hammer | z-wrench | z-and.open]
 :::
 
-**3.** *Olozun finds a raincoat and a doorbell.*
+**3.** *Olazun finds a raincoat and a doorbell.*
 
 ::: details Show answer
-`zolozun durelalogobal doyeleberol dal vemawol.`
+`zolazun derulalogobal doyelaboral dal vumewol.`
 
-z-Olozun | [d-raincoat | d-doorbell | d-and] | v-find
+z-Olazun | [d-raincoat | d-doorbell | d-and] | v-find
 :::
 
-**4.** *Ehalon finds a raincoat.*
+**4.** *Uhelan finds a raincoat.*
 
 ::: details Show answer
-`zehalon durelalogobal vemawol.`
+`zuhelan derulalogobal vumewol.`
 
-z-Ehalon | d-raincoat | v-find
+z-Uhelan | d-raincoat | v-find
 :::
 
-**5.** *Uzazon-Olozun* (one person)
+**5.** *Uzozen-Olazun* (one person)
 
 ::: details Show answer
-`zuzazoxolozun.`
+`zuzozexolazun.`
 
-z-Uzazon-x-Olozun
+z-Uzozen-x-Olazun
 :::
 
-**6.** *Olozun sees wood.*
+**6.** *Olazun sees wood.*
 
 ::: details Show answer
-`zolozun duwul vanobol.`
+`zolazun duwul vawebol.`
 
-z-Olozun | d-wood | v-see
+z-Olazun | d-wood | v-see
 :::
 
 #### Egabon → English {#beginner-egabon-to-english}
 
-**1.** `zolozun doyeleberol vemawol.`
+**1.** `zolazun doyelaboral vumewol.`
 
 ::: details Show answer
-z-Olozun | d-doorbell | v-find
+z-Olazun | d-doorbell | v-find
 
-*Olozun finds a doorbell.*
+*Olazun finds a doorbell.*
 :::
 
 **2.** `zuwul zozowul zal.`
@@ -169,15 +169,15 @@ z-Olozun | d-doorbell | v-find
 *wood and a saw* (two things)
 :::
 
-**3.** `zehalon duwuxozowul vanobol.`
+**3.** `zuhelan duwuxozowul vawebol.`
 
 ::: details Show answer
-z-Ehalon | d-wood-x-saw | v-see
+z-Uhelan | d-wood-x-saw | v-see
 
-*Ehalon sees a wood saw.*
+*Uhelan sees a wood saw.*
 :::
 
-**4.** `zerewol zeberol zam.`
+**4.** `zerewol zaboral zam.`
 
 ::: details Show answer
 [z-wrench | z-bell | z-and.open]
@@ -185,20 +185,20 @@ z-Ehalon | d-wood-x-saw | v-see
 *a wrench and a bell* (and possibly more)
 :::
 
-**5.** `zuzazon durelalogobal vanobol.`
+**5.** `zuzozen derulalogobal vawebol.`
 
 ::: details Show answer
-z-Uzazon | d-raincoat | v-see
+z-Uzozen | d-raincoat | v-see
 
-*Uzazon sees a raincoat.*
+*Uzozen sees a raincoat.*
 :::
 
-**6.** `zehalon dahawoxerewol vemawol.`
+**6.** `zuhelan dehowoxerewol vumewol.`
 
 ::: details Show answer
-z-Ehalon | d-hammer-x-wrench | v-find
+z-Uhelan | d-hammer-x-wrench | v-find
 
-*Ehalon finds a hammer-wrench.* (one tool)
+*Uhelan finds a hammer-wrench.* (one tool)
 :::
 
 #### Pick one {#beginner-pick-one}
@@ -215,10 +215,10 @@ The last root is the kind of thing (a saw); the root before **`x`** says which k
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *a doorbell* <!-- lint: error -->`zoyexeberol.`
+**1.** *a doorbell* <!-- lint: error -->`zoyexaboral.`
 
 ::: details Show answer
-`zoyeleberol.`
+`zoyelaboral.`
 
 z-doorbell
 
@@ -235,13 +235,13 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 | Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
 | role vowel(s) **`x`** **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** | [role pointer](pronouns.md#role-pointers) | `zaxar` *they* (whoever did the latest thing); `zaxal` *another one*; `zaxam` *what they did* | **a** again / **e** echo / **o** other / **u** unsaid |
-| **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxodeyel` *someone who teaches* (**-r** *the one teaching*) | **a** doer / **e** scene / **u** undergoer / **o** extra `/b/` party |
-| name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | *Uzazon, I have time* | vowel on the name |
+| **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxuduyel` *someone who teaches* (**-r** *the one teaching*) | **a** doer / **e** scene / **u** undergoer / **o** extra `/b/` party |
+| name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | *Uzozen, I have time* | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [ability](intention.md#ability) | *can’t sing right now* | extra vowel after the root |
-| full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zonedaxawudal`; `zohuxulowon` ([hyphenated names](word-endings.md#multipart-names)) | **x** ≈ plus |
+| full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zubedaxuyudal`; `zohuxalowen` ([hyphenated names](word-endings.md#multipart-names)) | **x** ≈ plus |
 | sake root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [sakes](sakes.md) | `gulothal` | **th** ≈ *think* (your view of the sake) |
 | other root **`th`** **`a`** / **`e`** / **`o`** / **`u`** (or a stack) | [label scope](predication.md#label-scope) | *angry this time*; *a teacher* | **th** ≈ *think* (what kind of claim the label is) |
-| direction root **`th`** facing person | [viewpoint lateral](roles.md#viewpoint-laterals) | `gowehethuzazon` *Uzazon’s left* | **th** ≈ *think* (whose point of view) |
+| direction root **`th`** facing person | [viewpoint lateral](roles.md#viewpoint-laterals) | `gowuhethuzozen` *Uzozen’s left* | **th** ≈ *think* (whose point of view) |
 
 A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`**, or **`u`** left of **`x`**, you are naming a role (*someone who teaches*), not gluing two full roots. Role compounds still put a full root **after** that vowel.
 
@@ -249,21 +249,21 @@ A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`*
 
 To narrow a compound further, or to build a hyphenated name from several labels, add another root with another **`x`**. Keep the English order in **one** word (*crush* then *love*; a shop named after three drinks). The **last** root is the kind, and each earlier root narrows it. The ending stays at the end of the whole word. In a name (a person or a shop), the roots are simply labels in order, and none of them is the kind.
 
-> `gagamaxelamal.`
+> `gagomaxulamal.`
 >
 > g-crush-x-love
 >
 > "in love" (the crush kind)
 
-> `zogadaxedadaxowolan.`
+> `zugudaxududaxuwolan.`
 >
-> z-Ogada-x-Edada-x-Owolan
+> z-Uguda-x-Ududa-x-Uwolan
 >
 > "Coffee-Tea-Water" (one named shop)
 
-[Hyphenated names](word-endings.md#multipart-names) use the same order (*Mary-Kate*: first piece first). A family name is not part of this stack; it is a separate `/ɡ/` word after the given name. [Body left / right](roles.md#viewpoint-laterals) is not this stack: it joins the direction and whose facing counts with **`th`** (`gowehethuzazon`), because the second root is a point of view, not a kind.
+[Hyphenated names](word-endings.md#multipart-names) use the same order (*Mary-Kate*: first piece first). A family name is not part of this stack; it is a separate `/ɡ/` word after the given name. [Body left / right](roles.md#viewpoint-laterals) is not this stack: it joins the direction and whose facing counts with **`th`** (`gowuhethuzozen`), because the second root is a point of view, not a kind.
 
-A [role compound](roles.md#role-compounds) can take such a stack as its stem (`zaxodozoxoworel` *someone who walks dogs*), but is never one piece of a stack.
+A [role compound](roles.md#role-compounds) can take such a stack as its stem (`zaxudozoxewurel` *someone who walks dogs*), but is never one piece of a stack.
 
 **Compare with:** a short office **handle** is one root plus [**-n**](word-endings.md#proper-name--n), not this stack. A dictionary compound is one listed word, not a live list you extend.
 
@@ -273,7 +273,7 @@ A [role compound](roles.md#role-compounds) can take such a stack as its stem (`z
 Use the table above. If the word has a mid-word **`th`**, it is a [sake](sakes.md) word (a [sake root](sakes.md#sake-inventory), then a vowel, with an optional [emotion tail](sakes.md#emotion-compose)), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after a sake root, letters that look like a root are always the emotion tail (`gulothamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
 
 - After the role letter: a role vowel (one vowel or a stacked pair), **`x`**, **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** → a **role pointer** ([pronouns](pronouns.md#role-pointers)). A role compound with a stem keeps its own **-l** / **-m** senses; only the stemless pointer takes **-m** as a share.
-- After the role letter: a role vowel (one vowel or a two-vowel pair), **`x`**, then a longer root → a **role compound** (who does / where it happens / who undergoes / who is told, or a [two-vowel role](roles.md#instrument) such as the tool, `daexuruyel`).
+- After the role letter: a role vowel (one vowel or a two-vowel pair), **`x`**, then a longer root → a **role compound** (who does / where it happens / who undergoes / who is told, or a [two-vowel role](roles.md#instrument) such as the tool, `daexarayel`).
 - A name (one root or a [hyphenated name](word-endings.md#multipart-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a conversation-length bid → [conversation length](#conversation-length).
 - A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **ability**.
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
@@ -282,7 +282,7 @@ The role vowels are **`a`** / **`e`** / **`u`** / **`o`** and the two-vowel pair
 
 ### Conversation length (name **`x`** vowel) {#conversation-length}
 
-English *I can stay a while* or *I only have a minute* tells the other person how long you can talk. In Egabon, add **`x`** and one vowel before **-n** on a [greeting](word-endings.md#greeting) (your own name with a period, `SELFn.`) or a [call](speech-moves.md#vocative) (their name under **`/y/`**, `yolozun.`). At arrival, the vowel sets how long you expect the conversation to last. At departure, the same form says how soon you are leaving. The vowel is about the conversation, not a grade of the person.
+English *I can stay a while* or *I only have a minute* tells the other person how long you can talk. In Egabon, add **`x`** and one vowel before **-n** on a [greeting](word-endings.md#greeting) (your own name with a period, `SELFn.`) or a [call](speech-moves.md#vocative) (their name under **`/y/`**, `yolazun.`). At arrival, the vowel sets how long you expect the conversation to last. At departure, the same form says how soon you are leaving. The vowel is about the conversation, not a grade of the person.
 
 > `SELFxan.`
 >
@@ -290,11 +290,11 @@ English *I can stay a while* or *I only have a minute* tells the other person ho
 >
 > "I have time; we can stay."
 
-> `yolozuxen.`
+> `yolazuxen.`
 >
-> y-Olozun-minutes
+> y-Olazun-minutes
 >
-> "Olozun, I have a few minutes."
+> "Olazun, I have a few minutes."
 
 <!-- cheat-sheet: roles-comparing -->
 | Form | At arrival | At departure | Cue |
@@ -304,9 +304,9 @@ English *I can stay a while* or *I only have a minute* tells the other person ho
 | `SELFxon` | one slot: *one ask or comment* | about to leave | **o** ≈ one (one last slot) |
 | `SELFxun` | passing: *just acknowledging; not opening a talk* | leaving right now | **u** ≈ undo (lift the talk) |
 
-On a [full name](word-endings.md#multipart-names), the vowel goes on the given name (`ohuxen gulowon.`); a family name takes no bid, since **`x`** + vowel on a `/ɡ/` word is [ability](intention.md#ability). Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](word-endings.md#named-n-beginner) ending.
+On a [full name](word-endings.md#multipart-names), the vowel goes on the given name (`ohuxen galowen.`); a family name takes no bid, since **`x`** + vowel on a `/ɡ/` word is [ability](intention.md#ability). Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](word-endings.md#named-n-beginner) ending.
 
-At arrival, the other person can answer with their own bid. The **lesser** bid sets the shared limit: **a** (open-ended) is more than **e** (a few minutes), **e** is more than **o** (one slot), and **o** is more than **u** (passing). If you offer open-ended time and Olozun offers one slot, you have one slot.
+At arrival, the other person can answer with their own bid. The **lesser** bid sets the shared limit: **a** (open-ended) is more than **e** (a few minutes), **e** is more than **o** (one slot), and **o** is more than **u** (passing). If you offer open-ended time and Olazun offers one slot, you have one slot.
 
 > `SELFxan.`
 >
@@ -314,11 +314,11 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 >
 > "I have time; we can stay."
 
-> `olozuxon.`
+> `olazuxon.`
 >
-> Olozun-ask
+> Olazun-ask
 >
-> "Olozun here. I only have time for one thing."
+> "Olazun here. I only have time for one thing."
 
 **Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [sake](sakes.md) word takes **`th`** + vowel instead (`gulothal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**. In a clause body, a name with **`x`**, a vowel, and **-n** is not a word.
 
@@ -355,21 +355,21 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Egabon | Cue |
 |---------|--------|-----|
 | *salad* | `azadal` | 🥗 |
-| *plate* | `oledal` | 🍽️ |
+| *plate* | `uwodal` | 🍽️ |
 
 **Review:**
 
 | English | Egabon |
 |---------|--------|
 | *your name* | `SELFn` |
-| *Uzazon* | `uzazon` |
-| *Olozun* | `olozun` |
-| *Ehalon* | `ehalon` |
-| *doorbell* | `oyeleberol` |
-| *flower* | `ovalol` |
-| *croissant* | `agudol` |
-| *see* | `vanobol` |
-| *scream* | `vazomul` |
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Uhelan* | `uhelan` |
+| *doorbell* | `oyelaboral` |
+| *flower* | `ovelal` |
+| *croissant* | `agedol` |
+| *see* | `vawebol` |
+| *scream* | `vuyomul` |
 
 #### English → Egabon {#intermediate-english-to-egabon}
 
@@ -381,34 +381,34 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 SELF-presence
 :::
 
-**2.** *Olozun, I have a few minutes.* (calling)
+**2.** *Olazun, I have a few minutes.* (calling)
 
 ::: details Show answer
-`yolozuxen.`
+`yolazuxen.`
 
-y-Olozun-minutes
+y-Olazun-minutes
 :::
 
-**3.** *Ehalon, I'm just passing by.* (calling)
+**3.** *Uhelan, I'm just passing by.* (calling)
 
 ::: details Show answer
-`yehaloxun.`
+`yuhelaxun.`
 
-y-Ehalon-passing
+y-Uhelan-passing
 :::
 
-**4.** *Uzazon, I have a few minutes. Olozun sees the doorbell.*
+**4.** *Uzozen, I have a few minutes. Olazun sees the doorbell.*
 
 ::: details Show answer
-`yuzazoxen zolozun doyeleberol vanobol.`
+`yuzozexen zolazun doyelaboral vawebol.`
 
-y-Uzazon-minutes | z-Olozun | d-doorbell | v-see
+y-Uzozen-minutes | z-Olazun | d-doorbell | v-see
 :::
 
 **5.** *a salad plate* (one plate)
 
 ::: details Show answer
-`zazadaxoledal.`
+`zazadaxuwodal.`
 
 z-salad-x-plate
 :::
@@ -416,9 +416,9 @@ z-salad-x-plate
 **6.** *Flower-Salad-Croissant* (one café's name)
 
 ::: details Show answer
-`zovaloxazadaxagudon.`
+`zovelaxazadaxagedon.`
 
-z-Ovalo-x-Azada-x-Agudon
+z-Ovela-x-Azada-x-Agedon
 :::
 
 #### Egabon → English {#intermediate-egabon-to-english}
@@ -431,15 +431,15 @@ SELF-ask
 *I only have time for one thing.* / *I'm about to leave.* (arriving / leaving)
 :::
 
-**2.** `yuzazoxun zolozun vazomul.`
+**2.** `yuzozexun zolazun vuyomul.`
 
 ::: details Show answer
-y-Uzazon-passing | z-Olozun | v-scream
+y-Uzozen-passing | z-Olazun | v-scream
 
-*Uzazon, I'm just passing by. Olozun screams.*
+*Uzozen, I'm just passing by. Olazun screams.*
 :::
 
-**3.** `zovaloxoledal.`
+**3.** `zovelaxuwodal.`
 
 ::: details Show answer
 z-flower-x-plate
@@ -447,12 +447,12 @@ z-flower-x-plate
 *a flower plate*
 :::
 
-**4.** `yehaloxen zuzazon dovalol vanobol.`
+**4.** `yuhelaxen zuzozen dovelal vawebol.`
 
 ::: details Show answer
-y-Ehalon-minutes | z-Uzazon | d-flower | v-see
+y-Uhelan-minutes | z-Uzozen | d-flower | v-see
 
-*Ehalon, I have a few minutes. Uzazon sees a flower.*
+*Uhelan, I have a few minutes. Uzozen sees a flower.*
 :::
 
 **5.** `SELFxen.` (said when leaving)
@@ -463,44 +463,44 @@ SELF-minutes
 *I'm leaving soon.*
 :::
 
-**6.** `yolozuxan.`
+**6.** `yolazuxan.`
 
 ::: details Show answer
-y-Olozun-presence
+y-Olazun-presence
 
-*Olozun, I have time.*
+*Olazun, I have time.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *a croissant plate* `zagudoxoledal.` or `zoledaxagudol.`
+**1.** *a croissant plate* `zagedoxuwodal.` or `zuwodaxagedol.`
 
 ::: details Show answer
-`zagudoxoledal.`
+`zagedoxuwodal.`
 
 z-croissant-x-plate
 
 The last root is the kind (a plate); the root before **`x`** narrows it.
 :::
 
-**2.** *Ehalon, I have time for just one thing.* (calling) `yehaloxon.` or `yehaloxen.`
+**2.** *Uhelan, I have time for just one thing.* (calling) `yuhelaxon.` or `yuhelaxen.`
 
 ::: details Show answer
-`yehaloxon.`
+`yuhelaxon.`
 
-y-Ehalon-ask
+y-Uhelan-ask
 
 **`o`** is one slot; **`e`** offers a few minutes.
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Ehalon sees a salad plate.* (one plate) <!-- lint: error -->`zehalon dazadal doledal vanobol.`
+**1.** *Uhelan sees a salad plate.* (one plate) <!-- lint: error -->`zuhelan dazadal duwodal vawebol.`
 
 ::: details Show answer
-`zehalon dazadaxoledal vanobol.`
+`zuhelan dazadaxuwodal vawebol.`
 
-z-Ehalon | d-salad-x-plate | v-see
+z-Uhelan | d-salad-x-plate | v-see
 
 One thing is one word with **`x`**; two words name a salad and a plate.
 :::

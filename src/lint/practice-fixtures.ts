@@ -48,99 +48,99 @@ export const PRACTICE = `### Practice {#beginner-practice}
 
 | English | Egabon | Cue |
 |---------|--------|-----|
-| *Uzazon* | \`uzazon\` | 🦢 |
-| *Olozun* | \`olozun\` | 🦁 |
-| *Ehalon* | \`ehalon\` | 🌺 |
-| *see* | \`vanobol\` | 👁️ from *eye* |
-| *sit* | \`vehuhol\` | 🪑 from *chair* |
-| *walk* | \`voworel\` | 🦶 from *foot* |
+| *Uzozen* | \`uzozen\` | 🦢 |
+| *Olazun* | \`olazun\` | 🦁 |
+| *Uhelan* | \`uhelan\` | 🌺 |
+| *see* | \`vawebol\` | 👁️ from *eye* |
+| *sit* | \`vuhohol\` | 🪑 from *chair* |
+| *walk* | \`vewurel\` | 🦶 from *foot* |
 
 #### English → Egabon {#beginner-english-to-egabon}
 
-**1.** *Ehalon sees Uzazon.*
+**1.** *Uhelan sees Uzozen.*
 
 ::: details Show answer
-\`zehalon duzazon vanobol.\`
+\`zuhelan duzozen vawebol.\`
 
-z-Ehalon | d-Uzazon | v-see
+z-Uhelan | d-Uzozen | v-see
 
-**Also correct:** \`duzazon zehalon vanobol.\`, \`yal zehalon duzazon vanobol.\`
+**Also correct:** \`duzozen zuhelan vawebol.\`, \`yal zuhelan duzozen vawebol.\`
 :::
 
-**2.** *Uzazon sits.*
+**2.** *Uzozen sits.*
 
 ::: details Show answer
-\`zuzazon vehuhol.\`
+\`zuzozen vuhohol.\`
 
-z-Uzazon | v-sit
+z-Uzozen | v-sit
 :::
 
-**3.** *Olozun walks.*
+**3.** *Olazun walks.*
 
 ::: details Show answer
-\`zolozun voworel.\`
+\`zolazun vewurel.\`
 
-z-Olozun | v-walk
+z-Olazun | v-walk
 :::
 
 #### Egabon → English {#beginner-egabon-to-english}
 
-**1.** \`zolozun dehalon vanobol.\`
+**1.** \`zolazun duhelan vawebol.\`
 
 ::: details Show answer
-z-Olozun | d-Ehalon | v-see
+z-Olazun | d-Uhelan | v-see
 
-*Olozun sees Ehalon.*
+*Olazun sees Uhelan.*
 :::
 
-**2.** \`zehalon vehuhol.\`
+**2.** \`zuhelan vuhohol.\`
 
 ::: details Show answer
-z-Ehalon | v-sit
+z-Uhelan | v-sit
 
-*Ehalon sits.*
+*Uhelan sits.*
 :::
 
-**3.** \`zehalon voworel.\`
+**3.** \`zuhelan vewurel.\`
 
 ::: details Show answer
-z-Ehalon | v-walk
+z-Uhelan | v-walk
 
-*Ehalon walks.*
+*Uhelan walks.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Uzazon sees Olozun.* \`zuzazon dolozun vanobol.\` or \`zolozun duzazon vanobol.\`
+**1.** *Uzozen sees Olazun.* \`zuzozen dolazun vawebol.\` or \`zolazun duzozen vawebol.\`
 
 ::: details Show answer
-\`zuzazon dolozun vanobol.\`
+\`zuzozen dolazun vawebol.\`
 
-z-Uzazon | d-Olozun | v-see
+z-Uzozen | d-Olazun | v-see
 
 The one who sees takes **z-**.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Olozun sees Uzazon.* <!-- lint: error -->\`zuzazon dolozun vanobol.\`
+**1.** *Olazun sees Uzozen.* <!-- lint: error -->\`zuzozen dolazun vawebol.\`
 
 ::: details Show answer
-\`zolozun duzazon vanobol.\`
+\`zolazun duzozen vawebol.\`
 
-z-Olozun | d-Uzazon | v-see
+z-Olazun | d-Uzozen | v-see
 
-English order put Uzazon first; the seer takes **z-**.
+English order put Uzozen first; the seer takes **z-**.
 :::
 
 #### What changes {#beginner-what-changes}
 
-**1.** \`zuzazon vehuhol.\` / \`zolozun vehuhol.\`
+**1.** \`zuzozen vuhohol.\` / \`zolazun vuhohol.\`
 
 ::: details Show answer
-z-Uzazon | v-sit
+z-Uzozen | v-sit
 
-z-Olozun | v-sit
+z-Olazun | v-sit
 
 Who sits changes.
 :::

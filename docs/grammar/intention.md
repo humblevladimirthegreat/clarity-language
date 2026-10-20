@@ -9,13 +9,13 @@ English *will* and *going to* can state either an **intention** (what someone me
 
 To say what you **mean to do** (*I plan to walk*), put **`thama`** plus an ending on `/th/` before the ordinary verb. This `/th/` word is called **PLAN**. Like any `/th/` word with nothing else marked, the plan is **yours**, the speaker's. It covers the whole sentence, wherever it sits, and the sentence now says what you intend, not that the walk happens. PLAN is about a **later** act. The ending says how fully you have planned it. (Cue: 🗺️ A map charts a course you mean to take.)
 
-> `zamun thamam voworel.`
+> `zamun thamam vewurel.`
 >
 > z-speaker | th-plan-itinerary | v-walk
 >
 > "I plan to walk."
 
-The plan stays yours when someone else does the act: `zuzazon thamam voworel` is *I plan for Uzazon to walk*, not Uzazon's own plan. A plan is in a mind, so someone else's plan is their view, and you need to say how you know it.
+The plan stays yours when someone else does the act: `zuzozen thamam vewurel` is *I plan for Uzozen to walk*, not Uzozen's own plan. A plan is in a mind, so someone else's plan is their view, and you need to say how you know it.
 
 As a plain noun or verb, the root keeps its own meaning (`zamal` *a map*; `vamal` *to plan*). Leave PLAN out when you are only saying what happens.
 
@@ -31,13 +31,13 @@ The ending on PLAN says how much of the plan is worked out: **-l** for a plan wi
 | **`thamam`** | **itinerary** (soft default) | *plan to …*: steps laid out, or detail unstated | `amam` *plan-itinerary* | **-m** ≈ middle (the route, no backups) |
 | **`thamar`** | **sketch** | *intend to …*: the direction, details left open | `amar` *plan-sketch* | **-r** ≈ right now (a rough direction) |
 
-> `zamun thamar voworel.`
+> `zamun thamar vewurel.`
 >
 > z-speaker | th-plan-sketch | v-walk
 >
 > "I intend to walk; the details are open."
 
-> `zamun thamal voworel.`
+> `zamun thamal vewurel.`
 >
 > z-speaker | th-plan-atlas | v-walk
 >
@@ -61,7 +61,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
-| *pawn* | `ebovel` | ♟️ |
+| *pawn* | `obevel` | ♟️ |
 | *PLAN* | `thamam` | 🗺️ from *map*: a course you mean to take |
 
 **Review:**
@@ -69,74 +69,74 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Egabon |
 |---------|--------|
 | *I* | `amun` |
-| *Uzazon* | `uzazon` |
-| *Olozun* | `olozun` |
-| *sit* | `vehuhol` |
-| *find* | `vemawol` |
-| *tell* | `vezeyel` |
-| *lie* | `vulamul` |
-| *write* | `vuruyel` |
-| *fight* | `vavavul` |
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *sit* | `vuhohol` |
+| *find* | `vumewol` |
+| *tell* | `vezuyel` |
+| *lie* | `valamul` |
+| *write* | `varayel` |
+| *fight* | `vavuvul` |
 | *book* | `ugul` |
-| *see* | `vanobol` |
+| *see* | `vawebol` |
 | *therefore* | `xodum` |
-| *punch* | `vabavul` |
-| *scream* | `vazomul` |
-| *walk* | `voworel` |
+| *punch* | `vanuvul` |
+| *scream* | `vuyomul` |
+| *walk* | `vewurel` |
 
 #### English → Egabon {#beginner-english-to-egabon}
 
 **1.** *I intend to sit down.* (just the direction)
 
 ::: details Show answer
-`zamun thamar vehuhol.`
+`zamun thamar vuhohol.`
 
 z-speaker | th-plan-sketch | v-sit
 :::
 
-**2.** *I plan for Olozun to find a pawn.*
+**2.** *I plan for Olazun to find a pawn.*
 
 ::: details Show answer
-`zolozun thamam debovel vemawol.`
+`zolazun thamam dobevel vumewol.`
 
-z-Olozun | th-plan-itinerary | d-pawn | v-find
+z-Olazun | th-plan-itinerary | d-pawn | v-find
 :::
 
-**3.** *I'm fully prepared to talk to Olozun.*
+**3.** *I'm fully prepared to talk to Olazun.*
 
 ::: details Show answer
-`zamun thamal vezeyel bolozun.`
+`zamun thamal vezuyel bolazun.`
 
-z-speaker | th-plan-atlas | v-tell | b-Olozun
+z-speaker | th-plan-atlas | v-tell | b-Olazun
 :::
 
 **4.** *I intend to lie.* (just the direction)
 
 ::: details Show answer
-`zamun thamar vulamul.`
+`zamun thamar valamul.`
 
 z-speaker | th-plan-sketch | v-lie
 :::
 
-**5.** *I plan for Uzazon to write.*
+**5.** *I plan for Uzozen to write.*
 
 ::: details Show answer
-`zuzazon thamam vuruyel.`
+`zuzozen thamam varayel.`
 
-z-Uzazon | th-plan-itinerary | v-write
+z-Uzozen | th-plan-itinerary | v-write
 :::
 
-**6.** *I'm fully prepared to fight Olozun.*
+**6.** *I'm fully prepared to fight Olazun.*
 
 ::: details Show answer
-`zamun thamal dolozun vavavul.`
+`zamun thamal dolazun vavuvul.`
 
-z-speaker | th-plan-atlas | d-Olozun | v-fight
+z-speaker | th-plan-atlas | d-Olazun | v-fight
 :::
 
 #### Egabon → English {#beginner-egabon-to-english}
 
-**1.** `zamun thamar dugul vanobol.`
+**1.** `zamun thamar dugul vawebol.`
 
 ::: details Show answer
 z-speaker | th-plan-sketch | d-book | v-see
@@ -144,39 +144,39 @@ z-speaker | th-plan-sketch | d-book | v-see
 *I intend to see a book; the details are open.*
 :::
 
-**2.** `zuzazon thamal debovel vemawol.`
+**2.** `zuzozen thamal dobevel vumewol.`
 
 ::: details Show answer
-z-Uzazon | th-plan-atlas | d-pawn | v-find
+z-Uzozen | th-plan-atlas | d-pawn | v-find
 
-*I'm fully prepared for Uzazon to find a pawn.*
+*I'm fully prepared for Uzozen to find a pawn.*
 :::
 
-**3.** `zamun thamam vezeyel buzazon.`
+**3.** `zamun thamam vezuyel buzozen.`
 
 ::: details Show answer
-z-speaker | th-plan-itinerary | v-tell | b-Uzazon
+z-speaker | th-plan-itinerary | v-tell | b-Uzozen
 
-*I plan to talk to Uzazon.*
+*I plan to talk to Uzozen.*
 :::
 
-**4.** `zolozun vavavul. xodum zamun thamam vehuhol.`
+**4.** `zolazun vavuvul. xodum zamun thamam vuhohol.`
 
 ::: details Show answer
-z-Olozun | v-fight . x-therefore | z-speaker | th-plan-itinerary | v-sit
+z-Olazun | v-fight . x-therefore | z-speaker | th-plan-itinerary | v-sit
 
-*Olozun is fighting. Therefore, I plan to sit down.*
+*Olazun is fighting. Therefore, I plan to sit down.*
 :::
 
-**5.** `zamun thamar dolozun vabavul.`
+**5.** `zamun thamar dolazun vanuvul.`
 
 ::: details Show answer
-z-speaker | th-plan-sketch | d-Olozun | v-punch
+z-speaker | th-plan-sketch | d-Olazun | v-punch
 
-*I intend to punch Olozun; the details are open.*
+*I intend to punch Olazun; the details are open.*
 :::
 
-**6.** `zamun thamal vazomul.`
+**6.** `zamun thamal vuyomul.`
 
 ::: details Show answer
 z-speaker | th-plan-atlas | v-scream
@@ -186,10 +186,10 @@ z-speaker | th-plan-atlas | v-scream
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *I intend to see a pawn.* (just the direction, details open) `zamun thamar debovel vanobol.` or `zamun thamal debovel vanobol.`
+**1.** *I intend to see a pawn.* (just the direction, details open) `zamun thamar dobevel vawebol.` or `zamun thamal dobevel vawebol.`
 
 ::: details Show answer
-`zamun thamar debovel vanobol.`
+`zamun thamar dobevel vawebol.`
 
 z-speaker | th-plan-sketch | d-pawn | v-see
 
@@ -198,10 +198,10 @@ z-speaker | th-plan-sketch | d-pawn | v-see
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *I plan to walk.* <!-- lint: error -->`zamun vamal voworel.`
+**1.** *I plan to walk.* <!-- lint: error -->`zamun vamal vewurel.`
 
 ::: details Show answer
-`zamun thamam voworel.`
+`zamun thamam vewurel.`
 
 z-speaker | th-plan-itinerary | v-walk
 
@@ -220,56 +220,56 @@ English *can* and *can't* usually sit in front of the verb (*can sing*, *can't s
 
 To say someone **can** do something (*can sing*) or can have a quality, keep the verb or adjective and add **`x`** and **`a`** after the root, before the usual ending. The first letter stays `/v/` for an action or `/ɡ/` for a quality, and no separate word for *can* is needed. Only a verb or an adjective takes the ability vowel; a noun, a name, or an `/h/` word does not, apart from the special word in [when there is no single verb](#ability-fallback). (Cue: **a** ≈ add, so capability is in)
 
-> `zuzazon vezeyoxal.`
+> `zuzozen vezuyoxal.`
 >
-> z-Uzazon | v-sing-able
+> z-Uzozen | v-sing-able
 >
-> "Uzazon can sing."
+> "Uzozen can sing."
 
 For English *could* about a skill someone used to have, add [FORMER](knowing.md#former-climate) **`henom`**: the ability held before, and you are not claiming it now.
 
-> `zuzazon vezeyoxal henom.`
+> `zuzozen vezuyoxal henom.`
 >
-> z-Uzazon | v-sing-able | h-FORMER
+> z-Uzozen | v-sing-able | h-FORMER
 >
-> "Uzazon used to be able to sing."
+> "Uzozen used to be able to sing."
 
-As a quality, the same word goes on `/ɡ/`: `zuzazon gezeyoxal` (*Uzazon is able to sing*). Without the ability vowel, `zuzazon vezeyol` is just *Uzazon sings*.
+As a quality, the same word goes on `/ɡ/`: `zuzozen gezuyoxal` (*Uzozen is able to sing*). Without the ability vowel, `zuzozen vezuyol` is just *Uzozen sings*.
 
 The ending is the one the verb or adjective would have anyway (**-l** concrete, **-m** abstract, **-n** name, **-r** resume). It does not change what kind of *can* you mean:
 
-> `zolozun vezeyoxam.`
+> `zolazun vezuyoxam.`
 >
-> z-Olozun | v-expression-able
+> z-Olazun | v-expression-able
 >
-> "Olozun can express themself."
+> "Olazun can express themself."
 
 For English *so can I* / *can too*, [resume](pronouns.md#resume-r) the verb and keep the **`x`** and vowel: the whole stem, then **`x`**, the vowel, and **-r**. A plain resume would drop the *can*.
 
-> `zuzazon voworexal. zolozun voworexar.`
+> `zuzozen vewurexal. zolazun vewurexar.`
 >
-> z-Uzazon | v-walk-able . z-Olozun | v-←walk-able
+> z-Uzozen | v-walk-able . z-Olazun | v-←walk-able
 >
-> "Uzazon can walk, and so can Olozun."
+> "Uzozen can walk, and so can Olazun."
 
 #### Can be (role + ability)
 <a id="role-ability"></a>
 
 To say someone **can be** something (*can be the author*, *can be a teacher*) rather than that they can do the act, put the ability vowel on a [role compound](roles.md#role-compounds) on `/ɡ/`. Write the role compound, then **`x`** and the ability vowel, then the ending. This works only on `/ɡ/`, the same slot that says *is a teacher* ([classification](predication.md#classification)).
 
-> `zolozun gaxuruyexam.`
+> `zolazun gaxarayexam.`
 >
-> z-Olozun | g-agent-x-authorship-able
+> z-Olazun | g-agent-x-authorship-able
 >
-> "Olozun can be the author."
+> "Olazun can be the author."
 
-> `zuzazon gaxodeyexul.`
+> `zuzozen gaxuduyexul.`
 >
-> z-Uzazon | g-agent-x-teach-unable-irreversible
+> z-Uzozen | g-agent-x-teach-unable-irreversible
 >
-> "Uzazon can never be a teacher."
+> "Uzozen can never be a teacher."
 
-**Compare with:** `vodeyexal` is *can teach* (the act). `gaxodeyexal` is *can be a teacher* (fit for the role).
+**Compare with:** `vuduyexal` is *can teach* (the act). `gaxuduyexal` is *can be a teacher* (fit for the role).
 
 #### Can't (`xe` / `xo` / `xu`)
 <a id="ability-changeability"></a>
@@ -277,11 +277,11 @@ To say someone **can be** something (*can be the author*, *can be a teacher*) ra
 
 English *can't* does not say whether this is just for now, not yet, or never. After **`x`**, pick **`e`**, **`o`**, or **`u`** for that difference.
 
-> `zolozun vezeyoxel.`
+> `zolazun vezuyoxel.`
 >
-> z-Olozun | v-sing-unable-temporary
+> z-Olazun | v-sing-unable-temporary
 >
-> "Olozun can't sing right now."
+> "Olazun can't sing right now."
 
 <!-- cheat-sheet: knowing-intending -->
 | Egabon | Use | English | Cue |
@@ -291,17 +291,17 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 | **`xo`** | they can't yet (use this if you are not sure how lasting it is) | *can't yet* | **o** ≈ one (one open *can't*) |
 | **`xu`** | they can never / it is impossible | *can never* / *impossible* | **u** ≈ undo (capability taken off) |
 
-> `zehalon vezeyoxol.`
+> `zuhelan vezuyoxol.`
 >
-> z-Ehalon | v-sing-unable-modifiable
+> z-Uhelan | v-sing-unable-modifiable
 >
-> "Ehalon can't sing yet."
+> "Uhelan can't sing yet."
 
-> `zuzazon varuvexul.`
+> `zuzozen varuvexul.`
 >
-> z-Uzazon | v-run-unable-irreversible
+> z-Uzozen | v-run-unable-irreversible
 >
-> "Uzazon can never run."
+> "Uzozen can never run."
 
 **Compare with:** a [sake](sakes.md) word puts **`th`** and a vowel after a sake root: **`tha` / `thu`** is met / unmet (`thulothum` *competence unmet*). **`x`** and a vowel after a verb or adjective root is *can* / *can't*.
 
@@ -309,11 +309,11 @@ English *can't* does not say whether this is just for now, not yet, or never. Af
 
 Sometimes English *can* / *can't* is not about one named verb or quality: the activity takes more than one root, you just want a bare *can't*, or the *can* covers the whole sentence. Then there is no single root to put **`x`** into. Use the special word **`ubo`**: after **`ubo`**, write the same **`x`**, vowel, and ending as on a verb. Put it on `/h/` when it is about the whole clause, or on `/w/` immediately before the adjective it grades. That lets you say *can* / *can't* without naming the activity in that word. Prefer the verb itself whenever one root is enough. (Cue: 🥣 *bowl*: it holds what you can do)
 
-> `zuzazon huboxel.`
+> `zuzozen huboxel.`
 >
-> z-Uzazon | h-ABIL-unable-temporary
+> z-Uzozen | h-ABIL-unable-temporary
 >
-> "Uzazon can't right now."
+> "Uzozen can't right now."
 
 ### Decision (revisability)
 <a id="decision"></a>
@@ -323,7 +323,7 @@ To say that you have decided on something, put **`thehu`** plus an ending on `/t
 
 As a plain noun or verb, the root keeps its own meaning (`zehul` *a checkmark*; `vehul` *to check / tick*).
 
-> `zamun thehum vezeyol.`
+> `zamun thehum vezuyol.`
 >
 > z-speaker | th-DECISION-modifiable | v-sing
 >
@@ -333,7 +333,7 @@ Unlike PLAN, DECISION carries **no time**. It says what you chose, not that the 
 
 **Compare with:** [PLAN](#plan-predict) says how fully you have planned a later act. DECISION says how readily you may change a choice, whenever the act falls.
 
-**Compare with:** [consent](sakes.md#consent) on yourself is a yes you give openly. `zamun voworel huxegol.` is *I promise to walk*, which others can hold you to; `zamun thehul voworel.` is *I've decided for good to walk*, a choice only you can see.
+**Compare with:** [consent](sakes.md#consent) on yourself is a yes you give openly. `zamun vewurel huxegol.` is *I promise to walk*, which others can hold you to; `zamun thehul vewurel.` is *I've decided for good to walk*, a choice only you can see.
 
 #### Endings: changeability
 <a id="decision-changeability"></a>
@@ -348,7 +348,7 @@ The endings on DECISION run on the same settled-to-passing scale as [changeabili
 
 To say both how detailed a plan is and how firm the decision is, put DECISION after [PLAN](#plan-predict):
 
-> `zamun thamam thehul voworel.`
+> `zamun thamam thehul vewurel.`
 >
 > z-speaker | th-plan-itinerary | th-DECISION-irreversible | v-walk
 >
@@ -356,7 +356,7 @@ To say both how detailed a plan is and how firm the decision is, put DECISION af
 
 PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** the default, and **-r** the most passing.
 
-> `zamun thamar thehur voworel.`
+> `zamun thamar thehur vewurel.`
 >
 > z-speaker | th-plan-sketch | th-DECISION-temporary | v-walk
 >
@@ -364,13 +364,13 @@ PLAN and DECISION endings run the same way: **-l** is the most settled, **-m** t
 
 To say an event goes against a decision (*against my decision*), put DECISION after the hook **`uem`** ([contrary to a stance](sakes.md#contrary-to-stance)).
 
-> `zuzazon voworel uem thehum.`
+> `zuzozen vewurel uem thehum.`
 >
-> z-Uzazon | v-walk | [contrary-to | th-DECISION-modifiable]
+> z-Uzozen | v-walk | [contrary-to | th-DECISION-modifiable]
 >
-> "Uzazon walks, against my decision."
+> "Uzozen walks, against my decision."
 
-> `zamun voworel uem thehul.`
+> `zamun vewurel uem thehul.`
 >
 > z-speaker | v-walk | [contrary-to | th-DECISION-irreversible]
 >
@@ -383,11 +383,11 @@ To say that someone is trying to do something, put **`hudu`** plus an ending on 
 
 As a plain noun, the root keeps its own meaning (`zudul` *a test tube*).
 
-> `zuzazon hudum vuruyel.`
+> `zuzozen hudum varayel.`
 >
-> z-Uzazon | h-ATTEMPT-unstated | v-write
+> z-Uzozen | h-ATTEMPT-unstated | v-write
 >
-> "Uzazon tries to write."
+> "Uzozen tries to write."
 
 #### Endings: commitment
 <a id="attempt-commitment"></a>
@@ -400,17 +400,17 @@ On **`udu`**, **-l / -m / -r** say how far the attempt will go. **-n** is ordina
 | **`hudum`** | **unstated** (soft default) | *tries to …* | **-m** middle |
 | **`hudur`** | **trial run** | *tries out …* / *gives … a shot*: a low-stakes probe, and failing is useful to know | **-r** ≈ right now (a small sample) |
 
-> `zolozun hudur vezeyol.`
+> `zolazun hudur vezuyol.`
 >
-> z-Olozun | h-ATTEMPT-trial | v-sing
+> z-Olazun | h-ATTEMPT-trial | v-sing
 >
-> "Olozun gives singing a try."
+> "Olazun gives singing a try."
 
-> `zolozun hudul voworel.`
+> `zolazun hudul vewurel.`
 >
-> z-Olozun | h-ATTEMPT-committed | v-walk
+> z-Olazun | h-ATTEMPT-committed | v-walk
 >
-> "Olozun keeps trying to walk."
+> "Olazun keeps trying to walk."
 
 A trial run (**-r**) plans for failure: if it fails, that is what the probe was for. Use it when you want to lower the stakes, for yourself or for someone else.
 
@@ -419,23 +419,23 @@ A trial run (**-r**) plans for failure: if it fails, that is what the probe was 
 
 For *try A; failing that, B*, put the clause join [**`xon`**](join-across-roles.md#sequence) between the attempt and the backup. The backup comes into play only if the attempt before it fails, so exactly one of them ends up holding.
 
-> `zuzazon hudur voworel xon zuzazor vezeyol.`
+> `zuzozen hudur vewurel xon zuzozer vezuyol.`
 >
-> [z-Uzazon | h-ATTEMPT-trial | v-walk | x-or-else | z-←Uzazon | v-sing]
+> [z-Uzozen | h-ATTEMPT-trial | v-walk | x-or-else | z-←Uzozen | v-sing]
 >
-> "Uzazon gives walking a try; failing that, Uzazon sings."
+> "Uzozen gives walking a try; failing that, Uzozen sings."
 
-An intention adverb covers only its own clause, so the backup above is a plain *Uzazon sings*. Each clause takes its own, so you can probe the first option and commit to the backup:
+An intention adverb covers only its own clause, so the backup above is a plain *Uzozen sings*. Each clause takes its own, so you can probe the first option and commit to the backup:
 
-> `zuzazon hudur voworel xon zuzazor hudul vezeyol.`
+> `zuzozen hudur vewurel xon zuzozer hudul vezuyol.`
 >
-> [z-Uzazon | h-ATTEMPT-trial | v-walk | x-or-else | z-←Uzazon | h-ATTEMPT-committed | v-sing]
+> [z-Uzozen | h-ATTEMPT-trial | v-walk | x-or-else | z-←Uzozen | h-ATTEMPT-committed | v-sing]
 >
-> "Uzazon gives walking a try; failing that, Uzazon keeps trying to sing."
+> "Uzozen gives walking a try; failing that, Uzozen keeps trying to sing."
 
 A fully prepared [PLAN](#plan-predict) (**`thamal`**) already has backups. To name them, chain the clauses with **`xon`**, first choice first, and put PLAN on each one:
 
-> `zamun thamal voworel xon zamun thamal vezeyol xon zamun thamal vuzevol.`
+> `zamun thamal vewurel xon zamun thamal vezuyol xon zamun thamal vezuvol.`
 >
 > [z-speaker | th-plan-atlas | v-walk | x-or-else | z-speaker | th-plan-atlas | v-sing | x-or-else | z-speaker | th-plan-atlas | v-sleep]
 >
@@ -450,21 +450,21 @@ A fully prepared [PLAN](#plan-predict) (**`thamal`**) already has backups. To na
 
 To say that you **want** something to happen, put **`thohu`** plus an ending on `/th/` before the ordinary verb. This word is called **WANT**. It is a stance: like any `/th/` word with nothing else marked, the want is **yours**, the speaker's. The sentence says you want the act; it does not say the act happens. The ending says how long the wanting lasts. (Cue: 🌠 A shooting star is where you make a wish.)
 
-> `zuzazon thohum voworel.`
+> `zuzozen thohum vewurel.`
 >
-> z-Uzazon | th-WANT-unstated | v-walk
+> z-Uzozen | th-WANT-unstated | v-walk
 >
-> "I want Uzazon to walk."
+> "I want Uzozen to walk."
 
-A want is in someone's mind, so someone else's want (*Uzazon wants to walk*) is their **view**: you say whose it is and how you know it with a [holder](knowing.md#holder), not with WANT alone.
+A want is in someone's mind, so someone else's want (*Uzozen wants to walk*) is their **view**: you say whose it is and how you know it with a [holder](knowing.md#holder), not with WANT alone.
 
-To want a person or thing (*want Uzazon*), name the act that would get it (*see*, *take*) and put the person or thing in `/d/` as usual.
+To want a person or thing (*want Uzozen*), name the act that would get it (*see*, *take*) and put the person or thing in `/d/` as usual.
 
-> `zolozun thohum vanobol duzazon.`
+> `zolazun thohum vawebol duzozen.`
 >
-> z-Olozun | th-WANT-unstated | v-see | d-Uzazon
+> z-Olazun | th-WANT-unstated | v-see | d-Uzozen
 >
-> "I want Olozun to see Uzazon."
+> "I want Olazun to see Uzozen."
 
 #### Endings: lastingness {#want-endings}
 
@@ -476,15 +476,15 @@ On **`ohu`**, **-l / -m / -r** say how long the wanting lasts. **-n** is ordinar
 | **`thohum`** | duration unstated (soft default) | *want …* | **-m** ≈ open |
 | **`thohur`** | a want that will pass | *feel like …* / *have a whim to …* | **-r** ≈ right now (a streak) |
 
-> `zolozun thohur vezeyol.`
+> `zolazun thohur vezuyol.`
 >
-> z-Olozun | th-WANT-passing | v-sing
+> z-Olazun | th-WANT-passing | v-sing
 >
-> "Right now I feel like having Olozun sing."
+> "Right now I feel like having Olazun sing."
 
 A want, a [plan](#plan-predict), and a [decision](#decision) are three different steps, so they stack in that order:
 
-> `zamun thohul thamam voworel.`
+> `zamun thohul thamam vewurel.`
 >
 > z-speaker | th-WANT-lasting | th-plan-itinerary | v-walk
 >
@@ -492,58 +492,58 @@ A want, a [plan](#plan-predict), and a [decision](#decision) are three different
 
 For *against my wishes*, put WANT after the hook **`uem`** ([contrary to a stance](sakes.md#contrary-to-stance)): the event goes against that want. For someone else's wishes, a [holder](knowing.md#holder) goes between **`uem`** and WANT.
 
-> `zuzazon voworel uem thohum.`
+> `zuzozen vewurel uem thohum.`
 >
-> z-Uzazon | v-walk | [contrary-to | th-WANT-unstated]
+> z-Uzozen | v-walk | [contrary-to | th-WANT-unstated]
 >
-> "Uzazon walks, against my wishes."
+> "Uzozen walks, against my wishes."
 
-**Compare with:** [hopefully](sakes.md#speaker-attitude) (`thoyuyom`) is your hope about whether a claim turns out true; **`thohum`** is wanting the act itself. [Motive](sakes.md#sake-preference) says which sake the act serves, not that it is wanted. In [emotion compose](sakes.md#emotion-compose), SEEKING is a feeling turning toward someone for comfort, not a plain want.
+**Compare with:** [hopefully](sakes.md#speaker-attitude) (`thoguyem`) is your hope about whether a claim turns out true; **`thohum`** is wanting the act itself. [Motive](sakes.md#sake-preference) says which sake the act serves, not that it is wanted. In [emotion compose](sakes.md#emotion-compose), SEEKING is a feeling turning toward someone for comfort, not a plain want.
 
 ### Someone else's want, plan, or decision {#whose-intention}
 
-WANT, PLAN, and DECISION are all in a mind, and with nothing else marked that mind is yours. English *Olozun plans for Uzazon to walk* and *Uzazon has decided to walk* report what is in someone else's mind as if you could see it. None of the three takes a `/b/` for whose it is. Someone else's want, plan, or decision is their view: you give it with a [holder](knowing.md#holder), which says how you know it. That keeps a guess about someone's intentions from sounding like a fact.
+WANT, PLAN, and DECISION are all in a mind, and with nothing else marked that mind is yours. English *Olazun plans for Uzozen to walk* and *Uzozen has decided to walk* report what is in someone else's mind as if you could see it. None of the three takes a `/b/` for whose it is. Someone else's want, plan, or decision is their view: you give it with a [holder](knowing.md#holder), which says how you know it. That keeps a guess about someone's intentions from sounding like a fact.
 
 After a holder, WANT and DECISION are the holder's, just as PLAN is. After **`uem`**, write the holder word, then the stance, for *against their wishes*.
 
-> `zuzazon thewamuzazon thohum voworel.`
+> `zuzozen thewamuzozen thohum vewurel.`
 >
-> z-Uzazon | th-REPORTED-Uzazon | th-WANT-unstated | v-walk
+> z-Uzozen | th-REPORTED-Uzozen | th-WANT-unstated | v-walk
 >
-> "I hear Uzazon wants to walk."
+> "I hear Uzozen wants to walk."
 
-> `zuzazon thunemuzazon thehum voworel.`
+> `zuzozen thunemuzozen thehum vewurel.`
 >
-> z-Uzazon | th-CLUES-Uzazon | th-DECISION-modifiable | v-walk
+> z-Uzozen | th-CLUES-Uzozen | th-DECISION-modifiable | v-walk
 >
-> "I gather Uzazon has decided to walk, and can still change that."
+> "I gather Uzozen has decided to walk, and can still change that."
 
-> `zolozun vuzevol uem thunemuzazon thohum.`
+> `zolazun vezuvol uem thunemuzozen thohum.`
 >
-> z-Olozun | v-sleep | [contrary-to | th-CLUES-Uzazon | th-WANT-unstated]
+> z-Olazun | v-sleep | [contrary-to | th-CLUES-Uzozen | th-WANT-unstated]
 >
-> "Olozun sleeps, against Uzazon's wishes, as far as I can tell."
+> "Olazun sleeps, against Uzozen's wishes, as far as I can tell."
 
-**Compare with:** [requirement](sakes.md#requirement) `zuzazon voworel thumem bolozun.` (*Olozun makes Uzazon walk*) puts a demand on Uzazon, who now owes the walk. **`zuzazon thehum voworel.`** (*I've decided that Uzazon walks*) says only that you chose how things go, the way a coach decides who plays, with nothing asked of Uzazon.
+**Compare with:** [requirement](sakes.md#requirement) `zuzozen vewurel thumem bolazun.` (*Olazun makes Uzozen walk*) puts a demand on Uzozen, who now owes the walk. **`zuzozen thehum vewurel.`** (*I've decided that Uzozen walks*) says only that you chose how things go, the way a coach decides who plays, with nothing asked of Uzozen.
 
 ### Plan or forecast
 <a id="predict-evidentiality"></a>
 
 English *will* can state a plan or a forecast. Your own plan uses [PLAN](#plan-predict) and needs no evidence. A forecast about the world, or about what someone else will do, uses a [channel](knowing.md#evidentiality), a `/th/` word that says how you know, plus the later offset **`bral`** ([forecasts](knowing.md#forecast)). So a forecast always says what it rests on.
 
-> `thobam bral vurelal.`
+> `thobam bral verulal.`
 >
 > [th-PATTERN | b-later] | v-rain
 >
 > "It will rain, going by the pattern."
 
-> `zolozun thunel bral vehuhol.`
+> `zolazun thunel bral vuhohol.`
 >
-> z-Olozun | [th-CLUES.strong | b-later] | v-sit
+> z-Olazun | [th-CLUES.strong | b-later] | v-sit
 >
-> "It looks like Olozun will sit down." (strong clues)
+> "It looks like Olazun will sit down." (strong clues)
 
-> `zamun thamam bral vehuhol.`
+> `zamun thamam bral vuhohol.`
 >
 > z-speaker | [th-plan-itinerary | b-later] | v-sit
 >
@@ -561,8 +561,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
-| *clipboard* | `ogewal` | 📋 |
-| *pen* | `abewol` | 🖊️ |
+| *clipboard* | `egowal` | 📋 |
+| *pen* | `abewel` | 🖊️ |
 | *capacity* | `ubom` | 🥣 from *bowl*; as **`huboxel`**, a bare *can't* |
 | *DECISION* | `thehum` | ✅ from *check*: the box is ticked |
 | *attempt-unstated* | `hudum` | 🧪 from *test tube*: try a sample |
@@ -572,148 +572,148 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Egabon |
 |---------|--------|
-| *Uzazon* | `uzazon` |
-| *Olozun* | `olozun` |
-| *Ehalon* | `ehalon` |
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Uhelan* | `uhelan` |
 | *I* | `amun` |
 | *PLAN* | `thamam` |
-| *page* | `ebogol` |
-| *write* | `vuruyel` |
-| *sit* | `vehuhol` |
-| *tell* | `vezeyel` |
-| *sing* | `vezeyol` |
-| *find* | `vemawol` |
+| *page* | `ebogel` |
+| *write* | `varayel` |
+| *sit* | `vuhohol` |
+| *tell* | `vezuyel` |
+| *sing* | `vezuyol` |
+| *find* | `vumewol` |
 
 #### English → Egabon {#intermediate-english-to-egabon}
 
-**1.** *Uzazon can write on the clipboard.*
+**1.** *Uzozen can write on the clipboard.*
 
 ::: details Show answer
-`zuzazon vuruyexal aol bogewal.`
+`zuzozen varayexal aol begowal.`
 
-z-Uzazon | v-write-able | [on | b-clipboard]
+z-Uzozen | v-write-able | [on | b-clipboard]
 :::
 
-**2.** *Olozun can't write yet.*
+**2.** *Olazun can't write yet.*
 
 ::: details Show answer
-`zolozun vuruyexol.`
+`zolazun varayexol.`
 
-z-Olozun | v-write-unable-modifiable
+z-Olazun | v-write-unable-modifiable
 :::
 
 **3.** *I've decided to sit down, and can still change that.*
 
 ::: details Show answer
-`zamun thehum vehuhol.`
+`zamun thehum vuhohol.`
 
 z-speaker | th-DECISION-modifiable | v-sit
 :::
 
-**4.** *Ehalon gives speaking a try.*
+**4.** *Uhelan gives speaking a try.*
 
 ::: details Show answer
-`zehalon hudur vezeyel.`
+`zuhelan hudur vezuyel.`
 
-z-Ehalon | h-ATTEMPT-trial | v-tell
+z-Uhelan | h-ATTEMPT-trial | v-tell
 :::
 
-**5.** *Right now I feel like having Uzazon sing.*
+**5.** *Right now I feel like having Uzozen sing.*
 
 ::: details Show answer
-`zuzazon thohur vezeyol.`
+`zuzozen thohur vezuyol.`
 
-z-Uzazon | th-WANT-passing | v-sing
+z-Uzozen | th-WANT-passing | v-sing
 :::
 
-**6.** *I've decided for now to talk to Olozun.*
+**6.** *I've decided for now to talk to Olazun.*
 
 ::: details Show answer
-`zamun thehur vezeyel bolozun.`
+`zamun thehur vezuyel bolazun.`
 
-z-speaker | th-DECISION-temporary | v-tell | b-Olozun
+z-speaker | th-DECISION-temporary | v-tell | b-Olazun
 :::
 
 #### Egabon → English {#intermediate-egabon-to-english}
 
-**1.** `zolozun gaxuruyexam.`
+**1.** `zolazun gaxarayexam.`
 
 ::: details Show answer
-z-Olozun | g-agent-x-authorship-able
+z-Olazun | g-agent-x-authorship-able
 
-*Olozun can be the author.*
+*Olazun can be the author.*
 :::
 
-**2.** `zuzazon huboxel.`
+**2.** `zuzozen huboxel.`
 
 ::: details Show answer
-z-Uzazon | h-ABIL-unable-temporary
+z-Uzozen | h-ABIL-unable-temporary
 
-*Uzazon can't right now.*
+*Uzozen can't right now.*
 :::
 
-**3.** `zehalon thamam thehul debogol vuruyel.`
+**3.** `zuhelan thamam thehul debogel varayel.`
 
 ::: details Show answer
-z-Ehalon | th-plan-itinerary | th-DECISION-irreversible | d-page | v-write
+z-Uhelan | th-plan-itinerary | th-DECISION-irreversible | d-page | v-write
 
-*I plan for Ehalon to write the page, and that choice is final.*
+*I plan for Uhelan to write the page, and that choice is final.*
 :::
 
-**4.** `zuzazon vezeyel uem thehum.`
+**4.** `zuzozen vezuyel uem thehum.`
 
 ::: details Show answer
-z-Uzazon | v-tell | [contrary-to | th-DECISION-modifiable]
+z-Uzozen | v-tell | [contrary-to | th-DECISION-modifiable]
 
-*Uzazon speaks, against my decision.*
+*Uzozen speaks, against my decision.*
 :::
 
-**5.** `zolozun hudur vezeyol xon zolozur vuruyel.`
+**5.** `zolazun hudur vezuyol xon zolazur varayel.`
 
 ::: details Show answer
-[z-Olozun | h-ATTEMPT-trial | v-sing | x-or-else | z-←Olozun | v-write]
+[z-Olazun | h-ATTEMPT-trial | v-sing | x-or-else | z-←Olazun | v-write]
 
-*Olozun gives singing a try; failing that, Olozun writes.*
+*Olazun gives singing a try; failing that, Olazun writes.*
 :::
 
-**6.** `zehalon thohul thamam dabewol vemawol.`
+**6.** `zuhelan thohul thamam dabewel vumewol.`
 
 ::: details Show answer
-z-Ehalon | th-WANT-lasting | th-plan-itinerary | d-pen | v-find
+z-Uhelan | th-WANT-lasting | th-plan-itinerary | d-pen | v-find
 
-*I have long wanted Ehalon to find a pen, and I plan for that.*
+*I have long wanted Uhelan to find a pen, and I plan for that.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzazon can't sit right now.* (Uzazon usually can) `zuzazon vehuhoxel.` or `zuzazon vehuhoxul.`
+**1.** *Uzozen can't sit right now.* (Uzozen usually can) `zuzozen vuhohoxel.` or `zuzozen vuhohoxul.`
 
 ::: details Show answer
-`zuzazon vehuhoxel.`
+`zuzozen vuhohoxel.`
 
-z-Uzazon | v-sit-unable-temporary
+z-Uzozen | v-sit-unable-temporary
 
 **`xe`** is *can't, just for now*; **`xu`** is *can never*.
 :::
 
-**2.** *Olozun keeps trying to write.* `zolozun hudul vuruyel.` or `zolozun hudur vuruyel.`
+**2.** *Olazun keeps trying to write.* `zolazun hudul varayel.` or `zolazun hudur varayel.`
 
 ::: details Show answer
-`zolozun hudul vuruyel.`
+`zolazun hudul varayel.`
 
-z-Olozun | h-ATTEMPT-committed | v-write
+z-Olazun | h-ATTEMPT-committed | v-write
 
 **-l** commits to the attempt; **-r** is only a trial run.
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Ehalon can sing.* <!-- lint: error -->`zehalon huboxal vezeyol.`
+**1.** *Uhelan can sing.* <!-- lint: error -->`zuhelan huboxal vezuyol.`
 
 ::: details Show answer
-`zehalon vezeyoxal.`
+`zuhelan vezuyoxal.`
 
-z-Ehalon | v-sing-able
+z-Uhelan | v-sing-able
 
 With one named verb, fold *can* into it with **`x`** and **`a`**; **`huboxal`** is for a *can* with no single verb.
 :::

@@ -47,13 +47,13 @@ The ending grades your evidence: **-l** you could show it, **-m** you could desc
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Name the source](../knowing.md#source): a noun in `/b/` right after | `zolozun thewam buzazon veyorul.` | *Olozun left, according to Uzazon.* | I |
-| [A device as the source](../knowing.md#source) | `zolozun thodom bugawol vuzevol.` | *Olozun is asleep, going by the camera.* | I |
-| [How many hands](../knowing.md#hand-depth): `th#N` after a channel | `zolozun thewam threrel veyorul.` | *Olozun left, so they say, third-hand.* | I |
-| [A forecast](../knowing.md#forecast): channel + `bral` | `thobam bral vurelal.` | *It will rain, going by the pattern.* | I |
-| [A hunch about later](../knowing.md#forecast) | `zolozun thahor bral veyorul.` | *Olozun will leave, a faint hunch.* | I |
-| [A dated claim](../knowing.md#dated-channel): signed time measure | `zuzazon thevom balarum grurel voworel.` | *I saw Uzazon walk three hours ago.* | A |
-| [Later, dated](../knowing.md#dated-channel) | `zolozun thewam balarum grarel veyorul.` | *I hear Olozun leaves in three hours.* | A |
+| [Name the source](../knowing.md#source): a noun in `/b/` right after | `zolazun thewam buzozen verurul.` | *Olazun left, according to Uzozen.* | I |
+| [A device as the source](../knowing.md#source) | `zolazun thodom bogewol vezuvol.` | *Olazun is asleep, going by the camera.* | I |
+| [How many hands](../knowing.md#hand-depth): `th#N` after a channel | `zolazun thewam threrel verurul.` | *Olazun left, so they say, third-hand.* | I |
+| [A forecast](../knowing.md#forecast): channel + `bral` | `thobam bral verulal.` | *It will rain, going by the pattern.* | I |
+| [A hunch about later](../knowing.md#forecast) | `zolazun thahor bral verurul.` | *Olazun will leave, a faint hunch.* | I |
+| [A dated claim](../knowing.md#dated-channel): signed time measure | `zuzozen thevom bagorum grurel vewurel.` | *I saw Uzozen walk three hours ago.* | A |
+| [Later, dated](../knowing.md#dated-channel) | `zolazun thewam bagorum grarel verurul.` | *I hear Olazun leaves in three hours.* | A |
 | [Give the grounds](../knowing.md#evidence-clause): `barl`, grounds in the next sentence | `thunem thavem barl` | *inferred, and it was caused* | I |
 
 | Offset | Sign | Stage |
@@ -90,11 +90,11 @@ Join the name to a channel, MAY, or NOTIONAL: keep the word's last letter and wr
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Holder on a channel](../knowing.md#holder) | `zolozun thunemuzazon veyorul.` | *I gather Uzazon thinks Olozun left.* | I |
-| [Holder on REPORTED](../knowing.md#holder) | `zolozun thewamuzazon veyorul.` | *I hear Uzazon thinks Olozun left.* | I |
-| [Holder on MAY](../knowing.md#holder) | `zolozun thovumuzazon veyorul.` | *Maybe Uzazon thinks Olozun left.* | I |
-| [Holder on NOTIONAL](../knowing.md#holder) | `zolozun thavomuzazon veyorul.` | *Imagine it as Uzazon sees it.* | I |
-| [Strength before the name](../knowing.md#holder) | `zolozun thuneluzazon veyorul.` | *Strong clues say Uzazon thinks Olozun left.* | I |
+| [Holder on a channel](../knowing.md#holder) | `zolazun thunemuzozen verurul.` | *I gather Uzozen thinks Olazun left.* | I |
+| [Holder on REPORTED](../knowing.md#holder) | `zolazun thewamuzozen verurul.` | *I hear Uzozen thinks Olazun left.* | I |
+| [Holder on MAY](../knowing.md#holder) | `zolazun thovumuzozen verurul.` | *Maybe Uzozen thinks Olazun left.* | I |
+| [Holder on NOTIONAL](../knowing.md#holder) | `zolazun thavomuzozen verurul.` | *Imagine it as Uzozen sees it.* | I |
+| [Strength before the name](../knowing.md#holder) | `zolazun thuneluzozen verurul.` | *Strong clues say Uzozen thinks Olazun left.* | I |
 
 ### Keeping a channel {#carry}
 
@@ -104,7 +104,7 @@ A channel you name is your frame, and later claims of yours keep it. See [carryi
 |--------------------|-------------------|
 | [your later statements](../knowing.md#carry-forward) | [a new channel, NOTIONAL, or a holder](../knowing.md#carry-forward) |
 | [a new topic, sentence linkers, asides](../knowing.md#carry-forward) | [`yal` written out](../knowing.md#carry-forward) |
-| [MIRATIVE or MAY](../knowing.md#carry-forward) | [`xavadom` *by the way*, or a goodbye](../knowing.md#carry-forward) |
+| [MIRATIVE or MAY](../knowing.md#carry-forward) | [`xuvedam` *by the way*, or a goodbye](../knowing.md#carry-forward) |
 
 A question, command, request, or prohibition does not take the frame, and does not end it.
 
@@ -130,11 +130,11 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [MAY](../knowing.md#may) | `zolozun thovum veyorul dehalon.` | *Olozun may be leaving Ehalon.* | B |
-| [MAY, ask to find out](../knowing.md#may-hold) | `yol zuzazon vabavul thovul dolozun.` | *Might Uzazon be punching Olozun? let's find out.* | B |
-| [RESIDUE](../knowing.md#residue-and-former-climate) | `zolozun hamom veyorul.` | *Olozun has left and is still gone.* | I |
-| [RESIDUE with a channel](../knowing.md#residue-and-former-climate) | `zolozun thevom hamom veyorul.` | *I remember Olozun leaving, and Olozun is still gone.* | I |
-| [FORMER after the verb](../knowing.md#residue-and-former-climate) | `zuzazon hual vezeyol henom.` | *Uzazon always used to sing.* | I |
+| [MAY](../knowing.md#may) | `zolazun thovum verurul duhelan.` | *Olazun may be leaving Uhelan.* | B |
+| [MAY, ask to find out](../knowing.md#may-hold) | `yol zuzozen vanuvul thovul dolazun.` | *Might Uzozen be punching Olazun? let's find out.* | B |
+| [RESIDUE](../knowing.md#residue-and-former-climate) | `zolazun hamom verurul.` | *Olazun has left and is still gone.* | I |
+| [RESIDUE with a channel](../knowing.md#residue-and-former-climate) | `zolazun thevom hamom verurul.` | *I remember Olazun leaving, and Olazun is still gone.* | I |
+| [FORMER after the verb](../knowing.md#residue-and-former-climate) | `zuzozen hual vezuyol henom.` | *Uzozen always used to sing.* | I |
 | [A channel as the bar](../knowing.md#channel-bars) | `thodom` before `zel` | *than it looks* | I |
 
 Neither MAY nor MIRATIVE can be a [comparison bar](../knowing.md#channel-bars).
@@ -176,24 +176,24 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Plan](../intention.md#plan-predict): yours | `zamun thamam voworel.` | *I plan to walk.* | B |
-| [Plan, sketch](../intention.md#plan-predict) | `zamun thamar voworel.` | *I intend to walk; the details are open.* | B |
-| [Plan, atlas](../intention.md#plan-predict) | `zamun thamal voworel.` | *I'm fully prepared to walk.* | B |
-| [Decision](../intention.md#decision): yours, no time | `zamun thehum vezeyol.` | *I've decided to sing, and can still change that.* | I |
-| [Try](../intention.md#try) | `zuzazon hudum vuruyel.` | *Uzazon tries to write.* | I |
-| [Trial run](../intention.md#try) | `zolozun hudur vezeyol.` | *Olozun gives singing a try.* | I |
-| [Committed](../intention.md#try) | `zolozun hudul voworel.` | *Olozun keeps trying to walk.* | I |
-| [Want](../intention.md#want): yours | `zuzazon thohum voworel.` | *I want Uzazon to walk.* | I |
-| [Someone else's want](../intention.md#whose-intention): a holder | `zuzazon thewamuzazon thohum voworel.` | *I hear Uzazon wants to walk.* | I |
-| [Want, a whim](../intention.md#want-endings) | `zolozun thohur vezeyol.` | *Right now I feel like having Olozun sing.* | I |
-| [Stacked: want, then plan](../intention.md#want-endings) | `zamun thohul thamam voworel.` | *I have long wanted to walk, and I plan to.* | I |
-| [Against my wishes](../intention.md#want-endings) | `zuzazon voworel uem thohum.` | *Uzazon walks, against my wishes.* | I |
-| [Against someone's wishes](../intention.md#whose-intention) | `zolozun vuzevol uem thunemuzazon thohum.` | *Olozun sleeps, against Uzazon's wishes, as far as I can tell.* | I |
-| [Someone else's plan](../knowing.md#holder): a holder | `zuzazon thewamuzazon thamam voworel.` | *I hear Uzazon plans to walk.* | I |
-| [Someone else's decision](../intention.md#whose-intention): a holder | `zuzazon thunemuzazon thehum voworel.` | *I gather Uzazon has decided to walk, and can still change that.* | I |
-| [Plan, and when](../intention.md#predict-evidentiality) | `zamun thamam bral vehuhol.` | *I plan to sit down later.* | I |
-| [Try, failing that](../intention.md#fallback): `xon` | `zuzazon hudur voworel xon zuzazor vezeyol.` | *Uzazon gives walking a try; failing that, Uzazon sings.* | I |
-| [A plan with backups](../intention.md#fallback) | `zamun thamal voworel xon zamun thamal vezeyol xon zamun thamal vuzevol.` | *walk; failing that, sing; failing that, sleep* | I |
+| [Plan](../intention.md#plan-predict): yours | `zamun thamam vewurel.` | *I plan to walk.* | B |
+| [Plan, sketch](../intention.md#plan-predict) | `zamun thamar vewurel.` | *I intend to walk; the details are open.* | B |
+| [Plan, atlas](../intention.md#plan-predict) | `zamun thamal vewurel.` | *I'm fully prepared to walk.* | B |
+| [Decision](../intention.md#decision): yours, no time | `zamun thehum vezuyol.` | *I've decided to sing, and can still change that.* | I |
+| [Try](../intention.md#try) | `zuzozen hudum varayel.` | *Uzozen tries to write.* | I |
+| [Trial run](../intention.md#try) | `zolazun hudur vezuyol.` | *Olazun gives singing a try.* | I |
+| [Committed](../intention.md#try) | `zolazun hudul vewurel.` | *Olazun keeps trying to walk.* | I |
+| [Want](../intention.md#want): yours | `zuzozen thohum vewurel.` | *I want Uzozen to walk.* | I |
+| [Someone else's want](../intention.md#whose-intention): a holder | `zuzozen thewamuzozen thohum vewurel.` | *I hear Uzozen wants to walk.* | I |
+| [Want, a whim](../intention.md#want-endings) | `zolazun thohur vezuyol.` | *Right now I feel like having Olazun sing.* | I |
+| [Stacked: want, then plan](../intention.md#want-endings) | `zamun thohul thamam vewurel.` | *I have long wanted to walk, and I plan to.* | I |
+| [Against my wishes](../intention.md#want-endings) | `zuzozen vewurel uem thohum.` | *Uzozen walks, against my wishes.* | I |
+| [Against someone's wishes](../intention.md#whose-intention) | `zolazun vezuvol uem thunemuzozen thohum.` | *Olazun sleeps, against Uzozen's wishes, as far as I can tell.* | I |
+| [Someone else's plan](../knowing.md#holder): a holder | `zuzozen thewamuzozen thamam vewurel.` | *I hear Uzozen plans to walk.* | I |
+| [Someone else's decision](../intention.md#whose-intention): a holder | `zuzozen thunemuzozen thehum vewurel.` | *I gather Uzozen has decided to walk, and can still change that.* | I |
+| [Plan, and when](../intention.md#predict-evidentiality) | `zamun thamam bral vuhohol.` | *I plan to sit down later.* | I |
+| [Try, failing that](../intention.md#fallback): `xon` | `zuzozen hudur vewurel xon zuzozer vezuyol.` | *Uzozen gives walking a try; failing that, Uzozen sings.* | I |
+| [A plan with backups](../intention.md#fallback) | `zamun thamal vewurel xon zamun thamal vezuyol xon zamun thamal vezuvol.` | *walk; failing that, sing; failing that, sleep* | I |
 
 The `/b/` right after PLAN is only ever a time. WANT, PLAN, and DECISION take no `/b/` for whose they are.
 
@@ -211,13 +211,13 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Can](../intention.md#can) | `zuzazon vezeyoxal.` | *Uzazon can sing.* | I |
-| [Could, a past skill](../intention.md#can) | `zuzazon vezeyoxal henom.` | *Uzazon could sing.* | I |
-| [So can I](../intention.md#can) | `zuzazon voworexal. zolozun voworexar.` | *Uzazon can walk, and so can Olozun.* | I |
-| [Can't right now](../intention.md#ability-stance) | `zolozun vezeyoxel.` | *Olozun can't sing right now.* | I |
-| [Can't yet](../intention.md#ability-stance) | `zehalon vezeyoxol.` | *Ehalon can't sing yet.* | I |
-| [Can never](../intention.md#ability-stance) | `zuzazon varuvexul.` | *Uzazon can never run.* | I |
-| [No single verb](../intention.md#ability-fallback) | `zuzazon huboxel.` | *Uzazon can't right now.* | I |
+| [Can](../intention.md#can) | `zuzozen vezuyoxal.` | *Uzozen can sing.* | I |
+| [Could, a past skill](../intention.md#can) | `zuzozen vezuyoxal henom.` | *Uzozen could sing.* | I |
+| [So can I](../intention.md#can) | `zuzozen vewurexal. zolazun vewurexar.` | *Uzozen can walk, and so can Olazun.* | I |
+| [Can't right now](../intention.md#ability-stance) | `zolazun vezuyoxel.` | *Olazun can't sing right now.* | I |
+| [Can't yet](../intention.md#ability-stance) | `zuhelan vezuyoxol.` | *Uhelan can't sing yet.* | I |
+| [Can never](../intention.md#ability-stance) | `zuzozen varuvexul.` | *Uzozen can never run.* | I |
+| [No single verb](../intention.md#ability-fallback) | `zuzozen huboxel.` | *Uzozen can't right now.* | I |
 
 ## Don't mix up {#dont-mix-up}
 
@@ -229,5 +229,5 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | `thobam bral` *will, by the pattern* ([a forecast](../knowing.md#forecast)) | | `thamam` *I plan to* ([an intention](../intention.md#plan-predict)) |
 | `hamom` *still in effect* ([the outcome stays](../knowing.md#residue-and-former-climate)) | | `hagem` *still* ([the state goes on](../knowing.md#phasal)) |
 | `thehum` *I've decided* ([how open the choice is, no time](../intention.md#decision)) | | `thamam` *I plan* ([how worked out, still ahead](../intention.md#plan-predict)) |
-| `hudum` *tries* ([acts, outcome open](../intention.md#try)) | | `vezeyoxal` *can sing* ([a claim about ability](../intention.md#can)) |
-| `thohum` *I want* ([your own wanting](../intention.md#want)) | | `thewamuzazon thamam` *I hear Uzazon plans* ([someone else's plan](../knowing.md#holder)) |
+| `hudum` *tries* ([acts, outcome open](../intention.md#try)) | | `vezuyoxal` *can sing* ([a claim about ability](../intention.md#can)) |
+| `thohum` *I want* ([your own wanting](../intention.md#want)) | | `thewamuzozen thamam` *I hear Uzozen plans* ([someone else's plan](../knowing.md#holder)) |

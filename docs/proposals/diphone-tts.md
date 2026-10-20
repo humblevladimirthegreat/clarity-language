@@ -121,7 +121,7 @@ Behavior notes carried from the Kitten implementation:
 
 A diphone is the waveform from the **middle of phone A** to the **middle of phone B**. The A→B formant transition lives **inside** one file. Concatenation overlaps the two **steady** middles (same phone on both sides of the join) with a short crossfade (~10–30 ms).
 
-Example: `zuzazon` → `#–z`, `z–ɑ`, `ɑ–z`, `z–ɑ`, `ɑ–w`, `w–ɑ`, `ɑ–n`, `n–#`.
+Example: `zuzozen` → `#–z`, `z–ɑ`, `ɑ–z`, `z–ɑ`, `ɑ–w`, `w–ɑ`, `ɑ–n`, `n–#`.
 
 Naive CV files join on the **edge** of the vowel (worst splice). Diphones join where the spectrum is stable.
 
@@ -218,7 +218,7 @@ No IMS-Toucan in the docs path (Python, large, approximate phones).
 
 ## Phased delivery
 
-1. **Inventory + concatenator on silence/tones** — sequence builder + overlap-add with placeholder tones; fixtures for `zuzazon`, `yuon`, `zelulul`, a number word, `…x`.
+1. **Inventory + concatenator on silence/tones** — sequence builder + overlap-add with placeholder tones; fixtures for `zuzozen`, `yuon`, `zelulul`, a number word, `…x`.
 2. **Record + label** the legal bank (voiced only).
 3. **Wire Speak** — restore the [UI integration](#ui-integration) surfaces; lazy-load sprite.
 4. **F0 / pause** — map existing SpeechPlan boundary tags onto a flat pitch plus falls.

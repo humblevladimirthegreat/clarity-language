@@ -1,74 +1,74 @@
 # Predication (classification and identity)
 <a id="predication"></a>
 
-English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Uzazon is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Olozun is Uzazon*): one person under two labels, not a category. Egabon uses a different word pattern for each.
+English *is* does two jobs that look alike. You can say someone **is a kind or role** (*Uzozen is a dog*): they belong in that category. You can also say two names pick out **the same one** (*Olazun is Uzozen*): one person under two labels, not a category. Egabon uses a different word pattern for each.
 
 ## Beginner {#beginner}
 
 ### Property (*is ADJ*)
 <a id="classification-property"></a>
 
-You already write a property on `/ɡ/` after the noun (*a blue dog*). When you say someone *is* that quality (*Uzazon is challenging*), you use the same pair with no verb. You do not add a separate *is*; the name plus the `/ɡ/` word already make the sentence. The `/ɡ/` word is the piece English would put after *is*.
+You already write a property on `/ɡ/` after the noun (*a blue dog*). When you say someone *is* that quality (*Uzozen is challenging*), you use the same pair with no verb. You do not add a separate *is*; the name plus the `/ɡ/` word already make the sentence. The `/ɡ/` word is the piece English would put after *is*.
 
-> `zuzazon gumahom.`
+> `zuzozen gamahum.`
 >
-> z-Uzazon | g-challenge
+> z-Uzozen | g-challenge
 >
-> "Uzazon is challenging."
+> "Uzozen is challenging."
 
-A `/ɡ/` word after the verb does not describe the subject the way *tired* does in English *arrived tired*. Give the state its own sentence instead (`zolozun gadamul. zulamur veyorul.`).
+A `/ɡ/` word after the verb does not describe the subject the way *tired* does in English *arrived tired*. Give the state its own sentence instead (`zolazun godamul. zalamur verurul.`).
 
-The same string is also the noun plus its adjective: `zuzazon gumahom` is both the full sentence *Uzazon is challenging* and the phrase *challenging Uzazon*.
+The same string is also the noun plus its adjective: `zuzozen gamahum` is both the full sentence *Uzozen is challenging* and the phrase *challenging Uzozen*.
 
 To say someone belongs to a country or tradition (*Japanese*), use the **-m** ending, not the name ending **-n**. **-n** names the country itself (*Japan*), and **-m** says you belong to it ([countries and traditions](word-endings.md#countries-traditions)).
 
-> `zuzazon gohunam.`
+> `zuzozen gazabanam.`
 >
-> z-Uzazon | g-japanese
+> z-Uzozen | g-japanese
 >
-> "Uzazon is Japanese."
+> "Uzozen is Japanese."
 
 ### Kind / role {#classification}
 
-To say someone **is a kind of thing** or **has a role** (*Uzazon is a dog*), put the kind word on `/ɡ/` right after the noun. It is the same pattern as a quality, again with no word for *is*: the `/ɡ/` word is what English puts after *is a*.
+To say someone **is a kind of thing** or **has a role** (*Uzozen is a dog*), put the kind word on `/ɡ/` right after the noun. It is the same pattern as a quality, again with no word for *is*: the `/ɡ/` word is what English puts after *is a*.
 
 This use is called **classification**: it puts someone in a category rather than describing a quality.
 
-> `zuzazon godozol.`
+> `zuzozen gudozol.`
 >
-> z-Uzazon | g-dog
+> z-Uzozen | g-dog
 >
-> "Uzazon is a dog."
+> "Uzozen is a dog."
 
-**Compare with:** *A dog walks* uses a noun plus a verb (`zodozol voworel`). When the subject **is** that kind, keep the kind on `/ɡ/`.
+**Compare with:** *A dog walks* uses a noun plus a verb (`zudozol vewurel`). When the subject **is** that kind, keep the kind on `/ɡ/`.
 
 ### In the middle of an event {#in-progress}
 
-Some roots name an event (*walk*, *fight*, *sing*). On `/ɡ/`, such a root says the noun is **in the middle of** that event, as the one doing it: English *walking*. The ending picks the sense as always, so **-l** is the everyday event and **-m** its abstract sense (`gavavum`, *struggling*).
+Some roots name an event (*walk*, *fight*, *sing*). On `/ɡ/`, such a root says the noun is **in the middle of** that event, as the one doing it: English *walking*. The ending picks the sense as always, so **-l** is the everyday event and **-m** its abstract sense (`gavuvum`, *struggling*).
 
-> `zuzazon goworel.`
+> `zuzozen gewurel.`
 >
-> z-Uzazon | g-walk
+> z-Uzozen | g-walk
 >
-> "Uzazon is walking."
+> "Uzozen is walking."
 
-After a noun it works like any adjective. The event is under way at the time the sentence talks about, so the dog below is walking while Uzazon sees it.
+After a noun it works like any adjective. The event is under way at the time the sentence talks about, so the dog below is walking while Uzozen sees it.
 
-> `zuzazon dodozol goworel vanobol.`
+> `zuzozen dudozol gewurel vawebol.`
 >
-> z-Uzazon | [d-dog | g-walk] | v-see
+> z-Uzozen | [d-dog | g-walk] | v-see
 >
-> "Uzazon sees a walking dog."
+> "Uzozen sees a walking dog."
 
-Only a sense that is an event reads this way. A thing root stays a kind (`godozol`, *is a dog*), even when English has a verb from the same picture.
+Only a sense that is an event reads this way. A thing root stays a kind (`gudozol`, *is a dog*), even when English has a verb from the same picture.
 
-**Compare with:** the verb in `zuzazon voworel.` reports the walking without saying it is under way. To name someone who walks, with no claim that the walking is under way, use a [role word](roles.md#saying-someone-is-a-teacher).
+**Compare with:** the verb in `zuzozen vewurel.` reports the walking without saying it is under way. To name someone who walks, with no claim that the walking is under way, use a [role word](roles.md#saying-someone-is-a-teacher).
 
 ### Existence (a lone noun) {#existence}
 
 To say that something **exists** or is here (English *there is …*), write the noun alone, with no verb and no `/ɡ/` word after it.
 
-> `zodozol.`
+> `zudozol.`
 >
 > z-dog
 >
@@ -76,47 +76,47 @@ To say that something **exists** or is here (English *there is …*), write the 
 
 The same holds with a `/ɡ/` word after the noun, when the noun is new: a common noun, or [one of a name](word-endings.md#name-instance--ln) on **-ln**, but not a name on **-n** or a resumed noun on **-r**. The pair introduces the thing: *there is a G Z*.
 
-> `zodozol geluzom.`
+> `zudozol gelazom.`
 >
 > z-dog | g-big
 >
 > "There is a big dog."
 
-With a name or a resumed noun, the listener already knows the thing, so the `/ɡ/` word is a [property](#classification-property): `zuzazon gumahom.` is *Uzazon is challenging*, and `zodozor geluzom.` is *The dog is big*.
+With a name or a resumed noun, the listener already knows the thing, so the `/ɡ/` word is a [property](#classification-property): `zuzozen gamahum.` is *Uzozen is challenging*, and `zudozor gelazom.` is *The dog is big*.
 
 An object (`/d/`) needs a verb, so a noun plus a `/d/` word with no verb is not a sentence.
 
-**Compare with:** `zodozol voworel.` says what the dog does. `zuzazon godozol.` puts Uzazon in a kind.
+**Compare with:** `zudozol vewurel.` says what the dog does. `zuzozen gudozol.` puts Uzozen in a kind.
 
 ### Identity (**SAME**)
 <a id="identity"></a>
 <a id="same"></a>
 
-When two names pick out **the same person or thing** (*Olozun is Uzazon*), you are not putting Olozun in a kind. You are saying the two labels match: they are one individual.
+When two names pick out **the same person or thing** (*Olazun is Uzozen*), you are not putting Olazun in a kind. You are saying the two labels match: they are one individual.
 
 Write the special adjective `gugol` after the first name, then an extra noun (`/b/`) for the other label. Keep `gugol` and that `/b/` word **next to each other**. This pair states **identity**. The adjective’s English name is **`SAME`**; its root is **`ugo`**. (cue: 🪙 *coin*: two faces, one substance)
 
-> `zolozun gugol buzazon.`
+> `zolazun gugol buzozen.`
 >
-> z-Olozun | [g-SAME | b-Uzazon]
+> z-Olazun | [g-SAME | b-Uzozen]
 >
-> "Olozun is Uzazon." (one person, two names)
+> "Olazun is Uzozen." (one person, two names)
 
-> `zayoyul gugol buzazon.`
+> `zagayul gugol buzozen.`
 >
-> z-guard | [g-SAME | b-Uzazon]
+> z-guard | [g-SAME | b-Uzozen]
 >
-> "The guard is Uzazon."
+> "The guard is Uzozen."
 
 The second label is a `/b/` whatever it is: a common noun or a pronoun works as well as a name.
 
-> `zayoyul gugol bebayel.`
+> `zagayul gugol bobayel.`
 >
 > z-guard | [g-SAME | b-police]
 >
 > "The guard is the police officer."
 
-> `zayoyul gugol bamun.`
+> `zagayul gugol bamun.`
 >
 > z-guard | [g-SAME | b-speaker]
 >
@@ -124,13 +124,13 @@ The second label is a `/b/` whatever it is: a common noun or a pronoun works as 
 
 With **no** `/b/` after it, `gugol` points back to the one already mentioned: *the same one again*. Put `gugol` after the thing.
 
-> `zolozun dugul gugol vuruyel.`
+> `zolazun dugul gugol varayel.`
 >
-> z-Olozun | [d-book | g-SAME] | v-write
+> z-Olazun | [d-book | g-SAME] | v-write
 >
-> "Olozun is writing the same book." (the book already mentioned)
+> "Olazun is writing the same book." (the book already mentioned)
 
-**Compare with:** *Uzazon is a dog* uses [kind / role](#classification) (`godozol`). Use **`SAME`** when two labels name one person. *A house like Uzazon’s* is resemblance ([simile](relations.md#similative)), not one house under two names.
+**Compare with:** *Uzozen is a dog* uses [kind / role](#classification) (`gudozol`). Use **`SAME`** when two labels name one person. *A house like Uzozen’s* is resemblance ([simile](relations.md#similative)), not one house under two names.
 
 ### Practice {#beginner-practice}
 
@@ -142,104 +142,104 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
-| *police* | `ebayel` | 👮 |
-| *page* | `ebogol` | 📄 |
-| *Japanese* | `ohunam` | 🇯🇵 from *Japan flag*: belonging takes **-m** |
-| *challenge* | `umahom` | ⛰️ from *mountain* |
+| *police* | `obayel` | 👮 |
+| *page* | `ebogel` | 📄 |
+| *Japanese* | `azabanam` | 🇯🇵 from *Japan flag*: belonging takes **-m** |
+| *challenge* | `amahum` | ⛰️ from *mountain* |
 | **SAME** | `ugol` | 🪙 from *coin*: two faces, one substance |
 
 **Review:**
 
 | English | Egabon |
 |---------|--------|
-| *Uzazon* | `uzazon` |
-| *Olozun* | `olozun` |
-| *Ehalon* | `ehalon` |
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Uhelan* | `uhelan` |
 | *listener* | `ehon` |
-| *guard* | `ayoyul` |
-| *angry* | `onemul` |
-| *very* | `weluzom` |
-| *peek* | `vubemol` |
+| *guard* | `agayul` |
+| *angry* | `unomul` |
+| *very* | `welazom` |
+| *peek* | `vebomel` |
 | *run* | `varuvel` |
-| *see* | `vanobol` |
+| *see* | `vawebol` |
 
 #### English → Egabon {#beginner-english-to-egabon}
 
-**1.** *Uzazon is a guard.*
+**1.** *Uzozen is a guard.*
 
 ::: details Show answer
-`zuzazon gayoyul.`
+`zuzozen gagayul.`
 
-z-Uzazon | g-guard
+z-Uzozen | g-guard
 :::
 
-**2.** *Ehalon is Japanese.*
+**2.** *Uhelan is Japanese.*
 
 ::: details Show answer
-`zehalon gohunam.`
+`zuhelan gazabanam.`
 
-z-Ehalon | g-japanese
+z-Uhelan | g-japanese
 :::
 
-**3.** *Olozun is very angry.*
+**3.** *Olazun is very angry.*
 
 ::: details Show answer
-`zolozun weluzom gonemul.`
+`zolazun welazom gunomul.`
 
-z-Olozun | [w-very | g-angry]
+z-Olazun | [w-very | g-angry]
 :::
 
-**4.** *The police officer is Uzazon.*
+**4.** *The police officer is Uzozen.*
 
 ::: details Show answer
-`zebayel gugol buzazon.`
+`zobayel gugol buzozen.`
 
-z-police | [g-SAME | b-Uzazon]
+z-police | [g-SAME | b-Uzozen]
 :::
 
 **5.** *There is a page.*
 
 ::: details Show answer
-`zebogol.`
+`zebogel.`
 
 z-page
 :::
 
-**6.** *Olozun is peeking.*
+**6.** *Olazun is peeking.*
 
 ::: details Show answer
-`zolozun gubemol.`
+`zolazun gebomel.`
 
-z-Olozun | g-peek
+z-Olazun | g-peek
 :::
 
 #### Egabon → English {#beginner-egabon-to-english}
 
-**1.** `zuzazon gebayel.`
+**1.** `zuzozen gobayel.`
 
 ::: details Show answer
-z-Uzazon | g-police
+z-Uzozen | g-police
 
-*Uzazon is a police officer.*
+*Uzozen is a police officer.*
 :::
 
-**2.** `zolozun gumahom.`
+**2.** `zolazun gamahum.`
 
 ::: details Show answer
-z-Olozun | g-challenge
+z-Olazun | g-challenge
 
-*Olozun is challenging.*
+*Olazun is challenging.*
 :::
 
-**3.** `zayoyul gugol bolozun.`
+**3.** `zagayul gugol bolazun.`
 
 ::: details Show answer
-z-guard | [g-SAME | b-Olozun]
+z-guard | [g-SAME | b-Olazun]
 
-*The guard is Olozun.*
+*The guard is Olazun.*
 :::
 
-**4.** `zebayel garuvel.`
+**4.** `zobayel garuvel.`
 
 ::: details Show answer
 z-police | g-run
@@ -247,80 +247,80 @@ z-police | g-run
 *There is a police officer running.*
 :::
 
-**5.** `zehalon debogol gugol vanobol.`
+**5.** `zuhelan debogel gugol vawebol.`
 
 ::: details Show answer
-z-Ehalon | [d-page | g-SAME] | v-see
+z-Uhelan | [d-page | g-SAME] | v-see
 
-*Ehalon sees the same page.* (the page already mentioned)
+*Uhelan sees the same page.* (the page already mentioned)
 :::
 
-**6.** `yol zolozun gugol behon.`
+**6.** `yol zolazun gugol behon.`
 
 ::: details Show answer
-y-question | z-Olozun | [g-SAME | b-listener]
+y-question | z-Olazun | [g-SAME | b-listener]
 
-*Are you Olozun?*
+*Are you Olazun?*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Olozun is Japanese.* `zolozun gohunam.` or `zolozun gohunan.`
+**1.** *Olazun is Japanese.* `zolazun gazabanam.` or `zolazun gazabanan.`
 
 ::: details Show answer
-`zolozun gohunam.`
+`zolazun gazabanam.`
 
-z-Olozun | g-japanese
+z-Olazun | g-japanese
 
 Belonging to a country takes **-m**; **-n** names the country itself.
 :::
 
-**2.** *The guard is angry.* (the guard already mentioned) `zayoyul gonemul.` or `zayoyur gonemul.`
+**2.** *The guard is angry.* (the guard already mentioned) `zagayul gunomul.` or `zagayur gunomul.`
 
 ::: details Show answer
-`zayoyur gonemul.`
+`zagayur gunomul.`
 
 z-←guard | g-angry
 
-After a known guard, the `/ɡ/` word is a property; `zayoyul gonemul.` introduces one: *there is an angry guard*.
+After a known guard, the `/ɡ/` word is a property; `zagayul gunomul.` introduces one: *there is an angry guard*.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Olozun is Uzazon.* (one person, two names) <!-- lint: error -->`zolozun guzazon.`
+**1.** *Olazun is Uzozen.* (one person, two names) <!-- lint: error -->`zolazun guzozen.`
 
 ::: details Show answer
-`zolozun gugol buzazon.`
+`zolazun gugol buzozen.`
 
-z-Olozun | [g-SAME | b-Uzazon]
+z-Olazun | [g-SAME | b-Uzozen]
 
-A word on `/ɡ/` puts Olozun in a kind; two names for one person take **`gugol`** and the other name in `/b/`. (A family name is such a kind: `zolozun guzazon.` is *Olozun is an Uzazon*, [multipart names](word-endings.md#multipart-names).)
+A word on `/ɡ/` puts Olazun in a kind; two names for one person take **`gugol`** and the other name in `/b/`. (A family name is such a kind: `zolazun guzozen.` is *Olazun is an Uzozen*, [multipart names](word-endings.md#multipart-names).)
 :::
 
 ## Intermediate {#intermediate}
 
 ### Classification packaging {#classification-packaging}
 
-You already put a kind on `/ɡ/` after the name (*Uzazon is a dog*). The extra choice here is how firmly the kind holds: hedge it, say it holds at every time, or deny it. The kind word stays on `/ɡ/`. Add a hedge on `/w/` before it (*sort of*), **`hual`** after the pair (*always*), or **`gul`** after it (*not*).
+You already put a kind on `/ɡ/` after the name (*Uzozen is a dog*). The extra choice here is how firmly the kind holds: hedge it, say it holds at every time, or deny it. The kind word stays on `/ɡ/`. Add a hedge on `/w/` before it (*sort of*), **`hual`** after the pair (*always*), or **`gul`** after it (*not*).
 
-> `zuzazon godozol gul.`
+> `zuzozen gudozol gul.`
 >
-> z-Uzazon | [g-dog | g-not]
+> z-Uzozen | [g-dog | g-not]
 >
-> "Uzazon is not a dog."
+> "Uzozen is not a dog."
 
 <!-- cheat-sheet: word-shape-clause -->
 | Egabon | Use | English |
 |--------|-----|---------|
-| `/w/` hedge before the classifying `/ɡ/` | soft / hedged class | *Uzazon is something of a dog* / *a dog, sort of* |
-| `zuzazon godozol hual` | characterizing / habitual | *Uzazon is always a dog* |
-| `zuzazon godozol gul` | negation | *Uzazon is not a dog* |
+| `/w/` hedge before the classifying `/ɡ/` | soft / hedged class | *Uzozen is something of a dog* / *a dog, sort of* |
+| `zuzozen gudozol hual` | characterizing / habitual | *Uzozen is always a dog* |
+| `zuzozen gudozol gul` | negation | *Uzozen is not a dog* |
 
-> `zuzazon warorem godozol.`
+> `zuzozen walurem gudozol.`
 >
-> z-Uzazon | [w-degree | g-dog]
+> z-Uzozen | [w-degree | g-dog]
 >
-> "Uzazon is something of a dog."
+> "Uzozen is something of a dog."
 
 **Related form:** habitual *always* uses [**hual**](restrictors.md).
 
@@ -330,13 +330,13 @@ You already put a kind on `/ɡ/` after the name (*Uzazon is a dog*). The extra c
 
 A command can ask for a state as well as an act. Put the [command word](speech-moves.md#speech-act-beginner) **`yel`** before a `/ɡ/` word with no verb: the listener is the unstated subject, and the pair reads *be ADJ!*, as a [verbless statement](#classification-property) does.
 
-> `yel guyelom.`
+> `yel gayulem.`
 >
 > y-command | g-caution
 >
 > "Be careful!"
 
-The `/ɡ/` word takes the verb's place in the [usual order](speech-moves.md#act-word-order), so it comes first. Name the listener after it to address one person (`yel guyelom zehon`), or use the verb root for the doing (`yel vuyelom`, *take care*). **`yul`** turns the same pair into *don’t be ADJ*.
+The `/ɡ/` word takes the verb's place in the [usual order](speech-moves.md#act-word-order), so it comes first. Name the listener after it to address one person (`yel gayulem zehon`), or use the verb root for the doing (`yel vayulem`, *take care*). **`yul`** turns the same pair into *don’t be ADJ*.
 
 ### **SAME** endings
 
@@ -350,22 +350,22 @@ Beginner already used **`gugol`** (*is the same as*). Its other ending finishes 
 <!-- cheat-sheet: word-shape-clause -->
 | Egabon | English |
 |---------|---------|
-| `zolozun gugol buzazon` | *Olozun is Uzazon* (the same person) |
-| `zolozun gugom buzazon` | *Olozun is basically Uzazon* |
-| `zolozun gugol buzazon gul` | *Olozun is not Uzazon* (not the same person) |
-| `zobel gugol buzazon` | inside a noun phrase: *the person who is Uzazon* |
+| `zolazun gugol buzozen` | *Olazun is Uzozen* (the same person) |
+| `zolazun gugom buzozen` | *Olazun is basically Uzozen* |
+| `zolazun gugol buzozen gul` | *Olazun is not Uzozen* (not the same person) |
+| `zobel gugol buzozen` | inside a noun phrase: *the person who is Uzozen* |
 
 **Compare with:** ordinary *coin* as a noun is `zugol`. Identity is **`gugol`** / **`gugom`** plus a following `/b/` label, kept next to each other.
 
 ### Label scope {#label-scope}
 
-English *Olozun is angry* can mean one outburst or the kind of person Olozun is. The same word does both jobs, and a single act easily turns into a claim about someone's nature. To say what kind of claim a label is, write the root, then mid-word **`th`**, then a scope vowel, then the ending. The vowel says whether the label covers only this episode, a practiced role, one relationship, or a type that follows the person across scenes. The word keeps its usual slot, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
+English *Olazun is angry* can mean one outburst or the kind of person Olazun is. The same word does both jobs, and a single act easily turns into a claim about someone's nature. To say what kind of claim a label is, write the root, then mid-word **`th`**, then a scope vowel, then the ending. The vowel says whether the label covers only this episode, a practiced role, one relationship, or a type that follows the person across scenes. The word keeps its usual slot, so a label on `/ɡ/` is still *is ADJ*, and a verb is still the verb.
 
-> `zolozun gonemuthal.`
+> `zolazun gunomuthal.`
 >
-> z-Olozun | g-angry-th-episode
+> z-Olazun | g-angry-th-episode
 >
-> "Olozun is angry this time."
+> "Olazun is angry this time."
 
 A label with no scope vowel says nothing about how far it reaches. Use one when that reach matters, the way you would add *this time* or *a teacher* in English.
 
@@ -374,38 +374,38 @@ A label with no scope vowel says nothing about how far it reaches. Use one when 
 |--------|-----|---------|-----|
 | **`tha`** | this episode: this stretch of doing | *angry this time*, *lied (this once)* | **a** ≈ add (one instance added) |
 | **`the`** | a practiced role: the office they inhabit | *a teacher*, *lying as their craft* | **e** ≈ order (a sequence of practice) |
-| **`tho`** | this pair: true in one relationship | *a stranger to Uzazon*, *lying, as far as Olozun is concerned* | **o** ≈ one (that extra one) |
+| **`tho`** | this pair: true in one relationship | *a stranger to Uzozen*, *lying, as far as Olazun is concerned* | **o** ≈ one (that extra one) |
 | **`thu`** | a type across scenes: the quality follows them | *an anxious type*, *a teacher type* | **u** ≈ undo (not only here) |
 
 Mid-word **`th`** with a scope vowel goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root or a [role compound](#scope-role). It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zamuthal` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead.
 
 To say **when** that claim counts (*only at school*, *always except when it rains*), put a [restrictor](restrictors.md) on `/w/` immediately before a scoped `/ɡ/` word, with the circumstance words on `/w/` too. The scope vowel says what kind of claim the label is; the restrictor says on which occasions it holds. A restrictor on **`/h/`** limits the whole sentence instead (*walks only when it rains*), not the label.
 
-> `zolozun wanurol wal gaxodeyethel.`
+> `zolazun wenurul wal gaxuduyethel.`
 >
-> z-Olozun | [w-night | w-only-when | g-agent-x-teach-th-role]
+> z-Olazun | [w-night | w-only-when | g-agent-x-teach-th-role]
 >
-> "Olozun is a teacher only at night."
+> "Olazun is a teacher only at night."
 
-**Compare with:** **`hual`** / **`wual`** says the claim holds at every time. **`thu`** says you are treating them as that type across scenes, which can still have exceptions. **`wual gaxodeyethel`** is the practiced role at every time, and **`gaxodeyethul`** is the type-claim. Using both together doubles down.
+**Compare with:** **`hual`** / **`wual`** says the claim holds at every time. **`thu`** says you are treating them as that type across scenes, which can still have exceptions. **`wual gaxuduyethel`** is the practiced role at every time, and **`gaxuduyethul`** is the type-claim. Using both together doubles down.
 
 #### This episode (`tha`) {#scope-occasion}
 
-> `zuzazon vulamuthal.`
+> `zuzozen valamuthal.`
 >
-> z-Uzazon | v-lie-th-episode
+> z-Uzozen | v-lie-th-episode
 >
-> "Uzazon lied this once."
+> "Uzozen lied this once."
 
 #### Practiced role (`the`) {#scope-occupation}
 
-> `zolozun gaxodeyethel.`
+> `zolazun gaxuduyethel.`
 >
-> z-Olozun | g-agent-x-teach-th-role
+> z-Olazun | g-agent-x-teach-th-role
 >
-> "Olozun is a teacher."
+> "Olazun is a teacher."
 
-On a verb, **`the`** is that act as their practice, not one outing: `zuzazon vulamuthel` is *Uzazon lies as their craft*.
+On a verb, **`the`** is that act as their practice, not one outing: `zuzozen valamuthel` is *Uzozen lies as their craft*.
 
 **Compare with:** *usually* / *often* is a [restrictor](restrictors.md) (`huam`, `war`). **`thu`** is the type-claim (*a lying type*), which is not a practiced role.
 
@@ -413,47 +413,47 @@ On a verb, **`the`** is that act as their practice, not one outing: `zuzazon vul
 
 **`tho`** says the label holds in one relationship: toward one other party. Put that party in `/b/` right after the word. On `/ɡ/`, `/h/`, and `/v/`, that `/b/` is hosted by the **`tho`** word, so a verb's recipient comes after the pair. On a noun, **`tho`** stands alone; to name the party, say the label on `/ɡ/` instead.
 
-> `zuzazon geleyothom bolozun.`
+> `zuzozen golayothom bolazun.`
 >
-> z-Uzazon | [g-strangeness-th-pair | b-Olozun]
+> z-Uzozen | [g-strangeness-th-pair | b-Olazun]
 >
-> "Uzazon is a stranger to Olozun."
+> "Uzozen is a stranger to Olazun."
 
-> `zuzazon vulamuthol bolozun.`
+> `zuzozen valamuthol bolazun.`
 >
-> z-Uzazon | [v-lie-th-pair | b-Olozun]
+> z-Uzozen | [v-lie-th-pair | b-Olazun]
 >
-> "As far as Olozun is concerned, Uzazon is lying."
+> "As far as Olazun is concerned, Uzozen is lying."
 
 With no `/b/`, the party is unstated: *a stranger (to someone)*.
 
 #### Type across scenes (`thu`) {#scope-type}
 
-> `zolozun ganumuthul.`
+> `zolazun ganumuthul.`
 >
-> z-Olozun | g-anxious-th-type
+> z-Olazun | g-anxious-th-type
 >
-> "Olozun is an anxious type."
+> "Olazun is an anxious type."
 
 **Compare with:** a [mention](spans.md#mention) talks about the spelling (`glelel`). **`thu`** still describes the person: you are applying the type, not naming letters.
 
 #### On a role compound {#scope-role}
 
-A [role compound](roles.md#role-compounds) takes the same seam after its stem, which scopes the role, not the act. A bare role compound leaves the reach unsaid (`gaxodeyel`, *one who teaches*). **`the`** makes it the [usual role](roles.md#usual-role): `gaxodeyethel` is *is a teacher*. **`tha`** keeps it to this time (`gaxodeyethal`). **`thu`** is a teacher type, and **`tho`** takes its `/b/` like any other `/ɡ/`.
+A [role compound](roles.md#role-compounds) takes the same seam after its stem, which scopes the role, not the act. A bare role compound leaves the reach unsaid (`gaxuduyel`, *one who teaches*). **`the`** makes it the [usual role](roles.md#usual-role): `gaxuduyethel` is *is a teacher*. **`tha`** keeps it to this time (`gaxuduyethal`). **`thu`** is a teacher type, and **`tho`** takes its `/b/` like any other `/ɡ/`.
 
-> `zolozun gaxodeyethal.`
+> `zolazun gaxuduyethal.`
 >
-> z-Olozun | g-agent-x-teach-th-episode
+> z-Olazun | g-agent-x-teach-th-episode
 >
-> "Olozun is the teacher this time."
+> "Olazun is the teacher this time."
 
-> `zaxodeyethul varuvel.`
+> `zaxuduyethul varuvel.`
 >
 > z-agent-x-teach-th-type | v-run
 >
 > "A teacher type runs."
 
-A role compound carries one seam, so it takes this scope or the [ability](intention.md#role-ability) vowel, not both. Scope on the stem alone (`vodeyethal`) scopes the teaching.
+A role compound carries one seam, so it takes this scope or the [ability](intention.md#role-ability) vowel, not both. Scope on the stem alone (`vuduyethal`) scopes the teaching.
 
 **Compare with:** on an arrow root, [**`tho`** + `/b/`](roles.md#landmark-facing) is the landmark's own facing (*behind the house*): the direction relative to that landmark.
 
@@ -464,44 +464,44 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 <!-- cheat-sheet: word-shape-clause -->
 | Egabon | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thao`** | this episode **on** this pair | *teacher this time, to Olozun* | **ao** ≈ on |
+| **`thao`** | this episode **on** this pair | *teacher this time, to Olazun* | **ao** ≈ on |
 | **`thae`** | **using** the role as a means | *using teacher (as a tool)* | **ae** ≈ using |
 | **`thoe`** | **toward** the role | *becoming a teacher* | **oe** ≈ toward |
 | **`thua`** | type **except** this episode | *a teacher type, except this time* | **ua** ≈ everything but |
-| **`thuo`** | type **except** this pair | *a teacher type, except with Olozun* | **uo** ≈ anything but that one |
+| **`thuo`** | type **except** this pair | *a teacher type, except with Olazun* | **uo** ≈ anything but that one |
 | **`thue`** | **not in that capacity** | *not as a teacher* | **ue** ≈ against / outside |
 
-> `zuzazon vulamuthaol bolozun.`
+> `zuzozen valamuthaol bolazun.`
 >
-> z-Uzazon | [v-lie-th-on-pair | b-Olozun]
+> z-Uzozen | [v-lie-th-on-pair | b-Olazun]
 >
-> "As far as Olozun is concerned, Uzazon lied this once."
+> "As far as Olazun is concerned, Uzozen lied this once."
 
-> `zamun gaxodeyethael.`
+> `zamun gaxuduyethael.`
 >
 > z-speaker | g-agent-x-teach-th-using
 >
 > "I'm using the teacher role as a tool."
 
-> `zolozun gaxodeyethoel.`
+> `zolazun gaxuduyethoel.`
 >
-> z-Olozun | g-agent-x-teach-th-toward-role
+> z-Olazun | g-agent-x-teach-th-toward-role
 >
-> "Olozun is becoming a teacher."
+> "Olazun is becoming a teacher."
 
-> `zuzazon vulamuthual.`
+> `zuzozen valamuthual.`
 >
-> z-Uzazon | v-lie-th-except-episode
+> z-Uzozen | v-lie-th-except-episode
 >
-> "Uzazon is a lying type, except this time."
+> "Uzozen is a lying type, except this time."
 
-> `zuzazon gonemuthuol bolozun.`
+> `zuzozen gunomuthuol bolazun.`
 >
-> z-Uzazon | [g-angry-th-except-pair | b-Olozun]
+> z-Uzozen | [g-angry-th-except-pair | b-Olazun]
 >
-> "Uzazon is an angry type, except with Olozun."
+> "Uzozen is an angry type, except with Olazun."
 
-> `zamun gaxodeyethuel.`
+> `zamun gaxuduyethuel.`
 >
 > z-speaker | g-agent-x-teach-th-outside-role
 >
@@ -519,86 +519,86 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
-| *frame* | `ovegal` | 🖼️ |
+| *frame* | `uvogal` | 🖼️ |
 | *anxious* | `anumul` | 😰 |
-| *strangeness* | `eleyom` | 👽 from *alien* |
-| *teach* | `vodeyel` | 🧑‍🏫 |
+| *strangeness* | `olayom` | 👽 from *alien* |
+| *teach* | `vuduyel` | 🧑‍🏫 |
 
 **Review:**
 
 | English | Egabon |
 |---------|--------|
-| *Uzazon* | `uzazon` |
-| *Olozun* | `olozun` |
-| *Ehalon* | `ehalon` |
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Uhelan* | `uhelan` |
 | **SAME** | `ugol` |
-| *guard* | `ayoyul` |
-| *quiet* | `ogawol` |
-| *angry* | `onemul` |
-| *lie* | `vulamul` |
-| *see* | `vanobol` |
+| *guard* | `agayul` |
+| *quiet* | `ogowul` |
+| *angry* | `unomul` |
+| *lie* | `valamul` |
+| *see* | `vawebol` |
 
 #### English → Egabon {#intermediate-english-to-egabon}
 
-**1.** *Uzazon is not a guard.*
+**1.** *Uzozen is not a guard.*
 
 ::: details Show answer
-`zuzazon gayoyul gul.`
+`zuzozen gagayul gul.`
 
-z-Uzazon | [g-guard | g-not]
+z-Uzozen | [g-guard | g-not]
 :::
 
 **2.** *Be quiet!*
 
 ::: details Show answer
-`yel gogawol.`
+`yel gogowul.`
 
 y-command | g-quiet
 :::
 
-**3.** *Olozun is basically Uzazon.*
+**3.** *Olazun is basically Uzozen.*
 
 ::: details Show answer
-`zolozun gugom buzazon.`
+`zolazun gugom buzozen.`
 
-z-Olozun | [g-same | b-Uzazon]
+z-Olazun | [g-same | b-Uzozen]
 :::
 
-**4.** *Ehalon is angry this time.*
+**4.** *Uhelan is angry this time.*
 
 ::: details Show answer
-`zehalon gonemuthal.`
+`zuhelan gunomuthal.`
 
-z-Ehalon | g-angry-th-episode
+z-Uhelan | g-angry-th-episode
 :::
 
-**5.** *Uzazon is a teacher.* (a practiced role)
+**5.** *Uzozen is a teacher.* (a practiced role)
 
 ::: details Show answer
-`zuzazon gaxodeyethel.`
+`zuzozen gaxuduyethel.`
 
-z-Uzazon | g-agent-x-teach-th-role
+z-Uzozen | g-agent-x-teach-th-role
 :::
 
-**6.** *As far as Olozun is concerned, Ehalon is lying.*
+**6.** *As far as Olazun is concerned, Uhelan is lying.*
 
 ::: details Show answer
-`zehalon vulamuthol bolozun.`
+`zuhelan valamuthol bolazun.`
 
-z-Ehalon | [v-lie-th-pair | b-Olozun]
+z-Uhelan | [v-lie-th-pair | b-Olazun]
 :::
 
 #### Egabon → English {#intermediate-egabon-to-english}
 
-**1.** `zolozun gayoyul hual.`
+**1.** `zolazun gagayul hual.`
 
 ::: details Show answer
-[z-Olozun | g-guard] | h-always
+[z-Olazun | g-guard] | h-always
 
-*Olozun is always a guard.*
+*Olazun is always a guard.*
 :::
 
-**2.** `yul gonemul.`
+**2.** `yul gunomul.`
 
 ::: details Show answer
 y-prohibition | g-angry
@@ -606,23 +606,23 @@ y-prohibition | g-angry
 *Don't be angry!*
 :::
 
-**3.** `zuzazon ganumuthul.`
+**3.** `zuzozen ganumuthul.`
 
 ::: details Show answer
-z-Uzazon | g-anxious-th-type
+z-Uzozen | g-anxious-th-type
 
-*Uzazon is an anxious type.*
+*Uzozen is an anxious type.*
 :::
 
-**4.** `zehalon vulamuthal.`
+**4.** `zuhelan valamuthal.`
 
 ::: details Show answer
-z-Ehalon | v-lie-th-episode
+z-Uhelan | v-lie-th-episode
 
-*Ehalon lied this once.*
+*Uhelan lied this once.*
 :::
 
-**5.** `zaxodeyethul dovegal vanobol.`
+**5.** `zaxuduyethul duvogal vawebol.`
 
 ::: details Show answer
 z-agent-x-teach-th-type | d-frame | v-see
@@ -630,44 +630,44 @@ z-agent-x-teach-th-type | d-frame | v-see
 *A teacher type sees a frame.*
 :::
 
-**6.** `zolozun gaxodeyethoel.`
+**6.** `zolazun gaxuduyethoel.`
 
 ::: details Show answer
-z-Olozun | g-agent-x-teach-th-toward-role
+z-Olazun | g-agent-x-teach-th-toward-role
 
-*Olozun is becoming a teacher.*
+*Olazun is becoming a teacher.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Olozun is anxious this time.* `zolozun ganumuthal.` or `zolozun ganumuthul.`
+**1.** *Olazun is anxious this time.* `zolazun ganumuthal.` or `zolazun ganumuthul.`
 
 ::: details Show answer
-`zolozun ganumuthal.`
+`zolazun ganumuthal.`
 
-z-Olozun | g-anxious-th-episode
+z-Olazun | g-anxious-th-episode
 
-**`tha`** keeps the label to this episode; **`thu`** would make Olozun an anxious type.
+**`tha`** keeps the label to this episode; **`thu`** would make Olazun an anxious type.
 :::
 
-**2.** *Uzazon is not the same person as Olozun.* `zuzazon gugol bolozun gul.` or `zuzazon gugom bolozun.`
+**2.** *Uzozen is not the same person as Olazun.* `zuzozen gugol bolazun gul.` or `zuzozen gugom bolazun.`
 
 ::: details Show answer
-`zuzazon gugol bolozun gul.`
+`zuzozen gugol bolazun gul.`
 
-z-Uzazon | [[g-SAME | b-Olozun] | g-not]
+z-Uzozen | [[g-SAME | b-Olazun] | g-not]
 
 **`gul`** denies the match; **`gugom`** says they are basically the same.
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Uzazon is a stranger to Ehalon.* <!-- lint: error -->`zuzazon behalon geleyothom.`
+**1.** *Uzozen is a stranger to Uhelan.* <!-- lint: error -->`zuzozen buhelan golayothom.`
 
 ::: details Show answer
-`zuzazon geleyothom behalon.`
+`zuzozen golayothom buhelan.`
 
-z-Uzazon | [g-strangeness-th-pair | b-Ehalon]
+z-Uzozen | [g-strangeness-th-pair | b-Uhelan]
 
 The other party goes in `/b/` right **after** the **`tho`** word.
 :::

@@ -13,9 +13,9 @@ type ClosedRow = { emoji: string; root: string };
 
 const CLOSED_ROWS = {
   // house cast
-  swan: { emoji: "🦢", root: "uzazo" },
-  lion: { emoji: "🦁", root: "olozu" },
-  hibiscus: { emoji: "🌺", root: "ehalo" },
+  swan: { emoji: "🦢", root: "uzoze" },
+  lion: { emoji: "🦁", root: "olazu" },
+  hibiscus: { emoji: "🌺", root: "uhela" },
   // discourse-role specials (**-n**)
   microphone: { emoji: "🎤", root: "amu" },
   headphones: { emoji: "🎧", root: "eho" },
@@ -25,26 +25,26 @@ const CLOSED_ROWS = {
   star: { emoji: "⭐", root: "oza" },
   person: { emoji: "🧑", root: "obe" },
   // the language's own name
-  glasses: { emoji: "👓", root: "egabo" },
+  glasses: { emoji: "👓", root: "agebo" },
   // greeting turn (`yeweval`)
-  wave: { emoji: "👋", root: "eweyo" },
+  wave: { emoji: "👋", root: "ewuya" },
   // *during* (`huwem`): its `/b/` can be a role pointer's scene
   gemini: { emoji: "♊", root: "uwe" },
   // `/x/` linkers
   zebra: { emoji: "🦓", root: "ezo" },
-  clock: { emoji: "🕰️", root: "ogere" },
-  film: { emoji: "🎞️", root: "evewe" },
-  construction: { emoji: "🚧", root: "egahu" },
-  fries: { emoji: "🍟", root: "avado" },
+  clock: { emoji: "🕰️", root: "agore" },
+  film: { emoji: "🎞️", root: "uvewe" },
+  construction: { emoji: "🚧", root: "egohu" },
+  fries: { emoji: "🍟", root: "uveda" },
   // compass arrows (east is also *therefore*)
-  north: { emoji: "⬆️", root: "onahe" },
-  northeast: { emoji: "↗️", root: "unohe" },
+  north: { emoji: "⬆️", root: "onuhe" },
+  northeast: { emoji: "↗️", root: "unuhe" },
   east: { emoji: "➡️", root: "odu" },
-  southeast: { emoji: "↘️", root: "oyohe" },
-  south: { emoji: "⬇️", root: "ozahe" },
-  southwest: { emoji: "↙️", root: "uwehe" },
-  west: { emoji: "⬅️", root: "owehe" },
-  northwest: { emoji: "↖️", root: "anohe" },
+  southeast: { emoji: "↘️", root: "ezuhe" },
+  south: { emoji: "⬇️", root: "azuhe" },
+  southwest: { emoji: "↙️", root: "uzuhe" },
+  west: { emoji: "⬅️", root: "owuhe" },
+  northwest: { emoji: "↖️", root: "anuhe" },
   // no channel on `/th/` (knowing.md#evidentiality): a record is REPORTED, a tale NOTIONAL
   record: { emoji: "⏺️", root: "ere" },
   scroll: { emoji: "📜", root: "oze" },
@@ -52,7 +52,7 @@ const CLOSED_ROWS = {
   map: { emoji: "🗺️", root: "ama" },
   check: { emoji: "✅", root: "ehu" },
   // template sample filler
-  walk: { emoji: "🚶", root: "owore" },
+  walk: { emoji: "🚶", root: "ewure" },
   // the nine sake roots (sakes.md#sake-inventory); knot, tool and ballot are also template sample fillers
   ballot: { emoji: "🗳️", root: "ahu" },
   tool: { emoji: "🧰", root: "ulo" },

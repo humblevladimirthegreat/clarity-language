@@ -83,9 +83,9 @@ describe("tokenizeUtterance", () => {
 
 describe("tone marks", () => {
   it("emits attached and free-standing marks as tone segments", () => {
-    assert.deepEqual(segmentUtterance("?! zuzazon !!veyel ?{ hal }."), [
+    assert.deepEqual(segmentUtterance("?! zuzozen !!veyel ?{ hal }."), [
       { kind: "tone", mark: "?!", attached: false },
-      { kind: "word", text: "zuzazon" },
+      { kind: "word", text: "zuzozen" },
       { kind: "tone", mark: "!!", attached: true },
       { kind: "word", text: "veyel" },
       { kind: "tone", mark: "?", attached: true },
@@ -97,9 +97,9 @@ describe("tone marks", () => {
   });
 
   it("reads a whole stack as one run", () => {
-    assert.deepEqual(segmentUtterance("%!zuzazon."), [
+    assert.deepEqual(segmentUtterance("%!zuzozen."), [
       { kind: "tone", mark: "%!", attached: true },
-      { kind: "word", text: "zuzazon" },
+      { kind: "word", text: "zuzozen" },
       { kind: "punct", punct: "period" },
     ]);
   });
@@ -108,15 +108,15 @@ describe("tone marks", () => {
 describe("scanChunks", () => {
   it("keeps a written span whole, with its tone mark and sentence mark", () => {
     assert.deepEqual(
-      scanChunks("zuzazon !d[zuzazor voworel]. dedadal").map((chunk) => chunk.text),
-      ["zuzazon", "!d[zuzazor voworel].", "dedadal"],
+      scanChunks("zuzozen !d[zuzozer vewurel]. dududal").map((chunk) => chunk.text),
+      ["zuzozen", "!d[zuzozer vewurel].", "dududal"],
     );
   });
 
   it("splits island braces as their own chunks", () => {
     assert.deepEqual(
-      scanChunks("zuzazon { hegegom zodozol } vanobol").map((chunk) => chunk.text),
-      ["zuzazon", "{", "hegegom", "zodozol", "}", "vanobol"],
+      scanChunks("zuzozen { hegugom zudozol } vawebol").map((chunk) => chunk.text),
+      ["zuzozen", "{", "hegugom", "zudozol", "}", "vawebol"],
     );
   });
 });

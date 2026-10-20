@@ -181,8 +181,8 @@ describe("lintEgabonSpans", () => {
   });
 
   it("parses multi-word phrases unless marked a fragment", () => {
-    assert.equal(lintEgabonSpans("`voworel glugol`", tables)[0]?.kind, "phrase");
-    assert.deepEqual(lintEgabonSpans("<!-- lint: fragment -->`voworel glugol`", tables), []);
+    assert.equal(lintEgabonSpans("`vewurel glugol`", tables)[0]?.kind, "phrase");
+    assert.deepEqual(lintEgabonSpans("<!-- lint: fragment -->`vewurel glugol`", tables), []);
     assert.equal(lintEgabonSpans("<!-- lint: skip -->`wo zo yo`", tables)[0]?.kind, "bad-marker");
   });
 
@@ -219,7 +219,7 @@ describe("lintEgabonSpans", () => {
   it("requires an info string on fenced blocks and checks egabon fences", () => {
     assert.equal(lintEgabonSpans("```\nA HOOK B\n```\n", tables)[0]?.kind, "unmarked-fence");
     assert.deepEqual(lintEgabonSpans("```text\nA HOOK B\n```\n", tables), []);
-    assert.equal(lintEgabonSpans("```text\nzazawan voworel\n```\n", tables)[0]?.kind, "egabon-in-text-fence");
+    assert.equal(lintEgabonSpans("```text\nzazawan vewurel\n```\n", tables)[0]?.kind, "egabon-in-text-fence");
     assert.equal(lintEgabonSpans("```egabon\nzul zazawan vazawal.\n```\n", tables)[0]?.kind, "sentence");
   });
 
@@ -236,8 +236,8 @@ describe("lintEgabonSpans", () => {
 
   it("lets a Fix it wrong form fail to parse, and uses none of its constructions", async () => {
     const { houseTables, PRACTICE } = await import("./practice-fixtures.js");
-    const md = PRACTICE.replace("<!-- lint: error -->`zazawan dolozun vanobol.`", "<!-- lint: error -->`zolozun dazawan.`");
-    const fix = md.indexOf("`zolozun dazawan.`") + 1;
+    const md = PRACTICE.replace("<!-- lint: error -->`zazawan dolazun vawebol.`", "<!-- lint: error -->`zolazun dazawan.`");
+    const fix = md.indexOf("`zolazun dazawan.`") + 1;
     const stats = emptySpanStats();
     const used: number[] = [];
     assert.deepEqual(lintEgabonSpans(md, houseTables(), stats, (_id, index) => used.push(index)), []);
@@ -248,7 +248,7 @@ describe("lintEgabonSpans", () => {
   it("rejects the error marker outside a Fix it prompt", async () => {
     const { houseTables, PRACTICE } = await import("./practice-fixtures.js");
     assert.equal(lintEgabonSpans("<!-- lint: error -->`zazawan`", tables)[0]?.kind, "bad-marker");
-    const md = PRACTICE.replace("**1.** `zolozun dehalon vanobol.`", "**1.** <!-- lint: error -->`zolozun dehalon vanobol.`");
+    const md = PRACTICE.replace("**1.** `zolazun duhelan vawebol.`", "**1.** <!-- lint: error -->`zolazun duhelan vawebol.`");
     assert.equal(lintEgabonSpans(md, houseTables())[0]?.kind, "bad-marker");
     assert.equal(lintEgabonSpans(md.replace("### Practice", "### Translation practice"), houseTables())[0]?.kind, "bad-marker");
   });

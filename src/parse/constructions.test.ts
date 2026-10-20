@@ -53,22 +53,22 @@ describe("construction registry", () => {
 
   it("reports construction IDs, all registered", () => {
     const cases: [string, string][] = [
-      ["zodozor voworel.", "resolve.content.unbound"],
-      ["yolozun.", "token.yVocative"],
+      ["zudozor vewurel.", "resolve.content.unbound"],
+      ["yolazun.", "token.yVocative"],
       ["yezul.", "token.yInterjection"],
-      ["zuzazon voworel.", "sentence.vpCoordPart.V"],
-      ["zodozol geluzom.", "reading.existence"],
-      ["zodozol om bebahal.", "reading.existence"],
-      ["zuan gegazol gozumol.", "reading.kind"],
+      ["zuzozen vewurel.", "sentence.vpCoordPart.V"],
+      ["zudozol gelazom.", "reading.existence"],
+      ["zudozol om babohal.", "reading.existence"],
+      ["zuan gagozol gozumol.", "reading.kind"],
       ["yol.", "reading.bareQuestion"],
-      ["zuzazon voworel thovum.", "overlay.ovum.th"],
+      ["zuzozen vewurel thovum.", "overlay.ovum.th"],
       // A sake or ability word uses the sake / hostless-ability row of its host.
-      ["zuzazon voworel thanathem.", "overlay.anam.th"],
-      ["zuzazon huboxel.", "overlay.ubom.h"],
+      ["zuzozen vewurel thanathem.", "overlay.anam.th"],
+      ["zuzozen huboxel.", "overlay.ubom.h"],
       // Per-form features of families taught across sections.
-      ["zuzazon zolozun zal voworel.", "join.a"],
-      ["yol zuzazon voworel.", "force.o"],
-      ["zuzazon voworel hual.", "restrictor.always"],
+      ["zuzozen zolazun zal vewurel.", "join.a"],
+      ["yol zuzozen vewurel.", "force.o"],
+      ["zuzozen vewurel hual.", "restrictor.always"],
     ];
     for (const [input, expected] of cases) {
       const ids = parse(input, undefined, { constructions: true }).constructions ?? [];
@@ -78,27 +78,27 @@ describe("construction registry", () => {
   });
 
   it("reads a used-by noun, a join of names, or every + kind with /ɡ/ as a property, not existence", () => {
-    for (const input of ["zegazol gabulol em bamun.", "zodozor geluzom."]) {
+    for (const input of ["zagozol gabulol em bamun.", "zudozor gelazom."]) {
       const ids = parse(input, undefined, { constructions: true }).constructions ?? [];
       assert.ok(!ids.includes("reading.existence"), `${input} → ${ids.join(" ")}`);
     }
-    for (const input of ["zual gohelaxowolal gozodal.", "zuam gegazol gozodal.", "zuan gegazol gozodal."]) {
+    for (const input of ["zual gehalaxuwolal gozudal.", "zuam gagozol gozudal.", "zuan gagozol gozudal."]) {
       const every = parse(input, undefined, { constructions: true }).constructions ?? [];
       assert.ok(!every.includes("reading.existence"), `${input} → ${every.join(" ")}`);
     }
-    const both = parse("zuzazon zolozun zal gumahom.", undefined, { constructions: true }).constructions ?? [];
+    const both = parse("zuzozen zolazun zal gamahum.", undefined, { constructions: true }).constructions ?? [];
     assert.ok(!both.includes("reading.existence"), both.join(" "));
-    const ids = parse("zegazol em bamun.", undefined, { constructions: true }).constructions ?? [];
+    const ids = parse("zagozol em bamun.", undefined, { constructions: true }).constructions ?? [];
     assert.ok(ids.includes("reading.existence"), ids.join(" "));
   });
 
   it("reads a label after a hosted /b/ as an adjective on the landmark, not an offset amount", () => {
-    const ids = parse("zuzazon voworel huwem buvevam g_1962.", undefined, { constructions: true }).constructions ?? [];
+    const ids = parse("zuzozen vewurel huwem bavuvam g_1962.", undefined, { constructions: true }).constructions ?? [];
     assert.ok(!ids.includes("sentence.hUnitRule.G"), ids.join(" "));
     assert.ok(ids.includes("sentence.gPackage.G"), ids.join(" "));
   });
 
   it("stays off by default", () => {
-    assert.equal(parse("zuzazon voworel.").constructions, undefined);
+    assert.equal(parse("zuzozen vewurel.").constructions, undefined);
   });
 });

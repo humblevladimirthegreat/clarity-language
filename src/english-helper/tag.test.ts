@@ -44,17 +44,17 @@ describe("tagEnglish", () => {
   });
 
   it("records clause features", () => {
-    assert.deepEqual(clause("Uzazon will have been walking.").features, { modals: ["will"], negated: false, question: false, tense: "future", perfect: true, progressive: true });
+    assert.deepEqual(clause("Uzozen will have been walking.").features, { modals: ["will"], negated: false, question: false, tense: "future", perfect: true, progressive: true });
     assert.equal(clause("Where did you go?").features.question, true);
     assert.equal(clause("Where did you go?").features.tense, "past");
     assert.equal(clause("I used to walk.").features.usedTo, true);
-    assert.equal(clause("Olozun had seen it.").features.perfect, true);
+    assert.equal(clause("Olazun had seen it.").features.perfect, true);
   });
 
   it("marks names, plurals and possessives", () => {
-    const t = terms("The dogs like Olozun's house.");
+    const t = terms("The dogs like Olazun's house.");
     assert.equal(t.find((x) => x.normal === "dogs")!.plural, true);
-    const alahen = t.find((x) => x.normal === "olozun")!;
+    const alahen = t.find((x) => x.normal === "olazun")!;
     assert.equal(alahen.proper, true);
     assert.equal(alahen.possessive, true);
     assert.equal(terms("The walker sits.")[1]!.proper, undefined);

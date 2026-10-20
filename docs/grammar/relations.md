@@ -4,59 +4,59 @@ Some English prepositions need a content root of their own (*like*, *for* in a s
 
 ## Beginner {#beginner}
 
-You already write *like Uzazon* as a hosted pair (`humum buzazon`): a relation word, then the extra noun `/b/` right after it. The same shape covers the other prepositions on this page: pick the relation root, then put `/b/` after it. A `/w/` word that grades the relation sits immediately before the `/h/` or `/ɡ/` word.
+You already write *like Uzozen* as a hosted pair (`humum buzozen`): a relation word, then the extra noun `/b/` right after it. The same shape covers the other prepositions on this page: pick the relation root, then put `/b/` after it. A `/w/` word that grades the relation sits immediately before the `/h/` or `/ɡ/` word.
 
 ### Like (*resembles*) {#like-resembles}
 <a id="similative"></a>
 <a id="like"></a>
 
-When English says something **resembles** a model (*walks like a duck*, *a house like Uzazon’s*), keep the same hosted pair as on the [clause](clause.md#extra-nouns) page. The relation word is **`humum`**. Put the model in `/b/` right after it. Optional `/w/` sits immediately before the relation word. The event or thing itself is real; the `/b/` word is only what it is compared to. (cue: 🪞 *mirror*: you see a reflection, not the same object twice)
+When English says something **resembles** a model (*walks like a duck*, *a house like Uzozen’s*), keep the same hosted pair as on the [clause](clause.md#extra-nouns) page. The relation word is **`humum`**. Put the model in `/b/` right after it. Optional `/w/` sits immediately before the relation word. The event or thing itself is real; the `/b/` word is only what it is compared to. (cue: 🪞 *mirror*: you see a reflection, not the same object twice)
 
-> `zuzazon humum budazal voworel.`
+> `zuzozen humum budozal vewurel.`
 >
-> z-Uzazon | [h-like | b-duck] | v-walk
+> z-Uzozen | [h-like | b-duck] | v-walk
 >
-> "Uzazon walks like a duck."
+> "Uzozen walks like a duck."
 
-> `zuzazon weluzom humum budazal voworel.`
+> `zuzozen welazom humum budozal vewurel.`
 >
-> z-Uzazon | [[w-very | h-like] | b-duck] | v-walk
+> z-Uzozen | [[w-very | h-like] | b-duck] | v-walk
 >
-> "Uzazon walks very much like a duck."
+> "Uzozen walks very much like a duck."
 
 On a noun, the same root is **`gumum`**:
 
-> `zawuhol gumum buzazon.`
+> `zahehal gumum buzozen.`
 >
-> z-house | [g-like | b-Uzazon]
+> z-house | [g-like | b-Uzozen]
 >
-> "A house like Uzazon’s."
+> "A house like Uzozen’s."
 
 When the model is an event (*walks the way a duck swims*), put [**`barl`**](dependents.md#poles) after **`humum`** and say that event as the next sentence. Keep the pair last, as with *because*. You are not claiming that the model event happened; it is only the comparison.
 
-> `zuzazon voworel humum barl zudazal vezevol.`
+> `zuzozen vewurel humum barl zudozal vazuvel.`
 >
-> z-Uzazon | v-walk | [h-like | b-that-clause] | z-duck | v-swim
+> z-Uzozen | v-walk | [h-like | b-that-clause] | z-duck | v-swim
 >
-> "Uzazon walks the way a duck swims."
+> "Uzozen walks the way a duck swims."
 
 As a plain noun, `zumul` is *a mirror*.
 
 With no `/b/` after a joined subject, the model is the other members: each one resembles the others. That is English *alike* / *similar to each other*. Every hosted relation follows this rule.
 
-> `zuzazon zolozun zal gumum.`
+> `zuzozen zolazun zal gumum.`
 >
-> [z-Uzazon | z-Olozun | z-and | g-like]
+> [z-Uzozen | z-Olazun | z-and | g-like]
 >
-> "Uzazon and Olozun are alike."
+> "Uzozen and Olazun are alike."
 
-> `zuzazon zolozun zal humum voworel.`
+> `zuzozen zolazun zal humum vewurel.`
 >
-> [z-Uzazon | z-Olozun | z-and] | h-like | v-walk
+> [z-Uzozen | z-Olazun | z-and] | h-like | v-walk
 >
-> "Uzazon and Olozun walk alike."
+> "Uzozen and Olazun walk alike."
 
-**Compare with:** a `/b/` word with no relation word before it is the recipient. *In a house* is a [hook](hooks.md#extra-noun) (`al bawuhol`). *Using* a tool is also a [hook](hooks.md#extra-noun). Giving **one** person two labels is not resemblance, so it does not use this pair. *As sleepy as* compares how far two things have a quality, not whether one resembles the other. *As if they walk* says the walk may not be real; with *like*, the walk is real.
+**Compare with:** a `/b/` word with no relation word before it is the recipient. *In a house* is a [hook](hooks.md#extra-noun) (`al bahehal`). *Using* a tool is also a [hook](hooks.md#extra-noun). Giving **one** person two labels is not resemblance, so it does not use this pair. *As sleepy as* compares how far two things have a quality, not whether one resembles the other. *As if they walk* says the walk may not be real; with *like*, the walk is real.
 
 <!-- cheat-sheet: linking-clauses -->
 | Egabon | Use | English | Same root as | Cue |
@@ -68,15 +68,15 @@ With no `/b/` after a joined subject, the model is the other members: each one r
 
 When English names the **other side of a swap** (*a book for a hammer*), use the same hosted pair as *like*. The relation word is **`hehem`**. Put what is given in return in `/b/` right after it. That extra noun is the other half of the trade, not who receives the book. (cue: 💱 *currency-exchange*: the arrows swap one thing for another; `/b/` is the other side)
 
-> `zuzazon dugul hehem bahawol vehem.`
+> `zuzozen dugul hehem behowol vehem.`
 >
-> z-Uzazon | d-book | [h-in-exchange-for | b-hammer] | v-convertibility
+> z-Uzozen | d-book | [h-in-exchange-for | b-hammer] | v-convertibility
 >
-> "Uzazon trades a book for a hammer."
+> "Uzozen trades a book for a hammer."
 
-On a noun, the same root is **`gehem`** (`dugul gehem bahawol` *a book for a hammer*). As a plain noun, `zehel` is *a currency exchange*. As a verb, `vehem` is *to trade* (the convertibility act).
+On a noun, the same root is **`gehem`** (`dugul gehem behowol` *a book for a hammer*). As a plain noun, `zehel` is *a currency exchange*. As a verb, `vehem` is *to trade* (the convertibility act).
 
-**Compare with:** a `/b/` word with no relation word before it is the recipient (*a book for Olozun* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun). *Like a duck* is [simile](#similative). *In a house* is a hook (`al`).
+**Compare with:** a `/b/` word with no relation word before it is the recipient (*a book for Olazun* as who gets it). *Using* a tool is a [hook](hooks.md#extra-noun). *Like a duck* is [simile](#similative). *In a house* is a hook (`al`).
 
 <!-- cheat-sheet: linking-clauses -->
 | Egabon | Use | English | Same root as | Cue |
@@ -86,15 +86,15 @@ On a noun, the same root is **`gehem`** (`dugul gehem bahawol` *a book for a ham
 ### Proxy (*on behalf of*) {#proxy}
 <a id="on-behalf-of"></a>
 
-When English says someone **acts as another person’s agent** (*tells on behalf of Olozun*), use the same hosted pair as [*like*](#similative). The relation word is **`hadem`**. Put that person in `/b/` right after it. The subject does the act; `/b/` is the person they act for, not who hears the telling. (cue: 🪪 *id*: the card stands as an authorized face; `/b/` is that person)
+When English says someone **acts as another person’s agent** (*tells on behalf of Olazun*), use the same hosted pair as [*like*](#similative). The relation word is **`hadem`**. Put that person in `/b/` right after it. The subject does the act; `/b/` is the person they act for, not who hears the telling. (cue: 🪪 *id*: the card stands as an authorized face; `/b/` is that person)
 
-> `zuzazon hadem bolozun vezeyel.`
+> `zuzozen hadem bolazun vezuyel.`
 >
-> z-Uzazon | [h-on-behalf-of | b-Olozun] | v-tell
+> z-Uzozen | [h-on-behalf-of | b-Olazun] | v-tell
 >
-> "Uzazon speaks on behalf of Olozun."
+> "Uzozen speaks on behalf of Olazun."
 
-A recipient `/b/` can follow once the pair is complete: `zuzazon hadem bolozun vezeyel behalon` (*tells Ehalon on behalf of Olozun*). On a noun, the same root is **`gadem`** (`dugul gadem bolozun` *a book on behalf of Olozun*). As a plain noun, `zadel` is *an id*.
+A recipient `/b/` can follow once the pair is complete: `zuzozen hadem bolazun vezuyel buhelan` (*tells Uhelan on behalf of Olazun*). On a noun, the same root is **`gadem`** (`dugul gadem bolazun` *a book on behalf of Olazun*). As a plain noun, `zadel` is *an id*.
 
 **Compare with:** a `/b/` word with no relation word before it is who hears the telling. *Using* a tool is a [hook](hooks.md#extra-noun). *A book for a hammer* as a swap is [exchange](#exchange). *In a house* is a hook (`al`).
 
@@ -113,9 +113,9 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
-| *hammer* | `ahawol` | 🔨 |
-| *duck* | `udazal` | 🦆 |
-| *walk* | `voworel` | 🚶 |
+| *hammer* | `ehowol` | 🔨 |
+| *duck* | `udozal` | 🦆 |
+| *walk* | `vewurel` | 🚶 |
 | *like* | `humum` | 🪞 from *mirror*: the image is of the model |
 | *in-exchange-for* | `hehem` | 💱 from *currency-exchange*: the arrows swap one side for the other |
 | *on-behalf-of* | `hadem` | 🪪 from *id*: the card stands as their face |
@@ -124,145 +124,145 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Egabon |
 |---------|--------|
-| *Uzazon* | `uzazon` |
-| *Olozun* | `olozun` |
-| *Ehalon* | `ehalon` |
-| *guard* | `ayoyul` |
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Uhelan* | `uhelan` |
+| *guard* | `agayul` |
 | *pay* | `vamol` |
-| *knife* | `onawul` |
-| *write* | `vuruyel` |
-| *eraser* | `urowul` |
-| *find* | `vemawol` |
-| *very* | `weluzom` |
-| *peek* | `vubemol` |
-| *haste* | `hedarem` |
+| *knife* | `anewul` |
+| *write* | `varayel` |
+| *eraser* | `urewul` |
+| *find* | `vumewol` |
+| *very* | `welazom` |
+| *peek* | `vebomel` |
+| *haste* | `hodurem` |
 | *run* | `varuvel` |
-| *tell* | `vezeyel` |
+| *tell* | `vezuyel` |
 
 #### English → Egabon {#beginner-english-to-egabon}
 
-**1.** *Olozun walks like a guard.*
+**1.** *Olazun walks like a guard.*
 
 ::: details Show answer
-`zolozun humum bayoyul voworel.`
+`zolazun humum bagayul vewurel.`
 
-z-Olozun | [h-like | b-guard] | v-walk
+z-Olazun | [h-like | b-guard] | v-walk
 
-**Also correct:** `zolozun voworel humum bayoyul.`
+**Also correct:** `zolazun vewurel humum bagayul.`
 :::
 
-**2.** *Ehalon pays money for a knife.*
+**2.** *Uhelan pays money for a knife.*
 
 ::: details Show answer
-`zehalon damol hehem bonawul vamol.`
+`zuhelan damol hehem banewul vamol.`
 
-z-Ehalon | d-money | [h-in-exchange-for | b-knife] | v-pay
+z-Uhelan | d-money | [h-in-exchange-for | b-knife] | v-pay
 :::
 
-**3.** *Olozun writes on behalf of Uzazon.*
+**3.** *Olazun writes on behalf of Uzozen.*
 
 ::: details Show answer
-`zolozun hadem buzazon vuruyel.`
+`zolazun hadem buzozen varayel.`
 
-z-Olozun | [h-on-behalf-of | b-Uzazon] | v-write
+z-Olazun | [h-on-behalf-of | b-Uzozen] | v-write
 :::
 
-**4.** *Ehalon finds an eraser like Uzazon's.*
+**4.** *Uhelan finds an eraser like Uzozen's.*
 
 ::: details Show answer
-`zehalon durowul gumum buzazon vemawol.`
+`zuhelan durewul gumum buzozen vumewol.`
 
-z-Ehalon | [d-eraser | [g-like | b-Uzazon]] | v-find
+z-Uhelan | [d-eraser | [g-like | b-Uzozen]] | v-find
 :::
 
-**5.** *Olozun peeks very much like a duck.*
+**5.** *Olazun peeks very much like a duck.*
 
 ::: details Show answer
-`zolozun weluzom humum budazal vubemol.`
+`zolazun welazom humum budozal vebomel.`
 
-z-Olozun | [[w-very | h-like] | b-duck] | v-peek
+z-Olazun | [[w-very | h-like] | b-duck] | v-peek
 :::
 
-**6.** *Uzazon and Ehalon walk alike.*
+**6.** *Uzozen and Uhelan walk alike.*
 
 ::: details Show answer
-`zuzazon zehalon zal humum voworel.`
+`zuzozen zuhelan zal humum vewurel.`
 
-[z-Uzazon | z-Ehalon | z-and] | h-like | v-walk
+[z-Uzozen | z-Uhelan | z-and] | h-like | v-walk
 :::
 
 #### Egabon → English {#beginner-egabon-to-english}
 
-**1.** `zolozun hadem behalon vamol.`
+**1.** `zolazun hadem buhelan vamol.`
 
 ::: details Show answer
-z-Olozun | [h-on-behalf-of | b-Ehalon] | v-pay
+z-Olazun | [h-on-behalf-of | b-Uhelan] | v-pay
 
-*Olozun pays on behalf of Ehalon.*
+*Olazun pays on behalf of Uhelan.*
 :::
 
-**2.** `zuzazon hedarem voworel humum barl zudazal varuvel.`
+**2.** `zuzozen hodurem vewurel humum barl zudozal varuvel.`
 
 ::: details Show answer
-z-Uzazon | h-haste | v-walk | [h-like | b-that-clause] | z-duck | v-run
+z-Uzozen | h-haste | v-walk | [h-like | b-that-clause] | z-duck | v-run
 
-*Uzazon walks hastily, the way a duck runs.*
+*Uzozen walks hastily, the way a duck runs.*
 :::
 
-**3.** `zehalon zolozun zal gumum.`
+**3.** `zuhelan zolazun zal gumum.`
 
 ::: details Show answer
-[z-Ehalon | z-Olozun | z-and | g-like]
+[z-Uhelan | z-Olazun | z-and | g-like]
 
-*Ehalon and Olozun are alike.*
+*Uhelan and Olazun are alike.*
 :::
 
-**4.** `zayoyul humum buzazon vezeyel behalon.`
+**4.** `zagayul humum buzozen vezuyel buhelan.`
 
 ::: details Show answer
-z-guard | [h-like | b-Uzazon] | v-tell | b-Ehalon
+z-guard | [h-like | b-Uzozen] | v-tell | b-Uhelan
 
-*The guard talks to Ehalon, like Uzazon does.*
+*The guard talks to Uhelan, like Uzozen does.*
 :::
 
-**5.** `zuzazon weluzom gumum budazal.`
+**5.** `zuzozen welazom gumum budozal.`
 
 ::: details Show answer
-z-Uzazon | [[w-very | g-like] | b-duck]
+z-Uzozen | [[w-very | g-like] | b-duck]
 
-*Uzazon is very much like a duck.*
+*Uzozen is very much like a duck.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Uzazon talks to Ehalon on behalf of Olozun.* `zuzazon hadem bolozun vezeyel behalon.` or `zuzazon hadem behalon vezeyel bolozun.`
+**1.** *Uzozen talks to Uhelan on behalf of Olazun.* `zuzozen hadem bolazun vezuyel buhelan.` or `zuzozen hadem buhelan vezuyel bolazun.`
 
 ::: details Show answer
-`zuzazon hadem bolozun vezeyel behalon.`
+`zuzozen hadem bolazun vezuyel buhelan.`
 
-z-Uzazon | [h-on-behalf-of | b-Olozun] | v-tell | b-Ehalon
+z-Uzozen | [h-on-behalf-of | b-Olazun] | v-tell | b-Uhelan
 
 The `/b/` right after **`hadem`** is the one acted for; the next `/b/` is who hears it.
 :::
 
-**2.** *Ehalon walks like a duck.* `zehalon humum budazal voworel.` or `zehalon budazal humum voworel.`
+**2.** *Uhelan walks like a duck.* `zuhelan humum budozal vewurel.` or `zuhelan budozal humum vewurel.`
 
 ::: details Show answer
-`zehalon humum budazal voworel.`
+`zuhelan humum budozal vewurel.`
 
-z-Ehalon | [h-like | b-duck] | v-walk
+z-Uhelan | [h-like | b-duck] | v-walk
 
-The model goes in `/b/` right **after** **`humum`**; before it, `budazal` is a recipient.
+The model goes in `/b/` right **after** **`humum`**; before it, `budozal` is a recipient.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Uzazon pays money for a hammer.* <!-- lint: error -->`zuzazon damol bahawol vamol.`
+**1.** *Uzozen pays money for a hammer.* <!-- lint: error -->`zuzozen damol behowol vamol.`
 
 ::: details Show answer
-`zuzazon damol hehem bahawol vamol.`
+`zuzozen damol hehem behowol vamol.`
 
-z-Uzazon | d-money | [h-in-exchange-for | b-hammer] | v-pay
+z-Uzozen | d-money | [h-in-exchange-for | b-hammer] | v-pay
 
 Without **`hehem`**, the hammer is the one paid; *for* a swap puts it in `/b/` after **`hehem`**.
 :::
@@ -271,47 +271,47 @@ Without **`hehem`**, the hammer is the one paid; *for* a swap puts it in `/b/` a
 
 ### Exactly like (`humul` / `gumul`) {#exactly-like}
 
-Beginner used **`humum`** / **`gumum`** for *like*: the event or thing resembles the model in `/b/`. When the match is exact (*walks exactly like a duck*, *a house just like Uzazon's*), end the same relation word in **-l** instead: **`humul`** on the event, **`gumul`** on a noun. The model sits in `/b/` right after it, as before, and the event or thing is still real. (cue: **-l** ≈ locked: the reflection matches the model line for line)
+Beginner used **`humum`** / **`gumum`** for *like*: the event or thing resembles the model in `/b/`. When the match is exact (*walks exactly like a duck*, *a house just like Uzozen's*), end the same relation word in **-l** instead: **`humul`** on the event, **`gumul`** on a noun. The model sits in `/b/` right after it, as before, and the event or thing is still real. (cue: **-l** ≈ locked: the reflection matches the model line for line)
 
-> `zuzazon humul budazal voworel.`
+> `zuzozen humul budozal vewurel.`
 >
-> z-Uzazon | [h-exactly-like | b-duck] | v-walk
+> z-Uzozen | [h-exactly-like | b-duck] | v-walk
 >
-> "Uzazon walks exactly like a duck."
+> "Uzozen walks exactly like a duck."
 
-> `zawuhol gumul buzazon.`
+> `zahehal gumul buzozen.`
 >
-> z-house | [g-exactly-like | b-Uzazon]
+> z-house | [g-exactly-like | b-Uzozen]
 >
-> "A house just like Uzazon's."
+> "A house just like Uzozen's."
 
-**Related form:** a degree word before **`humum`** grades the match instead (`wumazom humum budazal` *a bit like a duck*).
+**Related form:** a degree word before **`humum`** grades the match instead (`wamezom humum budozal` *a bit like a duck*).
 
 ### Locative relations {#locative-relations}
 
 Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extra-noun hooks](hooks.md#extra-noun-intermediate). To say where someone moves from and to, use one hook for each landmark (*from* one, *toward* another), and write the **source** before the **goal**.
 
-> `zuzazon ul buyehol voworel oel bodevel.`
+> `zuzozen ul buyahel vewurel oel bedavel.`
 >
-> z-Uzazon | [from | b-station] | v-walk | [toward | b-train]
+> z-Uzozen | [from | b-station] | v-walk | [toward | b-train]
 >
-> "Uzazon walks from a station toward a train."
+> "Uzozen walks from a station toward a train."
 
-> `zuzazon ul bawuhol voworel ol buyehol.`
+> `zuzozen ul bahehal vewurel ol buyahel.`
 >
-> z-Uzazon | [from | b-house] | v-walk | [at | b-station]
+> z-Uzozen | [from | b-house] | v-walk | [at | b-station]
 >
-> "Uzazon walks from a house to a station."
+> "Uzozen walks from a house to a station."
 
-> `zolozun ual bawuhol varuvel al bodevel.`
+> `zolazun ual bahehal varuvel al bedavel.`
 >
-> z-Olozun | [out-of | b-house] | v-run | [in | b-train]
+> z-Olazun | [out-of | b-house] | v-run | [in | b-train]
 >
-> "Olozun runs out of a house into a train."
+> "Olazun runs out of a house into a train."
 
 *The guard in a bank* uses the same hook on a noun, not a [*who*-clause](dependents.md#which-noun):
 
-> `zayoyul al bebahal vehuhol.`
+> `zagayul al babohal vuhohol.`
 >
 > z-guard | [in | b-bank] | v-sit
 >
@@ -321,19 +321,19 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 
 *Between* needs a **root**, not a hook: the position depends on **two** landmarks at once. Use hosted **`hazam`** (or **`gazam`** on a noun) and put both landmarks in `/b/` as a [join](joins.md). (cue: 🥪 *sandwich*: the filling sits between two sides)
 
-> `zolozun vehuhol hazam bodevel buyehol bal.`
+> `zolazun vuhohol hazam bedavel buyahel bal.`
 >
-> z-Olozun | v-sit | [h-between | [b-train | b-station | b-and]]
+> z-Olazun | v-sit | [h-between | [b-train | b-station | b-and]]
 >
-> "Olozun sits between a train and a station."
+> "Olazun sits between a train and a station."
 
 The `/b/` after the relation word is **one slot**. A join (`bal`) or a [plural](plurality.md) fills it whole; the landmarks do not each need their own `/b/`. The same holds on a noun:
 
-> `zuzazon gazam bodevel buyehol bal vehuhol.`
+> `zuzozen gazam bedavel buyahel bal vuhohol.`
 >
-> [z-Uzazon | [g-between | [b-train | b-station | b-and]]] | v-sit
+> [z-Uzozen | [g-between | [b-train | b-station | b-and]]] | v-sit
 >
-> "Uzazon, between a train and a station, sits."
+> "Uzozen, between a train and a station, sits."
 
 As a plain noun, `zazal` is *a sandwich*.
 
@@ -341,17 +341,17 @@ As a plain noun, `zazal` is *a sandwich*.
 
 *Across* also needs a root. The hook **`uol`** *through* passes through the inside of the landmark (a crowd, a tunnel). **`hebum`** goes from one edge to the far edge (a street, a river). Put the landmark in `/b/` right after it. (cue: 🌉 *bridge*: a bridge spans the gap)
 
-> `zuzazon voworel hebum buyehol.`
+> `zuzozen vewurel hebum buyahel.`
 >
-> z-Uzazon | v-walk | [h-across | b-station]
+> z-Uzozen | v-walk | [h-across | b-station]
 >
-> "Uzazon walks across the station."
+> "Uzozen walks across the station."
 
-On a noun it is **`gebum`**: *Uzazon, across the station, sits.* As a plain noun, `zebul` is *a bridge*.
+On a noun it is **`gebum`**: *Uzozen, across the station, sits.* As a plain noun, `zebul` is *a bridge*.
 
 *Around* needs a root too: the person or thing is on **all sides** of one landmark, like a ring. Use hosted **`hugem`** (or **`gugem`** on a noun) with the landmark in `/b/`. (cue: 🎠 *carousel*: the horses ride on all sides of the center pole)
 
-> `zegazolx vehuhol hugem bodevel.`
+> `zagozolx vuhohol hugem bedavel.`
 >
 > z-cat-x | v-sit | [h-around | b-train]
 >
@@ -366,46 +366,46 @@ As a plain noun, `zugel` is *a carousel*. **`om`** *near* says only that the per
 | **`hebum` / `gebum`** | path from one edge of the landmark to the far edge | *across* | `ebul` *bridge* | 🌉: a bridge spans the gap |
 | **`hugem` / `gugem`** | on all sides of one landmark | *around* | `ugel` *carousel* | 🎠: the horses ride on all sides of the pole |
 
-**Compare with:** a `/b/` word with no relation word before it is the recipient. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges). *Like* is [simile](#similative). *For a hammer* as a swap is [exchange](#exchange). *On behalf of Olozun* is [proxy](#proxy). English *of* that is not a place is [of relations](#of-relations).
+**Compare with:** a `/b/` word with no relation word before it is the recipient. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges). *Like* is [simile](#similative). *For a hammer* as a swap is [exchange](#exchange). *On behalf of Olazun* is [proxy](#proxy). English *of* that is not a place is [of relations](#of-relations).
 
 ### Of relations (*part of*, *cup of*, *made of*, *from*) {#of-relations}
 <a id="noun-relations"></a>
 
-English *of* also names how one noun sits toward another (*a hand of Olozun*, *a teapot of tea*, *a house of wood*, *Olozun from the city*). Use the same hosted pair as *like*: the relation word on `/ɡ/` (or `/h/` on the event), and the extra noun in `/b/` right after it. The `/b/` word is what comes after *of* in English (the whole, the filling, the material, or the origin), not a recipient.
+English *of* also names how one noun sits toward another (*a hand of Olazun*, *a teapot of tea*, *a house of wood*, *Olazun from the city*). Use the same hosted pair as *like*: the relation word on `/ɡ/` (or `/h/` on the event), and the extra noun in `/b/` right after it. The `/b/` word is what comes after *of* in English (the whole, the filling, the material, or the origin), not a recipient.
 
-> `zuzazon dahebol gobom bolozun vanobol.`
+> `zuzozen dahebal gobom bolazun vawebol.`
 >
-> z-Uzazon | [d-hand | [g-part-of | b-Olozun]] | v-see
+> z-Uzozen | [d-hand | [g-part-of | b-Olazun]] | v-see
 >
-> "Uzazon sees one of Olozun's hands."
+> "Uzozen sees one of Olazun's hands."
 
-> `zuzazon dudedal gahem bedadal vanobol.`
+> `zuzozen dedodal gahem bududal vawebol.`
 >
-> z-Uzazon | [d-teapot | [g-contents | b-tea]] | v-see
+> z-Uzozen | [d-teapot | [g-contents | b-tea]] | v-see
 >
-> "Uzazon sees a teapot full of tea."
+> "Uzozen sees a teapot full of tea."
 
-> `zuzazon dawuhol guwum buwul vanobol.`
+> `zuzozen dahehal guwum buwul vawebol.`
 >
-> z-Uzazon | [d-house | [g-material | b-wood]] | v-see
+> z-Uzozen | [d-house | [g-material | b-wood]] | v-see
 >
-> "Uzazon sees a house made of wood."
+> "Uzozen sees a house made of wood."
 
-> `zolozun gagum bazohol voworel.`
+> `zolazun gagum bezahel vewurel.`
 >
-> [z-Olozun | [g-origin | b-skyline]] | v-walk
+> [z-Olazun | [g-origin | b-skyline]] | v-walk
 >
-> "Olozun, who is from the city, walks."
+> "Olazun, who is from the city, walks."
 
-On an event, the same roots take `/h/` (`zuzazon vagoyol huwum buwul` *Uzazon crafts out of wood*; `zolozun voworel hagum bazohol` *Olozun walks, originating from the city*). As plain nouns, the same roots name ordinary things (`zobol` *a bone*; `zahel` *a jar*; `zuwul` *wood*; `zagul` *a country*).
+On an event, the same roots take `/h/` (`zuzozen vuguyol huwum buwul` *Uzozen crafts out of wood*; `zolazun vewurel hagum bezahel` *Olazun walks, originating from the city*). As plain nouns, the same roots name ordinary things (`zobol` *a bone*; `zahel` *a jar*; `zuwul` *wood*; `zagul` *a country*).
 
 For *a piece of* a mass, put the substance first and `gozowum` right after it. With no `/b/`, the whole it was cut from is left open.
 
-> `zuzazon deredol gozowum vanobol.`
+> `zuzozen debodol gozowum vawebol.`
 >
-> z-Uzazon | [d-bread | g-division] | v-see
+> z-Uzozen | [d-bread | g-division] | v-see
 >
-> "Uzazon sees a piece of bread."
+> "Uzozen sees a piece of bread."
 
 Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in* hook (`al`), not `gahem`.
 
@@ -420,56 +420,56 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in
 
 **Compare with:**
 
-- Plain *Uzazon's*, with no particular tie, is the hook [`em`](hooks.md#genitive) (`zodozol em buzazon`). Ownership is `gagogom` + `/b/` ([joins](joins.md#scope-fence-p-join)). A need from [sakes](sakes.md) on `/ɡ/` also says the thing is the speaker's.
+- Plain *Uzozen's*, with no particular tie, is the hook [`em`](hooks.md#genitive) (`zudozol em buzozen`). Ownership is `gagugum` + `/b/` ([joins](joins.md#scope-fence-p-join)). A need from [sakes](sakes.md) on `/ɡ/` also says the thing is the speaker's.
 - Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](#locative-relations)).
-- *A house like Uzazon’s* is [simile](#similative) (`gumum`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`gehem`).
+- *A house like Uzozen’s* is [simile](#similative) (`gumum`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`gehem`).
 - `gobom` is a part that belongs to the thing's structure (a bone of the body); `gozowum` is a piece taken off it (a slice of bread).
 - A portion *of* a class is [percent](numbers-applied.md#percent-and-percentage-points). A person and their associates take plural **-x**, not *part of*.
 - *From* as the origin of a whole kind (`ROOTl#e-`) is [numeric derivation](numeric-derivation.md), not this *from*, which is about one particular thing.
 
-### Social relations (*Uzazon's friend*, *boss*) {#social-relations}
+### Social relations (*Uzozen's friend*, *boss*) {#social-relations}
 
-English *'s* also names a social tie (*Uzazon's friend*, *Uzazon's boss*). Put the root for the tie on `/ɡ/` with **-m** (the abstract sense), and put the other person in hosted `/b/` right after it, as with the *of* relations. `/b/` is the person the tie points to.
+English *'s* also names a social tie (*Uzozen's friend*, *Uzozen's boss*). Put the root for the tie on `/ɡ/` with **-m** (the abstract sense), and put the other person in hosted `/b/` right after it, as with the *of* relations. `/b/` is the person the tie points to.
 
-> `zolozun gameyom buzazon.`
+> `zolazun gumayam buzozen.`
 >
-> z-Olozun | [g-companionship | b-Uzazon]
+> z-Olazun | [g-companionship | b-Uzozen]
 >
-> "Olozun is Uzazon's friend."
+> "Olazun is Uzozen's friend."
 
-> `zuzazon dolozun gegebem buzazon vanobol.`
+> `zuzozen dolazun gugobem buzozen vawebol.`
 >
-> z-Uzazon | [d-Olozun | [g-leadership | b-Uzazon]] | v-see
+> z-Uzozen | [d-Olazun | [g-leadership | b-Uzozen]] | v-see
 >
-> "Uzazon sees Olozun, Uzazon's boss."
+> "Uzozen sees Olazun, Uzozen's boss."
 
 With no `/b/` after a joined subject, the tie points at the other members, as with `gumum` ([similative](#similative)). The other party is left out.
 
-> `zuzazon zolozun zal gameyom.`
+> `zuzozen zolazun zal gumayam.`
 >
-> [z-Uzazon | z-Olozun | z-and | g-companionship]
+> [z-Uzozen | z-Olazun | z-and | g-companionship]
 >
-> "Uzazon and Olozun are friends."
+> "Uzozen and Olazun are friends."
 
-Any root whose abstract sense is a tie works this way (`gohoyam` *partner of*, `ganam` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zolozun gameyom buzazon`, `zoxameyor` is *the other party of that friendship* (Uzazon).
+Any root whose abstract sense is a tie works this way (`gohuyam` *partner of*, `ganam` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zolazun gumayam buzozen`, `zoxumayar` is *the other party of that friendship* (Uzozen).
 
 <!-- cheat-sheet: linking-clauses -->
 | Egabon | Use | English | Same root as |
 |--------|-----|---------|--------------|
-| **`gameyom`** + `/b/` | companion of `/b/` | *friend of* | `ameyol` *Mrs Claus* |
-| **`gegebem`** + `/b/` | the one `/b/` answers to | *boss of* | `egebel` *crown* |
-| **`gohoyam`** + `/b/` | partner of `/b/` | *partner of* | `ohoyal` *holding hands* |
-| **`gubalom`** + `/b/` | the one `/b/` looks after | *in the care of* (*Uzazon's patient*, *team*) | `ubalol` *house plant* |
+| **`gumayam`** + `/b/` | companion of `/b/` | *friend of* | `umayal` *Mrs Claus* |
+| **`gugobem`** + `/b/` | the one `/b/` answers to | *boss of* | `ugobel` *crown* |
+| **`gohuyam`** + `/b/` | partner of `/b/` | *partner of* | `ohuyal` *holding hands* |
+| **`gabolom`** + `/b/` | the one `/b/` looks after | *in the care of* (*Uzozen's patient*, *team*) | `abolol` *house plant* |
 
-A tie of care (*Uzazon's patient*, *Uzazon's team*) is **`gubalom`**: `/b/` looks after the person. It says Uzazon is responsible for them, not that Uzazon owns or uses them. (cue: 🪴 a house plant needs someone to tend it)
+A tie of care (*Uzozen's patient*, *Uzozen's team*) is **`gabolom`**: `/b/` looks after the person. It says Uzozen is responsible for them, not that Uzozen owns or uses them. (cue: 🪴 a house plant needs someone to tend it)
 
-> `zolozun gubalom buzazon.`
+> `zolazun gabolom buzozen.`
 >
-> z-Olozun | [g-tending | b-Uzazon]
+> z-Olazun | [g-tending | b-Uzozen]
 >
-> "Olozun is in Uzazon's care."
+> "Olazun is in Uzozen's care."
 
-**Compare with:** kin uses generation numbers ([kin generations](numbers-applied.md#kin-generations)). Plain *Uzazon's*, with the tie left unsaid, is the hook [`em`](hooks.md#genitive). Ownership is `gagogom`. *Part of* is `gobom`.
+**Compare with:** kin uses generation numbers ([kin generations](numbers-applied.md#kin-generations)). Plain *Uzozen's*, with the tie left unsaid, is the hook [`em`](hooks.md#genitive). Ownership is `gagugum`. *Part of* is `gobom`.
 
 ### Practice {#intermediate-practice}
 
@@ -481,9 +481,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
-| *station* | `uyehol` | 🚉 |
-| *house* | `awuhol` | 🏠 |
-| *companionship* | `gameyom` | 🤶 from *Mrs Claus*: a companion at your side |
+| *station* | `uyahel` | 🚉 |
+| *house* | `ahehal` | 🏠 |
+| *companionship* | `gumayam` | 🤶 from *Mrs Claus*: a companion at your side |
 | *exactly-like* | `humul` | 🪞 from *mirror*: **-l** for an exact match, **-m** for *like* |
 | *between* | `hazam` | 🥪 from *sandwich*: the filling sits between two sides |
 | *across* | `hebum` | 🌉 from *bridge*: a bridge spans the gap |
@@ -495,86 +495,86 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Egabon |
 |---------|--------|
-| *Uzazon* | `uzazon` |
-| *Olozun* | `olozun` |
-| *Ehalon* | `ehalon` |
-| *duck* | `udazal` |
-| *train* | `odevel` |
-| *ticket* | `edegol` |
-| *luggage* | `ulabal` |
-| *teapot* | `udedal` |
-| *wine* | `awadal` |
-| *ant* | `anezal` |
-| *bread* | `eredol` |
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Uhelan* | `uhelan` |
+| *duck* | `udozal` |
+| *train* | `edavel` |
+| *ticket* | `odegel` |
+| *luggage* | `elobal` |
+| *teapot* | `edodal` |
+| *wine* | `awudal` |
+| *ant* | `unezal` |
+| *bread* | `ebodol` |
 | *saw* | `ozowul` |
-| *smell* | `vonobol` |
-| *walk* | `voworel` |
+| *smell* | `vonebol` |
+| *walk* | `vewurel` |
 | *run* | `varuvel` |
-| *sit* | `vehuhol` |
-| *see* | `vanobol` |
-| *find* | `vemawol` |
+| *sit* | `vuhohol` |
+| *see* | `vawebol` |
+| *find* | `vumewol` |
 
 #### English → Egabon {#intermediate-english-to-egabon}
 
-**1.** *Olozun runs exactly like a duck.*
+**1.** *Olazun runs exactly like a duck.*
 
 ::: details Show answer
-`zolozun humul budazal varuvel.`
+`zolazun humul budozal varuvel.`
 
-z-Olozun | [h-exactly-like | b-duck] | v-run
+z-Olazun | [h-exactly-like | b-duck] | v-run
 :::
 
-**2.** *Ehalon walks from a house to a station.*
+**2.** *Uhelan walks from a house to a station.*
 
 ::: details Show answer
-`zehalon ul bawuhol voworel ol buyehol.`
+`zuhelan ul bahehal vewurel ol buyahel.`
 
-z-Ehalon | [from | b-house] | v-walk | [at | b-station]
+z-Uhelan | [from | b-house] | v-walk | [at | b-station]
 :::
 
-**3.** *Uzazon sits between the luggage and a train.*
+**3.** *Uzozen sits between the luggage and a train.*
 
 ::: details Show answer
-`zuzazon vehuhol hazam bulabal bodevel bal.`
+`zuzozen vuhohol hazam belobal bedavel bal.`
 
-z-Uzazon | v-sit | [h-between | [b-luggage | b-train | b-and]]
+z-Uzozen | v-sit | [h-between | [b-luggage | b-train | b-and]]
 :::
 
-**4.** *Ehalon sees a teapot full of wine.*
+**4.** *Uhelan sees a teapot full of wine.*
 
 ::: details Show answer
-`zehalon dudedal gahem bawadal vanobol.`
+`zuhelan dedodal gahem bawudal vawebol.`
 
-z-Ehalon | [d-teapot | [g-contents | b-wine]] | v-see
+z-Uhelan | [d-teapot | [g-contents | b-wine]] | v-see
 :::
 
-**5.** *Ehalon is Olozun's friend.*
+**5.** *Uhelan is Olazun's friend.*
 
 ::: details Show answer
-`zehalon gameyom bolozun.`
+`zuhelan gumayam bolazun.`
 
-z-Ehalon | [g-companionship | b-Olozun]
+z-Uhelan | [g-companionship | b-Olazun]
 :::
 
-**6.** *Olozun runs across the station.*
+**6.** *Olazun runs across the station.*
 
 ::: details Show answer
-`zolozun varuvel hebum buyehol.`
+`zolazun varuvel hebum buyahel.`
 
-z-Olozun | v-run | [h-across | b-station]
+z-Olazun | v-run | [h-across | b-station]
 :::
 
 #### Egabon → English {#intermediate-egabon-to-english}
 
-**1.** `zehalon ual bodevel voworel ol buyehol.`
+**1.** `zuhelan ual bedavel vewurel ol buyahel.`
 
 ::: details Show answer
-z-Ehalon | [out-of | b-train] | v-walk | [at | b-station]
+z-Uhelan | [out-of | b-train] | v-walk | [at | b-station]
 
-*Ehalon walks out of a train to the station.*
+*Uhelan walks out of a train to the station.*
 :::
 
-**2.** `zanezalx vehuhol hugem bulabal.`
+**2.** `zunezalx vuhohol hugem belobal.`
 
 ::: details Show answer
 z-ant-x | v-sit | [h-around | b-luggage]
@@ -582,58 +582,58 @@ z-ant-x | v-sit | [h-around | b-luggage]
 *Ants sit around the luggage.*
 :::
 
-**3.** `zolozun dedegol gagum buyehol vemawol.`
+**3.** `zolazun dodegel gagum buyahel vumewol.`
 
 ::: details Show answer
-z-Olozun | [d-ticket | [g-origin | b-station]] | v-find
+z-Olazun | [d-ticket | [g-origin | b-station]] | v-find
 
-*Olozun finds a ticket from the station.*
+*Olazun finds a ticket from the station.*
 :::
 
-**4.** `zulabal gumul bolozun.`
+**4.** `zelobal gumul bolazun.`
 
 ::: details Show answer
-z-luggage | [g-exactly-like | b-Olozun]
+z-luggage | [g-exactly-like | b-Olazun]
 
-*Luggage just like Olozun's.*
+*Luggage just like Olazun's.*
 :::
 
-**5.** `zuzazon zehalon zal gameyom.`
+**5.** `zuzozen zuhelan zal gumayam.`
 
 ::: details Show answer
-[z-Uzazon | z-Ehalon | z-and | g-companionship]
+[z-Uzozen | z-Uhelan | z-and | g-companionship]
 
-*Uzazon and Ehalon are friends.*
+*Uzozen and Uhelan are friends.*
 :::
 
-**6.** `zolozun deredol gozowum vonobol.`
+**6.** `zolazun debodol gozowum vonebol.`
 
 ::: details Show answer
-z-Olozun | [d-bread | g-division] | v-smell
+z-Olazun | [d-bread | g-division] | v-smell
 
-*Olozun smells a piece of bread.*
+*Olazun smells a piece of bread.*
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Olozun walks like a duck.* (resembles it) `zolozun humum budazal voworel.` or `zolozun humul budazal voworel.`
+**1.** *Olazun walks like a duck.* (resembles it) `zolazun humum budozal vewurel.` or `zolazun humul budozal vewurel.`
 
 ::: details Show answer
-`zolozun humum budazal voworel.`
+`zolazun humum budozal vewurel.`
 
-z-Olozun | [h-like | b-duck] | v-walk
+z-Olazun | [h-like | b-duck] | v-walk
 
 **-m** is resemblance; **-l** would claim an exact match.
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Ehalon sits between the train and the station.* <!-- lint: error -->`zehalon vehuhol hazam bodevel buyehol.`
+**1.** *Uhelan sits between the train and the station.* <!-- lint: error -->`zuhelan vuhohol hazam bedavel buyahel.`
 
 ::: details Show answer
-`zehalon vehuhol hazam bodevel buyehol bal.`
+`zuhelan vuhohol hazam bedavel buyahel bal.`
 
-z-Ehalon | v-sit | [h-between | [b-train | b-station | b-and]]
+z-Uhelan | v-sit | [h-between | [b-train | b-station | b-and]]
 
 Both landmarks fill the one `/b/` slot after **`hazam`**, so join them with **`bal`**.
 :::
@@ -648,40 +648,40 @@ English *as of Friday*, *would*, *was going to*, and *if he had* mix two times: 
 
 Egabon keeps the two apart. With no extra marking, whose-now is **speech-now**, the moment you are speaking. To move it, write a hosted pair: **`huhum`** when you claim that moment as real (a dated entry in the record), **`huram`** when it is only a placeholder you are not claiming. Put the moment (the snapshot) in `/b/` immediately after. (cue: 📒 *ledger* stamps a dated line in the books; 🔖 *bookmark* holds the place without stamping)
 
-> `zolozun hamom huhum b_#22,7 veyorul.`
+> `zolazun hamom huhum b_#22,7 verurul.`
 >
-> z-Olozun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
+> z-Olazun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 >
-> "As of 22 July, Olozun had left and was still gone."
+> "As of 22 July, Olazun had left and was still gone."
 
-> `zuzazon huhum b_#22,7 vehuhol al bawuhol.`
+> `zuzozen huhum b_#22,7 vuhohol al bahehal.`
 >
-> z-Uzazon | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
+> z-Uzozen | [h-as-of.ledger | b-_22,7] | v-sit | [in | b-house]
 >
-> "As of 22 July, Uzazon is sitting in a house."
+> "As of 22 July, Uzozen is sitting in a house."
 
 With nothing else marked, the sitting happens at that now.
 
 The pair covers only its own clause. To keep the same whose-now in a following `/x/` clause, repeat the **same word** with **-r** and no `/b/` (`huhur` / `hurar`). A new pair with its own `/b/` replaces whose-now, whether it repeats the word or switches between `huhum` and `huram`. A clause (or a noun or adjective, below) takes at most one *as-of* pair.
 
-> `zolozun hamom huhum b_#22,7 veyorul. xuzazon hamom huhur voworel.`
+> `zolazun hamom huhum b_#22,7 verurul. xuzozen hamom huhur vewurel.`
 >
-> z-Olozun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Uzazon | h-RESIDUE | h-as-of.ledger | v-walk
+> z-Olazun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Uzozen | h-RESIDUE | h-as-of.ledger | v-walk
 >
-> "As of 22 July, Olozun had left and was still gone. As of that same day, Uzazon's walk still counted too."
+> "As of 22 July, Olazun had left and was still gone. As of that same day, Uzozen's walk still counted too."
 
-The role letter says what the snapshot applies to: `/h/` the whole clause, `/ɡ/` one noun (`guhum` *the tab as of Friday*), and `/w/` the `/ɡ/` adjective immediately after the pair (`wuhum b_#22,7 gumahom`). These are separate, so one clause may carry a clause snapshot and an adjective snapshot at once. A noun or adjective snapshot does not reach the verb: if the **verb** should also count from that now, the clause needs its own `/h/` *as-of* (or a resume).
+The role letter says what the snapshot applies to: `/h/` the whole clause, `/ɡ/` one noun (`guhum` *the tab as of Friday*), and `/w/` the `/ɡ/` adjective immediately after the pair (`wuhum b_#22,7 gamahum`). These are separate, so one clause may carry a clause snapshot and an adjective snapshot at once. A noun or adjective snapshot does not reach the verb: if the **verb** should also count from that now, the clause needs its own `/h/` *as-of* (or a resume).
 
 The `/b/` after the pair can be:
 
 - a clock time or date digit string
 - an event noun
 - **`barl`**, with the next sentence as whose-now (the pair then goes last)
-- extra-noun **-r**, which points back to a time already said (on a date, **-r** is written `=`: `b=_#22,7` is *that 22 July again*; see the example below where Olozun walks on 22 July)
+- extra-noun **-r**, which points back to a time already said (on a date, **-r** is written `=`: `b=_#22,7` is *that 22 July again*; see the example below where Olazun walks on 22 July)
 
 It is never an offset from speech-now such as *three hours ago*: that would date the event without saying how you know the date, so an undated past event needs a [dated channel](knowing.md#dated-channel). The *as-of* word already carries the date, so do not also write a separate `h_#22,7` for the same snapshot. A bare `h_#…` with no pair dates the event itself ([time](numbers-applied.md#time)). A clock time, *before*, or *after* may sit beside an *as-of* pair.
 
-Do not put a bare person in `/b/` to mean “from Olozun’s now.” A person after `hadem` is [proxy](#proxy). To mean *as of when Olozun told it*, use **`barl`** and a sentence: `huhum barl zolozun vezeyel`.
+Do not put a bare person in `/b/` to mean “from Olazun’s now.” A person after `hadem` is [proxy](#proxy). To mean *as of when Olazun told it*, use **`barl`** and a sentence: `huhum barl zolazun vezuyel`.
 
 Once whose-now is set, these count from it:
 
@@ -692,47 +692,47 @@ Once whose-now is set, these count from it:
 
 [MAY](knowing.md#may), [CAUSE](causation.md#cause), and every other stance still count from speech-now. Evidentials, apart from LIVE at the snapshot, still say how *you* know at speech-now.
 
-> `zuzazon zolozun zel wuhum b_#22,7 gumahom.`
+> `zuzozen zolazun zel wuhum b_#22,7 gamahum.`
 >
-> [z-Uzazon | z-Olozun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
+> [z-Uzozen | z-Olazun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 >
-> "As of 22 July, Uzazon is more challenging than Olozun."
+> "As of 22 July, Uzozen is more challenging than Olazun."
 
 Here the snapshot covers only *challenging*. It does not reach a verb: a verb in this clause would still count from speech-now unless the clause had its own `/h/` pair.
 
-> `zamol hamom huhum beyorul.`
+> `zamol hamom huhum berurul.`
 >
 > z-money | h-RESIDUE | [h-as-of.ledger | b-departure]
 >
 > "As of the departure, the money still stood."
 
-> `zuzazon huhum b_#22,7 habam beyorul vehuhol al bawuhol.`
+> `zuzozen huhum b_#22,7 habam berurul vuhohol al bahehal.`
 >
-> z-Uzazon | [h-as-of.ledger | b-_22,7] | [h-before | b-departure] | v-sit | [in | b-house]
+> z-Uzozen | [h-as-of.ledger | b-_22,7] | [h-before | b-departure] | v-sit | [in | b-house]
 >
-> "As of 22 July, Uzazon is sitting in a house before the departure."
+> "As of 22 July, Uzozen is sitting in a house before the departure."
 
 *Before the departure* places the sitting itself; *as of 22 July* only sets the now the clause is measured from. The two times are separate.
 
-> `zolozun voworel ol b_#22,7. xolozun hamom huhum b=_#22,7 veyorul.`
+> `zolazun vewurel ol b_#22,7. xolazun hamom huhum b=_#22,7 verurul.`
 >
-> z-Olozun | v-walk | [at | b-_22,7] . x-Olozun | h-RESIDUE | [h-as-of.ledger | b-←_22,7] | v-departure
+> z-Olazun | v-walk | [at | b-_22,7] . x-Olazun | h-RESIDUE | [h-as-of.ledger | b-←_22,7] | v-departure
 >
-> "Olozun walked on 22 July. As of that day, Olozun had left and was still gone."
+> "Olazun walked on 22 July. As of that day, Olazun had left and was still gone."
 
-> `zolozun hamom veyorul huhum barl zolozun vezeyel.`
+> `zolazun hamom verurul huhum barl zolazun vezuyel.`
 >
-> z-Olozun | h-RESIDUE | v-departure | [h-as-of.ledger | b-that-clause] | z-Olozun | v-tell
+> z-Olazun | h-RESIDUE | v-departure | [h-as-of.ledger | b-that-clause] | z-Olazun | v-tell
 >
-> "As of when Olozun spoke, Olozun had left and was still gone."
+> "As of when Olazun spoke, Olazun had left and was still gone."
 
 The speaking only sets the now; it is not what is left over.
 
-> `zolozun hamom huhum b_#22,7 veyorul. xuzazon thobam bral huram b_#23,7 voworel.`
+> `zolazun hamom huhum b_#22,7 verurul. xuzozen thobam bral huram b_#23,7 vewurel.`
 >
-> z-Olozun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Uzazon | [th-PATTERN | b-later] | [h-as-of.bookmark | b-_23,7] | v-walk
+> z-Olazun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure . x-Uzozen | [th-PATTERN | b-later] | [h-as-of.bookmark | b-_23,7] | v-walk
 >
-> "As of 22 July, Olozun had left and was still gone. Taking 23 July as now, Uzazon would walk, going by the pattern."
+> "As of 22 July, Olazun had left and was still gone. Taking 23 July as now, Uzozen would walk, going by the pattern."
 
 The second sentence's own pair replaces the 22 July now.
 
@@ -751,43 +751,43 @@ An *as-of* pair inside a finished inner clause cannot be resumed later in the ma
 
 A stance is yours at speech-now: `thovum` is how unsure you are **as you speak**, and a sake or feeling word is how you stand **now**. English *I was sure then*, *back then it stung*, and *I'd be relieved* date the stance itself. Put the same *as-of* pair on `/th/`: **`thuhum`** for a real now, **`thuram`** for a now you are not claiming, then the snapshot in `/b/`. Every stance word in the clause, including MAY, WANT, CAUSE, sakes, and feelings, then reads from that now. A [PLAN](intention.md#plan-predict) is then planned **from** that now, and a [DECISION](intention.md#decision) is held **at** it.
 
-> `zolozun thuhum b_#22,7 thovum veyorul.`
+> `zolazun thuhum b_#22,7 thovum verurul.`
 >
-> z-Olozun | [th-as-of.ledger | b-_22,7] | th-MAY | v-departure
+> z-Olazun | [th-as-of.ledger | b-_22,7] | th-MAY | v-departure
 >
-> "On 22 July, I thought Olozun might leave." (no claim about what I think now)
+> "On 22 July, I thought Olazun might leave." (no claim about what I think now)
 
-> `zolozun thovum veyorul.`
+> `zolazun thovum verurul.`
 >
-> z-Olozun | th-MAY | v-departure
+> z-Olazun | th-MAY | v-departure
 >
-> "Olozun might leave."
+> "Olazun might leave."
 
 `/th/` *as-of* moves only the stances. `/h/` *as-of* moves the event's books. A clause may carry one of each, so a past stance can sit next to a past event:
 
-> `zolozun thuhum b_#22,7 thovum huhum b_#22,7 veyorul.`
+> `zolazun thuhum b_#22,7 thovum huhum b_#22,7 verurul.`
 >
-> z-Olozun | [th-as-of.ledger | b-_22,7] | th-MAY | [h-as-of.ledger | b-_22,7] | v-departure
+> z-Olazun | [th-as-of.ledger | b-_22,7] | th-MAY | [h-as-of.ledger | b-_22,7] | v-departure
 >
-> "On 22 July, I thought Olozun might have left by then."
+> "On 22 July, I thought Olazun might have left by then."
 
 With **`thuram`**, the stance is one you would hold, not one you held:
 
-> `zolozun thovum veyorul thuram barl zuzazon vezeyel.`
+> `zolazun thovum verurul thuram barl zuzozen vezuyel.`
 >
-> z-Olozun | th-MAY | v-departure | [th-as-of.bookmark | b-that-clause] | z-Uzazon | v-tell
+> z-Olazun | th-MAY | v-departure | [th-as-of.bookmark | b-that-clause] | z-Uzozen | v-tell
 >
-> "Once Uzazon had spoken, I'd think Olozun might leave."
+> "Once Uzozen had spoken, I'd think Olazun might leave."
 
 Resume works as on `/h/`: **`thuhur`** / **`thurar`** with no `/b/` on the next `/x/` clause keeps the same stance-now.
 
 Unlike the event pair, stance *as-of* also takes a signed [offset](knowing.md#dated-channel) from speech-now in its `/b/`, because it dates only your stance, not the event. Digitless **`brul`** is *back then*, with no amount claimed:
 
-> `zolozun thuhum brul thovum veyorul.`
+> `zolazun thuhum brul thovum verurul.`
 >
-> z-Olozun | [th-as-of.ledger | b-earlier] | th-MAY | v-departure
+> z-Olazun | [th-as-of.ledger | b-earlier] | th-MAY | v-departure
 >
-> "Back then, I thought Olozun might leave."
+> "Back then, I thought Olazun might leave."
 
 Changing your mind is then a change of now, not a contradiction: *I was fairly sure on the 22nd* (`thuhum`) and *I'm unsure now* (no pair) are both true.
 
@@ -817,27 +817,27 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 
 | English | Egabon |
 |---------|--------|
-| *Uzazon* | `uzazon` |
-| *Olozun* | `olozun` |
-| *Ehalon* | `ehalon` |
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Uhelan* | `uhelan` |
 | *RESIDUE* | `hamom` |
 | *PATTERN* | `thobam` |
 | *MAY* | `thovum` |
 | *book* | `ugul` |
-| *challenge* | `umahom` |
-| *rain* | `urelal` |
-| *departure* | `veyorul` |
-| *sit* | `vehuhol` |
-| *tell* | `vezeyel` |
+| *challenge* | `amahum` |
+| *rain* | `erulal` |
+| *departure* | `verurul` |
+| *sit* | `vuhohol` |
+| *tell* | `vezuyel` |
 
 #### English → Egabon {#advanced-english-to-egabon}
 
-**1.** *As of 22 July, Olozun had left and was still gone.*
+**1.** *As of 22 July, Olazun had left and was still gone.*
 
 ::: details Show answer
-`zolozun hamom huhum b_#22,7 veyorul.`
+`zolazun hamom huhum b_#22,7 verurul.`
 
-z-Olozun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
+z-Olazun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
 
 **2.** *the book as of 22 July*
@@ -848,33 +848,33 @@ z-Olozun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 z-book | [g-as-of.ledger | b-_22,7]
 :::
 
-**3.** *As of 22 July, Uzazon is more challenging than Olozun.*
+**3.** *As of 22 July, Uzozen is more challenging than Olazun.*
 
 ::: details Show answer
-`zuzazon zolozun zel wuhum b_#22,7 gumahom.`
+`zuzozen zolazun zel wuhum b_#22,7 gamahum.`
 
-[z-Uzazon | z-Olozun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
+[z-Uzozen | z-Olazun | z-rank/more | [[w-as-of.ledger | b-_22,7] | g-challenge]]
 :::
 
 **4.** *On 22 July, I thought it might rain.* (the doubt was then)
 
 ::: details Show answer
-`thuhum b_#22,7 thovum vurelal.`
+`thuhum b_#22,7 thovum verulal.`
 
 [th-as-of.ledger | b-_22,7] | th-MAY | v-rain
 :::
 
 #### Egabon → English {#advanced-egabon-to-english}
 
-**1.** `zehalon hamom huhum b_#23,7 veyorul. xuzazon hamom huhur vehuhol.`
+**1.** `zuhelan hamom huhum b_#23,7 verurul. xuzozen hamom huhur vuhohol.`
 
 ::: details Show answer
-z-Ehalon | h-RESIDUE | [h-as-of.ledger | b-_23,7] | v-departure . x-Uzazon | h-RESIDUE | h-as-of.ledger | v-sit
+z-Uhelan | h-RESIDUE | [h-as-of.ledger | b-_23,7] | v-departure . x-Uzozen | h-RESIDUE | h-as-of.ledger | v-sit
 
-*As of 23 July, Ehalon had left and was still gone. As of that same day, Uzazon had sat down and was still sitting.*
+*As of 23 July, Uhelan had left and was still gone. As of that same day, Uzozen had sat down and was still sitting.*
 :::
 
-**2.** `thobam bral huram b_#22,7 vurelal.`
+**2.** `thobam bral huram b_#22,7 verulal.`
 
 ::: details Show answer
 [th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain
@@ -882,7 +882,7 @@ z-Ehalon | h-RESIDUE | [h-as-of.ledger | b-_23,7] | v-departure . x-Uzazon | h-R
 *Taking 22 July as now, it would rain, going by the pattern.*
 :::
 
-**3.** `zamol hamom huhum beyorul.`
+**3.** `zamol hamom huhum berurul.`
 
 ::: details Show answer
 z-money | h-RESIDUE | [h-as-of.ledger | b-departure]
@@ -890,35 +890,35 @@ z-money | h-RESIDUE | [h-as-of.ledger | b-departure]
 *As of the departure, the money still stood.*
 :::
 
-**4.** `zolozun thovum veyorul thuram barl zuzazon vezeyel.`
+**4.** `zolazun thovum verurul thuram barl zuzozen vezuyel.`
 
 ::: details Show answer
-z-Olozun | th-MAY | v-departure | [th-as-of.bookmark | b-that-clause] | z-Uzazon | v-tell
+z-Olazun | th-MAY | v-departure | [th-as-of.bookmark | b-that-clause] | z-Uzozen | v-tell
 
-*Once Uzazon had spoken, I'd think Olozun might leave.*
+*Once Uzozen had spoken, I'd think Olazun might leave.*
 :::
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *On 22 July, I thought Olozun might leave.* (the doubt was then) `zolozun thuhum b_#22,7 thovum veyorul.` or `zolozun huhum b_#22,7 thovum veyorul.`
+**1.** *On 22 July, I thought Olazun might leave.* (the doubt was then) `zolazun thuhum b_#22,7 thovum verurul.` or `zolazun huhum b_#22,7 thovum verurul.`
 
 ::: details Show answer
-`zolozun thuhum b_#22,7 thovum veyorul.`
+`zolazun thuhum b_#22,7 thovum verurul.`
 
-z-Olozun | [th-as-of.ledger | b-_22,7] | th-MAY | v-departure
+z-Olazun | [th-as-of.ledger | b-_22,7] | th-MAY | v-departure
 
 On `/th/` the pair moves the stance; on `/h/` it moves the event's books and leaves the doubt at speech-now.
 :::
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zuzazon huhum b_#22,7 vehuhol.` / `zuzazon huram b_#22,7 vehuhol.`
+**1.** `zuzozen huhum b_#22,7 vuhohol.` / `zuzozen huram b_#22,7 vuhohol.`
 
 ::: details Show answer
-z-Uzazon | [h-as-of.ledger | b-_22,7] | v-sit
+z-Uzozen | [h-as-of.ledger | b-_22,7] | v-sit
 
-z-Uzazon | [h-as-of.bookmark | b-_22,7] | v-sit
+z-Uzozen | [h-as-of.bookmark | b-_22,7] | v-sit
 
-**`huhum`** claims 22 July as a real dated entry (*as of 22 July, Uzazon sits*); **`huram`** only takes it as a placeholder now (*taking 22 July as now, Uzazon would sit*).
+**`huhum`** claims 22 July as a real dated entry (*as of 22 July, Uzozen sits*); **`huram`** only takes it as a placeholder now (*taking 22 July as now, Uzozen would sit*).
 :::
 

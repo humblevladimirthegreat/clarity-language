@@ -14,9 +14,9 @@ Egabon is not therapy, and its effects are a design intent, not a proven result.
 
 Here is a common ruminating thought in English: *I failed. I'm no good at this, and I never will be.* English lets you say all of that without checking any of it. Here is how the same thought might come out in Egabon:
 
-> `zugavem thahor gulothum. zamun veverexom.`
+> `zuguvem thahor gulothum. zamun veverexom.`
 >
-> /zʉ.ɡä.ve̞m ðä.ɦo̞ɹ ɡʉ.lo̞.ðʉm. zä.mʉn ve̞.ve̞.ɹe̞.ʒo̞m/
+> /zʉ.ɡʉ.ve̞m ðä.ɦo̞ɹ ɡʉ.lo̞.ðʉm. zä.mʉn ve̞.ve̞.ɹe̞.ʒo̞m/
 >
 > z-failure | th-INTUITION.weak | g-competence-unmet-modifiable . z-speaker | v-triumph-unable-modifiable
 >
@@ -54,9 +54,9 @@ A hard moment, a label, or a past pattern hardens into a fixed fact about a pers
 
 ##### How far a label reaches {#how-far-a-label-reaches}
 
-English *Olozun is angry* can mean one outburst or the kind of person Olozun is. One act slides into a verdict on someone's nature, and a name for a problem (*lazy*, *anxious*) starts to sound like its cause.
+English *Olazun is angry* can mean one outburst or the kind of person Olazun is. One act slides into a verdict on someone's nature, and a name for a problem (*lazy*, *anxious*) starts to sound like its cause.
 
-[Label scope](predication.md#label-scope) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Uzazon*), or about a type that follows the person across scenes.
+[Label scope](predication.md#label-scope) lets any label say what kind of claim it makes: about this stretch of doing, about a practiced role, about one relationship (*a stranger to Uzozen*), or about a type that follows the person across scenes.
 
 Marking a label's reach helps you describe what happened without turning it into a verdict on who someone is, yourself included.
 

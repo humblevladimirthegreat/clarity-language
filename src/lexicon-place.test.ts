@@ -66,7 +66,7 @@ describe("placement", () => {
   it("refuses a five-letter row with no kind", async () => {
     await assert.rejects(
       placePublishedRoots([{ emoji: "😀", concrete: "grin", abstract: "delight", englishByPos: "" }], [], { tailSteps: 0 }),
-      /need a kind and shape/,
+      /need a kind, a shape/,
     );
   });
 
