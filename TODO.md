@@ -18,9 +18,8 @@ use [skip-cd] for amplify to not deploy.
 -reconsider adjective bars (poor/rich, weak/strong)
 -consider replacing some compounds with tail suffixes, rename x-compounds to just compounds
 -consider respelling three-letter overlays with tails
--tail vowel rebalance: 70 rows got a new `shape` in lexicon-published.csv (more `e`, fewer `o`) but keep their old roots. Respell them (`convert-word --lexicon --only …` per changed row), then retie-docs, build, test. `npm test` fails on the tail check until then.
+-tail vowel rebalance: 306 rows got a new `shape` in lexicon-published.csv (broader `e`, literal `holds`, outline/direction fallback instead of an `o` default) but keep their old roots. Respell them (`convert-word --lexicon --only …` per changed row), then retie-docs, build, test. `npm test` fails on the tail check until then.
 -number-respelling.md: re-pick the two number fillers against the root-tails lexicon. With `w` + `y` as fillers, tools and people drop out of the 00–99 mnemonic table, and column 9 is all flags (number-mnemonic.md § lexicon coverage, open question 6)
--for named jurisdictions, heavily prioritize english echo even over normal syllable rules (still has to start with vowel and use alphabet). Alternatively use their official bird/plant/etc with n suffix and vowel indicating local/state/federal/supernational. Or just use opaque spans?
 -redo examples, lint instructions for look_alike_gap should mention that you may need to change the examples more
 
 -claritish editor phase 3 follow-ups (docs/proposals/partially-implemented/claritish-editor.md, Phase 3 as built): decide on part-of-speech tagging for label cues (measured: word list 34/50 recall, 1/25 false positives; compromise POS 17/50, 5/25, mostly role nouns like nurse/teacher; together 38/50, 6/25); the misses are non-pronoun subjects (my boss, Mark, Dad) and words not in the trait list (ridiculous, sensitive, impossible, clueless, creep, cheap, plurals like idiots, hyphenated two-faced); consider per-emotion-word card presets (confused → understanding). address the vitepress build warning while you're at it (caused by ClaritishCard)

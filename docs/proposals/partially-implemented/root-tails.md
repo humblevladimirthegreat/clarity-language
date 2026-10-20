@@ -10,7 +10,7 @@
 
 - A five-letter root `V C V C V` has two parts. The **onset** (the first three letters) keeps roots apart. The **tail** (the second consonant and the final vowel) carries meaning.
 - The **second consonant** says what **kind** of thing the root's concrete sense is: a creature, a person, a feeling, a food, a tool, and so on. There are twelve kinds, one per root consonant, and each is anchored to a job that letter already has in the grammar.
-- The **final vowel** says the thing's **job**, reusing the vowel series: **a** holds, **o** one, **e** order, **u** takes away. Kind-specific pictures (a bowl, a road, a knife) are how that job shows up, not a second code. The same extra is what a tail suffix would add (`tail-suffix.md`).
+- The **final vowel** says the thing's **job**, reusing the vowel series: **a** holds, **o** one, **e** order, **u** takes away. Kind-specific pictures (a bowl, a road, a knife, a ball) are how that job shows up, not a second code; when no job fits, the row's outline (or, for feelings and actions, its direction) picks the picture ([fallback](#vowel-fallback)). The same extra is what a tail suffix would add (`tail-suffix.md`).
 - The onset is chosen so that few roots of the **same kind** share its **first two letters**, and for a **first consonant that matches the English word's**. Roots of different kinds are told apart by the tail and cost nothing. Learning order plays no part; the [phase 3](#phase-3) lint covers teaching. The full English echo becomes a tie-break.
 - The **second-consonant ban is lifted**. The tail needs all twelve consonants second. Two checks replace the ban ([ban lift](#ban-lift)).
 - Three-letter roots and the final vowel of named (flag) rows are exempt.
@@ -100,29 +100,55 @@ The vowel series is reused unchanged: **a** add / hold, **o** one, **e** order, 
 
 On a simple root there is no left piece. Read the vowel as the thing's own job.
 
-| Vowel | Job | Things | People | Feelings | Doing | Places | Signs | Counting |
-|-------|-----|--------|--------|----------|-------|--------|-------|----------|
-| `a` | **holds or gathers**: containers, groups, masses, open spaces, what comes many at once, what stores; as a suffix, the new thing holds the left | bowl, bag, rice, soup, berries, fries, oyster, cassette | parent, host, family | joy, love, gratitude, air-kiss | party, festival | field, sea, stadium | folder, chart, globe | money, amount |
-| `o` | **one of the kind**, the default; as a suffix, a kind characterized by the left | ball, egg, apple, lamp | baby, a person | calm, surprise, thought | jump, one act | island, hut | circle, dot | coin, die |
-| `e` | **order**: ranked, sequenced, a stage or cycle, a path you travel or are led along, a heading; as a suffix, arranged or in sequence from the left | ladder, clock, road, gold / silver / bronze, rainbow colors, moon, chick, frog, horse, cane, chain link | king, judge, police | salute, nod, plead, awe | race, walk, train, cooking | road, north | arrow, skip, loop, reload, shuffle | clock, calendar, rhythm |
-| `u` | **takes away or works against**: cuts, removes, hides, ends, forbids, stings, sickens, wards off; as a suffix, undoes the left | knife, scissors, eraser, poison, lemon, onion, plunger, squid (ink) | thief, villain, ghost | fear, sadness, disgust, dizzy, skeptical | fight, fall, escape | cave, cemetery, volcano | warning, no-entry, cross, nazar, copyright | minus, hourglass, decrescendo |
+| Vowel | Job | Picture (fallback) | Rows | Things | People | Feelings | Doing | Places | Signs | Counting |
+|-------|-----|--------------------|------|--------|--------|----------|-------|--------|-------|----------|
+| `a` | **holds or gathers**: containers, groups, masses, open spaces, what comes many at once, what stores, what you go inside; as a suffix, the new thing holds the left | a bowl: hollow or open | 353 (32%) | bowl, bag, rice, berries, hat, lamp, flower, coconut, hamburger | parent, host, family, bellhop, kiss | joy, love, gratitude, wink | party, team sports, balloon | field, sea, house, school, church | folder, chart, paper | money, bell, drum |
+| `o` | **one of the kind**: whole, compact, one lump; as a suffix, a kind characterized by the left | a ball: round or compact | 227 (21%) | ball, egg, apple, ring, rock | a person, nerd, angel | calm, surprise, thought | jump, stand, dice | island, statue, chair | circle, dot, question mark | coin, die, guitar |
+| `e` | **order**: ranked, sequenced, a stage or cycle, a path you travel or are led along, a heading; as a suffix, arranged or in sequence from the left | a road: long | 264 (24%) | ladder, clock, road, gold / silver / bronze, pen, tree, banana, giraffe, leg, wing | baby, child, king, judge, learn | salute, nod, awe, blush | race, walk, swim, bicycle, golf | road, north, tower, station | arrow, loop, page, exclamation | clock, calendar, sunrise, flute |
+| `u` | **takes away or works against**: cuts, removes, hides, ends, forbids, stings, sickens, wards off; as a suffix, undoes the left | a blade: sharp or spiky | 245 (22%) | knife, scissors, poison, lemon, helmet, umbrella, pill, tooth, cactus, pineapple | thief, villain, ghost, heal | fear, sadness, disgust, dizzy, mockery | fight, fall, escape, pinch | cave, cemetery, castle, customs | warning, no-entry, cross, asterisk | minus, hourglass, whistle, night |
 
-**Tie rule:** test **u → a → e → o**, and use the first that fits. A knife is also a tool you could call one of its kind, but it cuts, so `u`. A basket is one object, but it holds, so `a`. A road is a place, but it is a path, so `e`. Anything left is `o`.
+Rows per kind (five-letter rows by `shape` in the lexicon; named rows excluded, their vowel is free):
+
+| Kind | `a` | `o` | `e` | `u` | Total |
+|------|-----|-----|-----|-----|-------|
+| `z` creature | 30 | 22 | 15 | 38 | 105 |
+| `y` person | 24 | 21 | 28 | 20 | 93 |
+| `m` mind | 18 | 18 | 7 | 41 | 84 |
+| `b` body | 49 | 16 | 21 | 28 | 114 |
+| `v` doing | 49 | 16 | 37 | 11 | 113 |
+| `h` place | 42 | 15 | 24 | 13 | 94 |
+| `l` nature | 30 | 20 | 20 | 15 | 85 |
+| `d` food | 58 | 35 | 11 | 12 | 116 |
+| `w` tool | 22 | 26 | 20 | 26 | 94 |
+| `g` sign | 18 | 24 | 33 | 27 | 102 |
+| `r` counting | 13 | 14 | 48 | 14 | 89 |
+| **All** | 353 | 227 | 264 | 245 | 1089 |
+
+**Tie rule:** test the jobs **u → a → e**, and use the first that fits. A knife is also a tool you could call one of its kind, but it cuts, so `u`. A basket is one object, but it holds, so `a`. A road is a place, but it is a path, so `e`. When no job fits, the [fallback](#vowel-fallback) picks the vowel; `o` is never chosen just because nothing else was tested.
+
+**Holds is literal.** A building holds the people inside it (house, school, hospital, church, cinema), headwear holds the head (hat, turban), a lamp holds its flame, a balloon holds air, a bun holds its filling (hamburger, hotdog), a shell holds its animal (turtle, snail). A category gathers its members (animal, fruit). Something that protects tests `u` first: a helmet, armor, an umbrella and a castle ward off, so `u`.
 
 **Order is broad.** `e` is not only for paths and clocks. Test it in every kind:
 
-- **Ranked sets:** gold, silver and bronze (and a medal) rank; the rainbow colors (red, orange, yellow, blue, purple) are a series. Colors off the spectrum (pink, brown, black, white, gray) stay `o`.
-- **Stages and cycles:** a chick, a frog, a butterfly and a phoenix are stages in a life; the moon goes through phases and the sun through its day; cooking is steps in order; loop, reload, repeat and shuffle run or rearrange a sequence.
-- **Led along a path:** a horse, a donkey and a guide dog carry or lead you along a way; a cane, a lantern and a chain link do the same as tools. A comet is its path.
-- **Rank among people and creatures:** a nod or a plea addresses someone by standing; awe looks up; a gorilla leads its troop.
+- **Ranked sets:** gold, silver and bronze (and a medal) rank; the rainbow colors (red, orange, yellow, blue, purple) are a series.
+- **Stages and cycles:** a chick, a frog, a butterfly and a phoenix are stages in a life, and so are baby, child, boy, girl, man and woman; the moon goes through phases and the sun through its day; cooking, learning and building are steps in order; loop, reload, repeat and shuffle run or rearrange a sequence.
+- **Led along a path:** a horse, a donkey and a guide dog carry or lead you along a way, and so do a bicycle, a wheelchair and a foot; a cane, a lantern and a chain link do the same as tools. A comet is its path; golf is played over a course.
+- **Rank among people and creatures:** a nod, a bow or a plea addresses someone by standing; awe looks up; a gorilla leads its troop.
 
-Each kind has a natural `e`, so no kind should be left without one.
+### Fallback {#vowel-fallback}
 
-Length, height, and a pointed outline are not a job. A snake harms, so `u`. A banana, a tower, and a pen are `o` unless another job fits (noodles as a mass `a`; a herd animal `a`; a ranked role `e`).
+When no job fits, the vowel comes from a question every row of the kind can answer. Each answer is the picture of a job, so the fallback adds no second code: the bowl holds, the road leads, the blade cuts, the ball is one.
 
-So *ant* is `VCVza` (a creature that lives in a colony), *snake* is `VCVzu`, *wolf* is `VCVzu`, and *knife* is `VCVwu`.
+- **Things you can see** (creatures, body, nature, food, tools, places, signs, counting): the **outline**. Hollow or open (a cup, a bloom, a bun) is `a`; long (a pen, a tree, a carrot, a giraffe, a flute) is `e`; sharp or spiky (horns, a cactus, a triangle, an asterisk) is `u`; round or compact (an apple, a ring, a mouse, a coin) is `o`.
+- **Feelings and faces** (`m`): which way the feeling points. Toward others (wink, tease, solidarity) is `a`; toward a standing or what comes next (peek, smugness, embarrassment) is `e`; against (mockery, sass) is `u`; turned inward (calm, sleepy, think, shrug) is `o`.
+- **Actions** (`v`, and person rows that name an action or gesture): how it unfolds. Done with others (team sports, wave, kiss, massage) is `a`; along a course or through steps (swim, ride, learn, worship) is `e`; stops, hurts or knocks over (pinch) is `u`; done once on the spot (stand, kneel, sleep, thumbs-up) is `o`.
+- **Beings** (`y` people who aren't an action): a life stage or rank is `e`; one who carries or gives to others (santa, bellhop) is `a`; otherwise `o` (nerd, angel, fairy).
 
-The `o` default will be the fullest vowel in most kinds. That's acceptable: `o` means "nothing special about its job", which is easy to remember.
+Symbols of a faith or a gender stay `o` whatever their outline, so `u` never reads as *against* a group.
+
+So *ant* is `VCVza` (a creature that lives in a colony), *snake* is `VCVzu`, *wolf* is `VCVzu`, *knife* is `VCVwu`, *giraffe* is `VCVze` (long), and *apple* is `VCVdo` (round).
+
+`o` is now the smallest vowel overall. It reads as "one whole lump": round, compact, or turned inward.
 
 ## Exceptions {#exceptions}
 
@@ -389,9 +415,11 @@ On main today, `convert-word --lexicon --all` stops with `short roots too close 
 | Alternative | Why not |
 |-------------|---------|
 | **Keep English echo as the main criterion** | It helps English speakers produce a half-remembered word, and little else; it gives nothing to other learners and leaves the vowels arbitrary ([motivation](#motivation)). Kept as a first-consonant cost, which carries most of its recall value, and a tie-break. |
-| **Cross-language sound symbolism** (round ↔ `m l o`, small ↔ `e u`, body parts naming themselves: lips `m`, nose `n`, tongue `l`) | Egabon's letters cover it poorly: voicing is free, there's no /i/, and `r` isn't trilled. It applies strongly to only about a quarter of rows, and it rests on outside intuitions, not on anything the learner learns in Egabon. The tail's job vowels already capture its main contrasts (default `o`, container `a`, path `e`). |
+| **Cross-language sound symbolism** (round ↔ `m l o`, small ↔ `e u`, body parts naming themselves: lips `m`, nose `n`, tongue `l`) | Egabon's letters cover it poorly: voicing is free, there's no /i/, and `r` isn't trilled. It applies strongly to only about a quarter of rows, and it rests on outside intuitions, not on anything the learner learns in Egabon. The tail's job vowels and their [outline fallback](#vowel-fallback) already capture its main contrasts (round `o`, hollow `a`, long `e`, sharp `u`), learned inside Egabon. |
 | **Per-kind subcategory vowels** (`a` = mammal on creatures, room on places, …) | A suffix needs the vowel to compose with any kind. Forty-eight cell meanings drop the vowel series and recreate a Wilkins taxonomy inside each kind (`tail-suffix.md`). |
 | **Sound symbolism on the onset** | The onset is where distinctiveness lives. Symbolism there would pull related meanings toward the same first letters, where confusion costs most, and would compete with the tail's shape vowel. |
+| **`o` as the default job** (anything with no job is `o`) | `o` was 43–55% of most kinds, so the vowel told a learner little and `e` was nearly empty for creatures, feelings, food and nature. The [fallback](#vowel-fallback) gives every row a positive answer instead. |
+| **A different default vowel per kind** | Learners know the kind from the consonant, so balance within a kind is what matters, and a per-kind default leaves it unchanged. |
 | **A three-letter tail** (middle vowel too) | Leaves 48 onsets per cell, so most roots' nearest neighbor shares their kind and shape ([root shape](#root-shape)). |
 | **Kind at the start of the root** (the order of Wilkins-style philosophical languages) | Related words would share their most salient letters, and a slip would land on a sister meaning. |
 | **Perceptual features in the consonant** (size, hardness) instead of kind | Features are graded and often both apply (a coconut is round *and* hard). Kind is closer to a fact about the thing, so a learner can predict it. |
