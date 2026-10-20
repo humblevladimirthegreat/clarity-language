@@ -204,3 +204,34 @@ The test covers digit pairs and digit–filler pairs. The exponent filler is che
 | Marker harmony (each digit copies the marker vowel) | Leaves no vowel redundancy to catch a misheard consonant. |
 
 **Accepted costs.** `r` still sounds like a marker (8 is `re`, so *the 8th* is `grerel`); taking `r` off the digits would make it the exponent. `wa` / `wu` is a weaker sign than a stop, and `wu` does not exist in Japanese. The ending block's order needs its own cues, and 9 (`nu`) has none. The weights come from published phonetics, not from tests with Agebon listeners.
+
+### Finger code
+
+The [finger code](../grammar/finger-code.md) gives each letter a shape counted on the fingers, with a separate piano form and its own guitar strings.
+
+**Handedness.** The hands follow dominance, not left and right: the consonant hand holds fourteen shapes, including the hooked runs and grace shapes, and the vowel hand holds four. Sign languages split the work the same way. Piano is the exception (the bass is always on the left, so the left hand plays vowels). A left-handed guitar mirrors the instrument, so the picking hand still carries consonants.
+
+**Vowel hand sideways.** Every vowel shape is also a consonant shape, so the vowel hand's fingers point toward the other hand. A sideways palm was rejected: seen edge-on, the raised fingers hide behind each other.
+
+**Two forms (shape and piano).** In the air most people can't raise the ring finger alone, and a lone middle finger is rude, so shapes keep to runs. On piano, whole runs make clusters that blur by ear, so the keys strike the run's end. A run is fully described by its last finger, so the two forms carry the same letters. Hooking means nothing on a key, so the vowel hand's thumb marks it.
+
+**Count order for vowels.** On first syllables `a` (31%), `u` (28%), `o` (23%) and `e` (18%) in the doc examples, so the easy V shape lands on the commonest stressed vowel. In running text the four vowels are about equally common.
+
+| Alternative | Why not |
+|-------------|---------|
+| Frequency hand (single fingers for `z b g d h`, the next easiest pairs for the next letters) | Faster to play, but loses the count logic and must be learned as a table |
+| One form everywhere: the piano layout | Raised in the air it gave `r`, `h`, `y` and `x` hard shapes, made `d` a lone middle finger and `a` a lone ring finger. Pressed into a palm, the receiver had to tell which single fingertip landed, which touch does poorly at speed |
+| One form everywhere: whole runs on piano | About 2.7 notes per consonant; a quarter of consonants become four- or five-note clusters, and a listener can't tell four notes from five. `e` in the bass is a cluster around D♯3 |
+| Separate shapes for `b y th x` (hooked index, crossed fingers, thumb–index circle, thumb + index + pinky) | Four unrelated shapes, and two failed by touch: crossed fingertips land like `d`, and the circle's pinch lands where the index would, so `th` felt like `v`. The plain-finger fixes made `th` / `g` and `x` / `r` differ only by which end of the hand the dots sit at |
+
+**Piano.** Two keys a step apart sound harsh together, and on the black keys neighboring fingers are always a step apart, so no piano form presses two neighboring fingers; `h` is `z` + hook for that reason. The right thumb sits on F♯, the tonic of the black-key pentatonic: `z` is about 30% of onsets and the codas `-l` and `-n` about 75% of codas, so the thumb's key is about a third of all notes. The left hand starts on D♯, the only start where no beat sounds a second or a ninth. Tried by ear and rejected:
+
+| Alternative | Why not |
+|-------------|---------|
+| Hooked runs as the run's end plus the next finger up, `h` as thumb + index, `x` as 2 + 4 | Three of the four neighbor pairs are whole steps |
+| The same pairs with the upper key flicked | The step is still harsh, even briefly |
+| Each beat's notes played one after another | Striking together sounds better |
+| Consonants in the left hand, vowels in the right | Can be clash-free (consonants from G♯, vowels from A♯), but consonants on top sound clearer |
+| Vowels from F♯ | Puts `e a u` on the tonic chord, but the hook mark then sits a step above `u` |
+
+**Guitar.** The finger shapes don't carry over: a pentatonic scale puts two notes on each string, so some pairs would need one string to sound two notes. Open G keeps every consonant shape inside a G major chord. Standard tuning was tried first (consonants on open D G B E, vowels G2 A2 B2 D3): its open D and E are a ninth apart, it clashed on `r`, `n` and `x` and on many vowel pairs, and no four fretted bass vowels avoid a step with the treble strings.

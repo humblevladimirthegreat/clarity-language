@@ -120,6 +120,7 @@ const ALLOWED_HTML_TAGS = new Set([
   "AgebonInspect",
   "ClaritishEditor",
   "DigitPegs",
+  "FingerCode",
   "GlossOverlay",
   "EnglishHelper",
   "GlossViewer",
