@@ -494,6 +494,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
+| *pie* | `abadal` | 🥧 |
 | *lift* | `vulevol` | 🏋️: its abstract is *exertion* |
 | *arrival* | `vevurol` | 🛬 |
 
@@ -508,7 +509,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *heavy* | `aralom` |
 | *intensity* | `uhavem` |
 | *mango* | `amadol` |
-| *pie* | `abadal` |
 | *doughnut* | `ododol` |
 | *sleep* | `vuzevol` |
 

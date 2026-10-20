@@ -212,21 +212,21 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Olozun* | `olozun` |
 | *Ehalon* | `ehalon` |
 | *sit* | `vehuhol` |
-| *sneak* | `vezeyul` |
+| *peek* | `vubemol` |
 | *run* | `varuvel` |
 | *haste* | `hedarem` |
 | *angry* | `onemul` |
 
 #### English → Egabon {#beginner-english-to-egabon}
 
-**1.** *Uzazon tells Olozun that Ehalon sneaks.*
+**1.** *Uzazon tells Olozun that Ehalon peeks.*
 
 ::: details Show answer
-`zuzazon vezeyel bolozun darl zehalon vezeyul.`
+`zuzazon vezeyel bolozun darl zehalon vubemol.`
 
-z-Uzazon | v-tell | b-Olozun | d-that-clause | z-Ehalon | v-sneak
+z-Uzazon | v-tell | b-Olozun | d-that-clause | z-Ehalon | v-peek
 
-**Also correct:** `zuzazon bolozun vezeyel darl zehalon vezeyul.`
+**Also correct:** `zuzazon bolozun vezeyel darl zehalon vubemol.`
 :::
 
 **2.** *Olozun runs because a guard sees Ehalon.*
@@ -247,12 +247,12 @@ z-Olozun | v-run | [th-because | b-that-clause] | z-guard | d-Ehalon | v-see
 z-Uzazon | v-sit | [h-although | b-guard]
 :::
 
-**4.** *A guard sees whether Olozun sneaks.*
+**4.** *A guard sees whether Olozun peeks.*
 
 ::: details Show answer
-`zayoyul vanobol dorl zolozun vezeyul.`
+`zayoyul vanobol dorl zolozun vubemol.`
 
-z-guard | v-see | d-whether-clause | z-Olozun | v-sneak
+z-guard | v-see | d-whether-clause | z-Olozun | v-peek
 :::
 
 **5.** *Uzazon talks to the guard who screams.*
@@ -281,12 +281,12 @@ z-Ehalon | v-scream . x-therefore | z-guard | v-run
 *Ehalon screams. Therefore a guard runs.*
 :::
 
-**2.** `zolozun vezeyul hezom barl zayoyul duzazon vanobol.`
+**2.** `zolozun vubemol hezom barl zayoyul duzazon vanobol.`
 
 ::: details Show answer
-z-Olozun | v-sneak | [h-although | b-that-clause] | z-guard | d-Uzazon | v-see
+z-Olozun | v-peek | [h-although | b-that-clause] | z-guard | d-Uzazon | v-see
 
-*Olozun sneaks although a guard sees Uzazon.*
+*Olozun peeks although a guard sees Uzazon.*
 :::
 
 **3.** `zehalon vanobol dorl zayoyul vehuhol.`
@@ -305,12 +305,12 @@ z-guard | h-haste | v-run | [th-if | b-that-clause] | z-Olozun | v-scream
 *A guard runs hastily if Olozun screams.*
 :::
 
-**5.** `zolozun vezeyul. zayoyul dolozun vanobol.`
+**5.** `zolozun vubemol. zayoyul dolozun vanobol.`
 
 ::: details Show answer
-z-Olozun | v-sneak . z-guard | d-Olozun | v-see
+z-Olozun | v-peek . z-guard | d-Olozun | v-see
 
-*The guard sees Olozun, who sneaks.*
+*The guard sees Olozun, who peeks.*
 :::
 
 **6.** `zehalon vezeyel bayoyul darl zuzazon gonemul vehuhol.`
@@ -335,12 +335,12 @@ z-Olozun | v-see | d-whether-clause | z-Uzazon | v-run
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Olozun sneaks despite a guard.* <!-- lint: error -->`zolozun vezeyul hezom barl zayoyul.`
+**1.** *Olozun peeks despite a guard.* <!-- lint: error -->`zolozun vubemol hezom barl zayoyul.`
 
 ::: details Show answer
-`zolozun vezeyul hezom bayoyul.`
+`zolozun vubemol hezom bayoyul.`
 
-z-Olozun | v-sneak | [h-although | b-guard]
+z-Olozun | v-peek | [h-although | b-guard]
 
 *Despite* takes a noun: put the guard in `/b/` right after **`hezom`**. With **`barl`**, `zayoyul` becomes a whole sentence of its own.
 :::
@@ -595,6 +595,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Egabon | Cue |
 |---------|--------|-----|
 | *luggage* | `ulabal` | 🧳 |
+| *sneak* | `vezeyul` | 🥷 |
 | *however* | `xezom` | 🦓 from *zebra*: two stripes, still one animal |
 | *meanwhile* | `xogerem` | 🕰️ from *clock*: time passing beside the last claim |
 | *next* | `xevewem` | 🎞️ from *film*: the following frame |
@@ -621,7 +622,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *see* | `vanobol` |
 | *find* | `vemawol` |
 | *run* | `varuvel` |
-| *sneak* | `vezeyul` |
 | *tell* | `vezeyel` |
 | *scream* | `vazomul` |
 

@@ -137,7 +137,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *surprise* | `ezul` | 😮 |
 | *sit* | `vehuhol` | 🪑 from *chair* |
-| *sneak* | `vezeyul` | 🥷 |
+| *peek* | `vubemol` | 🫣 |
 | *run* | `varuvel` | 🏃 |
 
 **Review:**
@@ -252,12 +252,12 @@ y-Olozun | y-prohibition | v-run
 *Olozun, don’t run!*
 :::
 
-**6.** `zehalon weluzom gonemul vezeyul.`
+**6.** `zehalon weluzom gonemul vubemol.`
 
 ::: details Show answer
-[z-Ehalon | [w-very | g-angry]] | v-sneak
+[z-Ehalon | [w-very | g-angry]] | v-peek
 
-*A very angry Ehalon sneaks.*
+*A very angry Ehalon peeks.*
 :::
 
 #### Pick one {#beginner-pick-one}

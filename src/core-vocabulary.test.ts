@@ -11,6 +11,10 @@ import {
   findCheckpoint,
   firstAppearance,
   lintCoreCounts,
+  lintLookAlikes,
+  LOOK_ALIKE_GAP,
+  lookAlikeMoves,
+  oneLetterApart,
   spacingPlan,
   stageCheckpoints,
   type BankEntry,
@@ -192,6 +196,57 @@ describe("lintCoreCounts", () => {
       `review.md *${CLOSED.swan}* \`${CLOSED.swan}\`: a level review introduces no words; list it under **Review**`,
     ]);
     assert.deepEqual(details([...legacy, cp("review.md#beginner-practice", true, review, [], true)], earlier), []);
+  });
+});
+
+describe("lintLookAlikes", () => {
+  // Checkpoints a0..a{n-1}, each introducing the roots given for it.
+  const path = (...roots: string[][]) => {
+    const checkpoints = roots.map((rs, i) => cp(`p${i}.md#p`, true, rs.map((r) => entry(r, "new", 10 + i))));
+    const core = new Map(roots.flatMap((rs, i) => rs.map((r) => [r, `p${i}.md#p`] as [string, string])));
+    return { checkpoints, core };
+  };
+
+  it("counts one substitution, not length changes or two letters", () => {
+    assert.equal(oneLetterApart("abovu", "abavu"), true);
+    assert.equal(oneLetterApart("abovu", "abovu"), false);
+    assert.equal(oneLetterApart("abovu", "ebavu"), false);
+    assert.equal(oneLetterApart("abo", "abovu"), false);
+  });
+
+  it("flags look-alikes in one checkpoint and closer than the gap, at the later one", () => {
+    const { checkpoints, core } = path(["abovu", "abavu"], ["odozo"], ["odoza"]);
+    assert.deepEqual(
+      lintLookAlikes(checkpoints, core).map((f) => `${f.page}:${f.line} ${f.detail.split(":")[0]}`),
+      [
+        "p0.md:10 `abovu` is one letter from `abavu`, introduced at this checkpoint",
+        "p2.md:12 `odoza` is one letter from `odozo`, introduced at p1.md#p",
+      ],
+    );
+  });
+
+  it("passes look-alikes the gap apart", () => {
+    const { checkpoints, core } = path(["odozo"], ...Array.from({ length: LOOK_ALIKE_GAP - 1 }, () => []), ["odoza"]);
+    assert.deepEqual(lintLookAlikes(checkpoints, core), []);
+    assert.equal(lintLookAlikes(checkpoints, core, LOOK_ALIKE_GAP + 1).length, 1);
+  });
+});
+
+describe("lookAlikeMoves", () => {
+  it("walks later uses until one is clash-free, skipping level reviews", () => {
+    const checkpoints = [
+      cp("a.md#p", true, [entry("abovu", "new"), entry("abavu", "new")]),
+      cp("b.md#p", true, [entry("abovu", "review")]),
+      cp("review.md#p", true, [entry("abovu", "review")], [], true),
+      ...Array.from({ length: LOOK_ALIKE_GAP }, (_, i) => cp(`f${i}.md#p`, true, [])),
+      cp("z.md#p", true, [entry("abovu", "review"), entry("n1", "new")]),
+    ];
+    const core = new Map([["abovu", "a.md#p"], ["abavu", "a.md#p"], ["n1", "z.md#p"]]);
+    assert.deepEqual(lookAlikeMoves(checkpoints, core, "abovu"), [
+      { replaceAt: [0], introduceAt: 1, newCount: 1, clashes: ["abavu"] },
+      { replaceAt: [0, 1, 2], introduceAt: checkpoints.length - 1, newCount: 2, clashes: [] },
+    ]);
+    assert.deepEqual(lookAlikeMoves(checkpoints, core, "abavu"), [{ replaceAt: [0], newCount: 0, clashes: [] }]);
   });
 });
 

@@ -197,10 +197,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
-| *sing* | `vezeyol` | 🧑‍🎤 |
+| *dance* | `vudarol` | 🕺 |
 | *stop* | `vuzahul` | 🛑 |
 | *quiet* | `ogawol` | 🔈 |
-| *Onoron* | `onoron` | 🎵 from *note*: a song's name |
+| *Ugoron* | `ugoron` | 🎸 from *guitar*: a dance's name |
 | *Sam* | <code>@&lt;Sam&gt;</code> | a foreign name |
 | *google* | <code>v&lt;google&gt;</code> | a loan verb |
 | *Bravo* | <code>&lt;Bravo&gt;</code> | a foreign word |
@@ -226,12 +226,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-Uzazon | d-CITE[Uzazon] | v-tell
 :::
 
-**2.** *Olozun wrote something like “Ehalon sings.”*
+**2.** *Olozun wrote something like “Ehalon dances.”*
 
 ::: details Show answer
-`zolozun d~[zehalon vezeyol] vuruyel.`
+`zolozun d~[zehalon vudarol] vuruyel.`
 
-z-Olozun | d-CITE.about[z-Ehalon | v-sing] | v-write
+z-Olozun | d-CITE.about[z-Ehalon | v-dance] | v-write
 :::
 
 **3.** *Olozun talks to Sam.* (a foreign name)
@@ -250,12 +250,12 @@ z-Olozun | v-tell | b-NAME.OPAQUE["Sam"]
 y-prohibition | z-Uzazon | v-CITE[v-stop]
 :::
 
-**5.** *Sam, does Uzazon sing?*
+**5.** *Sam, does Uzazon dance?*
 
 ::: details Show answer
-<code>y@&lt;Sam&gt; yol zuzazon vezeyol.</code>
+<code>y@&lt;Sam&gt; yol zuzazon vudarol.</code>
 
-y-NAME.OPAQUE["Sam"] | y-question | z-Uzazon | v-sing
+y-NAME.OPAQUE["Sam"] | y-question | z-Uzazon | v-dance
 :::
 
 **6.** *Olozun walks (quietly).*
@@ -268,28 +268,28 @@ z-Olozun | v-walk | th-ASIDE[h-quiet]
 
 #### Egabon → English {#beginner-egabon-to-english}
 
-**1.** `zolozun d@[onoron olozun] vuruyel.`
+**1.** `zolozun d@[ugoron olozun] vuruyel.`
 
 ::: details Show answer
-z-Olozun | d-NAME.CITE[Onoron | Olozun] | v-write
+z-Olozun | d-NAME.CITE[Ugoron | Olozun] | v-write
 
-*Olozun wrote Onoron Olozun.* (the work)
+*Olozun wrote Ugoron Olozun.* (the work)
 :::
 
-**2.** <code>zolozun v&lt;google&gt; donoron.</code>
+**2.** <code>zolozun v&lt;google&gt; dugoron.</code>
 
 ::: details Show answer
-z-Olozun | v-OPAQUE["google"] | d-Onoron
+z-Olozun | v-OPAQUE["google"] | d-Ugoron
 
-*Olozun googled Onoron.* (a borrowed word)
+*Olozun googled Ugoron.* (a borrowed word)
 :::
 
-**3.** `zehalon g(zehalor vezeyol) voworel.`
+**3.** `zehalon g(zehalor vudarol) voworel.`
 
 ::: details Show answer
-[z-Ehalon | g-ASIDE[z-←Ehalon | v-sing]] | v-walk
+[z-Ehalon | g-ASIDE[z-←Ehalon | v-dance]] | v-walk
 
-*Ehalon, who sings, walks.*
+*Ehalon, who dances, walks.*
 :::
 
 **4.** <code>y&lt;Bravo&gt;.</code>
@@ -300,12 +300,12 @@ y-OPAQUE["Bravo"]
 *Bravo!* (a foreign word)
 :::
 
-**5.** `zehalon d~@[onoron olozun] vezeyol.`
+**5.** `zehalon d~@[ugoron olozun] vudarol.`
 
 ::: details Show answer
-z-Ehalon | d-NAME.CITE.about[Onoron | Olozun] | v-sing
+z-Ehalon | d-NAME.CITE.about[Ugoron | Olozun] | v-dance
 
-*Ehalon sang the song called something like Onoron Olozun.*
+*Ehalon danced the piece called something like Ugoron Olozun.*
 :::
 
 **6.** `zehalon d[vuzahul] vezeyel.`
@@ -318,12 +318,12 @@ z-Ehalon | d-CITE[v-stop] | v-tell
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Ehalon sang Onoron Olozun.* (the song) `zehalon d@[onoron olozun] vezeyol.` or `zehalon d[onoron olozun] vezeyol.`
+**1.** *Ehalon danced Ugoron Olozun.* (the dance) `zehalon d@[ugoron olozun] vudarol.` or `zehalon d[ugoron olozun] vudarol.`
 
 ::: details Show answer
-`zehalon d@[onoron olozun] vezeyol.`
+`zehalon d@[ugoron olozun] vudarol.`
 
-z-Ehalon | d-NAME.CITE[Onoron | Olozun] | v-sing
+z-Ehalon | d-NAME.CITE[Ugoron | Olozun] | v-dance
 
 **`@`** makes the span the work itself; bare brackets quote the words.
 :::
@@ -340,12 +340,12 @@ What was said is the object, so it is a cite in `/d/`; an aside only comments on
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Olozun sang Onoron.* (a work with a one-word name) <!-- lint: error -->`zolozun d@[onoron] vezeyol.`
+**1.** *Olozun danced Ugoron.* (a work with a one-word name) <!-- lint: error -->`zolozun d@[ugoron] vudarol.`
 
 ::: details Show answer
-`zolozun donoron vezeyol.`
+`zolozun dugoron vudarol.`
 
-z-Olozun | d-Onoron | v-sing
+z-Olozun | d-Ugoron | v-dance
 
 A one-word name is an ordinary **-n** word; **`@[…]`** is for titles of several words.
 :::
@@ -573,6 +573,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
+| *Onoron* | `onoron` | 🎵 from *note*: a song's name |
 | *rejection* | `vogegum` | ❌ from *cross* |
 | *possibility* | `hegegom` | ❓ from *question mark* |
 | *letters* | `glelel` | 🔤: a word is its letters |
@@ -585,7 +586,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Olozun* | `olozun` |
 | *Ehalon* | `ehalon` |
 | *topic* | `ozan` |
-| *Onoron* | `onoron` |
 | *attest* | `vodol` |
 | *lie* | `vulamul` |
 | *small* | `gumazom` |

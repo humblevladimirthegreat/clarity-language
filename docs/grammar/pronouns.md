@@ -249,7 +249,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | English | Egabon | Cue |
 |---------|--------|-----|
 | *cook* | `vugayol` | 🧑‍🍳 from *cook*, the person at the stove |
-| *pour* | `vabovul` | 🫗 |
+| *drink* | `vodedal` | 🥤 |
 | *cookie* | `ogudol` | 🍪 |
 | *knife* | `onawul` | 🔪 |
 | *punch* | `vabavul` | 👊 |
@@ -273,14 +273,14 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Egabon {#beginner-english-to-egabon}
 
-**1.** *Uzazon pours. They cook.*
+**1.** *Uzazon drinks. They cook.*
 
 ::: details Show answer
-`zuzazon vabovul. zaxar vugayol.`
+`zuzazon vodedal. zaxar vugayol.`
 
-z-Uzazon | v-pour . z-←agent.same | v-cook
+z-Uzazon | v-drink . z-←agent.same | v-cook
 
-**Also correct:** `zuzazon vabovul. zuzazor vugayol.`
+**Also correct:** `zuzazon vodedal. zuzazor vugayol.`
 :::
 
 **2.** *Olozun finds a knife. Ehalon sees the knife.*
@@ -329,12 +329,12 @@ z-interlocutors | v-cook
 
 #### Egabon → English {#beginner-egabon-to-english}
 
-**1.** `zehalon vugayol. zolozun vabovul. zaxor vazomul.`
+**1.** `zehalon vugayol. zolozun vodedal. zaxor vazomul.`
 
 ::: details Show answer
-z-Ehalon | v-cook . z-Olozun | v-pour . z-←agent.other | v-scream
+z-Ehalon | v-cook . z-Olozun | v-drink . z-←agent.other | v-scream
 
-*Ehalon cooks. Olozun pours. The other one screams.* (Ehalon)
+*Ehalon cooks. Olozun drinks. The other one screams.* (Ehalon)
 :::
 
 **2.** `dogudol vemawol. zaxur vazomul.`
@@ -401,12 +401,12 @@ Olozun was the one told, role vowel **`o`**; `daxar` is the doer, Uzazon.
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *One pours.* (anyone, as a rule) <!-- lint: error -->`zehon vabovul.`
+**1.** *One drinks.* (anyone, as a rule) <!-- lint: error -->`zehon vodedal.`
 
 ::: details Show answer
-`zoben vabovul.`
+`zoben vodedal.`
 
-z-ONE | v-pour
+z-ONE | v-drink
 
 Generic *you* is **`oben`**; **`ehon`** is always the person actually listening.
 :::

@@ -43,7 +43,7 @@ import {
   lintWordBankMarkdown,
   lintWordBankUsage,
 } from "../src/lint/word-bank-docs.js";
-import { lintCoreCounts, stageCheckpoints, storedCore } from "../src/core-vocabulary.js";
+import { lintCoreCounts, lintLookAlikes, stageCheckpoints, storedCore } from "../src/core-vocabulary.js";
 import {
   parseOverlayCsv,
   parsePublishedCsv,
@@ -382,6 +382,7 @@ function main(): void {
   let orderCount = 0;
   let drillCount = 0;
   let coreCount = 0;
+  let lookAlikeCount = 0;
   let reviewCount = 0;
   if (paths.length === 0) {
     // The level review page comes last, so each of its bands closes that level.
@@ -391,9 +392,14 @@ function main(): void {
     orderCount = reportLearningOrder(order, uses, orderReport);
     drillCount = reportDrillCoverage(order, uses);
     const checkpoints = stageCheckpoints(pathPages, (page) => pageMarkdown.get(page), tables, levelReviewPage);
-    for (const finding of lintCoreCounts(checkpoints, storedCore())) {
+    const core = storedCore();
+    for (const finding of lintCoreCounts(checkpoints, core)) {
       coreCount += 1;
       console.error(`docs/grammar/${finding.page}:${finding.line}  core-vocabulary  (${finding.detail})`);
+    }
+    for (const finding of lintLookAlikes(checkpoints, core)) {
+      lookAlikeCount += 1;
+      console.error(`docs/grammar/${finding.page}:${finding.line}  look-alike  (${finding.detail})`);
     }
     const reviewMarkdown = pageMarkdown.get(levelReviewPage);
     if (reviewMarkdown !== undefined) {
@@ -448,6 +454,11 @@ function main(): void {
       `\n${coreCount} core-vocabulary issue(s). Match **New words** / **Review** to the core column, or retarget the cells (docs/meta/translation-exercises.md#core-vocabulary).`,
     );
   }
+  if (lookAlikeCount > 0) {
+    console.error(
+      `\n${lookAlikeCount} look-alike issue(s). Keep roots one letter apart out of nearby checkpoints (docs/meta/translation-exercises.md#look-alikes).`,
+    );
+  }
   if (reviewCount > 0) {
     console.error(
       `\n${reviewCount} level-review issue(s). One item per stage checkpoint, each ending with a **Rule:** link to its section (docs/meta/translation-exercises.md#level-reviews).`,
@@ -481,6 +492,7 @@ function main(): void {
     orderCount +
     drillCount +
     coreCount +
+    lookAlikeCount +
     reviewCount;
   if (fail > 0) {
     process.exit(1);

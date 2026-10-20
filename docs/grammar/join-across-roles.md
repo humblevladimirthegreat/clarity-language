@@ -370,7 +370,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *finish-line* | `evehul` | 🏁 |
 | *teamwork* | `ahevam` | 🤾 from *handball* |
-| *medal* | `emebol` | 🏅 |
 | *group* | `owoyal` | 👥 |
 
 **Review:**
@@ -390,12 +389,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Egabon {#intermediate-english-to-egabon}
 
-**1.** *Uzazon adds the medal.*
+**1.** *Uzazon adds the trophy.*
 
 ::: details Show answer
-`zuzazon demebol van.`
+`zuzazon doderal van.`
 
-z-Uzazon | d-medal | v-includes
+z-Uzazon | d-trophy | v-includes
 :::
 
 **2.** *Olozun runs with Ehalon.*
@@ -422,12 +421,12 @@ z-Olozun | [h-including | b-Ehalon] | v-run
 z-Olozun | [v-run | v-punch | v-and]
 :::
 
-**5.** *Olozun runs, but not because of the medal.*
+**5.** *Olozun runs, but not because of the trophy.*
 
 ::: details Show answer
-`zolozun varuvel thavem bemebol thul.`
+`zolozun varuvel thavem boderal thul.`
 
-z-Olozun | v-run | [th-because | b-medal] | th-not
+z-Olozun | v-run | [th-because | b-trophy] | th-not
 :::
 
 **6.** *Uzazon screamed; I either saw it or was told, not both.*
@@ -448,12 +447,12 @@ z-Olozun | d-trophy | v-choose
 *Olozun chooses the trophy.* (as the one choice)
 :::
 
-**2.** `zevehul guan bemebol.`
+**2.** `zevehul guan boderal.`
 
 ::: details Show answer
-z-finish-line | [g-without | b-medal]
+z-finish-line | [g-without | b-trophy]
 
-*The finish line without the medal.*
+*The finish line without the trophy.*
 :::
 
 **3.** `zahevam gaon buzazon.`
@@ -490,14 +489,14 @@ y-question | th-why | z-Uzazon | v-run
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Olozun runs, refusing the medal.* `zolozun hun bemebol varuvel.` or `zolozun han bemebol varuvel.`
+**1.** *Olozun runs, refusing the trophy.* `zolozun hun boderal varuvel.` or `zolozun han boderal varuvel.`
 
 ::: details Show answer
-`zolozun hun bemebol varuvel.`
+`zolozun hun boderal varuvel.`
 
-z-Olozun | [h-refusing | b-medal] | v-run
+z-Olozun | [h-refusing | b-trophy] | v-run
 
-**`u`** rejects that member; **`han`** would run *with* the medal.
+**`u`** rejects that member; **`han`** would run *with* the trophy.
 :::
 
 **2.** *Uzazon punches; before that, Olozun screamed.* `zuzazon vabavul xuen zolozun vazomul.` or `zuzazon vabavul xan zolozun vazomul.`

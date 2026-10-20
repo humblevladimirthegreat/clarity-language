@@ -85,7 +85,7 @@ The word bank lists the roots this checkpoint introduces. **English** is what yo
 |---------|--------|-----|
 | *school* | `uzuhol` | 🏫: a school teaches, so its abstract is *education* |
 | *book* | `ugul` | 📖: a book holds *knowledge* |
-| *pencil* | `ebewol` | ✏️: pencil marks can be erased, so its abstract is a *draft* |
+| *eraser* | `urowul` | 🪌: an eraser rubs out a mistake, so its abstract is *correction* |
 | *bell* | `eberol` | 🔔: a bell rings to warn, so its abstract is *alert* |
 | *magnify* | `emawol` | 🔍: close looking, so its abstract is *scrutiny* |
 | *Uzazon* | `uzazon` | 🦢 *swan*, abstract *grace* |
@@ -154,13 +154,13 @@ education
 *education*
 :::
 
-**2.** `ebewol`
+**2.** `urowul`
 
 ::: details Show answer
 
-pencil
+eraser
 
-*pencil*
+*eraser*
 :::
 
 **3.** `emawol`
@@ -223,14 +223,14 @@ A name for one person takes **-n**; `uzazol` is a *swan*.
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *draft* <!-- lint: error -->`ebewol`
+**1.** *correction* <!-- lint: error -->`urowul`
 
 ::: details Show answer
-`ebewom`
+`urowum`
 
-draft
+correction
 
-*Draft* is the abstract sense, so it takes **-m**, not **-l**; `ebewol` is the *pencil* itself.
+*Correction* is the abstract sense, so it takes **-m**, not **-l**; `urowul` is the *eraser* itself.
 :::
 
 ## Intermediate {#intermediate}

@@ -131,10 +131,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *pay* | `vamol` |
 | *knife* | `onawul` |
 | *write* | `vuruyel` |
-| *pencil* | `ebewol` |
+| *eraser* | `urowul` |
 | *find* | `vemawol` |
 | *very* | `weluzom` |
-| *sneak* | `vezeyul` |
+| *peek* | `vubemol` |
 | *haste* | `hedarem` |
 | *run* | `varuvel` |
 | *tell* | `vezeyel` |
@@ -167,20 +167,20 @@ z-Ehalon | d-money | [h-in-exchange-for | b-knife] | v-pay
 z-Olozun | [h-on-behalf-of | b-Uzazon] | v-write
 :::
 
-**4.** *Ehalon finds a pencil like Uzazon's.*
+**4.** *Ehalon finds an eraser like Uzazon's.*
 
 ::: details Show answer
-`zehalon debewol gumum buzazon vemawol.`
+`zehalon durowul gumum buzazon vemawol.`
 
-z-Ehalon | [d-pencil | [g-like | b-Uzazon]] | v-find
+z-Ehalon | [d-eraser | [g-like | b-Uzazon]] | v-find
 :::
 
-**5.** *Olozun sneaks very much like a duck.*
+**5.** *Olozun peeks very much like a duck.*
 
 ::: details Show answer
-`zolozun weluzom humum budazal vezeyul.`
+`zolozun weluzom humum budazal vubemol.`
 
-z-Olozun | [[w-very | h-like] | b-duck] | v-sneak
+z-Olozun | [[w-very | h-like] | b-duck] | v-peek
 :::
 
 **6.** *Uzazon and Ehalon walk alike.*

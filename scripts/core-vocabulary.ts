@@ -7,6 +7,9 @@
  *      npm run core-vocabulary -- --for clause.md:beginner [--limit 12]
  *                                              spacing for one checkpoint (page.md:band or page.md#id): roots it may
  *                                              introduce, roots it could pull forward, review roots unused longest
+ *      npm run core-vocabulary -- --look-alikes [--limit 12]
+ *                                              fix options for each look-alike pair: where each root could be
+ *                                              introduced instead, and clash-free substitutes of the same kind
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -18,6 +21,11 @@ import {
   coreReport,
   findCheckpoint,
   firstAppearance,
+  LOOK_ALIKE_GAP,
+  lookAlikeMoves,
+  lookAlikePairs,
+  lookAlikesNear,
+  NOT_CORE_ROOTS,
   spacingPlan,
   stageCheckpoints,
   storedCore,
@@ -39,19 +47,20 @@ const files = [
 /** Pull-forward candidates shown with `--for`. */
 const PULL_FORWARD_SHOWN = 5;
 
-type Options = { write: boolean; force: boolean; for?: string; limit: number };
+type Options = { write: boolean; force: boolean; for?: string; lookAlikes: boolean; limit: number };
 
 function parseArgs(argv: string[]): Options {
-  const options: Options = { write: false, force: false, limit: 12 };
+  const options: Options = { write: false, force: false, lookAlikes: false, limit: 12 };
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i]!;
     if (arg === "--write") options.write = true;
     else if (arg === "--force") options.force = true;
     else if (arg === "--for" && argv[i + 1]) options.for = argv[++i];
+    else if (arg === "--look-alikes") options.lookAlikes = true;
     else if (arg === "--limit" && /^\d+$/.test(argv[i + 1] ?? "")) options.limit = Number(argv[++i]);
     else throw new Error(`Unknown argument: ${arg}`);
   }
-  if (options.for && options.write) throw new Error("--for does not combine with --write");
+  if ((options.for || options.lookAlikes) && options.write) throw new Error("--for and --look-alikes do not combine with --write");
   return options;
 }
 
@@ -83,6 +92,48 @@ function printSpacing(checkpoints: Checkpoint[], core: ReadonlyMap<string, strin
   for (const w of review.slice(0, options.limit)) console.log(`  ${String(w.gap).padStart(3)}  ${show(w)}  last used ${w.lastUsed}`);
   if (review.length === 0) console.log("  (none: first checkpoint with core roots)");
   else if (review.length > options.limit) console.log(`  … ${review.length - options.limit} more (--limit)`);
+}
+
+function printLookAlikes(checkpoints: Checkpoint[], core: ReadonlyMap<string, string>, tables: ClassifyTables, options: Options): void {
+  const pairs = lookAlikePairs(checkpoints, core);
+  const where = (i: number) => `${i + 1} ${checkpoints[i]!.anchor}`;
+  const describe = (root: string) => {
+    const row = tables.published.get(root);
+    const compound = tables.compounds.get(root);
+    const english = row?.concrete || compound?.concrete || root;
+    const abstract = row?.abstract ? `, abstract *${row.abstract}*` : "";
+    const tail = row?.kind ? ` (${row.kind}${row.shape ? ` / ${row.shape}` : ""})` : "";
+    return `${row?.emoji ?? ""} *${english}* \`${root}\`${abstract}${tail}`.trim();
+  };
+  for (const pair of pairs) {
+    const same = pair.earlierAt === pair.laterAt ? "both new there" : `new at ${where(pair.earlierAt)}`;
+    console.log(`${where(pair.laterAt)}: \`${pair.later}\` ~ \`${pair.earlier}\` (${same})`);
+    for (const [root, at] of [[pair.later, pair.laterAt], [pair.earlier, pair.earlierAt]] as const) {
+      console.log(`  ${describe(root)}`);
+      const uses = checkpoints.flatMap((c, i) => (c.entries.some((e) => e.root === root) ? [i + 1] : []));
+      console.log(`    used at checkpoints ${uses.join(", ")}`);
+      for (const move of lookAlikeMoves(checkpoints, core, root)) {
+        const drop = `replace at ${move.replaceAt.map((i) => i + 1).join(", ")}`;
+        if (move.introduceAt === undefined) {
+          console.log(`    move: ${drop}; no later checkpoint uses it, so it leaves the core list (clear its cell)`);
+          continue;
+        }
+        const over = move.newCount > CORE_CAP ? " OVER CAP" : "";
+        const clash = move.clashes.length ? `; clashes ${move.clashes.map((r) => `\`${r}\``).join(", ")}` : "; clash-free";
+        console.log(`    move: ${drop} → introduce at ${where(move.introduceAt)} (${move.newCount}/${CORE_CAP} new${over})${clash}`);
+      }
+      const row = tables.published.get(root);
+      const subs = [...tables.published.values()]
+        .filter((r) => r.root !== root && r.root.length === root.length && !core.has(r.root) && !NOT_CORE_ROOTS.has(r.root))
+        .filter((r) => !row?.kind || r.kind === row.kind)
+        .filter((r) => lookAlikesNear(checkpoints, core, r.root, at).length === 0)
+        .sort((a, b) => Number(b.shape === row?.shape) - Number(a.shape === row?.shape));
+      const shown = subs.slice(0, options.limit).map((r) => `${r.emoji} ${r.concrete} \`${r.root}\``);
+      console.log(`    substitutes at ${at + 1} (same kind, not core, clash-free): ${shown.join(", ") || "(none)"}${subs.length > options.limit ? ` … ${subs.length - options.limit} more` : ""}`);
+    }
+    console.log("");
+  }
+  console.log(`${pairs.length} look-alike pair(s) under ${LOOK_ALIKE_GAP} checkpoints apart.`);
 }
 
 function main(): void {
@@ -123,6 +174,10 @@ function main(): void {
   const core = options.write || stored.size === 0 ? seed : stored;
   if (options.for) {
     printSpacing(checkpoints, core, tables, options);
+    return;
+  }
+  if (options.lookAlikes) {
+    printLookAlikes(checkpoints, core, tables, options);
     return;
   }
   const report = coreReport(checkpoints, core);

@@ -17,6 +17,8 @@ use [skip-cd] for amplify to not deploy.
 -on a phone-width screen, every page on the site scrolls sideways by about 11 px, because of VitePress's top navigation bar.
 -reconsider adjective bars (poor/rich, weak/strong)
 -consider replacing some compounds with tail suffixes, rename x-compounds to just compounds
+-see vowel breakdown of tails
+change LOOK_ALIKE_GAP to 3. Ensure that checks across pages of same band, not across bands of same page.
 -consider respelling three-letter overlays with tails
 -number-respelling.md: re-pick the two number fillers against the root-tails lexicon. With `w` + `y` as fillers, tools and people drop out of the 00–99 mnemonic table, and column 9 is all flags (number-mnemonic.md § lexicon coverage, open question 6)
 -for named jurisdictions, heavily prioritize english echo even over normal syllable rules (still has to start with vowel and use alphabet). Alternatively use their official bird/plant/etc with n suffix and vowel indicating local/state/federal/supernational. Or just use opaque spans?

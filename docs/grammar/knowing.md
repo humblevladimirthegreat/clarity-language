@@ -1414,7 +1414,6 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | English | Egabon | Cue |
 |---------|--------|-----|
 | *cat* | `egazol` | 🐈 |
-| *hat* | `ahobol` | 🧢 |
 
 **Review:**
 
@@ -1436,15 +1435,16 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | *sit* | `vehuhol` |
 | *sleep* | `vuzevol` |
 | *see* | `vanobol` |
+| *dress* | `edebal` |
 
 #### English → Egabon {#advanced-english-to-egabon}
 
-**1.** *Olozun sees a hat that I can see is red.*
+**1.** *Olozun sees a dress that I can see is red.*
 
 ::: details Show answer
-`zolozun dahobol wodom gerolol vanobol.`
+`zolozun dedebal wodom gerolol vanobol.`
 
-z-Olozun | [d-hat | [w-LIVE | g-red]] | v-see
+z-Olozun | [d-dress | [w-LIVE | g-red]] | v-see
 :::
 
 **2.** *I saw Uzazon write three hours ago.*
@@ -1511,12 +1511,12 @@ Open **-m** softens the hair into *a short while ago*; **-l** is *just now*.
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zuzazon dahobol wevom gerolol vanobol.` / `zuzazon dahobol wodom gerolol vanobol.`
+**1.** `zuzazon dedebal wevom gerolol vanobol.` / `zuzazon dedebal wodom gerolol vanobol.`
 
 ::: details Show answer
-z-Uzazon | [d-hat | [w-MEMORY | g-red]] | v-see
+z-Uzazon | [d-dress | [w-MEMORY | g-red]] | v-see
 
-z-Uzazon | [d-hat | [w-LIVE | g-red]] | v-see
+z-Uzazon | [d-dress | [w-LIVE | g-red]] | v-see
 
 Both channels sit on the adjective only: the red is remembered in the first, seen live in the second.
 :::

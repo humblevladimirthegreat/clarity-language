@@ -180,7 +180,7 @@ The word bank has two tables. **New words** are introduced here: **English** is 
 | *Olozun* | `olozun` |
 | *Ehalon* | `ehalon` |
 | *find* | `vemawol` |
-| *pencil* | `ebewol` |
+| *eraser* | `urowul` |
 | *book* | `ugul` |
 | *bell* | `eberol` |
 
@@ -206,14 +206,14 @@ z-Uzazon | v-pay | b-Olozun
 **Also correct:** `zolozun weluzom gonemul vemawol damol.`
 :::
 
-**3.** *Ehalon hastily finds a pencil.*
+**3.** *Ehalon hastily finds an eraser.*
 
 ::: details Show answer
-`zehalon hedarem debewol vemawol.`
+`zehalon hedarem durowul vemawol.`
 
-z-Ehalon | h-haste | d-pencil | v-find
+z-Ehalon | h-haste | d-eraser | v-find
 
-**Also correct:** `zehalon debewol vemawol hedarem.`
+**Also correct:** `zehalon durowul vemawol hedarem.`
 :::
 
 **4.** *I doubt that Uzazon pays Ehalon.*

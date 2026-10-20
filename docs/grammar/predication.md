@@ -159,7 +159,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *guard* | `ayoyul` |
 | *angry* | `onemul` |
 | *very* | `weluzom` |
-| *sneak* | `vezeyul` |
+| *peek* | `vubemol` |
 | *run* | `varuvel` |
 | *see* | `vanobol` |
 
@@ -205,12 +205,12 @@ z-police | [g-SAME | b-Uzazon]
 z-page
 :::
 
-**6.** *Olozun is sneaking.*
+**6.** *Olozun is peeking.*
 
 ::: details Show answer
-`zolozun gezeyul.`
+`zolozun gubemol.`
 
-z-Olozun | g-sneak
+z-Olozun | g-peek
 :::
 
 #### Egabon → English {#beginner-egabon-to-english}

@@ -354,6 +354,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
+| *salad* | `azadal` | 🥗 |
 | *plate* | `oledal` | 🍽️ |
 
 **Review:**
@@ -365,7 +366,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *Olozun* | `olozun` |
 | *Ehalon* | `ehalon` |
 | *doorbell* | `oyeleberol` |
-| *salad* | `azadal` |
 | *flower* | `ovalol` |
 | *croissant* | `agudol` |
 | *see* | `vanobol` |

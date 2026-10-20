@@ -312,6 +312,120 @@ export function lintCoreCounts(checkpoints: readonly Checkpoint[], core: Readonl
   return findings;
 }
 
+/** Fewest checkpoints between the introductions of two look-alike roots (docs/meta/translation-exercises.md#look-alikes). */
+export const LOOK_ALIKE_GAP = 5;
+
+/** Whether two roots are one letter apart: same length, one letter differs. */
+export function oneLetterApart(a: string, b: string): boolean {
+  if (a.length !== b.length) return false;
+  let d = 0;
+  for (let i = 0; i < a.length && d < 2; i++) if (a[i] !== b[i]) d++;
+  return d === 1;
+}
+
+export type LookAlikePair = { earlier: string; earlierAt: number; later: string; laterAt: number };
+
+/** Core roots by introducing checkpoint index, ascending (cells naming no checkpoint left out). */
+function introductions(checkpoints: readonly Checkpoint[], core: ReadonlyMap<string, string>): { root: string; at: number }[] {
+  const order = new Map(checkpoints.map((c, i) => [c.anchor, i]));
+  return [...core]
+    .map(([root, cell]) => ({ root, at: order.get(cell) }))
+    .filter((r): r is { root: string; at: number } => r.at !== undefined)
+    .sort((a, b) => a.at - b.at || (a.root < b.root ? -1 : 1));
+}
+
+/** Two core roots one letter apart whose introductions are fewer than `gap` checkpoints apart. */
+export function lookAlikePairs(checkpoints: readonly Checkpoint[], core: ReadonlyMap<string, string>, gap: number = LOOK_ALIKE_GAP): LookAlikePair[] {
+  const introduced = introductions(checkpoints, core);
+  const pairs: LookAlikePair[] = [];
+  introduced.forEach((later, j) => {
+    for (const earlier of introduced.slice(0, j)) {
+      if (later.at - earlier.at < gap && oneLetterApart(earlier.root, later.root)) {
+        pairs.push({ earlier: earlier.root, earlierAt: earlier.at, later: later.root, laterAt: later.at });
+      }
+    }
+  });
+  return pairs;
+}
+
+/**
+ * Look-alike roots introduced close together (docs/meta/translation-exercises.md#look-alikes):
+ * two core roots one letter apart, of any kind, whose `core` cells name the same checkpoint or
+ * checkpoints fewer than {@link LOOK_ALIKE_GAP} apart. Reported once, at the later introduction.
+ */
+export function lintLookAlikes(
+  checkpoints: readonly Checkpoint[],
+  core: ReadonlyMap<string, string>,
+  gap: number = LOOK_ALIKE_GAP,
+): CoreFinding[] {
+  return lookAlikePairs(checkpoints, core, gap).map(({ earlier, earlierAt, later, laterAt }) => {
+    const c = checkpoints[laterAt]!;
+    const e = c.entries.find((x) => x.root === later);
+    const where = earlierAt === laterAt ? "this checkpoint" : checkpoints[earlierAt]!.anchor;
+    return {
+      page: c.page,
+      line: e?.line ?? c.line,
+      detail: `\`${later}\` is one letter from \`${earlier}\`, introduced at ${where}: pick another word, or move one core cell at least ${gap} checkpoints from the other`,
+    };
+  });
+}
+
+/** Core roots introduced fewer than `gap` checkpoints from `at` that `root` is one letter from (`root` itself left out). */
+export function lookAlikesNear(
+  checkpoints: readonly Checkpoint[],
+  core: ReadonlyMap<string, string>,
+  root: string,
+  at: number,
+  gap: number = LOOK_ALIKE_GAP,
+): string[] {
+  return introductions(checkpoints, core)
+    .filter((r) => r.root !== root && Math.abs(r.at - at) < gap && oneLetterApart(r.root, root))
+    .map((r) => r.root);
+}
+
+export type LookAlikeMove = {
+  /** Checkpoints whose banks would drop the root (each needs its items rewritten). */
+  replaceAt: number[];
+  /** First later checkpoint that uses the root and could introduce it; undefined when none can. */
+  introduceAt?: number;
+  /** New core roots that checkpoint would then have, counting this one. */
+  newCount: number;
+  /** Core roots near `introduceAt` that the root is one letter from. */
+  clashes: string[];
+};
+
+/**
+ * Ways to space one root of a look-alike pair (docs/meta/translation-exercises.md#look-alikes):
+ * each later checkpoint that uses the root, in path order, as the place it would be introduced
+ * instead, with the earlier banks that would have to drop it. A level review never introduces.
+ * Stops at the first clash-free move; a move with no later use means dropping the root everywhere.
+ */
+export function lookAlikeMoves(
+  checkpoints: readonly Checkpoint[],
+  core: ReadonlyMap<string, string>,
+  root: string,
+  gap: number = LOOK_ALIKE_GAP,
+): LookAlikeMove[] {
+  const order = new Map(checkpoints.map((c, i) => [c.anchor, i]));
+  const from = order.get(core.get(root) ?? "") ?? 0;
+  const uses = checkpoints.flatMap((c, i) => (i >= from && c.entries.some((e) => e.root === root) ? [i] : []));
+  const moves: LookAlikeMove[] = [];
+  for (let k = 1; k <= uses.length; k++) {
+    const replaceAt = uses.slice(0, k);
+    const introduceAt = uses[k];
+    if (introduceAt === undefined) {
+      moves.push({ replaceAt, newCount: 0, clashes: [] });
+      break;
+    }
+    if (checkpoints[introduceAt]!.review) continue;
+    const newCount = 1 + [...core.values()].filter((cell) => cell === checkpoints[introduceAt]!.anchor).length;
+    const clashes = lookAlikesNear(checkpoints, core, root, introduceAt, gap);
+    moves.push({ replaceAt, introduceAt, newCount, clashes });
+    if (clashes.length === 0) break;
+  }
+  return moves;
+}
+
 function lineOfOffset(lines: readonly string[], offset: number): number {
   let at = 0;
   for (let i = 0; i < lines.length; i++) {

@@ -86,6 +86,19 @@ The `core` column of the lexicon CSVs orders the learner's content roots by the 
 
 `lint:egabon` checks these rules on `### Practice` checkpoints in path order: each **New words** root has its `core` cell on this checkpoint and each **Review** root an earlier one, the cap, the review minimum (fewer only when fewer than 3 core roots come before), and no `core` cell naming this checkpoint for a root its **New words** leaves out. House names, the `SELF` slot, specials, and sake roots go under **New words** only on the first checkpoint whose bank lists them. Whether a new root is the next in core order stays with the author.
 
+### Look-alikes
+<a id="look-alikes"></a>
+
+Root spellings are placed without regard to learning order ([root tails](lexicon.md#root-tails)), so two roots one letter apart can both be core. A learner who meets them before the tails are taught sees look-alikes, whatever their kinds. The vocabulary choice keeps them apart, not the spelling.
+
+| Rule | Detail |
+|------|--------|
+| **Gap** | Two core roots one letter apart (same length, one letter differs), of any kind, are introduced at least **5** checkpoints apart in path order: their `core` cells never name the same checkpoint or checkpoints 1 to 4 apart |
+| **Fix** | Pick another word for one of the checkpoints, or move one root's introduction: drop it from the banks before a later checkpoint that uses it, and move its `core` cell there |
+| **Scope** | Every core root and listed compound stem with a `core` cell; review use is free, since only introductions are spaced |
+
+`lint:egabon` checks the gap (`look-alike`), and `npm run build` fails on it. `npm run core-vocabulary -- --look-alikes` lists each pair with fix options: the checkpoints that use each root, where each could be introduced instead (with that checkpoint's new count and any new look-alike there), and substitutes of the same kind that clash with no core root near the checkpoint (`--limit` sets how many).
+
 ## Checkpoint setting
 <a id="checkpoint-setting"></a>
 

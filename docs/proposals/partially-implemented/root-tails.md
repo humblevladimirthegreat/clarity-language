@@ -2,7 +2,7 @@
 
 <!-- retie: skip -->
 
-**Status:** PARTIALLY IMPLEMENTED. Phases 1 and 2 are built: every five-letter root is placed by its tail, the language name is **Egabon** (`egabo` + **-n**), and the docs are retied ([phase 2 as built](#phase-2-as-built)). Phase 3 (the checkpoint look-alike lint) is not started. Spellings in this page are phase 1 output; the live ones are in [`lexicon-published.csv`](../../../data/lexicon-published.csv).  
+**Status:** PARTIALLY IMPLEMENTED. Phases 1 and 2 are built: every five-letter root is placed by its tail, the language name is **Egabon** (`egabo` + **-n**), and the docs are retied ([phase 2 as built](#phase-2-as-built)). Phase 3 is built too: the checkpoint look-alike lint runs in `npm run build` ([phase 3 as built](#phase-3-as-built)). Still open: the [`--all` failure](#prerequisite). Spellings in this page are phase 1 output; the live ones are in [`lexicon-published.csv`](../../../data/lexicon-published.csv).  
 **Related:** `tail-suffix.md`; [lexicon editing](../../meta/lexicon.md) ([§ root spellings](../../meta/lexicon.md#root-spellings-come-from-convert-word), [§ root length](../../meta/lexicon.md#root-length), [§ root tails](../../meta/lexicon.md#root-tails), [§ seeds](../../meta/lexicon.md#seeds-concrete-senses-and-pictographs), [§ core vocabulary](../../meta/lexicon.md#core-vocabulary-column)); [clause.md § role letters](../../grammar/clause.md#role-letters); [speech-moves.md § speech act](../../grammar/speech-moves.md#speech-act-beginner) (the vowel series); [word-endings.md](../../grammar/word-endings.md); [x-compounds.md § lexical compounds](../../grammar/x-compounds.md#lexical-compounds); [hooks.md § hook compounds](../../grammar/hooks.md#hook-compounds); [numeric-derivation.md](../../grammar/numeric-derivation.md); [language-name.md](../../meta/language-name.md); [`src/word-converter.ts`](../../../src/word-converter.ts) (`SECOND_CONSONANT_BAN`, `longRootCandidates`, `rankRoots`); [`src/echo-metric.ts`](../../../src/echo-metric.ts); [`src/lexicon-place.ts`](../../../src/lexicon-place.ts); [`src/lexicon-compounds.ts`](../../../src/lexicon-compounds.ts) (`factorizationsForStem`, `validateCompoundRows`); [`src/parse/hook-compounds.ts`](../../../src/parse/hook-compounds.ts) (`parseHookCompoundCite`); [`src/closed-roots.ts`](../../../src/closed-roots.ts); `number-mnemonic.md` and `number-respelling.md` ([interactions](#interactions)).  
 **Design authority:** none until absorbed. One grammar line changes: a hook compound's left piece must be a dictionary root ([hook compounds](#hook-compounds)). The grammar pages don't teach root spellings, so the tails reach learners through a new section in Advanced [phonology](../../grammar/phonology.md#advanced), which dictionary views link to ([phase 2](#phase-2)).
 
@@ -340,6 +340,22 @@ Placement doesn't weigh learning order, and cross-kind pairs cost it nothing. A 
 4. **When:** after phase 2, once the new roots are live. The `--tails` report could preview the conflicts against today's banks, to size the rework.
 
 With this lint, when the tails are taught doesn't affect placement.
+
+### Phase 3 as built (2026-10-20) {#phase-3-as-built}
+
+- **Lint:** `lintLookAlikes` in [`src/core-vocabulary.ts`](../../../src/core-vocabulary.ts) runs in `lint:egabon` beside `lintCoreCounts`. One letter apart means same length, one letter different. It reads only the `core` cells, so review use is free.
+- **N:** `LOOK_ALIKE_GAP` is 5: two look-alikes' introductions are at least 5 checkpoints apart ([translation exercises § look-alikes](../../meta/translation-exercises.md#look-alikes)). Against the banks after phase 2 the count was 2 conflicts at a gap of 1, 8 at 3, 13 at 5 and 27 at 8.
+- **Helper:** `npm run core-vocabulary -- --look-alikes` lists each pair with its fix options: where each root is used, the first later checkpoint that could introduce it instead (with new count and clashes), and clash-free substitutes of the same kind.
+- **Fixes (13 pairs):**
+  - *pencil* became *eraser* in the first four beginner checkpoints, and *pencil* is now introduced at hooks intermediate;
+  - *sneak* became *peek* through the beginner level, and *sneak* is now introduced at dependents intermediate;
+  - *pour* became *drink* at pronouns and plurality, and *pour* is now introduced at hooks beginner;
+  - hooks beginner and the beginner review swapped *salad* for *cookie*, and *salad* is now introduced at x-compounds intermediate;
+  - *pie* became *cake* at numbers, and *pie* is now introduced at comparatives intermediate;
+  - spans beginner swapped *sing* for *dance*, and the song *Onoron* for *Ugoron* (from *guitar*); *sing* is now introduced at causation, and *Onoron* at spans intermediate;
+  - *window* left the core list (causation now uses *rain*, the intermediate review *fog*);
+  - *tuxedo* became *dress*, *ship* became *island* at roles intermediate (*ship* is now introduced at hooks advanced), *medal* became *trophy*, and *hat* became *dress*.
+  - *window*, *tuxedo*, *medal* and *hat* no longer have a `core` cell.
 
 ### The `--all` failure on main {#prerequisite}
 

@@ -63,10 +63,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
+| *sing* | `vezeyol` | 🧑‍🎤 |
 | *seedling* | `uzel` | 🌱 |
 | *flower* | `ovalol` | 💮 |
 | *sun* | `uzalol` | ☀️ |
-| *window* | `ewehol` | 🪟 |
 | *bucket* | `ubowal` | 🪣 |
 | *only if* | `tholum` | 🧻 from *paper-roll*: without it the situation does not run |
 
@@ -80,7 +80,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *if* | `thoyem` |
 | *rain* | `urelal` |
 | *night* | `anurol` |
-| *sing* | `vezeyol` |
 | *see* | `vanobol` |
 | *find* | `vemawol` |
 | *sit* | `vehuhol` |
@@ -103,12 +102,12 @@ z-Uzazon | v-sing | [th-if | b-sun]
 z-flower | [g-only-if | b-seedling]
 :::
 
-**3.** *Ehalon sees a flower only if there is a window.*
+**3.** *Ehalon sees a flower only if there is rain.*
 
 ::: details Show answer
-`zehalon dovalol vanobol tholum bewehol.`
+`zehalon dovalol vanobol tholum burelal.`
 
-z-Ehalon | d-flower | v-see | [th-only-if | b-window]
+z-Ehalon | d-flower | v-see | [th-only-if | b-rain]
 :::
 
 **4.** *There are seedlings if there is rain.*

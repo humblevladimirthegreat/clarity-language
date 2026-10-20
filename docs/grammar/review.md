@@ -32,10 +32,10 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *tomato* | `ududol` |
 | *smell* | `vonobol` |
 | *wind* | `ewolol` |
-| *sneak* | `vezeyul` |
+| *peek* | `vubemol` |
 | *tell* | `vezeyel` |
 | *sandwich* | `azal` |
-| *salad* | `azadal` |
+| *cookie* | `ogudol` |
 | *cook* | `vugayol` |
 | *scream* | `vazomul` |
 | *fight* | `vavavul` |
@@ -109,12 +109,12 @@ z-Ehalon | v-sing | [th-if | b-wind]
 
 #### Egabon → English {#beginner-egabon-to-english}
 
-**1.** `zehalon vanobol darl zolozun vezeyul.`
+**1.** `zehalon vanobol darl zolozun vubemol.`
 
 ::: details Show answer
-z-Ehalon | v-see | d-that-clause | z-Olozun | v-sneak
+z-Ehalon | v-see | d-that-clause | z-Olozun | v-peek
 
-*Ehalon sees that Olozun sneaks.*
+*Ehalon sees that Olozun peeks.*
 
 **Rule:** [Dependent clauses](dependents.md#dependent-clauses)
 :::
@@ -129,12 +129,12 @@ z-Uzazon | v-tell | b-Olozun-x
 **Rule:** [Associative group](plurality.md#associative)
 :::
 
-**3.** `zuzazon dazal ol dazadal vugayol.`
+**3.** `zuzazon dazal ol dogudol vugayol.`
 
 ::: details Show answer
-z-Uzazon | d-sandwich | instead | d-salad | v-cook
+z-Uzazon | d-sandwich | instead | d-cookie | v-cook
 
-*Uzazon cooks a salad instead of a sandwich.*
+*Uzazon cooks a cookie instead of a sandwich.*
 
 **Rule:** [Instead](hooks.md#instead-ol)
 :::
@@ -322,6 +322,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *cry* | `vugamul` |
 | *swim* | `vezevol` |
 | *climb* | `vugavel` |
+| *fog* | `ovalul` |
 | *therefore* | `xodum` |
 | *tent* | `edehol` |
 | *bucket* | `ubowal` |
@@ -329,7 +330,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *cookie* | `ogudol` |
 | *police* | `ebayel` |
 | *duck* | `udazal` |
-| *window* | `ewehol` |
 | *fight* | `vavavul` |
 | *night* | `anurol` |
 | *hammer* | `ahawol` |
@@ -557,14 +557,14 @@ The tag **`yol yuel`** invites a correction; **`yol yael`** leans toward agreeme
 **Rule:** [Tags: asking for an answer](questions.md#tags)
 :::
 
-**6.** *Olozun climbs through the window.* `zolozun vugavel uol bewehol.` or `zolozun vugavel ual bewehol.`
+**6.** *Olozun climbs through the fog.* `zolozun vugavel uol bovalul.` or `zolozun vugavel ual bovalul.`
 
 ::: details Show answer
-`zolozun vugavel uol bewehol.`
+`zolozun vugavel uol bovalul.`
 
-z-Olozun | v-climb | [through | b-window]
+z-Olozun | v-climb | [through | b-fog]
 
-**`uol`** passes through the window; **`ual`** is *out of* it.
+**`uol`** passes through the fog; **`ual`** is *out of* it.
 
 **Rule:** [Extra noun: stacked vowels](hooks.md#extra-noun-intermediate)
 :::

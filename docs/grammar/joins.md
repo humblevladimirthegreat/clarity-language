@@ -925,7 +925,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *ring* | `urubol` | 💍 |
 | *veil* | `ovebul` | 👰 |
-| *tuxedo* | `udabal` | 🤵 |
+| *dress* | `edebal` | 👗 |
 | *kiss* | `vegayol` | 💏 |
 | *small* | `umazom` | 🐁 from *mouse* |
 | *respectively* | `wazem` | 🧦 from *socks*: sort them into matched pairs |
@@ -1020,12 +1020,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Olozun last.*
 :::
 
-**4.** `zul gudabal.`
+**4.** `zul gedebal.`
 
 ::: details Show answer
-[z-no | g-tuxedo]
+[z-no | g-dress]
 
-*There is no tuxedo.*
+*There is no dress.*
 :::
 
 **5.** `zehalon zaom.`

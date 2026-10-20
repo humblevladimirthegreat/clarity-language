@@ -698,7 +698,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Egabon | Cue |
 |---------|--------|-----|
 | *boat* | `oboval` | 🚤 |
-| *ship* | `eheval` | 🚢 |
+| *island* | `elahol` | 🏝️ |
 | *go* | `vevubel` | 👣 from *footprints* |
 | *steal* | `vurazum` | 🦝 from *raccoon* |
 | *west* | `owehel` | ⬅️: west on the map, left on a face |
@@ -762,12 +762,12 @@ z-Olozun | v-steal . z-←bearer-x-steal | v-scream
 y-command | v-walk | z-Ehalon | h-west-th-Uzazon
 :::
 
-**6.** *The boat sits west of the ship.*
+**6.** *The boat sits west of the island.*
 
 ::: details Show answer
-`zoboval vehuhol gowehel beheval.`
+`zoboval vehuhol gowehel belahol.`
 
-z-boat | v-sit | [g-west | b-ship]
+z-boat | v-sit | [g-west | b-island]
 :::
 
 #### Egabon → English {#intermediate-egabon-to-english}
@@ -804,12 +804,12 @@ z-Uzazon | v-walk . z-Olozun | d-←path-x-walk | v-see
 *Uzazon walks. Olozun sees the path Uzazon walks.*
 :::
 
-**5.** `zuzazon vevubel oel beheval. zolozun doexar vanobol.`
+**5.** `zuzazon vevubel oel belahol. zolozun doexar vanobol.`
 
 ::: details Show answer
-z-Uzazon | v-go | [toward | b-ship] . z-Olozun | d-←goal.same | v-see
+z-Uzazon | v-go | [toward | b-island] . z-Olozun | d-←goal.same | v-see
 
-*Uzazon goes toward the ship. Olozun sees the ship.*
+*Uzazon goes toward the island. Olozun sees the island.*
 :::
 
 **6.** `zehalon varuvel. zuzazon vehuhol howehethaxar.`
@@ -822,14 +822,14 @@ z-Ehalon | v-run . z-Uzazon | v-sit | h-west-th-←agent.same
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzazon sits on the ship's left.* `zuzazon vehuhol howehethol beheval.` or `zuzazon vehuhol howehel beheval.`
+**1.** *Uzazon sits on the island's left.* `zuzazon vehuhol howehethol belahol.` or `zuzazon vehuhol howehel belahol.`
 
 ::: details Show answer
-`zuzazon vehuhol howehethol beheval.`
+`zuzazon vehuhol howehethol belahol.`
 
-z-Uzazon | v-sit | [h-west-th-landmark | b-ship]
+z-Uzazon | v-sit | [h-west-th-landmark | b-island]
 
-**`tho`** turns the arrow to the ship's own facing; bare `howehel` is *west of the ship*.
+**`tho`** turns the arrow to the island's own facing; bare `howehel` is *west of the island*.
 :::
 
 **2.** *Ehalon sees something to write with.* `zehalon daexuruyel vanobol.` or `zehalon daoxuruyel vanobol.`

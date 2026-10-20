@@ -258,7 +258,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Ehalon* | `ehalon` |
 | *find* | `vemawol` |
 | *see* | `vanobol` |
-| *pencil* | `ebewol` |
+| *eraser* | `urowul` |
 | *book* | `ugul` |
 
 #### English → Egabon {#beginner-english-to-egabon}
@@ -327,12 +327,12 @@ y-soft-question | z-Ehalon | v-see | d-coat
 *Is Ehalon seeing the coat, I wonder?*
 :::
 
-**2.** `yol zur debewol vemawol.`
+**2.** `yol zur durowul vemawol.`
 
 ::: details Show answer
-y-question | z-wh-else | d-pencil | v-find
+y-question | z-wh-else | d-eraser | v-find
 
-*Who else finds a pencil?*
+*Who else finds an eraser?*
 :::
 
 **3.** `yol zal vemawol dugul.`

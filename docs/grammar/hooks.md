@@ -245,8 +245,8 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 | English | Egabon | Cue |
 |---------|--------|-----|
+| *pour* | `vabovul` | 🫗 |
 | *table* | `odehol` | 𓊲 |
-| *salad* | `azadal` | 🥗 |
 | *family* | `ovayal` | 👪 |
 | *teapot* | `udedal` | 🫖 |
 | *beer* | `ebadal` | 🍺 |
@@ -259,7 +259,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *Olozun* | `olozun` |
 | *Ehalon* | `ehalon` |
 | *cook* | `vugayol` |
-| *pour* | `vabovul` |
 | *cookie* | `ogudol` |
 | *wine* | `awadal` |
 | *sandwich* | `azal` |
@@ -285,12 +284,12 @@ z-Olozun | d-beer | instead | d-wine | v-pour
 **Also correct:** `zolozun vabovul debadal ol dawadal.`
 :::
 
-**3.** *Uzazon cooks a salad for Ehalon.*
+**3.** *Uzazon cooks a cookie for Ehalon.*
 
 ::: details Show answer
-`zuzazon dazadal vugayol el behalon.`
+`zuzazon dogudol vugayol el behalon.`
 
-z-Uzazon | d-salad | v-cook | [for | b-Ehalon]
+z-Uzazon | d-cookie | v-cook | [for | b-Ehalon]
 :::
 
 **4.** *Additionally, Ehalon sits.*
@@ -351,12 +350,12 @@ z-family | including.open | z-Olozun | v-sit
 *The family, including Olozun and maybe more, sits.*
 :::
 
-**5.** `zehalon dazal el dazadal vugayol.`
+**5.** `zehalon dazal el dogudol vugayol.`
 
 ::: details Show answer
-z-Ehalon | d-sandwich | rather | d-salad | v-cook
+z-Ehalon | d-sandwich | rather | d-cookie | v-cook
 
-*Ehalon cooks a sandwich, or rather a salad.*
+*Ehalon cooks a sandwich, or rather a cookie.*
 :::
 
 **6.** `zolozun vehuhol ul barl zuzazon vugayol.`
@@ -916,6 +915,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *newspaper* | `unugal` | 📰 |
 | *camera* | `ugawol` | 📷 |
 | *radio* | `arewol` | 📻 |
+| *pencil* | `ebewol` | ✏️ |
 
 **Review:**
 
@@ -927,7 +927,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *speaker* | `amun` |
 | *family* | `ovayal` |
 | *page* | `ebogol` |
-| *pencil* | `ebewol` |
 | *surprise* | `ezul` |
 | *big* | `geluzom` |
 | *write* | `vuruyel` |
@@ -1124,6 +1123,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Each fu
 
 | English | Egabon | Cue |
 |---------|--------|-----|
+| *ship* | `eheval` | 🚢 |
 | *anchor* | `agel` | ⚓ |
 
 **Review:**
@@ -1136,7 +1136,6 @@ Short drills for Advanced. Try each item before opening **Show answer**. Each fu
 | *walk* | `voworel` |
 | *tell* | `vezeyel` |
 | *boat* | `oboval` |
-| *ship* | `eheval` |
 | *guard* | `ayoyul` |
 | *fog* | `ovalul` |
 | *ice* | `azulol` |

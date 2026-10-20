@@ -164,7 +164,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *run* | `varuvel` |
 | *sit* | `vehuhol` |
 | *see* | `vanobol` |
-| *pour* | `vabovul` |
+| *drink* | `vodedal` |
 | *knife* | `onawul` |
 
 #### English → Egabon {#beginner-english-to-egabon}
@@ -203,14 +203,14 @@ z-Uzazon | d-basket-x | v-see
 z-interlocutors-x | d-sandwich | v-see
 :::
 
-**5.** *Uzazon pours wine. They sit.* (Uzazon and associates)
+**5.** *Uzazon drinks wine. They sit.* (Uzazon and associates)
 
 ::: details Show answer
-`zuzazon dawadal vabovul. zaxarx vehuhol.`
+`zuzazon dawadal vodedal. zaxarx vehuhol.`
 
-z-Uzazon | d-wine | v-pour . z-←agent.same-x | v-sit
+z-Uzazon | d-wine | v-drink . z-←agent.same-x | v-sit
 
-**Also correct:** `zuzazon dawadal vabovul. zuzazorx vehuhol.`
+**Also correct:** `zuzazon dawadal vodedal. zuzazorx vehuhol.`
 :::
 
 **6.** *You all sit.* (everyone I'm talking to)
@@ -263,12 +263,12 @@ y-question | z-listener-x | v-sit
 *Are you all sitting?*
 :::
 
-**6.** `zahan dawadal vabovul.`
+**6.** `zahan dawadal vodedal.`
 
 ::: details Show answer
-z-interlocutors | d-wine | v-pour
+z-interlocutors | d-wine | v-drink
 
-*We pour wine.* (you and I)
+*We drink wine.* (you and I)
 :::
 
 #### Pick one {#beginner-pick-one}

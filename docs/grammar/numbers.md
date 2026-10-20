@@ -83,7 +83,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *baguette* | `uyodol` | 🥖 |
 | *croissant* | `agudol` | 🥐 |
-| *pie* | `abadal` | 🥧 |
+| *cake* | `egedol` | 🎂 |
 | *doughnut* | `ododol` | 🍩 |
 | *smell* | `vonobol` | 👃 from *nose* |
 
@@ -111,12 +111,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 z-croissant-x | g-three
 :::
 
-**2.** *Uzazon sees two pies.*
+**2.** *Uzazon sees two cakes.*
 
 ::: details Show answer
-`zuzazon dabadalx gradul vanobol.`
+`zuzazon degedolx gradul vanobol.`
 
-z-Uzazon | [d-pie-x | g-two] | v-see
+z-Uzazon | [d-cake-x | g-two] | v-see
 :::
 
 **3.** *Olozun finds the second doughnut.*
@@ -143,12 +143,12 @@ z-Ehalon | [d-baguette-x | g-more-than-one] | v-smell
 z-ant-x | g-twelve.spelled
 :::
 
-**6.** *Uzazon cooks the tenth pie.*
+**6.** *Uzazon cooks the tenth cake.*
 
 ::: details Show answer
-`zuzazon dabadal grewozol vugayol.`
+`zuzazon degedol grewozol vugayol.`
 
-z-Uzazon | [d-pie | g-10th.spelled] | v-cook
+z-Uzazon | [d-cake | g-10th.spelled] | v-cook
 :::
 
 #### Egabon → English {#beginner-egabon-to-english}
@@ -185,12 +185,12 @@ z-Ehalon | [d-croissant-x | g-20.spelled] | v-find
 *Ehalon finds twenty croissants.*
 :::
 
-**5.** `zabadal grewol.`
+**5.** `zegedol grewol.`
 
 ::: details Show answer
-z-pie | g-1st
+z-cake | g-1st
 
-*There is a first pie.*
+*There is a first cake.*
 :::
 
 #### Pick one {#beginner-pick-one}
@@ -217,14 +217,14 @@ z-doughnut-x | g-three
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *Olozun sees four pies.* <!-- lint: error -->`zolozun gramol dabadalx vanobol.`
+**1.** *Olozun sees four cakes.* <!-- lint: error -->`zolozun gramol degedolx vanobol.`
 
 ::: details Show answer
-`zolozun dabadalx gramol vanobol.`
+`zolozun degedolx gramol vanobol.`
 
-z-Olozun | [d-pie-x | g-four] | v-see
+z-Olozun | [d-cake-x | g-four] | v-see
 
-A number word is a `/ɡ/` word, so it goes after its noun; before `dabadalx` it counts Olozun.
+A number word is a `/ɡ/` word, so it goes after its noun; before `degedolx` it counts Olozun.
 :::
 
 ## Intermediate {#intermediate}
