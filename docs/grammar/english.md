@@ -269,5 +269,8 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
 | *hi* / *hello* / *goodbye* | your own name said with a period: `SELFn.` | [Greeting](word-endings.md#greeting) |
+| *Japan* (the country) | `azabanan` | [Countries](word-endings.md#countries-traditions) |
+| *Sam* (keep the English spelling) | <code>@&lt;Sam&gt;</code> | [Opaque](spans.md#loans) |
+| *Sam* (Agebon spelling of the sound) | type the English name in the lexicon | [Respell an English name](lexicon.md#respell) |
 | full name (*Alen Alowen*), family-first name, *Mary-Kate* | given name, then the family name on `/ɡ/` + **-n** (`zalen galowen`); a hyphenated name is one **`x`** word | [Multipart names](word-endings.md#multipart-names) |
 | business or product name (*Ford Mustang*, *Coffee-Tea*, *Coffee-Instead-of-Tea*) | maker on `/ɡ/` + **-n**, a compact **`x`** word, or a titled phrase / span when the name has grammar inside | [Multipart names](word-endings.md#multipart-names) |

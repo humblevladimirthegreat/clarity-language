@@ -23,15 +23,12 @@ function lastVowel(s: string): string {
   return [...s].reverse().find((c) => VOWEL.test(c)) ?? "a";
 }
 
-/** The place-name root for a CMU pronunciation (`|` between words, which run together). */
-export function placeRoot(cmu: string): string {
-  const phones = cmu.split(/\s+/).filter((p) => p && p !== "|");
-  if (phones.length === 0) throw new Error("a place-name root needs a pronunciation");
-  let s = phones.map((p) => {
-    const letters = PLACE_MAP[p.replace(/\d$/, "")];
-    if (!letters) throw new Error(`unmapped phoneme ${p}`);
-    return letters;
-  }).join("");
+/**
+ * Shape a string of Agebon letters into a place-name root: start and end on a vowel,
+ * glide a vowel run, split the numeric-derivation seam, and pad a clusterless name.
+ */
+export function finishPlaceLetters(s: string): string {
+  if (s.length === 0) throw new Error("a place-name root needs letters");
   // A doubled letter is said once.
   s = s.replace(/(.)\1+/g, "$1");
   // A root starts with a vowel: echo the first one.
@@ -47,4 +44,16 @@ export function placeRoot(cmu: string): string {
     while (!(s.length >= 7 && s.at(-2) === "n")) s += "n" + s.at(-1);
   }
   return s;
+}
+
+/** The place-name root for a CMU pronunciation (`|` between words, which run together). */
+export function placeRoot(cmu: string): string {
+  const phones = cmu.split(/\s+/).filter((p) => p && p !== "|");
+  if (phones.length === 0) throw new Error("a place-name root needs a pronunciation");
+  const s = phones.map((p) => {
+    const letters = PLACE_MAP[p.replace(/\d$/, "")];
+    if (!letters) throw new Error(`unmapped phoneme ${p}`);
+    return letters;
+  }).join("");
+  return finishPlaceLetters(s);
 }

@@ -10,6 +10,8 @@
       "@data/*": ["../../../data/*"],
       "@lexicon-search": ["../../../src/lexicon-search.ts"],
       "@learner-name": ["../../../src/learner-name.ts"],
+      "@cmu-lookup": ["../../../src/cmu-lookup.ts"],
+      "@name-respell": ["../../../src/name-respell.ts"],
       "@parse-browser": ["../../../src/parse/browser.ts"],
       "@english-helper-browser": ["../../../src/english-helper/browser.ts"],
       "@claritish-editor-browser": ["../../../src/claritish-editor/browser.ts"],

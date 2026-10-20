@@ -125,6 +125,7 @@ const ALLOWED_HTML_TAGS = new Set([
   "InspectCard",
   "IpaPlay",
   "LexiconSearch",
+  "NameRespell",
   "PrintButton",
   "NameHelper",
   "SpeakButton",

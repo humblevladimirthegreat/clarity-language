@@ -1,5 +1,8 @@
+import { copyFileSync, mkdirSync } from 'node:fs'
+import { dirname } from 'node:path'
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vitepress'
+import { ensureCmuDict } from '../../../src/echo-pronunciation.ts'
 import { buildStampIso, formatBuildStampEt } from './lib/build-stamp.ts'
 import { injectInArticleToc } from './lib/inject-in-article-toc.ts'
 import { learnerNameSlots } from './lib/learner-name-md.ts'
@@ -10,6 +13,12 @@ const buildAt = new Date()
 const repoRoot = fileURLToPath(new URL('../../..', import.meta.url))
 const dataDir = fileURLToPath(new URL('../../../data', import.meta.url))
 const srcDir = fileURLToPath(new URL('../../../src', import.meta.url))
+const cmuDict = fileURLToPath(new URL('../../../tmp/cmudict.dict', import.meta.url))
+const cmuPublic = fileURLToPath(new URL('../public/cmudict.dict', import.meta.url))
+
+await ensureCmuDict()
+mkdirSync(dirname(cmuPublic), { recursive: true })
+copyFileSync(cmuDict, cmuPublic)
 
 export default defineConfig({
   title: 'Agebon Grammar',
@@ -34,6 +43,8 @@ export default defineConfig({
         '@english-helper-browser': `${srcDir}/english-helper/browser.ts`,
         '@lexicon-search': `${srcDir}/lexicon-search.ts`,
         '@learner-name': `${srcDir}/learner-name.ts`,
+        '@cmu-lookup': `${srcDir}/cmu-lookup.ts`,
+        '@name-respell': `${srcDir}/name-respell.ts`,
         '@parse-browser': `${srcDir}/parse/browser.ts`,
         '@tts-browser': `${srcDir}/tts/browser.ts`,
       },

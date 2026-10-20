@@ -51,7 +51,7 @@ Start with [phonology.md](phonology.md#beginner) for letters and word edges, the
 
 When you finish a level, take its review under **Level reviews** in the sidebar ([Beginner](review.md#beginner), [Intermediate](review.md#intermediate), [Advanced](review.md#advanced)). Each review has one item per page at that level, and each answer links back to the section it tests.
 
-The sidebar **Tools** list has [Terminology](terminology.md), which gives the English names these pages use for grammar, each with a short gloss and a link to the section that teaches it. It also has Lexicon, for looking up roots, and [Inspect](inspect.md), for word-by-word breakdowns.
+The sidebar **Tools** list has [Terminology](terminology.md), which gives the English names these pages use for grammar, each with a short gloss and a link to the section that teaches it. It also has [Lexicon](lexicon.md), for looking up roots and respelling an English name, and [Inspect](inspect.md), for word-by-word breakdowns.
 
 The sidebar **Cheat Sheets** group has one printable page per part of the grammar, for looking up a form you have already met. Each row is tagged **B**, **I**, or **A** for its level and links to the section that teaches it.
 

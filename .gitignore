@@ -8,6 +8,7 @@ docs/grammar/.vitepress/dist
 .env.*
 !.env.example
 tmp/
+docs/grammar/public/cmudict.dict
 docs/grammar/.vitepress/.temp/
 *.tsbuildinfo
 .eslintcache

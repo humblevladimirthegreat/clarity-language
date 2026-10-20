@@ -37,15 +37,19 @@ export type PronunciationReport = {
   reportPath: string;
 };
 
+/** Download tmp/cmudict.dict when it is missing, so convert-word and the lexicon widget share one file. */
+export async function ensureCmuDict(): Promise<void> {
+  if (existsSync(CMU_PATH)) return;
+  mkdirSync(dirname(CMU_PATH), { recursive: true });
+  const res = await fetch(CMU_URL);
+  if (!res.ok) throw new Error(`fetch ${CMU_URL}: ${res.status}`);
+  writeFileSync(CMU_PATH, await res.text());
+}
+
 /** Rebuild tmp/echo-pron from the published lexicon (downloading cmudict on first run). */
 export async function buildPronunciationCache(options: { write?: boolean } = {}): Promise<PronunciationReport> {
   const write = options.write ?? false;
-  if (!existsSync(CMU_PATH)) {
-    mkdirSync(dirname(CMU_PATH), { recursive: true });
-    const res = await fetch(CMU_URL);
-    if (!res.ok) throw new Error(`fetch ${CMU_URL}: ${res.status}`);
-    writeFileSync(CMU_PATH, await res.text());
-  }
+  await ensureCmuDict();
 
   /** Chosen variant per word, plus overrides for labels CMU lacks. See src/cmu-dict.ts. */
   const cmu = loadCmu();

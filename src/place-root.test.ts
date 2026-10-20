@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
 import { parseWord } from "./parse/word.ts";
-import { isPlaceRootShape, placeRoot } from "./place-root.ts";
+import { finishPlaceLetters, isPlaceRootShape, placeRoot } from "./place-root.ts";
 import { isAgebonRootShape } from "./root-shape.ts";
 
 describe("placeRoot", () => {
@@ -24,6 +24,10 @@ describe("placeRoot", () => {
 
   it("runs the words of a name together", () => {
     assert.equal(placeRoot("N UW1 | Z IY1 L AH0 N D"), "unuzelanda");
+  });
+
+  it("shapes letter fallback the same way as a matching pronunciation", () => {
+    assert.equal(finishPlaceLetters("zam"), "azamana");
   });
 });
 

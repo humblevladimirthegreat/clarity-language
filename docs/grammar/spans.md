@@ -71,7 +71,7 @@ Inside <code>&lt;&gt;</code>, keep the source’s capital letters when its writi
 
 When the lexicon already has a matching root, write the ordinary word (`dagozol`), not a span.
 
-On its own, outside a sentence, a foreign name or word is written with no role letter: just the marks and the brackets (<code>@&lt;Sam&gt;</code>), like other [citation forms](word-endings.md#citation-forms). In a sentence the span fills a role, so it takes a role letter (<code>z@&lt;Sam&gt;</code>).
+On its own, outside a sentence, a foreign name or word is written with no role letter: just the marks and the brackets (<code>@&lt;Sam&gt;</code>), like other [citation forms](word-endings.md#citation-forms). In a sentence the span fills a role, so it takes a role letter (<code>z@&lt;Sam&gt;</code>). A person’s or place’s name can also take an Agebon spelling that follows the English sound; type it in the [lexicon](lexicon.md#respell). Keep the span when the original spelling is the point.
 
 ### Calls and reactions (`/y/`) {#y-spans}
 

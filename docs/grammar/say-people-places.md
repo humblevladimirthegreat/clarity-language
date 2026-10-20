@@ -174,6 +174,28 @@ Resume the handle like any name: its whole stem + **-r** (`zanar`).
 
 **Compare with:** a [mention](spans.md#mention) is the **word** (`glegel z[ana]` = *the word “ana”*). A foreign letter-name is a loan or opaque span (<code>z@&lt;FBI&gt;</code>).
 
+### An English name as Agebon {#english-name}
+
+**Needs:** [Named `-n`](word-endings.md#named-n-beginner) · [Countries](word-endings.md#countries-traditions) · [Opaque](spans.md#loans) · [Respell](lexicon.md#respell)
+
+English *Japan* as a place already has a published root: write `azabanan`. English *Sam* as a person is either a published root you pick as a name, a respelling that follows the English sound, or a span that keeps the original letters.
+
+> `zolazun dazabanan vawebol.`
+>
+> z-Olazun | d-Azabanan | v-see
+>
+> "Olazun sees Japan."
+
+To keep *Sam* as English spelling, write the span. To see the Agebon sound-spelling, type the name in the [lexicon](lexicon.md#respell).
+
+> <code>z@&lt;Sam&gt; vowurel.</code>
+>
+> z-NAME.OPAQUE["Sam"] | v-walk
+>
+> "Sam walks."
+
+**Compare with:** a learner’s name in the examples is a published root plus **-n**, chosen on [word endings](word-endings.md#named-n-beginner), not a respelling of their English name.
+
 ### Who does it: *student*, *singer*, *manager* {#agent-nouns}
 
 **Needs:** [Role compounds (the doer)](roles.md#role-compounds) · [The usual role](roles.md#usual-role) · [Saying someone is a teacher](roles.md#saying-someone-is-a-teacher)

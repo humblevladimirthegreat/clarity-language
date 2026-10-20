@@ -174,6 +174,20 @@ Ten letters also begin a [digit syllable](numbers.md#counts). The letter name us
 
 ## Advanced {#advanced}
 
+### Place-name roots {#place-name-roots}
+
+A country or territory name is spelled from the English sound, not from a [root tail](compounds.md#root-tails). The root still starts and ends with a vowel. It may keep a consonant cluster from the English name (`avranza` from *France*). A name with no cluster is at least seven letters and ends in `n` plus that last vowel (`azabana` from *Japan*), so it does not look like a three- or five-letter dictionary root.
+
+The ending is the ordinary name ending: `azabanan` is *Japan*, `azabanam` belonging, `azabanal` the flag ([countries](word-endings.md#countries-traditions)).
+
+A person or place that is not in the lexicon can take the same spelling. The [lexicon](lexicon.md#respell) writes it for a name you type. To keep the original letters, use a [span](spans.md#loans).
+
+<!-- cheat-sheet: sounds-spelling -->
+| Agebon | Use | English |
+|--------|-----|---------|
+| `azabanan` | place-name root with no cluster (seven letters, ends `n` + vowel) | *Japan* |
+| `avranzan` | place-name root that keeps a cluster | *France* |
+
 ### Singability constraints {#singability-constraints}
 
 These choices about word shape make Agebon easier to sing:
@@ -188,7 +202,7 @@ These choices about word shape make Agebon easier to sing:
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-ln` / `-r` / `-rl` / `-rm` (optional `-x`); stand-ins end in `-rl` / `-rm` / `-rth` |
 
-Legal clusters: left-hanging `gl-`; number-word role letter + `r`; [tag pronoun](pronouns.md#tag-pronouns) role letter + `w` (`zw`, `dw`, `bw`); lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`. The lexical join before `r` is the only syllable-final consonant inside a word.
+Legal clusters: left-hanging `gl-`; number-word role letter + `r`; [tag pronoun](pronouns.md#tag-pronouns) role letter + `w` (`zw`, `dw`, `bw`); lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`; consonant runs inside a [place-name root](#place-name-roots). The lexical join before `r` is the only syllable-final consonant inside an ordinary word.
 
 Try singing a short Agebon line quickly at a high but comfortable pitch:
 
@@ -275,6 +289,7 @@ Do not hold `u`: it is the undo vowel, so a held `u` can sound like a denial. A 
 
 - Citation (root + ending, no sentence): [word-endings.md](word-endings.md)
 - Role letters in a clause: [clause.md](clause.md#role-letters)
+- Place-name roots (countries, a respelled English name): [above](#place-name-roots), [lexicon](lexicon.md#respell)
 - Root tails (what a root's last two letters hint at): [compounds.md](compounds.md#root-tails)
 - Numbers (role letter + `r` exception and [digit syllables](numbers.md#counts)): [numbers.md](numbers.md)
 - Mention spans (letter as form in a clause): [spans.md](spans.md)

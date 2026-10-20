@@ -319,6 +319,8 @@ A country root and a tradition root use all four endings, with one job each:
 | `dazabanal` | its flag | *a Japanese flag* |
 | `gazabanam` | belonging to its people | *Japanese* |
 
+Country names are spelled from the English sound (`azabanan` from *Japan*). The [lexicon](lexicon.md#respell) shows that spelling for a name you type. A person whose English name you want to keep as written uses a [span](spans.md#loans) instead.
+
 ### Titled phrases (hook, join, span)
 <a id="titled-phrases"></a>
 

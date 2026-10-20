@@ -54,6 +54,8 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 | [A content word ends in **-l**, **-m**, **-n**, or **-r**](../phonology.md#word-edges), the audible end | `uzozen` = *u-zo-zen* | B |
 | [Inside a word, a consonant starts a syllable](../phonology.md#word-edges) and never closes one | `udozol` = *u-do-zol* | B |
 | [Roots are vowel-first](../phonology.md#phonotactics): **V(CV)+** | `zubulel` = `z` + `ubule` + **-l** | I |
+| [Place-name root](../phonology.md#place-name-roots) with no cluster: seven letters, ends `n` + vowel | `azabanan` *Japan* | A |
+| [Place-name root](../phonology.md#place-name-roots) that keeps a cluster | `avranzan` *France* | A |
 | [A root's last two letters hint at its kind and job](../compounds.md#root-tails) | `agozo` *cat*: `z` a creature, `o` one of its kind | A |
 
 ### Parts of a word, in order {#parts-in-order}
@@ -103,4 +105,4 @@ Ten letters also start a [digit syllable](../numbers.md#counts); the table is [h
 | [One vowel per letter](../phonology.md#singability-constraints) | stacked vowels are separate syllables | A |
 | [No stress in spelling](../phonology.md#singability-constraints) | rhythm may stress a beat | A |
 | [Voiced preferred](../phonology.md#singability-constraints) | unvoiced is style only | A |
-| [Legal clusters](../phonology.md#singability-constraints) | `gl-`; role letter + `r` (number) or + `w` (tag); `-lx` `-mx` `-nx` `-rx`; `-ln`; `-rl` `-rm` `-rth` | A |
+| [Legal clusters](../phonology.md#singability-constraints) | `gl-`; role letter + `r` (number) or + `w` (tag); `-lx` `-mx` `-nx` `-rx`; `-ln`; `-rl` `-rm` `-rth`; clusters in a [place-name root](../phonology.md#place-name-roots) | A |

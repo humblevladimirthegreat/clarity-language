@@ -16,6 +16,7 @@ const shown = new Set<string>()
 const current = computed(() => history.value[at.value] ?? null)
 const chosenOption = computed(() => eligible.value.find((option) => option.root === chosen.value) ?? null)
 const lexiconHref = withBase('/lexicon.html')
+const respellHref = withBase('/lexicon.html#respell')
 const defaultName = `${DEFAULT_SELF_ROOT}n`
 
 function another(): void {
@@ -93,7 +94,8 @@ onMounted(async () => {
         <button v-if="chosenOption" type="button" class="btn" @click="changing = false">Keep {{ chosenOption.name }}</button>
       </div>
       <p class="note">
-        Or <a :href="lexiconHref">pick your own in the lexicon</a> (<strong>Use as my name</strong> on a row).
+        Or <a :href="lexiconHref">pick a published root in the lexicon</a> (<strong>Use as my name</strong> on a row).
+        To keep the sound of an English name, <a :href="respellHref">respell it there</a>; that spelling is for writing, not for the examples here.
         Until you choose, examples marked as yours use <code>{{ defaultName }}</code>, the word for whoever is speaking.
       </p>
     </template>
