@@ -1,6 +1,6 @@
 # Proposal: Checking and improving the English helper
 
-**Status:** PARTIALLY IMPLEMENTED. Phase 1 is built: the **checkpoint** set, *word in prompt*, *pattern in prompt*, *self-contained*, and the worklist ([`src/english-helper/coverage.ts`](../../src/english-helper/coverage.ts)). Phase 2 is built: [`cases.tsv`](../../src/english-helper/cases.tsv) and the baseline (`--check`, `--write-baseline`). Phase 3 is built: the **wild** set ([`wild.tsv`](../../src/english-helper/wild.tsv)) and gap rate, noise and prompt size on every set. Phase 4 is built: *verify precision* and *verify recall* on the checkpoint set ([`plant.ts`](../../src/english-helper/plant.ts)). Phase 5 is not.  
+**Status:** PARTIALLY IMPLEMENTED. Phase 1 is built: the **checkpoint** set, *word in prompt*, *pattern in prompt*, *self-contained*, and the worklist ([`src/english-helper/coverage.ts`](../../src/english-helper/coverage.ts)). Phase 2 is built: [`cases.tsv`](../../src/english-helper/cases.tsv) and the baseline (`--check`, `--write-baseline`). Phase 3 is built: the **wild** set ([`wild.tsv`](../../src/english-helper/wild.tsv)) and gap rate, noise and prompt size on every set. Phase 4 is built: *verify precision* and *verify recall* on the checkpoint set ([`plant.ts`](../../src/english-helper/plant.ts)). Phase 5 is built ([`english-helper-eval.ts`](../../scripts/english-helper-eval.ts)), with one 10-item batch run.  
 **Related:** [`src/english-helper/`](../../src/english-helper/) (analyzer, prompt, `--verify`), [`scripts/english-helper-recall.ts`](../../scripts/english-helper-recall.ts), [`scripts/frequency-coverage.ts`](../../scripts/frequency-coverage.ts), [`scripts/llm-eval.ts`](../../scripts/llm-eval.ts) (the Agebon → English counterpart), [translation checkpoints](../meta/translation-exercises.md), [recipe track](../meta/grammar-docs.md#recipe-track).  
 **Design authority:** none. This is a process for the tool. Every fix it produces is either tool code or a doc row that teaches a form a grammar page already owns. A missing form is logged as a grammar gap, never invented here.
 
@@ -43,6 +43,7 @@ We need a repeatable loop: a held-out test set, free metrics that answer "could 
 | `npx tsx scripts/frequency-coverage.ts` | which of NGSL's 2,809 frequent lemmas the lexicon or a grammar row knows | word by word, no context, no prompt |
 | `english-helper.mjs --verify` | parse, unknown words, and each content word's sense next to the English that suggested its root | checks one draft; aggregated by `english-helper-recall` on the checkpoint set |
 | `npm run llm-eval` | Agebon → English prompt quality, with a judge model | other direction; costs money |
+| `npm run english-helper-eval` | English → Agebon: a model writes from the helper prompt, a second reads the draft back, a third judges it; miss rate by level, against *self-contained* | costs money; checkpoint set only |
 | tests in `src/english-helper/*.test.ts` | pinned behavior per feature | written ad hoc, one feature at a time |
 | `src/english-helper/cases.tsv` | one pinned behavior per line (`link:`, `not:`, `first:`, `has:`, `sense:`, `form:`, `no-gap`), run by `analyze.test.ts` | slot-level only; no stage column |
 | `english-helper-recall --check` / `--write-baseline` | headline metrics per set against `src/generated/english-helper-baseline.json` | not in `npm test` |
@@ -192,7 +193,16 @@ Every few rounds, or after a big grammar change, run the model eval on a sample 
    | side / alias-side / row-ending | 99.4% of 347 / 100% of 28 / 100% of 8 |
 
    Recall is near the ceiling because these plants are the errors `--verify` was built to catch. The false alarms are the more useful list: *alias* is mostly a few words reached only through an alias (*hastily*, *speak*, *say*), and *unmatched* is a root the English never suggested, which is also a root recall miss.
-5. **Model eval.** Only after phases 1–4 settle, so its misses can be read against the free metrics.
+5. **Model eval.** Only after phases 1–4 settle, so its misses can be read against the free metrics. **Built.** `npm run english-helper-eval` samples checkpoint items evenly across the three levels, builds the helper prompt with the item's own answers and English held out of the examples, and has Haiku write the Agebon. Two shortcuts save the paid steps: a draft equal to an accepted answer is right, and a draft that does not parse is wrong. Every other draft is read back by Haiku with the Agebon → English prompt, and Opus judges it against the English, with the glosses of the accepted answers and the draft. For each item the report lists the words of the closest accepted answer that the draft did not use, with their coverage label (*word*, *pattern*, *missing*), and compares the miss rate of self-contained and not self-contained sentences. A rerun reuses a stored draft when its prompt is unchanged, and its verdict when the draft reads the same, so a scoring fix costs nothing; `--dry` lists the sample with no calls. The share of shortcut items sets the cost: about $0.07 for an item that stops after translating, and $0.14–0.16 for one that goes through all three steps. Translating is most of it, since Haiku writes about 1,000 output tokens for a one-line reply. First batch (2026-10-20, `--n 10 --seed 1`, $0.92):
+
+   | | items | miss |
+   |---|---|---|
+   | beginner | 4 | 13% |
+   | intermediate | 3 | 33% |
+   | advanced | 3 | 67% |
+   | **all** | 10 | **35%** |
+
+   Outcomes: 5 exact, 1 same, 1 partly, 3 no parse. All three no-parse drafts were self-contained in the prompt: a comma inside a clause, a negation join with nothing to join, and a dropped verb (*contradicts*, which the prompt showed only as a pattern). The partial miss wrote *plan* as a second verb instead of the stance word the prompt showed only as a pattern. Ten items are too few to say whether *self-contained* tracks the model; the next step is a batch of 30–50.
 
 ## Open questions
 
