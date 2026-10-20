@@ -290,17 +290,17 @@ English *no more challenging than* says less: the first name is below the second
 
 ### Place on a scale (`w#N`) {#place-on-a-scale}
 
-English *the second biggest* names a place just below the winner. Keep the superlative frame (one name before `zel`) and put an **ordinal** in the degree slot, `/w/` right before the adjective: **`wredul`** (`w#2`) is *second*. The place is on the scale the adjective names. (cue: **`e`** ≈ order, as in `gredul` *the second*)
+English *the second biggest* names a place just below the winner. Keep the superlative frame (one name before `zel`) and put an **ordinal** in the degree slot, `/w/` right before the adjective: **`wredal`** (`w#2`) is *second*. The place is on the scale the adjective names. (cue: **`e`** ≈ order, as in `gredal` *the second*)
 
-> `zuzozen zel wredul gelazom.`
+> `zuzozen zel wredal gelazom.`
 >
 > [z-Uzozen | z-rank/more | [w-2nd | g-big]]
 >
 > "Uzozen is the second biggest."
 
-Under **`zuel`** the same place counts from the bottom, so `zuzozen zuel wredul gelazom` is *the second smallest*. Use it from *second* on, because first place is the plain superlative. Write it only with one name before `zel` or `zuel`. With two names, the ordinal has no group to rank within, and outside a rank fence an ordinal on `/w/` has no reading.
+Under **`zuel`** the same place counts from the bottom, so `zuzozen zuel wredal gelazom` is *the second smallest*. Use it from *second* on, because first place is the plain superlative. Write it only with one name before `zel` or `zuel`. With two names, the ordinal has no group to rank within, and outside a rank fence an ordinal on `/w/` has no reading.
 
-**Compare with:** an ordinal after a noun picks the Nth *thing* (`zudozol gredul` *the second dog*), not the Nth on a scale. A factor (*twice as big*) goes on `/h/`, not `/w/`.
+**Compare with:** an ordinal after a noun picks the Nth *thing* (`zudozol gredal` *the second dog*), not the Nth on a scale. A factor (*twice as big*) goes on `/h/`, not `/w/`.
 
 ### Manner scale (`/h/`) {#manner-scale}
 
@@ -360,7 +360,7 @@ Open **`gram`** ranks by a **rough impression** instead of a count: *it looks li
 
 To say **how many more**, put the difference in a `bl-` word right after **`gral`**. A count needs no unit noun: the unit is the thing counted.
 
-> `zagozolx zudozolx zel gral blrarel.`
+> `zagozolx zudozolx zel gral blragol.`
 >
 > [z-cat-x | z-dog-x | z-rank/more | [g-amount | bl-three]]
 >
@@ -418,21 +418,21 @@ For *the more …, the less …*, use **`xuel`**: when the first scale rises, th
 
 English *twice as big as* gives the **ratio** between the two heights. Use the [equative](#equatives) **`zoel`** and its shared adjective, then a factor number (`/h/` + marker **`ra`**, [numbers](numbers.md#number-as-adverb-by-marker)) **right after** the adjective. The first name sits at that many times the second's height.
 
-> `zuzozen zolazun zoel gelazom hradul.`
+> `zuzozen zolazun zoel gelazom hradal.`
 >
 > [z-Uzozen | z-Olazun | z-equal-rank | g-big | h-two]
 >
 > "Uzozen is twice as big as Olazun."
 
-Inverse marker **`ru`** divides: `hrudul` is *half as*. The factor hosts nothing, so no `bl-` word comes after it.
+Inverse marker **`ru`** divides: `hrudal` is *half as*. The factor hosts nothing, so no `bl-` word comes after it.
 
-> `zolazun zuzozen zoel gelazom hrudul.`
+> `zolazun zuzozen zoel gelazom hrudal.`
 >
 > [z-Olazun | z-Uzozen | z-equal-rank | g-big | h-divided-by-two]
 >
 > "Olazun is half as big as Uzozen."
 
-English *three times bigger* usually means the same ratio: use **`zoel`** with `hrarel`, not rank **`zel`**. After **`zel`**, a number `/h/` is not a factor; it is an ordinary *N times* on the clause. For a gap in units (*two meters taller*), put a measure noun on the scale instead of a factor.
+English *three times bigger* usually means the same ratio: use **`zoel`** with `hragol`, not rank **`zel`**. After **`zel`**, a number `/h/` is not a factor; it is an ordinary *N times* on the clause. For a gap in units (*two meters taller*), put a measure noun on the scale instead of a factor.
 
 ### Comparing against a stance (bars) {#bars}
 
@@ -549,7 +549,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **5.** *The pie is twice as heavy as the mango.*
 
 ::: details Show answer
-`zubodal zemedol zoel garolom hradul.`
+`zubodal zemedol zoel garolom hradal.`
 
 [z-pie | z-mango | z-equal-rank | g-heavy | h-two]
 :::
@@ -564,7 +564,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zolazun zel wredul garolom.`
+**1.** `zolazun zel wredal garolom.`
 
 ::: details Show answer
 [z-Olazun | z-rank/more | [w-2nd | g-heavy]]
@@ -636,10 +636,10 @@ The ranking is how they lift, so the scale is `/h/`; `/ɡ/` would rank the peopl
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Uzozen is three times as heavy as Ahelan.* <!-- lint: error -->`zuzozen zahelan zel garolom hrarel.`
+**1.** *Uzozen is three times as heavy as Ahelan.* <!-- lint: error -->`zuzozen zahelan zel garolom hragol.`
 
 ::: details Show answer
-`zuzozen zahelan zoel garolom hrarel.`
+`zuzozen zahelan zoel garolom hragol.`
 
 [z-Uzozen | z-Ahelan | z-equal-rank | g-heavy | h-three]
 

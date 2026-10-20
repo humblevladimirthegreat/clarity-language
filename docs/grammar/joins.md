@@ -567,7 +567,7 @@ Rank **`e`** puts the first item at the **top** (*A matters more than B*). When 
 | Single-item | `X zael` *start with X* / *from X on* | `X zaem` *maybe start with X* |
 | Standalone | `zael` *in no particular order* / *any order* | `zaem` *not sure where to start* |
 
-A sequence does not say which item is better. With a SHARED quality it sorts the list from low to high. Two numbers in a sequence are two values in order (`zrarel zraval zael` = *3, then 5*). (cue: **a** ≈ add + **e** ≈ order: *and then*)
+A sequence does not say which item is better. With a SHARED quality it sorts the list from low to high. Two numbers in a sequence are two values in order (`zragol zrazul zael` = *3, then 5*). (cue: **a** ≈ add + **e** ≈ order: *and then*)
 
 ### Respectively (`wubam`) {#respectively}
 

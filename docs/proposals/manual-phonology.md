@@ -19,8 +19,8 @@ One chart teaches every channel. Someone who learns to sign the code can also ta
 
 ## What the code must cover
 
-- **18 letters:** 14 consonants (`w d r m v g l h n z b y th x`) and 4 vowels (`u a o e`).
-- **`th` and `x` start words.** `/th/` is the stance role letter (`thohom`) and `/x/` starts clause joins and linkers (`xan`, `xahem`). Both also occur as seams, in codas (`-x`, `-rth`), and in clusters (`xrebal`).
+- **18 letters:** 14 consonants (`b d g v z h l r n m w y th x`) and 4 vowels (`u a o e`).
+- **`th` and `x` start words.** `/th/` is the stance role letter (`thohom`) and `/x/` starts clause joins and linkers (`xan`, `xahem`). Both also occur as seams, in codas (`-x`, `-rth`), and in clusters (`xrewal`).
 - **Syllables:** consonant + vowel; a syllable with no onset (vowel stacks such as `ua`, `xuen`); onset clusters (`gl-`, role letter + `r`, role letter + `w`).
 - **Codas:** `-l -m -n -r`, optionally followed by `-x`, plus `-ln`, `-rl`, `-rm`, `-rth`.
 - **Prosody:** equal syllable length and stress on the first syllable ([rhythm and stress](../grammar/phonology.md#rhythm-and-stress)).
@@ -43,20 +43,20 @@ The roles follow dominance, not left and right, because the consonant hand does 
 | [Guitar](#guitar) | Follow the instrument: a left-handed guitar mirrors it, so the picking hand is still the consonant hand |
 | [Piano](#piano) | Fixed layout: the bass is always on the left, so the left hand plays vowels |
 
-Every vowel shape is also a consonant shape (index = `u` / `w`, V = `a` / `d`), so a viewer can't tell the hands apart by shape alone. In the air the **vowel hand's fingers point sideways**, toward the other hand, while the consonant hand's fingers point up. Which hand is which then shows on every beat, whatever the signer's handedness, and a lone hand (coda vs no onset) is never ambiguous. Both palms face the viewer, so every finger stays countable. A sideways palm was considered and rejected, because seen edge-on the raised fingers hide behind each other.
+Every vowel shape is also a consonant shape (index = `u` / `b`, V = `a` / `d`), so a viewer can't tell the hands apart by shape alone. In the air the **vowel hand's fingers point sideways**, toward the other hand, while the consonant hand's fingers point up. Which hand is which then shows on every beat, whatever the signer's handedness, and a lone hand (coda vs no onset) is never ambiguous. Both palms face the viewer, so every finger stays countable. A sideways palm was considered and rejected, because seen edge-on the raised fingers hide behind each other.
 
 ### Counting runs
 
 A count from 1 to 4 is a **run** of fingers starting at the index finger: index; index + middle; index + middle + ring; all four. The thumb adds five, like the five bead on an abacus. Zero is index + pinky, the outer pair with an empty middle.
 
-The four letters after the digits (`b y th x`, in [alphabet order](../grammar/phonology.md#letter-names)) are **hooked runs**: the same runs with the fingers hooked. A hooked finger keeps its base knuckle straight and curls its two outer joints, so the hook sticks out of the fist instead of folding into it. The thumb is never hooked. Straight fingers mean a digit letter; hooked fingers mean one of the other four.
+The four letters after the digits (`w y th x`, in [alphabet order](../grammar/phonology.md#letter-names)) are **hooked runs**: the same runs with the fingers hooked. A hooked finger keeps its base knuckle straight and curls its two outer joints, so the hook sticks out of the fist instead of folding into it. The thumb is never hooked. Straight fingers mean a digit letter; hooked fingers mean one of the other four.
 
 Each shape has two forms:
 
 - **Shape:** the whole run rises from a fist, the way people count on their fingers. Used by every channel except piano ([signed](#signed), [touch](#touch)).
 - **Piano:** only the finger where the run ends goes down, plus the thumb when it is part of the count. A hooked run strikes its end and the next finger up.
 
-So the signer raises the count, and the pianist strikes where the count ends. Shapes that are not runs (`z`, the spares) press exactly the fingers that are raised.
+So the signer raises the count, and the pianist strikes where the count ends. Shapes that are not runs (`m`, the spares) press exactly the fingers that are raised.
 
 Why two forms: in the air, most people can't raise the ring finger alone, and a lone middle finger is a rude gesture, so shapes keep to runs. On piano, pressing whole runs makes dense clusters that blur by ear, so the piano keeps to the run's end. Each run is fully described by its last finger, so the two forms carry the same information. Hooking has no meaning on a key, which is why hooked runs need their own piano pairs.
 
@@ -78,17 +78,17 @@ Opposite vowels differ by one finger (`u` ↔ `a`, `o` ↔ `e`), so a letter nam
 
 | Letter | Count | Shape | Piano |
 |--------|-------|-------|-------|
-| `w` | 1 | index | 2 |
+| `b` | 1 | index | 2 |
 | `d` | 2 | index + middle (V) | 3 |
-| `r` | 3 | index + middle + ring | 4 |
-| `m` | 4 | four fingers, thumb tucked (flat hand) | 5 |
-| `v` | 5 | thumb alone | 1 |
-| `g` | 6 | thumb + index (L) | 1 + 2 |
+| `g` | 3 | index + middle + ring | 4 |
+| `v` | 4 | four fingers, thumb tucked (flat hand) | 5 |
+| `z` | 5 | thumb alone | 1 |
+| `h` | 6 | thumb + index (L) | 1 + 2 |
 | `l` | 7 | thumb + index + middle | 1 + 3 |
-| `h` | 8 | thumb + index + middle + ring | 1 + 4 |
+| `r` | 8 | thumb + index + middle + ring | 1 + 4 |
 | `n` | 9 | open hand | 1 + 5 |
-| `z` | 0 | index + pinky (horns) | 2 + 5 |
-| `b` | hooked 1 | index hooked | 2 + 3 |
+| `m` | 0 | index + pinky (horns) | 2 + 5 |
+| `w` | hooked 1 | index hooked | 2 + 3 |
 | `y` | hooked 2 | index + middle hooked | 3 + 4 |
 | `th` | hooked 3 | index + middle + ring hooked | 4 + 5 |
 | `x` | hooked 4 | four fingers hooked (claw) | 2 + 4 |
@@ -97,7 +97,7 @@ Opposite vowels differ by one finger (`u` ↔ `a`, `o` ↔ `e`), so a letter nam
 
 A digit's shape is its count held up, so number words come out naturally. The fist is never a letter, so it means *this hand is silent*.
 
-On piano, `x` is the one learned pair: a hooked run of four has no finger after the pinky. The most frequent consonants in roots (`g`, `b`, `z`, `h`) are pairs, and the consonants average about 1.7 notes each across the example text in `docs/grammar/`.
+On piano, `x` is the one learned pair: a hooked run of four has no finger after the pinky. The most frequent first consonants in roots (`b`, `g`, `z`) are single notes.
 
 ### Syllable rules
 
@@ -124,7 +124,7 @@ Each channel has room the letters don't use: the white keys on piano; hand locat
 - **Frequency hand.** Single fingers for the five most frequent consonants in roots (`g b d z h`), with the easiest pairs going to the next most frequent. It is faster to play but loses the count logic and has to be learned as a table.
 - **One form (piano everywhere).** The earlier piano layout put single letters on single fingers. Raised in the air, it gave `r`, `h`, `y`, and `x` hard shapes, made `d` a lone middle finger, and made `a` a lone ring finger. Pressed into a palm, the receiver had to tell which single fingertip landed, which touch does poorly at speed.
 - **One form (shape everywhere).** Pressing whole runs on piano averages about 2.7 notes per consonant, and a quarter of consonants become four- or five-note clusters. Words ending in `-n` and `-m` would hold a black-key cluster, and a listener can't tell four notes from five by ear. In the bass, `e` would be a four-note cluster around C♯3, which is mud.
-- **Separate shapes for `b y th x`.** A hooked index for `b`, crossed index + middle for `x`, a thumb–index circle for `th`, and thumb + index + pinky for `y`. Four unrelated shapes to learn, and two failed by touch: crossed fingertips land side by side exactly like `d`, and the circle's pinch lands where the index would, so `th` felt like `m`. Plain middle + ring + pinky for `th` and thumb + middle + ring + pinky for `x` fix that, but `th` / `r` and `x` / `h` then differ only by which end of the hand the dots sit at.
+- **Separate shapes for `b y th x`.** A hooked index for `b`, crossed index + middle for `x`, a thumb–index circle for `th`, and thumb + index + pinky for `y`. Four unrelated shapes to learn, and two failed by touch: crossed fingertips land side by side exactly like `d`, and the circle's pinch lands where the index would, so `th` felt like `v`. Plain middle + ring + pinky for `th` and thumb + middle + ring + pinky for `x` fix that, but `th` / `g` and `x` / `r` then differ only by which end of the hand the dots sit at.
 
 ## Channels
 
@@ -154,17 +154,17 @@ The white keys carry no letters.
 
 | Syllable | Right hand | Left hand |
 |----------|------------|-----------|
-| za | D♯5+A♯5 | F♯3 |
-| za | D♯5+A♯5 | F♯3 |
-| wa | D♯5 | F♯3 |
+| zu | C♯5 | G♯3 |
+| zo | C♯5 | D♯3 |
+| ze | C♯5 | C♯3 |
 | -n | C♯5+A♯5, held | none |
-| ga | C♯5+D♯5 | F♯3 |
-| ma | A♯5 | F♯3 |
-| da | F♯5 | F♯3 |
-| -m | A♯5, held | none |
+| ga | G♯5 | F♯3 |
+| ma | D♯5+A♯5 | F♯3 |
+| hu | C♯5+D♯5 | G♯3 |
+| -m | D♯5+A♯5, held | none |
 
-- `thohom`: G♯5+A♯5 / D♯3 · F♯5+G♯5 / C♯3 · A♯5 held
-- `xahem`: D♯5+G♯5 / D♯3 · F♯5 / G♯3 · A♯5 held
+- `thohom`: G♯5+A♯5 / D♯3 · C♯5+D♯5 / D♯3 · D♯5+A♯5 held
+- `xahem`: D♯5+G♯5 / F♯3 · C♯5+D♯5 / C♯3 · D♯5+A♯5 held
 
 ### Guitar
 
@@ -191,7 +191,7 @@ When pressing, straight fingers land on their **fingertips**, a little spread at
 
 - **How many:** separate dots, and a group that widens from one finger to four. Runs always start at the index edge, so the only question is how far they reach.
 - **Thumb:** an extra dot well apart from the fingers, so +5 is a plain yes or no.
-- **Gap:** horns (`z`) is two dots with the middle fingers missing.
+- **Gap:** horns (`m`) is two dots with the middle fingers missing.
 - **Pad or knuckle:** a soft fingertip vs a hard, broad knuckle separates straight runs from hooked ones.
 
 None of this asks the receiver which single fingertip landed. Fingertips beat whole flat fingers here: dots are easier to count than the width of a solid bar, and fingertip taps are quick and light, like drumming. Flat fingers give a stronger signal through clothing or on the forearm, but the code keeps one style.
@@ -220,9 +220,9 @@ The code held up in the air in the **shape** form, received by eye. It is a **ma
 
 The hands are held at chest height, palms toward the viewer, with the consonant hand's fingers pointing up and the vowel hand's pointing sideways toward it ([handedness](#handedness)). Left-handed signers mirror the layout; the sideways fingers show the vowel hand either way.
 
-- `zuzozen gamahum.`: consonant hand horns · horns · index · *open hand, held* ‖ L · flat · V · *flat, held*; vowel hand V (sideways) on every beat, fist on the codas
-- `thohom`: hooked three / three fingers · hooked V / flat · *flat, held*
-- `xahem`: claw / three fingers · V / index · *flat, held*
+- `zuzozen gamahum.`: consonant hand thumb · thumb · thumb · *open hand, held* ‖ three fingers · horns · L · *horns, held*; vowel hand (sideways) index · three fingers · four fingers ‖ V · V · index, fist on the codas
+- `thohom`: hooked three / three fingers · L / three fingers · *horns, held*
+- `xahem`: claw / V · L / four fingers · *horns, held*
 
 **Why this replaces fingerspelling:** the rejected `fingerspelling.md` spelled one letter per hold, with 18 shapes borrowed from three manual alphabets. The signed channel signs one **syllable** per beat with both hands, so it should be faster. Its shapes follow one counting rule, straight or hooked, and match the other channels.
 
@@ -233,8 +233,8 @@ The hands are held at chest height, palms toward the viewer, with the consonant 
 3. **Spares:** What should the spare shapes (vowel-hand thumb; consonant-hand pinky alone, middle + ring + pinky, thumb + index + pinky, thumb + a hooked run; piano 3 + 5) and the free layers carry? Candidates: the period, `/y/` turns, tone marks.
 4. **Speech edges:** The [speech edges](../grammar/phonology.md#speech-edges) (level pitch on list items, a reset at a new turn) need a rendering in each channel: dynamics and rests on piano, hand height or a pause in signing, a lift or press strength in touch.
 5. **Tooling:** A player could render any parsed sentence from `src/tts/` phoneme output. That would make examples on the site audible, and the same data could drive a signing hand animation.
-6. **Signed legibility:** Film real sentences and check that viewers can read them at a normal syllable rate. Check first: pairs that differ by one finger (`w` / `d`, `u` / `a`, `o` / `e`); hooked vs straight, since a hooked index can pass for a pointing finger and hooked fingers look shorter from the front; the claw (`x`) vs a fist (rest); and hooked `th`, where the pinky folds while the other three hook. If the claw fails, `x` falls back to thumb + middle + ring + pinky.
-7. **Touch legibility:** Test palm press and tapping at a normal syllable rate: knuckle vs fingertip with light, fast presses; the shapes with the most dots (`m`, `e`, `n`); and whether the lift-off word edge is clear in fast speech. If hooked runs fail by touch, a brush across the palm in place of a tap is the fallback mark for `b y th x`.
-8. **The `h` shape:** Thumb + three fingers with the pinky folded is the one awkward run shape. If it reads badly, the fallback is the thumb touching the pinky tip with the other three raised; the thumb gives the pinky something to fold to.
+6. **Signed legibility:** Film real sentences and check that viewers can read them at a normal syllable rate. Check first: pairs that differ by one finger (`b` / `d`, `u` / `a`, `o` / `e`); hooked vs straight, since a hooked index can pass for a pointing finger and hooked fingers look shorter from the front; the claw (`x`) vs a fist (rest); and hooked `th`, where the pinky folds while the other three hook. If the claw fails, `x` falls back to thumb + middle + ring + pinky.
+7. **Touch legibility:** Test palm press and tapping at a normal syllable rate: knuckle vs fingertip with light, fast presses; the shapes with the most dots (`v`, `e`, `n`); and whether the lift-off word edge is clear in fast speech. If hooked runs fail by touch, a brush across the palm in place of a tap is the fallback mark for `b y th x`.
+8. **The `r` shape:** Thumb + three fingers with the pinky folded is the one awkward run shape. If it reads badly, the fallback is the thumb touching the pinky tip with the other three raised; the thumb gives the pinky something to fold to.
 9. **Sideways vowel hand:** Check that holding the vowel hand's fingers sideways stays comfortable over a long conversation and does not slow shape changes. Fallback: point the vowel hand's fingers diagonally.
-10. **Gesture meanings:** The raised thumb (`v`) and horns (`z`) are rude in some regions. A quick, pulsed shape mostly avoids that reading, but check before teaching it.
+10. **Gesture meanings:** The raised thumb (`z`) and horns (`m`) are rude in some regions. A quick, pulsed shape mostly avoids that reading, but check before teaching it.

@@ -1,7 +1,7 @@
 {{
   const SPEECH_DIGITS = {
-    wo: "1", du: "2", re: "3", mo: "4", va: "5",
-    gu: "6", le: "7", ha: "8", na: "9", zo: "0",
+    bu: "1", da: "2", go: "3", ve: "4", zu: "5",
+    ha: "6", lo: "7", re: "8", nu: "9", ma: "0",
   };
 
   // Role + ability (`gaxedegexal` *fit to be a teacher*) is classification only: `/ɡ/`.
@@ -78,7 +78,7 @@
   }
 
   // Spoken group separator `th` + first vowel of the spoken marker (numbers.md § Saying it aloud).
-  // Mantissa 0 / 1 + bare ba / bu is one digitless-exp stem (`woba` = `1e`), matching writing `g+1e`.
+  // Mantissa 0 / 1 + bare wa / wu is one digitless-exp stem (`buwa` = `1e`), matching writing `g+1e`.
 function foldDigitlessTail(stem, digitless) {
   const only = stem.groups.length === 1 ? stem.groups[0] : null;
   if (only && Object.keys(only).length === 1 && (only.mantissa === "0" || only.mantissa === "1") && (digitless === "e" || digitless === "e-")) {
@@ -87,11 +87,11 @@ function foldDigitlessTail(stem, digitless) {
   } else stem.digitlessExp = digitless;
 }
 
-// A lone exponent group is the writing's digitless-exp body (`rabare` = `+e3`, `razobuwo` = `+0e-1`).
+// A lone exponent group is the writing's digitless-exp body (`rawago` = `+e3`, `rawubuyama` = `+0e-1`).
 function foldBareExponent(stem) {
   const only = stem.groups.length === 1 ? stem.groups[0] : null;
   if (!only || !only.exponentSign || only.exponentDigits === undefined || only.percent || only.decimal) return;
-  const exp = (only.exponentSign === "ba" ? "e" : "e-") + only.exponentDigits;
+  const exp = (only.exponentSign === "wa" ? "e" : "e-") + only.exponentDigits;
   const keys = Object.keys(only).filter((k) => k !== "hasJa");
   if (keys.length === 2) {
     stem.groups = [];
@@ -396,8 +396,8 @@ WritingDigitGroup
     }
 
 WritingExponent
-  = "e-" digits:Digit+ { return { sign: "bu", digits: digits.join("") }; }
-  / "e" digits:Digit+ { return { sign: "ba", digits: digits.join("") }; }
+  = "e-" digits:Digit+ { return { sign: "wu", digits: digits.join("") }; }
+  / "e" digits:Digit+ { return { sign: "wa", digits: digits.join("") }; }
 
 WritingMantissa
   = int:Digit+ "." frac:Digit+ {
@@ -456,7 +456,7 @@ SpeechGroupSeparator
   = "th" v:[aeou] { return v; }
 
 SpeechDigitGroup
-  = sign:("ba" / "bu") expDigits:SpeechDigitSeq "ya" mantissa:SpeechMantissa percent:SpeechPercent? {
+  = sign:("wa" / "wu") expDigits:SpeechDigitSeq "ya" mantissa:SpeechMantissa percent:SpeechPercent? {
       return compactGroup({
         exponentSign: sign,
         exponentDigits: parseSpeechDigits(expDigits),
@@ -466,7 +466,7 @@ SpeechDigitGroup
         percent,
       });
     }
-  / sign:("ba" / "bu") expDigits:SpeechDigitSeq percent:SpeechPercent? {
+  / sign:("wa" / "wu") expDigits:SpeechDigitSeq percent:SpeechPercent? {
       return compactGroup({
         exponentSign: sign,
         exponentDigits: parseSpeechDigits(expDigits),
@@ -500,16 +500,16 @@ SpeechDigitSeq
   = syll:SpeechDigitSyllable+ { return syll.join(""); }
 
 SpeechDigitSyllable
-  = "wo" / "du" / "re" / "mo" / "va" / "gu" / "le" / "ha" / "na" / "zo"
+  = "bu" / "da" / "go" / "ve" / "zu" / "ha" / "lo" / "re" / "nu" / "ma"
 
-// After the marker: ba/bu alone, or mantissa 0/1 + ba/bu (zero×exp / hyperbole)
+// After the marker: wa/wu alone, or mantissa 0/1 + wa/wu (zero×exp / hyperbole)
 SpeechDigitlessTail
-  = "zoba" { return "0e"; }
-  / "zobu" { return "0e-"; }
-  / "woba" { return "1e"; }
-  / "wobu" { return "1e-"; }
-  / "ba" { return "e"; }
-  / "bu" { return "e-"; }
+  = "mawa" { return "0e"; }
+  / "mawu" { return "0e-"; }
+  / "buwa" { return "1e"; }
+  / "buwu" { return "1e-"; }
+  / "wa" { return "e"; }
+  / "wu" { return "e-"; }
 
 // PoS-less number stem (numeric derivation right half). Spelled CV only:
 // shorthand (`+3`, `#e`) is for free numbers, never inside a derivation.

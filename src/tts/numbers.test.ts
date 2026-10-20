@@ -21,63 +21,63 @@ describe("numberStemToSpeech", () => {
   });
 
   it("maps digits per numbers.md digit table", () => {
-    assert.equal(digitsToSyllables("1234567890"), "woduremovagulehanazo");
+    assert.equal(digitsToSyllables("1234567890"), "budagovezuhalorenuma");
   });
 
-  it("expands g+3 to grarel (numbers.md)", () => {
+  it("expands g+3 to gragol (numbers.md)", () => {
     const word = parseWord("g+3");
-    assert.equal(numberWordToSpeech(word), "grarel");
+    assert.equal(numberWordToSpeech(word), "gragol");
   });
 
   it("expands digitless g+ to gral", () => {
     assert.equal(numberWordToSpeech(parseWord("g+")), "gral");
   });
 
-  it("expands g#-2 to gruedul", () => {
-    assert.equal(numberWordToSpeech(parseWord("g#-2")), "gruedul");
+  it("expands g#-2 to gruedal", () => {
+    assert.equal(numberWordToSpeech(parseWord("g#-2")), "gruedal");
   });
 
-  it("expands approximate g~+3 to grarem", () => {
-    assert.equal(numberWordToSpeech(parseWord("g~+3")), "grarem");
+  it("expands approximate g~+3 to gragom", () => {
+    assert.equal(numberWordToSpeech(parseWord("g~+3")), "gragom");
   });
 
   it("expands anaphor g=+ to grar", () => {
     assert.equal(numberWordToSpeech(parseWord("g=+")), "grar");
   });
 
-  it("expands g+e to grabal (+∞)", () => {
-    assert.equal(numberWordToSpeech(parseWord("g+e")), "grabal");
+  it("expands g+e to grawal (+∞)", () => {
+    assert.equal(numberWordToSpeech(parseWord("g+e")), "grawal");
   });
 
-  it("expands g+0e-1 to grabuwoyazol", () => {
-    assert.equal(numberWordToSpeech(parseWord("g+0e-1")), "grabuwoyazol");
+  it("expands g+0e-1 to grawubuyamal", () => {
+    assert.equal(numberWordToSpeech(parseWord("g+0e-1")), "grawubuyamal");
   });
 
-  it("expands g+27e12 to grabawoduyadulel", () => {
-    assert.equal(numberWordToSpeech(parseWord("g+27e12")), "grabawoduyadulel");
+  it("expands g+27e12 to grawabudayadalol", () => {
+    assert.equal(numberWordToSpeech(parseWord("g+27e12")), "grawabudayadalol");
   });
 
-  it("expands bare OoM speech twin grabanal", () => {
-    assert.equal(numberWordToSpeech(parseWord("grabanal")), "grabanal");
+  it("expands bare OoM speech twin grawanul", () => {
+    assert.equal(numberWordToSpeech(parseWord("grawanul")), "grawanul");
   });
 
   it("expands g+5e3,860,4e-2 with tha separators", () => {
-    assert.equal(numberWordToSpeech(parseWord("g+5e3,860,4e-2")), "grabareyavathahaguzothabuduyamol");
+    assert.equal(numberWordToSpeech(parseWord("g+5e3,860,4e-2")), "grawagoyazutharehamathawudayavel");
   });
 
   it("expands digit-string d_555,123,4567", () => {
     assert.equal(
       numberWordToSpeech(parseWord("d_555,123,4567")),
-      "drovavavathowodurethomovagulel",
+      "drozuzuzuthobudagothovezuhalol",
     );
   });
 
-  it("expands h_15,30 to hrowovathorezol", () => {
-    assert.equal(numberWordToSpeech(parseWord("h_15,30")), "hrowovathorezol");
+  it("expands h_15,30 to hrobuzuthogomal", () => {
+    assert.equal(numberWordToSpeech(parseWord("h_15,30")), "hrobuzuthogomal");
   });
 
   it("uses thu between groups of a negative scalar", () => {
-    assert.equal(numberWordToSpeech(parseWord("g-1e9,265e3,4")), "grubanayawothubareyaduguvathumol");
+    assert.equal(numberWordToSpeech(parseWord("g-1e9,265e3,4")), "gruwanuyabuthuwagoyadahazuthuvel");
   });
 
   it("expands calendar date h_#22,7 with roe marker", () => {
@@ -86,27 +86,27 @@ describe("numberStemToSpeech", () => {
     if (word.family.kind !== "number") return;
     assert.equal(word.family.stem.calendarOrdinal, true);
     assert.equal(word.family.stem.marker, "_");
-    assert.equal(numberWordToSpeech(word), "hroedudutholel");
+    assert.equal(numberWordToSpeech(word), "hroedadatholol");
   });
 
   it("expands full calendar date h_#22,7,2026 (year stays one group)", () => {
-    assert.equal(numberWordToSpeech(parseWord("h_#22,7,2026")), "hroedudutholethoduzodugul");
+    assert.equal(numberWordToSpeech(parseWord("h_#22,7,2026")), "hroedadatholothodamadahal");
   });
 
-  it("round-trips spoken calendar date groedudutholel", () => {
-    const word = parseWord("groedudutholel");
-    assert.equal(numberWordToSpeech(word), "groedudutholel");
+  it("round-trips spoken calendar date groedadatholol", () => {
+    const word = parseWord("groedadatholol");
+    assert.equal(numberWordToSpeech(word), "groedadatholol");
   });
 
-  it("round-trips speech-shaped grarel", () => {
-    assert.equal(numberWordToSpeech(parseWord("grarel")), "grarel");
+  it("round-trips speech-shaped gragol", () => {
+    assert.equal(numberWordToSpeech(parseWord("gragol")), "gragol");
   });
 
   it("serializes stem without pos/ending", () => {
     const stem = parseWord("g+3").family;
     assert.equal(stem.kind, "number");
     if (stem.kind !== "number") return;
-    assert.equal(numberStemToSpeech(stem.stem), "rare");
+    assert.equal(numberStemToSpeech(stem.stem), "rago");
   });
 });
 
@@ -117,15 +117,15 @@ describe("numberWordToSpeechStressed", () => {
   }
 
   it("stresses the last exponent digit when a group has an exponent (g+27e12)", () => {
-    assert.deepEqual(stressedLetters("g+27e12"), ["u"]); // ba wo DU ya du le
+    assert.deepEqual(stressedLetters("g+27e12"), ["a"]); // wa bu DA ya da lo
   });
 
   it("stresses the last mantissa digit when a group has no exponent (g+139)", () => {
-    assert.deepEqual(stressedLetters("g+139"), ["a"]); // ra wo re NA
+    assert.deepEqual(stressedLetters("g+139"), ["u"]); // ra bu go NU
   });
 
   it("stresses each group's final digit in a multi-group value (g+5e3,860,4e-2)", () => {
-    assert.deepEqual(stressedLetters("g+5e3,860,4e-2"), ["e", "o", "u"]); // rE · zO · dU
+    assert.deepEqual(stressedLetters("g+5e3,860,4e-2"), ["o", "a", "a"]); // gO · mA · dA
   });
 
   it("stresses the marker vowel of a digitless word (g+)", () => {
@@ -133,11 +133,11 @@ describe("numberWordToSpeechStressed", () => {
   });
 
   it("stresses the bare digitless-exponent marker (g+e)", () => {
-    assert.deepEqual(stressedLetters("g+e"), ["a"]); // ra BA
+    assert.deepEqual(stressedLetters("g+e"), ["a"]); // ra WA
   });
 
   it("stresses last digit of each comma group in digit strings (d_555,123,4567)", () => {
-    assert.deepEqual(stressedLetters("d_555,123,4567"), ["a", "e", "e"]); // vA · rE · lE
+    assert.deepEqual(stressedLetters("d_555,123,4567"), ["u", "o", "o"]); // zU · gO · lO
   });
 
   it("keeps raw text identical to numberWordToSpeech", () => {
@@ -161,18 +161,18 @@ describe("numberWordToSpeechStressed", () => {
 
 describe("digitless exponent with power digits", () => {
   it("speaks bare OoM bands per numbers.md", () => {
-    assert.equal(numberWordToSpeech(parseWord("g+e0")), "grabazol");
-    assert.equal(numberWordToSpeech(parseWord("g+e3")), "grabarel");
-    assert.equal(numberWordToSpeech(parseWord("g#e-2")), "grebudul");
+    assert.equal(numberWordToSpeech(parseWord("g+e0")), "grawamal");
+    assert.equal(numberWordToSpeech(parseWord("g+e3")), "grawagol");
+    assert.equal(numberWordToSpeech(parseWord("g#e-2")), "grewudal");
   });
 });
 
 describe("spelled-out stems and numeric derivation", () => {
   it("keeps mantissa digits before a digitless exponent", () => {
-    assert.equal(numberWordToSpeech(parseWord("grazobal")), "grazobal");
+    assert.equal(numberWordToSpeech(parseWord("gramawal")), "gramawal");
   });
 
   it("keeps the lexical join on a numeric-derivation host", () => {
-    assert.equal(numberWordToSpeech(parseWord("vologolrazobal")), "vologolrazobal");
+    assert.equal(numberWordToSpeech(parseWord("vologolramawal")), "vologolramawal");
   });
 });

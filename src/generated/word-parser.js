@@ -5,8 +5,8 @@
 
 
   const SPEECH_DIGITS = {
-    wo: "1", du: "2", re: "3", mo: "4", va: "5",
-    gu: "6", le: "7", ha: "8", na: "9", zo: "0",
+    bu: "1", da: "2", go: "3", ve: "4", zu: "5",
+    ha: "6", lo: "7", re: "8", nu: "9", ma: "0",
   };
 
   // Role + ability (`gaxedegexal` *fit to be a teacher*) is classification only: `/ɡ/`.
@@ -83,7 +83,7 @@
   }
 
   // Spoken group separator `th` + first vowel of the spoken marker (numbers.md § Saying it aloud).
-  // Mantissa 0 / 1 + bare ba / bu is one digitless-exp stem (`woba` = `1e`), matching writing `g+1e`.
+  // Mantissa 0 / 1 + bare wa / wu is one digitless-exp stem (`buwa` = `1e`), matching writing `g+1e`.
 function foldDigitlessTail(stem, digitless) {
   const only = stem.groups.length === 1 ? stem.groups[0] : null;
   if (only && Object.keys(only).length === 1 && (only.mantissa === "0" || only.mantissa === "1") && (digitless === "e" || digitless === "e-")) {
@@ -92,11 +92,11 @@ function foldDigitlessTail(stem, digitless) {
   } else stem.digitlessExp = digitless;
 }
 
-// A lone exponent group is the writing's digitless-exp body (`rabare` = `+e3`, `razobuwo` = `+0e-1`).
+// A lone exponent group is the writing's digitless-exp body (`rawago` = `+e3`, `rawubuyama` = `+0e-1`).
 function foldBareExponent(stem) {
   const only = stem.groups.length === 1 ? stem.groups[0] : null;
   if (!only || !only.exponentSign || only.exponentDigits === undefined || only.percent || only.decimal) return;
-  const exp = (only.exponentSign === "ba" ? "e" : "e-") + only.exponentDigits;
+  const exp = (only.exponentSign === "wa" ? "e" : "e-") + only.exponentDigits;
   const keys = Object.keys(only).filter((k) => k !== "hasJa");
   if (keys.length === 2) {
     stem.groups = [];
@@ -370,26 +370,26 @@ function peg$parse(input, options) {
   const peg$c29 = "uo";
   const peg$c30 = "ua";
   const peg$c31 = "th";
-  const peg$c32 = "ba";
-  const peg$c33 = "bu";
+  const peg$c32 = "wa";
+  const peg$c33 = "wu";
   const peg$c34 = "ya";
   const peg$c35 = "ye";
   const peg$c36 = "yu";
   const peg$c37 = "yo";
-  const peg$c38 = "wo";
-  const peg$c39 = "du";
-  const peg$c40 = "re";
-  const peg$c41 = "mo";
-  const peg$c42 = "va";
-  const peg$c43 = "gu";
-  const peg$c44 = "le";
-  const peg$c45 = "ha";
-  const peg$c46 = "na";
-  const peg$c47 = "zo";
-  const peg$c48 = "zoba";
-  const peg$c49 = "zobu";
-  const peg$c50 = "woba";
-  const peg$c51 = "wobu";
+  const peg$c38 = "bu";
+  const peg$c39 = "da";
+  const peg$c40 = "go";
+  const peg$c41 = "ve";
+  const peg$c42 = "zu";
+  const peg$c43 = "ha";
+  const peg$c44 = "lo";
+  const peg$c45 = "re";
+  const peg$c46 = "nu";
+  const peg$c47 = "ma";
+  const peg$c48 = "mawa";
+  const peg$c49 = "mawu";
+  const peg$c50 = "buwa";
+  const peg$c51 = "buwu";
   const peg$c52 = "ao";
   const peg$c53 = "ae";
   const peg$c54 = "w";
@@ -456,26 +456,26 @@ function peg$parse(input, options) {
   const peg$e36 = peg$literalExpectation("ua", false);
   const peg$e37 = peg$classExpectation(["a", "e", "o", "u"], false, false, false);
   const peg$e38 = peg$literalExpectation("th", false);
-  const peg$e39 = peg$literalExpectation("ba", false);
-  const peg$e40 = peg$literalExpectation("bu", false);
+  const peg$e39 = peg$literalExpectation("wa", false);
+  const peg$e40 = peg$literalExpectation("wu", false);
   const peg$e41 = peg$literalExpectation("ya", false);
   const peg$e42 = peg$literalExpectation("ye", false);
   const peg$e43 = peg$literalExpectation("yu", false);
   const peg$e44 = peg$literalExpectation("yo", false);
-  const peg$e45 = peg$literalExpectation("wo", false);
-  const peg$e46 = peg$literalExpectation("du", false);
-  const peg$e47 = peg$literalExpectation("re", false);
-  const peg$e48 = peg$literalExpectation("mo", false);
-  const peg$e49 = peg$literalExpectation("va", false);
-  const peg$e50 = peg$literalExpectation("gu", false);
-  const peg$e51 = peg$literalExpectation("le", false);
-  const peg$e52 = peg$literalExpectation("ha", false);
-  const peg$e53 = peg$literalExpectation("na", false);
-  const peg$e54 = peg$literalExpectation("zo", false);
-  const peg$e55 = peg$literalExpectation("zoba", false);
-  const peg$e56 = peg$literalExpectation("zobu", false);
-  const peg$e57 = peg$literalExpectation("woba", false);
-  const peg$e58 = peg$literalExpectation("wobu", false);
+  const peg$e45 = peg$literalExpectation("bu", false);
+  const peg$e46 = peg$literalExpectation("da", false);
+  const peg$e47 = peg$literalExpectation("go", false);
+  const peg$e48 = peg$literalExpectation("ve", false);
+  const peg$e49 = peg$literalExpectation("zu", false);
+  const peg$e50 = peg$literalExpectation("ha", false);
+  const peg$e51 = peg$literalExpectation("lo", false);
+  const peg$e52 = peg$literalExpectation("re", false);
+  const peg$e53 = peg$literalExpectation("nu", false);
+  const peg$e54 = peg$literalExpectation("ma", false);
+  const peg$e55 = peg$literalExpectation("mawa", false);
+  const peg$e56 = peg$literalExpectation("mawu", false);
+  const peg$e57 = peg$literalExpectation("buwa", false);
+  const peg$e58 = peg$literalExpectation("buwu", false);
   const peg$e59 = peg$literalExpectation("ao", false);
   const peg$e60 = peg$literalExpectation("ae", false);
   const peg$e61 = peg$classExpectation(["l", "m", "n"], false, false, false);
@@ -660,8 +660,8 @@ function peg$parse(input, options) {
   function peg$f41(percent) {
     return compactGroup({ percent });
   }
-  function peg$f42(digits) {    return { sign: "bu", digits: digits.join("") };  }
-  function peg$f43(digits) {    return { sign: "ba", digits: digits.join("") };  }
+  function peg$f42(digits) {    return { sign: "wu", digits: digits.join("") };  }
+  function peg$f43(digits) {    return { sign: "wa", digits: digits.join("") };  }
   function peg$f44(int, frac) {
     return { digits: int.join("") + "." + frac.join(""), decimal: true };
   }

@@ -49,7 +49,7 @@ Equality **`oe`** with a shared scale needs **two or more** names. **`oe`** with
 
 English *two meters taller* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit** (published abstract = SI name), and `/ɡ/` on the unit is the **amount** ([measure phrases](numbers-applied.md#measure-phrases)).
 
-> `zuzozen zolazun zel gadahem blezerem gradul.`
+> `zuzozen zolazun zel gadahem blezerem gradal.`
 >
 > [z-Uzozen | z-Olazun | z-rank/more | [g-height | [bl-meter | g-two]]]
 >
@@ -98,7 +98,7 @@ For *two meters taller*, see [measured differentials](#measured-differentials). 
 
 For a count out of a group already named (*three of them*), resume the group and give the count.
 
-> `zagozolx vuhohol. zagozorx grarel varuvel.`
+> `zagozolx vuhohol. zagozorx gragol varuvel.`
 > z-cat-x | v-sit . [z-←cat-x-x | g-three] | v-run
 >
 > "The cats sit. Three of them run."
@@ -115,7 +115,7 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 > `zagozolx g+100% ul g+50% vuhohol.`
 >
-> 🔊 `zagozolx grawozozoyol ul gravazoyol vuhohol.`
+> 🔊 `zagozolx grabumamayol ul grazumayol vuhohol.`
 >
 > [z-cat-x | g-100yo] | through-excluding | g-50yo | v-sit
 >
@@ -127,7 +127,7 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 *One in three cats* is the same share as *a third of the cats*. Write the [fraction](numbers-applied.md#fractions) **`g-N`** right after the noun.
 
-> `zagozolx grurel vuhohol.`
+> `zagozolx grugol vuhohol.`
 >
 > [z-cat-x | g-third-of] | v-sit
 >
@@ -139,19 +139,19 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 **Needs:** [Number as adverb](numbers.md#number-as-adverb-by-marker) · [Measure phrases](numbers-applied.md#measure-phrases) · [Factor](comparatives.md#factor)
 
-*Three times an hour* is a count per unit. Write the count, then the divider **`hruwol`** (*÷1*), then the unit as a `bl-` word right after it. The divider hosts the unit, so the `bl-` word is structural, not a recipient.
+*Three times an hour* is a count per unit. Write the count, then the divider **`hrubul`** (*÷1*), then the unit as a `bl-` word right after it. The divider hosts the unit, so the `bl-` word is structural, not a recipient.
 
 | English | Agebon |
 |---------|--------|
-| *per* (*per hour*, *three times an hour*) | the count, then **`hruwol`**, then the unit in `/b/` |
+| *per* (*per hour*, *three times an hour*) | the count, then **`hrubul`**, then the unit in `/b/` |
 
-> `zuzozen vowurel hrarel hruwol blagorum.`
+> `zuzozen vowurel hragol hrubul blagorum.`
 >
 > z-Uzozen | v-walk | h-three | [h-divided-by-one | bl-hour]
 >
 > "Uzozen walks three times an hour."
 
-A ratio (*three cats to one dog*) is a [factor](comparatives.md#factor) on the equative amount scale: `zagozolx zudozolx zoel gral hrarel` is *three times as many cats as dogs*.
+A ratio (*three cats to one dog*) is a [factor](comparatives.md#factor) on the equative amount scale: `zagozolx zudozolx zoel gral hragol` is *three times as many cats as dogs*.
 
 ### Percent points, factors, and other wholes
 
@@ -178,12 +178,12 @@ A range hook with **-r** names **one value in the band** without saying which.
 |--------|-----|---------|
 | `z+3 ar z+5` | some value in the inclusive band | *some value from 3 to 5* |
 | `z+3 ur z+5` | some value in the band, 5 left out | *some value from 3 up to 5* |
-| `zraval ar zrabal` | some value on the ray | *some value of 5 or more* |
+| `zrazul ar zrawal` | some value on the ray | *some value of 5 or more* |
 | `z+3 uer z+5` | some value outside the band | *some value below 3 or above 5* |
 
 Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which value from 3 to 5?*). The same shape works under `/d/` `/b/` `/ɡ/` as the slot needs (`d+10 ur d+20` = object *some value from 10 up to 20*).
 
-**Not the same job as:** the resume hooks `ar` / `ur` with nothing on the right (*in there* / *from there*), and discrete *something among two listed values* (`zrarel zraval zar`).
+**Not the same job as:** the resume hooks `ar` / `ur` with nothing on the right (*in there* / *from there*), and discrete *something among two listed values* (`zragol zrazul zar`).
 
 ## Degree, manner and frequency words {#degree-manner}
 
@@ -201,8 +201,8 @@ English degree words (*really*, *quite*, *barely*) say how far a quality or an a
 | *completely* / *totally* / *entirely* / *fully* / *altogether* | `wuhuram` |
 | *quite* / *fairly* / *pretty* / *reasonably* / *relatively* | `wadowom` |
 | *huge* | `wohalal gelazom` (*extremely big*) |
-| *barely* / *hardly* | `hrabul` on the verb, `wrabul` before an adjective |
-| *almost* | `hrubul` on the verb, `wrubul` before an adjective |
+| *barely* / *hardly* | `hrawul` on the verb, `wrawul` before an adjective |
+| *almost* | `hruwul` on the verb, `wruwul` before an adjective |
 | *definitely* / *absolutely* / *certainly* | stance number `th+e` |
 
 > `zudozol wadowom gelazom vowurel.`
@@ -211,7 +211,7 @@ English degree words (*really*, *quite*, *barely*) say how far a quality or an a
 >
 > "A fairly big dog walks."
 
-> `zuzozen hrabul vuhohol.`
+> `zuzozen hrawul vuhohol.`
 >
 > z-Uzozen | h-+-e- | v-sit
 >
@@ -312,18 +312,18 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *secondary* / *second* | the rank `g#2` |
 | *whole* / *entire* / *complete* / *total* / *ideal* (nothing lacking) | `guhuram` (*perfection*) |
 | *several* | approximate number: `zagozolx gram` (*about five cats*) |
-| *multiple* (*more than one*) | a ray: `zagozolx g+2 al grabal` |
+| *multiple* (*more than one*) | a ray: `zagozolx g+2 al grawal` |
 | *minority* (*fewer than half*) | `zagozolx g+0% ul g+50%` |
 | *exactly* / *precisely* / *specific* (*exactly five*) | the plain number `g+5`; `gram` is *about five* |
 | *literally* (*word for word*) | an exact quote: bare brackets, no `~` ([exact, paraphrase, proper](spans.md#when-required)) |
 | *a dozen* | `zudalx g+12` |
 | *a quarter of the cats* | `zagozolx g-4` (or `g+25%`) |
-| *two thirds of the cats*, *three quarters* | `zagozolx gradul grurel` (count, then [fraction](numbers-applied.md#fractions)) |
-| *a third of an hour* | `bagorum grawol grurel` |
-| *the second biggest*, *the third tallest* | `zuzozen zel wredul gelazom` ([place on a scale](comparatives.md#place-on-a-scale)) |
+| *two thirds of the cats*, *three quarters* | `zagozolx gradal grugol` (count, then [fraction](numbers-applied.md#fractions)) |
+| *a third of an hour* | `bagorum grabul grugol` |
+| *the second biggest*, *the third tallest* | `zuzozen zel wredal gelazom` ([place on a scale](comparatives.md#place-on-a-scale)) |
 | *twice* / *double* (two times) | `h+2` before the verb |
-| *ratio* (*three cats to one dog*) | `zagozolx zudozolx zoel gral hrarel` ([factor](comparatives.md#factor)) |
-| *at least 5* / *at most 5* (*minimum* / *maximum*) | `zraval al zrabal` / `zrubal al zraval` |
+| *ratio* (*three cats to one dog*) | `zagozolx zudozolx zoel gral hragol` ([factor](comparatives.md#factor)) |
+| *at least 5* / *at most 5* (*minimum* / *maximum*) | `zrazul al zrawal` / `zruwal al zrazul` |
 | *decade* / *century* | `bavuvam g+10` / `bavuvam g+100` |
 | *unit* | the measure phrase: `bezerem g+2` |
 | *estimate* (*I put it at 40*) | stance number `th+40` |
@@ -395,8 +395,8 @@ English *just*, *only*, *especially* and *also* point at one item and say how it
 | *especially Uzozen* / *particularly* / *specifically* / *mainly* / *primarily* / *largely* / *in particular* / *main* (*the main one*) | `zuzozen zem` |
 | *only Uzozen matters* | `zuzozen zel` |
 | *also* / *too* / *as well* / *besides* / *in addition* | `al …` at the start of the next sentence |
-| *just now* (*a moment ago*) | `blrubul` on a channel |
-| *just about to* | `blrabul` on a channel |
+| *just now* (*a moment ago*) | `blruwul` on a channel |
+| *just about to* | `blrawul` on a channel |
 
 > `zuzozen zal vowurel.`
 >
@@ -416,7 +416,7 @@ English *just*, *only*, *especially* and *also* point at one item and say how it
 >
 > "Uzozen walks. Also, Olazun walks."
 
-**Compare with:** *just* meaning *only a moment ago* is the hair before now (**`blrubul`**, [recently](say-tense.md#time-words)), not a join. *Only when* is the restrictor **`hal`** ([restrictors](restrictors.md#beginner)), and *only if* is **`thebom`** ([only if](causation.md#only-if)).
+**Compare with:** *just* meaning *only a moment ago* is the hair before now (**`blruwul`**, [recently](say-tense.md#time-words)), not a join. *Only when* is the restrictor **`hal`** ([restrictors](restrictors.md#beginner)), and *only if* is **`thebom`** ([only if](causation.md#only-if)).
 
 ## Units and dates {#units-dates}
 
@@ -437,7 +437,7 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 | *member* (unspecified, of a menu or list) | `zor` | anything among the listed |
 | *list* (*a list of cats and dogs*) | `zagozol zudozol zal` | an and-list |
 | *list* (written) | `zegowal` | *clipboard* |
-| *range* (of numbers) | `zrarel al zraval` | the band from 3 to 5 |
+| *range* (of numbers) | `zragol al zrazul` | the band from 3 to 5 |
 | *range* (of things: how far it reaches) | `zaham` | *scope*, the abstract sense of `aha` |
 
 > `zudozolx vowurel.`
@@ -465,7 +465,7 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 
 **Needs:** [Measure phrases](numbers-applied.md#measure-phrases) · [Proper name `-n`](word-endings.md#proper-name--n)
 
-Everyday measure uses the **unit metaphor** on the stock roots above (`bezerem gradul`). When you cite the **conventional SI name** as a titled standard (*the meter*, *the pascal*), use **-n** on that unit root ([named handles](word-endings.md#named-n-beginner)). Resume a prior unit phrase with **-r** on the same root (`bezerer gradul` after `bezerem gradul` is on the table).
+Everyday measure uses the **unit metaphor** on the stock roots above (`bezerem gradal`). When you cite the **conventional SI name** as a titled standard (*the meter*, *the pascal*), use **-n** on that unit root ([named handles](word-endings.md#named-n-beginner)). Resume a prior unit phrase with **-r** on the same root (`bezerer gradal` after `bezerem gradal` is on the table).
 
 **Common derived (optional)**: unit metaphor on a dedicated root; related **quantity** stays on the original row:
 
@@ -489,7 +489,7 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bezerem g
 
 English *until tomorrow* (also *till tomorrow*), *by tomorrow*, and *before next week* count from today. A command or a plan has no channel to count from, so the time pole takes the count itself: a signed measure in its `/b/` runs from now.
 
-> `yel vuhamum zawan harum bluzurem grawol.`
+> `yel vuhamum zawan harum bluzurem grabul.`
 >
 > y-command | v-confidentiality | z-listener | [h-until | [bl-day | g-one]]
 >
@@ -512,9 +512,9 @@ Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftove
 
 **Needs:** [Ordinals](numbers.md#ordinals)
 
-When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`), not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`grewol`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
+When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*) so the first frame does not look unique. Use ordinary lexicon nouns plus a free [ordinal](numbers.md) (`g#N`), not a closed overlay. *Problem* and *solution* take the published **-m** senses; *goal* is already the **-l** literal. Prefer at least **`grebul`**, and often name a second candidate, so ranking itself marks that more than one frame is in play.
 
-> `zuzozen dogewem gredul vezuyel.`
+> `zuzozen dogewem gredal vezuyel.`
 > z-Uzozen | [d-solution | g-2nd] | v-tell
 >
 > "Uzozen names solution 2."
@@ -527,7 +527,7 @@ When you brainstorm, number the candidates (*problem 1*, *solution 2*, *goal 3*)
 | free **`g#N`** | rank in **this** numbered-alternative series | *candidate N* | | `#` = ordinal place |
 | soft **`g~#N`** | tentative ranking | *maybe candidate N* | | **-m** leaves the order open |
 
-**Recipe:** `zabevam grewol` / `zogewem gredul` / `zoval grewol`
+**Recipe:** `zabevam grebul` / `zogewem gredal` / `zoval grebul`
 
 Unnumbered `zabevam` is just *a problem*, not a candidate in a set, write **`g#N`** when brainstorming. `-l` on the first two roots is still the picture (`zabeval` *a puzzle piece*; `zogewel` *a key*; `vogewel` *to unlock*). Reframing the **same** situation is different wording of one frame, not a second digit.
 
@@ -565,7 +565,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 **2.** *Olazun is two grams heavier than Uzozen.*
 
 ::: details Show answer
-`zolazun zuzozen zel garolom bleberom gradul.`
+`zolazun zuzozen zel garolom bleberom gradal.`
 
 [z-Olazun | z-Uzozen | z-rank/more | [g-heavy | b-gram]] | g-two
 :::
@@ -589,7 +589,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 *Olazun and Ahelan are straining.*
 :::
 
-**2.** `zuzozen zolazun zel garolom bleberom graval.`
+**2.** `zuzozen zolazun zel garolom bleberom grazul.`
 
 ::: details Show answer
 

@@ -1,7 +1,7 @@
 
 redirects settings: https://us-east-2.console.aws.amazon.com/amplify/apps/d2xds94zsgwptg/redirects
 
-my name: obogan (innovation) gazagan (clarity)
+my name: obuyen (innovation) gagebon (clarity)
 
 discord invite:
 https://discord.gg/CAMGw2Akhc
@@ -11,6 +11,7 @@ use [skip-cd] for amplify to not deploy.
 # TODO
 -vocab flashcards generator
 -contact form / about me
+-proposals
 
 save for near end of limit resets:
 -review published-lexicon for consistency - are there conflicts with special forms, or do some words mean the same as another? Revise as needed. Don't modify roots used by lexicon-overlays.

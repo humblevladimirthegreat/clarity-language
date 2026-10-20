@@ -11,7 +11,7 @@ When English uses a number as a **code** (a phone, room, channel, or serial numb
 
 > `zuzozen d_555,123,4567 vawebol.`
 >
-> 🔊 `zuzozen drovavavathowodurethomovagulel vawebol.`
+> 🔊 `zuzozen drozuzuzuthobudagothovezuhalol vawebol.`
 >
 > z-Uzozen | d-_555,123,4567 | v-see
 >
@@ -29,7 +29,7 @@ English makes a label plural to name the whole run of labels that start with it:
 
 > `zuzozen vowurel herem bl_90x.`
 >
-> 🔊 `zuzozen vowurel herem blronazolx.`
+> 🔊 `zuzozen vowurel herem blronumalx.`
 >
 > z-Uzozen | v-walk | [h-while | bl-_90-x]
 >
@@ -41,7 +41,7 @@ To say when something happens by the clock or the calendar (*at 15:30*, *on 22 J
 
 > `h_15,30 zuzozen vowurel.`
 >
-> 🔊 `hrowovathorezol zuzozen vowurel.`
+> 🔊 `hrobuzuthogomal zuzozen vowurel.`
 >
 > h-_15,30 | z-Uzozen | v-walk
 >
@@ -53,11 +53,11 @@ Clock and date together:
 |-----|-----|
 | **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left to right; commas are writing only: hour, minute, optional seconds (`h_15,30`, `h_15,30,00`). Digitless `h_` = *at some (unspecified) clock time*. |
 | **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_#` covers an unspecified date. A date may stop after the day (`h_#12`, *on the 12th*); context gives the month. You may also name the relation with a *date* word plus `/b/`, but you do not need to. |
-| **Day of the week** | Ordinal on **`olere`** *weekday*, counting from Monday: `zolerem grewol` is *Monday*, `zolerem grelel` is *Sunday* (the seventh). |
-| **Month or year alone** | A month is an ordinal on **`umale`** *month*, counting from January, the same way as weekdays: `zumalem grerel` is *March*. A year is a label on **`avuva`** *year*: `zavuvam g_1962` is *1962*. To place an event in one, put it in `/b/` after **`herem`** *during*: `herem blumalem grerel` (*in March*), `herem blavuvam g_1962` (*in 1962*). |
+| **Day of the week** | Ordinal on **`olere`** *weekday*, counting from Monday: `zolerem grebul` is *Monday*, `zolerem grelol` is *Sunday* (the seventh). |
+| **Month or year alone** | A month is an ordinal on **`umale`** *month*, counting from January, the same way as weekdays: `zumalem gregol` is *March*. A year is a label on **`avuva`** *year*: `zavuvam g_1962` is *1962*. To place an event in one, put it in `/b/` after **`herem`** *during*: `herem blumalem gregol` (*in March*), `herem blavuvam g_1962` (*in 1962*). |
 | **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, a signed offset on the channel (*three hours ago* / *in three hours*) or on a time pole (*until tomorrow*), or a stance word that places the event in time ([LIVE](knowing.md#live-vs-memory) / [MEMORY](knowing.md#live-vs-memory), or a channel plus `b+` for a [forecast](knowing.md#forecast)). [RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate) do **not** place an event in time. There is no past or future ending. An amount of time (*for 3 days*) is a relation word plus a measure phrase. |
 
-> `zuzozen vowurel herem blumalem grerel.`
+> `zuzozen vowurel herem blumalem gregol.`
 >
 > z-Uzozen | v-walk | [h-while | [bl-month | g-3rd]]
 >
@@ -65,7 +65,7 @@ Clock and date together:
 
 > `zuzozen vowurel herem blavuvam g_1962.`
 >
-> 🔊 `zuzozen vowurel herem blavuvam growonagudul.`
+> 🔊 `zuzozen vowurel herem blavuvam grobunuhadal.`
 >
 > z-Uzozen | v-walk | [h-while | [bl-year | g-_1962]]
 >
@@ -77,7 +77,7 @@ For *from … to* with clock times, put each time in `/b/` after the hooks **`ul
 
 > `zuzozen ul b_9 oel b_17 vowurel.`
 >
-> 🔊 `zuzozen ul bronal oel browolel vowurel.`
+> 🔊 `zuzozen ul bronul oel brobulol vowurel.`
 >
 > z-Uzozen | [from | b-_9 | toward | b-_17] | v-walk
 >
@@ -87,7 +87,7 @@ Like any other word, the unit sits where its scope should be: with [joined verbs
 
 > `zuzozen vowurel varuvel val ul b_9 oel b_17.`
 >
-> 🔊 `zuzozen vowurel varuvel val ul bronal oel browolel.`
+> 🔊 `zuzozen vowurel varuvel val ul bronul oel brobulol.`
 >
 > z-Uzozen | [v-walk | v-run | v-and] | [from | b-_9 | toward | b-_17]
 >
@@ -97,7 +97,7 @@ With one verb, the two halves may also sit on either side of it, as two extra no
 
 > `zuzozen ul b_9 vowurel oel b_17.`
 >
-> 🔊 `zuzozen ul bronal vowurel oel browolel.`
+> 🔊 `zuzozen ul bronul vowurel oel brobulol.`
 >
 > z-Uzozen | [from | b-_9] | v-walk | [toward | b-_17]
 >
@@ -107,7 +107,7 @@ For a decade (*the ’90s*), use a [plural label](#plural-labels).
 
 **Compare with:** a phone or room **code** uses the same `_` marker under `/d/` `/b/` `/ɡ/`, not bare `/h/`. Restrictor **`har`** is *sometimes*; digitless `hrol` is *some clock or date*.
 
-**Not the same job as:** `hrarel` (*three times*) and `hrerel` (*for the third time*). Clock time `h_15,30` is still a digit-string.
+**Not the same job as:** `hragol` (*three times*) and `hregol` (*for the third time*). Clock time `h_15,30` is still a digit-string.
 
 ### Measure phrases {#measure-phrases}
 <a id="units"></a>
@@ -116,7 +116,7 @@ For a decade (*the ’90s*), use a [plural label](#plural-labels).
 
 To say **how much of a unit** (*two meters*, *three hours*), use the unit's noun and put the amount on it as a `/ɡ/` number, the same way a count sits on a noun. Each SI or everyday unit is the [abstract](word-endings.md#abstract-m) sense of a published root, so the unit noun ends in **-m**. Say that word, not a Latin abbreviation (`m`, `kg`, `s`). Once the unit phrase has been mentioned, resume it with **-r**.
 
-> `zuzozen bezerem gradul vowurel.`
+> `zuzozen bezerem gradal vowurel.`
 >
 > z-Uzozen | [b-meter | g-two] | v-walk
 >
@@ -133,7 +133,7 @@ The amount hosts nothing, so no `bl-` word comes after it. A plain `/b/` there i
 | `zazerem g+3`; `deberom g+5` | subject / object / … | *three seconds*; *five grams* |
 | `gezerem g+2` after a noun | modifier on a noun | rare; prefer unit as `/b/` or a freestanding noun phrase |
 
-The amount takes the usual number endings, so **-m** makes it fuzzy (`gradum` ≈ *about two*). The **unit** takes ordinary word endings.
+The amount takes the usual number endings, so **-m** makes it fuzzy (`gradam` ≈ *about two*). The **unit** takes ordinary word endings.
 
 #### Stock units {#stock-units}
 
@@ -164,7 +164,7 @@ Each unit is a metaphor on a published root. The **Literal on same root** column
 
 Words for a quantity itself (*heavy*, *flow*, *time* as a continuum, …) are ordinary roots (`arolom` *heavy*, `gadurem` *duration*, …), not units.
 
-Spelled out, `bagorum g+3` is `bagorum grarel` *three hours*.
+Spelled out, `bagorum g+3` is `bagorum gragol` *three hours*.
 
 ### Ranges {#ranges}
 <a id="number-ranges"></a>
@@ -173,23 +173,23 @@ Spelled out, `bagorum g+3` is `bagorum grarel` *three hours*.
 
 To give a range of numbers (*from 3 to 5*, *3 through 5*), write the two ends with the [hook](hooks.md) **`al`** between them: `A al B`. No join word closes it, and no extra word names the scale.
 
-> `zrarel al zraval.`
+> `zragol al zrazul.`
 >
 > z-three | through | z-five
 >
 > "From 3 to 5." (both ends included)
 
-Between two numbers, *3, including 5* has nothing to include into, so **`al`** reads as *through*: the band from A reaching and including B. This reading needs both endpoints to be the **same kind** of number (both amounts, both ranks, or both labels / times), each with digits. A number with no digits keeps the ordinary hook (`zral al zraval` = *some number of them, including 5*), and so do mixed kinds.
+Between two numbers, *3, including 5* has nothing to include into, so **`al`** reads as *through*: the band from A reaching and including B. This reading needs both endpoints to be the **same kind** of number (both amounts, both ranks, or both labels / times), each with digits. A number with no digits keeps the ordinary hook (`zral al zrazul` = *some number of them, including 5*), and so do mixed kinds.
 
 To count a range of things, put the endpoints on the counted noun, the same way one count sits on it. The noun names the line:
 
-> `zudozol grarel al graval vowurel.`
+> `zudozol gragol al grazul vowurel.`
 >
 > [z-dog | g-three] | through | g-five | v-walk
 >
 > "Three to five dogs walk."
 
-> `zagorum grarel al graval.`
+> `zagorum gragol al grazul.`
 >
 > [z-hour | g-three] | through | g-five
 >
@@ -202,25 +202,25 @@ A word after **B** describes **B** alone, and a word on the counted noun describ
 <!-- cheat-sheet: numbers -->
 | Agebon | Use | English |
 |--------|-----|---------|
-| `zrarel al zraval` | both ends in | *3 to 5* (`[3, 5]`) |
-| `zrarel ul zraval` | 5 left out | *3 up to but not including 5* (`[3, 5)`) |
-| `zraval ul zrarel` | 3 left out | *more than 3, up to 5* (`(3, 5]`) |
-| `zrarel am zraval` | soft ends | *roughly 3 to 5* |
-| `zrarel um zraval` | soft exclusion | *3 up to about 5, not quite 5* |
-| `zrarel ual zraval` | both ends out | *strictly between 3 and 5* (`(3, 5)`) |
-| `zrarel uel zraval` | outside the band | *below 3 or above 5* |
+| `zragol al zrazul` | both ends in | *3 to 5* (`[3, 5]`) |
+| `zragol ul zrazul` | 5 left out | *3 up to but not including 5* (`[3, 5)`) |
+| `zrazul ul zragol` | 3 left out | *more than 3, up to 5* (`(3, 5]`) |
+| `zragol am zrazul` | soft ends | *roughly 3 to 5* |
+| `zragol um zrazul` | soft exclusion | *3 up to about 5, not quite 5* |
+| `zragol ual zrazul` | both ends out | *strictly between 3 and 5* (`(3, 5)`) |
+| `zragol uel zrazul` | outside the band | *below 3 or above 5* |
 
-**`ual`** and **`uel`** are the [range hooks](hooks.md#ranges), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zrarel al zravam` = *3 to about 5*).
+**`ual`** and **`uel`** are the [range hooks](hooks.md#ranges), which also work on scales that are not numbers. An endpoint can still be fuzzy on its own (`zragol al zrazum` = *3 to about 5*).
 
-**Compare with:** `zrarel zraval zael` is *3, then 5*: two values in order, not a band. `zrarel zraval zal` is *3 and 5*. `zuzozen zolazun zel gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
+**Compare with:** `zragol zrazul zael` is *3, then 5*: two values in order, not a band. `zragol zrazul zal` is *3 and 5*. `zuzozen zolazun zel gamahum` ranks **people** on a scale. A place path (*from a station to a train*) uses two [place](relations.md#spatial-path) relation words, each with its `/b/`, not this hook.
 
 ### Percent and percentage points {#percent-and-percentage-points}
 
-To give a percent of a whole (*25% of the cats*), end a **count** number (`ra` / `ru`) with **`yo`**. Put it on the noun for the whole, in the same `/ɡ/` slot as a count (`zagozolx grarel` = *three cats*).
+To give a percent of a whole (*25% of the cats*), end a **count** number (`ra` / `ru`) with **`yo`**. Put it on the noun for the whole, in the same `/ɡ/` slot as a count (`zagozolx gragol` = *three cats*).
 
 > `zagozolx g+25%.`
 >
-> 🔊 `zagozolx graduvayol.`
+> 🔊 `zagozolx gradazuyol.`
 >
 > z-cat-x | g-25yo
 >
@@ -232,9 +232,9 @@ To give a percent of a whole (*25% of the cats*), end a **count** number (`ra` /
 | **`yo`** | percent (portion of a whole) | everyday percent figure (`25` in `25%`); those digits ÷ 100 |
 | **`yu`** | percentage points (point-scale amount or delta) | point figure (`2` in `+2%*`); those digits ÷ 100 |
 
-Digits follow the [normal digit rules](numbers.md#exponents) (including optional **`ye`** inside the percent/point reading). Say the digits you mean (`g+100%` → spoken `grawozozoyol`).
+Digits follow the [normal digit rules](numbers.md#exponents) (including optional **`ye`** inside the percent/point reading). Say the digits you mean (`g+100%` → spoken `grabumamayol`).
 
-Order: integer digits, optional **`ye`** + fractional digits, then **`yo`** or **`yu`**. **`yo`** / **`yu`** sit on **`ra`** / **`ru`** only. At most one **`yo`** or **`yu`** group in the number word; leave **`ba`** / **`bu`** off that word. Endings still apply (**-l** exact, **-m** about, **-n** conventional label, **-r** resume).
+Order: integer digits, optional **`ye`** + fractional digits, then **`yo`** or **`yu`**. **`yo`** / **`yu`** sit on **`ra`** / **`ru`** only. At most one **`yo`** or **`yu`** group in the number word; leave **`wa`** / **`wu`** off that word. Endings still apply (**-l** exact, **-m** about, **-n** conventional label, **-r** resume).
 
 In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → speech **`yo`**; **`%*`** → speech **`yu`** (sign still on **`ra`** / **`ru`**, written **`+`** / **`-`**).
 
@@ -242,13 +242,13 @@ In [preferred writing](numbers.md#writing-preferred-shorthand): **`%`** → spee
 
 To name one part of a whole (*half of the cats*, *a third of the tea*), put a minus number **`g-N`** right after the noun. Here the **`ru`** marker divides, as it does in `/h/` **`h-N`**: with N of 2 or more, the word names one part in N.
 
-> `zagozolx grudul vuhohol.`
+> `zagozolx grudal vuhohol.`
 >
 > [z-cat-x | g-half-of] | v-sit
 >
 > "Half of the cats sit."
 
-> `zududal grurel vuhohol.`
+> `zududal grugol vuhohol.`
 >
 > [z-tea | g-third-of] | v-sit
 >
@@ -256,15 +256,15 @@ To name one part of a whole (*half of the cats*, *a third of the tea*), put a mi
 
 To say how many parts, put the count first and the fraction after it: **`g+N`** then **`g-M`** is *N parts of M*. English *two thirds* is the same two words in the same order.
 
-> `zagozolx gradul grurel vuhohol.`
+> `zagozolx gradal grugol vuhohol.`
 >
 > [z-cat-x | g-two | g-third-of] | v-sit
 >
 > "Two thirds of the cats sit."
 
-**`g-N`** alone is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bezerem grudul` *minus 2 meters*). The count makes the fraction plain in any slot, a unit included: a count then a minus is never a negative amount, since a unit takes one amount.
+**`g-N`** alone is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bezerem grudal` *minus 2 meters*). The count makes the fraction plain in any slot, a unit included: a count then a minus is never a negative amount, since a unit takes one amount.
 
-> `zuzozen vowurel bagorum grawol grurel.`
+> `zuzozen vowurel bagorum grabul grugol.`
 >
 > z-Uzozen | v-walk | [b-hour | g-one | g-third-of]
 >
@@ -306,7 +306,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 ::: details Show answer
 `zuzozen d_555,123,4567 vawebol.`
 
-🔊 `zuzozen drovavavathowodurethomovagulel vawebol.`
+🔊 `zuzozen drozuzuzuthobudagothovezuhalol vawebol.`
 
 z-Uzozen | d-_555,123,4567 | v-see
 :::
@@ -316,7 +316,7 @@ z-Uzozen | d-_555,123,4567 | v-see
 ::: details Show answer
 `h_15,30 zuzozen dahelan vawebol.`
 
-🔊 `hrowovathorezol zuzozen dahelan vawebol.`
+🔊 `hrobuzuthogomal zuzozen dahelan vawebol.`
 
 h-_15,30 | z-Uzozen | d-Ahelan | v-see
 :::
@@ -326,7 +326,7 @@ h-_15,30 | z-Uzozen | d-Ahelan | v-see
 ::: details Show answer
 `zobebulx g+25%.`
 
-🔊 `zobebulx graduvayol.`
+🔊 `zobebulx gradazuyol.`
 
 z-pill-x | g-25yo
 :::
@@ -334,7 +334,7 @@ z-pill-x | g-25yo
 **4.** *Uzozen walks two meters.*
 
 ::: details Show answer
-`zuzozen bezerem gradul vowurel.`
+`zuzozen bezerem gradal vowurel.`
 
 z-Uzozen | [b-meter | g-two] | v-walk
 :::
@@ -342,7 +342,7 @@ z-Uzozen | [b-meter | g-two] | v-walk
 **5.** *Three to five hours.*
 
 ::: details Show answer
-`zagorum grarel al graval.`
+`zagorum gragol al grazul.`
 
 [z-hour | g-three] | through | g-five
 :::
@@ -350,7 +350,7 @@ z-Uzozen | [b-meter | g-two] | v-walk
 **6.** *Two thirds of the pills.*
 
 ::: details Show answer
-`zobebulx gradul grurel.`
+`zobebulx gradal grugol.`
 
 [z-pill-x | g-two | g-third-of]
 :::
@@ -362,7 +362,7 @@ z-Uzozen | [b-meter | g-two] | v-walk
 
 ::: details Show answer
 
-🔊 `zawodal grolel.`
+🔊 `zawodal grolol.`
 
 z-bottle | g-_7
 
@@ -373,7 +373,7 @@ z-bottle | g-_7
 
 ::: details Show answer
 
-🔊 `hrodurethovanam zolazun varemul.`
+🔊 `hrodagothozunum zolazun varemul.`
 
 h-_23,59.about | z-Olazun | v-scream
 
@@ -384,7 +384,7 @@ h-_23,59.about | z-Olazun | v-scream
 
 ::: details Show answer
 
-🔊 `zawodalx gravazoyol.`
+🔊 `zawodalx grazumayol.`
 
 z-bottle-x | g-50yo
 
@@ -395,7 +395,7 @@ z-bottle-x | g-50yo
 
 ::: details Show answer
 
-🔊 `zrawozol uel zraduzol.`
+🔊 `zrabumal uel zradamal.`
 
 z-ten | outside | z-20
 
@@ -406,14 +406,14 @@ z-ten | outside | z-20
 
 ::: details Show answer
 
-🔊 `hroewothomol zolazun vowurel.`
+🔊 `hroebuthovel zolazun vowurel.`
 
 h-_1,4 | z-Olazun | v-walk
 
 *On 1 April, Olazun walks.*
 :::
 
-**6.** `zawodalx grarel grumol.`
+**6.** `zawodalx gragol gruvel.`
 
 ::: details Show answer
 
@@ -425,20 +425,20 @@ h-_1,4 | z-Olazun | v-walk
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Olazun sees spoon 3.* `zolazun duzedal grorel vawebol.` or `zolazun duzedal grarel vawebol.`
+**1.** *Olazun sees spoon 3.* `zolazun duzedal grogol vawebol.` or `zolazun duzedal gragol vawebol.`
 
 ::: details Show answer
-`zolazun duzedal grorel vawebol.`
+`zolazun duzedal grogol vawebol.`
 
 z-Olazun | [d-spoon | g-_3.spelled] | v-see
 
 A label is a digit string, marker **`ro`**; **`ra`** counts three spoons.
 :::
 
-**2.** *a third of the pills* `zobebulx grurel.` or `zobebulx grarel.`
+**2.** *a third of the pills* `zobebulx grugol.` or `zobebulx gragol.`
 
 ::: details Show answer
-`zobebulx grurel.`
+`zobebulx grugol.`
 
 z-pill-x | g-third-of
 
@@ -447,10 +447,10 @@ Marker **`ru`** divides: *a third of*; **`ra`** is three pills.
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *one through three* <!-- lint: error -->`zrawol zrarel zal.`
+**1.** *one through three* <!-- lint: error -->`zrabul zragol zal.`
 
 ::: details Show answer
-`zrawol al zrarel.`
+`zrabul al zragol.`
 
 z-one | through | z-three
 
@@ -463,15 +463,15 @@ An *and*-join names only the two ends; a range of numbers puts **`al`** between 
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-English *5 or more* / *less than 5* is a **ray**: a band with only one end. Write it as a [range](#ranges) whose other end is infinity: **`zrabal`** (+∞) or **`zrubal`** (−∞), the [digitless exponents](numbers.md#digitless-exponents). The same **`al`** / **`ul`** rules apply, so the hook excludes the endpoint after it.
+English *5 or more* / *less than 5* is a **ray**: a band with only one end. Write it as a [range](#ranges) whose other end is infinity: **`zrawal`** (+∞) or **`zruwal`** (−∞), the [digitless exponents](numbers.md#digitless-exponents). The same **`al`** / **`ul`** rules apply, so the hook excludes the endpoint after it.
 
-> `zraval al zrabal.`
+> `zrazul al zrawal.`
 >
 > z-five | through | z-plus-infinity
 >
 > "5 or more."
 
-> `zrubal ul zraval.`
+> `zruwal ul zrazul.`
 >
 > z-minus-infinity | through-excluding | z-five
 >
@@ -480,17 +480,17 @@ English *5 or more* / *less than 5* is a **ray**: a band with only one end. Writ
 <!-- cheat-sheet: numbers -->
 | Agebon | Use | English |
 |--------|-----|---------|
-| **`zraval al zrabal`** | 5 up to +∞ | *5 or more* (`≥ 5`) |
-| **`zrabal ul zraval`** | +∞ down to 5, 5 left out | *more than 5* (`> 5`) |
-| **`zrubal al zraval`** | −∞ up to 5 | *5 or less* / *at most 5* (`≤ 5`) |
-| **`zrubal ul zraval`** | −∞ up to 5, 5 left out | *less than 5* (`< 5`) |
-| **`zraval am zrabal`** | soft | *about 5 or more* |
+| **`zrazul al zrawal`** | 5 up to +∞ | *5 or more* (`≥ 5`) |
+| **`zrawal ul zrazul`** | +∞ down to 5, 5 left out | *more than 5* (`> 5`) |
+| **`zruwal al zrazul`** | −∞ up to 5 | *5 or less* / *at most 5* (`≤ 5`) |
+| **`zruwal ul zrazul`** | −∞ up to 5, 5 left out | *less than 5* (`< 5`) |
+| **`zrazul am zrawal`** | soft | *about 5 or more* |
 
-For counts, −∞ reads as *no lower limit*: `zagozolx grubal al graval` is *up to five cats*.
+For counts, −∞ reads as *no lower limit*: `zagozolx gruwal al grazul` is *up to five cats*.
 
-Ranks take the first and last place as ends. **`grebal`** is the last place and **`grebul`** the first, so `zredul al zrebal` is *2nd through last*.
+Ranks take the first and last place as ends. **`grewal`** is the last place and **`grewul`** the first, so `zredal al zrewal` is *2nd through last*.
 
-**Compare with:** a rank join on one number is not a ray: `zraval zel` is *only 5 matters*, and `zraval zael` is *start with 5*.
+**Compare with:** a rank join on one number is not a ray: `zrazul zel` is *only 5 matters*, and `zrazul zael` is *start with 5*.
 
 ### Named and unknown ranges {#named-ranges}
 <a id="half-open-exclude-the-high-end-only"></a>
@@ -501,12 +501,12 @@ The range hook takes the other hook endings too.
 | Agebon | Use | English |
 |--------|-----|---------|
 | `z+13 an z+19` | **-n**: a named band | *the teens* |
-| `zrarel ar zraval` | **-r**: some value in the band | *some value from 3 to 5* |
-| `zrarel ur zraval` | **-r**: some value in the band, 5 left out | *some value from 3 up to 5* |
+| `zragol ar zrazul` | **-r**: some value in the band | *some value from 3 to 5* |
+| `zragol ur zrazul` | **-r**: some value in the band, 5 left out | *some value from 3 up to 5* |
 
 > `z+13 an z+19.`
 >
-> 🔊 `zraworel an zrawonal.`
+> 🔊 `zrabugol an zrabunul.`
 >
 > NAME[z-13 | through | z-19]
 >
@@ -514,13 +514,13 @@ The range hook takes the other hook endings too.
 
 With **-r**, the hook stands in for one value you are not naming. Under a [question](questions.md#fill-ask-r) it asks for that value, as `zar` asks *who?*:
 
-> `zuzozen dagozolx grarel ar graval vawebol.`
+> `zuzozen dagozolx gragol ar grazul vawebol.`
 >
 > z-Uzozen | [d-cat-x | g-three] | some.through | g-five | v-see
 >
 > "Uzozen sees some number of cats from 3 to 5."
 
-The [range hooks](hooks.md#ranges) take **-r** the same way: `zrarel uar zraval` is *some value strictly between 3 and 5*, and `zrarel uer zraval` *some value outside 3–5*.
+The [range hooks](hooks.md#ranges) take **-r** the same way: `zragol uar zrazul` is *some value strictly between 3 and 5*, and `zragol uer zrazul` *some value outside 3–5*.
 
 ### Ordinal generation: digitful exponent on **`#`** / **`#-`**
 <a id="ordinal-generation"></a>
@@ -528,7 +528,7 @@ The [range hooks](hooks.md#ranges) take **-r** the same way: `zrarel uar zraval`
 
 On a rank number (forward **`#`** / **`re`** or end-relative **`#-`** / **`rue`**), an exponent with digits is not a power of ten. It says **how many generations away** from the person, version, or outline point in focus. Use it when English would say *the third grandchild* or *the 3rd sub-point*.
 
-The marker still counts **from the start** or **from the end**, but only among the members of that generation (its cohort). The exponent **`eK`** names the generation K steps deeper (descendants), and **`e-K`** the generation K steps up (ancestors). The mantissa picks which member; leave it off to name the whole cohort. Leave the exponent off for the focus's **own** generation (`grerel` = 3rd peer). Writing **`e0`** says *current generation* outright, which is usually redundant.
+The marker still counts **from the start** or **from the end**, but only among the members of that generation (its cohort). The exponent **`eK`** names the generation K steps deeper (descendants), and **`e-K`** the generation K steps up (ancestors). The mantissa picks which member; leave it off to name the whole cohort. Leave the exponent off for the focus's **own** generation (`gregol` = 3rd peer). Writing **`e0`** says *current generation* outright, which is usually redundant.
 
 | Piece | Job |
 |-------|-----|
@@ -552,19 +552,19 @@ The marker still counts **from the start** or **from the end**, but only among t
 | **`g#e-1`** | generation −1 / parent layer (member unspecified) |
 | **`g#1e-1`** | 1st of generation −1 (often *the parent* when the cohort is singleton-framed) |
 
-On `/x/`, generations are levels of an outline: `x#3e2` is the *3rd sub-sub-point under the current point*, and **`xrebazol`** is *the point or points on the current level*. `/h/`, `/v/`, and `/y/` read generations the same way when the series comes in levels (*for the 3rd time at level +2*, *place 3rd at level +2*, …). For a plain count of occasions, use **`h#N`**.
+On `/x/`, generations are levels of an outline: `x#3e2` is the *3rd sub-sub-point under the current point*, and **`xrewamal`** is *the point or points on the current level*. `/h/`, `/v/`, and `/y/` read generations the same way when the series comes in levels (*for the 3rd time at level +2*, *place 3rd at level +2*, …). For a plain count of occasions, use **`h#N`**.
 
 #### Kin {#kin-generations}
 
 Generations form a **tree**, like an outline. A cohort is only the members **under the same node**, so the plain forms name close family and never side branches:
 
-- **`grebuwol`** is the layer directly above the focus: the **parents**, not aunts or uncles.
-- **`grebazol`** is the others under the same parent: the **siblings**, not cousins. It never includes the focus.
-- **`grebawol`** / **`grebadul`** are the focus's own **children** / **grandchildren**, not nieces or nephews.
+- **`grewubul`** is the layer directly above the focus: the **parents**, not aunts or uncles.
+- **`grewamal`** is the others under the same parent: the **siblings**, not cousins. It never includes the focus.
+- **`grewabul`** / **`grewadal`** are the focus's own **children** / **grandchildren**, not nieces or nephews.
 
 The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest sibling, **`g#-1e0`** the youngest. To say whose family it is, put the anchor person in a `bl-` word right after the number. (cue: the number says how far up or down the tree; `/b/` says from whom)
 
-> `zolazun grebazol bluzozen vowurel.`
+> `zolazun grewamal bluzozen vowurel.`
 >
 > [z-Olazun | [g-#-e0 | bl-Uzozen]] | v-walk
 >
@@ -572,7 +572,7 @@ The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest si
 
 With no `bl-` word after a joined subject, each member is a sibling of the others.
 
-> `zuzozen zolazun zal grebazol.`
+> `zuzozen zolazun zal grewamal.`
 >
 > [z-Uzozen | z-Olazun | z-and | g-#-e0]
 >
@@ -580,7 +580,7 @@ With no `bl-` word after a joined subject, each member is a sibling of the other
 
 > `zolazun g#1e0 bluzozen vowurel.`
 >
-> 🔊 `zolazun grebazoyawol bluzozen vowurel.`
+> 🔊 `zolazun grewamayabul bluzozen vowurel.`
 >
 > [z-Olazun | [g-#-1e0 | bl-Uzozen]] | v-walk
 >
@@ -588,7 +588,7 @@ With no `bl-` word after a joined subject, each member is a sibling of the other
 
 > `zahoyel g#2e1 bluzozen vowurel.`
 >
-> 🔊 `zahoyel grebawoyadul bluzozen vowurel.`
+> 🔊 `zahoyel grewabuyadal bluzozen vowurel.`
 >
 > [z-child | [g-#-2e1 | bl-Uzozen]] | v-walk
 >
@@ -596,9 +596,9 @@ With no `bl-` word after a joined subject, each member is a sibling of the other
 
 For a side branch, nest a second anchor: first step to the relative, then from there. *Aunt or uncle* is a sibling of a parent.
 
-> `zolazun grebazol bleyol g#1e-1 bluzozen vowurel.`
+> `zolazun grewamal bleyol g#1e-1 bluzozen vowurel.`
 >
-> 🔊 `zolazun grebazol bleyol grebuwoyawol bluzozen vowurel.`
+> 🔊 `zolazun grewamal bleyol grewubuyabul bluzozen vowurel.`
 >
 > [z-Olazun | [g-#-e0 | [bl-person | [g-#-1e-1 | bl-Uzozen]]]] | v-walk
 >

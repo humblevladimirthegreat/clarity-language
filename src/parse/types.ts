@@ -25,8 +25,8 @@ export type NumberMarker = WritingMarker | SpeechMarker;
 
 /** One digit group inside a number stem (mantissa ± exponent, percent closers). */
 export type NumberGroup = {
-  /** Speech exponent prefix: `ba` positive, `bu` negative. */
-  exponentSign?: "ba" | "bu";
+  /** Speech exponent prefix: `wa` positive, `wu` negative. */
+  exponentSign?: "wa" | "wu";
   /** Exponent digits (Arabic in writing, CV syllables in speech). */
   exponentDigits?: string;
   /** Mantissa digits (Arabic or CV syllables). */
@@ -55,7 +55,7 @@ export type NumberStem = {
   calendarOrdinal?: boolean;
   /**
    * Digitless exponent shorthand not folded into groups
-   * (e.g. `e`, `e-`, `+0e`, `+1e`, speech `raba`…).
+   * (e.g. `e`, `e-`, `+0e`, `+1e`, speech `rawa`…).
    */
   digitlessExp?: string;
 };

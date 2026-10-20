@@ -201,7 +201,7 @@ Write the names, then the rank join, then the shared adjective on `/ɡ/`. **`e`*
 | [Both are](../comparatives.md#equatives): an *and*-list, no ranking | `zuzozen zolazun zal gamahum` | *Uzozen and Olazun are both challenging.* | B |
 | [Not as … as](../comparatives.md#comparative-arity): `zuel` | `zolazun zuzozen zuel gamahum` | *Olazun is not as challenging as Uzozen.* | I |
 | [No more … than](../comparatives.md#comparative-arity): deny with `zul` | `zolazun zuzozen zel gamahum zul.` | *Olazun is no more challenging than Uzozen.* | I |
-| [Second biggest](../comparatives.md#place-on-a-scale): ordinal in `/w/` | `zuzozen zel wredul gelazom.` | *Uzozen is the second biggest.* | I |
+| [Second biggest](../comparatives.md#place-on-a-scale): ordinal in `/w/` | `zuzozen zel wredal gelazom.` | *Uzozen is the second biggest.* | I |
 
 ### How many names {#arity}
 
@@ -235,16 +235,16 @@ Keep the rank join; change what the shared word is.
 | [Amount, fewer](../comparatives.md#amount-scale) | `zagozolx zudozolx zuel gral.` | *There are fewer cats than dogs.* | I |
 | [Amount, as many](../comparatives.md#amount-scale) | `zagozolx zudozolx zoel gral.` | *There are as many cats as dogs.* | I |
 | [Amount, by impression](../comparatives.md#amount-scale): `gram` | `zagozolx zudozolx zel gram.` | *It looks like there are more cats than dogs.* | I |
-| [How many more](../comparatives.md#amount-scale): difference in `/b/` | `zagozolx zudozolx zel gral blrarel.` | *There are three more cats than dogs.* | I |
+| [How many more](../comparatives.md#amount-scale): difference in `/b/` | `zagozolx zudozolx zel gral blragol.` | *There are three more cats than dogs.* | I |
 | [Frequency](../comparatives.md#frequency-scale): `hral` | `zuzozen zolazun zel hral vowurel.` | *Uzozen walks more often than Olazun.* | I |
 | [Time, later](../comparatives.md#time-scale): `bral` | `zuzozen zolazun zel bral vovurel.` | *Uzozen arrives later than Olazun.* | I |
 | [Time, earlier](../comparatives.md#time-scale) | `zuzozen zolazun zuel bral vovurel.` | *Uzozen arrives earlier than Olazun.* | I |
 | [The more …, the more …](../comparatives.md#covarying) | `zuzozen hral vowurel xoel zolazun hral vezuvol.` | *The more Uzozen walks, the more Olazun sleeps.* | I |
 | [The more …, the less …](../comparatives.md#covarying) | `zuzozen hral vowurel xuel zolazun hral vezuvol.` | *The more Uzozen walks, the less Olazun sleeps.* | I |
-| [Twice as](../comparatives.md#factor): factor after the adjective | `zuzozen zolazun zoel gelazom hradul.` | *Uzozen is twice as big as Olazun.* | I |
-| [Half as](../comparatives.md#factor): inverse `hrudul` | `zolazun zuzozen zoel gelazom hrudul.` | *Olazun is half as big as Uzozen.* | I |
+| [Twice as](../comparatives.md#factor): factor after the adjective | `zuzozen zolazun zoel gelazom hradal.` | *Uzozen is twice as big as Olazun.* | I |
+| [Half as](../comparatives.md#factor): inverse `hrudal` | `zolazun zuzozen zoel gelazom hrudal.` | *Olazun is half as big as Uzozen.* | I |
 
-*Three times bigger* is `zoel` with `hrarel`, not `zel`. The covarying joins state only that the two go together, not which causes the other.
+*Three times bigger* is `zoel` with `hragol`, not `zel`. The covarying joins state only that the two go together, not which causes the other.
 
 ## Than a stance {#bars}
 

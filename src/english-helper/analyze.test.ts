@@ -117,9 +117,9 @@ describe("analyzeEnglish on the real docs and lexicon", () => {
 
   it("spells a lone count word, but not one of several number words", () => {
     const three = slots("Uzozen sees three books.").find((s) => s.text === "three")!;
-    assert.ok(three.suggestions.some((s) => s.kind === "detector" && s.id === "number" && s.form === "grarel"));
+    assert.ok(three.suggestions.some((s) => s.kind === "detector" && s.id === "number" && s.form === "gragol"));
     const third = slots("Uzozen sees the third book.").find((s) => s.text === "third")!;
-    assert.ok(third.suggestions.some((s) => s.kind === "detector" && s.form === "grerel"));
+    assert.ok(third.suggestions.some((s) => s.kind === "detector" && s.form === "gregol"));
     const many = slots("Uzozen sees twenty one books.").flatMap((s) => s.suggestions);
     assert.ok(!many.some((s) => s.kind === "detector" && s.form));
   });

@@ -1,10 +1,9 @@
 # Proposal: digit-onset mnemonic (Major system)
 
-**Status:** PROPOSED. **Depends on** `number-respelling.md`: every map, table and example below uses the respelled digits (`b d g v z h l r n m` = 1–9, 0; fillers `w` and `y`). The current grammar's digits (`w d r m v g l h n z`) don't fit this design.
+**Status:** PROPOSED. Every map, table and example below uses the [digit syllables](../grammar/numbers.md#counts) (`b d g v z h l r n m` = 1–9, 0; fillers `w` and `y`).
 
 Root tails are live ([lexicon editing § root tails](../meta/lexicon.md#root-tails)): a five-letter root may have any consonant second, so every two-digit cell has roots. A root's second consonant names its kind, so each column of the 00–99 table fills from one kind (foods in column 2, animals in column 5, titles in column 9). Tools and people (`w`, `y` second) are one-digit pegs: the kind letter is a filler, and the first consonant is the digit.
 
-This proposal can't be absorbed before `number-respelling.md`.  
 **Related:** [numbers.md § Counts](../grammar/numbers.md#counts) (digit syllables); [phonology.md § letter names](../grammar/phonology.md#letter-names) (the alphabet opens with the ten digit letters in digit order); [phonology.md § phonotactics](../grammar/phonology.md#phonotactics) (word shape, endings, seams); [word-endings.md](../grammar/word-endings.md); [compounds.md § lexical compounds](../grammar/compounds.md#lexical-compounds); [lexicon editing § root length](../meta/lexicon.md#root-length) and [§ seeds](../meta/lexicon.md#seeds-concrete-senses-and-pictographs); [`data/lexicon-published.csv`](../../data/lexicon-published.csv); `manual-phonology.md` (count shapes for the optional count layer).  
 **Design authority:** spoken number grammar is unchanged. This is an optional **memory channel** that reuses the digit onsets. It adds no morphology, no second digit table, and no [numeric-derivation](../grammar/numeric-derivation.md) reading. Absorb it as a **converter**, not as a 100-row table on a grammar page.
 
@@ -37,7 +36,7 @@ Every published root has a concrete seed, usually an emoji ([seeds](../meta/lexi
 
 ## The map
 
-The same onsets as the respelled digit syllables in `number-respelling.md`:
+The same onsets as the [digit syllables](../grammar/numbers.md#counts):
 
 | Digit | Onset | Syllable |
 |-------|-------|----------|
@@ -189,7 +188,7 @@ People and tools are **not** digitless as a class. Only the kind letter is silen
 - **Every cell has a root.** The thinnest is **73** (two signs). Three others have three: **69**, **04**, **09**.
 - **Column 9 is all titles** (mail, paper, labels, named sports), not country flags. Flags are place-name roots with clusters and extra letters; they are optional long pegs, not 00–99 cells. A flag can decode to two digits if stripping `w` / `y` happens to leave two payload letters; do not put those on the canonical list.
 - **75** of the 100 cells have a root in the `core` vocabulary column, so a canonical list can lean on words learners meet early.
-- Fillers `w` + `y` take tools and people out of this table and put them on 0–9. That pick is `number-respelling.md`'s.
+- Fillers `w` + `y` take tools and people out of this table and put them on 0–9.
 
 Working examples:
 
@@ -225,12 +224,12 @@ Working examples:
 
 ## Absorb sketch
 
-This isn't core-grammar morphology. If accepted, and after `number-respelling.md` is absorbed:
+This isn't core-grammar morphology. If accepted:
 
 - **The converter** ([the tool](#the-tool)): number → ranked pegs, word → digits, plus a check that no 0–9 or 00–99 cell is empty.
 - A short **optional** section, likely [numbers.md](../grammar/numbers.md) Intermediate or Advanced, covering the onset table, the silent letters, the fillers and the peg sizes, and pointing at the tool. Grammar pages never carry the bank.
 
-The blockers to absorbing are `number-respelling.md` and the converter, not lexicon size.
+The blocker to absorbing is the converter, not lexicon size.
 
 ## Non-criteria
 

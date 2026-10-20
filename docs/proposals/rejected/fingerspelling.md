@@ -98,7 +98,7 @@ ASL transfer is **not** a goal. STS and ASL share some shapes on **different** l
 
 **Status:** not adopted; worth a prototype and a speed test. The borrowed inventory above stays the default.
 
-**Idea:** sign the letter's **position in the alphabet** with one-hand number signs, so one rule replaces 18 borrowed shapes. [Letter names](../../grammar/phonology.md#letter-names) already list the alphabet in order: the ten [digit-syllable](../../grammar/phonology.md#digit-letters) consonants come first (**w d r m v g l h n z** = 1 to 9, then 0), then **b y th x**, then the vowels **u a o e**.
+**Idea:** sign the letter's **position in the alphabet** with one-hand number signs, so one rule replaces 18 borrowed shapes. [Letter names](../../grammar/phonology.md#letter-names) already list the alphabet in order: the ten [digit-syllable](../../grammar/phonology.md#digit-letters) consonants come first (**b d g v z h l r n m** = 1 to 9, then 0), then **w y th x**, then the vowels **u a o e**.
 
 Four banks, each signed with a plain **finger count** (extended fingers, no thumb-to-finger shapes):
 

@@ -209,7 +209,7 @@ describe("tableEnglish", () => {
     [header, "|-----|---------|---------|-------|", ...rows].join("\n");
 
   it("reads italic English cells beside an Agebon phrase or sentence", () => {
-    const md = sheet(["| Walk | `zuzozen vowurel.` | *Uzozen walks.* (alone) | B |", "| Kin | `grebuwol` | the layer above the focus | A |"]);
+    const md = sheet(["| Walk | `zuzozen vowurel.` | *Uzozen walks.* (alone) | B |", "| Kin | `grewubul` | the layer above the focus | A |"]);
     assert.deepEqual(
       tableEnglish(md).map(({ agebon, text }) => ({ agebon, text })),
       [{ agebon: "zuzozen vowurel.", text: "*Uzozen walks.* (alone)" }],

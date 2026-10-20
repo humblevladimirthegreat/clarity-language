@@ -31,8 +31,8 @@ An English tense bundles up to three questions: **when** the event sits, **how y
 | *will walk* | your plan | PLAN **`thagem`**; someone else's plan takes a [holder](knowing.md#holder) |
 | *will walk* | a forecast | channel + **`blral`** ([forecast](knowing.md#forecast)) |
 | *is going to walk* | your plan, or clues say so | PLAN, or CLUES + **`blral`** |
-| *is about to walk* / *will walk soon* | a hair / a short while after now | **`blrabul`** / **`blrabum`** on a channel |
-| *just walked* | a hair before now | **`blrubul`** on a channel |
+| *is about to walk* / *will walk soon* | a hair / a short while after now | **`blrawul`** / **`blrawum`** on a channel |
+| *just walked* | a hair before now | **`blruwul`** on a channel |
 | *was going to walk* | intention as of a past moment | PLAN + *as-of* |
 | *used to walk* | a pattern that is not today's | FORMER **`helam`** + **`hual`** |
 | *would walk* (if …) | a long shot | **`thohom blarl`** + **`thrul`** |
@@ -52,7 +52,7 @@ English *Uzozen walked* hides whether you saw it, read it, or were told. Choose 
 >
 > "Uzozen walked, I remember it."
 
-> `zuzozen thevum bluzurem gruwol vowurel.`
+> `zuzozen thevum bluzurem grubul vowurel.`
 >
 > z-Uzozen | [th-MEMORY | [bl-day | g-minus-one]] | v-walk
 >
@@ -60,7 +60,7 @@ English *Uzozen walked* hides whether you saw it, read it, or were told. Choose 
 
 Reports and reasoning need their own `-` amount, because those channels do not fix the time.
 
-> `zuzozen thebam bluzurem gruwol vowurel.`
+> `zuzozen thebam bluzurem grubul vowurel.`
 >
 > z-Uzozen | [th-REPORTED | [bl-day | g-minus-one]] | v-walk
 >
@@ -170,7 +170,7 @@ English *will* is three different claims.
 >
 > "It will rain, going by the pattern."
 
-> `zuzozen thebam bluzurem grawol vowurel.`
+> `zuzozen thebam bluzurem grabul vowurel.`
 >
 > z-Uzozen | [th-REPORTED | [bl-day | g-one]] | v-walk
 >
@@ -186,13 +186,13 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 
 | English | Agebon |
 |---------|--------|
-| *today* / *now* | a channel with an offset of zero: `theyem bluzurem grazol` (zero days); with `bagorum` it is *right now* |
-| *yesterday* / *tomorrow* | a channel with one day back or ahead: `buzurem gruwol` / `buzurem grawol` |
-| *tonight* | today plus *at night*: `theyem bluzurem grazol` and **`herem blanurul`** |
-| *last night* / *tomorrow night* | a channel with one day back or ahead, plus *at night*: `thevum bluzurem gruwol herem blanurul` |
-| *recently* / *recent* | a channel + **`blrubum`** (*a short while before now*; **`blrubul`** is *just now*) |
-| *forever* / *permanent* | a measure phrase with an unbounded amount: `bavuvam grabal` (for `permanent`, add **`hawum`**) |
-| *eventually* / *ultimately* | **`xrebal`** opens the last point (*Finally, …*) |
+| *today* / *now* | a channel with an offset of zero: `theyem bluzurem gramal` (zero days); with `bagorum` it is *right now* |
+| *yesterday* / *tomorrow* | a channel with one day back or ahead: `buzurem grubul` / `buzurem grabul` |
+| *tonight* | today plus *at night*: `theyem bluzurem gramal` and **`herem blanurul`** |
+| *last night* / *tomorrow night* | a channel with one day back or ahead, plus *at night*: `thevum bluzurem grubul herem blanurul` |
+| *recently* / *recent* | a channel + **`blruwum`** (*a short while before now*; **`blruwul`** is *just now*) |
+| *forever* / *permanent* | a measure phrase with an unbounded amount: `bavuvam grawal` (for `permanent`, add **`hawum`**) |
+| *eventually* / *ultimately* | **`xrewal`** opens the last point (*Finally, …*) |
 | *whenever* | **`herem bual`** + the occasion as a quality: `herem bual gerulal` |
 | *currently* / *nowadays* / *at present* / *modern* / *contemporary* | LIVE **`thugom`** when it is in view; otherwise the bare verb, which reports this stretch |
 | *previously* / *formerly* / *originally* / *once* (*once walked*) | FORMER **`helam`** |
@@ -201,14 +201,14 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 | *once* (*one time*) | `h+1` before the verb |
 | ever (*Have you walked at all?*) | **`havom`** + **`hor`** (*anytime*) under **`yol`**: `yol hor zawan havom vowurel` |
 | *during* (*during the storm*) | **`herem`** + `/b/`: `herem blenulul` |
-| *immediately* / *immediate* / *right away* / *at once* (*about to*) | a channel + **`blrabul`** (*a hair after now*) |
+| *immediately* / *immediate* / *right away* / *at once* (*about to*) | a channel + **`blrawul`** (*a hair after now*) |
 | *initially* / *at first* / *firstly* | **`hugulem`** (*first*, as a manner adverb) |
 | *continue* / *keep doing* | **`hawum`** (*still*) |
 | *subsequently* / *after* | **`halam`** + `/b/`: `halam blolazun` |
 | *prior to* | **`habam`** + `/b/`: `habam blolazun` |
-| *in March* / *in 1962* / *on the 12th* | **`herem`** + a month or year in `/b/` (`herem blumalem grerel`, `herem blavuvam g_1962`); a day alone is `h_#12` ([time](numbers-applied.md#time)) |
+| *in March* / *in 1962* / *on the 12th* | **`herem`** + a month or year in `/b/` (`herem blumalem gregol`, `herem blavuvam g_1962`); a day alone is `h_#12` ([time](numbers-applied.md#time)) |
 
-> `zuzozen theyem bluzurem grazol vowurel.`
+> `zuzozen theyem bluzurem gramal vowurel.`
 >
 > z-Uzozen | [th-CLUES | [bl-day | g-zero]] | v-walk
 >
@@ -438,7 +438,7 @@ z-Uzozen | th-MEMORY | v-walk
 **2.** *I hear Uzozen walks tomorrow.*
 
 ::: details Show answer
-`zuzozen thebam bluzurem grawol vowurel.`
+`zuzozen thebam bluzurem grabul vowurel.`
 
 z-Uzozen | [th-REPORTED | [b-day | g-one]] | v-walk
 :::

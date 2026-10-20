@@ -448,9 +448,9 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 
 **Needs:** [Hopefully](sakes.md#speaker-attitude) · [forecasts](knowing.md#forecast) · [evidentiality](knowing.md#evidentiality) · [soon](knowing.md#dated-channel)
 
-English *I hope X will happen* is two claims: you want it, and you expect it. **`thoguyem`** gives the wanting. The *will* is a [forecast](knowing.md#forecast), so it needs a channel plus **`blral`** (or **`blrabum`** for *soon*). If nothing backs it but your gut, the honest channel is INTUITION: faint **`thabor`** for a slim hope, **`thabom`** for an ordinary one.
+English *I hope X will happen* is two claims: you want it, and you expect it. **`thoguyem`** gives the wanting. The *will* is a [forecast](knowing.md#forecast), so it needs a channel plus **`blral`** (or **`blrawum`** for *soon*). If nothing backs it but your gut, the honest channel is INTUITION: faint **`thabor`** for a slim hope, **`thabom`** for an ordinary one.
 
-> `thoguyem thabor blrabum huvum verulal.`
+> `thoguyem thabor blrawum huvum verulal.`
 >
 > th-hope | [th-INTUITION.weak | bl-+-e-.about] | h-no-longer | v-rain
 >
@@ -594,7 +594,7 @@ Many English adjectives are the plain opposite of something that has a root (*un
 | *general* / *generally true* | `zuam` with the kind | every member, as a rule |
 | *universal* / *absolute* / *without exception* | `zual` with the kind | every member, no exceptions |
 | *comprehensive* / *covers everything* | `zual` with the scope | every member, nothing left out |
-| *sure* / *confident* (I am) | stance number `thrabal` (`th+e`) | certain, no exceptions |
+| *sure* / *confident* (I am) | stance number `thrawal` (`th+e`) | certain, no exceptions |
 | *proud* (of something) | `wuwathamam goyem` after the thing | competence met, held inside, flowing |
 
 > `zanal gagebom gul.`

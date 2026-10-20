@@ -464,7 +464,7 @@ function enforceDegreeNumber(word: LexWord, stem: NumberStem): void {
   if (place === undefined || place < 2) throw new ConstructionError("degreeNumber", word.raw);
 }
 
-/** A `/w/` ordinal (`wredul`) is a place on a scale: it needs a single-name `zel` / `zuel` frame (comparatives.md § superlatives). */
+/** A `/w/` ordinal (`wredal`) is a place on a scale: it needs a single-name `zel` / `zuel` frame (comparatives.md § superlatives). */
 function isRankPlace(word: LexWord): boolean {
   return word.pos === "w" && word.family.kind === "number" && isRankMarker(word.family.stem.marker);
 }
@@ -527,7 +527,7 @@ function offsetSign(bound: LexWord | undefined, amount?: LexWord): "+" | "-" | u
   const number = [bound, amount].find((w) => w?.family.kind === "number");
   if (!number || number.family.kind !== "number") return undefined;
   const { marker, groups } = number.family.stem;
-  if (groups.length > 0 && groups.every((g) => /^(0+|(zo)+)$/.test(g.mantissa ?? "") && !g.exponentDigits)) return undefined;
+  if (groups.length > 0 && groups.every((g) => /^(0+|(ma)+)$/.test(g.mantissa ?? "") && !g.exponentDigits)) return undefined;
   if (marker === "+" || marker === "ra") return "+";
   if (marker === "-" || marker === "ru") return "-";
   return undefined;

@@ -40,21 +40,21 @@ To find `u`, start from `a`: keep the tongue centered, close the jaw, and round 
 ### Consonants
 
 A consonant starts a syllable. Many consonants have a **voiced** sound (vocal cords buzzing, as in *zoo*) and an unvoiced one (as in *sea*), and Agebon treats the two as the same letter. Prefer the voiced sound so you can hold a sung note; the unvoiced one is fine for style.
-<!-- Consonant order is alphabet order: the ten digit letters in digit order (w d r m v g l h n z = 1–9, 0), then b y th x. The alphabet / letter-name recitation ends with the vowels u a o e, the same order as vowel stacks. -->
+<!-- Consonant order is alphabet order: the ten digit letters in digit order (b d g v z h l r n m = 1–9, 0), then w y th x. The alphabet / letter-name recitation ends with the vowels u a o e, the same order as vowel stacks. -->
 
 | Agebon | IPA | Cue | Unvoiced variant |
 |--------|-----|-----|------------------|
-| `w` | /w/ <IpaPlay file="Voiced_labio-velar_approximant.ogg" label="w" /> | *we* | |
-| `d` | /d/ <IpaPlay file="Voiced_alveolar_plosive.ogg" label="d" /> | *do* | /t/ <IpaPlay file="Voiceless_alveolar_plosive.ogg" label="unvoiced d" />, *toe* |
-| `r` | /ɹ/ <IpaPlay file="Alveolar_approximant.ogg" label="r" /> | *red* | |
-| `m` | /m/ <IpaPlay file="Bilabial_nasal.ogg" label="m" /> | *me* | |
-| `v` | /v/ <IpaPlay file="Voiced_labiodental_fricative.ogg" label="v" /> | *vie* | /f/ <IpaPlay file="Voiceless_labiodental_fricative.ogg" label="unvoiced v" />, *fee* |
-| `g` | /ɡ/ <IpaPlay file="Voiced_velar_plosive.ogg" label="g" /> | *go* | /k/ <IpaPlay file="Voiceless_velar_plosive.ogg" label="unvoiced g" />, *kite* |
-| `l` | /l/ <IpaPlay file="Alveolar_lateral_approximant.ogg" label="l" /> | *lie* | |
-| `h` | /ɦ/ <IpaPlay file="Voiced_glottal_fricative.ogg" label="h" /> | *ahead* | /h/ <IpaPlay file="Voiceless_glottal_fricative.ogg" label="unvoiced h" />, *hat* |
-| `n` | /n/ <IpaPlay file="Alveolar_nasal.ogg" label="n" /> | *no* | |
-| `z` | /z/ <IpaPlay file="Voiced_alveolar_sibilant.ogg" label="z" /> | *zoo* | /s/ <IpaPlay file="Voiceless_alveolar_sibilant.ogg" label="unvoiced z" />, *sea* |
 | `b` | /b/ <IpaPlay file="Voiced_bilabial_plosive.ogg" label="b" /> | *be* | /p/ <IpaPlay file="Voiceless_bilabial_plosive.ogg" label="unvoiced b" />, *pay* |
+| `d` | /d/ <IpaPlay file="Voiced_alveolar_plosive.ogg" label="d" /> | *do* | /t/ <IpaPlay file="Voiceless_alveolar_plosive.ogg" label="unvoiced d" />, *toe* |
+| `g` | /ɡ/ <IpaPlay file="Voiced_velar_plosive.ogg" label="g" /> | *go* | /k/ <IpaPlay file="Voiceless_velar_plosive.ogg" label="unvoiced g" />, *kite* |
+| `v` | /v/ <IpaPlay file="Voiced_labiodental_fricative.ogg" label="v" /> | *vie* | /f/ <IpaPlay file="Voiceless_labiodental_fricative.ogg" label="unvoiced v" />, *fee* |
+| `z` | /z/ <IpaPlay file="Voiced_alveolar_sibilant.ogg" label="z" /> | *zoo* | /s/ <IpaPlay file="Voiceless_alveolar_sibilant.ogg" label="unvoiced z" />, *sea* |
+| `h` | /ɦ/ <IpaPlay file="Voiced_glottal_fricative.ogg" label="h" /> | *ahead* | /h/ <IpaPlay file="Voiceless_glottal_fricative.ogg" label="unvoiced h" />, *hat* |
+| `l` | /l/ <IpaPlay file="Alveolar_lateral_approximant.ogg" label="l" /> | *lie* | |
+| `r` | /ɹ/ <IpaPlay file="Alveolar_approximant.ogg" label="r" /> | *red* | |
+| `n` | /n/ <IpaPlay file="Alveolar_nasal.ogg" label="n" /> | *no* | |
+| `m` | /m/ <IpaPlay file="Bilabial_nasal.ogg" label="m" /> | *me* | |
+| `w` | /w/ <IpaPlay file="Voiced_labio-velar_approximant.ogg" label="w" /> | *we* | |
 | `y` | /j/ <IpaPlay file="Palatal_approximant.ogg" label="y" /> | *yes* | |
 | `th` | /ð/ <IpaPlay file="Voiced_dental_fricative.ogg" label="th" /> | *this* | /θ/ <IpaPlay file="Voiceless_dental_fricative.ogg" label="unvoiced th" />, *thin* |
 | `x` | /ʒ/ <IpaPlay file="Voiced_palato-alveolar_sibilant.ogg" label="x" /> | *vision* (the *si*) | /ʃ/ <IpaPlay file="Voiceless_palato-alveolar_sibilant.ogg" label="unvoiced x" />, *shy* |
@@ -108,13 +108,13 @@ Some short grammar words stack two vowels (a join such as **ua**). A stack alway
 
 When English says *how many* or *which place*, Agebon uses a [number word](numbers.md). A number word puts `r` right after the role letter. Ordinary words never have that cluster, because their roots start with a vowel, so a role letter followed directly by `r` tells you a number is coming. The marker is `ra`, `ru`, `re`, or `ro`; counting from the end is written `#-`, spelled and spoken **rue** before the digits. Two vowels in a row stay two separate syllables.
 
-> `zagozolx grarel.`
+> `zagozolx gragol.`
 >
 > z-cat-x | g-three
 >
 > "There are three cats."
 
-`grarel` is `g` + `ra` + digit `re` + `-l`.
+`gragol` is `g` + `ra` + digit `go` + `-l`.
 
 ### Syllabic `l` {#syllabic-l}
 
@@ -132,22 +132,22 @@ This is the only beat with no vowel letter. Like a vowel, you can hold it. Befor
 
 When you **spell a word aloud** or **name a letter**, say the Agebon name for it. Pause between names so two names do not run into one syllable.
 
-The table is in **alphabetical order**. The ten letters that begin a digit syllable come first, in digit order (1 to 9, then 0), so `w` is the first letter and `z` the tenth. The other consonants follow, and the vowels come last.
+The table is in **alphabetical order**. The ten letters that begin a digit syllable come first, in digit order (1 to 9, then 0), so `b` is the first letter and `m` the tenth. The other consonants follow, and the vowels come last.
 
 <!-- cheat-sheet: sounds-spelling -->
 | Agebon | Name | Cue |
 |--------|------|-----|
-| `w` | `we` | *wet* |
-| `d` | `da` | *Dada* |
-| `r` | `ro` | *row* |
-| `m` | `me` | *met* |
-| `v` | `vu` | *voodoo* |
-| `g` | `ga` | *gaga* |
-| `l` | `lo` | *low* |
+| `b` | `ba` | *baa* |
+| `d` | `du` | *do* |
+| `g` | `ge` | *get* |
+| `v` | `vo` | *vote* (no glide) |
+| `z` | `za` | *pizza* (the *za*) |
 | `h` | `hu` | *who* |
-| `n` | `nu` | *noon* |
-| `z` | `ze` | *zen* |
-| `b` | `be` | *beg* |
+| `l` | `le` | *let* |
+| `r` | `ro` | *row* |
+| `n` | `na` | *nah* |
+| `m` | `mu` | *moo* |
+| `w` | `we` | *wet* |
 | `y` | `ya` | *yacht* |
 | `th` | `tho` | *though* (no glide) |
 | `x` | `xu` | *shoe* |
@@ -158,10 +158,10 @@ The table is in **alphabetical order**. The ten letters that begin a digit sylla
 
 <!-- retie: letter-names -->
 ```text
-`agozo` → `a` `ga` `o` `ze` `o`
+`agozo` → `a` `ge` `o` `za` `o`
 ```
 
-In a clause, a letter you talk about (such as `z`) is read aloud by its letter name (`ze`).
+In a clause, a letter you talk about (such as `z`) is read aloud by its letter name (`za`).
 
 <a id="digit-letters"></a>
 Ten letters also begin a [digit syllable](numbers.md#counts). The letter name uses the [opposite vowel](#opposite-vowels) (`a`↔`u`, `o`↔`e`), so naming the letter is not the same as counting.
@@ -169,16 +169,16 @@ Ten letters also begin a [digit syllable](numbers.md#counts). The letter name us
 <!-- cheat-sheet: sounds-spelling -->
 | Agebon | Digit syllable | Name | Cue |
 |--------|----------------|------|-----|
-| `w` | `wo` (1) | `we` | `o` ↔ `e` |
-| `d` | `du` (2) | `da` | `u` ↔ `a` |
-| `r` | `re` (3) | `ro` | `e` ↔ `o` |
-| `m` | `mo` (4) | `me` | `o` ↔ `e` |
-| `v` | `va` (5) | `vu` | `a` ↔ `u` |
-| `g` | `gu` (6) | `ga` | `u` ↔ `a` |
-| `l` | `le` (7) | `lo` | `e` ↔ `o` |
-| `h` | `ha` (8) | `hu` | `a` ↔ `u` |
-| `n` | `na` (9) | `nu` | `a` ↔ `u` |
-| `z` | `zo` (0) | `ze` | `o` ↔ `e` |
+| `b` | `bu` (1) | `ba` | `u` ↔ `a` |
+| `d` | `da` (2) | `du` | `a` ↔ `u` |
+| `g` | `go` (3) | `ge` | `o` ↔ `e` |
+| `v` | `ve` (4) | `vo` | `e` ↔ `o` |
+| `z` | `zu` (5) | `za` | `u` ↔ `a` |
+| `h` | `ha` (6) | `hu` | `a` ↔ `u` |
+| `l` | `lo` (7) | `le` | `o` ↔ `e` |
+| `r` | `re` (8) | `ro` | `e` ↔ `o` |
+| `n` | `nu` (9) | `na` | `u` ↔ `a` |
+| `m` | `ma` (0) | `mu` | `a` ↔ `u` |
 
 ## Advanced {#advanced}
 

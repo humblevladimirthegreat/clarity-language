@@ -28,22 +28,22 @@ The name is what you say when you [spell a word aloud](../phonology.md#letter-na
 
 | Letter | Say | Like | Unvoiced | Name | Stage |
 |--------|-----|------|----------|------|-------|
-| [`w`](../phonology.md#consonants) | /w/ | *we* | | `we` | B |
-| `d` | /d/ | *do* | /t/ | `da` | B |
-| `r` | /ɹ/ | *red* | | `ro` | B |
-| `m` | /m/ | *me* | | `me` | B |
-| `v` | /v/ | *vie* | /f/ | `vu` | B |
-| `g` | /ɡ/ | *go* | /k/ | `ga` | B |
-| `l` | /l/ | *lie* | | `lo` | B |
+| [`b`](../phonology.md#consonants) | /b/ | *be* | /p/ | `ba` | B |
+| `d` | /d/ | *do* | /t/ | `du` | B |
+| `g` | /ɡ/ | *go* | /k/ | `ge` | B |
+| `v` | /v/ | *vie* | /f/ | `vo` | B |
+| `z` | /z/ | *zoo* | /s/ | `za` | B |
 | `h` | /ɦ/ | *ahead* | /h/ | `hu` | B |
-| `n` | /n/ | *no* | | `nu` | B |
-| `z` | /z/ | *zoo* | /s/ | `ze` | B |
-| `b` | /b/ | *be* | /p/ | `be` | B |
+| `l` | /l/ | *lie* | | `le` | B |
+| `r` | /ɹ/ | *red* | | `ro` | B |
+| `n` | /n/ | *no* | | `na` | B |
+| `m` | /m/ | *me* | | `mu` | B |
+| `w` | /w/ | *we* | | `we` | B |
 | `y` | /j/ | *yes* | | `ya` | B |
 | `th` | /ð/ | *this* | /θ/ | `tho` | B |
 | `x` | /ʒ/ | *vision* (not English *x*) | /ʃ/ | `xu` | B |
 
-Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), then the other consonants. The vowels come last and name themselves (`u`, `a`, `o`, `e`). Pause between names: `agozo` is `a` `ga` `o` `ze` `o`. A letter you talk about in a clause is a [mention](../spans.md#mention), read by its name.
+Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), then the other consonants. The vowels come last and name themselves (`u`, `a`, `o`, `e`). Pause between names: `agozo` is `a` `ge` `o` `za` `o`. A letter you talk about in a clause is a [mention](../spans.md#mention), read by its name.
 
 ## Word shape {#word-shape}
 
@@ -79,7 +79,7 @@ Word-initial `x` is the [continue](../dependents.md#continue-x) prefix, not a co
 
 | Rule | Example | English | Stage |
 |------|---------|---------|-------|
-| [A role letter followed by `r` starts a number word](../phonology.md#number-word-exception) | `grarel` | *three* (`g` + `ra` + `re` + **-l**) | I |
+| [A role letter followed by `r` starts a number word](../phonology.md#number-word-exception) | `gragol` | *three* (`g` + `ra` + `go` + **-l**) | I |
 | [Counting from the end](../phonology.md#number-word-exception) is spoken **rue** before the digits | | | I |
 
 ### Digit syllables and letter names {#digit-names}
@@ -88,16 +88,16 @@ Ten letters also start a [digit syllable](../numbers.md#counts); the table is [h
 
 | Letter | Digit | Name | Stage |
 |--------|-------|------|-------|
-| [`w`](../phonology.md#letter-names) | `wo` (1) | `we` | I |
-| `d` | `du` (2) | `da` | I |
-| `r` | `re` (3) | `ro` | I |
-| `m` | `mo` (4) | `me` | I |
-| `v` | `va` (5) | `vu` | I |
-| `g` | `gu` (6) | `ga` | I |
-| `l` | `le` (7) | `lo` | I |
-| `h` | `ha` (8) | `hu` | I |
-| `n` | `na` (9) | `nu` | I |
-| `z` | `zo` (0) | `ze` | I |
+| [`b`](../phonology.md#letter-names) | `bu` (1) | `ba` | I |
+| `d` | `da` (2) | `du` | I |
+| `g` | `go` (3) | `ge` | I |
+| `v` | `ve` (4) | `vo` | I |
+| `z` | `zu` (5) | `za` | I |
+| `h` | `ha` (6) | `hu` | I |
+| `l` | `lo` (7) | `le` | I |
+| `r` | `re` (8) | `ro` | I |
+| `n` | `nu` (9) | `na` | I |
+| `m` | `ma` (0) | `mu` | I |
 
 ## Singing {#singing}
 

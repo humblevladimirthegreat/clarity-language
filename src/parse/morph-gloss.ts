@@ -1356,9 +1356,9 @@ function numberLabel(stem: NumberStem, pos: Pos | undefined): string {
 function formatNumberGroup(g: NumberGroup): string {
   let s = g.mantissa ?? "";
   if (g.exponentDigits) {
-    s += `${g.exponentSign === "bu" ? "e-" : "e"}${g.exponentDigits}`;
+    s += `${g.exponentSign === "wu" ? "e-" : "e"}${g.exponentDigits}`;
   } else if (!g.mantissa && g.exponentSign) {
-    s += g.exponentSign === "bu" ? "e-" : "e";
+    s += g.exponentSign === "wu" ? "e-" : "e";
   }
   if (g.percent === "yo") s += "yo";
   if (g.percent === "yu") s += "yu";
@@ -1634,7 +1634,7 @@ function hyphenEnglish(text: string): string {
 /**
  * Whether a number word is preferred in shorthand ([numbers § Style](../../docs/grammar/numbers.md#writing-style-numeric-vs-spelled)):
  * more than one digit in total (mantissa and exponent), or a digit-string label.
- * Zero or one digit is preferred spelled (`gral`, `grarel`, `grabazol`).
+ * Zero or one digit is preferred spelled (`gral`, `gragol`, `grawamal`).
  */
 export function prefersNumberShorthand(stem: NumberStem): boolean {
   if (stem.marker === "_" || stem.calendarOrdinal) return true;
@@ -1661,7 +1661,7 @@ function markShorthandRuns(words: LexWord[], ctxByIndex: MorphGlossContext[]): v
 
 /**
  * Marks a number word written in its non-preferred surface: `.spelled` on a spelled word
- * that prefers shorthand (`grawowol` for `g+11`), `.short` on shorthand that prefers
+ * that prefers shorthand (`grabubul` for `g+11`), `.short` on shorthand that prefers
  * spelling (`g+`, `g+3`). The preferred surface is unmarked.
  */
 function numberSurfaceSuffix(raw: string, stem: NumberStem, ctx: MorphGlossContext): string {

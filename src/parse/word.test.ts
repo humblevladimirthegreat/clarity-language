@@ -59,7 +59,7 @@ describe("parseWord — content / gl- / citation", () => {
 });
 
 describe("parseWord — numbers (writing + speech)", () => {
-  it("parses g+3 and speech twin grarel", () => {
+  it("parses g+3 and speech twin gragol", () => {
     const writing = parseOk("g+3");
     assert.equal(writing.pos, "g");
     assert.equal(writing.ending, "l");
@@ -68,7 +68,7 @@ describe("parseWord — numbers (writing + speech)", () => {
       stem: { marker: "+", groups: [{ mantissa: "3" }] },
     });
 
-    const speech = parseOk("grarel");
+    const speech = parseOk("gragol");
     assert.equal(speech.pos, "g");
     assert.equal(speech.ending, "l");
     assert.deepEqual(speech.family, {
@@ -134,7 +134,7 @@ describe("parseWord — numbers (writing + speech)", () => {
     const sci = parseOk("g+1e9");
     if (sci.family.kind === "number") {
       assert.deepEqual(sci.family.stem.groups, [
-        { mantissa: "1", exponentSign: "ba", exponentDigits: "9" },
+        { mantissa: "1", exponentSign: "wa", exponentDigits: "9" },
       ]);
     }
   });
@@ -234,15 +234,15 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
   });
 
   it("requires th + marker vowel between spoken number groups (numbers.md § Group separator)", () => {
-    const word = parseOk("hrowovathorezol");
+    const word = parseOk("hrobuzuthogomal");
     assert.equal(word.family.kind === "number" && word.family.stem.groups.length, 2);
     assert.throws(() => parseWord("hrowovatharezol"));
-    const merged = parseOk("hrowovarezol");
+    const merged = parseOk("hrobuzugomal");
     assert.equal(merged.family.kind === "number" && merged.family.stem.groups.length, 1);
   });
 
-  it("parses stance numbers under th (thrawozol = th+10)", () => {
-    const word = parseOk("thrawozol");
+  it("parses stance numbers under th (thrabumal = th+10)", () => {
+    const word = parseOk("thrabumal");
     assert.equal(word.pos, "th");
     assert.equal(word.family.kind, "number");
   });
@@ -355,8 +355,8 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     });
   });
 
-  it("parses zolovelrabal as numeric derivation +e (numeric-derivation.md)", () => {
-    const word = parseOk("zolovelrabal");
+  it("parses zolovelrawal as numeric derivation +e (numeric-derivation.md)", () => {
+    const word = parseOk("zolovelrawal");
     assert.equal(word.pos, "z");
     assert.equal(word.ending, "l");
     assert.deepEqual(word.family, {
@@ -368,8 +368,8 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     });
   });
 
-  it("parses zolovemrabal as numeric derivation with abstract join -m", () => {
-    const word = parseOk("zolovemrabal");
+  it("parses zolovemrawal as numeric derivation with abstract join -m", () => {
+    const word = parseOk("zolovemrawal");
     assert.equal(word.family.kind, "x");
     if (word.family.kind === "x") {
       assert.equal(word.family.join, "m");

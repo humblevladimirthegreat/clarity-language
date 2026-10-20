@@ -79,7 +79,7 @@ describe("toPhonemeWord", () => {
 describe("isNativeSurface", () => {
   it("accepts ordinary words and rejects writing shorthand", () => {
     assert.equal(isNativeSurface("zuzozen"), true);
-    assert.equal(isNativeSurface("grarel"), true);
+    assert.equal(isNativeSurface("gragol"), true);
     assert.equal(isNativeSurface("g+3"), false);
     assert.equal(isNativeSurface("d[hi]"), false);
   });

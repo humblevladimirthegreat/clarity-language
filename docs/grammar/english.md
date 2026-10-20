@@ -148,7 +148,7 @@ One English word, one row: the form that says it and the section that teaches it
 | *overseas* (*across the water*) | **`ohem`** *across* + the water: `hohem blohalal` | [Locative relations](relations.md#locative-relations) |
 | *bottom* (the low part of a thing) | `zaduhel gobem blahehal` (a down part of the house) | [Of relations](relations.md#of-relations) |
 | *parallel* (*parallel to Olazun*) | the direction, then *like*: `gurem gewom blolazun` | [Simile](relations.md#similative) |
-| *lean* / *tilt* | `vaduhel hrubul` (*almost falls*) | [Already, still, not yet](knowing.md#phasal) |
+| *lean* / *tilt* | `vaduhel hruwul` (*almost falls*) | [Already, still, not yet](knowing.md#phasal) |
 | *corner* / *around the corner* | `zadugul` (the corner); `ol badugul` *at the corner*; `hevam bladugul` *around the corner* | [Locative relations](relations.md#locative-relations) |
 | *beyond* / *farther than* | rank on distance: `zahehal zel gazavem` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
 | *versus* / *against* (*Uzozen versus Olazun*) | hook **`uel`** + `/b/` | [Hooks](hooks.md#extra-noun) |

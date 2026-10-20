@@ -61,7 +61,7 @@ type HookPhrase = { phrase?: string };
 /** Shown when the suggestion spells no word of its own (a pattern, a detector). */
 type Exampled = { example?: SectionExample };
 export type JobSuggestion = GrammarJob & HookPhrase & Exampled & { kind: "job"; tier: "grammar" };
-/** `form`: the word the detector spells for this English word (a number: `grarel` *three*). */
+/** `form`: the word the detector spells for this English word (a number: `gragol` *three*). */
 export type DetectorSuggestion = DetectorHit & Exampled & { kind: "detector"; tier: "grammar"; form?: string };
 export type EntrySuggestion = HookPhrase & Exampled & { kind: "entry"; tier: "grammar"; form: string; english: string; link: string; band?: Band };
 /**
@@ -439,7 +439,7 @@ function addExamples(data: HelperData, suggestions: Suggestion[], words: readonl
   }
 }
 
-/** A lone count or rank word spelled as a `/ɡ/` number word ([counts](numbers.md#counts)): *three* → `grarel`, *third* → `grerel`. */
+/** A lone count or rank word spelled as a `/ɡ/` number word ([counts](numbers.md#counts)): *three* → `gragol`, *third* → `gregol`. */
 function numberWord(data: HelperData, t: TaggedTerm): string | undefined {
   if (t.value === undefined || !Number.isInteger(t.value) || t.value < 0) return undefined;
   const word = `g${markerToSpeech(t.ordinal ? "#" : "+")}${digitsToSyllables(String(t.value))}l`;

@@ -104,7 +104,7 @@ function senseOf(word: WordNode, suggested: ReturnType<typeof suggestedRoots> | 
   if (!suggested) return out;
   const matches = suggested.roots.get(root) ?? [];
   const same = matches.find((m) => !m.alias && (!m.side || m.side === side));
-  // A grammar row that spells the word (`bazazam gruwol` for *yesterday*) suggested it too.
+  // A grammar row that spells the word (`bazazam grubul` for *yesterday*) suggested it too.
   const exact = suggested.forms.find((f) => f.words.includes(word.raw));
   const other = matches.find((m) => !m.alias && m.side === otherSide);
   const near = suggested.forms.flatMap((f) => f.words.filter((w) => w.includes(root)).map((w) => ({ english: f.english, spelled: w })))[0];

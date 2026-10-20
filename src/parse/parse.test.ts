@@ -202,7 +202,7 @@ describe("parse — describing a call or reaction (speech-moves.md#describe-turn
   });
 
   it("rejects /w/ on a call and describing words on a number cheer or span", () => {
-    for (const text of ["welazom yolazun.", "welazom yrabarel.", "yrabarel gelazom.", "y<Amen> gelazom."]) {
+    for (const text of ["welazom yolazun.", "welazom yrawagol.", "yrawagol gelazom.", "y<Amen> gelazom."]) {
       assert.throws(() => parseText(text), /speech-moves\.md#describe-turn-word/, text);
     }
   });
@@ -673,9 +673,9 @@ describe("parse — comparatives.md bars", () => {
 
   it("keeps a bar's hosted /b/ and dated offset inside the fence", () => {
     assert.equal(barOf("zanal thebam blolazun zuel gagebom.")?.hosted?.bound.raw, "blolazun");
-    const dated = barOf("zuzozen thevum bluzurem gruwol zel guzemol.");
+    const dated = barOf("zuzozen thevum bluzurem grubul zel guzemol.");
     assert.equal(dated?.hosted?.bound.raw, "bluzurem");
-    assert.equal(dated?.hosted?.amount?.raw, "gruwol");
+    assert.equal(dated?.hosted?.amount?.raw, "grubul");
   });
 
   it("ranks a closed universal fence against the bar after it", () => {

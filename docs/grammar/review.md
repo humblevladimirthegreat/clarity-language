@@ -90,7 +90,7 @@ z-Uzozen | [h-like | bl-duck] | v-sing
 **4.** *Ahelan smells three tomatoes.*
 
 ::: details Show answer
-`zahelan dudedolx grarel vonebol.`
+`zahelan dudedolx gragol vonebol.`
 
 z-Ahelan | [d-tomato-x | g-three] | v-smell
 
@@ -424,7 +424,7 @@ z-Uzozen | [v-cook | v-fight | v-rank/more]
 **8.** *Ahelan sleeps about two hours.*
 
 ::: details Show answer
-`zahelan bagorum gradum vezuvol.`
+`zahelan bagorum gradam vezuvol.`
 
 z-Ahelan | [b-hour | g-two.about] | v-sleep
 
@@ -473,7 +473,7 @@ z-Ahelan | [gl-MENTION | d-CITE[Uzozen]] | v-write
 **Rule:** [Mention](spans.md#mention)
 :::
 
-**4.** `zuzozen danewulx grarel vawebol. zahelan dugedolx grarer vawebol.`
+**4.** `zuzozen danewulx gragol vawebol. zahelan dugedolx gragor vawebol.`
 
 ::: details Show answer
 z-Uzozen | [d-knife-x | g-three] | v-see . z-Ahelan | [d-cookie-x | g-←three] | v-see
@@ -533,10 +533,10 @@ y-Ahelan | y-soft-prohibition | v-cry
 **Rule:** [Speech act: firm and soft](speech-moves.md#speech-act)
 :::
 
-**4.** *Olazun and Ahelan each cook three cookies.* `zolazun zahelan zal vuguyel dugedolx grarel.` or `zolazun zahelan zal vuguyelx dugedolx grarel.`
+**4.** *Olazun and Ahelan each cook three cookies.* `zolazun zahelan zal vuguyel dugedolx gragol.` or `zolazun zahelan zal vuguyelx dugedolx gragol.`
 
 ::: details Show answer
-`zolazun zahelan zal vuguyel dugedolx grarel.`
+`zolazun zahelan zal vuguyel dugedolx gragol.`
 
 [z-Olazun | z-Ahelan | z-and] | v-cook | [d-cookie-x | g-three]
 
@@ -707,7 +707,7 @@ z-Ahelan | d-CITE[umbrella]# | v-write
 **Rule:** [Editorial close and close-all](spans.md#close-forms-complete-editorial-close-all)
 :::
 
-**3.** `zuzozen gogowulrabal.`
+**3.** `zuzozen gogowulrawal.`
 
 ::: details Show answer
 z-Uzozen | g-quiet-l-infinity
@@ -743,14 +743,14 @@ Before the rank join, REPORTED is the bar: what Ahelan said sets the level. Afte
 **Rule:** [Every bar](comparatives.md#stance-bars)
 :::
 
-**3.** *Uzozen sees a huge but finite number of baguettes.* `zuzozen debodelx grabam vawebol.` or `zuzozen debodelx grabal vawebol.`
+**3.** *Uzozen sees a huge but finite number of baguettes.* `zuzozen debodelx grawam vawebol.` or `zuzozen debodelx grawal vawebol.`
 
 ::: details Show answer
-`zuzozen debodelx grabam vawebol.`
+`zuzozen debodelx grawam vawebol.`
 
 z-Uzozen | [d-baguette-x | g-plus-infinity.about] | v-see
 
-Open **-m** keeps the amount finite, just very large; **`grabal`** is infinitely many.
+Open **-m** keeps the amount finite, just very large; **`grawal`** is infinitely many.
 
 **Rule:** [Digitless exponents](numbers.md#digitless-exponents)
 :::
@@ -769,10 +769,10 @@ On `/w/` right before the adjective, MEMORY covers only *sleepy*; **`thevum`** o
 
 #### Fix it {#advanced-fix-it}
 
-**1.** *I saw Ahelan sleep two hours ago.* <!-- lint: error -->`zahelan thevum bagorum gradul vezuvol.`
+**1.** *I saw Ahelan sleep two hours ago.* <!-- lint: error -->`zahelan thevum bagorum gradal vezuvol.`
 
 ::: details Show answer
-`zahelan thevum blagorum grudul vezuvol.`
+`zahelan thevum blagorum grudal vezuvol.`
 
 z-Ahelan | [th-MEMORY | [bl-hour | g-minus-two]] | v-sleep
 

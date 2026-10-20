@@ -294,21 +294,21 @@ DEDUCED grades how far you checked the steps, not the premises. A step can be ai
 
 ### Second-hand and further (`th#N`) {#hand-depth}
 
-English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source* count the hands between the person who was there and you. A channel does not say that. Add a [stance number](numbers.md#number-as-stance-by-marker) with the rank marker after the channel: **`th#N`** (from 2) is *N-th hand*. The channel says what form the claim reached you in, and the number says how far that is from the event. So `thredul` (`th#2`) is one step removed: told by someone who was there, or written by someone who asked them. `threrel` (`th#3`) is two steps removed: told by someone who was told, or compiled from reports. (cue: **`e`** ≈ order, the place in the chain)
+English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source* count the hands between the person who was there and you. A channel does not say that. Add a [stance number](numbers.md#number-as-stance-by-marker) with the rank marker after the channel: **`th#N`** (from 2) is *N-th hand*. The channel says what form the claim reached you in, and the number says how far that is from the event. So `thredal` (`th#2`) is one step removed: told by someone who was there, or written by someone who asked them. `thregol` (`th#3`) is two steps removed: told by someone who was told, or compiled from reports. (cue: **`e`** ≈ order, the place in the chain)
 
-> `zolazun thebam threrel velurul.`
+> `zolazun thebam thregol velurul.`
 >
 > z-Olazun | th-REPORTED | th-3rd-hand | v-departure
 >
 > "I heard third-hand that Olazun left."
 
-> `zolazun thebal blunonal thredul velurul.`
+> `zolazun thebal blunonal thredal velurul.`
 >
 > z-Olazun | [th-REPORTED.strong | bl-newspaper] | th-2nd-hand | v-departure
 >
 > "Olazun left, according to a newspaper article by someone who interviewed people who were there."
 
-Alone, `th#N` says the claim was passed on to you, without saying in what form. After a channel it adds the form: REPORTED (a retelling, a secondary source, or lore passed down), PATTERN (cases you know only from reports), or CLUES (clues you know only from reports). The number counts the hands on the evidence, never the reasoning steps: a conclusion drawn from your own clues is plain CLUES. First-hand has no number, because that is a channel: `th#N` with LIVE or MEMORY (`thugom`, `thevum`) is not used. The usual number endings apply: **-m** *about N-th hand* (`threrem`), **-r** with a digit *the same depth as before* (`threrer`). Digitless `threr` under a question asks *how many hands?*
+Alone, `th#N` says the claim was passed on to you, without saying in what form. After a channel it adds the form: REPORTED (a retelling, a secondary source, or lore passed down), PATTERN (cases you know only from reports), or CLUES (clues you know only from reports). The number counts the hands on the evidence, never the reasoning steps: a conclusion drawn from your own clues is plain CLUES. First-hand has no number, because that is a channel: `th#N` with LIVE or MEMORY (`thugom`, `thevum`) is not used. The usual number endings apply: **-m** *about N-th hand* (`thregom`), **-r** with a digit *the same depth as before* (`thregor`). Digitless `threr` under a question asks *how many hands?*
 
 **Compare with:** `th_N` names *which* numbered source the claim rests on; `th#N` counts *how many hands* it passed through. Reliability of the one source you heard from is the ending on the channel (`thebal` / `thebar`).
 
@@ -1074,7 +1074,7 @@ z-Uzozen | th-LIVE | h-RESIDUE | v-departure
 **2.** *I heard third-hand that Olazun screams.*
 
 ::: details Show answer
-`zolazun thebam threrel varemul.`
+`zolazun thebam thregol varemul.`
 
 z-Olazun | th-REPORTED | th-3rd-hand | v-scream
 :::
@@ -1228,13 +1228,13 @@ Only words about **how you know** or **how things stand** move to `/w/` this way
 
 English *three hours ago* and *in three hours* count from now. Agebon counts from the channel instead: put a [measure phrase](numbers-applied.md#measure-phrases) in `/b/` immediately after the evidential. Any other noun there is the [source](#source); a time measure is the offset. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
 
-> `zuzozen thevum blagorum grurel vowurel.`
+> `zuzozen thevum blagorum grugol vowurel.`
 >
 > z-Uzozen | [th-MEMORY | [bl-hour | g-minus-three]] | v-walk
 >
 > "I saw Uzozen walk three hours ago."
 
-> `zolazun thebam blagorum grarel velurul.`
+> `zolazun thebam blagorum gragol velurul.`
 >
 > z-Olazun | [th-REPORTED | [bl-hour | g-three]] | v-departure
 >
@@ -1254,7 +1254,7 @@ The wrong sign on a one-way word (**`thevum`** with **`+`**, **`thagem`** with *
 
 A [carried](#carry-forward) channel keeps its offset. Date the first sentence of a story, and the bare sentences after it happen then too, so a past story needs no tense and no offset on every line. A new offset starts a new frame.
 
-> `zuzozen thevum bluzurem gruwol vowurel. zuzozen vuhohol.`
+> `zuzozen thevum bluzurem grubul vowurel. zuzozen vuhohol.`
 >
 > z-Uzozen | [th-MEMORY | [bl-day | g-minus-one]] | v-walk . z-Uzozen | v-sit
 >
@@ -1262,43 +1262,43 @@ A [carried](#carry-forward) channel keeps its offset. Date the first sentence of
 
 A signed measure in the `/b/` of a [time pole](dependents.md#time-poles) (**`harum`** *until*, **`hevahum`** *by*, **`habam`** *before*, **`halam`** *after*, **`herem`** *during*) counts from now, the same way. The pole itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel of its own (a carried frame does not count). So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a pole to slip in a past or future with no warrant. An absolute date in the pole (`harum bl_#22,7`) needs none of this.
 
-> `yel vuhamum zawan harum bluzurem grawol.`
+> `yel vuhamum zawan harum bluzurem grabul.`
 >
 > y-command | v-confidentiality | z-listener | [h-until | [bl-day | g-one]]
 >
 > "Keep the secret until tomorrow."
 
-For *just* and *about to*, use the [just-short](numbers.md#just-short) amount with no unit: **`blrubul`** is *a hair before now*, **`blrabul`** is *a hair after now*.
+For *just* and *about to*, use the [just-short](numbers.md#just-short) amount with no unit: **`blruwul`** is *a hair before now*, **`blrawul`** is *a hair after now*.
 
-> `zuzozen thevum blrubul vowurel.`
+> `zuzozen thevum blruwul vowurel.`
 >
 > z-Uzozen | [th-MEMORY | bl---e-] | v-walk
 >
 > "I just saw Uzozen walk."
 
-> `theyem blrabul verulal.`
+> `theyem blrawul verulal.`
 >
 > [th-CLUES | bl-+-e-] | v-rain
 >
 > "It looks like it's about to rain."
 
-For *soon*, soften that hair with open **-m**: **`blrabum`** is *a short while after now*. It is later than *about to* (`blrabul`) but still close, unlike open-ended *later* (`blral`).
+For *soon*, soften that hair with open **-m**: **`blrawum`** is *a short while after now*. It is later than *about to* (`blrawul`) but still close, unlike open-ended *later* (`blral`).
 
-> `theyem blrabum verulal.`
+> `theyem blrawum verulal.`
 >
 > [th-CLUES | bl-+-e-.about] | v-rain
 >
 > "It looks like it will rain soon."
 
-The mirror, **`blrubum`**, is *a short while before now*: *recently*.
+The mirror, **`blruwum`**, is *a short while before now*: *recently*.
 
-> `zuzozen thevum blrubum vowurel.`
+> `zuzozen thevum blruwum vowurel.`
 >
 > z-Uzozen | [th-MEMORY | bl---e-.about] | v-walk
 >
 > "I saw Uzozen walk recently."
 
-> `zolazun thubem blagorum grurel vezuvol.`
+> `zolazun thubem blagorum grugol vezuvol.`
 >
 > z-Olazun | [th-PATTERN | [bl-hour | g-minus-three]] | v-sleep
 >
@@ -1306,7 +1306,7 @@ The mirror, **`blrubum`**, is *a short while before now*: *recently*.
 
 A channel used as a comparison [bar](comparatives.md#bars) takes the same offset, which dates the bar: MEMORY with a day before is *than yesterday*.
 
-> `zuzozen thevum bluzurem gruwol zel guzemol.`
+> `zuzozen thevum bluzurem grubul zel guzemol.`
 >
 > [z-Uzozen | [th-MEMORY | [bl-day | g-minus-one]] | z-rank/more | g-sleepy]
 >
@@ -1320,7 +1320,7 @@ With an [as-of](relations.md#as-of) pair, the offset counts from the as-of momen
 
 Agebon has no short *now* word. Say *now* with an offset of **zero**: the event sits no time away from the moment you speak. The channel stays, so *now* still says how you know it.
 
-> `zolazun theyem blagorum grazol vezuvol.`
+> `zolazun theyem blagorum gramal vezuvol.`
 >
 > z-Olazun | [th-CLUES | [bl-hour | g-zero]] | v-sleep
 >
@@ -1328,7 +1328,7 @@ Agebon has no short *now* word. Say *now* with an offset of **zero**: the event 
 
 The unit sets how wide *now* is. Zero hours is *right now*; zero [days](numbers-applied.md#stock-units) is *today*.
 
-> `zuzozen thebam bluzurem grazol vezuyol.`
+> `zuzozen thebam bluzurem gramal vezuyol.`
 >
 > z-Uzozen | [th-REPORTED | [bl-day | g-zero]] | v-sing
 >
@@ -1446,7 +1446,7 @@ z-Olazun | [d-dress | [w-LIVE | g-red]] | v-see
 **2.** *I saw Uzozen write three hours ago.*
 
 ::: details Show answer
-`zuzozen thevum blagorum grurel varayel.`
+`zuzozen thevum blagorum grugol varayel.`
 
 z-Uzozen | [th-MEMORY | [bl-hour | g-minus-three]] | v-write
 :::
@@ -1469,7 +1469,7 @@ z-Uzozen | h-always | v-sit | th-PATTERN.weak
 *Uzozen always sits, going by the few cases I have seen.*
 :::
 
-**2.** `zolazun thubem blagorum grurel vezuvol.`
+**2.** `zolazun thubem blagorum grugol vezuvol.`
 
 ::: details Show answer
 z-Olazun | [th-PATTERN | [bl-hour | g-minus-three]] | v-sleep
@@ -1485,7 +1485,7 @@ z-Olazun | [th-PATTERN | [bl-hour | g-minus-three]] | v-sleep
 *Every cat sleeps when it is sleepy; that is how it works.*
 :::
 
-**4.** `zuzozen thevum blrubul dogewol vawebol.`
+**4.** `zuzozen thevum blruwul dogewol vawebol.`
 
 ::: details Show answer
 z-Uzozen | [th-MEMORY | bl---e-] | d-camera | v-see
@@ -1495,10 +1495,10 @@ z-Uzozen | [th-MEMORY | bl---e-] | d-camera | v-see
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *I saw Uzozen walk recently.* `zuzozen thevum blrubum vowurel.` or `zuzozen thevum blrubul vowurel.`
+**1.** *I saw Uzozen walk recently.* `zuzozen thevum blruwum vowurel.` or `zuzozen thevum blruwul vowurel.`
 
 ::: details Show answer
-`zuzozen thevum blrubum vowurel.`
+`zuzozen thevum blruwum vowurel.`
 
 z-Uzozen | [th-MEMORY | bl---e-.about] | v-walk
 

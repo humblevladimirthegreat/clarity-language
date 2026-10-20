@@ -1,16 +1,16 @@
 import type { MorphWord, NumberGroup, NumberMarker, NumberStem } from "../parse/types.js";
 
-const DIGIT_TO_SYLLABLE: Record<string, string> = {
-  "0": "zo",
-  "1": "wo",
-  "2": "du",
-  "3": "re",
-  "4": "mo",
-  "5": "va",
-  "6": "gu",
-  "7": "le",
-  "8": "ha",
-  "9": "na",
+/** Spoken digit syllables and exponent sign (numbers.md § Counts, § Exponents). */
+export type NumberSyllables = {
+  digits: Record<string, string>;
+  plus: string;
+  minus: string;
+};
+
+export const NUMBER_SYLLABLES: NumberSyllables = {
+  digits: { "1": "bu", "2": "da", "3": "go", "4": "ve", "5": "zu", "6": "ha", "7": "lo", "8": "re", "9": "nu", "0": "ma" },
+  plus: "wa",
+  minus: "wu",
 };
 
 export function markerToSpeech(marker: NumberMarker): string {
@@ -23,11 +23,11 @@ export function markerToSpeech(marker: NumberMarker): string {
   return "ro";
 }
 
-export function digitsToSyllables(digits: string): string {
+export function digitsToSyllables(digits: string, table = NUMBER_SYLLABLES): string {
   let out = "";
   for (const ch of digits) {
     if (ch === ".") out += "ye";
-    else out += DIGIT_TO_SYLLABLE[ch] ?? "";
+    else out += table.digits[ch] ?? "";
   }
   return out;
 }
@@ -36,18 +36,18 @@ const DIGITLESS_EXP_RE = /^(\d*)e(-?)(\d*)$/;
 
 /**
  * Speech for the parser's exponent shorthand (`e`, `1e-`, `e3`, `0e-1`, …).
- * With exponent digits: `ba`/`bu` + digits, then `ya` + any mantissa.
- * Without: mantissa, then bare `ba`/`bu`.
+ * With exponent digits: `wa`/`wu` + digits, then `ya` + any mantissa.
+ * Without: mantissa, then bare `wa`/`wu`.
  */
-export function digitlessExpToSpeech(exp: string): string {
+export function digitlessExpToSpeech(exp: string, table = NUMBER_SYLLABLES): string {
   const m = DIGITLESS_EXP_RE.exec(exp);
   if (!m) return "";
   const [, mantissa, minus, expDigits] = m;
-  const sign = minus ? "bu" : "ba";
+  const sign = minus ? table.minus : table.plus;
   if (expDigits) {
-    return sign + digitsToSyllables(expDigits) + (mantissa ? "ya" + digitsToSyllables(mantissa) : "");
+    return sign + digitsToSyllables(expDigits, table) + (mantissa ? "ya" + digitsToSyllables(mantissa, table) : "");
   }
-  return digitsToSyllables(mantissa!) + sign;
+  return digitsToSyllables(mantissa!, table) + sign;
 }
 
 /** Vowel offset (within digitlessExpToSpeech output) that carries stress. */
@@ -59,12 +59,12 @@ function digitlessExpStress(exp: string): number | undefined {
   return expDigits ? 2 + (expDigits.length - 1) * 2 + 1 : 1;
 }
 
-function groupToSpeech(group: NumberGroup): string {
-  return groupToSpeechStressed(group).text;
+function groupToSpeech(group: NumberGroup, table: NumberSyllables): string {
+  return groupToSpeechStressed(group, table).text;
 }
 
 /** Speech text for one group plus char offsets (within that text) of vowels to stress. */
-function groupToSpeechStressed(group: NumberGroup): { text: string; stress: number[] } {
+function groupToSpeechStressed(group: NumberGroup, table: NumberSyllables): { text: string; stress: number[] } {
   let text = "";
   const stress: number[] = [];
   const hasExponent = !!group.exponentSign;
@@ -72,14 +72,14 @@ function groupToSpeechStressed(group: NumberGroup): { text: string; stress: numb
 
   if (hasExponent) {
     const signStart = text.length;
-    text += group.exponentSign!;
+    text += group.exponentSign === "wu" ? table.minus : table.plus;
     if (group.exponentDigits) {
-      text += digitsToSyllables(group.exponentDigits);
+      text += digitsToSyllables(group.exponentDigits, table);
       // Stress the LAST exponent digit's vowel — the group-final boundary cue.
-      // Marker "ba"/"bu" is 2 chars; each digit syllable is 2 chars; vowel is the 2nd.
+      // Marker "wa"/"wu" is 2 chars; each digit syllable is 2 chars; vowel is the 2nd.
       stress.push(signStart + 2 + (group.exponentDigits.length - 1) * 2 + 1);
     } else {
-      // Digitless exponent marker (`ba` / `bu` alone): stress the marker vowel.
+      // Digitless exponent marker (`wa` / `wu` alone): stress the marker vowel.
       stress.push(signStart + 1);
     }
   }
@@ -87,7 +87,7 @@ function groupToSpeechStressed(group: NumberGroup): { text: string; stress: numb
   if (hasMantissa) {
     if (hasExponent) text += "ya";
     const mantissaStart = text.length;
-    text += digitsToSyllables(group.mantissa!);
+    text += digitsToSyllables(group.mantissa!, table);
     if (!hasExponent) {
       // No exponent: stress the LAST mantissa digit's vowel.
       stress.push(mantissaStart + (group.mantissa!.length - 1) * 2 + 1);
@@ -109,12 +109,12 @@ function groupToSpeechStressed(group: NumberGroup): { text: string; stress: numb
 }
 
 /** Serialize a normalized number stem to speech CV (marker + body, no PoS or ending). */
-export function numberStemToSpeech(stem: NumberStem): string {
-  return numberStemToSpeechStressed(stem).text;
+export function numberStemToSpeech(stem: NumberStem, table = NUMBER_SYLLABLES): string {
+  return numberStemToSpeechStressed(stem, table).text;
 }
 
 /** Speech text plus char offsets of vowels to carry primary stress. */
-export function numberStemToSpeechStressed(stem: NumberStem): {
+export function numberStemToSpeechStressed(stem: NumberStem, table = NUMBER_SYLLABLES): {
   text: string;
   stress: number[];
 } {
@@ -130,9 +130,9 @@ export function numberStemToSpeechStressed(stem: NumberStem): {
   }
 
   if (stem.digitlessExp) {
-    // Spelled-out stems keep leading mantissa digits in groups (`grazobal`: zo + ba).
-    for (const group of stem.groups) text += groupToSpeech(group);
-    const exp = digitlessExpToSpeech(stem.digitlessExp);
+    // Spelled-out stems keep leading mantissa digits in groups (`gramawal`: ma + wa).
+    for (const group of stem.groups) text += groupToSpeech(group, table);
+    const exp = digitlessExpToSpeech(stem.digitlessExp, table);
     const at = digitlessExpStress(stem.digitlessExp);
     if (at !== undefined) stress.push(text.length + at);
     text += exp;
@@ -145,7 +145,7 @@ export function numberStemToSpeechStressed(stem: NumberStem): {
       if (i > 0) text += separator;
       const start = text.length;
       const mantissa = group.mantissa ?? "";
-      text += digitsToSyllables(mantissa);
+      text += digitsToSyllables(mantissa, table);
       if (mantissa.length > 0) stress.push(start + (mantissa.length - 1) * 2 + 1);
     }
     return { text, stress };
@@ -153,7 +153,7 @@ export function numberStemToSpeechStressed(stem: NumberStem): {
 
   for (const [i, group] of stem.groups.entries()) {
     if (i > 0) text += separator;
-    const part = groupToSpeechStressed(group);
+    const part = groupToSpeechStressed(group, table);
     for (const s of part.stress) stress.push(text.length + s);
     text += part.text;
   }
@@ -172,15 +172,15 @@ function endingSuffix(word: MorphWord): string {
 }
 
 /** Full speech CV surface for a free number word or numeric-derivation host. */
-export function numberWordToSpeech(word: MorphWord): string {
-  return numberWordToSpeechStressed(word).raw;
+export function numberWordToSpeech(word: MorphWord, table = NUMBER_SYLLABLES): string {
+  return numberWordToSpeechStressed(word, table).raw;
 }
 
 /**
  * Speech CV surface plus char offsets of vowels that carry primary stress
  * for TTS rhythm (last digit of each group; digitless stresses the marker).
  */
-export function numberWordToSpeechStressed(word: MorphWord): {
+export function numberWordToSpeechStressed(word: MorphWord, table = NUMBER_SYLLABLES): {
   raw: string;
   stress: number[];
 } {
@@ -198,7 +198,7 @@ export function numberWordToSpeechStressed(word: MorphWord): {
     throw new Error(`Not a number word: ${word.raw}`);
   }
 
-  const body = numberStemToSpeechStressed(stem);
+  const body = numberStemToSpeechStressed(stem, table);
   const raw = head + body.text + endingSuffix(word);
   return { raw, stress: body.stress.map((s) => s + head.length) };
 }

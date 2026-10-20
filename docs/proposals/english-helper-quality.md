@@ -96,8 +96,8 @@ Rows are sorted by frequency, then by how many sentences share the miss.
 | Class | Symptom | Fix goes in | Example |
 |-------|---------|-------------|---------|
 | **missing cue** | a common word or phrase gets a gap or only a wrong lead, but a page already teaches its form | an italic cue on the owning recipe row (`say-*.md`, `english.md`) or the owning section's table | *me* on the `uwon` row; *not sure* on the MAY row |
-| **link without form** | a detector or row points at a section, but the prompt never spells the form | the analyzer: a speller (numbers), or an `e.g.` from the section, following `Teach` links | *my* → `em buwon` example; *three* → `grarel` |
-| **pattern read as spelling** | a row's form is notation (`th+e`, `/ɡ/ / -r`) with no spelled word or example | the doc cell spells the word; the analyzer shows an example for any form that is only a pattern | *sure* → `thrabal` |
+| **link without form** | a detector or row points at a section, but the prompt never spells the form | the analyzer: a speller (numbers), or an `e.g.` from the section, following `Teach` links | *my* → `em buwon` example; *three* → `gragol` |
+| **pattern read as spelling** | a row's form is notation (`th+e`, `/ɡ/ / -r`) with no spelled word or example | the doc cell spells the word; the analyzer shows an example for any form that is only a pattern | *sure* → `thrawal` |
 | **joined prose cell** | a recipe cell's prose (`X and Y`) becomes ` / ` alternatives | the doc cell becomes one code span | *last night* |
 | **wrong side** | an alias or lead on the sense the English doesn't mean | the analyzer spells both sides; `--verify` flags it | *grateful* → *pray* |
 | **feature not reached** | the English has a dedicated Agebon feature (sakes, evidentials, clusivity), but the helper offers only a root | a recipe row that names the feature for that English word | *grateful* → met sake word |

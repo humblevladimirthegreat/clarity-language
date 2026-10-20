@@ -16,10 +16,10 @@ describe("previewSpeech", () => {
 
   it("expands writing number shorthand to speech CV", () => {
     const writing = previewSpeech("g+3");
-    assert.deepEqual(writing.spoken, ["grarel"]);
+    assert.deepEqual(writing.spoken, ["gragol"]);
 
-    const speech = previewSpeech("grarel");
-    assert.deepEqual(speech.spoken, ["grarel"]);
+    const speech = previewSpeech("gragol");
+    assert.deepEqual(speech.spoken, ["gragol"]);
   });
 
   it("speaks a span's words and skips foreign interiors", () => {
