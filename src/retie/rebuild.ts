@@ -50,7 +50,7 @@ function posPrefix(word: MorphWord): string {
   if (!word.pos) {
     return "";
   }
-  return word.gl ? `${word.pos}l` : word.pos;
+  return word.gl || word.bl ? `${word.pos}l` : word.pos;
 }
 
 function mapRoots(roots: string[], map: ReadonlyMap<string, string>): string[] {

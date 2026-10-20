@@ -128,6 +128,8 @@ export type MorphWord = {
   pos?: Pos;
   /** Left-bound `/ɡ/` only (`gl-`). */
   gl?: boolean;
+  /** Hosted `/b/` only (`bl-`): the extra noun that completes the word before it (clause.md#extra-nouns). */
+  bl?: boolean;
   ending?: Ending;
   /** A content resume pinned to one sense of the stem: **-rl** concrete, **-rm** abstract (`ending` is then `r`; pronouns.md#resume-sense). */
   resumeSense?: "l" | "m";

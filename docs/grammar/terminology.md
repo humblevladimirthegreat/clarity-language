@@ -211,7 +211,7 @@ Kind / role as predicative `/ɡ/` (no *to-be* verb).
 
 ### Clause pole / NP pole
 
-Condition vs outcome as NPs vs full sentences after **`barl`**. **Clause pole** is the causation reading. Concession **`hezom`** uses the same NP vs clause split (*despite Olazun* vs *although Olazun walks*). Intended outcome **`hovam`** uses it too (*for a money-bag* vs *so that Olazun sits*).
+Condition vs outcome as NPs vs full sentences after **`blarl`**. **Clause pole** is the causation reading. Concession **`hezom`** uses the same NP vs clause split (*despite Olazun* vs *although Olazun walks*). Intended outcome **`hovam`** uses it too (*for a money-bag* vs *so that Olazun sits*).
 
 [Causation](causation.md), [dependents](dependents.md#dependent-clauses)
 
@@ -279,7 +279,7 @@ A full sentence that fills a [stand-in](#stand-in) slot (`darl` / `barl` / `dorl
 
 [Dependents](dependents.md#dependent-clauses)
 
-**Compare with:** English *the dog that runs* (which dog) is [which person or thing](dependents.md#which-noun), not a stand-in. Intended outcome *so that* is [**`hovam`**](dependents.md#so-that) plus **`barl`** or a noun `/b/`.
+**Compare with:** English *the dog that runs* (which dog) is [which person or thing](dependents.md#which-noun), not a stand-in. Intended outcome *so that* is [**`hovam`**](dependents.md#so-that) plus **`blarl`** or a noun `/b/`.
 
 ### Digitless
 
@@ -434,7 +434,7 @@ Speech-act ending **-l** vs **-m**.
 ### Forecast
 <a id="forecast-source"></a>
 
-A claim that something **will** happen: an evidential channel plus the later offset **`bral`**. There is no forecast word, so a forecast always names how you know it.
+A claim that something **will** happen: an evidential channel plus the later offset **`blral`**. There is no forecast word, so a forecast always names how you know it.
 
 [Knowing](knowing.md#forecast)
 

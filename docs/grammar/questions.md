@@ -665,7 +665,7 @@ Answer with the hook and the user, as a [citation](word-endings.md#citation-form
 
 ### How? {#how}
 
-To ask *how?*, use the same shape as *where?*: a word that says how the answer relates to the event, then the blank **`bar`**. For manner (*in what way?*), that word is [**`hewom`**](relations.md) *like*, so the question asks *like what?*
+To ask *how?*, use the same shape as *where?*: a word that says how the answer relates to the event, then the blank **`blar`**. For manner (*in what way?*), that word is [**`hewom`**](relations.md) *like*, so the question asks *like what?*
 
 > `yol hewom bar zuzozen vowurel.`
 >
@@ -677,7 +677,7 @@ To ask about means (*with what?*), use the *using* hook with the blank ([stacked
 
 ### Why? {#why}
 
-To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in case*), then the blank **`bar`**. Pick the word for the kind of reason you want.
+To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in case*), then the blank **`blar`**. Pick the word for the kind of reason you want.
 
 > `yol thahum bar zuzozen vowurel.`
 >

@@ -145,7 +145,7 @@ The hook is glue only when the next word is not a `/b/` word. With a `/b/` word 
 
 English prepositions such as *in*, *at*, *from*, and *for* add a place, a source, or someone who benefits. In Agebon, put a hook right before a `/b/` [extra noun](clause.md#extra-nouns). The hook says how that noun, its **landmark**, relates to the event (or to the noun just before the hook). This is not the recipient, which takes no hook (`zuzozen vezuyel bolazun` *tells Olazun*).
 
-So the test is: `/b/` right after the hook, and no recipient `/b/` right before it. Right after a recipient, the hook is same-role *including* (`buzozen al bolazun`).
+So the test is: `/b/` right after the hook, and no recipient `/b/` right before it. Right after a recipient, the hook is same-role *including* (`buzozen al bolazun`). The hook already marks its landmark, so the landmark is a plain `/b/` word, never a [`bl-` word](clause.md#extra-nouns).
 
 The four one-vowel hooks name the everyday extras:
 
@@ -233,7 +233,7 @@ English often puts *since* first (*Since Olazun fell asleep, Uzozen has been wal
 
 To give the stretch an end too (*from the thunderstorm to the bell*), use a [from … to](numbers-applied.md#time) unit.
 
-**Compare with:** *since* meaning *because* is **`thahum barl`**. Agebon keeps the time reading and the cause reading apart.
+**Compare with:** *since* meaning *because* is **`thahum blarl`**. Agebon keeps the time reading and the cause reading apart.
 
 ### Practice {#beginner-practice}
 
@@ -515,7 +515,7 @@ To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`a
 >
 > "What does Uzozen write the book with?"
 
-**Compare with:** some English prepositions use other forms. Company *with Olazun* is a [join-relation](join-across-roles.md#join-relations), and so is *without*. *Like* is a [simile](relations.md#similative). *Between* is a hosted pair plus a `/b/` join ([relations](relations.md#locative-relations)). *So that Olazun sits* is **`hovam barl`**.
+**Compare with:** some English prepositions use other forms. Company *with Olazun* is a [join-relation](join-across-roles.md#join-relations), and so is *without*. *Like* is a [simile](relations.md#similative). *Between* is a hosted pair plus a `/b/` join ([relations](relations.md#locative-relations)). *So that Olazun sits* is **`hovam blarl`**.
 
 ### Whose (`em`) {#genitive}
 

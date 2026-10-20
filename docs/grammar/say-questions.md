@@ -118,7 +118,7 @@ English *admittedly*, *granted* and *that's true, but* concede a point before pu
 >
 > "Uzozen walks." "That's true, but Olazun sits."
 
-**Compare with:** *even so* after the concession is *despite that*, **`hezom barth`** ([pointing back](dependents.md#stand-in-back)). **`yaem`** (*I think so*) agrees only softly.
+**Compare with:** *even so* after the concession is *despite that*, **`hezom blarth`** ([pointing back](dependents.md#stand-in-back)). **`yaem`** (*I think so*) agrees only softly.
 
 ## Exclamations and side remarks {#reactions}
 
@@ -251,7 +251,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 **Needs:** [Ask](questions.md#question) · [Reported questions](#reported-questions) · [Stand-in vowels](dependents.md#stand-in) · [Speech act: firm and soft](speech-moves.md#speech-act) · [Conversation length](compounds.md#conversation-length) · [Call someone](speech-moves.md#vocative)
 
-English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yol`**. A request is **`yem`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`derl`**, and the person told is unhosted `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Agebon carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
+English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yol`**. A request is **`yem`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`derl`**, and the person told is plain `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Agebon carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
 
 | English | Agebon | Reading |
 |---------|--------|---------|
@@ -296,9 +296,9 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 >
 > "Let's walk." (a suggestion)
 
-> `zawan vowurel thawothem bawan.`
+> `zawan vowurel thawothem blawan.`
 >
-> z-listener | v-walk | [th-relatedness-ought-offered | b-listener]
+> z-listener | v-walk | [th-relatedness-ought-offered | bl-listener]
 >
 > "You should walk; it would help you feel connected." (unasked advice)
 

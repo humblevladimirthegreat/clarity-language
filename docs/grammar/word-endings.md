@@ -364,7 +364,7 @@ Put the family name first, as an [adjective before the noun](clause.md#left-boun
 
 A full name works as a [greeting](#greeting) too: `alen galowen.` is Alen Alowen saying hello. A [call](speech-moves.md#vocative) takes the family name the same way (`yalen galowen.` *Alen Alowen!*). A [conversation-length](compounds.md#conversation-length) bid goes on the given name, never on the family name.
 
-A family name is an adjective, so a `/b/` right after it would complete it as a [hosted extra noun](clause.md#extra-nouns). Put the person who receives after the verb, as usual: `zalen galowen vezuyel bolazun.` is *Alen Alowen tells Olazun*.
+A family name is an adjective, but the person who receives is a plain `/b/` word, so it may stand right after the family name: `zalen galowen bolazun vezuyel.` is *Alen Alowen tells Olazun*, the same as `zalen galowen vezuyel bolazun.` Only a [`bl-` word](clause.md#extra-nouns) would complete it.
 
 A **hyphenated name** (*Mary-Kate*, *Coffee-Tea*) is one word: roots join left to right with mid-word **`x`** ([ordinary compound order](compounds.md#ordinary-compound-order)), and **-n** names the whole.
 

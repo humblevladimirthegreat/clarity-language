@@ -115,7 +115,7 @@ export function isAgebonLintCandidate(core: string): boolean {
   if (!core) return false;
   if (core.includes("/")) return false;
   if (core.startsWith("-")) return false;
-  if (core === "gl-") return false;
+  if (core === "gl-" || core === "bl-") return false;
   if (core.includes("…") || core.includes("...")) return false;
   if (TEACHING_GLOSS_RE.test(core)) return false;
   if (X_FRAGMENT_RE.test(core)) return false;

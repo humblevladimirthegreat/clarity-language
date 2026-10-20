@@ -49,9 +49,9 @@ Equality **`oe`** with a shared scale needs **two or more** names. **`oe`** with
 
 English *two meters taller* still ranks two people on one quality, and it also names **how large the gap is**. Keep the rank join and the shared scale adjective. After that adjective, write a **measure noun** (`/b/`): that noun is the **unit** (published abstract = SI name), and `/ɡ/` on the unit is the **amount** ([measure phrases](numbers-applied.md#measure-phrases)).
 
-> `zuzozen zolazun zel gadahem bezerem gradul.`
+> `zuzozen zolazun zel gadahem blezerem gradul.`
 >
-> [z-Uzozen | z-Olazun | z-rank/more | [g-height | [b-meter | g-two]]]
+> [z-Uzozen | z-Olazun | z-rank/more | [g-height | [bl-meter | g-two]]]
 >
 > "Uzozen is two meters taller than Olazun."
 
@@ -139,15 +139,15 @@ The noun names the reference class; **`yo`** grades how much of that class. Same
 
 **Needs:** [Number as adverb](numbers.md#number-as-adverb-by-marker) · [Measure phrases](numbers-applied.md#measure-phrases) · [Factor](comparatives.md#factor)
 
-*Three times an hour* is a count per unit. Write the count, then the divider **`hruwol`** (*÷1*), then the unit as `/b/` right after it. The divider hosts the unit, so the `/b/` is structural, not a recipient.
+*Three times an hour* is a count per unit. Write the count, then the divider **`hruwol`** (*÷1*), then the unit as a `bl-` word right after it. The divider hosts the unit, so the `bl-` word is structural, not a recipient.
 
 | English | Agebon |
 |---------|--------|
 | *per* (*per hour*, *three times an hour*) | the count, then **`hruwol`**, then the unit in `/b/` |
 
-> `zuzozen vowurel hrarel hruwol bagorum.`
+> `zuzozen vowurel hrarel hruwol blagorum.`
 >
-> z-Uzozen | v-walk | h-three | [h-divided-by-one | b-hour]
+> z-Uzozen | v-walk | h-three | [h-divided-by-one | bl-hour]
 >
 > "Uzozen walks three times an hour."
 
@@ -378,8 +378,8 @@ English *just*, *only*, *especially* and *also* point at one item and say how it
 | *especially Uzozen* / *particularly* / *specifically* / *mainly* / *primarily* / *largely* / *in particular* / *main* (*the main one*) | `zuzozen zem` |
 | *only Uzozen matters* | `zuzozen zel` |
 | *also* / *too* / *as well* / *besides* / *in addition* | `al …` at the start of the next sentence |
-| *just now* (*a moment ago*) | `brubul` on a channel |
-| *just about to* | `brabul` on a channel |
+| *just now* (*a moment ago*) | `blrubul` on a channel |
+| *just about to* | `blrabul` on a channel |
 
 > `zuzozen zal vowurel.`
 >
@@ -399,7 +399,7 @@ English *just*, *only*, *especially* and *also* point at one item and say how it
 >
 > "Uzozen walks. Also, Olazun walks."
 
-**Compare with:** *just* meaning *only a moment ago* is the hair before now (**`brubul`**, [recently](say-tense.md#time-words)), not a join. *Only when* is the restrictor **`hal`** ([restrictors](restrictors.md#beginner)), and *only if* is **`thebom`** ([only if](causation.md#only-if)).
+**Compare with:** *just* meaning *only a moment ago* is the hair before now (**`blrubul`**, [recently](say-tense.md#time-words)), not a join. *Only when* is the restrictor **`hal`** ([restrictors](restrictors.md#beginner)), and *only if* is **`thebom`** ([only if](causation.md#only-if)).
 
 ## Units and dates {#units-dates}
 
@@ -435,9 +435,9 @@ English has many nouns for a set of things (*group*, *crowd*, *bunch*, *pair*). 
 >
 > "There is a crowd." (more people than usual)
 
-> `zuzozen gobem bahunanx vowurel.`
+> `zuzozen gobem blahunanx vowurel.`
 >
-> [z-Uzozen | [g-part-of | b-Ahunan-x]] | v-walk
+> [z-Uzozen | [g-part-of | bl-Ahunan-x]] | v-walk
 >
 > "Uzozen, a member of the group Ahunan, walks."
 
@@ -472,9 +472,9 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bezerem g
 
 English *until tomorrow* (also *till tomorrow*), *by tomorrow*, and *before next week* count from today. A command or a plan has no channel to count from, so the time pole takes the count itself: a signed measure in its `/b/` runs from now.
 
-> `yel vuhamum zawan harum buzurem grawol.`
+> `yel vuhamum zawan harum bluzurem grawol.`
 >
-> y-command | v-confidentiality | z-listener | [h-until | [b-day | g-one]]
+> y-command | v-confidentiality | z-listener | [h-until | [bl-day | g-one]]
 >
 > "Keep the secret until tomorrow."
 
@@ -485,7 +485,7 @@ Use **`harum`** for *until* / *till*, **`hevahum`** for *by*, **`habam`** for *b
 
 **Needs:** [Time](numbers-applied.md#time) · [*as-of*](relations.md#as-of)
 
-Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftover, climate, plan, and forecast score against is [*as-of*](relations.md#as-of) (`henam` / `hunem` plus `/b/`). Put the date on that pole (`henam b_#22,7`); do not also write spare `h_#22,7` for the same snapshot. Clock / *before* / *after* may sit beside *as-of*: books vs event-when are different jobs.
+Bare `h_#…` / `h_…` locates **when the event sits**. Whose “now” leftover, climate, plan, and forecast score against is [*as-of*](relations.md#as-of) (`henam` / `hunem` plus `/b/`). Put the date on that pole (`henam bl_#22,7`); do not also write spare `h_#22,7` for the same snapshot. Clock / *before* / *after* may sit beside *as-of*: books vs event-when are different jobs.
 
 ## Brainstorming {#brainstorming}
 
@@ -548,7 +548,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 **2.** *Olazun is two grams heavier than Uzozen.*
 
 ::: details Show answer
-`zolazun zuzozen zel garolom beberom gradul.`
+`zolazun zuzozen zel garolom bleberom gradul.`
 
 [z-Olazun | z-Uzozen | z-rank/more | [g-heavy | b-gram]] | g-two
 :::
@@ -572,7 +572,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 *Olazun and Ahelan are straining.*
 :::
 
-**2.** `zuzozen zolazun zel garolom beberom graval.`
+**2.** `zuzozen zolazun zel garolom bleberom graval.`
 
 ::: details Show answer
 

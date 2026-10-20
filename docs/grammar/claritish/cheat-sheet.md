@@ -70,7 +70,7 @@ Sake word: `th` + sake + stance + ending.
 | Stance | Says | Example | **-l** | **-m** | **-r** |
 |--------|------|---------|--------|--------|--------|
 | `tha` met | [thanks](thanks-and-sorry.md) | `thawotham` | it will stay with me | thank you | got me through right now |
-| `thu` unmet | [sorry](thanks-and-sorry.md), with `bawan` for *yours* | `thawothum`, `thawothum bawan` | deeply sorry | I'm sorry | my bad |
+| `thu` unmet | [sorry](thanks-and-sorry.md), with `blawan` for *yours* | `thawothum`, `thawothum blawan` | deeply sorry | I'm sorry | my bad |
 | `the` prescription | [ought to be done](oughts-and-motives.md) for it | `thawothem` | they invited it | your own offer | worth a try |
 | `tho` motive | [being done](oughts-and-motives.md) for it | `thawothom` | over time | unstated | right away |
 

@@ -358,11 +358,11 @@ Open **`gram`** ranks by a **rough impression** instead of a count: *it looks li
 >
 > "It looks like there are more cats than dogs."
 
-To say **how many more**, put the difference in `/b/` right after **`gral`**. A count needs no unit noun: the unit is the thing counted.
+To say **how many more**, put the difference in a `bl-` word right after **`gral`**. A count needs no unit noun: the unit is the thing counted.
 
-> `zagozolx zudozolx zel gral brarel.`
+> `zagozolx zudozolx zel gral blrarel.`
 >
-> [z-cat-x | z-dog-x | z-rank/more | [g-amount | b-three]]
+> [z-cat-x | z-dog-x | z-rank/more | [g-amount | bl-three]]
 >
 > "There are three more cats than dogs."
 
@@ -424,7 +424,7 @@ English *twice as big as* gives the **ratio** between the two heights. Use the [
 >
 > "Uzozen is twice as big as Olazun."
 
-Inverse marker **`ru`** divides: `hrudul` is *half as*. The factor hosts nothing, so no `/b/` comes right after it.
+Inverse marker **`ru`** divides: `hrudul` is *half as*. The factor hosts nothing, so no `bl-` word comes after it.
 
 > `zolazun zuzozen zoel gelazom hrudul.`
 >
@@ -720,15 +720,15 @@ The bar's ending keeps its own job: on a channel it is [evidence strength](knowi
 
 The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on REQUIRE, PERMIT, and CONSENT it is the person who demands, grants, or agrees. WANT takes no `/b/`: for someone else's wants, put a [holder](knowing.md#holder) on the clause. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
 
-> `zanal thebam bolazun zuel gagebom.`
+> `zanal thebam blolazun zuel gagebom.`
 >
-> [z-book | [th-REPORTED | b-Olazun] | z-rank/less | g-clarity]
+> [z-book | [th-REPORTED | bl-Olazun] | z-rank/less | g-clarity]
 >
 > "The book is less clear than Olazun said."
 
-> `zuzozen thubem baxeluyelx zel gezuyol.`
+> `zuzozen thubem blaxeluyelx zel gezuyol.`
 >
-> [z-Uzozen | [th-PATTERN | b-agent-x-learn-x] | z-rank/more | g-sing]
+> [z-Uzozen | [th-PATTERN | bl-agent-x-learn-x] | z-rank/more | g-sing]
 >
 > "Uzozen sings well for a learner."
 
@@ -736,9 +736,9 @@ On a rank join, an event root on `/ɡ/` is the scale itself: how well the act go
 
 An adjective after that `/b/` describes it, as after any [host](clause.md#complex-chaining), so it narrows the population.
 
-> `zuzozen thubem baxeluyelx guzemol zel gezuyol.`
+> `zuzozen thubem blaxeluyelx guzemol zel gezuyol.`
 >
-> [z-Uzozen | [th-PATTERN | [b-agent-x-learn-x | g-sleepy]] | z-rank/more | g-sing]
+> [z-Uzozen | [th-PATTERN | [bl-agent-x-learn-x | g-sleepy]] | z-rank/more | g-sing]
 >
 > "Uzozen sings well for a sleepy learner."
 
@@ -752,13 +752,13 @@ The ranked item can be a whole kind. Write the [universal fence](joins.md#univer
 
 To rank one kind against another, keep one kind as the item and put the other in the PATTERN bar's `/b/`.
 
-> `zuam gaxenuvom thubem beyolx godamum zel hemebem vuzubal.`
+> `zuam gaxenuvom thubem bleyolx godamum zel hemebem vuzubal.`
 >
-> [[z-everything.open | g-agent-x-rest] | [th-PATTERN | [b-person-x | g-burnout]] | z-rank/more | h-achievement] | v-sweat
+> [[z-everything.open | g-agent-x-rest] | [th-PATTERN | [bl-person-x | g-burnout]] | z-rank/more | h-achievement] | v-sweat
 >
 > "Rested people work more successfully than exhausted people."
 
-A CLUES or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): the next sentence is the grounds you worked the bar out from.
+A CLUES or PATTERN bar can also take [`blarl`](knowing.md#evidence-clause): the next sentence is the grounds you worked the bar out from.
 
 **Ability.** The ability word [`oda`](intention.md#ability-fallback) as the bar is the limit of **what can be done**. A tie against **`hodaxal`** is *as … as possible*. The ability vowel says how fixed that limit is, so rank **`zel`** against **`hodaxel`** is *more than can be done for now*, and against **`hodaxul`** *more than could ever be done*.
 
@@ -919,10 +919,10 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 *Ahelan rarely sings.* (less often than usual)
 :::
 
-**4.** `zolazun thebam bahelan zel gevunem.`
+**4.** `zolazun thebam blahelan zel gevunem.`
 
 ::: details Show answer
-[z-Olazun | [th-REPORTED | b-Ahelan] | z-rank/more | g-agility]
+[z-Olazun | [th-REPORTED | bl-Ahelan] | z-rank/more | g-agility]
 
 *Olazun is more agile than Ahelan said.*
 :::

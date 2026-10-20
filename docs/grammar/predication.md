@@ -96,29 +96,29 @@ When two names pick out **the same person or thing** (*Olazun is Uzozen*), you a
 
 Write the special adjective `gorol` after the first name, then an extra noun (`/b/`) for the other label. Keep `gorol` and that `/b/` word **next to each other**. This pair states **identity**. The adjective’s English name is **`SAME`**; its root is **`oro`**. (cue: 🪙 *coin*: two faces, one substance)
 
-> `zolazun gorol buzozen.`
+> `zolazun gorol bluzozen.`
 >
-> z-Olazun | [g-SAME | b-Uzozen]
+> z-Olazun | [g-SAME | bl-Uzozen]
 >
 > "Olazun is Uzozen." (one person, two names)
 
-> `zagayul gorol buzozen.`
+> `zagayul gorol bluzozen.`
 >
-> z-guard | [g-SAME | b-Uzozen]
+> z-guard | [g-SAME | bl-Uzozen]
 >
 > "The guard is Uzozen."
 
 The second label is a `/b/` whatever it is: a common noun or a pronoun works as well as a name.
 
-> `zagayul gorol bobayel.`
+> `zagayul gorol blobayel.`
 >
-> z-guard | [g-SAME | b-police]
+> z-guard | [g-SAME | bl-police]
 >
 > "The guard is the police officer."
 
-> `zagayul gorol buwon.`
+> `zagayul gorol bluwon.`
 >
-> z-guard | [g-SAME | b-speaker]
+> z-guard | [g-SAME | bl-speaker]
 >
 > "The guard is me."
 
@@ -192,9 +192,9 @@ z-Olazun | [w-very | g-angry]
 **4.** *The police officer is Uzozen.*
 
 ::: details Show answer
-`zobayel gorol buzozen.`
+`zobayel gorol bluzozen.`
 
-z-police | [g-SAME | b-Uzozen]
+z-police | [g-SAME | bl-Uzozen]
 :::
 
 **5.** *There is a page.*
@@ -231,10 +231,10 @@ z-Olazun | g-challenge
 *Olazun is challenging.*
 :::
 
-**3.** `zagayul gorol bolazun.`
+**3.** `zagayul gorol blolazun.`
 
 ::: details Show answer
-z-guard | [g-SAME | b-Olazun]
+z-guard | [g-SAME | bl-Olazun]
 
 *The guard is Olazun.*
 :::
@@ -255,10 +255,10 @@ z-Ahelan | [d-page | g-SAME] | v-see
 *Ahelan sees the same page.* (the page already mentioned)
 :::
 
-**6.** `yol zolazun gorol bawan.`
+**6.** `yol zolazun gorol blawan.`
 
 ::: details Show answer
-y-question | z-Olazun | [g-SAME | b-listener]
+y-question | z-Olazun | [g-SAME | bl-listener]
 
 *Are you Olazun?*
 :::
@@ -290,9 +290,9 @@ After a known guard, the `/ɡ/` word is a property; `zagayul gunemul.` introduce
 **1.** *Olazun is Uzozen.* (one person, two names) <!-- lint: error -->`zolazun guzozen.`
 
 ::: details Show answer
-`zolazun gorol buzozen.`
+`zolazun gorol bluzozen.`
 
-z-Olazun | [g-SAME | b-Uzozen]
+z-Olazun | [g-SAME | bl-Uzozen]
 
 A word on `/ɡ/` puts Olazun in a kind; two names for one person take **`gorol`** and the other name in `/b/`. (A family name is such a kind: `zolazun guzozen.` is *Olazun is an Uzozen*, [multipart names](word-endings.md#multipart-names).)
 :::
@@ -350,10 +350,10 @@ Beginner already used **`gorol`** (*is the same as*). Its other ending finishes 
 <!-- cheat-sheet: word-shape-clause -->
 | Agebon | English |
 |---------|---------|
-| `zolazun gorol buzozen` | *Olazun is Uzozen* (the same person) |
-| `zolazun gorom buzozen` | *Olazun is basically Uzozen* |
-| `zolazun gorol buzozen gul` | *Olazun is not Uzozen* (not the same person) |
-| `zeyol gorol buzozen` | inside a noun phrase: *the person who is Uzozen* |
+| `zolazun gorol bluzozen` | *Olazun is Uzozen* (the same person) |
+| `zolazun gorom bluzozen` | *Olazun is basically Uzozen* |
+| `zolazun gorol bluzozen gul` | *Olazun is not Uzozen* (not the same person) |
+| `zeyol gorol bluzozen` | inside a noun phrase: *the person who is Uzozen* |
 
 **Compare with:** ordinary *coin* as a noun is `zorol`. Identity is **`gorol`** / **`gorom`** plus a following `/b/` label, kept next to each other.
 
@@ -411,17 +411,17 @@ On a verb, **`the`** is that act as their practice, not one outing: `zuzozen val
 
 #### This pair (`tho`) {#scope-relative}
 
-**`tho`** says the label holds in one relationship: toward one other party. Put that party in `/b/` right after the word. On `/ɡ/`, `/h/`, and `/v/`, that `/b/` is hosted by the **`tho`** word, so a verb's recipient comes after the pair. On a noun, **`tho`** stands alone; to name the party, say the label on `/ɡ/` instead.
+**`tho`** says the label holds in one relationship: toward one other party. Put that party in a `bl-` word right after the word, on `/ɡ/`, `/h/`, and `/v/` alike. A verb's recipient stays a plain `/b/`. On a noun, **`tho`** stands alone; to name the party, say the label on `/ɡ/` instead.
 
-> `zuzozen golayothom bolazun.`
+> `zuzozen golayothom blolazun.`
 >
-> z-Uzozen | [g-strangeness-th-pair | b-Olazun]
+> z-Uzozen | [g-strangeness-th-pair | bl-Olazun]
 >
 > "Uzozen is a stranger to Olazun."
 
-> `zuzozen valamuthol bolazun.`
+> `zuzozen valamuthol blolazun.`
 >
-> z-Uzozen | [v-lie-th-pair | b-Olazun]
+> z-Uzozen | [v-lie-th-pair | bl-Olazun]
 >
 > "As far as Olazun is concerned, Uzozen is lying."
 
@@ -471,9 +471,9 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 | **`thuo`** | type **except** this pair | *a teacher type, except with Olazun* | **uo** ≈ anything but that one |
 | **`thue`** | **not in that capacity** | *not as a teacher* | **ue** ≈ against / outside |
 
-> `zuzozen valamuthaol bolazun.`
+> `zuzozen valamuthaol blolazun.`
 >
-> z-Uzozen | [v-lie-th-on-pair | b-Olazun]
+> z-Uzozen | [v-lie-th-on-pair | bl-Olazun]
 >
 > "As far as Olazun is concerned, Uzozen lied this once."
 
@@ -495,9 +495,9 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > "Uzozen is a lying type, except this time."
 
-> `zuzozen gunemuthuol bolazun.`
+> `zuzozen gunemuthuol blolazun.`
 >
-> z-Uzozen | [g-angry-th-except-pair | b-Olazun]
+> z-Uzozen | [g-angry-th-except-pair | bl-Olazun]
 >
 > "Uzozen is an angry type, except with Olazun."
 
@@ -559,9 +559,9 @@ y-command | g-quiet
 **3.** *Olazun is basically Uzozen.*
 
 ::: details Show answer
-`zolazun gorom buzozen.`
+`zolazun gorom bluzozen.`
 
-z-Olazun | [g-same | b-Uzozen]
+z-Olazun | [g-same | bl-Uzozen]
 :::
 
 **4.** *Ahelan is angry this time.*
@@ -583,9 +583,9 @@ z-Uzozen | g-agent-x-teach-th-role
 **6.** *As far as Olazun is concerned, Ahelan is lying.*
 
 ::: details Show answer
-`zahelan valamuthol bolazun.`
+`zahelan valamuthol blolazun.`
 
-z-Ahelan | [v-lie-th-pair | b-Olazun]
+z-Ahelan | [v-lie-th-pair | bl-Olazun]
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
@@ -650,12 +650,12 @@ z-Olazun | g-anxious-th-episode
 **`tha`** keeps the label to this episode; **`thu`** would make Olazun an anxious type.
 :::
 
-**2.** *Uzozen is not the same person as Olazun.* `zuzozen gorol bolazun gul.` or `zuzozen gorom bolazun.`
+**2.** *Uzozen is not the same person as Olazun.* `zuzozen gorol blolazun gul.` or `zuzozen gorom blolazun.`
 
 ::: details Show answer
-`zuzozen gorol bolazun gul.`
+`zuzozen gorol blolazun gul.`
 
-z-Uzozen | [[g-SAME | b-Olazun] | g-not]
+z-Uzozen | [[g-SAME | bl-Olazun] | g-not]
 
 **`gul`** denies the match; **`gorom`** says they are basically the same.
 :::
@@ -665,9 +665,9 @@ z-Uzozen | [[g-SAME | b-Olazun] | g-not]
 **1.** *Uzozen is a stranger to Ahelan.* <!-- lint: error -->`zuzozen bahelan golayothom.`
 
 ::: details Show answer
-`zuzozen golayothom bahelan.`
+`zuzozen golayothom blahelan.`
 
-z-Uzozen | [g-strangeness-th-pair | b-Ahelan]
+z-Uzozen | [g-strangeness-th-pair | bl-Ahelan]
 
 The other party goes in `/b/` right **after** the **`tho`** word.
 :::

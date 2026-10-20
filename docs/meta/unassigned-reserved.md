@@ -119,7 +119,7 @@ Source: [comparatives.md](../grammar/comparatives.md#bars)
 Source: [relations.md](../grammar/relations.md)
 
 - **open:** a relation root on `/w/` with `/b/` (`wewom buzozen`). Only the as-of pair (`wenam` / `wunem`) takes `/b/` on `/w/`. No learner reaches for it: *as big as Uzozen* is the equative, and *like Uzozen* goes on the noun (`gewom`) or the verb (`hewom`).
-- **closed (D-34):** a social tie on `/h/` (`humayam buzozen` *as a friend of Uzozen*).
+- **closed (D-34):** a social tie on `/h/` (`humayam bluzozen` *as a friend of Uzozen*).
 
 ## Hooks — in-clause
 
@@ -128,9 +128,9 @@ Source: [hooks.md](../grammar/hooks.md#ranges), [sakes.md](../grammar/sakes.md#c
 - **open:** in-clause **`ao`** / **`ae`** / **`uo`** (`aol` / `ael` / `uol` and **-m** / **-n**) between same-role words. `aol` has two guesses (*for example*, from discourse `aol …`, or *namely*); `ael` *A, in fact B* (it escalates and keeps A, unlike `el`) is a fair fill but rarely needed; `uol` has no guess. The parser rejects them; extra-noun and discourse uses are unaffected.
 - **open:** stacked **-r** at the front of a sentence (`aor …`, `aer …`, `uor …`). Extra-noun point-back is assigned; as sentence glue they have no guess (*For example, anyway?* *In fact, as I said?*). Parser: `hookDiscourseStack`.
 - **open:** discourse **`oel`** / **`ual`** / **`uol`** / **`uel`** (and **-m** / **-n**) at the front of a sentence. *Toward*, *out of*, *through* and *against* give no guessable sentence-to-sentence glue (guesses range from *Alternatively* to *Apart from that*). The parser rejects them.
-- **open:** a hook + `barl` other than `ul` (`hookStandIn`). Most have no guess (*in that…*, *at that…*). *Contrary to* an event is `hezom barl`, and no job has turned up for `uem barl`.
-- **open:** `uem` before a stance with no content an event can contradict (`frameKind`): PERMIT (it only lifts a restriction), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Olazun's interest* is `thudathum bolazun`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
-- **closed (D-49):** `uem` before given CONSENT (`uem huxolem bolazun`, `uem huxolel`), on yourself or with a `/b/` (`frameKind`).
+- **open:** a hook + `barl` other than `ul` (`hookStandIn`). Most have no guess (*in that…*, *at that…*). *Contrary to* an event is `hezom blarl`, and no job has turned up for `uem barl`.
+- **open:** `uem` before a stance with no content an event can contradict (`frameKind`): PERMIT (it only lifts a restriction), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Olazun's interest* is `thudathum blolazun`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
+- **closed (D-49):** `uem` before given CONSENT (`uem huxolem blolazun`, `uem huxolel`), on yourself or with a `/b/` (`frameKind`).
 
 ## Hook compounds
 
@@ -211,9 +211,9 @@ An **-r** grade on a closed root without its own **-r** would take away the live
 Source: [dependents.md](../grammar/dependents.md#stand-in)
 
 - **closed (D-32):** a stand-in on `/ɡ/` (`garl`).
-- **open:** forward, back and named stand-ins (`-rl` `-rm` `-rth` `-rn`) on `/h/` `/w/` `/th/` (`harth`, `tharn`) and on `/x/` `/y/`. Not guessable: a sentence filling an adverb slot could be its manner, its time, or its condition, and `/x/` and `/y/` words already open sentences. *Such* is whole-stem **-r** and *like that* is `hewom barth`. Parser: `standInRole`.
+- **open:** forward, back and named stand-ins (`-rl` `-rm` `-rth` `-rn`) on `/h/` `/w/` `/th/` (`harth`, `tharn`) and on `/x/` `/y/`. Not guessable: a sentence filling an adverb slot could be its manner, its time, or its condition, and `/x/` and `/y/` words already open sentences. *Such* is whole-stem **-r** and *like that* is `hewom blarth`. Parser: `standInRole`.
 - **open:** **-x** on a stand-in. A stand-in stands for what a sentence says, which is not a group.
-- **open:** a stance-only dependent (`dependentStanceOnly`): the sentence after a stand-in needs a noun or a verb, except a lone sake word. A lone stance there adds nothing: `hezom barl thegul` says what `uem thegul` says.
+- **open:** a stance-only dependent (`dependentStanceOnly`): the sentence after a stand-in needs a noun or a verb, except a lone sake word. A lone stance there adds nothing: `hezom blarl thegul` says what `uem thegul` says.
 
 ## Sentence linkers (`/x/`)
 
@@ -253,17 +253,19 @@ Source: [sakes.md](../grammar/sakes.md)
 - **open:** a sake word on `/z/` `/d/` `/b/` `/v/` `/h/` `/x/` `/y/` (`sakeSlot`). A sake word is a stance on a belonging, an unowned noun, or the clause, and these slots are none of those. *Walks healthily* is the clause stance (`thobatham`).
 - **open:** prescription **`the`** on a noun (`gawothel`, `wawothel goyem`). Its endings are the warrant for a move, and a noun is not a move; what a noun is for is **`tho`** (`gawothom`).
 - **closed (D-36):** **-n** on a sake word.
-- **open:** a `/b/` after an INTERNAL or UNPLACED feeling (`wawothumal goyem bolazun`). A placement locus has no landmark; someone else's stake is ON-BEHALF (`e`) or a holder.
+- **open:** a `bl-` word after an INTERNAL or UNPLACED feeling (`wawothumal goyem blolazun`). A placement locus has no landmark; someone else's stake is ON-BEHALF (`e`) or a holder.
 
 ## Role-letter structure
 
 Source: [clause.md](../grammar/clause.md)
 
 - **open:** a `gl-` adjective with no noun after it (`zuzozen glubulel.`, `zuzozen dedavel glubulel vawebol.`). It describes the next noun, and there is none; an adjective on the noun before it is a plain `/ɡ/` word. Parser: `glNoNoun`.
-- **open:** lean **`l`** on any role letter but `/ɡ/`: `zl-` / `dl-` / `bl-` / `vl-` / `hl-` / `thl-` / `wl-`. No job: a noun modifying a noun is mid-word **`x`** ([compounds](../grammar/compounds.md#ordinary-compound-order)); an event root on `/ɡ/` or in `gl-` is already an act [in progress](../grammar/predication.md#in-progress); `/h/` and `/th/` already go anywhere; `/w/` already sits before its host.
+- **open:** a `bl-` word with no `/ɡ/`, `/h/`, or `/th/` host right before it (`zuzozen varal bluzozen.`). It completes the word before it, and that word names no relation; the recipient is a plain `/b/`. Parser: `blNoHost`.
+- **open:** a plain `/b/` item in a hosted list (`hazam bludehal buzedel bal`). Every item of the hosted slot takes `bl-`. Parser: `blListItem`.
+- **open:** lean **`l`** on any role letter but `/ɡ/` and `/b/`: `zl-` / `dl-` / `vl-` / `hl-` / `thl-` / `wl-`. No job: a noun modifying a noun is mid-word **`x`** ([compounds](../grammar/compounds.md#ordinary-compound-order)); an event root on `/ɡ/` or in `gl-` is already an act [in progress](../grammar/predication.md#in-progress); `/h/` and `/th/` already go anywhere; `/w/` already sits before its host.
 - **open:** `/w/` before `/z/`, `/d/`, `/b/`, or `/v/`. Not guessable: *very* on a verb could mean how intensely, how often, or how fully, and an `/h/` adverb says which (a degree word before a manner adverb); degree on a noun goes through an adjective.
-- **closed (D-22):** a hosted `/b/` after `/z/`, `/d/`, `/v/`, or `/w/`.
-- **closed (D-46):** a person in `/b/` after WANT or PLAN (`thalem bolazun`, `thagem bolazun`), and any `/b/` after DECISION (`thogom bolazun`, `thogom bral`). Someone else's want, plan or decision goes through a holder. Parser: `intentionHost`.
+- **closed (D-22):** a `bl-` word after `/z/`, `/d/`, `/v/`, or `/w/`.
+- **closed (D-46):** a `bl-` person after WANT or PLAN (`thalem blolazun`, `thagem blolazun`), and any `bl-` word after DECISION (`thogom blolazun`, `thogom blral`). Someone else's want, plan or decision goes through a holder. Parser: `intentionHost`.
 - **closed (D-48):** `/h/` on the map or check root (`hagem`, `hogom`, any ending but **-n**). Parser: `retiredIntentionRoot`.
 
 ## Vowel series and tone marks
@@ -279,7 +281,7 @@ Source: [speech-moves.md](../grammar/speech-moves.md#tone-marks), [intention.md]
 Source: [phonology.md](../grammar/phonology.md)
 
 - **closed ([stacked vowels](design-decisions.md#stacked-vowels)):** reversed vowel stacks (`au`, `ou`, `eu`, `oa`, `ea`, `eo`) and same-vowel pairs. Stacks keep the order **u**, **a**, **o**, **e**, and each reversal is a near twin of a standard stack by ear.
-- **open:** unused onset clusters *gw*, *vw*, *xw*, *bl*. No morphology needs them (*bl* should not mean left-aligned *b*).
+- **open:** unused onset clusters *gw*, *vw*, *xw*. No morphology needs them.
 
 ## Related meta
 

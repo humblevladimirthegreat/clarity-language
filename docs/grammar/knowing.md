@@ -304,9 +304,9 @@ English *second-hand*, *third-hand*, *a secondary source* and *a tertiary source
 >
 > "I heard third-hand that Olazun left."
 
-> `zolazun thebal bunonal thredul velurul.`
+> `zolazun thebal blunonal thredul velurul.`
 >
-> z-Olazun | [th-REPORTED.strong | b-newspaper] | th-2nd-hand | v-departure
+> z-Olazun | [th-REPORTED.strong | bl-newspaper] | th-2nd-hand | v-departure
 >
 > "Olazun left, according to a newspaper article by someone who interviewed people who were there."
 
@@ -314,19 +314,19 @@ Alone, `th#N` says the claim was passed on to you, without saying in what form. 
 
 **Compare with:** `th_N` names *which* numbered source the claim rests on; `th#N` counts *how many hands* it passed through. Reliability of the one source you heard from is the ending on the channel (`thebal` / `thebar`).
 
-### Source (`/b/` after the channel) {#source}
+### Source (`bl-` after the channel) {#source}
 
-English *according to Uzozen* and *going by the camera* name **who or what you got the claim from**. Put that noun in `/b/` right after the channel. The channel is its [host](clause.md#extra-nouns), so the `/b/` is the source, not someone who receives anything.
+English *according to Uzozen* and *going by the camera* name **who or what you got the claim from**. Put that noun in a `bl-` word right after the channel. The channel is its [host](clause.md#extra-nouns), so the `bl-` word is the source, not someone who receives anything.
 
-> `zolazun thebam buzozen velurul.`
+> `zolazun thebam bluzozen velurul.`
 >
-> z-Olazun | [th-REPORTED | b-Uzozen] | v-departure
+> z-Olazun | [th-REPORTED | bl-Uzozen] | v-departure
 >
 > "Olazun left, according to Uzozen."
 
-> `zolazun thugom bogewol vezuvol.`
+> `zolazun thugom blogewol vezuvol.`
 >
-> z-Olazun | [th-LIVE | b-camera] | v-sleep
+> z-Olazun | [th-LIVE | bl-camera] | v-sleep
 >
 > "Olazun is asleep, going by the camera." (watching the feed now)
 
@@ -374,19 +374,19 @@ The mirative says only that the news was unexpected, not whether it is good or b
 >
 > "Uzozen walks, surprisingly tired."
 
-### Forecasts (`bral`) {#forecast}
+### Forecasts (`blral`) {#forecast}
 
-English *will* can make a forecast: a claim that something will happen. Agebon has no *will* word for this. Use a channel and put **`bral`** right after it in `/b/`: a number with a plus sign and no digits, meaning *some time after now*. Because a forecast needs a channel, it always says what it rests on; for a hunch, that channel is INTUITION. The mirror, **`brul`**, is *some time before now*, for a past claim with no measured amount.
+English *will* can make a forecast: a claim that something will happen. Agebon has no *will* word for this. Use a channel and put **`blral`** right after it in `/b/`: a number with a plus sign and no digits, meaning *some time after now*. Because a forecast needs a channel, it always says what it rests on; for a hunch, that channel is INTUITION. The mirror, **`blrul`**, is *some time before now*, for a past claim with no measured amount.
 
-> `thubem bral verulal.`
+> `thubem blral verulal.`
 >
-> [th-PATTERN | b-later] | v-rain
+> [th-PATTERN | bl-later] | v-rain
 >
 > "It will rain, going by the pattern."
 
-> `zolazun thabor bral velurul.`
+> `zolazun thabor blral velurul.`
 >
-> z-Olazun | [th-INTUITION.weak | b-later] | v-departure
+> z-Olazun | [th-INTUITION.weak | bl-later] | v-departure
 >
 > "I have a faint hunch Olazun will leave."
 
@@ -394,9 +394,9 @@ English *will* can make a forecast: a claim that something will happen. Agebon h
 
 In a [question](questions.md#question), the channel asks what the **listener's** answer rests on: *going by the pattern you see, will it rain?* The listener answers with that channel or names a different one. Pick the channel you expect them to have: CLUES (`theyem`) when they would work it out from clues, REPORTED (`thebam`) when they would go by what they heard or read.
 
-> `yol thubem bral verulal.`
+> `yol thubem blral verulal.`
 >
-> y-question | [th-PATTERN | b-later] | v-rain
+> y-question | [th-PATTERN | bl-later] | v-rain
 >
 > "Will it rain, going by the pattern you see?"
 
@@ -404,56 +404,56 @@ On a [feeling](sakes.md#emotion-compose) (a sake word with a locus and a motion 
 
 **Compare with:** [PLAN](intention.md#plan-predict) (`thagem`) says what you **intend** to do. Your own intention needs no channel. A forecast is a claim about the world. *Could be* with nothing behind it is [MAY](#may), not a forecast.
 
-### Evidence clause (`barl`) {#evidence-clause}
+### Evidence clause (`blarl`) {#evidence-clause}
 
-English *judging by*, *going by*, and *given that* name the **grounds** for a claim: the fact that tells you it holds. The three reasoned channels take grounds: CLUES (`theyem`, from clues), PATTERN (`thubem`, from cases that repeat) and DEDUCED (`thanam`, from premises). Each one takes **`barl`** as its `/b/`. The main sentence stops after `barl`, and the next sentence is the grounds ([dependent clauses](dependents.md#dependent-clauses)). You state the claim, the strength of your grounds, and the grounds themselves in one sentence.
+English *judging by*, *going by*, and *given that* name the **grounds** for a claim: the fact that tells you it holds. The three reasoned channels take grounds: CLUES (`theyem`, from clues), PATTERN (`thubem`, from cases that repeat) and DEDUCED (`thanam`, from premises). Each one takes **`blarl`** as its `/b/`. The main sentence stops after `blarl`, and the next sentence is the grounds ([dependent clauses](dependents.md#dependent-clauses)). You state the claim, the strength of your grounds, and the grounds themselves in one sentence.
 
-> `zolazun vanuvul theyem barl zuzozen varemul.`
+> `zolazun vanuvul theyem blarl zuzozen varemul.`
 >
-> z-Olazun | v-punch | [th-CLUES | b-that-clause] | z-Uzozen | v-scream
+> z-Olazun | v-punch | [th-CLUES | bl-that-clause] | z-Uzozen | v-scream
 >
 > "Olazun punched, judging by the fact that Uzozen is screaming."
 
-Grounds are not a cause. With [`thahum barl`](causation.md#only-because), the clause after `barl` is what made the event happen. With a reasoned channel, it is only how you know the event happened: the screaming did not make Olazun punch.
+Grounds are not a cause. With [`thahum blarl`](causation.md#only-because), the clause after `blarl` is what made the event happen. With a reasoned channel, it is only how you know the event happened: the screaming did not make Olazun punch.
 
-> `zuzozen varemul thahum barl zolazun vanuvul.`
+> `zuzozen varemul thahum blarl zolazun vanuvul.`
 >
-> z-Uzozen | v-scream | [th-because | b-that-clause] | z-Olazun | v-punch
+> z-Uzozen | v-scream | [th-because | bl-that-clause] | z-Olazun | v-punch
 >
 > "Uzozen screams because Olazun punches."
 
 <!-- cheat-sheet: knowing-intending -->
-| You say | The clause after `barl` is | Form |
+| You say | The clause after `blarl` is | Form |
 |---------|----------------------------|------|
-| what made it happen | the cause | `thahum barl` |
-| what has to hold for it to happen | the condition | `thohom barl` / `thebom barl` / `thehem barl` |
-| how you know it happened | your grounds | `theyem barl` / `thubem barl` / `thanam barl` |
+| what made it happen | the cause | `thahum blarl` |
+| what has to hold for it to happen | the condition | `thohom blarl` / `thebom blarl` / `thehem blarl` |
+| how you know it happened | your grounds | `theyem blarl` / `thubem blarl` / `thanam blarl` |
 
 The ending on the channel grades the grounds ([evidence strength](#evidence-strength)): **-l** for strong clues or a well-established pattern, **-m** by default, **-r** for a weak clue or a few cases. Strong clues still fall short of a proof: when the claim **must** hold if the grounds do, use DEDUCED ([deduction](#deduction)).
 
-> `verulal theyel barl zugalal gegulol.`
+> `verulal theyel blarl zugalal gegulol.`
 >
-> v-rain | [th-CLUES.strong | b-that-clause] | [z-cloud | g-gray]
+> v-rain | [th-CLUES.strong | bl-that-clause] | [z-cloud | g-gray]
 >
 > "It is raining, judging by the gray clouds." (strong clues)
 
-For a **forecast**, keep the [offset](#forecast) and put `barl` after it. The pattern is what you go by, and the grounds clause says what you see now.
+For a **forecast**, keep the [offset](#forecast) and put `blarl` after it. The pattern is what you go by, and the grounds clause says what you see now.
 
-> `verulal thubel bral barl zugalal gegulol.`
+> `verulal thubel blral blarl zugalal gegulol.`
 >
-> v-rain | [th-PATTERN.strong | [b-later | b-that-clause]] | [z-cloud | g-gray]
+> v-rain | [th-PATTERN.strong | [bl-later | bl-that-clause]] | [z-cloud | g-gray]
 >
 > "It will rain, going by the well-established pattern, given the gray clouds."
 
 You assert the grounds, the way you assert a cause. If you are not sure of them, say so inside the grounds clause with its own channel:
 
-> `zolazun vanuvul theyem barl zuzozen thugom varemul.`
+> `zolazun vanuvul theyem blarl zuzozen thugom varemul.`
 >
-> z-Olazun | v-punch | [th-CLUES | b-that-clause] | z-Uzozen | th-LIVE | v-scream
+> z-Olazun | v-punch | [th-CLUES | bl-that-clause] | z-Uzozen | th-LIVE | v-scream
 >
 > "Olazun punched, judging by the fact that Uzozen is screaming, which I can hear."
 
-**Compare with:** a noun in `/b/` after any channel is its [source](#source) (`thebam buzozen` *according to Uzozen*), and no other channel takes `barl`. A cause or condition word may not come before the channel. Put the channel first (`theyem thahum barl`) to say both that you inferred it and that it was caused. *Could be* with no grounds is [MAY](#may).
+**Compare with:** a `bl-` noun after any channel is its [source](#source) (`thebam bluzozen` *according to Uzozen*), and no other channel takes `blarl`. A cause or condition word may not come before the channel. Put the channel first (`theyem thahum blarl`) to say both that you inferred it and that it was caused. *Could be* with no grounds is [MAY](#may).
 
 ### Live vs memory {#live-vs-memory}
 <a id="memory-record"></a>
@@ -472,9 +472,9 @@ English *I see it* and *I saw it* both report watching; they differ in when you 
 
 Footage works the same way. While you watch, it is LIVE with the device as the source; once you have watched it, it is MEMORY, because your memory of the footage can slip just as a memory of the scene can.
 
-> `zuzozen thevum bogewol vowurel.`
+> `zuzozen thevum blogewol vowurel.`
 >
-> z-Uzozen | [th-MEMORY | b-camera] | v-walk
+> z-Uzozen | [th-MEMORY | bl-camera] | v-walk
 >
 > "Uzozen walked, as I remember from the camera."
 
@@ -554,7 +554,7 @@ English *has left* and *used to tell* mix two things: when the event happened, a
 >
 > "Olazun has left and is still gone, I can see it." (what is left over is in view)
 
-**Compare with:** [*after*](dependents.md#time-poles) (`halam bohol`) orders two events. **`haram`** does not say the leaving was earlier; it says the **outcome is still in effect**. [LIVE](#live-vs-memory) is how you know, not what is left over. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
+**Compare with:** [*after*](dependents.md#time-poles) (`halam blohol`) orders two events. **`haram`** does not say the leaving was earlier; it says the **outcome is still in effect**. [LIVE](#live-vs-memory) is how you know, not what is left over. A result as a property can stay ordinary `/ɡ/` (*the door is shut*) with no residue word.
 
 **FORMER** (`ela`) says a usual pattern held, but you are **not** claiming it holds now: *Uzozen always sings* as a past habit. Without it, [always](restrictors.md) **`hual`** describes the pattern as it stands now. As a plain noun, `zelam` is *emptiness*. (cue: 🪹 the nesting season is over; a former climate, not today's weather)
 
@@ -570,9 +570,9 @@ English *has left* and *used to tell* mix two things: when the event happened, a
 >
 > "Uzozen always used to sing, as I remember."
 
-> `zuzozen hual vezuyol helam thubem bral.`
+> `zuzozen hual vezuyol helam thubem blral.`
 >
-> z-Uzozen | h-always | v-sing | h-FORMER | [th-PATTERN | b-later]
+> z-Uzozen | h-always | v-sing | h-FORMER | [th-PATTERN | bl-later]
 >
 > "Going by the pattern, always singing will be something Uzozen used to do."
 
@@ -722,31 +722,31 @@ When you are not sure, use **`theyum`**.
 ### Deduction (`thanam`) {#deduction}
 <a id="deduced"></a>
 
-English *it follows that*, *P, so Q* and *by deduction* claim more than good evidence: if the premises hold, the conclusion **must** hold. Put DEDUCED (**`thanam`**) on the conclusion and the premises after **`barl`**, as in any [evidence clause](#evidence-clause). Join several premises with a [clause join](joins.md#clause-joins); a join after a stand-in stays in the dependent, so every premise is grounds. You assert the premises and the conclusion.
+English *it follows that*, *P, so Q* and *by deduction* claim more than good evidence: if the premises hold, the conclusion **must** hold. Put DEDUCED (**`thanam`**) on the conclusion and the premises after **`blarl`**, as in any [evidence clause](#evidence-clause). Join several premises with a [clause join](joins.md#clause-joins); a join after a stand-in stays in the dependent, so every premise is grounds. You assert the premises and the conclusion.
 
-> `zuzozen vuduyel thanam barl zual gaxuduyethel vuduyel xam zuzozen gaxuduyethel.`
+> `zuzozen vuduyel thanam blarl zual gaxuduyethel vuduyel xam zuzozen gaxuduyethel.`
 >
-> z-Uzozen | v-teach | [th-DEDUCED | b-that-clause] | [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Uzozen | g-agent-x-teach-th-role]
+> z-Uzozen | v-teach | [th-DEDUCED | bl-that-clause] | [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Uzozen | g-agent-x-teach-th-role]
 >
 > "Uzozen teaches, since every teacher teaches and Uzozen is a teacher."
 
-To claim only that the conclusion follows, put a [pole](causation.md#only-because) between the channel and **`barl`**. The pole is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
+To claim only that the conclusion follows, put a [pole](causation.md#only-because) between the channel and **`blarl`**. The pole is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
 
-> `zuzozen vuduyel thanam thohom barl zual gaxuduyethel vuduyel xam zuzozen gaxuduyethel.`
+> `zuzozen vuduyel thanam thohom blarl zual gaxuduyethel vuduyel xam zuzozen gaxuduyethel.`
 >
-> z-Uzozen | v-teach | th-DEDUCED | [th-if | b-that-clause] | [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Uzozen | g-agent-x-teach-th-role]
+> z-Uzozen | v-teach | th-DEDUCED | [th-if | bl-that-clause] | [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Uzozen | g-agent-x-teach-th-role]
 >
 > "If every teacher teaches and Uzozen is a teacher, it follows that Uzozen teaches."
 
 <!-- cheat-sheet: knowing-intending -->
 | You claim | Form | You assert |
 |-----------|------|------------|
-| *P, so Q* | Q `thanam barl` P | P and Q |
-| *Q follows from P* | Q `thanam thohom barl` P | only the link |
-| *P and Q come to the same thing* | Q `thanam thehem barl` P | only the link, both ways |
-| *P rules out Q* | Q denied with `vul`, then `thanam thohom barl` P | only that P and Q cannot both hold |
+| *P, so Q* | Q `thanam blarl` P | P and Q |
+| *Q follows from P* | Q `thanam thohom blarl` P | only the link |
+| *P and Q come to the same thing* | Q `thanam thehem blarl` P | only the link, both ways |
+| *P rules out Q* | Q denied with `vul`, then `thanam thohom blarl` P | only that P and Q cannot both hold |
 
-To say a conclusion **does not** follow (*that doesn't follow*, *a non sequitur*), deny the channel and the pole together with a [stance join before `barl`](join-across-roles.md#stance-join-before-barl). You deny the link and claim nothing about P or Q: either may still be true.
+To say a conclusion **does not** follow (*that doesn't follow*, *a non sequitur*), deny the channel and the pole together with a [stance join before `blarl`](join-across-roles.md#stance-join-before-barl). You deny the link and claim nothing about P or Q: either may still be true.
 
 The ending grades how far you checked the steps ([evidence strength](#evidence-strength)): **`thanal`** when you could write out every step, **`thanam`** when you could name the premises and the rule, **`thanar`** when it only seems to follow.
 
@@ -760,9 +760,9 @@ When the premises come first, open the conclusion with the linker **`xahel`** *i
 
 A linker is not a channel, so the conclusion keeps your [frame](#carry-forward): a deduction from a report is still REPORTED. To reason from a premise you do not grant, suppose it with [NOTIONAL](#notional) **`theyur`**. The frame carries, so every step after it stays supposed. To keep what you found, state the link with its own channel, which ends the supposition:
 
-> `zuzozen theyur gaxuduyethel. xahel zuzozen vuduyel. zuzozen vuduyel thanam thohom barl zuzozen gaxuduyethel.`
+> `zuzozen theyur gaxuduyethel. xahel zuzozen vuduyel. zuzozen vuduyel thanam thohom blarl zuzozen gaxuduyethel.`
 >
-> z-Uzozen | th-NOTIONAL-suppose | g-agent-x-teach-th-role . x-it-follows | z-Uzozen | v-teach . z-Uzozen | v-teach | th-DEDUCED | [th-if | b-that-clause] | [z-Uzozen | g-agent-x-teach-th-role]
+> z-Uzozen | th-NOTIONAL-suppose | g-agent-x-teach-th-role . x-it-follows | z-Uzozen | v-teach . z-Uzozen | v-teach | th-DEDUCED | [th-if | bl-that-clause] | [z-Uzozen | g-agent-x-teach-th-role]
 >
 > "Suppose Uzozen is a teacher. Then Uzozen teaches. So if Uzozen is a teacher, it follows that Uzozen teaches."
 
@@ -933,9 +933,9 @@ The holder may be the [topic pronoun](pronouns.md#topic-pronoun), whoever the co
 
 The seam word keeps its `/b/` source like any channel. A schedule is not a forecast: it is a plan you know from a record, so put the record in `/b/`:
 
-> `zuzozen thebaluzozen bagorel thagem vezuyel.`
+> `zuzozen thebaluzozen blagorel thagem vezuyel.`
 >
-> z-Uzozen | [th-REPORTED.strong-Uzozen | b-calendar] | th-plan-itinerary | v-tell
+> z-Uzozen | [th-REPORTED.strong-Uzozen | bl-calendar] | th-plan-itinerary | v-tell
 >
 > "Going by the official calendar, Uzozen plans to speak."
 
@@ -962,12 +962,12 @@ The seam word keeps its `/b/` source like any channel. A schedule is not a forec
 | [Sake](sakes.md) words and [emotion compose](sakes.md#emotion-compose), with their endings | your stake and feeling | the holder's stake and feeling |
 | A `/ɡ/` sake's *my* reading ([personal possession](sakes.md#personal-possession)) | your belonging | the holder's belonging |
 | Another evidential | how you know | how the holder knows |
-| The grounds after an inferring or pattern host's [`barl`](#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
+| The grounds after an inferring or pattern host's [`blarl`](#evidence-clause) | grounds you assert | the holder's grounds; you do not assert them |
 | A comparison [bar](comparatives.md#bars) | your expectation | the holder's expectation |
 
-> `zonal wawothumol goyem bolazun theyemuzozen.`
+> `zonal wawothumol goyem blolazun theyemuzozen.`
 >
-> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Olazun]] | th-CLUES-Uzozen
+> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Olazun]] | th-CLUES-Uzozen
 >
 > "I gather Uzozen resents Olazun over the memo, holding it in."
 
@@ -1007,7 +1007,7 @@ A [feeling with no object](sakes.md#feeling-no-object) works the same way: the h
 >
 > "I gather Olazun is anxious."
 
-Pronouns and speech moves stay yours: **`uwon`** is still you, and the sentence is still your turn. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thebamuzozen bral` is *I hear Uzozen expects it*. A holder is not a [source](#source): a source in `/b/` is where a claim came to you from, and the claim stays yours to pass on; a holder makes the claim the holder's view.
+Pronouns and speech moves stay yours: **`uwon`** is still you, and the sentence is still your turn. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thebamuzozen blral` is *I hear Uzozen expects it*. A holder is not a [source](#source): a source in `/b/` is where a claim came to you from, and the claim stays yours to pass on; a holder makes the claim the holder's view.
 
 **One clause, one holder.** The holder covers its clause and any dependent sentence inside it; a new `/x/` sentence is yours again unless it has its own seam word. A dependent with its own seam word switches holder for that sentence only. That is how you take a stance on someone else's stance: your stance in the main sentence, theirs in a dependent.
 
@@ -1086,9 +1086,9 @@ z-Olazun | th-REPORTED | th-3rd-hand | v-scream
 **3.** *Going by a well-established pattern, Uzozen will tell Ahelan.*
 
 ::: details Show answer
-`zuzozen thubel bral vezuyel bahelan.`
+`zuzozen thubel blral vezuyel bahelan.`
 
-z-Uzozen | [th-PATTERN.strong | b-later] | v-tell | b-Ahelan
+z-Uzozen | [th-PATTERN.strong | bl-later] | v-tell | b-Ahelan
 :::
 
 **4.** *Uzozen has sung at some point.*
@@ -1117,10 +1117,10 @@ z-Olazun | th-NOTIONAL | v-mute | d-radio
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zolazun thevum bogewol vezuyol.`
+**1.** `zolazun thevum blogewol vezuyol.`
 
 ::: details Show answer
-z-Olazun | [th-MEMORY | b-camera] | v-sing
+z-Olazun | [th-MEMORY | bl-camera] | v-sing
 
 *Olazun sang, as I remember from the camera.*
 :::
@@ -1141,10 +1141,10 @@ z-Olazun | h-not-yet.lasting | v-departure
 *Olazun hasn't left yet, but will.*
 :::
 
-**4.** `verulal thubel bral barl zugalal gegulol.`
+**4.** `verulal thubel blral blarl zugalal gegulol.`
 
 ::: details Show answer
-v-rain | [th-PATTERN.strong | [b-later | b-that-clause]] | [z-cloud | g-gray]
+v-rain | [th-PATTERN.strong | [bl-later | bl-that-clause]] | [z-cloud | g-gray]
 
 *It will rain, going by the well-established pattern, given the gray clouds.*
 :::
@@ -1167,12 +1167,12 @@ z-Ahelan | v-sing | [contrary-to | th-REPORTED]
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *There are gray clouds, and there is rain if there are gray clouds; so there is rain, and you could write out every step.* `zerulal thanal barl zugalal gegulol xam zerulal gohom bugalal gegulol.` or `zerulal thanam barl zugalal gegulol xam zerulal gohom bugalal gegulol.`
+**1.** *There are gray clouds, and there is rain if there are gray clouds; so there is rain, and you could write out every step.* `zerulal thanal blarl zugalal gegulol xam zerulal gohom blugalal gegulol.` or `zerulal thanam blarl zugalal gegulol xam zerulal gohom blugalal gegulol.`
 
 ::: details Show answer
-`zerulal thanal barl zugalal gegulol xam zerulal gohom bugalal gegulol.`
+`zerulal thanal blarl zugalal gegulol xam zerulal gohom blugalal gegulol.`
 
-z-rain | [th-DEDUCED.strong | b-that-clause] | [[z-cloud | g-gray] | x-and.open | z-rain | [g-if | [b-cloud | g-gray]]]
+z-rain | [th-DEDUCED.strong | bl-that-clause] | [[z-cloud | g-gray] | x-and.open | z-rain | [g-if | [bl-cloud | g-gray]]]
 
 DEDUCED with **-l** means you could show every step; **-m** means you could name the premises and the rule.
 :::
@@ -1192,9 +1192,9 @@ NOTIONAL with **-l** is a rehearsal; **-m** only imagines the singing.
 **1.** *Olazun punched, judging by the fact that Uzozen screams.* <!-- lint: error -->`zolazun vanuvul thahum barl zuzozen varemul.`
 
 ::: details Show answer
-`zolazun vanuvul theyem barl zuzozen varemul.`
+`zolazun vanuvul theyem blarl zuzozen varemul.`
 
-z-Olazun | v-punch | [th-CLUES | b-that-clause] | z-Uzozen | v-scream
+z-Olazun | v-punch | [th-CLUES | bl-that-clause] | z-Uzozen | v-scream
 
 The scream is your evidence, so it goes after CLUES; **`thahum`** would make the scream the cause of the punch.
 :::
@@ -1232,15 +1232,15 @@ Only words about **how you know** or **how things stand** move to `/w/` this way
 
 English *three hours ago* and *in three hours* count from now. Agebon counts from the channel instead: put a [measure phrase](numbers-applied.md#measure-phrases) in `/b/` immediately after the evidential. Any other noun there is the [source](#source); a time measure is the offset. The amount is **signed**: **`-`** is earlier than now, **`+`** is later than now. The offset always dates the **event**, not the moment you learned about it. There is no bare *ago* word, so a dated claim always says how you know it.
 
-> `zuzozen thevum bagorum grurel vowurel.`
+> `zuzozen thevum blagorum grurel vowurel.`
 >
-> z-Uzozen | [th-MEMORY | [b-hour | g-minus-three]] | v-walk
+> z-Uzozen | [th-MEMORY | [bl-hour | g-minus-three]] | v-walk
 >
 > "I saw Uzozen walk three hours ago."
 
-> `zolazun thebam bagorum grarel velurul.`
+> `zolazun thebam blagorum grarel velurul.`
 >
-> z-Olazun | [th-REPORTED | [b-hour | g-three]] | v-departure
+> z-Olazun | [th-REPORTED | [bl-hour | g-three]] | v-departure
 >
 > "I hear Olazun leaves in three hours."
 
@@ -1258,61 +1258,61 @@ The wrong sign on a one-way word (**`thevum`** with **`+`**, **`thagem`** with *
 
 A [carried](#carry-forward) channel keeps its offset. Date the first sentence of a story, and the bare sentences after it happen then too, so a past story needs no tense and no offset on every line. A new offset starts a new frame.
 
-> `zuzozen thevum buzurem gruwol vowurel. zuzozen vuhohol.`
+> `zuzozen thevum bluzurem gruwol vowurel. zuzozen vuhohol.`
 >
-> z-Uzozen | [th-MEMORY | [b-day | g-minus-one]] | v-walk . z-Uzozen | v-sit
+> z-Uzozen | [th-MEMORY | [bl-day | g-minus-one]] | v-walk . z-Uzozen | v-sit
 >
 > "I saw Uzozen walk yesterday. Uzozen sat down." (the sitting was yesterday too, as I remember)
 
-A signed measure in the `/b/` of a [time pole](dependents.md#time-poles) (**`harum`** *until*, **`hevahum`** *by*, **`habam`** *before*, **`halam`** *after*, **`herem`** *during*) counts from now, the same way. The pole itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel of its own (a carried frame does not count). So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a pole to slip in a past or future with no warrant. An absolute date in the pole (`harum b_#22,7`) needs none of this.
+A signed measure in the `/b/` of a [time pole](dependents.md#time-poles) (**`harum`** *until*, **`hevahum`** *by*, **`habam`** *before*, **`halam`** *after*, **`herem`** *during*) counts from now, the same way. The pole itself needs no channel, but its clause must already be a command, a request, or a plan, or carry a channel of its own (a carried frame does not count). So a command or a plan can name a day without saying how anyone knows, while a plain statement cannot use a pole to slip in a past or future with no warrant. An absolute date in the pole (`harum bl_#22,7`) needs none of this.
 
-> `yel vuhamum zawan harum buzurem grawol.`
+> `yel vuhamum zawan harum bluzurem grawol.`
 >
-> y-command | v-confidentiality | z-listener | [h-until | [b-day | g-one]]
+> y-command | v-confidentiality | z-listener | [h-until | [bl-day | g-one]]
 >
 > "Keep the secret until tomorrow."
 
-For *just* and *about to*, use the [just-short](numbers.md#just-short) amount with no unit: **`brubul`** is *a hair before now*, **`brabul`** is *a hair after now*.
+For *just* and *about to*, use the [just-short](numbers.md#just-short) amount with no unit: **`blrubul`** is *a hair before now*, **`blrabul`** is *a hair after now*.
 
-> `zuzozen thevum brubul vowurel.`
+> `zuzozen thevum blrubul vowurel.`
 >
-> z-Uzozen | [th-MEMORY | b---e-] | v-walk
+> z-Uzozen | [th-MEMORY | bl---e-] | v-walk
 >
 > "I just saw Uzozen walk."
 
-> `theyem brabul verulal.`
+> `theyem blrabul verulal.`
 >
-> [th-CLUES | b-+-e-] | v-rain
+> [th-CLUES | bl-+-e-] | v-rain
 >
 > "It looks like it's about to rain."
 
-For *soon*, soften that hair with open **-m**: **`brabum`** is *a short while after now*. It is later than *about to* (`brabul`) but still close, unlike open-ended *later* (`bral`).
+For *soon*, soften that hair with open **-m**: **`blrabum`** is *a short while after now*. It is later than *about to* (`blrabul`) but still close, unlike open-ended *later* (`blral`).
 
-> `theyem brabum verulal.`
+> `theyem blrabum verulal.`
 >
-> [th-CLUES | b-+-e-.about] | v-rain
+> [th-CLUES | bl-+-e-.about] | v-rain
 >
 > "It looks like it will rain soon."
 
-The mirror, **`brubum`**, is *a short while before now*: *recently*.
+The mirror, **`blrubum`**, is *a short while before now*: *recently*.
 
-> `zuzozen thevum brubum vowurel.`
+> `zuzozen thevum blrubum vowurel.`
 >
-> z-Uzozen | [th-MEMORY | b---e-.about] | v-walk
+> z-Uzozen | [th-MEMORY | bl---e-.about] | v-walk
 >
 > "I saw Uzozen walk recently."
 
-> `zolazun thubem bagorum grurel vezuvol.`
+> `zolazun thubem blagorum grurel vezuvol.`
 >
-> z-Olazun | [th-PATTERN | [b-hour | g-minus-three]] | v-sleep
+> z-Olazun | [th-PATTERN | [bl-hour | g-minus-three]] | v-sleep
 >
 > "Going by the pattern, Olazun slept three hours ago."
 
 A channel used as a comparison [bar](comparatives.md#bars) takes the same offset, which dates the bar: MEMORY with a day before is *than yesterday*.
 
-> `zuzozen thevum buzurem gruwol zel guzemol.`
+> `zuzozen thevum bluzurem gruwol zel guzemol.`
 >
-> [z-Uzozen | [th-MEMORY | [b-day | g-minus-one]] | z-rank/more | g-sleepy]
+> [z-Uzozen | [th-MEMORY | [bl-day | g-minus-one]] | z-rank/more | g-sleepy]
 >
 > "Uzozen is sleepier than yesterday."
 
@@ -1324,17 +1324,17 @@ With an [as-of](relations.md#as-of) pair, the offset counts from the as-of momen
 
 Agebon has no short *now* word. Say *now* with an offset of **zero**: the event sits no time away from the moment you speak. The channel stays, so *now* still says how you know it.
 
-> `zolazun theyem bagorum grazol vezuvol.`
+> `zolazun theyem blagorum grazol vezuvol.`
 >
-> z-Olazun | [th-CLUES | [b-hour | g-zero]] | v-sleep
+> z-Olazun | [th-CLUES | [bl-hour | g-zero]] | v-sleep
 >
 > "Olazun must be asleep right now."
 
 The unit sets how wide *now* is. Zero hours is *right now*; zero [days](numbers-applied.md#stock-units) is *today*.
 
-> `zuzozen thebam buzurem grazol vezuyol.`
+> `zuzozen thebam bluzurem grazol vezuyol.`
 >
-> z-Uzozen | [th-REPORTED | [b-day | g-zero]] | v-sing
+> z-Uzozen | [th-REPORTED | [bl-day | g-zero]] | v-sing
 >
 > "I hear Uzozen sings today."
 
@@ -1366,9 +1366,9 @@ To say **how you know** the general claim, add a [channel](#evidentiality). On a
 >
 > "It follows that every teacher teaches." (every step could be shown)
 
-> `zolazun hal vanuvul thebal bazunal.`
+> `zolazun hal vanuvul thebal blazunal.`
 >
-> z-Olazun | h-never | v-punch | [th-REPORTED.strong | b-soccer]
+> z-Olazun | h-never | v-punch | [th-REPORTED.strong | bl-soccer]
 >
 > "Olazun never punches, per the soccer rules."
 
@@ -1379,27 +1379,27 @@ The fence says how far the claim reaches, and the channel says what it rests on.
 | *usually*, *as a rule* | `huam` / `zuam` | any, or none | `zuzozen huam vowurel.` |
 | *always, as far as I have checked* | `hual` / `zual` | a weak channel | `zuzozen hual vowurel thuber.` |
 | *it follows that every …* | `zual` | DEDUCED.strong `thanal` | `zual gaxuduyethel vuduyel thanal.` |
-| *by definition* | `zual` + `thehem barl` | none | `zual geyol gaxuduyethel thehem barl zeyor vuduyel.` |
-| *under the rules of …* | `hal` / `hual` | REPORTED.strong with the rules in `/b/` | `zolazun hal vanuvul thebal bazunal.` |
+| *by definition* | `zual` + `thehem blarl` | none | `zual geyol gaxuduyethel thehem blarl zeyor vuduyel.` |
+| *under the rules of …* | `hal` / `hual` | REPORTED.strong with the rules in `/b/` | `zolazun hal vanuvul thebal blazunal.` |
 | *cats are sleepy* (in general) | `zuam` + kind | any, or none | `zuam gagozol guzemol thubem.` |
 
-A [cause or condition](causation.md) on a general claim says how things work. It holds for **each** member or occasion, the same way the verb does. Inside the sentence after **`barl`**, resume the kind with **-r** (`zagozor`) to mean *that same one*: each cat, in turn.
+A [cause or condition](causation.md) on a general claim says how things work. It holds for **each** member or occasion, the same way the verb does. Inside the sentence after **`blarl`**, resume the kind with **-r** (`zagozor`) to mean *that same one*: each cat, in turn.
 
-> `zual gagozol vezuvol thewem thohom barl zagozor guzemol.`
+> `zual gagozol vezuvol thewem thohom blarl zagozor guzemol.`
 >
-> [z-everything | g-cat] | v-sleep | th-CAUSE | [th-if | b-that-clause] | [z-←cat | g-sleepy]
+> [z-everything | g-cat] | v-sleep | th-CAUSE | [th-if | bl-that-clause] | [z-←cat | g-sleepy]
 >
 > "Every cat sleeps when it is sleepy; that is how it works."
 
 A **definition** works both ways: whatever has the property is that kind, and every member of the kind has it. Write it on a closed fence with **`thehem`** (*if and only if*, from [causation](causation.md#only-because)). The grounds sentence is the defining property. A definition needs no channel, because it is a decision about a word, not a report about the world.
 
-> `zual geyol gaxuduyethel thehem barl zeyor vuduyel.`
+> `zual geyol gaxuduyethel thehem blarl zeyor vuduyel.`
 >
-> [z-everything | g-person] | g-agent-x-teach-th-role | [th-iff | b-that-clause] | z-←person | v-teach
+> [z-everything | g-person] | g-agent-x-teach-th-role | [th-iff | bl-that-clause] | z-←person | v-teach
 >
 > "By definition, a person is a teacher if and only if they teach."
 
-The channel stays on the main sentence and covers the whole generalization. Put it before the pole, as with the [evidence clause](#evidence-clause): `zual gagozol vezuvol thubel thohom barl …` is *going by a well-established pattern, every cat sleeps when …*.
+The channel stays on the main sentence and covers the whole generalization. Put it before the pole, as with the [evidence clause](#evidence-clause): `zual gagozol vezuvol thubel thohom blarl …` is *going by a well-established pattern, every cat sleeps when …*.
 
 **Compare with:** a general claim you are **not** giving as today's report is [FORMER](#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is [REQUIRE](sakes.md#requirement) (`thonam`), not a law of how things work. *Maybe every cat sleeps* is [MAY](#may) on the same clause.
 
@@ -1450,9 +1450,9 @@ z-Olazun | [d-dress | [w-LIVE | g-red]] | v-see
 **2.** *I saw Uzozen write three hours ago.*
 
 ::: details Show answer
-`zuzozen thevum bagorum grurel varayel.`
+`zuzozen thevum blagorum grurel varayel.`
 
-z-Uzozen | [th-MEMORY | [b-hour | g-minus-three]] | v-write
+z-Uzozen | [th-MEMORY | [bl-hour | g-minus-three]] | v-write
 :::
 
 **3.** *Cats sleep, as a rule, going by the pattern.*
@@ -1473,38 +1473,38 @@ z-Uzozen | h-always | v-sit | th-PATTERN.weak
 *Uzozen always sits, going by the few cases I have seen.*
 :::
 
-**2.** `zolazun thubem bagorum grurel vezuvol.`
+**2.** `zolazun thubem blagorum grurel vezuvol.`
 
 ::: details Show answer
-z-Olazun | [th-PATTERN | [b-hour | g-minus-three]] | v-sleep
+z-Olazun | [th-PATTERN | [bl-hour | g-minus-three]] | v-sleep
 
 *Going by the pattern, Olazun slept three hours ago.*
 :::
 
-**3.** `zual gagozol vezuvol thewem thohom barl zagozor guzemol.`
+**3.** `zual gagozol vezuvol thewem thohom blarl zagozor guzemol.`
 
 ::: details Show answer
-[z-everything | g-cat] | v-sleep | th-CAUSE | [th-if | b-that-clause] | [z-←cat | g-sleepy]
+[z-everything | g-cat] | v-sleep | th-CAUSE | [th-if | bl-that-clause] | [z-←cat | g-sleepy]
 
 *Every cat sleeps when it is sleepy; that is how it works.*
 :::
 
-**4.** `zuzozen thevum brubul dogewol vawebol.`
+**4.** `zuzozen thevum blrubul dogewol vawebol.`
 
 ::: details Show answer
-z-Uzozen | [th-MEMORY | b---e-] | d-camera | v-see
+z-Uzozen | [th-MEMORY | bl---e-] | d-camera | v-see
 
 *I just saw Uzozen look at the camera.*
 :::
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *I saw Uzozen walk recently.* `zuzozen thevum brubum vowurel.` or `zuzozen thevum brubul vowurel.`
+**1.** *I saw Uzozen walk recently.* `zuzozen thevum blrubum vowurel.` or `zuzozen thevum blrubul vowurel.`
 
 ::: details Show answer
-`zuzozen thevum brubum vowurel.`
+`zuzozen thevum blrubum vowurel.`
 
-z-Uzozen | [th-MEMORY | b---e-.about] | v-walk
+z-Uzozen | [th-MEMORY | bl---e-.about] | v-walk
 
 Open **-m** softens the hair into *a short while ago*; **-l** is *just now*.
 :::

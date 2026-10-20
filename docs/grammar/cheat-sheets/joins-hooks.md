@@ -108,7 +108,7 @@ The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, 
 | **oe** | `voen` *equates* | `goen` / `hoen` *on a par with* | |
 | **ue** | `vuen` *deprioritizes* | `guen` / `huen` *deprioritizing* | `xuen` *and before that* |
 
-[Stance joins](../join-across-roles.md#stance-joins) (`/th/`) work on the stance words before them, not the claim: `thahum berulal thul` *not because of the rain*. With clause grounds, the join goes [before `barl`](../join-across-roles.md#stance-join-before-barl): `thahum thul barl` *not because …*. [Alone](../join-across-roles.md#standalone-stance-joins), they say how to take the claim:
+[Stance joins](../join-across-roles.md#stance-joins) (`/th/`) work on the stance words before them, not the claim: `thahum blerulal thul` *not because of the rain*. With clause grounds, the join goes [before `blarl`](../join-across-roles.md#stance-join-before-barl): `thahum thul blarl` *not because …*. [Alone](../join-across-roles.md#standalone-stance-joins), they say how to take the claim:
 
 | Agebon | English | Agebon | English |
 |--------|---------|--------|---------|
@@ -186,7 +186,7 @@ Stage: `al` `ol` `ul` `el` **-l** are Beginner; the rest of the first three colu
 | This | vs | That |
 |------|----|------|
 | `zudozol zul` *no dog* ([join denies](../joins.md#universals-domains-generics)) | | `zavayal ul zuzozen` *the family except Uzozen* ([hook takes B out of A](../hooks.md#except)) |
-| `zahunam gan buzozen` *a team including Uzozen* ([join-relation](../join-across-roles.md#join-relations)) | | `zahunam al zuzozen` *the team, including Uzozen* (afterthought) |
+| `zahunam gan bluzozen` *a team including Uzozen* ([join-relation](../join-across-roles.md#join-relations)) | | `zahunam al zuzozen` *the team, including Uzozen* (afterthought) |
 | `zuzozen zahelan zal` *the two of them* ([vs a range](../hooks.md#ranges)) | | `zuzozen oel zahelan` *Uzozen through Ahelan*; `zuzozen zahelan zael` *Uzozen, then Ahelan* |
 | hook `oel` *toward X* ([where a path ends](../hooks.md#extra-noun-intermediate)) | | `zael` + X *start with X* ([where it starts](../joins.md#sequence-ae)) |
 | `xan` *and then* ([what happened next](../join-across-roles.md#clause-sequence)) | | `xael` ([the order is part of the claim](../join-across-roles.md#vp-clause-forms): a recipe) |

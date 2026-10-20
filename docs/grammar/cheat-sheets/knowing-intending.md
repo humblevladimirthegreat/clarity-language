@@ -47,14 +47,14 @@ The ending grades your evidence: **-l** you could show it, **-m** you could desc
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Name the source](../knowing.md#source): a noun in `/b/` right after | `zolazun thebam buzozen velurul.` | *Olazun left, according to Uzozen.* | I |
-| [A device as the source](../knowing.md#source) | `zolazun thugom bogewol vezuvol.` | *Olazun is asleep, going by the camera.* | I |
+| [Name the source](../knowing.md#source): a noun in a `bl-` word right after | `zolazun thebam bluzozen velurul.` | *Olazun left, according to Uzozen.* | I |
+| [A device as the source](../knowing.md#source) | `zolazun thugom blogewol vezuvol.` | *Olazun is asleep, going by the camera.* | I |
 | [How many hands](../knowing.md#hand-depth): `th#N` after a channel | `zolazun thebam threrel velurul.` | *Olazun left, so they say, third-hand.* | I |
-| [A forecast](../knowing.md#forecast): channel + `bral` | `thubem bral verulal.` | *It will rain, going by the pattern.* | I |
-| [A hunch about later](../knowing.md#forecast) | `zolazun thabor bral velurul.` | *Olazun will leave, a faint hunch.* | I |
-| [A dated claim](../knowing.md#dated-channel): signed time measure | `zuzozen thevum bagorum grurel vowurel.` | *I saw Uzozen walk three hours ago.* | A |
-| [Later, dated](../knowing.md#dated-channel) | `zolazun thebam bagorum grarel velurul.` | *I hear Olazun leaves in three hours.* | A |
-| [Give the grounds](../knowing.md#evidence-clause): `barl`, grounds in the next sentence | `theyem thahum barl` | *inferred, and it was caused* | I |
+| [A forecast](../knowing.md#forecast): channel + `blral` | `thubem blral verulal.` | *It will rain, going by the pattern.* | I |
+| [A hunch about later](../knowing.md#forecast) | `zolazun thabor blral velurul.` | *Olazun will leave, a faint hunch.* | I |
+| [A dated claim](../knowing.md#dated-channel): signed time measure | `zuzozen thevum blagorum grurel vowurel.` | *I saw Uzozen walk three hours ago.* | A |
+| [Later, dated](../knowing.md#dated-channel) | `zolazun thebam blagorum grarel velurul.` | *I hear Olazun leaves in three hours.* | A |
+| [Give the grounds](../knowing.md#evidence-clause): `blarl`, grounds in the next sentence | `theyem thahum blarl` | *inferred, and it was caused* | I |
 
 | Offset | Sign | Stage |
 |--------|------|-------|
@@ -62,27 +62,27 @@ The ending grades your evidence: **-l** you could show it, **-m** you could desc
 | [`thugom` LIVE](../knowing.md#dated-channel) | no offset | A |
 | [`thubem` PATTERN](../knowing.md#dated-channel) | **`-`** or **`+`** | A |
 
-What a `/b/` after a channel does: a person or thing is the [source](../knowing.md#source); a time measure is the [offset](../knowing.md#dated-channel); `barl` takes only CLUES, PATTERN and DEDUCED. A cause or condition word may not come before the channel.
+What a `bl-` word after a channel does: a person or thing is the [source](../knowing.md#source); a time measure is the [offset](../knowing.md#dated-channel); `blarl` takes only CLUES, PATTERN and DEDUCED. A cause or condition word may not come before the channel.
 
 <!-- cheat-sheet: knowing-intending -->
-| You say | Clause after `barl` is | Form | Stage |
+| You say | Clause after `blarl` is | Form | Stage |
 |---------|------------------------|------|-------|
-| what made it happen | the cause | [`thahum barl`](../knowing.md#evidence-clause) | I |
-| what must hold for it | the condition | [`thohom barl`](../knowing.md#evidence-clause) / `thebom barl` / `thehem barl` | I |
-| how you know it happened | your grounds | [`theyem barl`](../knowing.md#evidence-clause) / `thubem barl` / `thanam barl` | I |
+| what made it happen | the cause | [`thahum blarl`](../knowing.md#evidence-clause) | I |
+| what must hold for it | the condition | [`thohom blarl`](../knowing.md#evidence-clause) / `thebom blarl` / `thehem blarl` | I |
+| how you know it happened | your grounds | [`theyem blarl`](../knowing.md#evidence-clause) / `thubem blarl` / `thanam blarl` | I |
 
 ### Deduction {#deduction}
 
-What you assert depends on what sits before `barl`: the channel alone asserts the premises; a pole between them asserts only the link. Join several premises with `xam`.
+What you assert depends on what sits before `blarl`: the channel alone asserts the premises; a pole between them asserts only the link. Join several premises with `xam`.
 
 <!-- cheat-sheet: knowing-intending -->
 | You claim | Form | You assert | Stage |
 |-----------|------|------------|-------|
-| *P, so Q* | Q [`thanam barl`](../knowing.md#deduction) P | P and Q | I |
-| *Q follows from P* | Q [`thanam thohom barl`](../knowing.md#deduction) P | only the link | I |
-| *P and Q come to the same thing* | Q [`thanam thehem barl`](../knowing.md#deduction) P | only the link, both ways | I |
-| *P rules out Q* | Q denied with `vul`, then [`thanam thohom barl`](../knowing.md#deduction) P | only that P and Q cannot both hold | I |
-| *Q doesn't follow from P* | Q [`thanam thohom thul barl`](../join-across-roles.md#stance-join-before-barl) P | that the link fails | I |
+| *P, so Q* | Q [`thanam blarl`](../knowing.md#deduction) P | P and Q | I |
+| *Q follows from P* | Q [`thanam thohom blarl`](../knowing.md#deduction) P | only the link | I |
+| *P and Q come to the same thing* | Q [`thanam thehem blarl`](../knowing.md#deduction) P | only the link, both ways | I |
+| *P rules out Q* | Q denied with `vul`, then [`thanam thohom blarl`](../knowing.md#deduction) P | only that P and Q cannot both hold | I |
+| *Q doesn't follow from P* | Q [`thanam thohom thul blarl`](../join-across-roles.md#stance-join-before-barl) P | that the link fails | I |
 
 ### Whose view {#holder}
 
@@ -191,11 +191,11 @@ A want, a plan, and a decision are three steps, and they stack in that order. A 
 | [Against someone's wishes](../intention.md#whose-intention) | `zolazun vezuvol uem theyemuzozen thalem.` | *Olazun sleeps, against Uzozen's wishes, as far as I can tell.* | I |
 | [Someone else's plan](../knowing.md#holder): a holder | `zuzozen thebamuzozen thagem vowurel.` | *I hear Uzozen plans to walk.* | I |
 | [Someone else's decision](../intention.md#whose-intention): a holder | `zuzozen theyemuzozen thogom vowurel.` | *I gather Uzozen has decided to walk, and can still change that.* | I |
-| [Plan, and when](../intention.md#predict-evidentiality) | `zuwon thagem bral vuhohol.` | *I plan to sit down later.* | I |
+| [Plan, and when](../intention.md#predict-evidentiality) | `zuwon thagem blral vuhohol.` | *I plan to sit down later.* | I |
 | [Try, failing that](../intention.md#fallback): `xon` | `zuzozen howar vowurel xon zuzozer vezuyol.` | *Uzozen gives walking a try; failing that, Uzozen sings.* | I |
 | [A plan with backups](../intention.md#fallback) | `zuwon thagel vowurel xon zuwon thagel vezuyol xon zuwon thagel vezuvol.` | *walk; failing that, sing; failing that, sleep* | I |
 
-The `/b/` right after PLAN is only ever a time. WANT, PLAN, and DECISION take no `/b/` for whose they are.
+The `bl-` word right after PLAN is only ever a time. WANT, PLAN, and DECISION take no `bl-` word for whose they are.
 
 ### Ability {#ability}
 
@@ -226,7 +226,7 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | `thomam` *could be* ([a guess, no reasons](../knowing.md#may)) | | `theyem` *from the clues* ([reasons you worked out](../knowing.md#evidentiality)) |
 | `thebam` *so they say* ([someone said it](../knowing.md#evidentiality)) | | `theyum` *imagine* ([a scene you make up](../knowing.md#notional-as-if-framing)) |
 | `theyel` *strong clues* ([how good your evidence is](../knowing.md#evidence-strength)) | | `threrel` *third-hand* ([how many hands](../knowing.md#hand-depth)) |
-| `thubem bral` *will, by the pattern* ([a forecast](../knowing.md#forecast)) | | `thagem` *I plan to* ([an intention](../intention.md#plan-predict)) |
+| `thubem blral` *will, by the pattern* ([a forecast](../knowing.md#forecast)) | | `thagem` *I plan to* ([an intention](../intention.md#plan-predict)) |
 | `haram` *still in effect* ([the outcome stays](../knowing.md#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](../knowing.md#phasal)) |
 | `thogom` *I've decided* ([how open the choice is, no time](../intention.md#decision)) | | `thagem` *I plan* ([how worked out, still ahead](../intention.md#plan-predict)) |
 | `howam` *tries* ([acts, outcome open](../intention.md#try)) | | `vezuyoxal` *can sing* ([a claim about ability](../intention.md#can)) |

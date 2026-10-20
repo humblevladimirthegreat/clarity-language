@@ -3,10 +3,11 @@ import { segmentUtterance } from "./tokenize.js";
 import type { AmbiguityConflict } from "./types.js";
 import { parseWord, probeMorphWord } from "./word.js";
 
-function morphSignature(word: { family: unknown; pos?: string; ending?: string; gl?: boolean; plural?: boolean }): string {
+function morphSignature(word: { family: unknown; pos?: string; ending?: string; gl?: boolean; bl?: boolean; plural?: boolean }): string {
   return JSON.stringify({
     pos: word.pos,
     gl: word.gl,
+    bl: word.bl,
     ending: word.ending,
     plural: word.plural,
     family: word.family,

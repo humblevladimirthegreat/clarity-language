@@ -143,7 +143,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "hCoordPart.hUnitRule": { anchor: "clause.md#adverbs-h", summary: "adverb or stance word" },
   "hCoordPart.hJoinClose": { anchor: "join-across-roles.md#stance-joins", summary: "/h/ join after its adverbs" },
   "hCoordPart.standaloneJoin": { anchor: "join-across-roles.md#standalone-stance-joins", summary: "standalone stance /th/ join" },
-  "hCoordPart.lateBound": { anchor: "join-across-roles.md#stance-join-before-barl", summary: "stance join between a pole and its barl" },
+  "hCoordPart.lateBound": { anchor: "join-across-roles.md#stance-join-before-barl", summary: "stance join between a pole and its blarl" },
   "hJoinClose.JoinH": { anchor: "join-across-roles.md#stance-joins", summary: "/h/ join fence" },
 
   "hUnitRule.W": { anchor: "clause.md#adjective-detail-w", summary: "/w/ detail on an adverb" },
@@ -236,7 +236,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
     anchor: "roles.md#viewpoint-laterals",
     summary: "viewpoint lateral",
     reader:
-      "A direction joined by `-th-` to a person or pointer is a side of that one's facing, not a compass point: north-th = ahead of them, south-th = behind, west-th = on their left, east-th = on their right (`h-west-th-X` = on X's left). `-th-landmark` with a `b-` noun is that thing's own front: `[g-north-th-landmark | b-car]` = in front of the car. A bare direction is the compass point.",
+      "A direction joined by `-th-` to a person or pointer is a side of that one's facing, not a compass point: north-th = ahead of them, south-th = behind, west-th = on their left, east-th = on their right (`h-west-th-X` = on X's left). `-th-landmark` with a `bl-` noun is that thing's own front: `[g-north-th-landmark | bl-car]` = in front of the car. A bare direction is the compass point.",
   },
   holder: {
     anchor: "knowing.md#holder",
@@ -299,6 +299,7 @@ export const WORD_PLURAL_CONSTRUCTIONS: Record<Exclude<Pos, "w" | "h" | "th" | "
 
 export const WORD_MISC_CONSTRUCTIONS = {
   gl: { anchor: "clause.md#left-bound-adjectives", summary: "gl- left-bound adjective" },
+  bl: { anchor: "clause.md#extra-nouns", summary: "bl- hosted extra noun: completes the /ɡ/ /h/ or /th/ word right before it" },
 } satisfies Record<string, ConstructionEntry>;
 
 export const RESOLVE_CONSTRUCTIONS: Record<
@@ -683,16 +684,18 @@ export const REJECTIONS = {
     summary: "the stance after uem says what the event goes against: a channel, PLAN, DECISION, WANT, a ban, a requirement, a refusal, or a speaker attitude",
   },
   hookSameRole: { anchor: "hooks.md#including-am-al", summary: "an in-clause hook goes between two phrases in the same clause role (A HOOK B)" },
-  hookStandIn: { anchor: "hooks.md#since", summary: "the only hook that takes a stand-in is `ul barl` (since); contrary to an event is `hezom barl`" },
+  hookStandIn: { anchor: "hooks.md#since", summary: "the only hook that takes a stand-in is `ul barl` (since); contrary to an event is `hezom blarl`" },
   dependentStanceOnly: {
     anchor: "dependents.md#dependent-clauses",
     summary: "the sentence after a stand-in names an event or a thing; a stance word alone fills it only as a lone feeling, thanks, or sorry",
   },
-  predicateAfterVerb: { anchor: "predication.md#classification", summary: "a /ɡ/ word right after the verb has no reading (no depictive or resultative); say the state in its own sentence, with `herem barl`, or with the adjective as a verb under `thewem`" },
+  predicateAfterVerb: { anchor: "predication.md#classification", summary: "a /ɡ/ word right after the verb has no reading (no depictive or resultative); say the state in its own sentence, with `herem blarl`, or with the adjective as a verb under `thewem`" },
+  blNoHost: { anchor: "clause.md#extra-nouns", summary: "a bl- word completes the /ɡ/ /h/ or /th/ word right before it, so it needs one there (`hewom bluzozen`); a recipient is a plain /b/ (`bolazun`)" },
+  blListItem: { anchor: "clause.md#extra-nouns", summary: "in a hosted list every /b/ item takes bl- (`hazam bludehal bluzedel bal`); the join word does not" },
   glNoNoun: { anchor: "clause.md#left-bound-adjectives", summary: "a gl- adjective describes the next noun, so a noun must follow it (`glubulel zudozol`); with no noun after it, use a plain /ɡ/ word" },
   nameInstanceSlot: { anchor: "word-endings.md#name-instance--ln", summary: "-ln (span ^@) is one thing a name applies to: it fills /z/ /d/ /b/ or stands as a citation, never on /ɡ/ /v/ /h/ /w/ /th/ /x/ /y/, and never on a pronoun root" },
-  standInRole: { anchor: "dependents.md#stand-in", summary: "stand-ins (-rl -rm -rth -rn) fill /z/ /d/ /b/ only; there is no stand-in on /ɡ/ /h/ /w/ /th/ (such is whole-stem -r, like that is `hewom barth`)" },
-  standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is `barl` after a listed pole, a clues / pattern channel, or like (`hewom`)" },
+  standInRole: { anchor: "dependents.md#stand-in", summary: "stand-ins (-rl -rm -rth -rn) fill /z/ /d/ /b/ only; there is no stand-in on /ɡ/ /h/ /w/ /th/ (such is whole-stem -r, like that is `hewom blarth`)" },
+  standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is `blarl` after a listed pole, a clues / pattern channel, or like (`hewom`)" },
   standInHostUndo: { anchor: "dependents.md#stand-in", summary: "burl follows only the so-that pole holalam or the if pole thudoram" },
   poleStack: { anchor: "causation.md#only-because", summary: "pole stacks are `theboram thurugum` and `hezuvom thudoram`" },
   objectNeedsVerb: { anchor: "predication.md#existence", summary: "an object /d/ needs a verb" },
@@ -726,7 +729,7 @@ export const REJECTIONS = {
   pointerOwnSlot: { anchor: "pronouns.md#themself", summary: "a self pointer (e) names another slot of its own clause, not the one it fills" },
   clauseSingleItem: { anchor: "joins.md#clause-joins", summary: "a clause join goes between two clauses; to deny or focus one clause, put the join on its verb or noun (vul, zal)" },
   leftFence: { anchor: "joins.md#right-close", summary: "a join word closes its conjuncts; it never comes before them" },
-  slotlessHost: { anchor: "numbers-applied.md#measure-phrases", summary: "a measure amount or an equative's factor takes no /b/ after it; put that /b/ phrase elsewhere, such as after the verb" },
+  slotlessHost: { anchor: "numbers-applied.md#measure-phrases", summary: "a measure amount or an equative's factor takes no bl- word after it; a plain /b/ there is the recipient" },
   joinlessRun: { anchor: "joins.md#right-close", summary: "two nouns of one role side by side, or two verbs in one clause, close with a join word (`zuzozen zolazun zal`)" },
   emptyIsland: { anchor: "spans.md#scope-islands", summary: "a scope island needs words between its edges" },
   islandOneSlot: { anchor: "spans.md#scope-islands", summary: "a scope island holds at most one phrase: /z/, /d/, /b/, /v/, or a /ɡ/ stack" },

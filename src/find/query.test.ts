@@ -78,7 +78,7 @@ describe("example words", () => {
     assert.ok(matchesTerm(words[0]!, parseTerm("family=hook,ending=r")));
   });
   it("matches adjacent sequences only", () => {
-    const { words } = sentence("zolazun vezuyel thewem buzozen.");
+    const { words } = sentence("zolazun vezuyel thewem bluzozen.");
     assert.deepEqual(matchSequence(words, [parseTerm("role=th"), parseTerm("role=b")]), [2]);
     assert.deepEqual(matchSequence(words, [parseTerm("role=v"), parseTerm("role=b")]), []);
   });

@@ -44,8 +44,8 @@ describe("glossToAgebon", () => {
   it("rebuilds each spec example exactly", () => {
     for (const agebon of [
       "dududal on dugudal.",
-      "zudozol gorol buzozen gubulel.",
-      "glorol buzozen zudozol gorol bolazun.",
+      "zudozol gorol bluzozen gubulel.",
+      "glorol bluzozen zudozol gorol blolazun.",
       "zududal zugudal zol zerulal zal vowurel.",
       "zuzozen vuhuyel d[zuzozen vowurel].",
       "zuzozen vuhuyel d@[enuron olazun].",
@@ -54,7 +54,7 @@ describe("glossToAgebon", () => {
       "zolazun d^@[enuron olazun] vawebol.",
       "zahelan d~@[enuron olazun] vezuyol.",
       "zolazun d~^@<iPhone> vawebol.",
-      "zududal zugudal zol { hewom buzozen } vowurel.",
+      "zududal zugudal zol { hewom bluzozen } vowurel.",
       "zuzozen vowurel. zuzozer vuhuyel.",
       "zuzozen vowurel. zaxar vuhuyel.",
       "zuzozen vawebol daxer.",

@@ -57,7 +57,7 @@ type FlowSpec = {
   forms: {
     when?: Record<string, string>;
     placement?: Placement;
-    /** Join the parts with nothing, as one word (a feeling), not with a space (`thanathum behon`). */
+    /** Join the parts with nothing, as one word (a feeling), not with a space (`thanathum blehon`). */
     oneWord?: boolean;
     breakdown?: boolean;
     parts: Part[];

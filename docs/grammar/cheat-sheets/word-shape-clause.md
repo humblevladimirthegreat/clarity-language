@@ -113,11 +113,11 @@ Tell the two jobs apart by the word right before the `/b/` word.
 
 | Right before `/b/` | Job | Example | English | Stage |
 |--------------------|-----|---------|---------|-------|
-| a `/ɡ/`, `/h/`, or `/th/` word | [completes that word](../clause.md#extra-nouns) (the host) | `hewom buzozen` | *like Uzozen* | B |
+| a `/ɡ/`, `/h/`, or `/th/` word | [completes that word](../clause.md#extra-nouns) (the host) | `hewom bluzozen` | *like Uzozen* | B |
 | anything else | [who receives](../clause.md#extra-nouns) (at most one) | `zuzozen vezuyel bolazun.` | *Uzozen tells Olazun.* | B |
-| a host, with `/w/` first | [`/w/` stays before the host](../clause.md#extra-nouns) | `welazom hewom buzozen` | *very like Uzozen* | B |
-| a host's `/b/`, then `/ɡ/` | [describes the extra noun](../clause.md#complex-chaining) | `zagayul gorol buzozen guzemol` | *a guard who is the same person as sleepy Uzozen* | I |
-| two relations on one noun | [put one before with `gl-`](../clause.md#complex-chaining) | `glorol buzozen zagayul gorol bobayel` | *a guard who is both Uzozen and the police officer* | I |
+| a host, with `/w/` first | [`/w/` stays before the host](../clause.md#extra-nouns) | `welazom hewom bluzozen` | *very like Uzozen* | B |
+| a host's `/b/`, then `/ɡ/` | [describes the extra noun](../clause.md#complex-chaining) | `zagayul gorol bluzozen guzemol` | *a guard who is the same person as sleepy Uzozen* | I |
+| two relations on one noun | [put one before with `gl-`](../clause.md#complex-chaining) | `glorol bluzozen zagayul gorol blobayel` | *a guard who is both Uzozen and the police officer* | I |
 
 A [hook](../clause.md#complex-chaining) followed by `/b/` means *in* / *at* / *for*, not the person who receives.
 
@@ -135,11 +135,11 @@ Agebon has no word for *is*. The kind of claim comes from the pattern.
 | [In the middle of an event](../predication.md#in-progress) | noun + event root on `/ɡ/` | `zuzozen gowurel.` | *Uzozen is walking.* | B |
 | [Something exists](../predication.md#existence) | a lone new noun | `zudozol.` | *There is a dog.* | B |
 | | a new noun + `/ɡ/` | `zudozol gelazom.` | *There is a big dog.* | B |
-| [Same person](../predication.md#identity) | `gorol` + `/b/`, side by side | `zolazun gorol buzozen.` | *Olazun is Uzozen.* (one person, two names) | B |
+| [Same person](../predication.md#identity) | `gorol` + `/b/`, side by side | `zolazun gorol bluzozen.` | *Olazun is Uzozen.* (one person, two names) | B |
 | [Same one again](../predication.md#identity) | `gorol`, no `/b/` | `zolazun danal gorol varayel.` | *Olazun is writing the same book.* (the book already mentioned) | B |
-| [Basically the same](../predication.md#same-endings) | **-m** | `zolazun gorom buzozen` | *Olazun is basically Uzozen.* | I |
-| [Not the same](../predication.md#same-endings) | `gul` after the pair | `zolazun gorol buzozen gul` | *Olazun is not Uzozen.* | I |
-| [The one who is Uzozen](../predication.md#same-endings) | inside a noun phrase | `zeyol gorol buzozen` | *the person who is Uzozen* | I |
+| [Basically the same](../predication.md#same-endings) | **-m** | `zolazun gorom bluzozen` | *Olazun is basically Uzozen.* | I |
+| [Not the same](../predication.md#same-endings) | `gul` after the pair | `zolazun gorol bluzozen gul` | *Olazun is not Uzozen.* | I |
+| [The one who is Uzozen](../predication.md#same-endings) | inside a noun phrase | `zeyol gorol bluzozen` | *the person who is Uzozen* | I |
 
 With a name or a resumed noun, the pair is a [property](../predication.md#existence), not a new thing: `zudozor gelazom.` is *The dog is big.*
 
@@ -161,7 +161,7 @@ Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 |-------|-------|---------|---------|-------|
 | [`tha`](../predication.md#scope-occasion) | this episode | `zuzozen valamuthal.` | *Uzozen lied this once.* | I |
 | [`the`](../predication.md#scope-occupation) | a practiced role | `zolazun gaxuduyethel.` | *Olazun is a teacher.* | I |
-| [`tho`](../predication.md#scope-relative) | this pair (`/b/` follows) | `zuzozen golayothom bolazun.` | *Uzozen is a stranger to Olazun.* | I |
+| [`tho`](../predication.md#scope-relative) | this pair (`/b/` follows) | `zuzozen golayothom blolazun.` | *Uzozen is a stranger to Olazun.* | I |
 | [`thu`](../predication.md#scope-type) | a type across scenes | `zolazun ganumuthul.` | *Olazun is an anxious type.* | I |
 
 [Stacked scope](../predication.md#scope-stacks): pairs that start with **u** set the second vowel's reach aside.
@@ -179,8 +179,8 @@ Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 
 | This | vs | That |
 |------|----|------|
-| `zuzozen gudozol.` *Uzozen is a dog* ([kind](../predication.md#classification)) | | `zolazun gorol buzozen.` *Olazun is Uzozen* ([one person, two labels](../predication.md#identity)) |
-| `hewom buzozen` *like Uzozen* ([`/b/` completes a host](../clause.md#extra-nouns)) | | `zuzozen vezuyel bolazun.` *Uzozen tells Olazun* ([`/b/` receives](../clause.md#extra-nouns)) |
+| `zuzozen gudozol.` *Uzozen is a dog* ([kind](../predication.md#classification)) | | `zolazun gorol bluzozen.` *Olazun is Uzozen* ([one person, two labels](../predication.md#identity)) |
+| `hewom bluzozen` *like Uzozen* ([`/b/` completes a host](../clause.md#extra-nouns)) | | `zuzozen vezuyel bolazun.` *Uzozen tells Olazun* ([`/b/` receives](../clause.md#extra-nouns)) |
 | `zudozol gelazom.` *There is a big dog* ([new noun](../predication.md#existence)) | | `zudozor gelazom.` *The dog is big* ([resumed noun](../predication.md#existence)) |
 | `zuzozen vowurel.` *Uzozen walks* ([the verb](../clause.md#who-acts-and-the-action)) | | `zuzozen gowurel.` *Uzozen is walking* ([under way](../predication.md#in-progress)) |
 | `duzozen vawebol.` *Uzozen was seen* ([no subject named](../clause.md#no-subject)) | | `zumon` *someone did it* ([an unnamed someone](../pronouns.md#special-pronouns)) |

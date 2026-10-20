@@ -102,33 +102,9 @@ An ability does not say the act happens: *can walk* is not *walks*. A try and a 
 
 ### Extra nouns (`/b/`) {#extra-nouns}
 
-`/b/` marks an **extra noun**: a person or thing beyond the subject and direct object. It has two jobs. You tell them apart by the word **immediately before** the `/b/` word.
+`/b/` marks an **extra noun**: a person or thing beyond the subject and direct object. It has two jobs, and the letter after the `b` tells them apart.
 
-**Hosted: completing a relation.** Some words name a relation that needs a second person or thing (*like …*: like whom?). Put the relation word in `/ɡ/`, `/h/`, or `/th/`, then put the other noun in `/b/` right after it. The relation word is then the `/b/` word’s **host**. (cue: 🪞 *mirror*: the image is *like* the model.)
-
-The listener goes by position, not meaning: a `/b/` word right after any `/ɡ/`, `/h/`, or `/th/` word completes that word, even a word that names no relation. It is never read as the recipient described below, so do not put a recipient there.
-
-> `hewom buzozen`
->
-> [h-like | b-Uzozen]
->
-> "like Uzozen"
-
-A `/w/` word still goes before the host, so the host and its `/b/` stay side by side.
-
-> `welazom hewom buzozen`
->
-> [[w-very | h-like] | b-Uzozen]
->
-> "very like Uzozen"
-
-> `zudozol vezuvol hewom buzozen.`
->
-> z-dog | v-sleep | [h-like | b-Uzozen]
->
-> "A dog sleeps like Uzozen."
-
-**Unhosted: who receives.** A `/b/` word anywhere else is the person who receives what the verb passes on: who gets the thing given, or who hears what is told. What is given or said is still `/d/`. Each verb has at most one of these. Its usual place is right after the verb: **Subject – Direct Object – Verb – Extra noun**.
+**Who receives: plain `/b/`.** A plain `/b/` word is the person who receives what the verb passes on: who gets the thing given, or who hears what is told. What is given or said is still `/d/`. Each verb has at most one of these. Its usual place is right after the verb: **Subject – Direct Object – Verb – Extra noun**.
 
 > `zuzozen vezuyel bolazun.`
 >
@@ -136,7 +112,31 @@ A `/w/` word still goes before the host, so the host and its `/b/` stay side by 
 >
 > "Uzozen tells Olazun."
 
-**Compare with:** `hewom bolazun` is *like Olazun*, because a `/b/` right after `/h/` completes it. The usual place after the verb keeps the person who receives clear of any `/ɡ/`, `/h/`, or `/th/` word. If you move it elsewhere, make sure it does not come right after one: `bolazun hedurem`, or after a finished pair (`hewom buzozen bolazun`).
+**Completing a relation: `bl-`.** Some words name a relation that needs a second person or thing (*like …*: like whom?). Put the relation word in `/ɡ/`, `/h/`, or `/th/`, then put the other noun right after it, with **`l`** after the `b`. The relation word is then the `bl-` word's **host**. (cue: **l** ≈ lock: locked to the host right before it)
+
+> `hewom bluzozen`
+>
+> [h-like | bl-Uzozen]
+>
+> "like Uzozen"
+
+A `/w/` word still goes before the host, so the host and its `bl-` word stay side by side.
+
+> `welazom hewom bluzozen`
+>
+> [[w-very | h-like] | bl-Uzozen]
+>
+> "very like Uzozen"
+
+> `zudozol vezuvol hewom bluzozen.`
+>
+> z-dog | v-sleep | [h-like | bl-Uzozen]
+>
+> "A dog sleeps like Uzozen."
+
+A `bl-` word needs its host right before it. Anywhere else it is not a sentence. A plain `/b/` word is never a host's partner, so the person who receives may stand next to any word.
+
+**Compare with:** in `zuzozen hedurem bolazun varal.` (*Uzozen hastily pays Olazun*), `bolazun` sits right after an `/h/` word and is still the one paid. `hewom blolazun` is *like Olazun*.
 
 ### Role letters {#role-letters}
 
@@ -146,7 +146,7 @@ The role letters you have used so far:
 |--------|-----|-----|
 | `/z/` | subject (who acts) | **z** ≈ star (who the sentence is about) |
 | `/d/` | direct object (who is acted on) | **d** ≈ done to (sound of *acted on*) |
-| `/b/` | extra noun: recipient of the verb, or the piece after a relation word | **b** ≈ bolted on (the extra piece) |
+| `/b/` | extra noun: recipient of the verb; with `bl-`, the piece after a relation word | **b** ≈ bolted on (the extra piece) |
 | `/v/` | verb (the action) | **v** ≈ *verb* (the English name for the job starts with it) |
 | `/ɡ/` | adjective (a property of the noun) | **ɡ** ≈ grade (a rating of the noun) |
 | `/w/` | extra detail on the next `/ɡ/`, `/h/`, or `/th/` word | **w** ≈ with (stuck to that host) |
@@ -254,10 +254,10 @@ z-Ahelan | [w-very | h-haste] | v-pay | b-Uzozen
 *Ahelan pays Uzozen very hastily.*
 :::
 
-**3.** `zolazun deboral vumewol hewom buzozen.`
+**3.** `zolazun deboral vumewol hewom bluzozen.`
 
 ::: details Show answer
-z-Olazun | d-bell | v-find | [h-like | b-Uzozen]
+z-Olazun | d-bell | v-find | [h-like | bl-Uzozen]
 
 *Olazun finds a bell, like Uzozen.*
 :::
@@ -290,26 +290,26 @@ z-Uzozen | d-Olazun | v-find
 The finder takes `/z/` and the one found takes `/d/`; the other form has Olazun finding Uzozen.
 :::
 
-**2.** *Olazun pays Uzozen hastily.* `zolazun hedurem buzozen varal.` or `zolazun hedurem varal buzozen.`
+**2.** *Olazun pays Uzozen hastily.* `zolazun hedurem bluzozen varal.` or `zolazun hedurem buzozen varal.`
 
 ::: details Show answer
-`zolazun hedurem varal buzozen.`
+`zolazun hedurem buzozen varal.`
 
-z-Olazun | h-haste | v-pay | b-Uzozen
+z-Olazun | h-haste | b-Uzozen | v-pay
 
-A `/b/` word right after an `/h/` word completes it, so the person paid goes after the verb, not right after `hedurem`.
+The person paid takes plain `/b/`. `bluzozen` would lock Uzozen to `hedurem` as the partner of a relation, and *haste* has none.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *An angry Ahelan pays Olazun.* <!-- lint: error -->`zahelan gunemul bolazun varal.`
+**1.** *An angry Ahelan pays Olazun.* <!-- lint: error -->`zahelan gunemul varal blolazun.`
 
 ::: details Show answer
 `zahelan gunemul varal bolazun.`
 
 [z-Ahelan | g-angry] | v-pay | b-Olazun
 
-Right after the `/ɡ/` word, `bolazun` completes *angry* instead of naming who is paid.
+A `bl-` word completes the `/ɡ/`, `/h/`, or `/th/` word right before it. After the verb there is no host, so the one paid takes plain `/b/`.
 :::
 
 ## Intermediate {#intermediate}
@@ -328,7 +328,7 @@ English puts the adjective before the noun (*an angry dog*). Agebon can too: add
 >
 > "an angry dog"
 
-A `/b/` word still follows that adjective, and a `/w/` word still sits immediately before it (`welazom glunemul zudozol` = *a very angry dog*). This extra **`l`** goes only on adjectives (`/ɡ/`). A noun must come after it: with no noun to lean on, write a plain `/ɡ/` adjective after the noun instead (`zudozol gunemul`).
+A `bl-` word the adjective hosts still follows it, and a `/w/` word still sits immediately before it (`welazom glunemul zudozol` = *a very angry dog*). On `/ɡ/`, this extra **`l`** only moves the adjective; the word means the same either way. On `/b/`, [`bl-`](#extra-nouns) is a different job, not a different order. A noun must come after it: with no noun to lean on, write a plain `/ɡ/` adjective after the noun instead (`zudozol gunemul`).
 
 A [family name](word-endings.md#multipart-names) is a `/ɡ/` word too, so **`gl-`** puts it first, for a culture that names people family first. It leans on a [call](speech-moves.md#vocative) the same way.
 
@@ -346,33 +346,33 @@ A [family name](word-endings.md#multipart-names) is a `/ɡ/` word too, so **`gl-
 
 ### Complex chaining {#complex-chaining}
 
-A relation adjective and its hosted `/b/` (*the same as Uzozen*: **`gorol`** + `/b/`) work as one unit after a noun. A `/w/` word that grades the relation goes immediately before the `/ɡ/` word, as usual. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun. (cue: 🪙 *coin*: two faces of one thing.)
+A relation adjective and its `bl-` word (*the same as Uzozen*: **`gorol`** + `bl-`) work as one unit after a noun. A `/w/` word that grades the relation goes immediately before the `/ɡ/` word, as usual. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun. (cue: 🪙 *coin*: two faces of one thing.)
 
-> `zagayul welazom gorol buzozen.`
+> `zagayul welazom gorol bluzozen.`
 >
-> z-guard | [[w-very | g-SAME] | b-Uzozen]
+> z-guard | [[w-very | g-SAME] | bl-Uzozen]
 >
 > "a guard who is the very same person as Uzozen"
 
-> `zagayul gorol buzozen guzemol.`
+> `zagayul gorol bluzozen guzemol.`
 >
-> z-guard | [g-SAME | [b-Uzozen | g-sleepy]]
+> z-guard | [g-SAME | [bl-Uzozen | g-sleepy]]
 >
 > "a guard who is the same person as sleepy Uzozen"
 
 The same holds after an `/h/` or `/th/` host: an adjective after its `/b/` describes that extra noun.
 
-> `zuzozen vezuvol hewom budozol godamul.`
+> `zuzozen vezuvol hewom bludozol godamul.`
 >
-> z-Uzozen | v-sleep | [h-like | [b-dog | g-tired]]
+> z-Uzozen | v-sleep | [h-like | [bl-dog | g-tired]]
 >
 > "Uzozen sleeps like a tired dog."
 
 Because a second relation after the pair would attach to the extra noun, you cannot put two relation adjectives **after** the same first noun. To keep both on that noun in one clause, put one [before the noun](#left-bound-adjectives) with **`gl-`**; its `/b/` still follows it. Otherwise use [another sentence](dependents.md#which-noun).
 
-> `glorol buzozen zagayul gorol bobayel.`
+> `glorol bluzozen zagayul gorol blobayel.`
 >
-> [[gl-SAME | b-Uzozen] | z-guard] | [g-SAME | b-police]
+> [[gl-SAME | bl-Uzozen] | z-guard] | [g-SAME | bl-police]
 >
 > "a guard who is both Uzozen and the police officer"
 
@@ -499,9 +499,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **2.** *The police officer, who is the same person as sleepy Uzozen, stands up.*
 
 ::: details Show answer
-`zobayel gorol buzozen guzemol vawuvol.`
+`zobayel gorol bluzozen guzemol vawuvol.`
 
-[z-police | [g-SAME | [b-Uzozen | g-sleepy]]] | v-stand
+[z-police | [g-SAME | [bl-Uzozen | g-sleepy]]] | v-stand
 :::
 
 **3.** *Ahelan sees the train again.*
@@ -548,10 +548,10 @@ z-Olazun | [d-train | [w-very | g-blue]] | v-see
 *A very sleepy police officer sits.*
 :::
 
-**2.** `glorol buzozen zobayel gorol bagayul.`
+**2.** `glorol bluzozen zobayel gorol blagayul.`
 
 ::: details Show answer
-[[gl-SAME | b-Uzozen] | z-police] | [g-SAME | b-guard]
+[[gl-SAME | bl-Uzozen] | z-police] | [g-SAME | bl-guard]
 
 *A police officer who is both Uzozen and the guard.*
 :::
@@ -590,12 +590,12 @@ z-Ahelan | [d-ticket | g-SAME] | v-see
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzozen sees a police officer who is the same person as sleepy Ahelan.* `zuzozen dobayel gorol bahelan guzemol vawebol.` or `zuzozen dobayel guzemol gorol bahelan vawebol.`
+**1.** *Uzozen sees a police officer who is the same person as sleepy Ahelan.* `zuzozen dobayel gorol blahelan guzemol vawebol.` or `zuzozen dobayel guzemol gorol blahelan vawebol.`
 
 ::: details Show answer
-`zuzozen dobayel gorol bahelan guzemol vawebol.`
+`zuzozen dobayel gorol blahelan guzemol vawebol.`
 
-z-Uzozen | [d-police | [g-SAME | [b-Ahelan | g-sleepy]]] | v-see
+z-Uzozen | [d-police | [g-SAME | [bl-Ahelan | g-sleepy]]] | v-see
 
 After the **`gorol`** pair, a plain adjective describes the extra noun; before it, *sleepy* describes the police officer.
 :::

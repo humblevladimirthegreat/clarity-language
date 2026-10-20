@@ -68,6 +68,7 @@ function morphKey(word: MorphWord): string {
   return JSON.stringify({
     pos: word.pos,
     gl: word.gl,
+    bl: word.bl,
     ending: word.ending,
     plural: word.plural,
     family: word.family,

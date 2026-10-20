@@ -64,6 +64,7 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 |------|------------|-------|
 | [Role letter](../phonology.md#phonotactics) | first letter: the word's job in the clause | I |
 | Optional `l` after `/ɡ/` | [adjective before the noun](../clause.md#left-bound-adjectives) | I |
+| Optional `l` after `/b/` | [`bl-`](../clause.md#extra-nouns): completes the word right before it | B |
 | Root(s) | vowel-first; a [dictionary compound](../phonology.md#phonotactics) is one long root (`obahoha` *bedroom*); a root after a root is joined by mid-word `x` ([compounds](../compounds.md)) | I |
 | Mid-word `th` | the stance seam: [scope](../predication.md#label-scope), [sakes](../sakes.md), [viewpoint](../roles.md#viewpoint-laterals) | I |
 | **-l** / **-m** / **-n** / **-r** | the [word ending](../word-endings.md) | B |
@@ -105,4 +106,4 @@ Ten letters also start a [digit syllable](../numbers.md#counts); the table is [h
 | [One vowel per letter](../phonology.md#singability-constraints) | stacked vowels are separate syllables | A |
 | [No stress in spelling](../phonology.md#singability-constraints) | rhythm may stress a beat | A |
 | [Voiced preferred](../phonology.md#singability-constraints) | unvoiced is style only | A |
-| [Legal clusters](../phonology.md#singability-constraints) | `gl-`; role letter + `r` (number) or + `w` (tag); `-lx` `-mx` `-nx` `-rx`; `-ln`; `-rl` `-rm` `-rth`; clusters in a [place-name root](../phonology.md#place-name-roots) | A |
+| [Legal clusters](../phonology.md#singability-constraints) | `gl-`; `bl-`, with a [syllabic `l`](../phonology.md#syllabic-l) before `r` / `w`; role letter + `r` (number) or + `w` (tag); `-lx` `-mx` `-nx` `-rx`; `-ln`; `-rl` `-rm` `-rth`; clusters in a [place-name root](../phonology.md#place-name-roots) | A |

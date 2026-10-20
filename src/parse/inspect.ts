@@ -270,6 +270,7 @@ export function chipsFor(word: LexWord): string[] {
   if (word.pos) chips.push(`/${word.pos}/`);
   if (word.ending) chips.push(`-${word.ending} ${endingSense(word.ending, word)}`);
   if (word.gl) chips.push("gl-");
+  if (word.bl) chips.push("bl-");
   if (word.plural) chips.push("-x");
   if ((word.reading === "standIn" || word.reading === "standInNamed" || word.reading === "standInBack") && word.family.kind === "joinMarker") {
     chips.push(`stand-in ${word.family.series}`);
@@ -292,6 +293,7 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
     rows.push({ label: "ending", value: `-${word.ending} (${endingSense(word.ending, word)})` });
   }
   if (word.gl) rows.push({ label: "bound", value: "gl-" });
+  if (word.bl) rows.push({ label: "bound", value: "bl-" });
   if (word.plural) rows.push({ label: "plural", value: "-x associative" });
   rows.push({ label: "family", value: word.family.kind });
 

@@ -37,6 +37,13 @@ describe("toPhonemeWord", () => {
     assert.equal(toPhonemeWord("g").ipa, "ɡ");
   });
 
+  it("gives bl- its own syllabic beat before r and w (blral, blwar)", () => {
+    assert.equal(toPhonemeWord("blral").ipa, "bl̩.ɹäl");
+    assert.equal(toPhonemeWord("blwar").ipa, "bl̩.wäɹ");
+    assert.equal(toPhonemeWord("bluzozen").ipa, "blʉ.zo̞.ze̞n");
+    assert.equal(toPhonemeWord("bral").ipa, "bɹäl");
+  });
+
   it("splits stacked vowels as separate syllables (yuon)", () => {
     const word = toPhonemeWord("yuon");
     assert.deepEqual(

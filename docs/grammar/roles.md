@@ -108,10 +108,10 @@ You can name that party with no prior telling: `zoxezuyel` is someone told somet
 
 Some stems name a **relation** (who is bound to whom), not an action. The other person of that relation is the `/b/` word right after the relation word. The same **`o`** names that person from the relation stem (*the other party of the bond*).
 
-> `zuzozen gawom bolazun.`
+> `zuzozen gawom blolazun.`
 > `zoxawor varuvel.`
 >
-> z-Uzozen | [g-bond | b-Olazun]
+> z-Uzozen | [g-bond | bl-Olazun]
 > z-←recipient-x-bond | v-run
 >
 > "Uzozen is bound to Olazun. The one Uzozen is bound to runs."
@@ -143,7 +143,7 @@ A scene pointer names the place or time of the latest event. If that clause has 
 >
 > "Uzozen sleeps in a house. Olazun sees the house."
 
-With no place, a *during* time is the scene (`herem benulul`, *during the storm*). With neither, `dexar` is the event’s own place or time, as `dexezuvor` would be. A place wins over a time, and with two places the first one is the scene. *Before*, *after*, *until*, *by*, and an [as-of](relations.md#as-of) pair name a time the event is measured from, not its scene.
+With no place, a *during* time is the scene (`herem blenulul`, *during the storm*). With neither, `dexar` is the event’s own place or time, as `dexezuvor` would be. A place wins over a time, and with two places the first one is the scene. *Before*, *after*, *until*, *by*, and an [as-of](relations.md#as-of) pair name a time the event is measured from, not its scene.
 
 **Compare with:** for the doer, the undergoer, or the extra party, a pointer looks back to whoever last had that part, skipping events without one ([role pointers](pronouns.md#role-pointers)). For the scene, it takes the latest event, whatever it has. Scene **`u`** (`zexur` *wherever it happened*) says nobody has named the place, where `zexar` is a place the conversation already gave.
 
@@ -605,25 +605,25 @@ English *up* / *down* usually follows the pull of gravity, not anyone’s facing
 
 English *left of the tree, from Uzozen’s view* needs both a facing person and a landmark. Put the facing person after **`th`**; put the tree, door, or wall in `/b/`. The `/b/` word is the landmark, not whose left it is.
 
-> `zanal gowuhethuzozen bedalel.`
+> `zanal gowuhethuzozen bledalel.`
 >
-> z-book | [g-west-th-Uzozen | b-tree]
+> z-book | [g-west-th-Uzozen | bl-tree]
 >
 > "The book is left of the tree, from Uzozen’s view."
 
-A bare compass word plus `/b/` is the region on that side of the landmark (`gowuhel bedalel` *west of the tree*).
+A bare compass word plus `/b/` is the region on that side of the landmark (`gowuhel bledalel` *west of the tree*).
 
 Gravity works the same way: bare **`aduhe`** + `/b/` is *under* the landmark, and bare **`ayuhe`** + `/b/` is *above* / *over* it.
 
-> `zudozol vezuvol haduhel bedalel.`
+> `zudozol vezuvol haduhel bledalel.`
 >
-> z-dog | v-sleep | [h-down | b-tree]
+> z-dog | v-sleep | [h-down | bl-tree]
 >
 > "The dog sleeps under the tree."
 
-> `zubezol vuhohol gayuhel budozol.`
+> `zubezol vuhohol gayuhel bludozol.`
 >
-> z-bird | v-sit | [g-up | b-dog]
+> z-bird | v-sit | [g-up | bl-dog]
 >
 > "A bird sits above the dog."
 
@@ -634,22 +634,22 @@ Gravity works the same way: bare **`aduhe`** + `/b/` is *under* the landmark, an
 |--------|-----|---------|
 | Bare DIR | compass / gravity | `gowuhel` *west*; `gayuhel` *up* |
 | **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gowuhethawan` *listener-left* |
-| DIR + **`th`** + **`o`** + `/b/` | that point on the **landmark’s** own rose | `gazuhethol bahehal` *behind the house* |
-| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gowuhethuzozen bedalel` *left of the tree, from Uzozen’s view* |
+| DIR + **`th`** + **`o`** + `/b/` | that point on the **landmark’s** own rose | `gazuhethol blahehal` *behind the house* |
+| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gowuhethuzozen bledalel` *left of the tree, from Uzozen’s view* |
 
 ### The landmark's own front (DIR + `th` + `o`) {#landmark-facing}
 
-English *behind the house* means the house's own back, not a compass heading and not the speaker's back. Write the arrow root, then **`th`**, then **`o`** in place of a facing person, then the ending. Put the landmark in hosted `/b/` right after it. **`o`** is the same vowel that names the extra `/b/` party in [role compounds](#role-compounds): here, the `/b/` landmark is the one whose facing counts.
+English *behind the house* means the house's own back, not a compass heading and not the speaker's back. Write the arrow root, then **`th`**, then **`o`** in place of a facing person, then the ending. Put the landmark in a `bl-` word right after it. **`o`** is the same vowel that names the extra `/b/` party in [role compounds](#role-compounds): here, the `/b/` landmark is the one whose facing counts.
 
-> `zudozol vuhohol gazuhethol bahehal.`
+> `zudozol vuhohol gazuhethol blahehal.`
 >
-> z-dog | v-sit | [g-south-th-landmark | b-house]
+> z-dog | v-sit | [g-south-th-landmark | bl-house]
 >
 > "The dog sits behind the house."
 
-> `zuzozen vowurel honuhethol bohol.`
+> `zuzozen vowurel honuhethol blohol.`
 >
-> z-Uzozen | v-walk | [h-north-th-landmark | b-door]
+> z-Uzozen | v-walk | [h-north-th-landmark | bl-door]
 >
 > "Uzozen walks in front of the door."
 
@@ -660,11 +660,11 @@ The landmark's front is where its design or current use faces (a house's front d
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | English |
 |--------|---------|
-| `gazuhethol bahehal` | *behind the house* (its own back) |
-| `gonuhethol bahehal` | *in front of the house* |
-| `gowuhethol bahehal` | *on the house's left* |
-| `gowuhethuzozen bahehal` | *left of the house, from Uzozen's view* |
-| `gowuhel bahehal` | *west of the house* |
+| `gazuhethol blahehal` | *behind the house* (its own back) |
+| `gonuhethol blahehal` | *in front of the house* |
+| `gowuhethol blahehal` | *on the house's left* |
+| `gowuhethuzozen blahehal` | *left of the house, from Uzozen's view* |
+| `gowuhel blahehal` | *west of the house* |
 
 ### Endings and resume
 
@@ -765,9 +765,9 @@ y-command | v-walk | z-Ahelan | h-west-th-Uzozen
 **6.** *The boat sits west of the island.*
 
 ::: details Show answer
-`zebaval vuhohol gowuhel belahol.`
+`zebaval vuhohol gowuhel blelahol.`
 
-z-boat | v-sit | [g-west | b-island]
+z-boat | v-sit | [g-west | bl-island]
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
@@ -780,10 +780,10 @@ y-command | v-go | z-Olazun | h-west
 *Olazun, go west.*
 :::
 
-**2.** `zuzozen vazuvel haduhel bebaval.`
+**2.** `zuzozen vazuvel haduhel blebaval.`
 
 ::: details Show answer
-z-Uzozen | v-swim | [h-down | b-boat]
+z-Uzozen | v-swim | [h-down | bl-boat]
 
 *Uzozen swims under the boat.*
 :::
@@ -822,12 +822,12 @@ z-Ahelan | v-run . z-Uzozen | v-sit | h-west-th-←agent.same
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzozen sits on the island's left.* `zuzozen vuhohol howuhethol belahol.` or `zuzozen vuhohol howuhel belahol.`
+**1.** *Uzozen sits on the island's left.* `zuzozen vuhohol howuhethol blelahol.` or `zuzozen vuhohol howuhel blelahol.`
 
 ::: details Show answer
-`zuzozen vuhohol howuhethol belahol.`
+`zuzozen vuhohol howuhethol blelahol.`
 
-z-Uzozen | v-sit | [h-west-th-landmark | b-island]
+z-Uzozen | v-sit | [h-west-th-landmark | bl-island]
 
 **`tho`** turns the arrow to the island's own facing; bare `howuhel` is *west of the island*.
 :::

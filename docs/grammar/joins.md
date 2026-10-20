@@ -266,7 +266,7 @@ Repeating the same join word keeps the list flat. Switching to a **different** j
 
 So a group always sits on the left. The set joins **a** / **o** / **u** ignore order, so you can usually move the group to the front. When the group has to come last, end the sentence and start the next one with the join: the join then takes the **whole** next sentence.
 
-After a stand-in such as **`dorl`** or **`barl`**, every clause joined in the same sentence belongs to the dependent clause ([stand-ins](dependents.md#stand-in)). A clause meant for the main sentence also starts a new sentence.
+After a stand-in such as **`dorl`** or **`blarl`**, every clause joined in the same sentence belongs to the dependent clause ([stand-ins](dependents.md#stand-in)). A clause meant for the main sentence also starts a new sentence.
 
 > `zuzozen vowurel. xan zolazun varuvel xol zahelan vezuvol.`
 >
@@ -477,17 +477,17 @@ A hook belongs to one item the same way. Put the hook and its `/b/` right after 
 
 Only the item just before the join word takes a hook this way. A hook anywhere else in the clause is an extra noun of the clause.
 
-> `zudozol zagozol zam gogunum buzozen.`
+> `zudozol zagozol zam gogunum bluzozen.`
 >
-> [z-dog | z-cat | z-and.open | [g-ownership | b-Uzozen]]
+> [z-dog | z-cat | z-and.open | [g-ownership | bl-Uzozen]]
 >
 > "Uzozen's dog and cat." (and possibly more)
 
 A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaining](clause.md#complex-chaining).
 
-> `zudozol zagozol zam gogunum buzozen guzemol.`
+> `zudozol zagozol zam gogunum bluzozen guzemol.`
 >
-> [z-dog | z-cat | z-and.open | [g-ownership | [b-Uzozen | g-sleepy]]]
+> [z-dog | z-cat | z-and.open | [g-ownership | [bl-Uzozen | g-sleepy]]]
 >
 > "Sleepy Uzozen's dog and cat." (and possibly more)
 
@@ -615,13 +615,13 @@ Uzozen is big and Olazun is small; Uzozen walks and Olazun runs. Without **`wuba
 
 Inside such a list, a plain `/ɡ/` after an item's hosted `/b/` is the next item, not a description of that `/b/`. The closing join decides it: with `gal` ending the row, every `/ɡ/` in it belongs to the list and so to the subjects.
 
-> `zuzozen zolazun zal gewom bagayul guzemol wubam gal.`
+> `zuzozen zolazun zal gewom blagayul guzemol wubam gal.`
 >
-> [z-Uzozen | z-Olazun | z-and] | [[g-like | b-guard] | g-sleepy | w-respectively | g-and]
+> [z-Uzozen | z-Olazun | z-and] | [[g-like | bl-guard] | g-sleepy | w-respectively | g-and]
 >
 > "Uzozen is like the guard, and Olazun is sleepy." (respectively)
 
-With no closing `gal`, the row is not a list. The `/ɡ/` after a noun join is SHARED, and the plain `/ɡ/` after its `/b/` describes that `/b/` ([complex chaining](clause.md#complex-chaining)): `zuzozen zolazun zal gewom bagayul guzemol.` is *both are like the sleepy guard*.
+With no closing `gal`, the row is not a list. The `/ɡ/` after a noun join is SHARED, and the plain `/ɡ/` after its `/b/` describes that `/b/` ([complex chaining](clause.md#complex-chaining)): `zuzozen zolazun zal gewom blagayul guzemol.` is *both are like the sleepy guard*.
 
 ### Full single-item and standalone inventories
 
@@ -825,7 +825,7 @@ Open **`zuam`** makes the same claim but leaves the list of exceptions open, the
 >
 > "A cat walks. The cat is sleepy."
 
-In the sentence after a [`barl`](dependents.md#poles) on a general claim, a resume of the kind means **the same member**, one at a time: `zual gagozol vezuvol thohom barl zagozor guzemol.` is *every cat sleeps if it is sleepy*, each cat with its own sleepiness.
+In the sentence after a [`blarl`](dependents.md#poles) on a general claim, a resume of the kind means **the same member**, one at a time: `zual gagozol vezuvol thohom blarl zagozor guzemol.` is *every cat sleeps if it is sleepy*, each cat with its own sleepiness.
 
 With **`zul`** the two readings say the same thing: `zul gudozol gubulol.` is both *no dog is black* and *there is no black dog*.
 
@@ -1136,7 +1136,7 @@ These limits apply to every join.
 
 | Limit | Pattern |
 |-------|---------|
-| One slot per chain | one subject, object, unhosted `/b/` recipient, `/ɡ/` stack, or `/w/` / `/h/` / `/th/` unit; hosted `/b/` stays on its `/ɡ/`, `/h/`, or `/th/` |
+| One slot per chain | one subject, object, plain `/b/` recipient, `/ɡ/` stack, or `/w/` / `/h/` / `/th/` unit; hosted `/b/` stays on its `/ɡ/`, `/h/`, or `/th/` |
 | Matching role letter | every item head and the join share the first letter |
 | One right-close per flat list | nest as [fence nesting](#fence-nesting) |
 | Shared modifiers | only immediately after each join |
@@ -1147,7 +1147,7 @@ These limits apply to every join.
 
 **Compare with:** prefix-less **`al`** / **`am`** / … are [hooks](hooks.md). Under `/h/` `/w/`, the unit is a [restrictor](restrictors.md), not sibling *and*.
 
-*Because* / *if* use `/th/` plus `/b/` [**`barl`**](dependents.md#poles). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [VP and clause forms](join-across-roles.md#vp-clause-forms). Each item of a clause join is a full clause.
+*Because* / *if* use `/th/` plus `/b/` [**`blarl`**](dependents.md#poles). An `/h/` or `/th/` word between the items of a noun, adjective, or `/b/` list does not end the list. For how far an `/h/` reaches in a verb list, see [VP and clause forms](join-across-roles.md#vp-clause-forms). Each item of a clause join is a full clause.
 
 ### Practice {#advanced-practice}
 

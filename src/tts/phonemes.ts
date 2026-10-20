@@ -78,6 +78,11 @@ function phonesOf(raw: string): Phone[] {
 export function syllabify(phones: Phone[]): Syllable[] {
   const syllables: Syllable[] = [];
   let i = 0;
+  // A hosted number or tag (`blral`, `blwar`): `l` before `r` / `w` is a beat of its own (phonology.md#syllabic-l).
+  if (phones[0]?.letter === "b" && phones[1]?.letter === "l" && (phones[2]?.letter === "r" || phones[2]?.letter === "w")) {
+    syllables.push(syllableFrom(phones.slice(0, 2)));
+    i = 2;
+  }
   while (i < phones.length) {
     const start = i;
     while (i < phones.length && !phones[i]!.vowel) i += 1;
@@ -101,7 +106,11 @@ export function syllabify(phones: Phone[]): Syllable[] {
 }
 
 function syllableFrom(phones: Phone[], stress: ReadonlySet<number> = new Set()): Syllable {
-  const ipa = phones.map((p) => (p.vowel && stress.has(p.index) ? `ˈ${p.ipa}` : p.ipa)).join("");
+  // With no vowel, a final `l` is the nucleus: syllabic [l̩].
+  const syllabic = !phones.some((p) => p.vowel) && phones.at(-1)?.letter === "l" && phones.length > 1;
+  const ipa = phones
+    .map((p, i) => (p.vowel && stress.has(p.index) ? `ˈ${p.ipa}` : syllabic && i === phones.length - 1 ? `${p.ipa}\u0329` : p.ipa))
+    .join("");
   return { phones, ipa };
 }
 

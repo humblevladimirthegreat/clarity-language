@@ -31,7 +31,9 @@ import {
   Interjection,
   Vocative,
   HostedB,
+  HostedBJoined,
   HostedOdo,
+  LateOdo,
   IslandClose,
   IslandOpen,
   isLexWordPayload,
@@ -213,6 +215,33 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
     enforceWord(payload, tables);
     enforceStackedHookR(payload, tokens, i);
   });
+  enforceLocks(markContext(tokens));
+}
+
+/**
+ * A `bl-` word completes the `/ɡ/`, `/h/` or `/th/` word right before it, so it needs that host; a plain `/b/` there
+ * is the recipient. In a hosted list every `/b/` item takes `bl-`, and the join word does not (clause.md#extra-nouns).
+ */
+function enforceLocks(tokens: IToken[]): void {
+  let list = false;
+  for (const token of tokens) {
+    const word = tokenWord(token);
+    if (!word) continue;
+    if (isAny(token, [HostedB, HostedOdo, LateOdo])) {
+      list = token.tokenType === HostedBJoined;
+      continue;
+    }
+    if (list && word.pos === "b" && word.family.kind !== "hook") {
+      if (word.family.kind === "joinMarker" && !word.bl) {
+        list = false;
+        continue;
+      }
+      if (!word.bl) throw new ConstructionError("blListItem", word.raw);
+      continue;
+    }
+    if (list && !isAny(token, [W, GPlain])) list = false;
+    if (word.bl) throw new ConstructionError("blNoHost", word.raw);
+  }
 }
 
 function tokenWord(token: IToken | undefined): LexWord | undefined {
@@ -467,7 +496,7 @@ function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit, tables:
     }
     return;
   }
-  // A simile's model may be an event: `humum barl` + the next sentence (relations.md#similative).
+  // A simile's model may be an event: `humum blarl` + the next sentence (relations.md#similative).
   if (!hosted.grounds && host.overlay?.kind === "similative" && bound.pos === "b" && s === "a") return;
   if (hosted.grounds || !isPole(host)) throw new ConstructionError("standInHost", `${host.raw} ${bound.raw}`);
   const undoHost = host.overlay!.gloss === "so-that" || host.overlay!.gloss === "if";

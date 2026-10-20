@@ -89,6 +89,7 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 |--------|-----|---------|
 | Role letter | first letter | role in the clause (subject, verb, …) |
 | Optional `l` after `/ɡ/` | adjective before the noun | `gl-` looks ahead to the next noun |
+| Optional `l` after `/b/` | [hosted extra noun](clause.md#extra-nouns) | `bl-` completes the word right before it |
 | Root(s) **V(CV)+** | content | start with a vowel; each later consonant starts a new syllable |
 | Mid-word `x` | productive compound seam | joins two roots inside one word |
 | Mid-word `th` | stance seam | joins a sake to its stance vowel ([sakes](sakes.md)), any other root to a scope vowel ([label scope](predication.md#label-scope)), or a direction to whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals)) |
@@ -118,6 +119,17 @@ When English says *how many* or *which place*, Agebon uses a [number word](numbe
 `grarel` is `g` + `ra` + digit `re` + `-l`. In a long number, each written comma is spoken as a [group separator](numbers.md#group-separator), **`th`** plus the marker’s vowel.
 
 **Compare with:** ordinary endings on content words use [word ending](word-endings.md) senses. Number words reuse those same four letters with [number-specific endings](word-endings.md#number-word-exception).
+
+### Syllabic `l` {#syllabic-l}
+
+A [hosted extra noun](clause.md#extra-nouns) writes `l` after its `b`. When that word is a number (`r` next), say the `l` as a beat of its own, like the end of English *bottle*. The `r` then starts the next beat as usual. A [tag](pronouns.md#tag-pronouns) does the same before its `w`.
+
+| Agebon | IPA |
+|--------|-----|
+| `bral` | /bɹäl/ |
+| `blral` | /bl̩.ɹäl/ |
+
+This is the only beat with no vowel letter. Like a vowel, you can hold it. Before a vowel, `bl` is one ordinary start of a beat (`bluzozen` /blʉ.zo̞.ze̞n/).
 
 ### Letter names {#letter-names}
 <a id="letter-names-and-digits"></a>
@@ -197,12 +209,12 @@ These choices about word shape make Agebon easier to sing:
 | One vowel per letter | Sliding from one vowel to another mid-note forces the mouth to change | Stacked vowels = separate syllables |
 | Few consonant clusters | Clusters are harder to say quickly | Ordinary shape is consonant-then-vowel at the start of a syllable; limited clusters below |
 | Voiced preferred | Voiceless stops cut the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
-| No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge** or a lexical join (**-l** / **-m**) before a number marker `r` |
+| No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge** or a lexical join (**-l** / **-m**) before a number marker `r`. The [syllabic `l`](#syllabic-l) of `blr` / `blw` is a held beat, not a final consonant |
 | No lexical stress | Music already places emphasis | Stress always falls on the same beat ([rhythm and stress](#rhythm-and-stress)); spelling does not mark it, and music may move it |
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-ln` / `-r` / `-rl` / `-rm` (optional `-x`); stand-ins end in `-rl` / `-rm` / `-rth` |
 
-Legal clusters: left-hanging `gl-`; number-word role letter + `r`; [tag pronoun](pronouns.md#tag-pronouns) role letter + `w` (`zw`, `dw`, `bw`); lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`; consonant runs inside a [place-name root](#place-name-roots). The lexical join before `r` is the only syllable-final consonant inside an ordinary word.
+Legal clusters: left-hanging `gl-`; hosted `bl-`, with a [syllabic `l`](#syllabic-l) before `r` / `w`; number-word role letter + `r`; [tag pronoun](pronouns.md#tag-pronouns) role letter + `w` (`zw`, `dw`, `bw`); lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`; consonant runs inside a [place-name root](#place-name-roots). The lexical join before `r` is the only syllable-final consonant inside an ordinary word.
 
 Try singing a short Agebon line quickly at a high but comfortable pitch:
 

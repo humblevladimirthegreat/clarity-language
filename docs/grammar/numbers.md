@@ -321,7 +321,7 @@ Beginner already used **`gral`** for *more than one*. Any marker may drop every 
 
 **Compare with:** noun [**-x**](plurality.md) names a **group of things**. Digitless **`ra`** names a **count or amount above one** without saying how many. Both may sit on the same noun (`zagozolx gral`).
 
-On a `/b/` offset right after a channel, digitless **`bral`** is *later* and **`brul`** is *earlier*, with no amount claimed ([forecasts](knowing.md#forecast)).
+On a [hosted](clause.md#extra-nouns) offset right after a channel, digitless **`blral`** is *later* and **`blrul`** is *earlier*, with no amount claimed ([forecasts](knowing.md#forecast)). A hosted number keeps its `bl` in writing too (`bl+` for `blral`), and its `l` is a [beat of its own](phonology.md#syllabic-l).
 
 <a id="a-few"></a>
 
@@ -907,7 +907,7 @@ Same under `/z/` `/d/` `/b/` (`zrabal` = +∞ as subject; `drebul` = start-place
 
 <a id="just-short"></a>
 
-**Just short (`grubul`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅**), no mantissa. It mirrors **`grabul`** (a hair over zero): **`grubul`** is a hair **under**: the smallest shortfall. Against a target it reads *almost*; as a [signed time offset](knowing.md#dated-channel) it reads *just before* (`brubul` *just now*), and **`brabul`** reads *just after* (*any moment now*).
+**Just short (`grubul`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅**), no mantissa. It mirrors **`grabul`** (a hair over zero): **`grubul`** is a hair **under**: the smallest shortfall. Against a target it reads *almost*; as a [signed time offset](knowing.md#dated-channel) it reads *just before* (`blrubul` *just now*), and **`blrabul`** reads *just after* (*any moment now*).
 
 **Compare with:** the same form on each role letter: **`grubul`** the amount, **`xrubul`** *just before that:*, **`thrubul`** *virtually*, **`vrubul`** *nudge down*, **`hrubul`** *almost*, **`yrubul`** *so close!*. Pretend *as if* is a different thing: the mood **`eyu`** ([Notional](knowing.md#notional), e.g. `theyum`).
 

@@ -80,9 +80,9 @@ z-Ahelan | d-guard | v-see . z-←guard | v-run
 **3.** *Uzozen sings like a duck.*
 
 ::: details Show answer
-`zuzozen hewom budozal vezuyol.`
+`zuzozen hewom bludozal vezuyol.`
 
-z-Uzozen | [h-like | b-duck] | v-sing
+z-Uzozen | [h-like | bl-duck] | v-sing
 
 **Rule:** [Like (resembles)](relations.md#like-resembles)
 :::
@@ -100,9 +100,9 @@ z-Ahelan | [d-tomato-x | g-three] | v-smell
 **5.** *Ahelan sings if there is wind.*
 
 ::: details Show answer
-`zahelan vezuyol thohom bewulel.`
+`zahelan vezuyol thohom blewulel.`
 
-z-Ahelan | v-sing | [th-if | b-wind]
+z-Ahelan | v-sing | [th-if | bl-wind]
 
 **Rule:** [If](causation.md#if)
 :::
@@ -372,11 +372,11 @@ z-Ahelan | [g-police | g-not]
 **3.** *Ahelan sees a hammer made of wood.*
 
 ::: details Show answer
-`zahelan dehowol gulem bulel vawebol.`
+`zahelan dehowol gulem blulel vawebol.`
 
-z-Ahelan | [d-hammer | [g-material | b-wood]] | v-see
+z-Ahelan | [d-hammer | [g-material | bl-wood]] | v-see
 
-**Also correct:** `zahelan vawebol dehowol gulem bulel.`
+**Also correct:** `zahelan vawebol dehowol gulem blulel.`
 
 **Rule:** [Of relations](relations.md#of-relations)
 :::
@@ -394,9 +394,9 @@ z-Ahelan | [d-hammer | [g-material | b-wood]] | v-see
 **5.** *Olazun cries because of the wind.*
 
 ::: details Show answer
-`zolazun vagamul thahum bewulel.`
+`zolazun vagamul thahum blewulel.`
 
-z-Olazun | v-cry | [th-because | b-wind]
+z-Olazun | v-cry | [th-because | bl-wind]
 
 **Rule:** [Because, iff, and only because](causation.md#only-because)
 :::
@@ -509,12 +509,12 @@ z-Uzozen | NAME[d-sandwich | instead | d-salad] | v-see
 **Rule:** [Titled phrases](word-endings.md#titled-phrases)
 :::
 
-**2.** *Olazun walks like an angry guard.* `zolazun hewom bagayul gunemul vowurel.` or `zolazun gunemul hewom bagayul vowurel.`
+**2.** *Olazun walks like an angry guard.* `zolazun hewom blagayul gunemul vowurel.` or `zolazun gunemul hewom blagayul vowurel.`
 
 ::: details Show answer
-`zolazun hewom bagayul gunemul vowurel.`
+`zolazun hewom blagayul gunemul vowurel.`
 
-z-Olazun | [h-like | [b-guard | g-angry]] | v-walk
+z-Olazun | [h-like | [bl-guard | g-angry]] | v-walk
 
 After the `/b/` of a host, a plain adjective describes that extra noun; right after `zolazun`, *angry* describes Olazun.
 
@@ -569,12 +569,12 @@ z-Olazun | v-climb | [through | b-fog]
 **Rule:** [Extra noun: stacked vowels](hooks.md#extra-noun-intermediate)
 :::
 
-**7.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyel thobather baxer.` or `zahelan vuguyel thobathor baxer.`
+**7.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyel thobather blaxer.` or `zahelan vuguyel thobathor blaxer.`
 
 ::: details Show answer
-`zahelan vuguyel thobather baxer.`
+`zahelan vuguyel thobather blaxer.`
 
-z-Ahelan | v-cook | [th-physical-ought-trial | b-←agent.self]
+z-Ahelan | v-cook | [th-physical-ought-trial | bl-←agent.self]
 
 **`the`** is the *ought*, and **-r** makes it a move worth trying; `thobathor` would be a motive, not advice: Ahelan cooks, serving their health right away.
 
@@ -668,9 +668,9 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **2.** *As of 3 May, Uzozen is sitting in a school.*
 
 ::: details Show answer
-`zuzozen henam b_#3,5 vuhohol al buzahal.`
+`zuzozen henam bl_#3,5 vuhohol al buzahal.`
 
-z-Uzozen | [h-as-of.ledger | b-_3,5] | v-sit | [in | b-school]
+z-Uzozen | [h-as-of.ledger | bl-_3,5] | v-sit | [in | b-school]
 
 **Rule:** [As-of (whose now)](relations.md#as-of)
 :::
@@ -731,12 +731,12 @@ z-Olazun | NAME[d-tomato | d-watermelon | d-and] | v-cook
 **Rule:** [Named phrase](joins.md#named-list)
 :::
 
-**2.** *Olazun is sleepier than Ahelan said.* `zolazun thebam bahelan zel guzemol.` or `zolazun zel guzemol thebam bahelan.`
+**2.** *Olazun is sleepier than Ahelan said.* `zolazun thebam blahelan zel guzemol.` or `zolazun zel guzemol thebam blahelan.`
 
 ::: details Show answer
-`zolazun thebam bahelan zel guzemol.`
+`zolazun thebam blahelan zel guzemol.`
 
-[z-Olazun | [th-REPORTED | b-Ahelan] | z-rank/more | g-sleepy]
+[z-Olazun | [th-REPORTED | bl-Ahelan] | z-rank/more | g-sleepy]
 
 Before the rank join, REPORTED is the bar: what Ahelan said sets the level. After the fence it is a stance on the whole superlative: *Olazun is the sleepiest, Ahelan says*.
 
@@ -772,9 +772,9 @@ On `/w/` right before the adjective, MEMORY covers only *sleepy*; **`thevum`** o
 **1.** *I saw Ahelan sleep two hours ago.* <!-- lint: error -->`zahelan thevum bagorum gradul vezuvol.`
 
 ::: details Show answer
-`zahelan thevum bagorum grudul vezuvol.`
+`zahelan thevum blagorum grudul vezuvol.`
 
-z-Ahelan | [th-MEMORY | [b-hour | g-minus-two]] | v-sleep
+z-Ahelan | [th-MEMORY | [bl-hour | g-minus-two]] | v-sleep
 
 The offset is signed and counts from now, so *ago* needs **`ru`** (minus); MEMORY with a later offset is not a sentence.
 

@@ -49,7 +49,7 @@ You know how far your own plan is worked out, so a listener takes **`thagem`** f
 
 **For *will* about the world (*it will rain*), use:** a [forecast](knowing.md#forecast). PLAN says what you mean to do, and your own intention needs no evidence. A forecast always says what it rests on.
 
-To say how much later you mean to act (*in three hours*), put a forward time [offset](knowing.md#dated-channel) in the `/b/` right after PLAN. That `/b/` is only ever a time: PLAN takes no `/b/` for whose plan it is.
+To say how much later you mean to act (*in three hours*), put a forward time [offset](knowing.md#dated-channel) in a `bl-` word right after PLAN. That `bl-` word is only ever a time: PLAN takes no `bl-` word for whose plan it is.
 
 ### Practice {#beginner-practice}
 
@@ -524,32 +524,32 @@ After a holder, WANT and DECISION are the holder's, just as PLAN is. After **`ue
 >
 > "Olazun sleeps, against Uzozen's wishes, as far as I can tell."
 
-**Compare with:** [requirement](sakes.md#requirement) `zuzozen vowurel thonam bolazun.` (*Olazun makes Uzozen walk*) puts a demand on Uzozen, who now owes the walk. **`zuzozen thogom vowurel.`** (*I've decided that Uzozen walks*) says only that you chose how things go, the way a coach decides who plays, with nothing asked of Uzozen.
+**Compare with:** [requirement](sakes.md#requirement) `zuzozen vowurel thonam blolazun.` (*Olazun makes Uzozen walk*) puts a demand on Uzozen, who now owes the walk. **`zuzozen thogom vowurel.`** (*I've decided that Uzozen walks*) says only that you chose how things go, the way a coach decides who plays, with nothing asked of Uzozen.
 
 ### Plan or forecast
 <a id="predict-evidentiality"></a>
 
-English *will* can state a plan or a forecast. Your own plan uses [PLAN](#plan-predict) and needs no evidence. A forecast about the world, or about what someone else will do, uses a [channel](knowing.md#evidentiality), a `/th/` word that says how you know, plus the later offset **`bral`** ([forecasts](knowing.md#forecast)). So a forecast always says what it rests on.
+English *will* can state a plan or a forecast. Your own plan uses [PLAN](#plan-predict) and needs no evidence. A forecast about the world, or about what someone else will do, uses a [channel](knowing.md#evidentiality), a `/th/` word that says how you know, plus the later offset **`blral`** ([forecasts](knowing.md#forecast)). So a forecast always says what it rests on.
 
-> `thubem bral verulal.`
+> `thubem blral verulal.`
 >
-> [th-PATTERN | b-later] | v-rain
+> [th-PATTERN | bl-later] | v-rain
 >
 > "It will rain, going by the pattern."
 
-> `zolazun theyel bral vuhohol.`
+> `zolazun theyel blral vuhohol.`
 >
-> z-Olazun | [th-CLUES.strong | b-later] | v-sit
+> z-Olazun | [th-CLUES.strong | bl-later] | v-sit
 >
 > "It looks like Olazun will sit down." (strong clues)
 
-> `zuwon thagem bral vuhohol.`
+> `zuwon thagem blral vuhohol.`
 >
-> z-speaker | [th-plan-itinerary | b-later] | v-sit
+> z-speaker | [th-plan-itinerary | bl-later] | v-sit
 >
 > "I plan to sit down later."
 
-**Compare with:** without an offset, a channel is about what is happening now or already so (**`thugom`** if you are watching it now; **`thevum`** if you remember watching it). Add **`bral`** when the claim is about a **later** event.
+**Compare with:** without an offset, a channel is about what is happening now or already so (**`thugom`** if you are watching it now; **`thevum`** if you remember watching it). Add **`blral`** when the claim is about a **later** event.
 
 ### Practice {#intermediate-practice}
 

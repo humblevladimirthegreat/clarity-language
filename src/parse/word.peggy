@@ -13,9 +13,18 @@
   function makeWord(raw, fields) {
     const word = { raw, ...fields };
     if (word.gl === false) delete word.gl;
+    if (word.bl === false) delete word.bl;
     if (word.plural === false) delete word.plural;
     if (word.ending === undefined) delete word.ending;
     return word;
+  }
+
+  // A hosted `/b/` (`bl-`) is a complement: a content word, pronoun, pointer, tag, number, span, stand-in
+  // (`blarl`), or fill-ask (`blar`). A join word (`bal`) and a hook compound take no `bl-` (clause.md#extra-nouns).
+  function blBodyOk(body) {
+    const f = body.family;
+    if (f.kind === "hookCompound") return false;
+    return f.kind !== "joinMarker" || ["r", "rl", "rm", "rn", "rth"].includes(body.ending);
   }
 
   function contentFamily(roots) {
@@ -197,6 +206,15 @@ probe_prefixedX
         family: body.family,
       });
     }
+  / "b" "l" body:xWord EOF {
+      return makeWord(text(), {
+        pos: "b",
+        bl: true,
+        ending: body.ending,
+        plural: body.plural,
+        family: body.family,
+      });
+    }
   / pos:Pos body:xWord &{ return roleAbilityPosOk(pos, body); } EOF {
       return makeWord(text(), {
         pos,
@@ -211,6 +229,15 @@ probe_prefixedPlain
       return makeWord(text(), {
         pos: "g",
         gl: true,
+        ending: body.ending,
+        plural: body.plural,
+        family: body.family,
+      });
+    }
+  / "b" "l" body:plainContent EOF {
+      return makeWord(text(), {
+        pos: "b",
+        bl: true,
         ending: body.ending,
         plural: body.plural,
         family: body.family,
@@ -257,12 +284,12 @@ writingSpan
         family: writingSpanFamily(bracketed.bracket, bracketed.payload, marks),
       });
     }
-  / pos:Pos marks:WritingMarks? bracketed:BracketedPayload WordEnd
+  / role:RolePrefix marks:WritingMarks? bracketed:BracketedPayload WordEnd
     &{ return !(bracketed.bracket === "[" || bracketed.bracket === "(") || bracketed.payload.trim() !== "="; }
     {
       const ending = spanEnding(marks);
       return makeWord(text(), {
-        pos,
+        ...role,
         ending,
         family: writingSpanFamily(bracketed.bracket, bracketed.payload, marks),
       });
@@ -300,17 +327,17 @@ OpaqueIsland
 
 // Plural **-x** parses on any number; enforce keeps it to plural labels (numbers.md § Labels).
 freeNumber
-  = pos:Pos mark:WritingEndingMark? stem:WritingNumberStem ending:Ending? plural:PluralSuffix? {
+  = role:RolePrefix mark:WritingEndingMark? stem:WritingNumberStem ending:Ending? plural:PluralSuffix? {
       return makeWord(text(), {
-        pos,
+        ...role,
         ending: endingFromWritingMark(mark, ending || "l"),
         plural: !!plural,
         family: numberFamily(stem, mark || undefined),
       });
     }
-  / pos:Pos mark:WritingEndingMark? stem:SpeechNumberStem ending:Ending plural:PluralSuffix? {
+  / role:RolePrefix mark:WritingEndingMark? stem:SpeechNumberStem ending:Ending plural:PluralSuffix? {
       return makeWord(text(), {
-        pos,
+        ...role,
         ending: endingFromWritingMark(mark, ending),
         plural: !!plural,
         family: numberFamily(stem, mark || undefined),
@@ -517,6 +544,15 @@ prefixedWord
       return makeWord(text(), {
         pos: "g",
         gl: true,
+        ending: body.ending,
+        plural: body.plural,
+        family: body.family,
+      });
+    }
+  / "b" "l" body:PrefixedBody &{ return blBodyOk(body); } {
+      return makeWord(text(), {
+        pos: "b",
+        bl: true,
         ending: body.ending,
         plural: body.plural,
         family: body.family,
@@ -818,6 +854,11 @@ citation
     }
 
 // ── Lexical primitives ──────────────────────────────────────────────────────
+
+// Role letter, or hosted `/b/` `bl-` (clause.md#extra-nouns), before a number or a writing span.
+RolePrefix
+  = "b" "l" { return { pos: "b", bl: true }; }
+  / pos:Pos { return { pos }; }
 
 Pos
   = "th" { return "th"; }

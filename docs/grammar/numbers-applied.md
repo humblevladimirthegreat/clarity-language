@@ -21,17 +21,17 @@ Ending is usually **-l** (exact label); **-n** for an official designation; **-r
 
 **For numeric *plus or minus*, use:** [sign](numbers.md#sign) on a count or ordinal. A label keeps its digits exactly as written.
 
-To place an event by a code (*on channel 7*), put the code in `/b/` after a relation word (`/h/` *on* + `b_7`), or put it on a noun as `/ɡ/` (*channel* `g_7`).
+To place an event by a code (*on channel 7*), put the code in a `bl-` word after a relation word (`/h/` *on* + `bl_7`), or put it on a noun as `/ɡ/` (*channel* `g_7`).
 
 #### Plural labels {#plural-labels}
 
 English makes a label plural to name the whole run of labels that start with it: *the ’90s* are the years 90 through 99, and *the 1800s* are 1800 through 1899. Put plural **-x** on the label: `z_90x`. The final zeros stand for any digit, so `_90x` covers 90 to 99. Only a label with digits takes **-x**; a count does not.
 
-> `zuzozen vowurel herem b_90x.`
+> `zuzozen vowurel herem bl_90x.`
 >
-> 🔊 `zuzozen vowurel herem bronazolx.`
+> 🔊 `zuzozen vowurel herem blronazolx.`
 >
-> z-Uzozen | v-walk | [h-while | b-_90-x]
+> z-Uzozen | v-walk | [h-while | bl-_90-x]
 >
 > "Uzozen walked in the ’90s."
 
@@ -54,20 +54,20 @@ Clock and date together:
 | **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left to right; commas are writing only: hour, minute, optional seconds (`h_15,30`, `h_15,30,00`). Digitless `h_` = *at some (unspecified) clock time*. |
 | **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_#` covers an unspecified date. A date may stop after the day (`h_#12`, *on the 12th*); context gives the month. You may also name the relation with a *date* word plus `/b/`, but you do not need to. |
 | **Day of the week** | Ordinal on **`olere`** *weekday*, counting from Monday: `zolerem grewol` is *Monday*, `zolerem grelel` is *Sunday* (the seventh). |
-| **Month or year alone** | A month is an ordinal on **`umale`** *month*, counting from January, the same way as weekdays: `zumalem grerel` is *March*. A year is a label on **`avuva`** *year*: `zavuvam g_1962` is *1962*. To place an event in one, put it in `/b/` after **`herem`** *during*: `herem bumalem grerel` (*in March*), `herem bavuvam g_1962` (*in 1962*). |
+| **Month or year alone** | A month is an ordinal on **`umale`** *month*, counting from January, the same way as weekdays: `zumalem grerel` is *March*. A year is a label on **`avuva`** *year*: `zavuvam g_1962` is *1962*. To place an event in one, put it in `/b/` after **`herem`** *during*: `herem blumalem grerel` (*in March*), `herem blavuvam g_1962` (*in 1962*). |
 | **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, a signed [offset on the channel](knowing.md#dated-channel) (*three hours ago* / *in three hours*) or on a [time pole](knowing.md#dated-channel) (*until tomorrow*), or a stance word that places the event in time ([LIVE](knowing.md#live-vs-memory) / [MEMORY](knowing.md#live-vs-memory), or a channel plus `b+` for a [forecast](knowing.md#forecast)). [RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate) do **not** place an event in time. There is no past or future ending. An amount of time (*for 3 days*) is a relation word plus a [measure phrase](#measure-phrases). |
 
-> `zuzozen vowurel herem bumalem grerel.`
+> `zuzozen vowurel herem blumalem grerel.`
 >
-> z-Uzozen | v-walk | [h-while | [b-month | g-3rd]]
+> z-Uzozen | v-walk | [h-while | [bl-month | g-3rd]]
 >
 > "Uzozen walks in March."
 
-> `zuzozen vowurel herem bavuvam g_1962.`
+> `zuzozen vowurel herem blavuvam g_1962.`
 >
-> 🔊 `zuzozen vowurel herem bavuvam growonagudul.`
+> 🔊 `zuzozen vowurel herem blavuvam growonagudul.`
 >
-> z-Uzozen | v-walk | [h-while | [b-year | g-_1962]]
+> z-Uzozen | v-walk | [h-while | [bl-year | g-_1962]]
 >
 > "Uzozen walked in 1962."
 
@@ -122,9 +122,9 @@ To say **how much of a unit** (*two meters*, *three hours*), use the unit's noun
 >
 > "Uzozen walks two meters."
 
-For a price (*for five grams*), put the same measure phrase in `/b/` after the [exchange](relations.md#exchange) word **`heham`**.
+For a price (*for five grams*), put the same measure phrase in a `bl-` word after the [exchange](relations.md#exchange) word **`heham`**.
 
-The amount hosts nothing, so no `/b/` comes right after it. Put any other extra noun elsewhere in the clause, such as after the verb.
+The amount hosts nothing, so no `bl-` word comes after it. A plain `/b/` there is the recipient.
 
 <!-- cheat-sheet: numbers -->
 | Agebon | Use | English |
@@ -562,15 +562,15 @@ Generations form a **tree**, like an outline. A cohort is only the members **und
 - **`grebazol`** is the others under the same parent: the **siblings**, not cousins. It never includes the focus.
 - **`grebawol`** / **`grebadul`** are the focus's own **children** / **grandchildren**, not nieces or nephews.
 
-The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest sibling, **`g#-1e0`** the youngest. To say whose family it is, put the anchor person in `/b/` right after the number. (cue: the number says how far up or down the tree; `/b/` says from whom)
+The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest sibling, **`g#-1e0`** the youngest. To say whose family it is, put the anchor person in a `bl-` word right after the number. (cue: the number says how far up or down the tree; `/b/` says from whom)
 
-> `zolazun grebazol buzozen vowurel.`
+> `zolazun grebazol bluzozen vowurel.`
 >
-> [z-Olazun | [g-#-e0 | b-Uzozen]] | v-walk
+> [z-Olazun | [g-#-e0 | bl-Uzozen]] | v-walk
 >
 > "Olazun, Uzozen's sibling, walks."
 
-With no `/b/` after a joined subject, each member is a sibling of the others.
+With no `bl-` word after a joined subject, each member is a sibling of the others.
 
 > `zuzozen zolazun zal grebazol.`
 >
@@ -578,29 +578,29 @@ With no `/b/` after a joined subject, each member is a sibling of the others.
 >
 > "Uzozen and Olazun are siblings."
 
-> `zolazun g#1e0 buzozen vowurel.`
+> `zolazun g#1e0 bluzozen vowurel.`
 >
-> 🔊 `zolazun grebazoyawol buzozen vowurel.`
+> 🔊 `zolazun grebazoyawol bluzozen vowurel.`
 >
-> [z-Olazun | [g-#-1e0 | b-Uzozen]] | v-walk
+> [z-Olazun | [g-#-1e0 | bl-Uzozen]] | v-walk
 >
 > "Olazun, Uzozen's eldest sibling, walks."
 
-> `zahoyel g#2e1 buzozen vowurel.`
+> `zahoyel g#2e1 bluzozen vowurel.`
 >
-> 🔊 `zahoyel grebawoyadul buzozen vowurel.`
+> 🔊 `zahoyel grebawoyadul bluzozen vowurel.`
 >
-> [z-child | [g-#-2e1 | b-Uzozen]] | v-walk
+> [z-child | [g-#-2e1 | bl-Uzozen]] | v-walk
 >
 > "Uzozen's second child walks."
 
 For a side branch, nest a second anchor: first step to the relative, then from there. *Aunt or uncle* is a sibling of a parent.
 
-> `zolazun grebazol beyol g#1e-1 buzozen vowurel.`
+> `zolazun grebazol bleyol g#1e-1 bluzozen vowurel.`
 >
-> 🔊 `zolazun grebazol beyol grebuwoyawol buzozen vowurel.`
+> 🔊 `zolazun grebazol bleyol grebuwoyawol bluzozen vowurel.`
 >
-> [z-Olazun | [g-#-e0 | [b-person | [g-#-1e-1 | b-Uzozen]]]] | v-walk
+> [z-Olazun | [g-#-e0 | [bl-person | [g-#-1e-1 | bl-Uzozen]]]] | v-walk
 >
 > "Olazun, Uzozen's aunt or uncle, walks." (a sibling of the first of Uzozen's parents)
 

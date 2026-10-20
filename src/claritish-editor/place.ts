@@ -11,7 +11,7 @@ import type { Cue, Span, Token } from "./match.js";
  */
 export type Placement = "after-clause" | "after-noun" | "suffix" | "on-cue" | "before-word";
 
-/** How an after-clause drop-in joins the clause: `space` (`closed thovum`), `comma` (`Thanks, thoyutham`), or `sentence` (`I'm late. thanathum behon`). */
+/** How an after-clause drop-in joins the clause: `space` (`closed thovum`), `comma` (`Thanks, thoyutham`), or `sentence` (`I'm late. thanathum blehon`). */
 export type Joiner = "space" | "comma" | "sentence";
 
 export type PlaceOptions = {

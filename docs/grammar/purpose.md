@@ -221,13 +221,13 @@ In English: [Claritish: Allowed, required, agreed](claritish/allowed-required-ag
 
 English *will* mixes plan and prediction, and *I want to* can sound like a promise. It is easy to talk as if the future were already known, and a confident prediction can fuel anxiety or overconfidence. A pick, meanwhile, often sounds more locked than it is.
 
-Agebon splits them: [want](intention.md#want) for what you wish for, without meaning to do it yet; [PLAN](intention.md#plan-predict) for what you mean to do; [DECISION](intention.md#decision) for how revisable a pick is; and a [forecast](knowing.md#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `bral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
+Agebon splits them: [want](intention.md#want) for what you wish for, without meaning to do it yet; [PLAN](intention.md#plan-predict) for what you mean to do; [DECISION](intention.md#decision) for how revisable a pick is; and a [forecast](knowing.md#forecast) for what the world will do. A forecast has no word of its own: you say how you know, with the same evidence words as above, and add `blral` (*later*). So every forecast says what it rests on, and its ending says how strong that evidence is.
 
 Wants, plans, and decisions all live in someone's mind, so with nothing else marked they are yours; someone else's want, plan, or decision takes a [holder](knowing.md#holder) that says how you know it.
 
 Splitting these helps you hold a want without owing it to anyone, avoid treating a wishful or “certain” forecast as settled fact (or as a commitment), and keep a revisable pick from sounding locked forever. Marking how you know someone else's intention keeps a guess about what they mean to do from passing as fact.
 
-**Compare with:** English *will*. Use PLAN for intention, an evidence word plus `bral` for a forecast, and DECISION for how firm the pick is.
+**Compare with:** English *will*. Use PLAN for intention, an evidence word plus `blral` for a forecast, and DECISION for how firm the pick is.
 
 In English: [Claritish: Wants and plans](claritish/wants-and-plans.md) and [Decisions and tries](claritish/decisions-and-tries.md).
 

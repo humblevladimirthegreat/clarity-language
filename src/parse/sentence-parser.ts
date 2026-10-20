@@ -1894,8 +1894,9 @@ function isLabelMarker(marker: NumberMarker): boolean {
 
 /**
  * Give words the token their neighbors decide. A word that completes the word right before it (clause.md § extra
- * nouns): a `/b/` after an `/h/`, `/th/` or `/ɡ/` word, or after a label-scope verb that names a pair
- * (predication.md#scope-relative), becomes {@link HostedB}, and a stand-in after an `/h/` or `/th/` word {@link HostedOdo}.
+ * nouns): a `bl-` word after an `/h/`, `/th/` or `/ɡ/` word, or after a label-scope verb that names a pair
+ * (predication.md#scope-relative), becomes {@link HostedB}, and a `bl-` stand-in after an `/h/` or `/th/` word
+ * {@link HostedOdo}. A plain `/b/` there stays the verb's recipient.
  * A cardinal `/ɡ/` right after a hosted `/b/` is that unit's {@link Amount}, and a signed `/h/` number after an
  * equative's shared scale its {@link Factor}. An `/h/` or digitless `/b/` number right after a rank noun join is its
  * shared scale ({@link HScale}, {@link BScale}), and a stance right after `uem` its frame ({@link HFrame}). Neither has a `/b/` slot, so a `/b/` after one fails to parse (`slotlessHost`).
@@ -2129,12 +2130,15 @@ function hostedType(token: IToken, before: IToken[], after: IToken[]): TokenType
   if (tokenIs(token, H) && isRankNounJoin(before[skipWBack(before, before.length - 1)])) return HScale;
   if (token.tokenType === HPlain && before[skipWBack(before, before.length - 1)]?.tokenType === JoinV) return HSharedV;
   if (tokenIs(token, B) && isRankNounJoin(host) && scaleNumberAhead(token)) return BScale;
-  if (tokenIs(token, B) && (tokenIs(host, H, G, Amount, Factor, HScale, HSharedV, HFrame) || isScopeThoVerb(host))) {
+  const locked = !!(token.payload as LexWord | undefined)?.bl;
+  if (locked && tokenIs(token, B) && (tokenIs(host, H, G, Amount, Factor, HScale, HSharedV, HFrame) || isScopeThoVerb(host))) {
     if (!isScopeThoVerb(host) && joinClosesAhead(after)) return HostedBJoined;
     return (token.payload as LexWord | undefined)?.family.kind === "number" ? HostedBNumber : HostedBNoun;
   }
-  if (tokenIs(token, Odo) && tokenIs(host, H, Factor, HScale, HSharedV, HFrame)) return HostedOdo;
-  if (token.tokenType === OdoB && isLateOdoAt(before)) return LateOdo;
+  // A `/z/` or `/d/` stand-in there is still read as hosted, so `standInHost` names the slip (`thahum blarl`).
+  const lockable = locked || (token.payload as LexWord | undefined)?.pos !== "b";
+  if (lockable && tokenIs(token, Odo) && tokenIs(host, H, Factor, HScale, HSharedV, HFrame)) return HostedOdo;
+  if (locked && token.tokenType === OdoB && isLateOdoAt(before)) return LateOdo;
   if (isAmountAt(token, before)) return Amount;
   if (isFactorAt(token, before)) return Factor;
   return undefined;
@@ -2184,7 +2188,7 @@ function joinClosesAhead(after: IToken[]): boolean {
 }
 
 /**
- * `barl` that fills a `/th/` host from further right: after a stance join that closes a pole with no `/b/` yet
+ * `blarl` that fills a `/th/` host from further right: after a stance join that closes a pole with no `/b/` yet
  * (join-across-roles.md#stance-join-before-barl), or after a channel's offset (knowing.md#evidence-clause).
  */
 function isLateOdoAt(before: IToken[]): boolean {

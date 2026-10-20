@@ -93,7 +93,7 @@ describe("construction registry", () => {
   });
 
   it("reads a label after a hosted /b/ as an adjective on the landmark, not an offset amount", () => {
-    const ids = parse("zuzozen vowurel herem bavuvam g_1962.", undefined, { constructions: true }).constructions ?? [];
+    const ids = parse("zuzozen vowurel herem blavuvam g_1962.", undefined, { constructions: true }).constructions ?? [];
     assert.ok(!ids.includes("sentence.hUnitRule.G"), ids.join(" "));
     assert.ok(ids.includes("sentence.gPackage.G"), ids.join(" "));
   });

@@ -103,7 +103,7 @@ export function numberMarkerIdentity(marker: NumberMarker): string {
  */
 export function wholeStem(word: MorphWord): string {
   let body = word.raw;
-  const prefix = word.gl ? "gl" : (word.pos ?? "");
+  const prefix = word.gl ? "gl" : word.bl ? "bl" : (word.pos ?? "");
   if (body.startsWith(prefix)) body = body.slice(prefix.length);
   if (word.plural && body.endsWith("x")) body = body.slice(0, -1);
   const ending = `${word.ending ?? ""}${word.resumeSense ?? ""}`;

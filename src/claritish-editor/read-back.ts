@@ -27,7 +27,7 @@ function isMarkForm(form: string): boolean {
   return !/[\p{L}\p{N}]/u.test(form);
 }
 
-/** Drop-ins in `text`, in text order. `known` holds every form (`thovum`, `-xo`, `%`, `thanathum behon`). */
+/** Drop-ins in `text`, in text order. `known` holds every form (`thovum`, `-xo`, `%`, `thanathum blehon`). */
 export function findDropIns(text: string, known: ReadonlySet<string>): FoundDropIn[] {
   const out: FoundDropIn[] = [];
   for (const m of text.matchAll(MARKS_RE)) {

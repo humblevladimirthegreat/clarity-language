@@ -162,7 +162,7 @@ export function numberStemToSpeechStressed(stem: NumberStem): {
 
 function posPrefix(word: MorphWord): string {
   if (!word.pos) return "";
-  return word.gl ? "gl" : word.pos;
+  return word.gl ? "gl" : word.bl ? "bl" : word.pos;
 }
 
 function endingSuffix(word: MorphWord): string {

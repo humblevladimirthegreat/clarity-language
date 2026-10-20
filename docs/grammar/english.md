@@ -21,7 +21,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | who does the action (*seen by Uzozen*) | subject `/z/` | [Who acts](clause.md#beginner) |
 | tool (*writes by / with a hammer*) | hook **`ael`** (*using*) + `/b/` | [Hooks](hooks.md#extra-noun) |
 | place (*by the station*) | hook **`om`** (*near*) + `/b/` (or **`ol`** *at*) | [Hooks](hooks.md#extra-noun) |
-| deadline (*by 15:30*, *by the storm*) | **`hevahum`** + `/b/` (or **`hevahum barl`** + sentence) | [By a deadline](dependents.md#by-deadline) |
+| deadline (*by 15:30*, *by the storm*) | **`hevahum`** + `/b/` (or **`hevahum blarl`** + sentence) | [By a deadline](dependents.md#by-deadline) |
 | deadline a day away (*by tomorrow*) | **`hevahum`** + a signed count in `/b/` | [Count from now](knowing.md#dated-channel) |
 | manner (*by walking hastily*) | ordinary adverb `/h/`, no `/b/` | [Adverbs](clause.md#adverbs-h) |
 | origin (*Olazun from the city*) | **`haham` / `gaham`** + `/b/` | [Of relations](relations.md#of-relations) |
@@ -30,7 +30,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
-| recipient / addressee (*tells Olazun*) | unhosted `/b/` | [Extra nouns](clause.md#extra-nouns) |
+| recipient / addressee (*tells Olazun*) | plain `/b/` | [Extra nouns](clause.md#extra-nouns) |
 | swap (*a book for a hammer*) | **`heham`** + `/b/` | [Exchange](relations.md#exchange) |
 | intended get (*works for a money-bag*) | hook **`el`** + `/b/` | [Hooks](hooks.md#extra-noun) |
 | intended outcome (*practices for a race*) | **`hovam`** + `/b/` | [So that](dependents.md#so-that) |
@@ -45,13 +45,13 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
-| recipient / addressee (*gives a book to Olazun*) | unhosted `/b/` | [Extra nouns](clause.md#extra-nouns) |
+| recipient / addressee (*gives a book to Olazun*) | plain `/b/` | [Extra nouns](clause.md#extra-nouns) |
 | goal reached (*walks to the station*, *from a house to a station*) | hook **`ol`** (*at*) + `/b/`; for *from … to*, **`ul`** + the source first | [Locative relations](relations.md#locative-relations) |
 | heading for, not there yet (*on the way to the train*) | hook **`oel`** (*toward*) + `/b/` | [Hooks](hooks.md#extra-noun-intermediate) |
 | a stretch of time (*from the storm to the bell*) | one *from … to* unit: **`ul`** + start, **`oel`** + end | [Time](numbers-applied.md#time) |
 | end of a number range (*from 3 to 5*) | **`al`** between the two numbers | [Ranges](numbers-applied.md#ranges) |
 | end of a range on a line (*Uzozen to Ahelan in the queue*) | **`oel`** between two words in one role | [Ranges](hooks.md#ranges) |
-| purpose (*walks to sit*, *in order to sit*) | **`hovam barl`** + the sentence, naming who sits | [So that](dependents.md#so-that) |
+| purpose (*walks to sit*, *in order to sit*) | **`hovam blarl`** + the sentence, naming who sits | [So that](dependents.md#so-that) |
 
 ### *'s* / *of* {#of}
 
@@ -86,16 +86,16 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 |--------------|------------|-------|
 | kind / role (*Uzozen as a dog*) | classification `/ɡ/` | [Kind / role](predication.md#classification) |
 | same one (*Olazun as Uzozen*) | **`SAME`** + `/b/` | [Identity](predication.md#identity) |
-| same time (*as Olazun walks*) | **`herem barl`** | [Dependent clauses](dependents.md#dependent-clauses) |
-| reason / since (*as Olazun walks*) | **`thahum barl`** | [Because](causation.md#because) |
-| grounds (*as the sky is gray, it will rain*) | **`theyem barl`** / **`thubem barl`** | [Evidence clause](knowing.md#evidence-clause) |
+| same time (*as Olazun walks*) | **`herem blarl`** | [Dependent clauses](dependents.md#dependent-clauses) |
+| reason / since (*as Olazun walks*) | **`thahum blarl`** | [Because](causation.md#because) |
+| grounds (*as the sky is gray, it will rain*) | **`theyem blarl`** / **`thubem blarl`** | [Evidence clause](knowing.md#evidence-clause) |
 | equal degree (*as sleepy as*) | equative **`oe`** | [Equatives](comparatives.md#equatives) |
 | falls short (*not as sleepy as*) | reverse rank **`ue`** | [Reverse rank](comparatives.md#intermediate) |
 | most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`hodaxal`** + tie **`oe`** | [Every bar](comparatives.md#stance-bars) |
 | frame one sentence (*as for Uzozen*) | **`hahugem`** + `/b/` | [As-for](say-people-places.md#as-for) |
 | resemblance (*walks as / like a duck*) | **`hewom`** + `/b/` | [Simile](relations.md#similative) |
-| how close (*exactly like*, *a bit like*) | **`hewol`** for an exact match (`hewol budozal`), or `/w/` before **`hewom`**: `wubugom hewom budozal` (*precisely*), `wamezom hewom budozal` (*a bit*) | [Exactly like](relations.md#exactly-like), [simile](relations.md#similative), [degree words](clause.md#degree-w) |
-| resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`hewom barl`** + the event | [Simile](relations.md#similative) |
+| how close (*exactly like*, *a bit like*) | **`hewol`** for an exact match (`hewol bludozal`), or `/w/` before **`hewom`**: `wubugom hewom bludozal` (*precisely*), `wamezom hewom bludozal` (*a bit*) | [Exactly like](relations.md#exactly-like), [simile](relations.md#similative), [degree words](clause.md#degree-w) |
+| resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`hewom blarl`** + the event | [Simile](relations.md#similative) |
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](knowing.md#notional) |
 | dated books (*as of Friday*) | **`henam` / `hunem`** + `/b/` | [*As-of*](relations.md#as-of) |
 
@@ -105,7 +105,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 |--------------|------------|-------|
 | from a time on (*has sat since the storm*) | hook **`ul`** (*from*) + the time in `/b/` | [Since](hooks.md#since) |
 | from an event on (*since Olazun fell asleep*) | **`ul barl`** + the sentence | [Since](hooks.md#since) |
-| reason (*since Olazun walks*) | **`thahum barl`** | [Because](causation.md#because) |
+| reason (*since Olazun walks*) | **`thahum blarl`** | [Because](causation.md#because) |
 
 ### *against*
 
@@ -115,7 +115,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | a rule, a person's no, or a plan (*against the rules*, *against their will*, *contrary to the plan*, *against my decision*) | hook **`uem`** + the `/th/` stance it goes against | [Contrary to a stance](sakes.md#contrary-to-stance) |
 | what you were told or expected (*contrary to what I was told*, *against my gut*) | hook **`uem`** + a channel | [Channels after `uem`](knowing.md#channel-frame) |
 | a noun in the way (*against the rain*, *despite the rain*) | hook **`uem`** or **`hezom`** + `/b/` | [Hooks](hooks.md#extra-noun-intermediate), [dependent clauses](dependents.md#dependent-clauses) |
-| an event in the way (*even though Olazun said no*) | **`hezom barl`** + the sentence | [Dependent clauses](dependents.md#dependent-clauses) |
+| an event in the way (*even though Olazun said no*) | **`hezom blarl`** + the sentence | [Dependent clauses](dependents.md#dependent-clauses) |
 | someone's interest (*against Olazun's interest*) | unmet sake word + `/b/` | [Sakes](sakes.md#sake-changeability) |
 
 ## Everyday words {#everyday-words}
@@ -134,7 +134,7 @@ One English word, one row: the form that says it and the section that teaches it
 | *over* (*a cloth over the table*: the landmark's face as the setting) | hook **`aom`** + `/b/`; plain height (*above the table*) is gravity **`hayuhel`** | [Hooks](hooks.md#extra-noun-intermediate), [Gravity](roles.md#gravity) |
 | *under* / *below* / *beneath* / *underneath* (*sleeps under the tree*) | gravity down **`haduhel`** (on a noun, **`gaduhel`**) + `/b/` | [Gravity](roles.md#gravity) |
 | *above* / *upper* (*the book above the tree*) | gravity up **`hayuhel`** (on a noun, **`gayuhel`**) + `/b/` | [Gravity](roles.md#gravity) |
-| *left side* / *right side* / *behind* / *in front of* (*behind the house*) | a direction with **`th`** + **`o`** + `/b/` landmark, such as `gazuhethol bahehal` | [Landmark's own front](roles.md#landmark-facing) |
+| *left side* / *right side* / *behind* / *in front of* (*behind the house*) | a direction with **`th`** + **`o`** + `/b/` landmark, such as `gazuhethol blahehal` | [Landmark's own front](roles.md#landmark-facing) |
 | *with* / *alongside* / *along with* (*runs with Olazun*) | **`han`** + `/b/` | [Join-relations](join-across-roles.md#join-relations) |
 | *without* / *apart from* (*walks apart from the house*) | **`huan`** + `/b/` | [Join-relations](join-across-roles.md#join-relations) |
 | *via* / *by way of* / *through* / *along* (*goes via the station*, *walks along the road*) | hook **`uol`** + `/b/` (**`uom`** for a setting) | [Hooks](hooks.md#extra-noun) |
@@ -145,11 +145,11 @@ One English word, one row: the form that says it and the section that teaches it
 | *outside* / *external* / *outdoors* (*sits outside the house*) | hook **`al`** + the landmark + the join **`bul`** (*in, not the house*): `al bahehal bul` | [Hooks](hooks.md#extra-noun), [negation](joins.md#negation-u) |
 | *throughout* / *all over* (*walks throughout the house*) | **`ol bual`** *everywhere*, then the landmark's hook: `ol bual al bahehal` | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites) |
 | *abroad* (*in another country*) | **`ol bahal bur`** (the kind *country*, then *some other one*) | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites) |
-| *overseas* (*across the water*) | **`ohem`** *across* + the water: `hohem bohalal` | [Locative relations](relations.md#locative-relations) |
-| *bottom* (the low part of a thing) | `zaduhel gobem bahehal` (a down part of the house) | [Of relations](relations.md#of-relations) |
-| *parallel* (*parallel to Olazun*) | the direction, then *like*: `gurem gewom bolazun` | [Simile](relations.md#similative) |
+| *overseas* (*across the water*) | **`ohem`** *across* + the water: `hohem blohalal` | [Locative relations](relations.md#locative-relations) |
+| *bottom* (the low part of a thing) | `zaduhel gobem blahehal` (a down part of the house) | [Of relations](relations.md#of-relations) |
+| *parallel* (*parallel to Olazun*) | the direction, then *like*: `gurem gewom blolazun` | [Simile](relations.md#similative) |
 | *lean* / *tilt* | `vaduhel hrubul` (*almost falls*) | [Already, still, not yet](knowing.md#phasal) |
-| *corner* / *around the corner* | `zadugul` (the corner); `ol badugul` *at the corner*; `hevam badugul` *around the corner* | [Locative relations](relations.md#locative-relations) |
+| *corner* / *around the corner* | `zadugul` (the corner); `ol badugul` *at the corner*; `hevam bladugul` *around the corner* | [Locative relations](relations.md#locative-relations) |
 | *beyond* / *farther than* | rank on distance: `zahehal zel gazavem` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
 | *versus* / *against* (*Uzozen versus Olazun*) | hook **`uel`** + `/b/` | [Hooks](hooks.md#extra-noun) |
 | *somewhere* / *nowhere* / *everywhere* / *elsewhere* | **`ol bar`** / **`ol bal`** / **`ol bual`** / **`ol bur`** | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites) |
@@ -199,8 +199,8 @@ English often makes an adjective from a noun by adding an ending (*gold* → *go
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
-| *golden* | `gugulel` (made of gold: `gulem bugulel`) | [Adjectives](clause.md#adjectives-ɡ), [of relations](relations.md#of-relations) |
-| *wooden* | `gulel` (made of wood: `gulem bulel`) | [Of relations](relations.md#of-relations) |
+| *golden* | `gugulel` (made of gold: `gulem blugulel`) | [Adjectives](clause.md#adjectives-ɡ), [of relations](relations.md#of-relations) |
+| *wooden* | `gulel` (made of wood: `gulem blulel`) | [Of relations](relations.md#of-relations) |
 | *royal* | `gobulem` (*royalty*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *solar* | `guzalel` (of the sun) | [Adjectives](clause.md#adjectives-ɡ) |
 | *musical* | `gehorem` (*composition*) | [Adjectives](clause.md#adjectives-ɡ) |
@@ -215,7 +215,7 @@ English often makes an adjective from a noun by adding an ending (*gold* → *go
 | *forbidden* (*a forbidden book*) | `gegum` (*forbidden*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *permitted* / *allowed* | `golem` (*permission*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *structural* | `gobem` (a piece of the structure; add the whole in `/b/`) | [Of relations](relations.md#of-relations) |
-| *native* (*native to the country*) | `gaham` + `/b/` for the place: `zeyol gaham bahal` | [Of relations](relations.md#of-relations) |
+| *native* (*native to the country*) | `gaham` + `/b/` for the place: `zeyol gaham blahal` | [Of relations](relations.md#of-relations) |
 
 > `zuzozen dahehal gugulel vawebol.`
 >
@@ -236,14 +236,14 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 | *the one teaching* (this event) | the role compound on **-r**: `zaxuduyer` | [This instance](roles.md#this-instance-r) |
 | *often lies*, *usually walks* | a [restrictor](restrictors.md): `huam`, `war` | [Always](restrictors.md#always-hual) |
 | *angry this time*, *lied this once* | **`tha`** on the root: `gunemuthal` | [This episode](predication.md#scope-occasion) |
-| *a stranger to Olazun*, *lying, as far as Olazun is concerned* | **`tho`** plus `/b/`: `golayothom bolazun` | [This pair](predication.md#scope-relative) |
+| *a stranger to Olazun*, *lying, as far as Olazun is concerned* | **`tho`** plus `/b/`: `golayothom blolazun` | [This pair](predication.md#scope-relative) |
 | *a lying type*, *an anxious type* | **`thu`** on the root: `zuzozen valamuthul` | [Type across scenes](predication.md#scope-type) |
-| *this once, to Olazun* | **`thao`** plus `/b/`: `valamuthaol bolazun` | [Stacked scope](predication.md#scope-stacks) |
+| *this once, to Olazun* | **`thao`** plus `/b/`: `valamuthaol blolazun` | [Stacked scope](predication.md#scope-stacks) |
 | *becoming a teacher* | **`thoe`**: `gaxuduyethoel` | [Stacked scope](predication.md#scope-stacks) |
 | *not as a teacher* | **`thue`**: `gaxuduyethuel` | [Stacked scope](predication.md#scope-stacks) |
 | *using teacher (as a tool)* | **`thae`**: `gaxuduyethael` | [Stacked scope](predication.md#scope-stacks) |
 | *a lying type, except this time* | **`thua`**: `valamuthual` | [Stacked scope](predication.md#scope-stacks) |
-| *angry as a type, except with Olazun* | **`thuo`** plus `/b/`: `gunemuthuol bolazun` | [Stacked scope](predication.md#scope-stacks) |
+| *angry as a type, except with Olazun* | **`thuo`** plus `/b/`: `gunemuthuol blolazun` | [Stacked scope](predication.md#scope-stacks) |
 | *seen*, *the one seen* | the undergoer **`u`**: `zuxawebol`, `zuxawebor` | [The undergoer](roles.md#the-undergoer-u) |
 | *visible* / *invisible* (*can be seen*) | the undergoer with ability: `zudozol guxaweboxal` | [Can be](intention.md#role-ability) |
 | *walked* (past) | no participle: pick how you know | [Tense](say-tense.md#tense-jobs) |

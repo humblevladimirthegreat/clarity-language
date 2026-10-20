@@ -137,7 +137,7 @@ An `/h/` aside is a side detail about the action itself, not about your claim:
 
 A one-word comment with nothing to package is a plain word in that slot: `zuzozen vowurel hogowul.`
 
-**For *because* / *if*, use:** [**`barl`**](dependents.md#poles) dependents, not an aside.
+**For *because* / *if*, use:** [**`blarl`**](dependents.md#poles) dependents, not an aside.
 
 **Compare with:** a second name for the same person uses [identity](predication.md#identity) (`goro` + `/b/`). To pick out **which** noun (*the guard who sits*), use a plain adjective or [another sentence](dependents.md#which-noun), not a noun aside.
 
@@ -523,7 +523,7 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening brace
 - No role letter on the edges.
 - **At most one phrase.** After its binder, an island holds at most one phrase: a `/z/`, `/d/`, or `/b/` noun phrase, a `/v/` verb phrase, or a `/ɡ/` stack, with that phrase’s own adjectives, `/w/` detail, and join. An `/h/` word is a binder, never the phrase.
 - **It may close early.** The island can stop partway through its phrase; the pause marks where. By the end of the phrase at the latest, it has closed: a new role letter or the outer join always comes after the island.
-- **Hosts keep their `/b/`.** A host (`/ɡ/`, `/h/`, `/th/`) and its hosted `/b/` are both inside the island or both outside.
+- **Hosts keep their `bl-` word.** A host (`/ɡ/`, `/h/`, `/th/`) and its `bl-` word are both inside the island or both outside.
 - **One island per clause.** Islands do not nest.
 - Empty `{ }` has no reading.
 - **Binder required:** at least one scope-taking `/h/` or `/th/` and/or a [join](joins.md#scope-islands-join) particle **inside**. A [hook](hooks.md) is never a binder. A hook already reaches its whole stretch: `/w/` right before it grades the [whole span](hooks.md#spans), and a hook after a noun belongs to that noun.
@@ -549,15 +549,13 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening brace
 >
 > "Uzozen and (just Olazun) walk."
 
-A `/b/` right after an `/h/` word is hosted by it ([extra nouns](clause.md#extra-nouns)). To put a recipient `/b/` in an island, write it **before** the binder:
+A recipient is a plain `/b/` ([extra nouns](clause.md#extra-nouns)), so it can share an island with an adverb:
 
 > `zuzozen { bolazun hegugom } vezuyel.`
 >
 > z-Uzozen | SCOPE[b-Olazun | h-possibility] | v-tell
 >
 > "Uzozen talks, possibly to Olazun."
-
-The word before the island must not be a `/ɡ/`, `/h/`, or `/th/` word either, or it would host that `/b/` across the edge.
 
 An island can hold part of a phrase. Here only *not small* is grouped, so **`gul`** denies *small* alone and **`gal`** adds it to *red*:
 

@@ -432,7 +432,7 @@ export function morphGlossFor(
   const body = senseLabel(word, tables, ctx);
   if (word.family.kind === "hook") return body;
   const prefix =
-    word.gl ? "gl" : (word.pos ?? "");
+    word.gl ? "gl" : word.bl ? "bl" : (word.pos ?? "");
   if (!prefix) return body;
   return `${prefix}-${body}`;
 }
@@ -634,7 +634,7 @@ function wordGloss(word: LexWord, tables: ClassifyTables, ctx: MorphGlossContext
   const named = instance || family.marks.includes("@") ? "NAME." : "";
   const about = family.marks.includes("~") ? ".about" : "";
   const label = `${named}${WRITTEN_SPAN[family.bracket]}${instance ? ".instance" : ""}${about}`;
-  const prefix = word.gl ? "gl-" : word.pos ? `${word.pos}-` : "";
+  const prefix = word.gl ? "gl-" : word.bl ? "bl-" : word.pos ? `${word.pos}-` : "";
   let inner = "";
   if (payload) {
     if (family.bracket === "<") inner = quotePayload(payload);

@@ -321,11 +321,11 @@ Closed **`hal`** says *only* when it rains; open **`ham`** leaves room for other
 
 ### Occasions vs a dependent *when*
 
-English *when* / *if* can introduce a whole **sentence** as the occasion (*if Uzozen walks*). Write that with a pole word, `/h/` (*when*) or `/th/` (*if*), plus `/b/` [**`barl`**](dependents.md#poles). The main sentence stops after **`barl`**; the next sentence is the occasion. Use a restrictor when each occasion is a word in the adverb slot; use **`barl`** when the occasion is a full clause.
+English *when* / *if* can introduce a whole **sentence** as the occasion (*if Uzozen walks*). Write that with a pole word, `/h/` (*when*) or `/th/` (*if*), plus `/b/` [**`blarl`**](dependents.md#poles). The main sentence stops after **`blarl`**; the next sentence is the occasion. Use a restrictor when each occasion is a word in the adverb slot; use **`blarl`** when the occasion is a full clause.
 
-> `zahelan vezuyol thohom barl zuzozen vowurel.`
+> `zahelan vezuyol thohom blarl zuzozen vowurel.`
 >
-> z-Ahelan | v-sing | [th-if | b-that-clause] | z-Uzozen | v-walk
+> z-Ahelan | v-sing | [th-if | bl-that-clause] | z-Uzozen | v-walk
 >
 > "Ahelan sings if Uzozen walks."
 
@@ -493,9 +493,9 @@ y-question | h-when-best | z-interlocutors | v-climb
 **6.** *Olazun falls if Uzozen runs.*
 
 ::: details Show answer
-`zolazun vaduhel thohom barl zuzozen varuvel.`
+`zolazun vaduhel thohom blarl zuzozen varuvel.`
 
-z-Olazun | v-fall | [th-if | b-that-clause] | z-Uzozen | v-run
+z-Olazun | v-fall | [th-if | bl-that-clause] | z-Uzozen | v-run
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
@@ -575,11 +575,11 @@ Rank **`hel`** names the preferred time; **`hal`** would say *only* when foggy.
 **1.** *Ahelan sleeps if Uzozen climbs.* <!-- lint: error -->`zahelan vezuvol hal barl zuzozen vuguvel.`
 
 ::: details Show answer
-`zahelan vezuvol thohom barl zuzozen vuguvel.`
+`zahelan vezuvol thohom blarl zuzozen vuguvel.`
 
-z-Ahelan | v-sleep | [th-if | b-that-clause] | z-Uzozen | v-climb
+z-Ahelan | v-sleep | [th-if | bl-that-clause] | z-Uzozen | v-climb
 
-A restrictor lists occasion words; a whole sentence as the occasion takes a pole word and **`barl`**.
+A restrictor lists occasion words; a whole sentence as the occasion takes a pole word and **`blarl`**.
 :::
 
 ## See also

@@ -216,7 +216,7 @@ Do **not** open Beginner with:
 
 **Inventory tables after one worked row.** A closed-form table with more than a few rows (subordinators, speech-act family, full PoS) follows **one** English job + example. Extra rows are “you can also say,” not equal first teaching.
 
-**Drills as a check.** After drafting Beginner, walk the [translation practice](translation-exercises.md): every taught H3 should appear in a drill, or get cut / demoted. Setup that only exists so a later drill parses (`/h/` + `/b/` before **`barl`**) stays as the **minimum** needed for that drill.
+**Drills as a check.** After drafting Beginner, walk the [translation practice](translation-exercises.md): every taught H3 should appear in a drill, or get cut / demoted. Setup that only exists so a later drill parses (`/h/` + `/b/` before **`blarl`**) stays as the **minimum** needed for that drill.
 
 ## Intermediate and Advanced stage shape
 <a id="later-stage-shape"></a>
@@ -231,7 +231,7 @@ Do **not** rerun [Beginner stage shape](#beginner-stage-shape) on later stages. 
 
 | Kind | When | Shape |
 |------|------|--------|
-| **New English job** | A construction they could not say after Beginner (soft speech acts, adjective before the noun, nested **`barl`**) | Same lead order as Beginner: English job → Agebon shape → consequence, then **one** worked example, then the table or [Compare with](#compare-with). Cue last, not as the definition. Per-cell cues are optional. |
+| **New English job** | A construction they could not say after Beginner (soft speech acts, adjective before the noun, nested **`blarl`**) | Same lead order as Beginner: English job → Agebon shape → consequence, then **one** worked example, then the table or [Compare with](#compare-with). Cue last, not as the definition. Per-cell cues are optional. |
 | **Finish the series** | The rest of a map they already use (full join single-item/standalone, remaining linkers, period/speech rhythm) | One short pointer (“Beginner already used *therefore*”) plus the inventory table. Do not unpack every row as its own H3. |
 | **Rare / stylistic Advanced** | Edge, meter, singing, uncommon variants | Inventory plus one example or one preference sentence. Skip per-cell cues. |
 
@@ -453,7 +453,7 @@ Wording and voice for the track: [claritish-style.md](claritish-style.md).
 
 **Claritish** (`docs/grammar/claritish/`) is an on-ramp for English speakers: an intro page, ten lessons, a bonus tone-marks lesson, a closing page, a cheat sheet, and a journal editor that teach closed Agebon words to drop into ordinary English, so the psychological payoff starts on day one and every word learned is already Agebon. It adds no forms and is not design authority. Each lesson's owning grammar section is named in an editor-only `<!-- Source … -->` comment at the foot of the page; when that section changes a form or meaning, update the lesson.
 
-**What a drop-in is:** a closed Agebon word spelled exactly as the owning page spells it: a tone mark, a stance word, a sake word (thanks, sorry, feelings), or the set phrase `bawan`. No Agebon syntax around it (role letters, hosted `/b/`, joins, spans, hooks, role compounds, numeric derivation), no numerals or stance numbers, no respelling for English readers.
+**What a drop-in is:** a closed Agebon word spelled exactly as the owning page spells it: a tone mark, a stance word, a sake word (thanks, sorry, feelings), or the set phrase `blawan`. No Agebon syntax around it (role letters, hosted `/b/`, joins, spans, hooks, role compounds, numeric derivation), no numerals or stance numbers, no respelling for English readers.
 
 - **Placement** follows English: where an adverb or tag would sit (after the clause, before it, or beside the word it colors). A stance drop-in covers the English clause it sits in. A lone feeling word with no clause is how the speaker feels right now.
 - **Suffixes on English words** are [label scope](../grammar/predication.md#label-scope) and [ability](../grammar/intention.md#ability-changeability) (`-xa` / `-xe` / `-xo` / `-xu`), written with a hyphen on an English host. The rule and its marking live in [Claritish wording and voice](claritish-style.md#hyphenated-host).

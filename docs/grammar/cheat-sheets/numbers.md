@@ -196,7 +196,7 @@ The digit-string marker `_` holds a phone, room, channel, or serial number. Grou
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [A code as object](../numbers-applied.md#digit-strings) | `zuzozen d_555,123,4567 vawebol.` | *Uzozen sees 555-123-4567.* | I |
-| [Plural label](../numbers-applied.md#plural-labels) | `zuzozen vowurel herem b_90x.` | *Uzozen walked in the ’90s.* | I |
+| [Plural label](../numbers-applied.md#plural-labels) | `zuzozen vowurel herem bl_90x.` | *Uzozen walked in the ’90s.* | I |
 
 ### Time and date {#time}
 
@@ -213,8 +213,8 @@ A digit string under `/h/` with no relation word before it. Clock is `h_…`; a 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [At a time](../numbers-applied.md#time) | `h_15,30 zuzozen vowurel.` | *At 15:30 Uzozen walks.* | I |
-| [In March](../numbers-applied.md#time) | `zuzozen vowurel herem bumalem grerel.` | *Uzozen walks in March.* | I |
-| [In 1962](../numbers-applied.md#time) | `zuzozen vowurel herem bavuvam g_1962.` | *Uzozen walked in 1962.* | I |
+| [In March](../numbers-applied.md#time) | `zuzozen vowurel herem blumalem grerel.` | *Uzozen walks in March.* | I |
+| [In 1962](../numbers-applied.md#time) | `zuzozen vowurel herem blavuvam g_1962.` | *Uzozen walked in 1962.* | I |
 | [From … to](../numbers-applied.md#time) | `zuzozen ul b_9 oel b_17 vowurel.` | *Uzozen walks from 9:00 to 17:00.* | I |
 
 Digitless `hrol` is *some clock or date*; `hror` asks *when?* *Three times* (`hrarel`) is not a clock time.
@@ -425,18 +425,18 @@ On a rank, an exponent with digits is a generation, not a power of ten: `eK` goe
 | [`g#e-1`](../numbers-applied.md#ordinal-generation) | generation −1: the parent layer | A |
 | [`g#1e-1`](../numbers-applied.md#ordinal-generation) | 1st of generation −1 | A |
 
-On a family tree, put the anchor person in `/b/` right after the number.
+On a family tree, put the anchor person in a `bl-` word right after the number.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Parents](../numbers-applied.md#kin-generations) | `grebuwol` | the layer above the focus | A |
-| [Siblings](../numbers-applied.md#kin-generations) | `zolazun grebazol buzozen vowurel.` | *Olazun, Uzozen's sibling, walks.* | A |
+| [Siblings](../numbers-applied.md#kin-generations) | `zolazun grebazol bluzozen vowurel.` | *Olazun, Uzozen's sibling, walks.* | A |
 | [Siblings of each other](../numbers-applied.md#kin-generations) | `zuzozen zolazun zal grebazol.` | *Uzozen and Olazun are siblings.* | A |
-| [Eldest sibling](../numbers-applied.md#kin-generations) | `zolazun g#1e0 buzozen vowurel.` | *Olazun, Uzozen's eldest sibling, walks.* | A |
-| [Second child](../numbers-applied.md#kin-generations) | `zahoyel g#2e1 buzozen vowurel.` | *Uzozen's second child walks.* | A |
+| [Eldest sibling](../numbers-applied.md#kin-generations) | `zolazun g#1e0 bluzozen vowurel.` | *Olazun, Uzozen's eldest sibling, walks.* | A |
+| [Second child](../numbers-applied.md#kin-generations) | `zahoyel g#2e1 bluzozen vowurel.` | *Uzozen's second child walks.* | A |
 | [Children](../numbers-applied.md#kin-generations) | `grebawol` | the focus's own children | A |
 | [Grandchildren](../numbers-applied.md#kin-generations) | `grebadul` | the focus's grandchildren | A |
-| [Aunt or uncle](../numbers-applied.md#kin-generations) | `zolazun grebazol beyol g#1e-1 buzozen vowurel.` | *Olazun, Uzozen's aunt or uncle, walks.* (a sibling of the first of Uzozen's parents) | A |
+| [Aunt or uncle](../numbers-applied.md#kin-generations) | `zolazun grebazol bleyol g#1e-1 bluzozen vowurel.` | *Olazun, Uzozen's aunt or uncle, walks.* (a sibling of the first of Uzozen's parents) | A |
 
 Only kin make generations: friends and bosses are [social relations](../relations.md#social-relations).
 

@@ -78,9 +78,9 @@ With several occasions before `huel`, the last listed is the first choice.
 | [Last resort](../restrictors.md#more-occasions) | `zuzozen vowurel herulal huel.` | *When it rains, Uzozen walks only as a last resort.* | I |
 | [When's best?](../restrictors.md#more-occasions) | `yol her zayan vowurel.` | *When's best for us to walk?* | I |
 | [On an adjective, one of two](../restrictors.md#more-occasions) | `zuzozen werulal wanurul wol guzemol.` | *sleepy either when it rains or at night* (not both) | I |
-| [A whole clause as the occasion](../restrictors.md#occasions-vs-a-dependent-when): `barl` | `zahelan vezuyol thohom barl zuzozen vowurel.` | *Ahelan sings if Uzozen walks.* | I |
+| [A whole clause as the occasion](../restrictors.md#occasions-vs-a-dependent-when): `blarl` | `zahelan vezuyol thohom blarl zuzozen vowurel.` | *Ahelan sings if Uzozen walks.* | I |
 
-Use a restrictor when each occasion is a word; use `barl` when the occasion is a full clause. To ask *when?*, see [questions](../questions.md#when).
+Use a restrictor when each occasion is a word; use `blarl` when the occasion is a full clause. To ask *when?*, see [questions](../questions.md#when).
 
 ## Setting a chunk apart {#spans}
 
@@ -195,7 +195,7 @@ Braces `{ … }` group one chunk so a binder inside reaches only it. The edges a
 | `hual` *always* ([every time](../restrictors.md#always-hual)) | | `har` *sometimes* ([some time](../restrictors.md#sometimes-anytime-some-other-time)) |
 | `hor` *anytime* ([any one will do](../restrictors.md#sometimes-anytime-some-other-time)) | | `hual` *always* ([at all times](../restrictors.md#always-hual)) |
 | `hur` *some other time* ([a leftover occasion](../restrictors.md#more-occasions)) | | `huol` *anytime except when…* ([leftover times in general](../restrictors.md#more-occasions)) |
-| `herulal hal` *only when it rains* ([a restrictor list](../restrictors.md#occasions-vs-a-dependent-when)) | | `thohom barl` *if a whole sentence* ([a dependent](../restrictors.md#occasions-vs-a-dependent-when)) |
+| `herulal hal` *only when it rains* ([a restrictor list](../restrictors.md#occasions-vs-a-dependent-when)) | | `thohom blarl` *if a whole sentence* ([a dependent](../restrictors.md#occasions-vs-a-dependent-when)) |
 | `d[uzozen]` *what was said* ([a cite](../spans.md#writing)) | | `denuron` *the one-word name* ([an ordinary -n word](../spans.md#exact-paraphrase-proper)) |
 | `d@[enuron olazun]` *the work* ([a proper span](../spans.md#exact-paraphrase-proper)) | | `glegen` *the name as spelling* ([a mention](../spans.md#mention)) |
 | `th(…)` *an aside* ([a comment](../spans.md#asides)) | | `{ … }` *a scope island* ([a chunk for a binder](../spans.md#scope-islands)) |

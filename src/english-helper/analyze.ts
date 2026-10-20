@@ -510,12 +510,16 @@ function landmarkWord(slots: readonly Slot[], n: number): string | undefined {
   return undefined;
 }
 
-/** Spell each hook job with the landmark that follows it (`al bahazal`). */
+/** Spell each hook job with the landmark that follows it (`al bahazal`); a hosted relation locks it with `bl-` (`hewom blahazal`). */
 function spellHookPhrases(slots: readonly Slot[]): void {
   slots.forEach((slot, n) => {
     const hooks = slot.suggestions.filter((s): s is JobSuggestion | EntrySuggestion => (s.kind === "job" || s.kind === "entry") && !!hookHead(s.form, s.link));
     const landmark = hooks.length ? landmarkWord(slots, n) : undefined;
-    if (landmark) for (const s of hooks) s.phrase = `${hookHead(s.form, s.link)} ${landmark}`;
+    if (!landmark) return;
+    for (const s of hooks) {
+      const head = hookHead(s.form, s.link)!;
+      s.phrase = `${head} ${HOOK_FORM.test(head) ? landmark : `bl${landmark.slice(1)}`}`;
+    }
   });
 }
 

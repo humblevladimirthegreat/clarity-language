@@ -68,7 +68,7 @@ Agebon lets any label mark how essential we treat the behavior with an infix bef
 
 - **tha** — this one occasion: `gozovothal` "lazy this time" (one slow day is not a trait)
 - **the** — a pattern with exceptions: `gozovothel` "tends to be lazy" (as opposed to being a consistently lazy person)
-- **tho** — true in one relationship: `gozovothom balahen` "lazy as far as Alahen is concerned" (Alahen's opinion, not a confirmed trait)
+- **tho** — true in one relationship: `gozovothom blalahen` "lazy as far as Alahen is concerned" (Alahen's opinion, not a confirmed trait)
 - **thu** — a name only, not an explanation: `gozovothul` "what gets called lazy" (society's view is not a confirmed trait)
 
 It's an optional efficient way to express a more charitable view of someone's trait.

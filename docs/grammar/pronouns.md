@@ -433,9 +433,9 @@ Beginner used whole-stem **-r** in the same slot as the earlier word (*he sits*)
 
 A few [closed roots](#special-pronouns) give **-r** a meaning of their own: the light end of a scale (`thomar` *may, who knows*, `thager` *plan-sketch*), or a share of the cause on *because* ([fault](causation.md#fault)). On those, **-r** is that meaning, not a resume. Every other closed root resumes with **-r** like any content root, so `thohor` after `thohom` is the same condition again:
 
-> `zolazun vowurel thohom berulal. zuzozen vowurel thohor.`
+> `zolazun vowurel thohom blerulal. zuzozen vowurel thohor.`
 >
-> z-Olazun | v-walk | [th-if | b-rain] . z-Uzozen | v-walk | th-←if
+> z-Olazun | v-walk | [th-if | bl-rain] . z-Uzozen | v-walk | th-←if
 >
 > "Olazun walks if it rains. In that case, Uzozen walks too."
 
@@ -507,7 +507,7 @@ For *each other*, join the people in `/z/` and add **`hehem`** after the verb. T
 
 With **-l**, **`hehel`** is strictly pairwise: every one of them does it to every other one. **-m** is the everyday *each other* / *one another*, where it only has to go both ways in general.
 
-**Compare with:** **`thehem barl`** on `/th/` is *if and only if* ([dependents](dependents.md#poles)). On `/h/` with no `/b/`, the same root is *each other*.
+**Compare with:** **`thehem blarl`** on `/th/` is *if and only if* ([dependents](dependents.md#poles)). On `/h/` with no `/b/`, the same root is *each other*.
 
 ### Addressing several people
 
@@ -523,7 +523,7 @@ English *you* does not say whether you are talking to one person or several. Age
 
 ### Tag pronouns {#tag-pronouns}
 
-English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells E*. A **tag** is that label. You choose it, and it stays on the same referent however many others come and go. Write the role letter, **`w`**, a tag vowel, and an ending. The four vowels are four tags, named by the vowel's [letter name](phonology.md#letter-names): A, E, O, U. Roots start with a vowel, so a consonant right after the role letter is always a marker: `r` starts a [number word](numbers.md), and `w` starts a tag. (cue: **w** ≈ *we call it*: the label you and the listener agree on)
+English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells E*. A **tag** is that label. You choose it, and it stays on the same referent however many others come and go. Write the role letter, **`w`**, a tag vowel, and an ending. The four vowels are four tags, named by the vowel's [letter name](phonology.md#letter-names): A, E, O, U. Roots start with a vowel, so a consonant right after the role letter, or after the `l` of a [hosted](clause.md#extra-nouns) `bl-` word, is always a marker: `r` starts a [number word](numbers.md), and `w` starts a tag (`blwar` completes the word before it, with a [syllabic `l`](phonology.md#syllabic-l)). (cue: **w** ≈ *we call it*: the label you and the listener agree on)
 
 <!-- cheat-sheet: people-pointing -->
 | Agebon | Use | English |
@@ -653,9 +653,9 @@ A topic pronoun with no topic set is not a sentence. **`alo`** keeps its ordinar
 
 *As for* frames one sentence and leaves the topic alone:
 
-> `xuzozen zalon vowurel. hahugem bolazun zudozol varuvel. zalon vuhohol.`
+> `xuzozen zalon vowurel. hahugem blolazun zudozol varuvel. zalon vuhohol.`
 >
-> x-Uzozen | z-TOPIC | v-walk . [h-as-for | b-Olazun] | z-dog | v-run . z-TOPIC | v-sit
+> x-Uzozen | z-TOPIC | v-walk . [h-as-for | bl-Olazun] | z-dog | v-run . z-TOPIC | v-sit
 >
 > "Now, about Uzozen: Uzozen walks. As for Olazun, a dog runs. Uzozen sits."
 
@@ -828,17 +828,17 @@ x-Uzozen | z-TOPIC | v-harvest . z-Olazun | d-TOPIC | v-see
 **6.** *As for the family, Olazun harvests.*
 
 ::: details Show answer
-`hahugem bavayal zolazun vugelam.`
+`hahugem blavayal zolazun vugelam.`
 
-[h-as-for | b-family] | z-Olazun | v-harvest
+[h-as-for | bl-family] | z-Olazun | v-harvest
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zolazun hewom buzozen vobuvul. zahelan hewor vugelam.`
+**1.** `zolazun hewom bluzozen vobuvul. zahelan hewor vugelam.`
 
 ::: details Show answer
-z-Olazun | [h-like | b-Uzozen] | v-pour . z-Ahelan | h-←like | v-harvest
+z-Olazun | [h-like | bl-Uzozen] | v-pour . z-Ahelan | h-←like | v-harvest
 
 *Olazun pours like Uzozen. Ahelan harvests that way.*
 :::

@@ -89,8 +89,8 @@ Bare arrow words are compass headings. With mid-word **`th`** and a facing perso
 |--------|-----|---------|-------|
 | [Bare DIR](../roles.md#viewpoint-vs-landmark) | compass / gravity | `gowuhel` *west*; `gayuhel` *up* | I |
 | [**`DIR th ANCHOR`**](../roles.md#viewpoint-vs-landmark) | that point on **ANCHOR's** facing rose | `gowuhethawan` *listener-left* | I |
-| [DIR + **`th`** + **`o`** + `/b/`](../roles.md#landmark-facing) | that point on the **landmark's** own rose | `gazuhethol bahehal` *behind the house* | I |
-| [complex `/ɡ/` + `/b/`](../roles.md#viewpoint-vs-landmark) | region on a side **of a landmark** | `gowuhethuzozen bedalel` *left of the tree, from Uzozen's view* | I |
+| [DIR + **`th`** + **`o`** + `/b/`](../roles.md#landmark-facing) | that point on the **landmark's** own rose | `gazuhethol blahehal` *behind the house* | I |
+| [complex `/ɡ/` + `/b/`](../roles.md#viewpoint-vs-landmark) | region on a side **of a landmark** | `gowuhethuzozen bledalel` *left of the tree, from Uzozen's view* | I |
 
 The anchor can be `uwo` *speaker*, `awa` *listener*, a name, or a role pointer on **-r**. The ending applies to the anchor, not the direction.
 
@@ -107,11 +107,11 @@ The anchor can be `uwo` *speaker*, `awa` *listener*, a name, or a role pointer o
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | English | Stage |
 |--------|---------|-------|
-| [`gazuhethol bahehal`](../roles.md#landmark-facing) | *behind the house* (its own back) | I |
-| [`gonuhethol bahehal`](../roles.md#landmark-facing) | *in front of the house* | I |
-| [`gowuhethol bahehal`](../roles.md#landmark-facing) | *on the house's left* | I |
-| [`gowuhethuzozen bahehal`](../roles.md#landmark-facing) | *left of the house, from Uzozen's view* | I |
-| [`gowuhel bahehal`](../roles.md#landmark-facing) | *west of the house* | I |
+| [`gazuhethol blahehal`](../roles.md#landmark-facing) | *behind the house* (its own back) | I |
+| [`gonuhethol blahehal`](../roles.md#landmark-facing) | *in front of the house* | I |
+| [`gowuhethol blahehal`](../roles.md#landmark-facing) | *on the house's left* | I |
+| [`gowuhethuzozen blahehal`](../roles.md#landmark-facing) | *left of the house, from Uzozen's view* | I |
+| [`gowuhel blahehal`](../roles.md#landmark-facing) | *west of the house* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -120,10 +120,10 @@ The anchor can be `uwo` *speaker*, `awa` *listener*, a name, or a role pointer o
 | [Your left](../roles.md#viewpoint-laterals) | `yel vowurel zawan howuhethawan.` | *You, walk left.* (your left) | I |
 | [Their left](../roles.md#viewpoint-laterals) | `zuzozen vowurel. zolazun vuhohol howuhethaxar.` | *Uzozen walks. Olazun sits on their left.* | I |
 | [Up](../roles.md#gravity) | `yel vowurel hayuhel.` | *Walk up.* | I |
-| [Under](../roles.md#viewpoint-vs-landmark) | `zudozol vezuvol haduhel bedalel.` | *The dog sleeps under the tree.* | I |
-| [Above](../roles.md#viewpoint-vs-landmark) | `zubezol vuhohol gayuhel budozol.` | *A bird sits above the dog.* | I |
-| [Left of a landmark](../roles.md#viewpoint-vs-landmark) | `zanal gowuhethuzozen bedalel.` | *The book is left of the tree, from Uzozen's view.* | I |
-| [Behind](../roles.md#landmark-facing) | `zudozol vuhohol gazuhethol bahehal.` | *The dog sits behind the house.* | I |
+| [Under](../roles.md#viewpoint-vs-landmark) | `zudozol vezuvol haduhel bledalel.` | *The dog sleeps under the tree.* | I |
+| [Above](../roles.md#viewpoint-vs-landmark) | `zubezol vuhohol gayuhel bludozol.` | *A bird sits above the dog.* | I |
+| [Left of a landmark](../roles.md#viewpoint-vs-landmark) | `zanal gowuhethuzozen bledalel.` | *The book is left of the tree, from Uzozen's view.* | I |
+| [Behind](../roles.md#landmark-facing) | `zudozol vuhohol gazuhethol blahehal.` | *The dog sits behind the house.* | I |
 
 ## Reading mid-word `x` {#x}
 
@@ -235,7 +235,7 @@ Keep the rank join; change what the shared word is.
 | [Amount, fewer](../comparatives.md#amount-scale) | `zagozolx zudozolx zuel gral.` | *There are fewer cats than dogs.* | I |
 | [Amount, as many](../comparatives.md#amount-scale) | `zagozolx zudozolx zoel gral.` | *There are as many cats as dogs.* | I |
 | [Amount, by impression](../comparatives.md#amount-scale): `gram` | `zagozolx zudozolx zel gram.` | *It looks like there are more cats than dogs.* | I |
-| [How many more](../comparatives.md#amount-scale): difference in `/b/` | `zagozolx zudozolx zel gral brarel.` | *There are three more cats than dogs.* | I |
+| [How many more](../comparatives.md#amount-scale): difference in `/b/` | `zagozolx zudozolx zel gral blrarel.` | *There are three more cats than dogs.* | I |
 | [Frequency](../comparatives.md#frequency-scale): `hral` | `zuzozen zolazun zel hral vowurel.` | *Uzozen walks more often than Olazun.* | I |
 | [Time, later](../comparatives.md#time-scale): `bral` | `zuzozen zolazun zel bral vovurel.` | *Uzozen arrives later than Olazun.* | I |
 | [Time, earlier](../comparatives.md#time-scale) | `zuzozen zolazun zuel bral vovurel.` | *Uzozen arrives earlier than Olazun.* | I |
@@ -333,5 +333,5 @@ English *many* and *often* rank against an unstated baseline. Agebon names the b
 | `zaxuduyer` *the one teaching* ([this instance](../roles.md#role-compounds)) | | `gaxuduyel` *is one who teaches* ([a label](../roles.md#saying-someone-is-a-teacher)) |
 | `daexarayel` *a writing tool* ([a compound](../roles.md#instrument)) | | `ael` *using* ([a hook on the clause](../hooks.md#extra-noun)) |
 | `gowuhel` *west* ([compass](../roles.md#endings-and-resume)) | | `gowuhethuzozen` *Uzozen's left* ([a face](../roles.md#endings-and-resume)) |
-| `gowuhethuzozen bedalel` *left of the tree, from Uzozen's view* ([a facing person](../roles.md#viewpoint-vs-landmark)) | | `gowuhethol bahehal` *on the house's left* ([the landmark's own front](../roles.md#landmark-facing)) |
+| `gowuhethuzozen bledalel` *left of the tree, from Uzozen's view* ([a facing person](../roles.md#viewpoint-vs-landmark)) | | `gowuhethol blahehal` *on the house's left* ([the landmark's own front](../roles.md#landmark-facing)) |
 | `zobahohal` *bedroom* ([a dictionary word](../compounds.md#lexical-compounds)) | | `zubedaxuyudal` *peanut butter* ([glued with `x`](../compounds.md#compound-vs-separate)) |

@@ -17,7 +17,7 @@ const ALL = { enabled: new Set(lessonIds), never: new Set<string>(), dismissed: 
 const outcomes = Object.values(data.flows).flatMap((f) => answerPaths(f.questions).map((a) => outcomeFor(f, a)!));
 const allForms = new Set(outcomes.map((o) => o.form));
 const { glossary } = indexForms(data.flows);
-/** Forms a card inserts, and each word of a multi-word one (`thanathum` from `thanathum behon`). */
+/** Forms a card inserts, and each word of a multi-word one (`thanathum` from `thanathum blehon`). */
 const insertable = new Set([...allForms, ...[...allForms].flatMap((f) => (f.includes(" ") ? f.split(" ") : []))]);
 
 /** `> …` example lines under `## Examples`. */
@@ -41,7 +41,7 @@ const english = (line: string) =>
     .replace(/\.\./g, ".")
     .trim();
 
-/** The flow whose outcomes include `form`, or the first word of a set phrase (`thanathum` of `thanathum behon`). */
+/** The flow whose outcomes include `form`, or the first word of a set phrase (`thanathum` of `thanathum blehon`). */
 const flowOf = (form: string) =>
   Object.values(data.flows).find((flow) =>
     answerPaths(flow.questions).some((a) => {

@@ -152,7 +152,7 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zuzozen ul buyahel vowurel oel bedavel.", "z-Uzozen | [from | b-station] | v-walk | [toward | b-train]");
     expectLine("zuzozen vezuvol welazom al bahehal.", "z-Uzozen | v-sleep | [[w-very | in] | b-house]");
     expectLine("zuwodalx wal ul zazadal.", "z-plate-x | [w-never | except] | z-salad");
-    expectLine("zuzozen welazom hewom budozal vowurel.", "z-Uzozen | [[w-very | h-like] | b-duck] | v-walk");
+    expectLine("zuzozen welazom hewom bludozal vowurel.", "z-Uzozen | [[w-very | h-like] | bl-duck] | v-walk");
     expectLine("hal", "h-never");
     expectLine("har", "h-sometimes");
     expectLine("yol zahelan vowurel har.", "y-question | z-Ahelan | v-walk | h-when");
@@ -321,8 +321,8 @@ describe("morphGlossLine — tags, xuen, hewol, pointer anchors", () => {
     expectLine("zuzozen vuhohol xuen zuzozer vowurel.", "[z-Uzozen | v-sit | x-and-before-that | z-←Uzozen | v-walk]");
   });
   it("hewol / gewol are exactly like (relations.md#exactly-like)", () => {
-    expectLine("zuzozen hewol budozal vowurel.", "z-Uzozen | [h-exactly-like | b-duck] | v-walk");
-    expectLine("zahehal gewol buzozen.", "z-house | [g-exactly-like | b-Uzozen]");
+    expectLine("zuzozen hewol bludozal vowurel.", "z-Uzozen | [h-exactly-like | bl-duck] | v-walk");
+    expectLine("zahehal gewol bluzozen.", "z-house | [g-exactly-like | bl-Uzozen]");
   });
   it("a role pointer as a viewpoint lateral's facing anchor (roles.md#viewpoint-laterals)", () => {
     expectLine("zuzozen vowurel. zolazun vuhohol howuhethaxar.", "z-Uzozen | v-walk . z-Olazun | v-sit | h-west-th-←agent.same");
@@ -378,7 +378,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("ordinary -l on a sake host root uses literal sense, not sake overlay", () => {
-    expectLine("zuzozen gawol bolazun", "z-Uzozen | [g-knot | b-Olazun]");
+    expectLine("zuzozen gawol blolazun", "z-Uzozen | [g-knot | bl-Olazun]");
   });
 
   it("morphRedundantWithLoose allows single-word citation skips", () => {
@@ -487,7 +487,7 @@ describe("compareMorphGloss", () => {
 
   it("a hook + /b/ after a landmark describes that landmark; after a recipient it is same-role", () => {
     expectLine("zawan al behaham om buwon vavol", "z-listener | [in | [b-locality | [near | b-speaker]]] | v-hatch");
-    expectLine("zuzozen vanurel hevam bavulul om buwon", "z-Uzozen | v-dance | [h-around | [b-fire | [near | b-speaker]]]");
+    expectLine("zuzozen vanurel hevam blavulul om buwon", "z-Uzozen | v-dance | [h-around | [bl-fire | [near | b-speaker]]]");
     expectLine("zuzozen bolazun al bahelan vezuyel", "z-Uzozen | b-Olazun | including | b-Ahelan | v-tell");
   });
 
@@ -509,17 +509,17 @@ describe("compareMorphGloss", () => {
     expectLine("zuzozen valamuthel", "z-Uzozen | v-lie-th-role");
     expectLine("zolazun ganumuthul", "z-Olazun | g-anxious-th-type");
     expectLine("zolazun gaxuduyethel", "z-Olazun | g-agent-x-teach-th-role");
-    expectLine("zuzozen valamuthol bolazun", "z-Uzozen | [v-lie-th-pair | b-Olazun]");
-    expectLine("zuzozen valamuthaol bolazun", "z-Uzozen | [v-lie-th-on-pair | b-Olazun]");
+    expectLine("zuzozen valamuthol blolazun", "z-Uzozen | [v-lie-th-pair | bl-Olazun]");
+    expectLine("zuzozen valamuthaol blolazun", "z-Uzozen | [v-lie-th-on-pair | bl-Olazun]");
     expectLine("zuzozen valamuthual", "z-Uzozen | v-lie-th-except-episode");
     expectLine("zolazun gaxuduyethael", "z-Olazun | g-agent-x-teach-th-using");
     expectLine("zolazun gaxuduyethoel", "z-Olazun | g-agent-x-teach-th-toward-role");
     expectLine("zolazun gaxuduyethuel", "z-Olazun | g-agent-x-teach-th-outside-role");
-    expectLine("zuzozen gunemuthuol bolazun", "z-Uzozen | [g-angry-th-except-pair | b-Olazun]");
+    expectLine("zuzozen gunemuthuol blolazun", "z-Uzozen | [g-angry-th-except-pair | bl-Olazun]");
   });
 
   it("a pair-scope verb hosts the /b/ right after it", () => {
-    expectLine("zuzozen valamuthol bolazun", "z-Uzozen | [v-lie-th-pair | b-Olazun]");
+    expectLine("zuzozen valamuthol blolazun", "z-Uzozen | [v-lie-th-pair | bl-Olazun]");
   });
 
   it("house-cast resume without a same-line antecedent", () => {
@@ -563,22 +563,22 @@ describe("morphGlossLine — th stance letter", () => {
   it("glosses stance moods, /w/ on th, and th poles with stand-ins", () => {
     expectLine("thomam zuzozen vuhohol.", "th-MAY | z-Uzozen | v-sit");
     expectLine("zuzozen wuzemol thugom vawebol awebolul.", "z-Uzozen | [w-sleepy | th-LIVE] | v-see | eye-leave");
-    expectLine("thahum barl zuzozen vuhohol.", "[th-because | b-that-clause] | z-Uzozen | v-sit");
-    expectLine("theyem barl zuzozen vuhohol.", "[th-CLUES | b-that-clause] | z-Uzozen | v-sit");
-    expectLine("thanal barl zuzozen vuhohol.", "[th-DEDUCED.strong | b-that-clause] | z-Uzozen | v-sit");
-    expectLine("thubel bral barl zuzozen vuhohol.", "[th-PATTERN.strong | [b-later | b-that-clause]] | z-Uzozen | v-sit");
+    expectLine("thahum blarl zuzozen vuhohol.", "[th-because | bl-that-clause] | z-Uzozen | v-sit");
+    expectLine("theyem blarl zuzozen vuhohol.", "[th-CLUES | bl-that-clause] | z-Uzozen | v-sit");
+    expectLine("thanal blarl zuzozen vuhohol.", "[th-DEDUCED.strong | bl-that-clause] | z-Uzozen | v-sit");
+    expectLine("thubel blral blarl zuzozen vuhohol.", "[th-PATTERN.strong | [bl-later | bl-that-clause]] | z-Uzozen | v-sit");
     expectLine("zuzozen vuhohol th(zolazun vowurel).", "z-Uzozen | v-sit | th-ASIDE[z-Olazun | v-walk]");
   });
 
   it("keeps time poles and restrictors on /h/", () => {
-    assert.match(morphGlossLine("habam barl zuzozen vuhohol.", tables), /^\[h-before/);
+    assert.match(morphGlossLine("habam blarl zuzozen vuhohol.", tables), /^\[h-before/);
   });
 });
 
 describe("morphGlossLine — stance joins and emphatic prohibition", () => {
   it("glosses /th/ join fences", () => {
     expectLine("zuzozen vowurel thevum thul.", "z-Uzozen | v-walk | th-MEMORY | th-not");
-    expectLine("zuzozen vowurel thahum bolazun thul.", "z-Uzozen | v-walk | [th-because | b-Olazun] | th-not");
+    expectLine("zuzozen vowurel thahum blolazun thul.", "z-Uzozen | v-walk | [th-because | bl-Olazun] | th-not");
   });
 
   it("glosses yul yul", () => {
@@ -644,7 +644,7 @@ describe("morphGlossLine — topic and generic pronouns", () => {
   it("glosses a topic word with its own hooks, and the clearing linkers", () => {
     expectLine("xudozol em buzozen zolazun vawebol.", "x-dog | [used-by | b-Uzozen] | z-Olazun | v-see");
     expectLine("xuvewem zuzozen vowurel.", "x-next | z-Uzozen | v-walk");
-    expectLine("hahugem buzozen zolazun vowurel.", "[h-as-for | b-Uzozen] | z-Olazun | v-walk");
+    expectLine("hahugem bluzozen zolazun vowurel.", "[h-as-for | bl-Uzozen] | z-Olazun | v-walk");
   });
 });
 
@@ -665,8 +665,8 @@ describe("morphGlossLine — verb-phrase join items", () => {
   it("puts the words between the subject and the first verb in the first item, and leaves a joinless verb chain flat", () => {
     expectLine("zuzozen hedurem vugudel varuvel val.", "z-Uzozen | [[h-haste | v-cooking] | v-run | v-and]");
     expectLine(
-      "zuzozen duredal vugudel hevam bavulul vuhohol val.",
-      "z-Uzozen | [[d-popcorn | v-cooking] | [[h-around | b-fire] | v-sit] | v-and]",
+      "zuzozen duredal vugudel hevam blavulul vuhohol val.",
+      "z-Uzozen | [[d-popcorn | v-cooking] | [[h-around | bl-fire] | v-sit] | v-and]",
     );
     expectLine("zuzozen bahelan vezuyel buzozen varal val.", "z-Uzozen | [[b-Ahelan | v-tell] | [b-Uzozen | v-pay] | v-and]");
     expectLine("zuzozen vowurel hedurem varuvel.", "z-Uzozen | v-walk | h-haste | v-run");

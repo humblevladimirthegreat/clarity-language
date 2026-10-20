@@ -130,12 +130,12 @@ describe("resolve — role pointers (pronouns.md#role-pointers)", () => {
 
   it("the extra party is a verb's unhosted /b/ or a /ɡ/ predicate's hosted /b/", () => {
     assert.deepEqual(pointers("zuzozen bolazun vezuyel darl. zoxar varuvel."), ["zoxar→bolazun"]);
-    assert.deepEqual(pointers("zuzozen gawom bolazun. zoxar varuvel."), ["zoxar→bolazun"]);
+    assert.deepEqual(pointers("zuzozen gawom blolazun. zoxar varuvel."), ["zoxar→blolazun"]);
   });
 
   it("the scene is a place hook's /b/, else during's, else the event's own", () => {
     assert.deepEqual(pointers("zuzozen vezuvol al bahehal. zolazun dexar vawebol."), ["dexar→bahehal"]);
-    assert.deepEqual(pointers("zuzozen vezuvol herem benulul. zolazun dexar vawebol."), ["dexar→benulul"]);
+    assert.deepEqual(pointers("zuzozen vezuvol herem blenulul. zolazun dexar vawebol."), ["dexar→blenulul"]);
     assert.deepEqual(pointers("zuzozen vezuvol. zolazun dexar vawebol."), ["dexar→vezuvol"]);
   });
 
@@ -339,11 +339,11 @@ describe("resolve — topic (pronouns.md#topic)", () => {
 
   it("is not set by being named first, being the subject, or as for", () => {
     assert.throws(() => parseText("zuzozen vowurel. zalon vuhohol."), /topic pronoun/);
-    assert.throws(() => parseText("hahugem buzozen zolazun vowurel. zalon vuhohol."), /topic pronoun/);
+    assert.throws(() => parseText("hahugem bluzozen zolazun vowurel. zalon vuhohol."), /topic pronoun/);
   });
 
   it("holds through as for and a join, and a return restores it after a side topic", () => {
-    assert.deepEqual(topics("xuzozen zalon vowurel. hahugem bolazun zudozol varuvel. zalon vuhohol."), ["zalon→xuzozen", "zalon→xuzozen"]);
+    assert.deepEqual(topics("xuzozen zalon vowurel. hahugem blolazun zudozol varuvel. zalon vuhohol."), ["zalon→xuzozen", "zalon→xuzozen"]);
     assert.deepEqual(topics("xuzozen zalon vowurel. xuvedam zudozol varuvel. or xuzozer zalon vuhohol."), ["zalon→xuzozen", "zalon→xuzozer"]);
   });
 

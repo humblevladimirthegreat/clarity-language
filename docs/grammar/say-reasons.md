@@ -8,30 +8,30 @@ Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* do
 
 **Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Contrary to a stance](sakes.md#contrary-to-stance) · [Continue](dependents.md#continue-x) · [Sentence linkers](dependents.md#sentence-linkers) · [Stacked discourse hooks](hooks.md#stacked-discourse) · [Because](causation.md#only-because) · [Point back](hooks.md#hook-resume) · [Clause sequence](join-across-roles.md#clause-sequence)
 
-Time and discourse dependents use the same **`barl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
+Time and discourse dependents use the same **`blarl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
 
 | English | Agebon |
 |---------|---------|
-| *although* / *while* / *whilst* / *until* / *till* / *before* / *after* | same pole + **`barl`** shape on adverb `/h/`, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hezom`** / **`herem`** / **`harum`** / … |
+| *although* / *while* / *whilst* / *until* / *till* / *before* / *after* | same pole + **`blarl`** shape on adverb `/h/`, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hezom`** / **`herem`** / **`harum`** / … |
 | *so that* / *in order to* | same shape: **`hovam`** ([so that](dependents.md#so-that)); NP intended get = **`hovam`** + `/b/` **noun** |
 | *despite* (NP) | same **`hezom`** (or **`gezom`**) + `/b/` **noun**, not a second pole |
-| *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uem`** + the stance it goes against: `uem thegul` / `uem huxegum bolazun` / `uem thagem` / `uem thogol` / `uem thebam` ([contrary to a stance](sakes.md#contrary-to-stance)) |
-| *though I promised* / *breaking my promise* | **`hezom barl`** + the promise as its own sentence: `zuwon vezuvol hezom barl zuwon vowurel huxolel.` (*I sleep, although I promised to walk*) ([contrary to a stance](sakes.md#contrary-to-stance)) |
-| *after they took back their yes* / *more than they agreed to* | a yes taken back is a no: **`uem huxegum bolazun`**; past the agreed terms is the consent bar **`huxolem`** ([every bar](comparatives.md#stance-bars)) |
-| *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`barl`**: **`theyem barl`** / **`thubem barl`** ([evidence clause](knowing.md#evidence-clause)) |
+| *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uem`** + the stance it goes against: `uem thegul` / `uem huxegum blolazun` / `uem thagem` / `uem thogol` / `uem thebam` ([contrary to a stance](sakes.md#contrary-to-stance)) |
+| *though I promised* / *breaking my promise* | **`hezom blarl`** + the promise as its own sentence: `zuwon vezuvol hezom blarl zuwon vowurel huxolel.` (*I sleep, although I promised to walk*) ([contrary to a stance](sakes.md#contrary-to-stance)) |
+| *after they took back their yes* / *more than they agreed to* | a yes taken back is a no: **`uem huxegum blolazun`**; past the agreed terms is the consent bar **`huxolem`** ([every bar](comparatives.md#stance-bars)) |
+| *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`blarl`**: **`theyem blarl`** / **`thubem blarl`** ([evidence clause](knowing.md#evidence-clause)) |
 | *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xahem`** ([continue](dependents.md#continue-x)) |
 | *it follows that* / *necessarily, then* (a deduction from the last sentence) | **`xahel`** ([sentence linkers](dependents.md#sentence-linkers)) |
-| *that doesn't follow* / *non sequitur* | **`thanam thohom thul barl`** ([arguments](#arguments)) |
+| *that doesn't follow* / *non sequitur* | **`thanam thohom thul blarl`** ([arguments](#arguments)) |
 | *thus* (*in this way*) | the same adverb again: `/h/` with **-r** ([how English approximates -r](pronouns.md#how-english-approximates-r)) |
 | *the fact that* / *the idea that* / *it is a fact that* | a predicate with a `/z/` stand-in: `gumugom zarl zuzozen vowurel.`; or two sentences, then `zarth` ([stand-in vowels](dependents.md#stand-in)): `zuzozen vowurel. zarth gumugom.` A clause never modifies a noun |
-| *due to* / *owing to* / *because of* (NP) | **`thahum`** + `/b/` **noun** (`thahum berulal`) |
-| *not because* (clause) | **`thahum thul barl`** ([stance join before `barl`](join-across-roles.md#stance-join-before-barl)) |
+| *due to* / *owing to* / *because of* (NP) | **`thahum`** + `/b/` **noun** (`thahum blerulal`) |
+| *not because* (clause) | **`thahum thul blarl`** ([stance join before `blarl`](join-across-roles.md#stance-join-before-barl)) |
 | *however* / *meanwhile* (discourse) | **`xezom`** / **`xegorem`** |
 | *regardless of* (NP) | same **`hezom`** + `/b/` **noun** as *despite* |
 | *anyway* / *anyhow* (back to the main line) | the resume hook **`or …`** ([point back](hooks.md#hook-resume)) |
 | *otherwise* / *or else* (failing that) | **`xon`** between the clauses ([clause sequence](join-across-roles.md#clause-sequence)) |
-| *nevertheless* / *nonetheless* (discourse) | **`xezom`** after the finished claim; inside one sentence, **`hezom barl`** |
-| *whereas* (two claims set against each other) | **`xezom`** before the second claim, or **`hezom barl`** inside one sentence |
+| *nevertheless* / *nonetheless* (discourse) | **`xezom`** after the finished claim; inside one sentence, **`hezom blarl`** |
+| *whereas* (two claims set against each other) | **`xezom`** before the second claim, or **`hezom blarl`** inside one sentence |
 | *moreover* / *furthermore* (discourse) | **`ael …`** opens the sentence that goes further; **`al …`** adds a separate point ([stacked discourse hooks](hooks.md#stacked-discourse)) |
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
@@ -54,12 +54,12 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 | *guess* (a passing thought) | `thomar` | MAY, who knows |
 | *guess* (a gut hunch) | `thabor` | INTUITION, faint |
 | *assume* / *suppose* | `theyur` | NOTIONAL, toy with it for now |
-| *personally* / *in my view* | `hahugem buwon` | topic: as for me |
+| *personally* / *in my view* | `hahugem bluwon` | topic: as for me |
 | *by the way* / *aside* (in passing) | `th( … )` | aside fence, any place a stance word may sit |
 | *necessarily* / *it follows* / *by deduction* | `thanam` | DEDUCED |
 | *basically* / *fundamentally* | `hadelom` | manner adverb on *fundamental* |
 | *overall* / *on the whole* | `hahugem bual` | as for everything |
-| *automatically* / *by itself* | `zanal vowurel thewem banar.` | CAUSE, with the doer resumed as its own cause |
+| *automatically* / *by itself* | `zanal vowurel thewem blanar.` | CAUSE, with the doer resumed as its own cause |
 | *increasingly* / *more and more* | `helam zel` + the quality | more than it used to be |
 | *unfortunately* | `thudathum` | unspecified sake, unmet, can be softened |
 | *unfortunately* (and it is final) | `thudathul` | unspecified sake, unmet, irreversible |
@@ -88,7 +88,7 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 >
 > "Unfortunately, Uzozen is leaving."
 
-**Compare with:** *hopefully* and *worryingly* are the other speaker attitudes ([hopefully](sakes.md#speaker-attitude)). *Assuming that Q, P* keeps the condition open: P with **`thohom barl`** ([if](causation.md#if)).
+**Compare with:** *hopefully* and *worryingly* are the other speaker attitudes ([hopefully](sakes.md#speaker-attitude)). *Assuming that Q, P* keeps the condition open: P with **`thohom blarl`** ([if](causation.md#if)).
 
 ### Reason, purpose, guilty {#reason-purpose-guilty}
 
@@ -106,13 +106,13 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 | *purpose* (what my noun is for) | `g…tho…` after the noun (`gawothom`) | the noun's purpose is this sake |
 | *What is the purpose?* | `hovam bar` | *What for?* |
 | *guilty* / *to blame* | `thahul` + `/b/` | the because pole, the reason broke a norm |
-| *guilty* (the feeling) | a feeling word + **`thahul barl`** + your own act | the feeling, caused by your act, which broke a norm |
-| *hurt* / *upset* (no fault named) | a feeling word + **`thahum barl`** + what happened | the feeling and its cause, with no one at fault |
+| *guilty* (the feeling) | a feeling word + **`thahul blarl`** + your own act | the feeling, caused by your act, which broke a norm |
+| *hurt* / *upset* (no fault named) | a feeling word + **`thahum blarl`** + what happened | the feeling and its cause, with no one at fault |
 | *ashamed* / *embarrassed* | `gubamem` | the embarrassment root as a property |
 
-> `zuzozen velurul thahum berulal.`
+> `zuzozen velurul thahum blerulal.`
 >
-> z-Uzozen | v-departure | [th-because | b-rain]
+> z-Uzozen | v-departure | [th-because | bl-rain]
 >
 > "The reason Uzozen left is the rain."
 
@@ -122,33 +122,33 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 >
 > "I hear Uzozen's reason for talking is feeling connected." (for someone else's reason, say [how you know it](knowing.md#holder))
 
-> `zuzozen vowurel hovam barl zolazun vuhohol.`
+> `zuzozen vowurel hovam blarl zolazun vuhohol.`
 >
-> z-Uzozen | v-walk | [h-so-that | b-that-clause] | z-Olazun | v-sit
+> z-Uzozen | v-walk | [h-so-that | bl-that-clause] | z-Olazun | v-sit
 >
 > "Uzozen walks so that Olazun sits."
 
-> `zuzozen velurul thahul barl zolazun vezuyel.`
+> `zuzozen velurul thahul blarl zolazun vezuyel.`
 >
-> z-Uzozen | v-departure | [th-because.fault | b-that-clause] | z-Olazun | v-tell
+> z-Uzozen | v-departure | [th-because.fault | bl-that-clause] | z-Olazun | v-tell
 >
 > "Uzozen left because Olazun spoke, and Olazun was wrong to."
 
-> `thawothumam thahul barl zuwon vezuyel.`
+> `thawothumam thahul blarl zuwon vezuyel.`
 >
-> th-relatedness-unmet-modifiable-INTERNAL-FLOWING | [th-because.fault | b-that-clause] | z-speaker | v-tell
+> th-relatedness-unmet-modifiable-INTERNAL-FLOWING | [th-because.fault | bl-that-clause] | z-speaker | v-tell
 >
 > "I feel guilty for speaking." (a cost to a tie, held inside, and my speaking broke a norm)
 
 What makes the feeling guilt is the fault pole on **your own** act. The feeling word alone says only that a tie is under strain, the same word as *hurt*. With the because pole and someone else's act, the same feeling is *hurt*:
 
-> `thawothumar thahum barl zolazun vezuyel.`
+> `thawothumar thahum blarl zolazun vezuyel.`
 >
-> th-relatedness-unmet-modifiable-INTERNAL-SURGING | [th-because | b-that-clause] | z-Olazun | v-tell
+> th-relatedness-unmet-modifiable-INTERNAL-SURGING | [th-because | bl-that-clause] | z-Olazun | v-tell
 >
 > "I'm hurt that Olazun spoke."
 
-Put the **act** in `/b/` after a fault pole, not the person ([fault](causation.md#fault)). *Guilty* is then *the wrong rests on that act*, and it leaves room for *Olazun did a wrong thing* without *Olazun is bad*.
+Put the **act** in a `bl-` word after a fault pole, not the person ([fault](causation.md#fault)). *Guilty* is then *the wrong rests on that act*, and it leaves room for *Olazun did a wrong thing* without *Olazun is bad*.
 
 **Compare with:** owning a harm to someone else (*I'm sorry*) is [thanks and sorry](sakes.md#thanks-sorry), not a guilt feeling.
 
@@ -156,44 +156,44 @@ Put the **act** in `/b/` after a fault pole, not the person ([fault](causation.m
 
 **Needs:** [Make someone do it](causation.md#make) · [Decision](intention.md#decision) · [So that](dependents.md#so-that) · [Goal, source, path](roles.md#goal-source-path)
 
-English has a separate verb for *make someone do X* in many common cases: *kill* is *make die*, *feed* is *make eat*. Agebon has one way to say all of them. Keep the ordinary verb for what happens, let the one it happens to be the subject, and put the one who makes it happen in `/b/` right after **`thewem`** ([make](causation.md#make)). Change only the verb root.
+English has a separate verb for *make someone do X* in many common cases: *kill* is *make die*, *feed* is *make eat*. Agebon has one way to say all of them. Keep the ordinary verb for what happens, let the one it happens to be the subject, and put the one who makes it happen in a `bl-` word right after **`thewem`** ([make](causation.md#make)). Change only the verb root.
 
 | English | Agebon | Reading |
 |---------|--------|---------|
-| *kill* | `zolazun vezobul thewem buzozen.` | Olazun dies, Uzozen makes it happen |
-| *feed* | `zolazun vagazul thewem buzozen.` | Olazun eats, Uzozen makes it happen |
-| *make X angry* / *paint it red* (a result) | `zuzozen vunemul thewem bolazun.` | the adjective's verb root, Uzozen becomes angry, Olazun makes it happen |
-| *arrived tired* / *left angry* (a state during) | `zolazun velurul herem barl zalamur godamul.` or `zolazun godamul. zalamur velurul.` | a `/ɡ/` word right after the verb has no reading, so the state is its own clause |
+| *kill* | `zolazun vezobul thewem bluzozen.` | Olazun dies, Uzozen makes it happen |
+| *feed* | `zolazun vagazul thewem bluzozen.` | Olazun eats, Uzozen makes it happen |
+| *make X angry* / *paint it red* (a result) | `zuzozen vunemul thewem blolazun.` | the adjective's verb root, Uzozen becomes angry, Olazun makes it happen |
+| *arrived tired* / *left angry* (a state during) | `zolazun velurul herem blarl zalamur godamul.` or `zolazun godamul. zalamur velurul.` | a `/ɡ/` word right after the verb has no reading, so the state is its own clause |
 | *feed* (a child, nurture) | `zolazun vevuyal duzozen.` | the nurturing root, no `thewem` |
-| *remove* | `zanal velurul ual bexagedal thewem buzozen.` | the book leaves the table, Uzozen makes it happen |
-| *discard* | `zanal velulul thewem buzozen.` | the book is disposed of |
-| *ensure* / *make sure* (that it happens) | `zolazun velurul thewem buzozen.` | Olazun leaves, Uzozen makes it happen |
-| *prevent* (make it not happen) | `zolazun velurul vul thewem buzozen.` | Olazun does not leave, Uzozen makes that so |
-| *prevent* (act so that it will not) | `zuzozen vowurel hovam burl zolazun velurul.` | Uzozen walks so that Olazun does not leave |
-| *persuade* | `zolazun theyemolazun thogom vowurel thewem buzozen.` | as I gather, Olazun has decided to walk, and Uzozen made that happen |
-| *introduce* | `zolazun veluyel duzozen thewem bahelan.` | Olazun learns Uzozen, Ahelan makes it happen: *make learned* |
-| *show* / *display* / *reveal* | `zolazun dudozol vawebol thewem buzozen.` | Olazun sees the dog, Uzozen makes it happen |
-| *create* (bring into being) | `zudozol thewem buzozen.` | the dog exists, Uzozen makes it happen |
+| *remove* | `zanal velurul ual bexagedal thewem bluzozen.` | the book leaves the table, Uzozen makes it happen |
+| *discard* | `zanal velulul thewem bluzozen.` | the book is disposed of |
+| *ensure* / *make sure* (that it happens) | `zolazun velurul thewem bluzozen.` | Olazun leaves, Uzozen makes it happen |
+| *prevent* (make it not happen) | `zolazun velurul vul thewem bluzozen.` | Olazun does not leave, Uzozen makes that so |
+| *prevent* (act so that it will not) | `zuzozen vowurel hovam blurl zolazun velurul.` | Uzozen walks so that Olazun does not leave |
+| *persuade* | `zolazun theyemolazun thogom vowurel thewem bluzozen.` | as I gather, Olazun has decided to walk, and Uzozen made that happen |
+| *introduce* | `zolazun veluyel duzozen thewem blahelan.` | Olazun learns Uzozen, Ahelan makes it happen: *make learned* |
+| *show* / *display* / *reveal* | `zolazun dudozol vawebol thewem bluzozen.` | Olazun sees the dog, Uzozen makes it happen |
+| *create* (bring into being) | `zudozol thewem bluzozen.` | the dog exists, Uzozen makes it happen |
 | *create* (make by work) | `zuzozen dudozol vemodal.` | the production root |
-| *excite* / *thrill* | `zolazun vugemal thewem buzozen.` | Olazun is delighted, Uzozen makes it happen |
-| *encourage* / *inspire* / *motivate* | `zolazun theyemolazun thager vowurel thewem buzozen.` | as I gather, Olazun intends to walk, and Uzozen made that happen |
-| *convince* (of a claim) | `zolazun vugowel duzozen thewem bahelan.` | Olazun trusts Uzozen, Ahelan makes it happen |
+| *excite* / *thrill* | `zolazun vugemal thewem bluzozen.` | Olazun is delighted, Uzozen makes it happen |
+| *encourage* / *inspire* / *motivate* | `zolazun theyemolazun thager vowurel thewem bluzozen.` | as I gather, Olazun intends to walk, and Uzozen made that happen |
+| *convince* (of a claim) | `zolazun vugowel duzozen thewem blahelan.` | Olazun trusts Uzozen, Ahelan makes it happen |
 
-> `zolazun vezobul thewem buzozen.`
+> `zolazun vezobul thewem bluzozen.`
 >
-> z-Olazun | v-die | [th-CAUSE | b-Uzozen]
+> z-Olazun | v-die | [th-CAUSE | bl-Uzozen]
 >
 > "Uzozen kills Olazun."
 
-> `zolazun theyemolazun thogom vowurel thewem buzozen.`
+> `zolazun theyemolazun thogom vowurel thewem bluzozen.`
 >
-> z-Olazun | th-CLUES-Olazun | th-DECISION-modifiable | v-walk | [th-CAUSE | b-Uzozen]
+> z-Olazun | th-CLUES-Olazun | th-DECISION-modifiable | v-walk | [th-CAUSE | bl-Uzozen]
 >
 > "I gather Uzozen persuaded Olazun to walk." (Olazun has decided, and can still change that)
 
-> `zuzozen vowurel hovam burl zolazun velurul.`
+> `zuzozen vowurel hovam blurl zolazun velurul.`
 >
-> z-Uzozen | v-walk | [h-so-that | b-lest-clause] | z-Olazun | v-departure
+> z-Uzozen | v-walk | [h-so-that | bl-lest-clause] | z-Olazun | v-departure
 >
 > "Uzozen walks so that Olazun does not leave."
 
@@ -209,9 +209,9 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 |---------|--------|---------|
 | *mean* (signify) | `zezuyel dudozol vezuyelomal.` | the word carries the meaning *dog* |
 | *mean* (intend) | `zuwon thagem vowurel.` | I plan to walk ([intention](intention.md#plan-predict)) |
-| *define* | `zuzozen dezuyelomal hahugem budozol vezuyel.` | tells the meaning, about the dog |
-| *explain* | `zuzozen vezuyel bolazun darl zolazun vowurel thahum barl zudozol varuvel.` | tells Olazun that the walk has the run as its reason |
-| *describe* | `zuzozen hahugem budozol vezuyel bolazun.` | tells Olazun about the dog |
+| *define* | `zuzozen dezuyelomal hahugem bludozol vezuyel.` | tells the meaning, about the dog |
+| *explain* | `zuzozen vezuyel bolazun darl zolazun vowurel thahum blarl zudozol varuvel.` | tells Olazun that the walk has the run as its reason |
+| *describe* | `zuzozen hahugem bludozol vezuyel bolazun.` | tells Olazun about the dog |
 | *know* (that) | `zuzozen vanam darl zudozol varuvel.` | knows that the dog runs; to say how *you* know it, use a [channel](knowing.md#evidentiality) |
 | *know whether* / *know which* | `zuzozen vanam dorl zudozol varuvel.` | knows whether the dog runs; a blank inside asks *which* (`dor`) |
 | *find out* | `zuzozen vumewol dorl zudozol varuvel.` | finds whether the dog runs |
@@ -222,7 +222,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *become* | `zuzozen vebugem duzemol.` | starts being sleepy |
 | *exist* | `zudozol.` | a lone noun: *there is a dog* |
 | *happen* / *occur* | the event's own verb: `verulal.` | no helper word |
-| *depend on* | `zuzozen vowurel thebom thahum berulal.` | only because of rain |
+| *depend on* | `zuzozen vowurel thebom thahum blerulal.` | only because of rain |
 | *allege* / *claim* | `thebam` on the clause | REPORTED: so they say |
 | *compare* / *exceed* | `zuzozen zolazun zel gelazom.` | rank on a shared scale ([comparatives](comparatives.md#comparatives-e)) |
 
@@ -248,16 +248,16 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 
 | English | Agebon | Reading |
 |---------|--------|---------|
-| *condition* (*on the condition that*) | `thohom barl` / `thebom barl` | if / only if |
-| *factor* (one cause among several) | `thahur barl` | a share of the fault or cause |
-| *circumstance* / *context* | a dependent after `barl` (`herem barl`, `thahum barl`) | the situation as a clause |
+| *condition* (*on the condition that*) | `thohom blarl` / `thebom blarl` | if / only if |
+| *factor* (one cause among several) | `thahur blarl` | a share of the fault or cause |
+| *circumstance* / *context* | a dependent after `blarl` (`herem blarl`, `thahum blarl`) | the situation as a clause |
 | *requirement* / *demand* | `thonal` / `thonam` / `thonar` | rule, person, or expectation |
 | *necessary* / *unnecessary* | `thonal` on the act; *more than needed* is the sake bar `thudatham zel` | required by a rule; past what the need asks |
 | *motivation* / *motive* | `zuwon vowurel thawothom.` | my reason; someone else's motive takes a [holder](knowing.md#holder) |
 | *satisfaction* / *pleasure* | `thodotham.` | pleasure, met |
 | *desire* / *wish* | `zuzozen thalem vowurel.` | I want Uzozen to walk; someone else's wish takes a [holder](knowing.md#holder) |
-| *regret* (for the harm) | `thawothum bawan.` | unmet relatedness, yours |
-| *mistake* / *error* | `gogugol gul` or `thahul barl` | not correct, or at fault |
+| *regret* (for the harm) | `thawothum blawan.` | unmet relatedness, yours |
+| *mistake* / *error* | `gogugol gul` or `thahul blarl` | not correct, or at fault |
 | *assumption* | `theyur` | NOTIONAL, toy with it |
 | *premise* (of an argument) | `ebobomahul` | a word about the argument ([arguments](#arguments)) |
 | *truth* / *to tell the truth* | `thavewem` | revelation |
@@ -286,8 +286,8 @@ English *biased* says a view may be bent by what the holder wants from it. Agebo
 | English | Agebon | Reading |
 |---------|--------|---------|
 | *I may be biased* | `zuwon thomam vevemol thudathom.` | I may think this for a stake of my own |
-| *biased* (someone else) | `zuzozen vevemol thudathom baxer.` | as you see it, Uzozen's view serves a stake of their own |
-| *bias* (the noun, *Uzozen's bias*) | `zuzozen vevemol thudathom baxer.` | the view held for a stake; [point back](dependents.md#which-noun) to it to name it |
+| *biased* (someone else) | `zuzozen vevemol thudathom blaxer.` | as you see it, Uzozen's view serves a stake of their own |
+| *bias* (the noun, *Uzozen's bias*) | `zuzozen vevemol thudathom blaxer.` | the view held for a stake; [point back](dependents.md#which-noun) to it to name it |
 | *I'd like to believe* / *wishful thinking* | `zuwon thalem vevemol darl zolazun vowurel.` | I want to think that Olazun walks |
 | *overconfident* | `zuwon theyem zel gugowem.` | surer than the clues warrant |
 | *underconfident* | `zuzozen theyem zuel gugowem.` | less sure than the clues warrant |
@@ -314,29 +314,29 @@ English *biased* says a view may be bent by what the holder wants from it. Agebo
 
 English *because* and *if* can hide whether you **assert the dependent as a world fact**. Agebon puts that choice on the pole: **`thahum`** asserts the condition as the reason the outcome rests on; **`thohom`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary pole.
 
-> `zuzozen vowurel thahum berulal.`
+> `zuzozen vowurel thahum blerulal.`
 >
-> z-Uzozen | v-walk | [th-because | b-rain]
+> z-Uzozen | v-walk | [th-because | bl-rain]
 >
 > "Uzozen walks because it rains." (the rain is stated as fact)
 
-> `zuzozen vowurel thohom berulal.`
+> `zuzozen vowurel thohom blerulal.`
 >
-> z-Uzozen | v-walk | [th-if | b-rain]
+> z-Uzozen | v-walk | [th-if | bl-rain]
 >
 > "Uzozen walks if it rains." (whether it rains is left open)
 
-English *If he'd left, the door would still be locked* is not this pole. Write bookmark [*as-of*](relations.md#as-of) (`hunem`) plus [RESIDUE](knowing.md#residue) / a [forecast](knowing.md#forecast) (a channel such as CLUES plus `bral`) as needed, with **no** `thohom`. `thohom` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `thohom` plus a **date** in *as-of* `/b/`.
+English *If he'd left, the door would still be locked* is not this pole. Write bookmark [*as-of*](relations.md#as-of) (`hunem`) plus [RESIDUE](knowing.md#residue) / a [forecast](knowing.md#forecast) (a channel such as CLUES plus `blral`) as needed, with **no** `thohom`. `thohom` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `thohom` plus a **date** in *as-of* `/b/`.
 
-> `zohol gelewul haram theyem bral hunem barl zolazun velurul.`
+> `zohol gelewul haram theyem blral hunem blarl zolazun velurul.`
 >
-> [z-door | g-locked] | h-RESIDUE | [th-CLUES | b-later] | [h-as-of.bookmark | b-that-clause] | z-Olazun | v-departure
+> [z-door | g-locked] | h-RESIDUE | [th-CLUES | bl-later] | [h-as-of.bookmark | bl-that-clause] | z-Olazun | v-departure
 >
 > "If Olazun had left, the door would still be locked."
 
-> `zaral haram henam b_#22,7 thohom berulal.`
+> `zaral haram henam bl_#22,7 thohom blerulal.`
 >
-> z-money | h-RESIDUE | [h-as-of.ledger | b-_22,7] | [th-if | b-rain]
+> z-money | h-RESIDUE | [h-as-of.ledger | bl-_22,7] | [th-if | bl-rain]
 >
 > "If it rains, the 22 July tab still stands."
 
@@ -346,33 +346,33 @@ English *If he'd left, the door would still be locked* is not this pole. Write b
 
 **Needs:** [If](causation.md#if) · [Dependent clauses](dependents.md#dependent-clauses) · [stance numbers](numbers.md#number-as-stance-by-marker) · [NOTIONAL](knowing.md#notional)
 
-English *If Olazun swam, Uzozen would walk* (past-tense *if*) says the condition is a long shot. Keep the open pole **`thohom barl`** and put *unlikely* **`thrul`** inside the dependent clause.
+English *If Olazun swam, Uzozen would walk* (past-tense *if*) says the condition is a long shot. Keep the open pole **`thohom blarl`** and put *unlikely* **`thrul`** inside the dependent clause.
 
-> `zuzozen vowurel thohom barl zolazun thrul vazuvel.`
+> `zuzozen vowurel thohom blarl zolazun thrul vazuvel.`
 >
-> z-Uzozen | v-walk | [th-if | b-that-clause] | z-Olazun | th-unlikely | v-swim
+> z-Uzozen | v-walk | [th-if | bl-that-clause] | z-Olazun | th-unlikely | v-swim
 >
 > "If Olazun swam, Uzozen would walk." (Olazun swimming is unlikely)
 
 When the condition is known to be false (*If Olazun had left…*), keep the bookmark recipe from [factivity](#factivity) and add *suppose* **`theyur`** inside the dependent. That marks the departure as imagined, not something that happened.
 
-> `zohol gelewul haram theyem bral hunem barl zolazun theyur velurul.`
+> `zohol gelewul haram theyem blral hunem blarl zolazun theyur velurul.`
 >
-> [z-door | g-locked] | h-RESIDUE | [th-CLUES | b-later] | [h-as-of.bookmark | b-that-clause] | z-Olazun | th-NOTIONAL-suppose | v-departure
+> [z-door | g-locked] | h-RESIDUE | [th-CLUES | bl-later] | [h-as-of.bookmark | bl-that-clause] | z-Olazun | th-NOTIONAL-suppose | v-departure
 >
 > "If Olazun had left, the door would still be locked." (Olazun did not leave)
 
 #### Epistemic *because* {#epistemic-because}
 
-English often uses *because* for **speaker grounds** (*it rained, because the street is wet*): Q is how you know P, not what made P happen. Put the inferring or pattern channel on the main sentence and hang the grounds on it with **`barl`** ([evidence clause](knowing.md#evidence-clause)). The channel's ending grades the grounds.
+English often uses *because* for **speaker grounds** (*it rained, because the street is wet*): Q is how you know P, not what made P happen. Put the inferring or pattern channel on the main sentence and hang the grounds on it with **`blarl`** ([evidence clause](knowing.md#evidence-clause)). The channel's ending grades the grounds.
 
-> `verulal theyel barl zugalal gegulol.`
+> `verulal theyel blarl zugalal gegulol.`
 >
-> v-rain | [th-CLUES.strong | b-that-clause] | [z-cloud | g-gray]
+> v-rain | [th-CLUES.strong | bl-that-clause] | [z-cloud | g-gray]
 >
 > "It is raining, judging by the gray clouds." (strong clues)
 
-Use **`thahum barl`** only when Q is also asserted as a world-foundation, what made P happen. For a soft *could be* with no grounds stated, put [MAY](knowing.md#may) (`thomam`, …) on the main sentence.
+Use **`thahum blarl`** only when Q is also asserted as a world-foundation, what made P happen. For a soft *could be* with no grounds stated, put [MAY](knowing.md#may) (`thomam`, …) on the main sentence.
 
 > `zolazun thomam velurul dahelan.`
 >
@@ -380,31 +380,31 @@ Use **`thahum barl`** only when Q is also asserted as a world-foundation, what m
 >
 > "Olazun may be leaving Ahelan."
 
-**For *could be*, use:** [MAY](knowing.md#may) (`oma`). **`thahum`** is world-reason under the claim; **`theyem`** / **`thubem`** + **`barl`** is the grounds you go by.
+**For *could be*, use:** [MAY](knowing.md#may) (`oma`). **`thahum`** is world-reason under the claim; **`theyem`** / **`thubem`** + **`blarl`** is the grounds you go by.
 
-**Related form:** *P, since / given that Q* (Q already shared) uses **`thahum barl`** when Q is the reason P holds in the world, and **`theyem barl`** when Q is only your grounds.
+**Related form:** *P, since / given that Q* (Q already shared) uses **`thahum blarl`** when Q is the reason P holds in the world, and **`theyem blarl`** when Q is only your grounds.
 
 ### Arguments: premises, validity, contradiction {#arguments}
 
 **Needs:** [Deduction](knowing.md#deduction) · [Evidence clause](knowing.md#evidence-clause) · [If](causation.md#if) · [Because, iff, and only because](causation.md#only-because) · [Clause joins](joins.md#clause-joins) · [Sentence linkers](dependents.md#sentence-linkers) · [Hold endings (NOTIONAL)](knowing.md#hold-endings-notional)
 
-An argument has three parts, and each has its own slot. The **link** between premises and conclusion is a pole (*if*, *if and only if*). **How you know** the link is the channel: DEDUCED (`thanam`) when the conclusion must hold. **Whether you grant the premises** depends on what sits before **`barl`**: the channel alone asserts them, and a pole between the channel and **`barl`** does not.
+An argument has three parts, and each has its own slot. The **link** between premises and conclusion is a pole (*if*, *if and only if*). **How you know** the link is the channel: DEDUCED (`thanam`) when the conclusion must hold. **Whether you grant the premises** depends on what sits before **`blarl`**: the channel alone asserts them, and a pole between the channel and **`blarl`** does not.
 
 | English | Agebon | You assert |
 |---------|--------|------------|
-| *P, so Q* / *since P, Q* (a proof) / *a sound argument* | Q **`thanam barl`** P | P and Q |
-| *P implies Q* / *Q follows from P* / *P entails Q* / *a valid argument* | Q **`thanam thohom barl`** P | only the link |
-| *P is equivalent to Q* / *P just means Q* | Q **`thanam thehem barl`** P | only the link, both ways |
-| *P contradicts Q* / *P rules out Q* / *P and Q are inconsistent* | Q **`vul thanam thohom barl`** P | only that they cannot both hold |
-| *Q doesn't follow from P* / *that's a non sequitur* / *an invalid argument* | Q **`thanam thohom thul barl`** P | only that the link fails |
-| several premises (*P and R, so Q*) | one [clause join](joins.md#clause-joins) after **`barl`**: P **`xam`** R | as above |
+| *P, so Q* / *since P, Q* (a proof) / *a sound argument* | Q **`thanam blarl`** P | P and Q |
+| *P implies Q* / *Q follows from P* / *P entails Q* / *a valid argument* | Q **`thanam thohom blarl`** P | only the link |
+| *P is equivalent to Q* / *P just means Q* | Q **`thanam thehem blarl`** P | only the link, both ways |
+| *P contradicts Q* / *P rules out Q* / *P and Q are inconsistent* | Q **`vul thanam thohom blarl`** P | only that they cannot both hold |
+| *Q doesn't follow from P* / *that's a non sequitur* / *an invalid argument* | Q **`thanam thohom thul blarl`** P | only that the link fails |
+| several premises (*P and R, so Q*) | one [clause join](joins.md#clause-joins) after **`blarl`**: P **`xam`** R | as above |
 | *it follows that* (premises in the sentence before) | **`xahel`** Q | Q, on the frame the premises carried |
 | *for the sake of argument* / *suppose P* | P with **`theyur`**, then **`xahel`** for each step | nothing: the steps stay supposed |
 | *I checked every step* / *it seems to follow* | **`thanal`** / **`thanar`** | the same, graded on your check of the steps |
 
-> `zuzozen vowurel vul thanam thohom barl zuzozen vezuvol.`
+> `zuzozen vowurel vul thanam thohom blarl zuzozen vezuvol.`
 >
-> z-Uzozen | [v-walk | v-not] | th-DEDUCED | [th-if | b-that-clause] | z-Uzozen | v-sleep
+> z-Uzozen | [v-walk | v-not] | th-DEDUCED | [th-if | bl-that-clause] | z-Uzozen | v-sleep
 >
 > "If Uzozen is asleep, it follows that Uzozen isn't walking." (I'm only saying the two can't both hold)
 
@@ -427,7 +427,7 @@ To talk **about** an argument rather than make one, use the dictionary words. Ea
 >
 > "The argument isn't sound."
 
-A word about the argument does not make it. *The argument is valid* names the link without stating it; to give the link itself, use **`thanam thohom barl`** from the table above. *A premise* says nothing on whether you grant it; *an assumption* you only toy with is **`theyur`** ([reason nouns](#reason-nouns)). *Conclusion* in the sense of *the end* of a talk or story is `ogaham`, not `ebobomevahul`.
+A word about the argument does not make it. *The argument is valid* names the link without stating it; to give the link itself, use **`thanam thohom blarl`** from the table above. *A premise* says nothing on whether you grant it; *an assumption* you only toy with is **`theyur`** ([reason nouns](#reason-nouns)). *Conclusion* in the sense of *the end* of a talk or story is `ogaham`, not `ebobomevahul`.
 
 ### Stacks (evidentiality, CAUSE, habit)
 <a id="stacks"></a>
@@ -436,9 +436,9 @@ A word about the argument does not make it. *The argument is valid* names the li
 
 A one-off episode and a standing pattern use the same poles. Add extra words for the extra jobs: evidential `/th/` for *how you know* ([evidentiality](knowing.md#evidentiality)), **`hual` / `huam`** for habit ([restrictors](restrictors.md)), **`thewem`** for mechanism ([CAUSE](causation.md#cause)).
 
-> `zerulal gohom bugalal hual.`
+> `zerulal gohom blugalal hual.`
 >
-> [z-rain | [g-if | b-cloud]] | h-always
+> [z-rain | [g-if | bl-cloud]] | h-always
 >
 > "It always rains if there are clouds."
 
@@ -448,11 +448,11 @@ A one-off episode and a standing pattern use the same poles. Add extra words for
 
 **Needs:** [Hopefully](sakes.md#speaker-attitude) · [forecasts](knowing.md#forecast) · [evidentiality](knowing.md#evidentiality) · [soon](knowing.md#dated-channel)
 
-English *I hope X will happen* is two claims: you want it, and you expect it. **`thoguyem`** gives the wanting. The *will* is a [forecast](knowing.md#forecast), so it needs a channel plus **`bral`** (or **`brabum`** for *soon*). If nothing backs it but your gut, the honest channel is INTUITION: faint **`thabor`** for a slim hope, **`thabom`** for an ordinary one.
+English *I hope X will happen* is two claims: you want it, and you expect it. **`thoguyem`** gives the wanting. The *will* is a [forecast](knowing.md#forecast), so it needs a channel plus **`blral`** (or **`blrabum`** for *soon*). If nothing backs it but your gut, the honest channel is INTUITION: faint **`thabor`** for a slim hope, **`thabom`** for an ordinary one.
 
-> `thoguyem thabor brabum huvum verulal.`
+> `thoguyem thabor blrabum huvum verulal.`
 >
-> th-hope | [th-INTUITION.weak | b-+-e-.about] | h-no-longer | v-rain
+> th-hope | [th-INTUITION.weak | bl-+-e-.about] | h-no-longer | v-rain
 >
 > "I hope the rain stops soon, though it's just a hunch."
 
@@ -474,9 +474,9 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 | *pointless* / *futile* | `wurethum goyem` | purpose, unmet |
 | *glad to help* / *rewarding to give* | `thewatham.` | the act met your beneficence |
 | *grateful* / *thankful* / *appreciate* (your own thanks) | `thawotham.`, or the met word for the sake that was served | your sake, met: the thanks ([thanks and sorry](sakes.md#thanks-sorry)) |
-| *benefit* / *benefits Olazun* | `thawotham bolazun` | the act met Olazun's sake |
+| *benefit* / *benefits Olazun* | `thawotham blolazun` | the act met Olazun's sake |
 | *advantage* (a lead over someone) | `zel` with the scale | rank against the other |
-| *satisfy* (you) | `thawotham bawan` | the act met your sake |
+| *satisfy* (you) | `thawotham blawan` | the act met your sake |
 | *satisfy* (a requirement) | `thonal zoel` + scale | tie against the rule: it meets the requirement |
 | *suitable* / *appropriate* (for a need) | `guwatham` or `thudatham zoel` | met, or enough for the need |
 | *more important than* | `zel` between the nouns, then `gurethal` | rank on the lasting met sake |
@@ -495,9 +495,9 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 >
 > "The memo is important." (it matters for the long run)
 
-> `zuzozen vowurel thawotham bolazun.`
+> `zuzozen vowurel thawotham blolazun.`
 >
-> z-Uzozen | v-walk | [th-relatedness-met-any-term | b-Olazun]
+> z-Uzozen | v-walk | [th-relatedness-met-any-term | bl-Olazun]
 >
 > "Uzozen's walking benefits Olazun."
 
@@ -530,8 +530,8 @@ English *wrong* and *ugly* each hide a choice. Name which. *Wrong* is **incorrec
 | English | Agebon | Reading |
 |---------|--------|---------|
 | *wrong* (incorrect) | `gogugol gul` | not correct, closed with **`gul`** |
-| *wrong* (morally) | `thahul barl` + the act | fault on the act ([fault](causation.md#fault)) |
-| *wrong* (bad for someone) | `thawothum bolazun` | the act detracted from Olazun's sake |
+| *wrong* (morally) | `thahul blarl` + the act | fault on the act ([fault](causation.md#fault)) |
+| *wrong* (bad for someone) | `thawothum blolazun` | the act detracted from Olazun's sake |
 | *badly* (manner) | the doer, then `thubem zuel hogugol` | less correctly than usual ([manner words](say-amounts.md#manner-words)) |
 | *ugly* (not beautiful) | `gahelal gul` | not beautiful |
 | *ugly* (below a bar) | `thoguyem zuel gahelal` | less beautiful than I hoped |
@@ -562,7 +562,7 @@ English *deserve* says something is owed without saying why. Name the ground. It
 | *deserves* (it would be fair) | `zolazun demebel vewal buzozen halurem thudathem.` | Olazun ought to give Uzozen the medal, fairly |
 | *deserves* / *is entitled to* (a thing, by right) | `zolazun demebel vewal buzozen thonal.` | the rules require Olazun to give it |
 | *is entitled to* (an act) | `zuzozen vowurel tholel.` | the rules allow Uzozen to walk |
-| *earned* / *merited* (by effort) | `zuzozen varuvel heham bemebel.` | ran in exchange for the medal ([earn](say-people-places.md#give-get)) |
+| *earned* / *merited* (by effort) | `zuzozen varuvel heham blemebel.` | ran in exchange for the medal ([earn](say-people-places.md#give-get)) |
 
 > `zolazun demebel vewal buzozen halurem thudathem.`
 >
@@ -570,9 +570,9 @@ English *deserve* says something is owed without saying why. Name the ground. It
 >
 > "Uzozen deserves the medal." (Olazun ought, in fairness, to give it to Uzozen)
 
-> `zuzozen varuvel heham bemebel.`
+> `zuzozen varuvel heham blemebel.`
 >
-> z-Uzozen | v-run | [h-in-exchange-for | b-medal]
+> z-Uzozen | v-run | [h-in-exchange-for | bl-medal]
 >
 > "Uzozen earned the medal by running."
 
@@ -589,7 +589,7 @@ Many English adjectives are the plain opposite of something that has a root (*un
 | *unclear* / *obscure* | `gagebom gul` | not clear |
 | *honest* / *truthful* / *sincere* | `galamum gul` | not deceiving |
 | *false* / *untrue* | `gogugol gul` | not correct |
-| *responsible* (to blame) | `thahul barl` + the act | fault on the act ([fault](causation.md#fault)) |
+| *responsible* (to blame) | `thahul blarl` + the act | fault on the act ([fault](causation.md#fault)) |
 | *responsible* (in charge) | `gobayem` | of authority |
 | *general* / *generally true* | `zuam` with the kind | every member, as a rule |
 | *universal* / *absolute* / *without exception* | `zual` with the kind | every member, no exceptions |
@@ -654,35 +654,35 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 [RESIDUE](knowing.md#residue) and [FORMER](knowing.md#former-climate) without a hosted pair score against **today’s** books. To score them against a dated now, add [*as-of*](relations.md#as-of). LIVE plus *as-of* puts the camera in that snapshot. MEMORY plus *as-of* is memory of a scene whose internal now is the snapshot. Write **`thevum`** again on the next memory clause; resume the books with **`henar`**. [MAY](knowing.md#may) still evaluates from speech-now.
 
-> `zolazun haram henam b_#22,7 velurul.`
+> `zolazun haram henam bl_#22,7 velurul.`
 >
-> z-Olazun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
+> z-Olazun | h-RESIDUE | [h-as-of.ledger | bl-_22,7] | v-departure
 >
 > "As of 22 July, Olazun had left and was still gone."
 
-> `zuzozen thugom henam b_#22,7 vowurel.`
+> `zuzozen thugom henam bl_#22,7 vowurel.`
 >
-> z-Uzozen | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
+> z-Uzozen | th-LIVE | [h-as-of.ledger | bl-_22,7] | v-walk
 >
 > "It's 22 July, and I can see Uzozen walking."
 
-> `zolazun thevum henam b_#22,7 haram velurul. xuzozen thevum henar vowurel.`
+> `zolazun thevum henam bl_#22,7 haram velurul. xuzozen thevum henar vowurel.`
 >
-> z-Olazun | th-MEMORY | [h-as-of.ledger | b-_22,7] | h-RESIDUE | v-departure . x-Uzozen | th-MEMORY | h-as-of.ledger | v-walk
+> z-Olazun | th-MEMORY | [h-as-of.ledger | bl-_22,7] | h-RESIDUE | v-departure . x-Uzozen | th-MEMORY | h-as-of.ledger | v-walk
 >
 > "I remember that as of 22 July, Olazun had left and was still gone. I also remember Uzozen walking at that point."
 
-> `zuzozen hual vezuyel helam henam b_#22,7.`
+> `zuzozen hual vezuyel helam henam bl_#22,7.`
 >
-> z-Uzozen | h-always | v-tell | h-FORMER | [h-as-of.ledger | b-_22,7]
+> z-Uzozen | h-always | v-tell | h-FORMER | [h-as-of.ledger | bl-_22,7]
 >
 > "As of 22 July, Uzozen's habit of always talking was already in the past."
 
 [NOTIONAL](knowing.md#notional) may stack with *as-of* (*as if, from Friday’s books*). Serious English *if he had* stays bookmark `hunem`, not play.
 
-> `zolazun theyum henam b_#22,7 velurul.`
+> `zolazun theyum henam bl_#22,7 velurul.`
 >
-> z-Olazun | th-NOTIONAL | [h-as-of.ledger | b-_22,7] | v-departure
+> z-Olazun | th-NOTIONAL | [h-as-of.ledger | bl-_22,7] | v-departure
 >
 > "Imagine that, as of 22 July, Olazun is leaving."
 
@@ -691,23 +691,23 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 **Needs:** [PLAN](intention.md#plan-predict) · [forecasts](knowing.md#forecast) · [DECISION](intention.md#decision) · [*as-of*](relations.md#as-of)
 
-[PLAN](intention.md#plan-predict), [DECISION](intention.md#decision), and a [forecast](knowing.md#forecast) (channel + `bral`) without a hosted pair score against **speech-now**. PLAN and DECISION are stances, so the stance pair **`thenam`** ([stance as-of](relations.md#stance-as-of)) dates them: the plan as it stood **at** that now, aimed later than it (*was going to*), and the pick as it stood then. With an event pair ([*as-of*](relations.md#as-of)), the forecast offset counts **after** that now (*would rain*). Repeat the channel and `bral` on the next clause; resume whose-now with `henar` / `huner`.
+[PLAN](intention.md#plan-predict), [DECISION](intention.md#decision), and a [forecast](knowing.md#forecast) (channel + `blral`) without a hosted pair score against **speech-now**. PLAN and DECISION are stances, so the stance pair **`thenam`** ([stance as-of](relations.md#stance-as-of)) dates them: the plan as it stood **at** that now, aimed later than it (*was going to*), and the pick as it stood then. With an event pair ([*as-of*](relations.md#as-of)), the forecast offset counts **after** that now (*would rain*). Repeat the channel and `blral` on the next clause; resume whose-now with `henar` / `huner`.
 
-> `zuwon thager vowurel thenam b_#22,7.`
+> `zuwon thager vowurel thenam bl_#22,7.`
 >
-> z-speaker | th-plan-sketch | v-walk | [th-as-of.ledger | b-_22,7]
+> z-speaker | th-plan-sketch | v-walk | [th-as-of.ledger | bl-_22,7]
 >
 > "As of 22 July, I was going to walk."
 
-> `thubem bral hunem b_#22,7 verulal. xuzozen thubem bral huner vowurel.`
+> `thubem blral hunem bl_#22,7 verulal. xuzozen thubem blral huner vowurel.`
 >
-> [th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain . x-Uzozen | [th-PATTERN | b-later] | h-as-of.bookmark | v-walk
+> [th-PATTERN | bl-later] | [h-as-of.bookmark | bl-_22,7] | v-rain . x-Uzozen | [th-PATTERN | bl-later] | h-as-of.bookmark | v-walk
 >
 > "Taking 22 July as now, it would rain, going by the pattern. From that same now, Uzozen would walk too, going by the pattern."
 
-> `zuwon thogom vowurel thenam b_#22,7.`
+> `zuwon thogom vowurel thenam bl_#22,7.`
 >
-> z-speaker | th-DECISION-modifiable | v-walk | [th-as-of.ledger | b-_22,7]
+> z-speaker | th-DECISION-modifiable | v-walk | [th-as-of.ledger | bl-_22,7]
 >
 > "As of 22 July, I had decided to walk, and could still change that then."
 
@@ -720,21 +720,21 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 A feeling word is how you feel **now**. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`goyem`**, as for any [forecast](knowing.md#forecast) or [dated claim](knowing.md#dated-channel): the offset dates the stimulus, and the channel says how you know it.
 
-> `zezuyel wuwathuraor goyem thebal bral.`
+> `zezuyel wuwathuraor goyem thebal blral.`
 >
-> [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-REPORTED.strong | b-later]
+> [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-REPORTED.strong | bl-later]
 >
 > "Anxious about the dialogue that's coming, as a reliable source says."
 
-> `zezuyel wuwathuraor goyem thabor bral.`
+> `zezuyel wuwathuraor goyem thabor blral.`
 >
-> [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-INTUITION.weak | b-later]
+> [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-INTUITION.weak | bl-later]
 >
 > "Anxious about a dialogue I only have a hunch is coming."
 
-> `zezuyel wawothumol goyem thevum brul.`
+> `zezuyel wawothumol goyem thevum blrul.`
 >
-> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | [th-MEMORY | b-earlier]
+> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | [th-MEMORY | bl-earlier]
 >
 > "Stung by the dialogue, which is over; I was there."
 
@@ -742,17 +742,17 @@ Other shapes use forms you already have:
 
 | Stimulus | Write | English |
 |----------|-------|---------|
-| coming | channel + `bral` | *dreading*, *hoping* |
-| over | channel + `brul` | *regretting*, *relieved*, *grieving* |
+| coming | channel + `blral` | *dreading*, *hoping* |
+| over | channel + `blrul` | *regretting*, *relieved*, *grieving* |
 | over, still counting | [RESIDUE](knowing.md#residue) `haram` | *still stung, though it's done* |
 | recurring | [always](restrictors.md) `hual` | *dreading every dialogue* |
 | did not happen | [NOTIONAL](knowing.md#notional) | *relieved about what didn't happen* |
 
 A [feeling with no object](sakes.md#feeling-no-object) can take a channel and offset too. Then the stimulus is real but unnamed: you know when it is, not what it is.
 
-> `thuwathuruor thabor bral.`
+> `thuwathuruor thabor blral.`
 >
-> th-competence-unmet-passing-UNPLACED-SURGING | [th-INTUITION.weak | b-later]
+> th-competence-unmet-passing-UNPLACED-SURGING | [th-INTUITION.weak | bl-later]
 >
 > "Anxious about something I sense is coming."
 
@@ -765,15 +765,15 @@ How the stimulus is known matters. A dialogue a reliable source announced (`theb
 
 To say you **felt** it at another time, date the feeling itself with [stance as-of](relations.md#stance-as-of): **`thenam`** plus the time or event in `/b/`, after the stimulus. Add a remembering channel for *I remember feeling it*.
 
-> `zezuyel wawothumol goyem thenam bezuyel.`
+> `zezuyel wawothumol goyem thenam blezuyel.`
 >
-> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | [th-as-of.ledger | b-speech]
+> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | [th-as-of.ledger | bl-speech]
 >
 > "The dialogue stung me at the time." (nothing is said about now)
 
-> `zezuyel wawothumol goyem thevum thenam bezuyel.`
+> `zezuyel wawothumol goyem thevum thenam blezuyel.`
 >
-> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | th-MEMORY | [th-as-of.ledger | b-speech]
+> [z-speech | [w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus]] | th-MEMORY | [th-as-of.ledger | bl-speech]
 >
 > "I remember the dialogue stinging at the time."
 
@@ -786,21 +786,21 @@ With no pair, the feeling is now. Keeping *it hurt then* apart from *it hurts no
 
 A direction locus says where the charge **goes**. It does not say who **caused** it. Name the cause with the [because pole](causation.md#because) after the feeling, and name its [fault](causation.md#fault) only when you mean it. The target and the cause may differ.
 
-> `zezuyel wawothumom goyem buzozen thahum berulal.`
+> `zezuyel wawothumom goyem bluzozen thahum blerulal.`
 >
-> [z-speech | [[w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | b-Uzozen]] | [th-because | b-rain]
+> [z-speech | [[w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | bl-Uzozen]] | [th-because | bl-rain]
 >
 > "Irritated at Uzozen about the dialogue, but the rain caused it."
 
-> `zonal wawothumol goyem bolazun thahum barl zolazun vezuyel.`
+> `zonal wawothumol goyem blolazun thahum blarl zolazun vezuyel.`
 >
-> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Olazun]] | [th-because | b-that-clause] | z-Olazun | v-tell
+> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Olazun]] | [th-because | bl-that-clause] | z-Olazun | v-tell
 >
 > "Resentful at Olazun about the memo, because Olazun spoke." (a cause, and no one is blamed)
 
-> `zonal wawothumol goyem bolazun thomam thahul barl zolazun vezuyel.`
+> `zonal wawothumol goyem blolazun thomam thahul blarl zolazun vezuyel.`
 >
-> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | b-Olazun]] | th-MAY | [th-because.fault | b-that-clause] | z-Olazun | v-tell
+> [z-memo | [[w-relatedness-unmet-modifiable-AIMED-STILL | g-stimulus] | bl-Olazun]] | th-MAY | [th-because.fault | bl-that-clause] | z-Olazun | v-tell
 >
 > "Resentful at Olazun about the memo; maybe Olazun was wrong to speak."
 
@@ -876,7 +876,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. **
 **1.** *Olazun pours because Ahelan sees a fire.* (Ahelan really does see one)
 
 ::: details Show answer
-`zolazun vobuvul thahum barl zahelan davulul vawebol.`
+`zolazun vobuvul thahum blarl zahelan davulul vawebol.`
 
 z-Olazun | v-pour | [th-because | b-that-clause] | z-Ahelan | d-fire | v-see
 :::
@@ -884,7 +884,7 @@ z-Olazun | v-pour | [th-because | b-that-clause] | z-Ahelan | d-fire | v-see
 **2.** *Uzozen pours if there is a test tube.* (there may or may not be one)
 
 ::: details Show answer
-`zuzozen vobuvul thohom bowal.`
+`zuzozen vobuvul thohom blowal.`
 
 z-Uzozen | v-pour | [th-if | b-test-tube]
 :::
@@ -900,7 +900,7 @@ z-Uzozen | th-MAY | v-pour
 **4.** *Uzozen may be sitting, because Olazun pours.*
 
 ::: details Show answer
-`zuzozen thomam vuhohol thahum barl zolazun vobuvul.`
+`zuzozen thomam vuhohol thahum blarl zolazun vobuvul.`
 
 z-Uzozen | th-MAY | v-sit | [th-because | b-that-clause] | z-Olazun | v-pour
 :::
@@ -908,7 +908,7 @@ z-Uzozen | th-MAY | v-sit | [th-because | b-that-clause] | z-Olazun | v-pour
 **5.** *Melting always happens if there is fire.*
 
 ::: details Show answer
-`zumemul gohom bavulul hual.`
+`zumemul gohom blavulul hual.`
 
 [z-melt | [g-if | b-fire]] | h-always
 :::
@@ -916,14 +916,14 @@ z-Uzozen | th-MAY | v-sit | [th-because | b-that-clause] | z-Olazun | v-pour
 **6.** *If Olazun had poured, the test-tube would still be melting.*
 
 ::: details Show answer
-`zowal vumemul haram theyem bral hunem barl zolazun vobuvul.`
+`zowal vumemul haram theyem blral hunem blarl zolazun vobuvul.`
 
 z-test-tube | v-melt | h-RESIDUE | [th-CLUES | b-later] | [h-as-of.bookmark | b-that-clause] | z-Olazun | v-pour
 :::
 
 #### Agebon → English {#reasons-causation-agebon-to-english}
 
-**1.** `zuzozen vobuvul thahum bavulul.`
+**1.** `zuzozen vobuvul thahum blavulul.`
 
 ::: details Show answer
 
@@ -932,7 +932,7 @@ z-Uzozen | v-pour | [th-because | b-fire]
 *Uzozen pours because there is fire.*
 :::
 
-**2.** `zolazun vobuvul thohom bowal.`
+**2.** `zolazun vobuvul thohom blowal.`
 
 ::: details Show answer
 
@@ -950,7 +950,7 @@ z-Ahelan | th-MAY | d-fire | v-see
 *Maybe Ahelan sees a fire.*
 :::
 
-**4.** `zolazun thomam vobuvul thahum barl zahelan davulul vawebol.`
+**4.** `zolazun thomam vobuvul thahum blarl zahelan davulul vawebol.`
 
 ::: details Show answer
 
@@ -959,7 +959,7 @@ z-Olazun | th-MAY | v-pour | [th-because | b-that-clause] | z-Ahelan | d-fire | 
 *Olazun may be pouring, because Ahelan sees a fire.*
 :::
 
-**5.** `zuzozen varuvel thohom bavulul hual.`
+**5.** `zuzozen varuvel thohom blavulul hual.`
 
 ::: details Show answer
 
@@ -968,7 +968,7 @@ z-Uzozen | v-run | [th-if | b-fire] | h-always
 *Uzozen always runs if there is fire.*
 :::
 
-**6.** `zowal vumemul haram theyem bral hunem barl zolazun vobuvul.`
+**6.** `zowal vumemul haram theyem blral hunem blarl zolazun vobuvul.`
 
 ::: details Show answer
 
@@ -1002,7 +1002,7 @@ Short drills for these recipes. Try each item before opening **Show answer**. PL
 **1.** *As of 22 July, I was going to walk.*
 
 ::: details Show answer
-`zuwon thager vowurel thenam b_#22,7.`
+`zuwon thager vowurel thenam bl_#22,7.`
 
 z-speaker | th-plan-sketch | v-walk | [th-as-of.ledger | b-_22,7]
 :::
@@ -1010,7 +1010,7 @@ z-speaker | th-plan-sketch | v-walk | [th-as-of.ledger | b-_22,7]
 **2.** *Taking 22 July as now, it would rain, going by the pattern.*
 
 ::: details Show answer
-`thubem bral hunem b_#22,7 verulal.`
+`thubem blral hunem bl_#22,7 verulal.`
 
 [th-PATTERN | b-later] | [h-as-of.bookmark | b-_22,7] | v-rain
 :::
@@ -1018,14 +1018,14 @@ z-speaker | th-plan-sketch | v-walk | [th-as-of.ledger | b-_22,7]
 **3.** *As of 22 July, I had decided to walk, and could still change that then.*
 
 ::: details Show answer
-`zuwon thogom vowurel thenam b_#22,7.`
+`zuwon thogom vowurel thenam bl_#22,7.`
 
 z-speaker | th-DECISION-modifiable | v-walk | [th-as-of.ledger | b-_22,7]
 :::
 
 #### Agebon → English {#reasons-plans-agebon-to-english}
 
-**1.** `thubem bral hunem b_#22,7 verulal. xuzozen thubem bral huner vowurel.`
+**1.** `thubem blral hunem bl_#22,7 verulal. xuzozen thubem blral huner vowurel.`
 
 ::: details Show answer
 
@@ -1034,7 +1034,7 @@ z-speaker | th-DECISION-modifiable | v-walk | [th-as-of.ledger | b-_22,7]
 *Taking 22 July as now, it would rain, going by the pattern. From that same now, Uzozen would walk too, going by the pattern.*
 :::
 
-**2.** `zuwon thager vowurel thenam b_#22,7.`
+**2.** `zuwon thager vowurel thenam bl_#22,7.`
 
 ::: details Show answer
 
@@ -1043,7 +1043,7 @@ z-speaker | th-plan-sketch | v-walk | [th-as-of.ledger | b-_22,7]
 *As of 22 July, I was going to walk.*
 :::
 
-**3.** `zuwon thogom vowurel thenam b_#22,7.`
+**3.** `zuwon thogom vowurel thenam bl_#22,7.`
 
 ::: details Show answer
 
@@ -1077,7 +1077,7 @@ Short drills for these recipes. Try each item before opening **Show answer**.
 **1.** *As of 22 July, Olazun had left and was still gone.*
 
 ::: details Show answer
-`zolazun haram henam b_#22,7 velurul.`
+`zolazun haram henam bl_#22,7 velurul.`
 
 z-Olazun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
@@ -1085,7 +1085,7 @@ z-Olazun | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 **2.** *It's 22 July, and I can see Uzozen walking.*
 
 ::: details Show answer
-`zuzozen thugom henam b_#22,7 vowurel.`
+`zuzozen thugom henam bl_#22,7 vowurel.`
 
 z-Uzozen | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
 :::
@@ -1093,14 +1093,14 @@ z-Uzozen | th-LIVE | [h-as-of.ledger | b-_22,7] | v-walk
 **3.** *As of 22 July, Olazun may have left and still been gone.*
 
 ::: details Show answer
-`zolazun thomam haram henam b_#22,7 velurul.`
+`zolazun thomam haram henam bl_#22,7 velurul.`
 
 z-Olazun | th-MAY | h-RESIDUE | [h-as-of.ledger | b-_22,7] | v-departure
 :::
 
 #### Agebon → English {#reasons-knowing-agebon-to-english}
 
-**1.** `zolazun thevum henam b_#22,7 haram velurul.`
+**1.** `zolazun thevum henam bl_#22,7 haram velurul.`
 
 ::: details Show answer
 
@@ -1109,7 +1109,7 @@ z-Olazun | th-MEMORY | [h-as-of.ledger | b-_22,7] | h-RESIDUE | v-departure
 *I remember that as of 22 July, Olazun had left and was still gone.*
 :::
 
-**2.** `zolazun thevum henam b_#22,7 haram velurul. xuzozen thevum henar vowurel.`
+**2.** `zolazun thevum henam bl_#22,7 haram velurul. xuzozen thevum henar vowurel.`
 
 ::: details Show answer
 
@@ -1118,7 +1118,7 @@ z-Olazun | th-MEMORY | [h-as-of.ledger | b-_22,7] | h-RESIDUE | v-departure . x-
 *I remember that as of 22 July, Olazun had left and was still gone. I also remember Uzozen walking at that point.*
 :::
 
-**3.** `zolazun thomam haram henam b_#22,7 velurul.`
+**3.** `zolazun thomam haram henam bl_#22,7 velurul.`
 
 ::: details Show answer
 
@@ -1155,7 +1155,7 @@ Short drills for these recipes. A channel and offset after **`goyem`** date the 
 **1.** *Anxious about the dialogue that's coming, as a reliable source says.* (competence at stake for now; hangs over the room; surging)
 
 ::: details Show answer
-`zezuyel wuwathuraor goyem thebal bral.`
+`zezuyel wuwathuraor goyem thebal blral.`
 
 [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-REPORTED.strong | b-later]
 :::
@@ -1163,14 +1163,14 @@ Short drills for these recipes. A channel and offset after **`goyem`** date the 
 **2.** *Irritated at Uzozen about the memo, but the rain caused it.* (unmet relatedness, modifiable; aimed; flowing)
 
 ::: details Show answer
-`zonal wawothumom goyem buzozen thahum berulal.`
+`zonal wawothumom goyem bluzozen thahum blerulal.`
 
 [z-memo | [[w-relatedness-unmet-modifiable-AIMED-FLOWING | g-stimulus] | b-Uzozen]] | [th-because | b-rain]
 :::
 
 #### Agebon → English {#reasons-feelings-agebon-to-english}
 
-**1.** `zonal wawothumol goyem thenam bezuyel.`
+**1.** `zonal wawothumol goyem thenam blezuyel.`
 
 ::: details Show answer
 
@@ -1179,7 +1179,7 @@ Short drills for these recipes. A channel and offset after **`goyem`** date the 
 *The memo stung me at the time of the dialogue.*
 :::
 
-**2.** `zezuyel wawothumol goyem bolazun thahul barl zolazun vezuyel.`
+**2.** `zezuyel wawothumol goyem blolazun thahul blarl zolazun vezuyel.`
 
 ::: details Show answer
 
