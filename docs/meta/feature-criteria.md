@@ -1,6 +1,6 @@
 # Feature criteria (editors)
 
-Editors only — not linked from grammar pages. The test a psychological feature must pass before it enters the language. The aims themselves (compassion, rationality, empowerment) and the learner-facing tour live in [why-agebon.md](../grammar/why-agebon.md).
+Editors only — not linked from grammar pages. The test a psychological feature must pass before it enters the language. The aims themselves (compassion, rationality, empowerment) and the learner-facing tour live in [purpose.md](../grammar/purpose.md).
 
 A psychological feature must meet these criteria:
 

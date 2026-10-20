@@ -34,11 +34,11 @@ Ask in order. Prefer the **earlier** stage when a concept sits on a boundary and
 ## Cross-doc path
 <a id="cross-doc-path"></a>
 
-Read **`docs/grammar/`** only, in stage order. [why-agebon.md](../grammar/why-agebon.md) and [introduction.md](../grammar/introduction.md) are orientation (not stages).
+Read **`docs/grammar/`** only, in stage order. [purpose.md](../grammar/purpose.md) and [introduction.md](../grammar/introduction.md) are orientation (not stages).
 
 ### Beginner
 
-1. [why-agebon.md](../grammar/why-agebon.md) — psychological purpose, limits, benefit tour (not a learning stage)
+1. [purpose.md](../grammar/purpose.md) — psychological purpose, limits, benefit tour (not a learning stage)
 2. [introduction.md](../grammar/introduction.md) — name, grammar design, how to learn
 3. [phonology.md Beginner](../grammar/phonology.md#beginner) (letters / word edges)
 4. [word-endings.md Beginner](../grammar/word-endings.md#beginner) (citation **-l** / **-m** / **-n**)

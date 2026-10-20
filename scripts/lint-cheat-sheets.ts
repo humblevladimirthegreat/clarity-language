@@ -42,12 +42,12 @@ const SHEETS: Record<string, string> = {
   "roles-comparing": "roles-comparing.md",
   numbers: "numbers.md",
   "joins-hooks": "joins-hooks.md",
-  "agebon-english": "agebon-english.md",
+  "to-english": "to-english.md",
   exceptions: "exceptions.md",
 };
 
 const CLARITISH_SHEET = "cheat-sheet.md";
-const CLARITISH_NOT_LESSONS = new Set(["index.md", "learn-agebon.md", CLARITISH_SHEET, "editor.md"]);
+const CLARITISH_NOT_LESSONS = new Set(["index.md", "learn.md", CLARITISH_SHEET, "editor.md"]);
 const CLARITISH_PATTERN_ONLY = new Set(["feelings.md"]);
 
 const MARKER_RE = /<!--\s*cheat-sheet:\s*(\S+)\s*-->/g;

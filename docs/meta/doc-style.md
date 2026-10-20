@@ -60,7 +60,7 @@ Do **not** let the picture stand in for the contrast. Cover the image words: the
 
 **Test (cover the picture):** delete the metaphor nouns. Could they still restate the split? If not, unpack first.
 
-Allowed: published-root scenes in **Cue**; [conceptual metaphors](../grammar/why-agebon.md#conceptual-metaphors) after the job is named; one short `(cue: …)` after the plain rule.
+Allowed: published-root scenes in **Cue**; [conceptual metaphors](../grammar/purpose.md#conceptual-metaphors) after the job is named; one short `(cue: …)` after the plain rule.
 
 ### House shorthand needs a first-use gloss
 <a id="house-shorthand"></a>

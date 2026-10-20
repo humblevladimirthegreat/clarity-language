@@ -9,9 +9,12 @@
  * Every tracked text file: `Agebon` / `agebon` / `AGEBON` take the same casing of the new name;
  * any other casing is listed for review and left as is. The old root (name minus -n) is respelled
  * only in docs/meta/language-name.md, since elsewhere it may now be another row's root.
- * Tracked paths carrying the name are `git mv`ed, and each moved grammar page gets a
- * `pageMoves` row in scripts/site-redirects.json (whose `from` URLs are never rewritten).
- * `--write` refuses a dirty tree unless `--force`, so the rename is one reviewable diff.
+ * Tracked paths carrying the name are `git mv`ed, except published grammar pages
+ * (Markdown under docs/grammar/ outside .vitepress/), whose slugs must stay
+ * name-stable (`purpose.md`, `claritish/learn.md`, `cheat-sheets/to-english.md`).
+ * A grammar page whose path still carries the name is a block: rename it first.
+ * If a published page were moved, it would get a `pageMoves` row; `from` URLs
+ * and existing notes are never rewritten. `--write` refuses a dirty tree unless `--force`.
  */
 import { execFileSync } from "node:child_process";
 import { readFileSync, writeFileSync } from "node:fs";
@@ -26,6 +29,11 @@ const REDIRECTS = "scripts/site-redirects.json";
 /** The one page that names the root beside the name (introduction.md is retied with the root). */
 const ROOT_PAGES = ["docs/meta/language-name.md"];
 const GRAMMAR_PREFIX = "docs/grammar/";
+
+/** Learner-facing Markdown: public slugs must not track the language name, so they are never moved. */
+function isPublishedGrammarPage(file: string): boolean {
+  return file.startsWith(GRAMMAR_PREFIX) && file.endsWith(".md") && !file.includes("/.vitepress/");
+}
 
 function parseArgs(argv: string[]) {
   const options = { write: false, force: false, from: "", to: "" };
@@ -118,17 +126,25 @@ for (const [file, text] of texts) {
   }
 }
 
-const moves = tracked
-  .filter((file) => file.toLowerCase().includes(from))
+const namedPaths = tracked.filter((file) => file.toLowerCase().includes(from));
+const blockedPages = namedPaths.filter(isPublishedGrammarPage);
+for (const file of blockedPages) {
+  console.log(
+    `blocking  ${file}  grammar slug carries the language name; pick a name-stable filename first (purpose.md, claritish/learn.md, cheat-sheets/to-english.md)`,
+  );
+}
+const moves = namedPaths
+  .filter((file) => !isPublishedGrammarPage(file))
   .map((file) => ({ file, next: file.replace(nameRe, (match) => recase(match, to) ?? match) }))
   .filter(({ file, next }) => file !== next);
 for (const { file, next } of moves) console.log(`move  ${file} → ${next}`);
 
-// Old public URLs keep working: retarget rows into a moved page, then add a row per moved page.
+// Old public URLs keep working if a published page is moved: retarget rows, then add a row per move.
+// Published pages are excluded from `moves`, so this is empty unless that filter changes.
 const pageUrl = (file: string) => `/grammar/${file.slice(GRAMMAR_PREFIX.length).replace(/\.md$/, ".html")}`;
 const redirects = JSON.parse(texts.get(REDIRECTS)!) as { pageMoves: PageMove[] };
 const urlMoves = moves
-  .filter(({ file }) => file.startsWith(GRAMMAR_PREFIX) && file.endsWith(".md") && !file.includes("/.vitepress/"))
+  .filter(({ file }) => isPublishedGrammarPage(file))
   .map(({ file, next }) => ({ from: pageUrl(file), to: pageUrl(next) }));
 for (const row of redirects.pageMoves) {
   const target = urlMoves.find((move) => move.from === row.to);
@@ -136,7 +152,6 @@ for (const row of redirects.pageMoves) {
     console.log(`redirect  ${row.from}: ${row.to} → ${target.to}`);
     row.to = target.to;
   }
-  if (row.note) row.note = row.note.replace(nameRe, (match) => recase(match, to) ?? match);
 }
 for (const move of urlMoves) {
   console.log(`redirect  ${move.from} → ${move.to}`);
@@ -151,6 +166,12 @@ console.log(
   `\n${capitalize(from)} → ${capitalize(to)}: ${total} replacements in ${rewritten.size} files; ${moves.length} moves; ${urlMoves.length} new redirects; ${review.length} to review`,
 );
 
+if (blockedPages.length > 0) {
+  console.error(
+    `${blockedPages.length} grammar page slug(s) still carry the language name. Rename those files to a stable slug, then rerun.`,
+  );
+  process.exit(1);
+}
 if (!options.write) {
   console.log("Dry run. Pass --write to apply.");
   process.exit(0);

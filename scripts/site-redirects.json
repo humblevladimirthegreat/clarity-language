@@ -47,7 +47,7 @@
     },
     {
       "from": "/grammar/why-agelan.html",
-      "to": "/grammar/why-agebon.html",
+      "to": "/grammar/purpose.html",
       "note": "Public URL after renaming why-agelan.md through why-agazan.md to why-agebon.md."
     },
     {
@@ -57,7 +57,7 @@
     },
     {
       "from": "/grammar/agazan-english-cheatsheet.html",
-      "to": "/grammar/cheat-sheets/agebon-english.html",
+      "to": "/grammar/cheat-sheets/to-english.html",
       "note": "Public URL after moving agazan-english-cheatsheet.md into cheat-sheets/ and renaming it agebon-english.md."
     },
     {
@@ -67,38 +67,53 @@
     },
     {
       "from": "/grammar/why-agazan.html",
-      "to": "/grammar/why-agebon.html",
+      "to": "/grammar/purpose.html",
       "note": "Public URL after renaming the language Agazan to Agebon (root tails respelled 👓)."
     },
     {
       "from": "/grammar/claritish/learn-agazan.html",
-      "to": "/grammar/claritish/learn-agebon.html",
+      "to": "/grammar/claritish/learn.html",
       "note": "Public URL after renaming the language Agazan to Agebon."
     },
     {
       "from": "/grammar/cheat-sheets/agazan-english.html",
-      "to": "/grammar/cheat-sheets/agebon-english.html",
+      "to": "/grammar/cheat-sheets/to-english.html",
       "note": "Public URL after renaming the language Agazan to Agebon."
     },
     {
       "from": "/grammar/cheat-sheets/egabon-english.html",
-      "to": "/grammar/cheat-sheets/agebon-english.html",
+      "to": "/grammar/cheat-sheets/to-english.html",
       "note": "Public URL after the language was renamed Egabon → Agebon."
     },
     {
       "from": "/grammar/claritish/learn-egabon.html",
-      "to": "/grammar/claritish/learn-agebon.html",
+      "to": "/grammar/claritish/learn.html",
       "note": "Public URL after the language was renamed Egabon → Agebon."
     },
     {
       "from": "/grammar/why-egabon.html",
-      "to": "/grammar/why-agebon.html",
+      "to": "/grammar/purpose.html",
       "note": "Public URL after the language was renamed Egabon → Agebon."
     },
     {
       "from": "/grammar/x-compounds.html",
       "to": "/grammar/compounds.html",
       "note": "Public URL after renaming x-compounds.md to compounds.md."
+    },
+    {
+      "from": "/grammar/why-agebon.html",
+      "to": "/grammar/purpose.html",
+      "note": "Public URL after renaming why-agebon.md to purpose.md so the slug does not track the language name."
+    },
+    {
+      "from": "/grammar/claritish/learn-agebon.html",
+      "to": "/grammar/claritish/learn.html",
+      "note": "Public URL after renaming learn-agebon.md to learn.md so the slug does not track the language name."
+    },
+    {
+      "from": "/grammar/cheat-sheets/agebon-english.html",
+      "to": "/grammar/cheat-sheets/to-english.html",
+      "note": "Public URL after renaming agebon-english.md to to-english.md so the slug does not track the language name."
     }
   ]
 }

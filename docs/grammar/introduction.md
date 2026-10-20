@@ -6,7 +6,7 @@ Agebon has two kinds of goals: psychological goals, which say what the language 
 
 ## Purpose {#purpose}
 
-Agebon's psychological goals are **compassion**, **rationality**, and **empowerment**: it builds psychological distinctions into its vocabulary and grammar, so that ordinary speech nudges you toward them. [Why Agebon](why-agebon.md) explains those goals, tours the features that serve them, and says what the language does not claim.
+Agebon's psychological goals are **compassion**, **rationality**, and **empowerment**: it builds psychological distinctions into its vocabulary and grammar, so that ordinary speech nudges you toward them. [Why Agebon](purpose.md) explains those goals, tours the features that serve them, and says what the language does not claim.
 
 If you want an easy start before the grammar, [Claritish](claritish/index.md) teaches a few Agebon words you can drop into English today.
 

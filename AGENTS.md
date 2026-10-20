@@ -14,7 +14,7 @@ Each row names what the file owns. The file is the authority; this table is only
 
 | Source | Owns |
 |--------|------|
-| `why-agebon.md` | Psychological purpose, limits, learner tour. Site home. |
+| `purpose.md` | Psychological purpose, limits, learner tour. Site home. |
 | `introduction.md` | Name, design goals, learning path. |
 | `clause.md` | **Source of truth** for one-clause grammar: role letters, default order, hosting, chaining. Other docs own their subsystems. |
 | `phonology.md` | Phonology, phonotactics, letter names. |
@@ -84,7 +84,7 @@ Each row names what the file owns. The file is the authority; this table is only
 
 - Node ≥ 24 (runs `.ts` natively; see `.nvmrc`).
 - Tests run with **`npm test`** (Node's built-in runner via `tsx --test`). Vitest is intentionally **not** installed, never run bare `npx vitest`. Use `npx --no-install <tool>` to check for a CLI; avoid bare `npx <tool>` for tools this repo does not depend on.
-- Language design work goes through `introduction.md`, `why-agebon.md`, `clause.md` and the linked grammar docs (and `TODO.md` until absorbed). Do **not** treat any parser implementation as design authority until it matches the docs.
+- Language design work goes through `introduction.md`, `purpose.md`, `clause.md` and the linked grammar docs (and `TODO.md` until absorbed). Do **not** treat any parser implementation as design authority until it matches the docs.
 - **Parser changes ship with grammar changes:** a change to what the parser accepts, rejects, or how it reads a form lands in the same change as the grammar-doc edit that teaches it (the owning page, plus `unassigned-reserved.md` for a newly rejected spelling and `design-decisions.md` when the rejection has a reason beyond *no reading yet*). Never change parser behavior without the matching grammar edit.
 - **Orthography invariants** ([phonology](docs/grammar/phonology.md)): `th` is one letter written with two characters, and there is no `t`. No hyphen after the PoS letter. Native text is unicase lowercase; capitals only inside foreign / opaque payloads ([spans](docs/grammar/spans.md)). Named reference is marked by ending, not case. Prefer published lexicon roots when the gloss matches.
 - **Example sentences**: do not add a leading assertion turn to every example when it is omissible, see [clause.md](docs/grammar/clause.md) and [speech-moves.md](docs/grammar/speech-moves.md).

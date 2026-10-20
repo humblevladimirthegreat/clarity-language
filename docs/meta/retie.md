@@ -18,7 +18,7 @@ The name is the 👓 root + **-n**. `retie-docs` never respells it: not `agebon`
 
 - Respells the name in every tracked text file in its own casing (`Agebon`, `agebon`, `AGEBON`): English prose, headings, word-bank headers (`| English | Agebon | Cue |`), the fence info string, lint kinds (`agebon-in-text-fence`), identifiers, the package name. Any other casing is listed for review.
 - Respells the old root only in [language-name.md](language-name.md); elsewhere that spelling may now be another row's root.
-- Moves every tracked path that carries the name, and adds a `pageMoves` row to `scripts/site-redirects.json` for each moved grammar page, retargeting older rows so redirects never chain. Paste the new Amplify JSON afterward ([site redirects](site-redirects.md)).
+- Moves every tracked path that carries the name **except published grammar pages** (Markdown under `docs/grammar/` outside `.vitepress/`). Those slugs stay name-stable (`purpose.md`, `claritish/learn.md`, `cheat-sheets/to-english.md`); a grammar page whose path still carries the name is a block. Other paths (`lint-agebon-docs.ts`, `AgebonInspect.vue`) still move. Adds a `pageMoves` row to `scripts/site-redirects.json` for each moved grammar page, retargeting older rows so redirects never chain (`from` URLs and existing notes stay as written). Paste the new Amplify JSON afterward ([site redirects](site-redirects.md)).
 - Refuses `--write` on a dirty tree, or when the new name already occurs, unless `--force`. After the rename, `npm run rename-language -- --from <old> --force` catches stragglers (edits merged later).
 
 ## Pages the retie skips {#skipped}

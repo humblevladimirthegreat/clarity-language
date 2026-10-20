@@ -2,7 +2,7 @@
 
 <!-- retie: skip -->
 
-**Status:** PARTIALLY IMPLEMENTED. Phases 1 and 2 are built: every five-letter root is placed by its tail, the language name is **Agebon** (`egabo` + **-n**), and the docs are retied ([phase 2 as built](#phase-2-as-built)). Phase 3 is built too: the checkpoint look-alike lint runs in `npm run build` ([phase 3 as built](#phase-3-as-built)). Still open: the [`--all` failure](#prerequisite). Spellings in this page are phase 1 output; the live ones are in [`lexicon-published.csv`](../../../data/lexicon-published.csv).  
+**Status:** PARTIALLY IMPLEMENTED. Phases 1 and 2 are built: every five-letter root is placed by its tail, the language name is **Agebon** (`egabo` + **-n**), and the docs are retied ([phase 2 as built](#phase-2-as-built)). Phase 3 is built too: the checkpoint look-alike lint runs in `npm run build` ([phase 3 as built](#phase-3-as-built)). Still open: the [`--all` failure](#prerequisite), and [reuse of `n`](#reuse-n) (drafted, lexicon not retagged). Spellings in this page are phase 1 output; the live ones are in [`lexicon-published.csv`](../../../data/lexicon-published.csv).  
 **Related:** [tail suffixes](../../grammar/compounds.md#tail-suffixes); [lexicon editing](../../meta/lexicon.md) ([§ root spellings](../../meta/lexicon.md#root-spellings-come-from-convert-word), [§ root length](../../meta/lexicon.md#root-length), [§ root tails](../../meta/lexicon.md#root-tails), [§ seeds](../../meta/lexicon.md#seeds-concrete-senses-and-pictographs), [§ core vocabulary](../../meta/lexicon.md#core-vocabulary-column)); [clause.md § role letters](../../grammar/clause.md#role-letters); [speech-moves.md § speech act](../../grammar/speech-moves.md#speech-act-beginner) (the vowel series); [word-endings.md](../../grammar/word-endings.md); [compounds.md § lexical compounds](../../grammar/compounds.md#lexical-compounds); [hooks.md § hook compounds](../../grammar/hooks.md#hook-compounds); [numeric-derivation.md](../../grammar/numeric-derivation.md); [language-name.md](../../meta/language-name.md); [`src/word-converter.ts`](../../../src/word-converter.ts) (`SECOND_CONSONANT_BAN`, `longRootCandidates`, `rankRoots`); [`src/echo-metric.ts`](../../../src/echo-metric.ts); [`src/lexicon-place.ts`](../../../src/lexicon-place.ts); [`src/lexicon-compounds.ts`](../../../src/lexicon-compounds.ts) (`factorizationsForStem`, `validateCompoundRows`); [`src/parse/hook-compounds.ts`](../../../src/parse/hook-compounds.ts) (`parseHookCompoundCite`); [`src/closed-roots.ts`](../../../src/closed-roots.ts); `number-mnemonic.md` and `number-respelling.md` ([interactions](#interactions)).  
 **Design authority:** none until absorbed. One grammar line changes: a hook compound's left piece must be a dictionary root ([hook compounds](#hook-compounds)). The grammar pages don't teach root spellings, so the tails reach learners through a new section in Advanced [phonology](../../grammar/phonology.md#advanced), which dictionary views link to ([phase 2](#phase-2)).
 
@@ -79,7 +79,7 @@ Row counts are from the phase 1 draft of `lexicon-tails.csv` (2026-10-19).
 | `w` | **tools and things you use** | `/w/` is *with* (the instrument) | knife, hammer, broom, lamp, key, phone | 94 |
 | `g` | **signs, marks and writing**: symbols, paper, letters, religion marks | `/ɡ/` is *grade*, a mark on something | warning, circle, book, envelope, star-of-david | 102 |
 | `r` | **counting, time, money and rhythm**: numbers, charts, clocks, coins, music, dance, dated events, zodiac | `r` after a role letter starts a number | clock, coin, calendar, bar-chart, drum, music note, dance, birthday, aries | 89 |
-| `n` | **named places**: countries | **-n** is the name ending | country flags | 262 |
+| `n` | **named places**: countries | **-n** is the name ending | country flags | 262 ([reuse](#reuse-n) drafts a new `n`) |
 
 Edge rules:
 
@@ -461,6 +461,62 @@ With this lint, when the tails are taught doesn't affect placement.
   - *tuxedo* became *dress*, *ship* became *island* at roles intermediate (*ship* is now introduced at hooks advanced), *medal* became *trophy*, and *hat* became *dress*.
   - *window*, *tuxedo*, *medal* and *hat* no longer have a `core` cell.
 
+### Reuse of `n`: papers and sports {#reuse-n}
+
+Country and territory rows keep `kind` **`named`** and a [place-name root](../../../src/place-root.ts). They are not a tail kind. That frees the second consonant **`n`**.
+
+Draft (2026-10-20), **lexicon not changed**: `n` is **`title`**, things with a conventional name you write or play under. Anchor: [**-n**](../../grammar/word-endings.md#proper-name--n) is the name ending. Jobs apply, so a [tail suffix](../../grammar/compounds.md#tail-suffixes) on `n` becomes legal (`no` *the title of the left*; `na` *mail or papers that hold the left*). `n` second still has no hook clash. `l` / `m` / `r` stay banned as suffix heads.
+
+| | Five-letter | Three-letter | All |
+|--|-------------|--------------|-----|
+| **`title` `n` (new)** | 57 | 7 | **64** |
+| from `sign` (mail / paper / labels) | 25 | 7 | 32 |
+| from `doing` (named sports) | 32 | 0 | 32 |
+| `sign` after | 77 | 6 | 83 |
+| `doing` after | 81 | 5 | 86 |
+
+A kind of 57 five-letter roots has an even-spread floor of **8** confusing pairs (48 prefixes). `named` stays 262 place-name roots, off this table.
+
+**Edge:** if the thing’s job is to **carry wording or be a conventional title**, it is `title`. If its job is a **mark on a surface**, it stays `sign`. If it is a **bare action, toy, game piece, sport gear, or vehicle**, it stays `doing`. Country flags stay `named`.
+
+**Mail / paper / labels** (32: 25 five-letter + 7 three-letter). From `sign`:
+
+- *five-letter:* love-letter, red-envelope, admission-tickets, ticket, notebook, paper, page, newspaper, tab, label, receipt, envelope, email, out-box, inbox, folder, divider, notepad, index-card, file-box, placard, name-tag, copyright, registered, trademark
+- *three-letter:* book, ledger, scroll, bookmark, ballot, memo, id
+
+**Named sports** (32, all five-letter). From `doing`. Size is already `none` (the sport, not the gear):
+
+- fencing, horse-race, ski, snowboard, surf, wrestle, water-polo, handball, soccer, baseball, softball, volleyball, football, rugby, tennis, bowling, cricket, field-hockey, hockey, lacrosse, pingpong, badminton, boxing, martial-arts, golf, curling, archery, pool, row, lift, bike, mountain-bike
+
+`bike` / `mountain-bike` / `row` / `lift` / `ski` are the activity (size `none`); `bicycle` / `skis` stay `doing` as vehicle or gear.
+
+**Left where they are** (on purpose):
+
+- `sign`: 📦 *box* (a parcel, not a file), 🚩 *sport* (a triangular flag), letters, upper-case, lower-case, punctuation, UI buttons, prohibitions, religion marks, check, record, map, attest, no-entry, information, sos
+- `doing`: toys and pieces (ball, dice, kite, yoyo, pawn, card, mahjong, game, frisbee), gear (skis, skate, sled, goal), vehicles, bare actions (run, swim, climb, fishing, juggle)
+
+**Size on `title`:** paper and mail objects keep a measured size; sports and legal-name marks (copyright, registered, trademark, email as a message) stay `none`. Same split `sign` already used for documents vs symbols.
+
+**When tagging:** set `kind` to `title` on the 64 rows (clear nothing else: `shape` and `size` already fit). Then `convert-word --lexicon --only` those concretes, or `--all` so leftover `sign` / `doing` onsets spread. Do not retag `named` rows.
+
+#### Learner and editor wording (not live until the retag)
+
+In [compounds.md § root tails](../../grammar/compounds.md#root-tails): drop sports from `v`, drop paper from `g`, replace the `n` row. Drop “A country’s last vowel is free”. Allow `n` in [tail suffixes](../../grammar/compounds.md#tail-suffixes).
+
+| Second consonant | Kind | Example | Why this letter |
+|------------------|------|---------|-----------------|
+| `v` | doing, playing and moving: actions, toys, vehicles | `aruve` *run* | `/v/` is the action |
+| `g` | signs and marks | `awugu` *warning* | `/ɡ/` is a grade, a mark on something |
+| `n` | titles: mail, paper, labels, and named sports | *(placed at retag)* | **-n** is the name ending |
+
+In [lexicon editing § kind](../../meta/lexicon.md#kind): `title` joins `KIND_LETTERS` (`n`). `named` stays countries only. Replace the play / paper bullets:
+
+- **Play vs title:** toys, game pieces, sport gear and vehicles (ball, dice, kite, skis, bicycle) stay `doing`. A named sport or scored game (soccer, golf, boxing, horse-race) is `title`.
+- **Paper vs marks vs tools:** a thing that carries wording (book, envelope, label, ticket, newspaper) is `title`. A mark on a surface (writing-system signs, a UI button, a prohibition, a religion mark) is `sign`. A thing that makes marks (pen, brush) is `tool`.
+- **People vs doing** is unchanged (run, swim stay `doing`; teach stays `person`).
+
+`n` leaves the tail-suffix ban in [lexicon editing](../../meta/lexicon.md) (“countries have no job” no longer applies). `number-mnemonic.md` column 9 stops being flags.
+
 ### The `--all` failure on main {#prerequisite}
 
 On main today, `convert-word --lexicon --all` stops with `short roots too close within an overlay group: elo ~ ala`, because the annealer can't separate two three-letter roots in one overlay group. Neither phase re-places three-letter roots, so this failure isn't on this proposal's path. It still needs a fix of its own.
@@ -469,7 +525,7 @@ On main today, `convert-word --lexicon --all` stops with `short roots too close 
 
 - **`number-mnemonic.md`:** a peg's second digit is now its root's **kind**. Under the respelled digits, every animal peg ends in 5 (`z`), every food peg in 2 (`d`), every flag peg in 9 (`n`), and so on. Every column of the 00–99 table fills from one kind. The mnemonic still never steers a spelling. Its coverage tables come from the echo-placement simulation and need a rerun.
 - **`number-respelling.md`:** its filler letters were picked by how rare each letter was as a root consonant under English-echo placement. Root tails set those frequencies by kind, so that proposal re-picks its fillers to fit the kind sizes settled here. This proposal doesn't adjust to it.
-- **Tail suffixes** (built, [compounds.md](../../grammar/compounds.md#tail-suffixes)): listed compounds whose head is only the tail (`CV`). Depends on this letter map, on banning 3 + join + 3 compounds, and on banning `l` / `m` / `n` / `r` as suffix heads. Nature, mind, named, and counting stay on those letters. Not started here.
+- **Tail suffixes** (built, [compounds.md](../../grammar/compounds.md#tail-suffixes)): listed compounds whose head is only the tail (`CV`). Depends on this letter map, on banning 3 + join + 3 compounds, and on banning `l` / `m` / `r` as suffix heads (`n` is banned only while countries occupy it; [reuse of `n`](#reuse-n) lifts that). Nature, mind, and counting stay on those letters. Not started here.
 
 ## Costs
 

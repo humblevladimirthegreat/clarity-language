@@ -1,4 +1,4 @@
-# Learn the full language {#learn-agebon}
+# Learn the full language {#learn}
 
 ## What you can say now {#recap}
 

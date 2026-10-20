@@ -5,7 +5,7 @@ outline: false
 
 <PrintButton />
 
-# Agebon → English cheat sheet {#agebon-english-cheat-sheet}
+# Agebon → English cheat sheet {#to-english-cheat-sheet}
 
 Met a short word you can't place? Find its family by shape, then look it up in the tables below, sorted by spelling. Every table except the first is built from the dictionary, so it always matches the grammar, and each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 

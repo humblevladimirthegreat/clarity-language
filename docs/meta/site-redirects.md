@@ -86,13 +86,19 @@ Put **every retired public path** in `pageMoves`, not only the latest rename. To
 | `/grammar/join-derived-forms.html` | `/grammar/join-across-roles.html` |
 | `/grammar/values.html` | `/grammar/sakes.html` |
 | `/grammar/interests.html` | `/grammar/sakes.html` |
-| `/grammar/why-agelan.html` | `/grammar/why-agebon.html` |
+| `/grammar/why-agelan.html` | `/grammar/purpose.html` |
 | `/grammar/joins-hooks-cheatsheet.html` | `/grammar/cheat-sheets/joins-hooks.html` |
-| `/grammar/agazan-english-cheatsheet.html` | `/grammar/cheat-sheets/agebon-english.html` |
+| `/grammar/agazan-english-cheatsheet.html` | `/grammar/cheat-sheets/to-english.html` |
 | `/grammar/exceptions-cheatsheet.html` | `/grammar/cheat-sheets/exceptions.html` |
-| `/grammar/why-agazan.html` | `/grammar/why-agebon.html` |
-| `/grammar/claritish/learn-agazan.html` | `/grammar/claritish/learn-agebon.html` |
-| `/grammar/cheat-sheets/agazan-english.html` | `/grammar/cheat-sheets/agebon-english.html` |
+| `/grammar/why-agazan.html` | `/grammar/purpose.html` |
+| `/grammar/claritish/learn-agazan.html` | `/grammar/claritish/learn.html` |
+| `/grammar/cheat-sheets/agazan-english.html` | `/grammar/cheat-sheets/to-english.html` |
+| `/grammar/cheat-sheets/egabon-english.html` | `/grammar/cheat-sheets/to-english.html` |
+| `/grammar/claritish/learn-egabon.html` | `/grammar/claritish/learn.html` |
+| `/grammar/why-egabon.html` | `/grammar/purpose.html` |
+| `/grammar/why-agebon.html` | `/grammar/purpose.html` |
+| `/grammar/claritish/learn-agebon.html` | `/grammar/claritish/learn.html` |
+| `/grammar/cheat-sheets/agebon-english.html` | `/grammar/cheat-sheets/to-english.html` |
 
 When you find another circulating URL (Cool Features, Reddit, Discord), add a row in the same commit as the rename when you can; otherwise add the row as soon as you notice the miss.
 

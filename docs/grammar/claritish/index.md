@@ -29,6 +29,6 @@ Each lesson is short, with a few examples and a practice set. They build on each
 - [Decisions and tries](decisions-and-tries.md): how settled a decision is, and a try that is only a trial.
 - [Feelings in three parts](feelings.md): a feeling as a need, a place, and a motion.
 
-[Bonus: tone marks](tone-marks.md) adds seven marks that say how you mean a sentence, the [Learn the full language](learn-agebon.md) page shows where the words go in the full language, the [cheat sheet](cheat-sheet.md) puts every drop-in on one page, and the [journal editor](editor.md) marks the habits in your own writing as you type.
+[Bonus: tone marks](tone-marks.md) adds seven marks that say how you mean a sentence, the [Learn the full language](learn.md) page shows where the words go in the full language, the [cheat sheet](cheat-sheet.md) puts every drop-in on one page, and the [journal editor](editor.md) marks the habits in your own writing as you type.
 
 <!-- Entry page of the Claritish track; adds no forms and teaches no drop-in beyond the one example. Keep the lesson list in step with the sidebar in .vitepress/config.ts (docs/meta/grammar-docs.md#claritish-track). -->

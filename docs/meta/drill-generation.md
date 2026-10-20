@@ -160,7 +160,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 
 | File | Band | Setting |
 |------|------|---------|
-| `why-agebon.md` | — | — |
+| `purpose.md` | — | — |
 | `introduction.md` | — | — |
 | `index.md` | — | — |
 | `lexicon.md` | — | — |
@@ -273,7 +273,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 
 | Path | File | Status | Introduces (test these) | Sibling OK / notes |
 |------|------|--------|-------------------------|--------------------|
-| — | `why-agebon.md` | skip | — | orientation |
+| — | `purpose.md` | skip | — | orientation |
 | — | `introduction.md` | skip | — | orientation |
 | 3 | `phonology.md` | skip | — | not translation |
 | 4 | `word-endings.md` | **exists** | Choose **-l** vs **-m** vs **-n** on a **citation** (prefix-less); named person vs kind vs metaphor; **greeting** named citation with period (`uzozen.`) | No sentences with role letters. No **-r**. Pointers to **-x** / **`gl-`**: do **not** make those the item. No vocative `/y/` |
