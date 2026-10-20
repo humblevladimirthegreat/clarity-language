@@ -1,0 +1,49 @@
+english	slot	expect	why
+# Pinned analyzer behavior, run by analyze.test.ts (expectations: cases.ts). Never spell a root here.
+# Pronouns
+Uzozen sees me.	me	link:pronouns.md#special-pronouns	*me* is the speaker
+Uzozen sees me.	me	no-gap	*me* once had no suggestion
+You walk.	You	first:job	a row whose first cue is *you* comes first
+# Possessives
+My cat runs.	My	has:possessive-pronoun	*my* names the possessive job
+# Numbers
+Uzozen sees three books.	three	form:gragol	a lone count word is spelled
+Uzozen sees the third book.	third	form:gregol	a lone rank word is spelled
+Uzozen sees three books.	three	link:numbers.md#counts	the count word's section
+# Modals, negation, stance
+My sister couldn't come yesterday.	could not	link:say-tense.md#can-may	*couldn't* is one slot with the modal's row
+My sister did not come.	not	has:negation	*not* names negation
+My sister did not come.	did	no-gap	a bare auxiliary is skipped, not a gap
+I am not sure.	not sure	link:say-reasons.md#stance-adverbs	*not sure* is one cue run
+# Time words
+I saw him last night.	last night	link:say-tense.md#time-words	*last night* is one cue run
+My sister couldn't come yesterday.	yesterday	link:say-tense.md#time-words	a time word's row
+Uzozen walked.		link:say-tense.md#simple-past	past tense is a clause detector
+# Feelings and sakes
+I am grateful.	grateful	first:job	a grammar row for the word ranks above its alias root
+Uzozen is glad that it rains.	that	first:feeling-that	*that* after a feeling word
+# Kin and people
+My sister couldn't come yesterday.	sister	link:say-people-places.md#kin-words	a kin word goes to its table
+The teacher sings.	teacher	first:role	a doer noun with no root gets a role compound
+The teacher sings.	teacher	link:roles.md#usual-role	the usual role comes with it
+The flower sings.	flower	not:roles.md#role-compounds	a noun with a root of its own is no doer
+The flower sings.	flower	not:roles.md#usual-role	a noun with a root of its own is no doer
+# Clause openers
+Uzozen tells Olazun that the dog runs.	that	first:that-clause	*that* opening a content clause
+The dog that runs is big.	that	first:relative-that	*that* after a noun opens a relative clause
+Uzozen sees whether Olazun walks.	whether	first:whether-clause	*whether* opens a content clause
+I know that.	that	first:job	*that* with no clause after it is a pronoun
+I know that.	that	not:dependents.md#dependent-clauses	*that* with no clause after it is a pronoun
+# Hooks and prepositions
+We went aboard the train.	aboard	link:relations.md#locative-relations	a preposition tagged as an adjective still gets its hook
+The cat slept underneath the table.	underneath	link:roles.md#gravity	a preposition tagged as an adjective still gets its hook
+Five dollars per hour.	per	link:say-amounts.md#per-unit	*per* is a rate
+Five dollars per hour.	per	not:hooks.md#extra-noun	*per* is a rate, not an extra-noun hook
+Uzozen walks from the house to the station.	to	has:from-to	*from … to* is noted
+The dog sleeps in the house near the station.	near	has:hook-on-landmark	a hook after a landmark is noted
+What does Uzozen write with?	with	has:hook-blank	a stranded question hook is noted
+# Aliases and compounds
+He left hastily.	hastily	sense:haste	a word only an alias names finds its root
+He is asleep.	asleep	sense:sleep	a word only an alias names finds its root
+We sat in the living room.	living room	sense:living-room	a multi-word compound sense is one slot
+She read a school book.	book	first:compound	a listed compound from two words' roots comes first

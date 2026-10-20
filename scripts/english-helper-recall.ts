@@ -6,6 +6,8 @@
  * Run: npm run english-helper-recall
  *      npm run english-helper-recall -- --set doc|checkpoint|all   (default all)
  *      npm run english-helper-recall -- --json
+ *      npm run english-helper-recall -- --check            (fail when a headline metric fell past tolerance)
+ *      npm run english-helper-recall -- --write-baseline   (save this run's headline metrics)
  *
  * Sets, scored apart:
  *   doc         doc example pairs the translation prompt can show (llm-examples.ts); in-sample,
@@ -25,6 +27,10 @@
  * (coverage.ts). A sentence is self-contained when no word is missing. With several accepted
  * answers, the one with the fewest missing words is scored.
  *
+ * Baseline: src/generated/english-helper-baseline.json holds each set's headline metrics.
+ * `--check` fails when one is worse than the baseline by more than its tolerance; it is not part
+ * of `npm test`, since doc edits move the numbers. `--write-baseline` updates the sets it ran.
+ *
  * Writes tmp/english-helper-recall.csv (one row per sentence), tmp/english-helper-worklist.csv
  * (one row per missing word, most frequent English first; NGSL ranks when
  * scripts/frequency-coverage.ts has downloaded the list), and tmp/english-helper-report.md.
@@ -33,7 +39,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { join } from "node:path";
 
 import { parseCsv, serializeCsv } from "../src/csv.js";
-import { analyzeEnglish, TIERS, type Analysis, type Suggestion } from "../src/english-helper/analyze.js";
+import { analyzeEnglish, suggestionLinks, TIERS, type Analysis, type Suggestion } from "../src/english-helper/analyze.js";
 import { coverWord, familyRoots, promptShows, treeWords, type Coverage, type PromptShows, type TreeWord } from "../src/english-helper/coverage.js";
 import { buildHelperPrompt } from "../src/english-helper/llm-prompt.js";
 import { loadHelperData } from "../src/english-helper/load.js";
@@ -48,11 +54,14 @@ import { REPO_ROOT } from "../src/repo-paths.js";
 const GRAMMAR_DIR = join(REPO_ROOT, "docs", "grammar");
 const TMP = join(REPO_ROOT, "tmp");
 const NGSL_STATS = join(TMP, "NGSL_12_stats.csv");
+const BASELINE = join(REPO_ROOT, "src", "generated", "english-helper-baseline.json");
 const SETS = ["doc", "checkpoint"] as const;
 type SetName = (typeof SETS)[number];
 
 const args = process.argv.slice(2);
 const json = args.includes("--json");
+const check = args.includes("--check");
+const writeBaseline = args.includes("--write-baseline");
 const setArg = args.includes("--set") ? args[args.indexOf("--set") + 1] : "all";
 if (setArg !== "all" && !SETS.includes(setArg as SetName)) {
   console.error(`--set needs one of ${[...SETS, "all"].join(", ")}`);
@@ -96,12 +105,6 @@ function usedLiveStems(tree: unknown): string[] {
   };
   walk(tree);
   return [...new Set(out)];
-}
-
-function links(s: Suggestion): string[] {
-  if (s.kind === "job" || s.kind === "entry" || s.kind === "role" || s.kind === "live") return [s.link];
-  if (s.kind === "detector" || s.kind === "class") return s.links;
-  return [s.anchor, s.roleLink].filter((l): l is string => !!l);
 }
 
 /** Forms a non-lexicon suggestion spells or builds on. */
@@ -213,7 +216,7 @@ function lemmaFor(word: TreeWord, sentenceWords: Set<string>): string {
 
 /** A root the prompt never shows, though a word of the sentence names it, is a tagger miss; a root it shows in the wrong shape is not. */
 function classify(word: TreeWord, analysis: Analysis, shows: PromptShows, sentenceWords: Set<string>): { kind: Kind; link: string } {
-  const suggested = analysis.clauses.flatMap((c) => [...c.detectors, ...c.slots.flatMap((s) => s.suggestions)]).flatMap(links);
+  const suggested = analysis.clauses.flatMap((c) => [...c.detectors, ...c.slots.flatMap((s) => s.suggestions)]).flatMap(suggestionLinks);
   const roots = familyRoots(word.family);
   if (word.reading === "ordinary" && roots.some((r) => !shows.roots.has(r))) {
     if ([...sentenceWords].some((w) => (data.lexicon.get(w) ?? []).some((s) => roots.includes(s.form)))) return { kind: "tagger", link: "" };
@@ -283,7 +286,7 @@ for (const set of sets) {
     tally.live.uses += liveStems.length;
     tally.live.suggested += liveStems.filter((stem) => builtStems.has(stem)).length;
     tally.live.offered += builtStems.size;
-    const suggested = analysis.clauses.flatMap((c) => [...c.detectors, ...c.slots.flatMap((s) => s.suggestions)]).flatMap(links);
+    const suggested = analysis.clauses.flatMap((c) => [...c.detectors, ...c.slots.flatMap((s) => s.suggestions)]).flatMap(suggestionLinks);
     const suggestedPages = new Set(suggested.map((l) => l.split("#")[0]));
     const constructions = new Set((tree as { constructions?: string[] }).constructions ?? []);
     const missedConstructions: string[] = [];
@@ -363,7 +366,8 @@ mkdirSync(TMP, { recursive: true });
 writeFileSync(join(TMP, "english-helper-recall.csv"), serializeCsv(Object.keys(rows[0] ?? {}), rows as unknown as Record<string, string>[]));
 writeFileSync(join(TMP, "english-helper-worklist.csv"), serializeCsv(Object.keys(worklist[0] ?? { set: "" }), worklist));
 
-const pct = (n: number, d: number) => (d ? `${((100 * n) / d).toFixed(1)}%` : "-");
+const share = (n: number, d: number) => (d ? Math.round((1000 * n) / d) / 10 : 0);
+const pct = (n: number, d: number) => (d ? `${share(n, d).toFixed(1)}%` : "-");
 const STRUCTURE_SHARE = 0.2;
 const senseOf = (root: string) => {
   for (const [sense, list] of data.lexicon) if (list.some((s) => s.tier === "root" && s.form === root)) return sense;
@@ -385,8 +389,21 @@ function summarize(set: SetName) {
   const word = t.coverage.get("word") ?? 0;
   const pattern = t.coverage.get("pattern") ?? 0;
   const top1 = t.roots.get("top1") ?? 0;
+  const missedRoots = (t.roots.get("missed") ?? 0) + (t.roots.get("tagging") ?? 0);
+  const headline: Headline = {
+    selfContained: share(t.selfContained, sentences),
+    wordInPrompt: share(word, totalWords),
+    rootTop1: share(top1, totalRoots),
+    rootAnywhere: share(totalRoots - missedRoots, totalRoots),
+    constructionPage: share(
+      taught.reduce((a, c) => a + c.page, 0),
+      constructionUses,
+    ),
+    promptChars: median(t.promptChars),
+  };
   return {
     sentences,
+    headline,
     roots: Object.fromEntries(t.roots),
     liveCompounds: t.live,
     foundByTier: Object.fromEntries(TIERS.filter((tier) => t.tiers.has(tier)).map((tier) => [tier, t.tiers.get(tier)!])),
@@ -416,6 +433,49 @@ function summarize(set: SetName) {
 }
 
 const summary = Object.fromEntries(sets.map((set) => [set, summarize(set)]));
+
+type Headline = Record<(typeof HEADLINE)[number]["key"], number>;
+type Baseline = { sets: Partial<Record<SetName, { sentences: number } & Partial<Headline>>> };
+
+/**
+ * The metrics `--check` guards, with the direction that is better and how far the other way a
+ * run may move before it fails (percentage points; characters for the prompt size).
+ */
+const HEADLINE = [
+  { key: "selfContained", label: "self-contained", better: "higher", tolerance: 0.5 },
+  { key: "wordInPrompt", label: "word in prompt", better: "higher", tolerance: 0.5 },
+  { key: "rootTop1", label: "root recall top-1", better: "higher", tolerance: 0.5 },
+  { key: "rootAnywhere", label: "root recall anywhere", better: "higher", tolerance: 0.5 },
+  { key: "constructionPage", label: "construction recall page", better: "higher", tolerance: 0.5 },
+  { key: "promptChars", label: "prompt chars median", better: "lower", tolerance: 500 },
+] as const;
+
+function readBaseline(): Baseline {
+  return existsSync(BASELINE) ? (JSON.parse(readFileSync(BASELINE, "utf8")) as Baseline) : { sets: {} };
+}
+
+/** One line per headline metric that moved; `worse` lines are past tolerance. */
+function compareBaseline(baseline: Baseline): { worse: string[]; moved: string[] } {
+  const worse: string[] = [];
+  const moved: string[] = [];
+  for (const set of sets) {
+    const before = baseline.sets[set];
+    if (!before) {
+      worse.push(`${set}: no baseline (run with --write-baseline)`);
+      continue;
+    }
+    for (const m of HEADLINE) {
+      const was = before[m.key];
+      const now = summary[set]!.headline[m.key];
+      if (was === undefined || was === now) continue;
+      const loss = m.better === "higher" ? was - now : now - was;
+      const line = `${set} ${m.label}: ${was} → ${now}`;
+      if (loss > m.tolerance) worse.push(line);
+      else moved.push(line);
+    }
+  }
+  return { worse, moved };
+}
 
 /** Most-missed words of a set: word, lemma, kind, sentence count. */
 function topMisses(set: SetName, n: number) {
@@ -464,4 +524,20 @@ else {
     console.log();
   }
   console.log("→ tmp/english-helper-recall.csv, tmp/english-helper-worklist.csv, tmp/english-helper-report.md");
+}
+
+if (check) {
+  const { worse, moved } = compareBaseline(readBaseline());
+  for (const line of moved) console.error(`  moved: ${line}`);
+  for (const line of worse) console.error(`  WORSE: ${line}`);
+  if (worse.length) {
+    console.error(`baseline check failed: ${worse.length} metric${worse.length === 1 ? "" : "s"} past tolerance (src/generated/english-helper-baseline.json)`);
+    process.exitCode = 1;
+  } else console.error(`baseline check passed${moved.length ? "; --write-baseline to keep the new numbers" : ""}`);
+}
+if (writeBaseline) {
+  const baseline = readBaseline();
+  for (const set of sets) baseline.sets[set] = { sentences: summary[set]!.sentences, ...summary[set]!.headline };
+  writeFileSync(BASELINE, JSON.stringify(baseline, null, 2) + "\n");
+  console.error(`→ src/generated/english-helper-baseline.json (${sets.join(", ")})`);
 }

@@ -1,0 +1,22 @@
+{
+  "sets": {
+    "doc": {
+      "sentences": 1145,
+      "selfContained": 57.2,
+      "wordInPrompt": 79.2,
+      "rootTop1": 75.4,
+      "rootAnywhere": 90.6,
+      "constructionPage": 51.9,
+      "promptChars": 12583
+    },
+    "checkpoint": {
+      "sentences": 312,
+      "selfContained": 64.4,
+      "wordInPrompt": 78.4,
+      "rootTop1": 85,
+      "rootAnywhere": 94.3,
+      "constructionPage": 53.4,
+      "promptChars": 12329
+    }
+  }
+}

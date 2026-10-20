@@ -639,6 +639,13 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
   return { clauses, gaps };
 }
 
+/** The sections a suggestion links: its own, a detector's or route's list, or a root's overlay anchor and role letter. */
+export function suggestionLinks(s: Suggestion): string[] {
+  if (s.kind === "job" || s.kind === "entry" || s.kind === "role" || s.kind === "live") return [s.link];
+  if (s.kind === "detector" || s.kind === "class") return s.links;
+  return [s.anchor, s.roleLink].filter((l): l is string => !!l);
+}
+
 /** The best suggestion's tier for a slot: `gap` when there is none. */
 export function slotTier(slot: Slot): Tier | "skip" {
   if (slot.skipped) return "skip";

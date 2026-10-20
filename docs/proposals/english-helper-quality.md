@@ -1,6 +1,6 @@
 # Proposal: Checking and improving the English helper
 
-**Status:** PARTIALLY IMPLEMENTED. Phase 1 is built: the **checkpoint** set, *word in prompt*, *pattern in prompt*, *self-contained*, and the worklist ([`src/english-helper/coverage.ts`](../../src/english-helper/coverage.ts)). Phases 2–5 are not.  
+**Status:** PARTIALLY IMPLEMENTED. Phase 1 is built: the **checkpoint** set, *word in prompt*, *pattern in prompt*, *self-contained*, and the worklist ([`src/english-helper/coverage.ts`](../../src/english-helper/coverage.ts)). Phase 2 is built: [`cases.tsv`](../../src/english-helper/cases.tsv) and the baseline (`--check`, `--write-baseline`). Phases 3–5 are not.  
 **Related:** [`src/english-helper/`](../../src/english-helper/) (analyzer, prompt, `--verify`), [`scripts/english-helper-recall.ts`](../../scripts/english-helper-recall.ts), [`scripts/frequency-coverage.ts`](../../scripts/frequency-coverage.ts), [`scripts/llm-eval.ts`](../../scripts/llm-eval.ts) (the Agebon → English counterpart), [translation checkpoints](../meta/translation-exercises.md), [recipe track](../meta/grammar-docs.md#recipe-track).  
 **Design authority:** none. This is a process for the tool. Every fix it produces is either tool code or a doc row that teaches a form a grammar page already owns. A missing form is logged as a grammar gap, never invented here.
 
@@ -44,6 +44,8 @@ We need a repeatable loop: a held-out test set, free metrics that answer "could 
 | `english-helper.mjs --verify` | parse, unknown words, and each content word's sense next to the English that suggested its root | checks one draft; no aggregate |
 | `npm run llm-eval` | Agebon → English prompt quality, with a judge model | other direction; costs money |
 | tests in `src/english-helper/*.test.ts` | pinned behavior per feature | written ad hoc, one feature at a time |
+| `src/english-helper/cases.tsv` | one pinned behavior per line (`link:`, `not:`, `first:`, `has:`, `sense:`, `form:`, `no-gap`), run by `analyze.test.ts` | slot-level only; no stage column |
+| `english-helper-recall --check` / `--write-baseline` | headline metrics per set against `src/generated/english-helper-baseline.json` | not in `npm test` |
 
 ## Plan
 
@@ -166,7 +168,7 @@ Every few rounds, or after a big grammar change, run the model eval on a sample 
    | prompt chars median | 12,583 | 12,329 |
 
    How the pieces work: a word is *pattern* when it is an ordinary content word on `-l` or `-m` whose roots the prompt shows (an `x` word also needs a shown word of its `x` family), or any other word whose family and ending a shown word shares, so only the role letter differs. A miss is *tagger* when the prompt never shows the root though a word of the sentence names it, *link without form* when a linked page spells the word (or a numbers page is linked for a number), and *missing cue* otherwise. The other classes in the routing table still need a person to sort them.
-2. **Cases file and baseline.** Move the ad hoc feature tests that fit the format into `cases.tsv`; add `--check` and `--write-baseline`.
+2. **Cases file and baseline.** Move the ad hoc feature tests that fit the format into `cases.tsv`; add `--check` and `--write-baseline`. **Done.** Beyond the expectations listed above, `has:<kind>` checks that some suggestion is of a kind, tier or detector id (*from … to*, a stranded hook), `first:` also takes a tier or detector id, and an empty slot names the sentence's clause detectors (past tense). Tests that pin more than one slot can say (exact suggestion lists, built forms, the stage filter, the hand-built WordNet index) stay in `analyze.test.ts`. The baseline guards, per set: *self-contained*, *word in prompt*, root recall top-1 and anywhere, construction recall by page (0.5 points each), and the median prompt size (500 characters). It tracks every set it was written for, doc included.
 3. **Wild set.** Write the phenomenon-grouped sentences; add gap rate, noise and prompt-size scoring for sets with no reference.
 4. **Verify precision and recall.** Planted-error drafts from checkpoint answers.
 5. **Model eval.** Only after phases 1–4 settle, so its misses can be read against the free metrics.
