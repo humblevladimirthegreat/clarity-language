@@ -20,10 +20,9 @@ describe("lexicon-published.csv tails", () => {
 });
 
 describe("tails", () => {
-  it("spells a tail from kind and shape, and leaves a named row's vowel free", () => {
+  it("spells a tail from kind and shape", () => {
     assert.equal(tailOf("creature", "order"), "ze");
     assert.equal(tailOf("tool", "takes-away"), "wu");
-    assert.equal(tailOf("named", ""), "n");
   });
 
   it("flags an l / m second consonant behind a three-letter onset", () => {
@@ -58,7 +57,7 @@ describe("validateRootTails", () => {
   const good = [
     published("🐈", "cat", "ubezo", "creature", "one"),
     published("🗡️", "knife", "uhowu", "tool", "takes-away"),
-    published("🇫🇷", "france", "agane", "named"),
+    published("🇫🇷", "france-flag", "avranza", "named"),
     published("⭐", "star", "aba"),
   ];
   const reasons = (rows: PublishedRow[]) => validateRootTails(rows).map((e) => e.reason);
@@ -72,6 +71,11 @@ describe("validateRootTails", () => {
     assert.ok(reasons([{ ...good[0]!, shape: "" }]).some((r) => r.startsWith("shape must be")));
     assert.ok(reasons([{ ...good[2]!, shape: "one" }]).some((r) => r.startsWith("a named row has no shape")));
     assert.ok(reasons([{ ...good[3]!, kind: "sign" }]).some((r) => r.includes("3-letter root has no kind")));
+  });
+
+  it("rejects a named row without a place-name root, and two places on one root", () => {
+    assert.ok(reasons([{ ...good[2]!, root: "agane" }]).some((r) => r.includes("is not a place-name root")));
+    assert.ok(reasons([good[2]!, published("🇫🇮", "finland-flag", "avranza", "named")]).some((r) => r.includes("is also 🇫🇷's")));
   });
 
   it("rejects a root outside its tail and a hook clash", () => {
@@ -129,7 +133,7 @@ describe("placeTailRoots", () => {
   it("places every row in its tail, apart, and clear of the hook check", () => {
     const rows = [
       ...Array.from({ length: 30 }, (_, i) => ({ kind: "nature" as const, shape: "one" as const, cmu: "" })),
-      ...Array.from({ length: 10 }, () => ({ kind: "named" as const, shape: "" as const, cmu: "" })),
+      ...Array.from({ length: 10 }, () => ({ kind: "sign" as const, shape: "order" as const, cmu: "" })),
     ];
     const shortRoots = new Set(["aba", "aga", "ozo"]);
     const { roots, unmet } = placeTailRoots({ rows, shortRoots, compounds: [], steps: 20_000 });
@@ -139,7 +143,7 @@ describe("placeTailRoots", () => {
       assert.match(root, /^[aeou][bdghylmnrvwz][aeou]lo$/);
       assert.ok(!shortRoots.has(root.slice(0, 3)), root);
     });
-    roots.slice(30).forEach((root) => assert.match(root, /^[aeou][bdghylmnrvwz][aeou]n[aeou]$/));
+    roots.slice(30).forEach((root) => assert.match(root, /^[aeou][bdghylmnrvwz][aeou]ge$/));
     // 30 rows of one kind fit in its 48 first-two-letter prefixes, so none share them.
     assert.equal(new Set(roots.slice(0, 30).map((root) => root.slice(0, 2))).size, 30);
   });
@@ -154,12 +158,12 @@ describe("placeTailRoots", () => {
   });
 
   it("never leaves a listed compound with a second split", () => {
-    // Every VCV is a three-letter root, so the named row's stem `VCVnV r aba` reads two ways
-    // whenever a body / holds row takes `V r aba`; the placer must skip that root.
+    // Every VCV is a three-letter root, so the counting row's stem `VCVro r aba` reads two ways
+    // whenever a body / holds row takes `o r aba`; the placer must skip that root.
     const shortRoots = new Set<string>();
     for (const a of "aeou") for (const c of "bdghylmnrvwz") for (const b of "aeou") shortRoots.add(a + c + b);
     const rows = [
-      { kind: "named" as const, shape: "" as const, cmu: "" },
+      { kind: "counting" as const, shape: "one" as const, cmu: "" },
       ...Array.from({ length: 48 }, () => ({ kind: "body" as const, shape: "holds" as const, cmu: "" })),
     ];
     const { roots, unmet } = placeTailRoots({ rows, shortRoots, compounds: [{ left: 0, join: "r", right: "aba" }], steps: 20_000 });

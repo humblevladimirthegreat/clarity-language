@@ -776,7 +776,7 @@ plainContent
         family: { kind: "foreign", payload },
       };
     }
-  / root:ContentRoot ending:NounEnding plural:PluralSuffix? {
+  / root:(ClusterRoot / ContentRoot) ending:NounEnding plural:PluralSuffix? {
       return {
         ending,
         plural: !!plural,
@@ -802,7 +802,7 @@ citation
         family: writingSpanFamily("<", payload, marks),
       });
     }
-  / root:ContentRoot ending:NounEnding plural:PluralSuffix? {
+  / root:(ClusterRoot / ContentRoot) ending:NounEnding plural:PluralSuffix? {
       return makeWord(text(), {
         ending,
         plural: !!plural,
@@ -838,6 +838,14 @@ PluralSuffix
 ContentRoot
   = first:[aeou] rest:RootTail {
       return first + rest;
+    }
+
+// A place-name root with a consonant cluster (phonology.md#place-name-roots): a vowel first and last,
+// no vowel run, and no **-l** / **-m** + `r` (the numeric-derivation seam). Only a plain content word
+// or a citation takes one; compounds and seams take ordinary roots.
+ClusterRoot
+  = root:$([aeou] (Onset+ [aeou])+) &{ return /[^aeou]{2}/.test(root) && !/[lm]r/.test(root); } {
+      return root;
     }
 
 RootTail

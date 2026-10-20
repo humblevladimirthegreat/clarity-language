@@ -24,6 +24,21 @@ export const EGABON_CONSONANTS = [
 ] as const;
 
 /**
+ * Whether `root` is a legal place-name root (phonology.md#place-name-roots): a vowel first and last,
+ * consonant runs between single vowels, no **-l** / **-m** + `r` seam, and either a cluster or at least
+ * seven letters ending in `n` + a vowel.
+ */
+export function isPlaceRootShape(root: string): boolean {
+  if (!/^[aeou]([bdgvzmnhwylr]+[aeou])+$/.test(root) || /[lm]r/.test(root)) return false;
+  return /[^aeou]{2}/.test(root) || (root.length >= 7 && root.at(-2) === "n");
+}
+
+/** A published root of either shape: ordinary V(CV)+ or a place-name root. */
+export function isAnyRootShape(root: string): boolean {
+  return isEgabonRootShape(root) || isPlaceRootShape(root);
+}
+
+/**
  * Whether `root` is a legal ordinary content root: V(CV)+ using the phonology letter inventory.
  */
 export function isEgabonRootShape(root: string): boolean {

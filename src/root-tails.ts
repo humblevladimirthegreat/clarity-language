@@ -2,9 +2,11 @@
  * Root tails: a five-letter root `V C V | C V` ends in a tail, the second consonant naming the row's
  * kind and the final vowel its job. The `kind` and `shape` columns of `data/lexicon-published.csv`
  * record each five-letter row's tail. This file owns the letter map and the checks
- * {@link validateRootTails} runs; the placer is src/root-tails-place.ts.
+ * {@link validateRootTails} runs; the placer is src/root-tails-place.ts. A `named` row (a country or
+ * territory) takes a place-name root instead (src/place-root.ts), with no tail.
  */
 import { isFlagLabel } from "./flag-label.ts";
+import { isPlaceRootShape } from "./root-shape.ts";
 import type { OverlayRow, PublishedRow } from "./lexicon-search.ts";
 import { HOLDER_HOST_KINDS } from "./parse/classify.ts";
 
@@ -21,10 +23,9 @@ export const KIND_LETTERS = {
   tool: "w",
   sign: "g",
   counting: "r",
-  named: "n",
 } as const;
 
-/** Job → final vowel. Named rows have none: their final vowel is free. */
+/** Job → final vowel. */
 export const SHAPE_VOWELS = {
   holds: "a",
   one: "o",
@@ -35,8 +36,8 @@ export const SHAPE_VOWELS = {
 export type Kind = keyof typeof KIND_LETTERS;
 export type Shape = keyof typeof SHAPE_VOWELS;
 
-/** The kind whose final vowel is free. */
-export const FREE_VOWEL_KIND: Kind = "named";
+/** The `kind` of a country or territory row, which takes a place-name root and no tail. */
+export const PLACE_KIND = "named";
 
 export function isKind(value: string): value is Kind {
   return Object.hasOwn(KIND_LETTERS, value);
@@ -46,15 +47,15 @@ export function isShape(value: string): value is Shape {
   return Object.hasOwn(SHAPE_VOWELS, value);
 }
 
-/** Tail letters for a row: consonant + vowel, or the consonant alone for a named row. */
-export function tailOf(kind: Kind, shape: Shape | ""): string {
-  return KIND_LETTERS[kind] + (shape ? SHAPE_VOWELS[shape] : "");
+/** Tail letters for a row: consonant + vowel. */
+export function tailOf(kind: Kind, shape: Shape): string {
+  return KIND_LETTERS[kind] + SHAPE_VOWELS[shape];
 }
 
 /** Why a kind / shape pair can't spell a tail, or null when it can. */
 export function tailFieldsError(kind: string, shape: string): string | null {
+  if (kind === PLACE_KIND) return `a ${PLACE_KIND} row takes a place-name root, not a tail`;
   if (!isKind(kind)) return `kind must be one of ${Object.keys(KIND_LETTERS).join(", ")} (got ${kind || "(empty)"})`;
-  if (kind === FREE_VOWEL_KIND) return shape === "" ? null : `a named row has no shape (got ${shape})`;
   return isShape(shape) ? null : `shape must be one of ${Object.keys(SHAPE_VOWELS).join(", ")} (got ${shape || "(empty)"})`;
 }
 
@@ -97,9 +98,9 @@ export type TailError = { key: string; reason: string };
 
 /**
  * Checks `npm test` and `check-compounds` run over the published lexicon: every five-letter row has a
- * kind and shape from their closed sets (no shape on a named row) and a root that ends in its tail and
- * clears the hook and holder checks; a three-letter row has neither column. Listed compounds that split two
- * ways are `validateCompoundRows`'.
+ * kind and shape from their closed sets and a root that ends in its tail and clears the hook and holder
+ * checks; a three-letter row has neither column; a `named` row has no shape and a place-name root no
+ * other place shares. Listed compounds that split two ways are `validateCompoundRows`'.
  */
 export function validateRootTails(
   published: readonly PublishedRow[],
@@ -108,10 +109,19 @@ export function validateRootTails(
 ): TailError[] {
   const errors: TailError[] = [];
   const shortRoots = new Set(published.map((row) => row.root).filter((root) => root.length === 3));
+  const places = new Map<string, string>();
   for (const row of published) {
     const key = row.emoji || row.concrete;
     const kind = row.kind ?? "";
     const shape = row.shape ?? "";
+    if (kind === PLACE_KIND) {
+      if (shape) errors.push({ key, reason: `a ${PLACE_KIND} row has no shape (got ${shape})` });
+      if (!isPlaceRootShape(row.root)) errors.push({ key, reason: `root ${row.root} is not a place-name root` });
+      const other = places.get(row.root);
+      if (other) errors.push({ key, reason: `place-name root ${row.root} is also ${other}'s` });
+      places.set(row.root, key);
+      continue;
+    }
     if (row.root.length !== 5) {
       if (kind || shape) errors.push({ key, reason: `a ${row.root.length}-letter root has no kind or shape` });
       continue;
@@ -121,7 +131,7 @@ export function validateRootTails(
       errors.push({ key, reason: fields });
       continue;
     }
-    const tail = tailOf(kind as Kind, shape as Shape | "");
+    const tail = tailOf(kind as Kind, shape as Shape);
     if (!row.root.slice(3).startsWith(tail)) errors.push({ key, reason: `root ${row.root} does not end in its tail ${tail}` });
     if (hookClash(row.root, shortRoots)) {
       errors.push({ key, reason: `root ${row.root} reads as ${row.root.slice(0, 3)} + join + hook before -l / -m` });

@@ -1,7 +1,8 @@
 /**
  * Published-lexicon placement: annealed three-letter roots for overlay-backed and marked rows, with
- * frequency priority, and root-tails five-letter roots (src/root-tails-place.ts) for everything else.
- * A row with a root keeps its length; a new row takes three letters only when it is eligible.
+ * frequency priority, place-name roots (src/place-root.ts) for `named` rows, and root-tails five-letter
+ * roots (src/root-tails-place.ts) for everything else. A row with a root keeps its length; a new row
+ * takes three letters only when it is eligible.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -10,8 +11,9 @@ import { echo, loadPron } from "./echo-metric.ts";
 import { buildPronunciationCache } from "./echo-pronunciation.ts";
 import type { CompoundRow } from "./lexicon-compounds.ts";
 import { isJoinOverlayKind, type OverlayRow } from "./lexicon-search.ts";
+import { placeRoot } from "./place-root.ts";
 import { REPO_ROOT } from "./repo-paths.ts";
-import { holderHostForms, tailFieldsError, type Kind, type Shape } from "./root-tails.ts";
+import { holderHostForms, PLACE_KIND, tailFieldsError, type Kind, type Shape } from "./root-tails.ts";
 import { placeTailRoots, tailCompounds, type TailPlaceRow } from "./root-tails-place.ts";
 
 const FREQ_FILE = join(REPO_ROOT, "tmp", "en_50k.txt");
@@ -34,7 +36,7 @@ export type PlaceRow = {
   englishByPos: string;
   /** Current root, if any: its length is kept. */
   root?: string;
-  /** Root tail (`kind`, `shape` columns); a five-letter row needs both, a named row only `kind`. */
+  /** Root tail (`kind`, `shape` columns); a five-letter row needs both, a `named` row only `kind`. */
   kind?: string;
   shape?: string;
 };
@@ -43,8 +45,8 @@ export type Placement = {
   emoji: string;
   concrete: string;
   root: string;
-  /** Three-letter annealed root, or a five-letter root-tails root. */
-  length: 3 | 5;
+  /** Three-letter annealed root, a five-letter root-tails root, or a place-name root of any length. */
+  length: number;
 };
 
 function forms(n: number): string[] {
@@ -331,7 +333,17 @@ export async function placePublishedRoots(
     { restarts: options.annealRestarts, steps: options.annealSteps, fixed },
   );
 
-  const longTargets = targets.filter((item) => !item.eligible);
+  const placeTargets = targets.filter((item) => !item.eligible && item.row.kind === PLACE_KIND);
+  const noPron = placeTargets.filter((item) => !item.cmu).map((item) => item.row.concrete);
+  if (noPron.length > 0) throw new Error(`place-name rows need a pronunciation (CMU_OVERRIDES in src/cmu-dict.ts): ${noPron.join(", ")}`);
+  const places = new Map(placeTargets.map((item) => [item, placeRoot(item.cmu)]));
+  const placeOwner = new Map<string, string>();
+  for (const [item, root] of places) {
+    const other = placeOwner.get(root);
+    if (other) throw new Error(`place-name root ${root} spells both ${other} and ${item.row.concrete}`);
+    placeOwner.set(root, item.row.concrete);
+  }
+  const longTargets = targets.filter((item) => !item.eligible && item.row.kind !== PLACE_KIND);
   const fieldErrors = longTargets.flatMap((item) => {
     const error = tailFieldsError(item.row.kind ?? "", item.row.shape ?? "");
     return error ? [`${item.row.emoji || item.row.concrete}: ${error}`] : [];
@@ -340,8 +352,8 @@ export async function placePublishedRoots(
   const shortRoots = new Set([...short.values(), ...kept.map((k) => k.root).filter((root) => root.length === 3)]);
   const keptLong = kept.filter((k) => k.root.length === 5);
   const tailRows: TailPlaceRow[] = [
-    ...longTargets.map((item) => ({ kind: item.row.kind as Kind, shape: (item.row.shape ?? "") as Shape | "", cmu: item.cmu })),
-    ...keptLong.map((k) => ({ kind: "named" as Kind, shape: "" as const, cmu: "", fixed: k.root })),
+    ...longTargets.map((item) => ({ kind: item.row.kind as Kind, shape: item.row.shape as Shape, cmu: item.cmu })),
+    ...keptLong.map((k) => ({ cmu: "", fixed: k.root })),
   ];
   const rowOfRoot = new Map<string, number>();
   longTargets.forEach((item, i) => {
@@ -359,7 +371,7 @@ export async function placePublishedRoots(
   if (tails.unmet.length > 0) throw new Error(`five-letter placement left checks unmet:\n  ${tails.unmet.join("\n  ")}`);
   const long = new Map(longTargets.map((item, i) => [item, tails.roots[i]!]));
   return targets.map((item) => {
-    const root = item.eligible ? short.get(item)! : long.get(item)!;
-    return { emoji: item.row.emoji, concrete: item.row.concrete, root, length: item.eligible ? 3 : 5 };
+    const root = item.eligible ? short.get(item)! : places.get(item) ?? long.get(item)!;
+    return { emoji: item.row.emoji, concrete: item.row.concrete, root, length: root.length };
   });
 }

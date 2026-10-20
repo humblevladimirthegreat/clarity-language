@@ -3,6 +3,7 @@
  *
  * Run: npm run convert-word -- fishing                          (three-letter root by English echo)
  *      npm run convert-word -- fishing --kind doing --shape one (five-letter root-tails root)
+ *      npm run convert-word -- peru --kind named               (place-name root)
  *      npm run convert-word -- --lexicon --only breaker
  *      npm run convert-word -- --lexicon --all
  *      npm run convert-word -- --report
@@ -25,7 +26,8 @@ import { lookupPronunciation } from "../src/cmu-dict.js";
 import { loadPron } from "../src/echo-metric.js";
 import { placePublishedRoots } from "../src/lexicon-place.js";
 import { isJoinOverlayKind, parseOverlayCsv, parsePublishedCsv } from "../src/lexicon-search.js";
-import { holderHostForms, tailFieldsError, validateRootTails, type Kind, type Shape } from "../src/root-tails.js";
+import { placeRoot } from "../src/place-root.js";
+import { holderHostForms, PLACE_KIND, tailFieldsError, validateRootTails, type Kind, type Shape } from "../src/root-tails.js";
 import { placeTailRoots } from "../src/root-tails-place.js";
 import { RETIE_MAP_RELATIVE_PATH, serializeRetieMap, type RetiePair } from "../src/retie/map.js";
 import {
@@ -154,15 +156,16 @@ function printUsage(): void {
        npm run convert-word -- --lexicon (--only LITERAL|EMOJI|ROOT | --all) [--steps N]
        npm run convert-word -- --report
 
-<english> alone prints the best three-letter root by English echo. With --kind (and --shape,
-except for a named row) it prints the five-letter root-tails root that word would take beside
-the published lexicon.
+<english> alone prints the best three-letter root by English echo. With --kind and --shape it
+prints the five-letter root-tails root that word would take beside the published lexicon; with
+--kind named alone, the place-name root.
 --lexicon rewrites the published/overlay/compound CSVs and dumps tmp/lexicon-retie-map.json.
 A row keeps its root's length; a new row takes an annealed three-letter root when it is
-overlay-backed (or a marked pronoun), and a root-tails five-letter root from its kind and shape otherwise.
+overlay-backed (or a marked pronoun), a place-name root when its kind is named, and a root-tails
+five-letter root from its kind and shape otherwise.
 --only limits --lexicon to matching published rows (repeatable or comma-separated); every other
 root stays put.
---all re-places every five-letter row and keeps the three-letter roots; --lexicon needs one of
+--all re-places every five-letter and place-name row and keeps the three-letter roots; --lexicon needs one of
 --only or --all. --steps sets the five-letter annealing steps.
 --report prints the root-tails report for the published lexicon.
 
@@ -392,8 +395,12 @@ async function convertLexicon(only: string[], steps?: number): Promise<void> {
   printTailsReport(placedRows, loadPron());
 }
 
-/** The five-letter root one English word would take beside the published lexicon, which stays put. */
+/** The five-letter root one English word would take beside the published lexicon, which stays put; a place-name root for `--kind named`. */
 function tailRootFor(input: string, kind: string, shape: string): string {
+  if (kind === PLACE_KIND) {
+    if (shape) throw new Error(`a ${PLACE_KIND} row has no shape`);
+    return placeRoot(lookupPronunciation(input));
+  }
   const error = tailFieldsError(kind, shape);
   if (error) throw new Error(error);
   const published = parsePublishedCsv(readFileSync(publishedPath, "utf8"));
@@ -403,8 +410,8 @@ function tailRootFor(input: string, kind: string, shape: string): string {
   const blocked = new Set(overlays.filter((o) => isJoinOverlayKind(o.kind)).map((o) => o.senseForm));
   const { roots } = placeTailRoots({
     rows: [
-      { kind: kind as Kind, shape: shape as Shape | "", cmu: lookupPronunciation(input) },
-      ...kept.map((row) => ({ kind: row.kind as Kind, shape: "" as const, cmu: "", fixed: row.root })),
+      { kind: kind as Kind, shape: shape as Shape, cmu: lookupPronunciation(input) },
+      ...kept.map((row) => ({ cmu: "", fixed: row.root })),
     ],
     shortRoots,
     holderHosts: holderHostForms(overlays),

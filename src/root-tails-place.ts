@@ -8,7 +8,7 @@ import { echo } from "./echo-metric.ts";
 import type { CompoundRow } from "./lexicon-compounds.ts";
 import { isExtraNounHook } from "./parse/hook-compounds.ts";
 import { PHONEME_MAP } from "./pronunciation-map.ts";
-import { FREE_VOWEL_KIND, KIND_LETTERS, onsetClash, SHAPE_VOWELS, type Kind, type Shape } from "./root-tails.ts";
+import { KIND_LETTERS, onsetClash, SHAPE_VOWELS, type Kind, type Shape } from "./root-tails.ts";
 
 const V = "aeou";
 const C = "bdghylmnrvwz";
@@ -28,8 +28,9 @@ const STOP_W = 0.00001;
 const HARD = 1000;
 
 export type TailPlaceRow = {
-  kind: Kind;
-  shape: Shape | "";
+  /** The row's tail; a fixed row needs none. */
+  kind?: Kind;
+  shape?: Shape;
   /** CMU pronunciation of the label; empty loses only the echo tie-break. */
   cmu: string;
   /** A root kept as it is: the row is not placed, but its root counts against the others. */
@@ -88,8 +89,9 @@ function siblings(code: number): number[] {
 
 /** Every root a row may take: its tail, any onset, minus the hook and holder checks and blocked spellings. */
 function candidates(row: TailPlaceRow, shortRoots: ReadonlySet<string>, holderHosts?: ReadonlySet<string>, blocked?: ReadonlySet<string>): number[] {
+  if (!row.kind || !row.shape) throw new Error("a placed five-letter row needs a kind and shape");
   const consonant = KIND_LETTERS[row.kind];
-  const vowels = row.kind === FREE_VOWEL_KIND || !row.shape ? V : SHAPE_VOWELS[row.shape];
+  const vowels = SHAPE_VOWELS[row.shape];
   const out: number[] = [];
   for (const a of V) for (const c of C) for (const b of V) for (const e of vowels) {
     const root = a + c + b + consonant + e;
