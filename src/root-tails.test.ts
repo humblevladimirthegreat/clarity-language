@@ -139,7 +139,7 @@ describe("tailMetrics", () => {
     const m = tailMetrics([
       { root: "abane", kind: "named", concrete: "japan-flag" },
       { root: "abano", kind: "named", concrete: "france-flag" },
-      { root: "abanu", kind: "named", concrete: "om" },
+      { root: "abanu", kind: "named", concrete: "crest" },
       { root: "ebane", kind: "named", concrete: "spain-flag" },
       { root: "abage", kind: "sign", concrete: "aries" },
       { root: "abege", kind: "sign", concrete: "taurus" },

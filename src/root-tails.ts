@@ -232,7 +232,7 @@ export type TailMetrics = {
   flag: number;
   /** Pairs where neither root is a flag. */
   nonFlag: number;
-  /** Pairs of one flag and one other same-kind root (religion symbols that share a prefix with a flag). */
+  /** Pairs of one flag and one other same-kind root. */
   mixed: number;
   /** Same-kind pairs that could be confusing if their first two letters matched. */
   possible: number;
