@@ -15,6 +15,7 @@ import type { ClassifyTables } from "./parse/classify.js";
 import { parseCompoundCsv } from "./lexicon-compounds.js";
 import { parsePublishedCsv } from "./lexicon-search.js";
 import { readData } from "./repo-paths.js";
+import { EGABON_VOWELS } from "./root-shape.js";
 
 /** Most new core roots one checkpoint may introduce. */
 export const CORE_CAP = 5;
@@ -312,15 +313,20 @@ export function lintCoreCounts(checkpoints: readonly Checkpoint[], core: Readonl
   return findings;
 }
 
-/** Fewest checkpoints between the introductions of two look-alike roots (docs/meta/translation-exercises.md#look-alikes). */
-export const LOOK_ALIKE_GAP = 5;
+/** Fewest checkpoints of one band between the introductions of two look-alike roots (docs/meta/translation-exercises.md#look-alikes). */
+export const LOOK_ALIKE_GAP = 3;
 
-/** Whether two roots are one letter apart: same length, one letter differs. */
-export function oneLetterApart(a: string, b: string): boolean {
-  if (a.length !== b.length) return false;
-  let d = 0;
-  for (let i = 0; i < a.length && d < 2; i++) if (a[i] !== b[i]) d++;
-  return d === 1;
+const VOWELS: ReadonlySet<string> = new Set(EGABON_VOWELS);
+
+/**
+ * Whether two roots differ only in their middle vowel: same odd length, and only the center
+ * letter differs, a vowel in both (`abovu` / `abavu`). A three-letter root's center is a consonant.
+ */
+export function middleVowelApart(a: string, b: string): boolean {
+  if (a.length !== b.length || a.length % 2 === 0) return false;
+  const mid = (a.length - 1) / 2;
+  if (!VOWELS.has(a[mid]!) || !VOWELS.has(b[mid]!) || a[mid] === b[mid]) return false;
+  return a.slice(0, mid) === b.slice(0, mid) && a.slice(mid + 1) === b.slice(mid + 1);
 }
 
 export type LookAlikePair = { earlier: string; earlierAt: number; later: string; laterAt: number };
@@ -334,13 +340,18 @@ function introductions(checkpoints: readonly Checkpoint[], core: ReadonlyMap<str
     .sort((a, b) => a.at - b.at || (a.root < b.root ? -1 : 1));
 }
 
-/** Two core roots one letter apart whose introductions are fewer than `gap` checkpoints apart. */
+/** Whether introductions at checkpoints `a` and `b` are in one band and fewer than `gap` checkpoints apart. */
+function near(checkpoints: readonly Checkpoint[], a: number, b: number, gap: number): boolean {
+  return checkpoints[a]!.band === checkpoints[b]!.band && Math.abs(a - b) < gap;
+}
+
+/** Two core roots apart only in the middle vowel, introduced in one band fewer than `gap` checkpoints apart. */
 export function lookAlikePairs(checkpoints: readonly Checkpoint[], core: ReadonlyMap<string, string>, gap: number = LOOK_ALIKE_GAP): LookAlikePair[] {
   const introduced = introductions(checkpoints, core);
   const pairs: LookAlikePair[] = [];
   introduced.forEach((later, j) => {
     for (const earlier of introduced.slice(0, j)) {
-      if (later.at - earlier.at < gap && oneLetterApart(earlier.root, later.root)) {
+      if (near(checkpoints, earlier.at, later.at, gap) && middleVowelApart(earlier.root, later.root)) {
         pairs.push({ earlier: earlier.root, earlierAt: earlier.at, later: later.root, laterAt: later.at });
       }
     }
@@ -350,8 +361,9 @@ export function lookAlikePairs(checkpoints: readonly Checkpoint[], core: Readonl
 
 /**
  * Look-alike roots introduced close together (docs/meta/translation-exercises.md#look-alikes):
- * two core roots one letter apart, of any kind, whose `core` cells name the same checkpoint or
- * checkpoints fewer than {@link LOOK_ALIKE_GAP} apart. Reported once, at the later introduction.
+ * two core roots apart only in the middle vowel, of any kind, whose `core` cells name the same checkpoint or
+ * checkpoints of one band fewer than {@link LOOK_ALIKE_GAP} apart. Checkpoints of different bands
+ * are never compared. Reported once, at the later introduction.
  */
 export function lintLookAlikes(
   checkpoints: readonly Checkpoint[],
@@ -365,12 +377,12 @@ export function lintLookAlikes(
     return {
       page: c.page,
       line: e?.line ?? c.line,
-      detail: `\`${later}\` is one letter from \`${earlier}\`, introduced at ${where}: pick another word, or move one core cell at least ${gap} checkpoints from the other`,
+      detail: `\`${later}\` differs from \`${earlier}\` only in the middle vowel, introduced at ${where}: pick another word, or move one core cell at least ${gap} checkpoints from the other or into another level`,
     };
   });
 }
 
-/** Core roots introduced fewer than `gap` checkpoints from `at` that `root` is one letter from (`root` itself left out). */
+/** Core roots introduced in the band of `at`, fewer than `gap` checkpoints from it, that `root` differs from only in the middle vowel (`root` itself left out). */
 export function lookAlikesNear(
   checkpoints: readonly Checkpoint[],
   core: ReadonlyMap<string, string>,
@@ -379,7 +391,7 @@ export function lookAlikesNear(
   gap: number = LOOK_ALIKE_GAP,
 ): string[] {
   return introductions(checkpoints, core)
-    .filter((r) => r.root !== root && Math.abs(r.at - at) < gap && oneLetterApart(r.root, root))
+    .filter((r) => r.root !== root && near(checkpoints, r.at, at, gap) && middleVowelApart(r.root, root))
     .map((r) => r.root);
 }
 
@@ -390,7 +402,7 @@ export type LookAlikeMove = {
   introduceAt?: number;
   /** New core roots that checkpoint would then have, counting this one. */
   newCount: number;
-  /** Core roots near `introduceAt` that the root is one letter from. */
+  /** Core roots near `introduceAt` that the root differs from only in the middle vowel. */
   clashes: string[];
 };
 

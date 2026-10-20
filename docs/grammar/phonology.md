@@ -285,10 +285,10 @@ The last vowel is the job, with the same vowel series as [joins](joins.md#beginn
 
 | Last vowel | Job | Examples |
 |------------|-----|----------|
-| `a` | holds or gathers: containers, groups, masses | `ubawa` *basket*, `arada` *rice*, `aneza` *ant* (it lives in a colony) |
+| `a` | holds or gathers: containers, groups, masses, what comes many at once | `ubawa` *basket*, `arada` *rice*, `aneza` *ant* (it lives in a colony) |
 | `o` | just one of its kind | `egazo` *cat*, `aledo` *apple* |
-| `e` | order: ranked, in sequence, a path | `orohe` *road*, `ogere` *clock*, `aruve` *run* |
-| `u` | takes away or works against: cuts, removes, harms, forbids | `onawu` *knife*, `uzezu` *snake*, `evumu` *fear* |
+| `e` | order: ranked, in sequence, a stage or cycle, a path you travel or are led along | `orohe` *road*, `ogere` *clock*, `aruve` *run*, `erole` *rainbow* |
+| `u` | takes away or works against: cuts, removes, harms, stings, forbids | `onawu` *knife*, `uzezu` *snake*, `evumu` *fear* |
 
 When more than one job fits, try **u** first, then **a**, then **e**, and use **o** when none fits. A knife is one tool, but it cuts, so its root ends in `u`. Length and height are not a job: a banana and a tower end in `o`. A country's last vowel is free, since a country has no job.
 

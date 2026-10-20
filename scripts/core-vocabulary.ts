@@ -133,7 +133,7 @@ function printLookAlikes(checkpoints: Checkpoint[], core: ReadonlyMap<string, st
     }
     console.log("");
   }
-  console.log(`${pairs.length} look-alike pair(s) under ${LOOK_ALIKE_GAP} checkpoints apart.`);
+  console.log(`${pairs.length} look-alike pair(s) under ${LOOK_ALIKE_GAP} checkpoints apart within a band.`);
 }
 
 function main(): void {

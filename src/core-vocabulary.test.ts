@@ -14,7 +14,7 @@ import {
   lintLookAlikes,
   LOOK_ALIKE_GAP,
   lookAlikeMoves,
-  oneLetterApart,
+  middleVowelApart,
   spacingPlan,
   stageCheckpoints,
   type BankEntry,
@@ -207,28 +207,40 @@ describe("lintLookAlikes", () => {
     return { checkpoints, core };
   };
 
-  it("counts one substitution, not length changes or two letters", () => {
-    assert.equal(oneLetterApart("abovu", "abavu"), true);
-    assert.equal(oneLetterApart("abovu", "abovu"), false);
-    assert.equal(oneLetterApart("abovu", "ebavu"), false);
-    assert.equal(oneLetterApart("abo", "abovu"), false);
+  it("counts only a different middle vowel", () => {
+    assert.equal(middleVowelApart("abovu", "abavu"), true);
+    assert.equal(middleVowelApart("abovu", "abovu"), false);
+    assert.equal(middleVowelApart("abovu", "ebovu"), false);
+    assert.equal(middleVowelApart("abovu", "abova"), false);
+    assert.equal(middleVowelApart("abovu", "abavo"), false);
+    assert.equal(middleVowelApart("abo", "aho"), false);
+    assert.equal(middleVowelApart("abo", "abovu"), false);
   });
 
   it("flags look-alikes in one checkpoint and closer than the gap, at the later one", () => {
-    const { checkpoints, core } = path(["abovu", "abavu"], ["odozo"], ["odoza"]);
+    const { checkpoints, core } = path(["abovu", "abavu"], ["odozo"], ["odazo"]);
     assert.deepEqual(
       lintLookAlikes(checkpoints, core).map((f) => `${f.page}:${f.line} ${f.detail.split(":")[0]}`),
       [
-        "p0.md:10 `abovu` is one letter from `abavu`, introduced at this checkpoint",
-        "p2.md:12 `odoza` is one letter from `odozo`, introduced at p1.md#p",
+        "p0.md:10 `abovu` differs from `abavu` only in the middle vowel, introduced at this checkpoint",
+        "p2.md:12 `odazo` differs from `odozo` only in the middle vowel, introduced at p1.md#p",
       ],
     );
   });
 
   it("passes look-alikes the gap apart", () => {
-    const { checkpoints, core } = path(["odozo"], ...Array.from({ length: LOOK_ALIKE_GAP - 1 }, () => []), ["odoza"]);
+    const { checkpoints, core } = path(["odozo"], ...Array.from({ length: LOOK_ALIKE_GAP - 1 }, () => []), ["odazo"]);
     assert.deepEqual(lintLookAlikes(checkpoints, core), []);
     assert.equal(lintLookAlikes(checkpoints, core, LOOK_ALIKE_GAP + 1).length, 1);
+  });
+
+  it("compares checkpoints of one band only", () => {
+    const { checkpoints, core } = path(["odozo"], ["odazo"], ["abovu"], ["abavu"]);
+    for (const c of checkpoints.slice(1)) c.band = "intermediate";
+    assert.deepEqual(
+      lintLookAlikes(checkpoints, core).map((f) => f.page),
+      ["p3.md"],
+    );
   });
 });
 

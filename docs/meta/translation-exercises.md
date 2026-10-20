@@ -89,11 +89,11 @@ The `core` column of the lexicon CSVs orders the learner's content roots by the 
 ### Look-alikes
 <a id="look-alikes"></a>
 
-Root spellings are placed without regard to learning order ([root tails](lexicon.md#root-tails)), so two roots one letter apart can both be core. A learner who meets them before the tails are taught sees look-alikes, whatever their kinds. The vocabulary choice keeps them apart, not the spelling.
+Root spellings are placed without regard to learning order ([root tails](lexicon.md#root-tails)), so two roots that differ only in the middle vowel can both be core. A learner who meets them before the tails are taught sees look-alikes, whatever their kinds. The vocabulary choice keeps them apart, not the spelling.
 
 | Rule | Detail |
 |------|--------|
-| **Gap** | Two core roots one letter apart (same length, one letter differs), of any kind, are introduced at least **5** checkpoints apart in path order: their `core` cells never name the same checkpoint or checkpoints 1 to 4 apart |
+| **Gap** | Two core roots that differ only in the middle vowel (same odd length, only the center letter differs, a vowel in both: `abovu` / `abavu`), of any kind, introduced in the same level are at least **3** checkpoints apart in that level's page order: their `core` cells never name the same checkpoint or checkpoints of one level 1 to 2 apart. Introductions in different levels are never compared |
 | **Fix** | Pick another word for one of the checkpoints, or move one root's introduction: drop it from the banks before a later checkpoint that uses it, and move its `core` cell there |
 | **Scope** | Every core root and listed compound stem with a `core` cell; review use is free, since only introductions are spaced |
 

@@ -102,14 +102,23 @@ On a simple root there is no left piece. Read the vowel as the thing's own job.
 
 | Vowel | Job | Things | People | Feelings | Doing | Places | Signs | Counting |
 |-------|-----|--------|--------|----------|-------|--------|-------|----------|
-| `a` | **holds or gathers**: containers, groups, masses, open spaces; as a suffix, the new thing holds the left | bowl, bag, rice, soup | parent, host, family | joy, love, gratitude | party, festival | field, sea, stadium | folder, chart | money, amount |
+| `a` | **holds or gathers**: containers, groups, masses, open spaces, what comes many at once, what stores; as a suffix, the new thing holds the left | bowl, bag, rice, soup, berries, fries, oyster, cassette | parent, host, family | joy, love, gratitude, air-kiss | party, festival | field, sea, stadium | folder, chart, globe | money, amount |
 | `o` | **one of the kind**, the default; as a suffix, a kind characterized by the left | ball, egg, apple, lamp | baby, a person | calm, surprise, thought | jump, one act | island, hut | circle, dot | coin, die |
-| `e` | **order**: ranked, sequenced, a path, a heading; as a suffix, arranged or in sequence from the left | ladder, clock, road | king, judge, police | salute, resolve | race, walk, train | road, north | arrow, skip | clock, calendar, rhythm |
-| `u` | **takes away or works against**: cuts, removes, hides, ends, forbids; as a suffix, undoes the left | knife, scissors, eraser, poison | thief, villain, ghost | fear, sadness, disgust | fight, fall, escape | cave, cemetery, volcano | warning, no-entry, cross | minus, hourglass, decrescendo |
+| `e` | **order**: ranked, sequenced, a stage or cycle, a path you travel or are led along, a heading; as a suffix, arranged or in sequence from the left | ladder, clock, road, gold / silver / bronze, rainbow colors, moon, chick, frog, horse, cane, chain link | king, judge, police | salute, nod, plead, awe | race, walk, train, cooking | road, north | arrow, skip, loop, reload, shuffle | clock, calendar, rhythm |
+| `u` | **takes away or works against**: cuts, removes, hides, ends, forbids, stings, sickens, wards off; as a suffix, undoes the left | knife, scissors, eraser, poison, lemon, onion, plunger, squid (ink) | thief, villain, ghost | fear, sadness, disgust, dizzy, skeptical | fight, fall, escape | cave, cemetery, volcano | warning, no-entry, cross, nazar, copyright | minus, hourglass, decrescendo |
 
 **Tie rule:** test **u → a → e → o**, and use the first that fits. A knife is also a tool you could call one of its kind, but it cuts, so `u`. A basket is one object, but it holds, so `a`. A road is a place, but it is a path, so `e`. Anything left is `o`.
 
-Length, height, and a pointed outline are not a job. A snake harms, so `u`. A banana, a horse, a tower, and a pen are `o` unless another job fits (noodles as a mass `a`; a herd animal `a`; a ranked role `e`).
+**Order is broad.** `e` is not only for paths and clocks. Test it in every kind:
+
+- **Ranked sets:** gold, silver and bronze (and a medal) rank; the rainbow colors (red, orange, yellow, blue, purple) are a series. Colors off the spectrum (pink, brown, black, white, gray) stay `o`.
+- **Stages and cycles:** a chick, a frog, a butterfly and a phoenix are stages in a life; the moon goes through phases and the sun through its day; cooking is steps in order; loop, reload, repeat and shuffle run or rearrange a sequence.
+- **Led along a path:** a horse, a donkey and a guide dog carry or lead you along a way; a cane, a lantern and a chain link do the same as tools. A comet is its path.
+- **Rank among people and creatures:** a nod or a plea addresses someone by standing; awe looks up; a gorilla leads its troop.
+
+Each kind has a natural `e`, so no kind should be left without one.
+
+Length, height, and a pointed outline are not a job. A snake harms, so `u`. A banana, a tower, and a pen are `o` unless another job fits (noodles as a mass `a`; a herd animal `a`; a ranked role `e`).
 
 So *ant* is `VCVza` (a creature that lives in a colony), *snake* is `VCVzu`, *wolf* is `VCVzu`, and *knife* is `VCVwu`.
 
@@ -343,8 +352,8 @@ With this lint, when the tails are taught doesn't affect placement.
 
 ### Phase 3 as built (2026-10-20) {#phase-3-as-built}
 
-- **Lint:** `lintLookAlikes` in [`src/core-vocabulary.ts`](../../../src/core-vocabulary.ts) runs in `lint:egabon` beside `lintCoreCounts`. One letter apart means same length, one letter different. It reads only the `core` cells, so review use is free.
-- **N:** `LOOK_ALIKE_GAP` is 5: two look-alikes' introductions are at least 5 checkpoints apart ([translation exercises § look-alikes](../../meta/translation-exercises.md#look-alikes)). Against the banks after phase 2 the count was 2 conflicts at a gap of 1, 8 at 3, 13 at 5 and 27 at 8.
+- **Lint:** `lintLookAlikes` in [`src/core-vocabulary.ts`](../../../src/core-vocabulary.ts) runs in `lint:egabon` beside `lintCoreCounts`. A look-alike pair is two roots of the same odd length whose only difference is the center letter, a vowel in both. It reads only the `core` cells, so review use is free.
+- **N:** `LOOK_ALIKE_GAP` is 3: two look-alikes introduced in one band are at least 3 of that band's checkpoints apart; different bands are not compared ([translation exercises § look-alikes](../../meta/translation-exercises.md#look-alikes)). Against the banks after phase 2 the count was 2 conflicts at a gap of 1, 8 at 3, 13 at 5 and 27 at 8.
 - **Helper:** `npm run core-vocabulary -- --look-alikes` lists each pair with its fix options: where each root is used, the first later checkpoint that could introduce it instead (with new count and clashes), and clash-free substitutes of the same kind.
 - **Fixes (13 pairs):**
   - *pencil* became *eraser* in the first four beginner checkpoints, and *pencil* is now introduced at hooks intermediate;

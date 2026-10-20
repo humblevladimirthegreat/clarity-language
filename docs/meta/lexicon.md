@@ -109,7 +109,9 @@ The kind follows the row's **concrete** sense, as its label names it. The abstra
 
 ### Shape {#shape}
 
-The shape is the thing's job, from the vowel series: `holds` (**a**: containers, groups, masses, open spaces), `one` (**o**: one of its kind, the default), `order` (**e**: ranked, sequenced, a path or heading), `takes-away` (**u**: cuts, removes, hides, ends, forbids, harms). **Tie rule:** test `takes-away`, then `holds`, then `order`, and take the first that fits; anything left is `one`. Length, height and a pointed outline are not a job: a banana, a tower and a pen are `one`.
+The shape is the thing's job, from the vowel series: `holds` (**a**: containers, groups, masses, open spaces, what comes many at once, what stores), `one` (**o**: one of its kind, the default), `order` (**e**: ranked, sequenced, a stage or cycle, a path you travel or are led along, a heading), `takes-away` (**u**: cuts, removes, hides, ends, forbids, harms, stings, sickens, wards off). **Tie rule:** test `takes-away`, then `holds`, then `order`, and take the first that fits; anything left is `one`. Length, height and a pointed outline are not a job: a banana, a tower and a pen are `one`.
+
+`one` is a default, not a fallback for a skipped test. Test `order` in every kind, including creatures, feelings, food and nature, where it is easy to miss: ranked sets (gold / silver / bronze, the rainbow colors), stages and cycles (chick, frog, moon, cooking), what carries or leads you along a way (horse, guide dog, cane, lantern), and rank between beings (nod, plead, awe). Worked examples by kind: [root-tails proposal § final vowel](../proposals/partially-implemented/root-tails.md#shapes). When a kind's `one` share passes about half, review its `one` rows against each job in turn.
 
 ### Onset {#onset}
 
@@ -180,6 +182,6 @@ The `core` column in [`lexicon-published.csv`](../../data/lexicon-published.csv)
 
 - `npm run core-vocabulary` prints, for each checkpoint, the roots it introduces and how many bank roots are review, and flags checkpoints over the cap of 5 new roots.
 - `npm run core-vocabulary -- --for <page>.md:<band>` (or `--for page.md#id`) lists, for one checkpoint, the roots whose cell names it, the next later core roots, and the earlier core roots ranked by checkpoints since a bank last used them (`--limit` sets how many).
-- `npm run core-vocabulary -- --look-alikes` lists core roots one letter apart that are introduced too close together, with fix options ([look-alikes](translation-exercises.md#look-alikes)).
+- `npm run core-vocabulary -- --look-alikes` lists core roots that differ only in the middle vowel and are introduced too close together, with fix options ([look-alikes](translation-exercises.md#look-alikes)).
 - `npm run core-vocabulary -- --write` seeded the column once from the stage banks: each root got the first checkpoint whose **Roots used here** table uses it. After that the column is edited by hand, and `--write` refuses to overwrite it unless `--force` is passed.
 - `retie-docs` retargets `core` anchors when a heading id changes, as it does for overlay `anchor` cells. `npm test` fails when a `core` cell names no stage checkpoint.
