@@ -4,7 +4,7 @@
  *
  * Run: npm run rename-language                       (dry run: old name from package.json, new from 👓 + n)
  *      npm run rename-language -- --write
- *      npm run rename-language -- --from egabon --to agebon --write
+ *      npm run rename-language -- --from <old> --to <new> --write
  *
  * Every tracked text file: `Egabon` / `egabon` / `EGABON` take the same casing of the new name;
  * any other casing is listed for review and left as is. The old root (name minus -n) is respelled
