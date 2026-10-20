@@ -169,7 +169,7 @@ async function main(): Promise<void> {
   // Pre-retie text reads against the old lexicon, retied text against the current one.
   const tables = retieTables(map);
   const english = await commonEnglish();
-  // The language's own name is the 👓 root + -n. It is renamed by hand, never by a retie:
+  // The language's own name is the 👓 root + -n. It is renamed by `npm run rename-language`, never by a retie:
   // the English name, identifiers (`egabon` fences, `lint:egabon`), file names and URLs all carry it.
   const oldLanguageRoot = closedRootsIn(tables.old.published).glasses;
   const newLanguageRoot = closedRootsIn(tables.current.published).glasses;
@@ -421,7 +421,7 @@ async function main(): Promise<void> {
 
   if (oldLanguageRoot !== newLanguageRoot) {
     console.log(
-      `language name  👓 ${oldLanguageRoot} → ${newLanguageRoot}: ${[...keep].join(" / ")} left as is; rename the language by hand (docs/meta/language-name.md)`,
+      `language name  👓 ${oldLanguageRoot} → ${newLanguageRoot}: ${[...keep].join(" / ")} left as is; run npm run rename-language (docs/meta/retie.md#language-name)`,
     );
   }
 

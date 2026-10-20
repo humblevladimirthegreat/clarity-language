@@ -17,6 +17,7 @@
     "docs:preview": "vitepress preview docs/grammar",
     "convert-word": "tsx scripts/convert-word.ts",
     "retie-docs": "tsx scripts/retie-docs.ts",
+    "rename-language": "tsx scripts/rename-language.ts",
     "cheat-sheet-blocks": "tsx scripts/cheat-sheet-blocks.ts",
     "core-vocabulary": "tsx scripts/core-vocabulary.ts",
     "regloss-docs": "tsx scripts/regloss-docs.ts",

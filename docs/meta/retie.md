@@ -14,12 +14,12 @@ The root-tails retie (2026-10-20: 1345 respelled roots, 17 of them closed roots)
 
 ## The language name {#language-name}
 
-The name is the 👓 root + **-n**. `retie-docs` never respells it: not `egabon`, not *Egabon*, not the `egabon` fence tag, `lint:egabon`, file names or URLs. When 👓 moves, the dry run prints `language name 👓 old → new`, and the rename is a separate hand pass:
+The name is the 👓 root + **-n**. `retie-docs` never respells it: not `egabon`, not *Egabon*, not the `egabon` fence tag, `lint:egabon`, file names or URLs. When 👓 moves, the dry run prints `language name 👓 old → new`. Then run **`npm run rename-language`** (dry run), then **`npm run rename-language -- --write`**, in the same change as the retie: `introduction.md` names the root beside the name, so until then it shows the new root beside the old name. The script reads the old name from the `package.json` name and the new one from 👓 + **-n** (`--from` / `--to` override), and:
 
-- [language-name.md](language-name.md), [introduction.md](../grammar/introduction.md) (the name and its root), and the house rule in `AGENTS.md`.
-- English prose, headings and word-bank headers (`| English | Egabon | Cue |`, which the word-bank lint reads).
-- Identifiers: the fence info string, lint kinds (`egabon-in-text-fence`), component and file names, the package name, `scripts/site-redirects.json` for any moved URL.
-- `introduction.md` names the root beside the name, so after the retie it shows the new root beside the old name until this pass: do it in the same change as the retie.
+- Respells the name in every tracked text file in its own casing (`Egabon`, `egabon`, `EGABON`): English prose, headings, word-bank headers (`| English | Egabon | Cue |`), the fence info string, lint kinds (`egabon-in-text-fence`), identifiers, the package name. Any other casing is listed for review.
+- Respells the old root only in [language-name.md](language-name.md); elsewhere that spelling may now be another row's root.
+- Moves every tracked path that carries the name, and adds a `pageMoves` row to `scripts/site-redirects.json` for each moved grammar page, retargeting older rows so redirects never chain. Paste the new Amplify JSON afterward ([site redirects](site-redirects.md)).
+- Refuses `--write` on a dirty tree unless `--force`, so the rename is one diff.
 
 ## Pages the retie skips {#skipped}
 
@@ -67,4 +67,4 @@ A new test of this kind should build its expectation from the lexicon (`CLOSED`,
 
 1. `npm run build`, `npm test`, `npm run grammar-check`. `--write` already regenerated the cheat-sheet blocks and the English-helper WordNet index.
 2. Read the review list and warnings from the `--write` run.
-3. Do the [language name](#language-name) pass if 👓 moved, and the [tests](#tests) pass.
+3. Run `npm run rename-language` if 👓 moved ([language name](#language-name)), and do the [tests](#tests) pass.
