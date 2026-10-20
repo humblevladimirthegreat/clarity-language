@@ -33,7 +33,7 @@ export const SHAPE_VOWELS = {
   "takes-away": "u",
 } as const;
 
-/** Size → middle vowel. A placement preference, not a check: the placer gives up a size vowel only in a crowded cell. */
+/** Size → middle vowel. A placement preference, not a check: the placer gives up a size vowel only in a crowded cell. `none` is anything you can't measure: a stuff, an act, a mark, a time. */
 export const SIZE_VOWELS = {
   big: "a",
   medium: "o",
@@ -45,10 +45,8 @@ export type Kind = keyof typeof KIND_LETTERS;
 export type Shape = keyof typeof SHAPE_VOWELS;
 export type Size = keyof typeof SIZE_VOWELS;
 
-/** Kinds whose every row names a physical thing: each five-letter row needs a size. */
-export const SIZED_KINDS: ReadonlySet<Kind> = new Set(["creature", "body", "nature", "food", "tool", "place"]);
-/** Kinds that mix things and acts: an object row takes a size, an action none. */
-export const OPTIONAL_SIZE_KINDS: ReadonlySet<Kind> = new Set(["doing"]);
+/** Kinds with no size: every feeling would be `none`, which says nothing the consonant hasn't. Every other kind needs one. */
+export const UNSIZED_KINDS: ReadonlySet<Kind> = new Set(["mind"]);
 
 /** The `kind` of a country or territory row, which takes a place-name root and no tail. */
 export const PLACE_KIND = "named";
@@ -80,8 +78,8 @@ export function tailFieldsError(kind: string, shape: string): string | null {
 /** Why a five-letter row's size doesn't fit its kind, or null when it does. */
 export function sizeFieldError(kind: Kind, size: string): string | null {
   if (size && !isSize(size)) return `size must be one of ${Object.keys(SIZE_VOWELS).join(", ")} (got ${size})`;
-  if (SIZED_KINDS.has(kind) && !size) return `a ${kind} row needs a size`;
-  if (size && !SIZED_KINDS.has(kind) && !OPTIONAL_SIZE_KINDS.has(kind)) return `a ${kind} row has no size (got ${size})`;
+  if (UNSIZED_KINDS.has(kind)) return size ? `a ${kind} row has no size (got ${size})` : null;
+  if (!size) return `a ${kind} row needs a size`;
   return null;
 }
 
@@ -124,7 +122,7 @@ export type TailError = { key: string; reason: string };
 
 /**
  * Checks `npm test` and `check-compounds` run over the published lexicon: every five-letter row has a
- * kind and shape from their closed sets, a size where its kind takes one, and a root that ends in its
+ * kind and shape from their closed sets, a size unless its kind is unsized, and a root that ends in its
  * tail and clears the hook and holder checks; a three-letter row has none of the three; a `named` row
  * has no shape or size and a place-name root no other place shares. The middle vowel is not checked. Listed compounds that split two ways are `validateCompoundRows`'.
  */

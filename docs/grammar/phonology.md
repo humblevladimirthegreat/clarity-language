@@ -292,16 +292,16 @@ The last vowel is the job, with the same vowel series as [joins](joins.md#beginn
 
 When more than one job fits, try **u** first, then **a**, then **e**. A knife is one tool, but it cuts, so its root ends in `u`. When no job fits, the thing's outline decides: hollow `a`, long `e`, sharp `u`, round or compact `o`. A banana ends in `e` and an apple in `o`. For a feeling, it's which way the feeling points (toward others `a`, inward `o`); for an action, how it unfolds (with others `a`, along a course `e`). A country's last vowel is free, since a country has no job.
 
-For a thing you could see or hold (a creature, a body part, a plant, a food, a tool, a place, a vehicle), the **middle vowel** usually says how big it is:
+In every kind but feelings, the **middle vowel** usually says how big the thing is:
 
 | Middle vowel | Size | Examples |
 |--------------|------|----------|
 | `a` | about your size or bigger | whale, ship, bed, bicycle |
 | `o` | between your hand and you | dog, chair, guitar |
 | `e` | no bigger than your hand | ant, key, apple, phone |
-| `u` | no size of its own: a stuff, a color, the weather | rice, water, metal, red |
+| `u` | nothing you could measure: a stuff, an act, a symbol, a time | rice, red, run, arrow, night |
 
-This is a hint, not a rule: a few roots take another vowel to stay apart from a neighbor. Feelings, people, signs and numbers have no size, so their middle vowel carries no meaning.
+This is a hint, not a rule: a few roots take another vowel to stay apart from a neighbor. Feelings have no size, so a feeling's middle vowel carries no meaning.
 
 A [compound](x-compounds.md#lexical-compounds) ends in its head root, so it keeps the head's tail.
 

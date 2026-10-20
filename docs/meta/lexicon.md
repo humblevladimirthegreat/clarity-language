@@ -115,9 +115,9 @@ When no job fits, `one` is **not** the default. Use the fallback: for a thing yo
 
 ### Size {#size}
 
-The size is how big the concrete sense is against a person, and it steers the root's **middle vowel**: `big` (**a**: about your size or bigger), `medium` (**o**: between your hand and you), `small` (**e**: no bigger than your hand), `none` (**u**: no size of its own, such as a substance, liquid, color, weather, light or direction). Judge the typical member (a dog is `medium`); when unsure between two sizes, take `medium`.
+The size is how big the concrete sense is against a person, and it steers the root's **middle vowel**: `big` (**a**: about your size or bigger), `medium` (**o**: between your hand and you), `small` (**e**: no bigger than your hand), `none` (**u**: nothing you could measure: a substance, liquid, color, weather or direction; an act or gesture; a symbol, which works at any size; a time, number or notation). Judge the typical member (a dog is `medium`, an adult `big`); when unsure between two sizes, take `medium`. Religious symbols are all `none`.
 
-Every five-letter row of `creature`, `body`, `nature`, `food`, `tool` and `place` needs a size. In `doing`, an object row (vehicle, toy, gear) takes one and an action or a sport stays empty. `mind`, `person`, `sign`, `counting`, `named` and three-letter rows stay empty; their middle vowel goes to the echo.
+Every five-letter row needs a size except in `mind`, where every row would be `none`; `mind`, `named` and three-letter rows stay empty, and a `mind` row's middle vowel goes to the echo. In the mixed kinds, things get a measured size and the rest `none`: in `doing` a vehicle or toy versus an action or sport, in `person` a being versus an act, in `sign` a document versus a symbol, in `counting` a clock or instrument versus a time or number.
 
 It's a placement preference, not a check: the placer gives up the size vowel only in a crowded cell, and the tails report (`convert-word --report`) prints the share that match. Why size and not another reading: [root-tails proposal § middle vowel](../proposals/partially-implemented/root-tails.md#middle-vowel).
 

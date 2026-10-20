@@ -75,13 +75,14 @@ describe("validateRootTails", () => {
     assert.ok(reasons([{ ...star!, kind: "sign" }]).some((r) => r.includes("3-letter root has no kind")));
   });
 
-  it("needs a size on a sized kind, and rejects one where the kind has none", () => {
+  it("needs a size on every kind but mind, and rejects one on a mind row", () => {
     assert.ok(reasons([{ ...cat!, size: "" }]).some((r) => r === "a creature row needs a size"));
     assert.ok(reasons([{ ...cat!, size: "huge" }]).some((r) => r.startsWith("size must be")));
     assert.ok(reasons([{ ...rage!, size: "small" }]).some((r) => r.startsWith("a mind row has no size")));
     assert.ok(reasons([{ ...france!, size: "big" }]).some((r) => r.startsWith("a named row has no size")));
     assert.ok(reasons([{ ...star!, size: "small" }]).some((r) => r.includes("3-letter root has no kind, shape or size")));
-    assert.deepEqual(reasons([published("🚲", "bicycle", "obove", "doing", "order", "medium"), published("🏃", "run", "aruve", "doing", "order")]), []);
+    assert.ok(reasons([published("🏃", "run", "aruve", "doing", "order")]).some((r) => r === "a doing row needs a size"));
+    assert.deepEqual(reasons([published("🚲", "bicycle", "obave", "doing", "order", "big"), published("🏃", "run", "aruve", "doing", "order", "none")]), []);
   });
 
   it("rejects a named row without a place-name root, and two places on one root", () => {
