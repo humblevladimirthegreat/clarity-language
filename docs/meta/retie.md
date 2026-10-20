@@ -19,7 +19,7 @@ The name is the 👓 root + **-n**. `retie-docs` never respells it: not `egabon`
 - Respells the name in every tracked text file in its own casing (`Egabon`, `egabon`, `EGABON`): English prose, headings, word-bank headers (`| English | Egabon | Cue |`), the fence info string, lint kinds (`egabon-in-text-fence`), identifiers, the package name. Any other casing is listed for review.
 - Respells the old root only in [language-name.md](language-name.md); elsewhere that spelling may now be another row's root.
 - Moves every tracked path that carries the name, and adds a `pageMoves` row to `scripts/site-redirects.json` for each moved grammar page, retargeting older rows so redirects never chain. Paste the new Amplify JSON afterward ([site redirects](site-redirects.md)).
-- Refuses `--write` on a dirty tree unless `--force`, so the rename is one diff.
+- Refuses `--write` on a dirty tree, or when the new name already occurs, unless `--force`. After the rename, `npm run rename-language -- --from <old> --force` catches stragglers (edits merged later).
 
 ## Pages the retie skips {#skipped}
 

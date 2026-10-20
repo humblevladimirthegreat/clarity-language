@@ -43,7 +43,7 @@ function parseArgs(argv: string[]) {
 }
 
 const git = (...args: string[]) => execFileSync("git", args, { cwd: REPO_ROOT, encoding: "utf8" });
-const capitalize = (word: string) => word[0].toUpperCase() + word.slice(1);
+const capitalize = (word: string) => word.charAt(0).toUpperCase() + word.slice(1);
 const escapeRe = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 /** The new name in the casing of `match`, or undefined for a casing the pass does not know. */
@@ -81,8 +81,11 @@ for (const file of tracked) {
 }
 
 const collisions = [...texts].filter(([, text]) => text.toLowerCase().includes(to)).map(([file]) => file);
-if (collisions.length > 0) {
-  console.error(`The new name "${to}" already occurs in: ${collisions.join(", ")}. Pick another --to, or clear those first.`);
+// After a rename, `--from <old> --force` catches stragglers (say, edits merged later) despite the new name being everywhere.
+if (collisions.length > 0 && !options.force) {
+  console.error(
+    `The new name "${to}" already occurs in: ${collisions.join(", ")}. Pick another --to, clear those first, or pass --force.`,
+  );
   process.exit(1);
 }
 
