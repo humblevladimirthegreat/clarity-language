@@ -334,13 +334,18 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 
 English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an unstated usual. Agebon always states the bar. Write the PATTERN bar **`thubem`** (*than usual*), then the rank word (**`zel`** for *more than*, **`zuel`** for *less than*), then the quality as an adjective. The quality is the root that names what is measured, in its abstract sense (**-m**): cost, strength, effort.
 
+With no `/b/`, **`thubem`** is the item's own usual level or the usual case in the situation, so `zuzozen thubem zuel gobobom` is *Uzozen is weaker than usual* (today, compared with themself). When English means a trait, compared with other people (*a rich family*, *a weak swimmer*), put the people you compare against in the bar's `/b/`: **`thubem bleyolx`** is *than most people*.
+
 | English | Agebon |
 |---------|--------|
 | *expensive* / *costly* / *pricey* | `thubem zel goderom` (costs more than usual) |
 | *cheap* / *inexpensive* | `thubem zuel goderom` |
-| *rich* / *wealthy* | `thubem zel gegomam` (more wealth than usual) |
-| *poor* (*little money*) | `thubem zuel gegomam` |
-| *weak* / *feeble* / *frail* | `thubem zuel gobobom` (less strength than usual) |
+| *rich* / *wealthy* (than most people) | `thubem bleyolx zel gegomam` |
+| *poor* (*little money*, than most people) | `thubem bleyolx zuel gegomam` |
+| *strong* / *powerful* (than most people) | `thubem bleyolx zel gobobom` |
+| *weak* / *feeble* / *frail* (than most people) | `thubem bleyolx zuel gobobom` |
+| *weak today* / *not as strong as usual* | `thubem zuel gobobom` |
+| *not strong enough* (for what you need) | `thudatham zuel gobobom` ([sake bar](sakes.md#sake-bars)) |
 | *busy* / *hard-working* | `thubem zel guzubam` (more effort than usual) |
 | *far* / *far away* / *distant* / *remote* | `thubem zel gazavem` (farther than usual) |
 | *wide* / *broad* | `thubem zel gorahem` |
@@ -358,11 +363,23 @@ English *expensive*, *cheap*, *weak* and *remarkable* compare a quality with an 
 >
 > "The book is expensive."
 
+> `zuzozen thubem bleyolx zuel gobobom.`
+>
+> [z-Uzozen | [th-PATTERN | bl-person-x] | z-rank/less | g-strength]
+>
+> "Uzozen is weak." (weaker than most people)
+
 > `zuzozen thubem zuel gobobom.`
 >
 > [z-Uzozen | th-PATTERN | z-rank/less | g-strength]
 >
-> "Uzozen is less strong than usual."
+> "Uzozen is weaker than usual."
+
+> `zuzozen thudatham zuel gobobom.`
+>
+> [z-Uzozen | th-sake-met-any-term | z-rank/less | g-strength]
+>
+> "Uzozen is not strong enough."
 
 **Compare with:** any stance that sets a value can be the bar ([every bar](comparatives.md#stance-bars)). *More expensive than I expected* is INTUITION, `thabom zel goderom`, and *too expensive* is a sake bar, `thudatham zel goderom`. Bare *good* and *bad* have no root ([wrong, ugly](say-reasons.md#wrong-ugly)).
 
