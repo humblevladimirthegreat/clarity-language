@@ -28,7 +28,7 @@ You can mark how faithful the quote is. Put the mark **after** the role letter, 
 
 A span with no mark is **exact**: the words as they were said (`d[uzozen]`). Write **`~`** for a **paraphrase**, when you mean the gist, not the exact words (`d~[zuzozen vezuyol]`). Write **`@`** for a **proper** span: it names a work with a title of several words, such as a song, proverb, or book (`d@[enuron olazun]`). The span then means the work itself, not its title as a string of words.
 
-A work or person with a one-word name is an ordinary **-n** word (`denuron`), not `d@[enuron]`, unless a role letter or an ending is part of the title itself. The mark belongs to the brackets; the words inside keep their usual endings ([titled phrases](word-endings.md#titled-phrases)).
+A work or person with a one-word name is an ordinary **-n** word (`denuron`), not `d@[enuron]`, unless a role letter or an ending is part of the title itself. The mark belongs to the brackets; the words inside keep their usual endings.
 
 <!-- cheat-sheet: restrictors-spans -->
 | Agebon | Use | English | Cue |
@@ -408,7 +408,7 @@ With **-n**, the mention is a **name** as spelling (the title, which could be ch
 
 The marker is read as a marker only when it stands **directly before a span**. Anywhere else the same spelling is the ordinary adjective *lettered*. A mention marker does not go under `/y/`: a call or a reaction is not about a spelling. A `/w/` word is never a marker either, because `/w/` grades a `/ɡ/`, `/h/`, or `/th/` word, never a noun.
 
-A marker before a [topic span](#topic-quotes) works the same way:
+A marker before a topic span works the same way:
 
 > `glegel x[udozo] zalon gamezom.`
 >
@@ -527,13 +527,13 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening brace
 - **Hosts keep their `bl-` word.** A host (`/ɡ/`, `/h/`, `/th/`) and its `bl-` word are both inside the island or both outside.
 - **One island per clause.** Islands do not nest.
 - Empty `{ }` has no reading.
-- **Binder required:** at least one scope-taking `/h/` or `/th/` and/or a [join](joins.md#scope-islands-join) particle **inside**. A [hook](hooks.md) is never a binder. A hook already reaches its whole stretch: `/w/` right before it grades the [whole span](hooks.md#spans), and a hook after a noun belongs to that noun.
+- **Binder required:** at least one scope-taking `/h/` or `/th/` and/or a join particle **inside**. A [hook](hooks.md) is never a binder. A hook already reaches its whole stretch: `/w/` right before it grades the whole span, and a hook after a noun belongs to that noun.
 - Prefer spaces inside: `{ hegugom zudozol gerulel }`.
 
 | Binder | Use inside the island |
 |--------|------------------------|
 | Scope-taking **`/h/`** or **`/th/`** | frames that **chunk** (prefer first in the island; see the `/b/` exception below) |
-| Prefixed **join** | joins **only** matching-role material **inside** ([scope islands](joins.md#scope-islands-join)) |
+| Prefixed **join** | joins **only** matching-role material **inside** |
 
 `/h/` and a join may share one island (`{ hegugom zuzozen zolazun zam }`).
 

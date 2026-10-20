@@ -23,7 +23,7 @@ As a plain noun or verb, the root keeps its own meaning (`zagel` *a map*; `vagel
 <a id="plan-map-resolution"></a>
 <a id="plan-endings"></a>
 
-The ending on PLAN says how much of the plan is worked out: **-l** for a plan with backups ready, **-m** for the steps, **-r** for just the direction. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). With **-n**, the word is an ordinary [name](word-endings.md#proper-name--n). **`thagem`** is the soft default: it claims a plan without saying how much is worked out.
+The ending on PLAN says how much of the plan is worked out: **-l** for a plan with backups ready, **-m** for the steps, **-r** for just the direction. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). With **-n**, the word is an ordinary name. **`thagem`** is the soft default: it claims a plan without saying how much is worked out.
 
 | Agebon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -46,10 +46,6 @@ The ending on PLAN says how much of the plan is worked out: **-l** for a plan wi
 Saying *I will* in English can hide whether you have a direction, the steps, or backups too. Picking the ending makes that level of detail audible. No level is better: match the detail to the plan, and a sketch is often all a small or early plan needs. For a plan that matters, the atlas ending is a prompt to ask what could go wrong and have an answer ready.
 
 You know how far your own plan is worked out, so a listener takes **`thagem`** from you to mean you have no backups yet: if you had them, you would have said **`thagel`**. You can still say outright that you have not thought about backups.
-
-**For *will* about the world (*it will rain*), use:** a [forecast](knowing.md#forecast). PLAN says what you mean to do, and your own intention needs no evidence. A forecast always says what it rests on.
-
-To say how much later you mean to act (*in three hours*), put a forward time [offset](knowing.md#dated-channel) in a `bl-` word right after PLAN. That `bl-` word is only ever a time: PLAN takes no `bl-` word for whose plan it is.
 
 ### Practice {#beginner-practice}
 
@@ -218,7 +214,7 @@ English *can* and *can't* usually sit in front of the verb (*can sing*, *can't s
 #### Can (`xa`)
 <a id="can"></a>
 
-To say someone **can** do something (*can sing*) or can have a quality, keep the verb or adjective and add **`x`** and **`a`** after the root, before the usual ending. The first letter stays `/v/` for an action or `/ɡ/` for a quality, and no separate word for *can* is needed. Only a verb or an adjective takes the ability vowel; a noun, a name, or an `/h/` word does not, apart from the special word in [when there is no single verb](#ability-fallback). (Cue: **a** ≈ add, so capability is in)
+To say someone **can** do something (*can sing*) or can have a quality, keep the verb or adjective and add **`x`** and **`a`** after the root, before the usual ending. The first letter stays `/v/` for an action or `/ɡ/` for a quality, and no separate word for *can* is needed. Only a verb or an adjective takes the ability vowel; a noun, a name, or an `/h/` word does not, apart from the special word in when there is no single verb. (Cue: **a** ≈ add, so capability is in)
 
 > `zuzozen vezuyoxal.`
 >
@@ -417,7 +413,7 @@ A trial run (**-r**) plans for failure: if it fails, that is what the probe was 
 #### Fallback (`xon`) {#fallback}
 <a id="or-else"></a>
 
-For *try A; failing that, B*, put the clause join [**`xon`**](join-across-roles.md#sequence) between the attempt and the backup. The backup comes into play only if the attempt before it fails, so exactly one of them ends up holding.
+For *try A; failing that, B*, put the clause join **`xon`** between the attempt and the backup. The backup comes into play only if the attempt before it fails, so exactly one of them ends up holding.
 
 > `zuzozen howar vowurel xon zuzozer vezuyol.`
 >
@@ -721,5 +717,4 @@ With one named verb, fold *can* into it with **`x`** and **`a`**; **`hodaxal`** 
 ## See also
 
 - How you know a forecast: [knowing.md](knowing.md#evidentiality)
-- Choosing as an act: [join-across-roles.md](join-across-roles.md#join-act-verbs)
 - Autonomy as a sake: [sakes.md](sakes.md#sake-inventory)

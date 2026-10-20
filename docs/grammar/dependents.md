@@ -19,7 +19,7 @@ English can describe a noun with a whole clause that starts with *who*, *that*, 
 
 That pair is English *Uzozen talks to the guard who sits.* Repeat the full word when you need the same person again in the next sentence.
 
-**Compare with:** *a blue dog* is still one [adjective](clause.md#adjectives-ɡ) (`gubulel`). *Uzozen tells Olazun **that** a dog runs* is a [dependent clause](#dependent-clauses): *that* packages the next sentence as content, not as a tag on *dog*.
+**Compare with:** *a blue dog* is still one [adjective](clause.md#adjectives-ɡ) (`gubulel`). *Uzozen tells Olazun **that** a dog runs* is a dependent clause: *that* packages the next sentence as content, not as a tag on *dog*.
 
 ### Dependent clauses {#dependent-clauses}
 
@@ -29,7 +29,7 @@ In the main sentence, a **stand-in** holds the dependent clause's place: **`darl
 
 Put **`darl`** last in the main sentence, and start the dependent clause immediately after it. Word order is free, so you can always arrange the other words to leave **`darl`** at the end.
 
-The main sentence stops after **`darl`**, and the next full sentence is the content that **`darl`** stands for. Do not open that inner sentence with `/y/`: it is not a new turn, and the stand-in's vowel already says what kind of content it is (**`a`** for *that …*). The inner sentence names who does its verb (`/z/`), even where English drops that person (*wants to walk*): write the name again. The one exception is an instruction stand-in (*to …* or *not to …*) for the person told ([stand-in vowels](#stand-in)).
+The main sentence stops after **`darl`**, and the next full sentence is the content that **`darl`** stands for. Do not open that inner sentence with `/y/`: it is not a new turn, and the stand-in's vowel already says what kind of content it is (**`a`** for *that …*). The inner sentence names who does its verb (`/z/`), even where English drops that person (*wants to walk*): write the name again.
 
 Here the dependent clause is the direct object, so the stand-in is **`darl`**:
 
@@ -51,7 +51,7 @@ For English *whether*, change the vowel to **`o`**: **`dorl`**. The inner senten
 
 ### Because, if, although (poles) {#poles}
 
-Words like *because*, *if*, and *although* attach a dependent clause as a reason, a condition, a contrast, or a time. Agebon uses a pair for this: a **pole** word that names the link, then the stand-in **`blarl`** right after it. The pole is a relation word, so **`blarl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`blarl`** at the very end. Only a [stance join](join-across-roles.md#stance-join-before-barl) may come between them.
+Words like *because*, *if*, and *although* attach a dependent clause as a reason, a condition, a contrast, or a time. Agebon uses a pair for this: a **pole** word that names the link, then the stand-in **`blarl`** right after it. The pole is a relation word, so **`blarl`** is its hosted [extra noun](clause.md#extra-nouns) in `/b/`. Keep the pair together, last in the main sentence, with **`blarl`** at the very end.
 
 The pole's role letter follows the clause page. *Because*, *if*, *only if*, and *if and only if* are your [stance](clause.md#stance-th) on why the claim holds, so they take `/th/`. *Although*, *while*, *until*, *before*, *after*, and *so that* describe the event itself, so they are adverbs on `/h/`.
 
@@ -98,9 +98,9 @@ English *despite* takes a noun instead of a clause (*despite Olazun*). Use the s
 
 Ordinary `zezol` is still *a zebra*.
 
-The sentence after **`blarl`** has to name an event or a thing, so it needs a noun or a verb. A stance word by itself does not fill it. The one exception is a lone feeling, thanks, or sorry ([feeling with no object](sakes.md#feeling-no-object)): that word is already a whole sentence about you, so it can be the sentence after a stand-in.
+The sentence after **`blarl`** has to name an event or a thing, so it needs a noun or a verb. A stance word by itself does not fill it.
 
-**Compare with:** discourse *however* and *therefore* start a new sentence after a finished claim ([continue](#continue-x)); they are not *although*. *Whether Olazun walks* is **`dorl`**, not **`thohom`**: *if* sets a condition, and *whether* leaves a yes-or-no question open.
+**Compare with:** discourse *however* and *therefore* start a new sentence after a finished claim; they are not *although*. *Whether Olazun walks* is **`dorl`**, not **`thohom`**: *if* sets a condition, and *whether* leaves a yes-or-no question open.
 
 ### Times (*while*, *before*, *after*, *until*, *by*) {#time-poles}
 
@@ -138,9 +138,9 @@ For *as soon as* / *once*, keep **`halam`** *after* and put the haste word **`we
 >
 > "Uzozen walks as soon as Olazun sits."
 
-For *since* (from a starting point up to now), see [*from* on a time](hooks.md#since). *Since* meaning *because* is **`thahum blarl`**.
+*Since* meaning *because* is **`thahum blarl`**.
 
-Agebon verbs have no past or future form. *Before*, *after*, *while*, and *until* place this event in time relative to the next sentence. A **result** that is still left over, and a **state that used to hold**, are stance words on `/th/`, not times ([RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate)).
+Agebon verbs have no past or future form. *Before*, *after*, *while*, and *until* place this event in time relative to the next sentence.
 
 ### So that (*in order to*) {#so-that}
 
@@ -163,8 +163,6 @@ English *in order to* drops the person who sits. Agebon still names them in the 
 > "Uzozen walks in order to sit."
 
 Ordinary `zoval` is still *a goal* (the net).
-
-**Compare with:** acting *for relatedness* is a [sake motive](sakes.md#sake-preference) on the sake, not an event outcome. *A book for a hammer* as a swap is [exchange](relations.md#exchange). *Works for a money-bag* (something you want to get) uses a different [*for*](hooks.md#extra-noun) before an extra noun; use **`hovam`** when *for* names a result you aim at (*practices for a race*).
 
 ### Continue (`/x/`): keep the same speech move {#continue-x}
 
@@ -373,7 +371,7 @@ A **period** closes the sentence body in writing, whatever the speech act. Speec
 | Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`yam`** (implied or written) | **-m** leaves the hold open |
 | `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener speech act; period after the **whole** joined stretch | Dip extends; no jump |
 | `/x/` linker after `.` (`xahem …`) | Dip into the linker; no turn reset | Keep prior speech act; may start a new written sentence under that speech act | Linker glues; still the same act |
-| `/x/` topic word after `.` (`xuzozen …`) | Pitch **reset**, no turn reset | Keep prior speech act; a new [topic](pronouns.md#topic) starts | Reset = the subject changed, not the act |
+| `/x/` topic word after `.` (`xuzozen …`) | Pitch **reset**, no turn reset | Keep prior speech act; a new topic starts | Reset = the subject changed, not the act |
 | **Stand-in** hang | Dip; **no** full pitch reset until the last dependent | Next sentence fills the slot; period after the **whole** stretch | Same hang as `/x/` continue |
 
 **-l** vs **-m** on the act word / *yes* / *no* is how firmly you stand behind it (closed vs soft / open).
@@ -411,7 +409,7 @@ Three linkers also take **-l** for a **firm** link: the link holds with no room 
 >
 > "Olazun isn't sleeping. On the contrary, Olazun is running."
 
-No other root makes a linker. Any other `/x/` content word sets the [topic](pronouns.md#topic): **-l** / **-m** / **-n** introduce it (`xuzozen` *now, about Uzozen*) and **-r** returns to it. **-r** on a linker is still a [resume](pronouns.md#resume-r) (the same linker again, *likewise*).
+No other root makes a linker. Any other `/x/` content word sets the topic: **-l** / **-m** / **-n** introduce it (`xuzozen` *now, about Uzozen*) and **-r** returns to it. **-r** on a linker is still a [resume](pronouns.md#resume-r) (the same linker again, *likewise*).
 
 All of these `/x/` words, and the topic words, come only at the **start of a sentence**: only `/y/` turn words or a [fronted discourse hook](hooks.md#discourse-hooks) may come before them. They never follow a [clause join](joins.md#clause-joins), and they never open the sentence after a [stand-in](#dependent-clauses), because that sentence belongs to the dependent.
 
@@ -423,7 +421,7 @@ A linker and a topic word do not share a sentence. To change the topic and also 
 >
 > "Now, about Uzozen. However, Olazun runs."
 
-**`xuvewem`** also opens a new frame, like English *so, …* at the start of a turn: the talk moves on and the [topic](pronouns.md#topic) is cleared.
+**`xuvewem`** also opens a new frame, like English *so, …* at the start of a turn: the talk moves on and the topic is cleared.
 
 > `zudozol vowurel. xuvewem zuzozen varuvel.`
 >
@@ -431,7 +429,7 @@ A linker and a topic word do not share a sentence. To change the topic and also 
 >
 > "The dog walks. So, Uzozen runs."
 
-**`xuvedam`** opens a side topic, like English *by the way, …*, and clears the [topic](pronouns.md#topic) too. To come back to the main line afterwards, use the resume hook [`or …`](hooks.md#hook-resume) *anyway*, and name the old topic again (`xuzozer`).
+**`xuvedam`** opens a side topic, like English *by the way, …*, and clears the topic too.
 
 In a new turn with its own act word, the act word comes first and the linker starts the body:
 
@@ -574,7 +572,7 @@ Other role letters work the same way as the forward stand-in: **`blarth`** after
 
 ### Time poles on a noun {#time-pole-on-noun}
 
-To place a **thing** in time rather than the event (*the walk after the thunderstorm*), put the [time pole](#dependent-clauses) on `/ɡ/` right after that noun: **`gerem`** *during*, **`gabam`** *before*, **`galam`** *after*, **`garum`** *until*, **`gevahum`** *by*. The `/b/` after it is the event or period, as with the `/h/` pole, or a signed [count from now](knowing.md#dated-channel) (`gabam bluzurem grawol` *before tomorrow*).
+To place a **thing** in time rather than the event (*the walk after the thunderstorm*), put the [time pole](#dependent-clauses) on `/ɡ/` right after that noun: **`gerem`** *during*, **`gabam`** *before*, **`galam`** *after*, **`garum`** *until*, **`gevahum`** *by*. The `/b/` after it is the event or period, as with the `/h/` pole.
 
 > `zolazun dowurel galam blenulul vawebol.`
 >

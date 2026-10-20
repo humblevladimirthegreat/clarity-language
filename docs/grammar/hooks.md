@@ -56,7 +56,7 @@ A and B can play any role, as long as both play the same one. They can even be *
 >
 > "Uzozen walks instead of running."
 
-**Compare with:** *Uzozen tells on behalf of Olazun* keeps Uzozen as the teller (a [proxy](relations.md#proxy) relation); **`ol`** puts someone else in that slot.
+**Compare with:** *Uzozen tells on behalf of Olazun* keeps Uzozen as the teller; **`ol`** puts someone else in that slot.
 
 ### Except (`ul`)
 <a id="except"></a>
@@ -137,7 +137,7 @@ Use the same **`ol …`** for *actually* when you correct what someone expected:
 >
 > "In other words, Ahelan is a dog."
 
-The hook is glue only when the next word is not a `/b/` word. With a `/b/` word right after it, even the stand-in **`barl`**, it is an [extra-noun hook](#extra-noun) instead.
+The hook is glue only when the next word is not a `/b/` word. With a `/b/` word right after it, even the stand-in **`barl`**, it is an extra-noun hook instead.
 
 **Compare with:** *however* / *therefore* use [continue](dependents.md#continue-x) linkers. A hook at the front only adds, rephrases, replaces, or takes out.
 
@@ -163,7 +163,7 @@ The four one-vowel hooks name the everyday extras:
 >
 > "A dog sleeps in a house."
 
-To ask *where?*, put the fill-ask blank **`bar`** after the hook (`ol bar` *where?*, `ul bar` *where from?*). See [Where?](questions.md#where).
+To ask *where?*, put the fill-ask blank **`bar`** after the hook (`ol bar` *where?*, `ul bar` *where from?*).
 
 > `zolazun vuhohol ol bedohol.`
 >
@@ -201,7 +201,7 @@ To say where something is (*there is a dog in a house*), write the noun with no 
 >
 > "There is a dog in a house."
 
-**Compare with:** *Additionally, Uzozen walks* is a hook at the front whose next word is **not** `/b/` (`al zuzozen vowurel`). *Like a duck* is still a hosted [simile](relations.md#similative). *Tells on behalf of Olazun* is [proxy](relations.md#proxy). Naming the **place of an event** as its own noun (*a sleep-place*, *that scream-place*) is a [role compound](roles.md#role-compounds) with vowel **`e`**, not this hook on the same clause.
+**Compare with:** *Additionally, Uzozen walks* is a hook at the front whose next word is **not** `/b/` (`al zuzozen vowurel`).
 
 ### Since (`ul` on a time) {#since}
 
@@ -230,8 +230,6 @@ English often puts *since* first (*Since Olazun fell asleep, Uzozen has been wal
 > "Since Olazun fell asleep."
 
 **`ul`** is the only hook that takes **`barl`**. Every other hook needs a real noun in `/b/`.
-
-To give the stretch an end too (*from the thunderstorm to the bell*), use a [from … to](numbers-applied.md#time) unit.
 
 **Compare with:** *since* meaning *because* is **`thahum blarl`**. Agebon keeps the time reading and the cause reading apart.
 
@@ -449,7 +447,7 @@ To make a whole `A HOOK B` phrase into a name (a store, a title, a handle), give
 
 Beginner already used the one-vowel extra-noun hooks (*in* / *at* / *from* / *for*). Hooks with two vowels name the rest of the everyday extras. The test is the same: `/b/` comes right after the hook, and the word right before the hook (skipping any `/w/`) is **not** a recipient `/b/` (so `buzozen al bolazun` is *including*).
 
-A hook + `/b/` right after a landmark (the `/b/` of another extra, or of a word such as a [locative relation](relations.md#locative-relations)) describes that landmark, not the clause: *the village near me*.
+A hook + `/b/` right after a landmark (the `/b/` of another extra, or of a word such as a locative relation) describes that landmark, not the clause: *the village near me*.
 
 > `zuzozen vowurel al behaham om buwon.`
 >
@@ -457,7 +455,7 @@ A hook + `/b/` right after a landmark (the `/b/` of another extra, or of a word 
 >
 > "Uzozen walks in the village near me."
 
-Several extra-noun hooks on one clause are several extras. To keep the second one on the clause, put a non-`/b/` word between the first landmark and the next hook. *From* one landmark *to* another needs no gap: it is one [from … to](numbers-applied.md#time) unit. Extra-noun **-n** makes the hook and its landmark a name, as on same-role hooks; the landmark keeps its own ending.
+Several extra-noun hooks on one clause are several extras. To keep the second one on the clause, put a non-`/b/` word between the first landmark and the next hook. Extra-noun **-n** makes the hook and its landmark a name, as on same-role hooks; the landmark keeps its own ending.
 
 With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the general setting, not the exact contact, source, tool, or opponent. It is not a second copy of the same extra.
 
@@ -515,7 +513,7 @@ To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`a
 >
 > "What does Uzozen write the book with?"
 
-**Compare with:** some English prepositions use other forms. Company *with Olazun* is a [join-relation](join-across-roles.md#join-relations), and so is *without*. *Like* is a [simile](relations.md#similative). *Between* is a hosted pair plus a `/b/` join ([relations](relations.md#locative-relations)). *So that Olazun sits* is **`hovam blarl`**.
+**Compare with:** some English prepositions use other forms. *So that Olazun sits* is **`hovam blarl`**.
 
 ### Whose (`em`) {#genitive}
 
@@ -572,14 +570,11 @@ Other kinds of *'s* each have their own word:
 | English *'s* | Use |
 |--------------|-----|
 | legal ownership (*the dog Uzozen owns*) | `gogunum` + `/b/` |
-| a person tied to B (*Uzozen's friend*, *boss*, *patient*) | a tie on `/ɡ/` ([relations](relations.md#social-relations)) |
-| part of B (*Uzozen's hand*), what B is made of or comes from | [of relations](relations.md#of-relations) |
-| a feeling B has (*Uzozen's anger*) | [emotion compose](sakes.md#emotion-compose) |
 | something B made (*the book Uzozen wrote*) | a [role compound](roles.md#role-compounds) |
 
 **`em`** always needs a noun on its left: it belongs to the nearest noun before it (after that noun's `/ɡ/` words). After a verb or at the start of a sentence there is no thing for B to use, so `em` + `/b/` is not a sentence there. For someone's act (*Uzozen's walk*), say the act as its own sentence, then [point back to it](dependents.md#which-noun).
 
-**`em`** never takes a person on the left: a person is not something someone uses. **`gogunum`** never does either, because no one owns a person: a person tied to B takes a [tie](relations.md#social-relations) (*Uzozen's patient* is care, `gobolom`). **`em`** never names a feeling or trait either, and neither does [*part of*](relations.md#of-relations): a feeling or trait stays something B has, not something B uses or is made of. A feeling uses [emotion compose](sakes.md#emotion-compose); a trait is a `/ɡ/` word on B.
+**`em`** never takes a person on the left: a person is not something someone uses. **`gogunum`** never does either, because no one owns a person. **`em`** never names a feeling or trait either: a feeling or trait stays something B has, not something B uses. A trait is a `/ɡ/` word on B.
 
 **Compare with:** *for Uzozen* is `el`. A [sake](sakes.md) on `/ɡ/` also marks the noun as yours, together with how it serves you.
 
@@ -629,7 +624,7 @@ For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](jo
 ### Here and there, this and that {#deixis}
 <a id="here-there"></a>
 
-English *here*, *there*, *this*, and *that* point at things by their distance from the speaker. Agebon points from a **person in the conversation** instead: put a place hook before the [speaker, listener, or interlocutors](pronouns.md#special-pronouns) in `/b/`. You always say whose *here* you mean, the same way Agebon says whose *left* you mean ([viewpoint laterals](roles.md#viewpoint-laterals)).
+English *here*, *there*, *this*, and *that* point at things by their distance from the speaker. Agebon points from a **person in the conversation** instead: put a place hook before the [speaker, listener, or interlocutors](pronouns.md#special-pronouns) in `/b/`.
 
 Names come first. When you know who is talking or listening, use their name as the landmark (`om buzozen` *near Uzozen*). Use speaker and listener when the conversation role itself matters, or when you have no name to use.
 
@@ -697,7 +692,7 @@ With an object, `vavobel` moves something else: `zuzozen vavobel duhohol.` *Uzoz
 
 In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#stand-in)), `om buwon` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
 
-**Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zudozor`), not a place. *Where?* is `ol bar` ([Where?](questions.md#where)). *There* for a place already named is a [resume hook](#hook-resume).
+**Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zudozor`), not a place. *Where?* is `ol bar` ([Where?](questions.md#where)).
 
 ### Point back (`or` / `ar` / `ur` / `er`) {#hook-resume}
 
@@ -888,9 +883,7 @@ A range **-r** always has a word on each side (`oer` / `uar` / `uer`). With noth
 >
 > "Everyone between Uzozen and Ahelan sleeps." (not Uzozen or Ahelan themselves)
 
-Right after an `ul` extra noun, `oel` + `/b/` is not a range: `ul X oel Y` is one [from … to](numbers-applied.md#time) unit.
-
-Between two numbers with digits, plain **`al`** and **`ul`** also make a range, because *3, including 5* has nothing to include into: [ranges](numbers-applied.md#ranges).
+Between two numbers with digits, plain **`al`** and **`ul`** also make a range, because *3, including 5* has nothing to include into.
 
 A word right after B describes B alone, not the range. To describe the range itself, put `/w/` right before the hook:
 
@@ -900,7 +893,7 @@ A word right after B describes B alone, not the range. To describe the range its
 >
 > "Everyone from Uzozen all the way through Ahelan walks." (a surprisingly wide range)
 
-**Compare with:** `zuzozen zahelan zal` is *Uzozen and Ahelan*, the two ends only. `zuzozen zahelan zael` is *Uzozen, then Ahelan*, an order with nothing between. Spatial *between a train and a station* is a [relation](relations.md#spatial-path), not a range.
+**Compare with:** `zuzozen zahelan zal` is *Uzozen and Ahelan*, the two ends only. `zuzozen zahelan zael` is *Uzozen, then Ahelan*, an order with nothing between.
 
 ### Practice {#intermediate-practice}
 

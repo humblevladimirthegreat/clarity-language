@@ -240,11 +240,11 @@ group = [exponent?] [mantissa digits?]
 
 1. **PoS:** the role letter (part of speech), as on any other word.
 2. **Number marker:** consonant **r** plus a vowel **V**. **V** is a single vowel at this stage. The cluster of role letter plus `r` is a [number-only letter-cluster exception](phonology.md#phonotactics). A marker can sound like a digit (rank **`re`**, digit 3 **`re`**), but the marker always comes straight after the role letter, so `grerel` is *the third*.
-3. **Zero or more digit groups:** each group is an optional exponent (the *order of magnitude* piece) and optional mantissa digits (the ordinary digits). A group always has at least one of those two pieces. Digits sit next to each other with no **x** between them. A sign, when there is one, applies once to the whole word. With **no groups**, the word is [digitless](#digitless): it says what kind of number it is, but not its value.
-4. **Group separator:** each group after the first opens with **`th`** plus **V₁**, the first vowel of the marker ([below](#group-separator)).
+3. **Zero or more digit groups:** each group is an optional exponent (the *order of magnitude* piece) and optional mantissa digits (the ordinary digits). A group always has at least one of those two pieces. Digits sit next to each other with no **x** between them. A sign, when there is one, applies once to the whole word. With **no groups**, the word is digitless: it says what kind of number it is, but not its value.
+4. **Group separator:** each group after the first opens with **`th`** plus **V₁**, the first vowel of the marker.
 5. **Ending:** `-l` / `-m` / `-n` / `-r`.
 
-Speech always uses the fully spelled form. Writing also has a [shorthand](#writing-preferred-shorthand) for numbers with two or more digits (`g+12`); zero, one digit, or none stays spelled (`grarel`, `gral`): [style](#writing-style-numeric-vs-spelled).
+Speech always uses the fully spelled form. Writing also has a shorthand for numbers with two or more digits (`g+12`); zero, one digit, or none stays spelled (`grarel`, `gral`).
 
 **Related form:** naming a group of people or things uses [**-x**](plurality.md) on an ordinary noun.
 
@@ -269,7 +269,7 @@ Change only the first letter. The marker and digits stay the same, and on these 
 
 ### Marker vowel (referential identity) {#marker-vowel-referential-identity}
 
-Beginner already used **`ra`** (*how many*) and **`re`** (*which place from the start*). The marker vowel **V** completes that set: it says whether the word is a count, a rank, or a string of digits, and on a count it also gives the sign of the whole number. The table shows each marker's [shorthand](#writing-preferred-shorthand) symbol in parentheses. Forward ordinal **`e`** matches [rank join **e**](joins.md#rank-joins).
+Beginner already used **`ra`** (*how many*) and **`re`** (*which place from the start*). The marker vowel **V** completes that set: it says whether the word is a count, a rank, or a string of digits, and on a count it also gives the sign of the whole number. The table shows each marker's shorthand symbol in parentheses. Forward ordinal **`e`** matches [rank join **e**](joins.md#rank-joins).
 
 <!-- cheat-sheet: numbers -->
 | Agebon | Use | English | Cue |
@@ -279,9 +279,7 @@ Beginner already used **`ra`** (*how many*) and **`re`** (*which place from the 
 | **e** (`#`) | **ordinal** / rank **from the start** | `g#2` *the second page*; `g#` *some rank*; `z#2` *second* (rank as subject) | **`e`** ≈ order |
 | **o** (`_`) | **digit-string** / label (phones, IDs, “read the digits”) | `d_5551234`; `d_` *some code*; `g_12` *room 12*-style; `b_…` under a host relation | **`o`** ≈ one (one string) |
 
-Each number word is one kind of number, set by its marker. In [preferred writing](#writing-preferred-shorthand), the marker is **`+`** / **`-`** / **`#`** / **`_`**.
-
-Clock and date writing are covered in [Time](numbers-applied.md#time).
+Each number word is one kind of number, set by its marker. In preferred writing, the marker is **`+`** / **`-`** / **`#`** / **`_`**.
 
 #### Sign {#sign}
 
@@ -303,7 +301,7 @@ Beginner already used exact **-l**. The other endings mark *about*, a convention
 | **`@`** after PoS: `g@#2` | **-n** | conventional designation (titles, official labels, *the Second…*) | **-n** names the number |
 | **`=`** after PoS: `g=+3`, `g=#2`, `d=_12` | **-r** | resume of a previously stated number, code, or rank (at least one digit) | **-r** points back |
 
-A resume needs **at least one digit**: `grarer` = *that three again*; `gredur` = *that second one again*. Use the same marker as the number you repeat. Digitless **-r** (`grar`) is not a resume: like a standalone join **-r**, it is *some number* in a statement and *which number?* in a question ([digitless](#digitless)). **`=`** is never combined with **`~`** or **`@`**.
+A resume needs **at least one digit**: `grarer` = *that three again*; `gredur` = *that second one again*. Use the same marker as the number you repeat. Digitless **-r** (`grar`) is not a resume: like a standalone join **-r**, it is *some number* in a statement and *which number?* in a question. **`=`** is never combined with **`~`** or **`@`**.
 
 ### Digitless {#digitless}
 <a id="digitless-numbers"></a>
@@ -321,7 +319,7 @@ Beginner already used **`gral`** for *more than one*. Any marker may drop every 
 
 **Compare with:** noun [**-x**](plurality.md) names a **group of things**. Digitless **`ra`** names a **count or amount above one** without saying how many. Both may sit on the same noun (`zagozolx gral`).
 
-On a [hosted](clause.md#extra-nouns) offset right after a channel, digitless **`blral`** is *later* and **`blrul`** is *earlier*, with no amount claimed ([forecasts](knowing.md#forecast)). A hosted number keeps its `bl` in writing too (`bl+` for `blral`), and its `l` is a [beat of its own](phonology.md#syllabic-l).
+On a [hosted](clause.md#extra-nouns) offset right after a channel, digitless **`blral`** is *later* and **`blrul`** is *earlier*, with no amount claimed. A hosted number keeps its `bl` in writing too (`bl+` for `blral`), and its `l` is a [beat of its own](phonology.md#syllabic-l).
 
 <a id="a-few"></a>
 
@@ -341,7 +339,7 @@ A mass noun such as *tea* is not counted, so *more than one* makes no sense for 
 >
 > "Some tea sits there."
 
-*Many*, *few*, *enough*, and *too much* compare the amount against a baseline, so they are [comparatives](comparatives.md#vague-amounts), not number words.
+*Many*, *few*, *enough*, and *too much* compare the amount against a baseline, so they are comparatives, not number words.
 
 Words such as **`zar`** / **`zor`** stand for an unnamed **member of a set**. Digitless number **-r** stands for an unnamed **value** the same way: *some amount*, with no claim that it is more than one. Digitless number **-l** (and **-m** / **-n**) brings in an unnamed amount of that kind, and **`gral`** still says *more than one*.
 
@@ -350,7 +348,7 @@ Words such as **`zar`** / **`zor`** stand for an unnamed **member of a set**. Di
 >
 > "Uzozen sees some number of them."
 
-In a question, the same word is the blank: *how many?* ([below](#how-many)).
+In a question, the same word is the blank: *how many?*.
 
 > `yol drar zuzozen vawebol.`
 > y-question | d-how-many | z-Uzozen | v-see
@@ -386,7 +384,7 @@ Answer with the number as a [citation](word-endings.md#citation-forms) or a full
 
 #### How big? How fast? {#how-big}
 
-To ask **how much** of a quality, put the same blank on `/w/` immediately before the adjective or adverb: **`wrar`**. It is the degree slot that [*barely* / *almost*](#just-short) use.
+To ask **how much** of a quality, put the same blank on `/w/` immediately before the adjective or adverb: **`wrar`**.
 
 > `yol wrar gelazom zudozol.`
 > y-question | [w-how-many | g-big] | z-dog
@@ -397,8 +395,6 @@ To ask **how much** of a quality, put the same blank on `/w/` immediately before
 > y-question | [w-how-many | h-haste] | z-dog | v-run
 >
 > "How fast does the dog run?"
-
-To ask for an exact size in units, fill a [measure phrase](numbers-applied.md#measure-phrases) instead: `yol bezerem grar gelazom zudozol.` *How many meters big is the dog?*
 
 Other role letters take the same blank: the marker with no digits and **-r** (on `/h/`, *how many times?*). Do not confuse that blank with **`har`** (*sometimes*), which is a [restrictor](restrictors.md), not a number.
 
@@ -422,8 +418,8 @@ Speech uses **`ba`** / **`bu`** for that exponent, then **`ya`** if mantissa dig
 | **bu** | negative exponent, then its digits | *e-6* | **`u`** ≈ undo |
 | **ya** | after exponent digits when a mantissa follows | (not a digit) | |
 | **ye** | decimal point | *5.2* | |
-| **yo** | percent closer | *25%* ([percent](numbers-applied.md#percent-and-percentage-points)) | |
-| **yu** | percentage-point closer | *+2 pp* ([percent](numbers-applied.md#percent-and-percentage-points)) | |
+| **yo** | percent closer | *25%* | |
+| **yu** | percentage-point closer | *+2 pp* | |
 
 - The exponent comes **before** that group’s mantissa digits.
 - If a mantissa follows, say **`ya`** after the last exponent digit, then the mantissa. Example: `27e12` → `ba` + `wo` + `du` + `ya` + `du` + `le`.
@@ -431,7 +427,6 @@ Speech uses **`ba`** / **`bu`** for that exponent, then **`ya`** if mantissa dig
 - Ordinary amounts usually omit exponent **`0`**: write `grarel`.
 - By default, write the **order of magnitude** (the power of ten) in **engineering notation**: exponents are usually multiples of **3** (e.g. `27e6`).
 - **Decimal point:** say **`ye`** after the digit(s) left of the point; digits after **`ye`** are the fractional part.
-- In a measure, name the **base unit** and put the exponent or exact count on the amount ([measure phrases](numbers-applied.md#measure-phrases)).
 
 > `g+5.2`
 >
@@ -484,7 +479,7 @@ Say a separator exactly where a comma is written, and nowhere else: `g+860` has 
 
 <a id="nested-rank"></a>
 
-**Nested rank.** On an ordinal, each comma opens a place *within* the place before it, innermost first, as in dates: `g#2,3` is *seat 2 in row 3*; `g#16,4` is *verse 16 of chapter 4*. An exponent on an ordinal is [generation](numbers-applied.md#ordinal-generation), so a large ordinal is one group of plain digits: `g#1005` (*the 1005th*).
+**Nested rank.** On an ordinal, each comma opens a place *within* the place before it, innermost first, as in dates: `g#2,3` is *seat 2 in row 3*; `g#16,4` is *verse 16 of chapter 4*. A large ordinal is one group of plain digits: `g#1005` (*the 1005th*).
 
 > `zozohol g#2,3.`
 >
@@ -496,7 +491,7 @@ Say a separator exactly where a comma is written, and nowhere else: `g+860` has 
 
 ### Writing (preferred shorthand) {#writing-preferred-shorthand}
 
-Beginner spelled every number out (`grarel`, `graduzol`). Writing also has a **shorthand** for the ending, marker, and body: `g+3` for `grarel`, `g+20` for `graduzol`. Both writings name the same word. Running text uses shorthand once a number has two or more digits; zero, one digit, or none stays spelled ([style](#writing-style-numeric-vs-spelled)). Tables use shorthand for every row, so patterns line up.
+Beginner spelled every number out (`grarel`, `graduzol`). Writing also has a **shorthand** for the ending, marker, and body: `g+3` for `grarel`, `g+20` for `graduzol`. Both writings name the same word. Running text uses shorthand once a number has two or more digits; zero, one digit, or none stays spelled. Tables use shorthand for every row, so patterns line up.
 
 ```text
 [PoS] + [~|@|=]? + [marker] + [body?]
@@ -512,7 +507,7 @@ These are the same marks, with the same meanings, as on [spans](spans.md#writing
 | *(none)* | **-l** | exact (default) | `g+3`, `g+`, `g#2`, `d_555,123,4567` |
 | **`~`** | **-m** | approximate / soft | `g~+3`, `g~+`, `g~+27e6`, `g~#2` |
 | **`@`** | **-n** | conventional | `g@#2`, `g@_12` |
-| **`=`** | **-r** | resume (digit) / blank (digitless) | `g=+3`, `g=#2`, `g=+` |
+| **`=`** | **-r** | resume (digit) / blank | `g=+3`, `g=#2`, `g=+` |
 
 A hedged conventional number (both **`@`** and **`~`**) is written with **`@`** only, as on spans. **`=`** is never combined with another mark. A spelled word shows its ending as the last letter (`grarel`, `gram`) instead of a mark.
 
@@ -579,7 +574,7 @@ On `/v/`, the marker decides which action the number names.
 | **`re`** | **Take / assign rank N (from the start)**: intransitive *place Nth* / *come in Nth*; transitive *put (object) in Nth place* / *rank as Nth*. |
 | **`ro`** | **Enter / dial / input that digit-string**: type the code, dial the phone number, key the ID. Object (if any) is the channel or device; the digits are in the verb. |
 
-To set a quantity to a value, use an ordinary verb with the number as its object or as an adverb. For *multiply* and *divide*, use an ordinary verb plus **`h+N`** / **`h-N`**. With [percentage points](numbers-applied.md#percent-and-percentage-points) (**`yu`**), **`ra`** / **`ru`** as verbs mean increase/decrease by that point amount.
+To set a quantity to a value, use an ordinary verb with the number as its object or as an adverb. For *multiply* and *divide*, use an ordinary verb plus **`h+N`** / **`h-N`**.
 
 Endings still apply (**-m** ≈ *about* that amount/code/rank, **-r** resume with a digit; digitless `vrar` / `vror` is a [blank](#digitless)).
 
@@ -592,7 +587,7 @@ On `/h/`, the marker decides what kind of adverb the number is.
 | **`ra`** | `h+N` | **Multiplicative / factor**: *N times*; *×N*; *by a factor of N* (alone, or with ordinary *multiply*). |
 | **`ru`** | `h-N` | **Inverse / partition**: *÷N*; *into N parts*; *1/N as often*; *every Nth* (alone, or with ordinary *divide*). |
 | **`re`** | `h#N` | **Nth occurrence of the event (from the start)**: *for the Nth time*; *on the Nth try* (clause-event ordinal, not discourse list independence). |
-| **`ro`** | `h_…` | **Clock**: *at 15:30* (`h_15,30`). **Date** uses a calendar ordinal: *on 22 July 2026*. Channel, frequency, and other codes use a host relation + `/b/` (or `/ɡ/` on a noun). See [Time](numbers-applied.md#time). |
+| **`ro`** | `h_…` | **Clock**: *at 15:30* (`h_15,30`). **Date** uses a calendar ordinal: *on 22 July 2026*. Channel, frequency, and other codes use a host relation + `/b/` (or `/ɡ/` on a noun). |
 
 > `zolazun vowurel hrarel.`
 > z-Olazun | v-walk | h-three
@@ -601,7 +596,7 @@ On `/h/`, the marker decides what kind of adverb the number is.
 
 Worked examples: `hrarel` *three times*; `hrurel` *÷3 / into 3*; `hrerel` *for the third time*; `h_15,30` *at 15:30*. A frequency code goes after a relation word: *on* (on `/h/`) + `b_101.1`.
 
-Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume with a digit; digitless `hrar` *how many times?* / `hror` *when?* is a [blank](#digitless)). Relative %-change factors use **`h+…`** (e.g. ×1.5). See [percent](numbers-applied.md#percent-and-percentage-points).
+Endings still apply (**-m** ≈ *about* that many times / that clock or date, **-r** resume with a digit; digitless `hrar` *how many times?* / `hror` *when?* is a [blank](#digitless)). Relative %-change factors use **`h+…`** (e.g. ×1.5).
 
 #### Number as interjection (by marker) {#number-as-interjection-by-marker}
 
@@ -644,7 +639,7 @@ Endings still apply (**-l** newly stated item, **-r** *as in (N) above* (with a 
 #### Number as degree (by marker) {#number-as-degree}
 <a id="place-on-a-scale"></a>
 
-On `/w/`, a number sits in the degree slot right before an adjective or adverb ([clause](clause.md#adjective-detail-w)). Only the ordinal marker gives a new reading: **`w#N`** (N from 2) is the **place on that scale**, in a [superlative](comparatives.md#place-on-a-scale) frame (`zuzozen zel wredul gelazom` *Uzozen is the second biggest*). The other number readings on `/w/` were already set: the blank **`wrar`** asks *how much?* ([how big](#how-big)), and the Advanced [just-short](#just-short) forms are *barely* / *almost*. A count or a fraction on `/w/` (`w+3`) is not used: a factor goes on `/h/` (`hradul` *twice*, [factor](comparatives.md#factor)).
+On `/w/`, a number sits in the degree slot right before an adjective or adverb ([clause](clause.md#adjective-detail-w)). Only the ordinal marker gives a new reading: **`w#N`** (N from 2) is the **place on that scale**, in a superlative frame (`zuzozen zel wredul gelazom` *Uzozen is the second biggest*). The other number readings on `/w/` were already set: the blank **`wrar`** asks *how much?* ([how big](#how-big)), and the Advanced just-short forms are *barely* / *almost*. A count or a fraction on `/w/` (`w+3`) is not used: a factor goes on `/h/` (`hradul` *twice*, factor).
 
 #### Number as stance (by marker) {#number-as-stance-by-marker}
 <a id="likelihood"></a>
@@ -664,13 +659,11 @@ On `/w/`, a number sits in the degree slot right before an adjective or adverb (
 | **`ra`** | `th+N` | **Likelihood N percent**: `th+70` *70% likely*; `th+99.9` *99.9% likely*. The digits are already a percent, 0–100; do not add `%`. |
 | **`ra`** / **`ru`** | `th+` / `th-` | **likely** / **unlikely**, with no figure |
 | **`ro`** | `th_N` | **According to source N**: a footnote, reference, or exhibit label (`th_3` *per [3]*). Digitless `th_` = *per a source* you do not name. |
-| **`re`** | `th#N` | **N-th hand** (N from 2): how many hands stand between the event and you, on any channel that is not first-hand (`th#3` *third-hand*, a tertiary source). Taught with the channels: [second-hand and further](knowing.md#hand-depth). |
+| **`re`** | `th#N` | **N-th hand** (N from 2): how many hands stand between the event and you, on any channel that is not first-hand (`th#3` *third-hand*, a tertiary source). |
 
 For *30% unlikely*, give the likelihood of the claim itself (`th+70`). A minus with digits (`th-N`) and an end-relative rank (`th#-N`) are not used, and neither is `th#1`: first-hand is a channel word.
 
 Endings still apply: **-m** *about* that likelihood (`th~+70` *roughly 70%*), **-n** a conventional level (`th@+95` *at the 95% confidence level*), **-r** *the same likelihood as before* (`th=+70`); digitless `thrar` asks *how likely?* under question, and `threr` asks *how many hands?*
-
-**Compare with:** [evidentiality](knowing.md#evidentiality) says **how** you know; `th_N` says **which** numbered source. [MAY](knowing.md#may) (`thomam`) says the claim is open without a figure. Pretense *as if* in play or make-believe is [NOTIONAL](knowing.md#notional).
 
 ### Style (numeric vs spelled)
 <a id="writing-style-numeric-vs-spelled"></a>
@@ -683,14 +676,14 @@ Both writings name the **same word**. Choose the surface by one test: **how many
 | Free number with **two or more digits** | **shorthand** | `g+12`, `x#21`, `g+5.2e-4`: a value to scan and compare |
 | Free number with **one digit or none** | **spelled** | `grarel` *three*, `gredul` *second*, `grazol` *zero*, `gral` *more than one*, `drar` *how many*; reads as a word, as English writes *three* |
 | Digit-string label or code (`_`) | **shorthand** | `d_5`, `d_555,123,4567`: a code, not an amount (English *Room 5*) |
-| [Numeric derivation](numeric-derivation.md#numeric-derivation) / kind morph | **spelled** (required) | shorthand after a root does not form a word |
+| Numeric derivation / kind morph | **spelled** (required) | shorthand after a root does not form a word |
 | Inventory tables | **shorthand** | patterns are easy to scan |
 
 **Side by side:** number words next to each other (a range, a list of values) share one writing. If any of them needs shorthand, write them all in shorthand: `z+3 al z+12`, not `zrarel al z+12`.
 
 Speech and writing drills that teach the shorthand itself still show one-digit shorthand.
 
-A free number in shorthand shows its ending as a mark after the role letter (`g~+3`); spelled out, it shows the ending as its last letter (`grarem`). A number built onto a content root ([numeric derivation](numeric-derivation.md#numeric-derivation)) is always spelled out (`NUM`) and never takes the marks **`~`** / **`@`** / **`=`**.
+A free number in shorthand shows its ending as a mark after the role letter (`g~+3`); spelled out, it shows the ending as its last letter (`grarem`). A number built onto a content root is always spelled out (`NUM`) and never takes the marks **`~`** / **`@`** / **`=`**.
 
 ### Practice {#intermediate-practice}
 
@@ -873,7 +866,7 @@ To say *infinitely many*, *last place*, *a gazillion*, or *absolutely zero*, wri
 |-------|---------|
 | **`ba`/`bu` alone** (no mantissa) | special value: +∞ / −∞ / last place / start place / … (tables below) |
 | **Mantissa `≠0` + `ba`/`bu`∅** | hyperbole (*N gazillion* / *umpteenth*) |
-| **Mantissa `0` + `ba`/`bu`∅** | [zero × digitless exp](#zero-exponent) |
+| **Mantissa `0` + `ba`/`bu`∅** | zero × digitless exp |
 
 > `zagozolx grabal.`
 > z-cat-x | g-plus-infinity
@@ -882,7 +875,7 @@ To say *infinitely many*, *last place*, *a gazillion*, or *absolutely zero*, wri
 
 **Writing:** **`e`** = speech **`ba`**; **`e-`** = speech **`bu`**. Digitless means no power digits after that mark: `g+e` / `g+e-` in tables, spelled `grabal` / `grabul` in running text. Bare / assert **`e0`** writes power **`0`**: `grabazol`, `g+3e0` (not digitless).
 
-The marker still says amount, rank, or code. Kind compounds may use digitless **`_`** as [infinite / landmark labels](numeric-derivation.md#infinite-labels) (`ROOTl_e`, `ROOTl_e-`, `ROOTl_1e`, …).
+The marker still says amount, rank, or code. Kind compounds may use digitless **`_`** as infinite / landmark labels (`ROOTl_e`, `ROOTl_e-`, `ROOTl_1e`, …).
 
 #### Special values: no mantissa
 
@@ -896,7 +889,7 @@ The marker still says amount, rank, or code. Kind compounds may use digitless **
 | **`g+e-`** | **`ra`** + **`bu`∅** + **-l** | **arbitrarily small but finite** |
 | **`g-e`** | **`ru`** + **`ba`∅** + **-l** | **−∞** |
 | **`g~-e`** | **`ru`** + **`ba`∅** + **-m** | **arbitrarily large but finite** (negative / deficit) |
-| **`g#e`** | **`re`** + **`ba`∅** + **-l** | **last place** / final-place landmark (ultimate-descendant pole of the [generation](numbers-applied.md#ordinal-generation) axis) |
+| **`g#e`** | **`re`** + **`ba`∅** + **-l** | **last place** / final-place landmark |
 | **`g~#e`** | **`re`** + **`ba`∅** + **-m** | **near last place** |
 | **`g#e-`** | **`re`** + **`bu`∅** + **-l** | **start / beginning place** / origin landmark: first with emphasis on **onset** (*the starting one*, *at the beginning*). Numbered 1st is `g#1`. Ultimate-ancestor pole |
 | **`g~#e-`** | **`re`** + **`bu`∅** + **-m** | **near first place** |
@@ -907,7 +900,7 @@ Same under `/z/` `/d/` `/b/` (`zrabal` = +∞ as subject; `drebul` = start-place
 
 <a id="just-short"></a>
 
-**Just short (`grubul`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅**), no mantissa. It mirrors **`grabul`** (a hair over zero): **`grubul`** is a hair **under**: the smallest shortfall. Against a target it reads *almost*; as a [signed time offset](knowing.md#dated-channel) it reads *just before* (`blrubul` *just now*), and **`blrabul`** reads *just after* (*any moment now*).
+**Just short (`grubul`):** negative marker (**`ru`**) + digitless negative exponent (**`bu`∅**), no mantissa. It mirrors **`grabul`** (a hair over zero): **`grubul`** is a hair **under**: the smallest shortfall. Against a target it reads *almost*.
 
 **Compare with:** the same form on each role letter: **`grubul`** the amount, **`xrubul`** *just before that:*, **`thrubul`** *virtually*, **`vrubul`** *nudge down*, **`hrubul`** *almost*, **`yrubul`** *so close!*. Pretend *as if* is a different thing: the mood **`eyu`** ([Notional](knowing.md#notional), e.g. `theyum`).
 
@@ -952,7 +945,7 @@ On `/v/` and `/h/`, these special values (∞, last, start, a tiny amount) becom
 >
 > "An almost angry dog walks."
 
-**Stance:** a whole claim that holds all but a hair is stance, not manner, so it sits on `/th/`: **`thrubul`** = *virtually* / *practically*; **`thrubum`** = *more or less*. **`hrubul`** says the event fell short; **`thrubul`** says your claim is a hair short of exact. See [number as stance](#special-number-as-stance).
+**Stance:** a whole claim that holds all but a hair is stance, not manner, so it sits on `/th/`: **`thrubul`** = *virtually* / *practically*; **`thrubum`** = *more or less*. **`hrubul`** says the event fell short; **`thrubul`** says your claim is a hair short of exact.
 
 **Ordinals (`re`), start/last landmarks:**
 
@@ -1001,8 +994,6 @@ These sit beside the numbered points of [Number as discourse marker](#number-as-
 
 To say *absolutely nothing*, *empty at the seed*, or *a residue that will not go away*, pair the **mantissa `0`** with an exponent: a digitless one, or the engineering **`e-1`**. Soft, named, and resume endings (**`~`** / **`@`** / **`=`**) work as on the other special values.
 
-**Related form:** this section covers free number words. The same forms built onto a content root (`ROOTl+0e`, …) are in [numeric-derivation.md](numeric-derivation.md#zero-exponent-derivation).
-
 ##### Referential (`/ɡ/` `/z/` `/d/` `/b/`) {#zero-exponent-referential}
 
 <!-- cheat-sheet: numbers -->
@@ -1019,7 +1010,7 @@ Same under `/z/` `/d/` `/b/` (`zrazobal` = absolute-zero as subject; `z+0e-1` = 
 
 **Emptiness chain (amounts):** **`grubal`** (−∞ deficit), **`grazol`** (plain zero), **`grazobal`** (absolute zero), **`grazobul`** (sterile micro-null), **`g+0e-1`** (engineering null at 10⁻¹). Bare **`grabazol`** is the [ones decade band](#bare-oom-bands) (1–9).
 
-**Only amounts take `±0e-1`:** the engineering null uses **`ra`** / **`ru`**. On ordinals, digitful exp is [generation](numbers-applied.md#ordinal-generation) (`g#0e-1` ≠ engineering; **`grebazol`** = current generation). Ordinal zero×digitless **`grezobal`** = [rank annihilated](#rank-annihilated) below.
+**Only amounts take `±0e-1`:** the engineering null uses **`ra`** / **`ru`**.
 
 ##### Number as verb and adverb {#zero-exponent-number-as-verb-and-adverb}
 
@@ -1037,7 +1028,7 @@ Same under `/z/` `/d/` `/b/` (`zrazobal` = absolute-zero as subject; `z+0e-1` = 
 | **`h-0e`** | with irreducible residual repetition |
 | **`h-0e-1`** | residual repetition **at OoM −1** |
 
-Ones-band / assert-`e0` as verb / adverb / interjection / discourse are ordinary bare OoM / **`Ne0`** (**`vrabazol`**, **`h+3e0`**, …): [Bare OoM](#bare-oom-bands) / [Ambient](#ambient-magnitude). Soft **-m** hedges (*almost annihilate*, *almost deci-null*, …).
+Ones-band / assert-`e0` as verb / adverb / interjection / discourse are ordinary bare OoM / **`Ne0`** (**`vrabazol`**, **`h+3e0`**, …): [Bare OoM](#bare-oom-bands). Soft **-m** hedges (*almost annihilate*, *almost deci-null*, …).
 
 ##### Number as interjection {#zero-exponent-number-as-interjection}
 
@@ -1053,7 +1044,6 @@ Ones-band / assert-`e0` as verb / adverb / interjection / discourse are ordinary
 
 ##### Number as discourse {#zero-exponent-number-as-discourse}
 
-Discourse nesting uses [generation](numbers-applied.md#ordinal-generation) (**`xrebazol`** = current-layer assert; **`x#3e2`** = nested depth).
 
 ##### Ordinal rank annihilated (`#0e`)
 <a id="rank-annihilated"></a>
@@ -1068,16 +1058,16 @@ Mantissa **`0`** + digitless **`ba`** under forward ordinal **`re` / `#`**. Numb
 | **`h#0e`** | *for a disqualified / struck turn* |
 | **`y#0e`** | *Disqualified!* / *Rank wiped!* |
 
-Soft **-m** hedges (*near-disqualified*, …). Free twin of derivation **`ROOTl#0e`** ([numeric-derivation.md](numeric-derivation.md#rank-annihilated-morph)).
+Soft **-m** hedges (*near-disqualified*, …).
 
 ##### Free vs derived
 
-The same zero × exponent stems can also sit on a content root as kind words (*annihilate the score*, *a totally wiped debt-kind*); those spelled forms are taught in [numeric derivation](numeric-derivation.md#zero-exponent-derivation). Free **`grabazol`** / **`g+Ne0`** are bare OoM / OoM assert on free numbers, not kind derivation morphs. Engineering OoM-null is **`±0e-1`**.
+Free **`grabazol`** / **`g+Ne0`** are bare OoM / OoM assert on free numbers, not kind derivation morphs. Engineering OoM-null is **`±0e-1`**.
 
 #### Hyperbole: mantissa + digitless exponent
 <a id="gazillion"></a>
 
-For a joking exaggeration (*a gazillion*, *the umpteenth*), write nonzero **mantissa digits** and then a digitless **`ba`** or **`bu`**. On an amount this is comically huge (**`ba`**) or tiny (**`bu`**); on a rank it is a comically late or early place. Mantissa **`0`** + digitless is [zero × exponent](#zero-exponent). Real powers of ten keep digitful exponents (`g+1e9`). Generation needs **digitful** exp ([ordinal generation](numbers-applied.md#ordinal-generation)). End-relative place is marker **`#-`**.
+For a joking exaggeration (*a gazillion*, *the umpteenth*), write nonzero **mantissa digits** and then a digitless **`ba`** or **`bu`**. On an amount this is comically huge (**`ba`**) or tiny (**`bu`**); on a rank it is a comically late or early place. Mantissa **`0`** + digitless is [zero × exponent](#zero-exponent). Real powers of ten keep digitful exponents (`g+1e9`). End-relative place is marker **`#-`**.
 
 ##### Scalar (`ra` / `ru`)
 
@@ -1339,7 +1329,7 @@ Lookup grids that restate forms taught above; nothing here is new.
 ### Examples inventory
 <a id="examples"></a>
 
-Preferred writing first; the spoken form follows, often with its syllables in parentheses (exact **-l** unless noted). Digits in speech use the [digit table](#digits).
+Preferred writing first; the spoken form follows, often with its syllables in parentheses (exact **-l** unless noted).
 
 | Value | Preferred writing | Spoken |
 |-------|-------------------|---------------|

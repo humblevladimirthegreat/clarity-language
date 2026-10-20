@@ -1,7 +1,7 @@
 # Comparatives, superlatives, and equatives
 <a id="comparatives-page"></a>
 
-English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in **order** on that quality. *As … as* says they sit at the **same height**. *Both are challenging* only says **each has** the quality; it does not say who ranks higher or whether they match. Agebon writes the first two with a rank join from [joins](joins.md#rank-joins) followed by the shared adjective, and the third with an ordinary *and*-list.
+English splits three nearby jobs on a quality like *challenging*. *More … than* and *the most* put people in **order** on that quality. *As … as* says they sit at the **same height**. *Both are challenging* only says **each has** the quality; it does not say who ranks higher or whether they match. Agebon writes the first two with a rank join from joins followed by the shared adjective, and the third with an ordinary *and*-list.
 
 ## Beginner {#beginner}
 <a id="overview"></a>
@@ -300,7 +300,7 @@ English *the second biggest* names a place just below the winner. Keep the super
 
 Under **`zuel`** the same place counts from the bottom, so `zuzozen zuel wredul gelazom` is *the second smallest*. Use it from *second* on, because first place is the plain superlative. Write it only with one name before `zel` or `zuel`. With two names, the ordinal has no group to rank within, and outside a rank fence an ordinal on `/w/` has no reading.
 
-**Compare with:** an ordinal after a noun picks the Nth *thing* (`zudozol gredul` *the second dog*), not the Nth on a scale. A [factor](#factor) (*twice as big*) goes on `/h/`, not `/w/`.
+**Compare with:** an ordinal after a noun picks the Nth *thing* (`zudozol gredul` *the second dog*), not the Nth on a scale. A factor (*twice as big*) goes on `/h/`, not `/w/`.
 
 ### Manner scale (`/h/`) {#manner-scale}
 

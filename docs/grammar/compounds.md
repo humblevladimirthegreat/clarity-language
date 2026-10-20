@@ -235,8 +235,8 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 |--------|-----|---------|-----|
 | role vowel(s) **`x`** **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** | [role pointer](pronouns.md#role-pointers) | `zaxar` *they* (whoever did the latest thing); `zaxal` *another one*; `zaxam` *what they did* | **a** again / **e** echo / **o** other / **u** unsaid |
 | **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxuduyel` *someone who teaches* (**-r** *the one teaching*) | **a** doer / **e** scene / **u** undergoer / **o** extra `/b/` party |
-| name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | [conversation length](#conversation-length) | *Uzozen, I have time* | vowel on the name |
-| longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | [ability](intention.md#ability) | *can’t sing right now* | extra vowel after the root |
+| name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | conversation length | *Uzozen, I have time* | vowel on the name |
+| longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | ability | *can’t sing right now* | extra vowel after the root |
 | full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zubedaxuyudal`; `zalexalowen` ([hyphenated names](word-endings.md#multipart-names)) | **x** ≈ plus |
 | sake root **`th`** **`a`** / **`e`** / **`o`** / **`u`** | [sakes](sakes.md) | `guwathal` | **th** ≈ *think* (your view of the sake) |
 | other root **`th`** **`a`** / **`e`** / **`o`** / **`u`** (or a stack) | [label scope](predication.md#label-scope) | *angry this time*; *a teacher* | **th** ≈ *think* (what kind of claim the label is) |
@@ -273,7 +273,7 @@ Use the table above. If the word has a mid-word **`th`**, it is a [sake](sakes.m
 
 - After the role letter: a role vowel (one vowel or a stacked pair), **`x`**, **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** → a **role pointer** ([pronouns](pronouns.md#role-pointers)). A role compound with a stem keeps its own **-l** / **-m** senses; only the stemless pointer takes **-m** as a share.
 - After the role letter: a role vowel (one vowel or a two-vowel pair), **`x`**, then a longer root → a **role compound** (who does / where it happens / who undergoes / who is told, or a [two-vowel role](roles.md#instrument) such as the tool, `daexarayel`).
-- A name (one root or a [hyphenated name](word-endings.md#multipart-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a conversation-length bid → [conversation length](#conversation-length).
+- A name (one root or a [hyphenated name](word-endings.md#multipart-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a conversation-length bid → conversation length.
 - A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **ability**.
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
 
@@ -303,7 +303,7 @@ English *I can stay a while* or *I only have a minute* tells the other person ho
 | `SELFxon` | one slot: *one ask or comment* | about to leave | **o** ≈ one (one last slot) |
 | `SELFxun` | passing: *just acknowledging; not opening a talk* | leaving right now | **u** ≈ undo (lift the talk) |
 
-On a [full name](word-endings.md#multipart-names), the vowel goes on the given name (`alexen galowen.`); a family name takes no bid, since **`x`** + vowel on a `/ɡ/` word is [ability](intention.md#ability). Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](word-endings.md#named-n-beginner) ending.
+On a [full name](word-endings.md#multipart-names), the vowel goes on the given name (`alexen galowen.`); a family name takes no bid, since **`x`** + vowel on a `/ɡ/` word is ability. Only one of these vowels per name. These forms use the same scale throughout a conversation: a smaller level narrows the remaining time. **-n** is still the [named](word-endings.md#named-n-beginner) ending.
 
 At arrival, the other person can answer with their own bid. The **lesser** bid sets the shared limit: **a** (open-ended) is more than **e** (a few minutes), **e** is more than **o** (one slot), and **o** is more than **u** (passing). If you offer open-ended time and Olazun offers one slot, you have one slot.
 
@@ -319,7 +319,7 @@ At arrival, the other person can answer with their own bid. The **lesser** bid s
 >
 > "Olazun here. I only have time for one thing."
 
-**Compare with:** the same **`x`** + vowel on a verb or adjective is [ability](intention.md#ability) (*can’t sing right now*). A [sake](sakes.md) word takes **`th`** + vowel instead (`guwathal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**. In a clause body, a name with **`x`**, a vowel, and **-n** is not a word.
+**Compare with:** the same **`x`** + vowel on a verb or adjective is ability (*can’t sing right now*). A [sake](sakes.md) word takes **`th`** + vowel instead (`guwathal`). Conversation-length bids sit on a **named** citation or a **`/y/`** call, with **-n**. In a clause body, a name with **`x`**, a vowel, and **-n** is not a word.
 
 **Compare with:** a plain named citation with a period is the basic hello (`SELFn.`). The bid says how much conversation the person is open to.
 
@@ -551,7 +551,7 @@ In every kind but feelings, the **middle vowel** usually says how big the thing 
 
 This is a hint, not a rule: a few roots take another vowel to stay apart from a neighbor. Feelings have no size, so a feeling's middle vowel carries no meaning.
 
-A [dictionary word](#lexical-compounds) made of two roots ends in its head root, so it keeps the head's tail. A few dictionary words end in a bare tail instead of a second root ([tail suffixes](#tail-suffixes)).
+A [dictionary word](#lexical-compounds) made of two roots ends in its head root, so it keeps the head's tail. A few dictionary words end in a bare tail instead of a second root.
 
 ### Tail suffixes {#tail-suffixes}
 

@@ -69,7 +69,7 @@ The last letters you just used, on the same root `uzoze`:
 ### Writing {#citation-forms}
 <a id="prefix-less-citation"></a>
 
-A citation is **lowercase** root + ending (`uzozel`, `uzozem`, `uzozen`). English for a citation is the bare sense (*swan*, *grace*, *Uzozen*), with no article. In a sentence you add a first letter for the word’s role, as the [clause](clause.md#beginner) page shows. A [greeting](#greeting) is the named citation as a whole opening (`SELFn.`).
+A citation is **lowercase** root + ending (`uzozel`, `uzozem`, `uzozen`). English for a citation is the bare sense (*swan*, *grace*, *Uzozen*), with no article. In a sentence you add a first letter for the word’s role. A [greeting](#greeting) is the named citation as a whole opening (`SELFn.`).
 
 ### Practice {#beginner-practice}
 
@@ -243,7 +243,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 Beginner used **-n** for a person’s or place’s name. You can also mark a **title, brand, or other conventional name** on any role letter: a named race as the verb, a named style as the adjective, a named standard as the adverb. The first letter still says the word’s role in the clause; **-n** says you mean the thing that bears that name, not the kind the root describes.
 
-A brand, a product line, a work, or a yearly event counts as one named thing, even though it has many units, copies, or runnings. To mean one of those, use [**-ln**](#name-instance--ln).
+A brand, a product line, a work, or a yearly event counts as one named thing, even though it has many units, copies, or runnings. To mean one of those, use **-ln**.
 
 > `zahelan vezuyon.`
 >
@@ -287,7 +287,7 @@ What counts as one depends on what the name names:
 | `duzozen` | the named thing itself | *Uzozen* (the brand) |
 | `duzozeln` | one thing the name applies to | *an Uzozen* |
 | `duzozelnx` | some things the name applies to ([plurality](plurality.md)) | *some Uzozens* |
-| `zaleln galowen` | the same on a [full name](#multipart-names) | *someone named Alen Alowen* |
+| `zaleln galowen` | the same on a full name | *someone named Alen Alowen* |
 
 An **-ln** word is a new mention, so a lone `zuzozeln.` is *there is an Uzozen*, and a later **-r** resume (`duzozer`) is that same bed, not the brand. A foreign name in a span uses the fence mark `^@` for the same job ([spans](spans.md#when-required)).
 
@@ -304,7 +304,7 @@ A country root and a tradition root use all four endings, with one job each:
 | **-l** | its flag: *a Japanese flag* | its symbol: *a crucifix* |
 | **-ln** | one thing that bears the name (*a ship named Japan*) | one thing that bears the name |
 
-**-n** names the whole and **-m** says someone or something belongs to it, so a nationality is not a special case. A person, a quality, or a thing from that people (*Japanese food*) takes **-m**; **-n** on `/ɡ/` is a named label instead: a style, a brand, or a [family name](#multipart-names) (*Art Deco*, *iOS*, *Alen* **[Alowen]**).
+**-n** names the whole and **-m** says someone or something belongs to it, so a nationality is not a special case. A person, a quality, or a thing from that people (*Japanese food*) takes **-m**; **-n** on `/ɡ/` is a named label instead: a style, a brand, or a family name (*Art Deco*, *iOS*, *Alen* **[Alowen]**).
 
 > `zuzozen gazabanam.`
 >
@@ -334,11 +334,11 @@ A store, title, or handle can be several words. Put **-n** on the **hook**, **jo
 
 | Package | Where **-n** sits | Inner words |
 |---------|-------------------|-------------|
-| [hook](hooks.md#intermediate) | the hook (`on`, extra-noun **-n**, …) | sides keep **-l** / **-m** / **-r**, or **-n** if that side is a name |
-| [join](joins.md#named-list) | the join (`zon`, …) | members keep their usual endings |
+| hook | the hook (`on`, extra-noun **-n**, …) | sides keep **-l** / **-m** / **-r**, or **-n** if that side is a name |
+| join | the join (`zon`, …) | members keep their usual endings |
 | [span](spans.md#when-required) | the fence (`@` / spoken **-n**) | interior tokens keep their usual endings |
 
-A one-word name, a hyphenated name with mid-word **`x`**, and each part of a full name still end the **content word** in **-n** ([multipart names](#multipart-names)).
+A one-word name, a hyphenated name with mid-word **`x`**, and each part of a full name still end the **content word** in **-n**.
 
 ### Multipart names {#multipart-names}
 
@@ -360,13 +360,13 @@ The family name describes the given name, so the person is still one noun in one
 | `zaleln galowen` | [one of a name](#name-instance--ln) | *someone named Alen Alowen* |
 | `zaler` | [resume](pronouns.md) | *Alen* (the same person) |
 
-Put the family name first, as an [adjective before the noun](clause.md#left-bound-adjectives), only when your culture names people family first. The same family name can describe the family itself (`zavayal galowen` *the Alowen family*), and what the family uses takes the ordinary [*whose*](hooks.md#genitive) hook: `dahehal em bavayal galowen` is *the Alowen family’s house*.
+Put the family name first, as an adjective before the noun, only when your culture names people family first. The same family name can describe the family itself (`zavayal galowen` *the Alowen family*), and what the family uses takes the ordinary *whose* hook: `dahehal em bavayal galowen` is *the Alowen family’s house*.
 
-A full name works as a [greeting](#greeting) too: `alen galowen.` is Alen Alowen saying hello. A [call](speech-moves.md#vocative) takes the family name the same way (`yalen galowen.` *Alen Alowen!*). A [conversation-length](compounds.md#conversation-length) bid goes on the given name, never on the family name.
+A full name works as a [greeting](#greeting) too: `alen galowen.` is Alen Alowen saying hello. A [call](speech-moves.md#vocative) takes the family name the same way (`yalen galowen.` *Alen Alowen!*).
 
 A family name is an adjective, but the person who receives is a plain `/b/` word, so it may stand right after the family name: `zalen galowen bolazun vezuyel.` is *Alen Alowen tells Olazun*, the same as `zalen galowen vezuyel bolazun.` Only a [`bl-` word](clause.md#extra-nouns) would complete it.
 
-A **hyphenated name** (*Mary-Kate*, *Coffee-Tea*) is one word: roots join left to right with mid-word **`x`** ([ordinary compound order](compounds.md#ordinary-compound-order)), and **-n** names the whole.
+A **hyphenated name** (*Mary-Kate*, *Coffee-Tea*) is one word: roots join left to right with mid-word **`x`**, and **-n** names the whole.
 
 > `zalexalowen vowurel.`
 >
@@ -393,12 +393,12 @@ Beginner used the ending to say how to take a content word’s meaning. On an `/
 
 | Agebon | Use | English |
 |--------|-----|---------|
-| one of six linkers + **-m** (firm **-l** on three) | glue one finished sentence to the next | *but*, *therefore*, … ([linkers](dependents.md#sentence-linkers)) |
-| other `/x/` root + **-l** / **-m** / **-n** | introduce a [topic](pronouns.md#topic) | *now, about X*; *let’s now talk about X* |
+| one of six linkers + **-m** (firm **-l** on three) | glue one finished sentence to the next | *but*, *therefore*, … |
+| other `/x/` root + **-l** / **-m** / **-n** | introduce a topic | *now, about X*; *let’s now talk about X* |
 | `/x/` root + **-r** | return to a topic | *back to X* |
 | clause join + **-n** | **sequence** | *and then* **`xan`**, … ([joins](joins.md)) |
 
-[Discourse hooks](hooks.md#discourse-hooks), which have no first letter, use hook endings. Hook **-n** titles a [proper-name phrase](#titled-phrases) ([hooks](hooks.md#intermediate)).
+[Discourse hooks](hooks.md#discourse-hooks), which have no first letter, use hook endings. Hook **-n** titles a [proper-name phrase](#titled-phrases).
 
 ### Number-word exception {#number-word-exception}
 
@@ -576,5 +576,4 @@ A hyphenated name is one word joined with **`x`**; two **-n** words in the same 
 - [plurality.md](plurality.md): **-x** after the ending
 - [clause.md](clause.md): role letters; adding a first letter to a citation
 - [spans.md](spans.md#loans): mention / opaque when the **form** or a foreign acronym is the point
-- [compounds.md](compounds.md#ordinary-compound-order): long titles as ordinary compounds
-- Titled phrases: [hooks.md](hooks.md#intermediate), [joins.md](joins.md#named-list), [spans.md](spans.md#when-required)
+- Titled phrases: [spans.md](spans.md#when-required)

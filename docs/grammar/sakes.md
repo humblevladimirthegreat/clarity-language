@@ -6,11 +6,11 @@ English *good for me* and *costs me* say what something does for a person. Agebo
 
 ## Beginner {#beginner}
 
-Put the sake word on `/ɡ/` after a **noun you keep**, to say how that belonging stands toward the sake. Put it on `/th/` to say how the whole **event** stands toward it. When the noun is not yours, [personal possession](#personal-possession) shows how to point at it instead.
+Put the sake word on `/ɡ/` after a **noun you keep**, to say how that belonging stands toward the sake. Put it on `/th/` to say how the whole **event** stands toward it. When the noun is not yours, personal possession shows how to point at it instead.
 
 ### Sake inventory {#sake-inventory}
 
-Nine published roots are the sakes you can name, and no other root takes the sake form. Pick one row. With mid-word **`th`** and a stance vowel after it (below), that root means the sake in the English column, not the everyday object in **Same root as**.
+Nine published roots are the sakes you can name, and no other root takes the sake form. Pick one row. With mid-word **`th`** and a stance vowel after it, that root means the sake in the English column, not the everyday object in **Same root as**.
 
 | Agebon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -64,8 +64,6 @@ To say that a belonging of yours **serves** a sake (pays it off), write that thi
 > z-house | g-competence-met-any-term
 >
 > "My house serves competence."
-
-**Not the same job as:** [ability](intention.md#ability) (*can sing*). Ability joins an activity root to its vowel with **`x`**. A sake word joins a **sake** root with **`th`**, and **`tha`** means *serves this sake*.
 
 ### Time horizon (endings on met) {#time-horizon-endings-on-met}
 <a id="sake-contact"></a>
@@ -130,9 +128,9 @@ One noun can carry both a **`tha`** word and a **`thu`** word. The pair can run 
 ### Word shape {#word-shape}
 <a id="sake-stake"></a>
 
-A sake word is a sake root with mid-word **`th`**, a stance vowel, and an ending. On `/ɡ/` it describes a **noun you keep**; on `/th/` it describes the **event**. A noun that is not yours takes the [stimulus](#stimulus) word, with the same sake word on `/w/` immediately before it.
+A sake word is a sake root with mid-word **`th`**, a stance vowel, and an ending. On `/ɡ/` it describes a **noun you keep**; on `/th/` it describes the **event**. A noun that is not yours takes the stimulus word, with the same sake word on `/w/` immediately before it.
 
-A sake word ends in **-l**, **-m**, or **-r**, from that stance’s table. It never takes **-n**. The stance itself is one vowel after **`th`**. On any other root, mid-word **`th`** plus a vowel is [label scope](predication.md#label-scope): what kind of claim a label makes.
+A sake word ends in **-l**, **-m**, or **-r**, from that stance’s table. It never takes **-n**. The stance itself is one vowel after **`th`**.
 
 <!-- cheat-sheet: why-allowed -->
 | Agebon | Use | English | Cue |
@@ -153,7 +151,7 @@ Without mid-word **`th`**, the root keeps its everyday sense: `gunal` is *ballot
 ### Personal possession {#personal-possession}
 <a id="stimulus"></a>
 
-A sake word on `/ɡ/` also says the noun is **yours**, with no separate word for *my*. That shortcut makes thanks and costs cheap to say about the things you already call *my X*. To say who owns something without naming a sake, use `gogunum` plus `/b/` ([joins](joins.md#scope-fence-p-join)). Someone else's thing uses that pair too, never a sake word alone on `/ɡ/`.
+A sake word on `/ɡ/` also says the noun is **yours**, with no separate word for *my*. That shortcut makes thanks and costs cheap to say about the things you already call *my X*. To say who owns something without naming a sake, use `gogunum` plus `/b/`. Someone else's thing uses that pair too, never a sake word alone on `/ɡ/`.
 
 When the noun is **not** yours (weather, a gathering, another person’s church), follow it with the adjective **`goyem`**, *as stimulus*: the thing you react to, not something you keep. Put the same met or unmet word you would use on `/ɡ/` on `/w/` immediately before **`goyem`**, as extra detail on it. (cue: ☝️ *point*: you point at the thing; you do not hold it)
 
@@ -354,7 +352,7 @@ A sake word alone on `/ɡ/` says the rain is yours; for a thing you do not keep,
 
 English emotion words (*anxious*, *resentful*, *proud*) often do **judgment or explanation** work: one label packs in what is at stake and why it feels that way. In Agebon you name the pieces instead, on **one word**: the [sake stance](#sakes) on the situation, a **locus** (where the feeling sits or what it points at), and a **motion ending** (how the feeling moves). The sake word keeps its stance vowel and its ending letter, then adds the locus (the vowels of a [hook](hooks.md#extra-noun)) and the motion ending. You can then say what you make of a situation without leaning on a single emotion word.
 
-Put that word where any sake word goes: on `/ɡ/` after a belonging, on `/w/` immediately before [stimulus](#stimulus) **`goyem`** when the noun is not yours, or on `/th/` by itself when the feeling has [no object](#feeling-no-object). For the bare noun *emotion*, with no judgment to explain, use the compound `zabolohalal` (the water of the heart).
+Put that word where any sake word goes: on `/ɡ/` after a belonging, on `/w/` immediately before [stimulus](#stimulus) **`goyem`** when the noun is not yours, or on `/th/` by itself when the feeling has no object. For the bare noun *emotion*, with no judgment to explain, use the compound `zabolohalal` (the water of the heart).
 
 > `zezuyel wuwathuraor goyem.`
 >
@@ -449,9 +447,7 @@ The ending says why you think the move is welcome. Use **-l** when the person in
 
 **Compare with:** a [command](speech-moves.md#speech-act-beginner) **`yel`** tells someone to act outright, without naming the sake or why the move is wanted. **`the`** is an *ought* tied to a sake (*ought to, to advance this sake*), with the reason on the ending.
 
-**Compare with:** a [forecast](knowing.md#forecast) (a channel plus `blral`) when English *should* is really a prediction about what will pay off the sake, not a prescribed *ought*. To report that the act is happening, drop **`the`** and say the verb alone.
-
-**Compare with:** to ask someone to act for **your** sake, make it a [request](speech-moves.md#speech-act) (**`yem`**) with [motive](#sake-preference) **`tho`**. **`the`** is advice.
+**Compare with:** to ask someone to act for **your** sake, make it a [request](speech-moves.md#speech-act) (**`yem`**) with motive **`tho`**. **`the`** is advice.
 
 <!-- cheat-sheet: why-allowed -->
 | Agebon | Use | English | Cue |
@@ -701,9 +697,7 @@ English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, f
 >
 > "Hopefully Uzozen is walking."
 
-Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To say *hopefully … will*, add a real [evidence channel](knowing.md#forecast) as well. Hope says how you feel about the claim; the channel says what backs it.
-
-**Compare with:** a hunch with no evidence is INTUITION ([evidentiality](knowing.md#evidentiality)). **`thoguyem`** says you want the outcome; INTUITION says your gut expects it.
+Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To say *hopefully … will*, add a real evidence channel as well. Hope says how you feel about the claim; the channel says what backs it.
 
 ### Permission (`tholel` / `tholem` / `tholer`) {#permission}
 
@@ -747,7 +741,7 @@ The negatives use the root **`egu`** (⛔ *no entry*) with the same endings.
 
 To **ask** for permission, put the clause under [ask](questions.md#question): `yom zuwon vuhohol tholem.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
 
-**Compare with:** [prescription](#sake-force) **`the`** says the act *ought* to serve a sake; permission only says the act is *allowed*. [Ability](intention.md#incapability) says someone *can* do it; permission says whether they *may*.
+**Compare with:** [prescription](#sake-force) **`the`** says the act *ought* to serve a sake; permission only says the act is *allowed*.
 
 ### Requirement (`thonal` / `thonam` / `thonar`) {#requirement}
 
@@ -1133,5 +1127,4 @@ A belonging's sake word is `/ɡ/` after the noun; on `/th/` it is about an event
 ## See also
 
 - Applicability *when*: [restrictors.md](restrictors.md)
-- Ability **`xa` / `xe` / `xo` / `xu`** on an activity: [intention.md#ability](intention.md#ability)
 - DECISION reuses unmet changeability endings: [intention.md](intention.md)

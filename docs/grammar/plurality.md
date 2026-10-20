@@ -61,7 +61,7 @@ An extra noun takes **-x** the same way. Here the recipient is Olazun and associ
 | **-lx** | indefinite group (a set in this situation), concrete | *some cats* (a set in this situation) |
 | **-mx** | indefinite group (a set in this situation), abstract | same grouping on a **-m** root |
 | **-nx** | named / titled group | *Team Alpha*; *Uzozen and associates* as a title |
-| **-lnx** | indefinite group of things a name applies to ([one of a name](word-endings.md#name-instance--ln)) | *some Uzozens* (beds of that brand) |
+| **-lnx** | indefinite group of things a name applies to | *some Uzozens* (beds of that brand) |
 | **-rx** | resume someone already mentioned and associates, or a prior group | *they* (that one and associates) |
 
 ### Person-role **-x** {#person-role-x}
@@ -69,7 +69,7 @@ An extra noun takes **-x** the same way. Here the recipient is Olazun and associ
 
 English *we* and *you* do not say whether the listener is in the group (the split between *we including you* and *we without you* is called **clusivity**). Agebon puts **-x** on the speaker and listener roots. It still adds associates, but who is in the group follows each root's place in the conversation. Speaker **-x** is the speaker plus that person’s people, without the listener. Listener **-x** is the **address set**: everyone you are talking to right now, and not the speaker.
 
-Inclusive *you and I* is **`aya`** ([special pronouns](pronouns.md#special-pronouns)). With **-x** it adds the speaker’s and listener’s shared people (below).
+Inclusive *you and I* is **`aya`** ([special pronouns](pronouns.md#special-pronouns)). With **-x** it adds the speaker’s and listener’s shared people.
 
 > `zawanx vowurel.`
 >
@@ -433,8 +433,6 @@ To call a group at the start of a turn, put **-x** on the call word (the vocativ
 | **-rx** | prior addressee and associates | *hey, you (that one) and associates* |
 | **`yawanx`** | current addressees, no name | *hey, you all* |
 
-**For *everyone*, use:** [universals](joins.md#universals-domains-generics) (`…ual`).
-
 ### Where **-x** sits
 
 Beginner already used **-x** on nouns and person-role specials. The rest of the words that take it:
@@ -449,8 +447,6 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 | inner words of a non-opaque span | group reference inside the span | **-x** on those inner words |
 
 **Related form:** a count uses a [number](numbers.md) on `/ɡ/` (digitless **`gral`** = more than one; `grarel` = three). **-x** and a count can combine (`zagozolx grarel`).
-
-**For *every K*, use:** [universals](joins.md#universals-domains-generics) (`zual gagozol`; habitual **`hual`**). For the kind itself (*the dodo is extinct*), use [`zuan`](joins.md#kind-reference).
 
 ### Practice {#intermediate-practice}
 

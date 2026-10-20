@@ -20,7 +20,7 @@ A `/ɡ/` word after the verb does not describe the subject the way *tired* does 
 
 The same string is also the noun plus its adjective: `zuzozen gamahum` is both the full sentence *Uzozen is challenging* and the phrase *challenging Uzozen*.
 
-To say someone belongs to a country or tradition (*Japanese*), use the **-m** ending, not the name ending **-n**. **-n** names the country itself (*Japan*), and **-m** says you belong to it ([countries and traditions](word-endings.md#countries-traditions)).
+To say someone belongs to a country or tradition (*Japanese*), use the **-m** ending, not the name ending **-n**. **-n** names the country itself (*Japan*), and **-m** says you belong to it.
 
 > `zuzozen gazabanam.`
 >
@@ -62,7 +62,7 @@ After a noun it works like any adjective. The event is under way at the time the
 
 Only a sense that is an event reads this way. A thing root stays a kind (`gudozol`, *is a dog*), even when English has a verb from the same picture.
 
-**Compare with:** the verb in `zuzozen vowurel.` reports the walking without saying it is under way. To name someone who walks, with no claim that the walking is under way, use a [role word](roles.md#saying-someone-is-a-teacher).
+**Compare with:** the verb in `zuzozen vowurel.` reports the walking without saying it is under way.
 
 ### Existence (a lone noun) {#existence}
 
@@ -74,7 +74,7 @@ To say that something **exists** or is here (English *there is …*), write the 
 >
 > "There is a dog."
 
-The same holds with a `/ɡ/` word after the noun, when the noun is new: a common noun, or [one of a name](word-endings.md#name-instance--ln) on **-ln**, but not a name on **-n** or a resumed noun on **-r**. The pair introduces the thing: *there is a G Z*.
+The same holds with a `/ɡ/` word after the noun, when the noun is new: a common noun, or one of a name on **-ln**, but not a name on **-n** or a resumed noun on **-r**. The pair introduces the thing: *there is a G Z*.
 
 > `zudozol gelazom.`
 >
@@ -130,7 +130,7 @@ With **no** `/b/` after it, `gorol` points back to the one already mentioned: *t
 >
 > "Olazun is writing the same book." (the book already mentioned)
 
-**Compare with:** *Uzozen is a dog* uses [kind / role](#classification) (`gudozol`). Use **`SAME`** when two labels name one person. *A house like Uzozen’s* is resemblance ([simile](relations.md#similative)), not one house under two names.
+**Compare with:** *Uzozen is a dog* uses [kind / role](#classification) (`gudozol`). Use **`SAME`** when two labels name one person.
 
 ### Practice {#beginner-practice}
 
@@ -294,7 +294,7 @@ After a known guard, the `/ɡ/` word is a property; `zagayul gunemul.` introduce
 
 z-Olazun | [g-SAME | bl-Uzozen]
 
-A word on `/ɡ/` puts Olazun in a kind; two names for one person take **`gorol`** and the other name in `/b/`. (A family name is such a kind: `zolazun guzozen.` is *Olazun is an Uzozen*, [multipart names](word-endings.md#multipart-names).)
+A word on `/ɡ/` puts Olazun in a kind; two names for one person take **`gorol`** and the other name in `/b/`.
 :::
 
 ## Intermediate {#intermediate}
@@ -377,7 +377,7 @@ A label with no scope vowel says nothing about how far it reaches. Use one when 
 | **`tho`** | this pair: true in one relationship | *a stranger to Uzozen*, *lying, as far as Olazun is concerned* | **o** ≈ one (that extra one) |
 | **`thu`** | a type across scenes: the quality follows them | *an anxious type*, *a teacher type* | **u** ≈ undo (not only here) |
 
-Mid-word **`th`** with a scope vowel goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root or a [role compound](#scope-role). It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zuwothal` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead.
+Mid-word **`th`** with a scope vowel goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root or a role compound. It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zuwothal` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead.
 
 To say **when** that claim counts (*only at school*, *always except when it rains*), put a [restrictor](restrictors.md) on `/w/` immediately before a scoped `/ɡ/` word, with the circumstance words on `/w/` too. The scope vowel says what kind of claim the label is; the restrictor says on which occasions it holds. A restrictor on **`/h/`** limits the whole sentence instead (*walks only when it rains*), not the label.
 
@@ -435,11 +435,9 @@ With no `/b/`, the party is unstated: *a stranger (to someone)*.
 >
 > "Olazun is an anxious type."
 
-**Compare with:** a [mention](spans.md#mention) talks about the spelling (`glegel`). **`thu`** still describes the person: you are applying the type, not naming letters.
-
 #### On a role compound {#scope-role}
 
-A [role compound](roles.md#role-compounds) takes the same seam after its stem, which scopes the role, not the act. A bare role compound leaves the reach unsaid (`gaxuduyel`, *one who teaches*). **`the`** makes it the [usual role](roles.md#usual-role): `gaxuduyethel` is *is a teacher*. **`tha`** keeps it to this time (`gaxuduyethal`). **`thu`** is a teacher type, and **`tho`** takes its `/b/` like any other `/ɡ/`.
+A [role compound](roles.md#role-compounds) takes the same seam after its stem, which scopes the role, not the act. A bare role compound leaves the reach unsaid (`gaxuduyel`, *one who teaches*). **`the`** makes it the usual role: `gaxuduyethel` is *is a teacher*. **`tha`** keeps it to this time (`gaxuduyethal`). **`thu`** is a teacher type, and **`tho`** takes its `/b/` like any other `/ɡ/`.
 
 > `zolazun gaxuduyethal.`
 >
@@ -453,9 +451,7 @@ A [role compound](roles.md#role-compounds) takes the same seam after its stem, w
 >
 > "A teacher type runs."
 
-A role compound carries one seam, so it takes this scope or the [ability](intention.md#role-ability) vowel, not both. Scope on the stem alone (`vuduyethal`) scopes the teaching.
-
-**Compare with:** on an arrow root, [**`tho`** + `/b/`](roles.md#landmark-facing) is the landmark's own facing (*behind the house*): the direction relative to that landmark.
+A role compound carries one seam, so it takes this scope or the ability vowel, not both. Scope on the stem alone (`vuduyethal`) scopes the teaching.
 
 #### Stacked scope {#scope-stacks}
 
@@ -507,7 +503,7 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > "I am not speaking as a teacher."
 
-**`thao`** and **`thuo`** take `/b/` the same way **`tho`** does. **`thae`** is not a [mention](spans.md#mention): the person is still the one you describe, and the role is a means. **`thue`** means speaking off duty or refusing that role, not *fake teacher* and not [FORMER](knowing.md#former-climate).
+**`thao`** and **`thuo`** take `/b/` the same way **`tho`** does. **`thue`** means speaking off duty or refusing that role, not *fake teacher*.
 
 ### Practice {#intermediate-practice}
 

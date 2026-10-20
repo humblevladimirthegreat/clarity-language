@@ -55,7 +55,7 @@ Write the items first, then the join. Readers treat the items up to that join as
 
 The join is never optional. Two nouns of the same role side by side, or two verbs, must close with one, because only the join says how the items combine: *Uzozen and Olazun walk* is `zuzozen zolazun zal vowurel.`, never the two names alone. Two verbs in one clause take the join even with other words between them. The join takes every item right before it, back to the last word of another role. Adjectives and adverbs are different: a row of them needs no join, because each one describes on its own ([clause](clause.md#adjectives-ɡ)).
 
-Two full clauses are the one exception: the join that starts with `x` goes **between** them, so you hear how the clauses relate before the second one starts. See [clause joins](#clause-joins).
+Two full clauses are the one exception: the join that starts with `x` goes **between** them, so you hear how the clauses relate before the second one starts.
 
 Objects and extra nouns list the same way. Two `/d/` objects close with `dal`; two `/b/` recipients close with `bal`.
 
@@ -204,7 +204,7 @@ When English says *something* or *someone*, or *one of these* without saying whi
 
 Write A and B, then `zar`: the join still closes the list, and **-r** means some member of that pair (you are not saying which).
 
-**Compare with:** on a content word, **-r** [resumes](pronouns.md) the last match. On a join, **-r** is an unspecified member. Standalone **`-rl` / `-rm`** (`darl`, `barl`) is a [stand-in](dependents.md#stand-in) for the next sentence, not a join and not *something*.
+**Compare with:** on a content word, **-r** [resumes](pronouns.md) the last match. On a join, **-r** is an unspecified member. Standalone **`-rl` / `-rm`** (`darl`, `barl`) is a stand-in for the next sentence, not a join and not *something*.
 
 ### Vowels and endings (recap) {#join-type-vowel-series}
 
@@ -262,11 +262,11 @@ A clause is long, so a join that waits until the end would leave you holding two
 >
 > "Uzozen walks, or Olazun runs, or Ahelan sleeps: exactly one of the three."
 
-Repeating the same join word keeps the list flat. Switching to a **different** join word closes everything before it as one group: `A xol B xal C` is *(A or B) and C* ([clause forms](join-across-roles.md#vp-clause-forms)).
+Repeating the same join word keeps the list flat. Switching to a **different** join word closes everything before it as one group: `A xol B xal C` is *(A or B) and C*.
 
 So a group always sits on the left. The set joins **a** / **o** / **u** ignore order, so you can usually move the group to the front. When the group has to come last, end the sentence and start the next one with the join: the join then takes the **whole** next sentence.
 
-After a stand-in such as **`dorl`** or **`blarl`**, every clause joined in the same sentence belongs to the dependent clause ([stand-ins](dependents.md#stand-in)). A clause meant for the main sentence also starts a new sentence.
+After a stand-in such as **`dorl`** or **`blarl`**, every clause joined in the same sentence belongs to the dependent clause. A clause meant for the main sentence also starts a new sentence.
 
 > `zuzozen vowurel. xan zolazun varuvel xol zahelan vezuvol.`
 >
@@ -283,8 +283,6 @@ A join word with no clause before it stands for a clause of its own: `xal.` *not
 | `zuzozen vowurel xam xar.` | *Uzozen walks, for one* (and something else happened too) |
 | `zuzozen vowurel xol xal.` | *Uzozen may walk* (Uzozen walks, or nothing happens) |
 | `zuzozen vowurel xel xur.` | *mainly, Uzozen walks* (that outranks anything else) |
-
-For *everything happened except that A*, put the except [hook](hooks.md#except-ul) after the standalone `xual`.
 
 **Compare with:** a sentence linker (*therefore*, *however*) also starts the next sentence, but it is a content word with its own meaning ([continue](dependents.md#continue-x)).
 
@@ -491,7 +489,7 @@ A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaini
 >
 > "Sleepy Uzozen's dog and cat." (and possibly more)
 
-**Compare with:** *part of* / *contents of* / *made of* / origin *from* use [of relations](relations.md#of-relations), not `ogunu`. A [sakes](sakes.md) need on `/ɡ/` already means the speaker’s belonging (`guwathal` *my … serves competence*).
+**Compare with:** a [sakes](sakes.md) need on `/ɡ/` already means the speaker’s belonging (`guwathal` *my … serves competence*).
 
 | Join family | Use of SHARED `/ɡ/` |
 |-------------|----------------------|
@@ -504,7 +502,7 @@ A plain `/ɡ/` after that SHARED pair describes its `/b/`, as in [complex chaini
 
 More items of the same role go *before* the join, not after it.
 
-SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a [scale](comparatives.md#manner-scale) after rank **`e`** / **`ue`**, equative **`oe`**, or sequence **`ae`**. After a verb join, a `/d/` object, a recipient `/b/`, or an `/h/` adverb is SHARED: every verb takes it ([verb-phrase forms](join-across-roles.md#vp-clause-forms)). Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
+SHARED material has to be able to describe what the join lists. After a noun join, a `/ɡ/` describes every noun, and an `/h/` is only a scale after rank **`e`** / **`ue`**, equative **`oe`**, or sequence **`ae`**. After a verb join, a `/d/` object, a recipient `/b/`, or an `/h/` adverb is SHARED: every verb takes it. Nothing describes a list of adjectives, so after a `/ɡ/` join the next `/ɡ/` is simply the next item. Any other `/h/` after a join is an ordinary adverb on the verb:
 
 > `zuzozen zolazun zal huhunem vowurel.`
 >
@@ -536,7 +534,7 @@ Beginner already used *everything but* (**`ua`**). A leading **u** inverts **o**
 | **uo** | invert menu | *anything but* the listed (free choice outside) | **u** ≈ undo + **o** ≈ one |
 | **ue** | invert rank | *A after B after C* (last first) | **u** ≈ undo + **e** ≈ order |
 
-What *everything* or *anything* ranges over comes from context, or from a [SHARED](#shared-after-the-join) `/ɡ/` that names the kind ([universals, domains, and generics](#universals-domains-generics)). Only plain **`…om`** means *optional*; on **uo**, **-m** leaves the list open as usual. **-r** still attaches only to one-vowel **a** / **o** / **e** / **u**.
+What *everything* or *anything* ranges over comes from context, or from a [SHARED](#shared-after-the-join) `/ɡ/` that names the kind. Only plain **`…om`** means *optional*; on **uo**, **-m** leaves the list open as usual. **-r** still attaches only to one-vowel **a** / **o** / **e** / **u**.
 
 > `zududal zugudal zual.`
 >
@@ -569,9 +567,7 @@ Rank **`e`** puts the first item at the **top** (*A matters more than B*). When 
 | Single-item | `X zael` *start with X* / *from X on* | `X zaem` *maybe start with X* |
 | Standalone | `zael` *in no particular order* / *any order* | `zaem` *not sure where to start* |
 
-A sequence does not say which item is better. With a SHARED quality it sorts the list from low to high. Two numbers in a sequence are two values in order (`zrarel zraval zael` = *3, then 5*); a band from 3 to 5 is a [range](numbers-applied.md#ranges) (`zrarel al zraval`). (cue: **a** ≈ add + **e** ≈ order: *and then*)
-
-**Compare with:** clause *and then* between sentences is [sequence **`xan`**](join-across-roles.md#sequence). **`zael`** orders nouns inside one slot.
+A sequence does not say which item is better. With a SHARED quality it sorts the list from low to high. Two numbers in a sequence are two values in order (`zrarel zraval zael` = *3, then 5*). (cue: **a** ≈ add + **e** ≈ order: *and then*)
 
 ### Respectively (`wubam`) {#respectively}
 
@@ -625,7 +621,7 @@ With no closing `gal`, the row is not a list. The `/ɡ/` after a noun join is SH
 
 ### Full single-item and standalone inventories
 
-Beginner already used single-item *just X* and standalone *nothing* / *everything*. The tables below are the rest of those phrase-level readings. The series also works under `/v/`: [Join across roles](join-across-roles.md#vp-clause-forms). Clause `/x/` joins have standalone and stand-in readings but no single-item one ([clause joins](#clause-joins)).
+Beginner already used single-item *just X* and standalone *nothing* / *everything*. The tables below are the rest of those phrase-level readings. Clause `/x/` joins have standalone and stand-in readings but no single-item one ([clause joins](#clause-joins)).
 
 **Rank: single-item**
 
@@ -690,12 +686,12 @@ Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *ther
 |--------|-----|---------|
 | **…al** (`zal` / …) | closed empty add | *nothing* / *nobody* |
 | **…am** (`zam` / …) | open empty add | *nothing, as far as I know* |
-| **…an** (`zan` / …) | named empty add | *null* / *void* (with items, **-n** instead names the bundle; see [named phrase](#named-list)) |
+| **…an** (`zan` / …) | named empty add | *null* / *void* (with items, **-n** instead names the bundle) |
 | **…ol** (`zol` / …) | closed empty menu | *no options* / *we're stuck* |
 | **…om** (`zom` / …) | open empty menu | *no pick, as far as I know* |
 | **…ual** (`zual` / …) | closed empty invert-add | *everything* / *everyone* |
 | **…uam** (`zuam` / …) | open empty invert-add | *everything, as far as I know* |
-| **…uan** (`zuan` / …) | stock empty invert-add | *everyone* / *everything* (stock); + SHARED kind → [the kind itself](#kind-reference) |
+| **…uan** (`zuan` / …) | stock empty invert-add | *everyone* / *everything* (stock); + SHARED kind → the kind itself |
 | **…uol** (`zuol` / …) | closed empty invert-menu | *anything (goes)* |
 | **…uom** (`zuom` / …) | open empty invert-menu | *anything offered* |
 | **…aol** (`zaol` / …) | closed empty inclusive | *all set* / *nothing more needed* |
@@ -706,8 +702,6 @@ Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *ther
 | **…ar** (`zar` / …) | unspecified empty add | *something* / *someone* |
 | **…or** (`zor` / …) | unspecified empty menu | *anything* / *anyone* |
 | **…ur** (`zur` / …) | unspecified empty leftover | *something else* / *someone else* |
-
-Yes/no, offer, emptiness, and fill-ask on a lone join: [questions](questions.md#yes-no-single-item-standalone). The same series on `/v/` and `/x/`, including its **-n** forms, is in [join-series forms](join-across-roles.md).
 
 ### Exclusivity and denying a whole list
 
@@ -745,7 +739,7 @@ When English would say *every cat* rather than *everything but the cat*, write *
 | standalone `zual` | empty invert-add | *everything* / *everyone* |
 | `zual` + SHARED `/ɡ/` | closed every-kind | *every K* (`zual gagozol` = *every cat*) |
 | `zuam` + SHARED `/ɡ/` | open every-kind | *every K, as far as I know*; English often says *K in general* |
-| `zuan` + SHARED `/ɡ/` | the [kind itself](#kind-reference) | *the K* as a species |
+| `zuan` + SHARED `/ɡ/` | the kind itself | *the K* as a species |
 | single-item `zual X` (no SHARED) | leftover only | *everything but X* |
 
 > `zual gagozol.`
@@ -784,7 +778,7 @@ The same shape with no verb says there is **none** of that kind (*there is no �
 
 #### Not every (`zual` … `zul`) {#not-every}
 
-To deny *every cat* as a whole (*not every cat*, *not all cats*), close the **`zual`** fence with **`zul`**. The `ua` fence is the one item before the **`u`** join, so the join denies that item, as **`zul`** denies any single item ([fence nesting](#fence-nesting)). The claim is that the cats do not all sleep: some cat may still sleep.
+To deny *every cat* as a whole (*not every cat*, *not all cats*), close the **`zual`** fence with **`zul`**. The `ua` fence is the one item before the **`u`** join, so the join denies that item, as **`zul`** denies any single item. The claim is that the cats do not all sleep: some cat may still sleep.
 
 > `zual gagozol zul vezuvol.`
 >
@@ -1096,7 +1090,7 @@ A join takes every same-role item before it. When English groups a small list in
 >
 > "Uzozen and (just water)."
 
-**Compare with:** an island limits only what a join or an `/h/` word covers. An evidential or [*as-of*](relations.md#as-of) that should cover several clauses is written or resumed on each host instead.
+**Compare with:** an island limits only what a join or an `/h/` word covers.
 
 ### Named phrase **`-n`**
 <a id="named-list"></a>

@@ -26,13 +26,13 @@ When English tells events in time order (*and then*), put ending **-n** on a cla
 >
 > "Uzozen sat, and before that, they walked."
 
-Under `/v/`, `/ɡ/`, and `/h/`, a join word with **-n** names a list move instead: see [join-act verbs](#join-act-verbs) and [join-relations](#join-relations). On a content word, **-n** marks a [name](word-endings.md#proper-name--n) as usual.
+Under `/v/`, `/ɡ/`, and `/h/`, a join word with **-n** names a list move instead. On a content word, **-n** marks a [name](word-endings.md#proper-name--n) as usual.
 
 ### Verb-phrase and clause forms {#vp-clause-forms}
 <a id="vowels--endings"></a>
 <a id="ending-senses-clause-joins"></a>
 
-[Joins](joins.md#beginner) already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/`, `/x/`, and stance `/th/` ([stance joins](#stance-joins)). Clause **-n** forms are in [Sequence](#sequence); `/v/` **-n** forms are [join-act verbs](#join-act-verbs).
+[Joins](joins.md#beginner) already used `vam` and `xam`. The same vowels and **-l** / **-m** / **-r** endings work under `/v/`, `/x/`, and stance `/th/`. Clause **-n** forms are in [Sequence](#sequence); `/v/` **-n** forms are join-act verbs.
 
 | | **-l** | **-m** | **-r** |
 |---|--------|--------|--------|
@@ -47,7 +47,7 @@ Under `/v/`, `/ɡ/`, and `/h/`, a join word with **-n** names a list move instea
 | **oe** | `voel` / `xoel` / `thoel` | `voem` / `xoem` / `thoem` | none |
 | **ue** | `vuel` / `xuel` / `thuel` | `vuem` / `xuem` / `thuem` | none |
 
-Stacked vowels take no **-r** under `/v/` or `/x/` (the *none* cells); only a stance join has stacked **-r**, as a [fill-ask](#standalone-stance-joins).
+Stacked vowels take no **-r** under `/v/` or `/x/` (the *none* cells); only a stance join has stacked **-r**, as a fill-ask.
 
 Each item in a verb-phrase join is a verb plus the words that go with it, and an item ends at its verb. One rule places every word: **a word before a verb belongs to that verb.** An `/h/`, `/d/`, or `/b/` word, or a hook with its `/b/`, between two joined verbs belongs to the verb after it. In `vowurel hedurem varuvel val`, *hastily* is on *run*, not *walk*. In the same way, an object or a `/b/` party between two verbs goes only with the second verb:
 

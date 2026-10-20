@@ -272,8 +272,6 @@ Beginner's *if* and *only if* do not claim the condition is true. The table comp
 
 A noun after a because pole names an **act or a thing**, not a person. For *because of Olazun*, say what Olazun did as a sentence after **`blarl`**. A name in that `/b/` slot is a named event or place (a storm, a city), never the person.
 
-**Related form:** *not because of X* (the outcome still holds; only the reason is denied) closes the pole with a [stance join](join-across-roles.md#stance-joins). Denying the outcome itself is `vowurel vul`.
-
 English *unless* means *if … not*. Keep **`thohom`**, but use the stand-in **`blurl`** instead of **`blarl`** ([stand-in vowels](dependents.md#stand-in)): the outcome holds unless the next sentence is true.
 
 > `zuzozen vowurel thohom blurl zolazun vezuvol.`
@@ -369,7 +367,7 @@ In English *Uzozen makes Olazun speak*, Uzozen makes it happen and Olazun does t
 
 When a pole follows **`thewem`**, the `/b/` belongs to the pole, as above (`thewem thahum blavulul` *because of fire, as mechanism*).
 
-**Compare with:** *let* is [permission](sakes.md#permission), which puts the one who allows it in the same `/b/` slot. *Get someone to* (ask, persuade) is tell + a *to* [stand-in](dependents.md#stand-in).
+**Compare with:** *Get someone to* (ask, persuade) is tell + a *to* [stand-in](dependents.md#stand-in).
 
 | Agebon | English |
 |--------|---------|
@@ -547,6 +545,5 @@ A because pole takes the act, not the person: say what Olazun did after **`blarl
 ## See also
 
 - Inclusive single-item **`…aom` / `…aol`** (*at least X* / *X is enough*): [joins.md](joins.md#single-item-phrase)
-- Join-relations **`han` / `huan` / `hon`**: [join-across-roles.md](join-across-roles.md#join-relations)
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
 - Dependent clauses / **`blarl`**: [dependents.md](dependents.md#dependent-clauses)

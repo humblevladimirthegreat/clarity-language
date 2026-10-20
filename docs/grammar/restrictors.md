@@ -137,7 +137,7 @@ To say *never sleepy* or *sometimes sleepy*, limit only the adjective, not the w
 | `/h/` | limits the clause | *when the verb claim counts* | **h** starts *how* / *when* / *where* |
 | `/w/` | same map on the next adjective | *never sleepy* | **w** ≈ with (stuck to that host) |
 
-**Compare with:** ordinary `/w/` adds extra detail to an adjective ([clause](clause.md#adjective-detail-w)). A restrictor on `/w/` says **when that adjective holds**. When a [label](predication.md#label-scope) is marked as this episode, a practiced role, this pair, or a type, put the restrictor (and its occasion words) on `/w/` immediately before that scoped `/ɡ/` word. The scope says what kind of claim the label makes; the restrictor says on which occasions it holds.
+**Compare with:** ordinary `/w/` adds extra detail to an adjective ([clause](clause.md#adjective-detail-w)). A restrictor on `/w/` says **when that adjective holds**.
 
 ### Listed occasions (open)
 
@@ -586,4 +586,3 @@ A restrictor lists occasion words; a whole sentence as the occasion takes a pole
 
 - Phrase lists (right-close fence): [joins.md](joins.md)
 - *When?* under question: [questions.md](questions.md#when)
-- Former climate (not *used to* as past): [knowing.md](knowing.md#former-climate)

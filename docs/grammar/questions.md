@@ -96,11 +96,9 @@ If the reply is just the fill, not a full sentence, write it as a [citation](wor
 
 **Compare with:** pointing back at someone already named uses resume **-r** on a whole stem or a role pointer ([pronouns](pronouns.md)). A fill-ask uses only **join** **-r**. Length tells them apart: a resume spells a whole stem, and a role pointer has a role vowel, **`x`**, and a pointer vowel, so both have at least five letters. A join word always has fewer than five.
 
-To ask *how many?*, the blank is a number word instead: see [numbers](numbers.md#how-many).
-
 ### Question tone (`?`) {#question-tone}
 
-The act word **`yol`** / **`yom`** already makes the sentence a question, so the [tone mark](speech-moves.md#tone-marks) `?` is never required. It is still **recommended**, because it shows the rising voice in writing:
+The act word **`yol`** / **`yom`** already makes the sentence a question, so the tone mark `?` is never required. It is still **recommended**, because it shows the rising voice in writing:
 
 - **Yes/no question:** write a free-standing `?` right after the `/y/` words, so it applies to the whole rest of the sentence.
 - **Fill-ask:** attach `?` to the front of each fill-ask word (the join **-r** blank), so the rise falls on what you want filled.
@@ -231,7 +229,7 @@ English *whether* reports a yes/no question inside a statement (*Uzozen sees whe
 >
 > "Uzozen sees whether Olazun walks."
 
-**Compare with:** a direct question (*Does Uzozen walk?*) puts **`yol`** at the start of the turn. *If Olazun walks* is a condition, not an inner question; it uses its own [condition word](causation.md#if).
+**Compare with:** a direct question (*Does Uzozen walk?*) puts **`yol`** at the start of the turn.
 
 ### Practice {#beginner-practice}
 
@@ -603,7 +601,7 @@ To ask what something is **like** (*What color is it?*, *What kind of dog?*), pu
 | **`gor`** | *Like anything in particular?* |
 | **`gur`** | *What else is it like?* |
 
-**Compare with:** *like what?* is the similative blank, **`hewom bar`** ([how](#how)): it asks for a model to resemble, not a property. *How many?* is **`grar`** ([numbers](numbers.md#how-many)).
+**Compare with:** *like what?* is the similative blank, **`hewom bar`**: it asks for a model to resemble, not a property.
 
 ### When? {#when}
 
@@ -618,8 +616,6 @@ To ask *when?* / *in what case?*, put the blank **`har`** in the `/h/` slot (or 
 | Agebon | English (statement, bare) | English (under question, bare) |
 |--------|---------------------------|--------------------------------|
 | **`har`** / **`war`** | *sometimes* | *When?* / *In what case?* |
-
-**Related forms:** for *anytime?*, *when else?*, *when's best?*, and what these words mean in a statement, see [restrictors](restrictors.md#more-occasions).
 
 ### Where? {#where}
 
@@ -653,7 +649,7 @@ Answer with the hook and the landmark, as a [citation](word-endings.md#citation-
 
 ### Whose? {#whose}
 
-To ask *whose?*, write the [hook **`em`**](hooks.md#genitive) (*used by*) after the thing, then the blank **`bar`**: the same shape as *where?*. Because **`em`** says the `/b/` noun uses the thing, the question asks *who uses it?*
+To ask *whose?*, write the hook **`em`** (*used by*) after the thing, then the blank **`bar`**: the same shape as *where?*. Because **`em`** says the `/b/` noun uses the thing, the question asks *who uses it?*
 
 > `yol zudozol em bar vowurel.`
 >
@@ -673,7 +669,7 @@ To ask *how?*, use the same shape as *where?*: a word that says how the answer r
 >
 > "How does Uzozen walk?" (*like what?*)
 
-To ask about means (*with what?*), use the *using* hook with the blank ([stacked-vowel hooks](hooks.md#extra-noun-intermediate)).
+To ask about means (*with what?*), use the *using* hook with the blank.
 
 ### Why? {#why}
 
@@ -697,8 +693,6 @@ To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in
 | **`thahum bar`** | *Why?* (*because of what?*) |
 | **`hovam bar`** | *What for?* (*for what purpose?*) |
 | **`thohom bar`** | *Under what condition?* / *In what case?* |
-
-**Compare with:** [`thar`](join-across-roles.md#standalone-stance-joins) asks for the speaker's **grounds** (*Why do you say so?*), not what caused the event. Use `thahum bar` for the cause.
 
 ### A blank inside a dependent {#blank-in-dependent}
 

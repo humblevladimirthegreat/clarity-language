@@ -85,7 +85,7 @@ A sentence with nobody in that part does not count. *It rains* has no doer, so `
 
 A pointer looks back as far as it needs to: across turns and paragraphs, and through what other speakers said. Only a topic change (an `/x/` word that says what the talk is about from here on) stops it. Only sentences count, not nouns that name an event: a storm named as a noun gives a pointer no doer to find.
 
-A pointer takes [associative **-x**](plurality.md#associative) like a name. If no earlier sentence has someone in that part, the pointer points at nothing, and the whole thing is not a sentence.
+A pointer takes associative **-x** like a name. If no earlier sentence has someone in that part, the pointer points at nothing, and the whole thing is not a sentence.
 
 ### Themself (`e`) {#themself}
 
@@ -155,7 +155,7 @@ In a yes/no question, a pointer works like any other noun and keeps the same mea
 >
 > "Uzozen sees a red dog. Does Olazun see a black one?"
 
-**-l** takes pointer vowels **`a`**, **`e`** and **`o`**, and every role vowel: `zaxal` is another one like the latest doer. It has no reading with **`u`**, because an unsaid part has no kind to copy, and none after a [special pronoun](#special-pronouns) such as *I* or *you*. After a name, **-l** is a new thing that name applies to, and after a joined list it is a new group of the same make-up.
+**-l** takes pointer vowels **`a`**, **`e`** and **`o`**, and every role vowel: `zaxal` is another one like the latest doer. It has no reading with **`u`**, because an unsaid part has no kind to copy, and none after a special pronoun such as *I* or *you*. After a name, **-l** is a new thing that name applies to, and after a joined list it is a new group of the same make-up.
 
 **Compare with:** **-r** is the same one (`duxar`); **-l** is another (`duxal`). Writing the noun out (`dugedol`) says the same as `duxal`, and the pointer only saves repeating it.
 
@@ -183,7 +183,7 @@ Each role vowel names a different part: `zaxam` is the doing, `zuxam` what it wa
 
 Most of the time you name people with a proper name (`zuzozen`, `zolazun`) and resume with **-r**. A few roots from a small fixed set (**closed roots**) instead name **roles in this conversation**: who is speaking, who is being spoken to, you-and-I together, or a nonspecific *someone*. They take the usual role letter for the slot they fill in the clause (subject, object, and so on), and in this use they end in **-n**, like a name.
 
-Use **`uwo`** (*speaker*) and **`awa`** (*listener*) for *I* and *you*. **`awa`** is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun, [below](#generic-pronoun).
+Use **`uwo`** (*speaker*) and **`awa`** (*listener*) for *I* and *you*. **`awa`** is always the person actually listening, never *anyone at all*: English generic *you* has its own pronoun.
 
 > `zuwon vowurel.`
 >
@@ -224,7 +224,7 @@ English *we* can mean “you and I” or “I and my people, not you.” Inclusi
 | **`umon`** | nonspecific individual (`zumon` in subject slot) | *someone* | `umol` *neutral* | 😐: not a particular person |
 | **`eyon`** | any person, as a rule (`zeyon` in subject slot) | *one*, generic *you*, *people* | `eyol` *person* | 🧑: a person in general |
 
-**Compare with:** *I and my people* / *you all* / *Uzozen and associates* use **-x** ([clusivity](plurality.md#clusivity)). Inclusive *you and I* is **`aya`**. *Here* / *there* and *this* / *that* use these same words after a place word such as *at* ([deixis](hooks.md#deixis)).
+**Compare with:** *I and my people* / *you all* / *Uzozen and associates* use **-x**. Inclusive *you and I* is **`aya`**.
 
 ### Generic pronoun {#generic-pronoun}
 
@@ -236,7 +236,7 @@ English *one* and generic *you* (*one never knows*, *you feel awful when that ha
 >
 > "One sleeps." / "You sleep." (people in general)
 
-The generic pronoun takes no number and no **-x**, because it already means people at large. **`eyol`** *a person* and **`eyom`** *humanity* keep their own senses. English *they say* is [hearsay](knowing.md#evidentiality), not a generic *they*. The every-kind joins can say *people in general* as a phrase; **`eyon`** is the one-word pronoun for it ([joins](joins.md#generic-neighbors)).
+The generic pronoun takes no number and no **-x**, because it already means people at large. **`eyol`** *a person* and **`eyom`** *humanity* keep their own senses.
 
 ### Practice {#beginner-practice}
 
@@ -431,7 +431,7 @@ Beginner used whole-stem **-r** in the same slot as the earlier word (*he sits*)
 | `/y/` interjection … `-r` | same exclamation again | repeating that call-out |
 | `/x/` … `-r` after `/x/` | same linker again | *and so* / *likewise* |
 
-A few [closed roots](#special-pronouns) give **-r** a meaning of their own: the light end of a scale (`thomar` *may, who knows*, `thager` *plan-sketch*), or a share of the cause on *because* ([fault](causation.md#fault)). On those, **-r** is that meaning, not a resume. Every other closed root resumes with **-r** like any content root, so `thohor` after `thohom` is the same condition again:
+A few [closed roots](#special-pronouns) give **-r** a meaning of their own: the light end of a scale (`thomar` *may, who knows*, `thager` *plan-sketch*). On those, **-r** is that meaning, not a resume. Every other closed root resumes with **-r** like any content root, so `thohor` after `thohom` is the same condition again:
 
 > `zolazun vowurel thohom blerulal. zuzozen vowurel thohor.`
 >
@@ -571,7 +571,7 @@ A tag with **-m** is a [share](#share): A's part in the latest earlier sentence 
 
 Tags fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`yolazun`); to make them the topic again, name them (`xuzozer`). A word that is already a pronoun with one fixed form takes no tag: the [special pronouns](#special-pronouns), the generic and topic pronouns, and a tag itself. A resume and a role pointer do take one, because a tag keeps them fixed while they would otherwise follow the latest match. **-x** goes only on **-r** and **-n**: a share is a part, not a group of people, and to tag a group, tag its phrase (`zudozolx zwal`).
 
-A tag lasts until it is assigned again or the conversation ends with a [goodbye](word-endings.md#greeting). A [topic change](#topic-resets) leaves tags alone, so placeholder reasoning can run through a side topic and back. A tag assigned inside a [dependent](dependents.md#dependent-clauses) holds after it, because the dependent is the same talk. A quote keeps its own tags, as it keeps its own topic.
+A tag lasts until it is assigned again or the conversation ends with a [goodbye](word-endings.md#greeting). A topic change leaves tags alone, so placeholder reasoning can run through a side topic and back. A tag assigned inside a [dependent](dependents.md#dependent-clauses) holds after it, because the dependent is the same talk. A quote keeps its own tags, as it keeps its own topic.
 
 #### Two tags at once {#tag-pairs}
 
@@ -609,11 +609,11 @@ English *now, about Uzozen…*, *speaking of dogs…*, and *so, back to Uzozen�
 | `xuvewem` / `xuvedam` | clear the topic ([linkers](dependents.md#sentence-linkers)) | *next* / *by the way* |
 
 1. **No topic at the start.** A conversation opens with none.
-2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six sentence linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xudozol` *now, about a dog*). Any [compound](compounds.md) works the same way: a hyphenated name (`xuzozexolazun`), a noun pair (`xubedaxuyudal` *now, about peanut butter*), or a [role compound](roles.md#role-compounds) (`xaxuduyel` *now, about people who teach*; `xaxuduyer` returns to it). It takes the same adjectives and hooks as any noun (`xudozol em buzozen` *now, about Uzozen's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it. A [span](spans.md#topic-quotes) in this slot is the same job for a foreign name, a word as spelling, or a titled work (<code>x@&lt;Sam&gt;</code>, `x@[enuron olazun]`, or a word as spelling, which takes the [mention](spans.md#mention) marker before it).
+2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six sentence linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xudozol` *now, about a dog*). Any [compound](compounds.md) works the same way: a hyphenated name (`xuzozexolazun`), a noun pair (`xubedaxuyudal` *now, about peanut butter*), or a [role compound](roles.md#role-compounds) (`xaxuduyel` *now, about people who teach*; `xaxuduyer` returns to it). It takes the same adjectives and hooks as any noun (`xudozol em buzozen` *now, about Uzozen's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it.
 3. **Return.** `/x/` + the whole stem of an earlier word + **-r** makes that thing the topic again.
 4. **Clear.** `xuvewem` and `xuvedam` each open a new frame. After either there is no topic until the next introduce or return.
 5. **Persist.** The topic holds until rule 2, 3, or 4 changes it. Clause joins, other linkers, and agenda numbering leave it alone. A goodbye ends the conversation and clears it.
-6. **Where.** A topic word opens a sentence in your own talk, or in a [quote](#topic-quotes). It never follows a clause join and never sits inside a dependent or an aside.
+6. **Where.** A topic word opens a sentence in your own talk, or in a quote. It never follows a clause join and never sits inside a dependent or an aside.
 
 > `xuzozen.`
 >
@@ -676,10 +676,8 @@ Introduce, return, and clear each start a new **topic stretch**.
 | State | Resets? | Why |
 |-------|---------|-----|
 | [Role pointer](#role-pointers) anchors | yes | `zaxar` *the latest doer* and `zaxor` *the other one* never reach into an earlier stretch. Someone from before is picked up by name or whole-stem **-r**. |
-| [Ambient order of magnitude](numbers.md#ambient-magnitude) | yes | A new topic is a new stretch, so bare numbers go back to ones. |
 | Whole-stem **-r** | no | It is the explicit way back (`xuzozer`), so it reaches across stretches. |
 | [Tags](#tag-pronouns) | no | A tag is assigned on purpose, so distance does not blur it, and placeholder reasoning often runs through a side topic. |
-| [Tale](knowing.md#evidentiality) now | no | A story moves between characters without leaving the tale. |
 | Agenda numbering (`x#N`, outline depth) | no | Agenda items sit above topics; one item may hold several. |
 | Speech move, line of talk | no | They track the move and the line of talk, not people. |
 
@@ -725,13 +723,13 @@ A [dependent](dependents.md#dependent-clauses) is the sentence after a stand-in 
 |------|-----|
 | Content about X, in one sentence | `hahugem` + `/b/` *as for* inside the dependent: a frame for that clause only, no reset |
 | Change the topic, then report | the `/x/` word first: `xolazun zuzozen vezuyel darl zalon vowurel.` *Now, about Olazun: Uzozen says that Olazun walks.* |
-| Report someone's own topic change | quote their wording ([quotes](#topic-quotes)) |
+| Report someone's own topic change | quote their wording |
 
 Reading the topic from inside a dependent is fine: `zalon`, tags, and role pointers inside the content resolve to your current stretch. *Uzozen says that the main one runs* means your topic, not Uzozen's. A clause join is not a dependent, but it keeps the clauses in one written sentence, so a topic word cannot follow one either: change the topic after a period.
 
 ### Quotes and asides {#topic-quotes}
 
-A quote is someone else's talk, so it keeps its own topic and its own tags, and neither carries over into yours. An aside uses your stretch and never changes the topic ([topics in a quote](spans.md#topic-quotes)). For a real side topic, end the sentence and use `xuvedam`.
+A quote is someone else's talk, so it keeps its own topic and its own tags, and neither carries over into yours. An aside uses your stretch and never changes the topic. For a real side topic, end the sentence and use `xuvedam`.
 
 ### Me or you as the topic {#topic-participants}
 

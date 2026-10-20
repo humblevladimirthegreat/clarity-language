@@ -1,7 +1,7 @@
 # Phonology and phonotactics
 <a id="phonology"></a>
 
-How to **sound out** Agebon. Each letter has one pronunciation. Syllables end with a consonant only at the end of the word (one rare number-word exception is under [Advanced](#singability-constraints)), so you know when words stop.
+How to **sound out** Agebon. Each letter has one pronunciation. Syllables end with a consonant only at the end of the word, so you know when words stop.
 
 ## Beginner {#beginner}
 
@@ -92,17 +92,15 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Optional `l` after `/b/` | [hosted extra noun](clause.md#extra-nouns) | `bl-` completes the word right before it |
 | Root(s) **V(CV)+** | content | start with a vowel; each later consonant starts a new syllable |
 | Mid-word `x` | productive compound seam | joins two roots inside one word |
-| Mid-word `th` | stance seam | joins a sake to its stance vowel ([sakes](sakes.md)), any other root to a scope vowel ([label scope](predication.md#label-scope)), or a direction to whose facing counts ([viewpoint laterals](roles.md#viewpoint-laterals)) |
+| Mid-word `th` | stance seam | joins a sake to its stance vowel ([sakes](sakes.md)) |
 | Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`obahoha` *bedroom*) |
 | `-l` / `-m` / `-n` / `-r` | [word ending](word-endings.md) | audible end of the content word |
-| Name instance **`-ln`** | [one of a name](word-endings.md#name-instance--ln) | word-final coda `ln` |
 | Optional `-x` | [plural](plurality.md) after the ending | word-final `-lx` / `-mx` / `-nx` / `-rx` / `-lnx` (letter `x`) |
 | Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` |
-| Backward stand-in **`-rth`** | [pointing back](dependents.md#stand-in-back) | word-final coda `rth`; the only word-final `th` |
 
 A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubulel`: prefix `z`, root `ubule`, ending `-l`). Each spelling has only one pronunciation. Writing does not mark stress. Musical rhythm may still place emphasis.
 
-Some short grammar words stack two vowels (a join such as **ua**). A stack always puts its vowels in [alphabetical order](#letter-names) (**u**, **a**, **o**, **e**): **u** comes first and **e** comes last. That gives six stacks: **ua**, **uo**, **ue**, **ao**, **ae**, and **oe**. The two vowels stay two separate syllables.
+Some short grammar words stack two vowels (a join such as **ua**). A stack always puts its vowels in alphabetical order (**u**, **a**, **o**, **e**): **u** comes first and **e** comes last. That gives six stacks: **ua**, **uo**, **ue**, **ao**, **ae**, and **oe**. The two vowels stay two separate syllables.
 
 **Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 
@@ -116,13 +114,11 @@ When English says *how many* or *which place*, Agebon uses a [number word](numbe
 >
 > "There are three cats."
 
-`grarel` is `g` + `ra` + digit `re` + `-l`. In a long number, each written comma is spoken as a [group separator](numbers.md#group-separator), **`th`** plus the marker’s vowel.
-
-**Compare with:** ordinary endings on content words use [word ending](word-endings.md) senses. Number words reuse those same four letters with [number-specific endings](word-endings.md#number-word-exception).
+`grarel` is `g` + `ra` + digit `re` + `-l`.
 
 ### Syllabic `l` {#syllabic-l}
 
-A [hosted extra noun](clause.md#extra-nouns) writes `l` after its `b`. When that word is a number (`r` next), say the `l` as a beat of its own, like the end of English *bottle*. The `r` then starts the next beat as usual. A [tag](pronouns.md#tag-pronouns) does the same before its `w`.
+A [hosted extra noun](clause.md#extra-nouns) writes `l` after its `b`. When that word is a number (`r` next), say the `l` as a beat of its own, like the end of English *bottle*. The `r` then starts the next beat as usual.
 
 | Agebon | IPA |
 |--------|-----|
@@ -136,7 +132,7 @@ This is the only beat with no vowel letter. Like a vowel, you can hold it. Befor
 
 When you **spell a word aloud** or **name a letter**, say the Agebon name for it. Pause between names so two names do not run into one syllable.
 
-The table is in **alphabetical order**. The ten letters that begin a [digit syllable](#digit-letters) come first, in digit order (1 to 9, then 0), so `w` is the first letter and `z` the tenth. The other consonants follow, and the vowels come last.
+The table is in **alphabetical order**. The ten letters that begin a digit syllable come first, in digit order (1 to 9, then 0), so `w` is the first letter and `z` the tenth. The other consonants follow, and the vowels come last.
 
 <!-- cheat-sheet: sounds-spelling -->
 | Agebon | Name | Cue |
@@ -165,7 +161,7 @@ The table is in **alphabetical order**. The ten letters that begin a [digit syll
 `agozo` → `a` `ga` `o` `ze` `o`
 ```
 
-In a clause, a letter you talk about (such as `z`) is a [mention](spans.md#mention); read it aloud by its letter name (`ze`).
+In a clause, a letter you talk about (such as `z`) is read aloud by its letter name (`ze`).
 
 <a id="digit-letters"></a>
 Ten letters also begin a [digit syllable](numbers.md#counts). The letter name uses the [opposite vowel](#opposite-vowels) (`a`↔`u`, `o`↔`e`), so naming the letter is not the same as counting.
@@ -188,7 +184,7 @@ Ten letters also begin a [digit syllable](numbers.md#counts). The letter name us
 
 ### Place-name roots {#place-name-roots}
 
-A country or territory name is spelled from the English sound, not from a [root tail](compounds.md#root-tails). The root still starts and ends with a vowel. It may keep a consonant cluster from the English name (`avranza` from *France*). A name with no cluster is at least seven letters and ends in `n` plus that last vowel (`azabana` from *Japan*), so it does not look like a three- or five-letter dictionary root.
+A country or territory name is spelled from the English sound. The root still starts and ends with a vowel. It may keep a consonant cluster from the English name (`avranza` from *France*). A name with no cluster is at least seven letters and ends in `n` plus that last vowel (`azabana` from *Japan*), so it does not look like a three- or five-letter dictionary root.
 
 The ending is the ordinary name ending: `azabanan` is *Japan*, `azabanam` belonging, `azabanal` the flag ([countries](word-endings.md#countries-traditions)).
 
@@ -210,7 +206,7 @@ These choices about word shape make Agebon easier to sing:
 | Few consonant clusters | Clusters are harder to say quickly | Ordinary shape is consonant-then-vowel at the start of a syllable; limited clusters below |
 | Voiced preferred | Voiceless stops cut the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
 | No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge** or a lexical join (**-l** / **-m**) before a number marker `r`. The [syllabic `l`](#syllabic-l) of `blr` / `blw` is a held beat, not a final consonant |
-| No lexical stress | Music already places emphasis | Stress always falls on the same beat ([rhythm and stress](#rhythm-and-stress)); spelling does not mark it, and music may move it |
+| No lexical stress | Music already places emphasis | Stress always falls on the same beat; spelling does not mark it, and music may move it |
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-ln` / `-r` / `-rl` / `-rm` (optional `-x`); stand-ins end in `-rl` / `-rm` / `-rth` |
 
@@ -302,7 +298,6 @@ Do not hold `u`: it is the undo vowel, so a held `u` can sound like a denial. A 
 - Citation (root + ending, no sentence): [word-endings.md](word-endings.md)
 - Role letters in a clause: [clause.md](clause.md#role-letters)
 - Place-name roots (countries, a respelled English name): [above](#place-name-roots), [lexicon](lexicon.md#respell)
-- Root tails (what a root's last two letters hint at): [compounds.md](compounds.md#root-tails)
 - Numbers (role letter + `r` exception and [digit syllables](numbers.md#counts)): [numbers.md](numbers.md)
 - Mention spans (letter as form in a clause): [spans.md](spans.md)
 - Mid-word `x` and `th`: [compounds.md](compounds.md)

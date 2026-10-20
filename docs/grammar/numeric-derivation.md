@@ -49,7 +49,7 @@ The digitless number words (plus or minus infinity, first or last place, *more t
 | **`ROOTl+e`** | essence / absolute / pure type of ROOT | `zolamalrabal`: *essence of love* | **+e** = plus with no cap: nothing left to add |
 | **`ROOTl+e-`** | grain / seed / infinitesimal of ROOT | `zolamalrabul`: *grain of love* | **+e-** = that same plus, at the tiny end: a speck |
 | **`ROOTl-e`** | void of / absolute anti-ROOT | `zevemulrubal`: *void of fear* | **-e** = minus with no floor: none of the kind |
-| **`ROOTl-e-`** | **quasi-ROOT**: the shape of ROOT without treating it as fully real (English **`quasi-`**); **`ROOTl-e-1`** / **`ROOTl-e-2`** = [quasi-N](#quasi-n) | `zahuyayolrubul`: *quasi-friend*; `zehemrubudul`: *quasi-pair* | **-e-** = imaginary amount: the outline, not the ledger |
+| **`ROOTl-e-`** | **quasi-ROOT**: the shape of ROOT without treating it as fully real (English **`quasi-`**); **`ROOTl-e-1`** / **`ROOTl-e-2`** = quasi-N | `zahuyayolrubul`: *quasi-friend*; `zehemrubudul`: *quasi-pair* | **-e-** = imaginary amount: the outline, not the ledger |
 | **`ROOTl#e-`** | origin / prototype / onset-form of ROOT | `zolamalrebul`: *love in its beginning form* | **#e-** = start-place: the first rung |
 | **`ROOTl#e`** | telos / culmination / final form of ROOT | `zonemrebal`: *story’s final form* | **#e** = last place: where the kind finishes |
 | **`ROOTl+`** | poly- / multi-ROOT (unspecified >1) | `zehohamral`: *multi-faith* | **+** = more than one, how many unnamed |
@@ -124,7 +124,7 @@ English *a pair of…*, *three-part…*, *primary…* can say **how many parts t
 | **`ROOTl+9`** | ennead / near-full / almost-ten | `zenurolranal`: *a nine-part / near-full choir* | `zenurolrunal` | *a far-from-full choir* | **9** = one short of ten |
 | **`ROOTl+0`** | null / reset / emptied | `vodoramrazol`: *to zero-score / null the score* | `godoramruzol` | *a score that won’t null* / *stubborn residual score* (**anti-null**) | **0** = empty count |
 
-**Not the same job as:** [ordinal digit morphs](#ordinal-digit-morphs) **`#N`** (*which order*). **`+N`** is *how many parts*.
+**Not the same job as:** ordinal digit morphs **`#N`** (*which order*). **`+N`** is *how many parts*.
 
 #### Null / anti-null by PoS (`+0` / `-0`)
 <a id="null-anti-null"></a>
@@ -148,7 +148,7 @@ With a final **-m**, the wipe is only approximate: nearly emptied.
 >
 > "Uzozen sees a nearly wiped debt."
 
-**Related form:** a stronger wipe of the kind is [total null](#zero-exponent-derivation) **`ROOTl+0e`**. *Annihilate* with no root is the free number verb **`vrazobal`**.
+**Related form:** a stronger wipe of the kind is total null **`ROOTl+0e`**. *Annihilate* with no root is the free number verb **`vrazobal`**.
 
 ### Zero × exponent (`+0e` / `±0e-1` / …)
 <a id="zero-exponent-derivation"></a>
@@ -232,7 +232,7 @@ English *first draft*, *secondary adventure*, *third-order problem* can name **w
 
 ### Label / code sense (`_`) {#label-code-sense}
 
-When English makes a code part of what a thing is (*specimen #1*, *room 12* as a kind of room), the digits are a **catalog ID**, not a count or a rank. Put the digit-string marker **`_`** after the join; its digits are the code. With no digits, **`_`** describes the catalog itself ([infinite labels](#infinite-labels)).
+When English makes a code part of what a thing is (*specimen #1*, *room 12* as a kind of room), the digits are a **catalog ID**, not a count or a rank. Put the digit-string marker **`_`** after the join; its digits are the code. With no digits, **`_`** describes the catalog itself (infinite labels).
 
 > `zuzozen dudewalrowol vawebol.`
 >

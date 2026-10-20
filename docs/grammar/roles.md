@@ -2,7 +2,7 @@
 
 When English would name a person, place or time from an event (*a teacher* from *teach*, *the one told*, *a sleeping place*, *bedtime*), Agebon builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [word ending](word-endings.md). **`a`** is the doer, **`e`** is the scene of the event (where or when), **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
 
-The ending decides whether you mean anyone in that part or the one from a particular event. With **-l**, **-m**, or **-n**, the word is anyone who does it, with no claim about how often: *someone who teaches*. With **-r**, it is the person or place of the latest matching event: *the one teaching*. To say it is their usual role, the kind English names as a job (*a teacher*), add a scope vowel after the stem ([the usual role](#usual-role)).
+The ending decides whether you mean anyone in that part or the one from a particular event. With **-l**, **-m**, or **-n**, the word is anyone who does it, with no claim about how often: *someone who teaches*. With **-r**, it is the person or place of the latest matching event: *the one teaching*. To say it is their usual role, the kind English names as a job (*a teacher*), add a scope vowel after the stem (the usual role).
 
 ## Beginner {#beginner}
 
@@ -90,7 +90,7 @@ Once the conversation has a matching event, **-r** means the scene of **that** e
 
 `zexeguyel` is a place where something is constructed (the **-l** sense of *construct*). A construction site as a kind of place, with no event in mind, is the dictionary word `degohul`.
 
-**Compare with:** `zaxeguyel` is who constructs. What gets built did not exist before, so it is not an undergoer: it is the [result](#result). To say where a constructing in your sentence happens (*constructs in a house*), put the place on that clause with the extra-noun [hook](hooks.md#extra-noun) **`al`** plus `/b/`. The scene word is for naming the place itself.
+**Compare with:** `zaxeguyel` is who constructs. What gets built did not exist before, so it is not an undergoer: it is the result. To say where a constructing in your sentence happens (*constructs in a house*), put the place on that clause with the extra-noun [hook](hooks.md#extra-noun) **`al`** plus `/b/`. The scene word is for naming the place itself.
 
 ### The extra `/b/` party (`o`)
 
@@ -125,7 +125,7 @@ Some stems name a **relation** (who is bound to whom), not an action. The other 
 | `…uxROOT…` | names the undergoer of an event | *someone seen* / *the one seen* (this seeing) | **u** ≈ undo (the one it happens to) |
 | `…oxROOT…` | names the extra `/b/` party | *someone told* / *the one told* | **o** ≈ one (that extra one) |
 
-A role compound fills `/z/`, `/d/`, `/b/`, or `/ɡ/`. Under `/x/` it sets a [topic](pronouns.md#topic), as any compound does (`xaxuduyel` *now, about people who teach*), and under `/y/` with **-n** or **-r** it calls someone (`yaxobebun` calls the doctor).
+A role compound fills `/z/`, `/d/`, `/b/`, or `/ɡ/`. Under `/y/` with **-n** or **-r** it calls someone (`yaxobebun` calls the doctor).
 
 Its stem is always an event. A [special pronoun](pronouns.md#special-pronouns) such as `uwon` (*the speaker*) names a person, not an event, so `zaxuwon` is not a word. The same root on **-l** is an ordinary content word with a verb sense (*perform*), so it can be a stem: `zaxuwol` is *someone who performs*.
 
@@ -143,7 +143,7 @@ A scene pointer names the place or time of the latest event. If that clause has 
 >
 > "Uzozen sleeps in a house. Olazun sees the house."
 
-With no place, a *during* time is the scene (`herem blenulul`, *during the storm*). With neither, `dexar` is the event’s own place or time, as `dexezuvor` would be. A place wins over a time, and with two places the first one is the scene. *Before*, *after*, *until*, *by*, and an [as-of](relations.md#as-of) pair name a time the event is measured from, not its scene.
+With no place, a *during* time is the scene (`herem blenulul`, *during the storm*). With neither, `dexar` is the event’s own place or time, as `dexezuvor` would be. A place wins over a time, and with two places the first one is the scene. *Before*, *after*, *until*, and *by* name a time the event is measured from, not its scene.
 
 **Compare with:** for the doer, the undergoer, or the extra party, a pointer looks back to whoever last had that part, skipping events without one ([role pointers](pronouns.md#role-pointers)). For the scene, it takes the latest event, whatever it has. Scene **`u`** (`zexur` *wherever it happened*) says nobody has named the place, where `zexar` is a place the conversation already gave.
 
@@ -370,7 +370,7 @@ English *a teacher* says more than *someone who teaches*: teaching is that perso
 
 `zaxavuvuthel` is *a fighter*, and `zaxudozoxowurethel` is *a dog walker*. A role compound without **`the`** never makes that claim, so one fight does not make someone a fighter.
 
-**Compare with:** a role compound takes only one addition after its stem, so a usual role (**`the`**) does not also take [ability](intention.md#role-ability). Other [scope vowels](predication.md#scope-role) go in the same spot: **`tha`** is *this time only*, **`thu`** is a teacher type.
+**Compare with:** a role compound takes only one addition after its stem, so a usual role (**`the`**) does not also take ability. Other [scope vowels](predication.md#scope-role) go in the same spot: **`tha`** is *this time only*, **`thu`** is a teacher type.
 
 The other role vowels work the same way. With **`the`**, a scene is where the event usually happens: `dexezuvothel` is *a sleeping place*. To say someone **is** a teacher, put the same word on `/ɡ/`.
 
@@ -858,5 +858,3 @@ A bare arrow word is the compass; for someone's left, add **`th`** and whose fac
 
 - Event resume vs participant: [pronouns.md](pronouns.md)
 - Mid-word **`x`** families: [compounds.md](compounds.md)
-- Join-relations as relation roots: [join-across-roles.md](join-across-roles.md#join-relations)
-- Can / can’t (vowel right of **`x`**): [intention.md#ability](intention.md#ability)

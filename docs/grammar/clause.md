@@ -30,7 +30,7 @@ A name you already cite with **-n** (`uzozen`) keeps **-n** in the sentence:
 
 The **direct object** is who or what the action is done to. Mark it with `/d/`. The usual order is **Subject – Direct Object – Verb**.
 
-Because the first letter already says each word’s role, you may move those three words without changing who did what or what the sentence means. Moving a word does not stress it either. The usual order is still the one to use, because listeners expect it. Joined verbs are the one exception: there a word's place says which verb it goes with ([verb-phrase forms](join-across-roles.md#vp-clause-forms)).
+Because the first letter already says each word’s role, you may move those three words without changing who did what or what the sentence means. Moving a word does not stress it either. The usual order is still the one to use, because listeners expect it.
 
 > `zudozol dagozol vawebol.`
 >
@@ -56,7 +56,7 @@ An **adjective** names a property of a noun (*angry*). Mark it with `/ɡ/` and p
 >
 > "An angry dog walks."
 
-When the root names an event, the adjective says the noun is in the middle of it: `gowurel` after *dog* is *a walking dog* ([in progress](predication.md#in-progress)).
+When the root names an event, the adjective says the noun is in the middle of it: `gowurel` after *dog* is *a walking dog*.
 
 ### Extra detail on an adjective (`/w/`) {#adjective-detail-w}
 
@@ -70,7 +70,7 @@ To say how strongly a property holds (*very* angry), add a word marked with `/w/
 
 ### Adverbs (`/h/`) {#adverbs-h}
 
-An **adverb** says how, when, or where an action happens. Mark it with `/h/`. You may place it anywhere in the sentence, and several adverbs can sit next to each other (`hedurem halozum` *hastily and quietly*). With joined verbs, its place says which verb it describes ([verb-phrase forms](join-across-roles.md#vp-clause-forms)).
+An **adverb** says how, when, or where an action happens. Mark it with `/h/`. You may place it anywhere in the sentence, and several adverbs can sit next to each other (`hedurem halozum` *hastily and quietly*).
 
 > `zudozol hedurem vowurel.`
 >
@@ -95,8 +95,6 @@ A stance is yours **now**, as you speak.
 `/th/` is for what is in a mind. With nothing else marked, that mind is yours.
 
 ### Intention adverbs {#intention-adverbs}
-
-Some `/h/` words say something about the doer that others could check: that they are [trying](intention.md#try) it, [can](intention.md#ability-fallback) do it, or that the one it happens to [agreed](sakes.md#consent). These are **intention adverbs**. Two more `/h/` words keep the books on an outcome: whether it [still counts](knowing.md#residue-and-former-climate). Unlike *hastily*, each of these covers the **whole clause** wherever it sits, the way a stance does. A [plan](intention.md#plan) or a [decision](intention.md#decision-revisability) is in a mind, so it is a `/th/` stance instead.
 
 An ability does not say the act happens: *can walk* is not *walks*. A try and a consent do say it happens.
 
@@ -417,8 +415,6 @@ Beginner used **`welazom`** *very* before an adjective. The same `/w/` slot take
 >
 > "A fairly angry dog walks."
 
-The same words also go right before a reaction, to say how strongly it holds ([describing a reaction](speech-moves.md#describe-turn-word)).
-
 Two stock words go in `/h/` and describe the verb itself. Use **`hoyurem`** *kind of* / *sort of* to hedge the action, and **`hurugem`** for *again*.
 
 <!-- cheat-sheet: word-shape-clause -->
@@ -449,7 +445,7 @@ English uses the passive (*The cat was seen*, *Mistakes were made*) to avoid nam
 >
 > "Uzozen was seen."
 
-**Compare with:** [`zumon`](pronouns.md#special-pronouns) *someone* says that somebody did it, without saying who. With no subject at all, the sentence does not mention a doer. A missing subject never means the [topic](pronouns.md#topic-pronoun): to make the topic the doer, write `zalon`.
+**Compare with:** [`zumon`](pronouns.md#special-pronouns) *someone* says that somebody did it, without saying who. With no subject at all, the sentence does not mention a doer. A missing subject never means the topic: to make the topic the doer, write `zalon`.
 
 ### Practice {#intermediate-practice}
 

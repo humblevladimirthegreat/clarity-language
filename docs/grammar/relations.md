@@ -365,7 +365,7 @@ As a plain noun, `zeval` is *a carousel*. **`om`** *near* says only that the per
 | **`hohem` / `gohem`** | path from one edge of the landmark to the far edge | *across* | `ohel` *bridge* | 🌉: a bridge spans the gap |
 | **`hevam` / `gevam`** | on all sides of one landmark | *around* | `eval` *carousel* | 🎠: the horses ride on all sides of the pole |
 
-**Compare with:** a `/b/` word with no relation word before it is the recipient. Numeric *from 3 to 5* is a [range](numbers-applied.md#ranges). *Like* is [simile](#similative). *For a hammer* as a swap is [exchange](#exchange). *On behalf of Olazun* is [proxy](#proxy). English *of* that is not a place is [of relations](#of-relations).
+**Compare with:** a `/b/` word with no relation word before it is the recipient. *Like* is [simile](#similative). *For a hammer* as a swap is [exchange](#exchange). *On behalf of Olazun* is [proxy](#proxy).
 
 ### Of relations (*part of*, *cup of*, *made of*, *from*) {#of-relations}
 <a id="noun-relations"></a>
@@ -423,7 +423,6 @@ Do not flip the pair: *tea of the teapot* (tea that sits in that pot) is the *in
 - Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](#locative-relations)).
 - *A house like Uzozen’s* is [simile](#similative) (`gewom`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`geham`).
 - `gobem` is a part that belongs to the thing's structure (a bone of the body); `gozowum` is a piece taken off it (a slice of bread).
-- A portion *of* a class is [percent](numbers-applied.md#percent-and-percentage-points). A person and their associates take plural **-x**, not *part of*.
 - *From* as the origin of a whole kind (`ROOTl#e-`) is [numeric derivation](numeric-derivation.md), not this *from*, which is about one particular thing.
 
 ### Social relations (*Uzozen's friend*, *boss*) {#social-relations}
@@ -468,7 +467,7 @@ A tie of care (*Uzozen's patient*, *Uzozen's team*) is **`gobolom`**: `/b/` look
 >
 > "Olazun is in Uzozen's care."
 
-**Compare with:** kin uses generation numbers ([kin generations](numbers-applied.md#kin-generations)). Plain *Uzozen's*, with the tie left unsaid, is the hook [`em`](hooks.md#genitive). Ownership is `gogunum`. *Part of* is `gobem`.
+**Compare with:** plain *Uzozen's*, with the tie left unsaid, is the hook [`em`](hooks.md#genitive). Ownership is `gogunum`. *Part of* is `gobem`.
 
 ### Practice {#intermediate-practice}
 
@@ -678,7 +677,7 @@ The `bl-` word after the pair can be:
 - **`blarl`**, with the next sentence as whose-now (the pair then goes last)
 - extra-noun **-r**, which points back to a time already said (on a date, **-r** is written `=`: `bl=_#22,7` is *that 22 July again*; see the example below where Olazun walks on 22 July)
 
-It is never an offset from speech-now such as *three hours ago*: that would date the event without saying how you know the date, so an undated past event needs a [dated channel](knowing.md#dated-channel). The *as-of* word already carries the date, so do not also write a separate `h_#22,7` for the same snapshot. A bare `h_#…` with no pair dates the event itself ([time](numbers-applied.md#time)). A clock time, *before*, or *after* may sit beside an *as-of* pair.
+It is never an offset from speech-now such as *three hours ago*: that would date the event without saying how you know the date. The *as-of* word already carries the date, so do not also write a separate `h_#22,7` for the same snapshot. A bare `h_#…` with no pair dates the event itself ([time](numbers-applied.md#time)). A clock time, *before*, or *after* may sit beside an *as-of* pair.
 
 Do not put a bare person in `/b/` to mean “from Olazun’s now.” A person after `hanom` is [proxy](#proxy). To mean *as of when Olazun told it*, use **`blarl`** and a sentence: `henam blarl zolazun vezuyel`.
 
@@ -780,7 +779,7 @@ With **`thunem`**, the stance is one you would hold, not one you held:
 
 Resume works as on `/h/`: **`thenar`** / **`thuner`** with no `/b/` on the next `/x/` clause keeps the same stance-now.
 
-Unlike the event pair, stance *as-of* also takes a signed [offset](knowing.md#dated-channel) from speech-now in its `/b/`, because it dates only your stance, not the event. Digitless **`blrul`** is *back then*, with no amount claimed:
+Unlike the event pair, stance *as-of* also takes a signed offset from speech-now in its `/b/`, because it dates only your stance, not the event. Digitless **`blrul`** is *back then*, with no amount claimed:
 
 > `zolazun thenam blrul thomam velurul.`
 >

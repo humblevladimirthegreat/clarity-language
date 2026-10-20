@@ -11,6 +11,7 @@
     "grammar-check": "tsx scripts/grammar-check.ts",
     "parse-snapshot": "tsx scripts/parse-snapshot.ts",
     "lint:agebon": "tsx scripts/lint-agebon-docs.ts",
+    "lint:forward-links": "tsx scripts/lint-forward-links.ts",
     "free-english-review": "tsx scripts/free-english-review.ts",
     "llm-eval": "tsx scripts/llm-eval.ts",
     "docs:publish": "vitepress build docs/grammar && tsx scripts/publish-docs-extras.mjs",

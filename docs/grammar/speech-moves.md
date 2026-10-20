@@ -20,7 +20,7 @@ To call someone into the turn, put `/y/` before their name, which ends in **-n**
 >
 > "Olazun!" (calling Olazun)
 
-A `/ɡ/` word right after the call describes the person you call, as it would after any noun. So a full name calls with its family name (`yalen galowen.` *Alen Alowen!*, [multipart names](word-endings.md#multipart-names)), and `yolazun guzemol.` is *sleepy Olazun!*.
+A `/ɡ/` word right after the call describes the person you call, as it would after any noun. So a full name calls with its family name (`yalen galowen.` *Alen Alowen!*), and `yolazun guzemol.` is *sleepy Olazun!*.
 
 > `yalen galowen.`
 >
@@ -28,7 +28,7 @@ A `/ɡ/` word right after the call describes the person you call, as it would af
 >
 > "Alen Alowen!" (calling Alen Alowen)
 
-To call someone by what they are (*Waiter!*, *Doctor!*), use the kind as a title: it still ends in **-n**, so `yagayun` calls the guard. An occupation title is a [role compound](roles.md#role-compounds) with **-n**.
+To call someone by what they are (*Waiter!*, *Doctor!*), use the kind as a title: it still ends in **-n**, so `yagayun` calls the guard.
 
 **Compare with:** a [greeting](word-endings.md#greeting) is the speaker’s name as a citation (`SELFn.`). Calling Olazun uses `/y/`; saying Olazun walks uses `/z/` (`zolazun vowurel`).
 
@@ -75,7 +75,7 @@ When the turn is not a statement, put its act word immediately before the body:
 >
 > "Walk!"
 
-The vowel picks the act. Its cues are **a** add / hold, **o** one / pick, **e** order / instruct, **u** undo / take back. The same four vowels, with the same cues, come back in many small word families later on.
+The vowel picks the act. Its cues are **a** add / hold, **o** one / pick, **e** order / instruct, **u** undo / take back.
 
 <!-- cheat-sheet: talking -->
 | Agebon | Use | Cue |
@@ -87,7 +87,7 @@ The vowel picks the act. Its cues are **a** add / hold, **o** one / pick, **e** 
 
 ### Word order for each act {#act-word-order}
 
-The first letter of each word already says its role, so any order of the body means the same thing (with joined verbs, a word's place says which verb it goes with: [verb-phrase forms](join-across-roles.md#vp-clause-forms)). Each act still has a **usual order**. Use it: the act word is one short syllable, and if a listener misses it, the order still tells them which act you meant.
+The first letter of each word already says its role, so any order of the body means the same thing. Each act still has a **usual order**. Use it: the act word is one short syllable, and if a listener misses it, the order still tells them which act you meant.
 
 > `zuzozen dobogal vanuvul.`
 >
@@ -123,7 +123,7 @@ Only a command starts with its verb. A question or prohibition whose act word ge
 | command | verb first | the action comes first: do it |
 | prohibition | verb late, as in a statement | the action is held back |
 
-The person who receives (`/b/`) stays right after the verb, wherever the verb goes: `yel varal buzozen.` *Pay Uzozen!* With [joined verbs](join-across-roles.md#vp-clause-forms), the whole join counts as the verb, so a `/b/` right after the join word receives from every verb. A question with no subject puts another word before its verb, so that it still does not start with the verb.
+The person who receives (`/b/`) stays right after the verb, wherever the verb goes: `yel varal buzozen.` *Pay Uzozen!* A question with no subject puts another word before its verb, so that it still does not start with the verb.
 
 ### Practice {#beginner-practice}
 
@@ -304,7 +304,7 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 You already mark whether a turn is a statement, question, command, or prohibition. The ending of the act word adds **how firmly** you mean it. English softens with extra words (*please*, *perhaps*, *for what it's worth*); Agebon changes only the ending.
 
-The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a** statement, **o** question, **e** command, **u** prohibition). With **-l** you stand behind the act. With **-m** you offer it softly and leave the other person free to take it up or not. **-r** marks an act you hold only [for now](#act-r). Write the act word whenever the turn is not a plain statement; a period still lets you omit **`yal`**. A statement word you do write also ends a [carried channel](knowing.md#carry-forward): the claim after it is in your own voice again.
+The act word is **`y` + vowel + ending**. The vowel picks the act as before (**a** statement, **o** question, **e** command, **u** prohibition). With **-l** you stand behind the act. With **-m** you offer it softly and leave the other person free to take it up or not. **-r** marks an act you hold only for now. Write the act word whenever the turn is not a plain statement; a period still lets you omit **`yal`**.
 
 > `yam zuzozen vowurel.`
 >
@@ -400,7 +400,7 @@ A reaction can also take a [degree word](clause.md#degree-w) right before it, to
 >
 > "Truly amazing!"
 
-The degree word grades the reaction itself. A [tone mark](#tone-marks) is how you sound saying it, so the two can go together.
+The degree word grades the reaction itself. A tone mark is how you sound saying it, so the two can go together.
 
 To say who or what you react to (*hooray for Uzozen*), add a [hook](hooks.md#extra-noun) and `/b/` after the reaction: `yohumal el buzozen.` A bare `/b/` there would start the body as the person who receives.
 
@@ -509,11 +509,11 @@ A mark on a span colors all of it:
 >
 > "Uzozen said “Uzozen,” I think." (unsure about just the quoted word)
 
-**Compare with:** **`yol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling; [emotion compose](sakes.md#emotion-compose) states it as a claim, and the two can share a sentence.
+**Compare with:** **`yol`** asks a question; `?` only sounds unsure. A tone mark shows the feeling.
 
-- A mark may go on any word, including act words and [sentence linkers](dependents.md#sentence-linkers). Attached to a [scope island](spans.md#scope-islands) (a chunk of words in braces `{ … }`), it colors the whole island.
+- A mark may go on any word, including act words.
 - A mark is a stack of `!`, `?`, `%`, `&`, `;`, each at most twice, in any order. A third copy (`!!!`) is not a mark, and neither are marks in a row with a space between (`! !`).
-- `&` is the only way to single out one word: moving a word adds no stress ([English emphasis](clause.md#english-emphasis)).
+- `&` is the only way to single out one word: moving a word adds no stress.
 - A mark on a word inside a colored span or sentence overrides it for that word. To mix tones on one word, stack them there.
 - Before a span fence, the mark is **your** tone about the quote. Inside the fence, it is part of what is quoted (the original speaker's tone).
 - Speech adds no syllables: you voice the mark over its words.
@@ -544,7 +544,7 @@ English *frankly* and *to be clear* say in words how you are speaking. A tone ma
 
 ### Number as interjection {#number-as-interjection}
 
-A number word in `/y/` is a call-out (*Three more!*, a score). It can sit with the other opening `/y/` words, before the act word, or stand alone as its own turn. How each kind of number reads here: [numbers](numbers.md#number-as-interjection-by-marker).
+A number word in `/y/` is a call-out (*Three more!*, a score). It can sit with the other opening `/y/` words, before the act word, or stand alone as its own turn.
 
 ### Practice {#intermediate-practice}
 

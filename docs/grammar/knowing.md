@@ -16,12 +16,12 @@ Without the `/th/` word, you are reporting that it happens. As a plain noun the 
 >
 > "Olazun may be leaving Ahelan."
 
-**Compare with:** `zuzozen vevemol.` is *Uzozen thinks*, a report of the act of thinking; it does not mark anything as a guess. For a likelihood in numbers (*70% likely*), use the [stance number](numbers.md#number-as-stance-by-marker) **`th+N`**.
+**Compare with:** `zuzozen vevemol.` is *Uzozen thinks*, a report of the act of thinking; it does not mark anything as a guess.
 
 ### Hold endings (MAY)
 <a id="may-hold"></a>
 
-The ending on MAY says whether you mean to follow up on the *could be*: with **-l** you will find out, with **-m** you leave that unsaid (the default), and with **-r** it is a passing thought you are not pursuing. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). No ending is better than the others: finding out, leaving it at *may*, and letting it go are all fine choices. With **-n**, the word is an ordinary [name](word-endings.md#proper-name--n).
+The ending on MAY says whether you mean to follow up on the *could be*: with **-l** you will find out, with **-m** you leave that unsaid (the default), and with **-r** it is a passing thought you are not pursuing. The three run on the same settled-to-passing scale as [time horizon](sakes.md#settled-to-passing). No ending is better than the others: finding out, leaving it at *may*, and letting it go are all fine choices. With **-n**, the word is an ordinary name.
 
 | Agebon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -209,7 +209,7 @@ English often says how you know a claim: *I saw it*, *I heard*, *I figured*. Age
 
 The seven channels come in four kinds. Two are **direct**: you sensed it yourself, now (LIVE) or earlier (MEMORY). Three are **reasoned**: you worked it out from similar cases (PATTERN), from clues about this case (CLUES), or from premises it must follow from (DEDUCED). One is **received**: someone else said or wrote it (REPORTED). One is **internal**: a sense you cannot fully spell out (INTUITION).
 
-Verbs have **no past or future form**. Two channels place the event in time because of how you know it: **LIVE** means the scene is in your senses as you speak, and **MEMORY** means you remember sensing it (so it is past). The other channels do not place the event. When a reasoned or reported event happened at another time, add a when-frame: [*before* / *after* / *while*](dependents.md#time-poles), a clock or date, or a [signed offset](#dated-channel) on the channel. A claim that something **will** happen is a [forecast](#forecast): a channel plus a later offset, so a forecast always says how you know.
+Verbs have **no past or future form**. Two channels place the event in time because of how you know it: **LIVE** means the scene is in your senses as you speak, and **MEMORY** means you remember sensing it (so it is past). The other channels do not place the event. When a reasoned or reported event happened at another time, add a when-frame: [*before* / *after* / *while*](dependents.md#time-poles), a clock or date, or a signed offset on the channel. A claim that something **will** happen is a forecast: a channel plus a later offset, so a forecast always says how you know.
 
 > `zuzozen thugom vowurel.`
 >
@@ -249,11 +249,9 @@ Pick one channel for how you know.
 >
 > "Olazun is asleep, my gut says."
 
-LIVE covers every sense, not only sight: a sound in earshot, cold on your skin, an ache in your knee. MEMORY is the same senses, remembered. A screen or a recording extends your senses, so footage is LIVE while you watch it and MEMORY once you have watched it, with the device as the [source](#source). A document is REPORTED: someone wrote it, so it reached you from someone else.
+LIVE covers every sense, not only sight: a sound in earshot, cold on your skin, an ache in your knee. MEMORY is the same senses, remembered. A screen or a recording extends your senses, so footage is LIVE while you watch it and MEMORY once you have watched it, with the device as the source. A document is REPORTED: someone wrote it, so it reached you from someone else.
 
-**Compare with:** the act of seeing is the ordinary verb **`vawebol`**; LIVE only says how you know the claim. In the same way, hearing a door is an ordinary `/v/` verb, not REPORTED. A feeling such as fear or hope is an [emotion compose](sakes.md#emotion-compose); INTUITION is a way of knowing, not a feeling about the event. Something a schedule says will happen is someone's [PLAN](intention.md#plan-predict), and a tale you tell for its own sake is [NOTIONAL](#notional).
-
-**Related form:** to deny only the channel (*it happened, but I did not see it*), close the evidential with a [stance join](join-across-roles.md#stance-joins). Two channels you cannot choose between use the same kind of join.
+**Compare with:** the act of seeing is the ordinary verb **`vawebol`**; LIVE only says how you know the claim. In the same way, hearing a door is an ordinary `/v/` verb, not REPORTED. A feeling such as fear or hope is an [emotion compose](sakes.md#emotion-compose); INTUITION is a way of knowing, not a feeling about the event. Something a schedule says will happen is someone's [PLAN](intention.md#plan-predict), and a tale you tell for its own sake is NOTIONAL.
 
 ### Evidence strength {#evidence-strength}
 
@@ -265,7 +263,7 @@ The ending on a channel says **how strong the evidence is**. Use **-m** by defau
 
 What counts as showing depends on the channel, so the table names what each channel grades.
 
-Strength grades your evidence, not how sure you feel and not how likely the event is. Likelihood is a separate [stance number](numbers.md#number-as-stance-by-marker) (`th+70`), so a strong pattern can still give middling odds, and a rumor can claim certainty. Strength is also not distance from the event: that is [`th#N`](#hand-depth), so a compiled report that is several hands removed can still be **-l**.
+Strength grades your evidence, not how sure you feel and not how likely the event is. Likelihood is a separate [stance number](numbers.md#number-as-stance-by-marker) (`th+70`), so a strong pattern can still give middling odds, and a rumor can claim certainty. Strength is also not distance from the event: that is `th#N`, so a compiled report that is several hands removed can still be **-l**.
 
 <!-- cheat-sheet: knowing-intending -->
 | Channel | Graded on | **-l** show | **-m** (default) describe | **-r** gesture |
@@ -280,7 +278,7 @@ Strength grades your evidence, not how sure you feel and not how likely the even
 
 Two rows stretch the word *show*. A live view is gone once the moment passes, so for LIVE and MEMORY **-l** means you could narrate it in fine detail. INTUITION is private, so **-l** means you can say what the sense rests on, not that you can hand it over.
 
-DEDUCED grades how far you checked the steps, not the premises. A step can be airtight and still start from a false premise, so a deduction is only as good as what it was deduced from ([deduction](#deduction)).
+DEDUCED grades how far you checked the steps, not the premises. A step can be airtight and still start from a false premise, so a deduction is only as good as what it was deduced from.
 
 > `zolazun thebar velurul.`
 >
@@ -330,7 +328,7 @@ English *according to Uzozen* and *going by the camera* name **who or what you g
 >
 > "Olazun is asleep, going by the camera." (watching the feed now)
 
-What you put in that `/b/` decides what it does. A person or other noun is the source: a speaker or a document on REPORTED, a screen or a recording on LIVE and MEMORY. A time [measure phrase](numbers-applied.md#measure-phrases) is an offset that dates the event instead ([dated channel](#dated-channel)).
+What you put in that `/b/` decides what it does. A person or other noun is the source: a speaker or a document on REPORTED, a screen or a recording on LIVE and MEMORY.
 
 **Compare with:** the source is where the claim came to you from; the claim is still yours to pass on. A numbered footnote source is `th_N`.
 
@@ -429,7 +427,7 @@ Grounds are not a cause. With [`thahum blarl`](causation.md#only-because), the c
 | what has to hold for it to happen | the condition | `thohom blarl` / `thebom blarl` / `thehem blarl` |
 | how you know it happened | your grounds | `theyem blarl` / `thubem blarl` / `thanam blarl` |
 
-The ending on the channel grades the grounds ([evidence strength](#evidence-strength)): **-l** for strong clues or a well-established pattern, **-m** by default, **-r** for a weak clue or a few cases. Strong clues still fall short of a proof: when the claim **must** hold if the grounds do, use DEDUCED ([deduction](#deduction)).
+The ending on the channel grades the grounds ([evidence strength](#evidence-strength)): **-l** for strong clues or a well-established pattern, **-m** by default, **-r** for a weak clue or a few cases. Strong clues still fall short of a proof: when the claim **must** hold if the grounds do, use DEDUCED.
 
 > `verulal theyel blarl zugalal gegulol.`
 >
@@ -514,7 +512,7 @@ The frame is **yours**. It covers only your own claims, and someone else who rep
 
 **What ends it:**
 
-- **A new frame.** Any channel replaces it, and so does [NOTIONAL](#notional). From there on, the new one carries.
+- **A new frame.** Any channel replaces it, and so does NOTIONAL. From there on, the new one carries.
 - **The statement word, written out.** **`yal`** (or **`yam`** / **`yar`**) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](speech-moves.md#speech-act) changes the meaning. A rhetorical **`yal yol`** is a question, so it does not count.
 - **`xuvedam`** *by the way*: a digression leaves what you were telling. To go back, name the channel again.
 - **A goodbye**, which ends the conversation.
@@ -578,7 +576,7 @@ English *has left* and *used to tell* mix two things: when the event happened, a
 
 **Compare with:** PATTERN **`thubem`** says how you know (from repeated cases); it does not say the pattern is over. **`helam`** is not a past tense either: it works with LIVE and in a forecast.
 
-Do not write **`helam`** right before **`hual`**: that spot holds the restrictor's list of occasions (*always except when …*). Put **`hual`** first (bare *always*) and FORMER after the verb, where a channel goes on a [general claim](#universality).
+Do not write **`helam`** right before **`hual`**: that spot holds the restrictor's list of occasions (*always except when …*). Put **`hual`** first (bare *always*) and FORMER after the verb, where a channel goes on a general claim.
 
 | Agebon | Use | English | Same root as | Cue |
 |--------|-----|---------|--------------|-----|
@@ -745,8 +743,6 @@ To claim only that the conclusion follows, put a [pole](causation.md#only-becaus
 | *Q follows from P* | Q `thanam thohom blarl` P | only the link |
 | *P and Q come to the same thing* | Q `thanam thehem blarl` P | only the link, both ways |
 | *P rules out Q* | Q denied with `vul`, then `thanam thohom blarl` P | only that P and Q cannot both hold |
-
-To say a conclusion **does not** follow (*that doesn't follow*, *a non sequitur*), deny the channel and the pole together with a [stance join before `blarl`](join-across-roles.md#stance-join-before-barl). You deny the link and claim nothing about P or Q: either may still be true.
 
 The ending grades how far you checked the steps ([evidence strength](#evidence-strength)): **`thanal`** when you could write out every step, **`thanam`** when you could name the premises and the rule, **`thanar`** when it only seems to follow.
 
