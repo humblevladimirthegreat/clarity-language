@@ -7,7 +7,7 @@ import { buildEditorData, lessonPractice, readSources } from "./data.js";
 import { compileTrigger, createScanner, tokenize, type Mark } from "./match.js";
 import { applyChanges, placeAtCommand, placeDropIn } from "./place.js";
 import { findNearMisses } from "./read-back.js";
-import { answerPaths, indexForms, outcomeFor } from "./types.js";
+import { answerPaths, indexForms, outcomeFor, presetFor } from "./types.js";
 
 const sources = readSources();
 const { data, problems } = buildEditorData(sources);
@@ -123,6 +123,18 @@ describe("editor data", () => {
   it("fails on a word in two lists", () => {
     const result = buildEditorData({ ...sources, wordsCsv: `${sources.wordsCsv}emotion-unmet,lazy\n` });
     assert.ok(result.problems.some((p) => /lazy is in both trait and emotion-unmet/.test(p)), result.problems.join("\n"));
+  });
+
+  it("presets the need for an emotion word", () => {
+    assert.deepEqual(presetFor("I'm so confused", data.wordDefaults), { sake: "understanding" });
+    assert.deepEqual(presetFor("I'm so anxious", data.wordDefaults), {});
+  });
+
+  it("fails on a preset that names no choice, or a preset on a trait word", () => {
+    const bad = buildEditorData({ ...sources, wordsCsv: `${sources.wordsCsv}emotion-unmet,zany,sake=nonsense\n` });
+    assert.ok(bad.problems.some((p) => /zany: preset/.test(p)), bad.problems.join("\n"));
+    const trait = buildEditorData({ ...sources, wordsCsv: `${sources.wordsCsv}trait,zany,sake=purpose\n` });
+    assert.ok(trait.problems.some((p) => /only an emotion word has a preset/.test(p)), trait.problems.join("\n"));
   });
 
   it("fails on a flow that names a cell the sheet does not have", () => {

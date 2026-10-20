@@ -774,6 +774,7 @@ onBeforeUnmount(() => {
           :trigger="activeTrigger"
           :command="activeCommand?.command"
           :command-defaults="activeCommand?.spec.defaults"
+          :word-defaults="data.wordDefaults"
           :also="activeAlso"
           :flow="activeFlow"
           :lesson="activeLesson"

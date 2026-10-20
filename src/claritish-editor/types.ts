@@ -116,6 +116,8 @@ export type EditorData = {
   /** Every form a flow can produce, and its English: `indexForms(flows)`. */
   flows: Record<string, EditorFlow>;
   commands: EditorCommand[];
+  /** Answers an emotion word preselects on the feelings card (*confused* → `sake=understanding`). */
+  wordDefaults: Record<string, Record<string, string>>;
   /** Practice items of each lesson with cues. */
   practice: Record<string, PracticeItem[]>;
   /**
@@ -191,4 +193,13 @@ export function indexForms(flows: Readonly<Record<string, EditorFlow>>): {
     formsByLesson[flow.lesson] = [...forms];
   }
   return { formsByLesson, glossary };
+}
+
+/** The answers the first preset emotion word in a cue's English preselects. */
+export function presetFor(cueText: string, wordDefaults: Readonly<Record<string, Record<string, string>>>): Record<string, string> {
+  for (const word of cueText.toLowerCase().match(/[\p{L}']+/gu) ?? []) {
+    const preset = wordDefaults[word];
+    if (preset) return preset;
+  }
+  return {};
 }

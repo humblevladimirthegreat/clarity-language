@@ -7,6 +7,7 @@ import {
   outcomeFor,
   placeAtCommand,
   placeDropIn,
+  presetFor,
   type CommandAt,
   type Cue,
   type EditorFlow,
@@ -26,6 +27,8 @@ const props = defineProps<{
   command?: CommandAt
   /** Answers a command preselects. */
   commandDefaults?: Record<string, string>
+  /** Answers each emotion word preselects. */
+  wordDefaults?: Record<string, Record<string, string>>
   /** The other cues in the sentence (*Also here*). */
   also: Cue[]
   flow: EditorFlow
@@ -85,7 +88,9 @@ const questions = computed(() =>
 )
 
 function reset() {
-  const preset = props.command ? props.commandDefaults ?? {} : props.trigger?.defaults ?? {}
+  const preset = props.command
+    ? props.commandDefaults ?? {}
+    : { ...props.trigger?.defaults, ...(props.cue && props.flow.id === 'feeling' ? presetFor(props.cue.text, props.wordDefaults ?? {}) : {}) }
   const next: Record<string, string> = {}
   for (const q of props.flow.questions) next[q.id] = preset[q.id] ?? q.choices[0]!.value
   answers.value = next

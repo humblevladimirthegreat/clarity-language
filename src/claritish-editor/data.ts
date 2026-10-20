@@ -148,8 +148,9 @@ function splitList(cell: string | undefined): string[] {
 }
 
 /** Word lists by name (data/claritish-words.csv). */
-function readWords(csv: string, problems: string[]): Map<string, string[]> {
+function readWords(csv: string, problems: string[]): { lists: Map<string, string[]>; presets: Map<string, string> } {
   const lists = new Map<string, string[]>();
+  const presets = new Map<string, string>();
   const listOf = new Map<string, string>();
   for (const row of parseCsv(csv).rows) {
     const list = row.list ?? "";
@@ -161,8 +162,12 @@ function readWords(csv: string, problems: string[]): Map<string, string[]> {
     if (other) problems.push(`claritish-words.csv: ${word} is in ${other === list ? `${list} twice` : `both ${other} and ${list}`}`);
     listOf.set(word, list);
     lists.set(list, [...(lists.get(list) ?? []), word]);
+    if (row.preset) {
+      if (list.startsWith("emotion-")) presets.set(word, row.preset);
+      else problems.push(`${where}: only an emotion word has a preset`);
+    }
   }
-  return lists;
+  return { lists, presets };
 }
 
 /** `@trait` in a pattern → every word of that list, as alternatives; `(@trait)` stays optional. */
@@ -319,7 +324,7 @@ function buildFlow(sheet: Sheet, id: string, spec: FlowSpec, problems: string[])
 export function buildEditorData(sources: EditorSources = readSources()): { data: EditorData; problems: string[] } {
   const problems: string[] = [];
   const sheet = readSheet(sources.sheet);
-  const lists = readWords(sources.wordsCsv, problems);
+  const { lists, presets } = readWords(sources.wordsCsv, problems);
   const order = trackOrder(sources.index);
 
   let flowSpecs: Record<string, FlowSpec> = {};
@@ -332,6 +337,20 @@ export function buildEditorData(sources: EditorSources = readSources()): { data:
   for (const [id, spec] of Object.entries(flowSpecs)) {
     if (!sources.lessons.has(spec.lesson)) problems.push(`claritish-flows.json ${id}: unknown lesson \`${spec.lesson}\``);
     flows[id] = buildFlow(sheet, id, spec, problems);
+  }
+
+  // An emotion word can start the feelings composer on its need (*confused* → understanding).
+  const feeling = flows.feeling;
+  const wordDefaults: Record<string, Record<string, string>> = {};
+  for (const [word, preset] of presets) {
+    const answers: Record<string, string> = {};
+    for (const pair of splitList(preset.replace(/;/g, "|"))) {
+      const [q, v] = pair.split("=").map((x) => x.trim());
+      const question = feeling?.questions.find((x) => x.id === q);
+      if (!question || !question.choices.some((c) => c.value === v)) problems.push(`claritish-words.csv ${word}: preset \`${pair}\` names no question and choice of the feeling flow`);
+      else answers[q!] = v!;
+    }
+    wordDefaults[word] = answers;
   }
 
   const triggers: EditorTrigger[] = [];
@@ -452,5 +471,5 @@ export function buildEditorData(sources: EditorSources = readSources()): { data:
     ...sources.englishWords.filter((w) => w.length >= AUTOCOMPLETE_MIN && wordForms.some((f) => f.startsWith(w) && f !== w)),
   ];
 
-  return { data: { lessons, triggers, flows, commands, practice, english, autocompleteMin: AUTOCOMPLETE_MIN }, problems };
+  return { data: { lessons, triggers, flows, commands, wordDefaults, practice, english, autocompleteMin: AUTOCOMPLETE_MIN }, problems };
 }

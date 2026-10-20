@@ -6,7 +6,7 @@ export { applyChanges, placeAtCommand, placeDropIn } from "./place.js";
 export type { Joiner, PlacedChange, Placement } from "./place.js";
 export { findDropIns, findNearMisses, sameDropIns } from "./read-back.js";
 export type { FoundDropIn, NearMiss } from "./read-back.js";
-export { answerPaths, choiceLabel, indexForms, outcomeFor } from "./types.js";
+export { answerPaths, choiceLabel, indexForms, outcomeFor, presetFor } from "./types.js";
 export type {
   BreakdownPart,
   CommandAt,
