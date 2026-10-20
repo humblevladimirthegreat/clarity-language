@@ -147,17 +147,18 @@ Mid-word **`th`** is another family: a sake root and a vowel (`gulothal`), any o
 |--------|-----|---------|-------|
 | [two words](../compounds.md#compound-vs-separate) | two things, or a property marked another way | `zehowol zerewol zam` *a hammer and a wrench*; `zudozol gubulel` *a blue dog* | B |
 | [**`x`** in the middle](../compounds.md#compound-vs-separate) | one thing; both roots audible | `gagomaxulamal` *in love* (the crush kind); `zubedaxuyudal` *peanut butter*; `zuzozexolazun` (one person) | B |
-| [dictionary word](../compounds.md#compound-vs-separate) | one familiar kind, one entry | `zobaholurahal` *bedroom*; `zezalal` *sunflower* | B |
+| [dictionary word](../compounds.md#compound-vs-separate) | one familiar kind, one entry | `zobahohal` *bedroom*; `zezalal` *sunflower* | B |
 
 A dictionary compound joins its two roots with the left root's ending (**-l** everyday, **-m** abstract), never **`x`**. If the pairing is not listed, glue with **`x`** or use two words.
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | English | Stage |
 |--------|---------|-------|
-| [`zobaholurahal`](../compounds.md#lexical-compounds) | *bedroom* | B |
 | [`zoyelaboral`](../compounds.md#lexical-compounds) | *doorbell* | B |
 | [`zuzahalugul`](../compounds.md#lexical-compounds) | *textbook* | B |
 | [`zerulalogobal`](../compounds.md#lexical-compounds) | *raincoat* | B |
+| [`zahuyayol`](../compounds.md#tail-suffixes) | *friend* (*hug* + a person tail, no second root) | A |
+| [`zobahohal`](../compounds.md#tail-suffixes) | *bedroom* (*bed* + a place tail) | A |
 
 More pieces: keep English order in one word, last root the kind (`zugudaxududaxuwolan` *Coffee-Tea-Water*, one named shop).
 
@@ -333,4 +334,4 @@ English *many* and *often* rank against an unstated baseline. Agebon names the b
 | `daexarayel` *a writing tool* ([a compound](../roles.md#instrument)) | | `ael` *using* ([a hook on the clause](../hooks.md#extra-noun)) |
 | `gowuhel` *west* ([compass](../roles.md#endings-and-resume)) | | `gowuhethuzozen` *Uzozen's left* ([a face](../roles.md#endings-and-resume)) |
 | `gowuhethuzozen badalel` *left of the tree, from Uzozen's view* ([a facing person](../roles.md#viewpoint-vs-landmark)) | | `gowuhethol bahehal` *on the house's left* ([the landmark's own front](../roles.md#landmark-facing)) |
-| `zobaholurahal` *bedroom* ([a dictionary word](../compounds.md#lexical-compounds)) | | `zubedaxuyudal` *peanut butter* ([glued with `x`](../compounds.md#compound-vs-separate)) |
+| `zobahohal` *bedroom* ([a dictionary word](../compounds.md#lexical-compounds)) | | `zubedaxuyudal` *peanut butter* ([glued with `x`](../compounds.md#compound-vs-separate)) |

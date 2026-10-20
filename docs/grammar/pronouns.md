@@ -25,9 +25,9 @@ After you have already named a person or thing, the next sentence can point back
 
 **Compare with:** for English *the dog that walked*, say that the dog walks as its own sentence, then resume the dog with **-r** in whatever slot you need. Do not attach a *who / that / which* clause to the noun ([which person or thing](dependents.md#which-noun)).
 
-A word built from two roots resumes with its whole stem too. `dobaholurahar` is *the bedroom*; `dobahor` is *the bed*, and never points at a bedroom.
+A word built from two roots resumes with its whole stem too. `dobahohar` is *the bedroom*; `dobahor` is *the bed*, and never points at a bedroom.
 
-> `zuzozen dobaholurahal vawebol. zolazun dobaholurahar vawebol.`
+> `zuzozen dobahohal vawebol. zolazun dobahohar vawebol.`
 >
 > z-Uzozen | d-bedroom | v-see . z-Olazun | d-←bedroom | v-see
 >

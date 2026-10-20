@@ -247,7 +247,7 @@ describe("classify", () => {
   });
 
   it("lexical compound lemma glosses as one kind", () => {
-    const word = expectReading("zobaholurahal", "ordinary");
+    const word = expectReading("zobahohal", "ordinary");
     assert.equal(word.family.kind, "content");
     assert.equal(word.lexicalCompound, true);
     assert.equal(word.rootGloss?.concrete, "bedroom");

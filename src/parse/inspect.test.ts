@@ -68,7 +68,7 @@ describe("inspectText", () => {
     assert.match(token.gloss, /^unknown root \(maybe bed-l scorpion\)$/);
     assert.ok(token.chips.includes("potential compound"));
 
-    const listed = inspectText("zobaholurahal.", tables).tokens[0];
+    const listed = inspectText("zobahohal.", tables).tokens[0];
     assert.equal(listed?.kind, "word");
     if (listed?.kind !== "word") return;
     assert.equal(listed.word.potentialCompounds, undefined);

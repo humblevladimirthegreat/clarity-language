@@ -62,7 +62,7 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 |------|------------|-------|
 | [Role letter](../phonology.md#phonotactics) | first letter: the word's job in the clause | I |
 | Optional `l` after `/ɡ/` | [adjective before the noun](../clause.md#left-bound-adjectives) | I |
-| Root(s) | vowel-first; a [dictionary compound](../phonology.md#phonotactics) is one long root (`obaholuraha` *bedroom*); a root after a root is joined by mid-word `x` ([compounds](../compounds.md)) | I |
+| Root(s) | vowel-first; a [dictionary compound](../phonology.md#phonotactics) is one long root (`obahoha` *bedroom*); a root after a root is joined by mid-word `x` ([compounds](../compounds.md)) | I |
 | Mid-word `th` | the stance seam: [scope](../predication.md#label-scope), [sakes](../sakes.md), [viewpoint](../roles.md#viewpoint-laterals) | I |
 | **-l** / **-m** / **-n** / **-r** | the [word ending](../word-endings.md) | B |
 | **-ln** | [one of a name](../word-endings.md#name-instance--ln) | I |

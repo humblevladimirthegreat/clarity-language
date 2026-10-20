@@ -6,7 +6,7 @@ To name a kind of thing by a number idea, join a [number](numbers.md) stem onto 
 
 ### Numeric derivation (`ROOT` × number stem) {#numeric-derivation}
 
-English often names a *kind of thing* with a number idea baked in (*essence of love*, *a three-part dialogue*, *specimen #1*). In Agebon you write the content root, a [lexical-compound](compounds.md#lexical-compounds) join (**-l** / **-m**), then a number stem. That stem has no role letter and no ending of its own; the role letter and one [word ending](word-endings.md) belong to the **whole derived word**. You can then use that word in any role: the number describes the kind, not how many there are. (cue: same glue as *bedroom*, right half is a number)
+English often names a *kind of thing* with a number idea baked in (*essence of love*, *a three-part dialogue*, *specimen #1*). In Agebon you write the content root, a [lexical-compound](compounds.md#lexical-compounds) join (**-l** / **-m**), then a number stem. That stem has no role letter and no ending of its own; the role letter and one [word ending](word-endings.md) belong to the **whole derived word**. You can then use that word in any role: the number describes the kind, not how many there are. (cue: same glue as *doorbell*, right half is a number)
 
 > `zulamalrabal.`
 >
@@ -22,7 +22,7 @@ PoS + ROOT + {l|m} + NUM + {-l|-m|-n|-r}
 |-------|-----|-----|
 | **PoS** | Ordinary slot for the derived word | |
 | **ROOT** | Any content root (`V(CV)+`) | |
-| **join** | Same letter as a [lexical compound](compounds.md#lexical-compounds): **-l** the root’s everyday sense, **-m** its abstract sense | `obaholuraha` *bedroom* uses **-l** |
+| **join** | Same letter as a [lexical compound](compounds.md#lexical-compounds): **-l** the root’s everyday sense, **-m** its abstract sense | `oyelabora` *doorbell* uses **-l** |
 | **NUM** | Number stem: same marker / digits / digitless-exp body as [numbers.md](numbers.md), without a role letter and without its own ending. Tables below use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …). Actual words are always spelled CV (`raba`, `roba`, `rawoba`, …): [writing style](numbers.md#writing-style-numeric-vs-spelled) | spoken stem starts with **`r`**, so you hear **`lr`** or **`mr`** |
 | **Ending** | Word ending on the **whole word**, after the number: **-l** the kind itself, **-m** approximately that kind (*roughly a three-part dialogue*), **-n** a name, **-r** a resume. The join letter, not this ending, says whether the root is in its everyday or abstract sense. | |
 

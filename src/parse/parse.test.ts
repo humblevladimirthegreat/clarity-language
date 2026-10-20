@@ -633,7 +633,7 @@ describe("parse — spans.md written fences and closes", () => {
 
 describe("parse — pronouns.md resume with no earlier match", () => {
   it("reads an opening resume of a lexicon stem as the one you both know", () => {
-    for (const text of ["zolazun vawebol dozer.", "zoyer vewurel.", "zudozor vewurel.", "zobaholurahar vewurel.", "zolazun vewurelar."]) {
+    for (const text of ["zolazun vawebol dozer.", "zoyer vewurel.", "zudozor vewurel.", "zobahohar vewurel.", "zolazun vewurelar."]) {
       assert.doesNotThrow(() => parseText(text), text);
     }
     assert.throws(() => parseText("zadar vewurel."), SentenceParseError);

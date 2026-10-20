@@ -1111,7 +1111,7 @@ The left ending is part of the stem, so two different left roots stay distinct o
 
 Other roots fuse the same way: `vezuyeluel` *contradict* is *tell* fused with *against*. The dictionary lists these words as citations (`ewurelul`, not `vewurelul`).
 
-**Compare with:** `vewurel ul buyahel` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* never fuse; they are always separate hook words. A [lexical compound](compounds.md#lexical-compounds) like *bedroom* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
+**Compare with:** `vewurel ul buyahel` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* never fuse; they are always separate hook words. A [lexical compound](compounds.md#lexical-compounds) like *doorbell* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
 
 ### Practice {#advanced-practice}
 

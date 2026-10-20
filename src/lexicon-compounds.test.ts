@@ -90,11 +90,6 @@ describe("lexicon-compounds", () => {
     assert.ok(nature.some((e) => /join must be/.test(e.reason)));
   });
 
-  it("rejects a suffix stem that also reads 3 + join + 3", () => {
-    const errors = validateCompoundRows([suffixRow("abolobe", "abolo", "be")], new Set(["abolo", "abo", "obe"]));
-    assert.ok(errors.some((e) => /also reads abo\+l\+obe/.test(e.reason)));
-  });
-
   it("rejects 3 + join + 3 two-root compounds", () => {
     const errors = validateCompoundRows([suffixRow("analobe", "ana", "obe", "l")], new Set(["ana", "obe"]));
     assert.ok(errors.some((e) => /3 \+ join \+ 3/.test(e.reason)));

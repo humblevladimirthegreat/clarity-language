@@ -36,20 +36,19 @@ The last root is the kind of thing; the left root specifies it (what field, what
 ### Words you look up, not build
 <a id="lexical-compounds"></a>
 
-English *bedroom*, *doorbell*, and *textbook* feel like one word. Agebon lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *bed* and *room*.
+English *bedroom*, *doorbell*, and *textbook* feel like one word. Agebon lists those as **one dictionary word** too. You look the word up. You do not make it on the spot by putting **`x`** between *door* and *bell*.
 
 Inside the dictionary spelling you can still see the two old roots, with a join letter instead of **`x`**. That letter is the [word ending](word-endings.md) of the **left** root: **-l** when that piece is the everyday kind, **-m** when it is the abstract sense (named **-n** or resume **-r** if that left piece is a name or a resume). The last letter of the word is still the ending of the **whole** entry. In a sentence you add a role letter and that whole-word ending, the same way you do for *dog* or *hammer*.
 
-> `zobaholurahal.`
+> `zoyelaboral.`
 >
-> z-bedroom
+> z-doorbell
 >
-> "a bedroom"
+> "a doorbell"
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| `zobaholurahal` | bed **-l** room | bedroom | left piece everyday |
 | `zoyelaboral` | door **-l** bell | doorbell | left piece everyday |
 | `zuzahalugul` | school **-l** book | textbook | left piece everyday |
 | `zerulalogobal` | rain **-l** coat | raincoat | left piece everyday |
@@ -67,7 +66,7 @@ Ask how many things you mean. *A hammer and a wrench* is two tools, so two Agebo
 |--------|-----|---------|-----|
 | two words | two things, or a property already marked another way | `zehowol zerewol zam` *a hammer and a wrench*; `zudozol gubulel` *a blue dog* (`/ɡ/`) | |
 | **`x`** in the middle | one thing; you can still hear both roots | `gagomaxulamal` *in love* (the crush kind); `zubedaxuyudal` *peanut butter*; `zuzozexolazun` (one person) | **x** ≈ plus |
-| dictionary word | one familiar kind, listed as a single entry | `zobaholurahal` *bedroom*; `zezalal` *sunflower* | join letter in the entry, not **`x`** |
+| dictionary word | one familiar kind, listed as a single entry | `zobahohal` *bedroom*; `zezalal` *sunflower* | join letter in the entry, not **`x`** |
 
 **Compare with:** a property on a noun uses `/ɡ/` (or `/w/`). A list uses a [join](joins.md).
 
@@ -567,13 +566,15 @@ A few dictionary words end in a bare tail instead of a second root. *Friend* is 
 | Agebon | Pieces | English |
 |--------|--------|---------|
 | `zahuyayol` | *hug* + `yo` | friend |
+| `zobahohal` | *bed* + `ha` | bedroom |
+| `zubezozal` | *bird* + `za` | flock |
 | `zevogoyol` | *flag* + `yo` | citizen |
 | `zehahayol` | *hut* + `yo` | neighbor |
 | `zogewoyol` | *camera* + `yo` | celebrity |
 
 The left piece is always a five-letter root, and there is no join letter: five letters, then the tail, then the ending. The tail vowel does the same jobs as on a root: **a** the thing holds or gathers the left, **o** it is one thing marked by the left, **e** it follows the left in order or along a path, **u** it takes the left away or works against it. The tail consonant is any kind but nature `l`, mind `m`, counting `r` and countries `n`; those words take a full second root.
 
-When the thing is a more specific kind than its tail, the dictionary word keeps two full roots: *bedroom* ends in *room*, not in a bare place tail.
+When the thing is a more specific kind than its tail, the dictionary word keeps two full roots: *doorbell* ends in *bell*, not in a bare tool tail.
 
 Like every dictionary word, you look these up. You never add a tail to a root on the spot; to join two meanings yourself, use **`x`**.
 

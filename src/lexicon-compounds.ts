@@ -144,7 +144,7 @@ export function parseCompoundCsv(text: string): CompoundRow[] {
   }));
 }
 
-/** All published-root splits `L + join + R` that equal `stem`, 3 + join + 3 included (the suffix lint needs it). */
+/** All published-root splits `L + join + R` that equal `stem`. */
 export function factorizationsForStem(
   stem: string,
   publishedRoots: ReadonlySet<string>,
@@ -218,9 +218,6 @@ export function validateCompoundRows(
     if (suffix) {
       if (left.length !== 5) {
         errors.push({ row: rowNum, stem, reason: `a tail suffix takes a five-letter left root (got ${left})` });
-      }
-      for (const f of factorizationsForStem(stem, publishedRoots)) {
-        errors.push({ row: rowNum, stem, reason: `suffix stem also reads ${f.left}+${f.join}+${f.right}` });
       }
     } else if (hookRight) {
       if (join !== "l" && join !== "m") {

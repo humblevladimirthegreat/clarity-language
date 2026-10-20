@@ -324,11 +324,11 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | Agebon | English | Abstract (**-m**) |
 |--------|---------|-------------------|
 | `abahalagedal` | *picnic* |  |
-| `abahamobel` | *refugee* |  |
+| `abahayol` | *refugee* |  |
 | `abalobobol` | *shoulder* |  |
 | `abebalahebal` | *palm-of-hand* |  |
 | `abebamamol` | *donation* |  |
-| `abebululol` | *first-aid-kit* |  |
+| `abebuwal` | *first-aid-kit* |  |
 | `abevalozel` | *detective-story* |  |
 | `abewamodudal` | *energy-drink* |  |
 | `abezulogulal` | *silk* |  |
@@ -348,7 +348,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `adalelayayal` | *forest* |  |
 | `adalelezedel` | *twig* |  |
 | `adalelubezol` | *woodpecker* |  |
-| `adalemobel` | *adult* |  |
+| `adaleyol` | *adult* |  |
 | `adazulabolol` | *fern* |  |
 | `adazularolol` | *fossil* |  |
 | `adebelawebol` | *taste* |  |
@@ -359,25 +359,25 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `adorelemulol` | *brass* |  |
 | `adowolugul` | *audiobook* |  |
 | `adugumobobol` | *elbow* |  |
+| `aduhehol` | *basement* |  |
 | `aduhelevemol` | *chin* |  |
-| `aduhelurahal` | *basement* |  |
 | `adumamuwolal` | *thirst* |  |
 | `adurulagedal` | *dinner* |  |
 | `adurulenurul` | *evening* |  |
 | `aduyelagahel` | *ministry* |  |
-| `aduyelayayal` | *council* |  |
+| `aduyeyal` | *council* |  |
 | `agahaluvaval` | *camper* |  |
-| `agahelayayal` | *political-party* |  |
 | `agahelehohal` | *cathedral* |  |
 | `agahemamol` | *tax* |  |
+| `agaheyal` | *political-party* |  |
 | `agalalehaval` | *spaceship* |  |
 | `agayuludozol` | *guard-dog* |  |
 | `agazalahehal` | *barn* |  |
-| `agazalayayal` | *herd* |  |
 | `agazalazuwal` | *moo* |  |
 | `agazalogulal` | *leather* |  |
 | `agazalomudol` | *beef* |  |
 | `agazalovehal` | *pasture* |  |
+| `agazazal` | *herd* |  |
 | `agebomezuyel` | *explanation* |  |
 | `agedalahehal` | *restaurant* |  |
 | `agedalezedel` | *chopsticks* |  |
@@ -415,7 +415,6 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ahehalabolol` | *houseplant* |  |
 | `ahehalamol` | *mortgage* |  |
 | `ahehalanobal` | *roof* |  |
-| `ahehalanozal` | *pet* |  |
 | `ahehaledovol` | *dollhouse* |  |
 | `ahehalegulal` | *floor* |  |
 | `ahehalezahel` | *apartment* |  |
@@ -423,9 +422,10 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ahehalovehal` | *yard* |  |
 | `ahehaluhobal` | *slipper* |  |
 | `ahehaluwul` | *lumber* |  |
-| `ahehamobel` | *resident* |  |
 | `ahehamoderol` | *rent* |  |
 | `ahehamogugal` | *environment* |  |
+| `ahehayol` | *resident* |  |
+| `ahehazol` | *pet* |  |
 | `ahelogemul` | *fridge* |  |
 | `ahohalodahal` | *mall* |  |
 | `aholazurel` | *noon* |  |
@@ -448,9 +448,9 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `alayelamol` | *pension* |  |
 | `alayelenuvol` | *retirement* |  |
 | `aledalubelal` | *parsley* |  |
-| `alobamayayal` | *panel* |  |
 | `alobamezuyel` | *jargon* |  |
 | `alobamulayel` | *veteran* |  |
+| `alobayal` | *panel* |  |
 | `alowelabezul` | *firefly* |  |
 | `alowolovewol` | *smartphone* |  |
 | `alululazuwal` | *thunder* |  |
@@ -473,8 +473,8 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `amezomebogel` | *paragraph* |  |
 | `amezomewahal` | *clinic* |  |
 | `amezomezuyel` | *summary* |  |
-| `amezomobel` | *dwarf* |  |
 | `amezomozel` | *anecdote* |  |
+| `amezoyol` | *dwarf* |  |
 | `amolabolol` | *investment* |  |
 | `amolamuyal` | *employment* |  |
 | `amolayuhel` | *inflation* |  |
@@ -493,7 +493,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `anelalanedal` | *chewing-gum* |  |
 | `anelalodudal` | *soda* |  |
 | `anelaluwolal` | *sparkling-water* |  |
-| `anemulayayal` | *mob* |  |
+| `anemuyal` | *mob* |  |
 | `anewulamugol` | *surgery* |  |
 | `anewulewowul` | *dagger* |  |
 | `anobalahel` | *lid* |  |
@@ -523,7 +523,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `aruyeludul` | *test-tube* |  |
 | `avahularolol` | *lava* |  |
 | `avalulerulal` | *drizzle* |  |
-| `avayalayayal` | *tribe* |  |
+| `avayayal` | *tribe* |  |
 | `avedolozodal` | *guacamole* |  |
 | `avelabolol` | *ivy* |  |
 | `avelamahul` | *cliff* |  |
@@ -553,11 +553,11 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `avululudul` | *chimney* |  |
 | `avululuwul` | *firewood* |  |
 | `avuvamugul` | *yearbook* |  |
-| `avuvulayayal` | *army* |  |
 | `avuvulovehal` | *battlefield* |  |
+| `avuvuyal` | *army* |  |
 | `avuyalahehal` | *farmhouse* |  |
-| `avuyalanozal` | *livestock* |  |
 | `avuyalubezol` | *poultry* |  |
+| `avuyazal` | *livestock* |  |
 | `awayalogahal` | *abortion* |  |
 | `awayalurobol` | *womb* |  |
 | `awebolabebul` | *eyepatch* |  |
@@ -567,16 +567,16 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `awudaluwul` | *cork* |  |
 | `awuloladalel` | *birch* |  |
 | `awuloleredol` | *cauliflower* |  |
-| `awuvomayayal` | *crowd* |  |
+| `awuvoyal` | *crowd* |  |
+| `ayabahal` | *bathroom* |  |
 | `ayabalogobal` | *bathrobe* |  |
 | `ayabalogulal` | *towel* |  |
-| `ayabalurahal` | *bathroom* |  |
+| `ayayahal` | *hall* |  |
 | `ayayamaduyel` | *committee* |  |
 | `ayayamezemul` | *epidemic* |  |
-| `ayayamurahal` | *hall* |  |
 | `ayowalehaval` | *tanker* |  |
 | `ayowaludaval` | *tanker truck* |  |
-| `ayuhelurahal` | *attic* |  |
+| `ayuhehol` | *attic* |  |
 | `ayulelazudal` | *turmeric* |  |
 | `azadalegudal` | *lettuce* |  |
 | `azadalozodal` | *dressing* |  |
@@ -620,11 +620,11 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ebobomolawel` | *argument* | `ebobomolawem` *logic* |
 | `ebobomulewel` | *valid* | `ebobomulewem` *validity* |
 | `ebobomunewul` | *counterexample* |  |
+| `ebodohal` | *pantry* |  |
 | `ebodolahohal` | *bakery* |  |
 | `ebodolanewul` | *bread-knife* |  |
 | `ebodolegel` | *toaster* |  |
 | `ebodologelal` | *wheat* |  |
-| `ebodomurahal` | *pantry* |  |
 | `ebogalabezul` | *wasp* |  |
 | `ebogalemulol` | *foil* |  |
 | `ebogalobogal` | *carton* |  |
@@ -632,10 +632,10 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ebohaloderol` | *postage* |  |
 | `ebowularolol` | *ore* |  |
 | `ebowumehaval` | *submarine* |  |
+| `eboyehal` | *nursery* |  |
 | `eboyelawodal` | *baby-bottle* |  |
 | `eboyelebobal` | *diaper* |  |
 | `eboyelogowal` | *stroller* |  |
-| `eboyelurahal` | *nursery* |  |
 | `ebubalabohal` | *blood-bank* |  |
 | `ebubaludul` | *vein* |  |
 | `ebuhelamol` | *refund* |  |
@@ -694,9 +694,9 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ehavalabahal` | *harbor* |  |
 | `ehavalagahel` | *navy* |  |
 | `ehavalahehal` | *port* |  |
-| `ehavalayayal` | *crew* |  |
 | `ehavaluhul` | *logbook* |  |
 | `ehavamuvahol` | *tourism* |  |
+| `ehavayal` | *crew* |  |
 | `ehazolugoral` | *density* |  |
 | `ehedolegodol` | *cheesecake* |  |
 | `ehedolonudal` | *mac-and-cheese* |  |
@@ -706,14 +706,14 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ehobaleyobal` | *pocket* |  |
 | `ehobolabezul` | *louse* |  |
 | `ehobolezemul` | *headache* |  |
-| `ehobulobel` | *soldier* |  |
-| `ehohalayayal` | *congregation* |  |
+| `ehobuyul` | *soldier* |  |
 | `ehohalezuyel` | *sermon* |  |
 | `ehohaludurel` | *hymn* |  |
 | `ehohalugul` | *scripture* |  |
 | `ehohaluzahal` | *seminary* |  |
 | `ehohamagahel` | *denomination* |  |
 | `ehohameruyel` | *god* |  |
+| `ehohayal` | *congregation* |  |
 | `ehohulovehal` | *cemetery* |  |
 | `eholerowol` | *podcast* |  |
 | `ehorelezuyel` | *poetry* |  |
@@ -727,20 +727,20 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `elazoludebul` | *tusk* |  |
 | `elazomagedal` | *feast* |  |
 | `elazomarolol` | *boulder* |  |
-| `elazomobel` | *giant* |  |
+| `elazoyol` | *giant* |  |
 | `eledalazudal` | *paprika* |  |
 | `eledulodudal` | *lemonade* |  |
 | `eleduluvodal` | *citrus* |  |
 | `elelabeval` | *crossword* |  |
 | `elelarayel` | *spell* |  |
 | `eleluzahal` | *primary-school* |  |
-| `elewulobel` | *prisoner* |  |
 | `elewulugahal` | *locker* |  |
 | `elewumahehal` | *prison* |  |
+| `elewuyol` | *prisoner* |  |
 | `elogalebogel` | *letter* |  |
 | `elomamurobol` | *genitals* |  |
 | `elowulebaval` | *lifeboat* |  |
-| `eluvolurahal` | *gym* |  |
+| `eluvohal` | *gym* |  |
 | `emaheladel` | *passport* |  |
 | `emalemuzel` | *evolution* |  |
 | `emodalavodal` | *kiln* |  |
@@ -763,10 +763,10 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `enurulubezel` | *moth* |  |
 | `enurululowal` | *night-light* |  |
 | `enuruluzahal` | *night-school* |  |
-| `enurumobel` | *stranger* |  |
+| `enuruyol` | *stranger* |  |
 | `enuyalamol` | *inheritance* |  |
 | `enuyalebogel` | *testament* |  |
-| `enuyamobel` | *aristocrat* |  |
+| `enuyayol` | *aristocrat* |  |
 | `erebelunobel` | *bow-tie* |  |
 | `eredaloludal` | *gin* |  |
 | `erozolubezol` | *hawk* |  |
@@ -787,14 +787,14 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `evemoluvogal` | *portrait* |  |
 | `everelazahal` | *championship* |  |
 | `eveyolozel` | *fairy-tale* |  |
-| `evezalayayal` | *shoal* |  |
 | `evezalezedel` | *fishing-rod* |  |
 | `evezalurobol` | *gill* |  |
+| `evezazal` | *shoal* |  |
 | `evobulomuyel` | *groom* |  |
 | `evobuluwayel` | *bride* |  |
-| `evobumobel` | *spouse* |  |
 | `evobumomuyel` | *husband* |  |
 | `evobumuwayel` | *wife* |  |
+| `evobuyol` | *spouse* |  |
 | `evogoyol` | *citizen* |  |
 | `evolebaval` | *fishing boat* |  |
 | `evolevulal` | *fishing-line* |  |
@@ -852,8 +852,8 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ezobumunogal` | *obituary* |  |
 | `ezoremahehal` | *courthouse* |  |
 | `ezoremarayel` | *legislation* |  |
-| `ezoremobel` | *lawyer* |  |
 | `ezoremuzahal` | *law-school* |  |
+| `ezoreyol` | *lawyer* |  |
 | `ezozulazuwal` | *hiss* |  |
 | `ezozulevezal` | *eel* |  |
 | `ezozuludebul` | *fang* |  |
@@ -870,17 +870,17 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ezuyelovul` | *meaning* |  |
 | `ezuyelugul` | *dictionary* |  |
 | `ezuyelumel` | *grammar* |  |
-| `ezuyemayayal` | *conference* |  |
-| `ezuyolayayal` | *choir* |  |
+| `ezuyeyal` | *conference* |  |
+| `ezuyoyal` | *choir* |  |
 | `ezuyulogobal` | *cape* |  |
 | `ezuyumozel` | *epic* |  |
+| `obahohal` | *bedroom* | `obahoham` *sanctum* |
 | `obaholadurel` | *bedtime* |  |
 | `obaholahehal` | *dormitory* |  |
 | `obaholamobal` | *sleeping-bag* |  |
 | `obaholeraval` | *sleeping car* |  |
 | `obahologulal` | *bedsheet* |  |
 | `obaholozel` | *bedtime-story* |  |
-| `obaholurahal` | *bedroom* | `obaholuraham` *sanctum* |
 | `obaholuzahal` | *boarding-school* |  |
 | `obaluvobel` | *paw* |  |
 | `obayelahehal` | *police-station* |  |
@@ -895,19 +895,19 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `obeledovol` | *doll* |  |
 | `obeveluguval` | *chess* |  |
 | `obewelahehal` | *gallery* |  |
-| `obezalayayal` | *swarm* |  |
 | `obezalazuwal` | *buzz* |  |
+| `obezazal` | *swarm* |  |
 | `obobolabebul` | *sling* |  |
 | `obobomegudal` | *spinach* |  |
 | `obobomehowol` | *sledgehammer* |  |
 | `obobomugudal` | *espresso* |  |
 | `obodalorudal` | *fried-rice* |  |
+| `obogahal` | *storeroom* |  |
 | `obogalahehal` | *warehouse* |  |
 | `obogalebogal` | *cardboard* |  |
 | `obogaledavel` | *freight train* |  |
 | `obogalehaval` | *freighter* |  |
 | `obogaluhul` | *inventory* |  |
-| `obogalurahal` | *storeroom* |  |
 | `obolabebul` | *plaster-cast* |  |
 | `obolenemul` | *fracture* |  |
 | `oboromozel` | *folktale* |  |
@@ -943,7 +943,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `oduremevumul` | *panic* |  |
 | `ogahalezuyel` | *eulogy* |  |
 | `ogahamuwural` | *divorce* |  |
-| `ogebelulol` | *rake* |  |
+| `ogebewal` | *rake* |  |
 | `ogedalebodol` | *cornbread* |  |
 | `ogelaladahel` | *silo* |  |
 | `ogelalamobal` | *sack* |  |
@@ -960,7 +960,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ogobulobebul` | *antidote* |  |
 | `ogobumomelol` | *toadstool* |  |
 | `ogodalomudal` | *coconut-milk* |  |
-| `ogorolayayal` | *band* |  |
+| `ogoroyal` | *band* |  |
 | `ogowalodahal` | *supermarket* |  |
 | `ogowulazugel` | *hint* |  |
 | `ogowulezuyel` | *whisper* |  |
@@ -985,7 +985,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ohohulawebol` | *pupil* |  |
 | `ohohuledavel` | *subway* |  |
 | `ohohulonebol` | *nostril* |  |
-| `ohohululol` | *drill* |  |
+| `ohohuwul` | *drill* |  |
 | `ohomumamol` | *bribe* |  |
 | `ohovaluvodal` | *pumpkin* |  |
 | `ohovamuguval` | *hide-and-seek* |  |
@@ -1006,10 +1006,10 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `omezulezemul` | *malaria* |  |
 | `omezumabolol` | *weed* |  |
 | `omobalebogel` | *diploma* |  |
-| `omudalanozal` | *mammal* |  |
 | `omudalonedul` | *almond* |  |
 | `omudalugudal` | *latte* |  |
 | `omudaluyudal` | *cream* |  |
+| `omudazol` | *mammal* |  |
 | `omudolahohal` | *butcher-shop* |  |
 | `omudolanewul` | *cleaver* |  |
 | `omudolozodal` | *gravy* |  |
@@ -1018,12 +1018,12 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `onedulazudal` | *nutmeg* |  |
 | `onuromugul` | *music-album* |  |
 | `onuvolulobel` | *knee* |  |
+| `orahehel` | *corridor* |  |
 | `orahelarolol` | *gravel* |  |
 | `oraheledavel` | *tram* |  |
 | `oraheloderol` | *toll* |  |
 | `orahelohohul` | *tunnel* |  |
 | `orahelulowal` | *streetlight* |  |
-| `orahelurahal` | *corridor* |  |
 | `orebolobogal` | *jewelry-box* |  |
 | `orowoluraval` | *drone* |  |
 | `orudalonudal` | *rice-noodles* |  |
@@ -1034,7 +1034,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `oruyulamol` | *loot* |  |
 | `oruyulehaval` | *pirate ship* |  |
 | `ovahaladahel` | *skyscraper* |  |
-| `ovahalayayal` | *staff* |  |
+| `ovahayal` | *staff* |  |
 | `ovebolobol` | *knuckle* |  |
 | `ovebolugebal` | *mittens* |  |
 | `ovedolazudal` | *cumin* |  |
@@ -1054,15 +1054,15 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ovevulevulal` | *fuse* |  |
 | `ovewoludurel` | *ringtone* |  |
 | `ovobumegel` | *air-conditioner* |  |
-| `ovorolayayal` | *orchestra* |  |
+| `ovoroyal` | *orchestra* |  |
 | `ovulezuyel` | *advice* |  |
 | `ovumunogal` | *editorial* |  |
 | `ovuyulagahel` | *fire-brigade* |  |
 | `owedolugedol` | *wafer* |  |
 | `owodoluvodal` | *melon* |  |
 | `owowuludaval` | *garbage truck* |  |
-| `owozulayayal` | *wolfpack* |  |
 | `owozulazuwal` | *howl* |  |
+| `owozuzal` | *wolfpack* |  |
 | `oyelaboral` | *doorbell* |  |
 | `oyelawebol` | *eyelid* |  |
 | `oyelurahal` | *lobby* |  |
@@ -1109,8 +1109,8 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ubewomegel` | *generator* |  |
 | `ubezelabezul` | *caterpillar* |  |
 | `ubezolamebal` | *beak* |  |
-| `ubezolayayal` | *flock* |  |
 | `ubezoludurel` | *birdsong* |  |
+| `ubezozal` | *flock* |  |
 | `ubowalogulal` | *canvas* |  |
 | `ubowulegel` | *vacuum-cleaner* |  |
 | `ubowumogulal` | *rag* |  |
@@ -1146,8 +1146,8 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `udumahehal` | *laboratory* |  |
 | `uduvuluraval` | *fighter jet* |  |
 | `uduvumagahel` | *military* |  |
-| `uduyelayayal` | *faculty* |  |
 | `uduyelezuyel` | *lecture* |  |
+| `uduyeyal` | *faculty* |  |
 | `ugahalobogal` | *drawer* |  |
 | `ugalalanedal` | *marshmallow* |  |
 | `ugalalogulal` | *cotton* |  |
@@ -1157,7 +1157,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ugaroludurel` | *carol* |  |
 | `ugedalebodol` | *muffin* |  |
 | `ugedolebodol` | *biscuit* |  |
-| `ugezululol` | *pliers* |  |
+| `ugezuwal` | *pliers* |  |
 | `ugobelagoyel` | *princess* |  |
 | `ugobelahehal` | *palace* |  |
 | `ugobelomuyel` | *king* |  |
@@ -1182,12 +1182,12 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ugumerewol` | *technology* |  |
 | `uguvalagevol` | *playing-card* |  |
 | `uguvalugol` | *token* |  |
+| `uguyehal` | *kitchen* |  |
 | `uguyelanobal` | *chef-hat* |  |
 | `uguyelebogel` | *recipe* |  |
 | `uguyeludobal` | *apron* |  |
 | `uguyelugul` | *cookbook* |  |
-| `uguyelurahal` | *kitchen* |  |
-| `uguyolayayal` | *guild* |  |
+| `uguyoyal` | *guild* |  |
 | `uhavalabezul` | *dragonfly* |  |
 | `uhewaludaval` | *tow truck* |  |
 | `uhomumahoyel` | *orphan* |  |
@@ -1197,7 +1197,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `uhuralugol` | *cent* |  |
 | `uhuyelabeval` | *lawsuit* |  |
 | `uhuyelagahel` | *law-court* |  |
-| `uhuyelayayal` | *jury* |  |
+| `uhuyeyal` | *jury* |  |
 | `uhuyulahohal` | *barbershop* |  |
 | `ulamalegulel` | *favorite* |  |
 | `ulamalehazol` | *popularity* |  |
@@ -1207,7 +1207,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ulavelorahel` | *bike-path* |  |
 | `ulayemezuyel` | *proverb* |  |
 | `uleduleredal` | *cranberry* |  |
-| `ulewelayayal` | *alliance* |  |
+| `uleweyal` | *alliance* |  |
 | `ulobelabedel` | *ham* |  |
 | `ulobelazel` | *stockings* |  |
 | `ulobeluvobel` | *ankle* |  |
@@ -1234,10 +1234,10 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `unedolozodal` | *syrup* |  |
 | `unewumamol` | *ransom* |  |
 | `unezalamahul` | *anthill* |  |
-| `unezalayayal` | *colony* |  |
+| `unezazal` | *colony* |  |
 | `unobaluwolal` | *puddle* |  |
 | `unogalulowal` | *reading-lamp* |  |
-| `unomumobel` | *enemy* |  |
+| `unomuyul` | *enemy* |  |
 | `unuvulugebal` | *boxing-gloves* |  |
 | `uravalagahel` | *air-force* |  |
 | `uravalehaval` | *aircraft carrier* |  |
@@ -1250,7 +1250,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `uruyelezuyel` | *oath* |  |
 | `uvahalavalul` | *smog* |  |
 | `uvahamuzubal` | *efficiency* |  |
-| `uvaholurahal` | *living-room* |  |
+| `uvahohal` | *living-room* |  |
 | `uvebelewulel` | *breeze* |  |
 | `uvedalozodal` | *ketchup* |  |
 | `uvobelanuvul` | *kick* |  |
@@ -1271,13 +1271,13 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `uwamumezemul` | *hangover* |  |
 | `uwewelebalol` | *candlelight* |  |
 | `uwewelevulal` | *wick* |  |
+| `uwodahal` | *dining-room* |  |
 | `uwodalebogel` | *menu* |  |
 | `uwodalegel` | *dishwasher* |  |
 | `uwodaleraval` | *dining car* |  |
 | `uwodalogulal` | *napkin* |  |
 | `uwodalugahal` | *cupboard* |  |
 | `uwodalugudel` | *counter* |  |
-| `uwodalurahal` | *dining-room* |  |
 | `uwodamamol` | *tip* |  |
 | `uwoholevobul` | *curtain* |  |
 | `uwoholubol` | *drinking-glass* |  |
@@ -1296,7 +1296,7 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `uwululowal` | *torch* |  |
 | `uwuralegodol` | *wedding-cake* |  |
 | `uwuraludobal` | *wedding-dress* |  |
-| `uwuvamayayal` | *league* |  |
+| `uwuvayal` | *league* |  |
 | `uyazalubezol` | *ostrich* |  |
 | `uyedolazadal` | *potato-salad* |  |
 | `uyedololudal` | *vodka* |  |
@@ -1306,13 +1306,13 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `uyudalugedol` | *shortbread* |  |
 | `uyulalanobal` | *beanie* |  |
 | `uyulalehobal` | *sweater* |  |
+| `uzahahol` | *classroom* |  |
 | `uzahalahoyel` | *schoolchild* |  |
 | `uzahalevahul` | *graduate* |  |
 | `uzahaloderol` | *tuition* |  |
 | `uzahalovehal` | *campus* |  |
 | `uzahalubaval` | *school bus* |  |
 | `uzahalugul` | *textbook* | `uzahalugum` *canon* |
-| `uzahalurahal` | *classroom* |  |
 | `uzalelagedal` | *lunch* |  |
 | `uzalelagorel` | *sundial* |  |
 | `uzalelebalol` | *sunlight* |  |
@@ -1328,9 +1328,9 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `uzomulehubal` | *eyebrow* |  |
 | `uzowulemulol` | *steel* |  |
 | `uzowumehaval` | *warship* |  |
-| `uzubalayayal` | *trade-union* |  |
+| `uzubayal` | *trade-union* |  |
 | `uzudalobodal` | *pot* |  |
 | `uzudalubelal` | *thyme* |  |
 | `uzudamegal` | *boiled-egg* |  |
-| `uzuyulayayal` | *gang* |  |
+| `uzuyuyal` | *gang* |  |
 <!-- /generated -->

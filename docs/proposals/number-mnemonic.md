@@ -73,7 +73,7 @@ So the role letter, the ending and every coda sit outside the root. Read only th
 
 ### Dictionary compounds
 
-A [dictionary compound](../grammar/compounds.md#lexical-compounds) is one stem: left root + join letter + head root. The join letter (**l / m / n / r**) **counts**: it is spelled and heard like any root letter, so decoding never needs to know where the seam is. `zobaholurahal` *bedroom* is **b d l r h** → **12786**.
+A [dictionary compound](../grammar/compounds.md#lexical-compounds) is one stem: left root + join letter + head root. The join letter (**l / m / n / r**) **counts**: it is spelled and heard like any root letter, so decoding never needs to know where the seam is. `zobahohal` *bedroom* is **b d l r h** → **12786**.
 
 A compound has three or more onsets, so it doesn't fit a fixed-length slot. Compounds are optional long pegs for a palace slot set to their own length. They aren't part of the canonical bank.
 
