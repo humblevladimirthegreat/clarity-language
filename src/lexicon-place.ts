@@ -16,7 +16,7 @@ import { HOLDER_HOST_KINDS } from "./parse/classify.ts";
 import { isExtraNounHook } from "./parse/hook-compounds.ts";
 import { placeRoot } from "./place-root.ts";
 import { REPO_ROOT } from "./repo-paths.ts";
-import { holderHostForms, hookClash, PLACE_KIND, sizeFieldError, tailFieldsError, type Kind, type Shape, type Size } from "./root-tails.ts";
+import { holderHostForms, PLACE_KIND, sizeFieldError, tailFieldsError, type Kind, type Shape, type Size } from "./root-tails.ts";
 import { placeTailRoots, tailCompounds, type TailPlaceRow } from "./root-tails-place.ts";
 
 const FREQ_FILE = join(REPO_ROOT, "tmp", "en_50k.txt");
@@ -197,7 +197,7 @@ function holderGrades(row: PlaceRow, overlays: readonly OverlayRow[]): string[] 
 
 /**
  * Checks the placed roots must pass against roots that stay put (`staticRoots`: kept rows and
- * place-name roots), as hard rules for the short anneal: the hook check and the holder check against
+ * place-name roots), as hard rules for the short anneal: the holder check against
  * kept five-letter roots, and no listed compound with a second split. Compounds with a five-letter
  * member being re-placed are left to the five-letter placer, which sees the final short roots.
  */
@@ -215,9 +215,6 @@ export function shortRootGuards(
     if (!reasons.has(form)) reasons.set(form, reason);
     guards.bans.set(i, reasons);
   };
-
-  // A kept l / m-second root whose onset is a short root reads as that root + join + hook.
-  for (const root of keptLong) if (hookClash(root, poolSet)) guards.blocked.add(root.slice(0, 3));
 
   // A short row's new holder host must not start a kept five-letter root.
   const keptStarts = new Set(keptLong.map((root) => root.slice(0, 4)));

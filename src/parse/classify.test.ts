@@ -290,6 +290,12 @@ describe("classify", () => {
     assert.equal(word.rootGloss?.concrete, "walk");
   });
 
+  it("a three-letter root + ending + hook is not a hook compound", () => {
+    // Only a five-letter root fuses (hooks.md#hook-compounds): `map` + l + `ul` stays unread.
+    const word = classifyText(`v${CLOSED.map}lul`);
+    assert.equal(word.hookCompound, undefined);
+  });
+
   it("a five-letter root with l second takes its ending, not a hook", () => {
     // `ehalo` + -l spells `eha` + l + hook `ol`; only the five-letter root is in the lexicon.
     const word = expectReading(`z${CLOSED.hibiscus}l`, "ordinary");

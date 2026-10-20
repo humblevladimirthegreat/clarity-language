@@ -4,13 +4,13 @@ import { describe, it } from "node:test";
 import { emptyPosEnglish, parseOverlayCsv, parsePublishedCsv, type PublishedRow } from "./lexicon-search.ts";
 import { readData } from "./repo-paths.ts";
 import { decode, encode, firstConsonant, placeTailRoots } from "./root-tails-place.ts";
-import { evenSpreadPairs, holderClash, holderHostForms, hookClash, tailMetrics, tailOf, validateRootTails } from "./root-tails.ts";
+import { evenSpreadPairs, holderClash, holderHostForms, tailMetrics, tailOf, validateRootTails } from "./root-tails.ts";
 
 const published = (emoji: string, concrete: string, root: string, kind = "", shape = "", size = ""): PublishedRow =>
   ({ emoji, concrete, root, kind, shape, size, abstract: "", mnemonic: "", englishByPos: "", posEnglish: emptyPosEnglish() });
 
 describe("lexicon-published.csv tails", () => {
-  it("gives every five-letter row a kind, a shape and a root in its tail, clear of the hook and holder checks", () => {
+  it("gives every five-letter row a kind, a shape and a root in its tail, clear of the holder check", () => {
     const errors = validateRootTails(
       parsePublishedCsv(readData("lexicon-published.csv")),
       holderHostForms(parseOverlayCsv(readData("lexicon-overlays.csv"))),
@@ -23,14 +23,6 @@ describe("tails", () => {
   it("spells a tail from kind and shape", () => {
     assert.equal(tailOf("creature", "order"), "ze");
     assert.equal(tailOf("tool", "takes-away"), "wu");
-  });
-
-  it("flags an l / m second consonant behind a three-letter onset", () => {
-    const short = new Set(["aba"]);
-    assert.ok(hookClash("abala", short));
-    assert.ok(hookClash("abamo", short));
-    assert.ok(!hookClash("abana", short));
-    assert.ok(!hookClash("ebala", short));
   });
 
   it("flags a root that starts with a /th/ holder host form", () => {
@@ -90,9 +82,10 @@ describe("validateRootTails", () => {
     assert.ok(reasons([france!, published("🇫🇮", "finland-flag", "avranza", "named")]).some((r) => r.includes("is also 🇫🇷's")));
   });
 
-  it("rejects a root outside its tail and a hook clash", () => {
+  it("rejects a root outside its tail, but not a three-letter onset", () => {
     assert.ok(reasons([{ ...cat!, root: "ubeza" }]).some((r) => r.includes("does not end in its tail zo")));
-    assert.ok(reasons([published("🌳", "tree", "abale", "nature", "order", "big"), star!]).some((r) => r.includes("reads as aba + join + hook")));
+    // Only a five-letter root fuses with a hook, so `abale` + -l never reads as `aba` + l + hook `el`.
+    assert.deepEqual(reasons([published("🌳", "tree", "abale", "nature", "order", "big"), star!]), []);
   });
 });
 
@@ -142,7 +135,7 @@ describe("tailMetrics", () => {
 });
 
 describe("placeTailRoots", () => {
-  it("places every row in its tail, apart, and clear of the hook check", () => {
+  it("places every row in its tail, and apart", () => {
     const rows = [
       ...Array.from({ length: 30 }, (_, i) => ({ kind: "nature" as const, shape: "one" as const, cmu: "" })),
       ...Array.from({ length: 10 }, () => ({ kind: "sign" as const, shape: "order" as const, cmu: "" })),
@@ -151,10 +144,7 @@ describe("placeTailRoots", () => {
     const { roots, unmet } = placeTailRoots({ rows, shortRoots, compounds: [], steps: 20_000 });
     assert.deepEqual(unmet, []);
     assert.equal(new Set(roots).size, roots.length);
-    roots.slice(0, 30).forEach((root) => {
-      assert.match(root, /^[aeou][bdghylmnrvwz][aeou]lo$/);
-      assert.ok(!shortRoots.has(root.slice(0, 3)), root);
-    });
+    roots.slice(0, 30).forEach((root) => assert.match(root, /^[aeou][bdghylmnrvwz][aeou]lo$/));
     roots.slice(30).forEach((root) => assert.match(root, /^[aeou][bdghylmnrvwz][aeou]ge$/));
     // 30 rows of one kind fit in its 48 first-two-letter prefixes, so none share them.
     assert.equal(new Set(roots.slice(0, 30).map((root) => root.slice(0, 2))).size, 30);

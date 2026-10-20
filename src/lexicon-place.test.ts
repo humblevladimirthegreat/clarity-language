@@ -122,14 +122,15 @@ describe("placement", () => {
     assert.ok(!shortRootCandidates("AA1 R").includes("are"));
   });
 
-  it("keeps a short root off the onset of a kept l / m-second root", async () => {
+  it("lets a short root start a kept l / m-second root", async () => {
+    // Only a five-letter root fuses with a hook, so `abu` beside `abula` makes no hook compound.
     const placed = await placePublishedRoots([{ emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "" }], [overlay], {
-      blocked: shortBut("abu", "ezo"),
+      blocked: shortBut("abu"),
       kept: [{ emoji: "🌹", root: "abula" }],
       annealRestarts: 1,
       annealSteps: 200,
     });
-    assert.equal(placed[0]!.root, "ezo");
+    assert.equal(placed[0]!.root, "abu");
   });
 
   it("checks five-letter rows against a moved short root's new holder host", async () => {

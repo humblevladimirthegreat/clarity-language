@@ -8,7 +8,7 @@ The root-tails retie (2026-10-20: 1345 respelled roots, 17 of them closed roots)
 
 ## Before the retie {#before}
 
-- **Seams the new spellings open.** After `convert-word --lexicon` and before the retie, run `npm test`: it checks the hook and holder checks (`src/root-tails.test.ts`), listed compounds (`check-compounds`), and `glossCollisions` over the whole lexicon (`lexicon-published-lint.test.ts`). A seam no rule names yet shows there as two forms with one gloss label (`thuguromalerol` / `thuguromalerom`, which was the holder seam). Fix it in placement, then rerun `convert-word --lexicon`.
+- **Seams the new spellings open.** After `convert-word --lexicon` and before the retie, run `npm test`: it runs the holder check (`src/root-tails.test.ts`), listed compounds (`check-compounds`), and `glossCollisions` over the whole lexicon (`lexicon-published-lint.test.ts`). A seam no rule names yet shows there as two forms with one gloss label (`thuguromalerol` / `thuguromalerom`, which was the holder seam). Fix it in placement, then rerun `convert-word --lexicon`.
 - **Spelling-rule passes** (`j` → `y`) go before `convert-word --lexicon` or after the retie, never between: the map's old spellings must still parse.
 - **Run the dry run first** and read every line marked `blocking`, `warning` and `review` before `--write`.
 

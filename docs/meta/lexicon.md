@@ -18,7 +18,7 @@ A hand-picked spelling bypasses the checks that placement runs. Placement:
 
 - keeps a row's root length, and gives a new row three letters only when it is overlay-backed ([root length](#root-length))
 - builds a five-letter root's last two letters from the row's `kind` and `shape` ([root tails](#root-tails)), and picks its first three letters to keep same-kind roots apart ([onset](#onset))
-- skips roots already held by other rows and stems used in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv), and any root that would give a listed or hook compound a second split ([seams](#seams)). A new three-letter root also clears the hook and holder checks against the five-letter roots that stay put; five-letter rows placed in the same run are checked against the new three-letter spellings.
+- skips roots already held by other rows and stems used in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv), and any root that would give a listed or hook compound a second split ([seams](#seams)). A new three-letter root also clears the holder check against the five-letter roots that stay put; five-letter rows placed in the same run are checked against the new three-letter spellings.
 - never spells a root with an English word the doc lint reads as English in code (*are*), since the retie refuses one
 - rewrites the overlay and compound rows that spell the old root, and writes `tmp/lexicon-retie-map.json` for `retie-docs`
 - prints the root-tails report (`npm run convert-word -- --report` prints it alone)
@@ -133,7 +133,9 @@ Rows are placed greedily in CSV order, then annealed; the run is seeded, so the 
 A five-letter root may have any consonant second, so two seams read by knowing the roots rather than by letter position. Placement keeps each to one reading, and `npm test` and `check-compounds` check both:
 
 - **Nine-letter dictionary words.** A stem is 3 + join + 5 or 5 + join + 3, and with **l / m / n / r** second both can fit. `validateCompoundRows` rejects a listed stem with two published-root splits, and placement skips a root that would make one.
-- **Hook compounds.** A five-letter root with **l** or **m** second, plus **-l** or **-m**, spells the same letters as a three-letter root + ending + two-letter hook. The parser reads a hook compound only on a dictionary root ([hooks.md § hook compounds](../grammar/hooks.md#hook-compounds)), and placement never gives such a root an onset that is a three-letter root. A `/th/` holder host form (`ugur`) is never a root's first four letters either.
+- **Holder hosts.** A five-letter root whose first four letters are a `/th/` holder host form (`ugur`) would read on `/th/` as that host + grade + a holder. Placement never gives a root such an onset.
+
+Hook compounds are not a seam: only a five-letter root fuses with a hook (D-50), so a five-letter root with **l** or **m** second, plus **-l** or **-m**, never reads as a three-letter root + ending + hook, and its onset may be any three-letter root.
 
 ## Respelling a row
 

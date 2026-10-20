@@ -83,16 +83,6 @@ export function sizeFieldError(kind: Kind, size: string): string | null {
   return null;
 }
 
-const HOOK_JOINS = new Set(["l", "m"]);
-
-/**
- * A five-letter root with **l** / **m** second whose onset is a three-letter root: with an **-l** / **-m**
- * ending it spells that root + join + a two-letter hook (hook compounds by shape).
- */
-export function hookClash(root: string, shortRoots: ReadonlySet<string>): boolean {
-  return root.length === 5 && HOOK_JOINS.has(root[3]!) && shortRoots.has(root.slice(0, 3));
-}
-
 /**
  * `/th/` sense forms that take a holder after their grade letter (`ugur`, `odor`: host root + **-l / -m / -r**,
  * knowing.md#holder). The classifier reads any `/th/` stem that starts with one and is not a published root
@@ -113,17 +103,12 @@ export function holderClash(root: string, holderHosts: ReadonlySet<string>): boo
   return root.length === 5 && holderHosts.has(root.slice(0, 4));
 }
 
-/** The onset checks a placed root must pass: the hook check and the holder check. */
-export function onsetClash(root: string, shortRoots: ReadonlySet<string>, holderHosts: ReadonlySet<string> = new Set()): boolean {
-  return hookClash(root, shortRoots) || holderClash(root, holderHosts);
-}
-
 export type TailError = { key: string; reason: string };
 
 /**
  * Checks `npm test` and `check-compounds` run over the published lexicon: every five-letter row has a
  * kind and shape from their closed sets, a size unless its kind is unsized, and a root that ends in its
- * tail and clears the hook and holder checks; a three-letter row has none of the three; a `named` row
+ * tail and clears the holder check; a three-letter row has none of the three; a `named` row
  * has no shape or size and a place-name root no other place shares. The middle vowel is not checked. Listed compounds that split two ways are `validateCompoundRows`'.
  */
 export function validateRootTails(
@@ -132,7 +117,6 @@ export function validateRootTails(
   holderHosts: ReadonlySet<string> = new Set(),
 ): TailError[] {
   const errors: TailError[] = [];
-  const shortRoots = new Set(published.map((row) => row.root).filter((root) => root.length === 3));
   const places = new Map<string, string>();
   for (const row of published) {
     const key = row.emoji || row.concrete;
@@ -161,9 +145,6 @@ export function validateRootTails(
     if (sizeError) errors.push({ key, reason: sizeError });
     const tail = tailOf(kind as Kind, shape as Shape);
     if (!row.root.slice(3).startsWith(tail)) errors.push({ key, reason: `root ${row.root} does not end in its tail ${tail}` });
-    if (hookClash(row.root, shortRoots)) {
-      errors.push({ key, reason: `root ${row.root} reads as ${row.root.slice(0, 3)} + join + hook before -l / -m` });
-    }
     if (holderClash(row.root, holderHosts)) {
       errors.push({ key, reason: `root ${row.root} starts with the holder host ${row.root.slice(0, 4)}: its compounds read as a holder seam on /th/` });
     }

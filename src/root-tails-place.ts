@@ -8,7 +8,7 @@ import { echo } from "./echo-metric.ts";
 import type { CompoundRow } from "./lexicon-compounds.ts";
 import { isExtraNounHook } from "./parse/hook-compounds.ts";
 import { PHONEME_MAP } from "./pronunciation-map.ts";
-import { KIND_LETTERS, onsetClash, SHAPE_VOWELS, SIZE_VOWELS, type Kind, type Shape, type Size } from "./root-tails.ts";
+import { holderClash, KIND_LETTERS, SHAPE_VOWELS, SIZE_VOWELS, type Kind, type Shape, type Size } from "./root-tails.ts";
 
 const V = "aeou";
 const C = "bdghylmnrvwz";
@@ -94,15 +94,15 @@ function siblings(code: number): number[] {
   return out;
 }
 
-/** Every root a row may take: its tail, any onset, minus the hook and holder checks and blocked spellings. */
-function candidates(row: TailPlaceRow, shortRoots: ReadonlySet<string>, holderHosts?: ReadonlySet<string>, blocked?: ReadonlySet<string>): number[] {
+/** Every root a row may take: its tail, any onset, minus the holder check and blocked spellings. */
+function candidates(row: TailPlaceRow, holderHosts: ReadonlySet<string> = new Set(), blocked?: ReadonlySet<string>): number[] {
   if (!row.kind || !row.shape) throw new Error("a placed five-letter row needs a kind and shape");
   const consonant = KIND_LETTERS[row.kind];
   const vowels = SHAPE_VOWELS[row.shape];
   const out: number[] = [];
   for (const a of V) for (const c of C) for (const b of V) for (const e of vowels) {
     const root = a + c + b + consonant + e;
-    if (!onsetClash(root, shortRoots, holderHosts) && !blocked?.has(root)) out.push(encode(root));
+    if (!holderClash(root, holderHosts) && !blocked?.has(root)) out.push(encode(root));
   }
   return out;
 }
@@ -129,7 +129,7 @@ export function placeTailRoots(input: TailPlaceInput): TailPlacement {
   const { rows, shortRoots, holderHosts } = input;
   const n = rows.length;
   const sibs = Array.from({ length: FORMS }, (_, code) => siblings(code));
-  const cands = rows.map((row) => (row.fixed ? [] : candidates(row, shortRoots, holderHosts, input.blocked)));
+  const cands = rows.map((row) => (row.fixed ? [] : candidates(row, holderHosts, input.blocked)));
   const free = rows.flatMap((row, i) => (row.fixed ? [] : [i]));
   const unary = rows.map((row, i) => {
     const first = firstConsonant(row.cmu);

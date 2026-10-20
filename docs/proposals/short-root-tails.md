@@ -3,6 +3,7 @@
 <!-- retie: skip -->
 
 **Status:** PROPOSED. Not built. Every spelling on this page is `convert-word` output against the lexicon at commit `9d7b975b`, from a dry run in a scratch worktree. A later respelling makes the tables stale, so regenerate them before building ([build](#build)).
+**Since:** only a five-letter root fuses with a hook (D-50, [hooks.md § hook compounds](../grammar/hooks.md#hook-compounds)), so the hook check is gone. The tables below are from the run at `9d7b975b`, which still had it: the 59 five-letter moves it forced are struck from [five-letter roots that move](#five-letter-roots), and the three-letter spellings and counts may change when the run is repeated.
 **Related:** `root-tails.md` (tails on five-letter roots); [lexicon.md § root tails](../meta/lexicon.md#root-tails), [§ root length](../meta/lexicon.md#root-length), [§ onset](../meta/lexicon.md#onset), [§ seams](../meta/lexicon.md#seams); [compounds.md § root tails](../grammar/compounds.md#root-tails); [`src/lexicon-place.ts`](../../src/lexicon-place.ts) (`annealShortRoots`, `pairHard`, `shortRootGuards`); [`src/root-tails.ts`](../../src/root-tails.ts) (`validateRootTails`); [`data/lexicon-overlays.csv`](../../data/lexicon-overlays.csv).
 **Design authority:** none until absorbed.
 
@@ -12,7 +13,8 @@
 - Kind and shape follow the five-letter rules ([kind](../meta/lexicon.md#kind), [shape](../meta/lexicon.md#shape)). Size doesn't apply, since a three-letter root has no middle vowel.
 - **Spacing inside an overlay group changes.** Today two roots in one group (one overlay kind on one PoS) must differ in at least two letters and in their consonant. With tails the consonant is the kind, and the `/g/` clause-pole group has 13 members against 11 kinds, so that rule can't hold. The new rule: **two roots in one group never share their first two letters.** Roots of different kinds already differ in the second letter; roots of the same kind must differ in the first vowel.
 - **Each kind + shape holds at most four three-letter roots** (`a e o u` first).
-- In the dry run, 67 of the 69 three-letter roots change, and 67 five-letter roots move to clear the hook and holder checks. Everything else that spells them follows: 196 overlay sense forms, 687 compound fields, and 6,757 doc reties in 97 files.
+- In the dry run, 67 of the 69 three-letter roots change, and 67 five-letter roots moved to clear the hook and holder checks. With the hook check gone, only the 8 holder moves remain. Everything else that spells them followed: 196 overlay sense forms, 687 compound fields, and 6,757 doc reties in 97 files, counts that fall when the 59 hook moves drop out.
+- **The same respelling re-places every nature and mind root** ([nature and mind pass](#nature-mind-pass)). The hook check kept those roots off three-letter onsets; without it, `convert-word` spreads them closer to their floor.
 
 ## Motivation
 
@@ -53,7 +55,7 @@ Inside one overlay group (`kind:<pos>/<overlay kind>`), no two three-letter root
 
 ### What stays the same
 
-Placement still keeps three-letter roots off the onset of a kept **l / m**-second root, keeps a new holder host off the start of a kept root, never gives a listed compound a second split, and never spells an English word the doc lint reads as English. These are the existing guards in `shortRootGuards`. Five-letter rows re-placed in the same run are checked against the new three-letter spellings.
+Placement still keeps a new holder host off the start of a kept root, never gives a listed compound a second split, and never spells an English word the doc lint reads as English. These are the existing guards in `shortRootGuards`. Five-letter rows re-placed in the same run are checked against the new three-letter spellings.
 
 ## The roots {#the-roots}
 
@@ -135,83 +137,26 @@ Placement still keeps three-letter roots off the onset of a kept **l / m**-secon
 
 ### Five-letter roots that move {#five-letter-roots}
 
-Each of these clashes with a new three-letter root and is re-placed with its own kind, shape and size. *Hook*: an **l / m**-second root whose first three letters are a three-letter root reads as that root + join + a hook before **-l / -m** ([seams](../meta/lexicon.md#seams)). *Holder*: a root that starts with a `/th/` holder host reads as a holder seam. The set is a fixed point: re-placing exactly these rows produces no other clash.
+Each of these clashes with a new three-letter root and is re-placed with its own kind, shape and size. *Holder*: a root that starts with a `/th/` holder host reads as a holder seam ([seams](../meta/lexicon.md#seams)). In the dry run the set was a fixed point: re-placing exactly these rows produced no other clash.
+
+The run also moved 59 **l / m**-second roots whose first three letters were a new three-letter root (`ogema` grin, `adale` tree, …). Those no longer clash, since a three-letter root never fuses with a hook (D-50), and the [nature and mind pass](#nature-mind-pass) re-places them anyway.
 
 | Seed | Concrete | Kind | Now | Proposed | Why it moves |
 |---|---|---|---|---|---|
-| 😀 | grin | mind | `ogema` | `oguma` | hook: onset `oge` is a three-letter root |
-| 😍 | crush | mind | `agoma` | `amoma` | hook: onset `ago` is a three-letter root |
-| 😋 | yummy | mind | `ayama` | `eyama` | hook: onset `aya` is a three-letter root |
-| 😛 | tongue-out | mind | `adamu` | `ademu` | hook: onset `ada` is a three-letter root |
-| 🤑 | greed | mind | `ugama` | `uguma` | hook: onset `uga` is a three-letter root |
-| 🤭 | gasp | mind | `agamo` | `ugumo` | hook: onset `aga` is a three-letter root |
-| 🫣 | peek | mind | `ebome` | `abeme` | hook: onset `ebo` is a three-letter root |
-| 🤫 | hush | mind | `ohomu` | `ohamu` | hook: onset `oho` is a three-letter root |
-| 🤥 | lie | mind | `alamu` | `alumu` | hook: onset `ala` is a three-letter root |
-| 😔 | pensive | mind | `ebamu` | `ebemu` | hook: onset `eba` is a three-letter root |
-| 🫩 | bleary | mind | `ebamo` | `ubumo` | hook: onset `eba` is a three-letter root |
-| 🥵 | hot | mind | `ehamu` | `ahomu` | hook: onset `eha` is a three-letter root |
-| 🥶 | cold | mind | `ogemu` | `ogumu` | hook: onset `oge` is a three-letter root |
-| 🥴 | woozy | mind | `uwamu` | `uwumu` | hook: onset `uwa` is a three-letter root |
-| 😕 | confused | mind | `ugamu` | `ayumu` | hook: onset `uga` is a three-letter root |
-| 😳 | blush | mind | `ubame` | `obome` | hook: onset `uba` is a three-letter root |
-| 🥺 | plead | mind | `ubeme` | `ubome` | hook: onset `ube` is a three-letter root |
-| 🥹 | touched | mind | `adama` | `adema` | hook: onset `ada` is a three-letter root |
-| 😨 | fear | mind | `evumu` | `evemu` | hook: onset `evu` is a three-letter root |
-| 😭 | cry | mind | `agamu` | `ugumu` | hook: onset `aga` is a three-letter root |
-| 😓 | stressed | mind | `eyomu` | `uzemu` | hook: onset `eyo` is a three-letter root |
-| 😫 | tired | mind | `odamu` | `odemu` | hook: onset `oda` is a three-letter root |
-| ❤️‍🔥 | passion | mind | `aboma` | `ebuma` | hook: onset `abo` is a three-letter root |
-| ❤️‍🩹 | healing | mind | `ohemu` | `ehomu` | hook: onset `ohe` is a three-letter root |
-| 🩷 | pink | nature | `ebolo` | `ebulo` | hook: onset `ebo` is a three-letter root |
-| 🙌 | hooray | mind | `ehama` | `ehuma` | hook: onset `eha` is a three-letter root |
-| 🙎 | pout | mind | `abomu` | `obumu` | hook: onset `abo` is a three-letter root |
-| 🤷 | shrug | mind | `ehamo` | `ohamo` | hook: onset `eha` is a three-letter root |
-| 🕸️ | cobweb | nature | `agola` | `amola` | hook: onset `ago` is a three-letter root |
-| 🌸 | cherry-blossom | nature | `ohela` | `ehula` | hook: onset `ohe` is a three-letter root |
-| 🪷 | lotus | nature | `olela` | `olola` | hook: onset `ole` is a three-letter root |
-| 🏵️ | rosette | nature | `urelo` | `arelo` | hook: onset `ure` is a three-letter root |
-| 🪻 | hyacinth | nature | `ohele` | `ahole` | hook: onset `ohe` is a three-letter root |
-| 🪴 | plant | nature | `abolo` | `ubolo` | hook: onset `abo` is a three-letter root |
-| 🌲 | pine | nature | `ubale` | `obule` | hook: onset `uba` is a three-letter root |
-| 🌳 | tree | nature | `adale` | `adele` | hook: onset `ada` is a three-letter root |
-| 🌴 | palm | nature | `ebale` | `obole` | hook: onset `eba` is a three-letter root |
-| 🌵 | cactus | nature | `agolu` | `ogulu` | hook: onset `ago` is a three-letter root |
-| 🌾 | grain | nature | `ogela` | `ugula` | hook: onset `oge` is a three-letter root |
-| 🌿 | herb | nature | `ubela` | `ebela` | hook: onset `ube` is a three-letter root |
-| 🍀 | clover | nature | `ogelo` | `ogulo` | hook: onset `oge` is a three-letter root |
-| 🍃 | leaf | nature | `ulelo` | `ulalo` | hook: onset `ule` is a three-letter root |
-| 🪾 | dead-tree | nature | `adalu` | `edelu` | hook: onset `ada` is a three-letter root |
-| 🌍 | earth | nature | `evala` | `avala` | hook: onset `eva` is a three-letter root |
 | 🛬 | arrival | counting | `evure` | `evore` | holder: starts with host `evur` |
-| 🌔 | waxing-moon | nature | `awala` | `awela` | hook: onset `awa` is a three-letter root |
-| 🌖 | waning-moon | nature | `owalu` | `uwelu` | hook: onset `owa` is a three-letter root |
-| 🌌 | galaxy | nature | `agala` | `amala` | hook: onset `aga` is a three-letter root |
-| ☁️ | cloud | nature | `ugala` | `eyala` | hook: onset `uga` is a three-letter root |
-| ⛈️ | thunderstorm | nature | `evulu` | `evolu` | hook: onset `evu` is a three-letter root |
-| ☄️ | comet | nature | `ugale` | `ugule` | hook: onset `uga` is a three-letter root |
-| 🌊 | ocean | nature | `ehala` | `ohala` | hook: onset `eha` is a three-letter root |
-| 🧵 | thread | nature | `evula` | `evela` | hook: onset `evu` is a three-letter root |
-| 💎 | gemstone | nature | `ehalo` | `ohulo` | hook: onset `eha` is a three-letter root |
 | 🔔 | bell | counting | `abora` | `ebora` | holder: starts with host `abor` |
 | 🪗 | accordion | counting | `ugora` | `ugara` | holder: starts with host `ugor` |
 | 🎹 | piano | counting | `ebare` | `abare` | holder: starts with host `ebar` |
 | 🧮 | abacus | counting | `abore` | `abure` | holder: starts with host `abor` |
 | 💴 | yen | counting | `eyero` | `eyoro` | holder: starts with host `eyer` |
 | 📅 | calendar | counting | `ugore` | `ugare` | holder: starts with host `ugor` |
-| 🚰 | water | nature | `uwola` | `owula` | hook: onset `uwo` is a three-letter root |
-| 🔆 | bright | nature | `ebalo` | `ubulo` | hook: onset `eba` is a three-letter root |
 | 📳 | vibrate | counting | `evuro` | `avuro` | holder: starts with host `evur` |
-| 🟣 | purple | nature | `eyule` | `ebule` | hook: onset `eyu` is a three-letter root |
-| ⚪ | white | nature | `awulo` | `uwulo` | hook: onset `awu` is a three-letter root |
-| 🩶 | gray | nature | `ugalo` | `ugulo` | hook: onset `uga` is a three-letter root |
-|  | chip | nature | `ohelo` | `eholo` | hook: onset `ohe` is a three-letter root |
 
 ## Dry run
 
 In a scratch worktree on `9d7b975b`:
 
-- **Placement:** one `convert-word --lexicon --only` pass over the 69 three-letter rows and the 67 five-letter rows above, with no manual fixes. Run with the three-letter rows alone, placement stops inside the short anneal, because kept five-letter roots block too many tail spellings. Re-placing the clashing rows is required, not optional.
+- **Placement:** one `convert-word --lexicon --only` pass over the 69 three-letter rows and 67 five-letter rows, with no manual fixes. Run with the three-letter rows alone, placement stopped inside the short anneal, because the hook check let kept five-letter roots block too many tail spellings. That check is gone, so a rerun may place the three-letter rows with fewer five-letter moves.
 - **Retie:** 6,757 reties in 97 files, 57 to review, nothing blocking.
 - **`grammar-check`:** all 2,720 doc sentences have exactly one tree.
 - **Agebon doc lint:** passes.
@@ -222,6 +167,153 @@ In a scratch worktree on `9d7b975b`:
   - The tests of the rule this replaces: the overlay-group spacing test, and "a tail on a three-letter row".
   - Two artifacts of the dry-run patch, not the proposal: the size-field fixture, and the English-word test, which now hits the patch's empty-tail error first.
 
+## Nature and mind pass {#nature-mind-pass}
+
+Every five-letter **nature** (`l`) and **mind** (`m`) row is re-placed in the same `convert-word` run. Their tail consonant is **l / m**, so the old hook check kept each one's first three letters off every three-letter root. With hook compounds on five-letter roots only (D-50), any onset is free, and the placer can spread these rows closer to the floor of their kind. Only their onset and middle vowel change: kind, shape and size stay.
+
+**Dry run** on today's lexicon (`35fc3555` plus the D-50 change, three-letter roots as they are now), in a scratch copy: `convert-word --lexicon --only` over all 169 rows (85 nature, 84 mind).
+
+| | Before | After |
+|---|---|---|
+| Roots changed | | 120 of 169 |
+| Confusing pairs, mind (floor 36) | 52 | 45 |
+| Confusing pairs, nature (floor 37) | 55 | 50 |
+| Confusing pairs, all kinds | 828 | 816 |
+| Middle vowel is the size's (sized rows) | 96.9% | 97.9% |
+| First consonant is the label's | 91.0% | 91.1% |
+| Compound fields retied | | 347 |
+| Doc reties | | 865 in 55 files, 1 to review, 0 blocking |
+
+Run alone, this pass trades a retie for 12 fewer confusing pairs. Run with the three-letter tails, it adds no retie of its own, and the five-letter placer checks listed compounds against the new three-letter spellings. Build it with the tails, or alone if the tails are dropped. The 120 changes in that run (they move again when the pass runs beside the tails):
+
+<details>
+<summary>Roots changed</summary>
+
+| Seed | Concrete | Kind | Now | Proposed |
+|---|---|---|---|---|
+| 🙃 | upside-down | mind | `abemo` | `ubamo` |
+| 🫠 | melt | mind | `omemu` | `ememu` |
+| 😉 | wink | mind | `ewuma` | `ewema` |
+| 😊 | smile | mind | `azuma` | `azama` |
+| 😍 | crush | mind | `agoma` | `agama` |
+| 🤩 | starstruck | mind | `azome` | `azame` |
+| 😘 | air-kiss | mind | `uruma` | `erema` |
+| 😋 | yummy | mind | `ayama` | `oyama` |
+| 😛 | tongue-out | mind | `adamu` | `adomu` |
+| 😜 | tease | mind | `edoma` | `edema` |
+| 🤑 | greed | mind | `ugama` | `ugema` |
+| 🫣 | peek | mind | `ebome` | `ebeme` |
+| 🤫 | hush | mind | `ohomu` | `ahemu` |
+| 🫡 | salute | mind | `ozume` | `uzome` |
+| 🤐 | secret | mind | `ezamu` | `ozemu` |
+| 🤨 | skeptical | mind | `uzomu` | `eyumu` |
+| 😑 | deadpan | mind | `odemo` | `edemo` |
+| 😶 | speechless | mind | `ezamo` | `ozemo` |
+| 🫥 | invisible | mind | `onemu` | `enemu` |
+| 😏 | smirk | mind | `uzume` | `ezeme` |
+| 😒 | unimpressed | mind | `unumu` | `unomu` |
+| 🙄 | eye-roll | mind | `aromu` | `ayomu` |
+| 😬 | grimace | mind | `egumu` | `egemu` |
+| 😮‍💨 | sigh | mind | `uzamo` | `azamo` |
+| 🙂‍↔️ | head-shake | mind | `uhemu` | `ehemu` |
+| 🙂‍↕️ | nod | mind | `ename` | `uname` |
+| 😌 | relief | mind | `erumo` | `uremo` |
+| 😔 | pensive | mind | `ebamu` | `ebemu` |
+| 😪 | sleepy | mind | `ozumo` | `uzemo` |
+| 🤤 | drool | mind | `aduma` | `oduma` |
+| 🫩 | bleary | mind | `ebamo` | `ubemo` |
+| 🤕 | injured | mind | `enemu` | `enamu` |
+| 🤢 | nauseated | mind | `onamu` | `onomu` |
+| 🤧 | sneeze | mind | `ozumu` | `ozomu` |
+| 🥵 | hot | mind | `ehamu` | `uhamu` |
+| 🥶 | cold | mind | `ogemu` | `ogomu` |
+| 🥴 | woozy | mind | `uwamu` | `uwumu` |
+| 🤯 | mind-blown | mind | `umamo` | `amamo` |
+| 😎 | cool | mind | `egumo` | `ugamo` |
+| 😕 | confused | mind | `ugamu` | `ogemu` |
+| 🫤 | meh | mind | `ememo` | `omemo` |
+| 😟 | worried | mind | `owemu` | `ewemu` |
+| ☹️ | frown | mind | `uvamu` | `ovamu` |
+| 😳 | blush | mind | `ubame` | `obome` |
+| 🥺 | plead | mind | `ubeme` | `obeme` |
+| 😨 | fear | mind | `evumu` | `avemu` |
+| 😰 | anxious | mind | `anumu` | `anamu` |
+| 😱 | scream | mind | `uyomu` | `aremu` |
+| 😓 | stressed | mind | `eyomu` | `uzemu` |
+| 🥱 | yawn | mind | `oyomo` | `uyomo` |
+| 😤 | huff | mind | `uhamu` | `ahamu` |
+| 😠 | angry | mind | `unomu` | `onemu` |
+| 💔 | heartbreak | mind | `uhomu` | `ohamu` |
+| ❤️‍🔥 | passion | mind | `aboma` | `abama` |
+| 🩷 | pink | nature | `ebolo` | `ebulo` |
+| 💫 | dizzy | mind | `edumu` | `edemu` |
+| 🙌 | hooray | mind | `ehama` | `uhuma` |
+| 🫶 | care | mind | `eguma` | `egema` |
+| 🫦 | lip-bite | mind | `eloma` | `elema` |
+| 🙎 | pout | mind | `abomu` | `abamu` |
+| 💁 | sass | mind | `azumu` | `azamu` |
+| 🤦 | face-palm | mind | `ovemu` | `evemu` |
+| 🧘 | meditation | mind | `emamo` | `umemo` |
+| 🕸️ | cobweb | nature | `agola` | `ugola` |
+| 💐 | bouquet | nature | `oyola` | `abola` |
+| 🌸 | cherry-blossom | nature | `ohela` | `ehela` |
+| 🌻 | sunflower | nature | `ezala` | `azala` |
+| 🌼 | blossom | nature | `abela` | `obela` |
+| 🪻 | hyacinth | nature | `ohele` | `ahele` |
+| 🪴 | plant | nature | `abolo` | `uyolo` |
+| 🌳 | tree | nature | `adale` | `edale` |
+| 🌴 | palm | nature | `ebale` | `abale` |
+| 🌵 | cactus | nature | `agolu` | `egolu` |
+| 🌾 | grain | nature | `ogela` | `ugela` |
+| 🌿 | herb | nature | `ubela` | `ebela` |
+| 🍀 | clover | nature | `ogelo` | `agelo` |
+| 🍂 | fallen-leaf | nature | `ovelu` | `avelu` |
+| 🪺 | nest | nature | `enela` | `onola` |
+| 🍄 | mushroom | nature | `omelo` | `umelo` |
+| 🪾 | dead-tree | nature | `adalu` | `edalu` |
+| 🥫 | metal | nature | `emulo` | `amulo` |
+| 🧊 | ice | nature | `ozulo` | `ezulo` |
+| 🌍 | earth | nature | `evala` | `ovala` |
+| 🌑 | new-moon | nature | `onalu` | `enalu` |
+| 🌖 | waning-moon | nature | `owalu` | `uwalu` |
+| 🌙 | moon | nature | `umale` | `omale` |
+| ☀️ | sun | nature | `uzale` | `ezale` |
+| 🌌 | galaxy | nature | `agala` | `ugala` |
+| ☁️ | cloud | nature | `ugala` | `ogala` |
+| ⛈️ | thunderstorm | nature | `evulu` | `unulu` |
+| 🌦️ | showers | nature | `uhala` | `ahula` |
+| 🌪️ | tornado | nature | `edulu` | `odulu` |
+| 🌫️ | fog | nature | `avalu` | `evulu` |
+| 🌀 | cyclone | nature | `azulu` | `uzulu` |
+| 🌈 | rainbow | nature | `urule` | `arule` |
+| ❄️ | snowflake | nature | `ezelu` | `ozelu` |
+| ☃️ | snowman | nature | `uzolo` | `ozalo` |
+| ☄️ | comet | nature | `ugale` | `ogale` |
+| 💧 | droplet | nature | `udelo` | `odelo` |
+| 🌊 | ocean | nature | `ehala` | `ohala` |
+| ✨ | sparkles | nature | `ezela` | `ezula` |
+| 🎗️ | awareness | mind | `awema` | `owema` |
+| 🥇 | gold | nature | `egule` | `agule` |
+| 🥈 | silver | nature | `ozule` | `azule` |
+| 🥉 | bronze | nature | `abule` | `obule` |
+| 🧶 | yarn | nature | `uyula` | `ayula` |
+| 💎 | gemstone | nature | `ehalo` | `ohelo` |
+| 🫧 | bubbles | nature | `anela` | `abela` |
+| 🚰 | water | nature | `uwola` | `owula` |
+| ⚛️ | atom | nature | `odelo` | `adelo` |
+| 🔆 | bright | nature | `ebalo` | `obulo` |
+| 🟡 | yellow | nature | `ayule` | `eyule` |
+| 🟣 | purple | nature | `eyule` | `ebule` |
+| 🟤 | brown | nature | `unulo` | `anulo` |
+| ⚫ | black | nature | `abulo` | `ubulo` |
+| 🟫 | ground | nature | `egula` | `agula` |
+| 🩶 | gray | nature | `ugalo` | `egulo` |
+| 𐂝 | wool | nature | `ewula` | `uwula` |
+|  | chip | nature | `ohelo` | `ehelo` |
+|  | strip | nature | `azole` | `uzole` |
+
+</details>
+
 ## Build {#build}
 
 1. **Code.**
@@ -231,7 +323,7 @@ In a scratch worktree on `9d7b975b`:
    - Raise a clear error when a kind + shape has more rows than free forms.
    - Update the tests listed above.
 2. **Data.** Fill `kind` and `shape` on the 69 rows as in the [table](#three-letter-roots), after review.
-3. **Placement.** Run `npm run convert-word -- --lexicon --only <the three-letter rows>,<the clashing five-letter rows>`. If the lexicon changed since `9d7b975b`, recompute the five-letter set: the kept **l / m**-second roots whose onset is a new three-letter root, plus the roots that start with a new holder host. Repeat until the set stops changing (it did after one round here).
+3. **Placement.** Run `npm run convert-word -- --lexicon --only <the three-letter rows>,<every nature and mind row>,<the clashing five-letter rows>`. The clashing set is the other roots that start with a new holder host; recompute it from the new three-letter spellings, and repeat until it stops changing (it did after one round at `9d7b975b`).
 4. **Retie.** Run `npm run retie-docs`, then `-- --write`, then `npm run build`, `npm test` and `npm run grammar-check`. Read the review list.
 5. **Docs.**
    - [compounds.md § root tails](../grammar/compounds.md#root-tails): the tail applies to every root.
@@ -240,6 +332,7 @@ In a scratch worktree on `9d7b975b`:
 
 ## Open questions
 
-- **Whether to build it at all.** The dry run shows it's feasible, but the learner gain (one uniform tail rule) costs most of the echo on the most frequent roots, and adds 12 one-letter pairs inside overlay kinds.
+- **Whether to build it at all.** The dry run shows it's feasible, but the learner gain (one uniform tail rule) costs most of the echo on the most frequent roots, and adds 12 one-letter pairs inside overlay kinds. The [nature and mind pass](#nature-mind-pass) stands on its own if the tails are dropped.
+- **Rerun.** Repeat the dry run without the hook check: the three-letter spellings, the one-letter pairs and the five-letter moves may all come out differently.
 - **Record.** Its honest shape is `holds` (it stores), but sign + `holds` is full. The options: keep `one`, move another sign row out of `holds`, or give record a five-letter root.
 - **The sake group.** Its one-letter pairs could be broken by re-seeding a member to a different kind or shape, rather than by placement.

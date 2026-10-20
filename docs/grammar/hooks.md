@@ -1067,7 +1067,7 @@ English has single verbs for moving in relation to a place: *enter*, *leave*, *o
 
 Keep the left word’s own **-l** or **-m**, then write the hook, with no mid-word **`x`**. The dictionary form is the **citation** (no role letter), because the same stem can sit under `/z/` or `/ɡ/` as well as `/v/`.
 
-The left word is always a root from the dictionary. A longer root can end in the same letters as a short root + ending + hook, but the dictionary never has both, so knowing the roots tells you which one a word is.
+The left word is always a five-letter root from the dictionary. Three-letter roots never fuse, so a word that starts with one is never a hook compound; to say *from a map*, use the two words.
 
 ```text
 CITE + HOOK

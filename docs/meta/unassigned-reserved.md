@@ -132,6 +132,12 @@ Source: [hooks.md](../grammar/hooks.md#ranges), [sakes.md](../grammar/sakes.md#c
 - **open:** `uem` before a stance with no content an event can contradict (`frameKind`): PERMIT (it only lifts a restriction), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Olazun's interest* is `thegathum bolazun`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
 - **closed (D-49):** `uem` before given CONSENT (`uem huxegom bolazun`, `uem huxegol`), on yourself or with a `/b/` (`frameKind`).
 
+## Hook compounds
+
+Source: [hooks.md](../grammar/hooks.md#hook-compounds)
+
+- **closed (D-50):** a three-letter root + **-l** / **-m** + an extra-noun hook (*map* + *from*). It reads as a five-letter root + ending, or as nothing.
+
 ## Role compounds
 
 Source: [roles.md](../grammar/roles.md), [compounds.md](../grammar/compounds.md)
