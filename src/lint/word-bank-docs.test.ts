@@ -98,11 +98,11 @@ describe("lintWordBankMarkdown", () => {
 |---------|--------|
 | *${english}* | \`${agebon}\` |
 `;
-    for (const [english, agebon] of [["I", "amun"], ["speaker", "amun"], ["you", "ehon"], ["listener", "ehon"]]) {
+    for (const [english, agebon] of [["I", "uwon"], ["speaker", "uwon"], ["you", "awan"], ["listener", "awan"]]) {
       assert.deepEqual(lintWordBankMarkdown(md(english!, agebon!), tables), [], `${english} ${agebon}`);
     }
-    assert.equal(lintWordBankMarkdown(md("I", "amul"), tables).length, 1);
-    assert.equal(lintWordBankMarkdown(md("you", "amun"), tables).length, 1);
+    assert.equal(lintWordBankMarkdown(md("I", "uwol"), tables).length, 1);
+    assert.equal(lintWordBankMarkdown(md("you", "uwon"), tables).length, 1);
   });
 });
 
@@ -142,20 +142,20 @@ ${drills.map((d, i) => `**${i + 1}.** *…*\n\n::: details Show answer\n\`${d}\`
   });
 
   it("matches roots, not spellings: other roles, full-root resumes, role compounds", () => {
-    const rows = ["*Uzozen* | `uzozen`", "*tell* | `vezuyel`", "*run* | `aruvel`", "*dog* | `udozol`", "*scream* | `vuyomul`"];
-    const md = page(rows, ["zuzozen vezuyel. zoxezuyer varuvel.", "zudozol varuvel. zudozor vuyomul."]);
+    const rows = ["*Uzozen* | `uzozen`", "*tell* | `vezuyel`", "*run* | `aruvel`", "*dog* | `udozol`", "*scream* | `varemul`"];
+    const md = page(rows, ["zuzozen vezuyel. zoxezuyer varuvel.", "zudozol varuvel. zudozor varemul."]);
     assert.deepEqual(kinds(md), []);
   });
 
   it("reads a resume as its antecedent's root", () => {
-    const md = page(["*Uzozen* | `uzozen`", "*run* | `aruvel`", "*scream* | `vuyomul`"], ["zuzozen varuvel. zuzozer vuyomul."]);
+    const md = page(["*Uzozen* | `uzozen`", "*run* | `aruvel`", "*scream* | `varemul`"], ["zuzozen varuvel. zuzozer varemul."]);
     assert.deepEqual(kinds(md), []);
   });
 
   it("needs no row for an overlay, but a row for one must be used", () => {
     const rows = ["*Uzozen* | `uzozen`", "*run* | `aruvel`"];
-    assert.deepEqual(kinds(page(rows, ["zuzozen thovum varuvel."])), []);
-    assert.deepEqual(kinds(page([...rows, "*MAY* | `thovum`"], ["zuzozen varuvel."])), ["unused ovu"]);
+    assert.deepEqual(kinds(page(rows, ["zuzozen thomam varuvel."])), []);
+    assert.deepEqual(kinds(page([...rows, "*MAY* | `thomam`"], ["zuzozen varuvel."])), ["unused oma"]);
   });
 
   it("covers the SELF slot only with the *your name* row", () => {
@@ -185,10 +185,10 @@ describe("converted checkpoint bank", () => {
   });
 
   it("does not count the Fix it wrong form as a use, and flags the unused row", () => {
-    const md = PRACTICE.replace("<!-- lint: error -->`zuzozen dolazun vawebol.`", "<!-- lint: error -->`zuzozen dolazun vewurel.`");
+    const md = PRACTICE.replace("<!-- lint: error -->`zuzozen dolazun vawebol.`", "<!-- lint: error -->`zuzozen dolazun vowurel.`");
     // Swap out the translation items' *walk*, so only the wrong form spells it.
-    const onlyFix = md.replace("`zolazun vewurel.`", "`zolazun vuhohol.`").replace("`zuhelan vewurel.`", "`zuhelan vuhohol.`");
-    assert.deepEqual(kinds(onlyFix), ["unused ewure"]);
+    const onlyFix = md.replace("`zolazun vowurel.`", "`zolazun vuhohol.`").replace("`zahelan vowurel.`", "`zahelan vuhohol.`");
+    assert.deepEqual(kinds(onlyFix), ["unused owure"]);
   });
 
   it("reads New words and Review together", () => {

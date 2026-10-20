@@ -16,23 +16,23 @@ Write the outcome first, then the pole, then the condition as the pole's `/b/`. 
 <!-- cheat-sheet: why-allowed -->
 | After a verb / a noun | Link | Condition | English | Stage |
 |-----------------------|------|-----------|---------|-------|
-| [`thoyem` / `goyem`](../causation.md#if) | enough | not asserted | *if* | B |
-| [`tholum` / `golum`](../causation.md#only-if) | needed | not asserted | *only if* / *needs* | B |
-| [`thavem` / `gavem`](../causation.md#only-because) | enough | asserted as the reason | *because* | I |
-| [`tholum thavem` / `golum gavem`](../causation.md#only-because) | needed | asserted | *only because* / *depends on* | I |
-| [`thedam` / `gedam`](../causation.md#only-because) | both ways | not asserted | *if and only if* | I |
+| [`thohom` / `gohom`](../causation.md#if) | enough | not asserted | *if* | B |
+| [`thebom` / `gebom`](../causation.md#only-if) | needed | not asserted | *only if* / *needs* | B |
+| [`thahum` / `gahum`](../causation.md#only-because) | enough | asserted as the reason | *because* | I |
+| [`thebom thahum` / `gebom gahum`](../causation.md#only-because) | needed | asserted | *only because* / *depends on* | I |
+| [`thehem` / `gehem`](../causation.md#only-because) | both ways | not asserted | *if and only if* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [If, after a verb](../causation.md#if) | `zuzozen vewurel thoyem berulal.` | *Uzozen walks if it rains.* | B |
-| [If, after a noun](../causation.md#if) | `zerulal goyem bugalal.` | *There is rain if there are clouds.* | B |
-| [Only if](../causation.md#only-if) | `zuzozen vewurel tholum berulal.` | *Uzozen walks only if it rains.* | B |
-| [Condition is a whole sentence](../causation.md#dependent): `barl`, then the sentence | `zuzozen vewurel thoyem barl zolazun vezuvol.` | *Uzozen walks if Olazun is asleep.* | I |
-| [Because](../causation.md#only-because) | `zuzozen vewurel thavem barl zolazun vezuvol.` | *Uzozen walks because Olazun is asleep.* | I |
-| [If and only if](../causation.md#only-because) | `zuzozen vewurel thedam barl zolazun vezuvol.` | *Uzozen walks if and only if Olazun is asleep.* | I |
-| [Only because](../causation.md#only-because) | `zuzozen vewurel tholum thavem berulal.` | *Uzozen walks only because of the rain.* | I |
-| [Unless](../causation.md#only-because): `burl` for `barl` | `zuzozen vewurel thoyem burl zolazun vezuvol.` | *Uzozen walks unless Olazun is asleep.* | I |
-| [Even if](../causation.md#only-because) | `zuzozen vewurel hezom thoyem barl zolazun vezuvol.` | *Uzozen walks even if Olazun is asleep.* | I |
+| [If, after a verb](../causation.md#if) | `zuzozen vowurel thohom berulal.` | *Uzozen walks if it rains.* | B |
+| [If, after a noun](../causation.md#if) | `zerulal gohom bugalal.` | *There is rain if there are clouds.* | B |
+| [Only if](../causation.md#only-if) | `zuzozen vowurel thebom berulal.` | *Uzozen walks only if it rains.* | B |
+| [Condition is a whole sentence](../causation.md#dependent): `barl`, then the sentence | `zuzozen vowurel thohom barl zolazun vezuvol.` | *Uzozen walks if Olazun is asleep.* | I |
+| [Because](../causation.md#only-because) | `zuzozen vowurel thahum barl zolazun vezuvol.` | *Uzozen walks because Olazun is asleep.* | I |
+| [If and only if](../causation.md#only-because) | `zuzozen vowurel thehem barl zolazun vezuvol.` | *Uzozen walks if and only if Olazun is asleep.* | I |
+| [Only because](../causation.md#only-because) | `zuzozen vowurel thebom thahum berulal.` | *Uzozen walks only because of the rain.* | I |
+| [Unless](../causation.md#only-because): `burl` for `barl` | `zuzozen vowurel thohom burl zolazun vezuvol.` | *Uzozen walks unless Olazun is asleep.* | I |
+| [Even if](../causation.md#only-because) | `zuzozen vowurel hezom thohom barl zolazun vezuvol.` | *Uzozen walks even if Olazun is asleep.* | I |
 
 A noun after a because pole names an act or a thing, never a person. For *because of Olazun*, give what Olazun did as a sentence after `barl`.
 
@@ -43,24 +43,24 @@ The ending on the because pole says whether anyone did wrong.
 <!-- cheat-sheet: why-allowed -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`thavel`](../causation.md#fault) | the reason broke a norm | *it's their fault* / *to blame* | I |
-| [`thavem`](../causation.md#fault) | the reason made it happen; no fault claimed | *because* | I |
-| [`thaver`](../causation.md#fault) | one share among others | *partly because* | I |
+| [`thahul`](../causation.md#fault) | the reason broke a norm | *it's their fault* / *to blame* | I |
+| [`thahum`](../causation.md#fault) | the reason made it happen; no fault claimed | *because* | I |
+| [`thahur`](../causation.md#fault) | one share among others | *partly because* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Fault, on an act](../causation.md#fault) | `zuzozen verurul thavel barl zolazun vezuyel.` | *Uzozen left because Olazun spoke, and Olazun was wrong to.* | I |
-| [A share](../causation.md#fault) | `zuzozen verurul thaver berulal.` | *The rain is part of why Uzozen left.* | I |
+| [Fault, on an act](../causation.md#fault) | `zuzozen velurul thahul barl zolazun vezuyel.` | *Uzozen left because Olazun spoke, and Olazun was wrong to.* | I |
+| [A share](../causation.md#fault) | `zuzozen velurul thahur berulal.` | *The rain is part of why Uzozen left.* | I |
 
 ### CAUSE: the mechanism {#cause}
 
-`thegem` before a pole says the condition is how the result is produced.
+`thewem` before a pole says the condition is how the result is produced.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Mechanism](../causation.md#cause) | `zuzozen vewurel thegem thoyem berulal.` | *Uzozen walks if it rains.* (rain as the mechanism) | I |
-| [Make someone do it](../causation.md#make): causer in `/b/`, no pole | `zolazun vezuyel thegem buzozen.` | *Uzozen makes Olazun speak.* | I |
-| [One adjective only](../causation.md#cause): `wegem` | `zuzozen wegem geluvom vewurel.` | *Uzozen walks, straining.* (something is causing the strain) | I |
+| [Mechanism](../causation.md#cause) | `zuzozen vowurel thewem thohom berulal.` | *Uzozen walks if it rains.* (rain as the mechanism) | I |
+| [Make someone do it](../causation.md#make): causer in `/b/`, no pole | `zolazun vezuyel thewem buzozen.` | *Uzozen makes Olazun speak.* | I |
+| [One adjective only](../causation.md#cause): `wewem` | `zuzozen wewem geluvom vowurel.` | *Uzozen walks, straining.* (something is causing the strain) | I |
 
 ## The sakes {#sakes}
 
@@ -71,15 +71,15 @@ A sake is a kind of payoff. A sake word is a sake root, mid-word `th`, a stance 
 <!-- generated: sakes -->
 | Serves | Detracts from | Sake | Taught in | Stage |
 |--------|---------------|------|-----------|-------|
-| `thadotham` | `thadothum` | understanding (sense-making / learning) | [Word shape](../sakes.md#word-shape) | B |
-| `thahutham` | `thahuthum` | autonomy (choice / agency) | [Word shape](../sakes.md#word-shape) | B |
-| `thametham` | `thamethum` | purpose (direction / meaning) | [Word shape](../sakes.md#word-shape) | B |
-| `thanatham` | `thanathum` | relatedness (bond / belonging) | [Word shape](../sakes.md#word-shape) | B |
-| `thebetham` | `thebethum` | beneficence (making someone better off) | [Word shape](../sakes.md#word-shape) | B |
-| `thegatham` | `thegathum` | unspecified (potential) | [Word shape](../sakes.md#word-shape) | B |
-| `thoyutham` | `thoyuthum` | physical (body / health / safety / shelter) | [Word shape](../sakes.md#word-shape) | B |
-| `thozotham` | `thozothum` | pleasure (sweetness / enjoyment) | [Word shape](../sakes.md#word-shape) | B |
-| `thulotham` | `thulothum` | competence (readiness / efficacy) | [Word shape](../sakes.md#word-shape) | B |
+| `thagatham` | `thagathum` | autonomy (choice / agency) | [Word shape](../sakes.md#word-shape) | B |
+| `thawotham` | `thawothum` | relatedness (bond / belonging) | [Word shape](../sakes.md#word-shape) | B |
+| `thewatham` | `thewathum` | beneficence (making someone better off) | [Word shape](../sakes.md#word-shape) | B |
+| `thobatham` | `thobathum` | physical (body / health / safety / shelter) | [Word shape](../sakes.md#word-shape) | B |
+| `thodotham` | `thodothum` | pleasure (sweetness / enjoyment) | [Word shape](../sakes.md#word-shape) | B |
+| `thowotham` | `thowothum` | understanding (sense-making / learning) | [Word shape](../sakes.md#word-shape) | B |
+| `thudatham` | `thudathum` | unspecified (potential) | [Word shape](../sakes.md#word-shape) | B |
+| `thuretham` | `thurethum` | purpose (direction / meaning) | [Word shape](../sakes.md#word-shape) | B |
+| `thuwatham` | `thuwathum` | competence (readiness / efficacy) | [Word shape](../sakes.md#word-shape) | B |
 <!-- /generated -->
 
 ### Which stance vowel {#stance-vowels}
@@ -103,16 +103,16 @@ The scale runs **-l** most settled, **-m** the default, **-r** most passing. Whe
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Serves, on a noun](../sakes.md#met) | `zahehal gulotham.` | *My house serves competence.* | B |
-| [Serves, lasting](../sakes.md#time-horizon-endings-on-met) | `zebel ganathal.` | *My gift serves relatedness in the long term.* | B |
-| [Detracts](../sakes.md#sake-changeability) | `zugul gulothum.` | *My book detracts from competence.* (modifiable) | B |
-| [Costly now, good later](../sakes.md#sake-changeability) | `zugul gozothur gulothal.` | *My book is a slog for now, but builds lasting competence.* | B |
-| [On the event](../sakes.md#word-shape) | `zuzozen vezuyel thulotham.` | *Uzozen talks, and that boosts my confidence.* | B |
-| [Not your noun](../sakes.md#personal-possession): `gobum` | `zabowam wahuthur gobum.` | *the gathering, passing harm to autonomy* | B |
-| [Ought](../sakes.md#sake-force) | `zuzozen vezuyel thanathem baxer.` | *Uzozen ought to talk; it would help them feel connected.* (unasked advice) | I |
-| [Motive](../sakes.md#sake-preference) | `zamun vezuyel thanathom.` | *I talk to feel connected.* | I |
-| [Whose stake](../sakes.md#whose-stake): the person in `/b/` | `zuzozen vezuyel thanathom bolazun.` | *Uzozen talks for Olazun's sake.* | I |
-| [Not your noun, their stake](../sakes.md#whose-stake) | `zebel ganathal bolazun.` | *My gift serves Olazun's relatedness.* | I |
+| [Serves, on a noun](../sakes.md#met) | `zahehal guwatham.` | *My house serves competence.* | B |
+| [Serves, lasting](../sakes.md#time-horizon-endings-on-met) | `zewal gawothal.` | *My gift serves relatedness in the long term.* | B |
+| [Detracts](../sakes.md#sake-changeability) | `zegal guwathum.` | *My book detracts from competence.* (modifiable) | B |
+| [Costly now, good later](../sakes.md#sake-changeability) | `zegal godothur guwathal.` | *My book is a slog for now, but builds lasting competence.* | B |
+| [On the event](../sakes.md#word-shape) | `zuzozen vezuyel thuwatham.` | *Uzozen talks, and that boosts my confidence.* | B |
+| [Not your noun](../sakes.md#personal-possession): `goyem` | `zabowam wagathur goyem.` | *the gathering, passing harm to autonomy* | B |
+| [Ought](../sakes.md#sake-force) | `zuzozen vezuyel thawothem baxer.` | *Uzozen ought to talk; it would help them feel connected.* (unasked advice) | I |
+| [Motive](../sakes.md#sake-preference) | `zuwon vezuyel thawothom.` | *I talk to feel connected.* | I |
+| [Whose stake](../sakes.md#whose-stake): the person in `/b/` | `zuzozen vezuyel thawothom bolazun.` | *Uzozen talks for Olazun's sake.* | I |
+| [Not your noun, their stake](../sakes.md#whose-stake) | `zewal gawothal bolazun.` | *My gift serves Olazun's relatedness.* | I |
 
 ### Thanks and sorry {#thanks-sorry}
 
@@ -124,17 +124,17 @@ A lone met word is a whole sentence about you: *my sake is met*. Sorry is about 
 | [`…thal`](../sakes.md#thanks-sorry) | the help lasts | *that will stay with me* | I |
 | [`…tham`](../sakes.md#thanks-sorry) | horizon unstated | *thank you* | I |
 | [`…thar`](../sakes.md#thanks-sorry) | landed right when needed | *thanks, that got me through* | I |
-| [`…thul behon`](../sakes.md#thanks-sorry) | the harm is lasting | *I'm deeply sorry* | I |
-| [`…thum behon`](../sakes.md#thanks-sorry) | the harm can be softened | *I'm sorry* | I |
-| [`…thur behon`](../sakes.md#thanks-sorry) | the harm is passing | *my bad* | I |
+| [`…thul bawan`](../sakes.md#thanks-sorry) | the harm is lasting | *I'm deeply sorry* | I |
+| [`…thum bawan`](../sakes.md#thanks-sorry) | the harm can be softened | *I'm sorry* | I |
+| [`…thur bawan`](../sakes.md#thanks-sorry) | the harm is passing | *my bad* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Thanks](../sakes.md#thanks-sorry) | `thanatham.` | *That meant a lot to me.* | I |
-| [Moved](../sakes.md#thanks-sorry) | `thanathamar.` | *I'm so moved.* | I |
-| [Sorry](../sakes.md#thanks-sorry) | `thanathum behon.` | *That hurt your sense of connection.* | I |
-| [Sorry, to another's sake](../sakes.md#thanks-sorry) | `thanathum bolazun.` | *owns up to a harm to Olazun* | I |
-| [Appreciated by another](../sakes.md#thanks-sorry) | `thanatham bolazun.` | *Olazun appreciated it* | I |
+| [Thanks](../sakes.md#thanks-sorry) | `thawotham.` | *That meant a lot to me.* | I |
+| [Moved](../sakes.md#thanks-sorry) | `thawothamar.` | *I'm so moved.* | I |
+| [Sorry](../sakes.md#thanks-sorry) | `thawothum bawan.` | *That hurt your sense of connection.* | I |
+| [Sorry, to another's sake](../sakes.md#thanks-sorry) | `thawothum bolazun.` | *owns up to a harm to Olazun* | I |
+| [Appreciated by another](../sakes.md#thanks-sorry) | `thawotham bolazun.` | *Olazun appreciated it* | I |
 
 ### Speaker attitude {#attitude}
 
@@ -145,11 +145,11 @@ Your feeling about the whole claim, on `/th/` with **-m**. It is never the subje
 |--------|-----|---------|-------|
 | [`thoguyem`](../sakes.md#speaker-attitude) | you want it, and it is still open | *hopefully* | I |
 | [`tholezom`](../sakes.md#speaker-attitude) | it went well by chance | *luckily* | I |
-| [`thowemum`](../sakes.md#speaker-attitude) | it concerns you | *worryingly* | I |
+| [`thewemum`](../sakes.md#speaker-attitude) | it concerns you | *worryingly* | I |
 
 ## Feelings {#feelings}
 
-An [emotion](../sakes.md#emotion-compose) is built on one word: the sake word, a **locus**, then a **motion ending**. Example: `wulothur` + `ao` + **-r** is `wulothuraor`.
+An [emotion](../sakes.md#emotion-compose) is built on one word: the sake word, a **locus**, then a **motion ending**. Example: `wuwathur` + `ao` + **-r** is `wuwathuraor`.
 
 ### Locus: where it sits or points {#locus}
 
@@ -179,25 +179,25 @@ Motion is how the feeling moves, not how strong it is. For strength, put a [degr
 <!-- cheat-sheet: why-allowed -->
 | Agebon | English | Stage |
 |--------|---------|-------|
-| [`zezuyel wulothuraor gobum`](../sakes.md#emotion-compose) | *anxious about the dialogue* | I |
-| [`zozowum wanathumual gobum`](../sakes.md#emotion-compose) | *given up over the division* | I |
-| [`zebewem gulothamar`](../sakes.md#emotion-compose) | *proud of the draft* | I |
-| [`zumel wanathumem gobum buzozen`](../sakes.md#emotion-compose) | *upset for Uzozen about the memo* | I |
-| [`zezuyel wanathumum gobum bolazun`](../sakes.md#emotion-compose) | *avoiding Olazun over the dialogue* | I |
-| [`zezuyel wanathumaem gobum bolazun`](../sakes.md#emotion-compose) | *placating Olazun about the dialogue* | I |
-| [`zumel wanathumoem gobum buzozen`](../sakes.md#emotion-compose) | *upset, turning to Uzozen for comfort* | I |
-| [`zumel wanathumuer gobum`](../sakes.md#emotion-compose) | *objecting to the memo* | I |
-| [`zezuyel wamethumal gobum`](../sakes.md#emotion-compose) | *the dialogue feels pointless* | I |
-| [`zebewem gebethamam`](../sakes.md#emotion-compose) | *glad my draft helped* | I |
-| [`zezuyel wamezom wulothuruom gobum`](../sakes.md#emotion-compose) | *a little uneasy, and I can't say why* | I |
-| [`zezuyel wulothumuer guzezam`](../sakes.md#emotion-compose) | *the dialogue is frustratingly slow* | I |
+| [`zezuyel wuwathuraor goyem`](../sakes.md#emotion-compose) | *anxious about the dialogue* | I |
+| [`zozowum wawothumual goyem`](../sakes.md#emotion-compose) | *given up over the division* | I |
+| [`zebewem guwathamar`](../sakes.md#emotion-compose) | *proud of the draft* | I |
+| [`zugal wawothumem goyem buzozen`](../sakes.md#emotion-compose) | *upset for Uzozen about the memo* | I |
+| [`zezuyel wawothumum goyem bolazun`](../sakes.md#emotion-compose) | *avoiding Olazun over the dialogue* | I |
+| [`zezuyel wawothumaem goyem bolazun`](../sakes.md#emotion-compose) | *placating Olazun about the dialogue* | I |
+| [`zugal wawothumoem goyem buzozen`](../sakes.md#emotion-compose) | *upset, turning to Uzozen for comfort* | I |
+| [`zugal wawothumuer goyem`](../sakes.md#emotion-compose) | *objecting to the memo* | I |
+| [`zezuyel wurethumal goyem`](../sakes.md#emotion-compose) | *the dialogue feels pointless* | I |
+| [`zebewem gewathamam`](../sakes.md#emotion-compose) | *glad my draft helped* | I |
+| [`zezuyel wamezom wuwathuruom goyem`](../sakes.md#emotion-compose) | *a little uneasy, and I can't say why* | I |
+| [`zezuyel wuwathumuer guzezam`](../sakes.md#emotion-compose) | *the dialogue is frustratingly slow* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [A feeling with no object](../sakes.md#feeling-no-object) | `thulothuruor.` | *I'm anxious.* | I |
-| [Name its cause](../sakes.md#feeling-no-object) | `thulothuruor thavem berulal.` | *I'm anxious, and the rain caused it.* | I |
-| [A feeling about an event](../sakes.md#feeling-no-object) | `zolazun vewurel thanathamar` | *moved that Olazun walks* | I |
-| [Naming it plainly](../sakes.md#emotion-compose) | `zamun gunomul` | *I am angry* | I |
+| [A feeling with no object](../sakes.md#feeling-no-object) | `thuwathuruor.` | *I'm anxious.* | I |
+| [Name its cause](../sakes.md#feeling-no-object) | `thuwathuruor thahum berulal.` | *I'm anxious, and the rain caused it.* | I |
+| [A feeling about an event](../sakes.md#feeling-no-object) | `zolazun vowurel thawothamar` | *moved that Olazun walks* | I |
+| [Naming it plainly](../sakes.md#emotion-compose) | `zuwon gunemul` | *I am angry* | I |
 
 ## Allowed and required {#deontic}
 
@@ -206,63 +206,63 @@ Each is a `/th/` word on the clause. The ending says where the rule comes from: 
 <!-- generated: overlays kind=deontic -->
 | Agebon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `huxedel` | binding refusal by the affected (a settled opt-out) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
-| `huxedem` | consent refused outright by the affected (withdraws any earlier revocable yes) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
-| `huxeder` | consent presumed absent from the affected (they probably don't want it) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
-| `huxegol` | consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
-| `huxegom` | consent given outright by the affected (the /b/ or else the actor); revocable any time | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
-| `huxegor` | consent assumed or inferred from the affected (the /b/ or else the actor) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
-| `thedel` | disallowed by a rule policy or formal ban | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
-| `thedem` | forbidden by a person (speaker by default or the /b/ forbidder) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
-| `theder` | tacitly disapproved (no one forbade it outright) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
-| `thegol` | permission from a rule policy or formal right (no one in particular grants it) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
-| `thegom` | permission granted by a person (speaker by default or the /b/ grantor) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
-| `thegor` | tacit permission (no one objected; nobody granted it) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
-| `thumel` | required by a rule policy or law (no one in particular demands it) | [Requirement (thumel / thumem / thumer)](../sakes.md#requirement) | I |
-| `thumem` | required by a person (speaker by default or the /b/ who demands it) | [Requirement (thumel / thumem / thumer)](../sakes.md#requirement) | I |
-| `thumer` | expected by custom (no rule and no one demanding it) | [Requirement (thumel / thumem / thumer)](../sakes.md#requirement) | I |
+| `huxegul` | binding refusal by the affected (a settled opt-out) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
+| `huxegum` | consent refused outright by the affected (withdraws any earlier revocable yes) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
+| `huxegur` | consent presumed absent from the affected (they probably don't want it) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
+| `huxolel` | consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
+| `huxolem` | consent given outright by the affected (the /b/ or else the actor); revocable any time | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
+| `huxoler` | consent assumed or inferred from the affected (the /b/ or else the actor) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
+| `thegul` | disallowed by a rule policy or formal ban | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
+| `thegum` | forbidden by a person (speaker by default or the /b/ forbidder) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
+| `thegur` | tacitly disapproved (no one forbade it outright) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
+| `tholel` | permission from a rule policy or formal right (no one in particular grants it) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
+| `tholem` | permission granted by a person (speaker by default or the /b/ grantor) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
+| `tholer` | tacit permission (no one objected; nobody granted it) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
+| `thugal` | required by a rule policy or law (no one in particular demands it) | [Requirement (thugal / thugam / thugar)](../sakes.md#requirement) | I |
+| `thugam` | required by a person (speaker by default or the /b/ who demands it) | [Requirement (thugal / thugam / thugar)](../sakes.md#requirement) | I |
+| `thugar` | expected by custom (no rule and no one demanding it) | [Requirement (thugal / thugam / thugar)](../sakes.md#requirement) | I |
 <!-- /generated -->
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Permission, granted](../sakes.md#permission) | `zuzozen vewurel thegom.` | *Uzozen may walk; I'm allowing it.* | I |
-| [Permission, by someone](../sakes.md#permission) | `zuzozen vewurel thegom bolazun.` | *Olazun lets Uzozen walk.* | I |
-| [Permission, by rule](../sakes.md#permission) | `zuhelan vuhohol thegol.` | *Uhelan is allowed to sit.* | I |
-| [Tolerated](../sakes.md#permission) | `zolazun vezuvol thegor.` | *no one is stopping it* | I |
-| [Ask permission](../sakes.md#permission) | `yom zamun vuhohol thegom.` | *May I sit?* | I |
-| [Requirement, by rule](../sakes.md#requirement) | `zuzozen vewurel thumel.` | *The rules require Uzozen to walk.* | I |
-| [Requirement, by a person](../sakes.md#requirement) | `zuhelan vuhohol thumem bolazun.` | *Olazun makes Uhelan sit.* | I |
-| [Requirement, by custom](../sakes.md#requirement) | `zolazun vezuvol thumer.` | *Olazun is supposed to sleep.* | I |
-| [Consent](../sakes.md#consent): who it happens to, in `/b/` | `zuzozen vezuyel huxegom buhelan.` | *Uzozen tells, and Uhelan said yes.* | I |
-| [Binding consent](../sakes.md#consent) | `zuzozen vezuyel huxegol buhelan.` | *as Uhelan agreed in advance* | I |
-| [Assumed consent, several people](../sakes.md#consent) | `zuzozen vezuyel huxegor buhelan bolazun bal.` | *assuming Uhelan and Olazun are OK* | I |
-| [Consent, no `/b/`](../sakes.md#consent): only the actor | `zolazun vezuvol huxegom.` | *Olazun lets themself sleep.* | I |
-| [A promise](../sakes.md#consent) | `zamun vewurel huxegol.` | *I promise to walk.* (to you) | I |
-| [Promise to someone else](../sakes.md#consent) | `zamun vewurel huxegol el buhelan.` | *I promise Uhelan I'll walk.* | I |
-| [Check in](../sakes.md#consent) | `yom zuzozen vezuyel huxegom.` | *Are you still OK with this?* | I |
-| [Contrary to a stance](../sakes.md#contrary-to-stance): `uem` first | `zuzozen vewurel uem thedel.` | *Uzozen walks anyway.* | I |
+| [Permission, granted](../sakes.md#permission) | `zuzozen vowurel tholem.` | *Uzozen may walk; I'm allowing it.* | I |
+| [Permission, by someone](../sakes.md#permission) | `zuzozen vowurel tholem bolazun.` | *Olazun lets Uzozen walk.* | I |
+| [Permission, by rule](../sakes.md#permission) | `zahelan vuhohol tholel.` | *Ahelan is allowed to sit.* | I |
+| [Tolerated](../sakes.md#permission) | `zolazun vezuvol tholer.` | *no one is stopping it* | I |
+| [Ask permission](../sakes.md#permission) | `yom zuwon vuhohol tholem.` | *May I sit?* | I |
+| [Requirement, by rule](../sakes.md#requirement) | `zuzozen vowurel thugal.` | *The rules require Uzozen to walk.* | I |
+| [Requirement, by a person](../sakes.md#requirement) | `zahelan vuhohol thugam bolazun.` | *Olazun makes Ahelan sit.* | I |
+| [Requirement, by custom](../sakes.md#requirement) | `zolazun vezuvol thugar.` | *Olazun is supposed to sleep.* | I |
+| [Consent](../sakes.md#consent): who it happens to, in `/b/` | `zuzozen vezuyel huxolem bahelan.` | *Uzozen tells, and Ahelan said yes.* | I |
+| [Binding consent](../sakes.md#consent) | `zuzozen vezuyel huxolel bahelan.` | *as Ahelan agreed in advance* | I |
+| [Assumed consent, several people](../sakes.md#consent) | `zuzozen vezuyel huxoler bahelan bolazun bal.` | *assuming Ahelan and Olazun are OK* | I |
+| [Consent, no `/b/`](../sakes.md#consent): only the actor | `zolazun vezuvol huxolem.` | *Olazun lets themself sleep.* | I |
+| [A promise](../sakes.md#consent) | `zuwon vowurel huxolel.` | *I promise to walk.* (to you) | I |
+| [Promise to someone else](../sakes.md#consent) | `zuwon vowurel huxolel el bahelan.` | *I promise Ahelan I'll walk.* | I |
+| [Check in](../sakes.md#consent) | `yom zuzozen vezuyel huxolem.` | *Are you still OK with this?* | I |
+| [Contrary to a stance](../sakes.md#contrary-to-stance): `uem` first | `zuzozen vowurel uem thegul.` | *Uzozen walks anyway.* | I |
 
-The negatives use the same endings: `thedel` / `thedem` / `theder` forbid, `huxedel` / `huxedem` / `huxeder` refuse.
+The negatives use the same endings: `thegul` / `thegum` / `thegur` forbid, `huxegul` / `huxegum` / `huxegur` refuse.
 
 <!-- cheat-sheet: why-allowed -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`huxegol`](../sakes.md#consent) | a binding agreement | *by agreement* / *they signed on* | I |
-| [`huxegom`](../sakes.md#consent) | the affected said yes; they can take it back | *they agreed* | I |
-| [`huxegor`](../sakes.md#consent) | assumed or inferred | *I think they're OK with it* | I |
-| [`huxedel`](../sakes.md#consent) | a binding refusal | *they opted out* | I |
-| [`huxedem`](../sakes.md#consent) | the affected said no | *they refused* | I |
-| [`huxeder`](../sakes.md#consent) | presumed absent | *they probably don't want it* | I |
+| [`huxolel`](../sakes.md#consent) | a binding agreement | *by agreement* / *they signed on* | I |
+| [`huxolem`](../sakes.md#consent) | the affected said yes; they can take it back | *they agreed* | I |
+| [`huxoler`](../sakes.md#consent) | assumed or inferred | *I think they're OK with it* | I |
+| [`huxegul`](../sakes.md#consent) | a binding refusal | *they opted out* | I |
+| [`huxegum`](../sakes.md#consent) | the affected said no | *they refused* | I |
+| [`huxegur`](../sakes.md#consent) | presumed absent | *they probably don't want it* | I |
 
 ## Don't mix up {#dont-mix-up}
 
 | This | vs | That |
 |------|----|------|
-| `thoyem` *if* ([enough, not claimed](../causation.md#if)) | | `thavem` *because* ([enough, and a fact](../causation.md#only-because)) |
-| `thoyem` *if* ([other routes remain](../causation.md#only-if)) | | `tholum` *only if* ([the outcome needs it](../causation.md#only-if)) |
-| `thavem` *because* ([a cause, no blame](../causation.md#fault)) | | `thavel` *fault* ([someone did wrong](../causation.md#fault)) |
-| `thavem` *because* ([the condition](../causation.md#cause)) | | `thegem` *mechanism* ([how it is produced](../causation.md#cause)) |
-| `thegom` *may* ([anyone with standing allows it](../sakes.md#permission)) | | `huxegom` *the affected agreed* ([their own yes](../sakes.md#consent)) |
-| `thegom` *may* ([the act is allowed](../sakes.md#permission)) | | `thumem` *has to* ([the act is demanded](../sakes.md#requirement)) |
-| `thanathem` *ought to, for relatedness* ([advice for a sake](../sakes.md#sake-force)) | | `thanathom` *for relatedness* ([why it is done](../sakes.md#sake-preference)) |
-| `thanatham` *thank you* ([my sake is met](../sakes.md#thanks-sorry)) | | `thanathum behon` *I'm sorry* ([your sake is hurt](../sakes.md#thanks-sorry)) |
+| `thohom` *if* ([enough, not claimed](../causation.md#if)) | | `thahum` *because* ([enough, and a fact](../causation.md#only-because)) |
+| `thohom` *if* ([other routes remain](../causation.md#only-if)) | | `thebom` *only if* ([the outcome needs it](../causation.md#only-if)) |
+| `thahum` *because* ([a cause, no blame](../causation.md#fault)) | | `thahul` *fault* ([someone did wrong](../causation.md#fault)) |
+| `thahum` *because* ([the condition](../causation.md#cause)) | | `thewem` *mechanism* ([how it is produced](../causation.md#cause)) |
+| `tholem` *may* ([anyone with standing allows it](../sakes.md#permission)) | | `huxolem` *the affected agreed* ([their own yes](../sakes.md#consent)) |
+| `tholem` *may* ([the act is allowed](../sakes.md#permission)) | | `thugam` *has to* ([the act is demanded](../sakes.md#requirement)) |
+| `thawothem` *ought to, for relatedness* ([advice for a sake](../sakes.md#sake-force)) | | `thawothom` *for relatedness* ([why it is done](../sakes.md#sake-preference)) |
+| `thawotham` *thank you* ([my sake is met](../sakes.md#thanks-sorry)) | | `thawothum bawan` *I'm sorry* ([your sake is hurt](../sakes.md#thanks-sorry)) |

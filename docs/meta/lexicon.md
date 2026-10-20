@@ -17,7 +17,7 @@ npm run convert-word -- --lexicon --only LITERAL
 A hand-picked spelling bypasses the checks that placement runs. Placement:
 
 - keeps a row's root length, and gives a new row three letters only when it is overlay-backed ([root length](#root-length))
-- builds a five-letter root's last two letters from the row's `kind` and `shape` ([root tails](#root-tails)), and picks its first three letters to keep same-kind roots apart ([onset](#onset))
+- builds a root's last two letters from the row's `kind` and `shape` ([root tails](#root-tails)); a five-letter root's first three letters keep same-kind roots apart ([onset](#onset)), and a three-letter root's first vowel is chosen so overlay-group members never share their first two letters ([root length](#root-length))
 - skips roots already held by other rows and stems used in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv), and any root that would give a listed or hook compound a second split ([seams](#seams)). A new three-letter root also clears the holder check against the five-letter roots that stay put; five-letter rows placed in the same run are checked against the new three-letter spellings.
 - never spells a root with an English word the doc lint reads as English in code (*are*), since the retie refuses one
 - rewrites the overlay and compound rows that spell the old root, and writes `tmp/lexicon-retie-map.json` for `retie-docs`
@@ -79,7 +79,7 @@ When a root's spelling is not yet known (a proposal, a draft page, a planned ove
 
 ## Root length
 
-- **Three letters:** rows backed by an overlay, plus the marked pronouns. These are annealed so short roots stay apart from each other.
+- **Three letters:** rows backed by an overlay, plus the marked pronouns. These are annealed so short roots stay apart from each other. Inside one overlay group (one overlay kind on one PoS), no two share their first two letters. Roots of different kinds already differ in the second letter; roots of the same kind must differ in the first vowel. Each kind + shape holds at most four three-letter roots (`a e o u` first).
 - **Five letters:** every other row, spelled by its [root tail](#root-tails).
 
 A sense being common in English (a high word-frequency rank) does not earn a three-letter root.
@@ -88,9 +88,9 @@ A placed row keeps its length. So a row that gains its first overlay keeps its f
 
 ## Root tails {#root-tails}
 
-A five-letter root `V C V C V` ends in a **tail**: its second consonant names the **kind** of thing its concrete sense is, and its final vowel the thing's **job**. The learner-facing letter map, with each letter's anchor in the grammar, is in [compounds.md § root tails](../grammar/compounds.md#root-tails). Three-letter roots have no tail.
+A root ends in a **tail**: its last consonant names the **kind** of thing its concrete sense is, and its final vowel the thing's **job**. A five-letter root is `V C V | C V`; a three-letter root is `V | C V`. The learner-facing letter map, with each letter's anchor in the grammar, is in [compounds.md § root tails](../grammar/compounds.md#root-tails).
 
-The `kind` and `shape` columns of [`lexicon-published.csv`](../../data/lexicon-published.csv) record the call for each five-letter row, as a word (`creature`, `takes-away`), never as a letter; the letter map lives once in [`src/root-tails.ts`](../../src/root-tails.ts). `shape` is empty on a `named` row, whose final vowel is free, and both are empty on a three-letter row. The `size` column steers the middle vowel ([size](#size)). `npm test` fails on a five-letter row with no kind or shape, a missing or misplaced size, or a root that doesn't end in its tail. **Changing a row's kind, shape or size is a respelling:** rerun `convert-word --lexicon --only` on it, then the retie.
+The `kind` and `shape` columns of [`lexicon-published.csv`](../../data/lexicon-published.csv) record the call for each three- or five-letter row, as a word (`creature`, `takes-away`), never as a letter; the letter map lives once in [`src/root-tails.ts`](../../src/root-tails.ts). `shape` is empty on a `named` row, whose final vowel is free. The `size` column steers a five-letter row's middle vowel ([size](#size)) and stays empty on a three-letter row. `npm test` fails on a row with no kind or shape, a missing or misplaced size, or a root that doesn't end in its tail. **Changing a row's kind, shape or size is a respelling:** rerun `convert-word --lexicon --only` on it, then the retie.
 
 ### Kind {#kind}
 
@@ -118,7 +118,7 @@ When no job fits, `one` is **not** the default. Use the fallback: for a thing yo
 
 The size is how big the concrete sense is against a person, and it steers the root's **middle vowel**: `big` (**a**: about your size or bigger), `medium` (**o**: between your hand and you), `small` (**e**: no bigger than your hand), `none` (**u**: nothing you could measure: a substance, liquid, color, weather or direction; an act or gesture; a symbol, which works at any size; a time, number or notation). Judge the typical member (a dog is `medium`, an adult `big`); when unsure between two sizes, take `medium`. Religious symbols are all `none`.
 
-Every five-letter row needs a size except in `mind`, where every row would be `none`; `mind`, `named` and three-letter rows stay empty, and a `mind` row's middle vowel goes to the echo. In the mixed kinds, things get a measured size and the rest `none`: in `doing` a vehicle or toy versus an action or sport, in `person` a being versus an act, in `sign` a document versus a symbol, in `counting` a clock or instrument versus a time or number.
+Every five-letter row needs a size except in `mind`, where every row would be `none`; `mind`, `named` and three-letter rows stay empty, and a `mind` row's middle vowel goes to the echo. A three-letter root has no middle vowel, so size does not apply. In the mixed kinds, things get a measured size and the rest `none`: in `doing` a vehicle or toy versus an action or sport, in `person` a being versus an act, in `sign` a document versus a symbol, in `counting` a clock or instrument versus a time or number.
 
 It's a placement preference, not a check: the placer gives up the size vowel only in a crowded cell, and the tails report (`convert-word --report`) prints the share that match. Why size and not another reading: `root-tails.md` § middle vowel.
 
@@ -133,7 +133,7 @@ Rows are placed greedily in CSV order, then annealed; the run is seeded, so the 
 A five-letter root may have any consonant second, so two seams read by knowing the roots rather than by letter position. Placement keeps each to one reading, and `npm test` and `check-compounds` check both:
 
 - **Nine-letter dictionary words.** A stem is 3 + join + 5 or 5 + join + 3, and with **l / m / n / r** second both can fit. `validateCompoundRows` rejects a listed stem with two published-root splits, and placement skips a root that would make one.
-- **Holder hosts.** A five-letter root whose first four letters are a `/th/` holder host form (`ugur`) would read on `/th/` as that host + grade + a holder. Placement never gives a root such an onset.
+- **Holder hosts.** A five-letter root whose first four letters are a `/th/` holder host form (`egar`) would read on `/th/` as that host + grade + a holder. Placement never gives a root such an onset.
 
 Hook compounds are not a seam: only a five-letter root fuses with a hook (D-50), so a five-letter root with **l** or **m** second, plus **-l** or **-m**, never reads as a three-letter root + ending + hook, and its onset may be any three-letter root.
 

@@ -22,7 +22,7 @@ A quick look at [pronouns](../pronouns.md) and [plurality](../plurality.md) on o
 | [Their part, not them](../pronouns.md#share) | the same pointer with **-m** | `zaxam` | *what the doer did* | B |
 | [Pin one sense](../pronouns.md#resume-sense) | **-rl** concrete, **-rm** abstract | `dudozorl` | *the dog* (not the loyalty) | I |
 | [A label you chose](../pronouns.md#tag-pronouns) | role letter + `w` + tag vowel | `zwar` | *A* | I |
-| [The talk's topic](../pronouns.md#topic-pronoun) | `oza` + **-n** | `zozan` | *the topic* | I |
+| [The talk's topic](../pronouns.md#topic-pronoun) | `alo` + **-n** | `zalon` | *the topic* | I |
 
 A resume uses the **whole stem**: `dobahohar` is *the bedroom*, `dobahor` is *the bed*. It points at the **most recent** word with that stem.
 
@@ -50,8 +50,8 @@ Endings on a pointer: **-r** the same one, **-l** [a new one](../pronouns.md#a-n
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Same action again](../pronouns.md#cross-role-recast): change only the role letter | `zolazun vuzozer.` | *Olazun does the same with Uzozen.* | I |
-| [Each other](../pronouns.md#reciprocal) | `zuzozen zolazun zal vawebol hedam.` | *Uzozen and Olazun see each other.* | I |
-| [A new one with a new property](../pronouns.md#cross-role-recast) | `zolazun dar gudozor gabulol vawebol.` | *Olazun sees a black one.* | I |
+| [Each other](../pronouns.md#reciprocal) | `zuzozen zolazun zal vawebol hehem.` | *Uzozen and Olazun see each other.* | I |
+| [A new one with a new property](../pronouns.md#cross-role-recast) | `zolazun dar gudozor gubulol vawebol.` | *Olazun sees a black one.* | I |
 
 ### Tags {#tags}
 
@@ -80,9 +80,9 @@ Only an `/x/` word at the start of a sentence sets the [topic](../pronouns.md#to
 | [Return to an earlier topic](../pronouns.md#topic-return) | `xuzozer` | *back to Uzozen* | I |
 | [Return to the kind from before](../pronouns.md#topic-return) | `xudozor` | *back to the dog* | I |
 | [Clear the topic](../pronouns.md#topic) | `xuvewem` / `xuvedam` | *next* / *by the way* | I |
-| [The topic itself, in any slot](../pronouns.md#topic-pronoun) | `zozan` / `dozan` / `bozan` | *the topic* | I |
+| [The topic itself, in any slot](../pronouns.md#topic-pronoun) | `zalon` / `dalon` / `balon` | *the topic* | I |
 
-The topic pronoun is never a topic word or a resume (`xozan`, `xozar`, `zozar` are not sentences). A dropped subject is never the topic: write `zozan`.
+The topic pronoun is never a topic word or a resume (`xalon`, `xalor`, `zalor` are not sentences). A dropped subject is never the topic: write `zalon`.
 
 | [What a topic change resets](../pronouns.md#topic-resets) | Resets? | Stage |
 |----------------------------|---------|-------|
@@ -99,13 +99,13 @@ Role letter + the root + **-n** ([special pronouns](../pronouns.md#special-prono
 
 | Word | Means | In a slot | English | Same root as | Stage |
 |------|-------|-----------|---------|--------------|-------|
-| [`amun`](../pronouns.md#special-pronouns) | the speaker | `zamun` | *I* | `amul` *microphone* | B |
-| `ehon` | the one listening | `zehon` / `dehon` | *you* | `ehol` *headphones* | B |
-| `ahan` | speaker and addressees together | `zahan` | *we* (you and I) | `ahal` *handshake* | B |
-| `unan` | a nonspecific individual | `zunan` | *someone* | `unal` *neutral* | B |
-| [`oben`](../pronouns.md#generic-pronoun) | any person, as a rule | `zoben` | *one*, generic *you* | `obel` *person* | B |
+| [`uwon`](../pronouns.md#special-pronouns) | the speaker | `zuwon` | *I* | `uwol` *microphone* | B |
+| `awan` | the one listening | `zawan` / `dawan` | *you* | `awal` *headphones* | B |
+| `ayan` | speaker and addressees together | `zayan` | *we* (you and I) | `ayal` *handshake* | B |
+| `umon` | a nonspecific individual | `zumon` | *someone* | `umol` *neutral* | B |
+| [`eyon`](../pronouns.md#generic-pronoun) | any person, as a rule | `zeyon` | *one*, generic *you* | `eyol` *person* | B |
 
-**Notes:** As an object, *we* is `dahan`. `ehon` is always the person actually listening. `oben` takes no **-x**.
+**Notes:** As an object, *we* is `dayan`. `awan` is always the person actually listening. `eyon` takes no **-x**.
 
 ### Groups with **-x** {#groups}
 
@@ -115,11 +115,11 @@ Role letter + the root + **-n** ([special pronouns](../pronouns.md#special-prono
 | [**-lx** / **-mx**](../plurality.md#associative) | an indefinite group | `zagozolx` | *some cats* | B |
 | [**-lnx**](../word-endings.md#name-instance--ln) | some of a name | `duzozelnx` | *some Uzozens* | I |
 | [**-rx**](../plurality.md#associative) | someone mentioned, and associates | `zuzozerx` | *they* | B |
-| [speaker **-x**](../plurality.md#person-role-x) | the speaker and their people, you not included | `amunx` (`zamunx`, `damunx`) | *I and my people* | B |
-| [listener **-x**](../plurality.md#person-role-x) | the address set, speaker not included | `ehonx` (`zehonx`, `dehonx`) | *you all* | B |
-| [interlocutors **-x**](../plurality.md#person-role-x) | everyone here, and their people | `ahanx` | *we all* | B |
+| [speaker **-x**](../plurality.md#person-role-x) | the speaker and their people, you not included | `uwonx` (`zuwonx`, `duwonx`) | *I and my people* | B |
+| [listener **-x**](../plurality.md#person-role-x) | the address set, speaker not included | `awanx` (`zawanx`, `dawanx`) | *you all* | B |
+| [interlocutors **-x**](../plurality.md#person-role-x) | everyone here, and their people | `ayanx` | *we all* | B |
 
-Who counts as an associate is [open unless you say](../plurality.md#associate-resolution): a join or `ul` names it; otherwise a group already named, then the obvious group in the scene. Nonspecific `unan` takes no **-x**; *some people* is `zobelx`.
+Who counts as an associate is [open unless you say](../plurality.md#associate-resolution): a join or `ul` names it; otherwise a group already named, then the obvious group in the scene. Nonspecific `umon` takes no **-x**; *some people* is `zeyolx`.
 
 ### One act, one unit {#collective}
 
@@ -130,13 +130,13 @@ Who counts as an associate is [open unless you say](../plurality.md#associate-re
 | [Group, act left open](../plurality.md#verbs-v) | `zuzozenx vezuyol` | *Uzozen and associates sing* | I |
 | [One shared act](../plurality.md#verbs-v) | `zuzozenx vezuyolx` | *they sing as one performance* | I |
 | [Joint doing, others unnamed](../plurality.md#verbs-v) | `zuzozen vezuyolx` | *Uzozen sings jointly* | I |
-| [The group as one unit](../plurality.md#verbs-v) | `zavayal vewurelx` | *the family walks as one unit* | I |
-| [Property of each member](../plurality.md#adjectives-g) | `zavogal zulol zal garolom` | *the file-box and the toolbox are each heavy* | I |
-| [Property of the whole](../plurality.md#adjectives-g) | `zavogal zulol zal garolomx` | *heavy together* | I |
-| [Group-level size](../plurality.md#adjectives-g) | `zavayal gagalam` | *the family is vast* | I |
+| [The group as one unit](../plurality.md#verbs-v) | `zavayal vowurelx` | *the family walks as one unit* | I |
+| [Property of each member](../plurality.md#adjectives-g) | `zavogal zuwal zal garolom` | *the file-box and the toolbox are each heavy* | I |
+| [Property of the whole](../plurality.md#adjectives-g) | `zavogal zuwal zal garolomx` | *heavy together* | I |
+| [Group-level size](../plurality.md#adjectives-g) | `zavayal gogalam` | *the family is vast* | I |
 | [Members, plain](../plurality.md#adjectives-g) | `zavogalx garolom` | *the file-boxes are heavy* | I |
 | [Members, collectively](../plurality.md#adjectives-g) | `zavogalx garolomx` | *the file-boxes are heavy collectively* | I |
-| [Call a group](../plurality.md#vocatives-y) | `yehonx` | *hey, you all* | I |
+| [Call a group](../plurality.md#vocatives-y) | `yawanx` | *hey, you all* | I |
 
 ## Don't mix up {#dont-mix-up}
 
@@ -145,8 +145,8 @@ Who counts as an associate is [open unless you say](../plurality.md#associate-re
 | `zuzozer` *Uzozen, again* ([the stem, resumed](../pronouns.md#resume-r)) | | `zaxar` *the latest doer* ([by the part they played](../pronouns.md#role-pointers)) |
 | `duxar` *the same one* ([-r](../pronouns.md#a-new-one)) | | `duxal` *another one* ([-l](../pronouns.md#a-new-one)) |
 | `zaxar` *the person* ([-r](../pronouns.md#share)) | | `zaxam` *what they did* ([-m](../pronouns.md#share)) |
-| `zahan` *you and I* ([`aha`](../pronouns.md#special-pronouns)) | | `zamunx` *I and my people*, not you ([speaker -x](../plurality.md#person-role-x)) |
-| `zehon` *you* ([one listener](../pronouns.md#special-pronouns)) | | `zehonx` *you all* ([the address set](../plurality.md#person-role-x)) |
-| `zunan` *someone* ([tied to no event](../pronouns.md#special-pronouns)) | | `zaxur` *whoever did that* ([tied to one known event](../pronouns.md#whoever-it-was)) |
-| `zoben` *one*, people at large ([generic](../pronouns.md#generic-pronoun)) | | `zehon` *you*, the listener ([just them](../pronouns.md#special-pronouns)) |
-| `xuzozen` *now, about Uzozen* ([sets the topic](../pronouns.md#topic)) | | `zozan` *the topic* ([refers to it](../pronouns.md#topic-pronoun)) |
+| `zayan` *you and I* ([`aya`](../pronouns.md#special-pronouns)) | | `zuwonx` *I and my people*, not you ([speaker -x](../plurality.md#person-role-x)) |
+| `zawan` *you* ([one listener](../pronouns.md#special-pronouns)) | | `zawanx` *you all* ([the address set](../plurality.md#person-role-x)) |
+| `zumon` *someone* ([tied to no event](../pronouns.md#special-pronouns)) | | `zaxur` *whoever did that* ([tied to one known event](../pronouns.md#whoever-it-was)) |
+| `zeyon` *one*, people at large ([generic](../pronouns.md#generic-pronoun)) | | `zawan` *you*, the listener ([just them](../pronouns.md#special-pronouns)) |
+| `xuzozen` *now, about Uzozen* ([sets the topic](../pronouns.md#topic)) | | `zalon` *the topic* ([refers to it](../pronouns.md#topic-pronoun)) |

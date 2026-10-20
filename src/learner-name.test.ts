@@ -61,7 +61,7 @@ describe("suggestedNames", () => {
 describe("fillSelf", () => {
   it("fills words with the default speaker root", () => {
     assert.equal(DEFAULT_SELF_ROOT, CLOSED.microphone);
-    assert.equal(fillSelf("zSELFn vewurel."), `z${CLOSED.microphone}n vewurel.`);
+    assert.equal(fillSelf("zSELFn vowurel."), `z${CLOSED.microphone}n vowurel.`);
     assert.equal(fillSelf("SELFn."), `${CLOSED.microphone}n.`);
   });
 

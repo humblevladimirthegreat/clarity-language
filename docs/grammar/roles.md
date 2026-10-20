@@ -19,11 +19,11 @@ English *someone who teaches* names a person from what they do, from the same id
 
 The last letter is the ordinary [word ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** its abstract sense. `zaxuduyel` is *someone who teaches*; `zaxavuvul` is *someone who fights*; `zaxavuvum` is *someone who struggles*. No teaching or fight needs to come up earlier in the conversation, and the word says nothing about how often: one lesson is enough.
 
-When the event is a dictionary word built from two roots, the role compound takes the whole word as its stem: `zaxugulawebol` is *someone who reads*, from `ugulawebol` *read*.
+When the event is a dictionary word built from two roots, the role compound takes the whole word as its stem: `zaxegalawebol` is *someone who reads*, from `egalawebol` *read*.
 
-A noun that specifies the event goes in the same stem, before the event and joined to it with another **`x`**: `zaxudozoxewurel` is *someone who walks dogs* (the doer of *dog-walking*). The noun's part in the event is as open as in English (*dog walker*, *coffee maker*); for an exact part, use a [hook](hooks.md#extra-noun) or a second sentence. **-r** resumes the whole stem.
+A noun that specifies the event goes in the same stem, before the event and joined to it with another **`x`**: `zaxudozoxowurel` is *someone who walks dogs* (the doer of *dog-walking*). The noun's part in the event is as open as in English (*dog walker*, *coffee maker*); for an exact part, use a [hook](hooks.md#extra-noun) or a second sentence. **-r** resumes the whole stem.
 
-> `zaxudozoxewurel varuvel.`
+> `zaxudozoxowurel varuvel.`
 >
 > z-agent-x-dog-x-walk | v-run
 >
@@ -45,7 +45,7 @@ English *the one teaching* points at the doer of an event already mentioned. Put
 
 To build the **-r** form, take the whole stem of the earlier verb. In `vuhohol` (*sit*), the stem is **`uhoho`**, so *the one sitting* is `zaxuhohor`: subject **`z`**, doer **`ax`**, the stem **`uhoho`**, and **-r**.
 
-> `zuzozen vuhohol. zaxuhohor vewurel.`
+> `zuzozen vuhohol. zaxuhohor vowurel.`
 >
 > z-Uzozen | v-sit . z-←agent-x-sit | v-walk
 >
@@ -80,8 +80,8 @@ The same word can be a time. In `/h/`, `hexezuvol` is *at bedtime*.
 
 Once the conversation has a matching event, **-r** means the scene of **that** event (where or when it happened), not a kind of scene. The sentence with the scene word is a new claim about that place (who sees it, who punches it); it does not add a place to the first verb.
 
-> `zolazun vuyomul.`
-> `zuzozen dexuyomur vawebol.`
+> `zolazun varemul.`
+> `zuzozen dexaremur vawebol.`
 >
 > z-Olazun | v-scream
 > z-Uzozen | d-←scene-x-scream | v-see
@@ -108,8 +108,8 @@ You can name that party with no prior telling: `zoxezuyel` is someone told somet
 
 Some stems name a **relation** (who is bound to whom), not an action. The other person of that relation is the `/b/` word right after the relation word. The same **`o`** names that person from the relation stem (*the other party of the bond*).
 
-> `zuzozen ganam bolazun.`
-> `zoxanar varuvel.`
+> `zuzozen gawom bolazun.`
+> `zoxawor varuvel.`
 >
 > z-Uzozen | [g-bond | b-Olazun]
 > z-←recipient-x-bond | v-run
@@ -127,7 +127,7 @@ Some stems name a **relation** (who is bound to whom), not an action. The other 
 
 A role compound fills `/z/`, `/d/`, `/b/`, or `/ɡ/`. Under `/x/` it sets a [topic](pronouns.md#topic), as any compound does (`xaxuduyel` *now, about people who teach*), and under `/y/` with **-n** or **-r** it calls someone (`yaxobebun` calls the doctor).
 
-Its stem is always an event. A [special pronoun](pronouns.md#special-pronouns) such as `amun` (*the speaker*) names a person, not an event, so `zaxamun` is not a word. The same root on **-l** is an ordinary content word with a verb sense (*perform*), so it can be a stem: `zaxamul` is *someone who performs*.
+Its stem is always an event. A [special pronoun](pronouns.md#special-pronouns) such as `uwon` (*the speaker*) names a person, not an event, so `zaxuwon` is not a word. The same root on **-l** is an ordinary content word with a verb sense (*perform*), so it can be a stem: `zaxuwol` is *someone who performs*.
 
 With **-l**, **-m**, or **-n**, the word is **any** such participant: someone who does it, a place or time where it happens, someone it happens to. **-r** looks back to the latest verb, event noun, or relation with that whole stem (including a stem already inside a role compound) and names **this instance**. The vowel still picks which part you mean: doer, scene, undergoer, or extra `/b/` party.
 
@@ -143,7 +143,7 @@ A scene pointer names the place or time of the latest event. If that clause has 
 >
 > "Uzozen sleeps in a house. Olazun sees the house."
 
-With no place, a *during* time is the scene (`huwem bevulul`, *during the storm*). With neither, `dexar` is the event’s own place or time, as `dexezuvor` would be. A place wins over a time, and with two places the first one is the scene. *Before*, *after*, *until*, *by*, and an [as-of](relations.md#as-of) pair name a time the event is measured from, not its scene.
+With no place, a *during* time is the scene (`herem benulul`, *during the storm*). With neither, `dexar` is the event’s own place or time, as `dexezuvor` would be. A place wins over a time, and with two places the first one is the scene. *Before*, *after*, *until*, *by*, and an [as-of](relations.md#as-of) pair name a time the event is measured from, not its scene.
 
 **Compare with:** for the doer, the undergoer, or the extra party, a pointer looks back to whoever last had that part, skipping events without one ([role pointers](pronouns.md#role-pointers)). For the scene, it takes the latest event, whatever it has. Scene **`u`** (`zexur` *wherever it happened*) says nobody has named the place, where `zexar` is a place the conversation already gave.
 
@@ -213,12 +213,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
-| *Uhelan* | `uhelan` |
+| *Ahelan* | `ahelan` |
 | *guard* | `agayul` |
 | *tell* | `vezuyel` |
 | *punch* | `vanuvul` |
 | *fight* | `vavuvul` |
-| *scream* | `vuyomul` |
+| *scream* | `varemul` |
 | *see* | `vawebol` |
 | *run* | `varuvel` |
 
@@ -243,17 +243,17 @@ z-Uzozen | v-tell . z-←recipient-x-tell | v-sleep
 **3.** *Olazun punches Uzozen. The one punched screams.*
 
 ::: details Show answer
-`zolazun duzozen vanuvul. zuxanuvur vuyomul.`
+`zolazun duzozen vanuvul. zuxanuvur varemul.`
 
 z-Olazun | d-Uzozen | v-punch . z-←patient-x-punch | v-scream
 :::
 
-**4.** *Uhelan sees a construction site.*
+**4.** *Ahelan sees a construction site.*
 
 ::: details Show answer
-`zuhelan degohul vawebol.`
+`zahelan degohul vawebol.`
 
-z-Uhelan | d-construction | v-see
+z-Ahelan | d-construction | v-see
 :::
 
 **5.** *Uzozen is someone who constructs.*
@@ -282,20 +282,20 @@ z-guard | d-scene-x-construct | v-see
 *The guard sees a place where something is built.*
 :::
 
-**2.** `zuhelan veguyel. zaxeguyer dehobul vawebol.`
+**2.** `zahelan veguyel. zaxeguyer dehobul vawebol.`
 
 ::: details Show answer
-z-Uhelan | v-construct . z-←agent-x-construct | d-helmet | v-see
+z-Ahelan | v-construct . z-←agent-x-construct | d-helmet | v-see
 
-*Uhelan builds. The one building sees a helmet.*
+*Ahelan builds. The one building sees a helmet.*
 :::
 
-**3.** `zuzozen vavuvul. zuhelan dexavuvur vawebol.`
+**3.** `zuzozen vavuvul. zahelan dexavuvur vawebol.`
 
 ::: details Show answer
-z-Uzozen | v-fight . z-Uhelan | d-←scene-x-fight | v-see
+z-Uzozen | v-fight . z-Ahelan | d-←scene-x-fight | v-see
 
-*Uzozen fights. Uhelan sees the place where Uzozen fights.*
+*Uzozen fights. Ahelan sees the place where Uzozen fights.*
 :::
 
 **4.** `zolazun dagayul gaxezuvol vawebol.`
@@ -306,7 +306,7 @@ z-Olazun | [d-guard | g-agent-x-sleep] | v-see
 *Olazun sees a guard who sleeps.*
 :::
 
-**5.** `zuxanuvul vuyomul.`
+**5.** `zuxanuvul varemul.`
 
 ::: details Show answer
 z-patient-x-punch | v-scream
@@ -324,22 +324,22 @@ z-Uzozen | v-sleep | [in | b-construction] . z-Olazun | d-←scene.same | v-see
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Uhelan sees a place where someone sleeps.* `zuhelan dexezuvol vawebol.` or `zuhelan daxezuvol vawebol.`
+**1.** *Ahelan sees a place where someone sleeps.* `zahelan dexezuvol vawebol.` or `zahelan daxezuvol vawebol.`
 
 ::: details Show answer
-`zuhelan dexezuvol vawebol.`
+`zahelan dexezuvol vawebol.`
 
-z-Uhelan | d-scene-x-sleep | v-see
+z-Ahelan | d-scene-x-sleep | v-see
 
 Role vowel **`e`** names the scene; **`a`** would be someone who sleeps.
 :::
 
-**2.** *Uhelan sees someone punched.* `zuhelan duxanuvul vawebol.` or `zuhelan daxanuvul vawebol.`
+**2.** *Ahelan sees someone punched.* `zahelan duxanuvul vawebol.` or `zahelan daxanuvul vawebol.`
 
 ::: details Show answer
-`zuhelan duxanuvul vawebol.`
+`zahelan duxanuvul vawebol.`
 
-z-Uhelan | d-patient-x-punch | v-see
+z-Ahelan | d-patient-x-punch | v-see
 
 Role vowel **`u`** names who the punching happens to; **`a`** is who punches.
 :::
@@ -368,7 +368,7 @@ English *a teacher* says more than *someone who teaches*: teaching is that perso
 >
 > "A teacher runs."
 
-`zaxavuvuthel` is *a fighter*, and `zaxudozoxewurethel` is *a dog walker*. A role compound without **`the`** never makes that claim, so one fight does not make someone a fighter.
+`zaxavuvuthel` is *a fighter*, and `zaxudozoxowurethel` is *a dog walker*. A role compound without **`the`** never makes that claim, so one fight does not make someone a fighter.
 
 **Compare with:** a role compound takes only one addition after its stem, so a usual role (**`the`**) does not also take [ability](intention.md#role-ability). Other [scope vowels](predication.md#scope-role) go in the same spot: **`tha`** is *this time only*, **`thu`** is a teacher type.
 
@@ -418,7 +418,7 @@ A movement has three more parts: where it heads, where it comes out of, and the 
 >
 > "Uzozen sees a finish line."
 
-> `zolazun duoxewurel vawebol.`
+> `zolazun duoxowurel vawebol.`
 >
 > z-Olazun | d-path-x-walk | v-see
 >
@@ -464,7 +464,7 @@ Some events cost someone who is not the one acted on. When a wallet is stolen, t
 
 With **-r**, it is the one who pays for **that** event.
 
-> `zuzozen vurozum. zuexurozur vuyomul.`
+> `zuzozen vurozum. zuexurozur varemul.`
 >
 > z-Uzozen | v-steal . z-←bearer-x-steal | v-scream
 >
@@ -476,7 +476,7 @@ With **-r**, it is the one who pays for **that** event.
 
 Each two-vowel pair also makes a [role pointer](#role-pointers-family): leave out the stem, and pointer vowel **`a`** reads the latest event. If that clause has the matching hook (**`ael`**, **`oel`**, **`ual`**, **`uol`**, **`uel`**) with its `/b/`, the pointer is that `/b/`; otherwise it is the event’s own tool, goal, and so on.
 
-> `zuzozen vewurel oel bahehal. zolazun doexar vawebol.`
+> `zuzozen vowurel oel bahehal. zolazun doexar vawebol.`
 >
 > z-Uzozen | v-walk | [toward | b-house] . z-Olazun | d-←goal.same | v-see
 >
@@ -520,7 +520,7 @@ A person’s front is the direction they face. For an object, use the front its 
 
 The [sake](sakes.md#sake-inventory) roots are never a direction: after one of them, **`th`** starts a sake word, even when a root-shaped piece follows ([emotion compose](sakes.md#emotion-compose)).
 
-> `yel vewurel howuhethuzozen.`
+> `yel vowurel howuhethuzozen.`
 >
 > y-command | v-walk | h-west-th-Uzozen
 >
@@ -528,7 +528,7 @@ The [sake](sakes.md#sake-inventory) roots are never a direction: after one of th
 
 Bare arrow words are compass points on a north-up map:
 
-> `yel vewurel howuhel.`
+> `yel vowurel howuhel.`
 >
 > y-command | v-walk | h-west
 >
@@ -536,7 +536,7 @@ Bare arrow words are compass points on a north-up map:
 
 Speaker and listener roots are the facing person when you mean *my left* / *your left*:
 
-> `yel vewurel zehon howuhethehon.`
+> `yel vowurel zawan howuhethawan.`
 >
 > y-command | v-walk | z-listener | h-west-th-listener
 >
@@ -544,7 +544,7 @@ Speaker and listener roots are the facing person when you mean *my left* / *your
 
 For *their left*, put a [role pointer](pronouns.md#role-pointers) on **-r** after **`th`**: `howuhethaxar` is *on the latest doer's left*, and `howuhethaxer` is *on this sentence's own doer's left*.
 
-> `zuzozen vewurel. zolazun vuhohol howuhethaxar.`
+> `zuzozen vowurel. zolazun vuhohol howuhethaxar.`
 >
 > z-Uzozen | v-walk . z-Olazun | v-sit | h-west-th-←agent.same
 >
@@ -555,7 +555,7 @@ For *their left*, put a [role pointer](pronouns.md#role-pointers) on **-r** afte
 | PoS | slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region) | same slots as other content |
 | DIR | an arrow-rose root | *north* / *ahead*, … |
 | **`th`** | joins DIR to the viewpoint | viewpoint after **`th`** (cue: **th** ≈ *think*, whose point of view) |
-| ANCHOR | what sets the facing frame: [special](pronouns.md#special-pronouns) **`amu`** / **`eho`** / **`aha`**, a person’s name, a content **-r** of a person or oriented object, or a role pointer on **-r** | *Uzozen’s left*, *your left*, *the car’s left*, *their left* |
+| ANCHOR | what sets the facing frame: [special](pronouns.md#special-pronouns) **`uwo`** / **`awa`** / **`aya`**, a person’s name, a content **-r** of a person or oriented object, or a role pointer on **-r** | *Uzozen’s left*, *your left*, *the car’s left*, *their left* |
 | Ending | ordinary ending is written at the end of the whole compound; its reference is the viewpoint anchor, not the direction | viewpoint kind / hedge / name / resume |
 
 **Compare with:** naming a doer from an event puts a **vowel** left of **`x`** ([role compounds](#role-compounds): `zaxavuvul`). Viewpoint laterals put a **direction root** left of **`th`** and a facing person on the right.
@@ -569,7 +569,7 @@ The examples above used *west* / *left*. The other seven arrow roots work the sa
 |--------|-----|---------|-----|
 | **`onuhel`** | compass heading, or ahead on a face | *north* / *ahead* | ⬆️ *up-arrow*: map north, or ahead if facing is north |
 | **`azuhel`** | compass heading, or back on a face | *south* / *back* | ⬇️ *down-arrow*: map south, or back if facing is north |
-| **`odul`** | compass heading, or right on a face | *east* / *right* | ➡️ *right-arrow*: the sun’s path east, or right of facing |
+| **`ahel`** | compass heading, or right on a face | *east* / *right* | ➡️ *right-arrow*: the sun’s path east, or right of facing |
 | **`owuhel`** | compass heading, or left on a face | *west* / *left* | ⬅️ *left-arrow*: opposite east, or left of facing |
 | **`unuhel`** | compass heading, or forward-right on a face | *northeast* / *forward-right* | ↗️ *northeast-arrow*: between north and east |
 | **`anuhel`** | compass heading, or forward-left on a face | *northwest* / *forward-left* | ↖️ *northwest-arrow*: between north and west |
@@ -582,7 +582,7 @@ Indoor headings may follow a local map (building north). When you mean direction
 
 English *up* / *down* usually follows the pull of gravity, not anyone’s facing. Write **`ayuhe`** (skyward) or **`aduhe`** (toward the pull) as ordinary content words, with no **`th`** + facing person. Everyone shares that frame.
 
-> `yel vewurel hayuhel.`
+> `yel vowurel hayuhel.`
 >
 > y-command | v-walk | h-up
 >
@@ -605,17 +605,17 @@ English *up* / *down* usually follows the pull of gravity, not anyone’s facing
 
 English *left of the tree, from Uzozen’s view* needs both a facing person and a landmark. Put the facing person after **`th`**; put the tree, door, or wall in `/b/`. The `/b/` word is the landmark, not whose left it is.
 
-> `zugul gowuhethuzozen badalel.`
+> `zegal gowuhethuzozen bedalel.`
 >
 > z-book | [g-west-th-Uzozen | b-tree]
 >
 > "The book is left of the tree, from Uzozen’s view."
 
-A bare compass word plus `/b/` is the region on that side of the landmark (`gowuhel badalel` *west of the tree*).
+A bare compass word plus `/b/` is the region on that side of the landmark (`gowuhel bedalel` *west of the tree*).
 
 Gravity works the same way: bare **`aduhe`** + `/b/` is *under* the landmark, and bare **`ayuhe`** + `/b/` is *above* / *over* it.
 
-> `zudozol vezuvol haduhel badalel.`
+> `zudozol vezuvol haduhel bedalel.`
 >
 > z-dog | v-sleep | [h-down | b-tree]
 >
@@ -633,9 +633,9 @@ Gravity works the same way: bare **`aduhe`** + `/b/` is *under* the landmark, an
 | Agebon | Use | English |
 |--------|-----|---------|
 | Bare DIR | compass / gravity | `gowuhel` *west*; `gayuhel` *up* |
-| **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gowuhethehon` *listener-left* |
+| **`DIR th ANCHOR`** | that point on **ANCHOR’s** facing rose | `gowuhethawan` *listener-left* |
 | DIR + **`th`** + **`o`** + `/b/` | that point on the **landmark’s** own rose | `gazuhethol bahehal` *behind the house* |
-| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gowuhethuzozen badalel` *left of the tree, from Uzozen’s view* |
+| **complex `/ɡ/` + `/b/`** | region on a side **of a landmark** | `gowuhethuzozen bedalel` *left of the tree, from Uzozen’s view* |
 
 ### The landmark's own front (DIR + `th` + `o`) {#landmark-facing}
 
@@ -647,7 +647,7 @@ English *behind the house* means the house's own back, not a compass heading and
 >
 > "The dog sits behind the house."
 
-> `zuzozen vewurel honuhethol boyel.`
+> `zuzozen vowurel honuhethol bohol.`
 >
 > z-Uzozen | v-walk | [h-north-th-landmark | b-door]
 >
@@ -682,9 +682,9 @@ Write the ordinary [word ending](word-endings.md) at the end of the whole compou
 |--------|---------|
 | `gowuhel` | *west* (shared map) |
 | `gowuhethuzozen` | *Uzozen’s left* |
-| `gowuhethehon` | *your left* (listener facing) |
-| `gowuhethamun` | *my left* (speaker facing) |
-| `gowuhethahan` | *our left* (shared facing) |
+| `gowuhethawan` | *your left* (listener facing) |
+| `gowuhethuwon` | *my left* (speaker facing) |
+| `gowuhethayan` | *our left* (shared facing) |
 | `gayuhel` / `hayuhel` | gravity *up* |
 
 ### Practice {#intermediate-practice}
@@ -709,16 +709,16 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
-| *Uhelan* | `uhelan` |
+| *Ahelan* | `ahelan` |
 | *down* | `aduhel` |
 | *construct* | `veguyel` |
 | *swim* | `vazuvel` |
 | *write* | `varayel` |
-| *walk* | `vewurel` |
+| *walk* | `vowurel` |
 | *run* | `varuvel` |
 | *sit* | `vuhohol` |
 | *see* | `vawebol` |
-| *scream* | `vuyomul` |
+| *scream* | `varemul` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
@@ -730,12 +730,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Olazun | g-agent-x-theft-th-role
 :::
 
-**2.** *Uzozen writes. Uhelan sees what Uzozen writes with.*
+**2.** *Uzozen writes. Ahelan sees what Uzozen writes with.*
 
 ::: details Show answer
-`zuzozen varayel. zuhelan daexarayer vawebol.`
+`zuzozen varayel. zahelan daexarayer vawebol.`
 
-z-Uzozen | v-write . z-Uhelan | d-←instrument-x-write | v-see
+z-Uzozen | v-write . z-Ahelan | d-←instrument-x-write | v-see
 :::
 
 **3.** *Olazun goes. Uzozen sees where Olazun goes.*
@@ -749,17 +749,17 @@ z-Olazun | v-go . z-Uzozen | d-←goal-x-go | v-see
 **4.** *Olazun steals. The one who loses out screams.*
 
 ::: details Show answer
-`zolazun vurozum. zuexurozur vuyomul.`
+`zolazun vurozum. zuexurozur varemul.`
 
 z-Olazun | v-steal . z-←bearer-x-steal | v-scream
 :::
 
-**5.** *Uhelan, walk left.* (Uzozen's left)
+**5.** *Ahelan, walk left.* (Uzozen's left)
 
 ::: details Show answer
-`yel vewurel zuhelan howuhethuzozen.`
+`yel vowurel zahelan howuhethuzozen.`
 
-y-command | v-walk | z-Uhelan | h-west-th-Uzozen
+y-command | v-walk | z-Ahelan | h-west-th-Uzozen
 :::
 
 **6.** *The boat sits west of the island.*
@@ -788,15 +788,15 @@ z-Uzozen | v-swim | [h-down | b-boat]
 *Uzozen swims under the boat.*
 :::
 
-**3.** `zuhelan veguyel. zolazun daoxeguyer vawebol.`
+**3.** `zahelan veguyel. zolazun daoxeguyer vawebol.`
 
 ::: details Show answer
-z-Uhelan | v-construct . z-Olazun | d-←result-x-construct | v-see
+z-Ahelan | v-construct . z-Olazun | d-←result-x-construct | v-see
 
-*Uhelan builds. Olazun sees what Uhelan built.*
+*Ahelan builds. Olazun sees what Ahelan built.*
 :::
 
-**4.** `zuzozen vewurel. zolazun duoxewurer vawebol.`
+**4.** `zuzozen vowurel. zolazun duoxowurer vawebol.`
 
 ::: details Show answer
 z-Uzozen | v-walk . z-Olazun | d-←path-x-walk | v-see
@@ -812,12 +812,12 @@ z-Uzozen | v-go | [toward | b-island] . z-Olazun | d-←goal.same | v-see
 *Uzozen goes toward the island. Olazun sees the island.*
 :::
 
-**6.** `zuhelan varuvel. zuzozen vuhohol howuhethaxar.`
+**6.** `zahelan varuvel. zuzozen vuhohol howuhethaxar.`
 
 ::: details Show answer
-z-Uhelan | v-run . z-Uzozen | v-sit | h-west-th-←agent.same
+z-Ahelan | v-run . z-Uzozen | v-sit | h-west-th-←agent.same
 
-*Uhelan runs. Uzozen sits on Uhelan's left.*
+*Ahelan runs. Uzozen sits on Ahelan's left.*
 :::
 
 #### Pick one {#intermediate-pick-one}
@@ -832,12 +832,12 @@ z-Uzozen | v-sit | [h-west-th-landmark | b-island]
 **`tho`** turns the arrow to the island's own facing; bare `howuhel` is *west of the island*.
 :::
 
-**2.** *Uhelan sees something to write with.* `zuhelan daexarayel vawebol.` or `zuhelan daoxarayel vawebol.`
+**2.** *Ahelan sees something to write with.* `zahelan daexarayel vawebol.` or `zahelan daoxarayel vawebol.`
 
 ::: details Show answer
-`zuhelan daexarayel vawebol.`
+`zahelan daexarayel vawebol.`
 
-z-Uhelan | d-instrument-x-write | v-see
+z-Ahelan | d-instrument-x-write | v-see
 
 **`ae`** names the instrument; **`ao`** would be something written, the result.
 :::

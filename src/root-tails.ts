@@ -1,7 +1,8 @@
 /**
- * Root tails: a five-letter root `V C V | C V` ends in a tail, the second consonant naming the row's
- * kind and the final vowel its job. The `kind` and `shape` columns of `data/lexicon-published.csv`
- * record each five-letter row's tail; the `size` column steers the middle vowel. This file owns the letter map and the checks
+ * Root tails: a root ends in a tail, the last consonant naming the row's kind and the final vowel
+ * its job. A five-letter root is `V C V | C V`; a three-letter root is `V | C V` (no size). The
+ * `kind` and `shape` columns of `data/lexicon-published.csv` record each row's tail; the `size`
+ * column steers a five-letter row's middle vowel. This file owns the letter map and the checks
  * {@link validateRootTails} runs; the placer is src/root-tails-place.ts. A `named` row (a country or
  * territory) takes a place-name root instead (src/place-root.ts), with no tail.
  */
@@ -106,10 +107,11 @@ export function holderClash(root: string, holderHosts: ReadonlySet<string>): boo
 export type TailError = { key: string; reason: string };
 
 /**
- * Checks `npm test` and `check-compounds` run over the published lexicon: every five-letter row has a
- * kind and shape from their closed sets, a size unless its kind is unsized, and a root that ends in its
- * tail and clears the holder check; a three-letter row has none of the three; a `named` row
- * has no shape or size and a place-name root no other place shares. The middle vowel is not checked. Listed compounds that split two ways are `validateCompoundRows`'.
+ * Checks `npm test` and `check-compounds` run over the published lexicon: every three- or five-letter
+ * row has a kind and shape from their closed sets and a root that ends in its tail; a five-letter row
+ * also has a size unless its kind is unsized, and clears the holder check; a three-letter row has no
+ * size; a `named` row has no shape or size and a place-name root no other place shares. The middle
+ * vowel is not checked. Listed compounds that split two ways are `validateCompoundRows`'.
  */
 export function validateRootTails(
   published: readonly PublishedRow[],
@@ -132,8 +134,18 @@ export function validateRootTails(
       places.set(row.root, key);
       continue;
     }
+    if (row.root.length === 3) {
+      const fields = tailFieldsError(kind, shape);
+      if (fields) errors.push({ key, reason: fields });
+      else {
+        const tail = tailOf(kind as Kind, shape as Shape);
+        if (row.root.slice(1) !== tail) errors.push({ key, reason: `root ${row.root} does not end in its tail ${tail}` });
+      }
+      if (size) errors.push({ key, reason: `a three-letter row has no size (got ${size})` });
+      continue;
+    }
     if (row.root.length !== 5) {
-      if (kind || shape || size) errors.push({ key, reason: `a ${row.root.length}-letter root has no kind, shape or size` });
+      errors.push({ key, reason: `a ${row.root.length}-letter root has no kind, shape or size` });
       continue;
     }
     const fields = tailFieldsError(kind, shape);

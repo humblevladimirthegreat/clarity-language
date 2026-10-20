@@ -75,7 +75,7 @@ z-Uzozen | v-sit
     const end = md.indexOf("## Intermediate", start);
     const slice = md.slice(start, end);
     const out = padExerciseSpoilerBlanks(slice);
-    assert.match(out, /`zuhelan zuzozen zoel guzezam\.`\n\n\[z-Uhelan/);
-    assert.match(out, /\[z-Uhelan \| z-rank\/more \| g-agility\]\n\n\*Uhelan is the most agile\.\*/);
+    assert.match(out, /`zahelan zuzozen zoel guzezam\.`\n\n\[z-Ahelan/);
+    assert.match(out, /\[z-Ahelan \| z-rank\/more \| g-agility\]\n\n\*Ahelan is the most agile\.\*/);
   });
 });

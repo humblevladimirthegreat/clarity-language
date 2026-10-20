@@ -15,54 +15,54 @@ const CLOSED_ROWS = {
   // house cast
   swan: { emoji: "🦢", root: "uzoze" },
   lion: { emoji: "🦁", root: "olazu" },
-  hibiscus: { emoji: "🌺", root: "uhela" },
+  hibiscus: { emoji: "🌺", root: "ahela" },
   // discourse-role specials (**-n**)
-  microphone: { emoji: "🎤", root: "amu" },
-  headphones: { emoji: "🎧", root: "eho" },
-  handshake: { emoji: "🤝", root: "aha" },
-  neutral: { emoji: "😐", root: "una" },
+  microphone: { emoji: "🎤", root: "uwo" },
+  headphones: { emoji: "🎧", root: "awa" },
+  handshake: { emoji: "🤝", root: "aya" },
+  neutral: { emoji: "😐", root: "umo" },
   // topic pronoun (`zozan`, pronouns.md#topic-pronoun) and generic pronoun (`zoben`)
-  star: { emoji: "⭐", root: "oza" },
-  person: { emoji: "🧑", root: "obe" },
+  star: { emoji: "⭐", root: "alo" },
+  person: { emoji: "🧑", root: "eyo" },
   // the language's own name
   glasses: { emoji: "👓", root: "agebo" },
   // greeting turn (`yeweval`)
   wave: { emoji: "👋", root: "ewuya" },
   // *during* (`huwem`): its `/b/` can be a role pointer's scene
-  gemini: { emoji: "♊", root: "uwe" },
+  gemini: { emoji: "♊", root: "ere" },
   // `/x/` linkers
   zebra: { emoji: "🦓", root: "ezo" },
-  clock: { emoji: "🕰️", root: "agore" },
+  clock: { emoji: "🕰️", root: "egore" },
   film: { emoji: "🎞️", root: "uvewe" },
   construction: { emoji: "🚧", root: "egohu" },
   fries: { emoji: "🍟", root: "uveda" },
   // compass arrows (east is also *therefore*)
   north: { emoji: "⬆️", root: "onuhe" },
   northeast: { emoji: "↗️", root: "unuhe" },
-  east: { emoji: "➡️", root: "odu" },
+  east: { emoji: "➡️", root: "ahe" },
   southeast: { emoji: "↘️", root: "ezuhe" },
   south: { emoji: "⬇️", root: "azuhe" },
   southwest: { emoji: "↙️", root: "uzuhe" },
   west: { emoji: "⬅️", root: "owuhe" },
   northwest: { emoji: "↖️", root: "anuhe" },
   // no channel on `/th/` (knowing.md#evidentiality): a record is REPORTED, a tale NOTIONAL
-  record: { emoji: "⏺️", root: "ere" },
-  scroll: { emoji: "📜", root: "oze" },
+  record: { emoji: "⏺️", root: "ego" },
+  scroll: { emoji: "📜", root: "oge" },
   // no intention on `/h/` (intention.md#plan): PLAN and DECISION are `/th/` stances
-  map: { emoji: "🗺️", root: "ama" },
-  check: { emoji: "✅", root: "ehu" },
+  map: { emoji: "🗺️", root: "age" },
+  check: { emoji: "✅", root: "ogo" },
   // template sample filler
-  walk: { emoji: "🚶", root: "ewure" },
+  walk: { emoji: "🚶", root: "owure" },
   // the nine sake roots (sakes.md#sake-inventory); knot, tool and ballot are also template sample fillers
-  ballot: { emoji: "🗳️", root: "ahu" },
-  tool: { emoji: "🧰", root: "ulo" },
-  lightbulb: { emoji: "💡", root: "ado" },
-  compass: { emoji: "🧭", root: "ame" },
-  knot: { emoji: "🪢", root: "ana" },
-  present: { emoji: "🎁", root: "ebe" },
-  strawberry: { emoji: "🍓", root: "ozo" },
-  lungs: { emoji: "🫁", root: "oyu" },
-  egg: { emoji: "🥚", root: "ega" },
+  ballot: { emoji: "🗳️", root: "aga" },
+  tool: { emoji: "🧰", root: "uwa" },
+  lightbulb: { emoji: "💡", root: "owo" },
+  compass: { emoji: "🧭", root: "ure" },
+  knot: { emoji: "🪢", root: "awo" },
+  present: { emoji: "🎁", root: "ewa" },
+  strawberry: { emoji: "🍓", root: "odo" },
+  lungs: { emoji: "🫁", root: "oba" },
+  egg: { emoji: "🥚", root: "uda" },
 } as const satisfies Record<string, ClosedRow>;
 
 export type ClosedName = keyof typeof CLOSED_ROWS;

@@ -275,7 +275,7 @@ Do not hold `u`: it is the undo vowel, so a held `u` can sound like a denial. A 
 
 - Citation (root + ending, no sentence): [word-endings.md](word-endings.md)
 - Role letters in a clause: [clause.md](clause.md#role-letters)
-- Root tails (what a five-letter root's last two letters hint at): [compounds.md](compounds.md#root-tails)
+- Root tails (what a root's last two letters hint at): [compounds.md](compounds.md#root-tails)
 - Numbers (role letter + `r` exception and [digit syllables](numbers.md#counts)): [numbers.md](numbers.md)
 - Mention spans (letter as form in a clause): [spans.md](spans.md)
 - Mid-word `x` and `th`: [compounds.md](compounds.md)

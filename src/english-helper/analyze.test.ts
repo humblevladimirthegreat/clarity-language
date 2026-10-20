@@ -265,8 +265,8 @@ describe("could not", () => {
   it("lists both couldn't jobs for the modal and its negative", () => {
     const slot = slots("She could not swim.").find((s) => s.text === "could not")!;
     const links = slot.suggestions.filter((s): s is JobSuggestion => s.kind === "job").map((j) => j.form);
-    assert.ok(links.some((f) => f.includes("henom")));
-    assert.ok(links.some((f) => f.includes("hudum")));
+    assert.ok(links.some((f) => f.includes("helam")));
+    assert.ok(links.some((f) => f.includes("howam")));
   });
 });
 

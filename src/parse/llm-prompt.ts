@@ -110,7 +110,7 @@ export const GLOSS_READER = {
     ONE: "people in general (one, you)",
   } as Record<string, string>,
   rules: [
-    "Capitalized words like Uzozen, Olazun, Uhelan are personal names.",
+    "Capitalized words like Uzozen, Olazun, Ahelan are personal names.",
     "No tense is marked on the verb. Use the present by default. Use the past when the gloss puts the event before now (a past date or day, MEMORY, RESIDUE, FORMER, a past as-of) or reports an event that is over (hearsay or clues about something that happened, a quote). Use will for a forecast or a later date. Never add a time word the gloss does not have.",
     "Keep vague things vague: do not add a gender, a time, or a count the gloss leaves open. Use they / them for a person whose gender is not given.",
   ],

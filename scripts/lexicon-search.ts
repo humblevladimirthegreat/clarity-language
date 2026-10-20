@@ -71,7 +71,7 @@ function printUsage(): void {
 Examples:
   npm run lexicon-search -- happy
   npm run lexicon-search -- uhunum --limit 10
-  npm run lexicon-search -- --json uze`);
+  npm run lexicon-search -- --json ezo`);
 }
 
 function formatOverlayList(result: LexiconSearchResult): string {

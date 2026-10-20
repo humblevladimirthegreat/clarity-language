@@ -51,7 +51,7 @@ The same onsets as the respelled digit syllables in `number-respelling.md`:
 | 9 | **n** | nu |
 | 0 | **m** | ma |
 
-Vowels never encode a digit. The same skeleton with different vowels is the **same number**: `egule` *gold*, `ogoro` *guitar*, `ageda` *cutlery* and `ogemu` *cold* are all **32**. Use that freedom to pick a vivid picture; don't treat `u` / `a` / `o` / `e` as extra digits.
+Vowels never encode a digit. The same skeleton with different vowels is the **same number**: `ugule` *gold*, `ogoro` *guitar*, `ageda` *cutlery* and `ogomu` *cold* are all **32**. Use that freedom to pick a vivid picture; don't treat `u` / `a` / `o` / `e` as extra digits.
 
 ## Payload vs silent
 
@@ -104,13 +104,13 @@ Decoding is unique. That is the gap in the English Major system this closes.
 | 5 letters `VCVCV`, two digit letters | 2 onsets | **00–99** |
 | Dictionary compound | 3–5 onsets | long chunk (optional) |
 
-Three-letter roots with a filler consonant (`oye` *door*) and five-letter roots with two fillers (`oyevo` *yoyo*) carry no digit.
+Three-letter roots with a filler consonant (`oho` *door*) and five-letter roots with two fillers (`oyevo` *yoyo*) carry no digit.
 
 Phone-style groups already match how they're spoken (`555,123,4567`): one image per comma group, or 2-digit chunks with the 3-digit groups split 2+1.
 
 **2381** → **23 | 81**: `zodegel` *ticket*, `zorebol` *ring*.
 
-**5970** → **59 | 70**: `zezwedzerlandal` *Swiss flag*, `zolamal` *laugh*. A root's second consonant is its kind, so **59** is always a named root (a flag) with **z** first, and **70** a mind-and-feeling root with **l** first.
+**5970** → **59 | 70**: `zezwedzerlandal` *Swiss flag*, `zulamal` *laugh*. A root's second consonant is its kind, so **59** is always a named root (a flag) with **z** first, and **70** a mind-and-feeling root with **l** first.
 
 Don't encode the decimal point. Use two scenes (integer, then fraction) or two palace slots.
 
@@ -183,7 +183,7 @@ Working examples:
 | Word | Payload | Digits |
 |------|---------|--------|
 | `zabedol` *pear* | b d | **12** |
-| `zabolol` *plant* | b l | **17** |
+| `zobolol` *plant* | b l | **17** |
 | `zodegel` *ticket* | d g | **23** |
 | `zagebol` *glasses* | g b | **31** |
 | `zuvogal` *frame* | v g | **43** |

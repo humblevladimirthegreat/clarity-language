@@ -17,7 +17,7 @@ With a handful of drop-ins, your English now says:
 
 Every drop-in you learned is a real Agebon word, spelled the same way. In the full language they sit inside sentences built for them, and they stack: one sentence can carry a tone, a channel, a try, and a sake at once.
 
-> `;zolazun thodom hudur vezuyol thozothar.`
+> `;zolazun thugom howar vezuyol thodothar.`
 >
 > ;z-Olazun | th-LIVE | h-ATTEMPT-trial | v-sing | th-pleasure-met-immediate
 >

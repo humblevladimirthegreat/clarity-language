@@ -16,7 +16,7 @@ const tables = createClassifyTables(
 
 describe("inspectText", () => {
   it("tokenizes zuzozen with PoS, named ending, and published gloss", () => {
-    const result = inspectText("zuzozen vewurel.", tables);
+    const result = inspectText("zuzozen vowurel.", tables);
     const first = result.tokens[0];
     assert.equal(first?.kind, "word");
     if (first?.kind !== "word") return;
@@ -75,7 +75,7 @@ describe("inspectText", () => {
   });
 
   it("keeps a Peggy failure as an error token beside valid words", () => {
-    const result = inspectText("zuzozen zolovexrabal vewurel.", tables);
+    const result = inspectText("zuzozen zolovexrabal vowurel.", tables);
     const kinds = result.tokens.map((token) => token.kind);
     assert.deepEqual(kinds, ["word", "error", "word", "punct"]);
     const err = result.tokens[1];
@@ -87,7 +87,7 @@ describe("inspectText", () => {
   });
 
   it("surfaces a sentence warning when words parse but the clause does not", () => {
-    const result = inspectText("zuzozen vewurel yol.", tables);
+    const result = inspectText("zuzozen vowurel yol.", tables);
     assert.ok(result.tokens.some((token) => token.kind === "word"));
     assert.ok(result.sentenceWarning);
     assert.equal(result.constructions.length, 0);
@@ -108,14 +108,14 @@ describe("inspectText", () => {
   });
 
   it("reads the mention marker before a span", () => {
-    const result = inspectText("glelel z<kimchi> gamezom.", tables);
-    const marker = result.tokens.find((token) => token.kind === "word" && token.raw === "glelel");
+    const result = inspectText("glegel z<kimchi> gamezom.", tables);
+    const marker = result.tokens.find((token) => token.kind === "word" && token.raw === "glegel");
     assert.ok(marker?.kind === "word");
     assert.equal(marker.word.reading, "mention");
   });
 
   it("links -r to its antecedent", () => {
-    const result = inspectText("zolazun vewurel. zolazur vuhohol.", tables);
+    const result = inspectText("zolazun vowurel. zolazur vuhohol.", tables);
     const pronoun = result.tokens.find((token) => token.kind === "word" && token.raw === "zolazur");
     assert.equal(pronoun?.kind, "word");
     if (pronoun?.kind !== "word") return;
@@ -125,7 +125,7 @@ describe("inspectText", () => {
   });
 
   it("Why links hook compounds", () => {
-    const token = inspectText("vewurelul", tables).tokens[0];
+    const token = inspectText("vowurelul", tables).tokens[0];
     assert.equal(token?.kind, "word");
     if (token?.kind !== "word") return;
     assert.equal(token.why?.line, "hook compound");
@@ -134,7 +134,7 @@ describe("inspectText", () => {
   });
 
   it("Why distinguishes sakes from role compounds", () => {
-    const sake = inspectText("thahuthal", tables).tokens[0];
+    const sake = inspectText("thagathal", tables).tokens[0];
     assert.equal(sake?.kind, "word");
     if (sake?.kind !== "word") return;
     assert.equal(sake.why?.line, "sakes (sake + th)");
@@ -150,7 +150,7 @@ describe("inspectText", () => {
 
 describe("inspectText — phrase brackets", () => {
   it("marks bracket opens and closes on word tokens", () => {
-    const shown = inspectText("yael zamun zam zehon zal gozumol.", tables)
+    const shown = inspectText("yael zuwon zam zawan zal guzemol.", tables)
       .tokens.filter((token) => token.kind === "word")
       .map((token) =>
         token.kind === "word"
@@ -158,12 +158,12 @@ describe("inspectText — phrase brackets", () => {
           : "",
       )
       .join(" ");
-    assert.equal(shown, "yael [[zamun zam] zehon zal gozumol]");
+    assert.equal(shown, "yael [[zuwon zam] zawan zal guzemol]");
   });
 
   it("brackets a mention marker with its span", () => {
-    const tokens = inspectText("glelel z<kimchi> gamezom.", tables).tokens;
-    const marker = tokens.find((token) => token.raw === "glelel");
+    const tokens = inspectText("glegel z<kimchi> gamezom.", tables).tokens;
+    const marker = tokens.find((token) => token.raw === "glegel");
     assert.ok(marker?.kind === "word");
     assert.deepEqual(marker.brackets?.open, ["["]);
   });

@@ -10,7 +10,7 @@ Start from a thanks or sorry word from Thanks and sorry that say why: `th` + sak
 
 The word now has two **-l / -m / -r** slots: the ending from Thanks and sorry that say why stays in the middle, and the motion ending goes last.
 
-| `thulo` | `thu` | `r` | `ao` | `r` |
+| `thuwa` | `thu` | `r` | `ao` | `r` |
 |---------|-------|-----|------|-----|
 | competence | unmet | for now | over the room (locus) | surging (motion) |
 
@@ -39,19 +39,19 @@ The motion endings are the settled-to-passing scale applied to water: still wate
 
 ## Examples {#examples}
 
-> We shipped the draft `thulothamar`.  
-> The review is tomorrow `thulothuraor`.  
-> He rewrote my memo `thahuthumuem`.  
-> My sister got laid off `thahuthulem`.  
-> `thulothuruol`, and I can't say why.
+> We shipped the draft `thuwathamar`.  
+> The review is tomorrow `thuwathuraor`.  
+> He rewrote my memo `thagathumuem`.  
+> My sister got laid off `thagathulem`.  
+> `thuwathuruol`, and I can't say why.
 
 | Drop-in | What it says | Instead of | The three parts |
 |---------|--------------|------------|-----------------|
-| `thulothamar` | a rush of *I pulled it off*, kept to myself | *proud* | competence met; held inside; surging |
-| `thulothuraor` | *can I measure up?* hanging over everything, in waves, for now | *anxious* | competence at stake for now; over the room; surging |
-| `thahuthumuem` | a steady push back at losing my say, while it can still change | *objecting* | autonomy unmet; pushing back; flowing |
-| `thahuthulem` | a steady ache on her behalf: her say was taken for good | *upset for her* | autonomy unmet for good; on her behalf; flowing |
-| `thulothuruol` | a quiet *can I handle this?* from nowhere I can point to | *uneasy* | competence at stake for now; can't place it; still |
+| `thuwathamar` | a rush of *I pulled it off*, kept to myself | *proud* | competence met; held inside; surging |
+| `thuwathuraor` | *can I measure up?* hanging over everything, in waves, for now | *anxious* | competence at stake for now; over the room; surging |
+| `thagathumuem` | a steady push back at losing my say, while it can still change | *objecting* | autonomy unmet; pushing back; flowing |
+| `thagathulem` | a steady ache on her behalf: her say was taken for good | *upset for her* | autonomy unmet for good; on her behalf; flowing |
+| `thuwathuruol` | a quiet *can I handle this?* from nowhere I can point to | *uneasy* | competence at stake for now; can't place it; still |
 
 ## Practice {#practice}
 
@@ -60,19 +60,19 @@ Build the feeling word from the parts in the note.
 **1.** *My friend remembered my favorite song.* (relatedness met, default ending; held inside; surging)
 
 ::: details Show answer
-My friend remembered my favorite song `thanathamar`.
+My friend remembered my favorite song `thawothamar`.
 :::
 
 **2.** *The meeting ran two hours over.* (autonomy unmet, default ending; pushing back; flowing)
 
 ::: details Show answer
-The meeting ran two hours over `thahuthumuem`.
+The meeting ran two hours over `thagathumuem`.
 :::
 
 **3.** How you feel right now, with no clause. (purpose unmet, default ending; held inside; still)
 
 ::: details Show answer
-`thamethumal`.
+`thurethumal`.
 :::
 
 <!-- Source (editors): sakes.md#emotion-compose, sakes.md#feeling-no-object. -->

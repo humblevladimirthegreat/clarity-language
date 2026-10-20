@@ -18,11 +18,11 @@ When English would say *Uzozen is more challenging than Olazun*, you put two peo
 >
 > "Uzozen is more challenging than Olazun."
 
-> `zuhelan zuzozen zel gelazom.`
+> `zahelan zuzozen zel gelazom.`
 >
-> [z-Uhelan | z-Uzozen | z-rank/more | g-big]
+> [z-Ahelan | z-Uzozen | z-rank/more | g-big]
 >
-> "Uhelan is bigger than Uzozen."
+> "Ahelan is bigger than Uzozen."
 
 ### Superlatives (`zel` + one name)
 <a id="superlatives"></a>
@@ -35,18 +35,18 @@ When English would say *the most challenging*, you are still ranking, but you na
 >
 > "Uzozen is the most challenging."
 
-> `zuhelan zel gozumol.`
+> `zahelan zel guzemol.`
 >
-> [z-Uhelan | z-rank/more | g-sleepy]
+> [z-Ahelan | z-rank/more | g-sleepy]
 >
-> "Uhelan is the sleepiest."
+> "Ahelan is the sleepiest."
 
 ### Degree (*much* / *slightly*)
 <a id="degree"></a>
 
 English *much more* / *slightly more* adds **how large the gap is**, without giving a number. Write that extra detail as `/w/` immediately before the same shared adjective.
 
-> `zuzozen zolazun zel wehalal gamahum.`
+> `zuzozen zolazun zel wohalal gamahum.`
 >
 > [z-Uzozen | z-Olazun | z-rank/more | [w-ocean | g-challenge]]
 >
@@ -65,19 +65,19 @@ When English would say *as challenging as*, you are not picking a winner. You ar
 >
 > "Uzozen is as challenging as Olazun."
 
-> `zolazun zuhelan zoel gozumol.`
+> `zolazun zahelan zoel guzemol.`
 >
-> [z-Olazun | z-Uhelan | z-equal-rank | g-sleepy]
+> [z-Olazun | z-Ahelan | z-equal-rank | g-sleepy]
 >
-> "Olazun is as sleepy as Uhelan."
+> "Olazun is as sleepy as Ahelan."
 
-> `zuzozen zolazun zoem gebalol.`
+> `zuzozen zolazun zoem gabulol.`
 >
 > [z-Uzozen | z-Olazun | z-equal-rank.open | g-bright]
 >
 > "Uzozen is about as bright as Olazun."
 
-**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zuzozen gamahum` *Uzozen is challenging*. Use **`oe`** when two people share a height on the quality. *Walks like a duck* is resemblance ([*like*](relations.md#similative) `humum`), not the same score on a named quality.
+**Compare with:** English *is ADJ* with no *as … as* is [classification](predication.md#classification): `zuzozen gamahum` *Uzozen is challenging*. Use **`oe`** when two people share a height on the quality. *Walks like a duck* is resemblance ([*like*](relations.md#similative) `hewom`), not the same score on a named quality.
 
 **Compare with:** English *both are challenging* is an *and*-list plus a shared adjective (`zuzozen zolazun zal gamahum`): each has the quality. It does not rank them or say they match. Use **`oe`** only for *as … as*.
 
@@ -100,7 +100,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *slow* | `uzezam` | 🐌 from *snail* |
 | *agility* | `uvuvem` | 🏑 from *field hockey* |
 | *intensity* | `ahuvem` | 🏒 from *hockey* |
-| *ocean* | `wehalal` | 🌊: an ocean of it, so *much* before a quality |
+| *ocean* | `wohalal` | 🌊: an ocean of it, so *much* before a quality |
 
 **Review:**
 
@@ -108,11 +108,11 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
-| *Uhelan* | `uhelan` |
-| *haste* | `hodurem` |
+| *Ahelan* | `ahelan` |
+| *haste* | `hedurem` |
 | *challenge* | `amahum` |
-| *angry* | `unomul` |
-| *sleepy* | `ozumol` |
+| *angry* | `unemul` |
+| *sleepy* | `uzemol` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
@@ -124,34 +124,34 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 [z-Uzozen | z-Olazun | z-rank/more | g-agility]
 :::
 
-**2.** *Uhelan is as slow as Uzozen.*
+**2.** *Ahelan is as slow as Uzozen.*
 
 ::: details Show answer
-`zuhelan zuzozen zoel guzezam.`
+`zahelan zuzozen zoel guzezam.`
 
-[z-Uhelan | z-Uzozen | z-equal-rank | g-slow]
+[z-Ahelan | z-Uzozen | z-equal-rank | g-slow]
 :::
 
 **3.** *Olazun is the hastiest.*
 
 ::: details Show answer
-`zolazun zel godurem.`
+`zolazun zel gedurem.`
 
 [z-Olazun | z-rank/more | g-haste]
 :::
 
-**4.** *Uzozen is about as intense as Uhelan.*
+**4.** *Uzozen is about as intense as Ahelan.*
 
 ::: details Show answer
-`zuzozen zuhelan zoem gahuvem.`
+`zuzozen zahelan zoem gahuvem.`
 
-[z-Uzozen | z-Uhelan | z-equal-rank.open | g-intensity]
+[z-Uzozen | z-Ahelan | z-equal-rank.open | g-intensity]
 :::
 
 **5.** *Olazun is much more challenging than Uzozen.*
 
 ::: details Show answer
-`zolazun zuzozen zel wehalal gamahum.`
+`zolazun zuzozen zel wohalal gamahum.`
 
 [z-Olazun | z-Uzozen | z-rank/more | [w-ocean | g-challenge]]
 :::
@@ -159,38 +159,38 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **6.** *Uzozen is the angriest.*
 
 ::: details Show answer
-`zuzozen zel gunomul.`
+`zuzozen zel gunemul.`
 
 [z-Uzozen | z-rank/more | g-angry]
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zuhelan zel guvuvem.`
+**1.** `zahelan zel guvuvem.`
 
 ::: details Show answer
-[z-Uhelan | z-rank/more | g-agility]
+[z-Ahelan | z-rank/more | g-agility]
 
-*Uhelan is the most agile.*
+*Ahelan is the most agile.*
 :::
 
-**2.** `zolazun zuhelan zoel godurem.`
+**2.** `zolazun zahelan zoel gedurem.`
 
 ::: details Show answer
-[z-Olazun | z-Uhelan | z-equal-rank | g-haste]
+[z-Olazun | z-Ahelan | z-equal-rank | g-haste]
 
-*Olazun is as hasty as Uhelan.*
+*Olazun is as hasty as Ahelan.*
 :::
 
-**3.** `zuhelan zolazun zel wehalal guzezam.`
+**3.** `zahelan zolazun zel wohalal guzezam.`
 
 ::: details Show answer
-[z-Uhelan | z-Olazun | z-rank/more | [w-ocean | g-slow]]
+[z-Ahelan | z-Olazun | z-rank/more | [w-ocean | g-slow]]
 
-*Uhelan is much slower than Olazun.*
+*Ahelan is much slower than Olazun.*
 :::
 
-**4.** `zuzozen zolazun zoem gunomul.`
+**4.** `zuzozen zolazun zoem gunemul.`
 
 ::: details Show answer
 [z-Uzozen | z-Olazun | z-equal-rank.open | g-angry]
@@ -206,12 +206,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *Olazun is the most intense.*
 :::
 
-**6.** `zuzozen zuhelan zel gozumol.`
+**6.** `zuzozen zahelan zel guzemol.`
 
 ::: details Show answer
-[z-Uzozen | z-Uhelan | z-rank/more | g-sleepy]
+[z-Uzozen | z-Ahelan | z-rank/more | g-sleepy]
 
-*Uzozen is sleepier than Uhelan.*
+*Uzozen is sleepier than Ahelan.*
 :::
 
 #### Pick one {#beginner-pick-one}
@@ -226,12 +226,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 *As … as* is the tie **`zoel`**; **`zel`** would rank Olazun higher.
 :::
 
-**2.** *Uhelan is more challenging than Olazun.* `zuhelan zolazun zel gamahum.` or `zolazun zuhelan zel gamahum.`
+**2.** *Ahelan is more challenging than Olazun.* `zahelan zolazun zel gamahum.` or `zolazun zahelan zel gamahum.`
 
 ::: details Show answer
-`zuhelan zolazun zel gamahum.`
+`zahelan zolazun zel gamahum.`
 
-[z-Uhelan | z-Olazun | z-rank/more | g-challenge]
+[z-Ahelan | z-Olazun | z-rank/more | g-challenge]
 
 The first item before **`zel`** ranks higher.
 :::
@@ -267,7 +267,7 @@ A standalone ladder says only that nothing is on top. It does not say why (a tie
 <!-- cheat-sheet: roles-comparing -->
 | Example | Reading |
 |---------|---------|
-| `zuzozen zolazun zuhelan zem gamahum` | *Uzozen is more challenging than Olazun, who is more challenging than Uhelan* (open: others may fit in the ranking too) |
+| `zuzozen zolazun zahelan zem gamahum` | *Uzozen is more challenging than Olazun, who is more challenging than Ahelan* (open: others may fit in the ranking too) |
 | `zuzozen zolazun zuel gamahum` | *Uzozen is less challenging than Olazun* |
 | `zel gamahum` | *there is no most challenging* |
 | `zem gamahum` | *no most challenging comes to mind* |
@@ -306,19 +306,19 @@ Under **`zuel`** the same place counts from the bottom, so `zuzozen zuel wredul 
 
 When English would say *Olazun walks more intensely than Uzozen*, you rank **how** they walk, not a quality of the people. Keep the same rank join. Write a manner adverb (`/h/`) **immediately after** it, then the verb. The first name sits higher on that manner.
 
-> `zolazun zuzozen zel hahuvem vewurel.`
+> `zolazun zuzozen zel hahuvem vowurel.`
 >
 > [z-Olazun | z-Uzozen | z-rank/more | h-intensity] | v-walk
 >
 > "Olazun walks more intensely than Uzozen."
 
-> `zolazun zel hahuvem vewurel.`
+> `zolazun zel hahuvem vowurel.`
 >
 > [z-Olazun | z-rank/more | h-intensity] | v-walk
 >
 > "Olazun walks the most intensely."
 
-> `zolazun zuzozen zoel hahuvem vewurel.`
+> `zolazun zuzozen zoel hahuvem vowurel.`
 >
 > [z-Olazun | z-Uzozen | z-equal-rank | h-intensity] | v-walk
 >
@@ -372,7 +372,7 @@ To say **how many more**, put the difference in `/b/` right after **`gral`**. A 
 
 English *walks more often than* ranks how many **times** something happens. Write digitless **`hral`** (*multiple times*) in the manner slot, right after the rank join. Only digitless **`hral`** sets this scale; other number words do not rank how often.
 
-> `zuzozen zolazun zel hral vewurel.`
+> `zuzozen zolazun zel hral vowurel.`
 >
 > [z-Uzozen | z-Olazun | z-rank/more | h-how-often] | v-walk
 >
@@ -382,13 +382,13 @@ English *walks more often than* ranks how many **times** something happens. Writ
 
 English *arrives earlier than* ranks **when** something happens. Write digitless **`bral`** (*later*) in the same place, right after the rank join. Rank **`e`** is *later than*, and **`ue`** is *earlier than*.
 
-> `zuzozen zolazun zel bral vevurel.`
+> `zuzozen zolazun zel bral vovurel.`
 >
 > [z-Uzozen | z-Olazun | z-rank/more | b-later] | v-arrival
 >
 > "Uzozen arrives later than Olazun."
 
-> `zuzozen zolazun zuel bral vevurel.`
+> `zuzozen zolazun zuel bral vovurel.`
 >
 > [z-Uzozen | z-Olazun | z-rank/less | b-later] | v-arrival
 >
@@ -398,7 +398,7 @@ English *arrives earlier than* ranks **when** something happens. Write digitless
 
 English *the more Uzozen walks, the more Olazun sleeps* says two amounts rise together. Put digitless **`hral`** (*multiple times*) or another amount word in each clause, and join the clauses with **`xoel`**. As with the [frequency scale](#frequency-scale), the equal-rank join turns each amount into a scale and says the two scales move in step.
 
-> `zuzozen hral vewurel xoel zolazun hral vezuvol.`
+> `zuzozen hral vowurel xoel zolazun hral vezuvol.`
 >
 > [z-Uzozen | h-more-than-one | v-walk | x-equal-rank | z-Olazun | h-more-than-one | v-sleep]
 >
@@ -406,7 +406,7 @@ English *the more Uzozen walks, the more Olazun sleeps* says two amounts rise to
 
 For *the more …, the less …*, use **`xuel`**: when the first scale rises, the second falls.
 
-> `zuzozen hral vewurel xuel zolazun hral vezuvol.`
+> `zuzozen hral vowurel xuel zolazun hral vezuvol.`
 >
 > [z-Uzozen | h-more-than-one | v-walk | x-rank/less | z-Olazun | h-more-than-one | v-sleep]
 >
@@ -438,7 +438,7 @@ English *three times bigger* usually means the same ratio: use **`zoel`** with `
 
 English *more than planned* and *later than planned* rank one thing against a **value a stance sets**, not against another person: the plan sets how much and when. Write that `/th/` stance word, or that [intention adverb](clause.md#intention-adverbs) on `/h/` (FORMER, ability, consent), where the second name would go, right before the rank join. That word is the **bar**. The join closes everything before it, so the bar is part of the comparison: it says what you rank against. It is not your stance on the whole sentence.
 
-> `zuzozen thamam zel bral vevurel.`
+> `zuzozen thagem zel bral vovurel.`
 >
 > [z-Uzozen | th-plan-itinerary | z-rank/more | b-later] | v-arrival
 >
@@ -446,7 +446,7 @@ English *more than planned* and *later than planned* rank one thing against a **
 
 The same stance word **after** the fence has its ordinary reading, a stance on the whole sentence. With one ranked name, the fence is then a [superlative](#superlatives):
 
-> `zuzozen zel bral vevurel thamam.`
+> `zuzozen zel bral vovurel thagem.`
 >
 > [z-Uzozen | z-rank/more | b-later] | v-arrival | th-plan-itinerary
 >
@@ -454,13 +454,13 @@ The same stance word **after** the fence has its ordinary reading, a stance on t
 
 A bar fence ranks **one** item against **one** bar: with a bar, there is no second name and no second bar. Any of the rank joins works (**`zel`**, **`zuel`**, **`zoel`**, and their open **-m** forms), and the bar keeps its own ending. The fence can rank an object or a recipient the same way:
 
-> `zuzozen dozolx thamam del gral vagedal.`
+> `zuzozen dodolx thagem del gral vagedal.`
 >
 > z-Uzozen | [d-strawberry-x | th-plan-itinerary | d-rank/more | g-amount] | v-eat
 >
 > "Uzozen eats more strawberries than planned."
 
-> `zuzozen vezuyel bolazun thamam bel hral.`
+> `zuzozen vezuyel bolazun thagem bel hral.`
 >
 > z-Uzozen | v-tell | [b-Olazun | th-plan-itinerary | b-rank/more | h-how-often]
 >
@@ -468,7 +468,7 @@ A bar fence ranks **one** item against **one** bar: with a bar, there is no seco
 
 A [hook](hooks.md) and its `/b/` on the ranked item go right before the bar, the way they go right before a join word:
 
-> `zugul om bamun thamam zel garolom.`
+> `zegal om buwon thagem zel garolom.`
 >
 > [[z-book | [near | b-speaker]] | th-plan-itinerary | z-rank/more | g-heavy]
 >
@@ -482,7 +482,7 @@ A [hook](hooks.md) and its `/b/` on the ranked item go right before the bar, the
 | name + bar + **`zoel`** | at the bar | *as planned* |
 | bar after the fence | a stance on the whole claim | *plans to be the most …* |
 
-**Compare with:** a name before the rank join is someone you rank against (`zuzozen zolazun zel gozumol` *Uzozen is sleepier than Olazun*). A stance word in that place is the value that stance sets.
+**Compare with:** a name before the rank join is someone you rank against (`zuzozen zolazun zel guzemol` *Uzozen is sleepier than Olazun*). A stance word in that place is the value that stance sets.
 
 ### Practice {#intermediate-practice}
 
@@ -496,7 +496,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *pie* | `ubodal` | 🥧 |
 | *lift* | `veluvol` | 🏋️: its abstract is *exertion* |
-| *arrival* | `vevurel` | 🛬 |
+| *arrival* | `vovurel` | 🛬 |
 
 **Review:**
 
@@ -504,8 +504,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
-| *Uhelan* | `uhelan` |
-| *PLAN* | `thamam` |
+| *Ahelan* | `ahelan` |
+| *PLAN* | `thagem` |
 | *heavy* | `arolom` |
 | *intensity* | `ahuvem` |
 | *mango* | `emedol` |
@@ -554,12 +554,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-pie | z-mango | z-equal-rank | g-heavy | h-two]
 :::
 
-**6.** *Uhelan is heavier than planned.*
+**6.** *Ahelan is heavier than planned.*
 
 ::: details Show answer
-`zuhelan thamam zel garolom.`
+`zahelan thagem zel garolom.`
 
-[z-Uhelan | th-plan-itinerary | z-rank/more | g-heavy]
+[z-Ahelan | th-plan-itinerary | z-rank/more | g-heavy]
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
@@ -580,12 +580,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Uzozen lifts more often than Olazun.*
 :::
 
-**3.** `zuhelan zolazun zuel bral vevurel.`
+**3.** `zahelan zolazun zuel bral vovurel.`
 
 ::: details Show answer
-[z-Uhelan | z-Olazun | z-rank/less | b-later] | v-arrival
+[z-Ahelan | z-Olazun | z-rank/less | b-later] | v-arrival
 
-*Uhelan arrives earlier than Olazun.*
+*Ahelan arrives earlier than Olazun.*
 :::
 
 **4.** `zuzozen hral veluvol xoel zolazun hral vezuvol.`
@@ -624,24 +624,24 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Not as … as* puts Olazun below, **`zuel`**; denying **`zel`** also allows a tie.
 :::
 
-**2.** *Uzozen lifts more intensely than Uhelan.* `zuzozen zuhelan zel hahuvem veluvol.` or `zuzozen zuhelan zel gahuvem veluvol.`
+**2.** *Uzozen lifts more intensely than Ahelan.* `zuzozen zahelan zel hahuvem veluvol.` or `zuzozen zahelan zel gahuvem veluvol.`
 
 ::: details Show answer
-`zuzozen zuhelan zel hahuvem veluvol.`
+`zuzozen zahelan zel hahuvem veluvol.`
 
-[z-Uzozen | z-Uhelan | z-rank/more | h-intensity] | v-lift
+[z-Uzozen | z-Ahelan | z-rank/more | h-intensity] | v-lift
 
 The ranking is how they lift, so the scale is `/h/`; `/ɡ/` would rank the people.
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Uzozen is three times as heavy as Uhelan.* <!-- lint: error -->`zuzozen zuhelan zel garolom hrarel.`
+**1.** *Uzozen is three times as heavy as Ahelan.* <!-- lint: error -->`zuzozen zahelan zel garolom hrarel.`
 
 ::: details Show answer
-`zuzozen zuhelan zoel garolom hrarel.`
+`zuzozen zahelan zoel garolom hrarel.`
 
-[z-Uzozen | z-Uhelan | z-equal-rank | g-heavy | h-three]
+[z-Uzozen | z-Ahelan | z-equal-rank | g-heavy | h-three]
 
 A factor goes with the equative **`zoel`**; after **`zel`** the number is just *three times* on the clause.
 :::
@@ -654,13 +654,13 @@ A factor goes with the equative **`zoel`**; after **`zel`** the number is just *
 
 Intermediate ranked against a plan, and [sake bars](sakes.md#sake-bars) rank against what a sake needs. Any stance that **sets a value** can be the [bar](#bars), and each keeps its own endings and meaning. A channel word (how you know something: you saw it, remember it, were told it, worked it out) sets **the level that source led you to expect**. So *than usual*, *than I remember*, and *than advertised* each put one channel word in the bar slot.
 
-> `zuzozen thobam zel gozumol.`
+> `zuzozen thubem zel guzemol.`
 >
 > [z-Uzozen | th-PATTERN | z-rank/more | g-sleepy]
 >
 > "Uzozen is sleepier than usual."
 
-> `zuzozen zel gozumol thobam.`
+> `zuzozen zel guzemol thubem.`
 >
 > [z-Uzozen | z-rank/more | g-sleepy] | th-PATTERN
 >
@@ -669,50 +669,50 @@ Intermediate ranked against a plan, and [sake bars](sakes.md#sake-bars) rank aga
 <!-- cheat-sheet: roles-comparing -->
 | Bar | Ranks against | English |
 |-----|---------------|---------|
-| met sake `thegatham`, `thoyutham`, … ([sake bars](sakes.md#sake-bars)) | what that sake needs | *enough* / *too much* / *not enough* |
-| LIVE `thodom` | how it looks | *than it looks* |
-| MEMORY `thevom` | how you remember it | *than I remember* / *than last time* |
-| PATTERN `thobam` | the trail of cases | *than usual* / *normal* |
-| CLUES `thunem` | what was worked out | *than calculated* / *than it should be* |
-| REPORTED `thewam` | what was said or written | *than advertised* / *than they said* / *than the stories say* |
-| INTUITION `thahom` | your gut expectation | *than I expected* |
-| FORMER `henom` | how it used to be | *than it used to be* / *increasingly* |
-| NOTIONAL `thavom` | the imagined case | *than imagined* / *than in theory* |
-| PLAN `thamam` | the plan or the schedule | *than planned* / *than scheduled* |
-| WANT `thohul` / `thohum` / `thohur` | the level wanted | *than wanted* / *than I wanted* |
-| ABIL `huboxal` | what can be done | *as … as possible* |
-| REQUIRE `thumel` / `thumem` / `thumer` | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* |
-| PERMIT `thegol` / `thegom` / `thegor` | the rule, the grant, or what is tolerated | *over the limit* / *more than they allow* / *than tolerated* |
-| CONSENT `huxegom` | the agreed terms | *more than agreed* |
-| speaker attitude (`thoguyem`, `thowemum`) | the case you hoped for or feared | *than hoped* / *than feared* |
+| met sake `thudatham`, `thobatham`, … ([sake bars](sakes.md#sake-bars)) | what that sake needs | *enough* / *too much* / *not enough* |
+| LIVE `thugom` | how it looks | *than it looks* |
+| MEMORY `thevum` | how you remember it | *than I remember* / *than last time* |
+| PATTERN `thubem` | the trail of cases | *than usual* / *normal* |
+| CLUES `theyem` | what was worked out | *than calculated* / *than it should be* |
+| REPORTED `thebam` | what was said or written | *than advertised* / *than they said* / *than the stories say* |
+| INTUITION `thabom` | your gut expectation | *than I expected* |
+| FORMER `helam` | how it used to be | *than it used to be* / *increasingly* |
+| NOTIONAL `theyum` | the imagined case | *than imagined* / *than in theory* |
+| PLAN `thagem` | the plan or the schedule | *than planned* / *than scheduled* |
+| WANT `thalel` / `thalem` / `thaler` | the level wanted | *than wanted* / *than I wanted* |
+| ABIL `hodaxal` | what can be done | *as … as possible* |
+| REQUIRE `thugal` / `thugam` / `thugar` | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* |
+| PERMIT `tholel` / `tholem` / `tholer` | the rule, the grant, or what is tolerated | *over the limit* / *more than they allow* / *than tolerated* |
+| CONSENT `huxolem` | the agreed terms | *more than agreed* |
+| speaker attitude (`thoguyem`, `thewemum`) | the case you hoped for or feared | *than hoped* / *than feared* |
 
-The bar's ending keeps its own job: on a channel it is [evidence strength](knowing.md#evidence-strength) (`thobal` *than it reliably is*, `thobar` *than the few cases so far*).
+The bar's ending keeps its own job: on a channel it is [evidence strength](knowing.md#evidence-strength) (`thubel` *than it reliably is*, `thuber` *than the few cases so far*).
 
-> `zuzozen thevom zel gelazom.`
+> `zuzozen thevum zel gelazom.`
 >
 > [z-Uzozen | th-MEMORY | z-rank/more | g-big]
 >
 > "Uzozen is bigger than I remember."
 
-> `zugul thewam zuel gagebom.`
+> `zegal thebam zuel gagebom.`
 >
 > [z-book | th-REPORTED | z-rank/less | g-clarity]
 >
 > "The book is less clear than advertised."
 
-> `zuzozen thahom zel gozumol.`
+> `zuzozen thabom zel guzemol.`
 >
 > [z-Uzozen | th-INTUITION | z-rank/more | g-sleepy]
 >
 > "Uzozen is sleepier than I expected."
 
-> `zuzozen henom zel gozumol.`
+> `zuzozen helam zel guzemol.`
 >
 > [z-Uzozen | h-FORMER | z-rank/more | g-sleepy]
 >
 > "Uzozen is sleepier than they used to be."
 
-> `zugul thohum zuel garolom.`
+> `zegal thalem zuel garolom.`
 >
 > [z-book | th-WANT-unstated | z-rank/less | g-heavy]
 >
@@ -720,13 +720,13 @@ The bar's ending keeps its own job: on a channel it is [evidence strength](knowi
 
 The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on REQUIRE, PERMIT, and CONSENT it is the person who demands, grants, or agrees. WANT takes no `/b/`: for someone else's wants, put a [holder](knowing.md#holder) on the clause. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
 
-> `zugul thewam bolazun zuel gagebom.`
+> `zegal thebam bolazun zuel gagebom.`
 >
 > [z-book | [th-REPORTED | b-Olazun] | z-rank/less | g-clarity]
 >
 > "The book is less clear than Olazun said."
 
-> `zuzozen thobam baxeluyelx zel gezuyol.`
+> `zuzozen thubem baxeluyelx zel gezuyol.`
 >
 > [z-Uzozen | [th-PATTERN | b-agent-x-learn-x] | z-rank/more | g-sing]
 >
@@ -736,7 +736,7 @@ On a rank join, an event root on `/ɡ/` is the scale itself: how well the act go
 
 An adjective after that `/b/` describes it, as after any [host](clause.md#complex-chaining), so it narrows the population.
 
-> `zuzozen thobam baxeluyelx gozumol zel gezuyol.`
+> `zuzozen thubem baxeluyelx guzemol zel gezuyol.`
 >
 > [z-Uzozen | [th-PATTERN | [b-agent-x-learn-x | g-sleepy]] | z-rank/more | g-sing]
 >
@@ -744,7 +744,7 @@ An adjective after that `/b/` describes it, as after any [host](clause.md#comple
 
 The ranked item can be a whole kind. Write the [universal fence](joins.md#universals-domains-generics) first, then the bar: the whole closed fence counts as the one ranked item, the way an inner list sits inside an outer one ([fence nesting](joins.md#fence-nesting)). Open **`zuam`** is *people of that kind, as a rule*.
 
-> `zuam gaxodamul thobam zel hral vabezum.`
+> `zuam gaxodamul thubem zel hral vabezum.`
 >
 > [[z-everything.open | g-agent-x-tired] | th-PATTERN | z-rank/more | h-how-often] | v-flaw
 >
@@ -752,7 +752,7 @@ The ranked item can be a whole kind. Write the [universal fence](joins.md#univer
 
 To rank one kind against another, keep one kind as the item and put the other in the PATTERN bar's `/b/`.
 
-> `zuam gaxenuvom thobam bobelx godamum zel hemebem vuzubal.`
+> `zuam gaxenuvom thubem beyolx godamum zel hemebem vuzubal.`
 >
 > [[z-everything.open | g-agent-x-rest] | [th-PATTERN | [b-person-x | g-burnout]] | z-rank/more | h-achievement] | v-sweat
 >
@@ -760,9 +760,9 @@ To rank one kind against another, keep one kind as the item and put the other in
 
 A CLUES or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): the next sentence is the grounds you worked the bar out from.
 
-**Ability.** The ability word [`ubo`](intention.md#ability-fallback) as the bar is the limit of **what can be done**. A tie against **`huboxal`** is *as … as possible*. The ability vowel says how fixed that limit is, so rank **`zel`** against **`huboxel`** is *more than can be done for now*, and against **`huboxul`** *more than could ever be done*.
+**Ability.** The ability word [`oda`](intention.md#ability-fallback) as the bar is the limit of **what can be done**. A tie against **`hodaxal`** is *as … as possible*. The ability vowel says how fixed that limit is, so rank **`zel`** against **`hodaxel`** is *more than can be done for now*, and against **`hodaxul`** *more than could ever be done*.
 
-> `zolazun huboxal zoel hodurem vewurel.`
+> `zolazun hodaxal zoel hedurem vowurel.`
 >
 > [z-Olazun | h-ABIL-able | z-equal-rank | h-haste] | v-walk
 >
@@ -770,13 +770,13 @@ A CLUES or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): the n
 
 **Rules and permission.** REQUIRE as the bar is the demand; a tie meets it. PERMIT is the limit; rank **`zel`** goes over it.
 
-> `zahehal thumel zoel gobobom.`
+> `zahehal thugal zoel gobobom.`
 >
 > [z-house | th-REQUIRE-rule | z-equal-rank | g-strength]
 >
 > "The house is as strong as the rules require."
 
-> `zududal thegol zel gral.`
+> `zududal tholel zel gral.`
 >
 > [z-tea | th-PERMIT-allowed | z-rank/more | g-amount]
 >
@@ -784,13 +784,13 @@ A CLUES or PATTERN bar can also take [`barl`](knowing.md#evidence-clause): the n
 
 **Hopes and fears.** A speaker-attitude word as the bar is the case you hoped for or feared.
 
-> `zugul thoguyem zel gagebom.`
+> `zegal thoguyem zel gagebom.`
 >
 > [z-book | th-hope | z-rank/more | g-clarity]
 >
 > "The book is clearer than I hoped."
 
-> `zugul thowemum zuel gagebom.`
+> `zegal thewemum zuel gagebom.`
 >
 > [z-book | th-concern | z-rank/less | g-clarity]
 >
@@ -802,13 +802,13 @@ Only these stances set a value. A [cause or condition pole](causation.md), [MAY]
 
 English *many*, *few*, *often*, and *late* rank against an unstated baseline, and *too much*, *too late*, and *as fast as possible* against an unstated need or limit. Agebon always names the bar: put it in the fence and rank on [amount](#amount-scale), the [frequency scale](#frequency-scale), or the [time scale](#time-scale).
 
-> `zagozolx thobam zel gral.`
+> `zagozolx thubem zel gral.`
 >
 > [z-cat-x | th-PATTERN | z-rank/more | g-amount]
 >
 > "There are many cats." (more than usual)
 
-> `zuzozen thobam zel hral vewurel.`
+> `zuzozen thubem zel hral vowurel.`
 >
 > [z-Uzozen | th-PATTERN | z-rank/more | h-how-often] | v-walk
 >
@@ -817,14 +817,14 @@ English *many*, *few*, *often*, and *late* rank against an unstated baseline, an
 <!-- cheat-sheet: roles-comparing -->
 | English | Bar and rank |
 |---------|--------------|
-| *many* / *few* | PATTERN **`thobam`**, `zel` / `zuel` with `gral` |
-| *often* / *rarely* | PATTERN **`thobam`**, `zel` / `zuel` with `hral` |
-| *late* / *early* | PATTERN **`thobam`**, `zel` / `zuel` with `bral` |
-| *than usual* (the same person or thing) | PATTERN **`thobam`** with no `/b/` |
-| *too much* / *enough* / *not enough* | a met sake bar (`thegatham`), `zel` / `zoel` / `zuel` |
-| *too late* / *too soon* | a met sake bar (`thegatham`), `zel` / `zuel` with `bral` |
-| *as … as possible* | ABIL **`huboxal`**, `zoel` |
-| *more and more* / *increasingly* | FORMER **`henom`**, `zel` |
+| *many* / *few* | PATTERN **`thubem`**, `zel` / `zuel` with `gral` |
+| *often* / *rarely* | PATTERN **`thubem`**, `zel` / `zuel` with `hral` |
+| *late* / *early* | PATTERN **`thubem`**, `zel` / `zuel` with `bral` |
+| *than usual* (the same person or thing) | PATTERN **`thubem`** with no `/b/` |
+| *too much* / *enough* / *not enough* | a met sake bar (`thudatham`), `zel` / `zoel` / `zuel` |
+| *too late* / *too soon* | a met sake bar (`thudatham`), `zel` / `zuel` with `bral` |
+| *as … as possible* | ABIL **`hodaxal`**, `zoel` |
+| *more and more* / *increasingly* | FORMER **`helam`**, `zel` |
 
 The bar is never dropped. A single-item `zagozolx zel gral` already means *the most cats* (a [superlative](#superlatives)).
 
@@ -840,7 +840,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *artistry* | `obewem` | 🖌️ from *paintbrush* |
 | *showmanship* | `ohedam` | 🌭 from *hotdog* |
-| *INTUITION* | `thahom` | ❤️ from *heart*: your gut expectation |
+| *INTUITION* | `thabom` | ❤️ from *heart*: your gut expectation |
 | *hope* | `thoguyem` | 🤞 from *crossed fingers* |
 
 **Review:**
@@ -849,14 +849,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
-| *Uhelan* | `uhelan` |
-| *PATTERN* | `thobam` |
-| *MEMORY* | `thevom` |
-| *REPORTED* | `thewam` |
-| *FORMER* | `henom` |
-| *capacity* | `ubom` |
+| *Ahelan* | `ahelan` |
+| *PATTERN* | `thubem` |
+| *MEMORY* | `thevum` |
+| *REPORTED* | `thebam` |
+| *FORMER* | `helam` |
+| *capacity* | `odam` |
 | *agility* | `uvuvem` |
-| *trumpet* | `adorel` |
+| *trumpet* | `eyorel` |
 | *sing* | `vezuyol` |
 
 #### English → Agebon {#advanced-english-to-agebon}
@@ -864,7 +864,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *Uzozen sings better than usual.*
 
 ::: details Show answer
-`zuzozen thobam zel gezuyol.`
+`zuzozen thubem zel gezuyol.`
 
 [z-Uzozen | th-PATTERN | z-rank/more | g-sing]
 :::
@@ -872,7 +872,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **2.** *Olazun is less artistic than I remember.*
 
 ::: details Show answer
-`zolazun thevom zuel gobewem.`
+`zolazun thevum zuel gobewem.`
 
 [z-Olazun | th-MEMORY | z-rank/less | g-artistry]
 :::
@@ -880,7 +880,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **3.** *Uzozen is as showy as possible.*
 
 ::: details Show answer
-`zuzozen huboxal zoel gohedam.`
+`zuzozen hodaxal zoel gohedam.`
 
 [z-Uzozen | h-ABIL-able | z-equal-rank | g-showmanship]
 :::
@@ -888,14 +888,14 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **4.** *There are many trumpets.* (more than usual)
 
 ::: details Show answer
-`zadorelx thobam zel gral.`
+`zeyorelx thubem zel gral.`
 
 [z-trumpet-x | th-PATTERN | z-rank/more | g-amount]
 :::
 
 #### Agebon → English {#advanced-agebon-to-english}
 
-**1.** `zolazun thahom zel gezuyol.`
+**1.** `zolazun thabom zel gezuyol.`
 
 ::: details Show answer
 [z-Olazun | th-INTUITION | z-rank/more | g-sing]
@@ -911,28 +911,28 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 *Uzozen is less artistic than I hoped.*
 :::
 
-**3.** `zuhelan thobam zuel hral vezuyol.`
+**3.** `zahelan thubem zuel hral vezuyol.`
 
 ::: details Show answer
-[z-Uhelan | th-PATTERN | z-rank/less | h-how-often] | v-sing
+[z-Ahelan | th-PATTERN | z-rank/less | h-how-often] | v-sing
 
-*Uhelan rarely sings.* (less often than usual)
+*Ahelan rarely sings.* (less often than usual)
 :::
 
-**4.** `zolazun thewam buhelan zel guvuvem.`
+**4.** `zolazun thebam bahelan zel guvuvem.`
 
 ::: details Show answer
-[z-Olazun | [th-REPORTED | b-Uhelan] | z-rank/more | g-agility]
+[z-Olazun | [th-REPORTED | b-Ahelan] | z-rank/more | g-agility]
 
-*Olazun is more agile than Uhelan said.*
+*Olazun is more agile than Ahelan said.*
 :::
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Uzozen is the showiest, going by the pattern.* `zuzozen zel gohedam thobam.` or `zuzozen thobam zel gohedam.`
+**1.** *Uzozen is the showiest, going by the pattern.* `zuzozen zel gohedam thubem.` or `zuzozen thubem zel gohedam.`
 
 ::: details Show answer
-`zuzozen zel gohedam thobam.`
+`zuzozen zel gohedam thubem.`
 
 [z-Uzozen | z-rank/more | g-showmanship] | th-PATTERN
 
@@ -941,14 +941,14 @@ After the fence, PATTERN is a stance on the whole superlative; before the rank j
 
 #### What changes {#advanced-what-changes}
 
-**1.** `zuhelan henom zel gobewem.` / `zuhelan thevom zel gobewem.`
+**1.** `zahelan helam zel gobewem.` / `zahelan thevum zel gobewem.`
 
 ::: details Show answer
-[z-Uhelan | h-FORMER | z-rank/more | g-artistry]
+[z-Ahelan | h-FORMER | z-rank/more | g-artistry]
 
-[z-Uhelan | th-MEMORY | z-rank/more | g-artistry]
+[z-Ahelan | th-MEMORY | z-rank/more | g-artistry]
 
-The bar changes: *more artistic than Uhelan used to be* (FORMER) versus *more artistic than I remember* (MEMORY).
+The bar changes: *more artistic than Ahelan used to be* (FORMER) versus *more artistic than I remember* (MEMORY).
 :::
 
 ## See also

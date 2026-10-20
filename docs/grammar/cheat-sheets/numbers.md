@@ -25,7 +25,7 @@ A number word is one word: role letter, marker, one syllable per digit, ending. 
 |-----|---------|---------|-------|
 | [Count](../numbers.md#counts) | `zagozolx grarel.` | *There are three cats.* | B |
 | [Count, many digits](../numbers.md#counts): one word | `graduzol` | *twenty* | B |
-| [Ordinal](../numbers.md#ordinals): `re` for `ra` | `zugul gredul.` | *There is a second book.* | B |
+| [Ordinal](../numbers.md#ordinals): `re` for `ra` | `zegal gredul.` | *There is a second book.* | B |
 | [More than one](../numbers.md#more-than-one) | `zagozolx gral.` | *There is more than one cat.* | B |
 
 ### The marker {#marker}
@@ -119,7 +119,7 @@ Drop every digit and the word says what kind of number, not its value. With **-r
 | [How many cats?](../numbers.md#how-many) | `yol dagozolx grar zuzozen vawebol.` | *How many cats does Uzozen see?* | I |
 | [Which place?](../numbers.md#how-many) | `yol ol brer zolazun vuhohol.` | *Which place does Olazun sit in?* (first, second, and so on) | I |
 | [How big?](../numbers.md#how-big): blank on `/w/` | `yol wrar gelazom zudozol.` | *How big is the dog?* | I |
-| [How fast?](../numbers.md#how-big) | `yol wrar hodurem zudozol varuvel.` | *How fast does the dog run?* | I |
+| [How fast?](../numbers.md#how-big) | `yol wrar hedurem zudozol varuvel.` | *How fast does the dog run?* | I |
 
 *Many*, *few*, *enough*, and *too much* are [comparatives](../comparatives.md#vague-amounts), not number words. Do not confuse the blank on `/h/` with `har` *sometimes*.
 
@@ -174,7 +174,7 @@ The role letter picks the use; the marker still says amount, rank, or code. Only
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Three times](../numbers.md#number-as-adverb-by-marker) | `zolazun vewurel hrarel.` | *Olazun walks three times.* | I |
+| [Three times](../numbers.md#number-as-adverb-by-marker) | `zolazun vowurel hrarel.` | *Olazun walks three times.* | I |
 | [For the third time](../numbers.md#number-as-adverb-by-marker) | `hrerel` | *for the third time* | I |
 | [Three more!](../numbers.md#number-as-interjection-by-marker) | `yrarel` | *Three more!* | I |
 | [Three!](../numbers.md#number-as-interjection-by-marker) | `y_3` | *Three!* (a score) | I |
@@ -182,7 +182,7 @@ The role letter picks the use; the marker still says amount, rank, or code. Only
 | [Point 2](../numbers.md#number-as-discourse-marker-by-marker) | `xredul` | *point 2:* | I |
 | [Corroborating 2](../numbers.md#number-as-discourse-marker-by-marker) | `xradul` | *corroborating 2:* | I |
 | [Independent 2](../numbers.md#number-as-discourse-marker-by-marker) | `xrudul` | *independent 2:* | I |
-| [Likelihood](../numbers.md#number-as-stance-by-marker): the digits are already a percent | `zolazun vewurel th+70.` | *Olazun is probably walking.* (I'd put it at 70%) | I |
+| [Likelihood](../numbers.md#number-as-stance-by-marker): the digits are already a percent | `zolazun vowurel th+70.` | *Olazun is probably walking.* (I'd put it at 70%) | I |
 | [Place on a scale](../numbers.md#number-as-degree): `w#N` from 2; [see comparatives](../comparatives.md#place-on-a-scale) | `zuzozen zel wredul gelazom.` | *Uzozen is the second biggest.* | I |
 
 `th+` / `th-` is *likely* / *unlikely* with no figure; `th_N` is *per source N*; `th#N` is *N-th hand* from 2. A factor goes on `/h/`, never `/w/`. Likelihood **-m** hedges (`th~+70`), **-n** names a level (`th@+95`), **-r** repeats it (`th=+70`).
@@ -196,7 +196,7 @@ The digit-string marker `_` holds a phone, room, channel, or serial number. Grou
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [A code as object](../numbers-applied.md#digit-strings) | `zuzozen d_555,123,4567 vawebol.` | *Uzozen sees 555-123-4567.* | I |
-| [Plural label](../numbers-applied.md#plural-labels) | `zuzozen vewurel huwem b_90x.` | *Uzozen walked in the ’90s.* | I |
+| [Plural label](../numbers-applied.md#plural-labels) | `zuzozen vowurel herem b_90x.` | *Uzozen walked in the ’90s.* | I |
 
 ### Time and date {#time}
 
@@ -207,15 +207,15 @@ A digit string under `/h/` with no relation word before it. Clock is `h_…`; a 
 |-----|-----|-------|
 | [Clock](../numbers-applied.md#time) | digit-string `ro` as bare `/h/`, 24-hour, fields left to right (`h_15,30`, `h_15,30,00`) | I |
 | [Date](../numbers-applied.md#time) | `_` with `oe` (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`) | I |
-| [Day of the week](../numbers-applied.md#time) | ordinal on `ulere`, from Monday (`zulerem grewol` *Monday*) | I |
+| [Day of the week](../numbers-applied.md#time) | ordinal on `olere`, from Monday (`zolerem grewol` *Monday*) | I |
 | [Month or year](../numbers-applied.md#time) | ordinal on `umale`; label on `avuva` (`zavuvam g_1962`) | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [At a time](../numbers-applied.md#time) | `h_15,30 zuzozen vewurel.` | *At 15:30 Uzozen walks.* | I |
-| [In March](../numbers-applied.md#time) | `zuzozen vewurel huwem bumalem grerel.` | *Uzozen walks in March.* | I |
-| [In 1962](../numbers-applied.md#time) | `zuzozen vewurel huwem bavuvam g_1962.` | *Uzozen walked in 1962.* | I |
-| [From … to](../numbers-applied.md#time) | `zuzozen ul b_9 oel b_17 vewurel.` | *Uzozen walks from 9:00 to 17:00.* | I |
+| [At a time](../numbers-applied.md#time) | `h_15,30 zuzozen vowurel.` | *At 15:30 Uzozen walks.* | I |
+| [In March](../numbers-applied.md#time) | `zuzozen vowurel herem bumalem grerel.` | *Uzozen walks in March.* | I |
+| [In 1962](../numbers-applied.md#time) | `zuzozen vowurel herem bavuvam g_1962.` | *Uzozen walked in 1962.* | I |
+| [From … to](../numbers-applied.md#time) | `zuzozen ul b_9 oel b_17 vowurel.` | *Uzozen walks from 9:00 to 17:00.* | I |
 
 Digitless `hrol` is *some clock or date*; `hror` asks *when?* *Three times* (`hrarel`) is not a clock time.
 
@@ -229,22 +229,22 @@ Put the amount on the unit's noun as `/ɡ/`. Each unit is the abstract **-m** of
 | [meter](../numbers-applied.md#stock-units) | `ezere` | `bezerem g+2` | `ezerel` *set-square* | I |
 | [gram](../numbers-applied.md#stock-units) | `ebero` | `beberom g+5` | `eberol` *pound* (banknote) | I |
 | [second](../numbers-applied.md#stock-units) | `azere` | `bazerem g+3` | `azerel` *stopwatch* | I |
-| [minute](../numbers-applied.md#stock-units) | `omure` | `bomurem g+5` | `omurel` *three-o'clock* | I |
+| [minute](../numbers-applied.md#stock-units) | `emure` | `bemurem g+5` | `emurel` *three-o'clock* | I |
 | [liter](../numbers-applied.md#stock-units) | `ubuva` | `bubuvam g+1` | `ubuval` *pool* | I |
 | [ampere](../numbers-applied.md#stock-units) | `ogava` | `bogavam g+2` | `ogaval` *cable-car* | I |
-| [kelvin](../numbers-applied.md#stock-units) | `ozulo` | `bozulom g+300` | `ozulol` *ice* | I |
+| [kelvin](../numbers-applied.md#stock-units) | `ezulo` | `bezulom g+300` | `ezulol` *ice* | I |
 | [mole](../numbers-applied.md#stock-units) | `omowo` | `bomowom g+1` | `omowol` *microscope* | I |
-| [candela](../numbers-applied.md#stock-units) | `ado` | `badom g+100` | `adol` *lightbulb* | I |
+| [candela](../numbers-applied.md#stock-units) | `owo` | `bowom g+100` | `owol` *lightbulb* | I |
 | [hour](../numbers-applied.md#stock-units) | `agoru` | `bagorum g+3` | `agorul` *hourglass* | I |
-| [day](../numbers-applied.md#stock-units) | `azure` | `bazurem g+2` | `azurel` *sunrise* | I |
-| [week](../numbers-applied.md#stock-units) | `ugore` | `bugorem g+1` | `ugorel` *calendar* | I |
+| [day](../numbers-applied.md#stock-units) | `uzure` | `buzurem g+2` | `uzurel` *sunrise* | I |
+| [week](../numbers-applied.md#stock-units) | `agore` | `bagorem g+1` | `agorel` *calendar* | I |
 | [month](../numbers-applied.md#stock-units) | `umale` | `bumalem g+6` | `umalel` *moon* | I |
 | [year](../numbers-applied.md#stock-units) | `avuva` | `bavuvam g+10` | `avuval` *fireworks* | I |
 | [inch](../numbers-applied.md#stock-units) | `ebuvu` | `bebuvum g+3` | `ebuvul` *pinch* | I |
 | [foot](../numbers-applied.md#stock-units) | `uvobe` | `buvobem g+6` | `uvobel` *foot* | I |
 | [mile](../numbers-applied.md#stock-units) | `unoba` | `bunobam g+2` | `unobal` *boot* | I |
 | [pound](../numbers-applied.md#stock-units) | `ayoba` | `bayobam g+5` | `ayobal` *shopping-bag* | I |
-| [heat grade (not kelvin)](../numbers-applied.md#stock-units) | `avere` | `baverem g+37` | `averel` *thermometer* | I |
+| [heat grade (not kelvin)](../numbers-applied.md#stock-units) | `uvere` | `buverem g+37` | `uverel` *thermometer* | I |
 
 <!-- cheat-sheet: numbers -->
 | Agebon | Use | English | Stage |
@@ -255,8 +255,8 @@ Put the amount on the unit's noun as `/ɡ/`. Each unit is the abstract **-m** of
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Two meters](../numbers-applied.md#measure-phrases) | `zuzozen bezerem gradul vewurel.` | *Uzozen walks two meters.* | I |
-| [A price](../numbers-applied.md#measure-phrases): after `hehem` | `bagorum g+3` | *for three hours* | I |
+| [Two meters](../numbers-applied.md#measure-phrases) | `zuzozen bezerem gradul vowurel.` | *Uzozen walks two meters.* | I |
+| [A price](../numbers-applied.md#measure-phrases): after `heham` | `bagorum g+3` | *for three hours* | I |
 
 Quantities themselves (*heavy*, *duration*) are ordinary roots, not units.
 
@@ -278,7 +278,7 @@ Write both ends with the hook `al`: `A al B`. It reads as *through* when both en
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [3 to 5](../numbers-applied.md#ranges) | `zrarel al zraval.` | *From 3 to 5.* (both ends included) | I |
-| [Of a noun](../numbers-applied.md#ranges) | `zudozol grarel al graval vewurel.` | *Three to five dogs walk.* | I |
+| [Of a noun](../numbers-applied.md#ranges) | `zudozol grarel al graval vowurel.` | *Three to five dogs walk.* | I |
 | [Hours](../numbers-applied.md#ranges) | `zagorum grarel al graval.` | *Three to five hours.* | I |
 
 To limit to one end, make the other end infinity:
@@ -317,7 +317,7 @@ End a count with **`yo`** for a percent, **`yu`** for percentage points. A minus
 | [Half of](../numbers-applied.md#fractions) | `zagozolx grudul vuhohol.` | *Half of the cats sit.* | I |
 | [A third of](../numbers-applied.md#fractions) | `zududal grurel vuhohol.` | *A third of the tea sits there.* | I |
 | [Two thirds](../numbers-applied.md#fractions): the count, then the fraction | `zagozolx gradul grurel vuhohol.` | *Two thirds of the cats sit.* | I |
-| [A third of an hour](../numbers-applied.md#fractions) | `zuzozen vewurel bagorum grawol grurel.` | *Uzozen walks for a third of an hour.* | I |
+| [A third of an hour](../numbers-applied.md#fractions) | `zuzozen vowurel bagorum grawol grurel.` | *Uzozen walks for a third of an hour.* | I |
 
 After a measure unit a lone minus number is a negative amount (`bezerem grudul` *minus 2 meters*).
 
@@ -344,7 +344,7 @@ A digitless exponent (**`e`** speech `ba`, **`e-`** speech `bu`, no digits after
 | [Infinitely many](../numbers.md#digitless-exponents) | `zagozolx grabal.` | *There are infinitely many cats.* | A |
 | [Uzozen barely sits](../numbers.md#special-number-as-verb-and-adverb) | `zuzozen h+e- vuhohol.` | *Uzozen barely sits.* | A |
 | [Uzozen almost sits](../numbers.md#special-number-as-verb-and-adverb) | `zuzozen h-e- vuhohol.` | *Uzozen almost sits.* | A |
-| [Almost angry](../numbers.md#special-number-as-verb-and-adverb) | `zudozol wrubul gunomul vewurel.` | *An almost angry dog walks.* | A |
+| [Almost angry](../numbers.md#special-number-as-verb-and-adverb) | `zudozol wrubul gunemul vowurel.` | *An almost angry dog walks.* | A |
 | [Finally:](../numbers.md#special-number-as-discourse) | `xrebal` | *Finally:* | A |
 | [Starting with:](../numbers.md#special-number-as-discourse) | `xrebul` | *Starting with:* | A |
 
@@ -392,7 +392,7 @@ Marker `ue` (written `#-`, spoken `rue`) counts from the last place within the s
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Penultimate](../numbers.md#from-the-end) | `zugul gruedul.` | *There is a second-to-last book.* | A |
+| [Penultimate](../numbers.md#from-the-end) | `zegal gruedul.` | *There is a second-to-last book.* | A |
 | [Penultimate time](../numbers.md#from-the-end) | `h#-2` | *the penultimate time* | A |
 
 Two marker vowels in one word: speak `u` first.
@@ -430,13 +430,13 @@ On a family tree, put the anchor person in `/b/` right after the number.
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Parents](../numbers-applied.md#kin-generations) | `grebuwol` | the layer above the focus | A |
-| [Siblings](../numbers-applied.md#kin-generations) | `zolazun grebazol buzozen vewurel.` | *Olazun, Uzozen's sibling, walks.* | A |
+| [Siblings](../numbers-applied.md#kin-generations) | `zolazun grebazol buzozen vowurel.` | *Olazun, Uzozen's sibling, walks.* | A |
 | [Siblings of each other](../numbers-applied.md#kin-generations) | `zuzozen zolazun zal grebazol.` | *Uzozen and Olazun are siblings.* | A |
-| [Eldest sibling](../numbers-applied.md#kin-generations) | `zolazun g#1e0 buzozen vewurel.` | *Olazun, Uzozen's eldest sibling, walks.* | A |
-| [Second child](../numbers-applied.md#kin-generations) | `zahoyel g#2e1 buzozen vewurel.` | *Uzozen's second child walks.* | A |
+| [Eldest sibling](../numbers-applied.md#kin-generations) | `zolazun g#1e0 buzozen vowurel.` | *Olazun, Uzozen's eldest sibling, walks.* | A |
+| [Second child](../numbers-applied.md#kin-generations) | `zahoyel g#2e1 buzozen vowurel.` | *Uzozen's second child walks.* | A |
 | [Children](../numbers-applied.md#kin-generations) | `grebawol` | the focus's own children | A |
 | [Grandchildren](../numbers-applied.md#kin-generations) | `grebadul` | the focus's grandchildren | A |
-| [Aunt or uncle](../numbers-applied.md#kin-generations) | `zolazun grebazol bobel g#1e-1 buzozen vewurel.` | *Olazun, Uzozen's aunt or uncle, walks.* (a sibling of the first of Uzozen's parents) | A |
+| [Aunt or uncle](../numbers-applied.md#kin-generations) | `zolazun grebazol beyol g#1e-1 buzozen vowurel.` | *Olazun, Uzozen's aunt or uncle, walks.* (a sibling of the first of Uzozen's parents) | A |
 
 Only kin make generations: friends and bosses are [social relations](../relations.md#social-relations).
 
@@ -457,5 +457,5 @@ Only kin make generations: friends and bosses are [social relations](../relation
 | `grubul` *just short* ([a hair under](../numbers.md#special-referential)) | | `grabul` *a hair over* ([a hair above zero](../numbers.md#special-referential)) |
 | `x#2` *point 2:* ([a numbered step](../numbers.md#examples)) | | `x#-2` *2nd from the end:* ([counting back](../numbers.md#from-the-end)) |
 | `x-2` *independent item 2:* ([a new line of support](../numbers.md#examples)) | | `x#-2` *2nd from the end:* ([counting back](../numbers.md#from-the-end)) |
-| `th+70` *70% likely* ([a stance](../numbers.md#number-as-stance-by-marker)) | | `thovum` *maybe* ([open, with no figure](../knowing.md#may)) |
+| `th+70` *70% likely* ([a stance](../numbers.md#number-as-stance-by-marker)) | | `thomam` *maybe* ([open, with no figure](../knowing.md#may)) |
 | `zrarel al zraval` *3 to 5* ([a band](../numbers-applied.md#ranges)) | | `zrarel zraval zael` *3, then 5* ([two values in order](../numbers-applied.md#ranges)) |

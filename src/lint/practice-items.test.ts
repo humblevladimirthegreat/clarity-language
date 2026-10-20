@@ -15,9 +15,9 @@ describe("practiceItems", () => {
       ["en-ag1", "en-ag2", "en-ag3", "ag-en1", "ag-en2", "ag-en3", "pick1", "fix1", "changes1"],
     );
     const [first] = items;
-    assert.equal(first!.promptEnglish, "Uhelan sees Uzozen.");
+    assert.equal(first!.promptEnglish, "Ahelan sees Uzozen.");
     assert.deepEqual(first!.spoiler.map((line) => line.kind), ["agebon", "text", "also"]);
-    assert.deepEqual(first!.alsoCorrect.map((span) => span.text), ["duzozen zuhelan vawebol.", "yal zuhelan duzozen vawebol."]);
+    assert.deepEqual(first!.alsoCorrect.map((span) => span.text), ["duzozen zahelan vawebol.", "yal zahelan duzozen vawebol."]);
     const pick = items.find((item) => item.type === "pick")!;
     assert.equal(pick.promptSpans.length, 2);
     const fix = items.find((item) => item.type === "fix")!;
@@ -60,8 +60,8 @@ ${details(2)}
 describe("practiceItems, level review", () => {
   it("reads a **Rule:** line and skips the checkpoint counts", () => {
     const md = PRACTICE.replace(
-      "**Also correct:** \`duzozen zuhelan vawebol.\`, \`yal zuhelan duzozen vawebol.\`",
-      "**Also correct:** \`duzozen zuhelan vawebol.\`\n\n**Rule:** [Role letters](clause.md#role-letters)",
+      "**Also correct:** \`duzozen zahelan vawebol.\`, \`yal zahelan duzozen vawebol.\`",
+      "**Also correct:** \`duzozen zahelan vawebol.\`\n\n**Rule:** [Role letters](clause.md#role-letters)",
     ).replace(/#### Pick one[\s\S]*$/, "");
     const { items, findings } = practiceItems(md, { review: true });
     assert.deepEqual(items[0]!.spoiler.map((line) => line.kind), ["agebon", "text", "also", "rule"]);

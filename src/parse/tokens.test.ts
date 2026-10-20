@@ -108,8 +108,8 @@ describe("tone marks", () => {
 describe("scanChunks", () => {
   it("keeps a written span whole, with its tone mark and sentence mark", () => {
     assert.deepEqual(
-      scanChunks("zuzozen !d[zuzozer vewurel]. dududal").map((chunk) => chunk.text),
-      ["zuzozen", "!d[zuzozer vewurel].", "dududal"],
+      scanChunks("zuzozen !d[zuzozer vowurel]. dududal").map((chunk) => chunk.text),
+      ["zuzozen", "!d[zuzozer vowurel].", "dududal"],
     );
   });
 

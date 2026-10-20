@@ -27,24 +27,24 @@ Every join and hook, with its English: [Joins and hooks cheat sheet](joins-hooks
 
 ## Pronouns and sentence linkers {#closed-words}
 
-The pronouns are shown without a role letter: add the one for their slot (`zamun` *I* as subject). The sentence linkers are shown whole.
+The pronouns are shown without a role letter: add the one for their slot (`zuwon` *I* as subject). The sentence linkers are shown whole.
 
 <!-- generated: closed-words -->
 | Agebon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `ahan` | *we* (you and I) | [Special pronouns](../pronouns.md#special-pronouns) | B |
-| `amun` | *I* (the speaker) | [Special pronouns](../pronouns.md#special-pronouns) | B |
-| `ehon` | *you* (the listener) | [Special pronouns](../pronouns.md#special-pronouns) | B |
-| `oben` | *one*, generic *you*, *people* | [Generic pronoun](../pronouns.md#generic-pronoun) | B |
-| `ozan` | *the topic* | [The topic pronoun](../pronouns.md#topic-pronoun) | I |
-| `unan` | *someone* | [Special pronouns](../pronouns.md#special-pronouns) | B |
-| `xagorem` | *meanwhile* | [Sentence linkers](../dependents.md#sentence-linkers) | I |
+| `alon` | *the topic* | [The topic pronoun](../pronouns.md#topic-pronoun) | I |
+| `awan` | *you* (the listener) | [Special pronouns](../pronouns.md#special-pronouns) | B |
+| `ayan` | *we* (you and I) | [Special pronouns](../pronouns.md#special-pronouns) | B |
+| `eyon` | *one*, generic *you*, *people* | [Generic pronoun](../pronouns.md#generic-pronoun) | B |
+| `umon` | *someone* | [Special pronouns](../pronouns.md#special-pronouns) | B |
+| `uwon` | *I* (the speaker) | [Special pronouns](../pronouns.md#special-pronouns) | B |
+| `xahel` | *it follows that* | [Sentence linkers](../dependents.md#sentence-linkers) | I |
+| `xahem` | *therefore* | [Sentence linkers](../dependents.md#sentence-linkers) | I |
 | `xegohul` | *on the contrary* | [Sentence linkers](../dependents.md#sentence-linkers) | I |
 | `xegohum` | *but* | [Sentence linkers](../dependents.md#sentence-linkers) | I |
+| `xegorem` | *meanwhile* | [Sentence linkers](../dependents.md#sentence-linkers) | I |
 | `xezol` | *nevertheless*, *even so* | [Sentence linkers](../dependents.md#sentence-linkers) | I |
 | `xezom` | *however* | [Sentence linkers](../dependents.md#sentence-linkers) | I |
-| `xodul` | *it follows that* | [Sentence linkers](../dependents.md#sentence-linkers) | I |
-| `xodum` | *therefore* | [Sentence linkers](../dependents.md#sentence-linkers) | I |
 | `xuvedam` | *by the way* | [Sentence linkers](../dependents.md#sentence-linkers) | I |
 | `xuvewem` | *next* | [Sentence linkers](../dependents.md#sentence-linkers) | I |
 <!-- /generated -->
@@ -55,45 +55,45 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | Agebon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `gabam` | BEFORE clause pole (ahead-of) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
-| `gadem` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](../relations.md#proxy) | B |
+| `gadam` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `gaen` | join-relation starting with (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `gagum` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
-| `gahem` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
+| `gagom` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](../relations.md#proxy) | B |
+| `gaham` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
+| `gahum` | BECAUSE clause pole (explanatory reason) | [Because, iff, and only because](../causation.md#only-because) | I |
+| `galam` | AFTER clause pole (just-after) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
 | `gan` | join-relation including (adjective + argument) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `ganom` | AFTER clause pole (just-after) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
 | `gaon` | join-relation open to (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `gavem` | BECAUSE clause pole (explanatory reason) | [Because, iff, and only because](../causation.md#only-because) | I |
-| `gazam` | locative between (two landmarks) | [Locative relations](../relations.md#locative-relations) | I |
-| `gebum` | locative across (edge to far edge of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
-| `gedam` | IFF clause pole (biconditional) | [Because, iff, and only because](../causation.md#only-because) | I |
-| `gehem` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](../relations.md#exchange) | B |
-| `gelel` | mention marker (the span is a word or phrase as spelling) | [Mention](../spans.md#mention) | I |
-| `gelen` | name-string mention marker (the span is a name as spelling) | [Mention](../spans.md#mention) | I |
+| `garum` | UNTIL clause pole (endpoint bound) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
+| `gebom` | ONLY-IF clause pole (necessary condition) | [Only if](../causation.md#only-if) | B |
+| `gedam` | locative between (two landmarks) | [Locative relations](../relations.md#locative-relations) | I |
+| `gegel` | mention marker (the span is a word or phrase as spelling) | [Mention](../spans.md#mention) | I |
+| `gegen` | name-string mention marker (the span is a name as spelling) | [Mention](../spans.md#mention) | I |
+| `geham` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](../relations.md#exchange) | B |
+| `gehem` | IFF clause pole (biconditional) | [Because, iff, and only because](../causation.md#only-because) | I |
 | `gen` | join-relation prioritizing (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
+| `gerem` | WHILE clause pole (concurrent) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
 | `gevahum` | BY clause pole (deadline: done at or before the endpoint) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
+| `gevam` | locative around (figure on all sides of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
+| `gewol` | similative exactly like (type match) | [Exactly like (hewol / gewol)](../relations.md#exactly-like) | I |
+| `gewom` | similative like (type resemblance) | [Hosted relations](../relations.md#beginner) | B |
 | `gezom` | ALTHOUGH clause pole (concession; NP despite) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `gobom` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
-| `gobum` | stimulus (sake about a noun you do not possess) | [Personal possession](../sakes.md#personal-possession) | B |
+| `gobem` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `goen` | join-relation on a par with (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `gogom` | SO-THAT clause pole (intended outcome; NP for-goal) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `golum` | ONLY-IF clause pole (necessary condition) | [Only if](../causation.md#only-if) | B |
-| `gomam` | UNTIL clause pole (endpoint bound) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
+| `gogam` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
+| `gogar` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
+| `gohem` | locative across (edge to far edge of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
+| `gohom` | IF clause pole (one-way conditional) | [If](../causation.md#if) | B |
 | `gon` | join-relation exclusive for (sole pick adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `goyem` | IF clause pole (one-way conditional) | [If](../causation.md#if) | B |
+| `gorol` | SAME identity (identical-to / same-as) | [Identity (SAME)](../predication.md#identity-same) | B |
+| `govam` | SO-THAT clause pole (intended outcome; NP for-goal) | [Because, if, although (poles)](../dependents.md#poles) | B |
+| `goyem` | stimulus (sake about a noun you do not possess) | [Personal possession](../sakes.md#personal-possession) | B |
 | `guan` | join-relation without or excluding (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `guen` | join-relation deprioritizing (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `gugem` | locative around (figure on all sides of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
-| `gugol` | SAME identity (identical-to / same-as) | [Identity (SAME)](../predication.md#identity-same) | B |
-| `guhum` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
-| `guhur` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
-| `gumul` | similative exactly like (type match) | [Exactly like (humul / gumul)](../relations.md#exactly-like) | I |
-| `gumum` | similative like (type resemblance) | [Hosted relations](../relations.md#beginner) | B |
+| `gugem` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](../relations.md#as-of) | A |
+| `guger` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](../relations.md#as-of) | A |
+| `gulem` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `gun` | join-relation against or anti- (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `guon` | join-relation open to anything but (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `guram` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](../relations.md#as-of) | A |
-| `gurar` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](../relations.md#as-of) | A |
-| `guwem` | WHILE clause pole (concurrent) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
-| `guwum` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 <!-- /generated -->
 
 ## `/h/` words {#h-words}
@@ -102,62 +102,62 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 | Agebon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
 | `habam` | BEFORE clause pole (ahead-of) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `hadem` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](../relations.md#proxy) | B |
+| `hadam` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `haen` | join-relation starting with (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `hagel` | STILL phasal (the state continues); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `hagem` | STILL phasal (the state continues); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `hager` | STILL phasal (the state continues); -r for now: about to end | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `hagum` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
-| `hahem` | of-relation contents (filling of a vessel) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
-| `hamom` | residue mood (outcome still on the current tally) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
+| `hagom` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](../relations.md#proxy) | B |
+| `haham` | of-relation origin (provenance / identity source) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
+| `hahem` | SO-THAT-RESULT clause pole (outcome that follows from the host) | [Result (so … that)](../dependents.md#result-pole) | I |
+| `halam` | AFTER clause pole (just-after) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `han` | join-relation with or including (adverb + argument) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `hanom` | AFTER clause pole (just-after) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `haon` | join-relation among options (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `hazam` | locative between (two landmarks) | [Locative relations](../relations.md#locative-relations) | I |
-| `hebum` | locative across (edge to far edge of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
-| `hehem` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](../relations.md#exchange) | B |
+| `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
+| `harum` | UNTIL clause pole (endpoint bound) | [Because, if, although (poles)](../dependents.md#poles) | B |
+| `havol` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `havom` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `havor` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `hawul` | STILL phasal (the state continues); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `hawum` | STILL phasal (the state continues); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `hawur` | STILL phasal (the state continues); -r for now: about to end | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `hedam` | locative between (two landmarks) | [Locative relations](../relations.md#locative-relations) | I |
+| `heham` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](../relations.md#exchange) | B |
+| `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
+| `helel` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `helem` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `heler` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `hen` | join-relation prioritizing (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `henom` | former-climate mood (not the climate claimed now) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
+| `herem` | WHILE clause pole (concurrent) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `hevahum` | BY clause pole (deadline: done at or before the endpoint) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `hewel` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `hewem` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `hewer` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `hevam` | locative around (figure on all sides of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
+| `hewol` | similative exactly like (manner match) | [Exactly like (hewol / gewol)](../relations.md#exactly-like) | I |
+| `hewom` | similative like (manner resemblance) | [Extra nouns (/b/)](../clause.md#extra-nouns) | B |
 | `hezom` | ALTHOUGH clause pole (concession; NP despite) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `hobom` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
-| `hodum` | SO-THAT-RESULT clause pole (outcome that follows from the host) | [Result (so … that)](../dependents.md#result-pole) | I |
+| `hobem` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
+| `hodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](../intention.md#ability-fallback) | I |
 | `hoen` | join-relation equating or tying (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `hogom` | SO-THAT clause pole (intended outcome; NP for-goal) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `hohal` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `hoham` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `hohar` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `homam` | UNTIL clause pole (endpoint bound) | [Because, if, although (poles)](../dependents.md#poles) | B |
+| `hogam` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
+| `hogar` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
+| `hohem` | locative across (edge to far edge of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
 | `hon` | join-relation exclusively for (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
+| `hovam` | SO-THAT clause pole (intended outcome; NP for-goal) | [Because, if, although (poles)](../dependents.md#poles) | B |
+| `howal` | attempt mood committed (keep going until it works or is ruled out) | [Try](../intention.md#try) | I |
+| `howam` | attempt mood (commitment unstated) | [Try](../intention.md#try) | I |
+| `howar` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](../intention.md#try) | I |
 | `huan` | join-relation excluding (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `hubom` | hostless ability fallback (capacity) | [When there is no single verb (ubo)](../intention.md#ability-fallback) | I |
-| `hudul` | attempt mood committed (keep going until it works or is ruled out) | [Try](../intention.md#try) | I |
-| `hudum` | attempt mood (commitment unstated) | [Try](../intention.md#try) | I |
-| `hudur` | attempt mood trial run (low-stakes probe; failing is useful data) | [Try](../intention.md#try) | I |
 | `huen` | join-relation deprioritizing (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `hugem` | locative around (figure on all sides of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
-| `huhum` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
-| `huhur` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
-| `humul` | similative exactly like (manner match) | [Exactly like (humul / gumul)](../relations.md#exactly-like) | I |
-| `humum` | similative like (manner resemblance) | [Extra nouns (/b/)](../clause.md#extra-nouns) | B |
+| `hugem` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](../relations.md#as-of) | A |
+| `huger` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](../relations.md#as-of) | A |
+| `hulem` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `hun` | join-relation refusing (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `huon` | join-relation barring anything but (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `huram` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](../relations.md#as-of) | A |
-| `hurar` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](../relations.md#as-of) | A |
-| `huwem` | WHILE clause pole (concurrent) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `huwum` | of-relation material (constitution) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
-| `huxedel` | binding refusal by the affected (a settled opt-out) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
-| `huxedem` | consent refused outright by the affected (withdraws any earlier revocable yes) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
-| `huxeder` | consent presumed absent from the affected (they probably don't want it) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
-| `huxegol` | consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
-| `huxegom` | consent given outright by the affected (the /b/ or else the actor); revocable any time | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
-| `huxegor` | consent assumed or inferred from the affected (the /b/ or else the actor) | [Consent (huxegol / huxegom / huxegor)](../sakes.md#consent) | I |
-| `huzel` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `huzem` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `huzer` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `huvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `huvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `huvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `huxegul` | binding refusal by the affected (a settled opt-out) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
+| `huxegum` | consent refused outright by the affected (withdraws any earlier revocable yes) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
+| `huxegur` | consent presumed absent from the affected (they probably don't want it) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
+| `huxolel` | consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
+| `huxolem` | consent given outright by the affected (the /b/ or else the actor); revocable any time | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
+| `huxoler` | consent assumed or inferred from the affected (the /b/ or else the actor) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
 <!-- /generated -->
 
 ## `/th/` words {#th-words}
@@ -165,65 +165,65 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 <!-- generated: overlays pos=th -->
 | Agebon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `thahol` | intuition evidential with strong evidence (strong gut sense) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thahom` | intuition evidential (gut sense you cannot fully spell out) | [Evidentiality](../knowing.md#evidentiality) | I |
-| `thahor` | intuition evidential with weak evidence (faint hunch) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thamal` | plan mood atlas map-resolution (includes backups; fully prepared) | [Plan](../intention.md#plan) | B |
-| `thamam` | plan mood itinerary map-resolution (steps on the map; detail unstated) | [Plan](../intention.md#plan) | B |
-| `thamar` | plan mood sketch map-resolution (direction only; details left open) | [Plan](../intention.md#plan) | B |
-| `thavel` | BECAUSE clause pole with fault (the reason broke a norm) | [Fault](../causation.md#fault) | I |
-| `thavem` | BECAUSE clause pole (explanatory reason) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `thaver` | BECAUSE clause pole with a share (the reason contributed among others) | [Fault](../causation.md#fault) | I |
-| `thavol` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Hold endings (NOTIONAL)](../knowing.md#hold-endings-notional) | I |
-| `thavom` | notional mood default hold (imagining a scene without a further purpose) | [Notional (as-if framing)](../knowing.md#notional-as-if-framing) | I |
-| `thavor` | notional mood suppose hold (toying with a possibility or assumption for now) | [Hold endings (NOTIONAL)](../knowing.md#hold-endings-notional) | I |
-| `thedam` | IFF clause pole (biconditional) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `thedel` | disallowed by a rule policy or formal ban | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
-| `thedem` | forbidden by a person (speaker by default or the /b/ forbidder) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
-| `theder` | tacitly disapproved (no one forbade it outright) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
-| `thegem` | CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make) | [CAUSE](../causation.md#cause) | I |
-| `thegol` | permission from a rule policy or formal right (no one in particular grants it) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
-| `thegom` | permission granted by a person (speaker by default or the /b/ grantor) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
-| `thegor` | tacit permission (no one objected; nobody granted it) | [Permission (thegol / thegom / thegor)](../sakes.md#permission) | I |
-| `thehul` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
-| `thehum` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
-| `thehur` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
-| `thevol` | memory evidential with strong evidence (vivid memory) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thevom` | memory evidential (remembered firsthand / reconstructive) | [Evidentiality](../knowing.md#evidentiality) | I |
-| `thevor` | memory evidential with weak evidence (hazy memory) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thewal` | reported evidential with strong evidence (reliable source) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thewam` | reported evidential (hearsay / said or written by someone else / reportative) | [Evidentiality](../knowing.md#evidentiality) | I |
-| `thewar` | reported evidential with weak evidence (rumor) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thezul` | mirative mood overturning a firm expectation | [Mirative (thezum)](../knowing.md#mirative) | I |
-| `thezum` | mirative mood (newly found out and not expected) | [Mirative (thezum)](../knowing.md#mirative) | I |
-| `thezur` | mirative mood against a loose expectation | [Mirative (thezum)](../knowing.md#mirative) | I |
-| `thobal` | pattern evidential with strong evidence (well-established pattern) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thobam` | pattern evidential (from trail of cases) | [Evidentiality](../knowing.md#evidentiality) | I |
-| `thobar` | pattern evidential with weak evidence (a few cases) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thodol` | live evidential with strong evidence (clear full view) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thodom` | live evidential (sensed now: in view / in earshot / on the skin) | [Evidentiality](../knowing.md#evidentiality) | I |
-| `thodor` | live evidential with weak evidence (a glimpse) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thohul` | want mood lasting (a wish that keeps returning) | [Want](../intention.md#want) | I |
-| `thohum` | want mood (duration unstated) | [Want](../intention.md#want) | I |
-| `thohur` | want mood passing (a whim that fades) | [Want](../intention.md#want) | I |
-| `tholum` | ONLY-IF clause pole (necessary condition) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `thovul` | may mood find-out hold (I'll / let's find out) | [Hold endings (MAY)](../knowing.md#hold-endings-may) | B |
-| `thovum` | may mood (could be; default) | [MAY](../knowing.md#may) | B |
-| `thovur` | may mood who-knows hold (leave unsettled; may never know) | [Hold endings (MAY)](../knowing.md#hold-endings-may) | B |
-| `thoyem` | IF clause pole (one-way conditional) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `thugul` | deduced evidential with strong evidence (every step could be shown) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thugum` | deduced evidential (follows from the premises) | [Evidentiality](../knowing.md#evidentiality) | I |
-| `thugur` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thuhum` | AS-OF stance pole (asserted whose-now / dated ledger) | [Stance as-of](../relations.md#stance-as-of) | A |
-| `thuhur` | AS-OF stance pole (asserted whose-now / dated ledger) resume | [Stance as-of](../relations.md#stance-as-of) | A |
-| `thumel` | required by a rule policy or law (no one in particular demands it) | [Requirement (thumel / thumem / thumer)](../sakes.md#requirement) | I |
-| `thumem` | required by a person (speaker by default or the /b/ who demands it) | [Requirement (thumel / thumem / thumer)](../sakes.md#requirement) | I |
-| `thumer` | expected by custom (no rule and no one demanding it) | [Requirement (thumel / thumem / thumer)](../sakes.md#requirement) | I |
-| `thunel` | clues evidential with strong evidence (strong clues) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thunem` | clues evidential (reasoned from clues about this case) | [Evidentiality](../knowing.md#evidentiality) | I |
-| `thuner` | clues evidential with weak evidence (a weak clue) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `thuram` | AS-OF stance pole (unasserted whose-now / placeholder now) | [Stance as-of](../relations.md#stance-as-of) | A |
-| `thurar` | AS-OF stance pole (unasserted whose-now / placeholder now) resume | [Stance as-of](../relations.md#stance-as-of) | A |
+| `thabol` | intuition evidential with strong evidence (strong gut sense) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `thabom` | intuition evidential (gut sense you cannot fully spell out) | [Evidentiality](../knowing.md#evidentiality) | I |
+| `thabor` | intuition evidential with weak evidence (faint hunch) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `thagel` | plan mood atlas map-resolution (includes backups; fully prepared) | [Plan](../intention.md#plan) | B |
+| `thagem` | plan mood itinerary map-resolution (steps on the map; detail unstated) | [Plan](../intention.md#plan) | B |
+| `thager` | plan mood sketch map-resolution (direction only; details left open) | [Plan](../intention.md#plan) | B |
+| `thahul` | BECAUSE clause pole with fault (the reason broke a norm) | [Fault](../causation.md#fault) | I |
+| `thahum` | BECAUSE clause pole (explanatory reason) | [Because, if, although (poles)](../dependents.md#poles) | B |
+| `thahur` | BECAUSE clause pole with a share (the reason contributed among others) | [Fault](../causation.md#fault) | I |
+| `thalel` | want mood lasting (a wish that keeps returning) | [Want](../intention.md#want) | I |
+| `thalem` | want mood (duration unstated) | [Want](../intention.md#want) | I |
+| `thaler` | want mood passing (a whim that fades) | [Want](../intention.md#want) | I |
+| `thebal` | reported evidential with strong evidence (reliable source) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `thebam` | reported evidential (hearsay / said or written by someone else / reportative) | [Evidentiality](../knowing.md#evidentiality) | I |
+| `thebar` | reported evidential with weak evidence (rumor) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `thebom` | ONLY-IF clause pole (necessary condition) | [Because, if, although (poles)](../dependents.md#poles) | B |
+| `thegal` | deduced evidential with strong evidence (every step could be shown) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `thegam` | deduced evidential (follows from the premises) | [Evidentiality](../knowing.md#evidentiality) | I |
+| `thegar` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `thegul` | disallowed by a rule policy or formal ban | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
+| `thegum` | forbidden by a person (speaker by default or the /b/ forbidder) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
+| `thegur` | tacitly disapproved (no one forbade it outright) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
+| `thehem` | IFF clause pole (biconditional) | [Because, if, although (poles)](../dependents.md#poles) | B |
+| `themol` | mirative mood overturning a firm expectation | [Mirative (themom)](../knowing.md#mirative) | I |
+| `themom` | mirative mood (newly found out and not expected) | [Mirative (themom)](../knowing.md#mirative) | I |
+| `themor` | mirative mood against a loose expectation | [Mirative (themom)](../knowing.md#mirative) | I |
+| `thevul` | memory evidential with strong evidence (vivid memory) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `thevum` | memory evidential (remembered firsthand / reconstructive) | [Evidentiality](../knowing.md#evidentiality) | I |
+| `thevur` | memory evidential with weak evidence (hazy memory) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `thewem` | CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make) | [CAUSE](../causation.md#cause) | I |
+| `theyel` | clues evidential with strong evidence (strong clues) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `theyem` | clues evidential (reasoned from clues about this case) | [Evidentiality](../knowing.md#evidentiality) | I |
+| `theyer` | clues evidential with weak evidence (a weak clue) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `theyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Hold endings (NOTIONAL)](../knowing.md#hold-endings-notional) | I |
+| `theyum` | notional mood default hold (imagining a scene without a further purpose) | [Notional (as-if framing)](../knowing.md#notional-as-if-framing) | I |
+| `theyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Hold endings (NOTIONAL)](../knowing.md#hold-endings-notional) | I |
+| `thogam` | AS-OF stance pole (asserted whose-now / dated ledger) | [Stance as-of](../relations.md#stance-as-of) | A |
+| `thogar` | AS-OF stance pole (asserted whose-now / dated ledger) resume | [Stance as-of](../relations.md#stance-as-of) | A |
+| `thogol` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
+| `thogom` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
+| `thogor` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
+| `thohom` | IF clause pole (one-way conditional) | [Because, if, although (poles)](../dependents.md#poles) | B |
+| `tholel` | permission from a rule policy or formal right (no one in particular grants it) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
+| `tholem` | permission granted by a person (speaker by default or the /b/ grantor) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
+| `tholer` | tacit permission (no one objected; nobody granted it) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
+| `thomal` | may mood find-out hold (I'll / let's find out) | [Hold endings (MAY)](../knowing.md#hold-endings-may) | B |
+| `thomam` | may mood (could be; default) | [MAY](../knowing.md#may) | B |
+| `thomar` | may mood who-knows hold (leave unsettled; may never know) | [Hold endings (MAY)](../knowing.md#hold-endings-may) | B |
+| `thubel` | pattern evidential with strong evidence (well-established pattern) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `thubem` | pattern evidential (from trail of cases) | [Evidentiality](../knowing.md#evidentiality) | I |
+| `thuber` | pattern evidential with weak evidence (a few cases) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `thugal` | required by a rule policy or law (no one in particular demands it) | [Requirement (thugal / thugam / thugar)](../sakes.md#requirement) | I |
+| `thugam` | required by a person (speaker by default or the /b/ who demands it) | [Requirement (thugal / thugam / thugar)](../sakes.md#requirement) | I |
+| `thugar` | expected by custom (no rule and no one demanding it) | [Requirement (thugal / thugam / thugar)](../sakes.md#requirement) | I |
+| `thugem` | AS-OF stance pole (unasserted whose-now / placeholder now) | [Stance as-of](../relations.md#stance-as-of) | A |
+| `thuger` | AS-OF stance pole (unasserted whose-now / placeholder now) resume | [Stance as-of](../relations.md#stance-as-of) | A |
+| `thugol` | live evidential with strong evidence (clear full view) | [Evidence strength](../knowing.md#evidence-strength) | I |
+| `thugom` | live evidential (sensed now: in view / in earshot / on the skin) | [Evidentiality](../knowing.md#evidentiality) | I |
+| `thugor` | live evidential with weak evidence (a glimpse) | [Evidence strength](../knowing.md#evidence-strength) | I |
 <!-- /generated -->
 
 ## `/v/` words {#v-words}
@@ -248,54 +248,54 @@ The pronouns are shown without a role letter: add the one for their slot (`zamun
 <!-- generated: overlays pos=w -->
 | Agebon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `wagel` | STILL phasal (the state continues); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wagem` | STILL phasal (the state continues); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wager` | STILL phasal (the state continues); -r for now: about to end | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wahol` | intuition evidential with strong evidence (strong gut sense) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wahom` | intuition evidential (gut sense you cannot fully spell out) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wahor` | intuition evidential with weak evidence (faint hunch) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wamom` | residue mood (outcome still on the current tally) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wavol` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wavom` | notional mood default hold (imagining a scene without a further purpose) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wavor` | notional mood suppose hold (toying with a possibility or assumption for now) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wazem` | respective pairing (item N of one list goes with item N of the other) | [Respectively (wazem)](../joins.md#respectively) | I |
-| `wegem` | CAUSE mood (mechanism framing) | [CAUSE](../causation.md#cause) | I |
-| `wenom` | former-climate mood (not the climate claimed now) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wevol` | memory evidential with strong evidence (vivid memory) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wevom` | memory evidential (remembered firsthand / reconstructive) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wevor` | memory evidential with weak evidence (hazy memory) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wewal` | reported evidential with strong evidence (reliable source) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wewam` | reported evidential (hearsay / said or written by someone else / reportative) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wewar` | reported evidential with weak evidence (rumor) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wewel` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wewem` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wewer` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wobal` | pattern evidential with strong evidence (well-established pattern) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wobam` | pattern evidential (from trail of cases) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wobar` | pattern evidential with weak evidence (a few cases) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wodol` | live evidential with strong evidence (clear full view) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wodom` | live evidential (sensed now: in view / in earshot / on the skin) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wodor` | live evidential with weak evidence (a glimpse) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wohal` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `woham` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wohar` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wovul` | may mood find-out hold (I'll / let's find out) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wovum` | may mood (could be; default) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wovur` | may mood who-knows hold (leave unsettled; may never know) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wubom` | hostless ability fallback (capacity) | [When there is no single verb (ubo)](../intention.md#ability-fallback) | I |
-| `wugul` | deduced evidential with strong evidence (every step could be shown) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wugum` | deduced evidential (follows from the premises) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wugur` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wuhum` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
-| `wuhur` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
-| `wunel` | clues evidential with strong evidence (strong clues) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wunem` | clues evidential (reasoned from clues about this case) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wuner` | clues evidential with weak evidence (a weak clue) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wuram` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](../relations.md#as-of) | A |
-| `wurar` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](../relations.md#as-of) | A |
-| `wuzel` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wuzem` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wuzer` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `wabol` | intuition evidential with strong evidence (strong gut sense) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wabom` | intuition evidential (gut sense you cannot fully spell out) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wabor` | intuition evidential with weak evidence (faint hunch) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `waram` | residue mood (outcome still on the current tally) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wavol` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `wavom` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `wavor` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `wawul` | STILL phasal (the state continues); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `wawum` | STILL phasal (the state continues); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `wawur` | STILL phasal (the state continues); -r for now: about to end | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `webal` | reported evidential with strong evidence (reliable source) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `webam` | reported evidential (hearsay / said or written by someone else / reportative) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `webar` | reported evidential with weak evidence (rumor) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wegal` | deduced evidential with strong evidence (every step could be shown) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wegam` | deduced evidential (follows from the premises) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wegar` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `welam` | former-climate mood (not the climate claimed now) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `welel` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `welem` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `weler` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `wevul` | memory evidential with strong evidence (vivid memory) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wevum` | memory evidential (remembered firsthand / reconstructive) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wevur` | memory evidential with weak evidence (hazy memory) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wewem` | CAUSE mood (mechanism framing) | [CAUSE](../causation.md#cause) | I |
+| `weyel` | clues evidential with strong evidence (strong clues) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `weyem` | clues evidential (reasoned from clues about this case) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `weyer` | clues evidential with weak evidence (a weak clue) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `weyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `weyum` | notional mood default hold (imagining a scene without a further purpose) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `weyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](../intention.md#ability-fallback) | I |
+| `wogam` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
+| `wogar` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
+| `womal` | may mood find-out hold (I'll / let's find out) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `womam` | may mood (could be; default) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `womar` | may mood who-knows hold (leave unsettled; may never know) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wubam` | respective pairing (item N of one list goes with item N of the other) | [Respectively (wubam)](../joins.md#respectively) | I |
+| `wubel` | pattern evidential with strong evidence (well-established pattern) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wubem` | pattern evidential (from trail of cases) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wuber` | pattern evidential with weak evidence (a few cases) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wugem` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](../relations.md#as-of) | A |
+| `wuger` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](../relations.md#as-of) | A |
+| `wugol` | live evidential with strong evidence (clear full view) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wugom` | live evidential (sensed now: in view / in earshot / on the skin) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wugor` | live evidential with weak evidence (a glimpse) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
+| `wuvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `wuvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `wuvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 <!-- /generated -->
 
 ## Sake words {#sakes}
@@ -305,15 +305,15 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 <!-- generated: sakes -->
 | Serves | Detracts from | Sake | Taught in | Stage |
 |--------|---------------|------|-----------|-------|
-| `thadotham` | `thadothum` | understanding (sense-making / learning) | [Word shape](../sakes.md#word-shape) | B |
-| `thahutham` | `thahuthum` | autonomy (choice / agency) | [Word shape](../sakes.md#word-shape) | B |
-| `thametham` | `thamethum` | purpose (direction / meaning) | [Word shape](../sakes.md#word-shape) | B |
-| `thanatham` | `thanathum` | relatedness (bond / belonging) | [Word shape](../sakes.md#word-shape) | B |
-| `thebetham` | `thebethum` | beneficence (making someone better off) | [Word shape](../sakes.md#word-shape) | B |
-| `thegatham` | `thegathum` | unspecified (potential) | [Word shape](../sakes.md#word-shape) | B |
-| `thoyutham` | `thoyuthum` | physical (body / health / safety / shelter) | [Word shape](../sakes.md#word-shape) | B |
-| `thozotham` | `thozothum` | pleasure (sweetness / enjoyment) | [Word shape](../sakes.md#word-shape) | B |
-| `thulotham` | `thulothum` | competence (readiness / efficacy) | [Word shape](../sakes.md#word-shape) | B |
+| `thagatham` | `thagathum` | autonomy (choice / agency) | [Word shape](../sakes.md#word-shape) | B |
+| `thawotham` | `thawothum` | relatedness (bond / belonging) | [Word shape](../sakes.md#word-shape) | B |
+| `thewatham` | `thewathum` | beneficence (making someone better off) | [Word shape](../sakes.md#word-shape) | B |
+| `thobatham` | `thobathum` | physical (body / health / safety / shelter) | [Word shape](../sakes.md#word-shape) | B |
+| `thodotham` | `thodothum` | pleasure (sweetness / enjoyment) | [Word shape](../sakes.md#word-shape) | B |
+| `thowotham` | `thowothum` | understanding (sense-making / learning) | [Word shape](../sakes.md#word-shape) | B |
+| `thudatham` | `thudathum` | unspecified (potential) | [Word shape](../sakes.md#word-shape) | B |
+| `thuretham` | `thurethum` | purpose (direction / meaning) | [Word shape](../sakes.md#word-shape) | B |
+| `thuwatham` | `thuwathum` | competence (readiness / efficacy) | [Word shape](../sakes.md#word-shape) | B |
 <!-- /generated -->
 
 ## Dictionary compounds {#compounds}
@@ -325,52 +325,47 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 |--------|---------|-------------------|
 | `abahalagedal` | *picnic* |  |
 | `abahayol` | *refugee* |  |
+| `abalelebelal` | *rosemary* |  |
+| `abalelolelol` | *pine-needle* |  |
 | `abalobobol` | *shoulder* |  |
 | `abebalahebal` | *palm-of-hand* |  |
-| `abebamamol` | *donation* |  |
+| `abebamaral` | *donation* |  |
 | `abebuwal` | *first-aid-kit* |  |
-| `abevalozel` | *detective-story* |  |
+| `abevalogel` | *detective-story* |  |
 | `abewamodudal` | *energy-drink* |  |
 | `abezulogulal` | *silk* |  |
 | `abohalebogal` | *cheque* |  |
 | `abohalegeral` | *debit-card* |  |
-| `abololahel` | *flowerpot* |  |
-| `abololobol` | *stem* |  |
-| `abololudul` | *hose* |  |
-| `aboraladahel` | *bell-tower* |  |
-| `aborelegel` | *calculator* |  |
-| `abowalobol` | *rib* |  |
+| `abolanurul` | *midnight* |  |
+| `abolohalal` | *emotion* |  |
+| `aboluzurel` | *noon* |  |
+| `abowalobel` | *rib* |  |
 | `abowalulovol` | *basketball* |  |
-| `abuloleredal` | *blackberry* |  |
-| `abulolubezol` | *crow* |  |
 | `adahaladurel` | *drought* |  |
-| `adahaluwolal` | *oasis* |  |
-| `adalelayayal` | *forest* |  |
-| `adalelezedel` | *twig* |  |
-| `adalelubezol` | *woodpecker* |  |
-| `adaleyol` | *adult* |  |
-| `adazulabolol` | *fern* |  |
+| `adahalowulal` | *oasis* |  |
+| `adalogomul` | *fridge* |  |
 | `adazularolol` | *fossil* |  |
+| `adazulobolol` | *fern* |  |
+| `adebelagulal` | *peninsula* |  |
 | `adebelawebol` | *taste* |  |
-| `adebelegulal` | *peninsula* |  |
 | `adedoluhudal` | *orange-juice* |  |
 | `adobalerebel` | *belt* |  |
 | `adobalogulal` | *denim* |  |
-| `adorelemulol` | *brass* |  |
-| `adowolugul` | *audiobook* |  |
+| `adowolegal` | *audiobook* |  |
 | `adugumobobol` | *elbow* |  |
 | `aduhehol` | *basement* |  |
-| `aduhelevemol` | *chin* |  |
-| `adumamuwolal` | *thirst* |  |
+| `aduhelovemol` | *chin* |  |
 | `adurulagedal` | *dinner* |  |
-| `adurulenurul` | *evening* |  |
+| `adurulanurul` | *evening* |  |
 | `aduyelagahel` | *ministry* |  |
 | `aduyeyal` | *council* |  |
 | `agahaluvaval` | *camper* |  |
 | `agahelehohal` | *cathedral* |  |
-| `agahemamol` | *tax* |  |
+| `agahemaral` | *tax* |  |
 | `agaheyal` | *political-party* |  |
-| `agalalehaval` | *spaceship* |  |
+| `agalagahel` | *democracy* |  |
+| `agalayayal` | *electorate* |  |
+| `agalelarolol` | *meteorite* |  |
 | `agayuludozol` | *guard-dog* |  |
 | `agazalahehal` | *barn* |  |
 | `agazalazuwal` | *moo* |  |
@@ -383,74 +378,82 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `agedalezedel` | *chopsticks* |  |
 | `agedamabohal` | *food-bank* |  |
 | `agedelegodol` | *carrot-cake* |  |
-| `ageladuhel` | *hang* |  |
+| `agelonogal` | *atlas* |  |
 | `agevoluguval` | *card-game* |  |
 | `agolalogulal` | *lace* |  |
-| `agorelazuwal` | *tick* |  |
-| `agorumamol` | *wage* |  |
+| `agorelayal` | *appointment* |  |
+| `agorumaral` | *wage* |  |
 | `agozolazuwal` | *meow* |  |
 | `agozolehubal` | *whisker* |  |
-| `agudamegal` | *scrambled-eggs* |  |
-| `agudamegel` | *blender* |  |
+| `agudamewel` | *blender* |  |
+| `agudamudal` | *scrambled-eggs* |  |
 | `agudamuhudal` | *smoothie* |  |
 | `agugumovehal` | *estate* |  |
-| `aguladogul` | *export* |  |
-| `agulagahel` | *government* |  |
-| `agulehahal` | *county* |  |
-| `agulenogal` | *import* |  |
-| `aguludurel` | *anthem* |  |
-| `agulugobel` | *president* |  |
-| `aguluzedal` | *province* |  |
+| `agulalawebol` | *landscape* |  |
+| `agulaloyulal` | *carpet* |  |
+| `agulaluvobel` | *sole* |  |
 | `aguvelezedel` | *golf-club* |  |
 | `aguvelulovol` | *golf-ball* |  |
 | `aguyomodudal` | *potion* |  |
-| `aguyomozel` | *fantasy* |  |
+| `aguyomogel` | *fantasy* |  |
 | `ahahalorahel` | *street* |  |
-| `ahalebogel` | *contract* |  |
-| `ahamezuyel` | *negotiation* |  |
+| `ahaladogul` | *export* |  |
+| `ahalagahel` | *government* |  |
+| `ahalehahal` | *county* |  |
+| `ahalenogal` | *import* |  |
+| `ahaludurel` | *anthem* |  |
+| `ahalugobel` | *president* |  |
+| `ahaluzedal` | *province* |  |
 | `ahebalamobal` | *holder* |  |
 | `ahebaledovol` | *puppet* |  |
 | `ahebalezuyel` | *sign-language* |  |
 | `ahedalebodol` | *bun* |  |
-| `ahehalabolol` | *houseplant* |  |
-| `ahehalamol` | *mortgage* |  |
+| `ahehalagulal` | *floor* |  |
 | `ahehalanobal` | *roof* |  |
+| `ahehalaral` | *mortgage* |  |
 | `ahehaledovol` | *dollhouse* |  |
-| `ahehalegulal` | *floor* |  |
 | `ahehalezahel` | *apartment* |  |
+| `ahehalobolol` | *houseplant* |  |
 | `ahehalolawel` | *stairs* |  |
 | `ahehalovehal` | *yard* |  |
 | `ahehaluhobal` | *slipper* |  |
-| `ahehaluwul` | *lumber* |  |
+| `ahehalulel` | *lumber* |  |
 | `ahehamoderol` | *rent* |  |
 | `ahehamogugal` | *environment* |  |
 | `ahehayol` | *resident* |  |
 | `ahehazol` | *pet* |  |
-| `ahelogemul` | *fridge* |  |
+| `ahelemubezol` | *swallow* |  |
 | `ahohalodahal` | *mall* |  |
-| `aholazurel` | *noon* |  |
-| `aholehalal` | *emotion* |  |
-| `aholenurul` | *midnight* |  |
 | `ahowulehahal` | *shed* |  |
-| `ahoyelamol` | *allowance* |  |
+| `ahoyelaral` | *allowance* |  |
 | `ahoyeludurel` | *nursery-rhyme* |  |
 | `ahoyeluzahal` | *kindergarten* |  |
 | `ahoyemuzahal` | *high-school* |  |
-| `ahubeludul` | *artery* |  |
+| `ahubelowal` | *artery* |  |
 | `ahubelurobol` | *heart-organ* |  |
-| `ahubemugul` | *biography* |  |
+| `ahubemegal` | *biography* |  |
 | `ahudalawudal` | *mead* |  |
-| `ahulagahel` | *democracy* |  |
-| `ahulayayal` | *electorate* |  |
+| `ahulamahul` | *cliff* |  |
+| `ahularolol` | *brick* |  |
+| `ahulebogal` | *wallpaper* |  |
+| `ahulebogel` | *poster* |  |
+| `ahulobolol` | *ivy* |  |
+| `ahulorahel` | *alley* |  |
 | `ahuvelezedel` | *hockey-stick* |  |
-| `ahuyalehalal` | *bay* |  |
+| `ahuyalohalal` | *bay* |  |
 | `ahuyayol` | *friend* | `ahuyayom` *allegiance* |
-| `alayelamol` | *pension* |  |
+| `alalamahul` | *dune* |  |
+| `alalarolol` | *sandstone* |  |
+| `alalebogal` | *sandpaper* |  |
+| `alalewulel` | *sandstorm* |  |
+| `alalobogal` | *sandbox* |  |
+| `alayelaral` | *pension* |  |
 | `alayelenuvol` | *retirement* |  |
-| `aledalubelal` | *parsley* |  |
+| `aledalebelal` | *parsley* |  |
 | `alobamezuyel` | *jargon* |  |
 | `alobamulayel` | *veteran* |  |
 | `alobayal` | *panel* |  |
+| `alolazudal` | *star-anise* |  |
 | `alowelabezul` | *firefly* |  |
 | `alowolovewol` | *smartphone* |  |
 | `alululazuwal` | *thunder* |  |
@@ -458,86 +461,68 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `amahulevezal` | *trout* |  |
 | `amahulezemul` | *altitude-sickness* |  |
 | `amahulohohul` | *cave* |  |
-| `amalonogal` | *atlas* |  |
 | `amebalehubal` | *mustache* |  |
-| `amebaludelol` | *saliva* |  |
+| `amebalodelol` | *saliva* |  |
 | `amebalunobel` | *throat* |  |
+| `amedalebelal` | *cilantro* |  |
 | `amedalozodal` | *salsa* |  |
-| `amedalubelal` | *cilantro* |  |
-| `amelonogal` | *guidebook* |  |
-| `ameraledovol` | *rattle* |  |
-| `ameralezozul` | *rattlesnake* |  |
-| `amewalemulol` | *iron* |  |
-| `amezomadalel` | *bush* |  |
+| `amewalomulol` | *iron* |  |
 | `amezomagedal` | *snack* |  |
 | `amezomebogel` | *paragraph* |  |
+| `amezomedalel` | *bush* |  |
 | `amezomewahal` | *clinic* |  |
 | `amezomezuyel` | *summary* |  |
-| `amezomozel` | *anecdote* |  |
+| `amezomogel` | *anecdote* |  |
 | `amezoyol` | *dwarf* |  |
-| `amolabolol` | *investment* |  |
-| `amolamuyal` | *employment* |  |
-| `amolayuhel` | *inflation* |  |
-| `amolazurel` | *payday* |  |
-| `amolebogal` | *banknote* |  |
-| `amolebogel` | *budget* |  |
-| `amolenogal` | *revenue* |  |
-| `amolumurul` | *discount* |  |
 | `amugoluzahal` | *medical-school* |  |
-| `amumulowal` | *spotlight* |  |
+| `amurulodegel` | *coupon* |  |
 | `amuyumezuyel` | *insult* |  |
-| `analevulal` | *rope* |  |
 | `anedamezemul` | *diabetes* |  |
 | `anedamoludal` | *rum* |  |
-| `anedulubelal` | *chives* |  |
-| `anelalanedal` | *chewing-gum* |  |
-| `anelalodudal` | *soda* |  |
-| `anelaluwolal` | *sparkling-water* |  |
+| `anedulebelal` | *chives* |  |
 | `anemuyal` | *mob* |  |
 | `anewulamugol` | *surgery* |  |
 | `anewulewowul` | *dagger* |  |
-| `anobalahel` | *lid* |  |
+| `anobaladal` | *lid* |  |
 | `anobalonedul` | *acorn* |  |
-| `anolamahul` | *dune* |  |
-| `anolarolol` | *sandstone* |  |
-| `anolebogal` | *sandpaper* |  |
-| `anolewulel` | *sandstorm* |  |
-| `anolobogal` | *sandbox* |  |
 | `anozalehubal` | *fur* |  |
-| `anozalozel` | *fable* |  |
+| `anozalogel` | *fable* |  |
+| `anurulezulol` | *frost* |  |
+| `anurulubezel` | *moth* |  |
+| `anurululowal` | *night-light* |  |
+| `anuruluzahal` | *night-school* |  |
+| `anuruyol` | *stranger* |  |
 | `anuvulewulel` | *gust* |  |
 | `arahalanobal` | *cowboy-hat* |  |
 | `arahalunobal` | *cowboy-boot* |  |
+| `aralamurul` | *discount* |  |
+| `aralamuyal` | *employment* |  |
+| `aralayuhel` | *inflation* |  |
+| `aralebogal` | *banknote* |  |
+| `aralebogel` | *budget* |  |
+| `aralenogal` | *revenue* |  |
+| `aralobolol` | *investment* |  |
+| `araluzurel` | *payday* |  |
 | `araveluraval` | *jet* |  |
 | `arayeledohol` | *desk* |  |
 | `arayelezuyol` | *poem* |  |
+| `arayelomal` | *essay* |  |
 | `arayeloruyol` | *edit* |  |
-| `arayelovul` | *essay* |  |
+| `aremumuvewel` | *horror-film* |  |
 | `areweluvewel` | *cartoon* |  |
 | `arezulezemul` | *plague* |  |
-| `arololabolol` | *moss* |  |
 | `arololavulul` | *coal* | `arololavulum` *carbon* |
+| `arololobolol` | *moss* |  |
 | `arololudaval` | *dump truck* |  |
 | `arololuhebal` | *mussel* |  |
 | `aruyelagahel` | *institute* |  |
-| `aruyeludul` | *test-tube* |  |
+| `aruyelowal` | *test-tube* |  |
 | `avahularolol` | *lava* |  |
-| `avalulerulal` | *drizzle* |  |
 | `avayayal` | *tribe* |  |
 | `avedolozodal` | *guacamole* |  |
-| `avelabolol` | *ivy* |  |
-| `avelamahul` | *cliff* |  |
-| `avelarolol` | *brick* |  |
-| `avelebogal` | *wallpaper* |  |
-| `avelebogel` | *poster* |  |
-| `avelorahel` | *alley* |  |
-| `averelemulol` | *mercury* |  |
-| `avezelegulal` | *swamp* |  |
-| `avezelulelol` | *lily-pad* |  |
+| `avezelagulal` | *swamp* |  |
+| `avezelolelol` | *lily-pad* |  |
 | `avobelorahel` | *path* |  |
-| `avolayayal` | *troupe* |  |
-| `avolebogel` | *script* |  |
-| `avoludobal` | *costume* |  |
 | `avugemagozol` | *cheetah* |  |
 | `avugemavodal` | *microwave* |  |
 | `avugemorahel` | *highway* |  |
@@ -545,32 +530,37 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `avululaboval` | *hot-air-balloon* |  |
 | `avululahehal` | *firehouse* |  |
 | `avululanedal` | *caramel* |  |
-| `avululavalul` | *smoke* |  |
 | `avululebodol` | *toast* |  |
 | `avululedodal` | *kettle* |  |
 | `avululezedel` | *match* |  |
 | `avululomudol` | *barbecue* |  |
-| `avululudul` | *chimney* |  |
-| `avululuwul` | *firewood* |  |
-| `avuvamugul` | *yearbook* |  |
+| `avululovulul` | *smoke* |  |
+| `avululowal` | *chimney* |  |
+| `avulululel` | *firewood* |  |
+| `avuvamegal` | *yearbook* |  |
 | `avuvulovehal` | *battlefield* |  |
 | `avuvuyal` | *army* |  |
 | `avuyalahehal` | *farmhouse* |  |
 | `avuyalubezol` | *poultry* |  |
 | `avuyazal` | *livestock* |  |
+| `awalerowol` | *podcast* |  |
 | `awayalogahal` | *abortion* |  |
 | `awayalurobol` | *womb* |  |
 | `awebolabebul` | *eyepatch* |  |
 | `awebolehubal` | *eyelash* |  |
 | `awerelahebal` | *wrist* |  |
+| `awolovulal` | *rope* |  |
 | `awudaloludal` | *brandy* |  |
-| `awudaluwul` | *cork* |  |
-| `awuloladalel` | *birch* |  |
+| `awudalulel` | *cork* |  |
+| `awuladuhel` | *hang* |  |
+| `awuloledalel` | *birch* |  |
 | `awuloleredol` | *cauliflower* |  |
 | `awuvoyal` | *crowd* |  |
 | `ayabahal` | *bathroom* |  |
 | `ayabalogobal` | *bathrobe* |  |
 | `ayabalogulal` | *towel* |  |
+| `ayalebogel` | *contract* |  |
+| `ayamezuyel` | *negotiation* |  |
 | `ayayahal` | *hall* |  |
 | `ayayamaduyel` | *committee* |  |
 | `ayayamezemul` | *epidemic* |  |
@@ -582,40 +572,41 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `azadalozodal` | *dressing* |  |
 | `azedalazudal` | *vanilla* |  |
 | `azedalomudal` | *milkshake* |  |
-| `azelabowal` | *laundry-basket* |  |
+| `azelumugelal` | *rye* |  |
 | `azewalegodol` | *sponge-cake* |  |
 | `azudalawudal` | *mulled-wine* |  |
 | `azudalududal` | *chai* |  |
 | `azudaluzudal` | *curry* |  |
-| `azureladurul` | *afternoon* |  |
-| `azuremebalol` | *daylight* |  |
-| `azuremonogal` | *diary* |  |
 | `azuvalehobal` | *jersey* |  |
 | `azuvaluhobal` | *cleats* |  |
 | `azuvalulovol` | *soccer-ball* |  |
 | `azuvelavobal` | *life-jacket* |  |
 | `azuveluhobal` | *flipper* |  |
-| `ebaleluvodal` | *date-fruit* |  |
+| `ebalayayal` | *audience* |  |
+| `ebalezemul` | *earache* |  |
+| `ebalugebal` | *earmuffs* |  |
 | `ebavalorahel` | *canal* |  |
 | `ebazemahehal` | *museum* |  |
-| `ebazemozel` | *myth* |  |
-| `ebazoladalel` | *bamboo* |  |
+| `ebazemogel` | *myth* |  |
+| `ebazoledalel` | *bamboo* |  |
 | `ebazulanedal` | *gummy-bear* |  |
 | `ebazulevezal` | *salmon* |  |
 | `ebedalomudal` | *soy-milk* |  |
 | `ebedalozodal` | *soy-sauce* |  |
 | `ebedalurobol` | *kidney* |  |
-| `ebedelubelal` | *dill* |  |
-| `ebelebogal` | *wrapping-paper* |  |
-| `ebelegeral` | *gift-card* |  |
+| `ebedelebelal` | *dill* |  |
+| `ebelalobebul` | *herbal-medicine* |  |
+| `ebelalovehal` | *grass* |  |
+| `ebelalozodal` | *pesto* |  |
+| `ebelalududal` | *herbal-tea* |  |
 | `ebewelarolol` | *chalk* |  |
 | `ebewelonogal` | *sketchbook* |  |
 | `ebeweloruyol` | *editing* |  |
 | `ebobaludobal` | *underwear* |  |
-| `ebobolevemol` | *forehead* |  |
 | `ebobolonedul` | *walnut* |  |
+| `ebobolovemol` | *forehead* |  |
 | `ebobomabezol` | *well-founded* | `ebobomabezom` *soundness* |
-| `ebobomavel` | *premise* |  |
+| `ebobomahul` | *premise* |  |
 | `ebobomevahul` | *conclusion* |  |
 | `ebobomolawel` | *argument* | `ebobomolawem` *logic* |
 | `ebobomulewel` | *valid* | `ebobomulewem` *validity* |
@@ -623,13 +614,16 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ebodohal` | *pantry* |  |
 | `ebodolahohal` | *bakery* |  |
 | `ebodolanewul` | *bread-knife* |  |
-| `ebodolegel` | *toaster* |  |
-| `ebodologelal` | *wheat* |  |
+| `ebodolewel` | *toaster* |  |
+| `ebodolugelal` | *wheat* |  |
 | `ebogalabezul` | *wasp* |  |
-| `ebogalemulol` | *foil* |  |
 | `ebogalobogal` | *carton* |  |
+| `ebogalomulol` | *foil* |  |
 | `ebohalagevol` | *postcard* |  |
 | `ebohaloderol` | *postage* |  |
+| `eboraladahel` | *bell-tower* |  |
+| `eboromogel` | *folktale* |  |
+| `eboromudurel` | *folk-song* |  |
 | `ebowularolol` | *ore* |  |
 | `ebowumehaval` | *submarine* |  |
 | `eboyehal` | *nursery* |  |
@@ -637,85 +631,78 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `eboyelebobal` | *diaper* |  |
 | `eboyelogowal` | *stroller* |  |
 | `ebubalabohal` | *blood-bank* |  |
-| `ebubaludul` | *vein* |  |
-| `ebuhelamol` | *refund* |  |
-| `ebuhelugol` | *small-change* |  |
-| `ebulebaval` | *ferry* |  |
-| `eburelagevol` | *birthday-card* |  |
+| `ebubalowal` | *vein* |  |
+| `ebuhelaral` | *refund* |  |
+| `ebuhelorol` | *small-change* |  |
+| `edalelayayal` | *forest* |  |
+| `edalelezedel` | *twig* |  |
+| `edalelubezol` | *woodpecker* |  |
+| `edaleyol` | *adult* |  |
 | `edayulahehal` | *hell* |  |
-| `edeboladalel` | *willow* |  |
-| `edodalavalul` | *steam* |  |
+| `edeboledalel` | *willow* |  |
+| `edodalovulul` | *steam* |  |
 | `edoholuguval` | *board-game* |  |
-| `edurelagedal` | *breakfast* |  |
-| `edureludelol` | *dew* |  |
+| `eduremazebol` | *scan* |  |
+| `eduremevemul` | *panic* |  |
 | `eduvalulovol` | *tennis-ball* |  |
-| `egalozodal` | *mayonnaise* |  |
-| `egaluhebal` | *eggshell* |  |
-| `egamovelal` | *bud* |  |
+| `egalagahel` | *publisher* |  |
+| `egalahehal` | *library* |  |
+| `egalahohal` | *bookshop* |  |
+| `egalawebol` | *read* |  |
+| `egaluyowol` | *publication* |  |
+| `egamerewol` | *technology* |  |
 | `egavalahehal` | *garage* |  |
 | `egavalohozul` | *traffic* |  |
 | `egavalulowal` | *headlight* |  |
 | `egavalunewol` | *drive* |  |
 | `egavaluzahal` | *driving-school* |  |
-| `egayulozel` | *ghost-story* |  |
-| `egedalabolol` | *vine* |  |
+| `egayulogel` | *ghost-story* |  |
+| `egedalobolol` | *vine* |  |
 | `egedalovehal` | *vineyard* |  |
 | `egedaluhudal` | *grape-juice* |  |
-| `egeleraval` | *locomotive* |  |
-| `egelonogal` | *manual* |  |
+| `egelabeval` | *crossword* |  |
+| `egelarayel` | *spell* |  |
+| `egeluzahal` | *primary-school* |  |
 | `egeramoderol` | *interest* |  |
 | `egewomagevol` | *tarot-card* |  |
 | `egohuledovol` | *building-block* |  |
-| `egolonedul` | *pistachio* |  |
-| `egolududal` | *green-tea* |  |
+| `egorelazuwal` | *tick* |  |
 | `egugolebogel` | *questionnaire* |  |
 | `egugolezuyel` | *interview* |  |
 | `egugoluguval` | *quiz* |  |
-| `egulalawebol` | *landscape* |  |
-| `egulaluvobel` | *sole* |  |
-| `egulaluyulal` | *carpet* |  |
-| `egulelazudal` | *saffron* |  |
-| `egulelevezal` | *goldfish* |  |
-| `eguyemozel` | *fiction* |  |
-| `eguyemugul` | *novel* |  |
+| `eguyemegal` | *novel* |  |
+| `eguyemogel` | *fiction* |  |
 | `ehahalahahal` | *village* |  |
 | `ehahamezuyel` | *dialect* |  |
 | `ehahayol` | *neighbor* |  |
-| `ehalalegudal` | *seaweed* |  |
-| `ehalalegulal` | *seabed* |  |
-| `ehalalezemul` | *seasickness* |  |
-| `ehalalomudol` | *seafood* |  |
-| `ehalalozudal` | *sea-salt* |  |
-| `ehalalubezol` | *seagull* |  |
-| `ehalaluwul` | *driftwood* |  |
-| `ehamuladurel` | *heatwave* |  |
-| `ehamulegel` | *heater* |  |
-| `ehamumezemul` | *flu* |  |
+| `ehamumahoyel` | *orphan* |  |
+| `ehamumomuyel` | *widower* |  |
+| `ehamumudurel` | *lament* |  |
+| `ehamumuwayel` | *widow* |  |
 | `ehavalabahal` | *harbor* |  |
 | `ehavalagahel` | *navy* |  |
 | `ehavalahehal` | *port* |  |
-| `ehavaluhul` | *logbook* |  |
+| `ehavalogal` | *logbook* |  |
 | `ehavamuvahol` | *tourism* |  |
 | `ehavayal` | *crew* |  |
-| `ehazolugoral` | *density* |  |
+| `ehazologoral` | *density* |  |
 | `ehedolegodol` | *cheesecake* |  |
 | `ehedolonudal` | *mac-and-cheese* |  |
 | `ehedolozodal` | *fondue* |  |
 | `ehedulugedol` | *gingerbread* |  |
-| `ehobalegel` | *washing-machine* |  |
+| `ehobalewel` | *washing-machine* |  |
 | `ehobaleyobal` | *pocket* |  |
 | `ehobolabezul` | *louse* |  |
 | `ehobolezemul` | *headache* |  |
 | `ehobuyul` | *soldier* |  |
+| `ehohalegal` | *scripture* |  |
 | `ehohalezuyel` | *sermon* |  |
 | `ehohaludurel` | *hymn* |  |
-| `ehohalugul` | *scripture* |  |
 | `ehohaluzahal` | *seminary* |  |
 | `ehohamagahel` | *denomination* |  |
 | `ehohameruyel` | *god* |  |
 | `ehohayal` | *congregation* |  |
 | `ehohulovehal` | *cemetery* |  |
-| `eholerowol` | *podcast* |  |
 | `ehorelezuyel` | *poetry* |  |
 | `ehorelezuyol` | *opera* |  |
 | `ehoreluzahal` | *music-school* |  |
@@ -731,62 +718,51 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `eledalazudal` | *paprika* |  |
 | `eledulodudal` | *lemonade* |  |
 | `eleduluvodal` | *citrus* |  |
-| `elelabeval` | *crossword* |  |
-| `elelarayel` | *spell* |  |
-| `eleluzahal` | *primary-school* |  |
+| `elemamurobol` | *genitals* |  |
 | `elewulugahal` | *locker* |  |
 | `elewumahehal` | *prison* |  |
 | `elewuyol` | *prisoner* |  |
 | `elogalebogel` | *letter* |  |
-| `elomamurobol` | *genitals* |  |
 | `elowulebaval` | *lifeboat* |  |
 | `eluvohal` | *gym* |  |
-| `emaheladel` | *passport* |  |
-| `emalemuzel` | *evolution* |  |
+| `emahelagol` | *passport* |  |
+| `emalemelel` | *evolution* |  |
+| `emodalagulal` | *clay* |  |
 | `emodalavodal` | *kiln* |  |
-| `emodalegulal` | *clay* |  |
-| `emoralewal` | *eardrum* |  |
-| `emoralezedel` | *drum-stick* |  |
 | `emugalunogal` | *newsletter* |  |
-| `emulolahel` | *can* |  |
-| `emulolevulal` | *wire* |  |
-| `enebalobul` | *fingernail* |  |
-| `enemulobebul` | *painkiller* |  |
-| `enewulegel` | *sewing-machine* |  |
-| `enewuluwul` | *splinter* |  |
+| `enamulobebul` | *painkiller* |  |
+| `enebaloyel` | *fingernail* |  |
+| `enewulewel` | *sewing-machine* |  |
+| `enewululel` | *splinter* |  |
 | `enobalorahel` | *career* |  |
 | `enobamagevol` | *business-card* |  |
 | `enobamudurel` | *jingle* |  |
 | `enobamunogal` | *advertisement* |  |
-| `enogamoyel` | *entrance* |  |
-| `enurulozulol` | *frost* |  |
-| `enurulubezel` | *moth* |  |
-| `enurululowal` | *night-light* |  |
-| `enuruluzahal` | *night-school* |  |
-| `enuruyol` | *stranger* |  |
-| `enuyalamol` | *inheritance* |  |
+| `enogamohol` | *entrance* |  |
+| `enuromegal` | *music-album* |  |
+| `enuyalaral` | *inheritance* |  |
 | `enuyalebogel` | *testament* |  |
 | `enuyayol` | *aristocrat* |  |
 | `erebelunobel` | *bow-tie* |  |
 | `eredaloludal` | *gin* |  |
 | `erozolubezol` | *hawk* |  |
 | `erugalowowul` | *recycling-bin* |  |
+| `erulalezulol` | *hail* |  |
+| `erulalodelol` | *raindrop* |  |
 | `erulalogobal` | *raincoat* |  |
-| `erulalozulol` | *hail* |  |
-| `erulaludelol` | *raindrop* |  |
 | `erulalugalal` | *raincloud* |  |
 | `erulalunobal` | *rain-boot* |  |
 | `eruleleredal` | *raspberry* |  |
 | `erulelezemul` | *rash* |  |
 | `erulelubezol` | *robin* |  |
 | `eruyelagahel` | *monarchy* |  |
-| `eruyelagul` | *empire* |  |
+| `eruyelahal` | *empire* |  |
 | `eruyelavayal` | *dynasty* |  |
 | `evahulegaval` | *race-car* |  |
 | `evalamezemul` | *pandemic* |  |
-| `evemoluvogal` | *portrait* |  |
+| `evemolegal` | *philosophy* |  |
 | `everelazahal` | *championship* |  |
-| `eveyolozel` | *fairy-tale* |  |
+| `eveyologel` | *fairy-tale* |  |
 | `evezalezedel` | *fishing-rod* |  |
 | `evezalurobol` | *gill* |  |
 | `evezazal` | *shoal* |  |
@@ -796,103 +772,84 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `evobumuwayel` | *wife* |  |
 | `evobuyol` | *spouse* |  |
 | `evogoyol` | *citizen* |  |
-| `evolebaval` | *fishing boat* |  |
-| `evolevulal` | *fishing-line* |  |
-| `evulalanedal` | *cotton-candy* |  |
+| `evoroyal` | *orchestra* |  |
+| `evulebaval` | *fishing boat* |  |
+| `evulovulal` | *fishing-line* |  |
 | `ewahalanewul` | *scalpel* |  |
-| `ewalayayal` | *audience* |  |
-| `ewalezemul` | *earache* |  |
-| `ewalugebal` | *earmuffs* |  |
+| `ewalebogal` | *wrapping-paper* |  |
+| `ewalegeral` | *gift-card* |  |
+| `eweleraval` | *locomotive* |  |
+| `ewelonogal` | *manual* |  |
+| `ewemamudurel` | *serenade* |  |
+| `ewolazuwal` | *echo* |  |
 | `ewuleladahel` | *windmill* |  |
-| `ewulelanol` | *dust* |  |
+| `ewulelalal` | *dust* |  |
 | `ewulelebaval` | *sailboat* |  |
 | `ewulelogobal` | *windbreaker* |  |
-| `ewulelovelal` | *dandelion* |  |
+| `ewulelowal` | *windpipe* |  |
 | `ewulelozulal` | *blizzard* |  |
-| `ewuleludul` | *windpipe* |  |
 | `ewuleluraval` | *glider* |  |
-| `ewumamudurel` | *serenade* |  |
-| `ewurelael` | *wield* |  |
-| `ewurelaem` | *channel* |  |
-| `ewurelal` | *enter* |  |
-| `ewurelam` | *mill-amid* |  |
-| `ewurelaol` | *mount* |  |
-| `ewurelaom` | *cover* |  |
-| `ewureleboyel` | *toddler* |  |
-| `ewurelel` | *serve* |  |
-| `ewurelem` | *have-in-use* |  |
-| `ewureloel` | *head-for* |  |
-| `ewureloem` | *orient* |  |
-| `ewurelol` | *attend* |  |
-| `ewurelom` | *adjoin* |  |
-| `ewurelorahel` | *sidewalk* |  |
-| `ewurelual` | *exit* |  |
-| `ewureluam` | *pick-out* |  |
-| `ewureluel` | *oppose* |  |
-| `ewureluem` | *defy* |  |
-| `ewurelul` | *leave* |  |
-| `ewurelum` | *recede* |  |
-| `ewureluol` | *traverse* |  |
-| `ewureluom` | *relay* |  |
+| `ewuleluvelal` | *dandelion* |  |
 | `ewuvalezedel` | *baseball-bat* |  |
 | `ewuvalugebal` | *baseball-glove* |  |
+| `eyodalebelal` | *oregano* |  |
 | `eyodalomudol` | *pepperoni* |  |
-| `eyodalubelal` | *oregano* |  |
-| `eyulelenemul` | *bruise* |  |
-| `eyulelovelal` | *violet* |  |
-| `eyuleluvodal` | *plum* |  |
+| `eyoledovol` | *doll* |  |
+| `eyorelomulol` | *brass* |  |
+| `eyulayayal` | *troupe* |  |
+| `eyulebogel` | *script* |  |
+| `eyuludobal` | *costume* |  |
 | `ezahemadozol` | *pigeon* |  |
 | `ezahemeruyel` | *mayor* |  |
-| `ezamoluvewel` | *silent-film* |  |
-| `ezamulezuyel` | *gossip* |  |
 | `ezazomebogel` | *certificate* |  |
-| `ezelumogelal` | *rye* |  |
 | `ezewulehubal` | *haircut* |  |
 | `ezobumubezol` | *vulture* |  |
 | `ezobumunogal` | *obituary* |  |
-| `ezoremahehal` | *courthouse* |  |
-| `ezoremarayel` | *legislation* |  |
-| `ezoremuzahal` | *law-school* |  |
-| `ezoreyol` | *lawyer* |  |
+| `ezomulehubal` | *eyebrow* |  |
 | `ezozulazuwal` | *hiss* |  |
 | `ezozulevezal` | *eel* |  |
 | `ezozuludebul` | *fang* |  |
+| `ezulolamahul` | *iceberg* |  |
+| `ezulolarolol` | *crystal* |  |
+| `ezulolobogal` | *cooler* |  |
+| `ezulolududal` | *iced-tea* |  |
 | `ezuvolazuwal` | *snore* |  |
 | `ezuvolobebul` | *sleeping-pill* |  |
-| `ezuvolovelal` | *poppy* |  |
 | `ezuvoludobal` | *pajamas* |  |
 | `ezuvoludurel` | *lullaby* |  |
 | `ezuvolugudal` | *decaf* |  |
+| `ezuvoluvelal` | *poppy* |  |
 | `ezuyelabeval` | *riddle* |  |
 | `ezuyelalobal` | *consultation* |  |
 | `ezuyelanegol` | *noun* |  |
+| `ezuyelegal` | *dictionary* |  |
 | `ezuyelezobal` | *verb* |  |
-| `ezuyelovul` | *meaning* |  |
-| `ezuyelugul` | *dictionary* |  |
-| `ezuyelumel` | *grammar* |  |
+| `ezuyelomal` | *meaning* |  |
+| `ezuyelugal` | *grammar* |  |
 | `ezuyeyal` | *conference* |  |
 | `ezuyoyal` | *choir* |  |
 | `ezuyulogobal` | *cape* |  |
-| `ezuyumozel` | *epic* |  |
+| `ezuyumogel` | *epic* |  |
 | `obahohal` | *bedroom* | `obahoham` *sanctum* |
 | `obaholadurel` | *bedtime* |  |
 | `obaholahehal` | *dormitory* |  |
 | `obaholamobal` | *sleeping-bag* |  |
 | `obaholeraval` | *sleeping car* |  |
+| `obahologel` | *bedtime-story* |  |
 | `obahologulal` | *bedsheet* |  |
-| `obaholozel` | *bedtime-story* |  |
 | `obaholuzahal` | *boarding-school* |  |
-| `obaluvobel` | *paw* |  |
+| `obamezemul` | *asthma* |  |
 | `obayelahehal` | *police-station* |  |
 | `obayelelewul` | *arrest* |  |
 | `obayelezedel` | *truncheon* |  |
-| `obayemamol` | *fine* |  |
-| `obayemenemul` | *penalty* |  |
+| `obayemaral` | *fine* |  |
+| `obayemenamul` | *penalty* |  |
 | `obebulahohal` | *pharmacy* |  |
 | `obebulebogel` | *prescription* |  |
 | `obebulugahal` | *medicine-cabinet* |  |
 | `obebumolubal` | *ointment* |  |
-| `obeledovol` | *doll* |  |
+| `obelabebul` | *plaster-cast* |  |
+| `obelenamul` | *fracture* |  |
 | `obeveluguval` | *chess* |  |
 | `obewelahehal` | *gallery* |  |
 | `obezalazuwal` | *buzz* |  |
@@ -907,59 +864,60 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `obogalebogal` | *cardboard* |  |
 | `obogaledavel` | *freight train* |  |
 | `obogalehaval` | *freighter* |  |
-| `obogaluhul` | *inventory* |  |
-| `obolabebul` | *plaster-cast* |  |
-| `obolenemul` | *fracture* |  |
-| `oboromozel` | *folktale* |  |
-| `oboromudurel` | *folk-song* |  |
+| `obogalogal` | *inventory* |  |
+| `obololadal` | *flowerpot* |  |
+| `obololobel` | *stem* |  |
+| `obololowal` | *hose* |  |
 | `obowalerulal` | *downpour* |  |
 | `obowuluraval` | *bomber* |  |
-| `obozolomelol` | *truffle* |  |
+| `obozolamelol` | *truffle* |  |
 | `obozolomudol` | *pork* |  |
 | `obozolonebol` | *snout* |  |
 | `obudalahehal` | *pub* |  |
 | `obudalayowal` | *keg* |  |
-| `obudalogelal` | *barley* |  |
+| `obudalugelal` | *barley* |  |
 | `obudaluvahal` | *brewery* |  |
+| `obulelenamul` | *bruise* |  |
+| `obuleluvelal` | *violet* |  |
+| `obuleluvodal` | *plum* |  |
 | `obuvulawodal` | *pitcher* |  |
-| `obuvuluwolal` | *waterfall* |  |
+| `obuvulowulal` | *waterfall* |  |
 | `odawulagedal` | *fork* |  |
-| `odazulubelal` | *tarragon* |  |
+| `odazulebelal` | *tarragon* |  |
 | `odegeloderol` | *fare* |  |
 | `odegeluguval` | *lottery* |  |
+| `odelolewel` | *pump* |  |
+| `odelolezulol` | *icicle* |  |
+| `odeloluzudal` | *broth* |  |
 | `oderoleyobal` | *wallet* |  |
 | `oderomebogel` | *invoice* |  |
-| `odevomahal` | *encounter* |  |
+| `odevomayal` | *encounter* |  |
 | `odevomodegel` | *lottery-ticket* |  |
 | `odobamadobal` | *slacks* |  |
 | `odobamehobal` | *dress-shirt* |  |
 | `odobamogobal` | *blazer* |  |
 | `odobamudobal` | *gown* |  |
 | `odobamuhobal` | *dress-shoe* |  |
-| `odoholudul` | *sewer* |  |
-| `odozalubelal` | *sage* |  |
-| `odudaludul` | *straw* |  |
-| `oduremazebol` | *scan* |  |
-| `oduremevumul` | *panic* |  |
+| `odoholowal` | *sewer* |  |
+| `odoralaral` | *prize-money* |  |
+| `odozalebelal` | *sage* |  |
+| `odudalowal` | *straw* |  |
 | `ogahalezuyel` | *eulogy* |  |
 | `ogahamuwural` | *divorce* |  |
+| `ogalalehaval` | *spaceship* |  |
 | `ogebewal` | *rake* |  |
 | `ogedalebodol` | *cornbread* |  |
-| `ogelaladahel` | *silo* |  |
-| `ogelalamobal` | *sack* |  |
-| `ogelaloludal` | *whiskey* |  |
-| `ogelalubezol` | *sparrow* |  |
-| `ogelalubol` | *cereal* |  |
-| `ogelaluvahal` | *mill* |  |
-| `ogelaluzudal` | *porridge* |  |
-| `ogemulenemul` | *frostbite* |  |
-| `ogemulogobal` | *overcoat* |  |
+| `ogelobogal` | *literature* |  |
+| `ogemugahal` | *bookcase* |  |
 | `ogewoyol` | *celebrity* |  |
 | `ogobalanobal` | *hood* |  |
 | `ogobalugahal` | *closet* |  |
 | `ogobulobebul` | *antidote* |  |
-| `ogobumomelol` | *toadstool* |  |
+| `ogobumamelol` | *toadstool* |  |
 | `ogodalomudal` | *coconut-milk* |  |
+| `ogomulenamul` | *frostbite* |  |
+| `ogomulogobal` | *overcoat* |  |
+| `ogoramuhohol` | *couch* |  |
 | `ogoroyal` | *band* |  |
 | `ogowalodahal` | *supermarket* |  |
 | `ogowulazugel` | *hint* |  |
@@ -968,12 +926,22 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ogozulehedol` | *goat-cheese* |  |
 | `ogugalarayel` | *blog* |  |
 | `ogugalebogel` | *website* |  |
+| `ohalalagulal` | *seabed* |  |
+| `ohalalegudal` | *seaweed* |  |
+| `ohalalezemul` | *seasickness* |  |
+| `ohalalomudol` | *seafood* |  |
+| `ohalalozudal` | *sea-salt* |  |
+| `ohalalubezol` | *seagull* |  |
+| `ohalalulel` | *driftwood* |  |
+| `ohamuladurel` | *heatwave* |  |
+| `ohamulewel` | *heater* |  |
+| `ohamumezemul` | *flu* |  |
 | `ohazeladazel` | *mule* |  |
 | `ohazelahehal` | *stable* |  |
 | `ohazeledovol` | *rocking-horse* |  |
 | `ohazelezoval` | *sleigh* |  |
-| `ohazelogelal` | *oat* |  |
 | `ohazelogowal` | *wagon* |  |
+| `ohazelugelal` | *oat* |  |
 | `ohazeluvobel` | *hoof* |  |
 | `ohedalazudal` | *mustard* |  |
 | `ohedalomudol` | *sausage* |  |
@@ -981,30 +949,38 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ohedolodudal` | *cocoa* |  |
 | `ohedolonedul` | *hazelnut* |  |
 | `ohedolugudal` | *mocha* |  |
-| `ohelemubezol` | *swallow* |  |
+| `ohelebaval` | *ferry* |  |
 | `ohohulawebol` | *pupil* |  |
 | `ohohuledavel` | *subway* |  |
 | `ohohulonebol` | *nostril* |  |
 | `ohohuwul` | *drill* |  |
-| `ohomumamol` | *bribe* |  |
+| `oholawebol` | *eyelid* |  |
+| `oholeboral` | *doorbell* |  |
+| `oholurahal` | *lobby* |  |
 | `ohovaluvodal` | *pumpkin* |  |
 | `ohovamuguval` | *hide-and-seek* |  |
 | `ohowulezebul` | *vaccine* |  |
-| `ohozumuwolal` | *river* |  |
+| `ohozumowulal` | *river* |  |
 | `ohuvemuguval` | *tag* |  |
-| `olamamavol` | *comedy* |  |
+| `olamalehazol` | *popularity* |  |
+| `olamalezuyel` | *praise* |  |
+| `olamaludurel` | *love-song* |  |
+| `olamalugulel` | *favorite* |  |
 | `olazulazuwal` | *roar* |  |
 | `olazulehubal` | *mane* |  |
 | `oledolawudal` | *cider* |  |
 | `oledolovehal` | *orchard* |  |
 | `oledolozodal` | *applesauce* |  |
 | `oledoluhudal` | *apple-juice* |  |
+| `olelonedul` | *pistachio* |  |
+| `olelududal` | *green-tea* |  |
 | `oludalurobol` | *liver* |  |
 | `olugemezuyel` | *slang* |  |
 | `oluvelulovol` | *bowling-ball* |  |
-| `omemulozulal` | *sleet* |  |
+| `omalezuyel` | *advice* |  |
+| `omamunogal` | *editorial* |  |
 | `omezulezemul` | *malaria* |  |
-| `omezumabolol` | *weed* |  |
+| `omezumobolol` | *weed* |  |
 | `omobalebogel` | *diploma* |  |
 | `omudalonedul` | *almond* |  |
 | `omudalugudal` | *latte* |  |
@@ -1013,10 +989,11 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `omudolahohal` | *butcher-shop* |  |
 | `omudolanewul` | *cleaver* |  |
 | `omudolozodal` | *gravy* |  |
+| `omuloladal` | *can* |  |
+| `omulolovulal` | *wire* |  |
 | `onebologulal` | *handkerchief* |  |
-| `oneduladalel` | *oak* |  |
 | `onedulazudal` | *nutmeg* |  |
-| `onuromugul` | *music-album* |  |
+| `oneduledalel` | *oak* |  |
 | `onuvolulobel` | *knee* |  |
 | `orahehel` | *corridor* |  |
 | `orahelarolol` | *gravel* |  |
@@ -1025,125 +1002,137 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `orahelohohul` | *tunnel* |  |
 | `orahelulowal` | *streetlight* |  |
 | `orebolobogal` | *jewelry-box* |  |
+| `orolobogal` | *piggy-bank* |  |
+| `oromudobal` | *uniform* |  |
 | `orowoluraval` | *drone* |  |
 | `orudalonudal` | *rice-noodles* |  |
 | `orudalovehal` | *paddy* |  |
 | `orugemedovol` | *spinning-top* |  |
 | `oruvelebaval` | *rowboat* |  |
 | `oruvelezedel` | *oar* |  |
-| `oruyulamol` | *loot* |  |
+| `oruyularal` | *loot* |  |
 | `oruyulehaval` | *pirate ship* |  |
 | `ovahaladahel` | *skyscraper* |  |
 | `ovahayal` | *staff* |  |
-| `ovebolobol` | *knuckle* |  |
+| `ovebolobel` | *knuckle* |  |
 | `ovebolugebal` | *mittens* |  |
 | `ovedolazudal` | *cumin* |  |
 | `ovehaladuhel` | *valley* |  |
-| `ovehalegel` | *lawnmower* |  |
-| `ovehalovelal` | *daisy* |  |
-| `ovelalahehal` | *greenhouse* | `ovelalaheham` *forcing* |
-| `ovelalahel` | *vase* |  |
-| `ovelalahohal` | *florist* |  |
-| `ovelalazudal` | *clove* |  |
-| `ovelalezemul` | *hay-fever* |  |
-| `ovelalovehal` | *meadow* |  |
-| `ovelalugobel` | *wreath* |  |
-| `ovelaluhudal` | *nectar* |  |
-| `ovelalulelol` | *petal* |  |
-| `ovemolugul` | *philosophy* |  |
-| `ovevulevulal` | *fuse* |  |
+| `ovehalewel` | *lawnmower* |  |
+| `ovehaluvelal` | *daisy* |  |
+| `ovemoluvogal` | *portrait* |  |
+| `ovevulovulal` | *fuse* |  |
 | `ovewoludurel` | *ringtone* |  |
-| `ovobumegel` | *air-conditioner* |  |
-| `ovoroyal` | *orchestra* |  |
-| `ovulezuyel` | *advice* |  |
-| `ovumunogal` | *editorial* |  |
+| `ovobumewel` | *air-conditioner* |  |
+| `ovulalanedal` | *cotton-candy* |  |
+| `ovululerulal` | *drizzle* |  |
 | `ovuyulagahel` | *fire-brigade* |  |
+| `owalawodal` | *flask* |  |
+| `owamahehal` | *laboratory* |  |
 | `owedolugedol` | *wafer* |  |
 | `owodoluvodal` | *melon* |  |
 | `owowuludaval` | *garbage truck* |  |
 | `owozulazuwal` | *howl* |  |
 | `owozuzal` | *wolfpack* |  |
-| `oyelaboral` | *doorbell* |  |
-| `oyelawebol` | *eyelid* |  |
-| `oyelurahal` | *lobby* |  |
-| `oyumezemul` | *asthma* |  |
+| `owulalagulal` | *mud* |  |
+| `owulalohohul` | *well* |  |
+| `owulalowal` | *pipe* |  |
+| `owurelael` | *wield* |  |
+| `owurelaem` | *channel* |  |
+| `owurelal` | *enter* |  |
+| `owurelam` | *mill-amid* |  |
+| `owurelaol` | *mount* |  |
+| `owurelaom` | *cover* |  |
+| `owureleboyel` | *toddler* |  |
+| `owurelel` | *serve* |  |
+| `owurelem` | *have-in-use* |  |
+| `owureloel` | *head-for* |  |
+| `owureloem` | *orient* |  |
+| `owurelol` | *attend* |  |
+| `owurelom` | *adjoin* |  |
+| `owurelorahel` | *sidewalk* |  |
+| `owurelual` | *exit* |  |
+| `owureluam` | *pick-out* |  |
+| `owureluel` | *oppose* |  |
+| `owureluem` | *defy* |  |
+| `owurelul` | *leave* |  |
+| `owurelum` | *recede* |  |
+| `owureluol` | *traverse* |  |
+| `owureluom` | *relay* |  |
+| `oyulalanobal` | *beanie* |  |
+| `oyulalehobal` | *sweater* |  |
 | `ozaholarolol` | *marble* |  |
-| `ozalazudal` | *star-anise* |  |
 | `ozavalahehal` | *casino* |  |
-| `ozavalamol` | *jackpot* |  |
-| `ozebulovelal` | *lavender* |  |
-| `ozebulubol` | *washbasin* |  |
-| `ozelobogal` | *literature* |  |
-| `ozemugahal` | *bookcase* |  |
+| `ozavalaral` | *jackpot* |  |
+| `ozebulodal` | *washbasin* |  |
+| `ozebuluvelal` | *lavender* |  |
+| `ozemoluvewel` | *silent-film* |  |
+| `ozemulanedal` | *cough-drop* |  |
+| `ozemulezemul` | *common-cold* |  |
+| `ozemulobebul` | *cough-medicine* |  |
 | `ozewelobewol` | *screw* |  |
 | `ozodalobodal` | *saucepan* |  |
 | `ozohulenobal` | *resign* |  |
-| `ozowuluwul` | *plank* |  |
+| `ozowululel` | *plank* |  |
 | `ozudalazudal` | *black-pepper* |  |
 | `ozudalugedol` | *cracker* |  |
 | `ozulalolahul` | *avalanche* |  |
 | `ozulalulovol` | *snowball* |  |
-| `ozulolamahul` | *iceberg* |  |
-| `ozulolarolol` | *crystal* |  |
-| `ozulolobogal` | *cooler* |  |
-| `ozulolududal` | *iced-tea* |  |
-| `ozumulanedal` | *cough-drop* |  |
-| `ozumulezemul` | *common-cold* |  |
-| `ozumulobebul` | *cough-medicine* |  |
-| `ubahelegel` | *crane* |  |
-| `ubalelubelal` | *rosemary* |  |
-| `ubalelulelol` | *pine-needle* |  |
-| `ubamelevemol` | *cheek* |  |
+| `ubahelewel` | *crane* |  |
+| `ubalabowal` | *laundry-basket* |  |
+| `ubaleluvodal` | *date-fruit* |  |
+| `ubamelovemol` | *cheek* |  |
 | `ubebolobebul` | *laxative* |  |
 | `ubebolurobol` | *intestine* |  |
 | `ubedulozodal` | *hot-sauce* |  |
 | `ubehalahehal` | *resort* |  |
 | `ubehalarolol` | *pebble* |  |
 | `ubehalulovol` | *beach-ball* |  |
-| `ubelalobebul` | *herbal-medicine* |  |
-| `ubelalovehal` | *grass* |  |
-| `ubelalozodal` | *pesto* |  |
-| `ubelalududal` | *herbal-tea* |  |
-| `ubewolemulol` | *copper* |  |
-| `ubewolevulal` | *cable* |  |
-| `ubewomegel` | *generator* |  |
+| `ubeluvobel` | *paw* |  |
+| `ubewolomulol` | *copper* |  |
+| `ubewolovulal` | *cable* |  |
+| `ubewomewel` | *generator* |  |
 | `ubezelabezul` | *caterpillar* |  |
 | `ubezolamebal` | *beak* |  |
 | `ubezoludurel` | *birdsong* |  |
 | `ubezozal` | *flock* |  |
+| `uborelewel` | *calculator* |  |
 | `ubowalogulal` | *canvas* |  |
-| `ubowulegel` | *vacuum-cleaner* |  |
+| `ubowulewel` | *vacuum-cleaner* |  |
 | `ubowumogulal` | *rag* |  |
 | `ubugoluguval` | *darts* |  |
 | `ubuleladobal` | *jeans* |  |
 | `ubuleleredal` | *blueberry* |  |
+| `ubuloleredal` | *blackberry* |  |
+| `ubulolubezol` | *crow* |  |
+| `uburelagevol` | *birthday-card* |  |
 | `ubuvalezedel` | *pool-cue* |  |
 | `ubuvalulovol` | *billiard-ball* |  |
+| `udalozodal` | *mayonnaise* |  |
+| `udaluhebal` | *eggshell* |  |
+| `udamuvelal` | *bud* |  |
 | `udebulamebal` | *gum* |  |
-| `udebulevulal` | *floss* |  |
 | `udebulezedel` | *toothpick* |  |
 | `udebulezemul` | *toothache* |  |
-| `udebulobol` | *jaw* |  |
+| `udebulobel` | *jaw* |  |
+| `udebulovulal` | *floss* |  |
+| `udedolebelal` | *basil* |  |
 | `udedolozodal` | *tomato-sauce* |  |
-| `udedolubelal` | *basil* |  |
 | `udedumezemul` | *stomachache* |  |
-| `udelolegel` | *pump* |  |
-| `udelolozulol` | *icicle* |  |
-| `udeloluzudal` | *broth* |  |
 | `udobaladuhel` | *skirt* |  |
-| `udoralamol` | *prize-money* |  |
+| `udoralebal` | *eardrum* |  |
+| `udoralezedel` | *drum-stick* |  |
 | `udowoluguval` | *videogame* |  |
-| `udozaluwolal` | *pond* |  |
+| `udozalowulal` | *pond* |  |
 | `udozolabezul` | *flea* |  |
 | `udozolahehal` | *kennel* |  |
 | `udozolezemul` | *rabies* |  |
-| `udubulubelal` | *mint* |  |
+| `udubulebelal` | *mint* |  |
 | `ududalamobal` | *teabag* |  |
-| `ududalovelal` | *jasmine* |  |
-| `ududalubol` | *cup* |  |
+| `ududalodal` | *cup* |  |
+| `ududaluvelal` | *jasmine* |  |
 | `ududaluwodal` | *saucer* |  |
-| `udulawodal` | *flask* |  |
-| `udumahehal` | *laboratory* |  |
+| `udumamowulal` | *thirst* |  |
 | `uduvuluraval` | *fighter jet* |  |
 | `uduvumagahel` | *military* |  |
 | `uduyelezuyel` | *lecture* |  |
@@ -1151,186 +1140,197 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `ugahalobogal` | *drawer* |  |
 | `ugalalanedal` | *marshmallow* |  |
 | `ugalalogulal` | *cotton* |  |
-| `ugalelarolol` | *meteorite* |  |
-| `ugaroladalel` | *fir* |  |
+| `ugamagahel` | *parliament* |  |
 | `ugarolanedal` | *candy-cane* |  |
+| `ugaroledalel` | *fir* |  |
 | `ugaroludurel` | *carol* |  |
 | `ugedalebodol` | *muffin* |  |
 | `ugedolebodol` | *biscuit* |  |
+| `ugelaladahel` | *silo* |  |
+| `ugelalamobal` | *sack* |  |
+| `ugelalodal` | *cereal* |  |
+| `ugelaloludal` | *whiskey* |  |
+| `ugelalubezol` | *sparrow* |  |
+| `ugelaluvahal` | *mill* |  |
+| `ugelaluzudal` | *porridge* |  |
 | `ugezuwal` | *pliers* |  |
 | `ugobelagoyel` | *princess* |  |
 | `ugobelahehal` | *palace* |  |
+| `ugobelebelal` | *bay-leaf* |  |
 | `ugobelomuyel` | *king* |  |
-| `ugobelubelal` | *bay-leaf* |  |
 | `ugobeluboyel` | *prince* |  |
 | `ugobeluwayel` | *queen* |  |
-| `ugolobogal` | *piggy-bank* |  |
-| `ugomudobal` | *uniform* |  |
-| `ugoramuhohol` | *couch* |  |
-| `ugorelahal` | *appointment* |  |
 | `ugudalahehal` | *café* |  |
-| `ugudalegel` | *coffee-maker* |  |
-| `ugudalubol` | *mug* |  |
-| `ugudelegal` | *fried-egg* |  |
+| `ugudalewel` | *coffee-maker* |  |
+| `ugudalodal` | *mug* |  |
+| `ugudeludal` | *fried-egg* |  |
 | `ugudelugebal` | *oven-mitt* |  |
-| `ugugemamol` | *commission* |  |
-| `ugulagahel` | *publisher* |  |
-| `ugulahehal` | *library* |  |
-| `ugulahohal` | *bookshop* |  |
-| `ugulawebol` | *read* |  |
-| `uguluyowol` | *publication* |  |
-| `ugumerewol` | *technology* |  |
+| `ugugemaral` | *commission* |  |
+| `ugulelazudal` | *saffron* |  |
+| `ugulelevezal` | *goldfish* |  |
 | `uguvalagevol` | *playing-card* |  |
-| `uguvalugol` | *token* |  |
+| `uguvalorol` | *token* |  |
 | `uguyehal` | *kitchen* |  |
 | `uguyelanobal` | *chef-hat* |  |
 | `uguyelebogel` | *recipe* |  |
+| `uguyelegal` | *cookbook* |  |
 | `uguyeludobal` | *apron* |  |
-| `uguyelugul` | *cookbook* |  |
 | `uguyoyal` | *guild* |  |
+| `uhamumaral` | *bribe* |  |
 | `uhavalabezul` | *dragonfly* |  |
 | `uhewaludaval` | *tow truck* |  |
-| `uhomumahoyel` | *orphan* |  |
-| `uhomumomuyel` | *widower* |  |
-| `uhomumudurel` | *lament* |  |
-| `uhomumuwayel` | *widow* |  |
-| `uhuralugol` | *cent* |  |
+| `uhuralorol` | *cent* |  |
 | `uhuyelabeval` | *lawsuit* |  |
 | `uhuyelagahel` | *law-court* |  |
 | `uhuyeyal` | *jury* |  |
 | `uhuyulahohal` | *barbershop* |  |
-| `ulamalegulel` | *favorite* |  |
-| `ulamalehazol` | *popularity* |  |
-| `ulamalezuyel` | *praise* |  |
-| `ulamaludurel` | *love-song* |  |
+| `ulamameyul` | *comedy* |  |
 | `ulavelehobul` | *bike-helmet* |  |
 | `ulavelorahel` | *bike-path* |  |
 | `ulayemezuyel` | *proverb* |  |
 | `uleduleredal` | *cranberry* |  |
+| `ulelabebul` | *splint* |  |
+| `ulelabezul` | *termite* |  |
+| `ulelazudal` | *cinnamon* |  |
+| `ulelebaval` | *raft* |  |
+| `ulelegohul` | *fence* |  |
+| `ulelehahal` | *cabin* |  |
+| `ulelehowol` | *mallet* |  |
+| `ulelobogal` | *crate* |  |
+| `uleluhobal` | *clog* |  |
+| `ulelulowal` | *torch* |  |
 | `uleweyal` | *alliance* |  |
 | `ulobelabedel` | *ham* |  |
-| `ulobelazel` | *stockings* |  |
+| `ulobelubal` | *stockings* |  |
 | `ulobeluvobel` | *ankle* |  |
-| `ulolobogal` | *toolbox* |  |
-| `ulolurahal` | *workshop* |  |
-| `uloluzahal` | *vocational-school* |  |
 | `ulovolawebol` | *eyeball* |  |
 | `ulovolegudal` | *cabbage* |  |
 | `ulovolomudol` | *meatball* |  |
 | `ulovolovehal` | *sports-field* |  |
 | `ulozumebaval` | *yacht* |  |
 | `ulozumegaval` | *limousine* |  |
-| `umalelebalol` | *moonlight* |  |
-| `umalemamol` | *salary* |  |
-| `umemagahel` | *parliament* |  |
-| `umezulabolol` | *algae* |  |
+| `umalelabulol` | *moonlight* |  |
+| `umalemaral` | *salary* |  |
+| `umemulozulal` | *sleet* |  |
+| `umeraledovol` | *rattle* |  |
+| `umeralezozul` | *rattlesnake* |  |
 | `umezulobebul` | *antibiotic* |  |
-| `umugolugul` | *encyclopedia* |  |
+| `umezulobolol` | *algae* |  |
+| `umugolegal` | *encyclopedia* |  |
 | `umugomuvewel` | *documentary* |  |
-| `umulazuwal` | *echo* |  |
-| `umurulodegel` | *coupon* |  |
-| `unedolegal` | *omelet* |  |
 | `unedolonudal` | *lasagna* |  |
 | `unedolozodal` | *syrup* |  |
-| `unewumamol` | *ransom* |  |
+| `unedoludal` | *omelet* |  |
+| `unemuyul` | *enemy* |  |
+| `unewumaral` | *ransom* |  |
 | `unezalamahul` | *anthill* |  |
 | `unezazal` | *colony* |  |
-| `unobaluwolal` | *puddle* |  |
+| `unobalowulal` | *puddle* |  |
 | `unogalulowal` | *reading-lamp* |  |
-| `unomuyul` | *enemy* |  |
 | `unuvulugebal` | *boxing-gloves* |  |
 | `uravalagahel` | *air-force* |  |
 | `uravalehaval` | *aircraft carrier* |  |
-| `uravalemulol` | *aluminum* |  |
 | `uravalenobal` | *airline* |  |
+| `uravalomulol` | *aluminum* |  |
 | `uravalorahel` | *runway* |  |
+| `urelonogal` | *guidebook* |  |
 | `urugeloderol` | *subscription* |  |
 | `urugeludurel` | *chant* |  |
-| `urugulemulol` | *uranium* |  |
+| `urugulomulol` | *uranium* |  |
+| `ururelagedal` | *breakfast* |  |
+| `ururelodelol` | *dew* |  |
 | `uruyelezuyel` | *oath* |  |
-| `uvahalavalul` | *smog* |  |
+| `uvahalovulul` | *smog* |  |
 | `uvahamuzubal` | *efficiency* |  |
 | `uvahohal` | *living-room* |  |
 | `uvebelewulel` | *breeze* |  |
 | `uvedalozodal` | *ketchup* |  |
+| `uvelaladal` | *vase* |  |
+| `uvelalahehal` | *greenhouse* | `uvelalaheham` *forcing* |
+| `uvelalahohal` | *florist* |  |
+| `uvelalazudal` | *clove* |  |
+| `uvelalezemul` | *hay-fever* |  |
+| `uvelalolelol` | *petal* |  |
+| `uvelalovehal` | *meadow* |  |
+| `uvelalugobel` | *wreath* |  |
+| `uvelaluhudal` | *nectar* |  |
+| `uverelomulol` | *mercury* |  |
 | `uvobelanuvul` | *kick* |  |
 | `uvobelazuwal` | *footstep* |  |
 | `uvobelelezel` | *heel* |  |
-| `uvobelobul` | *toe* |  |
+| `uvobeloyel` | *toe* |  |
 | `uvodalazadal` | *fruit-salad* |  |
 | `uvodalegodol` | *fruitcake* |  |
 | `uvodalozodal` | *jam* |  |
 | `uvogalabeval` | *jigsaw* |  |
-| `uvogalugul` | *comic* |  |
-| `uvorelabolol` | *reed* |  |
+| `uvogalegal` | *comic* |  |
 | `uvorelezozul` | *cobra* |  |
-| `uvugulovelal` | *lily* |  |
+| `uvorelobolol` | *reed* |  |
+| `uvuguluvelal` | *lily* |  |
 | `uvuvalehobul` | *football-helmet* |  |
-| `uvuyolobul` | *thumb* |  |
-| `uwamuluwolal` | *alcohol* |  |
-| `uwamumezemul` | *hangover* |  |
-| `uwewelebalol` | *candlelight* |  |
-| `uwewelevulal` | *wick* |  |
+| `uvuyoloyel` | *thumb* |  |
+| `uwalobogal` | *toolbox* |  |
+| `uwalurahal` | *workshop* |  |
+| `uwaluzahal` | *vocational-school* |  |
+| `uwewelabulol` | *candlelight* |  |
+| `uwewelovulal` | *wick* |  |
 | `uwodahal` | *dining-room* |  |
 | `uwodalebogel` | *menu* |  |
-| `uwodalegel` | *dishwasher* |  |
 | `uwodaleraval` | *dining car* |  |
+| `uwodalewel` | *dishwasher* |  |
 | `uwodalogulal` | *napkin* |  |
 | `uwodalugahal` | *cupboard* |  |
 | `uwodalugudel` | *counter* |  |
-| `uwodamamol` | *tip* |  |
+| `uwodamaral` | *tip* |  |
 | `uwoholevobul` | *curtain* |  |
-| `uwoholubol` | *drinking-glass* |  |
-| `uwolalegulal` | *mud* |  |
-| `uwolalohohul` | *well* |  |
-| `uwolaludul` | *pipe* |  |
-| `uwulabebul` | *splint* |  |
-| `uwulabezul` | *termite* |  |
-| `uwulazudal` | *cinnamon* |  |
-| `uwulebaval` | *raft* |  |
-| `uwulegohul` | *fence* |  |
-| `uwulehahal` | *cabin* |  |
-| `uwulehowol` | *mallet* |  |
-| `uwulobogal` | *crate* |  |
-| `uwuluhobal` | *clog* |  |
-| `uwululowal` | *torch* |  |
+| `uwoholodal` | *drinking-glass* |  |
+| `uwomulowal` | *spotlight* |  |
+| `uwumulowulal` | *alcohol* |  |
+| `uwumumezemul` | *hangover* |  |
 | `uwuralegodol` | *wedding-cake* |  |
 | `uwuraludobal` | *wedding-dress* |  |
 | `uwuvayal` | *league* |  |
 | `uyazalubezol` | *ostrich* |  |
 | `uyedolazadal` | *potato-salad* |  |
 | `uyedololudal` | *vodka* |  |
-| `uyomumuvewel` | *horror-film* |  |
+| `uyelalanedal` | *chewing-gum* |  |
+| `uyelalodudal` | *soda* |  |
+| `uyelalowulal` | *sparkling-water* |  |
 | `uyudalehedol` | *cream-cheese* |  |
 | `uyudalomudal` | *buttermilk* |  |
 | `uyudalugedol` | *shortbread* |  |
-| `uyulalanobal` | *beanie* |  |
-| `uyulalehobal` | *sweater* |  |
 | `uzahahol` | *classroom* |  |
 | `uzahalahoyel` | *schoolchild* |  |
+| `uzahalegal` | *textbook* | `uzahalegam` *canon* |
 | `uzahalevahul` | *graduate* |  |
 | `uzahaloderol` | *tuition* |  |
 | `uzahalovehal` | *campus* |  |
 | `uzahalubaval` | *school bus* |  |
-| `uzahalugul` | *textbook* | `uzahalugum` *canon* |
+| `uzalelabulol` | *sunlight* |  |
 | `uzalelagedal` | *lunch* |  |
-| `uzalelagorel` | *sundial* |  |
-| `uzalelebalol` | *sunlight* |  |
 | `uzalelegedal` | *raisin* |  |
-| `uzalelenemul` | *sunburn* |  |
+| `uzalelegorel` | *sundial* |  |
+| `uzalelenamul` | *sunburn* |  |
 | `uzalelezemul` | *sunstroke* |  |
 | `uzalelolubal` | *sunscreen* |  |
 | `uzalelomudol` | *jerky* |  |
-| `uzebulabolol` | *tobacco* |  |
-| `uzebulubol` | *ashtray* |  |
+| `uzebulobolol` | *tobacco* |  |
+| `uzebulodal` | *ashtray* |  |
 | `uzedolazudal` | *wasabi* |  |
 | `uzedolevezal` | *tuna* |  |
-| `uzomulehubal` | *eyebrow* |  |
-| `uzowulemulol` | *steel* |  |
+| `uzemulezuyel` | *gossip* |  |
+| `uzoremahehal` | *courthouse* |  |
+| `uzoremarayel` | *legislation* |  |
+| `uzoremuzahal` | *law-school* |  |
+| `uzoreyol` | *lawyer* |  |
+| `uzowulomulol` | *steel* |  |
 | `uzowumehaval` | *warship* |  |
 | `uzubayal` | *trade-union* |  |
+| `uzudalebelal` | *thyme* |  |
 | `uzudalobodal` | *pot* |  |
-| `uzudalubelal` | *thyme* |  |
-| `uzudamegal` | *boiled-egg* |  |
+| `uzudamudal` | *boiled-egg* |  |
+| `uzureladurul` | *afternoon* |  |
+| `uzuremabulol` | *daylight* |  |
+| `uzuremonogal` | *diary* |  |
 | `uzuyuyal` | *gang* |  |
 <!-- /generated -->

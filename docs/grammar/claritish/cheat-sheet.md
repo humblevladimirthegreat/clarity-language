@@ -21,32 +21,32 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 
 | Word | **-l** lasting | **-m** default | **-r** right now |
 |------|----------------|----------------|------------------|
-| [could be](could-be.md) | `thovul` and I'll find out | `thovum` could be | `thovur` who knows |
-| [decided](decisions-and-tries.md) | `thehul` for good | `thehum` can still change | `thehur` for now |
-| [tries](decisions-and-tries.md) | `hudul` committed to trying | `hudum` tries | `hudur` a trial run |
-| [wants](wants-and-plans.md) | `thohul` for a long time | `thohum` wants to | `thohur` feels like it now |
-| [planned](wants-and-plans.md) | `thamal` backups ready | `thamam` steps laid out | `thamar` only the direction |
+| [could be](could-be.md) | `thomal` and I'll find out | `thomam` could be | `thomar` who knows |
+| [decided](decisions-and-tries.md) | `thogol` for good | `thogom` can still change | `thogor` for now |
+| [tries](decisions-and-tries.md) | `howal` committed to trying | `howam` tries | `howar` a trial run |
+| [wants](wants-and-plans.md) | `thalel` for a long time | `thalem` wants to | `thaler` feels like it now |
+| [planned](wants-and-plans.md) | `thagel` backups ready | `thagem` steps laid out | `thager` only the direction |
 
 ## [How you know](how-you-know.md) {#how-you-know}
 
 | Evidential channel | **-l** strong | **-m** default | **-r** weak |
 |--------------------|---------------|----------------|-------------|
-| live: seeing, hearing, feeling it now | `thodol` | `thodom` | `thodor` |
-| from memory | `thevol` | `thevom` | `thevor` |
-| from the pattern | `thobal` | `thobam` | `thobar` |
-| worked out from clues | `thunel` | `thunem` | `thuner` |
-| deduced: must follow | `thugul` | `thugum` | `thugur` |
-| reported: told or read | `thewal` | `thewam` | `thewar` |
-| intuition: a gut sense | `thahol` | `thahom` | `thahor` |
+| live: seeing, hearing, feeling it now | `thugol` | `thugom` | `thugor` |
+| from memory | `thevul` | `thevum` | `thevur` |
+| from the pattern | `thubel` | `thubem` | `thuber` |
+| worked out from clues | `theyel` | `theyem` | `theyer` |
+| deduced: must follow | `thegal` | `thegam` | `thegar` |
+| reported: told or read | `thebal` | `thebam` | `thebar` |
+| intuition: a gut sense | `thabol` | `thabom` | `thabor` |
 
 ## [Allowed, required, agreed](allowed-required-agreed.md) {#allowed}
 
 | | **-l** by a rule | **-m** by a person | **-r** no one's word |
 |-|------------------|--------------------|----------------------|
-| allowed | `thegol` | `thegom` | `thegor` tolerated |
-| forbidden | `thedel` | `thedem` | `theder` frowned on |
-| required | `thumel` | `thumem` | `thumer` by custom |
-| agreed (the affected person) | `huxegol` in advance | `huxegom` said yes, can take it back | `huxegor` assumed OK |
+| allowed | `tholel` | `tholem` | `tholer` tolerated |
+| forbidden | `thegul` | `thegum` | `thegur` frowned on |
+| required | `thugal` | `thugam` | `thugar` by custom |
+| agreed (the affected person) | `huxolel` in advance | `huxolem` said yes, can take it back | `huxoler` assumed OK |
 
 ## Suffixes on English words {#suffixes}
 
@@ -61,26 +61,26 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 
 | Sake, need | Sake, need | Sake, need |
 |------------|------------|------------|
-| `ahu` autonomy | `ame` purpose | `ozo` pleasure |
-| `ulo` competence | `ana` relatedness | `oyu` physical: health, rest, safety |
-| `ado` understanding | `ebe` beneficence | `ega` a sake, unspecified |
+| `aga` autonomy | `ure` purpose | `odo` pleasure |
+| `uwa` competence | `awo` relatedness | `oba` physical: health, rest, safety |
+| `owo` understanding | `ewa` beneficence | `uda` a sake, unspecified |
 
 Sake word: `th` + sake + stance + ending.
 
 | Stance | Says | Example | **-l** | **-m** | **-r** |
 |--------|------|---------|--------|--------|--------|
-| `tha` met | [thanks](thanks-and-sorry.md) | `thanatham` | it will stay with me | thank you | got me through right now |
-| `thu` unmet | [sorry](thanks-and-sorry.md), with `behon` for *yours* | `thanathum`, `thanathum behon` | deeply sorry | I'm sorry | my bad |
-| `the` prescription | [ought to be done](oughts-and-motives.md) for it | `thanathem` | they invited it | your own offer | worth a try |
-| `tho` motive | [being done](oughts-and-motives.md) for it | `thanathom` | over time | unstated | right away |
+| `tha` met | [thanks](thanks-and-sorry.md) | `thawotham` | it will stay with me | thank you | got me through right now |
+| `thu` unmet | [sorry](thanks-and-sorry.md), with `bawan` for *yours* | `thawothum`, `thawothum bawan` | deeply sorry | I'm sorry | my bad |
+| `the` prescription | [ought to be done](oughts-and-motives.md) for it | `thawothem` | they invited it | your own offer | worth a try |
+| `tho` motive | [being done](oughts-and-motives.md) for it | `thawothom` | over time | unstated | right away |
 
-Thanks for a thing you own: `g` for `th`, after the noun: *my coat* `goyuthal`.
+Thanks for a thing you own: `g` for `th`, after the noun: *my coat* `gobathal`.
 
 ## [Feelings](feelings.md) {#feelings}
 
-`thulothuraor` *can I measure up?* hanging over everything, in waves:
+`thuwathuraor` *can I measure up?* hanging over everything, in waves:
 
-| `thulo` | `thu` | `r` | `ao` | `r` |
+| `thuwa` | `thu` | `r` | `ao` | `r` |
 |---------|-------|-----|------|-----|
 | competence | unmet | for now | over the room (locus) | surging (motion) |
 

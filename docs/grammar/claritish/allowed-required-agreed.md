@@ -8,10 +8,10 @@ English *can*, *may*, *should*, and *OK* blur who allowed something, and whether
 
 | Drop-in | Meaning |
 |---------|---------|
-| `thegol` / `thegom` / `thegor` | allowed by a rule / by a person / tolerated |
-| `thedel` / `thedem` / `theder` | forbidden by a rule / by a person / frowned on |
-| `thumel` / `thumem` / `thumer` | required by a rule / by a person / by custom |
-| `huxegol` / `huxegom` / `huxegor` | the affected person agreed in advance / said yes (and can take it back) / is assumed to be OK |
+| `tholel` / `tholem` / `tholer` | allowed by a rule / by a person / tolerated |
+| `thegul` / `thegum` / `thegur` | forbidden by a rule / by a person / frowned on |
+| `thugal` / `thugam` / `thugar` | required by a rule / by a person / by custom |
+| `huxolel` / `huxolem` / `huxoler` | the affected person agreed in advance / said yes (and can take it back) / is assumed to be OK |
 
 The endings have a new job here: the **source**. Cue: **l ≈ law, m ≈ mouth, r ≈ read the room.** **-l** is a rule, **-m** is a person's word (the default), and **-r** is no one's word at all.
 
@@ -21,13 +21,13 @@ On the consent words, **-r** is allowed but visibly weaker: it puts *I assumed* 
 
 ## Examples {#examples}
 
-> I borrowed your car `huxegor`. I should have asked for `huxegom`.  
-> You can leave early `thegom`.  
-> We wear ties `thumer`, not `thumel`.  
-> Visitors sign in at the desk `thumel`.  
-> No phones at dinner `thedem`.
+> I borrowed your car `huxoler`. I should have asked for `huxolem`.  
+> You can leave early `tholem`.  
+> We wear ties `thugar`, not `thugal`.  
+> Visitors sign in at the desk `thugal`.  
+> No phones at dinner `thegum`.
 
-*We wear ties `thumer`, not `thumel`* says it's custom, not a rule.
+*We wear ties `thugar`, not `thugal`* says it's custom, not a rule.
 
 ## Practice {#practice}
 
@@ -36,25 +36,25 @@ Add the drop-in that fits the note.
 **1.** *You can park here.* (the rules allow it)
 
 ::: details Show answer
-You can park here `thegol`.
+You can park here `tholel`.
 :::
 
 **2.** *I posted the photo of us.* (you said yes)
 
 ::: details Show answer
-I posted the photo of us `huxegom`.
+I posted the photo of us `huxolem`.
 :::
 
 **3.** *People bring a dish.* (custom expects it)
 
 ::: details Show answer
-People bring a dish `thumer`.
+People bring a dish `thugar`.
 :::
 
 **4.** *Talking during the film.* (frowned on)
 
 ::: details Show answer
-Talking during the film `theder`.
+Talking during the film `thegur`.
 :::
 
 <!-- Source (editors): sakes.md#permission, sakes.md#requirement, sakes.md#consent; x sound from phonology.md. -->

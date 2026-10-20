@@ -166,7 +166,8 @@ beside the published lexicon; with
 --lexicon rewrites the published/overlay/compound CSVs and dumps tmp/lexicon-retie-map.json.
 A row keeps its root's length; a new row takes an annealed three-letter root when it is
 overlay-backed (or a marked pronoun), a place-name root when its kind is named, and a root-tails
-five-letter root from its kind and shape otherwise, its middle vowel steered by its size.
+five-letter root from its kind and shape otherwise, its middle vowel steered by its size. A
+three-letter row also takes its tail from kind and shape (the first vowel is free).
 --only limits --lexicon to matching published rows (repeatable or comma-separated); every other
 root stays put.
 --all re-places every five-letter and place-name row and keeps the three-letter roots; --lexicon needs one of

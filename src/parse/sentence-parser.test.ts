@@ -51,24 +51,24 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("continues a turn with a plain sentence, and gives each body the period after its own sentence", () => {
-    const result = parseSentenceTokens(tokens("yol. zuzozen vewurel"));
+    const result = parseSentenceTokens(tokens("yol. zuzozen vowurel"));
     assert.equal(result.utterances.length, 1);
     assert.equal(result.utterances[0]!.bodies[0]!.punct, undefined);
-    assert.equal(parseSentenceTokens(tokens("yol. zuzozen vewurel.")).utterances[0]!.bodies[0]!.punct, "period");
+    assert.equal(parseSentenceTokens(tokens("yol. zuzozen vowurel.")).utterances[0]!.bodies[0]!.punct, "period");
   });
 
   it("reads a /w/ + hook after a period as discourse glue, as at the start (hooks.md#hook-w)", () => {
-    const result = parseSentenceTokens(tokens("zuzozen vewurel. wegem al zolazun vezuvol."));
+    const result = parseSentenceTokens(tokens("zuzozen vowurel. wewem al zolazun vezuvol."));
     assert.equal(result.utterances.length, 2);
     assert.equal(result.utterances[1]!.left.hook?.raw, "al");
-    assert.equal(result.utterances[1]!.left.hookModifiers?.[0]?.raw, "wegem");
+    assert.equal(result.utterances[1]!.left.hookModifiers?.[0]?.raw, "wewem");
   });
 
   it("parses yal yol / yam yol as a rhetorical question", () => {
-    const left = parseSentenceTokens(tokens("yal yol zar vegumal.")).utterances[0]!.left;
+    const left = parseSentenceTokens(tokens("yal yol zar vegemal.")).utterances[0]!.left;
     assert.equal(left.leadForce?.raw, "yal");
     assert.equal(left.force?.raw, "yol");
-    assert.equal(parseSentenceTokens(tokens("yam yol zuzozen vewurel.")).utterances[0]!.left.leadForce?.raw, "yam");
+    assert.equal(parseSentenceTokens(tokens("yam yol zuzozen vowurel.")).utterances[0]!.left.leadForce?.raw, "yam");
   });
 
   it("attaches a factor number after an equative scale only", () => {
@@ -87,37 +87,37 @@ describe("sentence-parser synthetic", () => {
       const part = unit.kind === "np" ? unit.coord.parts.find((p) => p.join) : undefined;
       return part?.shared.map((item) => item.word.raw);
     };
-    assert.deepEqual(sharedOf("zuzozen zolazun zel bral vevurel."), ["bral"]);
-    assert.deepEqual(sharedOf("zuzozen zolazun zal bral vevurel."), []);
+    assert.deepEqual(sharedOf("zuzozen zolazun zel bral vovurel."), ["bral"]);
+    assert.deepEqual(sharedOf("zuzozen zolazun zal bral vovurel."), []);
   });
 
   it("reads a sentence-initial hook with /b/ after it as an extra-noun hook", () => {
-    const utt = parseSentenceTokens(tokens("ol bahehal zuzozen vewurel.")).utterances[0]!;
+    const utt = parseSentenceTokens(tokens("ol bahehal zuzozen vowurel.")).utterances[0]!;
     assert.equal(utt.left.hook, undefined);
     assert.equal(utt.bodies[0]!.clause.units[0]!.kind, "hook");
-    const vocative = parseSentenceTokens(tokens("yuzozen ol bahehal zolazun vewurel.")).utterances[0]!;
+    const vocative = parseSentenceTokens(tokens("yuzozen ol bahehal zolazun vowurel.")).utterances[0]!;
     assert.equal(vocative.left.hook, undefined);
-    assert.equal(parseSentenceTokens(tokens("al zuzozen vewurel.")).utterances[0]!.left.hook?.raw, "al");
+    assert.equal(parseSentenceTokens(tokens("al zuzozen vowurel.")).utterances[0]!.left.hook?.raw, "al");
   });
 
   it("puts a /ɡ/ after an /h/ host's /b/ on that landmark, but not after a /th/ offset", () => {
     const last = (text: string) => parseSentenceTokens(tokens(text)).utterances[0]!.bodies[0]!.clause.units.at(-1)!;
-    const like = last("zuzozen vewurel humum buzozen gubulel.");
+    const like = last("zuzozen vowurel hewom buzozen gubulel.");
     assert.equal(like.kind === "h" ? like.unit.hosted?.adjs?.[0]?.word.raw : undefined, "gubulel");
-    assert.equal(last("zuzozen thobam bral gamahum.").kind, "predicate");
+    assert.equal(last("zuzozen thubem bral gamahum.").kind, "predicate");
   });
 
   it("lets a kin number on an /h/ host's landmark host its own /b/, but keeps a count as the amount", () => {
     const last = (text: string) => parseSentenceTokens(tokens(text)).utterances[0]!.bodies[0]!.clause.units.at(-1)!;
-    const kin = last("zuzozen vewurel han bobel grebuwol behon.");
+    const kin = last("zuzozen vowurel han beyol grebuwol bawan.");
     assert.equal(kin.kind === "h" ? kin.unit.hosted?.amount : "not h", undefined);
-    assert.equal(kin.kind === "h" ? kin.unit.hosted?.adjs?.[0]?.hosted?.bound.raw : undefined, "behon");
-    const offset = last("zuzozen vewurel hanom bazurem grawol.");
+    assert.equal(kin.kind === "h" ? kin.unit.hosted?.adjs?.[0]?.hosted?.bound.raw : undefined, "bawan");
+    const offset = last("zuzozen vowurel halam buzurem grawol.");
     assert.equal(offset.kind === "h" ? offset.unit.hosted?.amount?.raw : undefined, "grawol");
   });
 
   it("puts a /ɡ/ after a SHARED relation's /b/ on that landmark", () => {
-    const shared = parseSentenceTokens(tokens("zudozol zagozol zal gobom bahehar gamezom.")).utterances[0]!.bodies[0]!.clause.units;
+    const shared = parseSentenceTokens(tokens("zudozol zagozol zal gobem bahehar gamezom.")).utterances[0]!.bodies[0]!.clause.units;
     assert.equal(shared.length, 1);
     const unit = shared[0]!;
     const part = unit.kind === "np" ? unit.coord.parts.find((p) => p.join) : undefined;
@@ -126,7 +126,7 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("puts a hook + /b/ before a join word on the item before it", () => {
-    const units = parseSentenceTokens(tokens("zuzozen zudozol em buzozer zal vewurel.")).utterances[0]!.bodies[0]!.clause.units;
+    const units = parseSentenceTokens(tokens("zuzozen zudozol em buzozer zal vowurel.")).utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units.length, 2);
     const np = units[0]!;
     const items = np.kind === "np" ? np.coord.parts[0]!.items : [];
@@ -138,14 +138,14 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("keeps a hook that is not right before a join word on the clause", () => {
-    const units = parseSentenceTokens(tokens("zudozol em buzozen zagozol zal vewurel.")).utterances[0]!.bodies[0]!.clause.units;
+    const units = parseSentenceTokens(tokens("zudozol em buzozen zagozol zal vowurel.")).utterances[0]!.bodies[0]!.clause.units;
     assert.equal(units[1]!.kind, "hook");
   });
 
   it("reads a signed measure on a time pole with no channel", () => {
-    const units = parseSentenceTokens(tokens("yel zehon vohomum homam bazurem grawol.")).utterances[0]!.bodies[0]!.clause.units;
+    const units = parseSentenceTokens(tokens("yel zawan vuhamum harum buzurem grawol.")).utterances[0]!.bodies[0]!.clause.units;
     const pole = units.at(-1)!;
-    assert.equal(pole.kind === "h" ? pole.unit.word.raw : undefined, "homam");
+    assert.equal(pole.kind === "h" ? pole.unit.word.raw : undefined, "harum");
     assert.equal(pole.kind === "h" ? pole.unit.hosted?.amount?.raw : undefined, "grawol");
   });
 

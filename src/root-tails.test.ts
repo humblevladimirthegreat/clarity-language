@@ -10,7 +10,7 @@ const published = (emoji: string, concrete: string, root: string, kind = "", sha
   ({ emoji, concrete, root, kind, shape, size, abstract: "", mnemonic: "", englishByPos: "", posEnglish: emptyPosEnglish() });
 
 describe("lexicon-published.csv tails", () => {
-  it("gives every five-letter row a kind, a shape and a root in its tail, clear of the holder check", () => {
+  it("gives every three- and five-letter row a kind, a shape and a root in its tail, clear of the holder check", () => {
     const errors = validateRootTails(
       parsePublishedCsv(readData("lexicon-published.csv")),
       holderHostForms(parseOverlayCsv(readData("lexicon-overlays.csv"))),
@@ -51,7 +51,7 @@ describe("validateRootTails", () => {
     published("🗡️", "knife", "uhowu", "tool", "takes-away", "medium"),
     published("🤬", "rage", "agamu", "mind", "takes-away"),
     published("🇫🇷", "france-flag", "avranza", "named"),
-    published("⭐", "star", "aba"),
+    published("⭐", "star", "alo", "nature", "one"),
   ];
   const [cat, , rage, france, star] = good;
   const reasons = (rows: PublishedRow[]) => validateRootTails(rows).map((e) => e.reason);
@@ -60,11 +60,12 @@ describe("validateRootTails", () => {
     assert.deepEqual(reasons(good), []);
   });
 
-  it("rejects a bad kind, a missing shape, a shape on a named row, and a tail on a three-letter row", () => {
+  it("rejects a bad kind, a missing shape, a shape on a named row, and a three-letter root outside its tail", () => {
     assert.ok(reasons([{ ...cat!, kind: "animal" }]).some((r) => r.startsWith("kind must be")));
     assert.ok(reasons([{ ...cat!, shape: "" }]).some((r) => r.startsWith("shape must be")));
     assert.ok(reasons([{ ...france!, shape: "one" }]).some((r) => r.startsWith("a named row has no shape")));
-    assert.ok(reasons([{ ...star!, kind: "sign" }]).some((r) => r.includes("3-letter root has no kind")));
+    assert.ok(reasons([{ ...star!, kind: "" }]).some((r) => r.startsWith("kind must be")));
+    assert.ok(reasons([{ ...star!, root: "aba" }]).some((r) => r.includes("does not end in its tail lo")));
   });
 
   it("needs a size on every kind but mind, and rejects one on a mind row", () => {
@@ -72,7 +73,7 @@ describe("validateRootTails", () => {
     assert.ok(reasons([{ ...cat!, size: "huge" }]).some((r) => r.startsWith("size must be")));
     assert.ok(reasons([{ ...rage!, size: "small" }]).some((r) => r.startsWith("a mind row has no size")));
     assert.ok(reasons([{ ...france!, size: "big" }]).some((r) => r.startsWith("a named row has no size")));
-    assert.ok(reasons([{ ...star!, size: "small" }]).some((r) => r.includes("3-letter root has no kind, shape or size")));
+    assert.ok(reasons([{ ...star!, size: "small" }]).some((r) => r === "a three-letter row has no size (got small)"));
     assert.ok(reasons([published("🏃", "run", "aruve", "doing", "order")]).some((r) => r === "a doing row needs a size"));
     assert.deepEqual(reasons([published("🚲", "bicycle", "obave", "doing", "order", "big"), published("🏃", "run", "aruve", "doing", "order", "none")]), []);
   });

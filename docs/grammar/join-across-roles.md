@@ -20,7 +20,7 @@ When English tells events in time order (*and then*), put ending **-n** on a cla
 
 **`xuen`** tells the steps last first: `A xuen B` says that B happened before A. Use it when you want to say the later event first and then step back, as English does with *before that*.
 
-> `zuzozen vuhohol xuen zuzozer vewurel.`
+> `zuzozen vuhohol xuen zuzozer vowurel.`
 >
 > [z-Uzozen | v-sit | x-and-before-that | z-←Uzozen | v-walk]
 >
@@ -49,29 +49,29 @@ Under `/v/`, `/ɡ/`, and `/h/`, a join word with **-n** names a list move instea
 
 Stacked vowels take no **-r** under `/v/` or `/x/` (the *none* cells); only a stance join has stacked **-r**, as a [fill-ask](#standalone-stance-joins).
 
-Each item in a verb-phrase join is a verb plus the words that go with it, and an item ends at its verb. One rule places every word: **a word before a verb belongs to that verb.** An `/h/`, `/d/`, or `/b/` word, or a hook with its `/b/`, between two joined verbs belongs to the verb after it. In `vewurel hodurem varuvel val`, *hastily* is on *run*, not *walk*. In the same way, an object or a `/b/` party between two verbs goes only with the second verb:
+Each item in a verb-phrase join is a verb plus the words that go with it, and an item ends at its verb. One rule places every word: **a word before a verb belongs to that verb.** An `/h/`, `/d/`, or `/b/` word, or a hook with its `/b/`, between two joined verbs belongs to the verb after it. In `vowurel hedurem varuvel val`, *hastily* is on *run*, not *walk*. In the same way, an object or a `/b/` party between two verbs goes only with the second verb:
 
-> `zuzozen vewurel duhelan vawebol val.`
+> `zuzozen vowurel dahelan vawebol val.`
 >
-> z-Uzozen | [v-walk | [d-Uhelan | v-see] | v-and]
+> z-Uzozen | [v-walk | [d-Ahelan | v-see] | v-and]
 >
-> "Uzozen walks and sees Uhelan."
+> "Uzozen walks and sees Ahelan."
 
-> `zuzozen vewurel buhelan vezuyel val.`
+> `zuzozen vowurel bahelan vezuyel val.`
 >
-> z-Uzozen | [v-walk | [b-Uhelan | v-tell] | v-and]
+> z-Uzozen | [v-walk | [b-Ahelan | v-tell] | v-and]
 >
-> "Uzozen walks and talks to Uhelan."
+> "Uzozen walks and talks to Ahelan."
 
 The first item starts at the subject: the words between the subject and the first verb belong to the first verb. With no subject in the clause, the first item reaches back to the start of the clause.
 
-> `zuzozen duredal vugudel hugem bavulul vuhohol val.`
+> `zuzozen duredal vugudel hevam bavulul vuhohol val.`
 >
 > z-Uzozen | [[d-popcorn | v-cooking] | [[h-around | b-fire] | v-sit] | v-and]
 >
 > "Uzozen cooked popcorn and sat around the fire."
 
-> `zuzozen hodurem vugudel varuvel val.`
+> `zuzozen hedurem vugudel varuvel val.`
 >
 > z-Uzozen | [[h-haste | v-cooking] | v-run | v-and]
 >
@@ -79,15 +79,15 @@ The first item starts at the subject: the words between the subject and the firs
 
 Each verb takes its own recipient the same way, so one clause can name two:
 
-> `zolazun buhelan vezuyel buzozen vamol val.`
+> `zolazun bahelan vezuyel buzozen varal val.`
 >
-> z-Olazun | [[b-Uhelan | v-tell] | [b-Uzozen | v-pay] | v-and]
+> z-Olazun | [[b-Ahelan | v-tell] | [b-Uzozen | v-pay] | v-and]
 >
-> "Olazun talks to Uhelan and pays Uzozen."
+> "Olazun talks to Ahelan and pays Uzozen."
 
 A hook with its `/b/` is an item word too:
 
-> `zuzozen vewurel al behaham vezuvol val.`
+> `zuzozen vowurel al behaham vezuvol val.`
 >
 > z-Uzozen | [v-walk | [[in | b-locality] | v-sleep] | v-and]
 >
@@ -101,19 +101,19 @@ Words that every verb shares go in one of two places. **After the join**, a `/d/
 >
 > "Uzozen cooks and eats popcorn."
 
-> `zuzozen vewurel varuvel val hahuvem.`
+> `zuzozen vowurel varuvel val hahuvem.`
 >
 > z-Uzozen | [v-walk | v-run | v-and | h-intensity]
 >
 > "Uzozen walks and runs, both intensely."
 
-> `zolazun vezuyel vamol val buzozen hahuvem.`
+> `zolazun vezuyel varal val buzozen hahuvem.`
 >
 > z-Olazun | [v-tell | v-pay | v-and | b-Uzozen | h-intensity]
 >
 > "Olazun talks to Uzozen and pays them, both intensely."
 
-**Before the subject**, a word covers every verb. That is the place for scene-setting words (`h_15,30 zuzozen vewurel varuvel val` *at 15:30 Uzozen walks and runs*), and for a shared object when you want the verbs last. English works the same way: a fronted object is shared, and *cooked popcorn and ate* is not.
+**Before the subject**, a word covers every verb. That is the place for scene-setting words (`h_15,30 zuzozen vowurel varuvel val` *at 15:30 Uzozen walks and runs*), and for a shared object when you want the verbs last. English works the same way: a fronted object is shared, and *cooked popcorn and ate* is not.
 
 > `duredal zuzozen vugudel vagedal val.`
 >
@@ -129,7 +129,7 @@ With no subject, a statement with a shared object starts with its verbs (`vugude
 
 A rank join on verb phrases puts the acts in order of priority, so the earlier act is the one preferred: *would rather walk than run*.
 
-> `zuzozen vewurel varuvel vel.`
+> `zuzozen vowurel varuvel vel.`
 >
 > z-Uzozen | [v-walk | v-run | v-rank/more]
 >
@@ -139,7 +139,7 @@ Nothing is SHARED after a clause (`/x/`) join; each clause carries its own words
 
 Sequence **`ae`** keeps its [phrase meaning](joins.md#sequence-ae) in both roles: the first item is where you start. Under `/v/` it is one subject doing steps in order; under `/x/` it fences a list of steps whose order is part of the message (a recipe, directions). Standalone **`xael`** says the steps can go in any order.
 
-> `zuzozen vewurel varuvel vael.`
+> `zuzozen vowurel varuvel vael.`
 >
 > z-Uzozen | [v-walk | v-run | v-in-order]
 >
@@ -157,29 +157,29 @@ A clause join with no clause before it is standalone, like `zal` *nothing*: `xal
 
 All the clauses in an `/x/` join share one speech act. Any `/y/` word goes before the first clause only; the later clauses take the same act and leave `/y/` out.
 
-> `zuzozen vewurel xan zolazun varuvel.`
+> `zuzozen vowurel xan zolazun varuvel.`
 >
 > [z-Uzozen | v-walk | x-and-then | z-Olazun | v-run]
 >
 > "Uzozen walks, and then Olazun runs."
 
-> `zuzozen vewurel xol zolazun varuvel xal zuhelan vezuvol.`
+> `zuzozen vowurel xol zolazun varuvel xal zahelan vezuvol.`
 >
-> [[z-Uzozen | v-walk | x-or-exactly-one | z-Olazun | v-run] | x-and | z-Uhelan | v-sleep]
+> [[z-Uzozen | v-walk | x-or-exactly-one | z-Olazun | v-run] | x-and | z-Ahelan | v-sleep]
 >
-> "Either Uzozen walks or Olazun runs, and Uhelan sleeps." (only one of the first two)
+> "Either Uzozen walks or Olazun runs, and Ahelan sleeps." (only one of the first two)
 
 ### Stance joins {#stance-joins}
 
 When English would deny or weigh **how you stand** toward a claim (*not because…*, *either I saw it or I was told*), put a `/th/` join word after the [stance](clause.md#stance-th) words. The claim itself is untouched; the join works only on the stance words before it. (cue: same vowels as every other join.)
 
-> `zuzozen vewurel thavem berulal thul.`
+> `zuzozen vowurel thahum berulal thul.`
 >
 > z-Uzozen | v-walk | [th-because | b-rain] | th-not
 >
 > "Uzozen walks, but not because of the rain."
 
-> `zuzozen vewurel thevom thewam thol.`
+> `zuzozen vowurel thevum thebam thol.`
 >
 > z-Uzozen | v-walk | th-MEMORY | th-REPORTED | th-or-exactly-one
 >
@@ -187,7 +187,7 @@ When English would deny or weigh **how you stand** toward a claim (*not because�
 
 The other join vowels work on stance words the same way they work on a phrase list ([recap](joins.md#join-type-vowel-series)). A rank join says which ground matters most: the first stance word is the main one.
 
-> `zuzozen vewurel thevom thewam thel.`
+> `zuzozen vowurel thevum thebam thel.`
 >
 > z-Uzozen | v-walk | th-MEMORY | th-REPORTED | th-rank/more
 >
@@ -205,13 +205,13 @@ The other join vowels work on stance words the same way they work on a phrase li
 
 Nothing is SHARED after an `/h/` or `/th/` join. To add a detail that covers the whole list, put a `/w/` word right before the join word.
 
-**Compare with:** *Uzozen does not walk* denies the event, so the join goes on the verb (`vewurel vul`), not on `/th/`.
+**Compare with:** *Uzozen does not walk* denies the event, so the join goes on the verb (`vowurel vul`), not on `/th/`.
 
 #### Stance join before `barl` {#stance-join-before-barl}
 
 When the grounds are a whole clause (*not because Olazun runs*), the pole takes **`barl`** and the next sentence is the grounds ([poles](dependents.md#poles)). That sentence comes last, so the join cannot go after it. Put the join word **between the pole and `barl`** instead. It closes the stance words before it as usual, and **`barl`** still belongs to the pole.
 
-> `zuzozen vewurel thavem thul barl zolazun varuvel.`
+> `zuzozen vowurel thahum thul barl zolazun varuvel.`
 >
 > z-Uzozen | v-walk | th-because | th-not | b-that-clause | z-Olazun | v-run
 >
@@ -219,13 +219,13 @@ When the grounds are a whole clause (*not because Olazun runs*), the pole takes 
 
 The same join after DEDUCED and an *if* pole says a conclusion **does not follow** from its premises ([deduction](knowing.md#deduction)). You deny the link and claim nothing about either clause.
 
-> `zuzozen vuduyel thugum thoyem thul barl zuzozen gaxuduyethel.`
+> `zuzozen vuduyel thegam thohom thul barl zuzozen gaxuduyethel.`
 >
 > z-Uzozen | v-teach | th-DEDUCED | th-if | th-not | b-that-clause | [z-Uzozen | g-agent-x-teach-th-role]
 >
 > "If Uzozen is a teacher, it doesn't follow that Uzozen teaches."
 
-**Compare with:** `thugum thul thoyem barl` denies only the channel: *if P, then Q*, but you do not know that by deduction.
+**Compare with:** `thegam thul thohom barl` denies only the channel: *if P, then Q*, but you do not know that by deduction.
 
 Only one join fits there, and only when the last stance word before it is a pole with no `/b/` yet. The same works for every join vowel and every pole, and for a channel that takes grounds ([evidence clause](knowing.md#evidence-clause)).
 
@@ -233,7 +233,7 @@ Only one join fits there, and only when the last stance word before it is a pole
 
 When English would say how to take a claim without naming any grounds (*at face value*, *no judgment*, *all things considered*), put a `/th/` join with no stance words before it. It works like standalone `zal` *nothing*: the list of stance words is empty, and the join says what that empty stance means. The claim itself is untouched. (cue: same vowels as every other join.)
 
-> `zuzozen vewurel thul.`
+> `zuzozen vowurel thul.`
 >
 > z-Uzozen | v-walk | th-not
 >
@@ -256,7 +256,7 @@ In the table, *reason* means any grounds a stance word can give: a cause, a sour
 
 Outside a question, only the single-vowel **-r** cells are words. Under a question, a standalone **-r** stance join is a [fill-ask](questions.md#fill-ask-r) for the grounds. Every vowel takes **-r** there.
 
-> `yol thar zuzozen vewurel.`
+> `yol thar zuzozen vowurel.`
 >
 > y-question | th-why | z-Uzozen | v-walk
 >
@@ -275,7 +275,7 @@ Outside a question, only the single-vowel **-r** cells are words. Under a questi
 | `thoer` | *What are you torn between?* |
 | `thuer` | *What's your objection?* |
 
-**Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` asks for the speaker's grounds, not what caused the event; for *Why does it happen?* use [`thavem bar`](questions.md#why).
+**Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` asks for the speaker's grounds, not what caused the event; for *Why does it happen?* use [`thahum bar`](questions.md#why).
 
 ### Join-act verbs {#join-act-verbs}
 
@@ -316,7 +316,7 @@ Stacked vowels combine the same four moves (**a** / **o** / **e** / **u**):
 | **`vuon`** | bar that one; the rest stay free | *bars (anything but)* | **uo** ≈ undo + one (forbid that pick) | `zuzozen dugudal vuon` |
 | **`ven`** | rank the object first | *prioritizes* | **e** ≈ order (put this first) | `zuzozen dabezul ven` |
 | **`vaen`** | put the object first in order | *starts with* | **ae** ≈ add + order (begin here) | `zuzozen derewom vaen` |
-| **`voen`** | put the objects at the same rank | *equates / ties* | **oe** ≈ one + order (same height) | `zuzozen dolazun duhelan dal voen` |
+| **`voen`** | put the objects at the same rank | *equates / ties* | **oe** ≈ one + order (same height) | `zuzozen dolazun dahelan dal voen` |
 | **`vuen`** | rank the object lower | *deprioritizes* | **ue** ≈ undo + order (drop this rank) | `zuzozen dugedam vuen` |
 
 English *refuse* vs *leave out*: `zuzozen domudol vun` (*Uzozen refuses meat*) vs `zuzozen domudol vuan` (*Uzozen excludes meat*). One locked choice vs an open pick: `zuzozen dubedal von` vs `zuzozen dubedal vaon`. Rank vs sequence: `zuzozen derewom ven` (*prioritizes the workaround*: first by importance) vs `zuzozen derewom vaen` (*starts with the workaround*: first in order).
@@ -333,7 +333,7 @@ When English ties one extra thing to a noun or an action by a list move (*a cupc
 
 **`gan`** always needs its `/b/` word (`gan b…`). To talk about the word itself, with no `/b/`, use a [mention](spans.md#mention) span.
 
-**Compare with:** *writes with a hammer* is an extra-noun [hook](hooks.md#extra-noun) (`ael` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Olazun* is [proxy](relations.md#proxy) (`hadem`), not **`hon`** *exclusively for*. **`uel`** is *against* that party, not **`hun`** *refusing*.
+**Compare with:** *writes with a hammer* is an extra-noun [hook](hooks.md#extra-noun) (`ael` + `/b/`), not **`han`**. **`han`** is company / including, not the tool. *Tells on behalf of Olazun* is [proxy](relations.md#proxy) (`hagom`), not **`hon`** *exclusively for*. **`uel`** is *against* that party, not **`hun`** *refusing*.
 
 **Not the same job as:** adjective [joins](joins.md) (`gal` / `gam` / `gar`). Join-relations take **-n** toward one `/b/`.
 
@@ -343,20 +343,20 @@ For several members, put a [phrase join](joins.md) **inside** the `/b/` phrase (
 
 | Agebon | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|
-| **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | **a** ≈ add (hold the extra member) | `zugedal gan bubedal`; `zuzozen han bolazun vewurel` |
-| **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **o** ≈ one (lock that pick) | `zehuvam gon buzozen`; `… hon buzozen vewurel` |
-| **`gaon` / `haon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to* (more may follow); `/h/` *among options* | **ao** ≈ add + one (admit, still open) | `zugedal gaon bubedal`; `… haon bubedal vewurel` |
-| **`gun` / `hun`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *against / anti-*; `/h/` *refusing* | **u** ≈ undo (reject that member) | `zugedal gun bubedal`; `… hun bomudol vewurel` |
-| **`guan` / `huan`** | `/ɡ/` or `/h/` toward `/b/` | *without / excluding* | **ua** ≈ undo + add (leave that member out) | `zugedal guan bubedal`; `… huan bubedal vewurel` |
-| **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to anything but*; `/h/` *barring / anything but* | **uo** ≈ undo + one (bar that one; rest free) | `zuwolal guon bubedal`; `… huon bubedal vewurel` |
+| **`gan` / `han`** | `/ɡ/` noun or `/h/` event toward `/b/` | *including / with* | **a** ≈ add (hold the extra member) | `zugedal gan bubedal`; `zuzozen han bolazun vowurel` |
+| **`gon` / `hon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *exclusive for* (sole pick); `/h/` *exclusively for / as the one* | **o** ≈ one (lock that pick) | `zehuvam gon buzozen`; `… hon buzozen vowurel` |
+| **`gaon` / `haon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to* (more may follow); `/h/` *among options* | **ao** ≈ add + one (admit, still open) | `zugedal gaon bubedal`; `… haon bubedal vowurel` |
+| **`gun` / `hun`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *against / anti-*; `/h/` *refusing* | **u** ≈ undo (reject that member) | `zugedal gun bubedal`; `… hun bomudol vowurel` |
+| **`guan` / `huan`** | `/ɡ/` or `/h/` toward `/b/` | *without / excluding* | **ua** ≈ undo + add (leave that member out) | `zugedal guan bubedal`; `… huan bubedal vowurel` |
+| **`guon` / `huon`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *open to anything but*; `/h/` *barring / anything but* | **uo** ≈ undo + one (bar that one; rest free) | `zowulal guon bubedal`; `… huon bubedal vowurel` |
 | **`gen` / `hen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *prioritizing / headed by*; `/h/` *prioritizing* | **e** ≈ order (put this first) | `zabeval gen babezul`; `… hen babezul verewom` |
-| **`gaen` / `haen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *starting with*; `/h/` *starting with* | **ae** ≈ add + order (begin here) | `zabeval gaen berewom`; `… haen berewom vewurel` |
-| **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *on a par with*; `/h/` *equating / tying* | **oe** ≈ one + order (same height) | `zududal goen bugudal`; `… hoen bolazun vewurel` |
-| **`guen` / `huen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | **ue** ≈ undo + order (drop this rank) | `zugedal guen bugedam`; `… huen bugedam vewurel` |
+| **`gaen` / `haen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *starting with*; `/h/` *starting with* | **ae** ≈ add + order (begin here) | `zabeval gaen berewom`; `… haen berewom vowurel` |
+| **`goen` / `hoen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *on a par with*; `/h/` *equating / tying* | **oe** ≈ one + order (same height) | `zududal goen bugudal`; `… hoen bolazun vowurel` |
+| **`guen` / `huen`** | `/ɡ/` or `/h/` toward `/b/` | `/ɡ/` *deprioritizing / trailing*; `/h/` *deprioritizing* | **ue** ≈ undo + order (drop this rank) | `zugedal guen bugedam`; `… huen bugedam vowurel` |
 
 *Anti-* vs *without*: `gun bomudol` vs `guan bomudol`. *Without X* vs *anything but X*: `guan bubedal` vs `guon bubedal`. Sole pick vs among options: `gon buzozen` vs `gaon buzozen`. Workaround as top priority vs workaround as first step: `gen berewom` vs `gaen berewom`.
 
-**Compare with:** *a house like Uzozen’s* / *walks like a duck* is resemblance ([like](relations.md#like-resembles) `gumum` / `humum`), not **`goen` / `hoen`** *on a par with* / *equating*.
+**Compare with:** *a house like Uzozen’s* / *walks like a duck* is resemblance ([like](relations.md#like-resembles) `gewom` / `hewom`), not **`goen` / `hoen`** *on a par with* / *equating*.
 
 ### Practice {#intermediate-practice}
 
@@ -378,37 +378,37 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
-| *Uhelan* | `uhelan` |
-| *MEMORY* | `thevom` |
-| *REPORTED* | `thewam` |
-| *because* | `thavem` |
-| *trophy* | `udoral` |
+| *Ahelan* | `ahelan` |
+| *MEMORY* | `thevum` |
+| *REPORTED* | `thebam` |
+| *because* | `thahum` |
+| *trophy* | `odoral` |
 | *run* | `varuvel` |
 | *punch* | `vanuvul` |
-| *scream* | `vuyomul` |
+| *scream* | `varemul` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
 **1.** *Uzozen adds the trophy.*
 
 ::: details Show answer
-`zuzozen dudoral van.`
+`zuzozen dodoral van.`
 
 z-Uzozen | d-trophy | v-includes
 :::
 
-**2.** *Olazun runs with Uhelan.*
+**2.** *Olazun runs with Ahelan.*
 
 ::: details Show answer
-`zolazun han buhelan varuvel.`
+`zolazun han bahelan varuvel.`
 
-z-Olazun | [h-including | b-Uhelan] | v-run
+z-Olazun | [h-including | b-Ahelan] | v-run
 :::
 
 **3.** *Uzozen punches, then Olazun screams.*
 
 ::: details Show answer
-`zuzozen vanuvul xan zolazun vuyomul.`
+`zuzozen vanuvul xan zolazun varemul.`
 
 [z-Uzozen | v-punch | x-and-then | z-Olazun | v-scream]
 :::
@@ -424,7 +424,7 @@ z-Olazun | [v-run | v-punch | v-and]
 **5.** *Olazun runs, but not because of the trophy.*
 
 ::: details Show answer
-`zolazun varuvel thavem budoral thul.`
+`zolazun varuvel thahum bodoral thul.`
 
 z-Olazun | v-run | [th-because | b-trophy] | th-not
 :::
@@ -432,14 +432,14 @@ z-Olazun | v-run | [th-because | b-trophy] | th-not
 **6.** *Uzozen screamed; I either saw it or was told, not both.*
 
 ::: details Show answer
-`zuzozen vuyomul thevom thewam thol.`
+`zuzozen varemul thevum thebam thol.`
 
 z-Uzozen | v-scream | th-MEMORY | th-REPORTED | th-or-exactly-one
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zolazun dudoral von.`
+**1.** `zolazun dodoral von.`
 
 ::: details Show answer
 z-Olazun | d-trophy | v-choose
@@ -447,7 +447,7 @@ z-Olazun | d-trophy | v-choose
 *Olazun chooses the trophy.* (as the one choice)
 :::
 
-**2.** `zevahul guan budoral.`
+**2.** `zevahul guan bodoral.`
 
 ::: details Show answer
 z-finish-line | [g-without | b-trophy]
@@ -463,20 +463,20 @@ z-teamwork | [g-open-to | b-Uzozen]
 *A team open to Uzozen.* (more members may follow)
 :::
 
-**4.** `zuhelan vuyomul xuen zolazun vanuvul.`
+**4.** `zahelan varemul xuen zolazun vanuvul.`
 
 ::: details Show answer
-[z-Uhelan | v-scream | x-and-before-that | z-Olazun | v-punch]
+[z-Ahelan | v-scream | x-and-before-that | z-Olazun | v-punch]
 
-*Uhelan screams; before that, Olazun punched.*
+*Ahelan screams; before that, Olazun punched.*
 :::
 
-**5.** `zuhelan varuvel thevom thewam thel.`
+**5.** `zahelan varuvel thevum thebam thel.`
 
 ::: details Show answer
-z-Uhelan | v-run | th-MEMORY | th-REPORTED | th-rank/more
+z-Ahelan | v-run | th-MEMORY | th-REPORTED | th-rank/more
 
-*Uhelan ran; I know mainly because I saw it, and also because I was told.*
+*Ahelan ran; I know mainly because I saw it, and also because I was told.*
 :::
 
 **6.** `yol thar zuzozen varuvel.`
@@ -489,20 +489,20 @@ y-question | th-why | z-Uzozen | v-run
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Olazun runs, refusing the trophy.* `zolazun hun budoral varuvel.` or `zolazun han budoral varuvel.`
+**1.** *Olazun runs, refusing the trophy.* `zolazun hun bodoral varuvel.` or `zolazun han bodoral varuvel.`
 
 ::: details Show answer
-`zolazun hun budoral varuvel.`
+`zolazun hun bodoral varuvel.`
 
 z-Olazun | [h-refusing | b-trophy] | v-run
 
 **`u`** rejects that member; **`han`** would run *with* the trophy.
 :::
 
-**2.** *Uzozen punches; before that, Olazun screamed.* `zuzozen vanuvul xuen zolazun vuyomul.` or `zuzozen vanuvul xan zolazun vuyomul.`
+**2.** *Uzozen punches; before that, Olazun screamed.* `zuzozen vanuvul xuen zolazun varemul.` or `zuzozen vanuvul xan zolazun varemul.`
 
 ::: details Show answer
-`zuzozen vanuvul xuen zolazun vuyomul.`
+`zuzozen vanuvul xuen zolazun varemul.`
 
 [z-Uzozen | v-punch | x-and-before-that | z-Olazun | v-scream]
 
@@ -511,12 +511,12 @@ z-Olazun | [h-refusing | b-trophy] | v-run
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *a group including Uhelan* <!-- lint: error -->`zayayal al buhelan.`
+**1.** *a group including Ahelan* <!-- lint: error -->`zayayal al bahelan.`
 
 ::: details Show answer
-`zayayal gan buhelan.`
+`zayayal gan bahelan.`
 
-z-group | [g-including | b-Uhelan]
+z-group | [g-including | b-Ahelan]
 
 Before a `/b/` noun, the hook **`al`** means *in*; *including* an extra member is the join-relation **`gan`**.
 :::

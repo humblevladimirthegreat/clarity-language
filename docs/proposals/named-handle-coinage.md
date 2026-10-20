@@ -34,12 +34,12 @@ Institutions mint a native handle from the long title’s **content roots** (ski
 Two-root example (step 4: `ab`+`ul`+ last root’s 2nd vowel is published `abulu`, so lengthen):
 
 ```
-`abagezdana` × `ululo` → `ab` + `ul` + `o` → `abulo` → `zabulon`
+`abagezdana` × `ululo` → `ab` + `ul` + `o` → `ubulo` → `zubulon`
 ```
 
-Hearers treat the handle as a **name**. Full-root resume of `abulo` is `zabulor` (not `zabulur`, which is published `abulu` + **-r**). Mention of the **form** stays `{abulo}`; the office as referent is `zabulon`. Foreign acronyms stay loans / opaque; they do not use this harvest.
+Hearers treat the handle as a **name**. Full-root resume of `ubulo` is `zubulor` (not `zabulur`, which is published `abulu` + **-r**). Mention of the **form** stays `{abulo}`; the office as referent is `zubulon`. Foreign acronyms stay loans / opaque; they do not use this harvest.
 
-Citation of the handle is prefix-less `abulon`.
+Citation of the handle is prefix-less `ubulon`.
 
 ## Open: arity
 
@@ -49,7 +49,7 @@ A three-root run of the same algorithm:
 `abagezdana` × `alandaylandza` × `ululo` → `ab` + `al` + `ul` + `o` → `abalulo` → `zabalulon`
 ```
 
-That only shows “more title roots ⇒ a longer coined stem.” A handle’s job is a **short** stand-in for a long `x`-title. Two `VC` pieces plus a final vowel is ordinary `VCVCV` (`abulo`). Three pieces is `VCVCVCV` (`abalulo`), already in the weight class of keeping the full title. Unbounded harvest would mint still heavier “handles.”
+That only shows “more title roots ⇒ a longer coined stem.” A handle’s job is a **short** stand-in for a long `x`-title. Two `VC` pieces plus a final vowel is ordinary `VCVCV` (`ubulo`). Three pieces is `VCVCVCV` (`abalulo`), already in the weight class of keeping the full title. Unbounded harvest would mint still heavier “handles.”
 
 If this proposal is absorbed, prefer **cap at two content roots** (first and last of the title is enough), and keep step 4 only to dodge an existing lemma. Do not teach n-ary harvest as productive.
 
@@ -61,5 +61,5 @@ Current language does not ask speakers to invent roots. Handles already work as 
 
 1. Decide arity (two-root only vs n-ary).
 2. Put the algorithm on [word-endings.md](../grammar/word-endings.md) Advanced; keep Beginner/Intermediate handles as published roots until that band.
-3. Grammar-doc lint: either allow listed harvest products (`abulo`, …) or only show them inside mention spans.
+3. Grammar-doc lint: either allow listed harvest products (`ubulo`, …) or only show them inside mention spans.
 4. Do not add harvest stems to the published lexicon as senses.

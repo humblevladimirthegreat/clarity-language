@@ -95,7 +95,7 @@ All packs use the same note type. A pack is a filter over the note list plus dec
 
 **Not core, not in Core.** House names, the `SELF` root, discourse-role specials, topic and generic pronouns, and the nine sake roots are never core ([core vocabulary column](../../meta/lexicon.md#core-vocabulary-column)): they are grammar, taught by their sections. They appear in **Everything**. The sake roots also get their own **Sakes** pack, since a learner names sakes from the beginner stage and the Core pack never carries them.
 
-**No Claritish pack.** The Claritish track gets a one-page [cheat sheet](../../grammar/claritish/cheat-sheet.md) instead of a deck. Its unit is a whole drop-in (`thovul`), not a stem, and its meaning is the lesson's sense, so it does not fit this note type; the set is small (about ten families, most of them one word with three endings); and drop-ins are used in everyday English from the first lesson, so that use is the review. A sheet kept open while writing serves that better than a separate drill. Flashcards start where the grammar does.
+**No Claritish pack.** The Claritish track gets a one-page [cheat sheet](../../grammar/claritish/cheat-sheet.md) instead of a deck. Its unit is a whole drop-in (`thomal`), not a stem, and its meaning is the lesson's sense, so it does not fit this note type; the set is small (about ten families, most of them one word with three endings); and drop-ins are used in everyday English from the first lesson, so that use is the review. A sheet kept open while writing serves that better than a separate drill. Flashcards start where the grammar does.
 
 ### v2
 
@@ -105,9 +105,9 @@ All packs use the same note type. A pack is a filter over the note list plus dec
 | **Compounds** | All of `lexicon-compounds.csv`, not only core stems |
 | **Feelings** | Roots from the feelings and emotion-compose sections |
 
-**Before the overlay packs: a key rule for sense forms that differ by row.** Several sense forms carry a different meaning per `pos` row, so collapsing them into one note would merge two lessons: a join act and its join relations (`an` on `v` vs `g` / `h`), the similative's manner and type readings (`umum` on `h` vs `g`), the AS-OF stance pole on `th` beside its clause poles (`uhum`, `uhur`, `uram`, `urar`), and the CAUSE causer note on `th` (`egem`). Options: key those notes by `sense_form` + `kind` (still one note per join act / join relation), or by `sense_form` + `pos` when the definitions differ. Settle it with the v2 overlay packs.
+**Before the overlay packs: a key rule for sense forms that differ by row.** Several sense forms carry a different meaning per `pos` row, so collapsing them into one note would merge two lessons: a join act and its join relations (`an` on `v` vs `g` / `h`), the similative's manner and type readings (`ewom` on `h` vs `g`), the AS-OF stance pole on `th` beside its clause poles (`ogam`, `ogar`, `ugem`, `uger`), and the CAUSE causer note on `th` (`ewem`). Options: key those notes by `sense_form` + `kind` (still one note per join act / join relation), or by `sense_form` + `pos` when the definitions differ. Settle it with the v2 overlay packs.
 
-Overlays wait for v2 because each one is a grammar piece taught on its own page: `ahum` alone on a card, without the mid-word `th` around it, is a weak cue until its section has been read. The sake overlays, which learners need early, are already in the v1 **Sakes** pack. Overlay decks are tagged by the stage of their `anchor` section, not blanket “advanced”: many `evidential` and plan / want forms are taught at beginner stage.
+Overlays wait for v2 because each one is a grammar piece taught on its own page: `agam` alone on a card, without the mid-word `th` around it, is a weak cue until its section has been read. The sake overlays, which learners need early, are already in the v1 **Sakes** pack. Overlay decks are tagged by the stage of their `anchor` section, not blanket “advanced”: many `evidential` and plan / want forms are taught at beginner stage.
 
 ## Pipeline
 

@@ -12,7 +12,7 @@ const SAKES = [
   "",
   "### Emotion compose {#emotion-compose}",
   "",
-  "`zebewem gulothamar` and `wulothuraor`.",
+  "`zebewem guwathamar` and `wuwathuraor`.",
 ].join("\n");
 
 function terminology(rows: string[], body = ""): string {
@@ -24,7 +24,7 @@ function lint(markdown: string, labels: string[]) {
   return lintTerminology(markdown, pages, tables, new Set(labels), new Map([["sakes.md", "Sakes"]])).map((f) => f.detail);
 }
 
-const INTERNAL = "| **INTERNAL** | held inside | `gulothamar` | [Sakes](sakes.md#emotion-compose) |";
+const INTERNAL = "| **INTERNAL** | held inside | `guwathamar` | [Sakes](sakes.md#emotion-compose) |";
 
 describe("lintTerminology", () => {
   it("passes a current row", () => {
@@ -41,14 +41,14 @@ describe("lintTerminology", () => {
   });
 
   it("flags a row whose example lacks the label or is not on the page", () => {
-    const wrong = "| **CIRCUM** | atmosphere | `gulothamar` | [Sakes](sakes.md#emotion-compose) |";
+    const wrong = "| **CIRCUM** | atmosphere | `guwathamar` | [Sakes](sakes.md#emotion-compose) |";
     assert.match(lint(terminology([wrong]), ["CIRCUM"]).join("\n"), /without CIRCUM/);
-    const missing = "| **CIRCUM** | atmosphere | `wulothuraol` | [Sakes](sakes.md#emotion-compose) |";
+    const missing = "| **CIRCUM** | atmosphere | `wuwathuraol` | [Sakes](sakes.md#emotion-compose) |";
     assert.match(lint(terminology([missing]), ["CIRCUM"]).join("\n"), /does not appear on sakes\.md/);
   });
 
   it("flags a row no morph line prints and the page never uses", () => {
-    const stale = "| **ACT** | arousal | `gulothamar` | [Sakes](sakes.md#emotion-compose) |";
+    const stale = "| **ACT** | arousal | `guwathamar` | [Sakes](sakes.md#emotion-compose) |";
     assert.match(lint(terminology([stale]), []).join("\n"), /drop the row/);
   });
 
@@ -56,12 +56,12 @@ describe("lintTerminology", () => {
     const body = [
       "### Emotion",
       "",
-      "Say `wonathumer` with **ACT**; the root `ezuye`.",
+      "Say `wonathugar` with **ACT**; the root `ezuye`.",
       "",
       "[Feelings](sakes.md#nowhere)",
     ].join("\n");
     const out = lint(terminology([INTERNAL], body), ["INTERNAL"]).join("\n");
-    assert.match(out, /`wonathumer` does not appear/);
+    assert.match(out, /`wonathugar` does not appear/);
     assert.match(out, /\*\*ACT\*\*/);
     assert.match(out, /bare root `ezuye`/);
     assert.match(out, /sakes\.md#nowhere is not an anchor/);

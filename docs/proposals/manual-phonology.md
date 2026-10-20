@@ -20,7 +20,7 @@ One chart teaches every channel. Someone who learns to sign the code can also ta
 ## What the code must cover
 
 - **18 letters:** 14 consonants (`w d r m v g l h n z b y th x`) and 4 vowels (`u a o e`).
-- **`th` and `x` start words.** `/th/` is the stance role letter (`thoyem`) and `/x/` starts clause joins and linkers (`xan`, `xodum`). Both also occur as seams, in codas (`-x`, `-rth`), and in clusters (`xrebal`).
+- **`th` and `x` start words.** `/th/` is the stance role letter (`thohom`) and `/x/` starts clause joins and linkers (`xan`, `xahem`). Both also occur as seams, in codas (`-x`, `-rth`), and in clusters (`xrebal`).
 - **Syllables:** consonant + vowel; a syllable with no onset (vowel stacks such as `ua`, `xuen`); onset clusters (`gl-`, role letter + `r`, role letter + `w`).
 - **Codas:** `-l -m -n -r`, optionally followed by `-x`, plus `-ln`, `-rl`, `-rm`, `-rth`.
 - **Prosody:** equal syllable length and stress on the first syllable ([rhythm and stress](../grammar/phonology.md#rhythm-and-stress)).
@@ -163,8 +163,8 @@ The white keys carry no letters.
 | da | F♯5 | F♯3 |
 | -m | A♯5, held | none |
 
-- `thoyem`: G♯5+A♯5 / D♯3 · F♯5+G♯5 / C♯3 · A♯5 held
-- `xodum`: D♯5+G♯5 / D♯3 · F♯5 / G♯3 · A♯5 held
+- `thohom`: G♯5+A♯5 / D♯3 · F♯5+G♯5 / C♯3 · A♯5 held
+- `xahem`: D♯5+G♯5 / D♯3 · F♯5 / G♯3 · A♯5 held
 
 ### Guitar
 
@@ -221,8 +221,8 @@ The code held up in the air in the **shape** form, received by eye. It is a **ma
 The hands are held at chest height, palms toward the viewer, with the consonant hand's fingers pointing up and the vowel hand's pointing sideways toward it ([handedness](#handedness)). Left-handed signers mirror the layout; the sideways fingers show the vowel hand either way.
 
 - `zuzozen gamahum.`: consonant hand horns · horns · index · *open hand, held* ‖ L · flat · V · *flat, held*; vowel hand V (sideways) on every beat, fist on the codas
-- `thoyem`: hooked three / three fingers · hooked V / flat · *flat, held*
-- `xodum`: claw / three fingers · V / index · *flat, held*
+- `thohom`: hooked three / three fingers · hooked V / flat · *flat, held*
+- `xahem`: claw / three fingers · V / index · *flat, held*
 
 **Why this replaces fingerspelling:** the rejected `fingerspelling.md` spelled one letter per hold, with 18 shapes borrowed from three manual alphabets. The signed channel signs one **syllable** per beat with both hands, so it should be faster. Its shapes follow one counting rule, straight or hooked, and match the other channels.
 

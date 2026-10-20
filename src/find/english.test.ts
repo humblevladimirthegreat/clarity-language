@@ -36,11 +36,11 @@ describe("collectEnglishEntries", () => {
   it("finds the form column by its backticks when no header names it", () => {
     const entries = entriesOf(`| English | Bar |
 |---------|-----|
-| *late* / *early* | **\`zahen\`** with **\`bral\`** |
+| *late* / *early* | **\`zadan\`** with **\`bral\`** |
 `);
     assert.deepEqual(
       entries.map((e) => [e.form, e.english]),
-      [["zahen / bral", "*late* / *early*"]],
+      [["zadan / bral", "*late* / *early*"]],
     );
   });
 
@@ -65,7 +65,7 @@ describe("collectEnglishEntries", () => {
 
 ### Point back {#hook-resume}
 
-> \`or zuzozen vewurel.\`
+> \`or zuzozen vowurel.\`
 >
 > "Anyway, Uzozen walks."
 `);
@@ -76,14 +76,14 @@ describe("collectEnglishEntries", () => {
     assert.equal(example.line, 5);
     const gloss = entries.find((e) => e.kind === "gloss" && e.form === "or")!;
     assert.equal(gloss.english, "anyway");
-    assert.ok(entries.some((e) => e.kind === "gloss" && e.form === "vewurel" && e.english === "walk"));
+    assert.ok(entries.some((e) => e.kind === "gloss" && e.form === "vowurel" && e.english === "walk"));
   });
 });
 
 describe("searchEnglish", () => {
   const entries = entriesOf(`### Walking
 
-> \`zuzozen vewurel.\`
+> \`zuzozen vowurel.\`
 >
 > "Uzozen walks."
 
@@ -108,7 +108,7 @@ describe("taught cues in docs/grammar", () => {
   const all = listMarkdown("docs/grammar").flatMap((file) => collectEnglishEntries(readFileSync(file, "utf8"), file, tables));
   const cases: { phrase: string; page: string; slug?: string; forms: string[] }[] = [
     { phrase: "anyway", page: "hooks.md", slug: "hook-resume", forms: ["or"] },
-    { phrase: "late", page: "comparatives.md", slug: "vague-amounts", forms: ["thobam / zel / zuel / bral"] },
+    { phrase: "late", page: "comparatives.md", slug: "vague-amounts", forms: ["thubem / zel / zuel / bral"] },
     { phrase: "last time", page: "numbers.md", forms: ["gruedul", "g#-2", "h#-2"] },
   ];
   for (const { phrase, page, slug, forms } of cases) {

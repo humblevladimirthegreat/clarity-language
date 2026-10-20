@@ -22,20 +22,20 @@ Write a thing letter (`/z/` `/d/` `/b/`), the role vowel, mid-word **`x`**, the 
 | [**`ae`**](../roles.md#instrument) | the tool | `daexarayel` | *a writing tool* | I |
 | [**`oe`**](../roles.md#goal-source-path) | the goal | `doexaruvel` | *a finish line* | I |
 | [**`ua`**](../roles.md#goal-source-path) | the source | `duaxobuvur` | *where it was poured from* | I |
-| [**`uo`**](../roles.md#goal-source-path) | the path | `duoxewurel` | *a walkway* | I |
+| [**`uo`**](../roles.md#goal-source-path) | the path | `duoxowurel` | *a walkway* | I |
 | [**`ao`**](../roles.md#result) | the result, newly made | `daoxeguyel` | *a building* | I |
 | [**`ue`**](../roles.md#bearer) | the one who pays | `zuexurozum` | *a theft victim* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [The one, from an earlier event](../roles.md#this-instance-r): **-r** | `zuzozen vuhohol. zaxuhohor vewurel.` | *Uzozen sits. The one who sat walks.* | B |
-| [A noun in the stem](../roles.md#role-compounds): another **`x`** | `zaxudozoxewurel varuvel.` | *Someone who walks dogs runs.* | B |
+| [The one, from an earlier event](../roles.md#this-instance-r): **-r** | `zuzozen vuhohol. zaxuhohor vowurel.` | *Uzozen sits. The one who sat walks.* | B |
+| [A noun in the stem](../roles.md#role-compounds): another **`x`** | `zaxudozoxowurel varuvel.` | *Someone who walks dogs runs.* | B |
 | [Is one who](../roles.md#saying-someone-is-a-teacher): on `/ɡ/` | `zuzozen gaxuduyel.` | *Uzozen is someone who teaches.* | B |
 | [The usual role](../roles.md#usual-role): **`the`** before the ending | `zaxuduyethel varuvel.` | *A teacher runs.* | I |
 | [Is a teacher](../roles.md#usual-role) | `zuzozen gaxuduyethel.` | *Uzozen is a teacher.* | I |
 | [The event itself](../roles.md#the-event-itself): no vowel | `davuvul` | *a fight* | B |
 
-A role compound has one role vowel, left of the first **`x`**. Its stem is always an event: `zaxamun` is not a word.
+A role compound has one role vowel, left of the first **`x`**. Its stem is always an event: `zaxuwon` is not a word.
 
 ### Without the stem {#pointers}
 
@@ -70,7 +70,7 @@ Bare arrow words are compass headings. With mid-word **`th`** and a facing perso
 |--------|---------|-----------|-------|
 | [**`onuhel`**](../roles.md#arrow-rose-compass-vs-face) | *north* | *ahead* | I |
 | [**`azuhel`**](../roles.md#arrow-rose-compass-vs-face) | *south* | *back* | I |
-| [**`odul`**](../roles.md#arrow-rose-compass-vs-face) | *east* | *right* | I |
+| [**`ahel`**](../roles.md#arrow-rose-compass-vs-face) | *east* | *right* | I |
 | [**`owuhel`**](../roles.md#arrow-rose-compass-vs-face) | *west* | *left* | I |
 | [**`unuhel`**](../roles.md#arrow-rose-compass-vs-face) | *northeast* | *forward-right* | I |
 | [**`anuhel`**](../roles.md#arrow-rose-compass-vs-face) | *northwest* | *forward-left* | I |
@@ -88,20 +88,20 @@ Bare arrow words are compass headings. With mid-word **`th`** and a facing perso
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [Bare DIR](../roles.md#viewpoint-vs-landmark) | compass / gravity | `gowuhel` *west*; `gayuhel` *up* | I |
-| [**`DIR th ANCHOR`**](../roles.md#viewpoint-vs-landmark) | that point on **ANCHOR's** facing rose | `gowuhethehon` *listener-left* | I |
+| [**`DIR th ANCHOR`**](../roles.md#viewpoint-vs-landmark) | that point on **ANCHOR's** facing rose | `gowuhethawan` *listener-left* | I |
 | [DIR + **`th`** + **`o`** + `/b/`](../roles.md#landmark-facing) | that point on the **landmark's** own rose | `gazuhethol bahehal` *behind the house* | I |
-| [complex `/ɡ/` + `/b/`](../roles.md#viewpoint-vs-landmark) | region on a side **of a landmark** | `gowuhethuzozen badalel` *left of the tree, from Uzozen's view* | I |
+| [complex `/ɡ/` + `/b/`](../roles.md#viewpoint-vs-landmark) | region on a side **of a landmark** | `gowuhethuzozen bedalel` *left of the tree, from Uzozen's view* | I |
 
-The anchor can be `amu` *speaker*, `eho` *listener*, a name, or a role pointer on **-r**. The ending applies to the anchor, not the direction.
+The anchor can be `uwo` *speaker*, `awa` *listener*, a name, or a role pointer on **-r**. The ending applies to the anchor, not the direction.
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | English | Stage |
 |--------|---------|-------|
 | [`gowuhel`](../roles.md#endings-and-resume) | *west* (shared map) | I |
 | [`gowuhethuzozen`](../roles.md#endings-and-resume) | *Uzozen's left* | I |
-| [`gowuhethehon`](../roles.md#endings-and-resume) | *your left* (listener facing) | I |
-| [`gowuhethamun`](../roles.md#endings-and-resume) | *my left* (speaker facing) | I |
-| [`gowuhethahan`](../roles.md#endings-and-resume) | *our left* (shared facing) | I |
+| [`gowuhethawan`](../roles.md#endings-and-resume) | *your left* (listener facing) | I |
+| [`gowuhethuwon`](../roles.md#endings-and-resume) | *my left* (speaker facing) | I |
+| [`gowuhethayan`](../roles.md#endings-and-resume) | *our left* (shared facing) | I |
 | [`gayuhel` / `hayuhel`](../roles.md#endings-and-resume) | gravity *up* | I |
 
 <!-- cheat-sheet: roles-comparing -->
@@ -115,14 +115,14 @@ The anchor can be `amu` *speaker*, `eho` *listener*, a name, or a role pointer o
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Compass](../roles.md#viewpoint-laterals) | `yel vewurel howuhel.` | *Walk west.* | I |
-| [Uzozen's left](../roles.md#viewpoint-laterals) | `yel vewurel howuhethuzozen.` | *Walk left.* (Uzozen's left) | I |
-| [Your left](../roles.md#viewpoint-laterals) | `yel vewurel zehon howuhethehon.` | *You, walk left.* (your left) | I |
-| [Their left](../roles.md#viewpoint-laterals) | `zuzozen vewurel. zolazun vuhohol howuhethaxar.` | *Uzozen walks. Olazun sits on their left.* | I |
-| [Up](../roles.md#gravity) | `yel vewurel hayuhel.` | *Walk up.* | I |
-| [Under](../roles.md#viewpoint-vs-landmark) | `zudozol vezuvol haduhel badalel.` | *The dog sleeps under the tree.* | I |
+| [Compass](../roles.md#viewpoint-laterals) | `yel vowurel howuhel.` | *Walk west.* | I |
+| [Uzozen's left](../roles.md#viewpoint-laterals) | `yel vowurel howuhethuzozen.` | *Walk left.* (Uzozen's left) | I |
+| [Your left](../roles.md#viewpoint-laterals) | `yel vowurel zawan howuhethawan.` | *You, walk left.* (your left) | I |
+| [Their left](../roles.md#viewpoint-laterals) | `zuzozen vowurel. zolazun vuhohol howuhethaxar.` | *Uzozen walks. Olazun sits on their left.* | I |
+| [Up](../roles.md#gravity) | `yel vowurel hayuhel.` | *Walk up.* | I |
+| [Under](../roles.md#viewpoint-vs-landmark) | `zudozol vezuvol haduhel bedalel.` | *The dog sleeps under the tree.* | I |
 | [Above](../roles.md#viewpoint-vs-landmark) | `zubezol vuhohol gayuhel budozol.` | *A bird sits above the dog.* | I |
-| [Left of a landmark](../roles.md#viewpoint-vs-landmark) | `zugul gowuhethuzozen badalel.` | *The book is left of the tree, from Uzozen's view.* | I |
+| [Left of a landmark](../roles.md#viewpoint-vs-landmark) | `zegal gowuhethuzozen bedalel.` | *The book is left of the tree, from Uzozen's view.* | I |
 | [Behind](../roles.md#landmark-facing) | `zudozol vuhohol gazuhethol bahehal.` | *The dog sits behind the house.* | I |
 
 ## Reading mid-word `x` {#x}
@@ -132,13 +132,13 @@ After the role letter, look at both sides of the **first** **`x`**. A normal roo
 <!-- cheat-sheet: roles-comparing -->
 | Left of **`x`** | Right of **`x`** | Reading | Example | Stage |
 |-----------------|------------------|---------|---------|-------|
-| [full root](../compounds.md#families-by-shape) | full root | one ordinary compound | `zubedaxuyudal` *peanut butter*; `zohuxalowen` (a hyphenated name) | B |
+| [full root](../compounds.md#families-by-shape) | full root | one ordinary compound | `zubedaxuyudal` *peanut butter*; `zalexalowen` (a hyphenated name) | B |
 | [role vowel](../compounds.md#families-by-shape) | **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** | role pointer | `zaxar` *they*; `zaxal` *another one*; `zaxam` *what they did* | B |
 | [role vowel](../compounds.md#families-by-shape) | a longer root | role compound | `zaxuduyel` *someone who teaches* | B |
 | [name](../compounds.md#conversation-length) | a single vowel, then **-n** | conversation length | *Uzozen, I have time* | I |
 | [longer root](../compounds.md#families-by-shape) | a single vowel | [ability](../intention.md#ability) | *can't sing right now* | I |
 
-Mid-word **`th`** is another family: a sake root and a vowel (`gulothal`), any other root and a vowel ([label scope](../predication.md#label-scope)), or a direction root and a facing person (`gowuhethuzozen`). After a sake root, root-shaped letters are always the emotion tail.
+Mid-word **`th`** is another family: a sake root and a vowel (`guwathal`), any other root and a vowel ([label scope](../predication.md#label-scope)), or a direction root and a facing person (`gowuhethuzozen`). After a sake root, root-shaped letters are always the emotion tail.
 
 ### One thing or two {#one-or-two}
 
@@ -146,21 +146,21 @@ Mid-word **`th`** is another family: a sake root and a vowel (`gulothal`), any o
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
 | [two words](../compounds.md#compound-vs-separate) | two things, or a property marked another way | `zehowol zerewol zam` *a hammer and a wrench*; `zudozol gubulel` *a blue dog* | B |
-| [**`x`** in the middle](../compounds.md#compound-vs-separate) | one thing; both roots audible | `gagomaxulamal` *in love* (the crush kind); `zubedaxuyudal` *peanut butter*; `zuzozexolazun` (one person) | B |
-| [dictionary word](../compounds.md#compound-vs-separate) | one familiar kind, one entry | `zobahohal` *bedroom*; `zezalal` *sunflower* | B |
+| [**`x`** in the middle](../compounds.md#compound-vs-separate) | one thing; both roots audible | `gagamaxolamal` *in love* (the crush kind); `zubedaxuyudal` *peanut butter*; `zuzozexolazun` (one person) | B |
+| [dictionary word](../compounds.md#compound-vs-separate) | one familiar kind, one entry | `zobahohal` *bedroom*; `zozalal` *sunflower* | B |
 
 A dictionary compound joins its two roots with the left root's ending (**-l** everyday, **-m** abstract), never **`x`**. If the pairing is not listed, glue with **`x`** or use two words.
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | English | Stage |
 |--------|---------|-------|
-| [`zoyelaboral`](../compounds.md#lexical-compounds) | *doorbell* | B |
-| [`zuzahalugul`](../compounds.md#lexical-compounds) | *textbook* | B |
+| [`zoholeboral`](../compounds.md#lexical-compounds) | *doorbell* | B |
+| [`zuzahalegal`](../compounds.md#lexical-compounds) | *textbook* | B |
 | [`zerulalogobal`](../compounds.md#lexical-compounds) | *raincoat* | B |
 | [`zahuyayol`](../compounds.md#tail-suffixes) | *friend* (*hug* + a person tail, no second root) | A |
 | [`zobahohal`](../compounds.md#tail-suffixes) | *bedroom* (*bed* + a place tail) | A |
 
-More pieces: keep English order in one word, last root the kind (`zugudaxududaxuwolan` *Coffee-Tea-Water*, one named shop).
+More pieces: keep English order in one word, last root the kind (`zugudaxududaxowulan` *Coffee-Tea-Water*, one named shop).
 
 ### Conversation length {#conversation-length}
 
@@ -195,9 +195,9 @@ Write the names, then the rank join, then the shared adjective on `/ɡ/`. **`e`*
 |-----|---------|---------|-------|
 | [More than](../comparatives.md#comparatives) | `zuzozen zolazun zel gamahum.` | *Uzozen is more challenging than Olazun.* | B |
 | [The most](../comparatives.md#superlatives): one name | `zuzozen zel gamahum.` | *Uzozen is the most challenging.* | B |
-| [Much more](../comparatives.md#degree): `/w/` before the adjective | `zuzozen zolazun zel wehalal gamahum.` | *Uzozen is much more challenging than Olazun.* | B |
+| [Much more](../comparatives.md#degree): `/w/` before the adjective | `zuzozen zolazun zel wohalal gamahum.` | *Uzozen is much more challenging than Olazun.* | B |
 | [As … as](../comparatives.md#equatives) | `zuzozen zolazun zoel gamahum.` | *Uzozen is as challenging as Olazun.* | B |
-| [About as … as](../comparatives.md#equatives) | `zuzozen zolazun zoem gebalol.` | *Uzozen is about as bright as Olazun.* | B |
+| [About as … as](../comparatives.md#equatives) | `zuzozen zolazun zoem gabulol.` | *Uzozen is about as bright as Olazun.* | B |
 | [Both are](../comparatives.md#equatives): an *and*-list, no ranking | `zuzozen zolazun zal gamahum` | *Uzozen and Olazun are both challenging.* | B |
 | [Not as … as](../comparatives.md#comparative-arity): `zuel` | `zolazun zuzozen zuel gamahum` | *Olazun is not as challenging as Uzozen.* | I |
 | [No more … than](../comparatives.md#comparative-arity): deny with `zul` | `zolazun zuzozen zel gamahum zul.` | *Olazun is no more challenging than Uzozen.* | I |
@@ -215,7 +215,7 @@ Write the names, then the rank join, then the shared adjective on `/ɡ/`. **`e`*
 <!-- cheat-sheet: roles-comparing -->
 | Example | Reading | Stage |
 |---------|---------|-------|
-| [`zuzozen zolazun zuhelan zem gamahum`](../comparatives.md#comparative-arity) | *Uzozen is more challenging than Olazun, who is more than Uhelan* (open) | I |
+| [`zuzozen zolazun zahelan zem gamahum`](../comparatives.md#comparative-arity) | *Uzozen is more challenging than Olazun, who is more than Ahelan* (open) | I |
 | [`zuzozen zolazun zuel gamahum`](../comparatives.md#comparative-arity) | *Uzozen is less challenging than Olazun* | I |
 | [`zel gamahum`](../comparatives.md#comparative-arity) | *there is no most challenging* | I |
 | [`zem gamahum`](../comparatives.md#comparative-arity) | *no most challenging comes to mind* | I |
@@ -230,17 +230,17 @@ Keep the rank join; change what the shared word is.
 
 | Scale | Example | English | Stage |
 |-------|---------|---------|-------|
-| [Manner](../comparatives.md#manner-scale): `/h/` right after the join | `zolazun zuzozen zel hahuvem vewurel.` | *Olazun walks more intensely than Uzozen.* | I |
+| [Manner](../comparatives.md#manner-scale): `/h/` right after the join | `zolazun zuzozen zel hahuvem vowurel.` | *Olazun walks more intensely than Uzozen.* | I |
 | [Amount](../comparatives.md#amount-scale): `gral` | `zagozolx zudozolx zel gral.` | *There are more cats than dogs.* | I |
 | [Amount, fewer](../comparatives.md#amount-scale) | `zagozolx zudozolx zuel gral.` | *There are fewer cats than dogs.* | I |
 | [Amount, as many](../comparatives.md#amount-scale) | `zagozolx zudozolx zoel gral.` | *There are as many cats as dogs.* | I |
 | [Amount, by impression](../comparatives.md#amount-scale): `gram` | `zagozolx zudozolx zel gram.` | *It looks like there are more cats than dogs.* | I |
 | [How many more](../comparatives.md#amount-scale): difference in `/b/` | `zagozolx zudozolx zel gral brarel.` | *There are three more cats than dogs.* | I |
-| [Frequency](../comparatives.md#frequency-scale): `hral` | `zuzozen zolazun zel hral vewurel.` | *Uzozen walks more often than Olazun.* | I |
-| [Time, later](../comparatives.md#time-scale): `bral` | `zuzozen zolazun zel bral vevurel.` | *Uzozen arrives later than Olazun.* | I |
-| [Time, earlier](../comparatives.md#time-scale) | `zuzozen zolazun zuel bral vevurel.` | *Uzozen arrives earlier than Olazun.* | I |
-| [The more …, the more …](../comparatives.md#covarying) | `zuzozen hral vewurel xoel zolazun hral vezuvol.` | *The more Uzozen walks, the more Olazun sleeps.* | I |
-| [The more …, the less …](../comparatives.md#covarying) | `zuzozen hral vewurel xuel zolazun hral vezuvol.` | *The more Uzozen walks, the less Olazun sleeps.* | I |
+| [Frequency](../comparatives.md#frequency-scale): `hral` | `zuzozen zolazun zel hral vowurel.` | *Uzozen walks more often than Olazun.* | I |
+| [Time, later](../comparatives.md#time-scale): `bral` | `zuzozen zolazun zel bral vovurel.` | *Uzozen arrives later than Olazun.* | I |
+| [Time, earlier](../comparatives.md#time-scale) | `zuzozen zolazun zuel bral vovurel.` | *Uzozen arrives earlier than Olazun.* | I |
+| [The more …, the more …](../comparatives.md#covarying) | `zuzozen hral vowurel xoel zolazun hral vezuvol.` | *The more Uzozen walks, the more Olazun sleeps.* | I |
+| [The more …, the less …](../comparatives.md#covarying) | `zuzozen hral vowurel xuel zolazun hral vezuvol.` | *The more Uzozen walks, the less Olazun sleeps.* | I |
 | [Twice as](../comparatives.md#factor): factor after the adjective | `zuzozen zolazun zoel gelazom hradul.` | *Uzozen is twice as big as Olazun.* | I |
 | [Half as](../comparatives.md#factor): inverse `hrudul` | `zolazun zuzozen zoel gelazom hrudul.` | *Olazun is half as big as Uzozen.* | I |
 
@@ -260,44 +260,44 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Later than planned](../comparatives.md#bars) | `zuzozen thamam zel bral vevurel.` | *Uzozen arrives later than planned.* | I |
-| [Stance after the fence](../comparatives.md#bars) | `zuzozen zel bral vevurel thamam.` | *I plan for Uzozen to arrive last.* | I |
-| [More than planned, on an object](../comparatives.md#bars) | `zuzozen dozolx thamam del gral vagedal.` | *Uzozen eats more strawberries than planned.* | I |
-| [Often, on a recipient](../comparatives.md#bars) | `zuzozen vezuyel bolazun thamam bel hral.` | *Uzozen tells Olazun more often than planned.* | I |
-| [Than usual](../comparatives.md#stance-bars) | `zuzozen thobam zel gozumol.` | *Uzozen is sleepier than usual.* | A |
-| [Than I remember](../comparatives.md#stance-bars) | `zuzozen thevom zel gelazom.` | *Uzozen is bigger than I remember.* | A |
-| [Than advertised](../comparatives.md#stance-bars) | `zugul thewam zuel gagebom.` | *The book is less clear than advertised.* | A |
-| [Than I expected](../comparatives.md#stance-bars) | `zuzozen thahom zel gozumol.` | *Uzozen is sleepier than I expected.* | A |
-| [Than they used to be](../comparatives.md#stance-bars) | `zuzozen henom zel gozumol.` | *Uzozen is sleepier than they used to be.* | A |
-| [As … as possible](../comparatives.md#stance-bars) | `zolazun huboxal zoel hodurem vewurel.` | *Olazun walks as hastily as possible.* | A |
-| [Up to code](../comparatives.md#stance-bars) | `zahehal thumel zoel gobobom.` | *The house is as strong as the rules require.* | A |
-| [More than allowed](../comparatives.md#stance-bars) | `zududal thegol zel gral.` | *There is more tea than the rules allow.* | A |
-| [Than hoped](../comparatives.md#stance-bars) | `zugul thoguyem zel gagebom.` | *The book is clearer than I hoped.* | A |
-| [Than feared](../comparatives.md#stance-bars) | `zugul thowemum zuel gagebom.` | *The book is even less clear than I feared.* | A |
+| [Later than planned](../comparatives.md#bars) | `zuzozen thagem zel bral vovurel.` | *Uzozen arrives later than planned.* | I |
+| [Stance after the fence](../comparatives.md#bars) | `zuzozen zel bral vovurel thagem.` | *I plan for Uzozen to arrive last.* | I |
+| [More than planned, on an object](../comparatives.md#bars) | `zuzozen dodolx thagem del gral vagedal.` | *Uzozen eats more strawberries than planned.* | I |
+| [Often, on a recipient](../comparatives.md#bars) | `zuzozen vezuyel bolazun thagem bel hral.` | *Uzozen tells Olazun more often than planned.* | I |
+| [Than usual](../comparatives.md#stance-bars) | `zuzozen thubem zel guzemol.` | *Uzozen is sleepier than usual.* | A |
+| [Than I remember](../comparatives.md#stance-bars) | `zuzozen thevum zel gelazom.` | *Uzozen is bigger than I remember.* | A |
+| [Than advertised](../comparatives.md#stance-bars) | `zegal thebam zuel gagebom.` | *The book is less clear than advertised.* | A |
+| [Than I expected](../comparatives.md#stance-bars) | `zuzozen thabom zel guzemol.` | *Uzozen is sleepier than I expected.* | A |
+| [Than they used to be](../comparatives.md#stance-bars) | `zuzozen helam zel guzemol.` | *Uzozen is sleepier than they used to be.* | A |
+| [As … as possible](../comparatives.md#stance-bars) | `zolazun hodaxal zoel hedurem vowurel.` | *Olazun walks as hastily as possible.* | A |
+| [Up to code](../comparatives.md#stance-bars) | `zahehal thugal zoel gobobom.` | *The house is as strong as the rules require.* | A |
+| [More than allowed](../comparatives.md#stance-bars) | `zududal tholel zel gral.` | *There is more tea than the rules allow.* | A |
+| [Than hoped](../comparatives.md#stance-bars) | `zegal thoguyem zel gagebom.` | *The book is clearer than I hoped.* | A |
+| [Than feared](../comparatives.md#stance-bars) | `zegal thewemum zuel gagebom.` | *The book is even less clear than I feared.* | A |
 
 ### Every bar {#every-bar}
 
 <!-- cheat-sheet: roles-comparing -->
 | Bar | Ranks against | English | Stage |
 |-----|---------------|---------|-------|
-| [met sake `thegatham`, `thoyutham`, …](../comparatives.md#stance-bars) | what that sake needs | *enough* / *too much* / *not enough* | A |
-| [LIVE `thodom`](../comparatives.md#stance-bars) | how it looks | *than it looks* | A |
-| [MEMORY `thevom`](../comparatives.md#stance-bars) | how you remember it | *than I remember* / *than last time* | A |
-| [PATTERN `thobam`](../comparatives.md#stance-bars) | the trail of cases | *than usual* / *normal* | A |
-| [CLUES `thunem`](../comparatives.md#stance-bars) | what was worked out | *than calculated* / *than it should be* | A |
-| [REPORTED `thewam`](../comparatives.md#stance-bars) | what was said or written | *than advertised* / *than they said* | A |
-| [INTUITION `thahom`](../comparatives.md#stance-bars) | your gut expectation | *than I expected* | A |
-| [FORMER `henom`](../comparatives.md#stance-bars) | how it used to be | *than it used to be* / *increasingly* | A |
-| [NOTIONAL `thavom`](../comparatives.md#stance-bars) | the imagined case | *than imagined* / *than in theory* | A |
-| [PLAN `thamam`](../comparatives.md#stance-bars) | the plan or the schedule | *than planned* / *than scheduled* | A |
-| [WANT `thohul` / `thohum` / `thohur`](../comparatives.md#stance-bars) | the level wanted | *than wanted* / *than I wanted* | A |
-| [ABIL `huboxal`](../comparatives.md#stance-bars) | what can be done | *as … as possible* | A |
-| [REQUIRE `thumel` / `thumem` / `thumer`](../comparatives.md#stance-bars) | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* | A |
-| [PERMIT `thegol` / `thegom` / `thegor`](../comparatives.md#stance-bars) | the rule, the grant, or what is tolerated | *over the limit* / *than they allow* | A |
-| [CONSENT `huxegom`](../comparatives.md#stance-bars) | the agreed terms | *more than agreed* | A |
-| [speaker attitude `thoguyem`, `thowemum`](../comparatives.md#stance-bars) | the case you hoped for or feared | *than hoped* / *than feared* | A |
+| [met sake `thudatham`, `thobatham`, …](../comparatives.md#stance-bars) | what that sake needs | *enough* / *too much* / *not enough* | A |
+| [LIVE `thugom`](../comparatives.md#stance-bars) | how it looks | *than it looks* | A |
+| [MEMORY `thevum`](../comparatives.md#stance-bars) | how you remember it | *than I remember* / *than last time* | A |
+| [PATTERN `thubem`](../comparatives.md#stance-bars) | the trail of cases | *than usual* / *normal* | A |
+| [CLUES `theyem`](../comparatives.md#stance-bars) | what was worked out | *than calculated* / *than it should be* | A |
+| [REPORTED `thebam`](../comparatives.md#stance-bars) | what was said or written | *than advertised* / *than they said* | A |
+| [INTUITION `thabom`](../comparatives.md#stance-bars) | your gut expectation | *than I expected* | A |
+| [FORMER `helam`](../comparatives.md#stance-bars) | how it used to be | *than it used to be* / *increasingly* | A |
+| [NOTIONAL `theyum`](../comparatives.md#stance-bars) | the imagined case | *than imagined* / *than in theory* | A |
+| [PLAN `thagem`](../comparatives.md#stance-bars) | the plan or the schedule | *than planned* / *than scheduled* | A |
+| [WANT `thalel` / `thalem` / `thaler`](../comparatives.md#stance-bars) | the level wanted | *than wanted* / *than I wanted* | A |
+| [ABIL `hodaxal`](../comparatives.md#stance-bars) | what can be done | *as … as possible* | A |
+| [REQUIRE `thugal` / `thugam` / `thugar`](../comparatives.md#stance-bars) | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* | A |
+| [PERMIT `tholel` / `tholem` / `tholer`](../comparatives.md#stance-bars) | the rule, the grant, or what is tolerated | *over the limit* / *than they allow* | A |
+| [CONSENT `huxolem`](../comparatives.md#stance-bars) | the agreed terms | *more than agreed* | A |
+| [speaker attitude `thoguyem`, `thewemum`](../comparatives.md#stance-bars) | the case you hoped for or feared | *than hoped* / *than feared* | A |
 
-The bar's ending keeps its own job: on a channel it is evidence strength (`thobal`, `thobar`). The bar's `/b/` is the source (REPORTED), the holder (WANT, REQUIRE, PERMIT, CONSENT), or whose cases set the pattern (PATTERN). Only stances that set a value are bars: a pole, MAY, MIRATIVE, DECISION, and ATTEMPT are not.
+The bar's ending keeps its own job: on a channel it is evidence strength (`thubel`, `thuber`). The bar's `/b/` is the source (REPORTED), the holder (WANT, REQUIRE, PERMIT, CONSENT), or whose cases set the pattern (PATTERN). Only stances that set a value are bars: a pole, MAY, MIRATIVE, DECISION, and ATTEMPT are not.
 
 ### Vague amounts {#vague}
 
@@ -306,19 +306,19 @@ English *many* and *often* rank against an unstated baseline. Agebon names the b
 <!-- cheat-sheet: roles-comparing -->
 | English | Bar and rank | Stage |
 |---------|--------------|-------|
-| [*many* / *few*](../comparatives.md#vague-amounts) | PATTERN **`thobam`**, `zel` / `zuel` with `gral` | A |
-| [*often* / *rarely*](../comparatives.md#vague-amounts) | PATTERN **`thobam`**, `zel` / `zuel` with `hral` | A |
-| [late / early](../comparatives.md#vague-amounts) | PATTERN **`thobam`**, `zel` / `zuel` with `bral` | A |
-| [*than usual*](../comparatives.md#vague-amounts) (the same person or thing) | PATTERN **`thobam`** with no `/b/` | A |
-| [*too much* / *enough* / *not enough*](../comparatives.md#vague-amounts) | a met sake bar (`thegatham`), `zel` / `zoel` / `zuel` | A |
-| [too late / too soon](../comparatives.md#vague-amounts) | a met sake bar (`thegatham`), `zel` / `zuel` with `bral` | A |
-| [*as … as possible*](../comparatives.md#vague-amounts) | ABIL **`huboxal`**, `zoel` | A |
-| [*more and more* / *increasingly*](../comparatives.md#vague-amounts) | FORMER **`henom`**, `zel` | A |
+| [*many* / *few*](../comparatives.md#vague-amounts) | PATTERN **`thubem`**, `zel` / `zuel` with `gral` | A |
+| [*often* / *rarely*](../comparatives.md#vague-amounts) | PATTERN **`thubem`**, `zel` / `zuel` with `hral` | A |
+| [late / early](../comparatives.md#vague-amounts) | PATTERN **`thubem`**, `zel` / `zuel` with `bral` | A |
+| [*than usual*](../comparatives.md#vague-amounts) (the same person or thing) | PATTERN **`thubem`** with no `/b/` | A |
+| [*too much* / *enough* / *not enough*](../comparatives.md#vague-amounts) | a met sake bar (`thudatham`), `zel` / `zoel` / `zuel` | A |
+| [too late / too soon](../comparatives.md#vague-amounts) | a met sake bar (`thudatham`), `zel` / `zuel` with `bral` | A |
+| [*as … as possible*](../comparatives.md#vague-amounts) | ABIL **`hodaxal`**, `zoel` | A |
+| [*more and more* / *increasingly*](../comparatives.md#vague-amounts) | FORMER **`helam`**, `zel` | A |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Many cats](../comparatives.md#vague-amounts) | `zagozolx thobam zel gral.` | *There are many cats.* | A |
-| [Often](../comparatives.md#vague-amounts) | `zuzozen thobam zel hral vewurel.` | *Uzozen often walks.* | A |
+| [Many cats](../comparatives.md#vague-amounts) | `zagozolx thubem zel gral.` | *There are many cats.* | A |
+| [Often](../comparatives.md#vague-amounts) | `zuzozen thubem zel hral vowurel.` | *Uzozen often walks.* | A |
 
 ## Don't mix up {#dont-mix-up}
 
@@ -327,11 +327,11 @@ English *many* and *often* rank against an unstated baseline. Agebon names the b
 | `zuzozen zolazun zel gamahum` *more than* ([a ranking](../comparatives.md#comparatives)) | | `zuzozen zolazun zal gamahum` *both are* ([an *and*-list](../comparatives.md#equatives)) |
 | `zoel` *as … as* ([a tie](../comparatives.md#equatives)) | | `zuel` *not as … as* ([below](../comparatives.md#comparative-arity)) |
 | `zel gamahum` *no most* ([standalone](../comparatives.md#comparative-arity)) | | `zer gamahum` *whatever ranks highest* ([someone is on top](../comparatives.md#comparative-arity)) |
-| `zolazun zuzozen zel hahuvem vewurel` *more intensely than* ([ranks the manner](../comparatives.md#manner-scale)) | | `gahuvem` *more intense* ([a quality of the people](../comparatives.md#manner-scale)) |
-| `zuzozen thamam zel bral vevurel` *later than planned* ([a bar before the join](../comparatives.md#bars)) | | `zuzozen zel bral vevurel thamam` *I plan for them to be last* ([a stance after](../comparatives.md#bars)) |
+| `zolazun zuzozen zel hahuvem vowurel` *more intensely than* ([ranks the manner](../comparatives.md#manner-scale)) | | `gahuvem` *more intense* ([a quality of the people](../comparatives.md#manner-scale)) |
+| `zuzozen thagem zel bral vovurel` *later than planned* ([a bar before the join](../comparatives.md#bars)) | | `zuzozen zel bral vovurel thagem` *I plan for them to be last* ([a stance after](../comparatives.md#bars)) |
 | `zaxuduyel` *someone who teaches* ([any one who does it](../roles.md#role-compounds)) | | `zaxuduyethel` *a teacher* ([the usual role](../roles.md#usual-role)) |
 | `zaxuduyer` *the one teaching* ([this instance](../roles.md#role-compounds)) | | `gaxuduyel` *is one who teaches* ([a label](../roles.md#saying-someone-is-a-teacher)) |
 | `daexarayel` *a writing tool* ([a compound](../roles.md#instrument)) | | `ael` *using* ([a hook on the clause](../hooks.md#extra-noun)) |
 | `gowuhel` *west* ([compass](../roles.md#endings-and-resume)) | | `gowuhethuzozen` *Uzozen's left* ([a face](../roles.md#endings-and-resume)) |
-| `gowuhethuzozen badalel` *left of the tree, from Uzozen's view* ([a facing person](../roles.md#viewpoint-vs-landmark)) | | `gowuhethol bahehal` *on the house's left* ([the landmark's own front](../roles.md#landmark-facing)) |
+| `gowuhethuzozen bedalel` *left of the tree, from Uzozen's view* ([a facing person](../roles.md#viewpoint-vs-landmark)) | | `gowuhethol bahehal` *on the house's left* ([the landmark's own front](../roles.md#landmark-facing)) |
 | `zobahohal` *bedroom* ([a dictionary word](../compounds.md#lexical-compounds)) | | `zubedaxuyudal` *peanut butter* ([glued with `x`](../compounds.md#compound-vs-separate)) |

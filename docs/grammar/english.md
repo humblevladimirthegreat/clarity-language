@@ -24,16 +24,16 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | deadline (*by 15:30*, *by the storm*) | **`hevahum`** + `/b/` (or **`hevahum barl`** + sentence) | [By a deadline](dependents.md#by-deadline) |
 | deadline a day away (*by tomorrow*) | **`hevahum`** + a signed count in `/b/` | [Count from now](knowing.md#dated-channel) |
 | manner (*by walking hastily*) | ordinary adverb `/h/`, no `/b/` | [Adverbs](clause.md#adverbs-h) |
-| origin (*Olazun from the city*) | **`hagum` / `gagum`** + `/b/` | [Of relations](relations.md#of-relations) |
+| origin (*Olazun from the city*) | **`haham` / `gaham`** + `/b/` | [Of relations](relations.md#of-relations) |
 
 ### *for*
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
 | recipient / addressee (*tells Olazun*) | unhosted `/b/` | [Extra nouns](clause.md#extra-nouns) |
-| swap (*a book for a hammer*) | **`hehem`** + `/b/` | [Exchange](relations.md#exchange) |
+| swap (*a book for a hammer*) | **`heham`** + `/b/` | [Exchange](relations.md#exchange) |
 | intended get (*works for a money-bag*) | hook **`el`** + `/b/` | [Hooks](hooks.md#extra-noun) |
-| intended outcome (*practices for a race*) | **`hogom`** + `/b/` | [So that](dependents.md#so-that) |
+| intended outcome (*practices for a race*) | **`hovam`** + `/b/` | [So that](dependents.md#so-that) |
 | sake as reason (*I walk to feel connected*) | sake **`tho`** on `/th/` | [Motive](sakes.md#sake-preference) |
 | noun’s purpose (*my gift for relatedness*) | sake **`tho`** on `/ɡ/` | [Motive](sakes.md#sake-preference) |
 | someone's sake (*for Olazun's sake*, *good for Olazun*) | sake word + `/b/` | [Whose stake](sakes.md#whose-stake) |
@@ -50,22 +50,22 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | heading for, not there yet (*on the way to the train*) | hook **`oel`** (*toward*) + `/b/` | [Hooks](hooks.md#extra-noun-intermediate) |
 | a stretch of time (*from the storm to the bell*) | one *from … to* unit: **`ul`** + start, **`oel`** + end | [Time](numbers-applied.md#time) |
 | end of a number range (*from 3 to 5*) | **`al`** between the two numbers | [Ranges](numbers-applied.md#ranges) |
-| end of a range on a line (*Uzozen to Uhelan in the queue*) | **`oel`** between two words in one role | [Ranges](hooks.md#ranges) |
-| purpose (*walks to sit*, *in order to sit*) | **`hogom barl`** + the sentence, naming who sits | [So that](dependents.md#so-that) |
+| end of a range on a line (*Uzozen to Ahelan in the queue*) | **`oel`** between two words in one role | [Ranges](hooks.md#ranges) |
+| purpose (*walks to sit*, *in order to sit*) | **`hovam barl`** + the sentence, naming who sits | [So that](dependents.md#so-that) |
 
 ### *'s* / *of* {#of}
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
 | in B's use (*Uzozen's dog*, *my house*, *my seat*), B's turn or occasion (*Uzozen's birthday*) | hook **`em`** + `/b/` | [Whose](hooks.md#genitive) |
-| care of a person (*Uzozen's patient*) | **`gabolom`** + `/b/` | [Social relations](relations.md#social-relations) |
+| care of a person (*Uzozen's patient*) | **`gobolom`** + `/b/` | [Social relations](relations.md#social-relations) |
 | legal ownership (*the dog Uzozen owns*) | **`gagugum`** + `/b/` | [Of relations](relations.md#of-relations) |
 | social tie (*Uzozen's friend*) | tie root on `/ɡ/` **-m** + `/b/` | [Social relations](relations.md#social-relations) |
-| part / contents / material (*a hand of Olazun*, *a teapot of tea*) | **`gobom`** / **`gahem`** / **`guwum`** + `/b/` | [Of relations](relations.md#of-relations) |
-| origin (*Olazun of the city*, *the sound of the drums*) | **`gagum`** + `/b/` | [Of relations](relations.md#of-relations) |
+| part / contents / material (*a hand of Olazun*, *a teapot of tea*) | **`gobem`** / **`gadam`** / **`gulem`** + `/b/` | [Of relations](relations.md#of-relations) |
+| origin (*Olazun of the city*, *the sound of the drums*) | **`gaham`** + `/b/` | [Of relations](relations.md#of-relations) |
 | someone's act (*Uzozen's walk*, *the monkey's tricks*) | the act as a sentence, then its verb root in **-r** | [Someone's act](say-people-places.md#someones-act) |
 | a family's (*the Alowen family's house*) | hook **`em`** + the family with its name: `em bavayal galowen` | [Whose](hooks.md#genitive), [multipart names](word-endings.md#multipart-names) |
-| *personal* / *private* (*a personal matter*) | hook **`em`** + the owner: `em bamun` | [Whose](hooks.md#genitive) |
+| *personal* / *private* (*a personal matter*) | hook **`em`** + the owner: `em buwon` | [Whose](hooks.md#genitive) |
 | *my* belonging + sake (*my tent serves the physical sake*) | sake **`tha` / `thu`** on `/ɡ/` | [Sakes](sakes.md#personal-possession) |
 
 ### *about*
@@ -86,18 +86,18 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 |--------------|------------|-------|
 | kind / role (*Uzozen as a dog*) | classification `/ɡ/` | [Kind / role](predication.md#classification) |
 | same one (*Olazun as Uzozen*) | **`SAME`** + `/b/` | [Identity](predication.md#identity) |
-| same time (*as Olazun walks*) | **`huwem barl`** | [Dependent clauses](dependents.md#dependent-clauses) |
-| reason / since (*as Olazun walks*) | **`thavem barl`** | [Because](causation.md#because) |
-| grounds (*as the sky is gray, it will rain*) | **`thunem barl`** / **`thobam barl`** | [Evidence clause](knowing.md#evidence-clause) |
+| same time (*as Olazun walks*) | **`herem barl`** | [Dependent clauses](dependents.md#dependent-clauses) |
+| reason / since (*as Olazun walks*) | **`thahum barl`** | [Because](causation.md#because) |
+| grounds (*as the sky is gray, it will rain*) | **`theyem barl`** / **`thubem barl`** | [Evidence clause](knowing.md#evidence-clause) |
 | equal degree (*as sleepy as*) | equative **`oe`** | [Equatives](comparatives.md#equatives) |
 | falls short (*not as sleepy as*) | reverse rank **`ue`** | [Reverse rank](comparatives.md#intermediate) |
-| most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`huboxal`** + tie **`oe`** | [Every bar](comparatives.md#stance-bars) |
+| most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`hodaxal`** + tie **`oe`** | [Every bar](comparatives.md#stance-bars) |
 | frame one sentence (*as for Uzozen*) | **`hahugem`** + `/b/` | [As-for](say-people-places.md#as-for) |
-| resemblance (*walks as / like a duck*) | **`humum`** + `/b/` | [Simile](relations.md#similative) |
-| how close (*exactly like*, *a bit like*) | **`humul`** for an exact match (`humul budozal`), or `/w/` before **`humum`**: `wubugom humum budozal` (*precisely*), `wamezom humum budozal` (*a bit*) | [Exactly like](relations.md#exactly-like), [simile](relations.md#similative), [degree words](clause.md#degree-w) |
-| resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`humum barl`** + the event | [Simile](relations.md#similative) |
+| resemblance (*walks as / like a duck*) | **`hewom`** + `/b/` | [Simile](relations.md#similative) |
+| how close (*exactly like*, *a bit like*) | **`hewol`** for an exact match (`hewol budozal`), or `/w/` before **`hewom`**: `wubugom hewom budozal` (*precisely*), `wamezom hewom budozal` (*a bit*) | [Exactly like](relations.md#exactly-like), [simile](relations.md#similative), [degree words](clause.md#degree-w) |
+| resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`hewom barl`** + the event | [Simile](relations.md#similative) |
 | pretense (*as if they walk*) | **NOTIONAL** | [Notional](knowing.md#notional) |
-| dated books (*as of Friday*) | **`huhum` / `huram`** + `/b/` | [*As-of*](relations.md#as-of) |
+| dated books (*as of Friday*) | **`hogam` / `hugem`** + `/b/` | [*As-of*](relations.md#as-of) |
 
 ### *since*
 
@@ -105,7 +105,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 |--------------|------------|-------|
 | from a time on (*has sat since the storm*) | hook **`ul`** (*from*) + the time in `/b/` | [Since](hooks.md#since) |
 | from an event on (*since Olazun fell asleep*) | **`ul barl`** + the sentence | [Since](hooks.md#since) |
-| reason (*since Olazun walks*) | **`thavem barl`** | [Because](causation.md#because) |
+| reason (*since Olazun walks*) | **`thahum barl`** | [Because](causation.md#because) |
 
 ### *against*
 
@@ -144,12 +144,12 @@ One English word, one row: the form that says it and the section that teaches it
 | *off* (switched off, disconnected) | `govugul` (*disconnection*, as an adjective) | [Adjectives](clause.md#adjectives-ɡ) |
 | *outside* / *external* / *outdoors* (*sits outside the house*) | hook **`al`** + the landmark + the join **`bul`** (*in, not the house*): `al bahehal bul` | [Hooks](hooks.md#extra-noun), [negation](joins.md#negation-u) |
 | *throughout* / *all over* (*walks throughout the house*) | **`ol bual`** *everywhere*, then the landmark's hook: `ol bual al bahehal` | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites) |
-| *abroad* (*in another country*) | **`ol bagul bur`** (the kind *country*, then *some other one*) | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites) |
-| *overseas* (*across the water*) | **`ebum`** *across* + the water: `hebum behalal` | [Locative relations](relations.md#locative-relations) |
-| *bottom* (the low part of a thing) | `zaduhel gobom bahehal` (a down part of the house) | [Of relations](relations.md#of-relations) |
-| *parallel* (*parallel to Olazun*) | the direction, then *like*: `gamem gumum bolazun` | [Simile](relations.md#similative) |
+| *abroad* (*in another country*) | **`ol bahal bur`** (the kind *country*, then *some other one*) | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites) |
+| *overseas* (*across the water*) | **`ohem`** *across* + the water: `hohem bohalal` | [Locative relations](relations.md#locative-relations) |
+| *bottom* (the low part of a thing) | `zaduhel gobem bahehal` (a down part of the house) | [Of relations](relations.md#of-relations) |
+| *parallel* (*parallel to Olazun*) | the direction, then *like*: `gurem gewom bolazun` | [Simile](relations.md#similative) |
 | *lean* / *tilt* | `vaduhel hrubul` (*almost falls*) | [Already, still, not yet](knowing.md#phasal) |
-| *corner* / *around the corner* | `zadugul` (the corner); `ol badugul` *at the corner*; `hugem badugul` *around the corner* | [Locative relations](relations.md#locative-relations) |
+| *corner* / *around the corner* | `zadugul` (the corner); `ol badugul` *at the corner*; `hevam badugul` *around the corner* | [Locative relations](relations.md#locative-relations) |
 | *beyond* / *farther than* | rank on distance: `zahehal zel gazavem` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
 | *versus* / *against* (*Uzozen versus Olazun*) | hook **`uel`** + `/b/` | [Hooks](hooks.md#extra-noun) |
 | *somewhere* / *nowhere* / *everywhere* / *elsewhere* | **`ol bar`** / **`ol bal`** / **`ol bual`** / **`ol bur`** | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites) |
@@ -162,7 +162,7 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
 | *including* (*the family, including Uzozen*) | hook **`al`** (**`am`**: and maybe more) between the two | [Including](hooks.md#including) |
-| *even* (*Olazun walks, and even Uzozen does*) | surprise **`wezum`** before **`al`**: `zolazun wezum al zuzozen vewurel` | [Detail on the hook](hooks.md#hook-w) |
+| *even* (*Olazun walks, and even Uzozen does*) | surprise **`wemom`** before **`al`**: `zolazun wemom al zuzozen vowurel` | [Detail on the hook](hooks.md#hook-w) |
 | *except* / *excluding* / *other than* (*the family except Uzozen*) | hook **`ul`** (**`um`**: and maybe others) between the two | [Except](hooks.md#except) |
 | *instead of* / *rather than* (*coffee instead of tea*) | hook **`ol`**, with what you expected first: `dududal ol dugudal` | [Instead](hooks.md#instead) |
 | *or rather* (*tired, or rather, sleepy*) | hook **`el`** between the two wordings | [Rather](hooks.md#rather) |
@@ -173,25 +173,25 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 |--------------|------------|-------|
 | *come* (*is coming to you*) | motion verb `vavobel` + hook **`oel`** + `/b/` for the person it heads to | [Here and there](hooks.md#deixis) |
 | *bring* / *take* (*brings me the package*) | `velobal` (*carry*) + object + **`oel`** (toward) or **`ul`** (away from) | [Here and there](hooks.md#deixis) |
-| *arrive* / *reach* (*has arrived at the house*) | **`hoham`** (*already*) + `vavobel` + **`oel`** + `/b/` | [Already, still, not yet](knowing.md#phasal) |
-| *approach* / *head for* | `vavobel` + **`oel`** + `/b/` (no **`hoham`**: still on the way) | [Locative relations](relations.md#locative-relations) |
+| *arrive* / *reach* (*has arrived at the house*) | **`havom`** (*already*) + `vavobel` + **`oel`** + `/b/` | [Already, still, not yet](knowing.md#phasal) |
+| *approach* / *head for* | `vavobel` + **`oel`** + `/b/` (no **`havom`**: still on the way) | [Locative relations](relations.md#locative-relations) |
 | *follow* (*walks behind Olazun*) | manner direction **`hazuhethol`** + `/b/` for whoever leads | [Landmark's own front](roles.md#landmark-facing) |
 
 ### Matched lists and last resorts {#matched-lists}
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
-| *X and Y are A and B, respectively* | the subject list, the adjective list, then **`wazem`** before the second join: `zuzozen zolazun zal gelazom gamezom wazem gal` | [Respectively](joins.md#respectively) |
-| *X and Y walk and run, respectively* | the same shape on verbs: `zuzozen zolazun zal vewurel varuvel wazem val` | [Respectively](joins.md#respectively) |
+| *X and Y are A and B, respectively* | the subject list, the adjective list, then **`wubam`** before the second join: `zuzozen zolazun zal gelazom gamezom wubam gal` | [Respectively](joins.md#respectively) |
+| *X and Y walk and run, respectively* | the same shape on verbs: `zuzozen zolazun zal vowurel varuvel wubam val` | [Respectively](joins.md#respectively) |
 | *as a last resort* / *only if nothing else works* | the occasion + **`huel`** (`herulal huel`) | [Ranked occasions](restrictors.md#more-occasions) |
 
 ### *some-* and *any-* words {#some-any}
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
-| *something* / *someone* / *thing* / *stuff* (unnamed) | **`zar`**; with a kind, `zobel zar` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
-| *anything* / *anyone* / *anybody* | **`zor`**; with a kind, `zobel zor` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
-| *somehow* / *in some way* | **`humum bor`** (*like* some unspecified one) | [Simile](relations.md#similative), [unspecified member](joins.md#unspecified-member-r-phrase) |
+| *something* / *someone* / *thing* / *stuff* (unnamed) | **`zar`**; with a kind, `zeyol zar` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
+| *anything* / *anyone* / *anybody* | **`zor`**; with a kind, `zeyol zor` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
+| *somehow* / *in some way* | **`hewom bor`** (*like* some unspecified one) | [Simile](relations.md#similative), [unspecified member](joins.md#unspecified-member-r-phrase) |
 
 ### Adjectives made from a noun (*golden*, *royal*, *solar*) {#noun-adjectives}
 
@@ -199,25 +199,25 @@ English often makes an adjective from a noun by adding an ending (*gold* → *go
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
-| *golden* | `gegulel` (made of gold: `guwum begulel`) | [Adjectives](clause.md#adjectives-ɡ), [of relations](relations.md#of-relations) |
-| *wooden* | `guwul` (made of wood: `guwum buwul`) | [Of relations](relations.md#of-relations) |
-| *royal* | `geyulem` (*royalty*) | [Adjectives](clause.md#adjectives-ɡ) |
+| *golden* | `gugulel` (made of gold: `gulem bugulel`) | [Adjectives](clause.md#adjectives-ɡ), [of relations](relations.md#of-relations) |
+| *wooden* | `gulel` (made of wood: `gulem bulel`) | [Of relations](relations.md#of-relations) |
+| *royal* | `gobulem` (*royalty*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *solar* | `guzalel` (of the sun) | [Adjectives](clause.md#adjectives-ɡ) |
 | *musical* | `gehorem` (*composition*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *biological* | `gahubem` (of life) | [Adjectives](clause.md#adjectives-ɡ) |
 | *institutional* / *political* / *public* (run by the state) | `gagahem` (*institution*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *natural* (of nature) | `gulazum` (*nature*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *efficient* | `guvahamuzubal` (*efficiency*) | [Adjectives](clause.md#adjectives-ɡ) |
-| *financial* | `gamol` (of money) | [Adjectives](clause.md#adjectives-ɡ) |
+| *financial* | `garal` (of money) | [Adjectives](clause.md#adjectives-ɡ) |
 | *physical* (of the body) | `gegobom` (*body*) | [Adjectives](clause.md#adjectives-ɡ) |
 | *agricultural* | `gavuyam` (*cultivation*) | [Adjectives](clause.md#adjectives-ɡ) |
-| *experimental* | `gudum` (*experiment*) | [Adjectives](clause.md#adjectives-ɡ) |
-| *forbidden* (*a forbidden book*) | `gedem` (*forbidden*) | [Adjectives](clause.md#adjectives-ɡ) |
-| *permitted* / *allowed* | `gegom` (*permission*) | [Adjectives](clause.md#adjectives-ɡ) |
-| *structural* | `gobom` (a piece of the structure; add the whole in `/b/`) | [Of relations](relations.md#of-relations) |
-| *native* (*native to the country*) | `gagum` + `/b/` for the place: `zobel gagum bagul` | [Of relations](relations.md#of-relations) |
+| *experimental* | `gowam` (*experiment*) | [Adjectives](clause.md#adjectives-ɡ) |
+| *forbidden* (*a forbidden book*) | `gegum` (*forbidden*) | [Adjectives](clause.md#adjectives-ɡ) |
+| *permitted* / *allowed* | `golem` (*permission*) | [Adjectives](clause.md#adjectives-ɡ) |
+| *structural* | `gobem` (a piece of the structure; add the whole in `/b/`) | [Of relations](relations.md#of-relations) |
+| *native* (*native to the country*) | `gaham` + `/b/` for the place: `zeyol gaham bahal` | [Of relations](relations.md#of-relations) |
 
-> `zuzozen dahehal gegulel vawebol.`
+> `zuzozen dahehal gugulel vawebol.`
 >
 > z-Uzozen | [d-house | g-gold] | v-see
 >
@@ -229,13 +229,13 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
-| *walking* (*a walking dog*, *Uzozen is walking*) | the event root on `/ɡ/`: `dudozol gewurel` | [In progress](predication.md#in-progress) |
+| *walking* (*a walking dog*, *Uzozen is walking*) | the event root on `/ɡ/`: `dudozol gowurel` | [In progress](predication.md#in-progress) |
 | *walking* after a thing root (*a sitting guard*) | a bare role compound: `dagayul gaxuhohol` (*a guard who sits*) | [Role compounds](roles.md#role-compounds) |
 | *someone who teaches*, *whoever teaches* | a bare role compound: `zaxuduyel` | [Role compounds](roles.md#role-compounds) |
 | *a teacher*, *a fighter*, *a dog walker* (a usual role or job) | the role compound plus **`the`**: `zaxuduyethel` | [The usual role](roles.md#usual-role) |
 | *the one teaching* (this event) | the role compound on **-r**: `zaxuduyer` | [This instance](roles.md#this-instance-r) |
 | *often lies*, *usually walks* | a [restrictor](restrictors.md): `huam`, `war` | [Always](restrictors.md#always-hual) |
-| *angry this time*, *lied this once* | **`tha`** on the root: `gunomuthal` | [This episode](predication.md#scope-occasion) |
+| *angry this time*, *lied this once* | **`tha`** on the root: `gunemuthal` | [This episode](predication.md#scope-occasion) |
 | *a stranger to Olazun*, *lying, as far as Olazun is concerned* | **`tho`** plus `/b/`: `golayothom bolazun` | [This pair](predication.md#scope-relative) |
 | *a lying type*, *an anxious type* | **`thu`** on the root: `zuzozen valamuthul` | [Type across scenes](predication.md#scope-type) |
 | *this once, to Olazun* | **`thao`** plus `/b/`: `valamuthaol bolazun` | [Stacked scope](predication.md#scope-stacks) |
@@ -243,7 +243,7 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 | *not as a teacher* | **`thue`**: `gaxuduyethuel` | [Stacked scope](predication.md#scope-stacks) |
 | *using teacher (as a tool)* | **`thae`**: `gaxuduyethael` | [Stacked scope](predication.md#scope-stacks) |
 | *a lying type, except this time* | **`thua`**: `valamuthual` | [Stacked scope](predication.md#scope-stacks) |
-| *angry as a type, except with Olazun* | **`thuo`** plus `/b/`: `gunomuthuol bolazun` | [Stacked scope](predication.md#scope-stacks) |
+| *angry as a type, except with Olazun* | **`thuo`** plus `/b/`: `gunemuthuol bolazun` | [Stacked scope](predication.md#scope-stacks) |
 | *seen*, *the one seen* | the undergoer **`u`**: `zuxawebol`, `zuxawebor` | [The undergoer](roles.md#the-undergoer-u) |
 | *visible* / *invisible* (*can be seen*) | the undergoer with ability: `zudozol guxaweboxal` | [Can be](intention.md#role-ability) |
 | *walked* (past) | no participle: pick how you know | [Tense](say-tense.md#tense-jobs) |
@@ -255,12 +255,12 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 |--------------|------------|-------|
 | *now, about Uzozen*, *speaking of Uzozen* | `/x/` + the noun: **`xuzozen`** | [Topic](pronouns.md#topic) |
 | *now, about Sam* (a foreign name) | <code>x@&lt;Sam&gt;</code> | [Topic](pronouns.md#topic), [spans](spans.md#topic-quotes) |
-| *now, about the word “udozo”* | `glelel x[udozo]` | [Topic](pronouns.md#topic), [mention](spans.md#mention) |
-| *now, about Onuron Olazun* (the work) | `x@[onuron olazun]` | [Topic](pronouns.md#topic), [cite](spans.md#writing) |
+| *now, about the word “udozo”* | `glegel x[udozo]` | [Topic](pronouns.md#topic), [mention](spans.md#mention) |
+| *now, about Enuron Olazun* (the work) | `x@[enuron olazun]` | [Topic](pronouns.md#topic), [cite](spans.md#writing) |
 | *back to Uzozen*, *as I was saying about Uzozen* | `/x/` + whole stem + **-r**: **`xuzozer`** | [Return](pronouns.md#topic-return) |
 | *anyway, Uzozen …* (after a side topic) | **`or xuzozer …`** | [Return](pronouns.md#topic-return), [resume hooks](hooks.md#hook-resume) |
 | *what are we talking about?* | **`yol zar gahugem.`** | [Asking about the topic](pronouns.md#topic-question) |
-| *one*, generic *you*, *people* (in general) | **`oben`** | [Generic pronoun](pronouns.md#generic-pronoun) |
+| *one*, generic *you*, *people* (in general) | **`eyon`** | [Generic pronoun](pronouns.md#generic-pronoun) |
 | *the latter* / *the former* (of two just named in the same role) | role pointer **`zaxar`** (*the latter*) / **`zaxor`** (*the other one*); to keep two apart for longer, tag them when you name them (`zudozol zwal`, then `zwar`) | [Role pointers](pronouns.md#role-pointers), [tag pronouns](pronouns.md#tag-pronouns) |
 | *call it A*, *let A be a dog*, *suppose A tells E* | tag + **-l** after the phrase (**`zudozol zwal`**) or alone for a placeholder (**`zwal`**); then **`zwar`** | [Tag pronouns](pronouns.md#tag-pronouns) |
 
@@ -269,5 +269,5 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
 | *hi* / *hello* / *goodbye* | your own name said with a period: `SELFn.` | [Greeting](word-endings.md#greeting) |
-| full name (*Ohun Alowen*), family-first name, *Mary-Kate* | given name, then the family name on `/ɡ/` + **-n** (`zohun galowen`); a hyphenated name is one **`x`** word | [Multipart names](word-endings.md#multipart-names) |
+| full name (*Alen Alowen*), family-first name, *Mary-Kate* | given name, then the family name on `/ɡ/` + **-n** (`zalen galowen`); a hyphenated name is one **`x`** word | [Multipart names](word-endings.md#multipart-names) |
 | business or product name (*Ford Mustang*, *Coffee-Tea*, *Coffee-Instead-of-Tea*) | maker on `/ɡ/` + **-n**, a compact **`x`** word, or a titled phrase / span when the name has grammar inside | [Multipart names](word-endings.md#multipart-names) |

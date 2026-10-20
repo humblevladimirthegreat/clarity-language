@@ -311,7 +311,7 @@ function rewriteLiteral(literal: SourceLiteral, isTest: boolean, realLexicon: bo
  */
 function retieStaleTokens(value: string, ctx: SourceRetieContext, local: RetieChange[]): string {
   const written = new Set(local.flatMap((change) => change.to.match(/[a-z]+/g) ?? []));
-  // Read with the old lexicon's shapes, so a lateral or a holder seam (`hewezathaxar`, `thunemazawan`) moves too.
+  // Read with the old lexicon's shapes, so a lateral or a holder seam (`hewezathaxar`, `theyemazawan`) moves too.
   const rewrite = resumeRewrite(ctx.map, ctx.tables);
   return value.replace(/(?<![A-Za-z])[a-z]{3,}(?![A-Za-z])/g, (word, offset: number) => {
     // A query term's value (`root=abode`, `raw!=…`) is Agebon even when it spells an English word.

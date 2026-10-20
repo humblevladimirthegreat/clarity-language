@@ -27,9 +27,9 @@ To place an event by a code (*on channel 7*), put the code in `/b/` after a rela
 
 English makes a label plural to name the whole run of labels that start with it: *the ’90s* are the years 90 through 99, and *the 1800s* are 1800 through 1899. Put plural **-x** on the label: `z_90x`. The final zeros stand for any digit, so `_90x` covers 90 to 99. Only a label with digits takes **-x**; a count does not.
 
-> `zuzozen vewurel huwem b_90x.`
+> `zuzozen vowurel herem b_90x.`
 >
-> 🔊 `zuzozen vewurel huwem bronazolx.`
+> 🔊 `zuzozen vowurel herem bronazolx.`
 >
 > z-Uzozen | v-walk | [h-while | b-_90-x]
 >
@@ -39,9 +39,9 @@ English makes a label plural to name the whole run of labels that start with it:
 
 To say when something happens by the clock or the calendar (*at 15:30*, *on 22 July*), write a digit string under `/h/` with no relation word before it. Clock takes marker **`ro`** (spoken **`hro`**, written `h_…`). Date takes calendar-ordinal **`oe`** (spoken **`hroe`**, written `h_#…`). Fields are read by position, so the word already says which number is the hour or the month.
 
-> `h_15,30 zuzozen vewurel.`
+> `h_15,30 zuzozen vowurel.`
 >
-> 🔊 `hrowovathorezol zuzozen vewurel.`
+> 🔊 `hrowovathorezol zuzozen vowurel.`
 >
 > h-_15,30 | z-Uzozen | v-walk
 >
@@ -53,19 +53,19 @@ Clock and date together:
 |-----|-----|
 | **Clock / schedule** | Digit-string **`ro`** as bare `/h/`. Default **24h**. Fields left to right; commas are writing only: hour, minute, optional seconds (`h_15,30`, `h_15,30,00`). Digitless `h_` = *at some (unspecified) clock time*. |
 | **Calendar date** | Digit-string **`_`** with **`oe`** (spoken **`roe`**, written `h_#…`). Fields: **day, month, optional year** (`h_#22,7`, `h_#22,7,2026`; modifier `g_#22,7`). Zero-padding is optional. Write a year as **one digit group** (`2026` is one group). Digitless `h_#` covers an unspecified date. A date may stop after the day (`h_#12`, *on the 12th*); context gives the month. You may also name the relation with a *date* word plus `/b/`, but you do not need to. |
-| **Day of the week** | Ordinal on **`ulere`** *weekday*, counting from Monday: `zulerem grewol` is *Monday*, `zulerem grelel` is *Sunday* (the seventh). |
-| **Month or year alone** | A month is an ordinal on **`umale`** *month*, counting from January, the same way as weekdays: `zumalem grerel` is *March*. A year is a label on **`avuva`** *year*: `zavuvam g_1962` is *1962*. To place an event in one, put it in `/b/` after **`huwem`** *during*: `huwem bumalem grerel` (*in March*), `huwem bavuvam g_1962` (*in 1962*). |
+| **Day of the week** | Ordinal on **`olere`** *weekday*, counting from Monday: `zolerem grewol` is *Monday*, `zolerem grelel` is *Sunday* (the seventh). |
+| **Month or year alone** | A month is an ordinal on **`umale`** *month*, counting from January, the same way as weekdays: `zumalem grerel` is *March*. A year is a label on **`avuva`** *year*: `zavuvam g_1962` is *1962*. To place an event in one, put it in `/b/` after **`herem`** *during*: `herem bumalem grerel` (*in March*), `herem bavuvam g_1962` (*in 1962*). |
 | **When-frame** | Ordinary lexicon `/h/` (*until*, *before*, recency), clock/date above, a signed [offset on the channel](knowing.md#dated-channel) (*three hours ago* / *in three hours*) or on a [time pole](knowing.md#dated-channel) (*until tomorrow*), or a stance word that places the event in time ([LIVE](knowing.md#live-vs-memory) / [MEMORY](knowing.md#live-vs-memory), or a channel plus `b+` for a [forecast](knowing.md#forecast)). [RESIDUE](knowing.md#residue) / [FORMER](knowing.md#former-climate) do **not** place an event in time. There is no past or future ending. An amount of time (*for 3 days*) is a relation word plus a [measure phrase](#measure-phrases). |
 
-> `zuzozen vewurel huwem bumalem grerel.`
+> `zuzozen vowurel herem bumalem grerel.`
 >
 > z-Uzozen | v-walk | [h-while | [b-month | g-3rd]]
 >
 > "Uzozen walks in March."
 
-> `zuzozen vewurel huwem bavuvam g_1962.`
+> `zuzozen vowurel herem bavuvam g_1962.`
 >
-> 🔊 `zuzozen vewurel huwem bavuvam growonagudul.`
+> 🔊 `zuzozen vowurel herem bavuvam growonagudul.`
 >
 > z-Uzozen | v-walk | [h-while | [b-year | g-_1962]]
 >
@@ -75,9 +75,9 @@ Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedu
 
 For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](hooks.md#extra-noun-intermediate)). Right after an `ul` extra noun, `oel` and its `/b/` close the pair: `ul X oel Y` is one unit, *from X to Y*, not a [range](hooks.md#ranges). It works for any two endpoints, not only times.
 
-> `zuzozen ul b_9 oel b_17 vewurel.`
+> `zuzozen ul b_9 oel b_17 vowurel.`
 >
-> 🔊 `zuzozen ul bronal oel browolel vewurel.`
+> 🔊 `zuzozen ul bronal oel browolel vowurel.`
 >
 > z-Uzozen | [from | b-_9 | toward | b-_17] | v-walk
 >
@@ -85,9 +85,9 @@ For *from … to* with clock times, put each time in `/b/` after the hooks **`ul
 
 Like any other word, the unit sits where its scope should be: with [joined verbs](join-across-roles.md#vp-clause-forms), before one verb for that verb alone, or after the join for every verb.
 
-> `zuzozen vewurel varuvel val ul b_9 oel b_17.`
+> `zuzozen vowurel varuvel val ul b_9 oel b_17.`
 >
-> 🔊 `zuzozen vewurel varuvel val ul bronal oel browolel.`
+> 🔊 `zuzozen vowurel varuvel val ul bronal oel browolel.`
 >
 > z-Uzozen | [v-walk | v-run | v-and] | [from | b-_9 | toward | b-_17]
 >
@@ -95,9 +95,9 @@ Like any other word, the unit sits where its scope should be: with [joined verbs
 
 With one verb, the two halves may also sit on either side of it, as two extra nouns:
 
-> `zuzozen ul b_9 vewurel oel b_17.`
+> `zuzozen ul b_9 vowurel oel b_17.`
 >
-> 🔊 `zuzozen ul bronal vewurel oel browolel.`
+> 🔊 `zuzozen ul bronal vowurel oel browolel.`
 >
 > z-Uzozen | [from | b-_9] | v-walk | [toward | b-_17]
 >
@@ -116,13 +116,13 @@ For a decade (*the ’90s*), use a [plural label](#plural-labels).
 
 To say **how much of a unit** (*two meters*, *three hours*), use the unit's noun and put the amount on it as a `/ɡ/` number, the same way a count sits on a noun. Each SI or everyday unit is the [abstract](word-endings.md#abstract-m) sense of a published root, so the unit noun ends in **-m**. Say that word, not a Latin abbreviation (`m`, `kg`, `s`). Once the unit phrase has been mentioned, resume it with **-r**.
 
-> `zuzozen bezerem gradul vewurel.`
+> `zuzozen bezerem gradul vowurel.`
 >
 > z-Uzozen | [b-meter | g-two] | v-walk
 >
 > "Uzozen walks two meters."
 
-For a price (*for five grams*), put the same measure phrase in `/b/` after the [exchange](relations.md#exchange) word **`hehem`**.
+For a price (*for five grams*), put the same measure phrase in `/b/` after the [exchange](relations.md#exchange) word **`heham`**.
 
 The amount hosts nothing, so no `/b/` comes right after it. Put any other extra noun elsewhere in the clause, such as after the verb.
 
@@ -145,22 +145,22 @@ Each unit is a metaphor on a published root. The **Literal on same root** column
 | meter | `ezere` *meter* | `bezerem g+2` | `ezerel` *set-square* | 📐: exact length |
 | gram | `ebero` *gram* | `beberom g+5` | `eberol` *pound* (banknote) | 💷: standard mass |
 | second | `azere` *second* | `bazerem g+3` | `azerel` *stopwatch* | ⏱️: short tick |
-| minute | `omure` *minute* | `bomurem g+5` | `omurel` *three-o'clock* | 🕒: the hand steps one minute at a time |
+| minute | `emure` *minute* | `bemurem g+5` | `emurel` *three-o'clock* | 🕒: the hand steps one minute at a time |
 | liter | `ubuva` *liter* | `bubuvam g+1` | `ubuval` *pool* | 🎱: liquid volume |
 | ampere | `ogava` *ampere* | `bogavam g+2` | `ogaval` *cable-car* | 🚠: current along a line |
-| kelvin | `ozulo` *kelvin* | `bozulom g+300` | `ozulol` *ice* | 🧊: thermodynamic temperature |
+| kelvin | `ezulo` *kelvin* | `bezulom g+300` | `ezulol` *ice* | 🧊: thermodynamic temperature |
 | mole | `omowo` *mole* | `bomowom g+1` | `omowol` *microscope* | 🔬: amount of substance |
-| candela | `ado` *candela* | `badom g+100` | `adol` *lightbulb* | 💡: luminous intensity |
+| candela | `owo` *candela* | `bowom g+100` | `owol` *lightbulb* | 💡: luminous intensity |
 | hour (civil duration) | `agoru` *hour* | `bagorum g+3` | `agorul` *hourglass* | ⏳: civil hour block |
-| day | `azure` *day* | `bazurem g+2` | `azurel` *sunrise* | 🌅: sunrise to sunrise |
-| week | `ugore` *week* | `bugorem g+1` | `ugorel` *calendar* | 📅: one row of the calendar page |
+| day | `uzure` *day* | `buzurem g+2` | `uzurel` *sunrise* | 🌅: sunrise to sunrise |
+| week | `agore` *week* | `bagorem g+1` | `agorel` *calendar* | 📅: one row of the calendar page |
 | month | `umale` *month* | `bumalem g+6` | `umalel` *moon* | 🌙: one lunar cycle |
 | year | `avuva` *year* | `bavuvam g+10` | `avuval` *fireworks* | 🎆: fireworks greet each new year |
 | inch | `ebuvu` *inch* | `bebuvum g+3` | `ebuvul` *pinch* | 🤏: about a finger-pinch |
 | foot | `uvobe` *foot-length* | `buvobem g+6` | `uvobel` *foot* | 🦶: about one foot long |
 | mile | `unoba` *mile* | `bunobam g+2` | `unobal` *boot* | 🥾: a long walk |
 | pound | `ayoba` *pound-mass* | `bayobam g+5` | `ayobal` *shopping-bag* | 🛍️: sold by the pound |
-| heat grade (not kelvin) | `avere` *temperature* | `baverem g+37` | `averel` *thermometer* | 🌡️: how hot or cold |
+| heat grade (not kelvin) | `uvere` *temperature* | `buverem g+37` | `uverel` *thermometer* | 🌡️: how hot or cold |
 
 Words for a quantity itself (*heavy*, *flow*, *time* as a continuum, …) are ordinary roots (`arolom` *heavy*, `gadurem` *duration*, …), not units.
 
@@ -183,7 +183,7 @@ Between two numbers, *3, including 5* has nothing to include into, so **`al`** r
 
 To count a range of things, put the endpoints on the counted noun, the same way one count sits on it. The noun names the line:
 
-> `zudozol grarel al graval vewurel.`
+> `zudozol grarel al graval vowurel.`
 >
 > [z-dog | g-three] | through | g-five | v-walk
 >
@@ -264,7 +264,7 @@ To say how many parts, put the count first and the fraction after it: **`g+N`** 
 
 **`g-N`** alone is a fraction only right after a plain noun. After a [measure](#measure-phrases) unit, a minus number is still a negative amount (`bezerem grudul` *minus 2 meters*). The count makes the fraction plain in any slot, a unit included: a count then a minus is never a negative amount, since a unit takes one amount.
 
-> `zuzozen vewurel bagorum grawol grurel.`
+> `zuzozen vowurel bagorum grawol grurel.`
 >
 > z-Uzozen | v-walk | [b-hour | g-one | g-third-of]
 >
@@ -294,10 +294,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
-| *Uhelan* | `uhelan` |
-| *walk* | `vewurel` |
+| *Ahelan* | `ahelan` |
+| *walk* | `vowurel` |
 | *see* | `vawebol` |
-| *scream* | `vuyomul` |
+| *scream* | `varemul` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
@@ -311,14 +311,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Uzozen | d-_555,123,4567 | v-see
 :::
 
-**2.** *At 15:30 Uzozen sees Uhelan.*
+**2.** *At 15:30 Uzozen sees Ahelan.*
 
 ::: details Show answer
-`h_15,30 zuzozen duhelan vawebol.`
+`h_15,30 zuzozen dahelan vawebol.`
 
-🔊 `hrowovathorezol zuzozen duhelan vawebol.`
+🔊 `hrowovathorezol zuzozen dahelan vawebol.`
 
-h-_15,30 | z-Uzozen | d-Uhelan | v-see
+h-_15,30 | z-Uzozen | d-Ahelan | v-see
 :::
 
 **3.** *25% of the pills.*
@@ -334,7 +334,7 @@ z-pill-x | g-25yo
 **4.** *Uzozen walks two meters.*
 
 ::: details Show answer
-`zuzozen bezerem gradul vewurel.`
+`zuzozen bezerem gradul vowurel.`
 
 z-Uzozen | [b-meter | g-two] | v-walk
 :::
@@ -369,11 +369,11 @@ z-bottle | g-_7
 *Bottle 7.*
 :::
 
-**2.** `h~_23,59 zolazun vuyomul.`
+**2.** `h~_23,59 zolazun varemul.`
 
 ::: details Show answer
 
-🔊 `hrodurethovanam zolazun vuyomul.`
+🔊 `hrodurethovanam zolazun varemul.`
 
 h-_23,59.about | z-Olazun | v-scream
 
@@ -402,11 +402,11 @@ z-ten | outside | z-20
 *Below 10 or above 20.*
 :::
 
-**5.** `h_#1,4 zolazun vewurel.`
+**5.** `h_#1,4 zolazun vowurel.`
 
 ::: details Show answer
 
-🔊 `hroewothomol zolazun vewurel.`
+🔊 `hroewothomol zolazun vowurel.`
 
 h-_1,4 | z-Olazun | v-walk
 
@@ -564,7 +564,7 @@ Generations form a **tree**, like an outline. A cohort is only the members **und
 
 The mantissa is **birth order** within that cohort: **`g#1e0`** is the eldest sibling, **`g#-1e0`** the youngest. To say whose family it is, put the anchor person in `/b/` right after the number. (cue: the number says how far up or down the tree; `/b/` says from whom)
 
-> `zolazun grebazol buzozen vewurel.`
+> `zolazun grebazol buzozen vowurel.`
 >
 > [z-Olazun | [g-#-e0 | b-Uzozen]] | v-walk
 >
@@ -578,17 +578,17 @@ With no `/b/` after a joined subject, each member is a sibling of the others.
 >
 > "Uzozen and Olazun are siblings."
 
-> `zolazun g#1e0 buzozen vewurel.`
+> `zolazun g#1e0 buzozen vowurel.`
 >
-> 🔊 `zolazun grebazoyawol buzozen vewurel.`
+> 🔊 `zolazun grebazoyawol buzozen vowurel.`
 >
 > [z-Olazun | [g-#-1e0 | b-Uzozen]] | v-walk
 >
 > "Olazun, Uzozen's eldest sibling, walks."
 
-> `zahoyel g#2e1 buzozen vewurel.`
+> `zahoyel g#2e1 buzozen vowurel.`
 >
-> 🔊 `zahoyel grebawoyadul buzozen vewurel.`
+> 🔊 `zahoyel grebawoyadul buzozen vowurel.`
 >
 > [z-child | [g-#-2e1 | b-Uzozen]] | v-walk
 >
@@ -596,9 +596,9 @@ With no `/b/` after a joined subject, each member is a sibling of the others.
 
 For a side branch, nest a second anchor: first step to the relative, then from there. *Aunt or uncle* is a sibling of a parent.
 
-> `zolazun grebazol bobel g#1e-1 buzozen vewurel.`
+> `zolazun grebazol beyol g#1e-1 buzozen vowurel.`
 >
-> 🔊 `zolazun grebazol bobel grebuwoyawol buzozen vewurel.`
+> 🔊 `zolazun grebazol beyol grebuwoyawol buzozen vowurel.`
 >
 > [z-Olazun | [g-#-e0 | [b-person | [g-#-1e-1 | b-Uzozen]]]] | v-walk
 >

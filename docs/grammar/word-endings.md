@@ -84,13 +84,13 @@ The word bank lists the roots this checkpoint introduces. **English** is what yo
 | English | Agebon | Cue |
 |---------|--------|-----|
 | *school* | `uzahal` | 🏫: a school teaches, so its abstract is *education* |
-| *book* | `ugul` | 📖: a book holds *knowledge* |
+| *book* | `egal` | 📖: a book holds *knowledge* |
 | *eraser* | `urewul` | 🪌: an eraser rubs out a mistake, so its abstract is *correction* |
-| *bell* | `aboral` | 🔔: a bell rings to warn, so its abstract is *alert* |
+| *bell* | `eboral` | 🔔: a bell rings to warn, so its abstract is *alert* |
 | *magnify* | `umewol` | 🔍: close looking, so its abstract is *scrutiny* |
 | *Uzozen* | `uzozen` | 🦢 *swan*, abstract *grace* |
 | *Olazun* | `olazun` | 🦁 *lion*, abstract *courage* |
-| *Uhelan* | `uhelan` | 🌺 *hibiscus*, abstract *beauty* |
+| *Ahelan* | `ahelan` | 🌺 *hibiscus*, abstract *beauty* |
 | *your name* | `SELFn` | from the name helper above |
 
 #### English → Agebon {#beginner-english-to-agebon}
@@ -106,7 +106,7 @@ school
 **2.** *knowledge*
 
 ::: details Show answer
-`ugum`
+`egam`
 
 knowledge
 :::
@@ -114,7 +114,7 @@ knowledge
 **3.** *alert*
 
 ::: details Show answer
-`aboram`
+`eboram`
 
 alert
 :::
@@ -172,7 +172,7 @@ magnify
 *magnify*
 :::
 
-**4.** `aboral`
+**4.** `eboral`
 
 ::: details Show answer
 
@@ -181,7 +181,7 @@ bell
 *bell*
 :::
 
-**5.** `uhelam`
+**5.** `ahelam`
 
 ::: details Show answer
 
@@ -190,13 +190,13 @@ beauty
 *beauty*
 :::
 
-**6.** `uhelan.`
+**6.** `ahelan.`
 
 ::: details Show answer
 
-Uhelan
+Ahelan
 
-*Hello.* / *Goodbye.* (said by Uhelan)
+*Hello.* / *Goodbye.* (said by Ahelan)
 :::
 
 #### Pick one {#beginner-pick-one}
@@ -245,11 +245,11 @@ Beginner used **-n** for a person’s or place’s name. You can also mark a **t
 
 A brand, a product line, a work, or a yearly event counts as one named thing, even though it has many units, copies, or runnings. To mean one of those, use [**-ln**](#name-instance--ln).
 
-> `zuhelan vezuyon.`
+> `zahelan vezuyon.`
 >
-> z-Uhelan | v-Ezuyon
+> z-Ahelan | v-Ezuyon
 >
-> "Uhelan sings Ezuyon." (that titled song)
+> "Ahelan sings Ezuyon." (that titled song)
 
 The rest of the role map (same **-n**):
 
@@ -257,7 +257,7 @@ The rest of the role map (same **-n**):
 |--------|-----|---------|
 | `/z/` `/d/` `/b/` + **-n** | this named entity | person, place, titled work, brand or product line (*Uzozen*, *Paris*, *the Odyssey*; *book by* **[Rowling]**) |
 | `/v/` + **-n** | this named event, rite, or titled action | *perform* **[Hamlet]**, *run* **[the Boston Marathon]**, *observe* **[Ramadan]** |
-| `/ɡ/` + **-n** | this named style, brand, family, or category | **[Art Deco]** furniture, **[iOS]** app, *Ohun* **[Alowen]** |
+| `/ɡ/` + **-n** | this named style, brand, family, or category | **[Art Deco]** furniture, **[iOS]** app, *Alen* **[Alowen]** |
 | `/w/` + **-n** | named scale, grade, or criterion on the following adjective | *spicy* **[Scoville]**, *large* **[King-size]** |
 | `/h/` + **-n** | named standard, channel, or official frame | *according to* **[GAAP]**, *in* **[Q3]** as the named quarter  |
 | `/y/` vocative + **-n** | address this named person, place, or title; on `/y/`, **-n** always calls | `yolazun`; a kind as a title (`yagayun`); titled group (*Team Alpha*) |
@@ -287,7 +287,7 @@ What counts as one depends on what the name names:
 | `duzozen` | the named thing itself | *Uzozen* (the brand) |
 | `duzozeln` | one thing the name applies to | *an Uzozen* |
 | `duzozelnx` | some things the name applies to ([plurality](plurality.md)) | *some Uzozens* |
-| `zohuln galowen` | the same on a [full name](#multipart-names) | *someone named Ohun Alowen* |
+| `zaleln galowen` | the same on a [full name](#multipart-names) | *someone named Alen Alowen* |
 
 An **-ln** word is a new mention, so a lone `zuzozeln.` is *there is an Uzozen*, and a later **-r** resume (`duzozer`) is that same bed, not the brand. A foreign name in a span uses the fence mark `^@` for the same job ([spans](spans.md#when-required)).
 
@@ -304,7 +304,7 @@ A country root and a tradition root use all four endings, with one job each:
 | **-l** | its flag: *a Japanese flag* | its symbol: *a crucifix* |
 | **-ln** | one thing that bears the name (*a ship named Japan*) | one thing that bears the name |
 
-**-n** names the whole and **-m** says someone or something belongs to it, so a nationality is not a special case. A person, a quality, or a thing from that people (*Japanese food*) takes **-m**; **-n** on `/ɡ/` is a named label instead: a style, a brand, or a [family name](#multipart-names) (*Art Deco*, *iOS*, *Ohun* **[Alowen]**).
+**-n** names the whole and **-m** says someone or something belongs to it, so a nationality is not a special case. A person, a quality, or a thing from that people (*Japanese food*) takes **-m**; **-n** on `/ɡ/` is a named label instead: a style, a brand, or a [family name](#multipart-names) (*Art Deco*, *iOS*, *Alen* **[Alowen]**).
 
 > `zuzozen gazabanam.`
 >
@@ -340,49 +340,49 @@ A one-word name, a hyphenated name with mid-word **`x`**, and each part of a ful
 
 ### Multipart names {#multipart-names}
 
-English writes a given name and a family name as two words (*Ohun Alowen*). Agebon does too. The given name fills the slot with **-n**, and the family name follows it as a `/ɡ/` word with **-n**: like a brand, a family is a named group the person falls under. Given name first is the usual order.
+English writes a given name and a family name as two words (*Alen Alowen*). Agebon does too. The given name fills the slot with **-n**, and the family name follows it as a `/ɡ/` word with **-n**: like a brand, a family is a named group the person falls under. Given name first is the usual order.
 
-> `zohun galowen vewurel.`
+> `zalen galowen vowurel.`
 >
-> [z-Ohun | g-Alowen] | v-walk
+> [z-Alen | g-Alowen] | v-walk
 >
-> "Ohun Alowen walks."
+> "Alen Alowen walks."
 
-The family name describes the given name, so the person is still one noun in one slot. A resume repeats the given name’s stem, so `zohur` points back to Ohun Alowen, and you can drop the family name once the person is known.
+The family name describes the given name, so the person is still one noun in one slot. A resume repeats the given name’s stem, so `zaler` points back to Alen Alowen, and you can drop the family name once the person is known.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Agebon | Use | English |
 |--------|-----|---------|
-| `ohun galowen` | citation of a full name | *Ohun Alowen* |
-| `zohun galowen` | full name in a noun slot | *Ohun Alowen* |
-| `zohuln galowen` | [one of a name](#name-instance--ln) | *someone named Ohun Alowen* |
-| `zohur` | [resume](pronouns.md) | *Ohun* (the same person) |
+| `alen galowen` | citation of a full name | *Alen Alowen* |
+| `zalen galowen` | full name in a noun slot | *Alen Alowen* |
+| `zaleln galowen` | [one of a name](#name-instance--ln) | *someone named Alen Alowen* |
+| `zaler` | [resume](pronouns.md) | *Alen* (the same person) |
 
 Put the family name first, as an [adjective before the noun](clause.md#left-bound-adjectives), only when your culture names people family first. The same family name can describe the family itself (`zavayal galowen` *the Alowen family*), and what the family uses takes the ordinary [*whose*](hooks.md#genitive) hook: `dahehal em bavayal galowen` is *the Alowen family’s house*.
 
-A full name works as a [greeting](#greeting) too: `ohun galowen.` is Ohun Alowen saying hello. A [call](speech-moves.md#vocative) takes the family name the same way (`yohun galowen.` *Ohun Alowen!*). A [conversation-length](compounds.md#conversation-length) bid goes on the given name, never on the family name.
+A full name works as a [greeting](#greeting) too: `alen galowen.` is Alen Alowen saying hello. A [call](speech-moves.md#vocative) takes the family name the same way (`yalen galowen.` *Alen Alowen!*). A [conversation-length](compounds.md#conversation-length) bid goes on the given name, never on the family name.
 
-A family name is an adjective, so a `/b/` right after it would complete it as a [hosted extra noun](clause.md#extra-nouns). Put the person who receives after the verb, as usual: `zohun galowen vezuyel bolazun.` is *Ohun Alowen tells Olazun*.
+A family name is an adjective, so a `/b/` right after it would complete it as a [hosted extra noun](clause.md#extra-nouns). Put the person who receives after the verb, as usual: `zalen galowen vezuyel bolazun.` is *Alen Alowen tells Olazun*.
 
 A **hyphenated name** (*Mary-Kate*, *Coffee-Tea*) is one word: roots join left to right with mid-word **`x`** ([ordinary compound order](compounds.md#ordinary-compound-order)), and **-n** names the whole.
 
-> `zohuxalowen vewurel.`
+> `zalexalowen vowurel.`
 >
-> z-Ohu-x-Alowen | v-walk
+> z-Ale-x-Alowen | v-walk
 >
-> "Ohuxalowen walks."
+> "Alexalowen walks."
 
 | Agebon | Use | English |
 |--------|-----|---------|
-| `zohuxalowen` | hyphenated given name | *Ohuxalowen* |
-| `zohuxalowen galowen` | hyphenated given name and a family name | *Ohuxalowen Alowen* |
-| `zugudaxududan`, `zugudaxududaxuwolan` | shop label from lexicon roots | *Coffee-Tea*; *Coffee-Tea-Water* |
+| `zalexalowen` | hyphenated given name | *Alexalowen* |
+| `zalexalowen galowen` | hyphenated given name and a family name | *Alexalowen Alowen* |
+| `zugudaxududan`, `zugudaxududaxowulan` | shop label from lexicon roots | *Coffee-Tea*; *Coffee-Tea-Water* |
 
 A business or product name uses the same pieces. A compact label is one **`x`** word. A product under a maker’s name takes the maker as its `/ɡ/` name, as a person takes a family name (*a Mustang by Ford*). A name with grammar inside it, such as a verb or *instead of*, is a [titled phrase](#titled-phrases) or a [span](spans.md#when-required), where any role letter can appear.
 
 A nativized loan (a foreign word adapted into an Agebon root, plus an ordinary ending) takes the same four endings as any content word. A **lexical compound** also fills one slot: it is one stem, written without mid-word **`x`** (`zobahohal` *bedroom*).
 
-**Compare with:** `zohun galowen.` alone is a sentence: *Ohun is an Alowen* ([classification](predication.md#classification)). The citation `ohun galowen` has no role letter, so it only names. Two people in one role take a [join](joins.md#right-close) after them (`zohun zalowen zal`).
+**Compare with:** `zalen galowen.` alone is a sentence: *Alen is an Alowen* ([classification](predication.md#classification)). The citation `alen galowen` has no role letter, so it only names. Two people in one role take a [join](joins.md#right-close) after them (`zalen zalowen zal`).
 
 ### Continue (`/x/`): overview
 <a id="continue-x"></a>
@@ -413,7 +413,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | English | Agebon | Cue |
 |---------|--------|-----|
 | *hospital-bed* (ward name) | `ewahaxobahon` | 🏥 *hospital* **x** 🛏️ *bed*: one ward's name |
-| *Temperature* (named standard) | `haveren` | 🌡️ from *thermometer* |
+| *Temperature* (named standard) | `huveren` | 🌡️ from *thermometer* |
 | *Intrusion* (titled procedure) | `vezebun` | 💉 from *syringe* |
 | *Emergency* (titled drill) | `vamavan` | 🚑 from *ambulance* |
 
@@ -423,7 +423,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
-| *Uhelan* | `uhelan` |
+| *Ahelan* | `ahelan` |
 | *sit* | `vuhohol` |
 | *see* | `vawebol` |
 | *write* | `varayel` |
@@ -450,12 +450,12 @@ z-Uzozen | v-sit | h-Ewahan
 z-bed | g-Uzozen
 :::
 
-**3.** *Uhelan observes Sleep.* (the ward's titled rest hour)
+**3.** *Ahelan observes Sleep.* (the ward's titled rest hour)
 
 ::: details Show answer
-`zuhelan vezuvon.`
+`zahelan vezuvon.`
 
-z-Uhelan | v-Ezuvon
+z-Ahelan | v-Ezuvon
 :::
 
 **4.** *Uzozen sees Hospital-Bed.* (the ward's name)
@@ -468,12 +468,12 @@ z-Uzozen | d-Ewaha-x-Obahon | v-see
 **Also correct:** `zuzozen vawebol dewahaxobahon.`
 :::
 
-**5.** *There is a big Uhelan.* (one bed of that brand)
+**5.** *There is a big Ahelan.* (one bed of that brand)
 
 ::: details Show answer
-`zuhelaln gelazom.`
+`zahelaln gelazom.`
 
-z-Uhelan.instance | g-big
+z-Ahelan.instance | g-big
 :::
 
 **6.** *Olazun sees a Japanese flag.*
@@ -486,20 +486,20 @@ z-Olazun | d-japan-flag | v-see
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zolazun varayel haveren.`
+**1.** `zolazun varayel huveren.`
 
 ::: details Show answer
-z-Olazun | v-write | h-Averen
+z-Olazun | v-write | h-Uveren
 
 *Olazun writes according to Temperature.* (the named standard)
 :::
 
-**2.** `zuhelan vezebun.`
+**2.** `zahelan vezebun.`
 
 ::: details Show answer
-z-Uhelan | v-Ezebun
+z-Ahelan | v-Ezebun
 
-*Uhelan performs Intrusion.* (that titled procedure)
+*Ahelan performs Intrusion.* (that titled procedure)
 :::
 
 **3.** `zolazun varuvel hamavan.`
@@ -510,12 +510,12 @@ z-Olazun | v-run | h-Amavan
 *Olazun runs in Emergency.* (the named frame)
 :::
 
-**4.** `zuzozen duhelaln vawebol. zuhelar gelazom.`
+**4.** `zuzozen dahelaln vawebol. zahelar gelazom.`
 
 ::: details Show answer
-z-Uzozen | d-Uhelan.instance | v-see . z-←Uhelan.instance | g-big
+z-Uzozen | d-Ahelan.instance | v-see . z-←Ahelan.instance | g-big
 
-*Uzozen sees an Uhelan. It is big.* (one bed of that brand)
+*Uzozen sees an Ahelan. It is big.* (one bed of that brand)
 :::
 
 **5.** `zewahaxobahon varayel.`
@@ -546,12 +546,12 @@ z-Olazun | d-Uzozen.instance | v-see
 **-ln** is one thing the name applies to; **-n** is the brand itself.
 :::
 
-**2.** *Uhelan performs Emergency.* (the titled drill) `zuhelan vamavan.` or `zuhelan vamaval.`
+**2.** *Ahelan performs Emergency.* (the titled drill) `zahelan vamavan.` or `zahelan vamaval.`
 
 ::: details Show answer
-`zuhelan vamavan.`
+`zahelan vamavan.`
 
-z-Uhelan | v-Amavan
+z-Ahelan | v-Amavan
 
 **-n** on the verb names that titled event; **-l** is the root's everyday sense.
 :::
@@ -570,7 +570,7 @@ A hyphenated name is one word joined with **`x`**; two **-n** words in the same 
 
 ## See also
 
-- [pronouns.md](pronouns.md): resume **-r**; special **`amu`** / **`eho`** / **`aha`** / **`una`**
+- [pronouns.md](pronouns.md): resume **-r**; special **`uwo`** / **`awa`** / **`aya`** / **`umo`**
 - [plurality.md](plurality.md): **-x** after the ending
 - [clause.md](clause.md): role letters; adding a first letter to a citation
 - [spans.md](spans.md#loans): mention / opaque when the **form** or a foreign acronym is the point

@@ -41,7 +41,7 @@ The failure is psychological, not structural. A gap is a thinking trap the reade
 
 `## The forms` leads with the small table, then one sentence on where the drop-in goes in the English sentence, then the endings.
 
-- **Give a default, and an escape.** Say which form to use when the reader cannot tell which fits ("when you are not sure which ending fits, use `thovum`").
+- **Give a default, and an escape.** Say which form to use when the reader cannot tell which fits ("when you are not sure which ending fits, use `thomam`").
 - **Long menus say they are menus.** A locus or channel inventory is followed by *you don't need to memorize it*.
 - **Say when to leave it out.** Every lesson marks at least one place the drop-in is unnecessary, and none of them implies that plain English is a mistake: *none of the three is the "right" one*; *leave the suffix off when the scope doesn't matter*.
 - **Rule out the near miss.** Where the obvious English reading is wrong, deny it in one short sentence (*motion is not strength*).
@@ -64,7 +64,7 @@ About five one-line examples in a single blockquote, two trailing spaces per lin
 
 After the block, one short paragraph unpacks two or three of the examples, not all five, and picks the ones where the ending or the scope does the work.
 
-Practice items give the English sentence in italics, then a parenthesized note saying **what the speaker means**, never which form to write ("(could be; you'll call and check)", not "(use `thovul`)"). A note may name the parts when the word is composed, as in Wants and plans. Answers go in `::: details Show answer`.
+Practice items give the English sentence in italics, then a parenthesized note saying **what the speaker means**, never which form to write ("(could be; you'll call and check)", not "(use `thomal`)"). A note may name the parts when the word is composed, as in Wants and plans. Answers go in `::: details Show answer`.
 
 ## No Agebon sentences, no glosses
 <a id="no-glosses"></a>
@@ -101,10 +101,10 @@ Every italic phrase in a cued lesson's gap must raise one of that lesson's cues 
 **Flows** (`data/claritish-flows.json`): each question's answers name a place on the [cheat sheet](../grammar/claritish/cheat-sheet.md), never a spelling: a row label, a column header (`-l`), a cell by its English (`autonomy`) or by the meaning in the cell beside it (`can never` for `-xu`), or a prose line (the `Sake word:` formula). `{question}` in a reference is filled with the answer. A choice with no `label` takes the sheet's own English; a question's `labelFrom` reads labels that depend on an earlier answer (*tolerated* for allowed, *by custom* for required).
 
 - `commands`: the slash commands that open the flow with no English cue (`/sure`), each with any answers it presets (`"plan": { "kind": "planned" }`). A command puts its drop-in where it was typed: a suffix joins the word before it, a tone mark the word after it.
-- A form with `"oneWord": true` joins its parts with nothing (a feeling: sake word + locus + motion), not a space (`thanathum behon`); `"breakdown": true` shows the word part by part, each part over the answer that chose it, as the cheat sheet's feelings table does. A prose line that lists endings (`Motion ending: **-l** still, …`) is read one entry at a time with `item` (`"item": "{motion}"`).
+- A form with `"oneWord": true` joins its parts with nothing (a feeling: sake word + locus + motion), not a space (`thawothum bawan`); `"breakdown": true` shows the word part by part, each part over the answer that chose it, as the cheat sheet's feelings table does. A prose line that lists endings (`Motion ending: **-l** still, …`) is read one entry at a time with `item` (`"item": "{motion}"`).
 - A choice with `"requires": "command"` is offered only from a command (*can*, which no English cue asks for). A choice with `none` ends in no drop-in: the card shows its line and offers only *Leave it in English*, for a lesson that says when to leave the word off.
 
-**Reading back** needs no data of its own. Hover glosses and near misses (`thovom` → `thovum`) come from the forms the flows produce. English words that come close to a form (*thunder*, *than*) are found at build from the English helper's WordNet index and compromise's lexicon, so they are never flagged and never open autocomplete; a new form brings its own.
+**Reading back** needs no data of its own. Hover glosses and near misses (`thovom` → `thomam`) come from the forms the flows produce. English words that come close to a form (*thunder*, *than*) are found at build from the English helper's WordNet index and compromise's lexicon, so they are never flagged and never open autocomplete; a new form brings its own.
 
 **Card copy:** questions ask what the writer means (*What will you do about the guess?*), with the lesson's default answer first. Use the grammar's terms as the lessons do, and nothing that implies English is a mistake: no *fix*, *error*, or *should*. *Leave it in English* is a normal outcome.
 

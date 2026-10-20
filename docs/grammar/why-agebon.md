@@ -14,9 +14,9 @@ Agebon is not therapy, and its effects are a design intent, not a proven result.
 
 Here is a common ruminating thought in English: *I failed. I'm no good at this, and I never will be.* English lets you say all of that without checking any of it. Here is how the same thought might come out in Agebon:
 
-> `zuguvem thahor gulothum. zamun veverexom.`
+> `zuguvem thabor guwathum. zuwon veverexom.`
 >
-> /zʉ.ɡʉ.ve̞m ðä.ɦo̞ɹ ɡʉ.lo̞.ðʉm. zä.mʉn ve̞.ve̞.ɹe̞.ʒo̞m/
+> /zʉ.ɡʉ.ve̞m ðä.bo̞ɹ ɡʉ.wä.ðʉm. zʉ.wo̞n ve̞.ve̞.ɹe̞.ʒo̞m/
 >
 > z-failure | th-INTUITION.weak | g-competence-unmet-modifiable . z-speaker | v-triumph-unable-modifiable
 >
@@ -24,11 +24,11 @@ Here is a common ruminating thought in English: *I failed. I'm no good at this, 
 
 That is five words, and three of them make you choose something English lets you skip. Each choice is a question about the thought itself, and answering it honestly is what turned *never* into *yet*:
 
-- `thahor` says how you know: a gut sense, and only a faint one. Other words say you saw it, remember it, worked it out from clues, or were told, and other endings say the hunch is strong. Said once, it covers the next sentence too ([evidentiality](knowing.md#evidentiality)).
-- `gulothum` names what the failure costs: competence, one of the [sakes](sakes.md) (things that are good for a person). Its ending says the cost can change with effort or circumstance; other endings say it is lasting, or only for now. Other sakes, such as relatedness or purpose, name a different cost, and swapping the *unmet* vowel for the *met* one names a gain instead. The sake word also makes the failure yours, with no separate word for *my*.
+- `thabor` says how you know: a gut sense, and only a faint one. Other words say you saw it, remember it, worked it out from clues, or were told, and other endings say the hunch is strong. Said once, it covers the next sentence too ([evidentiality](knowing.md#evidentiality)).
+- `guwathum` names what the failure costs: competence, one of the [sakes](sakes.md) (things that are good for a person). Its ending says the cost can change with effort or circumstance; other endings say it is lasting, or only for now. Other sakes, such as relatedness or purpose, name a different cost, and swapping the *unmet* vowel for the *met* one names a gain instead. The sake word also makes the failure yours, with no separate word for *my*.
 - `veverexom` is *can't succeed*, but only *yet*: it may still change. Other vowels say *right now* (you usually can) or *never* ([ability](intention.md#ability)).
 
-Agebon does not force the gentler answer. You can still say *I can never succeed* (`zamun veverexum.`), call the hunch strong, or call the cost lasting, and sometimes that is true. But English *I'll never be good at this* does not ask how you know or how lasting it is, so the harsh version slips by unchecked. In Agebon you cannot say *can't* without choosing among *right now*, *yet*, and *never*, and that one moment of choosing is often enough to notice that *yet* is the honest answer.
+Agebon does not force the gentler answer. You can still say *I can never succeed* (`zuwon veverexum.`), call the hunch strong, or call the cost lasting, and sometimes that is true. But English *I'll never be good at this* does not ask how you know or how lasting it is, so the harsh version slips by unchecked. In Agebon you cannot say *can't* without choosing among *right now*, *yet*, and *never*, and that one moment of choosing is often enough to notice that *yet* is the honest answer.
 
 The first letter of each word tells you its role in the sentence: `/z/` the subject, `/ɡ/` what the subject is, `/v/` the verb, `/th/` what is in your mind. Because the roles live on the letters, word order is free, and every sentence still has exactly one reading. [Inspect](inspect.md) opens with this sentence loaded, so you can click through each word.
 
@@ -127,7 +127,7 @@ An explanation of what made something happen slides into blame, and one cause am
 
 English *because of you* can mean you made it happen, you did something wrong, or you were one part of it.
 
-The ending on a [because](causation.md#fault) word says which claim you make: plain cause with no fault (`thavem`), a reason that broke a norm (`thavel`, *it's their fault*), or one share among other causes (`thaver`, *partly because*). Plain cause is the default.
+The ending on a [because](causation.md#fault) word says which claim you make: plain cause with no fault (`thahum`), a reason that broke a norm (`thahul`, *it's their fault*), or one share among other causes (`thahur`, *partly because*). Plain cause is the default.
 
 Keeping cause apart from fault helps you explain what happened without blaming, and saying *partly* keeps one person, including you, from carrying a whole outcome.
 
@@ -161,7 +161,7 @@ In English: [Claritish: How sure are you?](claritish/could-be.md) and [How do yo
 
 English *always* and *never* sound absolute even when you mean *usually*, and they do not say how many cases they rest on.
 
-A [general claim](knowing.md#universality) says in its ending whether it allows exceptions: closed *always* (`hual`) allows none, and open *always* (`huam`) leaves them open, like *usually* or *as a rule*. A PATTERN evidence word says how much the claim rests on, from a well-established pattern (`thobal`) to only a few cases (`thobar`).
+A [general claim](knowing.md#universality) says in its ending whether it allows exceptions: closed *always* (`hual`) allows none, and open *always* (`huam`) leaves them open, like *usually* or *as a rule*. A PATTERN evidence word says how much the claim rests on, from a well-established pattern (`thubel`) to only a few cases (`thuber`).
 
 Saying *usually* when you mean it, and *from a few cases* when that is all you have, helps you catch overgeneralizing before one bad day becomes *it always goes wrong*.
 
@@ -173,7 +173,7 @@ A link between events, a habit, or an ought gets treated as a law the world must
 
 Everyday English *because*, *leads to*, and *have to* blur three distinctions: a condition that is enough vs one that is required, a reason in the world vs your grounds for saying something, and a wish vs a law of nature.
 
-[Causation](causation.md) gives each link its own word: *if*, *only if*, *because*, and *if and only if*. An intended result (*so that*) uses a separate word, `hogom` ([so that](dependents.md#so-that)): the action is aimed at that outcome without claiming it happens, and it is not the same as acting for a sake ([motive](sakes.md#sake-preference), `tho`). When the “rule” is really an ought (*hard work should earn promotion*), say it with a sakes [prescription](sakes.md#sake-force) (`the`) on the act, not with a causation word.
+[Causation](causation.md) gives each link its own word: *if*, *only if*, *because*, and *if and only if*. An intended result (*so that*) uses a separate word, `hovam` ([so that](dependents.md#so-that)): the action is aimed at that outcome without claiming it happens, and it is not the same as acting for a sake ([motive](sakes.md#sake-preference), `tho`). When the “rule” is really an ought (*hard work should earn promotion*), say it with a sakes [prescription](sakes.md#sake-force) (`the`) on the act, not with a causation word.
 
 Keeping these apart helps you stop treating wishes and habits as laws the world must obey.
 
@@ -239,7 +239,7 @@ Every attempt can feel like a full commitment that either succeeds or fails, eve
 
 English *try* does not say whether you are committing to keep going or only testing whether something works, so every attempt can sound like it will end in success or failure.
 
-[Try](intention.md#try) says that an attempt happens and leaves the outcome open. Its ending says how far the attempt will go: a committed attempt (`hudul`) keeps going until it works or is ruled out, and a trial run (`hudur`) is a low-stakes probe where failing is useful to know.
+[Try](intention.md#try) says that an attempt happens and leaves the outcome open. Its ending says how far the attempt will go: a committed attempt (`howal`) keeps going until it works or is ruled out, and a trial run (`howar`) is a low-stakes probe where failing is useful to know.
 
 Calling an attempt a trial run helps you start without betting everything on it: if it fails, finding that out was the point.
 

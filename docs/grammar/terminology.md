@@ -14,48 +14,48 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 
 | Label | Gloss | Example | Teach |
 |-------|-------|---------|-------|
-| **ABIL** | Hostless *can* / *can’t* (no single verb) | `huboxel` | [Intention](intention.md#ability-fallback) |
-| **AIMED** | Emotion locus: aimed at a target | `wanathumol` | [Sakes](sakes.md#emotion-compose) |
+| **ABIL** | Hostless *can* / *can’t* (no single verb) | `hodaxel` | [Intention](intention.md#ability-fallback) |
+| **AIMED** | Emotion locus: aimed at a target | `wawothumol` | [Sakes](sakes.md#emotion-compose) |
 | **ASIDE** | An aside span | `th(hogowul)` | [Spans](spans.md#asides) |
-| **ATTEMPT** | Try mood: committed / unstated / trial run | `hudum` | [Intention](intention.md#try) |
-| **AWAY** | Emotion locus: moving off from a target | `wanathumum` | [Sakes](sakes.md#emotion-compose) |
-| **CAUSE** | Mechanism-framing mood (*make X do*) | `thegem` | [Causation](causation.md#cause) |
-| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wulothuraor` | [Sakes](sakes.md#emotion-compose) |
+| **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Intention](intention.md#try) |
+| **AWAY** | Emotion locus: moving off from a target | `wawothumum` | [Sakes](sakes.md#emotion-compose) |
+| **CAUSE** | Mechanism-framing mood (*make X do*) | `thewem` | [Causation](causation.md#cause) |
+| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraor` | [Sakes](sakes.md#emotion-compose) |
 | **CITE** | A cite span: quoted wording | `d[uzozen]` | [Spans](spans.md#writing) |
-| **CLUES** | Evidential: reasoned from clues about this case | `thunem` | [Knowing](knowing.md#evidentiality) |
-| **COLLAPSE** | Emotion locus: out of fight, giving up | `wanathumual` | [Sakes](sakes.md#emotion-compose) |
-| **CONSENT** | Consent of the affected party | `huxegom` | [Sakes](sakes.md#consent) |
-| **DECISION** | Pick-firmness mood | `thehum` | [Intention](intention.md#decision) |
-| **DEDUCED** | Evidential: must hold if the premises hold | `thugum` | [Knowing](knowing.md#deduction) |
-| **FAWN** | Emotion locus: placating a target | `wanathumaem` | [Sakes](sakes.md#emotion-compose) |
-| **FLOWING** | Emotion motion: steady, a current you can ride | `wanathumem` | [Sakes](sakes.md#emotion-compose) |
-| **FORBID** | Permission, negative | `thedel` | [Sakes](sakes.md#permission) |
-| **FORMER** | Episode standing: not the climate claimed now | `henom` | [Knowing](knowing.md#residue) |
-| **INTERNAL** | Emotion locus: mine, held inside | `gulothamar` | [Sakes](sakes.md#emotion-compose) |
-| **INTUITION** | Evidential: gut sense you cannot fully spell out | `thahom` | [Knowing](knowing.md#evidentiality) |
-| **LIVE** | Evidential: sensed now, by any sense | `thodom` | [Knowing](knowing.md#evidentiality) |
-| **MAY** | Potential mood (*could be*; find out / default / who knows) | `thovum` | [Knowing](knowing.md#may) |
-| **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevom` | [Knowing](knowing.md#evidentiality) |
-| **MENTION** | Mention marker: the span is a word or phrase as spelling | `glelel z[udozo] gamezom.` | [Spans](spans.md#mention) |
-| **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `thezum` | [Knowing](knowing.md#mirative) |
+| **CLUES** | Evidential: reasoned from clues about this case | `theyem` | [Knowing](knowing.md#evidentiality) |
+| **COLLAPSE** | Emotion locus: out of fight, giving up | `wawothumual` | [Sakes](sakes.md#emotion-compose) |
+| **CONSENT** | Consent of the affected party | `huxolem` | [Sakes](sakes.md#consent) |
+| **DECISION** | Pick-firmness mood | `thogom` | [Intention](intention.md#decision) |
+| **DEDUCED** | Evidential: must hold if the premises hold | `thegam` | [Knowing](knowing.md#deduction) |
+| **FAWN** | Emotion locus: placating a target | `wawothumaem` | [Sakes](sakes.md#emotion-compose) |
+| **FLOWING** | Emotion motion: steady, a current you can ride | `wawothumem` | [Sakes](sakes.md#emotion-compose) |
+| **FORBID** | Permission, negative | `thegul` | [Sakes](sakes.md#permission) |
+| **FORMER** | Episode standing: not the climate claimed now | `helam` | [Knowing](knowing.md#residue) |
+| **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Sakes](sakes.md#emotion-compose) |
+| **INTUITION** | Evidential: gut sense you cannot fully spell out | `thabom` | [Knowing](knowing.md#evidentiality) |
+| **LIVE** | Evidential: sensed now, by any sense | `thugom` | [Knowing](knowing.md#evidentiality) |
+| **MAY** | Potential mood (*could be*; find out / default / who knows) | `thomam` | [Knowing](knowing.md#may) |
+| **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevum` | [Knowing](knowing.md#evidentiality) |
+| **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegel z[udozo] gamezom.` | [Spans](spans.md#mention) |
+| **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themom` | [Knowing](knowing.md#mirative) |
 | **NAME** | A package titled with **-n** | `zebodol zuyudal zan.` | [Joins](joins.md#named-list) |
-| **NOTIONAL** | As-if / pretense mood | `thavom` | [Knowing](knowing.md#notional) |
-| **ON-BEHALF** | Emotion locus: felt for someone's sake | `wanathumem` | [Sakes](sakes.md#emotion-compose) |
+| **NOTIONAL** | As-if / pretense mood | `theyum` | [Knowing](knowing.md#notional) |
+| **ON-BEHALF** | Emotion locus: felt for someone's sake | `wawothumem` | [Sakes](sakes.md#emotion-compose) |
 | **OPAQUE** | An opaque span: foreign or raw writing | <code>d&lt;kimchi&gt;</code> | [Spans](spans.md#loans) |
-| **PATTERN** | Evidential: from regularity | `thobam` | [Knowing](knowing.md#evidentiality) |
-| **PERMIT** | Permission, positive | `thegol` | [Sakes](sakes.md#permission) |
-| **PLAN** | Intention-framing mood | `thamam` | [Intention](intention.md#plan-predict) |
-| **REPORTED** | Evidential: said or written by someone else | `thewam` | [Knowing](knowing.md#evidentiality) |
-| **REQUIRE** | Requirement (*must*) without a sake | `thumel` | [Sakes](sakes.md#requirement) |
-| **RESIDUE** | Episode standing: outcome still on the current tally | `hamom` | [Knowing](knowing.md#residue) |
-| **RESISTING** | Emotion locus: pushing against a target | `wanathumuer` | [Sakes](sakes.md#emotion-compose) |
-| **SAME** | Identity copula | `gugol` | [Predication](predication.md#identity) |
+| **PATTERN** | Evidential: from regularity | `thubem` | [Knowing](knowing.md#evidentiality) |
+| **PERMIT** | Permission, positive | `tholel` | [Sakes](sakes.md#permission) |
+| **PLAN** | Intention-framing mood | `thagem` | [Intention](intention.md#plan-predict) |
+| **REPORTED** | Evidential: said or written by someone else | `thebam` | [Knowing](knowing.md#evidentiality) |
+| **REQUIRE** | Requirement (*must*) without a sake | `thugal` | [Sakes](sakes.md#requirement) |
+| **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Knowing](knowing.md#residue) |
+| **RESISTING** | Emotion locus: pushing against a target | `wawothumuer` | [Sakes](sakes.md#emotion-compose) |
+| **SAME** | Identity copula | `gorol` | [Predication](predication.md#identity) |
 | **SCOPE** | Scope island `{ … }` | `{ hegugom zudozol gerulel }` | [Spans](spans.md#scope-islands) |
-| **SEEKING** | Emotion locus: turning to someone for comfort | `wanathumoem` | [Sakes](sakes.md#emotion-compose) |
-| **STILL** | Emotion motion: not moving (held, frozen, numb) | `wanathumol` | [Sakes](sakes.md#emotion-compose) |
-| **SURGING** | Emotion motion: in waves or spikes | `wulothuraor` | [Sakes](sakes.md#emotion-compose) |
-| **UNPLACED** | Emotion locus: can't place where it comes from | `wulothuruom` | [Sakes](sakes.md#emotion-compose) |
-| **WANT** | Desire mood: lasting / unstated / passing | `thohum` | [Intention](intention.md#want) |
+| **SEEKING** | Emotion locus: turning to someone for comfort | `wawothumoem` | [Sakes](sakes.md#emotion-compose) |
+| **STILL** | Emotion motion: not moving (held, frozen, numb) | `wawothumol` | [Sakes](sakes.md#emotion-compose) |
+| **SURGING** | Emotion motion: in waves or spikes | `wuwathuraor` | [Sakes](sakes.md#emotion-compose) |
+| **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruom` | [Sakes](sakes.md#emotion-compose) |
+| **WANT** | Desire mood: lasting / unstated / passing | `thalem` | [Intention](intention.md#want) |
 
 **Compare with:** [quasi](#quasi) (`ROOTl-e-`) is not **NOTIONAL**.
 
@@ -211,7 +211,7 @@ Kind / role as predicative `/ɡ/` (no *to-be* verb).
 
 ### Clause pole / NP pole
 
-Condition vs outcome as NPs vs full sentences after **`barl`**. **Clause pole** is the causation reading. Concession **`hezom`** uses the same NP vs clause split (*despite Olazun* vs *although Olazun walks*). Intended outcome **`hogom`** uses it too (*for a money-bag* vs *so that Olazun sits*).
+Condition vs outcome as NPs vs full sentences after **`barl`**. **Clause pole** is the causation reading. Concession **`hezom`** uses the same NP vs clause split (*despite Olazun* vs *although Olazun walks*). Intended outcome **`hovam`** uses it too (*for a money-bag* vs *so that Olazun sits*).
 
 [Causation](causation.md), [dependents](dependents.md#dependent-clauses)
 
@@ -279,7 +279,7 @@ A full sentence that fills a [stand-in](#stand-in) slot (`darl` / `barl` / `dorl
 
 [Dependents](dependents.md#dependent-clauses)
 
-**Compare with:** English *the dog that runs* (which dog) is [which person or thing](dependents.md#which-noun), not a stand-in. Intended outcome *so that* is [**`hogom`**](dependents.md#so-that) plus **`barl`** or a noun `/b/`.
+**Compare with:** English *the dog that runs* (which dog) is [which person or thing](dependents.md#which-noun), not a stand-in. Intended outcome *so that* is [**`hovam`**](dependents.md#so-that) plus **`barl`** or a noun `/b/`.
 
 ### Digitless
 
@@ -329,7 +329,7 @@ Final **-l / -m / -n / -r** (plus optional **-x**). **Word endings** names the c
 
 ### Epistemic *because*
 
-Reason for the *could be* (**MAY**), not a *because* about the world (`thavem`).
+Reason for the *could be* (**MAY**), not a *because* about the world (`thahum`).
 
 [Reasons, knowledge and plans](say-reasons.md#epistemic-because)
 
@@ -391,19 +391,19 @@ Extra-noun [hook](hooks.md#extra-noun) **`ael`** plus implement `/b/` (*using / 
 
 ### Simile (*like*)
 
-Hosted **`humum`** / **`gumum`** plus model `/b/` (*like* a duck / *like* Uzozen’s); with **-l**, **`humul`** / **`gumul`** is *exactly like*. Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
+Hosted **`hewom`** / **`gewom`** plus model `/b/` (*like* a duck / *like* Uzozen’s); with **-l**, **`hewol`** / **`gewol`** is *exactly like*. Not **`SAME`**, not equative *as … as*, not NOTIONAL *as if*, not join-relation *on a par with*.
 
 [Relations](relations.md#similative), [exactly like](relations.md#exactly-like)
 
 ### Exchange (*for*)
 
-Hosted **`hehem`** / **`gehem`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not sakes motive **`tho`**, not intended-outcome [**`hogom`**](dependents.md#so-that).
+Hosted **`heham`** / **`geham`** plus consideration `/b/` (*in exchange for* a hammer). Not recipient `/b/`, not sakes motive **`tho`**, not intended-outcome [**`hovam`**](dependents.md#so-that).
 
 [Relations](relations.md#exchange)
 
 ### Proxy (*on behalf of*)
 
-Hosted **`hadem`** / **`gadem`** plus principal `/b/` (*on behalf of* Olazun). Not hook *instead*, not recipient `/b/`.
+Hosted **`hagom`** / **`gagom`** plus principal `/b/` (*on behalf of* Olazun). Not hook *instead*, not recipient `/b/`.
 
 [Relations](relations.md#proxy)
 
@@ -452,7 +452,7 @@ A named citation is a hello (`uzozen.`). Add mid-word **`x`** plus **`a`** / **`
 
 ### Holder
 
-Whose view a clause reports. The name is fused onto an evidential, **MAY**, or **NOTIONAL** after that word's own ending letter (`thunemuzozen`). The fused word is the speaker's warrant; every other stance in the clause is the holder's.
+Whose view a clause reports. The name is fused onto an evidential, **MAY**, or **NOTIONAL** after that word's own ending letter (`theyemuzozen`). The fused word is the speaker's warrant; every other stance in the clause is the holder's.
 
 [Knowing](knowing.md#holder)
 
@@ -574,7 +574,7 @@ Number problem / solution / goal candidates with free ordinals.
 
 [Amounts, sizes and time](say-amounts.md#numbered-alternatives)
 
-**Compare with:** clause *so that* is [**`hogom`**](dependents.md#so-that), not the goal noun **`ogol`**.
+**Compare with:** clause *so that* is [**`hovam`**](dependents.md#so-that), not the goal noun **`oval`**.
 
 ### Numeric derivation / quasi
 
@@ -596,11 +596,11 @@ Single-item **-m** under question (*How about X?*).
 
 ### Generic pronoun
 
-**`oben`**: any person, as a rule. English *one*, generic *you*.
+**`eyon`**: any person, as a rule. English *one*, generic *you*.
 
 [Pronouns](pronouns.md#generic-pronoun)
 
-**Compare with:** `ehon` is always the person actually listening; `unan` is one unidentified individual.
+**Compare with:** `awan` is always the person actually listening; `umon` is one unidentified individual.
 
 ### One of a name
 
@@ -614,7 +614,7 @@ FIELD × KIND with mid-word **`x`**; closed stem with join letter and no `x`.
 
 [Compounds](compounds.md)
 
-**Compare with:** a [hook compound](hooks.md#hook-compounds) is a citation plus an extra-noun hook (`ewurelul` *leave*), still with no **`x`**.
+**Compare with:** a [hook compound](hooks.md#hook-compounds) is a citation plus an extra-noun hook (`owurelul` *leave*), still with no **`x`**.
 
 ### Overlay / sense-form
 
@@ -717,7 +717,7 @@ Word-initial job letter.
 
 ### Root tail
 
-The last two letters of a five-letter root: a consonant for the kind of thing and a vowel for its job. A memory aid, not grammar.
+The last two letters of a root: a consonant for the kind of thing and a vowel for its job. A memory aid, not grammar.
 
 [Compounds](compounds.md#root-tails)
 
@@ -735,7 +735,7 @@ The last two letters of a five-letter root: a consonant for the kind of thing an
 
 ### So that / event purpose
 
-Clause-pole **`hogom`**: intended outcome of the host (*so that Olazun sits*; NP *for a money-bag*). Not locative *toward*, not sake **`tho`**, not discourse *therefore*.
+Clause-pole **`hovam`**: intended outcome of the host (*so that Olazun sits*; NP *for a money-bag*). Not locative *toward*, not sake **`tho`**, not discourse *therefore*.
 
 [Dependents](dependents.md#so-that)
 
@@ -779,11 +779,11 @@ Short word in a role slot (`darl` / `barl` / `dorl` / `derl` / `durl`, open **`-
 
 [Dependents](dependents.md#stand-in)
 
-**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole-np-pole) (`thavem`, `thoyem`) name the relation; the stand-in fills `/b/`.
+**Compare with:** unspecified join **`-r`** (`dar`) is *something* with no following clause. [Clause poles](#clause-pole-np-pole) (`thahum`, `thohom`) name the relation; the stand-in fills `/b/`.
 
 ### Special pronoun
 
-**`amu` / `eho` / `aha` / `una`**.
+**`uwo` / `awa` / `aya` / `umo`**.
 
 [Pronouns](pronouns.md#special-pronouns)
 
@@ -850,7 +850,7 @@ What the talk is about from here on, set only by an `/x/` word: introduce (`xuzo
 
 ### Topic pronoun
 
-**`ozan`**: the current topic, in the same form in every role (`zozan` / `dozan` / `bozan`).
+**`alon`**: the current topic, in the same form in every role (`zalon` / `dalon` / `balon`).
 
 [Pronouns](pronouns.md#topic-pronoun)
 
@@ -898,7 +898,7 @@ A channel on a clause with a universal fence or restrictor: how you know the gen
 
 ### Sakes
 
-Sake + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`gobum`** + `/w/` need.
+Sake + stance. `/ɡ/` = speaker’s belonging; unowned noun = **`goyem`** + `/w/` need.
 
 [Sakes](sakes.md)
 

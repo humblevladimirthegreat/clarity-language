@@ -66,7 +66,7 @@ describe("placement", () => {
   it("anneals an eligible row to three letters and gives an ordinary row its tail", async () => {
     const placed = await placePublishedRoots(
       [
-        { emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "" },
+        { emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "", kind: "sign", shape: "holds" },
         { emoji: "😀", concrete: "grin", abstract: "delight", englishByPos: "", kind: "mind", shape: "holds" },
       ],
       [overlay],
@@ -98,38 +98,46 @@ describe("placement", () => {
     );
   });
 
-  it("keeps a new root two letters and a consonant away from a kept root in the same overlay group", async () => {
+  it("keeps a new root from sharing its first two letters with a kept root in the same overlay group", async () => {
     const compass: OverlayRow = { ...overlay, senseForm: "alodam", emoji: "🧭", gloss: "purpose" };
     const placed = await placePublishedRoots(
-      [{ emoji: "🧭", concrete: "compass", abstract: "direction", englishByPos: "" }],
+      [{ emoji: "🧭", concrete: "compass", abstract: "direction", englishByPos: "", kind: "body", shape: "one" }],
       [overlay, compass],
       { blocked: ["aba"], kept: [{ emoji: "🗳️", root: "aba" }], annealRestarts: 1, annealSteps: 20_000 },
     );
     const root = placed[0]!.root;
-    assert.ok([...root].filter((letter, i) => letter !== "aba"[i]).length >= 2, root);
-    assert.notEqual(root[1], "b", root);
+    assert.notEqual(root.slice(0, 2), "ab", root);
+    assert.match(root, /^[aeou]bo$/);
   });
 
   it("never spells a root with an English word the doc lint reads as English", async () => {
     await assert.rejects(
-      placePublishedRoots([{ emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "" }], [overlay], {
-        blocked: shortBut("are"),
-        annealRestarts: 1,
-        annealSteps: 20,
-      }),
-      /0 free VCV shapes/,
+      placePublishedRoots(
+        [{ emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "", kind: "counting", shape: "order" }],
+        [overlay],
+        {
+          blocked: shortBut("are"),
+          annealRestarts: 1,
+          annealSteps: 20,
+        },
+      ),
+      /no free form of the tail/,
     );
     assert.ok(!shortRootCandidates("AA1 R").includes("are"));
   });
 
   it("lets a short root start a kept l / m-second root", async () => {
     // Only a five-letter root fuses with a hook, so `abu` beside `abula` makes no hook compound.
-    const placed = await placePublishedRoots([{ emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "" }], [overlay], {
-      blocked: shortBut("abu"),
-      kept: [{ emoji: "🌹", root: "abula" }],
-      annealRestarts: 1,
-      annealSteps: 200,
-    });
+    const placed = await placePublishedRoots(
+      [{ emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "", kind: "body", shape: "takes-away" }],
+      [overlay],
+      {
+        blocked: shortBut("abu"),
+        kept: [{ emoji: "🌹", root: "abula" }],
+        annealRestarts: 1,
+        annealSteps: 200,
+      },
+    );
     assert.equal(placed[0]!.root, "abu");
   });
 
@@ -137,7 +145,7 @@ describe("placement", () => {
     const fishing: OverlayRow = { ...overlay, senseForm: "evor", emoji: "🎣", kind: "evidential", gloss: "recalled" };
     const placed = await placePublishedRoots(
       [
-        { emoji: "🎣", concrete: "fishing", abstract: "memory", englishByPos: "", root: "evo" },
+        { emoji: "🎣", concrete: "fishing", abstract: "memory", englishByPos: "", root: "evo", kind: "doing", shape: "takes-away" },
         { emoji: "🎻", concrete: "violin", abstract: "harmony", englishByPos: "", kind: "counting", shape: "order", size: "none" },
       ],
       [fishing],
@@ -151,7 +159,7 @@ describe("placement", () => {
   it("checks listed compounds through a moved short member's new spelling", async () => {
     const placed = await placePublishedRoots(
       [
-        { emoji: "🎣", concrete: "fishing", abstract: "memory", englishByPos: "", root: "evo" },
+        { emoji: "🎣", concrete: "fishing", abstract: "memory", englishByPos: "", root: "evo", kind: "doing", shape: "takes-away" },
         { emoji: "🔢", concrete: "number", abstract: "count", englishByPos: "", root: "anore", kind: "counting", shape: "order", size: "medium" },
       ],
       [],
@@ -186,5 +194,18 @@ describe("placement", () => {
     });
     assert.ok(guards.conflicts.some((c) => c.form === "awa" && c.other === "ewo"), JSON.stringify(guards.conflicts));
     assert.notDeepEqual(anneal(guards), ["awa", "ewo"]);
+  });
+
+  it("refuses a kind + shape with more short rows than free forms of its tail", async () => {
+    const rows = ["📕", "📗", "📘", "📙", "📓"].map((emoji) => ({
+      emoji,
+      concrete: "book",
+      abstract: "",
+      englishByPos: "",
+      kind: "sign",
+      shape: "holds",
+    }));
+    const overlays = rows.map((row) => ({ ...overlay, emoji: row.emoji, senseForm: `${row.emoji}m` }));
+    await assert.rejects(placePublishedRoots(rows, overlays, { annealRestarts: 1, annealSteps: 20 }), /sign \/ holds has 5 rows and 4 free forms/);
   });
 });

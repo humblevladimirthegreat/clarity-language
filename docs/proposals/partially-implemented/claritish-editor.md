@@ -61,23 +61,23 @@ Hover, or the keyboard shortcut, opens a card on the marked cue:
 
 1. **The trap, in one line.** Taken from the lesson's `## The gap` (the first sentence, or a short excerpt picked in the trigger data).
 2. **One or two questions** that pick the form, with the default answer first:
-   - *probably*: "What will you do about the guess?" → *find out* / *leave it at could be* / *just a passing thought* → `thovul` / `thovum` / `thovur`
+   - *probably*: "What will you do about the guess?" → *find out* / *leave it at could be* / *just a passing thought* → `thomal` / `thomam` / `thomar`
    - *I heard*: "How do you know?" → channel; then "How strong is it?" → ending
-   - *thanks*: "What did it do for you?" → sake; then "How long will it stay with you?" → ending. When the thanks is for something the writer owns (*my old coat*), the card offers the `g` word after the noun instead: `goyuthal`
+   - *thanks*: "What did it do for you?" → sake; then "How long will it stay with you?" → ending. When the thanks is for something the writer owns (*my old coat*), the card offers the `g` word after the noun instead: `gobathal`
    - *you should*: "Which need of yours would it serve?" → sake; then "Why is the advice welcome?" → *they invited it* / *my own offer* / *worth a try* → ending. The need is always the writer's, even when someone else does the act. If none of the three is true, the card offers only *Leave it in English*, as the lesson says
    - *I did it for you*: "Which need of yours did it serve?" → sake; then "When does the payoff land?" → ending
    - *I can't*: "Not right now, not yet, or never?" → `-xe` / `-xo` / `-xu`
 3. **Preview** of the sentence with the drop-in in place, and the English gloss of the form.
 4. **Actions:** *Use this*, **Leave it in English** (as prominent as *Use this*), ▶ pronounce, *Learn this* (link to the lesson anchor).
 
-*Use this* places the drop-in the way the lessons do ([placement](../../meta/grammar-docs.md#claritish-track)): after the clause for stance words, as a hyphen suffix on the English host for label scope and ability, right after the English noun for a thanks to something the writer owns, and before the word it colours for tone marks. Where the lesson's examples drop the English cue (*I think the store is closed* → *The store is closed `thovum`*), the preview drops it too by default, matching the lesson, and the writer can keep it with one click.
+*Use this* places the drop-in the way the lessons do ([placement](../../meta/grammar-docs.md#claritish-track)): after the clause for stance words, as a hyphen suffix on the English host for label scope and ability, right after the English noun for a thanks to something the writer owns, and before the word it colours for tone marks. Where the lesson's examples drop the English cue (*I think the store is closed* → *The store is closed `thomam`*), the preview drops it too by default, matching the lesson, and the writer can keep it with one click.
 
 Drop-ins are written plainly in the editor, without backticks, as in real use.
 
 ### Reading back what you wrote
 
 - **Hover a drop-in** to see its gloss and the lesson it comes from.
-- **Near misses.** A word that looks like a drop-in but is not one gets a suggestion: `thovom` → *did you mean `thovum`?*; `lied-ta` → *no `t` in Agebon: `-tha`?*; `lied-thal` → *suffixes take no ending*. Matching is against the generated form list, by edit distance, not against the parser.
+- **Near misses.** A word that looks like a drop-in but is not one gets a suggestion: `thovom` → *did you mean `thomam`?*; `lied-ta` → *no `t` in Agebon: `-tha`?*; `lied-thal` → *suffixes take no ending*. Matching is against the generated form list, by edit distance, not against the parser.
 - **Pronounce** any drop-in with the existing [TTS](../../../src/tts/browser.ts).
 
 ### Writing without a cue
@@ -172,7 +172,7 @@ Three lessons, end to end: **How sure are you?**, **How do you know?**, and **Th
 
 - **No generated JSON file.** The editor data is built at site build by a VitePress data loader that calls `src/claritish-editor/data.ts`, as the English helper's data is. Nothing can go stale, and `scripts/lint-claritish-editor.ts` runs the same checks in `npm run build`.
 - **Flows read more than cells.** A flow answer names a row × column cell, a column header (for an ending letter), a cell by its English (the sakes grid), or a prose line on the sheet: the `Sake word:` formula and the `` `g` for `th` `` swap. The sorry phrase is the formula word plus the `Says` cell's form. Thanks and sorry need this because the sheet teaches them as a formula, not a table of forms.
-- **A third placement detail, `join`.** After-clause drop-ins join with a space (`closed thovum`), a comma when the English cue stays (`Thanks for the ride, thoyutham`), or as their own sentence (`I cancelled again. thanathum behon`), matching each lesson's examples.
+- **A third placement detail, `join`.** After-clause drop-ins join with a space (`closed thomam`), a comma when the English cue stays (`Thanks for the ride, thobatham`), or as their own sentence (`I cancelled again. thawothum bawan`), matching each lesson's examples.
 - **Pronounce shows IPA.** The site has no audio synthesis (the earlier engine was removed; `diphone-tts.md` is its replacement), so *Say it* shows the IPA from `src/tts` until that lands.
 - **Owned nouns** come from compromise's term tags (`my`, adjectives, nouns), loaded only when a thanks card opens. The card offers *The thing itself: my …* whenever the sentence has one, so it also appears for *my shift*; the writer decides.
 - **Component tests** are not in `npm test`: CodeMirror needs real layout, which happy-dom lacks. The matcher and placement are pure modules with their own tests, and the page was checked in headless Chromium (keyboard-only open, answer, *Use this*, *Leave it in English*, Escape, hover, filter, saved draft).
@@ -199,9 +199,9 @@ Everything here reuses the Phase 1 matcher and cards.
 - **Choices beyond the plan.** A choice can be offered only from a command (*can*, the `-xa` suffix, has no English cue), end in no drop-in (*None of these* on an ought, which says to leave the ought word off), or take labels from an earlier answer (*tolerated* / *frowned on* / *by custom*; a want's endings versus a plan's).
 - **Sixteen commands**, one or more per flow: `/sure`, `/know`, `/can`, `/thanks`, `/sorry`, `/allowed`, `/forbidden`, `/required`, `/agreed`, `/ought`, `/motive`, `/want`, `/plan`, `/decide`, `/try`, `/tone`. Typing `/` lists them, and Alt+Enter right after one opens it too. *Leave it in English* on a command card removes the command's text.
 - **Autocomplete takes Tab, not Enter**, for drop-ins: an English line break should never turn into a drop-in. Enter takes a command. Drop-ins are offered after four letters, and never for an English word that starts a form (*than*, *game*).
-- **English exceptions.** A handful of English words fall within near-miss reach of a form (*thunder*, `thuner`; *theater*). The build finds them in the English helper's WordNet index and compromise's lexicon and ships them as a short list, recomputed from the forms, so a new form or a respelling brings its own. Capitalized words, and the word being typed, are never near misses. Ties among suggestions go to the longest shared start (`thovom` → `thovum` first). With the cursor in a near miss, its tip shows and Alt+Enter takes the first suggestion.
+- **English exceptions.** A handful of English words fall within near-miss reach of a form (*thunder*, `theyer`; *theater*). The build finds them in the English helper's WordNet index and compromise's lexicon and ships them as a short list, recomputed from the forms, so a new form or a respelling brings its own. Capitalized words, and the word being typed, are never near misses. Ties among suggestions go to the longest shared start (`thovom` → `thomam` first). With the cursor in a near miss, its tip shows and Alt+Enter takes the first suggestion.
 - **Mirror wording per habit**, in a `mirror` column of the trigger data (`unmarked guess/unmarked guesses`). Each line jumps to the next cue of its habit.
-- **Practice uses the practice items, not the examples.** Practice items carry the note the comparison needs, and their English prompt is clean, while removing a drop-in from some examples leaves broken English (*asked for `huxegom`*). *Compare with the lesson* shows the lesson's answer and both glosses; a different drop-in that fits the note still counts, and the writer is the judge. Practice swaps the text with a fresh undo history and never saves over the journal draft.
+- **Practice uses the practice items, not the examples.** Practice items carry the note the comparison needs, and their English prompt is clean, while removing a drop-in from some examples leaves broken English (*asked for `huxolem`*). *Compare with the lesson* shows the lesson's answer and both glosses; a different drop-in that fits the note still counts, and the writer is the judge. Practice swaps the text with a fresh undo history and never saves over the journal draft.
 - **New dependency:** `@codemirror/autocomplete`.
 - **Checked** in headless Chromium: cue cards for *can't*, *should* (*None of these*), and *I'll* (labels following the wish or plan answer); `/sure`, `/can`, `/tone`, and *Leave it in English* on a command; autocomplete by Tab, not Enter, and none after *than*; hover glosses with IPA; a near miss taken by Alt+Enter; mirror jump and close; practice compare, and the journal restored after practice and a reload.
 

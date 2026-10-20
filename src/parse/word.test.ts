@@ -34,7 +34,7 @@ describe("parseWord — content / gl- / citation", () => {
     const group = parseOk("dazawalnx");
     assert.equal(group.ending, "ln");
     assert.equal(group.plural, true);
-    const compound = parseOk("zohuxaloweln");
+    const compound = parseOk("zalexaloweln");
     assert.equal(compound.ending, "ln");
     const span = parseOk("d^@<iPhone>");
     assert.equal(span.ending, "ln");
@@ -274,7 +274,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
   });
 
   it("parses stacked label-scope vowels on a content root and a role compound", () => {
-    const word = parseOk("gunomuthaol");
+    const word = parseOk("gunemuthaol");
     assert.equal(word.family.kind, "x");
     if (word.family.kind === "x") {
       assert.equal(word.family.xFamily, "sake");

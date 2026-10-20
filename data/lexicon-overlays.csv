@@ -1,135 +1,135 @@
 sense_form,pos,emoji,kind,gloss,definition,mnemonic,anchor
-ahum,th,🗳️,sake,autonomy,autonomy sake (choice / agency),ballot records choice; choice is agency and self-direction,sakes.md#word-shape
-ahum,w,🗳️,sake,autonomy,autonomy sake (choice / agency),ballot records choice; choice is agency and self-direction,sakes.md#personal-possession
-ulom,th,🧰,sake,competence,competence sake (readiness / efficacy),a tool readies you for the job; readiness is prepared skill,sakes.md#word-shape
-ulom,w,🧰,sake,competence,competence sake (readiness / efficacy),a tool readies you for the job; readiness is prepared skill,sakes.md#personal-possession
-amem,th,🧭,sake,purpose,purpose sake (direction / meaning),compass gives a heading; direction is an aim that matters,sakes.md#word-shape
-amem,w,🧭,sake,purpose,purpose sake (direction / meaning),compass gives a heading; direction is an aim that matters,sakes.md#personal-possession
-anam,th,🪢,sake,relatedness,relatedness sake (bond / belonging),knot ties two ends; bond is connection and care,sakes.md#word-shape
-anam,w,🪢,sake,relatedness,relatedness sake (bond / belonging),knot ties two ends; bond is connection and care,sakes.md#personal-possession
-ebem,th,🎁,sake,beneficence,beneficence sake (making someone better off),a present leaves someone better off; giving pays off the giver,sakes.md#word-shape
-ebem,w,🎁,sake,beneficence,beneficence sake (making someone better off),a present leaves someone better off; giving pays off the giver,sakes.md#personal-possession
-ozom,th,🍓,sake,pleasure,pleasure sake (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,sakes.md#word-shape
-ozom,w,🍓,sake,pleasure,pleasure sake (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,sakes.md#personal-possession
-oyum,th,🫁,sake,physical,physical sake (body / health / safety / shelter),lungs keep you breathing; the physical sake is a body that is fed and housed and well and safe,sakes.md#word-shape
-oyum,w,🫁,sake,physical,physical sake (body / health / safety / shelter),lungs keep you breathing; the physical sake is a body that is fed and housed and well and safe,sakes.md#personal-possession
-adom,th,💡,sake,understanding,understanding sake (sense-making / learning),a lightbulb switches on; understanding is the moment it makes sense,sakes.md#word-shape
-adom,w,💡,sake,understanding,understanding sake (sense-making / learning),a lightbulb switches on; understanding is the moment it makes sense,sakes.md#personal-possession
-egam,th,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#word-shape
-egam,w,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#personal-possession
-evom,th,🎣,evidential,MEMORY,memory evidential (remembered firsthand / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidentiality
-evol,th,🎣,evidential,MEMORY.strong,memory evidential with strong evidence (vivid memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidence-strength
-evor,th,🎣,evidential,MEMORY.weak,memory evidential with weak evidence (hazy memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidence-strength
-evom,w,🎣,evidential,MEMORY,memory evidential (remembered firsthand / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#mood-on-one-adjective
-evol,w,🎣,evidential,MEMORY.strong,memory evidential with strong evidence (vivid memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#mood-on-one-adjective
-evor,w,🎣,evidential,MEMORY.weak,memory evidential with weak evidence (hazy memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#mood-on-one-adjective
-odom,th,👁️‍🗨️,evidential,LIVE,live evidential (sensed now: in view / in earshot / on the skin),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#evidentiality
-odol,th,👁️‍🗨️,evidential,LIVE.strong,live evidential with strong evidence (clear full view),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#evidence-strength
-odor,th,👁️‍🗨️,evidential,LIVE.weak,live evidential with weak evidence (a glimpse),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#evidence-strength
-odom,w,👁️‍🗨️,evidential,LIVE,live evidential (sensed now: in view / in earshot / on the skin),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#mood-on-one-adjective
-odol,w,👁️‍🗨️,evidential,LIVE.strong,live evidential with strong evidence (clear full view),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#mood-on-one-adjective
-odor,w,👁️‍🗨️,evidential,LIVE.weak,live evidential with weak evidence (a glimpse),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#mood-on-one-adjective
-obam,th,🐾,evidential,PATTERN,pattern evidential (from trail of cases),paw prints mark a trail; trail is regularity left behind,knowing.md#evidentiality
-obal,th,🐾,evidential,PATTERN.strong,pattern evidential with strong evidence (well-established pattern),paw prints mark a trail; trail is regularity left behind,knowing.md#evidence-strength
-obar,th,🐾,evidential,PATTERN.weak,pattern evidential with weak evidence (a few cases),paw prints mark a trail; trail is regularity left behind,knowing.md#evidence-strength
-obam,w,🐾,evidential,PATTERN,pattern evidential (from trail of cases),paw prints mark a trail; trail is regularity left behind,knowing.md#mood-on-one-adjective
-obal,w,🐾,evidential,PATTERN.strong,pattern evidential with strong evidence (well-established pattern),paw prints mark a trail; trail is regularity left behind,knowing.md#mood-on-one-adjective
-obar,w,🐾,evidential,PATTERN.weak,pattern evidential with weak evidence (a few cases),paw prints mark a trail; trail is regularity left behind,knowing.md#mood-on-one-adjective
-unem,th,🕵️,evidential,CLUES,clues evidential (reasoned from clues about this case),investigating follows clues; investigation is reasoned inference,knowing.md#evidentiality
-unel,th,🕵️,evidential,CLUES.strong,clues evidential with strong evidence (strong clues),investigating follows clues; investigation is reasoned inference,knowing.md#evidence-strength
-uner,th,🕵️,evidential,CLUES.weak,clues evidential with weak evidence (a weak clue),investigating follows clues; investigation is reasoned inference,knowing.md#evidence-strength
-unem,w,🕵️,evidential,CLUES,clues evidential (reasoned from clues about this case),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
-unel,w,🕵️,evidential,CLUES.strong,clues evidential with strong evidence (strong clues),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
-uner,w,🕵️,evidential,CLUES.weak,clues evidential with weak evidence (a weak clue),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
-ugum,th,📖,evidential,DEDUCED,deduced evidential (follows from the premises),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#evidentiality
-ugul,th,📖,evidential,DEDUCED.strong,deduced evidential with strong evidence (every step could be shown),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#evidence-strength
-ugur,th,📖,evidential,DEDUCED.weak,deduced evidential with weak evidence (seems to follow; steps unchecked),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#evidence-strength
-ugum,w,📖,evidential,DEDUCED,deduced evidential (follows from the premises),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#mood-on-one-adjective
-ugul,w,📖,evidential,DEDUCED.strong,deduced evidential with strong evidence (every step could be shown),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#mood-on-one-adjective
-ugur,w,📖,evidential,DEDUCED.weak,deduced evidential with weak evidence (seems to follow; steps unchecked),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#mood-on-one-adjective
-ewam,th,👂,evidential,REPORTED,reported evidential (hearsay / said or written by someone else / reportative),ear enables listening; taking in what others pass on under /th/ is the reported channel,knowing.md#evidentiality
-ewal,th,👂,evidential,REPORTED.strong,reported evidential with strong evidence (reliable source),ear enables listening; taking in what others pass on under /th/ is the reported channel,knowing.md#evidence-strength
-ewar,th,👂,evidential,REPORTED.weak,reported evidential with weak evidence (rumor),ear enables listening; taking in what others pass on under /th/ is the reported channel,knowing.md#evidence-strength
-ewam,w,👂,evidential,REPORTED,reported evidential (hearsay / said or written by someone else / reportative),ear enables listening; taking in what others pass on as a /w/ detail is the reported channel,knowing.md#mood-on-one-adjective
-ewal,w,👂,evidential,REPORTED.strong,reported evidential with strong evidence (reliable source),ear enables listening; taking in what others pass on as a /w/ detail is the reported channel,knowing.md#mood-on-one-adjective
-ewar,w,👂,evidential,REPORTED.weak,reported evidential with weak evidence (rumor),ear enables listening; taking in what others pass on as a /w/ detail is the reported channel,knowing.md#mood-on-one-adjective
-ahom,th,❤️,evidential,INTUITION,intuition evidential (gut sense you cannot fully spell out),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#evidentiality
-ahol,th,❤️,evidential,INTUITION.strong,intuition evidential with strong evidence (strong gut sense),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#evidence-strength
-ahor,th,❤️,evidential,INTUITION.weak,intuition evidential with weak evidence (faint hunch),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#evidence-strength
-ahom,w,❤️,evidential,INTUITION,intuition evidential (gut sense you cannot fully spell out),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#mood-on-one-adjective
-ahol,w,❤️,evidential,INTUITION.strong,intuition evidential with strong evidence (strong gut sense),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#mood-on-one-adjective
-ahor,w,❤️,evidential,INTUITION.weak,intuition evidential with weak evidence (faint hunch),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#mood-on-one-adjective
-ezum,th,😮,mirative,MIRATIVE,mirative mood (newly found out and not expected),a surprised face meets what it did not expect; mirative marks news against expectation,knowing.md#mirative
-ezul,th,😮,mirative,MIRATIVE.firm,mirative mood overturning a firm expectation,a surprised face meets what it did not expect; mirative marks news against expectation,knowing.md#mirative
-ezur,th,😮,mirative,MIRATIVE.mild,mirative mood against a loose expectation,a surprised face meets what it did not expect; mirative marks news against expectation,knowing.md#mirative
-amom,h,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,knowing.md#residue-and-former-climate
-amom,w,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,knowing.md#mood-on-one-adjective
-enom,h,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,knowing.md#residue-and-former-climate
-enom,w,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,knowing.md#mood-on-one-adjective
-amar,th,🗺️,plan,plan-sketch,plan mood sketch map-resolution (direction only; details left open),map charts a route; sketch plan is intention without steps,intention.md#plan
-amam,th,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps on the map; detail unstated),map charts a route; itinerary plan fills in how,intention.md#plan
-amal,th,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups,intention.md#plan
-ehul,th,✅,decision,DECISION-irreversible,decision mood irreversible changeability (settled pick; no time),checkmark confirms a pick; irreversible decision is settled as final,intention.md#decision-revisability
-ehum,th,✅,decision,DECISION-modifiable,decision mood modifiable changeability (open to revision; no time),checkmark confirms a pick; modifiable decision stays open to change,intention.md#decision-revisability
-ehur,th,✅,decision,DECISION-temporary,decision mood temporary changeability (pick for now; no time),checkmark confirms a pick; temporary decision holds only this moment,intention.md#decision-revisability
-ovum,th,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off,knowing.md#may
-ovum,w,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off,knowing.md#mood-on-one-adjective
-ovul,th,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),"thought balloon plus looking: could be, and you are seeking",knowing.md#hold-endings-may
-ovul,w,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),"thought balloon plus looking: could be, and you are seeking",knowing.md#mood-on-one-adjective
-ovur,th,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),"thought balloon with a shrug: could be, and you are not seeking — including if you never know",knowing.md#hold-endings-may
-ovur,w,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),"thought balloon with a shrug: could be, and you are not seeking — including if you never know",knowing.md#mood-on-one-adjective
-avom,th,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose,knowing.md#notional-as-if-framing
-avom,w,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose,knowing.md#mood-on-one-adjective
-avor,th,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a possibility or assumption for now),theater mask tried on for a moment to toy with what might follow,knowing.md#hold-endings-notional
-avor,w,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a possibility or assumption for now),theater mask tried on for a moment to toy with what might follow,knowing.md#mood-on-one-adjective
-avol,th,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#hold-endings-notional
-avol,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#mood-on-one-adjective
-ubom,h,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
-ubom,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
-ugol,g,🪙,identity,SAME,SAME identity (identical-to / same-as),coin has two faces one substance; same is one referent two labels,predication.md#identity-same
-oyem,th,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,dependents.md#poles
-oyem,g,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if
-edam,th,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,dependents.md#poles
-edam,g,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,causation.md#only-because
-avem,th,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,dependents.md#poles
-avel,th,🧱,clause_pole,because.fault,BECAUSE clause pole with fault (the reason broke a norm),a wall stands on its foundation; -l locks the blame on a broken norm,causation.md#fault
-aver,th,🧱,clause_pole,because.share,BECAUSE clause pole with a share (the reason contributed among others),a wall stands on its foundation; -r is one wall among several holding it up,causation.md#fault
-avem,g,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,causation.md#only-because
-olum,th,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,dependents.md#poles
-olum,g,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
+agam,th,🗳️,sake,autonomy,autonomy sake (choice / agency),ballot records choice; choice is agency and self-direction,sakes.md#word-shape
+agam,w,🗳️,sake,autonomy,autonomy sake (choice / agency),ballot records choice; choice is agency and self-direction,sakes.md#personal-possession
+uwam,th,🧰,sake,competence,competence sake (readiness / efficacy),a tool readies you for the job; readiness is prepared skill,sakes.md#word-shape
+uwam,w,🧰,sake,competence,competence sake (readiness / efficacy),a tool readies you for the job; readiness is prepared skill,sakes.md#personal-possession
+urem,th,🧭,sake,purpose,purpose sake (direction / meaning),compass gives a heading; direction is an aim that matters,sakes.md#word-shape
+urem,w,🧭,sake,purpose,purpose sake (direction / meaning),compass gives a heading; direction is an aim that matters,sakes.md#personal-possession
+awom,th,🪢,sake,relatedness,relatedness sake (bond / belonging),knot ties two ends; bond is connection and care,sakes.md#word-shape
+awom,w,🪢,sake,relatedness,relatedness sake (bond / belonging),knot ties two ends; bond is connection and care,sakes.md#personal-possession
+ewam,th,🎁,sake,beneficence,beneficence sake (making someone better off),a present leaves someone better off; giving pays off the giver,sakes.md#word-shape
+ewam,w,🎁,sake,beneficence,beneficence sake (making someone better off),a present leaves someone better off; giving pays off the giver,sakes.md#personal-possession
+odom,th,🍓,sake,pleasure,pleasure sake (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,sakes.md#word-shape
+odom,w,🍓,sake,pleasure,pleasure sake (sweetness / enjoyment),strawberry is pure sweetness; sweetness is enjoyment payoff,sakes.md#personal-possession
+obam,th,🫁,sake,physical,physical sake (body / health / safety / shelter),lungs keep you breathing; the physical sake is a body that is fed and housed and well and safe,sakes.md#word-shape
+obam,w,🫁,sake,physical,physical sake (body / health / safety / shelter),lungs keep you breathing; the physical sake is a body that is fed and housed and well and safe,sakes.md#personal-possession
+owom,th,💡,sake,understanding,understanding sake (sense-making / learning),a lightbulb switches on; understanding is the moment it makes sense,sakes.md#word-shape
+owom,w,💡,sake,understanding,understanding sake (sense-making / learning),a lightbulb switches on; understanding is the moment it makes sense,sakes.md#personal-possession
+udam,th,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#word-shape
+udam,w,🥚,sake,sake,unspecified sake (potential),egg holds unrealized life; potential names a sake without picking which,sakes.md#personal-possession
+evum,th,🎣,evidential,MEMORY,memory evidential (remembered firsthand / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidentiality
+evul,th,🎣,evidential,MEMORY.strong,memory evidential with strong evidence (vivid memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidence-strength
+evur,th,🎣,evidential,MEMORY.weak,memory evidential with weak evidence (hazy memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#evidence-strength
+evum,w,🎣,evidential,MEMORY,memory evidential (remembered firsthand / reconstructive),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#mood-on-one-adjective
+evul,w,🎣,evidential,MEMORY.strong,memory evidential with strong evidence (vivid memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#mood-on-one-adjective
+evur,w,🎣,evidential,MEMORY.weak,memory evidential with weak evidence (hazy memory),fishing pulls from opaque water; memory retrieves a past observation (may be a boot),knowing.md#mood-on-one-adjective
+ugom,th,👁️‍🗨️,evidential,LIVE,live evidential (sensed now: in view / in earshot / on the skin),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#evidentiality
+ugol,th,👁️‍🗨️,evidential,LIVE.strong,live evidential with strong evidence (clear full view),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#evidence-strength
+ugor,th,👁️‍🗨️,evidential,LIVE.weak,live evidential with weak evidence (a glimpse),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#evidence-strength
+ugom,w,👁️‍🗨️,evidential,LIVE,live evidential (sensed now: in view / in earshot / on the skin),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#mood-on-one-adjective
+ugol,w,👁️‍🗨️,evidential,LIVE.strong,live evidential with strong evidence (clear full view),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#mood-on-one-adjective
+ugor,w,👁️‍🗨️,evidential,LIVE.weak,live evidential with weak evidence (a glimpse),eye-in-speech attests while the scene is in your senses; live is sensing-and-saying now (not memory),knowing.md#mood-on-one-adjective
+ubem,th,🐾,evidential,PATTERN,pattern evidential (from trail of cases),paw prints mark a trail; trail is regularity left behind,knowing.md#evidentiality
+ubel,th,🐾,evidential,PATTERN.strong,pattern evidential with strong evidence (well-established pattern),paw prints mark a trail; trail is regularity left behind,knowing.md#evidence-strength
+uber,th,🐾,evidential,PATTERN.weak,pattern evidential with weak evidence (a few cases),paw prints mark a trail; trail is regularity left behind,knowing.md#evidence-strength
+ubem,w,🐾,evidential,PATTERN,pattern evidential (from trail of cases),paw prints mark a trail; trail is regularity left behind,knowing.md#mood-on-one-adjective
+ubel,w,🐾,evidential,PATTERN.strong,pattern evidential with strong evidence (well-established pattern),paw prints mark a trail; trail is regularity left behind,knowing.md#mood-on-one-adjective
+uber,w,🐾,evidential,PATTERN.weak,pattern evidential with weak evidence (a few cases),paw prints mark a trail; trail is regularity left behind,knowing.md#mood-on-one-adjective
+eyem,th,🕵️,evidential,CLUES,clues evidential (reasoned from clues about this case),investigating follows clues; investigation is reasoned inference,knowing.md#evidentiality
+eyel,th,🕵️,evidential,CLUES.strong,clues evidential with strong evidence (strong clues),investigating follows clues; investigation is reasoned inference,knowing.md#evidence-strength
+eyer,th,🕵️,evidential,CLUES.weak,clues evidential with weak evidence (a weak clue),investigating follows clues; investigation is reasoned inference,knowing.md#evidence-strength
+eyem,w,🕵️,evidential,CLUES,clues evidential (reasoned from clues about this case),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
+eyel,w,🕵️,evidential,CLUES.strong,clues evidential with strong evidence (strong clues),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
+eyer,w,🕵️,evidential,CLUES.weak,clues evidential with weak evidence (a weak clue),investigating follows clues; investigation is reasoned inference,knowing.md#mood-on-one-adjective
+egam,th,📖,evidential,DEDUCED,deduced evidential (follows from the premises),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#evidentiality
+egal,th,📖,evidential,DEDUCED.strong,deduced evidential with strong evidence (every step could be shown),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#evidence-strength
+egar,th,📖,evidential,DEDUCED.weak,deduced evidential with weak evidence (seems to follow; steps unchecked),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#evidence-strength
+egam,w,📖,evidential,DEDUCED,deduced evidential (follows from the premises),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#mood-on-one-adjective
+egal,w,📖,evidential,DEDUCED.strong,deduced evidential with strong evidence (every step could be shown),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#mood-on-one-adjective
+egar,w,📖,evidential,DEDUCED.weak,deduced evidential with weak evidence (seems to follow; steps unchecked),a book already holds what it says; a deduction reads out only what the premises hold,knowing.md#mood-on-one-adjective
+ebam,th,👂,evidential,REPORTED,reported evidential (hearsay / said or written by someone else / reportative),ear enables listening; taking in what others pass on under /th/ is the reported channel,knowing.md#evidentiality
+ebal,th,👂,evidential,REPORTED.strong,reported evidential with strong evidence (reliable source),ear enables listening; taking in what others pass on under /th/ is the reported channel,knowing.md#evidence-strength
+ebar,th,👂,evidential,REPORTED.weak,reported evidential with weak evidence (rumor),ear enables listening; taking in what others pass on under /th/ is the reported channel,knowing.md#evidence-strength
+ebam,w,👂,evidential,REPORTED,reported evidential (hearsay / said or written by someone else / reportative),ear enables listening; taking in what others pass on as a /w/ detail is the reported channel,knowing.md#mood-on-one-adjective
+ebal,w,👂,evidential,REPORTED.strong,reported evidential with strong evidence (reliable source),ear enables listening; taking in what others pass on as a /w/ detail is the reported channel,knowing.md#mood-on-one-adjective
+ebar,w,👂,evidential,REPORTED.weak,reported evidential with weak evidence (rumor),ear enables listening; taking in what others pass on as a /w/ detail is the reported channel,knowing.md#mood-on-one-adjective
+abom,th,❤️,evidential,INTUITION,intuition evidential (gut sense you cannot fully spell out),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#evidentiality
+abol,th,❤️,evidential,INTUITION.strong,intuition evidential with strong evidence (strong gut sense),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#evidence-strength
+abor,th,❤️,evidential,INTUITION.weak,intuition evidential with weak evidence (faint hunch),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#evidence-strength
+abom,w,❤️,evidential,INTUITION,intuition evidential (gut sense you cannot fully spell out),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#mood-on-one-adjective
+abol,w,❤️,evidential,INTUITION.strong,intuition evidential with strong evidence (strong gut sense),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#mood-on-one-adjective
+abor,w,❤️,evidential,INTUITION.weak,intuition evidential with weak evidence (faint hunch),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#mood-on-one-adjective
+emom,th,😮,mirative,MIRATIVE,mirative mood (newly found out and not expected),a surprised face meets what it did not expect; mirative marks news against expectation,knowing.md#mirative
+emol,th,😮,mirative,MIRATIVE.firm,mirative mood overturning a firm expectation,a surprised face meets what it did not expect; mirative marks news against expectation,knowing.md#mirative
+emor,th,😮,mirative,MIRATIVE.mild,mirative mood against a loose expectation,a surprised face meets what it did not expect; mirative marks news against expectation,knowing.md#mirative
+aram,h,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,knowing.md#residue-and-former-climate
+aram,w,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,knowing.md#mood-on-one-adjective
+elam,h,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,knowing.md#residue-and-former-climate
+elam,w,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,knowing.md#mood-on-one-adjective
+ager,th,🗺️,plan,plan-sketch,plan mood sketch map-resolution (direction only; details left open),map charts a route; sketch plan is intention without steps,intention.md#plan
+agem,th,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps on the map; detail unstated),map charts a route; itinerary plan fills in how,intention.md#plan
+agel,th,🗺️,plan,plan-atlas,plan mood atlas map-resolution (includes backups; fully prepared),map charts a route; atlas plan is so detailed it includes backups,intention.md#plan
+ogol,th,✅,decision,DECISION-irreversible,decision mood irreversible changeability (settled pick; no time),checkmark confirms a pick; irreversible decision is settled as final,intention.md#decision-revisability
+ogom,th,✅,decision,DECISION-modifiable,decision mood modifiable changeability (open to revision; no time),checkmark confirms a pick; modifiable decision stays open to change,intention.md#decision-revisability
+ogor,th,✅,decision,DECISION-temporary,decision mood temporary changeability (pick for now; no time),checkmark confirms a pick; temporary decision holds only this moment,intention.md#decision-revisability
+omam,th,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off,knowing.md#may
+omam,w,💭,may,MAY,may mood (could be; default),thought balloon: the scene may be so; -m does not find out and does not shrug it off,knowing.md#mood-on-one-adjective
+omal,th,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),"thought balloon plus looking: could be, and you are seeking",knowing.md#hold-endings-may
+omal,w,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),"thought balloon plus looking: could be, and you are seeking",knowing.md#mood-on-one-adjective
+omar,th,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),"thought balloon with a shrug: could be, and you are not seeking — including if you never know",knowing.md#hold-endings-may
+omar,w,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),"thought balloon with a shrug: could be, and you are not seeking — including if you never know",knowing.md#mood-on-one-adjective
+eyum,th,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose,knowing.md#notional-as-if-framing
+eyum,w,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose,knowing.md#mood-on-one-adjective
+eyur,th,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a possibility or assumption for now),theater mask tried on for a moment to toy with what might follow,knowing.md#hold-endings-notional
+eyur,w,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a possibility or assumption for now),theater mask tried on for a moment to toy with what might follow,knowing.md#mood-on-one-adjective
+eyul,th,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#hold-endings-notional
+eyul,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#mood-on-one-adjective
+odam,h,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
+odam,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
+orol,g,🪙,identity,SAME,SAME identity (identical-to / same-as),coin has two faces one substance; same is one referent two labels,predication.md#identity-same
+ohom,th,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,dependents.md#poles
+ohom,g,🚪,clause_pole,if,IF clause pole (one-way conditional),door opens one way; opportunity is if without iff force,causation.md#if
+ehem,th,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,dependents.md#poles
+ehem,g,↔️,clause_pole,iff,IFF clause pole (biconditional),left-right arrow goes both ways; reciprocity is if-and-only-if,causation.md#only-because
+ahum,th,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,dependents.md#poles
+ahul,th,🧱,clause_pole,because.fault,BECAUSE clause pole with fault (the reason broke a norm),a wall stands on its foundation; -l locks the blame on a broken norm,causation.md#fault
+ahur,th,🧱,clause_pole,because.share,BECAUSE clause pole with a share (the reason contributed among others),a wall stands on its foundation; -r is one wall among several holding it up,causation.md#fault
+ahum,g,🧱,clause_pole,because,BECAUSE clause pole (explanatory reason),a wall stands on its foundation; foundation is because-reason under claim,causation.md#only-because
+ebom,th,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,dependents.md#poles
+ebom,g,🧻,clause_pole,only-if,ONLY-IF clause pole (necessary condition),toilet paper is what you must have; necessity is the condition you cannot drop,causation.md#only-if
 ezom,h,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#poles
 ezom,g,🦓,clause_pole,although,ALTHOUGH clause pole (concession; NP despite),zebra stripes show contrast; contrast is although against expectation; a noun in /b/ is English despite,dependents.md#poles
-uwem,h,♊,clause_pole,while,WHILE clause pole (concurrent),gemini twins mirror two sides; duality is while both sides at once,dependents.md#poles
-uwem,g,♊,clause_pole,while,WHILE clause pole (concurrent),gemini twins mirror two sides; duality is while both sides at once,dependents.md#time-pole-on-noun
-omam,h,⏲️,clause_pole,until,UNTIL clause pole (endpoint bound),timer counts down to zero; deadline is until the endpoint,dependents.md#poles
-omam,g,⏲️,clause_pole,until,UNTIL clause pole (endpoint bound),timer counts down to zero; deadline is until the endpoint,dependents.md#time-pole-on-noun
+erem,h,♊,clause_pole,while,WHILE clause pole (concurrent),gemini twins mirror two sides; duality is while both sides at once,dependents.md#poles
+erem,g,♊,clause_pole,while,WHILE clause pole (concurrent),gemini twins mirror two sides; duality is while both sides at once,dependents.md#time-pole-on-noun
+arum,h,⏲️,clause_pole,until,UNTIL clause pole (endpoint bound),timer counts down to zero; deadline is until the endpoint,dependents.md#poles
+arum,g,⏲️,clause_pole,until,UNTIL clause pole (endpoint bound),timer counts down to zero; deadline is until the endpoint,dependents.md#time-pole-on-noun
 evahum,h,🏁,clause_pole,by,BY clause pole (deadline: done at or before the endpoint),the checkered flag marks the finish; the event is done by the time it is reached,dependents.md#poles
 evahum,g,🏁,clause_pole,by,BY clause pole (deadline: done at or before the endpoint),the checkered flag marks the finish; the event is done by the time it is reached,dependents.md#time-pole-on-noun
 abam,h,🎒,clause_pole,before,BEFORE clause pole (ahead-of),backpack holds what you need ahead; preparation is before the event,dependents.md#poles
 abam,g,🎒,clause_pole,before,BEFORE clause pole (ahead-of),backpack holds what you need ahead; preparation is before the event,dependents.md#time-pole-on-noun
-anom,h,⌛,clause_pole,after,AFTER clause pole (just-after),the sand has just run through; recency is after the prior edge,dependents.md#poles
-anom,g,⌛,clause_pole,after,AFTER clause pole (just-after),the sand has just run through; recency is after the prior edge,dependents.md#time-pole-on-noun
-ogom,h,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#poles
-ogom,g,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#poles
-odum,h,➡️,clause_pole,so-result,SO-THAT-RESULT clause pole (outcome that follows from the host),east is the way things move on; the dependent is what the host led to,dependents.md#result-pole
-uhum,h,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
-uhum,g,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
-uhum,w,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
-uhum,th,📒,clause_pole,as-of.ledger,AS-OF stance pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#stance-as-of
-uhur,h,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#as-of
-uhur,g,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#as-of
-uhur,w,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#as-of
-uhur,th,📒,clause_pole,as-of.ledger,AS-OF stance pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#stance-as-of
-uram,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#as-of
-uram,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#as-of
-uram,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#as-of
-uram,th,🔖,clause_pole,as-of.bookmark,AS-OF stance pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#stance-as-of
-urar,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
-urar,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
-urar,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
-urar,th,🔖,clause_pole,as-of.bookmark,AS-OF stance pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#stance-as-of
-egem,th,⚙️,cause,CAUSE,CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make),a machine runs on mechanism; mechanism frames how the link works,causation.md#cause
-egem,w,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),a machine runs on mechanism; mechanism frames how the link works,causation.md#cause
+alam,h,⌛,clause_pole,after,AFTER clause pole (just-after),the sand has just run through; recency is after the prior edge,dependents.md#poles
+alam,g,⌛,clause_pole,after,AFTER clause pole (just-after),the sand has just run through; recency is after the prior edge,dependents.md#time-pole-on-noun
+ovam,h,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#poles
+ovam,g,🥅,clause_pole,so-that,SO-THAT clause pole (intended outcome; NP for-goal),goal net is what you aim for; so-that is the event or thing the host is for,dependents.md#poles
+ahem,h,➡️,clause_pole,so-result,SO-THAT-RESULT clause pole (outcome that follows from the host),east is the way things move on; the dependent is what the host led to,dependents.md#result-pole
+ogam,h,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
+ogam,g,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
+ogam,w,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#as-of
+ogam,th,📒,clause_pole,as-of.ledger,AS-OF stance pole (asserted whose-now / dated ledger),ledger holds the dated line; asserted as-of is the books at that date,relations.md#stance-as-of
+ogar,h,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#as-of
+ogar,g,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#as-of
+ogar,w,📒,clause_pole,as-of.ledger,AS-OF clause pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#as-of
+ogar,th,📒,clause_pole,as-of.ledger,AS-OF stance pole (asserted whose-now / dated ledger) resume,ledger holds the dated line; -r resumes that ledger without /b/,relations.md#stance-as-of
+ugem,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#as-of
+ugem,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#as-of
+ugem,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#as-of
+ugem,th,🔖,clause_pole,as-of.bookmark,AS-OF stance pole (unasserted whose-now / placeholder now),bookmark holds the place without stamping; unasserted as-of is a now you are not claiming,relations.md#stance-as-of
+uger,h,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
+uger,g,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
+uger,w,🔖,clause_pole,as-of.bookmark,AS-OF clause pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#as-of
+uger,th,🔖,clause_pole,as-of.bookmark,AS-OF stance pole (unasserted whose-now / placeholder now) resume,bookmark holds the place without stamping; -r resumes that bookmark without /b/,relations.md#stance-as-of
+ewem,th,⚙️,cause,CAUSE,CAUSE mood (mechanism framing); a hosted /b/ with no pole is the causer (make),a machine runs on mechanism; mechanism frames how the link works,causation.md#cause
+ewem,w,⚙️,cause,CAUSE,CAUSE mood (mechanism framing),a machine runs on mechanism; mechanism frames how the link works,causation.md#cause
 an,v,,join_act,includes,join-act includes or adds object,set join a+n as verb; includes adds this object to the set,join-across-roles.md#join-act-verbs
 an,g,,join_relation,including,join-relation including (adjective + argument),set join a+n on /g/; including frames host with argument,join-across-roles.md#join-relations
 an,h,,join_relation,including,join-relation with or including (adverb + argument),set join a+n on /h/; with frames event alongside argument,join-across-roles.md#join-relations
@@ -160,74 +160,74 @@ oen,h,,join_relation,on-a-par,join-relation equating or tying (adverb),equative 
 uen,v,,join_act,deprioritizes,join-act deprioritizes object,counterrank ue+n as verb; deprioritizes puts this last,join-across-roles.md#join-act-verbs
 uen,g,,join_relation,deprioritizing,join-relation deprioritizing (adjective),counterrank ue+n on /g/; deprioritizing trails argument,join-across-roles.md#join-relations
 uen,h,,join_relation,deprioritizing,join-relation deprioritizing (adverb),counterrank ue+n on /h/; deprioritizing puts argument last,join-across-roles.md#join-relations
-azam,h,🥪,locative,between,locative between (two landmarks),sandwich sits in the layer between sides; between takes a join of two landmarks,relations.md#locative-relations
-azam,g,🥪,locative,between,locative between (two landmarks),sandwich sits in the layer between sides; between takes a join of two landmarks,relations.md#locative-relations
-ebum,h,🌉,locative,across,locative across (edge to far edge of one landmark),bridge spans the gap; across is reaching from one side to the other,relations.md#locative-relations
-ebum,g,🌉,locative,across,locative across (edge to far edge of one landmark),bridge spans the gap; across is reaching from one side to the other,relations.md#locative-relations
-ugem,h,🎠,locative,around,locative around (figure on all sides of one landmark),carousel horses ride on all sides of the center pole; around is surrounding one landmark,relations.md#locative-relations
-ugem,g,🎠,locative,around,locative around (figure on all sides of one landmark),carousel horses ride on all sides of the center pole; around is surrounding one landmark,relations.md#locative-relations
-umum,h,🪞,similative,like,similative like (manner resemblance),mirror shows a reflection; like is resembling the model in /b/,clause.md#extra-nouns
-umum,g,🪞,similative,like,similative like (type resemblance),mirror shows a reflection; like is a counterpart of the model in /b/,relations.md#beginner
-umul,h,🪞,similative,exactly-like,similative exactly like (manner match),mirror shows a reflection; -l locks the match to the model in /b/,relations.md#exactly-like
-umul,g,🪞,similative,exactly-like,similative exactly like (type match),mirror shows a reflection; -l locks the match to the model in /b/,relations.md#exactly-like
-ehem,h,💱,exchange,in-exchange-for,exchange in-exchange-for (consideration / countervalue),currency arrows swap one for another; in-exchange-for is the other side of the swap in /b/,relations.md#exchange
-ehem,g,💱,exchange,in-exchange-for,exchange in-exchange-for (consideration / countervalue),currency arrows swap one for another; in-exchange-for is the other side of the swap in /b/,relations.md#exchange
-adem,h,🪪,proxy,on-behalf-of,proxy on-behalf-of (authorized agency),id card stands as an authorized face; on-behalf-of is whose agency /b/ holds,relations.md#proxy
-adem,g,🪪,proxy,on-behalf-of,proxy on-behalf-of (authorized agency),id card stands as an authorized face; on-behalf-of is whose agency /b/ holds,relations.md#proxy
-obum,g,☝️,stimulus,stimulus,stimulus (sake about a noun you do not possess),pointing finger marks the thing you are scoring; stimulus is the noun as a sake-target not a belonging,sakes.md#personal-possession
-obom,h,🦴,of_relation,part-of,of-relation part-of (constitutive piece),bone is a piece of the body; part-of is the meronym in /b/'s whole,relations.md#of-relations
-obom,g,🦴,of_relation,part-of,of-relation part-of (constitutive piece),bone is a piece of the body; part-of is the meronym in /b/'s whole,relations.md#of-relations
-ahem,h,🫙,of_relation,contents,of-relation contents (filling of a vessel),jar stores what is kept; contents is the filling in /b/,relations.md#of-relations
-ahem,g,🫙,of_relation,contents,of-relation contents (filling of a vessel),jar stores what is kept; contents is the filling in /b/,relations.md#of-relations
-uwum,h,🪵,of_relation,material,of-relation material (constitution),wood is the stuff something is made of; material is the stuff in /b/,relations.md#of-relations
-uwum,g,🪵,of_relation,material,of-relation material (constitution),wood is the stuff something is made of; material is the stuff in /b/,relations.md#of-relations
-agum,h,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,relations.md#of-relations
-agum,g,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,relations.md#of-relations
-egol,th,🟢,deontic,PERMIT-allowed,permission from a rule policy or formal right (no one in particular grants it),green light on a standing signal; allowed is the rule saying go,sakes.md#permission
-egom,th,🟢,deontic,PERMIT-granted,permission granted by a person (speaker by default or the /b/ grantor),green light switched on by someone; granted permission is a person saying go,sakes.md#permission
-egor,th,🟢,deontic,PERMIT-tolerated,tacit permission (no one objected; nobody granted it),green light nobody switched off; tolerated is no one saying stop,sakes.md#permission
-edel,th,⛔,deontic,FORBID-disallowed,disallowed by a rule policy or formal ban,standing no-entry sign; the rule blocks the way,sakes.md#permission
-edem,th,⛔,deontic,FORBID-forbidden,forbidden by a person (speaker by default or the /b/ forbidder),no-entry sign put up by someone; a person blocks the way,sakes.md#permission
-eder,th,⛔,deontic,FORBID-frowned-on,tacitly disapproved (no one forbade it outright),no-entry sign half-raised; nobody said no but it is not welcome,sakes.md#permission
-umel,th,📝,deontic,REQUIRE-rule,required by a rule policy or law (no one in particular demands it),memo of standing policy; a rule on paper says you must,sakes.md#requirement
-umem,th,📝,deontic,REQUIRE-demanded,required by a person (speaker by default or the /b/ who demands it),memo handed to you by someone; a person says you must,sakes.md#requirement
-umer,th,📝,deontic,REQUIRE-expected,expected by custom (no rule and no one demanding it),unwritten memo everyone knows; you are supposed to,sakes.md#requirement
-uxegol,h,🟢,deontic,CONSENT-contract,consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms,green light signed in advance by the one it happens to; they agreed on paper,sakes.md#consent
-uxegom,h,🟢,deontic,CONSENT-given,consent given outright by the affected (the /b/ or else the actor); revocable any time,green light from the one it happens to; they said yes,sakes.md#consent
-uxegor,h,🟢,deontic,CONSENT-assumed,consent assumed or inferred from the affected (the /b/ or else the actor),green light guessed from the one it happens to; I think they're OK with it,sakes.md#consent
-uxedel,h,⛔,deontic,CONSENT-opted-out,binding refusal by the affected (a settled opt-out),no-entry sign signed by the one it happens to; they opted out for good,sakes.md#consent
-uxedem,h,⛔,deontic,CONSENT-refused,consent refused outright by the affected (withdraws any earlier revocable yes),no-entry sign from the one it happens to; they said no,sakes.md#consent
-uxeder,h,⛔,deontic,CONSENT-unlikely,consent presumed absent from the affected (they probably don't want it),no-entry sign guessed from the one it happens to; they probably don't want it,sakes.md#consent
-ohal,h,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
-ohal,w,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
-oham,h,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,knowing.md#phasal
-oham,w,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,knowing.md#phasal
-ohar,h,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,knowing.md#phasal
-ohar,w,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,knowing.md#phasal
-agel,h,⚓,phasal,still.lasting,STILL phasal (the state continues); -l not expected to change back,anchor holds the ship where it was,knowing.md#phasal
-agel,w,⚓,phasal,still.lasting,STILL phasal (the state continues); -l not expected to change back,anchor holds the ship where it was,knowing.md#phasal
-agem,h,⚓,phasal,still,STILL phasal (the state continues); -m could change,anchor holds the ship where it was,knowing.md#phasal
-agem,w,⚓,phasal,still,STILL phasal (the state continues); -m could change,anchor holds the ship where it was,knowing.md#phasal
-ager,h,⚓,phasal,still.for-now,STILL phasal (the state continues); -r for now: about to end,anchor holds the ship where it was,knowing.md#phasal
-ager,w,⚓,phasal,still.for-now,STILL phasal (the state continues); -r for now: about to end,anchor holds the ship where it was,knowing.md#phasal
-uzel,h,🌱,phasal,not-yet.lasting,NOT-YET phasal (the change is expected but has not happened); -l not expected to change back,seedling has not grown up yet,knowing.md#phasal
-uzel,w,🌱,phasal,not-yet.lasting,NOT-YET phasal (the change is expected but has not happened); -l not expected to change back,seedling has not grown up yet,knowing.md#phasal
-uzem,h,🌱,phasal,not-yet,NOT-YET phasal (the change is expected but has not happened); -m could change,seedling has not grown up yet,knowing.md#phasal
-uzem,w,🌱,phasal,not-yet,NOT-YET phasal (the change is expected but has not happened); -m could change,seedling has not grown up yet,knowing.md#phasal
-uzer,h,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,knowing.md#phasal
-uzer,w,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,knowing.md#phasal
-ewel,h,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,knowing.md#phasal
-ewel,w,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,knowing.md#phasal
-ewem,h,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,knowing.md#phasal
-ewem,w,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,knowing.md#phasal
-ewer,h,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,knowing.md#phasal
-ewer,w,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,knowing.md#phasal
-udul,h,🧪,attempt,ATTEMPT-committed,attempt mood committed (keep going until it works or is ruled out),test tube runs the experiment; a committed attempt keeps testing until it settles,intention.md#try
-udum,h,🧪,attempt,ATTEMPT-unstated,attempt mood (commitment unstated),test tube tries a sample; an attempt is testing whether it works,intention.md#try
-udur,h,🧪,attempt,ATTEMPT-trial,attempt mood trial run (low-stakes probe; failing is useful data),test tube tries a small sample; a trial run is a probe whose failure still teaches,intention.md#try
-ohul,th,🌠,want,WANT-lasting,want mood lasting (a wish that keeps returning),shooting star grants a wish; a lasting want is a wish that keeps coming back,intention.md#want
-ohum,th,🌠,want,WANT-unstated,want mood (duration unstated),wishing on a star; a want is wishing for a thing or an act,intention.md#want
-ohur,th,🌠,want,WANT-passing,want mood passing (a whim that fades),shooting star streaks past; a passing want fades quickly,intention.md#want
-azem,w,🧦,pairing,respectively,respective pairing (item N of one list goes with item N of the other),socks sort into matched pairs; respectively matches each item to its partner,joins.md#respectively
-elel,g,🔤,mention,MENTION,mention marker (the span is a word or phrase as spelling),letters spell a word; a mention is a word as its letters,spans.md#mention
-elen,g,🔤,mention,NAME.MENTION,name-string mention marker (the span is a name as spelling),letters spell a name; the name-string is a name as its letters,spans.md#mention
+edam,h,🥪,locative,between,locative between (two landmarks),sandwich sits in the layer between sides; between takes a join of two landmarks,relations.md#locative-relations
+edam,g,🥪,locative,between,locative between (two landmarks),sandwich sits in the layer between sides; between takes a join of two landmarks,relations.md#locative-relations
+ohem,h,🌉,locative,across,locative across (edge to far edge of one landmark),bridge spans the gap; across is reaching from one side to the other,relations.md#locative-relations
+ohem,g,🌉,locative,across,locative across (edge to far edge of one landmark),bridge spans the gap; across is reaching from one side to the other,relations.md#locative-relations
+evam,h,🎠,locative,around,locative around (figure on all sides of one landmark),carousel horses ride on all sides of the center pole; around is surrounding one landmark,relations.md#locative-relations
+evam,g,🎠,locative,around,locative around (figure on all sides of one landmark),carousel horses ride on all sides of the center pole; around is surrounding one landmark,relations.md#locative-relations
+ewom,h,🪞,similative,like,similative like (manner resemblance),mirror shows a reflection; like is resembling the model in /b/,clause.md#extra-nouns
+ewom,g,🪞,similative,like,similative like (type resemblance),mirror shows a reflection; like is a counterpart of the model in /b/,relations.md#beginner
+ewol,h,🪞,similative,exactly-like,similative exactly like (manner match),mirror shows a reflection; -l locks the match to the model in /b/,relations.md#exactly-like
+ewol,g,🪞,similative,exactly-like,similative exactly like (type match),mirror shows a reflection; -l locks the match to the model in /b/,relations.md#exactly-like
+eham,h,💱,exchange,in-exchange-for,exchange in-exchange-for (consideration / countervalue),currency arrows swap one for another; in-exchange-for is the other side of the swap in /b/,relations.md#exchange
+eham,g,💱,exchange,in-exchange-for,exchange in-exchange-for (consideration / countervalue),currency arrows swap one for another; in-exchange-for is the other side of the swap in /b/,relations.md#exchange
+agom,h,🪪,proxy,on-behalf-of,proxy on-behalf-of (authorized agency),id card stands as an authorized face; on-behalf-of is whose agency /b/ holds,relations.md#proxy
+agom,g,🪪,proxy,on-behalf-of,proxy on-behalf-of (authorized agency),id card stands as an authorized face; on-behalf-of is whose agency /b/ holds,relations.md#proxy
+oyem,g,☝️,stimulus,stimulus,stimulus (sake about a noun you do not possess),pointing finger marks the thing you are scoring; stimulus is the noun as a sake-target not a belonging,sakes.md#personal-possession
+obem,h,🦴,of_relation,part-of,of-relation part-of (constitutive piece),bone is a piece of the body; part-of is the meronym in /b/'s whole,relations.md#of-relations
+obem,g,🦴,of_relation,part-of,of-relation part-of (constitutive piece),bone is a piece of the body; part-of is the meronym in /b/'s whole,relations.md#of-relations
+adam,h,🫙,of_relation,contents,of-relation contents (filling of a vessel),jar stores what is kept; contents is the filling in /b/,relations.md#of-relations
+adam,g,🫙,of_relation,contents,of-relation contents (filling of a vessel),jar stores what is kept; contents is the filling in /b/,relations.md#of-relations
+ulem,h,🪵,of_relation,material,of-relation material (constitution),wood is the stuff something is made of; material is the stuff in /b/,relations.md#of-relations
+ulem,g,🪵,of_relation,material,of-relation material (constitution),wood is the stuff something is made of; material is the stuff in /b/,relations.md#of-relations
+aham,h,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,relations.md#of-relations
+aham,g,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,relations.md#of-relations
+olel,th,🟢,deontic,PERMIT-allowed,permission from a rule policy or formal right (no one in particular grants it),green light on a standing signal; allowed is the rule saying go,sakes.md#permission
+olem,th,🟢,deontic,PERMIT-granted,permission granted by a person (speaker by default or the /b/ grantor),green light switched on by someone; granted permission is a person saying go,sakes.md#permission
+oler,th,🟢,deontic,PERMIT-tolerated,tacit permission (no one objected; nobody granted it),green light nobody switched off; tolerated is no one saying stop,sakes.md#permission
+egul,th,⛔,deontic,FORBID-disallowed,disallowed by a rule policy or formal ban,standing no-entry sign; the rule blocks the way,sakes.md#permission
+egum,th,⛔,deontic,FORBID-forbidden,forbidden by a person (speaker by default or the /b/ forbidder),no-entry sign put up by someone; a person blocks the way,sakes.md#permission
+egur,th,⛔,deontic,FORBID-frowned-on,tacitly disapproved (no one forbade it outright),no-entry sign half-raised; nobody said no but it is not welcome,sakes.md#permission
+ugal,th,📝,deontic,REQUIRE-rule,required by a rule policy or law (no one in particular demands it),memo of standing policy; a rule on paper says you must,sakes.md#requirement
+ugam,th,📝,deontic,REQUIRE-demanded,required by a person (speaker by default or the /b/ who demands it),memo handed to you by someone; a person says you must,sakes.md#requirement
+ugar,th,📝,deontic,REQUIRE-expected,expected by custom (no rule and no one demanding it),unwritten memo everyone knows; you are supposed to,sakes.md#requirement
+uxolel,h,🟢,deontic,CONSENT-contract,consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms,green light signed in advance by the one it happens to; they agreed on paper,sakes.md#consent
+uxolem,h,🟢,deontic,CONSENT-given,consent given outright by the affected (the /b/ or else the actor); revocable any time,green light from the one it happens to; they said yes,sakes.md#consent
+uxoler,h,🟢,deontic,CONSENT-assumed,consent assumed or inferred from the affected (the /b/ or else the actor),green light guessed from the one it happens to; I think they're OK with it,sakes.md#consent
+uxegul,h,⛔,deontic,CONSENT-opted-out,binding refusal by the affected (a settled opt-out),no-entry sign signed by the one it happens to; they opted out for good,sakes.md#consent
+uxegum,h,⛔,deontic,CONSENT-refused,consent refused outright by the affected (withdraws any earlier revocable yes),no-entry sign from the one it happens to; they said no,sakes.md#consent
+uxegur,h,⛔,deontic,CONSENT-unlikely,consent presumed absent from the affected (they probably don't want it),no-entry sign guessed from the one it happens to; they probably don't want it,sakes.md#consent
+avol,h,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
+avol,w,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
+avom,h,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,knowing.md#phasal
+avom,w,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,knowing.md#phasal
+avor,h,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,knowing.md#phasal
+avor,w,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,knowing.md#phasal
+awul,h,⚓,phasal,still.lasting,STILL phasal (the state continues); -l not expected to change back,anchor holds the ship where it was,knowing.md#phasal
+awul,w,⚓,phasal,still.lasting,STILL phasal (the state continues); -l not expected to change back,anchor holds the ship where it was,knowing.md#phasal
+awum,h,⚓,phasal,still,STILL phasal (the state continues); -m could change,anchor holds the ship where it was,knowing.md#phasal
+awum,w,⚓,phasal,still,STILL phasal (the state continues); -m could change,anchor holds the ship where it was,knowing.md#phasal
+awur,h,⚓,phasal,still.for-now,STILL phasal (the state continues); -r for now: about to end,anchor holds the ship where it was,knowing.md#phasal
+awur,w,⚓,phasal,still.for-now,STILL phasal (the state continues); -r for now: about to end,anchor holds the ship where it was,knowing.md#phasal
+elel,h,🌱,phasal,not-yet.lasting,NOT-YET phasal (the change is expected but has not happened); -l not expected to change back,seedling has not grown up yet,knowing.md#phasal
+elel,w,🌱,phasal,not-yet.lasting,NOT-YET phasal (the change is expected but has not happened); -l not expected to change back,seedling has not grown up yet,knowing.md#phasal
+elem,h,🌱,phasal,not-yet,NOT-YET phasal (the change is expected but has not happened); -m could change,seedling has not grown up yet,knowing.md#phasal
+elem,w,🌱,phasal,not-yet,NOT-YET phasal (the change is expected but has not happened); -m could change,seedling has not grown up yet,knowing.md#phasal
+eler,h,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,knowing.md#phasal
+eler,w,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,knowing.md#phasal
+uvul,h,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,knowing.md#phasal
+uvul,w,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,knowing.md#phasal
+uvum,h,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,knowing.md#phasal
+uvum,w,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,knowing.md#phasal
+uvur,h,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,knowing.md#phasal
+uvur,w,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,knowing.md#phasal
+owal,h,🧪,attempt,ATTEMPT-committed,attempt mood committed (keep going until it works or is ruled out),test tube runs the experiment; a committed attempt keeps testing until it settles,intention.md#try
+owam,h,🧪,attempt,ATTEMPT-unstated,attempt mood (commitment unstated),test tube tries a sample; an attempt is testing whether it works,intention.md#try
+owar,h,🧪,attempt,ATTEMPT-trial,attempt mood trial run (low-stakes probe; failing is useful data),test tube tries a small sample; a trial run is a probe whose failure still teaches,intention.md#try
+alel,th,🌠,want,WANT-lasting,want mood lasting (a wish that keeps returning),shooting star grants a wish; a lasting want is a wish that keeps coming back,intention.md#want
+alem,th,🌠,want,WANT-unstated,want mood (duration unstated),wishing on a star; a want is wishing for a thing or an act,intention.md#want
+aler,th,🌠,want,WANT-passing,want mood passing (a whim that fades),shooting star streaks past; a passing want fades quickly,intention.md#want
+ubam,w,🧦,pairing,respectively,respective pairing (item N of one list goes with item N of the other),socks sort into matched pairs; respectively matches each item to its partner,joins.md#respectively
+egel,g,🔤,mention,MENTION,mention marker (the span is a word or phrase as spelling),letters spell a word; a mention is a word as its letters,spans.md#mention
+egen,g,🔤,mention,NAME.MENTION,name-string mention marker (the span is a name as spelling),letters spell a name; the name-string is a name as its letters,spans.md#mention

@@ -4,7 +4,7 @@ How to read and write one Agebon **clause** (roughly, one simple sentence): who 
 
 ## Beginner {#beginner}
 
-You already write a [citation](word-endings.md): root + ending (`udozol`, `ewurel`, `uzozen`). In a **sentence**, put a **role letter** in front. That first letter says what the word is doing (who acts, the action, and so on). The root and ending stay the ones you already chose; only the first letter changes.
+You already write a [citation](word-endings.md): root + ending (`udozol`, `owurel`, `uzozen`). In a **sentence**, put a **role letter** in front. That first letter says what the word is doing (who acts, the action, and so on). The root and ending stay the ones you already chose; only the first letter changes.
 
 ### Who acts and the action
 
@@ -12,7 +12,7 @@ You already write a [citation](word-endings.md): root + ending (`udozol`, `ewure
 
 A period ends the statement. With only a subject and a verb, the order is **Subject – Verb**.
 
-> `zudozol vewurel.`
+> `zudozol vowurel.`
 >
 > z-dog | v-walk
 >
@@ -20,7 +20,7 @@ A period ends the statement. With only a subject and a verb, the order is **Subj
 
 A name you already cite with **-n** (`uzozen`) keeps **-n** in the sentence:
 
-> `zuzozen vewurel.`
+> `zuzozen vowurel.`
 >
 > z-Uzozen | v-walk
 >
@@ -50,19 +50,19 @@ Same meaning, object first:
 
 An **adjective** names a property of a noun (*angry*). Mark it with `/ɡ/` and put it right after the noun it describes. You can stack several adjectives after one noun.
 
-> `zudozol gunomul vewurel.`
+> `zudozol gunemul vowurel.`
 >
 > [z-dog | g-angry] | v-walk
 >
 > "An angry dog walks."
 
-When the root names an event, the adjective says the noun is in the middle of it: `gewurel` after *dog* is *a walking dog* ([in progress](predication.md#in-progress)).
+When the root names an event, the adjective says the noun is in the middle of it: `gowurel` after *dog* is *a walking dog* ([in progress](predication.md#in-progress)).
 
 ### Extra detail on an adjective (`/w/`) {#adjective-detail-w}
 
 To say how strongly a property holds (*very* angry), add a word marked with `/w/` immediately before the adjective. The `/w/` word describes only the adjective right after it, not the noun.
 
-> `zudozol welazom gunomul vewurel.`
+> `zudozol welazom gunemul vowurel.`
 >
 > [z-dog | [w-very | g-angry]] | v-walk
 >
@@ -70,9 +70,9 @@ To say how strongly a property holds (*very* angry), add a word marked with `/w/
 
 ### Adverbs (`/h/`) {#adverbs-h}
 
-An **adverb** says how, when, or where an action happens. Mark it with `/h/`. You may place it anywhere in the sentence, and several adverbs can sit next to each other (`hodurem halozum` *hastily and quietly*). With joined verbs, its place says which verb it describes ([verb-phrase forms](join-across-roles.md#vp-clause-forms)).
+An **adverb** says how, when, or where an action happens. Mark it with `/h/`. You may place it anywhere in the sentence, and several adverbs can sit next to each other (`hedurem halozum` *hastily and quietly*). With joined verbs, its place says which verb it describes ([verb-phrase forms](join-across-roles.md#vp-clause-forms)).
 
-> `zudozol hodurem vewurel.`
+> `zudozol hedurem vowurel.`
 >
 > z-dog | h-haste | v-walk
 >
@@ -82,7 +82,7 @@ An **adverb** says how, when, or where an action happens. Mark it with `/h/`. Yo
 
 An adverb describes the action. A **stance** word describes how **you**, the speaker, stand toward the whole claim: how sure you are, how you know it, why it holds, or whether it is only imagined. Mark it with `/th/`. Like `/h/`, it may sit anywhere in the sentence. `th` counts as one letter ([phonology](phonology.md#consonants)).
 
-> `zudozol thovemom vewurel.`
+> `zudozol thevemom vowurel.`
 >
 > z-dog | th-doubt | v-walk
 >
@@ -108,7 +108,7 @@ An ability does not say the act happens: *can walk* is not *walks*. A try and a 
 
 The listener goes by position, not meaning: a `/b/` word right after any `/ɡ/`, `/h/`, or `/th/` word completes that word, even a word that names no relation. It is never read as the recipient described below, so do not put a recipient there.
 
-> `humum buzozen`
+> `hewom buzozen`
 >
 > [h-like | b-Uzozen]
 >
@@ -116,13 +116,13 @@ The listener goes by position, not meaning: a `/b/` word right after any `/ɡ/`,
 
 A `/w/` word still goes before the host, so the host and its `/b/` stay side by side.
 
-> `welazom humum buzozen`
+> `welazom hewom buzozen`
 >
 > [[w-very | h-like] | b-Uzozen]
 >
 > "very like Uzozen"
 
-> `zudozol vezuvol humum buzozen.`
+> `zudozol vezuvol hewom buzozen.`
 >
 > z-dog | v-sleep | [h-like | b-Uzozen]
 >
@@ -136,7 +136,7 @@ A `/w/` word still goes before the host, so the host and its `/b/` stay side by 
 >
 > "Uzozen tells Olazun."
 
-**Compare with:** `humum bolazun` is *like Olazun*, because a `/b/` right after `/h/` completes it. The usual place after the verb keeps the person who receives clear of any `/ɡ/`, `/h/`, or `/th/` word. If you move it elsewhere, make sure it does not come right after one: `bolazun hodurem`, or after a finished pair (`humum buzozen bolazun`).
+**Compare with:** `hewom bolazun` is *like Olazun*, because a `/b/` right after `/h/` completes it. The usual place after the verb keeps the person who receives clear of any `/ɡ/`, `/h/`, or `/th/` word. If you move it elsewhere, make sure it does not come right after one: `bolazun hedurem`, or after a finished pair (`hewom buzozen bolazun`).
 
 ### Role letters {#role-letters}
 
@@ -159,18 +159,18 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 **Setting:** a bank
 
-The word bank has two tables. **New words** are introduced here: **English** is what you produce, and **Agebon** is its citation, or the word with its role letter when that letter is part of the English (*pay* is `vamol`, the money root as a verb). Then the **Cue** names the citation's sense (💰 from *money*). **Review** lists words from earlier checkpoints.
+The word bank has two tables. **New words** are introduced here: **English** is what you produce, and **Agebon** is its citation, or the word with its role letter when that letter is part of the English (*pay* is `varal`, the money root as a verb). Then the **Cue** names the citation's sense (💰 from *money*). **Review** lists words from earlier checkpoints.
 
 **New words:**
 
 | English | Agebon | Cue |
 |---------|--------|-----|
-| *pay* | `vamol` | 💰 from *money* |
-| *angry* | `unomul` | 😠 |
+| *pay* | `varal` | 💰 from *money* |
+| *angry* | `unemul` | 😠 |
 | *very* | `welazom` | 🐘 from *elephant*: big, as a degree |
-| *haste* | `hodurem` | 💨 from *dash* |
-| *doubt* | `thovemom` | 🤔 from *think* |
-| *like* | `humum` | 🪞 from *mirror*: the image is like the model |
+| *haste* | `hedurem` | 💨 from *dash* |
+| *doubt* | `thevemom` | 🤔 from *think* |
+| *like* | `hewom` | 🪞 from *mirror*: the image is like the model |
 
 **Review:**
 
@@ -178,83 +178,83 @@ The word bank has two tables. **New words** are introduced here: **English** is 
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
-| *Uhelan* | `uhelan` |
+| *Ahelan* | `ahelan` |
 | *find* | `vumewol` |
 | *eraser* | `urewul` |
-| *book* | `ugul` |
-| *bell* | `aboral` |
+| *book* | `egal` |
+| *bell* | `eboral` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
 **1.** *Uzozen pays Olazun.*
 
 ::: details Show answer
-`zuzozen vamol bolazun.`
+`zuzozen varal bolazun.`
 
 z-Uzozen | v-pay | b-Olazun
 
-**Also correct:** `zuzozen bolazun vamol.`
+**Also correct:** `zuzozen bolazun varal.`
 :::
 
 **2.** *A very angry Olazun finds money.*
 
 ::: details Show answer
-`zolazun welazom gunomul damol vumewol.`
+`zolazun welazom gunemul daral vumewol.`
 
 [z-Olazun | [w-very | g-angry]] | d-money | v-find
 
-**Also correct:** `zolazun welazom gunomul vumewol damol.`
+**Also correct:** `zolazun welazom gunemul vumewol daral.`
 :::
 
-**3.** *Uhelan hastily finds an eraser.*
+**3.** *Ahelan hastily finds an eraser.*
 
 ::: details Show answer
-`zuhelan hodurem durewul vumewol.`
+`zahelan hedurem durewul vumewol.`
 
-z-Uhelan | h-haste | d-eraser | v-find
+z-Ahelan | h-haste | d-eraser | v-find
 
-**Also correct:** `zuhelan durewul vumewol hodurem.`
+**Also correct:** `zahelan durewul vumewol hedurem.`
 :::
 
-**4.** *I doubt that Uzozen pays Uhelan.*
+**4.** *I doubt that Uzozen pays Ahelan.*
 
 ::: details Show answer
-`zuzozen thovemom vamol buhelan.`
+`zuzozen thevemom varal bahelan.`
 
-z-Uzozen | th-doubt | v-pay | b-Uhelan
+z-Uzozen | th-doubt | v-pay | b-Ahelan
 
-**Also correct:** `zuzozen buhelan thovemom vamol.`
+**Also correct:** `zuzozen bahelan thevemom varal.`
 :::
 
-**5.** *Uhelan finds Uzozen.*
+**5.** *Ahelan finds Uzozen.*
 
 ::: details Show answer
-`zuhelan duzozen vumewol.`
+`zahelan duzozen vumewol.`
 
-z-Uhelan | d-Uzozen | v-find
+z-Ahelan | d-Uzozen | v-find
 
-**Also correct:** `zuhelan vumewol duzozen.`
+**Also correct:** `zahelan vumewol duzozen.`
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `dolazun zuhelan vumewol.`
+**1.** `dolazun zahelan vumewol.`
 
 ::: details Show answer
-d-Olazun | z-Uhelan | v-find
+d-Olazun | z-Ahelan | v-find
 
-*Uhelan finds Olazun.*
+*Ahelan finds Olazun.*
 :::
 
-**2.** `zuhelan welazom hodurem vamol buzozen.`
+**2.** `zahelan welazom hedurem varal buzozen.`
 
 ::: details Show answer
-z-Uhelan | [w-very | h-haste] | v-pay | b-Uzozen
+z-Ahelan | [w-very | h-haste] | v-pay | b-Uzozen
 
-*Uhelan pays Uzozen very hastily.*
+*Ahelan pays Uzozen very hastily.*
 :::
 
-**3.** `zolazun daboral vumewol humum buzozen.`
+**3.** `zolazun deboral vumewol hewom buzozen.`
 
 ::: details Show answer
 z-Olazun | d-bell | v-find | [h-like | b-Uzozen]
@@ -262,15 +262,15 @@ z-Olazun | d-bell | v-find | [h-like | b-Uzozen]
 *Olazun finds a bell, like Uzozen.*
 :::
 
-**4.** `zuhelan thovemom dugul vumewol.`
+**4.** `zahelan thevemom degal vumewol.`
 
 ::: details Show answer
-z-Uhelan | th-doubt | d-book | v-find
+z-Ahelan | th-doubt | d-book | v-find
 
-*I doubt that Uhelan finds a book.*
+*I doubt that Ahelan finds a book.*
 :::
 
-**5.** `buzozen zolazun gunomul vamol.`
+**5.** `buzozen zolazun gunemul varal.`
 
 ::: details Show answer
 b-Uzozen | [z-Olazun | g-angry] | v-pay
@@ -290,24 +290,24 @@ z-Uzozen | d-Olazun | v-find
 The finder takes `/z/` and the one found takes `/d/`; the other form has Olazun finding Uzozen.
 :::
 
-**2.** *Olazun pays Uzozen hastily.* `zolazun hodurem buzozen vamol.` or `zolazun hodurem vamol buzozen.`
+**2.** *Olazun pays Uzozen hastily.* `zolazun hedurem buzozen varal.` or `zolazun hedurem varal buzozen.`
 
 ::: details Show answer
-`zolazun hodurem vamol buzozen.`
+`zolazun hedurem varal buzozen.`
 
 z-Olazun | h-haste | v-pay | b-Uzozen
 
-A `/b/` word right after an `/h/` word completes it, so the person paid goes after the verb, not right after `hodurem`.
+A `/b/` word right after an `/h/` word completes it, so the person paid goes after the verb, not right after `hedurem`.
 :::
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *An angry Uhelan pays Olazun.* <!-- lint: error -->`zuhelan gunomul bolazun vamol.`
+**1.** *An angry Ahelan pays Olazun.* <!-- lint: error -->`zahelan gunemul bolazun varal.`
 
 ::: details Show answer
-`zuhelan gunomul vamol bolazun.`
+`zahelan gunemul varal bolazun.`
 
-[z-Uhelan | g-angry] | v-pay | b-Olazun
+[z-Ahelan | g-angry] | v-pay | b-Olazun
 
 Right after the `/ɡ/` word, `bolazun` completes *angry* instead of naming who is paid.
 :::
@@ -322,39 +322,39 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 English puts the adjective before the noun (*an angry dog*). Agebon can too: add **`l`** as the second letter (`/ɡ/` + **l** + root + ending), and that adjective describes the **next** noun instead of the one before it. This lets you choose the order for meter or emphasis, and it frees the spot after the noun for another adjective. (cue: **l** ≈ lean: the word leans toward the noun ahead.)
 
-> `glunomul zudozol.`
+> `glunemul zudozol.`
 >
 > [gl-angry | z-dog]
 >
 > "an angry dog"
 
-A `/b/` word still follows that adjective, and a `/w/` word still sits immediately before it (`welazom glunomul zudozol` = *a very angry dog*). This extra **`l`** goes only on adjectives (`/ɡ/`). A noun must come after it: with no noun to lean on, write a plain `/ɡ/` adjective after the noun instead (`zudozol gunomul`).
+A `/b/` word still follows that adjective, and a `/w/` word still sits immediately before it (`welazom glunemul zudozol` = *a very angry dog*). This extra **`l`** goes only on adjectives (`/ɡ/`). A noun must come after it: with no noun to lean on, write a plain `/ɡ/` adjective after the noun instead (`zudozol gunemul`).
 
 A [family name](word-endings.md#multipart-names) is a `/ɡ/` word too, so **`gl-`** puts it first, for a culture that names people family first. It leans on a [call](speech-moves.md#vocative) the same way.
 
-> `glalowen zohun vewurel.`
+> `glalowen zalen vowurel.`
 >
-> [gl-Alowen | z-Ohun] | v-walk
+> [gl-Alowen | z-Alen] | v-walk
 >
-> "Alowen Ohun walks."
+> "Alowen Alen walks."
 
-> `glalowen yohun.`
+> `glalowen yalen.`
 >
-> [gl-Alowen | y-Ohun]
+> [gl-Alowen | y-Alen]
 >
-> "Alowen Ohun!" (calling Alowen Ohun)
+> "Alowen Alen!" (calling Alowen Alen)
 
 ### Complex chaining {#complex-chaining}
 
-A relation adjective and its hosted `/b/` (*the same as Uzozen*: **`gugol`** + `/b/`) work as one unit after a noun. A `/w/` word that grades the relation goes immediately before the `/ɡ/` word, as usual. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun. (cue: 🪙 *coin*: two faces of one thing.)
+A relation adjective and its hosted `/b/` (*the same as Uzozen*: **`gorol`** + `/b/`) work as one unit after a noun. A `/w/` word that grades the relation goes immediately before the `/ɡ/` word, as usual. You can keep chaining: a plain adjective after that pair describes the **extra noun**, not the first noun. (cue: 🪙 *coin*: two faces of one thing.)
 
-> `zagayul welazom gugol buzozen.`
+> `zagayul welazom gorol buzozen.`
 >
 > z-guard | [[w-very | g-SAME] | b-Uzozen]
 >
 > "a guard who is the very same person as Uzozen"
 
-> `zagayul gugol buzozen gozumol.`
+> `zagayul gorol buzozen guzemol.`
 >
 > z-guard | [g-SAME | [b-Uzozen | g-sleepy]]
 >
@@ -362,7 +362,7 @@ A relation adjective and its hosted `/b/` (*the same as Uzozen*: **`gugol`** + `
 
 The same holds after an `/h/` or `/th/` host: an adjective after its `/b/` describes that extra noun.
 
-> `zuzozen vezuvol humum budozol godamul.`
+> `zuzozen vezuvol hewom budozol godamul.`
 >
 > z-Uzozen | v-sleep | [h-like | [b-dog | g-tired]]
 >
@@ -370,7 +370,7 @@ The same holds after an `/h/` or `/th/` host: an adjective after its `/b/` descr
 
 Because a second relation after the pair would attach to the extra noun, you cannot put two relation adjectives **after** the same first noun. To keep both on that noun in one clause, put one [before the noun](#left-bound-adjectives) with **`gl-`**; its `/b/` still follows it. Otherwise use [another sentence](dependents.md#which-noun).
 
-> `glugol buzozen zagayul gugol bobayel.`
+> `glorol buzozen zagayul gorol bobayel.`
 >
 > [[gl-SAME | b-Uzozen] | z-guard] | [g-SAME | b-police]
 >
@@ -388,30 +388,30 @@ Beginner used **`welazom`** *very* before an adjective. The same `/w/` slot take
 | Agebon | English | Cue |
 |--------|---------|-----|
 | `welazom` | *very* | 🐘: big, as a degree |
-| `wehalal` | *extremely* / *overwhelmingly* | 🌊: an ocean of it |
+| `wohalal` | *extremely* / *overwhelmingly* | 🌊: an ocean of it |
 | `wamezom` | *slightly* / *a bit* | 🐁: small, as a degree |
 | `wadowom` | *quite* / *fairly* | 🔉: medium volume, not loud or soft |
 | `wuhuram` | *completely* / *totally* / *entirely* / *fully* | 💯: a hundred is the whole |
 
-> `zudozol welazom hodurem vewurel.`
+> `zudozol welazom hedurem vowurel.`
 >
 > z-dog | [w-very | h-haste] | v-walk
 >
 > "A dog walks very hastily."
 
-> `zudozol wehalal gunomul vewurel.`
+> `zudozol wohalal gunemul vowurel.`
 >
 > [z-dog | [w-ocean | g-angry]] | v-walk
 >
 > "An extremely angry dog walks."
 
-> `zudozol wamezom gunomul vewurel.`
+> `zudozol wamezom gunemul vowurel.`
 >
 > [z-dog | [w-small | g-angry]] | v-walk
 >
 > "A slightly angry dog walks."
 
-> `zudozol wadowom gunomul vewurel.`
+> `zudozol wadowom gunemul vowurel.`
 >
 > [z-dog | [w-quite | g-angry]] | v-walk
 >
@@ -419,15 +419,15 @@ Beginner used **`welazom`** *very* before an adjective. The same `/w/` slot take
 
 The same words also go right before a reaction, to say how strongly it holds ([describing a reaction](speech-moves.md#describe-turn-word)).
 
-Two stock words go in `/h/` and describe the verb itself. Use **`halurem`** *kind of* / *sort of* to hedge the action, and **`hurugem`** for *again*.
+Two stock words go in `/h/` and describe the verb itself. Use **`hoyurem`** *kind of* / *sort of* to hedge the action, and **`hurugem`** for *again*.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Agebon | English | Cue |
 |--------|---------|-----|
-| `halurem` | *kind of* / *sort of* | 📈: some degree, not a full one |
+| `hoyurem` | *kind of* / *sort of* | 📈: some degree, not a full one |
 | `hurugem` | *again* | 🔁: the same thing once more |
 
-> `zuzozen halurem vewurel.`
+> `zuzozen hoyurem vowurel.`
 >
 > z-Uzozen | h-kind-of | v-walk
 >
@@ -449,7 +449,7 @@ English uses the passive (*The cat was seen*, *Mistakes were made*) to avoid nam
 >
 > "Uzozen was seen."
 
-**Compare with:** [`zunan`](pronouns.md#special-pronouns) *someone* says that somebody did it, without saying who. With no subject at all, the sentence does not mention a doer. A missing subject never means the [topic](pronouns.md#topic-pronoun): to make the topic the doer, write `zozan`.
+**Compare with:** [`zumon`](pronouns.md#special-pronouns) *someone* says that somebody did it, without saying who. With no subject at all, the sentence does not mention a doer. A missing subject never means the [topic](pronouns.md#topic-pronoun): to make the topic the doer, write `zalon`.
 
 ### Practice {#intermediate-practice}
 
@@ -473,14 +473,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
-| *Uhelan* | `uhelan` |
+| *Ahelan* | `ahelan` |
 | *police* | `obayel` |
 | *guard* | `agayul` |
-| **SAME** | `ugol` |
-| *sleepy* | `ozumol` |
+| **SAME** | `orol` |
+| *sleepy* | `uzemol` |
 | *very* | `welazom` |
-| *ocean* | `wehalal` |
-| *haste* | `hodurem` |
+| *ocean* | `wohalal` |
+| *haste* | `hedurem` |
 | *umbrella* | `omobul` |
 | *see* | `vawebol` |
 | *find* | `vumewol` |
@@ -491,7 +491,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *A sleepy Olazun stands.* (*sleepy* first)
 
 ::: details Show answer
-`glozumol zolazun vawuvol.`
+`gluzemol zolazun vawuvol.`
 
 [gl-sleepy | z-Olazun] | v-stand
 :::
@@ -499,19 +499,19 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **2.** *The police officer, who is the same person as sleepy Uzozen, stands up.*
 
 ::: details Show answer
-`zobayel gugol buzozen gozumol vawuvol.`
+`zobayel gorol buzozen guzemol vawuvol.`
 
 [z-police | [g-SAME | [b-Uzozen | g-sleepy]]] | v-stand
 :::
 
-**3.** *Uhelan sees the train again.*
+**3.** *Ahelan sees the train again.*
 
 ::: details Show answer
-`zuhelan dedavel hurugem vawebol.`
+`zahelan dedavel hurugem vawebol.`
 
-z-Uhelan | d-train | h-again | v-see
+z-Ahelan | d-train | h-again | v-see
 
-**Also correct:** `zuhelan hurugem dedavel vawebol.`
+**Also correct:** `zahelan hurugem dedavel vawebol.`
 :::
 
 **4.** *A ticket was seen.*
@@ -525,7 +525,7 @@ d-ticket | v-see
 **5.** *Olazun stands up extremely hastily.*
 
 ::: details Show answer
-`zolazun wehalal hodurem vawuvol.`
+`zolazun wohalal hedurem vawuvol.`
 
 z-Olazun | [w-ocean | h-haste] | v-stand
 :::
@@ -540,7 +540,7 @@ z-Olazun | [d-train | [w-very | g-blue]] | v-see
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `welazom glozumol zobayel vuhohol.`
+**1.** `welazom gluzemol zobayel vuhohol.`
 
 ::: details Show answer
 [[w-very | gl-sleepy] | z-police] | v-sit
@@ -548,7 +548,7 @@ z-Olazun | [d-train | [w-very | g-blue]] | v-see
 *A very sleepy police officer sits.*
 :::
 
-**2.** `glugol buzozen zobayel gugol bagayul.`
+**2.** `glorol buzozen zobayel gorol bagayul.`
 
 ::: details Show answer
 [[gl-SAME | b-Uzozen] | z-police] | [g-SAME | b-guard]
@@ -564,7 +564,7 @@ d-umbrella | v-find
 *An umbrella was found.*
 :::
 
-**4.** `zuzozen welazom hodurem vawuvol.`
+**4.** `zuzozen welazom hedurem vawuvol.`
 
 ::: details Show answer
 z-Uzozen | [w-very | h-haste] | v-stand
@@ -580,24 +580,24 @@ z-train | h-again | v-stand
 *A train stands still again.*
 :::
 
-**6.** `zuhelan dodegel gugol vawebol.`
+**6.** `zahelan dodegel gorol vawebol.`
 
 ::: details Show answer
-z-Uhelan | [d-ticket | g-SAME] | v-see
+z-Ahelan | [d-ticket | g-SAME] | v-see
 
-*Uhelan sees the same ticket.* (as before)
+*Ahelan sees the same ticket.* (as before)
 :::
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzozen sees a police officer who is the same person as sleepy Uhelan.* `zuzozen dobayel gugol buhelan gozumol vawebol.` or `zuzozen dobayel gozumol gugol buhelan vawebol.`
+**1.** *Uzozen sees a police officer who is the same person as sleepy Ahelan.* `zuzozen dobayel gorol bahelan guzemol vawebol.` or `zuzozen dobayel guzemol gorol bahelan vawebol.`
 
 ::: details Show answer
-`zuzozen dobayel gugol buhelan gozumol vawebol.`
+`zuzozen dobayel gorol bahelan guzemol vawebol.`
 
-z-Uzozen | [d-police | [g-SAME | [b-Uhelan | g-sleepy]]] | v-see
+z-Uzozen | [d-police | [g-SAME | [b-Ahelan | g-sleepy]]] | v-see
 
-After the **`gugol`** pair, a plain adjective describes the extra noun; before it, *sleepy* describes the police officer.
+After the **`gorol`** pair, a plain adjective describes the extra noun; before it, *sleepy* describes the police officer.
 :::
 
 **2.** *Olazun was seen.* `dolazun vawebol.` or `zolazun vawebol.`
@@ -671,7 +671,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 | English | Agebon | Cue |
 |---------|--------|-----|
 | *balloon* | `aboval` | 🎈 |
-| *drum* | `emoral` | 🥁 |
+| *drum* | `udoral` | 🥁 |
 | *mask* | `umebul` | 😷 |
 | *box* | `obogal` | 📦 |
 
@@ -681,9 +681,9 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
-| *Uhelan* | `uhelan` |
-| *trumpet* | `adorel` |
-| *haste* | `hodurem` |
+| *Ahelan* | `ahelan` |
+| *trumpet* | `eyorel` |
+| *haste* | `hedurem` |
 | *see* | `vawebol` |
 | *punch* | `vanuvul` |
 | *sneak* | `vazuyul` |
@@ -693,7 +693,7 @@ Short drills for Advanced. Try each item before opening **Show answer**.
 **1.** *Hastily, Uzozen punches a balloon.*
 
 ::: details Show answer
-`hodurem zuzozen daboval vanuvul.`
+`hedurem zuzozen daboval vanuvul.`
 
 h-haste | z-Uzozen | d-balloon | v-punch
 :::
@@ -701,7 +701,7 @@ h-haste | z-Uzozen | d-balloon | v-punch
 **2.** *What does Olazun punch?* *It's a drum that Olazun punches.*
 
 ::: details Show answer
-`zolazun demoral vanuvul.`
+`zolazun dudoral vanuvul.`
 
 z-Olazun | d-drum | v-punch
 
@@ -711,27 +711,27 @@ Nothing is set against the drum, so the plain sentence is enough.
 **3.** *It's a drum, not a trumpet, that Olazun punches.*
 
 ::: details Show answer
-`zolazun &demoral vanuvul.`
+`zolazun &dudoral vanuvul.`
 
 z-Olazun | &d-drum | v-punch
 :::
 
-**4.** *It was Uhelan, not someone else, who saw the mask.*
+**4.** *It was Ahelan, not someone else, who saw the mask.*
 
 ::: details Show answer
-`&zuhelan dumebul vawebol.`
+`&zahelan dumebul vawebol.`
 
-&z-Uhelan | d-mask | v-see
+&z-Ahelan | d-mask | v-see
 :::
 
 #### Agebon → English {#advanced-agebon-to-english}
 
-**1.** `dadorel zuhelan vawebol.`
+**1.** `deyorel zahelan vawebol.`
 
 ::: details Show answer
-d-trumpet | z-Uhelan | v-see
+d-trumpet | z-Ahelan | v-see
 
-*Uhelan sees a trumpet.*
+*Ahelan sees a trumpet.*
 :::
 
 **2.** `zolazun &dobogal vanuvul.`
@@ -742,7 +742,7 @@ z-Olazun | &d-box | v-punch
 *It's a box that Olazun punches.* (not something else)
 :::
 
-**3.** `hodurem zolazun vazuyul.`
+**3.** `hedurem zolazun vazuyul.`
 
 ::: details Show answer
 h-haste | z-Olazun | v-sneak
@@ -750,12 +750,12 @@ h-haste | z-Olazun | v-sneak
 *Hastily, Olazun sneaks.*
 :::
 
-**4.** `dobogal zuhelan hodurem vanuvul.`
+**4.** `dobogal zahelan hedurem vanuvul.`
 
 ::: details Show answer
-d-box | z-Uhelan | h-haste | v-punch
+d-box | z-Ahelan | h-haste | v-punch
 
-*Uhelan hastily punches a box.*
+*Ahelan hastily punches a box.*
 :::
 
 #### What changes {#advanced-what-changes}
@@ -770,14 +770,14 @@ z-Uzozen | d-balloon | v-see
 The first is plain *Uzozen sees a balloon*; the second stresses Uzozen: *it was Uzozen, not someone else*.
 :::
 
-**2.** `zuhelan demoral vawebol.` / `zuhelan demoral &vawebol.`
+**2.** `zahelan dudoral vawebol.` / `zahelan dudoral &vawebol.`
 
 ::: details Show answer
-z-Uhelan | d-drum | v-see
+z-Ahelan | d-drum | v-see
 
-z-Uhelan | d-drum | &v-see
+z-Ahelan | d-drum | &v-see
 
-The second contrasts the act: Uhelan *sees* the drum, as opposed to doing something else to it.
+The second contrasts the act: Ahelan *sees* the drum, as opposed to doing something else to it.
 :::
 
 

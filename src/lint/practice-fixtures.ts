@@ -50,21 +50,21 @@ export const PRACTICE = `### Practice {#beginner-practice}
 |---------|--------|-----|
 | *Uzozen* | \`uzozen\` | 🦢 |
 | *Olazun* | \`olazun\` | 🦁 |
-| *Uhelan* | \`uhelan\` | 🌺 |
+| *Ahelan* | \`ahelan\` | 🌺 |
 | *see* | \`vawebol\` | 👁️ from *eye* |
 | *sit* | \`vuhohol\` | 🪑 from *chair* |
-| *walk* | \`vewurel\` | 🦶 from *foot* |
+| *walk* | \`vowurel\` | 🦶 from *foot* |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *Uhelan sees Uzozen.*
+**1.** *Ahelan sees Uzozen.*
 
 ::: details Show answer
-\`zuhelan duzozen vawebol.\`
+\`zahelan duzozen vawebol.\`
 
-z-Uhelan | d-Uzozen | v-see
+z-Ahelan | d-Uzozen | v-see
 
-**Also correct:** \`duzozen zuhelan vawebol.\`, \`yal zuhelan duzozen vawebol.\`
+**Also correct:** \`duzozen zahelan vawebol.\`, \`yal zahelan duzozen vawebol.\`
 :::
 
 **2.** *Uzozen sits.*
@@ -78,35 +78,35 @@ z-Uzozen | v-sit
 **3.** *Olazun walks.*
 
 ::: details Show answer
-\`zolazun vewurel.\`
+\`zolazun vowurel.\`
 
 z-Olazun | v-walk
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** \`zolazun duhelan vawebol.\`
+**1.** \`zolazun dahelan vawebol.\`
 
 ::: details Show answer
-z-Olazun | d-Uhelan | v-see
+z-Olazun | d-Ahelan | v-see
 
-*Olazun sees Uhelan.*
+*Olazun sees Ahelan.*
 :::
 
-**2.** \`zuhelan vuhohol.\`
+**2.** \`zahelan vuhohol.\`
 
 ::: details Show answer
-z-Uhelan | v-sit
+z-Ahelan | v-sit
 
-*Uhelan sits.*
+*Ahelan sits.*
 :::
 
-**3.** \`zuhelan vewurel.\`
+**3.** \`zahelan vowurel.\`
 
 ::: details Show answer
-z-Uhelan | v-walk
+z-Ahelan | v-walk
 
-*Uhelan walks.*
+*Ahelan walks.*
 :::
 
 #### Pick one {#beginner-pick-one}

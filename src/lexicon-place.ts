@@ -16,7 +16,7 @@ import { HOLDER_HOST_KINDS } from "./parse/classify.ts";
 import { isExtraNounHook } from "./parse/hook-compounds.ts";
 import { placeRoot } from "./place-root.ts";
 import { REPO_ROOT } from "./repo-paths.ts";
-import { holderHostForms, PLACE_KIND, sizeFieldError, tailFieldsError, type Kind, type Shape, type Size } from "./root-tails.ts";
+import { holderHostForms, PLACE_KIND, sizeFieldError, tailFieldsError, tailOf, type Kind, type Shape, type Size } from "./root-tails.ts";
 import { placeTailRoots, tailCompounds, type TailPlaceRow } from "./root-tails-place.ts";
 
 const FREQ_FILE = join(REPO_ROOT, "tmp", "en_50k.txt");
@@ -39,7 +39,7 @@ export type PlaceRow = {
   englishByPos: string;
   /** Current root, if any: its length is kept. */
   root?: string;
-  /** Root tail (`kind`, `shape` columns); a five-letter row needs both, a `named` row only `kind`. */
+  /** Root tail (`kind`, `shape` columns); a three- or five-letter row needs both, a `named` row only `kind`. */
   kind?: string;
   shape?: string;
   /** Middle-vowel preference (`size` column), src/root-tails.ts. */
@@ -58,13 +58,6 @@ function forms(n: number): string[] {
   let out = [""];
   for (let i = 0; i < n; i++) out = out.flatMap((p) => (i % 2 ? C : V).map((letter) => p + letter));
   return out;
-}
-
-function ham(a: string, b: string): number {
-  if (a.length !== b.length) return Infinity;
-  let d = 0;
-  for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) d++;
-  return d;
 }
 
 /** Rarest word in a label; unlisted words rank {@link UNLISTED}. */
@@ -155,8 +148,8 @@ type GroupRule = { kind: boolean; pos: boolean };
 type PairRule = GroupRule & { a: number; b: number };
 
 /**
- * Spacing two short roots owe each other. Same overlay group (`kind`): no single-letter
- * difference and a different consonant. Same PoS (`pos`): not identical.
+ * Spacing two short roots owe each other. Same overlay group (`kind`): not the same first
+ * two letters. Same PoS (`pos`): not identical.
  */
 function groupRule(a: Set<string>, b: Set<string>): GroupRule {
   const shared = [...a].filter((group) => b.has(group));
@@ -168,10 +161,13 @@ function groupRule(a: Set<string>, b: Set<string>): GroupRule {
 
 function pairHard(pair: GroupRule, x: string, y: string): number {
   let violations = 0;
-  const distance = ham(x, y);
-  if (distance === 0) violations++;
-  if (pair.kind && (distance < 2 || x[1] === y[1])) violations++;
+  if (x === y) violations++;
+  if (pair.kind && x.slice(0, 2) === y.slice(0, 2)) violations++;
   return violations;
+}
+
+function shortTail(row: PlaceRow): string | null {
+  return tailFieldsError(row.kind ?? "", row.shape ?? "") ? null : tailOf(row.kind as Kind, row.shape as Shape);
 }
 
 /** Two short rows that may not hold these forms together: with both, the listed compound `stem` splits two ways. */
@@ -258,8 +254,9 @@ export function shortRootGuards(
 }
 
 /**
- * Anneal three-letter roots. Frequent rows weigh echo more (up to 2×).
- * Grammatical-group floors stay hard; domain and sibling spacing stay off (echo-first).
+ * Anneal three-letter roots. A row with a kind and shape only takes the four forms `V` + its tail;
+ * a kind + shape with more rows than free forms of that tail fails before the anneal. Frequent rows
+ * weigh echo more (up to 2×). Overlay-group floors stay hard (no shared first two letters).
  * `guards` ({@link shortRootGuards}) are hard too.
  */
 export function annealShortRoots(
@@ -272,14 +269,46 @@ export function annealShortRoots(
   const steps = options.steps ?? 400_000;
   const guards: ShortRootGuards = options.guards ?? { blocked: new Set(), bans: new Map(), conflicts: [] };
   const pool = forms(3).filter((form) => !blocked.has(form) && !guards.blocked.has(form));
+  const poolSet = new Set(pool);
+  const itemPool = (item: Indexed): string[] => {
+    const tail = shortTail(item.row);
+    return tail ? V.map((vowel) => vowel + tail).filter((form) => poolSet.has(form)) : pool;
+  };
+  const pools = items.map(itemPool);
+  const empty = items.flatMap((item, i) => (pools[i]!.length === 0 ? [`${item.row.emoji || item.row.concrete} (${shortTail(item.row) ?? "VCV"})`] : []));
+  if (empty.length > 0) {
+    throw new Error(`short roots: no free form of the tail for ${empty.join(", ")}`);
+  }
+  const byTail = new Map<string, { kind: string; shape: string; count: number }>();
+  for (const item of items) {
+    const tail = shortTail(item.row);
+    if (!tail) continue;
+    const entry = byTail.get(tail) ?? { kind: item.row.kind!, shape: item.row.shape!, count: 0 };
+    entry.count++;
+    byTail.set(tail, entry);
+  }
+  const overflow = [...byTail].flatMap(([tail, { kind, shape, count }]) => {
+    const occupied = new Set(
+      [...blocked, ...guards.blocked, ...(options.fixed ?? []).map((fixed) => fixed.root)].filter(
+        (form) => form.length === 3 && form.slice(1) === tail,
+      ),
+    );
+    const free = V.map((vowel) => vowel + tail).filter((form) => poolSet.has(form) && !occupied.has(form));
+    return count > free.length
+      ? [`${kind} / ${shape} has ${count} rows and ${free.length} free form${free.length === 1 ? "" : "s"} (${free.join(", ") || "none"})`]
+      : [];
+  });
+  if (overflow.length > 0) {
+    throw new Error(`short roots: a kind + shape has more rows than free forms: ${overflow.join("; ")}`);
+  }
   if (items.length > pool.length) {
     throw new Error(`short roots: ${items.length} eligible rows and ${pool.length} free VCV shapes`);
   }
   const shortRanks = items.map((item) => item.priority).sort((a, b) => a - b);
   const echoScale = (item: Indexed) => 2 - shortRanks.indexOf(item.priority) / Math.max(1, shortRanks.length - 1);
-  const unary = items.map((item) => {
+  const unary = items.map((item, i) => {
     const costs = new Map<string, number>();
-    for (const form of pool) costs.set(form, ECHO_W * echoScale(item) * 4.5 * (1 - (item.cmu ? echo(form, item.cmu) : 0)));
+    for (const form of pools[i]!) costs.set(form, ECHO_W * echoScale(item) * 4.5 * (1 - (item.cmu ? echo(form, item.cmu) : 0)));
     return costs;
   });
   // Roots kept from earlier runs: spacing against them is fixed per form, so it folds into each row's own cost.
@@ -362,7 +391,7 @@ export function annealShortRoots(
     let temperature = 50;
     for (let step = 0; step < steps; step++) {
       const i = Math.floor(rnd() * items.length);
-      const form = pool[Math.floor(rnd() * pool.length)]!;
+      const form = pools[i]![Math.floor(rnd() * pools[i]!.length)]!;
       const delta = localCost(i, form) - localCost(i, assign[i]!);
       if (delta <= 0 || rnd() < Math.exp(-delta / temperature)) put(i, form);
       temperature = Math.max(0.05, temperature * 0.99997);
@@ -473,6 +502,15 @@ export async function placePublishedRoots(
   }
 
   const shortTargets = targets.filter((item) => item.eligible);
+  const shortFieldErrors = shortTargets.flatMap((item) => {
+    const key = item.row.emoji || item.row.concrete;
+    const errors: string[] = [];
+    const fields = tailFieldsError(item.row.kind ?? "", item.row.shape ?? "");
+    if (fields) errors.push(`${key}: ${fields}`);
+    if (item.row.size) errors.push(`${key}: a three-letter row has no size (got ${item.row.size})`);
+    return errors;
+  });
+  if (shortFieldErrors.length > 0) throw new Error(`three-letter rows need a kind and a shape:\n  ${shortFieldErrors.join("\n  ")}`);
   const guards = shortRootGuards(shortTargets, taken, {
     staticRoots: new Set([...kept.map((k) => k.root), ...places.values()]),
     keptLong: keptLong.map((k) => k.root),

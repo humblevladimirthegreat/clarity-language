@@ -6,9 +6,9 @@ prev: false
 
 **Claritish** is English with a few Agebon words dropped in. Each drop-in says something English has no word for: how sure you are, how you know, what a thank-you was for. You keep speaking English and add the word where an English adverb or tag would go.
 
-> The package arrives Friday `thovum`.
+> The package arrives Friday `thomam`.
 
-*`thovum`* means *could be*. It covers the clause it sits in, so the sentence says the package might arrive Friday, and nothing more.
+*`thomam`* means *could be*. It covers the clause it sits in, so the sentence says the package might arrive Friday, and nothing more.
 
 Every drop-in is a real Agebon word, spelled exactly as Agebon spells it, so each one you learn is already part of the full language. You can stop after any lesson and keep what you have.
 

@@ -8,7 +8,7 @@ English *they* and *the Smiths* often mean a named person plus people around the
 
 Without **-x**, the word picks **one** person or thing. With **-x** after the ending, you name an **anchor plus nearby associates** (family, coworkers, unit, household, and so on). Who counts as an associate comes from the conversation and the situation; on a name it reads as *Uzozen and associates*. (cue: **-x** ≈ set with the named anchor)
 
-> `zuzozenx vewurel.`
+> `zuzozenx vowurel.`
 >
 > z-Uzozen-x | v-walk
 >
@@ -26,7 +26,7 @@ To point back to that group (or to a prior person **and** their associates), add
 
 A [role pointer](pronouns.md#role-pointers) takes **-x** the same way: that one and associates, or the whole group when the earlier slot held a joined list.
 
-> `zuzozen vewurel. zaxarx vuhohol.`
+> `zuzozen vowurel. zaxarx vuhohol.`
 >
 > z-Uzozen | v-walk . z-←agent.same-x | v-sit
 >
@@ -69,15 +69,15 @@ An extra noun takes **-x** the same way. Here the recipient is Olazun and associ
 
 English *we* and *you* do not say whether the listener is in the group (the split between *we including you* and *we without you* is called **clusivity**). Agebon puts **-x** on the speaker and listener roots. It still adds associates, but who is in the group follows each root's place in the conversation. Speaker **-x** is the speaker plus that person’s people, without the listener. Listener **-x** is the **address set**: everyone you are talking to right now, and not the speaker.
 
-Inclusive *you and I* is **`aha`** ([special pronouns](pronouns.md#special-pronouns)). With **-x** it adds the speaker’s and listener’s shared people (below).
+Inclusive *you and I* is **`aya`** ([special pronouns](pronouns.md#special-pronouns)). With **-x** it adds the speaker’s and listener’s shared people (below).
 
-> `zehonx vewurel.`
+> `zawanx vowurel.`
 >
 > z-listener-x | v-walk
 >
 > "You all walk." (everyone I'm talking to)
 
-> `zamunx vuhohol.`
+> `zuwonx vuhohol.`
 >
 > z-speaker-x | v-sit
 >
@@ -89,27 +89,27 @@ Inclusive *you and I* is **`aha`** ([special pronouns](pronouns.md#special-prono
 >
 > "You and your associates sit." (said to Olazun)
 
-> `zahan vewurel.`
+> `zayan vowurel.`
 >
 > z-interlocutors | v-walk
 >
 > "We walk." (you and I)
 
-The same roots take the role letter of the slot they fill. As a direct object they are **`damunx`**, **`dehonx`**, **`dahan`**:
+The same roots take the role letter of the slot they fill. As a direct object they are **`duwonx`**, **`dawanx`**, **`dayan`**:
 
-> `zuzozen damunx vawebol.`
+> `zuzozen duwonx vawebol.`
 >
 > z-Uzozen | d-speaker-x | v-see
 >
 > "Uzozen sees me and my people." (not you)
 
-> `zuzozen dehonx vawebol.`
+> `zuzozen dawanx vawebol.`
 >
 > z-Uzozen | d-listener-x | v-see
 >
 > "Uzozen sees you all." (everyone I'm talking to)
 
-> `zuzozen dahan vawebol.`
+> `zuzozen dayan vawebol.`
 >
 > z-Uzozen | d-interlocutors | v-see
 >
@@ -118,21 +118,21 @@ The same roots take the role letter of the slot they fill. As a direct object th
 <!-- cheat-sheet: people-pointing -->
 | Agebon | Use | English |
 |--------|-----|---------|
-| **`amunx`** | speaker plus that person’s people (listener not assumed); `zamunx` as subject, `damunx` as object | *I and my people* (not you) |
-| **`ehonx`** | all current addressees; `zehonx` as subject, `dehonx` as object | *you all* |
-| **`ahan`** | the interlocutor set; `zahan` as subject, `dahan` as object | *we* (you and I) |
-| **`ahanx`** | the interlocutor set plus associates beyond this conversation | *we all*, *us and our people* (you included) |
+| **`uwonx`** | speaker plus that person’s people (listener not assumed); `zuwonx` as subject, `duwonx` as object | *I and my people* (not you) |
+| **`awanx`** | all current addressees; `zawanx` as subject, `dawanx` as object | *you all* |
+| **`ayan`** | the interlocutor set; `zayan` as subject, `dayan` as object | *we* (you and I) |
+| **`ayanx`** | the interlocutor set plus associates beyond this conversation | *we all*, *us and our people* (you included) |
 | name **-nx** / resume **-rx** | that person plus associates | *X and associates* |
 
-> `zahanx vewurel.`
+> `zayanx vowurel.`
 >
 > z-interlocutors-x | v-walk
 >
 > "We all walk." (you, I and our people)
 
-**Compare with:** inclusive *we* uses **`aha`** (`zahan`), not **`amunx`**. **`amunx`** leaves you out, **`ehonx`** leaves the speaker out, and **`ahanx`** takes in both and the people around you. Nonspecific *someone* (**`una`**) names no group, so it takes no **-x**: *some people* is `zobelx`.
+**Compare with:** inclusive *we* uses **`aya`** (`zayan`), not **`uwonx`**. **`uwonx`** leaves you out, **`awanx`** leaves the speaker out, and **`ayanx`** takes in both and the people around you. Nonspecific *someone* (**`umo`**) names no group, so it takes no **-x**: *some people* is `zeyolx`.
 
-For *you and yours* (one listener plus that person's people), put **-x** on the listener's name (`zolazunx`). **`ehonx`** means only the address set.
+For *you and yours* (one listener plus that person's people), put **-x** on the listener's name (`zolazunx`). **`awanx`** means only the address set.
 
 ### Practice {#beginner-practice}
 
@@ -146,7 +146,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *ant* | `unezal` | 🐜 |
 | *basket* | `abowal` | 🧺 |
-| *sandwich* | `azal` | 🥪 |
+| *sandwich* | `edal` | 🥪 |
 | *wine* | `awudal` | 🍷 |
 
 **Review:**
@@ -155,12 +155,12 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
-| *Uhelan* | `uhelan` |
-| *speaker* | `amun` |
-| *listener* | `ehon` |
-| *interlocutors* | `ahan` |
-| *angry* | `unomul` |
-| *haste* | `hodurem` |
+| *Ahelan* | `ahelan` |
+| *speaker* | `uwon` |
+| *listener* | `awan` |
+| *interlocutors* | `ayan` |
+| *angry* | `unemul` |
+| *haste* | `hedurem` |
 | *run* | `varuvel` |
 | *sit* | `vuhohol` |
 | *see* | `vawebol` |
@@ -180,11 +180,11 @@ z-Uzozen-x | v-sit
 **2.** *Some angry ants run hastily.*
 
 ::: details Show answer
-`zunezalx gunomul hodurem varuvel.`
+`zunezalx gunemul hedurem varuvel.`
 
 [z-ant-x | g-angry] | h-haste | v-run
 
-**Also correct:** `zunezalx gunomul varuvel hodurem.`
+**Also correct:** `zunezalx gunemul varuvel hedurem.`
 :::
 
 **3.** *Uzozen sees some baskets.*
@@ -198,7 +198,7 @@ z-Uzozen | d-basket-x | v-see
 **4.** *We all see a sandwich.* (you, I and our people)
 
 ::: details Show answer
-`zahanx dazal vawebol.`
+`zayanx dedal vawebol.`
 
 z-interlocutors-x | d-sandwich | v-see
 :::
@@ -216,22 +216,22 @@ z-Uzozen | d-wine | v-drink . z-←agent.same-x | v-sit
 **6.** *You all sit.* (everyone I'm talking to)
 
 ::: details Show answer
-`zehonx vuhohol.`
+`zawanx vuhohol.`
 
 z-listener-x | v-sit
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zuhelanx dazal vawebol.`
+**1.** `zahelanx dedal vawebol.`
 
 ::: details Show answer
-z-Uhelan-x | d-sandwich | v-see
+z-Ahelan-x | d-sandwich | v-see
 
-*Uhelan and associates see a sandwich.*
+*Ahelan and associates see a sandwich.*
 :::
 
-**2.** `zamunx vuhohol.`
+**2.** `zuwonx vuhohol.`
 
 ::: details Show answer
 z-speaker-x | v-sit
@@ -239,7 +239,7 @@ z-speaker-x | v-sit
 *My people and I sit.* (not you)
 :::
 
-**3.** `zolazun vuhohol. zolazurx dazal vawebol.`
+**3.** `zolazun vuhohol. zolazurx dedal vawebol.`
 
 ::: details Show answer
 z-Olazun | v-sit . z-←Olazun-x | d-sandwich | v-see
@@ -255,7 +255,7 @@ z-Uzozen | d-knife-x | v-see
 *Uzozen sees some knives.*
 :::
 
-**5.** `yol zehonx vuhohol.`
+**5.** `yol zawanx vuhohol.`
 
 ::: details Show answer
 y-question | z-listener-x | v-sit
@@ -263,7 +263,7 @@ y-question | z-listener-x | v-sit
 *Are you all sitting?*
 :::
 
-**6.** `zahan dawudal vodudal.`
+**6.** `zayan dawudal vodudal.`
 
 ::: details Show answer
 z-interlocutors | d-wine | v-drink
@@ -295,14 +295,14 @@ z-Uzozen | d-Olazun-x | v-see
 
 #### Fix it {#beginner-fix-it}
 
-**1.** *We sit.* (you and I) <!-- lint: error -->`zamunx vuhohol.`
+**1.** *We sit.* (you and I) <!-- lint: error -->`zuwonx vuhohol.`
 
 ::: details Show answer
-`zahan vuhohol.`
+`zayan vuhohol.`
 
 z-interlocutors | v-sit
 
-**`amunx`** is the speaker and their people, leaving you out; *you and I* is **`ahan`**.
+**`uwonx`** is the speaker and their people, leaving you out; *you and I* is **`ayan`**.
 :::
 
 ## Intermediate {#intermediate}
@@ -312,15 +312,15 @@ z-interlocutors | v-sit
 
 English *Uzozen and them* does not say who belongs. Agebon **-x** is the same: who counts is **open** unless you say. When the list matters, name the members with a [join](joins.md). When it does not, the listener guesses in this order: a group already named in the conversation, then the obvious group in the scene (this meeting, this household).
 
-> `zuzozenx vewurel.`
+> `zuzozenx vowurel.`
 >
 > z-Uzozen-x | v-walk
 >
 > "Uzozen and associates walk."
 
-If the wrong reading would matter, say so. Use **`aha`** or a join for *you and I*. For *not you*, use speaker **-x**, or subtract the listener with the *except* [hook](hooks.md) **`ul`**:
+If the wrong reading would matter, say so. Use **`aya`** or a join for *you and I*. For *not you*, use speaker **-x**, or subtract the listener with the *except* [hook](hooks.md) **`ul`**:
 
-> `zuzozenx ul zehon vewurel.`
+> `zuzozenx ul zawan vowurel.`
 >
 > z-Uzozen-x | except | z-listener | v-walk
 >
@@ -333,7 +333,7 @@ If the wrong reading would matter, say so. Use **`aha`** or a join for *you and 
 | Institutional frame | this meeting, this household | the scene’s default group |
 | Open | no further cue | the listener may or may not be in the set |
 
-For the **address set** (`ehonx`), count everyone called by name at the start of this turn, plus anyone still being addressed from before.
+For the **address set** (`awanx`), count everyone called by name at the start of this turn, plus anyone still being addressed from before.
 
 ### Groups as the topic
 
@@ -362,7 +362,7 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 | `zuzozenx vezuyol` | *Uzozen and associates sing* (together or each, or don’t care) |
 | `zuzozenx vezuyolx` | *they sing as one performance* |
 | `zuzozen vezuyolx` | *Uzozen sings jointly* (not a solo) |
-| `zavayal vewurelx` | *the family walks as one unit* |
+| `zavayal vowurelx` | *the family walks as one unit* |
 
 **Counts with a set subject:** when a set subject has a counted object, a singular verb gives the count to **each member** (*apiece*). Verb **-x** makes the count the **total** for the shared act.
 
@@ -403,9 +403,9 @@ After nouns joined into a list with **`a`** ([joins](joins.md)), one plain `/ɡ/
 <!-- cheat-sheet: people-pointing -->
 | Agebon | English |
 |--------|---------|
-| `zavogal zulol zal garolom` | *the file-box and the tool are each heavy* |
-| `zavogal zulol zal garolomx` | *the file-box and the tool are heavy together* (collective) |
-| `zavayal gagalam` | *the family is vast* (group-level size) |
+| `zavogal zuwal zal garolom` | *the file-box and the tool are each heavy* |
+| `zavogal zuwal zal garolomx` | *the file-box and the tool are heavy together* (collective) |
+| `zavayal gogalam` | *the family is vast* (group-level size) |
 | `zavogalx garolom` | *the file-boxes are heavy* (members / plain) |
 | `zavogalx garolomx` | *the file-boxes are heavy collectively* |
 
@@ -431,7 +431,7 @@ To call a group at the start of a turn, put **-x** on the call word (the vocativ
 |--------|-----|---------|
 | **-nx** | a kind or a title as the group | *hey, kids*; *Team Alpha* |
 | **-rx** | prior addressee and associates | *hey, you (that one) and associates* |
-| **`yehonx`** | current addressees, no name | *hey, you all* |
+| **`yawanx`** | current addressees, no name | *hey, you all* |
 
 **For *everyone*, use:** [universals](joins.md#universals-domains-generics) (`…ual`).
 
@@ -471,11 +471,11 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|
 | *Uzozen* | `uzozen` |
 | *Olazun* | `olazun` |
-| *Uhelan* | `uhelan` |
-| *listener* | `ehon` |
-| *topic* | `ozan` |
+| *Ahelan* | `ahelan` |
+| *listener* | `awan` |
+| *topic* | `alon` |
 | *family* | `avayal` |
-| *trumpet* | `adorel` |
+| *trumpet* | `eyorel` |
 | *page* | `ebogel` |
 | *sing* | `vezuyol` |
 | *see* | `vawebol` |
@@ -509,7 +509,7 @@ z-sheet-music-x | g-heavy-x
 **4.** *Hey, you all!*
 
 ::: details Show answer
-`yehonx.`
+`yawanx.`
 
 y-listener-x
 :::
@@ -522,12 +522,12 @@ y-listener-x
 [z-Uzozen | z-Olazun | z-and] | v-see-x | [d-page-x | g-three]
 :::
 
-**6.** *Uhelan and associates, not counting you, sing.*
+**6.** *Ahelan and associates, not counting you, sing.*
 
 ::: details Show answer
-`zuhelanx ul zehon vezuyol.`
+`zahelanx ul zawan vezuyol.`
 
-z-Uhelan-x | except | z-listener | v-sing
+z-Ahelan-x | except | z-listener | v-sing
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
@@ -540,15 +540,15 @@ z-family | v-sing-x
 *The family sings as one unit.*
 :::
 
-**2.** `zolazun zuhelan zal vawebol dehorelx gradul.`
+**2.** `zolazun zahelan zal vawebol dehorelx gradul.`
 
 ::: details Show answer
-[z-Olazun | z-Uhelan | z-and] | v-see | [d-sheet-music-x | g-two]
+[z-Olazun | z-Ahelan | z-and] | v-see | [d-sheet-music-x | g-two]
 
-*Olazun and Uhelan each see two sheets of music.*
+*Olazun and Ahelan each see two sheets of music.*
 :::
 
-**3.** `zebogel zadorel zal garolomx.`
+**3.** `zebogel zeyorel zal garolomx.`
 
 ::: details Show answer
 [z-page | z-trumpet | z-and | g-heavy-x]
@@ -556,7 +556,7 @@ z-family | v-sing-x
 *The page and the trumpet are heavy together.*
 :::
 
-**4.** `xuzozenx zozan vezuyol.`
+**4.** `xuzozenx zalon vezuyol.`
 
 ::: details Show answer
 x-Uzozen-x | z-TOPIC | v-sing
@@ -582,39 +582,39 @@ z-sheet-music-x | g-heavy
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *The trumpet and the sheet music are each heavy.* `zadorel zehorel zal garolom.` or `zadorel zehorel zal garolomx.`
+**1.** *The trumpet and the sheet music are each heavy.* `zeyorel zehorel zal garolom.` or `zeyorel zehorel zal garolomx.`
 
 ::: details Show answer
-`zadorel zehorel zal garolom.`
+`zeyorel zehorel zal garolom.`
 
 [z-trumpet | z-sheet-music | z-and | g-heavy]
 
 A plain adjective after an *and*-list applies to each member; **-x** would make them heavy only together.
 :::
 
-**2.** *Hey, Uhelan and associates!* `yuhelanx.` or `zuhelanx.`
+**2.** *Hey, Ahelan and associates!* `yahelanx.` or `zahelanx.`
 
 ::: details Show answer
-`yuhelanx.`
+`yahelanx.`
 
-y-Uhelan-x
+y-Ahelan-x
 
-A call is `/y/` with **-nx**; `zuhelanx.` only says Uhelan and associates are there.
+A call is `/y/` with **-nx**; `zahelanx.` only says Ahelan and associates are there.
 :::
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *They sing.* (Uhelan and associates) <!-- lint: error -->`zuhelan vezuyolx.`
+**1.** *They sing.* (Ahelan and associates) <!-- lint: error -->`zahelan vezuyolx.`
 
 ::: details Show answer
-`zuhelanx vezuyol.`
+`zahelanx vezuyol.`
 
-z-Uhelan-x | v-sing
+z-Ahelan-x | v-sing
 
-**-x** on the noun says who is in the group; on the verb it only says Uhelan sang jointly.
+**-x** on the noun says who is in the group; on the verb it only says Ahelan sang jointly.
 :::
 
 ## See also
 
-- Inclusive *we* **`aha`**: [pronouns.md](pronouns.md#special-pronouns)
+- Inclusive *we* **`aya`**: [pronouns.md](pronouns.md#special-pronouns)
 - Endings before **-x**: [word-endings.md](word-endings.md)

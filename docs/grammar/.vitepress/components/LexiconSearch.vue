@@ -66,7 +66,7 @@ function concreteLabel(row: LexiconSearchResult): string {
   return '—'
 }
 
-/** A five-letter root's tail in words (`creature · one`); a named root has no job. */
+/** A root's tail in words (`creature · one`); a named root has no job. */
 function tailLabel(row: LexiconSearchResult): string {
   return row.shape ? `${row.kind} · ${row.shape.replace('-', ' ')}` : row.kind ?? ''
 }
