@@ -81,6 +81,8 @@ describe("lexicon-compounds", () => {
   it("accepts a tail suffix on a five-letter left", () => {
     const errors = validateCompoundRows([suffixRow("ahuyayo", "ahuya", "yo")], new Set(["ahuya"]));
     assert.deepEqual(errors, []);
+    const title = validateCompoundRows([suffixRow("ahuyano", "ahuya", "no")], new Set(["ahuya"]));
+    assert.deepEqual(title, []);
   });
 
   it("rejects a tail suffix on a three-letter left or with a banned consonant", () => {

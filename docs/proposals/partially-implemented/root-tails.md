@@ -2,7 +2,7 @@
 
 <!-- retie: skip -->
 
-**Status:** PARTIALLY IMPLEMENTED. Phases 1 and 2 are built: every five-letter root is placed by its tail, the language name is **Agebon** (`egabo` + **-n**), and the docs are retied ([phase 2 as built](#phase-2-as-built)). Phase 3 is built too: the checkpoint look-alike lint runs in `npm run build` ([phase 3 as built](#phase-3-as-built)). Still open: the [`--all` failure](#prerequisite), and [reuse of `n`](#reuse-n) (drafted, lexicon not retagged). Spellings in this page are phase 1 output; the live ones are in [`lexicon-published.csv`](../../../data/lexicon-published.csv).  
+**Status:** PARTIALLY IMPLEMENTED. Phases 1 and 2 are built: every five-letter root is placed by its tail, the language name is **Agebon** (`egabo` + **-n**), and the docs are retied ([phase 2 as built](#phase-2-as-built)). Phase 3 is built too: the checkpoint look-alike lint runs in `npm run build` ([phase 3 as built](#phase-3-as-built)). Still open: the [`--all` failure](#prerequisite), and [reuse of `n`](#reuse-n) (kinds retagged; convert-word and retie not run). Spellings in this page are phase 1 output; the live ones are in [`lexicon-published.csv`](../../../data/lexicon-published.csv).  
 **Related:** [tail suffixes](../../grammar/compounds.md#tail-suffixes); [lexicon editing](../../meta/lexicon.md) ([§ root spellings](../../meta/lexicon.md#root-spellings-come-from-convert-word), [§ root length](../../meta/lexicon.md#root-length), [§ root tails](../../meta/lexicon.md#root-tails), [§ seeds](../../meta/lexicon.md#seeds-concrete-senses-and-pictographs), [§ core vocabulary](../../meta/lexicon.md#core-vocabulary-column)); [clause.md § role letters](../../grammar/clause.md#role-letters); [speech-moves.md § speech act](../../grammar/speech-moves.md#speech-act-beginner) (the vowel series); [word-endings.md](../../grammar/word-endings.md); [compounds.md § lexical compounds](../../grammar/compounds.md#lexical-compounds); [hooks.md § hook compounds](../../grammar/hooks.md#hook-compounds); [numeric-derivation.md](../../grammar/numeric-derivation.md); [language-name.md](../../meta/language-name.md); [`src/word-converter.ts`](../../../src/word-converter.ts) (`SECOND_CONSONANT_BAN`, `longRootCandidates`, `rankRoots`); [`src/echo-metric.ts`](../../../src/echo-metric.ts); [`src/lexicon-place.ts`](../../../src/lexicon-place.ts); [`src/lexicon-compounds.ts`](../../../src/lexicon-compounds.ts) (`factorizationsForStem`, `validateCompoundRows`); [`src/parse/hook-compounds.ts`](../../../src/parse/hook-compounds.ts) (`parseHookCompoundCite`); [`src/closed-roots.ts`](../../../src/closed-roots.ts); `number-mnemonic.md` and `number-respelling.md` ([interactions](#interactions)).  
 **Design authority:** none until absorbed. One grammar line changes: a hook compound's left piece must be a dictionary root ([hook compounds](#hook-compounds)). The grammar pages don't teach root spellings, so the tails reach learners through a new section in Advanced [phonology](../../grammar/phonology.md#advanced), which dictionary views link to ([phase 2](#phase-2)).
 
@@ -465,7 +465,7 @@ With this lint, when the tails are taught doesn't affect placement.
 
 Country and territory rows keep `kind` **`named`** and a [place-name root](../../../src/place-root.ts). They are not a tail kind. That frees the second consonant **`n`**.
 
-Draft (2026-10-20), **lexicon not changed**: `n` is **`title`**, things with a conventional name you write or play under. Anchor: [**-n**](../../grammar/word-endings.md#proper-name--n) is the name ending. Jobs apply, so a [tail suffix](../../grammar/compounds.md#tail-suffixes) on `n` becomes legal (`no` *the title of the left*; `na` *mail or papers that hold the left*). `n` second still has no hook clash. `l` / `m` / `r` stay banned as suffix heads.
+Applied to `kind` (2026-10-20); **roots not respelled yet.** `n` is **`title`**, things with a conventional name you write or play under. Anchor: [**-n**](../../grammar/word-endings.md#proper-name--n) is the name ending. Jobs apply, so a [tail suffix](../../grammar/compounds.md#tail-suffixes) on `n` becomes legal (`no` *the title of the left*; `na` *mail or papers that hold the left*). `n` second still has no hook clash. `l` / `m` / `r` stay banned as suffix heads.
 
 | | Five-letter | Three-letter | All |
 |--|-------------|--------------|-----|
@@ -497,9 +497,9 @@ A kind of 57 five-letter roots has an even-spread floor of **8** confusing pairs
 
 **Size on `title`:** paper and mail objects keep a measured size; sports and legal-name marks (copyright, registered, trademark, email as a message) stay `none`. Same split `sign` already used for documents vs symbols.
 
-**When tagging:** set `kind` to `title` on the 64 rows (clear nothing else: `shape` and `size` already fit). Then `convert-word --lexicon --only` those concretes, or `--all` so leftover `sign` / `doing` onsets spread. Do not retag `named` rows.
+**Tagged.** The 64 rows have `kind` `title`; `shape` and `size` were already right. Roots still end in their old `g` / `v` tails, so `validateRootTails` fails until `convert-word --lexicon --only` those concretes (or `--all` so leftover `sign` / `doing` onsets spread), then the retie. Do not retag `named` rows.
 
-#### Learner and editor wording (not live until the retag)
+#### Learner and editor wording (live in compounds.md / lexicon.md; Agebon examples wait on convert)
 
 In [compounds.md § root tails](../../grammar/compounds.md#root-tails): drop sports from `v`, drop paper from `g`, replace the `n` row. Drop “A country’s last vowel is free”. Allow `n` in [tail suffixes](../../grammar/compounds.md#tail-suffixes).
 
@@ -507,7 +507,7 @@ In [compounds.md § root tails](../../grammar/compounds.md#root-tails): drop spo
 |------------------|------|---------|-----------------|
 | `v` | doing, playing and moving: actions, toys, vehicles | `aruve` *run* | `/v/` is the action |
 | `g` | signs and marks | `awugu` *warning* | `/ɡ/` is a grade, a mark on something |
-| `n` | titles: mail, paper, labels, and named sports | *(placed at retag)* | **-n** is the name ending |
+| `n` | titles: mail, paper, labels, and named sports | *newspaper*, *soccer* | **-n** is the name ending |
 
 In [lexicon editing § kind](../../meta/lexicon.md#kind): `title` joins `KIND_LETTERS` (`n`). `named` stays countries only. Replace the play / paper bullets:
 

@@ -520,14 +520,14 @@ Each letter reuses a job it already has somewhere in the grammar:
 | `y` | people: persons, kin, roles, and what only a person does | `eboye` *baby* | [`/y/` + name](speech-moves.md#vocative) calls someone |
 | `m` | mind and feeling: faces, emotions, mental states | `evemu` *fear* | [**-m**](word-endings.md#abstract-m) is the abstract ending |
 | `b` | the body and what goes on it: parts, clothes, what you carry, medicine | `aheba` *hand* | [`/b/`](clause.md#role-letters) is the bolted-on piece |
-| `v` | doing, playing and moving: actions, sports, games, toys, vehicles | `aruve` *run* | [`/v/`](clause.md#role-letters) is the action |
+| `v` | doing, playing and moving: actions, toys, vehicles | `aruve` *run* | [`/v/`](clause.md#role-letters) is the action |
 | `h` | places and fixtures: buildings, landscapes, rooms, headings | `aheha` *house* | [`/h/`](clause.md#role-letters) is where |
 | `l` | nature and raw stuff: plants, weather, sky, materials, colors | `edale` *tree* | [**-l**](word-endings.md#concrete-l) is the concrete ending |
 | `d` | food and drink, with dishes and kitchen gear | `oledo` *apple* | [`/d/`](clause.md#role-letters) is what is done to (eaten) |
 | `w` | tools and things you use | `anewu` *knife* | [`/w/`](clause.md#role-letters) is *with* |
-| `g` | signs, marks and writing | `awugu` *warning* | [`/ɡ/`](clause.md#role-letters) is a grade, a mark on something |
+| `g` | signs and marks: symbols, letters, religion marks | `awugu` *warning* | [`/ɡ/`](clause.md#role-letters) is a grade, a mark on something |
 | `r` | counting, time, money and rhythm | `egore` *clock* | `r` after a role letter starts a [number](numbers.md#counts) |
-| `n` | named places: countries | `azabana` *Japan* | [**-n**](word-endings.md#proper-name--n) is the name ending |
+| `n` | titles: mail, paper, labels, and named sports | *newspaper*, *soccer* | [**-n**](word-endings.md#proper-name--n) is the name ending |
 
 The last vowel is the job, with the same vowel series as [joins](joins.md#beginner): **a** add, **o** one, **e** order, **u** undo.
 
@@ -538,7 +538,7 @@ The last vowel is the job, with the same vowel series as [joins](joins.md#beginn
 | `e` | order: ranked, in sequence, a stage or cycle, a path you travel or are led along; or long, like a road | `orahe` *road*, `egore` *clock*, `aruve` *run*, `urule` *rainbow* |
 | `u` | takes away or works against: cuts, removes, harms, stings, forbids; or sharp, like a blade | `anewu` *knife*, `ezozu` *snake*, `evemu` *fear* |
 
-When more than one job fits, try **u** first, then **a**, then **e**. A knife is one tool, but it cuts, so its root ends in `u`. When no job fits, the thing's outline decides: hollow `a`, long `e`, sharp `u`, round or compact `o`. A banana ends in `e` and an apple in `o`. For a feeling, it's which way the feeling points (toward others `a`, inward `o`); for an action, how it unfolds (with others `a`, along a course `e`). A country's last vowel is free, since a country has no job.
+When more than one job fits, try **u** first, then **a**, then **e**. A knife is one tool, but it cuts, so its root ends in `u`. When no job fits, the thing's outline decides: hollow `a`, long `e`, sharp `u`, round or compact `o`. A banana ends in `e` and an apple in `o`. For a feeling, it's which way the feeling points (toward others `a`, inward `o`); for an action, how it unfolds (with others `a`, along a course `e`).
 
 In every kind but feelings, the **middle vowel** usually says how big the thing is:
 
@@ -572,7 +572,7 @@ A few dictionary words end in a bare tail instead of a second root. *Friend* is 
 | `zehahayol` | *hut* + `yo` | neighbor |
 | `zogewoyol` | *camera* + `yo` | celebrity |
 
-The left piece is always a five-letter root, and there is no join letter: five letters, then the tail, then the ending. The tail vowel does the same jobs as on a root: **a** the thing holds or gathers the left, **o** it is one thing marked by the left, **e** it follows the left in order or along a path, **u** it takes the left away or works against it. The tail consonant is any kind but nature `l`, mind `m`, counting `r` and countries `n`; those words take a full second root.
+The left piece is always a five-letter root, and there is no join letter: five letters, then the tail, then the ending. The tail vowel does the same jobs as on a root: **a** the thing holds or gathers the left, **o** it is one thing marked by the left, **e** it follows the left in order or along a path, **u** it takes the left away or works against it. The tail consonant is any kind but nature `l`, mind `m` and counting `r`; those words take a full second root.
 
 When the thing is a more specific kind than its tail, the dictionary word keeps two full roots: *doorbell* ends in *bell*, not in a bare tool tail.
 

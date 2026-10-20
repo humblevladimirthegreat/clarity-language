@@ -23,6 +23,7 @@ describe("tails", () => {
   it("spells a tail from kind and shape", () => {
     assert.equal(tailOf("creature", "order"), "ze");
     assert.equal(tailOf("tool", "takes-away"), "wu");
+    assert.equal(tailOf("title", "holds"), "na");
   });
 
   it("flags a root that starts with a /th/ holder host form", () => {

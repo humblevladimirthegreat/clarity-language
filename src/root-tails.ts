@@ -24,6 +24,7 @@ export const KIND_LETTERS = {
   tool: "w",
   sign: "g",
   counting: "r",
+  title: "n",
 } as const;
 
 /** Job → final vowel. */

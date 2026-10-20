@@ -85,9 +85,9 @@ const JOIN_LETTERS = new Set<string>(["l", "m", "n", "r"]);
 
 /**
  * Tail-suffix heads: a kind consonant plus a job vowel (src/root-tails.ts). No `l` / `m` (the
- * hook-compound clash), `n` (named rows have no job) or `r` (counting wants a specific head).
+ * hook-compound clash) or `r` (counting wants a specific head).
  */
-const SUFFIX_CONSONANTS = new Set<string>(["z", "y", "b", "v", "h", "d", "w", "g"]);
+const SUFFIX_CONSONANTS = new Set<string>(["z", "y", "b", "v", "h", "d", "w", "g", "n"]);
 const SUFFIX_VOWELS = new Set<string>(["a", "o", "e", "u"]);
 
 /** A two-letter kind + job tail that heads a listed compound on a five-letter left root. */

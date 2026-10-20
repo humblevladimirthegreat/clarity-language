@@ -66,7 +66,7 @@ describe("placement", () => {
   it("anneals an eligible row to three letters and gives an ordinary row its tail", async () => {
     const placed = await placePublishedRoots(
       [
-        { emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "", kind: "sign", shape: "holds" },
+        { emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "", kind: "title", shape: "holds" },
         { emoji: "😀", concrete: "grin", abstract: "delight", englishByPos: "", kind: "mind", shape: "holds" },
       ],
       [overlay],
