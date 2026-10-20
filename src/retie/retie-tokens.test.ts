@@ -172,6 +172,11 @@ describe("writing spans", () => {
     assert.equal(text, "quote `d~[zululon vababal]` here");
   });
 
+  it("reties every word of a cite that holds sentences, punctuation and all", () => {
+    const { text } = rewriteMarkdown("`zazawan d[zazawan vuzunul. zazawan, vuwurul?!] vuzunul.`", map);
+    assert.equal(text, "`zululon d[zululon vababal. zululon, voworol?!] vababal.`");
+  });
+
   it("leaves opaque payloads", () => {
     const { text } = rewriteMarkdown("`d<sushi>` and `d@[Hamlet]`", map);
     assert.equal(text, "`d<sushi>` and `d@[Hamlet]`");
@@ -647,6 +652,12 @@ describe("source literals — tests that read the real lexicon", () => {
   it("respells bare roots, roots beside English, and seams", () => {
     const { text } = rewriteSourceLiterals(`const t = loadDefaultTables();\n${body}`, "x.test.ts", ctx);
     assert.equal(text, 'const t = loadDefaultTables();\nterm("root=abode");\nkinds("unused ovu");\nmd("Use `thehu` here.");\n');
+  });
+
+  it("respells a query term's value even when it spells an English word", () => {
+    const english = { ...ctx, map: mapOf(["abode", "abede"]), english: new Set(["abode", "root"]) };
+    const { text } = rewriteSourceLiterals('const t = loadDefaultTables();\nterm("root=abode");\nterm("raw=abode");\n', "x.test.ts", english);
+    assert.equal(text, 'const t = loadDefaultTables();\nterm("root=abede");\nterm("raw=abede");\n');
   });
 
   it("only reports them in a test with its own tables", () => {

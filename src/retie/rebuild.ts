@@ -1,4 +1,5 @@
 import { hookCompoundFromMorph, parseHookCompoundCite } from "../parse/hook-compounds.js";
+import { peelWordChunk } from "../parse/peel.js";
 import { parseWord } from "../parse/word.js";
 import { writingSpanEnd } from "../parse/span-scan.js";
 import type { MorphWord, MorphWordFamily, WritingBracket } from "../parse/types.js";
@@ -168,7 +169,10 @@ function rewriteSpanPayload(
     // An editorial close (`#]`, `#|]`) leaves its `#` / `#|` at the end of the payload.
     const editorial = /#\|?$/.exec(chunk)?.[0] ?? "";
     chunk = chunk.slice(0, chunk.length - editorial.length);
-    out += (retieCore(chunk, map, scope) ?? chunk) + editorial;
+    // A cite can hold several sentences (`d[zolozun vezeyol. zehalon voworel.]`): peel each word's
+    // punctuation and tone mark as the page tokenizer does, or a word before a period stays stale.
+    const { prefix, core, suffix } = spanEnd === undefined ? peelWordChunk(chunk) : { prefix: "", core: chunk, suffix: "" };
+    out += prefix + (retieCore(core, map, scope) ?? core) + suffix + editorial;
     i = end;
   }
   return out;

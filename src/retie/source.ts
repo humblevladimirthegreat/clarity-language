@@ -314,7 +314,9 @@ function retieStaleTokens(value: string, ctx: SourceRetieContext, local: RetieCh
   // Read with the old lexicon's shapes, so a lateral or a holder seam (`hewezathaxar`, `thunemazawan`) moves too.
   const rewrite = resumeRewrite(ctx.map, ctx.tables);
   return value.replace(/(?<![A-Za-z])[a-z]{3,}(?![A-Za-z])/g, (word, offset: number) => {
-    if (written.has(word) || isEnglish(word, ctx) || isKept(word, ctx)) return word;
+    // A query term's value (`root=abode`, `raw!=…`) is Egabon even when it spells an English word.
+    const termValue = value[offset - 1] === "=";
+    if (written.has(word) || (!termValue && isEnglish(word, ctx)) || isKept(word, ctx)) return word;
     const next = ctx.map.get(word) ?? rewrite(word);
     if (!next || next === word) return word;
     local.push({ from: word, to: next, index: offset });

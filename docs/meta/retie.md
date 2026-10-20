@@ -4,7 +4,7 @@
 
 Editors only. What a lexicon retie still leaves to a person, and how to find each case. The procedure itself is in [lexicon editing § respelling a row](lexicon.md#respelling-a-row) and `AGENTS.md`; this page lists its limits.
 
-The root-tails retie (2026-10-20: 1345 respelled roots, 17 of them closed roots) wrote without `--force`: 0 blocking, 1 warning (a proposal's coined form), 7 review items. Every build check on the docs and `grammar-check` passed afterwards; 17 tests failed, all of the kinds under [tests](#tests), and a few italic syllable hints (*o-wo-re-lul*) needed a hand respelling ([docs](#docs)).
+The root-tails retie (2026-10-20: 1345 respelled roots, 17 of them closed roots) wrote without `--force`: 0 blocking, 1 warning (a proposal's coined form), 7 review items. Every build check on the docs and `grammar-check` passed afterwards; 17 tests failed, all of the kinds under [tests](#tests). IPA lines, syllable hints and words inside multi-sentence cites were fixed by hand; the retie now does all three ([docs](#docs)).
 
 ## Before the retie {#before}
 
@@ -32,6 +32,9 @@ These keep their spellings on purpose and go stale after every retie. Never copy
 | [parser-pipeline.md](parser-pipeline.md) | tooling notes; its Egabon only illustrates a CLI call |
 | this page | its examples name old and new spellings |
 | `TODO.md` | planning notes (never retied) |
+| [cool-features.md](cool-features.md) | a record of posts as they were made |
+| [syntax-test-results.md](syntax-test-results.md) | a dated log of test runs, spelled as they ran |
+| `tail-suffix.md` | a proposal whose coined stems are not listed words; rework them by hand after a retie |
 
 A page opts out with `<!-- retie: skip -->` on a line of its own ([retie-safe writing](grammar-docs.md#retie-safe-writing)). Active proposals are retied.
 
@@ -40,9 +43,9 @@ A page opts out with `<!-- retie: skip -->` on a line of its own ([retie-safe wr
 - **Review items** are text the retie could not classify: a CLI call in code, coined forms in a proposal (`named-handle-coinage.md` derives a handle from root pieces, so it must be rerun by hand, and its `abulo` can collide with a new root). Collisions found only in proposals are warnings, not blocks.
 - **Examples that rest on a spelling coincidence** still parse and lint, so nothing reports them: two roots that shared a short stem, a full-root resume that was needed only because of a neighbor. Reread the [full-root resume](../grammar/pronouns.md#resume-r) examples after any retie.
 - **Bare-resume warnings** (`zazawar` reads another root now) mean a resume in prose binds by its stem; the warning names the spelling that keeps the old reading when one exists.
-- **Opaque loans** (`d<kimchi>`) are never retied, even when a loan happens to spell an old root. A span after a mention marker (`glelel z<odoga>`) is Egabon and does move.
-- **IPA lines and syllable hints** come from a spelling but are not one, so they stay put: the phonology try-it lines, the at-a-glance IPA in `why-egabon.md`, and italic hints like *o-wo-re-lul* (`hooks.md`, `phonology.md`, the sounds cheat sheet). Search the grammar for `/ˈ`, `ä.` and italic hyphenated syllables, and rebuild each IPA line with `previewPhonemes` (`src/tts/plan.ts`) or the [Inspect](../grammar/inspect.md) page.
-- **Letter names.** Only a line in a fence after `<!-- retie: letter-names -->` is respelled from its word ([phonology.md § letter names](../grammar/phonology.md#letter-names)). Any other spelled-out word must be marked or fixed by hand. The sounds cheat sheet's *Pause between names* line is one such word.
+- **Spans.** Every non-opaque span is Egabon and is retied word by word: a cite (`d[…]`, `d~[…]`), a nested cite, and each sentence inside one, punctuation and tone marks included. Only an opaque loan (`d<kimchi>`) is never retied, even when it happens to spell an old root; a span after a mention marker (`glelel z<odozo>`) is Egabon and does move.
+- **IPA lines, syllable hints and inline spellings** follow the page's word changes (`src/retie/derived.ts`): a whole-line IPA (`/ ˈzʉ.zä.zo̞n /`), an italic hint whose letters spell a moved word (*o-wo-re-lul*), and `` `word` is `e` `ga` … `` when the names spell the word's old letters. IPA inside a table or prose is not touched, and a hint or spelling that was already wrong stays wrong: read the fixes the dry run lists.
+- **Letter names.** A line in a fence after `<!-- retie: letter-names -->` is respelled from its word ([phonology.md § letter names](../grammar/phonology.md#letter-names)); an inline spelling is the bullet above. Any other spelled-out word must be marked or fixed by hand.
 
 ## Tests {#tests}
 

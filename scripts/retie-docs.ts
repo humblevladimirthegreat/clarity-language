@@ -34,7 +34,8 @@ import {
   unreadableOldRoots,
 } from "../src/retie/map.js";
 import { rewriteSourceLiterals } from "../src/retie/source.js";
-import { respellLetterNames } from "../src/retie/letter-names.js";
+import { respellDerived, wordPairsOf } from "../src/retie/derived.js";
+import { letterNameTable, respellLetterNames } from "../src/retie/letter-names.js";
 import { lineNumberAt, peelChunk } from "../src/retie/tokens.js";
 import { lexiconConverted, retieTables } from "../src/retie/tables.js";
 import { verifyRetiedSpans } from "../src/retie/verify.js";
@@ -293,6 +294,18 @@ async function main(): Promise<void> {
       ...result,
       text: spelled.text,
       changes: [...result.changes, ...spelled.fixes.map((fix) => ({ from: fix.from, to: fix.to, index: fix.index }))],
+    });
+  }
+
+  // IPA lines, syllable hints and inline spelled-out words copy a word's letters; they follow the page's word changes.
+  const letterNames = letterNameTable(readFileSync(join(REPO_ROOT, "docs", "grammar", "phonology.md"), "utf8"));
+  for (const [file, result] of results) {
+    const derived = respellDerived(result.text, wordPairsOf(result.changes), letterNames);
+    if (derived.fixes.length === 0) continue;
+    results.set(file, {
+      ...result,
+      text: derived.text,
+      changes: [...result.changes, ...derived.fixes.map((fix) => ({ from: fix.from, to: fix.to, index: fix.index }))],
     });
   }
 
