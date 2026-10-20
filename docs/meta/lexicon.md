@@ -115,7 +115,7 @@ When no job fits, `one` is **not** the default. Use the fallback: for a thing yo
 
 ### Size {#size}
 
-The size is how big the concrete sense is against a person, and it steers the root's **middle vowel**: `big` (**a**: bigger than a person), `medium` (**o**: between a hand and a person), `small` (**e**: you could hide it in your fist), `none` (**u**: no size of its own, such as a substance, liquid, color, weather, light or direction). Judge the typical member (a dog is `medium`); when unsure between two sizes, take `medium`.
+The size is how big the concrete sense is against a person, and it steers the root's **middle vowel**: `big` (**a**: about your size or bigger), `medium` (**o**: between your hand and you), `small` (**e**: no bigger than your hand), `none` (**u**: no size of its own, such as a substance, liquid, color, weather, light or direction). Judge the typical member (a dog is `medium`); when unsure between two sizes, take `medium`.
 
 Every five-letter row of `creature`, `body`, `nature`, `food`, `tool` and `place` needs a size. In `doing`, an object row (vehicle, toy, gear) takes one and an action or a sport stays empty. `mind`, `person`, `sign`, `counting`, `named` and three-letter rows stay empty; their middle vowel goes to the echo.
 

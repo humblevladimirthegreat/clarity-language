@@ -11,7 +11,7 @@
 - A five-letter root `V C V C V` has two parts. The **onset** (the first three letters) keeps roots apart: its first two letters are what distinctiveness scores, and its middle vowel hints at size. The **tail** (the second consonant and the final vowel) carries meaning.
 - The **second consonant** says what **kind** of thing the root's concrete sense is: a creature, a person, a feeling, a food, a tool, and so on. There are twelve kinds, one per root consonant, and each is anchored to a job that letter already has in the grammar.
 - The **final vowel** says the thing's **job**, reusing the vowel series: **a** holds, **o** one, **e** order, **u** takes away. Kind-specific pictures (a bowl, a road, a knife, a ball) are how that job shows up, not a second code; when no job fits, the row's outline (or, for feelings and actions, its direction) picks the picture ([fallback](#vowel-fallback)). The same extra is what a tail suffix would add (`tail-suffix.md`).
-- The **middle vowel** says the thing's **size** where it has one: **a** bigger than a person, **o** between a hand and a person, **e** fits in a closed hand, **u** no size of its own (a substance, color, weather). It's a placement preference, not part of the tail ([middle vowel](#middle-vowel)).
+- The **middle vowel** says the thing's **size** where it has one: **a** about your size or bigger, **o** between your hand and you, **e** no bigger than your hand, **u** no size of its own (a substance, color, weather). It's a placement preference, not part of the tail ([middle vowel](#middle-vowel)).
 - The onset is chosen so that few roots of the **same kind** share its **first two letters**, and for a **first consonant that matches the English word's**. Roots of different kinds are told apart by the tail and cost nothing. Learning order plays no part; the [phase 3](#phase-3) lint covers teaching. The full English echo becomes a tie-break.
 - The **second-consonant ban is lifted**. The tail needs all twelve consonants second. Two checks replace the ban ([ban lift](#ban-lift)).
 - Three-letter roots and the final vowel of named (flag) rows are exempt.
@@ -158,12 +158,14 @@ Confusing pairs are scored on the first two letters only, so the middle vowel co
 
 | Middle vowel | Size | Test | Examples |
 |--------------|------|------|----------|
-| `a` | `big` | bigger than a person | whale, ship, mountain, tree, house |
-| `o` | `medium` | between a hand and a person | cat, apple, chair, guitar, shoe |
-| `e` | `small` | you could hide it in your fist | ant, pea, key, tooth, ring |
+| `a` | `big` | about your size or bigger | whale, ship, mountain, house, bed, bicycle, deer |
+| `o` | `medium` | between your hand and you | dog, chair, guitar, shoe, shirt, watermelon |
+| `e` | `small` | no bigger than your hand | ant, pea, key, apple, phone, pen, knife |
 | `u` | `none` | no size of its own: you can't point at one and say how big it is | rice, water, blood, metal, wool, fog, red |
 
-The series reading is a memory aid: **a** add (more than you), **o** one ordinary thing, **u** undo (size taken away). `e` = small rests on the symbolism alone. When unsure between two sizes, take `medium`, so `a` and `e` stay rare enough to mean something.
+The series reading is a memory aid: **a** add (more than you), **o** one ordinary thing, **u** undo (size taken away). `e` = small rests on the symbolism alone. When unsure between two sizes, take `medium`.
+
+**Band edges.** The first draft used *you could hide it in your fist* for `small` and *bigger than a person* for `big`. Most of what the lexicon names is held or carried, so half the sized rows fell in `medium` (338 of 668), and the medium rows crowded the same cells (95.5% placed on their vowel, the lowest of the four). The hand and your own size are just as easy to judge, and they spread the rows: 152 `big`, 208 `medium`, 223 `small`, 85 `none`. Balance within a kind stays uneven where the kind itself is (food has nothing your size; places nothing hand-sized); a size *relative to the kind* would even it out, but *big for a fruit* is a call no two taggers make alike.
 
 **Which rows.** A `size` is required on every five-letter row of the six kinds that name physical things: creature, body, nature, food, tool, place. In `doing`, an object row (a vehicle, a toy, a piece of gear) takes one and an action (run, sleep, a sport) doesn't. Mind, person, sign and counting take none; their middle vowel stays free for the echo. A feeling has no size, but marking every one `u` would tell the reader nothing the consonant hasn't, and would cost the echo.
 
@@ -183,7 +185,7 @@ The series reading is a memory aid: **a** add (more than you), **o** one ordinar
 
 Confusing pairs move only by run-to-run noise. The cost is about 5% of the echo, nearly all in the vowels; the first consonant, which carries most of the echo's recall value, barely moves.
 
-The drafted column: 668 rows, 338 `medium`, 127 `big`, 118 `small`, 85 `none`.
+The drafted column, with the wider bands: 668 rows, 152 `big`, 208 `medium`, 223 `small`, 85 `none`.
 
 ## Exceptions {#exceptions}
 

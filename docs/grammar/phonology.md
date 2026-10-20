@@ -296,9 +296,9 @@ For a thing you could see or hold (a creature, a body part, a plant, a food, a t
 
 | Middle vowel | Size | Examples |
 |--------------|------|----------|
-| `a` | bigger than you | whale, ship, mountain, tree |
-| `o` | between your hand and you | cat, apple, chair |
-| `e` | small enough to hide in your fist | ant, pea, key, tooth |
+| `a` | about your size or bigger | whale, ship, bed, bicycle |
+| `o` | between your hand and you | dog, chair, guitar |
+| `e` | no bigger than your hand | ant, key, apple, phone |
 | `u` | no size of its own: a stuff, a color, the weather | rice, water, metal, red |
 
 This is a hint, not a rule: a few roots take another vowel to stay apart from a neighbor. Feelings, people, signs and numbers have no size, so their middle vowel carries no meaning.
