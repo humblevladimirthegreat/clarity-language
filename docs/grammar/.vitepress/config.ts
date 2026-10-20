@@ -49,13 +49,8 @@ export default defineConfig({
   },
   themeConfig: {
     nav: [
-      { text: 'Why Agebon', link: '/' },
-      { text: 'Agebon Introduction', link: '/introduction' },
-      { text: 'Clause', link: '/clause' },
       { text: 'Lexicon', link: '/lexicon' },
       { text: 'Inspect', link: '/inspect' },
-      { text: 'Terminology', link: '/terminology' },
-      { text: 'Saying it in Agebon', link: '/english' },
       { text: 'Claritish', link: '/claritish/' },
     ],
     socialLinks: [

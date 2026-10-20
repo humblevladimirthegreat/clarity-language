@@ -9,14 +9,11 @@ https://discord.gg/CAMGw2Akhc
 use [skip-cd] for amplify to not deploy. 
 
 # TODO
--consider Promoting common non-nouns and compound-word parts to be three letter. 
 -consider removing forward mentions/links (including prose)
 -vocab flashcards generator
 -site visitor statistics
 -contact form / about me
--on a phone-width screen, every page on the site scrolls sideways by about 11 px, because of VitePress's top navigation bar.
 -reconsider adjective bars (poor/rich, weak/strong)
--number-respelling.md: re-pick the two number fillers against the root-tails lexicon. With `w` + `y` as fillers, tools and people drop out of the 00–99 mnemonic table, and column 9 is all flags (number-mnemonic.md § lexicon coverage, open question 6)
 -redo examples, lint instructions for look_alike_gap should mention that you may need to change the examples to be more coherent
 -pronouns based on tails (including word ending)
 -reconsider hosting rules for b

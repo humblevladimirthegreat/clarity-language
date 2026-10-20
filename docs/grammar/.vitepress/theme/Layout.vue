@@ -24,7 +24,10 @@ watch(
 <template>
   <DefaultTheme.Layout>
     <template #nav-bar-content-after>
-      <NameChip />
+      <NameChip placement="bar" />
+    </template>
+    <template #nav-screen-content-after>
+      <NameChip placement="screen" />
     </template>
     <template #sidebar-nav-after>
       <p class="site-build-stamp-wrap">

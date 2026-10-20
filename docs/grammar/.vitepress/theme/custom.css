@@ -2,6 +2,25 @@
   max-width: 36rem;
 }
 
+/* Phone: the hamburger sheet already lists every nav link. From 768px the
+   bar shows Lexicon and Inspect; Claritish waits until the sidebar layout
+   (960px) so the title, search, extra flyout, and name chip still fit. */
+@media (max-width: 959px) {
+  .VPNavBarMenuLink[href*="/claritish"] {
+    display: none;
+  }
+
+  .VPNavBar .title {
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .VPNavBarTitle .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 .VPSidebar {
   display: flex;
   flex-direction: column;
