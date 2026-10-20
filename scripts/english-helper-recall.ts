@@ -4,7 +4,7 @@
  * the reference the helper suggests and how much of it the prompt actually shows.
  *
  * Run: npm run english-helper-recall
- *      npm run english-helper-recall -- --set doc|checkpoint|all   (default all)
+ *      npm run english-helper-recall -- --set doc|checkpoint|wild|all   (default all)
  *      npm run english-helper-recall -- --json
  *      npm run english-helper-recall -- --check            (fail when a headline metric fell past tolerance)
  *      npm run english-helper-recall -- --write-baseline   (save this run's headline metrics)
@@ -14,6 +14,12 @@
  *               since the cue rows were written against them (the prompt never shows the pair itself)
  *   checkpoint  English → Agebon practice items, with their **Also correct** answers; held out
  *               of the example pool
+ *   wild        plain English grouped by phenomenon and stage (src/english-helper/wild.tsv), with
+ *               no reference Agebon: scored on gaps, noise and prompt size only
+ *
+ * Every set: gap rate (slots with no suggestion, of the slots not skipped, by word class),
+ * noise (suggestions and grammar jobs per slot, and how often a guess, an alias, WordNet lead or
+ * live compound, ranks above a grammar row in the same slot), and prompt size.
  *
  * Roots: a lexicon suggestion with the same form (WordNet leads included), at its rank among that
  * slot's lexicon suggestions (top-1, top-3, lower), or else a grammar, route or live suggestion
@@ -32,19 +38,21 @@
  * of `npm test`, since doc edits move the numbers. `--write-baseline` updates the sets it ran.
  *
  * Writes tmp/english-helper-recall.csv (one row per sentence), tmp/english-helper-worklist.csv
- * (one row per missing word, most frequent English first; NGSL ranks when
+ * (one row per missing word, and for the wild set per gap and per guess ranked above a grammar
+ * row, most frequent English first; NGSL ranks when
  * scripts/frequency-coverage.ts has downloaded the list), and tmp/english-helper-report.md.
  */
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 import { parseCsv, serializeCsv } from "../src/csv.js";
-import { analyzeEnglish, suggestionLinks, TIERS, type Analysis, type Suggestion } from "../src/english-helper/analyze.js";
+import { analyzeEnglish, suggestionLinks, TIERS, type Analysis, type Slot, type Suggestion } from "../src/english-helper/analyze.js";
 import { coverWord, familyRoots, promptShows, treeWords, type Coverage, type PromptShows, type TreeWord } from "../src/english-helper/coverage.js";
 import { buildHelperPrompt } from "../src/english-helper/llm-prompt.js";
 import { loadHelperData } from "../src/english-helper/load.js";
 import { tagEnglish } from "../src/english-helper/tag.js";
 import { fillSelf } from "../src/learner-name.js";
+import { BANDS } from "../src/lint/learning-order.js";
 import { practiceItems } from "../src/lint/practice-items.js";
 import { docExamples, examplePair, loadPromptContext, tableExamples } from "../src/parse/llm-examples.js";
 import { constructionRegistry } from "../src/parse/constructions.js";
@@ -55,8 +63,11 @@ const GRAMMAR_DIR = join(REPO_ROOT, "docs", "grammar");
 const TMP = join(REPO_ROOT, "tmp");
 const NGSL_STATS = join(TMP, "NGSL_12_stats.csv");
 const BASELINE = join(REPO_ROOT, "src", "generated", "english-helper-baseline.json");
-const SETS = ["doc", "checkpoint"] as const;
+const SETS = ["doc", "checkpoint", "wild"] as const;
 type SetName = (typeof SETS)[number];
+/** Sets with reference Agebon, scored on roots, constructions and the prompt's words. */
+const REFERENCE_SETS: readonly SetName[] = ["doc", "checkpoint"];
+const WILD_TSV = join(REPO_ROOT, "src", "english-helper", "wild.tsv");
 
 const args = process.argv.slice(2);
 const json = args.includes("--json");
@@ -136,8 +147,8 @@ function rootResult(analysis: Analysis, root: string, sentenceWords: Set<string>
   return { result: "missed" };
 }
 
-/** One English sentence with its accepted Agebon answers (the first is the main one). */
-type Sentence = { set: SetName; source: string; english: string; answers: string[] };
+/** One English sentence with its accepted Agebon answers (the first is the main one; none for the wild set). */
+type Sentence = { set: SetName; source: string; english: string; answers: string[]; phenomenon?: string; stage?: string };
 
 function docSentences(): Sentence[] {
   const out: Sentence[] = [];
@@ -169,7 +180,22 @@ function checkpointSentences(): Sentence[] {
   return out;
 }
 
-type Kind = "missing cue" | "link without form" | "tagger";
+function wildSentences(): Sentence[] {
+  const out: Sentence[] = [];
+  readFileSync(WILD_TSV, "utf8")
+    .split("\n")
+    .forEach((line, k) => {
+      if (k === 0 || !line.trim() || line.startsWith("#")) return;
+      const [phenomenon = "", stage = "", english = ""] = line.split("\t");
+      out.push({ set: "wild", source: `wild.tsv:${k + 1}`, english, answers: [], phenomenon, stage });
+    });
+  return out;
+}
+
+const sentencesOf = (set: SetName) => (set === "doc" ? docSentences() : set === "checkpoint" ? checkpointSentences() : wildSentences());
+
+type Kind = "missing cue" | "link without form" | "tagger" | "ranking";
+const KINDS: readonly Kind[] = ["missing cue", "link without form", "tagger", "ranking"];
 const ROUTE: Record<Kind, { owner: string; fix: string }> = {
   "missing cue": {
     owner: "say-*.md / english.md row, or the owning section's table",
@@ -177,12 +203,25 @@ const ROUTE: Record<Kind, { owner: string; fix: string }> = {
   },
   "link without form": { owner: "analyzer (describe.ts / analyze.ts)", fix: "the linked section spells this word: show it, or an e.g. sentence that uses it" },
   tagger: { owner: "tag.ts overrides, or a context rule in analyze.ts", fix: "the English word that names this root was read as a function word or under another lemma" },
+  ranking: { owner: "analyzer: cue rank, tier order or slot order (analyze.ts)", fix: "a guess (alias, WordNet lead, live compound) ranks above a grammar row for this word" },
 };
+
+/** Tiers that guess at a word rather than read a row written for it. */
+const GUESS_TIERS = new Set<string>(["alias", "synonym", "broader", "live"]);
+
+/** A guess ranked above the slot's first grammar row. */
+function guessAboveGrammar(slot: Slot): boolean | undefined {
+  const grammar = slot.suggestions.findIndex((s) => s.tier === "grammar");
+  const guess = slot.suggestions.findIndex((s) => GUESS_TIERS.has(s.tier));
+  if (grammar < 0 || guess < 0) return undefined;
+  return guess < grammar;
+}
 
 type Miss = { set: SetName; english: string; word: string; kind: Kind; lemma: string; link: string };
 type Row = {
   set: SetName;
   source: string;
+  group: string;
   english: string;
   agebon: string;
   roots: number;
@@ -196,6 +235,8 @@ type Row = {
   in_prompt: number;
   pattern: number;
   missing_words: string;
+  slots: number;
+  gaps: string;
   prompt_chars: number;
 };
 
@@ -243,13 +284,39 @@ type SetTally = {
   coverage: Map<Coverage, number>;
   selfContained: number;
   promptChars: number[];
+  /** Slots not skipped, slots with no suggestion by word class and lemma, suggestions and jobs in them. */
+  slots: number;
+  gaps: Map<string, Map<string, number>>;
+  suggestions: number;
+  jobs: number;
+  /** Slots with both a guess and a grammar row, and those where the guess ranks first. */
+  guessSlots: number;
+  guessAbove: number;
+  /** Wild set: sentences and gap slots by phenomenon and by stage. */
+  groups: Map<string, { sentences: number; slots: number; gaps: number }>;
 };
 const tallies = new Map<SetName, SetTally>();
 
 for (const set of sets) {
-  const tally: SetTally = { roots: new Map(), tiers: new Map(), live: { uses: 0, suggested: 0, offered: 0 }, missedRoots: new Map(), constructions: new Map(), coverage: new Map(), selfContained: 0, promptChars: [] };
+  const tally: SetTally = {
+    roots: new Map(),
+    tiers: new Map(),
+    live: { uses: 0, suggested: 0, offered: 0 },
+    missedRoots: new Map(),
+    constructions: new Map(),
+    coverage: new Map(),
+    selfContained: 0,
+    promptChars: [],
+    slots: 0,
+    gaps: new Map(),
+    suggestions: 0,
+    jobs: 0,
+    guessSlots: 0,
+    guessAbove: 0,
+    groups: new Map(),
+  };
   tallies.set(set, tally);
-  for (const sentence of set === "doc" ? docSentences() : checkpointSentences()) {
+  for (const sentence of sentencesOf(set)) {
     const analysis = analyzeEnglish(data, sentence.english);
     const prompt = buildHelperPrompt([{ english: sentence.english, analysis }], data, context);
     const shows = promptShows(prompt, [analysis]);
@@ -266,7 +333,39 @@ for (const set of sets) {
       const missing = coverage.filter((c) => c === "missing").length;
       if (!best || missing < best.coverage.filter((c) => c === "missing").length) best = { answer, tree, words, coverage };
     }
-    if (!best) continue;
+    if (sentence.answers.length && !best) continue;
+
+    const slots = analysis.clauses.flatMap((c) => c.slots).filter((slot) => !slot.skipped);
+    const gapSlots = new Set(analysis.gaps.map((g) => g.word));
+    tally.slots += slots.length;
+    tally.promptChars.push(prompt.length);
+    for (const slot of slots) {
+      tally.suggestions += slot.suggestions.length;
+      tally.jobs += slot.suggestions.filter((x) => x.kind === "job").length;
+      const above = guessAboveGrammar(slot);
+      if (above !== undefined) tally.guessSlots++;
+      if (above) tally.guessAbove++;
+      if (above && set === "wild") misses.push({ set, english: sentence.english, word: slot.text, kind: "ranking", lemma: slot.lemma, link: "" });
+    }
+    for (const gap of analysis.gaps) {
+      const byLemma = tally.gaps.get(gap.cls) ?? new Map<string, number>();
+      byLemma.set(gap.lemma, (byLemma.get(gap.lemma) ?? 0) + 1);
+      tally.gaps.set(gap.cls, byLemma);
+      if (set === "wild") misses.push({ set, english: sentence.english, word: gap.word, kind: "missing cue", lemma: gap.lemma, link: "" });
+    }
+    for (const group of [sentence.phenomenon, sentence.stage]) {
+      if (!group) continue;
+      const g = tally.groups.get(group) ?? { sentences: 0, slots: 0, gaps: 0 };
+      g.sentences++;
+      g.slots += slots.length;
+      g.gaps += analysis.gaps.length;
+      tally.groups.set(group, g);
+    }
+    const base = { set, source: sentence.source, group: [sentence.phenomenon, sentence.stage].filter(Boolean).join(" "), english: sentence.english, slots: slots.length, gaps: [...gapSlots].join(" "), prompt_chars: prompt.length };
+    if (!best) {
+      rows.push({ ...base, agebon: "", roots: 0, found: 0, missed: "", constructions: 0, anchor_hits: 0, page_hits: 0, missed_constructions: "", words: 0, in_prompt: 0, pattern: 0, missing_words: "" });
+      continue;
+    }
     const { tree } = best;
 
     const sentenceWords = new Set(tagEnglish(sentence.english).flatMap((s) => s.clauses.flatMap((c) => c.terms.flatMap((t) => [t.normal, t.lemma]))));
@@ -311,16 +410,13 @@ for (const set of sets) {
     for (const c of best.coverage) tally.coverage.set(c, (tally.coverage.get(c) ?? 0) + 1);
     const missingWords = best.words.filter((_, k) => best.coverage[k] === "missing");
     if (missingWords.length === 0) tally.selfContained++;
-    tally.promptChars.push(prompt.length);
     for (const word of missingWords) {
       const { kind, link } = classify(word, analysis, shows, sentenceWords);
       misses.push({ set, english: sentence.english, word: word.raw, kind, lemma: lemmaFor(word, sentenceWords), link });
     }
 
     rows.push({
-      set,
-      source: sentence.source,
-      english: sentence.english,
+      ...base,
       agebon: best.answer,
       roots: roots.length,
       found: results.filter((r) => r.result !== "missed" && r.result !== "tagging").length,
@@ -333,7 +429,6 @@ for (const set of sets) {
       in_prompt: best.coverage.filter((c) => c === "word").length,
       pattern: best.coverage.filter((c) => c === "pattern").length,
       missing_words: missingWords.map((w) => w.raw).join(" "),
-      prompt_chars: prompt.length,
     });
   }
 }
@@ -378,6 +473,10 @@ const median = (xs: number[], q = 0.5) => {
   return sorted[Math.min(sorted.length - 1, Math.floor(q * sorted.length))] ?? 0;
 };
 
+/** Phenomena in file order, then the stages in band order. */
+const bandOrder = (group: string) => (BANDS as readonly string[]).indexOf(group);
+const sum = (m: Map<string, number>) => [...m.values()].reduce((a, b) => a + b, 0);
+
 function summarize(set: SetName) {
   const t = tallies.get(set)!;
   const sentences = rows.filter((r) => r.set === set).length;
@@ -390,20 +489,45 @@ function summarize(set: SetName) {
   const pattern = t.coverage.get("pattern") ?? 0;
   const top1 = t.roots.get("top1") ?? 0;
   const missedRoots = (t.roots.get("missed") ?? 0) + (t.roots.get("tagging") ?? 0);
-  const headline: Headline = {
-    selfContained: share(t.selfContained, sentences),
-    wordInPrompt: share(word, totalWords),
-    rootTop1: share(top1, totalRoots),
-    rootAnywhere: share(totalRoots - missedRoots, totalRoots),
-    constructionPage: share(
-      taught.reduce((a, c) => a + c.page, 0),
-      constructionUses,
-    ),
+  const reference = REFERENCE_SETS.includes(set);
+  const gapCount = [...t.gaps.values()].reduce((a, m) => a + [...m.values()].reduce((x, y) => x + y, 0), 0);
+  const headline: Partial<Headline> = {
+    ...(reference
+      ? {
+          selfContained: share(t.selfContained, sentences),
+          wordInPrompt: share(word, totalWords),
+          rootTop1: share(top1, totalRoots),
+          rootAnywhere: share(totalRoots - missedRoots, totalRoots),
+          constructionPage: share(
+            taught.reduce((a, c) => a + c.page, 0),
+            constructionUses,
+          ),
+        }
+      : {}),
+    gapRate: share(gapCount, t.slots),
     promptChars: median(t.promptChars),
   };
+  const perSlot = (n: number) => (t.slots ? (n / t.slots).toFixed(2) : "-");
   return {
     sentences,
+    reference,
     headline,
+    gaps: {
+      slots: t.slots,
+      gaps: gapCount,
+      rate: pct(gapCount, t.slots),
+      byClass: Object.fromEntries(
+        [...t.gaps]
+          .sort((a, b) => sum(b[1]) - sum(a[1]))
+          .map(([cls, byLemma]) => [cls, { gaps: sum(byLemma), top: [...byLemma].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 10).map(([lemma, n]) => (n > 1 ? `${lemma} ×${n}` : lemma)) }]),
+      ),
+    },
+    noise: { suggestionsPerSlot: perSlot(t.suggestions), jobsPerSlot: perSlot(t.jobs), guessAboveGrammar: pct(t.guessAbove, t.guessSlots), guessSlots: t.guessSlots },
+    groups: Object.fromEntries(
+      [...t.groups]
+        .sort((a, b) => bandOrder(a[0]) - bandOrder(b[0]))
+        .map(([group, g]) => [group, { sentences: g.sentences, slots: g.slots, gapRate: pct(g.gaps, g.slots) }]),
+    ),
     roots: Object.fromEntries(t.roots),
     liveCompounds: t.live,
     foundByTier: Object.fromEntries(TIERS.filter((tier) => t.tiers.has(tier)).map((tier) => [tier, t.tiers.get(tier)!])),
@@ -428,7 +552,7 @@ function summarize(set: SetName) {
       .sort((a, b) => b[1].uses - b[1].page - (a[1].uses - a[1].page))
       .slice(0, 30)
       .map(([id, c]) => ({ id, anchor: registry.get(id)?.anchor, uses: c.uses, page: c.page, anchorHits: c.anchor })),
-    missesByKind: Object.fromEntries((["missing cue", "link without form", "tagger"] as const).map((k) => [k, misses.filter((m) => m.set === set && m.kind === k).length])),
+    missesByKind: Object.fromEntries(KINDS.map((k) => [k, misses.filter((m) => m.set === set && m.kind === k).length])),
   };
 }
 
@@ -447,6 +571,7 @@ const HEADLINE = [
   { key: "rootTop1", label: "root recall top-1", better: "higher", tolerance: 0.5 },
   { key: "rootAnywhere", label: "root recall anywhere", better: "higher", tolerance: 0.5 },
   { key: "constructionPage", label: "construction recall page", better: "higher", tolerance: 0.5 },
+  { key: "gapRate", label: "gap rate", better: "lower", tolerance: 0.5 },
   { key: "promptChars", label: "prompt chars median", better: "lower", tolerance: 500 },
 ] as const;
 
@@ -467,7 +592,7 @@ function compareBaseline(baseline: Baseline): { worse: string[]; moved: string[]
     for (const m of HEADLINE) {
       const was = before[m.key];
       const now = summary[set]!.headline[m.key];
-      if (was === undefined || was === now) continue;
+      if (was === undefined || now === undefined || was === now) continue;
       const loss = m.better === "higher" ? was - now : now - was;
       const line = `${set} ${m.label}: ${was} → ${now}`;
       if (loss > m.tolerance) worse.push(line);
@@ -485,17 +610,30 @@ function topMisses(set: SetName, n: number) {
 
 const report: string[] = ["# English helper report", "", "Free metrics from `npm run english-helper-recall`.", ""];
 report.push("| Metric | " + sets.join(" | ") + " |", "|---|" + sets.map(() => "---").join("|") + "|");
-const metric = (name: string, f: (s: ReturnType<typeof summarize>) => string | number) => report.push(`| ${name} | ${sets.map((set) => f(summary[set]!)).join(" | ")} |`);
+type Summary = ReturnType<typeof summarize>;
+const metric = (name: string, f: (s: Summary) => string | number) => report.push(`| ${name} | ${sets.map((set) => f(summary[set]!)).join(" | ")} |`);
+/** A metric that needs reference Agebon: blank for the wild set. */
+const refMetric = (name: string, f: (s: Summary) => string | number) => metric(name, (s) => (s.reference ? f(s) : "-"));
 metric("sentences", (s) => s.sentences);
-metric("**self-contained**", (s) => `**${s.prompt.selfContained}**`);
-metric("word in prompt", (s) => s.prompt.wordInPrompt);
-metric("pattern in prompt (of the rest)", (s) => s.prompt.patternInPrompt);
-metric("words missing", (s) => s.prompt.missing);
-metric("root recall top-1 / top-3 / anywhere", (s) => `${s.rootRecall.top1} / ${s.rootRecall.top3} / ${s.rootRecall.anywhere}`);
-metric("construction recall anchor / page", (s) => `${s.constructions.anchor} / ${s.constructions.page}`);
+refMetric("**self-contained**", (s) => `**${s.prompt.selfContained}**`);
+refMetric("word in prompt", (s) => s.prompt.wordInPrompt);
+refMetric("pattern in prompt (of the rest)", (s) => s.prompt.patternInPrompt);
+refMetric("words missing", (s) => s.prompt.missing);
+refMetric("root recall top-1 / top-3 / anywhere", (s) => `${s.rootRecall.top1} / ${s.rootRecall.top3} / ${s.rootRecall.anywhere}`);
+refMetric("construction recall anchor / page", (s) => `${s.constructions.anchor} / ${s.constructions.page}`);
+metric("**gap rate** (slots with no suggestion)", (s) => `**${s.gaps.rate}** (${s.gaps.gaps} of ${s.gaps.slots})`);
+metric("suggestions / jobs per slot", (s) => `${s.noise.suggestionsPerSlot} / ${s.noise.jobsPerSlot}`);
+metric("guess above a grammar row", (s) => `${s.noise.guessAboveGrammar} of ${s.noise.guessSlots}`);
 metric("prompt chars median / p90", (s) => `${s.prompt.chars.median} / ${s.prompt.chars.p90}`);
-metric("misses: missing cue / link without form / tagger", (s) => Object.values(s.missesByKind).join(" / "));
+metric(`misses: ${KINDS.join(" / ")}`, (s) => Object.values(s.missesByKind).join(" / "));
 for (const set of sets) {
+  const s = summary[set]!;
+  report.push("", `## Gaps by word class: ${set}`, "", "| Class | Gaps | Top lemmas |", "|---|---|---|");
+  for (const [cls, g] of Object.entries(s.gaps.byClass)) report.push(`| ${cls} | ${g.gaps} | ${g.top.map((l) => `*${l}*`).join(", ")} |`);
+  if (Object.keys(s.groups).length) {
+    report.push("", `## Gap rate by phenomenon and stage: ${set}`, "", "| Group | Sentences | Slots | Gap rate |", "|---|---|---|---|");
+    for (const [group, g] of Object.entries(s.groups)) report.push(`| ${group} | ${g.sentences} | ${g.slots} | ${g.gapRate} |`);
+  }
   report.push("", `## Most-missed words: ${set}`, "", "| Word | Lemma | NGSL | Sentences | Kind |", "|---|---|---|---|---|");
   for (const w of topMisses(set, 30)) report.push(`| \`${w.word}\` | ${w.lemma ? `*${w.lemma}*` : ""} | ${w.frequency} | ${w.sentences} | ${w.kind} |`);
 }
@@ -507,6 +645,16 @@ else {
   for (const set of sets) {
     const s = summary[set]!;
     console.log(`== ${set}: ${s.sentences} sentences`);
+    console.log(`gap rate ${s.gaps.rate} (${s.gaps.gaps} of ${s.gaps.slots} slots); ${s.noise.suggestionsPerSlot} suggestions and ${s.noise.jobsPerSlot} jobs per slot; guess above a grammar row ${s.noise.guessAboveGrammar} of ${s.noise.guessSlots}`);
+    for (const [cls, g] of Object.entries(s.gaps.byClass).slice(0, 4)) console.log(`  ${cls.padEnd(12)} ${String(g.gaps).padStart(4)}  ${g.top.slice(0, 8).join(", ")}`);
+    if (!s.reference) {
+      console.log(`prompt chars median ${s.prompt.chars.median}, p90 ${s.prompt.chars.p90}`);
+      for (const [group, g] of Object.entries(s.groups)) console.log(`  ${group.padEnd(14)} gap rate ${g.gapRate.padStart(6)} (${g.slots} slots)`);
+      console.log("\nmost-missed words (gaps, guesses ranked first):");
+      for (const w of topMisses(set, 15)) console.log(`  ${String(w.sentences).padStart(4)}  ${w.word.padEnd(14)} ${(w.lemma || "-").padEnd(10)} ${w.kind}`);
+      console.log();
+      continue;
+    }
     console.log(`self-contained ${s.prompt.selfContained} — of ${s.prompt.words} reference words, ${s.prompt.wordInPrompt} in the prompt, ${s.prompt.patternInPrompt} of the rest a shown pattern, ${s.prompt.missing} missing`);
     console.log(`  misses: ${Object.entries(s.missesByKind).map(([k, n]) => `${k} ${n}`).join(", ")}; prompt chars median ${s.prompt.chars.median}, p90 ${s.prompt.chars.p90}`);
     console.log(`roots: ${s.rootRecall.uses} uses — top-1 ${s.rootRecall.top1}, top-3 ${s.rootRecall.top3}, anywhere ${s.rootRecall.anywhere}`);

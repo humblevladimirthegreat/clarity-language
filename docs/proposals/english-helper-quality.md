@@ -1,6 +1,6 @@
 # Proposal: Checking and improving the English helper
 
-**Status:** PARTIALLY IMPLEMENTED. Phase 1 is built: the **checkpoint** set, *word in prompt*, *pattern in prompt*, *self-contained*, and the worklist ([`src/english-helper/coverage.ts`](../../src/english-helper/coverage.ts)). Phase 2 is built: [`cases.tsv`](../../src/english-helper/cases.tsv) and the baseline (`--check`, `--write-baseline`). Phases 3–5 are not.  
+**Status:** PARTIALLY IMPLEMENTED. Phase 1 is built: the **checkpoint** set, *word in prompt*, *pattern in prompt*, *self-contained*, and the worklist ([`src/english-helper/coverage.ts`](../../src/english-helper/coverage.ts)). Phase 2 is built: [`cases.tsv`](../../src/english-helper/cases.tsv) and the baseline (`--check`, `--write-baseline`). Phase 3 is built: the **wild** set ([`wild.tsv`](../../src/english-helper/wild.tsv)) and gap rate, noise and prompt size on every set. Phases 4–5 are not.  
 **Related:** [`src/english-helper/`](../../src/english-helper/) (analyzer, prompt, `--verify`), [`scripts/english-helper-recall.ts`](../../scripts/english-helper-recall.ts), [`scripts/frequency-coverage.ts`](../../scripts/frequency-coverage.ts), [`scripts/llm-eval.ts`](../../scripts/llm-eval.ts) (the Agebon → English counterpart), [translation checkpoints](../meta/translation-exercises.md), [recipe track](../meta/grammar-docs.md#recipe-track).  
 **Design authority:** none. This is a process for the tool. Every fix it produces is either tool code or a doc row that teaches a form a grammar page already owns. A missing form is logged as a grammar gap, never invented here.
 
@@ -39,7 +39,7 @@ We need a repeatable loop: a held-out test set, free metrics that answer "could 
 
 | Tool | Measures | Limit |
 |------|----------|-------|
-| `npm run english-helper-recall` (`--set doc\|checkpoint\|all`) | per set: root recall (top-1, top-3, anywhere), construction recall (home anchor, home page), *word in prompt*, *pattern in prompt*, *self-contained*, prompt size, most-missed roots, constructions and words; writes `tmp/english-helper-report.md` and `tmp/english-helper-worklist.csv` | no wild set yet; the worklist sorts only three classes (*missing cue*, *link without form*, *tagger*) |
+| `npm run english-helper-recall` (`--set doc\|checkpoint\|wild\|all`) | per set: root recall (top-1, top-3, anywhere), construction recall (home anchor, home page), *word in prompt*, *pattern in prompt*, *self-contained* (reference sets); gap rate by word class, noise, prompt size (every set); gap rate by phenomenon and stage (wild); most-missed roots, constructions and words; writes `tmp/english-helper-report.md` and `tmp/english-helper-worklist.csv` | the worklist sorts only four classes (*missing cue*, *link without form*, *tagger*, *ranking*) |
 | `npx tsx scripts/frequency-coverage.ts` | which of NGSL's 2,809 frequent lemmas the lexicon or a grammar row knows | word by word, no context, no prompt |
 | `english-helper.mjs --verify` | parse, unknown words, and each content word's sense next to the English that suggested its root | checks one draft; no aggregate |
 | `npm run llm-eval` | Agebon → English prompt quality, with a judge model | other direction; costs money |
@@ -169,7 +169,16 @@ Every few rounds, or after a big grammar change, run the model eval on a sample 
 
    How the pieces work: a word is *pattern* when it is an ordinary content word on `-l` or `-m` whose roots the prompt shows (an `x` word also needs a shown word of its `x` family), or any other word whose family and ending a shown word shares, so only the role letter differs. A miss is *tagger* when the prompt never shows the root though a word of the sentence names it, *link without form* when a linked page spells the word (or a numbers page is linked for a number), and *missing cue* otherwise. The other classes in the routing table still need a person to sort them.
 2. **Cases file and baseline.** Move the ad hoc feature tests that fit the format into `cases.tsv`; add `--check` and `--write-baseline`. **Done.** Beyond the expectations listed above, `has:<kind>` checks that some suggestion is of a kind, tier or detector id (*from … to*, a stranded hook), `first:` also takes a tier or detector id, and an empty slot names the sentence's clause detectors (past tense). Tests that pin more than one slot can say (exact suggestion lists, built forms, the stage filter, the hand-built WordNet index) stay in `analyze.test.ts`. The baseline guards, per set: *self-contained*, *word in prompt*, root recall top-1 and anywhere, construction recall by page (0.5 points each), and the median prompt size (500 characters). It tracks every set it was written for, doc included.
-3. **Wild set.** Write the phenomenon-grouped sentences; add gap rate, noise and prompt-size scoring for sets with no reference.
+3. **Wild set.** Write the phenomenon-grouped sentences; add gap rate, noise and prompt-size scoring for sets with no reference. **Done.** 221 sentences, about 20 for each of the eleven phenomena, split across the three stages, drafted from the phenomenon list alone. The stage is a grouping column only: every set is still scored on the full prompt (see **Stage** below). Gap rate, noise and prompt size run on every set; the baseline guards gap rate (0.5 points) and prompt size on all three. In the worklist, a wild gap is a *missing cue* row and a guess ranked above a grammar row is a *ranking* row; the `word` column holds the English word, since there is no reference. First numbers (2026-10-20):
+
+   | | doc | checkpoint | wild |
+   |---|---|---|---|
+   | gap rate | 3.6% | 3.4% | 5.2% |
+   | suggestions / jobs per slot | 2.12 / 1.01 | 1.99 / 0.86 | 2.05 / 1.14 |
+   | guess above a grammar row | 0 of 273 | 0 of 41 | 0 of 107 |
+   | prompt chars median | 12,583 | 12,329 | 12,894 |
+
+   The wild set's gaps are mostly degree and quantity words (*more*, *better*, *each*, *every*, *both*), with comparatives (9.4%) and pronouns (10.5%) the worst phenomena and places the best (0%). No guess ever ranks above a grammar row, since the analyzer puts every guess tier after the jobs; the metric stays as a guard for that order.
 4. **Verify precision and recall.** Planted-error drafts from checkpoint answers.
 5. **Model eval.** Only after phases 1–4 settle, so its misses can be read against the free metrics.
 

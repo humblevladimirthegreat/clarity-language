@@ -7,6 +7,7 @@
       "rootTop1": 75.4,
       "rootAnywhere": 90.6,
       "constructionPage": 51.9,
+      "gapRate": 3.6,
       "promptChars": 12583
     },
     "checkpoint": {
@@ -16,7 +17,13 @@
       "rootTop1": 85,
       "rootAnywhere": 94.3,
       "constructionPage": 53.4,
+      "gapRate": 3.4,
       "promptChars": 12329
+    },
+    "wild": {
+      "sentences": 221,
+      "gapRate": 5.2,
+      "promptChars": 12894
     }
   }
 }

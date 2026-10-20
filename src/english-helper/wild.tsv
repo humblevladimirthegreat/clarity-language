@@ -1,0 +1,225 @@
+phenomenon	stage	english
+# Wild set for scripts/english-helper-recall.ts: plain English with no reference Agebon, drafted from the
+# phenomenon list alone, never from cue rows. Never copy these into cue rows or examples; grow it only
+# through the triage loop (docs/proposals/english-helper-quality.md).
+pronouns	beginner	I am tired.
+pronouns	beginner	She likes him.
+pronouns	beginner	We eat together.
+pronouns	beginner	They help us.
+pronouns	beginner	You look happy.
+pronouns	beginner	He gave it to me.
+pronouns	beginner	It is raining.
+pronouns	beginner	Give them the book.
+pronouns	intermediate	Somebody left the door open.
+pronouns	intermediate	Nobody answered the phone.
+pronouns	intermediate	I hurt myself yesterday.
+pronouns	intermediate	They blamed each other.
+pronouns	intermediate	Everyone wants something different.
+pronouns	intermediate	Anyone can learn this.
+pronouns	intermediate	You never know what will happen.
+pronouns	advanced	She told herself that it didn't matter.
+pronouns	advanced	One should always check the facts.
+pronouns	advanced	Whoever finds it can keep it.
+pronouns	advanced	Those who wait will see.
+pronouns	advanced	We, the students, disagree.
+pronouns	advanced	He and I both noticed it.
+possessives	beginner	My dog is big.
+possessives	beginner	Her car is red.
+possessives	beginner	Their house is small.
+possessives	beginner	Is this your bag?
+possessives	beginner	Our teacher is kind.
+possessives	beginner	His shoes are wet.
+possessives	beginner	The cat's tail is long.
+possessives	intermediate	That book is mine.
+possessives	intermediate	The children's toys are everywhere.
+possessives	intermediate	A friend of mine called.
+possessives	intermediate	Whose coat is this?
+possessives	intermediate	The roof of the house leaks.
+possessives	intermediate	My brother's wife cooks well.
+possessives	intermediate	Its color changed.
+possessives	advanced	Nothing of hers was missing.
+possessives	advanced	The city's oldest bridge collapsed.
+possessives	advanced	Each other's ideas surprised them.
+possessives	advanced	The owner of the shop next door retired.
+possessives	advanced	Is it yours or theirs?
+possessives	advanced	We borrowed our neighbors' ladder.
+numbers	beginner	I have two cats.
+numbers	beginner	She bought five apples.
+numbers	beginner	There are ten people here.
+numbers	beginner	He is seven years old.
+numbers	beginner	We need one more chair.
+numbers	beginner	The first day was hard.
+numbers	beginner	Three birds sat on the fence.
+numbers	intermediate	The meeting starts at nine thirty.
+numbers	intermediate	About a hundred people came.
+numbers	intermediate	Half of the cake is gone.
+numbers	intermediate	He finished second in the race.
+numbers	intermediate	The rent is twelve hundred dollars.
+numbers	intermediate	Twice a week I swim.
+numbers	intermediate	A few students stayed late.
+numbers	advanced	Roughly a third of the votes were lost.
+numbers	advanced	The population doubled in twenty years.
+numbers	advanced	Each of the forty rooms has a window.
+numbers	advanced	The score was three to one.
+numbers	advanced	Nearly two million people live there.
+numbers	advanced	She answered every question but the last.
+time	beginner	I woke up early today.
+time	beginner	We met yesterday.
+time	beginner	See you tomorrow.
+time	beginner	He works at night.
+time	beginner	She always drinks coffee in the morning.
+time	beginner	It rained last week.
+time	beginner	I will call you soon.
+time	intermediate	I haven't seen her since Monday.
+time	intermediate	The shop opens after lunch.
+time	intermediate	We lived there for three years.
+time	intermediate	He usually arrives before noon.
+time	intermediate	Until then, wait here.
+time	intermediate	I already finished my homework.
+time	intermediate	They still live in the same town.
+time	advanced	By the time we arrived, the film had started.
+time	advanced	She had been working there for a decade.
+time	advanced	Once in a while, he visits his old school.
+time	advanced	From now on, I will be careful.
+time	advanced	The next morning everything looked different.
+time	advanced	While I was cooking, the phone rang.
+feelings	beginner	I am happy.
+feelings	beginner	She is sad.
+feelings	beginner	He is angry at me.
+feelings	beginner	We are afraid of the dark.
+feelings	beginner	I love you.
+feelings	beginner	They feel lonely.
+feelings	beginner	I miss my mother.
+feelings	intermediate	I am grateful for your help.
+feelings	intermediate	She is proud of her son.
+feelings	intermediate	He felt ashamed of his mistake.
+feelings	intermediate	I'm worried about the exam.
+feelings	intermediate	We were surprised by the news.
+feelings	intermediate	She is jealous of her sister.
+feelings	intermediate	I am sorry that I was late.
+feelings	advanced	Her kindness made me feel welcome.
+feelings	advanced	I was relieved when the test was over.
+feelings	advanced	He resents being told what to do.
+feelings	advanced	She is torn between two choices.
+feelings	advanced	The loss left him numb for weeks.
+feelings	advanced	I'm thankful that nobody got hurt.
+stance	beginner	Maybe it will rain.
+stance	beginner	I think he is right.
+stance	beginner	Of course you can come.
+stance	beginner	She is probably at home.
+stance	beginner	I don't know.
+stance	beginner	It is true.
+stance	beginner	Surely you agree.
+stance	intermediate	I'm not sure that it works.
+stance	intermediate	Apparently the store is closed.
+stance	intermediate	I doubt that he will come.
+stance	intermediate	It seems that she left early.
+stance	intermediate	They say the bridge is unsafe.
+stance	intermediate	I guess we lost.
+stance	intermediate	Honestly, I don't care.
+stance	advanced	I could be wrong, but I think it's broken.
+stance	advanced	Supposedly, the deal was signed last night.
+stance	advanced	It must have rained overnight.
+stance	advanced	There is no way he did that alone.
+stance	advanced	As far as I know, nobody saw it.
+stance	advanced	I bet she already knows.
+clauses	beginner	I know that you are busy.
+clauses	beginner	He runs because he is late.
+clauses	beginner	If it rains, we stay home.
+clauses	beginner	She sings when she is happy.
+clauses	beginner	I eat, and then I sleep.
+clauses	beginner	The man who lives here is a doctor.
+clauses	beginner	I want to go home.
+clauses	intermediate	Although it was cold, we swam.
+clauses	intermediate	I'll wait until you finish.
+clauses	intermediate	She said that she would come.
+clauses	intermediate	The book that I read was boring.
+clauses	intermediate	He asked whether I was ready.
+clauses	intermediate	We left early so that we could rest.
+clauses	intermediate	Before you leave, close the window.
+clauses	advanced	Had I known, I would have helped.
+clauses	advanced	Whatever you decide, I will support you.
+clauses	advanced	The place where we met has closed.
+clauses	advanced	She acted as if nothing had happened.
+clauses	advanced	Unless you hurry, you will miss the bus.
+clauses	advanced	The more you practice, the better you get.
+questions	beginner	Where is the station?
+questions	beginner	What is your name?
+questions	beginner	Do you like tea?
+questions	beginner	Who is that?
+questions	beginner	Why are you crying?
+questions	beginner	How are you?
+questions	beginner	Is it cold outside?
+questions	intermediate	How many brothers do you have?
+questions	intermediate	Which one do you want?
+questions	intermediate	When did you arrive?
+questions	intermediate	What are you looking for?
+questions	intermediate	Can you help me?
+questions	intermediate	Haven't you eaten yet?
+questions	intermediate	Whose idea was this?
+questions	advanced	Why didn't anyone tell me?
+questions	advanced	What would you do if you were me?
+questions	advanced	Who did you say was coming?
+questions	advanced	How long have you been waiting?
+questions	advanced	Isn't it strange that nobody called?
+questions	advanced	Where do you think she went?
+comparatives	beginner	My brother is taller than me.
+comparatives	beginner	This bag is heavier.
+comparatives	beginner	She runs faster than her friend.
+comparatives	beginner	It is the biggest house in town.
+comparatives	beginner	Tea is as good as coffee.
+comparatives	beginner	This one is better.
+comparatives	beginner	He is the oldest child.
+comparatives	intermediate	The test was easier than I expected.
+comparatives	intermediate	This road is less dangerous.
+comparatives	intermediate	She speaks more slowly than he does.
+comparatives	intermediate	It is the worst movie I have ever seen.
+comparatives	intermediate	He earns twice as much as I do.
+comparatives	intermediate	The river is not as deep as the lake.
+comparatives	intermediate	Of the three, she is the smartest.
+comparatives	advanced	The longer we waited, the angrier he got.
+comparatives	advanced	Nothing is more important than health.
+comparatives	advanced	She is by far the best player on the team.
+comparatives	advanced	It was more of a warning than a threat.
+comparatives	advanced	The second plan is slightly cheaper than the first.
+comparatives	advanced	Fewer people came than last year.
+kin	beginner	My mother is a nurse.
+kin	beginner	His father cooks dinner.
+kin	beginner	I have a little sister.
+kin	beginner	Her son is five.
+kin	beginner	Our grandmother lives with us.
+kin	beginner	My uncle has a farm.
+kin	beginner	The baby is sleeping.
+kin	intermediate	My cousin is getting married.
+kin	intermediate	Her husband works abroad.
+kin	intermediate	Their daughter studies medicine.
+kin	intermediate	My stepfather is kind.
+kin	intermediate	The twins look alike.
+kin	intermediate	His aunt raised him.
+kin	intermediate	My grandson visits every summer.
+kin	advanced	My sister-in-law teaches at the university.
+kin	advanced	Her great-grandfather fought in the war.
+kin	advanced	The two families became related through marriage.
+kin	advanced	He is an only child.
+kin	advanced	My parents' parents came from the north.
+kin	advanced	She is my mother's cousin.
+places	beginner	The cat is under the table.
+places	beginner	I live near the park.
+places	beginner	She is at school.
+places	beginner	The keys are in my bag.
+places	beginner	We walked to the beach.
+places	beginner	The bird flew over the house.
+places	beginner	He sits behind me.
+places	intermediate	The bank is across the street from the library.
+places	intermediate	We drove through the tunnel.
+places	intermediate	The store is between the bakery and the post office.
+places	intermediate	I left my phone somewhere.
+places	intermediate	They climbed to the top of the hill.
+places	intermediate	She lives abroad.
+places	intermediate	Go straight and turn left at the corner.
+places	advanced	The village lies just beyond the river.
+places	advanced	Everywhere we looked, there was snow.
+places	advanced	He came out from behind the curtain.
+places	advanced	The town is two hours north of the capital.
+places	advanced	Inside the box, she found a letter.
+places	advanced	We stood face to face in the hallway.
