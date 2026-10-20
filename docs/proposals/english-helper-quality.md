@@ -1,6 +1,6 @@
 # Proposal: Checking and improving the English helper
 
-**Status:** PROPOSED. The tools named under *What exists* are built; everything under *Plan* is not.  
+**Status:** PARTIALLY IMPLEMENTED. Phase 1 is built: the **checkpoint** set, *word in prompt*, *pattern in prompt*, *self-contained*, and the worklist ([`src/english-helper/coverage.ts`](../../src/english-helper/coverage.ts)). Phases 2–5 are not.  
 **Related:** [`src/english-helper/`](../../src/english-helper/) (analyzer, prompt, `--verify`), [`scripts/english-helper-recall.ts`](../../scripts/english-helper-recall.ts), [`scripts/frequency-coverage.ts`](../../scripts/frequency-coverage.ts), [`scripts/llm-eval.ts`](../../scripts/llm-eval.ts) (the Agebon → English counterpart), [translation checkpoints](../meta/translation-exercises.md), [recipe track](../meta/grammar-docs.md#recipe-track).  
 **Design authority:** none. This is a process for the tool. Every fix it produces is either tool code or a doc row that teaches a form a grammar page already owns. A missing form is logged as a grammar gap, never invented here.
 
@@ -39,7 +39,7 @@ We need a repeatable loop: a held-out test set, free metrics that answer "could 
 
 | Tool | Measures | Limit |
 |------|----------|-------|
-| `npm run english-helper-recall` | root recall (top-1, top-3, anywhere), construction recall (home anchor, home page), most-missed roots and constructions | in-sample doc pairs only; a linked section counts as found even if the prompt never shows the form |
+| `npm run english-helper-recall` (`--set doc\|checkpoint\|all`) | per set: root recall (top-1, top-3, anywhere), construction recall (home anchor, home page), *word in prompt*, *pattern in prompt*, *self-contained*, prompt size, most-missed roots, constructions and words; writes `tmp/english-helper-report.md` and `tmp/english-helper-worklist.csv` | no wild set yet; the worklist sorts only three classes (*missing cue*, *link without form*, *tagger*) |
 | `npx tsx scripts/frequency-coverage.ts` | which of NGSL's 2,809 frequent lemmas the lexicon or a grammar row knows | word by word, no context, no prompt |
 | `english-helper.mjs --verify` | parse, unknown words, and each content word's sense next to the English that suggested its root | checks one draft; no aggregate |
 | `npm run llm-eval` | Agebon → English prompt quality, with a judge model | other direction; costs money |
@@ -153,7 +153,19 @@ Every few rounds, or after a big grammar change, run the model eval on a sample 
 
 ## Phases
 
-1. **Checkpoint set and self-containment metrics.** Read practice items into the recall script; add *word in prompt*, *pattern in prompt* and *self-contained*; write the worklist. This shows how big the problem is.
+1. **Checkpoint set and self-containment metrics.** Read practice items into the recall script; add *word in prompt*, *pattern in prompt* and *self-contained*; write the worklist. This shows how big the problem is. **Done.** First numbers (2026-10-20, full prompt, no `--stage`):
+
+   | | doc | checkpoint |
+   |---|---|---|
+   | sentences | 1145 | 312 |
+   | **self-contained** | 57.2% | 64.4% |
+   | word in prompt | 79.2% | 78.4% |
+   | pattern in prompt (of the rest) | 34.4% | 48.8% |
+   | words missing | 13.6% | 11.1% |
+   | root recall top-1 / anywhere | 75.4% / 90.6% | 85.0% / 94.3% |
+   | prompt chars median | 12,583 | 12,329 |
+
+   How the pieces work: a word is *pattern* when it is an ordinary content word on `-l` or `-m` whose roots the prompt shows (an `x` word also needs a shown word of its `x` family), or any other word whose family and ending a shown word shares, so only the role letter differs. A miss is *tagger* when the prompt never shows the root though a word of the sentence names it, *link without form* when a linked page spells the word (or a numbers page is linked for a number), and *missing cue* otherwise. The other classes in the routing table still need a person to sort them.
 2. **Cases file and baseline.** Move the ad hoc feature tests that fit the format into `cases.tsv`; add `--check` and `--write-baseline`.
 3. **Wild set.** Write the phenomenon-grouped sentences; add gap rate, noise and prompt-size scoring for sets with no reference.
 4. **Verify precision and recall.** Planted-error drafts from checkpoint answers.
