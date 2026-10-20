@@ -18,7 +18,8 @@ A hand-picked spelling bypasses the checks that placement runs. Placement:
 
 - keeps a row's root length, and gives a new row three letters only when it is overlay-backed ([root length](#root-length))
 - builds a five-letter root's last two letters from the row's `kind` and `shape` ([root tails](#root-tails)), and picks its first three letters to keep same-kind roots apart ([onset](#onset))
-- skips roots already held by other rows and stems used in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv), and any root that would give a listed or hook compound a second split ([two seams](#two-seams))
+- skips roots already held by other rows and stems used in [`lexicon-compounds.csv`](../../data/lexicon-compounds.csv), and any root that would give a listed or hook compound a second split ([two seams](#two-seams)). A new three-letter root also clears the hook and holder checks against the five-letter roots that stay put; five-letter rows placed in the same run are checked against the new three-letter spellings.
+- never spells a root with an English word the doc lint reads as English in code (*are*), since the retie refuses one
 - rewrites the overlay and compound rows that spell the old root, and writes `tmp/lexicon-retie-map.json` for `retie-docs`
 - prints the root-tails report (`npm run convert-word -- --report` prints it alone)
 

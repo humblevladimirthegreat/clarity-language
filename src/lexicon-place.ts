@@ -9,11 +9,14 @@ import { dirname, join } from "node:path";
 
 import { echo, loadPron } from "./echo-metric.ts";
 import { buildPronunciationCache } from "./echo-pronunciation.ts";
-import type { CompoundRow } from "./lexicon-compounds.ts";
+import { ENGLISH_IN_CODE } from "./english-in-code.ts";
+import { potentialCompoundSplits, type CompoundRow } from "./lexicon-compounds.ts";
 import { isJoinOverlayKind, type OverlayRow } from "./lexicon-search.ts";
+import { HOLDER_HOST_KINDS } from "./parse/classify.ts";
+import { isExtraNounHook } from "./parse/hook-compounds.ts";
 import { placeRoot } from "./place-root.ts";
 import { REPO_ROOT } from "./repo-paths.ts";
-import { holderHostForms, PLACE_KIND, sizeFieldError, tailFieldsError, type Kind, type Shape, type Size } from "./root-tails.ts";
+import { holderHostForms, hookClash, PLACE_KIND, sizeFieldError, tailFieldsError, type Kind, type Shape, type Size } from "./root-tails.ts";
 import { placeTailRoots, tailCompounds, type TailPlaceRow } from "./root-tails-place.ts";
 
 const FREQ_FILE = join(REPO_ROOT, "tmp", "en_50k.txt");
@@ -171,19 +174,107 @@ function pairHard(pair: GroupRule, x: string, y: string): number {
   return violations;
 }
 
+/** Two short rows that may not hold these forms together: with both, the listed compound `stem` splits two ways. */
+export type CompoundConflict = { item: number; form: string; other: string; stem: string };
+
+/** What roots that stay put this run owe the short rows being placed; item numbers index the anneal's rows. */
+export type ShortRootGuards = {
+  /** Forms no short row may take. */
+  blocked: Set<string>;
+  /** Forms one row may not take, with the reason. */
+  bans: Map<number, Map<string, string>>;
+  conflicts: CompoundConflict[];
+};
+
+/** A `/th/` holder host spells its row's root + a grade letter; the row's overlays give each grade it takes. */
+function holderGrades(row: PlaceRow, overlays: readonly OverlayRow[]): string[] {
+  const base = row.root || row.emoji;
+  if (!base) return [];
+  return overlays
+    .filter((o) => o.emoji === row.emoji && o.pos === "th" && HOLDER_HOST_KINDS.has(o.kind) && o.senseForm.startsWith(base))
+    .map((o) => o.senseForm.slice(base.length));
+}
+
+/**
+ * Checks the placed roots must pass against roots that stay put (`staticRoots`: kept rows and
+ * place-name roots), as hard rules for the short anneal: the hook check and the holder check against
+ * kept five-letter roots, and no listed compound with a second split. Compounds with a five-letter
+ * member being re-placed are left to the five-letter placer, which sees the final short roots.
+ */
+export function shortRootGuards(
+  items: readonly Indexed[],
+  blocked: ReadonlySet<string>,
+  context: { staticRoots: ReadonlySet<string>; keptLong: readonly string[]; overlays: readonly OverlayRow[]; compounds: readonly CompoundRow[] },
+): ShortRootGuards {
+  const { staticRoots, keptLong } = context;
+  const pool = forms(3).filter((form) => !blocked.has(form));
+  const poolSet = new Set(pool);
+  const guards: ShortRootGuards = { blocked: new Set(), bans: new Map(), conflicts: [] };
+  const ban = (i: number, form: string, reason: string) => {
+    const reasons = guards.bans.get(i) ?? new Map<string, string>();
+    if (!reasons.has(form)) reasons.set(form, reason);
+    guards.bans.set(i, reasons);
+  };
+
+  // A kept l / m-second root whose onset is a short root reads as that root + join + hook.
+  for (const root of keptLong) if (hookClash(root, poolSet)) guards.blocked.add(root.slice(0, 3));
+
+  // A short row's new holder host must not start a kept five-letter root.
+  const keptStarts = new Set(keptLong.map((root) => root.slice(0, 4)));
+  items.forEach((item, i) => {
+    for (const grade of holderGrades(item.row, context.overlays)) {
+      for (const form of pool) if (keptStarts.has(form + grade)) ban(i, form, `holder host ${form + grade} starts a kept root`);
+    }
+  });
+
+  // Listed compounds: a split other than the declared one, made of roots that stay put and short forms.
+  const isRoot = (root: string) => staticRoots.has(root) || (root.length === 3 && poolSet.has(root));
+  const itemOf = new Map(items.flatMap((item, i) => (item.row.root ? [[item.row.root, i] as const] : [])));
+  for (const c of context.compounds) {
+    if (isExtraNounHook(c.right)) continue;
+    const sides = [c.left, c.right].map((root) => itemOf.get(root) ?? (staticRoots.has(root) ? "static" : null));
+    // A member being re-placed as a five-letter root: the five-letter placer checks it.
+    if (sides.includes(null)) continue;
+    const moving = sides.filter((side) => typeof side === "number").length;
+    // Two short members make a 3 + join + 3 stem, which has no other split.
+    if (moving === 2) continue;
+    for (const form of moving === 0 ? [""] : pool) {
+      const left = sides[0] === "static" ? c.left : form;
+      const right = sides[1] === "static" ? c.right : form;
+      const stem = left + c.join + right;
+      const item = sides.find((side): side is number => typeof side === "number");
+      for (const split of potentialCompoundSplits(stem, isRoot)) {
+        if (split.left === left && split.join === c.join) continue;
+        if (!isRoot(split.right)) continue;
+        const dynamic = [split.left, split.right].filter((part) => !staticRoots.has(part));
+        if (item === undefined) {
+          if (dynamic.length === 1) guards.blocked.add(dynamic[0]!);
+        } else if (dynamic.length === 0 || (dynamic.length === 1 && dynamic[0] === form)) {
+          ban(item, form, `compound ${stem} also reads ${split.left}+${split.join}+${split.right}`);
+        } else if (dynamic.length === 1) {
+          guards.conflicts.push({ item, form, other: dynamic[0]!, stem });
+        }
+      }
+    }
+  }
+  return guards;
+}
+
 /**
  * Anneal three-letter roots. Frequent rows weigh echo more (up to 2×).
  * Grammatical-group floors stay hard; domain and sibling spacing stay off (echo-first).
+ * `guards` ({@link shortRootGuards}) are hard too.
  */
 export function annealShortRoots(
   items: Indexed[],
   blocked: Set<string>,
-  options: { restarts?: number; steps?: number; fixed?: FixedRoot[] } = {},
+  options: { restarts?: number; steps?: number; fixed?: FixedRoot[]; guards?: ShortRootGuards } = {},
 ): Map<Indexed, string> {
   if (items.length === 0) return new Map();
   const restarts = options.restarts ?? 6;
   const steps = options.steps ?? 400_000;
-  const pool = forms(3).filter((form) => !blocked.has(form));
+  const guards: ShortRootGuards = options.guards ?? { blocked: new Set(), bans: new Map(), conflicts: [] };
+  const pool = forms(3).filter((form) => !blocked.has(form) && !guards.blocked.has(form));
   if (items.length > pool.length) {
     throw new Error(`short roots: ${items.length} eligible rows and ${pool.length} free VCV shapes`);
   }
@@ -204,7 +295,16 @@ export function annealShortRoots(
   const fixedHard = (i: number, form: string) =>
     fixedRules[i]!.reduce((sum, { fixed, rule }) => sum + pairHard(rule, form, fixed.root), 0);
   for (let i = 0; i < items.length; i++) {
-    for (const [form, cost] of unary[i]!) unary[i]!.set(form, cost + 1000 * fixedHard(i, form));
+    const banned = guards.bans.get(i);
+    for (const [form, cost] of unary[i]!) unary[i]!.set(form, cost + 1000 * (fixedHard(i, form) + (banned?.has(form) ? 1 : 0)));
+  }
+  // Compound conflicts by row and form, and by the form the other row holds.
+  const conflictsOf = items.map(() => new Map<string, CompoundConflict[]>());
+  const conflictsOn = new Map<string, CompoundConflict[]>();
+  for (const conflict of guards.conflicts) {
+    const mine = conflictsOf[conflict.item]!;
+    mine.set(conflict.form, [...(mine.get(conflict.form) ?? []), conflict]);
+    conflictsOn.set(conflict.other, [...(conflictsOn.get(conflict.other) ?? []), conflict]);
   }
   const pairs: PairRule[] = [];
   for (let a = 0; a < items.length; a++) {
@@ -222,6 +322,25 @@ export function annealShortRoots(
   let seed = 12345;
   const rnd = () => ((seed = (seed * 1103515245 + 12345) & 0x7fffffff) / 0x7fffffff);
   const assign = items.map((_, i) => [...unary[i]!.entries()].sort((a, b) => a[1] - b[1])[0]![0]);
+  // How many rows hold each form, for the compound conflicts.
+  const holders = new Map<string, number>();
+  const hold = (form: string, by: number) => holders.set(form, (holders.get(form) ?? 0) + by);
+  for (const form of assign) hold(form, 1);
+  const put = (i: number, form: string) => {
+    hold(assign[i]!, -1);
+    assign[i] = form;
+    hold(form, 1);
+  };
+  const conflictCount = (i: number, form: string) => {
+    let count = 0;
+    for (const conflict of conflictsOf[i]!.get(form) ?? []) {
+      if ((holders.get(conflict.other) ?? 0) - (assign[i] === conflict.other ? 1 : 0) > 0) count++;
+    }
+    for (const conflict of conflictsOn.get(form) ?? []) {
+      if (conflict.item !== i && assign[conflict.item] === conflict.form) count++;
+    }
+    return count;
+  };
   const localCost = (i: number, form: string) => {
     let hard = 0;
     let soft = unary[i]!.get(form)!;
@@ -232,6 +351,7 @@ export function annealShortRoots(
     for (const j of unique[i]!) {
       if (assign[j] === form && !byVar[i]!.some((pair) => pair.a === j || pair.b === j)) hard++;
     }
+    hard += conflictCount(i, form);
     return 1000 * hard + soft;
   };
   let best = [...assign];
@@ -247,7 +367,7 @@ export function annealShortRoots(
       const i = Math.floor(rnd() * items.length);
       const form = pool[Math.floor(rnd() * pool.length)]!;
       const delta = localCost(i, form) - localCost(i, assign[i]!);
-      if (delta <= 0 || rnd() < Math.exp(-delta / temperature)) assign[i] = form;
+      if (delta <= 0 || rnd() < Math.exp(-delta / temperature)) put(i, form);
       temperature = Math.max(0.05, temperature * 0.99997);
     }
     const cost = total();
@@ -255,7 +375,7 @@ export function annealShortRoots(
       bestCost = cost;
       best = [...assign];
     }
-    for (let i = 0; i < items.length; i++) assign[i] = best[i]!;
+    for (let i = 0; i < items.length; i++) put(i, best[i]!);
   }
   const broken = [
     ...pairs.filter((pair) => pairHard(pair, best[pair.a]!, best[pair.b]!) > 0).map((pair) => `${best[pair.a]} ~ ${best[pair.b]}`),
@@ -265,6 +385,17 @@ export function annealShortRoots(
   ];
   if (broken.length > 0) {
     throw new Error(`short roots too close within an overlay group: ${broken.join(", ")}`);
+  }
+  const unguarded = items.flatMap((_, i) => {
+    const reason = guards.bans.get(i)?.get(best[i]!);
+    const conflicts = (conflictsOf[i]!.get(best[i]!) ?? []).filter((conflict) => best.some((form, j) => j !== i && form === conflict.other));
+    return [
+      ...(reason ? [`${best[i]}: ${reason}`] : []),
+      ...conflicts.map((conflict) => `${conflict.form} ~ ${conflict.other}: compound ${conflict.stem} splits two ways`),
+    ];
+  });
+  if (unguarded.length > 0) {
+    throw new Error(`short roots fail checks against kept roots: ${unguarded.join(", ")}`);
   }
   const seen = new Set<string>();
   const placed = new Map<Indexed, string>();
@@ -318,23 +449,21 @@ export async function placePublishedRoots(
   const freqRank = loadFrequencyRanks();
   const indexed = indexRows(rows, overlays, pron, freqRank);
   const skip = options.skip ?? new Set<string>();
-  const taken = new Set(options.blocked ?? []);
+  // An English word the doc lint reads as English in code can't be a root.
+  const taken = new Set([...(options.blocked ?? []), ...ENGLISH_IN_CODE]);
   for (const overlay of overlays) {
     if (isJoinOverlayKind(overlay.kind) && overlay.senseForm) taken.add(overlay.senseForm);
   }
   const targets = indexed.filter((item) => item.row.concrete.trim() && !skip.has(item.row.emoji) && !skip.has(item.row.concrete));
   const kept = [...(options.kept ?? [])];
+  const keptLong = kept.filter((k) => k.root.length === 5);
   const groupsByEmoji = overlayGroups(overlays);
   const fixed: FixedRoot[] = kept.flatMap(({ emoji, root }) => {
     const groups = groupsByEmoji.get(emoji);
     return root.length === 3 && groups ? [{ root, groups }] : [];
   });
-  const short = annealShortRoots(
-    targets.filter((item) => item.eligible),
-    taken,
-    { restarts: options.annealRestarts, steps: options.annealSteps, fixed },
-  );
 
+  // Place-name roots don't depend on the others, so they stay put for the short anneal.
   const placeTargets = targets.filter((item) => !item.eligible && item.row.kind === PLACE_KIND);
   const noPron = placeTargets.filter((item) => !item.cmu).map((item) => item.row.concrete);
   if (noPron.length > 0) throw new Error(`place-name rows need a pronunciation (CMU_OVERRIDES in src/cmu-dict.ts): ${noPron.join(", ")}`);
@@ -345,6 +474,39 @@ export async function placePublishedRoots(
     if (other) throw new Error(`place-name root ${root} spells both ${other} and ${item.row.concrete}`);
     placeOwner.set(root, item.row.concrete);
   }
+
+  const shortTargets = targets.filter((item) => item.eligible);
+  const guards = shortRootGuards(shortTargets, taken, {
+    staticRoots: new Set([...kept.map((k) => k.root), ...places.values()]),
+    keptLong: keptLong.map((k) => k.root),
+    overlays,
+    compounds: options.compounds ?? [],
+  });
+  const short = annealShortRoots(shortTargets, taken, { restarts: options.annealRestarts, steps: options.annealSteps, fixed, guards });
+
+  // The five-letter placer sees the short roots as they are now spelled: holder hosts and compound members.
+  const moved = new Map<string, { from: string; to: string }>();
+  const movedRoots = new Map<string, string>();
+  for (const [item, root] of short) {
+    const from = item.row.root || item.row.emoji;
+    if (!from || from === root) continue;
+    if (item.row.emoji) moved.set(item.row.emoji, { from, to: root });
+    if (item.row.root) movedRoots.set(item.row.root, root);
+  }
+  const holderHosts = holderHostForms(
+    overlays.map((overlay) => {
+      const respell = moved.get(overlay.emoji);
+      return respell && overlay.senseForm.startsWith(respell.from)
+        ? { ...overlay, senseForm: respell.to + overlay.senseForm.slice(respell.from.length) }
+        : overlay;
+    }),
+  );
+  const compounds = (options.compounds ?? []).map((c) => ({
+    ...c,
+    left: movedRoots.get(c.left) ?? c.left,
+    right: movedRoots.get(c.right) ?? c.right,
+  }));
+
   const longTargets = targets.filter((item) => !item.eligible && item.row.kind !== PLACE_KIND);
   const fieldErrors = longTargets.flatMap((item) => {
     const error = tailFieldsError(item.row.kind ?? "", item.row.shape ?? "") ?? sizeFieldError(item.row.kind as Kind, item.row.size ?? "");
@@ -352,7 +514,6 @@ export async function placePublishedRoots(
   });
   if (fieldErrors.length > 0) throw new Error(`five-letter rows need a kind, a shape and (by kind) a size:\n  ${fieldErrors.join("\n  ")}`);
   const shortRoots = new Set([...short.values(), ...kept.map((k) => k.root).filter((root) => root.length === 3)]);
-  const keptLong = kept.filter((k) => k.root.length === 5);
   const tailRows: TailPlaceRow[] = [
     ...longTargets.map((item) => ({ kind: item.row.kind as Kind, shape: item.row.shape as Shape, size: (item.row.size || undefined) as Size | undefined, cmu: item.cmu })),
     ...keptLong.map((k) => ({ cmu: "", fixed: k.root })),
@@ -365,9 +526,9 @@ export async function placePublishedRoots(
   const tails = placeTailRoots({
     rows: tailRows,
     shortRoots,
-    holderHosts: holderHostForms(overlays),
+    holderHosts,
     blocked: new Set([...taken].filter((form) => form.length === 5 && !rowOfRoot.has(form))),
-    compounds: tailCompounds(options.compounds ?? [], rowOfRoot, shortRoots),
+    compounds: tailCompounds(compounds, rowOfRoot, shortRoots),
     steps: options.tailSteps,
   });
   if (tails.unmet.length > 0) throw new Error(`five-letter placement left checks unmet:\n  ${tails.unmet.join("\n  ")}`);

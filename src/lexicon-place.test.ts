@@ -1,8 +1,36 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
-import { englishRank, loadFrequencyRanks, placePublishedRoots, rowPriority } from "./lexicon-place.ts";
+import type { CompoundRow } from "./lexicon-compounds.ts";
+import { annealShortRoots, englishRank, loadFrequencyRanks, placePublishedRoots, rowPriority, shortRootGuards } from "./lexicon-place.ts";
 import type { OverlayRow } from "./lexicon-search.ts";
+import { shortRootCandidates } from "./word-converter.ts";
+
+const V = "aeou";
+const C = "bdghylmnrvwz";
+
+/** Every VCV but `keep`. */
+function shortBut(...keep: string[]): string[] {
+  const out: string[] = [];
+  for (const a of V) for (const c of C) for (const b of V) if (!keep.includes(a + c + b)) out.push(a + c + b);
+  return out;
+}
+
+/** Every five-letter root with this tail but `keep`. */
+function tailBut(tail: string, ...keep: string[]): string[] {
+  const out: string[] = [];
+  for (const a of V) for (const c of C) for (const b of V) if (!keep.includes(a + c + b + tail)) out.push(a + c + b + tail);
+  return out;
+}
+
+function compound(left: string, join: CompoundRow["join"], right: string): CompoundRow {
+  return { stem: left + join + right, left, join, right, concrete: "", abstract: "", mnemonic: "", core: "" };
+}
+
+/** A short row as the anneal takes it. */
+function shortItem(emoji: string, root: string, cmu: string, index: number) {
+  return { row: { emoji, concrete: emoji, abstract: "", englishByPos: "", root }, index, groups: new Set<string>(), eligible: true, priority: index, cmu };
+}
 
 describe("frequency priority", () => {
   it("ranks a common word ahead of an unlisted one", () => {
@@ -80,5 +108,82 @@ describe("placement", () => {
     const root = placed[0]!.root;
     assert.ok([...root].filter((letter, i) => letter !== "aba"[i]).length >= 2, root);
     assert.notEqual(root[1], "b", root);
+  });
+
+  it("never spells a root with an English word the doc lint reads as English", async () => {
+    await assert.rejects(
+      placePublishedRoots([{ emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "" }], [overlay], {
+        blocked: shortBut("are"),
+        annealRestarts: 1,
+        annealSteps: 20,
+      }),
+      /0 free VCV shapes/,
+    );
+    assert.ok(!shortRootCandidates("AA1 R").includes("are"));
+  });
+
+  it("keeps a short root off the onset of a kept l / m-second root", async () => {
+    const placed = await placePublishedRoots([{ emoji: "🗳️", concrete: "ballot", abstract: "autonomy", englishByPos: "" }], [overlay], {
+      blocked: shortBut("abu", "ezo"),
+      kept: [{ emoji: "🌹", root: "abula" }],
+      annealRestarts: 1,
+      annealSteps: 200,
+    });
+    assert.equal(placed[0]!.root, "ezo");
+  });
+
+  it("checks five-letter rows against a moved short root's new holder host", async () => {
+    const fishing: OverlayRow = { ...overlay, senseForm: "evor", emoji: "🎣", kind: "evidential", gloss: "recalled" };
+    const placed = await placePublishedRoots(
+      [
+        { emoji: "🎣", concrete: "fishing", abstract: "memory", englishByPos: "", root: "evo" },
+        { emoji: "🎻", concrete: "violin", abstract: "harmony", englishByPos: "", kind: "counting", shape: "order", size: "none" },
+      ],
+      [fishing],
+      { blocked: [...shortBut("uvu"), ...tailBut("re", "uvure", "ezore")], annealRestarts: 1, annealSteps: 20, tailSteps: 100 },
+    );
+    assert.equal(placed.find((row) => row.emoji === "🎣")!.root, "uvu");
+    // `uvure` starts with the new host `uvur`.
+    assert.equal(placed.find((row) => row.emoji === "🎻")!.root, "ezore");
+  });
+
+  it("checks listed compounds through a moved short member's new spelling", async () => {
+    const placed = await placePublishedRoots(
+      [
+        { emoji: "🎣", concrete: "fishing", abstract: "memory", englishByPos: "", root: "evo" },
+        { emoji: "🔢", concrete: "number", abstract: "count", englishByPos: "", root: "anore", kind: "counting", shape: "order", size: "medium" },
+      ],
+      [],
+      {
+        blocked: [...shortBut("uvu"), ...tailBut("re", "anore", "ezore")],
+        kept: [{ emoji: "🛶", root: "uvura" }, { emoji: "⛏️", root: "ore" }],
+        compounds: [compound("evo", "r", "anore")],
+        annealRestarts: 1,
+        annealSteps: 20,
+        tailSteps: 100,
+      },
+    );
+    assert.equal(placed.find((row) => row.emoji === "🎣")!.root, "uvu");
+    // `uvuranore` would also read `uvura` + n + `ore`.
+    assert.equal(placed.find((row) => row.emoji === "🔢")!.root, "ezore");
+  });
+
+  it("keeps two short rows from giving a listed compound a second split", () => {
+    const items = [shortItem("🎧", "eho", "AA1 W AA0", 0), shortItem("💡", "ado", "EH1 W OW0", 1)];
+    const blocked = new Set(shortBut("awa", "ewo", "ogo"));
+    const anneal = (guards?: ReturnType<typeof shortRootGuards>) => {
+      const placed = annealShortRoots(items, blocked, { restarts: 1, steps: 2_000, guards });
+      return items.map((item) => placed.get(item));
+    };
+    // By echo alone, `awa` + `ewo` make `awalarewo` read `awala` + r + `ewo` too.
+    assert.deepEqual(anneal(), ["awa", "ewo"]);
+    const guards = shortRootGuards(items, blocked, {
+      staticRoots: new Set(["arewo", "awala"]),
+      keptLong: ["arewo", "awala"],
+      overlays: [],
+      compounds: [compound("eho", "l", "arewo")],
+    });
+    assert.ok(guards.conflicts.some((c) => c.form === "awa" && c.other === "ewo"), JSON.stringify(guards.conflicts));
+    assert.notDeepEqual(anneal(guards), ["awa", "ewo"]);
   });
 });

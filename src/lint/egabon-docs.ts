@@ -18,6 +18,7 @@ import { traceFragment, traceTemplate } from "./template-trace.js";
 import { fixPromptRanges } from "./practice-items.js";
 import { forEachMarkdownCodeSpan, forEachMarkdownCodeToken, type MarkdownCodeSpan } from "../retie/tokens.js";
 import { isEgabonRootShape } from "../root-shape.js";
+import { ENGLISH_IN_CODE } from "../english-in-code.js";
 
 export type EgabonLintKind = "parse" | "unknown-root";
 
@@ -36,12 +37,8 @@ const TEACHING_GLOSS_RE = /^(?:th|[zdbvgwhxy])-(?:[a-z@]+$|[<[{(])/;
 /** Mid-word x family fragments (`x`, `xa`, `ax`), not full words. */
 const X_FRAGMENT_RE = /^[aeou]?x[aeou]?$/;
 
-/** English that can appear in grammar backticks and also look Egabon-shaped. */
-export const ENGLISH_IN_CODE = new Set([
-  "are",
-  "bare",
-  "vowel",
-]);
+/** English the lint reads as English in code. */
+export { ENGLISH_IN_CODE };
 
 const POS = "zdbvgwhxy";
 

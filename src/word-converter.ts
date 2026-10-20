@@ -1,5 +1,6 @@
 import { lookupPronunciation } from "./cmu-dict.ts";
 import { echo } from "./echo-metric.ts";
+import { ENGLISH_IN_CODE } from "./english-in-code.ts";
 import { PHONEME_MAP } from "./pronunciation-map.ts";
 import { EGABON_CONSONANTS, EGABON_VOWELS, isEgabonRootShape } from "./root-shape.ts";
 
@@ -123,13 +124,13 @@ function rankRoots(roots: string[], cmu: string): string[] {
     .map(([root]) => root);
 }
 
-/** Every three-letter root, ranked by the pronunciation metric against `cmu`. */
+/** Every three-letter root, ranked by the pronunciation metric against `cmu`; never an English word the doc lint reads as English. */
 export function shortRootCandidates(cmu: string): string[] {
   const roots: string[] = [];
   for (const consonant of GENERATED_CONSONANTS) {
     for (const a of EGABON_VOWELS) {
       for (const b of EGABON_VOWELS) {
-        roots.push(a + consonant + b);
+        if (!ENGLISH_IN_CODE.has(a + consonant + b)) roots.push(a + consonant + b);
       }
     }
   }
