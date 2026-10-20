@@ -2,9 +2,9 @@
 
 <!-- retie: skip -->
 
-**Status:** PROPOSED. Phase 1 is accepted ([run](#phase-1-run)), and the language name is **Egabon** (`egabo` + **-n**); phases 2 and 3 are not started. Three [phases](#phases): phase 1 builds the new lexicon beside the live one, phase 2 replaces and reties, and phase 3 adds a lint that keeps look-alike words out of nearby checkpoints.  
-**Related:** `tail-suffix.md`; [lexicon editing](../meta/lexicon.md) ([§ root spellings](../meta/lexicon.md#root-spellings-come-from-convert-word), [§ root length](../meta/lexicon.md#root-length), [§ second consonant](../meta/lexicon.md#second-consonant), [§ seeds](../meta/lexicon.md#seeds-concrete-senses-and-pictographs), [§ core vocabulary](../meta/lexicon.md#core-vocabulary-column)); [clause.md § role letters](../grammar/clause.md#role-letters); [speech-moves.md § speech act](../grammar/speech-moves.md#speech-act-beginner) (the vowel series); [word-endings.md](../grammar/word-endings.md); [x-compounds.md § lexical compounds](../grammar/x-compounds.md#lexical-compounds); [hooks.md § hook compounds](../grammar/hooks.md#hook-compounds); [numeric-derivation.md](../grammar/numeric-derivation.md); [language-name.md](../meta/language-name.md); [`src/word-converter.ts`](../../src/word-converter.ts) (`SECOND_CONSONANT_BAN`, `longRootCandidates`, `rankRoots`); [`src/echo-metric.ts`](../../src/echo-metric.ts); [`src/lexicon-place.ts`](../../src/lexicon-place.ts); [`src/lexicon-compounds.ts`](../../src/lexicon-compounds.ts) (`factorizationsForStem`, `validateCompoundRows`); [`src/parse/hook-compounds.ts`](../../src/parse/hook-compounds.ts) (`parseHookCompoundCite`); [`src/closed-roots.ts`](../../src/closed-roots.ts); `number-mnemonic.md` and `number-respelling.md` ([interactions](#interactions)).  
-**Design authority:** none until absorbed. One grammar line changes: a hook compound's left piece must be a dictionary root ([hook compounds](#hook-compounds)). The grammar pages don't teach root spellings, so the tails reach learners through a new section in Advanced [phonology](../grammar/phonology.md#advanced), which dictionary views link to ([phase 2](#phase-2)).
+**Status:** PARTIALLY IMPLEMENTED. Phases 1 and 2 are built: every five-letter root is placed by its tail, the language name is **Egabon** (`egabo` + **-n**), and the docs are retied ([phase 2 as built](#phase-2-as-built)). Phase 3 (the checkpoint look-alike lint) is not started. Spellings in this page are phase 1 output; the live ones are in [`lexicon-published.csv`](../../../data/lexicon-published.csv).  
+**Related:** `tail-suffix.md`; [lexicon editing](../../meta/lexicon.md) ([§ root spellings](../../meta/lexicon.md#root-spellings-come-from-convert-word), [§ root length](../../meta/lexicon.md#root-length), [§ root tails](../../meta/lexicon.md#root-tails), [§ seeds](../../meta/lexicon.md#seeds-concrete-senses-and-pictographs), [§ core vocabulary](../../meta/lexicon.md#core-vocabulary-column)); [clause.md § role letters](../../grammar/clause.md#role-letters); [speech-moves.md § speech act](../../grammar/speech-moves.md#speech-act-beginner) (the vowel series); [word-endings.md](../../grammar/word-endings.md); [x-compounds.md § lexical compounds](../../grammar/x-compounds.md#lexical-compounds); [hooks.md § hook compounds](../../grammar/hooks.md#hook-compounds); [numeric-derivation.md](../../grammar/numeric-derivation.md); [language-name.md](../../meta/language-name.md); [`src/word-converter.ts`](../../../src/word-converter.ts) (`SECOND_CONSONANT_BAN`, `longRootCandidates`, `rankRoots`); [`src/echo-metric.ts`](../../../src/echo-metric.ts); [`src/lexicon-place.ts`](../../../src/lexicon-place.ts); [`src/lexicon-compounds.ts`](../../../src/lexicon-compounds.ts) (`factorizationsForStem`, `validateCompoundRows`); [`src/parse/hook-compounds.ts`](../../../src/parse/hook-compounds.ts) (`parseHookCompoundCite`); [`src/closed-roots.ts`](../../../src/closed-roots.ts); `number-mnemonic.md` and `number-respelling.md` ([interactions](#interactions)).  
+**Design authority:** none until absorbed. One grammar line changes: a hook compound's left piece must be a dictionary root ([hook compounds](#hook-compounds)). The grammar pages don't teach root spellings, so the tails reach learners through a new section in Advanced [phonology](../../grammar/phonology.md#advanced), which dictionary views link to ([phase 2](#phase-2)).
 
 ## Summary
 
@@ -26,7 +26,7 @@ Today `convert-word` ranks candidates by how closely they echo the English label
 - But the mapping merges p/b, t/d, k/c/q/g, s/x/z and f/v. Only `b`, `g` and `z` start 44% of all roots, so a root's first consonant narrows it to about one root in ten.
 - Inside a root the vowels carry about half its information, and the echo weights them lightly. They're close to arbitrary, and they're what a learner has to memorize.
 - In use, a role letter and an ending surround the root (`zubuhel`), which muffles the echo.
-- The echo helps only English speakers. [No English puns](../meta/lexicon.md#no-english-puns) already rules out English sound links for seeds and mnemonics; a root spelling built on an English sound link has the same flaw.
+- The echo helps only English speakers. [No English puns](../../meta/lexicon.md#no-english-puns) already rules out English sound links for seeds and mnemonics; a root spelling built on an English sound link has the same flaw.
 
 ### What the echo costs
 
@@ -56,7 +56,7 @@ onset      tail
 
 Why the tail is two letters, not three: the onset needs room. With two tail letters, each tail cell has 192 onsets to choose from. With three, it would have 48, and the nearest neighbor of almost every root would be a root of the same kind and shape. That's the classic failure of category-based languages: a slip produces a plausible wrong meaning. The onset is also the most salient part of a word, which is where distinctiveness counts most.
 
-Examples below write roots as patterns (`VCVza`), never as spellings ([placeholder spellings](../meta/lexicon.md#placeholder-spellings)).
+Examples below write roots as patterns (`VCVza`), never as spellings ([placeholder spellings](../../meta/lexicon.md#placeholder-spellings)).
 
 ## Second consonant: kind {#kinds}
 
@@ -118,9 +118,9 @@ The `o` default will be the fullest vowel in most kinds. That's acceptable: `o` 
 ## Exceptions {#exceptions}
 
 - **Named rows (`n`):** the final vowel is free. Job means nothing for a country, and the free letter gives 262 rows four times the room.
-- **Three-letter roots:** exempt. These 69 rows back the closed grammar overlays. Their single consonant is also their onset, and they need every letter to stay apart ([root length](../meta/lexicon.md#root-length)).
-- **No pins.** 👓 is placed like any row (worn, so `b`), and its spelling changes. The language name comes from this root ([language name](../meta/language-name.md)), so the name is settled once the re-placement shows the new root.
-- **Closed roots** ([`src/closed-roots.ts`](../../src/closed-roots.ts)) are respelled like any row; code names them by seed. The house cast's names follow their roots: *swan* and *lion* become `z` creatures and *hibiscus* an `l` plant, so all three names still differ in their onsets.
+- **Three-letter roots:** exempt. These 69 rows back the closed grammar overlays. Their single consonant is also their onset, and they need every letter to stay apart ([root length](../../meta/lexicon.md#root-length)).
+- **No pins.** 👓 is placed like any row (worn, so `b`), and its spelling changes. The language name comes from this root ([language name](../../meta/language-name.md)), so the name is settled once the re-placement shows the new root.
+- **Closed roots** ([`src/closed-roots.ts`](../../../src/closed-roots.ts)) are respelled like any row; code names them by seed. The house cast's names follow their roots: *swan* and *lion* become `z` creatures and *hibiscus* an `l` plant, so all three names still differ in their onsets.
 
 ## Onset: distinctiveness {#onset}
 
@@ -144,7 +144,7 @@ A candidate whose first consonant isn't the English label's first consonant (map
 
 When candidates score the same:
 
-1. **English echo:** the whole label, scored by [`echo`](../../src/echo-metric.ts), so the onset vowels echo when nothing else decides.
+1. **English echo:** the whole label, scored by [`echo`](../../../src/echo-metric.ts), so the onset vowels echo when nothing else decides.
 2. **Ease of singing:** fewer stops (`b d g`), among candidates whose echo is about equal.
 
 A missing CMU pronunciation no longer blocks a row; it only loses the first-consonant cost and the echo tie-break.
@@ -157,9 +157,9 @@ The tail needs all twelve consonants in second place, so `SECOND_CONSONANT_BAN` 
 
 A review of every place that reads root letters found two jobs.
 
-**1. Seams in nine-letter dictionary words.** [Lexicon editing](../meta/lexicon.md#second-consonant) states this one. A nine-letter stem is 3 + join + 5 or 5 + join + 3. With the ban, a reader finds the join without knowing the lexicon: letter 4 is the join if it's **l / m / n / r**, otherwise letter 6 is. Without the ban, `VCV l VlV CV` splits both ways.
+**1. Seams in nine-letter dictionary words.** Lexicon editing stated this one before phase 2 ([two seams](../../meta/lexicon.md#two-seams)). A nine-letter stem is 3 + join + 5 or 5 + join + 3. With the ban, a reader finds the join without knowing the lexicon: letter 4 is the join if it's **l / m / n / r**, otherwise letter 6 is. Without the ban, `VCV l VlV CV` splits both ways.
 
-**2. Hook compounds read by shape.** No doc states this one. A [hook compound](../grammar/hooks.md#hook-compounds) is a citation (root + **-l** / **-m**) plus an extra-noun hook. Every vowel + **l** / **m** is a hook (`al`, `am`, `ol`, `om`, `el`, `em`, `ul`, `um`), and `parseHookCompoundCite` splits by shape alone. So a five-letter root with **l** or **m** second, plus an **-l** or **-m** ending, spells the same letters as a three-letter root + join + two-letter hook:
+**2. Hook compounds read by shape.** No doc states this one. A [hook compound](../../grammar/hooks.md#hook-compounds) is a citation (root + **-l** / **-m**) plus an extra-noun hook. Every vowel + **l** / **m** is a hook (`al`, `am`, `ol`, `om`, `el`, `em`, `ul`, `um`), and `parseHookCompoundCite` splits by shape alone. So a five-letter root with **l** or **m** second, plus an **-l** or **-m** ending, spells the same letters as a three-letter root + join + two-letter hook:
 
 > `v` + `VCVlV` + `l` = `v` + `VCV` + `l` + `Vl`
 
@@ -168,7 +168,7 @@ Under the ban, no five-letter root has that shape. Without it, every such root w
 **Spots checked and safe:**
 
 - **Seven- and eleven-letter stems** (3 + join + 3, 5 + join + 5) split one way at any second consonant.
-- **[Numeric derivation](../grammar/numeric-derivation.md)** writes join + `r` (`lr` / `mr`). No root has two consonants in a row, so no root can supply that sequence.
+- **[Numeric derivation](../../grammar/numeric-derivation.md)** writes join + `r` (`lr` / `mr`). No root has two consonants in a row, so no root can supply that sequence.
 - **Codas** (`-ln`, `-rl`, `-rm`, `-rth`) and left-hanging **`gl-`** sit outside the root.
 - **Longer hooks** (`aol`, `uel`, …): three-letter root + join + three-letter hook spells a vowel sequence, which no root has.
 
@@ -180,7 +180,7 @@ The lint exists: `validateCompoundRows` rejects a listed stem with more than one
 
 **Change:** treat a clash as a placement constraint. When a candidate root would give a listed stem a second split, skip to the next candidate. Today the run stops instead.
 
-**Learner effect:** in a nine-letter dictionary word, you find the seam by knowing the roots. Dictionary words are already taught as listed words you look up ([lexical compounds](../grammar/x-compounds.md#lexical-compounds)), and the check guarantees exactly one split. The tail also helps here: a compound ends in its head's tail, so the last two letters before the ending name the compound's kind whichever way it splits.
+**Learner effect:** in a nine-letter dictionary word, you find the seam by knowing the roots. Dictionary words are already taught as listed words you look up ([lexical compounds](../../grammar/x-compounds.md#lexical-compounds)), and the check guarantees exactly one split. The tail also helps here: a compound ends in its head's tail, so the last two letters before the ending name the compound's kind whichever way it splits.
 
 ### Hook compounds {#hook-compounds}
 
@@ -210,7 +210,7 @@ The work comes in three phases. The first two let the whole new lexicon be revie
 
 ### Phase 1: build the new lexicon {#phase-1}
 
-Phase 1 changes nothing that exists: not [`lexicon-published.csv`](../../data/lexicon-published.csv), the compound or overlay CSVs, the parser, nor any doc outside `docs/proposals/`. The live placement path keeps the ban and the echo ranking, so rows added during phase 1 are placed as they are today.
+Phase 1 changes nothing that exists: not [`lexicon-published.csv`](../../../data/lexicon-published.csv), the compound or overlay CSVs, the parser, nor any doc outside `docs/proposals/`. The live placement path keeps the ban and the echo ranking, so rows added during phase 1 are placed as they are today.
 
 1. **`data/lexicon-tails.csv`:** a new file with one row per published five-letter row. Its columns are `emoji` and `concrete` (the key, matching the published row), `kind`, `shape` and `root`.
    - `kind` (*creature*, *person*, *mind*, …) and `shape` (*holds*, *one*, *order*, *takes-away*) store the meaning, not the letter, so the letter map lives in one place in code.
@@ -238,7 +238,7 @@ Phase 1 ends when the report is accepted and the language name is chosen from th
 
 ### Phase 1 run (2026-10-19) {#phase-1-run}
 
-Built: [`data/lexicon-tails.csv`](../../data/lexicon-tails.csv), [`src/root-tails.ts`](../../src/root-tails.ts) (letter map, CSV, checks, metrics), [`src/root-tails-place.ts`](../../src/root-tails-place.ts) (placer), [`scripts/lib/convert-tails.ts`](../../scripts/lib/convert-tails.ts) (`npm run convert-word -- --tails [--steps N]`), and [`src/root-tails.test.ts`](../../src/root-tails.test.ts). `check-compounds` also runs the tails checks. The run is seeded, so a rerun with the same data gives the same roots. Only confusing pairs (same kind, same first two letters) are scored, the first consonant is scored against the English label's ([onset scoring](#onset-scoring)), and the tie-breaks run full echo first, then stops ([tie-breaks](#tie-breaks)). Live roots are counted with the kind their row has in `lexicon-tails.csv`, so both columns count the same pairs. The report splits confusing pairs into flags (`*-flag` labels), all other pairs, and mixed pairs (one flag and one other same-kind root). Each rate is confusing pairs over the same-kind pairs that could share a prefix; flags and non-flags use their own bases.
+Built: `data/lexicon-tails.csv` (removed in phase 2), [`src/root-tails.ts`](../../../src/root-tails.ts) (letter map, checks, metrics), [`src/root-tails-place.ts`](../../../src/root-tails-place.ts) (placer), `scripts/lib/convert-tails.ts` (`npm run convert-word -- --tails`, replaced in phase 2), and [`src/root-tails.test.ts`](../../../src/root-tails.test.ts). `check-compounds` also runs the tails checks. The run is seeded, so a rerun with the same data gives the same roots. Only confusing pairs (same kind, same first two letters) are scored, the first consonant is scored against the English label's ([onset scoring](#onset-scoring)), and the tie-breaks run full echo first, then stops ([tie-breaks](#tie-breaks)). Live roots are counted with the kind their row has in `lexicon-tails.csv`, so both columns count the same pairs. The report splits confusing pairs into flags (`*-flag` labels), all other pairs, and mixed pairs (one flag and one other same-kind root). Each rate is confusing pairs over the same-kind pairs that could share a prefix; flags and non-flags use their own bases.
 
 **Current report:**
 
@@ -306,17 +306,29 @@ Every check is met: tails, the hook check, the holder check, and listed compound
    - A missing CMU pronunciation no longer blocks a row.
    - From here on, changing a row's kind or shape is a respelling and goes through `retie-docs`.
    - The hook-compound and listed-compound lints run over `lexicon-published.csv`.
-4. **Parser and grammar, in one change:** `parseHookCompoundCite` reads a hook compound only when its left piece is a published root. [hooks.md § hook compounds](../grammar/hooks.md#hook-compounds) gains one sentence saying the left piece is a dictionary root.
-5. **Retie:** run the [respelling procedure](../meta/lexicon.md#respelling-a-row): `retie-docs` dry run, then `--write`, then `npm run build` and `npm test`. Read the review list and warnings.
+4. **Parser and grammar, in one change:** `parseHookCompoundCite` reads a hook compound only when its left piece is a published root. [hooks.md § hook compounds](../../grammar/hooks.md#hook-compounds) gains one sentence saying the left piece is a dictionary root.
+5. **Retie:** run the [respelling procedure](../../meta/lexicon.md#respelling-a-row): `retie-docs` dry run, then `--write`, then `npm run build` and `npm test`. Read the review list and warnings.
 6. **Regenerate:** run `npm run grammar-check`, `npm run english-helper-wordnet` and `npm run cheat-sheet-blocks -- --write`.
 7. **Docs:**
-   - [Lexicon editing](../meta/lexicon.md): replace [root spellings](../meta/lexicon.md#root-spellings-come-from-convert-word) (the echo bullet) and [second consonant](../meta/lexicon.md#second-consonant) with the tail, the onset scoring and the two checks. Add the `kind` and `shape` columns and the edge rules.
-   - [phonology.md](../grammar/phonology.md#advanced) Advanced: a new section on root tails. It covers the twelve kinds with their anchors, the four jobs with the tie rule, and the free final vowel of named rows. It's taught as a memory aid, not a rule of grammar, and every dictionary view of a root links to it.
-   - [language-name.md](../meta/language-name.md) and every use of the name: the name chosen at the end of phase 1.
+   - [Lexicon editing](../../meta/lexicon.md): replace [root spellings](../../meta/lexicon.md#root-spellings-come-from-convert-word) (the echo bullet) and [second consonant](../../meta/lexicon.md#second-consonant) with the tail, the onset scoring and the two checks. Add the `kind` and `shape` columns and the edge rules.
+   - [phonology.md](../../grammar/phonology.md#advanced) Advanced: a new section on root tails. It covers the twelve kinds with their anchors, the four jobs with the tie rule, and the free final vowel of named rows. It's taught as a memory aid, not a rule of grammar, and every dictionary view of a root links to it.
+   - [language-name.md](../../meta/language-name.md) and every use of the name: the name chosen at the end of phase 1.
 8. **Measure:** rerun the report. It should match the accepted phase 1 report.
 9. **Follow-ups:** rerun the coverage tables in `number-mnemonic.md`. `number-respelling.md` re-picks its fillers.
 
 Nearly every five-letter row changes spelling in phase 2. That is effort, not a learner cost.
+
+### Phase 2 as built (2026-10-20) {#phase-2-as-built}
+
+- **Data:** `lexicon-published.csv` gained `kind` and `shape` after `root`. `convert-word --lexicon --all` with the tails placer reproduced every accepted phase 1 root (0 of 1351 differ); the three-letter roots were kept. 1345 roots changed spelling.
+- **Placer:** `placePublishedRoots` keeps a row's root length (a new row is three letters only when overlay-backed) and places five-letter rows with `placeTailRoots`. `--only` holds every other root fixed (a `fixed` row in the placer); `--all` keeps the three-letter roots, which also sidesteps the [`--all` failure](#prerequisite). Join-overlay sense forms are blocked. A missing CMU pronunciation no longer blocks a row.
+- **CLI:** `--tails` became `--report` (current metrics only, no live column). `convert-word -- <english>` prints a three-letter echo root, or with `--kind` / `--shape` the five-letter root that word would take. `SECOND_CONSONANT_BAN` and the echo-ranked five-letter candidates are gone.
+- **Checks:** `validateRootTails` runs over the published lexicon in `npm test` and `check-compounds`; listed compounds stay with `validateCompoundRows`.
+- **Parser:** the classifier already read a hook compound only on a published left root. `readHookCompound` now holds that rule, and the word-bank lint uses it too. [hooks.md](../../grammar/hooks.md#hook-compounds) gained the sentence. `grammar-check` passed with one tree per doc sentence.
+- **Retie:** 0 blocking, 1 warning, 7 review items; 17 test failures of the kinds in [retie § tests](../../meta/retie.md#tests). IPA lines, syllable hints and words in multi-sentence cites were fixed by hand, and the retie now does all three ([retie § docs](../../meta/retie.md#docs)).
+- **Docs:** [lexicon editing](../../meta/lexicon.md#root-tails) holds the edge rules, onset scoring and the two seams; [phonology.md § root tails](../../grammar/phonology.md#root-tails) teaches the letter map as a memory aid, and the [lexicon search](../../grammar/lexicon.md) links each root's tail there. The language is **Egabon** everywhere, with redirects for the renamed pages.
+- **Report** (`npm run convert-word -- --report`): identical to the [phase 1 run](#phase-1-run).
+- **Follow-ups:** `number-mnemonic.md` coverage is rerun on the live lexicon. `number-respelling.md`'s filler re-pick is logged in `TODO.md`.
 
 ### Phase 3: look-alike lint for checkpoints {#phase-3}
 
@@ -324,7 +336,7 @@ Placement doesn't weigh learning order, and cross-kind pairs cost it nothing. A 
 
 1. **Lint:** two roots one letter apart, of any kind, can't both be new words in the same checkpoint or within N checkpoints of each other. It runs in the docs lint beside the core-count check (`lintCoreCounts`), over the live roots and the `core` column, so `npm run build` fails on it.
 2. **Fix:** pick another word for the checkpoint, or move one root's introduction (its `core` cell).
-3. **Policy:** N is a teaching choice, set in [translation exercises § core vocabulary](../meta/translation-exercises.md#core-vocabulary).
+3. **Policy:** N is a teaching choice, set in [translation exercises § core vocabulary](../../meta/translation-exercises.md#core-vocabulary).
 4. **When:** after phase 2, once the new roots are live. The `--tails` report could preview the conflicts against today's banks, to size the rework.
 
 With this lint, when the tails are taught doesn't affect placement.

@@ -2,9 +2,9 @@
 
 **Status:** PROPOSED. **Depends on** two proposals:
 - `number-respelling.md`: every map, table and example below uses the respelled digits (`b d g v z h l r n m` = 1–9, 0; fillers `w` and `y`). The current grammar's digits (`w d r m v g l h n z`) don't fit this design.
-- `root-tails.md`: lifts the second-consonant ban, so a five-letter root may have **l / r / n / m** second, which fills every two-digit cell ending in 7, 8, 9 or 0. It also makes a root's second consonant name its kind, so each column of the 00–99 table fills from one kind (animals in column 5, foods in column 2).
+- `root-tails.md` (absorbed through phase 2): a five-letter root may have any consonant second, so every two-digit cell has roots. A root's second consonant names its kind, so each column of the 00–99 table fills from one kind (foods in column 2, animals in column 5, flags in column 9), and tools and people (`w`, `y` second) are one-digit pegs.
 
-This proposal can't be absorbed before both.  
+This proposal can't be absorbed before `number-respelling.md`.  
 **Related:** [numbers.md § Counts](../grammar/numbers.md#counts) (digit syllables); [phonology.md § letter names](../grammar/phonology.md#letter-names) (the alphabet opens with the ten digit letters in digit order); [phonology.md § phonotactics](../grammar/phonology.md#phonotactics) (word shape, endings, seams); [word-endings.md](../grammar/word-endings.md); [x-compounds.md § lexical compounds](../grammar/x-compounds.md#lexical-compounds); [lexicon editing § root length](../meta/lexicon.md#root-length) and [§ seeds](../meta/lexicon.md#seeds-concrete-senses-and-pictographs); [`data/lexicon-published.csv`](../../data/lexicon-published.csv); `manual-phonology.md` (count shapes for the optional count layer).  
 **Design authority:** spoken number grammar is unchanged. This is an optional **memory channel** that reuses the digit onsets. It adds no morphology, no second digit table, and no [numeric-derivation](../grammar/numeric-derivation.md) reading.
 
@@ -108,9 +108,9 @@ Three-letter roots with a filler consonant (`oye` *door*) and five-letter roots 
 
 Phone-style groups already match how they're spoken (`555,123,4567`): one image per comma group, or 2-digit chunks with the 3-digit groups split 2+1.
 
-**2381** → **23 | 81**: `zodozol` *dog*, `zarazol` *rabbit*.
+**2381** → **23 | 81**: `zedegol` *ticket*, `zurubol` *ring*.
 
-**5970** → **59 | 70**. Neither cell has a root today. Under `root-tails.md`, a root's second consonant is its kind, so **59** is a named root (a flag) with **z** first, and **70** is a mind-and-feeling root with **l** first. Which rows land there is up to placement.
+**5970** → **59 | 70**: `zozenul` *Swiss flag*, `zalamal` *laugh*. A root's second consonant is its kind, so **59** is always a named root (a flag) with **z** first, and **70** a mind-and-feeling root with **l** first.
 
 Don't encode the decimal point. Use two scenes (integer, then fraction) or two palace slots.
 
@@ -144,53 +144,56 @@ A three-digit chunk is a **count** plus a two-digit peg: **415** = four of the *
 
 ## Lexicon coverage {#lexicon-coverage}
 
-Counts come from a simulated re-placement under today's English-echo placement (2026-10-19, second-consonant ban lifted, hook-compound rule on), read with the respelled map: **1420** roots. `root-tails.md` replaces that placement, so every table and example in this section needs a rerun once it is absorbed. Flag roots (country and regional flags) count toward coverage; the canonical list prefers other roots where a cell has them.
+Counts come from the published lexicon (2026-10-20, root tails live), read with the respelled map: **1420** roots.
 
 ### 0–9
 
-**164** one-onset roots:
+**349** one-onset roots: the three-letter roots, plus the five-letter roots with one filler consonant, which under root tails are every tool (`w` second) and every person (`y` second):
 
 | Digit | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 |
 |-------|---|---|---|---|---|---|---|---|---|---|
-| Roots | 19 | 14 | 28 | 9 | 24 | 11 | 10 | 12 | 21 | 16 |
+| Roots | 47 | 30 | 44 | 27 | 35 | 35 | 27 | 22 | 50 | 32 |
 
-Nine roots carry no digit.
+22 roots carry no digit.
 
 ### 00–99
 
-**1247** two-onset roots. Roots per cell, all / flags (rows = first digit, columns = second digit):
+**1049** two-onset roots. Roots per cell, all / flags (rows = first digit, columns = second digit, which is the root's kind):
 
 | | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **1** | 12/1 | 23/2 | 26/3 | 13/4 | 24/6 | 22/2 | 16/0 | 36/4 | 36/6 | 5/1 |
-| **2** | 11/0 | 7/0 | 17/5 | 9/1 | 11/1 | 13/1 | 9/3 | 29/1 | 16/3 | 10/2 |
-| **3** | 16/4 | 14/2 | 16/3 | 8/0 | 20/3 | 11/1 | 12/0 | 43/4 | 22/10 | 11/4 |
-| **4** | 3/2 | 10/1 | 13/2 | 2/0 | 9/0 | 10/1 | 15/1 | 18/4 | 18/5 | 8/0 |
-| **5** | 22/5 | 28/6 | 35/2 | 13/6 | 7/0 | 11/5 | 10/1 | 9/6 | 30/6 | 6/3 |
-| **6** | 14/4 | 16/3 | 15/3 | 7/0 | 12/1 | 12/1 | 10/1 | 19/1 | 13/3 | 5/1 |
-| **7** | 16/4 | 12/3 | 8/2 | 13/0 | 6/4 | 5/2 | 4/0 | 1/0 | 21/13 | 3/0 |
-| **8** | 9/1 | 10/2 | 9/1 | 1/0 | 16/0 | 8/1 | 5/0 | 1/0 | 12/2 | 5/2 |
-| **9** | 5/1 | 18/4 | 9/4 | 6/1 | 7/1 | 10/3 | 4/0 | 6/4 | 4/2 | 4/1 |
-| **0** | 4/0 | 15/4 | 14/6 | 4/0 | 10/1 | 4/0 | 9/4 | 9/4 | 18/5 | 4/0 |
+| **1** | 12/0 | 16/0 | 15/0 | 16/0 | 16/0 | 12/0 | 10/0 | 12/0 | 27/27 | 8/0 |
+| **2** | 12/0 | 12/0 | 11/1 | 9/0 | 13/0 | 11/0 | 6/0 | 16/0 | 20/20 | 9/0 |
+| **3** | 12/0 | 16/0 | 11/0 | 13/0 | 14/0 | 10/0 | 11/0 | 12/0 | 28/28 | 10/0 |
+| **4** | 8/0 | 9/0 | 8/0 | 11/0 | 6/0 | 11/0 | 9/0 | 9/0 | 18/18 | 7/0 |
+| **5** | 16/0 | 11/0 | 8/0 | 16/0 | 11/0 | 12/0 | 12/0 | 10/0 | 28/28 | 13/0 |
+| **6** | 16/0 | 9/0 | 6/0 | 10/0 | 11/0 | 12/0 | 7/0 | 6/0 | 20/20 | 8/0 |
+| **7** | 8/0 | 8/0 | 5/0 | 7/0 | 9/0 | 4/0 | 4/0 | 4/0 | 20/20 | 4/0 |
+| **8** | 8/0 | 8/0 | 11/0 | 10/0 | 7/0 | 5/0 | 8/0 | 4/0 | 20/20 | 4/0 |
+| **9** | 5/0 | 8/0 | 13/0 | 6/0 | 4/0 | 4/0 | 4/0 | 4/0 | 23/23 | 8/0 |
+| **0** | 6/0 | 8/0 | 6/0 | 7/0 | 6/0 | 5/0 | 4/0 | 4/0 | 24/24 | 4/0 |
 
-- **Every cell has a root.** The thinnest are **78**, **84** and **88** (one root each) and **44** (two). Cells with fewer than 3 non-flag roots: 41, 44, 75, 78, 84, 88, 98, 99.
-- **68** of the 100 cells have a root in the `core` vocabulary column, so a canonical list can lean on words learners meet early.
-- `y` is the rarest root letter and `w` the next rarest, which is why they are the fillers. Of the 66 possible filler pairs, only `w` + `y` leaves no cell empty.
+- **Every cell has a root.** The thinnest have four: 00, 70, 77, 80, 88, 95 and a few more in rows 7–0.
+- **Column 9 is all flags** (a root with **n** second is a named root), so a cell ending in 9 has no non-flag peg. The canonical list's *never use names* rule can't hold there; it needs a decision ([open questions](#open-questions)).
+- **71** of the 100 cells have a root in the `core` vocabulary column, so a canonical list can lean on words learners meet early.
+- The filler pair `w` + `y` now takes two whole kinds (tools, people) out of the two-digit table. Whether those are still the right fillers is `number-respelling.md`'s call.
 
-Working examples (current spellings that the simulated re-placement keeps):
+Working examples:
 
 | Word | Payload | Digits |
 |------|---------|--------|
-| `zebehol` *bed* | b d | **12** |
-| `zodozol` *dog* | d g | **23** |
-| `zeladol` *eggplant* | g b | **31** |
-| `zavahol` *factory* | v g | **43** |
-| `zozowul` *saw* | z z | **55** |
-| `zehabol` *head* | h d | **62** |
-| `zarazol` *rabbit* | r b | **81** |
-| `zoregol` *refresh* | r v | **84** |
-
-The cells ending in 7, 8, 9 and 0 have no roots until `root-tails.md` is absorbed. From the echo-placement simulation: 🍽️ *plate* (**17**), 🦣 *mammoth* (**00**), ⏰ *alarm clock* (**78**), ℹ️ *information* (**90**).
+| `zubedol` *pear* | b d | **12** |
+| `zubalol` *plant* | b l | **17** |
+| `zedegol` *ticket* | d g | **23** |
+| `zegabol` *glasses* | g b | **31** |
+| `zovegal` *frame* | v g | **43** |
+| `zuzazal` *squirrel* | z z | **55** |
+| `zahodol` *hotdog* | h d | **62** |
+| `zalarul` *hourglass* | l r | **78** |
+| `zurubol` *ring* | r b | **81** |
+| `zaruvel` *run* | r v | **84** |
+| `zanumul` *anxious* | n m | **90** |
+| `zemamul` *melt* | m m | **00** |
 
 ### v1 usability bar {#v1-usability-bar}
 
@@ -200,10 +203,11 @@ The cells ending in 7, 8, 9 and 0 have no roots until `root-tails.md` is absorbe
 ## Open questions
 
 1. **Where the canonical list lives.** A small `data/` peg file (row + digits + scene) keeps grammar pages free of a 100-row table. A grammar Advanced appendix is heavier for learners.
-2. **Thin cells.** 78, 84 and 88 each hang on one root, so a later respelling could empty them. Accept that and let the check flag it? Or let `convert-word` break near-ties toward nearly empty cells? The second fills them but breaks goal 5.
+2. **Thin cells.** The thinnest cells hang on four roots, so a later respelling could thin them further. Accept that and let the check flag a cell that empties? Or let `convert-word` break near-ties toward nearly empty cells? The second fills them but breaks goal 5.
 3. **Three-letter rows as pegs.** These rows also carry closed grammar overlays. Their seeds picture well (*map*, *anchor*, *knot*), but a learner may hear the overlay first. Should the canonical list prefer five-letter filler roots where a digit has enough?
 4. **Count layer.** Adopt it, and if so, hand shapes for every count or copies for 1–4?
 5. **Where to mention the method:** [numbers.md](../grammar/numbers.md) Beginner (one sentence plus a link), or Advanced / a sibling page after absorbing. The letter-name table already teaches the digit letters in order, which is a natural hook.
+6. **Column 9.** Every root with **n** second is a flag, so the ten cells ending in 9 have only flag pegs. Allow flags there (they picture well), or treat 9 as a filler-like digit in second place?
 
 ## Absorb sketch
 

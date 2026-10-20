@@ -28,7 +28,7 @@ These keep their spellings on purpose and go stale after every retie. Never copy
 | Page | Why |
 |------|-----|
 | `docs/proposals/rejected/` | a past design, spelled as it was |
-| `root-tails.md` | holds phase 1 spellings that are not live, some equal to other rows' old roots |
+| `root-tails.md` | a dated record of the phase 1 run, spelled as it ran |
 | [parser-pipeline.md](parser-pipeline.md) | tooling notes; its Egabon only illustrates a CLI call |
 | this page | its examples name old and new spellings |
 | `TODO.md` | planning notes (never retied) |
