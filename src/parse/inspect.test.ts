@@ -108,7 +108,7 @@ describe("inspectText", () => {
   });
 
   it("reads the mention marker before a span", () => {
-    const result = inspectText("glelel z<udozo> gamezom.", tables);
+    const result = inspectText("glelel z<kimchi> gamezom.", tables);
     const marker = result.tokens.find((token) => token.kind === "word" && token.raw === "glelel");
     assert.ok(marker?.kind === "word");
     assert.equal(marker.word.reading, "mention");
@@ -162,7 +162,7 @@ describe("inspectText — phrase brackets", () => {
   });
 
   it("brackets a mention marker with its span", () => {
-    const tokens = inspectText("glelel z<udozo> gamezom.", tables).tokens;
+    const tokens = inspectText("glelel z<kimchi> gamezom.", tables).tokens;
     const marker = tokens.find((token) => token.raw === "glelel");
     assert.ok(marker?.kind === "word");
     assert.deepEqual(marker.brackets?.open, ["["]);

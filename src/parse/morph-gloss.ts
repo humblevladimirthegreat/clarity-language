@@ -22,7 +22,7 @@
  * | `hual` bare | `h-always` | |
  * | `themabam` | `th-plan-itinerary` | overlay grain `-m` |
  * | mid-word `x` | always `-x-` segments | never a fused English name |
- * | house-cast `-n` | `Azawan` / `Alahen` / `Ahaben` | |
+ * | named `-n` (house cast included) | the root capitalised + `n` | |
  * | mention `{…}` / spoken TYPE **o** interior | pass through the surface (`z-odogo`, `odogol`) | not the English lemma |
  * | `zeman` / `zehan` / `zohan` / `zanun` | `speaker` / `listener` / `interlocutors` / `someone` | |
  * | ordinary lexicon (`vejel`, `vajul`, …) | packed `english_by_pos` when present for this role + sense, else literal / metaphor | [glosses.md](../../docs/meta/glosses.md#role-english) |
@@ -1410,7 +1410,7 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
             pos: word.pos,
           });
     // Ability / greeting bids: one hyphenated english slot (`walking-unable-temporary`,
-    // `Alahen-minutes`). Values keep a visible `-th-` hinge (`competence-th-motive`).
+    // `Name-minutes`). Values keep a visible `-th-` hinge (`competence-th-motive`).
     if (word.reading === "greeting") {
       const stance = GREETING_STANCE[family.stanceVowel ?? ""] ?? family.stanceVowel ?? "greeting";
       return [`${host}-${stance}`];

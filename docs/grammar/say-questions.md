@@ -321,7 +321,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 | *yeah, sure* | `yaol.` | take up the offer |
 | *quote* (the exact words) | `d[zolazun vezuyel]` | cite |
 | *quote* (the gist) | `d~[zolazun vezuyel]` | paraphrase cite |
-| *mention* (a word) | <code>glelel z&lt;odoga&gt;</code> | mention |
+| *mention* (a word) | `glelel z[udozo]` | mention |
 | *mention* (in passing) | `th(…)` | aside |
 | *mention* (acknowledge someone) | `vewuyal` | *acknowledgment* |
 

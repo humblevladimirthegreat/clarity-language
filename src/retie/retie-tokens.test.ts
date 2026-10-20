@@ -407,10 +407,21 @@ describe("English copies follow their Egabon", () => {
     assert.equal(text, input);
   });
 
-  it("reties a mention's payload and its quoted copies: it spells an Egabon word", () => {
-    const input = "> `glelel z<odoga> gamazam.`\n>\n> [gl-MENTION | z-OPAQUE[\"odoga\"]] | g-small\n>\n> \"The word “odoga” is small.\"\n";
+  it("leaves a mention's opaque payload alone: opaque text is foreign", () => {
+    const input = "> `glelel z<odoga> gamazam.`\n>\n> [gl-MENTION | z-OPAQUE[\"odoga\"]] | g-small\n";
+    const { text } = rewriteMarkdown(input, map, undefined, {
+      follow: { names: new Map(), words: new Map([["odoga", "uzugo"]]) },
+    });
+    assert.match(text, /z<odoga>/);
+    assert.match(text, /z-OPAQUE\["odoga"\]/);
+  });
+
+  it("reties a mention's cite and its quoted copies: a cite is Egabon", () => {
+    const input = "> `glelel z[odoga] gamazam.`\n>\n> [gl-MENTION | z-CITE[\"odoga\"]] | g-small\n>\n> \"The word “odoga” is small.\"\n";
     const { text } = rewriteMarkdown(input, map);
-    assert.equal(text, input.replaceAll("odoga", "uzugo"));
+    assert.match(text, /`glelel z\[uzugo\] g\w+m\.`/);
+    assert.match(text, /z-CITE\["uzugo"\]/);
+    assert.match(text, /“uzugo”/);
   });
 
   it("does not touch names inside code or link targets", () => {
@@ -774,5 +785,18 @@ describe("retie fixes (2026-10-19 root-tails dry run)", () => {
     const input = "```markdown\n> z-Ululon | v-walk\n```\n\n```text\nUlulon\n```\n";
     const { text } = followProse(input, { names: new Map([["Ululon", "Alahen"]]), words: new Map() });
     assert.equal(text, "```markdown\n> z-Alahen | v-walk\n```\n\n```text\nUlulon\n```\n");
+  });
+
+  it("follows a name made plural or shouted", () => {
+    const input = "*some Ululons*, ULULON, Ululon's\n";
+    const { text } = followProse(input, { names: new Map([["Ululon", "Alahen"]]), words: new Map() });
+    assert.equal(text, "*some Alahens*, ALAHEN, Alahen's\n");
+  });
+
+  it("follows a house name inside code, but not an ordinary name or an opaque payload", () => {
+    const input = "`z-Ululon | v-walk` `*Ululons*` `z-Ogoron` `z@<Ululon>` <code>z@&lt;Ululon&gt; Ululon</code>\n";
+    const pairs = { names: new Map([["Ogoron", "Agaran"]]), words: new Map(), house: new Map([["Ululon", "Alahen"]]) };
+    const { text } = followProse(input, pairs);
+    assert.equal(text, "`z-Alahen | v-walk` `*Alahens*` `z-Ogoron` `z@<Ululon>` <code>z@&lt;Ululon&gt; Alahen</code>\n");
   });
 });

@@ -61,7 +61,7 @@ An extra noun takes **-x** the same way. Here the recipient is Olazun and associ
 | **-lx** | indefinite group (a set in this situation), concrete | *some cats* (a set in this situation) |
 | **-mx** | indefinite group (a set in this situation), abstract | same grouping on a **-m** root |
 | **-nx** | named / titled group | *Team Alpha*; *Uzozen and associates* as a title |
-| **-lnx** | indefinite group of things a name applies to ([one of a name](word-endings.md#name-instance--ln)) | *some Azawans* (beds of that brand) |
+| **-lnx** | indefinite group of things a name applies to ([one of a name](word-endings.md#name-instance--ln)) | *some Uzozens* (beds of that brand) |
 | **-rx** | resume someone already mentioned and associates, or a prior group | *they* (that one and associates) |
 
 ### Person-role **-x** {#person-role-x}

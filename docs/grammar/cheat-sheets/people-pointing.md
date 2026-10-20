@@ -113,7 +113,7 @@ Role letter + the root + **-n** ([special pronouns](../pronouns.md#special-prono
 |------|-------|---------|---------|-------|
 | [name **-nx**](../plurality.md#associative) | anchor and associates | `zuzozenx` | *Uzozen and associates* | B |
 | [**-lx** / **-mx**](../plurality.md#associative) | an indefinite group | `zagozolx` | *some cats* | B |
-| [**-lnx**](../word-endings.md#name-instance--ln) | some of a name | `duzozelnx` | *some Azawans* | I |
+| [**-lnx**](../word-endings.md#name-instance--ln) | some of a name | `duzozelnx` | *some Uzozens* | I |
 | [**-rx**](../plurality.md#associative) | someone mentioned, and associates | `zuzozerx` | *they* | B |
 | [speaker **-x**](../plurality.md#person-role-x) | the speaker and their people, you not included | `amunx` (`zamunx`, `damunx`) | *I and my people* | B |
 | [listener **-x**](../plurality.md#person-role-x) | the address set, speaker not included | `ehonx` (`zehonx`, `dehonx`) | *you all* | B |

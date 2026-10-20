@@ -86,7 +86,7 @@ If you cannot certify a token, drop the item. Do not guess from English. Do not 
 
 Place **`### Practice {#<band>-practice}`** at the **end of the stage**, immediately before the next `## Intermediate` / `## Advanced` / `## See also` / end of file. Do not insert after every H3. Do not add a second checkpoint in the same stage unless the allowlist row says **split**.
 
-Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Then the **New words** and **Review** tables ([vocab table](translation-exercises.md#vocab-table)): house names and `SELF` sit in New words on their first checkpoint and in Review after. House-person **English** is *Uzozen* / *Olazun* / *Uhelan*, not `*grace* (name **Azawan**)`. Pick a setting **not already named** in [settings](#settings) ([unique globally](translation-exercises.md#checkpoint-setting)); write the same phrase into this file’s cell when you replace. At least half the items in each translation direction use a root or situation of the setting. Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill.
+Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Then the **New words** and **Review** tables ([vocab table](translation-exercises.md#vocab-table)): house names and `SELF` sit in New words on their first checkpoint and in Review after. House-person **English** is *Uzozen* / *Olazun* / *Uhelan*, not `*grace* (name **Uzozen**)`. Pick a setting **not already named** in [settings](#settings) ([unique globally](translation-exercises.md#checkpoint-setting)); write the same phrase into this file’s cell when you replace. At least half the items in each translation direction use a root or situation of the setting. Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill.
 
 | Band kind | Per translation direction | Decision items |
 |-----------|---------------------------|----------------|
@@ -228,7 +228,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 ## Example root bank
 <a id="root-bank"></a>
 
-Default people: [house cast](grammar-docs.md#house-cast) — `zuzozen` / `zolazun` / `zuhelan` (`uzoze` / `olazu` / `uhela` + **-n**). Morph: `z-Azawan` / `z-Alahen` / `z-Ahaben`.
+Default people: [house cast](grammar-docs.md#house-cast) — `zuzozen` / `zolazun` / `zuhelan` (`uzoze` / `olazu` / `uhela` + **-n**). Morph: `z-Uzozen` / `z-Olazun` / `z-Uhelan`.
 
 **This table is for worked examples** on grammar pages (and for morph leak checks when a teach line uses these stems). **Checkpoints do not default to it.** Checkpoint content comes from the [setting](translation-exercises.md#checkpoint-setting) plus house names.
 

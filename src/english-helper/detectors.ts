@@ -169,7 +169,7 @@ export function detectHook(c: HookContext): DetectorHit[] {
 
 /** Sections for *that* / *whether* opening a clause. */
 export const OPENER_LINKS = {
-  /** *tells Alahen that the dog runs*: a stand-in, then the clause as the next sentence. */
+  /** *tells someone that the dog runs*: a stand-in, then the clause as the next sentence. */
   content: ["dependents.md#dependent-clauses"],
   /** *glad that it rains*: the feeling word goes on the clause it is about. */
   feeling: ["sakes.md#feeling-no-object"],

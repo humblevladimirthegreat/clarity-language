@@ -36,7 +36,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **LIVE** | Evidential: sensed now, by any sense | `thodom` | [Knowing](knowing.md#evidentiality) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thovum` | [Knowing](knowing.md#may) |
 | **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevom` | [Knowing](knowing.md#evidentiality) |
-| **MENTION** | Mention marker: the span is a word or phrase as spelling | <code>glelel z&lt;udozo&gt; gamezom.</code> | [Spans](spans.md#mention) |
+| **MENTION** | Mention marker: the span is a word or phrase as spelling | `glelel z[udozo] gamezom.` | [Spans](spans.md#mention) |
 | **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `thezum` | [Knowing](knowing.md#mirative) |
 | **NAME** | A package titled with **-n** | `zebodol zuyudal zan.` | [Joins](joins.md#named-list) |
 | **NOTIONAL** | As-if / pretense mood | `thavom` | [Knowing](knowing.md#notional) |

@@ -172,7 +172,7 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 
 Resume the handle like any name: its whole stem + **-r** (`zugur`).
 
-**Compare with:** a [mention](spans.md#mention) is the **word** (<code>glelel z&lt;ugu&gt;</code> = *the word “ugu”*). A foreign letter-name is a loan or opaque span (<code>z@&lt;FBI&gt;</code>).
+**Compare with:** a [mention](spans.md#mention) is the **word** (`glelel z[ugu]` = *the word “ugu”*). A foreign letter-name is a loan or opaque span (<code>z@&lt;FBI&gt;</code>).
 
 ### Who does it: *student*, *singer*, *manager* {#agent-nouns}
 
@@ -1110,17 +1110,17 @@ These three English nouns each hide two jobs. *Role* is the function someone pla
 
 **Needs:** [Mention](spans.md#mention)
 
-To talk about a word, a phrase or a whole sentence as a thing in itself, use a mention: the marker **`glelel`**, then the span. English *the word …*, *the phrase …* and *the sentence …* all use the same frame. The span holds the Egabon interior, and its role letter still says what the mention does in the clause.
+To talk about a word, a phrase or a whole sentence as a thing in itself, use a mention: the marker **`glelel`**, then the span. English *the word …*, *the phrase …* and *the sentence …* all use the same frame. The span is a cite of the Egabon, and its role letter still says what the mention does in the clause.
 
-> <code>glelel z&lt;odoga&gt; gamezom.</code>
+> `glelel z[udozo] gamezom.`
 >
-> [gl-MENTION | z-OPAQUE["odoga"]] | g-small
+> [gl-MENTION | z-CITE["udozo"]] | g-small
 >
 > "The word “udozo” is small."
 
-> <code>glelel z&lt;zalahen vezebel&gt; gamezom.</code>
+> `glelel z[zolazun vezuyel] gamezom.`
 >
-> [gl-MENTION | z-OPAQUE["zalahen vezebel"]] | g-small
+> [gl-MENTION | z-CITE[z-Olazun | v-tell]] | g-small
 >
 > "The sentence “zolazun vezuyel” is small."
 
@@ -1350,13 +1350,13 @@ A cite, because an angle-bracket fence would close on the first `>`.
 
 #### Egabon → English {#people-literal-egabon-to-english}
 
-**1.** <code>zuzozen d[ d&lt;xuxul&gt; ] vezuyel.</code>
+**1.** <code>zuzozen d[ d&lt;ciao&gt; ] vezuyel.</code>
 
 ::: details Show answer
 
-z-Uzozen | d-CITE[d-OPAQUE["xuxul"]] | v-tell
+z-Uzozen | d-CITE[d-OPAQUE["ciao"]] | v-tell
 
-*Uzozen said “xuxul.”*
+*Uzozen said “ciao.”*
 :::
 
 **2.** <code>zolazun d[ varayel d&lt;#&gt; ] vezuyel.</code>

@@ -380,7 +380,7 @@ export type Clause = {
 };
 
 export type BodyClause = {
-  /** The mention marker before a topic span (`glelel x<odoga>`, spans.md#mention). */
+  /** The mention marker before a topic span (`glelel x[udozo]`, spans.md#mention). */
   topicMarker?: LexWord;
   linker?: LexWord;
   clause: Clause;

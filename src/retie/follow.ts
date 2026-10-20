@@ -17,6 +17,12 @@ export type FollowPairs = {
   names: Map<string, string>;
   /** Lowercase Egabon word → new spelling, for quoted payloads. */
   words: Map<string, string>;
+  /**
+   * House-cast names (`Uzazon` → `Uzozen`), from the closed roots rather than a page's code. They also follow
+   * inside code (a morph example in backticks, `` `*Uzazon*` ``): native code is lowercase, so a capitalised
+   * house name there is English.
+   */
+  house?: Map<string, string>;
 };
 
 const NAME_RE = /(?<![A-Za-z])[A-Z][a-z]+(?![A-Za-z])/g;
@@ -92,8 +98,54 @@ export function mergeFollowPairs(...all: FollowPairs[]): FollowPairs {
   for (const pairs of all) {
     for (const [k, v] of pairs.names) if (!out.names.has(k)) out.names.set(k, v);
     for (const [k, v] of pairs.words) if (!out.words.has(k)) out.words.set(k, v);
+    for (const [k, v] of pairs.house ?? []) {
+      out.house ??= new Map();
+      if (!out.house.has(k)) out.house.set(k, v);
+    }
   }
   return out;
+}
+
+/** A capitalised or shouted word, with an English plural ending (`Uzozens`, `UZOZEN`). */
+const NAME_WORD_RE = /(?<![A-Za-z])[A-Z][A-Za-z]*(?![A-Za-z])/g;
+
+/** The new spelling of a name as written: `Name`, `NAME`, or either with an English `s` / `es` plural. */
+function nextName(word: string, names: ReadonlyMap<string, string>): string | undefined {
+  for (const suffix of ["", "s", "es"]) {
+    const upper = suffix.toUpperCase();
+    if (word.endsWith(suffix) && word.length > suffix.length) {
+      const next = names.get(word.slice(0, word.length - suffix.length));
+      if (next !== undefined) return next + suffix;
+    }
+    if (word.length > 3 && word === word.toUpperCase() && word.endsWith(upper)) {
+      const stem = word.slice(0, word.length - upper.length);
+      const next = names.get(stem.charAt(0) + stem.slice(1).toLowerCase());
+      if (next !== undefined) return next.toUpperCase() + upper;
+    }
+  }
+  return undefined;
+}
+
+function replaceNames(text: string, names: ReadonlyMap<string, string>, base: number, changes: RetieChange[]): string {
+  if (names.size === 0) return text;
+  return text.replace(NAME_WORD_RE, (word, offset: number) => {
+    const next = nextName(word, names);
+    if (next === undefined) return word;
+    changes.push({ from: word, to: next, index: base + offset });
+    return next;
+  });
+}
+
+/** House names inside code; an opaque payload (`<…>`, `&lt;…&gt;`) is foreign text and stays. */
+function houseInCode(span: string, base: number, pairs: FollowPairs, changes: RetieChange[]): string {
+  if (!pairs.house || pairs.house.size === 0 || /^\]\(|^\{#/.test(span)) return span;
+  let out = "";
+  let at = 0;
+  for (const match of span.matchAll(/<[^<>\n]*>|&lt;[\s\S]*?&gt;/g)) {
+    out += replaceNames(span.slice(at, match.index!), pairs.house, base + at, changes) + match[0];
+    at = match.index! + match[0].length;
+  }
+  return out + replaceNames(span.slice(at), pairs.house, base + at, changes);
 }
 
 function replaceWords(text: string, re: RegExp, pairs: ReadonlyMap<string, string>, base: number, changes: RetieChange[]): string {
@@ -108,20 +160,12 @@ function replaceWords(text: string, re: RegExp, pairs: ReadonlyMap<string, strin
 /** Quoted payloads: curly “…” in English, `["…"]` in morph lines. */
 const QUOTED_RE = /“([^”\n]*)”|\["([^"\n]*)"\]/g;
 
-/** A name shouted in English (`AZAWAN`) follows like its capitalised form. */
-const CAPS_RE = /(?<![A-Za-z])[A-Z]{3,}(?![A-Za-z])/g;
-
 function followText(text: string, base: number, pairs: FollowPairs, changes: RetieChange[]): string {
-  let out = replaceWords(text, NAME_RE, pairs.names, base, changes);
-  out = out.replace(CAPS_RE, (word, offset: number) => {
-    const next = pairs.names.get(word.charAt(0) + word.slice(1).toLowerCase());
-    if (next === undefined) return word;
-    changes.push({ from: word, to: next.toUpperCase(), index: base + offset });
-    return next.toUpperCase();
-  });
+  // A name shouted in English (`AZAWAN`) or made plural (*some Azawans*) follows like the name.
+  let out = replaceNames(text, pairs.names, base, changes);
   out = out.replace(QUOTED_RE, (whole, curly: string | undefined, bracket: string | undefined, offset: number, all: string) => {
-    // An opaque loan's payload is not Egabon and is never retied; a mention's is (`[gl-MENTION | z-OPAQUE["…"]]`).
-    if (bracket !== undefined && /OPAQUE$/.test(all.slice(0, offset)) && !/MENTION \| [^\]|]*$/.test(all.slice(0, offset))) {
+    // An opaque payload is foreign text and is never retied (`z-OPAQUE["…"]`).
+    if (bracket !== undefined && /OPAQUE$/.test(all.slice(0, offset))) {
       return whole;
     }
     const inner = curly ?? bracket!;
@@ -154,16 +198,19 @@ function englishCode(span: string, base: number, pairs: FollowPairs, changes: Re
 
 /**
  * Rewrite names and quoted payloads in prose, morph lines and `<!-- gloss: … -->` comments.
- * Code spans, link targets and pinned heading ids are left as they are.
+ * In code, only house names follow; link targets and pinned heading ids are left as they are.
  */
 export function followProse(markdown: string, pairs: FollowPairs): { text: string; changes: RetieChange[] } {
   const changes: RetieChange[] = [];
-  if (pairs.names.size === 0 && pairs.words.size === 0) return { text: markdown, changes };
+  if (pairs.names.size === 0 && pairs.words.size === 0 && !pairs.house?.size) return { text: markdown, changes };
   let text = "";
   let at = 0;
   for (const match of markdown.matchAll(PROTECTED_RE)) {
     text += followText(markdown.slice(at, match.index!), at, pairs, changes);
-    text += markdownFence(match[0], match.index!, pairs, changes) ?? englishCode(match[0], match.index!, pairs, changes) ?? match[0];
+    text +=
+      markdownFence(match[0], match.index!, pairs, changes) ??
+      englishCode(match[0], match.index!, pairs, changes) ??
+      houseInCode(match[0], match.index!, pairs, changes);
     at = match.index! + match[0].length;
   }
   text += followText(markdown.slice(at), at, pairs, changes);

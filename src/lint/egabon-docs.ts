@@ -555,3 +555,36 @@ export function lintBareRoots(text: string, tables: ClassifyTables): BareRootIss
   });
   return issues;
 }
+
+export type NativeOpaqueIssue = { text: string; index: number; payload: string };
+
+/** One word of an opaque payload spelled like Egabon: a root shape, or a word that parses. */
+function readsAsEgabonWord(word: string, tables: ClassifyTables): boolean {
+  if (!/^[a-z]+$/.test(word) || !isEgabonLintCandidate(word)) return false;
+  if (isEgabonRootShape(word) || looksLikeFullSpelledWord(word)) return true;
+  try {
+    classifiedShape(parseWord(word), tables);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * An opaque `<…>` payload is foreign text ([spans.md](../../docs/grammar/spans.md#loans)), so a retie never
+ * moves it. A payload spelled like Egabon would go stale unseen: Egabon goes in a cite `[…]`.
+ */
+export function lintNativeOpaque(text: string, tables: ClassifyTables): NativeOpaqueIssue[] {
+  const issues: NativeOpaqueIssue[] = [];
+  walkEgabonSpans(text, {
+    text: (span, index) => {
+      for (const match of span.matchAll(/<([^<>\n]+)>/g)) {
+        const words = match[1]!.split(/\s+/).map((w) => w.replace(/[.,?!]+$/, "")).filter(Boolean);
+        if (words.length > 0 && words.every((w) => readsAsEgabonWord(w, tables))) {
+          issues.push({ text: span.trim(), index, payload: match[1]! });
+        }
+      }
+    },
+  });
+  return issues;
+}

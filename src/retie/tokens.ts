@@ -301,15 +301,7 @@ function nextMarkup(input: string, from: number): number {
 /** Retie each word as the old spellings read it (`tables` should know the old roots, see `bridgeTables`). */
 export function resumeRewrite(map: ReadonlyMap<string, string>, tables?: ClassifyTables): CoreRewrite {
   const reshape = tables ? (word: MorphWord) => classifiedShape(word, tables) : undefined;
-  if (!tables) return (core) => retieCore(core, map, { reshape });
-  // A mention marker (`glelel`) makes the next `<…>` span a spelling of Egabon, which moves with its roots.
-  const mentions = new Set([...tables.overlays.values()].filter((row) => row.kind === "mention").map((row) => `${row.pos}l${row.senseForm}`));
-  let afterMention = false;
-  return (core) => {
-    const next = retieCore(core, map, { reshape, opaque: afterMention });
-    afterMention = mentions.has(core);
-    return next;
-  };
+  return (core) => retieCore(core, map, { reshape });
 }
 
 export function lineNumberAt(text: string, index: number): number {

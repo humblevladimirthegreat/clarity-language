@@ -359,10 +359,11 @@ describe("compareMorphGloss", () => {
     );
   });
 
-  it("a mention is a marker word plus the span, and the span's interior stays as written", () => {
-    expectLine("glelel z<udozo> gamezom", '[gl-MENTION | z-OPAQUE["udozo"]] | g-small');
-    expectLine("glelel z<zuzozen vezuyol> gamezom", '[gl-MENTION | z-OPAQUE["zuzozen vezuyol"]] | g-small');
-    expectLine("glelen d<onuron> vegugum", '[gl-NAME.MENTION | d-OPAQUE["onuron"]] | v-rejection');
+  it("a mention is a marker word plus the span: a one-word cite or an opaque interior stays as written", () => {
+    expectLine("glelel z[udozo] gamezom", '[gl-MENTION | z-CITE["udozo"]] | g-small');
+    expectLine("glelel z[zuzozen vezuyol] gamezom", "[gl-MENTION | z-CITE[z-Uzozen | v-sing]] | g-small");
+    expectLine("glelel z<kimchi> gamezom", '[gl-MENTION | z-OPAQUE["kimchi"]] | g-small');
+    expectLine("glelen d[onuron] vegugum", "[gl-NAME.MENTION | d-CITE[Onuron]] | v-rejection");
     expectLine("zuzozen d@[onuron olazun] vegugum", "z-Uzozen | d-NAME.CITE[Onuron | Olazun] | v-rejection");
   });
 
@@ -462,7 +463,7 @@ describe("compareMorphGloss", () => {
       "z-Uzozen | v-walk | th-ASIDE[z-Olazun | v-sleep]",
     );
     expectLine("x@<Sam> zozan vewurel", 'x-NAME.OPAQUE["Sam"] | z-TOPIC | v-walk');
-    expectLine("glelel x<udozo> zozan gamezom", '[gl-MENTION | x-OPAQUE["udozo"]] | z-TOPIC | g-small');
+    expectLine("glelel x[udozo] zozan gamezom", '[gl-MENTION | x-CITE["udozo"]] | z-TOPIC | g-small');
   });
 
   it("viewpoint laterals keep compass on DIR", () => {

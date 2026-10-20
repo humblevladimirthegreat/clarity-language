@@ -736,14 +736,14 @@ describe("parse — spans.md /y/ spans", () => {
 
   it("sets the topic with an /x/ cite or opaque span", () => {
     assert.equal(parseText("x@<Sam> zozan vewurel.").utterances[0]!.bodies[0]!.linker?.raw, "x@<Sam>");
-    assert.equal(parseText("x<udozo> zozan gamezom.").utterances[0]!.bodies[0]!.linker?.raw, "x<udozo>");
+    assert.equal(parseText("x<kimchi> zozan gamezom.").utterances[0]!.bodies[0]!.linker?.raw, "x<kimchi>");
     assert.equal(parseText("x@[onuron olazun] zozan vezuyol.").utterances[0]!.bodies[0]!.linker?.raw, "x@[onuron olazun]");
   });
 });
 
 describe("parse — spans.md mention marker", () => {
   it("reads a gl- word right before a span as the mention marker", () => {
-    const units = parseText("glelel z<udozo> gamezom.").utterances[0]!.bodies[0]!.clause.units;
+    const units = parseText("glelel z<kimchi> gamezom.").utterances[0]!.bodies[0]!.clause.units;
     const np = units[0]!;
     assert.ok(np.kind === "np");
     const item = np.coord.parts[0]!.items[0];
@@ -753,22 +753,22 @@ describe("parse — spans.md mention marker", () => {
   });
 
   it("reads -n as the name-string marker", () => {
-    const np = parseText("glelen d<onuron> vegugum.").utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "np" && u.coord.level === "d")!;
+    const np = parseText("glelen d<Hamlet> vegugum.").utterances[0]!.bodies[0]!.clause.units.find((u) => u.kind === "np" && u.coord.level === "d")!;
     const item = np.kind === "np" ? np.coord.parts[0]!.items[0] : undefined;
     assert.ok(item?.kind === "package");
     assert.equal(item.package.glAdj?.word.overlay?.gloss, "NAME.MENTION");
   });
 
   it("puts the marker before a topic span", () => {
-    const body = parseText("glelel x<udozo> zozan gamezom.").utterances[0]!.bodies[0]!;
+    const body = parseText("glelel x<kimchi> zozan gamezom.").utterances[0]!.bodies[0]!;
     assert.equal(body.topicMarker?.raw, "glelel");
-    assert.equal(body.linker?.raw, "x<udozo>");
+    assert.equal(body.linker?.raw, "x<kimchi>");
   });
 
   it("lets a marked topic span be the whole sentence", () => {
-    const body = parseText("glelel x<udozo>.").utterances[0]!.bodies[0]!;
+    const body = parseText("glelel x<kimchi>.").utterances[0]!.bodies[0]!;
     assert.equal(body.topicMarker?.raw, "glelel");
-    assert.equal(body.linker?.raw, "x<udozo>");
+    assert.equal(body.linker?.raw, "x<kimchi>");
   });
 
   it("keeps the same spelling an ordinary adjective anywhere else", () => {

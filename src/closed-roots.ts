@@ -67,7 +67,7 @@ const CLOSED_ROWS = {
 
 export type ClosedName = keyof typeof CLOSED_ROWS;
 
-/** Current spelling of each closed root, by name (`CLOSED.swan` = Azawan's root). */
+/** Current spelling of each closed root, by name (`CLOSED.swan` = the swan house name's root). */
 export const CLOSED: Record<ClosedName, string> = Object.fromEntries(
   Object.entries(CLOSED_ROWS).map(([name, row]) => [name, row.root]),
 ) as Record<ClosedName, string>;
@@ -76,6 +76,9 @@ export const CLOSED: Record<ClosedName, string> = Object.fromEntries(
 export const CLOSED_ENTRIES: ReadonlyArray<{ name: ClosedName } & ClosedRow> = Object.entries(CLOSED_ROWS).map(
   ([name, row]) => ({ name: name as ClosedName, ...row }),
 );
+
+/** The house cast: the three single-root names examples use for people (grammar-docs.md#house-cast). */
+export const HOUSE_CAST: readonly ClosedName[] = ["swan", "lion", "hibiscus"];
 
 const CLOSED_NAMES = Object.keys(CLOSED_ROWS) as ClosedName[];
 

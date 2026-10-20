@@ -17,7 +17,7 @@ import { execFileSync } from "node:child_process";
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
 
-import { CLOSED_ENTRIES, closedRootsIn, namedEnglish } from "../src/closed-roots.js";
+import { CLOSED_ENTRIES, HOUSE_CAST, closedRootsIn, namedEnglish } from "../src/closed-roots.js";
 import { parseCompoundCsv, validateCompoundRows } from "../src/lexicon-compounds.js";
 import { ensureFrequencyFile, loadFrequencyRanks } from "../src/lexicon-place.js";
 import { listMarkdown } from "../src/markdown-files.js";
@@ -257,6 +257,15 @@ async function main(): Promise<void> {
     firstPass.set(file, rewriteMarkdown(sources.get(file)!, map, tables, { deferFollow: true, english, keep }));
   }
   const follow = mergeFollowPairs(...[...firstPass.values()].map((result) => result.followPairs));
+  // House names follow from the closed roots, wherever English spells them (prose, plurals, code).
+  const oldClosed = closedRootsIn(tables.old.published);
+  const newClosed = closedRootsIn(tables.current.published);
+  follow.house = new Map();
+  for (const name of HOUSE_CAST) {
+    if (oldClosed[name] === newClosed[name]) continue;
+    follow.house.set(namedEnglish(oldClosed[name]), namedEnglish(newClosed[name]));
+    follow.names.set(namedEnglish(oldClosed[name]), namedEnglish(newClosed[name]));
+  }
   for (const word of keep) {
     follow.names.delete(word);
     follow.words.delete(word);

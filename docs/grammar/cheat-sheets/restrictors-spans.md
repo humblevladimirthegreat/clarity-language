@@ -150,8 +150,8 @@ A one-word name is an ordinary **-n** word (`donuron`), not a span.
 | [Call a foreign name](../spans.md#y-spans) | <code>y@&lt;Sam&gt;</code> | *Sam!* | B |
 | [Name of uncertain spelling](../spans.md#y-spans) | <code>y~@&lt;Sam&gt;</code> | *Sam?* (not sure of the name) | B |
 | [Foreign interjection](../spans.md#y-spans) | <code>y&lt;Amen&gt;</code> | *Amen!* | B |
-| [A word as spelling](../spans.md#mention): `glelel` | <code>glelel z&lt;odoga&gt; gamezom.</code> | *The word “udozo” is small.* | I |
-| [A name as spelling](../spans.md#mention): `glelen` | <code>zuzozen glelen d&lt;onodan&gt; vegugum.</code> | *Uzozen dislikes the name “onuron.”* | I |
+| [A word as spelling](../spans.md#mention): `glelel` | `glelel z[udozo] gamezom.` | *The word “udozo” is small.* | I |
+| [A name as spelling](../spans.md#mention): `glelen` | `zuzozen glelen d[onuron] vegugum.` | *Uzozen dislikes the name “onuron.”* | I |
 
 ### Writing the close {#close}
 

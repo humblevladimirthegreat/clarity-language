@@ -18,7 +18,9 @@ use [skip-cd] for amplify to not deploy.
 -reconsider adjective bars (poor/rich, weak/strong)
 -do tail-suffix.md, git mv x-compounds.md to just compounds.md and place root-tails content there instead of phonology.
 -number-respelling.md: re-pick the two number fillers against the root-tails lexicon. With `w` + `y` as fillers, tools and people drop out of the 00–99 mnemonic table, and column 9 is all flags (number-mnemonic.md § lexicon coverage, open question 6)
--redo examples, lint instructions for look_alike_gap should mention that you may need to change the examples more
+-redo examples, lint instructions for look_alike_gap should mention that you may need to change the examples to be more coherent
+-pronouns based on tails (including word ending)
+-reconsider hosting rules for b
 
 -claritish editor phase 3 follow-ups (docs/proposals/partially-implemented/claritish-editor.md, Phase 3 as built): decide on part-of-speech tagging for label cues (measured: word list 34/50 recall, 1/25 false positives; compromise POS 17/50, 5/25, mostly role nouns like nurse/teacher; together 38/50, 6/25); the misses are non-pronoun subjects (my boss, Mark, Dad) and words not in the trait list (ridiculous, sensitive, impossible, clueless, creep, cheap, plurals like idiots, hyphenated two-faced); consider per-emotion-word card presets (confused → understanding). address the vitepress build warning while you're at it (caused by ClaritishCard)
 

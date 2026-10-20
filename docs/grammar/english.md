@@ -255,7 +255,7 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Egabo
 |--------------|------------|-------|
 | *now, about Uzozen*, *speaking of Uzozen* | `/x/` + the noun: **`xuzozen`** | [Topic](pronouns.md#topic) |
 | *now, about Sam* (a foreign name) | <code>x@&lt;Sam&gt;</code> | [Topic](pronouns.md#topic), [spans](spans.md#topic-quotes) |
-| *now, about the word “udozo”* | <code>glelel x&lt;odoga&gt;</code> | [Topic](pronouns.md#topic), [mention](spans.md#mention) |
+| *now, about the word “udozo”* | `glelel x[udozo]` | [Topic](pronouns.md#topic), [mention](spans.md#mention) |
 | *now, about Onuron Olazun* (the work) | `x@[onuron olazun]` | [Topic](pronouns.md#topic), [cite](spans.md#writing) |
 | *back to Uzozen*, *as I was saying about Uzozen* | `/x/` + whole stem + **-r**: **`xuzozer`** | [Return](pronouns.md#topic-return) |
 | *anyway, Uzozen …* (after a side topic) | **`or xuzozer …`** | [Return](pronouns.md#topic-return), [resume hooks](hooks.md#hook-resume) |

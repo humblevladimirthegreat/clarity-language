@@ -369,21 +369,27 @@ The marker is the *letters* root `ele` as a `gl-` adjective, on **-l** (`glelel`
 | **`glelel`** | the word or phrase as spelling |
 | **`glelen`** | the name-string: a name as spelling |
 
-The span itself is an ordinary [opaque](#loans) <code>&lt;…&gt;</code> (or a cite `[…]`), so the marker plus the span fills a slot like any noun:
+The span is a [cite](#writing) `[…]` when the spelling is Egabon, and an [opaque](#loans) <code>&lt;…&gt;</code> when it is not. Either way, the marker plus the span fills a slot like any noun:
 
-> <code>glelel z&lt;udozo&gt; gamezom.</code>
+> `glelel z[udozo] gamezom.`
 >
-> [gl-MENTION | z-OPAQUE["udozo"]] | g-small
+> [gl-MENTION | z-CITE["udozo"]] | g-small
 >
 > "The word “udozo” is small."
 
-> <code>glelel z&lt;zuzozen vezuyol&gt; gamezom.</code>
+> `glelel z[zuzozen vezuyol] gamezom.`
 >
-> [gl-MENTION | z-OPAQUE["zuzozen vezuyol"]] | g-small
+> [gl-MENTION | z-CITE[z-Uzozen | v-sing]] | g-small
 >
 > "The phrase “zuzozen vezuyol” is small."
 
-With **-n**, the mention is a **name** as spelling (the title, which could be changed), even when it is **one word**: <code>glelen d&lt;onodan&gt;</code> is not `donuron`. A cite with **`@`** is the **work**, and that span is for a title of **several words** (`d@[onuron olazun]`). The one-word *Onuron* as the work is an ordinary **-n** word (`donuron`).
+> <code>glelel z&lt;kimchi&gt; gamezom.</code>
+>
+> [gl-MENTION | z-OPAQUE["kimchi"]] | g-small
+>
+> "The word “kimchi” is small." (a foreign word)
+
+With **-n**, the mention is a **name** as spelling (the title, which could be changed), even when it is **one word**: `glelen d[onuron]` is not `donuron`. A cite with **`@`** is the **work**, and that span is for a title of **several words** (`d@[onuron olazun]`). The one-word *Onuron* as the work is an ordinary **-n** word (`donuron`).
 
 > `zuzozen d@[onuron olazun] vegugum.`
 >
@@ -391,21 +397,21 @@ With **-n**, the mention is a **name** as spelling (the title, which could be ch
 >
 > "Uzozen dislikes Onuron Olazun." (the work)
 
-> <code>zuzozen glelen d&lt;onodan&gt; vegugum.</code>
+> `zuzozen glelen d[onuron] vegugum.`
 >
-> z-Uzozen | [gl-NAME.MENTION | d-OPAQUE["onodan"]] | v-rejection
+> z-Uzozen | [gl-NAME.MENTION | d-CITE[Onuron]] | v-rejection
 >
 > "Uzozen dislikes the name “onuron.”" (not the work)
 
-**Compare with:** `donuron` is *Onuron* (the work or person). <code>glelen d&lt;onodan&gt;</code> is only the **name**.
+**Compare with:** `donuron` is *Onuron* (the work or person). `glelen d[onuron]` is only the **name**.
 
 The marker is read as a marker only when it stands **directly before a span**. Anywhere else the same spelling is the ordinary adjective *lettered*. A mention marker does not go under `/y/`: a call or a reaction is not about a spelling. A `/w/` word is never a marker either, because `/w/` grades a `/ɡ/`, `/h/`, or `/th/` word, never a noun.
 
 A marker before a [topic span](#topic-quotes) works the same way:
 
-> <code>glelel x&lt;odoga&gt; zozan gamezom.</code>
+> `glelel x[udozo] zozan gamezom.`
 >
-> [gl-MENTION | x-OPAQUE["odoga"]] | z-TOPIC | g-small
+> [gl-MENTION | x-CITE["udozo"]] | z-TOPIC | g-small
 >
 > "Now, about the word “udozo”: it is small."
 
@@ -443,7 +449,7 @@ A loan adjective or a cite leans the same way:
 >
 > "A rouge dog walks."
 
-**Compare with:** the [mention](#mention) marker is a `gl-` **word** before a span (<code>glelel z&lt;onoda&gt;</code>), not `gl` on the span itself.
+**Compare with:** the [mention](#mention) marker is a `gl-` **word** before a span (`glelel z[udozo]`), not `gl` on the span itself.
 
 ### One of a title (`^@`) {#one-of-a-title}
 
@@ -613,12 +619,12 @@ z-Olazun | d-CITE[z-Uzozen | v-attest] | v-tell
 z-Olazun | d-CITE[Uzozen] | v-tell . z-Uhelan | d-←patient.same | v-write
 :::
 
-**3.** *The word “onoda” is small.*
+**3.** *The word “oledo” is small.*
 
 ::: details Show answer
-<code>glelel z&lt;onoda&gt; gamezom.</code>
+`glelel z[oledo] gamezom.`
 
-[gl-MENTION | z-OPAQUE["onoda"]] | g-small
+[gl-MENTION | z-CITE["oledo"]] | g-small
 :::
 
 **4.** *Uzozen said, “Does Olazun lie?”*
@@ -647,10 +653,10 @@ z-Olazun | SCOPE[b-Uhelan | h-possibility] | v-tell
 
 #### Egabon → English {#intermediate-egabon-to-english}
 
-**1.** <code>zuzozen glelen d&lt;onodan&gt; vegugum.</code>
+**1.** `zuzozen glelen d[onuron] vegugum.`
 
 ::: details Show answer
-z-Uzozen | [gl-NAME.MENTION | d-OPAQUE["onuron"]] | v-rejection
+z-Uzozen | [gl-NAME.MENTION | d-CITE[Onuron]] | v-rejection
 
 *Uzozen dislikes the name “onuron.”* (not the work)
 :::

@@ -135,7 +135,8 @@ function rewriteWritingSpan(
   map: ReadonlyMap<string, string>,
   scope?: ResumeScope,
 ): string | null {
-  if (family.bracket === "<" && !scope?.opaque) {
+  // An opaque `<…>` payload is foreign text, never Egabon (spans.md#loans).
+  if (family.bracket === "<") {
     return null;
   }
   const nextPayload = rewriteSpanPayload(family.payload, map, scope);

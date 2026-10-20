@@ -60,7 +60,7 @@ describe("glossToEgabon", () => {
       "zuzozen vawebol daxer.",
       "zuzozen dolazun vawebol. zuxorx varuvel.",
       "zuzozen d[amobam#|] vezuyel.",
-      "glelel z<udozo> gamezom.",
+      "glelel z<kimchi> gamezom.",
       "zagozolx grarel.",
       "zagozolx grarel.",
       "zamunx vewurel.",

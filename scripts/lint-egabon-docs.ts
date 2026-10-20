@@ -28,7 +28,8 @@
 import { readFileSync } from "node:fs";
 import { basename, dirname, join, relative, resolve } from "node:path";
 
-import { emptySpanStats, lintEgabonMarkdown, lintEgabonSpans, lintBareRoots } from "../src/lint/egabon-docs.js";
+import { emptySpanStats, lintEgabonMarkdown, lintEgabonSpans, lintBareRoots, lintNativeOpaque } from "../src/lint/egabon-docs.js";
+import { lintStaleNames } from "../src/lint/stale-names.js";
 import {
   formatMorphGlossFinding,
   lintMorphGlossMarkdown,
@@ -91,6 +92,9 @@ import { REPO_ROOT, readData } from "../src/repo-paths.js";
 const CONSTRUCTIONS = constructionRegistry(loadDefaultTables().overlays.values());
 const grammarDir = join(REPO_ROOT, "docs", "grammar");
 const cheatSheetsDir = join(grammarDir, "cheat-sheets");
+const metaDir = join(REPO_ROOT, "docs", "meta");
+/** A record of past spellings (docs/meta/retie.md#skipped) keeps its old names. */
+const RETIE_SKIP_RE = /^<!--\s*retie:\s*skip\s*-->\s*$/m;
 
 function parseCli(argv: string[]): { paths: string[]; orderReport: boolean } {
   const paths: string[] = [];
@@ -270,6 +274,13 @@ function main(): void {
   let duplicateIdCount = 0;
   let retieFormatCount = 0;
   let freeEnglishCount = 0;
+  let staleNameCount = 0;
+  const reportStaleNames = (rel: string, text: string) => {
+    for (const issue of lintStaleNames(text, tables)) {
+      staleNameCount += 1;
+      console.error(`${rel}:${lineNumberAt(text, issue.index)}  \`${issue.name}\`  stale-name  (spelled like a name, but its root is not in the lexicon; write the current name)`);
+    }
+  };
   const spanStats = emptySpanStats();
   const pages = new Map<string, PageSections>();
   const uses: ConstructionUse[] = [];
@@ -315,6 +326,11 @@ function main(): void {
     for (const issue of lintBareRoots(original, tables)) {
       spanCount += 1;
       console.error(`${rel}:${lineNumberAt(original, issue.index)}  \`${issue.text}\`  bare-root  (root ${issue.root} is not in the lexicon; write the current root)`);
+    }
+    reportStaleNames(rel, source);
+    for (const issue of lintNativeOpaque(original, tables)) {
+      spanCount += 1;
+      console.error(`${rel}:${lineNumberAt(original, issue.index)}  \`${issue.text}\`  native-opaque  (<${issue.payload}> reads as Egabon; an opaque span holds foreign text, so write a foreign word or put Egabon in a cite […])`);
     }
     for (const issue of lintEgabonSpans(original, tables, spanStats, used)) {
       spanCount += 1;
@@ -378,6 +394,13 @@ function main(): void {
     }
   }
 
+  if (paths.length === 0) {
+    for (const file of listMarkdown(metaDir)) {
+      const source = readFileSync(file, "utf8");
+      if (!RETIE_SKIP_RE.test(source)) reportStaleNames(relative(REPO_ROOT, file), source);
+    }
+  }
+
   let coverageCount = 0;
   let orderCount = 0;
   let drillCount = 0;
@@ -415,6 +438,9 @@ function main(): void {
   }
   if (spanCount > 0) {
     console.error(`\n${spanCount} Egabon sentence / span issue(s) in docs/grammar/.`);
+  }
+  if (staleNameCount > 0) {
+    console.error(`\n${staleNameCount} stale name(s). A house or example name follows its root; respell it from the lexicon.`);
   }
   if (duplicateIdCount > 0) {
     console.error(
@@ -480,6 +506,7 @@ function main(): void {
     hostIssues +
     count +
     spanCount +
+    staleNameCount +
     duplicateIdCount +
     retieFormatCount +
     freeEnglishCount +

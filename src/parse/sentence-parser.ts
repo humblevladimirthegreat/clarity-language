@@ -485,10 +485,10 @@ class EgabonSentenceParser extends CstParser {
       this.OR([
         {
           ALT: () => {
-            // A mention marker before a topic span (`glelel x<odoga> …`, spans.md#mention).
+            // A mention marker before a topic span (`glelel x[udozo] …`, spans.md#mention).
             this.OPTION4(() => this.CONSUME(GGlBefore.Linker, { LABEL: "topicMarker" }));
             this.CONSUME(Linker);
-            // A topic word, or a marked topic span, may be the whole sentence (`xazawan.`, `glelel x<odoga>.`; pronouns.md#topic).
+            // A topic word, or a marked topic span, may be the whole sentence (`xazawan.`, `glelel x[udozo].`; pronouns.md#topic).
             this.OPTION5(() => crossOrClause(2, this.clause));
           },
         },
