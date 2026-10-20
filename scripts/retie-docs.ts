@@ -200,6 +200,16 @@ async function main(): Promise<void> {
   };
 
   // The map must be applied once: its new roots are often other rows' old roots.
+  // Every later check would read the map's own new spellings in the docs as collisions, so stop here.
+  if (mapState.appliedAt && !options.force) {
+    const why =
+      `${relative(REPO_ROOT, options.mapPath)} was already applied at ${mapState.appliedAt}; nothing to retie. ` +
+      "Only a lexicon respelling needs a retie: run convert-word --lexicon for a fresh map. " +
+      "A closed-grammar respelling (digits, closed forms in src/) is edited by hand.";
+    if (options.write) throw new Error(`Not written: ${why}`);
+    console.log(why);
+    return;
+  }
   if (mapState.appliedAt) {
     block(`map  already applied at ${mapState.appliedAt}; a second retie would chain old → new → newer`);
   }

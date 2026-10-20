@@ -216,7 +216,7 @@ Working examples:
 
 ## Open questions
 
-1. **Where the converter lives.** A `scripts/` CLI in the same family as `parse.mjs` is enough for v1. A dictionary-page field (type a PIN, see pegs; type a word, see digits) can wait. Grammar pages stay free of a 100-row table either way.
+1. **Where the converter lives.** A `scripts/` CLI in the same family as `parse.mjs` is enough for v1. A dictionary-page field (type a PIN, see pegs; type a word, see digits) can wait. Grammar pages stay free of a 100-row table either way. 
 2. **Thin cells.** The thinnest cell hangs on two signs (**73**). A later respelling could empty it. Accept that and let the check flag a cell that empties? Or let `convert-word` break near-ties toward nearly empty cells? The second fills them but breaks goal 5.
 3. **Three-letter rows as pegs.** These rows also carry closed grammar overlays. Their seeds picture well (*map*, *door*), but a learner may hear the overlay first, and three-letter people/tools (`awu` *anchor*) carry no digit. Should the tool rank five-letter filler roots (people and tools) above three-letter overlay hosts when a digit has both?
 4. **Count layer.** Adopt it in the chunker, and if so, hand shapes for every count or copies for 1–4?
