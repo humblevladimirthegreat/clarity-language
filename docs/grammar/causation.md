@@ -102,12 +102,12 @@ z-Uzozen | v-sing | [th-if | bl-sun]
 z-flower | [g-only-if | bl-seedling]
 :::
 
-**3.** *Ahelan sees a flower only if there is rain.*
+**3.** *Ahelan sees a flower only if there is sun.*
 
 ::: details Show answer
-`zahelan duvelal vawebol thebom blerulal.`
+`zahelan duvelal vawebol thebom bluzalel.`
 
-z-Ahelan | d-flower | v-see | [th-only-if | bl-rain]
+z-Ahelan | d-flower | v-see | [th-only-if | bl-sun]
 :::
 
 **4.** *There are seedlings if there is rain.*

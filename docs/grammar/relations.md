@@ -134,7 +134,6 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *eraser* | `urewul` |
 | *find* | `vumewol` |
 | *very* | `welazom` |
-| *peek* | `vebemel` |
 | *haste* | `hedurem` |
 | *run* | `varuvel` |
 | *tell* | `vezuyel` |
@@ -175,12 +174,12 @@ z-Olazun | [h-on-behalf-of | bl-Uzozen] | v-write
 z-Ahelan | [d-eraser | [g-like | bl-Uzozen]] | v-find
 :::
 
-**5.** *Olazun peeks very much like a duck.*
+**5.** *Olazun runs very much like a duck.*
 
 ::: details Show answer
-`zolazun welazom hewom bludozal vebemel.`
+`zolazun welazom hewom bludozal varuvel.`
 
-z-Olazun | [[w-very | h-like] | bl-duck] | v-peek
+z-Olazun | [[w-very | h-like] | bl-duck] | v-run
 :::
 
 **6.** *Uzozen and Ahelan walk alike.*

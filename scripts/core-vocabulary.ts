@@ -133,6 +133,7 @@ function printLookAlikes(checkpoints: Checkpoint[], core: ReadonlyMap<string, st
     }
     console.log("");
   }
+  if (pairs.length > 0) console.log("A swapped word must fit each item it lands in: reread them, and rewrite any it makes false or odd.");
   console.log(`${pairs.length} look-alike pair(s) under ${LOOK_ALIKE_GAP} checkpoints apart within a band.`);
 }
 

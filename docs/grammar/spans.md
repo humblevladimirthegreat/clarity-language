@@ -215,6 +215,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *tell* | `vezuyel` |
 | *write* | `varayel` |
 | *walk* | `vowurel` |
+| *see* | `vawebol` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
@@ -268,12 +269,12 @@ z-Olazun | v-walk | th-ASIDE[h-quiet]
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zolazun d@[ogoron olazun] varayel.`
+**1.** `zolazun d@[ogoron olazun] vawebol.`
 
 ::: details Show answer
-z-Olazun | d-NAME.CITE[Ogoron | Olazun] | v-write
+z-Olazun | d-NAME.CITE[Ogoron | Olazun] | v-see
 
-*Olazun wrote Ogoron Olazun.* (the work)
+*Olazun saw Ogoron Olazun.* (the work)
 :::
 
 **2.** <code>zolazun v&lt;google&gt; dogoron.</code>

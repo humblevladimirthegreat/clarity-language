@@ -482,7 +482,7 @@ function main(): void {
   }
   if (lookAlikeCount > 0) {
     console.error(
-      `\n${lookAlikeCount} look-alike issue(s). Keep roots apart only in the middle vowel out of nearby checkpoints (docs/meta/translation-exercises.md#look-alikes).`,
+      `\n${lookAlikeCount} look-alike issue(s). Keep roots apart only in the middle vowel out of nearby checkpoints. A swapped word must still fit each item: reread them, and rewrite any that the new word makes false or odd (docs/meta/translation-exercises.md#look-alikes).`,
     );
   }
   if (reviewCount > 0) {

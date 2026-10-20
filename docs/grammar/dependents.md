@@ -281,12 +281,12 @@ z-Ahelan | v-scream . x-therefore | z-guard | v-run
 *Ahelan screams. Therefore a guard runs.*
 :::
 
-**2.** `zolazun vebemel hezom blarl zagayul duzozen vawebol.`
+**2.** `zolazun vuhohol hezom blarl zagayul varemul.`
 
 ::: details Show answer
-z-Olazun | v-peek | [h-although | bl-that-clause] | z-guard | d-Uzozen | v-see
+z-Olazun | v-sit | [h-although | bl-that-clause] | z-guard | v-scream
 
-*Olazun peeks although a guard sees Uzozen.*
+*Olazun sits although a guard screams.*
 :::
 
 **3.** `zahelan vawebol dorl zagayul vuhohol.`

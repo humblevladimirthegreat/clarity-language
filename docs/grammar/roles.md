@@ -822,14 +822,14 @@ z-Ahelan | v-run . z-Uzozen | v-sit | h-west-th-←agent.same
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzozen sits on the island's left.* `zuzozen vuhohol howuhethol blelahol.` or `zuzozen vuhohol howuhel blelahol.`
+**1.** *Uzozen sits on the boat's left.* `zuzozen vuhohol howuhethol blebaval.` or `zuzozen vuhohol howuhel blebaval.`
 
 ::: details Show answer
-`zuzozen vuhohol howuhethol blelahol.`
+`zuzozen vuhohol howuhethol blebaval.`
 
-z-Uzozen | v-sit | [h-west-th-landmark | bl-island]
+z-Uzozen | v-sit | [h-west-th-landmark | bl-boat]
 
-**`tho`** turns the arrow to the island's own facing; bare `howuhel` is *west of the island*.
+**`tho`** turns the arrow to the boat's own facing; bare `howuhel` is *west of the boat*.
 :::
 
 **2.** *Ahelan sees something to write with.* `zahelan daexarayel vawebol.` or `zahelan daoxarayel vawebol.`
