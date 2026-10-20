@@ -6,7 +6,7 @@
  */
 import { CLOSED, closedDerived } from "../closed-roots.js";
 import { classify, lexiconContentRoots, type ClassifyTables } from "../parse/classify.js";
-import { derivedHookGloss, hookCompoundFromMorph } from "../parse/hook-compounds.js";
+import { derivedHookGloss, readHookCompound } from "../parse/hook-compounds.js";
 import { senseFormEnding, senseFormRoot, type OverlayKind } from "../lexicon-search.js";
 import { senseLabel } from "../parse/morph-gloss.js";
 import { parseWord, WordParseError } from "../parse/word.js";
@@ -164,7 +164,7 @@ function allowedSenses(
       add(hostLemmas, compound.abstract);
     }
   }
-  const hooked = hookCompoundFromMorph(morph);
+  const hooked = readHookCompound(morph, (root) => tables.published.has(root));
   if (hooked) {
     add(all, derivedHookGloss(hooked.hook));
     const listed = tables.compounds.get(hooked.stem);

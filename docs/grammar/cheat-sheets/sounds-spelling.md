@@ -51,8 +51,8 @@ Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), th
 
 | Rule | Example | Stage |
 |------|---------|-------|
-| [A content word ends in **-l**, **-m**, **-n**, or **-r**](../phonology.md#word-edges), the audible end | `uzazon` = *a-za-wan* | B |
-| [Inside a word, a consonant starts a syllable](../phonology.md#word-edges) and never closes one | `odozol` = *o-do-gal* | B |
+| [A content word ends in **-l**, **-m**, **-n**, or **-r**](../phonology.md#word-edges), the audible end | `uzazon` = *u-za-zon* | B |
+| [Inside a word, a consonant starts a syllable](../phonology.md#word-edges) and never closes one | `odozol` = *o-do-zol* | B |
 | [Roots are vowel-first](../phonology.md#phonotactics): **V(CV)+** | `zubulol` = `z` + `ubulo` + **-l** | I |
 
 ### Parts of a word, in order {#parts-in-order}

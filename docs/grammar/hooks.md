@@ -22,7 +22,7 @@ A HOOK B
 >
 > "The family, including Uzazon."
 
-Because a hook starts with a vowel, the [last consonant](phonology.md#word-edges) of the word before it may slide over and start the hook's syllable, in speech and in song: `zovayal al` can sound like *za-va-ha-lal*. That is fine. They are still two words, and the listener can still tell where the hook starts.
+Because a hook starts with a vowel, the [last consonant](phonology.md#word-edges) of the word before it may slide over and start the hook's syllable, in speech and in song: `zovayal al` can sound like *zo-va-ya-lal*. That is fine. They are still two words, and the listener can still tell where the hook starts.
 
 **Compare with:** packaging two members as a list uses a [join](joins.md) (`zodozol zegazol zam` *a dog and a cat*). A hook adds B to A's slot; it does not name a pair.
 
@@ -1068,6 +1068,8 @@ English has single verbs for moving in relation to a place: *enter*, *leave*, *o
 
 Keep the left word’s own **-l** or **-m**, then write the hook, with no mid-word **`x`**. The dictionary form is the **citation** (no role letter), because the same stem can sit under `/z/` or `/ɡ/` as well as `/v/`.
 
+The left word is always a root from the dictionary. A longer root can end in the same letters as a short root + ending + hook, but the dictionary never has both, so knowing the roots tells you which one a word is.
+
 ```text
 CITE + HOOK
 oworel + ul → oworelul
@@ -1087,7 +1089,7 @@ In a clause, add a role letter to that citation (`voworelul`). The extra partici
 >
 > "leave" (the dictionary form)
 
-The left ending is part of the stem, so two different left roots stay distinct once the hook is attached. In speech that ending starts the hook's syllable, so no consonant closes a syllable mid-word: `oworelul` is *o-wo-ga-lul*.
+The left ending is part of the stem, so two different left roots stay distinct once the hook is attached. In speech that ending starts the hook's syllable, so no consonant closes a syllable mid-word: `oworelul` is *o-wo-re-lul*.
 
 | Hook | Free extra-noun | Fused **-l** | Fused **-m** | Citation (from *walk*) |
 |------|-----------------|--------------|--------------|------------------------|

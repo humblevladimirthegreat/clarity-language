@@ -290,6 +290,20 @@ describe("classify", () => {
     assert.equal(word.rootGloss?.concrete, "walk");
   });
 
+  it("a five-letter root with l second takes its ending, not a hook", () => {
+    // `ehalo` + -l spells `eha` + l + hook `ol`; only the five-letter root is in the lexicon.
+    const word = expectReading(`z${CLOSED.hibiscus}l`, "ordinary");
+    assert.equal(CLOSED.hibiscus[3], "l");
+    assert.equal(word.hookCompound, undefined);
+    assert.equal(word.rootGloss?.concrete, "hibiscus");
+  });
+
+  it("reads no hook compound on a left piece that is not a dictionary root", () => {
+    const vcv = ["aba", "ebe", "obo", "ubu", "ada", "ede"].find((root) => !tables.published.has(root))!;
+    const word = classifyText(`z${vcv}lol`);
+    assert.equal(word.hookCompound, undefined);
+  });
+
   it("unlisted left root still fuses a productive hook compound", () => {
     const word = expectReading("varuvelul", "ordinary");
     assert.equal(word.hookCompound?.stem, "aruvelul");

@@ -71,7 +71,7 @@ Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org
 
 A content word ends in one of four consonants: `-l`, `-m`, `-n`, or `-r`. That last consonant is the audible end of the word. Inside the word, consonants start syllables. They do not close a syllable in the middle.
 
-`uzazon` = *a-za-wan*. `odozol` = *o-do-gal*.
+`uzazon` = *u-za-zon*. `odozol` = *o-do-zol*.
 
 ## Intermediate {#intermediate}
 

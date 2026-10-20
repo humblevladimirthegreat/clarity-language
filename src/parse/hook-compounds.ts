@@ -70,7 +70,11 @@ export function derivedHookGloss(hook: ExtraNounHook): string {
   return HOOK_DERIVED_GLOSS[hook];
 }
 
-/** Split a prefix-less citation (`awalalul`) into published-shaped left + extra-noun hook. */
+/**
+ * Split a prefix-less citation (`awalalul`) into published-shaped left + extra-noun hook, by shape alone.
+ * A five-letter root with **l** / **m** second spells the same letters, so a reading goes through
+ * {@link readHookCompound}, which asks the lexicon.
+ */
 export function parseHookCompoundCite(cite: string): HookCompoundParts | null {
   if (cite.endsWith("x")) {
     cite = cite.slice(0, -1);
@@ -103,4 +107,16 @@ export function hookCompoundFromMorph(word: MorphWord): HookCompoundParts | null
   if (ending !== "l" && ending !== "m") return null;
   const root = word.family.roots[0]!;
   return parseHookCompoundCite(root + ending);
+}
+
+/**
+ * A hook compound as the lexicon reads it (hooks.md#hook-compounds): the left piece is a dictionary root,
+ * and the whole stem is not one. `VCV l Vl` is either a five-letter root + ending or a three-letter root +
+ * hook, and placement keeps only one of them in the lexicon.
+ */
+export function readHookCompound(word: MorphWord, isRoot: (root: string) => boolean): HookCompoundParts | null {
+  const parts = hookCompoundFromMorph(word);
+  if (!parts || !isRoot(parts.leftRoot)) return null;
+  if (word.family.kind === "content" && isRoot(word.family.roots[0]!)) return null;
+  return parts;
 }

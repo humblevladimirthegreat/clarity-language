@@ -13,7 +13,7 @@ import {
 
 import {
   derivedHookGloss,
-  hookCompoundFromMorph,
+  readHookCompound,
 } from "./hook-compounds.js";
 import type { LexOverlay, LexReading, LexWord, MorphWord, PointerVowel, RoleVowel } from "./types.js";
 import { CLOSED, closedDerived, withLexiconClosedRoots } from "../closed-roots.js";
@@ -220,12 +220,8 @@ function hookCompoundLexiconRoots(
   known?: ReadonlySet<string>,
 ): string[] | undefined {
   if (!known) return undefined;
-  const parts = hookCompoundFromMorph(word);
-  if (!parts) return undefined;
-  if (!known.has(parts.leftRoot)) return undefined;
-  const morphRoot = word.family.kind === "content" ? word.family.roots[0] : undefined;
-  if (morphRoot && known.has(morphRoot)) return undefined;
-  return [parts.leftRoot];
+  const parts = readHookCompound(word, (root) => known.has(root));
+  return parts ? [parts.leftRoot] : undefined;
 }
 
 export function lexiconContentRoots(
@@ -331,10 +327,8 @@ function compoundLemmaGloss(row: CompoundRow): { concrete?: string; abstract?: s
 }
 
 function classifyHookCompound(word: MorphWord, tables: ClassifyTables): LexWord | undefined {
-  const morphRoot = word.family.kind === "content" ? word.family.roots[0] : undefined;
-  if (morphRoot && tables.published.has(morphRoot)) return undefined;
-  const parts = hookCompoundFromMorph(word);
-  if (!parts || !tables.published.has(parts.leftRoot)) return undefined;
+  const parts = readHookCompound(word, (root) => tables.published.has(root));
+  if (!parts) return undefined;
   const listed = tables.compounds.get(parts.stem);
   const published = tables.published.get(parts.leftRoot);
   const bank =
