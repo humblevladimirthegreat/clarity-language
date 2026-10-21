@@ -142,6 +142,8 @@ function isQuestionForce(word: LexWord | undefined): boolean {
 
 function isJoinGap(word: LexWord): boolean {
   if (isDigitlessNumberBlank(word)) return true;
+  // A kind indefinite **-r** is a typed blank (questions.md#four-kinds-of-question).
+  if (word.ending === "r" && word.family.kind === "kindIndefinite") return true;
   if (word.ending !== "r" || word.family.kind !== "joinMarker") return false;
   return word.reading === "join" || word.reading === "restrictor";
 }

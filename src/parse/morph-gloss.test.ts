@@ -25,6 +25,24 @@ function expectLine(agebon: string, morph: string): void {
   assert.equal(morphGlossLine(agebon, tables), normalizeMorphLine(morph), agebon);
 }
 
+describe("morphGlossLine — kind indefinites (joins.md#kind-indefinites)", () => {
+  it("reads the join, then the kind, then who knows which one", () => {
+    expectLine("zwoyar vezuyel buwon.", "z-something.person.withheld | v-tell | b-speaker");
+    expectLine("yol zwoyar dobogal vagowul.", "y-question | z-wh.person.withheld | d-box | v-axe");
+    expectLine("yol ol bwehar zayan vagedal.", "y-question | [at | b-wh.place.shared] | z-interlocutors | v-eat");
+  });
+  it("reads -l / -m over a set, and drops the kind on /v/ and /h/", () => {
+    expectLine("zuzozen vezuyel bweyam.", "z-Uzozen | v-tell | b-none.person.shared.open");
+    expectLine("zwayual vezuvol.", "z-everything.person.anywhere | v-sleep");
+    expectLine("zawan vebal hweram.", "z-listener | v-hear | h-never.shared.open");
+    expectLine("yol vwavar zayan.", "y-question | v-wh.unpicked | z-interlocutors");
+  });
+  it("glosses -x after a join -r as a group", () => {
+    expectLine("zarx vowurel.", "z-something-x | v-walk");
+    expectLine("zwuyarx vowurel.", "z-something.person.unknown-x | v-walk");
+  });
+});
+
 describe("morphGlossLine — clause joins go between clauses", () => {
   it("groups a switched join over the list before it", () => {
     expectLine(

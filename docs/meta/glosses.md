@@ -375,6 +375,7 @@ A [resume](../grammar/pronouns.md#resume-r) spells its antecedent's whole stem, 
 | Resume of a prior content word | | `z-←someone` / `d-←tea` |
 | No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
 | Fill-ask / unspecified member | `zar` | `z-wh` / `z-something` (as the docs require for that form) |
+| [Kind indefinite](../grammar/joins.md#kind-indefinites) | `zwoyar` / `bweyam` / `vweval` / `hweral` | the join's label (or the bare restrictor's on `/h/`), then the kind on `/z/` `/d/` `/b/` (the root-tail kind name: `person`, `creature`, `place`, …), then the knowledge label, then `.open` on **-m**: `z-something.person.withheld`, `b-none.person.shared.open`, `v-none.shared`, `h-never.shared`. Knowledge on **-r**: `.unpicked` (`a`), `.unknown` (`u`), `.withheld` (`o`), `.shared` (`e`); on **-l** / **-m**: `.anywhere`, `.here`, `.meant`, `.shared`. Under a question the **-r** label is `wh` (`z-wh.person.withheld`). A group keeps **-x** at the end (`z-something.person.unknown-x`) |
 | [Tag pronoun](../grammar/pronouns.md#tag-pronouns) | `zwal` / `zwar` / `dwam` | `z-tag.A` (assign) / `z-←tag.A` (recall) / `d-←tag.A.part` (share) / `z-←tag.A.name` (**-n** recall of a name): the letter name, never the referent. An assigning tag rides in its phrase's bracket: `[z-dog \| z-tag.A]`, or after a fence's bracket for the whole group. A pair joins the letters with `+`: `z-←tag.A+E` |
 | [Role pointer](../grammar/pronouns.md#role-pointers) | `zaxar` / `zaxor` / `daxer` | `z-←agent.same` / `z-←agent.other` / `d-←agent.self` / `z-←agent.unsaid` (role and event, never the person's name); `d-←patient.same.new` (**-l**), `z-←agent.same.part` (**-m**) |
 
@@ -447,6 +448,8 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `zoel` | `z-equal-rank` |
 | `zoem` | `z-equal-rank.open` |
 | `zar` | `z-wh` / `z-something` |
+| `zarx` | `z-wh-x` / `z-something-x` |
+| `zwoyar` | `z-wh.person.withheld` / `z-something.person.withheld` |
 | `zul` / `gul` | `z-not` / `g-not` |
 | `zual` | `z-everything-but` |
 | `xan` | `x-and-then` |

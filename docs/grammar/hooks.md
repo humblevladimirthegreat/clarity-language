@@ -621,6 +621,21 @@ For English *somewhere*, *nowhere*, and *everywhere*, put a [standalone join](jo
 >
 > "The dog sleeps nowhere."
 
+A [kind indefinite](joins.md#kind-indefinites) in the `/b/` slot says what kind of landmark it is and who knows which one. Plain **`ol bar`** stays the everyday *somewhere*; use a kind indefinite when the knowledge vowel matters, or when the landmark is not a place.
+
+| Agebon | English |
+|--------|---------|
+| `ol bwehar` | *at that place, you know the one* |
+| `ol bweyal` | *at the place of nobody we know* |
+| `ol bwuyar` | *at someone's; I don't know whose* |
+| `al bwudar` | *in some food* |
+
+> `zuzozen vagedal ol bwehar.`
+>
+> z-Uzozen | v-eat | [at | b-something.place.shared]
+>
+> "Uzozen eats at that place, you know the one."
+
 ### Here and there, this and that {#deixis}
 <a id="here-there"></a>
 

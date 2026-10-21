@@ -124,6 +124,20 @@ The blank **-r** takes a vowel; the count is how many items you listed before it
 | **1** | *which X?* | *any X?* | *which X is first?* | *what else besides X?* | I |
 | **2+** | *which of these?* | *any of these?* | *which ranks highest?* | *other than these?* | I |
 
+### Four kinds of question {#four-kinds}
+
+A [kind indefinite](../questions.md#four-kinds-of-question) in the blank says what kind of question it is and what kind of answer fits.
+
+| Kind of question | Example | English | Stage |
+|------------------|---------|---------|-------|
+| [Real question](../questions.md#four-kinds-of-question): **u** | `yol ol bwuhar zuzozen vagedal.` | *Where does Uzozen eat?* | I |
+| [Quiz](../questions.md#four-kinds-of-question): **o** | `yol zwoyar dogewel vumewol.` | *Who found the key?* (I know) | I |
+| [Remind me](../questions.md#four-kinds-of-question): **e** | `yol ol bwehar zayan vagedal.` | *Where was it we ate, again?* | I |
+| [Choice](../questions.md#four-kinds-of-question): **a** | `yol vwavar zayan.` | *What shall we do?* | I |
+| [Several](../questions.md#four-kinds-of-question): **-rx** | `yol zwuyarx vowurel.` | *Who all walks?* | I |
+| [Refuse the question](../questions.md#refusing-a-blank) | `zwuyal.` | *No person did.* | I |
+| [Who all, any kind](../questions.md#fill-all) | `yol zarx vowurel.` | *Who all walks?* | B |
+
 ### Questions inside other clauses {#embedded}
 
 | Job | Example | English | Stage |
@@ -133,6 +147,7 @@ The blank **-r** takes a vowel; the count is how many items you listed before it
 | [Blank belongs to the outer question](../questions.md#blank-in-dependent) | `yol zawan vevemol darl zar vowurel.` | *Who do you think walks?* | I |
 | [Question you don't want answered](../questions.md#rhetorical): `yal` before `yol` | `yal yol zar vegemal.` | *Who cares?* (nobody) | I |
 | [Musing](../questions.md#rhetorical) | `yam yol zar vegemal.` | *Who really cares, though?* | I |
+| [Rhetorical with a typed blank](../questions.md#rhetorical): no **u** | `yal yol ol bwehar zayan vagedal.` | *Where did we eat, as if you didn't know?* | I |
 
 ## Answering {#answering}
 

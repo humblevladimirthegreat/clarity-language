@@ -616,6 +616,20 @@ describe("parse — stage 4 resolve", () => {
     const result = parseText("yol zar vowurel.");
     assert.equal(result.resolve?.asks[0]?.kind, "fillAsk");
   });
+
+  it("marks a kind indefinite -r under yol as a fill-ask blank, and its -l as no blank", () => {
+    for (const text of ["yol zwoyar dobogal vagowul.", "yol ol bwehar zayan vagedal.", "yol vwavar zayan.", "yol hwerar zayan vagedal.", "yol zarx vowurel."]) {
+      const ask = parseText(text).resolve?.asks[0];
+      assert.equal(ask?.kind, "fillAsk", text);
+      assert.equal(ask?.gaps.length, 1, text);
+    }
+    assert.equal(parseText("yol zweyal vowurel.").resolve?.asks[0]?.kind, "yesNo");
+  });
+
+  it("leaves a kind indefinite unbound: it resumes nothing", () => {
+    const result = parseText("zwuyar vowurel. zweyar vezuvol.");
+    assert.deepEqual(result.resolve?.anaphors, []);
+  });
 });
 
 describe("parse — spans.md written fences and closes", () => {

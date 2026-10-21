@@ -67,6 +67,7 @@ import {
   Z,
 } from "./tokens.js";
 import { doubledVerbSlot } from "./verb-items.js";
+import { FIXED_KIND_LETTER, H_SHAPES, KIND_INDEFINITE_POS, ONE_SERIES, type KindIndefiniteFamily } from "./kind-indefinite.js";
 import { isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, visitUnit, vpUnitLists, type AstNode, type Visitor } from "./ast-walk.js";
 import { forcePairKind, KIND_SERIES, RANK_SERIES } from "./series.js";
 import type {
@@ -214,6 +215,7 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
     if (!payload || !isLexWordPayload(payload)) return;
     enforceWord(payload, tables);
     enforceStackedHookR(payload, tokens, i);
+    enforceKindIndefiniteOccasion(payload, tokens, i);
   });
   enforceLocks(markContext(tokens));
 }
@@ -370,6 +372,8 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
     throw new ConstructionError("topicOfTopic", word.raw);
   }
   if (word.family.kind === "tag") enforceTag(word);
+  if (word.family.kind === "kindIndefinite") enforceKindIndefinite(word, word.family);
+  enforceJoinPlural(word);
   // The record and scroll roots are no channel: a record is REPORTED, a tale NOTIONAL (knowing.md#evidentiality).
   if (word.pos === "th" && (stemRoot === CLOSED.record || stemRoot === CLOSED.scroll) && word.ending !== "n") {
     throw new ConstructionError("retiredChannelRoot", word.raw);
@@ -828,6 +832,45 @@ function enforceTag(word: LexWord): void {
 }
 
 /**
+ * Kind indefinites (joins.md#kind-indefinites): `/z/` `/d/` `/b/` with any kind letter, `/v/` with `v`, `/h/` with `r`
+ * (D-54); **-r** after one vowel or **-l** / **-m**, and on `/h/` only the bare restrictors; **-x** only after **-r** on a noun slot.
+ */
+function enforceKindIndefinite(word: LexWord, family: KindIndefiniteFamily): void {
+  const pos = word.pos ?? "";
+  if (word.gl || !KIND_INDEFINITE_POS.has(pos)) throw new ConstructionError("kindIndefiniteSlot", word.raw);
+  const fixed = FIXED_KIND_LETTER[pos];
+  if (fixed && family.kindLetter !== fixed) throw new ConstructionError("kindIndefiniteLetter", word.raw);
+  const ending = word.ending ?? "";
+  const shaped =
+    pos === "h" ? H_SHAPES.has(family.series + ending) : ending === "r" ? ONE_SERIES.has(family.series) : ending === "l" || ending === "m";
+  if (!shaped) throw new ConstructionError("kindIndefiniteEnding", word.raw);
+  if (word.plural && (ending !== "r" || fixed)) throw new ConstructionError("kindIndefinitePlural", word.raw);
+}
+
+/** **-x** on a join only after **-r** on a noun slot: an unspecified group (`zarx`, joins.md#unspecified-member-r-phrase). */
+function enforceJoinPlural(word: LexWord): void {
+  if (!word.plural || word.family.kind !== "joinMarker") return;
+  if (word.reading === "join" && word.ending === "r" && (word.pos === "z" || word.pos === "d" || word.pos === "b")) return;
+  throw new ConstructionError("joinPlural", word.raw);
+}
+
+/** An `/h/` kind indefinite covers its own times, so no occasion word comes before it (restrictors.md#always-and-never-h). */
+function enforceKindIndefiniteOccasion(word: LexWord, tokens: IToken[], i: number): void {
+  if (word.family.kind !== "kindIndefinite" || word.pos !== "h") return;
+  const prev = tokenWord(tokens[i - 1]);
+  if (prev?.pos === "h") throw new ConstructionError("kindIndefiniteOccasion", `${prev.raw} ${word.raw}`);
+}
+
+/** After `yal yol` the speaker holds the answer, so no blank says *I don't know which* (questions.md#rhetorical, D-53). */
+function enforceRhetoricalBlanks(result: ParseResult): void {
+  for (const ask of result.resolve?.asks ?? []) {
+    if (ask.kind !== "rhetorical") continue;
+    const unknown = ask.gaps.find((gap) => gap.family.kind === "kindIndefinite" && gap.family.knowledge === "u");
+    if (unknown) throw new ConstructionError("rhetoricalUnknownBlank", unknown.raw);
+  }
+}
+
+/**
  * A tag names a phrase that is not already a pronoun with one fixed form (pronouns.md#tag-pronouns): never a special,
  * generic, or topic pronoun, or another tag. A resume or role pointer may take one.
  */
@@ -867,6 +910,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
   const places = { seen: new Set<LexWord>(), framed: new Set<LexWord>() };
   visitResult(result, structureVisitor(tables, places));
   visitResult(result, { enter: enforceTagHost });
+  enforceRhetoricalBlanks(result);
   enforceGlLeans(result);
   for (const word of places.seen) if (!places.framed.has(word)) throw new ConstructionError("degreePlaceFrame", word.raw);
   for (const { bodies } of result.utterances) for (const body of bodies) enforceVerbPredicate(body.clause.units);
@@ -1129,6 +1173,8 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
       if (!item || !isAny(item, [...slot.heads, slot.join])) throw new ConstructionError("leftFence", before.image);
       throw new ConstructionError("joinlessRun", run);
     }
+    // A kind indefinite already names its kind, so no item goes before it (joins.md#kind-indefinites).
+    if (isAny(before, slot.heads) && tokenWord(tokens[at])?.family.kind === "kindIndefinite") throw new ConstructionError("kindIndefiniteItems", run);
     if (isAny(before, slot.heads)) throw new ConstructionError("joinlessRun", run);
   };
   const slot = PHRASE_SLOTS.find((s) => s.join !== JoinV && failAt > 0 && isAny(tokens[failAt]!, s.heads));

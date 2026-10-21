@@ -308,6 +308,21 @@ const ROWS: Row[] = [
   { invalid: "zuzozen vowurel hezom blarl thegul thebam.", rejection: "dependentStanceOnly", valid: "zuzozen vowurel hezom blarl thuwathuruor." },
   // A second turn starts only after a period; only the legal force pairs stack.
   { invalid: "yol yol vazuyul.", rejection: "forcePair", valid: "yol. yol vazuyul." },
+  // Kind indefinites (joins.md#kind-indefinites): the slot, its fixed letter, the ending, -x, and no items before.
+  { invalid: "zuzozen gwuyal.", rejection: "kindIndefiniteSlot", valid: "zuzozen gaxowurel." },
+  { invalid: "zuzozen vwuyar.", rejection: "kindIndefiniteLetter", valid: "zuzozen vwuvar." },
+  { invalid: "zawan vebal hwuyal.", rejection: "kindIndefiniteLetter", valid: "zawan vebal hwural." },
+  { invalid: "zwuyan vowurel.", rejection: "kindIndefiniteEnding", valid: "zwuyar vowurel." },
+  { invalid: "zwuyuar vowurel.", rejection: "kindIndefiniteEnding", valid: "zwuyar vowurel." },
+  { invalid: "zawan vebal hwurol.", rejection: "kindIndefiniteEnding", valid: "zawan vebal hwural." },
+  { invalid: "zweyualx vezuvol.", rejection: "kindIndefinitePlural", valid: "zweyual vezuvol." },
+  { invalid: "zayan vwavarx.", rejection: "kindIndefinitePlural", valid: "zayan vwavar." },
+  { invalid: "zuzozen vawebol dudozol dwuzal.", rejection: "kindIndefiniteItems", valid: "zuzozen vawebol dudozol dar." },
+  { invalid: "zawan vebal herulal hwural.", rejection: "kindIndefiniteOccasion", valid: "zawan vebal herulal hal." },
+  { invalid: "zalx vowurel.", rejection: "joinPlural", valid: "zarx vowurel." },
+  { invalid: "zayan varx.", rejection: "joinPlural", valid: "zayan var." },
+  // After `yal yol` the speaker holds the answer (questions.md#rhetorical).
+  { invalid: "yal yol zwuyar dobogal vagowul.", rejection: "rhetoricalUnknownBlank", valid: "yal yol zwoyar dobogal vagowul." },
 ];
 
 describe("invalid forms", () => {

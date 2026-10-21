@@ -172,8 +172,7 @@ Write the items in that order, then a join with vowel **e**. The earlier item ou
 >
 > "only Uzozen matters."
 
-### Unspecified member (`-r`)
-<a id="unspecified-member-r-phrase"></a>
+### Unspecified member (`-r`) {#unspecified-member-r-phrase}
 
 When English says *something* or *someone*, or *one of these* without saying which, put ending **-r** on the join. The join then stands for one member of its list that you are not naming. **-r** goes only on a join with one vowel (**a** / **o** / **e** / **u**), not on a two-vowel join such as **ua**.
 
@@ -204,6 +203,22 @@ When English says *something* or *someone*, or *one of these* without saying whi
 
 Write A and B, then `zar`: the join still closes the list, and **-r** means some member of that pair (you are not saying which).
 
+When English says *some of them* or *some people*, more than one, add [**-x**](plurality.md#associative) after the **-r**. The join then stands for a group of members you are not naming.
+
+> `zarx vowurel.`
+>
+> z-something-x | v-walk
+>
+> "Some of them walk."
+
+> `zuzozen zolazun zahelan zarx vowurel.`
+>
+> [z-Uzozen | z-Olazun | z-Ahelan | z-something-x] | v-walk
+>
+> "Some of Uzozen, Olazun, and Ahelan walk."
+
+**-x** goes after **-r** only. A closed or open empty set already covers every member.
+
 **Compare with:** on a content word, **-r** [resumes](pronouns.md) the last match. On a join, **-r** is an unspecified member. Standalone **`-rl` / `-rm`** (`darl`, `barl`) is a stand-in for the next sentence, not a join and not *something*.
 
 ### Vowels and endings (recap) {#join-type-vowel-series}
@@ -221,6 +236,7 @@ Write A and B, then `zar`: the join still closes the list, and **-r** means some
 | **-l** | the listed items are the only ones in play | (no extra words) | **l** ≈ locked list |
 | **-m** | other items may exist | *(and possibly more)*; empty: *as far as I know* | **m** ≈ maybe more |
 | **-r** | unspecified member of the join | *someone* / *something* in the list | **r** ≈ member you have not named |
+| **-rx** | unspecified group of members | *some ones* / *some of them* | **r** ≈ member you have not named, **x** ≈ more than one |
 
 The same vowels and endings work under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`val`, `vam`, …), `/ɡ/` (`gal`, `gul`, …), and `/x/` (`xal`, `xam`, …). Match the join’s first letter to the items.
 
@@ -316,15 +332,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *bread and a tomato* (and possibly more)
-
-::: details Show answer
-`zebodol zudedol zam.`
-
-[z-bread | z-tomato | z-and.open]
-:::
-
-**2.** *Uzozen sees a mango and a watermelon.*
+**1.** *Uzozen sees a mango and a watermelon.*
 
 ::: details Show answer
 `zuzozen demedol dowodol dal vawebol.`
@@ -334,7 +342,7 @@ z-Uzozen | [d-mango | d-watermelon | d-and] | v-see
 **Also correct:** `zuzozen vawebol demedol dowodol dal.`
 :::
 
-**3.** *Ahelan pays nobody.*
+**2.** *Ahelan pays nobody.*
 
 ::: details Show answer
 `zahelan varal bal.`
@@ -344,7 +352,7 @@ z-Ahelan | v-pay | b-none
 **Also correct:** `zahelan bal varal.`
 :::
 
-**4.** *not the cart*
+**3.** *not the cart*
 
 ::: details Show answer
 `zogowal zul.`
@@ -352,7 +360,7 @@ z-Ahelan | v-pay | b-none
 [z-cart | z-not]
 :::
 
-**5.** *Olazun pays and Uzozen sees a basket.* (and possibly more)
+**4.** *Olazun pays and Uzozen sees a basket.* (and possibly more)
 
 ::: details Show answer
 `zolazun varal xam zuzozen dabowal vawebol.`
@@ -360,12 +368,20 @@ z-Ahelan | v-pay | b-none
 [z-Olazun | v-pay | x-and.open | z-Uzozen | d-basket | v-see]
 :::
 
-**6.** *only Uzozen matters*
+**5.** *only Uzozen matters*
 
 ::: details Show answer
 `zuzozen zel.`
 
 [z-Uzozen | z-rank/more]
+:::
+
+**6.** *Some of Uzozen, Olazun, and Ahelan pay.*
+
+::: details Show answer
+`zuzozen zolazun zahelan zarx varal.`
+
+[z-Uzozen | z-Olazun | z-Ahelan | z-something-x] | v-pay
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
@@ -703,6 +719,152 @@ Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *ther
 | **…or** (`zor` / …) | unspecified empty menu | *anything* / *anyone* |
 | **…ur** (`zur` / …) | unspecified empty leftover | *something else* / *someone else* |
 
+### Kind indefinites {#kind-indefinites}
+
+English *someone told me* leaves two things open: what kind of thing told you (a person, not a sign on the wall), and whether you know who. You may know who and be keeping it back, or have no idea. To say both, use a **kind indefinite**: a standalone join with two letters added after the role letter. First comes a **knowledge vowel**, which says who knows which one is meant. Then comes a **kind letter**, which says what kind of thing it is. The join after them keeps its meaning, so `zwoyar` is `zar` (*someone*) for a person (`y`) whom the speaker knows and is not naming (`o`).
+
+> `zwoyar vezuyel buwon.`
+>
+> z-something.person.withheld | v-tell | b-speaker
+>
+> "A certain someone told me." (I know who)
+
+> `zwuyar vezuyel buwon.`
+>
+> z-something.person.unknown | v-tell | b-speaker
+>
+> "Someone told me; I don't know who."
+
+| Piece | What it says | In `zweyual` |
+|-------|--------------|--------------|
+| role letter | the slot: `/z/`, `/d/`, or `/b/` | `z` |
+| `w` | a closed word with no root, as on a [tag](pronouns.md#tag-pronouns) | `w` |
+| knowledge vowel | who knows which one, or which set | `e` we both know |
+| kind letter | what kind of thing | `y` people |
+| join vowel(s) + ending | a standalone join, read as usual | **ual** everyone |
+
+So `zweyual` is *everyone we both know*. To build one, take a standalone join you already know (`zar`, `zal`, `zual`) and put `w`, a knowledge vowel, and a kind letter after the role letter.
+
+**Compare with:** a [tag](pronouns.md#tag-pairs) has only vowels after `w` (`zwuar` *U and A*). A kind indefinite has a consonant after its first vowel (`zwuyar`).
+
+#### Kind letter
+
+The kind letter names a broad kind. Each is the last consonant of many roots of that kind, which makes it easy to remember.
+
+| Letter | Kind | English | Cue |
+|--------|------|---------|-----|
+| `y` | people | *someone* | `eyol` *person* |
+| `z` | creatures | *some animal* | `agozol` *cat* |
+| `m` | mind and feeling | *some feeling* | `anumul` *anxious* |
+| `b` | body, clothes, what you carry | *something to wear or carry* | `awebol` *eye* |
+| `v` | doing, playing, moving, vehicles | *some activity* / *some vehicle* | `aruvel` *run* |
+| `h` | places and fixtures | *some place* | `ahehal` *house* |
+| `l` | nature and raw stuff | *some material* / *some plant* | `arolol` *rock* |
+| `d` | food and drink | *some food* | `azadal` *salad* |
+| `w` | tools | *some tool* | `abewel` *pen* |
+| `g` | signs and marks | *some sign* | `egel` *letters* |
+| `r` | counting, time, money | *some amount* / *some date* | `aral` *money* |
+| `n` | titles and papers | *some title* / *some paper* | `anal` *book* |
+
+The kind is the one the speaker has in mind. A backpack can be body (`b`) or a tool (`w`), and an answer of another kind is still an answer.
+
+Plain `zar`, `dar`, and `bar` stay the everyday forms. They say nothing about the kind or about who knows which one. Use a kind indefinite when either matters.
+
+#### Knowledge vowel
+
+On **-r**, the vowel says who knows **which one** is meant. On **-l** and **-m**, it says **which set** you count over.
+
+| Vowel | One (**-r**) | Set (**-l** / **-m**) | Cue |
+|-------|--------------|------------------------|-----|
+| `a` | none picked yet: any that fits | no set picked: any at all, anywhere | **a** ≈ add: any that fits could be added |
+| `u` | a particular one; I don't know which | the ones in this situation | **u** ≈ unsaid, as on the role pointer `zaxur` |
+| `o` | a particular one; I know which and am not saying | the ones I have in mind | **o** ≈ one: one I hold |
+| `e` | a particular one we both know | the ones we both know | **e** ≈ echo: what we both already hold |
+
+`e` is for what you both knew **before** this conversation. Something already mentioned in it is picked up with a [resume](pronouns.md#resume-r) or a [tag](pronouns.md#tag-pronouns).
+
+The vowel reports what the speaker knows, and for `e` what the speaker and listener both know. A [quote](pronouns.md#topic-quotes) keeps its own speaker and listener, so inside a quote the vowel is theirs.
+
+#### One unnamed member (`-r`)
+
+| Agebon | English |
+|--------|---------|
+| `zwuyar` | *someone; I don't know who* |
+| `zwoyar` | *a certain someone* (I know who) |
+| `zweyar` | *that person, you know the one* |
+| `zwayar` | *someone, nobody picked yet* (anyone who fits) |
+| `dwuzar` | *some animal; I don't know which* |
+| `zwuyur` | *someone else; I don't know who* |
+
+The join vowel keeps its **-r** reading: `…ar` *some*, `…or` *any*, `…er` *the top-ranked*, `…ur` *else*.
+
+> `zweyar vezuyel buwon.`
+>
+> z-something.person.shared | v-tell | b-speaker
+>
+> "That person told me, you know the one."
+
+#### Over a set (`-l` / `-m`)
+
+On **-l** the list is the whole story; on **-m** it is *as far as I know*, as on any standalone join. The knowledge vowel picks the set those claims are about.
+
+| Agebon | English |
+|--------|---------|
+| `zwuyal` | *nobody* (no person, among those here) |
+| `zwuyam` | *nobody, as far as I know* |
+| `zweyal` | *nobody we know* |
+| `zwayal` | *no person at all, anywhere* |
+| `zwoyual` | *everyone I mean* |
+
+> `zuzozen vezuyel bweyam.`
+>
+> z-Uzozen | v-tell | b-none.person.shared.open
+>
+> "Uzozen tells nobody we know, as far as I know."
+
+When you are unsure, prefer **-m**. It matters most with `u` and `a`, where **-l** claims a closed list over a set you can't fully name.
+
+#### Several unnamed members (`-rx`)
+
+As on `zarx`, **-x** after **-r** makes the unnamed member a group.
+
+> `zweyarx vowurel.`
+>
+> z-something.person.shared-x | v-walk
+>
+> "Some people we both know walk."
+
+#### Where it goes
+
+On `/z/` and `/d/` the word stands where a noun would. On `/b/`, a hook still brings it in, and the kind letter says what the landmark is: `ol bwuyar` is *at someone's*, and `al bwudar` is *in some food*. Without a hook, a plain `/b/` is the recipient, as in `bweyam` above.
+
+A kind indefinite takes no items before it, because an item already names the kind: *which dog?* is `dudozol dar`. A SHARED `/ɡ/` after it still narrows it.
+
+#### Doing (`/v/`) {#kind-indefinite-acts}
+
+On `/v/` the kind letter is always `v` (doing), so only the knowledge vowel is your choice. It takes **-r**, **-l**, and **-m**, as plain `var`, `val`, and `vual` do.
+
+| Agebon | English |
+|--------|---------|
+| `zuzozen vwuvar.` | *Uzozen does something; I don't know what.* |
+| `zuzozen vwovar.` | *Uzozen does something; I know what.* |
+| `zuzozen vwevar.` | *Uzozen does that thing, you know.* |
+| `zayan vwavar.` | *We'll do something; nothing picked yet.* |
+| `zawan vwuval.` | *You do nothing.* (in this situation) |
+| `zawan vweval.` | *You do nothing we both know of.* |
+| `zawan vwaval.` | *You do nothing at all, anywhere.* |
+| `zuzozen vwovual.` | *Uzozen does everything I mean.* (every chore I have in mind) |
+
+> `zawan vweval.`
+>
+> z-listener | v-none.shared
+>
+> "You do nothing we both know of."
+
+*You never do anything* is easy to say in a temper. With `vweval` it becomes a claim about a shared history the listener can check; `vwaval` says out loud that the claim covers everything.
+
+On `/v/` a kind indefinite takes no **-x**: on a verb **-x** is doing it together.
+
 ### Exclusivity and denying a whole list
 
 When English would allow several listed items at once (*and/or*), stack **o** then **a** (**`oa`**). **`o`** alone is still at most one: closed **-l** is pick one; open **-m** is *(optional)*. On **`oa`**, even **-m** still needs at least one of the listed items.
@@ -897,6 +1059,31 @@ English *one*, generic *you*, and *people* make a claim about people as a rule. 
 
 For *everyone, no exceptions*, use `zual geyol`. As a topic, `xeyon` (*now, about people in general*) makes the [topic pronoun](pronouns.md#topic-pronoun) mean *one*.
 
+#### Every and none, by set {#kind-domains}
+
+A [kind indefinite](#kind-indefinites) on **-l** or **-m** is a one-word universal. Its kind letter stands in for a broad kind, and its knowledge vowel names the set the claim covers:
+
+| Agebon | Covers | English |
+|--------|--------|---------|
+| `zwuyual` | the people in this situation | *everyone (here)* |
+| `zweyual` | the people we both know | *everyone we know* |
+| `zwoyual` | the people I have in mind | *everyone (I mean)* |
+| `zwayual` | any person anywhere, no exceptions | *all people*, as a law |
+| `zwayuam` | any person anywhere, exceptions left open | *people in general* |
+| `zwayal` | any person anywhere | *nobody at all, anywhere* |
+
+> `zweyual zul vezuvol.`
+>
+> [z-everything.person.shared | z-not] | v-sleep
+>
+> "Not everyone we know sleeps."
+
+Everything else works as on `zual`. A SHARED `/ɡ/` still narrows (`zweyual gaxowurel` *everyone we know who walks*), a hook still narrows the place (`zwuyual ol bahehal` *everyone at the house*), and **not every** closes the fence with `zul`, as above. When the `/ɡ/` names something of the letter's kind, the letter adds nothing, and plain `zual` reads better.
+
+`zwayuam` makes the claim that [`eyon`](#generic-neighbors) and `zuam geyol` make, and the kind letter carries it to any kind: `dwayuam` is *food in general*. For people, `eyon` stays the short form.
+
+*Everyone hates me* and *nobody ever listens* hide how far they reach. Here the speaker picks the set: `u` everyone here, `e` everyone we know, `o` the ones I mean, `a` all people anywhere, and **-l** or **-m** says whether exceptions are ruled out. The sweeping cell, `zwayual`, is audible, and the listener can ask which set was meant.
+
 ### Fence nesting {#fence-nesting}
 
 When one list sits inside another (*(tea or coffee) and water*), write the inner items, then their join, then the outer item, then the outer join. Each join sits after only the stretch it closes. You nest by stacking right-close joins; a flat list still uses a single join after all its members. Clause joins group by position instead ([clause joins](#clause-joins)).
@@ -948,15 +1135,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-wine | z-beer | z-everything-but]
 :::
 
-**2.** *every ring*
-
-::: details Show answer
-`zual gorebol.`
-
-[z-everything | g-ring]
-:::
-
-**3.** *Uzozen and Olazun, both sleepy*
+**2.** *Uzozen and Olazun, both sleepy*
 
 ::: details Show answer
 `zuzozen zolazun zal guzemol.`
@@ -964,7 +1143,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-Uzozen | z-Olazun | z-and | g-sleepy]
 :::
 
-**4.** *either wine or beer, and a ring*
+**3.** *either wine or beer, and a ring*
 
 ::: details Show answer
 `zawudal zobudal zol zorebol zal.`
@@ -972,7 +1151,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [[z-wine | z-beer | z-or-exactly-one] | z-ring | z-and]
 :::
 
-**5.** *Uzozen kisses first, then Olazun.*
+**4.** *Uzozen kisses first, then Olazun.*
 
 ::: details Show answer
 `zuzozen zolazun zael veyuyal.`
@@ -980,12 +1159,20 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 [z-Uzozen | z-Olazun | z-in-order] | v-kiss
 :::
 
-**6.** *not both kiss and walk*
+**5.** *not both kiss and walk*
 
 ::: details Show answer
 `veyuyal vowurel val vul.`
 
 [[v-kiss | v-walk | v-and] | v-not]
+:::
+
+**6.** *Someone sees the dress; I don't know who.*
+
+::: details Show answer
+`zwuyar vawebol dudobal.`
+
+z-something.person.unknown | v-see | d-dress
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
@@ -1014,15 +1201,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *Olazun last.*
 :::
 
-**4.** `zul gudobal.`
-
-::: details Show answer
-[z-no | g-dress]
-
-*There is no dress.*
-:::
-
-**5.** `zahelan zoam.`
+**4.** `zahelan zoam.`
 
 ::: details Show answer
 [z-Ahelan | z-and/or.open]
@@ -1030,12 +1209,20 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 *at least Ahelan*
 :::
 
-**6.** `zuzozen zolazun zal vawebol dorebol devobul wubam dal.`
+**5.** `zuzozen zolazun zal vawebol dorebol devobul wubam dal.`
 
 ::: details Show answer
 [z-Uzozen | z-Olazun | z-and] | v-see | [d-ring | d-veil | w-respectively | d-and]
 
 *Uzozen and Olazun see the ring and the veil, respectively.*
+:::
+
+**6.** `zahelan vwevar.`
+
+::: details Show answer
+z-Ahelan | v-something.shared
+
+*Ahelan does that thing, you know the one.*
 :::
 
 #### Pick one {#intermediate-pick-one}
@@ -1115,7 +1302,7 @@ A join has at most two vowels. Which endings it can take depends on its role let
 
 | Role | Join endings | Notes |
 |-------|----------------|-------|
-| `/z/` `/d/` `/b/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | phrase lists; **-n** is a named package |
+| `/z/` `/d/` `/b/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**), **-rx** | phrase lists; **-n** is a named package; **-rx** is an [unnamed group](#unspecified-member-r-phrase) |
 | `/w/` | none | not a phrase list: the only `/w/` before a join word is [`wubam`](#respectively), with **-l** or **-m** |
 | `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](restrictors.md#defined-core-full); **-n** forms are [join-relations](join-across-roles.md#join-relations) |
 | `/v/` | **-l** / **-m** / **-r** | parallel **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs) |
@@ -1134,7 +1321,8 @@ These limits apply to every join.
 | Matching role letter | every item head and the join share the first letter |
 | One right-close per flat list | nest as [fence nesting](#fence-nesting) |
 | Shared modifiers | only immediately after each join |
-| Phrase **-r** | only **…ar** / **…or** / **…er** / **…ur** |
+| Phrase **-r** | only **…ar** / **…or** / **…er** / **…ur**, plus **-x** for a group on `/z/` `/d/` `/b/` |
+| [Kind indefinite](#kind-indefinites) | `/z/` `/d/` `/b/` with any kind letter, `/v/` with `v`, `/h/` with `r`; no items before it; **-x** only after **-r** on `/z/` `/d/` `/b/` |
 | Verb+object packages | verb-phrase `/v/`; full sentences use `/x/` ([forms](join-across-roles.md)) |
 | Revising one item | in-clause *including* / *rather* / *instead* / *except* are [hooks](hooks.md) |
 | Several manners on `/h/` `/w/` | juxtaposition (`hedurel halozul`) |

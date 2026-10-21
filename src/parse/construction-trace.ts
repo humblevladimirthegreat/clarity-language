@@ -103,6 +103,7 @@ function featureConstructions(word: LexWord): string[] {
     if (family.bracket === "<") ids.push("word.family.foreign");
     return ids;
   }
+  if (family.kind === "kindIndefinite") return word.pos === "v" || word.pos === "h" ? [`kindIndefinite.${word.pos}`] : [];
   if (family.kind === "hook") return [`hook.${family.form}`];
   if (family.kind === "hookCompound") return [`hook.${family.hook}`];
   if (family.kind === "joinMarker" && !word.overlay) {
@@ -114,7 +115,7 @@ function featureConstructions(word: LexWord): string[] {
       if (series.length > 1) return [`polar.${POLAR_GROUP[series as keyof typeof POLAR_GROUP]}`];
       return word.ending === "m" ? [`force.${series}`, "force.soft"] : [`force.${series}`];
     }
-    if (word.reading === "join") return [`join.${series}`];
+    if (word.reading === "join") return word.plural ? [`join.${series}`, "join.plural"] : [`join.${series}`];
   }
   return [];
 }
@@ -278,6 +279,10 @@ function isExistence(clause: Clause): boolean {
 
 /** Collect `reading.*` IDs from utterance and clause shapes and shared scales. */
 export function addReadingConstructions(result: ParseResult, out: Set<string>): void {
+  // A kind-indefinite blank says what kind of question it is (questions.md#four-kinds-of-question).
+  for (const ask of result.resolve?.asks ?? []) {
+    if (ask.kind !== "none" && ask.gaps.some((gap) => gap.family.kind === "kindIndefinite")) out.add("reading.kindAsk");
+  }
   for (const utterance of result.utterances) {
     const force = utterance.left.force?.raw;
     if (utterance.bodies.length === 0 && (force === "yol" || force === "yom")) out.add("reading.bareQuestion");

@@ -523,7 +523,7 @@ English *you* does not say whether you are talking to one person or several. Age
 
 ### Tag pronouns {#tag-pronouns}
 
-English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells E*. A **tag** is that label. You choose it, and it stays on the same referent however many others come and go. Write the role letter, **`w`**, a tag vowel, and an ending. The four vowels are four tags, named by the vowel's [letter name](phonology.md#letter-names): A, E, O, U. Roots start with a vowel, so a consonant right after the role letter, or after the `l` of a [hosted](clause.md#extra-nouns) `bl-` word, is always a marker: `r` starts a [number word](numbers.md), and `w` starts a tag (`blwar` completes the word before it, with a [syllabic `l`](phonology.md#syllabic-l)). (cue: **w** ≈ *we call it*: the label you and the listener agree on)
+English sometimes labels people to keep them apart: *call the first one A*, *suppose A tells E*. A **tag** is that label. You choose it, and it stays on the same referent however many others come and go. Write the role letter, **`w`**, a tag vowel, and an ending. The four vowels are four tags, named by the vowel's [letter name](phonology.md#letter-names): A, E, O, U. Roots start with a vowel, so a consonant right after the role letter, or after the `l` of a [hosted](clause.md#extra-nouns) `bl-` word, is always a marker: `r` starts a [number word](numbers.md), and `w` followed by vowels and an ending is a tag (`blwar` completes the word before it, with a [syllabic `l`](phonology.md#syllabic-l)). (cue: **w** ≈ *we call it*: the label you and the listener agree on)
 
 <!-- cheat-sheet: people-pointing -->
 | Agebon | Use | English |

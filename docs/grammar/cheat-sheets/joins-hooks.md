@@ -46,6 +46,7 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | **-l** | [closed](../joins.md#join-type-vowel-series): the listed items are the only ones | B |
 | **-m** | [open](../joins.md#and-lists-a): *(and possibly more)*; [alone](../joins.md#standalone-phrase), *as far as I know* | B |
 | **-r** | [one unnamed member](../joins.md#unspecified-member-r-phrase) (*something*, *someone*); one vowel only | B |
+| **-rx** | [an unnamed group](../joins.md#unspecified-member-r-phrase) (`zarx` *some ones*); `/z/` `/d/` `/b/` only | B |
 | **-n** | `/z/` `/d/` `/b/`: [a named list](../joins.md#named-list); `/x/`: [sequence](../join-across-roles.md#clause-sequence); `/v/`: [join-act verb](../join-across-roles.md#join-act-verbs); `/ɡ/` `/h/`: [join-relation](../join-across-roles.md#join-relations) | I–A |
 
 ### How many items {#arity}
@@ -90,6 +91,40 @@ A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `x
 | [Deny the whole list](../joins.md#exclusivity-and-denying-a-whole-list) | `vowurel varuvel val vul` | *not both walk and run* | I |
 | [Deny each item](../joins.md#exclusivity-and-denying-a-whole-list) | `vowurel varuvel vul` | *neither walk nor run* | B |
 | [Named list](../joins.md#named-list) | `zebodol zuyudal zan` | *bread and butter* (the set phrase) | A |
+
+### Kind indefinites {#kind-indefinites}
+
+A [kind indefinite](../joins.md#kind-indefinites) is a standalone join with `w`, a knowledge vowel, and a kind letter after the role letter. All Intermediate.
+
+| Knowledge vowel | One (**-r**) | Set (**-l** / **-m**) | Stage |
+|-----------------|--------------|------------------------|-------|
+| [**a** ≈ add](../joins.md#kind-indefinites) | none picked yet | any at all, anywhere | I |
+| **u** ≈ unsaid | a particular one; I don't know which | the ones in this situation | I |
+| **o** ≈ one | a particular one; I know which and am not saying | the ones I have in mind | I |
+| **e** ≈ echo | a particular one we both know | the ones we both know | I |
+
+| [Kind letter](../joins.md#kind-indefinites) | Kind | Kind letter | Kind | Stage |
+|-------------|------|-------------|------|-------|
+| [**y**](../joins.md#kind-indefinites) | people | **h** | places and fixtures | I |
+| **z** | creatures | **l** | nature and raw stuff | I |
+| **m** | mind and feeling | **d** | food and drink | I |
+| **b** | body, clothes, what you carry | **w** | tools | I |
+| **v** | doing, playing, moving, vehicles | **g** | signs and marks | I |
+| **r** | counting, time, money | **n** | titles and papers | I |
+
+| Form | English | Stage |
+|------|---------|-------|
+| [`zwuyar`](../joins.md#kind-indefinites) | *someone; I don't know who* | I |
+| [`zwoyar`](../joins.md#kind-indefinites) | *a certain someone* (I know who) | I |
+| [`zweyar`](../joins.md#kind-indefinites) | *that person, you know the one* | I |
+| [`zwayar`](../joins.md#kind-indefinites) | *someone, nobody picked yet* | I |
+| [`zweyal`](../joins.md#kind-indefinites) | *nobody we know* | I |
+| [`zweyarx`](../joins.md#kind-indefinites) | *some people we both know* | I |
+| [`zweyual`](../joins.md#kind-domains) | *everyone we know* | I |
+| [`zwayual`](../joins.md#kind-domains) | *all people*, no exceptions | I |
+| [`zwayuam`](../joins.md#kind-domains) | *people in general* | I |
+| [`vweval`](../joins.md#kind-indefinite-acts) | *do nothing we both know of* | I |
+| [`vwavar`](../joins.md#kind-indefinite-acts) | *do something, nothing picked yet* | I |
 
 ## Joins across roles {#across-roles}
 
@@ -174,6 +209,7 @@ Stage: `al` `ol` `ul` `el` **-l** are Beginner; the rest of the first three colu
 | `ul barl` + clause | [*since*](../hooks.md#since) (that happened) | B |
 | `ol bar` | [*somewhere*](../hooks.md#place-indefinites); in a question, *where?* | I |
 | `ol bur` / `ol bal` / `ol bual` | [*somewhere else*](../hooks.md#place-indefinites) / *nowhere* / *everywhere* | I |
+| `ol bwehar` | [*at that place, you know the one*](../hooks.md#place-indefinites) | I |
 | `ael bar` (in a question) | [*with what?*](../hooks.md#extra-noun-intermediate) | I |
 | `om buwon` / `om bawan` | [*here*, *this*](../hooks.md#deixis) / *there by you*, *that* | I |
 | `om bayan` / `um bayan` | [*here with us*](../hooks.md#deixis) / *over there* | I |

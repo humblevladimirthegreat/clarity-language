@@ -192,6 +192,14 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 | *something* / *someone* / *thing* / *stuff* (unnamed) | **`zar`**; with a kind, `zeyol zar` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
 | *anything* / *anyone* / *anybody* | **`zor`**; with a kind, `zeyol zor` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
 | *somehow* / *in some way* | **`hewom bor`** (*like* some unspecified one) | [Simile](relations.md#similative), [unspecified member](joins.md#unspecified-member-r-phrase) |
+| *some of them* / *some people* (more than one, unnamed) | **`zarx`**; with a kind, `zeyol zarx` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
+| *a certain someone* / *someone I won't name* | **`zwoyar`** | [Kind indefinites](joins.md#kind-indefinites) |
+| *someone, I don't know who* | **`zwuyar`** | [Kind indefinites](joins.md#kind-indefinites) |
+| *you know the one* / *that person* (we both know) | **`zweyar`** | [Kind indefinites](joins.md#kind-indefinites) |
+| *anyone who fits* / *someone, nobody picked yet* | **`zwayar`** | [Kind indefinites](joins.md#kind-indefinites) |
+| *everyone we know* / *nobody we know* | **`zweyual`** / **`zweyal`** | [Every and none, by set](joins.md#kind-domains) |
+| *nobody at all, anywhere* / *all people*, as a law | **`zwayal`** / **`zwayual`** | [Every and none, by set](joins.md#kind-domains) |
+| *according to someone* (a source you won't name / don't know) | **`thebam blwoyar`** / **`thebam blwuyar`** | [Source](knowing.md#source) |
 
 ### Adjectives made from a noun (*golden*, *royal*, *solar*) {#noun-adjectives}
 

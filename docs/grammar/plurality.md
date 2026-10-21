@@ -442,6 +442,7 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 | nouns `/z/` `/d/` `/b/` | associative group (name / resume); indefinite group (kind **-lx** / **-mx**) | *Uzozen and associates*; *some dogs* |
 | vocatives `/y/` | group address | *hey, cats*; *Team Alpha* |
 | person-role specials | speaker’s people / address set | *I and my people*; *you all* |
+| join **-rx** (`zarx`) | [unnamed group](joins.md#unspecified-member-r-phrase) of members | *some ones* / *some of them* |
 | `/v/`…**-x** | collective event | one shared act |
 | `/ɡ/`…**-x** | collective property | the set as one pile |
 | inner words of a non-opaque span | group reference inside the span | **-x** on those inner words |

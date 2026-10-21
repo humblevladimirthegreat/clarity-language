@@ -510,7 +510,7 @@ One thing is one word with **`x`**; two words name a salad and a plate.
 
 A root ends in a **tail**, its last two letters, that hints at what it names. The last consonant says what **kind** of thing the root's concrete sense is, and the last vowel says what **job** it does. On a five-letter root the first three letters keep it apart from others of the same kind; on a three-letter root the first vowel does.
 
-The tail is a memory aid, not grammar. Nothing in a sentence reads it, and you never build a word from it. It just means that if you know what a thing is, you already know two letters of its root, and an unknown word in a text still tells you roughly what it names. A country or territory name has no tail: it is spelled from the English sound ([place-name roots](phonology.md#place-name-roots)).
+The tail is mostly a memory aid. Only a [kind indefinite](joins.md#kind-indefinites) reads it: its kind letter is a tail consonant, taken as a kind (`zwuyar` *someone*), so the letter needs no root to match. Nothing reads the job or size vowel, and you never build a root from the tail. It just means that if you know what a thing is, you already know two letters of its root, and an unknown word in a text still tells you roughly what it names. A country or territory name has no tail: it is spelled from the English sound ([place-name roots](phonology.md#place-name-roots)).
 
 Each letter reuses a job it already has somewhere in the grammar:
 

@@ -152,7 +152,7 @@ A parenthetical comment span (`th(…)` on the sentence; `g(…)`, `w(…)`, or 
 
 ### Associative
 
-**-x** = named **anchor plus associates**.
+**-x** = named **anchor plus associates**. On a kind word (**-lx**) or a join **-r** (`zarx`), an indefinite group.
 
 [Plurality](plurality.md#associative)
 
@@ -307,6 +307,24 @@ Set **`a`** + singular SHARED = *both/each are ADJ*.
 
 [Amounts, sizes and time](say-amounts.md#distributive-both)
 
+### Kind indefinite
+
+A standalone join with `w`, a knowledge vowel, and a kind letter after the role letter (`zwuyar`, `zweyual`): *someone* / *nobody* / *everyone* of one kind, with who knows which. On `/v/` the letter is always `v`, and on `/h/` always `r`.
+
+[Joins](joins.md#kind-indefinites)
+
+### Knowledge vowel
+
+The vowel after `w` in a kind indefinite. On **-r** it says who knows which one (`a` none picked, `u` I don't know, `o` I know and am not saying, `e` we both know); on **-l** / **-m** it says which set (`a` anywhere, `u` here, `o` the ones I mean, `e` the ones we both know).
+
+[Joins](joins.md#kind-indefinites)
+
+### Kind letter
+
+The consonant after the knowledge vowel in a kind indefinite: a broad kind (`y` people, `z` creatures, `h` places, …), the same letters that end roots of that kind.
+
+[Joins](joins.md#kind-indefinites)
+
 ### Kind reference
 
 `zuan` plus a SHARED kind: the kind itself as one individual, not its members (*the dodo is extinct*).
@@ -315,7 +333,7 @@ Set **`a`** + singular SHARED = *both/each are ADJ*.
 
 ### Domain / generic / *every K*
 
-SHARED kind plus invert / standalone joins.
+SHARED kind plus invert / standalone joins, or a kind indefinite on **-l** / **-m**, whose knowledge vowel names the set (`zweyual` *everyone we know*).
 
 [Joins](joins.md#universals-domains-generics)
 
@@ -427,7 +445,7 @@ Whether *if* vs *because* treats the dependent as asserted.
 
 ### Fill-ask / fill-all
 
-Under question, join **-r** is a blank; several **-r** = fill all.
+Under question, join **-r** is a blank; several **-r** = fill all. A kind indefinite **-r** is a typed blank, and its knowledge vowel says what kind of question it is: a real one, a quiz, *remind me*, or a choice.
 
 [Questions](questions.md#fill-ask-r)
 
@@ -723,7 +741,7 @@ Word-initial job letter.
 
 ### Root tail
 
-The last two letters of a root: a consonant for the kind of thing and a vowel for its job. A memory aid, not grammar.
+The last two letters of a root: a consonant for the kind of thing and a vowel for its job. Mostly a memory aid; a kind indefinite reads the consonant as its kind letter.
 
 [Compounds](compounds.md#root-tails)
 
@@ -880,7 +898,7 @@ Join readings when the speech act is question.
 
 ### Unspecified member
 
-Join / restrictor **-r** (*something* / *sometimes*); fill-ask under question.
+Join / restrictor **-r** (*something* / *sometimes*); fill-ask under question. With **-x**, an unnamed group (`zarx` *some ones*).
 
 [Joins](joins.md#unspecified-member-r-phrase)
 

@@ -49,6 +49,8 @@ The ending grades your evidence: **-l** you could show it, **-m** you could desc
 |-----|---------|---------|-------|
 | [Name the source](../knowing.md#source): a noun in a `bl-` word right after | `zolazun thebam bluzozen velurul.` | *Olazun left, according to Uzozen.* | I |
 | [A device as the source](../knowing.md#source) | `zolazun thugom blogewol vezuvol.` | *Olazun is asleep, going by the camera.* | I |
+| [A source you won't name](../knowing.md#source): a kind indefinite in the `bl-` word | `zolazun thebam blwoyar velurul.` | *Olazun left, according to someone I won't name.* | I |
+| [A source you lost track of](../knowing.md#source) | `zolazun thebam blwuyar velurul.` | *Olazun left, according to someone; I don't know who.* | I |
 | [How many hands](../knowing.md#hand-depth): `th#N` after a channel | `zolazun thebam thregel velurul.` | *Olazun left, so they say, third-hand.* | I |
 | [A forecast](../knowing.md#forecast): channel + `blral` | `thubem blral verulal.` | *It will rain, going by the pattern.* | I |
 | [A hunch about later](../knowing.md#forecast) | `zolazun thabor blral velurul.` | *Olazun will leave, a faint hunch.* | I |

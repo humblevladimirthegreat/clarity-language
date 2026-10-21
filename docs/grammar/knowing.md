@@ -332,6 +332,21 @@ What you put in that `/b/` decides what it does. A person or other noun is the s
 
 **Compare with:** the source is where the claim came to you from; the claim is still yours to pass on. A numbered footnote source is `th_N`.
 
+When you don't name the source, a [kind indefinite](joins.md#kind-indefinites) in the `bl-` word says what you know about it: whether you are holding back who said it, or have lost track. How far to trust a report depends on that, and the channel alone does not say it.
+
+| Agebon | English |
+|--------|---------|
+| `zolazun thebam blwoyar velurul.` | *Olazun left, according to someone I won't name.* |
+| `zolazun thebam blwuyar velurul.` | *Olazun left, according to someone; I don't know who.* (a rumor) |
+| `zolazun thebam blweyar velurul.` | *Olazun left, according to that person, you know the one.* |
+| `zolazun thebam blumon velurul.` | *Olazun left, according to someone.* (says neither) |
+
+> `zolazun thebam blwoyar velurul.`
+>
+> z-Olazun | [th-REPORTED | bl-something.person.withheld] | v-departure
+>
+> "Olazun left, according to someone I won't name."
+
 ### Mirative (`themom`) {#mirative}
 
 English *it turns out*, *to my surprise*, and *so … after all* say the news ran **against what you expected**. Put **`themom`** on the clause. This `/th/` word is called **MIRATIVE**. It is not a channel: it says nothing about how you know, so add a channel beside it when you want to say that too.
@@ -1003,7 +1018,7 @@ A [feeling with no object](sakes.md#feeling-no-object) works the same way: the h
 >
 > "I gather Olazun is anxious."
 
-Pronouns and speech moves stay yours: **`uwon`** is still you, and the sentence is still your turn. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thebamuzozen blral` is *I hear Uzozen expects it*. A holder is not a [source](#source): a source in `/b/` is where a claim came to you from, and the claim stays yours to pass on; a holder makes the claim the holder's view.
+Pronouns and speech moves stay yours: **`uwon`** is still you, and the sentence is still your turn. So does the knowledge vowel of a [kind indefinite](joins.md#kind-indefinites): `zwoyar` says that **you** know who and are not saying. To say that Uzozen knows who, report Uzozen's view with a holder. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thebamuzozen blral` is *I hear Uzozen expects it*. A holder is not a [source](#source): a source in `/b/` is where a claim came to you from, and the claim stays yours to pass on; a holder makes the claim the holder's view.
 
 **One clause, one holder.** The holder covers its clause and any dependent sentence inside it; a new `/x/` sentence is yours again unless it has its own seam word. A dependent with its own seam word switches holder for that sentence only. That is how you take a stance on someone else's stance: your stance in the main sentence, theirs in a dependent.
 
@@ -1110,6 +1125,7 @@ z-Olazun | th-MIRATIVE | th-CLUES-Uzozen | v-sing
 
 z-Olazun | th-NOTIONAL | v-mute | d-radio
 :::
+
 
 #### Agebon → English {#intermediate-agebon-to-english}
 

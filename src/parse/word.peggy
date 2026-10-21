@@ -19,8 +19,8 @@
     return word;
   }
 
-  // A hosted `/b/` (`bl-`) is a complement: a content word, pronoun, pointer, tag, number, span, stand-in
-  // (`blarl`), or fill-ask (`blar`). A join word (`bal`) and a hook compound take no `bl-` (clause.md#extra-nouns).
+  // A hosted `/b/` (`bl-`) is a complement: a content word, pronoun, pointer, tag, kind indefinite, number, span,
+  // stand-in (`blarl`), or fill-ask (`blar`). A join word (`bal`) and a hook compound take no `bl-` (clause.md#extra-nouns).
   function blBodyOk(body) {
     const f = body.family;
     if (f.kind === "hookCompound") return false;
@@ -569,6 +569,7 @@ prefixedWord
 
 PrefixedBody
   = tagWord
+  / kindIndefinite
   / xWord
   / plainContent
   / hookCompound
@@ -585,6 +586,20 @@ tagWord
         ending,
         plural: !!plural,
         family: { kind: "tag", vowels: vowels.split("") },
+      };
+    }
+
+// ── Kind indefinites (joins.md#kind-indefinites) ────────────────────────────
+
+// Role letter + `w` + knowledge vowel + kind letter + a standalone join's vowel(s) + ending (`zwuyar`, `zweyual`,
+// `hweral`). The consonant after the first vowel keeps it apart from a tag (`zwuar`). enforce.ts keeps the slots,
+// letters, series and endings.
+kindIndefinite
+  = "w" knowledge:[aeou] kindLetter:[yzmbvhldwgrn] series:JoinSeries ending:Ending plural:PluralSuffix? WordEnd {
+      return {
+        ending,
+        plural: !!plural,
+        family: { kind: "kindIndefinite", knowledge, kindLetter, series },
       };
     }
 
@@ -787,9 +802,10 @@ joinMarker
         family: { kind: "joinMarker", series },
       };
     }
-  / series:JoinSeries ending:Ending WordEnd {
+  / series:JoinSeries ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
+        plural: !!plural,
         family: { kind: "joinMarker", series },
       };
     }
