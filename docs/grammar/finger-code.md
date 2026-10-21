@@ -31,13 +31,13 @@ Each spoken digit starts with its own consonant ([counts](./numbers.md#counts)):
 | `n` | 9 | open hand |
 | `m` | 0 | index + pinky (horns) |
 
-The four consonants left over come next in [alphabet order](./phonology.md#letter-names): `w`, `y`, `th`, `x`. They are the runs 1 to 4 again, with the fingers hooked: keep the base knuckle straight and curl the two outer joints, so the hook sticks out from the fist instead of folding into it. Straight fingers mean a digit letter; hooked fingers mean one of these four. The thumb is never hooked.
+The four consonants left over come next in [alphabet order](./phonology.md#letter-names): `th`, `w`, `y`, `x`. They are the runs 1 to 4 again, with the fingers hooked: keep the base knuckle straight and curl the two outer joints, so the hook sticks out from the fist instead of folding into it. Straight fingers mean a digit letter; hooked fingers mean one of these four. The thumb is never hooked.
 
 | Letter | Shape |
 |--------|-------|
-| `w` | index, hooked |
-| `y` | index + middle, hooked |
-| `th` | index + middle + ring, hooked |
+| `th` | index, hooked |
+| `w` | index + middle, hooked |
+| `y` | index + middle + ring, hooked |
 | `x` | all four, hooked (claw) |
 
 The vowels go on the other hand. They count up the [vowel pitches](./phonology.md#vowel-pitch) the way the digits count: a run of 1 to 4 fingers starting at the **pinky**, from the lowest vowel to the highest. More fingers means a higher vowel.
@@ -81,7 +81,7 @@ For example, `thohom` (*if*) is three beats:
 
 | Beat | Consonant hand | Vowel hand |
 |------|----------------|------------|
-| 1 (stronger) | `th`: index + middle + ring, hooked | `o`: pinky + ring |
+| 1 (stronger) | `th`: index, hooked | `o`: pinky + ring |
 | 2 | `h`: four fingers, thumb tucked | `o`: pinky + ring |
 | 3, held | `m`: horns | fist |
 
@@ -140,7 +140,7 @@ Pressing a whole run would sound as a blur of neighboring notes that is hard to 
 
 The other digit letters combine the thumb with a run's last finger: `r` is thumb + 3, `l` thumb + 4, `n` thumb + 5, and `m` is 2 + 5.
 
-A key cannot be hooked, so the left thumb is the hook mark: a hooked letter is its straight letter plus the left thumb. `w` is `b` + hook, `y` is `d` + hook, `th` is `g` + hook, and `x` is `h` + hook. Neighboring fingers would strike neighboring keys, which sound harsh together, so `v` (thumb + index) is the one letter you learn separately: on piano it is `z` + hook.
+A key cannot be hooked, so the left thumb is the hook mark: a hooked letter is its straight letter plus the left thumb. `th` is `b` + hook, `w` is `d` + hook, `y` is `g` + hook, and `x` is `h` + hook. Neighboring fingers would strike neighboring keys, which sound harsh together, so `v` (thumb + index) is the one letter you learn separately: on piano it is `z` + hook.
 
 Play detached and without pedal, so each key comes up at the end of its beat. A held letter keeps its keys down for one beat. Leave a one-beat rest after each word and two more at the end of a sentence.
 
@@ -165,13 +165,13 @@ The picking hand plays consonants on the four open treble strings, which the fre
 | `n` | all four |
 | `m` | G + high D (the two outer fingers) |
 
-A string cannot be hooked either, so the hooked letters take the next string up. `w` is `b` plus the next string (G + B), and `y` is `d` plus the next string (B + high D). `th` is the thumb plus `w`, and `x` is the thumb plus `y`.
+A string cannot be hooked either, so the hooked letters take the next string up. `th` is `b` plus the next string (G + B), and `w` is `d` plus the next string (B + high D). `y` is the thumb plus `th`, and `x` is the thumb plus `w`.
 
 | Letter | Strings |
 |--------|---------|
-| `w` | G + B |
-| `y` | B + high D |
-| `th` | low D + G + B |
+| `th` | G + B |
+| `w` | B + high D |
+| `y` | low D + G + B |
 | `x` | low D + B + high D |
 
 The fretting hand plays vowels on the two lowest strings (the 6th, tuned to D, and the 5th, tuned to G), without picking: it hammers a finger down on a fret hard enough to sound the note. The vowels climb the scale in count order:

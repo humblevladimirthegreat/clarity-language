@@ -3,7 +3,7 @@
  * above the speaker's own `a`. The piano reference keys are the finger code's vowel keys.
  * Shared by the pitch drill component and their tests. No Node imports (the grammar site bundles this).
  */
-import { VOWEL_LETTERS, vowelKey } from "./finger-code.ts";
+import { CONSONANT_LETTERS, DIGIT_LETTERS, VOWEL_LETTERS, vowelKey } from "./finger-code.ts";
 
 /** Vowels lowest pitch first: the finger code's count order. */
 export const PITCH_ORDER: readonly string[] = VOWEL_LETTERS;
@@ -35,25 +35,49 @@ export const DRILL_TEMPOS: readonly { id: DrillTempo; label: string; beat: numbe
   { id: "quick", label: "Quick", beat: 0.45 },
 ];
 
-/** `stacks`: the mode plays vowel stacks, which learners meet at intermediate level. */
-export const DRILL_MODES: readonly { id: DrillMode; label: string; stacks: boolean }[] = [
-  { id: "up", label: "Scale up", stacks: false },
-  { id: "down", label: "Scale down", stacks: false },
-  { id: "pairs", label: "Pairs", stacks: false },
-  { id: "contours", label: "Contours", stacks: true },
+/**
+ * The levels whose drill offers the mode. Past beginner the scales run through the consonants, named for the order
+ * they say (`consonantLabel`), and the stacks join them.
+ */
+export const DRILL_MODES: readonly { id: DrillMode; label: string; consonantLabel?: string; beginner: boolean; intermediate: boolean }[] = [
+  { id: "up", label: "Scale up", consonantLabel: "Digits", beginner: true, intermediate: true },
+  { id: "down", label: "Scale down", consonantLabel: "Alphabet", beginner: true, intermediate: true },
+  { id: "pairs", label: "Pairs", beginner: true, intermediate: false },
+  { id: "contours", label: "Stacks", beginner: false, intermediate: true },
 ];
 
-/** One step of a phrase. `ref` is the opening `a` the other vowels are heard against. */
-export type DrillStep = { vowel: string; kind: "ref" | "note"; beats: number };
-/** A phrase: an optional word or caption, then its steps. */
-export type DrillPhrase = { caption: string; word?: string; steps: DrillStep[] };
+/** One step of a phrase. `ref` is the opening `a` the other vowels are heard against; `onset`, a consonant said before the vowel. */
+export type DrillStep = { vowel: string; kind: "ref" | "note"; beats: number; onset?: string };
+/** A phrase: an optional word or caption, then its steps. `tied`: the next phrase follows with no rest. */
+export type DrillPhrase = { caption: string; word?: string; steps: DrillStep[]; tied?: boolean };
 
 const note = (vowel: string): DrillStep => ({ vowel, kind: "note", beats: 1 });
 const REF: DrillStep = { vowel: "a", kind: "ref", beats: 1 };
 const vowelsOf = (word: string): string[] => [...word].filter((c) => PITCH_ORDER.includes(c));
 
-/** The phrases a mode plays. */
-export function drillPhrases(mode: DrillMode): DrillPhrase[] {
+/**
+ * The phrases a mode plays. With `consonants`, the scale runs through consonants in alphabet order
+ * (phonology.md#letter-names), one per note, its vowels repeating; each phrase is one run of the scale, tied to the next.
+ * The scale up then counts, so it stops at the ten digit letters; the scale down says every letter name.
+ * Pairs and stacks have no consonants: a consonant between two stacked vowels would split the stack.
+ */
+export function drillPhrases(mode: DrillMode, consonants = false): DrillPhrase[] {
+  const phrases = vowelPhrases(mode);
+  if (!consonants || (mode !== "up" && mode !== "down")) return phrases;
+  const scale = phrases[0]!.steps;
+  const letters = mode === "up" ? DIGIT_LETTERS : CONSONANT_LETTERS;
+  const out: DrillPhrase[] = [];
+  for (let i = 0; i < letters.length; i += scale.length) {
+    out.push({
+      caption: i ? "" : `${phrases[0]!.caption}, ${mode === "up" ? "digit" : "alphabet"} order`,
+      steps: letters.slice(i, i + scale.length).map((onset, j) => ({ ...scale[j]!, onset })),
+      tied: i + scale.length < letters.length,
+    });
+  }
+  return out;
+}
+
+function vowelPhrases(mode: DrillMode): DrillPhrase[] {
   switch (mode) {
     case "up":
       return [{ caption: "low to high", steps: PITCH_ORDER.map(note) }];

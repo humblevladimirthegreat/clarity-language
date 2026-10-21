@@ -40,10 +40,10 @@ The name is what you say when you [spell a word aloud](../phonology.md#letter-na
 | `l` | /l/ | *lie* | | `la` | B |
 | `n` | /n/ | *no* | | `nu` | B |
 | `m` | /m/ | *me* | | `me` | B |
-| `w` | /w/ | *we* | | `we` | B |
-| `y` | /j/ | *yes* | | `ya` | B |
 | `th` | /ð/ | *this* | /θ/ | `tho` | B |
-| `x` | /ʒ/ | *vision* (not English *x*) | /ʃ/ | `xu` | B |
+| `w` | /w/ | *we* | | `wa` | B |
+| `y` | /j/ | *yes* | | `yu` | B |
+| `x` | /ʒ/ | *vision* (not English *x*) | /ʃ/ | `xe` | B |
 
 Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), then the other consonants. The vowels come last and name themselves (`u`, `o`, `a`, `e`). Pause between names: `agozo` is `a` `go` `o` `zu` `o`. A letter you talk about in a clause is a [mention](../spans.md#mention), read by its name.
 

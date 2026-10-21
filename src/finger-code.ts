@@ -25,7 +25,7 @@ export const DIGIT_LETTERS: readonly string[] = ["1", "2", "3", "4", "5", "6", "
   (digit) => NUMBER_SYLLABLES.digits[digit]![0]!,
 );
 /** The consonants after the digit letters, in alphabet order (phonology.md#letter-names): hooked runs 1–4. */
-export const HOOKED_LETTERS: readonly string[] = ["w", "y", "th", "x"];
+export const HOOKED_LETTERS: readonly string[] = ["th", "w", "y", "x"];
 /** Vowels in count order, lowest pitch first (phonology.md#vowels): runs 1–4 from the pinky on the vowel hand. */
 export const VOWEL_LETTERS: readonly string[] = ["a", "o", "e", "u"];
 export const CONSONANT_LETTERS: readonly string[] = [...DIGIT_LETTERS, ...HOOKED_LETTERS];
@@ -142,10 +142,10 @@ export const GUITAR_CONSONANTS: Readonly<Record<string, { strings: GuitarString[
   l: { strings: ["D3", "D4"], why: "8: thumb + ring" },
   n: { strings: ["D3", "G3", "B3", "D4"], why: "9: open hand" },
   m: { strings: ["G3", "D4"], why: "0: horns" },
-  w: { strings: ["G3", "B3"], why: "hooked 1: b + the next string up" },
-  y: { strings: ["B3", "D4"], why: "hooked 2: d + the next string up" },
-  th: { strings: ["D3", "G3", "B3"], why: "hooked 3: thumb + w" },
-  x: { strings: ["D3", "B3", "D4"], why: "hooked 4: thumb + y" },
+  th: { strings: ["G3", "B3"], why: "hooked 1: b + the next string up" },
+  w: { strings: ["B3", "D4"], why: "hooked 2: d + the next string up" },
+  y: { strings: ["D3", "G3", "B3"], why: "hooked 3: thumb + th" },
+  x: { strings: ["D3", "B3", "D4"], why: "hooked 4: thumb + w" },
 };
 export const GUITAR_SPARE: GuitarString[] = ["D3", "G3", "D4"];
 

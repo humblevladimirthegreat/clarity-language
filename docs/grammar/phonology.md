@@ -20,8 +20,8 @@ The **IPA** column spells each sound in the International Phonetic Alphabet, and
 | Agebon | IPA | Pitch | Cue |
 |--------|-----|-------|-----|
 | `u` | /ʉ/ <IpaPlay file="Close_central_rounded_vowel.mp3" label="u" /> | high | *you* (without the *y*) |
-| `a` | /ä/ <IpaPlay file="Open_central_unrounded_vowel.mp3" label="a" /> | low | *spa* (like Spanish *casa*) |
 | `o` | /o̞/ <IpaPlay file="Mid_back_rounded_vowel.mp3" label="o" /> | mid-low | *Cambodia* (no glide, like Spanish *todo*) |
+| `a` | /ä/ <IpaPlay file="Open_central_unrounded_vowel.mp3" label="a" /> | low | *spa* (like Spanish *casa*) |
 | `e` | /e̞/ <IpaPlay file="Mid_front_unrounded_vowel.mp3" label="e" /> | mid-high | *bet* |
 
 Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). /ʉ/ and /ä/ are by [Denelson83](https://commons.wikimedia.org/wiki/User:Denelson83), and /e̞/ and /o̞/ by [TFighterPilot](https://commons.wikimedia.org/wiki/User:TFighterPilot).
@@ -50,7 +50,7 @@ With a microphone, **Find my home note** listens while you hold a long `a` on a 
 ### Consonants
 
 A consonant starts a syllable. Many consonants have a **voiced** sound (vocal cords buzzing, as in *zoo*) and an unvoiced one (as in *sea*), and Agebon treats the two as the same letter. Prefer the voiced sound so you can hold a sung note; the unvoiced one is fine for style.
-<!-- Consonant order is alphabet order: the ten digit letters in digit order (b d g h z v r l n m = 1–9, 0), then w y th x. The alphabet / letter-name recitation ends with the vowels u o a e, the same order as vowel stacks. -->
+<!-- Consonant order is alphabet order: the ten digit letters in digit order (b d g h z v r l n m = 1–9, 0), then th w y x. The alphabet / letter-name recitation ends with the vowels u o a e, the same order as vowel stacks. -->
 
 | Agebon | IPA | Cue | Unvoiced variant |
 |--------|-----|-----|------------------|
@@ -64,9 +64,9 @@ A consonant starts a syllable. Many consonants have a **voiced** sound (vocal co
 | `l` | /l/ <IpaPlay file="Alveolar_lateral_approximant.mp3" label="l" /> | *lie* | |
 | `n` | /n/ <IpaPlay file="Alveolar_nasal.mp3" label="n" /> | *no* | |
 | `m` | /m/ <IpaPlay file="Bilabial_nasal.mp3" label="m" /> | *me* | |
+| `th` | /ð/ <IpaPlay file="Voiced_dental_fricative.mp3" label="th" /> | *this* | /θ/ <IpaPlay file="Voiceless_dental_fricative.mp3" label="unvoiced th" />, *thin* |
 | `w` | /w/ <IpaPlay file="Voiced_labio-velar_approximant.mp3" label="w" /> | *we* | |
 | `y` | /j/ <IpaPlay file="Palatal_approximant.mp3" label="y" /> | *yes* | |
-| `th` | /ð/ <IpaPlay file="Voiced_dental_fricative.mp3" label="th" /> | *this* | /θ/ <IpaPlay file="Voiceless_dental_fricative.mp3" label="unvoiced th" />, *thin* |
 | `x` | /ʒ/ <IpaPlay file="Voiced_palato-alveolar_sibilant.mp3" label="x" /> | *vision* (the *si*) | /ʃ/ <IpaPlay file="Voiceless_palato-alveolar_sibilant.mp3" label="unvoiced x" />, *shy* |
 
 ::: tip Remember
@@ -123,10 +123,6 @@ Each vowel keeps its [pitch](#vowel-pitch) in a stack, so every stack is a small
 | `ae` | low → mid-high | medium rise |
 | `oe` | mid-low → mid-high | small rise, mid |
 
-Hear each stack against your home note, and say it back:
-
-<PitchDrill level="intermediate" />
-
 **Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 
 ### Number-word exception {#number-word-exception}
@@ -174,10 +170,10 @@ The table is in **alphabetical order**. The ten letters that begin a digit sylla
 | `l` | `la` | *la* |
 | `n` | `nu` | *noon* (the *noo*) |
 | `m` | `me` | *met* |
-| `w` | `we` | *wet* |
-| `y` | `ya` | *yacht* |
 | `th` | `tho` | *though* (no glide) |
-| `x` | `xu` | *shoe* |
+| `w` | `wa` | *wander* |
+| `y` | `yu` | *you* |
+| `x` | `xe` | *shed* |
 | `u` | `u` | *you* (without the *y*) |
 | `o` | `o` | *Cambodia* (no glide) |
 | `a` | `a` | *spa* |
@@ -191,7 +187,7 @@ The table is in **alphabetical order**. The ten letters that begin a digit sylla
 In a clause, a letter you talk about (such as `z`) is read aloud by its letter name (`zu`).
 
 <a id="digit-letters"></a>
-Ten letters also begin a [digit syllable](numbers.md#counts). The letter name uses the [opposite vowel](#opposite-vowels) (`a`↔`u`, `o`↔`e`), so naming the letter is not the same as counting. Counting climbs the vowel pitches, so reciting these ten names walks back down them.
+The ten digit letters are the consonants of the [digit syllables](numbers.md#counts) you count with. Each letter's name keeps the consonant and swaps in the [opposite vowel](#opposite-vowels) (`a`↔`u`, `o`↔`e`), so naming a letter never sounds like counting. The table repeats the digit syllables only for comparison: counting climbs the vowel pitches, so reciting these ten names walks back down them. The other four names carry on the same walk, so the whole alphabet recited by name keeps stepping down the vowel pitches: … `nu` `me` `tho` `wa` `yu` `xe`.
 
 <!-- cheat-sheet: sounds-spelling -->
 | Agebon | Digit syllable | Name | Cue |
@@ -206,6 +202,10 @@ Ten letters also begin a [digit syllable](numbers.md#counts). The letter name us
 | `l` | `lu` (8) | `la` | `u` ↔ `a` |
 | `n` | `na` (9) | `nu` | `a` ↔ `u` |
 | `m` | `mo` (0) | `me` | `o` ↔ `e` |
+
+Choose **Stacks** to hear each stack against your home note and say it back. **Digits** counts the ten digits in digit order (`ba` `do` `ge` `hu` …), climbing the vowel pitches, and **Alphabet** says every letter name in alphabet order (`bu` `de` `go` `ha` …), walking back down.
+
+<PitchDrill level="intermediate" />
 
 ## Advanced {#advanced}
 

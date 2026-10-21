@@ -25,7 +25,8 @@ import { heldNote, judgePitch, type Heard, type Verdict } from '../lib/pitch-det
 import { noteName, pianoBus, pianoContext, pianoVoice } from '../lib/piano-voice'
 
 // Plays vowel-pitch patterns on the finger code's piano voice and lights each vowel as its note sounds;
-// the learner says the vowels back on their notes. `level` intermediate adds the contour mode. Tempo sets the beat.
+// the learner says the vowels back on their notes. Tempo sets the beat. `level` intermediate swaps pairs for the contour
+// mode and runs the scales through the consonants in alphabet order, with no rest between runs.
 // The microphone is optional: *Find my home note* sets the home note from a held `a`, and *Check me* leaves a
 // silent turn after each note and marks the note with what the learner said in it; a clicked step does the same for one note.
 // With *From memory*, the vowel notes do not sound, so the learner says each unprompted; an opening `a` still sounds.
@@ -33,14 +34,16 @@ import { noteName, pianoBus, pianoContext, pianoVoice } from '../lib/piano-voice
 
 const props = defineProps<{ level?: 'intermediate' }>()
 
-const modes = computed(() => DRILL_MODES.filter((m) => props.level || !m.stacks))
+const modes = computed(() => DRILL_MODES.filter((m) => (props.level ? m.intermediate : m.beginner)))
 
 // A drill past beginner opens on the stacks, which only it has.
 const mode = ref<DrillMode>(props.level ? 'contours' : 'up')
 const tempo = ref<DrillTempo>('normal')
 const beat = computed(() => DRILL_TEMPOS.find((t) => t.id === tempo.value)!.beat)
 const base = sharedBase
-const phrases = ref<DrillPhrase[]>(drillPhrases(mode.value))
+/** Past beginner, the scales run through the consonants, one per note. */
+const consonants = !!props.level
+const phrases = ref<DrillPhrase[]>(drillPhrases(mode.value, consonants))
 const playing = ref(false)
 const now = ref(-1)
 
@@ -82,7 +85,7 @@ const timeline = computed<Timed[]>(() => {
         t += SAY_BACK
       }
     })
-    t += beat.value
+    if (!p.tied) t += beat.value
   })
   return out
 })
@@ -305,7 +308,7 @@ async function toggleCheck(): Promise<void> {
 watch(mode, (m) => {
   stop()
   results.value = {}
-  phrases.value = drillPhrases(m)
+  phrases.value = drillPhrases(m, consonants)
 })
 watch([base, tempo, check, hearFirst], () => {
   stop()
@@ -360,7 +363,7 @@ onBeforeUnmount(() => {
             :aria-pressed="mode === m.id"
             @click="mode = m.id"
           >
-            {{ m.label }}
+            {{ (consonants && m.consonantLabel) || m.label }}
           </button>
         </div>
         <div class="pd-group" role="group" aria-label="Tempo">
@@ -408,11 +411,11 @@ onBeforeUnmount(() => {
             type="button"
             class="pd-step"
             :class="[s.kind, resultOf(pi, si)?.verdict, { on: isOn(pi, si) || manual?.key === `${pi}:${si}` }]"
-            :aria-label="`Play ${s.vowel}`"
+            :aria-label="`Play ${(s.onset ?? '') + s.vowel}`"
             :title="offTitle(resultOf(pi, si))"
             @click="clickStep(pi, si, s.vowel)"
           >
-            <span class="pd-letter">{{ s.vowel }}</span>
+            <span class="pd-letter">{{ (s.onset ?? '') + s.vowel }}</span>
             <span class="pd-sub">{{ stepLabel(s, pi, si) || '\u00a0' }}</span>
           </button>
         </span>

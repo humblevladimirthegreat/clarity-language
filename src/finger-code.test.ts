@@ -32,9 +32,9 @@ describe("finger code", () => {
       l: "1+2+3+4",
       n: "1+2+3+4+5",
       m: "2+5",
-      w: "2 hooked",
-      y: "2+3 hooked",
-      th: "2+3+4 hooked",
+      th: "2 hooked",
+      w: "2+3 hooked",
+      y: "2+3+4 hooked",
       x: "2+3+4+5 hooked",
     });
   });
@@ -62,9 +62,9 @@ describe("finger code", () => {
       l: "1+4",
       n: "1+5",
       m: "2+5",
-      w: "2 hook",
-      y: "3 hook",
-      th: "4 hook",
+      th: "2 hook",
+      w: "3 hook",
+      y: "4 hook",
       x: "5 hook",
     });
   });

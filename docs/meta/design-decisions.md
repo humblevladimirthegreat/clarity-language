@@ -234,6 +234,24 @@ The pitch gap is lower because a scale puts neighbouring digits on neighbouring 
 
 **Accepted costs.** `r` still sounds like a marker (7 is `re`, so *the 7th* is `grerel`); the marker always comes straight after the role letter, and taking `r` off the digits would make it the exponent. Neighbouring digits sit on neighbouring pitches, so the pitch backup between them is small. `wa` / `wu` is a weaker sign than a stop, and `wu` does not exist in Japanese. The weights come from published phonetics, not from tests with Agebon listeners.
 
+### Letter names
+
+A digit letter's name is its digit syllable with the opposite vowel, so the ten names walk the vowel scale down (`u e o a`). The four other consonants have no digit, so their names are chosen to carry on that walk: after `m` the cycle reaches `o a u e`, so the four names use each vowel once, and that fixes their alphabet order (`th w y x`). Which letter takes which vowel follows the confusion test above, applied to spelling aloud: a letter does not share a vowel with the letter it is most often misheard as.
+
+- **`w` takes `a`.** `wu` blurs into one sound, and `we` / `wo` would pair with `ve` (v/w) and `ro` (r/w), both hard pairs.
+- **`th` takes `o`.** /ð/ is misheard as /v/ and /z/, so `the` and `thu` would pair with `ve` and `zu`.
+- **`x` takes `e`.** /ʃ/ against unvoiced /s/ is *shoe* against *sue*, so `xu` would pair with `zu`.
+- **`y` takes `u`.** No confusable letter is left on `u`, and `yu` is the English *you*, the `u` cue.
+
+| Alternative | Why not |
+|-------------|---------|
+| `we ya tho xu` in order `w y th x` | Breaks the walk after `m`, and keeps the v/w and z/x pairs (`we` / `ve`, `xu` / `zu`) |
+| `wo tha yu xe` in order `w th y x` | Fits the walk, but pairs `wo` with `ro` (r/w) |
+| `xu we tho ya` in order `x w th y`, the cycle starting over at `x` | Fits only by restarting the cycle, and keeps `xu` / `zu` |
+| A syllable for each of the four in the digit direction (`the yu xa wo`) | They are not digits and are said nowhere; three are already other words (`the`, `yu`, `xa`) |
+
+**Accepted cost.** Like every consonant + vowel syllable, the names overlap grammar words (`wa` the exponent, `yu` points, `tho` motive, `xe` *can't, for now*); a name is said only when spelling aloud or as a mention.
+
 ### Finger code
 
 The [finger code](../grammar/finger-code.md) gives each letter a shape counted on the fingers, with a separate piano form and its own guitar strings.
