@@ -102,19 +102,19 @@ function play(): void {
 
 let previewBus: GainNode | null = null
 
-/** Sounds the new `a` alone so the learner hears where it sits before pressing Play. */
-function previewA(): void {
+/** Sounds one vowel's pitch alone: the new `a` after a step, or any vowel the learner clicks. */
+function preview(vowel: string): void {
   const a = pianoContext()
   if (previewBus) previewBus.gain.setTargetAtTime(0, a.currentTime, 0.02)
   previewBus = pianoBus(a)
-  pianoVoice(a, previewBus, pitchOf('a', base.value, range.value), a.currentTime + 0.02, BEAT * 0.9, 0.9, 0.4)
+  pianoVoice(a, previewBus, pitchOf(vowel, base.value, range.value), a.currentTime + 0.02, BEAT * 0.9, 0.9, 0.4)
 }
 
 function step(by: number): void {
   const next = Math.min(BASE_MAX, Math.max(BASE_MIN, base.value + by))
   if (next === base.value) return
   base.value = next
-  previewA()
+  preview('a')
 }
 
 watch(mode, (m) => {
@@ -165,13 +165,27 @@ onBeforeUnmount(stop)
     <ol class="pd-phrases">
       <li v-for="(p, pi) in phrases" :key="pi" class="pd-phrase">
         <span v-if="p.word" class="pd-word"
-          ><code><span v-for="(c, li) in p.word" :key="li" :class="{ lit: wordLetterOn(p, pi, li) }">{{ c }}</span></code></span
+          ><code><span
+              v-for="(c, li) in p.word"
+              :key="li"
+              :class="{ lit: wordLetterOn(p, pi, li), vowel: PITCH_ORDER.includes(c) }"
+              @click="PITCH_ORDER.includes(c) && preview(c)"
+              >{{ c }}</span
+            ></code></span
         >
         <span class="pd-steps">
-          <span v-for="(s, si) in p.steps" :key="si" class="pd-step" :class="[s.kind, { on: isOn(pi, si) }]">
+          <button
+            v-for="(s, si) in p.steps"
+            :key="si"
+            type="button"
+            class="pd-step"
+            :class="[s.kind, { on: isOn(pi, si) }]"
+            :aria-label="`Play ${s.vowel}`"
+            @click="preview(s.vowel)"
+          >
             <span class="pd-letter">{{ s.vowel }}</span>
             <span v-if="stepLabel(s)" class="pd-sub">{{ stepLabel(s) }}</span>
-          </span>
+          </button>
         </span>
         <span class="pd-caption">{{ p.caption }}</span>
       </li>
@@ -266,6 +280,10 @@ onBeforeUnmount(stop)
 }
 
 .pd-step {
+  font: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -274,6 +292,14 @@ onBeforeUnmount(stop)
   border-radius: 6px;
   border: 1px solid var(--vp-c-divider);
   transition: background 0.08s;
+}
+
+.pd-step:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
+.pd-word .vowel {
+  cursor: pointer;
 }
 
 .pd-step.ref {
