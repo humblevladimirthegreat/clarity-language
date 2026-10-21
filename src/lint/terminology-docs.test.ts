@@ -12,7 +12,7 @@ const SAKES = [
   "",
   "### Emotion compose {#emotion-compose}",
   "",
-  "`zebewem guwathamar` and `wuwathuraor`.",
+  "`zebewem guwathamar` and `wuwathuroar`.",
 ].join("\n");
 
 function terminology(rows: string[], body = ""): string {
@@ -43,7 +43,7 @@ describe("lintTerminology", () => {
   it("flags a row whose example lacks the label or is not on the page", () => {
     const wrong = "| **CIRCUM** | atmosphere | `guwathamar` | [Sakes](sakes.md#emotion-compose) |";
     assert.match(lint(terminology([wrong]), ["CIRCUM"]).join("\n"), /without CIRCUM/);
-    const missing = "| **CIRCUM** | atmosphere | `wuwathuraol` | [Sakes](sakes.md#emotion-compose) |";
+    const missing = "| **CIRCUM** | atmosphere | `wuwathuroal` | [Sakes](sakes.md#emotion-compose) |";
     assert.match(lint(terminology([missing]), ["CIRCUM"]).join("\n"), /does not appear on sakes\.md/);
   });
 

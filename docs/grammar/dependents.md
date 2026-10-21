@@ -774,7 +774,7 @@ Each content type has one lexicalized form; there is no closed / open pair here.
 | **`vurn`** | avoidance-like (`u`) | *prohibit…* |
 | **`vaen`** | accepts a statement | *confirm that…* |
 | **`vuen`** | rejects a statement | *deny that…* |
-| **`vaon`** | accepts a proposed action | *agree to…* |
+| **`voan`** | accepts a proposed action | *agree to…* |
 | **`vuon`** | rejects a proposed action | *decline to…* |
 | **`vuan`** | rejects the premise behind a question or claim | *dispute the premise that…* |
 

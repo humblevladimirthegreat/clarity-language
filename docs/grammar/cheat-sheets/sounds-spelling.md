@@ -45,7 +45,7 @@ The name is what you say when you [spell a word aloud](../phonology.md#letter-na
 | `th` | /ð/ | *this* | /θ/ | `tho` | B |
 | `x` | /ʒ/ | *vision* (not English *x*) | /ʃ/ | `xu` | B |
 
-Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), then the other consonants. The vowels come last and name themselves (`u`, `a`, `o`, `e`). Pause between names: `agozo` is `a` `go` `o` `zu` `o`. A letter you talk about in a clause is a [mention](../spans.md#mention), read by its name.
+Rows are in alphabetical order: the ten digit letters first (1 to 9, then 0), then the other consonants. The vowels come last and name themselves (`u`, `o`, `a`, `e`). Pause between names: `agozo` is `a` `go` `o` `zu` `o`. A letter you talk about in a clause is a [mention](../spans.md#mention), read by its name.
 
 ## Word shape {#word-shape}
 

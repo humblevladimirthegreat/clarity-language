@@ -136,9 +136,9 @@ an,h,,join_relation,including,join-relation with or including (adverb + argument
 on,v,,join_act,choose,join-act chooses sole object,set join o+n as verb; chooses this as the one pick,join-across-roles.md#join-act-verbs
 on,g,,join_relation,exclusive-for,join-relation exclusive for (sole pick adjective),set join o+n on /g/; exclusive for names the only pick,join-across-roles.md#join-relations
 on,h,,join_relation,exclusive-for,join-relation exclusively for (adverb),set join o+n on /h/; exclusively for as the one choice,join-across-roles.md#join-relations
-aon,v,,join_act,picks,join-act picks with more picks open,set join ao+n as verb; picks one while more may follow,join-across-roles.md#join-act-verbs
-aon,g,,join_relation,open-to,join-relation open to (adjective),set join ao+n on /g/; open to admits among options,join-across-roles.md#join-relations
-aon,h,,join_relation,open-to,join-relation among options (adverb),set join ao+n on /h/; among options keeps picks open,join-across-roles.md#join-relations
+oan,v,,join_act,picks,join-act picks with more picks open,set join oa+n as verb; picks one while more may follow,join-across-roles.md#join-act-verbs
+oan,g,,join_relation,open-to,join-relation open to (adjective),set join oa+n on /g/; open to admits among options,join-across-roles.md#join-relations
+oan,h,,join_relation,open-to,join-relation among options (adverb),set join oa+n on /h/; among options keeps picks open,join-across-roles.md#join-relations
 un,v,,join_act,denies,join-act denies or refuses object,negation u+n as verb; denies refuses the object,join-across-roles.md#join-act-verbs
 un,g,,join_relation,against,join-relation against or anti- (adjective),negation u+n on /g/; against refuses the argument,join-across-roles.md#join-relations
 un,h,,join_relation,against,join-relation refusing (adverb),negation u+n on /h/; refusing blocks the argument,join-across-roles.md#join-relations

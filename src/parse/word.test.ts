@@ -274,17 +274,38 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
   });
 
   it("parses stacked label-scope vowels on a content root and a role compound", () => {
-    const word = parseOk("gunemuthaol");
+    const word = parseOk("gunemuthoal");
     assert.equal(word.family.kind, "x");
     if (word.family.kind === "x") {
       assert.equal(word.family.xFamily, "sake");
-      assert.equal(word.family.stanceVowel, "ao");
+      assert.equal(word.family.stanceVowel, "oa");
     }
     const role = parseOk("gaxuduyethuel");
     if (role.family.kind === "x") {
       assert.equal(role.family.xFamily, "role");
       assert.equal(role.family.scopeVowel, "ue");
     }
+  });
+
+  it("reads oa as one stack in a feeling word and a role compound (phonology.md#phonotactics)", () => {
+    for (const raw of ["wuwathuroar", "thuwathuroar"]) {
+      const word = parseOk(raw);
+      assert.ok(word.family.kind === "x" && word.family.xFamily === "sake", raw);
+      if (word.family.kind === "x") {
+        assert.equal(word.family.locus, "oa", raw);
+        assert.equal(word.ending, "r", raw);
+      }
+    }
+    for (const locus of ["a", "o", "uo", "ae"]) assert.equal((parseOk(`wuwathur${locus}r`).family as { locus?: string }).locus, locus);
+    const result = parseOk("doaxeguyel");
+    assert.ok(result.family.kind === "x" && result.family.xFamily === "role");
+    if (result.family.kind === "x") {
+      assert.equal(result.family.roleVowel, "oa");
+      assert.deepEqual(result.family.rightRoots, ["eguye"]);
+    }
+    const pointer = parseOk("doaxar");
+    assert.ok(pointer.family.kind === "x" && pointer.family.xFamily === "pointer");
+    if (pointer.family.kind === "x") assert.equal(pointer.family.roleVowel, "oa");
   });
 
   it("parses azawaxan as ability host (greeting bid classified later)", () => {
@@ -442,5 +463,8 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
 describe("parseWord — illegal shapes", () => {
   it("rejects ROOT l 1 with no number marker (numeric-derivation.md)", () => {
     assert.throws(() => parseWord("zolovel1l"), WordParseError);
+  });
+  it("rejects a reversed stack (design-decisions.md#stacked-vowels)", () => {
+    for (const raw of ["zaol", "yaol", "aol", "daoxeguyel", "wuwathuraor", "zeol", "yeal"]) assert.throws(() => parseWord(raw), WordParseError, raw);
   });
 });

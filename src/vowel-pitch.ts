@@ -8,7 +8,7 @@ import { VOWEL_LETTERS, vowelKey } from "./finger-code.ts";
 /** Vowels lowest pitch first: the finger code's count order. */
 export const PITCH_ORDER: readonly string[] = VOWEL_LETTERS;
 /** Vowels in alphabet order (phonology.md#letter-names); a stack puts its two vowels in this order. */
-export const ALPHABET_VOWELS: readonly string[] = ["u", "a", "o", "e"];
+export const ALPHABET_VOWELS: readonly string[] = ["u", "o", "a", "e"];
 
 export type PitchRange = "full" | "ordinary" | "fast";
 

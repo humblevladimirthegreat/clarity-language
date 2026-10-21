@@ -720,13 +720,13 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 A feeling word is how you feel **now**. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`goyem`**, as for any [forecast](knowing.md#forecast) or [dated claim](knowing.md#dated-channel): the offset dates the stimulus, and the channel says how you know it.
 
-> `zezuyel wuwathuraor goyem thebal blral.`
+> `zezuyel wuwathuroar goyem thebal blral.`
 >
 > [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-REPORTED.strong | bl-later]
 >
 > "Anxious about the dialogue that's coming, as a reliable source says."
 
-> `zezuyel wuwathuraor goyem thabor blral.`
+> `zezuyel wuwathuroar goyem thabor blral.`
 >
 > [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-INTUITION.weak | bl-later]
 >
@@ -818,15 +818,15 @@ Most of these feelings are about the **understanding** sake: whether something m
 | *interested in* | `wowothamam goyem` | understanding met, held inside, flowing |
 | *fascinated by* | `wowothamor goyem` | understanding met, aimed at it, surging |
 | *it clicked* / *aha* | `thowotharar.` | understanding met right away, held inside, surging |
-| *confused by* | `wowothumaom goyem` | understanding unmet, can be softened, over the situation, flowing |
+| *confused by* | `wowothumoam goyem` | understanding unmet, can be softened, over the situation, flowing |
 | *bored by* | `wowothurul goyem` | understanding unmet for now, moving off, still |
 | *bored* (no object) | `thowothural.` | understanding unmet for now, held inside, still |
-| *in awe of* | `wowothalaol goyem` | understanding met for good, over the situation, still |
+| *in awe of* | `wowothaloal goyem` | understanding met for good, over the situation, still |
 | *it turns out* / *surprisingly* | `themom` | mirative on the clause |
 | *amazed* / *astonished* | `themol` | mirative: a firm expectation overturned |
 | *pleasantly surprised by* | a met feeling + `themom` | how it lands, plus the mirative |
 
-> `zogalal wowothalaol goyem.`
+> `zogalal wowothaloal goyem.`
 >
 > z-galaxy | [w-understanding-met-lasting-CIRCUM-STILL | g-stimulus]
 >
@@ -1155,7 +1155,7 @@ Short drills for these recipes. A channel and offset after **`goyem`** date the 
 **1.** *Anxious about the dialogue that's coming, as a reliable source says.* (competence at stake for now; hangs over the room; surging)
 
 ::: details Show answer
-`zezuyel wuwathuraor goyem thebal blral.`
+`zezuyel wuwathuroar goyem thebal blral.`
 
 [z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]] | [th-REPORTED.strong | b-later]
 :::

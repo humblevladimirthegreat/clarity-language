@@ -411,7 +411,7 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 | English | Agebon | Reading |
 |---------|--------|---------|
 | *join* / *associate with* (come along) | `zuzozen vowurel han blolazun.` | walks in company with Olazun |
-| *join* / *admit* (take into a set) | `zuzozen dugedam vaon.` | admits the object; more may follow |
+| *join* / *admit* (take into a set) | `zuzozen dugedam voan.` | admits the object; more may follow |
 | *belong to* | `zanal em bolazun.` | in Olazun's use |
 | *consist of* / *made of* | `zahehal gulem blulel.` | material |
 | *comprise* / *constitute* / *is part of* | `zehowol gobem blahehal.` | a piece of the whole |
@@ -473,7 +473,7 @@ English makes nouns for a part, a kind, a role, and a manner. Agebon has no sepa
 | *function* (purpose) | `zanal guwathom.` | the book's purpose is competence |
 | *size* (how big) | `zanal zehowol zoel gelazom.` | same size as the hammer |
 | *way* / *method* / *style* / *mode* | the manner adverb on `/h/` | `zuzozen vowurel hedurem.` |
-| *instance* / *for example* | `aol …` opens the sentence | one case of what you said |
+| *instance* / *for example* | `oal …` opens the sentence | one case of what you said |
 | *everybody* | `zual` | every member |
 | *absence* | `zawuvol gul` | not present |
 | *poverty* | `zuzozen gegomam gul.` | not wealthy |
@@ -669,7 +669,7 @@ Some English words have a second or third sense that a published root already ca
 | *experience* (skill) | `zuwam` | readiness |
 | *side* (position, location) | `zuhohom` | a position |
 | *address* (a location) | `zuhohom` | where it is |
-| *public* (open to everyone) | `zahehal gaon bual.` | a house open to all |
+| *public* (open to everyone) | `zahehal goan bual.` | a house open to all |
 | *character* (a trait) | `zevebom` | identity, personality |
 | *special* (dear to one person) | `zuzozen golamam.` | cherished |
 | *fit* (healthy) | `zuzozen geredom.` | in health |

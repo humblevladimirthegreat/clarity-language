@@ -62,7 +62,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `galam` | AFTER clause pole (just-after) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
 | `gan` | join-relation including (adjective + argument) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `ganom` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](../relations.md#proxy) | B |
-| `gaon` | join-relation open to (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `garum` | UNTIL clause pole (endpoint bound) | [Time poles on a noun](../dependents.md#time-pole-on-noun) | I |
 | `gebom` | ONLY-IF clause pole (necessary condition) | [Only if](../causation.md#only-if) | B |
 | `gedam` | locative between (two landmarks) | [Locative relations](../relations.md#locative-relations) | I |
@@ -79,6 +78,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `gewol` | similative exactly like (type match) | [Exactly like (hewol / gewol)](../relations.md#exactly-like) | I |
 | `gewom` | similative like (type resemblance) | [Hosted relations](../relations.md#beginner) | B |
 | `gezom` | ALTHOUGH clause pole (concession; NP despite) | [Because, if, although (poles)](../dependents.md#poles) | B |
+| `goan` | join-relation open to (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `gobem` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `goen` | join-relation on a par with (adjective) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `gohem` | locative across (edge to far edge of one landmark) | [Locative relations](../relations.md#locative-relations) | I |
@@ -109,7 +109,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `halam` | AFTER clause pole (just-after) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `han` | join-relation with or including (adverb + argument) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `hanom` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](../relations.md#proxy) | B |
-| `haon` | join-relation among options (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
 | `harum` | UNTIL clause pole (endpoint bound) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `havol` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
@@ -133,6 +132,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `hewol` | similative exactly like (manner match) | [Exactly like (hewol / gewol)](../relations.md#exactly-like) | I |
 | `hewom` | similative like (manner resemblance) | [Extra nouns (/b/)](../clause.md#extra-nouns) | B |
 | `hezom` | ALTHOUGH clause pole (concession; NP despite) | [Because, if, although (poles)](../dependents.md#poles) | B |
+| `hoan` | join-relation among options (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `hobem` | of-relation part-of (constitutive piece) | [Of relations (part of, cup of, made of, from)](../relations.md#of-relations) | I |
 | `hodam` | hostless ability fallback (capacity) | [When there is no single verb (oda)](../intention.md#ability-fallback) | I |
 | `hoen` | join-relation equating or tying (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
@@ -233,8 +233,8 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 |--------|---------|-----------|-------|
 | `vaen` | join-act starts with object | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
 | `van` | join-act includes or adds object | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
-| `vaon` | join-act picks with more picks open | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
 | `ven` | join-act prioritizes object | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
+| `voan` | join-act picks with more picks open | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
 | `voen` | join-act equates or ties objects | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
 | `von` | join-act chooses sole object | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
 | `vuan` | join-act excludes object | [Join-act verbs](../join-across-roles.md#join-act-verbs) | I |
@@ -1039,11 +1039,11 @@ A [sake word](../sakes.md#word-shape) is a sake root, mid-word `th`, **a** (*ser
 | `owurelaem` | *channel* |  |
 | `owurelal` | *enter* |  |
 | `owurelam` | *mill-amid* |  |
-| `owurelaol` | *mount* |  |
-| `owurelaom` | *cover* |  |
 | `owureleboyel` | *toddler* |  |
 | `owurelel` | *serve* |  |
 | `owurelem` | *have-in-use* |  |
+| `owureloal` | *mount* |  |
+| `owureloam` | *cover* |  |
 | `owureloel` | *head-for* |  |
 | `owureloem` | *orient* |  |
 | `owurelol` | *attend* |  |

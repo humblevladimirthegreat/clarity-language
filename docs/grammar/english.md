@@ -127,11 +127,11 @@ One English word, one row: the form that says it and the section that teaches it
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
 | *in* / *into* / *inside* / *within* / *aboard* (*runs into a train*, *sits inside the house*) | hook **`al`** + `/b/`; the verb says whether anything moves; leave out the `/b/` when the place is clear (*went aboard*) | [Locative relations](relations.md#locative-relations) |
-| *on* / *onto* / *upon* (*sits on a chair*, *climbs onto the table*) | hook **`aol`** + `/b/`; the verb says whether anything moves | [Hooks](hooks.md#extra-noun) |
-| *on it* (*sits on it too*) | resume hook **`aor`** | [Point back](hooks.md#hook-resume) |
+| *on* / *onto* / *upon* (*sits on a chair*, *climbs onto the table*) | hook **`oal`** + `/b/`; the verb says whether anything moves | [Hooks](hooks.md#extra-noun) |
+| *on it* (*sits on it too*) | resume hook **`oar`** | [Point back](hooks.md#hook-resume) |
 | *beside* / *next to* / *nearby* (*sleeps near me*) | hook **`om`** + `/b/` | [Hooks](hooks.md#extra-noun), [here and there](hooks.md#deixis) |
 | *among* / *amid* (*sits among the guards*) | hook **`am`** + `/b/` | [Hooks](hooks.md#extra-noun-intermediate) |
-| *over* (*a cloth over the table*: the landmark's face as the setting) | hook **`aom`** + `/b/`; plain height (*above the table*) is gravity **`hayuhel`** | [Hooks](hooks.md#extra-noun-intermediate), [Gravity](roles.md#gravity) |
+| *over* (*a cloth over the table*: the landmark's face as the setting) | hook **`oam`** + `/b/`; plain height (*above the table*) is gravity **`hayuhel`** | [Hooks](hooks.md#extra-noun-intermediate), [Gravity](roles.md#gravity) |
 | *under* / *below* / *beneath* / *underneath* (*sleeps under the tree*) | gravity down **`haduhel`** (on a noun, **`gaduhel`**) + `/b/` | [Gravity](roles.md#gravity) |
 | *above* / *upper* (*the book above the tree*) | gravity up **`hayuhel`** (on a noun, **`gayuhel`**) + `/b/` | [Gravity](roles.md#gravity) |
 | *left side* / *right side* / *behind* / *in front of* (*behind the house*) | a direction with **`th`** + **`o`** + `/b/` landmark, such as `gazuhethol blahehal` | [Landmark's own front](roles.md#landmark-facing) |
@@ -238,7 +238,7 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 | *angry this time*, *lied this once* | **`tha`** on the root: `gunemuthal` | [This episode](predication.md#scope-occasion) |
 | *a stranger to Olazun*, *lying, as far as Olazun is concerned* | **`tho`** plus `/b/`: `golayothom blolazun` | [This pair](predication.md#scope-relative) |
 | *a lying type*, *an anxious type* | **`thu`** on the root: `zuzozen valamuthul` | [Type across scenes](predication.md#scope-type) |
-| *this once, to Olazun* | **`thao`** plus `/b/`: `valamuthaol blolazun` | [Stacked scope](predication.md#scope-stacks) |
+| *this once, to Olazun* | **`thoa`** plus `/b/`: `valamuthoal blolazun` | [Stacked scope](predication.md#scope-stacks) |
 | *becoming a teacher* | **`thoe`**: `gaxuduyethoel` | [Stacked scope](predication.md#scope-stacks) |
 | *not as a teacher* | **`thue`**: `gaxuduyethuel` | [Stacked scope](predication.md#scope-stacks) |
 | *using teacher (as a tool)* | **`thae`**: `gaxuduyethael` | [Stacked scope](predication.md#scope-stacks) |

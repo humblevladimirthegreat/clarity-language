@@ -100,8 +100,21 @@ function play(): void {
   raf = requestAnimationFrame(frame)
 }
 
+let previewBus: GainNode | null = null
+
+/** Sounds the new `a` alone so the learner hears where it sits before pressing Play. */
+function previewA(): void {
+  const a = pianoContext()
+  if (previewBus) previewBus.gain.setTargetAtTime(0, a.currentTime, 0.02)
+  previewBus = pianoBus(a)
+  pianoVoice(a, previewBus, pitchOf('a', base.value, range.value), a.currentTime + 0.02, BEAT * 0.9, 0.9, 0.4)
+}
+
 function step(by: number): void {
-  base.value = Math.min(BASE_MAX, Math.max(BASE_MIN, base.value + by))
+  const next = Math.min(BASE_MAX, Math.max(BASE_MIN, base.value + by))
+  if (next === base.value) return
+  base.value = next
+  previewA()
 }
 
 watch(mode, (m) => {

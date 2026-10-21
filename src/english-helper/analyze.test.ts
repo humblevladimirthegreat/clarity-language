@@ -196,7 +196,7 @@ describe("hooks", () => {
   });
 
   it("reads both columns of the -l / -m grid as cues", () => {
-    assert.ok(hookSlot("A cloth sits over the table.", "over").suggestions.some((s) => s.kind === "job" && s.form.startsWith("aom")));
+    assert.ok(hookSlot("A cloth sits over the table.", "over").suggestions.some((s) => s.kind === "job" && s.form.startsWith("oam")));
     assert.ok(hookSlot("Olazun sits among the guards.", "among").suggestions.some((s) => s.kind === "job" && s.form.startsWith("am")));
   });
 

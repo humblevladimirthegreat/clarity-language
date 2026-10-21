@@ -136,9 +136,24 @@ A full name is the given name plus a family name on `/ɡ/` + **-n** ([word-endin
 
 ### Stacked vowels
 
-Only the six standard stacks exist (`ua` `uo` `ue` `ao` `ae` `oe`), always in the order **u**, **a**, **o**, **e**. A reversed or extra pair is too easy to confuse by ear with its standard twin (`eo` vs `oe`). The former reversed-sequence join `eo` was removed for this reason.
+Only the six standard stacks exist (`uo` `ua` `ue` `oa` `oe` `ae`), always in the order **u**, **o**, **a**, **e**. A reversed or extra pair is too easy to confuse by ear with its standard twin (`eo` vs `oe`).
 
-**e comes last, not o.** In a join stack the last vowel names the move and the first adjusts it, so every rank join ends in **e** (`e` `ae` `ue` `oe`) and every menu join in **o** (`o` `ao` `uo`). Spelling the tie `eo` would make it the one stack whose last vowel names the wrong family, and would break the polar rule (first vowel the family, second what is answered). With **u** as /ʉ/, `oe` vs `ue` is a clear contrast, so the sound gives no reason to move **o** last.
+**Stacks have their own order, not pitch order.** Each vowel keeps its pitch in a stack, so every stack is a small melody, and stacks are worth telling apart by ear. In pitch order (`u e o a`) every stack falls, and `ue`, `eo` and `oa` are all one-step falls that differ only in height. Contrast needs falls and rises mixed, so the order must go down in pitch and back up. All six orders that keep **u** first (the `u` stacks carry **u**-first readings) were scored by close pairs: two stacks whose start and end are each within one pitch step.
+
+| Stack order | Stacks | Close pairs |
+|-------------|--------|-------------|
+| `u e o a` (pitch order: all falls) | `ua uo ue ea oa eo` | 10 |
+| `u e a o` | `ua uo ue ea eo ao` | 8 |
+| `u a e o` | `ua uo ue ae ao eo` | 6 |
+| `u a o e` | `ua uo ue ae ao oe` | 5 |
+| `u o e a` | `ua uo ue oe oa ea` | 5 |
+| **`u o a e`** | `ua uo ue oa ae oe` | **3** |
+
+The ranking is the same in semitones (0 / 3 / 5 / 7) as in steps. `u o a e` gives three falls from the top, one low fall (`oa`) and two rises (`ae`, `oe`); `oa` falls where the other two non-**u** stacks rise. An order with **o** before **u** (`ua ou ue ae oa eo`) has no two stacks one step apart at either end, but its preferences run in a circle, so learners would memorize six pairs instead of one order. The alphabet's vowels follow the same order, so a stack is always in alphabetical order.
+
+**Polar stance reads by contents.** With **a** never before **o**, the *sure* stance `oa` cannot start with its accept vowel, so a polar pair is read by which vowels it has: **u** is the undo family, otherwise **a** accept, otherwise **o** pass ([questions](../grammar/questions.md#polar-stance-fuller-inventory)). The ranking is its own short rule (undo outranks accept, accept outranks pass), and it matches pronoun tag pairs, which already ignore order.
+
+**e comes last, not o.** In a rank join stack the last vowel names the move and the first adjusts it, so every rank join ends in **e** (`e` `ae` `ue` `oe`). Spelling the tie `eo` would make it the one rank join that does not end in **e**. With **u** as /ʉ/, `oe` vs `ue` is a clear contrast, so the sound gives no reason to move **o** last.
 
 ### Closed-root endings
 
@@ -234,7 +249,7 @@ The [finger code](../grammar/finger-code.md) gives each letter a shape counted o
 | Alternative | Why not |
 |-------------|---------|
 | Vowel runs from the index | On the left hand the index plays the highest key, so a one-finger `a` would strike A♯3 and the piano would fall as the count rose. It would need either *fewer fingers, higher vowel* (shapes that count against the digits) or vowels on the right hand (consonants below them and a new piano layout) |
-| Vowel shapes in alphabet order (`u a o e`) | The piano's finger-to-key layout would no longer match the vowel pitches |
+| Vowel shapes in alphabet order (`u o a e`) | The piano's finger-to-key layout would no longer match the vowel pitches, and the opposite pairs would each be two fingers apart |
 
 | Alternative | Why not |
 |-------------|---------|

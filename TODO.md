@@ -12,6 +12,7 @@ use [skip-cd] for amplify to not deploy.
 -vocab flashcards generator
 -contact form / about me
 -proposals
+-pitch drill (phonology.md#vowels, `<PitchDrill />`): *find my `a`*, where the learner sings a comfortable `a` into the microphone and the widget sets the base from its pitch; then a pitch check (sung pitch against the target, within about a semitone). The drill must keep working without the microphone
 
 Finger code (experimental, docs/grammar/finger-code.md; remove the warning once tested):
 -piano on a real instrument, with a player controlling the timing: do the held coda and the one-beat word rest read at speed, is the hook mark easy to hear, do `n` (a sixth) and `e` + hook (a seventh) sound smooth
@@ -22,7 +23,7 @@ Finger code (experimental, docs/grammar/finger-code.md; remove the warning once 
 -sideways vowel hand: comfortable over a long conversation? Fallback: fingers diagonal
 -gesture meanings: the raised thumb (`z`) and horns (`m`) are rude in some regions; check before teaching widely
 -spares and free layers: vowel-hand thumb; consonant-hand pinky alone, middle + ring + pinky, thumb + index + pinky, thumb + a hooked run; piano 2 + 4 and 3 + 5; white keys; hand location, wrist movement, the face. Candidates: the period, `/y/` turns, tone marks, span fences
--speech edges (phonology.md#speech-edges: level pitch on list items, reset at a new turn) need a rendering per channel: dynamics and rests on piano, hand height or a pause in signing, a lift or press strength in touch
+-speech edges (phonology.md#speech-edges): the finger code has its word and sentence rests, but no channel renders the scope-island break (the next beat half a beat late, before and after the island)
 -render parsed doc examples through the finger code (the site player covers typed text only)
 
 save for near end of limit resets:

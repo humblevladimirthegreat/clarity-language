@@ -363,7 +363,7 @@ function bindRole(ctx: Ctx, pronoun: LexWord): void {
 const CORE_ROLES = new Set<RoleVowel>(["a", "u", "o"]);
 
 /** Place hooks whose `/b/` is the scene (hooks.md#extra-noun). */
-const PLACE_HOOKS = new Set(["al", "am", "aol", "aom", "ol", "om"]);
+const PLACE_HOOKS = new Set(["al", "am", "oal", "oam", "ol", "om"]);
 
 /** Extra-noun hooks paired with a stacked role vowel (`ael` → instrument `ae`). */
 const STACKED_HOOK_ROLE: Record<string, RoleVowel> = { ael: "ae", oel: "oe", ual: "ua", uol: "uo", uel: "ue" };

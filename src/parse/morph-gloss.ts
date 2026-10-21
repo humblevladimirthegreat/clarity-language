@@ -114,7 +114,7 @@ const JOIN_JOB_STANDALONE: Record<string, string> = {
 const JOIN_ACT: Record<string, string> = {
   a: "includes",
   o: "choose",
-  ao: "picks",
+  oa: "picks",
   u: "denies",
   ua: "excludes",
   uo: "bars",
@@ -127,7 +127,7 @@ const JOIN_ACT: Record<string, string> = {
 const JOIN_RELATION: Record<string, string> = {
   a: "including",
   o: "exclusive-for",
-  ao: "open-to",
+  oa: "open-to",
   u: "against",
   ua: "without",
   uo: "anything-but",
@@ -145,8 +145,8 @@ const HOOK_JOB: Record<string, string> = {
   em: "in.other.words.open",
   ael: "in.fact",
   aem: "in.fact.open",
-  aol: "for.example",
-  aom: "for.example.open",
+  oal: "for.example",
+  oam: "for.example.open",
   ol: "instead",
   om: "instead.open",
   ul: "except",
@@ -177,7 +177,7 @@ const HOOK_EXTRA_NOUN: Record<string, string> = {
   or: "there",
   ur: "from.there",
   er: "for.that",
-  aor: "on.it",
+  oar: "on.it",
   aer: "with.it",
   uor: "through.there",
   al: "in",
@@ -192,9 +192,9 @@ const HOOK_EXTRA_NOUN: Record<string, string> = {
   el: "for",
   em: "used-by",
   en: "for.named",
-  aol: "on",
-  aom: "over",
-  aon: "on.named",
+  oal: "on",
+  oam: "over",
+  oan: "on.named",
   oel: "toward",
   oem: "in-the-direction-of",
   oen: "toward.named",
@@ -237,7 +237,7 @@ const FORCE_JOB_FOR_NOW: Record<string, string> = {
 const POLAR_JOB: Record<string, string> = {
   ae: "yes",
   ue: "no",
-  ao: "sure",
+  oa: "sure",
   uo: "refuse-option",
   ua: "reject-frame",
   oe: "decline",
@@ -256,7 +256,7 @@ const SCOPE_VOWEL: Record<string, string> = {
   e: "role",
   o: "pair",
   u: "type",
-  ao: "on-pair",
+  oa: "on-pair",
   ae: "using",
   oe: "toward-role",
   ua: "except-episode",
@@ -282,7 +282,7 @@ const SAKE_GRAIN: Record<string, Partial<Record<Ending, string>>> = {
 /** Emotion tail (sakes.md#emotion-compose): locus hook vowel(s), then motion ending. */
 const EMOTION_LOCUS: Record<string, string> = {
   a: "INTERNAL",
-  ao: "CIRCUM",
+  oa: "CIRCUM",
   uo: "UNPLACED",
   o: "AIMED",
   oe: "SEEKING",
@@ -310,7 +310,7 @@ export const ROLE_VOWEL: Record<string, string> = {
   oe: "goal",
   ua: "source",
   uo: "path",
-  ao: "result",
+  oa: "result",
   ue: "bearer",
 };
 
@@ -1103,7 +1103,7 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
       u: ["prohibit", "caution-against"],
       ae: ["confirm", "tentatively-confirm"],
       ue: ["deny", "express-doubt"],
-      ao: ["agree", "tentatively-agree"],
+      oa: ["agree", "tentatively-agree"],
       uo: ["decline-to", "hesitate-to"],
       ua: ["reject-premise", "question-framing"],
     };
@@ -1119,7 +1119,7 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
       u: "prohibition",
       ae: "confirmation",
       ue: "denial",
-      ao: "agreement",
+      oa: "agreement",
       uo: "decline",
       ua: "premise-rejection",
     };
@@ -1194,7 +1194,7 @@ function fenceJoinLabel(
   }
 
   if (ending === "n" && pos === "x") {
-    const sequence: Record<string, string> = { a: "and-then", o: "or-else", u: "and-then-not", ao: "and-or-else", ue: "and-before-that" };
+    const sequence: Record<string, string> = { a: "and-then", o: "or-else", u: "and-then-not", oa: "and-or-else", ue: "and-before-that" };
     if (sequence[series]) return sequence[series];
   }
 
@@ -1232,7 +1232,7 @@ function restrictorLabel(
   if (series === "o") return `when-one${open}`;
   if (series === "e") return `when-ranked${open}`;
   if (series === "oe") return `equally-when${open}`;
-  if (series === "ao") return `when-any-of${open}`;
+  if (series === "oa") return `when-any-of${open}`;
   if (series === "uo") return `anytime-except${open}`;
   if (series === "ae") return `when-in-order${open}`;
   if (series === "ue") return `when-last${open}`;

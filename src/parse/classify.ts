@@ -66,8 +66,8 @@ const RESTRICTOR_CORE = new Set<string>([
   // set / invert / inclusive
   "ol",
   "om",
-  "aol",
-  "aom",
+  "oal",
+  "oam",
   "ul",
   "um",
   "uol",
@@ -168,7 +168,7 @@ const JOIN_ENDING_GLOSS: Record<string, string> = {
   rm: "stand-in open",
 };
 
-const NAMED_STAND_IN_SERIES = new Set(["a", "o", "e", "u", "ae", "ue", "ao", "uo", "ua"]);
+const NAMED_STAND_IN_SERIES = new Set(["a", "o", "e", "u", "ae", "ue", "oa", "uo", "ua"]);
 
 /** Fence-join gloss (not restrictors, join-acts, or `/y/` force/polar). */
 export function joinFenceGloss(series: string, ending: string | undefined): string {
@@ -603,7 +603,7 @@ function heldPointer(word: MorphWord, tables: ClassifyTables): MorphWord | undef
     body = family.leftRoots[0]!;
     pointerVowel = family.stanceVowel;
   } else return undefined;
-  const match = /^(.+)([lmr])(ae|ao|oe|ua|ue|uo|[aeou])$/.exec(body);
+  const match = /^(.+)([lmr])(ae|oa|oe|ua|ue|uo|[aeou])$/.exec(body);
   if (!match) return undefined;
   const [, host, grade, roleVowel] = match as unknown as [string, string, "l" | "m" | "r", RoleVowel];
   const row = tables.overlays.get(overlayKey("th", `${host}${grade}`));

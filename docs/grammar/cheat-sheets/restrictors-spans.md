@@ -41,7 +41,7 @@ The vowel picks the reading and the ending says how open the list is: **-l** clo
 |--------|-----|--------------------------|----------------|-------|
 | [**`hal` / `ham`**](../restrictors.md#more-occasions) | listed times | *only when…* / *when…, among others* | *never* / *never, as far as I know* | B |
 | [**`hol` / `hom`**](../restrictors.md#more-occasions) | one exclusive menu | *either when A or when B (not both)* | | I |
-| [**`haol` / `haom`**](../restrictors.md#more-occasions) | any of the listed times | *when A and/or when B* | | I |
+| [**`hoal` / `hoam`**](../restrictors.md#more-occasions) | any of the listed times | *when A and/or when B* | | I |
 | [**`hul` / `hum`**](../restrictors.md#more-occasions) | invert the list | *not when…* | | I |
 | [**`hual` / `huam`**](../restrictors.md#more-occasions) | every time minus the list | *always except when…* | *always* / *usually* | B |
 | [**`huol` / `huom`**](../restrictors.md#more-occasions) | any leftover time minus the list | *anytime except when…* | | I |
@@ -73,7 +73,7 @@ With several occasions before `huel`, the last listed is the first choice.
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Either, not both](../restrictors.md#more-occasions) | `zuzozen vowurel herulal hanurul hol.` | *Uzozen walks either when it rains or at night.* (not both) | I |
-| [And/or](../restrictors.md#more-occasions) | `zolazun vezuvol herulal hozulal haol.` | *Olazun sleeps when it rains and/or when it snows.* | I |
+| [And/or](../restrictors.md#more-occasions) | `zolazun vezuvol herulal hozulal hoal.` | *Olazun sleeps when it rains and/or when it snows.* | I |
 | [Preferably](../restrictors.md#more-occasions) | `zuzozen vowurel hubeham hanurul hel.` | *preferably on weekends, or else at night* | I |
 | [Last resort](../restrictors.md#more-occasions) | `zuzozen vowurel herulal huel.` | *When it rains, Uzozen walks only as a last resort.* | I |
 | [When's best?](../restrictors.md#more-occasions) | `yol her zayan vowurel.` | *When's best for us to walk?* | I |

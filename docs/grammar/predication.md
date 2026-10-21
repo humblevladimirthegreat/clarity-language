@@ -460,14 +460,14 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 <!-- cheat-sheet: word-shape-clause -->
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thao`** | this episode **on** this pair | *teacher this time, to Olazun* | **ao** ≈ on |
+| **`thoa`** | this episode **on** this pair | *teacher this time, to Olazun* | **oa** ≈ on |
 | **`thae`** | **using** the role as a means | *using teacher (as a tool)* | **ae** ≈ using |
 | **`thoe`** | **toward** the role | *becoming a teacher* | **oe** ≈ toward |
 | **`thua`** | type **except** this episode | *a teacher type, except this time* | **ua** ≈ everything but |
 | **`thuo`** | type **except** this pair | *a teacher type, except with Olazun* | **uo** ≈ anything but that one |
 | **`thue`** | **not in that capacity** | *not as a teacher* | **ue** ≈ against / outside |
 
-> `zuzozen valamuthaol blolazun.`
+> `zuzozen valamuthoal blolazun.`
 >
 > z-Uzozen | [v-lie-th-on-pair | bl-Olazun]
 >
@@ -503,7 +503,7 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > "I am not speaking as a teacher."
 
-**`thao`** and **`thuo`** take `/b/` the same way **`tho`** does. **`thue`** means speaking off duty or refusing that role, not *fake teacher*.
+**`thoa`** and **`thuo`** take `/b/` the same way **`tho`** does. **`thue`** means speaking off duty or refusing that role, not *fake teacher*.
 
 ### Practice {#intermediate-practice}
 

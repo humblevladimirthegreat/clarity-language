@@ -28,7 +28,7 @@ Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org
 
 Each vowel also has its own **pitch**, always the same one: `u` is high, `e` mid-high, `o` mid-low, and `a` low. Vowel pitch is optional and adds no meaning. It backs up the vowel's sound, so a listener who half-hears a vowel can still tell which one it was. When a vowel's sound and its pitch disagree, trust the sound. Keep each vowel's pitch when you stress a word or say it with feeling: Agebon stresses a word by saying it louder, not higher.
 
-Voices differ, so a vowel's pitch is how far it sits above your own `a`, not a fixed note. To practice, pick a pattern below, move `a` until it sits comfortably in your voice, press **Play**, and sing each vowel as it lights up.
+Voices differ, so a vowel's pitch is how far it sits above your own `a`, not a fixed note. To practice, pick a pattern below, move `a` until it sits comfortably in at the lower end of your vocal range, press **Play**, and sing each vowel as it lights up.
 
 <PitchDrill />
 
@@ -48,7 +48,7 @@ To find `u`, start from `a`: keep the tongue centered, close the jaw, and round 
 ### Consonants
 
 A consonant starts a syllable. Many consonants have a **voiced** sound (vocal cords buzzing, as in *zoo*) and an unvoiced one (as in *sea*), and Agebon treats the two as the same letter. Prefer the voiced sound so you can hold a sung note; the unvoiced one is fine for style.
-<!-- Consonant order is alphabet order: the ten digit letters in digit order (b d g h z v r l n m = 1–9, 0), then w y th x. The alphabet / letter-name recitation ends with the vowels u a o e, the same order as vowel stacks. -->
+<!-- Consonant order is alphabet order: the ten digit letters in digit order (b d g h z v r l n m = 1–9, 0), then w y th x. The alphabet / letter-name recitation ends with the vowels u o a e, the same order as vowel stacks. -->
 
 | Agebon | IPA | Cue | Unvoiced variant |
 |--------|-----|-----|------------------|
@@ -108,7 +108,18 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 
 A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubulel`: prefix `z`, root `ubule`, ending `-l`). Each spelling has only one pronunciation. Writing does not mark stress. Musical rhythm may still place emphasis.
 
-Some short grammar words stack two vowels (a join such as **ua**). A stack always puts its vowels in alphabetical order (**u**, **a**, **o**, **e**): **u** comes first and **e** comes last. That gives six stacks: **ua**, **uo**, **ue**, **ao**, **ae**, and **oe**. The two vowels stay two separate syllables.
+Some short grammar words stack two vowels (a join such as **ua**). A stack always puts its vowels in alphabetical order (**u**, **o**, **a**, **e**): **u** comes first and **e** comes last. That gives six stacks: **uo**, **ua**, **ue**, **oa**, **oe**, and **ae**. The two vowels stay two separate syllables.
+
+Each vowel keeps its [pitch](#vowels) in a stack, so every stack is a small melody. The alphabet's vowel order goes down in pitch and back up, so the stacks mix falls and rises and each one sounds different from the others:
+
+| Stack | Pitch | Contour |
+|-------|-------|------|
+| `ua` | high → low | big fall |
+| `uo` | high → mid-low | medium fall |
+| `ue` | high → mid-high | small fall, high |
+| `oa` | mid-low → low | small fall, low |
+| `ae` | low → mid-high | medium rise |
+| `oe` | mid-low → mid-high | small rise, mid |
 
 **Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 
@@ -162,8 +173,8 @@ The table is in **alphabetical order**. The ten letters that begin a digit sylla
 | `th` | `tho` | *though* (no glide) |
 | `x` | `xu` | *shoe* |
 | `u` | `u` | *you* (without the *y*) |
-| `a` | `a` | *spa* |
 | `o` | `o` | *Cambodia* (no glide) |
+| `a` | `a` | *spa* |
 | `e` | `e` | *bet* |
 
 <!-- retie: letter-names -->

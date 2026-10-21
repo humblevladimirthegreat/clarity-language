@@ -312,8 +312,16 @@ describe("morphGlossLine — restrictor -r vs -l", () => {
 });
 
 describe("morphGlossLine — tags, xuen, hewol, pointer anchors", () => {
+  it("every polar stance keeps its reading (questions.md#polar-stance-fuller-inventory)", () => {
+    expectLine("yael", "y-yes");
+    expectLine("yoal", "y-sure");
+    expectLine("yuel", "y-no");
+    expectLine("yuol", "y-refuse-option");
+    expectLine("yual", "y-reject-frame");
+    expectLine("yoel", "y-decline");
+  });
   it("any polar word makes a tag after yol (questions.md#tags)", () => {
-    expectLine("yem zayan vowurel. yol yaol.", "y-request | z-interlocutors | v-walk . y-question | y-sure");
+    expectLine("yem zayan vowurel. yol yoal.", "y-request | z-interlocutors | v-walk . y-question | y-sure");
     expectLine("yem zawan vowurel. yol yuol.", "y-request | z-listener | v-walk . y-question | y-refuse-option");
     expectLine("zuzozen vowurel. yol yuel.", "z-Uzozen | v-walk . y-question | y-no");
   });
@@ -449,7 +457,7 @@ describe("compareMorphGloss", () => {
   it("values bake stance and ending grain", () => {
     expectLine("zewal gawothal", "z-present | g-relatedness-met-lasting");
     expectLine("zabowam wunathur goyem", "z-gathering | [w-autonomy-unmet-passing | g-stimulus]");
-    expectLine("zezuyel wuwathuraor goyem", "z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]");
+    expectLine("zezuyel wuwathuroar goyem", "z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]");
     expectLine("zebewem guwathamar", "z-draft | g-competence-met-any-term-INTERNAL-SURGING");
     expectLine("zonal wawothumuer goyem", "z-memo | [w-relatedness-unmet-modifiable-RESISTING-SURGING | g-stimulus]");
     expectLine("gawothaluom", "g-relatedness-met-lasting-UNPLACED-FLOWING");
@@ -492,7 +500,7 @@ describe("compareMorphGloss", () => {
   });
 
   it("stacked extra-noun -r points back (hooks.md § Point back)", () => {
-    expectLine("zuzozen vuhohol aor", "z-Uzozen | v-sit | on.it");
+    expectLine("zuzozen vuhohol oar", "z-Uzozen | v-sit | on.it");
     expectLine("zolazun varayel aer", "z-Olazun | v-write | with.it");
     expectLine("zuzozen vowurel uor", "z-Uzozen | v-walk | through.there");
   });
@@ -510,7 +518,7 @@ describe("compareMorphGloss", () => {
     expectLine("zolazun ganumuthul", "z-Olazun | g-anxious-th-type");
     expectLine("zolazun gaxuduyethel", "z-Olazun | g-agent-x-teach-th-role");
     expectLine("zuzozen valamuthol blolazun", "z-Uzozen | [v-lie-th-pair | bl-Olazun]");
-    expectLine("zuzozen valamuthaol blolazun", "z-Uzozen | [v-lie-th-on-pair | bl-Olazun]");
+    expectLine("zuzozen valamuthoal blolazun", "z-Uzozen | [v-lie-th-on-pair | bl-Olazun]");
     expectLine("zuzozen valamuthual", "z-Uzozen | v-lie-th-except-episode");
     expectLine("zolazun gaxuduyethael", "z-Olazun | g-agent-x-teach-th-using");
     expectLine("zolazun gaxuduyethoel", "z-Olazun | g-agent-x-teach-th-toward-role");

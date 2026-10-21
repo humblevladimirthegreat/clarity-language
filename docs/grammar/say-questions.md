@@ -214,8 +214,8 @@ Under question, the rest of the single-item and standalone join map is confirm /
 | **…uam** | *Everything but X (at least)?* (offer) |
 | **…uol** | *Anything but X?* |
 | **…uom** | *Anything but X?* (offer) |
-| **…aol** | *Is X enough?* |
-| **…aom** | *Would X do?* (offer) |
+| **…oal** | *Is X enough?* |
+| **…oam** | *Would X do?* (offer) |
 | **…ar** | *What/which (unknown) X?* (fill-ask) |
 | **…or** | *Any X?* (fill-ask) |
 | **…ul** | *Not X?* |
@@ -236,8 +236,8 @@ Under question, the rest of the single-item and standalone join map is confirm /
 | **…uam** | *Everything you can think of?* |
 | **…uol** | *Anything?* |
 | **…uom** | *Anything?* (offer) |
-| **…aol** | *All set?* |
-| **…aom** | *Nothing you need?* |
+| **…oal** | *All set?* |
+| **…oam** | *Nothing you need?* |
 | **…ul** | *No?* |
 | **…um** | *Soft no?* |
 | **…un** | *No?* (stock) |
@@ -281,7 +281,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 |---------|--------|---------|
 | *offer* (a thing) | `yom` + a giving | soft question: *would you like…?* |
 | *suggest* / *propose* (a joint act) | `yem vowurel zayan.` | soft request with *we* |
-| *…, okay?* / *…, deal?* (after a suggestion) | `yol yaol.` | tag: asks them to take it up |
+| *…, okay?* / *…, deal?* (after a suggestion) | `yol yoal.` | tag: asks them to take it up |
 | *…, or would you rather not?* | `yol yuol.` | tag: offers them the refusal |
 | *suggest* (a view) | `yam` | soft statement: *for what it's worth* |
 | *recommend* / *advise* (unasked) | `thawothem` | prescription, offered |
@@ -318,7 +318,7 @@ English *offer*, *suggest*, *propose*, *recommend* and *advise* all put somethin
 | *sir* / *madam* | `yolazun.` | call them by name |
 | *yeah* / *yep* | `yaem.` / `yael.` | yes, soft / firm |
 | *nope* / *nah* | `yuel.` / `yuem.` | no, firm / soft |
-| *yeah, sure* | `yaol.` | take up the offer |
+| *yeah, sure* | `yoal.` | take up the offer |
 | *quote* (the exact words) | `d[zolazun vezuyel]` | cite |
 | *quote* (the gist) | `d~[zolazun vezuyel]` | paraphrase cite |
 | *mention* (a word) | `glegel z[udozo]` | mention |
@@ -386,14 +386,14 @@ y-question | z-equal-rank
 **5.** *Is the trophy enough?*
 
 ::: details Show answer
-`yol zodoral zaol.`
+`yol zodoral zoal.`
 
 y-question | [z-trophy | z-and/or]
 :::
 
 #### Agebon → English {#questions-joins-agebon-to-english}
 
-**1.** `yael.` vs `yaol.`
+**1.** `yael.` vs `yoal.`
 
 ::: details Show answer
 

@@ -1,13 +1,13 @@
 import type { OverlayKind } from "../lexicon-search.js";
 
 /** Role compound vowel (roles.md): simplex or stacked. */
-export type RoleVowel = "a" | "e" | "u" | "o" | "ae" | "ao" | "oe" | "ua" | "ue" | "uo";
+export type RoleVowel = "a" | "e" | "u" | "o" | "ae" | "oa" | "oe" | "ua" | "ue" | "uo";
 
 /** Role pointer vowel: `a` same, `o` other, `e` self, `u` unsaid (pronouns.md#role-pointers). */
 export type PointerVowel = "a" | "e" | "o" | "u";
 
 /** Label-scope seam: simplex or the six stacks (predication.md#label-scope). */
-export type ScopeVowel = "a" | "e" | "o" | "u" | "ae" | "ao" | "oe" | "ua" | "ue" | "uo";
+export type ScopeVowel = "a" | "e" | "o" | "u" | "ae" | "oa" | "oe" | "ua" | "ue" | "uo";
 
 /** Part-of-speech prefix letters (role stamps). */
 export type Pos = "z" | "d" | "b" | "v" | "g" | "w" | "h" | "th" | "x" | "y";
@@ -87,7 +87,7 @@ export type MorphWordFamily =
       /** Emotion compose: sake horizon letter moved mid-word (sakes.md#emotion-compose). */
       horizon?: "l" | "m" | "r";
       /** Emotion compose locus: hook vowel(s) for placement or direction (sakes.md#emotion-compose). */
-      locus?: "a" | "e" | "o" | "u" | "ao" | "ae" | "oe" | "ua" | "uo" | "ue";
+      locus?: "a" | "e" | "o" | "u" | "oa" | "ae" | "oe" | "ua" | "uo" | "ue";
       /** Nested number stem (numeric derivation). */
       numberStem?: NumberStem;
       /** Lexical join before a numeric stem (`l` everyday host, `m` abstract). */

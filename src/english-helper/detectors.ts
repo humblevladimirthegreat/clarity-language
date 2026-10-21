@@ -158,7 +158,7 @@ export function detectHook(c: HookContext): DetectorHit[] {
   }
   const out: DetectorHit[] = [];
   if (c.next?.cls === "question" || c.stranded) out.push({ id: "hook-blank", label: `*${c.word}* + a question word: the hook + blank \`bar\` (\`ol bar\` *where?*, \`ael bar\` *with what?*)`, links: [...HOOK_LINKS.blank] });
-  else if (c.next && RESUME_TARGETS.has(c.next.normal)) out.push({ id: "hook-resume", label: `*${c.word} ${c.next.normal}*: the hook points back with -r (\`aor\` *on it*)`, links: [...HOOK_LINKS.resume] });
+  else if (c.next && RESUME_TARGETS.has(c.next.normal)) out.push({ id: "hook-resume", label: `*${c.word} ${c.next.normal}*: the hook points back with -r (\`oar\` *on it*)`, links: [...HOOK_LINKS.resume] });
   if (c.afterFrom && GOAL_WORDS.has(c.word)) out.push({ id: "from-to", label: "*from … to*: one unit, `ul` + the source first, then `ol` (reached) or `oel` (toward) + the goal", links: [...HOOK_LINKS.fromTo] });
   else if (c.hook && c.before?.role === "b") out.push({ id: "hook-on-landmark", label: `right after the landmark *${c.before.text}*: the hook describes *${c.before.text}*, not the clause`, links: [...HOOK_LINKS.landmark] });
   else if (c.hook && c.before && (c.before.role === "z" || c.before.role === "d")) {

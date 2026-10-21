@@ -354,20 +354,20 @@ English emotion words (*anxious*, *resentful*, *proud*) often do **judgment or e
 
 Put that word where any sake word goes: on `/ɡ/` after a belonging, on `/w/` immediately before [stimulus](#stimulus) **`goyem`** when the noun is not yours, or on `/th/` by itself when the feeling has no object. For the bare noun *emotion*, with no judgment to explain, use the compound `zabolohalal` (the water of the heart).
 
-> `zezuyel wuwathuraor goyem.`
+> `zezuyel wuwathuroar goyem.`
 >
 > z-speech | [w-competence-unmet-passing-CIRCUM-SURGING | g-stimulus]
 >
 > "I'm anxious about the dialogue." (my competence is at stake for now, the feeling hangs over the room, and it comes in waves)
 
-Build it from the plain sake word: `wuwathur` (competence, unmet, passing) + **`ao`** (*over*: CIRCUM) + **-r** (SURGING) = `wuwathuraor`. The sake word's own ending (**-r** here) now sits mid-word and keeps its meaning.
+Build it from the plain sake word: `wuwathur` (competence, unmet, passing) + **`oa`** (*over*: CIRCUM) + **-r** (SURGING) = `wuwathuroar`. The sake word's own ending (**-r** here) now sits mid-word and keeps its meaning.
 
 The locus uses the hook vowels you already know. A **placement** locus says where the feeling sits:
 
 | Locus | Hook | Use | English |
 |-------|------|-----|---------|
 | **`a`** | *in* | INTERNAL | *mine, held inside* |
-| **`ao`** | *over* | CIRCUM | *the atmosphere of the situation* |
+| **`oa`** | *over* | CIRCUM | *the atmosphere of the situation* |
 | **`uo`** | *through* | UNPLACED | *I can't place where it comes from* (no single source) |
 
 A **direction** locus says what the charge points at:
@@ -421,7 +421,7 @@ The locus plus the motion ending is the **emotion tail**. It goes on met **`tha`
 <!-- cheat-sheet: why-allowed -->
 | Agebon | English |
 |---------|---------|
-| `zezuyel wuwathuraor goyem` | *anxious about the dialogue* (competence at stake, temporary; hangs over the room; surging) |
+| `zezuyel wuwathuroar goyem` | *anxious about the dialogue* (competence at stake, temporary; hangs over the room; surging) |
 | `zozowum wawothumual goyem` | *given up over the division* (unmet relatedness; out of fight; still) |
 | `zebewem guwathamar` | *proud of the draft* (met competence; held inside; surging) |
 | `zonal wawothumem goyem bluzozen` | *upset for Uzozen about the memo* (unmet relatedness; on Uzozen's behalf; flowing) |
@@ -739,7 +739,7 @@ The negatives use the root **`egu`** (⛔ *no entry*) with the same endings.
 | **`thegum`** | a person forbids it | *may not* / *I won't let you* | **-m** ≈ mouth: someone said no |
 | **`thegur`** | frowned on: no one forbade it, but it is not welcome | *people won't like it* | **-r** ≈ read the room: nobody said no, but it's not welcome |
 
-To **ask** for permission, put the clause under [ask](questions.md#question): `yom zuwon vuhohol tholem.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
+To **ask** for permission, put the clause under [ask](questions.md#question): `yom zuwon vuhohol tholem.` (*May I sit?*). Grant it with [**`yoal.`**](questions.md#polar-stance) (*go ahead*).
 
 **Compare with:** [prescription](#sake-force) **`the`** says the act *ought* to serve a sake; permission only says the act is *allowed*.
 

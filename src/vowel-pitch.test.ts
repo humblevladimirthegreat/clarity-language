@@ -18,7 +18,7 @@ describe("vowel pitch", () => {
   });
 
   it("lists the six stacks", () => {
-    assert.deepEqual(STACKS, ["ua", "uo", "ue", "ao", "ae", "oe"]);
+    assert.deepEqual(STACKS, ["uo", "ua", "ue", "oa", "oe", "ae"]);
   });
 
   it("opens every pattern after the scales with a", () => {
@@ -34,7 +34,9 @@ describe("vowel pitch", () => {
     assert.equal(contours.yael, "rises");
     assert.equal(contours.yuel, "falls");
     assert.equal(contours.ua, "falls");
+    assert.equal(contours.oa, "falls");
     assert.equal(contours.ae, "rises");
+    assert.equal(contours.oe, "rises");
   });
 
   it("asks for the random vowel before playing it", () => {
