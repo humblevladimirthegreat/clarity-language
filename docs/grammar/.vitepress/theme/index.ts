@@ -14,7 +14,6 @@ import ClaritishEditor from '../components/ClaritishEditor.vue'
 import IpaPlay from '../components/IpaPlay.vue'
 import NameHelper from '../components/NameHelper.vue'
 import PitchDrill from '../components/PitchDrill.vue'
-import PitchPlay from '../components/PitchPlay.vue'
 import PrintButton from '../components/PrintButton.vue'
 import SelfCode from '../components/SelfCode.vue'
 import SelfGloss from '../components/SelfGloss.vue'
@@ -34,7 +33,6 @@ export default {
     app.component('IpaPlay', IpaPlay)
     app.component('NameHelper', NameHelper)
     app.component('PitchDrill', PitchDrill)
-    app.component('PitchPlay', PitchPlay)
     app.component('PrintButton', PrintButton)
     app.component('SelfCode', SelfCode)
     app.component('SelfGloss', SelfGloss)

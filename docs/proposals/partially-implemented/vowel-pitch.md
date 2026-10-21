@@ -43,7 +43,7 @@ Vowel pitches are **intervals above the speaker's own `a`**, not fixed notes: vo
 | `e` | +5 | 4 | G♯3 |
 | `u` | +7 | 5 | A♯3 |
 
-- **The piano is the reference.** With the finger code's vowel shapes counting up the pitches ([finger code and instruments](#finger-code-and-instruments)), each vowel's piano key sits at its interval above D♯3, the default base for `a`. Grammar pages play that key as the pitch cue, and the practice widget moves the base to the learner's own voice ([piano cues](#piano-cues)), until recorded pitched vowels replace it. Learners match the intervals, not the notes.
+- **The piano is the reference.** With the finger code's vowel shapes counting up the pitches ([finger code and instruments](#finger-code-and-instruments)), each vowel's piano key sits at its interval above D♯3, the default base for `a`. The vowel table plays no single key, since one note alone shows no interval; the practice widget plays the pitches relative to a base the learner moves to their own voice ([piano cues](#piano-cues)). Learners match the intervals, not the notes.
 - **Pentatonic.** The four pitches are minor-pentatonic degrees 1, ♭3, 4, 5. Any two form a consonant interval, so a line chanted on its vowel pitches sounds like music, not out of tune. A songwriter may optionally let a melody follow the vowel pitches (as Cantonese pop lyric-setting does), but no song has to.
 - **Widest gaps where they matter.** `a` ↔ `u`, the opposite pair that flips meaning, is a fifth apart. `u` ↔ `o`, the two rounded vowels and the closest pair by ear, is 4 semitones. The 2-semitone steps (`e` ↔ `o`, `u` ↔ `e`) sit between vowels that already differ in lip or tongue position.
 - **Realistic.** Cantonese level tones span about 5–6 semitones; an English emphatic rise often reaches a fifth.
@@ -173,7 +173,7 @@ No spelling changes.
 
 | Level | Section | What it teaches |
 |-------|---------|-----------------|
-| Beginner | [phonology.md § vowels](../../grammar/phonology.md#vowels) | A pitch column in the vowel table (high / mid-high / mid-low / low) with a piano cue on each row, and the [practice widget](#practice-widget) in its beginner modes. One paragraph: each vowel always has its own pitch; vowel pitch is optional and adds no meaning; when pitch and sound disagree, trust the sound; keep each vowel's pitch when you stress or emphasize a word, because Agebon stresses with loudness. |
+| Beginner | [phonology.md § vowels](../../grammar/phonology.md#vowels) | A pitch column in the vowel table (high / mid-high / mid-low / low) no per-row play button, and the [practice widget](#practice-widget) in its beginner modes. One paragraph: each vowel always has its own pitch; vowel pitch is optional and adds no meaning; when pitch and sound disagree, trust the sound; keep each vowel's pitch when you stress or emphasize a word, because Agebon stresses with loudness. |
 | Beginner | [§ opposite vowels](../../grammar/phonology.md#opposite-vowels) | One line: `a` and `u` are also the furthest apart in pitch. |
 | Intermediate | [speech-moves.md § tone marks](../../grammar/speech-moves.md#tone-marks) | `?` voice becomes *raised, tentative*: it lifts the whole word, and the vowel pitches keep their order inside it. |
 | Advanced | [§ rhythm and stress](../../grammar/phonology.md#rhythm-and-stress) | Stress is loudness, not pitch or length, with the drum-accent drill. The exact intervals (0 / 3 / 5 / 7 with the piano reference) and how the range narrows in faster speech, with the practice widget's contour and range modes. |
@@ -192,7 +192,7 @@ The Claritish track adds no vowel pitch: its words are spoken inside English, wh
 
 ### Piano cues
 
-Each vowel row plays its left-hand finger-code key (D♯3 to A♯3), the reference for its pitch. A small component (for example `<PitchPlay vowel="u" />`, or a pitch option on `IpaPlay`) gets the key from `pianoNotes` in [`src/finger-code.ts`](../../../src/finger-code.ts) and plays it with the finger code's piano voice, moved out of [`FingerCode.vue`](../../grammar/.vitepress/components/FingerCode.vue) into a shared module so both use one sound. Recorded pitched vowels replace the piano cues later; the IPA clips stay as they are.
+The vowel table has no per-row pitch button. A single fixed note (D♯3 to A♯3) shows no interval and invites learners to match the note, not the distance, and D♯3 sits outside many voices. Pitch audio lives in the practice widget, which plays the finger code's piano voice (a shared module with [`FingerCode.vue`](../../grammar/.vitepress/components/FingerCode.vue)) from a base the learner sets. The IPA clips stay as they are.
 
 #### Practice widget
 
@@ -239,7 +239,7 @@ The vowel hand counts like the digits: its shapes are runs of 1 to 4 fingers **f
 ### Steps
 
 1. [`src/finger-code.ts`](../../../src/finger-code.ts): vowel shapes as pinky runs in digit order (`a o e u`), with `pianoForm` reading a pinky run's last finger as the innermost one; guitar vowel map; their tests. Check the Try-it chart by eye and by ear on each channel.
-2. The piano cue and practice widget components and their registration in the theme; check that the build's tag checks ([`scripts/lint-md-balance.mjs`](../../../scripts/lint-md-balance.mjs), Vue-illegal tags) accept it.
+2. The practice widget component and their registration in the theme; check that the build's tag checks ([`scripts/lint-md-balance.mjs`](../../../scripts/lint-md-balance.mjs), Vue-illegal tags) accept it.
 3. Grammar text from the [table above](#where-it-is-taught).
 4. Meta: [design-decisions.md](../../meta/design-decisions.md) entries for edges by rests (register edges rejected), stress as loudness, and vowel shapes as pinky runs in digit order (runs from the index and alphabet-order shapes rejected).
 5. `npm run cheat-sheet-blocks -- --write`, `npm run build`, `npm test`.

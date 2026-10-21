@@ -1,7 +1,7 @@
 /**
  * Vowel pitch (docs/grammar/phonology.md#vowels): each vowel has its own pitch, counted in semitones
  * above the speaker's own `a`. The piano reference keys are the finger code's vowel keys.
- * Shared by the pitch cue and pitch drill components and their tests. No Node imports (the grammar site bundles this).
+ * Shared by the pitch drill component and their tests. No Node imports (the grammar site bundles this).
  */
 import { VOWEL_LETTERS, vowelKey } from "./finger-code.ts";
 

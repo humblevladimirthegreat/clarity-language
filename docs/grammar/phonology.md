@@ -19,16 +19,16 @@ The cue words below are pronounced as in Standard American English.
 
 | Agebon | IPA | Pitch | Cue |
 |--------|-----|-------|-----|
-| `u` | /ʉ/ <IpaPlay file="Close_central_rounded_vowel.mp3" label="u" /> | high <PitchPlay vowel="u" /> | *you* (without the *y*) |
-| `a` | /ä/ <IpaPlay file="Open_central_unrounded_vowel.mp3" label="a" /> | low <PitchPlay vowel="a" /> | *spa* (like Spanish *casa*) |
-| `o` | /o̞/ <IpaPlay file="Mid_back_rounded_vowel.mp3" label="o" /> | mid-low <PitchPlay vowel="o" /> | *Cambodia* (no glide, like Spanish *todo*) |
-| `e` | /e̞/ <IpaPlay file="Mid_front_unrounded_vowel.mp3" label="e" /> | mid-high <PitchPlay vowel="e" /> | *bet* |
+| `u` | /ʉ/ <IpaPlay file="Close_central_rounded_vowel.mp3" label="u" /> | high | *you* (without the *y*) |
+| `a` | /ä/ <IpaPlay file="Open_central_unrounded_vowel.mp3" label="a" /> | low | *spa* (like Spanish *casa*) |
+| `o` | /o̞/ <IpaPlay file="Mid_back_rounded_vowel.mp3" label="o" /> | mid-low | *Cambodia* (no glide, like Spanish *todo*) |
+| `e` | /e̞/ <IpaPlay file="Mid_front_unrounded_vowel.mp3" label="e" /> | mid-high | *bet* |
 
 Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). /ʉ/ and /ä/ are by [Denelson83](https://commons.wikimedia.org/wiki/User:Denelson83), and /e̞/ and /o̞/ by [TFighterPilot](https://commons.wikimedia.org/wiki/User:TFighterPilot).
 
 Each vowel also has its own **pitch**, always the same one: `u` is high, `e` mid-high, `o` mid-low, and `a` low. Vowel pitch is optional and adds no meaning. It backs up the vowel's sound, so a listener who half-hears a vowel can still tell which one it was. When a vowel's sound and its pitch disagree, trust the sound. Keep each vowel's pitch when you stress a word or say it with feeling: Agebon stresses a word by saying it louder, not higher.
 
-The ♪ button plays each pitch on a piano. Voices differ, so match how far apart the notes are, not the notes themselves. To practice, pick a pattern below, move `a` until it sits comfortably in your voice, press **Play**, and sing each vowel as it lights up.
+Voices differ, so a vowel's pitch is how far it sits above your own `a`, not a fixed note. To practice, pick a pattern below, move `a` until it sits comfortably in your voice, press **Play**, and sing each vowel as it lights up.
 
 <PitchDrill />
 

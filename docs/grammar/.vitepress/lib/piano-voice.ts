@@ -1,4 +1,4 @@
-// The finger code's piano voice, shared by the Finger Code page and the vowel pitch cues so both use one sound.
+// The finger code's piano voice, shared by the Finger Code page and the pitch drill so both use one sound.
 // Browser only: create the context from a click.
 
 let ctx: AudioContext | null = null
@@ -41,7 +41,7 @@ function pianoWave(a: AudioContext): PeriodicWave {
 
 /**
  * One piano note; `midi` may be fractional. The default decay is short, so no note rings into the next
- * syllable; a pitch cue lets it ring longer.
+ * syllable; the pitch drill lets it ring longer.
  */
 export function pianoVoice(a: AudioContext, out: AudioNode, midi: number, when: number, dur: number, vel: number, decay = 0.06): void {
   const f = midiFreq(midi)
