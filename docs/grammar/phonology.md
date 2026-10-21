@@ -126,7 +126,7 @@ When English says *how many* or *which place*, Agebon uses a [number word](numbe
 
 ### Syllabic `l` {#syllabic-l}
 
-A [hosted extra noun](clause.md#extra-nouns) writes `l` after its `b`. When that word is a number (`r` next), say the `l` as a beat of its own, like the end of English *bottle*. The `r` then starts the next beat as usual.
+A [hosted extra noun](clause.md#extra-nouns) writes `l` after its `b`. When that word is a number (`r` next), say the `l` as a beat of its own, like the end of English *bottle* <IpaPlay file="En-us-bottle.mp3" label="bottle" />. The `r` then starts the next beat as usual.
 
 | Agebon | IPA |
 |--------|-----|
@@ -134,6 +134,8 @@ A [hosted extra noun](clause.md#extra-nouns) writes `l` after its `b`. When that
 | `blral` | /bl̩.ɹäl/ |
 
 This is the only beat with no vowel letter. Like a vowel, you can hold it. Before a vowel, `bl` is one ordinary start of a beat (`bluzozen` /blʉ.zo̞.ze̞n/).
+
+Audio of *bottle* is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) by [Dvortygirl](https://commons.wikimedia.org/wiki/User:Dvortygirl).
 
 ### Letter names {#letter-names}
 <a id="letter-names-and-digits"></a>

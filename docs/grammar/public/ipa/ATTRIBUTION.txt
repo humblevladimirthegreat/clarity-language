@@ -5,6 +5,7 @@ License: CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/ (the conv
 Close_central_rounded_vowel, Open_central_unrounded_vowel: Denelson83
 Mid_back_rounded_vowel, Mid_front_unrounded_vowel: TFighterPilot
 Alveolar_approximant: Erutuon
+En-us-bottle: Dvortygirl (also offered under GFDL 1.2 or later; used here under CC BY-SA 3.0)
 All other files: Peter Isotalo
 
 To add a clip: download the original from upload.wikimedia.org, convert it with
