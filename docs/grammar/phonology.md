@@ -19,10 +19,10 @@ The cue words below are pronounced as in Standard American English.
 
 | Agebon | IPA | Pitch | Cue |
 |--------|-----|-------|-----|
-| `u` | /ʉ/ <IpaPlay file="Close_central_rounded_vowel.ogg" label="u" /> | high <PitchPlay vowel="u" /> | *you* (without the *y*) |
-| `a` | /ä/ <IpaPlay file="Open_central_unrounded_vowel.ogg" label="a" /> | low <PitchPlay vowel="a" /> | *spa* (like Spanish *casa*) |
-| `o` | /o̞/ <IpaPlay file="Mid_back_rounded_vowel.ogg" label="o" /> | mid-low <PitchPlay vowel="o" /> | *Cambodia* (no glide, like Spanish *todo*) |
-| `e` | /e̞/ <IpaPlay file="Mid_front_unrounded_vowel.ogg" label="e" /> | mid-high <PitchPlay vowel="e" /> | *bet* |
+| `u` | /ʉ/ <IpaPlay file="Close_central_rounded_vowel.mp3" label="u" /> | high <PitchPlay vowel="u" /> | *you* (without the *y*) |
+| `a` | /ä/ <IpaPlay file="Open_central_unrounded_vowel.mp3" label="a" /> | low <PitchPlay vowel="a" /> | *spa* (like Spanish *casa*) |
+| `o` | /o̞/ <IpaPlay file="Mid_back_rounded_vowel.mp3" label="o" /> | mid-low <PitchPlay vowel="o" /> | *Cambodia* (no glide, like Spanish *todo*) |
+| `e` | /e̞/ <IpaPlay file="Mid_front_unrounded_vowel.mp3" label="e" /> | mid-high <PitchPlay vowel="e" /> | *bet* |
 
 Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). /ʉ/ and /ä/ are by [Denelson83](https://commons.wikimedia.org/wiki/User:Denelson83), and /e̞/ and /o̞/ by [TFighterPilot](https://commons.wikimedia.org/wiki/User:TFighterPilot).
 
@@ -52,20 +52,20 @@ A consonant starts a syllable. Many consonants have a **voiced** sound (vocal co
 
 | Agebon | IPA | Cue | Unvoiced variant |
 |--------|-----|-----|------------------|
-| `b` | /b/ <IpaPlay file="Voiced_bilabial_plosive.ogg" label="b" /> | *be* | /p/ <IpaPlay file="Voiceless_bilabial_plosive.ogg" label="unvoiced b" />, *pay* |
-| `d` | /d/ <IpaPlay file="Voiced_alveolar_plosive.ogg" label="d" /> | *do* | /t/ <IpaPlay file="Voiceless_alveolar_plosive.ogg" label="unvoiced d" />, *toe* |
-| `g` | /ɡ/ <IpaPlay file="Voiced_velar_plosive.ogg" label="g" /> | *go* | /k/ <IpaPlay file="Voiceless_velar_plosive.ogg" label="unvoiced g" />, *kite* |
-| `v` | /v/ <IpaPlay file="Voiced_labiodental_fricative.ogg" label="v" /> | *vie* | /f/ <IpaPlay file="Voiceless_labiodental_fricative.ogg" label="unvoiced v" />, *fee* |
-| `z` | /z/ <IpaPlay file="Voiced_alveolar_sibilant.ogg" label="z" /> | *zoo* | /s/ <IpaPlay file="Voiceless_alveolar_sibilant.ogg" label="unvoiced z" />, *sea* |
-| `h` | /ɦ/ <IpaPlay file="Voiced_glottal_fricative.ogg" label="h" /> | *ahead* | /h/ <IpaPlay file="Voiceless_glottal_fricative.ogg" label="unvoiced h" />, *hat* |
-| `l` | /l/ <IpaPlay file="Alveolar_lateral_approximant.ogg" label="l" /> | *lie* | |
-| `r` | /ɹ/ <IpaPlay file="Alveolar_approximant.ogg" label="r" /> | *red* | |
-| `n` | /n/ <IpaPlay file="Alveolar_nasal.ogg" label="n" /> | *no* | |
-| `m` | /m/ <IpaPlay file="Bilabial_nasal.ogg" label="m" /> | *me* | |
-| `w` | /w/ <IpaPlay file="Voiced_labio-velar_approximant.ogg" label="w" /> | *we* | |
-| `y` | /j/ <IpaPlay file="Palatal_approximant.ogg" label="y" /> | *yes* | |
-| `th` | /ð/ <IpaPlay file="Voiced_dental_fricative.ogg" label="th" /> | *this* | /θ/ <IpaPlay file="Voiceless_dental_fricative.ogg" label="unvoiced th" />, *thin* |
-| `x` | /ʒ/ <IpaPlay file="Voiced_palato-alveolar_sibilant.ogg" label="x" /> | *vision* (the *si*) | /ʃ/ <IpaPlay file="Voiceless_palato-alveolar_sibilant.ogg" label="unvoiced x" />, *shy* |
+| `b` | /b/ <IpaPlay file="Voiced_bilabial_plosive.mp3" label="b" /> | *be* | /p/ <IpaPlay file="Voiceless_bilabial_plosive.mp3" label="unvoiced b" />, *pay* |
+| `d` | /d/ <IpaPlay file="Voiced_alveolar_plosive.mp3" label="d" /> | *do* | /t/ <IpaPlay file="Voiceless_alveolar_plosive.mp3" label="unvoiced d" />, *toe* |
+| `g` | /ɡ/ <IpaPlay file="Voiced_velar_plosive.mp3" label="g" /> | *go* | /k/ <IpaPlay file="Voiceless_velar_plosive.mp3" label="unvoiced g" />, *kite* |
+| `v` | /v/ <IpaPlay file="Voiced_labiodental_fricative.mp3" label="v" /> | *vie* | /f/ <IpaPlay file="Voiceless_labiodental_fricative.mp3" label="unvoiced v" />, *fee* |
+| `z` | /z/ <IpaPlay file="Voiced_alveolar_sibilant.mp3" label="z" /> | *zoo* | /s/ <IpaPlay file="Voiceless_alveolar_sibilant.mp3" label="unvoiced z" />, *sea* |
+| `h` | /ɦ/ <IpaPlay file="Voiced_glottal_fricative.mp3" label="h" /> | *ahead* | /h/ <IpaPlay file="Voiceless_glottal_fricative.mp3" label="unvoiced h" />, *hat* |
+| `l` | /l/ <IpaPlay file="Alveolar_lateral_approximant.mp3" label="l" /> | *lie* | |
+| `r` | /ɹ/ <IpaPlay file="Alveolar_approximant.mp3" label="r" /> | *red* | |
+| `n` | /n/ <IpaPlay file="Alveolar_nasal.mp3" label="n" /> | *no* | |
+| `m` | /m/ <IpaPlay file="Bilabial_nasal.mp3" label="m" /> | *me* | |
+| `w` | /w/ <IpaPlay file="Voiced_labio-velar_approximant.mp3" label="w" /> | *we* | |
+| `y` | /j/ <IpaPlay file="Palatal_approximant.mp3" label="y" /> | *yes* | |
+| `th` | /ð/ <IpaPlay file="Voiced_dental_fricative.mp3" label="th" /> | *this* | /θ/ <IpaPlay file="Voiceless_dental_fricative.mp3" label="unvoiced th" />, *thin* |
+| `x` | /ʒ/ <IpaPlay file="Voiced_palato-alveolar_sibilant.mp3" label="x" /> | *vision* (the *si*) | /ʃ/ <IpaPlay file="Voiceless_palato-alveolar_sibilant.mp3" label="unvoiced x" />, *shy* |
 
 ::: tip Remember
 `x` sounds different from English *x*. The rest are familiar. `y` is always a consonant, never a vowel.

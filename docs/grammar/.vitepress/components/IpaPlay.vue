@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import { withBase } from 'vitepress'
 import { computed, onBeforeUnmount, ref } from 'vue'
-import { ipaAudioUrl } from '../lib/ipa-audio'
 
 const props = defineProps<{
   file: string
@@ -10,11 +10,8 @@ const props = defineProps<{
 const playing = ref(false)
 const audio = ref<HTMLAudioElement | null>(null)
 
-const src = computed(
-  () =>
-    ipaAudioUrl(props.file) ??
-    `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(props.file)}`,
-)
+// Wikimedia Commons clips, converted to MP3 and hosted by the site (public/ipa/, sources in ATTRIBUTION.txt).
+const src = computed(() => withBase(`/ipa/${encodeURIComponent(props.file)}`))
 
 function stop(): void {
   const el = audio.value

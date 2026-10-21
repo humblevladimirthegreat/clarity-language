@@ -1,0 +1,12 @@
+IPA sound clips from Wikimedia Commons, converted from Ogg to MP3 (LAME VBR -q:a 2, metadata stripped).
+Each source is the Ogg file of the same name: https://commons.wikimedia.org/wiki/File:<name>.ogg
+License: CC BY-SA 3.0, https://creativecommons.org/licenses/by-sa/3.0/ (the converted files keep it)
+
+Close_central_rounded_vowel, Open_central_unrounded_vowel: Denelson83
+Mid_back_rounded_vowel, Mid_front_unrounded_vowel: TFighterPilot
+Alveolar_approximant: Erutuon
+All other files: Peter Isotalo
+
+To add a clip: download the original from upload.wikimedia.org, convert it with
+  ffmpeg -i <name>.ogg -vn -map_metadata -1 -codec:a libmp3lame -q:a 2 <name>.mp3
+and credit its author here and on the page that plays it.
