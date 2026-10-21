@@ -244,7 +244,7 @@ group = [exponent?] [mantissa digits?]
 ```
 
 1. **PoS:** the role letter (part of speech), as on any other word.
-2. **Number marker:** consonant **r** plus a vowel **V**. **V** is a single vowel at this stage. The cluster of role letter plus `r` is a [number-only letter-cluster exception](phonology.md#phonotactics). A marker can sound like a digit (rank **`re`**, digit 3 **`re`**), but the marker always comes straight after the role letter, so `gregol` is *the third*.
+2. **Number marker:** consonant **r** plus a vowel **V**. **V** is a single vowel at this stage. The cluster of role letter plus `r` is a [number-only letter-cluster exception](phonology.md#phonotactics). A marker can sound like a digit (rank **`re`**, digit 8 **`re`**), but the marker always comes straight after the role letter, so `gregol` is *the third*.
 3. **Zero or more digit groups:** each group is an optional exponent (the *order of magnitude* piece) and optional mantissa digits (the ordinary digits). A group always has at least one of those two pieces. Digits sit next to each other with no **x** between them. A sign, when there is one, applies once to the whole word. With **no groups**, the word is digitless: it says what kind of number it is, but not its value.
 4. **Group separator:** each group after the first opens with **`th`** plus **V₁**, the first vowel of the marker.
 5. **Ending:** `-l` / `-m` / `-n` / `-r`.
