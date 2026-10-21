@@ -1,8 +1,12 @@
 # Proposal: tail pointers (`PwV` + tail + ending)
 
-**Status:** PROPOSED (not current language).  
-**Related:** [pronouns.md](../grammar/pronouns.md#resume-r) (whole-stem **-r**), [§ role pointers](../grammar/pronouns.md#role-pointers), [§ tag pronouns](../grammar/pronouns.md#tag-pronouns); [compounds.md § root tails](../grammar/compounds.md#root-tails), [§ tail suffixes](../grammar/compounds.md#tail-suffixes), [§ lexical compounds](../grammar/compounds.md#lexical-compounds); [phonology.md § word edges](../grammar/phonology.md#word-edges); [design-decisions.md](../meta/design-decisions.md) D-18, D-24.  
-**Design authority:** none until absorbed.
+**Status:** REJECTED. Three reasons:
+
+- **It overlaps kind indefinites** (`kind-indefinites.md`), which use the same role + `w` + vowel + consonant space for unknown, withheld and shared referents, and for typed fill-ask blanks. Tail pointers would claim the `a` / `o` / `e` cells with an unrelated job, and their endings (**-l** *a new instance*, **-m** *a share*) would clash with the join endings the other family keeps.
+- **It is rarely much shorter.** `dwahar` is 6 letters, against 5 for a role pointer (`duxar`) and 4 for a tag once assigned (`dwar`). It only wins against whole-stem resume of a long or compound stem that is not the latest in its role and has no tag yet, which is a narrow case.
+- **It is counterintuitive for proper nouns.** A name's last two letters are spelled from its sound, not chosen from the kind chart: `uzozen` ends in `ze`, the creature tail, so the person Uzozen would be `zwazer`. Place-name roots have no tail at all. A learner who reads tails as kinds would be misled every time the antecedent is a name.
+
+**Related:** [pronouns.md](../../grammar/pronouns.md#resume-r) (whole-stem **-r**), [§ role pointers](../../grammar/pronouns.md#role-pointers), [§ tag pronouns](../../grammar/pronouns.md#tag-pronouns); [compounds.md § root tails](../../grammar/compounds.md#root-tails), [§ tail suffixes](../../grammar/compounds.md#tail-suffixes), [§ lexical compounds](../../grammar/compounds.md#lexical-compounds); [phonology.md § word edges](../../grammar/phonology.md#word-edges); [design-decisions.md](../../meta/design-decisions.md) D-18, D-24.  
 
 A **tail pointer** is a short resume that finds its antecedent by the last two letters of the **stem** (the root tail), then uses the same ending contrast as role pointers and tags. It does **not** copy the antecedent's ending, and it is not a kind-class *he* / *it*.
 
@@ -12,7 +16,7 @@ A **tail pointer** is a short resume that finds its antecedent by the last two l
 role + w + pointer vowel + tail + ending
 ```
 
-`w` after the role letter is already the marker that the rest is not a root ([tag pronouns](../grammar/pronouns.md#tag-pronouns)). A tag is `w` + vowel(s) + ending (`zwar`, `zwaer`). A tail pointer keeps one pointer vowel, then a two-letter tail, then the ending (`zwahar`). Phonotactics need that vowel: `w` cannot sit against the tail consonant.
+`w` after the role letter is already the marker that the rest is not a root ([tag pronouns](../../grammar/pronouns.md#tag-pronouns)). A tag is `w` + vowel(s) + ending (`zwar`, `zwaer`). A tail pointer keeps one pointer vowel, then a two-letter tail, then the ending (`zwahar`). Phonotactics need that vowel: `w` cannot sit against the tail consonant.
 
 | Piece | What it is | Example in `dwahar` |
 |-------|------------|---------------------|
@@ -70,7 +74,7 @@ Once the match **A** is found:
 |--------|-----|
 | **-r** | the same referent as A |
 | **-l** | a **new** instance of **A's whole stem**, not of every word with A's tail. After a bedroom, `dwahal` is another bedroom. After a bathroom, it is another bathroom. Same rule as `duxal` copying the noun, not the role |
-| **-m** | A's part in the latest earlier event A took part in (a [share](../grammar/pronouns.md#share)) |
+| **-m** | A's part in the latest earlier event A took part in (a [share](../../grammar/pronouns.md#share)) |
 | **-n** | same referent, and A was a **-n** word. If A was a kind, a placeholder, or a mixed group, not a sentence. Same extra claim as `zwan` |
 
 **-x** only on **-r** and **-n**, as on tags: `zwaharx` is that one and associates. No **-x** on a share or on **-l** (tag a plural phrase instead, or write the new plural out).
@@ -93,11 +97,11 @@ Copying the ending also cannot say “another bedroom” vs “that bedroom” w
 
 Copy letters, do not name a class. The cue is: the last two letters of the stem you already said, plus the pointer vowel and ending you already know.
 
-Do **not** gloss `zwayar` as *the person* or `zwazor` as *the animal*. That would be a short pronoun split by encoded kind, which D-18 refused. The optional mnemonic from [root tails](../grammar/compounds.md#root-tails) can wait until Advanced; nothing in the pointer **reads** kind or job.
+Do **not** gloss `zwayar` as *the person* or `zwazor` as *the animal*. That would be a short pronoun split by encoded kind, which D-18 refused. The optional mnemonic from [root tails](../../grammar/compounds.md#root-tails) can wait until Advanced; nothing in the pointer **reads** kind or job.
 
 Compounds.md would then drop “nothing in a sentence reads it.” The grammar that reads the tail is this pointer, and it reads **letters**, not the kind chart. The chart stays a memory aid.
 
-Stage: Advanced on [pronouns.md](../grammar/pronouns.md), after tags. Beginner/Intermediate keep whole-stem **-r**, role pointers, and tags.
+Stage: Advanced on [pronouns.md](../../grammar/pronouns.md), after tags. Beginner/Intermediate keep whole-stem **-r**, role pointers, and tags.
 
 ## When to reach for it
 
@@ -133,9 +137,9 @@ Morph gloss (proposed): `d-←ha` / `d-←ha.other` / `d-←ha.self` / `d-←ha.
 ## Absorb sketch (if yes)
 
 1. Keep a few dialogues where `dwahar` is the clear choice (role pointer would pick someone else, and a late tag is clumsier). If those are hard to write, do not absorb.
-2. [pronouns.md](../grammar/pronouns.md) Advanced: the table, the match rule, the ending rule, one **Compare with** tags and one with role pointers.
-3. [compounds.md](../grammar/compounds.md#root-tails): one line that a tail pointer copies the letters; the kind chart still does not feed the parser.
-4. [unassigned-reserved.md](../meta/unassigned-reserved.md): the rejected cells (`u`, other slots, stand-in endings, tag-on-pointer).
+2. [pronouns.md](../../grammar/pronouns.md) Advanced: the table, the match rule, the ending rule, one **Compare with** tags and one with role pointers.
+3. [compounds.md](../../grammar/compounds.md#root-tails): one line that a tail pointer copies the letters; the kind chart still does not feed the parser.
+4. [unassigned-reserved.md](../../meta/unassigned-reserved.md): the rejected cells (`u`, other slots, stand-in endings, tag-on-pointer).
 5. Parser + morph gloss + cheat-sheet block for people-pointing, in the same change as the grammar page.
 
 ## Not in this proposal
