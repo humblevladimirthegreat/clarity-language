@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { PITCH_BASE } from '@vowel-pitch'
 
 const STORAGE_KEY = 'agebon.pitchBase'
-/** The note for `a`, shared by every drill on the page and kept in the browser. */
+/** The home note (the note `a` is said on), shared by every drill on the page and kept in the browser. */
 const sharedBase = ref(PITCH_BASE)
 </script>
 
@@ -25,11 +25,11 @@ import { heldNote, judgePitch, type Heard, type Verdict } from '../lib/pitch-det
 import { noteName, pianoBus, pianoContext, pianoVoice } from '../lib/piano-voice'
 
 // Plays vowel-pitch patterns on the finger code's piano voice and lights each vowel as its note sounds;
-// the learner sings the vowels back. `level` intermediate adds the contour mode. Tempo sets the beat.
-// The microphone is optional: *Find my a* sets the note for `a` from a held note, and *Check me* leaves a
-// silent turn after each note and marks the note with what the learner sang in it; a clicked step does the same for one note.
-// With *Sing only*, the vowel notes do not sound, so the learner sings each from memory; an opening `a` still sounds.
-// Without the microphone, − and + set `a`.
+// the learner says the vowels back on their notes. `level` intermediate adds the contour mode. Tempo sets the beat.
+// The microphone is optional: *Find my home note* sets the home note from a held `a`, and *Check me* leaves a
+// silent turn after each note and marks the note with what the learner said in it; a clicked step does the same for one note.
+// With *From memory*, the vowel notes do not sound, so the learner says each unprompted; an opening `a` still sounds.
+// Without the microphone, − and + set the home note.
 
 const props = defineProps<{ level?: 'intermediate' }>()
 
@@ -46,11 +46,11 @@ const now = ref(-1)
 
 const BASE_MIN = 36
 const BASE_MAX = 72
-/** The normal beat: the length of a lone note, and the unit of the sing turns, which never speed up. */
+/** The normal beat: the length of a lone note, and the unit of the say turns, which never speed up. */
 const BEAT = 0.7
-/** Seconds at the start of a sing turn not judged: the singer's reaction time and the last note's tail. */
+/** Seconds at the start of a say turn not judged: the learner's reaction time and the last note's tail. */
 const GRACE = 0.3
-/** How long *Find my a* listens before giving up. */
+/** How long *Find my home note* listens before giving up. */
 const FIND_LIMIT = 8
 
 const check = ref(false)
@@ -61,11 +61,11 @@ const hearing = ref<number | null>(null)
 const micNote = ref('')
 const results = ref<Record<string, Verdict>>({})
 
-/** `turn`: a silent stretch for the learner to sing the step's vowel. */
+/** `turn`: a silent stretch for the learner to say the step's vowel. */
 type Timed = { phrase: number; step: number; at: number; dur: number; turn: boolean }
 
-/** Seconds of the turn to sing a note back, while the microphone checks. Fixed, so a quick tempo still leaves time to find the note. */
-const SING_BACK = 2 * BEAT
+/** Seconds of the turn to say a note back, while the microphone checks. Fixed, so a quick tempo still leaves time to find the note. */
+const SAY_BACK = 2 * BEAT
 
 const timeline = computed<Timed[]>(() => {
   const out: Timed[] = []
@@ -76,10 +76,10 @@ const timeline = computed<Timed[]>(() => {
         out.push({ phrase: pi, step: si, at: t, dur: s.beats * beat.value, turn: false })
         t += s.beats * beat.value
       }
-      // The microphone must hear the learner alone, so they sing each note back after it.
+      // The microphone must hear the learner alone, so they say each note back after it.
       if (check.value) {
-        out.push({ phrase: pi, step: si, at: t, dur: SING_BACK, turn: true })
-        t += SING_BACK
+        out.push({ phrase: pi, step: si, at: t, dur: SAY_BACK, turn: true })
+        t += SAY_BACK
       }
     })
     t += beat.value
@@ -101,22 +101,28 @@ function wordLetterOn(p: DrillPhrase, pi: number, li: number): boolean {
   return vowelAt[notes - 1]?.i === li
 }
 
-const VERDICT_LABELS: Record<Verdict['verdict'], string> = { ok: '✓ in tune', sharp: 'too high', flat: 'too low', silent: 'not heard' }
+const VERDICT_LABELS: Record<Verdict['verdict'], string> = {
+  ok: '✓ matched',
+  close: 'close',
+  sharp: 'a bit high',
+  flat: 'a bit low',
+  silent: "didn't hear",
+}
 const resultOf = (pi: number, si: number): Verdict | undefined => results.value[`${pi}:${si}`]
 
 function stepLabel(s: DrillStep, pi: number, si: number): string {
-  if ((manual.value?.key === `${pi}:${si}` && manual.value.singing) || (active.value?.turn && isOn(pi, si))) return 'you sing'
+  if ((manual.value?.key === `${pi}:${si}` && manual.value.saying) || (active.value?.turn && isOn(pi, si))) return 'your turn'
   const result = resultOf(pi, si)
   if (result) return VERDICT_LABELS[result.verdict]
-  return s.kind === 'ref' ? 'your a' : ''
+  return s.kind === 'ref' ? 'home' : ''
 }
 
 const offTitle = (r: Verdict | undefined) =>
   r && r.verdict !== 'silent' ? `${r.off > 0 ? '+' : '−'}${Math.abs(r.off).toFixed(1)} semitones` : undefined
 
 let mic: Mic | null = null
-/** Pitches heard in each sing turn, by `phrase:step`. */
-const sung = new Map<string, number[]>()
+/** Pitches heard in each say turn, by `phrase:step`. */
+const heardIn = new Map<string, number[]>()
 
 async function ensureMic(): Promise<boolean> {
   if (mic) return true
@@ -126,7 +132,7 @@ async function ensureMic(): Promise<boolean> {
     micNote.value = ''
     return true
   } catch {
-    micNote.value = 'No microphone available. Set a with − and + instead.'
+    micNote.value = 'No microphone available. Set your home note with − and + instead.'
     return false
   }
 }
@@ -137,20 +143,20 @@ function releaseMic(): void {
   mic = null
 }
 
-/** Listens while a turn to sing is open, and marks its step once the turn ends. */
+/** Listens while a turn to say is open, and marks its step once the turn ends. */
 function listen(): void {
   if (!mic || !check.value) return
   const e = active.value
   if (e?.turn && now.value >= e.at + GRACE) {
     const m = mic.read()
     const key = `${e.phrase}:${e.step}`
-    if (m !== null) sung.set(key, [...(sung.get(key) ?? []), m])
+    if (m !== null) heardIn.set(key, [...(heardIn.get(key) ?? []), m])
   }
   for (const t of timeline.value) {
     const key = `${t.phrase}:${t.step}`
     if (!t.turn || now.value < t.at + t.dur || results.value[key]) continue
     const s = phrases.value[t.phrase]!.steps[t.step]!
-    results.value[key] = judgePitch(sung.get(key) ?? [], pitchOf(s.vowel, base.value))
+    results.value[key] = judgePitch(heardIn.get(key) ?? [], pitchOf(s.vowel, base.value))
   }
 }
 
@@ -181,7 +187,7 @@ function stop(): void {
 function play(): void {
   stop()
   results.value = {}
-  sung.clear()
+  heardIn.clear()
   const a = pianoContext()
   bus = pianoBus(a)
   t0 = a.currentTime + 0.1
@@ -204,8 +210,8 @@ function preview(vowel: string): void {
   pianoVoice(a, previewBus, pitchOf(vowel, base.value), a.currentTime + 0.02, BEAT * 0.9, 0.9, 0.4)
 }
 
-/** A step the learner clicked while the microphone checks: its note sounds, then a turn to sing it back. */
-const manual = ref<{ key: string; singing: boolean } | null>(null)
+/** A step the learner clicked while the microphone checks: its note sounds, then a turn to say it back. */
+const manual = ref<{ key: string; saying: boolean } | null>(null)
 let manualRaf = 0
 
 function endManual(): void {
@@ -214,7 +220,7 @@ function endManual(): void {
   manual.value = null
 }
 
-/** Sounds a clicked step; while the microphone checks, also judges the learner singing it (back). */
+/** Sounds a clicked step; while the microphone checks, also judges the learner saying it (back). */
 function clickStep(pi: number, si: number, vowel: string): void {
   if (!check.value || !mic) return preview(vowel)
   stop()
@@ -227,15 +233,15 @@ function clickStep(pi: number, si: number, vowel: string): void {
   const start = a.currentTime
   const target = pitchOf(vowel, base.value)
   const heard: number[] = []
-  manual.value = { key, singing: false }
+  manual.value = { key, saying: false }
   const tick = () => {
     const t = a.currentTime - start
-    if (t >= lead) manual.value!.singing = true
+    if (t >= lead) manual.value!.saying = true
     if (t >= lead + GRACE) {
       const m = mic?.read() ?? null
       if (m !== null) heard.push(m)
     }
-    if (t >= lead + SING_BACK) {
+    if (t >= lead + SAY_BACK) {
       results.value[key] = judgePitch(heard, target)
       endManual()
     } else manualRaf = requestAnimationFrame(tick)
@@ -260,7 +266,7 @@ function endFind(): void {
   releaseMic()
 }
 
-/** Listens for a held note and makes it the note for `a`. */
+/** Listens for a held note and makes it the home note. */
 async function findA(): Promise<void> {
   if (finding.value) return endFind()
   stop()
@@ -333,13 +339,13 @@ onBeforeUnmount(() => {
   <div class="pitch-drill">
     <div class="pd-controls">
       <div class="pd-row">
-        <div class="pd-group" role="group" aria-label="Note for a">
-          <span class="pd-base-note"><code>a</code> = {{ noteName(base) }}</span>
-          <button type="button" class="btn" aria-label="Lower a by a semitone" :disabled="base <= BASE_MIN" @click="step(-1)">−</button>
-          <button type="button" class="btn" aria-label="Raise a by a semitone" :disabled="base >= BASE_MAX" @click="step(1)">+</button>
+        <div class="pd-group" role="group" aria-label="Home note">
+          <span class="pd-base-note">Home: {{ noteName(base) }}</span>
+          <button type="button" class="btn" aria-label="Lower the home note by a semitone" :disabled="base <= BASE_MIN" @click="step(-1)">−</button>
+          <button type="button" class="btn" aria-label="Raise the home note by a semitone" :disabled="base >= BASE_MAX" @click="step(1)">+</button>
           <button type="button" class="btn find" :class="{ on: finding }" :aria-pressed="finding" @click="findA">
             <template v-if="finding">Listening… {{ hearing === null ? '' : noteName(Math.round(hearing)) }}</template>
-            <template v-else>🎤 Find my <code>a</code></template>
+            <template v-else>🎤 Find my home note</template>
           </button>
         </div>
       </div>
@@ -377,12 +383,12 @@ onBeforeUnmount(() => {
           <button type="button" class="btn play" @click="playing ? stop() : play()">{{ playing ? '■ Stop' : '▶ Play' }}</button>
         </div>
         <div v-if="check" class="pd-group" role="group" aria-label="Check">
-          <button type="button" class="btn" :class="{ on: hearFirst }" :aria-pressed="hearFirst" @click="hearFirst = true">Hear, then sing</button>
-          <button type="button" class="btn" :class="{ on: !hearFirst }" :aria-pressed="!hearFirst" @click="hearFirst = false">Sing only</button>
+          <button type="button" class="btn" :class="{ on: hearFirst }" :aria-pressed="hearFirst" @click="hearFirst = true">Hear first</button>
+          <button type="button" class="btn" :class="{ on: !hearFirst }" :aria-pressed="!hearFirst" @click="hearFirst = false">From memory</button>
         </div>
       </div>
     </div>
-    <p v-if="finding" class="pd-mic-note">Sing a comfortable low <code>a</code> and hold it.</p>
+    <p v-if="finding" class="pd-mic-note">Say a long <code>a</code> on a comfortable low note, and hold it.</p>
     <p v-else-if="micNote" class="pd-mic-note">{{ micNote }}</p>
     <ol class="pd-phrases">
       <li v-for="(p, pi) in phrases" :key="pi" class="pd-phrase">
@@ -451,7 +457,7 @@ onBeforeUnmount(() => {
 }
 
 .pd-base-note {
-  min-width: 4.5rem;
+  min-width: 5.5rem;
   font-size: 0.9rem;
 }
 
@@ -545,7 +551,7 @@ onBeforeUnmount(() => {
   flex-direction: column;
   align-items: center;
   /* Wide enough for the longest label, so a mark never resizes the button. */
-  width: 4.75rem;
+  width: 5rem;
   padding: 0.2rem 0.35rem;
   border-radius: 6px;
   border: 1px solid var(--vp-c-divider);
@@ -566,6 +572,10 @@ onBeforeUnmount(() => {
 
 .pd-step.ok {
   border-color: var(--vp-c-green-1);
+}
+
+.pd-step.close {
+  border-color: var(--vp-c-green-3);
 }
 
 .pd-step.sharp,

@@ -82,16 +82,17 @@ export function heldNote(heard: readonly Heard[], now: number, hold = 0.8): numb
   return pitched.every((m) => Math.abs(m - mid) <= 0.5) ? mid : null
 }
 
-export type Verdict = { verdict: 'ok' | 'sharp' | 'flat' | 'silent'; off: number }
+export type Verdict = { verdict: 'ok' | 'close' | 'sharp' | 'flat' | 'silent'; off: number }
 
 /**
- * A sung note against its target: within `tolerance` semitones is ok, in any octave, since a voice may sit
- * an octave from the piano. `off` is in semitones, before folding the octave.
+ * A voiced note against its target, in any octave, since a voice may sit an octave from the piano: within
+ * `tolerance` semitones is ok, within twice that is close. `off` is in semitones from the nearest octave of the target.
  */
-export function judgePitch(sung: readonly number[], target: number, tolerance = 1): Verdict {
-  if (sung.length < 5) return { verdict: 'silent', off: 0 }
-  const off = median(sung) - target
-  const octaves = Math.round(off / 12)
-  if (Math.abs(off - 12 * octaves) <= tolerance) return { verdict: 'ok', off }
+export function judgePitch(heard: readonly number[], target: number, tolerance = 1): Verdict {
+  if (heard.length < 5) return { verdict: 'silent', off: 0 }
+  const raw = median(heard) - target
+  const off = raw - 12 * Math.round(raw / 12)
+  if (Math.abs(off) <= tolerance) return { verdict: 'ok', off }
+  if (Math.abs(off) <= 2 * tolerance) return { verdict: 'close', off }
   return { verdict: off > 0 ? 'sharp' : 'flat', off }
 }

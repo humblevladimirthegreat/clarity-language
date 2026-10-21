@@ -10,13 +10,13 @@ export const PITCH_ORDER: readonly string[] = VOWEL_LETTERS;
 /** Vowels in alphabet order (phonology.md#letter-names); a stack puts its two vowels in this order. */
 export const ALPHABET_VOWELS: readonly string[] = ["u", "o", "a", "e"];
 
-/** Semitones above `a` (phonology.md#vowel-pitch-values). */
+/** Semitones above the home note, the note `a` is sung on (phonology.md#vowel-pitch-values). */
 export const VOWEL_PITCH: Readonly<Record<string, number>> = { a: 0, o: 3, e: 5, u: 7 };
 
-/** The default note for `a`: its finger-code piano key (D♯3). */
+/** The default home note: its finger-code piano key (D♯3). */
 export const PITCH_BASE = vowelKey("a");
 
-/** A vowel's pitch as a MIDI note, from the note for `a`. */
+/** A vowel's pitch as a MIDI note, from the home note. */
 export const pitchOf = (vowel: string, base = PITCH_BASE): number => base + VOWEL_PITCH[vowel]!;
 
 /** The six vowel stacks, each in alphabet order. */

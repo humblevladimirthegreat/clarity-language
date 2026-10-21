@@ -41,9 +41,9 @@ To find `u`, start from `a`: keep the tongue centered, close the jaw, and round 
 
 Each vowel also has its own **pitch**, always the same one: `u` is high, `e` mid-high, `o` mid-low, and `a` low. Vowel pitch is optional and adds no meaning. It backs up the vowel's sound, so a listener who half-hears a vowel can still tell which one it was. When a vowel's sound and its pitch disagree, trust the sound. The opposite vowels `a` and `u` are also the furthest apart in pitch. Keep each vowel's pitch when you say a word with feeling: make it louder, not higher.
 
-Voices differ, so a vowel's pitch is how far it sits above your own `a`, not a fixed note. To practice, pick a pattern and a tempo below, move `a` until it sits comfortably at the lower end of your vocal range, press **Play**, and sing each vowel as it lights up.
+Voices differ, so a vowel's pitch is not a fixed note but how far it sits above your **home note**, the note you say `a` on. Any comfortable note works. To practice, pick a pattern and a tempo below, move the home note with − and + until it sits easily low in your speaking voice, press **Play**, and say each vowel on its note as it lights up. Matching a note is a skill like any other, and it improves quickly with practice. Each vowel's sound already tells it apart, so your Agebon is clear while you learn.
 
-With a microphone, **Find my `a`** listens while you hold a comfortable low note and makes it your `a`. **Check me** leaves a pause after each note for you to sing it back, then marks the note with whether you were within about a semitone. Choose **Sing only** to skip the notes and sing each vowel from memory. Click any note to check just that one. All listening happens in your browser: nothing you sing is recorded or sent anywhere, and your `a` is saved only on this device.
+With a microphone, **Find my home note** listens while you hold a long `a` on a comfortable low note and makes that your home note. **Check me** leaves a pause after each note for you to say it back, then marks whether you matched it to within about a semitone, came close, or were a bit high or low. Choose **From memory** to skip the notes and say each vowel unprompted. Click any note to check just that one. All listening happens in your browser: nothing you say is recorded or sent anywhere, and your home note is saved only on this device.
 
 <PitchDrill />
 
@@ -123,7 +123,7 @@ Each vowel keeps its [pitch](#vowel-pitch) in a stack, so every stack is a small
 | `ae` | low → mid-high | medium rise |
 | `oe` | mid-low → mid-high | small rise, mid |
 
-Hear each stack against your own `a`, and sing it back:
+Hear each stack against your home note, and say it back:
 
 <PitchDrill level="intermediate" />
 
@@ -266,16 +266,16 @@ Stress is **loudness** only: say the first syllable a little louder, with a cris
 
 #### Vowel pitch values {#vowel-pitch-values}
 
-A vowel's pitch is an interval above your own `a`, not a fixed note, since voices differ by an octave or more:
+A vowel's pitch is an interval above your [home note](#vowel-pitch), not a fixed note, since voices differ by an octave or more:
 
-| Vowel | Semitones above `a` | Scale degree | Piano |
-|-------|---------------------|--------------|-------|
+| Vowel | Semitones above home note | Scale degree | Piano |
+|-------|---------------------------|--------------|-------|
 | `a` | 0 | 1 | D♯3 |
 | `o` | +3 | ♭3 | F♯3 |
 | `e` | +5 | 4 | G♯3 |
 | `u` | +7 | 5 | A♯3 |
 
-The piano keys are the [finger code](finger-code.md#piano)'s vowel keys, with D♯3 for `a`. Match the intervals, not the notes. The four pitches belong to one pentatonic scale, so any two sound well together, and a line said on its vowel pitches sounds like music. The opposite pair `a` and `u` is a fifth apart. `u` and `o`, the two rounded vowels and the closest pair by ear, are four semitones apart. The two-semitone steps (`o` to `e`, `e` to `u`) sit between vowels that already differ in lip or tongue position.
+The piano keys are the [finger code](finger-code.md#piano)'s vowel keys, with D♯3 as the home note. Match the intervals, not the notes. The four pitches belong to one pentatonic scale, so any two sound well together, and a line said on its vowel pitches sounds like music. The opposite pair `a` and `u` is a fifth apart. `u` and `o`, the two rounded vowels and the closest pair by ear, are four semitones apart. The two-semitone steps (`o` to `e`, `e` to `u`) sit between vowels that already differ in lip or tongue position.
 
 Pitch is heard against your own range, so it helps most inside a sentence, and inside a word with two vowels, which carries its own rise or fall: `yael` rises and `yuel` falls. A voice may drift lower over a long sentence; that carries nothing, as long as neighboring vowels keep their order. A whisper has no pitch, so the vowel's sound alone carries it. The [syllabic `l`](#syllabic-l) has a fixed pitch of +4 semitones, between `o` and `e`, and never copies a neighbor.
 

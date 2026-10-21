@@ -48,8 +48,10 @@ describe('pitch detect', () => {
   it('judges within a semitone, in any octave', () => {
     assert.equal(judgePitch([55.6, 55.8, 55.7, 55.9, 55.7], 55).verdict, 'ok')
     assert.equal(judgePitch([67.2, 67.1, 67.3, 67.2, 67.2], 55).verdict, 'ok')
-    assert.deepEqual(judgePitch([57, 57, 57, 57, 57], 55), { verdict: 'sharp', off: 2 })
-    assert.deepEqual(judgePitch([48, 48, 48, 48, 48], 55), { verdict: 'flat', off: -7 })
+    assert.deepEqual(judgePitch([57, 57, 57, 57, 57], 55), { verdict: 'close', off: 2 })
+    assert.deepEqual(judgePitch([59, 59, 59, 59, 59], 55), { verdict: 'sharp', off: 4 })
+    assert.deepEqual(judgePitch([48, 48, 48, 48, 48], 55), { verdict: 'sharp', off: 5 })
+    assert.deepEqual(judgePitch([52, 52, 52, 52, 52], 55), { verdict: 'flat', off: -3 })
     assert.equal(judgePitch([55, 55], 55).verdict, 'silent')
   })
 })
