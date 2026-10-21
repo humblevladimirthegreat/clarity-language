@@ -1,42 +1,52 @@
+<script lang="ts">
+import { ref } from 'vue'
+import { PITCH_BASE } from '@vowel-pitch'
+
+const STORAGE_KEY = 'agebon.pitchBase'
+/** The note for `a`, shared by every drill on the page and kept in the browser. */
+const sharedBase = ref(PITCH_BASE)
+</script>
+
 <script setup lang="ts">
-import { computed, onBeforeUnmount, ref, watch } from 'vue'
+import { computed, onBeforeUnmount, onMounted, watch } from 'vue'
 import {
   DRILL_MODES,
-  PITCH_BASE,
+  DRILL_TEMPOS,
   PITCH_ORDER,
-  RANGE_LABELS,
   drillPhrases,
   pitchOf,
   type DrillMode,
   type DrillPhrase,
   type DrillStep,
-  type PitchRange,
+  type DrillTempo,
 } from '@vowel-pitch'
 import { openMic, type Mic } from '../lib/mic-pitch'
 import { heldNote, judgePitch, type Heard, type Verdict } from '../lib/pitch-detect'
 import { noteName, pianoBus, pianoContext, pianoVoice } from '../lib/piano-voice'
 
 // Plays vowel-pitch patterns on the finger code's piano voice and lights each vowel as its note sounds;
-// the learner sings the vowels back. `level` intermediate adds the contour mode; advanced also adds the
-// speech ranges.
+// the learner sings the vowels back. `level` intermediate adds the contour mode. Tempo sets the beat.
 // The microphone is optional: *Find my a* sets the note for `a` from a held note, and *Check me* leaves a
-// silent turn after each note and marks the note with what the learner sang in it; a clicked step does the same for one note. Without it, − and + set `a`.
+// silent turn after each note and marks the note with what the learner sang in it; a clicked step does the same for one note.
+// With *Sing only*, the vowel notes do not sound, so the learner sings each from memory; an opening `a` still sounds.
+// Without the microphone, − and + set `a`.
 
-const props = defineProps<{ level?: 'intermediate' | 'advanced' }>()
+const props = defineProps<{ level?: 'intermediate' }>()
 
 const modes = computed(() => DRILL_MODES.filter((m) => props.level || !m.stacks))
-const RANGES = Object.keys(RANGE_LABELS) as PitchRange[]
 
 // A drill past beginner opens on the stacks, which only it has.
 const mode = ref<DrillMode>(props.level ? 'contours' : 'up')
-const range = ref<PitchRange>('full')
-const base = ref(PITCH_BASE)
+const tempo = ref<DrillTempo>('normal')
+const beat = computed(() => DRILL_TEMPOS.find((t) => t.id === tempo.value)!.beat)
+const base = sharedBase
 const phrases = ref<DrillPhrase[]>(drillPhrases(mode.value))
 const playing = ref(false)
 const now = ref(-1)
 
 const BASE_MIN = 36
 const BASE_MAX = 72
+/** The normal beat: the length of a lone note, and the unit of the sing turns, which never speed up. */
 const BEAT = 0.7
 /** Seconds at the start of a sing turn not judged: the singer's reaction time and the last note's tail. */
 const GRACE = 0.3
@@ -44,6 +54,8 @@ const GRACE = 0.3
 const FIND_LIMIT = 8
 
 const check = ref(false)
+/** While checking: whether each vowel's note sounds before the learner's turn. */
+const hearFirst = ref(true)
 const finding = ref(false)
 const hearing = ref<number | null>(null)
 const micNote = ref('')
@@ -52,7 +64,7 @@ const results = ref<Record<string, Verdict>>({})
 /** `turn`: a silent stretch for the learner to sing the step's vowel. */
 type Timed = { phrase: number; step: number; at: number; dur: number; turn: boolean }
 
-/** Seconds of the turn to sing a note back, while the microphone checks. */
+/** Seconds of the turn to sing a note back, while the microphone checks. Fixed, so a quick tempo still leaves time to find the note. */
 const SING_BACK = 2 * BEAT
 
 const timeline = computed<Timed[]>(() => {
@@ -60,15 +72,17 @@ const timeline = computed<Timed[]>(() => {
   let t = 0
   phrases.value.forEach((p, pi) => {
     p.steps.forEach((s, si) => {
-      out.push({ phrase: pi, step: si, at: t, dur: s.beats * BEAT, turn: false })
-      t += s.beats * BEAT
+      if (!check.value || hearFirst.value || s.kind === 'ref') {
+        out.push({ phrase: pi, step: si, at: t, dur: s.beats * beat.value, turn: false })
+        t += s.beats * beat.value
+      }
       // The microphone must hear the learner alone, so they sing each note back after it.
       if (check.value) {
         out.push({ phrase: pi, step: si, at: t, dur: SING_BACK, turn: true })
         t += SING_BACK
       }
     })
-    t += BEAT
+    t += beat.value
   })
   return out
 })
@@ -136,7 +150,7 @@ function listen(): void {
     const key = `${t.phrase}:${t.step}`
     if (!t.turn || now.value < t.at + t.dur || results.value[key]) continue
     const s = phrases.value[t.phrase]!.steps[t.step]!
-    results.value[key] = judgePitch(sung.get(key) ?? [], pitchOf(s.vowel, base.value, range.value))
+    results.value[key] = judgePitch(sung.get(key) ?? [], pitchOf(s.vowel, base.value))
   }
 }
 
@@ -174,7 +188,7 @@ function play(): void {
   for (const e of timeline.value) {
     if (e.turn) continue
     const s = phrases.value[e.phrase]!.steps[e.step]!
-    pianoVoice(a, bus, pitchOf(s.vowel, base.value, range.value), t0 + e.at, e.dur * 0.9, s.kind === 'ref' ? 0.6 : 0.9, 0.4)
+    pianoVoice(a, bus, pitchOf(s.vowel, base.value), t0 + e.at, e.dur * 0.9, s.kind === 'ref' ? 0.6 : 0.9, 0.4)
   }
   playing.value = true
   raf = requestAnimationFrame(frame)
@@ -187,7 +201,7 @@ function preview(vowel: string): void {
   const a = pianoContext()
   if (previewBus) previewBus.gain.setTargetAtTime(0, a.currentTime, 0.02)
   previewBus = pianoBus(a)
-  pianoVoice(a, previewBus, pitchOf(vowel, base.value, range.value), a.currentTime + 0.02, BEAT * 0.9, 0.9, 0.4)
+  pianoVoice(a, previewBus, pitchOf(vowel, base.value), a.currentTime + 0.02, BEAT * 0.9, 0.9, 0.4)
 }
 
 /** A step the learner clicked while the microphone checks: its note sounds, then a turn to sing it back. */
@@ -200,26 +214,28 @@ function endManual(): void {
   manual.value = null
 }
 
-/** Sounds a clicked step; while the microphone checks, also judges the learner singing it back. */
+/** Sounds a clicked step; while the microphone checks, also judges the learner singing it (back). */
 function clickStep(pi: number, si: number, vowel: string): void {
   if (!check.value || !mic) return preview(vowel)
   stop()
   const key = `${pi}:${si}`
   delete results.value[key]
-  preview(vowel)
+  // Without the note first, the turn opens at once.
+  const lead = hearFirst.value ? BEAT : 0
+  if (lead) preview(vowel)
   const a = pianoContext()
   const start = a.currentTime
-  const target = pitchOf(vowel, base.value, range.value)
+  const target = pitchOf(vowel, base.value)
   const heard: number[] = []
   manual.value = { key, singing: false }
   const tick = () => {
     const t = a.currentTime - start
-    if (t >= BEAT) manual.value!.singing = true
-    if (t >= BEAT + GRACE) {
+    if (t >= lead) manual.value!.singing = true
+    if (t >= lead + GRACE) {
       const m = mic?.read() ?? null
       if (m !== null) heard.push(m)
     }
-    if (t >= 3 * BEAT) {
+    if (t >= lead + SING_BACK) {
       results.value[key] = judgePitch(heard, target)
       endManual()
     } else manualRaf = requestAnimationFrame(tick)
@@ -285,9 +301,25 @@ watch(mode, (m) => {
   results.value = {}
   phrases.value = drillPhrases(m)
 })
-watch([base, range, check], () => {
+watch([base, tempo, check, hearFirst], () => {
   stop()
   results.value = {}
+})
+
+onMounted(() => {
+  try {
+    const saved = Number(window.localStorage.getItem(STORAGE_KEY))
+    if (Number.isInteger(saved) && saved >= BASE_MIN && saved <= BASE_MAX) base.value = saved
+  } catch {
+    // Storage blocked: start from the default note.
+  }
+})
+watch(base, (b) => {
+  try {
+    window.localStorage.setItem(STORAGE_KEY, String(b))
+  } catch {
+    // Storage blocked or full: the setting lasts for this visit.
+  }
 })
 
 onBeforeUnmount(() => {
@@ -325,18 +357,17 @@ onBeforeUnmount(() => {
             {{ m.label }}
           </button>
         </div>
-        <div v-if="level === 'advanced'" class="pd-group" role="group" aria-label="Range">
-          <span class="pd-label">Range</span>
+        <div class="pd-group" role="group" aria-label="Tempo">
           <button
-            v-for="r in RANGES"
-            :key="r"
+            v-for="t in DRILL_TEMPOS"
+            :key="t.id"
             type="button"
             class="btn"
-            :class="{ on: range === r }"
-            :aria-pressed="range === r"
-            @click="range = r"
+            :class="{ on: tempo === t.id }"
+            :aria-pressed="tempo === t.id"
+            @click="tempo = t.id"
           >
-            {{ RANGE_LABELS[r] }}
+            {{ t.label }}
           </button>
         </div>
       </div>
@@ -344,6 +375,10 @@ onBeforeUnmount(() => {
         <div class="pd-group">
           <button type="button" class="btn" :class="{ on: check }" :aria-pressed="check" @click="toggleCheck">🎤 Check me</button>
           <button type="button" class="btn play" @click="playing ? stop() : play()">{{ playing ? '■ Stop' : '▶ Play' }}</button>
+        </div>
+        <div v-if="check" class="pd-group" role="group" aria-label="Check">
+          <button type="button" class="btn" :class="{ on: hearFirst }" :aria-pressed="hearFirst" @click="hearFirst = true">Hear, then sing</button>
+          <button type="button" class="btn" :class="{ on: !hearFirst }" :aria-pressed="!hearFirst" @click="hearFirst = false">Sing only</button>
         </div>
       </div>
     </div>

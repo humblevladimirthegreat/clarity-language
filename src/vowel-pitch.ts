@@ -10,22 +10,14 @@ export const PITCH_ORDER: readonly string[] = VOWEL_LETTERS;
 /** Vowels in alphabet order (phonology.md#letter-names); a stack puts its two vowels in this order. */
 export const ALPHABET_VOWELS: readonly string[] = ["u", "o", "a", "e"];
 
-export type PitchRange = "full" | "ordinary" | "fast";
-
-/** Semitones above `a` by speech range (phonology.md#rhythm-and-stress): the range narrows with speed, the order never changes. */
-export const VOWEL_PITCH: Readonly<Record<PitchRange, Readonly<Record<string, number>>>> = {
-  full: { a: 0, o: 3, e: 5, u: 7 },
-  ordinary: { a: 0, o: 2, e: 3.5, u: 5 },
-  fast: { a: 0, o: 1.5, e: 2.5, u: 3.5 },
-};
-
-export const RANGE_LABELS: Readonly<Record<PitchRange, string>> = { full: "Full", ordinary: "⅔", fast: "½" };
+/** Semitones above `a` (phonology.md#vowel-pitch-values). */
+export const VOWEL_PITCH: Readonly<Record<string, number>> = { a: 0, o: 3, e: 5, u: 7 };
 
 /** The default note for `a`: its finger-code piano key (D♯3). */
 export const PITCH_BASE = vowelKey("a");
 
-/** A vowel's pitch as a (possibly fractional) MIDI note, from the note for `a`. */
-export const pitchOf = (vowel: string, base = PITCH_BASE, range: PitchRange = "full"): number => base + VOWEL_PITCH[range][vowel]!;
+/** A vowel's pitch as a MIDI note, from the note for `a`. */
+export const pitchOf = (vowel: string, base = PITCH_BASE): number => base + VOWEL_PITCH[vowel]!;
 
 /** The six vowel stacks, each in alphabet order. */
 export const STACKS: readonly string[] = ALPHABET_VOWELS.flatMap((v, i) => ALPHABET_VOWELS.slice(i + 1).map((w) => v + w));
@@ -33,6 +25,15 @@ export const STACKS: readonly string[] = ALPHABET_VOWELS.flatMap((v, i) => ALPHA
 // ---- Drill ----
 
 export type DrillMode = "up" | "down" | "pairs" | "contours";
+
+export type DrillTempo = "slow" | "normal" | "quick";
+
+/** Seconds per beat at each tempo. */
+export const DRILL_TEMPOS: readonly { id: DrillTempo; label: string; beat: number }[] = [
+  { id: "slow", label: "Slow", beat: 1 },
+  { id: "normal", label: "Normal", beat: 0.7 },
+  { id: "quick", label: "Quick", beat: 0.45 },
+];
 
 /** `stacks`: the mode plays vowel stacks, which learners meet at intermediate level. */
 export const DRILL_MODES: readonly { id: DrillMode; label: string; stacks: boolean }[] = [

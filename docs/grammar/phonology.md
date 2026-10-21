@@ -15,7 +15,7 @@ Write native Agebon in **lowercase**. A capital means nothing extra: read it as 
 
 Agebon has four vowel letters. In English, a vowel letter’s sound depends on the letters around it; each Agebon vowel always has the same sound.
 
-The cue words below are pronounced as in Standard American English.
+The **IPA** column spells each sound in the International Phonetic Alphabet, and its button plays a recording. The cue words are pronounced as in Standard American English.
 
 | Agebon | IPA | Pitch | Cue |
 |--------|-----|-------|-----|
@@ -39,13 +39,11 @@ To find `u`, start from `a`: keep the tongue centered, close the jaw, and round 
 
 #### Vowel pitch {#vowel-pitch}
 
-Each vowel also has its own **pitch**, always the same one: `u` is high, `e` mid-high, `o` mid-low, and `a` low. Vowel pitch is optional and adds no meaning. It backs up the vowel's sound, so a listener who half-hears a vowel can still tell which one it was. When a vowel's sound and its pitch disagree, trust the sound. Keep each vowel's pitch when you stress a word or say it with feeling: Agebon stresses a word by saying it louder, not higher.
+Each vowel also has its own **pitch**, always the same one: `u` is high, `e` mid-high, `o` mid-low, and `a` low. Vowel pitch is optional and adds no meaning. It backs up the vowel's sound, so a listener who half-hears a vowel can still tell which one it was. When a vowel's sound and its pitch disagree, trust the sound. The opposite vowels `a` and `u` are also the furthest apart in pitch. Keep each vowel's pitch when you say a word with feeling: make it louder, not higher.
 
-The opposite vowels `a` and `u` are also the furthest apart in pitch.
+Voices differ, so a vowel's pitch is how far it sits above your own `a`, not a fixed note. To practice, pick a pattern and a tempo below, move `a` until it sits comfortably at the lower end of your vocal range, press **Play**, and sing each vowel as it lights up.
 
-Voices differ, so a vowel's pitch is how far it sits above your own `a`, not a fixed note. To practice, pick a pattern below, move `a` until it sits comfortably at the lower end of your vocal range, press **Play**, and sing each vowel as it lights up.
-
-With a microphone, **Find my `a`** listens while you hold a comfortable low note and makes it your `a`. **Check me** leaves a pause after each note for you to sing it back, then marks the note with whether you were within about a semitone. Click any note to check just that one.
+With a microphone, **Find my `a`** listens while you hold a comfortable low note and makes it your `a`. **Check me** leaves a pause after each note for you to sing it back, then marks the note with whether you were within about a semitone. Choose **Sing only** to skip the notes and sing each vowel from memory. Click any note to check just that one. All listening happens in your browser: nothing you sing is recorded or sent anywhere, and your `a` is saved only on this device.
 
 <PitchDrill />
 
@@ -108,11 +106,11 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 | Dictionary stem (no `x`) | lexical compound | one long simple-looking root (`obahoha` *bedroom*) |
 | `-l` / `-m` / `-n` / `-r` | [word ending](word-endings.md) | audible end of the content word |
 | Optional `-x` | [plural](plurality.md) after the ending | word-final `-lx` / `-mx` / `-nx` / `-rx` / `-lnx` (letter `x`) |
-| Stand-in **`-rl` / `-rm`** | [dependent clauses](dependents.md#dependent-clauses) | word-final coda `rl` / `rm` |
+| Stand-in `-rl` / `-rm` | [dependent clauses](dependents.md#dependent-clauses) | word-final `rl` / `rm` |
 
-A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubulel`: prefix `z`, root `ubule`, ending `-l`). Each spelling has only one pronunciation. Writing does not mark stress. Musical rhythm may still place emphasis.
+A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubulel`: prefix `z`, root `ubule`, ending `-l`). Each spelling has only one pronunciation.
 
-Some short grammar words stack two vowels (a join such as **ua**). A stack always puts its vowels in alphabetical order (**u**, **o**, **a**, **e**): **u** comes first and **e** comes last. That gives six stacks: **uo**, **ua**, **ue**, **oa**, **oe**, and **ae**. The two vowels stay two separate syllables.
+Some short grammar words put two vowels side by side, a **vowel stack** (a join such as `ua`). A stack always puts its vowels in alphabetical order (`u`, `o`, `a`, `e`): `u` comes first and `e` comes last. That gives six stacks: `uo`, `ua`, `ue`, `oa`, `oe`, and `ae`. The two vowels stay two separate syllables.
 
 Each vowel keeps its [pitch](#vowel-pitch) in a stack, so every stack is a small melody. The alphabet's vowel order goes down in pitch and back up, so the stacks mix falls and rises and each one sounds different from the others:
 
@@ -133,7 +131,7 @@ Hear each stack against your own `a`, and sing it back:
 
 ### Number-word exception {#number-word-exception}
 
-When English says *how many* or *which place*, Agebon uses a [number word](numbers.md). A number word puts `r` right after the role letter. Ordinary words never have that cluster, because their roots start with a vowel, so a role letter followed directly by `r` tells you a number is coming. The marker is `ra`, `ru`, `re`, or `ro`; counting from the end is written `#-`, spelled and spoken **rue** before the digits. Two vowels in a row stay two separate syllables.
+When English says *how many* or *which place*, Agebon uses a [number word](numbers.md). A number word puts `r` right after the role letter. Ordinary words never have that cluster, because their roots start with a vowel, so a role letter followed directly by `r` tells you a number is coming. The marker is `ra`, `ru`, `re`, or `ro`. To count from the end, write `#-` before the digits; it is spelled and spoken `rue`. Two vowels in a row stay two separate syllables.
 
 > `zagozolx gragel.`
 >
@@ -232,15 +230,15 @@ These choices about word shape make Agebon easier to sing:
 | Constraint | Why it helps | How Agebon keeps it |
 |------------|--------------|---------------------|
 | One vowel per letter | Sliding from one vowel to another mid-note forces the mouth to change | Stacked vowels = separate syllables |
-| Few consonant clusters | Clusters are harder to say quickly | Ordinary shape is consonant-then-vowel at the start of a syllable; limited clusters below |
-| Voiced preferred | Voiceless stops cut the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
-| No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge** or a lexical join (**-l** / **-m**) before a number marker `r`. The [syllabic `l`](#syllabic-l) of `blr` / `blw` is a held beat, not a final consonant |
+| Few consonant clusters (consonants with no vowel between) | Clusters are harder to say quickly | Ordinary shape is consonant-then-vowel at the start of a syllable; the few clusters are listed below |
+| Voiced preferred | Unvoiced `b`, `d`, `g` (*p*, *t*, *k*) stop the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
+| No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the word edge or a lexical join (`-l` / `-m`) before a number marker `r`. The [syllabic `l`](#syllabic-l) of `blr` / `blw` is a held beat, not a final consonant |
 | No lexical stress | Music already places emphasis | Stress always falls on the same beat; spelling does not mark it, and music may move it. A word's first syllable sits best on a strong beat |
 | Vowel pitch | A melody owns the pitch | Song drops [vowel pitch](#vowel-pitch); each vowel's sound alone says which vowel it is |
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-ln` / `-r` / `-rl` / `-rm` (optional `-x`); stand-ins end in `-rl` / `-rm` / `-rth` |
 
-Legal clusters: left-hanging `gl-`; hosted `bl-`, with a [syllabic `l`](#syllabic-l) before `r` / `w`; number-word role letter + `r`; [tag pronoun](pronouns.md#tag-pronouns) role letter + `w` (`zw`, `dw`, `bw`); lexical join **-l** / **-m** plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`; consonant runs inside a [place-name root](#place-name-roots). The lexical join before `r` is the only syllable-final consonant inside an ordinary word.
+The clusters Agebon allows: left-hanging `gl-`; hosted `bl-`, with a [syllabic `l`](#syllabic-l) before `r` / `w`; number-word role letter + `r`; [tag pronoun](pronouns.md#tag-pronouns) role letter + `w` (`zw`, `dw`, `bw`); lexical join `-l` / `-m` plus number marker `r` on a [kind morph](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`; consonant runs inside a [place-name root](#place-name-roots). The lexical join before `r` is the only syllable-final consonant inside an ordinary word.
 
 Try singing a short Agebon line quickly at a high but comfortable pitch:
 
@@ -248,7 +246,7 @@ Try singing a short Agebon line quickly at a high but comfortable pitch:
 
 / zʉ.zo̞.ze̞n ɡä.mä.ɦʉm /
 
-A line that piles up close vowels, clusters, and mid-word stops is harder to sustain even when it is only a little harder to speak:
+Compare a line, not Agebon, that piles up vowels side by side, clusters, and consonants that stop the sound mid-word. It is only a little harder to speak, but much harder to hold on a note:
 
 / seiɹ ˈʈʂuɹt tis ˈheb.ɡiɹn fuofts /
 
@@ -279,42 +277,28 @@ A vowel's pitch is an interval above your own `a`, not a fixed note, since voice
 
 The piano keys are the [finger code](finger-code.md#piano)'s vowel keys, with D♯3 for `a`. Match the intervals, not the notes. The four pitches belong to one pentatonic scale, so any two sound well together, and a line said on its vowel pitches sounds like music. The opposite pair `a` and `u` is a fifth apart. `u` and `o`, the two rounded vowels and the closest pair by ear, are four semitones apart. The two-semitone steps (`o` to `e`, `e` to `u`) sit between vowels that already differ in lip or tongue position.
 
-The range narrows as you speak faster; the order never changes:
-
-| Speech | Range | `a` / `o` / `e` / `u` |
-|--------|-------|------------------------|
-| Careful speech, teaching, and the words never said quietly (below) | full | 0 / 3 / 5 / 7 |
-| Ordinary running speech | about ⅔ | 0 / 2 / 3.5 / 5 |
-| Fast speech | about ½ | 0 / 1.5 / 2.5 / 3.5 |
-
-Fast speech keeps little more than the order. The full range belongs to careful speech and to the words that change the meaning.
-
 Pitch is heard against your own range, so it helps most inside a sentence, and inside a word with two vowels, which carries its own rise or fall: `yael` rises and `yuel` falls. A voice may drift lower over a long sentence; that carries nothing, as long as neighboring vowels keep their order. A whisper has no pitch, so the vowel's sound alone carries it. The [syllabic `l`](#syllabic-l) has a fixed pitch of +4 semitones, between `o` and `e`, and never copies a neighbor.
-
-Practice the narrower ranges, on the [vowel stacks](#phonotactics) or any other pattern:
-
-<PitchDrill level="advanced" />
 
 ### Words never said quietly {#never-quiet}
 
-English swallows small words that change the meaning: *can* and *can't* often differ by one weak sound, and *I think* is usually mumbled. In Agebon, give these words their full stress and the [full pitch range](#vowel-pitch-values) even when the words around them are light:
+English swallows small words that change the meaning: *can* and *can't* often differ by one weak sound, and *I think* is usually mumbled. In Agebon, give these words their full stress and a clear [pitch on each vowel](#vowel-pitch-values) even when the words around them are light:
 
 | Words | Why |
 |-------|-----|
-| Negation: the **u** joins ([negation](joins.md#negation-u)) | Missing one flips the claim |
+| Negation: the `u` joins ([negation](joins.md#negation-u)) | Missing one flips the claim |
 | [MAY](knowing.md#may) and its hold endings | Missing one makes a guess sound certain |
 | [How you know](knowing.md#evidentiality) and [how strong the evidence is](knowing.md#evidence-strength) | Missing one hides where the claim came from |
 | The kind of *can't* ([ability](intention.md#ability)) | Missing one turns *not right now* into *not ever* |
 
 ### Voice and certainty {#voice-and-certainty}
 
-Only the words and the written [tone marks](speech-moves.md#tone-marks) carry meaning. How firmly you stand behind a claim is the ending on the [act word](speech-moves.md#speech-act); how sure you are is [MAY](knowing.md#may). Pitch carries two things only: each [vowel's own pitch](#vowel-pitch-values), and the `?` mark, which raises a word's whole range. An unwritten rise or fall adds nothing. A statement said with a rising voice is still a statement, and a firm **-l** claim said hesitantly is still firm.
+Only the words and the written [tone marks](speech-moves.md#tone-marks) carry meaning. How firmly you stand behind a claim is the ending on the [act word](speech-moves.md#speech-act); how sure you are is [MAY](knowing.md#may). Pitch carries two things only: each [vowel's own pitch](#vowel-pitch-values), and the `?` mark, which raises a word's whole range. An unwritten rise or fall adds nothing. A statement said with a rising voice is still a statement, and a firm `-l` claim said hesitantly is still firm.
 
 So listen to the words, not the voice. A speaker whose voice naturally rises at the end is not hedging, and a confident voice is not evidence.
 
 ### Speech edges {#speech-edges}
 
-Pitch belongs to the vowels, so the edges of a sentence are marked by words and by time. Almost every edge is a word the listener hears: a join, an `/x/` word, a `/y/` word. Only two edges have no word, a period and a scope island, and those are marked by silence counted in beats. Every syllable is one beat, so a listener hears the silence as rhythm:
+Pitch belongs to the vowels, so the edges of a sentence are marked by words and by time. Almost every edge is a word the listener hears: a join, an `/x/` word, a `/y/` word. Only two edges have no word: a period, and a scope island (a chunk in braces, so a word inside applies only to that chunk). Those two are marked by silence counted in beats. Every syllable is one beat, so a listener hears the silence as rhythm:
 
 - a **break**: the next beat comes half a beat late;
 - a **rest**: one whole silent beat.
@@ -326,7 +310,7 @@ From smallest to largest:
 | Word | Louder first syllable, ending held | [rhythm and stress](#rhythm-and-stress) |
 | Item in a list, before the join word | Nothing extra | [right-close fence](joins.md#right-close) |
 | Join word that ends a list | Nothing extra: the join word is heard | [right-close fence](joins.md#right-close) |
-| Soft **-m** statement or answer | Nothing extra: the **-m** is heard | [periods](dependents.md#orthography-and-prosody-periods) |
+| Soft `-m` statement or answer | Nothing extra: the `-m` is heard | [periods](dependents.md#orthography-and-prosody-periods) |
 | Scope island | Break before, one tight phrase, break after | [scope islands](spans.md#scope-islands) |
 | `/x/` continue, stand-in hang | No rest: the sentence goes on | [periods](dependents.md#orthography-and-prosody-periods) |
 | Period | Rest | [periods](dependents.md#orthography-and-prosody-periods) |
@@ -358,7 +342,7 @@ When you need a moment in the middle of speaking, English fills the gap with *um
 | *mmm*, lips closed | I am thinking it over | waits and leaves the silence | Lips closed: not ready to speak |
 | A held `a`, `e` or `o` (any of them), at its own pitch | I know what I mean but cannot find the word | may offer a word | Mouth open: the word is on its way |
 
-Do not hold `u`: it is the undo vowel, so a held `u` can sound like a denial. A thinking vowel is held well past one beat, so it does not sound like a [letter name](#letter-names), which is short and followed by a pause.
+Do not hold `u`: in grammar words `u` usually means *undo* or *not*, so a held `u` can sound like a denial. A thinking vowel is held well past one beat, so it does not sound like a [letter name](#letter-names), which is short and followed by a pause.
 
 **Compare with:** a thinking sound only holds the gap. To fix a word you already said, use a hook: [`el`](hooks.md#rather) for a better wording of the same thing, [`ol`](hooks.md#instead) for the thing you meant instead.
 
@@ -366,7 +350,7 @@ Do not hold `u`: it is the undo vowel, so a held `u` can sound like a denial. A 
 
 - Citation (root + ending, no sentence): [word-endings.md](word-endings.md)
 - Role letters in a clause: [clause.md](clause.md#role-letters)
-- Place-name roots (countries, a respelled English name): [above](#place-name-roots), [lexicon](lexicon.md#respell)
+- Respelling an English name: [lexicon](lexicon.md#respell)
 - Numbers (role letter + `r` exception and [digit syllables](numbers.md#counts)): [numbers.md](numbers.md)
 - Mention spans (letter as form in a clause): [spans.md](spans.md)
 - Mid-word `x` and `th`: [compounds.md](compounds.md)

@@ -6,15 +6,13 @@ import { drillPhrases, PITCH_ORDER, STACKS, VOWEL_PITCH } from "./vowel-pitch.ts
 
 describe("vowel pitch", () => {
   it("sits on the finger code's piano keys", () => {
-    for (const v of PITCH_ORDER) assert.equal(VOWEL_PITCH.full[v], vowelKey(v) - vowelKey("a"), v);
+    for (const v of PITCH_ORDER) assert.equal(VOWEL_PITCH[v], vowelKey(v) - vowelKey("a"), v);
   });
 
-  it("keeps the order in every range", () => {
-    for (const steps of Object.values(VOWEL_PITCH)) {
-      const pitches = PITCH_ORDER.map((v) => steps[v]!);
-      assert.deepEqual([...pitches].sort((a, b) => a - b), pitches);
-      assert.equal(new Set(pitches).size, pitches.length);
-    }
+  it("rises in pitch order", () => {
+    const pitches = PITCH_ORDER.map((v) => VOWEL_PITCH[v]!);
+    assert.deepEqual([...pitches].sort((a, b) => a - b), pitches);
+    assert.equal(new Set(pitches).size, pitches.length);
   });
 
   it("lists the six stacks", () => {
