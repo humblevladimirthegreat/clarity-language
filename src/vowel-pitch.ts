@@ -32,63 +32,43 @@ export const STACKS: readonly string[] = ALPHABET_VOWELS.flatMap((v, i) => ALPHA
 
 // ---- Drill ----
 
-export type DrillMode = "up" | "down" | "pairs" | "random" | "contours";
+export type DrillMode = "up" | "down" | "pairs" | "contours";
 
-export const DRILL_MODES: readonly { id: DrillMode; label: string; advanced: boolean }[] = [
-  { id: "up", label: "Scale up", advanced: false },
-  { id: "down", label: "Scale down", advanced: false },
-  { id: "pairs", label: "Pairs", advanced: false },
-  { id: "random", label: "Random", advanced: false },
-  { id: "contours", label: "Contours", advanced: true },
+/** `stacks`: the mode plays vowel stacks, which learners meet at intermediate level. */
+export const DRILL_MODES: readonly { id: DrillMode; label: string; stacks: boolean }[] = [
+  { id: "up", label: "Scale up", stacks: false },
+  { id: "down", label: "Scale down", stacks: false },
+  { id: "pairs", label: "Pairs", stacks: false },
+  { id: "contours", label: "Contours", stacks: true },
 ];
 
-/**
- * One step of a phrase. `ref` is the opening `a` the other vowels are heard against; `sing` is a silent
- * turn for the learner to sing the vowel before the drill plays it.
- */
-export type DrillStep = { vowel: string; kind: "ref" | "note" | "sing"; beats: number };
+/** One step of a phrase. `ref` is the opening `a` the other vowels are heard against. */
+export type DrillStep = { vowel: string; kind: "ref" | "note"; beats: number };
 /** A phrase: an optional word or caption, then its steps. */
 export type DrillPhrase = { caption: string; word?: string; steps: DrillStep[] };
 
 const note = (vowel: string): DrillStep => ({ vowel, kind: "note", beats: 1 });
 const REF: DrillStep = { vowel: "a", kind: "ref", beats: 1 };
-/** Opens with `a` unless the phrase already does. */
-const fromA = (vowels: string[]): DrillStep[] => (vowels[0] === "a" ? vowels.map(note) : [REF, ...vowels.map(note)]);
 const vowelsOf = (word: string): string[] => [...word].filter((c) => PITCH_ORDER.includes(c));
 
-/** The phrases a mode plays. `pick` chooses the random vowel (an index into o, e, u). */
-export function drillPhrases(mode: DrillMode, pick: () => number = () => Math.floor(Math.random() * 3)): DrillPhrase[] {
+/** The phrases a mode plays. */
+export function drillPhrases(mode: DrillMode): DrillPhrase[] {
   switch (mode) {
     case "up":
       return [{ caption: "low to high", steps: PITCH_ORDER.map(note) }];
     case "down":
       return [{ caption: "high to low", steps: [...PITCH_ORDER].reverse().map(note) }];
     case "pairs":
+      // Only the first pair opens on `a`; the later pairs lean on it.
       return [
-        { caption: "opposites, the widest gap", steps: fromA(["a", "u"]) },
-        { caption: "opposites, one step", steps: fromA(["o", "e"]) },
-        { caption: "the closest pair by ear", steps: fromA(["u", "o"]) },
+        { caption: "opposites, the widest gap", steps: ["a", "u"].map(note) },
+        { caption: "opposites, one step", steps: ["o", "e"].map(note) },
+        { caption: "the closest pair by ear", steps: ["u", "o"].map(note) },
       ];
-    case "random": {
-      const vowel = PITCH_ORDER.filter((v) => v !== "a")[pick()]!;
-      return [{ caption: "sing it, then listen", steps: [REF, { vowel, kind: "sing", beats: 2 }, note(vowel)] }];
-    }
     case "contours":
-      return ["yael", "yuel", ...STACKS].map((word) => {
+      return STACKS.map((word) => {
         const [from, to] = vowelsOf(word).map((v) => PITCH_ORDER.indexOf(v));
         return { caption: to! > from! ? "rises" : "falls", word, steps: [REF, ...vowelsOf(word).map(note)] };
       });
   }
 }
-
-/**
- * The phrases for the microphone check: after each played note, the opening `a` included, a silent turn to
- * sing it back, so the microphone hears only the learner. A phrase that already has a sing turn (Random)
- * keeps its own order.
- */
-export const withSingTurns = (phrases: readonly DrillPhrase[]): DrillPhrase[] =>
-  phrases.map((p) =>
-    p.steps.some((s) => s.kind === "sing")
-      ? p
-      : { ...p, steps: p.steps.flatMap((s) => [s, { vowel: s.vowel, kind: "sing" as const, beats: 2 }]) },
-  );

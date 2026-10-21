@@ -7,7 +7,6 @@ import {
   RANGE_LABELS,
   drillPhrases,
   pitchOf,
-  withSingTurns,
   type DrillMode,
   type DrillPhrase,
   type DrillStep,
@@ -18,20 +17,21 @@ import { heldNote, judgePitch, type Heard, type Verdict } from '../lib/pitch-det
 import { noteName, pianoBus, pianoContext, pianoVoice } from '../lib/piano-voice'
 
 // Plays vowel-pitch patterns on the finger code's piano voice and lights each vowel as its note sounds;
-// the learner sings the vowels back. `advanced` adds the contour mode and the speech ranges.
-// The microphone is optional: *Find my a* sets the note for `a` from a held note, and *Check me* adds a
-// silent turn after each note (Random keeps its turn before) and judges what the learner sang in it; a
-// clicked step plays its note and judges the learner singing it back. Without it, − and + set `a`.
+// the learner sings the vowels back. `level` intermediate adds the contour mode; advanced also adds the
+// speech ranges.
+// The microphone is optional: *Find my a* sets the note for `a` from a held note, and *Check me* leaves a
+// silent turn after each note and marks the note with what the learner sang in it; a clicked step does the same for one note. Without it, − and + set `a`.
 
-const props = defineProps<{ advanced?: boolean }>()
+const props = defineProps<{ level?: 'intermediate' | 'advanced' }>()
 
-const modes = computed(() => DRILL_MODES.filter((m) => props.advanced || !m.advanced))
+const modes = computed(() => DRILL_MODES.filter((m) => props.level || !m.stacks))
 const RANGES = Object.keys(RANGE_LABELS) as PitchRange[]
 
-const mode = ref<DrillMode>('up')
+// A drill past beginner opens on the stacks, which only it has.
+const mode = ref<DrillMode>(props.level ? 'contours' : 'up')
 const range = ref<PitchRange>('full')
 const base = ref(PITCH_BASE)
-const phrases = ref<DrillPhrase[]>(drillPhrases('up'))
+const phrases = ref<DrillPhrase[]>(drillPhrases(mode.value))
 const playing = ref(false)
 const now = ref(-1)
 
@@ -49,18 +49,24 @@ const hearing = ref<number | null>(null)
 const micNote = ref('')
 const results = ref<Record<string, Verdict>>({})
 
-/** The phrases as played: with a sing turn before each note while the microphone checks. */
-const shown = computed(() => (check.value ? withSingTurns(phrases.value) : phrases.value))
+/** `turn`: a silent stretch for the learner to sing the step's vowel. */
+type Timed = { phrase: number; step: number; at: number; dur: number; turn: boolean }
 
-type Timed = { phrase: number; step: number; at: number; dur: number }
+/** Seconds of the turn to sing a note back, while the microphone checks. */
+const SING_BACK = 2 * BEAT
 
 const timeline = computed<Timed[]>(() => {
   const out: Timed[] = []
   let t = 0
-  shown.value.forEach((p, pi) => {
+  phrases.value.forEach((p, pi) => {
     p.steps.forEach((s, si) => {
-      out.push({ phrase: pi, step: si, at: t, dur: s.beats * BEAT })
+      out.push({ phrase: pi, step: si, at: t, dur: s.beats * BEAT, turn: false })
       t += s.beats * BEAT
+      // The microphone must hear the learner alone, so they sing each note back after it.
+      if (check.value) {
+        out.push({ phrase: pi, step: si, at: t, dur: SING_BACK, turn: true })
+        t += SING_BACK
+      }
     })
     t += BEAT
   })
@@ -73,13 +79,10 @@ const isOn = (pi: number, si: number) => active.value?.phrase === pi && active.v
 /** Which letter of a phrase's word sounds now: its vowels in order, after the opening `a`. */
 function wordLetterOn(p: DrillPhrase, pi: number, li: number): boolean {
   if (!p.word || active.value?.phrase !== pi) return false
-  // A turn to sing a note back lights what the note lit.
-  let at = active.value.step
-  const prev = p.steps[at - 1]
-  if (p.steps[at]!.kind === 'sing' && prev && prev.kind !== 'sing' && prev.vowel === p.steps[at]!.vowel) at--
+  const at = active.value.step
   const step = p.steps[at]!
   if (step.kind === 'ref') return false
-  const notes = p.steps.slice(0, at + 1).filter((s) => s.kind === 'note').length + (step.kind === 'sing' ? 1 : 0)
+  const notes = p.steps.slice(0, at + 1).filter((s) => s.kind === 'note').length
   const vowelAt = [...p.word].map((c, i) => ({ c, i })).filter(({ c }) => PITCH_ORDER.includes(c))
   return vowelAt[notes - 1]?.i === li
 }
@@ -88,10 +91,10 @@ const VERDICT_LABELS: Record<Verdict['verdict'], string> = { ok: '✓ in tune', 
 const resultOf = (pi: number, si: number): Verdict | undefined => results.value[`${pi}:${si}`]
 
 function stepLabel(s: DrillStep, pi: number, si: number): string {
-  if (manual.value?.key === `${pi}:${si}` && manual.value.singing) return 'you sing'
+  if ((manual.value?.key === `${pi}:${si}` && manual.value.singing) || (active.value?.turn && isOn(pi, si))) return 'you sing'
   const result = resultOf(pi, si)
   if (result) return VERDICT_LABELS[result.verdict]
-  return s.kind === 'ref' ? 'your a' : s.kind === 'sing' ? 'you sing' : ''
+  return s.kind === 'ref' ? 'your a' : ''
 }
 
 const offTitle = (r: Verdict | undefined) =>
@@ -120,19 +123,19 @@ function releaseMic(): void {
   mic = null
 }
 
-/** Listens while a sung turn is open, and judges each turn once it ends. */
+/** Listens while a turn to sing is open, and marks its step once the turn ends. */
 function listen(): void {
   if (!mic || !check.value) return
   const e = active.value
-  if (e && shown.value[e.phrase]!.steps[e.step]!.kind === 'sing' && now.value >= e.at + GRACE) {
+  if (e?.turn && now.value >= e.at + GRACE) {
     const m = mic.read()
     const key = `${e.phrase}:${e.step}`
     if (m !== null) sung.set(key, [...(sung.get(key) ?? []), m])
   }
   for (const t of timeline.value) {
-    const s = shown.value[t.phrase]!.steps[t.step]!
     const key = `${t.phrase}:${t.step}`
-    if (s.kind !== 'sing' || now.value < t.at + t.dur || results.value[key]) continue
+    if (!t.turn || now.value < t.at + t.dur || results.value[key]) continue
+    const s = phrases.value[t.phrase]!.steps[t.step]!
     results.value[key] = judgePitch(sung.get(key) ?? [], pitchOf(s.vowel, base.value, range.value))
   }
 }
@@ -163,15 +166,14 @@ function stop(): void {
 
 function play(): void {
   stop()
-  if (mode.value === 'random') phrases.value = drillPhrases('random')
   results.value = {}
   sung.clear()
   const a = pianoContext()
   bus = pianoBus(a)
   t0 = a.currentTime + 0.1
   for (const e of timeline.value) {
-    const s = shown.value[e.phrase]!.steps[e.step]!
-    if (s.kind === 'sing') continue
+    if (e.turn) continue
+    const s = phrases.value[e.phrase]!.steps[e.step]!
     pianoVoice(a, bus, pitchOf(s.vowel, base.value, range.value), t0 + e.at, e.dur * 0.9, s.kind === 'ref' ? 0.6 : 0.9, 0.4)
   }
   playing.value = true
@@ -323,7 +325,7 @@ onBeforeUnmount(() => {
             {{ m.label }}
           </button>
         </div>
-        <div v-if="advanced" class="pd-group" role="group" aria-label="Range">
+        <div v-if="level === 'advanced'" class="pd-group" role="group" aria-label="Range">
           <span class="pd-label">Range</span>
           <button
             v-for="r in RANGES"
@@ -348,7 +350,7 @@ onBeforeUnmount(() => {
     <p v-if="finding" class="pd-mic-note">Sing a comfortable low <code>a</code> and hold it.</p>
     <p v-else-if="micNote" class="pd-mic-note">{{ micNote }}</p>
     <ol class="pd-phrases">
-      <li v-for="(p, pi) in shown" :key="pi" class="pd-phrase">
+      <li v-for="(p, pi) in phrases" :key="pi" class="pd-phrase">
         <span v-if="p.word" class="pd-word"
           ><code><span
               v-for="(c, li) in p.word"
@@ -370,7 +372,7 @@ onBeforeUnmount(() => {
             @click="clickStep(pi, si, s.vowel)"
           >
             <span class="pd-letter">{{ s.vowel }}</span>
-            <span v-if="stepLabel(s, pi, si)" class="pd-sub">{{ stepLabel(s, pi, si) }}</span>
+            <span class="pd-sub">{{ stepLabel(s, pi, si) || '\u00a0' }}</span>
           </button>
         </span>
         <span class="pd-caption">{{ p.caption }}</span>
@@ -470,8 +472,8 @@ onBeforeUnmount(() => {
   padding: 0;
   margin: 0.75rem 0 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.25rem;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .pd-phrase {
@@ -479,6 +481,14 @@ onBeforeUnmount(() => {
   align-items: center;
   gap: 0.5rem;
   margin: 0;
+}
+
+.pd-word {
+  min-width: 2.5rem;
+}
+
+.pd-sub {
+  white-space: nowrap;
 }
 
 .pd-word .lit {
@@ -499,7 +509,8 @@ onBeforeUnmount(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 2.2rem;
+  /* Wide enough for the longest label, so a mark never resizes the button. */
+  width: 4.75rem;
   padding: 0.2rem 0.35rem;
   border-radius: 6px;
   border: 1px solid var(--vp-c-divider);

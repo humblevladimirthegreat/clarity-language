@@ -45,7 +45,7 @@ The opposite vowels `a` and `u` are also the furthest apart in pitch.
 
 Voices differ, so a vowel's pitch is how far it sits above your own `a`, not a fixed note. To practice, pick a pattern below, move `a` until it sits comfortably at the lower end of your vocal range, press **Play**, and sing each vowel as it lights up.
 
-With a microphone, **Find my `a`** listens while you hold a comfortable low note and makes it your `a`. **Check me** gives you a turn to sing each vowel back after you hear it (in **Random**, before you hear it), then marks whether you were within about a semitone.
+With a microphone, **Find my `a`** listens while you hold a comfortable low note and makes it your `a`. **Check me** leaves a pause after each note for you to sing it back, then marks the note with whether you were within about a semitone. Click any note to check just that one.
 
 <PitchDrill />
 
@@ -114,7 +114,7 @@ A syllable ends with a consonant only at the **end of the word**. Inside a root,
 
 Some short grammar words stack two vowels (a join such as **ua**). A stack always puts its vowels in alphabetical order (**u**, **o**, **a**, **e**): **u** comes first and **e** comes last. That gives six stacks: **uo**, **ua**, **ue**, **oa**, **oe**, and **ae**. The two vowels stay two separate syllables.
 
-Each vowel keeps its [pitch](#vowels) in a stack, so every stack is a small melody. The alphabet's vowel order goes down in pitch and back up, so the stacks mix falls and rises and each one sounds different from the others:
+Each vowel keeps its [pitch](#vowel-pitch) in a stack, so every stack is a small melody. The alphabet's vowel order goes down in pitch and back up, so the stacks mix falls and rises and each one sounds different from the others:
 
 | Stack | Pitch | Contour |
 |-------|-------|------|
@@ -124,6 +124,10 @@ Each vowel keeps its [pitch](#vowels) in a stack, so every stack is a small melo
 | `oa` | mid-low → low | small fall, low |
 | `ae` | low → mid-high | medium rise |
 | `oe` | mid-low → mid-high | small rise, mid |
+
+Hear each stack against your own `a`, and sing it back:
+
+<PitchDrill level="intermediate" />
 
 **Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 
@@ -232,7 +236,7 @@ These choices about word shape make Agebon easier to sing:
 | Voiced preferred | Voiceless stops cut the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
 | No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the **word edge** or a lexical join (**-l** / **-m**) before a number marker `r`. The [syllabic `l`](#syllabic-l) of `blr` / `blw` is a held beat, not a final consonant |
 | No lexical stress | Music already places emphasis | Stress always falls on the same beat; spelling does not mark it, and music may move it. A word's first syllable sits best on a strong beat |
-| Vowel pitch | A melody owns the pitch | Song drops [vowel pitch](#vowels); each vowel's sound alone says which vowel it is |
+| Vowel pitch | A melody owns the pitch | Song drops [vowel pitch](#vowel-pitch); each vowel's sound alone says which vowel it is |
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-ln` / `-r` / `-rl` / `-rm` (optional `-x`); stand-ins end in `-rl` / `-rm` / `-rth` |
 
@@ -287,9 +291,9 @@ Fast speech keeps little more than the order. The full range belongs to careful 
 
 Pitch is heard against your own range, so it helps most inside a sentence, and inside a word with two vowels, which carries its own rise or fall: `yael` rises and `yuel` falls. A voice may drift lower over a long sentence; that carries nothing, as long as neighboring vowels keep their order. A whisper has no pitch, so the vowel's sound alone carries it. The [syllabic `l`](#syllabic-l) has a fixed pitch of +4 semitones, between `o` and `e`, and never copies a neighbor.
 
-Practice the contours of two-vowel words and the six [vowel stacks](#phonotactics), and the narrower ranges:
+Practice the narrower ranges, on the [vowel stacks](#phonotactics) or any other pattern:
 
-<PitchDrill advanced />
+<PitchDrill level="advanced" />
 
 ### Words never said quietly {#never-quiet}
 
