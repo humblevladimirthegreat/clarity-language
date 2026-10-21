@@ -6,10 +6,13 @@ import {
   fingerCodeScore,
   GUITAR_CONSONANTS,
   GUITAR_SPARE,
+  GUITAR_VOWELS,
+  guitarNotes,
   pianoForm,
   pianoNotes,
   shapeOf,
   VOWEL_LETTERS,
+  vowelKey,
 } from "./finger-code.ts";
 
 const key = (fingers: number[]): string => [...fingers].sort().join("+");
@@ -33,7 +36,11 @@ describe("finger code", () => {
       th: "2+3+4 hooked",
       x: "2+3+4+5 hooked",
     });
-    assert.deepEqual(VOWEL_LETTERS.map((l) => key(shapeOf(l).fingers)), ["2", "2+3", "2+3+4", "2+3+4+5"]);
+  });
+
+  it("counts the vowels up from the pinky, lowest pitch first", () => {
+    assert.deepEqual(VOWEL_LETTERS, ["a", "o", "e", "u"]);
+    assert.deepEqual(VOWEL_LETTERS.map((l) => key(shapeOf(l).fingers)), ["5", "4+5", "3+4+5", "2+3+4+5"]);
   });
 
   it("gives every letter a distinct shape on its hand", () => {
@@ -61,12 +68,30 @@ describe("finger code", () => {
     });
   });
 
+  it("plays the vowel pitches on piano and guitar, climbing with the count", () => {
+    assert.deepEqual(VOWEL_LETTERS.map((l) => key(pianoForm(l).fingers)), ["5", "4", "3", "2"]);
+    // 0 / 3 / 5 / 7 semitones above `a` (phonology.md#vowels).
+    assert.deepEqual(VOWEL_LETTERS.map((l) => vowelKey(l) - vowelKey("a")), [0, 3, 5, 7]);
+    const guitar = VOWEL_LETTERS.map((l) => GUITAR_VOWELS[l]!.midi);
+    assert.deepEqual([...guitar].sort((a, b) => a - b), guitar);
+  });
+
   it("never sounds a second or a ninth on piano", () => {
     // A second or a ninth; two octaves apart, a step blurs much less.
     const step = (a: number, b: number) => Math.abs(a - b) < 24 && [1, 2].includes(Math.abs(a - b) % 12);
     for (const c of [...CONSONANT_LETTERS, null]) {
       for (const v of [...VOWEL_LETTERS, null]) {
         const midi = [...(c ? pianoNotes(c) : []), ...(v ? pianoNotes(v) : [])].map((n) => n.midi);
+        for (const a of midi) for (const b of midi) assert.ok(a === b || !step(a, b), `${c ?? ""}${v ?? ""}: ${midi.join(" ")}`);
+      }
+    }
+  });
+
+  it("never sounds a second or a ninth on guitar", () => {
+    const step = (a: number, b: number) => Math.abs(a - b) < 24 && [1, 2].includes(Math.abs(a - b) % 12);
+    for (const c of [...CONSONANT_LETTERS, null]) {
+      for (const v of [...VOWEL_LETTERS, null]) {
+        const midi = [...(c ? guitarNotes(c) : []), ...(v ? guitarNotes(v) : [])].map((n) => n.midi);
         for (const a of midi) for (const b of midi) assert.ok(a === b || !step(a, b), `${c ?? ""}${v ?? ""}: ${midi.join(" ")}`);
       }
     }

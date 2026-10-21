@@ -98,22 +98,22 @@ If the reply is just the fill, not a full sentence, write it as a [citation](wor
 
 ### Question tone (`?`) {#question-tone}
 
-The act word **`yol`** / **`yom`** already makes the sentence a question, so the tone mark `?` is never required. It is still **recommended**, because it shows the rising voice in writing:
+The act word **`yol`** / **`yom`** already makes the sentence a question, so the tone mark `?` is never required. It is still **recommended**, because it shows the raised voice in writing:
 
 - **Yes/no question:** write a free-standing `?` right after the `/y/` words, so it applies to the whole rest of the sentence.
-- **Fill-ask:** attach `?` to the front of each fill-ask word (the join **-r** blank), so the rise falls on what you want filled.
+- **Fill-ask:** attach `?` to the front of each fill-ask word (the join **-r** blank), so the raised voice falls on what you want filled.
 
 > `yol ? zuzozen vowurel.`
 >
 > y-question | ? | z-Uzozen | v-walk
 >
-> "Does Uzozen walk?" (with the rising tone)
+> "Does Uzozen walk?" (with the raised voice)
 
 > `yol ?zar vowurel.`
 >
 > y-question | ?z-wh | v-walk
 >
-> "Who walks?" (with the rising tone on *who*)
+> "Who walks?" (with the raised voice on *who*)
 
 The sentence still ends in a period.
 
@@ -261,7 +261,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 #### English → Agebon {#beginner-english-to-agebon}
 
-**1.** *Does Uzozen find the key?* (with the rising tone)
+**1.** *Does Uzozen find the key?* (with the raised voice)
 
 ::: details Show answer
 `yol ? zuzozen vumewol dogewel.`

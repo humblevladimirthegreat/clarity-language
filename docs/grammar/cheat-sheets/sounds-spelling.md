@@ -15,12 +15,14 @@ Each letter has one sound, and native text is lowercase. Two vowels in a row are
 
 ### Vowels {#vowels}
 
-| Letter | Say | Like | Stage |
-|--------|-----|------|-------|
-| [`u`](../phonology.md#vowels) | /ʉ/ | *you* (without the *y*) | B |
-| [`a`](../phonology.md#vowels) | /ä/ | *spa* | B |
-| [`o`](../phonology.md#vowels) | /o̞/ | *Cambodia* (no glide) | B |
-| [`e`](../phonology.md#vowels) | /e̞/ | *bet* | B |
+| Letter | Say | Like | Pitch | Stage |
+|--------|-----|------|-------|-------|
+| [`u`](../phonology.md#vowels) | /ʉ/ | *you* (without the *y*) | high | B |
+| [`a`](../phonology.md#vowels) | /ä/ | *spa* | low | B |
+| [`o`](../phonology.md#vowels) | /o̞/ | *Cambodia* (no glide) | mid-low | B |
+| [`e`](../phonology.md#vowels) | /e̞/ | *bet* | mid-high | B |
+
+Vowel pitch is optional and adds no meaning; when sound and pitch disagree, the sound wins. [Stress](../phonology.md#rhythm-and-stress) is loudness, never pitch. Exact pitches: `a` 0, `o` +3, `e` +5, `u` +7 semitones ([vowel pitch values](../phonology.md#vowel-pitch-values), A).
 
 ### Consonants and their names {#consonants}
 
@@ -106,4 +108,5 @@ Ten letters also start a [digit syllable](../numbers.md#counts); the table is [h
 | [One vowel per letter](../phonology.md#singability-constraints) | stacked vowels are separate syllables | A |
 | [No stress in spelling](../phonology.md#singability-constraints) | rhythm may stress a beat | A |
 | [Voiced preferred](../phonology.md#singability-constraints) | unvoiced is style only | A |
+| [Vowel pitch in song](../phonology.md#one-note) | dropped: the melody owns the pitch | A |
 | [Legal clusters](../phonology.md#singability-constraints) | `gl-`; `bl-`, with a [syllabic `l`](../phonology.md#syllabic-l) before `r` / `w`; role letter + `r` (number) or + `w` (tag); `-lx` `-mx` `-nx` `-rx`; `-ln`; `-rl` `-rm` `-rth`; clusters in a [place-name root](../phonology.md#place-name-roots) | A |

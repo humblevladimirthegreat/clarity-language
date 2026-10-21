@@ -361,18 +361,18 @@ Intermediate sections assume you have read the beginner sections of every page.
 
 ### Writing and speech rhythm (periods) {#orthography-and-prosody-periods}
 
-A **period** closes the sentence body in writing, whatever the speech act. Speech matches that edge with pitch and a short pause. The act word, not the punctuation, sets question or command. `?` and `!` are [tone marks](speech-moves.md#tone-marks) that go before the words they color.
+A **period** closes the sentence body in writing, whatever the speech act. Speech matches that edge with a **rest**: one silent beat. The act word, not the punctuation, sets question or command. `?` and `!` are [tone marks](speech-moves.md#tone-marks) that go before the words they color.
 
 | Writing | Speech | Use | Cue |
 |---------|--------|-----|-----|
-| `.` | Fall on the last word + short pause | Closes the prior **body**. Next stretch still defaults to **`yal`** unless a new `/y/` turn, a written act word, or *yes* / *no* particle sets otherwise | Fall = the claim is done |
-| Next `/y/` turn (*yes* / *no*, a call, written act word) | Pitch **reset** into the turn | New turn; firm **-l** / soft **-m** imply **`yal`** / **`yam`** | Reset = jump to a new act |
-| Bare body or hook + body after `.` | No full reset required | Implied **`yal`** (or **`yam`** only if a soft particle / written **`yam`** said so) | No jump, so same statement |
-| Soft statement / soft *yes* / *no* **-m** | Lighter fall; boundary still clear | **`yam`** (implied or written) | **-m** leaves the hold open |
-| `/x/` continue (clause join) | Dip or short pause; **no** full pitch reset | Keep opener speech act; period after the **whole** joined stretch | Dip extends; no jump |
-| `/x/` linker after `.` (`xahem …`) | Dip into the linker; no turn reset | Keep prior speech act; may start a new written sentence under that speech act | Linker glues; still the same act |
-| `/x/` topic word after `.` (`xuzozen …`) | Pitch **reset**, no turn reset | Keep prior speech act; a new topic starts | Reset = the subject changed, not the act |
-| **Stand-in** hang | Dip; **no** full pitch reset until the last dependent | Next sentence fills the slot; period after the **whole** stretch | Same hang as `/x/` continue |
+| `.` | Rest: one silent beat | Closes the prior **body**. Next stretch still defaults to **`yal`** unless a new `/y/` turn, a written act word, or *yes* / *no* particle sets otherwise | Rest = the claim is done |
+| Next `/y/` turn (*yes* / *no*, a call, written act word) | The period's rest, then the `/y/` word | New turn; firm **-l** / soft **-m** imply **`yal`** / **`yam`** | The `/y/` word = a new act |
+| Bare body or hook + body after `.` | The period's rest only | Implied **`yal`** (or **`yam`** only if a soft particle / written **`yam`** said so) | No `/y/` word, so same statement |
+| Soft statement / soft *yes* / *no* **-m** | Nothing extra: the **-m** is heard | **`yam`** (implied or written) | **-m** leaves the hold open |
+| `/x/` continue (clause join) | **No** rest: the sentence goes on | Keep opener speech act; period after the **whole** joined stretch | No rest = still going |
+| `/x/` linker after `.` (`xahem …`) | The period's rest, then the linker | Keep prior speech act; may start a new written sentence under that speech act | Linker glues; still the same act |
+| `/x/` topic word after `.` (`xuzozen …`) | The period's rest, then the topic word | Keep prior speech act; a new topic starts | The topic word = the subject changed, not the act |
+| **Stand-in** hang | **No** rest until the last dependent | Next sentence fills the slot; period after the **whole** stretch | Same hang as `/x/` continue |
 
 **-l** vs **-m** on the act word / *yes* / *no* is how firmly you stand behind it (closed vs soft / open).
 

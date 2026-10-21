@@ -20,6 +20,7 @@ import {
   type Note,
   type Shape,
 } from '@finger-code'
+import { NOTE_NAMES as NAMES, midiFreq as freq, noteName, pianoBus, pianoContext, pianoVoice } from '../lib/piano-voice'
 
 // The page's sample list is the default slot: clicking a sample plays it.
 
@@ -109,53 +110,14 @@ const sounding = computed(() => {
 
 let ctx: AudioContext | null = null
 let master: GainNode | null = null
-let wave: PeriodicWave | null = null
 let t0 = 0
 let raf = 0
 const stringCache = new Map<string, AudioBuffer>()
 
 function ensureAudio(): AudioContext {
-  if (!ctx) {
-    ctx = new AudioContext()
-    const n = 8
-    const real = new Float32Array(n + 1)
-    const imag = new Float32Array(n + 1)
-    for (let h = 1; h <= n; h++) imag[h] = 1 / Math.pow(h, 2.2)
-    wave = ctx.createPeriodicWave(real, imag)
-  }
-  if (ctx.state === 'suspended') void ctx.resume()
-  if (!master) {
-    master = ctx.createGain()
-    master.gain.value = 0.3
-    const comp = ctx.createDynamicsCompressor()
-    master.connect(comp)
-    comp.connect(ctx.destination)
-  }
+  ctx = pianoContext()
+  if (!master) master = pianoBus(ctx)
   return ctx
-}
-
-const freq = (midi: number) => 440 * Math.pow(2, (midi - 69) / 12)
-
-// Piano: a short decay so no note rings into the next syllable.
-function pianoVoice(a: AudioContext, midi: number, when: number, dur: number, vel: number): void {
-  const f = freq(midi)
-  const osc = a.createOscillator()
-  osc.setPeriodicWave(wave!)
-  osc.frequency.value = f
-  const lp = a.createBiquadFilter()
-  lp.type = 'lowpass'
-  lp.frequency.setValueAtTime(Math.min(8000, f * 6), when)
-  lp.frequency.exponentialRampToValueAtTime(Math.max(f * 1.2, 200), when + 0.9)
-  const g = a.createGain()
-  g.gain.setValueAtTime(0.0001, when)
-  g.gain.exponentialRampToValueAtTime(vel, when + 0.004)
-  g.gain.setTargetAtTime(0.0001, when + 0.004, 0.06)
-  g.gain.setTargetAtTime(0.0001, when + dur, 0.015)
-  osc.connect(lp)
-  lp.connect(g)
-  g.connect(master!)
-  osc.start(when)
-  osc.stop(when + dur + 0.15)
 }
 
 // Guitar: a Karplus-Strong string; a hammer-on starts from a duller excitation than a pluck.
@@ -224,7 +186,7 @@ function sound(evs: Event[], start: number): void {
       notesOf(letter).forEach((n, i) => {
         if (channel.value === 'guitar') guitarVoice(a, n.midi, n.hand === 'vow' && letter === e.vowel, when, e.dur, e.vel * (i ? 0.8 : 1))
         // The upper key of a pair, and the hook mark, sound softer.
-        else pianoVoice(a, n.midi, when, e.dur, e.vel * (n.hand === 'vow' && letter !== e.vowel ? 0.7 : i ? 0.55 : 1))
+        else pianoVoice(a, master!, n.midi, when, e.dur, e.vel * (n.hand === 'vow' && letter !== e.vowel ? 0.7 : i ? 0.55 : 1))
       })
     }
   }
@@ -299,14 +261,11 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   stop()
-  void ctx?.close()
   ctx = null
 })
 
 // ---- Note names ----
 
-const NAMES = ['C', 'C♯', 'D', 'D♯', 'E', 'F', 'F♯', 'G', 'G♯', 'A', 'A♯', 'B']
-const noteName = (midi: number) => NAMES[midi % 12]! + (Math.floor(midi / 12) - 1)
 const STRING_BY_MIDI = new Map(Object.entries(GUITAR_STRINGS).map(([s, x]) => [x.midi as number, s]))
 
 // ---- Hands: signed and touch ----

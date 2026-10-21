@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, ref } from 'vue'
+import { ipaAudioUrl } from '../lib/ipa-audio'
 
 const props = defineProps<{
   file: string
@@ -11,6 +12,7 @@ const audio = ref<HTMLAudioElement | null>(null)
 
 const src = computed(
   () =>
+    ipaAudioUrl(props.file) ??
     `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(props.file)}`,
 )
 

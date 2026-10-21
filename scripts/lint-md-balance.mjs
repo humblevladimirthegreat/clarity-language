@@ -130,6 +130,8 @@ const ALLOWED_HTML_TAGS = new Set([
   "NameRespell",
   "PrintButton",
   "NameHelper",
+  "PitchDrill",
+  "PitchPlay",
   "SpeakButton",
   "WizardSandbox",
 ]);

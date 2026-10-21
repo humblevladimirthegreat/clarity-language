@@ -19,7 +19,8 @@
       "@english-helper-browser": ["../../../src/english-helper/browser.ts"],
       "@claritish-editor-browser": ["../../../src/claritish-editor/browser.ts"],
       "@claritish-owned-noun": ["../../../src/claritish-editor/owned-noun.ts"],
-      "@tts-browser": ["../../../src/tts/browser.ts"]
+      "@tts-browser": ["../../../src/tts/browser.ts"],
+      "@vowel-pitch": ["../../../src/vowel-pitch.ts"]
     }
   },
   "include": ["**/*.ts"],

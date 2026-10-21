@@ -40,16 +40,16 @@ The four consonants left over come next in [alphabet order](./phonology.md#lette
 | `th` | index + middle + ring, hooked |
 | `x` | all four, hooked (claw) |
 
-The vowels go on the other hand. They are the runs 1 to 4, in alphabet order:
+The vowels go on the other hand. They count up the [vowel pitches](./phonology.md#vowels) the way the digits count: a run of 1 to 4 fingers starting at the **pinky**, from the lowest vowel to the highest. More fingers means a higher vowel.
 
-| Vowel | Shape |
-|-------|-------|
-| `u` | index |
-| `a` | index + middle (V) |
-| `o` | index + middle + ring |
-| `e` | four fingers |
+| Vowel | Count | Shape |
+|-------|-------|-------|
+| `a` | 1 | pinky |
+| `o` | 2 | pinky + ring |
+| `e` | 3 | pinky + ring + middle |
+| `u` | 4 | four fingers |
 
-[Opposite vowels](./phonology.md#opposite-vowels) (`u` and `a`, `o` and `e`) differ by one finger. A fist is never a letter: it means *this hand is silent on this beat*.
+Of the [opposite vowels](./phonology.md#opposite-vowels), `a` and `u` are one finger against four, as far apart as they are in pitch, and `o` and `e` are one finger apart. Pinky + ring is the hardest shape to hold, because the middle finger tends to rise with the ring: fold the thumb over the index and middle to keep them down. A fist is never a letter: it means *this hand is silent on this beat*.
 
 The chart in [Try it](#try-it) draws every shape in a sentence.
 
@@ -57,7 +57,7 @@ The chart in [Try it](#try-it) draws every shape in a sentence.
 
 Your dominant hand shows consonants and your other hand shows vowels. The consonant hand does more work (fourteen shapes, some of them hooked), so it gets your stronger hand. Neither hand moves around; each letter is only a change of fingers.
 
-Several shapes are the same on both hands: index alone is `u` on the vowel hand and `b` on the consonant hand. So that a viewer can tell the hands apart, hold both palms toward the viewer, with the consonant hand's fingers pointing up and the vowel hand's fingers pointing sideways, toward the other hand. A left-handed signer's layout is the mirror image of a right-handed one; either way, the sideways fingers mark the vowel hand.
+The consonant hand counts from the index and the vowel hand from the pinky, so index alone is only `b`, and pinky alone is only `a`. The consonant hand never uses pinky alone or middle + ring + pinky, which would look like vowels. The one shape on both hands is four fingers: `u` on the vowel hand and `v` on the consonant hand. So that a viewer can tell the hands apart, hold both palms toward the viewer, with the consonant hand's fingers pointing up and the vowel hand's fingers pointing sideways, toward the other hand. A left-handed signer's layout is the mirror image of a right-handed one; either way, the sideways fingers mark the vowel hand.
 
 [Try it](#try-it) shows both hands in this layout.
 
@@ -81,8 +81,8 @@ For example, `thohom` (*if*) is three beats:
 
 | Beat | Consonant hand | Vowel hand |
 |------|----------------|------------|
-| 1 (stronger) | `th`: index + middle + ring, hooked | `o`: index + middle + ring |
-| 2 | `h`: thumb + index | `o`: index + middle + ring |
+| 1 (stronger) | `th`: index + middle + ring, hooked | `o`: pinky + ring |
+| 2 | `h`: thumb + index | `o`: pinky + ring |
 | 3, held | `m`: horns | fist |
 
 Play any sentence in [Try it](#try-it) to see its beats.
@@ -114,7 +114,7 @@ The shapes can be felt as well as seen. Every touch mode uses the same chart:
 | Palm press | The signer presses the shapes into the receiver's upturned palms, each hand into the palm facing it |
 | Hand over hand | The receiver rests a hand over each of the signer's hands and feels the shapes in the air |
 
-When pressing, straight fingers land on their fingertips, spread at their natural spacing, and hooked fingers land on their middle knuckles. Each finger leaves one point of pressure, so the receiver reads a shape from things touch picks up well: how many points there are, how far the group reaches from the index edge, whether the thumb's point is there, the gap in the middle for `m`, and a soft fingertip against a hard knuckle for straight against hooked.
+When pressing, straight fingers land on their fingertips, spread at their natural spacing, and hooked fingers land on their middle knuckles. Each finger leaves one point of pressure, so the receiver reads a shape from things touch picks up well: how many points there are, how far the group reaches from the index edge (on the vowel hand, from the pinky edge), whether the thumb's point is there, the gap in the middle for `m`, and a soft fingertip against a hard knuckle for straight against hooked.
 
 | Beat | Touch |
 |------|-------|
@@ -131,12 +131,12 @@ Pick **Touch** in [Try it](#try-it) to see a sentence pressed into a receiver's 
 
 On a piano, every note is a black key. The black keys make one five-note scale, so any notes you play together sound pleasant. The left hand plays vowels and the right hand plays consonants for every player, left-handed or not, so the consonants sit on top.
 
-Pressing a whole run would sound as a blur of neighboring notes that is hard to hear apart. So on the keys you strike where the count ends: only the last finger of a run goes down, plus the thumb when the thumb is part of the count. The horns shape for `m` presses both of its fingers. Fingers are numbered 1 (thumb) to 5 (pinky).
+Pressing a whole run would sound as a blur of neighboring notes that is hard to hear apart. So on the keys you strike where the count ends: only the last finger of a run goes down, plus the thumb when the thumb is part of the count. A vowel run ends at its innermost finger, so the key climbs with the count, and each vowel's key is its [pitch](./phonology.md#vowels). The horns shape for `m` presses both of its fingers. Fingers are numbered 1 (thumb) to 5 (pinky).
 
 | Hand | Thumb (1) | 2 | 3 | 4 | Pinky (5) |
 |------|-----------|---|---|---|-----------|
 | Right (consonants) | F♯5 `z` | G♯5 `b` | A♯5 `d` | C♯6 `g` | D♯6 `v` |
-| Left (vowels) | C♯4 hook mark | A♯3 `u` | G♯3 `a` | F♯3 `o` | D♯3 `e` |
+| Left (vowels) | C♯4 hook mark | A♯3 `u` | G♯3 `e` | F♯3 `o` | D♯3 `a` |
 
 The other digit letters combine the thumb with a run's last finger: `l` is thumb + 3, `r` thumb + 4, `n` thumb + 5, and `m` is 2 + 5.
 
@@ -178,10 +178,10 @@ The fretting hand plays vowels on the two lowest strings (the 6th, tuned to D, a
 
 | Vowel | Note | Fret |
 |-------|------|------|
-| `u` | E | 6th string, fret 2 |
-| `a` | G | 6th string, fret 5 |
-| `o` | B | 5th string, fret 4 |
-| `e` | D | 5th string, fret 7 |
+| `a` | E | 6th string, fret 2 |
+| `o` | G | 6th string, fret 5 |
+| `e` | B | 5th string, fret 4 |
+| `u` | D | 5th string, fret 7 |
 
 The two D strings in the consonant hand are the same note an octave apart, so `z` (low D) and `g` (high D) differ only by how high they sound.
 

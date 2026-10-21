@@ -623,7 +623,7 @@ English *now, about Uzozen…*, *speaking of dogs…*, and *so, back to Uzozen�
 
 **Every return is explicit.** There is one topic, not a stack. Coming back from a side topic, or from a new frame, means naming the old topic again with `xuzozer`.
 
-A topic-setting `/x/` word takes a **pitch reset**, as a new `/y/` turn does, but the speech move is unchanged: the listener hears that the subject changed, not that a new act began. Other `/x/` words keep the dip with no reset ([periods](dependents.md#orthography-and-prosody-periods)).
+A topic-setting `/x/` word needs no voice of its own: the `/x/` word itself tells the listener that the subject changed. The speech move is unchanged, so the listener hears a new subject, not a new act ([periods](dependents.md#orthography-and-prosody-periods)).
 
 ### The topic pronoun {#topic-pronoun}
 

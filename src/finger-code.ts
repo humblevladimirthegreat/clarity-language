@@ -1,7 +1,8 @@
 /**
  * Finger code: Agebon produced with the fingers instead of the voice (docs/grammar/finger-code.md).
  * Every letter is a shape on one of two hands: vowels on the non-dominant hand, consonants on the
- * dominant hand. A shape counts on the fingers, so the digit letters are their own counts. The piano
+ * dominant hand. A shape counts on the fingers, so the digit letters are their own counts, and the
+ * vowels count up their pitches from the pinky (phonology.md#vowels). The piano
  * forms derive from the shapes; guitar has its own string table that follows them.
  * Shared by the Finger Code page (FingerCode.vue) and its tests. No Node imports (the grammar site bundles this).
  */
@@ -25,8 +26,8 @@ export const DIGIT_LETTERS: readonly string[] = ["1", "2", "3", "4", "5", "6", "
 );
 /** The consonants after the digit letters, in alphabet order (phonology.md#letter-names): hooked runs 1–4. */
 export const HOOKED_LETTERS: readonly string[] = ["w", "y", "th", "x"];
-/** Vowels in alphabet order: runs 1–4 on the vowel hand. */
-export const VOWEL_LETTERS: readonly string[] = ["u", "a", "o", "e"];
+/** Vowels in count order, lowest pitch first (phonology.md#vowels): runs 1–4 from the pinky on the vowel hand. */
+export const VOWEL_LETTERS: readonly string[] = ["a", "o", "e", "u"];
 export const CONSONANT_LETTERS: readonly string[] = [...DIGIT_LETTERS, ...HOOKED_LETTERS];
 
 const VOWEL_SET = new Set(VOWEL_LETTERS);
@@ -34,8 +35,11 @@ export const isVowel = (letter: string): boolean => VOWEL_SET.has(letter);
 
 /** A run of 1–4 fingers starting at the index finger. */
 const run = (count: number): Finger[] => ([2, 3, 4, 5] as Finger[]).slice(0, count);
+/** A run of 1–4 fingers starting at the pinky, listed from the pinky in. */
+const pinkyRun = (count: number): Finger[] => ([5, 4, 3, 2] as Finger[]).slice(0, count);
 
 const RUN_NAMES = ["index", "V", "three fingers", "four fingers"];
+const VOWEL_NAMES = ["pinky", "pinky + ring", "pinky + ring + middle", "four fingers"];
 const COUNT_NAMES: Record<number, string> = {
   4: "flat hand",
   5: "thumb",
@@ -56,7 +60,7 @@ function countShape(count: number): Shape {
 }
 
 export const SHAPES: ReadonlyMap<string, Shape> = new Map([
-  ...VOWEL_LETTERS.map((letter, i): [string, Shape] => [letter, { fingers: run(i + 1), hooked: false, name: RUN_NAMES[i]! }]),
+  ...VOWEL_LETTERS.map((letter, i): [string, Shape] => [letter, { fingers: pinkyRun(i + 1), hooked: false, name: VOWEL_NAMES[i]! }]),
   ...DIGIT_LETTERS.map((letter, i): [string, Shape] => [letter, countShape((i + 1) % 10)]),
   ...HOOKED_LETTERS.map((letter, i): [string, Shape] => [letter, { fingers: run(i + 1), hooked: true, name: HOOKED_NAMES[i]! }]),
 ]);
@@ -76,15 +80,15 @@ export const CONSONANT_SPARES = ["pinky alone", "middle + ring + pinky", "thumb 
 export type PianoForm = { fingers: Finger[]; hook: boolean };
 
 /**
- * A run strikes only its last finger, plus the thumb when the thumb is in the count; other shapes
- * (horns) strike exactly what is raised. A hooked run is its straight form plus the hook mark.
+ * A run strikes only its last finger (the innermost one for a run from the pinky), plus the thumb when
+ * the thumb is in the count; other shapes (horns) strike exactly what is raised. A hooked run is its straight form plus the hook mark.
  * No piano form presses two neighboring fingers, so `h` (thumb + index) is `z` plus the hook mark.
  */
 export function pianoForm(letter: string): PianoForm {
   const { fingers, hooked } = shapeOf(letter);
   const thumb = fingers.includes(1);
   const rest = fingers.filter((f) => f !== 1);
-  const isRun = rest.every((f, i) => f === i + 2);
+  const isRun = rest.every((f, i) => f === i + 2) || rest.every((f, i) => f === 5 - i);
   const struck: Finger[] = [...(thumb ? [1 as Finger] : []), ...(isRun ? rest.slice(-1) : rest)];
   if (struck.some((f, i) => i > 0 && f - struck[i - 1]! === 1)) return { fingers: [1], hook: true };
   return { fingers: struck, hook: hooked };
@@ -92,7 +96,7 @@ export function pianoForm(letter: string): PianoForm {
 
 /** Right hand (consonants): thumb on F♯5, fingers 2–5 on G♯5 A♯5 C♯6 D♯6. */
 export const PIANO_RIGHT_KEYS: Readonly<Record<Finger, number>> = { 1: 78, 2: 80, 3: 82, 4: 85, 5: 87 };
-/** Left hand (vowels), mirrored: pinky on D♯3, thumb (the hook mark) on C♯4. */
+/** Left hand (vowels), mirrored: pinky on D♯3, thumb (the hook mark) on C♯4. A vowel's key is its pitch. */
 export const PIANO_LEFT_KEYS: Readonly<Record<Finger, number>> = { 1: 61, 2: 58, 3: 56, 4: 54, 5: 51 };
 
 export type Hand = "cons" | "vow";
@@ -105,6 +109,9 @@ export function pianoNotes(letter: string): Note[] {
   if (hook) notes.push({ hand: "vow", midi: PIANO_LEFT_KEYS[1] });
   return notes;
 }
+
+/** A vowel's piano key, the reference for its pitch (phonology.md#vowels). */
+export const vowelKey = (vowel: string): number => pianoNotes(vowel)[0]!.midi;
 
 /** Right-hand piano spares. */
 export const PIANO_SPARES: Finger[][] = [
@@ -142,12 +149,15 @@ export const GUITAR_CONSONANTS: Readonly<Record<string, { strings: GuitarString[
 };
 export const GUITAR_SPARE: GuitarString[] = ["D3", "G3", "D4"];
 
-/** Vowels are hammered by the fretting hand on the two low strings (D2, G2): E2 G2 B2 D3, in count order. */
+/**
+ * Vowels are hammered by the fretting hand on the two low strings (D2, G2): E2 G2 B2 D3, in count order.
+ * A2 would match the piano's intervals but sounds a ninth under the B string.
+ */
 export const GUITAR_VOWELS: Readonly<Record<string, { midi: number; string: "D2" | "G2"; fret: number }>> = {
-  u: { midi: 40, string: "D2", fret: 2 },
-  a: { midi: 43, string: "D2", fret: 5 },
-  o: { midi: 47, string: "G2", fret: 4 },
-  e: { midi: 50, string: "G2", fret: 7 },
+  a: { midi: 40, string: "D2", fret: 2 },
+  o: { midi: 43, string: "D2", fret: 5 },
+  e: { midi: 47, string: "G2", fret: 4 },
+  u: { midi: 50, string: "G2", fret: 7 },
 };
 
 export function guitarNotes(letter: string): Note[] {

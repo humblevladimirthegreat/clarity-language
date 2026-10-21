@@ -163,7 +163,7 @@ A one-word name is an ordinary **-n** word (`denuron`), not a span.
 
 ## Scope islands {#islands}
 
-Braces `{ … }` group one chunk so a binder inside reaches only it. The edges are a pause in speech. A [tone mark](../speech-moves.md#tone-marks) right before the brace colors the whole island.
+Braces `{ … }` group one chunk so a binder inside reaches only it. The edges are a short break in speech. A [tone mark](../speech-moves.md#tone-marks) right before the brace colors the whole island.
 
 | Rule | Detail | Stage |
 |------|--------|-------|

@@ -412,10 +412,12 @@ A **tone mark** shows how you feel, or what you stress, while you say something.
 | Mark | Feeling | Voice | Cue |
 |------|---------|-------|-----|
 | `!` | Strong feeling (excited, upset: the words say which) | Louder, stressed | English *!* |
-| `?` | Unsure about it | Rising, tentative | English *…, I think* after the doubtful part |
+| `?` | Unsure about it | Raised, tentative | English *…, I think* after the doubtful part |
 | `%` | Joking, teasing (not meant literally) | Light, smiling | A wink |
 | `&` | Contrast: this one, not another | Stressed and slowed | *and* not the other |
 | `;` | Warm, affectionate | Soft, gentle | A soft pause |
+
+`?` is the only mark that uses pitch: it raises the whole word it colors, and the word's [vowel pitches](phonology.md#vowels) keep their order inside it. `!` and `;` are loudness, `&` is loudness and length, and `%` is the quality of your voice.
 
 **Doubling** a mark makes it stronger: `!!` is louder again, `??` is very unsure, `;;` is very tender, `%%` is broad teasing, `&&` is a firm contrast. **Combining** marks mixes tones: `?!` is surprised and doubtful (*Wait, what?!*), `%;` is teasing but fond, `&!` is *this* one, and I feel strongly about it. A stack has no spaces and its order does not matter (`?!` and `!?` sound the same). Each mark may appear at most twice, so `!!!` is not a mark.
 

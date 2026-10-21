@@ -180,6 +180,12 @@ Clause content after the left-edge `/y/` cluster.
 
 [Speech moves](speech-moves.md#turn-y)
 
+### Break / rest
+
+Silence counted in beats at a sentence edge with no word: a **break** puts the next beat half a beat late (around a scope island), a **rest** is one silent beat (a period).
+
+[Phonology](phonology.md#speech-edges)
+
 ### Invited / offered / trial
 <a id="asked-typical-history"></a>
 <a id="wording-general-history"></a>
@@ -913,6 +919,12 @@ DIR × ANCHOR; the anchor sets the facing frame (person or oriented object, or a
 Left-edge `/y/` addressing.
 
 [Speech moves](speech-moves.md#vocative)
+
+### Vowel pitch
+
+The fixed, optional pitch of each vowel: `u` high, `e` mid-high, `o` mid-low, `a` low. It backs up the vowel's sound and adds no meaning.
+
+[Phonology](phonology.md#vowels), [values](phonology.md#vowel-pitch-values)
 
 ### Vowel series
 

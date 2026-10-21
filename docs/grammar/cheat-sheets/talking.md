@@ -61,7 +61,7 @@ A [tone mark](../speech-moves.md#tone-marks) changes your voice only, never the 
 | [Doubled](../speech-moves.md#tone-marks) | stronger | `zuzozen !!vowurel.` | I |
 | [Stacked](../speech-moves.md#tone-marks) | mixed | `?! zolazun vawebol dudozol.` | I |
 
-`yol` asks; `?` only sounds unsure. A third copy (`!!!`) is not a mark.
+`yol` asks; `?` only sounds unsure: it raises the whole word, and the word's vowel pitches keep their order inside it. A third copy (`!!!`) is not a mark.
 
 ## Speech manner {#manner}
 

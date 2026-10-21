@@ -50,6 +50,7 @@ export default defineConfig({
         '@name-respell': `${srcDir}/name-respell.ts`,
         '@parse-browser': `${srcDir}/parse/browser.ts`,
         '@tts-browser': `${srcDir}/tts/browser.ts`,
+        '@vowel-pitch': `${srcDir}/vowel-pitch.ts`,
       },
     },
     worker: {

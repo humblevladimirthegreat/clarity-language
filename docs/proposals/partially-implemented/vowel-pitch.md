@@ -1,7 +1,7 @@
 # Proposal: vowel pitch, scale digits, stack order u o a e, rhythm for sentence edges
 
-**Status:** PROPOSED (not current language).  
-**Related:** [phonology.md § vowels](../grammar/phonology.md#vowels), [§ opposite vowels](../grammar/phonology.md#opposite-vowels), [§ letter names](../grammar/phonology.md#letter-names), [§ rhythm and stress](../grammar/phonology.md#rhythm-and-stress), [§ speech edges](../grammar/phonology.md#speech-edges), [§ singing](../grammar/phonology.md#singability-constraints); [dependents.md § periods](../grammar/dependents.md#orthography-and-prosody-periods); [spans.md § scope islands](../grammar/spans.md#scope-islands); [numbers.md § counts](../grammar/numbers.md#counts); [pegs.md](../grammar/pegs.md); [finger-code.md](../grammar/finger-code.md); [speech-moves.md § tone marks](../grammar/speech-moves.md#tone-marks); [questions.md § polar stance](../grammar/questions.md); [design-decisions.md](../meta/design-decisions.md) (stacked vowels, digit syllables); [unassigned-reserved.md](../meta/unassigned-reserved.md).  
+**Status:** phase 1 **shipped** (2026-10-21: vowel pitch, rhythm and stress, finger-code vowels, piano cues and practice widget); phases 2 and 3 **proposed** (not current language).  
+**Related:** [phonology.md § vowels](../../grammar/phonology.md#vowels), [§ opposite vowels](../../grammar/phonology.md#opposite-vowels), [§ letter names](../../grammar/phonology.md#letter-names), [§ rhythm and stress](../../grammar/phonology.md#rhythm-and-stress), [§ speech edges](../../grammar/phonology.md#speech-edges), [§ singing](../../grammar/phonology.md#singability-constraints); [dependents.md § periods](../../grammar/dependents.md#orthography-and-prosody-periods); [spans.md § scope islands](../../grammar/spans.md#scope-islands); [numbers.md § counts](../../grammar/numbers.md#counts); [pegs.md](../../grammar/pegs.md); [finger-code.md](../../grammar/finger-code.md); [speech-moves.md § tone marks](../../grammar/speech-moves.md#tone-marks); [questions.md § polar stance](../../grammar/questions.md); [design-decisions.md](../../meta/design-decisions.md) (stacked vowels, digit syllables); [unassigned-reserved.md](../../meta/unassigned-reserved.md).  
 **Design authority:** none until absorbed.
 
 Give each vowel a fixed pitch as redundant backup to its quality, and line the rest of the language up with it:
@@ -15,7 +15,7 @@ Give each vowel a fixed pitch as redundant backup to its quality, and line the r
 
 Many words differ by one vowel (`val` / `vol` / `vul`), and the opposite pair `a` ↔ `u` often carries opposite meanings (`u` undoes). Mishearing that one vowel gives a valid word that says the reverse. A pitch tied to each vowel gives the ear a second cue that survives a muffled vowel quality (noise, a phone line, an accent).
 
-Vowel pitches are **optional and fully predictable** from the vowel. They add no meaning, so the rule that unwritten pitch adds nothing ([phonology.md § voice and certainty](../grammar/phonology.md#voice-and-certainty)) still holds. Song drops them, since the melody owns pitch; the vowel letter still says everything.
+Vowel pitches are **optional and fully predictable** from the vowel. They add no meaning, so the rule that unwritten pitch adds nothing ([phonology.md § voice and certainty](../../grammar/phonology.md#voice-and-certainty)) still holds. Song drops them, since the melody owns pitch; the vowel letter still says everything.
 
 **The vowel wins.** When a vowel's sound and its pitch disagree, the sound is the vowel. Pitch only backs it up: it never turns one vowel into another. A speaker who skips vowel pitch, or lifts a word for emphasis, is never misheard because of it.
 
@@ -59,26 +59,26 @@ The range narrows with speed; the order never changes.
 At the floor the 1-semitone steps are about the size of the pitch differences vowels already have in any language, so fast speech keeps little more than the order. That is the intended floor, not a failure: the full range belongs to careful speech and the words that change the meaning.
 
 - **Opposite pairs.** `a` ↔ `u` are low against high, the widest gap, where a mishearing costs most. `o` ↔ `e` are one step apart in pitch but far apart in quality.
-- **Size vowels.** A five-letter root's middle vowel tracks size ([lexicon § size](../meta/lexicon.md#size)): `e` small, `o` medium, `a` big. The pitches match the common sound-symbolism of small = high, big = low.
+- **Size vowels.** A five-letter root's middle vowel tracks size ([lexicon § size](../../meta/lexicon.md#size)): `e` small, `o` medium, `a` big. The pitches match the common sound-symbolism of small = high, big = low.
 
 ### Every vowel, full range on stressed grammar words
 
 Every vowel carries its pitch, in roots and grammar words alike. A speaker cannot sort vowels into "important" and "unimportant" at speaking speed, and a listener can only lean on a cue that is always there. Root vowels also form one-vowel minimal pairs.
 
-The words that [phonology.md](../grammar/phonology.md#never-quiet) already says keep full stress in light speech (the short words that change the meaning) keep the **full pitch range**. Other words may narrow the range in fast speech, as English narrows unstressed syllables, but never flatten or reorder it.
+The words that [phonology.md](../../grammar/phonology.md#never-quiet) already says keep full stress in light speech (the short words that change the meaning) keep the **full pitch range**. Other words may narrow the range in fast speech, as English narrows unstressed syllables, but never flatten or reorder it.
 
 ### Interactions
 
 | With | Rule |
 |------|------|
-| [Tone marks](../grammar/speech-moves.md#tone-marks) | `?` raises the word's whole range; the four vowel pitches keep their order inside it. The other marks are loudness (`!`, `;`), length (`&`) or voice quality (`%`), not pitch |
-| [Stress](../grammar/phonology.md#rhythm-and-stress) | Loudness only, never pitch ([stress](#stress-loudness-only)) |
-| [Sentence edges](../grammar/phonology.md#speech-edges) | Rests, not pitch ([sentence edges](#sentence-edges-rests-not-pitch)) |
+| [Tone marks](../../grammar/speech-moves.md#tone-marks) | `?` raises the word's whole range; the four vowel pitches keep their order inside it. The other marks are loudness (`!`, `;`), length (`&`) or voice quality (`%`), not pitch |
+| [Stress](../../grammar/phonology.md#rhythm-and-stress) | Loudness only, never pitch ([stress](#stress-loudness-only)) |
+| [Sentence edges](../../grammar/phonology.md#speech-edges) | Rests, not pitch ([sentence edges](#sentence-edges-rests-not-pitch)) |
 | Numbers | Counting climbs the scale ([scale digits](#phase-2-scale-digits-and-letter-names)) |
 | Vowel stacks | Each stack has its own contour ([stack order](#phase-3-stack-order-u-o-a-e)) |
-| [Thinking sounds](../grammar/phonology.md#thinking-sounds) | Hold the vowel at its own pitch |
-| [Syllabic `l`](../grammar/phonology.md#syllabic-l) | Fixed at +4 semitones, between `o` and `e` (see [decisions](#decisions)) |
-| Song | Vowel pitches are dropped; the [singing table](../grammar/phonology.md#singability-constraints) says so in one row |
+| [Thinking sounds](../../grammar/phonology.md#thinking-sounds) | Hold the vowel at its own pitch |
+| [Syllabic `l`](../../grammar/phonology.md#syllabic-l) | Fixed at +4 semitones, between `o` and `e` (see [decisions](#decisions)) |
+| Song | Vowel pitches are dropped; the [singing table](../../grammar/phonology.md#singability-constraints) says so in one row |
 | Whisper | No pitch; quality alone carries the vowel, as now |
 | Downdrift | A voice may drift lower over a long sentence; that carries nothing, as long as neighbouring vowels keep their order |
 
@@ -126,7 +126,7 @@ This is the split the finger code already uses: its beats and rests carry the ed
 
 ### Sentence edges: rests, not pitch
 
-**Drop pitch from every sentence edge, and mark the two edges that have no word with rests.** Almost every edge in the [speech edges table](../grammar/phonology.md#speech-edges) is already a word the listener hears (a join, an `/x/` word, a `/y/` word), so its pitch was only a backup. Only two edges have no word: the period, and a scope island's start and end.
+**Drop pitch from every sentence edge, and mark the two edges that have no word with rests.** Almost every edge in the [speech edges table](../../grammar/phonology.md#speech-edges) is already a word the listener hears (a join, an `/x/` word, a `/y/` word), so its pitch was only a backup. Only two edges have no word: the period, and a scope island's start and end.
 
 Two sizes of silence, counted in beats. Every syllable is the same length, so a listener hears the difference as rhythm, as in music:
 
@@ -169,30 +169,30 @@ No spelling changes.
 
 ### Where it is taught
 
-**Beginner.** Vowel pitches are predictable, so they cost no memorization: each vowel has one pitch, as it has one sound. Pronunciation habits set early and are hard to retrofit, so learners should hear and copy the pitches from their first vowel. Because vowel pitch is optional, nothing later depends on them, and a learner who skips them loses no grammar. Teaching is split by the [learning-levels](../meta/learning-levels.md) dependency rule:
+**Beginner.** Vowel pitches are predictable, so they cost no memorization: each vowel has one pitch, as it has one sound. Pronunciation habits set early and are hard to retrofit, so learners should hear and copy the pitches from their first vowel. Because vowel pitch is optional, nothing later depends on them, and a learner who skips them loses no grammar. Teaching is split by the [learning-levels](../../meta/learning-levels.md) dependency rule:
 
 | Level | Section | What it teaches |
 |-------|---------|-----------------|
-| Beginner | [phonology.md § vowels](../grammar/phonology.md#vowels) | A pitch column in the vowel table (high / mid-high / mid-low / low) with a piano cue on each row, and the [practice widget](#practice-widget) in its beginner modes. One paragraph: each vowel always has its own pitch; vowel pitch is optional and adds no meaning; when pitch and sound disagree, trust the sound; keep each vowel's pitch when you stress or emphasize a word, because Agebon stresses with loudness. |
-| Beginner | [§ opposite vowels](../grammar/phonology.md#opposite-vowels) | One line: `a` and `u` are also the furthest apart in pitch. |
-| Intermediate | [speech-moves.md § tone marks](../grammar/speech-moves.md#tone-marks) | `?` voice becomes *raised, tentative*: it lifts the whole word, and the vowel pitches keep their order inside it. |
-| Advanced | [§ rhythm and stress](../grammar/phonology.md#rhythm-and-stress) | Stress is loudness, not pitch or length, with the drum-accent drill. The exact intervals (0 / 3 / 5 / 7 with the piano reference) and how the range narrows in faster speech, with the practice widget's contour and range modes. |
-| Advanced | [§ words never said quietly](../grammar/phonology.md#never-quiet) | Those words keep full loudness and the full pitch range. |
-| Advanced | [§ voice and certainty](../grammar/phonology.md#voice-and-certainty) | Pitch carries vowel pitch and the `?` mark, nothing else. |
-| Advanced | [§ speech edges](../grammar/phonology.md#speech-edges) | The edge table with breaks and rests ([sentence edges](#sentence-edges-rests-not-pitch)); the closing line about list pitch becomes the role-letter cue. |
-| Advanced | [§ singing on one note](../grammar/phonology.md#one-note) and [§ singability](../grammar/phonology.md#singability-constraints) | Song drops vowel pitch; a melody may follow them by choice. |
-| Advanced | [§ thinking sounds](../grammar/phonology.md#thinking-sounds) | Hold the vowel at its own pitch. |
-| Section's level | [dependents.md § periods](../grammar/dependents.md#orthography-and-prosody-periods) | Intro line and Speech column: rest at a period, no rest before `/x/` continue or a stand-in hang. |
-| Section's level | [spans.md § scope islands](../grammar/spans.md#scope-islands) | The speech line: break before, tight phrase, break after. |
-| Section's level | [pronouns.md § topic](../grammar/pronouns.md#topic) | The topic word needs no pitch reset: the `/x/` word says it. |
-| Finger code | [finger-code.md](../grammar/finger-code.md) | Vowel shapes as pinky runs in digit order, piano and guitar following them ([below](#finger-code-and-instruments)); the two-hands paragraph (index alone is only `b`), touch reading from the pinky edge, the `thohom` beat table. |
-| Cheat sheet | [cheat-sheets/sounds-spelling.md](../grammar/cheat-sheets/sounds-spelling.md), talking sheet | The pitch on each vowel row; the `?` voice. |
+| Beginner | [phonology.md § vowels](../../grammar/phonology.md#vowels) | A pitch column in the vowel table (high / mid-high / mid-low / low) with a piano cue on each row, and the [practice widget](#practice-widget) in its beginner modes. One paragraph: each vowel always has its own pitch; vowel pitch is optional and adds no meaning; when pitch and sound disagree, trust the sound; keep each vowel's pitch when you stress or emphasize a word, because Agebon stresses with loudness. |
+| Beginner | [§ opposite vowels](../../grammar/phonology.md#opposite-vowels) | One line: `a` and `u` are also the furthest apart in pitch. |
+| Intermediate | [speech-moves.md § tone marks](../../grammar/speech-moves.md#tone-marks) | `?` voice becomes *raised, tentative*: it lifts the whole word, and the vowel pitches keep their order inside it. |
+| Advanced | [§ rhythm and stress](../../grammar/phonology.md#rhythm-and-stress) | Stress is loudness, not pitch or length, with the drum-accent drill. The exact intervals (0 / 3 / 5 / 7 with the piano reference) and how the range narrows in faster speech, with the practice widget's contour and range modes. |
+| Advanced | [§ words never said quietly](../../grammar/phonology.md#never-quiet) | Those words keep full loudness and the full pitch range. |
+| Advanced | [§ voice and certainty](../../grammar/phonology.md#voice-and-certainty) | Pitch carries vowel pitch and the `?` mark, nothing else. |
+| Advanced | [§ speech edges](../../grammar/phonology.md#speech-edges) | The edge table with breaks and rests ([sentence edges](#sentence-edges-rests-not-pitch)); the closing line about list pitch becomes the role-letter cue. |
+| Advanced | [§ singing on one note](../../grammar/phonology.md#one-note) and [§ singability](../../grammar/phonology.md#singability-constraints) | Song drops vowel pitch; a melody may follow them by choice. |
+| Advanced | [§ thinking sounds](../../grammar/phonology.md#thinking-sounds) | Hold the vowel at its own pitch. |
+| Section's level | [dependents.md § periods](../../grammar/dependents.md#orthography-and-prosody-periods) | Intro line and Speech column: rest at a period, no rest before `/x/` continue or a stand-in hang. |
+| Section's level | [spans.md § scope islands](../../grammar/spans.md#scope-islands) | The speech line: break before, tight phrase, break after. |
+| Section's level | [pronouns.md § topic](../../grammar/pronouns.md#topic) | The topic word needs no pitch reset: the `/x/` word says it. |
+| Finger code | [finger-code.md](../../grammar/finger-code.md) | Vowel shapes as pinky runs in digit order, piano and guitar following them ([below](#finger-code-and-instruments)); the two-hands paragraph (index alone is only `b`), touch reading from the pinky edge, the `thohom` beat table. |
+| Cheat sheet | [cheat-sheets/sounds-spelling.md](../../grammar/cheat-sheets/sounds-spelling.md), talking sheet | The pitch on each vowel row; the `?` voice. |
 
 The Claritish track adds no vowel pitch: its words are spoken inside English, where pitch belongs to English intonation.
 
 ### Piano cues
 
-Each vowel row plays its left-hand finger-code key (D♯3 to A♯3), the reference for its pitch. A small component (for example `<PitchPlay vowel="u" />`, or a pitch option on `IpaPlay`) gets the key from `pianoNotes` in [`src/finger-code.ts`](../../src/finger-code.ts) and plays it with the finger code's piano voice, moved out of [`FingerCode.vue`](../grammar/.vitepress/components/FingerCode.vue) into a shared module so both use one sound. Recorded pitched vowels replace the piano cues later; the IPA clips stay as they are.
+Each vowel row plays its left-hand finger-code key (D♯3 to A♯3), the reference for its pitch. A small component (for example `<PitchPlay vowel="u" />`, or a pitch option on `IpaPlay`) gets the key from `pianoNotes` in [`src/finger-code.ts`](../../../src/finger-code.ts) and plays it with the finger code's piano voice, moved out of [`FingerCode.vue`](../../grammar/.vitepress/components/FingerCode.vue) into a shared module so both use one sound. Recorded pitched vowels replace the piano cues later; the IPA clips stay as they are.
 
 #### Practice widget
 
@@ -221,12 +221,12 @@ The vowel hand counts like the digits: its shapes are runs of 1 to 4 fingers **f
 |-------|-------|-------|-------------------|--------|
 | `a` | 1 | pinky | D♯3 | E, 6th string fret 2 |
 | `o` | 2 | pinky + ring | F♯3 | G, 6th string fret 5 |
-| `e` | 3 | pinky + ring + middle | G♯3 | A, 5th string fret 2 |
-| `u` | 4 | four fingers | A♯3 | B, 5th string fret 4 |
+| `e` | 3 | pinky + ring + middle | G♯3 | B, 5th string fret 4 |
+| `u` | 4 | four fingers | A♯3 | D, 5th string fret 7 |
 
 - **One rule on every channel:** *more fingers, higher vowel*, counted the way the digits climb the scale. Voice, signing, touch, piano and guitar need no list beyond the pitches themselves.
 - **The piano keys stay where they are.** The left hand keeps its natural layout (pinky on D♯3, index on A♯3) and a run still strikes only its last finger. A pinky run ends one finger further toward the index each time, so the struck key climbs with the count. The vowels stay on the left hand.
-- **The guitar plays E, G, A, B** in open G tuning: the same 0 / 3 / 5 / 7 intervals, climbing in count order within frets 2 to 5.
+- **The guitar plays E, G, B, D** in open G tuning, climbing in count order. As shipped, not the piano's 0 / 3 / 5 / 7: no set at those intervals avoids a second or a ninth against the open G, B and D strings (A2 is a ninth under B3), so the guitar keeps the order and the piano is the pitch reference.
 - **The hands look different.** The consonant hand counts from the index, the vowel hand from the pinky, so the only shape on both hands is four fingers (`u`, and the flat hand of digit 4). The consonant hand's spares *pinky alone* and *middle + ring + pinky* look like vowels, so they stay unassigned. In a palm press the receiver reads the vowel group from the pinky edge.
 - **Opposite pairs:** `a` ↔ `u` are one finger against four, in a palm press one point of pressure against four. `o` ↔ `e` are one finger apart, as they are one step apart in pitch. Drop the line that opposite vowels differ by one finger.
 - **Forming `o`.** Pinky + ring is the hardest of the four shapes, because the middle finger tends to rise with the ring. Fold the thumb over the index and middle to hold them down.
@@ -238,17 +238,17 @@ The vowel hand counts like the digits: its shapes are runs of 1 to 4 fingers **f
 
 ### Steps
 
-1. [`src/finger-code.ts`](../../src/finger-code.ts): vowel shapes as pinky runs in digit order (`a o e u`), with `pianoForm` reading a pinky run's last finger as the innermost one; guitar vowel map; their tests. Check the Try-it chart by eye and by ear on each channel.
-2. The piano cue and practice widget components and their registration in the theme; check that the build's tag checks ([`scripts/lint-md-balance.mjs`](../../scripts/lint-md-balance.mjs), Vue-illegal tags) accept it.
+1. [`src/finger-code.ts`](../../../src/finger-code.ts): vowel shapes as pinky runs in digit order (`a o e u`), with `pianoForm` reading a pinky run's last finger as the innermost one; guitar vowel map; their tests. Check the Try-it chart by eye and by ear on each channel.
+2. The piano cue and practice widget components and their registration in the theme; check that the build's tag checks ([`scripts/lint-md-balance.mjs`](../../../scripts/lint-md-balance.mjs), Vue-illegal tags) accept it.
 3. Grammar text from the [table above](#where-it-is-taught).
-4. Meta: [design-decisions.md](../meta/design-decisions.md) entries for edges by rests (register edges rejected), stress as loudness, and vowel shapes as pinky runs in digit order (runs from the index and alphabet-order shapes rejected).
+4. Meta: [design-decisions.md](../../meta/design-decisions.md) entries for edges by rests (register edges rejected), stress as loudness, and vowel shapes as pinky runs in digit order (runs from the index and alphabet-order shapes rejected).
 5. `npm run cheat-sheet-blocks -- --write`, `npm run build`, `npm test`.
 
 ## Phase 2: scale digits and letter names
 
 ### The digits
 
-Digit vowels climb the scale, **a o e u**, starting at 1, as scale degrees do: 1 is the lowest pitch, 4 the highest, and 5 starts the next round. 0 counts as the tenth digit, so it carries on the climb. Letter names take the [opposite vowel](../grammar/phonology.md#opposite-vowels), so they cycle **u e o a** and walk down the scale.
+Digit vowels climb the scale, **a o e u**, starting at 1, as scale degrees do: 1 is the lowest pitch, 4 the highest, and 5 starts the next round. 0 counts as the tenth digit, so it carries on the climb. Letter names take the [opposite vowel](../../grammar/phonology.md#opposite-vowels), so they cycle **u e o a** and walk down the scale.
 
 | Digit | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 |
 |-------|---|---|---|---|---|---|---|---|---|---|
@@ -263,7 +263,7 @@ Every digit syllable and every digit letter name changes; `b`, `d`, `g`, `z`, `n
 
 ### Why `h`↔`v` and `l`↔`r`
 
-With today's consonants, `a o e u` from 1 puts `u` on 4 and 8: `vu` and `ru`. That fails the hard pairs **v/w** and **r/w** against the exponent filler `wu` ([digit-syllable confusion test](../meta/design-decisions.md#digit-syllables)), and `ru` is also the negative marker. `v` and `r` need a digit on `o` or `e`. Within their blocks that is 6 for `v`, and 7 or 0 for `r`. Putting `r` on 7 keeps `m` on 0.
+With today's consonants, `a o e u` from 1 puts `u` on 4 and 8: `vu` and `ru`. That fails the hard pairs **v/w** and **r/w** against the exponent filler `wu` ([digit-syllable confusion test](../../meta/design-decisions.md#digit-syllables)), and `ru` is also the negative marker. `v` and `r` need a digit on `o` or `e`. Within their blocks that is 6 for `v`, and 7 or 0 for `r`. Putting `r` on 7 keeps `m` on 0.
 
 | Design | Hard pairs | Soft pairs | Pitch gap on test pairs (sum) |
 |---|---|---|---|
@@ -277,9 +277,9 @@ The pitch gap is lower because a scale puts neighbouring digits on neighbouring 
 
 ### Number cues
 
-The table in [numbers.md § counts](../grammar/numbers.md#counts) keeps two patterns:
+The table in [numbers.md § counts](../../grammar/numbers.md#counts) keeps two patterns:
 
-- **Consonant:** 1–3 are the stops **b d g**, each further back in the mouth; 4–6 the breathy sounds **h z v**, each further forward; 7–0 the four [word endings](../grammar/word-endings.md) **r l n m**.
+- **Consonant:** 1–3 are the stops **b d g**, each further back in the mouth; 4–6 the breathy sounds **h z v**, each further forward; 7–0 the four [word endings](../../grammar/word-endings.md) **r l n m**.
 - **Vowel:** the digits climb the vowel pitches **a o e u** from 1, low to high, like the notes of a scale.
 
 Ending cues: a **7**'s stroke runs back to the left, and **-r** is the ending that points back; an **8** is a loop (*l* for *loop*); for **0** the lips close and nothing comes out (*mmm*).
@@ -288,15 +288,15 @@ Ending cues: a **7**'s stroke runs back to the left, and **-r** is the ending th
 
 - **Alphabet.** The alphabet's consonants follow digit order, so they become `b d g h z v r l n m`, then `w y th x`. Reciting the digit letters' names walks down the pitches.
 - **Finger code.** Consonant shapes are digit counts, so `h` takes the flat hand (4) and `v` thumb + index (6); `r` and `l` trade the 7 and 8 shapes. On piano, `v` becomes the letter learned separately (thumb + index strike neighbouring keys, so it is `z` + hook). Hooked letters are unchanged.
-- **Pegs.** Each digit consonant still spells one digit, so every 0–9 and 00–99 cell stays filled; roots with `h`, `v`, `l` or `r` spell new digits. The root-tail cues on [pegs.md](../grammar/pegs.md) (2 food, 5 animal, 9 title) keep their digits.
+- **Pegs.** Each digit consonant still spells one digit, so every 0–9 and 00–99 cell stays filled; roots with `h`, `v`, `l` or `r` spell new digits. The root-tail cues on [pegs.md](../../grammar/pegs.md) (2 food, 5 animal, 9 title) keep their digits.
 
 ### Steps (one change)
 
-1. Number code: `NUMBER_SYLLABLES` in [`src/tts/numbers.ts`](../../src/tts/numbers.ts). [`src/finger-code.ts`](../../src/finger-code.ts) and [`src/digit-pegs.ts`](../../src/digit-pegs.ts) derive from it; check that the parser's number reader does too. Turn the confusion test into a unit test over the hard and soft pairs, fillers and markers included.
-2. A one-off **renumber** script: parse every number word in `docs/`, `data/` and `src/game/` (quests and narration in [`quests.ts`](../../src/game/quests.ts) and [`scene.ts`](../../src/game/scene.ts)), read its digits, respell from the new table, re-parse. Then run the game's content lint and reachability tests.
-3. Letter names: the letter-name tables in [phonology.md](../grammar/phonology.md#letter-names) (the retie letter-name pass reads them), the spell-outs marked `<!-- retie: letter-names -->`, and any page that names a digit letter aloud. Check that no new syllable or name collides with a bare CV word.
-4. Grammar text: [numbers.md § counts](../grammar/numbers.md#counts) (table and cues above; drop "That is also their order in the alphabet"; the marker line becomes *rank `re`, digit 7 `re`*), [phonology.md § letter names](../grammar/phonology.md#letter-names) (consonant order, the digit-letter table, the alphabet comment), [numbers-applied.md](../grammar/numbers-applied.md), [numeric-derivation.md](../grammar/numeric-derivation.md), [pegs.md](../grammar/pegs.md) examples, [finger-code.md](../grammar/finger-code.md) (consonant table, the `h` piano note, examples), [cheat-sheets](../grammar/cheat-sheets/), flashcards, any Claritish lesson that spells a number.
-5. Meta: [design-decisions.md § digit syllables](../meta/design-decisions.md#digit-syllables): the scale cycle, the consonant blocks (`h z v`, `r l n m`), the confusion table above, and the rejected alternatives.
+1. Number code: `NUMBER_SYLLABLES` in [`src/tts/numbers.ts`](../../../src/tts/numbers.ts). [`src/finger-code.ts`](../../../src/finger-code.ts) and [`src/digit-pegs.ts`](../../../src/digit-pegs.ts) derive from it; check that the parser's number reader does too. Turn the confusion test into a unit test over the hard and soft pairs, fillers and markers included.
+2. A one-off **renumber** script: parse every number word in `docs/`, `data/` and `src/game/` (quests and narration in [`quests.ts`](../../../src/game/quests.ts) and [`scene.ts`](../../../src/game/scene.ts)), read its digits, respell from the new table, re-parse. Then run the game's content lint and reachability tests.
+3. Letter names: the letter-name tables in [phonology.md](../../grammar/phonology.md#letter-names) (the retie letter-name pass reads them), the spell-outs marked `<!-- retie: letter-names -->`, and any page that names a digit letter aloud. Check that no new syllable or name collides with a bare CV word.
+4. Grammar text: [numbers.md § counts](../../grammar/numbers.md#counts) (table and cues above; drop "That is also their order in the alphabet"; the marker line becomes *rank `re`, digit 7 `re`*), [phonology.md § letter names](../../grammar/phonology.md#letter-names) (consonant order, the digit-letter table, the alphabet comment), [numbers-applied.md](../../grammar/numbers-applied.md), [numeric-derivation.md](../../grammar/numeric-derivation.md), [pegs.md](../../grammar/pegs.md) examples, [finger-code.md](../../grammar/finger-code.md) (consonant table, the `h` piano note, examples), [cheat-sheets](../../grammar/cheat-sheets/), flashcards, any Claritish lesson that spells a number.
+5. Meta: [design-decisions.md § digit syllables](../../meta/design-decisions.md#digit-syllables): the scale cycle, the consonant blocks (`h z v`, `r l n m`), the confusion table above, and the rejected alternatives.
 6. `npm run build`, `npm test`, `node scripts/pegs.mjs --check`.
 
 ## Phase 3: stack order u o a e
@@ -318,23 +318,23 @@ A reversed stack is still not a word, and the contour backs that up: a fall wher
 
 ### What `ao` → `oa` touches
 
-About 120 code spans in 26 grammar pages, 3 rows of [`lexicon-overlays.csv`](../../data/lexicon-overlays.csv), the Claritish feelings lesson and cheat sheet, the `"ao"` literals in the parser, and the game's polar table. Roots never contain two vowels in a row, so **no root changes**.
+About 120 code spans in 26 grammar pages, 3 rows of [`lexicon-overlays.csv`](../../../data/lexicon-overlays.csv), the Claritish feelings lesson and cheat sheet, the `"ao"` literals in the parser, and the game's polar table. Roots never contain two vowels in a row, so **no root changes**.
 
 | Use | Today | New | Cue today | Read as `oa` | Verdict |
 |-----|-------|-----|-----------|--------------|---------|
-| Inclusive *and/or* join ([joins](../grammar/joins.md)) | `zaol` / `zaom`, … | `zoal` / `zoam` | **a** then **o**; *X is enough*, *at least X* | **o** one, then **a** add: *at least one, more may join* | better |
-| Join-across-roles ([join-across-roles](../grammar/join-across-roles.md)) | `xaon`, `vaon`, `thaol`, `thaor` | `xoan`, `voan`, `thoal`, `thoar` | add then one; *more may follow* | one, then add: *this one, and maybe more* | better |
-| Open to / among ([join-across-roles](../grammar/join-across-roles.md)) | `gaon` / `haon` | `goan` / `hoan` | add + one (admit, still open) | one admitted, more may be added | better |
-| Restrictor ([restrictors](../grammar/restrictors.md)) | `haol` / `haom` | `hoal` / `hoam` | add + one | one time suffices, others add | neutral |
-| Extra-noun hook *on* / *over* ([hooks](../grammar/hooks.md)) | `aol` / `aom` / `aor`, `owurelaol` | `oal` / `oam` / `oar`, `owureloal` | add onto one face | one face, added onto; `oal` also starts like English *on* | better |
-| Discourse *for example* ([hooks](../grammar/hooks.md)) | `aol …` / `aom …` | `oal …` / `oam …` | add one: a single sample | one sample, added | neutral |
-| Scope *on this pair* ([predication](../grammar/predication.md#scope-stacks)) | `thao` | `thoa` | **ao** ≈ on (fixed meaning) | same fixed meaning, same *on* cue as the hook | neutral |
-| Result role vowel ([roles](../grammar/roles.md#result)) | `ao` + `x` | `oa` + `x` | add one: a new thing in the world | one new thing, added to the world | neutral |
-| Emotion locus CIRCUM ([sakes](../grammar/sakes.md#emotion-compose)) | `wuwathuraor` | `wuwathuroar` | hook *over* | hook *over* | neutral |
-| Two tags *A and O* ([pronouns](../grammar/pronouns.md#tag-pairs)) | `zwaor` | `zwoar` | one spelling whichever is named first | same | neutral |
-| **Polar stance *sure*** ([questions](../grammar/questions.md)) | `yaol` / `yaom` / `yaor` | `yoal` / `yoam` / `yoar` | **first vowel = family**: **a** accept + **o** this option | first vowel **o** is the pass family (`yoel` *I won't answer*) | **breaks** |
+| Inclusive *and/or* join ([joins](../../grammar/joins.md)) | `zaol` / `zaom`, … | `zoal` / `zoam` | **a** then **o**; *X is enough*, *at least X* | **o** one, then **a** add: *at least one, more may join* | better |
+| Join-across-roles ([join-across-roles](../../grammar/join-across-roles.md)) | `xaon`, `vaon`, `thaol`, `thaor` | `xoan`, `voan`, `thoal`, `thoar` | add then one; *more may follow* | one, then add: *this one, and maybe more* | better |
+| Open to / among ([join-across-roles](../../grammar/join-across-roles.md)) | `gaon` / `haon` | `goan` / `hoan` | add + one (admit, still open) | one admitted, more may be added | better |
+| Restrictor ([restrictors](../../grammar/restrictors.md)) | `haol` / `haom` | `hoal` / `hoam` | add + one | one time suffices, others add | neutral |
+| Extra-noun hook *on* / *over* ([hooks](../../grammar/hooks.md)) | `aol` / `aom` / `aor`, `owurelaol` | `oal` / `oam` / `oar`, `owureloal` | add onto one face | one face, added onto; `oal` also starts like English *on* | better |
+| Discourse *for example* ([hooks](../../grammar/hooks.md)) | `aol …` / `aom …` | `oal …` / `oam …` | add one: a single sample | one sample, added | neutral |
+| Scope *on this pair* ([predication](../../grammar/predication.md#scope-stacks)) | `thao` | `thoa` | **ao** ≈ on (fixed meaning) | same fixed meaning, same *on* cue as the hook | neutral |
+| Result role vowel ([roles](../../grammar/roles.md#result)) | `ao` + `x` | `oa` + `x` | add one: a new thing in the world | one new thing, added to the world | neutral |
+| Emotion locus CIRCUM ([sakes](../../grammar/sakes.md#emotion-compose)) | `wuwathuraor` | `wuwathuroar` | hook *over* | hook *over* | neutral |
+| Two tags *A and O* ([pronouns](../../grammar/pronouns.md#tag-pairs)) | `zwaor` | `zwoar` | one spelling whichever is named first | same | neutral |
+| **Polar stance *sure*** ([questions](../../grammar/questions.md)) | `yaol` / `yaom` / `yaor` | `yoal` / `yoam` / `yoar` | **first vowel = family**: **a** accept + **o** this option | first vowel **o** is the pass family (`yoel` *I won't answer*) | **breaks** |
 
-Most `ao` cues read as well or better reversed: *one, and more may follow* is exactly what an inclusive or open pick means. The one rule that breaks is the polar stance map in [questions.md](../grammar/questions.md), which reads the **first** vowel as the family (**a** accept, **u** undo, **o** pass) and the second as what is answered. Under stack order `u o a e`, `a` can never come before `o`, so *sure* cannot start with `a`.
+Most `ao` cues read as well or better reversed: *one, and more may follow* is exactly what an inclusive or open pick means. The one rule that breaks is the polar stance map in [questions.md](../../grammar/questions.md), which reads the **first** vowel as the family (**a** accept, **u** undo, **o** pass) and the second as what is answered. Under stack order `u o a e`, `a` can never come before `o`, so *sure* cannot start with `a`.
 
 **Fix: read the polar pair by which vowels it contains, not their order.** `u` in the pair is the undo family; otherwise `a` is the accept family; otherwise `o`, pass. The other vowel says what you are answering. Every stance word keeps its reading:
 
@@ -351,38 +351,38 @@ The ranking is its own short rule, not a vowel order: undo outranks accept, and 
 
 ### Steps (one change)
 
-1. Parser: the `"ao"` literals in [`src/parse/`](../../src/parse/) (`types.ts` `RoleVowel` / `ScopeVowel` / locus, `constructions.ts` `JoinSeries`, `resolve.ts`, `enforce.ts`, `classify.ts`, `gloss-inverse.ts`, `morph-gloss.ts`, `hook-compounds.ts` (`"aol"`, `"aom"`), `sentence-parser.ts` incl. `IMPLIED_SUBJECT_SERIES`), and the `"aol"` hook in [`src/lint/template-trace.ts`](../../src/lint/template-trace.ts). Then `npm run grammar-check`.
-2. Game: the `POLARS` table in [`src/game/read.ts`](../../src/game/read.ts) (`ao: "sure"` → `oa`) and its tests; any Agebon in quests and narration ([`quests.ts`](../../src/game/quests.ts), [`scene.ts`](../../src/game/scene.ts)) goes through the restack script in step 4. Run the game's content lint and reachability tests.
+1. Parser: the `"ao"` literals in [`src/parse/`](../../../src/parse/) (`types.ts` `RoleVowel` / `ScopeVowel` / locus, `constructions.ts` `JoinSeries`, `resolve.ts`, `enforce.ts`, `classify.ts`, `gloss-inverse.ts`, `morph-gloss.ts`, `hook-compounds.ts` (`"aol"`, `"aom"`), `sentence-parser.ts` incl. `IMPLIED_SUBJECT_SERIES`), and the `"aol"` hook in [`src/lint/template-trace.ts`](../../../src/lint/template-trace.ts). Then `npm run grammar-check`.
+2. Game: the `POLARS` table in [`src/game/read.ts`](../../../src/game/read.ts) (`ao: "sure"` → `oa`) and its tests; any Agebon in quests and narration ([`quests.ts`](../../../src/game/quests.ts), [`scene.ts`](../../../src/game/scene.ts)) goes through the restack script in step 4. Run the game's content lint and reachability tests.
 3. **Check feeling words and role compounds.** These are the two places where `oa` sits inside a longer word, so a new split could appear. Add parser tests (and lines to the doc examples `grammar-check` covers) that pin one tree each:
    - **Feeling words:** sake word + locus `oa` + motion ending, e.g. `wuwathuroar` and `thuwathuroar`. The parse must read locus `oa` + **-r**, never locus `o` followed by a stray `ar`, and every other locus (`a`, `uo`, …) must still parse beside it.
    - **Role compounds:** role letter + `oa` + `x` + event stem (the result role), and the bare role pointer built on it. The parse must read the two-vowel slot `oa`, never role vowel `o` with `a` starting the stem, and must not collide with any other role vowel before `x`.
    - Run `node scripts/parse.mjs --check-ambiguity` on each test form and on the converted doc examples that contain them.
 4. A one-off **restack** script, not a bulk text replace: parse each Agebon code span and example line in `docs/`, rewrite only tokens whose parse names the `ao` stack, and re-parse. Dry run, read the list, write. The same pass covers `data/lexicon-overlays.csv`, `data/claritish-*`, and game content in `src/game/`.
-5. **Polar stance rule.** In [questions.md](../grammar/questions.md) § polar stance, replace "The first vowel gives the family … The second vowel says what you are answering" with the contents rule:
+5. **Polar stance rule.** In [questions.md](../../grammar/questions.md) § polar stance, replace "The first vowel gives the family … The second vowel says what you are answering" with the contents rule:
    > Read the pair by which vowels it has, not their order. A pair with **`u`** is the undo family. Otherwise a pair with **`a`** is the accept family. Otherwise it is the **`o`** family: pass. The other vowel says what you are answering: **`e`** the claim or the order, **`o`** this option, **`a`** the question's own premise.
    - Respell `yaol` / `yaom` / `yaor` to `yoal` / `yoam` / `yoar` in the inventory tables, beginner text and examples; the cue column for *sure* becomes **a** ≈ add (accept) + **o** ≈ this option.
    - Update the parser's stance reading and the morph gloss for `yoal`, and pin it with a test that every stance word keeps its reading (table above).
-   - Add the rule to the polar stance [cheat sheet](../grammar/cheat-sheets/) row and the `--llm-prompt` reader note if either restates the first-vowel rule.
+   - Add the rule to the polar stance [cheat sheet](../../grammar/cheat-sheets/) row and the `--llm-prompt` reader note if either restates the first-vowel rule.
 6. Grammar text:
-   - [phonology.md](../grammar/phonology.md): the vowel rows of the letter-name table and the alphabet comment in **u o a e**; the stack paragraph lists the stacks in that order, with the contour table and a line on why stacks mix falls and rises.
-   - Every page that names the order in prose ("stack **a** then **o**" in [joins.md](../grammar/joins.md); cue lines "add then one" in [join-across-roles.md](../grammar/join-across-roles.md), [restrictors.md](../grammar/restrictors.md), [hooks.md](../grammar/hooks.md), [roles.md](../grammar/roles.md#result)) rewritten as *one, then add*.
-   - [compounds.md](../grammar/compounds.md) role-vowel list, [terminology.md](../grammar/terminology.md) cochoice row, [english.md](../grammar/english.md) rows.
-7. Meta: [design-decisions.md](../meta/design-decisions.md) stacked-vowels entry (why stacks have their own order, the scoring table; the near-twin argument is unchanged); [unassigned-reserved.md](../meta/unassigned-reserved.md) reversed stacks become `au` `ou` `eu` `ao` `ea` `eo`.
+   - [phonology.md](../../grammar/phonology.md): the vowel rows of the letter-name table and the alphabet comment in **u o a e**; the stack paragraph lists the stacks in that order, with the contour table and a line on why stacks mix falls and rises.
+   - Every page that names the order in prose ("stack **a** then **o**" in [joins.md](../../grammar/joins.md); cue lines "add then one" in [join-across-roles.md](../../grammar/join-across-roles.md), [restrictors.md](../../grammar/restrictors.md), [hooks.md](../../grammar/hooks.md), [roles.md](../../grammar/roles.md#result)) rewritten as *one, then add*.
+   - [compounds.md](../../grammar/compounds.md) role-vowel list, [terminology.md](../../grammar/terminology.md) cochoice row, [english.md](../../grammar/english.md) rows.
+7. Meta: [design-decisions.md](../../meta/design-decisions.md) stacked-vowels entry (why stacks have their own order, the scoring table; the near-twin argument is unchanged); [unassigned-reserved.md](../../meta/unassigned-reserved.md) reversed stacks become `au` `ou` `eu` `ao` `ea` `eo`.
 8. `npm run cheat-sheet-blocks -- --write`, `npm run build`, `npm test`, `npm run english-helper-recall -- --check`.
 
 ## Writing the grammar edits
 
-Every grammar page, cheat sheet, Claritish page, generated prompt and code comment touched by this proposal presents **only the result**, for a reader meeting Agebon fresh ([present the current language only](../meta/grammar-docs.md#present-the-current-language-only)):
+Every grammar page, cheat sheet, Claritish page, generated prompt and code comment touched by this proposal presents **only the result**, for a reader meeting Agebon fresh ([present the current language only](../../meta/grammar-docs.md#present-the-current-language-only)):
 
 - Never mention an earlier digit syllable, letter name, digit consonant, stack spelling, vowel order, finger shape or edge pitch, and never say that anything changed, swapped or was reordered.
 - Teach each order as simply what it is: digits climb the vowel pitches; letter names use the opposite vowel; the finger code's vowel shapes count up the pitches like the digits, and the instruments follow; stacks and the alphabet's vowels follow **u o a e** so stacks sound different from each other. Give the reason in present terms, never as a contrast with what came before.
 - Cues are written for the current spelling (*one, then add* for `oa`), not as a reversal of another cue.
-- In [design-decisions.md](../meta/design-decisions.md), other choices appear only as **rejected alternatives** (stacks in pitch order, the other stack orders in the scoring table, digits that do not climb, the `we` / `wo` filler, vowel runs from the index, finger shapes in alphabet order, edges as register shifts), never as former forms. Drop the sentence about a former reversed-sequence join `eo`, since `eo` is now simply a reversed stack.
-- [unassigned-reserved.md](../meta/unassigned-reserved.md) lists the reversed stacks as closed spellings with the near-twin reason, with no note that any of them was once standard.
+- In [design-decisions.md](../../meta/design-decisions.md), other choices appear only as **rejected alternatives** (stacks in pitch order, the other stack orders in the scoring table, digits that do not climb, the `we` / `wo` filler, vowel runs from the index, finger shapes in alphabet order, edges as register shifts), never as former forms. Drop the sentence about a former reversed-sequence join `eo`, since `eo` is now simply a reversed stack.
+- [unassigned-reserved.md](../../meta/unassigned-reserved.md) lists the reversed stacks as closed spellings with the near-twin reason, with no note that any of them was once standard.
 
 ## Order of work
 
-Phase 1 goes first: phases 2 and 3 teach their orders by pitch. Phase 2 lands before or with phase 3, because [numbers.md](../grammar/numbers.md#counts) teaches today's digit cycle as the alphabet's vowel order, which phase 3 changes. Each phase is one change, so no published page mixes digit tables or stack spellings.
+Phase 1 goes first: phases 2 and 3 teach their orders by pitch. Phase 2 lands before or with phase 3, because [numbers.md](../../grammar/numbers.md#counts) teaches today's digit cycle as the alphabet's vowel order, which phase 3 changes. Each phase is one change, so no published page mixes digit tables or stack spellings.
 
 ## Decisions
 
@@ -392,4 +392,4 @@ Phase 1 goes first: phases 2 and 3 teach their orders by pitch. Phase 2 lands be
 - **Sentence edges are rests; stress is loudness.** Pitch carries the vowels and the `?` mark only; see [one job per dial](#one-job-per-dial).
 - **Syllabic `l`: fixed mid pitch, +4 semitones** (between `o` +3 and `e` +5; it narrows with the range like the vowels). It never copies a neighbour. In `blral` the beat after it is the number marker vowel; copying that pitch would blur the `l` into a long vowel and hide the extra beat that tells `blral` from `bral`. A fixed pitch is also one rule with nothing to look ahead for.
 - **Naming: keep "tone marks"; call the new feature *vowel pitch*.** The marks already use *tone* in its everyday English sense (*tone of voice*: teasing, gentle, unsure), which is exactly what they mean. *Vowel pitch* says plainly what the new feature is, and leaves *tone* with one meaning. When absorbed, grammar pages, the terminology page and cheat sheets use *vowel pitch* (*the pitch of `u` is high*); this proposal already uses that wording.
-- **Rising stacks are not question-like.** A yes/no question is spelled with the unstacked question word `yol` ([questions](../grammar/questions.md)), and the only pitch mark, `?`, raises a whole word's range. No contour means *question*, so a rising `ae` or `oe` cannot be heard as one.
+- **Rising stacks are not question-like.** A yes/no question is spelled with the unstacked question word `yol` ([questions](../../grammar/questions.md)), and the only pitch mark, `?`, raises a whole word's range. No contour means *question*, so a rising `ae` or `oe` cannot be heard as one.

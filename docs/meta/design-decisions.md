@@ -211,11 +211,16 @@ The [finger code](../grammar/finger-code.md) gives each letter a shape counted o
 
 **Handedness.** The hands follow dominance, not left and right: the consonant hand holds fourteen shapes, including the hooked runs and grace shapes, and the vowel hand holds four. Sign languages split the work the same way. Piano is the exception (the bass is always on the left, so the left hand plays vowels). A left-handed guitar mirrors the instrument, so the picking hand still carries consonants.
 
-**Vowel hand sideways.** Every vowel shape is also a consonant shape, so the vowel hand's fingers point toward the other hand. A sideways palm was rejected: seen edge-on, the raised fingers hide behind each other.
+**Vowel hand sideways.** Four fingers is a shape on both hands (`u` and `v`), and a run from the pinky is hard to tell from a run from the index at a distance, so the vowel hand's fingers point toward the other hand. A sideways palm was rejected: seen edge-on, the raised fingers hide behind each other.
 
 **Two forms (shape and piano).** In the air most people can't raise the ring finger alone, and a lone middle finger is rude, so shapes keep to runs. On piano, whole runs make clusters that blur by ear, so the keys strike the run's end. A run is fully described by its last finger, so the two forms carry the same letters. Hooking means nothing on a key, so the vowel hand's thumb marks it.
 
-**Count order for vowels.** On first syllables `a` (31%), `u` (28%), `o` (23%) and `e` (18%) in the doc examples, so the easy V shape lands on the commonest stressed vowel. In running text the four vowels are about equally common.
+**Vowel shapes count up the pitches.** The vowel hand's shapes are runs of 1 to 4 fingers from the pinky, in pitch order from the lowest (`a o e u`), the way the digits count. Signing, touch, piano and guitar then share one rule, *more fingers, higher vowel*, and the left hand keeps its natural layout (pinky on D♯3, index on A♯3) with the struck key climbing as the run grows. The consonant hand counts from the index, so the only shape on both hands is four fingers, and its spares *pinky alone* and *middle + ring + pinky* stay unassigned because they look like vowels. The cost is pinky + ring for `o`, the hardest of the four shapes; the thumb holds the index and middle down.
+
+| Alternative | Why not |
+|-------------|---------|
+| Vowel runs from the index | On the left hand the index plays the highest key, so a one-finger `a` would strike A♯3 and the piano would fall as the count rose. It would need either *fewer fingers, higher vowel* (shapes that count against the digits) or vowels on the right hand (consonants below them and a new piano layout) |
+| Vowel shapes in alphabet order (`u a o e`) | The piano's finger-to-key layout would no longer match the vowel pitches |
 
 | Alternative | Why not |
 |-------------|---------|
@@ -234,4 +239,21 @@ The [finger code](../grammar/finger-code.md) gives each letter a shape counted o
 | Consonants in the left hand, vowels in the right | Can be clash-free (consonants from G♯, vowels from A♯), but consonants on top sound clearer |
 | Vowels from F♯ | Puts `e a u` on the tonic chord, but the hook mark then sits a step above `u` |
 
-**Guitar.** The finger shapes don't carry over: a pentatonic scale puts two notes on each string, so some pairs would need one string to sound two notes. Open G keeps every consonant shape inside a G major chord. Standard tuning was tried first (consonants on open D G B E, vowels G2 A2 B2 D3): its open D and E are a ninth apart, it clashed on `r`, `n` and `x` and on many vowel pairs, and no four fretted bass vowels avoid a step with the treble strings.
+**Guitar.** The finger shapes don't carry over: a pentatonic scale puts two notes on each string, so some pairs would need one string to sound two notes. Open G keeps every consonant shape inside a G major chord. Standard tuning was tried first (consonants on open D G B E, vowels G2 A2 B2 D3): its open D and E are a ninth apart, it clashed on `r`, `n` and `x` and on many vowel pairs, and no four fretted bass vowels avoid a step with the treble strings. The vowels are E2 G2 B2 D3 in pitch order, not the piano's intervals (0 / 3 / 5 / 7, which would make `e` A2): no set at those intervals avoids a second or a ninth against the open G, B and D strings, and A2 sounds a ninth under every consonant on B. The guitar keeps the vowels' order; the piano is the pitch reference.
+
+### Vowel pitch and the voice
+
+[Vowel pitch](../grammar/phonology.md#vowels) gives each vowel a fixed pitch as backup to its sound. Once vowels own pitch, any other use of pitch competes with them, so each dial of the voice has one job: **pitch** carries vowel pitch and the `?` mark (a raised word); **loudness** carries word stress, the words never said quietly, `!` and `;`; **time** carries equal beats, held endings, rests at sentence edges, and `&`. The finger code already splits the work this way: beats and rests carry the edges, and a stronger beat carries stress.
+
+**Sentence edges are rests.** Almost every edge is already a word the listener hears, so only the period (a rest) and a scope island (a break before and after) keep a voice cue, and that cue is time.
+
+| Alternative | Why not |
+|-------------|---------|
+| Edges as register shifts (tone-language style: a period lowers the whole range, a turn resets it) | English-speaking learners would produce them as contours, a fall on the last syllable, which bends that syllable's vowel pitch. Pitch edges vanish in song and in the finger code; rests survive both. Every edge but two is already a word |
+| A level pitch on list items before the join | A second word with the same role letter already says a list is under way |
+
+**Stress is loudness.** Pitch belongs to the vowels and length to the beats: equal syllables are what make a rest countable. Rejected: stress by a pitch peak or a longer vowel (the English pattern), which would bend a stressed low `a` toward a higher vowel.
+
+**Syllabic `l` has a fixed pitch** (+4 semitones, between `o` and `e`). Rejected: copying a neighbor's pitch. In `blral` the beat after it is the number marker's vowel; copying that pitch would blur the `l` into a long vowel and hide the extra beat that tells `blral` from `bral`.
+
+**Rising stacks are not question-like.** A yes/no question is spelled with `yol`, and `?` raises a whole word's range; no contour means *question*, so a rising `ae` or `oe` is never heard as one.

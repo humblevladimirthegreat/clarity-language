@@ -566,7 +566,7 @@ An island can hold part of a phrase. Here only *not small* is grouped, so **`gul
 >
 > "A dog that is red and not small walks."
 
-**Speech:** reset your pitch briefly as the island starts, say it as one tight phrase, and pause after its last word. In singing, shape it like any other phrase. Because an island never runs past one phrase, a listener who misses the closing pause is off by at most part of that phrase.
+**Speech:** leave a **break** before the island (the next beat comes half a beat late), say it as one tight phrase, and leave another break after its last word. In singing, phrase it as its own short phrase. Because an island never runs past one phrase, a listener who misses the closing break is off by at most part of that phrase.
 
 ### Practice {#intermediate-practice}
 
