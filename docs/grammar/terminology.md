@@ -924,7 +924,7 @@ Left-edge `/y/` addressing.
 
 The fixed, optional pitch of each vowel: `u` high, `e` mid-high, `o` mid-low, `a` low. It backs up the vowel's sound and adds no meaning.
 
-[Phonology](phonology.md#vowels), [values](phonology.md#vowel-pitch-values)
+[Phonology](phonology.md#vowel-pitch), [values](phonology.md#vowel-pitch-values)
 
 ### Vowel series
 

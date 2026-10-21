@@ -22,7 +22,7 @@ Digits are spoken and written as these syllables:
 Two patterns build the table:
 
 - **Consonant:** 1–3 are the stops **b d g**, each further back in the mouth; 4–6 the breathy sounds **h z v**, each further forward; and 7–0 the four [word endings](word-endings.md) **r l n m**.
-- **Vowel:** the digits climb the [vowel pitches](phonology.md#vowels) **a o e u**, low to high, like the notes of a scale. Digit 1 is the lowest, 4 the highest, and 5 starts the climb again. 0 counts as the tenth digit, so it carries on the climb.
+- **Vowel:** the digits climb the [vowel pitches](phonology.md#vowel-pitch) **a o e u**, low to high, like the notes of a scale. Digit 1 is the lowest, 4 the highest, and 5 starts the climb again. 0 counts as the tenth digit, so it carries on the climb.
 
 Three cues help with the endings: a **7**'s stroke runs back to the left, and **-r** is the ending that points back; an **8** is a loop (*l* for *loop*); for **0** the lips close and nothing comes out (*mmm*).
 

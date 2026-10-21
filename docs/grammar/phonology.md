@@ -26,14 +26,6 @@ The cue words below are pronounced as in Standard American English.
 
 Audio is from Wikimedia Commons under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). /ʉ/ and /ä/ are by [Denelson83](https://commons.wikimedia.org/wiki/User:Denelson83), and /e̞/ and /o̞/ by [TFighterPilot](https://commons.wikimedia.org/wiki/User:TFighterPilot).
 
-Each vowel also has its own **pitch**, always the same one: `u` is high, `e` mid-high, `o` mid-low, and `a` low. Vowel pitch is optional and adds no meaning. It backs up the vowel's sound, so a listener who half-hears a vowel can still tell which one it was. When a vowel's sound and its pitch disagree, trust the sound. Keep each vowel's pitch when you stress a word or say it with feeling: Agebon stresses a word by saying it louder, not higher.
-
-Voices differ, so a vowel's pitch is how far it sits above your own `a`, not a fixed note. To practice, pick a pattern below, move `a` until it sits comfortably at the lower end of your vocal range, press **Play**, and sing each vowel as it lights up.
-
-With a microphone, **Find my `a`** listens while you hold a comfortable low note and makes it your `a`. **Check me** gives you a turn to sing each vowel back after you hear it (in **Random**, before you hear it), then marks whether you were within about a semitone.
-
-<PitchDrill />
-
 #### Opposite vowels {#opposite-vowels}
 
 The four vowels form two **opposite** pairs. Within a pair, the tongue moves along one line and the lips change shape:
@@ -45,7 +37,17 @@ The four vowels form two **opposite** pairs. Within a pair, the tongue moves alo
 
 To find `u`, start from `a`: keep the tongue centered, close the jaw, and round the lips. To find `o`, start from `e`: keep the jaw where it is, pull the tongue back, and round the lips. Moving between the two vowels of a pair is a small step.
 
-`a` and `u` are also the furthest apart in pitch: `a` is the lowest vowel and `u` the highest.
+#### Vowel pitch {#vowel-pitch}
+
+Each vowel also has its own **pitch**, always the same one: `u` is high, `e` mid-high, `o` mid-low, and `a` low. Vowel pitch is optional and adds no meaning. It backs up the vowel's sound, so a listener who half-hears a vowel can still tell which one it was. When a vowel's sound and its pitch disagree, trust the sound. Keep each vowel's pitch when you stress a word or say it with feeling: Agebon stresses a word by saying it louder, not higher.
+
+The opposite vowels `a` and `u` are also the furthest apart in pitch.
+
+Voices differ, so a vowel's pitch is how far it sits above your own `a`, not a fixed note. To practice, pick a pattern below, move `a` until it sits comfortably at the lower end of your vocal range, press **Play**, and sing each vowel as it lights up.
+
+With a microphone, **Find my `a`** listens while you hold a comfortable low note and makes it your `a`. **Check me** gives you a turn to sing each vowel back after you hear it (in **Random**, before you hear it), then marks whether you were within about a semitone.
+
+<PitchDrill />
 
 ### Consonants
 

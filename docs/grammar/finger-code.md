@@ -40,7 +40,7 @@ The four consonants left over come next in [alphabet order](./phonology.md#lette
 | `th` | index + middle + ring, hooked |
 | `x` | all four, hooked (claw) |
 
-The vowels go on the other hand. They count up the [vowel pitches](./phonology.md#vowels) the way the digits count: a run of 1 to 4 fingers starting at the **pinky**, from the lowest vowel to the highest. More fingers means a higher vowel.
+The vowels go on the other hand. They count up the [vowel pitches](./phonology.md#vowel-pitch) the way the digits count: a run of 1 to 4 fingers starting at the **pinky**, from the lowest vowel to the highest. More fingers means a higher vowel.
 
 | Vowel | Count | Shape |
 |-------|-------|-------|
@@ -131,7 +131,7 @@ Pick **Touch** in [Try it](#try-it) to see a sentence pressed into a receiver's 
 
 On a piano, every note is a black key. The black keys make one five-note scale, so any notes you play together sound pleasant. The left hand plays vowels and the right hand plays consonants for every player, left-handed or not, so the consonants sit on top.
 
-Pressing a whole run would sound as a blur of neighboring notes that is hard to hear apart. So on the keys you strike where the count ends: only the last finger of a run goes down, plus the thumb when the thumb is part of the count. A vowel run ends at its innermost finger, so the key climbs with the count, and each vowel's key is its [pitch](./phonology.md#vowels). The horns shape for `m` presses both of its fingers. Fingers are numbered 1 (thumb) to 5 (pinky).
+Pressing a whole run would sound as a blur of neighboring notes that is hard to hear apart. So on the keys you strike where the count ends: only the last finger of a run goes down, plus the thumb when the thumb is part of the count. A vowel run ends at its innermost finger, so the key climbs with the count, and each vowel's key is its [pitch](./phonology.md#vowel-pitch). The horns shape for `m` presses both of its fingers. Fingers are numbered 1 (thumb) to 5 (pinky).
 
 | Hand | Thumb (1) | 2 | 3 | 4 | Pinky (5) |
 |------|-----------|---|---|---|-----------|

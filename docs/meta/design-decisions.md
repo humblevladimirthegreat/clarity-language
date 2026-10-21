@@ -192,7 +192,7 @@ A **u** join after a closed list denies the list as a whole: it is single-item *
 
 ### Digit syllables
 
-The digit table is built from two rules, consonant blocks and a vowel cycle that climbs the [vowel pitches](../grammar/phonology.md#vowels), rather than English cues (*one*, *duo*, *zero*), which left 4, 6, 7 and 8 with no cue and caught none of the likeliest mishearings.
+The digit table is built from two rules, consonant blocks and a vowel cycle that climbs the [vowel pitches](../grammar/phonology.md#vowel-pitch), rather than English cues (*one*, *duo*, *zero*), which left 4, 6, 7 and 8 with no cue and caught none of the likeliest mishearings.
 
 - **Consonant blocks:** the stops `b d g` (1–3), the breathy sounds `h z v` (4–6), and the four word endings `r l n m` (7–0).
 - **Scale cycle:** digit vowels run `a o e u` from 1, lowest pitch to highest, as scale degrees do. 1 is the lowest note, 5 starts the next round, and 0 counts as the tenth digit. Letter names keep the opposite-vowel rule, so they walk the scale down.
@@ -272,7 +272,7 @@ The [finger code](../grammar/finger-code.md) gives each letter a shape counted o
 
 ### Vowel pitch and the voice
 
-[Vowel pitch](../grammar/phonology.md#vowels) gives each vowel a fixed pitch as backup to its sound. Once vowels own pitch, any other use of pitch competes with them, so each dial of the voice has one job: **pitch** carries vowel pitch and the `?` mark (a raised word); **loudness** carries word stress, the words never said quietly, `!` and `;`; **time** carries equal beats, held endings, rests at sentence edges, and `&`. The finger code already splits the work this way: beats and rests carry the edges, and a stronger beat carries stress.
+[Vowel pitch](../grammar/phonology.md#vowel-pitch) gives each vowel a fixed pitch as backup to its sound. Once vowels own pitch, any other use of pitch competes with them, so each dial of the voice has one job: **pitch** carries vowel pitch and the `?` mark (a raised word); **loudness** carries word stress, the words never said quietly, `!` and `;`; **time** carries equal beats, held endings, rests at sentence edges, and `&`. The finger code already splits the work this way: beats and rests carry the edges, and a stronger beat carries stress.
 
 **Sentence edges are rests.** Almost every edge is already a word the listener hears, so only the period (a rest) and a scope island (a break before and after) keep a voice cue, and that cue is time.
 

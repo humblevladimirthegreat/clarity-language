@@ -20,7 +20,8 @@ import { noteName, pianoBus, pianoContext, pianoVoice } from '../lib/piano-voice
 // Plays vowel-pitch patterns on the finger code's piano voice and lights each vowel as its note sounds;
 // the learner sings the vowels back. `advanced` adds the contour mode and the speech ranges.
 // The microphone is optional: *Find my a* sets the note for `a` from a held note, and *Check me* adds a
-// silent turn after each note (Random keeps its turn before) and judges what the learner sang in it. Without it, − and + set `a`.
+// silent turn after each note (Random keeps its turn before) and judges what the learner sang in it; a
+// clicked step plays its note and judges the learner singing it back. Without it, − and + set `a`.
 
 const props = defineProps<{ advanced?: boolean }>()
 
@@ -87,6 +88,7 @@ const VERDICT_LABELS: Record<Verdict['verdict'], string> = { ok: '✓ in tune', 
 const resultOf = (pi: number, si: number): Verdict | undefined => results.value[`${pi}:${si}`]
 
 function stepLabel(s: DrillStep, pi: number, si: number): string {
+  if (manual.value?.key === `${pi}:${si}` && manual.value.singing) return 'you sing'
   const result = resultOf(pi, si)
   if (result) return VERDICT_LABELS[result.verdict]
   return s.kind === 'ref' ? 'your a' : s.kind === 'sing' ? 'you sing' : ''
@@ -150,6 +152,7 @@ function frame(): void {
 }
 
 function stop(): void {
+  endManual()
   if (raf) cancelAnimationFrame(raf)
   raf = 0
   playing.value = false
@@ -183,6 +186,43 @@ function preview(vowel: string): void {
   if (previewBus) previewBus.gain.setTargetAtTime(0, a.currentTime, 0.02)
   previewBus = pianoBus(a)
   pianoVoice(a, previewBus, pitchOf(vowel, base.value, range.value), a.currentTime + 0.02, BEAT * 0.9, 0.9, 0.4)
+}
+
+/** A step the learner clicked while the microphone checks: its note sounds, then a turn to sing it back. */
+const manual = ref<{ key: string; singing: boolean } | null>(null)
+let manualRaf = 0
+
+function endManual(): void {
+  if (manualRaf) cancelAnimationFrame(manualRaf)
+  manualRaf = 0
+  manual.value = null
+}
+
+/** Sounds a clicked step; while the microphone checks, also judges the learner singing it back. */
+function clickStep(pi: number, si: number, vowel: string): void {
+  if (!check.value || !mic) return preview(vowel)
+  stop()
+  const key = `${pi}:${si}`
+  delete results.value[key]
+  preview(vowel)
+  const a = pianoContext()
+  const start = a.currentTime
+  const target = pitchOf(vowel, base.value, range.value)
+  const heard: number[] = []
+  manual.value = { key, singing: false }
+  const tick = () => {
+    const t = a.currentTime - start
+    if (t >= BEAT) manual.value!.singing = true
+    if (t >= BEAT + GRACE) {
+      const m = mic?.read() ?? null
+      if (m !== null) heard.push(m)
+    }
+    if (t >= 3 * BEAT) {
+      results.value[key] = judgePitch(heard, target)
+      endManual()
+    } else manualRaf = requestAnimationFrame(tick)
+  }
+  manualRaf = requestAnimationFrame(tick)
 }
 
 function step(by: number): void {
@@ -240,6 +280,7 @@ async function toggleCheck(): Promise<void> {
 
 watch(mode, (m) => {
   stop()
+  results.value = {}
   phrases.value = drillPhrases(m)
 })
 watch([base, range, check], () => {
@@ -257,43 +298,52 @@ onBeforeUnmount(() => {
 <template>
   <div class="pitch-drill">
     <div class="pd-controls">
-      <div class="pd-modes" role="group" aria-label="Pattern">
-        <button
-          v-for="m in modes"
-          :key="m.id"
-          type="button"
-          class="btn"
-          :class="{ on: mode === m.id }"
-          :aria-pressed="mode === m.id"
-          @click="mode = m.id"
-        >
-          {{ m.label }}
-        </button>
+      <div class="pd-row">
+        <div class="pd-group" role="group" aria-label="Note for a">
+          <span class="pd-base-note"><code>a</code> = {{ noteName(base) }}</span>
+          <button type="button" class="btn" aria-label="Lower a by a semitone" :disabled="base <= BASE_MIN" @click="step(-1)">−</button>
+          <button type="button" class="btn" aria-label="Raise a by a semitone" :disabled="base >= BASE_MAX" @click="step(1)">+</button>
+          <button type="button" class="btn find" :class="{ on: finding }" :aria-pressed="finding" @click="findA">
+            <template v-if="finding">Listening… {{ hearing === null ? '' : noteName(Math.round(hearing)) }}</template>
+            <template v-else>🎤 Find my <code>a</code></template>
+          </button>
+        </div>
       </div>
-      <div class="pd-base" role="group" aria-label="Note for a">
-        <button type="button" class="btn" aria-label="Lower a by a semitone" :disabled="base <= BASE_MIN" @click="step(-1)">−</button>
-        <span class="pd-base-note"><code>a</code> = {{ noteName(base) }}</span>
-        <button type="button" class="btn" aria-label="Raise a by a semitone" :disabled="base >= BASE_MAX" @click="step(1)">+</button>
-        <button type="button" class="btn" :class="{ on: finding }" :aria-pressed="finding" @click="findA">
-          <template v-if="finding">Listening… {{ hearing === null ? '' : noteName(Math.round(hearing)) }}</template>
-          <template v-else>🎤 Find my <code>a</code></template>
-        </button>
+      <div class="pd-row">
+        <div class="pd-group" role="group" aria-label="Pattern">
+          <button
+            v-for="m in modes"
+            :key="m.id"
+            type="button"
+            class="btn"
+            :class="{ on: mode === m.id }"
+            :aria-pressed="mode === m.id"
+            @click="mode = m.id"
+          >
+            {{ m.label }}
+          </button>
+        </div>
+        <div v-if="advanced" class="pd-group" role="group" aria-label="Range">
+          <span class="pd-label">Range</span>
+          <button
+            v-for="r in RANGES"
+            :key="r"
+            type="button"
+            class="btn"
+            :class="{ on: range === r }"
+            :aria-pressed="range === r"
+            @click="range = r"
+          >
+            {{ RANGE_LABELS[r] }}
+          </button>
+        </div>
       </div>
-      <div v-if="advanced" class="pd-modes" role="group" aria-label="Range">
-        <button
-          v-for="r in RANGES"
-          :key="r"
-          type="button"
-          class="btn"
-          :class="{ on: range === r }"
-          :aria-pressed="range === r"
-          @click="range = r"
-        >
-          {{ RANGE_LABELS[r] }}
-        </button>
+      <div class="pd-row">
+        <div class="pd-group">
+          <button type="button" class="btn" :class="{ on: check }" :aria-pressed="check" @click="toggleCheck">🎤 Check me</button>
+          <button type="button" class="btn play" @click="playing ? stop() : play()">{{ playing ? '■ Stop' : '▶ Play' }}</button>
+        </div>
       </div>
-      <button type="button" class="btn check" :class="{ on: check }" :aria-pressed="check" @click="toggleCheck">🎤 Check me</button>
-      <button type="button" class="btn play" @click="playing ? stop() : play()">{{ playing ? '■ Stop' : '▶ Play' }}</button>
     </div>
     <p v-if="finding" class="pd-mic-note">Sing a comfortable low <code>a</code> and hold it.</p>
     <p v-else-if="micNote" class="pd-mic-note">{{ micNote }}</p>
@@ -314,10 +364,10 @@ onBeforeUnmount(() => {
             :key="si"
             type="button"
             class="pd-step"
-            :class="[s.kind, resultOf(pi, si)?.verdict, { on: isOn(pi, si) }]"
+            :class="[s.kind, resultOf(pi, si)?.verdict, { on: isOn(pi, si) || manual?.key === `${pi}:${si}` }]"
             :aria-label="`Play ${s.vowel}`"
             :title="offTitle(resultOf(pi, si))"
-            @click="preview(s.vowel)"
+            @click="clickStep(pi, si, s.vowel)"
           >
             <span class="pd-letter">{{ s.vowel }}</span>
             <span v-if="stepLabel(s, pi, si)" class="pd-sub">{{ stepLabel(s, pi, si) }}</span>
@@ -339,22 +389,32 @@ onBeforeUnmount(() => {
 
 .pd-controls {
   display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pd-row {
+  display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 1rem;
+  gap: 0.5rem 1.25rem;
   align-items: center;
 }
 
-.pd-modes,
-.pd-base {
+.pd-group {
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem;
   align-items: center;
 }
 
+.pd-label {
+  font-size: 0.8rem;
+  color: var(--vp-c-text-2);
+  margin-inline-end: 0.15rem;
+}
+
 .pd-base-note {
-  min-width: 5.5rem;
-  text-align: center;
+  min-width: 4.5rem;
   font-size: 0.9rem;
 }
 
@@ -385,8 +445,18 @@ onBeforeUnmount(() => {
   background: var(--vp-c-brand-soft);
 }
 
-.btn.check {
-  margin-inline-start: auto;
+.btn.find {
+  min-width: 8.5rem;
+  margin-inline-start: 0.25rem;
+}
+
+.btn code {
+  font-size: inherit;
+  padding: 0 0.15em;
+}
+
+.btn.play {
+  min-width: 4.5rem;
 }
 
 .pd-mic-note {
