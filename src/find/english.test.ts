@@ -109,7 +109,7 @@ describe("taught cues in docs/grammar", () => {
   const cases: { phrase: string; page: string; slug?: string; forms: string[] }[] = [
     { phrase: "anyway", page: "hooks.md", slug: "hook-resume", forms: ["or"] },
     { phrase: "late", page: "comparatives.md", slug: "vague-amounts", forms: ["thubem / zel / zuel / bral"] },
-    { phrase: "last time", page: "numbers.md", forms: ["gruedal", "g#-2", "h#-2"] },
+    { phrase: "last time", page: "numbers.md", forms: ["gruedol", "g#-2", "h#-2"] },
   ];
   for (const { phrase, page, slug, forms } of cases) {
     it(`finds *${phrase}* first`, () => {

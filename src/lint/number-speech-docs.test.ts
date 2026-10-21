@@ -5,14 +5,14 @@ import { lintNumberSpeechMarkdown, spokenForm } from "./number-speech-docs.js";
 
 describe("spokenForm", () => {
   it("spells out number shorthand and keeps other words", () => {
-    assert.equal(spokenForm("zagozolx g+3."), "zagozolx gragol.");
-    assert.equal(spokenForm("h_15,30"), "hrobuzuthogomal");
+    assert.equal(spokenForm("zagozolx g+3."), "zagozolx gragel.");
+    assert.equal(spokenForm("h_15,30"), "hrobazathogemol");
   });
 });
 
 describe("lintNumberSpeechMarkdown", () => {
   it("accepts a matching row under a teach block", () => {
-    const md = "> `zagozolx g+3.`\n>\n> 🔊 `zagozolx gragol.`\n>\n> \"Three cats.\"\n";
+    const md = "> `zagozolx g+3.`\n>\n> 🔊 `zagozolx gragel.`\n>\n> \"Three cats.\"\n";
     assert.deepEqual(lintNumberSpeechMarkdown(md), []);
   });
 
@@ -20,27 +20,27 @@ describe("lintNumberSpeechMarkdown", () => {
     const md = "> `zagozolx g+3.`\n>\n> \"Three cats.\"\n";
     const [finding] = lintNumberSpeechMarkdown(md);
     assert.equal(finding?.documented, null);
-    assert.equal(finding?.expected, "zagozolx gragol.");
+    assert.equal(finding?.expected, "zagozolx gragel.");
   });
 
   it("flags a mismatched row", () => {
-    const md = "> `zagozolx g+3.`\n>\n> 🔊 `zagozolx gravel.`\n";
-    assert.equal(lintNumberSpeechMarkdown(md)[0]?.documented, "zagozolx gravel.");
+    const md = "> `zagozolx g+3.`\n>\n> 🔊 `zagozolx grahul.`\n";
+    assert.equal(lintNumberSpeechMarkdown(md)[0]?.documented, "zagozolx grahul.");
   });
 
   it("needs no row when writing already equals speech", () => {
-    assert.deepEqual(lintNumberSpeechMarkdown("> `zagozolx gragol.`\n"), []);
+    assert.deepEqual(lintNumberSpeechMarkdown("> `zagozolx gragel.`\n"), []);
   });
 
   it("pairs a spoken → written prompt with its answer", () => {
-    const ok = "**1.** 🔊 `gradal`\n\n::: details Show answer\n`g+2`\n\ng-two\n:::\n";
+    const ok = "**1.** 🔊 `gradol`\n\n::: details Show answer\n`g+2`\n\ng-two\n:::\n";
     assert.deepEqual(lintNumberSpeechMarkdown(ok), []);
-    const bad = ok.replace("gradal", "gragol");
+    const bad = ok.replace("gradol", "gragel");
     assert.equal(lintNumberSpeechMarkdown(bad).length, 1);
   });
 
   it("checks Spoken table cells", () => {
-    const md = "| Value | Preferred writing | Spoken |\n|---|---|---|\n| 3 | `g+3` | `grugol` (sketch) |\n";
-    assert.equal(lintNumberSpeechMarkdown(md)[0]?.expected, "gragol");
+    const md = "| Value | Preferred writing | Spoken |\n|---|---|---|\n| 3 | `g+3` | `grugel` (sketch) |\n";
+    assert.equal(lintNumberSpeechMarkdown(md)[0]?.expected, "gragel");
   });
 });

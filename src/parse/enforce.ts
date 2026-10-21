@@ -464,7 +464,7 @@ function enforceDegreeNumber(word: LexWord, stem: NumberStem): void {
   if (place === undefined || place < 2) throw new ConstructionError("degreeNumber", word.raw);
 }
 
-/** A `/w/` ordinal (`wredal`) is a place on a scale: it needs a single-name `zel` / `zuel` frame (comparatives.md § superlatives). */
+/** A `/w/` ordinal (`wredol`) is a place on a scale: it needs a single-name `zel` / `zuel` frame (comparatives.md § superlatives). */
 function isRankPlace(word: LexWord): boolean {
   return word.pos === "w" && word.family.kind === "number" && isRankMarker(word.family.stem.marker);
 }

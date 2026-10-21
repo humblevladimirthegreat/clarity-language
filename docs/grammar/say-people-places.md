@@ -281,7 +281,7 @@ English *as a teacher, I …* has no one-word form (`/h/` already means manner).
 
 English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family tree and a sex. Agebon says the layer with the kin number and the sex with **`gemugol`** *male* or **`gevugol`** *female*, after `zeyol` *person*. Put the person the tie is from in a `bl-` word right after the number.
 
-> `zeyol gevugol grewamal bluzozen.`
+> `zeyol gevugol grewamol bluzozen.`
 >
 > [z-person | g-female | [g-#-e0 | bl-Uzozen]]
 >
@@ -289,13 +289,13 @@ English *brother*, *sister*, *aunt*, *grandmother* name one layer of the family 
 
 | English | Agebon |
 |---------|--------|
-| *mother* / *mom* | `zeyol gevugol grewubul bluzozen` |
-| *father* / *dad* | `zeyol gemugol grewubul bluzozen` |
-| *brother* | `zeyol gemugol grewamal bluzozen` |
-| *sister* | `zeyol gevugol grewamal bluzozen` |
-| *aunt* (a sister of a parent) | `zeyol gevugol grewamal bleyol grewubul bluzozen` |
-| *grandmother* (a parent of a parent) | `zeyol gevugol grewubul bleyol grewubul bluzozen` |
-| *generation* | the kin number itself: `grewubul` parents, `grewamal` siblings, `grewabul` children |
+| *mother* / *mom* | `zeyol gevugol grewubal bluzozen` |
+| *father* / *dad* | `zeyol gemugol grewubal bluzozen` |
+| *brother* | `zeyol gemugol grewamol bluzozen` |
+| *sister* | `zeyol gevugol grewamol bluzozen` |
+| *aunt* (a sister of a parent) | `zeyol gevugol grewamol bleyol grewubal bluzozen` |
+| *grandmother* (a parent of a parent) | `zeyol gevugol grewubal bleyol grewubal bluzozen` |
+| *generation* | the kin number itself: `grewubal` parents, `grewamol` siblings, `grewabal` children |
 
 For *uncle* and *grandfather*, use `gemugol` for `gevugol`.
 

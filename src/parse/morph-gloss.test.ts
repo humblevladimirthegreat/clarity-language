@@ -73,18 +73,18 @@ describe("morphGlossLine — SHARED only where it can describe the join", () => 
     expectLine("zudozol gerulel gamezom gal huhunem vowurel.", "[z-dog | [g-red | g-small | g-and]] | h-intensity | v-walk");
   });
   it("reads al / ul between number endpoints as a range", () => {
-    expectLine("zudozol gragol al grazul vowurel.", "[z-dog | g-three] | through | g-five | v-walk");
-    expectLine("zrawal ul zrazul.", "z-plus-infinity | through-excluding | z-five");
-    expectLine("zragol ar zrazul.", "z-three | some.through | z-five");
+    expectLine("zudozol gragel al grazal vowurel.", "[z-dog | g-three] | through | g-five | v-walk");
+    expectLine("zrawal ul zrazal.", "z-plus-infinity | through-excluding | z-five");
+    expectLine("zragel ar zrazal.", "z-three | some.through | z-five");
   });
   it("keeps al literal when an endpoint has no digits or the kinds differ", () => {
-    expectLine("zral al zrazul.", "z-more-than-one | including | z-five");
-    expectLine("zragol al zredal.", "z-three | including | z-2nd");
+    expectLine("zral al zrazal.", "z-more-than-one | including | z-five");
+    expectLine("zragel al zredol.", "z-three | including | z-2nd");
   });
   it("reads stacked in-clause hooks as spans on any line", () => {
     expectLine("zaduhel oel zaduhel.", "z-down | through | z-down");
-    expectLine("zragol ual zrazul.", "z-three | strictly-between | z-five");
-    expectLine("zragol uel zrazul.", "z-three | outside | z-five");
+    expectLine("zragel ual zrazal.", "z-three | strictly-between | z-five");
+    expectLine("zragel uel zrazal.", "z-three | outside | z-five");
     expectLine("zuzozen uar zahelan vezuvol.", "z-Uzozen | some.strictly-between | z-Ahelan | v-sleep");
   });
 });
@@ -159,14 +159,14 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zuzozen vowurel herulal hal", "z-Uzozen | v-walk | h-rain | h-only-when");
     expectLine("hual", "h-always");
     expectLine("von", "v-choose");
-    expectLine("gragol", "g-three");
+    expectLine("gragel", "g-three");
     expectLine("g+3", "g-three.short");
     expectLine("g+12", "g-twelve");
-    expectLine("grabudal", "g-twelve.spelled");
+    expectLine("grabadol", "g-twelve.spelled");
     expectLine("g+3 g+12", "g-three | g-twelve");
     expectLine("gral", "g-more-than-one");
     expectLine("g+", "g-more-than-one.short");
-    expectLine("gredal", "g-2nd");
+    expectLine("gredol", "g-2nd");
   });
 
   it("glosses a tag pronoun by its letter name, never the referent (glosses.md § Anaphors)", () => {
@@ -180,7 +180,7 @@ describe("morphGlossLine — glosses.md single words", () => {
   it("scientific and percent number writing", () => {
     expectLine("g+27e12", "g-27e12");
     expectLine("g+25%", "g-25yo");
-    expectLine("gragol", "g-three");
+    expectLine("gragel", "g-three");
   });
 
   it("worked single-words table", () => {
@@ -256,7 +256,7 @@ describe("morphGlossLine — glosses.md dialogue turns", () => {
 
   it("numbered alternative + unmet pleasure", () => {
     expectLine(
-      "xrewul zabevam grebul. zuwonx thodothur.",
+      "xrewul zabevam grebal. zuwonx thodothur.",
       "x-starting-with | [z-problem | g-1st] . z-speaker-x | th-pleasure-unmet-passing",
     );
   });

@@ -59,7 +59,7 @@ describe("parseWord — content / gl- / citation", () => {
 });
 
 describe("parseWord — numbers (writing + speech)", () => {
-  it("parses g+3 and speech twin gragol", () => {
+  it("parses g+3 and speech twin gragel", () => {
     const writing = parseOk("g+3");
     assert.equal(writing.pos, "g");
     assert.equal(writing.ending, "l");
@@ -68,7 +68,7 @@ describe("parseWord — numbers (writing + speech)", () => {
       stem: { marker: "+", groups: [{ mantissa: "3" }] },
     });
 
-    const speech = parseOk("gragol");
+    const speech = parseOk("gragel");
     assert.equal(speech.pos, "g");
     assert.equal(speech.ending, "l");
     assert.deepEqual(speech.family, {
@@ -234,15 +234,15 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
   });
 
   it("requires th + marker vowel between spoken number groups (numbers.md § Group separator)", () => {
-    const word = parseOk("hrobuzuthogomal");
+    const word = parseOk("hrobazathogemol");
     assert.equal(word.family.kind === "number" && word.family.stem.groups.length, 2);
     assert.throws(() => parseWord("hrowovatharezol"));
-    const merged = parseOk("hrobuzugomal");
+    const merged = parseOk("hrobazagemol");
     assert.equal(merged.family.kind === "number" && merged.family.stem.groups.length, 1);
   });
 
-  it("parses stance numbers under th (thrabumal = th+10)", () => {
-    const word = parseOk("thrabumal");
+  it("parses stance numbers under th (thrabamol = th+10)", () => {
+    const word = parseOk("thrabamol");
     assert.equal(word.pos, "th");
     assert.equal(word.family.kind, "number");
   });

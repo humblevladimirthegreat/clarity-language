@@ -1,6 +1,6 @@
 /**
  * Digit pegs: a published root's consonants spell digits with the same onsets as the spoken digit
- * syllables (`b d g v z h l r n m` = 1–9, 0). Vowels and the fillers `w` / `y` are silent, and so is
+ * syllables (`b d g h z v r l n m` = 1–9, 0). Vowels and the fillers `w` / `y` are silent, and so is
  * everything outside the root (role letter, ending, codas, seams). Shared by the CLI
  * (src/pegs/cli.ts) and the Number Pegs page (docs/grammar/pegs.md).
  */

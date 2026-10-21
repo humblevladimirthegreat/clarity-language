@@ -101,7 +101,7 @@ describe("extractTranslationExercises", () => {
   it("pairs a spoken → written prompt's answer, not the spoken row", () => {
     const md = `### Translation practice
 
-**1.** 🔊 \`gradamal\`
+**1.** 🔊 \`gradomol\`
 
 ::: details Show answer
 \`g+20\`
@@ -124,7 +124,7 @@ g-20
 ::: details Show answer
 \`g+20\`
 
-🔊 \`gradamal\`
+🔊 \`gradomol\`
 
 g-20
 

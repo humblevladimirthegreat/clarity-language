@@ -702,7 +702,7 @@ export const REJECTIONS = {
   stanceNumber: { anchor: "numbers.md#number-as-stance-by-marker", summary: "a stance number takes + (likelihood), _ (source) or # (Nth-hand); th- with digits and th#- are not used" },
   handDepth: { anchor: "knowing.md#hand-depth", summary: "th#N counts the hands between the event and you, from 2 (th#2 second-hand, a secondary source); first-hand is a channel word" },
   handDepthChannel: { anchor: "knowing.md#hand-depth", summary: "th#N counts hands between the event and you, so LIVE and MEMORY (first-hand channels) cannot take it" },
-  degreeNumber: { anchor: "numbers.md#number-as-degree", summary: "a number on /w/ is the how-much blank, barely / almost, or an ordinal place on a scale (wredal); a factor goes on /h/" },
+  degreeNumber: { anchor: "numbers.md#number-as-degree", summary: "a number on /w/ is the how-much blank, barely / almost, or an ordinal place on a scale (wredol); a factor goes on /h/" },
   degreePlaceFrame: { anchor: "comparatives.md#place-on-a-scale", summary: "a place on a scale (w#N) needs one name before zel or zuel, then the shared adjective" },
   numberResumeUnbound: { anchor: "numbers.md#digitless", summary: "a number -r needs an earlier number to match" },
   tagUnbound: { anchor: "pronouns.md#tag-pronouns", summary: "a tag -r or -m needs that tag assigned earlier in the conversation (`zudozol zwal`, or `zwal` alone); -m also needs an earlier event it took part in (for a pair, one event both took part in)" },

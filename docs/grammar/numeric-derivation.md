@@ -23,14 +23,14 @@ PoS + ROOT + {l|m} + NUM + {-l|-m|-n|-r}
 | **PoS** | Ordinary slot for the derived word | |
 | **ROOT** | Any content root (`V(CV)+`) | |
 | **join** | Same letter as a [lexical compound](compounds.md#lexical-compounds): **-l** the root’s everyday sense, **-m** its abstract sense | `oholebora` *doorbell* uses **-l** |
-| **NUM** | Number stem: same marker / digits / digitless-exp body as [numbers.md](numbers.md), without a role letter and without its own ending. Tables below use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …). Actual words are always spelled CV (`rawa`, `rowa`, `rabuwa`, …): [writing style](numbers.md#writing-style-numeric-vs-spelled) | spoken stem starts with **`r`**, so you hear **`lr`** or **`mr`** |
+| **NUM** | Number stem: same marker / digits / digitless-exp body as [numbers.md](numbers.md), without a role letter and without its own ending. Tables below use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …). Actual words are always spelled CV (`rawa`, `rowa`, `rabawa`, …): [writing style](numbers.md#writing-style-numeric-vs-spelled) | spoken stem starts with **`r`**, so you hear **`lr`** or **`mr`** |
 | **Ending** | Word ending on the **whole word**, after the number: **-l** the kind itself, **-m** approximately that kind (*roughly a three-part dialogue*), **-n** a name, **-r** a resume. The join letter, not this ending, says whether the root is in its everyday or abstract sense. | |
 
 The **Agebon** columns below write the shape in shorthand (`ROOTl+e`), but a real word is always spelled out (`zolamalrawal`): shorthand is for free numbers only. After the abstract sense, the join is **-m**: `zolamamrawal`.
 
 A final **-m** makes the kind approximate:
 
-> `zuzozen dezuyelragom vawebol.`
+> `zuzozen dezuyelragem vawebol.`
 >
 > z-Uzozen | d-discourse-l-three | v-see
 >
@@ -49,7 +49,7 @@ The digitless number words (plus or minus infinity, first or last place, *more t
 | **`ROOTl+e`** | essence / absolute / pure type of ROOT | `zolamalrawal`: *essence of love* | **+e** = plus with no cap: nothing left to add |
 | **`ROOTl+e-`** | grain / seed / infinitesimal of ROOT | `zolamalrawul`: *grain of love* | **+e-** = that same plus, at the tiny end: a speck |
 | **`ROOTl-e`** | void of / absolute anti-ROOT | `zevemulruwal`: *void of fear* | **-e** = minus with no floor: none of the kind |
-| **`ROOTl-e-`** | **quasi-ROOT**: the shape of ROOT without treating it as fully real (English **`quasi-`**); **`ROOTl-e-1`** / **`ROOTl-e-2`** = quasi-N | `zahuyayolruwul`: *quasi-friend*; `zehemruwudal`: *quasi-pair* | **-e-** = imaginary amount: the outline, not the ledger |
+| **`ROOTl-e-`** | **quasi-ROOT**: the shape of ROOT without treating it as fully real (English **`quasi-`**); **`ROOTl-e-1`** / **`ROOTl-e-2`** = quasi-N | `zahuyayolruwul`: *quasi-friend*; `zehemruwudol`: *quasi-pair* | **-e-** = imaginary amount: the outline, not the ledger |
 | **`ROOTl#e-`** | origin / prototype / onset-form of ROOT | `zolamalrewul`: *love in its beginning form* | **#e-** = start-place: the first rung |
 | **`ROOTl#e`** | telos / culmination / final form of ROOT | `zonemrewal`: *story’s final form* | **#e** = last place: where the kind finishes |
 | **`ROOTl+`** | poly- / multi-ROOT (unspecified >1) | `zehohamral`: *multi-faith* | **+** = more than one, how many unnamed |
@@ -83,12 +83,12 @@ English *quasi-* says something has the **shape or role** of a kind without coun
 
 For *quasi-* with a **number of parts** (*as if one*, *as if a pair*), write **`-e-N`**, where N is the digit that **`+N`** uses for that many parts. Spoken, the stem is **`ru`** + **`wu`** + the digit N: a bare order of magnitude, with no digit before the exponent. The word says the kind has that many parts only as if, not really.
 
-**Compare with:** with no root, **`gruwubul`** / **`gruwudal`** are real negative amounts in the order-of-magnitude bands −1 / −2.
+**Compare with:** with no root, **`gruwubal`** / **`gruwudol`** are real negative amounts in the order-of-magnitude bands −1 / −2.
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`ROOTl-e-1`** | quasi-unit / as-if singleton: unit-shaped without being a real one (twin **`ROOTl+1`**) | `zadowomruwubul`: *a quasi-single voice* / as-if primary voice | **-e-** outline + **1** = as-if one |
-| **`ROOTl-e-2`** | quasi-dual / imaginary duality: pair/mutual *as if*, not real reciprocity (twin **`ROOTl+2`**) | `gabewemruwudal`: *quasi-mutual commitment*; `zehemruwudal`: *quasi-pair / as-if partnership* | **-e-** outline + **2** = as-if a pair |
+| **`ROOTl-e-1`** | quasi-unit / as-if singleton: unit-shaped without being a real one (twin **`ROOTl+1`**) | `zadowomruwubal`: *a quasi-single voice* / as-if primary voice | **-e-** outline + **1** = as-if one |
+| **`ROOTl-e-2`** | quasi-dual / imaginary duality: pair/mutual *as if*, not real reciprocity (twin **`ROOTl+2`**) | `gabewemruwudol`: *quasi-mutual commitment*; `zehemruwudol`: *quasi-pair / as-if partnership* | **-e-** outline + **2** = as-if a pair |
 
 | Agebon | Use |
 |--------|-----|
@@ -103,9 +103,9 @@ For a zero-shaped quasi, use **`ROOTl-0`** (anti-null) or **`ROOTl-0e-`** (micro
 ### Scalar digit morphs (`+N` / `-N`)
 <a id="scalar-digit-morphs"></a>
 
-English *a pair of…*, *three-part…*, *primary…* can say **how many parts the kind has**, not how many things the sentence is about. Write a one-digit plus stem after the join: spoken, the marker then the digit (`ra`+`bu` for `+1`, spelled `…lrabul`). A minus stem **`-N`** (including **`-0`**, spoken `ru`+digit) is the **privative**: the kind lacks or undoes the `+N` structure (*one-sided* instead of *mutual*). The tables write the stems in shorthand (**`+N`** / **`-N`**).
+English *a pair of…*, *three-part…*, *primary…* can say **how many parts the kind has**, not how many things the sentence is about. Write a one-digit plus stem after the join: spoken, the marker then the digit (`ra`+`ba` for `+1`, spelled `…lrabal`). A minus stem **`-N`** (including **`-0`**, spoken `ru`+digit) is the **privative**: the kind lacks or undoes the `+N` structure (*one-sided* instead of *mutual*). The tables write the stems in shorthand (**`+N`** / **`-N`**).
 
-> `zuzozen dabewemradal vawebol.`
+> `zuzozen dabewemradol vawebol.`
 >
 > z-Uzozen | d-pen-m-two | v-see
 >
@@ -113,16 +113,16 @@ English *a pair of…*, *three-part…*, *primary…* can say **how many parts t
 
 | Agebon | Use | English | `-N` | Privative English | Cue |
 |--------|-----|---------|------|-------------------|-----|
-| **`ROOTl+1`** | unit / primary / singleton | `zadowomrabul`: *a single / primary voice*; SI measure nouns use published unit metaphors instead ([measure phrases](numbers-applied.md#measure-phrases)) | `zadowomrubul` | *an indistinct / non-singular voice* | **1** = one piece |
-| **`ROOTl+2`** | dual / mutual / reciprocal / pair | `gabewemradal`: *mutual commitment* | `gabewemrudal` | *one-sided commitment* | **2** = two sides |
-| **`ROOTl+3`** | triad / triplet / 3-part / ternary | `zezuyelragol`: *a three-part dialogue* | `zagahemrugol` | *non-tripartite institution* | **3** = three parts |
-| **`ROOTl+4`** | quad / 4-part / square / frame | `zuhuyemravel`: *a four-part / framed judgment* | `zemunamruvel` | *an unframed message* | **4** = four sides of a frame |
-| **`ROOTl+5`** | hand / pentad / agency-set | `zuwalrazul`: *a handy / five-fold toolkit* | `zagemruzul` | *a plan without practical grasp* | **5** = fingers of a hand |
-| **`ROOTl+6`** | hex / 6-part / honeycomb / pack | `zuvahalrahal`: *a hexagonal / six-pack product* | `zahunamruhal` | *an unpacked team* | **6** = honeycomb / six-pack |
-| **`ROOTl+7`** | heptad / week-cycle / complete series | `zezudamralol`: *a seven-fold / week-cycle ritual* | `zezudamrulol` | *a broken-cycle ritual* | **7** = days that close a week |
-| **`ROOTl+8`** | octet / 8-part / doubled-quad | `zegohumrarel`: *an octet / eight-part blockage* | `zegohumrurel` | *a non-octet blockage* | **8** = two frames (4+4) |
-| **`ROOTl+9`** | ennead / near-full / almost-ten | `zenurolranul`: *a nine-part / near-full choir* | `zenurolrunul` | *a far-from-full choir* | **9** = one short of ten |
-| **`ROOTl+0`** | null / reset / emptied | `vodoramramal`: *to zero-score / null the score* | `godoramrumal` | *a score that won’t null* / *stubborn residual score* (**anti-null**) | **0** = empty count |
+| **`ROOTl+1`** | unit / primary / singleton | `zadowomrabal`: *a single / primary voice*; SI measure nouns use published unit metaphors instead ([measure phrases](numbers-applied.md#measure-phrases)) | `zadowomrubal` | *an indistinct / non-singular voice* | **1** = one piece |
+| **`ROOTl+2`** | dual / mutual / reciprocal / pair | `gabewemradol`: *mutual commitment* | `gabewemrudol` | *one-sided commitment* | **2** = two sides |
+| **`ROOTl+3`** | triad / triplet / 3-part / ternary | `zezuyelragel`: *a three-part dialogue* | `zagahemrugel` | *non-tripartite institution* | **3** = three parts |
+| **`ROOTl+4`** | quad / 4-part / square / frame | `zuhuyemrahul`: *a four-part / framed judgment* | `zemunamruhul` | *an unframed message* | **4** = four sides of a frame |
+| **`ROOTl+5`** | hand / pentad / agency-set | `zuwalrazal`: *a handy / five-fold toolkit* | `zagemruzal` | *a plan without practical grasp* | **5** = fingers of a hand |
+| **`ROOTl+6`** | hex / 6-part / honeycomb / pack | `zuvahalravol`: *a hexagonal / six-pack product* | `zahunamruvol` | *an unpacked team* | **6** = honeycomb / six-pack |
+| **`ROOTl+7`** | heptad / week-cycle / complete series | `zezudamrarel`: *a seven-fold / week-cycle ritual* | `zezudamrurel` | *a broken-cycle ritual* | **7** = days that close a week |
+| **`ROOTl+8`** | octet / 8-part / doubled-quad | `zegohumralul`: *an octet / eight-part blockage* | `zegohumrulul` | *a non-octet blockage* | **8** = two frames (4+4) |
+| **`ROOTl+9`** | ennead / near-full / almost-ten | `zenurolranal`: *a nine-part / near-full choir* | `zenurolrunal` | *a far-from-full choir* | **9** = one short of ten |
+| **`ROOTl+0`** | null / reset / emptied | `vodoramramol`: *to zero-score / null the score* | `godoramrumol` | *a score that won’t null* / *stubborn residual score* (**anti-null**) | **0** = empty count |
 
 **Not the same job as:** ordinal digit morphs **`#N`** (*which order*). **`+N`** is *how many parts*.
 
@@ -133,42 +133,42 @@ English *a pair of…*, *three-part…*, *primary…* can say **how many parts t
 
 | PoS | `…l+0` | `…l-0` | Examples |
 |-----|--------|--------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | emptied / wiped instance | entity that won’t zero / stubborn residue | `zaramramal`: *a wiped debt*; `zaramrumal`: *a debt that won’t zero*; `devumrumal`: *that memory that won’t blank*; `bodoramrumal`: non-null residue as argument |
-| **`/v/`** (verb) | act of nulling / resetting | act that refuses null / keeps residual | `vodoramramal`: *to null the score*; `vodoramrumal`: *to anti-null / refuse to zero the score*; `vuzubamramal`: *to zero effort*; `vuzubamrumal`: *to leave effort unzeroable* |
-| **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `godoramramal`: *null / reset*; `godoramrumal`: *won’t-null / residual*; `goguyemrumal`: *hope that won’t go to zero* (vs `goguyemruwal` *void of hope*) |
-| **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `huzubamramal`: *with effort zeroed*; `huzubamrumal`: *with irreducible effort* / *despite any zeroing* |
-| **`/w/`** (extra detail) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `waramramal garam`: *debt (ascribed) zeroed*; `waramrumal garam`: *debt whose balance is anti-null* |
-| **`/y/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `yodoramramal`; `yodoramrumal` |
+| **`/z/` `/d/` `/b/`** (noun) | emptied / wiped instance | entity that won’t zero / stubborn residue | `zaramramol`: *a wiped debt*; `zaramrumol`: *a debt that won’t zero*; `devumrumol`: *that memory that won’t blank*; `bodoramrumol`: non-null residue as argument |
+| **`/v/`** (verb) | act of nulling / resetting | act that refuses null / keeps residual | `vodoramramol`: *to null the score*; `vodoramrumol`: *to anti-null / refuse to zero the score*; `vuzubamramol`: *to zero effort*; `vuzubamrumol`: *to leave effort unzeroable* |
+| **`/ɡ/`** (adjective) | null / reset (ascribed) | non-emptyable / residual (ascribed) | `godoramramol`: *null / reset*; `godoramrumol`: *won’t-null / residual*; `goguyemrumol`: *hope that won’t go to zero* (vs `goguyemruwal` *void of hope*) |
+| **`/h/`** (adverb) | clause framed as reset / zeroed | clause framed as irreducible residue | `huzubamramol`: *with effort zeroed*; `huzubamrumol`: *with irreducible effort* / *despite any zeroing* |
+| **`/w/`** (extra detail) | host `/ɡ/` graded toward null | host `/ɡ/` graded toward anti-null | `waramramol garam`: *debt (ascribed) zeroed*; `waramrumol garam`: *debt whose balance is anti-null* |
+| **`/y/`** (interjection) | discourse *Zero it!* / *Null!* | discourse *Won’t zero!* / *Residue stands!* | `yodoramramol`; `yodoramrumol` |
 
 With a final **-m**, the wipe is only approximate: nearly emptied.
 
-> `zuzozen daramramam vawebol.`
+> `zuzozen daramramom vawebol.`
 >
 > z-Uzozen | d-debt-m-zero | v-see
 >
 > "Uzozen sees a nearly wiped debt."
 
-**Related form:** a stronger wipe of the kind is total null **`ROOTl+0e`**. *Annihilate* with no root is the free number verb **`vramawal`**.
+**Related form:** a stronger wipe of the kind is total null **`ROOTl+0e`**. *Annihilate* with no root is the free number verb **`vramowal`**.
 
 ### Zero × exponent (`+0e` / `±0e-1` / …)
 <a id="zero-exponent-derivation"></a>
 <a id="total-null"></a>
 <a id="engineering-null-morph"></a>
 
-The [zero × exponent](numbers.md#zero-exponent) stems from free numbers also work after a root. There they say the kind is **wiped out, or leaves a residue**, instead of naming an amount. Free **`vramawal`** is *annihilate* with no kind attached; **`vodoramramawal`** is *annihilate the score*.
+The [zero × exponent](numbers.md#zero-exponent) stems from free numbers also work after a root. There they say the kind is **wiped out, or leaves a residue**, instead of naming an amount. Free **`vramowal`** is *annihilate* with no kind attached; **`vodoramramowal`** is *annihilate the score*.
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`ROOTl+0e`** | total null / absolute wipe of the kind | `vodoramramawal`: *annihilate the score* (kind); `zaramramawal`: *a totally wiped debt-kind* | **0** empty × **e** unbounded = wipe with no leftover scale |
-| **`ROOTl+0e-`** | sterile / null grain of ROOT | `zoguyemramawul`: *sterile hope*; `zurunulramawul`: *registration with no seed* | **0e-** = empty at the tiny end: no seed |
-| **`ROOTl+0e-1`** | engineering null at order of magnitude −1 of ROOT: kind wiped at scale 10⁻¹ | `zabevamrawubuyamal`: *deci-null problem*; `vodoramrawubuyamal`: *null the score at deci scale* | **0e-1** = empty at the tenths band |
-| **`ROOTl-0e`** | absolute residue of ROOT | `zaramrumawal`: *debt as absolute residue*; `vuzubamrumawal`: *leave effort as absolute residue* | **-0e** = the minus of total wipe: residue that will not go |
-| **`ROOTl-0e-`** | micro-residue of ROOT | `zevumrumawul`: *memory as micro-residue* | **-0e-** = residue at the tiny end |
-| **`ROOTl-0e-1`** | engineering residue at order of magnitude −1 of ROOT | `zaramruwubuyamal`: *debt as deci-scale residue* | **-0e-1** = residue at the tenths band |
+| **`ROOTl+0e`** | total null / absolute wipe of the kind | `vodoramramowal`: *annihilate the score* (kind); `zaramramowal`: *a totally wiped debt-kind* | **0** empty × **e** unbounded = wipe with no leftover scale |
+| **`ROOTl+0e-`** | sterile / null grain of ROOT | `zoguyemramowul`: *sterile hope*; `zurunulramowul`: *registration with no seed* | **0e-** = empty at the tiny end: no seed |
+| **`ROOTl+0e-1`** | engineering null at order of magnitude −1 of ROOT: kind wiped at scale 10⁻¹ | `zabevamrawubayamol`: *deci-null problem*; `vodoramrawubayamol`: *null the score at deci scale* | **0e-1** = empty at the tenths band |
+| **`ROOTl-0e`** | absolute residue of ROOT | `zaramrumowal`: *debt as absolute residue*; `vuzubamrumowal`: *leave effort as absolute residue* | **-0e** = the minus of total wipe: residue that will not go |
+| **`ROOTl-0e-`** | micro-residue of ROOT | `zevumrumowul`: *memory as micro-residue* | **-0e-** = residue at the tiny end |
+| **`ROOTl-0e-1`** | engineering residue at order of magnitude −1 of ROOT | `zaramruwubayamol`: *debt as deci-scale residue* | **-0e-1** = residue at the tenths band |
 
 The ending on the whole word marks soft (**-m**), named (**-n**), or resume (**-r**) as usual.
 
-**Emptiness chain (kinds):** **`ROOTl-e`** (void of kind), **`ROOTl+0`** (resettable null), **`ROOTl+0e`** (total null), **`ROOTl+0e-`** (sterile grain), **`ROOTl+0e-1`** (engineering null at 10⁻¹). On free numbers, bare **`grawamal`** / **`Ne0`** instead [assert order of magnitude 0](numbers.md#bare-oom-bands).
+**Emptiness chain (kinds):** **`ROOTl-e`** (void of kind), **`ROOTl+0`** (resettable null), **`ROOTl+0e`** (total null), **`ROOTl+0e-`** (sterile grain), **`ROOTl+0e-1`** (engineering null at 10⁻¹). On free numbers, bare **`grawamol`** / **`Ne0`** instead [assert order of magnitude 0](numbers.md#bare-oom-bands).
 
 On a free number, **`±0e-1`** is an amount. After a root, the same stems wipe the kind, or leave a residue of it, at that scale.
 
@@ -176,32 +176,32 @@ On a free number, **`±0e-1`** is an amount. After a root, the same stems wipe t
 
 | PoS | `…l+0e` | Examples |
 |-----|---------|----------|
-| **`/z/` `/d/` `/b/`** | totally wiped / annihilated kind | `zaramramawal` |
-| **`/v/`** | annihilate that kind | `vodoramramawal` |
-| **`/ɡ/`** | ascribed total-null | `goguyemramawal` |
-| **`/h/`** | clause framed as total wipe | `huzubamramawal` |
-| **`/w/`** | host graded toward total null | `waramramawal garam` |
-| **`/y/`** | *Annihilate that kind!* | `yodoramramawal` |
+| **`/z/` `/d/` `/b/`** | totally wiped / annihilated kind | `zaramramowal` |
+| **`/v/`** | annihilate that kind | `vodoramramowal` |
+| **`/ɡ/`** | ascribed total-null | `goguyemramowal` |
+| **`/h/`** | clause framed as total wipe | `huzubamramowal` |
+| **`/w/`** | host graded toward total null | `waramramowal garam` |
+| **`/y/`** | *Annihilate that kind!* | `yodoramramowal` |
 
-**`-0e` / `-0e-` / `±0e-1`** take the role letters the same way (absolute residue / micro-residue / engineering null·residue at order of magnitude −1). With no root: **`vramawal`** *annihilate*; **`gramawal`** absolute-zero amount; **`g+0e-1`** / **`g-0e-1`** engineering null / residue: [numbers.md § Zero × exponent](numbers.md#zero-exponent).
+**`-0e` / `-0e-` / `±0e-1`** take the role letters the same way (absolute residue / micro-residue / engineering null·residue at order of magnitude −1). With no root: **`vramowal`** *annihilate*; **`gramowal`** absolute-zero amount; **`g+0e-1`** / **`g-0e-1`** engineering null / residue: [numbers.md § Zero × exponent](numbers.md#zero-exponent).
 
 #### Rank-annihilated morph (`#0e`)
 <a id="rank-annihilated-morph"></a>
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`ROOTl#0e`** | rank-annihilated / disqualified form of ROOT: place wiped as a kind property | `zamahumremawal`: *a disqualified challenge (as type)*; `vamahumremawal`: *to disqualify that challenge-kind*. Free **`g#0e`** is *disqualified place in this series*. | **#** is place; **0e** wipes that place |
+| **`ROOTl#0e`** | rank-annihilated / disqualified form of ROOT: place wiped as a kind property | `zamahumremowal`: *a disqualified challenge (as type)*; `vamahumremowal`: *to disqualify that challenge-kind*. Free **`g#0e`** is *disqualified place in this series*. | **#** is place; **0e** wipes that place |
 
 **`#0e`** vs **`#0`:** annihilated place vs zeroth-order rung. **`#0e`** vs **`+0e`:** rank wipe vs kind total-null. Free **`#e0`** is [current generation](numbers-applied.md#ordinal-generation). Same role-letter framing as other ordinal morphs (`/z/` disqualified kind, `/v/` disqualify-as-kind, `/y/` *Disqualified!*, …).
 
 ### Ordinal digit morphs (`#N`)
 <a id="ordinal-digit-morphs"></a>
 
-English *first draft*, *secondary adventure*, *third-order problem* can name **which rank the kind holds**, not which item is Nth in a list. Write a one-digit rank stem after the join: shorthand **`ROOTl#N`**, spoken **`re`** + digit, spelled `…lrebul`. A free **`g#N`** after a noun picks the Nth item in a series instead.
+English *first draft*, *secondary adventure*, *third-order problem* can name **which rank the kind holds**, not which item is Nth in a list. Write a one-digit rank stem after the join: shorthand **`ROOTl#N`**, spoken **`re`** + digit, spelled `…lrebal`. A free **`g#N`** after a noun picks the Nth item in a series instead.
 
 **`#N`** names a stage between the digitless ends **`#e-`** (first form) and **`#e`** (final form); **`#0e`** is [rank annihilated](#rank-annihilated-morph). For *lacks N parts*, use the scalar minus stem **`-N`**. For a code with several digits, use free `g#12` or the label marker **`_`**.
 
-> `zolazun debewemrebul varayel.`
+> `zolazun debewemrebal varayel.`
 >
 > z-Olazun | d-pencil-m-1st | v-write
 >
@@ -209,11 +209,11 @@ English *first draft*, *secondary adventure*, *third-order problem* can name **w
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`ROOTl#1`** | first-class / premiere / first-order | `debewemrebul`: *a first-draft* (kind); `debewem g#1` *the first draft (in this stack)* | **#1** = first place, not “one piece” |
-| **`ROOTl#2`** | secondary / second-order / backup | `gamunemredal`: *a secondary adventure* | **#2** = the next slot after first |
-| **`ROOTl#3`** | tertiary / third-order | `zabevamregol`: *a third-order problem* | **#3** = third rung |
-| **`ROOTl#4`** … **`#9`** | Nth-order / Nth-place form | `zaharomrezul`: *fifth-order harmony* (as a kind) | **#N** = Nth place on the kind |
-| **`ROOTl#0`** | zeroth-order / pre-rank / unranked form | `zuboremremal`: *a zeroth-order calculation* | **#0** = the rung before ranking starts |
+| **`ROOTl#1`** | first-class / premiere / first-order | `debewemrebal`: *a first-draft* (kind); `debewem g#1` *the first draft (in this stack)* | **#1** = first place, not “one piece” |
+| **`ROOTl#2`** | secondary / second-order / backup | `gamunemredol`: *a secondary adventure* | **#2** = the next slot after first |
+| **`ROOTl#3`** | tertiary / third-order | `zabevamregel`: *a third-order problem* | **#3** = third rung |
+| **`ROOTl#4`** … **`#9`** | Nth-order / Nth-place form | `zaharomrezal`: *fifth-order harmony* (as a kind) | **#N** = Nth place on the kind |
+| **`ROOTl#0`** | zeroth-order / pre-rank / unranked form | `zuboremremol`: *a zeroth-order calculation* | **#0** = the rung before ranking starts |
 
 **Not the same job as:** **`+1`** / **`+2`** (singleton / dual). **`#1`** is premiere-place; **`#2`** is secondary. **`#0`** is a zeroth rung; **`#0e`** is rank annihilated / disqualified.
 
@@ -221,12 +221,12 @@ English *first draft*, *secondary adventure*, *third-order problem* can name **w
 
 | PoS | `…l#N` | Examples |
 |-----|--------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | a rank-N kind | `zebewemredal`: *a second-draft (as type)*; `debewemrebul`: *a first-draft* |
-| **`/v/`** (verb) | treat as / assign that order (kind-act) | `vamahumrebul`: *to first-class / premiere a challenge* (free `v#1` *take 1st place*) |
-| **`/ɡ/`** (adjective) | *Nth-order* (ascribed) | `gamunemredal`: *secondary* |
-| **`/h/`** (adverb) | *at Nth-order framing* | `huboremremal`: *zeroth-order* |
-| **`/w/`** (extra detail) | host `/ɡ/` graded as Nth-order | `wezuyelregol gezuyel`: *third-order (dialogue)* |
-| **`/y/`** (interjection) | discourse call of that order-kind | `yebewemrebul`: *First-draft!* (kind cheer; free `y#1` *First!* place cheer) |
+| **`/z/` `/d/` `/b/`** (noun) | a rank-N kind | `zebewemredol`: *a second-draft (as type)*; `debewemrebal`: *a first-draft* |
+| **`/v/`** (verb) | treat as / assign that order (kind-act) | `vamahumrebal`: *to first-class / premiere a challenge* (free `v#1` *take 1st place*) |
+| **`/ɡ/`** (adjective) | *Nth-order* (ascribed) | `gamunemredol`: *secondary* |
+| **`/h/`** (adverb) | *at Nth-order framing* | `huboremremol`: *zeroth-order* |
+| **`/w/`** (extra detail) | host `/ɡ/` graded as Nth-order | `wezuyelregel gezuyel`: *third-order (dialogue)* |
+| **`/y/`** (interjection) | discourse call of that order-kind | `yebewemrebal`: *First-draft!* (kind cheer; free `y#1` *First!* place cheer) |
 
 **Related form:** **`_N`** is *which code*; free `g#N` is *which item in the current series*.
 
@@ -234,7 +234,7 @@ English *first draft*, *secondary adventure*, *third-order problem* can name **w
 
 When English makes a code part of what a thing is (*specimen #1*, *room 12* as a kind of room), the digits are a **catalog ID**, not a count or a rank. Put the digit-string marker **`_`** after the join; its digits are the code. With no digits, **`_`** describes the catalog itself (infinite labels).
 
-> `zuzozen dudewalrobul vawebol.`
+> `zuzozen dudewalrobal vawebol.`
 >
 > z-Uzozen | d-petri-dish-l-_1 | v-see
 >
@@ -243,7 +243,7 @@ When English makes a code part of what a thing is (*specimen #1*, *room 12* as a
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ROOTl_`** | ROOT as something that **bears a code** (taggable unit; code unnamed) | `zudewalrol`: *a coded specimen* / *a specimen-as-ID* | **`_`** = catalog stamp, digits not yet filled |
-| **`ROOTl_N`** | **specimen / item #N**: the code is part of the kind | `zudewalrobul`: *specimen #1*; `zahehalrobudal`: *room-12* as a coded kind; `bahehalrobudal`: *room-12* as `/b/` | the digits **are** the name, not a count |
+| **`ROOTl_N`** | **specimen / item #N**: the code is part of the kind | `zudewalrobal`: *specimen #1*; `zahehalrobadol`: *room-12* as a coded kind; `bahehalrobadol`: *room-12* as `/b/` | the digits **are** the name, not a count |
 
 When the number is only an argument of an ordinary noun, prefer ordinary syntax: `zahehal g_12` = *the room numbered 12*. Use **`ROOTl_N`** when the code is part of the **concept** (specimen ID, SKU, protocol code). To cite a numbered point in the conversation, use free **`x_…`**; to dial or enter a code, use free **`v_…`**.
 
@@ -258,8 +258,8 @@ With a digitless exponent, **`_`** describes the **catalog**, not a size: label 
 |--------|-----|---------|-----|
 | **`ROOTl_e`** | open / unbounded catalog: ∞-tagged, open ID space, any code in an unbounded ledger | `zudenelrowal`: *open-ended ticket ID* / *∞-catalogued ticket* | **`_e`** = a code space with no last ID |
 | **`ROOTl_e-`** | proto-label / unassigned slot: pre-code, atomic empty tag | `zudenelrowul`: *unassigned ticket slot* | **`_e-`** = the catalog’s empty first slot |
-| **`ROOTl_1e`** | comic gazillion-coded / umpteen-SKU | `zuvahalrobuwal`: *a gazillion-SKU product* | **`_1e`** = one × unbounded as a SKU joke |
-| **`ROOTl_1e-`** | comic gazillionth-of-a-code / vanishing ID | `zurunulrobuwul`: *a vanishingly coded registration* | **`_1e-`** = that joke at the tiny end |
+| **`ROOTl_1e`** | comic gazillion-coded / umpteen-SKU | `zuvahalrobawal`: *a gazillion-SKU product* | **`_1e`** = one × unbounded as a SKU joke |
+| **`ROOTl_1e-`** | comic gazillionth-of-a-code / vanishing ID | `zurunulrobawul`: *a vanishingly coded registration* | **`_1e-`** = that joke at the tiny end |
 
 #### Infinite label by PoS
 
@@ -278,13 +278,13 @@ To exaggerate a kind for comic effect (*a gazillion-mess*, *an umpteenth attempt
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`ROOTl+1e`** | *gazillion-ROOT* (comic huge) | `zezulamrabuwal`: *a gazillion-mess* | **1e** = one × unbounded: comic huge |
-| **`ROOTl+1e-`** | *gazillionth-ROOT* (comic tiny) | `zodevomrabuwul`: *a gazillionth-of-a-chance* | **1e-** = one × unbounded tiny |
-| **`ROOTl#1e`** | *umpteenth-ROOT* (comic late rank) | `zuguvelrebuwal`: *an umpteenth attempt* (as a kind) | **#1e** = unbounded place: “umpteenth” |
-| **`ROOTl_1e`** | *gazillion-coded ROOT* (comic SKU sprawl) | `zuvahalrobuwal`: *a gazillion-SKU product* | **`_`** + **1e** = comic SKU sprawl |
-| **`ROOTl_1e-`** | *gazillionth-of-a-code ROOT* (vanishing ID) | `zurunulrobuwul`: *a vanishingly coded registration* | **`_`** + **1e-** = a vanishing ID |
+| **`ROOTl+1e`** | *gazillion-ROOT* (comic huge) | `zezulamrabawal`: *a gazillion-mess* | **1e** = one × unbounded: comic huge |
+| **`ROOTl+1e-`** | *gazillionth-ROOT* (comic tiny) | `zodevomrabawul`: *a gazillionth-of-a-chance* | **1e-** = one × unbounded tiny |
+| **`ROOTl#1e`** | *umpteenth-ROOT* (comic late rank) | `zuguvelrebawal`: *an umpteenth attempt* (as a kind) | **#1e** = unbounded place: “umpteenth” |
+| **`ROOTl_1e`** | *gazillion-coded ROOT* (comic SKU sprawl) | `zuvahalrobawal`: *a gazillion-SKU product* | **`_`** + **1e** = comic SKU sprawl |
+| **`ROOTl_1e-`** | *gazillionth-of-a-code ROOT* (vanishing ID) | `zurunulrobawul`: *a vanishingly coded registration* | **`_`** + **1e-** = a vanishing ID |
 
-Free **`hrebuwal`** = *for the gazillionth time* (clause adverb). Derived **`zayamrebuwal`** = *an umpteenth co-participation* (noun kind).
+Free **`hrebawal`** = *for the gazillionth time* (clause adverb). Derived **`zayamrebawal`** = *an umpteenth co-participation* (noun kind).
 
 ### Practice {#advanced-practice}
 
@@ -324,7 +324,7 @@ z-Uzozen | d-gold-l-grain | v-hammer
 **2.** *Ahelan sees a primary factory.*
 
 ::: details Show answer
-`zahelan duvahalrabul vawebol.`
+`zahelan duvahalrabal vawebol.`
 
 z-Ahelan | d-factory-l-one | v-see
 :::
@@ -340,7 +340,7 @@ z-Uzozen | d-gold-l-quasi | v-pour
 **4.** *Olazun annihilates the gold-kind.*
 
 ::: details Show answer
-`zolazun vugulelramawal.`
+`zolazun vugulelramowal.`
 
 z-Olazun | v-gold-l-+-0e
 :::
@@ -363,7 +363,7 @@ z-Uzozen | d-fire-l-origin | v-see
 *Uzozen sees fire in its beginning form.*
 :::
 
-**3.** `zolazun duvahalragol vawebol.`
+**3.** `zolazun duvahalragel vawebol.`
 
 ::: details Show answer
 z-Olazun | d-factory-l-three | v-see
@@ -371,7 +371,7 @@ z-Olazun | d-factory-l-three | v-see
 *Olazun sees a three-part factory.*
 :::
 
-**4.** `zolazun vavululrumal.`
+**4.** `zolazun vavululrumol.`
 
 ::: details Show answer
 z-Olazun | v-fire-l-minus-zero
@@ -381,10 +381,10 @@ z-Olazun | v-fire-l-minus-zero
 
 #### Pick one {#advanced-pick-one}
 
-**1.** *Olazun pours a first-class gold.* `zolazun dugulelrebul vobuvul.` or `zolazun dugulelrabul vobuvul.`
+**1.** *Olazun pours a first-class gold.* `zolazun dugulelrebal vobuvul.` or `zolazun dugulelrabal vobuvul.`
 
 ::: details Show answer
-`zolazun dugulelrebul vobuvul.`
+`zolazun dugulelrebal vobuvul.`
 
 z-Olazun | d-gold-l-1st | v-pour
 

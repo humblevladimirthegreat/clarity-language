@@ -312,8 +312,8 @@ A morph line corresponds **one-to-one** with its Agebon. From the gloss alone yo
 - **Every written word is glossed**, including a spoken **`yal`**. A `yal` that was left out is not added.
 - **Sentence marks.** When one line holds several sentences, the mark between them stands alone with spaces: `z-Uzozen | v-walk . z-←Uzozen | v-judge`. A line-final period is implicit. A [tone mark](../grammar/speech-moves.md#tone-marks) is copied as written: attached to the glossed word or span it colors (`!z-Uzozen`), or standing alone with spaces for sentence scope (`! z-Uzozen | v-walk`).
 - **One label per form.** Each (PoS, root, ending) maps to one English label. Two roots never share an English sense: when they would, reword one row in the lexicon. `npm run lint:lexicon` checks this, and `npm test` round-trips every glossed example in `docs/grammar/`.
-- **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](../grammar/numbers.md#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word that prefers shorthand (`grabudal` → `g-twelve.spelled`; `g+12` → `g-twelve`), `.short` on shorthand that prefers spelling — no digit or one digit (`g+3` → `g-three.short`; `gragol` → `g-three`; `g+` → `g-more-than-one.short`).
-- **Ordinals use digits** (`gredal` → `g-2nd`, `gruedal` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
+- **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](../grammar/numbers.md#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word that prefers shorthand (`grabadol` → `g-twelve.spelled`; `g+12` → `g-twelve`), `.short` on shorthand that prefers spelling — no digit or one digit (`g+3` → `g-three.short`; `gragel` → `g-three`; `g+` → `g-more-than-one.short`).
+- **Ordinals use digits** (`gredol` → `g-2nd`, `gruedol` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
 - **Role-compound resumes** keep their role: `daexarayer` → `d-←instrument-x-write`, `duxarayer` → `d-←patient-x-write`. A bare `d-←write` would merge the doer, scene, undergoer, tool, … of one event.
 - **Role pointers** gloss their role and pointer vowel, never the referent: `zaxar` → `z-←agent.same`, `duxor` → `d-←patient.other`, `daxer` → `d-←agent.self`, `zaxur` → `z-←agent.unsaid`. **-l** adds `.new` and **-m** adds `.part` (`duxal` → `d-←patient.same.new`, `zaxam` → `z-←agent.same.part`, `zoxom` → `z-←recipient.other.part`, `zaxum` → `z-←agent.unsaid.part`). The role label is the role-compound one (`recipient` for **`o`**, `instrument` for **`ae`**, …). A pointer inside a seam keeps the seam's host: holder `theyemaxar` → `th-CLUES-←agent.same`, lateral anchor `howuhethaxar` → `h-west-th-←agent.same`.
 - **Unknown words fail.** A content word the lexicon cannot gloss has no morph line: a root missing from the lexicon, or **-m** on a root with no abstract sense (unless a closed overlay defines that **-m** form). `lint:agebon` reports it.
@@ -461,8 +461,8 @@ Bake join / hook **job** into the English label (including open vs closed when i
 | `hual` (bare) | `h-always` |
 | `her` (statement / fill-ask) | `h-preferred-time` / `h-when-best` |
 | `von` | `v-choose` |
-| `gragol` | `g-three` |
-| `gredal` | `g-2nd` |
+| `gragel` | `g-three` |
+| `gredol` | `g-2nd` |
 | `g+3` (shorthand) | `g-three.short` |
 | `g+12` | `g-twelve` |
 | `g+e` | `g-plus-infinity` |
@@ -522,7 +522,7 @@ No note: *as I remember* already says whose memory it is. Do not render the over
 
 ### Numbered alternative + unmet pleasure
 
-> `xrewul zabevam grebul. zuwonx thodothur.`
+> `xrewul zabevam grebal. zuwonx thodothur.`
 >
 > x-starting-with | [z-problem | g-1st] . z-speaker-x | th-pleasure-unmet-passing
 >

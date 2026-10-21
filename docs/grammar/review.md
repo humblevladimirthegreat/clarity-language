@@ -90,7 +90,7 @@ z-Uzozen | [h-like | bl-duck] | v-sing
 **4.** *Ahelan smells three tomatoes.*
 
 ::: details Show answer
-`zahelan dudedolx gragol vonebol.`
+`zahelan dudedolx gragel vonebol.`
 
 z-Ahelan | [d-tomato-x | g-three] | v-smell
 
@@ -424,7 +424,7 @@ z-Uzozen | [v-cook | v-fight | v-rank/more]
 **8.** *Ahelan sleeps about two hours.*
 
 ::: details Show answer
-`zahelan bagorum gradam vezuvol.`
+`zahelan bagorum gradom vezuvol.`
 
 z-Ahelan | [b-hour | g-two.about] | v-sleep
 
@@ -473,7 +473,7 @@ z-Ahelan | [gl-MENTION | d-CITE[Uzozen]] | v-write
 **Rule:** [Mention](spans.md#mention)
 :::
 
-**4.** `zuzozen danewulx gragol vawebol. zahelan dugedolx gragor vawebol.`
+**4.** `zuzozen danewulx gragel vawebol. zahelan dugedolx grager vawebol.`
 
 ::: details Show answer
 z-Uzozen | [d-knife-x | g-three] | v-see . z-Ahelan | [d-cookie-x | g-←three] | v-see
@@ -533,10 +533,10 @@ y-Ahelan | y-soft-prohibition | v-cry
 **Rule:** [Speech act: firm and soft](speech-moves.md#speech-act)
 :::
 
-**4.** *Olazun and Ahelan each cook three cookies.* `zolazun zahelan zal vuguyel dugedolx gragol.` or `zolazun zahelan zal vuguyelx dugedolx gragol.`
+**4.** *Olazun and Ahelan each cook three cookies.* `zolazun zahelan zal vuguyel dugedolx gragel.` or `zolazun zahelan zal vuguyelx dugedolx gragel.`
 
 ::: details Show answer
-`zolazun zahelan zal vuguyel dugedolx gragol.`
+`zolazun zahelan zal vuguyel dugedolx gragel.`
 
 [z-Olazun | z-Ahelan | z-and] | v-cook | [d-cookie-x | g-three]
 
@@ -769,10 +769,10 @@ On `/w/` right before the adjective, MEMORY covers only *sleepy*; **`thevum`** o
 
 #### Fix it {#advanced-fix-it}
 
-**1.** *I saw Ahelan sleep two hours ago.* <!-- lint: error -->`zahelan thevum bagorum gradal vezuvol.`
+**1.** *I saw Ahelan sleep two hours ago.* <!-- lint: error -->`zahelan thevum bagorum gradol vezuvol.`
 
 ::: details Show answer
-`zahelan thevum blagorum grudal vezuvol.`
+`zahelan thevum blagorum grudol vezuvol.`
 
 z-Ahelan | [th-MEMORY | [bl-hour | g-minus-two]] | v-sleep
 

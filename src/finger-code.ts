@@ -82,7 +82,7 @@ export type PianoForm = { fingers: Finger[]; hook: boolean };
 /**
  * A run strikes only its last finger (the innermost one for a run from the pinky), plus the thumb when
  * the thumb is in the count; other shapes (horns) strike exactly what is raised. A hooked run is its straight form plus the hook mark.
- * No piano form presses two neighboring fingers, so `h` (thumb + index) is `z` plus the hook mark.
+ * No piano form presses two neighboring fingers, so `v` (thumb + index) is `z` plus the hook mark.
  */
 export function pianoForm(letter: string): PianoForm {
   const { fingers, hooked } = shapeOf(letter);
@@ -135,11 +135,11 @@ export const GUITAR_CONSONANTS: Readonly<Record<string, { strings: GuitarString[
   b: { strings: ["G3"], why: "1: index, the run end" },
   d: { strings: ["B3"], why: "2: middle, the run end" },
   g: { strings: ["D4"], why: "3: ring, the run end" },
-  v: { strings: ["G3", "B3", "D4"], why: "4: all fingers, thumb tucked" },
+  h: { strings: ["G3", "B3", "D4"], why: "4: all fingers, thumb tucked" },
   z: { strings: ["D3"], why: "5: thumb alone" },
-  h: { strings: ["D3", "G3"], why: "6: thumb + index" },
-  l: { strings: ["D3", "B3"], why: "7: thumb + middle" },
-  r: { strings: ["D3", "D4"], why: "8: thumb + ring" },
+  v: { strings: ["D3", "G3"], why: "6: thumb + index" },
+  r: { strings: ["D3", "B3"], why: "7: thumb + middle" },
+  l: { strings: ["D3", "D4"], why: "8: thumb + ring" },
   n: { strings: ["D3", "G3", "B3", "D4"], why: "9: open hand" },
   m: { strings: ["G3", "D4"], why: "0: horns" },
   w: { strings: ["G3", "B3"], why: "hooked 1: b + the next string up" },

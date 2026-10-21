@@ -7,8 +7,8 @@ You walk.	You	first:job	a row whose first cue is *you* comes first
 # Possessives
 My cat runs.	My	has:possessive-pronoun	*my* names the possessive job
 # Numbers
-Uzozen sees three books.	three	form:gragol	a lone count word is spelled
-Uzozen sees the third book.	third	form:gregol	a lone rank word is spelled
+Uzozen sees three books.	three	form:gragel	a lone count word is spelled
+Uzozen sees the third book.	third	form:gregel	a lone rank word is spelled
 Uzozen sees three books.	three	link:numbers.md#counts	the count word's section
 # Modals, negation, stance
 My sister couldn't come yesterday.	could not	link:say-tense.md#can-may	*couldn't* is one slot with the modal's row

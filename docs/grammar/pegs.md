@@ -12,7 +12,7 @@ Each digit has one consonant, the first letter of its spoken syllable:
 
 | Digit | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 |
 |-------|---|---|---|---|---|---|---|---|---|---|
-| Letter | b | d | g | v | z | h | l | r | n | m |
+| Letter | b | d | g | h | z | v | r | l | n | m |
 
 Only the root spells digits, so first take off the letters around it:
 
@@ -22,16 +22,16 @@ Only the root spells digits, so first take off the letters around it:
 
 `zudozol` *dog* is 25: drop `z` and **-l**, and the root's consonants are `d` and `z`. The role letter and the ending change what the word does in the sentence, not the thing you picture, so `dudozom` is the same dog and still 25.
 
-`w` and `y` fill out a syllable without spelling a digit, so a five-letter root with one of them spells a single digit: `erowol` *radio* is 8, and `anewul` *knife* is 9. A root whose only consonants are `w` and `y`, like `oyayul` *ogre*, spells no number.
+`w` and `y` fill out a syllable without spelling a digit, so a five-letter root with one of them spells a single digit: `erowol` *radio* is 7, and `anewul` *knife* is 9. A root whose only consonants are `w` and `y`, like `oyayul` *ogre*, spells no number.
 
 Vowels never count, so roots that differ only in their vowels spell the same number: `agedal` *cutlery*, `agedol` *croissant* and `ogodal` *coconut* are all 32. When a number has several roots, pick the picture you find most vivid.
 
 Longer words spell longer numbers:
 
-- A [dictionary word](./compounds.md#lexical-compounds) made of two roots counts its joining letter like any other consonant: `oholeboral` *doorbell* is 6718.
+- A [dictionary word](./compounds.md#lexical-compounds) made of two roots counts its joining letter like any other consonant: `oholeboral` *doorbell* is 4817.
 - A word glued with a mid-word `x` reads each root in turn, and the `x` spells nothing: `zubedaxuyudal` *peanut butter* is 12, then 2.
 
-Number words (`gragol` *three*), pronouns and other grammar words are not pegs. Read them for what they say.
+Number words (`gragel` *three*), pronouns and other grammar words are not pegs. Read them for what they say.
 
 ## Peg sizes {#peg-sizes}
 
@@ -50,7 +50,7 @@ The dictionary has at least one root for every digit and for every pair from 00 
 2. For each piece, pick a root that spells exactly those digits.
 3. Picture the thing each root names (its emoji in the [lexicon](./lexicon.md) is a good start). Place the pictures one by one along a route you know well, such as the rooms of your home.
 
-2381 is 23, then 81: `udugul` *triangle*, then `orebol` *ring*. Picture a triangle threaded through a ring.
+2371 is 23, then 71: `udugul` *triangle*, then `orebol` *ring*. Picture a triangle threaded through a ring.
 
 Each place on the route holds one piece, so you know how many digits it gives back. If a place that held a pair gives you three digits, you counted the ending or a `w` or `y`. If it gives you one, you skipped a consonant of the root.
 
@@ -65,7 +65,7 @@ To hold six digits in one picture, make a sentence with a subject, an object and
 >
 > "The dog punches a pear."
 
-This scene holds 25 12 94. Pick a verb with two digit consonants; a verb spelled only with `w` and `y` spells nothing.
+This scene holds 25 12 96. Pick a verb with two digit consonants; a verb spelled only with `w` and `y` spells nothing.
 
 ## Find pegs {#find-pegs}
 

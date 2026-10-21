@@ -61,8 +61,8 @@ describe("glossToAgebon", () => {
       "zuzozen dolazun vawebol. zuxorx varuvel.",
       "zuzozen d[amobam#|] vezuyel.",
       "glegel z<kimchi> gamezom.",
-      "zagozolx gragol.",
-      "zagozolx gragol.",
+      "zagozolx gragel.",
+      "zagozolx gragel.",
       "zuwonx vowurel.",
       "zuzozen vuhuyel d[zuzozer vowurel]. dududal on dugudal.",
     ]) {

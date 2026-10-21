@@ -49,11 +49,11 @@ The ending grades your evidence: **-l** you could show it, **-m** you could desc
 |-----|---------|---------|-------|
 | [Name the source](../knowing.md#source): a noun in a `bl-` word right after | `zolazun thebam bluzozen velurul.` | *Olazun left, according to Uzozen.* | I |
 | [A device as the source](../knowing.md#source) | `zolazun thugom blogewol vezuvol.` | *Olazun is asleep, going by the camera.* | I |
-| [How many hands](../knowing.md#hand-depth): `th#N` after a channel | `zolazun thebam thregol velurul.` | *Olazun left, so they say, third-hand.* | I |
+| [How many hands](../knowing.md#hand-depth): `th#N` after a channel | `zolazun thebam thregel velurul.` | *Olazun left, so they say, third-hand.* | I |
 | [A forecast](../knowing.md#forecast): channel + `blral` | `thubem blral verulal.` | *It will rain, going by the pattern.* | I |
 | [A hunch about later](../knowing.md#forecast) | `zolazun thabor blral velurul.` | *Olazun will leave, a faint hunch.* | I |
-| [A dated claim](../knowing.md#dated-channel): signed time measure | `zuzozen thevum blagorum grugol vowurel.` | *I saw Uzozen walk three hours ago.* | A |
-| [Later, dated](../knowing.md#dated-channel) | `zolazun thebam blagorum gragol velurul.` | *I hear Olazun leaves in three hours.* | A |
+| [A dated claim](../knowing.md#dated-channel): signed time measure | `zuzozen thevum blagorum grugel vowurel.` | *I saw Uzozen walk three hours ago.* | A |
+| [Later, dated](../knowing.md#dated-channel) | `zolazun thebam blagorum gragel velurul.` | *I hear Olazun leaves in three hours.* | A |
 | [Give the grounds](../knowing.md#evidence-clause): `blarl`, grounds in the next sentence | `theyem thahum blarl` | *inferred, and it was caused* | I |
 
 | Offset | Sign | Stage |
@@ -225,7 +225,7 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 |------|----|------|
 | `thomam` *could be* ([a guess, no reasons](../knowing.md#may)) | | `theyem` *from the clues* ([reasons you worked out](../knowing.md#evidentiality)) |
 | `thebam` *so they say* ([someone said it](../knowing.md#evidentiality)) | | `theyum` *imagine* ([a scene you make up](../knowing.md#notional-as-if-framing)) |
-| `theyel` *strong clues* ([how good your evidence is](../knowing.md#evidence-strength)) | | `thregol` *third-hand* ([how many hands](../knowing.md#hand-depth)) |
+| `theyel` *strong clues* ([how good your evidence is](../knowing.md#evidence-strength)) | | `thregel` *third-hand* ([how many hands](../knowing.md#hand-depth)) |
 | `thubem blral` *will, by the pattern* ([a forecast](../knowing.md#forecast)) | | `thagem` *I plan to* ([an intention](../intention.md#plan-predict)) |
 | `haram` *still in effect* ([the outcome stays](../knowing.md#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](../knowing.md#phasal)) |
 | `thogom` *I've decided* ([how open the choice is, no time](../intention.md#decision)) | | `thagem` *I plan* ([how worked out, still ahead](../intention.md#plan-predict)) |

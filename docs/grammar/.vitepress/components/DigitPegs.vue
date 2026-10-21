@@ -63,7 +63,7 @@ function onInput(event: Event): void {
       <input
         id="digit-pegs-input"
         type="search"
-        placeholder="2381, 555-1234, zudozol dabedol…"
+        placeholder="2371, 555-1234, zudozol dabedol…"
         autocomplete="off"
         spellcheck="false"
         @input="onInput"

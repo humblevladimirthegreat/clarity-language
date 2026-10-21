@@ -23,11 +23,11 @@ Each spoken digit starts with its own consonant ([counts](./numbers.md#counts)):
 | `b` | 1 | index |
 | `d` | 2 | index + middle (V) |
 | `g` | 3 | index + middle + ring |
-| `v` | 4 | four fingers, thumb tucked (flat hand) |
+| `h` | 4 | four fingers, thumb tucked (flat hand) |
 | `z` | 5 | thumb alone |
-| `h` | 6 | thumb + index (L) |
-| `l` | 7 | thumb + index + middle |
-| `r` | 8 | thumb + index + middle + ring |
+| `v` | 6 | thumb + index (L) |
+| `r` | 7 | thumb + index + middle |
+| `l` | 8 | thumb + index + middle + ring |
 | `n` | 9 | open hand |
 | `m` | 0 | index + pinky (horns) |
 
@@ -57,7 +57,7 @@ The chart in [Try it](#try-it) draws every shape in a sentence.
 
 Your dominant hand shows consonants and your other hand shows vowels. The consonant hand does more work (fourteen shapes, some of them hooked), so it gets your stronger hand. Neither hand moves around; each letter is only a change of fingers.
 
-The consonant hand counts from the index and the vowel hand from the pinky, so index alone is only `b`, and pinky alone is only `a`. The consonant hand never uses pinky alone or middle + ring + pinky, which would look like vowels. The one shape on both hands is four fingers: `u` on the vowel hand and `v` on the consonant hand. So that a viewer can tell the hands apart, hold both palms toward the viewer, with the consonant hand's fingers pointing up and the vowel hand's fingers pointing sideways, toward the other hand. A left-handed signer's layout is the mirror image of a right-handed one; either way, the sideways fingers mark the vowel hand.
+The consonant hand counts from the index and the vowel hand from the pinky, so index alone is only `b`, and pinky alone is only `a`. The consonant hand never uses pinky alone or middle + ring + pinky, which would look like vowels. The one shape on both hands is four fingers: `u` on the vowel hand and `h` on the consonant hand. So that a viewer can tell the hands apart, hold both palms toward the viewer, with the consonant hand's fingers pointing up and the vowel hand's fingers pointing sideways, toward the other hand. A left-handed signer's layout is the mirror image of a right-handed one; either way, the sideways fingers mark the vowel hand.
 
 [Try it](#try-it) shows both hands in this layout.
 
@@ -82,7 +82,7 @@ For example, `thohom` (*if*) is three beats:
 | Beat | Consonant hand | Vowel hand |
 |------|----------------|------------|
 | 1 (stronger) | `th`: index + middle + ring, hooked | `o`: pinky + ring |
-| 2 | `h`: thumb + index | `o`: pinky + ring |
+| 2 | `h`: four fingers, thumb tucked | `o`: pinky + ring |
 | 3, held | `m`: horns | fist |
 
 Play any sentence in [Try it](#try-it) to see its beats.
@@ -135,12 +135,12 @@ Pressing a whole run would sound as a blur of neighboring notes that is hard to 
 
 | Hand | Thumb (1) | 2 | 3 | 4 | Pinky (5) |
 |------|-----------|---|---|---|-----------|
-| Right (consonants) | F♯5 `z` | G♯5 `b` | A♯5 `d` | C♯6 `g` | D♯6 `v` |
+| Right (consonants) | F♯5 `z` | G♯5 `b` | A♯5 `d` | C♯6 `g` | D♯6 `h` |
 | Left (vowels) | C♯4 hook mark | A♯3 `u` | G♯3 `e` | F♯3 `o` | D♯3 `a` |
 
-The other digit letters combine the thumb with a run's last finger: `l` is thumb + 3, `r` thumb + 4, `n` thumb + 5, and `m` is 2 + 5.
+The other digit letters combine the thumb with a run's last finger: `r` is thumb + 3, `l` thumb + 4, `n` thumb + 5, and `m` is 2 + 5.
 
-A key cannot be hooked, so the left thumb is the hook mark: a hooked letter is its straight letter plus the left thumb. `w` is `b` + hook, `y` is `d` + hook, `th` is `g` + hook, and `x` is `v` + hook. Neighboring fingers would strike neighboring keys, which sound harsh together, so `h` (thumb + index) is the one letter you learn separately: on piano it is `z` + hook.
+A key cannot be hooked, so the left thumb is the hook mark: a hooked letter is its straight letter plus the left thumb. `w` is `b` + hook, `y` is `d` + hook, `th` is `g` + hook, and `x` is `h` + hook. Neighboring fingers would strike neighboring keys, which sound harsh together, so `v` (thumb + index) is the one letter you learn separately: on piano it is `z` + hook.
 
 Play detached and without pedal, so each key comes up at the end of its beat. A held letter keeps its keys down for one beat. Leave a one-beat rest after each word and two more at the end of a sentence.
 
@@ -157,11 +157,11 @@ The picking hand plays consonants on the four open treble strings, which the fre
 | `b` | G |
 | `d` | B |
 | `g` | high D |
-| `v` | G + B + high D (all three fingers) |
+| `h` | G + B + high D (all three fingers) |
 | `z` | low D |
-| `h` | low D + G |
-| `l` | low D + B |
-| `r` | low D + high D |
+| `v` | low D + G |
+| `r` | low D + B |
+| `l` | low D + high D |
 | `n` | all four |
 | `m` | G + high D (the two outer fingers) |
 

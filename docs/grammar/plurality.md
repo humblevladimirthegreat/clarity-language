@@ -366,13 +366,13 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 
 **Counts with a set subject:** when a set subject has a counted object, a singular verb gives the count to **each member** (*apiece*). Verb **-x** makes the count the **total** for the shared act.
 
-> `zuzozen zolazun zal vawebol dagozolx gragol.`
+> `zuzozen zolazun zal vawebol dagozolx gragel.`
 >
 > [z-Uzozen | z-Olazun | z-and] | v-see | [d-cat-x | g-three]
 >
 > "Uzozen and Olazun each see three cats."
 
-> `zuzozen zolazun zal vawebolx dagozolx gragol.`
+> `zuzozen zolazun zal vawebolx dagozolx gragel.`
 >
 > [z-Uzozen | z-Olazun | z-and] | v-see-x | [d-cat-x | g-three]
 >
@@ -446,7 +446,7 @@ Beginner already used **-x** on nouns and person-role specials. The rest of the 
 | `/ɡ/`…**-x** | collective property | the set as one pile |
 | inner words of a non-opaque span | group reference inside the span | **-x** on those inner words |
 
-**Related form:** a count uses a [number](numbers.md) on `/ɡ/` (digitless **`gral`** = more than one; `gragol` = three). **-x** and a count can combine (`zagozolx gragol`).
+**Related form:** a count uses a [number](numbers.md) on `/ɡ/` (digitless **`gral`** = more than one; `gragel` = three). **-x** and a count can combine (`zagozolx gragel`).
 
 ### Practice {#intermediate-practice}
 
@@ -513,7 +513,7 @@ y-listener-x
 **5.** *Uzozen and Olazun see three pages between them.*
 
 ::: details Show answer
-`zuzozen zolazun zal vawebolx debonelx gragol.`
+`zuzozen zolazun zal vawebolx debonelx gragel.`
 
 [z-Uzozen | z-Olazun | z-and] | v-see-x | [d-page-x | g-three]
 :::
@@ -536,7 +536,7 @@ z-family | v-sing-x
 *The family sings as one unit.*
 :::
 
-**2.** `zolazun zahelan zal vawebol dehorelx gradal.`
+**2.** `zolazun zahelan zal vawebol dehorelx gradol.`
 
 ::: details Show answer
 [z-Olazun | z-Ahelan | z-and] | v-see | [d-sheet-music-x | g-two]

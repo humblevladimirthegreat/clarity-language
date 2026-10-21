@@ -158,7 +158,7 @@ A parenthetical comment span (`th(…)` on the sentence; `g(…)`, `w(…)`, or 
 
 ### Bare OoM
 
-Digitless exponent naming a magnitude band (`grawamal`, `grawagol`).
+Digitless exponent naming a magnitude band (`grawamol`, `grawagel`).
 
 [Numbers](numbers.md#bare-oom-bands)
 

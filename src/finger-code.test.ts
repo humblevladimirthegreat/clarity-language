@@ -3,6 +3,7 @@ import { describe, it } from "node:test";
 
 import {
   CONSONANT_LETTERS,
+  DIGIT_LETTERS,
   fingerCodeScore,
   GUITAR_CONSONANTS,
   GUITAR_SPARE,
@@ -24,11 +25,11 @@ describe("finger code", () => {
       b: "2",
       d: "2+3",
       g: "2+3+4",
-      v: "2+3+4+5",
+      h: "2+3+4+5",
       z: "1",
-      h: "1+2",
-      l: "1+2+3",
-      r: "1+2+3+4",
+      v: "1+2",
+      r: "1+2+3",
+      l: "1+2+3+4",
       n: "1+2+3+4+5",
       m: "2+5",
       w: "2 hooked",
@@ -54,11 +55,11 @@ describe("finger code", () => {
       b: "2",
       d: "3",
       g: "4",
-      v: "5",
+      h: "5",
       z: "1",
-      h: "1 hook",
-      l: "1+3",
-      r: "1+4",
+      v: "1 hook",
+      r: "1+3",
+      l: "1+4",
       n: "1+5",
       m: "2+5",
       w: "2 hook",
@@ -101,6 +102,10 @@ describe("finger code", () => {
     const strings = new Set([...Object.values(GUITAR_CONSONANTS).map((c) => c.strings.join("+")), GUITAR_SPARE.join("+")]);
     assert.equal(strings.size, CONSONANT_LETTERS.length + 1);
     assert.deepEqual(Object.keys(GUITAR_CONSONANTS).sort(), [...CONSONANT_LETTERS].sort());
+  });
+
+  it("plays each digit letter's count on guitar", () => {
+    DIGIT_LETTERS.forEach((letter, i) => assert.ok(GUITAR_CONSONANTS[letter]!.why.startsWith(`${(i + 1) % 10}:`), letter));
   });
 
   it("splits text into beats, codas, and rests", () => {

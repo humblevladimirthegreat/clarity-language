@@ -29,8 +29,8 @@ Source: [numbers.md](../grammar/numbers.md), [numeric-derivation.md](../grammar/
 
 ### `w` + `o` / `e` in a number body
 
-- **open:** `wo` after the marker or between digits. The exponent sign is `wa` / `wu`, and no job has asked for a third filler.
-- **closed (D-52):** `we` in a number body. It is a hard confusion pair with digit 4 `ve` and digit 8 `re`.
+- **closed (D-52):** `wo` in a number body. It is a hard confusion pair with digit 6 `vo`.
+- **closed (D-52):** `we` in a number body. It is a hard confusion pair with digit 7 `re`.
 
 ### Mantissa `0` + named exp `0` (`…0e0`)
 
@@ -69,11 +69,11 @@ A label is a code, not an amount, so it has no magnitude for an exponent to scal
 
 ### Number markers on `/w/`, `/th/`, and stacks
 
-- **open:** **`w+N`**, **`w-N`**, **`w_N`** (a count or fraction on `/w/`). Not guessable: before an adjective a count could be a ratio (*twice as big*) or a difference (*bigger by two*). A factor is `hradal` / `hrudal` on `/h/` ([factor](../grammar/comparatives.md#factor)).
+- **open:** **`w+N`**, **`w-N`**, **`w_N`** (a count or fraction on `/w/`). Not guessable: before an adjective a count could be a ratio (*twice as big*) or a difference (*bigger by two*). A factor is `hradol` / `hrudol` on `/h/` ([factor](../grammar/comparatives.md#factor)).
 - **open:** **`w#-N`**, **`w#1`**, and `w#N` outside a single-name `zel` / `zuel` frame. No learner reaches for them: English never says *the first biggest* (first place is the plain superlative) or counts a scale *from the end* (*second smallest* is `zuel` + `w#2`), and `w#N` needs one name before the fence to rank within.
 - **closed (D-38):** **`th#1`** as *first-hand*.
-- **closed (D-41):** **`th#N`** in a clause with LIVE or MEMORY (`thugom thredal`).
-- **open:** **`th#N`** after INTUITION (`thabom thredal`). A gut sense is your own, and no learner has a *second-hand gut feeling* to say.
+- **closed (D-41):** **`th#N`** in a clause with LIVE or MEMORY (`thugom thredol`).
+- **open:** **`th#N`** after INTUITION (`thabom thredol`). A gut sense is your own, and no learner has a *second-hand gut feeling* to say.
 - **open:** **`th-N`**, **`th#-N`**, and digitless non-blank **`th#`**. A minus on a likelihood (`th-30`: *30% unlikely*, or *30 points less likely*?) and an end-relative count of tellers have no guessable reading; digitless **`th#`** would say only *passed on to me*, with no depth, and no job has asked for that.
 - **open:** marker stacks **`rao`** (`+_`) and **`rae`** (`+#`). No reading composes: labels carry no sign, and a count and a rank are separate markers on separate words.
 
@@ -239,7 +239,7 @@ Source: [speech-moves.md](../grammar/speech-moves.md#speech-act), [describing a 
 - **closed (D-43):** a `/b/` hosted by a call or reaction; `yohumal buzozen` is a reaction and then a body with a recipient.
 - **open:** `/w/` on a call (`welazom yolazun`). The person called is not more or less called. Parser: `turnWordModifier`.
 - **open:** `/w/` on an act word or a polar word (`welazom yel`). Firm / soft already grades the act, and the polar stance has its own strengths. The parser rejects them.
-- **open:** `gl-`, `/ɡ/`, or `/w/` on a number cheer or a `/y/` span (`yrawagol gelazom`, `y<…> gelazom`). A number cheer already carries its own size, and a span's inside is not graded. Parser: `turnWordModifier`.
+- **open:** `gl-`, `/ɡ/`, or `/w/` on a number cheer or a `/y/` span (`yrawagel gelazom`, `y<…> gelazom`). A number cheer already carries its own size, and a span's inside is not graded. Parser: `turnWordModifier`.
 - **open:** a mention or an aside under `/y/` (`ySpanType`). A mention talks about a word and an aside comments on the sentence, so neither calls nor reacts.
 
 ## Spans

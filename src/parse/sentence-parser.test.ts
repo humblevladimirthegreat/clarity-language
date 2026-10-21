@@ -76,8 +76,8 @@ describe("sentence-parser synthetic", () => {
       const unit = parseSentenceTokens(tokens(text)).utterances[0]!.bodies[0]!.clause.units[0]!;
       return unit.kind === "np" ? unit.coord.parts.find((p) => p.join)?.factor?.raw : undefined;
     };
-    assert.equal(factorOf("zuzozen zolazun zoel gelazom hradal."), "hradal");
-    assert.equal(factorOf("zuzozen zolazun zel gelazom hradal."), undefined);
+    assert.equal(factorOf("zuzozen zolazun zoel gelazom hradol."), "hradol");
+    assert.equal(factorOf("zuzozen zolazun zel gelazom hradol."), undefined);
     assert.equal(factorOf("zuzozen zolazun zoel gelazom hral."), undefined);
   });
 
@@ -109,11 +109,11 @@ describe("sentence-parser synthetic", () => {
 
   it("lets a kin number on an /h/ host's landmark host its own /b/, but keeps a count as the amount", () => {
     const last = (text: string) => parseSentenceTokens(tokens(text)).utterances[0]!.bodies[0]!.clause.units.at(-1)!;
-    const kin = last("zuzozen vowurel han bleyol grewubul blawan.");
+    const kin = last("zuzozen vowurel han bleyol grewubal blawan.");
     assert.equal(kin.kind === "h" ? kin.unit.hosted?.amount : "not h", undefined);
     assert.equal(kin.kind === "h" ? kin.unit.hosted?.adjs?.[0]?.hosted?.bound.raw : undefined, "blawan");
-    const offset = last("zuzozen vowurel halam bluzurem grabul.");
-    assert.equal(offset.kind === "h" ? offset.unit.hosted?.amount?.raw : undefined, "grabul");
+    const offset = last("zuzozen vowurel halam bluzurem grabal.");
+    assert.equal(offset.kind === "h" ? offset.unit.hosted?.amount?.raw : undefined, "grabal");
   });
 
   it("puts a /ɡ/ after a SHARED relation's /b/ on that landmark", () => {
@@ -143,10 +143,10 @@ describe("sentence-parser synthetic", () => {
   });
 
   it("reads a signed measure on a time pole with no channel", () => {
-    const units = parseSentenceTokens(tokens("yel zawan vuhamum harum bluzurem grabul.")).utterances[0]!.bodies[0]!.clause.units;
+    const units = parseSentenceTokens(tokens("yel zawan vuhamum harum bluzurem grabal.")).utterances[0]!.bodies[0]!.clause.units;
     const pole = units.at(-1)!;
     assert.equal(pole.kind === "h" ? pole.unit.word.raw : undefined, "harum");
-    assert.equal(pole.kind === "h" ? pole.unit.hosted?.amount?.raw : undefined, "grabul");
+    assert.equal(pole.kind === "h" ? pole.unit.hosted?.amount?.raw : undefined, "grabal");
   });
 
   it("reads a command with only a /ɡ/ body", () => {

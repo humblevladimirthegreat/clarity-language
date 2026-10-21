@@ -19,8 +19,8 @@ describe("digit pegs", () => {
 
   it("reads onsets as digits and skips vowels and fillers", () => {
     assert.equal(rootPayload("abedo"), "12");
-    assert.equal(rootPayload("erowo"), "8");
-    assert.equal(rootPayload("oholebora"), "6718");
+    assert.equal(rootPayload("erowo"), "7");
+    assert.equal(rootPayload("oholebora"), "4817");
     assert.equal(rootPayload("oyayu"), "");
   });
 
@@ -40,7 +40,7 @@ describe("digit pegs", () => {
     assert.deepEqual(chunkDigits("555,123,4567"), ["55", "5", "12", "3", "45", "67"]);
     assert.ok(isDigitInput("555-1234"));
     assert.ok(!isDigitInput("zudozol"));
-    assert.ok(suggestPegs("81", bank)[0]!.pegs.some((peg) => peg.root === "orebo"));
+    assert.ok(suggestPegs("71", bank)[0]!.pegs.some((peg) => peg.root === "orebo"));
   });
 
   it("reads a word's root whatever its role letter, ending or coda", () => {
@@ -49,16 +49,16 @@ describe("digit pegs", () => {
     }
     assert.deepEqual(
       digitsOf("zudozol dabedol varuvel").map((word) => ("digits" in word ? word.digits : "")),
-      ["25", "12", "84"],
+      ["25", "12", "76"],
     );
   });
 
   it("counts a dictionary compound's join letter and reads x compounds left to right", () => {
-    assert.equal((digitsOf("zoholeboral")[0] as { digits: string }).digits, "6718");
+    assert.equal((digitsOf("zoholeboral")[0] as { digits: string }).digits, "4817");
     assert.equal((digitsOf("zudozoxagebol")[0] as { digits: string }).digits, "2531");
   });
 
   it("refuses number words, grammar words and digitless roots", () => {
-    for (const word of ["gragol", "zem", "zoyayul"]) assert.ok("notPeg" in digitsOf(word)[0]!, word);
+    for (const word of ["gragel", "zem", "zoyayul"]) assert.ok("notPeg" in digitsOf(word)[0]!, word);
   });
 });

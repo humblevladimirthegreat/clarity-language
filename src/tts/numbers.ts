@@ -8,7 +8,7 @@ export type NumberSyllables = {
 };
 
 export const NUMBER_SYLLABLES: NumberSyllables = {
-  digits: { "1": "bu", "2": "da", "3": "go", "4": "ve", "5": "zu", "6": "ha", "7": "lo", "8": "re", "9": "nu", "0": "ma" },
+  digits: { "1": "ba", "2": "do", "3": "ge", "4": "hu", "5": "za", "6": "vo", "7": "re", "8": "lu", "9": "na", "0": "mo" },
   plus: "wa",
   minus: "wu",
 };
@@ -130,7 +130,7 @@ export function numberStemToSpeechStressed(stem: NumberStem, table = NUMBER_SYLL
   }
 
   if (stem.digitlessExp) {
-    // Spelled-out stems keep leading mantissa digits in groups (`gramawal`: ma + wa).
+    // Spelled-out stems keep leading mantissa digits in groups (`gramowal`: mo + wa).
     for (const group of stem.groups) text += groupToSpeech(group, table);
     const exp = digitlessExpToSpeech(stem.digitlessExp, table);
     const at = digitlessExpStress(stem.digitlessExp);

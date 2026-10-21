@@ -1,6 +1,6 @@
 # Proposal: vowel pitch, scale digits, stack order u o a e, rhythm for sentence edges
 
-**Status:** phase 1 **shipped** (2026-10-21: vowel pitch, rhythm and stress, finger-code vowels, piano cues and practice widget); phases 2 and 3 **proposed** (not current language).  
+**Status:** phase 1 **shipped** (2026-10-21: vowel pitch, rhythm and stress, finger-code vowels, piano cues and practice widget); phase 2 **shipped** (2026-10-21: scale digits and letter names); phase 3 **proposed** (not current language).  
 **Related:** [phonology.md § vowels](../../grammar/phonology.md#vowels), [§ opposite vowels](../../grammar/phonology.md#opposite-vowels), [§ letter names](../../grammar/phonology.md#letter-names), [§ rhythm and stress](../../grammar/phonology.md#rhythm-and-stress), [§ speech edges](../../grammar/phonology.md#speech-edges), [§ singing](../../grammar/phonology.md#singability-constraints); [dependents.md § periods](../../grammar/dependents.md#orthography-and-prosody-periods); [spans.md § scope islands](../../grammar/spans.md#scope-islands); [numbers.md § counts](../../grammar/numbers.md#counts); [pegs.md](../../grammar/pegs.md); [finger-code.md](../../grammar/finger-code.md); [speech-moves.md § tone marks](../../grammar/speech-moves.md#tone-marks); [questions.md § polar stance](../../grammar/questions.md); [design-decisions.md](../../meta/design-decisions.md) (stacked vowels, digit syllables); [unassigned-reserved.md](../../meta/unassigned-reserved.md).  
 **Design authority:** none until absorbed.
 

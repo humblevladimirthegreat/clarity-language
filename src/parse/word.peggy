@@ -1,7 +1,7 @@
 {{
   const SPEECH_DIGITS = {
-    bu: "1", da: "2", go: "3", ve: "4", zu: "5",
-    ha: "6", lo: "7", re: "8", nu: "9", ma: "0",
+    ba: "1", do: "2", ge: "3", hu: "4", za: "5",
+    vo: "6", re: "7", lu: "8", na: "9", mo: "0",
   };
 
   // Role + ability (`gaxedegexal` *fit to be a teacher*) is classification only: `/ɡ/`.
@@ -78,7 +78,7 @@
   }
 
   // Spoken group separator `th` + first vowel of the spoken marker (numbers.md § Saying it aloud).
-  // Mantissa 0 / 1 + bare wa / wu is one digitless-exp stem (`buwa` = `1e`), matching writing `g+1e`.
+  // Mantissa 0 / 1 + bare wa / wu is one digitless-exp stem (`bawa` = `1e`), matching writing `g+1e`.
 function foldDigitlessTail(stem, digitless) {
   const only = stem.groups.length === 1 ? stem.groups[0] : null;
   if (only && Object.keys(only).length === 1 && (only.mantissa === "0" || only.mantissa === "1") && (digitless === "e" || digitless === "e-")) {
@@ -87,7 +87,7 @@ function foldDigitlessTail(stem, digitless) {
   } else stem.digitlessExp = digitless;
 }
 
-// A lone exponent group is the writing's digitless-exp body (`rawago` = `+e3`, `rawubuyama` = `+0e-1`).
+// A lone exponent group is the writing's digitless-exp body (`rawage` = `+e3`, `rawubayamo` = `+0e-1`).
 function foldBareExponent(stem) {
   const only = stem.groups.length === 1 ? stem.groups[0] : null;
   if (!only || !only.exponentSign || only.exponentDigits === undefined || only.percent || only.decimal) return;
@@ -500,14 +500,14 @@ SpeechDigitSeq
   = syll:SpeechDigitSyllable+ { return syll.join(""); }
 
 SpeechDigitSyllable
-  = "bu" / "da" / "go" / "ve" / "zu" / "ha" / "lo" / "re" / "nu" / "ma"
+  = "ba" / "do" / "ge" / "hu" / "za" / "vo" / "re" / "lu" / "na" / "mo"
 
 // After the marker: wa/wu alone, or mantissa 0/1 + wa/wu (zero×exp / hyperbole)
 SpeechDigitlessTail
-  = "mawa" { return "0e"; }
-  / "mawu" { return "0e-"; }
-  / "buwa" { return "1e"; }
-  / "buwu" { return "1e-"; }
+  = "mowa" { return "0e"; }
+  / "mowu" { return "0e-"; }
+  / "bawa" { return "1e"; }
+  / "bawu" { return "1e-"; }
   / "wa" { return "e"; }
   / "wu" { return "e-"; }
 
