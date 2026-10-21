@@ -46,6 +46,7 @@ export default defineConfig({
         '@cmu-lookup': `${srcDir}/cmu-lookup.ts`,
         '@digit-pegs': `${srcDir}/digit-pegs.ts`,
         '@finger-code': `${srcDir}/finger-code.ts`,
+        '@game-browser': `${srcDir}/game/index.ts`,
         '@name-respell': `${srcDir}/name-respell.ts`,
         '@parse-browser': `${srcDir}/parse/browser.ts`,
         '@tts-browser': `${srcDir}/tts/browser.ts`,

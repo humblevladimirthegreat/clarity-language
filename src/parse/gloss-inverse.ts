@@ -67,19 +67,20 @@ function glossOne(surface: string, tables: ClassifyTables, ctx: MorphGlossContex
 /** Every content root × role letter × **-l/-m/-n**, and every closed join / hook form. */
 export function buildGlossIndex(tables: ClassifyTables, extraLines: string[] = []): GlossIndex {
   const index: GlossIndex = { forms: new Map(), roots: new Map() };
-  const roots = new Set<string>([...tables.published.keys(), ...tables.compounds.keys()]);
-  for (const root of roots) {
-    for (const ending of ENDINGS) {
-      for (const prefix of [...POS, "gl", ""]) {
-        const surface = `${prefix}${root}${ending}`;
-        const gloss = glossOne(surface, tables, {});
-        if (!gloss) continue;
-        add(index.forms, gloss, surface);
-        const body = gloss.replace(/^(?:th|gl|[zdbvgwhxy])-/, "");
-        add(index.roots, body, root);
-      }
-    }
-  }
+  for (const root of new Set<string>([...tables.published.keys(), ...tables.compounds.keys()])) indexRootForms(index, root, tables);
+  indexSeriesForms(index, tables);
+  indexLineForms(index, extraLines, tables);
+  return index;
+}
+
+/** Only the closed join / hook forms: callers that spell a few roots add them with {@link indexRootForms}. */
+export function seriesGlossIndex(tables: ClassifyTables): GlossIndex {
+  const index: GlossIndex = { forms: new Map(), roots: new Map() };
+  indexSeriesForms(index, tables);
+  return index;
+}
+
+function indexSeriesForms(index: GlossIndex, tables: ClassifyTables): void {
   for (const series of SERIES) {
     for (const ending of JOIN_ENDINGS) {
       for (const prefix of [...POS, ""]) {
@@ -91,7 +92,25 @@ export function buildGlossIndex(tables: ClassifyTables, extraLines: string[] = [
       }
     }
   }
-  for (const line of extraLines) {
+}
+
+/** One content root under each role letter and **-l/-m/-n**. */
+export function indexRootForms(index: GlossIndex, root: string, tables: ClassifyTables): void {
+  for (const ending of ENDINGS) {
+    for (const prefix of [...POS, "gl", ""]) {
+      const surface = `${prefix}${root}${ending}`;
+      const gloss = glossOne(surface, tables, {});
+      if (!gloss) continue;
+      add(index.forms, gloss, surface);
+      const body = gloss.replace(/^(?:th|gl|[zdbvgwhxy])-/, "");
+      add(index.roots, body, root);
+    }
+  }
+}
+
+/** Open-ended forms (numbers, mid-word `x`) as whole Agebon lines use them. */
+export function indexLineForms(index: GlossIndex, lines: readonly string[], tables: ClassifyTables): void {
+  for (const line of lines) {
     try {
       for (const { raw, gloss } of morphGlossWords(line, tables)) {
         if (!gloss.includes("[") && !raw.includes("[")) add(index.forms, gloss, raw);
@@ -100,7 +119,6 @@ export function buildGlossIndex(tables: ClassifyTables, extraLines: string[] = [
       // Unparseable doc lines contribute nothing.
     }
   }
-  return index;
 }
 
 /** Context-free label collisions: one gloss for several content forms (glosses.md § Round trip). */

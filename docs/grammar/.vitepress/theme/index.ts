@@ -1,3 +1,4 @@
+import { defineAsyncComponent } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './custom.css'
@@ -33,5 +34,7 @@ export default {
     app.component('PrintButton', PrintButton)
     app.component('SelfCode', SelfCode)
     app.component('SelfGloss', SelfGloss)
+    // Only its own page needs the game engine and its data, so it loads as a separate chunk.
+    app.component('WizardSandbox', defineAsyncComponent(() => import('../components/WizardSandbox.vue')))
   },
 } satisfies Theme

@@ -1,6 +1,6 @@
 # Wizard text adventure
 
-Status: idea. Not design authority; fold into grammar / meta docs, then drop. A solo browser game for learning Agebon vocabulary and grammar. No LLM: the parser, a hand-written rule engine, and authored dialogue do all the work.
+Status: milestone 1 (the sandbox) implemented; milestones 2–4 proposed. Not design authority; fold into grammar / meta docs, then drop. A solo browser game for learning Agebon vocabulary and grammar. No LLM: the parser, a hand-written rule engine, and authored dialogue do all the work.
 
 ## Problem
 
@@ -37,15 +37,15 @@ The engine both **reads and writes Agebon**. It parses what the player types, an
 
 - **Built-in spaced repetition** with FSRS (the scheduler modern Anki uses, through `ts-fsrs`). Items are roots and constructions; scene objects, character lines and errands are chosen to bring back what is due. Vocabulary is never local to one area.
 - **Graded from play, not quizzes:** used correctly with no lookup is *good*, needed a recast is *hard*, tapped for a gloss is *again*.
-- **Item keys** are the stable note ids [`flashcards.ts`](../../src/flashcards.ts) already generates for roots, and construction ids for grammar, so game state and the Anki deck can sync later. Checkpoints are static pages with no learner state, so there is nothing to share with yet. State lives in browser storage, with export and import.
-- **Chunks first.** Greetings, thanks, apologies and turn-taking ([speech moves](../grammar/speech-moves.md)) arrive as fixed social moves before the grammar behind them is taught. This also carries the gratitude theme.
+- **Item keys** are the stable note ids [`flashcards.ts`](../../../src/flashcards.ts) already generates for roots, and construction ids for grammar, so game state and the Anki deck can sync later. Checkpoints are static pages with no learner state, so there is nothing to share with yet. State lives in browser storage, with export and import.
+- **Chunks first.** Greetings, thanks, apologies and turn-taking ([speech moves](../../grammar/speech-moves.md)) arrive as fixed social moves before the grammar behind them is taught. This also carries the gratitude theme.
 
 **Fading scaffolds.** Typing support starts with a word bank and sentence frames, moves to autocomplete from the spellbook, and ends with free typing. Like the English helper, it never writes the whole sentence.
 
 **Transfer out of the game.**
 
 - A **journal** keeps the player's own sentences, each with its gloss and a link to the grammar section behind it. The game may link into the grammar; grammar pages never link to the game ([placement](#placement)).
-- Areas follow the [cross-doc path](../meta/learning-levels.md#cross-doc-path). Each area can close with an in-world challenge covering the same ground as its [level review](../grammar/review.md).
+- Areas follow the [cross-doc path](../../meta/learning-levels.md#cross-doc-path). Each area can close with an in-world challenge covering the same ground as its [level review](../../grammar/review.md).
 - The psychological themes appear in ordinary exchanges, not only in special puzzles: characters mark how they know things (seen vs. heard), and the player weighs it; gratitude and consent come up in everyday dealings.
 
 ### World structure
@@ -63,18 +63,50 @@ A fully closed world runs out of practice and recycles badly; a fully generative
 ### Plot: a hub with a light main thread
 
 - **The first area is a school of wizardry**, in two wings with a main quest each. Its vocabulary is not chosen but read from the `core` column, and that set already reads as a school (school, book, bell, eraser, magnify, chair, guard, eye, speech, money, think, run, …).
-  - **First wing** (cross-doc path through [dependents](../grammar/dependents.md#beginner)): the player acts by **calling and commanding** things, creatures and people ([call](../grammar/speech-moves.md#vocative), [speech act](../grammar/speech-moves.md#speech-act-beginner)), and asks yes/no questions. Characters talk about each other by name. The wizard ordering a door to open is where the game feels most like magic. Commands before *I* and *you* matches the path, where pronouns come later; that order is intended.
-  - **Second wing** (through [pronouns](../grammar/pronouns.md#beginner) and [plurality](../grammar/plurality.md#beginner)): *I* and *you* arrive with [special pronouns](../grammar/pronouns.md#special-pronouns), and real conversation opens up, along with groups and counting. Their checkpoints add a few food roots (cookie, sandwich, drink, basket) that suit a school canteen and lead into the village.
-- **A village hub** opens after the school, once food roots arrive with [joins](../grammar/joins.md#beginner) and [numbers](../grammar/numbers.md#beginner). Its recurring characters' relationships with the player change, and they recycle vocabulary naturally: the baker always talks about bread, prices and thanks.
+  - **First wing** (cross-doc path through [dependents](../../grammar/dependents.md#beginner)): the player acts by **calling and commanding** things, creatures and people ([call](../../grammar/speech-moves.md#vocative), [speech act](../../grammar/speech-moves.md#speech-act-beginner)), and asks yes/no questions. Characters talk about each other by name. The wizard ordering a door to open is where the game feels most like magic. Commands before *I* and *you* matches the path, where pronouns come later; that order is intended.
+  - **Second wing** (through [pronouns](../../grammar/pronouns.md#beginner) and [plurality](../../grammar/plurality.md#beginner)): *I* and *you* arrive with [special pronouns](../../grammar/pronouns.md#special-pronouns), and real conversation opens up, along with groups and counting. Their checkpoints add a few food roots (cookie, sandwich, drink, basket) that suit a school canteen and lead into the village.
+- **A village hub** opens after the school, once food roots arrive with [joins](../../grammar/joins.md#beginner) and [numbers](../../grammar/numbers.md#beginner). Its recurring characters' relationships with the player change, and they recycle vocabulary naturally: the baker always talks about bread, prices and thanks.
 - **One main quest per area.** Areas open in grammar-stage order, so the main thread enforces the learning path without a fixed linear story.
 - **Free exploration within an area**, with optional quests (often generated errands) for review and extra practice.
 - **Optional content is never required.** The main path assumes only what the main path taught.
+
+### Companions {#companions}
+
+A relationship subsystem, borrowed from dating and friendship sims, for the village's recurring characters. A few characters can become companions (a friendship, a partnership, or a romance, whichever the player and the character choose). It opens with [sakes](../../grammar/sakes.md#intermediate), when feelings, thanks and consent can be said.
+
+**Attunement, not winning someone over.** The usual genre loop (find the right line to unlock affection) would turn characters into puzzles to beat, which goes against the language's purpose. Here a relationship deepens when the player understands the character and is honest with them:
+
+| Player move | Grammar | Effect |
+|-------------|---------|--------|
+| Asks what the character feels or wants, instead of assuming | [Fill questions](../../grammar/questions.md#intermediate), [whose stake](../../grammar/sakes.md#whose-stake) | Opens what the character is holding back, an information gap about a person |
+| Says how they know something about the character (*I saw* vs. *I heard*) | [Evidentiality](../../grammar/knowing.md#evidentiality) | Rumor stated as fact cools the character; marked hearsay invites a correction |
+| Asks before acting on or for the character | [Permission](../../grammar/sakes.md#permission), [consent](../../grammar/sakes.md#consent) | The next step happens only with consent; a *no* is final for that scene and costs the player nothing if it is accepted |
+| Thanks or apologizes specifically | [Thanks and sorry](../../grammar/sakes.md#thanks-sorry) | Specific thanks for a named act counts; a bare greeting chunk does not |
+| Names a feeling with its object | [Emotion compose](../../grammar/sakes.md#emotion-compose) | Characters answer in kind, which is input for the same forms |
+
+- **Characters have their own sakes and limits** drawn from the [sake inventory](../../grammar/sakes.md#sake-inventory). What a character wants is authored; what they reveal depends on being asked well.
+- **Relationship state is not a score the player sees.** Characters show it in what they say and do: what they share, whether they seek the player out, how they speak to them.
+- **Pressure never works.** Repeating a request after a *no*, or a command where a request was needed, has no effect except the character saying so. No dialogue path rewards pushing past a refusal.
+- **Endings are mutual.** A character may prefer friendship to romance, or may not want to become closer at all, and the game treats that as a complete outcome rather than a failure.
+- **Errands come from companions.** A companion's needs make generated errands personal (the baker's sister is ill; ask what would help), so practice and story share content.
+
+### Mysteries {#mysteries}
+
+A detective subsystem for the language's bias-awareness theme: the player works out what happened from what witnesses say, and the skill is knowing how each witness knows. It opens with [evidentiality](../../grammar/knowing.md#evidentiality), and causal accusations wait for [causation](../../grammar/causation.md#intermediate).
+
+- **Witnesses mark their source.** Every claim carries how the witness knows it ([evidentiality](../../grammar/knowing.md#evidentiality), [evidence strength](../../grammar/knowing.md#evidence-strength), [second-hand and further](../../grammar/knowing.md#hand-depth)). A confident witness who only heard it is the classic trap.
+- **Interviews are information gaps.** The player asks [who, where, when and why](../../grammar/questions.md#intermediate), and can ask a witness for their [source](../../grammar/knowing.md#source). Two witnesses may each hold half of a fact.
+- **Biased witnesses.** Some witnesses have a stake in the outcome (their [sakes](../../grammar/sakes.md#whose-stake)), and the case gives the player a way to find that out. Learning that a witness has a reason to blame someone, without assuming they are lying, is the lesson.
+- **Accusations are sentences.** To close a case the player states what caused what, with [*because*](../../grammar/causation.md#only-because) and [fault](../../grammar/causation.md#fault), and marks how they know it. The engine checks the claim against the case's hidden facts. A true claim stated with too much certainty from weak evidence is accepted, but a character points out the overreach.
+- **Wrong accusations cost story, not grammar.** An accused innocent is hurt and says so, and the case continues; the player apologizes and keeps going. This keeps the [no penalty for language errors](#learning-principles) rule: the cost is for a wrong judgment, not a wrong sentence.
+- **Generated cases.** A case is a small hidden event graph (who did what, who saw, heard or inferred which part), and witnesses' lines come from it through the same generator as narration. Authored cases carry the main thread; generated ones are errands that review what is due.
+- **The journal holds the evidence**, each claim with its witness and source marking, so the player reasons from a record rather than memory.
 
 ### Turns {#turns}
 
 Each line the player types goes through three steps:
 
-1. **Parse.** [`src/parse/browser.ts`](../../src/parse/browser.ts) already runs the parser in the browser (the Inspect page uses it). A sentence that does not parse gets a [recast](#recasts) when a near form exists, and otherwise a short in-world sign of confusion; the parser's error card is one tap away.
+1. **Parse.** [`src/parse/browser.ts`](../../../src/parse/browser.ts) already runs the parser in the browser (the Inspect page uses it). A sentence that does not parse gets a [recast](#recasts) when a near form exists, and otherwise a short in-world sign of confusion; the parser's error card is one tap away.
 2. **Resolve.** The engine walks the tree. Role letters give it exact slots (who acts, what is acted on, the action, properties), so there is no English-style guessing about the command. Each noun is matched to an object in the scene ([reference](#reference)). A sentence addressed to a character goes to that character's dialogue instead.
 3. **Apply.** The verb's handler changes the world state, or the character answers. The game prints what happened, plus the morph gloss of the player's sentence, so the player sees what they actually said.
 
@@ -89,7 +121,7 @@ Two layers pick the likely meaning of a near-miss:
    | Source | Slips |
    |--------|-------|
    | The docs' own *`X`, not `Y`* contrasts and **Compare with** notes, extracted by script | e.g. `/b/` vs `/d/` after a *for* hook |
-   | [Orthography](../grammar/phonology.md) | `t` for `th`, capitals, a hyphen after the PoS letter |
+   | [Orthography](../../grammar/phonology.md) | `t` for `th`, capitals, a hyphen after the PoS letter |
    | Typed morph gloss (`z-dog v-chase`) | Run through gloss-inverse and recast as Agebon; players will type glosses because the game shows one every turn |
    | Endings | `-l` / `-m` / `-n` swapped |
    | Role letters | Missing, or `/b/` vs `/d/` confused |
@@ -103,8 +135,8 @@ Narration comes from the same structured world events the systemic world and cha
 
 | When | Agebon narration |
 |------|------------------|
-| From [clause Beginner](../grammar/clause.md#beginner) | Events (*the guard sits*, *the bell rings*, *the dog sees the cat*) and descriptions (*the book is red*) |
-| Before location can be said | Scene contents as an emoji-and-citation-noun list, not sentences; *on the table* waits for [hooks](../grammar/hooks.md#beginner) |
+| From [clause Beginner](../../grammar/clause.md#beginner) | Events (*the guard sits*, *the bell rings*, *the dog sees the cat*) and descriptions (*the book is red*) |
+| Before location can be said | Scene contents as an emoji-and-citation-noun list, not sentences; *on the table* waits for [hooks](../../grammar/hooks.md#beginner) |
 | As grammar arrives | Location, groups, *because* and *then* chaining, what characters believe |
 | Last | Authored story beats, which need an author-written gloss and stay English until then |
 
@@ -112,11 +144,11 @@ By the end of the Beginner band nearly every generated line passes the gate, so 
 
 ### Objects from root tails {#objects-from-root-tails}
 
-Every published root records a `kind`, `shape` and `size` ([root tails](../meta/lexicon.md#root-tails)), and its spelling encodes them. The engine reads the columns (not the spelling, since size is only a placement preference) and gives every object default behavior:
+Every published root records a `kind`, `shape` and `size` ([root tails](../../meta/lexicon.md#root-tails)), and its spelling encodes them. The engine reads the columns (not the spelling, since size is only a placement preference) and gives every object default behavior:
 
 | Column | Values | Game default |
 |--------|--------|--------------|
-| `kind` | creature, person, food, tool, nature, place, body, … (letter map in [`src/root-tails.ts`](../../src/root-tails.ts)) | Creatures move and react, people talk, food is eaten, tools are wielded, nature things burn, flow or grow, places are entered |
+| `kind` | creature, person, food, tool, nature, place, body, … (letter map in [`src/root-tails.ts`](../../../src/root-tails.ts)) | Creatures move and react, people talk, food is eaten, tools are wielded, nature things burn, flow or grow, places are entered |
 | `shape` | `holds`, `one`, `order`, `takes-away` | Containers hold things; `takes-away` things cut, hide or harm; `order` things lead somewhere (paths, ladders, stages) |
 | `size` | `small`, `medium`, `big`, `none` | Small things are carried, big things block a way, `none` is a substance or an act with no body |
 
@@ -134,33 +166,33 @@ The first 20 meet three rules: the root is a first-area core root (or a spell ve
 |-------|-----------------------------------|
 | Everyday | see (eye), find (magnify), sit (chair), tell (speech), pay (money), carry (luggage), go (footprints), open (door), run, walk, write, peek, sleep, eat (cutlery), drink, pour |
 | Spells | grow (seedling), burn (the fire root), make / unmake |
-| Three-party | give, built as in the give / get recipe in [`say-people-places.md`](../grammar/say-people-places.md#give-get) |
+| Three-party | give, built as in the give / get recipe in [`say-people-places.md`](../../grammar/say-people-places.md#give-get) |
 
 Give and buy have no root of their own; the first handlers still cover giving, because handing things over is central to mundane play. The turn log picks the handlers after these.
 
 ### Grammar in play
 
-Each grammar feature has an everyday use and, where it fits, a spell use. Areas follow the [cross-doc path](../meta/learning-levels.md#cross-doc-path), so an area never needs grammar the player has not reached.
+Each grammar feature has an everyday use and, where it fits, a spell use. Areas follow the [cross-doc path](../../meta/learning-levels.md#cross-doc-path), so an area never needs grammar the player has not reached.
 
 | Grammar | Everyday use | Spell use |
 |---------|--------------|-----------|
-| Role letters ([clause](../grammar/clause.md)) | Who does what to whom. Changing one letter changes the act; reordering words with the same letters changes nothing. Puzzles test both | |
+| Role letters ([clause](../../grammar/clause.md)) | Who does what to whom. Changing one letter changes the act; reordering words with the same letters changes nothing. Puzzles test both | |
 | Adjectives | Describing and choosing things (*the red cup*) | Enchant: give an object a property |
-| [Questions](../grammar/questions.md) | Asking characters for what they know; answering their questions | Divination: questions the world itself answers truthfully |
-| [Plurality](../grammar/plurality.md) | Counting, buying several, addressing a group | Spells on a whole group at once |
-| [Comparatives](../grammar/comparatives.md) | Haggling, choosing the bigger or cheaper one | Scaling: make something bigger than the door |
+| [Questions](../../grammar/questions.md) | Asking characters for what they know; answering their questions | Divination: questions the world itself answers truthfully |
+| [Plurality](../../grammar/plurality.md) | Counting, buying several, addressing a group | Spells on a whole group at once |
+| [Comparatives](../../grammar/comparatives.md) | Haggling, choosing the bigger or cheaper one | Scaling: make something bigger than the door |
 | Negation | Refusing, correcting a character | Dispel and unmake |
-| [Causation](../grammar/causation.md) and conditions | Bargains and promises (*if you bring water, I'll …*) | Traps and triggers that fire when something happens |
-| [Habitual](../grammar/restrictors.md) | Characters' routines, asked about and relied on | Lasting enchantments that run every turn |
-| [Knowing](../grammar/knowing.md) | Weighing what a character saw vs. heard | Illusions; exposing a mistaken belief |
+| [Causation](../../grammar/causation.md) and conditions | Bargains and promises (*if you bring water, I'll …*) | Traps and triggers that fire when something happens |
+| [Habitual](../../grammar/restrictors.md) | Characters' routines, asked about and relied on | Lasting enchantments that run every turn |
+| [Knowing](../../grammar/knowing.md) | Weighing what a character saw vs. heard | Illusions; exposing a mistaken belief |
 
 ### Reference {#reference}
 
-The engine must decide *which* dog a noun means. Start simple: the only visible one, or else the game asks. Later areas use the grammar's own tools for this ([pronouns](../grammar/pronouns.md), [restrictors](../grammar/restrictors.md)), and [`src/parse/resolve.ts`](../../src/parse/resolve.ts) already tracks topics across sentences.
+The engine must decide *which* dog a noun means. Start simple: the only visible one, or else the game asks. Later areas use the grammar's own tools for this ([pronouns](../../grammar/pronouns.md), [restrictors](../../grammar/restrictors.md)), and [`src/parse/resolve.ts`](../../../src/parse/resolve.ts) already tracks topics across sentences.
 
 ### Spellbook
 
-The spellbook is the vocabulary list and, from the first area on, the progression (the sandbox opens every page). Words are learned mostly by hearing them in use; scrolls and characters' teaching unlock roots (in `core` order, [core vocabulary](../meta/lexicon.md#core-vocabulary-column)) or a grammar feature. Each root's page shows its emoji, concrete and abstract senses, and mnemonic from [`lexicon-published.csv`](../../data/lexicon-published.csv), plus the player's own repetition history. Inscriptions and overheard speech may carry the scene's one new root, so the player can guess its meaning from context before it is confirmed.
+The spellbook is the vocabulary list and, from the first area on, the progression (the sandbox opens every page). Words are learned mostly by hearing them in use; scrolls and characters' teaching unlock roots (in `core` order, [core vocabulary](../../meta/lexicon.md#core-vocabulary-column)) or a grammar feature. Each root's page shows its emoji, concrete and abstract senses, and mnemonic from [`lexicon-published.csv`](../../../data/lexicon-published.csv), plus the player's own repetition history. Inscriptions and overheard speech may carry the scene's one new root, so the player can guess its meaning from context before it is confirmed.
 
 A long construction the player has used correctly once (a trap, a lasting enchantment) becomes a **mastered spell** they can recall by name. Advanced grammar is rewarded without forcing the player to type it out every time.
 
@@ -186,13 +218,13 @@ The grammar docs and lexicon stay the only source for what the game teaches. Whe
 
 | Game need | Source |
 |-----------|--------|
-| Area order | [`learning-order.ts`](../../src/lint/learning-order.ts): global section order from the sidebar and stage headings |
-| Grammar a sentence uses | The construction registry ([`constructions.ts`](../../src/parse/constructions.ts)) maps every parser production to the section that teaches it |
-| When each root is introduced | The `core` column ([core vocabulary](../meta/lexicon.md#core-vocabulary-column), [`core-vocabulary.ts`](../../src/core-vocabulary.ts)) |
+| Area order | [`learning-order.ts`](../../../src/lint/learning-order.ts): global section order from the sidebar and stage headings |
+| Grammar a sentence uses | The construction registry ([`constructions.ts`](../../../src/parse/constructions.ts)) maps every parser production to the section that teaches it |
+| When each root is introduced | The `core` column ([core vocabulary](../../meta/lexicon.md#core-vocabulary-column), [`core-vocabulary.ts`](../../../src/core-vocabulary.ts)) |
 | Object defaults | The `kind` / `shape` / `size` tail columns |
-| Sentences with English | The doc example index ([`llm-examples.ts`](../../src/parse/llm-examples.ts)) |
-| Spelling from meaning | Gloss → Agebon round trip ([`gloss-inverse.ts`](../../src/parse/gloss-inverse.ts), [glosses](../meta/glosses.md#round-trip)) |
-| Glosses and word pages | [`morph-gloss.ts`](../../src/parse/morph-gloss.ts) and the lexicon CSVs |
+| Sentences with English | The doc example index ([`llm-examples.ts`](../../../src/parse/llm-examples.ts)) |
+| Spelling from meaning | Gloss → Agebon round trip ([`gloss-inverse.ts`](../../../src/parse/gloss-inverse.ts), [glosses](../../meta/glosses.md#round-trip)) |
+| Glosses and word pages | [`morph-gloss.ts`](../../../src/parse/morph-gloss.ts) and the lexicon CSVs |
 
 How the game uses them:
 
@@ -206,7 +238,7 @@ How the game uses them:
    - the sentence has no house cast or `named` roots.
 
    A deny list starts empty and takes only the pairs the sandbox turn log surfaces.
-5. **A content lint**, reusing the existing checks: taught-before-used from [`construction-order.ts`](../../src/lint/construction-order.ts) with the area's position as the cutoff, the parse and lexicon-root checks of `lint-agebon-docs`, the gloss round trip, and the one-tree rule ([`ambiguity.ts`](../../src/parse/ambiguity.ts)). It runs in **`npm run build`**, since the game ships with the site and a doc edit that breaks the game should fail the same build. Walkthroughs and the reachability search run in **`npm test`**.
+5. **A content lint**, reusing the existing checks: taught-before-used from [`construction-order.ts`](../../../src/lint/construction-order.ts) with the area's position as the cutoff, the parse and lexicon-root checks of `lint-agebon-docs`, the gloss round trip, and the one-tree rule ([`ambiguity.ts`](../../../src/parse/ambiguity.ts)). It runs in **`npm run build`**, since the game ships with the site and a doc edit that breaks the game should fail the same build. Walkthroughs and the reachability search run in **`npm test`**.
 
 What stays hand-made:
 
@@ -243,9 +275,21 @@ The sandbox keeps a **turn log** the player can export: each line typed, its par
 
 ### Placement {#placement}
 
-The game lives on the grammar site, as an entry in the **Tools** sidebar group of [`config.ts`](../grammar/.vitepress/config.ts) beside Lexicon and Inspect, at its own route. It stays out of the top nav until it ships.
+The game lives on the grammar site, as an entry in the **Tools** sidebar group of [`config.ts`](../../grammar/.vitepress/config.ts) beside Lexicon and Inspect, at its own route. It stays out of the top nav until it ships.
 
-Once it ships, it is linked from the Tools sidebar and from one line on [How to learn](../grammar/introduction.md#how-to-learn), the same exception the terminology page has. Stage pages and level reviews never link to it, as with the recipe track. While it is a proposal, nothing links to it ([proposals](../meta/proposals.md)).
+Once it ships, it is linked from the Tools sidebar and from one line on [How to learn](../../grammar/introduction.md#how-to-learn), the same exception the terminology page has. Stage pages and level reviews never link to it, as with the recipe track. While it is a proposal, nothing links to it ([proposals](../../meta/proposals.md)).
+
+### Milestone 1 as built {#milestone-1}
+
+The engine is in [`src/game/`](../../../src/game/), the page is [`wizard.md`](../../grammar/wizard.md) (off the sidebar and site search), and the editor note is [wizard-game.md](../../meta/wizard-game.md). Where the build departs from the plan above, or found something:
+
+- **The first-wing finish line needs a later stage.** *Ask whether the book is red* resumes *the book* with **-r** ([resume](../../grammar/pronouns.md#resume-r)), and the **-l** alternative (*is there a red book?*) needs [existence](../../grammar/predication.md#existence); both come after the calls-and-commands stretch of the path. The quest declares the resume, so its computed area is Pronouns Beginner. A first-wing yes/no question has to ask about an act, not a property.
+- **The error table's doc seed is the Fix it drills**, not the **Compare with** notes: a drill pairs a wrong form with its fix and the reason, while a Compare-with note contrasts two right forms. 20 of the 49 drills reduce to a row (role letter, ending, whole word, turn word to the front); the rest are structural.
+- **Make and unmake** are `construct` 👷 and `eraser` 🪌, both core roots of the school.
+- **No Ink yet.** The fixed lines (*yes*, *no*, *sure*, *huh?*, *thank you*) are glosses spelled at build time; generated lines are spelled in the browser with an index that grows one root at a time. A name in an authored gloss is a `{concrete}` slot (`y-{guard}`), so it follows a respelling.
+- **A resume binds to a same-stem verb in its sentence.** `yel vohol dohor` resumes the opening, not the door ([resume](../../grammar/pronouns.md#resume-r): the most recent word with that stem), so the scripts say `dohol`, and the generator falls back to **-l** when a **-r** would bind to the verb.
+- **No verb puts a thing down.** Among the first handlers, things leave your hands only by giving; the quest models have no *drop* action, and a person can always be asked to give a thing back.
+- **The player's position** is a section on the learning order. The sandbox opens everything, and a tester can pretend to have reached any checkpoint to watch narration and speech gate.
 
 ## Inspiration
 

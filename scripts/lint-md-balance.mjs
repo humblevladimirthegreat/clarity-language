@@ -131,6 +131,7 @@ const ALLOWED_HTML_TAGS = new Set([
   "PrintButton",
   "NameHelper",
   "SpeakButton",
+  "WizardSandbox",
 ]);
 
 function installDom() {
