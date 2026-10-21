@@ -160,7 +160,7 @@ describe("recipe table harvest", () => {
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
-| *on* / *onto* (*sits on a chair*) | hook **\`oal\`** + \`/b/\` | [Hooks](hooks.md#extra-noun) |
+| *on* / *onto* (*sits on a chair*) | hook **\`aol\`** + \`/b/\` | [Hooks](hooks.md#extra-noun) |
 `;
 
   it("keeps the Teach link and the cue words", () => {

@@ -344,7 +344,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 >
 > "Uzozen walks either when it rains or at night." (not both)
 
-> `zolazun vezuvol herulal hozulal hoal.`
+> `zolazun vezuvol herulal hozulal haol.`
 >
 > z-Olazun | v-sleep | h-rain | h-snow | h-when-any-of
 >
@@ -357,7 +357,7 @@ Beginner already used *only when* / *never* (`hal`), *always* (`hual`), and *som
 |--------|-----|--------------------------|----------------|-----|
 | **`hal` / `ham`** | listed times; empty list is *never* | *only when…* (closed) / *when…, among other occasions* (open) | ***never*** / *never, as far as I know* | **a** ≈ add |
 | **`hol` / `hom`** | one exclusive time menu | *either when A or when B (not both)*; **`hom`** also allows *or never* | | **o** ≈ one |
-| **`hoal` / `hoam`** | any of the listed times suffices | *when A and/or when B* | | **o** ≈ one time suffices + **a** ≈ add the others |
+| **`haol` / `haom`** | any of the listed times suffices | *when A and/or when B* | | **a** ≈ add the others + **o** ≈ one time suffices |
 | **`hul` / `hum`** | invert the listed times | *not when…* / *not when…, for one* | | **u** ≈ undo |
 | **`hual` / `huam`** | every time minus listed exceptions | *always except when…* | ***always*** / *usually* (*always, as far as I know*) | **u** ≈ undo then **a** ≈ add |
 | **`huol` / `huom`** | any leftover time minus listed exceptions | *anytime except when…* | | **u** ≈ undo + **o** ≈ one |
@@ -510,7 +510,7 @@ z-Uzozen | v-climb | h-snow | h-night | h-when-one
 **2.** *Olazun climbs when it rains and/or when it's foggy.*
 
 ::: details Show answer
-`zolazun vuguvel herulal hovulul hoal.`
+`zolazun vuguvel herulal hovulul haol.`
 
 z-Olazun | v-climb | h-rain | h-fog | h-when-any-of
 :::
@@ -600,14 +600,14 @@ z-Olazun | v-climb | h-thunderstorm | h-when-one.open
 
 #### Pick one {#intermediate-pick-one}
 
-**1.** *Uzozen sleeps when it rains and/or when it snows.* `zuzozen vezuvol herulal hozulal hoal.` or `zuzozen vezuvol herulal hozulal hol.`
+**1.** *Uzozen sleeps when it rains and/or when it snows.* `zuzozen vezuvol herulal hozulal haol.` or `zuzozen vezuvol herulal hozulal hol.`
 
 ::: details Show answer
-`zuzozen vezuvol herulal hozulal hoal.`
+`zuzozen vezuvol herulal hozulal haol.`
 
 z-Uzozen | v-sleep | h-rain | h-snow | h-when-any-of
 
-**`hoal`** lets both count; **`hol`** says one or the other, not both.
+**`haol`** lets both count; **`hol`** says one or the other, not both.
 :::
 
 **2.** *Ahelan climbs preferably when it's foggy.* `zahelan vuguvel hovulul hel.` or `zahelan vuguvel hovulul hal.`

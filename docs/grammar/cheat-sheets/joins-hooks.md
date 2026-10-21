@@ -19,7 +19,7 @@ Joins and hooks share their vowels. Single vowels and the join **ua** are Beginn
 | **o** ≈ one | *pick one* | [*instead*](../hooks.md#instead) | *at* / *near* |
 | **e** ≈ order | rank: first matters most | [*or rather*](../hooks.md#rather) | *for* / *used by* |
 | **u** ≈ undo | *not* / *neither* / *none of* | [*except*](../hooks.md#except) | *from* / *away from* |
-| **oa** | [*and/or*](../joins.md#exclusivity-and-denying-a-whole-list) (at least one) | | [*on* / *over*](../hooks.md#extra-noun-intermediate) |
+| **ao** | [*and/or*](../joins.md#exclusivity-and-denying-a-whole-list) (at least one) | | [*on* / *over*](../hooks.md#extra-noun-intermediate) |
 | **ua** | [*everything but*](../joins.md#everything-ua); alone *everything* | [range](../hooks.md#ranges): strictly between | *out of* / *out from among* |
 | **uo** | [*anything but*](../joins.md#invert-u-stacks) | | *through* / *by way of* |
 | **ae** | [in order](../joins.md#sequence-ae): *A, then B* | | *using* / *by* |
@@ -68,7 +68,7 @@ The same join reads differently with two or more items, [one item](../joins.md#s
 | `zor` | *any of A and B is fine* | *any X* | *anything* / *anyone* | B |
 | `zur` | *some one other than A and B* | *something other than X* | *something else* | B |
 | `zer` | pick by ranking | *preferably some X* | *whatever's most important* | B |
-| `zoal` | *A and/or B* | *X is enough* | *all set* | I |
+| `zaol` | *A and/or B* | *X is enough* | *all set* | I |
 | `zuol` | *anything but A and B* | *anything but X* | *anything (goes)* | I |
 | `zael` | *A, then B* | *start with X* | *in no particular order* | I |
 | `zaem` | *roughly A, then B* | *maybe start with X* | *not sure where to start* | I |
@@ -134,7 +134,7 @@ The vowels keep their moves under `/v/`, `/ɡ/`, `/h/`, and `/x/`. With **-n**, 
 |-------|------------------------|----------------------------------|--------------------------|
 | **a** | `van` *includes* | `gan` / `han` *including*, *with* | `xan` *and then* |
 | **o** | `von` *chooses* | `gon` / `hon` *exclusive for* | `xon` *or maybe*, *failing that* |
-| **oa** | `voan` *picks* (more may follow) | `goan` / `hoan` *open to*, *among options* | `xoan` *and/or maybe* |
+| **ao** | `vaon` *picks* (more may follow) | `gaon` / `haon` *open to*, *among options* | `xaon` *and/or maybe* |
 | **u** | `vun` *refuses* | `gun` / `hun` *against*, *refusing* | `xun` *and then not* |
 | **ua** | `vuan` *excludes* | `guan` / `huan` *without* | |
 | **uo** | `vuon` *bars* | `guon` / `huon` *anything but* | |
@@ -175,7 +175,7 @@ A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds a
 | `ol` | [*B instead of A*](../hooks.md#instead) | *Instead, …* / *Actually, …* | `om` *Instead, for instance, …* | B |
 | `ul` | [*A except B*](../hooks.md#except) | *Except, …* | `um` *Except, among other exceptions, …* | B |
 | `ael` | | [*In fact, …*](../hooks.md#stacked-discourse) | `aem` *In fact, and maybe more, …* | I |
-| `oal` | | [*For example, …*](../hooks.md#stacked-discourse) | `oam` *For example, among others, …* | I |
+| `aol` | | [*For example, …*](../hooks.md#stacked-discourse) | `aom` *For example, among others, …* | I |
 | `or` | | [*Anyway, …*](../hooks.md#hook-resume) | | I |
 | `er` | | [*As I said, …*](../hooks.md#hook-resume) | | I |
 | `ar` | | [*Going back to that, …*](../hooks.md#hook-resume) | | I |
@@ -190,7 +190,7 @@ Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting.
 | **-l** | **-m** | **-r** | Fused **-l** |
 |--------|--------|--------|--------------|
 | `al` *in* | `am` *amid* | `ar` *in there* | `owurelal` *enter* |
-| `oal` *on* | `oam` *over* | `oar` *on it* | `owureloal` *mount* |
+| `aol` *on* | `aom` *over* | `aor` *on it* | `owurelaol` *mount* |
 | `ol` *at* | `om` *near* | `or` *there* | `owurelol` *attend* |
 | `oel` *toward* | `oem` *in the direction of* | | `owureloel` *head for* |
 | `ul` *from*, [*since*](../hooks.md#since) | `um` *away from* | `ur` *from there* | `owurelul` *leave* |

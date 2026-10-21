@@ -8,7 +8,7 @@ import type { GPackage, LexWord, NpCoord, ParseResult, Unit, Utterance } from ".
 import type { Act, Force, NounRef } from "./types.js";
 
 const FORCES: Record<string, Force> = { a: "statement", o: "question", e: "command", u: "prohibition" };
-const POLARS: Record<string, Act["polar"]> = { ae: "yes", ue: "no", oa: "sure" };
+const POLARS: Record<string, Act["polar"]> = { ae: "yes", ue: "no", ao: "sure" };
 const POINTER_ROLES: Record<string, "agent" | "patient" | "recipient"> = { a: "agent", u: "patient", o: "recipient" };
 
 function contentRoot(word: LexWord): string | undefined {

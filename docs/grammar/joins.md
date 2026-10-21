@@ -685,8 +685,8 @@ Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *ther
 | **…uam** (`zuam` / …) | open invert-add of one | *everything but X (and possibly more)* |
 | **…uol** (`zuol` / …) | closed invert-menu of one | *anything but X* |
 | **…uom** (`zuom` / …) | open invert-menu of one | *anything but X (and possibly more)* |
-| **…oal** (`zoal` / …) | closed inclusive of one | *X is enough* / *X'll do* |
-| **…oam** (`zoam` / …) | open inclusive of one | *at least X* / *X would work* |
+| **…aol** (`zaol` / …) | closed inclusive of one | *X is enough* / *X'll do* |
+| **…aom** (`zaom` / …) | open inclusive of one | *at least X* / *X would work* |
 | **…ar** (`zar` / …) | unspecified add | *some (unknown) X* |
 | **…or** (`zor` / …) | unspecified menu | *any X* |
 | **…ul** (`zul` / …) | closed deny of one | *not X* |
@@ -710,8 +710,8 @@ Standalone **e** says nothing is on top (no favorite; with a SHARED scale, *ther
 | **…uan** (`zuan` / …) | stock empty invert-add | *everyone* / *everything* (stock); + SHARED kind → the kind itself |
 | **…uol** (`zuol` / …) | closed empty invert-menu | *anything (goes)* |
 | **…uom** (`zuom` / …) | open empty invert-menu | *anything offered* |
-| **…oal** (`zoal` / …) | closed empty inclusive | *all set* / *nothing more needed* |
-| **…oam** (`zoam` / …) | open empty inclusive | *nothing needed, as far as I know* |
+| **…aol** (`zaol` / …) | closed empty inclusive | *all set* / *nothing more needed* |
+| **…aom** (`zaom` / …) | open empty inclusive | *nothing needed, as far as I know* |
 | **…ul** (`zul` / …) | closed empty deny | *no* |
 | **…um** (`zum` / …) | open empty deny | *no, as far as I know* |
 | **…un** (`zun` / …) | stock empty deny | *No* (stock) |
@@ -867,7 +867,7 @@ On `/v/` a kind indefinite takes no **-x**: on a verb **-x** is doing it togethe
 
 ### Exclusivity and denying a whole list
 
-When English would allow several listed items at once (*and/or*), stack **o** then **a** (**`oa`**). **`o`** alone is still at most one: closed **-l** is pick one; open **-m** is *(optional)*. On **`oa`**, even **-m** still needs at least one of the listed items.
+When English would allow several listed items at once (*and/or*), stack **a** then **o** (**`ao`**). **`o`** alone is still at most one: closed **-l** is pick one; open **-m** is *(optional)*. On **`ao`**, even **-m** still needs at least one of the listed items.
 
 When English would deny a list as a whole (*not both*), close the list with its own join, then add a **u** join after it. The inner list is the one item before the **u** join, so this is single-item *not X* with the whole list as X. To deny each item instead (*neither A nor B*), put the items straight before the **u** join, as in Beginner [negation](#negation-u).
 
@@ -1201,7 +1201,7 @@ z-something.person.unknown | v-see | d-dress
 *Olazun last.*
 :::
 
-**4.** `zahelan zoam.`
+**4.** `zahelan zaom.`
 
 ::: details Show answer
 [z-Ahelan | z-and/or.open]

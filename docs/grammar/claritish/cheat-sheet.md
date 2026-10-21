@@ -78,9 +78,9 @@ Thanks for a thing you own: `g` for `th`, after the noun: *my coat* `gobathal`.
 
 ## [Feelings](feelings.md) {#feelings}
 
-`thuwathuroar` *can I measure up?* hanging over everything, in waves:
+`thuwathuraor` *can I measure up?* hanging over everything, in waves:
 
-| `thuwa` | `thu` | `r` | `oa` | `r` |
+| `thuwa` | `thu` | `r` | `ao` | `r` |
 |---------|-------|-----|------|-----|
 | competence | unmet | for now | over the room (locus) | surging (motion) |
 
@@ -89,7 +89,7 @@ Motion ending: **-l** still, **-m** flowing, **-r** surging.
 | Locus | Meaning | Locus | Meaning |
 |-------|---------|-------|---------|
 | `a` | mine, held inside | `ue` | pushing back |
-| `oa` | the atmosphere of the situation | `e` | felt on someone's behalf |
+| `ao` | the atmosphere of the situation | `e` | felt on someone's behalf |
 | `uo` | can't place where it comes from | `u` | moving off: avoiding, hiding |
 | `o` | aimed at someone | `ua` | out of fight: giving up |
 | `oe` | turning to someone for comfort | `ae` | using yourself to placate |

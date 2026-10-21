@@ -4,8 +4,8 @@ import type { MorphWord } from "./types.js";
 
 /** Extra-noun hook spellings (stacked vowels before simplex). */
 export const EXTRA_NOUN_HOOKS = [
-  "oal",
-  "oam",
+  "aol",
+  "aom",
   "ael",
   "aem",
   "oel",
@@ -34,8 +34,8 @@ const HOOK_SET = new Set<string>(EXTRA_NOUN_HOOKS);
 export const HOOK_DERIVED_GLOSS: Record<ExtraNounHook, string> = {
   al: "enter",
   am: "mill-amid",
-  oal: "mount",
-  oam: "cover",
+  aol: "mount",
+  aom: "cover",
   ol: "attend",
   om: "adjoin",
   oel: "head-for",

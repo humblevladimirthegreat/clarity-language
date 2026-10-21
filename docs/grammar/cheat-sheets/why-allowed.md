@@ -149,14 +149,14 @@ Your feeling about the whole claim, on `/th/` with **-m**. It is never the subje
 
 ## Feelings {#feelings}
 
-An [emotion](../sakes.md#emotion-compose) is built on one word: the sake word, a **locus**, then a **motion ending**. Example: `wuwathur` + `oa` + **-r** is `wuwathuroar`.
+An [emotion](../sakes.md#emotion-compose) is built on one word: the sake word, a **locus**, then a **motion ending**. Example: `wuwathur` + `ao` + **-r** is `wuwathuraor`.
 
 ### Locus: where it sits or points {#locus}
 
 | Locus | Hook | Use | English | Stage |
 |-------|------|-----|---------|-------|
 | [`a`](../sakes.md#emotion-compose) | *in* | internal | *mine, held inside* | I |
-| [`oa`](../sakes.md#emotion-compose) | *over* | the atmosphere | *hangs over the room* | I |
+| [`ao`](../sakes.md#emotion-compose) | *over* | the atmosphere | *hangs over the room* | I |
 | [`uo`](../sakes.md#emotion-compose) | *through* | unplaced | *I can't place it* | I |
 | [`o`](../sakes.md#emotion-compose) | *at* | aimed | *annoyed at*, *grateful to* | I |
 | [`oe`](../sakes.md#emotion-compose) | *toward* | seeking | *turning to someone for comfort* | I |
@@ -179,7 +179,7 @@ Motion is how the feeling moves, not how strong it is. For strength, put a [degr
 <!-- cheat-sheet: why-allowed -->
 | Agebon | English | Stage |
 |--------|---------|-------|
-| [`zezuyel wuwathuroar goyem`](../sakes.md#emotion-compose) | *anxious about the dialogue* | I |
+| [`zezuyel wuwathuraor goyem`](../sakes.md#emotion-compose) | *anxious about the dialogue* | I |
 | [`zozowum wawothumual goyem`](../sakes.md#emotion-compose) | *given up over the division* | I |
 | [`zebewem guwathamar`](../sakes.md#emotion-compose) | *proud of the draft* | I |
 | [`zonal wawothumem goyem bluzozen`](../sakes.md#emotion-compose) | *upset for Uzozen about the memo* | I |

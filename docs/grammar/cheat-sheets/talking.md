@@ -158,7 +158,7 @@ Write `y`, two vowels, then an ending. A turn holds one polar word; an answer fo
 |--------|-------------|-------------|----------------|-------|
 | [**`ae`**](../questions.md#polar-endings) accept, match | `yael` *yes* / *will do* | `yaem` *I think so* | `yaer` *true, for now* | B / I |
 | [**`ue`**](../questions.md#polar-endings) refuse, mismatch | `yuel` *no* / *I won't* | `yuem` *I don't think so* | `yuer` *not so, for now* | B / I |
-| [**`oa`**](../questions.md#polar-endings) take up an option | `yoal` *sure* | `yoam` *okay* | `yoar` *fine, for now* | B / I |
+| [**`ao`**](../questions.md#polar-endings) take up an option | `yaol` *sure* | `yaom` *okay* | `yaor` *fine, for now* | B / I |
 | [**`uo`**](../questions.md#polar-endings) reject this option | `yuol` *not that* | `yuom` *nah* | `yuor` *not that, for now* | I |
 | [**`ua`**](../questions.md#polar-endings) reject the premise | `yual` *the question doesn't apply* | `yuam` *it's more complicated* | `yuar` *it doesn't apply, for now* | I |
 | [**`oe`**](../questions.md#polar-endings) decline to answer | `yoel` *I won't answer* | `yoem` *I'd rather not say* | `yoer` *pass, for now* | I |
@@ -178,7 +178,7 @@ After your sentence, write `yol` and a polar word as a turn of its own. It asks 
 |--------|-----|---------|-------|
 | [`yol yael.`](../questions.md#tags) | confirm a claim | *…, right?* | B |
 | [`yol yuel.`](../questions.md#tags) | invite a correction | *…, or am I wrong?* | I |
-| [`yol yoal.`](../questions.md#tags) | take up a request or offer | *…, okay?* | I |
+| [`yol yaol.`](../questions.md#tags) | take up a request or offer | *…, okay?* | I |
 | [`yol yuol.`](../questions.md#tags) | offer the refusal | *…, or would you rather not?* | I |
 | [`yol yaer.`](../questions.md#tags) | accept for now | *…, can we go with that for now?* | I |
 | [`yol yoem.`](../questions.md#tags) | after a question, offer a pass | *…, or would you rather not say?* | I |

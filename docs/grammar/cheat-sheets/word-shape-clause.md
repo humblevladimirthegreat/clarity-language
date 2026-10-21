@@ -168,7 +168,7 @@ Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 
 | Vowel | Reach | English | Stage |
 |-------|-------|---------|-------|
-| `thoa` | this episode, on this pair | *teacher this time, to Olazun* | I |
+| `thao` | this episode, on this pair | *teacher this time, to Olazun* | I |
 | `thae` | using the role as a means | *using teacher (as a tool)* | I |
 | `thoe` | toward the role | *becoming a teacher* | I |
 | `thua` | type, except this episode | *a teacher type, except this time* | I |

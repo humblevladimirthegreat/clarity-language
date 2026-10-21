@@ -20,7 +20,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Intention](intention.md#try) |
 | **AWAY** | Emotion locus: moving off from a target | `wawothumum` | [Sakes](sakes.md#emotion-compose) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thewem` | [Causation](causation.md#cause) |
-| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuroar` | [Sakes](sakes.md#emotion-compose) |
+| **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraor` | [Sakes](sakes.md#emotion-compose) |
 | **CITE** | A cite span: quoted wording | `d[uzozen]` | [Spans](spans.md#writing) |
 | **CLUES** | Evidential: reasoned from clues about this case | `theyem` | [Knowing](knowing.md#evidentiality) |
 | **COLLAPSE** | Emotion locus: out of fight, giving up | `wawothumual` | [Sakes](sakes.md#emotion-compose) |
@@ -53,7 +53,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **SCOPE** | Scope island `{ … }` | `{ hegugom zudozol gerulel }` | [Spans](spans.md#scope-islands) |
 | **SEEKING** | Emotion locus: turning to someone for comfort | `wawothumoem` | [Sakes](sakes.md#emotion-compose) |
 | **STILL** | Emotion motion: not moving (held, frozen, numb) | `wawothumol` | [Sakes](sakes.md#emotion-compose) |
-| **SURGING** | Emotion motion: in waves or spikes | `wuwathuroar` | [Sakes](sakes.md#emotion-compose) |
+| **SURGING** | Emotion motion: in waves or spikes | `wuwathuraor` | [Sakes](sakes.md#emotion-compose) |
 | **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruom` | [Sakes](sakes.md#emotion-compose) |
 | **WANT** | Desire mood: lasting / unstated / passing | `thalem` | [Intention](intention.md#want) |
 
@@ -67,7 +67,7 @@ English names for set / rank join vowels ([joins](joins.md)):
 |------|-------|--------|
 | additive | **a** | *and* (inventory) |
 | choice | **o** | exclusive *or* |
-| cochoice | **oa** | inclusive *and/or* |
+| cochoice | **ao** | inclusive *and/or* |
 | negation | **u** | *not* / *none of* / standalone *no* |
 | counteradditive | **ua** | *everything but* |
 | counterchoice | **uo** | *anything but* |
@@ -835,7 +835,7 @@ A dictionary word whose head is a bare root tail instead of a second root (`zahu
 
 ### Tag
 
-**`yol`** plus a [polar stance](#polar-stance) word as its own turn after a sentence: asks the listener for that answer (`yol yael.` *…, right?*, `yol yoal.` *…, okay?*, `yol yuel.` *…, or am I wrong?*).
+**`yol`** plus a [polar stance](#polar-stance) word as its own turn after a sentence: asks the listener for that answer (`yol yael.` *…, right?*, `yol yaol.` *…, okay?*, `yol yuel.` *…, or am I wrong?*).
 
 [Questions](questions.md#tags)
 

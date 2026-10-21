@@ -135,7 +135,7 @@ function separatorVowel(markerV) {
   }
 
   const EXTRA_NOUN_HOOKS = [
-    "oal", "oam", "ael", "aem", "oel", "oem", "ual", "uam", "uol", "uom", "uel", "uem",
+    "aol", "aom", "ael", "aem", "oel", "oem", "ual", "uam", "uol", "uom", "uel", "uem",
     "al", "am", "ol", "om", "el", "em", "ul", "um",
   ];
   const ROOT_VOWELS = "aeou";
@@ -390,7 +390,7 @@ function peg$parse(input, options) {
   const peg$c49 = "mowu";
   const peg$c50 = "bawa";
   const peg$c51 = "bawu";
-  const peg$c52 = "oa";
+  const peg$c52 = "ao";
   const peg$c53 = "ae";
   const peg$c54 = "w";
   const peg$c55 = "x";
@@ -477,7 +477,7 @@ function peg$parse(input, options) {
   const peg$e56 = peg$literalExpectation("mowu", false);
   const peg$e57 = peg$literalExpectation("bawa", false);
   const peg$e58 = peg$literalExpectation("bawu", false);
-  const peg$e59 = peg$literalExpectation("oa", false);
+  const peg$e59 = peg$literalExpectation("ao", false);
   const peg$e60 = peg$literalExpectation("ae", false);
   const peg$e61 = peg$classExpectation(["l", "m", "n"], false, false, false);
   const peg$e62 = peg$literalExpectation("w", false);

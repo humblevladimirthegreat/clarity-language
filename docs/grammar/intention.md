@@ -585,7 +585,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Uzozen can write on the clipboard.*
 
 ::: details Show answer
-`zuzozen varayexal oal begowal.`
+`zuzozen varayexal aol begowal.`
 
 z-Uzozen | v-write-able | [on | b-clipboard]
 :::

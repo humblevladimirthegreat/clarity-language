@@ -8,7 +8,7 @@ import { CONSONANT_LETTERS, DIGIT_LETTERS, VOWEL_LETTERS, vowelKey } from "./fin
 /** Vowels lowest pitch first: the finger code's count order. */
 export const PITCH_ORDER: readonly string[] = VOWEL_LETTERS;
 /** Vowels in alphabet order (phonology.md#letter-names); a stack puts its two vowels in this order. */
-export const ALPHABET_VOWELS: readonly string[] = ["u", "o", "a", "e"];
+export const ALPHABET_VOWELS: readonly string[] = ["u", "a", "o", "e"];
 
 /** Semitones above the home note, the note `a` is sung on (phonology.md#vowel-pitch-values). */
 export const VOWEL_PITCH: Readonly<Record<string, number>> = { a: 0, o: 3, e: 5, u: 7 };

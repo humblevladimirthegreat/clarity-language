@@ -10,7 +10,7 @@ Start from a thanks or sorry word from Thanks and sorry that say why: `th` + sak
 
 The word now has two **-l / -m / -r** slots: the ending from Thanks and sorry that say why stays in the middle, and the motion ending goes last.
 
-| `thuwa` | `thu` | `r` | `oa` | `r` |
+| `thuwa` | `thu` | `r` | `ao` | `r` |
 |---------|-------|-----|------|-----|
 | competence | unmet | for now | over the room (locus) | surging (motion) |
 
@@ -19,7 +19,7 @@ Pick a locus from this menu. (This is in a cheat sheet at the end)
 | Locus | Meaning |
 |-------|---------|
 | `a` | mine, held inside |
-| `oa` | the atmosphere of the situation |
+| `ao` | the atmosphere of the situation |
 | `uo` | I can't place where it comes from |
 | `o` | aimed at someone |
 | `oe` | turning to someone for comfort |
@@ -40,7 +40,7 @@ The motion endings are the settled-to-passing scale applied to water: still wate
 ## Examples {#examples}
 
 > We shipped the draft `thuwathamar`.  
-> The review is tomorrow `thuwathuroar`.  
+> The review is tomorrow `thuwathuraor`.  
 > He rewrote my memo `thunathumuem`.  
 > My sister got laid off `thunathulem`.  
 > `thuwathuruol`, and I can't say why.
@@ -48,7 +48,7 @@ The motion endings are the settled-to-passing scale applied to water: still wate
 | Drop-in | What it says | Instead of | The three parts |
 |---------|--------------|------------|-----------------|
 | `thuwathamar` | a rush of *I pulled it off*, kept to myself | *proud* | competence met; held inside; surging |
-| `thuwathuroar` | *can I measure up?* hanging over everything, in waves, for now | *anxious* | competence at stake for now; over the room; surging |
+| `thuwathuraor` | *can I measure up?* hanging over everything, in waves, for now | *anxious* | competence at stake for now; over the room; surging |
 | `thunathumuem` | a steady push back at losing my say, while it can still change | *objecting* | autonomy unmet; pushing back; flowing |
 | `thunathulem` | a steady ache on her behalf: her say was taken for good | *upset for her* | autonomy unmet for good; on her behalf; flowing |
 | `thuwathuruol` | a quiet *can I handle this?* from nowhere I can point to | *uneasy* | competence at stake for now; can't place it; still |

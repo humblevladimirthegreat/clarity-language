@@ -279,7 +279,7 @@ function enforceNameInstance(word: LexWord): void {
   }
 }
 
-/** Stacked join **-r** (`zuar` / `voar` / `xuar` / `goar`) has no reading outside the `/th/` fill-ask (join-across-roles.md § Standalone stance joins). */
+/** Stacked join **-r** (`zuar` / `vaor` / `xuar` / `gaor`) has no reading outside the `/th/` fill-ask (join-across-roles.md § Standalone stance joins). */
 function enforceStackedJoinR(word: LexWord): void {
   const family = word.family;
   if (family.kind !== "joinMarker" || word.ending !== "r" || family.series.length < 2) return;
@@ -294,10 +294,10 @@ function enforceStandInRole(word: LexWord): void {
   if (["g", "h", "w", "th"].includes(word.pos ?? "")) throw new ConstructionError("standInRole", word.raw);
 }
 
-/** Stacked range hook **-r** (`oer` / `uar` / `uer`) is only a range member between same-role words (hooks.md § Ranges). Extra-noun `oar` / `aer` / `uor` point back. */
+/** Stacked range hook **-r** (`oer` / `uar` / `uer`) is only a range member between same-role words (hooks.md § Ranges). Extra-noun `aor` / `aer` / `uor` point back. */
 function enforceStackedHookR(word: LexWord, tokens: IToken[], i: number): void {
   if (word.family.kind !== "hook" || word.ending !== "r" || word.family.form.length < 3) return;
-  if (["oa", "ae", "uo"].includes(word.family.form.slice(0, -1))) return;
+  if (["ao", "ae", "uo"].includes(word.family.form.slice(0, -1))) return;
   let j = i - 1;
   while (tokenWord(tokens[j])?.pos === "w") j -= 1;
   const prev = tokenWord(tokens[j]);
@@ -305,11 +305,11 @@ function enforceStackedHookR(word: LexWord, tokens: IToken[], i: number): void {
   if (!prev?.pos || prev.pos !== next?.pos) throw new ConstructionError("stackedHookResume", word.raw);
 }
 
-/** Hook vowels with no reading in a placement: same-role `oa` / `ae` / `uo`, and discourse `oe` / `ua` / `uo` / `ue` (hooks.md). */
+/** Hook vowels with no reading in a placement: same-role `ao` / `ae` / `uo`, and discourse `oe` / `ua` / `uo` / `ue` (hooks.md). */
 function enforceHookSlot(word: LexWord, job: HookJob | undefined): void {
   if (word.family.kind !== "hook") return;
   const vowels = word.family.form.slice(0, -1);
-  if (job === "clause" && (vowels === "oa" || vowels === "ae" || vowels === "uo")) throw new ConstructionError("hookSameRoleStack", word.raw);
+  if (job === "clause" && (vowels === "ao" || vowels === "ae" || vowels === "uo")) throw new ConstructionError("hookSameRoleStack", word.raw);
   if (job === "discourse" && word.ending === "r" && vowels.length > 1) throw new ConstructionError("hookDiscourseStack", word.raw);
   if (job === "discourse" && ["oe", "ua", "uo", "ue"].includes(vowels)) throw new ConstructionError("hookDiscourseStack", word.raw);
 }

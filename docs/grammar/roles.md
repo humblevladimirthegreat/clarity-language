@@ -432,11 +432,11 @@ A movement has three more parts: where it heads, where it comes out of, and the 
 
 **Compare with:** the scene **`e`** is where the whole event happens. A goal, source or path is one end or the route of a movement. *Walks toward the station* on the same clause is the hook **`oel`** plus `/b/`.
 
-### Result (`oa`) {#result}
+### Result (`ao`) {#result}
 
-English *a building* or *a dish* names the thing an event **makes**: it did not exist before. Write **`oa`** in the vowel slot. (cue: **oa** ≈ one new thing, added to the world)
+English *a building* or *a dish* names the thing an event **makes**: it did not exist before. Write **`ao`** in the vowel slot. (cue: **ao** ≈ add one new thing to the world)
 
-> `zuzozen doaxeguyel vawebol.`
+> `zuzozen daoxeguyel vawebol.`
 >
 > z-Uzozen | d-result-x-construct | v-see
 >
@@ -444,13 +444,13 @@ English *a building* or *a dish* names the thing an event **makes**: it did not 
 
 With **-r**, it is what **that** event made.
 
-> `zolazun veguyel. zuzozen doaxeguyer vawebol.`
+> `zolazun veguyel. zuzozen daoxeguyer vawebol.`
 >
 > z-Olazun | v-construct . z-Uzozen | d-←result-x-construct | v-see
 >
 > "Olazun builds. Uzozen sees what Olazun built."
 
-**Compare with:** the undergoer **`u`** is a thing the event changes, which was already there. The result **`oa`** is a thing the event brings into being.
+**Compare with:** the undergoer **`u`** is a thing the event changes, which was already there. The result **`ao`** is a thing the event brings into being.
 
 ### The one who pays (`ue`) {#bearer}
 
@@ -482,7 +482,7 @@ Each two-vowel pair also makes a [role pointer](#role-pointers-family): leave ou
 >
 > "Uzozen walks toward a house. Olazun sees the house."
 
-> `zolazun veguyel. zuzozen doaxar vawebol.`
+> `zolazun veguyel. zuzozen daoxar vawebol.`
 >
 > z-Olazun | v-construct . z-Uzozen | d-←result.same | v-see
 >
@@ -495,7 +495,7 @@ Each two-vowel pair also makes a [role pointer](#role-pointers-family): leave ou
 | `doexar` | where it headed | **`oel`** |
 | `duaxar` | where it came out of | **`ual`** |
 | `duoxar` | the way it went | **`uol`** |
-| `doaxar` | what it made | (always the event’s own) |
+| `daoxar` | what it made | (always the event’s own) |
 | `zuexar` | the one who paid for it | **`uel`** |
 
 The other endings and pointer vowels of the [pronouns](pronouns.md#role-pointers) page go on these too. **-l** is a new one of that kind (`daexal` *another tool like that one*), and **-m** is that part’s share in the event (`daexam` *what the tool did*; `zuexam` *the cost they bore*, rather than the theft or the victim).
@@ -788,7 +788,7 @@ z-Uzozen | v-swim | [h-down | bl-boat]
 *Uzozen swims under the boat.*
 :::
 
-**3.** `zahelan veguyel. zolazun doaxeguyer vawebol.`
+**3.** `zahelan veguyel. zolazun daoxeguyer vawebol.`
 
 ::: details Show answer
 z-Ahelan | v-construct . z-Olazun | d-←result-x-construct | v-see
@@ -832,14 +832,14 @@ z-Uzozen | v-sit | [h-west-th-landmark | bl-boat]
 **`tho`** turns the arrow to the boat's own facing; bare `howuhel` is *west of the boat*.
 :::
 
-**2.** *Ahelan sees something to write with.* `zahelan daexarayel vawebol.` or `zahelan doaxarayel vawebol.`
+**2.** *Ahelan sees something to write with.* `zahelan daexarayel vawebol.` or `zahelan daoxarayel vawebol.`
 
 ::: details Show answer
 `zahelan daexarayel vawebol.`
 
 z-Ahelan | d-instrument-x-write | v-see
 
-**`ae`** names the instrument; **`oa`** would be something written, the result.
+**`ae`** names the instrument; **`ao`** would be something written, the result.
 :::
 
 #### Fix it {#intermediate-fix-it}

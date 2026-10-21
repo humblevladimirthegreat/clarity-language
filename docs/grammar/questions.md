@@ -172,7 +172,7 @@ Write **`y`**, then two vowels, then **-l** (firm) or **-m** (softer).
 
 **`yuel`** means *no* / *false*: the claim does not match. Soft twin **`yuem`**: *I don’t think so* / *nah*.
 
-**`yoal`** means *sure* / *I’ll take that*: you take up the offer. Soft twin **`yoam`**: *okay* / *sure, I guess*.
+**`yaol`** means *sure* / *I’ll take that*: you take up the offer. Soft twin **`yaom`**: *okay* / *sure, I guess*.
 
 When a sentence body follows *yes*, write **`yael`** then the body. You do not also write the statement word **`yal`**.
 
@@ -183,7 +183,7 @@ A turn holds one polar word. Do not stack two, and do not put one before an act 
 |--------|-----|---------|-----|
 | **`yael`** / soft **`yaem`** | the claim matches, or *got it* | *yes* / *true* · *I think so* | **a** ≈ add + **e** ≈ order (the claim lines up) |
 | **`yuel`** / soft **`yuem`** | mismatch | *no* / *false* · *I don’t think so* | **u** ≈ undo + **e** ≈ order (the claim does not line up) |
-| **`yoal`** / soft **`yoam`** | take up an offered option | *sure* / *I’ll take that* · *okay* | **a** ≈ add (accept) + **o** ≈ this option |
+| **`yaol`** / soft **`yaom`** | take up an offered option | *sure* / *I’ll take that* · *okay* | **a** ≈ add (accept) + **o** ≈ this option |
 
 > `yael.`
 >
@@ -205,11 +205,11 @@ A turn holds one polar word. Do not stack two, and do not put one before an act 
 >
 > "I don’t think so." / "Nah."
 
-> `yoal.`
+> `yaol.`
 >
 > "Sure." / "I’ll take that."
 
-> `yoam.`
+> `yaom.`
 >
 > y-sure-soft
 >
@@ -365,7 +365,7 @@ z-Uzozen | v-see | d-whether-clause | z-Olazun | d-key | v-find
 *Uzozen sees whether Olazun finds the key.*
 :::
 
-**5.** `yoam.`
+**5.** `yaom.`
 
 ::: details Show answer
 y-sure-soft
@@ -419,13 +419,13 @@ The statement stays a statement; the tag **`yol yael.`** is its own short questi
 
 ### Polar stance: fuller inventory
 
-Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), and *sure* (**`yoal`**). The rest of the map is *reject this option*, *reject the question itself*, and *decline to answer*. Read the pair by which vowels it has, not their order. A pair with **`u`** is the undo family. Otherwise a pair with **`a`** is the accept family. Otherwise it is the **`o`** family: pass. The other vowel says what you are answering: **`e`** the claim or the order, **`o`** this option, **`a`** the question's own premise.
+Beginner already used *yes* / *true* (**`yael`**), *no* / *false* (**`yuel`**), and *sure* (**`yaol`**). The rest of the map is *reject this option*, *reject the question itself*, and *decline to answer*. The first vowel names the family: **`u`** undo, **`a`** accept, **`o`** pass. The second vowel says what you are answering: **`e`** the claim or the order, **`o`** this option, **`a`** the question's own premise. You can also hear the family: the three undo answers [fall](phonology.md#phonotactics) and the other three rise.
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`ae`** (`yael`) | the claim matches, or *got it*; comply with an order | *true* · *will do* | **a** ≈ add + **e** ≈ order (judged in line) |
 | **`ue`** (`yuel`) | flip / mismatch; refuse an order | *false* · *I won't* | **u** ≈ undo + **e** ≈ order (judged out of line) |
-| **`oa`** (`yoal`) | take up an offered option | *sure* | **a** ≈ add (accept) + **o** ≈ this option |
+| **`ao`** (`yaol`) | take up an offered option | *sure* | **a** ≈ add (accept) + **o** ≈ this option |
 | **`uo`** (`yuol`) | reject this option | *not that* | **u** ≈ undo + **o** ≈ one |
 | **`ua`** (`yual`) | reject the question's premise | *neither: the question doesn't apply* | **u** ≈ undo + **a** ≈ add (undo what the question added) |
 | **`oe`** (`yoel`) | decline to answer | *I won't answer* | **o** ≈ one + **e** ≈ order (pass to the next one in line) |
@@ -447,7 +447,7 @@ Each stance word takes one of three endings, on the same settled-to-passing scal
 |--|-------------|-------------|--------------------|
 | **`ae`** | `yael` *true* | `yaem` *I think so* | `yaer` *true, for now* / *I'll take that on board for now* |
 | **`ue`** | `yuel` *false* | `yuem` *I don't think so* | `yuer` *not so, for now* (I'm holding off, and may reconsider) |
-| **`oa`** | `yoal` *sure* | `yoam` *okay* | `yoar` *fine, for now* / *let's try it* |
+| **`ao`** | `yaol` *sure* | `yaom` *okay* | `yaor` *fine, for now* / *let's try it* |
 | **`uo`** | `yuol` *not that* | `yuom` *nah* | `yuor` *not that, for now* / *not right now* |
 | **`ua`** | `yual` *the question doesn't apply* | `yuam` *it's more complicated than that* | `yuar` *it doesn't apply, for now* (the premise fails at the moment) |
 | **`oe`** | `yoel` *I won't answer* | `yoem` *I'd rather not say* | `yoer` *pass, for now* |
@@ -484,7 +484,7 @@ A command (**`yel`**) or request (**`yem`**) is not a claim, so *true* and *fals
 |--------|-------------|-------------|----------------|
 | **`ae`** accept the order | `yael` *will do* | `yaem` *okay, I'll try* | `yaer` *will do, for now* |
 | **`ue`** refuse the order | `yuel` *I won't* | `yuem` *I'd rather not* | `yuer` *I won't, for now* |
-| **`oa`** take it up as an offer | `yoal` *sure, I'll take that on* | `yoam` *okay, fine* | `yoar` *fine, for now* |
+| **`ao`** take it up as an offer | `yaol` *sure, I'll take that on* | `yaom` *okay, fine* | `yaor` *fine, for now* |
 | **`uo`** reject this option | `yuol` *not that* | `yuom` *nah* | `yuor` *not that, for now* |
 | **`ua`** reject the premise | `yual` *that can't be done* | `yuam` *it's more complicated than that* | `yuar` *it doesn't apply, for now* |
 | **`oe`** decline to answer | `yoel` *I won't say* | `yoem` *I'd rather not say* | `yoer` *pass, for now* |
@@ -503,9 +503,9 @@ After a flat command, `yael` / `yuel` are the plain comply / refuse. After a req
 >
 > "Please walk." "Not right now."
 
-For a stronger stance, use the [tone mark](speech-moves.md#tone-marks) **`!!`**, not a different word. **`!!yoal`** is *Absolutely!* / *Yes, please!*, and **`!!yuol`** is *Hell no!*
+For a stronger stance, use the [tone mark](speech-moves.md#tone-marks) **`!!`**, not a different word. **`!!yaol`** is *Absolutely!* / *Yes, please!*, and **`!!yuol`** is *Hell no!*
 
-> `!!yoal.`
+> `!!yaol.`
 >
 > !!y-sure
 >
@@ -520,12 +520,12 @@ For a stronger stance, use the [tone mark](speech-moves.md#tone-marks) **`!!`**,
 | Ask flavor | Firm (**-l**) | Soft (**-m**) |
 |------------|----------------|----------------|
 | *Is it so?* / confirm the claim | **`yael`**, deny with **`yuel`** | **`yaem`**, deny with **`yuem`** |
-| *Want this?* / offer | **`yoal`**, reject-this with **`yuol`** | **`yoam`**, reject-this with **`yuom`** |
+| *Want this?* / offer | **`yaol`**, reject-this with **`yuol`** | **`yaom`**, reject-this with **`yuom`** |
 | Command (**`yel`**) | **`yael`**, refuse with **`yuel`** | **`yaem`**, refuse with **`yuem`** |
 | Loaded question | **`yual`** | **`yuam`** |
 | Declined question | **`yoel`** | **`yoem`** |
 
-A stance word can stand alone (`yael.`), sit before a body (`yael zuzozen vowurel.`), or come as a confirm tag in the next turn after `.`. After a stance word plus a body, continue with **`/x/`**; write a second polar word only in a new turn. When you think aloud on your own, **`yuel`** can mark a correction, **`yoal`** the next step, and **`yael`** a point you settle.
+A stance word can stand alone (`yael.`), sit before a body (`yael zuzozen vowurel.`), or come as a confirm tag in the next turn after `.`. After a stance word plus a body, continue with **`/x/`**; write a second polar word only in a new turn. When you think aloud on your own, **`yuel`** can mark a correction, **`yaol`** the next step, and **`yael`** a point you settle.
 
 **Compare with:** *not* inside the clause uses **`zul`** / **`vul`**. Polar **`yuel`** / **`yuol`** answer a *yes* / *no* or an offer.
 
@@ -533,9 +533,9 @@ A stance word can stand alone (`yael.`), sit before a body (`yael zuzozen vowure
 
 Beginner closed a claim with the tag **`yol yael.`** (*…, right?*). Every polar word works as a tag the same way: after your sentence, write **`yol`** and the polar word as a turn of their own. The tag asks the listener for that answer. Naming an answer makes it easy to give, so pick the one you want to make easy.
 
-After a request or a suggestion, **`yol yoal.`** asks *okay?*: will they take it up? **`yol yuol.`** asks *or would you rather not?*, so they can turn it down without having to push back. After a claim, **`yol yuel.`** asks *or am I wrong?*: it invites a correction, where **`yol yael.`** leans toward agreement.
+After a request or a suggestion, **`yol yaol.`** asks *okay?*: will they take it up? **`yol yuol.`** asks *or would you rather not?*, so they can turn it down without having to push back. After a claim, **`yol yuel.`** asks *or am I wrong?*: it invites a correction, where **`yol yael.`** leans toward agreement.
 
-> `yem vowurel zayan. yol yoal.`
+> `yem vowurel zayan. yol yaol.`
 >
 > y-request | v-walk | z-interlocutors . y-question | y-sure
 >
@@ -558,18 +558,18 @@ After a request or a suggestion, **`yol yoal.`** asks *okay?*: will they take it
 |--------|-----|---------|
 | `yol yael.` | ask them to confirm a claim | *…, right?* |
 | `yol yuel.` | invite a correction | *…, or am I wrong?* |
-| `yol yoal.` | ask them to take up a request or an offer | *…, okay?* / *…, deal?* |
+| `yol yaol.` | ask them to take up a request or an offer | *…, okay?* / *…, deal?* |
 | `yol yuol.` | offer them the refusal | *…, or would you rather not?* |
 | `yol yaer.` | ask them to accept it for now | *…, can we go with that for now?* |
 | `yol yoem.` | after a question, offer them a pass | *…, or would you rather not say?* |
 
-Soft **`yom`** asks more gently (`yom yoal.` *…, if that's okay?*), and the other polar words and endings make tags the same way.
+Soft **`yom`** asks more gently (`yom yaol.` *…, if that's okay?*), and the other polar words and endings make tags the same way.
 
-**Compare with:** the answer itself is the polar word alone (`yoal.` *sure*). The tag puts **`yol`** first, so it asks for that answer instead of giving it.
+**Compare with:** the answer itself is the polar word alone (`yaol.` *sure*). The tag puts **`yol`** first, so it asks for that answer instead of giving it.
 
 ### Confirming a negative {#confirming-a-negative}
 
-When the question already contains *not* (*Didn’t Uzozen run?*), *yes* and *no* still say whether **that claim** matches. **`yael`** confirms the denial (*true: they didn’t*). **`yuel`** says the denial is false (*they did*). Restate the body after the stance word to make the answer unmistakable. Offer words (**`yoal`** / **`yuol`**) still answer *take this?*, not true/false.
+When the question already contains *not* (*Didn’t Uzozen run?*), *yes* and *no* still say whether **that claim** matches. **`yael`** confirms the denial (*true: they didn’t*). **`yuel`** says the denial is false (*they did*). Restate the body after the stance word to make the answer unmistakable. Offer words (**`yaol`** / **`yuol`**) still answer *take this?*, not true/false.
 
 > `yol zuzozen varuvel vul. yael.`
 >
@@ -920,7 +920,7 @@ y-question | z-listener | v-think | d-that-clause | z-wh | v-lie
 **6.** *Please attest, okay?*
 
 ::: details Show answer
-`yem vugol zawan. yol yoal.`
+`yem vugol zawan. yol yaol.`
 
 y-request | v-attest | z-listener . y-question | y-sure
 :::

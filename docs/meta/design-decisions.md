@@ -138,22 +138,31 @@ A full name is the given name plus a family name on `/ɡ/` + **-n** ([word-endin
 
 ### Stacked vowels
 
-Only the six standard stacks exist (`uo` `ua` `ue` `oa` `oe` `ae`), always in the order **u**, **o**, **a**, **e**. A reversed or extra pair is too easy to confuse by ear with its standard twin (`eo` vs `oe`).
+Only the six standard stacks exist (`ua` `uo` `ue` `ao` `ae` `oe`), always in the order **u**, **a**, **o**, **e**. A reversed or extra pair is too easy to confuse by ear with its standard twin (`eo` vs `oe`).
 
 **Stacks have their own order, not pitch order.** Each vowel keeps its pitch in a stack, so every stack is a small melody, and stacks are worth telling apart by ear. In pitch order (`u e o a`) every stack falls, and `ue`, `eo` and `oa` are all one-step falls that differ only in height. Contrast needs falls and rises mixed, so the order must go down in pitch and back up. All six orders that keep **u** first (the `u` stacks carry **u**-first readings) were scored by close pairs: two stacks whose start and end are each within one pitch step.
 
-| Stack order | Stacks | Close pairs |
-|-------------|--------|-------------|
-| `u e o a` (pitch order: all falls) | `ua uo ue ea oa eo` | 10 |
-| `u e a o` | `ua uo ue ea eo ao` | 8 |
-| `u a e o` | `ua uo ue ae ao eo` | 6 |
-| `u a o e` | `ua uo ue ae ao oe` | 5 |
-| `u o e a` | `ua uo ue oe oa ea` | 5 |
-| **`u o a e`** | `ua uo ue oa ae oe` | **3** |
+| Stack order | Stacks | Close pairs | Falls exactly on the **u** stacks |
+|-------------|--------|-------------|------------------------------------|
+| `u e o a` (pitch order: all falls) | `ua uo ue ea oa eo` | 10 | no |
+| `u e a o` | `ua uo ue ea eo ao` | 8 | no |
+| `u a e o` | `ua uo ue ae ao eo` | 6 | no |
+| **`u a o e`** | `ua uo ue ao ae oe` | **5** | **yes** |
+| `u o e a` | `ua uo ue oe oa ea` | 5 | no |
+| `u o a e` | `ua uo ue oa ae oe` | 3 | no |
 
-The ranking is the same in semitones (0 / 3 / 5 / 7) as in steps. `u o a e` gives three falls from the top, one low fall (`oa`) and two rises (`ae`, `oe`); `oa` falls where the other two non-**u** stacks rise. An order with **o** before **u** (`ua ou ue ae oa eo`) has no two stacks one step apart at either end, but its preferences run in a circle, so learners would memorize six pairs instead of one order. The alphabet's vowels follow the same order, so a stack is always in alphabetical order.
+The ranking is the same in semitones (0 / 3 / 5 / 7) as in steps. An order with **o** before **u** (`ua ou ue ae oa eo`) has no two stacks one step apart at either end, but its preferences run in a circle, so learners would memorize six pairs instead of one order. The alphabet's vowels follow the same order, so a stack is always in alphabetical order.
 
-**Polar stance reads by contents.** With **a** never before **o**, the *sure* stance `oa` cannot start with its accept vowel, so a polar pair is read by which vowels it has: **u** is the undo family, otherwise **a** accept, otherwise **o** pass ([questions](../grammar/questions.md#polar-stance-fuller-inventory)). The ranking is its own short rule (undo outranks accept, accept outranks pass), and it matches pronoun tag pairs, which already ignore order.
+**A fall marks the u stacks.** `u a o e` is the only order that puts the three other vowels in rising pitch (`a`, `o`, `e`), so every **u** stack falls and every other stack rises. A **u** stack is the undo or set-aside member of its family, so the contour's direction, the pitch cue that best survives quick or flat speech, carries polarity ([phonology](../grammar/phonology.md#phonotactics)).
+
+**Direction outranks the close-pair count.** `u o a e` scores best (3 close pairs to 5), and it differs from `u a o e` in one stack only: a small low fall `oa` (3 → 0 semitones) where `u a o e` has a small low rise `ao` (0 → 3). Of the five pairs that stack is in, three become clearer and two less clear:
+
+- **Clearer:** against `ua`, `uo` and `ue`, the stack now runs the other way. The count missed the worst of the old pairs: `oa` and `uo` (7 → 3) have the same shape, a fall of 3 to 4 semitones, only about 3.5 semitones apart in height. That pair crosses the **u** line, so a slip flips the meaning: *sure* heard as *not that*, *picks* as *bars*, *on this pair* as *except this pair*.
+- **Less clear:** `ao` against `ae` (same start, ends 2 semitones apart) and against `oe` (rises of 3 and 2 semitones, about 2.5 apart in height). `ao` and `oe` are now the closest pair in the system, and the three rises crowd together, more so for a speaker who flattens the low end of the range, where `ao` starts. Both pairs stay on one side of the **u** line, so the worst slip keeps the polarity: *sure* heard as *true* or *I won't answer*, *on* as *using* or *toward*.
+
+Vowel sound still separates every pair, so the crowded rises cost something only when the vowels are also half-heard. Removing a same-shape pair that crosses the **u** line, and giving polarity the strongest pitch cue, was judged worth two close pairs inside the non-**u** side.
+
+**Polar stance reads by its first vowel.** Alphabet order matches the family ranking (undo, then accept, then pass), so the first vowel of a polar pair names its family ([questions](../grammar/questions.md#polar-stance-fuller-inventory)). Under `u o a e`, *sure* could not start with its accept vowel, and a pair would have to be read by which vowels it has.
 
 **e comes last, not o.** In a rank join stack the last vowel names the move and the first adjusts it, so every rank join ends in **e** (`e` `ae` `ue` `oe`). Spelling the tie `eo` would make it the one rank join that does not end in **e**. With **u** as /ʉ/, `oe` vs `ue` is a clear contrast, so the sound gives no reason to move **o** last.
 
@@ -269,7 +278,7 @@ The [finger code](../grammar/finger-code.md) gives each letter a shape counted o
 | Alternative | Why not |
 |-------------|---------|
 | Vowel runs from the index | On the left hand the index plays the highest key, so a one-finger `a` would strike A♯3 and the piano would fall as the count rose. It would need either *fewer fingers, higher vowel* (shapes that count against the digits) or vowels on the right hand (consonants below them and a new piano layout) |
-| Vowel shapes in alphabet order (`u o a e`) | The piano's finger-to-key layout would no longer match the vowel pitches, and the opposite pairs would each be two fingers apart |
+| Vowel shapes in alphabet order (`u a o e`) | The piano's finger-to-key layout would no longer match the vowel pitches |
 
 | Alternative | Why not |
 |-------------|---------|

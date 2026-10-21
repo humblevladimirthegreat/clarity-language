@@ -69,7 +69,7 @@ Other role letters work the same way: `blarth` after a pole (*because of that*),
 | [**`vurn`**](../dependents.md#stand-in-roles) | something to avoid | *prohibit…* | A |
 | [**`vaen`**](../dependents.md#stand-in-roles) | accepts a statement | *confirm that…* | A |
 | [**`vuen`**](../dependents.md#stand-in-roles) | rejects a statement | *deny that…* | A |
-| [**`voan`**](../dependents.md#stand-in-roles) | accepts a proposed action | *agree to…* | A |
+| [**`vaon`**](../dependents.md#stand-in-roles) | accepts a proposed action | *agree to…* | A |
 | [**`vuon`**](../dependents.md#stand-in-roles) | rejects a proposed action | *decline to…* | A |
 | [**`vuan`**](../dependents.md#stand-in-roles) | rejects the premise | *dispute the premise that…* | A |
 

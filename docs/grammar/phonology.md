@@ -50,7 +50,7 @@ With a microphone, **Find my home note** listens while you hold a long `a` on a 
 ### Consonants
 
 A consonant starts a syllable. Many consonants have a **voiced** sound (vocal cords buzzing, as in *zoo*) and an unvoiced one (as in *sea*), and Agebon treats the two as the same letter. Prefer the voiced sound so you can hold a sung note; the unvoiced one is fine for style.
-<!-- Consonant order is alphabet order: the ten digit letters in digit order (b d g h z v r l n m = 1–9, 0), then th w y x. The alphabet / letter-name recitation ends with the vowels u o a e, the same order as vowel stacks. -->
+<!-- Consonant order is alphabet order: the ten digit letters in digit order (b d g h z v r l n m = 1–9, 0), then th w y x. The alphabet / letter-name recitation ends with the vowels u a o e, the same order as vowel stacks. -->
 
 | Agebon | IPA | Cue | Unvoiced variant |
 |--------|-----|-----|------------------|
@@ -110,18 +110,20 @@ Beginner already used word edges: a content word ends in `-l` / `-m` / `-n` / `-
 
 A syllable ends with a consonant only at the **end of the word**. Inside a root, `l` and `r` always have a vowel after them, so they start a syllable rather than sounding like a suffix (`zubulel`: prefix `z`, root `ubule`, ending `-l`). Each spelling has only one pronunciation.
 
-Some short grammar words put two vowels side by side, a **vowel stack** (a join such as `ua`). A stack always puts its vowels in alphabetical order (`u`, `o`, `a`, `e`): `u` comes first and `e` comes last. That gives six stacks: `uo`, `ua`, `ue`, `oa`, `oe`, and `ae`. The two vowels stay two separate syllables.
+Some short grammar words put two vowels side by side, a **vowel stack** (a join such as `ua`). A stack always puts its vowels in alphabetical order (`u`, `a`, `o`, `e`): `u` comes first and `e` comes last. That gives six stacks: `ua`, `uo`, `ue`, `ao`, `ae`, and `oe`. The two vowels stay two separate syllables.
 
-Each vowel keeps its [pitch](#vowel-pitch) in a stack, so every stack is a small melody. The alphabet's vowel order goes down in pitch and back up, so the stacks mix falls and rises and each one sounds different from the others:
+Each vowel keeps its [pitch](#vowel-pitch) in a stack, so every stack is a small melody. The alphabet's vowel order drops from `u` to the lowest vowel and then climbs back, so the stacks mix falls and rises:
 
 | Stack | Pitch | Contour |
 |-------|-------|------|
 | `ua` | high → low | big fall |
 | `uo` | high → mid-low | medium fall |
 | `ue` | high → mid-high | small fall, high |
-| `oa` | mid-low → low | small fall, low |
+| `ao` | low → mid-low | small rise, low |
 | `ae` | low → mid-high | medium rise |
 | `oe` | mid-low → mid-high | small rise, mid |
+
+**A fall means `u`.** Every stack that starts with `u` falls, and every other stack rises. In grammar words a `u` stack is usually the *undo* or *set aside* member of its family, so you can hear which side a stack is on from its direction alone, before the second vowel is clear. The direction backs up the vowels; when the two disagree, trust the vowels.
 
 **Related form:** word-initial `x` is the [continue](dependents.md#continue-x) prefix (discourse), not a compound seam.
 
@@ -175,8 +177,8 @@ The table is in **alphabetical order**. The ten letters that begin a digit sylla
 | `y` | `yu` | *you* |
 | `x` | `xe` | *shed* |
 | `u` | `u` | *you* (without the *y*) |
-| `o` | `o` | *Cambodia* (no glide) |
 | `a` | `a` | *spa* |
+| `o` | `o` | *Cambodia* (no glide) |
 | `e` | `e` | *bet* |
 
 <!-- retie: letter-names -->

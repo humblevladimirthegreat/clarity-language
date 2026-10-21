@@ -8,7 +8,7 @@ import type { LexWord, NumberStem } from "./types.js";
 export const JOIN_SERIES: Record<string, { english: string; job: string }> = {
   a: { english: "and", job: "and" },
   o: { english: "exclusive or", job: "or-exactly-one" },
-  oa: { english: "and/or", job: "and/or" },
+  ao: { english: "and/or", job: "and/or" },
   u: { english: "not / none of", job: "not" },
   ua: { english: "everything but", job: "everything-but" },
   uo: { english: "anything but", job: "anything-but" },

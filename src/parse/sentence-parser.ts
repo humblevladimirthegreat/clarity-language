@@ -195,7 +195,7 @@ const NP_HEAD = {
 function isScopeThoVerb(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
   const v = family?.kind === "x" && family.xFamily === "scope" ? family.stanceVowel : undefined;
-  return tokenIs(token, V) && (v === "o" || v === "oa" || v === "uo");
+  return tokenIs(token, V) && (v === "o" || v === "ao" || v === "uo");
 }
 
 function joinSeries(token: IToken): string {
@@ -450,7 +450,7 @@ class AgebonSentenceParser extends CstParser {
   }
 
   /**
-   * An asking tag (`yol yael.`, `yom yoal.`; questions.md#tags): an act word (or a force pair) and polar words, a turn
+   * An asking tag (`yol yael.`, `yom yaol.`; questions.md#tags): an act word (or a force pair) and polar words, a turn
    * of its own with no body. Enforce allows one polar word.
    */
   public leftEdgeTag = this.RULE("leftEdgeTag", () => {
@@ -1715,7 +1715,7 @@ function splitAtStandIn(units: Unit[], index: number, orodo: LexWord): Clause {
   return { units: units.slice(0, index + 1), dependent: rest.length > 0 ? { orodo, clause: { units: rest } } : undefined };
 }
 
-const IMPLIED_SUBJECT_SERIES = new Set(["e", "u", "oa", "uo", "ua"]);
+const IMPLIED_SUBJECT_SERIES = new Set(["e", "u", "ao", "uo", "ua"]);
 
 function verbalDependentIn(unit: Unit): { word: LexWord; coord: VpCoord; stacked: boolean } | undefined {
   if (unit.kind !== "vp" || unit.coord.parts.length === 0) return undefined;

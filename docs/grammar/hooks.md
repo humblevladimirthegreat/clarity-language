@@ -463,7 +463,7 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 | **-l** | English | **-m** | English | Cue |
 |--------|---------|--------|---------|-----|
 | **`al`** | *in* | **`am`** | *amid* | **a** ≈ add (into a volume); **-m** that volume as the setting |
-| **`oal`** | *on* | **`oam`** | *over* | **oa** ≈ one face, added onto; **-m** that face as the setting |
+| **`aol`** | *on* | **`aom`** | *over* | **ao** ≈ added onto one face; **-m** that face as the setting |
 | **`ol`** | *at* | **`om`** | *near* | **o** ≈ one (the one point); **-m** that point as the setting |
 | **`oel`** | *toward* | **`oem`** | *in the direction of* | **o** ≈ at + **e** ≈ for: aimed at one point; **-m** that aim as the setting |
 | **`ul`** | *from* | **`um`** | *away from* | **u** ≈ undo (leave); **-m** that origin as the setting |
@@ -473,7 +473,7 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 | **`ael`** | *using* | **`aem`** | *by* | **ae** ≈ add to the aim: the means that serves it; **-m** the channel |
 | **`uel`** | *against* | **`uem`** | *contrary to* | **ue** ≈ undo aimed at; **-m** the opposing frame |
 
-> `zuzozen vuhohol oal buhohol.`
+> `zuzozen vuhohol aol buhohol.`
 >
 > z-Uzozen | v-sit | [on | b-chair]
 >
@@ -588,15 +588,15 @@ English *In fact, …* or *What's more, …* adds a point that goes further than
 >
 > "In fact, Olazun sleeps."
 
-Opening with **`oal …`** gives English *For example, …*: this sentence is one case of what you just said. (cue: **oa** ≈ one sample, added) With **-m**, `oam …` adds *among others* and `aem …` adds *in fact, and maybe more*. No other two-vowel hook opens a sentence: for *next*, *by the way*, and *on the contrary*, use a [linker](dependents.md#sentence-linkers).
+Opening with **`aol …`** gives English *For example, …*: this sentence is one case of what you just said. (cue: **ao** ≈ add one sample) With **-m**, `aom …` adds *among others* and `aem …` adds *in fact, and maybe more*. No other two-vowel hook opens a sentence: for *next*, *by the way*, and *on the contrary*, use a [linker](dependents.md#sentence-linkers).
 
-> `zavayal vowurel. oal zolazun vowurel.`
+> `zavayal vowurel. aol zolazun vowurel.`
 >
 > z-family | v-walk . for.example | z-Olazun | v-walk
 >
 > "The family walks. For example, Olazun walks."
 
-**Compare with:** `al …` *Additionally* adds a separate point next to the last one; `oal …` gives an instance of it. Inside a clause, *such as* is `am` (*including, and maybe more*).
+**Compare with:** `al …` *Additionally* adds a separate point next to the last one; `aol …` gives an instance of it. Inside a clause, *such as* is `am` (*including, and maybe more*).
 
 ### Somewhere, nowhere, everywhere {#place-indefinites}
 
@@ -733,16 +733,16 @@ English *there*, *from there*, and *for it* point back to a place or thing alrea
 >
 > "The dog sleeps in the house. It runs from there."
 
-Stacked extra-noun vowels point back the same way: the vowels keep the extra they named (`oal` *on*, `ael` *using*, `uol` *through*), and **-r** drops the landmark.
+Stacked extra-noun vowels point back the same way: the vowels keep the extra they named (`aol` *on*, `ael` *using*, `uol` *through*), and **-r** drops the landmark.
 
 <!-- cheat-sheet: joins-hooks -->
 | Agebon | Points back to | English |
 |--------|----------------|---------|
-| `oar` | the face already named | *on it* |
+| `aor` | the face already named | *on it* |
 | `aer` | the means already named | *with it* |
 | `uor` | the path already named | *through there* |
 
-> `zuzozen vuhohol oal buhohol. zolazun vuhohol oar.`
+> `zuzozen vuhohol aol buhohol. zolazun vuhohol aor.`
 >
 > z-Uzozen | v-sit | [on | b-chair] . z-Olazun | v-sit | on.it
 >
@@ -890,7 +890,7 @@ The range runs from A to B, in the order you say them. Endings work as on other 
 >
 > "Someone between Uzozen and Ahelan sleeps."
 
-A range **-r** always has a word on each side (`oer` / `uar` / `uer`). With nothing on the right, stacked extra-noun **-r** still [points back](#hook-resume) (`oar` *on it*).
+A range **-r** always has a word on each side (`oer` / `uar` / `uer`). With nothing on the right, stacked extra-noun **-r** still [points back](#hook-resume) (`aor` *on it*).
 
 > `zuzozen ual zahelan vezuvol.`
 >
@@ -948,7 +948,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Uzozen writes on the page.*
 
 ::: details Show answer
-`zuzozen varayel oal bebonel.`
+`zuzozen varayel aol bebonel.`
 
 z-Uzozen | v-write | [on | b-page]
 :::
@@ -1101,7 +1101,7 @@ The left ending is part of the stem, so two different left roots stay distinct o
 | Hook | Free extra-noun | Fused **-l** | Fused **-m** | Citation (from *walk*) |
 |------|-----------------|--------------|--------------|------------------------|
 | **`al` / `am`** | *in* / *amid* | *enter* | *mill amid* | `owurelal` / `owurelam` |
-| **`oal` / `oam`** | *on* / *over* | *mount* | *cover* | `owureloal` / `owureloam` |
+| **`aol` / `aom`** | *on* / *over* | *mount* | *cover* | `owurelaol` / `owurelaom` |
 | **`ol` / `om`** | *at* / *near* | *attend* | *adjoin* | `owurelol` / `owurelom` |
 | **`oel` / `oem`** | *toward* / *in the direction of* | *head for* | *orient* | `owureloel` / `owureloem` |
 | **`ul` / `um`** | *from* / *away from* | *leave* | *recede* | `owurelul` / `owurelum` |

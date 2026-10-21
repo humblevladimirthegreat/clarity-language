@@ -225,7 +225,7 @@ main sentence …  thohom / thebom / …  barl   [dependent sentence]
 >
 > "Uzozen walks only if Olazun is asleep."
 
-Several conditions can sit inside `/b/` as a [join](joins.md) (`thohom blugalal blozulal boam` *if clouds and/or snow*).
+Several conditions can sit inside `/b/` as a [join](joins.md) (`thohom blugalal blozulal baom` *if clouds and/or snow*).
 
 **Related form:** to join two full sentences with *and also*, use a clause [join](joins.md) (`xam`), not a pole.
 
@@ -544,6 +544,6 @@ A because pole takes the act, not the person: say what Olazun did after **`blarl
 
 ## See also
 
-- Inclusive single-item **`…oam` / `…oal`** (*at least X* / *X is enough*): [joins.md](joins.md#single-item-phrase)
+- Inclusive single-item **`…aom` / `…aol`** (*at least X* / *X is enough*): [joins.md](joins.md#single-item-phrase)
 - Restrictors **`hal` / `hual`**: [restrictors.md](restrictors.md)
 - Dependent clauses / **`blarl`**: [dependents.md](dependents.md#dependent-clauses)

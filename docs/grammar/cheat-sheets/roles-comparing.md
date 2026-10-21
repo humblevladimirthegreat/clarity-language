@@ -23,7 +23,7 @@ Write a thing letter (`/z/` `/d/` `/b/`), the role vowel, mid-word **`x`**, the 
 | [**`oe`**](../roles.md#goal-source-path) | the goal | `doexaruvel` | *a finish line* | I |
 | [**`ua`**](../roles.md#goal-source-path) | the source | `duaxobuvur` | *where it was poured from* | I |
 | [**`uo`**](../roles.md#goal-source-path) | the path | `duoxowurel` | *a walkway* | I |
-| [**`oa`**](../roles.md#result) | the result, newly made | `doaxeguyel` | *a building* | I |
+| [**`ao`**](../roles.md#result) | the result, newly made | `daoxeguyel` | *a building* | I |
 | [**`ue`**](../roles.md#bearer) | the one who pays | `zuexurozum` | *a theft victim* | I |
 
 | Job | Example | English | Stage |
@@ -48,7 +48,7 @@ A role pointer drops the stem. The pointer vowel picks the event by position: **
 | [`doexar`](../roles.md#stacked-pointers) | where it headed | **`oel`** | I |
 | [`duaxar`](../roles.md#stacked-pointers) | where it came out of | **`ual`** | I |
 | [`duoxar`](../roles.md#stacked-pointers) | the way it went | **`uol`** | I |
-| [`doaxar`](../roles.md#stacked-pointers) | what it made | the event's own | I |
+| [`daoxar`](../roles.md#stacked-pointers) | what it made | the event's own | I |
 | [`zuexar`](../roles.md#stacked-pointers) | the one who paid for it | **`uel`** | I |
 
 | Job | Example | English | Stage |

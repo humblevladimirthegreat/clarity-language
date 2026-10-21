@@ -19,7 +19,7 @@ describe("vowel pitch", () => {
   });
 
   it("lists the six stacks", () => {
-    assert.deepEqual(STACKS, ["uo", "ua", "ue", "oa", "oe", "ae"]);
+    assert.deepEqual(STACKS, ["ua", "uo", "ue", "ao", "ae", "oe"]);
   });
 
   it("opens every contour with a", () => {
@@ -36,9 +36,13 @@ describe("vowel pitch", () => {
   it("reads each contour from its two vowels", () => {
     const contours = Object.fromEntries(drillPhrases("contours").map((p) => [p.word, p.caption]));
     assert.equal(contours.ua, "falls");
-    assert.equal(contours.oa, "falls");
+    assert.equal(contours.ao, "rises");
     assert.equal(contours.ae, "rises");
     assert.equal(contours.oe, "rises");
+  });
+
+  it("falls exactly on the u stacks (phonology.md#phonotactics)", () => {
+    for (const { caption, word } of drillPhrases("contours")) assert.equal(caption, word!.startsWith("u") ? "falls" : "rises", word!);
   });
 
   it("runs the consonants in alphabet order: digit syllables up, every letter name down", () => {
