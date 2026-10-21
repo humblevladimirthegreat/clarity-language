@@ -30,6 +30,8 @@ Each vowel also has its own **pitch**, always the same one: `u` is high, `e` mid
 
 Voices differ, so a vowel's pitch is how far it sits above your own `a`, not a fixed note. To practice, pick a pattern below, move `a` until it sits comfortably at the lower end of your vocal range, press **Play**, and sing each vowel as it lights up.
 
+With a microphone, **Find my `a`** listens while you hold a comfortable low note and makes it your `a`. **Check me** gives you a turn to sing each vowel back after you hear it (in **Random**, before you hear it), then marks whether you were within about a semitone.
+
 <PitchDrill />
 
 #### Opposite vowels {#opposite-vowels}

@@ -12,7 +12,6 @@ use [skip-cd] for amplify to not deploy.
 -vocab flashcards generator
 -contact form / about me
 -proposals
--pitch drill (phonology.md#vowels, `<PitchDrill />`): *find my `a`*, where the learner sings a comfortable `a` into the microphone and the widget sets the base from its pitch; then a pitch check (sung pitch against the target, within about a semitone). The drill must keep working without the microphone
 
 Finger code (experimental, docs/grammar/finger-code.md; remove the warning once tested):
 -piano on a real instrument, with a player controlling the timing: do the held coda and the one-beat word rest read at speed, is the hook mark easy to hear, do `n` (a sixth) and `e` + hook (a seventh) sound smooth

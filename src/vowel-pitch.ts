@@ -80,3 +80,15 @@ export function drillPhrases(mode: DrillMode, pick: () => number = () => Math.fl
       });
   }
 }
+
+/**
+ * The phrases for the microphone check: after each played note, the opening `a` included, a silent turn to
+ * sing it back, so the microphone hears only the learner. A phrase that already has a sing turn (Random)
+ * keeps its own order.
+ */
+export const withSingTurns = (phrases: readonly DrillPhrase[]): DrillPhrase[] =>
+  phrases.map((p) =>
+    p.steps.some((s) => s.kind === "sing")
+      ? p
+      : { ...p, steps: p.steps.flatMap((s) => [s, { vowel: s.vowel, kind: "sing" as const, beats: 2 }]) },
+  );

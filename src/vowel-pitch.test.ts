@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
 import { vowelKey } from "./finger-code.ts";
-import { DRILL_MODES, drillPhrases, PITCH_ORDER, STACKS, VOWEL_PITCH } from "./vowel-pitch.ts";
+import { DRILL_MODES, drillPhrases, PITCH_ORDER, STACKS, VOWEL_PITCH, withSingTurns } from "./vowel-pitch.ts";
 
 describe("vowel pitch", () => {
   it("sits on the finger code's piano keys", () => {
@@ -44,5 +44,13 @@ describe("vowel pitch", () => {
       drillPhrases("random", () => 2)[0]!.steps.map((s) => `${s.kind} ${s.vowel}`),
       ["ref a", "sing u", "note u"],
     );
+  });
+
+  it("adds a turn to sing back each note, unless the phrase already has one", () => {
+    const steps = (mode: Parameters<typeof drillPhrases>[0]) =>
+      withSingTurns(drillPhrases(mode, () => 2)).map((p) => p.steps.map((s) => `${s.kind} ${s.vowel}`));
+    assert.deepEqual(steps("up"), [["note a", "sing a", "note o", "sing o", "note e", "sing e", "note u", "sing u"]]);
+    assert.deepEqual(steps("random"), [["ref a", "sing u", "note u"]]);
+    assert.deepEqual(steps("pairs")[1], ["ref a", "sing a", "note o", "sing o", "note e", "sing e"]);
   });
 });
