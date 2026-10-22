@@ -26,6 +26,7 @@ Uzozen is glad that it rains.	that	first:feeling-that	*that* after a feeling wor
 My sister couldn't come yesterday.	sister	link:say-people-places.md#kin-words	a kin word goes to its table
 The teacher sings.	teacher	first:role	a doer noun with no root gets a role compound
 The teacher sings.	teacher	link:roles.md#one-time-or-a-practice	the practiced role comes with it
+Uzozen speaks as a teacher.	as a teacher	link:roles.md#capacity	*as a teacher* is the role the act is done in
 The flower sings.	flower	not:roles.md#role-compounds	a noun with a root of its own is no doer
 The flower sings.	flower	not:roles.md#one-time-or-a-practice	a noun with a root of its own is no doer
 # Clause openers

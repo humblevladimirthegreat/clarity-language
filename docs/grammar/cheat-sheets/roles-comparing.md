@@ -36,8 +36,23 @@ Write a thing letter (`/z/` `/d/` `/b/`), **`w`**, a scope vowel, a part consona
 | [The event itself](../roles.md#the-event-itself): no **`w`** | `davuvul` | *a fight* | B |
 | [What it makes](../roles.md#the-undergoer-d): **`d`** | `dwadeguyel` | *something built* | B |
 | [A kind of tool, place, or time](../roles.md#places-tools-times): a compound with a head root | `darayexuwal` | *a writing tool* | I |
+| [The role you act in](../roles.md#capacity): on `/h/` | `zuzozen vezuyel hwezuduyel.` | *Uzozen speaks as a teacher.* | I |
 
 A role compound has one part consonant, right after its scope vowel. Its stem is always an event: `zwazuwon` is not a word.
+
+### Content of the event {#content}
+
+A part consonant can name a quality of the event, not a person in it. Pointers drop the stem.
+
+| Part | Names | Compound | Pointer | Stage |
+|------|-------|----------|---------|-------|
+| [**`h`**](../roles.md#content-of-the-event) | how, when, or where | `dwahowurel` | `dwahar` | I |
+| [**`g`**](../roles.md#content-of-the-event) | the state it leaves | `dwaguguyel` | `dwagar` | I |
+| [**`th`**](../roles.md#content-of-the-event) | a reason or feeling | `dwathowurel` | `dwathar` | I |
+| [**`w`**](../roles.md#content-of-the-event) | how much | `dwawowurel` | `dwawar` | I |
+| [**`y`**](../roles.md#content-of-the-event) | the turn that said it | `dwayowurel` | `dwayar` | I |
+| [**`x`**](../roles.md#content-of-the-event) | what followed | `dwaxowurel` | `dwaxar` | I |
+| [**`v`**](../roles.md#content-of-the-event) | the event itself | (the event noun: `dowurel`) | `dwavar` | I |
 
 ### Without the stem {#pointers}
 
@@ -316,6 +331,8 @@ English *many* and *often* rank against an unstated baseline. Agebon names the b
 | `zolazun zuzozen zel huhunem vowurel` *more intensely than* ([ranks the manner](../comparatives.md#manner-scale)) | | `guhunem` *more intense* ([a quality of the people](../comparatives.md#manner-scale)) |
 | `zuzozen thagem zel bral vovurel` *later than planned* ([a bar before the join](../comparatives.md#bars)) | | `zuzozen zel bral vovurel thagem` *I plan for them to be last* ([a stance after](../comparatives.md#bars)) |
 | `zwazuduyel` *someone who teaches* ([any one who does it](../roles.md#role-compounds)) | | `zwezuduyel` *a teacher* ([a practiced role](../roles.md#one-time-or-a-practice)) |
+| `hwezuduyel` *as a teacher* ([the role you act in](../roles.md#capacity)) | | `hewom blwezuduyel` *like a teacher* ([a similative](../relations.md#similative)) |
+| `dwahowurel` *a way of walking* ([a quality of the event](../roles.md#content-of-the-event)) | | `dwazowurel` *someone who walks* ([a participant](../roles.md#role-compounds)) |
 | `zwazuduyer` *the one teaching* ([this instance](../roles.md#role-compounds)) | | `gwazuduyel` *is one who teaches* ([a label](../roles.md#saying-someone-is-a-teacher)) |
 | `darayexuwal` *a writing tool* ([a compound](../roles.md#places-tools-times)) | | `ael` *using* ([a hook on the clause](../hooks.md#extra-noun)) |
 | `gowuhel` *west* ([compass](../roles.md#endings-and-resume)) | | `gowuhethuzozen` *Uzozen's left* ([a face](../roles.md#endings-and-resume)) |

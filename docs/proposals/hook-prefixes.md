@@ -1,6 +1,6 @@
 # Proposal: Hook prefixes (*anti-*, *pro-*, *trans-*)
 
-**Status:** PROPOSED. Nothing here is implemented. It needs the role-letter + vowel + **`x`** + stem shape that role compounds use today, which `role-consonant-compounds.md` moves to role letter + **`w`**. This proposal lands after that one's step 2, so no page ever reads a hook prefix as a role compound.  
+**Status:** PROPOSED. Nothing here is implemented. Role compounds already use role letter + **`w`**, so the role-letter + vowel + **`x`** + stem shape is free. This proposal claims that shape for hook prefixes.  
 **Related:** [hook compounds](../grammar/hooks.md#hook-compounds), [extra-noun hooks](../grammar/hooks.md#extra-noun), [stacked hook vowels](../grammar/hooks.md#extra-noun-intermediate), [compounds](../grammar/compounds.md), [left and right of `x`](../grammar/compounds.md#families-by-shape), [singability constraints](../grammar/phonology.md#singability-constraints).
 
 ## Problem
@@ -126,15 +126,15 @@ The **-l** hooks are the everyday ones (*in*, *at*, *from*, *against*), so their
 
 ## Spelling and parsing
 
-- **Left of the seam:** one hook vowel or one hook pair. A full root is at least three letters and alternates consonant and vowel, so the [left and right of `x`](../grammar/compounds.md#families-by-shape) test that tells role compounds from ordinary compounds today tells hook prefixes from them after the move.
-- **Right of the seam:** a stem of at least three letters. A single vowel and an ending (role letter + vowel + **`x`** + vowel + ending, today's pointer shape) is not a hook prefix; it stays unclaimed, as `role-consonant-compounds.md` lists it.
+- **Left of the seam:** one hook vowel or one hook pair. A full root is at least three letters and alternates consonant and vowel, so the [left and right of `x`](../grammar/compounds.md#families-by-shape) test that tells ordinary compounds from other `x` families also tells a hook prefix from an ordinary compound.
+- **Right of the seam:** a stem of at least three letters. A single vowel and an ending (role letter + vowel + **`x`** + vowel + ending) is not a hook prefix; it is unclaimed ([unassigned-reserved](../meta/unassigned-reserved.md)).
 - **Vowel pairs that are not hooks** (**`ea`**, **`eo`**, **`eu`**, **`oa`**, **`ou`**, **`au`**, and so on) before **`x`** or **`mx`** have no reading. List them in `unassigned-reserved.md`.
 - **`lx`** after hook vowels has no reading, closed by design (above). Any other consonant before the seam (**`nx`**, **`rx`**) has no reading either.
 - **Roots:** no root contains **`x`**, and every root starts and ends with a vowel, so neither seam is ever inside a root, and **`mx`** right after the role letter's vowels is always this seam.
 - **Not the plural:** word-final **-mx** is the [indefinite group](../grammar/plurality.md) on an abstract word. The seam always has a stem after it, so the two never meet: `gumxuzebum` is a prefix word, `zuzebumx` is *some habits*.
 - **Hosted:** a hook prefix in a `bl-` slot is `bluexavuvul`, or `bluemxonam`.
 - **Syllables:** **`x`** opens the stem's first syllable (`gue-xa-vu-vul`), as in any **`x`** compound. With **`mx`**, the **`m`** closes the hook's syllable (`guem-xo-nam`). That is a new syllable-final consonant inside an ordinary word, beside the lexical join before **`r`**; [singability constraints](../grammar/phonology.md#singability-constraints) must list it with the allowed clusters.
-- **Same spellings as today's role compounds:** `zaxuduyel` is *someone who teaches* today and would be *in-teaching* here, and `daexarayel` (*a writing tool*) would be *write-powered*. Every role compound on the grammar pages must be respelled to the **`w`** shape before any hook prefix is added. A respelling pass that misses one leaves a well-formed word with a new meaning, so `npm run build` and the parser checks are the only safety net; check the doc examples by hand.
+- **The old role-compound spellings are free:** `zaxuduyel` has no reading, and here it would be *in-teaching*; `daexarayel` would be *write-powered*. Role compounds already use **`w`** (`zwazuduyel`).
 
 ## Derivation in the dictionary
 

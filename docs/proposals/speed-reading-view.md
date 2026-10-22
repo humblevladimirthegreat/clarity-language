@@ -69,7 +69,7 @@ Topic stretches matter on long text: dialogues, readings, and multi-paragraph pa
 ## Open questions
 
 - **Abstract topics.** `xuzozem` (*grace* as topic) would show 🦢. Show it anyway, show it with a mark for *abstract sense*, or fall back to text?
-- **Compound topics.** A noun pair (`xubedaxuyudal` *peanut butter*), a multipart name, or a [role compound](../grammar/roles.md#role-compounds) (`xaxuduyel` *people who teach*): show each part's picture (up to two), only the head's, or text?
+- **Compound topics.** A noun pair (`xubedaxuyudal` *peanut butter*), a multipart name, or a [role compound](../grammar/roles.md#role-compounds) (`xwazuduyel` *people who teach*): show each part's picture (up to two), only the head's, or text?
 - **Repeated introductions.** When the same root is introduced again (not returned), should the picture be the same, or marked as a new stretch about a new one of that kind?
 - **Long stretches.** Should a stretch that runs past one screen repeat its picture at the top of each screen while scrolling?
 

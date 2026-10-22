@@ -186,6 +186,14 @@ Silence counted in beats at a sentence edge with no word: a **break** puts the n
 
 [Phonology](phonology.md#speech-edges)
 
+### Capacity
+
+A slot-part role compound on `/h/` (`hwezuduyel`): the role the act is done in (*as a teacher*).
+
+[Role compounds](roles.md#capacity)
+
+**Compare with:** resemblance is the [similative](relations.md#similative) (`hewom blwezuduyel` *like a teacher*). [Classification](#classification) on `/ɡ/` says someone **is** that role (`gwezuduyel`).
+
 ### Invited / offered / trial
 <a id="asked-typical-history"></a>
 <a id="wording-general-history"></a>
@@ -256,6 +264,12 @@ Rank join + SHARED **scale** (`/ɡ/` quality or `/h/` manner); single-item = sup
 Polar patterns that confirm a denied body.
 
 [Questions](questions.md#confirming-a-negative)
+
+### Content of the event
+
+A role word whose part consonant names a quality of the event (`dwahowurel` *a way of walking*, `dwahar` *the way it was done*), not a person in it.
+
+[Role compounds](roles.md#content-of-the-event)
 
 ### Continue (`/x/`)
 
@@ -703,7 +717,7 @@ Prefix-less *including / rather / instead / except*, discourse glue, extra-noun 
 ### Role compound / agent / patient / recipient
 <a id="role-compound--agent--place--patient--recipient"></a>
 
-Role letter + **`w`** + scope vowel + part consonant + stem (`zwazuduyel`). The part consonant is the role letter the participant had in the event: **`z`** the doer (agent), **`d`** what it acts on or makes (patient), **`b`** the extra party (recipient, or the other party on a relation stem).
+Role letter + **`w`** + scope vowel + part consonant + stem (`zwazuduyel`). The part consonant is the role letter the participant had in the event: **`z`** the doer (agent), **`d`** what it acts on or makes (patient), **`b`** the extra party (recipient, or the other party on a relation stem). On `/h/` a slot part is [capacity](#capacity). A [content](#content-of-the-event) part names a quality of the event.
 
 [Role compounds](roles.md#role-compounds)
 

@@ -438,6 +438,8 @@ English *the way it was done*, *what it left them*, *what came of it*, or *that 
 >
 > "Someone sees a way of walking."
 
+A slot part on the same stem is still a participant: `dwazowurel` is *someone who walks*, as [role compounds](#role-compounds) name a doer.
+
 The stem is still the event. The part says which quality of it you mean. Pointers drop the stem and read the latest matching event, as [role pointers](pronouns.md#role-pointers) do for people:
 
 > `zuzozen vowurel hedurem. zahelan dwahar vawebol.`

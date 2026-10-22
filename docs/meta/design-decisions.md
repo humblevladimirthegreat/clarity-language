@@ -116,7 +116,7 @@ Role letter + `w` + knowledge vowel + kind letter + a standalone join (`zwuyar` 
 
 - **The kind letter** mostly made one word of what two already say (`zeyol zar`, `zul geyol`). It also made a root tail, otherwise a memory aid, into grammar.
 - **The knowledge vowel** was optional, and plain `zar` stayed the default. A route with an extra clause is just as optional, so nothing is lost on how often people mark who knows which one, only length. A real question is plain `yol … bar`; *remind me* takes MEMORY on the question, and a choice PLAN; *I know who* is its own sentence (`zuwon vanam dorl zar.`); *you know the one* is a resume with no antecedent (`zeyor`); *nobody I'll name* as a source is `thebam blumon` plus that sentence; a shared-history *never* is the holder seam (`hal thevumayan`); *everyone we know* bounds the join with pair scope (`zual gwodanam blayan`). The quiz has no taught route yet (`stacked-speech-acts.md`).
-- **The shape is wanted elsewhere.** Role letter + `w` + vowel + consonant is the shape `role-consonant-compounds.md` gives role compounds and pointers.
+- **The shape is wanted elsewhere.** Role letter + `w` + vowel + consonant is the shape of [role compounds and pointers](../grammar/roles.md#role-compounds).
 
 ### Hooked parts and the result
 

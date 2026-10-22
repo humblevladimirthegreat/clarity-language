@@ -1,6 +1,6 @@
 # Proposal: Hooked joins (role + hook + `x` + join)
 
-**Status:** PROPOSED. Nothing here is implemented. The hooked join is built in the order `hook-prefixes.md` uses: hook vowels, **`x`**, then the head. It takes the role letter + vowel + **`x`** + vowel + ending slot, which is today's role pointer shape. So it lands with or after `role-consonant-compounds.md` and `hook-prefixes.md`, and no page ever reads a hooked join as a pointer.  
+**Status:** PROPOSED. Nothing here is implemented. The hooked join is built in the order `hook-prefixes.md` uses: hook vowels, **`x`**, then the head. It takes the role letter + vowel + **`x`** + vowel + ending slot, which is no longer a role pointer (pointers use role letter + **`w`**). So it lands with or after `hook-prefixes.md`, and no page ever reads a hooked join as a pointer.  
 **Related:** [standalone joins](../grammar/joins.md#standalone-phrase), [unspecified member](../grammar/joins.md#unspecified-member-r-phrase), [universals and domains](../grammar/joins.md#universals-domains-generics), [extra-noun hooks](../grammar/hooks.md#extra-noun), [stacked extra-noun vowels](../grammar/hooks.md#extra-noun-intermediate), [hook point-back](../grammar/hooks.md#hook-resume), [hook compounds](../grammar/hooks.md#hook-compounds), [here and there](../grammar/hooks.md#deixis), [since](../grammar/hooks.md#since), [left and right of `x`](../grammar/compounds.md#families-by-shape), [hosted `bl-` words](../grammar/clause.md#extra-nouns), [of-relations](../grammar/relations.md#of-relations), [restrictors](../grammar/restrictors.md), [fill-ask](../grammar/questions.md#fill-ask-r).
 
 ## Problem
@@ -221,7 +221,7 @@ Every target is marked by structure, so the resolver needs no noun meanings. A f
 
 ## Routes for retired kind indefinites
 
-`role-consonant-compounds.md` retires kind indefinites and gives each job a plain route. A hooked join gives a tighter route for three of them:
+Kind indefinites are already retired, and each job has a plain route. A hooked join gives a tighter route for three of them:
 
 | Retired form | Job | Plain route | Hooked-join route |
 |--------------|-----|-------------|-------------------|
@@ -231,7 +231,7 @@ Every target is marked by structure, so the resolver needs no noun meanings. A f
 
 ## Spelling and parsing
 
-- **The slot is today's role pointer.** Role letter + vowel + **`x`** + vowel + ending is a [role pointer](../grammar/pronouns.md#role-pointers) today: `zoxar` is *the latest extra party*. `role-consonant-compounds.md` moves pointers to role letter + **`w`** and leaves this slot unclaimed, and `hook-prefixes.md` leaves it unclaimed too. The hooked join claims it, with hook stacks on the left and join stacks on the right.
+- **The slot is unclaimed.** Role letter + vowel + **`x`** + vowel + ending used to be a role pointer; pointers now use role letter + **`w`** (`zwabar` is *the latest extra party*). `hook-prefixes.md` leaves this slot unclaimed too. The hooked join claims it, with hook stacks on the left and join stacks on the right.
 - **Right of `x`:** the next letters decide.
   - A root (vowel, consonant, vowel, …): a hook prefix, `goxahehal`.
   - Vowels, then an ending letter, then the end of the word or **-x**: a hooked join, `zoxual`, `zoxarx`.

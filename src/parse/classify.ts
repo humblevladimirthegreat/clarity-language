@@ -282,7 +282,7 @@ function publishedGlossForRoots(
   for (const root of roots) {
     const row = tables.published.get(root);
     if (!row) {
-      // A listed compound stem fills a root slot too (`zaxugulahahal`, a role compound on `read`).
+      // A listed compound stem fills a root slot too (`zwazanalawebol`, a role compound on `read`).
       const compound = compoundStems ? tables.compounds.get(root) : undefined;
       if (!compound) {
         allFound = false;

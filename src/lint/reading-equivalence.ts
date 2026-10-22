@@ -70,7 +70,7 @@ function canonical(result: ParseResult): string {
 /** What a bound pronoun stands for in its own slot. */
 function standIn(bind: AnaphorBind, referent: (word: LexWord) => string): unknown {
   const { pronoun, antecedent } = bind as AnaphorBind & { antecedent: LexWord };
-  // A new one of the kind the pointer reaches is the noun written out (`duxal` = `dugugol`).
+  // A new one of the kind the pointer reaches is the noun written out (`dwadal` = `dugugol`).
   if (pronoun.ending === "l" && bind.kind !== "role") {
     const from = antecedent.pos ?? "";
     const raw = antecedent.raw.startsWith(from) ? (pronoun.pos ?? "") + antecedent.raw.slice(from.length) : antecedent.raw;
