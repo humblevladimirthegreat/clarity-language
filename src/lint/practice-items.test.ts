@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 
 import { PRACTICE } from "./practice-fixtures.js";
-import { fixPromptRanges, practiceItems } from "./practice-items.js";
+import { fixPromptRanges, itemLimits, practiceBandStats, practiceItems } from "./practice-items.js";
 
 const details = (n: number) => Array.from({ length: n }, (_, i) => `**${i + 1}.** *x*\n\n::: details Show answer\n\`zuzozen vuhohol.\`\n:::\n`).join("\n");
 
@@ -67,6 +67,81 @@ describe("practiceItems, level review", () => {
     assert.deepEqual(items[0]!.spoiler.map((line) => line.kind), ["agebon", "text", "also", "rule"]);
     assert.deepEqual(findings, []);
     assert.ok(practiceItems(md).findings.some((f) => f.detail.startsWith("0 decision item(s)")));
+  });
+});
+
+describe("itemLimits", () => {
+  it("keeps small Beginner / Intermediate bands at 3–6 / 2–3", () => {
+    assert.deepEqual(itemLimits("beginner", 0).translation, { min: 3, max: 6 });
+    assert.deepEqual(itemLimits("intermediate", 5).translation, { min: 3, max: 6 });
+    assert.deepEqual(itemLimits("intermediate", 8).decision, { min: 2, max: 3 });
+  });
+
+  it("raises the cap with S, then stops at 10 / 5", () => {
+    assert.deepEqual(itemLimits("intermediate", 15).translation, { min: 3, max: 10 });
+    assert.deepEqual(itemLimits("intermediate", 15).decision, { min: 2, max: 4 });
+    assert.deepEqual(itemLimits("beginner", 17).translation, { min: 3, max: 10 });
+    assert.deepEqual(itemLimits("beginner", 17).decision, { min: 2, max: 5 });
+  });
+
+  it("uses the Advanced formula", () => {
+    assert.deepEqual(itemLimits("advanced", 2).translation, { min: 3, max: 4 });
+    assert.deepEqual(itemLimits("advanced", 2).decision, { min: 2, max: 2 });
+    assert.deepEqual(itemLimits("advanced", 12).translation, { min: 3, max: 7 });
+    assert.deepEqual(itemLimits("advanced", 12).decision, { min: 2, max: 3 });
+  });
+});
+
+describe("practiceBandStats", () => {
+  it("counts ### headings above Practice in the current band", () => {
+    const md = `## Beginner
+
+### One
+
+### Two
+
+### Practice
+
+## Intermediate
+
+### Three
+
+### Four
+
+### Five
+
+### Practice
+`;
+    const lines = md.split("\n");
+    const beginner = lines.findIndex((line) => line.startsWith("### Practice"));
+    const intermediate = lines.findIndex((line, i) => i > beginner && line.startsWith("### Practice"));
+    assert.deepEqual(practiceBandStats(lines, beginner), { band: "beginner", S: 2 });
+    assert.deepEqual(practiceBandStats(lines, intermediate), { band: "intermediate", S: 3 });
+  });
+});
+
+describe("practiceItems, scaled counts", () => {
+  it("names S in the error and allows more than 6 items on a large band", () => {
+    const taught = Array.from({ length: 15 }, (_, i) => `### Section ${i + 1}\n`).join("\n");
+    const md = `## Intermediate
+
+${taught}
+### Practice
+
+#### English → Agebon
+
+${details(7)}
+#### Agebon → English
+
+${details(7)}
+#### Pick one
+
+${details(2)}
+`;
+    const details_ = practiceItems(md).findings.map((f) => f.detail);
+    assert.deepEqual(details_, []);
+    const over = practiceItems(md.replace(details(7), details(11))).findings.map((f) => f.detail);
+    assert.ok(over.some((d) => d === "11 English → Agebon item(s); this band teaches 15 sections, use 3–10"));
   });
 });
 

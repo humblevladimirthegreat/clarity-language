@@ -914,6 +914,14 @@ y-question | z-listener | v-think | d-that-clause | z-wh | v-lie
 y-request | v-attest | z-listener . y-question | y-sure
 :::
 
+**7.** *So who lies?* (you already know; they say it)
+
+::: details Show answer
+`yol yal ? zar valamul.`
+
+y-question | y-statement | ? | z-wh | v-lie
+:::
+
 
 #### Agebon → English {#intermediate-agebon-to-english}
 

@@ -618,12 +618,12 @@ z-Olazun | d-CITE[z-Uzozen | v-attest] | v-tell
 z-Olazun | d-CITE[Uzozen] | v-tell . z-Ahelan | d-←episode-patient.same | v-write
 :::
 
-**3.** *The word “oledo” is small.*
+**3.** *Now, about the word “oledo”: it is small.*
 
 ::: details Show answer
-`glegel z[oledo] gamezom.`
+`glegel x[oledo] zalon gamezom.`
 
-[gl-MENTION | z-CITE["oledo"]] | g-small
+[gl-MENTION | x-CITE["oledo"]] | z-TOPIC | g-small
 :::
 
 **4.** *Uzozen said, “Does Olazun lie?”*

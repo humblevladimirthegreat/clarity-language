@@ -2,8 +2,9 @@
  * Drill coverage: every construction family taught in a band on a page is
  * practiced by that page's same-band translation drill
  * (`### Practice {#<band>-practice}`, or a legacy `### Translation practice`). Either drill
- * direction counts. Page + band pairs marked **skip** in the allowlist of
- * docs/meta/drill-generation.md are exempt.
+ * direction counts. Parser-built families and data families both count. Page +
+ * band pairs marked **skip** in the allowlist of docs/meta/drill-generation.md
+ * are exempt.
  */
 import { PRACTICE_TITLE_RE } from "./practice-sections.js";
 import { BANDS, formatSection, withinSection, type Band, type LearningOrder, type Section } from "./learning-order.js";
@@ -102,7 +103,7 @@ export function drillCoverage(
   let covered = 0;
   for (const family of families) {
     const { home } = family;
-    if (family.parser || !home.band || home.ignored || !order.readingOrder.includes(home.page)) continue;
+    if (!home.band || home.ignored || !order.readingOrder.includes(home.page)) continue;
     const key = `${home.page}|${home.band}`;
     if (skips.has(key)) continue;
     const drills = drillSections(order.pages.get(home.page)?.sections ?? [], home.band);

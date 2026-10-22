@@ -88,19 +88,24 @@ Place **`### Practice {#<band>-practice}`** at the **end of the stage**, immedia
 
 Follow the [template](translation-exercises.md#template). Lead: *Short drills for Beginner/Intermediate/Advanced. Try each item before opening **Show answer**.* Next line: **Setting:** one place or occasion. Then the **New words** and **Review** tables ([vocab table](translation-exercises.md#vocab-table)): house names and `SELF` sit in New words on their first checkpoint and in Review after. House-person **English** is *Uzozen* / *Olazun* / *Ahelan*, not `*grace* (name **Uzozen**)`. Pick a setting **not already named** in [settings](#settings) ([unique globally](translation-exercises.md#checkpoint-setting)); write the same phrase into this file’s cell when you replace. At least half the items in each translation direction use a root or situation of the setting. Teaching examples stay on the [example root bank](#root-bank); do not rewrite them to match the drill.
 
+*S* is the number of `###` headings in the band above the checkpoint, not counting Practice. Count every such heading, including a short recap, a Compare-with, and a section that only adds overlay or vocabulary rows. Do not count only sections that home a construction. Sitting length is headings: a new `###` is a new bite, whether it is a large table or a recap. The cap is **room**, not a target ([principle 6](translation-exercises.md#principles)): write only as many items as the band needs. Coverage already requires each family once; extra headings do not require extra items.
+
+A band past **10** taught sections is too long for one sitting. Split that **page** into two sibling grammar pages, each a full subsystem with its own stages and one checkpoint. Do not add an allowlist **split** row (a second checkpoint on the same page) unless one page must stay together. Do not split Beginner / Intermediate / Advanced into separate files. Do not add an H3 to a band already at 10 without splitting first.
+
 | Band kind | Per translation direction | Decision items |
 |-----------|---------------------------|----------------|
-| Beginner, productive | **5–6** | **2–3** |
-| Intermediate, productive | **5–6** | **2–3** |
-| Advanced, or a thin generate row | **3–4** | **2** |
+| Beginner or Intermediate | 3 to **max(6, ⌈S / 2⌉ + 2)**, at most 10 | 2 to **max(3, ⌈S / 4⌉)**, at most 5 |
+| Advanced, or a thin generate row | 3 to **max(4, ⌈S / 2⌉ + 1)**, at most 8 | 2 to **max(2, ⌈S / 4⌉)**, at most 4 |
 
-Both directions. Spoilers = Agebon or **loose** free English plus a visible morph line in the spoiler ([translation-exercises.md](translation-exercises.md#template)). Add **Also correct:** where a learner is likely to write a legal variant. Omit recoverable **`yal`**. House names in English prompts (*Uzozen waits*). Test the decision this stage taught; package it in the setting, not as a clone of the walk/sleep teach line ([principles](translation-exercises.md#principles)). Aim the [decision items](translation-exercises.md#item-types) at the stage's main decision.
+Small and median bands stay at 3–6 / 2–3. Level reviews keep their own rule.
+
+Both directions. Spoilers = Agebon or **loose** free English plus a visible morph line in the spoiler ([translation-exercises.md](translation-exercises.md#template)). Add **Also correct:** where a learner is likely to write a legal variant. Omit recoverable **`yal`**. House names in English prompts (*Uzozen waits*). Test the decision this stage taught; package it in the setting, not as a clone of the walk/sleep teach line ([principles](translation-exercises.md#principles)). Aim the [decision items](translation-exercises.md#item-types) at the stage's main decision. Every construction family taught in the band, parser-built or data, needs at least one item in this checkpoint (either direction), unless the allowlist row is **skip**.
 
 When replacing a legacy checkpoint, retarget its `core` cells and any links to `#<band>-translation-practice` (such as the ones on [translation-exercises.md](translation-exercises.md)) to `#<band>-practice`.
 
 ### 6. Self-check, then lint
 
-Run the [review checklist](#review) on your own spoilers, and `npm run core-vocabulary` for this checkpoint's new and review counts. Parse each **Pick one** form, **Fix it** correction, **What changes** sentence, and **Also correct:** variant with `node scripts/parse.mjs`, and compare each variant's morph reading to the main answer. Then run `npm test` (it checks `core` cells) and `npm run build`. The build fails when a family taught in a page band is not used by that band’s checkpoint. If it fails, fix it in the same file (usually slash-joined emphasis: write `*a* / *b*`, not `*a*/*b*`).
+Run the [review checklist](#review) on your own spoilers, and `npm run core-vocabulary` for this checkpoint's new and review counts. Parse each **Pick one** form, **Fix it** correction, **What changes** sentence, and **Also correct:** variant with `node scripts/parse.mjs`, and compare each variant's morph reading to the main answer. Then run `npm test` (it checks `core` cells) and `npm run build`. The build fails when a family taught in a page band (parser-built or data) is not used by that band’s checkpoint. If it fails, fix it in the same file (usually slash-joined emphasis: write `*a* / *b*`, not `*a*/*b*`).
 
 Reply with: which checkpoints you added, replaced, or skipped, the new and review root counts, and any item you dropped because a form was not in recycle.
 
@@ -172,6 +177,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `clause.md` | Advanced | a circus |
 | `dependents.md` | Beginner | a guard post |
 | `dependents.md` | Intermediate | a departure board |
+| `dependents.md` | Advanced | a complaint desk |
 | `relations.md` | Beginner | a tool crib |
 | `relations.md` | Intermediate | a train platform |
 | `relations.md` | Advanced | a records room |
@@ -202,6 +208,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `numbers.md` | Beginner | a bakery |
 | `numbers.md` | Intermediate | a sports stadium |
 | `numbers.md` | Advanced | an observatory |
+| `numbers-applied.md` | Intermediate | a pharmacy |
 | `comparatives.md` | Beginner | a racetrack |
 | `comparatives.md` | Intermediate | a weighing room |
 | `comparatives.md` | Advanced | a talent contest |
@@ -307,9 +314,10 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | Path | File | Band | Status | Introduces (test these) | Notes |
 |------|------|------|--------|-------------------------|-------|
 | 5 | `clause.md` | Intermediate | **exists** | **`gl-`**; adverb topic `/h/`+`/b/`; complex chaining | |
-| 5 | `clause.md` | Advanced | **exists** | Leftmost content-word prominence; English cleft / *what*-cleft / fronted adverb | 4–6 items. Weak-pause cues are recognition, not the drill |
+| 5 | `clause.md` | Advanced | **exists** | Leftmost content-word prominence; English cleft / *what*-cleft / fronted adverb | Weak-pause cues are recognition, not the drill |
 | 6 | `speech-moves.md` | Intermediate | **exists** | **`yam`/`yom`/`yem`/`yum`**; opening hooks before an act word; number-as-interjection pointer only if the stage’s examples already show it | Do not require numbers Intermediate readings |
 | 7 | `dependents.md` | Intermediate | **exists** | `/x/` linkers (`xahem`, `xezom`, …); nested **`barl`**; stand-in vowels | Recycle Beginner **`darl`/`barl`** |
+| 7 | `dependents.md` | Advanced | **exists** | Lexicalized stand-ins in other roles (`varn` / `vaen` / `vuon` / `darn` / …); nested **`blarl`** | Recycle Beginner **`darl`/`barl`** and Intermediate stand-ins |
 | 13 | `relations.md` | Intermediate | **exists** | *between* **`hedam`**; of-relations (`gobem`, `gadam`, `gulem`, `gaham`); recycle extra-noun hooks for other place talk | *Between* recycles joins Beginner `/b/` join |
 | 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`henam` / `hunem`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, forecast, calendar `b_#…`. Not persist hooks |
 | 4 | `word-endings.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); full names (given + `/ɡ/` family **-n**) and hyphenated names `ROOTxROOT`+**-n**; [titled phrases](../grammar/word-endings.md#titled-phrases) (hook / join / span **-n**, inner **-l** / **-m**) | Not value/ability/plan ending tables |
@@ -320,8 +328,8 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 9 | `plurality.md` | Advanced | — | no Advanced stage | |
 | 10 | `predication.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / open **-m** | |
 | 10 | `predication.md` | Advanced | skip | boundaries | |
-| 11 | `joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains (every and none, by set); SHARED after join; `{ }` islands; fence nesting | Sample **decisions**, not every H3. 6–8 items |
-| 11 | `joins.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from this stage | 4–6 items |
+| 11 | `joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains (every and none, by set); SHARED after join; `{ }` islands; fence nesting | Sample **decisions**, not every H3 |
+| 11 | `joins.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from this stage | — |
 | 12 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; fill-ask arity; occasion **`har`**; yes/no with single-item/standalone; fill-ask answers | |
 | 12 | `questions.md` | Advanced | — | no Advanced stage | |
 | 12 | `hooks.md` | Intermediate | **exists** | Ending grids; parallel chains; discourse placements; extra-noun stacks (`aol` / `oel` / `ual` / `uol` / `ael` / `uel`) and extra-noun **-m**; abstract landmarks (`ual baram`); stacked point-back (`aor` / `aer` / `uor`) | |
@@ -329,16 +337,16 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 13 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; dependent *when* | |
 | 13 | `restrictors.md` | Advanced | — | no Advanced stage | |
 | 14 | `spans.md` | Intermediate | **exists** | Written spans; marks; mention marker; **`{ … }`** scope islands; mention of a handle **form** vs office **-n** | |
-| 14 | `spans.md` | Advanced | **exists** | Close forms (editorial `#]` / close-all `\|]`) | 4–6 items |
-| 15 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; number as verb / adverb / interjection / discourse as taught in this stage; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | Do not dump the whole Intermediate. 6–8 items |
-| 15 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught in this stage | One topic per item. 4–8 items |
-| 15 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | 4–6 items |
+| 14 | `spans.md` | Advanced | **exists** | Close forms (editorial `#]` / close-all `\|]`) | — |
+| 15 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; number as verb / adverb / interjection / discourse as taught in this stage; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | Do not dump the whole Intermediate |
+| 15 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught in this stage | One topic per item |
+| 15 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | — |
 | 15 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join; PLAN bar right before the join | |
 | 15 | `comparatives.md` | Advanced | **exists** | Stance bars (channels, FORMER, ABIL, REQUIRE, attitudes); bar inside vs stance after the fence | |
 | 15 | `causation.md` | Intermediate | **exists** | Following-sentence **`blarl`**; **`ahu`** *because* / **`ehe`** *iff*; asserted necessary **`thebom thahum`**; **CAUSE** **`ewe`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
 | 15 | `causation.md` | Advanced | — | no Advanced stage | |
 | 16 | `sakes.md` | Intermediate | **exists** | Prescription **`the`** + force; motive **`tho`** + time horizon; which ending table; attachment sites; sake bars (*enough* / *too*) | |
-| 16 | `sakes.md` | Advanced | **exists** | Combined matrices; one boundary trap | 4–6 items |
+| 16 | `sakes.md` | Advanced | **exists** | Combined matrices; one boundary trap | — |
 | 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`eyu`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs; **holder** seam (someone else's view); a source you won't name or don't know (`blwoyar` / `blwuyar`) | |
 | 16 | `knowing.md` | Advanced | **exists** | Mood on one adjective; dated channel; channels on a generalization | One checkpoint for the whole stage |
 | 16 | `roles.md` | Intermediate | **exists** | Content-rule parts (manner **`h`** pointer or compound); capacity on `/h/` (slot-part compound); viewpoint laterals **`DIR th ANCHOR`**; bare arrow roots = compass; gravity **`ayuhe`/`aduhe`**; name/listener anchor | Prefer `…thazawan` over silent speaker default. **`awa`/`uwo`** only when testing role-anchor. Include at least one bare cardinal, one gravity item, one content part, and one capacity item |
@@ -349,7 +357,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`ogo`** changeability; forecast = evidential + `blral` vs PLAN; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
 | 17 | `intention.md` | Advanced | — | no Advanced stage | |
 | 17 | `sakes.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value) | Recycle values Beginner. |
-| 18 | `numeric-derivation.md` | Advanced | **exists** | `NUM x ROOT` as the stage teaches (essence / `+N` / `#N` / quasi / …; `mx` approximate) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
+| 18 | `numeric-derivation.md` | Advanced | **exists** | `NUM x ROOT` as the stage teaches (essence / `+N` / `#N` / quasi / …; `mx` approximate) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md) |
 
 ## Leak index
 <a id="leak-index"></a>
@@ -367,6 +375,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Locative relations; of-relations (`gobem` / `gadam` / `gulem` / `gaham`) | `relations.md` Intermediate |
 | Hosted *as-of* (`henam` / `hunem`) | `relations.md` Advanced |
 | Remaining `/x/` linkers, nested **`blarl`**, stand-in vowels | `dependents.md` Intermediate |
+| Lexicalized stand-ins (`varn` / `vaen`) and nested **`blarl`** | `dependents.md` Advanced |
 | **-l** / **-m** / **-n** as a *choice* on a citation | `word-endings.md` Beginner |
 | Whole-stem **-r** and role pointers; **`uwo`/`awa`/`aya`/`umo`** | `pronouns.md` Beginner |
 | Associative **-x** | `plurality.md` Beginner |

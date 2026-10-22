@@ -104,7 +104,7 @@ const markedPronoun = closedDerived(
   }),
 );
 
-/** Standalone readings ([joins.md § Beginner forms](../../docs/grammar/joins.md#beginner-forms)). */
+/** Standalone readings ([joins.md § Vowels and endings](../../docs/grammar/joins.md#join-type-vowel-series)). */
 const JOIN_JOB_STANDALONE: Record<string, string> = {
   a: "none",
   o: "no-options",

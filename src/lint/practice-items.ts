@@ -2,11 +2,13 @@
  * Items of converted checkpoints (`### Practice`), typed by their H4
  * (docs/meta/translation-exercises.md#template), plus the section-shape findings:
  * known H4s in template order, both translation directions, items numbered from 1 under
- * each H4, item counts (docs/meta/drill-generation.md#execute), and a spoiler on every item.
+ * each H4, item counts scaled by band and taught-section count *S*
+ * (docs/meta/drill-generation.md#execute), and a spoiler on every item.
  * A level review ([level-review.ts](level-review.ts)) has its own counts, so `review` skips them.
  */
 import { SPEECH_MARK } from "./number-speech-docs.js";
-import { practiceRanges } from "./practice-sections.js";
+import { BANDS, type Band } from "./learning-order.js";
+import { PRACTICE_H3_RE, practiceRanges } from "./practice-sections.js";
 
 export type PracticeItemType = "en-ag" | "ag-en" | "pick" | "fix" | "changes";
 
@@ -19,9 +21,59 @@ export const PRACTICE_H4: readonly { type: PracticeItemType; title: string }[] =
   { type: "changes", title: "What changes" },
 ];
 
-/** Items per translation direction, and decision items per checkpoint, across all bands. */
-export const TRANSLATION_ITEMS = { min: 3, max: 6 };
-export const DECISION_ITEMS = { min: 2, max: 3 };
+/** Translation and decision caps from band kind and taught-section count *S*. */
+export type ItemLimits = {
+  translation: { min: number; max: number };
+  decision: { min: number; max: number };
+};
+
+/**
+ * Item caps for a converted checkpoint (docs/meta/drill-generation.md#execute).
+ * *S* is the number of `###` headings in the band above the checkpoint, not counting Practice.
+ * Beginner / Intermediate stay at 3–6 / 2–3 until *S* is large; Advanced uses a tighter floor.
+ */
+export function itemLimits(band: Band | undefined, S: number): ItemLimits {
+  const advanced = band === "advanced";
+  const translationMax = Math.min(advanced ? 8 : 10, Math.max(advanced ? 4 : 6, Math.ceil(S / 2) + (advanced ? 1 : 2)));
+  const decisionMax = Math.min(advanced ? 4 : 5, Math.max(advanced ? 2 : 3, Math.ceil(S / 4)));
+  return {
+    translation: { min: 3, max: translationMax },
+    decision: { min: 2, max: decisionMax },
+  };
+}
+
+const BAND_H2 = /^## (Beginner|Intermediate|Advanced)\b/i;
+
+/** Band of a checkpoint, and taught `###` count *S* above it (not counting Practice). */
+export function practiceBandStats(
+  lines: readonly string[],
+  practiceStart: number,
+): { band: Band | undefined; S: number } {
+  let band: Band | undefined;
+  let bandLine = -1;
+  let inFence = false;
+  for (let i = 0; i < practiceStart; i++) {
+    const line = lines[i]!;
+    if (/^\s*```/.test(line)) inFence = !inFence;
+    if (inFence) continue;
+    const h2 = BAND_H2.exec(line);
+    if (!h2) continue;
+    const name = h2[1]!.toLowerCase();
+    if (!BANDS.includes(name as Band)) continue;
+    band = name as Band;
+    bandLine = i;
+  }
+  let S = 0;
+  inFence = false;
+  for (let i = 0; i < practiceStart; i++) {
+    const line = lines[i]!;
+    if (/^\s*```/.test(line)) inFence = !inFence;
+    if (inFence) continue;
+    if (i <= bandLine) continue;
+    if (/^### /.test(line) && !PRACTICE_H3_RE.test(line)) S += 1;
+  }
+  return { band, S };
+}
 
 /** The marker that lets a **Fix it** prompt hold the wrong form. */
 export const ERROR_MARKER = "lint: error";
@@ -119,18 +171,26 @@ export function practiceItems(
     }
 
     const at = starts[range.start]!;
+    const { band, S } = practiceBandStats(lines, range.start);
+    const limits = itemLimits(band, S);
     for (const type of ["en-ag", "ag-en"] as const) {
       const title = PRACTICE_H4.find((h) => h.type === type)!.title;
       const count = sectionItems.filter((item) => item.type === type).length;
       if (!seen.includes(type)) findings.push({ index: at, detail: `checkpoint has no #### ${title}` });
       else if (review) continue;
-      else if (count < TRANSLATION_ITEMS.min || count > TRANSLATION_ITEMS.max) {
-        findings.push({ index: at, detail: `${count} ${title} item(s); use ${TRANSLATION_ITEMS.min}–${TRANSLATION_ITEMS.max}` });
+      else if (count < limits.translation.min || count > limits.translation.max) {
+        findings.push({
+          index: at,
+          detail: `${count} ${title} item(s); this band teaches ${S} sections, use ${limits.translation.min}–${limits.translation.max}`,
+        });
       }
     }
     const decisions = sectionItems.filter((item) => item.type !== "en-ag" && item.type !== "ag-en").length;
-    if (!review && (decisions < DECISION_ITEMS.min || decisions > DECISION_ITEMS.max)) {
-      findings.push({ index: at, detail: `${decisions} decision item(s) (Pick one / Fix it / What changes); use ${DECISION_ITEMS.min}–${DECISION_ITEMS.max}` });
+    if (!review && (decisions < limits.decision.min || decisions > limits.decision.max)) {
+      findings.push({
+        index: at,
+        detail: `${decisions} decision item(s) (Pick one / Fix it / What changes); this band teaches ${S} sections, use ${limits.decision.min}–${limits.decision.max}`,
+      });
     }
     items.push(...sectionItems);
   }

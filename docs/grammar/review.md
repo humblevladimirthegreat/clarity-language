@@ -767,6 +767,18 @@ On `/w/` right before the adjective, MEMORY covers only *sleepy*; **`thevum`** o
 **Rule:** [Mood on one adjective](knowing.md#mood-on-adjective)
 :::
 
+**5.** *Uzozen commands that Olazun cook.* `zuzozen vern zolazun vuguyel.` or `zuzozen varn zolazun vuguyel.`
+
+::: details Show answer
+`zuzozen vern zolazun vuguyel.`
+
+z-Uzozen | v-command | z-Olazun | v-cook
+
+**`vern`** takes the next sentence as an instruction; **`varn`** would only state that Olazun cooks.
+
+**Rule:** [Lexicalized stand-ins in other roles](dependents.md#stand-in-roles)
+:::
+
 #### Fix it {#advanced-fix-it}
 
 **1.** *I saw Ahelan sleep two hours ago.* <!-- lint: error -->`zahelan thevum bagorum gradol vezuvol.`

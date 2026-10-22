@@ -767,6 +767,14 @@ z-+-e3 | d-trophy | v-see
 z-Uzozen | v-punch | th-70-percent-likely
 :::
 
+**7.** *Olazun sees three seats, and Uzozen sees those three.*
+
+::: details Show answer
+`zolazun dozoholx gragel vawebol xal zuzozen drager vawebol.`
+
+[z-Olazun | [d-seat-x | g-three] | v-see | x-and | z-Uzozen | d-←three | v-see]
+:::
+
 #### Agebon → English {#intermediate-agebon-to-english}
 
 **1.** `zredol dodoral vawebol.`

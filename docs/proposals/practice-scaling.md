@@ -1,6 +1,6 @@
 # Proposal: Scale checkpoint size with the band, and check every taught section
 
-**Status:** PROPOSED. Editor policy and lint; page splits in later phases. No grammar change.  
+**Status:** PARTIALLY IMPLEMENTED. Phase 1 is built: item caps scale with band kind and *S*, parser families count in drill coverage, editor policy is in [drill-generation.md](../meta/drill-generation.md) and [translation-exercises.md](../meta/translation-exercises.md), the 11 named families and dependents.md Advanced are practiced, the `yar` item is restored, and Joins Beginner recap headings are merged. Page splits and the ceiling lint are later phases. No new grammar pages.  
 **Related:** [item counts](../meta/drill-generation.md#execute), [drill principles](../meta/translation-exercises.md#principles), [decision items](../meta/translation-exercises.md#item-types), [level reviews](../meta/translation-exercises.md#level-reviews).  
 **Code:** [`src/lint/practice-items.ts`](../../src/lint/practice-items.ts) (`TRANSLATION_ITEMS`, `DECISION_ITEMS`), [`src/lint/drill-coverage.ts`](../../src/lint/drill-coverage.ts) (`drillCoverage`), [`scripts/lint-agebon-docs.ts`](../../scripts/lint-agebon-docs.ts) (`reportDrillCoverage`).
 

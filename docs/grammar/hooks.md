@@ -1440,9 +1440,7 @@ Short drills for Advanced. Try each item before opening **Show answer**. Each fu
 | *boat* | `ebaval` |
 | *guard* | `agayul` |
 | *fog* | `ovulul` |
-| *ice* | `ezulol` |
 | *ocean* | `ohalal` |
-| *wind* | `ewulel` |
 
 #### English → Agebon {#advanced-english-to-agebon}
 
@@ -1470,28 +1468,12 @@ z-Olazun | d-anchor | v-head-for
 z-ship | g-through-x-ocean
 :::
 
-**4.** *The boat is wind-powered.*
-
-::: details Show answer
-`zebaval gaexewulel.`
-
-z-boat | g-using-x-wind
-:::
-
-**5.** *Everyone on the ship walks.*
+**4.** *Everyone on the ship walks.*
 
 ::: details Show answer
 `zaoxual blehaval vowurel.`
 
 [z-on-x-everything | bl-ship] | v-walk
-:::
-
-**6.** *Who is in the fog?*
-
-::: details Show answer
-`yol zaxar blovulul.`
-
-y-question | [z-in-x-wh | bl-fog]
 :::
 
 #### Agebon → English {#advanced-agebon-to-english}
@@ -1504,15 +1486,7 @@ d-fog | z-Olazun | v-leave
 *Olazun leaves the fog.*
 :::
 
-**2.** `zuzozen dezulol vowureluol.`
-
-::: details Show answer
-z-Uzozen | d-ice | v-traverse
-
-*Uzozen crosses the ice.*
-:::
-
-**3.** `zahelan vowurel hoexehaval.`
+**2.** `zahelan vowurel hoexehaval.`
 
 ::: details Show answer
 z-Ahelan | v-walk | h-toward-x-ship
@@ -1520,7 +1494,7 @@ z-Ahelan | v-walk | h-toward-x-ship
 *Ahelan walks shipward.*
 :::
 
-**4.** `zolazun guexagayul.`
+**3.** `zolazun guexagayul.`
 
 ::: details Show answer
 z-Olazun | g-against-x-guard
@@ -1528,20 +1502,12 @@ z-Olazun | g-against-x-guard
 *Olazun is anti-guard.*
 :::
 
-**5.** `zuexual blagayul vowurel.`
+**4.** `zuexual blagayul vowurel.`
 
 ::: details Show answer
 [z-against-x-everything | bl-guard] | v-walk
 
 *Everyone against the guard walks.*
-:::
-
-**6.** `zahelan vowurel huxal blovulul.`
-
-::: details Show answer
-z-Ahelan | v-walk | [h-from-x-never | bl-fog]
-
-*Ahelan hasn't walked since the fog.*
 :::
 
 #### Pick one {#advanced-pick-one}
@@ -1564,18 +1530,6 @@ A fused verb takes its extra participant as an ordinary object, `/d/`; after a v
 [z-on-x-everything | bl-boat] | v-walk
 
 The hooked join bounds who counts; a free hook after the verb says where the walking happens.
-:::
-
-#### Fix it {#advanced-fix-it}
-
-**1.** *leave* (the dictionary form) <!-- lint: error -->`vowurelul.`
-
-::: details Show answer
-`owurelul.`
-
-leave
-
-The dictionary lists a hook compound as a citation, with no role letter.
 :::
 
 ## See also

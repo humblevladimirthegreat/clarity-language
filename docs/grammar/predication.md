@@ -652,12 +652,12 @@ z-Uzozen | g-anxious-th-type
 *Uzozen is an anxious type.*
 :::
 
-**4.** `zahelan valamuthal.`
+**4.** `zuzozen valamuthol blolazun.`
 
 ::: details Show answer
-z-Ahelan | v-lie-th-episode
+z-Uzozen | [v-lie-th-pair | bl-Olazun]
 
-*Ahelan lied this once.*
+*With Olazun, Uzozen lies.*
 :::
 
 **5.** `zwuzuduyel duvogal vawebol.`

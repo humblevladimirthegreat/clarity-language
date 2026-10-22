@@ -413,20 +413,20 @@ z-Olazun | [h-including | bl-Ahelan] | v-run
 [z-Uzozen | v-punch | x-and-then | z-Olazun | v-scream]
 :::
 
-**4.** *Olazun runs and punches.*
+**4.** *Olazun runs and punches Ahelan.*
 
 ::: details Show answer
-`zolazun varuvel vanuvul val.`
+`zolazun varuvel dahelan vanuvul val.`
 
-z-Olazun | [v-run | v-punch | v-and]
+z-Olazun | [v-run | [d-Ahelan | v-punch] | v-and]
 :::
 
-**5.** *Olazun runs, but not because of the trophy.*
+**5.** *Olazun runs, but not because Uzozen punches.*
 
 ::: details Show answer
-`zolazun varuvel thahum blodoral thul.`
+`zolazun varuvel thahum thul blarl zuzozen vanuvul.`
 
-z-Olazun | v-run | [th-because | bl-trophy] | th-not
+z-Olazun | v-run | th-because | th-not | bl-that-clause | z-Uzozen | v-punch
 :::
 
 **6.** *Uzozen screamed; I either saw it or was told, not both.*

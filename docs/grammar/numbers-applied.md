@@ -361,14 +361,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Uzozen | [d-pill | g-_b12] | v-see
 :::
 
-**2.** *At 15:30 Uzozen sees Ahelan.*
+**2.** *From 9:00 to 17:00 Uzozen sees Ahelan.*
 
 ::: details Show answer
-`h_15,30 zuzozen dahelan vawebol.`
+`zuzozen ul b_9 oel b_17 dahelan vawebol.`
 
-🔊 `hrobazathegemol zuzozen dahelan vawebol.`
+🔊 `zuzozen ul bronal oel brobarel dahelan vawebol.`
 
-h-_15,30 | z-Uzozen | d-Ahelan | v-see
+z-Uzozen | [from | b-_9 | toward | b-_17] | d-Ahelan | v-see
 :::
 
 **3.** *25% of the pills.*

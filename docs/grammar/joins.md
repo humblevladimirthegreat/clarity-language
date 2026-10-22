@@ -229,7 +229,7 @@ When English says *some of them* or *some people*, more than one, add [**-x**](p
 
 **Compare with:** on a content word, **-r** [resumes](pronouns.md) the last match. On a join, **-r** is an unspecified member. Standalone **`-rl` / `-rm`** (`darl`, `barl`) is a stand-in for the next sentence, not a join and not *something*.
 
-### Vowels and endings (recap) {#join-type-vowel-series}
+### Vowels and endings {#join-type-vowel-series}
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -247,8 +247,6 @@ When English says *some of them* or *some people*, more than one, add [**-x**](p
 | **-rx** | unspecified group of members | *some ones* / *some of them* | **r** ≈ member you have not named, **x** ≈ more than one |
 
 The same vowels and endings work under `/d/` `/b/` (`dal`, `dam`, …), `/v/` (`val`, `vam`, …), `/ɡ/` (`gal`, `gul`, …), and `/x/` (`xal`, `xam`, …). Match the join’s first letter to the items.
-
-### Beginner forms
 
 With two or more items, each join reads as taught above. This table collects the readings for a join with only one item before it, or none.
 
@@ -337,6 +335,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 | *basket* | `abowal` |
 | *see* | `vawebol` |
 | *scream* | `varemul` |
+| *big* | `gelazom` |
 
 #### English → Agebon {#beginner-english-to-agebon}
 
@@ -390,6 +389,14 @@ z-Ahelan | v-pay | b-none
 `zuzozen zolazun zahelan zarx varal.`
 
 [z-Uzozen | z-Olazun | z-Ahelan | z-something-x] | v-pay
+:::
+
+**7.** *not big*
+
+::: details Show answer
+`gelazom gul.`
+
+[g-big | g-not]
 :::
 
 #### Agebon → English {#beginner-agebon-to-english}
@@ -1034,6 +1041,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 `zul gudobal gamezom.`
 
 [z-no | g-dress] | g-small
+:::
+
+**7.** *There is such a thing as the veil.*
+
+::: details Show answer
+`zuan gevobul.`
+
+[z-the-kind | g-veil]
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}

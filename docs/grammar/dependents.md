@@ -598,6 +598,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *meanwhile* | `xegorem` | 🕰️ from *clock*: time passing beside the last claim |
 | *next* | `xuvewem` | 🎞️ from *film*: the following frame |
 | *to-clause* | `derl` | **e** ≈ order: an instruction |
+| *to-clause.open* | `derm` | **e** ≈ order: an instruction, and maybe more |
 | *lest-clause* | `durl` | **u** ≈ undo: something to avoid |
 | *that-same-claim* | `darth` | **-rth** points back at what was said |
 | *before* | `gabam` | 🎒 from *backpack*: packed first |
@@ -633,12 +634,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Uzozen | d-train | v-see . x-however | z-Olazun | v-run
 :::
 
-**2.** *Ahelan tells Olazun to sit.*
+**2.** *Ahelan tells Olazun to sit, and maybe more.*
 
 ::: details Show answer
-`zahelan vezuyel bolazun derl vuhohol.`
+`zahelan vezuyel bolazun derm vuhohol.`
 
-z-Ahelan | v-tell | b-Olazun | d-to-clause | v-sit
+z-Ahelan | v-tell | b-Olazun | d-to-clause.open | v-sit
 :::
 
 **3.** *Uzozen tells Ahelan not to sneak.*
@@ -811,3 +812,108 @@ A clause has at most one **stand-in**, at its end. But the dependent clause is a
 > [z-Uzozen | g-sleepy] | [th-because | bl-that-clause] | z-Olazun | v-walk | [th-because | bl-that-clause] | z-Ahelan | v-sleep
 >
 > "Uzozen is sleepy because Olazun walks because Ahelan sleeps." (Ahelan's sleep is why Olazun walks)
+
+### Practice {#advanced-practice}
+
+Short drills for Advanced. Try each item before opening **Show answer**.
+
+**Setting:** a complaint desk
+
+**New words:**
+
+| English | Agebon | Cue |
+|---------|--------|-----|
+| *command* | `vern` | **e** ≈ order: the next sentence is an instruction |
+| *state* | `varn` | **a** ≈ add: the next sentence is a claim |
+| *prohibit* | `vurn` | **u** ≈ undo: the next sentence is something to avoid |
+| *statement* | `darn` | **a** ≈ add: a statement as object |
+
+**Review:**
+
+| English | Agebon |
+|---------|--------|
+| *Uzozen* | `uzozen` |
+| *Olazun* | `olazun` |
+| *Ahelan* | `ahelan` |
+| *because* | `thahum` |
+| *angry* | `unemul` |
+| *scream* | `varemul` |
+| *tell* | `vezuyel` |
+| *sit* | `vuhohol` |
+| *see* | `vawebol` |
+
+#### English → Agebon {#advanced-english-to-agebon}
+
+**1.** *Uzozen commands that Olazun sit.*
+
+::: details Show answer
+`zuzozen vern zolazun vuhohol.`
+
+z-Uzozen | v-command | z-Olazun | v-sit
+:::
+
+**2.** *Uzozen is angry because Olazun screams because Ahelan sits.*
+
+::: details Show answer
+`zuzozen gunemul thahum blarl zolazun varemul thahum blarl zahelan vuhohol.`
+
+[z-Uzozen | g-angry] | [th-because | bl-that-clause] | z-Olazun | v-scream | [th-because | bl-that-clause] | z-Ahelan | v-sit
+:::
+
+**3.** *Uzozen sees the statement that Ahelan sits.*
+
+::: details Show answer
+`zuzozen vawebol darn zahelan vuhohol.`
+
+z-Uzozen | v-see | d-statement | z-Ahelan | v-sit
+:::
+
+#### Agebon → English {#advanced-agebon-to-english}
+
+**1.** `zuzozen varn zolazun vuhohol.`
+
+::: details Show answer
+z-Uzozen | v-state | z-Olazun | v-sit
+
+*Uzozen states that Olazun sits.*
+:::
+
+**2.** `zuzozen vurn zolazun vuhohol.`
+
+::: details Show answer
+z-Uzozen | v-prohibit | z-Olazun | v-sit
+
+*Uzozen prohibits Olazun from sitting.*
+:::
+
+**3.** `zahelan vezuyel thahum blarl zolazun vuhohol thahum blarl zuzozen varemul.`
+
+::: details Show answer
+z-Ahelan | v-tell | [th-because | bl-that-clause] | z-Olazun | v-sit | [th-because | bl-that-clause] | z-Uzozen | v-scream
+
+*Ahelan talks because Olazun sits because Uzozen screams.*
+:::
+
+#### Pick one {#advanced-pick-one}
+
+**1.** *Uzozen commands that Olazun sit.* `zuzozen vern zolazun vuhohol.` or `zuzozen varn zolazun vuhohol.`
+
+::: details Show answer
+`zuzozen vern zolazun vuhohol.`
+
+z-Uzozen | v-command | z-Olazun | v-sit
+
+**`vern`** takes the next sentence as an instruction; **`varn`** only states that Olazun sits.
+:::
+
+#### Fix it {#advanced-fix-it}
+
+**1.** *Uzozen is angry because Olazun screams because Ahelan sits.* <!-- lint: error -->`zuzozen gunemul thahum blarl zolazun varemul zahelan vuhohol.`
+
+::: details Show answer
+`zuzozen gunemul thahum blarl zolazun varemul thahum blarl zahelan vuhohol.`
+
+[z-Uzozen | g-angry] | [th-because | bl-that-clause] | z-Olazun | v-scream | [th-because | bl-that-clause] | z-Ahelan | v-sit
+
+Each further *because* needs its own **`thahum blarl`**; without the second pair, Ahelan sitting is not a nested grounds clause.
+:::

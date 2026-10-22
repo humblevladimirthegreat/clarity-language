@@ -649,6 +649,8 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *write* | `varayel` |
 | *see* | `vawebol` |
 | *find* | `vumewol` |
+| *very* | `welazom` |
+| *surprise* | `emol` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
@@ -668,12 +670,12 @@ y-soft-statement | z-Ahelan | v-sing
 y-request | v-sing | z-interlocutors
 :::
 
-**3.** *Hold off on stopping for now.*
+**3.** *As things stand, Ahelan sings quietly.*
 
 ::: details Show answer
-`yur vozohul.`
+`yar zahelan hogowul vezuyol.`
 
-y-hold-off | v-stop
+y-provisional-statement | z-Ahelan | h-quiet | v-sing
 :::
 
 **4.** *Don't run. I mean it.*
@@ -692,22 +694,22 @@ y-prohibition | y-prohibition | v-run
 ! | z-Uzozen | d-trumpet | v-see
 :::
 
-**6.** *To be clear, Olazun sings quietly.*
+**6.** *To be clear, Olazun writes a page.*
 
 ::: details Show answer
-`thagebom zolazun hogowul vezuyol.`
+`thagebom zolazun debonel varayel.`
 
-th-clarity | z-Olazun | h-quiet | v-sing
+th-clarity | z-Olazun | d-page | v-write
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `yom zolazun vumewol deyorel.`
+**1.** `yom thavewem zolazun vumewol deyorel.`
 
 ::: details Show answer
-y-soft-question | z-Olazun | v-find | d-trumpet
+y-soft-question | th-revelation | z-Olazun | v-find | d-trumpet
 
-*Does Olazun find the trumpet, I wonder?*
+*Honestly, does Olazun find the trumpet, I wonder?*
 :::
 
 **2.** `yer vezuyol zuzozen.`
@@ -726,12 +728,12 @@ y-soft-prohibition | z-interlocutors | v-stop
 *Let's not stop.*
 :::
 
-**4.** `thavewem zahelan debonel varayel.`
+**4.** `welazom yemom.`
 
 ::: details Show answer
-th-revelation | z-Ahelan | d-page | v-write
+[w-very | y-amazement]
 
-*Honestly, Ahelan writes a page.*
+*Truly amazing!*
 :::
 
 **5.** `zolazun vawebol &deyorel.`

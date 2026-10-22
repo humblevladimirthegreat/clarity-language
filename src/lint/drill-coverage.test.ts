@@ -75,7 +75,13 @@ describe("drillCoverage", () => {
     assert.deepEqual(r.missing.sort(), ["a.md|intermediate", "b.md|beginner"]);
   });
 
-  it("exempts skipped page bands and parser families", () => {
+  it("checks parser families too", () => {
+    const parserHomes = new Map([...homes, ["token.u", resolveAnchor(order, "a.md#basics")]]);
+    const r = drillCoverage(order, constructionFamilies(parserHomes), uses, new Set());
+    assert.ok(r.uncovered.some((u) => u.family.ids.includes("token.u")));
+  });
+
+  it("exempts skipped page bands", () => {
     const r = drillCoverage(order, families, uses, new Set(["a.md|intermediate", "b.md|beginner"]));
     assert.deepEqual(r.missing, []);
   });
