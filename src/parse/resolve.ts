@@ -128,6 +128,8 @@ function contentRoots(word: LexWord): string[] {
     return [...family.leftRoots, ...(family.rightRoots ?? [])];
   }
   if (family.kind === "x" && family.xFamily === "numeric") return family.leftRoots;
+  // A hook prefix's **-r** resumes the whole word, hook and stem (`zuexavuvur`, hooks.md#hook-prefixes).
+  if (family.kind === "x" && family.xFamily === "hookPrefix") return family.rightRoots ?? [];
   // Ability host (`vezehexal`): a resume keeps the *can* ([intention.md](docs/grammar/intention.md#incapability)).
   if (family.kind === "x" && family.xFamily === "ability") return family.leftRoots;
   return [];

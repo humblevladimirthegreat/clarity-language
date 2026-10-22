@@ -617,6 +617,7 @@ sayWord
 xWord
   = RolePointer
   / RoleCompound
+  / HookPrefix
   / ValueCompound
   / LateralCompound
   / AbilityCompound
@@ -671,6 +672,30 @@ RolePart
 RoleCompoundPart
   = "th" { return "th"; }
   / [zdbhgywx]
+
+// Hook prefix: extra-noun hook vowel(s) + seam + stem + ending (`guexavuvul` *anti-fighting*, hooks.md#hook-prefixes).
+// Plain `x` is the hook's **-l** reading, `mx` its **-m** frame (`guemxewulel` *headwind*). No root has `x` and every
+// root starts with a vowel, so one or two vowels before the seam are never a root. The stem may be an ordinary
+// compound (`guexahehaxowurel`) and take label scope after it (`zuexavuvuthel`). A hook-compound citation as the
+// stem (`guexowurelul` *anti-leaving*) parses as one long root here, and classify.ts splits it, as on a plain word.
+HookPrefix
+  = vowels:HookPrefixVowels frame:"m"? "x" root:ContentRoot rest:("x" r:ContentRoot { return r; })* scope:("th" v:SeamVowel { return v; })? ending:Ending plural:PluralSuffix? WordEnd {
+      const fields = {
+        leftRoots: [],
+        hook: vowels + (frame ? "m" : "l"),
+        rightRoots: [root, ...rest],
+      };
+      if (scope) fields.scopeVowel = scope;
+      return {
+        ending,
+        plural: !!plural,
+        family: xFamily("hookPrefix", fields),
+      };
+    }
+
+// The extra-noun hooks' vowels (hooks.md#extra-noun-intermediate); other pairs (`ea`, `ou`, …) have no hook.
+HookPrefixVowels
+  = "ao" / "ae" / "oe" / "ua" / "ue" / "uo" / [aeou]
 
 // Simplex or stacked seam after mid-word `th` (sakes.md; predication.md#label-scope).
 SeamVowel
@@ -820,7 +845,7 @@ plainContent
 // ── Citation (prefix-less root + ending) ────────────────────────────────────
 
 citation
-  = body:(ValueCompound / LateralCompound / AbilityCompound / NumericDerivation / OrdinaryCompound)
+  = body:(HookPrefix / ValueCompound / LateralCompound / AbilityCompound / NumericDerivation / OrdinaryCompound)
     {
       return makeWord(text(), {
         ending: body.ending,

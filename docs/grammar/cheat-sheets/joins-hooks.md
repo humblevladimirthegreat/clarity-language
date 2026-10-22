@@ -130,6 +130,7 @@ A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds a
 | **-r**, nothing on the right | [point back](../hooks.md#hook-resume) | `zolazun vuhohol or` | *Olazun sits there* | I |
 | stacked vowel between two same-role words | [range](../hooks.md#ranges) | `zuzozen oel zahelan` | *Uzozen through Ahelan* | I |
 | fused onto a citation | [hook compound](../hooks.md#hook-compounds) | `vowurelul` | *leave* | A |
+| hook vowels, then **`x`** and a stem | [hook prefix](../hooks.md#hook-prefixes) | `guexavuvul` | *anti-fighting* | A |
 
 ### Same-role and front of sentence {#same-role-discourse}
 
@@ -152,22 +153,22 @@ More: [parallel chains](../hooks.md#parallel-chains) `zavayal am zuzozen ul zola
 
 ### Extra nouns {#extra-nouns}
 
-Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting. **-r** drops the landmark and [points back](../hooks.md#hook-resume). Fused onto a citation, the hook makes a [verb](../hooks.md#hook-compounds) (shown from *walk*).
+Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting. **-r** drops the landmark and [points back](../hooks.md#hook-resume). Fused onto a citation, the hook makes a [verb](../hooks.md#hook-compounds) (shown from *walk*). Its vowels before **`x`** (or **`mx`** for the **-m** frame) and a stem make a [hook prefix](../hooks.md#hook-prefixes). With an [abstract landmark](../hooks.md#abstract-landmarks) the hook keeps its picture: `al bobowum` *in a crisis*, `ual baram` *out of debt*.
 
-| **-l** | **-m** | **-r** | Fused **-l** |
-|--------|--------|--------|--------------|
-| `al` *in* | `am` *amid* | `ar` *in there* | `owurelal` *enter* |
-| `aol` *on* | `aom` *over* | `aor` *on it* | `owurelaol` *mount* |
-| `ol` *at* | `om` *near* | `or` *there* | `owurelol` *attend* |
-| `oel` *toward* | `oem` *in the direction of* | | `owureloel` *head for* |
-| `ul` *from*, [*since*](../hooks.md#since) | `um` *away from* | `ur` *from there* | `owurelul` *leave* |
-| `ual` *out of* | `uam` *out from among* | | `owurelual` *exit* |
-| `uol` *through* | `uom` *by way of* | `uor` *through there* | `owureluol` *traverse* |
-| `el` *for* | `em` [*used by*](../hooks.md#genitive) (*B's*) | `er` *for it* | `owurelel` *serve* |
-| `ael` *using* | `aem` *by* | `aer` *with it* | `owurelael` *wield* |
-| `uel` *against* | `uem` *contrary to* | | `owureluel` *oppose* |
+| **-l** | **-m** | **-r** | Fused **-l** | Prefix **-l** | Prefix **-m** |
+|--------|--------|--------|--------------|---------------|---------------|
+| `al` *in* | `am` *amid* | `ar` *in there* | `owurelal` *enter* | `gaxahehal` *indoor* | `gamxohalal` *mid-ocean* |
+| `aol` *on* | `aom` *over* | `aor` *on it* | `owurelaol` *mount* | `gaoxohalal` *seagoing* | `gaomxohalal` *over the ocean* |
+| `ol` *at* | `om` *near* | `or` *there* | `owurelol` *attend* | `goxahehal` *at the house* | `gomxahehal` *near the house* |
+| `oel` *toward* | `oem` *in the direction of* | | `owureloel` *head for* | `goexahehal` *houseward* | `goemxahehal` *facing the house* |
+| `ul` *from*, [*since*](../hooks.md#since) | `um` *away from* | `ur` *from there* | `owurelul` *leave* | `guxahehal` *from the house* | `gumxahehal` *away from the house* |
+| `ual` *out of* | `uam` *out from among* | | `owurelual` *exit* | `guaxowulal` *out of the water* | `guamxayayal` *picked from the group* |
+| `uol` *through* | `uom` *by way of* | `uor` *through there* | `owureluol` *traverse* | `guoxohalal` *transoceanic* | `guomxohel` *bridge-routed* |
+| `el` *for* | `em` [*used by*](../hooks.md#genitive) (*B's*) | `er` *for it* | `owurelel` *serve* | `gexahehal` *household* | `gemxayayal` *group-owned* |
+| `ael` *using* | `aem` *by* | `aer` *with it* | `owurelael` *wield* | `gaexowulal` *water-powered* | `gaemxorahel` *road-borne* |
+| `uel` *against* | `uem` *contrary to* | | `owureluel` *oppose* | `guexohalal` *sea-facing* | `guemxewulel` *headwind* |
 
-Stage: `al` `ol` `ul` `el` **-l** are Beginner; the rest of the first three columns Intermediate; fused forms Advanced.
+Stage: `al` `ol` `ul` `el` **-l** are Beginner; the rest of the first three columns Intermediate, with abstract landmarks; fused forms and prefixes Advanced.
 
 ### Handy phrases {#handy-phrases}
 

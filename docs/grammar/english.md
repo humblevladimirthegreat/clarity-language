@@ -237,6 +237,25 @@ English often makes an adjective from a noun by adding an ending (*gold* → *go
 >
 > "Uzozen sees a golden house."
 
+### *anti-*, *pro-*, *trans-*, *-ward* words {#relation-prefixes}
+
+English builds many words from a relation and a noun: *anti-war*, *indoor*, *transoceanic*, *homeward*, *water-powered*. Agebon builds them the same way, from an extra-noun hook's vowels, **`x`** (or **`mx`** for the hook's frame), and the noun's root: a [hook prefix](hooks.md#hook-prefixes). On `/ɡ/` it is the adjective, on `/z/` `/d/` `/b/` someone or something with that stance, and on `/h/` it says how the clause stands to the noun.
+
+| English itch | Agebon job | Teach |
+|--------------|------------|-------|
+| *anti-* / *against* in one word (*anti-war*, *anti-policy*) | hook prefix **`…uex…`**: `guexavuvul`, `guexonam` | [Hook prefixes](hooks.md#hook-prefixes) |
+| *an opponent of* / *a supporter of* (*an anti-war person*) | the hook prefix on `/z/`: `zuexavuvul`; *pro-* is **`…ex…`** | [Hook prefixes](hooks.md#hook-prefixes) |
+| *pro-* (*pro-policy*) | hook prefix **`…ex…`**: `gexonam` | [Hook prefixes](hooks.md#hook-prefixes) |
+| *contra-* / *counter-* / *off-* (*off-policy*, *headwind*) | hook prefix **`…uemx…`**: `guemxonam`, `guemxewulel` | [Hook prefixes](hooks.md#hook-prefixes) |
+| *in-* / *intra-* / *indoor* (*indoor*, *mid-crisis*) | hook prefix **`…ax…`**: `gaxahehal`, `gaxobowum` | [Hook prefixes](hooks.md#hook-prefixes) |
+| *inter-* / *mid-* / *amid* (*mid-ocean*, *crisis-era*) | hook prefix **`…amx…`**: `gamxohalal`, `gamxobowum` | [Hook prefixes](hooks.md#hook-prefixes) |
+| *para-* / *near-* / *-adjacent* (*problem-adjacent*) | hook prefix **`…omx…`**: `gomxabevam` | [Hook prefixes](hooks.md#hook-prefixes) |
+| *trans-* / *cross-* / *-spanning* (*transoceanic*) | hook prefix **`…uox…`**: `guoxohalal`, `guoxobowum` | [Hook prefixes](hooks.md#hook-prefixes) |
+| *-ward* / *-bound* (*houseward*) | hook prefix **`…oex…`**: `goexahehal`; for the movement, on `/h/`: `hoexahehal` | [Hook prefixes](hooks.md#hook-prefixes) |
+| *-powered* / *-based* / *-driven* (*water-powered*, *tradition-based*) | hook prefix **`…aex…`**: `gaexowulal`, `gaexugarom` | [Hook prefixes](hooks.md#hook-prefixes) |
+| *-free* / *out of* in one word (*debt-free*) | hook prefix **`…uax…`**: `guaxaram` | [Hook prefixes](hooks.md#hook-prefixes) |
+| *-derived* / *-sourced* (*heritage-derived*) | hook prefix **`…ux…`**: `guxuzobam` | [Hook prefixes](hooks.md#hook-prefixes) |
+
 ### *-ing*, *-er*, and *-ed* words (*walking*, *teacher*, *seen*) {#participles}
 
 English builds several words from one verb: *walking*, *walker*, *walked*. Agebon picks the job instead: a person or thing in the middle of the act, someone who does it, someone it is their role, or someone it happens to.

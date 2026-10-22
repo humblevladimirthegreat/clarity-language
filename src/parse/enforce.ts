@@ -110,6 +110,8 @@ const SCOPE_POS = new Set(["g", "z", "d", "b", "v", "h"]);
 const SLOT_PARTS = new Set(["z", "d", "b"]);
 /** A role compound names a participant or a quality of an event (roles.md#role-compounds); `/y/` takes it only as a call (-n / -r); `/h/` takes a slot part as capacity. */
 const ROLE_COMPOUND_POS = new Set(["z", "d", "b", "g", "h", "x", "y"]);
+/** A hook prefix names a property, a participant, or how the clause stands to the stem (hooks.md#hook-prefixes). */
+const HOOK_PREFIX_POS = new Set(["z", "d", "b", "g", "h"]);
 /** Ability goes on a verb or a property (intention.md#ability). */
 const ABILITY_POS = new Set(["g", "v"]);
 
@@ -434,6 +436,9 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
     if (word.ending === "n" && (family.rightRoots ?? []).some((root) => rolePronounRoots().has(root))) {
       throw new ConstructionError("roleCompoundStem", word.raw);
     }
+  }
+  if (family.kind === "x" && family.xFamily === "hookPrefix" && word.pos && !HOOK_PREFIX_POS.has(word.pos)) {
+    throw new ConstructionError("hookPrefixSlot", word.raw);
   }
   if (family.kind === "x" && family.xFamily === "ability" && word.reading === "ability" && word.pos) {
     const hostless = tables.hostlessAbilityRoot !== null && family.leftRoots[0] === tables.hostlessAbilityRoot;

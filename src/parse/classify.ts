@@ -14,6 +14,7 @@ import {
 import {
   derivedHookGloss,
   readHookCompound,
+  type HookCompoundParts,
 } from "./hook-compounds.js";
 import type { LexOverlay, LexReading, LexWord, MorphWord } from "./types.js";
 import { CLOSED, closedDerived, withLexiconClosedRoots } from "../closed-roots.js";
@@ -228,7 +229,7 @@ export function lexiconContentRoots(
       if (family.xFamily === "numeric") {
         return [];
       }
-      if (family.xFamily === "role" && family.rightRoots?.length) {
+      if ((family.xFamily === "role" || family.xFamily === "hookPrefix") && family.rightRoots?.length) {
         return family.rightRoots;
       }
       if (family.xFamily === "compound") {
@@ -311,23 +312,31 @@ function compoundLemmaGloss(row: CompoundRow): { concrete?: string; abstract?: s
   return gloss;
 }
 
-function classifyHookCompound(word: MorphWord, tables: ClassifyTables): LexWord | undefined {
-  const parts = readHookCompound(word, (root) => tables.published.has(root));
-  if (!parts) return undefined;
+/** A hook compound's sense: its dictionary row, or the left root's sense + the hook's derived event (`walk-leave`). */
+export function hookCompoundGloss(
+  parts: HookCompoundParts,
+  pos: MorphWord["pos"],
+  tables: ClassifyTables,
+): { concrete?: string; abstract?: string } {
   const listed = tables.compounds.get(parts.stem);
+  if (listed) return compoundLemmaGloss(listed);
   const published = tables.published.get(parts.leftRoot);
   const bank =
     parts.leftEnding === "m" ? published?.posEnglish.abstract : published?.posEnglish.concrete;
-  const packed = word.pos && bank ? bank[word.pos] : undefined;
+  const packed = pos && bank ? bank[pos] : undefined;
   const leftSense =
     packed ||
     (parts.leftEnding === "m"
       ? published?.abstract || published?.concrete || parts.leftRoot
       : published?.concrete || published?.abstract || parts.leftRoot);
-  const derived = derivedHookGloss(parts.hook);
-  const gloss = listed
-    ? compoundLemmaGloss(listed)
-    : { concrete: `${leftSense}-${derived}` };
+  return { concrete: `${leftSense}-${derivedHookGloss(parts.hook)}` };
+}
+
+function classifyHookCompound(word: MorphWord, tables: ClassifyTables): LexWord | undefined {
+  const parts = readHookCompound(word, (root) => tables.published.has(root));
+  if (!parts) return undefined;
+  const listed = tables.compounds.get(parts.stem);
+  const gloss = hookCompoundGloss(parts, word.pos, tables);
   return {
     ...word,
     family: { kind: "content", roots: [parts.leftRoot] },
@@ -579,8 +588,22 @@ export function classifiedShape(word: MorphWord, tables: ClassifyTables): MorphW
   return withLexiconClosedRoots(tables.published, () => classifiedShapeIn(word, tables));
 }
 
+/**
+ * A hook prefix whose stem is a hook-compound citation (`guexowurelul` *anti-leaving*, hooks.md#hook-prefixes). The word
+ * parser reads the citation as one long root; split it the way a plain hook compound splits.
+ */
+function hookPrefixOnHookCompound(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
+  const family = word.family;
+  if (family.kind !== "x" || family.xFamily !== "hookPrefix" || family.scopeVowel || family.rightRoots?.length !== 1) return undefined;
+  const stem: MorphWord = { ...word, family: { kind: "content", roots: family.rightRoots } };
+  const parts = readHookCompound(stem, (root) => tables.published.has(root));
+  if (!parts) return undefined;
+  return { ...word, family: { ...family, rightRoots: [parts.leftRoot], stemHook: { leftEnding: parts.leftEnding, hook: parts.hook } } };
+}
+
 function classifiedShapeIn(word: MorphWord, tables: ClassifyTables): MorphWord {
-  const shaped = tailLateral(word, tables) ?? landmarkLateral(word) ?? labelScope(word, tables) ?? word;
+  const shaped =
+    tailLateral(word, tables) ?? landmarkLateral(word) ?? labelScope(word, tables) ?? hookPrefixOnHookCompound(word, tables) ?? word;
   return holderSeam(shaped, tables) ?? shaped;
 }
 

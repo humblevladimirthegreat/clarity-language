@@ -31,7 +31,8 @@
 import { isKindReference, isScaleShared, visitResult } from "./ast-walk.js";
 import { hookJobsByPosition, type HookJob } from "./hook-jobs.js";
 import { JOIN_SERIES } from "./series.js";
-import { classifyAll, overlayKey, type ClassifyTables } from "./classify.js";
+import { classifyAll, hookCompoundGloss, overlayKey, type ClassifyTables } from "./classify.js";
+import type { ExtraNounHook } from "./hook-compounds.js";
 import type { PublishedRow } from "../lexicon-search.js";
 import { CLOSED, closedDerived, namedEnglish, withLexiconClosedRoots } from "../closed-roots.js";
 import { linkerEnglish } from "./linkers.js";
@@ -1416,6 +1417,21 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
     );
     const ability = family.stanceVowel ? `-${ABILITY_STANCE[family.stanceVowel] ?? family.stanceVowel}` : "";
     return [`${roleFront(family.scopeVowel, family.part)}-${host.join("-x-")}${ability}`];
+  }
+
+  if (family.xFamily === "hookPrefix") {
+    // The hook, the seam, then the stem; a stem compound keeps its `-x-` (`against-x-house-x-walk`), and label scope
+    // keeps its `-th-` hinge (`against-x-fight-th-role`; hooks.md#hook-prefixes).
+    const roots = family.rightRoots ?? [];
+    const stem = family.stemHook
+      ? hookCompoundGloss(
+          { leftRoot: roots[0]!, leftEnding: family.stemHook.leftEnding, hook: family.stemHook.hook as ExtraNounHook, stem: `${roots[0]}${family.stemHook.leftEnding}${family.stemHook.hook}` },
+          word.pos,
+          tables,
+        ).concrete ?? roots[0]!
+      : roots.map((root) => rootSense(root, word.ending, tables, { named: isNameEnding(word.ending), pos: word.pos })).join("-x-");
+    const scope = family.scopeVowel ? `-th-${SCOPE_VOWEL[family.scopeVowel] ?? "scope"}` : "";
+    return [`${HOOK_EXTRA_NOUN[family.hook ?? ""] ?? "hook"}-x-${stem}${scope}`];
   }
 
   if (family.xFamily === "sake" || family.xFamily === "ability") {

@@ -515,6 +515,39 @@ To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`a
 
 **Compare with:** some English prepositions use other forms. *So that Olazun sits* is **`hovam blarl`**.
 
+### Abstract landmarks (*in a crisis*, *out of debt*) {#abstract-landmarks}
+
+English uses the same prepositions for states, plans, and conditions as for places: *in a crisis*, *on a policy*, *out of debt*. Agebon does the same. Put a noun in its abstract **-m** sense right after an extra-noun hook, and the hook keeps the picture it has with a place: a state is something you are **in**, a plan is a surface you stand **on**, a tendency is somewhere you head **toward**, a condition is something you get **out of**. So a new pairing needs no new word: read the hook's picture in an abstract space.
+
+> `zolazun vavobel ual baram.`
+>
+> z-Olazun | v-go | [out-of | b-debt]
+>
+> "Olazun gets out of debt."
+
+> `zuzozen varayel uel bonam.`
+>
+> z-Uzozen | v-write | [against | b-policy]
+>
+> "Uzozen writes against the policy."
+
+| Hook | Abstract landmark | Example | English |
+|------|-------------------|---------|---------|
+| **`al`** *in* | a state or condition you are inside | `al bobowum` | *in a crisis* |
+| **`aol`** *on* | a plan, rule, or footing you stand on | `aol bonam` | *on policy* |
+| **`ol`** *at* | a point of concern or a status | `ol babevam` | *at issue* |
+| **`oel`** *toward* | a tendency you head toward | `oel buzebum` | *toward a habit* |
+| **`ul`** *from* | what something comes from or owes to | `ul buzobam` | *from heritage* |
+| **`ual`** *out of* | a condition you leave | `ual baram` | *out of debt* |
+| **`uol`** *through* | something you last through | `uol bobowum` | *through the crisis* |
+| **`el`** *for* | what you favor | `el bonam` | *for the policy* |
+| **`ael`** *using* | what you go by | `ael bugarom` | *by tradition* |
+| **`uel`** *against* | what you oppose | `uel bonam` | *against the policy* |
+
+The frames read the same way, with the landmark as the general setting: `am bobowum` *amid the crisis*, `uem bonam` *contrary to the policy*. A reading that needs a different picture is not a hook reading; say it with its own word.
+
+**Compare with:** the landmark's **-m** picks its abstract sense (`bobowum` *catastrophe*, where `bobowul` is *bomb*); the hook's own **-m** (`am`, `uem`) makes the landmark the setting. The two choices are separate, and a word can take both.
+
 ### Whose (`em`) {#genitive}
 
 English *Uzozen's dog* often means the dog is in Uzozen's **use**: Uzozen keeps it, walks it, feeds it. Put **`em`** right after the noun, then the user in `/b/`. `em` says B uses the thing or has access to it. It does not say who owns it. (cue: **`el`** is *for B*, a get meant to reach B; **`em`** says it already reached B and is in B's use)
@@ -1083,18 +1116,26 @@ In a clause, add a role letter to that citation (`vowurelul`). The extra partici
 
 The left ending is part of the stem, so two different left roots stay distinct once the hook is attached. In speech that ending starts the hook's syllable, so no consonant closes a syllable mid-word: `owurelul` is *o-wu-re-lul*.
 
-| Hook | Free extra-noun | Fused **-l** | Fused **-m** | Citation (from *walk*) |
-|------|-----------------|--------------|--------------|------------------------|
-| **`al` / `am`** | *in* / *amid* | *enter* | *mill amid* | `owurelal` / `owurelam` |
-| **`aol` / `aom`** | *on* / *over* | *mount* | *cover* | `owurelaol` / `owurelaom` |
-| **`ol` / `om`** | *at* / *near* | *attend* | *adjoin* | `owurelol` / `owurelom` |
-| **`oel` / `oem`** | *toward* / *in the direction of* | *head for* | *orient* | `owureloel` / `owureloem` |
-| **`ul` / `um`** | *from* / *away from* | *leave* | *recede* | `owurelul` / `owurelum` |
-| **`ual` / `uam`** | *out of* / *out from among* | *exit* | *pick out* | `owurelual` / `owureluam` |
-| **`uol` / `uom`** | *through* / *by way of* | *traverse* | *relay* | `owureluol` / `owureluom` |
-| **`el` / `em`** | *for* / *used by* | *serve* | *have in use* | `owurelel` / `owurelem` |
-| **`ael` / `aem`** | *using* / *by* | *wield* | *channel* | `owurelael` / `owurelaem` |
-| **`uel` / `uem`** | *against* / *contrary to* | *oppose* | *defy* | `owureluel` / `owureluem` |
+| Hook | Free extra-noun | Fused **-l** | Fused **-l**, abstract `/d/` | Fused **-m** | Citation (from *walk*) |
+|------|-----------------|--------------|------------------------------|--------------|------------------------|
+| **`al` / `am`** | *in* / *amid* | *enter* | *enter a crisis* | *mill amid* | `owurelal` / `owurelam` |
+| **`aol` / `aom`** | *on* / *over* | *mount* | *take up a policy* | *cover* | `owurelaol` / `owurelaom` |
+| **`ol` / `om`** | *at* / *near* | *attend* | *attend to an issue* | *adjoin* | `owurelol` / `owurelom` |
+| **`oel` / `oem`** | *toward* / *in the direction of* | *head for* | *head for a habit* | *orient* | `owureloel` / `owureloem` |
+| **`ul` / `um`** | *from* / *away from* | *leave* | *leave a heritage behind* | *recede* | `owurelul` / `owurelum` |
+| **`ual` / `uam`** | *out of* / *out from among* | *exit* | *get out of debt* | *pick out* | `owurelual` / `owureluam` |
+| **`uol` / `uom`** | *through* / *by way of* | *traverse* | *get through a crisis* | *relay* | `owureluol` / `owureluom` |
+| **`el` / `em`** | *for* / *used by* | *serve* | *serve a policy* | *have in use* | `owurelel` / `owurelem` |
+| **`ael` / `aem`** | *using* / *by* | *wield* | *wield a tradition* | *channel* | `owurelael` / `owurelaem` |
+| **`uel` / `uem`** | *against* / *contrary to* | *oppose* | *oppose a policy* | *defy* | `owureluel` / `owureluem` |
+
+An abstract object keeps the hook's picture, as on the [free hook](#abstract-landmarks):
+
+> `zuzozen dobowum vowureluol.`
+>
+> z-Uzozen | d-catastrophe | v-traverse
+>
+> "Uzozen gets through the crisis."
 
 > `zolazun dududal vowurelel.`
 >
@@ -1106,9 +1147,107 @@ Other roots fuse the same way: `vezuyeluel` *contradict* is *tell* fused with *a
 
 **Compare with:** `vowurel ul buyahel` still *walks from a station* as two words. Same-role *including* / *rather* / *instead* / *except* never fuse; they are always separate hook words. A [lexical compound](compounds.md#lexical-compounds) like *doorbell* glues two content roots with a join letter; this glues a citation to an extra-noun hook.
 
+### Hook prefixes (hook + `x` + stem) {#hook-prefixes}
+
+English builds describing words from a relation and a thing: *anti-war*, *indoor*, *transoceanic*, *water-powered*. In Agebon, write the role letter, then the vowels of an extra-noun hook, then **`x`**, then a stem, then the ending. The stem is the hook's landmark, and the word names something that stands in that relation to it: `guexavuvul` is *against fighting* as one word. Where the free hook needs its own `/b/` word after the noun, the prefix packs the relation into a single word, so it can describe a noun, fill any noun slot, and become a dictionary word. (cue: **x** ≈ plus, the hyphen in *anti-war*)
+
+> `zuzozen guexavuvul.`
+>
+> z-Uzozen | g-against-x-fight
+>
+> "Uzozen is anti-fighting."
+
+> `zehaval gaexowulal.`
+>
+> z-ship | g-using-x-water
+>
+> "The ship is water-powered."
+
+Plain **`x`** spells the hook's **-l** reading. An **`m`** right before the **`x`** picks the hook's **-m** frame, the same **`m`** that turns `uel` into `uem`: `guemxewulel` is *contrary to the wind*, headed into it. The stem keeps its own sense choice: **-l** for the concrete sense, **-m** for the abstract one, read the way an [abstract landmark](#abstract-landmarks) reads after a free hook.
+
+> `zuzozen guemxewulel.`
+>
+> z-Uzozen | g-contrary-to-x-wind
+>
+> "Uzozen is headed into the wind."
+
+| Hook | Prefix | Concrete stem | Abstract stem |
+|------|--------|---------------|---------------|
+| `al` *in* | **`…ax…`** | `gaxahehal` *indoor* | `gaxobowum` *mid-crisis* |
+| `aol` *on* | **`…aox…`** | `gaoxohalal` *seagoing* | `gaoxonam` *on-policy* |
+| `ol` *at* | **`…ox…`** | `goxahehal` *at the house* | `goxabevam` *at issue* |
+| `oel` *toward* | **`…oex…`** | `goexahehal` *houseward* | `goexuzebum` *habit-forming* |
+| `ul` *from* | **`…ux…`** | `guxahehal` *from the house* | `guxuzobam` *heritage-derived* |
+| `ual` *out of* | **`…uax…`** | `guaxowulal` *out of the water* | `guaxaram` *debt-free* |
+| `uol` *through* | **`…uox…`** | `guoxohalal` *transoceanic* | `guoxobowum` *crisis-spanning* |
+| `el` *for* | **`…ex…`** | `gexahehal` *household* | `gexonam` *pro-policy* |
+| `ael` *using* | **`…aex…`** | `gaexowulal` *water-powered* | `gaexugarom` *tradition-based* |
+| `uel` *against* | **`…uex…`** | `guexohalal` *sea-facing* (a seawall) | `guexonam` *anti-policy* |
+
+| Hook | Prefix | Concrete stem | Abstract stem |
+|------|--------|---------------|---------------|
+| `am` *amid* | **`…amx…`** | `gamxohalal` *mid-ocean* | `gamxobowum` *crisis-era* |
+| `aom` *over* | **`…aomx…`** | `gaomxohalal` *over the ocean* (a flight) | `gaomxonam` *policy-covered* |
+| `om` *near* | **`…omx…`** | `gomxahehal` *near the house* | `gomxabevam` *problem-adjacent* |
+| `oem` *in the direction of* | **`…oemx…`** | `goemxahehal` *facing the house* | `goemxuzebum` *habit-leaning* |
+| `um` *away from* | **`…umx…`** | `gumxahehal` *away from the house* | `gumxuzebum` *habit-shedding* |
+| `uam` *out from among* | **`…uamx…`** | `guamxayayal` *picked from the group* | `guamxayayam` *community-drawn* |
+| `uom` *by way of* | **`…uomx…`** | `guomxohel` *bridge-routed* | `guomxewulem` *influence-routed* |
+| `em` *used by* | **`…emx…`** | `gemxayayal` *group-owned* | `gemxayayam` *community-held* |
+| `aem` *by* | **`…aemx…`** | `gaemxorahel` *road-borne* | `gaemxonam` *policy-channeled* |
+| `uem` *contrary to* | **`…uemx…`** | `guemxewulel` *headwind* | `guemxonam` *off-policy* |
+
+A pair differs the way the free hooks do: `goxahehal` *at the house* is there, and `gomxahehal` *near the house* is only close to it.
+
+The role letter is the word's slot, as on any content word:
+
+| Role letter | The word names | Example | English |
+|-------------|----------------|---------|---------|
+| `/ɡ/` | a property: in that relation to the stem | `gexegobom` | *body-positive* |
+| `/z/` `/d/` `/b/` | someone or something in that relation | `zuexavuvul` | *an opponent of fighting* |
+| `/h/` | how the clause stands to the stem | `hoexahehal` | *houseward* (of the movement) |
+
+> `zuexavuvul vowurel.`
+>
+> z-against-x-fight | v-walk
+>
+> "An opponent of fighting walks."
+
+> `zuzozen vowurel hoexahehal.`
+>
+> z-Uzozen | v-walk | h-toward-x-house
+>
+> "Uzozen walks houseward."
+
+The stem may be an ordinary compound (`guexahehaxowurel` *against walking in houses*) or a [hook compound](#hook-compounds) citation:
+
+> `zolazun guexowurelul.`
+>
+> z-Olazun | g-against-x-leave
+>
+> "Olazun is against leaving."
+
+[Label scope](predication.md#label-scope) goes after the stem, as on any word, and **-r** resumes the whole word:
+
+> `zolazun guexavuvuthal.`
+>
+> z-Olazun | g-against-x-fight-th-episode
+>
+> "Olazun is against fighting this time."
+
+> `zuexavuvul vowurel. zuexavuvur vezuvol.`
+>
+> z-against-x-fight | v-walk . z-←against-x-fight | v-sleep
+>
+> "An opponent of fighting walks. That opponent sleeps."
+
+A common hook prefix can enter the dictionary as a citation, with no role letter (`uexavuvul`). In speech **`x`** starts the stem's first syllable (*gue-xa-vu-vul*); with **`mx`**, the **`m`** closes the hook's syllable (*guem-xe-wu-lel*).
+
+**Compare with:** the free hook keeps the landmark as its own word: `zumon uel buduvul vowurel.` is *someone against the duel walks*, and a later `buduvur` points back to that duel. The prefix makes one word for a kind: `zuexuduvul vowurel.` is *an opponent of dueling walks*, with no landmark to point back to.
+
 ### Practice {#advanced-practice}
 
-Short drills for Advanced. Try each item before opening **Show answer**. Each fused verb is a citation plus a hook from the extra-noun grid (*walk* + *from* is *leave*).
+Short drills for Advanced. Try each item before opening **Show answer**. Each fused verb is a citation plus a hook from the extra-noun grid (*walk* + *from* is *leave*), and each hook prefix is the hook's vowels, **`x`** or **`mx`**, then a stem.
 
 **Setting:** a ferry slip
 
@@ -1132,6 +1271,8 @@ Short drills for Advanced. Try each item before opening **Show answer**. Each fu
 | *guard* | `agayul` |
 | *fog* | `ovulul` |
 | *ice* | `ezulol` |
+| *ocean* | `ohalal` |
+| *wind* | `ewulel` |
 
 #### English → Agebon {#advanced-english-to-agebon}
 
@@ -1165,6 +1306,22 @@ z-Ahelan | d-fog | v-exit
 `zuzozen dolazun vezuyeluel.`
 
 z-Uzozen | d-Olazun | v-tell-oppose
+:::
+
+**5.** *The ship is transoceanic.*
+
+::: details Show answer
+`zehaval guoxohalal.`
+
+z-ship | g-through-x-ocean
+:::
+
+**6.** *The boat is wind-powered.*
+
+::: details Show answer
+`zebaval gaexewulel.`
+
+z-boat | g-using-x-wind
 :::
 
 #### Agebon → English {#advanced-agebon-to-english}
@@ -1201,6 +1358,22 @@ z-Ahelan | d-guard | v-oppose
 *Ahelan opposes the guard.*
 :::
 
+**5.** `zahelan vowurel hoexehaval.`
+
+::: details Show answer
+z-Ahelan | v-walk | h-toward-x-ship
+
+*Ahelan walks shipward.*
+:::
+
+**6.** `zolazun guexagayul.`
+
+::: details Show answer
+z-Olazun | g-against-x-guard
+
+*Olazun is anti-guard.*
+:::
+
 #### Pick one {#advanced-pick-one}
 
 **1.** *Uzozen enters the ship.* `zuzozen dehaval vowurelal.` or `zuzozen behaval vowurelal.`
@@ -1211,6 +1384,16 @@ z-Ahelan | d-guard | v-oppose
 z-Uzozen | d-ship | v-enter
 
 A fused verb takes its extra participant as an ordinary object, `/d/`; after a verb, `/b/` is a recipient.
+:::
+
+**2.** *The boat is mid-ocean, out among the waves.* `zebaval gamxohalal.` or `zebaval gaxohalal.`
+
+::: details Show answer
+`zebaval gamxohalal.`
+
+z-boat | g-amid-x-ocean
+
+**`mx`** picks the frame *amid*, with the ocean as the setting; plain **`x`** is *in* the ocean, under the water.
 :::
 
 #### Fix it {#advanced-fix-it}

@@ -299,7 +299,37 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
   });
 
   it("reads no hooked-part or result role compound (roles.md)", () => {
-    for (const raw of ["daoxeguyel", "daoxar", "daexarayel", "daexar", "dexezuvol", "zuexurozum", "duoxowurel"]) {
+    for (const raw of ["daoxar", "daexar"]) {
+      assert.throws(() => parseWord(raw), WordParseError, raw);
+    }
+  });
+
+  it("parses hook prefixes on x and mx (hooks.md#hook-prefixes)", () => {
+    const cases: [string, string, string[]][] = [
+      ["guexavuvul", "uel", ["avuvu"]],
+      ["daexarayel", "ael", ["araye"]],
+      ["guemxewulel", "uem", ["ewule"]],
+      ["gaomxohalal", "aom", ["ohala"]],
+      ["guexahehaxowurel", "uel", ["aheha", "owure"]],
+      ["uexavuvul", "uel", ["avuvu"]],
+      ["guexonam", "uel", ["ona"]],
+    ];
+    for (const [raw, hook, rightRoots] of cases) {
+      const word = parseOk(raw);
+      assert.equal(word.family.kind, "x", raw);
+      if (word.family.kind === "x") {
+        assert.equal(word.family.xFamily, "hookPrefix", raw);
+        assert.equal(word.family.hook, hook, raw);
+        assert.deepEqual(word.family.rightRoots, rightRoots, raw);
+      }
+    }
+    const scoped = parseOk("zuexavuvuthel");
+    assert.equal(scoped.family.kind === "x" && scoped.family.scopeVowel, "e");
+    assert.equal(parseOk("bluexavuvul").bl, true);
+  });
+
+  it("reads no hook prefix on a non-hook pair, another seam consonant, or a one-vowel stem", () => {
+    for (const raw of ["geaxavuvul", "gouxavuvul", "guelxavuvul", "guenxavuvul", "guexar", "guemxar"]) {
       assert.throws(() => parseWord(raw), WordParseError, raw);
     }
   });
@@ -507,7 +537,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
   });
 
   it("rejects the old role shape and a th scope after a role stem", () => {
-    for (const raw of ["zaxar", "zaxuduyel", "zwazuduyethel", "xuxun"]) assert.throws(() => parseWord(raw), WordParseError, raw);
+    for (const raw of ["zaxar", "zwazuduyethel", "xuxun"]) assert.throws(() => parseWord(raw), WordParseError, raw);
   });
 });
 

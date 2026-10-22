@@ -243,6 +243,12 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
       "A sake word `SAKE-STANCE-ending` (competence, relatedness, pleasure, purpose, …) says how something stands toward that payoff, for the speaker unless a `b-` right after it or a holder says whose. `met` = it serves it, `unmet` = it costs it, `motive` = done for that payoff, `ought` = advice that the act would serve it (`-offered` unasked, `-invited` asked for, `-trial` worth a try); with `ought` the verb is what ought to happen, not what happens. On `g-` after a noun it is about that thing of mine; on `th-` it is about the whole event: `z-X | v-sing | th-pleasure-met-any-term` = X sings, and I enjoy it. With a capital tail (`-INTERNAL-SURGING`, `-AIMED-FLOWING`) it is one feeling: say it with the plain English emotion word (unmet competence = anxious or frustrated, unmet relatedness aimed at a `b-` person = irritated with them, met competence = proud or confident), not piece by piece. `[w-FEELING | g-stimulus]` after a noun = that feeling about the noun.",
   },
   scope: { anchor: "predication.md#label-scope", summary: "label scope" },
+  hookPrefix: {
+    anchor: "hooks.md#hook-prefixes",
+    summary: "hook prefix",
+    reader:
+      "`HOOK-x-STEM` is a hook prefix, one word like English *anti-*, *pro-*, *in-*, *trans-*, *-ward*: something that stands in that hook's relation to the stem. On `g-` it is a property, on `z-` `d-` `b-` someone or something with it, on `h-` how the clause stands to the stem. `g-against-x-fight` = anti-fighting; `z-against-x-fight` = an opponent of fighting; `g-in-x-house` = indoor; `g-through-x-ocean` = transoceanic; `g-using-x-water` = water-powered; `h-toward-x-house` = toward the house. A frame hook (`amid`, `near`, `contrary-to`, `over`, …) makes the stem the setting: `g-amid-x-catastrophe` = crisis-era; `g-contrary-to-x-memo` = off-policy. An abstract stem keeps the hook's picture: `in` a state, `on` a plan, `out-of` a condition (`g-out-of-x-debt` = debt-free).",
+  },
   lateral: {
     anchor: "roles.md#viewpoint-laterals",
     summary: "viewpoint lateral",
@@ -690,6 +696,7 @@ export const REJECTIONS = {
   labelScopeSlot: { anchor: "predication.md#label-scope", summary: "label scope goes on /ɡ/, /z/, /d/, /b/, /v/, or /h/ only" },
   labelScopeStem: { anchor: "predication.md#label-scope", summary: "a scope seam labels a content root, not a special pronoun" },
   roleCompoundSlot: { anchor: "roles.md#role-compounds", summary: "a role compound goes on /z/, /d/, /b/, /ɡ/, as a topic under /x/, as a call under /y/ (-n / -r), or as capacity under /h/ with a slot part; not on /v/, /w/, or /th/, and not a content part on /h/" },
+  hookPrefixSlot: { anchor: "hooks.md#hook-prefixes", summary: "a hook prefix goes on /ɡ/, /z/, /d/, /b/, or /h/; not on /v/, /w/, /th/, /x/, or /y/" },
   roleCompoundStem: { anchor: "roles.md#role-compounds", summary: "a role compound names a role of an event; a special pronoun is not an event" },
   abilitySlot: { anchor: "intention.md#ability", summary: "ability (x + vowel) goes on /v/ or /ɡ/ only; name + x + vowel + -n is a conversation-length bid only as a citation or a /y/ call" },
   labelScopeArrow: { anchor: "roles.md#landmark-facing", summary: "on a direction root the th seam takes only o (the landmark's own facing)" },
