@@ -303,15 +303,8 @@ const GREETING_STANCE: Record<string, string> = {
 
 export const ROLE_VOWEL: Record<string, string> = {
   a: "agent",
-  e: "scene",
   u: "patient",
   o: "recipient",
-  ae: "instrument",
-  oe: "goal",
-  ua: "source",
-  uo: "path",
-  ao: "result",
-  ue: "bearer",
 };
 
 /** Role pointer vowel: which event the pointer reads (pronouns.md#role-pointers). */

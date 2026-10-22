@@ -218,7 +218,7 @@ English names a person by what they usually do (*a singer*, *a manager*). Agebon
 | `zaxehorelezuyethel` | *poet* | `ehorelezuyel` *poetry* |
 | `zaxaralobolothel` | *investor* | `aralobolol` *investment* |
 | `zaxaralamuyathel` | *employee* | `aralamuyal` *employment* |
-| `zuexaralamuyathel` | *employer* (the one who bears the cost) | `aralamuyal` *employment* |
+| `zoxaralamuyathel` | *employer* (the one the work is done for) | `aralamuyal` *employment* |
 | `zaxayal` | *participant* | `ayal` *handshake* |
 | `zaxugobethel` | *leader* / *chairman* / *president* | `ugobel` *crown* |
 | `zaxurethel` | *director* | `urel` *compass* |
@@ -469,7 +469,7 @@ English makes nouns for a part, a kind, a role, and a manner. Agebon has no sepa
 | *gender* / *sex* (the category) | `zevugom zemugom zam.` | the open pair female, male |
 | *sex* (the act) | `zelemam` | sexuality |
 | *patient* (being treated) | `zuxuhemul` | the one who undergoes healing |
-| *scene* (where it happens) | `zexowurel` | the scene of the walk |
+| *scene* (where it happens) | `zuzozen vowurel ol bahehal. zolazun vuhohol or.` | the place already named: *there* |
 | *function* (purpose) | `zanal guwathom.` | the book's purpose is competence |
 | *size* (how big) | `zanal zehowol zoel gelazom.` | same size as the hammer |
 | *way* / *method* / *style* / *mode* | the manner adverb on `/h/` | `zuzozen vowurel hedurem.` |

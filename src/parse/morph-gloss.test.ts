@@ -126,7 +126,6 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zaxezuyer", "z-agent-x-speech");
     expectLine("zaxavuvul", "z-agent-x-fight");
     expectLine("zaxavuvum", "z-agent-x-struggle");
-    expectLine("zexezuvol", "z-scene-x-sleep");
     expectLine("zoxezuyel", "z-recipient-x-speech");
     expectLine("xrewul", "x-starting-with");
   });
@@ -544,7 +543,7 @@ describe("compareMorphGloss", () => {
   it("role pointers gloss their role and event, not the referent", () => {
     expectLine("zuzozen vowurel. zaxar vuhohol", "z-Uzozen | v-walk . z-←agent.same | v-sit");
     expectLine("zuzozen vawebol daxer", "z-Uzozen | v-see | d-←agent.self");
-    expectLine("zuzozen vowurel. zaexarx vuhohol", "z-Uzozen | v-walk . z-←instrument.same-x | v-sit");
+    expectLine("zuzozen zolazun zal vowurel. zaxarx vuhohol", "[z-Uzozen | z-Olazun | z-and] | v-walk . z-←agent.same-x | v-sit");
     expectLine("zuzozen vowurel. zolazun theyemaxar velurul", "z-Uzozen | v-walk . z-Olazun | th-CLUES-←agent.same | v-departure");
   });
 

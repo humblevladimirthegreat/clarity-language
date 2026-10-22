@@ -359,15 +359,6 @@ function bindRole(ctx: Ctx, pronoun: LexWord): void {
 
 // ── Role pointers (pronouns.md#role-pointers) ──────────────────────────────
 
-/** Doer, undergoer, and extra party: the pointer follows whoever last filled that slot. */
-const CORE_ROLES = new Set<RoleVowel>(["a", "u", "o"]);
-
-/** Place hooks whose `/b/` is the scene (hooks.md#extra-noun). */
-const PLACE_HOOKS = new Set(["al", "am", "aol", "aom", "ol", "om"]);
-
-/** Extra-noun hooks paired with a stacked role vowel (`ael` → instrument `ae`). */
-const STACKED_HOOK_ROLE: Record<string, RoleVowel> = { ael: "ae", oel: "oe", ual: "ua", uol: "uo", uel: "ue" };
-
 function npFiller(coord: NpCoord): Filler | undefined {
   const words = coord.parts.flatMap((part) => part.items.flatMap((item) => (item.kind === "package" ? [item.package.head] : [])));
   if (words.length === 0) return undefined;
@@ -379,16 +370,10 @@ function hostedFiller(hosted: Hosted | undefined): Filler | undefined {
   return { words: [hosted.bound, ...(hosted.boundJoin?.members ?? [])], join: hosted.boundJoin?.join };
 }
 
-/** *During* (`huwem`): its `/b/` is the scene's time when the clause has no place hook. */
-function isDuring(word: LexWord): boolean {
-  return word.pos === "h" && word.ending === "m" && word.family.kind === "content" && word.family.roots[0] === CLOSED.gemini;
-}
-
 /**
  * The anchor of a clause: its verb (or its `/ɡ/` word with no verb) and the overt filler of each
  * role. Doer `/z/`, undergoer `/d/`; the extra party is the verb's unhosted `/b/` or the `/b/` a
- * `/ɡ/` predicate hosts; the scene is the first place hook's `/b/`, else *during*'s; the stacked
- * roles read their paired hook's `/b/`.
+ * `/ɡ/` predicate hosts.
  */
 function anchorOf(clause: Clause): Anchor | undefined {
   let verb: LexWord | undefined;
@@ -396,8 +381,6 @@ function anchorOf(clause: Clause): Anchor | undefined {
   let sharedPredicate: { word: LexWord; hosted?: Hosted } | undefined;
   const fillers: Anchor["fillers"] = {};
   let unhosted: Filler | undefined;
-  let place: Filler | undefined;
-  let time: Filler | undefined;
   clause.units.forEach((unit, index) => {
     switch (unit.kind) {
       case "vp":
@@ -411,9 +394,6 @@ function anchorOf(clause: Clause): Anchor | undefined {
         if (adj?.kind === "adj") gPredicate ??= { word: adj.adj.word, hosted: adj.adj.hosted };
         return;
       }
-      case "h":
-        if (isDuring(unit.unit.word)) time ??= hostedFiller(unit.unit.hosted);
-        return;
       case "np": {
         const filler = npFiller(unit.coord);
         if (!filler) return;
@@ -424,17 +404,7 @@ function anchorOf(clause: Clause): Anchor | undefined {
           if (shared && !isScaleShared(shared)) sharedPredicate ??= { word: shared.word, hosted: shared.hosted };
         }
         else if (unit.coord.level === "d") fillers.u ??= filler;
-        else {
-          const prev = clause.units[index - 1];
-          const hook = prev?.kind === "hook" ? prev : undefined;
-          if (!hook) unhosted ??= filler;
-          else if (hook.job === "extraNoun" && !hook.onLeft) {
-            const form = hook.word.raw;
-            if (PLACE_HOOKS.has(form)) place ??= filler;
-            const stacked = STACKED_HOOK_ROLE[form];
-            if (stacked) fillers[stacked] ??= filler;
-          }
-        }
+        else if (clause.units[index - 1]?.kind !== "hook") unhosted ??= filler;
         return;
       }
     }
@@ -444,8 +414,6 @@ function anchorOf(clause: Clause): Anchor | undefined {
   if (!predicate) return undefined;
   const extra = verb ? unhosted : hostedFiller(gPredicate?.hosted);
   if (extra) fillers.o = extra;
-  const scene = place ?? time;
-  if (scene) fillers.e = scene;
   return { predicate, fillers };
 }
 
@@ -483,9 +451,7 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
   ctx.anaphors.push(bind);
   const open = ctx.clauses.at(-1);
   const earlier = ctx.anchors.slice(0, open?.before ?? ctx.anchors.length).reverse();
-  // Only the doer, undergoer, and extra party are always compared; `o` also takes a stacked role whose hook is overt.
-  const core = CORE_ROLES.has(roleVowel);
-  const overt = core || (pointerVowel === "o" && roleVowel !== "e");
+  // The pointer follows whoever last filled that slot.
   let anchor: Anchor | undefined;
   let filler: Filler | undefined;
   if (pointerVowel === "e") {
@@ -497,9 +463,6 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
     }
   } else if (pointerVowel === "u") {
     anchor = earlier.find((item) => !item.fillers[roleVowel]);
-  } else if (!overt) {
-    if (pointerVowel === "a") anchor = earlier[0];
-    filler = anchor?.fillers[roleVowel];
   } else {
     const filled = earlier.filter((item) => item.fillers[roleVowel]);
     anchor = filled[0];
@@ -510,7 +473,7 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
     filler = anchor?.fillers[roleVowel];
   }
   if (!anchor) return;
-  if (overt && pointerVowel !== "u" && !filler) return;
+  if (pointerVowel !== "u" && !filler) return;
   bind.antecedent = filler ? fillerWord(filler) : anchor.predicate;
   // A new one or a share is its own referent, never the earlier filler's (pronouns.md#a-new-one).
   if (pronoun.ending !== "r") ctx.referents.set(pronoun, `${pronoun.ending}:${pronoun.at ?? -1}`);

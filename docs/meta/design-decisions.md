@@ -118,6 +118,13 @@ Role letter + `w` + knowledge vowel + kind letter + a standalone join (`zwuyar` 
 - **The knowledge vowel** was optional, and plain `zar` stayed the default. A route with an extra clause is just as optional, so nothing is lost on how often people mark who knows which one, only length. A real question is plain `yol … bar`; *remind me* takes MEMORY on the question, and a choice PLAN; *I know who* is its own sentence (`zuwon vanam dorl zar.`); *you know the one* is a resume with no antecedent (`zeyor`); *nobody I'll name* as a source is `thebam blumon` plus that sentence; a shared-history *never* is the holder seam (`hal thevumayan`); *everyone we know* bounds the join with pair scope (`zual guxanathom blayan`). The quiz has no taught route yet (`stacked-speech-acts.md`).
 - **The shape is wanted elsewhere.** Role letter + `w` + vowel + consonant is the shape `role-consonant-compounds.md` gives role compounds and pointers.
 
+### Hooked parts and the result
+
+A role compound names a participant that sat in `/z/`, `/d/`, or `/b/`. Retired:
+
+- **The scene, tool, goal, source, path, and bearer** (`dexezuvol`, `daexarayel`, `doexaruvel`, `duaxobuvur`, `duoxowurel`, `zuexurozum`). A hooked landmark sits in `/b/` behind its hook, so naming it from the slot would need the hook vowel too, which collides with the recipient (no hook) and with label scope. Every fix tried (a separate recipient part, merging the recipient into the goal) cost more than the forms are worth. Losses: a short form for an unnamed landmark (*wherever it happened*), and person nouns for the bearer and the beneficiary (*a theft victim*). A kind of place, tool, or time is an ordinary compound with a head root; a named landmark is resumed or pointed back to with its hook.
+- **A separate result** (`daoxeguyel`). What an event makes sits in `/d/` (*builds a house*), so the undergoer names it. Whether a verb's `/d/` is acted on or brought into being is a fact about the verb, and a verb rarely has both; a second spelling would make the learner pick between two parts for one slot. Loss: no spelling marks *this did not exist before*; the stem carries it.
+
 ### Names and their instances
 
 One of a name is **-ln** (span `^@`). Rejected:

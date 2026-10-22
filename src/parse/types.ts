@@ -1,7 +1,7 @@
 import type { OverlayKind } from "../lexicon-search.js";
 
 /** Role compound vowel (roles.md): simplex or stacked. */
-export type RoleVowel = "a" | "e" | "u" | "o" | "ae" | "ao" | "oe" | "ua" | "ue" | "uo";
+export type RoleVowel = "a" | "u" | "o";
 
 /** Role pointer vowel: `a` same, `o` other, `e` self, `u` unsaid (pronouns.md#role-pointers). */
 export type PointerVowel = "a" | "e" | "o" | "u";

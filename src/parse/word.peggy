@@ -599,13 +599,12 @@ xWord
   / AbilityCompound
   / NumericDerivation
   / OrdinaryCompound
-  / HeldPointer
 
 // Role pointer: role vowel(s) + `x` + pointer vowel + **-r** / **-l** / **-m** (`zaxar`, `zaxal`, `zaxam`;
 // pronouns.md#role-pointers). The pointer vowel picks the event: `a` same, `o` other, `e` self, `u` unsaid.
 // **-r** names the participant, **-l** a new one of its kind, **-m** its part in the event.
 RolePointer
-  = roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" pointerV:[aeou] end:[rlm] plural:PluralSuffix? WordEnd {
+  = roleV:[auo] "x" pointerV:[aeou] end:[rlm] plural:PluralSuffix? WordEnd {
       return {
         ending: end,
         plural: !!plural,
@@ -621,7 +620,7 @@ RolePointer
 // Optional tail: ability (`x` + stance vowel) on `/ɡ/` only (*fit to be* that role, intention.md § Ability),
 // or label scope (`th` + scope vowel, predication.md#label-scope); one seam per word.
 RoleCompound
-  = roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" root:ContentRoot rest:("x" r:ContentRoot { return r; })* tail:RoleTail? ending:Ending plural:PluralSuffix? WordEnd {
+  = roleV:[auo] "x" root:ContentRoot rest:("x" r:ContentRoot { return r; })* tail:RoleTail? ending:Ending plural:PluralSuffix? WordEnd {
       const fields = {
         leftRoots: [],
         roleVowel: roleV,
@@ -673,7 +672,7 @@ LateralCompound
         }),
       };
     }
-  / dir:ContentRoot "th" roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo" / "a" / "e" / "u" / "o") "x" pointerV:[aeou] "r" plural:PluralSuffix? WordEnd {
+  / dir:ContentRoot "th" roleV:[auo] "x" pointerV:[aeou] "r" plural:PluralSuffix? WordEnd {
       return {
         ending: "r",
         plural: !!plural,
@@ -735,21 +734,6 @@ OrdinaryCompound
         family: xFamily("compound", {
           leftRoots: [left],
           rightRoots: [right, ...rest],
-        }),
-      };
-    }
-
-// A stacked-vowel role pointer after a holder host and its grade (`thunemuexar`, knowing.md#holder).
-// classify.ts checks the host; a single role vowel there reads as an ability shape first.
-HeldPointer
-  = host:$((!(("ae" / "ao" / "oe" / "ua" / "ue" / "uo") "x" [aeou] "r" "x"? WordEnd) [a-z])+) roleV:("ae" / "ao" / "oe" / "ua" / "ue" / "uo") "x" pointerV:[aeou] "r" plural:PluralSuffix? WordEnd {
-      return {
-        ending: "r",
-        plural: !!plural,
-        family: xFamily("pointer", {
-          leftRoots: [host],
-          roleVowel: roleV,
-          pointerVowel: pointerV,
         }),
       };
     }

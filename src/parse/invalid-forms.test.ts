@@ -190,7 +190,6 @@ const ROWS: Row[] = [
   { invalid: "zaxar vowurel.", rejection: "pointerUnbound", valid: "zuzozen vowurel. zaxar vuhohol." },
   { invalid: "zuzozen vowurel. vaxar.", rejection: "pointerSlot", valid: "zuzozen vowurel. zolazun vowurer." },
   { invalid: "zolazun vuhohol howuhethaxar.", rejection: "pointerUnbound", valid: "zuzozen vowurel. zolazun vuhohol howuhethaxar." },
-  { invalid: "zuzozen vowurel. dexor vawebol.", rejection: "pointerOtherRole", valid: "zuzozen vowurel. dexar vawebol." },
   { invalid: "zuzozen dolazun vanuvul. zaxem genamum.", rejection: "pointerShareSelf", valid: "zuzozen dolazun vanuvul. zaxam genamum." },
   { invalid: "zuzozen dolazun vanuvul. zaxamx genamum.", rejection: "pointerSharePlural", valid: "zuzozen dolazun vanuvul. zaxam genamum." },
   { invalid: "dugedol vawebol. zaxul varuvel.", rejection: "pointerNewUnsaid", valid: "dugedol vawebol. zaxur varuvel." },

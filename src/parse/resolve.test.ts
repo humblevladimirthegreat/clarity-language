@@ -133,17 +133,6 @@ describe("resolve — role pointers (pronouns.md#role-pointers)", () => {
     assert.deepEqual(pointers("zuzozen gawom blolazun. zoxar varuvel."), ["zoxar→blolazun"]);
   });
 
-  it("the scene is a place hook's /b/, else during's, else the event's own", () => {
-    assert.deepEqual(pointers("zuzozen vezuvol al bahehal. zolazun dexar vawebol."), ["dexar→bahehal"]);
-    assert.deepEqual(pointers("zuzozen vezuvol herem blenulul. zolazun dexar vawebol."), ["dexar→blenulul"]);
-    assert.deepEqual(pointers("zuzozen vezuvol. zolazun dexar vawebol."), ["dexar→vezuvol"]);
-  });
-
-  it("a stacked role reads its paired hook's /b/, else the event's own", () => {
-    assert.deepEqual(pointers("zuzozen vavuvul ael bahel. zolazun daexar vawebol."), ["daexar→bahel"]);
-    assert.deepEqual(pointers("zuzozen vavuvul. zolazun daexar vawebol."), ["daexar→vavuvul"]);
-  });
-
   it("a joined slot is one group", () => {
     assert.deepEqual(pointers("zuzozen zolazun zal vowurel. zaxarx vuhohol."), ["zaxarx→zal"]);
     assert.deepEqual(pointers("zuzozen zolazun zel gamahum. zaxarx varuvel."), ["zaxarx→zel"]);
@@ -179,22 +168,16 @@ describe("resolve — role pointers (pronouns.md#role-pointers)", () => {
     assert.throws(() => parseText("zuzozen vowurel. zaxur vuhohol."), /earlier predicate/);
   });
 
-  it("o on a stacked role counts only overt fillers", () => {
-    assert.deepEqual(pointers("zuzozen vavuvul ael bahel. zolazun vavuvul ael begul. zuzozen vavuvul. zuzozen daexor vawebol."), ["daexor→bahel"]);
-  });
-
   it("rejects a share with e or -x, a new one with u or on a special pronoun", () => {
     assert.throws(() => parseText("zuzozen dolazun vanuvul. zaxem genamum."), /never takes the self vowel/);
     assert.throws(() => parseText("zuzozen dolazun vanuvul. zaxamx genamum."), /takes no -x/);
     assert.throws(() => parseText("dugedol vawebol. zaxul varuvel."), /unsaid pointer/);
     assert.throws(() => parseText("zuwon vowurel. zaxal vuhohol."), /special, topic, or generic/);
-    assert.throws(() => parseText("zuzozen dolazun vanuvul. zexom genamum."), /except the scene/);
   });
 
-  it("rejects pointers with no referent, on the wrong slot, o on an implicit role, or e on its own slot", () => {
+  it("rejects pointers with no referent, on the wrong slot, or e on its own slot", () => {
     assert.throws(() => parseText("zaxar vowurel."), /needs an earlier predicate/);
     assert.throws(() => parseText("zuzozen vowurel. vaxar."), /fills \/z\//);
-    assert.throws(() => parseText("zuzozen vowurel. dexor vawebol."), /except the scene/);
     assert.throws(() => parseText("zaxer vowurel."), /not the one it fills/);
   });
 });
@@ -390,14 +373,6 @@ describe("resolve — role anaphors (roles.md)", () => {
     assert.equal(role!.antecedent?.raw, "vozowol");
   });
 
-  it("binds zexezobur as place of the prior scream verb", () => {
-    const { anaphors } = resolveOf("zululon vezobul. zuzozen dexezobur vayugol.");
-    const role = anaphors.find((a) => a.kind === "role");
-    assert.ok(role);
-    assert.equal(role!.pronoun.raw, "dexezobur");
-    assert.equal(role!.roleVowel, "e");
-    assert.equal(role!.antecedent?.raw, "vezobul");
-  });
 
   it("binds zoxezuyor as recipient of the prior tell verb", () => {
     const { anaphors } = resolveOf("zuzozen vezuyol. zoxezuyor vurunul.");

@@ -154,7 +154,7 @@ Put the **act** in a `bl-` word after a fault pole, not the person ([fault](caus
 
 ### Kill, feed, remove, prevent, persuade, introduce, show, create, excite {#cause-verbs}
 
-**Needs:** [Make someone do it](causation.md#make) · [Decision](intention.md#decision) · [So that](dependents.md#so-that) · [Goal, source, path](roles.md#goal-source-path)
+**Needs:** [Make someone do it](causation.md#make) · [Decision](intention.md#decision) · [So that](dependents.md#so-that) · [Extra nouns](hooks.md#extra-noun)
 
 English has a separate verb for *make someone do X* in many common cases: *kill* is *make die*, *feed* is *make eat*. Agebon has one way to say all of them. Keep the ordinary verb for what happens, let the one it happens to be the subject, and put the one who makes it happen in a `bl-` word right after **`thewem`** ([make](causation.md#make)). Change only the verb root.
 
@@ -165,7 +165,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 | *make X angry* / *paint it red* (a result) | `zuzozen vunemul thewem blolazun.` | the adjective's verb root, Uzozen becomes angry, Olazun makes it happen |
 | *arrived tired* / *left angry* (a state during) | `zolazun velurul herem blarl zalamur godamul.` or `zolazun godamul. zalamur velurul.` | a `/ɡ/` word right after the verb has no reading, so the state is its own clause |
 | *feed* (a child, nurture) | `zolazun vevuyal duzozen.` | the nurturing root, no `thewem` |
-| *remove* | `zanal velurul ual bexagedal thewem bluzozen.` | the book leaves the table, Uzozen makes it happen |
+| *remove* | `zanal velurul ual bedohol thewem bluzozen.` | the book leaves the table, Uzozen makes it happen |
 | *discard* | `zanal velulul thewem bluzozen.` | the book is disposed of |
 | *ensure* / *make sure* (that it happens) | `zolazun velurul thewem bluzozen.` | Olazun leaves, Uzozen makes it happen |
 | *prevent* (make it not happen) | `zolazun velurul vul thewem bluzozen.` | Olazun does not leave, Uzozen makes that so |

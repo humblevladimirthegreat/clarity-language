@@ -287,7 +287,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     }
   });
 
-  it("reads ao as one stack in a feeling word and a role compound (phonology.md#phonotactics)", () => {
+  it("reads ao as one stack in a feeling word (phonology.md#phonotactics)", () => {
     for (const raw of ["wuwathuraor", "thuwathuraor"]) {
       const word = parseOk(raw);
       assert.ok(word.family.kind === "x" && word.family.xFamily === "sake", raw);
@@ -297,15 +297,12 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
       }
     }
     for (const locus of ["a", "o", "uo", "ae"]) assert.equal((parseOk(`wuwathur${locus}r`).family as { locus?: string }).locus, locus);
-    const result = parseOk("daoxeguyel");
-    assert.ok(result.family.kind === "x" && result.family.xFamily === "role");
-    if (result.family.kind === "x") {
-      assert.equal(result.family.roleVowel, "ao");
-      assert.deepEqual(result.family.rightRoots, ["eguye"]);
+  });
+
+  it("reads no stacked role vowel: the hooked parts and the result are not role compounds (roles.md)", () => {
+    for (const raw of ["daoxeguyel", "daoxar", "daexarayel", "daexar", "dexezuvol", "zuexurozum", "duoxowurel"]) {
+      assert.throws(() => parseWord(raw), WordParseError, raw);
     }
-    const pointer = parseOk("daoxar");
-    assert.ok(pointer.family.kind === "x" && pointer.family.xFamily === "pointer");
-    if (pointer.family.kind === "x") assert.equal(pointer.family.roleVowel, "ao");
   });
 
   it("parses azawaxan as ability host (greeting bid classified later)", () => {
@@ -448,18 +445,6 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
       leftRoots: ["uzuzu"],
       rightRoots: ["ogove", "adeda"],
     });
-  });
-
-  it("parses e x ROOT as place role (roles.md)", () => {
-    const word = parseOk("zexelebel");
-    assert.equal(word.pos, "z");
-    assert.equal(word.ending, "l");
-    assert.equal(word.family.kind, "x");
-    if (word.family.kind === "x") {
-      assert.equal(word.family.xFamily, "role");
-      assert.equal(word.family.roleVowel, "e");
-      assert.deepEqual(word.family.rightRoots, ["elebe"]);
-    }
   });
 
   it("parses o x ROOT as recipient role (roles.md)", () => {

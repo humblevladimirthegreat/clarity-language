@@ -1,8 +1,8 @@
 # Role compounds {#roles}
 
-When English would name a person, place or time from an event (*a teacher* from *teach*, *the one told*, *a sleeping place*, *bedtime*), Agebon builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`e`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [word ending](word-endings.md). **`a`** is the doer, **`e`** is the scene of the event (where or when), **`u`** is the one the event happens to, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
+When English would name a person or thing from an event (*a teacher* from *teach*, *the one told*, *a building*), Agebon builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [word ending](word-endings.md). **`a`** is the doer, **`u`** is what the event acts on or brings into being, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
 
-The ending decides whether you mean anyone in that part or the one from a particular event. With **-l**, **-m**, or **-n**, the word is anyone who does it, with no claim about how often: *someone who teaches*. With **-r**, it is the person or place of the latest matching event: *the one teaching*. To say it is their usual role, the kind English names as a job (*a teacher*), add a scope vowel after the stem (the usual role).
+The ending decides whether you mean anyone in that part or the one from a particular event. With **-l**, **-m**, or **-n**, the word is anyone who does it, with no claim about how often: *someone who teaches*. With **-r**, it is the participant of the latest matching event: *the one teaching*. To say it is their usual role, the kind English names as a job (*a teacher*), add a scope vowel after the stem (the usual role).
 
 ## Beginner {#beginner}
 
@@ -63,34 +63,13 @@ English *the one seen* or *the one fought* names the person the event happens to
 >
 > "Uzozen sees a cat. The one seen runs."
 
-### The scene (`e`)
-<a id="the-place-e"></a>
+What an event brings into being sits in `/d/` too (*Olazun builds a house*), so **`u`** names it as well: `duxeguyel` is *something built*. A verb's `/d/` is either what it acts on (*see*) or what it makes (*construct*), and the verb says which.
 
-English *a sleep-place* or *bedtime* names where or when an event happens, from the same idea as *sleep*. Use the same compound shape as the doer, but write **`e`** in the vowel slot. That named thing is the **scene of the event**: its place or its time, not the sleeper. (cue: **e** ≈ order (the scene the act is ordered in))
-
-You can name such a scene even when no sleep has come up in the conversation:
-
-> `zuzozen dexezuvol vawebol.`
+> `zolazun veguyel. zuzozen duxeguyer vawebol.`
 >
-> z-Uzozen | d-scene-x-sleep | v-see
+> z-Olazun | v-construct . z-Uzozen | d-←patient-x-construct | v-see
 >
-> "Uzozen sees a place where someone sleeps."
-
-The same word can be a time. In `/h/`, `hexezuvol` is *at bedtime*.
-
-Once the conversation has a matching event, **-r** means the scene of **that** event (where or when it happened), not a kind of scene. The sentence with the scene word is a new claim about that place (who sees it, who punches it); it does not add a place to the first verb.
-
-> `zolazun varemul.`
-> `zuzozen dexaremur vawebol.`
->
-> z-Olazun | v-scream
-> z-Uzozen | d-←scene-x-scream | v-see
->
-> "Olazun screams. Uzozen sees the place where Olazun screams."
-
-`zexeguyel` is a place where something is constructed (the **-l** sense of *construct*). A construction site as a kind of place, with no event in mind, is the dictionary word `degohul`.
-
-**Compare with:** `zaxeguyel` is who constructs. What gets built did not exist before, so it is not an undergoer: it is the result. To say where a constructing in your sentence happens (*constructs in a house*), put the place on that clause with the extra-noun [hook](hooks.md#extra-noun) **`al`** plus `/b/`. The scene word is for naming the place itself.
+> "Olazun builds. Uzozen sees what Olazun built."
 
 ### The extra `/b/` party (`o`)
 
@@ -121,35 +100,24 @@ Some stems name a **relation** (who is bound to whom), not an action. The other 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | `…axROOT…` | names the doer of an event | *someone who teaches* / *the one teaching* | **a** ≈ add (add a doer) |
-| `…exROOT…` | names the scene (place or time) of an event | *a place where someone sleeps* / *the place of that scream* | **e** ≈ order (the scene the act is ordered in) |
-| `…uxROOT…` | names the undergoer of an event | *someone seen* / *the one seen* (this seeing) | **u** ≈ undo (the one it happens to) |
+| `…uxROOT…` | names what the event acts on or makes | *someone seen* / *the one seen* (this seeing); *something built* | **u** ≈ undo (the one it happens to) |
 | `…oxROOT…` | names the extra `/b/` party | *someone told* / *the one told* | **o** ≈ one (that extra one) |
 
 A role compound fills `/z/`, `/d/`, `/b/`, or `/ɡ/`. Under `/y/` with **-n** or **-r** it calls someone (`yaxobebun` calls the doctor).
 
 Its stem is always an event. A [special pronoun](pronouns.md#special-pronouns) such as `uwon` (*the speaker*) names a person, not an event, so `zaxuwon` is not a word. The same root on **-l** is an ordinary content word with a verb sense (*perform*), so it can be a stem: `zaxuwol` is *someone who performs*.
 
-With **-l**, **-m**, or **-n**, the word is **any** such participant: someone who does it, a place or time where it happens, someone it happens to. **-r** looks back to the latest verb, event noun, or relation with that whole stem (including a stem already inside a role compound) and names **this instance**. The vowel still picks which part you mean: doer, scene, undergoer, or extra `/b/` party.
+With **-l**, **-m**, or **-n**, the word is **any** such participant: someone who does it, something it acts on or makes, someone told. **-r** looks back to the latest verb, event noun, or relation with that whole stem (including a stem already inside a role compound) and names **this instance**. The vowel still picks which part you mean: doer, undergoer, or extra `/b/` party.
 
 ### Without the stem: role pointers {#role-pointers-family}
 
 A [role pointer](pronouns.md#role-pointers) is this same word with the event stem left out: the role vowel, **`x`**, a pointer vowel, and an ending (**-r** the participant itself, **-l** a new one of its kind, **-m** its part in the event). Instead of naming the event, the pointer vowel picks it by position: **`a`** the latest one, **`e`** this sentence’s own, **`o`** the other one, **`u`** the one that left the part unsaid. `zaxuhohor` is *the one who sat*; `zaxar` is *whoever did the latest thing*.
 
-A scene pointer names the place or time of the latest event. If that clause has a place (*in a house*), the scene is that place:
-
-> `zuzozen vezuvol al bahehal. zolazun dexar vawebol.`
->
-> z-Uzozen | v-sleep | [in | b-house] . z-Olazun | d-←scene.same | v-see
->
-> "Uzozen sleeps in a house. Olazun sees the house."
-
-With no place, a *during* time is the scene (`herem blenulul`, *during the storm*). With neither, `dexar` is the event’s own place or time, as `dexezuvor` would be. A place wins over a time, and with two places the first one is the scene. *Before*, *after*, *until*, and *by* name a time the event is measured from, not its scene.
-
-**Compare with:** for the doer, the undergoer, or the extra party, a pointer looks back to whoever last had that part, skipping events without one ([role pointers](pronouns.md#role-pointers)). For the scene, it takes the latest event, whatever it has. Scene **`u`** (`zexur` *wherever it happened*) says nobody has named the place, where `zexar` is a place the conversation already gave.
+A pointer looks back to whoever last had that part, skipping events without one ([role pointers](pronouns.md#role-pointers)).
 
 ### The event itself
 
-English *a fight* names the event itself, not anyone in it. Put the event root on a thing letter with no role vowel: `davuvul` is *a fight*. Use **`ax`**, **`ex`**, **`ux`**, or **`ox`** only when you mean who fights, where or when the fight is, who is fought, or the extra `/b/` party.
+English *a fight* names the event itself, not anyone in it. Put the event root on a thing letter with no role vowel: `davuvul` is *a fight*. Use **`ax`**, **`ux`**, or **`ox`** only when you mean who fights, who is fought, or the extra `/b/` party.
 
 > `zuzozen davuvul vawebol.`
 >
@@ -274,12 +242,12 @@ z-Olazun | d-fight | v-see
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zagayul dexeguyel vawebol.`
+**1.** `zagayul duxeguyel vawebol.`
 
 ::: details Show answer
-z-guard | d-scene-x-construct | v-see
+z-guard | d-patient-x-construct | v-see
 
-*The guard sees a place where something is built.*
+*The guard sees something built.*
 :::
 
 **2.** `zahelan veguyel. zaxeguyer dehobul vawebol.`
@@ -290,12 +258,12 @@ z-Ahelan | v-construct . z-←agent-x-construct | d-helmet | v-see
 *Ahelan builds. The one building sees a helmet.*
 :::
 
-**3.** `zuzozen vavuvul. zahelan dexavuvur vawebol.`
+**3.** `zuzozen vavuvul. zahelan duxavuvur vawebol.`
 
 ::: details Show answer
-z-Uzozen | v-fight . z-Ahelan | d-←scene-x-fight | v-see
+z-Uzozen | v-fight . z-Ahelan | d-←patient-x-fight | v-see
 
-*Uzozen fights. Ahelan sees the place where Uzozen fights.*
+*Uzozen fights. Ahelan sees the one Uzozen fights.*
 :::
 
 **4.** `zolazun dagayul gaxezuvol vawebol.`
@@ -314,24 +282,24 @@ z-patient-x-punch | v-scream
 *Someone who gets punched screams.*
 :::
 
-**6.** `zuzozen vezuvol al begohul. zolazun dexar vawebol.`
+**6.** `zahelan dehobul veguyel. zolazun duxar vawebol.`
 
 ::: details Show answer
-z-Uzozen | v-sleep | [in | b-construction] . z-Olazun | d-←scene.same | v-see
+z-Ahelan | d-helmet | v-construct . z-Olazun | d-←patient.same | v-see
 
-*Uzozen sleeps in a construction site. Olazun sees the construction site.*
+*Ahelan makes a helmet. Olazun sees it.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Ahelan sees a place where someone sleeps.* `zahelan dexezuvol vawebol.` or `zahelan daxezuvol vawebol.`
+**1.** *Ahelan sees someone who was told something.* `zahelan doxezuyel vawebol.` or `zahelan duxezuyel vawebol.`
 
 ::: details Show answer
-`zahelan dexezuvol vawebol.`
+`zahelan doxezuyel vawebol.`
 
-z-Ahelan | d-scene-x-sleep | v-see
+z-Ahelan | d-recipient-x-speech | v-see
 
-Role vowel **`e`** names the scene; **`a`** would be someone who sleeps.
+Role vowel **`o`** names who is told; **`u`** would be what is told.
 :::
 
 **2.** *Ahelan sees someone punched.* `zahelan duxanuvul vawebol.` or `zahelan daxanuvul vawebol.`
@@ -372,7 +340,7 @@ English *a teacher* says more than *someone who teaches*: teaching is that perso
 
 **Compare with:** a role compound takes only one addition after its stem, so a usual role (**`the`**) does not also take ability. Other [scope vowels](predication.md#scope-role) go in the same spot: **`tha`** is *this time only*, **`thu`** is a teacher type.
 
-The other role vowels work the same way. With **`the`**, a scene is where the event usually happens: `dexezuvothel` is *a sleeping place*. To say someone **is** a teacher, put the same word on `/ɡ/`.
+The other role vowels work the same way: `zoxezuyethel` is *a confidant*, someone regularly told things. To say someone **is** a teacher, put the same word on `/ɡ/`.
 
 > `zuzozen gaxuduyethel.`
 >
@@ -380,135 +348,29 @@ The other role vowels work the same way. With **`the`**, a scene is where the ev
 >
 > "Uzozen is a teacher."
 
-### Instrument (`ae`) {#instrument}
+### Places, tools, and times {#places-tools-times}
 
-Beginner already used four role vowels. Six two-vowel pairs in the same slot name six more parts of an event.
+A role compound names a participant: the doer, what the event acts on or makes, or the extra `/b/` party. A place, tool, or time is a landmark, brought in with an [extra-noun hook](hooks.md#extra-noun) (`al bahehal` *in a house*, `ael banewul` *using a knife*), and it has no role compound. Name it with words you already have:
 
-English *a writing tool* or *an opener* names the thing an event is done **with**. Write **`ae`** in the vowel slot. (cue: **ae** is the same pair as the hook **`ael`** *using*)
+| Job | Agebon | English |
+|-----|--------|---------|
+| a kind of tool, place, or time | an ordinary [compound](compounds.md#two-roots-one-word) with a head root: `darayexuwal` (write + tool), `dezuvoxadurel` (sleep + time) | *a writing tool*, *bedtime* |
+| the landmark a clause named | resume its noun: after `ael banewul`, `danewur` | *that knife* |
+| that landmark as a place or means | the hook's own [pointer](hooks.md#hook-resume): `ar` *in there*, `or` *there*, `ur` *from there*, `aer` *with it* | *there*, *with it* |
+| a landmark nobody named | two sentences: a place exists, and the event happened there | *wherever it happened* |
+| who pays, who it is for | the hook in a clause (`uel` *against*, `el` *for* plus `/b/`), then a resume | *the one it was stolen from* |
 
-> `zuzozen daexarayel vawebol.`
+> `zuzozen vuguyel ael banewul. zahelan danewur vawebol.`
 >
-> z-Uzozen | d-instrument-x-write | v-see
+> z-Uzozen | v-cook | [using | b-knife] . z-Ahelan | d-←knife | v-see
 >
-> "Uzozen sees a writing tool."
+> "Uzozen cooks with a knife. Ahelan sees the knife."
 
-With **-r**, it is the tool used in **that** event.
-
-> `zuzozen vavuvul. zolazun daexavuvur vawebol.`
+> `zuzozen vuguyel ael banewul. zahelan vuguyel aer.`
 >
-> z-Uzozen | v-fight . z-Olazun | d-←instrument-x-fight | v-see
+> z-Uzozen | v-cook | [using | b-knife] . z-Ahelan | v-cook | with.it
 >
-> "Uzozen fights. Olazun sees what Uzozen fights with."
-
-**Compare with:** *writes with a pen* on the same clause is still the hook **`ael`** plus `/b/`. The compound names the tool as its own noun.
-
-### Goal, source, path (`oe` / `ua` / `uo`) {#goal-source-path}
-
-A movement has three more parts: where it heads, where it comes out of, and the way it goes. Each uses the two-vowel pair of the matching [extra-noun hook](hooks.md#extra-noun-intermediate).
-
-| Agebon | Names | English | Cue |
-|--------|-------|---------|-----|
-| `…oexROOT…` | the **goal** of the event | *a finish line* (from *run*), *a target* | **oe**, as in **`oel`** *toward* |
-| `…uaxROOT…` | the **source** it comes out of | *a spring* (from *pour*), *a quarry* | **ua**, as in **`ual`** *out of* |
-| `…uoxROOT…` | the **path** it goes by | *a walkway* (from *walk*), *a route* | **uo**, as in **`uol`** *through* |
-
-> `zuzozen doexaruvel vawebol.`
->
-> z-Uzozen | d-goal-x-run | v-see
->
-> "Uzozen sees a finish line."
-
-> `zolazun duoxowurel vawebol.`
->
-> z-Olazun | d-path-x-walk | v-see
->
-> "Olazun sees a walkway."
-
-> `zuzozen dawudal vobuvul. zolazun duaxobuvur vawebol.`
->
-> z-Uzozen | d-wine | v-pour . z-Olazun | d-←source-x-pour | v-see
->
-> "Uzozen pours wine. Olazun sees where it was poured from."
-
-**Compare with:** the scene **`e`** is where the whole event happens. A goal, source or path is one end or the route of a movement. *Walks toward the station* on the same clause is the hook **`oel`** plus `/b/`.
-
-### Result (`ao`) {#result}
-
-English *a building* or *a dish* names the thing an event **makes**: it did not exist before. Write **`ao`** in the vowel slot. (cue: **ao** ≈ add one new thing to the world)
-
-> `zuzozen daoxeguyel vawebol.`
->
-> z-Uzozen | d-result-x-construct | v-see
->
-> "Uzozen sees a building."
-
-With **-r**, it is what **that** event made.
-
-> `zolazun veguyel. zuzozen daoxeguyer vawebol.`
->
-> z-Olazun | v-construct . z-Uzozen | d-←result-x-construct | v-see
->
-> "Olazun builds. Uzozen sees what Olazun built."
-
-**Compare with:** the undergoer **`u`** is a thing the event changes, which was already there. The result **`ao`** is a thing the event brings into being.
-
-### The one who pays (`ue`) {#bearer}
-
-Some events cost someone who is not the one acted on. When a wallet is stolen, the wallet is what the stealing acts on, but its owner is the one who loses. Write **`ue`** in the vowel slot to name that person: the one the event goes **against**. (cue: **ue**, as in the hook **`uel`** *against*)
-
-> `zuexurozum varuvel.`
->
-> z-bearer-x-theft | v-run
->
-> "A theft victim runs."
-
-With **-r**, it is the one who pays for **that** event.
-
-> `zuzozen vurozum. zuexurozur varemul.`
->
-> z-Uzozen | v-steal . z-←bearer-x-steal | v-scream
->
-> "Uzozen steals. The one stolen from screams."
-
-**Compare with:** the undergoer **`u`** is what the event acts on; the recipient **`o`** is who it is told or given to. **`ue`** is whoever bears its cost, whether or not they were acted on.
-
-### Stacked vowels on a pointer {#stacked-pointers}
-
-Each two-vowel pair also makes a [role pointer](#role-pointers-family): leave out the stem, and pointer vowel **`a`** reads the latest event. If that clause has the matching hook (**`ael`**, **`oel`**, **`ual`**, **`uol`**, **`uel`**) with its `/b/`, the pointer is that `/b/`; otherwise it is the event’s own tool, goal, and so on.
-
-> `zuzozen vowurel oel bahehal. zolazun doexar vawebol.`
->
-> z-Uzozen | v-walk | [toward | b-house] . z-Olazun | d-←goal.same | v-see
->
-> "Uzozen walks toward a house. Olazun sees the house."
-
-> `zolazun veguyel. zuzozen daoxar vawebol.`
->
-> z-Olazun | v-construct . z-Uzozen | d-←result.same | v-see
->
-> "Olazun builds. Uzozen sees what Olazun built."
-
-<!-- cheat-sheet: roles-comparing -->
-| Agebon | Names | Its `/b/` comes from |
-|--------|-------|----------------------|
-| `daexar` | the tool of the latest event | **`ael`** |
-| `doexar` | where it headed | **`oel`** |
-| `duaxar` | where it came out of | **`ual`** |
-| `duoxar` | the way it went | **`uol`** |
-| `daoxar` | what it made | (always the event’s own) |
-| `zuexar` | the one who paid for it | **`uel`** |
-
-The other endings and pointer vowels of the [pronouns](pronouns.md#role-pointers) page go on these too. **-l** is a new one of that kind (`daexal` *another tool like that one*), and **-m** is that part’s share in the event (`daexam` *what the tool did*; `zuexam` *the cost they bore*, rather than the theft or the victim).
-
-Pointer vowel **`u`** picks the latest event that left that part unsaid (`daexur` *whatever it was done with*). Pointer vowel **`o`** is *the other one*: `daexor` is *the other tool*, the nearest earlier event whose named tool is someone or something else. Only an event that names that tool, goal, source, or path with its `/b/` counts, so events that left it out are skipped, as **`a`** skips an event with nobody in the part.
-
-> `zuzozen vuguyel ael banewul. zolazun vuguyel ael buzedal. zuzozen daexor vawebol.`
->
-> z-Uzozen | v-cook | [using | b-knife] . z-Olazun | v-cook | [using | b-spoon] . z-Uzozen | d-←instrument.other | v-see
->
-> "Uzozen cooks with a knife. Olazun cooks with a spoon. Uzozen sees the other tool." (the knife)
-
-The scene has no such forms: `zexor`, `zexol`, and `zexom` are not words.
+> "Uzozen cooks with a knife. Ahelan cooks with it too."
 
 ### Viewpoint laterals (`DIR` × anchor) {#viewpoint-laterals}
 <a id="spatial-laterals"></a>
@@ -730,28 +592,28 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Olazun | g-agent-x-theft-th-role
 :::
 
-**2.** *Uzozen writes. Ahelan sees what Uzozen writes with.*
+**2.** *Ahelan builds. Uzozen sees what Ahelan built.*
 
 ::: details Show answer
-`zuzozen varayel. zahelan daexarayer vawebol.`
+`zahelan veguyel. zuzozen duxeguyer vawebol.`
 
-z-Uzozen | v-write . z-Ahelan | d-←instrument-x-write | v-see
+z-Ahelan | v-construct . z-Uzozen | d-←patient-x-construct | v-see
 :::
 
-**3.** *Olazun goes. Uzozen sees where Olazun goes.*
+**3.** *Olazun goes toward the island. Uzozen sees the island.*
 
 ::: details Show answer
-`zolazun vavobel. zuzozen doexavober vawebol.`
+`zolazun vavobel oel belahol. zuzozen delahor vawebol.`
 
-z-Olazun | v-go . z-Uzozen | d-←goal-x-go | v-see
+z-Olazun | v-go | [toward | b-island] . z-Uzozen | d-←island | v-see
 :::
 
-**4.** *Olazun steals. The one who loses out screams.*
+**4.** *Uzozen goes from the island. Olazun swims from there.*
 
 ::: details Show answer
-`zolazun vurozum. zuexurozur varemul.`
+`zuzozen vavobel ul belahol. zolazun vazuvel ur.`
 
-z-Olazun | v-steal . z-←bearer-x-steal | v-scream
+z-Uzozen | v-go | [from | b-island] . z-Olazun | v-swim | from.there
 :::
 
 **5.** *Ahelan, walk left.* (Uzozen's left)
@@ -788,28 +650,28 @@ z-Uzozen | v-swim | [h-down | bl-boat]
 *Uzozen swims under the boat.*
 :::
 
-**3.** `zahelan veguyel. zolazun daoxeguyer vawebol.`
+**3.** `zahelan debaval veguyel. zolazun duxar vawebol.`
 
 ::: details Show answer
-z-Ahelan | v-construct . z-Olazun | d-←result-x-construct | v-see
+z-Ahelan | d-boat | v-construct . z-Olazun | d-←patient.same | v-see
 
-*Ahelan builds. Olazun sees what Ahelan built.*
+*Ahelan builds a boat. Olazun sees it.*
 :::
 
-**4.** `zuzozen vowurel. zolazun duoxowurer vawebol.`
+**4.** `zolazun vurozum. zaxurozur varemul.`
 
 ::: details Show answer
-z-Uzozen | v-walk . z-Olazun | d-←path-x-walk | v-see
+z-Olazun | v-steal . z-←agent-x-steal | v-scream
 
-*Uzozen walks. Olazun sees the path Uzozen walks.*
+*Olazun steals. The one who stole screams.*
 :::
 
-**5.** `zuzozen vavobel oel belahol. zolazun doexar vawebol.`
+**5.** `zuzozen vavobel oel belahol. zolazun vazuvel or.`
 
 ::: details Show answer
-z-Uzozen | v-go | [toward | b-island] . z-Olazun | d-←goal.same | v-see
+z-Uzozen | v-go | [toward | b-island] . z-Olazun | v-swim | there
 
-*Uzozen goes toward the island. Olazun sees the island.*
+*Uzozen goes toward the island. Olazun swims there.*
 :::
 
 **6.** `zahelan varuvel. zuzozen vuhohol howuhethaxar.`
@@ -832,14 +694,14 @@ z-Uzozen | v-sit | [h-west-th-landmark | bl-boat]
 **`tho`** turns the arrow to the boat's own facing; bare `howuhel` is *west of the boat*.
 :::
 
-**2.** *Ahelan sees something to write with.* `zahelan daexarayel vawebol.` or `zahelan daoxarayel vawebol.`
+**2.** *Ahelan sees something written.* `zahelan duxarayel vawebol.` or `zahelan daxarayel vawebol.`
 
 ::: details Show answer
-`zahelan daexarayel vawebol.`
+`zahelan duxarayel vawebol.`
 
-z-Ahelan | d-instrument-x-write | v-see
+z-Ahelan | d-patient-x-write | v-see
 
-**`ae`** names the instrument; **`ao`** would be something written, the result.
+**`u`** names what the writing makes; **`a`** would be someone who writes.
 :::
 
 #### Fix it {#intermediate-fix-it}

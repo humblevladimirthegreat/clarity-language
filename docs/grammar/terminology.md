@@ -391,7 +391,7 @@ Place how (*in*, *at*, *on*, *from*, *toward*, *through*, *out of*; frame **-m**
 
 ### Means
 
-Extra-noun [hook](hooks.md#extra-noun) **`ael`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*. To name the tool as its own noun, use the instrument role compound **`aexROOT`**.
+Extra-noun [hook](hooks.md#extra-noun) **`ael`** plus implement `/b/` (*using / with* a tool). Not join-relation *with*. To name a kind of tool as its own noun, use a compound with a head root ([places, tools, and times](roles.md#places-tools-times)).
 
 [Hooks](hooks.md#extra-noun-intermediate)
 
@@ -700,10 +700,10 @@ Prefix-less *including / rather / instead / except*, discourse glue, extra-noun 
 
 [Hooks](hooks.md)
 
-### Role compound / agent / place / patient / recipient
+### Role compound / agent / patient / recipient
 <a id="role-compound--agent--place--patient--recipient"></a>
 
-`a/e/u/o x ROOT` ( **`o`** is also reltum on a relation stem).
+`a/u/o x ROOT` (**`u`** is also what the event makes; **`o`** is also the other party on a relation stem).
 
 [Role compounds](roles.md#role-compounds)
 

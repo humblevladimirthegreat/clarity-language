@@ -946,8 +946,6 @@ function enforcePointer(bind: AnaphorBind): void {
   if (!seam && !(bare && (word.pos === "z" || word.pos === "d" || word.pos === "b"))) {
     throw new ConstructionError("pointerSlot", word.raw);
   }
-  // The other one (`o`) compares fillers, and the scene's overt filler is not settled for comparison (unassigned-reserved § Role pointers).
-  if (bind.pointerVowel === "o" && bind.roleVowel === "e") throw new ConstructionError("pointerOtherRole", word.raw);
   if (word.ending === "m" && bind.pointerVowel === "e") throw new ConstructionError("pointerShareSelf", word.raw);
   if (word.ending === "m" && word.plural) throw new ConstructionError("pointerSharePlural", word.raw);
   if (word.ending === "l" && bind.pointerVowel === "u") throw new ConstructionError("pointerNewUnsaid", word.raw);

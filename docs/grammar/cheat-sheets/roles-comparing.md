@@ -16,15 +16,8 @@ Write a thing letter (`/z/` `/d/` `/b/`), the role vowel, mid-word **`x`**, the 
 | Vowel | Names | Example | English | Stage |
 |-------|-------|---------|---------|-------|
 | [**`a`**](../roles.md#role-compounds) | the doer | `zaxuduyel` | *someone who teaches* | B |
-| [**`e`**](../roles.md#the-place-e) | the scene (place or time) | `dexezuvol` | *a place where someone sleeps* | B |
-| [**`u`**](../roles.md#the-undergoer-u) | the undergoer | `zuxawebor` | *the one seen* | B |
+| [**`u`**](../roles.md#the-undergoer-u) | what it acts on or makes | `zuxawebor` | *the one seen* | B |
 | [**`o`**](../roles.md#the-extra-b-party-o) | the extra `/b/` party | `zoxezuyer` | *the one told* | B |
-| [**`ae`**](../roles.md#instrument) | the tool | `daexarayel` | *a writing tool* | I |
-| [**`oe`**](../roles.md#goal-source-path) | the goal | `doexaruvel` | *a finish line* | I |
-| [**`ua`**](../roles.md#goal-source-path) | the source | `duaxobuvur` | *where it was poured from* | I |
-| [**`uo`**](../roles.md#goal-source-path) | the path | `duoxowurel` | *a walkway* | I |
-| [**`ao`**](../roles.md#result) | the result, newly made | `daoxeguyel` | *a building* | I |
-| [**`ue`**](../roles.md#bearer) | the one who pays | `zuexurozum` | *a theft victim* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
@@ -34,6 +27,8 @@ Write a thing letter (`/z/` `/d/` `/b/`), the role vowel, mid-word **`x`**, the 
 | [The usual role](../roles.md#usual-role): **`the`** before the ending | `zaxuduyethel varuvel.` | *A teacher runs.* | I |
 | [Is a teacher](../roles.md#usual-role) | `zuzozen gaxuduyethel.` | *Uzozen is a teacher.* | I |
 | [The event itself](../roles.md#the-event-itself): no vowel | `davuvul` | *a fight* | B |
+| [What it makes](../roles.md#the-undergoer-u): **`u`** | `duxeguyel` | *something built* | B |
+| [A kind of tool, place, or time](../roles.md#places-tools-times): a compound with a head root | `darayexuwal` | *a writing tool* | I |
 
 A role compound has one role vowel, left of the first **`x`**. Its stem is always an event: `zaxuwon` is not a word.
 
@@ -41,25 +36,11 @@ A role compound has one role vowel, left of the first **`x`**. Its stem is alway
 
 A role pointer drops the stem. The pointer vowel picks the event by position: **`a`** the latest, **`e`** this sentence's own, **`o`** the other, **`u`** the one that left the part unsaid. **-r** is the participant, **-l** a new one of its kind, **-m** its part.
 
-<!-- cheat-sheet: roles-comparing -->
-| Agebon | Names | Its `/b/` comes from | Stage |
-|--------|-------|----------------------|-------|
-| [`daexar`](../roles.md#stacked-pointers) | the tool of the latest event | **`ael`** | I |
-| [`doexar`](../roles.md#stacked-pointers) | where it headed | **`oel`** | I |
-| [`duaxar`](../roles.md#stacked-pointers) | where it came out of | **`ual`** | I |
-| [`duoxar`](../roles.md#stacked-pointers) | the way it went | **`uol`** | I |
-| [`daoxar`](../roles.md#stacked-pointers) | what it made | the event's own | I |
-| [`zuexar`](../roles.md#stacked-pointers) | the one who paid for it | **`uel`** | I |
-
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Whoever did the latest thing](../roles.md#role-pointers-family) | `zaxar` | *they* | B |
-| [The scene, with a place](../roles.md#role-pointers-family) | `zuzozen vezuvol al bahehal. zolazun dexar vawebol.` | *Uzozen sleeps in a house. Olazun sees the house.* | B |
-| [Another tool like that](../roles.md#stacked-pointers) | `daexal` | *another tool like that one* | I |
-| [The other tool](../roles.md#stacked-pointers) | `daexor` | *the other tool* | I |
-| [Whatever it was done with](../roles.md#stacked-pointers) | `daexur` | *whatever it was done with* | I |
-
-The scene has no `zexor`, `zexol`, or `zexom`.
+| [The landmark a clause named](../roles.md#places-tools-times): resume its noun | `zuzozen vuguyel ael banewul. zahelan danewur vawebol.` | *Uzozen cooks with a knife. Ahelan sees the knife.* | I |
+| [That landmark as a means](../roles.md#places-tools-times): the hook's pointer | `zuzozen vuguyel ael banewul. zahelan vuguyel aer.` | *Uzozen cooks with a knife. Ahelan cooks with it too.* | I |
 
 ## Left, right, up, down {#directions}
 
@@ -331,7 +312,7 @@ English *many* and *often* rank against an unstated baseline. Agebon names the b
 | `zuzozen thagem zel bral vovurel` *later than planned* ([a bar before the join](../comparatives.md#bars)) | | `zuzozen zel bral vovurel thagem` *I plan for them to be last* ([a stance after](../comparatives.md#bars)) |
 | `zaxuduyel` *someone who teaches* ([any one who does it](../roles.md#role-compounds)) | | `zaxuduyethel` *a teacher* ([the usual role](../roles.md#usual-role)) |
 | `zaxuduyer` *the one teaching* ([this instance](../roles.md#role-compounds)) | | `gaxuduyel` *is one who teaches* ([a label](../roles.md#saying-someone-is-a-teacher)) |
-| `daexarayel` *a writing tool* ([a compound](../roles.md#instrument)) | | `ael` *using* ([a hook on the clause](../hooks.md#extra-noun)) |
+| `darayexuwal` *a writing tool* ([a compound](../roles.md#places-tools-times)) | | `ael` *using* ([a hook on the clause](../hooks.md#extra-noun)) |
 | `gowuhel` *west* ([compass](../roles.md#endings-and-resume)) | | `gowuhethuzozen` *Uzozen's left* ([a face](../roles.md#endings-and-resume)) |
 | `gowuhethuzozen bledalel` *left of the tree, from Uzozen's view* ([a facing person](../roles.md#viewpoint-vs-landmark)) | | `gowuhethol blahehal` *on the house's left* ([the landmark's own front](../roles.md#landmark-facing)) |
 | `zobahohal` *bedroom* ([a dictionary word](../compounds.md#lexical-compounds)) | | `zubedaxuyudal` *peanut butter* ([glued with `x`](../compounds.md#compound-vs-separate)) |

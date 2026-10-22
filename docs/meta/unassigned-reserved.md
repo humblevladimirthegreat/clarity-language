@@ -150,6 +150,7 @@ Source: [roles.md](../grammar/roles.md), [compounds.md](../grammar/compounds.md)
 
 - **open:** a role compound on `/v/` / `/w/` / `/th/`. A role compound names a participant, and these slots take none: it fills `/z/` `/d/` `/b/` `/ɡ/`, sets a topic under `/x/`, and calls under `/y/`. Parser: `roleCompoundSlot`.
 - **closed (D-34):** a role compound on `/h/`.
+- **closed ([hooked parts](design-decisions.md#hooked-parts-and-the-result)):** a role vowel other than `a`, `u`, `o` before `x`, in a compound or a pointer: the scene `e`, the stacked hook pairs `ae` `oe` `ua` `uo` `ue`, and the result `ao` (`dexezuvol`, `daexarayel`, `daoxeguyel`, `dexar`). Parser: no word.
 - **open:** a role compound as a piece of an ordinary compound, or two role vowels in a word. Not guessable: the first **`x`** decides the family, so an inner role vowel reads as part of the stem. *Noun + agent* is the role compound's own stem (`zaxudozoxowurel`).
 - **open:** a special pronoun (root + **-n**) as a role-compound stem or a label-scope host (`zaxuwon`, `zuwothan`). It is neither an event nor a label. Parser: `roleCompoundStem`, `labelScopeStem`.
 - **open:** ability (`x` + vowel) on a `/z/` / `/d/` / `/b/` noun, a name, a pronoun, or `/h/` (`zudozoxal`). *Can* belongs to an act or a quality, and a noun or an adverb is neither. Ability is on `/v/` and `/ɡ/` (plus hostless `oda`). Parser: `abilitySlot`.
@@ -161,7 +162,6 @@ Source: [pronouns.md](../grammar/pronouns.md#role-pointers)
 
 - **open:** a role pointer on `/v/` / `/ɡ/` / `/h/` / `/w/` (`vaxar`). A pointer picks a participant, and these slots take none; *does so* and *such* are whole-stem **-r**. Parser: `pointerSlot`.
 - **closed (D-24):** a role pointer on `/y/` / `/x/`.
-- **open:** *the other one* (`o`) on the scene (`zexor`, `zexol`, `zexom`). A scene can be a place or a time, so *the other one* has no clear comparison. Parser: `pointerOtherRole`.
 - **open:** a new-one pointer (**-l**) with pointer vowel `u`, or after a special, topic or generic pronoun (`zaxul`). A new-one pointer copies a kind, and an unsaid filler or a conversation role has none. Parser: `pointerNewUnsaid`, `pointerNewSpecial`.
 - **open:** a share (**-m**) with pointer vowel `e` or with **-x** (`zaxem`, `zaxamx`). A share is a part of an event, so it names no group and cannot be the very event it describes. Parser: `pointerShareSelf`, `pointerSharePlural`.
 - **open:** a share or new-one pointer in a holder seam or as a lateral's facing anchor. A holder and a facing anchor are someone; a share is part of an event, and a new one has nobody in particular to name.

@@ -271,13 +271,13 @@ A [role compound](roles.md#role-compounds) can take such a stack as its stem (`z
 
 Use the table above. If the word has a mid-word **`th`**, it is a [sake](sakes.md) word (a [sake root](sakes.md#sake-inventory), then a vowel, with an optional [emotion tail](sakes.md#emotion-compose)), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after a sake root, letters that look like a root are always the emotion tail (`guwathamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
 
-- After the role letter: a role vowel (one vowel or a stacked pair), **`x`**, **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** → a **role pointer** ([pronouns](pronouns.md#role-pointers)). A role compound with a stem keeps its own **-l** / **-m** senses; only the stemless pointer takes **-m** as a share.
-- After the role letter: a role vowel (one vowel or a two-vowel pair), **`x`**, then a longer root → a **role compound** (who does / where it happens / who undergoes / who is told, or a [two-vowel role](roles.md#instrument) such as the tool, `daexarayel`).
+- After the role letter: a role vowel, **`x`**, **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** → a **role pointer** ([pronouns](pronouns.md#role-pointers)). A role compound with a stem keeps its own **-l** / **-m** senses; only the stemless pointer takes **-m** as a share.
+- After the role letter: a role vowel, **`x`**, then a longer root → a **role compound** (who does / what it acts on or makes / who is told).
 - A name (one root or a [hyphenated name](word-endings.md#multipart-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a conversation-length bid → conversation length.
 - A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **ability**.
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
 
-The role vowels are **`a`** / **`e`** / **`u`** / **`o`** and the two-vowel pairs **`ae`**, **`oe`**, **`ua`**, **`uo`**, **`ao`**, **`ue`**. No other vowel pair goes before **`x`**.
+The role vowels are **`a`** / **`u`** / **`o`**. No other vowel goes before **`x`**.
 
 ### Conversation length (name **`x`** vowel) {#conversation-length}
 

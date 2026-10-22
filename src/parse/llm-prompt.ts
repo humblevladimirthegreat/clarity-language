@@ -52,15 +52,8 @@ export const GLOSS_READER = {
   /** Role names in `ROLE-x-verb` and pointers (roles.md#role-compounds). */
   roles: {
     agent: "the doer",
-    patient: "the one it happens to",
+    patient: "the one it happens to, or what it makes",
     recipient: "the extra party (the one told, given to)",
-    scene: "where or when it happens",
-    instrument: "the tool it is done with",
-    goal: "where it heads",
-    source: "where it comes out of",
-    path: "the way it goes",
-    result: "what it makes",
-    bearer: "the one it goes against (who pays or loses)",
   } as Record<string, string>,
   pieces: [
     "`-x-` inside one word joins the pieces of a compound. `ROLE-x-verb` names someone by their part in that kind of event: `z-agent-x-teach` = someone who teaches.",

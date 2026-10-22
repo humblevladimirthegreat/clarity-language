@@ -602,22 +602,15 @@ export function isHolderSeamW(word: MorphWord, tables: ClassifyTables): boolean 
 
 /**
  * A role pointer in the holder slot (`thunemaxar`, pronouns.md#role-pointers): HOST GRADE + role
- * vowel(s) + `x` + pointer vowel + **-r**. The word grammar reads a single role vowel as an ability
- * shape (`unema` + `x` + `a`) and a stacked one as a pointer on a host.
+ * vowel + `x` + pointer vowel + **-r**. The word grammar reads it as an ability shape (`unema` + `x` + `a`).
  */
 function heldPointer(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
   const family = word.family;
   if (family.kind !== "x" || word.ending !== "r" || family.leftRoots.length !== 1) return undefined;
-  let body: string;
-  let pointerVowel: PointerVowel;
-  if (family.xFamily === "pointer" && family.pointerVowel) {
-    body = `${family.leftRoots[0]!}${family.roleVowel}`;
-    pointerVowel = family.pointerVowel;
-  } else if (family.xFamily === "ability" && (family.stanceVowel === "a" || family.stanceVowel === "e" || family.stanceVowel === "o")) {
-    body = family.leftRoots[0]!;
-    pointerVowel = family.stanceVowel;
-  } else return undefined;
-  const match = /^(.+)([lmr])(ae|ao|oe|ua|ue|uo|[aeou])$/.exec(body);
+  if (family.xFamily !== "ability" || !(family.stanceVowel === "a" || family.stanceVowel === "e" || family.stanceVowel === "o")) return undefined;
+  const body = family.leftRoots[0]!;
+  const pointerVowel: PointerVowel = family.stanceVowel;
+  const match = /^(.+)([lmr])([auo])$/.exec(body);
   if (!match) return undefined;
   const [, host, grade, roleVowel] = match as unknown as [string, string, "l" | "m" | "r", RoleVowel];
   const row = tables.overlays.get(overlayKey("th", `${host}${grade}`));

@@ -42,7 +42,7 @@ Every Agebon line below was checked with `node scripts/parse.mjs`.
 | 13 | Many of the people shouted twice. | `zeyorx thubem zel gral thevum vazuwal hradol.` | [z-←person-x \| th-PATTERN \| z-rank/more \| g-amount] \| th-MEMORY \| v-shout \| h-two | covered |
 | 14 | Happy people often shout. | `zeyolx gugemam thubem zel hral vazuwal.` | [[z-person-x \| g-delight] \| th-PATTERN \| z-rank/more \| h-how-often] \| v-shout | by design (G-01) |
 | 15 | The kitten jumped up. | `zeboyexagozor thevum vugazal hayuhem.` | z-baby-x-cat \| th-MEMORY \| v-jump \| h-rise | covered |
-| 16 | The kitten jumped onto the table. | `zeboyexagozor thevum vugazal aol bexagedal.` | z-baby-x-cat \| th-MEMORY \| v-jump \| [on \| b-scene-x-cutlery] | covered |
+| 16 | The kitten jumped onto the table. | `zeboyexagozor thevum vugazal aol bedohol.` | z-baby-x-cat \| th-MEMORY \| v-jump \| [on \| b-table] | covered |
 | 17 | My little kitten walked away. | `glamezom zeboyexagozol em buwon thevum vowurelum.` | [gl-small \| z-baby-x-cat] \| [used-by \| b-speaker] \| th-MEMORY \| v-recede | covered |
 | 18 | It's raining. | `thugom verulal.` | th-LIVE \| v-rain | covered |
 | 19 | The rain came down. | `zerulal thevum vaduhel.` | z-rain \| th-MEMORY \| v-fall | covered |
@@ -85,7 +85,7 @@ Every Agebon line below was checked with `node scripts/parse.mjs`.
 | 56 | Can you come tomorrow? | `yol ? zawan thagem bluzurem grabal vavobel oel buwon.` | y-question \| ? \| z-listener \| [th-plan-itinerary \| [b-day \| g-one]] \| v-go \| [toward \| b-speaker] | covered |
 | 57 | Have the neighbors gone away for the winter? | `yol ? zaxahehamx om bayan haram vavobelum herem blugebam.` | y-question \| ? \| z-agent-x-home-x \| [near \| b-interlocutors] \| h-RESIDUE \| v-go-recede \| [h-while \| b-winter] | covered |
 | 58 | Does the robin sing in the rain? | `yol ? zuam gerulexubezol vezuyol am berulal.` | y-question \| [? \| z-everything.open \| g-red-x-bird] \| v-sing \| [amid \| b-rain] | covered |
-| 59 | Are you going with us to the concert? | `yol ? zawan han bluwonx vavobel oel bexezuyol.` | y-question \| ? \| z-listener \| [h-including \| b-speaker-x] \| v-go \| [toward \| b-scene-x-sing] | covered |
+| 59 | Are you going with us to the concert? | `yol ? zawan han bluwonx vavobel oel bezuyol.` | y-question \| ? \| z-listener \| [h-including \| bl-speaker-x] \| v-go \| [toward \| b-sing] | covered |
 | 60 | Have you ever travelled in the jungle? | `yol ? zawan havom vehavam am bubalexedalelx har.` | y-question \| ? \| z-listener \| h-already \| v-voyage \| [amid \| b-palm-x-tree-x] \| h-when | covered |
 | 61 | We sailed down the river for several miles. | `zuwonx thevum blezerem grawagem vehaval uol bowulal.` | z-speaker-x \| [th-MEMORY \| [b-meter \| g-+-e3.about]] \| v-ship \| [through \| b-drinking-water] | covered |
 | 62 | Everybody knows about hunting. | `zuam vanam hahugem blowozum.` | z-everything.open \| v-knowledge \| [h-topic \| b-predation] | covered |
@@ -118,7 +118,7 @@ Every Agebon line below was checked with `node scripts/parse.mjs`.
 | 89 | The little boy's father had once been a sailor. | `glemugol zeyol gaxehaval grewubal bluboyel gamezom helam.` | [gl-male \| z-person \| g-agent-x-ship \| [g-#-e-1 \| [b-boy \| g-small]]] \| h-FORMER | covered |
 | 90 | I have lost my blanket. | `zuwon haram doyulam em buwon vudurum.` | z-speaker \| h-RESIDUE \| d-blanket \| [used-by \| b-speaker] \| v-loss | covered |
 | 91 | A robin has built his nest in the apple tree. | `zerulexubezol haram danolal veguyel al boledoxedalel.` | z-red-x-bird \| h-RESIDUE \| d-nest \| v-construct \| [in \| b-apple-x-tree] | covered |
-| 92 | At noon we ate our lunch by the roadside. | `h_12 zuwonx thevum denodal em buwonx vagedal om bexavobel.` | h-_12 \| z-speaker-x \| th-MEMORY \| d-bento \| [used-by \| b-speaker-x] \| v-eat \| [near \| b-scene-x-footprints] | covered |
+| 92 | At noon we ate our lunch by the roadside. | `h_12 zuwonx thevum denodal em buwonx vagedal om borahel.` | h-_12 \| z-speaker-x \| th-MEMORY \| [d-bento \| [used-by \| b-speaker-x]] \| v-eat \| [near \| b-road] | covered |
 | 93 | Mr. Jones made a knife for his little boy. | `zahelan thevum danewul vamuyal el buboyel gamezom grewabal blahelar.` | z-Ahelan \| th-MEMORY \| d-knife \| v-manufacture \| [for \| [b-boy \| g-small \| [g-#-e1 \| b-←Ahelan]]] | covered |
 | 94 | Their voices sound very happy. | `welazom thodothamam thugomeyorx.` | [w-very \| th-pleasure-met-any-term-INTERNAL-FLOWING] \| th-LIVE-←person-x | covered |
 | 95 | Is today Monday? | `yol ? zolerem grebal thugom.` | y-question \| [? \| z-weekday \| g-1st] \| th-LIVE | covered |
@@ -175,7 +175,7 @@ Every Agebon line below was checked with `node scripts/parse.mjs`.
 | 146 | The river knows the way to the sea. | `zowular dorahel oel bohalal vanam.` | z-←drinking-water \| d-road \| [toward \| b-ocean] \| v-knowledge | covered |
 | 147 | The boat sails away, like a bird on the wing. | `zebavar thugom vebavalum hewom blubezol gaxowobel.` | z-←boat \| th-LIVE \| v-boat-recede \| [h-like \| [b-bird \| g-agent-x-wing]] | covered |
 | 148 | They looked cautiously about, but saw nothing. | `zeyolx thevum hayulem vazebom ol bual. xegohum zeyorx dal vawebol.` | z-person-x \| th-MEMORY \| h-caution \| v-look \| [at \| b-everything] . x-but \| z-←person-x-x \| d-none \| v-see | covered |
-| 149 | The little house had three rooms, a sitting room, a bedroom, and a tiny kitchen. | `zexuhohol zexezuvol zexugudel welazom gamezom zal gobem blahehar gamezom thevum.` | [z-scene-x-chair \| z-scene-x-sleep \| [z-scene-x-cooking \| [w-very \| g-small]] \| z-and \| [g-part-of \| [b-←house \| g-small]]] \| th-MEMORY | covered |
+| 149 | The little house had three rooms, a sitting room, a bedroom, and a tiny kitchen. | `zuvahohal zobahohal zuguyehal welazom gamezom zal gobem blahehar gamezom thevum.` | [z-living-room \| z-bedroom \| [z-kitchen \| [w-very \| g-small]] \| z-and \| [g-part-of \| [bl-←house \| g-small]]] \| th-MEMORY | covered |
 | 150 | We visited my uncle's village, the largest village in the world. | `zuwonx thevum dehaham em beyol gemugol grewamol bleyol grewubal bluwon vowurelol. zehahar zel gelazom al bogugal.` | z-speaker-x \| th-MEMORY \| d-locality \| [used-by \| [b-person \| g-male \| [g-#-e0 \| [b-person \| [g-#-e-1 \| b-speaker]]]]] \| v-attend . [z-←locality \| z-rank/more \| g-big] \| [in \| b-globe] | covered |
 | 151 | We learn something new each day. | `zuwonx veluyel dar gunonam hrabal hrubal bluzurem.` | z-speaker-x \| v-learn \| [d-something \| g-news] \| h-one \| [h-divided-by-one \| b-day] | covered |
 | 152 | The market begins five minutes earlier this week. | `zodaham thubem zuel bral bemurem g+5 voyugel herem blagorer om buwon.` | [z-market \| th-PATTERN \| z-rank/less \| b-later] \| [b-minute \| g-five.short] \| v-begin \| [h-while \| [b-←calendar \| [near \| b-speaker]]] | covered |
@@ -220,7 +220,7 @@ Every Agebon line below was checked with `node scripts/parse.mjs`.
 | 191 | Do not laugh at me because I seem so absent minded. | `yul vulamal ol buwon thahum blarl zuwon theyemawan gazebom gul.` | y-prohibition \| v-laugh \| [at \| b-speaker] \| [th-because \| b-that-clause] \| z-speaker \| th-CLUES-listener \| [g-attention \| g-not] | covered |
 | 192 | I shall lend you the books that you need. | `zawan thugom danalx vebom. zuwon thagem danarx dawan vegeral.` | z-listener \| th-LIVE \| d-book-x \| v-necessity . z-speaker \| th-plan-itinerary \| d-←book-x \| d-listener \| v-lend | covered |
 | 193 | Come early next Monday if you can. | `yel zawan thubem zuel bral vavobel oel buwon herem blolerem grebal thohom blarl zawan vavobexal.` | y-command \| [z-listener \| th-PATTERN \| z-rank/less \| b-later] \| v-go \| [toward \| b-speaker] \| [h-while \| [b-weekday \| g-1st]] \| [th-if \| b-that-clause] \| z-listener \| v-go-able | covered |
-| 194 | If you come early, wait in the hall. | `yel vobahem al bexowurel thohom blarl zawan thubem zuel bral vavobel.` | y-command \| v-wait \| [in \| b-scene-x-walk] \| [th-if \| b-that-clause] \| [z-listener \| th-PATTERN \| z-rank/less \| b-later] \| v-go | covered |
+| 194 | If you come early, wait in the hall. | `yel vobahem al bayayahal thohom blarl zawan thubem zuel bral vavobel.` | y-command \| v-wait \| [in \| b-hall] \| [th-if \| b-that-clause] \| [z-listener \| th-PATTERN \| z-rank/less \| b-later] \| v-go | covered |
 | 195 | I had a younger brother whose name was Antonio. | `zahelan thevum glemugol grewamol bluwon. zahelan zuwon zuel guburem.` | z-Ahelan \| th-MEMORY \| gl-male \| [g-#-e0 \| b-speaker] . [z-Ahelan \| z-speaker \| z-rank/less \| g-age] | covered |
 | 196 | Gnomes are little men who live under the ground. | `glemugol zeyolx gamezom huam vaheham haduhel blagulal.` | [gl-male \| z-person-x \| g-small] \| h-always.open \| v-home \| [h-down \| b-ground] | covered |
 | 197 | He is loved by everybody, because he has a gentle disposition. | `zual geyol duzozen volamal thahum blarl zuzozen gegemam.` | [z-everything \| g-person] \| d-Uzozen \| v-love \| [th-because \| b-that-clause] \| [z-Uzozen \| g-kindness] | covered |
@@ -272,7 +272,7 @@ Every Agebon line below was checked with `node scripts/parse.mjs`.
 - **STC-53, 55, *your brother / sister*:** sibling kin `grewamol` + `/b/` listener, with *male* / *female* before. **STC-89, 93, *father*, *his boy*:** `grewubal` / `grewabal` on the kin anchor.
 - **STC-57, *neighbors*:** agent compound on *home* (`zaxahehamx`) + *near us*. *Gone away* keeps RESIDUE (they are still away). *Winter* is the *gloves* abstract (`bugebam`).
 - **STC-58, 91, *robin*:** compound *red* `x` *bird* (`eredaxebedu`); the habit question is an open universal `zuam`.
-- **STC-59, *concert*:** scene compound on *sing* (`bexezuyol`, a sing-event). *With us* (not the listener) is `han bluwonx`. **STC-63, 72, 92:** narrative *we* that leaves the listener out is `zuwonx`, not `zayan`.
+- **STC-59, *concert*:** the event noun of *sing* (`bezuyol`, a singing). *With us* (not the listener) is `han bluwonx`. **STC-63, 72, 92:** narrative *we* that leaves the listener out is `zuwonx`, not `zayan`.
 - **STC-60, *ever*:** `havom … har`. *Travel* is `vehavam` (*voyage*). *Jungle* is the compound *palm* `x` *tree* (`bubalexedalelx`).
 - **STC-61, *several miles*:** metric, not miles: `bezerem grawagem` (*thousands of meters*, about). *Down* the river is dropped.
 - **STC-62, *knows*:** the *book* abstract as a verb (`vanam`); *about* is `hahugem`. *Everybody* is open `zuam` (as far as I know). *Hunting* stays *predation* (`bowozum`); the verb *hunt* is `varunel`, role English on *archery*.
@@ -328,7 +328,7 @@ Every Agebon line below was checked with `node scripts/parse.mjs`.
 - **STC-145, *our bird's name is Jacko*:** two sentences, since `gorol` after `em buwonx` would describe the speaker group.
 - **STC-146, *the way to the sea*:** *road* with *toward the sea*.
 - **STC-147, *on the wing*:** *flier* (agent compound on *wing*).
-- **STC-149, *rooms*:** scene compounds on *chair*, *sleep*, and *cooking*. *Had three rooms* is an existence list SHARED as *part of the little house*; the count is the list.
+- **STC-149, *rooms*:** the dictionary words *living room*, *bedroom*, and *kitchen*. *Had three rooms* is an existence list SHARED as *part of the little house*; the count is the list.
 - **STC-151, 182, *each day* / *every spring and fall*:** a counted unit is a count per unit (`hrabal hrubal bluzurem`, once per day); named seasons are a universal kind in the time pole (`herem blual gahelem`). *Something new* is `dar` (an unnamed new thing) plus *news* (`gunonam`).
 - **STC-152, *market*, *minutes*, *this week*:** *market* is the new abstract on 🏬 (`zodaham`, L-09). *Minute* is the new stock unit `bemurem` (L-10). *This week* is the full-root resume `bagorer` plus `om buwon`, which describes the week ([hook + `/b/` on a landmark](../grammar/hooks.md)). *Earlier* is the `bral` scale against the *Usual* bar.
 - **STC-153, *find … too great*:** *distance* is *length* (`zeravam`). MEMORY under `yol` asks for the listener's own warrant, as in STC-97.
@@ -359,7 +359,7 @@ Every Agebon line below was checked with `node scripts/parse.mjs`.
 - **STC-188–190:** `herem blarl` is *when*, `thohom blarl` is *if*. *Stop* is `vozohul`; *called* is *summoned* (`vohorem`).
 - **STC-191, *seem*:** the holder seam names the listener (`theyemawan`, *as you see it*), so the speaker never states the impression as plain fact. *Absent-minded* is *not attentive* (`gazebom gul`).
 - **STC-192, *lend*, *need*:** *lend* is role English on *credit-card* (`vegeral`); *need* is the *necessity* abstract as a verb (`vebom`). Two sentences with a book resume.
-- **STC-193, 194, *early*, *Monday*:** *early* is the PATTERN bar, `thubem zuel bral` (G-03); the bar needs a ranked item, so the listener is named; *next Monday* is the weekday ordinal under `herem` (G-14). *Hall* is the scene compound on *walk* (`bexowurel`).
+- **STC-193, 194, *early*, *Monday*:** *early* is the PATTERN bar, `thubem zuel bral` (G-03); the bar needs a ranked item, so the listener is named; *next Monday* is the weekday ordinal under `herem` (G-14). *Hall* is the dictionary word `bayayahal`.
 - **STC-195, *name was Antonio*:** the name is a house-cast name (`zahelan`), not a foreign payload. *Younger* is the rank on *age*, said as its own sentence.
 - **STC-196, *gnomes*:** no gnome root; *little men* under `haduhel blagulal` (*down* on the ground), with COMMON for the habitual claim. *Under* has no hosted relation of its own.
 - **STC-197, *loved by everybody*:** object first, then the lover as subject; *gentle* is *kindness* (`gegemam`) under the because pole.
