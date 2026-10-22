@@ -88,7 +88,8 @@ export function seriesGlossIndex(tables: ClassifyTables): GlossIndex {
 function indexSeriesForms(index: GlossIndex, tables: ClassifyTables): void {
   for (const series of SERIES) {
     for (const ending of JOIN_ENDINGS) {
-      for (const prefix of [...POS, ""]) {
+      // A hosted `bl-` join is a whole landmark (`hewom blar`, `zoxual blual`).
+      for (const prefix of [...POS, "bl", ""]) {
         const surface = `${prefix}${series}${ending}`;
         for (const ctx of CONTEXTS) {
           const gloss = glossOne(surface, tables, ctx);
@@ -138,15 +139,15 @@ function indexSayForms(index: GlossIndex, tables: ClassifyTables): void {
   }
 }
 
-/** One content root under each role letter and **-l/-m/-n**. */
+/** One content root under each role letter (and `gl-` / hosted `bl-`) and **-l/-m/-n**. */
 export function indexRootForms(index: GlossIndex, root: string, tables: ClassifyTables): void {
   for (const ending of ENDINGS) {
-    for (const prefix of [...POS, "gl", ""]) {
+    for (const prefix of [...POS, "gl", "bl", ""]) {
       const surface = `${prefix}${root}${ending}`;
       const gloss = glossOne(surface, tables, {});
       if (!gloss) continue;
       add(index.forms, gloss, surface);
-      const body = gloss.replace(/^(?:th|gl|[zdbvgwhxy])-/, "");
+      const body = gloss.replace(/^(?:th|gl|bl|[zdbvgwhxy])-/, "");
       add(index.roots, body, root);
     }
   }
@@ -304,14 +305,14 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
   if (plural) for (const form of index.forms.get(text) ?? []) out.add(form);
 
   // Tag pronoun: `tag.A` → `wa` + **-l**; `←tag.A` is **-r**, `←tag.A.part` is **-m**, `←tag.A.name` is **-n**; a pair `←tag.A+E` is `wae`.
-  const tag = core.match(/^((?:th|gl|[zdbvgwhxy])-)?(←)?tag\.([AEOU](?:\+[AEOU])?)(\.part|\.name)?$/);
+  const tag = core.match(/^((?:th|gl|bl|[zdbvgwhxy])-)?(←)?tag\.([AEOU](?:\+[AEOU])?)(\.part|\.name)?$/);
   if (tag) {
     const ending = !tag[2] ? "l" : tag[4] === ".part" ? "m" : tag[4] === ".name" ? "n" : "r";
     out.add(`${(tag[1] ?? "").replace(/-$/, "")}w${tag[3]!.replace("+", "").toLowerCase()}${ending}${suffix}`);
     return [...out];
   }
 
-  const resume = core.match(/^((?:th|gl|[zdbvgwhxy])-)?←(.*)$/);
+  const resume = core.match(/^((?:th|gl|bl|[zdbvgwhxy])-)?←(.*)$/);
   if (resume) {
     const pos = (resume[1] ?? "").replace(/-$/, "");
     let body = resume[2]!;

@@ -89,6 +89,20 @@ describe("glossToAgebon", () => {
     assert.deepEqual(failures, []);
   });
 
+  it("spells a hosted bl- word with no doc line to copy it from", () => {
+    const bare = buildGlossIndex(tables);
+    for (const agebon of [
+      "zoxual blehaval vezuvol.",
+      "zuzozen vowurel halam blehaval.",
+      "zudozol gaham blehaval vezuvol.",
+      "zuzozen vowurel halam blolazun.",
+      "yol hewom blar zuzozen vowurel.",
+      "zuzozen vuhohol ol bahehal. zoxual blahehar vezuvol.",
+    ]) {
+      assert.equal(canonical(glossToAgebon(morphGlossLine(agebon, tables), tables, bare)), canonical(agebon), agebon);
+    }
+  });
+
   it("rejects a gloss no Agebon line produces", () => {
     assert.throws(() => glossToAgebon("z-dog | v-not-a-real-sense", tables, index));
   });
