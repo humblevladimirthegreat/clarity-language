@@ -12,7 +12,8 @@ use [skip-cd] for amplify to not deploy.
 -vocab flashcards generator
 -contact form / about me
 -proposals
--ideas for what CVxVN should mean, maybe bring back spoken spans?
+-Is label suffix redundant now?
+-potentially revise label vowels
 
 Finger code (experimental, docs/grammar/finger-code.md; remove the warning once tested):
 -piano on a real instrument, with a player controlling the timing: do the held coda and the one-beat word rest read at speed, is the hook mark easy to hear, do `n` (a sixth) and `e` + hook (a seventh) sound smooth
