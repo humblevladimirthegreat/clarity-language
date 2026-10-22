@@ -64,7 +64,7 @@ export type NumberStem = {
   digitlessExp?: string;
 };
 
-export type XFamily = "role" | "pointer" | "sake" | "scope" | "lateral" | "holder" | "ability" | "numeric" | "compound";
+export type XFamily = "role" | "pointer" | "hookPrefix" | "sake" | "scope" | "lateral" | "holder" | "ability" | "numeric" | "compound";
 
 export type WritingBracket = "[" | "(" | "<";
 
@@ -86,7 +86,7 @@ export type MorphWordFamily =
       pointerVowel?: PointerVowel;
       /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`, `gwezuduyexal`). */
       stanceVowel?: ScopeVowel;
-      /** Role compound or role pointer: the label scope vowel(s) after `w` (`zwezuduyel`; roles.md#scope). */
+      /** Role compound or role pointer: the label scope vowel(s) after `w` (`zwezuduyel`; roles.md#scope). Hook prefix: scope after the stem's `th` seam (`zuexavuvuthel`). */
       scopeVowel?: ScopeVowel;
       /** Emotion compose: sake horizon letter moved mid-word (sakes.md#emotion-compose). */
       horizon?: "l" | "m" | "r";
@@ -96,6 +96,10 @@ export type MorphWordFamily =
       numberStem?: NumberStem;
       /** Lexical join before a numeric stem (`l` everyday host, `m` abstract). */
       join?: "l" | "m";
+      /** Hook prefix: the extra-noun hook it spells, **-l** for the `x` seam, **-m** for `mx` (`uel`, `uem`; hooks.md#hook-prefixes). */
+      hook?: string;
+      /** Hook prefix on a hook-compound citation (`guexowurelul`): the stem root's own ending and its fused hook. */
+      stemHook?: { leftEnding: "l" | "m"; hook: string };
       /** Holder seam: the host's own grade letter before the holder (knowing.md#holder). */
       grade?: "l" | "m" | "r";
     }

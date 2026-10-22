@@ -245,6 +245,7 @@ function familyChips(family: MorphWordFamily): string[] {
       if (family.rightRoots?.length) chips.push(`right ${family.rightRoots.join("+")}`);
       if (family.scopeVowel) chips.push(`scope ${family.scopeVowel}`);
       if (family.part) chips.push(`part ${family.part}`);
+      if (family.hook) chips.push(`hook ${family.hook}`);
       if (family.stanceVowel) chips.push(`stance ${family.stanceVowel}`);
       if (family.numberStem) chips.push(`num ${family.numberStem.marker}`);
       return chips;
@@ -320,6 +321,7 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
     }
     if (family.scopeVowel) rows.push({ label: "scope", value: family.scopeVowel });
     if (family.part) rows.push({ label: "part", value: family.part });
+    if (family.hook) rows.push({ label: "hook", value: family.hook });
     if (family.stanceVowel) rows.push({ label: "stance", value: family.stanceVowel });
   } else if (family.kind === "number") {
     rows.push({ label: "marker", value: String(family.stem.marker) });
@@ -380,6 +382,9 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   }
   if (family.kind === "x" && family.xFamily === "pointer") {
     return { line: "role pointer", href: "pronouns.html#role-pointers" };
+  }
+  if (family.kind === "x" && family.xFamily === "hookPrefix") {
+    return { line: `hook prefix ${family.hook ?? ""}`.trim(), href: "hooks.html#hook-prefixes" };
   }
   if (family.kind === "writingSpan") {
     return { line: "span fence", href: "spans.html" };

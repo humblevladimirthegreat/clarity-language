@@ -1,6 +1,6 @@
 # Proposal: Hooked joins (role + hook + `x` + join)
 
-**Status:** PROPOSED. Nothing here is implemented. The hooked join is built in the order `hook-prefixes.md` uses: hook vowels, **`x`**, then the head. It takes the role letter + vowel + **`x`** + vowel + ending slot, which is no longer a role pointer (pointers use role letter + **`w`**). So it lands with or after `hook-prefixes.md`, and no page ever reads a hooked join as a pointer.  
+**Status:** PROPOSED. Nothing here is implemented. The hooked join is built in the order [hook prefixes](../grammar/hooks.md#hook-prefixes) use: hook vowels, **`x`**, then the head. It takes the role letter + vowel + **`x`** + vowel + ending slot, which is no longer a role pointer (pointers use role letter + **`w`**) and which hook prefixes leave open (a prefix stem is at least three letters).  
 **Related:** [standalone joins](../grammar/joins.md#standalone-phrase), [unspecified member](../grammar/joins.md#unspecified-member-r-phrase), [universals and domains](../grammar/joins.md#universals-domains-generics), [extra-noun hooks](../grammar/hooks.md#extra-noun), [stacked extra-noun vowels](../grammar/hooks.md#extra-noun-intermediate), [hook point-back](../grammar/hooks.md#hook-resume), [hook compounds](../grammar/hooks.md#hook-compounds), [here and there](../grammar/hooks.md#deixis), [since](../grammar/hooks.md#since), [left and right of `x`](../grammar/compounds.md#families-by-shape), [hosted `bl-` words](../grammar/clause.md#extra-nouns), [of-relations](../grammar/relations.md#of-relations), [restrictors](../grammar/restrictors.md), [fill-ask](../grammar/questions.md#fill-ask-r).
 
 ## Problem
@@ -65,7 +65,7 @@ Only the [extra-noun](../grammar/hooks.md#extra-noun-intermediate) readings are 
 | `ae` | *using* | `zaexual blanewul` *everyone with a knife* | *by* | |
 | `ue` | *against* | `zuexual bluwon` *everyone against me* | *contrary to* | |
 
-The abstract-landmark readings that `hook-prefixes.md` gives the hooks apply here too, because they belong to the hooks: `zaxual blobowum` *everyone in crisis*, `zuexual blonam` *everyone against the policy*.
+The [abstract-landmark readings](../grammar/hooks.md#abstract-landmarks) of the hooks apply here too, because they belong to the hooks: `zaxual blobowum` *everyone in crisis*, `zuexual blonam` *everyone against the policy*.
 
 **Here and there.** A person landmark gives [deixis](../grammar/hooks.md#deixis) with the same hooks the free phrase uses: `zomxual bluwon` *everyone here*, `zomxual blawan` *everyone there by you*, `zumxual blayan` *everyone over there*. `zoxual bluwon` is *everyone right where I am*.
 
@@ -231,7 +231,7 @@ Kind indefinites are already retired, and each job has a plain route. A hooked j
 
 ## Spelling and parsing
 
-- **The slot is unclaimed.** Role letter + vowel + **`x`** + vowel + ending used to be a role pointer; pointers now use role letter + **`w`** (`zwabar` is *the latest extra party*). `hook-prefixes.md` leaves this slot unclaimed too. The hooked join claims it, with hook stacks on the left and join stacks on the right.
+- **The slot is unclaimed.** Role letter + vowel + **`x`** + vowel + ending used to be a role pointer; pointers now use role letter + **`w`** (`zwabar` is *the latest extra party*). [Hook prefixes](../grammar/hooks.md#hook-prefixes) leave this slot unclaimed too. The hooked join claims it, with hook stacks on the left and join stacks on the right.
 - **Right of `x`:** the next letters decide.
   - A root (vowel, consonant, vowel, …): a hook prefix, `goxahehal`.
   - Vowels, then an ending letter, then the end of the word or **-x**: a hooked join, `zoxual`, `zoxarx`.

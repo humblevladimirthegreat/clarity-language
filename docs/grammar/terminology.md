@@ -714,6 +714,12 @@ Prefix-less *including / rather / instead / except*, discourse glue, extra-noun 
 
 [Hooks](hooks.md)
 
+### Hook prefix
+
+Role letter + extra-noun hook vowels + **`x`** (or **`mx`** for the hook's **-m** frame) + stem: something in that hook's relation to the stem (`guexavuvul` *anti-fighting*, `gamxohalal` *mid-ocean*). Like English *anti-*, *in-*, *trans-*, *-ward*.
+
+[Hooks](hooks.md#hook-prefixes)
+
 ### Role compound / agent / patient / recipient
 <a id="role-compound--agent--place--patient--recipient"></a>
 

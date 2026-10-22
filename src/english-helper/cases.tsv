@@ -48,3 +48,8 @@ He left hastily.	hastily	sense:haste	a word only an alias names finds its root
 He is asleep.	asleep	sense:sleep	a word only an alias names finds its root
 We sat in the living room.	living room	sense:living-room	a multi-word compound sense is one slot
 She read a school book.	book	first:compound	a listed compound from two words' roots comes first
+# Hook prefixes
+Olazun is anti-war.	anti-war	has:relation-prefix	a hyphenated relation prefix is a hook prefix
+Uzozen walks homeward.	homeward	link:hooks.md#hook-prefixes	*-ward* on a noun is a hook prefix
+The ship is transoceanic.	transoceanic	has:relation-prefix	*trans-* + a place adjective is a hook prefix
+Uzozen walks forward.	forward	not:hooks.md#hook-prefixes	an everyday *-ward* word is not built from a noun

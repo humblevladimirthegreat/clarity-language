@@ -85,6 +85,13 @@ export function rewriteParsedWord(
   if (family.kind !== "x") {
     return null;
   }
+  // A hook prefix on a hook-compound citation (`guexowurelul`) parses its stem as one long root: move the left root.
+  if (family.xFamily === "hookPrefix" && family.rightRoots?.length === 1 && !map.has(family.rightRoots[0]!)) {
+    const stem = family.rightRoots[0]!;
+    const parts = parseHookCompoundCite(`${stem}${word.ending ?? ""}`);
+    const next = parts && map.get(parts.leftRoot);
+    if (next) return spliceRoots(word, [stem], [`${next}${stem.slice(parts.leftRoot.length)}`]);
+  }
   const left = mapRoots(family.leftRoots, map);
   const right = mapRoots(family.rightRoots ?? [], map);
   const leftChanged = rootsChanged(family.leftRoots, left);

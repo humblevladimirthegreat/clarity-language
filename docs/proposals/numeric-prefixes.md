@@ -1,6 +1,6 @@
 # Proposal: Numeric prefixes (*quasi-*, *proto-*, *tri-*)
 
-**Status:** PROPOSED. Nothing here is implemented. It replaces the root-first shape of [numeric derivation](../grammar/numeric-derivation.md) with a number-first shape on the **`x`** seam. It needs nothing from other proposals: the left of the seam starts with **`r`**, which no role compound, pointer, or root does. It shares the **`mx`** seam with `hook-prefixes.md`; if both land, they land on one phonology edit.  
+**Status:** PROPOSED. Nothing here is implemented. It replaces the root-first shape of [numeric derivation](../grammar/numeric-derivation.md) with a number-first shape on the **`x`** seam. It needs nothing from other proposals: the left of the seam starts with **`r`**, which no role compound, pointer, or root does. It shares the **`mx`** seam with [hook prefixes](../grammar/hooks.md#hook-prefixes), which [phonology](../grammar/phonology.md#singability-constraints) already lists.  
 **Related:** [numeric derivation](../grammar/numeric-derivation.md), [numbers](../grammar/numbers.md), [lexical compounds](../grammar/compounds.md#lexical-compounds), [compound order](../grammar/compounds.md#ordinary-compound-order), [left and right of `x`](../grammar/compounds.md#families-by-shape), [singability constraints](../grammar/phonology.md#singability-constraints).
 
 ## Problem
@@ -49,7 +49,7 @@ Each piece of meaning keeps one letter. It only moves:
 | exact / approximate number | final **-l** / **-m** | seam **`x`** / **`mx`** |
 | name / resume | final **-n** / **-r** | final **-n** / **-r** |
 
-The **`mx`** seam picks approximate the way **-m** does on a free number (`gragem` *about three*). It matches the **`mx`** seam in `hook-prefixes.md`, where **`m`** before the seam also carries the hook's **-m**. There is no **`lx`** seam: plain **`x`** already spells exact. Other consonants before the seam (**`nx`**, **`rx`**) have no reading.
+The **`mx`** seam picks approximate the way **-m** does on a free number (`gragem` *about three*). It matches the **`mx`** seam on [hook prefixes](../grammar/hooks.md#hook-prefixes), where **`m`** before the seam also carries the hook's **-m**. There is no **`lx`** seam: plain **`x`** already spells exact. Other consonants before the seam (**`nx`**, **`rx`**) have no reading.
 
 ## The readings do not change
 
@@ -105,7 +105,7 @@ Role letters work as now: `/v/` *to quasi-befriend* `vruwuxahuyayol`, `/ɡ/` *qu
 ## Why number first
 
 - **One compound order.** The kind is last in an **`x`** compound, in a dictionary compound, and now in a numeric word. The [left and right of `x`](../grammar/compounds.md#families-by-shape) test grows one row: a number body left of the first **`x`** is a numeric prefix.
-- **One prefix family.** With `hook-prefixes.md`, the left of the seam says what kind of prefix it is: hook vowels name a relation to the stem (*anti-war* is not a war), a number body names what kind of stem it is (*a tri-dialogue* is a dialogue). Both use **`x`**, and both use **`mx`** for their **-m**.
+- **One prefix family.** With [hook prefixes](../grammar/hooks.md#hook-prefixes), the left of the seam says what kind of prefix it is: hook vowels name a relation to the stem (*anti-war* is not a war), a number body names what kind of stem it is (*a tri-dialogue* is a dialogue). Both use **`x`**, and both use **`mx`** for their **-m**.
 - **English order.** *Quasi-friend*, *proto-love*, *multi-faith*, *tri-dialogue*, *de-tale* keep their English order.
 - **Open syllables.** With **`x`**, every syllable is open: `zra-ge-xe-zu-yel`. The lexical join before **`r`** leaves the cluster list. Only **`mx`** closes a syllable (`zra-gem-xe-zu-yel`), and only for the rare approximate number, the same closed **`m`** the hook-prefix **`mx`** needs.
 - **The same length.** `zezuyelragel` and `zragexezuyel` are both twelve letters. The join letter and the seam trade places.

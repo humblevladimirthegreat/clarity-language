@@ -53,6 +53,7 @@ IDs are stable (code and other meta pages cite them). Retired IDs are not reused
 | D-51 | Hosting by position (any `/b/` right after a `/ɡ/`, `/h/` or `/th/` word completes it). For a hosted number or tag: a one-onset `brl-` / `bwl-` / `blr-` / `blw-`, a written vowel (`blo-` / `ble-`), a schwa (written `i` or unwritten), or leaving numbers and tags positional. A mark on the host instead (`hlewom`) | position put a recipient one misplaced adjective or adverb away from a complement, and made words with no relation (*angry*) take one anyway; D-44 gives order no meaning, so it cannot carry this job. Two approximants in one onset get a vowel slipped in, so the cited sound would not be the spoken one; `blo` + `r…` reads as `bl` + a root in `or…`; a schwa adds a fifth vowel; tags are pronouns, so a positional tag recipient keeps the same accident; two host marks are easy to mix. The beat is written: syllabic `l` | clause.md, phonology.md |
 | D-56 | A tag in a holder seam (`theyemwar`). Parser: `holderSeamW` | the seam letter before `w` would end a syllable mid-word, which the singable shape allows only for the lexical join before a number marker. A holder you don't name is a kind of person (`theyemeyol` *someone*, `theyemeyolx` *some people*) | knowing.md, phonology.md |
 | D-52 | `we` / `wo` in a number body | `w` is the exponent sign and uses only `a` / `u`. `we` is a hard confusion pair with digit 7 `re` (r/w), and `wo` with digit 6 `vo` (v/w), so a misheard digit would land on a valid-looking filler. Parser: `SpeechDigitSyllable` | numbers.md |
+| D-57 | An `lx` seam after hook vowels (`guelxavuvul`). Parser: no word | plain **`x`** already spells the hook's **-l** reading, so `lx` would add nothing but a syllable-final `l` mid-word, against the [singable shape](../grammar/phonology.md#singability-constraints), on the commonest prefixes. The **-m** frame needs its `m` (`uemx`), because plain **`x`** is taken by **-l** | hooks.md |
 
 ## Rejected alternatives
 
@@ -132,6 +133,14 @@ A role word writes its label scope right after **`w`** (`zwazuduyel`, `zwezuduye
 - **Scope is required.** A single fight gives *someone who fought* (`zwazavuvul`); calling someone *a fighter* (`zwezavuvul`) is a separate, visible choice. Cost: with **`a`** as the default reading, *this time only* is no longer apart from *at least once*. A strict *only this time* can be a scope pair later.
 - **Written once.** A **`th`** scope after the stem (`zwazuduyethel`) has no reading, so a role word never carries two scopes. Ordinary roots keep the **`th`** seam, so label scope is taught in two places: after **`th`** on other words, at the front of a role word.
 - **Scope and ability combine.** With scope at the front, the ability vowel after the stem no longer competes for the same spot (`gwezuduyexal` *can be a teacher, as a practice*).
+
+### Hook prefixes {#hook-prefixes}
+
+A hook prefix (`guexavuvul` *anti-fighting*, [hooks.md](../grammar/hooks.md#hook-prefixes)) takes the role letter + vowels + **`x`** shape that role compounds left when they moved to **`w`**.
+
+- **Scope stays optional** on a person noun (`zuexavuvul` *an opponent of fighting*), unlike a role word (D-40). A role word names a part in an event, so a bare one would turn one act into a trait. A hook prefix names a stance toward its stem, not a part someone played, so there is no single act for the label to inflate. The **`th`** seam after the stem still says the reach (`zuexavuvuthel` *a committed opponent*, `zuexavuvuthal` *against fighting this time*). Rejected: required scope at the front, as on role words, which would put two vowel slots before the seam and spend a letter on every prefix word.
+- **The -m frames get `mx`.** Leaving the frames without prefixes would lose *contra-*, *inter-* (*amid*), and *para-* (*near*). The **`m`** is the letter that marks the frame on the free hook (`uel` → `uem`), so `uemx` reads without a new rule. Cost: a syllable-final `m` mid-word, beside the lexical join before `r` (D-57 for why not `lx`).
+- **Slots.** A prefix word fills `/ɡ/`, `/z/` `/d/` `/b/`, and `/h/`. On `/v/` it would repeat the `/ɡ/` predicate, and `/w/`, `/th/`, `/x/`, and `/y/` have no reading yet ([unassigned-reserved](unassigned-reserved.md#hook-prefixes)).
 
 ### Pointers in a seam {#pointers-in-a-seam}
 

@@ -153,6 +153,13 @@ describe("rebuild round-trip", () => {
     assert.equal(rewriteParsedWord(parseWord("zolovelrawal"), map), "zelevelrawal");
     assert.equal(rewriteParsedWord(parseWord("zazawanx"), map), "zululonx");
   });
+
+  it("moves a hook prefix's stem, and the left root of a hook-compound stem", () => {
+    const map = mapOf(["avuvu", "ababa"], ["awala", "obobo"]);
+    assert.equal(rewriteParsedWord(parseWord("guexavuvul"), map), "guexababal");
+    assert.equal(rewriteParsedWord(parseWord("guemxavuvuthel"), map), "guemxababathel");
+    assert.equal(rewriteParsedWord(parseWord("guexawalalul"), map), "guexobobolul");
+  });
 });
 
 describe("writing spans", () => {

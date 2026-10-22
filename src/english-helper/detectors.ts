@@ -82,6 +82,20 @@ export const COMPOUND_LINKS = { listed: "compounds.md#lexical-compounds", live: 
 
 const THIRD_PERSON = new Set(["he", "she", "it", "they", "him", "her", "them", "his", "its", "their", "theirs", "hers"]);
 
+/**
+ * A word built from a relation and a noun (*anti-war*, *pro-choice*, *transoceanic*, *homeward*, *water-powered*):
+ * a hook prefix ([english.md](english.md#relation-prefixes)). A prefix needs its hyphen, so *process* and *interest*
+ * stay words; *-ward* needs none, but the everyday *-ward* words are not built from a noun.
+ */
+const RELATION_PREFIX = /^(anti|pro|contra|counter|intra|inter|mid|para|trans|cross|near|off)-[a-z]/;
+const RELATION_SUFFIX = /[a-z]-(powered|based|driven|free|derived|sourced|bound|spanning|adjacent|facing|borne)$/;
+const TRANS_WORD = /^trans(oceanic|atlantic|pacific|continental|national|border)$/;
+const NOT_WARD = new Set(["toward", "towards", "forward", "forwards", "backward", "backwards", "afterward", "afterwards", "awkward", "reward", "steward", "coward", "untoward", "wayward"]);
+function relationWord(word: string): boolean {
+  if (RELATION_PREFIX.test(word) || RELATION_SUFFIX.test(word) || TRANS_WORD.test(word)) return true;
+  return /^[a-z]{3,}wards?$/.test(word) && !NOT_WARD.has(word);
+}
+
 export const WORD_DETECTORS: readonly WordDetector[] = [
   { id: "modal", label: (t) => `modal *${t.normal}*`, links: [], test: (t) => t.cls === "modal" && t.normal in MODAL_LINKS },
   { id: "wh", label: (t) => `question word *${t.normal}*`, links: [], test: (t) => t.cls === "question" && t.normal in WH_LINKS },
@@ -96,6 +110,7 @@ export const WORD_DETECTORS: readonly WordDetector[] = [
   { id: "possessive-pronoun", label: (t) => `possessive *${t.normal}*`, links: ["english.md#of"], test: (t) => !!t.possessive && t.cls === "pronoun" },
   { id: "proper-name", label: () => "proper name", links: ["word-endings.md#proper-name--n"], test: (t) => !!t.proper },
   { id: "plural", label: () => "plural noun", links: ["plurality.md#associative"], test: (t) => t.cls === "noun" && !!t.plural && !t.proper },
+  { id: "relation-prefix", label: (t) => `*${t.normal}*: a hook prefix (the hook's vowels, \`x\` or \`mx\`, then the noun's root)`, links: ["english.md#relation-prefixes", "hooks.md#hook-prefixes"], test: (t) => relationWord(t.normal) },
   { id: "participle", label: (t) => (t.shape === "er" ? "doer noun (*-er*, *-or*)" : `*-${t.shape}* word used as ${t.cls === "noun" ? "a noun" : "an adjective"}`), links: ["english.md#participles"], test: (t) => !!t.shape },
 ];
 

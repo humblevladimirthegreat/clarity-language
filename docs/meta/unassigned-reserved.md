@@ -144,6 +144,17 @@ Source: [hooks.md](../grammar/hooks.md#hook-compounds)
 
 - **closed (D-50):** a three-letter root + **-l** / **-m** + an extra-noun hook (*map* + *from*). It reads as a five-letter root + ending, or as nothing.
 
+## Hook prefixes {#hook-prefixes}
+
+Source: [hooks.md](../grammar/hooks.md#hook-prefixes)
+
+- **open:** role letter + hook vowel(s) + **`x`** or **`mx`** + one vowel + ending (`zaxar`, `dexar`, `guemxar`). The retired pointer shape: a stem is at least three letters, so this is no hook prefix. `hooked-joins.md` plans to claim it. Parser: no word.
+- **open:** a vowel pair that is no hook (`ea`, `eo`, `eu`, `oa`, `ou`, `au`, …) before **`x`** or **`mx`** (`geaxavuvul`, `gouxavuvul`). No hook to read. Parser: no word.
+- **open:** a consonant other than **`m`** between hook vowels and the seam (`guenxavuvul`, `guerxavuvul`). **`n`** or **`r`** would need a job of the hook's **-n** or **-r** inside a word. Parser: no word.
+- **closed (D-57):** `lx` after hook vowels (`guelxavuvul`). Plain **`x`** already spells the **-l** reading. Parser: no word.
+- **open:** a hook prefix on `/v/` / `/w/` / `/th/` / `/x/` / `/y/` (`vuexavuvul`). `/v/` would repeat the `/ɡ/` predicate (*is anti-fighting*); the others have no guess yet (a degree of opposition? a stance word for *as an opponent*? a topic or call by stance?). Parser: `hookPrefixSlot`.
+- **open:** a hook prefix inside a larger word: as a piece of an ordinary compound (*an anti-war house*), as a role-compound stem, or with ability after its stem (`gaxahehaxal`). Not guessable which piece the hook would cover; a separate `/ɡ/` word says it. Parser: no word.
+
 ## Role compounds
 
 Source: [roles.md](../grammar/roles.md), [compounds.md](../grammar/compounds.md)
@@ -152,7 +163,6 @@ Source: [roles.md](../grammar/roles.md), [compounds.md](../grammar/compounds.md)
 - **open:** a content-part compound on `/h/` (`hwahowurel`). The manner of an event as an adverb is the ordinary `/h/` word (`howurel`); a person-as-adverb on `/h/` is capacity, which needs a slot part. Parser: `roleCompoundSlot`.
 - **closed:** **`v`** in a role compound (`zwavowurel`). The event noun is the stem itself (`dowurel`). Parser: no word.
 - **closed ([hooked parts](design-decisions.md#hooked-parts-and-the-result)):** a role word for a hooked part (scene, instrument, goal, source, path, bearer) or a separate result. No part consonant names one. Parser: no word.
-- **open:** role letter + vowel(s) + **`x`** + a stem or a pointer vowel (`zaxuduyel`, `zaxar`, `dexar`). The retired role shape; `hook-prefixes.md` plans to claim it. Parser: no word.
 - **closed ([scope written once](design-decisions.md#role-scope-at-the-front)):** a **`th`** scope after a role word's stem (`zwazuduyethel`). Parser: no word.
 - **open:** a role compound as a piece of an ordinary compound, or two part consonants in a word. Not guessable: an inner `w` + vowel + part reads as part of the stem. *Noun + agent* is the role compound's own stem (`zwazudozoxowurel`).
 - **open:** a special pronoun (root + **-n**) as a role-compound stem or a label-scope host (`zwazuwon`, `zuwothan`). It is neither an event nor a label. Parser: `roleCompoundStem`, `labelScopeStem`.

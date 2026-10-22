@@ -241,7 +241,7 @@ Beginner already used two roots glued with **`x`** and dictionary words with no 
 | other root **`th`** **`a`** / **`e`** / **`o`** / **`u`** (or a stack) | [label scope](predication.md#label-scope) | *angry this time*; *a teacher* | **th** ≈ *think* (what kind of claim the label is) |
 | direction root **`th`** facing person | [viewpoint lateral](roles.md#viewpoint-laterals) | `gowuhethuzozen` *Uzozen’s left* | **th** ≈ *think* (whose point of view) |
 
-A normal root is longer than one vowel, so a lone vowel never stands left of **`x`**.
+A root is at least three letters, so one or two vowels left of **`x`** are never a root.
 
 ### Adding another piece {#ordinary-compound-order}
 
