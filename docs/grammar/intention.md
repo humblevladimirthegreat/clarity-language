@@ -222,7 +222,7 @@ To say someone **can** do something (*can sing*) or can have a quality, keep the
 >
 > "Uzozen can sing."
 
-For English *could* about a skill someone used to have, add [FORMER](knowing.md#former-climate) **`helam`**: the ability held before, and you are not claiming it now.
+For English *could* about a skill someone used to have, add [FORMER](notional-standing.md#former-climate) **`helam`**: the ability held before, and you are not claiming it now.
 
 > `zuzozen vezuyoxal helam.`
 >

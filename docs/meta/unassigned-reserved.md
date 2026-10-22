@@ -250,7 +250,7 @@ Source: [predication.md](../grammar/predication.md)
 
 ## Closed-root endings
 
-Source: [causation.md](../grammar/causation.md#poles), [relations.md](../grammar/relations.md), [dependents.md](../grammar/dependents.md#dependent-clauses), [knowing.md](../grammar/knowing.md#residue)
+Source: [causation.md](../grammar/causation.md#poles), [relations.md](../grammar/relations.md), [dependents.md](../grammar/dependents.md#dependent-clauses), [knowing.md](../grammar/notional-standing.md#residue)
 
 An **-r** grade on a closed root without its own **-r** would take away the live whole-stem resume ([design-decisions § Closed-root endings](design-decisions.md#closed-root-endings)). **-l** has two competing guesses (strongest, as on *exactly like* `hewol`, or broke a norm, as on *because*), so a family where neither fits has no guessable **-l**.
 

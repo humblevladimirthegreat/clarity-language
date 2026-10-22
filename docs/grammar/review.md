@@ -346,6 +346,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *sleep* | `vezuvol` |
 | *CLUES* | `theyem` |
 | *sing* | `vezuyol` |
+| *NOTIONAL* | `theyum` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
@@ -591,6 +592,18 @@ z-Olazun | th-CLUES.strong | v-fight
 **-l** says you could show the clues; **`theyem`** only describes them.
 
 **Rule:** [Evidence strength](knowing.md#evidence-strength)
+:::
+
+**9.** *Imagine Olazun walking.* `zolazun theyum vowurel.` or `zolazun theyul vowurel.`
+
+::: details Show answer
+`zolazun theyum vowurel.`
+
+z-Olazun | th-NOTIONAL | v-walk
+
+**-m** pictures the walking with no further purpose; **`theyul`** would be a rehearsal, to prepare for walking.
+
+**Rule:** [Hold endings (NOTIONAL)](notional-standing.md#hold-endings-notional)
 :::
 
 #### What changes {#intermediate-what-changes}

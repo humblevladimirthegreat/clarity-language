@@ -110,20 +110,20 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `han` | join-relation with or including (adverb + argument) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `hanom` | proxy on-behalf-of (authorized agency) | [Proxy (on behalf of)](../relations.md#proxy) | B |
 | `haon` | join-relation among options (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
+| `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](../notional-standing.md#residue-and-former-climate) | I |
 | `harum` | UNTIL clause pole (endpoint bound) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `havol` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `havom` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `havor` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `hawul` | STILL phasal (the state continues); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `hawum` | STILL phasal (the state continues); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `hawur` | STILL phasal (the state continues); -r for now: about to end | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `havol` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `havom` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `havor` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `hawul` | STILL phasal (the state continues); -l not expected to change back | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `hawum` | STILL phasal (the state continues); -m could change | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `hawur` | STILL phasal (the state continues); -r for now: about to end | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
 | `hedam` | locative between (two landmarks) | [Locative relations](../relations.md#locative-relations) | I |
 | `heham` | exchange in-exchange-for (consideration / countervalue) | [Exchange (for)](../relations.md#exchange) | B |
-| `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
-| `helel` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `helem` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `heler` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](../notional-standing.md#residue-and-former-climate) | I |
+| `helel` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `helem` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `heler` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
 | `hen` | join-relation prioritizing (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
 | `henam` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
 | `henar` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
@@ -149,9 +149,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `hunem` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](../relations.md#as-of) | A |
 | `huner` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `huon` | join-relation barring anything but (adverb) | [Join-relations](../join-across-roles.md#join-relations) | I |
-| `huvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `huvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `huvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `huvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `huvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `huvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
 <!-- /generated -->
 
 ## `/th/` words {#th-words}
@@ -179,9 +179,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `thebar` | reported evidential with weak evidence (rumor) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thebom` | ONLY-IF clause pole (necessary condition) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `thehem` | IFF clause pole (biconditional) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `themol` | mirative mood overturning a firm expectation | [Mirative (themom)](../knowing.md#mirative) | I |
-| `themom` | mirative mood (newly found out and not expected) | [Mirative (themom)](../knowing.md#mirative) | I |
-| `themor` | mirative mood against a loose expectation | [Mirative (themom)](../knowing.md#mirative) | I |
+| `themol` | mirative mood overturning a firm expectation | [Mirative (themom)](../notional-standing.md#mirative) | I |
+| `themom` | mirative mood (newly found out and not expected) | [Mirative (themom)](../notional-standing.md#mirative) | I |
+| `themor` | mirative mood against a loose expectation | [Mirative (themom)](../notional-standing.md#mirative) | I |
 | `thenam` | AS-OF stance pole (asserted whose-now / dated ledger) | [Stance as-of](../relations.md#stance-as-of) | A |
 | `thenar` | AS-OF stance pole (asserted whose-now / dated ledger) resume | [Stance as-of](../relations.md#stance-as-of) | A |
 | `thevul` | memory evidential with strong evidence (vivid memory) | [Evidence strength](../knowing.md#evidence-strength) | I |
@@ -191,9 +191,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `theyel` | clues evidential with strong evidence (strong clues) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `theyem` | clues evidential (reasoned from clues about this case) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `theyer` | clues evidential with weak evidence (a weak clue) | [Evidence strength](../knowing.md#evidence-strength) | I |
-| `theyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Hold endings (NOTIONAL)](../knowing.md#hold-endings-notional) | I |
-| `theyum` | notional mood default hold (imagining a scene without a further purpose) | [Notional (as-if framing)](../knowing.md#notional-as-if-framing) | I |
-| `theyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Hold endings (NOTIONAL)](../knowing.md#hold-endings-notional) | I |
+| `theyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Hold endings (NOTIONAL)](../notional-standing.md#hold-endings-notional) | I |
+| `theyum` | notional mood default hold (imagining a scene without a further purpose) | [Notional (as-if framing)](../notional-standing.md#notional-as-if-framing) | I |
+| `theyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Hold endings (NOTIONAL)](../notional-standing.md#hold-endings-notional) | I |
 | `thogol` | decision mood irreversible changeability (settled pick; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
 | `thogom` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
 | `thogor` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
@@ -240,19 +240,19 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `wanam` | deduced evidential (follows from the premises) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wanar` | deduced evidential with weak evidence (seems to follow; steps unchecked) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `waram` | residue mood (outcome still on the current tally) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `wavol` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wavom` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wavor` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wawul` | STILL phasal (the state continues); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wawum` | STILL phasal (the state continues); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wawur` | STILL phasal (the state continues); -r for now: about to end | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `wavol` | ALREADY phasal (the change has happened); -l not expected to change back | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `wavom` | ALREADY phasal (the change has happened); -m could change | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `wavor` | ALREADY phasal (the change has happened); -r for now: likely to change back | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `wawul` | STILL phasal (the state continues); -l not expected to change back | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `wawum` | STILL phasal (the state continues); -m could change | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `wawur` | STILL phasal (the state continues); -r for now: about to end | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
 | `webal` | reported evidential with strong evidence (reliable source) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `webam` | reported evidential (hearsay / said or written by someone else / reportative) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `webar` | reported evidential with weak evidence (rumor) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `welam` | former-climate mood (not the climate claimed now) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
-| `welel` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `welem` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `weler` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `welel` | NOT-YET phasal (the change is expected but has not happened); -l not expected to change back | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `welem` | NOT-YET phasal (the change is expected but has not happened); -m could change | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `weler` | NOT-YET phasal (the change has not happened); -r the change may never come | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
 | `wenam` | AS-OF clause pole (asserted whose-now / dated ledger) | [As-of (whose now)](../relations.md#as-of) | A |
 | `wenar` | AS-OF clause pole (asserted whose-now / dated ledger) resume | [As-of (whose now)](../relations.md#as-of) | A |
 | `wevul` | memory evidential with strong evidence (vivid memory) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
@@ -278,9 +278,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `wugor` | live evidential with weak evidence (a glimpse) | [Mood on one adjective](../knowing.md#mood-on-one-adjective) | A |
 | `wunem` | AS-OF clause pole (unasserted whose-now / placeholder now) | [As-of (whose now)](../relations.md#as-of) | A |
 | `wuner` | AS-OF clause pole (unasserted whose-now / placeholder now) resume | [As-of (whose now)](../relations.md#as-of) | A |
-| `wuvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wuvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `wuvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
+| `wuvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `wuvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
+| `wuvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](../notional-standing.md#phasal) | I |
 <!-- /generated -->
 
 ## Sake words {#sakes}

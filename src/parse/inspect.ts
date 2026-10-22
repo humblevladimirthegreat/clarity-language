@@ -434,6 +434,9 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     if (kind === "plan" || kind === "predict" || kind === "decision" || kind === "attempt" || kind === "want") {
       return { line: "closed mood", href: "intention.html" };
     }
+    if (kind === "mirative" || kind === "residue" || kind === "former_climate" || kind === "notional" || kind === "phasal") {
+      return { line: "closed mood", href: "notional-standing.html" };
+    }
     return { line: "closed mood", href: "knowing.html" };
   }
   if (word.reading === "joinAct" || word.reading === "joinRelation") {

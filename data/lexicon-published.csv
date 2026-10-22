@@ -308,7 +308,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐁,mouse,amezo,creature,one,small,small,a mouse is small beside larger animals; small is little size,,little; tiny; minor,joins.md#intermediate-practice
 🐀,rat,arezu,creature,takes-away,small,,,,,
 🐹,hamster,aheza,creature,holds,small,routine,hamster on a wheel of routine,,process; procedure; everyday; familiar,
-🐇,rabbit,erozo,creature,one,medium,,,,,
+🐇,rabbit,erozo,creature,one,medium,,,,,notional-standing.md#intermediate-practice
 🐿️,squirrel,ezeza,creature,holds,small,hoarding,a squirrel hoards nuts for winter,,,
 🦫,beaver,eyozu,creature,takes-away,medium,industry,a beaver works nonstop building dams,,,
 🦔,hedgehog,ahezu,creature,takes-away,small,defensiveness,hedgehog curls in defense,,,
@@ -799,7 +799,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 💄,lipstick,ulebe,body,order,small,appearance,lipstick colors the lips; appearance is how you present,,appear,
 💍,ring,orebo,body,one,small,promise,a ring seals a vow; a promise binds your future self,,surround; guarantee; assure,joins.md#intermediate-practice
 💎,gemstone,uhelo,nature,one,small,value,gem is rare and precious; value is worth holding dear,,jewel; gem; worth; valuable; rate,
-🔇,mute,emowu,tool,takes-away,medium,suppression,mute silences all sound; suppression is holding back expression,,,knowing.md#intermediate-practice
+🔇,mute,emowu,tool,takes-away,medium,suppression,mute silences all sound; suppression is holding back expression,,,
 🔈,quiet,ogowu,tool,takes-away,medium,volume,quiet is sound turned low; volume is level of sound,,,spans.md#beginner-practice
 🔉,audio,adowo,tool,one,medium,voice,audio carries a speaking voice; voice is audible expression,m.w:quite,representative,
 🔊,sound,azuwa,tool,holds,none,amplification,a loudspeaker sends out sound; amplification is making louder,v:shout,noise; loud,

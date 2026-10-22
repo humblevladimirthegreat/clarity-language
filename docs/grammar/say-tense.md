@@ -6,7 +6,7 @@ Recipes for English *walked* / *has walked* / *will walk* / *used to walk*, and 
 
 ### One English tense, several jobs {#tense-jobs}
 
-**Needs:** [Evidentiality](knowing.md#evidentiality) · [Forecasts](knowing.md#forecast) · [Dated channel](knowing.md#dated-channel) · [RESIDUE and FORMER](knowing.md#residue) · [Already, still, not yet](knowing.md#phasal) · [*as-of*](relations.md#as-of)
+**Needs:** [Evidentiality](knowing.md#evidentiality) · [Forecasts](knowing.md#forecast) · [Dated channel](knowing.md#dated-channel) · [RESIDUE and FORMER](notional-standing.md#residue) · [Already, still, not yet](notional-standing.md#phasal) · [*as-of*](relations.md#as-of)
 
 An English tense bundles up to three questions: **when** the event sits, **how you know** it, and whether it **still counts** now. Agebon asks them separately. Pick the row for the English form, then the job you mean.
 
@@ -22,7 +22,7 @@ An English tense bundles up to three questions: **when** the event sits, **how y
 | *walked yesterday* / *three hours ago* | a measured time back | channel + signed amount ([dated channel](knowing.md#dated-channel)) |
 | *has walked* | the outcome still counts | RESIDUE **`haram`** |
 | *has already walked* | the change has come | **`havom`** |
-| *has walked before* / *has never walked* | at least once / not once | **`havom`** + **`har`** / **`hal`** ([ever / never](knowing.md#ever-never)) |
+| *has walked before* / *has never walked* | at least once / not once | **`havom`** + **`har`** / **`hal`** ([ever / never](notional-standing.md#ever-never)) |
 | *had walked* | as of a past moment | [*as-of*](relations.md#as-of) plus the same stance |
 | *is walking* | it is in view | LIVE **`thugom`** |
 | *is walking* | they are in the middle of it | the event root on `/ɡ/`: `zuzozen gowurel` ([in progress](predication.md#in-progress)) |
@@ -70,7 +70,7 @@ Reports and reasoning need their own `-` amount, because those channels do not f
 
 ### Present perfect: leftover, done, or ever {#present-perfect}
 
-**Needs:** [RESIDUE](knowing.md#residue) · [Already, still, not yet](knowing.md#phasal)
+**Needs:** [RESIDUE](notional-standing.md#residue) · [Already, still, not yet](notional-standing.md#phasal)
 
 English *has left* mixes three ideas. Choose the one you mean.
 
@@ -96,7 +96,7 @@ English *has left* mixes three ideas. Choose the one you mean.
 
 ### Past perfect: as of a past moment {#past-perfect}
 
-**Needs:** [*As-of*](relations.md#as-of) · [RESIDUE](knowing.md#residue) · [Plan and forecast against a snapshot](say-reasons.md#as-of-intention)
+**Needs:** [*As-of*](relations.md#as-of) · [RESIDUE](notional-standing.md#residue) · [Plan and forecast against a snapshot](say-reasons.md#as-of-intention)
 
 English *had left* means the leaving counted **as of** an earlier moment. Write the same stance and add *as-of* with that moment in `/b/`.
 
@@ -116,7 +116,7 @@ English *had left* means the leaving counted **as of** an earlier moment. Write 
 
 ### Progressive: mid-way, in view, or still {#progressive}
 
-**Needs:** [In progress](predication.md#in-progress) · [Live vs memory](knowing.md#live-vs-memory) · [Already, still, not yet](knowing.md#phasal)
+**Needs:** [In progress](predication.md#in-progress) · [Live vs memory](knowing.md#live-vs-memory) · [Already, still, not yet](notional-standing.md#phasal)
 
 English *is walking* usually means one of three things. Put the event root on `/ɡ/` when you say they are in the middle of it. Say **`thugom`** when the walking is in view now. Say **`hawum`** when you stress that it goes on.
 
@@ -180,7 +180,7 @@ English *will* is three different claims.
 
 ### Everyday time words {#time-words}
 
-**Needs:** [Dated channel](knowing.md#dated-channel) · [Now and today](knowing.md#now) · [RESIDUE and FORMER](knowing.md#residue) · [Already, still, not yet](knowing.md#phasal) · [Forecasts](knowing.md#forecast) · [Dependent clauses](dependents.md#dependent-clauses)
+**Needs:** [Dated channel](knowing.md#dated-channel) · [Now and today](knowing.md#now) · [RESIDUE and FORMER](notional-standing.md#residue) · [Already, still, not yet](notional-standing.md#phasal) · [Forecasts](knowing.md#forecast) · [Dependent clauses](dependents.md#dependent-clauses)
 
 English time words (*today*, *previously*, *continue*) mostly ride on the same channels and offsets as tense. Each row says which one.
 
@@ -222,7 +222,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 
 ### Used to and would (habit) {#used-to}
 
-**Needs:** [FORMER](knowing.md#former-climate) · [Always](restrictors.md) · [If](causation.md#if)
+**Needs:** [FORMER](notional-standing.md#former-climate) · [Always](restrictors.md) · [If](causation.md#if)
 
 English *used to walk* is a pattern that is no longer today's report: **`hual`** with FORMER after the verb.
 
@@ -238,7 +238,7 @@ For *would* in a condition (*if Olazun swam, Uzozen would walk*), see [remote an
 
 ### Can, could, may, might {#can-may}
 
-**Needs:** [Ability](intention.md#ability) · [MAY](knowing.md#may) · [Permission](sakes.md#permission) · [FORMER](knowing.md#former-climate)
+**Needs:** [Ability](intention.md#ability) · [MAY](knowing.md#may) · [Permission](sakes.md#permission) · [FORMER](notional-standing.md#former-climate)
 
 English *can* and *may* each carry several meanings. Pick the meaning.
 

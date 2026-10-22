@@ -34,7 +34,8 @@ Each row names what the file owns. The file is the authority; this table is only
 | `causation.md` | Causation / condition poles, fault, CAUSE mood. |
 | `sakes.md` | Sakes, emotion compose, permission, consent. |
 | `intention.md` | Plan, decision, try / fallback, ability / incapability. |
-| `knowing.md` | MAY, evidentiality and evidence strength, forecasts, residue / former, notional, universality. |
+| `knowing.md` | MAY, evidentiality and evidence strength, forecasts, holder, universality. |
+| `notional-standing.md` | Notional and standing: mirative, residue / former, phasal, notional, channel bars. |
 | `roles.md` | Role compounds, viewpoint laterals, landmark facing, gravity. |
 | `compounds.md` | Mid-word `x` families and the mid-word `th` seam, dictionary compounds, conversation length, root tails, tail suffixes. |
 | `spans.md` | Span fences, asides, scope islands. |

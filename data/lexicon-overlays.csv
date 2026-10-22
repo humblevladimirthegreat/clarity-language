@@ -59,12 +59,12 @@ abor,th,❤️,evidential,INTUITION.weak,intuition evidential with weak evidence
 abom,w,❤️,evidential,INTUITION,intuition evidential (gut sense you cannot fully spell out),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#mood-on-one-adjective
 abol,w,❤️,evidential,INTUITION.strong,intuition evidential with strong evidence (strong gut sense),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#mood-on-one-adjective
 abor,w,❤️,evidential,INTUITION.weak,intuition evidential with weak evidence (faint hunch),heart marks gut sense; intuition is knowing you cannot fully spell out,knowing.md#mood-on-one-adjective
-emom,th,😮,mirative,MIRATIVE,mirative mood (newly found out and not expected),a surprised face meets what it did not expect; mirative marks news against expectation,knowing.md#mirative
-emol,th,😮,mirative,MIRATIVE.firm,mirative mood overturning a firm expectation,a surprised face meets what it did not expect; mirative marks news against expectation,knowing.md#mirative
-emor,th,😮,mirative,MIRATIVE.mild,mirative mood against a loose expectation,a surprised face meets what it did not expect; mirative marks news against expectation,knowing.md#mirative
-aram,h,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,knowing.md#residue-and-former-climate
+emom,th,😮,mirative,MIRATIVE,mirative mood (newly found out and not expected),a surprised face meets what it did not expect; mirative marks news against expectation,notional-standing.md#mirative
+emol,th,😮,mirative,MIRATIVE.firm,mirative mood overturning a firm expectation,a surprised face meets what it did not expect; mirative marks news against expectation,notional-standing.md#mirative
+emor,th,😮,mirative,MIRATIVE.mild,mirative mood against a loose expectation,a surprised face meets what it did not expect; mirative marks news against expectation,notional-standing.md#mirative
+aram,h,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,notional-standing.md#residue-and-former-climate
 aram,w,💰,residue,RESIDUE,residue mood (outcome still on the current tally),money bag holds what is owed; residue is an unpaid balance still on the books,knowing.md#mood-on-one-adjective
-elam,h,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,knowing.md#residue-and-former-climate
+elam,h,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,notional-standing.md#residue-and-former-climate
 elam,w,🪹,former_climate,FORMER,former-climate mood (not the climate claimed now),empty nest shows the nesting season is over; former climate is usual weather that is not current,knowing.md#mood-on-one-adjective
 ager,th,🗺️,plan,plan-sketch,plan mood sketch map-resolution (direction only; details left open),map charts a route; sketch plan is intention without steps,intention.md#plan
 agem,th,🗺️,plan,plan-itinerary,plan mood itinerary map-resolution (steps on the map; detail unstated),map charts a route; itinerary plan fills in how,intention.md#plan
@@ -78,11 +78,11 @@ omal,th,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),"th
 omal,w,💭,may,MAY-find-out,may mood find-out hold (I'll / let's find out),"thought balloon plus looking: could be, and you are seeking",knowing.md#mood-on-one-adjective
 omar,th,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),"thought balloon with a shrug: could be, and you are not seeking — including if you never know",knowing.md#hold-endings-may
 omar,w,💭,may,MAY-who-knows,may mood who-knows hold (leave unsettled; may never know),"thought balloon with a shrug: could be, and you are not seeking — including if you never know",knowing.md#mood-on-one-adjective
-eyum,th,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose,knowing.md#notional-as-if-framing
+eyum,th,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose,notional-standing.md#notional-as-if-framing
 eyum,w,🎭,notional,NOTIONAL,notional mood default hold (imagining a scene without a further purpose),theater mask marks an imagined scene without a special purpose,knowing.md#mood-on-one-adjective
-eyur,th,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a possibility or assumption for now),theater mask tried on for a moment to toy with what might follow,knowing.md#hold-endings-notional
+eyur,th,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a possibility or assumption for now),theater mask tried on for a moment to toy with what might follow,notional-standing.md#hold-endings-notional
 eyur,w,🎭,notional,NOTIONAL-suppose,notional mood suppose hold (toying with a possibility or assumption for now),theater mask tried on for a moment to toy with what might follow,knowing.md#mood-on-one-adjective
-eyul,th,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#hold-endings-notional
+eyul,th,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,notional-standing.md#hold-endings-notional
 eyul,w,🎭,notional,NOTIONAL-rehearse,notional mood rehearsal hold (practicing a possible scene to prepare for action),theater mask marks a scene practiced in preparation for action,knowing.md#mood-on-one-adjective
 odam,h,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
 odam,w,🥣,ability,ABIL,hostless ability fallback (capacity),bowl holds what it can; capacity is floating ability without a host,intention.md#ability-fallback
@@ -183,30 +183,30 @@ ulem,h,🪵,of_relation,material,of-relation material (constitution),wood is the
 ulem,g,🪵,of_relation,material,of-relation material (constitution),wood is the stuff something is made of; material is the stuff in /b/,relations.md#of-relations
 aham,h,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,relations.md#of-relations
 aham,g,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,relations.md#of-relations
-avol,h,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
-avol,w,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
-avom,h,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,knowing.md#phasal
-avom,w,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,knowing.md#phasal
-avor,h,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,knowing.md#phasal
-avor,w,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,knowing.md#phasal
-awul,h,⚓,phasal,still.lasting,STILL phasal (the state continues); -l not expected to change back,anchor holds the ship where it was,knowing.md#phasal
-awul,w,⚓,phasal,still.lasting,STILL phasal (the state continues); -l not expected to change back,anchor holds the ship where it was,knowing.md#phasal
-awum,h,⚓,phasal,still,STILL phasal (the state continues); -m could change,anchor holds the ship where it was,knowing.md#phasal
-awum,w,⚓,phasal,still,STILL phasal (the state continues); -m could change,anchor holds the ship where it was,knowing.md#phasal
-awur,h,⚓,phasal,still.for-now,STILL phasal (the state continues); -r for now: about to end,anchor holds the ship where it was,knowing.md#phasal
-awur,w,⚓,phasal,still.for-now,STILL phasal (the state continues); -r for now: about to end,anchor holds the ship where it was,knowing.md#phasal
-elel,h,🌱,phasal,not-yet.lasting,NOT-YET phasal (the change is expected but has not happened); -l not expected to change back,seedling has not grown up yet,knowing.md#phasal
-elel,w,🌱,phasal,not-yet.lasting,NOT-YET phasal (the change is expected but has not happened); -l not expected to change back,seedling has not grown up yet,knowing.md#phasal
-elem,h,🌱,phasal,not-yet,NOT-YET phasal (the change is expected but has not happened); -m could change,seedling has not grown up yet,knowing.md#phasal
-elem,w,🌱,phasal,not-yet,NOT-YET phasal (the change is expected but has not happened); -m could change,seedling has not grown up yet,knowing.md#phasal
-eler,h,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,knowing.md#phasal
-eler,w,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,knowing.md#phasal
-uvul,h,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,knowing.md#phasal
-uvul,w,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,knowing.md#phasal
-uvum,h,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,knowing.md#phasal
-uvum,w,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,knowing.md#phasal
-uvur,h,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,knowing.md#phasal
-uvur,w,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,knowing.md#phasal
+avol,h,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,notional-standing.md#phasal
+avol,w,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,notional-standing.md#phasal
+avom,h,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,notional-standing.md#phasal
+avom,w,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,notional-standing.md#phasal
+avor,h,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,notional-standing.md#phasal
+avor,w,🐣,phasal,already.for-now,ALREADY phasal (the change has happened); -r for now: likely to change back,hatched chick is already out of the shell,notional-standing.md#phasal
+awul,h,⚓,phasal,still.lasting,STILL phasal (the state continues); -l not expected to change back,anchor holds the ship where it was,notional-standing.md#phasal
+awul,w,⚓,phasal,still.lasting,STILL phasal (the state continues); -l not expected to change back,anchor holds the ship where it was,notional-standing.md#phasal
+awum,h,⚓,phasal,still,STILL phasal (the state continues); -m could change,anchor holds the ship where it was,notional-standing.md#phasal
+awum,w,⚓,phasal,still,STILL phasal (the state continues); -m could change,anchor holds the ship where it was,notional-standing.md#phasal
+awur,h,⚓,phasal,still.for-now,STILL phasal (the state continues); -r for now: about to end,anchor holds the ship where it was,notional-standing.md#phasal
+awur,w,⚓,phasal,still.for-now,STILL phasal (the state continues); -r for now: about to end,anchor holds the ship where it was,notional-standing.md#phasal
+elel,h,🌱,phasal,not-yet.lasting,NOT-YET phasal (the change is expected but has not happened); -l not expected to change back,seedling has not grown up yet,notional-standing.md#phasal
+elel,w,🌱,phasal,not-yet.lasting,NOT-YET phasal (the change is expected but has not happened); -l not expected to change back,seedling has not grown up yet,notional-standing.md#phasal
+elem,h,🌱,phasal,not-yet,NOT-YET phasal (the change is expected but has not happened); -m could change,seedling has not grown up yet,notional-standing.md#phasal
+elem,w,🌱,phasal,not-yet,NOT-YET phasal (the change is expected but has not happened); -m could change,seedling has not grown up yet,notional-standing.md#phasal
+eler,h,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,notional-standing.md#phasal
+eler,w,🌱,phasal,not-yet.maybe-never,NOT-YET phasal (the change has not happened); -r the change may never come,seedling has not grown up yet,notional-standing.md#phasal
+uvul,h,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,notional-standing.md#phasal
+uvul,w,🥀,phasal,no-longer.lasting,NO-LONGER phasal (the state has stopped); -l not expected to change back,wilted rose is no longer fresh,notional-standing.md#phasal
+uvum,h,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,notional-standing.md#phasal
+uvum,w,🥀,phasal,no-longer,NO-LONGER phasal (the state has stopped); -m could change,wilted rose is no longer fresh,notional-standing.md#phasal
+uvur,h,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,notional-standing.md#phasal
+uvur,w,🥀,phasal,no-longer.for-now,NO-LONGER phasal (the state has stopped); -r paused: expected to resume,wilted rose is no longer fresh,notional-standing.md#phasal
 owal,h,🧪,attempt,ATTEMPT-committed,attempt mood committed (keep going until it works or is ruled out),test tube runs the experiment; a committed attempt keeps testing until it settles,intention.md#try
 owam,h,🧪,attempt,ATTEMPT-unstated,attempt mood (commitment unstated),test tube tries a sample; an attempt is testing whether it works,intention.md#try
 owar,h,🧪,attempt,ATTEMPT-trial,attempt mood trial run (low-stakes probe; failing is useful data),test tube tries a small sample; a trial run is a probe whose failure still teaches,intention.md#try

@@ -694,8 +694,8 @@ Do not put a bare person in `/b/` to mean “from Olazun’s now.” A person af
 Once whose-now is set, these count from it:
 
 - A [forecast](knowing.md#forecast) offset (`blral`) counts forward **from** that now.
-- [RESIDUE](knowing.md#residue) is what is still left over **at** that now.
-- [FORMER](knowing.md#former-climate) means the pattern no longer held **at** that now.
+- [RESIDUE](notional-standing.md#residue) is what is still left over **at** that now.
+- [FORMER](notional-standing.md#former-climate) means the pattern no longer held **at** that now.
 - A bare verb happens **at** that now.
 
 [MAY](knowing.md#may), [CAUSE](causation.md#cause), and every other stance still count from speech-now. Evidentials, apart from LIVE at the snapshot, still say how *you* know at speech-now.
@@ -746,7 +746,7 @@ The second sentence's own pair replaces the 22 July now.
 
 An *as-of* pair inside a finished inner clause cannot be resumed later in the main clause. `henar` on its own parses, but write it only after a clause that set whose-now with `henam` and a `/b/`.
 
-**Compare with:** [*after*](dependents.md#time-poles) **`halam`** and extra-noun **`ol`** *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](causation.md#if) **`thohom`** is a condition judged at speech-now, not English *if he had* (`hunem`). [NOTIONAL](knowing.md#notional) is pretend, not a placeholder now. [Scope islands](joins.md#scope-islands-join) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the evidential, resume the *as-of*, or both.
+**Compare with:** [*after*](dependents.md#time-poles) **`halam`** and extra-noun **`ol`** *at* place the event in time or next to a landmark; they do not set whose-now. [Causal *if*](causation.md#if) **`thohom`** is a condition judged at speech-now, not English *if he had* (`hunem`). [NOTIONAL](notional-standing.md#notional) is pretend, not a placeholder now. [Scope islands](joins.md#scope-islands-join) limit how far a join reaches; they do not carry an *as-of* forward. On the next clause, repeat the evidential, resume the *as-of*, or both.
 
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | Use | English | Same root as | Cue |

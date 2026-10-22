@@ -915,7 +915,7 @@ Same under `/z/` `/d/` `/b/` (`zrawal` = +∞ as subject; `drewul` = start-place
 
 **Just short (`gruwul`):** negative marker (**`ru`**) + digitless negative exponent (**`wu`∅**), no mantissa. It mirrors **`grawul`** (a hair over zero): **`gruwul`** is a hair **under**: the smallest shortfall. Against a target it reads *almost*.
 
-**Compare with:** the same form on each role letter: **`gruwul`** the amount, **`xruwul`** *just before that:*, **`thruwul`** *virtually*, **`vruwul`** *nudge down*, **`hruwul`** *almost*, **`yruwul`** *so close!*. Pretend *as if* is a different thing: the mood **`eyu`** ([Notional](knowing.md#notional), e.g. `theyum`).
+**Compare with:** the same form on each role letter: **`gruwul`** the amount, **`xruwul`** *just before that:*, **`thruwul`** *virtually*, **`vruwul`** *nudge down*, **`hruwul`** *almost*, **`yruwul`** *so close!*. Pretend *as if* is a different thing: the mood **`eyu`** ([Notional](notional-standing.md#notional), e.g. `theyum`).
 
 **Endings** (no-mantissa specials):
 

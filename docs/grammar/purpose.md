@@ -74,7 +74,7 @@ Saying *can’t right now* or *may yet change* instead of *impossible* helps you
 
 English *has done* and *used to* mix two questions: **when** something happened, and whether it **still matters now**. *Used to* also leaves open whether a habit still describes you today.
 
-[RESIDUE](knowing.md#residue) says the result of a past event still counts now (a debt still unpaid, a door still shut). [FORMER](knowing.md#former-climate) says a pattern was usual but you are **not** claiming it as how things are now (cue: usual weather vs today’s report). Neither word is a past tense: each can combine with what you see now, what you remember, or a forecast.
+[RESIDUE](notional-standing.md#residue) says the result of a past event still counts now (a debt still unpaid, a door still shut). [FORMER](notional-standing.md#former-climate) says a pattern was usual but you are **not** claiming it as how things are now (cue: usual weather vs today’s report). Neither word is a past tense: each can combine with what you see now, what you remember, or a forecast.
 
 Because residue is marked, an event you mention without it counts as closed, so carrying a past event forward is a choice rather than a default, and rumination stays optional. Marking a former pattern lets *I was always this way* describe the past without claiming the present. [As-of](relations.md#as-of) names the moment that leftovers and patterns are measured from (*as of Friday*), so you can weigh an old situation by its own date instead of against today. For English *if they had … they would*, the as-of moment is a placeholder you do not claim is real, which is not the same as pretending.
 
@@ -289,10 +289,10 @@ Many roots have an **abstract** sense beside a **concrete** one, so an idea you 
 
 - [Memory as fishing](knowing.md#evidentiality) ([a guess as fact](#trap-certainty)): cast into opaque water; you may pull up a fish or a **boot** (the memory can be wrong).
 - [Live look as attesting](knowing.md#live-vs-memory) ([a guess as fact](#trap-certainty)): you report what you see while the scene is still in view.
-- [Residue as unpaid debt](knowing.md#residue) ([a moment as identity](#trap-identity)): the result still counts, like a balance still owed; not a past tense.
-- [Former climate as an empty nest](knowing.md#former-climate) ([a moment as identity](#trap-identity)): the nesting season is over; a pattern that has ended, not a past tense.
+- [Residue as unpaid debt](notional-standing.md#residue) ([a moment as identity](#trap-identity)): the result still counts, like a balance still owed; not a past tense.
+- [Former climate as an empty nest](notional-standing.md#former-climate) ([a moment as identity](#trap-identity)): the nesting season is over; a pattern that has ended, not a past tense.
 - [A pattern as paw-prints](knowing.md#universality) ([a guess as fact](#trap-certainty)): a general claim rests on a trail of cases, and the ending says how long the trail is. *Always* from a few cases is a short trail, not a law.
-- [*As if* as theater](knowing.md#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene; what really happened stays **offstage**.
+- [*As if* as theater](notional-standing.md#notional) ([a guess as fact](#trap-certainty)): pretending is framed as a stage scene; what really happened stays **offstage**.
 - [Mechanism as gears](causation.md#cause) ([a wish as a law](#trap-wish-as-law)): you say *how* a result comes about, like gears meshing, not only that it follows.
 - [Affect as water](sakes.md#emotion-compose) ([a feeling as a label](#trap-feeling)): surging, flowing, or still water (motion) plus where the feeling sits or points, instead of an opaque emotion label that hides the sake.
 

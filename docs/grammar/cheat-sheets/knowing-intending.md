@@ -7,7 +7,7 @@ outline: false
 
 # Knowing and intending cheat sheet {#knowing-intending-cheat-sheet}
 
-A quick look at [knowing](../knowing.md) and [intention](../intention.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [knowing](../knowing.md), [notional and standing](../notional-standing.md), and [intention](../intention.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 Verbs have no tense. A `/th/` word says how you know, how you hold the claim, or what someone means to do, and the ending says how firm: **-l** firm, **-m** default, **-r** for now. When unsure, use **-m**.
 
@@ -94,7 +94,7 @@ Join the name to a channel, MAY, or NOTIONAL: keep the word's last letter and wr
 | [Holder on a channel](../knowing.md#holder) | `zolazun theyemuzozen velurul.` | *I gather Uzozen thinks Olazun left.* | I |
 | [Holder on REPORTED](../knowing.md#holder) | `zolazun thebamuzozen velurul.` | *I hear Uzozen thinks Olazun left.* | I |
 | [Holder on MAY](../knowing.md#holder) | `zolazun thomamuzozen velurul.` | *Maybe Uzozen thinks Olazun left.* | I |
-| [Holder on NOTIONAL](../knowing.md#holder) | `zolazun theyumuzozen velurul.` | *Imagine it as Uzozen sees it.* | I |
+| [Holder on NOTIONAL](../notional-standing.md#notional) | `zolazun theyumuzozen velurul.` | *Imagine it as Uzozen sees it.* | I |
 | [Strength before the name](../knowing.md#holder) | `zolazun theyeluzozen velurul.` | *Strong clues say Uzozen thinks Olazun left.* | I |
 | [Shared history](../knowing.md#holder): MEMORY with the interlocutors | `zawan vebal hal thevumayan.` | *From what we both remember, you've never listened.* | I |
 
@@ -104,9 +104,9 @@ A channel you name is your frame, and later claims of yours keep it. See [carryi
 
 | It keeps the frame | It ends the frame |
 |--------------------|-------------------|
-| [your later statements](../knowing.md#carry-forward) | [a new channel, NOTIONAL, or a holder](../knowing.md#carry-forward) |
+| [your later statements](../knowing.md#carry-forward) | [a new channel or a holder](../knowing.md#carry-forward) · [NOTIONAL](../notional-standing.md#notional) |
 | [a new topic, sentence linkers, asides](../knowing.md#carry-forward) | [`yal` written out](../knowing.md#carry-forward) |
-| [MIRATIVE or MAY](../knowing.md#carry-forward) | [`xuvedam` *by the way*, or a goodbye](../knowing.md#carry-forward) |
+| [MAY](../knowing.md#carry-forward) · [MIRATIVE](../notional-standing.md#mirative) | [`xuvedam` *by the way*, or a goodbye](../knowing.md#carry-forward) |
 
 A question, command, request, or prohibition does not take the frame, and does not end it.
 
@@ -117,14 +117,14 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 <!-- generated: overlays pos=th|h kind=may|notional|mirative|residue|former_climate -->
 | Agebon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
-| `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](../knowing.md#residue-and-former-climate) | I |
-| `themol` | mirative mood overturning a firm expectation | [Mirative (themom)](../knowing.md#mirative) | I |
-| `themom` | mirative mood (newly found out and not expected) | [Mirative (themom)](../knowing.md#mirative) | I |
-| `themor` | mirative mood against a loose expectation | [Mirative (themom)](../knowing.md#mirative) | I |
-| `theyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Hold endings (NOTIONAL)](../knowing.md#hold-endings-notional) | I |
-| `theyum` | notional mood default hold (imagining a scene without a further purpose) | [Notional (as-if framing)](../knowing.md#notional-as-if-framing) | I |
-| `theyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Hold endings (NOTIONAL)](../knowing.md#hold-endings-notional) | I |
+| `haram` | residue mood (outcome still on the current tally) | [Residue and former climate](../notional-standing.md#residue-and-former-climate) | I |
+| `helam` | former-climate mood (not the climate claimed now) | [Residue and former climate](../notional-standing.md#residue-and-former-climate) | I |
+| `themol` | mirative mood overturning a firm expectation | [Mirative (themom)](../notional-standing.md#mirative) | I |
+| `themom` | mirative mood (newly found out and not expected) | [Mirative (themom)](../notional-standing.md#mirative) | I |
+| `themor` | mirative mood against a loose expectation | [Mirative (themom)](../notional-standing.md#mirative) | I |
+| `theyul` | notional mood rehearsal hold (practicing a possible scene to prepare for action) | [Hold endings (NOTIONAL)](../notional-standing.md#hold-endings-notional) | I |
+| `theyum` | notional mood default hold (imagining a scene without a further purpose) | [Notional (as-if framing)](../notional-standing.md#notional-as-if-framing) | I |
+| `theyur` | notional mood suppose hold (toying with a possibility or assumption for now) | [Hold endings (NOTIONAL)](../notional-standing.md#hold-endings-notional) | I |
 | `thomal` | may mood find-out hold (I'll / let's find out) | [Hold endings (MAY)](../knowing.md#hold-endings-may) | B |
 | `thomam` | may mood (could be; default) | [MAY](../knowing.md#may) | B |
 | `thomar` | may mood who-knows hold (leave unsettled; may never know) | [Hold endings (MAY)](../knowing.md#hold-endings-may) | B |
@@ -134,12 +134,12 @@ MAY, NOTIONAL, and MIRATIVE are `/th/` words; RESIDUE and FORMER are `/h/` words
 |-----|---------|---------|-------|
 | [MAY](../knowing.md#may) | `zolazun thomam velurul dahelan.` | *Olazun may be leaving Ahelan.* | B |
 | [MAY, ask to find out](../knowing.md#may-hold) | `yol zuzozen vanuvul thomal dolazun.` | *Might Uzozen be punching Olazun? let's find out.* | B |
-| [RESIDUE](../knowing.md#residue-and-former-climate) | `zolazun haram velurul.` | *Olazun has left and is still gone.* | I |
-| [RESIDUE with a channel](../knowing.md#residue-and-former-climate) | `zolazun thevum haram velurul.` | *I remember Olazun leaving, and Olazun is still gone.* | I |
-| [FORMER after the verb](../knowing.md#residue-and-former-climate) | `zuzozen hual vezuyol helam.` | *Uzozen always used to sing.* | I |
-| [A channel as the bar](../knowing.md#channel-bars) | `thugom` before `zel` | *than it looks* | I |
+| [RESIDUE](../notional-standing.md#residue-and-former-climate) | `zolazun haram velurul.` | *Olazun has left and is still gone.* | I |
+| [RESIDUE with a channel](../notional-standing.md#residue-and-former-climate) | `zolazun thevum haram velurul.` | *I remember Olazun leaving, and Olazun is still gone.* | I |
+| [FORMER after the verb](../notional-standing.md#residue-and-former-climate) | `zuzozen hual vezuyol helam.` | *Uzozen always used to sing.* | I |
+| [A channel as the bar](../notional-standing.md#channel-bars) | `thugom` before `zel` | *than it looks* | I |
 
-Neither MAY nor MIRATIVE can be a [comparison bar](../knowing.md#channel-bars).
+Neither MAY nor MIRATIVE can be a [comparison bar](../notional-standing.md#channel-bars).
 
 ### Already, still, not yet, no longer {#phasal}
 
@@ -148,12 +148,12 @@ Each compares what is true now with a change. Not a tense. **-l** is settled, **
 <!-- cheat-sheet: knowing-intending -->
 | Meaning | **-l** | **-m** | **-r** | Stage |
 |---------|--------|--------|--------|-------|
-| *already* | [`havol`](../knowing.md#phasal) *for good* | `havom` | `havor` *for now* | I |
-| *still* | [`hawul`](../knowing.md#phasal) *and will keep on* | `hawum` | `hawur` *about to end* | I |
-| *not yet* | [`helel`](../knowing.md#phasal) *but it will* | `helem` | `heler` *maybe never* | I |
-| *no longer* | [`huvul`](../knowing.md#phasal) *never again* | `huvum` | `huvur` *paused* | I |
+| *already* | [`havol`](../notional-standing.md#phasal) *for good* | `havom` | `havor` *for now* | I |
+| *still* | [`hawul`](../notional-standing.md#phasal) *and will keep on* | `hawum` | `hawur` *about to end* | I |
+| *not yet* | [`helel`](../notional-standing.md#phasal) *but it will* | `helem` | `heler` *maybe never* | I |
+| *no longer* | [`huvul`](../notional-standing.md#phasal) *never again* | `huvum` | `huvur` *paused* | I |
 
-For *has ever*, use `havom` with `har`; *has never* is `hal` ([ever / never](../knowing.md#ever-never)).
+For *has ever*, use `havom` with `har`; *has never* is `hal` ([ever / never](../notional-standing.md#ever-never)).
 
 ## Intending {#intending}
 
@@ -226,10 +226,10 @@ After the root, write `x`, a vowel, and the ending the word would have anyway. O
 | This | vs | That |
 |------|----|------|
 | `thomam` *could be* ([a guess, no reasons](../knowing.md#may)) | | `theyem` *from the clues* ([reasons you worked out](../knowing.md#evidentiality)) |
-| `thebam` *so they say* ([someone said it](../knowing.md#evidentiality)) | | `theyum` *imagine* ([a scene you make up](../knowing.md#notional-as-if-framing)) |
+| `thebam` *so they say* ([someone said it](../knowing.md#evidentiality)) | | `theyum` *imagine* ([a scene you make up](../notional-standing.md#notional-as-if-framing)) |
 | `theyel` *strong clues* ([how good your evidence is](../knowing.md#evidence-strength)) | | `thregel` *third-hand* ([how many hands](../knowing.md#hand-depth)) |
 | `thubem blral` *will, by the pattern* ([a forecast](../knowing.md#forecast)) | | `thagem` *I plan to* ([an intention](../intention.md#plan-predict)) |
-| `haram` *still in effect* ([the outcome stays](../knowing.md#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](../knowing.md#phasal)) |
+| `haram` *still in effect* ([the outcome stays](../notional-standing.md#residue-and-former-climate)) | | `hawum` *still* ([the state goes on](../notional-standing.md#phasal)) |
 | `thogom` *I've decided* ([how open the choice is, no time](../intention.md#decision)) | | `thagem` *I plan* ([how worked out, still ahead](../intention.md#plan-predict)) |
 | `howam` *tries* ([acts, outcome open](../intention.md#try)) | | `vezuyoxal` *can sing* ([a claim about ability](../intention.md#can)) |
 | `thalem` *I want* ([your own wanting](../intention.md#want)) | | `thebamuzozen thagem` *I hear Uzozen plans* ([someone else's plan](../knowing.md#holder)) |

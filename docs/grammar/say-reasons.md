@@ -36,7 +36,7 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
 
-**Needs:** [Evidence strength](knowing.md#evidence-strength) · [Deduction](knowing.md#deduction) · [MAY](knowing.md#may) · [Hold endings (NOTIONAL)](knowing.md#hold-endings-notional) · [Hopefully and other attitudes](sakes.md#speaker-attitude) · [Unmet](sakes.md#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](spans.md#asides) · [CAUSE](causation.md#cause) · [Every bar](comparatives.md#stance-bars)
+**Needs:** [Evidence strength](knowing.md#evidence-strength) · [Deduction](knowing.md#deduction) · [MAY](knowing.md#may) · [Hold endings (NOTIONAL)](notional-standing.md#hold-endings-notional) · [Hopefully and other attitudes](sakes.md#speaker-attitude) · [Unmet](sakes.md#sake-changeability) · [As for](say-people-places.md#as-for) · [Asides](spans.md#asides) · [CAUSE](causation.md#cause) · [Every bar](comparatives.md#stance-bars)
 
 English adverbs like *obviously*, *apparently* and *presumably* say **how you know** a claim. Agebon has no word for each one. It puts a channel on the clause as a `/th/` word, and the ending grades the evidence: **-l** solid, **-m** ordinary, **-r** thin. *Guess* and *assume* are not channels: a guess is a *could be* (MAY), and an assumption is toying with a premise (NOTIONAL). *Unfortunately* says how **you** feel about the claim, so it is an attitude word.
 
@@ -201,7 +201,7 @@ English has a separate verb for *make someone do X* in many common cases: *kill*
 
 ### Know, mean, explain, realize, forget, become {#mind-verbs}
 
-**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Embedded whether](questions.md#embedded-whether) · [Because](causation.md#only-because) · [Already, still, not yet](knowing.md#phasal) · [Can](intention.md#can) · [Existence](predication.md#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](comparatives.md#comparatives-e)
+**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Embedded whether](questions.md#embedded-whether) · [Because](causation.md#only-because) · [Already, still, not yet](notional-standing.md#phasal) · [Can](intention.md#can) · [Existence](predication.md#existence) · [As for](say-people-places.md#as-for) · [Start and stop](#phase-verbs) · [Comparatives](comparatives.md#comparatives-e)
 
 English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mostly sit on a few plain moves: tell, know, remember, and whether the change has come. Agebon keeps those roots and adds the phasal word for the change, so *realize* is *already know* and *forget* is *no longer remember*. *Mean* in the sense of *signify* is the compound `ezuyeloma` (*meaning*, speech that carries a thought).
 
@@ -215,7 +215,7 @@ English verbs of knowing and saying (*explain*, *realize*, *forget*, *mean*) mos
 | *know* (that) | `zuzozen vanam darl zudozol varuvel.` | knows that the dog runs; to say how *you* know it, use a [channel](knowing.md#evidentiality) |
 | *know whether* / *know which* | `zuzozen vanam dorl zudozol varuvel.` | knows whether the dog runs; a blank inside asks *which* (`dor`) |
 | *find out* | `zuzozen vumewol dorl zudozol varuvel.` | finds whether the dog runs |
-| *know someone* | `zuzozen havom dolazun vawebol har.` | has met Olazun at some point ([ever](knowing.md#ever-never)) |
+| *know someone* | `zuzozen havom dolazun vawebol har.` | has met Olazun at some point ([ever](notional-standing.md#ever-never)) |
 | *know how to* | `zuzozen vezuyoxal.` | can sing ([can](intention.md#can)) |
 | *realize* / *notice* | `zuzozen havom vanam darl zudozol varuvel.` | already knows that the dog runs |
 | *forget* | `zuzozen dolazun vevum huvum.` | no longer remembers Olazun |
@@ -310,7 +310,7 @@ English *biased* says a view may be bent by what the holder wants from it. Agebo
 ### Factivity (`if` vs `because`)
 <a id="factivity"></a>
 
-**Needs:** [If](causation.md#if) · [Because](causation.md#only-because) · [MAY](knowing.md#may) · [*as-of*](relations.md#as-of) · [RESIDUE](knowing.md#residue) · [forecasts](knowing.md#forecast)
+**Needs:** [If](causation.md#if) · [Because](causation.md#only-because) · [MAY](knowing.md#may) · [*as-of*](relations.md#as-of) · [RESIDUE](notional-standing.md#residue) · [forecasts](knowing.md#forecast)
 
 English *because* and *if* can hide whether you **assert the dependent as a world fact**. Agebon puts that choice on the pole: **`thahum`** asserts the condition as the reason the outcome rests on; **`thohom`** does not (the outcome is under that opportunity). *Only if* vs *only because* is the same factivity split on the necessary pole.
 
@@ -326,7 +326,7 @@ English *because* and *if* can hide whether you **assert the dependent as a worl
 >
 > "Uzozen walks if it rains." (whether it rains is left open)
 
-English *If he'd left, the door would still be locked* is not this pole. Write bookmark [*as-of*](relations.md#as-of) (`hunem`) plus [RESIDUE](knowing.md#residue) / a [forecast](knowing.md#forecast) (a channel such as CLUES plus `blral`) as needed, with **no** `thohom`. `thohom` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `thohom` plus a **date** in *as-of* `/b/`.
+English *If he'd left, the door would still be locked* is not this pole. Write bookmark [*as-of*](relations.md#as-of) (`hunem`) plus [RESIDUE](notional-standing.md#residue) / a [forecast](knowing.md#forecast) (a channel such as CLUES plus `blral`) as needed, with **no** `thohom`. `thohom` stays speaker-now opportunity (*if it rains*). *If it rains, the Friday tab still stands* may stack both: `thohom` plus a **date** in *as-of* `/b/`.
 
 > `zohol gelewul haram theyem blral hunem blarl zolazun velurul.`
 >
@@ -340,11 +340,11 @@ English *If he'd left, the door would still be locked* is not this pole. Write b
 >
 > "If it rains, the 22 July tab still stands."
 
-**Compare with:** [NOTIONAL](knowing.md#notional) is play (*as if*), not a bookmark now.
+**Compare with:** [NOTIONAL](notional-standing.md#notional) is play (*as if*), not a bookmark now.
 
 ### Remote and unreal conditions {#remote-unreal}
 
-**Needs:** [If](causation.md#if) · [Dependent clauses](dependents.md#dependent-clauses) · [stance numbers](numbers.md#number-as-stance-by-marker) · [NOTIONAL](knowing.md#notional)
+**Needs:** [If](causation.md#if) · [Dependent clauses](dependents.md#dependent-clauses) · [stance numbers](numbers.md#number-as-stance-by-marker) · [NOTIONAL](notional-standing.md#notional)
 
 English *If Olazun swam, Uzozen would walk* (past-tense *if*) says the condition is a long shot. Keep the open pole **`thohom blarl`** and put *unlikely* **`thrul`** inside the dependent clause.
 
@@ -386,7 +386,7 @@ Use **`thahum blarl`** only when Q is also asserted as a world-foundation, what 
 
 ### Arguments: premises, validity, contradiction {#arguments}
 
-**Needs:** [Deduction](knowing.md#deduction) · [Evidence clause](knowing.md#evidence-clause) · [If](causation.md#if) · [Because, iff, and only because](causation.md#only-because) · [Clause joins](joins.md#clause-joins) · [Sentence linkers](dependents.md#sentence-linkers) · [Hold endings (NOTIONAL)](knowing.md#hold-endings-notional)
+**Needs:** [Deduction](knowing.md#deduction) · [Evidence clause](knowing.md#evidence-clause) · [If](causation.md#if) · [Because, iff, and only because](causation.md#only-because) · [Clause joins](joins.md#clause-joins) · [Sentence linkers](dependents.md#sentence-linkers) · [Hold endings (NOTIONAL)](notional-standing.md#hold-endings-notional)
 
 An argument has three parts, and each has its own slot. The **link** between premises and conclusion is a pole (*if*, *if and only if*). **How you know** the link is the channel: DEDUCED (`thanam`) when the conclusion must hold. **Whether you grant the premises** depends on what sits before **`blarl`**: the channel alone asserts them, and a pole between the channel and **`blarl`** does not.
 
@@ -643,16 +643,16 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 *Stop* means the activity ends, finished or not. *Finish* means it reached its end.
 
-**Compare with:** *still* / *no longer* / *not yet* are [phasal words](knowing.md#phasal), not these verbs.
+**Compare with:** *still* / *no longer* / *not yet* are [phasal words](notional-standing.md#phasal), not these verbs.
 
 ## Against a dated now {#dated-now}
 
 ### Residue against a snapshot
 <a id="as-of-standing"></a>
 
-**Needs:** [RESIDUE and FORMER](knowing.md#residue) · [evidentiality](knowing.md#evidentiality) · [*as-of*](relations.md#as-of) · [NOTIONAL](knowing.md#notional)
+**Needs:** [RESIDUE and FORMER](notional-standing.md#residue) · [evidentiality](knowing.md#evidentiality) · [*as-of*](relations.md#as-of) · [NOTIONAL](notional-standing.md#notional)
 
-[RESIDUE](knowing.md#residue) and [FORMER](knowing.md#former-climate) without a hosted pair score against **today’s** books. To score them against a dated now, add [*as-of*](relations.md#as-of). LIVE plus *as-of* puts the camera in that snapshot. MEMORY plus *as-of* is memory of a scene whose internal now is the snapshot. Write **`thevum`** again on the next memory clause; resume the books with **`henar`**. [MAY](knowing.md#may) still evaluates from speech-now.
+[RESIDUE](notional-standing.md#residue) and [FORMER](notional-standing.md#former-climate) without a hosted pair score against **today’s** books. To score them against a dated now, add [*as-of*](relations.md#as-of). LIVE plus *as-of* puts the camera in that snapshot. MEMORY plus *as-of* is memory of a scene whose internal now is the snapshot. Write **`thevum`** again on the next memory clause; resume the books with **`henar`**. [MAY](knowing.md#may) still evaluates from speech-now.
 
 > `zolazun haram henam bl_#22,7 velurul.`
 >
@@ -678,7 +678,7 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 >
 > "As of 22 July, Uzozen's habit of always talking was already in the past."
 
-[NOTIONAL](knowing.md#notional) may stack with *as-of* (*as if, from Friday’s books*). Serious English *if he had* stays bookmark `hunem`, not play.
+[NOTIONAL](notional-standing.md#notional) may stack with *as-of* (*as if, from Friday’s books*). Serious English *if he had* stays bookmark `hunem`, not play.
 
 > `zolazun theyum henam bl_#22,7 velurul.`
 >
@@ -715,7 +715,7 @@ English *start* / *stop* / *finish* doing something are ordinary verbs. Put the 
 
 ### When the stimulus happens {#emotion-stimulus-time}
 
-**Needs:** [Emotion compose](sakes.md#emotion-compose) · [forecasts](knowing.md#forecast) · [evidentiality](knowing.md#evidentiality) · [evidence strength](knowing.md#evidence-strength) · [RESIDUE](knowing.md#residue) · [NOTIONAL](knowing.md#notional)
+**Needs:** [Emotion compose](sakes.md#emotion-compose) · [forecasts](knowing.md#forecast) · [evidentiality](knowing.md#evidentiality) · [evidence strength](knowing.md#evidence-strength) · [RESIDUE](notional-standing.md#residue) · [NOTIONAL](notional-standing.md#notional)
 
 
 A feeling word is how you feel **now**. The stimulus can sit anywhere in time. To place it, write a channel and an offset right after **`goyem`**, as for any [forecast](knowing.md#forecast) or [dated claim](knowing.md#dated-channel): the offset dates the stimulus, and the channel says how you know it.
@@ -744,9 +744,9 @@ Other shapes use forms you already have:
 |----------|-------|---------|
 | coming | channel + `blral` | *dreading*, *hoping* |
 | over | channel + `blrul` | *regretting*, *relieved*, *grieving* |
-| over, still counting | [RESIDUE](knowing.md#residue) `haram` | *still stung, though it's done* |
+| over, still counting | [RESIDUE](notional-standing.md#residue) `haram` | *still stung, though it's done* |
 | recurring | [always](restrictors.md) `hual` | *dreading every dialogue* |
-| did not happen | [NOTIONAL](knowing.md#notional) | *relieved about what didn't happen* |
+| did not happen | [NOTIONAL](notional-standing.md#notional) | *relieved about what didn't happen* |
 
 A [feeling with no object](sakes.md#feeling-no-object) can take a channel and offset too. Then the stimulus is real but unnamed: you know when it is, not what it is.
 
@@ -808,9 +808,9 @@ Put an **act** after the pole (`barl zolazun vezuyel`), not the person. A feelin
 
 ### Curious, confused, bored, awed, surprised {#understanding-feelings}
 
-**Needs:** [Sake inventory](sakes.md#sake-inventory) · [Emotion compose](sakes.md#emotion-compose) · [Feeling with no object](sakes.md#feeling-no-object) · [Mirative](knowing.md#mirative)
+**Needs:** [Sake inventory](sakes.md#sake-inventory) · [Emotion compose](sakes.md#emotion-compose) · [Feeling with no object](sakes.md#feeling-no-object) · [Mirative](notional-standing.md#mirative)
 
-Most of these feelings are about the **understanding** sake: whether something makes sense. Surprise is different. It says the news ran against what you expected, so it is the [mirative](knowing.md#mirative), and a sake word says how the news lands.
+Most of these feelings are about the **understanding** sake: whether something makes sense. Surprise is different. It says the news ran against what you expected, so it is the [mirative](notional-standing.md#mirative), and a sake word says how the news lands.
 
 | English | Agebon | Reading |
 |---------|--------|---------|

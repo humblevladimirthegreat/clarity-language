@@ -98,7 +98,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | resemblance (*walks as / like a duck*) | **`hewom`** + `/b/` | [Simile](relations.md#similative) |
 | how close (*exactly like*, *a bit like*) | **`hewol`** for an exact match (`hewol bludozal`), or `/w/` before **`hewom`**: `wubugom hewom bludozal` (*precisely*), `wamezom hewom bludozal` (*a bit*) | [Exactly like](relations.md#exactly-like), [simile](relations.md#similative), [degree words](clause.md#degree-w) |
 | resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`hewom blarl`** + the event | [Simile](relations.md#similative) |
-| pretense (*as if they walk*) | **NOTIONAL** | [Notional](knowing.md#notional) |
+| pretense (*as if they walk*) | **NOTIONAL** | [Notional](notional-standing.md#notional) |
 | dated books (*as of Friday*) | **`henam` / `hunem`** + `/b/` | [*As-of*](relations.md#as-of) |
 
 ### *since*
@@ -117,7 +117,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | opponent (*fights against a guard*, *Uzozen versus Olazun*) | hook **`uel`** + `/b/` | [Hooks](hooks.md#extra-noun-intermediate) |
 | who is against (*everyone against me*, *someone against the policy*) | hooked join **`…uex…`**: `zuexual bluwon`, `zuexar blonam` | [Hooked joins](hooks.md#hooked-joins-hooks) |
 | a rule, a person's no, or a plan (*against the rules*, *against their will*, *contrary to the plan*, *against my decision*) | hook **`uem`** + the `/th/` stance it goes against | [Contrary to a stance](sakes.md#contrary-to-stance) |
-| what you were told or expected (*contrary to what I was told*, *against my gut*) | hook **`uem`** + a channel | [Channels after `uem`](knowing.md#channel-frame) |
+| what you were told or expected (*contrary to what I was told*, *against my gut*) | hook **`uem`** + a channel | [Channels after `uem`](notional-standing.md#channel-frame) |
 | a noun in the way (*against the rain*, *despite the rain*) | hook **`uem`** or **`hezom`** + `/b/` | [Hooks](hooks.md#extra-noun-intermediate), [dependent clauses](dependents.md#dependent-clauses) |
 | an event in the way (*even though Olazun said no*) | **`hezom blarl`** + the sentence | [Dependent clauses](dependents.md#dependent-clauses) |
 | someone's interest (*against Olazun's interest*) | unmet sake word + `/b/` | [Sakes](sakes.md#sake-changeability) |
@@ -152,7 +152,7 @@ One English word, one row: the form that says it and the section that teaches it
 | *overseas* (*across the water*) | **`ohem`** *across* + the water: `hohem blohalal` | [Locative relations](relations.md#locative-relations) |
 | *bottom* (the low part of a thing) | `zaduhel gobem blahehal` (a down part of the house) | [Of relations](relations.md#of-relations) |
 | *parallel* (*parallel to Olazun*) | the direction, then *like*: `gurem gewom blolazun` | [Simile](relations.md#similative) |
-| *lean* / *tilt* | `vaduhel hruwul` (*almost falls*) | [Already, still, not yet](knowing.md#phasal) |
+| *lean* / *tilt* | `vaduhel hruwul` (*almost falls*) | [Already, still, not yet](notional-standing.md#phasal) |
 | *corner* / *around the corner* | `zadugul` (the corner); `ol badugul` *at the corner*; `hevam bladugul` *around the corner* | [Locative relations](relations.md#locative-relations) |
 | *beyond* / *farther than* | rank on distance: `zahehal zel gazavem` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
 | *versus* / *against* (*Uzozen versus Olazun*) | hook **`uel`** + `/b/` | [Hooks](hooks.md#extra-noun) |
@@ -177,7 +177,7 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 |--------------|------------|-------|
 | *come* (*is coming to you*) | motion verb `vavobel` + hook **`oel`** + `/b/` for the person it heads to | [Here and there](hooks.md#deixis) |
 | *bring* / *take* (*brings me the package*) | `velobal` (*carry*) + object + **`oel`** (toward) or **`ul`** (away from) | [Here and there](hooks.md#deixis) |
-| *arrive* / *reach* (*has arrived at the house*) | **`havom`** (*already*) + `vavobel` + **`oel`** + `/b/` | [Already, still, not yet](knowing.md#phasal) |
+| *arrive* / *reach* (*has arrived at the house*) | **`havom`** (*already*) + `vavobel` + **`oel`** + `/b/` | [Already, still, not yet](notional-standing.md#phasal) |
 | *approach* / *head for* | `vavobel` + **`oel`** + `/b/` (no **`havom`**: still on the way) | [Locative relations](relations.md#locative-relations) |
 | *follow* (*walks behind Olazun*) | manner direction **`hazuhethol`** + `/b/` for whoever leads | [Landmark's own front](roles.md#landmark-facing) |
 

@@ -221,6 +221,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `knowing.md` | Beginner | a café patio |
 | `knowing.md` | Intermediate | a press conference |
 | `knowing.md` | Advanced | a film archive |
+| `notional-standing.md` | Intermediate | a magic show |
 | `roles.md` | Beginner | a construction site |
 | `roles.md` | Intermediate | a harbor |
 | `compounds.md` | Beginner | a hardware store |
@@ -347,13 +348,14 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 15 | `causation.md` | Advanced | — | no Advanced stage | |
 | 16 | `sakes.md` | Intermediate | **exists** | Prescription **`the`** + force; motive **`tho`** + time horizon; which ending table; attachment sites; sake bars (*enough* / *too*) | |
 | 16 | `sakes.md` | Advanced | **exists** | Combined matrices; one boundary trap | — |
-| 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; **NOTIONAL** **`eyu`** + play holds; **RESIDUE** / **FORMER**; MAY vs nearby jobs; **holder** seam (someone else's view); a source you won't name or don't know (`blwoyar` / `blwuyar`) | |
+| 16 | `knowing.md` | Intermediate | **exists** | Evidentiality channels; MAY vs nearby jobs; **holder** seam (someone else's view); a source you won't name or don't know (`blwoyar` / `blwuyar`) | |
 | 16 | `knowing.md` | Advanced | **exists** | Mood on one adjective; dated channel; channels on a generalization | One checkpoint for the whole stage |
 | 16 | `roles.md` | Intermediate | **exists** | Content-rule parts (manner **`h`** pointer or compound); capacity on `/h/` (slot-part compound); viewpoint laterals **`DIR th ANCHOR`**; bare arrow roots = compass; gravity **`ayuhe`/`aduhe`**; name/listener anchor | Prefer `…thazawan` over silent speaker default. **`awa`/`uwo`** only when testing role-anchor. Include at least one bare cardinal, one gravity item, one content part, and one capacity item |
 | 16 | `compounds.md` | Intermediate | **exists** | Greeting bid name **`x`** **`a`/`o`/`e`/`u`** + **-n** on a citation or vocative (presence / one ask / *a few minutes* / passing) | Recycle [greeting](../grammar/word-endings.md#greeting) and [vocative](../grammar/speech-moves.md#vocative). Not ability (`vezuyoxel`). Not values |
 | 16 | `compounds.md` | Advanced | skip | — | Root tails are a memory aid and tail-suffix words are dictionary entries: nothing to build or choose |
 | 16 | `roles.md` | Advanced | — | no Advanced stage | |
 | 17 | `join-across-roles.md` | Intermediate | **exists** | Verb-phrase and clause joins (`vam`, `xam`, sequence `xan`); join-act verbs `van` / `von` / …; join-relations `gan` / `han` / … (unary `/b/`) | No Beginner slot. Recycle = all Beginner + earlier Intermediate (path before 17) |
+| 17 | `notional-standing.md` | Intermediate | **exists** | **MIRATIVE**; **RESIDUE** / **FORMER**; already / still / not yet / no longer; **NOTIONAL** **`eyu`** + play holds; channels as bars; channels after `uem` | No Beginner slot. Recycle = all Beginner + earlier Intermediate including knowing Intermediate (channels, holder) |
 | 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`ogo`** changeability; forecast = evidential + `blral` vs PLAN; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
 | 17 | `intention.md` | Advanced | — | no Advanced stage | |
 | 17 | `sakes.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value) | Recycle values Beginner. |
@@ -396,7 +398,8 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **MAY** **`thomam`** | `knowing.md` Beginner |
 | Role **`waz`/`wad`/`wab` ROOT** | `roles.md` Beginner |
 | Prescription **`the`** / motive **`tho`** (values) | `sakes.md` Intermediate |
-| Evidentiality / NOTIONAL / RESIDUE / FORMER | `knowing.md` Intermediate |
+| Evidentiality / holder | `knowing.md` Intermediate |
+| NOTIONAL / RESIDUE / FORMER / MIRATIVE / phasal | `notional-standing.md` Intermediate |
 | Viewpoint laterals | `roles.md` Intermediate |
 | Capacity on `/h/` | `roles.md` Intermediate |
 | Measure phrases / ranges / percent | `numbers-applied.md` Intermediate |

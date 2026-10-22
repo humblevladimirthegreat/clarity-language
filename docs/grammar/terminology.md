@@ -31,23 +31,23 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **FAWN** | Emotion locus: placating a target | `wawothumaem` | [Sakes](sakes.md#emotion-compose) |
 | **FLOWING** | Emotion motion: steady, a current you can ride | `wawothumem` | [Sakes](sakes.md#emotion-compose) |
 | **FORBID** | Say word answer: no, forbid | `hwavul` | [Sakes](sakes.md#say-words) |
-| **FORMER** | Episode standing: not the climate claimed now | `helam` | [Knowing](knowing.md#residue) |
+| **FORMER** | Episode standing: not the climate claimed now | `helam` | [Notional and standing](notional-standing.md#residue) |
 | **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Sakes](sakes.md#emotion-compose) |
 | **INTUITION** | Evidential: gut sense you cannot fully spell out | `thabom` | [Knowing](knowing.md#evidentiality) |
 | **LIVE** | Evidential: sensed now, by any sense | `thugom` | [Knowing](knowing.md#evidentiality) |
 | **MAY** | Potential mood (*could be*; find out / default / who knows) | `thomam` | [Knowing](knowing.md#may) |
 | **MEMORY** | Evidential: firsthand, remembered (reconstructive) | `thevum` | [Knowing](knowing.md#evidentiality) |
 | **MENTION** | Mention marker: the span is a word or phrase as spelling | `glegel z[udozo] gamezom.` | [Spans](spans.md#mention) |
-| **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themom` | [Knowing](knowing.md#mirative) |
+| **MIRATIVE** | News against expectation (*it turns out*, *to my surprise*) | `themom` | [Notional and standing](notional-standing.md#mirative) |
 | **NAME** | A package titled with **-n** | `zebodol zuyudal zan.` | [Joins](joins.md#named-list) |
-| **NOTIONAL** | As-if / pretense mood | `theyum` | [Knowing](knowing.md#notional) |
+| **NOTIONAL** | As-if / pretense mood | `theyum` | [Notional and standing](notional-standing.md#notional) |
 | **ON-BEHALF** | Emotion locus: felt for someone's sake | `wawothumem` | [Sakes](sakes.md#emotion-compose) |
 | **OPAQUE** | An opaque span: foreign or raw writing | <code>d&lt;kimchi&gt;</code> | [Spans](spans.md#loans) |
 | **PATTERN** | Evidential: from regularity | `thubem` | [Knowing](knowing.md#evidentiality) |
 | **PLAN** | Intention-framing mood | `thagem` | [Intention](intention.md#plan-predict) |
 | **REPORTED** | Evidential: said or written by someone else | `thebam` | [Knowing](knowing.md#evidentiality) |
 | **REQUIRE** | Say word answer: require, ask for (*must*) | `hwavel` | [Sakes](sakes.md#say-words) |
-| **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Knowing](knowing.md#residue) |
+| **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Notional and standing](notional-standing.md#residue) |
 | **RESISTING** | Emotion locus: pushing against a target | `wawothumuer` | [Sakes](sakes.md#emotion-compose) |
 | **SAME** | Identity copula | `gorol` | [Predication](predication.md#identity) |
 | **SCOPE** | Scope island `{ … }` | `{ hegugom zudozol gerulel }` | [Spans](spans.md#scope-islands) |
@@ -381,7 +381,7 @@ A channel, NOTIONAL, or holder that keeps covering your later claims with no cha
 
 Closed `/th/` episode standing: leftover on the tally, or usual weather you are not claiming now. Not past tense.
 
-[Knowing](knowing.md#residue)
+[Notional and standing](notional-standing.md#residue)
 
 ### Extra noun (`/b/`)
 
