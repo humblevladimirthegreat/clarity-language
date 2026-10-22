@@ -364,6 +364,8 @@ English *they walk* does not say whether it was one shared outing. Put **-x** on
 | `zuzozen vezuyolx` | *Uzozen sings jointly* (not a solo) |
 | `zavayal vowurelx` | *the family walks as one unit* |
 
+A `/v/` join word is a verb too, so it takes the same **-x**: `zayan varx.` is *we do something together*, and `zayan valx.` is *we do nothing together*.
+
 **Counts with a set subject:** when a set subject has a counted object, a singular verb gives the count to **each member** (*apiece*). Verb **-x** makes the count the **total** for the shared act.
 
 > `zuzozen zolazun zal vawebol dagozolx gragel.`

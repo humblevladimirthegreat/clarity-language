@@ -103,7 +103,7 @@ function featureConstructions(word: LexWord): string[] {
     if (family.bracket === "<") ids.push("word.family.foreign");
     return ids;
   }
-  if (family.kind === "kindIndefinite") return word.pos === "v" || word.pos === "h" ? [`kindIndefinite.${word.pos}`] : [];
+  if (family.kind === "kindIndefinite") return word.pos && "gvxh".includes(word.pos) ? [`kindIndefinite.${word.pos}`] : [];
   if (family.kind === "hook") return [`hook.${family.form}`];
   if (family.kind === "hookCompound") return [`hook.${family.hook}`];
   if (family.kind === "joinMarker" && !word.overlay) {
@@ -254,7 +254,7 @@ function isExistence(clause: Clause): boolean {
   const universal = first.coord.parts.some(
     (part) =>
       (part.items.length === 0 &&
-        part.join?.family.kind === "joinMarker" &&
+        (part.join?.family.kind === "joinMarker" || part.join?.family.kind === "kindIndefinite") &&
         part.join.family.series === "ua" &&
         (part.join.ending === "l" || part.join.ending === "m")) ||
       isKindReference(part),

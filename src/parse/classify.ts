@@ -587,6 +587,20 @@ function holderSeam(word: MorphWord, tables: ClassifyTables): MorphWord | undefi
 }
 
 /**
+ * A holder host + seam with `w` after it (`theyemwuyar`, `theyemwar`): a kind indefinite or tag in the holder slot. The
+ * seam letter would end a syllable mid-word, so it is never a holder (D-56).
+ */
+export function isHolderSeamW(word: MorphWord, tables: ClassifyTables): boolean {
+  const family = word.family;
+  if (word.pos !== "th" || family.kind !== "content" || family.roots.length !== 1) return false;
+  const root = family.roots[0]!;
+  const match = /^(.+?)([lmr])w[aeou]/.exec(root);
+  if (!match) return false;
+  const row = tables.overlays.get(overlayKey("th", `${match[1]}${match[2]}`));
+  return !!row && HOLDER_HOST_KINDS.has(row.kind);
+}
+
+/**
  * A role pointer in the holder slot (`thunemaxar`, pronouns.md#role-pointers): HOST GRADE + role
  * vowel(s) + `x` + pointer vowel + **-r**. The word grammar reads a single role vowel as an ability
  * shape (`unema` + `x` + `a`) and a stacked one as a pointer on a host.

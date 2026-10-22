@@ -99,9 +99,9 @@ The reply to a fill-ask is the fill as a [citation](../word-endings.md#citation-
 | [When?](../questions.md#when) | `yol har zahelan vowurel.` | *When does Ahelan walk?* | I |
 | [Where?](../questions.md#where) | `yol ol bar zahelan vowurel.` | *Where does Ahelan walk?* | I |
 | [Whose?](../questions.md#whose) | `yol zudozol em bar vowurel.` | *Whose dog walks?* | I |
-| [How?](../questions.md#how) | `yol hewom bar zuzozen vowurel.` | *How does Uzozen walk?* | I |
-| [Why?](../questions.md#why) | `yol thahum bar zuzozen vowurel.` | *Why does Uzozen walk?* | I |
-| [What for?](../questions.md#why) | `yol hovam bar zuzozen vowurel.` | *What does Uzozen walk for?* | I |
+| [How?](../questions.md#how) | `yol hewom blar zuzozen vowurel.` | *How does Uzozen walk?* | I |
+| [Why?](../questions.md#why) | `yol thahum blar zuzozen vowurel.` | *Why does Uzozen walk?* | I |
+| [What for?](../questions.md#why) | `yol hovam blar zuzozen vowurel.` | *What does Uzozen walk for?* | I |
 
 <!-- cheat-sheet: talking -->
 | Blank | Means | Stage |
@@ -109,9 +109,9 @@ The reply to a fill-ask is the fill as a [citation](../word-endings.md#citation-
 | [`gar`](../questions.md#what-kind) / `gor` / `gur` | *what is it like?* / *like anything?* / *what else is it like?* | I |
 | [`ol bar`](../questions.md#where) / `al bar` / `ul bar` / `el bar` | *where (at)?* / *in what?* / *where from?* / *for what?* | I |
 | [`ol bor`](../questions.md#where) / `ol bur` | *anywhere?* / *where else?* | I |
-| [`thahum bar`](../questions.md#why) | *why?* | I |
-| [`hovam bar`](../questions.md#why) | *what for?* | I |
-| [`thohom bar`](../questions.md#why) | *under what condition?* | I |
+| [`thahum blar`](../questions.md#why) | *why?* | I |
+| [`hovam blar`](../questions.md#why) | *what for?* | I |
+| [`thohom blar`](../questions.md#why) | *under what condition?* | I |
 
 ### Fill-ask by vowel and count {#arity}
 
@@ -192,4 +192,4 @@ After your sentence, write `yol` and a polar word as a turn of its own. It asks 
 | `yol` *question* ([asks](../questions.md#question)) | | `?` *unsure voice* ([only sounds unsure](../speech-moves.md#tone-marks)) |
 | `yul` *don't* ([prohibition](../speech-moves.md#speech-act-beginner)) | | `yuel` *no, false* ([answers a claim](../questions.md#polar-stance)) |
 | `yol yael.` *…, right?* ([a tag asks](../questions.md#tags)) | | `yael.` *yes* ([an answer gives](../questions.md#polar-stance)) |
-| `thahum bar` *why?* ([the cause](../questions.md#why)) | | `hewom bar` *like what?* ([a model to resemble](../questions.md#how)) |
+| `thahum blar` *why?* ([the cause](../questions.md#why)) | | `hewom blar` *like what?* ([a model to resemble](../questions.md#how)) |

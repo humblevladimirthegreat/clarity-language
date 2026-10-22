@@ -2131,7 +2131,8 @@ function hostedType(token: IToken, before: IToken[], after: IToken[]): TokenType
   if (token.tokenType === HPlain && before[skipWBack(before, before.length - 1)]?.tokenType === JoinV) return HSharedV;
   if (tokenIs(token, B) && isRankNounJoin(host) && scaleNumberAhead(token)) return BScale;
   const locked = !!(token.payload as LexWord | undefined)?.bl;
-  if (locked && tokenIs(token, B) && (tokenIs(host, H, G, Amount, Factor, HScale, HSharedV, HFrame) || isScopeThoVerb(host))) {
+  // A `bl-` join blank or kind indefinite (`hewom blar`, `thebam blwoyar`) completes its host like a `bl-` noun.
+  if (locked && tokenIs(token, B, JoinB) && (tokenIs(host, H, G, Amount, Factor, HScale, HSharedV, HFrame) || isScopeThoVerb(host))) {
     if (!isScopeThoVerb(host) && joinClosesAhead(after)) return HostedBJoined;
     return (token.payload as LexWord | undefined)?.family.kind === "number" ? HostedBNumber : HostedBNoun;
   }
@@ -2313,7 +2314,7 @@ function buildNpPackage(cst: CstNode): NpPackage {
 
 /** Tag a shared `/ɡ/` / `/h/` digitless `+` right after a rank join as the scale. */
 function tagScale(join: LexWord | undefined, item: GPackage | HUnit): CoordShared {
-  const series = join?.family.kind === "joinMarker" ? join.family.series : "";
+  const series = join?.family.kind === "joinMarker" || join?.family.kind === "kindIndefinite" ? join.family.series : "";
   const { family } = item.word;
   return RANK_SERIES.has(series) && family.kind === "number" && isScaleStem(family.stem) ? { ...item, kind: "scale" } : item;
 }

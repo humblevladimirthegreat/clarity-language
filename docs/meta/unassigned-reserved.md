@@ -181,18 +181,15 @@ Source: [pronouns.md](../grammar/pronouns.md#tag-pronouns)
 
 Source: [joins.md](../grammar/joins.md#kind-indefinites), [questions.md](../grammar/questions.md#four-kinds-of-question), [restrictors.md](../grammar/restrictors.md#always-and-never-h)
 
-- **closed (D-54):** a kind indefinite on `/w/`, `/x/`, or `/y/` (`wwuyar`, `xwuyar`, `ywuyar`). Parser: `kindIndefiniteSlot`.
-- **open:** a kind indefinite on `/ɡ/` or `/th/`, or with `gl-` (`gwuyar`). Adjectives and stances have no kind, and *what kind?* is plain `gar`. Parser: `kindIndefiniteSlot`.
-- **open:** another kind letter on `/v/` or `/h/` (`vwuyar`, `hwuyal`). The slot fixes the kind, so a second letter has no guessable reading. Parser: `kindIndefiniteLetter`.
-- **open:** **-n** on a kind indefinite (`zwuyan`, `zwayuan`), and the stand-in endings (`zwuyarl`). The kind itself is `zuan` + adjective, and no naming job has come up. Parser: `kindIndefiniteEnding`.
-- **open:** a stacked join vowel on **-r** (`zwuyuar`), and on `/h/` any shape beyond the bare restrictors (`hwurol`). The same as a plain join's stacked **-r** and a bare restrictor's empty list. Parser: `kindIndefiniteEnding`.
-- **open:** items before a kind indefinite (`dudozol dwozar`). The knowledge vowel would read naturally (*a certain one of the dogs*), but the kind letter could only repeat or contradict the items' kind, and no reading for a contradiction is guessable. Parser: `kindIndefiniteItems`.
-- **open:** **-x** after **-l** / **-m** (`zweyualx`). An empty set or everyone already covers every member, as the kind word after `ua` takes no **-x**. Parser: `kindIndefinitePlural`.
-- **open:** **-x** on a `/v/` kind indefinite or a `/v/` join **-r** (`vwavarx`, `varx`). On a verb **-x** is joint doing, so *do something together* would be a new job, and none has asked for it. Parser: `kindIndefinitePlural`, `joinPlural`.
-- **open:** **-x** on a plain join **-l** / **-m** / **-n** (`zalx`). The join already closes over every item. Parser: `joinPlural`.
-- **open:** occasion words before an `/h/` kind indefinite (`herulal hwural`). The occasions and the knowledge vowel would both pick the times. Parser: `kindIndefiniteOccasion`.
-- **open:** a kind indefinite in a holder seam (`theyem` + `wuyar`). Holders are people you can name or point back to, and the seam takes a root or pointer.
+- **closed (D-54):** a kind indefinite on `/w/`, `/th/`, `/y/`, as a topic word, or with `gl-` (`wwuyar`, `thwuyar`, `ywuyar`, `glwuyar`). Parser: `kindIndefiniteSlot`.
+- **closed (D-55):** another kind letter on `/v/`, a clause-join `/x/`, or `/h/` (`vwuyar`, `xwuyar`, `hwuyal`). Parser: `kindIndefiniteLetter`.
+- **closed (D-56):** a kind indefinite or tag in a holder seam (`theyemwuyar`, `theyemwar`). Parser: `holderSeamW`.
 - **closed (D-53):** a `u` blank after `yal yol`. Parser: `rhetoricalUnknownBlank`.
+- **open:** **-l** / **-m** on a `/ɡ/` kind indefinite (`gwumal`). A closed or open list of properties of one kind has no guessable reading apart from the plain `/ɡ/` joins. Parser: `kindIndefiniteEnding`.
+- **open:** **-n** on a kind indefinite (`zwuyan`, `zwayuan`), and the stand-in endings (`zwuyarl`). A kind is never unknown or withheld, so only `a` could read on **-n**, and `zuan` + adjective already names the kind; a stand-in fills a clause slot, and a clause has no kind. If **-n** opens, `/y/` + **-n** is the one call with a job (`ywayan` *Somebody! Anyone who can!*), which D-54 would then need to admit. Parser: `kindIndefiniteEnding`.
+- **open:** a stacked join vowel on **-r** (`zwuyuar`), and on `/h/` any shape beyond the bare restrictors (`hwurol`). These follow the plain forms (`zuar`, `hol`): open them together. Parser: `kindIndefiniteEnding`.
+- **open:** **-x** after **-l** / **-m** off `/v/` (`zweyualx`). On an empty set it contradicts the **-l** (*several nobodies*), and on a universal it repeats it. Parser: `kindIndefinitePlural`.
+- **open:** **-x** on a plain join **-l** / **-m** / **-n** off `/v/` (`zalx`, `zanx`). The same as above; a named package with associates has no job yet. Parser: `joinPlural`.
 
 ## Pronouns and plurality
 
@@ -303,7 +300,6 @@ Source: [speech-moves.md](../grammar/speech-moves.md#tone-marks), [intention.md]
 Source: [phonology.md](../grammar/phonology.md)
 
 - **closed ([stacked vowels](design-decisions.md#stacked-vowels)):** reversed vowel stacks (`au`, `ou`, `eu`, `oa`, `ea`, `eo`) and same-vowel pairs. Stacks keep the order **u**, **a**, **o**, **e**, and each reversal is a near twin of a standard stack by ear.
-- **open:** unused onset clusters *gw*, *xw*. No morphology needs them (`vw` and `hw` start the `/v/` and `/h/` kind indefinites).
 
 ## Related meta
 

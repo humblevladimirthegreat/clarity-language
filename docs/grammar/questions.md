@@ -69,7 +69,7 @@ Put the blank **first** in the body, and the other words in their statement orde
 >
 > "What does Uzozen see?"
 
-A blank that completes another word comes first together with that word: *like whom?* is `hewom bar`, so `yol hewom bar zuzozen vowurel.` asks *Whom does Uzozen walk like?*
+A blank that completes another word comes first together with that word: *like whom?* is `hewom blar`, so `yol hewom blar zuzozen vowurel.` asks *Whom does Uzozen walk like?*
 
 In the word-by-word line under an example, a fill-ask blank shows as *wh*, short for whichever question word fits the slot (*who*, *what*, *where*, and so on).
 
@@ -617,7 +617,7 @@ To ask what something is **like** (*What color is it?*, *What kind of dog?*), pu
 | **`gor`** | *Like anything in particular?* |
 | **`gur`** | *What else is it like?* |
 
-**Compare with:** *like what?* is the similative blank, **`hewom bar`**: it asks for a model to resemble, not a property.
+**Compare with:** *like what?* is the similative blank, **`hewom blar`**: it asks for a model to resemble, not a property.
 
 ### When? {#when}
 
@@ -679,9 +679,9 @@ Answer with the hook and the user, as a [citation](word-endings.md#citation-form
 
 To ask *how?*, use the same shape as *where?*: a word that says how the answer relates to the event, then the blank **`blar`**. For manner (*in what way?*), that word is [**`hewom`**](relations.md) *like*, so the question asks *like what?*
 
-> `yol hewom bar zuzozen vowurel.`
+> `yol hewom blar zuzozen vowurel.`
 >
-> y-question | h-like | b-wh | z-Uzozen | v-walk
+> y-question | [h-like | bl-wh] | z-Uzozen | v-walk
 >
 > "How does Uzozen walk?" (*like what?*)
 
@@ -691,24 +691,24 @@ To ask about means (*with what?*), use the *using* hook with the blank.
 
 To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in case*), then the blank **`blar`**. Pick the word for the kind of reason you want.
 
-> `yol thahum bar zuzozen vowurel.`
+> `yol thahum blar zuzozen vowurel.`
 >
-> y-question | th-because | b-wh | z-Uzozen | v-walk
+> y-question | [th-because | bl-wh] | z-Uzozen | v-walk
 >
 > "Why does Uzozen walk?" (*because of what?*)
 
-> `yol hovam bar zuzozen vowurel.`
+> `yol hovam blar zuzozen vowurel.`
 >
-> y-question | h-so-that | b-wh | z-Uzozen | v-walk
+> y-question | [h-so-that | bl-wh] | z-Uzozen | v-walk
 >
 > "What does Uzozen walk for?"
 
 | Agebon | English |
 <!-- cheat-sheet: talking -->
 |--------|---------|
-| **`thahum bar`** | *Why?* (*because of what?*) |
-| **`hovam bar`** | *What for?* (*for what purpose?*) |
-| **`thohom bar`** | *Under what condition?* / *In what case?* |
+| **`thahum blar`** | *Why?* (*because of what?*) |
+| **`hovam blar`** | *What for?* (*for what purpose?*) |
+| **`thohom blar`** | *Under what condition?* / *In what case?* |
 
 ### A blank inside a dependent {#blank-in-dependent}
 
@@ -782,6 +782,18 @@ On `/v/` the blank asks *do what?*, and its kind letter is always `v`.
 > y-question | v-wh.unpicked | z-interlocutors
 >
 > "What shall we do?"
+
+On `/x/` the blank asks *what happened?*, and its kind letter is also always `v`. An `o` blank there is the quiz a parent asks on finding the mess ([what happened](joins.md#kind-indefinite-events)).
+
+> `yol xwovar.`
+>
+> y-question | x-wh.withheld
+>
+> "What happened here?" (I know)
+
+On `/ɡ/` the blank asks *what is it like?* or *what kind?* ([what kind?](#what-kind)), and the kind letter says which kind of answer fits: `yol zuzozen gwuzar.` is *What kind of animal is Uzozen?* Colors are the nature kind (`l`), and an `a` blank asks for a choice: `yol zahehal gwalar.` is *What color shall the house be?* (nothing picked yet).
+
+A blank can also close a list of items. Its knowledge vowel then says who knows which of them is meant: `yol zuzozen zolazun zwoyar dobogal vagowul.` is *Which of you two broke the box? (I know)* ([with items](joins.md#kind-indefinite-items)). With `a` it offers a choice: `yol dududal dugudal dwadar zawan vagedal.` is *Tea or coffee, which will you have?*
 
 Like a join word, a kind indefinite has no stem. The `w` right after the role letter shows it, and the consonant after its first vowel tells it from a [tag](pronouns.md#tag-pronouns).
 
@@ -928,18 +940,18 @@ y-request | v-attest | z-listener . y-question | y-sure
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `yol thahum bar zuzozen vowurel.`
+**1.** `yol thahum blar zuzozen vowurel.`
 
 ::: details Show answer
-y-question | th-because | b-wh | z-Uzozen | v-walk
+y-question | [th-because | bl-wh] | z-Uzozen | v-walk
 
 *Why does Uzozen walk?*
 :::
 
-**2.** `yol hewom bar zahelan vezuyel.`
+**2.** `yol hewom blar zahelan vezuyel.`
 
 ::: details Show answer
-y-question | h-like | b-wh | z-Ahelan | v-tell
+y-question | [h-like | bl-wh] | z-Ahelan | v-tell
 
 *How does Ahelan tell it?* (like what?)
 :::
@@ -952,15 +964,7 @@ y-question | [d-phone | d-any]
 *Any phone?* (name one; any will do)
 :::
 
-**4.** `yol zolazun zal.`
-
-::: details Show answer
-y-question | [z-Olazun | z-and]
-
-*Just Olazun?*
-:::
-
-**5.** `yal yol zar vugol.`
+**4.** `yal yol zar vugol.`
 
 ::: details Show answer
 y-statement | y-question | z-wh | v-attest
@@ -968,12 +972,20 @@ y-statement | y-question | z-wh | v-attest
 *Who attests?* (nobody does)
 :::
 
-**6.** `yol ol bwehar zudozol vezuvol.`
+**5.** `yol ol bwehar zudozol vezuvol.`
 
 ::: details Show answer
 y-question | [at | b-wh.place.shared] | z-dog | v-sleep
 
 *Where does the dog sleep, again?* (we both knew)
+:::
+
+**6.** `yol zuzozen gwuzar.`
+
+::: details Show answer
+y-question | z-Uzozen | g-wh.creature.unknown
+
+*What kind of animal is Uzozen?*
 :::
 
 

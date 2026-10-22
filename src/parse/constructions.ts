@@ -31,7 +31,7 @@ const BAR_READER =
 
 /** A kind indefinite: one word for *someone* / *nobody* / *everyone* of a kind, with who knows which (joins.md#kind-indefinites). */
 const KIND_INDEFINITE_READER =
-  "A word like `z-something.person.unknown` or `z-none.person.shared` is one word for someone / nobody / everyone of a kind. The first label reads as on a bare join word (`something`, `wh`, `none`, `everything`); the middle label is the kind (person, creature, mind, body, doing, place, nature, food, tool, sign, counting, title); the last says who knows which one. On a single one: `.unknown` = a particular one, I don't know which; `.withheld` = I know which but am not saying; `.shared` = the one we both know (from before this talk); `.unpicked` = none picked yet, any that fits. On none / everything it names the set: `.here` = among those in this situation; `.shared` = among those we both know; `.meant` = among the ones I have in mind; `.anywhere` = any at all, anywhere. `-x` = several. `v-` and `h-` forms carry no kind: `v-none.shared` = does nothing we both know of, `h-never.anywhere` = never, at any time at all.";
+  "A word like `z-something.person.unknown` or `z-none.person.shared` is one word for someone / nobody / everyone of a kind. The first label reads as on a bare join word (`something`, `wh`, `none`, `everything`); the middle label is the kind (person, creature, mind, body, doing, place, nature, food, tool, sign, counting, title); the last says who knows which one. On a single one: `.unknown` = a particular one, I don't know which; `.withheld` = I know which but am not saying; `.shared` = the one we both know (from before this talk); `.unpicked` = none picked yet, any that fits. On none / everything it names the set: `.here` = among those in this situation; `.shared` = among those we both know; `.meant` = among the ones I have in mind; `.anywhere` = any at all, anywhere. `-x` = several, but on a `v-` word one act done together (`v-something.unpicked-x` = do something together, nothing picked yet). Items before it narrow it: `[z-X | z-Y | z-something.person.withheld]` = one of X and Y, I know which; `[z-X | z-and.person.shared]` = of everyone we know, just X. A `g-` form is a property of that kind (`g-wh.creature.unknown` = what kind of animal?). `v-`, `x-`, and `h-` forms carry no kind: `v-none.shared` = does nothing we both know of, `x-something.withheld` = something happened (I know what, not saying), `h-never.anywhere` = never, at any time at all; after occasion words `h-only-when.shared` = only on those occasions, among the times we both know.";
 
 /** Shared by every label-scope seam vowel (predication.md#label-scope). */
 const SCOPE_READER =
@@ -467,7 +467,9 @@ export const JOIN_PLURAL_CONSTRUCTIONS = {
 
 /** Kind indefinites on the slots that fix the kind letter (joins.md, restrictors.md). */
 export const KIND_INDEFINITE_CONSTRUCTIONS = {
+  g: { anchor: "questions.md#four-kinds-of-question", summary: "/ɡ/ kind indefinite: some property of a kind, with who knows which" },
   v: { anchor: "joins.md#kind-indefinite-acts", summary: "/v/ kind indefinite: do something / do nothing, with who knows which" },
+  x: { anchor: "joins.md#kind-indefinite-events", summary: "/x/ kind indefinite: something happened / nothing happened, with who knows which" },
   h: { anchor: "restrictors.md#always-and-never-h", summary: "/h/ kind indefinite: never / always / sometime, over which times" },
 } satisfies Record<string, ConstructionEntry>;
 
@@ -741,13 +743,12 @@ export const REJECTIONS = {
   tagPronoun: { anchor: "pronouns.md#tag-pronouns", summary: "a tag names a phrase that is not already a fixed pronoun: never a special (uwon, ewan, ayan, umon), generic, or topic pronoun, or another tag; a resume or role pointer takes one" },
   tagPairAssign: { anchor: "pronouns.md#tag-pairs", summary: "a tag pair (`zwaer`) recalls or shares two tags already assigned; assign each tag on its own (`zudozol zwal zagozol zwel zam`)" },
   tagPlural: { anchor: "pronouns.md#tag-pronouns", summary: "a tag takes -x only on -r or -n (`zwarx`, `zwanx`, A and associates); to tag a group, tag its plural phrase (`zudozolx zwal`)" },
-  kindIndefiniteSlot: { anchor: "joins.md#kind-indefinites", summary: "a kind indefinite fills /z/, /d/, /b/, /v/, or /h/: adjectives, degrees, and stances have no kind, a call or a topic word names its person, and /w/ would double the w" },
-  kindIndefiniteLetter: { anchor: "joins.md#kind-indefinite-acts", summary: "the slot fixes the kind letter: always v on /v/ (`vwuvar`), and always r on /h/ (`hweral`)" },
-  kindIndefiniteEnding: { anchor: "joins.md#kind-indefinites", summary: "a kind indefinite ends like a standalone join: -r after one vowel (…ar / …or / …er / …ur), or -l / -m; on /h/ only the bare restrictors (…al, …am, …ual, …uam, …ar, …or, …ur, …er)" },
-  kindIndefinitePlural: { anchor: "joins.md#kind-indefinites", summary: "a kind indefinite takes -x only after -r on /z/ /d/ /b/ (`zwuyarx`, some people): an empty set or everyone already covers every member, and -x on a verb is joint doing" },
-  kindIndefiniteItems: { anchor: "joins.md#kind-indefinites", summary: "a kind indefinite takes no items before it, since the item already names the kind: *which dog?* is `dudozol dar`" },
-  kindIndefiniteOccasion: { anchor: "restrictors.md#always-and-never-h", summary: "an /h/ kind indefinite takes no occasion words before it: *only when it rains* stays `herulal hal`" },
-  joinPlural: { anchor: "joins.md#unspecified-member-r-phrase", summary: "a join takes -x only after -r on /z/ /d/ /b/ (`zarx`, some ones)" },
+  kindIndefiniteSlot: { anchor: "joins.md#kind-indefinites", summary: "a kind indefinite fills /z/, /d/, /b/, /ɡ/, /v/, /x/, or /h/, never gl-: stances have no kind, a topic word ends in -r only to return to a stem, a call ends in -n, and /w/ would double the w (D-54)" },
+  kindIndefiniteLetter: { anchor: "joins.md#kind-indefinite-acts", summary: "the slot fixes the kind letter: always v on /v/ (`vwuvar`) and on a clause join /x/ (`xwovar`), and always r on /h/ (`hweral`) (D-55)" },
+  kindIndefiniteEnding: { anchor: "joins.md#kind-indefinites", summary: "a kind indefinite ends like a standalone join: -r after one vowel (…ar / …or / …er / …ur), or -l / -m; on /ɡ/ only -r; on /h/ only the bare restrictors (…al, …am, …ual, …uam, …ar, …or, …ur, …er)" },
+  kindIndefinitePlural: { anchor: "joins.md#kind-indefinites", summary: "a kind indefinite takes -x after -r on /z/ /d/ /b/ (`zwuyarx`, some people) or on /v/ (`vwavarx`, one shared act): an empty set or everyone already covers every member" },
+  joinPlural: { anchor: "joins.md#unspecified-member-r-phrase", summary: "a join takes -x after -r on /z/ /d/ /b/ (`zarx`, some ones), or on /v/ for one shared act (`varx`)" },
+  holderSeamW: { anchor: "knowing.md#holder", summary: "a kind indefinite or tag is never a holder: the seam letter before `w` would end a syllable mid-word (D-56); for a holder you don't name, name the kind of person (`theyemeyol`)" },
   numberPlural: { anchor: "numbers-applied.md#plural-labels", summary: "a number takes -x only as a plural label (z_90x)" },
   resumeUnbound: { anchor: "pronouns.md#resume-r", summary: "an -r resume spells an earlier word's whole stem, or a lexicon stem" },
   pointerSlot: { anchor: "pronouns.md#role-pointers", summary: "a role pointer fills /z/, /d/, /b/, a holder seam's holder slot, or a viewpoint lateral's facing anchor" },

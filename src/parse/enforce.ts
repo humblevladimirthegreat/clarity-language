@@ -9,7 +9,7 @@
 import { tokenMatcher, type IToken, type TokenType } from "chevrotain";
 
 import type { ClassifyTables } from "./classify.js";
-import { arrowRoots, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChannel, isStandIn } from "./classify.js";
+import { arrowRoots, isAsOfOverlay, isBarStance, isFrameStance, isGroundsChannel, isHolderSeamW, isStandIn } from "./classify.js";
 import { REJECTIONS, type RejectionId } from "./constructions.js";
 import { isTopicCompound, isTopicSpan, linkerEnglish, topicEffect } from "./linkers.js";
 import { CLOSED } from "../closed-roots.js";
@@ -215,7 +215,6 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
     if (!payload || !isLexWordPayload(payload)) return;
     enforceWord(payload, tables);
     enforceStackedHookR(payload, tokens, i);
-    enforceKindIndefiniteOccasion(payload, tokens, i);
   });
   enforceLocks(markContext(tokens));
 }
@@ -373,6 +372,7 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   }
   if (word.family.kind === "tag") enforceTag(word);
   if (word.family.kind === "kindIndefinite") enforceKindIndefinite(word, word.family);
+  if (isHolderSeamW(word, tables)) throw new ConstructionError("holderSeamW", word.raw);
   enforceJoinPlural(word);
   // The record and scroll roots are no channel: a record is REPORTED, a tale NOTIONAL (knowing.md#evidentiality).
   if (word.pos === "th" && (stemRoot === CLOSED.record || stemRoot === CLOSED.scroll) && word.ending !== "n") {
@@ -832,8 +832,9 @@ function enforceTag(word: LexWord): void {
 }
 
 /**
- * Kind indefinites (joins.md#kind-indefinites): `/z/` `/d/` `/b/` with any kind letter, `/v/` with `v`, `/h/` with `r`
- * (D-54); **-r** after one vowel or **-l** / **-m**, and on `/h/` only the bare restrictors; **-x** only after **-r** on a noun slot.
+ * Kind indefinites (joins.md#kind-indefinites): `/z/` `/d/` `/b/` with any kind letter, `/ɡ/` with any kind letter on
+ * **-r**, `/v/` and `/x/` with `v`, `/h/` with `r` (D-54, D-55); **-r** after one vowel or **-l** / **-m**, and on `/h/` only
+ * the bare restrictors; **-x** after **-r** on a noun slot (a group), or after any ending on `/v/` (one shared act).
  */
 function enforceKindIndefinite(word: LexWord, family: KindIndefiniteFamily): void {
   const pos = word.pos ?? "";
@@ -842,23 +843,25 @@ function enforceKindIndefinite(word: LexWord, family: KindIndefiniteFamily): voi
   if (fixed && family.kindLetter !== fixed) throw new ConstructionError("kindIndefiniteLetter", word.raw);
   const ending = word.ending ?? "";
   const shaped =
-    pos === "h" ? H_SHAPES.has(family.series + ending) : ending === "r" ? ONE_SERIES.has(family.series) : ending === "l" || ending === "m";
+    pos === "h"
+      ? H_SHAPES.has(family.series + ending)
+      : ending === "r"
+        ? ONE_SERIES.has(family.series)
+        : pos !== "g" && (ending === "l" || ending === "m");
   if (!shaped) throw new ConstructionError("kindIndefiniteEnding", word.raw);
-  if (word.plural && (ending !== "r" || fixed)) throw new ConstructionError("kindIndefinitePlural", word.raw);
+  const groups = ending === "r" && (pos === "z" || pos === "d" || pos === "b");
+  if (word.plural && !groups && pos !== "v") throw new ConstructionError("kindIndefinitePlural", word.raw);
 }
 
-/** **-x** on a join only after **-r** on a noun slot: an unspecified group (`zarx`, joins.md#unspecified-member-r-phrase). */
+/**
+ * **-x** on a join: after **-r** on a noun slot, an unspecified group (`zarx`, joins.md#unspecified-member-r-phrase);
+ * on a `/v/` join, one shared act, as on any verb (`zayan varx`, plurality.md#verbs-v).
+ */
 function enforceJoinPlural(word: LexWord): void {
   if (!word.plural || word.family.kind !== "joinMarker") return;
   if (word.reading === "join" && word.ending === "r" && (word.pos === "z" || word.pos === "d" || word.pos === "b")) return;
+  if (word.reading === "join" && word.pos === "v") return;
   throw new ConstructionError("joinPlural", word.raw);
-}
-
-/** An `/h/` kind indefinite covers its own times, so no occasion word comes before it (restrictors.md#always-and-never-h). */
-function enforceKindIndefiniteOccasion(word: LexWord, tokens: IToken[], i: number): void {
-  if (word.family.kind !== "kindIndefinite" || word.pos !== "h") return;
-  const prev = tokenWord(tokens[i - 1]);
-  if (prev?.pos === "h") throw new ConstructionError("kindIndefiniteOccasion", `${prev.raw} ${word.raw}`);
 }
 
 /** After `yal yol` the speaker holds the answer, so no blank says *I don't know which* (questions.md#rhetorical, D-53). */
@@ -1073,7 +1076,7 @@ function rankedUniversalFence(coord: NpCoord): boolean {
   return (
     coord.parts.length === 2 &&
     fence!.items.length === 0 &&
-    fence!.join?.family.kind === "joinMarker" &&
+    (fence!.join?.family.kind === "joinMarker" || fence!.join?.family.kind === "kindIndefinite") &&
     fence!.join.family.series === "ua" &&
     bar!.items.length > 0 &&
     bar!.items.every((item) => item.kind === "bar")
@@ -1086,7 +1089,7 @@ function deniedUniversalFence(coord: NpCoord): boolean {
   return (
     coord.parts.length === 2 &&
     fence!.items.length === 0 &&
-    fence!.join?.family.kind === "joinMarker" &&
+    (fence!.join?.family.kind === "joinMarker" || fence!.join?.family.kind === "kindIndefinite") &&
     fence!.join.family.series === "ua" &&
     denial!.items.length === 0 &&
     denial!.shared.length === 0 &&
@@ -1173,8 +1176,6 @@ export function diagnoseParseError(input: IToken[], error: unknown): void {
       if (!item || !isAny(item, [...slot.heads, slot.join])) throw new ConstructionError("leftFence", before.image);
       throw new ConstructionError("joinlessRun", run);
     }
-    // A kind indefinite already names its kind, so no item goes before it (joins.md#kind-indefinites).
-    if (isAny(before, slot.heads) && tokenWord(tokens[at])?.family.kind === "kindIndefinite") throw new ConstructionError("kindIndefiniteItems", run);
     if (isAny(before, slot.heads)) throw new ConstructionError("joinlessRun", run);
   };
   const slot = PHRASE_SLOTS.find((s) => s.join !== JoinV && failAt > 0 && isAny(tokens[failAt]!, s.heads));

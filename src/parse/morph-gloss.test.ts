@@ -29,6 +29,13 @@ describe("morphGlossLine — kind indefinites (joins.md#kind-indefinites)", () =
   it("reads the join, then the kind, then who knows which one", () => {
     expectLine("zwoyar vezuyel buwon.", "z-something.person.withheld | v-tell | b-speaker");
     expectLine("yol zwoyar dobogal vagowul.", "y-question | z-wh.person.withheld | d-box | v-axe");
+    expectLine("yol zuzozen zolazun zwoyar dobogal vagowul.", "y-question | [z-Uzozen | z-Olazun | z-wh.person.withheld] | d-box | v-axe");
+    expectLine("zuzozen zweyal vowurel.", "[z-Uzozen | z-and.person.shared] | v-walk");
+    expectLine("zawan vebal herulal hweral.", "z-listener | v-hear | h-rain | h-only-when.shared");
+    expectLine("zayan vwavarx.", "z-interlocutors | v-something.unpicked-x");
+    expectLine("yol xwovar.", "y-question | x-wh.withheld");
+    expectLine("yol zuzozen gwuzar.", "y-question | z-Uzozen | g-wh.creature.unknown");
+    expectLine("yol hewom blar zuzozen vowurel.", "y-question | [h-like | bl-wh] | z-Uzozen | v-walk");
     expectLine("yol ol bwehar zayan vagedal.", "y-question | [at | b-wh.place.shared] | z-interlocutors | v-eat");
   });
   it("reads -l / -m over a set, and drops the kind on /v/ and /h/", () => {

@@ -326,7 +326,7 @@ Everyday *in* / *on* / *at* / *from* / *toward* / *through* / *out of* are [extr
 >
 > "Olazun sits between a train and a station."
 
-The `bl-` word after the relation word is **one slot**. A join (`bal`) or a [plural](plurality.md) fills it whole: each item takes `bl-`, the join word does not, and the landmarks do not each need their own relation word. The same holds on a noun:
+The `bl-` word after the relation word is **one slot**. A join (`bal`) or a [plural](plurality.md) fills it whole: each item takes `bl-`, the join word does not, and the landmarks do not each need their own relation word. A join with no items before it is the whole slot, so it takes `bl-` itself (`hewom blar` *like what?*). The same holds on a noun:
 
 > `zuzozen gedam bledavel bluyahel bal vuhohol.`
 >

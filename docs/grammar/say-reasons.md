@@ -104,7 +104,7 @@ English *reason* covers three jobs, and *purpose*, *justify* and *guilty* each s
 | *the faculty of reason* | `zebobom` | *intellect* |
 | *purpose* (the outcome aimed at) | `hovam` + `/b/` | *so that* |
 | *purpose* (what my noun is for) | `g…tho…` after the noun (`gawothom`) | the noun's purpose is this sake |
-| *What is the purpose?* | `hovam bar` | *What for?* |
+| *What is the purpose?* | `hovam blar` | *What for?* |
 | *guilty* / *to blame* | `thahul` + `/b/` | the because pole, the reason broke a norm |
 | *guilty* (the feeling) | a feeling word + **`thahul blarl`** + your own act | the feeling, caused by your act, which broke a norm |
 | *hurt* / *upset* (no fault named) | a feeling word + **`thahum blarl`** + what happened | the feeling and its cause, with no one at fault |

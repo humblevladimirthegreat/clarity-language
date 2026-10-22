@@ -12,11 +12,14 @@ export function kindIndefiniteFamily(word: MorphWord): KindIndefiniteFamily | un
   return word.family.kind === "kindIndefinite" ? word.family : undefined;
 }
 
-/** Slots a kind indefinite fills: the noun slots, where the speaker picks the kind, and `/v/` / `/h/`, where the slot fixes it. */
-export const KIND_INDEFINITE_POS = new Set(["z", "d", "b", "v", "h"]);
+/**
+ * Slots a kind indefinite fills: the noun slots and `/ɡ/`, where the speaker picks the kind, and `/v/` / `/x/` / `/h/`,
+ * where the slot fixes it.
+ */
+export const KIND_INDEFINITE_POS = new Set(["z", "d", "b", "g", "v", "x", "h"]);
 
-/** The kind letter `/v/` and `/h/` fix: doing on `/v/`, counting and time on `/h/`. */
-export const FIXED_KIND_LETTER: Readonly<Record<string, string>> = { v: "v", h: "r" };
+/** The kind letter a slot fixes (D-55): doing on `/v/` and on a clause join `/x/`, counting and time on `/h/`. */
+export const FIXED_KIND_LETTER: Readonly<Record<string, string>> = { v: "v", x: "v", h: "r" };
 
 /** The join vowels **-r** takes: one vowel, as on a join **-r** (`…ar` / `…or` / `…er` / `…ur`). */
 export const ONE_SERIES = new Set(["a", "o", "e", "u"]);

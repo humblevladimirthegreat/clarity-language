@@ -435,6 +435,8 @@ The listener can answer with a time from that shared stretch.
 | `o` | the times I have in mind | **o** ≈ one: the ones I hold |
 | `a` | any time at all | **a** ≈ add: any time could be added |
 
+Like bare `har`, the `r` covers cases as well as times: under `yol`, `hworar` can ask *in what case? (I know)* as well as *when?*.
+
 <!-- cheat-sheet: restrictors-spans -->
 | Agebon | English | Under `yol` |
 |--------|---------|-------------|
@@ -463,7 +465,15 @@ With `u`, `hwural`, `hwurual`, and `hwurar` say what bare `hal`, `hual`, and `ha
 >
 > "You never listen, ever."
 
-An `/h/` kind indefinite takes no occasion words before it: *only when it rains* stays `herulal hal`.
+Occasion words can come before it, as before `hal`. The vowel picks the stretch of time, and the occasions pick the times inside it:
+
+> `zawan vebal herulal hweral.`
+>
+> z-listener | v-hear | h-rain | h-only-when.shared
+>
+> "Of all the times we both know, you only listened when it rained."
+
+On **-r** the vowel says who knows which of the listed occasions is meant (`herulal hworar` *on one of the rainy days; I know which*). Plain `herulal hal` stays the everyday *only when it rains*.
 
 ### Practice {#intermediate-practice}
 

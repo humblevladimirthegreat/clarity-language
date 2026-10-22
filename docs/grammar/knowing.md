@@ -888,7 +888,7 @@ A holder [carries forward](#carry-forward) like a channel. After it, your bare c
 >
 > "I gather Uzozen thinks Olazun left. Olazun is asleep." (the sleeping is Uzozen's view too)
 
-The holder word ends the way a noun for that person would. **-n** is a name. **-r** [resumes](pronouns.md#resume-r) someone already named, which is English *he* / *she* / *they*, and a [role pointer](pronouns.md#role-pointers) on **-r** works too (`theyemaxar`, *I gather the latest doer thinks*). Add [associative **-x**](plurality.md#associative) after the ending for the person and their associates. A kind of person on **-lx** is some people of that kind.
+The holder word ends the way a noun for that person would. **-n** is a name. **-r** [resumes](pronouns.md#resume-r) someone already named, which is English *he* / *she* / *they*, and a [role pointer](pronouns.md#role-pointers) on **-r** works too (`theyemaxar`, *I gather the latest doer thinks*). Add [associative **-x**](plurality.md#associative) after the ending for the person and their associates. A kind of person on **-lx** is some people of that kind. A [tag](pronouns.md#tag-pronouns) or a [kind indefinite](joins.md#kind-indefinites) never goes in the seam, since the seam letter before its `w` would end a syllable mid-word. For a holder you don't name, name the kind of person: `zolazun theyemeyol velurul.` is *I gather someone thinks Olazun left*.
 
 > `zuzozen vowurel. zolazun theyemuzozer velurul.`
 >

@@ -836,9 +836,31 @@ As on `zarx`, **-x** after **-r** makes the unnamed member a group.
 
 #### Where it goes
 
-On `/z/` and `/d/` the word stands where a noun would. On `/b/`, a hook still brings it in, and the kind letter says what the landmark is: `ol bwuyar` is *at someone's*, and `al bwudar` is *in some food*. Without a hook, a plain `/b/` is the recipient, as in `bweyam` above.
+On `/z/` and `/d/` the word stands where a noun would. On `/b/`, a hook still brings it in, and the kind letter says what the landmark is: `ol bwuyar` is *at someone's*, and `al bwudar` is *in some food*. Without a hook, a plain `/b/` is the recipient, as in `bweyam` above. After a word that takes a [`bl-` word](clause.md#extra-nouns), write it with `bl-`: `hewom blwuyar` is *like someone, I don't know who*.
 
-A kind indefinite takes no items before it, because an item already names the kind: *which dog?* is `dudozol dar`. A SHARED `/ɡ/` after it still narrows it.
+A SHARED `/ɡ/` after it still narrows it.
+
+#### With items before it {#kind-indefinite-items}
+
+A kind indefinite closes a list like the join it is built on. On **-r**, the knowledge vowel then says who knows **which of the items** is meant:
+
+> `zuzozen zolazun zwoyar dobogal vagowul.`
+>
+> [z-Uzozen | z-Olazun | z-something.person.withheld] | d-box | v-axe
+>
+> "One of Uzozen and Olazun broke the box." (I know which)
+
+With `a`, none of the items is picked yet: `zuwon dududal dugudal dwadar vagedal.` is *I'll have tea or coffee; I haven't picked.*
+
+On **-l** or **-m**, the items are the whole list inside the set the vowel names:
+
+> `zuzozen zweyal vowurel.`
+>
+> [z-Uzozen | z-and.person.shared] | v-walk
+>
+> "Of everyone we know, only Uzozen walks."
+
+Use the kind letter for the items' kind. It is what the speaker says the items are, so nothing checks it against them. Plain `dudozol dar` (*which dog?*) stays the everyday form; use a kind indefinite when the knowledge vowel matters.
 
 #### Doing (`/v/`) {#kind-indefinite-acts}
 
@@ -863,7 +885,41 @@ On `/v/` the kind letter is always `v` (doing), so only the knowledge vowel is y
 
 *You never do anything* is easy to say in a temper. With `vweval` it becomes a claim about a shared history the listener can check; `vwaval` says out loud that the claim covers everything.
 
-On `/v/` a kind indefinite takes no **-x**: on a verb **-x** is doing it together.
+On a verb, **-x** is one [shared act](plurality.md#verbs-v), and a `/v/` kind indefinite takes it after any ending:
+
+> `zayan vwavarx.`
+>
+> z-interlocutors | v-something.unpicked-x
+>
+> "Let's do something together; nothing picked yet."
+
+> `zayan vwevalx.`
+>
+> z-interlocutors | v-none.shared-x
+>
+> "We do nothing together that we both know of."
+
+#### What happened (`/x/`) {#kind-indefinite-events}
+
+A standalone clause join stands for a clause of its own: `xar` is *something happened* ([clause joins](#clause-joins)). A kind indefinite on `/x/` adds the knowledge vowel. As on `/v/`, the kind letter is always `v`, so only the vowel is your choice.
+
+| Agebon | English |
+|--------|---------|
+| `xwuvar.` | *Something happened; I don't know what.* |
+| `xwovar.` | *Something happened; I know what and am not saying.* |
+| `xwevar.` | *That thing happened, you know the one.* |
+| `xwavar.` | *Something will happen; nothing settled yet.* |
+| `xweval.` | *Nothing happened that we both know of.* |
+
+> `xwovar.`
+>
+> x-something.withheld
+>
+> "Something happened." (I know what, and I'm not saying)
+
+*Something happened at work* can hide whether you know what, or are only uneasy; `xwovar` and `xwuvar` say which. Like `xar`, it can also be one item of a clause list (`zuzozen vowurel xam xwovar.` *Uzozen walks, and something else happened; I know what*).
+
+A topic word never takes this shape: a topic on **-r** [returns](pronouns.md#topic-return) to a stem, and a kind indefinite has none.
 
 ### Exclusivity and denying a whole list
 
@@ -1217,12 +1273,12 @@ z-something.person.unknown | v-see | d-dress
 *Uzozen and Olazun see the ring and the veil, respectively.*
 :::
 
-**6.** `zahelan vwevar.`
+**6.** `zahelan vwevar xam xwovar.`
 
 ::: details Show answer
-z-Ahelan | v-something.shared
+[z-Ahelan | v-something.shared | x-and.open | x-something.withheld]
 
-*Ahelan does that thing, you know the one.*
+*Ahelan does that thing, you know the one, and something else happened too.* (I know what, and I'm not saying)
 :::
 
 #### Pick one {#intermediate-pick-one}
@@ -1305,7 +1361,7 @@ A join has at most two vowels. Which endings it can take depends on its role let
 | `/z/` `/d/` `/b/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**), **-rx** | phrase lists; **-n** is a named package; **-rx** is an [unnamed group](#unspecified-member-r-phrase) |
 | `/w/` | none | not a phrase list: the only `/w/` before a join word is [`wubam`](#respectively), with **-l** or **-m** |
 | `/ɡ/` `/h/` | same series as restrictors allow | [restrictors](restrictors.md#defined-core-full); **-n** forms are [join-relations](join-across-roles.md#join-relations) |
-| `/v/` | **-l** / **-m** / **-r** | parallel **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs) |
+| `/v/` | **-l** / **-m** / **-r**, each with **-x** | **-x** is one [shared act](plurality.md#verbs-v); parallel **-n** forms are [join-act verbs](join-across-roles.md#join-act-verbs) |
 | `/th/` | **-l** / **-m** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | [stance joins](join-across-roles.md#stance-joins) on stance words (*not because…*) |
 | `/x/` | **-l** / **-m** / **-n** / **-r** ( **-r** only on **a** / **o** / **e** / **u**) | between clauses, not after them ([clause joins](#clause-joins)); forms: [Join across roles](join-across-roles.md) |
 
@@ -1322,7 +1378,8 @@ These limits apply to every join.
 | One right-close per flat list | nest as [fence nesting](#fence-nesting) |
 | Shared modifiers | only immediately after each join |
 | Phrase **-r** | only **…ar** / **…or** / **…er** / **…ur**, plus **-x** for a group on `/z/` `/d/` `/b/` |
-| [Kind indefinite](#kind-indefinites) | `/z/` `/d/` `/b/` with any kind letter, `/v/` with `v`, `/h/` with `r`; no items before it; **-x** only after **-r** on `/z/` `/d/` `/b/` |
+| Join **-x** | after **-r** on `/z/` `/d/` `/b/` (a group); after any ending on `/v/` (one shared act) |
+| [Kind indefinite](#kind-indefinites) | `/z/` `/d/` `/b/` with any kind letter, `/ɡ/` with any kind letter on **-r** only, `/v/` and `/x/` with `v`, `/h/` with `r`; **-x** after **-r** on `/z/` `/d/` `/b/`, and after any ending on `/v/` |
 | Verb+object packages | verb-phrase `/v/`; full sentences use `/x/` ([forms](join-across-roles.md)) |
 | Revising one item | in-clause *including* / *rather* / *instead* / *except* are [hooks](hooks.md) |
 | Several manners on `/h/` `/w/` | juxtaposition (`hedurel halozul`) |
