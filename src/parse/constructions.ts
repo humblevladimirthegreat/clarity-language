@@ -567,15 +567,15 @@ export const STAND_IN_BACK_CONSTRUCTIONS: Record<Vowel, ConstructionEntry> = {
   u: { anchor: "dependents.md#stand-in-back", summary: "durth that same don't" },
 };
 
-/** Hook forms (hooks.md). */
+/** Hook forms (hooks.md, discourse-hooks.md). */
 export const HOOK_FORM_CONSTRUCTIONS: Record<ExtraNounHook | "ar" | "er" | "or" | "ur" | "aor" | "aer" | "uor", ConstructionEntry> = {
-  ar: { anchor: "hooks.md#hook-resume", summary: "ar resume hook" },
-  er: { anchor: "hooks.md#hook-resume", summary: "er resume hook" },
-  or: { anchor: "hooks.md#hook-resume", summary: "or resume hook" },
-  ur: { anchor: "hooks.md#hook-resume", summary: "ur resume hook" },
-  aor: { anchor: "hooks.md#hook-resume", summary: "aor resume hook (on it)" },
-  aer: { anchor: "hooks.md#hook-resume", summary: "aer resume hook (with it)" },
-  uor: { anchor: "hooks.md#hook-resume", summary: "uor resume hook (through there)" },
+  ar: { anchor: "discourse-hooks.md#hook-resume", summary: "ar resume hook" },
+  er: { anchor: "discourse-hooks.md#hook-resume", summary: "er resume hook" },
+  or: { anchor: "discourse-hooks.md#hook-resume", summary: "or resume hook" },
+  ur: { anchor: "discourse-hooks.md#hook-resume", summary: "ur resume hook" },
+  aor: { anchor: "discourse-hooks.md#hook-resume", summary: "aor resume hook (on it)" },
+  aer: { anchor: "discourse-hooks.md#hook-resume", summary: "aer resume hook (with it)" },
+  uor: { anchor: "discourse-hooks.md#hook-resume", summary: "uor resume hook (through there)" },
   al: { anchor: "hooks.md#including-am-al", summary: "al including" },
   am: { anchor: "hooks.md#including-am-al", summary: "am including" },
   el: { anchor: "hooks.md#rather-el", summary: "el rather" },
@@ -824,7 +824,7 @@ export const REJECTIONS = {
   landmarkLateralBound: { anchor: "roles.md#landmark-facing", summary: "a landmark lateral (DIR th o) needs its landmark in hosted /b/" },
   asOfIntroduceBound: { anchor: "relations.md#as-of", summary: "an as-of word introduces its bound with a /b/ word" },
   asOfResumeBound: { anchor: "relations.md#as-of", summary: "an as-of resume (-r) takes no /b/" },
-  hookResumeNoun: { anchor: "hooks.md#hook-resume", summary: "a resume hook (-r) points back and takes no noun on its right" },
+  hookResumeNoun: { anchor: "discourse-hooks.md#hook-resume", summary: "a resume hook (-r) points back and takes no noun on its right" },
   asOfPerHost: { anchor: "relations.md#as-of", summary: "a clause takes at most one /h/ and one /th/ as-of pair" },
   asOfOffset: { anchor: "relations.md#as-of", summary: "a signed offset in as-of /b/ goes only on stance as-of (/th/); an event or adjective past needs a channel" },
   intentionHost: { anchor: "intention.md#whose-intention", summary: "WANT and PLAN take no /b/ person and DECISION no /b/ at all: with no holder it is your own; someone else's goes through a holder seam (`theyemuzozen thagem`)" },

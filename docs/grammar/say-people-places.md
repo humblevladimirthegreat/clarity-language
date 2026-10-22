@@ -459,7 +459,7 @@ Many English verbs (*join*, *belong*, *consist*, *replace*, *represent*, *prefer
 
 ### Piece, species, gender, patient, function, size, way {#thing-nouns}
 
-**Needs:** [Of relations](relations.md#of-relations) · [Role compounds](roles.md#role-compounds) · [Universals](joins.md#universals-domains-generics) · [Joins](joins.md) · [Adjectives](clause.md#adjectives-ɡ) · [Equatives](comparatives.md#equatives) · [Adverbs](clause.md#adverbs-h) · [Stacked discourse hooks](hooks.md#stacked-discourse)
+**Needs:** [Of relations](relations.md#of-relations) · [Role compounds](roles.md#role-compounds) · [Universals](joins.md#universals-domains-generics) · [Joins](joins.md) · [Adjectives](clause.md#adjectives-ɡ) · [Equatives](comparatives.md#equatives) · [Adverbs](clause.md#adverbs-h) · [Stacked discourse hooks](discourse-hooks.md#stacked-discourse)
 
 English makes nouns for a part, a kind, a role, and a manner. Agebon has no separate noun for most of them. A part is a relation to its whole, a kind is the classification root, a role is a role compound on the verb, and a manner is an adverb. Pick the job and write that.
 

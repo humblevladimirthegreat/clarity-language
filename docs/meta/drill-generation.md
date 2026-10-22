@@ -202,6 +202,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `hooks.md` | Beginner | a restaurant pass |
 | `hooks.md` | Intermediate | a newsroom |
 | `hooks.md` | Advanced | a ferry slip |
+| `discourse-hooks.md` | Intermediate | a hotel lobby |
 | `restrictors.md` | Beginner | a swimming pool |
 | `restrictors.md` | Intermediate | a mountain trail |
 | `spans.md` | Beginner | a rehearsal |
@@ -339,7 +340,9 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 12 | `questions.md` | Advanced | — | no Advanced stage | |
 | 12 | `fill-ask-roles.md` | Intermediate | **exists** | Fill-ask arity; *what kind* / *when* / *where* / *whose* / *how* / *why*; a blank inside a dependent | No Beginner slot. Recycle = all Beginner + questions Intermediate (polar, tags, `dorl` / `darl`) |
 | 12 | `fill-ask-roles.md` | Advanced | — | no Advanced stage | |
-| 12 | `hooks.md` | Intermediate | **exists** | Ending grids; parallel chains; discourse placements; extra-noun stacks (`aol` / `oel` / `ual` / `uol` / `ael` / `uel`) and extra-noun **-m**; abstract landmarks (`ual baram`); stacked point-back (`aor` / `aer` / `uor`) | |
+| 12 | `hooks.md` | Intermediate | **exists** | Ending grids; extra-noun stacks (`aol` / `oel` / `ual` / `uol` / `ael` / `uel`) and extra-noun **-m**; abstract landmarks (`ual baram`); whose (`em`); detail on the hook (`/w/`); ranges | |
+| 12 | `discourse-hooks.md` | Intermediate | **exists** | Stacked discourse (`ael` / `aol` at the front); somewhere / nowhere / everywhere; here and there; hook resume (`or` / `ar` / `ur` / `er`, stacked `aor` / `aer` / `uor`); parallel chains; discourse placements | No Beginner slot. Recycle = all Beginner + hooks Intermediate (extra-noun stacks, whose, ranges) |
+| 12 | `discourse-hooks.md` | Advanced | — | no Advanced stage | |
 | 12 | `hooks.md` | Advanced | **exists** | Extra-noun **hook compounds** (citation keeps **-l** / **-m**, then the extra-noun hook; lemma is the citation; `/d/` landmark); **hook prefixes** (hook vowels + **`x`** / **`mx`** + stem, on `/ɡ/` `/z/` `/d/` `/b/` `/h/`); **hooked joins** (hook vowels + **`x`** + a join, `bl-` landmark; `/h/` time bounds) | Recycle extra-noun grid and abstract landmarks. Not same-role *including*. Not two-word `vowurel ul …`. Hooked join vs a free hook after the verb (who counts vs where) |
 | 13 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; dependent *when* | |
 | 13 | `restrictors.md` | Advanced | — | no Advanced stage | |
@@ -392,6 +395,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Fill-ask join **-r** (`zar` / `var` / `xar`); polar **`yuel`/`yaol`** as the *system* | `questions.md` Beginner |
 | Fill-ask role blanks (`gar`, `har`, `ol bar`, `em bar`, `hewom blar`, `thahum blar`); blank in a dependent | `fill-ask-roles.md` Intermediate |
 | Topic pronoun **`alon`**; `/x/` introduce / return / clear | `topic.md` Intermediate |
+| Resume hooks (`or` / `ar` / `aor`); stacked discourse (`ael` / `aol` at the front); `ol bar` *somewhere*; `om buwon` *here* | `discourse-hooks.md` Intermediate |
 | Extra-noun hook compounds (`owurelul`) | `hooks.md` Advanced |
 | Hook prefixes (`guexavuvul`, `gamxohalal`) | `hooks.md` Advanced |
 | Hooked joins (`zoxual blahehal`, `huxal blenulul`) | `hooks.md` Advanced |

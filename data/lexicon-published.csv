@@ -889,7 +889,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🖊️,pen,abewe,tool,order,small,commitment,pen ink stays on the page; commitment is a binding promise,,dedicate,intention.md#intermediate-practice
 🖌️,paintbrush,obewe,tool,order,small,artistry,brush paints with flowing strokes; artistry is skilled creative work,,art; paint; illustration; brush; draw; illustrate; stroke,comparatives.md#advanced-practice
 🖍️,crayon,arewe,tool,order,small,boldness,crayon marks with thick color; boldness is strong visible stroke,,nerve,
-📝,memo,ona,title,holds,,policy,memo records a standing decision; policy is a standing rule,,regulation; guideline; law; legal,
+📝,memo,ona,title,holds,,policy,memo records a standing decision; policy is a standing rule,,regulation; guideline; law; legal,hooks.md#intermediate-practice
 🪌,eraser,urewu,tool,takes-away,small,correction,an eraser rubs out a mistake; correction is setting a mistake right,,,word-endings.md#beginner-practice
 💼,briefcase,enoba,body,holds,medium,business,briefcase carries work affairs; business is commercial affairs,z:job,task; affair; enterprise; profession; company,
 📁,folder,ovona,title,holds,medium,,,,,
@@ -954,7 +954,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🩺,stethoscope,ezobe,body,order,medium,diagnosis,stethoscope listens to the body; diagnosis is finding what is wrong,,,
 🩻,x-ray,egobo,body,one,medium,body,an x-ray shows a person inside; the body is the physical frame of a person,,,
 🚪,door,oho,place,one,,opportunity,door opens to what is beyond; opportunity is an opening ahead,v:open,,
-🛗,elevator,ulahe,place,order,big,ascent,an elevator lifts you up through the floors,,,
+🛗,elevator,ulahe,place,order,big,ascent,an elevator lifts you up through the floors,,,discourse-hooks.md#intermediate-practice
 🪞,mirror,ewo,tool,one,,reflection,a mirror throws your own image back at you,,reflect,
 🪟,window,uwoho,place,one,medium,transparency,you can see through a window's clear glass,,clear; glass,
 🛏️,bed,obaho,place,one,big,,,,,word-endings.md#intermediate-practice

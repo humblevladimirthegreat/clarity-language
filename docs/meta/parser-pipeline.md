@@ -276,3 +276,4 @@ The docs site bundles the parser and lexicon search through Vite (`@parse-browse
 | Comparatives / SHARED scale | [comparatives.md](../grammar/comparatives.md) |
 | Closed overlays | [lexicon](../grammar/lexicon.md) |
 | Hooks | [hooks.md](../grammar/hooks.md) |
+| Discourse hooks | [discourse-hooks.md](../grammar/discourse-hooks.md) |

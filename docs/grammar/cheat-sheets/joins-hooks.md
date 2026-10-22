@@ -7,7 +7,7 @@ outline: false
 
 # Joins and hooks cheat sheet {#joins-hooks-cheat-sheet}
 
-A quick look at [joins](../joins.md), [joins across roles](../join-across-roles.md), and [hooks](../hooks.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [joins](../joins.md), [joins across roles](../join-across-roles.md), [hooks](../hooks.md), and [discourse hooks](../discourse-hooks.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## One vowel map {#vowel-map}
 
@@ -127,7 +127,7 @@ A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds a
 | two words in the same role | [same-role](../hooks.md#including) | `zavayal al zuzozen` | *the family, including Uzozen* | B |
 | front of the sentence | [glue to prior talk](../hooks.md#discourse-hooks) | `al zuzozen vowurel` | *Additionally, Uzozen walks* | B |
 | `/b/` right after, no recipient `/b/` right before | [extra noun](../hooks.md#extra-noun) | `zudozol vezuvol al bahehal` | *a dog sleeps in a house* | B |
-| **-r**, nothing on the right | [point back](../hooks.md#hook-resume) | `zolazun vuhohol or` | *Olazun sits there* | I |
+| **-r**, nothing on the right | [point back](../discourse-hooks.md#hook-resume) | `zolazun vuhohol or` | *Olazun sits there* | I |
 | stacked vowel between two same-role words | [range](../hooks.md#ranges) | `zuzozen oel zahelan` | *Uzozen through Ahelan* | I |
 | fused onto a citation | [hook compound](../hooks.md#hook-compounds) | `vowurelul` | *leave* | A |
 | hook vowels, then **`x`** and a stem | [hook prefix](../hooks.md#hook-prefixes) | `guexavuvul` | *anti-fighting* | A |
@@ -143,18 +143,18 @@ A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds a
 | `el` | [*A, or rather B*](../hooks.md#rather) | *In other words, …* | `em` *To put it one way, …* | B |
 | `ol` | [*B instead of A*](../hooks.md#instead) | *Instead, …* / *Actually, …* | `om` *Instead, for instance, …* | B |
 | `ul` | [*A except B*](../hooks.md#except) | *Except, …* | `um` *Except, among other exceptions, …* | B |
-| `ael` | | [*In fact, …*](../hooks.md#stacked-discourse) | `aem` *In fact, and maybe more, …* | I |
-| `aol` | | [*For example, …*](../hooks.md#stacked-discourse) | `aom` *For example, among others, …* | I |
-| `or` | | [*Anyway, …*](../hooks.md#hook-resume) | | I |
-| `er` | | [*As I said, …*](../hooks.md#hook-resume) | | I |
-| `ar` | | [*Going back to that, …*](../hooks.md#hook-resume) | | I |
-| `ur` | | [*Never mind that, …*](../hooks.md#hook-resume) | | I |
+| `ael` | | [*In fact, …*](../discourse-hooks.md#stacked-discourse) | `aem` *In fact, and maybe more, …* | I |
+| `aol` | | [*For example, …*](../discourse-hooks.md#stacked-discourse) | `aom` *For example, among others, …* | I |
+| `or` | | [*Anyway, …*](../discourse-hooks.md#hook-resume) | | I |
+| `er` | | [*As I said, …*](../discourse-hooks.md#hook-resume) | | I |
+| `ar` | | [*Going back to that, …*](../discourse-hooks.md#hook-resume) | | I |
+| `ur` | | [*Never mind that, …*](../discourse-hooks.md#hook-resume) | | I |
 
-More: [parallel chains](../hooks.md#parallel-chains) `zavayal am zuzozen ul zolazun` (each hook applies to A); [detail on the hook](../hooks.md#hook-w) `wemom al` *even*; ranges `ual` *strictly between*, `uel` *outside*, `uar` *someone between*. All Intermediate.
+More: [parallel chains](../discourse-hooks.md#parallel-chains) `zavayal am zuzozen ul zolazun` (each hook applies to A); [detail on the hook](../hooks.md#hook-w) `wemom al` *even*; ranges `ual` *strictly between*, `uel` *outside*, `uar` *someone between*. All Intermediate.
 
 ### Extra nouns {#extra-nouns}
 
-Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting. **-r** drops the landmark and [points back](../hooks.md#hook-resume). Fused onto a citation, the hook makes a [verb](../hooks.md#hook-compounds) (shown from *walk*). Its vowels before **`x`** (or **`mx`** for the **-m** frame) and a stem make a [hook prefix](../hooks.md#hook-prefixes). With an [abstract landmark](../hooks.md#abstract-landmarks) the hook keeps its picture: `al bobowum` *in a crisis*, `ual baram` *out of debt*.
+Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting. **-r** drops the landmark and [points back](../discourse-hooks.md#hook-resume). Fused onto a citation, the hook makes a [verb](../hooks.md#hook-compounds) (shown from *walk*). Its vowels before **`x`** (or **`mx`** for the **-m** frame) and a stem make a [hook prefix](../hooks.md#hook-prefixes). With an [abstract landmark](../hooks.md#abstract-landmarks) the hook keeps its picture: `al bobowum` *in a crisis*, `ual baram` *out of debt*.
 
 | **-l** | **-m** | **-r** | Fused **-l** | Prefix **-l** | Prefix **-m** |
 |--------|--------|--------|--------------|---------------|---------------|
@@ -196,13 +196,13 @@ Role letter, the hook's vowels (**`m`** for its frame, **`r`** to point back), *
 | Agebon | English | Stage |
 |--------|---------|-------|
 | `ul barl` + clause | [*since*](../hooks.md#since) (that happened) | B |
-| `ol bar` | [*somewhere*](../hooks.md#place-indefinites); in a question, *where?* | I |
-| `ol bur` / `ol bal` / `ol bual` | [*somewhere else*](../hooks.md#place-indefinites) / *nowhere* / *everywhere* | I |
+| `ol bar` | [*somewhere*](../discourse-hooks.md#place-indefinites); in a question, *where?* | I |
+| `ol bur` / `ol bal` / `ol bual` | [*somewhere else*](../discourse-hooks.md#place-indefinites) / *nowhere* / *everywhere* | I |
 | `ael bar` (in a question) | [*with what?*](../hooks.md#extra-noun-intermediate) | I |
-| `om buwon` / `om bawan` | [*here*, *this*](../hooks.md#deixis) / *there by you*, *that* | I |
-| `om bayan` / `um bayan` | [*here with us*](../hooks.md#deixis) / *over there* | I |
-| `vavobel oel buwon` | [*comes to me*](../hooks.md#deixis) | I |
-| `velobal dobogal oel buwon` | [*brings me the package*](../hooks.md#deixis) | I |
+| `om buwon` / `om bawan` | [*here*, *this*](../discourse-hooks.md#deixis) / *there by you*, *that* | I |
+| `om bayan` / `um bayan` | [*here with us*](../discourse-hooks.md#deixis) / *over there* | I |
+| `vavobel oel buwon` | [*comes to me*](../discourse-hooks.md#deixis) | I |
+| `velobal dobogal oel buwon` | [*brings me the package*](../discourse-hooks.md#deixis) | I |
 | `zudozol em buwon` | [*my dog*](../hooks.md#genitive) (in my use) | I |
 
 ## Don't mix up {#dont-mix-up}
@@ -216,4 +216,4 @@ Role letter, the hook's vowels (**`m`** for its frame, **`r`** to point back), *
 | hook `oel` *toward X* ([where a path ends](../hooks.md#extra-noun-intermediate)) | | `zael` + X *start with X* ([where it starts](../joins.md#sequence-ae)) |
 | `xan` *and then* ([what happened next](../join-across-roles.md#clause-sequence)) | | `xael` ([the order is part of the claim](../join-across-roles.md#vp-clause-forms): a recipe) |
 | `vun` [*refuses*](../join-across-roles.md#join-act-verbs) | | `vuan` *excludes* |
-| `ol …` *Instead, …* ([replaces the last claim](../hooks.md#discourse-hooks)) | | `or …` *Anyway, …* ([back to the main line](../hooks.md#hook-resume)) |
+| `ol …` *Instead, …* ([replaces the last claim](../hooks.md#discourse-hooks)) | | `or …` *Anyway, …* ([back to the main line](../discourse-hooks.md#hook-resume)) |

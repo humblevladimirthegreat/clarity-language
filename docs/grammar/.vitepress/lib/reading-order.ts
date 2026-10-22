@@ -15,6 +15,7 @@ export const readingOrder = [
   { text: 'Questions', link: '/questions' },
   { text: 'Fill-ask roles', link: '/fill-ask-roles' },
   { text: 'Hooks', link: '/hooks' },
+  { text: 'Discourse hooks', link: '/discourse-hooks' },
   { text: 'Restrictors', link: '/restrictors' },
   { text: 'Relations', link: '/relations' },
   { text: 'Spans', link: '/spans' },

@@ -412,7 +412,7 @@ A role compound names a participant: the doer, what the event acts on or makes, 
 |-----|--------|---------|
 | a kind of tool, place, or time | an ordinary [compound](compounds.md#two-roots-one-word) with a head root: `darayexuwal` (write + tool), `dezuvoxadurel` (sleep + time) | *a writing tool*, *bedtime* |
 | the landmark a clause named | resume its noun: after `ael banewul`, `danewur` | *that knife* |
-| that landmark as a place or means | the hook's own [pointer](hooks.md#hook-resume): `ar` *in there*, `or` *there*, `ur` *from there*, `aer` *with it* | *there*, *with it* |
+| that landmark as a place or means | the hook's own [pointer](discourse-hooks.md#hook-resume): `ar` *in there*, `or` *there*, `ur` *from there*, `aer` *with it* | *there*, *with it* |
 | a landmark nobody named | two sentences: a place exists, and the event happened there | *wherever it happened* |
 | who pays, who it is for | the hook in a clause (`uel` *against*, `el` *for* plus `/b/`), then a resume | *the one it was stolen from* |
 

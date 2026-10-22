@@ -28,6 +28,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `dependents.md` | Next-sentence grammar: continue, stand-ins, subordinators, relative-clause equivalents, linkers. |
 | `relations.md` | Hosted relation catalog: similative, exchange, proxy, of-relations, as-of, social ties. |
 | `hooks.md` | Prefix-less hooks: in-clause, range hooks, discourse glue, extra-noun (and abstract landmarks), hook compounds, hook prefixes, hooked joins. |
+| `discourse-hooks.md` | Stacked discourse, somewhere / nowhere / everywhere, here and there, hook resume, parallel chains, discourse placements. |
 | `restrictors.md` | `/h/` / `/w/` restrictors, habitual. |
 | `joins.md` | Phrase and clause joins, fences, set vs rank, arity, denying a whole list. |
 | `join-across-roles.md` | Joins across roles, join-act verbs, join-relations. |

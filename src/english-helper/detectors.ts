@@ -163,8 +163,8 @@ export const HOOK_LINKS = {
   /** A hook right after a subject or object can describe that noun. */
   onNoun: ["relations.md#locative-relations"],
   fromTo: ["numbers-applied.md#time", "relations.md#locative-relations"],
-  resume: ["hooks.md#hook-resume"],
-  blank: ["fill-ask-roles.md#where", "hooks.md#place-indefinites"],
+  resume: ["discourse-hooks.md#hook-resume"],
+  blank: ["fill-ask-roles.md#where", "discourse-hooks.md#place-indefinites"],
   /** *everyone at the house*: the hook bounds the join's set. */
   hookedJoin: ["hooks.md#hooked-joins"],
   /** *never since …*, *always until …*: the hook bounds a restrictor's times. */

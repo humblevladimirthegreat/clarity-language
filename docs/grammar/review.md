@@ -627,6 +627,18 @@ z-Olazun | th-NOTIONAL | v-walk
 **Rule:** [Hold endings (NOTIONAL)](notional-standing.md#hold-endings-notional)
 :::
 
+**10.** *Anyway, Ahelan walks.* `or zahelan vowurel.` or `ol zahelan vowurel.`
+
+::: details Show answer
+`or zahelan vowurel.`
+
+anyway | z-Ahelan | v-walk
+
+**`or`** goes back to the main line; **`ol`** would replace the last claim (*Instead*).
+
+**Rule:** [Point back](discourse-hooks.md#hook-resume)
+:::
+
 #### What changes {#intermediate-what-changes}
 
 **1.** `zolazun vavuvul hanurul hul.` / `zolazun vavuvul hanurul hual.`

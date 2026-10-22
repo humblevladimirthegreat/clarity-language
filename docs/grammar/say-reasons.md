@@ -6,7 +6,7 @@ Recipes for English *because* / *if* / *would have*, habits, *start* / *stop* do
 
 ### English → Agebon {#english-cues}
 
-**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Contrary to a stance](sakes.md#contrary-to-stance) · [Continue](dependents.md#continue-x) · [Sentence linkers](dependents.md#sentence-linkers) · [Stacked discourse hooks](hooks.md#stacked-discourse) · [Because](causation.md#only-because) · [Point back](hooks.md#hook-resume) · [Clause sequence](join-across-roles.md#clause-sequence)
+**Needs:** [Dependent clauses](dependents.md#dependent-clauses) · [Contrary to a stance](sakes.md#contrary-to-stance) · [Continue](dependents.md#continue-x) · [Sentence linkers](dependents.md#sentence-linkers) · [Stacked discourse hooks](discourse-hooks.md#stacked-discourse) · [Because](causation.md#only-because) · [Point back](discourse-hooks.md#hook-resume) · [Clause sequence](join-across-roles.md#clause-sequence)
 
 Time and discourse dependents use the same **`blarl`** hang as *if* / *because*. Discourse glue after a finished sentence is `/x/` continue, not a pole root.
 
@@ -28,11 +28,11 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 | *not because* (clause) | **`thahum thul blarl`** ([stance join before `blarl`](join-across-roles.md#stance-join-before-barl)) |
 | *however* / *meanwhile* (discourse) | **`xezom`** / **`xegorem`** |
 | *regardless of* (NP) | same **`hezom`** + `/b/` **noun** as *despite* |
-| *anyway* / *anyhow* (back to the main line) | the resume hook **`or …`** ([point back](hooks.md#hook-resume)) |
+| *anyway* / *anyhow* (back to the main line) | the resume hook **`or …`** ([point back](discourse-hooks.md#hook-resume)) |
 | *otherwise* / *or else* (failing that) | **`xon`** between the clauses ([clause sequence](join-across-roles.md#clause-sequence)) |
 | *nevertheless* / *nonetheless* (discourse) | **`xezom`** after the finished claim; inside one sentence, **`hezom blarl`** |
 | *whereas* (two claims set against each other) | **`xezom`** before the second claim, or **`hezom blarl`** inside one sentence |
-| *moreover* / *furthermore* (discourse) | **`ael …`** opens the sentence that goes further; **`al …`** adds a separate point ([stacked discourse hooks](hooks.md#stacked-discourse)) |
+| *moreover* / *furthermore* (discourse) | **`ael …`** opens the sentence that goes further; **`al …`** adds a separate point ([stacked discourse hooks](discourse-hooks.md#stacked-discourse)) |
 
 ### Obviously, apparently, perhaps, guess, assume {#stance-adverbs}
 

@@ -132,8 +132,8 @@ One English word, one row: the form that says it and the section that teaches it
 |--------------|------------|-------|
 | *in* / *into* / *inside* / *within* / *aboard* (*runs into a train*, *sits inside the house*) | hook **`al`** + `/b/`; the verb says whether anything moves; leave out the `/b/` when the place is clear (*went aboard*) | [Locative relations](relations.md#locative-relations) |
 | *on* / *onto* / *upon* (*sits on a chair*, *climbs onto the table*) | hook **`aol`** + `/b/`; the verb says whether anything moves | [Hooks](hooks.md#extra-noun) |
-| *on it* (*sits on it too*) | resume hook **`aor`** | [Point back](hooks.md#hook-resume) |
-| *beside* / *next to* / *nearby* (*sleeps near me*) | hook **`om`** + `/b/` | [Hooks](hooks.md#extra-noun), [here and there](hooks.md#deixis) |
+| *on it* (*sits on it too*) | resume hook **`aor`** | [Point back](discourse-hooks.md#hook-resume) |
+| *beside* / *next to* / *nearby* (*sleeps near me*) | hook **`om`** + `/b/` | [Hooks](hooks.md#extra-noun), [here and there](discourse-hooks.md#deixis) |
 | *among* / *amid* (*sits among the guards*) | hook **`am`** + `/b/` | [Hooks](hooks.md#extra-noun-intermediate) |
 | *over* (*a cloth over the table*: the landmark's face as the setting) | hook **`aom`** + `/b/`; plain height (*above the table*) is gravity **`hayuhel`** | [Hooks](hooks.md#extra-noun-intermediate), [Gravity](roles.md#gravity) |
 | *under* / *below* / *beneath* / *underneath* (*sleeps under the tree*) | gravity down **`haduhel`** (on a noun, **`gaduhel`**) + `/b/` | [Gravity](roles.md#gravity) |
@@ -142,13 +142,13 @@ One English word, one row: the form that says it and the section that teaches it
 | *with* / *alongside* / *along with* (*runs with Olazun*) | **`han`** + `/b/` | [Join-relations](join-across-roles.md#join-relations) |
 | *without* / *apart from* (*walks apart from the house*) | **`huan`** + `/b/` | [Join-relations](join-across-roles.md#join-relations) |
 | *via* / *by way of* / *through* / *along* (*goes via the station*, *walks along the road*) | hook **`uol`** + `/b/` (**`uom`** for a setting) | [Hooks](hooks.md#extra-noun) |
-| *through there* | resume hook **`uor`** | [Point back](hooks.md#hook-resume) |
-| *with it* (the same tool) | resume hook **`aer`** | [Point back](hooks.md#hook-resume) |
+| *through there* | resume hook **`uor`** | [Point back](discourse-hooks.md#hook-resume) |
+| *with it* (the same tool) | resume hook **`aer`** | [Point back](discourse-hooks.md#hook-resume) |
 | *off* / *away from* / *out of* (*walks off the road*) | hook **`ul`** + `/b/` | [Hooks](hooks.md#extra-noun) |
 | *off* (switched off, disconnected) | `govugul` (*disconnection*, as an adjective) | [Adjectives](clause.md#adjectives-ɡ) |
 | *outside* / *external* / *outdoors* (*sits outside the house*) | hook **`al`** + the landmark + the join **`bul`** (*in, not the house*): `al bahehal bul` | [Hooks](hooks.md#extra-noun), [negation](joins.md#negation-u) |
-| *throughout* / *all over* (*walks throughout the house*) | **`ol bual`** *everywhere*, then the landmark's hook: `ol bual al bahehal` | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites) |
-| *abroad* (*in another country*) | **`ol bahal bur`** (the kind *country*, then *some other one*) | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites) |
+| *throughout* / *all over* (*walks throughout the house*) | **`ol bual`** *everywhere*, then the landmark's hook: `ol bual al bahehal` | [Somewhere, nowhere, everywhere](discourse-hooks.md#place-indefinites) |
+| *abroad* (*in another country*) | **`ol bahal bur`** (the kind *country*, then *some other one*) | [Somewhere, nowhere, everywhere](discourse-hooks.md#place-indefinites) |
 | *overseas* (*across the water*) | **`ohem`** *across* + the water: `hohem blohalal` | [Locative relations](relations.md#locative-relations) |
 | *bottom* (the low part of a thing) | `zaduhel gobem blahehal` (a down part of the house) | [Of relations](relations.md#of-relations) |
 | *parallel* (*parallel to Olazun*) | the direction, then *like*: `gurem gewom blolazun` | [Simile](relations.md#similative) |
@@ -156,8 +156,8 @@ One English word, one row: the form that says it and the section that teaches it
 | *corner* / *around the corner* | `zadugul` (the corner); `ol badugul` *at the corner*; `hevam bladugul` *around the corner* | [Locative relations](relations.md#locative-relations) |
 | *beyond* / *farther than* | rank on distance: `zahehal zel gazavem` (farther than the house) | [Bar words](say-amounts.md#bar-words) |
 | *versus* / *against* (*Uzozen versus Olazun*) | hook **`uel`** + `/b/` | [Hooks](hooks.md#extra-noun) |
-| *somewhere* / *nowhere* / *everywhere* / *elsewhere* | **`ol bar`** / **`ol bal`** / **`ol bual`** / **`ol bur`** | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites) |
-| *anywhere* (any place will do) / *not … anywhere* | **`ol bor`** (*at any one*); with a denial, **`ol bal`** (*nowhere*) | [Somewhere, nowhere, everywhere](hooks.md#place-indefinites), [unspecified member](joins.md#unspecified-member-r-phrase) |
+| *somewhere* / *nowhere* / *everywhere* / *elsewhere* | **`ol bar`** / **`ol bal`** / **`ol bual`** / **`ol bur`** | [Somewhere, nowhere, everywhere](discourse-hooks.md#place-indefinites) |
+| *anywhere* (any place will do) / *not … anywhere* | **`ol bor`** (*at any one*); with a denial, **`ol bal`** (*nowhere*) | [Somewhere, nowhere, everywhere](discourse-hooks.md#place-indefinites), [unspecified member](joins.md#unspecified-member-r-phrase) |
 
 ### Including, except, instead {#same-slot}
 
@@ -175,8 +175,8 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
-| *come* (*is coming to you*) | motion verb `vavobel` + hook **`oel`** + `/b/` for the person it heads to | [Here and there](hooks.md#deixis) |
-| *bring* / *take* (*brings me the package*) | `velobal` (*carry*) + object + **`oel`** (toward) or **`ul`** (away from) | [Here and there](hooks.md#deixis) |
+| *come* (*is coming to you*) | motion verb `vavobel` + hook **`oel`** + `/b/` for the person it heads to | [Here and there](discourse-hooks.md#deixis) |
+| *bring* / *take* (*brings me the package*) | `velobal` (*carry*) + object + **`oel`** (toward) or **`ul`** (away from) | [Here and there](discourse-hooks.md#deixis) |
 | *arrive* / *reach* (*has arrived at the house*) | **`havom`** (*already*) + `vavobel` + **`oel`** + `/b/` | [Already, still, not yet](notional-standing.md#phasal) |
 | *approach* / *head for* | `vavobel` + **`oel`** + `/b/` (no **`havom`**: still on the way) | [Locative relations](relations.md#locative-relations) |
 | *follow* (*walks behind Olazun*) | manner direction **`hazuhethol`** + `/b/` for whoever leads | [Landmark's own front](roles.md#landmark-facing) |
@@ -324,7 +324,7 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 | *now, about the word “udozo”* | `glegel x[udozo]` | [Topic](topic.md#topic), [mention](spans.md#mention) |
 | *now, about Enuron Olazun* (the work) | `x@[enuron olazun]` | [Topic](topic.md#topic), [cite](spans.md#writing) |
 | *back to Uzozen*, *as I was saying about Uzozen* | `/x/` + whole stem + **-r**: **`xuzozer`** | [Return](topic.md#topic-return) |
-| *anyway, Uzozen …* (after a side topic) | **`or xuzozer …`** | [Return](topic.md#topic-return), [resume hooks](hooks.md#hook-resume) |
+| *anyway, Uzozen …* (after a side topic) | **`or xuzozer …`** | [Return](topic.md#topic-return), [resume hooks](discourse-hooks.md#hook-resume) |
 | *what are we talking about?* | **`yol zar gahugem.`** | [Asking about the topic](topic.md#topic-question) |
 | *one*, generic *you*, *people* (in general) | **`eyon`** | [Generic pronoun](pronouns.md#generic-pronoun) |
 | *the latter* / *the former* (of two just named in the same role) | role pointer **`zwazar`** (*the latter*) / **`zwazor`** (*the other one*); to keep two apart for longer, tag them when you name them (`zudozol zwal`, then `zwar`) | [Role pointers](pronouns.md#role-pointers), [tag pronouns](pronouns.md#tag-pronouns) |
