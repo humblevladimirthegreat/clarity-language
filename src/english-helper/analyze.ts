@@ -13,7 +13,7 @@ import { BANDS } from "../lint/learning-order.js";
 import { markerToSpeech, digitsToSyllables } from "../tts/numbers.js";
 import { grammarPath, matchCues, resolveLink, type CueIndex, type GrammarJob } from "./cues.js";
 import type { CompoundRow } from "../lexicon-compounds.js";
-import { COMPOUND_LINKS, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
+import { BOUNDABLE_JOINS, BOUNDABLE_RESTRICTORS, COMPOUND_LINKS, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
 import { lookupLexicon, rootsByForm, sideEnding, type LexiconIndex, type LexiconSuggestion } from "./lexicon.js";
 import { doerVerb, tagEnglish, type ClauseFeatures, type TaggedTerm, type WordClass } from "./tag.js";
 import { lookupRoute, lookupWordnet, senseSuggestions, type RouteClass, type WordnetIndex, type WordnetPos } from "./wordnet-index.js";
@@ -176,6 +176,16 @@ function classRole(terms: readonly TaggedTerm[], i: number, outer: readonly Tagg
       j = same;
       continue;
     }
+    if (p.cls === "preposition") return "b";
+    if (p.cls === "verb" || p.cls === "auxiliary" || p.cls === "modal") return "d";
+  }
+  return "z";
+}
+
+/** A join word's role letter by what comes before it: after a preposition `/b/`, after a verb `/d/`, else `/z/`. */
+function joinRole(terms: readonly TaggedTerm[], i: number): string {
+  for (let j = i - 1; j >= 0; j--) {
+    const p = terms[j]!;
     if (p.cls === "preposition") return "b";
     if (p.cls === "verb" || p.cls === "auxiliary" || p.cls === "modal") return "d";
   }
@@ -601,6 +611,8 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
           const left =
             inClause !== undefined ? { text: terms[inClause]!.text, role: roleOf(inClause) } : outerLeft !== undefined ? { text: outer[outerLeft]!.text, role: classRole(outer, outerLeft) } : undefined;
           const before = terms[i - 1]?.cls === "noun" ? i - 1 : undefined;
+          const bounds = terms[i - 1] && BOUNDABLE_JOINS.has(terms[i - 1]!.normal) ? { word: terms[i - 1]!.normal, role: joinRole(terms, i - 1) } : undefined;
+          const restrictor = terms.slice(0, i).find((p) => BOUNDABLE_RESTRICTORS.has(p.normal))?.normal;
           const hits = detectHook({
             word: hookWord,
             next: terms[end],
@@ -609,6 +621,8 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
             afterFrom: terms.slice(0, i).some((p) => p.normal === "from" && p.cls === "preposition"),
             stranded: clause.features.question && end === terms.length,
             hook: suggestions.some((s) => (s.kind === "job" || s.kind === "entry") && !!hookHead(s.form, s.link)),
+            ...(bounds ? { bounds } : {}),
+            ...(restrictor ? { restrictor } : {}),
           });
           if (!suggestions.length && nounFollows(terms, end)) hits.push(extraNounHook(hookWord));
           suggestions.push(...hits.flatMap((d) => filterDetector(data, d, stage) ?? []));

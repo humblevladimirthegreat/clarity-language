@@ -108,12 +108,14 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | from a time on (*has sat since the storm*) | hook **`ul`** (*from*) + the time in `/b/` | [Since](hooks.md#since) |
 | from an event on (*since Olazun fell asleep*) | **`ul barl`** + the sentence | [Since](hooks.md#since) |
 | reason (*since Olazun walks*) | **`thahum blarl`** | [Because](causation.md#because) |
+| *never since …* / *not once since …* (over the stretch since then) | **`huxal`** + the time: `huxal blenulul`; **`huxal blarl`** + the sentence | [Bounding a time](hooks.md#hooked-joins-time), [bounded by a clause](hooks.md#hooked-joins-clause) |
 
 ### *against*
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
 | opponent (*fights against a guard*, *Uzozen versus Olazun*) | hook **`uel`** + `/b/` | [Hooks](hooks.md#extra-noun-intermediate) |
+| who is against (*everyone against me*, *someone against the policy*) | hooked join **`…uex…`**: `zuexual bluwon`, `zuexar blonam` | [Hooked joins](hooks.md#hooked-joins-hooks) |
 | a rule, a person's no, or a plan (*against the rules*, *against their will*, *contrary to the plan*, *against my decision*) | hook **`uem`** + the `/th/` stance it goes against | [Contrary to a stance](sakes.md#contrary-to-stance) |
 | what you were told or expected (*contrary to what I was told*, *against my gut*) | hook **`uem`** + a channel | [Channels after `uem`](knowing.md#channel-frame) |
 | a noun in the way (*against the rain*, *despite the rain*) | hook **`uem`** or **`hezom`** + `/b/` | [Hooks](hooks.md#extra-noun-intermediate), [dependent clauses](dependents.md#dependent-clauses) |
@@ -198,12 +200,16 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 | *a certain someone* / *someone I won't name* | **`zar`**, then *I know who*: `zuwon vanam dorl zar.` | [Unspecified member](joins.md#unspecified-member-r-phrase), [dependent clauses](dependents.md#dependent-clauses) |
 | *someone, I don't know who* | **`zar`**, then `zuwon vanam vul dorl zar.` | [Unspecified member](joins.md#unspecified-member-r-phrase), [dependent clauses](dependents.md#dependent-clauses) |
 | *you know the one* / *that person* (we both know) | **-r** with nothing earlier: `zeyor` | [Resume](pronouns.md#resume-r) |
-| *everyone here* | **`zual geyol`** | [Universals](joins.md#universals-domains-generics) |
+| *everyone here* | **`zual geyol`**; near me, **`zomxual bluwon`** | [Universals](joins.md#universals-domains-generics), [hooked joins](hooks.md#hooked-joins-hooks) |
+| *everyone at the house* / *someone at the office* (who counts, not where it happens) | hooked join: **`zoxual blahehal`** / **`zoxar blovahal`** | [Hooked joins](hooks.md#hooked-joins) |
+| *anything for me?* / *something for me* | **`yol dexar bluwon.`** / **`dexar bluwon`** | [Hooked joins](hooks.md#hooked-joins-endings) |
+| *everyone there* (the place just named) | **`zorxual`** | [Point back](hooks.md#hooked-joins-point-back) |
 | *everyone we know* / *nobody we know* | **`zual gwodanam blayan`** / **`zal gwodanam blayan`** | [Every and none, by set](joins.md#kind-domains) |
 | *everyone in the family* / *everyone from the town* | **`zual gobem blavayal`** / **`zual gaham blahaham`** | [Of relations](relations.md#of-relations) |
 | *people in general* | **`zuam geyol`**, or **`eyon`** | [People in general](joins.md#generic-neighbors) |
 | *according to someone* (a source you won't name / don't know) | **`thebam blumon`**, then `zuwon vanam dorl zar.` / `zuwon vanam vul dorl zar.` | [Source](knowing.md#source) |
 | *never* / *always*, in the times we both know | **`hal thevumayan`** / **`hual thevumayan`** | [Holder](knowing.md#holder) |
+| *never since …* / *always, until …* / *always around …* (a stretch you name) | **`huxal`** / **`hoexual`** / **`homxual`** + the time: `hoexual blenulul` | [Bounding a time](hooks.md#hooked-joins-time) |
 | *where was it again?* (remind me) | MEMORY on the question: `yol ol bar zayan thevum vagedal.` | [Live vs memory](knowing.md#live-vs-memory) |
 | *where shall we …?* / *what shall we do?* (a choice) | PLAN on the question: `yol ol bar zayan thagem vagedal.`, `yol var zayan thagem.` | [Plan](intention.md#plan) |
 

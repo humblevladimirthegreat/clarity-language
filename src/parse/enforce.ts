@@ -68,7 +68,7 @@ import {
 } from "./tokens.js";
 import { doubledVerbSlot } from "./verb-items.js";
 import { isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, visitUnit, vpUnitLists, type AstNode, type Visitor } from "./ast-walk.js";
-import { forcePairKind, KIND_SERIES, RANK_SERIES } from "./series.js";
+import { forcePairKind, joinHook, KIND_SERIES, POINT_BACK_HOOKS, RANK_SERIES, TIME_HOOKS, TIME_JOINS } from "./series.js";
 import type {
   AnaphorBind,
   Clause,
@@ -114,6 +114,35 @@ const ROLE_COMPOUND_POS = new Set(["z", "d", "b", "g", "h", "x", "y"]);
 const HOOK_PREFIX_POS = new Set(["z", "d", "b", "g", "h"]);
 /** Ability goes on a verb or a property (intention.md#ability). */
 const ABILITY_POS = new Set(["g", "v"]);
+/** A hooked join bounds a set of participants, or the times a restrictor covers (hooks.md#hooked-joins). */
+const HOOKED_JOIN_POS = new Set(["z", "d", "b", "h"]);
+
+/**
+ * A hooked join goes on `/z/`, `/d/`, `/b/` or `/h/`, never hosted (hooks.md#hooked-joins). Its point-back is a hook
+ * that points back on its own. On `/h/` the join is a bare restrictor and the hook one with a time reading.
+ */
+function enforceHookedJoinWord(word: LexWord): void {
+  const hook = joinHook(word);
+  if (!hook) return;
+  if (!word.pos || !HOOKED_JOIN_POS.has(word.pos) || word.bl) throw new ConstructionError("hookedJoinSlot", word.raw);
+  if (hook.endsWith("r") && !POINT_BACK_HOOKS.has(hook)) throw new ConstructionError("hookedJoinPointBack", word.raw);
+  if (word.pos !== "h") return;
+  if (word.reading !== "restrictor" || !TIME_JOINS.has(series(word)! + word.ending)) throw new ConstructionError("hookedJoinRestrictor", word.raw);
+  if (!TIME_HOOKS.has(hook)) throw new ConstructionError("hookedJoinTime", word.raw);
+}
+
+/** A hooked join's landmark: the `bl-` word after hook **-l** or **-m**, and none after point-back **-r** (hooks.md#hooked-joins). */
+function enforceHookedJoinLandmark(join: LexWord, landmark: LexWord | undefined): void {
+  const hook = joinHook(join);
+  if (!hook) return;
+  if (hook.endsWith("r")) {
+    if (landmark) throw new ConstructionError("hookedJoinPointBackLandmark", `${join.raw} ${landmark.raw}`);
+    return;
+  }
+  if (!landmark) throw new ConstructionError("hookedJoinLandmark", join.raw);
+  // Only an `/h/` hooked join takes a clause (hooks.md#hooked-joins-clause).
+  if (join.pos !== "h" && isStandIn(landmark)) throw new ConstructionError("hookedJoinClause", `${join.raw} ${landmark.raw}`);
+}
 
 function series(word: LexWord | undefined): string | undefined {
   return word?.family.kind === "joinMarker" ? word.family.series : undefined;
@@ -223,13 +252,17 @@ export function enforceTokens(tokens: IToken[], tables: ClassifyTables): void {
 }
 
 /**
- * A `bl-` word completes the `/ɡ/`, `/h/` or `/th/` word right before it, so it needs that host; a plain `/b/` there
- * is the recipient. In a hosted list every `/b/` item takes `bl-`, and the join word does not (clause.md#extra-nouns).
+ * A `bl-` word completes the `/ɡ/`, `/h/` or `/th/` word or the hooked join right before it, so it needs that host; a
+ * plain `/b/` there is the recipient. In a hosted list every `/b/` item takes `bl-`, and the join word does not
+ * (clause.md#extra-nouns). Only an `/h/` hooked join takes a clause (hooks.md#hooked-joins-clause).
  */
 function enforceLocks(tokens: IToken[]): void {
   let list = false;
+  let prev: LexWord | undefined;
   for (const token of tokens) {
+    const before = prev;
     const word = tokenWord(token);
+    prev = word;
     if (!word) continue;
     if (isAny(token, [HostedB, HostedOdo, LateOdo])) {
       list = token.tokenType === HostedBJoined;
@@ -244,6 +277,7 @@ function enforceLocks(tokens: IToken[]): void {
       continue;
     }
     if (list && !isAny(token, [W, GPlain])) list = false;
+    if (word.bl && joinHook(before) && isStandIn(word)) throw new ConstructionError("hookedJoinClause", `${before!.raw} ${word.raw}`);
     if (word.bl) throw new ConstructionError("blNoHost", word.raw);
   }
 }
@@ -357,6 +391,7 @@ function enforceRespectively(units: Unit[]): void {
 }
 
 function enforceWord(word: LexWord, tables: ClassifyTables): void {
+  enforceHookedJoinWord(word);
   // A holder names people, so it takes -x like any noun (`thodumazawanx`, knowing.md#holder).
   const holder = word.family.kind === "x" && word.family.xFamily === "holder";
   // A topic word is a noun, so it takes -x like one (`xazawanx`, pronouns.md#topic-groups); a published linker does not.
@@ -512,8 +547,9 @@ function enforceHostedStandIn(units: Unit[], index: number, unit: HUnit, tables:
     }
     return;
   }
-  // A simile's model may be an event: `humum blarl` + the next sentence (relations.md#similative).
-  if (!hosted.grounds && host.overlay?.kind === "similative" && bound.pos === "b" && s === "a") return;
+  // A simile's model may be an event: `humum blarl` + the next sentence (relations.md#similative). So may the time an
+  // `/h/` hooked join bounds (`huxal blarl`, hooks.md#hooked-joins-clause).
+  if (!hosted.grounds && (host.overlay?.kind === "similative" || joinHook(host)) && bound.pos === "b" && s === "a") return;
   if (hosted.grounds || !isPole(host)) throw new ConstructionError("standInHost", `${host.raw} ${bound.raw}`);
   const undoHost = host.overlay!.gloss === "so-that" || host.overlay!.gloss === "if";
   if (bound.pos !== "b" || !(s === "a" || (s === "u" && undoHost))) {
@@ -786,9 +822,12 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
     // *Respectively* (`wazem`) sits only right before a `/z/` `/d/` `/b/` join word (joins.md § Respectively).
     word(word, slot) {
       if (isRespectively(word) && slot !== "joinModifier") throw new ConstructionError("joinDetail", word.raw);
+      // An `/h/` hooked join is checked with its hosted slot; anywhere else one has no landmark slot.
+      if (joinHook(word) && slot !== "head") enforceHookedJoinLandmark(word, undefined);
       if (isRankPlace(word)) places.seen.add(word);
     },
     join(join, site) {
+      if (site.kind === "np") enforceHookedJoinLandmark(join, site.coord.parts[site.index]!.landmark);
       if (site.kind === "np") enforceShared(join, site.coord.parts[site.index]!.shared);
       if (site.kind === "vp") enforceShared(join, site.coord.parts[site.index]!.shared);
       if (site.kind === "np") {
@@ -837,6 +876,7 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
           }
           return;
         case "hUnit":
+          enforceHookedJoinLandmark(node.unit.word, node.unit.hosted?.bound);
           enforceFeelingLandmark([node.unit.word], node.unit.hosted);
           enforceAsOfWord(node.unit.word, node.unit.hosted?.bound);
           enforceIntentionHost(node.unit);
@@ -944,6 +984,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
     if (bind.kind === "tag" && bind.pronoun.ending === "n") throw new ConstructionError("tagNameUnbound", bind.pronoun.raw);
     if (bind.kind === "tag" && bind.pronoun.ending !== "l") throw new ConstructionError("tagUnbound", bind.pronoun.raw);
     if (bind.kind === "topic") throw new ConstructionError("topicUnbound", bind.pronoun.raw);
+    if (bind.kind === "landmark") throw new ConstructionError("hookedJoinUnbound", bind.pronoun.raw);
     if (bind.kind === "content" && !isLexiconStemResume(bind.pronoun, tables)) {
       throw new ConstructionError("resumeUnbound", bind.pronoun.raw);
     }

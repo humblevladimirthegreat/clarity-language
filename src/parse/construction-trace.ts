@@ -30,6 +30,7 @@ export function wordConstructions(word: LexWord): string[] {
   if (word.plural && word.pos) ids.push(`word.plural.${word.pos}`);
   if (word.gl) ids.push("word.gl");
   if (word.bl) ids.push("word.bl");
+  if (word.family.kind === "joinMarker" && word.family.hook) ids.push("word.hookedJoin");
   if (word.hostOverlay) ids.push(overlayConstructionId(word.hostOverlay));
   // Classify re-reads a fused hook compound as content; the fusion is still its own construction.
   if (word.hookCompound) ids.push("word.family.hookCompound");

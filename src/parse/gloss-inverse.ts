@@ -14,6 +14,7 @@ import { classify } from "./classify.js";
 import { POINTER_VOWEL, ROLE_PART, SCOPE_VOWEL, morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine } from "./morph-gloss.js";
 import type { MorphGlossContext } from "./morph-gloss.js";
 import { parseWords } from "./word.js";
+import { POINT_BACK_HOOKS, TIME_HOOKS, TIME_JOINS } from "./series.js";
 
 const POS = ["z", "d", "b", "v", "g", "w", "h", "th", "x", "y"] as const;
 const ENDINGS = ["l", "m", "n"] as const;
@@ -69,6 +70,7 @@ export function buildGlossIndex(tables: ClassifyTables, extraLines: string[] = [
   const index: GlossIndex = { forms: new Map(), roots: new Map() };
   for (const root of new Set<string>([...tables.published.keys(), ...tables.compounds.keys()])) indexRootForms(index, root, tables);
   indexSeriesForms(index, tables);
+  indexHookedJoinForms(index, tables);
   indexSayForms(index, tables);
   indexLineForms(index, extraLines, tables);
   return index;
@@ -78,6 +80,7 @@ export function buildGlossIndex(tables: ClassifyTables, extraLines: string[] = [
 export function seriesGlossIndex(tables: ClassifyTables): GlossIndex {
   const index: GlossIndex = { forms: new Map(), roots: new Map() };
   indexSeriesForms(index, tables);
+  indexHookedJoinForms(index, tables);
   indexSayForms(index, tables);
   return index;
 }
@@ -92,6 +95,30 @@ function indexSeriesForms(index: GlossIndex, tables: ClassifyTables): void {
           if (gloss) add(index.forms, gloss, surface);
         }
       }
+    }
+  }
+}
+
+const HOOK_VOWELS = ["a", "ao", "o", "oe", "u", "ua", "uo", "e", "ae", "ue"];
+
+/**
+ * Hooked joins (hooks.md#hooked-joins): every hook on **-l**, **-m**, and point-back **-r** × every join on **-l**,
+ * **-m**, **-r**, **-rx** under `/z/` `/d/` `/b/`; under `/h/`, the time hooks × the bare restrictors.
+ */
+function indexHookedJoinForms(index: GlossIndex, tables: ClassifyTables): void {
+  const hooks = HOOK_VOWELS.flatMap((vowels) => [`${vowels}l`, `${vowels}m`, `${vowels}r`]).filter(
+    (hook) => !hook.endsWith("r") || POINT_BACK_HOOKS.has(hook),
+  );
+  const joins = SERIES.flatMap((series) => [`${series}l`, `${series}m`, `${series}r`, `${series}rx`]);
+  const spell = (pos: string, hook: string, join: string) => `${pos}${hook.slice(0, -1)}${hook.endsWith("l") ? "" : hook.slice(-1)}x${join}`;
+  const surfaces = [
+    ...["z", "d", "b"].flatMap((pos) => hooks.flatMap((hook) => joins.map((join) => spell(pos, hook, join)))),
+    ...[...TIME_HOOKS].flatMap((hook) => [...TIME_JOINS].map((join) => spell("h", hook, join))),
+  ];
+  for (const surface of surfaces) {
+    for (const ctx of [{}, { fillAsk: true }, { standaloneJoin: true }] as MorphGlossContext[]) {
+      const gloss = glossOne(surface, tables, ctx);
+      if (gloss) add(index.forms, gloss, surface);
     }
   }
 }

@@ -156,12 +156,25 @@ Source: [hooks.md](../grammar/hooks.md#hook-compounds)
 
 Source: [hooks.md](../grammar/hooks.md#hook-prefixes)
 
-- **open:** role letter + hook vowel(s) + **`x`** or **`mx`** + one vowel + ending (`zaxar`, `dexar`, `guemxar`). The retired pointer shape: a stem is at least three letters, so this is no hook prefix. `hooked-joins.md` plans to claim it. Parser: no word.
 - **open:** a vowel pair that is no hook (`ea`, `eo`, `eu`, `oa`, `ou`, `au`, …) before **`x`** or **`mx`** (`geaxavuvul`, `gouxavuvul`). No hook to read. Parser: no word.
-- **open:** a consonant other than **`m`** between hook vowels and the seam (`guenxavuvul`, `guerxavuvul`). **`n`** or **`r`** would need a job of the hook's **-n** or **-r** inside a word. Parser: no word.
+- **open:** **`n`** between hook vowels and the seam (`guenxavuvul`). It would need a job of the hook's **-n** inside a word. Parser: no word.
+- **closed ([hooked joins](design-decisions.md#hooked-joins)):** **`r`** between hook vowels and the seam (`gorxahehal`). The stem is the landmark, so nothing is left unsaid to point back to. Parser: no word.
 - **closed (D-57):** `lx` after hook vowels (`guelxavuvul`). Plain **`x`** already spells the **-l** reading. Parser: no word.
 - **open:** a hook prefix on `/v/` / `/w/` / `/th/` / `/x/` / `/y/` (`vuexavuvul`). `/v/` would repeat the `/ɡ/` predicate (*is anti-fighting*); the others have no guess yet (a degree of opposition? a stance word for *as an opponent*? a topic or call by stance?). Parser: `hookPrefixSlot`.
 - **open:** a hook prefix inside a larger word: as a piece of an ordinary compound (*an anti-war house*), as a role-compound stem, or with ability after its stem (`gaxahehaxal`). Not guessable which piece the hook would cover; a separate `/ɡ/` word says it. Parser: no word.
+
+## Hooked joins {#hooked-joins}
+
+Source: [hooks.md](../grammar/hooks.md#hooked-joins)
+
+- **open:** join **-n** or hook **-n** on a hooked join (`zoxuan`, `zonxual`), and a stand-in coda after the join (`zoxarl`). A named bounded set, or a named hook inside a word, has no job yet. Parser: no word.
+- **closed (D-57):** `l` before the seam (`zolxual`). Plain **`x`** already spells the hook's **-l** reading. Parser: no word.
+- **open:** a join after the seam on `/ɡ/` (`goxual`), `/v/`, `/w/`, `/th/`, `/x/`, or `/y/`, or as a hosted `bl-` word (`bloxual`). An adjective, act, stance, clause, or call has no set a landmark could bound. Parser: `hookedJoinSlot`.
+- **open:** `r` before the seam on a hook whose free **-r** does not point back (`oe`, `ua`, `ue`: `zoerxual`). Those hooks' **-r** is a range. Parser: `hookedJoinPointBack`.
+- **open:** `blarl` after a `/z/` `/d/` `/b/` hooked join (`zoxual blarl`). No reading for a set bounded by a clause yet. Parser: `hookedJoinClause`.
+- **open:** on `/h/`, a hook with no time reading (`ua`, `uo`, `ao`, `e`, `ae`, `ue`: `hexal`), or hook **-m** other than `om` (`hamxual`, `humxal`, `hoemxual`). `uo` (*throughout*) and `am` (*in the thick of*) read close to `a`, and `oem` (*in the run-up to*) close to `habam`; no reading is settled. Parser: `hookedJoinTime`.
+- **open:** on `/h/`, a join other than a bare restrictor (`huxoel`, `huxol`). Parser: `hookedJoinRestrictor`.
+- **closed ([hooked joins](design-decisions.md#hooked-joins)):** a number body or a role-compound stem before **`x`** + a join (`zragexual`, `zwazuduyexual`). Parser: no word.
 
 ## Role compounds
 

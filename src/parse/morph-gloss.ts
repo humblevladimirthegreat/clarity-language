@@ -914,9 +914,9 @@ function standaloneJoinIndexes(words: LexWord[], parsed: ParseResult | undefined
       const word = join.at === undefined ? undefined : words[join.at];
       if (standalone && word && closesAlone(word)) out.add(join.at!);
     },
-    // A join that is the whole hosted `/b/` (`hewom blal` *like nothing*) has no items either.
+    // A join that is the whole hosted `/b/` (`hewom blal` *like nothing*), or a hooked join's whole landmark, has no items either.
     word(word, slot) {
-      if (slot === "bound" && word.at !== undefined && closesAlone(word)) out.add(word.at);
+      if ((slot === "bound" || slot === "joinLandmark") && word.at !== undefined && closesAlone(word)) out.add(word.at);
     },
   });
   return out;
@@ -1045,8 +1045,10 @@ function sensePieces(
   switch (family.kind) {
     case "hook":
       return [hookLabel(family.form, ctx)];
-    case "joinMarker":
-      return [joinMarkerLabel(word, ctx)];
+    case "joinMarker": {
+      const label = joinMarkerLabel(word, ctx);
+      return [family.hook ? `${hookedJoinHookLabel(family.hook, word.pos)}-x-${label}` : label];
+    }
     case "number":
       if (isDigitlessNumberBlank(word)) {
         const blank = NUMBER_BLANK[family.stem.marker];
@@ -1107,6 +1109,15 @@ function hookLabel(form: string, ctx: MorphGlossContext): string {
     default:
       return HOOK_IN_CLAUSE[form] ?? HOOK_JOB[form] ?? form;
   }
+}
+
+/** On `/h/`, a hooked join's point-back names a time (hooks.md#hooked-joins-time). */
+const HOOKED_JOIN_TIME_RESUME: Record<string, string> = { ar: "within.then", or: "at.then", ur: "since.then" };
+
+/** A hooked join's hook, read off the extra-noun grid (`at`, `near`, `there`; hooks.md#hooked-joins). */
+function hookedJoinHookLabel(hook: string, pos: Pos | undefined): string {
+  if (pos === "h" && HOOKED_JOIN_TIME_RESUME[hook]) return HOOKED_JOIN_TIME_RESUME[hook];
+  return HOOK_EXTRA_NOUN[hook] ?? hook;
 }
 
 function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {

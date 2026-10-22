@@ -234,13 +234,13 @@ These choices about word shape make Agebon easier to sing:
 | One vowel per letter | Sliding from one vowel to another mid-note forces the mouth to change | Stacked vowels = separate syllables |
 | Few consonant clusters (consonants with no vowel between) | Clusters are harder to say quickly | Ordinary shape is consonant-then-vowel at the start of a syllable; the few clusters are listed below |
 | Voiced preferred | Unvoiced `b`, `d`, `g` (*p*, *t*, *k*) stop the note; singers often voice them anyway | Voiced preferred; unvoiced allowed as style only |
-| No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the word edge, or the **`m`** before **`x`** on a hook prefix (its **-m** frame) or a numeric prefix (an approximate number). The [syllabic `l`](#syllabic-l) of `blr` / `blw` is a held beat, not a final consonant |
+| No mid-word syllable-final consonant | Ending a syllable on a consonant breaks a held note | Roots are **V(CV)+**; a final consonant only at the word edge, the **`m`** before **`x`** on a hook prefix (its **-m** frame) or a numeric prefix (an approximate number), or the **`m`** or **`r`** before **`x`** on a hooked join (its hook's **-m** frame or **-r** point-back). The [syllabic `l`](#syllabic-l) of `blr` / `blw` is a held beat, not a final consonant |
 | No lexical stress | Music already places emphasis | Stress always falls on the same beat; spelling does not mark it, and music may move it. A word's first syllable sits best on a strong beat |
 | Vowel pitch | A melody owns the pitch | Song drops [vowel pitch](#vowel-pitch); each vowel's sound alone says which vowel it is |
 | Spelling = pronunciation | You do not memorize special readings | One path from letters to sound |
 | Audible word edges | Song often removes speech pauses | Content words end in `-l` / `-m` / `-n` / `-ln` / `-r` / `-rl` / `-rm` (optional `-x`); stand-ins end in `-rl` / `-rm` / `-rth` |
 
-The clusters Agebon allows: left-hanging `gl-`; hosted `bl-`, with a [syllabic `l`](#syllabic-l) before `r` / `w`; number-word role letter + `r`; role letter + `w` on a [tag pronoun](pronouns.md#tag-pronouns), a [role compound](roles.md#role-compounds), a [role pointer](pronouns.md#role-pointers), or a say word (`zw`, `dw`, `bw`, `gw`, `hw`, `yw`, and `blw` on a hosted role word); mid-word `mx` after the hook vowels of a hook prefix's **-m** frame, or after the number body of an approximate [numeric prefix](numeric-derivation.md); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`; consonant runs inside a [place-name root](#place-name-roots). The `m` before `x` is the only syllable-final consonant inside an ordinary word.
+The clusters Agebon allows: left-hanging `gl-`; hosted `bl-`, with a [syllabic `l`](#syllabic-l) before `r` / `w`; number-word role letter + `r`; role letter + `w` on a [tag pronoun](pronouns.md#tag-pronouns), a [role compound](roles.md#role-compounds), a [role pointer](pronouns.md#role-pointers), or a say word (`zw`, `dw`, `bw`, `gw`, `hw`, `yw`, and `blw` on a hosted role word); mid-word `mx` after the hook vowels of a hook prefix's **-m** frame, or after the number body of an approximate [numeric prefix](numeric-derivation.md); mid-word `mx` or `rx` after the hook vowels of a hooked join (its hook's frame or point-back); word-final `-lx` / `-mx` / `-nx` / `-rx`; name instance `-ln` / `-lnx`; stand-in and sense-pinned resume `-rl` / `-rm`, stand-in `-rth`; consonant runs inside a [place-name root](#place-name-roots). The `m` or `r` before `x` is the only syllable-final consonant inside an ordinary word.
 
 Try singing a short Agebon line quickly at a high but comfortable pitch:
 
@@ -261,6 +261,8 @@ Each word takes a light stress on its **first syllable**. Since the rule never c
 `zuzozen gamahum.`
 
 / ˈzʉ.zo̞.ze̞n ˈɡä.mä.ɦʉm /
+
+The first beat also keeps apart two lines that differ only by a word break: a word that starts mid-line takes a fresh stressed beat, where the same letters inside one word do not. A hooked join (*someone in there*, as one word) and a join followed by a hook (*some people*, then *in there*) can be spelled with the same letters, and this beat tells them apart.
 
 Stress is **loudness** only: say the first syllable a little louder, with a crisp start. Its vowel keeps its own pitch, and the syllable keeps its one beat, so a stressed `a` is loud and still low. English raises and lengthens a stressed syllable, so practice stress as a drum accent: say the word on its vowel pitches, then say it again and tap the first beat louder.
 

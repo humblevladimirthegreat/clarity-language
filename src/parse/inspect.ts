@@ -255,7 +255,7 @@ function familyChips(family: MorphWordFamily): string[] {
     case "hookCompound":
       return [`hook-compound ${family.hook}`, `stem ${family.leftRoot}`];
     case "joinMarker":
-      return [`join ${family.series}`];
+      return family.hook ? [`hook ${family.hook}`, `join ${family.series}`] : [`join ${family.series}`];
     case "writingSpan": {
       const marks = family.marks.length ? family.marks.join("") : "";
       return [`writing ${family.bracket}${marks}`];
@@ -332,6 +332,7 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
     rows.push({ label: "left", value: family.leftRoot + family.leftEnding });
     rows.push({ label: "fused hook", value: family.hook });
   } else if (family.kind === "joinMarker") {
+    if (family.hook) rows.push({ label: "hook", value: family.hook });
     rows.push({
       label: word.reading === "standIn" || word.reading === "standInNamed" ? "stand-in" : "series",
       value: family.series,
@@ -359,6 +360,9 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
 export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   const family = word.family;
 
+  if (family.kind === "joinMarker" && family.hook) {
+    return { line: `hooked join ${family.hook} + ${family.series}`, href: "hooks.html#hooked-joins" };
+  }
   if (family.kind === "x" && family.xFamily === "sake") {
     return { line: "sakes (sake + th)", href: "sakes.html" };
   }

@@ -104,7 +104,7 @@ function npItem(cur: Cursor, item: NpItem): GlossNode | undefined {
 /** Right-close fences nest: each later part wraps the fence before it. Joinless items stay flat. */
 function fences<T>(
   cur: Cursor,
-  parts: { items: T[]; join?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord; tag?: LexWord }[],
+  parts: { items: T[]; join?: LexWord; landmark?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord; tag?: LexWord }[],
   item: (x: T) => GlossNode | undefined,
   /** Kind reference (`zuan` + kind) is not a named package; only a noun list can hold one. */
   isKind: (part: (typeof parts)[number]) => boolean = () => false,
@@ -123,8 +123,10 @@ function fences<T>(
     const join = cur.take(part.join);
     const named = part.join.ending === "n" && join?.t === "leaf" && !isKind(part);
     if (named) join.named = true;
+    // A hooked join's landmark sits right after it, inside the fence: `[z-at-x-everything | bl-house]`.
+    const landmark = cur.take(part.landmark);
     const factor = cur.take(part.factor);
-    const node = group([...acc, ...items, ...joinModifiers, join, ...sharedNodes, factor], named ? "NAME" : undefined);
+    const node = group([...acc, ...items, ...joinModifiers, join, landmark, ...sharedNodes, factor], named ? "NAME" : undefined);
     // A tag after the fence names the whole group: `[[z-dog | z-cat | z-and.open] | z-tag.A]`.
     const tagged = part.tag ? group([node, cur.take(part.tag)]) : node;
     acc = tagged ? [tagged] : [];

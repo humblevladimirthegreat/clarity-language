@@ -131,6 +131,7 @@ A hook has no role letter: just a vowel (or two) and an ending. Tell the kinds a
 | stacked vowel between two same-role words | [range](../hooks.md#ranges) | `zuzozen oel zahelan` | *Uzozen through Ahelan* | I |
 | fused onto a citation | [hook compound](../hooks.md#hook-compounds) | `vowurelul` | *leave* | A |
 | hook vowels, then **`x`** and a stem | [hook prefix](../hooks.md#hook-prefixes) | `guexavuvul` | *anti-fighting* | A |
+| role letter, hook vowels, **`x`**, a join, then a `bl-` landmark | [hooked join](../hooks.md#hooked-joins) | `zoxual blahehal` | *everyone at the house* | A |
 
 ### Same-role and front of sentence {#same-role-discourse}
 
@@ -170,6 +171,26 @@ Hook, then the landmark in `/b/`. **-m** makes the landmark the general setting.
 
 Stage: `al` `ol` `ul` `el` **-l** are Beginner; the rest of the first three columns Intermediate, with abstract landmarks; fused forms and prefixes Advanced.
 
+### Hooked joins {#hooked-joins}
+
+Role letter, the hook's vowels (**`m`** for its frame, **`r`** to point back), **`x`**, then a join; the landmark follows as a `bl-` word and bounds who counts. On `/h/` the join is a bare restrictor and the landmark a time. All Advanced.
+
+| Agebon | English |
+|--------|---------|
+| `zoxual blahehal` | [*everyone at the house*](../hooks.md#hooked-joins) |
+| `zomxual bluwon` / `zumxual blayan` | [*everyone here*](../hooks.md#hooked-joins-hooks) / *everyone over there* |
+| `zuexual bluwon` | [*everyone against me*](../hooks.md#hooked-joins-hooks) |
+| `dexar bluwon` | [*something for me*](../hooks.md#hooked-joins-endings) |
+| `zoxuam blual` | [*people anywhere, in general*](../hooks.md#hooked-joins-endings) |
+| `zorxual` | [*everyone there*](../hooks.md#hooked-joins-point-back) (the place just named) |
+| `haxual blenulul` | [*always, during the thunderstorm*](../hooks.md#hooked-joins-time) |
+| `hoxar blenulul` | [*at some point at the thunderstorm*](../hooks.md#hooked-joins-time) |
+| `huxal blenulul` | [*never since the thunderstorm*](../hooks.md#hooked-joins-time) |
+| `hoexual blenulul` | [*always, until the thunderstorm*](../hooks.md#hooked-joins-time) |
+| `homxual blenulul` | [*always, around the time of the thunderstorm*](../hooks.md#hooked-joins-time) |
+| `hurxal` | [*never since then*](../hooks.md#hooked-joins-time) |
+| `huxal blarl` + clause | [*never since* (that happened)](../hooks.md#hooked-joins-clause) |
+
 ### Handy phrases {#handy-phrases}
 
 | Agebon | English | Stage |
@@ -189,6 +210,7 @@ Stage: `al` `ol` `ul` `el` **-l** are Beginner; the rest of the first three colu
 | This | vs | That |
 |------|----|------|
 | `zudozol zul` *no dog* ([join denies](../joins.md#universals-domains-generics)) | | `zavayal ul zuzozen` *the family except Uzozen* ([hook takes B out of A](../hooks.md#except)) |
+| `zoxual blahehal vezuvol` *everyone at the house sleeps* ([who counts](../hooks.md#hooked-joins)) | | `zual vezuvol ol bahehal` *everyone sleeps at the house* (where it happens) |
 | `zahunam gan bluzozen` *a team including Uzozen* ([join-relation](../join-across-roles.md#join-relations)) | | `zahunam al zuzozen` *the team, including Uzozen* (afterthought) |
 | `zuzozen zahelan zal` *the two of them* ([vs a range](../hooks.md#ranges)) | | `zuzozen oel zahelan` *Uzozen through Ahelan*; `zuzozen zahelan zael` *Uzozen, then Ahelan* |
 | hook `oel` *toward X* ([where a path ends](../hooks.md#extra-noun-intermediate)) | | `zael` + X *start with X* ([where it starts](../joins.md#sequence-ae)) |

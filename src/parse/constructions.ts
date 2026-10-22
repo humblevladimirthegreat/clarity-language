@@ -119,6 +119,7 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "npJoinClose.W": { anchor: "joins.md#respectively", summary: "respectively /w/ before a noun join word" },
   "npJoinClose.factor": { anchor: "comparatives.md#factor", summary: "ratio number after an equative scale" },
   "npJoinClose.sharedAfterJoin": { anchor: "joins.md#right-close", summary: "shared word after a noun join" },
+  "npJoinClose.joinLandmark": { anchor: "hooks.md#hooked-joins", summary: "a hooked join's bl- landmark" },
 
   "vpCoord.vpCoordPart": { anchor: "joins.md#and-lists-a", summary: "/v/ phrase parts" },
   "vpCoordPart.V": { anchor: "clause.md#who-acts-and-the-action", summary: "verb" },
@@ -322,10 +323,16 @@ export const WORD_PLURAL_CONSTRUCTIONS: Record<Exclude<Pos, "w" | "h" | "th" | "
 export const WORD_MISC_CONSTRUCTIONS = {
   gl: { anchor: "clause.md#left-bound-adjectives", summary: "gl- left-bound adjective" },
   bl: { anchor: "clause.md#extra-nouns", summary: "bl- hosted extra noun: completes the /ɡ/ /h/ or /th/ word right before it" },
+  hookedJoin: {
+    anchor: "hooks.md#hooked-joins",
+    summary: "hooked join: role letter + hook + x + join, bounded by the bl- landmark after it",
+    reader:
+      "`z-HOOK-x-JOIN | bl-LANDMARK` is one join whose set is bounded by the landmark: the members that stand in that hook's relation to it, not where the event happens. `[z-at-x-everything | bl-house] | v-sleep` = everyone at the house sleeps; `[z-near-x-everything | bl-speaker]` = everyone here; `[d-for-x-wh | bl-speaker]` under a question = what is there for me?; `[z-against-x-everything | bl-speaker]` = everyone against me. Items before it are the whole list within that set: `[z-X | z-at-x-and | bl-house]` = of everyone at the house, only X. `.open` on the join = as far as I know. A point-back hook (`there`, `from.there`, `on.it`) has no `bl-` word: the landmark is the place already named (`z-there-x-everything` = everyone there). On `h-` it bounds a time word: `[h-from-x-never | bl-thunderstorm]` = never since the thunderstorm, `[h-toward-x-always | bl-…]` = always, until …, `[h-near-x-always | bl-…]` = always around the time of …, `[h-in-x-always | bl-…]` = always, during …; `h-since.then-x-never` = never since then; with `bl-that-clause` the next sentence names the time.",
+  },
 } satisfies Record<string, ConstructionEntry>;
 
 export const RESOLVE_CONSTRUCTIONS: Record<
-  Exclude<`${AnaphorKind}.${"bound" | "unbound"}`, "number.unbound" | "tag.unbound" | "pointer.unbound" | "topic.unbound">,
+  Exclude<`${AnaphorKind}.${"bound" | "unbound"}`, "number.unbound" | "tag.unbound" | "pointer.unbound" | "topic.unbound" | "landmark.unbound">,
   ConstructionEntry
 > = {
   "content.bound": { anchor: "pronouns.md#resume-r", summary: "-r binds an earlier content word" },
@@ -336,6 +343,7 @@ export const RESOLVE_CONSTRUCTIONS: Record<
   "role.unbound": { anchor: "roles.md#role-compounds", summary: "role -r with no earlier match" },
   "topic.bound": { anchor: "pronouns.md#topic-pronoun", summary: "topic pronoun: the one the talk is about now" },
   "pointer.bound": { anchor: "pronouns.md#role-pointers", summary: "role pointer binds a participant of an earlier or this predicate" },
+  "landmark.bound": { anchor: "hooks.md#hooked-joins", summary: "a hooked join's point-back binds the landmark already in play" },
 };
 
 /** Readings of a whole utterance or clause shape, or of a shared scale (`reading.*`, [construction-trace.ts](./construction-trace.ts)). */
@@ -702,6 +710,14 @@ export const REJECTIONS = {
   labelScopeStem: { anchor: "predication.md#label-scope", summary: "a scope seam labels a content root, not a special pronoun" },
   roleCompoundSlot: { anchor: "roles.md#role-compounds", summary: "a role compound goes on /z/, /d/, /b/, /ɡ/, as a topic under /x/, as a call under /y/ (-n / -r), or as capacity under /h/ with a slot part; not on /v/, /w/, or /th/, and not a content part on /h/" },
   hookPrefixSlot: { anchor: "hooks.md#hook-prefixes", summary: "a hook prefix goes on /ɡ/, /z/, /d/, /b/, or /h/; not on /v/, /w/, /th/, /x/, or /y/" },
+  hookedJoinSlot: { anchor: "hooks.md#hooked-joins", summary: "a hooked join goes on /z/, /d/, /b/, or /h/; not on /ɡ/, /v/, /w/, /th/, /x/, or /y/, and never as a hosted bl- word" },
+  hookedJoinLandmark: { anchor: "hooks.md#hooked-joins", summary: "a hooked join on hook -l or -m takes its landmark: the bl- word right after it" },
+  hookedJoinPointBack: { anchor: "hooks.md#hooked-joins-point-back", summary: "r before the seam is a hook that points back on its own (`ar` `aor` `or` `ur` `uor` `er` `aer`)" },
+  hookedJoinPointBackLandmark: { anchor: "hooks.md#hooked-joins-point-back", summary: "a hooked join on hook -r points back to the landmark in play, so no bl- word follows it" },
+  hookedJoinUnbound: { anchor: "hooks.md#hooked-joins-point-back", summary: "a hooked join on hook -r needs a landmark in play (on /h/, a time landmark)" },
+  hookedJoinClause: { anchor: "hooks.md#hooked-joins-clause", summary: "only an /h/ hooked join takes blarl: the time the next sentence names" },
+  hookedJoinRestrictor: { anchor: "hooks.md#hooked-joins-time", summary: "an /h/ hooked join's join is a bare restrictor (`al` `am` `ual` `uam` `ar` `or` `ur` `er`)" },
+  hookedJoinTime: { anchor: "hooks.md#hooked-joins-time", summary: "an /h/ hooked join takes a hook with a time reading: `a` `o` `u` `oe`, the frame `om`, or point-back `ar` `or` `ur`" },
   roleCompoundStem: { anchor: "roles.md#role-compounds", summary: "a role compound names a role of an event; a special pronoun is not an event" },
   abilitySlot: { anchor: "intention.md#ability", summary: "ability (x + vowel) goes on /v/ or /ɡ/ only; name + x + vowel + -n is a conversation-length bid only as a citation or a /y/ call" },
   labelScopeArrow: { anchor: "roles.md#landmark-facing", summary: "on a direction root the th seam takes only o (the landmark's own facing)" },
@@ -738,7 +754,7 @@ export const REJECTIONS = {
   glNoNoun: { anchor: "clause.md#left-bound-adjectives", summary: "a gl- adjective describes the next noun, so a noun must follow it (`glubulel zudozol`); with no noun after it, use a plain /ɡ/ word" },
   nameInstanceSlot: { anchor: "word-endings.md#name-instance--ln", summary: "-ln (span ^@) is one thing a name applies to: it fills /z/ /d/ /b/ or stands as a citation, never on /ɡ/ /v/ /h/ /w/ /th/ /x/ /y/, and never on a pronoun root" },
   standInRole: { anchor: "dependents.md#stand-in", summary: "stand-ins (-rl -rm -rth -rn) fill /z/ /d/ /b/ only; there is no stand-in on /ɡ/ /h/ /w/ /th/ (such is whole-stem -r, like that is `hewom blarth`)" },
-  standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is `blarl` after a listed pole, a clues / pattern channel, or like (`hewom`)" },
+  standInHost: { anchor: "dependents.md#dependent-clauses", summary: "a hosted stand-in is `blarl` after a listed pole, a clues / pattern channel, like (`hewom`), or an /h/ hooked join" },
   standInHostUndo: { anchor: "dependents.md#stand-in", summary: "burl follows only the so-that pole holalam or the if pole thudoram" },
   poleStack: { anchor: "causation.md#only-because", summary: "pole stacks are `theboram thurugum` and `hezuvom thudoram`" },
   objectNeedsVerb: { anchor: "predication.md#existence", summary: "an object /d/ needs a verb" },
