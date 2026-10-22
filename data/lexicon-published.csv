@@ -605,8 +605,8 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🚒,fire-truck,avava,doing,holds,big,newton,a firetruck pushes; newton is the SI force unit,,,
 🚓,police-car,elava,doing,holds,big,enforcement,the police car enforces rules; enforcement is making rules stick,,,
 🚕,taxi,adava,doing,holds,big,hire,taxi is hired for a ride; hire is paying for service,,rent; recruit,
-🚗,car,egava,doing,holds,big,mobility,car moves you where you choose; mobility is freedom to move,,vehicle; mobile,
-🚚,truck,udava,doing,holds,big,logistics,truck carries freight; logistics is the unobservable coordination,,,
+🚗,car,egava,doing,holds,big,mobility,car moves you where you choose; mobility is freedom to move,,vehicle; mobile,numbers.md#advanced-practice
+🚚,truck,udava,doing,holds,big,logistics,truck carries freight; logistics is the unobservable coordination,,,digitless-exponents.md#intermediate-practice
 🚜,tractor,odava,doing,holds,big,,,,,
 🏍️,motorcycle,emave,doing,order,big,watt,motorcycle draws mechanical power; watt is the SI power unit,,,
 🦽,wheelchair,owave,doing,order,big,accessibility,wheelchair enables movement; accessibility is equal access,,,
@@ -944,7 +944,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🧫,petri-dish,udewa,tool,holds,small,exemplar,petri dish holds a sample; exemplar is the unobservable stand-in for a class,,model; sample,
 🧬,dna,edebe,body,order,small,,,,gene; genetic,
 🔬,microscope,omowo,tool,one,medium,mole,microscope counts tiny amounts of substance; mole is the SI amount-of-substance unit,,,
-🔭,telescope,edowe,tool,order,medium,forecast,telescope shows what is far; forecast is looking ahead at a distance,,predict,numbers.md#advanced-practice
+🔭,telescope,edowe,tool,order,medium,forecast,telescope shows what is far; forecast is looking ahead at a distance,,predict,digitless-exponents.md#advanced-practice
 📡,antenna,anowe,tool,order,medium,,,,,
 💉,syringe,ezebu,body,takes-away,small,intrusion,syringe puts fluid into body; injection is forcing something in,,shot,word-endings.md#intermediate-practice
 🩸,blood,ebuba,body,holds,none,violence,blood is spilled; violence is harm by force,,bloody; violent,
@@ -1106,7 +1106,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🔣,symbols,ozuga,sign,holds,none,notation,symbols are written marks that stand for ideas,,code,
 🔤,letters,ege,sign,order,,literacy,letters let you read and write,,,spans.md#intermediate-practice
 ℹ️,information,umugo,sign,one,none,fact,the info sign gives facts; a fact is what is actually so,,data; inform,
-🅿️,parking,abuha,place,holds,big,allotment,parking marks a stall; allotment is the unobservable assigned share,,assign,
+🅿️,parking,abuha,place,holds,big,allotment,parking marks a stall; allotment is the unobservable assigned share,,assign,numbers.md#advanced-practice
 🆘,sos,ezugu,sign,takes-away,none,distress,sos signals distress,,,
 🔴,red,erule,nature,order,none,,,,,pronouns.md#intermediate-practice
 🟠,orange,orule,nature,order,none,,,,,

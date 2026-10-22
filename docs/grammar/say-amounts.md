@@ -76,7 +76,7 @@ To score the shared adjective as of a dated now, write [*as-of*](relations.md#as
 <a id="no-metric-prefixes"></a>
 <a id="metric-prefixes"></a>
 
-**Needs:** [Measure phrases](numbers-applied.md#measure-phrases) · [Exponents](numbers.md#exponents)
+**Needs:** [Measure phrases](numbers-applied.md#measure-phrases) · [Exponents](digitless-exponents.md#exponents)
 
 Keep the **base** unit. Put the power of ten on the **amount** (`e3` / `e-3` / an exact count): `bezerem g+5400` or `bezerem g+5.4e3`; `beberom g+70e3`.
 
@@ -189,7 +189,7 @@ Under [question](questions.md#fill-ask-r) force, these are fill-asks (*which val
 
 ### How much: *very*, *slightly*, *barely* {#degree-words}
 
-**Needs:** [Degree](clause.md#degree-w) · [Number as verb and adverb](numbers.md#special-number-as-verb-and-adverb) · [Number as stance](numbers.md#special-number-as-stance)
+**Needs:** [Degree](clause.md#degree-w) · [Number as verb and adverb](digitless-exponents.md#special-number-as-verb-and-adverb) · [Number as stance](digitless-exponents.md#special-number-as-stance)
 
 English degree words (*really*, *quite*, *barely*) say how far a quality or an action goes. Agebon has stock degree words for the adjective or adverb that follows them, and a pair for *barely* and *almost*. A claim you are sure of takes the stance number `th+e`.
 

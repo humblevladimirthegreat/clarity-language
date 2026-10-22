@@ -468,7 +468,7 @@ SpeechNumberStem
 SpeechMarkerV
   = "oe" / "ue" / "uo" / "ua" / [aeou]
 
-// Groups after the first are opened by the separator `the` (numbers.md#group-separator).
+// Groups after the first are opened by the separator `the` (digitless-exponents.md#group-separator).
 SpeechDigitGroups
   = head:SpeechDigitGroup tail:("the" g:SpeechDigitGroup { return g; })* {
       return { groups: [head, ...tail] };

@@ -77,7 +77,7 @@ English *quasi-* says something has the **shape or role** of a kind without coun
 | **`/w/`** (extra detail) | host graded as quasi- | `wruwuxobemum gobemum`: *quasi-melancholy* |
 | **`/y/`** (interjection) | *Quasi-!* / *As if that kind!* | `yruwuxahuyayol` |
 
-**Compare with:** with no root, **`gruwul`** is the [just short](numbers.md#just-short) amount, and **`vruwul`** / **`thruwul`** / **`yruwul`** / **`xruwul`** are that number as a verb, stance, interjection, or discourse word. Before a root, **`-e-xROOT`** makes *quasi-* that kind.
+**Compare with:** with no root, **`gruwul`** is the [just short](digitless-exponents.md#just-short) amount, and **`vruwul`** / **`thruwul`** / **`yruwul`** / **`xruwul`** are that number as a verb, stance, interjection, or discourse word. Before a root, **`-e-xROOT`** makes *quasi-* that kind.
 
 #### Quasi-N (`-e-1` / `-e-2`)
 
@@ -155,7 +155,7 @@ With a final **-m**, the wipe is only approximate: nearly emptied.
 <a id="total-null"></a>
 <a id="engineering-null-morph"></a>
 
-The [zero × exponent](numbers.md#zero-exponent) bodies from free numbers also work before a root. There they say the kind is **wiped out, or leaves a residue**, instead of naming an amount. Free **`vramowal`** is *annihilate* with no kind attached; **`vramowaxodoram`** is *annihilate the score*.
+The [zero × exponent](digitless-exponents.md#zero-exponent) bodies from free numbers also work before a root. There they say the kind is **wiped out, or leaves a residue**, instead of naming an amount. Free **`vramowal`** is *annihilate* with no kind attached; **`vramowaxodoram`** is *annihilate the score*.
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
@@ -168,7 +168,7 @@ The [zero × exponent](numbers.md#zero-exponent) bodies from free numbers also w
 
 The ending on the whole word marks soft (**-m**), named (**-n**), or resume (**-r**) as usual.
 
-**Emptiness chain (kinds):** **`-exROOT`** (void of kind), **`+0xROOT`** (resettable null), **`+0exROOT`** (total null), **`+0e-xROOT`** (sterile grain), **`+0e-1xROOT`** (engineering null at 10⁻¹). On free numbers, bare **`grawamol`** / **`Ne0`** instead [assert order of magnitude 0](numbers.md#bare-oom-bands).
+**Emptiness chain (kinds):** **`-exROOT`** (void of kind), **`+0xROOT`** (resettable null), **`+0exROOT`** (total null), **`+0e-xROOT`** (sterile grain), **`+0e-1xROOT`** (engineering null at 10⁻¹). On free numbers, bare **`grawamol`** / **`Ne0`** instead [assert order of magnitude 0](digitless-exponents.md#bare-oom-bands).
 
 On a free number, **`±0e-1`** is an amount. Before a root, the same bodies wipe the kind, or leave a residue of it, at that scale.
 
@@ -183,7 +183,7 @@ On a free number, **`±0e-1`** is an amount. Before a root, the same bodies wipe
 | **`/w/`** | host graded toward total null | `wramowaxaram garam` |
 | **`/y/`** | *Annihilate that kind!* | `yramowaxodoram` |
 
-**`-0e` / `-0e-` / `±0e-1`** take the role letters the same way (absolute residue / micro-residue / engineering null·residue at order of magnitude −1). With no root: **`vramowal`** *annihilate*; **`gramowal`** absolute-zero amount; **`g+0e-1`** / **`g-0e-1`** engineering null / residue: [numbers.md § Zero × exponent](numbers.md#zero-exponent).
+**`-0e` / `-0e-` / `±0e-1`** take the role letters the same way (absolute residue / micro-residue / engineering null·residue at order of magnitude −1). With no root: **`vramowal`** *annihilate*; **`gramowal`** absolute-zero amount; **`g+0e-1`** / **`g-0e-1`** engineering null / residue: [numbers.md § Zero × exponent](digitless-exponents.md#zero-exponent).
 
 #### Rank-annihilated morph (`#0e`)
 <a id="rank-annihilated-morph"></a>
@@ -251,7 +251,7 @@ Digitless **`+`/`-`/`#`** on ROOT = *what the kind is*; digitless **`_`** = *how
 
 ### Hyperbole sense (`+1e` / `#1e`) {#hyperbole-sense}
 
-To exaggerate a kind for comic effect (*a gazillion-mess*, *an umpteenth attempt*), put a mantissa before a digitless exponent, as in free [hyperbole](numbers.md#hyperbole-gazillion). Use **`1`** as the mantissa unless the joke needs another digit.
+To exaggerate a kind for comic effect (*a gazillion-mess*, *an umpteenth attempt*), put a mantissa before a digitless exponent, as in free [hyperbole](digitless-exponents.md#hyperbole). Use **`1`** as the mantissa unless the joke needs another digit.
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|

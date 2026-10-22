@@ -72,7 +72,7 @@ const houseCast = closedDerived(
 const NUMBER_MARK_SUFFIX: Record<string, string> = { "~": ".about", "@": ".named", "=": ".again" };
 const SPELLED_ENDING_MARK: Record<string, string> = { m: "~", n: "@", r: "=" };
 
-/** Digitless number **-r** by marker: fill-ask blank under question, else *some number* ([numbers § Digitless](../../docs/grammar/numbers.md#digitless)). */
+/** Digitless number **-r** by marker: fill-ask blank under question, else *some number* ([digitless-exponents § Digitless](../../docs/grammar/digitless-exponents.md#digitless)). */
 const NUMBER_BLANK: Record<string, { ask: string; some: string }> = {
   "+": { ask: "how-many", some: "some-amount" },
   "-": { ask: "how-far-below-zero", some: "some-negative-amount" },

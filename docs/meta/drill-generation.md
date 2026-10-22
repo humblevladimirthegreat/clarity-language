@@ -144,7 +144,7 @@ Path items joined with `·` are **co-located**, not ordered. Do **not** recycle 
 |------|--------|
 | 8 | `pronouns.md` · `plurality.md` |
 | 12 | `hooks.md` · `restrictors.md` |
-| 15 | `numbers.md` · `numbers-applied.md` · `comparatives.md` · `causation.md` |
+| 15 | `numbers.md` · `digitless-exponents.md` · `numbers-applied.md` · `comparatives.md` · `causation.md` |
 | 16 | `sakes.md` · `intention.md` · `knowing.md` · `roles.md` · `compounds.md` |
 
 Later path numbers **may** recycle both siblings (e.g. joins Beginner may use pronouns **and** plurality Beginner).
@@ -210,7 +210,9 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `spans.md` | Advanced | a code review |
 | `numbers.md` | Beginner | a bakery |
 | `numbers.md` | Intermediate | a sports stadium |
-| `numbers.md` | Advanced | an observatory |
+| `numbers.md` | Advanced | a parking garage |
+| `digitless-exponents.md` | Intermediate | a grain elevator |
+| `digitless-exponents.md` | Advanced | an observatory |
 | `numbers-applied.md` | Intermediate | a pharmacy |
 | `comparatives.md` | Beginner | a racetrack |
 | `comparatives.md` | Intermediate | a weighing room |
@@ -348,9 +350,11 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 13 | `restrictors.md` | Advanced | — | no Advanced stage | |
 | 14 | `spans.md` | Intermediate | **exists** | Written spans; marks; mention marker; **`{ … }`** scope islands; mention of a handle **form** vs office **-n** | |
 | 14 | `spans.md` | Advanced | **exists** | Close forms (editorial `#]` / close-all `\|]`) | — |
-| 15 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; digitless; number as verb / adverb / interjection / discourse as taught in this stage; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | Do not dump the whole Intermediate |
+| 15 | `numbers.md` | Intermediate | **exists** | PoS on numbers; markers; endings; number as verb / adverb / interjection / discourse as taught in this stage; **one of** measure / range / percent / time if you can keep the item to that decision (those topics live in **`numbers-applied.md`**) | Do not dump the whole Intermediate. Digitless, exponents, bare OoM, and the spoken comma live on **`digitless-exponents.md`** |
+| 15 | `digitless-exponents.md` | Intermediate | **exists** | Digitless amounts (`gram` / `gral` / `grar`); *how many?* / *how big?*; exponents; bare OoM; group separator | No Beginner slot. Recycle = all Beginner + numbers Intermediate (markers, endings, PoS, number as verb) |
 | 15 | `numbers-applied.md` | Intermediate | **exists** | Digit-string labels; clock / calendar time; percent vs points; measure phrases; ranges — as taught in this stage | One topic per item |
-| 15 | `numbers.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp **as used in the stage’s teach examples** — not unassigned cells | — |
+| 15 | `numbers.md` | Advanced | **exists** | From the end (`#-` / `ue`); stacked markers (`#_` / `+-`); ambient magnitude **as used in the stage’s teach examples** | — |
+| 15 | `digitless-exponents.md` | Advanced | **exists** | Digitless exponents / hyperbole / zero×exp / special stance **as used in the stage’s teach examples** — not unassigned cells | Recycle sibling Intermediate |
 | 15 | `comparatives.md` | Intermediate | **exists** | Full comparative arity; manner `/h/` immediately after the join; PLAN bar right before the join | |
 | 15 | `comparatives.md` | Advanced | **exists** | Stance bars (channels, FORMER, ABIL, REQUIRE, attitudes); bar inside vs stance after the fence | |
 | 15 | `causation.md` | Intermediate | **exists** | Following-sentence **`blarl`**; **`ahu`** *because* / **`ehe`** *iff*; asserted necessary **`thebom thahum`**; **CAUSE** **`ewe`** **-m** | Recycle Beginner *if* / *only if* and `/h/` vs `/ɡ/` |
@@ -402,6 +406,9 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **`hal`/`hual`/`har`** | `restrictors.md` Beginner |
 | Span brackets / `<>` | `spans.md` Beginner |
 | spelled counts / ordinals / `gral` (no shorthand) | `numbers.md` Beginner |
+| Digitless blanks (`grar`); exponents; bare OoM; group separator | `digitless-exponents.md` Intermediate |
+| Digitless exponents / hyperbole / zero×exp | `digitless-exponents.md` Advanced |
+| From the end (`#-`); stacked markers | `numbers.md` Advanced |
 | SHARED scale comparatives | `comparatives.md` Beginner |
 | Causal poles *if* / *only if* (`thohom` / `thebom`) | `causation.md` Beginner |
 | **CAUSE** **`ewe`** / **`thewem`** | `causation.md` Intermediate |

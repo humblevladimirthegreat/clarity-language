@@ -20,6 +20,7 @@ export const readingOrder = [
   { text: 'Relations', link: '/relations' },
   { text: 'Spans', link: '/spans' },
   { text: 'Numbers', link: '/numbers' },
+  { text: 'Digitless and exponents', link: '/digitless-exponents' },
   { text: 'Comparatives', link: '/comparatives' },
   { text: 'Causation', link: '/causation' },
   { text: 'Sakes', link: '/sakes' },

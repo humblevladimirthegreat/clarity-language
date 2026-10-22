@@ -237,7 +237,7 @@ describe("resolve — span and number anaphors", () => {
     assert.equal(num!.antecedent?.raw, "z+3");
   });
 
-  it("digitless z=+ is not a resume; under question it is a fill-ask (numbers.md#digitless)", () => {
+  it("digitless z=+ is not a resume; under question it is a fill-ask (digitless-exponents.md#digitless)", () => {
     const statement = resolveOf("z+3 vawalal. z=+ vayul.");
     assert.equal(statement.anaphors.some((a) => a.kind === "number"), false);
     const question = resolveOf("yol zagozolx g=+ vayul.");

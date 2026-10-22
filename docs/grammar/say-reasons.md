@@ -580,7 +580,7 @@ English *deserve* says something is owed without saying why. Name the ground. It
 
 ### Clear, honest, false, general, proud {#trait-words}
 
-**Needs:** [Negation](joins.md#negation-u) · [Universals, domains and generics](joins.md#universals-domains-generics) · [Fault](causation.md#fault) · [Emotion compose](sakes.md#emotion-compose) · [Number as stance](numbers.md#special-number-as-stance)
+**Needs:** [Negation](joins.md#negation-u) · [Universals, domains and generics](joins.md#universals-domains-generics) · [Fault](causation.md#fault) · [Emotion compose](sakes.md#emotion-compose) · [Number as stance](digitless-exponents.md#special-number-as-stance)
 
 Many English adjectives are the plain opposite of something that has a root (*unclear*, *honest*, *false*). Agebon says the positive root and closes it with **`gul`** (*not*). Others claim how far something holds (*general*, *universal*, *absolute*). That is the universal fence: closed for no exceptions, open for *as a rule*. A few are a feeling (*proud*), which is an emotion compose, so the sake and the stimulus are named.
 

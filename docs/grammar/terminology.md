@@ -160,7 +160,7 @@ A parenthetical comment span (`th(…)` on the sentence; `g(…)`, `w(…)`, or 
 
 Digitless exponent naming a magnitude band (`grawamol`, `grawagel`).
 
-[Numbers](numbers.md#bare-oom-bands)
+[Digitless and exponents](digitless-exponents.md#bare-oom-bands)
 
 ### Bar
 
@@ -305,13 +305,13 @@ A full sentence that fills a [stand-in](#stand-in) slot (`darl` / `barl` / `dorl
 
 Number word with marker and ending but no digit groups.
 
-[Numbers](numbers.md#digitless)
+[Digitless and exponents](digitless-exponents.md#digitless)
 
 ### Digitless exponent
 
 Advanced free-number specials (`+e`, `-e-`, `+0e`, …). **Just short** is free `-e-`.
 
-[Numbers](numbers.md#digitless-exponents), [just short](numbers.md#just-short)
+[Digitless and exponents](digitless-exponents.md#special-values), [just short](digitless-exponents.md#just-short)
 
 **Compare with:** [quasi](#quasi) is the numeric prefix `-e-xROOT`. **NOTIONAL** is the as-if [mood](#mood-tags), not a number.
 

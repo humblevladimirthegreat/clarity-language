@@ -1,7 +1,7 @@
 # Numbers in use
 <a id="numbers-applied"></a>
 
-A number word can do more than count. This page shows how to write a code or label (*room 12*), a clock time or date, an amount of a unit (*two meters*), a range (*3 to 5*), and a percent. How the number word itself is built (markers, endings, exponents, writing) is in [numbers.md](numbers.md).
+A number word can do more than count. This page shows how to write a code or label (*room 12*), a clock time or date, an amount of a unit (*two meters*), a range (*3 to 5*), and a percent. How the number word itself is built (markers, endings, writing) is in [numbers](numbers.md); unspecified amounts, exponents, and the spoken comma are in [digitless and exponents](digitless-exponents.md).
 
 ## Intermediate {#intermediate}
 
@@ -17,7 +17,7 @@ When English uses a number as a **code** (a phone, room, channel, or serial numb
 >
 > "Uzozen sees 555-123-4567."
 
-Ending is usually **-l** (exact label); **-n** for an official designation; **-r** with digits repeats a code already mentioned. Digitless `dror` / `gror` is *some code*, or *what number?* in a question; digitless **-l** `…_` is an unspecified label ([digitless](numbers.md#digitless)).
+Ending is usually **-l** (exact label); **-n** for an official designation; **-r** with digits repeats a code already mentioned. Digitless `dror` / `gror` is *some code*, or *what number?* in a question; digitless **-l** `…_` is an unspecified label ([digitless](digitless-exponents.md#digitless)).
 
 **For numeric *plus or minus*, use:** [sign](numbers.md#sign) on a count or ordinal. A label keeps its digits exactly as written.
 
@@ -25,7 +25,7 @@ To place an event by a code (*on channel 7*), put the code in a `bl-` word after
 
 #### Fields {#code-fields}
 
-A comma in a code marks a **field**: a part that is a value of its own, such as the hour in a clock time or the area code in a phone number. Each comma is spoken **`the`** ([group separator](numbers.md#group-separator)). The comma is part of the code, so `h_15,30` and `h_1530` are different words.
+A comma in a code marks a **field**: a part that is a value of its own, such as the hour in a clock time or the area code in a phone number. Each comma is spoken **`the`** ([group separator](digitless-exponents.md#group-separator)). The comma is part of the code, so `h_15,30` and `h_1530` are different words.
 
 | Rule | Examples |
 |------|----------|
@@ -121,7 +121,7 @@ Clock and date together:
 >
 > "Uzozen walked in 1962."
 
-Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** with digits repeats a clock time or date already mentioned; digitless `hror` asks *when?* / *what time?* in a question ([digitless](numbers.md#digitless)). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
+Endings: **-l** exact; **-m** fuzzy (*around 15:30*); **-n** conventional schedule or date name; **-r** with digits repeats a clock time or date already mentioned; digitless `hror` asks *when?* / *what time?* in a question ([digitless](digitless-exponents.md#digitless)). Timezone, era, and calendar system are ordinary lexicon `/h/` beside the number word.
 
 For *from … to* with clock times, put each time in `/b/` after the hooks **`ul`** *from* and **`oel`** *toward* ([extra nouns](hooks.md#extra-noun-intermediate)). Right after an `ul` extra noun, `oel` and its `/b/` close the pair: `ul X oel Y` is one unit, *from X to Y*, not a [range](hooks.md#ranges). It works for any two endpoints, not only times.
 
@@ -282,7 +282,7 @@ To give a percent of a whole (*25% of the cats*), end a **count** number (`ra` /
 | **`yo`** | percent (portion of a whole) | everyday percent figure (`25` in `25%`); those digits ÷ 100 |
 | **`yu`** | percentage points (point-scale amount or delta) | point figure (`2` in `+2%*`); those digits ÷ 100 |
 
-Digits follow the [normal digit rules](numbers.md#exponents) (including optional **`ye`** inside the percent/point reading). Say the digits you mean (`g+100%` → spoken `grabamomoyol`).
+Digits follow the [normal digit rules](digitless-exponents.md#exponents) (including optional **`ye`** inside the percent/point reading). Say the digits you mean (`g+100%` → spoken `grabamomoyol`).
 
 Order: integer digits, optional **`ye`** + fractional digits, then **`yo`** or **`yu`**. **`yo`** / **`yu`** sit on **`ra`** / **`ru`** only. At most one **`yo`** or **`yu`** group in the number word; leave **`wa`** / **`wu`** off that word. Endings still apply (**-l** exact, **-m** about, **-n** conventional label, **-r** resume).
 
@@ -535,7 +535,7 @@ English shortens a long title to its initials (*FBI*). Agebon does too: take eac
 <a id="numeric-thresholds"></a>
 <a id="greater-less-than"></a>
 
-English *5 or more* / *less than 5* is a **ray**: a band with only one end. Write it as a [range](#ranges) whose other end is infinity: **`zrawal`** (+∞) or **`zruwal`** (−∞), the [digitless exponents](numbers.md#digitless-exponents). The same **`al`** / **`ul`** rules apply, so the hook excludes the endpoint after it.
+English *5 or more* / *less than 5* is a **ray**: a band with only one end. Write it as a [range](#ranges) whose other end is infinity: **`zrawal`** (+∞) or **`zruwal`** (−∞), the [digitless exponents](digitless-exponents.md#special-values). The same **`al`** / **`ul`** rules apply, so the hook excludes the endpoint after it.
 
 > `zrazal al zrawal.`
 >

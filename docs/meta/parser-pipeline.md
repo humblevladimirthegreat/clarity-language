@@ -267,6 +267,7 @@ The docs site bundles the parser and lexicon search through Vite (`@parse-browse
 | Hosted relations | [relations.md](../grammar/relations.md) |
 | Mid-word **`x`** families | [compounds.md](../grammar/compounds.md) |
 | Numbers | [numbers.md](../grammar/numbers.md) |
+| Digitless and exponents | [digitless-exponents.md](../grammar/digitless-exponents.md) |
 | Joins | [joins.md](../grammar/joins.md) |
 | Spans | [spans.md](../grammar/spans.md) |
 | Pronouns / **-r** | [pronouns.md](../grammar/pronouns.md) |

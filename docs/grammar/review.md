@@ -639,6 +639,18 @@ anyway | z-Ahelan | v-walk
 **Rule:** [Point back](discourse-hooks.md#hook-resume)
 :::
 
+**11.** *How many cookies does Uzozen see?* `yol dugedolx grar zuzozen vawebol.` or `yol dugedolx grer zuzozen vawebol.`
+
+::: details Show answer
+`yol dugedolx grar zuzozen vawebol.`
+
+y-question | [d-cookie-x | g-how-many] | z-Uzozen | v-see
+
+**-r** on the count marker asks *how many?*; **`re`** would ask *which place?*
+
+**Rule:** [How many?](digitless-exponents.md#how-many)
+:::
+
 #### What changes {#intermediate-what-changes}
 
 **1.** `zolazun vavuvul hanurul hul.` / `zolazun vavuvul hanurul hual.`
@@ -798,7 +810,7 @@ z-Uzozen | [d-baguette-x | g-plus-infinity.about] | v-see
 
 Open **-m** keeps the amount finite, just very large; **`grawal`** is infinitely many.
 
-**Rule:** [Digitless exponents](numbers.md#digitless-exponents)
+**Rule:** [Special values](digitless-exponents.md#special-values)
 :::
 
 **4.** *Uzozen, whom I remember as sleepy, is sleeping.* `zuzozen wevum guzemol vezuvol.` or `zuzozen guzemol vezuvol thevum.`
@@ -823,6 +835,18 @@ z-Uzozen | v-command | z-Olazun | v-cook
 **`vern`** takes the next sentence as an instruction; **`varn`** would only state that Olazun cooks.
 
 **Rule:** [Lexicalized stand-ins in other roles](dependents.md#stand-in-roles)
+:::
+
+**6.** *There is a second-to-last baguette.* `zebodel gruedol.` or `zebodel gredol.`
+
+::: details Show answer
+`zebodel gruedol.`
+
+z-baguette | g-2nd-from-end
+
+**`rue`** counts from the end; **`re`** would be the second baguette from the start.
+
+**Rule:** [From the end](numbers.md#from-the-end)
 :::
 
 #### Fix it {#advanced-fix-it}

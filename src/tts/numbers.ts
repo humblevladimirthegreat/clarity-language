@@ -143,7 +143,7 @@ export function numberStemToSpeechStressed(stem: NumberStem, table = NUMBER_SYLL
   const stress: number[] = [];
   // Calendar-ordinal dates (`_` + `#`, numbers.md § Time) speak the digraph marker `roe`.
   const marker = stem.calendarOrdinal ? "roe" : markerToSpeech(stem.marker);
-  // Spoken comma (numbers.md#group-separator).
+  // Spoken comma (digitless-exponents.md#group-separator).
   const separator = "the";
   let text = marker;
   if (stem.groups.length === 0 && !stem.digitlessExp) {

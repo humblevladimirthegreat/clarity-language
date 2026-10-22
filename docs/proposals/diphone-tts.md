@@ -82,7 +82,7 @@ Public helpers: `previewSpeech(text)`, `previewPhonemes(text)`, `skipLabel(reaso
 | Free-number shorthand (`g+3`, `g#-2`, `d_…`, `%`, …) | Full CV number word, group-final stress mark `ˈ` | [numbers.md](../grammar/numbers.md#writing-preferred-shorthand) |
 | Span brackets (`d[…]`, `d@[Hamlet]`, `th(…)`, …) | Open word + interior tokens + close when required | [spans.md](../grammar/spans.md#writing-vs-speech) |
 | Span anaphor / empty (`d[=]`, `d[]`) | Spoken open only | same |
-| Orthographic digit-group commas | Spoken separator per numbers.md | [numbers.md](../grammar/numbers.md#group-separator) |
+| Orthographic digit-group commas | Spoken separator per numbers.md | [digitless-exponents.md](../grammar/digitless-exponents.md#group-separator) |
 | `.` / `?` / `!`, soft **-m** body | Boundary tags `period` / `qmark` / `bang` / `softM` | [dependents.md](../grammar/dependents.md#orthography-and-prosody-periods) |
 | `/x/` continue vs new `/y/` turn | `xContinue` / `yTurn` | same |
 | Scope island `^ … ^` | `islandEnter` / `islandExit`; no spoken words | [spans.md](../grammar/spans.md#scope-islands) |

@@ -40,7 +40,7 @@ export const TIME_HOOKS = new Set(["al", "ol", "ul", "oel", "om", "ar", "or", "u
 /** The bare restrictors an `/h/` hooked join bounds (restrictors.md): *never*, *always*, and the **-r** occasions. */
 export const TIME_JOINS = new Set(["al", "am", "ual", "uam", "ar", "or", "ur", "er"]);
 
-/** Digitless number stem: no digit groups and no exponent shorthand (numbers.md § digitless). */
+/** Digitless number stem: no digit groups and no exponent shorthand (digitless-exponents.md § digitless). */
 export function isDigitless(stem: NumberStem): boolean {
   return stem.groups.length === 0 && !stem.digitlessExp;
 }

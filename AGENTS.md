@@ -42,7 +42,8 @@ Each row names what the file owns. The file is the authority; this table is only
 | `roles.md` | Role compounds, viewpoint laterals, landmark facing, gravity. |
 | `compounds.md` | Mid-word `x` families and the mid-word `th` seam, dictionary compounds, conversation length, root tails, tail suffixes. |
 | `spans.md` | Span fences, asides, scope islands. |
-| `numbers.md` | Numerals, digitless forms, exponents, stance numbers, group separator, writing style. |
+| `numbers.md` | Numerals, markers, endings, stance numbers, writing style. |
+| `digitless-exponents.md` | Digitless forms, exponents, bare OoM, group separator. |
 | `numbers-applied.md` | Digit strings, time and date, ranges, measure phrases. |
 | `numeric-derivation.md` | Numeric prefixes: number + `x` + root (advanced only). |
 | `review.md` | **Level reviews**: one `### Practice` band per level, read after every stage page; adds no forms and no words, [level reviews](docs/meta/translation-exercises.md#level-reviews). |

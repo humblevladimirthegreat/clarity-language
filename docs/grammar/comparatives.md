@@ -328,7 +328,7 @@ When English would say *Olazun walks more intensely than Uzozen*, you rank **how
 
 ### Amount scale (`gral`) {#amount-scale}
 
-When English would say *more cats than dogs*, you rank **how many**, not a quality. Keep the rank join. For the shared word, write the [digitless number](numbers.md#digitless) **`gral`**: after a rank join it means *by amount*.
+When English would say *more cats than dogs*, you rank **how many**, not a quality. Keep the rank join. For the shared word, write the [digitless number](digitless-exponents.md#digitless) **`gral`**: after a rank join it means *by amount*.
 
 > `zagozolx zudozolx zel gral.`
 >

@@ -175,7 +175,7 @@ function classifySharedRole(join: LexWord, shared: CoordShared): SharedRole {
   return "ordinary";
 }
 
-/** Digitless number **-r** (`g=+`): *some number*, or a fill-ask blank under question — not a resume (numbers.md#digitless). */
+/** Digitless number **-r** (`g=+`): *some number*, or a fill-ask blank under question — not a resume (digitless-exponents.md#digitless). */
 export function isDigitlessNumberBlank(word: LexWord): boolean {
   const family = word.family;
   return family.kind === "number" && word.ending === "r" && isDigitless(family.stem);

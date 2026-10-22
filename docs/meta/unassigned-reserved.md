@@ -38,7 +38,7 @@ Source: [numbers.md](../grammar/numbers.md), [numeric-derivation.md](../grammar/
 
 ### Other `±0eN` / `±0e-N` for `N≠1`
 
-- Positive **`…0eN`** and other **`±0eN`** / **`±0e-N`** bands. Only **`±0e-1`** is assigned ([zero × exponent](../grammar/numbers.md#zero-exponent)); no job has asked for a wipe or residue at another named scale.
+- Positive **`…0eN`** and other **`±0eN`** / **`±0e-N`** bands. Only **`±0e-1`** is assigned ([zero × exponent](../grammar/digitless-exponents.md#zero-exponent)); no job has asked for a wipe or residue at another named scale.
 
 ### Codes (`_`)
 

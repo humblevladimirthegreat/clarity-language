@@ -7,7 +7,7 @@ outline: false
 
 # Numbers cheat sheet {#numbers-cheat-sheet}
 
-A quick look at [numbers](../numbers.md) and [numbers in use](../numbers-applied.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced. Written shorthand is used from two digits up; zero, one digit, or none stays spelled.
+A quick look at [numbers](../numbers.md), [digitless and exponents](../digitless-exponents.md), and [numbers in use](../numbers-applied.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced. Written shorthand is used from two digits up; zero, one digit, or none stays spelled.
 
 ## Building a number word {#build}
 
@@ -57,8 +57,8 @@ A sign applies once to the whole word; a label never takes one. In other slots t
 <!-- cheat-sheet: numbers -->
 | Written | Spoken | Use | Stage |
 |---------|--------|-----|-------|
-| [*(none)*](../numbers.md#number-endings): `g+3`, `g+` | **-l** | exact, newly stated | B |
-| [**`~`**](../numbers.md#number-endings): `g~+3`, `g~+`, [`g~+27e6`, `g~#2`](../numbers.md#ending-marks-second-slot-after-pos) | **-m** | approximate: *about N* | I |
+| [*(none)*](../numbers.md#number-endings): `g+3`, `g+`, [`d_12`](../numbers.md#ending-marks-second-slot-after-pos) | **-l** | exact, newly stated | B |
+| [**`~`**](../numbers.md#number-endings): `g~+3`, `g~+`, [`g~+12`, `g~#2`](../numbers.md#ending-marks-second-slot-after-pos) | **-m** | approximate: *about N* | I |
 | [**`@`**](../numbers.md#number-endings): `g@#2`, [`g@_12`](../numbers.md#ending-marks-second-slot-after-pos) | **-n** | conventional title or label | I |
 | [**`=`**](../numbers.md#number-endings): `g=+3`, `g=#2`, `d=_12` | **-r** | resume a number already given (needs a digit) | I |
 
@@ -70,11 +70,11 @@ Digitless **-r** is not a resume: `grar` is *some number* in a statement and *wh
 | Speech | Writing | Stage |
 |--------|---------|-------|
 | [digit syllables `ba` … `mo`](../numbers.md#body) | `0`–`9` | I |
-| [`wa` / `wu`](../numbers.md#body) | `e` / `e-` | I |
-| [group separator `the`](../numbers.md#body) | `,` | I |
-| [`ye`](../numbers.md#body) | `.` | I |
-| [`yo`](../numbers.md#body) | `%` | I |
-| [`yu`](../numbers.md#body) | `%*` | I |
+| [`wa` / `wu`](../digitless-exponents.md#exponents) | `e` / `e-` | I |
+| [group separator `the`](../digitless-exponents.md#group-separator) | `,` | I |
+| [`ye`](../digitless-exponents.md#exponents) | `.` | I |
+| [`yo`](../digitless-exponents.md#exponents) | `%` | I |
+| [`yu`](../digitless-exponents.md#exponents) | `%*` | I |
 
 <!-- cheat-sheet: numbers -->
 | Value | Writing | Reading | Stage |
@@ -98,28 +98,28 @@ Drop every digit and the word says what kind of number, not its value. With **-r
 <!-- cheat-sheet: numbers -->
 | Marker | Writing | Unspecified | Stage |
 |--------|---------|-------------|-------|
-| [**`ra`**](../numbers.md#digitless) | `…+` | positive amount, specialized to *more than one* | I |
-| [**`ru`**](../numbers.md#digitless) | `…-` | a negative amount | I |
-| [**`re`**](../numbers.md#digitless) | `…#` | a rank from the start | I |
-| [**`ro`**](../numbers.md#digitless) | `…_` | a digit-string or label | I |
+| [**`ra`**](../digitless-exponents.md#digitless) | `…+` | positive amount, specialized to *more than one* | I |
+| [**`ru`**](../digitless-exponents.md#digitless) | `…-` | a negative amount | I |
+| [**`re`**](../digitless-exponents.md#digitless) | `…#` | a rank from the start | I |
+| [**`ro`**](../digitless-exponents.md#digitless) | `…_` | a digit-string or label | I |
 
 <!-- cheat-sheet: numbers -->
 | Agebon | Use | English | Stage |
 |--------|-----|---------|-------|
-| [`g=+` (`grar`)](../numbers.md#how-many) | fill a count or amount | *How many?* / *How much?* | I |
-| [`g=#` (`grer`)](../numbers.md#how-many) | fill a place in order | *Which place?* | I |
-| [`g=_` (`gror`)](../numbers.md#how-many) | fill a code or label | *What number?* | I |
+| [`g=+` (`grar`)](../digitless-exponents.md#how-many) | fill a count or amount | *How many?* / *How much?* | I |
+| [`g=#` (`grer`)](../digitless-exponents.md#how-many) | fill a place in order | *Which place?* | I |
+| [`g=_` (`gror`)](../digitless-exponents.md#how-many) | fill a code or label | *What number?* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [A few](../numbers.md#digitless): open `gram` | `zagozolx gram vuhohol.` | *A few cats sit.* | I |
-| [Some, on a mass noun](../numbers.md#digitless) | `zududal gral vuhohol.` | *Some tea sits there.* | I |
-| [Some amount](../numbers.md#digitless) | `zuzozen drar vawebol.` | *Uzozen sees some number of them.* | I |
-| [How many?](../numbers.md#digitless) | `yol drar zuzozen vawebol.` | *How many does Uzozen see?* | I |
-| [How many cats?](../numbers.md#how-many) | `yol dagozolx grar zuzozen vawebol.` | *How many cats does Uzozen see?* | I |
-| [Which place?](../numbers.md#how-many) | `yol ol brer zolazun vuhohol.` | *Which place does Olazun sit in?* (first, second, and so on) | I |
-| [How big?](../numbers.md#how-big): blank on `/w/` | `yol wrar gelazom zudozol.` | *How big is the dog?* | I |
-| [How fast?](../numbers.md#how-big) | `yol wrar hedurem zudozol varuvel.` | *How fast does the dog run?* | I |
+| [A few](../digitless-exponents.md#digitless): open `gram` | `zagozolx gram vuhohol.` | *A few cats sit.* | I |
+| [Some, on a mass noun](../digitless-exponents.md#digitless) | `zududal gral vuhohol.` | *Some tea sits there.* | I |
+| [Some amount](../digitless-exponents.md#digitless) | `zuzozen drar vawebol.` | *Uzozen sees some number of them.* | I |
+| [How many?](../digitless-exponents.md#digitless) | `yol drar zuzozen vawebol.` | *How many does Uzozen see?* | I |
+| [How many cats?](../digitless-exponents.md#how-many) | `yol dagozolx grar zuzozen vawebol.` | *How many cats does Uzozen see?* | I |
+| [Which place?](../digitless-exponents.md#how-many) | `yol ol brer zolazun vuhohol.` | *Which place does Olazun sit in?* (first, second, and so on) | I |
+| [How big?](../digitless-exponents.md#how-big): blank on `/w/` | `yol wrar gelazom zudozol.` | *How big is the dog?* | I |
+| [How fast?](../digitless-exponents.md#how-big) | `yol wrar hedurem zudozol varuvel.` | *How fast does the dog run?* | I |
 
 *Many*, *few*, *enough*, and *too much* are [comparatives](../comparatives.md#vague-amounts), not number words. Do not confuse the blank on `/h/` with `har` *sometimes*.
 
@@ -130,31 +130,31 @@ An **exponent** is a power of ten before the mantissa digits: **`wa`** positive,
 <!-- cheat-sheet: numbers -->
 | Form | Band | Reading | Stage |
 |------|------|---------|-------|
-| [`g+e0`](../numbers.md#bare-oom) | 1–9 | *ones* | I |
-| [`g+e1`](../numbers.md#bare-oom) | 10–99 | *tens* | I |
-| [`g+e2`](../numbers.md#bare-oom) | 100–999 | *hundreds* | I |
-| [`g+e3`](../numbers.md#bare-oom) | 1000–9999 | *thousands* | I |
-| [`g+e6`](../numbers.md#bare-oom) | 10⁶ up | *millions* band only | I |
-| [`g-e3`](../numbers.md#bare-oom) | negative | negative thousands band | I |
+| [`g+e0`](../digitless-exponents.md#bare-oom) | 1–9 | *ones* | I |
+| [`g+e1`](../digitless-exponents.md#bare-oom) | 10–99 | *tens* | I |
+| [`g+e2`](../digitless-exponents.md#bare-oom) | 100–999 | *hundreds* | I |
+| [`g+e3`](../digitless-exponents.md#bare-oom) | 1000–9999 | *thousands* | I |
+| [`g+e6`](../digitless-exponents.md#bare-oom) | 10⁶ up | *millions* band only | I |
+| [`g-e3`](../digitless-exponents.md#bare-oom) | negative | negative thousands band | I |
 
 The next bands, `e4` and `e5`, are tens and hundreds of thousands. Soft `grawagem` is *about in the thousands band*. An exact count inside a band takes a mantissa (`g+4e3` is 4000).
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Exponent](../numbers.md#exponents) | `g+27e12` | *27 × 10¹²* | I |
-| [Decimal](../numbers.md#exponents) | `g+5.2` | *5.2* | I |
-| [Several groups](../numbers.md#group-separator) | `g+5e3,860` | *5860* | I |
-| [Seat in a row](../numbers.md#group-separator) | `zozohol g#2,3.` | *There is seat 2 in row 3.* | I |
+| [Exponent](../digitless-exponents.md#exponents) | `g+27e12` | *27 × 10¹²* | I |
+| [Decimal](../digitless-exponents.md#exponents) | `g+5.2` | *5.2* | I |
+| [Several groups](../digitless-exponents.md#group-separator) | `g+5e3,860` | *5860* | I |
+| [Seat in a row](../digitless-exponents.md#group-separator) | `zozohol g#2,3.` | *There is seat 2 in row 3.* | I |
 
 Each comma is spoken as the separator **`the`**, on every marker.
 
 <!-- cheat-sheet: numbers -->
 | Example | Use | English | Stage |
 |---------|-----|---------|-------|
-| [`g+5e3,860`](../numbers.md#group-separator) | count | *5860* | I |
-| [`g-1e9,265e3,4`](../numbers.md#group-separator) | negative count | *−1,000,265,004* | I |
-| [`g#2,3`](../numbers.md#group-separator) | rank | *2nd within the 3rd* | I |
-| [`d_555,123,4567`](../numbers.md#group-separator) | code | *555-123-4567* | I |
+| [`g+5e3,860`](../digitless-exponents.md#group-separator) | count | *5860* | I |
+| [`g-1e9,265e3,4`](../digitless-exponents.md#group-separator) | negative count | *−1,000,265,004* | I |
+| [`g#2,3`](../digitless-exponents.md#group-separator) | rank | *2nd within the 3rd* | I |
+| [`d_555,123,4567`](../digitless-exponents.md#group-separator) | code | *555-123-4567* | I |
 
 On a rank, each comma opens a place within the one before. A large ordinal is one group (`g#1005`).
 
@@ -167,7 +167,7 @@ The role letter picks the use; the marker still says amount, rank, or code. Only
 | Slot | `ra` `+` | `ru` `-` | `re` `#` | `ro` `_` | Stage |
 |------|----------|----------|----------|----------|-------|
 | [`/v/` verb](../numbers.md#number-as-verb-by-marker) | add N | remove N | take place N | enter / dial the code | I |
-| [`/h/` adverb](../numbers.md#number-as-adverb-by-marker) | *N times* | *÷N*, *every Nth* | *for the Nth time* | clock time (`h_15,30`) | I |
+| [`/h/` adverb](../numbers.md#number-as-adverb-by-marker) | *N times* | *÷N*, *every Nth* | *for the Nth time* | clock time | I |
 | [`/y/` shout](../numbers.md#number-as-interjection-by-marker) | *N more!* | *N short!* | *First!* | *Three!* (a score) | I |
 | [`/x/` list point](../numbers.md#number-as-discourse-marker-by-marker) | corroborating N | independent N | point N | cite label N | I |
 | [`/th/` stance](../numbers.md#number-as-stance-by-marker) | N% likely | unlikely | N-th hand | per source N | I |
@@ -343,25 +343,25 @@ A digitless exponent (**`e`** speech `wa`, **`e-`** speech `wu`, no digits after
 <!-- cheat-sheet: numbers -->
 | Form | Reading | Stage |
 |------|---------|-------|
-| [`g+e`](../numbers.md#special-referential) | +∞ | A |
-| [`g~+e`](../numbers.md#special-referential) | arbitrarily large but finite | A |
-| [`g+e-`](../numbers.md#special-referential) | arbitrarily small but finite | A |
-| [`g-e`](../numbers.md#special-referential) | −∞ | A |
-| [`g#e`](../numbers.md#special-referential) | last place | A |
-| [`g~#e`](../numbers.md#special-referential) | near last place | A |
-| [`g#e-`](../numbers.md#special-referential) | start place (the onset); numbered 1st is `g#1` | A |
-| [`g~#e-`](../numbers.md#special-referential) | near first place | A |
-| [`g-e-`](../numbers.md#special-referential) | just short: a hair under; *almost* | A |
-| [`g~-e-`](../numbers.md#special-referential) | nearly | A |
+| [`g+e`](../digitless-exponents.md#special-referential) | +∞ | A |
+| [`g~+e`](../digitless-exponents.md#special-referential) | arbitrarily large but finite | A |
+| [`g+e-`](../digitless-exponents.md#special-referential) | arbitrarily small but finite | A |
+| [`g-e`](../digitless-exponents.md#special-referential) | −∞ | A |
+| [`g#e`](../digitless-exponents.md#special-referential) | last place | A |
+| [`g~#e`](../digitless-exponents.md#special-referential) | near last place | A |
+| [`g#e-`](../digitless-exponents.md#special-referential) | start place (the onset); numbered 1st is `g#1` | A |
+| [`g~#e-`](../digitless-exponents.md#special-referential) | near first place | A |
+| [`g-e-`](../digitless-exponents.md#special-referential) | just short: a hair under; *almost* | A |
+| [`g~-e-`](../digitless-exponents.md#special-referential) | nearly | A |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Infinitely many](../numbers.md#digitless-exponents) | `zagozolx grawal.` | *There are infinitely many cats.* | A |
-| [Uzozen barely sits](../numbers.md#special-number-as-verb-and-adverb) | `zuzozen h+e- vuhohol.` | *Uzozen barely sits.* | A |
-| [Uzozen almost sits](../numbers.md#special-number-as-verb-and-adverb) | `zuzozen h-e- vuhohol.` | *Uzozen almost sits.* | A |
-| [Almost angry](../numbers.md#special-number-as-verb-and-adverb) | `zudozol wruwul gunemul vowurel.` | *An almost angry dog walks.* | A |
-| [Finally:](../numbers.md#special-number-as-discourse) | `xrewal` | *Finally:* | A |
-| [Starting with:](../numbers.md#special-number-as-discourse) | `xrewul` | *Starting with:* | A |
+| [Infinitely many](../digitless-exponents.md#special-values) | `zagozolx grawal.` | *There are infinitely many cats.* | A |
+| [Uzozen barely sits](../digitless-exponents.md#special-number-as-verb-and-adverb) | `zuzozen h+e- vuhohol.` | *Uzozen barely sits.* | A |
+| [Uzozen almost sits](../digitless-exponents.md#special-number-as-verb-and-adverb) | `zuzozen h-e- vuhohol.` | *Uzozen almost sits.* | A |
+| [Almost angry](../digitless-exponents.md#special-number-as-verb-and-adverb) | `zudozol wruwul gunemul vowurel.` | *An almost angry dog walks.* | A |
+| [Finally:](../digitless-exponents.md#special-number-as-discourse) | `xrewal` | *Finally:* | A |
+| [Starting with:](../digitless-exponents.md#special-number-as-discourse) | `xrewul` | *Starting with:* | A |
 
 The same form on each slot: `gruwul` the amount, `xruwul` *just before that:*, `thruwul` *virtually*, `vruwul` *nudge down*, `hruwul` *almost*, `yruwul` *so close!* **-l** measures the margin (`hrawul` over by a hair, `hruwul` under); **-m** reports the felt effort (`hrawum` *managed it, just*; `hruwum` *tried hard and didn't quite*).
 
@@ -372,21 +372,21 @@ Mantissa **`0`** with a digitless exponent is a strong zero. A nonzero mantissa 
 <!-- cheat-sheet: numbers -->
 | Form | Reading | Stage |
 |------|---------|-------|
-| [`g+0e`](../numbers.md#zero-exponent-referential) | absolute zero | A |
-| [`g+0e-`](../numbers.md#zero-exponent-referential) | sterile: empty at the seed | A |
-| [`g-0e`](../numbers.md#zero-exponent-referential) | absolute residue: will not wipe | A |
-| [`g-0e-`](../numbers.md#zero-exponent-referential) | micro-residue | A |
-| [`g+0e-1`](../numbers.md#zero-exponent-referential) | engineering null at 10⁻¹ | A |
-| [`g-0e-1`](../numbers.md#zero-exponent-referential) | engineering residue at 10⁻¹ | A |
-| [`g#0e`](../numbers.md#rank-annihilated) | rank annihilated: disqualified | A |
+| [`g+0e`](../digitless-exponents.md#zero-exponent-referential) | absolute zero | A |
+| [`g+0e-`](../digitless-exponents.md#zero-exponent-referential) | sterile: empty at the seed | A |
+| [`g-0e`](../digitless-exponents.md#zero-exponent-referential) | absolute residue: will not wipe | A |
+| [`g-0e-`](../digitless-exponents.md#zero-exponent-referential) | micro-residue | A |
+| [`g+0e-1`](../digitless-exponents.md#zero-exponent-referential) | engineering null at 10⁻¹ | A |
+| [`g-0e-1`](../digitless-exponents.md#zero-exponent-referential) | engineering residue at 10⁻¹ | A |
+| [`g#0e`](../digitless-exponents.md#rank-annihilated) | rank annihilated: disqualified | A |
 
 <!-- cheat-sheet: numbers -->
 | Form | Reading | Stage |
 |------|---------|-------|
-| [`g+1e`](../numbers.md#digitless-exponents) | *one gazillion* | A |
-| [`g+3e`](../numbers.md#digitless-exponents) | *three gazillion* | A |
-| [`g+1e-`](../numbers.md#digitless-exponents) | *one gazillionth*, vanishingly small | A |
-| [`g-1e`](../numbers.md#digitless-exponents) | *minus one gazillion* | A |
+| [`g+1e`](../digitless-exponents.md#hyperbole) | *one gazillion* | A |
+| [`g+3e`](../digitless-exponents.md#hyperbole) | *three gazillion* | A |
+| [`g+1e-`](../digitless-exponents.md#hyperbole) | *one gazillionth*, vanishingly small | A |
+| [`g-1e`](../digitless-exponents.md#hyperbole) | *minus one gazillion* | A |
 
 Plain zero is `g+0` and the bare band at 10⁻¹ is `g+e-1`. `gramol` is plain zero, `gramowal` absolute zero, `grawamol` the ones band. A gazillionth is `g#1e` (late) and `g#1e-` (early): finite jokes. Other slots: `y+e` *To infinity!*, `y#e` *Finally!*, `y#0e` *Disqualified!*, `v+e` *increase without bound*, `v+0e` *annihilate*, `h+1e` *a gazillion times*, and on stance `th+e` *certain*, `th+0e` *no chance at all*.
 
@@ -460,16 +460,16 @@ Only kin make generations: friends and bosses are [social relations](../relation
 | This | vs | That |
 |------|----|------|
 | `gragel` *three* ([a count](../numbers.md#counts)) | | `gregel` *the third* ([a rank](../numbers.md#ordinals)) |
-| `gral` *more than one* ([an amount](../numbers.md#more-than-one)) | | `zagozolx` *cats* ([a group, with **-x**](../numbers.md#digitless)) |
-| `gram` *a few* ([a soft count](../numbers.md#digitless)) | | `gral` *more than one* ([a firm one](../numbers.md#more-than-one)) |
-| `grar` *how many?* ([a blank](../numbers.md#how-many)) | | `drager` *those three again* ([a resume, needs a digit](../numbers.md#digitless)) |
+| `gral` *more than one* ([an amount](../numbers.md#more-than-one)) | | `zagozolx` *cats* ([a group, with **-x**](../digitless-exponents.md#digitless)) |
+| `gram` *a few* ([a soft count](../digitless-exponents.md#digitless)) | | `gral` *more than one* ([a firm one](../numbers.md#more-than-one)) |
+| `grar` *how many?* ([a blank](../digitless-exponents.md#how-many)) | | `drager` *those three again* ([a resume, needs a digit](../digitless-exponents.md#digitless)) |
 | `hragel` *three times* ([a factor](../numbers.md#number-as-adverb-by-marker)) | | `h_15,30` *at 15:30* ([a clock time](../numbers-applied.md#time)) |
 | `hragel` *three times* ([a count of times](../numbers.md#number-as-adverb-by-marker)) | | `hregel` *for the third time* ([which time](../numbers.md#number-as-adverb-by-marker)) |
 | `gredol` *the second* ([from the start](../numbers.md#ordinals)) | | `gruedol` *second from the end* ([from the end](../numbers.md#from-the-end)) |
-| `grewal` *last place* ([the landmark](../numbers.md#from-the-end)) | | `grebal` *1st* ([numbered first](../numbers.md#special-referential)) |
-| `grewul` *the start landmark* ([the onset](../numbers.md#special-referential)) | | `grebal` *1st* ([a counted first](../numbers.md#special-referential)) |
-| `grawamol` *the ones band* ([bare OoM](../numbers.md#bare-oom)) | | `gramowal` *absolute zero* ([a strong zero](../numbers.md#zero-exponent-referential)) |
-| `gruwul` *just short* ([a hair under](../numbers.md#special-referential)) | | `grawul` *a hair over* ([a hair above zero](../numbers.md#special-referential)) |
+| `grewal` *last place* ([the landmark](../digitless-exponents.md#special-referential)) | | `grebal` *1st* ([numbered first](../digitless-exponents.md#special-referential)) |
+| `grewul` *the start landmark* ([the onset](../digitless-exponents.md#special-referential)) | | `grebal` *1st* ([a counted first](../digitless-exponents.md#special-referential)) |
+| `grawamol` *the ones band* ([bare OoM](../digitless-exponents.md#bare-oom)) | | `gramowal` *absolute zero* ([a strong zero](../digitless-exponents.md#zero-exponent-referential)) |
+| `gruwul` *just short* ([a hair under](../digitless-exponents.md#special-referential)) | | `grawul` *a hair over* ([a hair above zero](../digitless-exponents.md#special-referential)) |
 | `x#2` *point 2:* ([a numbered step](../numbers.md#examples)) | | `x#-2` *2nd from the end:* ([counting back](../numbers.md#from-the-end)) |
 | `x-2` *independent item 2:* ([a new line of support](../numbers.md#examples)) | | `x#-2` *2nd from the end:* ([counting back](../numbers.md#from-the-end)) |
 | `th+70` *70% likely* ([a stance](../numbers.md#number-as-stance-by-marker)) | | `thomam` *maybe* ([open, with no figure](../knowing.md#may)) |

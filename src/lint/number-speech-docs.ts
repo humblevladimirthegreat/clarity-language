@@ -3,8 +3,8 @@ import type { MorphWord } from "../parse/types.js";
 import { toSpeechText } from "../tts/plan.js";
 
 /**
- * Pronunciation rows on the number pages (numbers.md, numbers-applied.md,
- * numeric-derivation.md — numeric prefixes are spelled out, so it rarely needs rows).
+ * Pronunciation rows on the number pages (numbers.md, digitless-exponents.md,
+ * numbers-applied.md, numeric-derivation.md — numeric prefixes are spelled out, so it rarely needs rows).
  *
  * Every Agebon example line whose speech differs from its writing (shorthand
  * number words) carries a `🔊 \`spoken\`` row directly underneath. Spoken →
@@ -15,7 +15,7 @@ import { toSpeechText } from "../tts/plan.js";
 
 export const SPEECH_MARK = "🔊";
 
-export const NUMBER_SPEECH_FILES = ["numbers.md", "numbers-applied.md", "numeric-derivation.md"];
+export const NUMBER_SPEECH_FILES = ["numbers.md", "digitless-exponents.md", "numbers-applied.md", "numeric-derivation.md"];
 
 export type NumberSpeechFinding = {
   line: number;
