@@ -306,11 +306,18 @@ const GREETING_STANCE: Record<string, string> = {
   u: "passing",
 };
 
-/** Role word part consonants (roles.md#role-compounds). */
+/** Role word part consonants (roles.md#role-compounds, roles.md#content-of-the-event). */
 export const ROLE_PART: Record<string, string> = {
   z: "agent",
   d: "patient",
   b: "recipient",
+  h: "manner",
+  g: "state",
+  th: "stance",
+  w: "extent",
+  y: "move",
+  x: "outcome",
+  v: "event",
 };
 
 /** A role word's front: its label scope, then its part (`episode-agent`; glosses.md § Round trip). */

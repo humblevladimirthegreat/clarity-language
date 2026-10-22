@@ -988,6 +988,8 @@ function enforcePointer(bind: AnaphorBind): void {
   if (word.ending === "m" && word.plural) throw new ConstructionError("pointerSharePlural", word.raw);
   if (word.ending === "l" && bind.pointerVowel === "u") throw new ConstructionError("pointerNewUnsaid", word.raw);
   if (bind.ownSlot) throw new ConstructionError("pointerOwnSlot", word.raw);
+  if (bind.pointerVowel === "o" && bind.part === "g") throw new ConstructionError("pointerOtherState", word.raw);
+  if (bind.pointerVowel === "o" && bind.part === "w") throw new ConstructionError("pointerOtherExtent", word.raw);
   if (!bind.antecedent) throw new ConstructionError("pointerUnbound", word.raw);
   if (word.ending === "l" && bind.antecedent.family.kind === "content") {
     const special = bind.antecedent.family.roots.some((root) => rolePronounRoots().has(root)) || isGenericPronoun(bind.antecedent);

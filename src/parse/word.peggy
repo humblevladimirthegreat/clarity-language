@@ -625,8 +625,9 @@ xWord
 
 // Role pointer: `w` + label scope + part consonant + pointer vowel + **-r** / **-l** / **-m** (`zwazar`, `dwadal`,
 // `dwazam`; pronouns.md#role-pointers). The pointer vowel picks the event: `a` same, `o` other, `e` self, `u` unsaid.
-// **-r** names the participant, **-l** a new one of its kind, **-m** its part in the event. Then the word ends;
-// a compound's stem goes on (`zwazar` against `zwazarayel`).
+// **-r** names the participant or quality, **-l** a new one of its kind, **-m** its part in the event. Then the word
+// ends; a compound's stem goes on (`zwazar` against `zwazarayel`). Content parts (`h` `g` `th` `w` `y` `x` `v`)
+// follow the same shape (roles.md#content-of-the-event); `v` is pointers only.
 RolePointer
   = "w" scope:SeamVowel part:RolePart pointerV:[aeou] end:[rlm] plural:PluralSuffix? WordEnd {
       return {
@@ -644,9 +645,9 @@ RolePointer
 // Role compound: `w` + label scope + part consonant + stem + ending (`zwazuduyel`, roles.md#role-compounds). The stem
 // may itself be an ordinary compound (`zwazudozoxowurel` *someone who walks dogs*). Optional tail: ability (`x` +
 // stance vowel) on `/ɡ/` only (`gwezuduyexal` *can be a teacher*, intention.md#role-ability). Scope is written once,
-// at the front: no `th` seam after the stem.
+// at the front: no `th` seam after the stem. `v` forms no compounds (the event noun is the stem itself).
 RoleCompound
-  = "w" scope:SeamVowel part:RolePart root:ContentRoot rest:("x" r:ContentRoot { return r; })* ability:("x" v:[aeou] { return v; })? ending:Ending plural:PluralSuffix? WordEnd {
+  = "w" scope:SeamVowel part:RoleCompoundPart root:ContentRoot rest:("x" r:ContentRoot { return r; })* ability:("x" v:[aeou] { return v; })? ending:Ending plural:PluralSuffix? WordEnd {
       const fields = {
         leftRoots: [],
         scopeVowel: scope,
@@ -661,9 +662,15 @@ RoleCompound
       };
     }
 
-// Part consonant: the slot the participant had in the event (roles.md#role-compounds).
+// Part consonant: the slot or quality the word names (roles.md#role-compounds, roles.md#content-of-the-event).
 RolePart
-  = [zdb]
+  = "th" { return "th"; }
+  / [zdbhgywxv]
+
+// A role compound names a participant or a quality of a named event; `v` would only repeat the stem as an event noun.
+RoleCompoundPart
+  = "th" { return "th"; }
+  / [zdbhgywx]
 
 // Simplex or stacked seam after mid-word `th` (sakes.md; predication.md#label-scope).
 SeamVowel

@@ -1,10 +1,11 @@
 import type { OverlayKind } from "../lexicon-search.js";
 
 /**
- * Role word part consonant (roles.md#role-compounds): the slot the participant had in the event, `z` doer, `d` undergoer,
- * `b` the extra party.
+ * Role word part consonant (roles.md#role-compounds): the slot the participant had in the event (`z` doer, `d`
+ * undergoer, `b` the extra party), or a quality of the event (`h` manner, `g` state, `th` stance, `w` extent,
+ * `y` speech move, `x` outcome, `v` the event itself; roles.md#content-of-the-event).
  */
-export type RolePart = "z" | "d" | "b";
+export type RolePart = "z" | "d" | "b" | "h" | "g" | "th" | "w" | "y" | "x" | "v";
 
 /** Role pointer vowel: `a` same, `o` other, `e` self, `u` unsaid (pronouns.md#role-pointers). */
 export type PointerVowel = "a" | "e" | "o" | "u";

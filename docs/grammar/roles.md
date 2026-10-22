@@ -403,6 +403,54 @@ A role compound names a participant: the doer, what the event acts on or makes, 
 >
 > "Uzozen cooks with a knife. Ahelan cooks with it too."
 
+### Content of the event {#content-of-the-event}
+
+English *the way it was done*, *what it left them*, *what came of it*, or *that remark* names a quality of an event, not a person in it. Write the same role-word shape, and put a part consonant for that quality after the scope vowel: the word is then a thing you can talk about, resume, or point to.
+
+> `dwahowurel vawebol.`
+>
+> d-episode-manner-walk | v-see
+>
+> "Someone sees a way of walking."
+
+The stem is still the event. The part says which quality of it you mean. Pointers drop the stem and read the latest matching event, as [role pointers](pronouns.md#role-pointers) do for people:
+
+> `zuzozen vowurel hedurem. zahelan dwahar vawebol.`
+>
+> z-Uzozen | v-walk | h-haste . z-Ahelan | d-←episode-manner.same | v-see
+>
+> "Uzozen walks in haste. Ahelan sees the way it was done."
+
+If that clause named no manner word, `dwahar` is the event's own manner: how walking went, unnamed. A restrictor, a time pole, or a [say word](sakes.md#say-words) is already doing its own job on `/h/`, so the pointer skips it.
+
+| Part | Names | Compound | Pointer |
+|------|-------|----------|---------|
+| **`h`** | how, when, or where it happened | `dwahowurel` *a way of walking* | `dwahar` *the way it was done* |
+| **`g`** | the state it leaves its participant in | `dwaguguyel` *how cooked it is* | `dwagar` *the state it left them in* |
+| **`th`** | a reason, thought, or feeling about it | `dwathowurel` *a reason to walk* | `dwathar` *the reason for it* |
+| **`w`** | how much or how intense it was | `dwawowurel` *the amount of walking* | `dwawar` *how much it was* |
+| **`y`** | the turn that said it (question, command, remark) | `dwayowurel` *a remark about walking* | `dwayar` *that remark* |
+| **`x`** | what followed from it | `dwaxowurel` *what comes of walking* | `dwaxar` *what came of it* |
+| **`v`** | the event itself | (no compound: the event noun is the stem, `dowurel`) | `dwavar` *that event* |
+
+Scope **`a`** / **`e`** / **`o`** / **`u`** still say how far the label reaches: `dwehowurel` is *someone's usual way of walking*, `dwuhowurel` *a walking style*.
+
+A **`g`** pointer is the `/d/` participant's state when the event has one, and the `/z/` participant's otherwise. After *Uzozen punches Olazun*, `dwagar` is Olazun's state; after *Uzozen runs*, it is Uzozen's. **`w`** always reads the event's own extent: a `/w/` word grades the next adjective, never the event, so `dwawar` is *that much*. `dwagor` and `dwawor` are not words: no clause names a resulting state or an amount for *the other* to differ from.
+
+A **`th`** pointer reads [sake](sakes.md) words, feeling roots, and [causation poles](causation.md) on `/th/`. A channel, MAY, the notional, or a holder is the speaker's stance on the *claim*, not a stance on the event, so the pointer skips those too. With no such word, `dwathar` is still *the reason for it*: the gap the spelling fills.
+
+A **`y`** pointer reaches turns, not events: `dwayar` the latest turn, `dwayor` the one before it, `dwayer` this very turn, `dwayur` whatever was said. With **-m**, `dwayam` is what the saying did, apart from what it said.
+
+If the next sentence after an event opened with a [consequence linker](dependents.md#sentence-linkers) (`xahem` *therefore*, `xahel` *it follows that*), an **`x`** pointer is that sentence's event:
+
+> `zuzozen vanuvul. xahem zolazun varemul. zahelan dwaxar vawebol.`
+>
+> z-Uzozen | v-punch . x-therefore | z-Olazun | v-scream . z-Ahelan | d-←episode-outcome.same | v-see
+>
+> "Uzozen punches. Therefore Olazun screams. Ahelan sees what came of it."
+
+**Compare with:** a landmark is a thing (*the house*, *the knife*), reached by resuming its noun or with a hook pointer (`aer` *with it*). An **`h`** part is a quality of the event (*the haste*): *how* is `dwahar`. **`g`** is the state the event leaves its participant in; **`x`** is what happens next because of it.
+
 ### Viewpoint laterals (`DIR` × anchor) {#viewpoint-laterals}
 <a id="spatial-laterals"></a>
 <a id="my-left-your-left"></a>
@@ -606,12 +654,10 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *down* | `aduhel` |
 | *construct* | `veguyel` |
 | *swim* | `vazuvel` |
-| *write* | `varayel` |
 | *walk* | `vowurel` |
 | *run* | `varuvel` |
 | *sit* | `vuhohol` |
 | *see* | `vawebol` |
-| *scream* | `varemul` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
@@ -623,12 +669,12 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 z-Olazun | g-role-agent-theft
 :::
 
-**2.** *Ahelan builds. Uzozen sees what Ahelan built.*
+**2.** *Ahelan walks west. Uzozen sees the way it was done.*
 
 ::: details Show answer
-`zahelan veguyel. zuzozen dwadeguyer vawebol.`
+`zahelan vowurel howuhel. zuzozen dwahar vawebol.`
 
-z-Ahelan | v-construct . z-Uzozen | d-←episode-patient-construct | v-see
+z-Ahelan | v-walk | h-west . z-Uzozen | d-←episode-manner.same | v-see
 :::
 
 **3.** *Olazun goes toward the island. Uzozen sees the island.*
@@ -689,12 +735,12 @@ z-Ahelan | d-boat | v-construct . z-Olazun | d-←episode-patient.same | v-see
 *Ahelan builds a boat. Olazun sees it.*
 :::
 
-**4.** `zolazun vurozum. zwazurozur varemul.`
+**4.** `zahelan dwahurozum vawebol.`
 
 ::: details Show answer
-z-Olazun | v-steal . z-←episode-agent-steal | v-scream
+z-Ahelan | d-episode-manner-theft | v-see
 
-*Olazun steals. The one who stole screams.*
+*Ahelan sees a way of stealing.*
 :::
 
 **5.** `zuzozen vavobel oel belahol. zolazun vazuvel or.`
@@ -725,14 +771,14 @@ z-Uzozen | v-sit | [h-west-th-landmark | bl-boat]
 **`tho`** turns the arrow to the boat's own facing; bare `howuhel` is *west of the boat*.
 :::
 
-**2.** *Ahelan sees something written.* `zahelan dwadarayel vawebol.` or `zahelan dwazarayel vawebol.`
+**2.** *Ahelan sees a way of walking.* `zahelan dwahowurel vawebol.` or `zahelan dwazowurel vawebol.`
 
 ::: details Show answer
-`zahelan dwadarayel vawebol.`
+`zahelan dwahowurel vawebol.`
 
-z-Ahelan | d-episode-patient-write | v-see
+z-Ahelan | d-episode-manner-walk | v-see
 
-**`d`** names what the writing makes; **`z`** would be someone who writes.
+**`h`** names how walking goes; **`z`** would be someone who walks.
 :::
 
 #### Fix it {#intermediate-fix-it}

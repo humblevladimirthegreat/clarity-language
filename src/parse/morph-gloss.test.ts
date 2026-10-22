@@ -543,6 +543,9 @@ describe("compareMorphGloss", () => {
     expectLine("zuzozen vowurel. zwazar vuhohol", "z-Uzozen | v-walk . z-←episode-agent.same | v-sit");
     expectLine("zuzozen vawebol dwazer", "z-Uzozen | v-see | d-←episode-agent.self");
     expectLine("zuzozen zolazun zal vowurel. zwazarx vuhohol", "[z-Uzozen | z-Olazun | z-and] | v-walk . z-←episode-agent.same-x | v-sit");
+    expectLine("zuzozen vowurel. dwahar vawebol", "z-Uzozen | v-walk . d-←episode-manner.same | v-see");
+    expectLine("zuzozen vowurel. dwavar vawebol", "z-Uzozen | v-walk . d-←episode-event.same | v-see");
+    expectLine("dwahowurel", "d-episode-manner-walk");
   });
 
   it("quasi numeric derivation is English", () => {

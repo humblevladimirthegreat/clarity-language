@@ -36,7 +36,7 @@ const SCOPE_WORDS =
 const SCOPE_READER = `\`-th-\` plus a scope word after a label says how far the label reaches: ${SCOPE_WORDS}.`;
 
 const ROLE_READER =
-  `A role word \`SCOPE-PART-verb\` names one part of the verb's event: \`agent\` the one who does it, \`patient\` what it acts on or makes, \`recipient\` the one it is given or told to, or the other party of a relation. The scope word first says how far the label reaches: ${SCOPE_WORDS}. \`z-episode-agent-teach\` = someone who teaches (this time), \`z-role-agent-teach\` = a teacher, \`g-role-agent-teach\` = is a teacher.`;
+  `A role word \`SCOPE-PART-verb\` names one part of the verb's event: \`agent\` the one who does it, \`patient\` what it acts on or makes, \`recipient\` the one it is given or told to, or the other party of a relation; or a quality of that event: \`manner\` how, \`state\` what it left, \`stance\` the reason or feeling, \`extent\` how much, \`move\` the remark, \`outcome\` what followed. The scope word first says how far the label reaches: ${SCOPE_WORDS}. \`z-episode-agent-teach\` = someone who teaches (this time), \`z-role-agent-teach\` = a teacher, \`g-role-agent-teach\` = is a teacher, \`d-episode-manner-walk\` = a way of walking.`;
 
 /** Sentence grammar: `rule.childKey` (sub-rule, token type, or LABEL). */
 export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
@@ -234,7 +234,7 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
     anchor: "pronouns.md#role-pointers",
     summary: "role pointer",
     reader:
-      "`←SCOPE-PART.WHICH` is a pointer: the participant who had that part in an earlier event. `.same` the latest event with that part filled, `.other` the nearest one with someone else in it, `.self` this sentence's own, `.unsaid` the one whose filler was left unsaid. `.new` is a new one of that participant's kind, `.part` that participant's part in the event (what they did or had done to them). `z-←episode-agent.same` = they (the latest doer); `d-←episode-agent.self` = themself.",
+      "`←SCOPE-PART.WHICH` is a pointer: the participant or quality who had that part in an earlier event. `.same` the latest event with that part filled, `.other` the nearest one with someone else in it, `.self` this sentence's own, `.unsaid` the one whose filler was left unsaid. `.new` is a new one of that participant's kind, `.part` that participant's part in the event (what they did or had done to them). `z-←episode-agent.same` = they (the latest doer); `d-←episode-agent.self` = themself; `d-←episode-manner.same` = the way it was done; `d-←episode-event.same` = that event.",
   },
   sake: {
     anchor: "sakes.md#met",
@@ -572,10 +572,19 @@ export const SPAN_FEATURE_CONSTRUCTIONS: Record<`mark.${"^@" | "@" | "~"}`, Cons
 };
 
 /** Role words: the part consonant, the label scope after `w`, ability, and the -r instance (roles.md). */
-export const ROLE_FEATURE_CONSTRUCTIONS: Record<`part.${RolePart}` | `scope.${ScopeVowel}` | "ability" | "instance", ConstructionEntry> = {
+export const ROLE_FEATURE_CONSTRUCTIONS: Record<
+  `part.${Exclude<RolePart, "v">}` | `scope.${ScopeVowel}` | "ability" | "instance",
+  ConstructionEntry
+> = {
   "part.z": { anchor: "roles.md#role-compounds", summary: "agent z" },
   "part.d": { anchor: "roles.md#the-undergoer-d", summary: "patient d" },
   "part.b": { anchor: "roles.md#the-extra-b-party-b", summary: "recipient b" },
+  "part.h": { anchor: "roles.md#content-of-the-event", summary: "manner h" },
+  "part.g": { anchor: "roles.md#content-of-the-event", summary: "state g" },
+  "part.th": { anchor: "roles.md#content-of-the-event", summary: "stance th" },
+  "part.w": { anchor: "roles.md#content-of-the-event", summary: "extent w" },
+  "part.y": { anchor: "roles.md#content-of-the-event", summary: "speech move y" },
+  "part.x": { anchor: "roles.md#content-of-the-event", summary: "outcome x" },
   "scope.a": { anchor: "pronouns.md#role-pointers", summary: "this episode a" },
   "scope.e": { anchor: "roles.md#one-time-or-a-practice", summary: "practiced role e" },
   "scope.o": { anchor: "predication.md#scope-relative", summary: "this pair o" },
@@ -595,6 +604,13 @@ export const POINTER_FEATURE_CONSTRUCTIONS: Record<`vowel.${PointerVowel}` | `pa
   "part.z": { anchor: "pronouns.md#role-pointers", summary: "pointer to the doer" },
   "part.d": { anchor: "pronouns.md#role-pointers", summary: "pointer to the undergoer" },
   "part.b": { anchor: "pronouns.md#role-pointers", summary: "pointer to the extra party" },
+  "part.h": { anchor: "roles.md#content-of-the-event", summary: "pointer to the manner" },
+  "part.g": { anchor: "roles.md#content-of-the-event", summary: "pointer to the resulting state" },
+  "part.th": { anchor: "roles.md#content-of-the-event", summary: "pointer to the stance" },
+  "part.w": { anchor: "roles.md#content-of-the-event", summary: "pointer to the extent" },
+  "part.y": { anchor: "roles.md#content-of-the-event", summary: "pointer to the speech move" },
+  "part.x": { anchor: "roles.md#content-of-the-event", summary: "pointer to the outcome" },
+  "part.v": { anchor: "roles.md#content-of-the-event", summary: "pointer to the event" },
   "vowel.a": { anchor: "pronouns.md#role-pointers", summary: "same: the latest predicate with that role" },
   "vowel.o": { anchor: "pronouns.md#the-other-one", summary: "other: the nearest predicate with someone else in that role" },
   "vowel.e": { anchor: "pronouns.md#themself", summary: "self: this clause's predicate" },
@@ -732,6 +748,8 @@ export const REJECTIONS = {
   resumeUnbound: { anchor: "pronouns.md#resume-r", summary: "an -r resume spells an earlier word's whole stem, or a lexicon stem" },
   pointerSlot: { anchor: "pronouns.md#role-pointers", summary: "a role pointer fills /z/, /d/, or /b/; in a holder seam or a viewpoint lateral, resume the person instead" },
   pointerUnbound: { anchor: "pronouns.md#role-pointers", summary: "a role pointer needs an earlier predicate with that role filled (o: with someone else in it; u: with that role unsaid)" },
+  pointerOtherState: { anchor: "roles.md#content-of-the-event", summary: "a state pointer takes no other vowel (o): no clause names a resulting state for the other to differ from" },
+  pointerOtherExtent: { anchor: "roles.md#content-of-the-event", summary: "an extent pointer takes no other vowel (o): no clause names an amount for the other to differ from" },
   pointerShareSelf: { anchor: "pronouns.md#share", summary: "a share (-m) never takes the self vowel (e): it would name a part in the very event being described" },
   pointerSharePlural: { anchor: "pronouns.md#share", summary: "a share (-m) is a part, not a group of people, so it takes no -x" },
   pointerNewUnsaid: { anchor: "pronouns.md#a-new-one", summary: "a new one (-l) needs a filler to copy the kind of; an unsaid pointer (u) has none" },

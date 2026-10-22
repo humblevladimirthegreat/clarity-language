@@ -6,6 +6,7 @@ import type {
   Clause,
   CoordShared,
   Hosted,
+  HUnit,
   IslandUnit,
   LexWord,
   MorphWord,
@@ -25,9 +26,10 @@ import type {
   WritingBracket,
 } from "./types.js";
 import { isDigitless, isRhetorical, KIND_SERIES, SCALE_SERIES } from "./series.js";
-import { isGreeting, isScaleShared, isSharedGPackage, visitResult, type Visitor, type WordSlot } from "./ast-walk.js";
+import { isGreeting, isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, type Visitor, type WordSlot } from "./ast-walk.js";
 import { CLOSED, closedDerived } from "../closed-roots.js";
-import { topicEffect } from "./linkers.js";
+import { isClauseAdverb } from "./classify.js";
+import { linkerEnglish, topicEffect } from "./linkers.js";
 
 const ROLE_FRAME_POS = new Set(["z", "d", "b", "v", "g", "h", "th"]);
 
@@ -73,6 +75,14 @@ type Ctx = {
   /** Predicates in order, one per clause body; role pointers pick from these. */
   anchors: Anchor[];
   clauses: OpenClause[];
+  /** Completed turns, in order; a `y` pointer reads these (roles.md#content-of-the-event). */
+  turns: { head: LexWord }[];
+  /** The utterance the walk is in, until it closes. */
+  currentTurn?: { head?: LexWord };
+  /** The next clause opened with *therefore* / *it follows that*; its event is the previous event's outcome. */
+  pendingConsequence: boolean;
+  /** This utterance opened with a consequence linker. */
+  consequenceHere: boolean;
   /** Referent identity of each word a pointer resolved to (a group has one key). */
   referents: Map<LexWord, string>;
   asks: AskRecord[];
@@ -371,10 +381,69 @@ function hostedFiller(hosted: Hosted | undefined): Filler | undefined {
   return { words: [hosted.bound, ...(hosted.boundJoin?.members ?? [])], join: hosted.boundJoin?.join };
 }
 
+const TIME_POLES = new Set(["until", "by", "before", "after", "while"]);
+const STANCE_SKIP = new Set(["evidential", "may", "notional", "mirative"]);
+const SLOT_PARTS = new Set<RolePart>(["z", "d", "b"]);
+
+function isMannerWord(word: LexWord): boolean {
+  if (word.pos !== "h") return false;
+  if (word.family.kind === "say") return false;
+  if (word.family.kind === "x" && word.family.xFamily === "pointer") return false;
+  if (word.reading === "restrictor" || word.reading === "joinRelation") return false;
+  if (word.family.kind === "number") return false;
+  if (isClauseAdverb(word)) return false;
+  if (word.overlay?.kind === "clause_pole" && TIME_POLES.has(word.overlay.gloss)) return false;
+  return word.family.kind === "content" || word.family.kind === "x";
+}
+
+function isStanceWord(word: LexWord): boolean {
+  if (word.pos !== "th") return false;
+  if (word.family.kind === "x" && word.family.xFamily === "holder") return false;
+  if (word.overlay && STANCE_SKIP.has(word.overlay.kind)) return false;
+  if (word.reading === "sake") return true;
+  if (word.overlay?.kind === "cause" || word.overlay?.kind === "clause_pole") return true;
+  if (word.overlay?.kind === "plan" || word.overlay?.kind === "want" || word.overlay?.kind === "decision") return true;
+  return word.family.kind === "content";
+}
+
+function takeHUnit(unit: HUnit, pred: (word: LexWord) => boolean, words: LexWord[]): void {
+  if (pred(unit.word)) words.push(unit.word);
+}
+
+function collectHWords(units: Unit[], pred: (word: LexWord) => boolean, words: LexWord[]): void {
+  for (const unit of units) {
+    if (unit.kind === "h") takeHUnit(unit.unit, pred, words);
+    else if (unit.kind === "vp") {
+      for (const part of unit.coord.parts) {
+        for (const item of part.shared) if (isSharedHUnit(item)) takeHUnit(item, pred, words);
+        for (const nested of part.itemUnits ?? []) collectHWords(nested.units, pred, words);
+        collectHWords(part.sharedUnits ?? [], pred, words);
+      }
+    } else if (unit.kind === "np") {
+      for (const part of unit.coord.parts) {
+        for (const item of part.shared) if (isSharedHUnit(item)) takeHUnit(item, pred, words);
+      }
+    } else if (unit.kind === "island") collectHWords(unit.island.units, pred, words);
+    else if (unit.kind === "hook" && unit.frame) takeHUnit(unit.frame, pred, words);
+  }
+}
+
+function contentFiller(clause: Clause, pred: (word: LexWord) => boolean): Filler | undefined {
+  const words: LexWord[] = [];
+  collectHWords(clause.units, pred, words);
+  return words.length > 0 ? { words } : undefined;
+}
+
+function isConsequenceLinker(word: LexWord): boolean {
+  const tag = linkerEnglish(word);
+  return tag === "therefore" || tag === "it-follows";
+}
+
 /**
  * The anchor of a clause: its verb (or its `/ɡ/` word with no verb) and the overt filler of each
  * role. Doer `/z/`, undergoer `/d/`; the extra party is the verb's unhosted `/b/` or the `/b/` a
- * `/ɡ/` predicate hosts.
+ * `/ɡ/` predicate hosts. Content-rule parts harvest manner `/h/` and stance `/th/` words here
+ * (roles.md#content-of-the-event).
  */
 function anchorOf(clause: Clause): Anchor | undefined {
   let verb: LexWord | undefined;
@@ -415,6 +484,10 @@ function anchorOf(clause: Clause): Anchor | undefined {
   if (!predicate) return undefined;
   const extra = verb ? unhosted : hostedFiller(gPredicate?.hosted);
   if (extra) fillers.b = extra;
+  const manner = contentFiller(clause, isMannerWord);
+  if (manner) fillers.h = manner;
+  const stance = contentFiller(clause, isStanceWord);
+  if (stance) fillers.th = stance;
   return { predicate, fillers };
 }
 
@@ -443,6 +516,124 @@ function fillerWord(filler: Filler): LexWord {
   return filler.words.length === 1 ? filler.words[0]! : (filler.join ?? filler.words[0]!);
 }
 
+function pinPointer(ctx: Ctx, bind: AnaphorBind, pronoun: LexWord, part: RolePart, filler: Filler | undefined, host: LexWord): void {
+  bind.antecedent = filler ? fillerWord(filler) : host;
+  if (pronoun.ending !== "r") ctx.referents.set(pronoun, `${pronoun.ending}:${pronoun.at ?? -1}`);
+  else ctx.referents.set(pronoun, filler ? fillerKey(ctx, filler) : `${part}@${host.at ?? -1}`);
+}
+
+function resultingState(anchor: Anchor): Filler | undefined {
+  return anchor.fillers.d ?? anchor.fillers.z;
+}
+
+/**
+ * Content-rule pointers (roles.md#content-of-the-event): manner, state, stance, extent, speech move,
+ * outcome, and the event itself. Structure decides which words count; the resolver uses no word meanings.
+ */
+function bindContentPointer(ctx: Ctx, bind: AnaphorBind, pronoun: LexWord, part: RolePart, pointerVowel: PointerVowel): void {
+  const open = ctx.clauses.at(-1);
+  const earlier = ctx.anchors.slice(0, open?.before ?? ctx.anchors.length).reverse();
+
+  if (part === "y") {
+    if (pointerVowel === "e") {
+      const head = ctx.currentTurn?.head;
+      if (head) pinPointer(ctx, bind, pronoun, part, undefined, head);
+      return;
+    }
+    const latest = ctx.turns.at(-1);
+    if (pointerVowel === "o") {
+      const other = ctx.turns.at(-2);
+      if (other) pinPointer(ctx, bind, pronoun, part, undefined, other.head);
+      return;
+    }
+    if (latest) pinPointer(ctx, bind, pronoun, part, undefined, latest.head);
+    return;
+  }
+
+  if ((part === "g" || part === "w") && pointerVowel === "o") return;
+
+  if (part === "h" || part === "th") {
+    const slot = part;
+    let anchor: Anchor | undefined;
+    let filler: Filler | undefined;
+    if (pointerVowel === "e") {
+      anchor = open?.anchor;
+      filler = anchor?.fillers[slot];
+    } else if (pointerVowel === "u") {
+      anchor = earlier.find((item) => !item.fillers[slot]);
+    } else {
+      const filled = earlier.filter((item) => item.fillers[slot]);
+      anchor = filled[0];
+      if (pointerVowel === "o" && anchor) {
+        const same = fillerKey(ctx, anchor.fillers[slot]!);
+        anchor = filled.find((item) => fillerKey(ctx, item.fillers[slot]!) !== same);
+        filler = anchor?.fillers[slot];
+      } else if (pointerVowel === "a") {
+        filler = anchor?.fillers[slot];
+        if (!anchor) anchor = earlier[0];
+      }
+    }
+    if (!anchor) return;
+    if (pointerVowel !== "u" && pointerVowel !== "a" && pointerVowel !== "e" && !filler) return;
+    pinPointer(ctx, bind, pronoun, part, filler, anchor.predicate);
+    return;
+  }
+
+  if (part === "g") {
+    let anchor: Anchor | undefined;
+    let filler: Filler | undefined;
+    if (pointerVowel === "e") {
+      anchor = open?.anchor;
+      filler = anchor ? resultingState(anchor) : undefined;
+    } else if (pointerVowel === "u") {
+      anchor = earlier.find((item) => !resultingState(item)) ?? earlier[0];
+      filler = anchor ? resultingState(anchor) : undefined;
+    } else {
+      anchor = earlier.find((item) => resultingState(item)) ?? earlier[0];
+      filler = anchor ? resultingState(anchor) : undefined;
+    }
+    if (!anchor) return;
+    pinPointer(ctx, bind, pronoun, part, filler, anchor.predicate);
+    return;
+  }
+
+  if (part === "w" || part === "v") {
+    let anchor: Anchor | undefined;
+    if (pointerVowel === "e") anchor = open?.anchor;
+    else if (pointerVowel === "o") anchor = earlier[1];
+    else anchor = earlier[0];
+    if (!anchor) return;
+    pinPointer(ctx, bind, pronoun, part, undefined, anchor.predicate);
+    return;
+  }
+
+  if (part === "x") {
+    let anchor: Anchor | undefined;
+    let filler: Filler | undefined;
+    if (pointerVowel === "e") {
+      if (ctx.consequenceHere && open?.anchor) {
+        pinPointer(ctx, bind, pronoun, part, undefined, open.anchor.predicate);
+        return;
+      }
+      anchor = open?.anchor;
+      filler = anchor?.fillers.x;
+    } else if (pointerVowel === "u") {
+      anchor = earlier.find((item) => !item.fillers.x);
+    } else {
+      const filled = earlier.filter((item) => item.fillers.x);
+      anchor = filled[0];
+      if (pointerVowel === "o" && anchor) {
+        const same = fillerKey(ctx, anchor.fillers.x!);
+        anchor = filled.find((item) => fillerKey(ctx, item.fillers.x!) !== same);
+      }
+      filler = anchor?.fillers.x;
+    }
+    if (!anchor) return;
+    if (pointerVowel !== "u" && !filler) return;
+    pinPointer(ctx, bind, pronoun, part, filler, anchor.predicate);
+  }
+}
+
 function bindPointer(ctx: Ctx, pronoun: LexWord): void {
   const family = pronoun.family;
   if (family.kind !== "x") return;
@@ -450,6 +641,10 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
   const pointerVowel: PointerVowel = family.pointerVowel!;
   const bind: AnaphorBind = { pronoun, kind: "pointer", part, pointerVowel };
   ctx.anaphors.push(bind);
+  if (!SLOT_PARTS.has(part)) {
+    bindContentPointer(ctx, bind, pronoun, part, pointerVowel);
+    return;
+  }
   const open = ctx.clauses.at(-1);
   const earlier = ctx.anchors.slice(0, open?.before ?? ctx.anchors.length).reverse();
   // The pointer follows whoever last filled that slot.
@@ -475,10 +670,7 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
   }
   if (!anchor) return;
   if (pointerVowel !== "u" && !filler) return;
-  bind.antecedent = filler ? fillerWord(filler) : anchor.predicate;
-  // A new one or a share is its own referent, never the earlier filler's (pronouns.md#a-new-one).
-  if (pronoun.ending !== "r") ctx.referents.set(pronoun, `${pronoun.ending}:${pronoun.at ?? -1}`);
-  else ctx.referents.set(pronoun, filler ? fillerKey(ctx, filler) : `${part}@${anchor.predicate.at ?? -1}`);
+  pinPointer(ctx, bind, pronoun, part, filler, anchor.predicate);
 }
 
 // ── Tag pronouns (pronouns.md#tag-pronouns) ────────────────────────────────
@@ -615,8 +807,16 @@ function resolveVisitor(ctx: Ctx): Visitor {
     word(word, slot) {
       if (slot === "boundJoinClose" || slot === "joinModifier" || slot === "factor") return;
       if (slot === "orodo") ctx.standIn = word;
-      if (slot === "linker") considerLinker(ctx, word);
-      else considerWord(ctx, word, slot);
+      if (slot === "linker") {
+        if (isConsequenceLinker(word)) {
+          ctx.pendingConsequence = true;
+          ctx.consequenceHere = true;
+        }
+        considerLinker(ctx, word);
+        return;
+      }
+      if (ctx.currentTurn && !ctx.currentTurn.head) ctx.currentTurn.head = word;
+      considerWord(ctx, word, slot);
     },
     join(join, site) {
       if (!ctx.question || !isJoinGap(join)) return;
@@ -636,10 +836,20 @@ function resolveVisitor(ctx: Ctx): Visitor {
       if (node.kind === "body") enterMove(ctx, [greetingName(node.body) ?? []].flat());
       if (node.kind === "clause") {
         const anchor = anchorOf(node.clause);
+        if (anchor && ctx.pendingConsequence) {
+          const prev = ctx.anchors.at(-1);
+          if (prev) prev.fillers.x = { words: [anchor.predicate] };
+          ctx.pendingConsequence = false;
+        }
         ctx.clauses.push({ anchor, before: ctx.anchors.length });
         if (anchor) ctx.anchors.push(anchor);
       }
       if (node.kind === "utterance") {
+        const { left } = node.utterance;
+        ctx.consequenceHere = false;
+        ctx.currentTurn = {
+          head: left.force ?? left.leadForce ?? left.interjections[0] ?? left.vocatives[0] ?? left.polars[0],
+        };
         enterLeft(ctx, node.utterance);
         ctx.question = isQuestionForce(node.utterance.left.force);
         ctx.gaps = [];
@@ -657,6 +867,8 @@ function resolveVisitor(ctx: Ctx): Visitor {
         let kind: AskKind = "none";
         if (ctx.question) kind = isRhetorical(left.leadForce, left.force) ? "rhetorical" : ctx.gaps.length > 0 ? "fillAsk" : "yesNo";
         ctx.asks.push({ utteranceIndex: node.index, kind, gaps: ctx.gaps, ...(ctx.innerGaps.length > 0 ? { inner: ctx.innerGaps } : {}) });
+        if (ctx.currentTurn?.head) ctx.turns.push({ head: ctx.currentTurn.head });
+        ctx.currentTurn = undefined;
       }
     },
   };
@@ -674,6 +886,9 @@ function buildResolve(result: ParseResult): ResolveInfo {
     anaphors: [],
     anchors: [],
     clauses: [],
+    turns: [],
+    pendingConsequence: false,
+    consequenceHere: false,
     referents: new Map(),
     asks: [],
     shared: [],

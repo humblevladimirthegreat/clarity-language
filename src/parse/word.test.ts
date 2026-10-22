@@ -408,10 +408,10 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.deepEqual(word.family, { kind: "joinMarker", series: "a" });
   });
 
-  it("reads role letter + w + vowels as a tag, and a consonant after the first vowel as no word", () => {
+  it("reads role letter + w + vowels as a tag, and a consonant that is not a part as no word", () => {
     assert.deepEqual(parseOk("zwuar").family, { kind: "tag", vowels: ["u", "a"] });
-    // Role letter + `w` + vowel + consonant is open (unassigned-reserved.md).
-    for (const input of ["zwuyar", "zweyual", "hweral", "blwoyar"]) assert.throws(() => parseWord(input), WordParseError, input);
+    // Remaining open shapes: a consonant that is not a part (`r`, or `ey` + extra letters).
+    for (const input of ["zweyual", "hweral"]) assert.throws(() => parseWord(input), WordParseError, input);
   });
 
   it("parses darl / darm as stand-ins (clause.md stand-in)", () => {
@@ -467,6 +467,32 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
   it("reads the pointer shape on /h/ as a say word", () => {
     assert.equal(parseOk("hwazam").family.kind, "say");
     assert.equal(parseOk("zwazam").family.kind, "x");
+  });
+
+  it("parses content-rule parts as pointers and compounds (roles.md#content-of-the-event)", () => {
+    const pointer = parseOk("dwahar");
+    assert.deepEqual(pointer.family, {
+      kind: "x",
+      xFamily: "pointer",
+      leftRoots: [],
+      scopeVowel: "a",
+      part: "h",
+      pointerVowel: "a",
+    });
+    const compound = parseOk("dwahowurel");
+    if (compound.family.kind === "x") {
+      assert.equal(compound.family.xFamily, "role");
+      assert.equal(compound.family.part, "h");
+      assert.deepEqual(compound.family.rightRoots, ["owure"]);
+    }
+    const event = parseOk("dwavar");
+    assert.equal(event.family.kind === "x" && event.family.part, "v");
+    assert.throws(() => parseWord("zwavowurel"), WordParseError);
+    const stance = parseOk("dwathar");
+    assert.equal(stance.family.kind === "x" && stance.family.part, "th");
+    const move = parseOk("zwuyar");
+    assert.equal(move.family.kind === "x" && move.family.xFamily, "pointer");
+    assert.equal(move.family.kind === "x" && move.family.part, "y");
   });
 
   it("rejects the old role shape and a th scope after a role stem", () => {

@@ -179,6 +179,48 @@ describe("resolve — role pointers (pronouns.md#role-pointers)", () => {
   });
 });
 
+describe("resolve — content-rule pointers (roles.md#content-of-the-event)", () => {
+  function pointers(text: string): string[] {
+    return resolveOf(text)
+      .anaphors.filter((a) => a.kind === "pointer")
+      .map((a) => `${a.pronoun.raw}→${a.antecedent?.raw}`);
+  }
+
+  it("h: a named manner, else the event's own", () => {
+    assert.deepEqual(pointers("zuzozen vowurel hedurem. dwahar vawebol."), ["dwahar→hedurem"]);
+    assert.deepEqual(pointers("zuzozen vowurel. dwahar vawebol."), ["dwahar→vowurel"]);
+  });
+
+  it("h skips restrictors, time poles, and say words", () => {
+    assert.deepEqual(pointers("zuzozen vowurel hual. dwahar vawebol."), ["dwahar→vowurel"]);
+    assert.deepEqual(pointers("zuzozen vowurel hwavam. dwahar vawebol."), ["dwahar→vowurel"]);
+  });
+
+  it("g: the undergoer's state, else the doer's", () => {
+    assert.deepEqual(pointers("zuzozen dolazun vanuvul. dwagar vawebol."), ["dwagar→dolazun"]);
+    assert.deepEqual(pointers("zuzozen vowurel. dwagar vawebol."), ["dwagar→zuzozen"]);
+  });
+
+  it("v: the latest event; w: that event's extent", () => {
+    assert.deepEqual(pointers("zuzozen vowurel. dwavar vawebol."), ["dwavar→vowurel"]);
+    assert.deepEqual(pointers("zuzozen vowurel. dwawar vawebol."), ["dwawar→vowurel"]);
+    assert.deepEqual(pointers("zuzozen vowurel. zolazun varuvel. dwavor vawebol."), ["dwavor→vowurel"]);
+  });
+
+  it("x: the next sentence after a consequence linker", () => {
+    assert.deepEqual(pointers("zuzozen vanuvul. xahem zolazun varemul. dwaxar vawebol."), ["dwaxar→varemul"]);
+  });
+
+  it("y: the latest turn", () => {
+    assert.deepEqual(pointers("yal zuzozen vowurel. yal dwayar vawebol."), ["dwayar→yal"]);
+  });
+
+  it("th: a named stance, else the event's own reason", () => {
+    assert.deepEqual(pointers("zuzozen vowurel thahum blarl zolazun varuvel. dwathar vawebol."), ["dwathar→thahum"]);
+    assert.deepEqual(pointers("zuzozen vowurel. dwathar vawebol."), ["dwathar→vowurel"]);
+  });
+});
+
 describe("resolve — span and number anaphors", () => {
   it("has no span resume: a span is an ordinary noun for a role pointer (spans.md)", () => {
     assert.throws(() => parseText("d[hi] vawalal. d[=] vayul."));

@@ -393,7 +393,7 @@ export type OverlayHostError = {
   reason: string;
 };
 
-const ROLE_PREFIX = /^w[aeuo]{1,2}[zdb]/;
+const ROLE_PREFIX = /^w[aeuo]{1,2}(?:th|[zdbhgywxv])/;
 
 /**
  * Hosted overlays must spell a published root (same emoji; sense_form starts with

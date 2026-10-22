@@ -148,8 +148,9 @@ Source: [hooks.md](../grammar/hooks.md#hook-compounds)
 
 Source: [roles.md](../grammar/roles.md), [compounds.md](../grammar/compounds.md)
 
-- **open:** a role compound on `/v/` / `/w/` / `/th/`. A role compound names a participant, and these slots take none: it fills `/z/` `/d/` `/b/` `/ɡ/`, sets a topic under `/x/`, and calls under `/y/`. Parser: `roleCompoundSlot`.
-- **closed (D-34):** a role compound on `/h/`.
+- **open:** a role compound on `/v/` / `/w/` / `/th/`. A role compound names a participant or a quality of an event, and these slots take none: it fills `/z/` `/d/` `/b/` `/ɡ/`, sets a topic under `/x/`, and calls under `/y/`. Parser: `roleCompoundSlot`.
+- **closed (D-34):** a role compound on `/h/` (`hwezuduyel`, `hwahowurel`).
+- **closed:** **`v`** in a role compound (`zwavowurel`). The event noun is the stem itself (`dowurel`). Parser: no word.
 - **closed ([hooked parts](design-decisions.md#hooked-parts-and-the-result)):** a role word for a hooked part (scene, instrument, goal, source, path, bearer) or a separate result. No part consonant names one. Parser: no word.
 - **open:** role letter + vowel(s) + **`x`** + a stem or a pointer vowel (`zaxuduyel`, `zaxar`, `dexar`). The retired role shape; `hook-prefixes.md` plans to claim it. Parser: no word.
 - **closed ([scope written once](design-decisions.md#role-scope-at-the-front)):** a **`th`** scope after a role word's stem (`zwazuduyethel`). Parser: no word.
@@ -167,6 +168,7 @@ Source: [pronouns.md](../grammar/pronouns.md#role-pointers)
 - **open:** a new-one pointer (**-l**) with pointer vowel `u`, or after a special, topic or generic pronoun (`zwazul`). A new-one pointer copies a kind, and an unsaid filler or a conversation role has none. Parser: `pointerNewUnsaid`, `pointerNewSpecial`.
 - **open:** a share (**-m**) with pointer vowel `e` or with **-x** (`zwazem`, `zwazamx`). A share is a part of an event, so it names no group and cannot be the very event it describes. Parser: `pointerShareSelf`, `pointerSharePlural`.
 - **closed ([pointers in a seam](design-decisions.md#pointers-in-a-seam)):** a role pointer in a holder seam or as a viewpoint lateral's facing anchor (`theyemwazar`, `howuhethwazar`). Resume the person instead (`theyemuzozer`, `howuhethuzozer`). Parser: `holderSeamW`, no word.
+- **closed:** `dwagor`, `dwawor`. No clause names a resulting state or an amount for *the other* to differ from. Parser: `pointerOtherState`, `pointerOtherExtent`.
 
 ## Tag pronouns
 
@@ -183,9 +185,9 @@ Source: [pronouns.md](../grammar/pronouns.md#tag-pronouns)
 
 ## Role letter + `w` + vowel + consonant
 
-Source: none.
+Source: [roles.md](../grammar/roles.md#content-of-the-event)
 
-- **open:** role letter + `w` + vowel + consonant + vowel(s) + ending (`zwuyar`, `zweyual`, `vwovar`, `hweral`, `blwoyar`). The retired kind-indefinite shape ([why](design-decisions.md#kind-indefinites)); `role-consonant-compounds.md` plans to claim it. Parser: no word.
+- **open:** role letter + `w` + scope + a consonant that is not a part + vowel(s) + ending (`zweyual`, `hweral`). The part consonants are **`z`** **`d`** **`b`** **`h`** **`g`** **`th`** **`w`** **`y`** **`x`** **`v`**. Parser: no word.
 
 ## Say words
 
