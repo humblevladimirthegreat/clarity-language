@@ -50,33 +50,29 @@ export function isScaleStem(stem: NumberStem): boolean {
   return stem.marker === "+" && isDigitless(stem);
 }
 
-type ForceShape = { series: string; endings: string[] };
+/** The kinds of two stacked act words (speech-moves.md § stacked acts, § doubled act). */
+export type StackKind = "emphatic" | "rhetorical" | "quiz" | "stack";
 
-/** Legal stacked act words: `lead` before `force` (speech-moves.md § Emphatic prohibition, questions.md § rhetorical). */
-export const FORCE_PAIRS: { kind: "emphatic" | "rhetorical"; lead: ForceShape; force: ForceShape }[] = [
-  { kind: "emphatic", lead: { series: "u", endings: ["l"] }, force: { series: "u", endings: ["l"] } },
-  { kind: "rhetorical", lead: { series: "a", endings: ["l", "m"] }, force: { series: "o", endings: ["l", "m"] } },
-];
-
-function matchesForce(word: LexWord | undefined, shape: ForceShape): boolean {
-  return (
-    word?.family.kind === "joinMarker" &&
-    word.family.series === shape.series &&
-    word.ending !== undefined &&
-    shape.endings.includes(word.ending)
-  );
+function actSeries(word: LexWord | undefined): string | undefined {
+  return word?.family.kind === "joinMarker" ? word.family.series : undefined;
 }
 
-/** Which pair a leading act word opens, read from the lead alone (enforce rejects a lead with the wrong partner). */
-export function leadForceKind(lead: LexWord | undefined): "emphatic" | "rhetorical" | undefined {
-  return FORCE_PAIRS.find((pair) => matchesForce(lead, pair.lead))?.kind;
+/**
+ * Two opening act words: the same word twice is emphasis; otherwise the outer word is the real act and the inner one how
+ * the turn sounds. A statement over a question is the rhetorical question, a question over a statement the quiz
+ * (questions.md § rhetorical, § quiz).
+ */
+export function stackKind(lead: LexWord | undefined, force: LexWord | undefined): StackKind | undefined {
+  if (!lead || !force) return undefined;
+  if (lead.raw === force.raw) return "emphatic";
+  const outer = actSeries(lead);
+  const inner = actSeries(force);
+  if (outer === "a" && inner === "o") return "rhetorical";
+  if (outer === "o" && inner === "a") return "quiz";
+  return "stack";
 }
 
-/** Which legal pair `lead` + `force` forms, if any. */
-export function forcePairKind(lead: LexWord | undefined, force: LexWord | undefined): "emphatic" | "rhetorical" | undefined {
-  return FORCE_PAIRS.find((pair) => matchesForce(lead, pair.lead) && matchesForce(force, pair.force))?.kind;
-}
-
-export function isRhetorical(lead: LexWord | undefined, force: LexWord | undefined): boolean {
-  return forcePairKind(lead, force) === "rhetorical";
+/** The act a turn really does: the outer of two stacked act words, or the only one. */
+export function actWord(left: { leadForce?: LexWord; force?: LexWord }): LexWord | undefined {
+  return left.leadForce ?? left.force;
 }

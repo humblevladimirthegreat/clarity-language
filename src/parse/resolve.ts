@@ -25,7 +25,7 @@ import type {
   VpCoord,
   WritingBracket,
 } from "./types.js";
-import { isDigitless, isRhetorical, joinHook, KIND_SERIES, SCALE_SERIES } from "./series.js";
+import { actWord, isDigitless, joinHook, KIND_SERIES, SCALE_SERIES } from "./series.js";
 import { isGreeting, isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, vpUnitLists, type Visitor, type WordSlot } from "./ast-walk.js";
 import { CLOSED, closedDerived } from "../closed-roots.js";
 import { isClauseAdverb } from "./classify.js";
@@ -899,10 +899,10 @@ function resolveVisitor(ctx: Ctx): Visitor {
         const { left } = node.utterance;
         ctx.consequenceHere = false;
         ctx.currentTurn = {
-          head: left.force ?? left.leadForce ?? left.interjections[0] ?? left.vocatives[0] ?? left.polars[0],
+          head: actWord(left) ?? left.interjections[0] ?? left.vocatives[0] ?? left.polars[0],
         };
         enterLeft(ctx, node.utterance);
-        ctx.question = isQuestionForce(node.utterance.left.force);
+        ctx.question = isQuestionForce(node.utterance.left.leadForce) || isQuestionForce(node.utterance.left.force);
         ctx.gaps = [];
         ctx.innerGaps = [];
         ctx.standIn = undefined;
@@ -916,7 +916,8 @@ function resolveVisitor(ctx: Ctx): Visitor {
       if (node.kind === "utterance") {
         const { left } = node.utterance;
         let kind: AskKind = "none";
-        if (ctx.question) kind = isRhetorical(left.leadForce, left.force) ? "rhetorical" : ctx.gaps.length > 0 ? "fillAsk" : "yesNo";
+        // A question word only as the inner of a stack sounds like a question but asks nothing (speech-moves.md#stacked-acts).
+        if (ctx.question) kind = !isQuestionForce(actWord(left)) ? "rhetorical" : ctx.gaps.length > 0 ? "fillAsk" : "yesNo";
         ctx.asks.push({ utteranceIndex: node.index, kind, gaps: ctx.gaps, ...(ctx.innerGaps.length > 0 ? { inner: ctx.innerGaps } : {}) });
         if (ctx.currentTurn?.head) ctx.turns.push({ head: ctx.currentTurn.head });
         ctx.currentTurn = undefined;

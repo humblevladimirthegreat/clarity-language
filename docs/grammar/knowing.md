@@ -527,7 +527,7 @@ The frame is **yours**. It covers only your own claims, and someone else who rep
 **What ends it:**
 
 - **A new frame.** Any channel replaces it, and so does NOTIONAL. From there on, the new one carries.
-- **The statement word, written out.** **`yal`** (or **`yam`** / **`yar`**) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](speech-moves.md#speech-act) changes the meaning. A rhetorical **`yal yol`** is a question, so it does not count.
+- **The statement word, written out.** **`yal`** (or **`yam`** / **`yar`**) before a body says you are back in your own voice, with no frame. It is the one place where writing the usually silent [statement word](speech-moves.md#speech-act) changes the meaning. In [two stacked act words](speech-moves.md#stacked-acts), it counts only as the first word, the act you really do: a rhetorical **`yal yol`** is your own claim and ends the frame, but a quiz **`yol yal`** does not.
 - **`xuvedam`** *by the way*: a digression leaves what you were telling. To go back, name the channel again.
 - **A goodbye**, which ends the conversation.
 
@@ -536,6 +536,12 @@ The frame is **yours**. It covers only your own claims, and someone else who rep
 > z-Olazun | th-REPORTED | v-departure . y-statement | z-Olazun | v-sleep
 >
 > "Olazun left, so they say. Olazun is asleep." (the second claim no longer rests on the report)
+
+> `zolazun thebam velurul. yal yol zar vegemal.`
+>
+> z-Olazun | th-REPORTED | v-departure . y-statement | y-question | z-wh | v-care
+>
+> "Olazun left, so they say. Who cares?" (your own claim; the report no longer carries)
 
 A [quote](spans.md#writing) keeps its speaker's frame: nothing carries into it from outside, and your own frame resumes after it.
 

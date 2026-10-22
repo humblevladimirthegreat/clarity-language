@@ -613,6 +613,10 @@ describe("morphGlossLine — stance joins and emphatic prohibition", () => {
   it("glosses yul yul", () => {
     expectLine("yul yul vazuyul.", "y-prohibition | y-prohibition | v-sneak");
   });
+
+  it("glosses each stacked act word on its own", () => {
+    expectLine("yel yom vowurel zawan.", "y-command | y-soft-question | v-walk | z-listener");
+  });
 });
 
 describe("morphGlossLine — tone marks", () => {

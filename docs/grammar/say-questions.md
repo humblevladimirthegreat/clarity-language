@@ -249,7 +249,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 ### Ask, interview, conversation {#ask-words}
 
-**Needs:** [Ask](questions.md#question) · [Reported questions](#reported-questions) · [Stand-in vowels](dependents.md#stand-in) · [Speech act: firm and soft](speech-moves.md#speech-act) · [Conversation length](compounds.md#conversation-length) · [Call someone](speech-moves.md#vocative)
+**Needs:** [Ask](questions.md#question) · [Reported questions](#reported-questions) · [Stand-in vowels](dependents.md#stand-in) · [Speech act: firm and soft](speech-moves.md#speech-act) · [Stacking two act words](speech-moves.md#stacked-acts) · [Quiz](questions.md#quiz) · [Conversation length](compounds.md#conversation-length) · [Call someone](speech-moves.md#vocative)
 
 English *ask* is four jobs. You can put a question to someone, ask them for something, ask them to do something, or report that a question was asked. A question is the act word **`yol`**. A request is **`yem`**. A reported question hangs on the telling ([reported questions](#reported-questions)). *Ask* or *tell someone to do* something is a telling with the to-clause stand-in **`derl`**, and the person told is plain `/b/`; *not to* is **`durl`**. English picks *ask* or *tell* for politeness, which Agebon carries on the act word, not the verb. A conversation has no verb of its own: it is *speech*, with the abstract sense for the social practice.
 
@@ -257,6 +257,9 @@ English *ask* is four jobs. You can put a question to someone, ask them for some
 |---------|--------|---------|
 | *ask* (a question) | `yol zuzozen vowurel.` | question |
 | *ask* (for something, *could you*) | `yem vowurel zawan.` | request |
+| *could you…?* (a request phrased as a question) | `yem yol vowurel zawan.` | soft request that sounds like a question |
+| *would you maybe…?* (not really optional) | `yel yom vowurel zawan.` | command that sounds like a gentle ask |
+| *ask* (a question you know the answer to, as a test) | `yol yal zar vowurel.` | quiz |
 | *ask* (report) | `zuzozen vezuyel dorl zar vowurel.` | telling + whether-clause |
 | *ask* / *tell someone to* | `zuzozen vezuyel bolazun derl vuhohol.` | telling + to-clause |
 | *ask* / *tell someone not to* | `zuzozen vezuyel bolazun durl varuvel.` | telling + lest-clause |

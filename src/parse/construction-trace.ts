@@ -2,7 +2,7 @@ import type { CstElement, CstNode, IToken } from "chevrotain";
 
 import { classifyTokenBranch, isLexWordPayload, type TokenPayload } from "./tokens.js";
 import { POLAR_GROUP, RESTRICTOR_GROUP, type JoinSeries } from "./constructions.js";
-import { isDigitless, leadForceKind } from "./series.js";
+import { actWord, isDigitless, stackKind } from "./series.js";
 import { isGreeting, isKindReference, isScaleShared, visitResult, vpUnitLists } from "./ast-walk.js";
 import { numberMarkerIdentity } from "./resolve.js";
 import type { Clause, LexWord, NumberStem, ParseResult, ResolveInfo } from "./types.js";
@@ -175,13 +175,17 @@ function traceId(rule: string, key: string): string {
   return `sentence.${/^[zdb]CoordPart$/.test(name) && SLOTLESS_PART_KEYS.has(key) ? "npCoordPart" : name}.${key}`;
 }
 
-/** A leading act word is one grammar label for two lessons; its trace name carries the pair (`ForceEcho` / `ForceAnswer`). */
-const LEAD_FORCE_NAMES = { emphatic: "ForceEcho", rhetorical: "ForceAnswer" } as const;
+/** A leading act word is one grammar label for several lessons; its trace name carries the stack (`ForceEcho`, `ForceAnswer`, …). */
+const LEAD_FORCE_NAMES = { emphatic: "ForceEcho", rhetorical: "ForceAnswer", quiz: "ForceQuiz", stack: "ForceStack" } as const;
 
-function leadForceName(token: CstElement): string | undefined {
-  if (isCstNode(token)) return undefined;
+function tokenWord(token: CstElement | undefined): LexWord | undefined {
+  if (!token || isCstNode(token)) return undefined;
   const payload = token.payload as TokenPayload | undefined;
-  const kind = payload && isLexWordPayload(payload) ? leadForceKind(payload) : undefined;
+  return payload && isLexWordPayload(payload) ? payload : undefined;
+}
+
+function leadForceName(lead: CstElement, force: CstElement | undefined): string | undefined {
+  const kind = stackKind(tokenWord(lead), tokenWord(force));
   return kind && LEAD_FORCE_NAMES[kind];
 }
 
@@ -204,7 +208,7 @@ export function addCstConstructions(node: CstNode, out: Set<string>, rule = node
     }
     if (traceRule(rule) === "leftEdge" && key === "LeadForce") {
       for (const element of elements) {
-        const name = leadForceName(element);
+        const name = leadForceName(element, node.children.Force?.[0]);
         if (name) out.add(`sentence.leftEdge.${name}`);
       }
     } else out.add(traceId(rule, key));
@@ -288,7 +292,7 @@ function isExistence(clause: Clause): boolean {
 /** Collect `reading.*` IDs from utterance and clause shapes and shared scales. */
 export function addReadingConstructions(result: ParseResult, out: Set<string>): void {
   for (const utterance of result.utterances) {
-    const force = utterance.left.force?.raw;
+    const force = actWord(utterance.left)?.raw;
     if (utterance.bodies.length === 0 && (force === "yol" || force === "yom")) out.add("reading.bareQuestion");
     for (const body of utterance.bodies) {
       if (isGreeting(body.clause)) out.add("reading.greeting");

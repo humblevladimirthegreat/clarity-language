@@ -246,7 +246,7 @@ export type LeftEdge = {
   hook?: LexWord;
   /** `/w/` immediately before a left-edge hook. */
   hookModifiers?: LexWord[];
-  /** Act word leading `force`: an emphatic **`yul`** repeat, or the asserted **`yal`** / **`yam`** of a rhetorical question ([FORCE_PAIRS](./series.ts)). */
+  /** Outer of two stacked act words: the real act, with `force` how the turn sounds, or a repeat for emphasis ([stackKind](./series.ts)). */
   leadForce?: LexWord;
   force?: LexWord;
   impliedForce?: ImpliedForce;

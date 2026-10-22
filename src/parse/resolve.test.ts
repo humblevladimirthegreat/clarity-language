@@ -244,6 +244,13 @@ describe("resolve — span and number anaphors", () => {
     assert.equal(question.asks[0]?.kind, "fillAsk");
     assert.equal(question.asks[0]?.gaps[0]?.raw, "g=+");
   });
+
+  it("asks by the outer of two stacked act words (speech-moves.md#stacked-acts)", () => {
+    assert.equal(resolveOf("yol yal zar vanuvul dobogal.").asks[0]?.kind, "fillAsk");
+    assert.equal(resolveOf("yal yol zar vegemal.").asks[0]?.kind, "rhetorical");
+    assert.equal(resolveOf("yel yol vanuvul dobogal zawan.").asks[0]?.kind, "rhetorical");
+    assert.equal(resolveOf("yul yel dobogal vanuvul.").asks[0]?.kind, "none");
+  });
 });
 
 describe("resolve — tag pronouns (pronouns.md#tag-pronouns)", () => {

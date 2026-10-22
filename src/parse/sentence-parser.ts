@@ -436,7 +436,7 @@ class AgebonSentenceParser extends CstParser {
         other: {
           ALT: () => this.or(4, [{ ALT: () => this.consume(4, Polar) }, { ALT: () => glue(4) }]),
         },
-        // An act word, or a force pair (`yul yul`, `yal yol`): which pairs are legal is decided by enforce (FORCE_PAIRS).
+        // An act word, or two stacked act words (`yul yul`, `yel yol`): any pair; a third is a new turn (speech-moves.md#stacked-acts).
         force: {
           ALT: () => {
             this.option(5, () => this.consume(5, Force, { LABEL: "LeadForce" }));

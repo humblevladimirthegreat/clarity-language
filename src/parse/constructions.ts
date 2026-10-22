@@ -57,8 +57,26 @@ export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
   "leftEdge.Polar": { anchor: "questions.md#polar-stance", summary: "polar stance turn" },
   "leftEdge.W": { anchor: "hooks.md#hook-w", summary: "/w/ on a left-edge hook" },
   "leftEdge.Hook": { anchor: "hooks.md#discourse-hooks", summary: "discourse hook at the left edge" },
-  "leftEdge.ForceEcho": { anchor: "speech-moves.md#emphatic-prohibition", summary: "yul yul emphatic prohibition" },
-  "leftEdge.ForceAnswer": { anchor: "questions.md#rhetorical", summary: "yal yol rhetorical question" },
+  "leftEdge.ForceEcho": {
+    anchor: "speech-moves.md#doubled-act",
+    summary: "the same act word twice: emphasis (yul yul)",
+    reader: "The same `y-` act twice is one act said more insistently: `y-prohibition | y-prohibition` = *Don't. I mean it.*; `y-question | y-question` = *I really need to know: …?*",
+  },
+  "leftEdge.ForceAnswer": {
+    anchor: "questions.md#rhetorical",
+    summary: "yal yol rhetorical question",
+    reader: "`y-statement | y-question` before a body is a rhetorical question: the speaker asserts the obvious answer and asks for no reply (`y-statement | y-question | z-wh | v-care` = *Who cares?*, nobody does).",
+  },
+  "leftEdge.ForceQuiz": {
+    anchor: "questions.md#quiz",
+    summary: "yol yal quiz",
+    reader: "`y-question | y-statement` is a quiz: the asker already knows the answer and wants the listener to say it (*So who punched the box? You tell me.*).",
+  },
+  "leftEdge.ForceStack": {
+    anchor: "speech-moves.md#stacked-acts",
+    summary: "two different act words: the outer is the real act, the inner how it sounds",
+    reader: "Two different `y-` acts in a row: the first is what the turn really does, the second only how it sounds. `y-command | y-question` = a request phrased as a question (*Could you…?*); `y-prohibition | y-command` = a sarcastic dare (*Go ahead, try it*, meaning don't); `y-command | y-soft-question` = an order dressed as a gentle ask.",
+  },
   "leftEdge.Force": { anchor: "speech-moves.md#speech-act-statement-question-command", summary: "speech-act word" },
 
   "bodyClause.Linker": { anchor: "dependents.md#continue-x", summary: "sentence linker before a clause" },
@@ -690,7 +708,7 @@ export function constructionRegistry(overlays: Iterable<OverlayEntrySource>): Ma
 export const REJECTIONS = {
   verbSharedOwn: { anchor: "join-across-roles.md#vp-clause-forms", summary: "a joined verb with its own object or recipient takes no shared one: say it in that verb's item, or share it and drop the item's own" },
   genitiveHost: { anchor: "hooks.md#genitive", summary: "`em` + `/b/` follows the noun B uses" },
-  forcePair: { anchor: "speech-moves.md#emphatic-prohibition", summary: "only `yul yul` and `yal yol` / `yam yol` stack two act words" },
+  turnSeriesCall: { anchor: "speech-moves.md#vocative", summary: "an act or polar series word takes -l / -m / -r, never the call ending -n (`yan`, `yaen`)" },
   polarOrder: { anchor: "questions.md#polar-stance", summary: "a polar word is one answer or one tag: not two in a row, and not before an act word (an answer and then a question are two turns)" },
   tagBody: { anchor: "questions.md#tags", summary: "a tag (`yol` and a polar word) is a turn of its own: end it with a period (`zuzozen vowurel. yol yael.`)" },
   sentenceEndMark: { anchor: "speech-moves.md#tone-marks", summary: "a sentence ends in `.`; `?` / `!` are tone-mark prefixes" },

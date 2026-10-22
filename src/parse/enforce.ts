@@ -68,7 +68,7 @@ import {
 } from "./tokens.js";
 import { doubledVerbSlot } from "./verb-items.js";
 import { isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, visitUnit, vpUnitLists, type AstNode, type Visitor } from "./ast-walk.js";
-import { forcePairKind, joinHook, KIND_SERIES, POINT_BACK_HOOKS, RANK_SERIES, TIME_HOOKS, TIME_JOINS } from "./series.js";
+import { actWord, joinHook, KIND_SERIES, POINT_BACK_HOOKS, RANK_SERIES, TIME_HOOKS, TIME_JOINS } from "./series.js";
 import type {
   AnaphorBind,
   Clause,
@@ -694,7 +694,7 @@ function enforceSayHost(unit: HUnit): void {
  */
 function enforceSaySpeaker(result: ParseResult): void {
   for (const utterance of result.utterances) {
-    const force = utterance.left.force?.raw;
+    const force = actWord(utterance.left)?.raw;
     if (force === "yol" || force === "yom") continue;
     for (const { clause } of utterance.bodies) {
       if (!clause.units.some(isSpeakerParticipant)) continue;
@@ -893,12 +893,12 @@ function structureVisitor(tables: ClassifyTables, places: { seen: Set<LexWord>; 
 
 function enforceForcePair(left: LeftEdge): void {
   // A polar word is one answer or one tag: not two in a row, and not before an act word (questions.md § polar stance).
-  const act = left.leadForce ?? left.force;
+  // An act or polar series with **-n** names no one to call (speech-moves.md#vocative).
+  const seriesCall = left.vocatives.find((call) => call.family.kind === "joinMarker");
+  if (seriesCall) throw new ConstructionError("turnSeriesCall", seriesCall.raw);
+  const act = actWord(left);
   if (left.polars.length > 1 || (act && left.polars.some((polar) => (polar.at ?? 0) < (act.at ?? 0)))) {
     throw new ConstructionError("polarOrder", left.polars.map((polar) => polar.raw).join(" "));
-  }
-  if (left.leadForce && !forcePairKind(left.leadForce, left.force)) {
-    throw new ConstructionError("forcePair", `${left.leadForce.raw} ${left.force?.raw ?? ""}`.trim());
   }
 }
 
@@ -958,7 +958,7 @@ function isPluralLabel(word: LexWord): boolean {
 export function enforceResult(result: ParseResult, tables: ClassifyTables): void {
   for (const { left, bodies } of result.utterances) {
     // Command / request (e) and prohibition (u) act words may name a time without a channel.
-    const directive = /^y[eu]/.test(left.force?.raw ?? "");
+    const directive = /^y[eu]/.test(actWord(left)?.raw ?? "");
     for (const body of bodies) {
       // A linker joins the sentence before it to the one it starts, so a clause follows it (dependents.md#sentence-linkers).
       if (body.linker && body.clause.units.length === 0 && topicEffect(body.linker) === "none") {

@@ -33,8 +33,10 @@ const ROWS: Row[] = [
   { invalid: "zuzozen zolazun zoel gelazom hradol blahelan.", rejection: "slotlessHost", valid: "zuzozen zolazun zoel gelazom hradol." },
   { invalid: "zuzozen glubulel.", rejection: "glNoNoun", valid: "glubulel zuzozen." },
   { invalid: "zuzozen dedavel glubulel vawebol.", rejection: "glNoNoun", valid: "zuzozen glubulel dedavel vawebol." },
-  { invalid: "yel yol zuzozen vowurel.", rejection: "forcePair", valid: "yal yol zuzozen vowurel." },
-  { invalid: "yal yal zuzozen vowurel.", rejection: "forcePair", valid: "yal zuzozen vowurel." },
+  { invalid: "yul yul yul vowurel.", rejection: undefined, valid: "yul yul vowurel." },
+  { invalid: "yel al yol vowurel.", rejection: "turnMidSentence", valid: "al yel yol vowurel." },
+  { invalid: "yan vowurel.", rejection: "turnSeriesCall", valid: "yal vowurel." },
+  { invalid: "yaen.", rejection: "turnSeriesCall", valid: "yael." },
   { invalid: "zuzozen vowurel em buwon.", rejection: "genitiveHost", valid: "zuzozen vowurel buzozer em buwon." },
   { invalid: "zuzozen vowurel thohom em buwon.", rejection: "genitiveHost", valid: "zudozol em buwon vowurel." },
   { invalid: "em buwon vowurel.", rejection: "genitiveHost", valid: "zuzozen vowurel." },
@@ -315,7 +317,6 @@ const ROWS: Row[] = [
   { invalid: "zuzozen vowurel hezom blarl hwavul.", rejection: "dependentStanceOnly", valid: "zuzozen vowurel uem hwavul." },
   { invalid: "zuzozen vowurel hezom blarl hwavul thebam.", rejection: "dependentStanceOnly", valid: "zuzozen vowurel hezom blarl thuwathuruor." },
   // A second turn starts only after a period; only the legal force pairs stack.
-  { invalid: "yol yol vazuyul.", rejection: "forcePair", valid: "yol. yol vazuyul." },
   { invalid: "zalx vowurel.", rejection: "joinPlural", valid: "zarx vowurel." },
   // Hooked joins (hooks.md#hooked-joins): a landmark after hook -l / -m, none after point-back -r.
   { invalid: "zoxual vezuvol.", rejection: "hookedJoinLandmark", valid: "zoxual blahehal vezuvol." },

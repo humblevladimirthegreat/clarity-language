@@ -340,7 +340,7 @@ For *let's*, make a soft request with inclusive *we*, **`aya`** ([special pronou
 >
 > "Let's not sleep."
 
-A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` words, immediately before the act word, or before a body that defaults to a statement.
+A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` words, immediately before the first act word, or before a body that defaults to a statement.
 
 #### For now (**-r**) {#act-r}
 
@@ -366,15 +366,86 @@ A [hook](hooks.md) (**`al`** / **`am`** / …) may sit among the opening `/y/` w
 >
 > "As things stand, Uzozen walks."
 
-### Emphatic prohibition {#emphatic-prohibition}
+### Doubling an act word {#doubled-act}
 
-When a missed *don't* would be dangerous, say **`yul`** twice among the opening `/y/` words. The repeat makes the prohibition louder; it never cancels it. Repeat only the opening act word: a `yul` after the body starts a new turn instead of adding emphasis.
+Say an act word twice among the opening `/y/` words to make the act more insistent. The act stays the same; the repeat never cancels it. Use it most where a missed *don't* would be dangerous.
 
 > `yul yul vazuyul.`
 >
 > y-prohibition | y-prohibition | v-sneak
 >
 > "Don't sneak. I mean it."
+
+<!-- cheat-sheet: talking -->
+| Agebon | Use | English |
+|--------|-----|---------|
+| **`yal yal`** | insisted statement | *I'm telling you, …* |
+| **`yol yol`** | pressing question | *I really need to know: …?* |
+| **`yel yel`** | urgent command | *Do it. Now.* |
+| **`yul yul`** | emphatic prohibition | *Don't. I mean it.* |
+
+Both words take the same ending: **`yem yem`** is an insistent plea (*please, please…*), and **`yur yur`** is *really, hold off for now*. **`yal`** is usually left out, but **`yal yal`** is always written, because the repeat carries the emphasis.
+
+Repeat only the opening act word: an act word after the body starts a new turn instead of adding emphasis.
+
+**Compare with:** the tone mark `!` makes your voice louder and more stressed. A doubled act word makes the act itself more insistent, so it also fits a calm voice. The two can go together.
+
+### Stacking two act words {#stacked-acts}
+
+People often do one act while sounding like another. *Could you pass the salt?* is a request that sounds like a question. *We don't hit in this house* is a prohibition that sounds like a statement. Two different act words say both: the **first** is what you really do, and the **second** is how it sounds. The listener always knows the real act from the first word, and answers that act.
+
+> `yel yol vanuvul dobogal zawan.`
+>
+> y-command | y-question | v-punch | d-box | z-listener
+>
+> "Could you punch the box?" (a request)
+
+The body takes the **first** word's [usual order](#act-word-order). The second word only says how the turn sounds and never moves the verb. So a prohibition that sounds like a command still keeps its verb late, and a missed **`yul`** never leaves an order to act.
+
+> `yul yel dobogal vanuvul.`
+>
+> y-prohibition | y-command | d-box | v-punch
+>
+> "Go ahead, punch the box." (sarcastic: don't)
+
+> `yul yal zayan dobogal vanuvul.`
+>
+> y-prohibition | y-statement | z-interlocutors | d-box | v-punch
+>
+> "We don't punch the box." (a house rule)
+
+<!-- cheat-sheet: talking -->
+| Agebon | Really does → sounds like | English |
+|--------|---------------------------|---------|
+| **`yel yol`** | command → question | *Could you pass the salt?* |
+| **`yel yal`** | command → statement | *You'll be home by ten.* / *Passengers remain seated.* |
+| **`yel yul`** | command → prohibition | *Don't you dare finish those cookies* (teasing: do) |
+| **`yul yal`** | prohibition → statement | *We don't hit in this house.* |
+| **`yul yol`** | prohibition → question | *Must you?* / *Do you really have to shout?* |
+| **`yul yel`** | prohibition → command | *Go ahead, try it.* (sarcastic: don't) |
+| **`yal yel`** | statement → command | *Note that…* / *Mark my words.* |
+| **`yal yul`** | statement → prohibition | *I won't even mention that he lied.* (said anyway) |
+
+Each word's ending describes its own act. The first ending says how firmly you really mean the act; the second says how it sounds. So a stack can show a soft sound over a firm act, which is the pressure that is hardest to name in English:
+
+<!-- cheat-sheet: talking -->
+| Agebon | Use | English |
+|--------|-----|---------|
+| **`yem yol`** | soft request that sounds like a question: they may say no | *Would you mind…?* |
+| **`yel yom`** | firm command that sounds like a gentle ask: they may not say no | a boss's *Would you maybe…?* |
+| **`yel yem`** | command with a *please* that is not optional | *Please do it.* (not a choice) |
+| **`yem yel`** | soft offer that sounds like a command | *Have a seat. Go on, take another.* |
+| **`yer yal`** | rule for now that sounds like a description | *For now, everyone stays inside.* |
+| **`yum yal`** | soft norm | *We'd rather people didn't…* |
+| **`yul yur`** | firm *no* that sounds like *not yet* | *Let's hold off for now.* (meaning never) |
+
+> `yem yel vuhohol.`
+>
+> y-request | y-command | v-sit
+>
+> "Sit, sit!" (an offer)
+
+A stack has two act words at most, with nothing between them. A call, a reaction, or a hook goes before the first act word. The first word is always written, even **`yal`**: without it, the second word would be the act.
 
 ### Describing a call or reaction {#describe-turn-word}
 
@@ -671,13 +742,14 @@ z-Olazun | v-see | &d-trumpet
 *Olazun sees a trumpet.* (a trumpet, not something else)
 :::
 
-**6.** `yar zuzozen hogowul vezuyol.`
+**6.** `yul yel vozohul.`
 
 ::: details Show answer
-y-provisional-statement | z-Uzozen | h-quiet | v-sing
+y-prohibition | y-command | v-stop
 
-*As things stand, Uzozen sings quietly.*
+*Go ahead, stop.* (sarcastic: don't stop)
 :::
+
 
 #### Pick one {#intermediate-pick-one}
 

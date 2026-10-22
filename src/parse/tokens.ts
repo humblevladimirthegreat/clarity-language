@@ -377,12 +377,13 @@ const WRITING_SPAN_BY_POS: Partial<Record<string, AgebonTokenType>> = { z: Writi
 
 function isForceWord(word: LexWord): boolean {
   if (word.pos !== "y" || word.family.kind !== "joinMarker") return false;
-  return word.family.series.length === 1;
+  // **-n** on `/y/` calls someone; `yan` / `yaen` / … read as a call, which enforce refuses (`turnSeriesCall`).
+  return word.family.series.length === 1 && word.ending !== "n";
 }
 
 function isPolarWord(word: LexWord): boolean {
   if (word.pos !== "y" || word.family.kind !== "joinMarker") return false;
-  return word.family.series.length > 1;
+  return word.family.series.length > 1 && word.ending !== "n";
 }
 
 function isLinkerWord(word: LexWord): boolean {

@@ -491,6 +491,8 @@ A command (**`yel`**) or request (**`yem`**) is not a claim, so *true* and *fals
 
 After a flat command, `yael` / `yuel` are the plain comply / refuse. After a request (**`yem`**), the **o** words fit better, because you are choosing whether to take it on.
 
+After [two stacked act words](speech-moves.md#stacked-acts), answer the first one, the act the speaker really does. A request that sounds like a question (`yel yol …`) takes **`yaol`** / **`yuol`**, not a *yes* or *no* about whether you could.
+
 > `yel vowurel zawan. yael.`
 >
 > y-command | v-walk | z-listener . y-yes
@@ -564,6 +566,16 @@ After a request or a suggestion, **`yol yaol.`** asks *okay?*: will they take it
 | `yol yoem.` | after a question, offer them a pass | *…, or would you rather not say?* |
 
 Soft **`yom`** asks more gently (`yom yaol.` *…, if that's okay?*), and the other polar words and endings make tags the same way.
+
+After [two stacked act words](speech-moves.md#stacked-acts), a tag asks about the first one, the real act. So *okay?* after a command that sounds gentle shows that the gentle sound was only a surface:
+
+> `yel yom vowurel zawan. yol yaol.`
+>
+> y-command | y-soft-question | v-walk | z-listener . y-question | y-sure
+>
+> "Would you maybe walk? Okay?" (it is an order)
+
+**Compare with:** `yem vowurel zawan. yol yaol.` is a real request, which the listener is free to turn down.
 
 **Compare with:** the answer itself is the polar word alone (`yaol.` *sure*). The tag puts **`yol`** first, so it asks for that answer instead of giving it.
 
@@ -750,7 +762,7 @@ A *yes/no* question can also check a **named** item: put a single-item join afte
 
 ### Rhetorical question {#rhetorical}
 
-A **rhetorical question** is shaped like a question, but you are not waiting for a reply: you think the answer is obvious. Write statement **`yal`** right before **`yol`**. The statement word says you already hold the answer; the question word gives the body its question shape. The body is an ordinary yes/no question or fill-ask.
+A **rhetorical question** sounds like a question, but you are not waiting for a reply: you think the answer is obvious. It [stacks two act words](speech-moves.md#stacked-acts): a statement word first, because a claim is what you really make, then a question word for how it sounds. The body is an ordinary yes/no question or fill-ask, in a statement's usual order.
 
 > `yal yol zar vegemal.`
 >
@@ -772,9 +784,53 @@ Soft **`yam yol`** muses rather than insists: you lean toward an answer but put 
 >
 > "Who really cares, though?"
 
-The listener may still reply, but no reply is owed. Only **`yal`** or **`yam`** stacks before the question word **`yol`** / **`yom`** this way.
+<!-- cheat-sheet: talking -->
+| Agebon | Use | English |
+|--------|-----|---------|
+| **`yal yol`** | rhetorical question | *Who cares?* (nobody) |
+| **`yam yol`** | musing | *Who really cares, though?* |
+| **`yar yol`** | rhetorical for now | *Surely, as things stand…?* |
+| **`yal yom`** | sounds like idle wondering | *I wonder who cares…* (nobody) |
+| **`yal yor`** | sounds like a check | *Just checking, it's Tuesday, right?* (you know it is) |
+
+The listener may still reply, but no reply is owed.
 
 **Compare with:** a [tag](#tags) after the sentence (`…. yol yael.`) asks the listener to confirm. A rhetorical question asks for nothing.
+
+### Quiz {#quiz}
+
+A **quiz** asks something you already know, because you want the other person to say it. Put the question word first, because a question is what you really ask, then the statement word: you already hold the answer. The body is an ordinary yes/no question or fill-ask, in a question's usual order.
+
+> `yol yal ? zar vanuvul dobogal.`
+>
+> y-question | y-statement | ? | z-wh | v-punch | d-box
+>
+> "So who punched the box?" (I know who; you say it)
+
+The answer is the one the asker already holds. Soft **`yom yal`** is a gentle quiz: *I think you know this one…*
+
+**Compare with:** a [rhetorical question](#rhetorical) (`yal yol`) puts the statement first. You state the answer and ask for nothing. A quiz asks, and the other person gives the answer you already know.
+
+### Questions that sound like another act {#stacked-questions}
+
+A question can also sound like a command or a prohibition. It still asks, and the first word says so. Whenever either of two stacked act words is a question word, the [question tone](#question-tone) `?` goes right after both of them.
+
+<!-- cheat-sheet: talking -->
+| Agebon | Use | English |
+|--------|-----|---------|
+| **`yol yal`** | quiz: you know the answer | *Seven times eight is…?* |
+| **`yol yel`** | question demanded as an order: an answer is required | *Tell me where you were.* |
+| **`yol yul`** | question that hopes for *no* | *You're not leaving, are you?* |
+
+> `yol yul ? zawan velurul.`
+>
+> y-question | y-prohibition | ? | z-listener | v-departure
+>
+> "You're not leaving, are you?" (a real question; you hope not)
+
+**Compare with:** **`yul yol`** puts the prohibition first. It forbids and only sounds like a question (*Must you?*), so no answer is owed. **`yol yul`** really asks, and shows which answer you want. A [tag](#tags) asks the listener to confirm a claim you have already made.
+
+**`yol yel`** and the quiz both insist on an answer. In the quiz you know it already; here you do not.
 
 ### Practice {#intermediate-practice}
 
@@ -892,6 +948,7 @@ y-statement | y-question | z-wh | v-attest
 
 *Who attests?* (nobody does)
 :::
+
 
 **5.** `yol ol bur zudozol vezuvol.`
 

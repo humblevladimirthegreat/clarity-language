@@ -43,8 +43,7 @@ describe("sentence-parser synthetic", () => {
     assert.equal(result.utterances[0]!.bodies.length, 1);
   });
 
-  it("does not fold other repeated act words", () => {
-    // A second turn starts only after a period; `yol` is not an echo like `yul yul`.
+  it("starts a new turn after a period, not a stack", () => {
     const result = parseSentenceTokens(tokens("yol. yol vazawdzorzal."));
     assert.equal(result.utterances.length, 2);
     assert.equal(result.utterances[0]!.left.leadForce, undefined);
@@ -64,11 +63,21 @@ describe("sentence-parser synthetic", () => {
     assert.equal(result.utterances[1]!.left.hookModifiers?.[0]?.raw, "wewem");
   });
 
-  it("parses yal yol / yam yol as a rhetorical question", () => {
+  it("parses two stacked act words, outer first (speech-moves.md#stacked-acts)", () => {
     const left = parseSentenceTokens(tokens("yal yol zar vegemal.")).utterances[0]!.left;
     assert.equal(left.leadForce?.raw, "yal");
     assert.equal(left.force?.raw, "yol");
-    assert.equal(parseSentenceTokens(tokens("yam yol zuzozen vowurel.")).utterances[0]!.left.leadForce?.raw, "yam");
+    for (const [text, outer, inner] of [
+      ["yam yom zuzozen vowurel.", "yam", "yom"],
+      ["yel yol vanuvul dobogal zawan.", "yel", "yol"],
+      ["yol yal zar vanuvul dobogal.", "yol", "yal"],
+      ["yel yem vowurel.", "yel", "yem"],
+      ["yal yal zuzozen vowurel.", "yal", "yal"],
+    ] as const) {
+      const stacked = parseSentenceTokens(tokens(text)).utterances[0]!.left;
+      assert.equal(stacked.leadForce?.raw, outer, text);
+      assert.equal(stacked.force?.raw, inner, text);
+    }
   });
 
   it("attaches a factor number after an equative scale only", () => {

@@ -38,7 +38,33 @@ The vowel picks the act: **a** add, **o** one, **e** order, **u** undo. A period
 | [Request with *let's*](../speech-moves.md#speech-act) | `yem vowurel zayan.` | *Let's walk.* | I |
 | [Soft prohibition with *let's not*](../speech-moves.md#speech-act) | `yum zayan vezuvol.` | *Let's not sleep.* | I |
 | [Provisional statement](../speech-moves.md#act-r) | `yar zuzozen vowurel.` | *As things stand, Uzozen walks.* | I |
-| [Emphatic prohibition](../speech-moves.md#emphatic-prohibition): repeat only the opening `yul` | `yul yul vazuyul.` | *Don't sneak. I mean it.* | I |
+| [Doubled act word](../speech-moves.md#doubled-act): repeat only the opening act word | `yul yul vazuyul.` | *Don't sneak. I mean it.* | I |
+| [Insisted statement](../speech-moves.md#doubled-act) | `yal yal` | *I'm telling you, …* | I |
+| [Pressing question](../speech-moves.md#doubled-act) | `yol yol` | *I really need to know: …?* | I |
+| [Urgent command](../speech-moves.md#doubled-act) | `yel yel` | *Do it. Now.* | I |
+| [Insistent plea](../speech-moves.md#doubled-act) | `yem yem` | *please, please…* | I |
+
+### Stacked act words {#stacked}
+
+The [first act word](../speech-moves.md#stacked-acts) is what you really do, the second how it sounds. The body takes the first word's order.
+
+| Job | Example | English | Stage |
+|-----|---------|---------|-------|
+| [Request that sounds like a question](../speech-moves.md#stacked-acts) | `yel yol vanuvul dobogal zawan.` | *Could you punch the box?* | I |
+| [Directive that sounds like a description](../speech-moves.md#stacked-acts) | `yel yal` | *Passengers remain seated.* | I |
+| [Teasing: sounds like *don't*, means *do*](../speech-moves.md#stacked-acts) | `yel yul` | *Don't you dare finish those cookies.* | I |
+| [Prohibition that sounds like a norm](../speech-moves.md#stacked-acts) | `yul yal zayan dobogal vanuvul.` | *We don't punch the box.* | I |
+| [Discouraging question](../speech-moves.md#stacked-acts) | `yul yol` | *Must you?* | I |
+| [Sarcastic dare](../speech-moves.md#stacked-acts) | `yul yel dobogal vanuvul.` | *Go ahead, punch the box.* (don't) | I |
+| [Claim as an instruction to notice](../speech-moves.md#stacked-acts) | `yal yel` | *Mark my words.* | I |
+| [Saying it while claiming you won't](../speech-moves.md#stacked-acts) | `yal yul` | *I won't even mention that he lied.* | I |
+| [Soft request that sounds like a question](../speech-moves.md#stacked-acts) | `yem yol` | *Would you mind…?* | I |
+| [Firm command that sounds like a gentle ask](../speech-moves.md#stacked-acts) | `yel yom` | *Would you maybe…?* (not optional) | I |
+| [Command with a *please* that is not optional](../speech-moves.md#stacked-acts) | `yel yem` | *Please do it.* | I |
+| [Offer that sounds like a command](../speech-moves.md#stacked-acts) | `yem yel vuhohol.` | *Sit, sit!* | I |
+| [Rule for now](../speech-moves.md#stacked-acts) | `yer yal` | *For now, everyone stays inside.* | I |
+| [Soft norm](../speech-moves.md#stacked-acts) | `yum yal` | *We'd rather people didn't…* | I |
+| [Firm *no* that sounds like *not yet*](../speech-moves.md#stacked-acts) | `yul yur` | *Let's hold off for now.* (never) | I |
 
 ## Tone marks {#tone-marks}
 
@@ -139,6 +165,12 @@ The blank **-r** takes a vowel; the count is how many items you listed before it
 | [Blank belongs to the outer question](../questions.md#blank-in-dependent) | `yol zawan vevemol darl zar vowurel.` | *Who do you think walks?* | I |
 | [Question you don't want answered](../questions.md#rhetorical): `yal` before `yol` | `yal yol zar vegemal.` | *Who cares?* (nobody) | I |
 | [Musing](../questions.md#rhetorical) | `yam yol zar vegemal.` | *Who really cares, though?* | I |
+| [Rhetorical for now](../questions.md#rhetorical) | `yar yol` | *Surely, as things stand…?* | I |
+| [Sounds like idle wondering](../questions.md#rhetorical) | `yal yom` | *I wonder who cares…* | I |
+| [Sounds like a check](../questions.md#rhetorical) | `yal yor` | *Just checking, it's Tuesday, right?* | I |
+| [Quiz](../questions.md#quiz): `yol` before `yal`, you know the answer | `yol yal ? zar vanuvul dobogal.` | *So who punched the box?* | I |
+| [Question demanded as an order](../questions.md#stacked-questions) | `yol yel` | *Tell me where you were.* | I |
+| [Question that hopes for *no*](../questions.md#stacked-questions) | `yol yul ? zawan velurul.` | *You're not leaving, are you?* | I |
 
 ## Answering {#answering}
 

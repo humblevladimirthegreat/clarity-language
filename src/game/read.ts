@@ -4,6 +4,7 @@
  * anything outside the shapes below lands in `unsupported` and the turn says so, never silently.
  */
 import { CLOSED } from "../closed-roots.js";
+import { actWord } from "../parse/series.js";
 import type { GPackage, LexWord, NpCoord, ParseResult, Unit, Utterance } from "../parse/types.js";
 import type { Act, Force, NounRef } from "./types.js";
 
@@ -161,11 +162,12 @@ export function readActs(result: ParseResult): Act[] {
 
 function readUtterance(utterance: Utterance, gaps: Set<LexWord>, antecedents: Map<LexWord, LexWord>): Act[] {
   const { left } = utterance;
-  const series = left.force?.family.kind === "joinMarker" ? left.force.family.series : "a";
+  const act = actWord(left);
+  const series = act?.family.kind === "joinMarker" ? act.family.series : "a";
   const force = FORCES[series] ?? "statement";
   const first = blankAct(force, antecedents);
-  if (left.force && !FORCES[series]) first.unsupported.push(`this act word (${left.force.raw})`);
-  if (left.leadForce) first.unsupported.push(`a doubled act word (${left.leadForce.raw})`);
+  if (act && !FORCES[series]) first.unsupported.push(`this act word (${act.raw})`);
+  if (left.leadForce) first.unsupported.push(`a stacked act word (${left.leadForce.raw} ${left.force?.raw ?? ""})`);
   if (left.hook) first.unsupported.push(`a discourse hook (${left.hook.raw})`);
   for (const call of left.vocatives) {
     if (call.ending === "n" && contentRoot(call)) first.calls.push(call);
