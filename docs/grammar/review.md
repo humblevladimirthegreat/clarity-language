@@ -687,14 +687,14 @@ z-Ahelan | [d-station | [w-MEMORY | g-quiet]] | v-see
 
 #### Agebon → English {#advanced-agebon-to-english}
 
-**1.** `zahelan duyahel vowureloel.`
+**1.** `zoxual bluyahel vuhohol.`
 
 ::: details Show answer
-z-Ahelan | d-station | v-head-for
+[z-at-x-everything | bl-station] | v-sit
 
-*Ahelan heads for the station.*
+*Everyone at the station sits.*
 
-**Rule:** [Hook compounds](hooks.md#hook-compounds)
+**Rule:** [Hooked joins](hooks.md#hooked-joins)
 :::
 
 **2.** `zahelan d[omobul#] varayel.`

@@ -51,6 +51,7 @@ export type WordSlot =
   | "boundAmount"
   | "boundGrounds"
   | "hostedBound"
+  | "joinLandmark"
   | "item"
   | "joinModifier"
   | "factor"
@@ -291,6 +292,7 @@ function visitNp(coord: NpCoord, v: Visitor): void {
     for (const item of part.items) visitNpItem(item, v);
     for (const mod of part.joinModifiers ?? []) v.word?.(mod, "joinModifier");
     if (part.join) v.join?.(part.join, { kind: "np", coord, index });
+    if (part.landmark) v.word?.(part.landmark, "joinLandmark");
     visitShared(part.join, part.shared, v);
     if (part.factor) v.word?.(part.factor, "factor");
     if (part.tag) v.word?.(part.tag, "groupTag");

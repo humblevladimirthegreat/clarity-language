@@ -903,6 +903,8 @@ class AgebonSentenceParser extends CstParser {
         this.CONSUME(WBefore[NP_W_TARGET[level]], { LABEL: "W" });
       });
       this.CONSUME(NP_JOIN[level]);
+      // A hooked join's landmark: the `bl-` word right after it (hooks.md#hooked-joins).
+      this.OPTION3(() => this.CONSUME3(HostedB, { LABEL: "joinLandmark" }));
       const label = { LABEL: "sharedAfterJoin" };
       if (variant === "Open") {
         this.OR([
@@ -1894,8 +1896,8 @@ function isLabelMarker(marker: NumberMarker): boolean {
 
 /**
  * Give words the token their neighbors decide. A word that completes the word right before it (clause.md § extra
- * nouns): a `bl-` word after an `/h/`, `/th/` or `/ɡ/` word, or after a label-scope verb that names a pair
- * (predication.md#scope-relative), becomes {@link HostedB}, and a `bl-` stand-in after an `/h/` or `/th/` word
+ * nouns): a `bl-` word after an `/h/`, `/th/` or `/ɡ/` word, a hooked join (hooks.md#hooked-joins), or a label-scope
+ * verb that names a pair (predication.md#scope-relative), becomes {@link HostedB}, and a `bl-` stand-in after an `/h/` or `/th/` word
  * {@link HostedOdo}. A plain `/b/` there stays the verb's recipient.
  * A cardinal `/ɡ/` right after a hosted `/b/` is that unit's {@link Amount}, and a signed `/h/` number after an
  * equative's shared scale its {@link Factor}. An `/h/` or digitless `/b/` number right after a rank noun join is its
@@ -2131,6 +2133,10 @@ function hostedType(token: IToken, before: IToken[], after: IToken[]): TokenType
   if (token.tokenType === HPlain && before[skipWBack(before, before.length - 1)]?.tokenType === JoinV) return HSharedV;
   if (tokenIs(token, B) && isRankNounJoin(host) && scaleNumberAhead(token)) return BScale;
   const locked = !!(token.payload as LexWord | undefined)?.bl;
+  // A hooked join's landmark: one `bl-` word, never a list (hooks.md#hooked-joins). An `/h/` one hosts as any `/h/` word.
+  if (locked && tokenIs(token, B, JoinB) && isHookedNounJoin(host)) {
+    return (token.payload as LexWord | undefined)?.family.kind === "number" ? HostedBNumber : HostedBNoun;
+  }
   // A `bl-` join blank (`hewom blar`, `thebam blar`) completes its host like a `bl-` noun.
   if (locked && tokenIs(token, B, JoinB) && (tokenIs(host, H, G, Amount, Factor, HScale, HSharedV, HFrame) || isScopeThoVerb(host))) {
     if (!isScopeThoVerb(host) && joinClosesAhead(after)) return HostedBJoined;
@@ -2225,6 +2231,12 @@ function skipWBack(tokens: IToken[], i: number): number {
 }
 
 /** A rank, equative or sequence join of a noun list: the word after it may be its shared scale (joins.md#shared-after-the-join). */
+/** A `/z/`, `/d/` or `/b/` hooked join, which hosts its landmark (hooks.md#hooked-joins). */
+function isHookedNounJoin(token: IToken): boolean {
+  const family = (token.payload as LexWord | undefined)?.family;
+  return tokenIs(token, JoinZ, JoinD, JoinB) && family?.kind === "joinMarker" && !!family.hook;
+}
+
 function isRankNounJoin(token: IToken | undefined): boolean {
   return !!token && tokenIs(token, JoinZ, JoinD, JoinB) && RANK_SERIES.has(joinSeries(token));
 }
@@ -2335,7 +2347,13 @@ function partJoinClose(part: CstNode, rule: string): CstNode | undefined {
   return childNodes(part, rule)[0] ?? childNodes(part, "standaloneJoin")[0];
 }
 
-function joinFromClose(close: CstNode | undefined): { join?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord } {
+function joinFromClose(close: CstNode | undefined): {
+  join?: LexWord;
+  landmark?: LexWord;
+  shared: CoordShared[];
+  joinModifiers?: LexWord[];
+  factor?: LexWord;
+} {
   if (!close) return { shared: [] };
   const joinTok =
     childToken(close, "JoinZ") ??
@@ -2348,9 +2366,11 @@ function joinFromClose(close: CstNode | undefined): { join?: LexWord; shared: Co
   const sharedCst = childNodes(close, "sharedAfterJoin")[0];
   const modifiers = childTokens(close, "W").map(lexWordFromToken);
   const factorTok = childToken(close, "factor");
+  const landmarkTok = childToken(close, "joinLandmark");
   const join = joinTok ? lexWordFromToken(joinTok) : undefined;
   return {
     join,
+    ...(landmarkTok ? { landmark: lexWordFromToken(landmarkTok) } : {}),
     shared: buildShared(sharedCst, join),
     ...(factorTok ? { factor: lexWordFromToken(factorTok) } : {}),
     ...(modifiers.length > 0 ? { joinModifiers: modifiers } : {}),
@@ -2407,7 +2427,7 @@ function buildNpCoord(cst: CstNode): NpCoord {
   const built: NpCoord["parts"] = parts.map((part) => {
     if (part === cst && !NP_LIST_RULE.test(cst.name)) return { items: [{ kind: "package", package: buildNpPackage(part) }], shared: [] };
     const close = partJoinClose(part, "npJoinClose");
-    const { join, shared, joinModifiers, factor } = joinFromClose(close);
+    const { join, landmark, shared, joinModifiers, factor } = joinFromClose(close);
     const packages = childNodes(part, "npConjunct").map(buildNpPackage);
     // A hook + `/b/` before the join word rides on the last item as a hosted pair, like a `/ɡ/` with its own `/b/`.
     const itemHook = childToken(part, "itemHook");
@@ -2423,6 +2443,7 @@ function buildNpCoord(cst: CstNode): NpCoord {
     return {
       items,
       join,
+      ...(landmark ? { landmark } : {}),
       shared,
       ...(joinModifiers ? { joinModifiers } : {}),
       ...(factor ? { factor } : {}),

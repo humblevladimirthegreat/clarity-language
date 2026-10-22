@@ -139,6 +139,7 @@ After the role letter, look at both sides of the **first** **`x`**. A role word 
 | [name](../compounds.md#conversation-length) | a single vowel, then **-n** | conversation length | *Uzozen, I have time* | I |
 | [longer root](../compounds.md#families-by-shape) | a single vowel | [ability](../intention.md#ability) | *can't sing right now* | I |
 | [hook vowels](../hooks.md#hook-prefixes), maybe **`m`** | a stem | hook prefix | `guexavuvul` *anti-fighting*; `gamxohalal` *mid-ocean* | A |
+| [hook vowels](../hooks.md#hooked-joins), maybe **`m`** or **`r`** | a join: vowels and an ending | hooked join, landmark after it | `zoxual blahehal` *everyone at the house* | A |
 
 Mid-word **`th`** is another family: a sake root and a vowel (`guwathal`), any other root and a vowel ([label scope](../predication.md#label-scope)), or a direction root and a facing person (`gowuhethuzozen`). After a sake root, root-shaped letters are always the emotion tail.
 

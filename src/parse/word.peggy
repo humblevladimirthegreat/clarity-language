@@ -583,6 +583,7 @@ PrefixedBody
   / xWord
   / plainContent
   / hookCompound
+  / hookedJoin
   / joinMarker
 
 // ── Tag pronouns (pronouns.md#tag-pronouns) ─────────────────────────────────
@@ -805,6 +806,20 @@ HookCompoundCite
     { return chars; }
 
 // ── Join markers ────────────────────────────────────────────────────────────
+
+// Hooked join: extra-noun hook vowel(s) + the hook's ending (`m` the frame, `r` point back; **-l** unwritten) + `x` +
+// join vowel(s) + join ending (`zoxual` *everyone at …*, `zomxuam`, `zorxarx`; hooks.md#hooked-joins). After the seam a
+// hook prefix has a root (vowel, consonant, vowel), and this has only vowels and an ending, so the two never meet.
+// The join's **-n** and stand-in codas have no reading here, nor `l` or `n` before the seam.
+hookedJoin
+  = vowels:HookPrefixVowels hookEnd:[mr]? "x" series:JoinSeries ending:[lmr] plural:PluralSuffix? WordEnd {
+      return {
+        ending,
+        plural: !!plural,
+        family: { kind: "joinMarker", series, hook: vowels + (hookEnd || "l") },
+      };
+    }
+
 
 joinMarker
   = series:StandInSeries cluster:StandInCoda WordEnd {

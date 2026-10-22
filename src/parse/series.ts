@@ -26,6 +26,20 @@ export const BAR_SERIES = new Set(["e", "ue", "oe"]);
 export const SCALE_SERIES = new Set(["e", "ae", "ue"]);
 export const KIND_SERIES = new Set(["ua", "uo"]);
 
+/** A hooked join's hook, as its free form (`ol`, `om`, `or`; hooks.md#hooked-joins); undefined on any other word. */
+export function joinHook(word: LexWord | undefined): string | undefined {
+  return word?.family.kind === "joinMarker" ? word.family.hook : undefined;
+}
+
+/** Hooks whose free **-r** points back (hooks.md#hook-resume), so a hooked join may take `r` before its seam. */
+export const POINT_BACK_HOOKS = new Set(["ar", "aor", "or", "ur", "uor", "er", "aer"]);
+
+/** The hooks an `/h/` hooked join takes: a time reading on the landmark, or a point-back to a time (hooks.md#hooked-joins-time). */
+export const TIME_HOOKS = new Set(["al", "ol", "ul", "oel", "om", "ar", "or", "ur"]);
+
+/** The bare restrictors an `/h/` hooked join bounds (restrictors.md): *never*, *always*, and the **-r** occasions. */
+export const TIME_JOINS = new Set(["al", "am", "ual", "uam", "ar", "or", "ur", "er"]);
+
 /** Digitless number stem: no digit groups and no exponent shorthand (numbers.md § digitless). */
 export function isDigitless(stem: NumberStem): boolean {
   return stem.groups.length === 0 && !stem.digitlessExp;

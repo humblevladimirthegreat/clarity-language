@@ -14,6 +14,7 @@ import { classify } from "./classify.js";
 import { POINTER_VOWEL, ROLE_PART, SCOPE_VOWEL, morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine } from "./morph-gloss.js";
 import type { MorphGlossContext } from "./morph-gloss.js";
 import { parseWords } from "./word.js";
+import { POINT_BACK_HOOKS, TIME_HOOKS, TIME_JOINS } from "./series.js";
 
 const POS = ["z", "d", "b", "v", "g", "w", "h", "th", "x", "y"] as const;
 const ENDINGS = ["l", "m", "n"] as const;
@@ -69,6 +70,7 @@ export function buildGlossIndex(tables: ClassifyTables, extraLines: string[] = [
   const index: GlossIndex = { forms: new Map(), roots: new Map() };
   for (const root of new Set<string>([...tables.published.keys(), ...tables.compounds.keys()])) indexRootForms(index, root, tables);
   indexSeriesForms(index, tables);
+  indexHookedJoinForms(index, tables);
   indexSayForms(index, tables);
   indexLineForms(index, extraLines, tables);
   return index;
@@ -78,6 +80,7 @@ export function buildGlossIndex(tables: ClassifyTables, extraLines: string[] = [
 export function seriesGlossIndex(tables: ClassifyTables): GlossIndex {
   const index: GlossIndex = { forms: new Map(), roots: new Map() };
   indexSeriesForms(index, tables);
+  indexHookedJoinForms(index, tables);
   indexSayForms(index, tables);
   return index;
 }
@@ -85,13 +88,38 @@ export function seriesGlossIndex(tables: ClassifyTables): GlossIndex {
 function indexSeriesForms(index: GlossIndex, tables: ClassifyTables): void {
   for (const series of SERIES) {
     for (const ending of JOIN_ENDINGS) {
-      for (const prefix of [...POS, ""]) {
+      // A hosted `bl-` join is a whole landmark (`hewom blar`, `zoxual blual`).
+      for (const prefix of [...POS, "bl", ""]) {
         const surface = `${prefix}${series}${ending}`;
         for (const ctx of CONTEXTS) {
           const gloss = glossOne(surface, tables, ctx);
           if (gloss) add(index.forms, gloss, surface);
         }
       }
+    }
+  }
+}
+
+const HOOK_VOWELS = ["a", "ao", "o", "oe", "u", "ua", "uo", "e", "ae", "ue"];
+
+/**
+ * Hooked joins (hooks.md#hooked-joins): every hook on **-l**, **-m**, and point-back **-r** × every join on **-l**,
+ * **-m**, **-r**, **-rx** under `/z/` `/d/` `/b/`; under `/h/`, the time hooks × the bare restrictors.
+ */
+function indexHookedJoinForms(index: GlossIndex, tables: ClassifyTables): void {
+  const hooks = HOOK_VOWELS.flatMap((vowels) => [`${vowels}l`, `${vowels}m`, `${vowels}r`]).filter(
+    (hook) => !hook.endsWith("r") || POINT_BACK_HOOKS.has(hook),
+  );
+  const joins = SERIES.flatMap((series) => [`${series}l`, `${series}m`, `${series}r`, `${series}rx`]);
+  const spell = (pos: string, hook: string, join: string) => `${pos}${hook.slice(0, -1)}${hook.endsWith("l") ? "" : hook.slice(-1)}x${join}`;
+  const surfaces = [
+    ...["z", "d", "b"].flatMap((pos) => hooks.flatMap((hook) => joins.map((join) => spell(pos, hook, join)))),
+    ...[...TIME_HOOKS].flatMap((hook) => [...TIME_JOINS].map((join) => spell("h", hook, join))),
+  ];
+  for (const surface of surfaces) {
+    for (const ctx of [{}, { fillAsk: true }, { standaloneJoin: true }] as MorphGlossContext[]) {
+      const gloss = glossOne(surface, tables, ctx);
+      if (gloss) add(index.forms, gloss, surface);
     }
   }
 }
@@ -111,15 +139,15 @@ function indexSayForms(index: GlossIndex, tables: ClassifyTables): void {
   }
 }
 
-/** One content root under each role letter and **-l/-m/-n**. */
+/** One content root under each role letter (and `gl-` / hosted `bl-`) and **-l/-m/-n**. */
 export function indexRootForms(index: GlossIndex, root: string, tables: ClassifyTables): void {
   for (const ending of ENDINGS) {
-    for (const prefix of [...POS, "gl", ""]) {
+    for (const prefix of [...POS, "gl", "bl", ""]) {
       const surface = `${prefix}${root}${ending}`;
       const gloss = glossOne(surface, tables, {});
       if (!gloss) continue;
       add(index.forms, gloss, surface);
-      const body = gloss.replace(/^(?:th|gl|[zdbvgwhxy])-/, "");
+      const body = gloss.replace(/^(?:th|gl|bl|[zdbvgwhxy])-/, "");
       add(index.roots, body, root);
     }
   }
@@ -277,14 +305,14 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
   if (plural) for (const form of index.forms.get(text) ?? []) out.add(form);
 
   // Tag pronoun: `tag.A` → `wa` + **-l**; `←tag.A` is **-r**, `←tag.A.part` is **-m**, `←tag.A.name` is **-n**; a pair `←tag.A+E` is `wae`.
-  const tag = core.match(/^((?:th|gl|[zdbvgwhxy])-)?(←)?tag\.([AEOU](?:\+[AEOU])?)(\.part|\.name)?$/);
+  const tag = core.match(/^((?:th|gl|bl|[zdbvgwhxy])-)?(←)?tag\.([AEOU](?:\+[AEOU])?)(\.part|\.name)?$/);
   if (tag) {
     const ending = !tag[2] ? "l" : tag[4] === ".part" ? "m" : tag[4] === ".name" ? "n" : "r";
     out.add(`${(tag[1] ?? "").replace(/-$/, "")}w${tag[3]!.replace("+", "").toLowerCase()}${ending}${suffix}`);
     return [...out];
   }
 
-  const resume = core.match(/^((?:th|gl|[zdbvgwhxy])-)?←(.*)$/);
+  const resume = core.match(/^((?:th|gl|bl|[zdbvgwhxy])-)?←(.*)$/);
   if (resume) {
     const pos = (resume[1] ?? "").replace(/-$/, "");
     let body = resume[2]!;

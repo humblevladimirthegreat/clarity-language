@@ -513,3 +513,18 @@ describe("resolve — SHARED (comparatives.md / numbers.md)", () => {
     assert.equal(shared.length, 0);
   });
 });
+
+describe("resolve — hooked-join point-back (hooks.md#hooked-joins-point-back)", () => {
+  const landmarkOf = (text: string) => resolveOf(text).anaphors.find((bind) => bind.kind === "landmark")?.antecedent?.raw;
+
+  it("takes the latest landmark: a hook's /b/, a hosted bl- word, or a hooked join's", () => {
+    assert.equal(landmarkOf("zuzozen vuhohol ol bahehal. zorxual vezuvol."), "bahehal");
+    assert.equal(landmarkOf("zuzozen vuhohol ol bahehal. zoxual bluzahal vezuvol. zarxar vowurel."), "bluzahal");
+    assert.equal(landmarkOf("zuzozen vowurel halam blenulul. zorxual vezuvol."), "blenulul");
+  });
+
+  it("on /h/, takes only a time landmark", () => {
+    assert.equal(landmarkOf("zuzozen vowurel halam blenulul. zolazun vuhohol ol bahehal. zawan vebal hurxal."), "blenulul");
+    assert.equal(landmarkOf("zuzozen vowurel huxal blovulul. zawan vebal hurxal."), "blovulul");
+  });
+});

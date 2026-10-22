@@ -25,8 +25,8 @@ import type {
   VpCoord,
   WritingBracket,
 } from "./types.js";
-import { isDigitless, isRhetorical, KIND_SERIES, SCALE_SERIES } from "./series.js";
-import { isGreeting, isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, type Visitor, type WordSlot } from "./ast-walk.js";
+import { isDigitless, isRhetorical, joinHook, KIND_SERIES, SCALE_SERIES } from "./series.js";
+import { isGreeting, isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, vpUnitLists, type Visitor, type WordSlot } from "./ast-walk.js";
 import { CLOSED, closedDerived } from "../closed-roots.js";
 import { isClauseAdverb } from "./classify.js";
 import { linkerEnglish, topicEffect } from "./linkers.js";
@@ -53,8 +53,17 @@ type TagBinding = { word: LexWord; key: string; named: boolean };
 /** What the talk is about now: the `/x/` word that set it, and the referent it names (pronouns.md#topic). */
 type Topic = { word: LexWord; key: string };
 
+/** A landmark in play (hooks.md#hooked-joins-point-back): a hook's `/b/`, a hosted `bl-` word, or a hooked join's. */
+type Landmark = { word: LexWord; time: boolean };
+
 type Ctx = {
   antecedents: Antecedent[];
+  /** Landmarks in surface order; a hooked join's point-back takes the latest (on `/h/`, the latest time one). */
+  landmarks: Landmark[];
+  /** The last head word, whose hosted `/b/` comes next. */
+  host?: LexWord;
+  /** The `/b/` heads that extra-noun hooks take as their landmarks. */
+  hookLandmarks: Set<LexWord>;
   /** Names said in this conversation; a greeting from one of them while closing is goodbye too. */
   named: Set<string>;
   /** Tags assigned in this conversation (pronouns.md#tag-pronouns); a topic change leaves them alone. */
@@ -787,6 +796,41 @@ function harvest(ctx: Ctx, word: LexWord): void {
   }
 }
 
+// ── Hooked-join point-back (hooks.md#hooked-joins-point-back) ──────────────
+
+/** A time pole (`halam`, `harum`, …) or an `/h/` hooked join: its landmark is a time. */
+function hostsTime(host: LexWord | undefined): boolean {
+  if (!host || host.pos !== "h") return false;
+  if (joinHook(host)) return true;
+  return host.overlay?.kind === "clause_pole" && TIME_POLES.has(host.overlay.gloss);
+}
+
+/** The `/b/` heads right after extra-noun hooks in one unit list: those hooks' landmarks. */
+function noteHookLandmarks(ctx: Ctx, units: Unit[]): void {
+  units.forEach((unit, i) => {
+    const next = units[i + 1];
+    if (unit.kind !== "hook" || unit.job !== "extraNoun" || next?.kind !== "np" || next.coord.level !== "b") return;
+    for (const item of next.coord.parts[0]?.items ?? []) if (item.kind === "package") ctx.hookLandmarks.add(item.package.head);
+  });
+}
+
+/** Note a landmark this word puts in play, by the slot it fills. */
+function noteLandmark(ctx: Ctx, word: LexWord, slot: WordSlot | undefined): void {
+  if (slot === "joinLandmark") ctx.landmarks.push({ word, time: false });
+  else if (slot === "bound") ctx.landmarks.push({ word, time: hostsTime(ctx.host) });
+  else if (ctx.hookLandmarks.has(word)) ctx.landmarks.push({ word, time: false });
+  if (slot === "head") ctx.host = word;
+}
+
+/** A hooked join's **-r** hook points back to the latest landmark; on `/h/`, to the latest time landmark. */
+function bindLandmark(ctx: Ctx, word: LexWord): void {
+  const hook = joinHook(word);
+  if (!hook?.endsWith("r")) return;
+  const time = word.pos === "h";
+  const found = [...ctx.landmarks].reverse().find((landmark) => !time || landmark.time);
+  ctx.anaphors.push({ pronoun: word, kind: "landmark", ...(found ? { antecedent: found.word } : {}) });
+}
+
 function considerWord(ctx: Ctx, word: LexWord, slot?: WordSlot): void {
   if (isTopicPronoun(word)) bindTopic(ctx, word);
   else if (isTag(word)) considerTag(ctx, word, slot);
@@ -794,6 +838,8 @@ function considerWord(ctx: Ctx, word: LexWord, slot?: WordSlot): void {
   else if (isRoleAnaphor(word)) bindRole(ctx, word);
   else if (isPointer(word)) bindPointer(ctx, word);
   else if (isContentAnaphor(word)) bindContent(ctx, word);
+  else bindLandmark(ctx, word);
+  noteLandmark(ctx, word, slot);
 
   if (ctx.question && isJoinGap(word)) ctx.gaps.push(word);
 
@@ -820,6 +866,7 @@ function resolveVisitor(ctx: Ctx): Visitor {
       considerWord(ctx, word, slot);
     },
     join(join, site) {
+      bindLandmark(ctx, join);
       if (!ctx.question || !isJoinGap(join)) return;
       // In a `dorl` (question-like) dependent the blank is the dependent's own; in `darl` it is the outer ask's (questions.md#embedded-whether).
       if (ctx.standIn?.raw[1] === "o") ctx.innerGaps.push(join);
@@ -835,6 +882,9 @@ function resolveVisitor(ctx: Ctx): Visitor {
         }
       }
       if (node.kind === "body") enterMove(ctx, [greetingName(node.body) ?? []].flat());
+      if (node.kind === "clause") noteHookLandmarks(ctx, node.clause.units);
+      if (node.kind === "island") noteHookLandmarks(ctx, node.island.units);
+      if (node.kind === "vp") for (const units of vpUnitLists(node.coord)) noteHookLandmarks(ctx, units);
       if (node.kind === "clause") {
         const anchor = anchorOf(node.clause);
         if (anchor && ctx.pendingConsequence) {
@@ -878,6 +928,8 @@ function resolveVisitor(ctx: Ctx): Visitor {
 function buildResolve(result: ParseResult): ResolveInfo {
   const ctx: Ctx = {
     antecedents: [],
+    landmarks: [],
+    hookLandmarks: new Set(),
     named: new Set(),
     tags: new Map(),
     groupTags: new Map(),

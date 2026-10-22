@@ -110,7 +110,11 @@ export type MorphWordFamily =
       leftEnding: "l" | "m";
       hook: string;
     }
-  | { kind: "joinMarker"; series: string }
+  /**
+   * Join word. `hook`: a hooked join's extra-noun hook, as its free form (`ol`, `om`, `or`): the hook bounds the
+   * join's set, and its landmark is the `bl-` word right after (`zoxual blahehal`, hooks.md#hooked-joins).
+   */
+  | { kind: "joinMarker"; series: string; hook?: string }
   | {
       kind: "writingSpan";
       bracket: WritingBracket;
@@ -326,7 +330,8 @@ export type NpCoord = {
   /** `joinModifiers`: `/w/` words right before the join word (respectively `wazem`). */
   /** `factor`: digit `/h/` number after an equative's shared scale (*twice as … as*). */
   /** `tag`: a tag **-l** right after the fence closed by this part's join names the whole group (pronouns.md#tag-pronouns). */
-  parts: { items: NpItem[]; join?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord; tag?: LexWord }[];
+  /** `landmark`: the `bl-` word right after a hooked join, which bounds its set (hooks.md#hooked-joins). */
+  parts: { items: NpItem[]; join?: LexWord; landmark?: LexWord; shared: CoordShared[]; joinModifiers?: LexWord[]; factor?: LexWord; tag?: LexWord }[];
 };
 
 export type VpCoord = {
@@ -439,7 +444,7 @@ export type ParseResult = {
 
 // ── Stage 4 resolve ─────────────────────────────────────────────────────────
 
-export type AnaphorKind = "content" | "number" | "role" | "pointer" | "tag" | "topic";
+export type AnaphorKind = "content" | "number" | "role" | "pointer" | "tag" | "topic" | "landmark";
 
 export type AnaphorBind = {
   pronoun: LexWord;

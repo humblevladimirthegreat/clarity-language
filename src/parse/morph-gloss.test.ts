@@ -32,6 +32,21 @@ describe("morphGlossLine — join blanks", () => {
   });
 });
 
+describe("morphGlossLine — hooked joins (hooks.md#hooked-joins)", () => {
+  it("glosses the hook, -x-, the join, and brackets the landmark with it", () => {
+    expectLine("zoxual blahehal vezuvol.", "[z-at-x-everything | bl-house] | v-sleep");
+    expectLine("zomxuam bluwon vezuvol.", "[z-near-x-everything.open | bl-speaker] | v-sleep");
+    expectLine("yol dexar bluwon.", "y-question | [d-for-x-wh | bl-speaker]");
+    expectLine("zoxual blual vezuvol.", "[z-at-x-everything | bl-everything] | v-sleep");
+    expectLine("zoxual blahehal gagozol vezuvol.", "[z-at-x-everything | bl-house | g-cat] | v-sleep");
+  });
+  it("glosses a point-back hook, and on /h/ a time", () => {
+    expectLine("zuzozen vuhohol ol bahehal. zorxual vezuvol.", "z-Uzozen | v-sit | [at | b-house] . z-there-x-everything | v-sleep");
+    expectLine("zuzozen vowurel halam blenulul. zawan vebal hurxal.", "z-Uzozen | v-walk | [h-after | bl-thunderstorm] . z-listener | v-hear | h-since.then-x-never");
+    expectLine("zawan vebal huxam blenulul.", "z-listener | v-hear | [h-from-x-never.open | bl-thunderstorm]");
+  });
+});
+
 describe("morphGlossLine — clause joins go between clauses", () => {
   it("groups a switched join over the list before it", () => {
     expectLine(

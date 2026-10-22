@@ -298,8 +298,26 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     for (const locus of ["a", "o", "uo", "ae"]) assert.equal((parseOk(`wuwathur${locus}r`).family as { locus?: string }).locus, locus);
   });
 
-  it("reads no hooked-part or result role compound (roles.md)", () => {
-    for (const raw of ["daoxar", "daexar"]) {
+  it("parses hooked joins: hook, optional m / r, x, join (hooks.md#hooked-joins)", () => {
+    const cases: [string, string, string, string, boolean][] = [
+      ["zoxual", "ol", "ua", "l", false],
+      ["daoxar", "aol", "a", "r", false],
+      ["zomxuam", "om", "ua", "m", false],
+      ["zorxarx", "or", "a", "r", true],
+      ["zuexual", "uel", "ua", "l", false],
+      ["huxal", "ul", "a", "l", false],
+      ["dexar", "el", "a", "r", false],
+    ];
+    for (const [raw, hook, series, ending, plural] of cases) {
+      const word = parseOk(raw);
+      assert.deepEqual(word.family, { kind: "joinMarker", series, hook }, raw);
+      assert.equal(word.ending, ending, raw);
+      assert.equal(!!word.plural, plural, raw);
+    }
+  });
+
+  it("reads no hooked join with join -n, a stand-in coda, or l / n before the seam", () => {
+    for (const raw of ["zoxuan", "zonxual", "zolxual", "zoxarl", "zeaxual"]) {
       assert.throws(() => parseWord(raw), WordParseError, raw);
     }
   });
@@ -328,8 +346,8 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.equal(parseOk("bluexavuvul").bl, true);
   });
 
-  it("reads no hook prefix on a non-hook pair, another seam consonant, or a one-vowel stem", () => {
-    for (const raw of ["geaxavuvul", "gouxavuvul", "guelxavuvul", "guenxavuvul", "guexar", "guemxar"]) {
+  it("reads no hook prefix on a non-hook pair, another seam consonant, or r before the seam", () => {
+    for (const raw of ["geaxavuvul", "gouxavuvul", "guelxavuvul", "guenxavuvul", "gorxahehal"]) {
       assert.throws(() => parseWord(raw), WordParseError, raw);
     }
   });
@@ -545,7 +563,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
   });
 
   it("rejects the old role shape and a th scope after a role stem", () => {
-    for (const raw of ["zaxar", "zwazuduyethel", "xuxun"]) assert.throws(() => parseWord(raw), WordParseError, raw);
+    for (const raw of ["zwazuduyethel", "xuxun"]) assert.throws(() => parseWord(raw), WordParseError, raw);
   });
 });
 

@@ -317,6 +317,16 @@ const ROWS: Row[] = [
   // A second turn starts only after a period; only the legal force pairs stack.
   { invalid: "yol yol vazuyul.", rejection: "forcePair", valid: "yol. yol vazuyul." },
   { invalid: "zalx vowurel.", rejection: "joinPlural", valid: "zarx vowurel." },
+  // Hooked joins (hooks.md#hooked-joins): a landmark after hook -l / -m, none after point-back -r.
+  { invalid: "zoxual vezuvol.", rejection: "hookedJoinLandmark", valid: "zoxual blahehal vezuvol." },
+  { invalid: "zuzozen vuhohol ol bahehal. zorxual blahehal vezuvol.", rejection: "hookedJoinPointBackLandmark", valid: "zuzozen vuhohol ol bahehal. zorxual vezuvol." },
+  { invalid: "zorxual vezuvol.", rejection: "hookedJoinUnbound", valid: "zuzozen vuhohol ol bahehal. zorxual vezuvol." },
+  { invalid: "zuzozen vuhohol ol bahehal. zawan vebal hurxal.", rejection: "hookedJoinUnbound", valid: "zuzozen vowurel halam blenulul. zawan vebal hurxal." },
+  { invalid: "zoerxual vezuvol.", rejection: "hookedJoinPointBack", valid: "zoexual bluzahal vezuvol." },
+  { invalid: "zuzozen goxual blahehal.", rejection: "hookedJoinSlot", valid: "zuzozen goxahehal." },
+  { invalid: "zoxual blarl zuzozen vezuvol.", rejection: "hookedJoinClause", valid: "zawan vebal huxal blarl zuzozen vezuvol." },
+  { invalid: "zawan vebal hexal blenulul.", rejection: "hookedJoinTime", valid: "zawan vebal huxal blenulul." },
+  { invalid: "zawan vebal huxoel blenulul.", rejection: "hookedJoinRestrictor", valid: "zawan vebal huxual blenulul." },
   { invalid: "zolazun theyemwar velurul.", rejection: "holderSeamW", valid: "zolazun theyemeyol velurul." },
 ];
 

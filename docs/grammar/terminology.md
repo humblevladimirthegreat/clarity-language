@@ -720,6 +720,12 @@ Role letter + extra-noun hook vowels + **`x`** (or **`mx`** for the hook's **-m*
 
 [Hooks](hooks.md#hook-prefixes)
 
+### Hooked join
+
+Role letter + extra-noun hook vowels (+ **`m`** for the frame or **`r`** to point back) + **`x`** + a join, with the hook's landmark as the `bl-` word after it: the join's set, bounded by that relation (`zoxual blahehal` *everyone at the house*, `dexar bluwon` *something for me*). On `/h/` it bounds which times a restrictor covers (`huxal blenulul` *never since the thunderstorm*).
+
+[Hooks](hooks.md#hooked-joins)
+
 ### Role compound / agent / patient / recipient
 <a id="role-compound--agent--place--patient--recipient"></a>
 

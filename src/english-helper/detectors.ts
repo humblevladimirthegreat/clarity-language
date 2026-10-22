@@ -153,7 +153,51 @@ export const HOOK_LINKS = {
   fromTo: ["numbers-applied.md#time", "relations.md#locative-relations"],
   resume: ["hooks.md#hook-resume"],
   blank: ["questions.md#where", "hooks.md#place-indefinites"],
+  /** *everyone at the house*: the hook bounds the join's set. */
+  hookedJoin: ["hooks.md#hooked-joins"],
+  /** *never since …*, *always until …*: the hook bounds a restrictor's times. */
+  hookedJoinTime: ["hooks.md#hooked-joins-time"],
 } as const;
+
+/** English join words a hook can bound (*everyone at …*, *something for …*): a hooked join. */
+export const BOUNDABLE_JOINS = new Set([
+  "everyone", "everybody", "everything", "someone", "somebody", "something", "anyone", "anybody", "anything",
+  "nobody", "nothing", "all",
+]);
+/** The join each bounded English word spells ([joins](joins.md#standalone-phrase)). */
+const BOUNDED_JOIN: Readonly<Record<string, string>> = {
+  everyone: "ual", everybody: "ual", everything: "ual", all: "ual",
+  someone: "ar", somebody: "ar", something: "ar",
+  anyone: "or", anybody: "or", anything: "or",
+  nobody: "al", nothing: "al",
+};
+/** The extra-noun hook a preposition names, as written before the seam (`m` for a frame; hooks.md#extra-noun-intermediate). */
+const SEAM_HOOK: Readonly<Record<string, string>> = {
+  in: "a", inside: "a", amid: "am", among: "am", on: "ao", over: "aom", at: "o", near: "om", by: "om",
+  toward: "oe", towards: "oe", from: "u", "away from": "um", "out of": "ua", through: "uo",
+  for: "e", with: "ae", using: "ae", against: "ue",
+};
+
+/** The bare restrictor each English time word spells (restrictors.md). */
+const BOUNDED_RESTRICTOR: Readonly<Record<string, string>> = { never: "al", always: "ual", sometimes: "ar" };
+/** The time hook a preposition names on an `/h/` hooked join (hooks.md#hooked-joins-time). */
+const TIME_SEAM_HOOK: Readonly<Record<string, string>> = { since: "u", until: "oe", till: "oe", during: "a", around: "om", at: "o" };
+
+/** A closed join with its open twin (`zoxual` / `zoxuam`), or the one form. */
+function withOpen(form: string): string {
+  return form.endsWith("l") ? `\`${form}\` (no exceptions) or \`${form.slice(0, -1)}m\` (as far as I know)` : `\`${form}\``;
+}
+
+/** A hooked join spelled from its English: role letter, the hook before the seam, `x`, the join (`zoxual`). */
+export function hookedJoinSpelling(join: string, preposition: string, role: string): string | undefined {
+  const hook = role === "h" ? TIME_SEAM_HOOK[preposition] : SEAM_HOOK[preposition];
+  const series = role === "h" ? BOUNDED_RESTRICTOR[join] : BOUNDED_JOIN[join];
+  return hook && series ? `${role}${hook}x${series}` : undefined;
+}
+/** Restrictors whose times a hook can bound (*never since …*, *always until …*). */
+export const BOUNDABLE_RESTRICTORS = new Set(["never", "always", "sometimes"]);
+/** Prepositions with a time reading on an `/h/` hooked join. */
+const TIME_HOOK_WORDS = new Set(["since", "until", "till", "during", "around", "at"]);
 
 /** Words a hook can point back to with **-r** (*on it*, *through there*). */
 const RESUME_TARGETS = new Set(["it", "them", "there"]);
@@ -176,6 +220,10 @@ export type HookContext = {
   stranded: boolean;
   /** The slot already names a hook form, so the landmark notes apply. */
   hook: boolean;
+  /** A join word right before (*everyone*, *something*), which the hook can bound, and its role letter. */
+  bounds?: { word: string; role: string };
+  /** A restrictor earlier in the clause (*never*, *always*), whose times the hook can bound. */
+  restrictor?: string;
 };
 
 export function detectHook(c: HookContext): DetectorHit[] {
@@ -187,6 +235,15 @@ export function detectHook(c: HookContext): DetectorHit[] {
   const out: DetectorHit[] = [];
   if (c.next?.cls === "question" || c.stranded) out.push({ id: "hook-blank", label: `*${c.word}* + a question word: the hook + blank \`bar\` (\`ol bar\` *where?*, \`ael bar\` *with what?*)`, links: [...HOOK_LINKS.blank] });
   else if (c.next && RESUME_TARGETS.has(c.next.normal)) out.push({ id: "hook-resume", label: `*${c.word} ${c.next.normal}*: the hook points back with -r (\`aor\` *on it*)`, links: [...HOOK_LINKS.resume] });
+  if (c.bounds) {
+    const form = hookedJoinSpelling(c.bounds.word, c.word, c.bounds.role);
+    const spelled = form ? `${withOpen(form)} + the landmark as a \`bl-\` word` : "the hook's vowels, `x`, the join, then the landmark as a `bl-` word";
+    out.push({ id: "hooked-join", label: `*${c.bounds.word} ${c.word} …*: a hooked join bounds who counts: ${spelled}`, links: [...HOOK_LINKS.hookedJoin] });
+  } else if (c.restrictor && TIME_HOOK_WORDS.has(c.word)) {
+    const form = hookedJoinSpelling(c.restrictor, c.word, "h");
+    const spelled = form ? withOpen(form) : "the hook's vowels, `x`, the restrictor";
+    out.push({ id: "hooked-join-time", label: `*${c.restrictor} … ${c.word} …*: an \`/h/\` hooked join bounds the times: ${spelled}, then the time as a \`bl-\` word (a sentence after \`blarl\`)`, links: [...HOOK_LINKS.hookedJoinTime] });
+  }
   if (c.afterFrom && GOAL_WORDS.has(c.word)) out.push({ id: "from-to", label: "*from … to*: one unit, `ul` + the source first, then `ol` (reached) or `oel` (toward) + the goal", links: [...HOOK_LINKS.fromTo] });
   else if (c.hook && c.before?.role === "b") out.push({ id: "hook-on-landmark", label: `right after the landmark *${c.before.text}*: the hook describes *${c.before.text}*, not the clause`, links: [...HOOK_LINKS.landmark] });
   else if (c.hook && c.before && (c.before.role === "z" || c.before.role === "d")) {
