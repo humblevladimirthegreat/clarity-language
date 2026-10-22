@@ -41,6 +41,8 @@ export type NumberGroup = {
   decimal?: boolean;
   /** Percent (`yo` / `%`) or percentage-point (`yu` / `%*`) closer. */
   percent?: "yo" | "yu";
+  /** A code field with a letter (`b12`, `thw`), written lowercase with `th` as one letter; digits-only fields use `mantissa`. */
+  code?: string;
 };
 
 /**

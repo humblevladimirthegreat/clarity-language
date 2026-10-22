@@ -62,23 +62,23 @@ describe("numberStemToSpeech", () => {
     assert.equal(numberWordToSpeech(parseWord("grawanal")), "grawanal");
   });
 
-  it("expands g+5e3,860,4e-2 with tha separators", () => {
-    assert.equal(numberWordToSpeech(parseWord("g+5e3,860,4e-2")), "grawageyazathaluvomothawudoyahul");
+  it("expands g+5e3,860,4e-2 with the separators", () => {
+    assert.equal(numberWordToSpeech(parseWord("g+5e3,860,4e-2")), "grawageyazatheluvomothewudoyahul");
   });
 
   it("expands digit-string d_555,123,4567", () => {
     assert.equal(
       numberWordToSpeech(parseWord("d_555,123,4567")),
-      "drozazazathobadogethohuzavorel",
+      "drozazazathebadogethehuzavorel",
     );
   });
 
-  it("expands h_15,30 to hrobazathogemol", () => {
-    assert.equal(numberWordToSpeech(parseWord("h_15,30")), "hrobazathogemol");
+  it("expands h_15,30 to hrobazathegemol", () => {
+    assert.equal(numberWordToSpeech(parseWord("h_15,30")), "hrobazathegemol");
   });
 
-  it("uses thu between groups of a negative scalar", () => {
-    assert.equal(numberWordToSpeech(parseWord("g-1e9,265e3,4")), "gruwanayabathuwageyadovozathuhul");
+  it("uses the between groups of a negative scalar", () => {
+    assert.equal(numberWordToSpeech(parseWord("g-1e9,265e3,4")), "gruwanayabathewageyadovozathehul");
   });
 
   it("expands calendar date h_#22,7 with roe marker", () => {
@@ -87,16 +87,25 @@ describe("numberStemToSpeech", () => {
     if (word.family.kind !== "number") return;
     assert.equal(word.family.stem.calendarOrdinal, true);
     assert.equal(word.family.stem.marker, "_");
-    assert.equal(numberWordToSpeech(word), "hroedodothorel");
+    assert.equal(numberWordToSpeech(word), "hroedodotherel");
   });
 
   it("expands full calendar date h_#22,7,2026 (year stays one group)", () => {
-    assert.equal(numberWordToSpeech(parseWord("h_#22,7,2026")), "hroedodothorethodomodovol");
+    assert.equal(numberWordToSpeech(parseWord("h_#22,7,2026")), "hroedodotherethedomodovol");
   });
 
-  it("round-trips spoken calendar date groedodothorel", () => {
-    const word = parseWord("groedodothorel");
-    assert.equal(numberWordToSpeech(word), "groedodothorel");
+  it("round-trips spoken calendar date groedodotherel", () => {
+    const word = parseWord("groedodotherel");
+    assert.equal(numberWordToSpeech(word), "groedodotherel");
+  });
+
+  it("spells letter codes by letter name, with a break before a vowel", () => {
+    assert.equal(numberWordToSpeech(parseWord("z_b12")), "zrobubadol");
+    assert.equal(numberWordToSpeech(parseWord("z@_nl")), "zronulan");
+    assert.equal(numberWordToSpeech(parseWord("z_vba")), "zrovebu'al");
+    assert.equal(numberWordToSpeech(parseWord("z_thw")), "zrothowal");
+    assert.equal(numberWordToSpeech(parseWord("z_e1")), "zro'ebal");
+    assert.equal(numberWordToSpeech(parseWord("z_2,1")), "zrodothebal");
   });
 
   it("round-trips speech-shaped gragel", () => {

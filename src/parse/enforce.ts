@@ -951,7 +951,7 @@ function enforceTagHost(node: AstNode): void {
 function isPluralLabel(word: LexWord): boolean {
   if (word.family.kind !== "number" || !(word.pos === "z" || word.pos === "d" || word.pos === "b")) return false;
   const stem = word.family.stem;
-  return stem.marker === "_" && stem.groups.some((group) => group.mantissa !== undefined);
+  return stem.marker === "_" && stem.groups.some((group) => group.mantissa !== undefined || group.code !== undefined);
 }
 
 /** Clause- and discourse-level checks on a parsed and resolved result. */

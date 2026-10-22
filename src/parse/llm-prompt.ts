@@ -71,7 +71,7 @@ export const GLOSS_READER = {
     "A say word reads `h-SCOPE-WHOSE-ANSWER-HOW`: whose say over the act (`event` = someone over it: the speaker, or the `bl-` person after it; `agent` = the doer's own; `patient` = the one it's done to; `recipient` = the one told or given to), the answer (`ALLOW`, `FORBID`, `REQUIRE`, `CHOICE` = up to them), and how it stands (`rule` = a rule or a binding agreement, `said` = someone said so, `tacit` = nobody said: tolerated, assumed, customary). `h-episode-event-ALLOW-said` = you may (I'm allowing it); `h-episode-patient-ALLOW-said` = they agreed; `h-episode-agent-REQUIRE-tacit` = feels they have to; `h-role-…` = standing, `h-pair-…` = toward the `bl-` party only.",
     "A dot joins the pieces of one label: words of one English phrase (`in.other.words`), or a variant of the word (`CLUES.strong`, `as-of.ledger`).",
     "A time amount in a bracket right after a stance word dates the event from now: `[th-REPORTED | [bl-hour | g-three]]` = in three hours, `g-minus-three` = three hours ago; `[bl-day | g-one]` = tomorrow. `bl-+-e-` = a moment from now (about to), `bl---e-` = a moment ago (just); with `.about`, soon / recently.",
-    "`_` before digits marks a label, code, clock time, or date written in digits, not an amount (`h-_15,30` = at 15:30). `g-2nd` is an ordinal.",
+    "`_` before digits (or a code's letters) marks a label, code, clock time, or date, not an amount (`h-_15,30` = at 15:30). `g-2nd` is an ordinal.",
     "`tag.A` names the phrase before it \"A\" for later; `←tag.A` is that one again.",
     "A tone mark before a word colors that word; alone before the sentence it colors the whole sentence: `!` strong feeling, `?` unsure, `%` joking, `&` this one and not another, `;` warm.",
   ],

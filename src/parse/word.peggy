@@ -68,6 +68,12 @@
     return out;
   }
 
+  // Letter names for code characters (phonology.md#letter-names): a digit letter takes the opposite of its digit vowel.
+  const LETTER_NAMES = {
+    bu: "b", de: "d", go: "g", ha: "h", zu: "z", ve: "v", ro: "r", la: "l", nu: "n", me: "m",
+    tho: "th", wa: "w", yu: "y",
+  };
+
   function writingMarkerFromSpeechV(v) {
     if (v === "oe") return "_";
     if (v === "ue") return "#-";
@@ -80,7 +86,6 @@
     return "#-";
   }
 
-  // Spoken group separator `th` + first vowel of the spoken marker (numbers.md § Saying it aloud).
   // Mantissa 0 / 1 + bare wa / wu is one digitless-exp stem (`bawa` = `1e`), matching writing `g+1e`.
 function foldDigitlessTail(stem, digitless) {
   const only = stem.groups.length === 1 ? stem.groups[0] : null;
@@ -104,10 +109,6 @@ function foldBareExponent(stem) {
     stem.digitlessExp = "0e-1";
   }
 }
-
-function separatorVowel(markerV) {
-    return markerV.charAt(0);
-  }
 
   // `^@` is the span's **-ln** (one thing the name applies to), `@` its **-n**, `~` its **-m** (spans.md#when-required).
   function spanEnding(marks) {
@@ -358,6 +359,9 @@ WritingNumberStem
       if (body && body.digitlessExp) stem.digitlessExp = body.digitlessExp;
       return stem;
     }
+  / "_" body:WritingCodeBody? {
+      return { marker: "_", groups: body || [] };
+    }
   / marker:WritingMarker body:WritingNumberBody? {
       const stem = { marker, groups: body && body.groups ? body.groups : [] };
       if (body && body.digitlessExp) stem.digitlessExp = body.digitlessExp;
@@ -365,7 +369,21 @@ WritingNumberStem
     }
 
 WritingMarker
-  = "#_" / "+-" / "#-" / "#" / "+" / "-" / "_"
+  = "#_" / "+-" / "#-" / "#" / "+" / "-"
+
+// A code (`_`, numbers-applied.md#letter-codes): fields of digits and letters, no exponent or percent. Letters are
+// always characters, so the ending comes from the mark (`z@_nl`), never a trailing letter.
+WritingCodeBody
+  = head:WritingCodeField tail:("," f:WritingCodeField { return f; })* &(PluralSuffix EOF / WS / EOF) {
+      return [head, ...tail];
+    }
+
+WritingCodeField
+  = m:WritingMantissa !CodeLetter { return compactGroup({ mantissa: m.digits, decimal: m.decimal }); }
+  / chars:$((CodeLetter / Digit)+) { return { code: chars }; }
+
+CodeLetter
+  = "th" / [bdghzvrlnmwy] / [uaoe]
 
 WritingNumberBody
   = digitless:WritingDigitlessExp NumberBodyEnd {
@@ -435,8 +453,10 @@ Digit = [0-9]
 
 // Speech-style: PoS + r + V + groups + ending. Marker normalizes to writing glyphs.
 SpeechNumberStem
-  = "r" v:SpeechMarkerV body:SpeechDigitGroups
-    &{ return body.seps.every(function (sep) { return sep === separatorVowel(v); }); }
+  = "ro" !"e" body:SpeechCodeBody {
+      return { marker: "_", groups: body };
+    }
+  / "r" v:SpeechMarkerV body:SpeechDigitGroups
     digitless:SpeechDigitlessTail? {
       const stem = { marker: writingMarkerFromSpeechV(v), groups: body.groups };
       if (v === "oe") stem.calendarOrdinal = true;
@@ -448,15 +468,25 @@ SpeechNumberStem
 SpeechMarkerV
   = "oe" / "ue" / "uo" / "ua" / [aeou]
 
-// Groups after the first are opened by separator `th` + the marker's first vowel.
+// Groups after the first are opened by the separator `the` (numbers.md#group-separator).
 SpeechDigitGroups
-  = head:SpeechDigitGroup tail:(sep:SpeechGroupSeparator g:SpeechDigitGroup { return { sep, g }; })* {
-      return { groups: [head].concat(tail.map(function (t) { return t.g; })), seps: tail.map(function (t) { return t.sep; }) };
+  = head:SpeechDigitGroup tail:("the" g:SpeechDigitGroup { return g; })* {
+      return { groups: [head, ...tail] };
     }
-  / "" { return { groups: [], seps: [] }; }
+  / "" { return { groups: [] }; }
 
-SpeechGroupSeparator
-  = "th" v:[aeou] { return v; }
+// A spoken code: one syllable per character, fields split by `the`. A vowel character follows a break `'`.
+SpeechCodeBody
+  = head:SpeechCodeField tail:("the" f:SpeechCodeField { return f; })* { return [head, ...tail]; }
+  / "" { return []; }
+
+SpeechCodeField
+  = m:SpeechMantissa !SpeechCodeLetter { return compactGroup({ mantissa: m.digits, decimal: m.decimal }); }
+  / chars:(SpeechCodeLetter / s:SpeechDigitSyllable { return SPEECH_DIGITS[s]; })+ { return { code: chars.join("") }; }
+
+SpeechCodeLetter
+  = name:("tho" / "bu" / "de" / "go" / "ha" / "zu" / "ve" / "ro" / "la" / "nu" / "me" / "wa" / "yu") { return LETTER_NAMES[name]; }
+  / "'" v:[uaoe] { return v; }
 
 SpeechDigitGroup
   = sign:("wa" / "wu") expDigits:SpeechDigitSeq "ya" mantissa:SpeechMantissa percent:SpeechPercent? {
@@ -517,8 +547,10 @@ SpeechDigitlessTail
 // PoS-less number stem (numeric prefix left half). Spelled CV only:
 // shorthand (`+3`, `#e`) is for free numbers, never inside a numeric prefix.
 PoslessNumberStem
-  = "r" v:SpeechMarkerV body:SpeechDigitGroups
-    &{ return body.seps.every(function (sep) { return sep === separatorVowel(v); }); }
+  = "ro" !"e" body:SpeechCodeBody {
+      return { marker: "_", groups: body };
+    }
+  / "r" v:SpeechMarkerV body:SpeechDigitGroups
     digitless:SpeechDigitlessTail? {
       const stem = { marker: writingMarkerFromSpeechV(v), groups: body.groups };
       if (digitless) foldDigitlessTail(stem, digitless);

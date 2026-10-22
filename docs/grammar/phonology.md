@@ -139,6 +139,8 @@ When English says *how many* or *which place*, Agebon uses a [number word](numbe
 
 `gragel` is `g` + `ra` + digit `ge` + `-l`.
 
+A code (marker `ro`) may hold letters as well as digits, and is spelled aloud one letter name at a time (letter names come below). Its body may break the ordinary word shape in two ways: a vowel letter comes after a short break, written **`'`** (`zro'ebal`), and two vowels may then sit side by side, even the same vowel twice (`zrobu'ul`). The role letter plus `r` already tells you a number is coming, so a code never sounds like a root. The `'` appears only inside a code.
+
 ### Syllabic `l` {#syllabic-l}
 
 A [hosted extra noun](clause.md#extra-nouns) writes `l` after its `b`. When that word is a number (`r` next), say the `l` as a beat of its own, like the end of English *bottle* <IpaPlay file="En-us-bottle.mp3" label="bottle" />. The `r` then starts the next beat as usual.
@@ -155,7 +157,7 @@ Audio of *bottle* is from Wikimedia Commons under [CC BY-SA 3.0](https://creativ
 ### Letter names {#letter-names}
 <a id="letter-names-and-digits"></a>
 
-When you **spell a word aloud** or **name a letter**, say the Agebon name for it. Pause between names so two names do not run into one syllable.
+When you **spell a word aloud** or **name a letter**, say the Agebon name for it. Pause between names so two names do not run into one syllable. A code inside a number word spells its letters with these names too, and makes the pause required before a vowel (`zro'ebal`).
 
 The table is in **alphabetical order**. The ten letters that begin a digit syllable come first, in digit order (1 to 9, then 0), so `b` is the first letter and `m` the tenth. The other consonants follow, and the vowels come last.
 

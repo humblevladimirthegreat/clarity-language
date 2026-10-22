@@ -7,11 +7,11 @@ A number word can do more than count. This page shows how to write a code or lab
 
 ### Digit-strings {#digit-strings}
 
-When English uses a number as a **code** (a phone, room, channel, or serial number) rather than an amount, write it with the digit-string marker **`ro`** (written **`_`**). Leave exponents off, and group the digits in threes. The code can then fill whatever role the clause needs (`/d/`, `/b/`, `/ɡ/`).
+When English uses a number as a **code** (a phone, room, channel, or serial number) rather than an amount, write it with the digit-string marker **`ro`** (written **`_`**). A code has no exponent and no percent. The code can then fill whatever role the clause needs (`/d/`, `/b/`, `/ɡ/`).
 
 > `zuzozen d_555,123,4567 vawebol.`
 >
-> 🔊 `zuzozen drozazazathobadogethohuzavorel vawebol.`
+> 🔊 `zuzozen drozazazathebadogethehuzavorel vawebol.`
 >
 > z-Uzozen | d-_555,123,4567 | v-see
 >
@@ -22,6 +22,18 @@ Ending is usually **-l** (exact label); **-n** for an official designation; **-r
 **For numeric *plus or minus*, use:** [sign](numbers.md#sign) on a count or ordinal. A label keeps its digits exactly as written.
 
 To place an event by a code (*on channel 7*), put the code in a `bl-` word after a relation word (`/h/` *on* + `bl_7`), or put it on a noun as `/ɡ/` (*channel* `g_7`).
+
+#### Fields {#code-fields}
+
+A comma in a code marks a **field**: a part that is a value of its own, such as the hour in a clock time or the area code in a phone number. Each comma is spoken **`the`** ([group separator](numbers.md#group-separator)). The comma is part of the code, so `h_15,30` and `h_1530` are different words.
+
+| Rule | Examples |
+|------|----------|
+| Put a comma between fields | clock `h_15,30`; version `d_2,1,3` (*2.1.3*); phone `d_555,123,4567` (area code, exchange, line) |
+| Two number fields side by side always take one; without it they merge | `d_15,30` (two fields) is not `d_1,530` |
+| Drop source punctuation that marks no field | spaces in a serial number |
+| Do not chunk one long field: pause if you like, but say no `the` | serial `d_4071229385` |
+| Write `.` only for one decimal value used as a label | `b_101.1` (*101.1 FM*); *1.2.3* is `d_1,2,3` |
 
 #### Plural labels {#plural-labels}
 
@@ -35,13 +47,51 @@ English makes a label plural to name the whole run of labels that start with it:
 >
 > "Uzozen walked in the ’90s."
 
+### Letter codes {#letter-codes}
+
+English names many things with letters as well as digits: a vitamin (*B12*), a flat (*4B*), a jet (*F-16*). A **`_`** code may hold letters too. Write each letter in lowercase, in shorthand, just like the digits: `g_b12`.
+
+> `zuzozen dobebul g_b12 vagedal.`
+>
+> 🔊 `zuzozen dobebul grobubadol vagedal.`
+>
+> z-Uzozen | [d-pill | g-_b12] | v-eat
+>
+> "Uzozen takes a B12 pill."
+
+Say each character as one syllable, after the marker **`ro`**:
+
+- A digit is its digit syllable (`ba` … `mo`).
+- A consonant is its [letter name](phonology.md#letter-names) (`bu` … `me`, `tho`, `wa`, `yu`). A letter name never sounds like a digit, because it takes the [opposite vowel](phonology.md#opposite-vowels): `bu` is *b*, `ba` is *1*.
+- A vowel is its own sound after a short break, the catch in English *uh-oh*. The spelled form writes the break as `'`. Without it, `bu` + `u` would run into one long vowel, and `ro` + `e` would sound like another marker.
+
+<!-- cheat-sheet: numbers -->
+| Agebon | Use | English |
+|--------|-----|---------|
+| `z_b12` (🔊 `zrobubadol`) | letter, then digits | *B12* |
+| `z_4b` (🔊 `zrohubul`) | digit, then letter | *4B* |
+| `z_vba` (🔊 `zrovebu'al`) | vowel after a break | *VBA* |
+| `z_e1` (🔊 `zro'ebal`) | code that starts with a vowel | *E1* |
+| `z_thw` (🔊 `zrothowal`) | `th` is one letter | *THW* |
+| `z_2,1` (🔊 `zrodothebal`) | two fields | *version 2.1* |
+
+Rules for letters in a code:
+
+- No comma between letters and digits: the switch is audible (`z_b12`, not `z_b,12`).
+- **`x`** is never a character, so a code before **`x`** is always a [numeric prefix](numeric-derivation.md) or plural **-x** (`z_b0x` covers B0 to B9, as in [plural labels](#plural-labels)).
+- Only the **`_`** marker takes letters: a count, a rank, a sign, or a date has none.
+- In a code, `e` is always the vowel letter, never an exponent.
+- A letter at the end of a code is a character, not the ending. A code with a letter always shows its ending by a mark: `z_nl` is **-l**, `z@_nl` is **-n**, `z=_nl` is **-r**.
+
+**A foreign code** keeps its letters when each one has an Agebon letter. English *p*, *t*, *k*, *s*, and *f* are the voiceless sounds of `b`, `d`, `g`, `z`, and `v`, so they take those letters: *F-16* is `z_v16`, and *P2* is `z_b2`. A code with a letter that has no Agebon sound (*c*, *i*, *j*, *q*, *x*) stays a [span](spans.md#loans): *FBI* is <code>z@&lt;FBI&gt;</code>.
+
 ### Time {#time}
 
 To say when something happens by the clock or the calendar (*at 15:30*, *on 22 July*), write a digit string under `/h/` with no relation word before it. Clock takes marker **`ro`** (spoken **`hro`**, written `h_…`). Date takes calendar-ordinal **`oe`** (spoken **`hroe`**, written `h_#…`). Fields are read by position, so the word already says which number is the hour or the month.
 
 > `h_15,30 zuzozen vowurel.`
 >
-> 🔊 `hrobazathogemol zuzozen vowurel.`
+> 🔊 `hrobazathegemol zuzozen vowurel.`
 >
 > h-_15,30 | z-Uzozen | v-walk
 >
@@ -301,14 +351,14 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
-**1.** *Uzozen sees 555-123-4567.*
+**1.** *Uzozen sees a B12 pill.*
 
 ::: details Show answer
-`zuzozen d_555,123,4567 vawebol.`
+`zuzozen dobebul g_b12 vawebol.`
 
-🔊 `zuzozen drozazazathobadogethohuzavorel vawebol.`
+🔊 `zuzozen dobebul grobubadol vawebol.`
 
-z-Uzozen | d-_555,123,4567 | v-see
+z-Uzozen | [d-pill | g-_b12] | v-see
 :::
 
 **2.** *At 15:30 Uzozen sees Ahelan.*
@@ -316,7 +366,7 @@ z-Uzozen | d-_555,123,4567 | v-see
 ::: details Show answer
 `h_15,30 zuzozen dahelan vawebol.`
 
-🔊 `hrobazathogemol zuzozen dahelan vawebol.`
+🔊 `hrobazathegemol zuzozen dahelan vawebol.`
 
 h-_15,30 | z-Uzozen | d-Ahelan | v-see
 :::
@@ -373,7 +423,7 @@ z-bottle | g-_7
 
 ::: details Show answer
 
-🔊 `hrodogethozanam zolazun varemul.`
+🔊 `hrodogethezanam zolazun varemul.`
 
 h-_23,59.about | z-Olazun | v-scream
 
@@ -406,7 +456,7 @@ z-ten | outside | z-20
 
 ::: details Show answer
 
-🔊 `hroebathohul zolazun vowurel.`
+🔊 `hroebathehul zolazun vowurel.`
 
 h-_1,4 | z-Olazun | v-walk
 
@@ -458,6 +508,28 @@ An *and*-join names only the two ends; a range of numbers puts **`al`** between 
 :::
 
 ## Advanced {#advanced}
+
+### Initials {#initials}
+
+English shortens a long title to its initials (*FBI*). Agebon does too: take each root of a long [hyphenated name](word-endings.md#multipart-names), in order, and write its **first consonant** as a [letter code](#letter-codes) with **`@`** (**-n**, an official designation). A root always starts with a vowel, so its first letter would leave only four choices; its first consonant is the letter you hear.
+
+> `z@_nl vezuyel.`
+>
+> 🔊 `zronulan vezuyel.`
+>
+> z-_nl.named | v-tell
+>
+> "The NL announces." (the office whose full title is *Book-Courage*)
+
+| Agebon | Use | English |
+|--------|-----|---------|
+| `zanaxolazun` | long title (`ana` × `olazu`) | *Book-Courage* |
+| `z@_nl` (🔊 `zronulan`) | initials: `n` from `ana`, `l` from `olazu` | *the NL*, the same office |
+| `z=_nl` (🔊 `zronular`) | resume | *that office again* |
+
+- **Any title works.** Each initial is its own syllable, so two roots with the same first consonant give a doubled letter (`zanaxanumun` → `z@_nn`, 🔊 `zronunun`), and a title of any length gives one letter per root.
+- **Initials can be shared,** as in English. Context sorts out which office is meant. When you need a name nobody else has, give the office a [proper name](word-endings.md#proper-name--n) of its own instead: one published root + **-n**.
+- **Say it mid-sentence.** The whole rule is *say each root's first consonant by its letter name*, so you can make the initials while you talk.
 
 ### Rays {#rays}
 <a id="numeric-thresholds"></a>

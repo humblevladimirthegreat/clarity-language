@@ -40,13 +40,11 @@ Source: [numbers.md](../grammar/numbers.md), [numeric-derivation.md](../grammar/
 
 - Positive **`…0eN`** and other **`±0eN`** / **`±0e-N`** bands. Only **`±0e-1`** is assigned ([zero × exponent](../grammar/numbers.md#zero-exponent)); no job has asked for a wipe or residue at another named scale.
 
-### Digit-string / marker holes
+### Codes (`_`)
 
-- Digit-string **`_`** zero-exp free forms
-- Digit-string **`ro`** / **`_`** + mantissa + digitless exp (free number words)
-- Digitless exp on **`ro`** / **`_`** (free number words). Derivation uses digitless **`_`** as [catalog topology](../grammar/numeric-derivation.md#infinite-labels).
-
-A label is a code, not an amount, so it has no magnitude for an exponent to scale or a zero to wipe.
+- **closed (D-60):** **`x`** as a code character (`_1xzy`).
+- **closed (D-61):** an exponent on **`_`** (`_e`, `_e-`, `_1e`, `_5e3`, zero×exp, in free words and numeric prefixes) and percent on **`_`** (`_5%`, `_5%*`). In a code `e` is the vowel letter, `wa` is the letter `w`, and `yu` is the letter `y`.
+- **closed (D-62):** letters on **`+`**, **`-`**, **`#`**, **`#-`**, the stacks **`#_`** and **`+-`**, and the date **`_#`**.
 
 ### Overlay `/y/` — no-mantissa digitless exp
 

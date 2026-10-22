@@ -21,7 +21,7 @@ PoS + NUM + {x|mx} + ROOT + {-l|-m|-n|-r}
 | Piece | Use | Cue |
 |-------|-----|-----|
 | **PoS** | Ordinary slot for the whole word | |
-| **NUM** | Number body: the same marker vowel and digit or digitless exponent as a free [number](numbers.md), without the role letter and the ending (`grawal` → **`rawa`**). Tables below use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …), but real words are always spelled out (`rawa`, `rowa`, `rabawa`, …): [writing style](numbers.md#writing-style-numeric-vs-spelled) | it starts with **`r`**, like every spoken number |
+| **NUM** | Number body: the same marker vowel and digit or digitless exponent as a free [number](numbers.md), without the role letter and the ending (`grawal` → **`rawa`**). Tables below use [shorthand](numbers.md#writing-preferred-shorthand) (`+e`, `_12`, `+1e`, …), but real words are always spelled out (`rawa`, `robado`, `rabawa`, …): [writing style](numbers.md#writing-style-numeric-vs-spelled) | it starts with **`r`**, like every spoken number |
 | **seam** | **`x`** the number is exact; **`mx`** approximately that number | the same **`m`** as `gragem` *about three* |
 | **ROOT** | Any content root (`V(CV)+`), or an ordinary [**`x`** compound](compounds.md#ordinary-compound-order), whose last root is the kind | |
 | **Ending** | The root's sense, as on any **`x`** compound: **-l** its everyday sense, **-m** its abstract sense; or **-n** a name, **-r** a resume | `zrawaxolamam` is the essence of love in its abstract sense, *cherished* |
@@ -232,7 +232,7 @@ English *first draft*, *secondary adventure*, *third-order problem* can name **w
 
 ### Label / code sense (`_`) {#label-code-sense}
 
-When English makes a code part of what a thing is (*specimen #1*, *room 12* as a kind of room), the digits are a **catalog ID**, not a count or a rank. Put the digit-string marker **`_`** before the **`x`**; its digits are the code. With no digits, **`_`** describes the catalog itself (infinite labels).
+When English makes a code part of what a thing is (*specimen #1*, *room 12* as a kind of room), the digits are a **catalog ID**, not a count or a rank. Put the digit-string marker **`_`** before the **`x`**; its digits are the code.
 
 > `zuzozen drobaxudewal vawebol.`
 >
@@ -249,40 +249,15 @@ When the number is only an argument of an ordinary noun, prefer ordinary syntax:
 
 Digitless **`+`/`-`/`#`** on ROOT = *what the kind is*; digitless **`_`** = *how the catalog names it*.
 
-### Infinite / landmark labels (`_e` / `_e-` / `_1e`)
-<a id="infinite-labels"></a>
+### Hyperbole sense (`+1e` / `#1e`) {#hyperbole-sense}
 
-With a digitless exponent, **`_`** describes the **catalog**, not a size: label ∞ means *the naming system has no bound*, and its tiny end is an empty slot before any code is assigned.
-
-| Agebon | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`_exROOT`** | open / unbounded catalog: ∞-tagged, open ID space, any code in an unbounded ledger | `zrowaxudenel`: *open-ended ticket ID* / *∞-catalogued ticket* | **`_e`** = a code space with no last ID |
-| **`_e-xROOT`** | proto-label / unassigned slot: pre-code, atomic empty tag | `zrowuxudenel`: *unassigned ticket slot* | **`_e-`** = the catalog’s empty first slot |
-| **`_1exROOT`** | comic gazillion-coded / umpteen-SKU | `zrobawaxuvahal`: *a gazillion-SKU product* | **`_1e`** = one × unbounded as a SKU joke |
-| **`_1e-xROOT`** | comic gazillionth-of-a-code / vanishing ID | `zrobawuxurunul`: *a vanishingly coded registration* | **`_1e-`** = that joke at the tiny end |
-
-#### Infinite label by PoS
-
-| PoS | `_ex…` | `_e-x…` | Examples |
-|-----|--------|--------|----------|
-| **`/z/` `/d/` `/b/`** (noun) | open-catalog entity | pre-labeled / slot entity | `zrowaxudenel`; `zrowuxudenel` |
-| **`/v/`** (verb) | to ∞-tag / put on an open ledger | to reserve an empty code slot | `vrowaxudenel`; `vrowuxudenel` |
-| **`/ɡ/`** (adjective) | open-endedly coded | proto-coded / unassigned | `growaxudenel`; `growuxudenel` |
-| **`/h/`** (adverb) | under open-catalog framing | under pre-label framing | `hrowaxudenel`; `hrowuxudenel` |
-| **`/w/`** (extra detail) | host graded as open-catalog | host graded as proto-label | `wrowaxudenel gudenel` |
-| **`/y/`** (interjection) | *Open catalog!* / *∞-tagged!* | *Unassigned!* / *Empty slot!* | `yrowaxudenel`; `yrowuxudenel` |
-
-### Hyperbole sense (`+1e` / `#1e` / `_1e`) {#hyperbole-sense}
-
-To exaggerate a kind for comic effect (*a gazillion-mess*, *an umpteenth attempt*), put a mantissa before a digitless exponent, as in free [hyperbole](numbers.md#hyperbole-gazillion). Use **`1`** as the mantissa unless the joke needs another digit. Label hyperbole (`_1e` / `_1e-`) is catalog comedy: [infinite labels](#infinite-labels).
+To exaggerate a kind for comic effect (*a gazillion-mess*, *an umpteenth attempt*), put a mantissa before a digitless exponent, as in free [hyperbole](numbers.md#hyperbole-gazillion). Use **`1`** as the mantissa unless the joke needs another digit.
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | **`+1exROOT`** | *gazillion-ROOT* (comic huge) | `zrabawaxezulam`: *a gazillion-mess* | **1e** = one × unbounded: comic huge |
 | **`+1e-xROOT`** | *gazillionth-ROOT* (comic tiny) | `zrabawuxodevom`: *a gazillionth-of-a-chance* | **1e-** = one × unbounded tiny |
 | **`#1exROOT`** | *umpteenth-ROOT* (comic late rank) | `zrebawaxuguvel`: *an umpteenth attempt* (as a kind) | **#1e** = unbounded place: “umpteenth” |
-| **`_1exROOT`** | *gazillion-coded ROOT* (comic SKU sprawl) | `zrobawaxuvahal`: *a gazillion-SKU product* | **`_`** + **1e** = comic SKU sprawl |
-| **`_1e-xROOT`** | *gazillionth-of-a-code ROOT* (vanishing ID) | `zrobawuxurunul`: *a vanishingly coded registration* | **`_`** + **1e-** = a vanishing ID |
 
 Free **`hrebawal`** = *for the gazillionth time* (clause adverb). The prefix **`zrebawaxayam`** = *an umpteenth co-participation* (noun kind).
 

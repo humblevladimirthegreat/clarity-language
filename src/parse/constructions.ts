@@ -420,6 +420,12 @@ export const NUMBER_FEATURE_CONSTRUCTIONS = {
   percent: { anchor: "numbers-applied.md#percent-and-percentage-points", summary: "percent / percentage points" },
   decimal: { anchor: "numbers.md#exponents", summary: "decimal point" },
   groups: { anchor: "numbers.md#group-separator", summary: "more than one digit group" },
+  code: {
+    anchor: "numbers-applied.md#letter-codes",
+    summary: "code with letters",
+    reader:
+      "A `_` code may hold letters as well as digits, read as the letters themselves: `_b12` = B12, `_4b` = 4B, `_v16` = F-16 (Agebon `v`, `b`, `d`, `g`, `z` stand for English f, p, t, k, s). With `@` (`.named`) and only letters it is usually a title's initials (`@_nl` = the NL, short for a long two-root title).",
+  },
   calendar: {
     anchor: "numbers-applied.md#time",
     summary: "calendar ordinal (date)",

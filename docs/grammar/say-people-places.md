@@ -149,7 +149,7 @@ When the thing only comes **from** B (*the sound of the drums*), use origin **`g
 
 ### Named handles {#named-handles}
 
-**Needs:** [Proper name `-n`](word-endings.md#proper-name--n) · [Multipart names](word-endings.md#multipart-names)
+**Needs:** [Proper name `-n`](word-endings.md#proper-name--n) · [Multipart names](word-endings.md#multipart-names) · [Initials](numbers-applied.md#initials)
 
 A long official title (bureau, act, titled group) may have a **handle**: one published root plus **-n**, used like any proper name, including on first mention. The long form is the same office spelled as a hyphenated name (`ROOT x ROOT` … + **-n**).
 
@@ -163,6 +163,7 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 |--------|-----|---------|
 | `zanan` | handle: one root + **-n** | default talk, including first mention |
 | `zanaxolazun` | long title: hyphenated name (`ROOT x ROOT` … + **-n**) | full legal / ceremonial name of the same office |
+| `z@_nl` | initials: each title root's first consonant, as a letter code | short name of the same office, like *FBI* |
 
 > `zanaxolazun.`
 >
@@ -172,7 +173,7 @@ A long official title (bureau, act, titled group) may have a **handle**: one pub
 
 Resume the handle like any name: its whole stem + **-r** (`zanar`).
 
-**Compare with:** a [mention](spans.md#mention) is the **word** (`glegel z[ana]` = *the word “ana”*). A foreign letter-name is a loan or opaque span (<code>z@&lt;FBI&gt;</code>).
+**Compare with:** a [mention](spans.md#mention) is the **word** (`glegel z[ana]` = *the word “ana”*). A foreign code whose letters all have Agebon letters is a native [letter code](numbers-applied.md#letter-codes) (`z_v16` *F-16*); one with a letter Agebon lacks stays an opaque span (<code>z@&lt;FBI&gt;</code>).
 
 ### An English name as Agebon {#english-name}
 

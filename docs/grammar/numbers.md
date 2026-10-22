@@ -239,14 +239,14 @@ A number word is a `/ɡ/` word, so it goes after its noun; before `degodolx` it 
 Beginner already built one word: role letter, marker, digit syllables, ending. The same four slots hold every **free number** you meet next (a number word on its own, not built onto a content root).
 
 ```text
-[PoS] + r + V + ( group ( th + V₁ + group )* )? + [ending]
+[PoS] + r + V + ( group ( the + group )* )? + [ending]
 group = [exponent?] [mantissa digits?]
 ```
 
 1. **PoS:** the role letter (part of speech), as on any other word.
 2. **Number marker:** consonant **r** plus a vowel **V**. **V** is a single vowel at this stage. The cluster of role letter plus `r` is a [number-only letter-cluster exception](phonology.md#phonotactics). A marker can sound like a digit (rank **`re`**, digit 7 **`re`**), but the marker always comes straight after the role letter, so `grerel` is *the seventh*.
 3. **Zero or more digit groups:** each group is an optional exponent (the *order of magnitude* piece) and optional mantissa digits (the ordinary digits). A group always has at least one of those two pieces. Digits sit next to each other with no **x** between them. A sign, when there is one, applies once to the whole word. With **no groups**, the word is digitless: it says what kind of number it is, but not its value.
-4. **Group separator:** each group after the first opens with **`th`** plus **V₁**, the first vowel of the marker.
+4. **Group separator:** each group after the first opens with **`the`**.
 5. **Ending:** `-l` / `-m` / `-n` / `-r`.
 
 Speech always uses the fully spelled form. Writing also has a shorthand for numbers with two or more digits (`g+12`); zero, one digit, or none stays spelled (`gragel`, `gral`).
@@ -460,27 +460,27 @@ These work the same way on `/z/`, `/d/`, and `/b/`. Soft **`grawagem`** ≈ *abo
 
 ### Group separator {#group-separator}
 
-When a number has more than one digit group, you say each comma. The spoken comma is **`th`** plus the first vowel of the marker. Written text keeps the comma.
+When a number has more than one digit group, you say each comma. The spoken comma is **`the`** on every marker. Written text keeps the comma.
 
 > `g+5e3,860`
 >
-> 🔊 `grawageyazathaluvomol`
+> 🔊 `grawageyazatheluvomol`
 >
 > g-5e3,860
 >
 > "5860."
 
-Syllable by syllable: `g` + `ra` + wa ge ya za + **tha** + lu vo mo + `l`.
+Syllable by syllable: `g` + `ra` + wa ge ya za + **the** + lu vo mo + `l`.
 
 <!-- cheat-sheet: numbers -->
-| Marker | Separator | Example | Cue |
-|--------|-----------|---------|-----|
-| **`ra`** (`+`) | **`tha`** | `g+5e3,860` | **a** ≈ add (still counting up) |
-| **`ru`** (`-`) | **`thu`** | `g-1e9,265e3,4` | **u** ≈ undo (the sign is heard again at every break) |
-| **`re`** (`#`) | **`the`** | `g#2,3` (*2nd within the 3rd*) | **e** ≈ order |
-| **`ro`** (`_`) | **`tho`** | `d_555,123,4567` | **o** ≈ one (one label) |
+| Agebon | Use | English |
+|--------|-----|---------|
+| `g+5e3,860` | count | *5860* |
+| `g-1e9,265e3,4` | negative count | *−1,000,265,004* |
+| `g#2,3` | rank | *2nd within the 3rd* |
+| `d_555,123,4567` | code | *555-123-4567* |
 
-Say a separator exactly where a comma is written, and nowhere else: `g+860` has none; `g+5e3,860` has one. The separator must match the marker, so a listener who missed the start of a long negative number still hears **`thu`** at each break.
+The **e** of **`the`** is the vowel of order: the next group comes in order. Say a separator exactly where a comma is written, and nowhere else: `g+860` has none; `g+5e3,860` has one. The sign is said once, at the start of the word.
 
 <a id="nested-rank"></a>
 
@@ -535,7 +535,7 @@ Put the marker symbol **right after** the ending mark (or right after the role l
 | Digit syllables (`ba`…`mo`) | Arabic **`0`–`9`** |
 | `wa` / `wu` (+ `ya` when a mantissa follows) | **`e`** / **`e-`** |
 | named exp **`0`** | **`e0`**: ones band `g+e0`; assert `g+3e0` / `g#e0` |
-| `th` + marker vowel ([group separator](#group-separator)) | **`,`** |
+| `the` ([group separator](#group-separator)) | **`,`** |
 | `ye` | **`.`** |
 | `yo` | **`%`** |
 | `yu` | **`%*`** |
@@ -798,7 +798,7 @@ y-question | d-how-many | z-Olazun | v-see
 **4.** `z+5e3,860 vuhohol.`
 
 ::: details Show answer
-🔊 `zrawageyazathaluvomol vuhohol.`
+🔊 `zrawageyazatheluvomol vuhohol.`
 
 z-5e3,860 | v-sit
 
@@ -880,7 +880,7 @@ To say *infinitely many*, *last place*, *a gazillion*, or *absolutely zero*, wri
 
 **Writing:** **`e`** = speech **`wa`**; **`e-`** = speech **`wu`**. Digitless means no power digits after that mark: `g+e` / `g+e-` in tables, spelled `grawal` / `grawul` in running text. Bare / assert **`e0`** writes power **`0`**: `grawamol`, `g+3e0` (not digitless).
 
-The marker still says amount, rank, or code. Numeric prefixes may use digitless **`_`** as infinite / landmark labels (`_exROOT`, `_e-xROOT`, `_1exROOT`, …).
+The marker still says amount or rank. A code has no magnitude, so it takes no exponent.
 
 #### Special values: no mantissa
 
@@ -1377,12 +1377,12 @@ Preferred writing first; the spoken form follows, often with its syllables in pa
 | 27e12 | `g+27e12` | `grawabadoyadorel` (`ra` + wa ba do **ya** + do re) |
 | e9 (bare) | `g+e9` | `grawanal` (`ra` + wa na; **no** `ya`) |
 | 50e-6 | `g+50e-6` | `grawuvoyazamol` (`ra` + wu vo **ya** + za mo) |
-| −1e9 −265e3 −4 | `g-1e9,265e3,4` | `gruwanayabathuwageyadovozathuhul`: **`ru`**; groups: wa na **ya** ba · **thu** · wa ge **ya** do vo za · **thu** · hu |
-| $5860.04 → 5e3 + 860 + 4e-2 | `g+5e3,860,4e-2` | `grawageyazathaluvomothawudoyahul`: wa ge **ya** za · **tha** · lu vo mo · **tha** · wu do **ya** hu |
+| −1e9 −265e3 −4 | `g-1e9,265e3,4` | `gruwanayabathewageyadovozathehul`: **`ru`**; groups: wa na **ya** ba · **the** · wa ge **ya** do vo za · **the** · hu |
+| $5860.04 → 5e3 + 860 + 4e-2 | `g+5e3,860,4e-2` | `grawageyazatheluvomothewudoyahul`: wa ge **ya** za · **the** · lu vo mo · **the** · wu do **ya** hu |
 | 2nd | `g#2` | `gredol`; title-like *the Second…* may take **-n** (`g@#2` / `gredon`) |
 | penultimate | `g#-2` | `gruedol` |
 | about 27e6 | `g~+27e6` | `grawavoyadorem` (wa vo **ya** do re, ending **-m**) |
-| phone 555-123-4567 | `d_555,123,4567` | `drozazazathobadogethohuzavorel` (`d` + `ro` + za×3 · **tho** · ba do ge · **tho** · hu za vo re + `l`) |
+| phone 555-123-4567 | `d_555,123,4567` | `drozazazathebadogethehuzavorel` (`d` + `ro` + za×3 · **the** · ba do ge · **the** · hu za vo re + `l`) |
 | scientific 5.2487083e-4 | `g+5.2487083e-4` | `grawuhuyazayedohuluremolugel` (`ra` + wu hu **ya** + za **ye** + do hu lu · re mo lu · ge) |
 | 25% | `g+25%` | `gradozayol` (`g` + `ra` + do za **yo** + `l`) |
 | +2 pp | `g+2%*` | `gradoyul` (`ra` + do **yu**) |
@@ -1394,7 +1394,7 @@ Preferred writing first; the spoken form follows, often with its syllables in pa
 | as in (2) above (neutral) | `x=#2` | `xredor` (ending **-r**) |
 | three times / ×3 | `h+3` | `hragel` (`h` + `ra` + ge) |
 | ÷3 / every third | `h-3` | `hrugel` (`h` + `ru` + ge) |
-| at 15:30 | `h_15,30` | `hrobazathogemol` (`h` + `ro` + ba za · **tho** · ge mo); bare `hro` = time |
+| at 15:30 | `h_15,30` | `hrobazathegemol` (`h` + `ro` + ba za · **the** · ge mo); bare `hro` = time |
 | for the third time | `h#3` | `hregel` (`h` + `re` + ge) |
 | Three! (label / score) | `y_3` | `yrogel` (`y` + `ro` + ge) |
 | Three more! | `y+3` | `yragel` (`y` + `ra` + ge) |

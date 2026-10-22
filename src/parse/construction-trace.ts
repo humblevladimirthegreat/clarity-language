@@ -59,6 +59,7 @@ function numberFeatures(stem: NumberStem): string[] {
     if (group.exponentDigits) ids.push("number.exponent");
     if (group.decimal) ids.push("number.decimal");
     if (group.percent) ids.push("number.percent");
+    if (group.code !== undefined) ids.push("number.code");
   }
   return ids;
 }

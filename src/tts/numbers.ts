@@ -23,6 +23,28 @@ export function markerToSpeech(marker: NumberMarker): string {
   return "ro";
 }
 
+/** Letter names for code characters ([phonology § Letter names](../../docs/grammar/phonology.md#letter-names)). */
+const CODE_LETTER_NAMES: Record<string, string> = {
+  b: "bu", d: "de", g: "go", h: "ha", z: "zu", v: "ve", r: "ro", l: "la", n: "nu", m: "me", th: "tho", w: "wa", y: "yu",
+};
+
+/**
+ * Speech for one code field (`b12` → `bubado`): digit syllables, letter names, and a break `'` before each vowel
+ * ([letter codes](../../docs/grammar/numbers-applied.md#letter-codes)). Offsets are each character's vowel.
+ */
+export function codeToSyllables(code: string, table = NUMBER_SYLLABLES): { text: string; vowels: number[] } {
+  let text = "";
+  const vowels: number[] = [];
+  for (let i = 0; i < code.length; i++) {
+    const ch = code.startsWith("th", i) ? "th" : code[i]!;
+    i += ch.length - 1;
+    const syllable = table.digits[ch] ?? CODE_LETTER_NAMES[ch] ?? (/^[uaoe]$/.test(ch) ? `'${ch}` : "");
+    text += syllable;
+    vowels.push(text.length - 1);
+  }
+  return { text, vowels };
+}
+
 export function digitsToSyllables(digits: string, table = NUMBER_SYLLABLES): string {
   let out = "";
   for (const ch of digits) {
@@ -121,8 +143,8 @@ export function numberStemToSpeechStressed(stem: NumberStem, table = NUMBER_SYLL
   const stress: number[] = [];
   // Calendar-ordinal dates (`_` + `#`, numbers.md § Time) speak the digraph marker `roe`.
   const marker = stem.calendarOrdinal ? "roe" : markerToSpeech(stem.marker);
-  // Spoken comma: `th` + the marker's first vowel (numbers.md § Saying it aloud).
-  const separator = `th${marker.charAt(1)}`;
+  // Spoken comma (numbers.md#group-separator).
+  const separator = "the";
   let text = marker;
   if (stem.groups.length === 0 && !stem.digitlessExp) {
     // Digitless word: stress the marker vowel.
@@ -140,10 +162,16 @@ export function numberStemToSpeechStressed(stem: NumberStem, table = NUMBER_SYLL
   }
 
   if (stem.marker === "_" || stem.marker === "ro") {
-    // Digit-string label: last digit of each comma group.
+    // Code: last character of each field.
     for (const [i, group] of stem.groups.entries()) {
       if (i > 0) text += separator;
       const start = text.length;
+      if (group.code !== undefined) {
+        const spoken = codeToSyllables(group.code, table);
+        text += spoken.text;
+        stress.push(start + spoken.vowels[spoken.vowels.length - 1]!);
+        continue;
+      }
       const mantissa = group.mantissa ?? "";
       text += digitsToSyllables(mantissa, table);
       if (mantissa.length > 0) stress.push(start + (mantissa.length - 1) * 2 + 1);

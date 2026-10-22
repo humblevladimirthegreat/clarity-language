@@ -71,7 +71,7 @@ Digitless **-r** is not a resume: `grar` is *some number* in a statement and *wh
 |--------|---------|-------|
 | [digit syllables `ba` … `mo`](../numbers.md#body) | `0`–`9` | I |
 | [`wa` / `wu`](../numbers.md#body) | `e` / `e-` | I |
-| [group separator `th` + marker vowel](../numbers.md#body) | `,` | I |
+| [group separator `the`](../numbers.md#body) | `,` | I |
 | [`ye`](../numbers.md#body) | `.` | I |
 | [`yo`](../numbers.md#body) | `%` | I |
 | [`yu`](../numbers.md#body) | `%*` | I |
@@ -146,15 +146,15 @@ The next bands, `e4` and `e5`, are tens and hundreds of thousands. Soft `grawage
 | [Several groups](../numbers.md#group-separator) | `g+5e3,860` | *5860* | I |
 | [Seat in a row](../numbers.md#group-separator) | `zozohol g#2,3.` | *There is seat 2 in row 3.* | I |
 
-Each comma is spoken as the separator, which matches the marker.
+Each comma is spoken as the separator **`the`**, on every marker.
 
 <!-- cheat-sheet: numbers -->
-| Marker | Separator | Example | Stage |
-|--------|-----------|---------|-------|
-| [**`ra`** (`+`)](../numbers.md#group-separator) | **`tha`** | `g+5e3,860` | I |
-| [**`ru`** (`-`)](../numbers.md#group-separator) | **`thu`** | `g-1e9,265e3,4` | I |
-| [**`re`** (`#`)](../numbers.md#group-separator) | **`the`** | `g#2,3` | I |
-| [**`ro`** (`_`)](../numbers.md#group-separator) | **`tho`** | `d_555,123,4567` | I |
+| Example | Use | English | Stage |
+|---------|-----|---------|-------|
+| [`g+5e3,860`](../numbers.md#group-separator) | count | *5860* | I |
+| [`g-1e9,265e3,4`](../numbers.md#group-separator) | negative count | *−1,000,265,004* | I |
+| [`g#2,3`](../numbers.md#group-separator) | rank | *2nd within the 3rd* | I |
+| [`d_555,123,4567`](../numbers.md#group-separator) | code | *555-123-4567* | I |
 
 On a rank, each comma opens a place within the one before. A large ordinal is one group (`g#1005`).
 
@@ -191,12 +191,27 @@ The role letter picks the use; the marker still says amount, rank, or code. Only
 
 ### Codes and labels {#codes}
 
-The digit-string marker `_` holds a phone, room, channel, or serial number. Group digits in threes, no exponent. **-x** on a label names a run (`z_90x`, the ’90s).
+The digit-string marker `_` holds a phone, room, channel, or serial number, with letters too. A comma marks a field, spoken `the`; no exponent or percent. **-x** on a label names a run (`z_90x`, the ’90s).
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [A code as object](../numbers-applied.md#digit-strings) | `zuzozen d_555,123,4567 vawebol.` | *Uzozen sees 555-123-4567.* | I |
+| [Fields](../numbers-applied.md#code-fields) | `d_2,1,3` | *version 2.1.3* | I |
 | [Plural label](../numbers-applied.md#plural-labels) | `zuzozen vowurel herem bl_90x.` | *Uzozen walked in the ’90s.* | I |
+| [Letter code](../numbers-applied.md#letter-codes) | `zuzozen dobebul g_b12 vagedal.` | *Uzozen takes a B12 pill.* | I |
+| [Initials](../numbers-applied.md#initials) | `z@_nl` | *the NL* (for `zanaxolazun`) | A |
+
+Say a code one character per syllable: a digit by its digit syllable, a consonant by its letter name, and a vowel after a break `'`.
+
+<!-- cheat-sheet: numbers -->
+| Agebon | Use | English | Stage |
+|--------|-----|---------|-------|
+| [`z_b12` (🔊 `zrobubadol`)](../numbers-applied.md#letter-codes) | letter, then digits | *B12* | I |
+| [`z_4b` (🔊 `zrohubul`)](../numbers-applied.md#letter-codes) | digit, then letter | *4B* | I |
+| [`z_vba` (🔊 `zrovebu'al`)](../numbers-applied.md#letter-codes) | vowel after a break | *VBA* | I |
+| [`z_e1` (🔊 `zro'ebal`)](../numbers-applied.md#letter-codes) | code that starts with a vowel | *E1* | I |
+| [`z_thw` (🔊 `zrothowal`)](../numbers-applied.md#letter-codes) | `th` is one letter | *THW* | I |
+| [`z_2,1` (🔊 `zrodothebal`)](../numbers-applied.md#letter-codes) | two fields | *version 2.1* | I |
 
 ### Time and date {#time}
 

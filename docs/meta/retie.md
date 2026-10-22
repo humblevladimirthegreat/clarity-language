@@ -39,7 +39,8 @@ A page opts out with `<!-- retie: skip -->` on a line of its own ([retie-safe wr
 
 ## Docs: what to read after `--write` {#docs}
 
-- **Review items** are text the retie could not classify: a CLI call in code, coined forms in a proposal (`named-handle-coinage.md` derives a handle from root pieces, so its examples must be rerun by hand when a title root is respelled). Collisions found only in proposals are warnings, not blocks.
+- **Review items** are text the retie could not classify: a CLI call in code, coined forms in a proposal. Collisions found only in proposals are warnings, not blocks.
+- **Initials** ([numbers-applied.md § Initials](../grammar/numbers-applied.md#initials)) copy each title root's first consonant into a code the retie never touches. `src/lint/initials-docs.test.ts` fails when a title root moves; respell the handle and its 🔊 lines by hand.
 - **Examples that rest on a spelling coincidence** still parse and lint, so nothing reports them: two roots that shared a short stem, a full-root resume that was needed only because of a neighbor. Reread the [full-root resume](../grammar/pronouns.md#resume-r) examples after any retie.
 - **Bare-resume warnings** (`zazawar` reads another root now) mean a resume in prose binds by its stem; the warning names the spelling that keeps the old reading when one exists.
 - **Spans.** Every non-opaque span is Agebon and is retied word by word: a cite (`d[…]`, `d~[…]`), a nested cite, and each sentence inside one, punctuation and tone marks included. An opaque span (`d<kimchi>`) is foreign text and is never retied, its `OPAQUE["…"]` morph copy included, even after a mention marker. So a mention of an Agebon spelling is a cite (`glelel z[udozo]`), and `lint:agebon` fails an opaque payload spelled like Agebon (`native-opaque`).

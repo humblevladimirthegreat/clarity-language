@@ -1385,7 +1385,7 @@ function numberLabel(stem: NumberStem, pos: Pos | undefined): string {
 }
 
 function formatNumberGroup(g: NumberGroup): string {
-  let s = g.mantissa ?? "";
+  let s = g.code ?? g.mantissa ?? "";
   if (g.exponentDigits) {
     s += `${g.exponentSign === "wu" ? "e-" : "e"}${g.exponentDigits}`;
   } else if (!g.mantissa && g.exponentSign) {
@@ -1705,7 +1705,7 @@ function markShorthandRuns(words: LexWord[], ctxByIndex: MorphGlossContext[]): v
  * spelling (`g+`, `g+3`). The preferred surface is unmarked.
  */
 function numberSurfaceSuffix(raw: string, stem: NumberStem, ctx: MorphGlossContext): string {
-  const spelled = /^(?:th|[zdbvgwhxy])?[a-z]+$/.test(raw);
+  const spelled = /^(?:th|[zdbvgwhxy])?[a-z][a-z']*$/.test(raw);
   const short = ctx.shorthandRun || prefersNumberShorthand(stem);
   if (spelled) return short ? ".spelled" : "";
   return short ? "" : ".short";
