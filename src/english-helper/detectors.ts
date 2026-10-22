@@ -77,6 +77,18 @@ export const ROUTE_LINKS: Readonly<Record<RouteClass, string[]>> = {
 /** The lexicon sense whose root is the `/ɡ/` word for each animal class (*young* is the child root). */
 export const ROUTE_QUALIFIERS: Readonly<Record<Exclude<RouteClass, "kin">, string>> = { young: "child", female: "female", male: "male" };
 
+/**
+ * English that picks a sake word's **-l** or **-r** ending, by stance vowel; none is **-m**
+ * ([met](sakes.md#time-horizon-endings-on-met), [unmet](sakes.md#sake-changeability),
+ * [ought](sakes.md#sake-force), [motive](sakes.md#sake-preference)).
+ */
+export const SAKE_ENDINGS: Readonly<Record<string, { l: string[]; r: string[] }>> = {
+  a: { l: ["lasting", "in the long run", "in the long term", "over time"], r: ["immediate", "immediately", "right now", "right away", "quick"] },
+  o: { l: ["lasting", "in the long run", "in the long term", "over time"], r: ["immediate", "immediately", "right now", "right away", "quick"] },
+  u: { l: ["irreversible", "for good", "permanently", "lasting"], r: ["passing", "for now", "right now", "for the moment"] },
+  e: { l: ["invited", "asked for"], r: ["worth a try", "try", "to see whether"] },
+};
+
 /** A listed compound reached from its parts, and a live `x` compound built from them. */
 export const COMPOUND_LINKS = { listed: "compounds.md#lexical-compounds", live: "compounds.md#ordinary-compound-order" } as const;
 

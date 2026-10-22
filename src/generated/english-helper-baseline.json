@@ -2,8 +2,8 @@
   "sets": {
     "doc": {
       "sentences": 1205,
-      "selfContained": 58.7,
-      "wordInPrompt": 79.5,
+      "selfContained": 58.9,
+      "wordInPrompt": 79.6,
       "rootTop1": 75.3,
       "rootAnywhere": 91.3,
       "constructionPage": 53.4,
@@ -12,8 +12,8 @@
     },
     "checkpoint": {
       "sentences": 314,
-      "selfContained": 65.3,
-      "wordInPrompt": 79.2,
+      "selfContained": 67.2,
+      "wordInPrompt": 79.7,
       "rootTop1": 85.7,
       "rootAnywhere": 94.8,
       "constructionPage": 55.1,

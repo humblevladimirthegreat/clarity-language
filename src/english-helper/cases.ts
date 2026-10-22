@@ -10,6 +10,7 @@
  *   sense:<sense>       a root with this English sense is suggested
  *   form:<word>         this closed word (a number word, a pronoun) is spelled
  *   scope:<seam>:<sense> a label-scope job spells its seam (`thao`) on a root with this sense
+ *   sake:<role>-<stance><ending> a sake row spells a word of this shape (`g-thar`, `w-thur`; `none` for no word)
  *   no-gap              the word gets a suggestion, or is skipped as clause grammar
  *
  * An empty slot names the sentence's clause detectors (tense, question).
@@ -19,7 +20,7 @@ import { scopeSeam, suggestionLinks, type Analysis, type Suggestion } from "./an
 
 export type Case = { line: number; english: string; slot: string; expect: string; why: string };
 
-export const CASE_KINDS = ["link", "not", "first", "has", "sense", "form", "scope", "no-gap"] as const;
+export const CASE_KINDS = ["link", "not", "first", "has", "sense", "form", "scope", "sake", "no-gap"] as const;
 
 /** Lines of cases.tsv: a header, `#` comments, and `english \t slot \t expect \t why` rows. */
 export function parseCases(tsv: string): Case[] {
@@ -92,6 +93,12 @@ export function checkCase(analysis: Analysis, c: Case): string | undefined {
       return suggestions.some((s) => sensesOf(s).includes(value.toLowerCase())) ? undefined : `senses: ${[...new Set(suggestions.flatMap(sensesOf))].join(", ") || "none"}`;
     case "form":
       return suggestions.some((s) => wordsOf(s).includes(value)) ? undefined : `spells ${[...new Set(suggestions.flatMap(wordsOf))].join(" ") || "nothing"}`;
+    case "sake": {
+      const spelled = suggestions.flatMap((s) => (s.kind === "job" || s.kind === "entry") && s.link === "sakes.md#sake-inventory" && s.phrase ? [s.phrase] : []);
+      if (value === "none") return spelled.length ? `spells ${spelled.join(" ")}` : undefined;
+      const [role = "", tail = ""] = value.split("-");
+      return spelled.some((w) => w.startsWith(role) && w.split(" ")[0]!.endsWith(tail)) ? undefined : `spells ${spelled.join(" ") || "nothing"}`;
+    }
     case "scope": {
       const [seam, sense = ""] = value.split(":");
       const scoped = suggestions.filter((s) => scopeSeam(s) === seam);

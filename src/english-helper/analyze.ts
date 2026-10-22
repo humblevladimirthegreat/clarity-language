@@ -13,7 +13,7 @@ import { BANDS } from "../lint/learning-order.js";
 import { markerToSpeech, digitsToSyllables } from "../tts/numbers.js";
 import { grammarPath, matchCues, resolveLink, type CueIndex, type GrammarJob } from "./cues.js";
 import type { CompoundRow } from "../lexicon-compounds.js";
-import { BOUNDABLE_JOINS, BOUNDABLE_RESTRICTORS, COMPOUND_LINKS, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
+import { BOUNDABLE_JOINS, BOUNDABLE_RESTRICTORS, COMPOUND_LINKS, detectClause, detectClauseOpener, detectHook, detectWord, extraNounHook, ROLE_LINKS, ROUTE_LINKS, ROUTE_QUALIFIERS, SAKE_ENDINGS, SAME_ROLE_HOOKS, type DetectorHit } from "./detectors.js";
 import { lookupLexicon, rootsByForm, sideEnding, type LexiconIndex, type LexiconSuggestion } from "./lexicon.js";
 import { doerVerb, tagEnglish, type ClauseFeatures, type TaggedTerm, type WordClass } from "./tag.js";
 import { lookupRoute, lookupWordnet, senseSuggestions, type RouteClass, type WordnetIndex, type WordnetPos } from "./wordnet-index.js";
@@ -571,10 +571,21 @@ function scopedWord(data: HelperData, slot: Slot, seam: string): string | undefi
   return undefined;
 }
 
+/** Seams whose party follows in a `bl-` word (predication.md#scope-relative): **`tho`**, **`thuo`**. */
+const PAIR_SEAMS = new Set(["tho", "thuo"]);
+
+/** The first noun after slot `n`, as a `bl-` word (`zolazun` → `blolazun`): a pair scope's party. */
+function partyWord(slots: readonly Slot[], n: number): string | undefined {
+  const next = slots.slice(n + 1).find((o) => !o.skipped && o.cls === "noun");
+  const word = next?.suggestions.find((s): s is RootSuggestion => s.kind === "lexicon" && !!s.word)?.word;
+  return word && `bl${word.slice(1)}`;
+}
+
 /**
  * Spell each label-scope job on the content word it scopes: the nearest one before the cue in
  * the sentence (*lied this once*, *angry, but it's the situation*), else the nearest after
  * (*becoming a liar*). `slots` are the whole sentence's, so a cue in a later clause reaches back.
+ * A pair scope adds its party, the noun after the cue (*except with Olazun*).
  */
 function spellScopes(data: HelperData, slots: readonly Slot[]): void {
   slots.forEach((slot, n) => {
@@ -585,12 +596,52 @@ function spellScopes(data: HelperData, slots: readonly Slot[]): void {
       for (const other of order) {
         const word = scopedWord(data, other, seam);
         if (word) {
-          s.phrase = word;
+          const party = PAIR_SEAMS.has(seam) ? partyWord(slots, n) : undefined;
+          s.phrase = party ? `${word} ${party}` : word;
           break;
         }
       }
     }
   });
+}
+
+/** A sake root as the [inventory](sakes.md#sake-inventory) row spells it (`uwa`). */
+const SAKE_ROOT = /^[aeou][a-z][aeou]$/;
+/** A stance row's form piece: the bare seam (`tha`) or the stance's default ending (`…tham`). */
+const SAKE_STANCE = /^(?:…)?th([aeou])m?$/;
+
+function sakeRoot(s: Suggestion): string | undefined {
+  return (s.kind === "job" || s.kind === "entry") && s.link === "sakes.md#sake-inventory" && SAKE_ROOT.test(s.form) ? s.form : undefined;
+}
+
+/** The stance vowel a sakes.md row names, when it names one (*serves* → `a`, *for* → `o`). */
+function sakeStance(s: Suggestion): string | undefined {
+  if ((s.kind !== "job" && s.kind !== "entry") || !s.link.startsWith("sakes.md#")) return undefined;
+  const vowels = new Set(s.form.split(" / ").flatMap((p) => SAKE_STANCE.exec(p.trim())?.[1] ?? []));
+  return vowels.size === 1 ? [...vowels][0] : undefined;
+}
+
+/**
+ * Spell a sake word when the sentence names both a sake and a stance (*my book serves competence
+ * right now*): the ending from {@link SAKE_ENDINGS}, else **-m**. Met and unmet go on `/ɡ/` after
+ * *my* ([personal possession](sakes.md#personal-possession)), else on `/w/` before `goyem`; ought
+ * and motive go on `/th/`. The word is the sake row's phrase.
+ */
+function spellSakes(data: HelperData, slots: readonly Slot[], text: string): void {
+  const all = slots.flatMap((slot) => slot.suggestions);
+  const vowel = all.map(sakeStance).find(Boolean);
+  const roots = all.filter((s): s is JobSuggestion | EntrySuggestion => !!sakeRoot(s));
+  if (!vowel || !roots.length) return;
+  const words = ` ${text.toLowerCase().replace(/[^\p{L}\p{N}' ]+/gu, " ").replace(/\s+/g, " ")} `;
+  const said = (cues: readonly string[]) => cues.some((c) => words.includes(` ${c} `));
+  const ending = said(SAKE_ENDINGS[vowel]!.l) ? "l" : said(SAKE_ENDINGS[vowel]!.r) ? "r" : "m";
+  const owned = slots.some((slot) => slot.text.toLowerCase() === "my");
+  const role = vowel === "a" || vowel === "u" ? (owned ? "g" : "w") : "th";
+  for (const s of roots) {
+    const word = `${role}${s.form}th${vowel}${ending}`;
+    if (data.wordParses && !data.wordParses(word)) continue;
+    s.phrase = role === "w" ? `${word} goyem` : word;
+  }
 }
 
 function readingOf(t: TaggedTerm): string | undefined {
@@ -710,7 +761,9 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
       clauses.push({ text: clause.text, features: clause.features, detectors, slots });
       outer.push(...terms);
     }
-    spellScopes(data, clauses.slice(sentenceStart).flatMap((c) => c.slots));
+    const sentenceSlots = clauses.slice(sentenceStart).flatMap((c) => c.slots);
+    spellScopes(data, sentenceSlots);
+    spellSakes(data, sentenceSlots, clauses.slice(sentenceStart).map((c) => c.text).join(" "));
   }
   return { clauses, gaps };
 }

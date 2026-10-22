@@ -72,3 +72,9 @@ Olazun is angry, but it is the situation, not Olazun.	it is the situation	scope:
 Uzozen is a lying type, except this time.	except this time	scope:thua:lie	an *-ing* noun scopes its verb
 Olazun is becoming a liar.	becoming	scope:thoe:lie	no word before: the doer noun after, as its verb
 Olazun is becoming a liar.	becoming	link:say-reasons.md#mind-verbs	*becoming* keeps the *become* row
+# Sake words: sake + stance + horizon, composed when the sentence names all three
+My book serves competence right now.	competence	sake:g-thar	*my*: on /ɡ/; *right now*: -r
+The gathering detracts from autonomy right now.	autonomy	sake:w-thur	not *my*: on /w/ before the stimulus
+My tent serves the physical sake in the long term.	physical	sake:g-thal	*in the long term*: -l
+I kneel for a quick sense of purpose.	purpose	sake:th-thor	a motive goes on /th/
+I want competence.	competence	sake:none	a sake with no stance spells nothing
