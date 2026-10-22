@@ -243,7 +243,8 @@ function familyChips(family: MorphWordFamily): string[] {
       const chips = [`x ${family.xFamily}`];
       if (family.leftRoots.length) chips.push(`host ${family.leftRoots.join("+")}`);
       if (family.rightRoots?.length) chips.push(`right ${family.rightRoots.join("+")}`);
-      if (family.roleVowel) chips.push(`role ${family.roleVowel}`);
+      if (family.scopeVowel) chips.push(`scope ${family.scopeVowel}`);
+      if (family.part) chips.push(`part ${family.part}`);
       if (family.stanceVowel) chips.push(`stance ${family.stanceVowel}`);
       if (family.numberStem) chips.push(`num ${family.numberStem.marker}`);
       return chips;
@@ -317,7 +318,8 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
     if (family.rightRoots?.length) {
       rows.push({ label: "right", value: family.rightRoots.join(" · ") });
     }
-    if (family.roleVowel) rows.push({ label: "role vowel", value: family.roleVowel });
+    if (family.scopeVowel) rows.push({ label: "scope", value: family.scopeVowel });
+    if (family.part) rows.push({ label: "part", value: family.part });
     if (family.stanceVowel) rows.push({ label: "stance", value: family.stanceVowel });
   } else if (family.kind === "number") {
     rows.push({ label: "marker", value: String(family.stem.marker) });
@@ -376,7 +378,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   if (family.kind === "x" && family.xFamily === "role") {
     return { line: "role compound", href: "roles.html#role-compounds" };
   }
-  if (family.kind === "x" && (family.xFamily === "pointer" || family.pointerVowel)) {
+  if (family.kind === "x" && family.xFamily === "pointer") {
     return { line: "role pointer", href: "pronouns.html#role-pointers" };
   }
   if (family.kind === "writingSpan") {

@@ -17,9 +17,9 @@ A quick look at [pronouns](../pronouns.md) and [plurality](../plurality.md) on o
 |----------|-----|---------|---------|-------|
 | [The same one again, by name](../pronouns.md#resume-r) | role letter + whole stem + **-r** | `zuzozer` | *Uzozen* (again) | B |
 | [The same kind again](../pronouns.md#resume-r) | the same, on a kind | `zudozor` | *the dog* | B |
-| [By the part they played](../pronouns.md#role-pointers) | role letter + role vowel + `x` + pointer vowel + **-r** | `zaxar` | *the latest doer* | B |
-| [A new one of that kind](../pronouns.md#a-new-one) | the same pointer with **-l** | `duxal` | *another one* (as object) | B |
-| [Their part, not them](../pronouns.md#share) | the same pointer with **-m** | `zaxam` | *what the doer did* | B |
+| [By the part they played](../pronouns.md#role-pointers) | role letter + `wa` + part consonant + pointer vowel + **-r** | `zwazar` | *the latest doer* | B |
+| [A new one of that kind](../pronouns.md#a-new-one) | the same pointer with **-l** | `dwadal` | *another one* (as object) | B |
+| [Their part, not them](../pronouns.md#share) | the same pointer with **-m** | `zwazam` | *what the doer did* | B |
 | [Pin one sense](../pronouns.md#resume-sense) | **-rl** concrete, **-rm** abstract | `dudozorl` | *the dog* (not the loyalty) | I |
 | [A label you chose](../pronouns.md#tag-pronouns) | role letter + `w` + tag vowel | `zwar` | *A* | I |
 | [The talk's topic](../pronouns.md#topic-pronoun) | `alo` + **-n** | `zalon` | *the topic* | I |
@@ -28,20 +28,20 @@ A resume uses the **whole stem**: `dobahohar` is *the bedroom*, `dobahor` is *th
 
 ### Role pointers {#role-pointers}
 
-Role letter for the slot now (see [role pointers](../pronouns.md#role-pointers)), a **role vowel** for the part, `x`, a **pointer vowel** for which event, then the ending.
+Role letter for the slot now (see [role pointers](../pronouns.md#role-pointers)), **`wa`**, a **part consonant** for the part (the role letter it had then), a **pointer vowel** for which event, then the ending.
 
-| Role vowel | Part in the earlier event | Where it sat | Example | Stage |
-|------------|---------------------------|--------------|---------|-------|
-| **a** | the doer | `/z/` | `zaxar` | B |
-| **u** | the one it happens to | `/d/` | `duxar` | B |
-| **o** | the extra party | `/b/` | `zoxar` | B |
+| Part consonant | Part in the earlier event | Where it sat | Example | Stage |
+|----------------|---------------------------|--------------|---------|-------|
+| **z** | the doer | `/z/` | `zwazar` | B |
+| **d** | the one it happens to | `/d/` | `dwadar` | B |
+| **b** | the extra party | `/b/` | `zwabar` | B |
 
 | Pointer vowel | Picks | Example | English | Stage |
 |---------------|-------|---------|---------|-------|
-| **a** | [the latest sentence with someone in that part](../pronouns.md#role-pointers) | `zaxar` | *they* | B |
-| **e** | [this sentence's own event](../pronouns.md#themself) | `daxer` | *themself* | B |
-| **o** | [the nearest one other than the last](../pronouns.md#the-other-one) | `zaxor` | *the other one* | B |
-| **u** | [the latest sentence that left the part unsaid](../pronouns.md#whoever-it-was) | `zaxur` | *whoever did it* | B |
+| **a** | [the latest sentence with someone in that part](../pronouns.md#role-pointers) | `zwazar` | *they* | B |
+| **e** | [this sentence's own event](../pronouns.md#themself) | `dwazer` | *themself* | B |
+| **o** | [the nearest one other than the last](../pronouns.md#the-other-one) | `zwazor` | *the other one* | B |
+| **u** | [the latest sentence that left the part unsaid](../pronouns.md#whoever-it-was) | `zwazur` | *whoever did it* | B |
 
 Endings on a pointer: **-r** the same one, **-l** [a new one](../pronouns.md#a-new-one) (not with **u**), **-m** [their part](../pronouns.md#share) (not with **e**). A pointer never names its own slot. A topic change [ends its reach](../pronouns.md#topic-resets).
 
@@ -142,11 +142,11 @@ Who counts as an associate is [open unless you say](../plurality.md#associate-re
 
 | This | vs | That |
 |------|----|------|
-| `zuzozer` *Uzozen, again* ([the stem, resumed](../pronouns.md#resume-r)) | | `zaxar` *the latest doer* ([by the part they played](../pronouns.md#role-pointers)) |
-| `duxar` *the same one* ([-r](../pronouns.md#a-new-one)) | | `duxal` *another one* ([-l](../pronouns.md#a-new-one)) |
-| `zaxar` *the person* ([-r](../pronouns.md#share)) | | `zaxam` *what they did* ([-m](../pronouns.md#share)) |
+| `zuzozer` *Uzozen, again* ([the stem, resumed](../pronouns.md#resume-r)) | | `zwazar` *the latest doer* ([by the part they played](../pronouns.md#role-pointers)) |
+| `dwadar` *the same one* ([-r](../pronouns.md#a-new-one)) | | `dwadal` *another one* ([-l](../pronouns.md#a-new-one)) |
+| `zwazar` *the person* ([-r](../pronouns.md#share)) | | `zwazam` *what they did* ([-m](../pronouns.md#share)) |
 | `zayan` *you and I* ([`aya`](../pronouns.md#special-pronouns)) | | `zuwonx` *I and my people*, not you ([speaker -x](../plurality.md#person-role-x)) |
 | `zawan` *you* ([one listener](../pronouns.md#special-pronouns)) | | `zawanx` *you all* ([the address set](../plurality.md#person-role-x)) |
-| `zumon` *someone* ([tied to no event](../pronouns.md#special-pronouns)) | | `zaxur` *whoever did that* ([tied to one known event](../pronouns.md#whoever-it-was)) |
+| `zumon` *someone* ([tied to no event](../pronouns.md#special-pronouns)) | | `zwazur` *whoever did that* ([tied to one known event](../pronouns.md#whoever-it-was)) |
 | `zeyon` *one*, people at large ([generic](../pronouns.md#generic-pronoun)) | | `zawan` *you*, the listener ([just them](../pronouns.md#special-pronouns)) |
 | `xuzozen` *now, about Uzozen* ([sets the topic](../pronouns.md#topic)) | | `zalon` *the topic* ([refers to it](../pronouns.md#topic-pronoun)) |

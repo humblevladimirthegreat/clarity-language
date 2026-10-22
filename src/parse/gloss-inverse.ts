@@ -11,7 +11,7 @@
 
 import type { ClassifyTables } from "./classify.js";
 import { classify } from "./classify.js";
-import { POINTER_VOWEL, ROLE_VOWEL, morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine } from "./morph-gloss.js";
+import { POINTER_VOWEL, ROLE_PART, SCOPE_VOWEL, morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine } from "./morph-gloss.js";
 import type { MorphGlossContext } from "./morph-gloss.js";
 import { parseWords } from "./word.js";
 
@@ -242,8 +242,17 @@ function unquote(text: string): string | undefined {
 
 // ── Leaf candidates ─────────────────────────────────────────────────────────
 
-const ROLE_BY_LABEL: Record<string, string> = Object.fromEntries(
-  Object.entries(ROLE_VOWEL).map(([vowel, label]) => [label, vowel]),
+const PART_BY_LABEL: Record<string, string> = Object.fromEntries(
+  Object.entries(ROLE_PART).map(([part, label]) => [label, part]),
+);
+
+const SCOPE_BY_LABEL: Record<string, string> = Object.fromEntries(
+  Object.entries(SCOPE_VOWEL).map(([vowel, label]) => [label, vowel]),
+);
+
+/** A role word's front, `SCOPE-PART` (`episode-agent`), then the rest. */
+const ROLE_FRONT = new RegExp(
+  `^(${Object.keys(SCOPE_BY_LABEL).join("|")})-(${Object.keys(PART_BY_LABEL).join("|")})(.*)$`,
 );
 
 const POINTER_BY_LABEL: Record<string, string> = Object.fromEntries(
@@ -279,26 +288,26 @@ function leafCandidates(text: string, index: GlossIndex, named: boolean): string
   if (resume) {
     const pos = (resume[1] ?? "").replace(/-$/, "");
     let body = resume[2]!;
-    // Role pointer: `←agent.same` → `ax` + `a` + **-r**; `.new` is **-l**, `.part` is **-m**.
-    const pointer = body.match(/^([a-z]+)\.([a-z]+)(?:\.(new|part))?$/);
-    if (pointer && ROLE_BY_LABEL[pointer[1]!] !== undefined && POINTER_BY_LABEL[pointer[2]!] !== undefined) {
-      const ending = pointer[3] === "new" ? "l" : pointer[3] === "part" ? "m" : "r";
-      out.add(`${pos}${ROLE_BY_LABEL[pointer[1]!]}x${POINTER_BY_LABEL[pointer[2]!]}${ending}${suffix}`);
+    const front = body.match(ROLE_FRONT);
+    // Role pointer: `←episode-agent.same` → `w` + `a` + `z` + `a` + **-r**; `.new` is **-l**, `.part` is **-m**.
+    const pointer = front?.[3]!.match(/^\.([a-z]+)(?:\.(new|part))?$/);
+    if (front && pointer && POINTER_BY_LABEL[pointer[1]!] !== undefined) {
+      const ending = pointer[2] === "new" ? "l" : pointer[2] === "part" ? "m" : "r";
+      out.add(`${pos}w${SCOPE_BY_LABEL[front[1]!]}${PART_BY_LABEL[front[2]!]}${POINTER_BY_LABEL[pointer[1]!]}${ending}${suffix}`);
       return [...out];
     }
-    // Role-compound resume: `←instrument-x-write` → `aex` + resumed stem + **-r**.
-    let roleVowel = "";
-    const role = body.match(/^([a-z]+)-x-(.+)$/);
-    if (role && ROLE_BY_LABEL[role[1]!] !== undefined) {
-      roleVowel = `${ROLE_BY_LABEL[role[1]!]}x`;
-      body = role[2]!;
+    // Role-compound resume: `←episode-agent-write` → `w` + `a` + `z` + resumed stem + **-r**.
+    let roleFront = "";
+    if (front?.[3]!.startsWith("-")) {
+      roleFront = `w${SCOPE_BY_LABEL[front[1]!]}${PART_BY_LABEL[front[2]!]}`;
+      body = front[3]!.slice(1);
     }
     const quoted = unquote(body);
     const roots = quoted !== undefined ? [quoted] : [...(index.roots.get(body) ?? [])];
     // A resume of **-ln** keeps the instance label (`←Azawan.instance`); the stem is the name's.
     const name = nameRoot(body.replace(/\.instance$/, ""));
     if (name) roots.push(name);
-    for (const root of roots) out.add(`${pos}${roleVowel}${root}r${suffix}`);
+    for (const root of roots) out.add(`${pos}${roleFront}${root}r${suffix}`);
   }
 
   const named_ = core.match(/^((?:th|gl|[zdbvgwhxy])-)?([A-Z].*?)(\.instance)?$/);

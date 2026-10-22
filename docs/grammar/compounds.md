@@ -27,7 +27,7 @@ The last root is the kind of thing; the left root specifies it (what field, what
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
 | full root **`x`** full root | two roots, one word | `zubedaxuyudal` *peanut butter* | **x** ≈ plus |
-| **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zaxuduyel` *someone who teaches* (**-r** *the one teaching*) | **a** doer / **e** scene / **u** undergoer / **o** extra `/b/` party |
+| **`a`** / **`e`** / **`u`** / **`o`** **`x`** root | [role compound](roles.md#role-compounds) | `zwazuduyel` *someone who teaches* (**-r** *the one teaching*) | **a** doer / **e** scene / **u** undergoer / **o** extra `/b/` party |
 
 **Not the same job as:** a word that **starts** with **`x`** [keeps the same speech move going](dependents.md#continue-x). That **`x`** is not this glue in the middle.
 
@@ -228,13 +228,11 @@ z-doorbell
 
 ### Left and right of `x` {#families-by-shape}
 
-Beginner already used two roots glued with **`x`**, dictionary words with no **`x`**, and *someone who teaches*. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family.
+Beginner already used two roots glued with **`x`** and dictionary words with no **`x`**. After the role letter, look at both sides of the **first** **`x`**. That pair picks the family. A [role compound](roles.md#role-compounds) or [role pointer](pronouns.md#role-pointers) is not one of these families: it opens with **`w`**, a scope vowel, and a part consonant (`zwazuduyel`, `zwazar`), and only a noun inside its stem takes **`x`**.
 
 <!-- cheat-sheet: roles-comparing -->
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| role vowel(s) **`x`** **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** | [role pointer](pronouns.md#role-pointers) | `zaxar` *they* (whoever did the latest thing); `zaxal` *another one*; `zaxam` *what they did* | **a** again / **e** echo / **o** other / **u** unsaid |
-| **`a`** / **`e`** / **`u`** / **`o`** **`x`** a longer root | [role compound](roles.md#role-compounds) | `zaxuduyel` *someone who teaches* (**-r** *the one teaching*) | **a** doer / **e** scene / **u** undergoer / **o** extra `/b/` party |
 | name **`x`** **`a`** / **`o`** / **`e`** / **`u`** + **-n** (conversation length) | conversation length | *Uzozen, I have time* | vowel on the name |
 | longer root **`x`** **`a`** / **`e`** / **`o`** / **`u`** | ability | *can’t sing right now* | extra vowel after the root |
 | full roots on **both** sides, maybe more **`x`** + root | ordinary compound | `zubedaxuyudal`; `zalexalowen` ([hyphenated names](word-endings.md#multipart-names)) | **x** ≈ plus |
@@ -242,7 +240,7 @@ Beginner already used two roots glued with **`x`**, dictionary words with no **`
 | other root **`th`** **`a`** / **`e`** / **`o`** / **`u`** (or a stack) | [label scope](predication.md#label-scope) | *angry this time*; *a teacher* | **th** ≈ *think* (what kind of claim the label is) |
 | direction root **`th`** facing person | [viewpoint lateral](roles.md#viewpoint-laterals) | `gowuhethuzozen` *Uzozen’s left* | **th** ≈ *think* (whose point of view) |
 
-A normal root is longer than one vowel. If you only see **`a`**, **`e`**, **`o`**, or **`u`** left of **`x`**, you are naming a role (*someone who teaches*), not gluing two full roots. Role compounds still put a full root **after** that vowel.
+A normal root is longer than one vowel, so a lone vowel never stands left of **`x`**.
 
 ### Adding another piece {#ordinary-compound-order}
 
@@ -262,7 +260,7 @@ To narrow a compound further, or to build a hyphenated name from several labels,
 
 [Hyphenated names](word-endings.md#multipart-names) use the same order (*Mary-Kate*: first piece first). A family name is not part of this stack; it is a separate `/ɡ/` word after the given name. [Body left / right](roles.md#viewpoint-laterals) is not this stack: it joins the direction and whose facing counts with **`th`** (`gowuhethuzozen`), because the second root is a point of view, not a kind.
 
-A [role compound](roles.md#role-compounds) can take such a stack as its stem (`zaxudozoxowurel` *someone who walks dogs*), but is never one piece of a stack.
+A [role compound](roles.md#role-compounds) can take such a stack as its stem (`zwazudozoxowurel` *someone who walks dogs*), but is never one piece of a stack.
 
 **Compare with:** a short office **handle** is one root plus [**-n**](word-endings.md#proper-name--n), not this stack. A dictionary compound is one listed word, not a live list you extend.
 
@@ -271,13 +269,9 @@ A [role compound](roles.md#role-compounds) can take such a stack as its stem (`z
 
 Use the table above. If the word has a mid-word **`th`**, it is a [sake](sakes.md) word (a [sake root](sakes.md#sake-inventory), then a vowel, with an optional [emotion tail](sakes.md#emotion-compose)), a [label scope](predication.md#label-scope) word (any other root, then a vowel), or a [viewpoint lateral](roles.md#viewpoint-laterals) (a root follows **`th`**). The root before **`th`** decides: after a sake root, letters that look like a root are always the emotion tail (`guwathamol`), never a lateral. Otherwise read both sides of the first **`x`** in this order:
 
-- After the role letter: a role vowel, **`x`**, **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** → a **role pointer** ([pronouns](pronouns.md#role-pointers)). A role compound with a stem keeps its own **-l** / **-m** senses; only the stemless pointer takes **-m** as a share.
-- After the role letter: a role vowel, **`x`**, then a longer root → a **role compound** (who does / what it acts on or makes / who is told).
 - A name (one root or a [hyphenated name](word-endings.md#multipart-names)), **`x`**, a single vowel **`a`** / **`o`** / **`e`** / **`u`**, named **-n**, as a conversation-length bid → conversation length.
 - A longer root, then **`x`**, then a single vowel **`a`** / **`e`** / **`o`** / **`u`** → **ability**.
 - Full roots on **both** sides of the first **`x`** (and maybe more **`x`** + root) → an ordinary compound (sense or name).
-
-The role vowels are **`a`** / **`u`** / **`o`**. No other vowel goes before **`x`**.
 
 ### Conversation length (name **`x`** vowel) {#conversation-length}
 

@@ -726,9 +726,9 @@ The bar's `/b/` works as it does on the clause. On REPORTED it is the source, an
 >
 > "The book is less clear than Olazun said."
 
-> `zuzozen thubem blaxeluyelx zel gezuyol.`
+> `zuzozen thubem blwazeluyelx zel gezuyol.`
 >
-> [z-Uzozen | [th-PATTERN | bl-agent-x-learn-x] | z-rank/more | g-sing]
+> [z-Uzozen | [th-PATTERN | bl-episode-agent-learn-x] | z-rank/more | g-sing]
 >
 > "Uzozen sings well for a learner."
 
@@ -736,25 +736,25 @@ On a rank join, an event root on `/ɡ/` is the scale itself: how well the act go
 
 An adjective after that `/b/` describes it, as after any [host](clause.md#complex-chaining), so it narrows the population.
 
-> `zuzozen thubem blaxeluyelx guzemol zel gezuyol.`
+> `zuzozen thubem blwazeluyelx guzemol zel gezuyol.`
 >
-> [z-Uzozen | [th-PATTERN | [bl-agent-x-learn-x | g-sleepy]] | z-rank/more | g-sing]
+> [z-Uzozen | [th-PATTERN | [bl-episode-agent-learn-x | g-sleepy]] | z-rank/more | g-sing]
 >
 > "Uzozen sings well for a sleepy learner."
 
 The ranked item can be a whole kind. Write the [universal fence](joins.md#universals-domains-generics) first, then the bar: the whole closed fence counts as the one ranked item, the way an inner list sits inside an outer one ([fence nesting](joins.md#fence-nesting)). Open **`zuam`** is *people of that kind, as a rule*.
 
-> `zuam gaxodamul thubem zel hral vabezum.`
+> `zuam gwazodamul thubem zel hral vabezum.`
 >
-> [[z-everything.open | g-agent-x-tired] | th-PATTERN | z-rank/more | h-how-often] | v-flaw
+> [[z-everything.open | g-episode-agent-tired] | th-PATTERN | z-rank/more | h-how-often] | v-flaw
 >
 > "Tired people make mistakes more often than usual."
 
 To rank one kind against another, keep one kind as the item and put the other in the PATTERN bar's `/b/`.
 
-> `zuam gaxenuvom thubem bleyolx godamum zel hemebem vuzubal.`
+> `zuam gwazenuvom thubem bleyolx godamum zel hemebem vuzubal.`
 >
-> [[z-everything.open | g-agent-x-rest] | [th-PATTERN | [bl-person-x | g-burnout]] | z-rank/more | h-achievement] | v-sweat
+> [[z-everything.open | g-episode-agent-rest] | [th-PATTERN | [bl-person-x | g-burnout]] | z-rank/more | h-achievement] | v-sweat
 >
 > "Rested people work more successfully than exhausted people."
 

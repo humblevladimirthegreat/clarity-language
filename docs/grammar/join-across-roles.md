@@ -219,9 +219,9 @@ When the grounds are a whole clause (*not because Olazun runs*), the pole takes 
 
 The same join after DEDUCED and an *if* pole says a conclusion **does not follow** from its premises ([deduction](knowing.md#deduction)). You deny the link and claim nothing about either clause.
 
-> `zuzozen vuduyel thanam thohom thul blarl zuzozen gaxuduyethel.`
+> `zuzozen vuduyel thanam thohom thul blarl zuzozen gwezuduyel.`
 >
-> z-Uzozen | v-teach | th-DEDUCED | th-if | th-not | bl-that-clause | [z-Uzozen | g-agent-x-teach-th-role]
+> z-Uzozen | v-teach | th-DEDUCED | th-if | th-not | bl-that-clause | [z-Uzozen | g-role-agent-teach]
 >
 > "If Uzozen is a teacher, it doesn't follow that Uzozen teaches."
 

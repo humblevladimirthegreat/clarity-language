@@ -10,7 +10,7 @@
  * - a bound pronoun names its referent: a resume, role pointer, tag or topic in **-r** reads as *the one
  *   first mentioned there*, so a pointer and a resume to the same one match, but a fresh noun does not.
  *   **-l** reads as the antecedent written out (pronouns.md#a-new-one); **-m** as a share of the referent;
- *   a role compound keeps its role vowel.
+ *   a role compound keeps its scope and part.
  * Positions (`at`) are dropped.
  */
 import type { ClassifyTables } from "../parse/classify.js";
@@ -83,7 +83,7 @@ function standIn(bind: AnaphorBind, referent: (word: LexWord) => string): unknow
     sense: pronoun.resumeSense,
     plural: pronoun.plural,
     // A role compound names one part of the event; a role pointer already reaches the participant.
-    role: bind.kind === "role" || pronoun.ending === "m" ? bind.roleVowel : undefined,
+    role: bind.kind === "role" || pronoun.ending === "m" ? bind.part : undefined,
     refs,
   };
 }

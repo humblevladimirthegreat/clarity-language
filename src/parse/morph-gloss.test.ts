@@ -123,10 +123,10 @@ describe("morphGlossLine — glosses.md single words", () => {
     expectLine("zuzedoxugudaxududan", "z-Uzedo-x-Uguda-x-Ududan");
     expectLine("vowurexel", "v-walk-unable-temporary");
     expectLine("thuwathem", "th-competence-ought-offered");
-    expectLine("zaxezuyer", "z-agent-x-speech");
-    expectLine("zaxavuvul", "z-agent-x-fight");
-    expectLine("zaxavuvum", "z-agent-x-struggle");
-    expectLine("zoxezuyel", "z-recipient-x-speech");
+    expectLine("zwazezuyer", "z-episode-agent-speech");
+    expectLine("zwazavuvul", "z-episode-agent-fight");
+    expectLine("zwazavuvum", "z-episode-agent-struggle");
+    expectLine("zwabezuyel", "z-episode-recipient-speech");
     expectLine("xrewul", "x-starting-with");
   });
 
@@ -338,9 +338,8 @@ describe("morphGlossLine — tags, xuen, hewol, pointer anchors", () => {
     expectLine("zuzozen hewol bludozal vowurel.", "z-Uzozen | [h-exactly-like | bl-duck] | v-walk");
     expectLine("zahehal gewol bluzozen.", "z-house | [g-exactly-like | bl-Uzozen]");
   });
-  it("a role pointer as a viewpoint lateral's facing anchor (roles.md#viewpoint-laterals)", () => {
-    expectLine("zuzozen vowurel. zolazun vuhohol howuhethaxar.", "z-Uzozen | v-walk . z-Olazun | v-sit | h-west-th-←agent.same");
-    expectLine("zuzozen vowurel howuhethaxer.", "z-Uzozen | v-walk | h-west-th-←agent.self");
+  it("a viewpoint lateral's -r resumes its facing anchor (roles.md#viewpoint-laterals)", () => {
+    expectLine("zuzozen vowurel. zolazun vuhohol howuhethuzozer.", "z-Uzozen | v-walk . z-Olazun | v-sit | h-west-th-←Uzozen");
   });
 });
 
@@ -522,13 +521,13 @@ describe("compareMorphGloss", () => {
     expectLine("zolazun gunemuthal", "z-Olazun | g-angry-th-episode");
     expectLine("zuzozen valamuthel", "z-Uzozen | v-lie-th-role");
     expectLine("zolazun ganumuthul", "z-Olazun | g-anxious-th-type");
-    expectLine("zolazun gaxuduyethel", "z-Olazun | g-agent-x-teach-th-role");
+    expectLine("zolazun gwezuduyel", "z-Olazun | g-role-agent-teach");
     expectLine("zuzozen valamuthol blolazun", "z-Uzozen | [v-lie-th-pair | bl-Olazun]");
     expectLine("zuzozen valamuthaol blolazun", "z-Uzozen | [v-lie-th-on-pair | bl-Olazun]");
     expectLine("zuzozen valamuthual", "z-Uzozen | v-lie-th-except-episode");
-    expectLine("zolazun gaxuduyethael", "z-Olazun | g-agent-x-teach-th-using");
-    expectLine("zolazun gaxuduyethoel", "z-Olazun | g-agent-x-teach-th-toward-role");
-    expectLine("zolazun gaxuduyethuel", "z-Olazun | g-agent-x-teach-th-outside-role");
+    expectLine("zolazun gwaezuduyel", "z-Olazun | g-using-agent-teach");
+    expectLine("zolazun gwoezuduyel", "z-Olazun | g-toward-role-agent-teach");
+    expectLine("zolazun gwuezuduyel", "z-Olazun | g-outside-role-agent-teach");
     expectLine("zuzozen gunemuthuol blolazun", "z-Uzozen | [g-angry-th-except-pair | bl-Olazun]");
   });
 
@@ -541,10 +540,9 @@ describe("compareMorphGloss", () => {
   });
 
   it("role pointers gloss their role and event, not the referent", () => {
-    expectLine("zuzozen vowurel. zaxar vuhohol", "z-Uzozen | v-walk . z-←agent.same | v-sit");
-    expectLine("zuzozen vawebol daxer", "z-Uzozen | v-see | d-←agent.self");
-    expectLine("zuzozen zolazun zal vowurel. zaxarx vuhohol", "[z-Uzozen | z-Olazun | z-and] | v-walk . z-←agent.same-x | v-sit");
-    expectLine("zuzozen vowurel. zolazun theyemaxar velurul", "z-Uzozen | v-walk . z-Olazun | th-CLUES-←agent.same | v-departure");
+    expectLine("zuzozen vowurel. zwazar vuhohol", "z-Uzozen | v-walk . z-←episode-agent.same | v-sit");
+    expectLine("zuzozen vawebol dwazer", "z-Uzozen | v-see | d-←episode-agent.self");
+    expectLine("zuzozen zolazun zal vowurel. zwazarx vuhohol", "[z-Uzozen | z-Olazun | z-and] | v-walk . z-←episode-agent.same-x | v-sit");
   });
 
   it("quasi numeric derivation is English", () => {

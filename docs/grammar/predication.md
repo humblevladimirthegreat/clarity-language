@@ -377,17 +377,17 @@ A label with no scope vowel says nothing about how far it reaches. Use one when 
 | **`tho`** | this pair: true in one relationship | *a stranger to Uzozen*, *lying, as far as Olazun is concerned* | **o** ≈ one (that extra one) |
 | **`thu`** | a type across scenes: the quality follows them | *an anxious type*, *a teacher type* | **u** ≈ undo (not only here) |
 
-Mid-word **`th`** with a scope vowel goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root or a role compound. It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zuwothal` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead.
+Mid-word **`th`** with a scope vowel goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root. It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zuwothal` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead. A [role compound](roles.md#one-time-or-a-practice) writes the same vowels after **`w`**, not after **`th`**.
 
 To say **when** that claim counts (*only at school*, *always except when it rains*), put a [restrictor](restrictors.md) on `/w/` immediately before a scoped `/ɡ/` word, with the circumstance words on `/w/` too. The scope vowel says what kind of claim the label is; the restrictor says on which occasions it holds. A restrictor on **`/h/`** limits the whole sentence instead (*walks only when it rains*), not the label.
 
-> `zolazun wanurul wal gaxuduyethel.`
+> `zolazun wanurul wal gwezuduyel.`
 >
-> z-Olazun | [w-night | w-only-when | g-agent-x-teach-th-role]
+> z-Olazun | [w-night | w-only-when | g-role-agent-teach]
 >
 > "Olazun is a teacher only at night."
 
-**Compare with:** **`hual`** / **`wual`** says the claim holds at every time. **`thu`** says you are treating them as that type across scenes, which can still have exceptions. **`wual gaxuduyethel`** is the practiced role at every time, and **`gaxuduyethul`** is the type-claim. Using both together doubles down.
+**Compare with:** **`hual`** / **`wual`** says the claim holds at every time. **`thu`** says you are treating them as that type across scenes, which can still have exceptions. **`wual gwezuduyel`** is the practiced role at every time, and **`ganumuthul`** is the type-claim. Using both together doubles down.
 
 #### This episode (`tha`) {#scope-occasion}
 
@@ -399,13 +399,13 @@ To say **when** that claim counts (*only at school*, *always except when it rain
 
 #### Practiced role (`the`) {#scope-occupation}
 
-> `zolazun gaxuduyethel.`
+> `zuzozen valamuthel.`
 >
-> z-Olazun | g-agent-x-teach-th-role
+> z-Uzozen | v-lie-th-role
 >
-> "Olazun is a teacher."
+> "Uzozen lies as their craft."
 
-On a verb, **`the`** is that act as their practice, not one outing: `zuzozen valamuthel` is *Uzozen lies as their craft*.
+On a verb, **`the`** is that act as their practice, not one outing.
 
 **Compare with:** *usually* / *often* is a [restrictor](restrictors.md) (`huam`, `war`). **`thu`** is the type-claim (*a lying type*), which is not a practiced role.
 
@@ -427,6 +427,8 @@ On a verb, **`the`** is that act as their practice, not one outing: `zuzozen val
 
 With no `/b/`, the party is unstated: *a stranger (to someone)*.
 
+On a [role compound](roles.md#one-time-or-a-practice) the same vowel sits after **`w`**: `gwozuduyel blolazun` is *is a teacher to Olazun*.
+
 #### Type across scenes (`thu`) {#scope-type}
 
 > `zolazun ganumuthul.`
@@ -435,23 +437,19 @@ With no `/b/`, the party is unstated: *a stranger (to someone)*.
 >
 > "Olazun is an anxious type."
 
+On a [role compound](roles.md#one-time-or-a-practice) the same vowel sits after **`w`**: `zwuzuduyel` is *a teacher type*.
+
 #### On a role compound {#scope-role}
 
-A [role compound](roles.md#role-compounds) takes the same seam after its stem, which scopes the role, not the act. A bare role compound leaves the reach unsaid (`gaxuduyel`, *one who teaches*). **`the`** makes it the usual role: `gaxuduyethel` is *is a teacher*. **`tha`** keeps it to this time (`gaxuduyethal`). **`thu`** is a teacher type, and **`tho`** takes its `/b/` like any other `/ɡ/`.
+These are the same vowels, written right after **`w`** on a [role compound](roles.md#role-compounds): there they scope the role, not the act. `gwezuduyel` is *is a teacher*, `gwazuduyel` *is one who teaches (this time)*, and `zwuzuduyel` *a teacher type*.
 
-> `zolazun gaxuduyethal.`
+> `zwuzuduyel varuvel.`
 >
-> z-Olazun | g-agent-x-teach-th-episode
->
-> "Olazun is the teacher this time."
-
-> `zaxuduyethul varuvel.`
->
-> z-agent-x-teach-th-type | v-run
+> z-type-agent-teach | v-run
 >
 > "A teacher type runs."
 
-A role compound carries one seam, so it takes this scope or the ability vowel, not both. Scope on the stem alone (`vuduyethal`) scopes the teaching.
+A role word takes no **`th`** seam after its stem: its scope is written once, at the front. Scope on a plain verb stem (`vuduyethal`) scopes the teaching.
 
 #### Stacked scope {#scope-stacks}
 
@@ -473,15 +471,15 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > "As far as Olazun is concerned, Uzozen lied this once."
 
-> `zuwon gaxuduyethael.`
+> `zuwon gwaezuduyel.`
 >
-> z-speaker | g-agent-x-teach-th-using
+> z-speaker | g-using-agent-teach
 >
 > "I'm using the teacher role as a tool."
 
-> `zolazun gaxuduyethoel.`
+> `zolazun gwoezuduyel.`
 >
-> z-Olazun | g-agent-x-teach-th-toward-role
+> z-Olazun | g-toward-role-agent-teach
 >
 > "Olazun is becoming a teacher."
 
@@ -497,13 +495,49 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > "Uzozen is an angry type, except with Olazun."
 
-> `zuwon gaxuduyethuel.`
+> `zuwon gwuezuduyel.`
 >
-> z-speaker | g-agent-x-teach-th-outside-role
+> z-speaker | g-outside-role-agent-teach
 >
 > "I am not speaking as a teacher."
 
-**`thao`** and **`thuo`** take `/b/` the same way **`tho`** does. **`thue`** means speaking off duty or refusing that role, not *fake teacher*.
+> `zuzozen gwaozuduyel blolazun.`
+>
+> z-Uzozen | [g-on-pair-agent-teach | bl-Olazun]
+>
+> "Uzozen is a teacher to Olazun this time."
+
+> `zwuazuduyel varuvel.`
+>
+> z-except-episode-agent-teach | v-run
+>
+> "A teacher type, except this time, runs."
+
+> `zuzozen gwuozuduyel blolazun.`
+>
+> z-Uzozen | [g-except-pair-agent-teach | bl-Olazun]
+>
+> "Uzozen is a teacher type, except with Olazun."
+
+> `zuzozen valamuthael.`
+>
+> z-Uzozen | v-lie-th-using
+>
+> "Uzozen is using lying as a tool."
+
+> `zolazun valamuthoel.`
+>
+> z-Olazun | v-lie-th-toward-role
+>
+> "Olazun is becoming a liar."
+
+> `zuwon valamuthuel.`
+>
+> z-speaker | v-lie-th-outside-role
+>
+> "I am not lying in that capacity."
+
+**`thao`** and **`thuo`** take `/b/` the same way **`tho`** does. **`thue`** means speaking off duty or refusing that role, not *fake teacher*. The same pairs on a role compound write the vowels after **`w`**.
 
 ### Practice {#intermediate-practice}
 
@@ -568,20 +602,20 @@ z-Olazun | [g-same | bl-Uzozen]
 z-Ahelan | g-angry-th-episode
 :::
 
-**5.** *Uzozen is a teacher.* (a practiced role)
+**5.** *Uzozen is a teacher to Olazun.*
 
 ::: details Show answer
-`zuzozen gaxuduyethel.`
+`zuzozen gwozuduyel blolazun.`
 
-z-Uzozen | g-agent-x-teach-th-role
+z-Uzozen | [g-pair-agent-teach | bl-Olazun]
 :::
 
-**6.** *As far as Olazun is concerned, Ahelan is lying.*
+**6.** *As far as Olazun is concerned, Ahelan lied this once.*
 
 ::: details Show answer
-`zahelan valamuthol blolazun.`
+`zahelan valamuthaol blolazun.`
 
-z-Ahelan | [v-lie-th-pair | bl-Olazun]
+z-Ahelan | [v-lie-th-on-pair | bl-Olazun]
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
@@ -618,18 +652,18 @@ z-Ahelan | v-lie-th-episode
 *Ahelan lied this once.*
 :::
 
-**5.** `zaxuduyethul duvogal vawebol.`
+**5.** `zwuzuduyel duvogal vawebol.`
 
 ::: details Show answer
-z-agent-x-teach-th-type | d-frame | v-see
+z-type-agent-teach | d-frame | v-see
 
 *A teacher type sees a frame.*
 :::
 
-**6.** `zolazun gaxuduyethoel.`
+**6.** `zolazun gwoezuduyel.`
 
 ::: details Show answer
-z-Olazun | g-agent-x-teach-th-toward-role
+z-Olazun | g-toward-role-agent-teach
 
 *Olazun is becoming a teacher.*
 :::

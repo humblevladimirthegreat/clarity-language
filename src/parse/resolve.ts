@@ -15,7 +15,7 @@ import type {
   ParseResult,
   PointerVowel,
   ResolveInfo,
-  RoleVowel,
+  RolePart,
   SharedRecord,
   SharedRole,
   TagVowel,
@@ -40,7 +40,7 @@ type Antecedent =
 type Filler = { words: LexWord[]; join?: LexWord };
 
 /** One predicate and the participants a role pointer can read from its clause (pronouns.md#role-pointers). */
-type Anchor = { predicate: LexWord; fillers: Partial<Record<RoleVowel, Filler>> };
+type Anchor = { predicate: LexWord; fillers: Partial<Record<RolePart, Filler>> };
 
 /** An open clause: its own anchor (absent with no predicate) and how many anchors came before it. */
 type OpenClause = { anchor?: Anchor; before: number };
@@ -214,18 +214,19 @@ function isRoleAnaphor(word: LexWord): boolean {
   return word.family.kind === "x" && word.family.xFamily === "role" && word.ending === "r";
 }
 
-/** A role pointer, on its own, in a holder seam's holder slot (`thunemaxar`), or as a lateral's facing anchor (`hewezathaxar`). */
 function isPointer(word: LexWord): boolean {
-  const family = word.family;
-  if (family.kind !== "x") return false;
-  if (family.xFamily === "pointer") return true;
-  return (family.xFamily === "holder" || family.xFamily === "lateral") && family.pointerVowel !== undefined;
+  return word.family.kind === "x" && word.family.xFamily === "pointer";
 }
 
-/** A holder's own **-r** resumes the person whose view it is (`thevemazawar`, knowing.md#holder). */
+/**
+ * The person a seam's own **-r** resumes: a holder's (`thevemazawar`, knowing.md#holder) or a viewpoint lateral's facing
+ * anchor (`howuhethuzozer`, roles.md#viewpoint-laterals).
+ */
 function holderRoots(word: LexWord): string[] {
   const family = word.family;
-  return family.kind === "x" && family.xFamily === "holder" ? (family.rightRoots ?? []) : [];
+  if (family.kind !== "x") return [];
+  if (family.xFamily === "holder" || (family.xFamily === "lateral" && !family.landmark)) return family.rightRoots ?? [];
+  return [];
 }
 
 function isContentAnaphor(word: LexWord): boolean {
@@ -352,9 +353,9 @@ function enterLeft(ctx: Ctx, utterance: Utterance): void {
 function bindRole(ctx: Ctx, pronoun: LexWord): void {
   const family = pronoun.family;
   const stem = roleStem(pronoun);
-  const roleVowel = family.kind === "x" ? family.roleVowel : undefined;
+  const part = family.kind === "x" ? family.part : undefined;
   const antecedent = bindLatest(ctx.antecedents, (item) => item.kind === "roleFrame" && item.stem === stem);
-  ctx.anaphors.push({ pronoun, kind: "role", roleVowel, antecedent });
+  ctx.anaphors.push({ pronoun, kind: "role", part, antecedent });
 }
 
 // ── Role pointers (pronouns.md#role-pointers) ──────────────────────────────
@@ -398,12 +399,12 @@ function anchorOf(clause: Clause): Anchor | undefined {
         const filler = npFiller(unit.coord);
         if (!filler) return;
         if (unit.coord.level === "z") {
-          fillers.a ??= filler;
+          fillers.z ??= filler;
           // A join with a shared `/ɡ/` and no verb (`zazawan zalahen zel gamadam`): the `/ɡ/` is the predicate.
           const shared = unit.coord.parts.flatMap((part) => part.shared).find(isSharedGPackage);
           if (shared && !isScaleShared(shared)) sharedPredicate ??= { word: shared.word, hosted: shared.hosted };
         }
-        else if (unit.coord.level === "d") fillers.u ??= filler;
+        else if (unit.coord.level === "d") fillers.d ??= filler;
         else if (clause.units[index - 1]?.kind !== "hook") unhosted ??= filler;
         return;
       }
@@ -413,7 +414,7 @@ function anchorOf(clause: Clause): Anchor | undefined {
   const predicate = verb ?? gPredicate?.word;
   if (!predicate) return undefined;
   const extra = verb ? unhosted : hostedFiller(gPredicate?.hosted);
-  if (extra) fillers.o = extra;
+  if (extra) fillers.b = extra;
   return { predicate, fillers };
 }
 
@@ -445,9 +446,9 @@ function fillerWord(filler: Filler): LexWord {
 function bindPointer(ctx: Ctx, pronoun: LexWord): void {
   const family = pronoun.family;
   if (family.kind !== "x") return;
-  const roleVowel = family.roleVowel!;
+  const part = family.part!;
   const pointerVowel: PointerVowel = family.pointerVowel!;
-  const bind: AnaphorBind = { pronoun, kind: "pointer", roleVowel, pointerVowel };
+  const bind: AnaphorBind = { pronoun, kind: "pointer", part, pointerVowel };
   ctx.anaphors.push(bind);
   const open = ctx.clauses.at(-1);
   const earlier = ctx.anchors.slice(0, open?.before ?? ctx.anchors.length).reverse();
@@ -456,28 +457,28 @@ function bindPointer(ctx: Ctx, pronoun: LexWord): void {
   let filler: Filler | undefined;
   if (pointerVowel === "e") {
     anchor = open?.anchor;
-    filler = anchor?.fillers[roleVowel];
+    filler = anchor?.fillers[part];
     if (filler?.words.includes(pronoun)) {
       bind.ownSlot = true;
       return;
     }
   } else if (pointerVowel === "u") {
-    anchor = earlier.find((item) => !item.fillers[roleVowel]);
+    anchor = earlier.find((item) => !item.fillers[part]);
   } else {
-    const filled = earlier.filter((item) => item.fillers[roleVowel]);
+    const filled = earlier.filter((item) => item.fillers[part]);
     anchor = filled[0];
     if (pointerVowel === "o" && anchor) {
-      const same = fillerKey(ctx, anchor.fillers[roleVowel]!);
-      anchor = filled.find((item) => fillerKey(ctx, item.fillers[roleVowel]!) !== same);
+      const same = fillerKey(ctx, anchor.fillers[part]!);
+      anchor = filled.find((item) => fillerKey(ctx, item.fillers[part]!) !== same);
     }
-    filler = anchor?.fillers[roleVowel];
+    filler = anchor?.fillers[part];
   }
   if (!anchor) return;
   if (pointerVowel !== "u" && !filler) return;
   bind.antecedent = filler ? fillerWord(filler) : anchor.predicate;
   // A new one or a share is its own referent, never the earlier filler's (pronouns.md#a-new-one).
   if (pronoun.ending !== "r") ctx.referents.set(pronoun, `${pronoun.ending}:${pronoun.at ?? -1}`);
-  else ctx.referents.set(pronoun, filler ? fillerKey(ctx, filler) : `${roleVowel}@${anchor.predicate.at ?? -1}`);
+  else ctx.referents.set(pronoun, filler ? fillerKey(ctx, filler) : `${part}@${anchor.predicate.at ?? -1}`);
 }
 
 // ── Tag pronouns (pronouns.md#tag-pronouns) ────────────────────────────────
@@ -536,7 +537,7 @@ function recallTag(ctx: Ctx, word: TagWord): void {
   const open = ctx.clauses.at(-1);
   const earlier = ctx.anchors.slice(0, open?.before ?? ctx.anchors.length).reverse();
   for (const anchor of earlier) {
-    const fillers = Object.entries(anchor.fillers) as [RoleVowel, Filler][];
+    const fillers = Object.entries(anchor.fillers) as [RolePart, Filler][];
     const found = tagged.map((binding) => {
       for (const [role, filler] of fillers) {
         const hit = fillerHas(ctx, filler, binding.key);
@@ -545,10 +546,10 @@ function recallTag(ctx: Ctx, word: TagWord): void {
       return undefined;
     });
     if (found.some((item) => !item)) continue;
-    const parts = found as { role: RoleVowel; word: LexWord }[];
+    const parts = found as { role: RolePart; word: LexWord }[];
     bind.antecedent = parts[0]!.word;
     if (pair) bind.antecedents = parts.map((part) => part.word);
-    else bind.roleVowel = parts[0]!.role;
+    else bind.part = parts[0]!.role;
     // A share is the part in that event, its own referent (pronouns.md#share).
     ctx.referents.set(word, `m:${word.at ?? -1}`);
     return;

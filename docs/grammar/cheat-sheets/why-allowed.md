@@ -109,7 +109,7 @@ The scale runs **-l** most settled, **-m** the default, **-r** most passing. Whe
 | [Costly now, good later](../sakes.md#sake-changeability) | `zanal godothur guwathal.` | *My book is a slog for now, but builds lasting competence.* | B |
 | [On the event](../sakes.md#word-shape) | `zuzozen vezuyel thuwatham.` | *Uzozen talks, and that boosts my confidence.* | B |
 | [Not your noun](../sakes.md#personal-possession): `goyem` | `zabowam wunathur goyem.` | *the gathering, passing harm to autonomy* | B |
-| [Ought](../sakes.md#sake-force) | `zuzozen vezuyel thawothem blaxer.` | *Uzozen ought to talk; it would help them feel connected.* (unasked advice) | I |
+| [Ought](../sakes.md#sake-force) | `zuzozen vezuyel thawothem blwazer.` | *Uzozen ought to talk; it would help them feel connected.* (unasked advice) | I |
 | [Motive](../sakes.md#sake-preference) | `zuwon vezuyel thawothom.` | *I talk to feel connected.* | I |
 | [Whose stake](../sakes.md#whose-stake): the person in `/b/` | `zuzozen vezuyel thawothom blolazun.` | *Uzozen talks for Olazun's sake.* | I |
 | [Not your noun, their stake](../sakes.md#whose-stake) | `zewal gawothal blolazun.` | *My gift serves Olazun's relatedness.* | I |

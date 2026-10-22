@@ -7,14 +7,14 @@ import { retieCore } from "./rebuild.js";
 
 /**
  * Respell an overlay sense form through the word grammar, the same way the docs are retied:
- * `uxerenel` (role vowel + `x` + root) keeps its role vowel and moves only the root.
+ * `waderenel` (`w` + scope + part + root) keeps its scope and part and moves only the root.
  * `null` when the form does not spell `oldRoot` where the parser finds it.
  */
 export function retieSenseForm(senseForm: string, pos: string, oldRoot: string, newRoot: string): string | null {
   if (!oldRoot || oldRoot === newRoot) {
     return senseForm;
   }
-  // Parsed with its PoS, as it is written in a sentence (a bare `uxerenel` is not a word).
+  // Parsed with its PoS, as it is written in a sentence (a bare `waderenel` is not a word).
   const next = retieCore(`${pos}${senseForm}`, new Map([[oldRoot, newRoot]]));
   return next?.startsWith(pos) ? next.slice(pos.length) : null;
 }

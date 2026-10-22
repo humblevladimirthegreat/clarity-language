@@ -16,7 +16,7 @@
 import { overlayConstructionId } from "./construction-trace.js";
 import type { TokenBranch } from "./tokens.js";
 import type { ExtraNounHook } from "./hook-compounds.js";
-import type { AnaphorKind, Ending, LexReading, MorphWordFamily, PointerVowel, Pos, RoleVowel, XFamily } from "./types.js";
+import type { AnaphorKind, Ending, LexReading, MorphWordFamily, PointerVowel, Pos, RolePart, ScopeVowel, XFamily } from "./types.js";
 
 /**
  * `summary` is for maintainers (Agebon terms allowed). `reader`, when set, explains the
@@ -30,8 +30,13 @@ const BAR_READER =
   "A `th-` word (or an intention `h-` word) inside a ranking bracket, right before the rank word, is what the item is ranked against: `[z-X | th-plan-itinerary | z-rank/more | b-later] | v-departure` = X leaves later than planned; a pattern there = than usual (`rank/less | g-strength` = less strong than usual); a permission there = than allowed. The same word outside the bracket covers the whole sentence.";
 
 /** Shared by every label-scope seam vowel (predication.md#label-scope). */
-const SCOPE_READER =
-  "`-th-` plus a scope word after a label or a `ROLE-x-verb` says how far the label reaches: `-th-episode` this time only, `-th-role` as their practiced role (`g-agent-x-teach-th-role` = is a teacher), `-th-pair` toward one `b-` party only, `-th-type` the kind of person they are, `-th-on-pair` this time toward that party, `-th-using` using the role as a tool, `-th-toward-role` becoming one (not wanting to be), `-th-except-episode` / `-th-except-pair` that type except this time / with that party, `-th-outside-role` not in that capacity.";
+const SCOPE_WORDS =
+  "`episode` this time only, `role` as their practiced role, `pair` toward one `b-` party only, `type` the kind of person they are, `on-pair` this time toward that party, `using` using the role as a tool, `toward-role` becoming one (not wanting to be), `except-episode` / `except-pair` that type except this time / with that party, `outside-role` not in that capacity";
+
+const SCOPE_READER = `\`-th-\` plus a scope word after a label says how far the label reaches: ${SCOPE_WORDS}.`;
+
+const ROLE_READER =
+  `A role word \`SCOPE-PART-verb\` names one part of the verb's event: \`agent\` the one who does it, \`patient\` what it acts on or makes, \`recipient\` the one it is given or told to, or the other party of a relation. The scope word first says how far the label reaches: ${SCOPE_WORDS}. \`z-episode-agent-teach\` = someone who teaches (this time), \`z-role-agent-teach\` = a teacher, \`g-role-agent-teach\` = is a teacher.`;
 
 /** Sentence grammar: `rule.childKey` (sub-rule, token type, or LABEL). */
 export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
@@ -224,8 +229,13 @@ export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = 
 };
 
 export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
-  role: { anchor: "roles.md#role-compounds", summary: "role compound" },
-  pointer: { anchor: "pronouns.md#role-pointers", summary: "role pointer" },
+  role: { anchor: "roles.md#role-compounds", summary: "role compound", reader: ROLE_READER },
+  pointer: {
+    anchor: "pronouns.md#role-pointers",
+    summary: "role pointer",
+    reader:
+      "`←SCOPE-PART.WHICH` is a pointer: the participant who had that part in an earlier event. `.same` the latest event with that part filled, `.other` the nearest one with someone else in it, `.self` this sentence's own, `.unsaid` the one whose filler was left unsaid. `.new` is a new one of that participant's kind, `.part` that participant's part in the event (what they did or had done to them). `z-←episode-agent.same` = they (the latest doer); `d-←episode-agent.self` = themself.",
+  },
   sake: {
     anchor: "sakes.md#met",
     summary: "sake word",
@@ -237,13 +247,13 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
     anchor: "roles.md#viewpoint-laterals",
     summary: "viewpoint lateral",
     reader:
-      "A direction joined by `-th-` to a person or pointer is a side of that one's facing, not a compass point: north-th = ahead of them, south-th = behind, west-th = on their left, east-th = on their right (`h-west-th-X` = on X's left). `-th-landmark` with a `bl-` noun is that thing's own front: `[g-north-th-landmark | bl-car]` = in front of the car. A bare direction is the compass point.",
+      "A direction joined by `-th-` to a person (or `←X`, one already named) is a side of that one's facing, not a compass point: north-th = ahead of them, south-th = behind, west-th = on their left, east-th = on their right (`h-west-th-X` = on X's left). `-th-landmark` with a `bl-` noun is that thing's own front: `[g-north-th-landmark | bl-car]` = in front of the car. A bare direction is the compass point.",
   },
   holder: {
     anchor: "knowing.md#holder",
     summary: "holder seam",
     reader:
-      "`th-TAG-X` (a stance tag joined to a person X, or to a `←` pointer): the sentence gives that person's view, and the tag says how the speaker knows it. `th-CLUES-X` = I gather X thinks …; `th-MAY-X` = maybe X thinks …. Every other `th-` word in that sentence (a want, plan, decision, or feeling) is then X's, not the speaker's: `th-WANT-unstated | th-CLUES-X` = I gather X wants …; a feeling word with `th-CLUES-listener` = it sounds like you feel that.",
+      "`th-TAG-X` (a stance tag joined to a person X, or `←X`, one already named): the sentence gives that person's view, and the tag says how the speaker knows it. `th-CLUES-X` = I gather X thinks …; `th-MAY-X` = maybe X thinks …. Every other `th-` word in that sentence (a want, plan, decision, or feeling) is then X's, not the speaker's: `th-WANT-unstated | th-CLUES-X` = I gather X wants …; a feeling word with `th-CLUES-listener` = it sounds like you feel that.",
   },
   ability: { anchor: "compounds.md#conversation-length", summary: "ability compound" },
   numeric: { anchor: "numeric-derivation.md#numeric-derivation", summary: "numeric derivation" },
@@ -561,25 +571,36 @@ export const SPAN_FEATURE_CONSTRUCTIONS: Record<`mark.${"^@" | "@" | "~"}`, Cons
   "mark.~": { anchor: "spans.md#exact-paraphrase-proper", summary: "~ paraphrase span" },
 };
 
-/** Role compounds: role vowel and the -r instance (roles.md). */
-export const ROLE_FEATURE_CONSTRUCTIONS: Record<`vowel.${RoleVowel}` | "instance", ConstructionEntry> = {
-  "vowel.a": { anchor: "roles.md#role-compounds", summary: "agent a" },
-  "vowel.u": { anchor: "roles.md#the-undergoer-u", summary: "patient u" },
-  "vowel.o": { anchor: "roles.md#the-extra-b-party-o", summary: "recipient o" },
+/** Role words: the part consonant, the label scope after `w`, ability, and the -r instance (roles.md). */
+export const ROLE_FEATURE_CONSTRUCTIONS: Record<`part.${RolePart}` | `scope.${ScopeVowel}` | "ability" | "instance", ConstructionEntry> = {
+  "part.z": { anchor: "roles.md#role-compounds", summary: "agent z" },
+  "part.d": { anchor: "roles.md#the-undergoer-d", summary: "patient d" },
+  "part.b": { anchor: "roles.md#the-extra-b-party-b", summary: "recipient b" },
+  "scope.a": { anchor: "pronouns.md#role-pointers", summary: "this episode a" },
+  "scope.e": { anchor: "roles.md#one-time-or-a-practice", summary: "practiced role e" },
+  "scope.o": { anchor: "predication.md#scope-relative", summary: "this pair o" },
+  "scope.u": { anchor: "predication.md#scope-type", summary: "type across scenes u" },
+  "scope.ao": { anchor: "predication.md#scope-stacks", summary: "episode on this pair ao" },
+  "scope.ae": { anchor: "predication.md#scope-stacks", summary: "using the role ae" },
+  "scope.oe": { anchor: "predication.md#scope-stacks", summary: "toward the role oe" },
+  "scope.ua": { anchor: "predication.md#scope-stacks", summary: "type except this episode ua" },
+  "scope.uo": { anchor: "predication.md#scope-stacks", summary: "type except this pair uo" },
+  "scope.ue": { anchor: "predication.md#scope-stacks", summary: "not in that capacity ue" },
+  ability: { anchor: "intention.md#can-be-role-ability", summary: "role + ability: can be that role" },
   instance: { anchor: "roles.md#this-instance-r", summary: "-r this instance" },
 };
 
-/** Role pointers: which part the role vowel names, and which event the pointer vowel picks (pronouns.md#role-pointers). */
-export const POINTER_FEATURE_CONSTRUCTIONS: Record<`vowel.${PointerVowel}` | `role.${RoleVowel}` | "new" | "part", ConstructionEntry> = {
-  "role.a": { anchor: "pronouns.md#role-pointers", summary: "pointer to the doer" },
-  "role.u": { anchor: "pronouns.md#role-pointers", summary: "pointer to the undergoer" },
-  "role.o": { anchor: "pronouns.md#role-pointers", summary: "pointer to the extra party" },
+/** Role pointers: which part the consonant names, and which event the pointer vowel picks (pronouns.md#role-pointers). */
+export const POINTER_FEATURE_CONSTRUCTIONS: Record<`vowel.${PointerVowel}` | `part.${RolePart}` | "new" | "share", ConstructionEntry> = {
+  "part.z": { anchor: "pronouns.md#role-pointers", summary: "pointer to the doer" },
+  "part.d": { anchor: "pronouns.md#role-pointers", summary: "pointer to the undergoer" },
+  "part.b": { anchor: "pronouns.md#role-pointers", summary: "pointer to the extra party" },
   "vowel.a": { anchor: "pronouns.md#role-pointers", summary: "same: the latest predicate with that role" },
   "vowel.o": { anchor: "pronouns.md#the-other-one", summary: "other: the nearest predicate with someone else in that role" },
   "vowel.e": { anchor: "pronouns.md#themself", summary: "self: this clause's predicate" },
   "vowel.u": { anchor: "pronouns.md#whoever-it-was", summary: "unsaid: the latest predicate that left that role unsaid" },
   new: { anchor: "pronouns.md#a-new-one", summary: "-l a new one of the participant's kind" },
-  part: { anchor: "pronouns.md#share", summary: "-m the participant's part in the event" },
+  share: { anchor: "pronouns.md#share", summary: "-m the participant's part in the event" },
 };
 
 function prefixed(prefix: string, entries: Record<string, ConstructionEntry>): [string, ConstructionEntry][] {
@@ -709,7 +730,7 @@ export const REJECTIONS = {
   holderSeamW: { anchor: "knowing.md#holder", summary: "a tag is never a holder: the seam letter before `w` would end a syllable mid-word (D-56); for a holder you don't name, name the kind of person (`theyemeyol`)" },
   numberPlural: { anchor: "numbers-applied.md#plural-labels", summary: "a number takes -x only as a plural label (z_90x)" },
   resumeUnbound: { anchor: "pronouns.md#resume-r", summary: "an -r resume spells an earlier word's whole stem, or a lexicon stem" },
-  pointerSlot: { anchor: "pronouns.md#role-pointers", summary: "a role pointer fills /z/, /d/, /b/, a holder seam's holder slot, or a viewpoint lateral's facing anchor" },
+  pointerSlot: { anchor: "pronouns.md#role-pointers", summary: "a role pointer fills /z/, /d/, or /b/; in a holder seam or a viewpoint lateral, resume the person instead" },
   pointerUnbound: { anchor: "pronouns.md#role-pointers", summary: "a role pointer needs an earlier predicate with that role filled (o: with someone else in it; u: with that role unsaid)" },
   pointerShareSelf: { anchor: "pronouns.md#share", summary: "a share (-m) never takes the self vowel (e): it would name a part in the very event being described" },
   pointerSharePlural: { anchor: "pronouns.md#share", summary: "a share (-m) is a part, not a group of people, so it takes no -x" },
@@ -740,7 +761,6 @@ export const REJECTIONS = {
   channelOffsetSign: { anchor: "knowing.md#dated-channel", summary: "MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one" },
   retiredChannelRoot: { anchor: "knowing.md#evidentiality", summary: "/th/ on the record or scroll root is not a channel: a record or document is REPORTED with the source in /b/, footage is LIVE or MEMORY with the device in /b/, a schedule is PLAN, and a tale is NOTIONAL" },
   retiredDeonticRoot: { anchor: "sakes.md#say-words", summary: "/th/ on the green, no-entry, or memo root is no stance: permission, a ban, and a requirement are say words on /h/ (`hwavam`, `hwavul`, `hwavem`)" },
-  saySlot: { anchor: "sakes.md#say-words", summary: "a say word fills /h/ only: whose say it is concerns the whole clause" },
   sayHost: { anchor: "sakes.md#say-words", summary: "a bl- word after a say word names someone over the act (v), or the one party under pair scope o; a participant's say needs no bl- word" },
   saySpeaker: { anchor: "sakes.md#say-words", summary: "a bare v say word on -m is the speaker saying so, so in a statement where the speaker is a participant name whose say it is: the rules (hwavel), a person (hwavem bl-), custom (hwaver), or the speaker's own part (hwazem)" },
   poleOffsetWarrant: { anchor: "knowing.md#dated-channel", summary: "a signed offset on a time pole needs a command, request, PLAN, or channel in its clause" },

@@ -4,9 +4,11 @@
     vo: "6", re: "7", lu: "8", na: "9", mo: "0",
   };
 
-  // Role + ability (`gaxedegexal` *fit to be a teacher*) is classification only: `/ɡ/`.
-  function roleAbilityPosOk(pos, body) {
+  // Role + ability (`gwezuduyexal` *can be a teacher*) is classification only: `/ɡ/`. On `/h/` the pointer shape is a
+  // say word's (`hwazam`), never a pointer.
+  function bodyPosOk(pos, body) {
     const f = body.family;
+    if (f && f.kind === "x" && f.xFamily === "pointer" && pos === "h") return false;
     return !(f && f.kind === "x" && f.xFamily === "role" && f.stanceVowel) || pos === "g";
   }
 
@@ -216,7 +218,7 @@ probe_prefixedX
         family: body.family,
       });
     }
-  / pos:Pos body:xWord &{ return roleAbilityPosOk(pos, body); } EOF {
+  / pos:Pos body:xWord &{ return bodyPosOk(pos, body); } EOF {
       return makeWord(text(), {
         pos,
         ending: body.ending,
@@ -559,7 +561,15 @@ prefixedWord
         family: body.family,
       });
     }
-  / pos:Pos body:PrefixedBody &{ return roleAbilityPosOk(pos, body); } {
+  / "h" body:sayWord {
+      return makeWord(text(), {
+        pos: "h",
+        ending: body.ending,
+        plural: body.plural,
+        family: body.family,
+      });
+    }
+  / pos:Pos body:PrefixedBody &{ return bodyPosOk(pos, body); } {
       return makeWord(text(), {
         pos,
         ending: body.ending,
@@ -570,7 +580,6 @@ prefixedWord
 
 PrefixedBody
   = tagWord
-  / sayWord
   / xWord
   / plainContent
   / hookCompound
@@ -593,7 +602,7 @@ tagWord
 // ── Say words (sakes.md#say-words) ───────────────────────────────────────────
 
 // `w` + label scope + whose say (`z` / `d` / `b` / `v`) + answer vowel + **-l** / **-m** / **-r** (`hwavam`, `hwadum`).
-// A consonant after the scope keeps it apart from a tag (`zwar`). enforce.ts keeps it on `/h/`.
+// A consonant after the scope keeps it apart from a tag (`zwar`). Only on `/h/`: elsewhere the shape is a role pointer's.
 sayWord
   = "w" scope:SeamVowel part:[zdbv] answer:[aeou] ending:[lmr] plural:PluralSuffix? WordEnd {
       return {
@@ -614,34 +623,37 @@ xWord
   / NumericDerivation
   / OrdinaryCompound
 
-// Role pointer: role vowel(s) + `x` + pointer vowel + **-r** / **-l** / **-m** (`zaxar`, `zaxal`, `zaxam`;
-// pronouns.md#role-pointers). The pointer vowel picks the event: `a` same, `o` other, `e` self, `u` unsaid.
-// **-r** names the participant, **-l** a new one of its kind, **-m** its part in the event.
+// Role pointer: `w` + label scope + part consonant + pointer vowel + **-r** / **-l** / **-m** (`zwazar`, `dwadal`,
+// `dwazam`; pronouns.md#role-pointers). The pointer vowel picks the event: `a` same, `o` other, `e` self, `u` unsaid.
+// **-r** names the participant, **-l** a new one of its kind, **-m** its part in the event. Then the word ends;
+// a compound's stem goes on (`zwazar` against `zwazarayel`).
 RolePointer
-  = roleV:[auo] "x" pointerV:[aeou] end:[rlm] plural:PluralSuffix? WordEnd {
+  = "w" scope:SeamVowel part:RolePart pointerV:[aeou] end:[rlm] plural:PluralSuffix? WordEnd {
       return {
         ending: end,
         plural: !!plural,
         family: xFamily("pointer", {
           leftRoots: [],
-          roleVowel: roleV,
+          scopeVowel: scope,
+          part,
           pointerVowel: pointerV,
         }),
       };
     }
 
-// The stem may itself be an ordinary compound (`zaxodogaxowogal` *dog walker*, roles.md#role-compounds).
-// Optional tail: ability (`x` + stance vowel) on `/ɡ/` only (*fit to be* that role, intention.md § Ability),
-// or label scope (`th` + scope vowel, predication.md#label-scope); one seam per word.
+// Role compound: `w` + label scope + part consonant + stem + ending (`zwazuduyel`, roles.md#role-compounds). The stem
+// may itself be an ordinary compound (`zwazudozoxowurel` *someone who walks dogs*). Optional tail: ability (`x` +
+// stance vowel) on `/ɡ/` only (`gwezuduyexal` *can be a teacher*, intention.md#role-ability). Scope is written once,
+// at the front: no `th` seam after the stem.
 RoleCompound
-  = roleV:[auo] "x" root:ContentRoot rest:("x" r:ContentRoot { return r; })* tail:RoleTail? ending:Ending plural:PluralSuffix? WordEnd {
+  = "w" scope:SeamVowel part:RolePart root:ContentRoot rest:("x" r:ContentRoot { return r; })* ability:("x" v:[aeou] { return v; })? ending:Ending plural:PluralSuffix? WordEnd {
       const fields = {
         leftRoots: [],
-        roleVowel: roleV,
+        scopeVowel: scope,
+        part,
         rightRoots: [root, ...rest],
       };
-      if (tail && tail.ability) fields.stanceVowel = tail.ability;
-      if (tail && tail.scope) fields.scopeVowel = tail.scope;
+      if (ability) fields.stanceVowel = ability;
       return {
         ending,
         plural: !!plural,
@@ -649,9 +661,9 @@ RoleCompound
       };
     }
 
-RoleTail
-  = "x" v:[aeou] { return { ability: v }; }
-  / "th" v:SeamVowel { return { scope: v }; }
+// Part consonant: the slot the participant had in the event (roles.md#role-compounds).
+RolePart
+  = [zdb]
 
 // Simplex or stacked seam after mid-word `th` (sakes.md; predication.md#label-scope).
 SeamVowel
@@ -674,7 +686,7 @@ ValueCompound
     }
 
 // Viewpoint lateral: direction + `th` + whose facing counts (roles.md § Viewpoint laterals).
-// The anchor may be a role pointer on **-r** (`hewezathaxar` *on their left*).
+// **-r** resumes the anchor (`hewezathuzozer` *on Uzozen's left*).
 LateralCompound
   = dir:ContentRoot "th" anchor:CompoundHost ending:Ending plural:PluralSuffix? WordEnd {
       return {
@@ -683,18 +695,6 @@ LateralCompound
         family: xFamily("lateral", {
           leftRoots: [dir],
           rightRoots: anchor,
-        }),
-      };
-    }
-  / dir:ContentRoot "th" roleV:[auo] "x" pointerV:[aeou] "r" plural:PluralSuffix? WordEnd {
-      return {
-        ending: "r",
-        plural: !!plural,
-        family: xFamily("lateral", {
-          leftRoots: [dir],
-          rightRoots: [],
-          roleVowel: roleV,
-          pointerVowel: pointerV,
         }),
       };
     }
@@ -732,16 +732,6 @@ NumericDerivation
 
 OrdinaryCompound
   = left:ContentRoot "x" right:ContentRoot rest:("x" r:ContentRoot { return r; })* ending:NounEnding plural:PluralSuffix? WordEnd {
-      return {
-        ending,
-        plural: !!plural,
-        family: xFamily("compound", {
-          leftRoots: [left],
-          rightRoots: [right, ...rest],
-        }),
-      };
-    }
-  / left:[aeou] "x" right:[aeou] rest:("x" r:[aeou] { return r; })* ending:Ending plural:PluralSuffix? WordEnd {
       return {
         ending,
         plural: !!plural,

@@ -456,31 +456,31 @@ The ending says why you think the move is welcome. Use **-l** when the person in
 | `…them` | an unsolicited offer meant to serve the sake | *offered* | **-m** ≈ open offer |
 | `…ther` | a move worth trying, to see whether it serves the sake | *worth a try* | **-r** ≈ right now (a trial run) |
 
-A sake word with no `/b/` is about **your** sake, so advice for the other person's own good names them in a `bl-` word right after the sake word. In the same sentence, that is the [themself](pronouns.md#themself) pointer **`baxer`**. The `/b/` says whose stake the act serves, not why they would do it.
+A sake word with no `/b/` is about **your** sake, so advice for the other person's own good names them in a `bl-` word right after the sake word. In the same sentence, that is the [themself](pronouns.md#themself) pointer **`bwazer`**. The `/b/` says whose stake the act serves, not why they would do it.
 
-> `zuzozen vezuyel thawothem blaxer.`
+> `zuzozen vezuyel thawothem blwazer.`
 >
-> z-Uzozen | v-tell | [th-relatedness-ought-offered | bl-←agent.self]
+> z-Uzozen | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
 >
 > "Uzozen ought to talk; it would help them feel connected." (unasked advice)
 
-> `zahelan vezuyol thobathel blaxer.`
+> `zahelan vezuyol thobathel blwazer.`
 >
-> z-Ahelan | v-sing | [th-physical-ought-invited | bl-←agent.self]
+> z-Ahelan | v-sing | [th-physical-ought-invited | bl-←episode-agent.self]
 >
 > "Ahelan ought to sing; it's good for their health." (Ahelan asked for advice)
 
-> `zolazun vabuyel thawother blaxer.`
+> `zolazun vabuyel thawother blwazer.`
 >
-> z-Olazun | v-bow | [th-relatedness-ought-trial | bl-←agent.self]
+> z-Olazun | v-bow | [th-relatedness-ought-trial | bl-←episode-agent.self]
 >
 > "Olazun could try bowing, to see whether it helps them feel connected."
 
 A move meant to **prevent** harm to the sake is a *so that … not* dependent ([so that](dependents.md#so-that)): **`hovam`** + **`blurl`**, then the outcome to keep off.
 
-> `zolazun vabuyel thawothem blaxer hovam blurl zuzozen velurul.`
+> `zolazun vabuyel thawothem blwazer hovam blurl zuzozen velurul.`
 >
-> z-Olazun | v-bow | [th-relatedness-ought-offered | bl-←agent.self] | [h-so-that | bl-lest-clause] | z-Uzozen | v-departure
+> z-Olazun | v-bow | [th-relatedness-ought-offered | bl-←episode-agent.self] | [h-so-that | bl-lest-clause] | z-Uzozen | v-departure
 >
 > "Olazun ought to bow to stay connected, so that Uzozen does not leave."
 
@@ -995,9 +995,9 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Uzozen ought to pray; it would help them feel connected.* (unasked advice)
 
 ::: details Show answer
-`zuzozen vobuyal thawothem blaxer.`
+`zuzozen vobuyal thawothem blwazer.`
 
-z-Uzozen | v-pray | [th-relatedness-ought-offered | bl-←agent.self]
+z-Uzozen | v-pray | [th-relatedness-ought-offered | bl-←episode-agent.self]
 :::
 
 **2.** *I kneel for a quick sense of purpose.*

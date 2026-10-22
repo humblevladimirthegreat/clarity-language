@@ -15,7 +15,7 @@ import {
   derivedHookGloss,
   readHookCompound,
 } from "./hook-compounds.js";
-import type { LexOverlay, LexReading, LexWord, MorphWord, PointerVowel, RoleVowel } from "./types.js";
+import type { LexOverlay, LexReading, LexWord, MorphWord } from "./types.js";
 import { CLOSED, closedDerived, withLexiconClosedRoots } from "../closed-roots.js";
 import { JOIN_SERIES } from "./series.js";
 
@@ -120,15 +120,6 @@ function overlaySenseForm(word: MorphWord): string | null {
     return family.series + ending;
   }
 
-  if (
-    family.kind === "x" &&
-    family.xFamily === "role" &&
-    family.leftRoots.length === 0 &&
-    family.rightRoots?.length === 1
-  ) {
-    return `${family.roleVowel}x${family.rightRoots[0]}${ending}`;
-  }
-
   return null;
 }
 
@@ -213,7 +204,6 @@ function isFenceJoin(word: MorphWord): boolean {
 /**
  * Open roots that belong in the published / compound / overlay inventories.
  * Closed families (joins, spans, numbers, foreign payloads) contribute none.
- * Vowel-only ordinary compounds are series letters, not lexicon hosts.
  */
 function hookCompoundLexiconRoots(
   word: MorphWord,
@@ -242,12 +232,7 @@ export function lexiconContentRoots(
         return family.rightRoots;
       }
       if (family.xFamily === "compound") {
-        const hosts = [...family.leftRoots, ...(family.rightRoots ?? [])];
-        // Vowel-only ordinary compounds (`xuxun`) are series letters, not lemmas.
-        if (hosts.every((root) => root.length === 1)) {
-          return [];
-        }
-        return hosts;
+        return [...family.leftRoots, ...(family.rightRoots ?? [])];
       }
       return family.leftRoots;
     case "hookCompound":
@@ -556,7 +541,6 @@ export const HOLDER_HOST_KINDS = new Set(["evidential", "may", "notional"]);
  */
 function holderSeam(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
   const family = word.family;
-  if (word.pos === "th" && family.kind === "x") return heldPointer(word, tables);
   if (word.pos !== "th" || family.kind !== "content" || family.roots.length !== 1) return undefined;
   const root = family.roots[0]!;
   if (tables.published.has(root)) return undefined;
@@ -585,27 +569,6 @@ export function isHolderSeamW(word: MorphWord, tables: ClassifyTables): boolean 
   if (!match) return false;
   const row = tables.overlays.get(overlayKey("th", `${match[1]}${match[2]}`));
   return !!row && HOLDER_HOST_KINDS.has(row.kind);
-}
-
-/**
- * A role pointer in the holder slot (`thunemaxar`, pronouns.md#role-pointers): HOST GRADE + role
- * vowel + `x` + pointer vowel + **-r**. The word grammar reads it as an ability shape (`unema` + `x` + `a`).
- */
-function heldPointer(word: MorphWord, tables: ClassifyTables): MorphWord | undefined {
-  const family = word.family;
-  if (family.kind !== "x" || word.ending !== "r" || family.leftRoots.length !== 1) return undefined;
-  if (family.xFamily !== "ability" || !(family.stanceVowel === "a" || family.stanceVowel === "e" || family.stanceVowel === "o")) return undefined;
-  const body = family.leftRoots[0]!;
-  const pointerVowel: PointerVowel = family.stanceVowel;
-  const match = /^(.+)([lmr])([auo])$/.exec(body);
-  if (!match) return undefined;
-  const [, host, grade, roleVowel] = match as unknown as [string, string, "l" | "m" | "r", RoleVowel];
-  const row = tables.overlays.get(overlayKey("th", `${host}${grade}`));
-  if (!row || !HOLDER_HOST_KINDS.has(row.kind)) return undefined;
-  return {
-    ...word,
-    family: { kind: "x", xFamily: "holder", leftRoots: [host], rightRoots: [], grade, roleVowel, pointerVowel },
-  };
 }
 
 /**

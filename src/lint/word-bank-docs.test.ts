@@ -143,7 +143,7 @@ ${drills.map((d, i) => `**${i + 1}.** *…*\n\n::: details Show answer\n\`${d}\`
 
   it("matches roots, not spellings: other roles, full-root resumes, role compounds", () => {
     const rows = ["*Uzozen* | `uzozen`", "*tell* | `vezuyel`", "*run* | `aruvel`", "*dog* | `udozol`", "*scream* | `varemul`"];
-    const md = page(rows, ["zuzozen vezuyel. zoxezuyer varuvel.", "zudozol varuvel. zudozor varemul."]);
+    const md = page(rows, ["zuzozen vezuyel. zwabezuyer varuvel.", "zudozol varuvel. zudozor varemul."]);
     assert.deepEqual(kinds(md), []);
   });
 

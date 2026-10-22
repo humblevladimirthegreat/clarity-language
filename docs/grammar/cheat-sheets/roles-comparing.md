@@ -11,26 +11,33 @@ A quick look at [role compounds](../roles.md), [mid-word `x`](../compounds.md), 
 
 ## Naming a part of an event {#roles}
 
-Write a thing letter (`/z/` `/d/` `/b/`), the role vowel, mid-word **`x`**, the event root, then the ending. The vowel picks the part. **-l** / **-m** / **-n** mean anyone in that part; **-r** means this instance, from the latest matching event.
+Write a thing letter (`/z/` `/d/` `/b/`), **`w`**, a scope vowel, a part consonant, the event root, then the ending. The part consonant is the role letter the participant had in the event. **-l** / **-m** / **-n** mean anyone in that part; **-r** means this instance, from the latest matching event.
 
-| Vowel | Names | Example | English | Stage |
+| Part | Names | Example | English | Stage |
+|------|-------|---------|---------|-------|
+| [**`z`**](../roles.md#role-compounds) | the doer | `zwazuduyel` | *someone who teaches* | B |
+| [**`d`**](../roles.md#the-undergoer-d) | what it acts on or makes | `zwadawebor` | *the one seen* | B |
+| [**`b`**](../roles.md#the-extra-b-party-b) | the extra `/b/` party | `zwabezuyer` | *the one told* | B |
+
+| Scope | Reach | Example | English | Stage |
 |-------|-------|---------|---------|-------|
-| [**`a`**](../roles.md#role-compounds) | the doer | `zaxuduyel` | *someone who teaches* | B |
-| [**`u`**](../roles.md#the-undergoer-u) | what it acts on or makes | `zuxawebor` | *the one seen* | B |
-| [**`o`**](../roles.md#the-extra-b-party-o) | the extra `/b/` party | `zoxezuyer` | *the one told* | B |
+| [**`a`**](../roles.md#one-time-or-a-practice) | this episode | `zwazuduyel` | *someone who teaches* | B |
+| [**`e`**](../roles.md#one-time-or-a-practice) | practiced role | `zwezuduyel` | *a teacher* | B |
+| [**`o`**](../roles.md#scope) | toward one party | `gwozuduyel blolazun` | *is a teacher to Olazun* | I |
+| [**`u`**](../roles.md#scope) | a type across scenes | `zwuzuduyel` | *a teacher type* | I |
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [The one, from an earlier event](../roles.md#this-instance-r): **-r** | `zuzozen vuhohol. zaxuhohor vowurel.` | *Uzozen sits. The one who sat walks.* | B |
-| [A noun in the stem](../roles.md#role-compounds): another **`x`** | `zaxudozoxowurel varuvel.` | *Someone who walks dogs runs.* | B |
-| [Is one who](../roles.md#saying-someone-is-a-teacher): on `/ɡ/` | `zuzozen gaxuduyel.` | *Uzozen is someone who teaches.* | B |
-| [The usual role](../roles.md#usual-role): **`the`** before the ending | `zaxuduyethel varuvel.` | *A teacher runs.* | I |
-| [Is a teacher](../roles.md#usual-role) | `zuzozen gaxuduyethel.` | *Uzozen is a teacher.* | I |
-| [The event itself](../roles.md#the-event-itself): no vowel | `davuvul` | *a fight* | B |
-| [What it makes](../roles.md#the-undergoer-u): **`u`** | `duxeguyel` | *something built* | B |
+| [The one, from an earlier event](../roles.md#this-instance-r): **-r** | `zuzozen vuhohol. zwazuhohor vowurel.` | *Uzozen sits. The one who sat walks.* | B |
+| [A noun in the stem](../roles.md#role-compounds): another **`x`** | `zwazudozoxowurel varuvel.` | *Someone who walks dogs runs.* | B |
+| [Is one who](../roles.md#saying-someone-is-a-teacher): on `/ɡ/` | `zuzozen gwazuduyel.` | *Uzozen is someone who teaches.* | B |
+| [A practiced role](../roles.md#one-time-or-a-practice): scope **`e`** | `zwezuduyel varuvel.` | *A teacher runs.* | B |
+| [Is a teacher](../roles.md#saying-someone-is-a-teacher) | `zuzozen gwezuduyel.` | *Uzozen is a teacher.* | B |
+| [The event itself](../roles.md#the-event-itself): no **`w`** | `davuvul` | *a fight* | B |
+| [What it makes](../roles.md#the-undergoer-d): **`d`** | `dwadeguyel` | *something built* | B |
 | [A kind of tool, place, or time](../roles.md#places-tools-times): a compound with a head root | `darayexuwal` | *a writing tool* | I |
 
-A role compound has one role vowel, left of the first **`x`**. Its stem is always an event: `zaxuwon` is not a word.
+A role compound has one part consonant, right after its scope vowel. Its stem is always an event: `zwazuwon` is not a word.
 
 ### Without the stem {#pointers}
 
@@ -38,7 +45,7 @@ A role pointer drops the stem. The pointer vowel picks the event by position: **
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Whoever did the latest thing](../roles.md#role-pointers-family) | `zaxar` | *they* | B |
+| [Whoever did the latest thing](../roles.md#role-pointers-family) | `zwazar` | *they* | B |
 | [The landmark a clause named](../roles.md#places-tools-times): resume its noun | `zuzozen vuguyel ael banewul. zahelan danewur vawebol.` | *Uzozen cooks with a knife. Ahelan sees the knife.* | I |
 | [That landmark as a means](../roles.md#places-tools-times): the hook's pointer | `zuzozen vuguyel ael banewul. zahelan vuguyel aer.` | *Uzozen cooks with a knife. Ahelan cooks with it too.* | I |
 
@@ -99,7 +106,7 @@ The anchor can be `uwo` *speaker*, `awa` *listener*, a name, or a role pointer o
 | [Compass](../roles.md#viewpoint-laterals) | `yel vowurel howuhel.` | *Walk west.* | I |
 | [Uzozen's left](../roles.md#viewpoint-laterals) | `yel vowurel howuhethuzozen.` | *Walk left.* (Uzozen's left) | I |
 | [Your left](../roles.md#viewpoint-laterals) | `yel vowurel zawan howuhethawan.` | *You, walk left.* (your left) | I |
-| [Their left](../roles.md#viewpoint-laterals) | `zuzozen vowurel. zolazun vuhohol howuhethaxar.` | *Uzozen walks. Olazun sits on their left.* | I |
+| [Their left](../roles.md#viewpoint-laterals) | `zuzozen vowurel. zolazun vuhohol howuhethuzozer.` | *Uzozen walks. Olazun sits on their left.* | I |
 | [Up](../roles.md#gravity) | `yel vowurel hayuhel.` | *Walk up.* | I |
 | [Under](../roles.md#viewpoint-vs-landmark) | `zudozol vezuvol haduhel bledalel.` | *The dog sleeps under the tree.* | I |
 | [Above](../roles.md#viewpoint-vs-landmark) | `zubezol vuhohol gayuhel bludozol.` | *A bird sits above the dog.* | I |
@@ -108,14 +115,12 @@ The anchor can be `uwo` *speaker*, `awa` *listener*, a name, or a role pointer o
 
 ## Reading mid-word `x` {#x}
 
-After the role letter, look at both sides of the **first** **`x`**. A normal root is longer than one vowel, so a lone vowel left of **`x`** means a role.
+After the role letter, look at both sides of the **first** **`x`**. A role word is not one of these: it opens with **`w`**, a scope vowel, and a part consonant (`zwazuduyel`, `zwazar`).
 
 <!-- cheat-sheet: roles-comparing -->
 | Left of **`x`** | Right of **`x`** | Reading | Example | Stage |
 |-----------------|------------------|---------|---------|-------|
 | [full root](../compounds.md#families-by-shape) | full root | one ordinary compound | `zubedaxuyudal` *peanut butter*; `zalexalowen` (a hyphenated name) | B |
-| [role vowel](../compounds.md#families-by-shape) | **`a`** / **`e`** / **`o`** / **`u`**, then **-r** / **-l** / **-m** | role pointer | `zaxar` *they*; `zaxal` *another one*; `zaxam` *what they did* | B |
-| [role vowel](../compounds.md#families-by-shape) | a longer root | role compound | `zaxuduyel` *someone who teaches* | B |
 | [name](../compounds.md#conversation-length) | a single vowel, then **-n** | conversation length | *Uzozen, I have time* | I |
 | [longer root](../compounds.md#families-by-shape) | a single vowel | [ability](../intention.md#ability) | *can't sing right now* | I |
 
@@ -310,8 +315,8 @@ English *many* and *often* rank against an unstated baseline. Agebon names the b
 | `zel gamahum` *no most* ([standalone](../comparatives.md#comparative-arity)) | | `zer gamahum` *whatever ranks highest* ([someone is on top](../comparatives.md#comparative-arity)) |
 | `zolazun zuzozen zel huhunem vowurel` *more intensely than* ([ranks the manner](../comparatives.md#manner-scale)) | | `guhunem` *more intense* ([a quality of the people](../comparatives.md#manner-scale)) |
 | `zuzozen thagem zel bral vovurel` *later than planned* ([a bar before the join](../comparatives.md#bars)) | | `zuzozen zel bral vovurel thagem` *I plan for them to be last* ([a stance after](../comparatives.md#bars)) |
-| `zaxuduyel` *someone who teaches* ([any one who does it](../roles.md#role-compounds)) | | `zaxuduyethel` *a teacher* ([the usual role](../roles.md#usual-role)) |
-| `zaxuduyer` *the one teaching* ([this instance](../roles.md#role-compounds)) | | `gaxuduyel` *is one who teaches* ([a label](../roles.md#saying-someone-is-a-teacher)) |
+| `zwazuduyel` *someone who teaches* ([any one who does it](../roles.md#role-compounds)) | | `zwezuduyel` *a teacher* ([a practiced role](../roles.md#one-time-or-a-practice)) |
+| `zwazuduyer` *the one teaching* ([this instance](../roles.md#role-compounds)) | | `gwazuduyel` *is one who teaches* ([a label](../roles.md#saying-someone-is-a-teacher)) |
 | `darayexuwal` *a writing tool* ([a compound](../roles.md#places-tools-times)) | | `ael` *using* ([a hook on the clause](../hooks.md#extra-noun)) |
 | `gowuhel` *west* ([compass](../roles.md#endings-and-resume)) | | `gowuhethuzozen` *Uzozen's left* ([a face](../roles.md#endings-and-resume)) |
 | `gowuhethuzozen bledalel` *left of the tree, from Uzozen's view* ([a facing person](../roles.md#viewpoint-vs-landmark)) | | `gowuhethol blahehal` *on the house's left* ([the landmark's own front](../roles.md#landmark-facing)) |

@@ -1,97 +1,119 @@
 # Role compounds {#roles}
 
-When English would name a person or thing from an event (*a teacher* from *teach*, *the one told*, *a building*), Agebon builds that name from the event’s stem. Write a person or thing letter, then **`a`**, **`u`**, or **`o`**, then mid-word **`x`**, then the stem, then an ordinary [word ending](word-endings.md). **`a`** is the doer, **`u`** is what the event acts on or brings into being, and **`o`** is the extra `/b/` party (who is told, or the other party of a relation).
+When English would name a person or thing from an event (*a teacher* from *teach*, *the one told*, *a building*), Agebon builds that name from the event’s stem. Write a person or thing letter, then **`w`**, then a scope vowel, then a part consonant, then the stem, then an ordinary [word ending](word-endings.md). The part consonant is the role letter the participant had in the event's clause: **`z`** the doer, **`d`** what the event acts on or brings into being, and **`b`** the extra `/b/` party (who is told, or the other party of a relation).
 
-The ending decides whether you mean anyone in that part or the one from a particular event. With **-l**, **-m**, or **-n**, the word is anyone who does it, with no claim about how often: *someone who teaches*. With **-r**, it is the participant of the latest matching event: *the one teaching*. To say it is their usual role, the kind English names as a job (*a teacher*), add a scope vowel after the stem (the usual role).
+The scope vowel says how far the label reaches. **`a`** is this episode: one act is enough (*someone who teaches*). **`e`** is a practiced role, the kind English names as a job (*a teacher*). Every role word picks one, so calling someone *a fighter* after a single fight takes a separate, visible choice. The ending decides whether you mean anyone in that part or the one from a particular event: with **-r**, it is the participant of the latest matching event (*the one teaching*).
 
 ## Beginner {#beginner}
 
-### Role compounds: the doer (`a`) {#role-compounds}
+### Role compounds: the doer (`z`) {#role-compounds}
 <a id="agent-place-patient-recipient"></a>
 
-English *someone who teaches* names a person from what they do, from the same idea as *teach*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`a`**, then mid-word **`x`**, then the event root, then an ordinary [word ending](word-endings.md). The result is one content word (a **role compound**) that you can use as a participant. (cue: **a** ≈ add (add a doer))
+English *someone who teaches* names a person from what they do, from the same idea as *teach*. Write a person or thing letter (`/z/` `/d/` `/b/`), then **`w`**, then the scope vowel **`a`**, then the part consonant **`z`**, then the event root, then an ordinary [word ending](word-endings.md). The result is one content word (a **role compound**) that you can use as a participant. The **`z`** is the doer's own role letter: the one who did it sat in `/z/`.
 
-> `zaxuduyel varuvel.`
+> `zwazuduyel varuvel.`
 >
-> z-agent-x-teach | v-run
+> z-episode-agent-teach | v-run
 >
 > "Someone who teaches runs."
 
-The last letter is the ordinary [word ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** its abstract sense. `zaxuduyel` is *someone who teaches*; `zaxavuvul` is *someone who fights*; `zaxavuvum` is *someone who struggles*. No teaching or fight needs to come up earlier in the conversation, and the word says nothing about how often: one lesson is enough.
+The last letter is the ordinary [word ending](word-endings.md): **-l** takes the stem’s everyday concrete sense, **-m** its abstract sense. `zwazuduyel` is *someone who teaches*; `zwazavuvul` is *someone who fights*; `zwazavuvum` is *someone who struggles*. No teaching or fight needs to come up earlier in the conversation, and **`a`** says nothing about how often: one lesson is enough.
 
-When the event is a dictionary word built from two roots, the role compound takes the whole word as its stem: `zaxanalawebol` is *someone who reads*, from `analawebol` *read*.
+When the event is a dictionary word built from two roots, the role compound takes the whole word as its stem: `zwazanalawebol` is *someone who reads*, from `analawebol` *read*.
 
-A noun that specifies the event goes in the same stem, before the event and joined to it with another **`x`**: `zaxudozoxowurel` is *someone who walks dogs* (the doer of *dog-walking*). The noun's part in the event is as open as in English (*dog walker*, *coffee maker*); for an exact part, use a [hook](hooks.md#extra-noun) or a second sentence. **-r** resumes the whole stem.
+A noun that specifies the event goes in the same stem, before the event and joined to it with mid-word **`x`**: `zwazudozoxowurel` is *someone who walks dogs* (the doer of *dog-walking*). The noun's part in the event is as open as in English (*dog walker*, *coffee maker*); for an exact part, use a [hook](hooks.md#extra-noun) or a second sentence. **-r** resumes the whole stem.
 
-> `zaxudozoxowurel varuvel.`
+> `zwazudozoxowurel varuvel.`
 >
-> z-agent-x-dog-x-walk | v-run
+> z-episode-agent-dog-x-walk | v-run
 >
 > "Someone who walks dogs runs."
 
-A role compound has one role vowel, left of the first **`x`**. It is never one piece of another compound.
+A role compound has one part consonant, right after its scope vowel. It is never one piece of another compound.
+
+### One time or a practice (`a` / `e`) {#one-time-or-a-practice}
+<a id="usual-role"></a>
+
+English *a teacher* says more than *someone who teaches*: teaching is that person's practiced role, often a job. Write **`e`** in the scope slot instead of **`a`**. (cue: **e** ≈ order (a sequence of practice))
+
+> `zwezuduyel varuvel.`
+>
+> z-role-agent-teach | v-run
+>
+> "A teacher runs."
+
+`zwezavuvul` is *a fighter*, and `zwezudozoxowurel` is *a dog walker*. With **`a`**, a role compound never makes that claim, so one fight gives `zwazavuvul` (*someone who fought*), not a fighter.
+
+| Agebon | Scope | English | Cue |
+|--------|-------|---------|-----|
+| `zwazuduyel` | **`a`** this episode | *someone who teaches* | **a** ≈ add (one act added) |
+| `zwezuduyel` | **`e`** practiced role | *a teacher* | **e** ≈ order (a sequence of practice) |
 
 ### This instance (`-r`)
 
 English *the one teaching* points at the doer of an event already mentioned. Put **-r** on the role compound: once the conversation has a matching event (*Uzozen teaches*), **-r** on the same stem means **that** doer, not just anyone who teaches.
 
 > `zuzozen vuduyel.`
-> `zaxuduyer vezuvol.`
+> `zwazuduyer vezuvol.`
 >
 > z-Uzozen | v-teach
-> z-←agent-x-teach | v-sleep
+> z-←episode-agent-teach | v-sleep
 >
 > "Uzozen teaches. The one teaching sleeps."
 
-To build the **-r** form, take the whole stem of the earlier verb. In `vuhohol` (*sit*), the stem is **`uhoho`**, so *the one sitting* is `zaxuhohor`: subject **`z`**, doer **`ax`**, the stem **`uhoho`**, and **-r**.
+To build the **-r** form, take the whole stem of the earlier verb. In `vuhohol` (*sit*), the stem is **`uhoho`**, so *the one sitting* is `zwazuhohor`: subject **`z`**, then **`wa`**, the doer **`z`**, the stem **`uhoho`**, and **-r**.
 
-> `zuzozen vuhohol. zaxuhohor vowurel.`
+> `zuzozen vuhohol. zwazuhohor vowurel.`
 >
-> z-Uzozen | v-sit . z-←agent-x-sit | v-walk
+> z-Uzozen | v-sit . z-←episode-agent-sit | v-walk
 >
 > "Uzozen sits. The one who sat walks."
 
-### The undergoer (`u`)
+The scope vowel reads the same on **-r**: `zwezuduyer` is *the one teaching, in their practiced role*.
 
-English *the one seen* or *the one fought* names the person the event happens to. Use the same compound shape as the doer, but write **`u`** in the vowel slot. With **-l**, it is anyone it happens to (*someone seen*); with **-r**, it is the undergoer of the latest matching event. (cue: **u** ≈ undo (the one it happens to))
+### The undergoer (`d`) {#the-undergoer-d}
+<a id="the-undergoer-u"></a>
+
+English *the one seen* or *the one fought* names the person the event happens to. That person sat in `/d/`, so write **`d`** as the part consonant. With **-l**, it is anyone it happens to (*someone seen*); with **-r**, it is the undergoer of the latest matching event.
 
 > `zuzozen dagozol vawebol.`
-> `zuxawebor varuvel.`
+> `zwadawebor varuvel.`
 >
 > z-Uzozen | d-cat | v-see
-> z-←patient-x-see | v-run
+> z-←episode-patient-see | v-run
 >
 > "Uzozen sees a cat. The one seen runs."
 
-What an event brings into being sits in `/d/` too (*Olazun builds a house*), so **`u`** names it as well: `duxeguyel` is *something built*. A verb's `/d/` is either what it acts on (*see*) or what it makes (*construct*), and the verb says which.
+What an event brings into being sits in `/d/` too (*Olazun builds a house*), so **`d`** names it as well: `dwadeguyel` is *something built*. A verb's `/d/` is either what it acts on (*see*) or what it makes (*construct*), and the verb says which.
 
-> `zolazun veguyel. zuzozen duxeguyer vawebol.`
+> `zolazun veguyel. zuzozen dwadeguyer vawebol.`
 >
-> z-Olazun | v-construct . z-Uzozen | d-←patient-x-construct | v-see
+> z-Olazun | v-construct . z-Uzozen | d-←episode-patient-construct | v-see
 >
 > "Olazun builds. Uzozen sees what Olazun built."
 
-### The extra `/b/` party (`o`)
+### The extra `/b/` party (`b`) {#the-extra-b-party-b}
+<a id="the-extra-b-party-o"></a>
 
-English *the one told* names who gets the telling. In a sentence, that person is the **recipient**: a `/b/` word with no relation word before it ([extra nouns](clause.md#extra-nouns)). To name them from the verb stem, write **`o`** in the vowel slot. (cue: **o** ≈ one (that extra one))
+English *the one told* names who gets the telling. In a sentence, that person is the **recipient**: a `/b/` word with no relation word before it ([extra nouns](clause.md#extra-nouns)). To name them from the verb stem, write **`b`** as the part consonant.
 
 > `zuzozen vezuyel.`
-> `zoxezuyer varuvel.`
+> `zwabezuyer varuvel.`
 >
 > z-Uzozen | v-tell
-> z-←recipient-x-tell | v-run
+> z-←episode-recipient-tell | v-run
 >
 > "Uzozen speaks. The one spoken to runs."
 
-You can name that party with no prior telling: `zoxezuyel` is someone told something (the **-l** sense of *speech*).
+You can name that party with no prior telling: `zwabezuyel` is someone told something (the **-l** sense of *speech*), and `zwebezuyel` is *a confidant*, someone regularly told things.
 
-Some stems name a **relation** (who is bound to whom), not an action. The other person of that relation is the `/b/` word right after the relation word. The same **`o`** names that person from the relation stem (*the other party of the bond*).
+Some stems name a **relation** (who is bound to whom), not an action. The other person of that relation is the `/b/` word right after the relation word. The same **`b`** names that person from the relation stem (*the other party of the bond*).
 
 > `zuzozen gawom blolazun.`
-> `zoxawor varuvel.`
+> `zwabawor varuvel.`
 >
 > z-Uzozen | [g-bond | bl-Olazun]
-> z-←recipient-x-bond | v-run
+> z-←episode-recipient-bond | v-run
 >
 > "Uzozen is bound to Olazun. The one Uzozen is bound to runs."
 
@@ -99,25 +121,25 @@ Some stems name a **relation** (who is bound to whom), not an action. The other 
 
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| `…axROOT…` | names the doer of an event | *someone who teaches* / *the one teaching* | **a** ≈ add (add a doer) |
-| `…uxROOT…` | names what the event acts on or makes | *someone seen* / *the one seen* (this seeing); *something built* | **u** ≈ undo (the one it happens to) |
-| `…oxROOT…` | names the extra `/b/` party | *someone told* / *the one told* | **o** ≈ one (that extra one) |
+| `…wazROOT…` | names the doer of an event | *someone who teaches* / *the one teaching* | **z**: the doer sat in `/z/` |
+| `…wadROOT…` | names what the event acts on or makes | *someone seen* / *the one seen* (this seeing); *something built* | **d**: it sat in `/d/` |
+| `…wabROOT…` | names the extra `/b/` party | *someone told* / *the one told* | **b**: they sat in `/b/` |
 
-A role compound fills `/z/`, `/d/`, `/b/`, or `/ɡ/`. Under `/y/` with **-n** or **-r** it calls someone (`yaxobebun` calls the doctor).
+A role compound fills `/z/`, `/d/`, `/b/`, or `/ɡ/`. Under `/y/` with **-n** or **-r** it calls someone (`ywezobebun` calls the doctor).
 
-Its stem is always an event. A [special pronoun](pronouns.md#special-pronouns) such as `uwon` (*the speaker*) names a person, not an event, so `zaxuwon` is not a word. The same root on **-l** is an ordinary content word with a verb sense (*perform*), so it can be a stem: `zaxuwol` is *someone who performs*.
+Its stem is always an event. A [special pronoun](pronouns.md#special-pronouns) such as `uwon` (*the speaker*) names a person, not an event, so `zwazuwon` is not a word. The same root on **-l** is an ordinary content word with a verb sense (*perform*), so it can be a stem: `zwazuwol` is *someone who performs*.
 
-With **-l**, **-m**, or **-n**, the word is **any** such participant: someone who does it, something it acts on or makes, someone told. **-r** looks back to the latest verb, event noun, or relation with that whole stem (including a stem already inside a role compound) and names **this instance**. The vowel still picks which part you mean: doer, undergoer, or extra `/b/` party.
+With **-l**, **-m**, or **-n**, the word is **any** such participant: someone who does it, something it acts on or makes, someone told. **-r** looks back to the latest verb, event noun, or relation with that whole stem (including a stem already inside a role compound) and names **this instance**. The part consonant still picks which part you mean: doer, undergoer, or extra `/b/` party.
 
 ### Without the stem: role pointers {#role-pointers-family}
 
-A [role pointer](pronouns.md#role-pointers) is this same word with the event stem left out: the role vowel, **`x`**, a pointer vowel, and an ending (**-r** the participant itself, **-l** a new one of its kind, **-m** its part in the event). Instead of naming the event, the pointer vowel picks it by position: **`a`** the latest one, **`e`** this sentence’s own, **`o`** the other one, **`u`** the one that left the part unsaid. `zaxuhohor` is *the one who sat*; `zaxar` is *whoever did the latest thing*.
+A [role pointer](pronouns.md#role-pointers) is this same word with the event stem left out: **`w`**, the scope vowel, the part consonant, a pointer vowel, and an ending (**-r** the participant itself, **-l** a new one of its kind, **-m** its part in the event). Instead of naming the event, the pointer vowel picks it by position: **`a`** the latest one, **`e`** this sentence’s own, **`o`** the other one, **`u`** the one that left the part unsaid. `zwazuhohor` is *the one who sat*; `zwazar` is *whoever did the latest thing*. After the pointer vowel and ending the word ends, while a compound's stem goes on (`zwazar` against `zwazarayel`, *someone who writes*).
 
 A pointer looks back to whoever last had that part, skipping events without one ([role pointers](pronouns.md#role-pointers)).
 
 ### The event itself
 
-English *a fight* names the event itself, not anyone in it. Put the event root on a thing letter with no role vowel: `davuvul` is *a fight*. Use **`ax`**, **`ux`**, or **`ox`** only when you mean who fights, who is fought, or the extra `/b/` party.
+English *a fight* names the event itself, not anyone in it. Put the event root on a thing letter with no **`w`** and part: `davuvul` is *a fight*. Use **`waz`**, **`wad`**, or **`wab`** only when you mean who fights, who is fought, or the extra `/b/` party.
 
 > `zuzozen davuvul vawebol.`
 >
@@ -125,36 +147,38 @@ English *a fight* names the event itself, not anyone in it. Put the event root o
 >
 > "Uzozen sees a fight."
 
-**Related form:** a verb’s own **-r** resumes that [event](pronouns.md) (`vavuvur` *that fighting*). Role **`ax`** / **`ux`** names the people.
+**Related form:** a verb’s own **-r** resumes that [event](pronouns.md) (`vavuvur` *that fighting*). A role compound names the people.
 
 ### Saying someone does it
 <a id="saying-someone-is-a-teacher"></a>
 
-To say someone **is one who teaches**, put the same role compound on `/ɡ/`, as in [classification](predication.md#classification). The word says only that they do it, with no claim about how often. With **-r** on `/ɡ/`, it says they are the doer of the matching event (*is the one teaching*).
+To say someone **is one who teaches**, put the same role compound on `/ɡ/`, as in [classification](predication.md#classification). With **`a`**, the word says only that they do it, with no claim about how often. With **-r** on `/ɡ/`, it says they are the doer of the matching event (*is the one teaching*).
 
-> `zuzozen gaxuduyel.`
+> `zuzozen gwazuduyel.`
 >
-> z-Uzozen | g-agent-x-teach
+> z-Uzozen | g-episode-agent-teach
 >
 > "Uzozen is someone who teaches."
 
-> `zuzozen gaxavuvul.`
+> `zuzozen gwazavuvum.`
 >
-> z-Uzozen | g-agent-x-fight
->
-> "Uzozen is someone who fights."
-
-> `zuzozen gaxavuvum.`
->
-> z-Uzozen | g-agent-x-struggle
+> z-Uzozen | g-episode-agent-struggle
 >
 > "Uzozen is someone who struggles."
 
+To say someone **is** a teacher, put the practiced-role word on `/ɡ/`:
+
+> `zuzozen gwezuduyel.`
+>
+> z-Uzozen | g-role-agent-teach
+>
+> "Uzozen is a teacher."
+
 After another noun, the same `/ɡ/` word picks out which one you mean by that role.
 
-> `zuzozen dagayul gaxavuvul vawebol.`
+> `zuzozen dagayul gwazavuvul vawebol.`
 >
-> z-Uzozen | [d-guard | g-agent-x-fight] | v-see
+> z-Uzozen | [d-guard | g-episode-agent-fight] | v-see
 >
 > "Uzozen sees a guard who fights."
 
@@ -195,25 +219,25 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 **1.** *Someone who constructs runs.*
 
 ::: details Show answer
-`zaxeguyel varuvel.`
+`zwazeguyel varuvel.`
 
-z-agent-x-construct | v-run
+z-episode-agent-construct | v-run
 :::
 
 **2.** *Uzozen speaks. The one spoken to sleeps.*
 
 ::: details Show answer
-`zuzozen vezuyel. zoxezuyer vezuvol.`
+`zuzozen vezuyel. zwabezuyer vezuvol.`
 
-z-Uzozen | v-tell . z-←recipient-x-tell | v-sleep
+z-Uzozen | v-tell . z-←episode-recipient-tell | v-sleep
 :::
 
 **3.** *Olazun punches Uzozen. The one punched screams.*
 
 ::: details Show answer
-`zolazun duzozen vanuvul. zuxanuvur varemul.`
+`zolazun duzozen vanuvul. zwadanuvur varemul.`
 
-z-Olazun | d-Uzozen | v-punch . z-←patient-x-punch | v-scream
+z-Olazun | d-Uzozen | v-punch . z-←episode-patient-punch | v-scream
 :::
 
 **4.** *Ahelan sees a construction site.*
@@ -224,12 +248,12 @@ z-Olazun | d-Uzozen | v-punch . z-←patient-x-punch | v-scream
 z-Ahelan | d-construction | v-see
 :::
 
-**5.** *Uzozen is someone who constructs.*
+**5.** *Uzozen is a builder.* (constructing is Uzozen's practiced role)
 
 ::: details Show answer
-`zuzozen gaxeguyel.`
+`zuzozen gwezeguyel.`
 
-z-Uzozen | g-agent-x-construct
+z-Uzozen | g-role-agent-construct
 :::
 
 **6.** *Olazun sees a fight.*
@@ -242,74 +266,74 @@ z-Olazun | d-fight | v-see
 
 #### Agebon → English {#beginner-agebon-to-english}
 
-**1.** `zagayul duxeguyel vawebol.`
+**1.** `zagayul dwadeguyel vawebol.`
 
 ::: details Show answer
-z-guard | d-patient-x-construct | v-see
+z-guard | d-episode-patient-construct | v-see
 
 *The guard sees something built.*
 :::
 
-**2.** `zahelan veguyel. zaxeguyer dehobul vawebol.`
+**2.** `zahelan veguyel. zwazeguyer dehobul vawebol.`
 
 ::: details Show answer
-z-Ahelan | v-construct . z-←agent-x-construct | d-helmet | v-see
+z-Ahelan | v-construct . z-←episode-agent-construct | d-helmet | v-see
 
 *Ahelan builds. The one building sees a helmet.*
 :::
 
-**3.** `zuzozen vavuvul. zahelan duxavuvur vawebol.`
+**3.** `zuzozen vavuvul. zahelan dwadavuvur vawebol.`
 
 ::: details Show answer
-z-Uzozen | v-fight . z-Ahelan | d-←patient-x-fight | v-see
+z-Uzozen | v-fight . z-Ahelan | d-←episode-patient-fight | v-see
 
 *Uzozen fights. Ahelan sees the one Uzozen fights.*
 :::
 
-**4.** `zolazun dagayul gaxezuvol vawebol.`
+**4.** `zolazun dagayul gwazezuvol vawebol.`
 
 ::: details Show answer
-z-Olazun | [d-guard | g-agent-x-sleep] | v-see
+z-Olazun | [d-guard | g-episode-agent-sleep] | v-see
 
 *Olazun sees a guard who sleeps.*
 :::
 
-**5.** `zuxanuvul varemul.`
+**5.** `zwadanuvul varemul.`
 
 ::: details Show answer
-z-patient-x-punch | v-scream
+z-episode-patient-punch | v-scream
 
 *Someone who gets punched screams.*
 :::
 
-**6.** `zahelan dehobul veguyel. zolazun duxar vawebol.`
+**6.** `zahelan dehobul veguyel. zolazun dwadar vawebol.`
 
 ::: details Show answer
-z-Ahelan | d-helmet | v-construct . z-Olazun | d-←patient.same | v-see
+z-Ahelan | d-helmet | v-construct . z-Olazun | d-←episode-patient.same | v-see
 
 *Ahelan makes a helmet. Olazun sees it.*
 :::
 
 #### Pick one {#beginner-pick-one}
 
-**1.** *Ahelan sees someone who was told something.* `zahelan doxezuyel vawebol.` or `zahelan duxezuyel vawebol.`
+**1.** *Ahelan sees someone who was told something.* `zahelan dwabezuyel vawebol.` or `zahelan dwadezuyel vawebol.`
 
 ::: details Show answer
-`zahelan doxezuyel vawebol.`
+`zahelan dwabezuyel vawebol.`
 
-z-Ahelan | d-recipient-x-speech | v-see
+z-Ahelan | d-episode-recipient-speech | v-see
 
-Role vowel **`o`** names who is told; **`u`** would be what is told.
+Part **`b`** names who is told; **`d`** would be what is told.
 :::
 
-**2.** *Ahelan sees someone punched.* `zahelan duxanuvul vawebol.` or `zahelan daxanuvul vawebol.`
+**2.** *Ahelan sees someone punched.* `zahelan dwadanuvul vawebol.` or `zahelan dwazanuvul vawebol.`
 
 ::: details Show answer
-`zahelan duxanuvul vawebol.`
+`zahelan dwadanuvul vawebol.`
 
-z-Ahelan | d-patient-x-punch | v-see
+z-Ahelan | d-episode-patient-punch | v-see
 
-Role vowel **`u`** names who the punching happens to; **`a`** is who punches.
+Part **`d`** names who the punching happens to; **`z`** is who punches.
 :::
 
 #### Fix it {#beginner-fix-it}
@@ -317,36 +341,43 @@ Role vowel **`u`** names who the punching happens to; **`a`** is who punches.
 **1.** *Uzozen is someone who sleeps.* <!-- lint: error -->`zuzozen gezuvol.`
 
 ::: details Show answer
-`zuzozen gaxezuvol.`
+`zuzozen gwazezuvol.`
 
-z-Uzozen | g-agent-x-sleep
+z-Uzozen | g-episode-agent-sleep
 
 The plain root on `/ɡ/` says Uzozen is sleeping right now; the role compound says Uzozen is one who sleeps.
 :::
 
 ## Intermediate {#intermediate}
 
-### The usual role (`the`) {#usual-role}
+### Scope across scenes (`o`, `u`, pairs) {#scope}
+<a id="scope-across-scenes"></a>
 
-English *a teacher* says more than *someone who teaches*: teaching is that person's usual role, often a job. Write the role compound, then mid-word **`th`**, then **`e`**, then the ending. This is the [practiced role](predication.md#scope-occupation) label scope: it says the role is something they regularly do, not one act. (cue: **e** ≈ order (a sequence of practice))
+The scope slot after **`w`** takes every [label scope](predication.md#label-scope) vowel, not just **`a`** and **`e`**. They are the same vowels other labels write after mid-word **`th`**; on a role word they come first, and nowhere else. A **`th`** scope after a role word's stem (`zwazuduyethel`) is not a word.
 
-> `zaxuduyethel varuvel.`
+| V1 | Reach | Example | English |
+|----|-------|---------|---------|
+| **`a`** | this episode: one act is enough | `zwazuduyel` | *someone who teaches* |
+| **`e`** | practiced role | `zwezuduyel` | *a teacher* |
+| **`o`** | this pair: toward one party, named in a `bl-` word on `/ɡ/` | `gwozuduyel blolazun` | *is a teacher to Olazun* |
+| **`u`** | a type across scenes | `zwuzuduyel` | *a teacher type* |
+| pairs | the scope stacks: **`ao`**, **`ae`**, **`oe`**, **`ua`**, **`uo`**, **`ue`** | `gwuezuduyel` | *not in that capacity* |
+
+> `zuzozen gwozuduyel blolazun.`
 >
-> z-agent-x-teach-th-role | v-run
+> z-Uzozen | [g-pair-agent-teach | bl-Olazun]
 >
-> "A teacher runs."
+> "Uzozen is Olazun's teacher."
 
-`zaxavuvuthel` is *a fighter*, and `zaxudozoxowurethel` is *a dog walker*. A role compound without **`the`** never makes that claim, so one fight does not make someone a fighter.
+On `/z/`, `/d/`, and `/b/`, pair scope **`o`** stands alone: the party is the one the clause already relates the person to. On `/ɡ/` it takes its `bl-` party, as on any [pair-scope label](predication.md#scope-relative).
 
-**Compare with:** a role compound takes only one addition after its stem, so a usual role (**`the`**) does not also take ability. Other [scope vowels](predication.md#scope-role) go in the same spot: **`tha`** is *this time only*, **`thu`** is a teacher type.
-
-The other role vowels work the same way: `zoxezuyethel` is *a confidant*, someone regularly told things. To say someone **is** a teacher, put the same word on `/ɡ/`.
-
-> `zuzozen gaxuduyethel.`
+> `zuzozen gwuezuduyel.`
 >
-> z-Uzozen | g-agent-x-teach-th-role
+> z-Uzozen | g-outside-role-agent-teach
 >
-> "Uzozen is a teacher."
+> "Uzozen is not acting as a teacher here."
+
+Scope works on [role pointers](pronouns.md#role-pointers) too. `zwazar` is *the latest doer*; `zwezar` is *the latest doer, in their practiced role*: after *Uzozen teaches*, `zwezar` is Uzozen as a teacher. With **-m** it gives a useful contrast: `dwazam` is *what they did (this time)*, and `dwezam` is *their practice, their craft*.
 
 ### Places, tools, and times {#places-tools-times}
 
@@ -404,11 +435,11 @@ Speaker and listener roots are the facing person when you mean *my left* / *your
 >
 > "You, walk left." (your left)
 
-For *their left*, put a [role pointer](pronouns.md#role-pointers) on **-r** after **`th`**: `howuhethaxar` is *on the latest doer's left*, and `howuhethaxer` is *on this sentence's own doer's left*.
+For *their left*, [resume](pronouns.md#resume-r) the person on **-r** after **`th`**: `howuhethuzozer` is *on Uzozen's left*, said of someone already named.
 
-> `zuzozen vowurel. zolazun vuhohol howuhethaxar.`
+> `zuzozen vowurel. zolazun vuhohol howuhethuzozer.`
 >
-> z-Uzozen | v-walk . z-Olazun | v-sit | h-west-th-←agent.same
+> z-Uzozen | v-walk . z-Olazun | v-sit | h-west-th-←Uzozen
 >
 > "Uzozen walks. Olazun sits on their left." (Uzozen's left)
 
@@ -417,10 +448,10 @@ For *their left*, put a [role pointer](pronouns.md#role-pointers) on **-r** afte
 | PoS | slot as usual (`/ɡ/` property, `/h/` path / manner, `/z/` `/d/` `/b/` side-region) | same slots as other content |
 | DIR | an arrow-rose root | *north* / *ahead*, … |
 | **`th`** | joins DIR to the viewpoint | viewpoint after **`th`** (cue: **th** ≈ *think*, whose point of view) |
-| ANCHOR | what sets the facing frame: [special](pronouns.md#special-pronouns) **`uwo`** / **`awa`** / **`aya`**, a person’s name, a content **-r** of a person or oriented object, or a role pointer on **-r** | *Uzozen’s left*, *your left*, *the car’s left*, *their left* |
+| ANCHOR | what sets the facing frame: [special](pronouns.md#special-pronouns) **`uwo`** / **`awa`** / **`aya`**, a person’s name, or a content **-r** of a person or oriented object | *Uzozen’s left*, *your left*, *the car’s left*, *their left* |
 | Ending | ordinary ending is written at the end of the whole compound; its reference is the viewpoint anchor, not the direction | viewpoint kind / hedge / name / resume |
 
-**Compare with:** naming a doer from an event puts a **vowel** left of **`x`** ([role compounds](#role-compounds): `zaxavuvul`). Viewpoint laterals put a **direction root** left of **`th`** and a facing person on the right.
+**Compare with:** naming a doer from an event puts **`w`**, a scope vowel, and a part consonant before the stem ([role compounds](#role-compounds): `zwazavuvul`). Viewpoint laterals put a **direction root** left of **`th`** and a facing person on the right.
 
 ### Arrow rose (compass vs face)
 
@@ -501,7 +532,7 @@ Gravity works the same way: bare **`aduhe`** + `/b/` is *under* the landmark, an
 
 ### The landmark's own front (DIR + `th` + `o`) {#landmark-facing}
 
-English *behind the house* means the house's own back, not a compass heading and not the speaker's back. Write the arrow root, then **`th`**, then **`o`** in place of a facing person, then the ending. Put the landmark in a `bl-` word right after it. **`o`** is the same vowel that names the extra `/b/` party in [role compounds](#role-compounds): here, the `/b/` landmark is the one whose facing counts.
+English *behind the house* means the house's own back, not a compass heading and not the speaker's back. Write the arrow root, then **`th`**, then **`o`** in place of a facing person, then the ending. Put the landmark in a `bl-` word right after it. **`o`** is the same vowel as pair scope on a label: here, the one `/b/` landmark is the one whose facing counts.
 
 > `zudozol vuhohol gazuhethol blahehal.`
 >
@@ -587,17 +618,17 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 **1.** *Olazun is a thief.* (stealing is what Olazun regularly does)
 
 ::: details Show answer
-`zolazun gaxurozuthem.`
+`zolazun gwezurozum.`
 
-z-Olazun | g-agent-x-theft-th-role
+z-Olazun | g-role-agent-theft
 :::
 
 **2.** *Ahelan builds. Uzozen sees what Ahelan built.*
 
 ::: details Show answer
-`zahelan veguyel. zuzozen duxeguyer vawebol.`
+`zahelan veguyel. zuzozen dwadeguyer vawebol.`
 
-z-Ahelan | v-construct . z-Uzozen | d-←patient-x-construct | v-see
+z-Ahelan | v-construct . z-Uzozen | d-←episode-patient-construct | v-see
 :::
 
 **3.** *Olazun goes toward the island. Uzozen sees the island.*
@@ -650,18 +681,18 @@ z-Uzozen | v-swim | [h-down | bl-boat]
 *Uzozen swims under the boat.*
 :::
 
-**3.** `zahelan debaval veguyel. zolazun duxar vawebol.`
+**3.** `zahelan debaval veguyel. zolazun dwadar vawebol.`
 
 ::: details Show answer
-z-Ahelan | d-boat | v-construct . z-Olazun | d-←patient.same | v-see
+z-Ahelan | d-boat | v-construct . z-Olazun | d-←episode-patient.same | v-see
 
 *Ahelan builds a boat. Olazun sees it.*
 :::
 
-**4.** `zolazun vurozum. zaxurozur varemul.`
+**4.** `zolazun vurozum. zwazurozur varemul.`
 
 ::: details Show answer
-z-Olazun | v-steal . z-←agent-x-steal | v-scream
+z-Olazun | v-steal . z-←episode-agent-steal | v-scream
 
 *Olazun steals. The one who stole screams.*
 :::
@@ -674,10 +705,10 @@ z-Uzozen | v-go | [toward | b-island] . z-Olazun | v-swim | there
 *Uzozen goes toward the island. Olazun swims there.*
 :::
 
-**6.** `zahelan varuvel. zuzozen vuhohol howuhethaxar.`
+**6.** `zahelan varuvel. zuzozen vuhohol howuhethahelar.`
 
 ::: details Show answer
-z-Ahelan | v-run . z-Uzozen | v-sit | h-west-th-←agent.same
+z-Ahelan | v-run . z-Uzozen | v-sit | h-west-th-←Ahelan
 
 *Ahelan runs. Uzozen sits on Ahelan's left.*
 :::
@@ -694,14 +725,14 @@ z-Uzozen | v-sit | [h-west-th-landmark | bl-boat]
 **`tho`** turns the arrow to the boat's own facing; bare `howuhel` is *west of the boat*.
 :::
 
-**2.** *Ahelan sees something written.* `zahelan duxarayel vawebol.` or `zahelan daxarayel vawebol.`
+**2.** *Ahelan sees something written.* `zahelan dwadarayel vawebol.` or `zahelan dwazarayel vawebol.`
 
 ::: details Show answer
-`zahelan duxarayel vawebol.`
+`zahelan dwadarayel vawebol.`
 
-z-Ahelan | d-patient-x-write | v-see
+z-Ahelan | d-episode-patient-write | v-see
 
-**`u`** names what the writing makes; **`a`** would be someone who writes.
+**`d`** names what the writing makes; **`z`** would be someone who writes.
 :::
 
 #### Fix it {#intermediate-fix-it}
@@ -709,9 +740,9 @@ z-Ahelan | d-patient-x-write | v-see
 **1.** *Olazun goes left.* (Olazun's own left) <!-- lint: error -->`zolazun vavobel howuhel.`
 
 ::: details Show answer
-`zolazun vavobel howuhethaxer.`
+`zolazun vavobel howuhetholazur.`
 
-z-Olazun | v-go | h-west-th-←agent.self
+z-Olazun | v-go | h-west-th-←Olazun
 
 A bare arrow word is the compass; for someone's left, add **`th`** and whose facing counts.
 :::

@@ -42,9 +42,9 @@ The ending says whether the list is complete. Closed **-l** means these are the 
 
 Whatever the join, the whole list fills one role in the clause. A [role pointer](pronouns.md#role-pointers) back to that role picks up the whole group:
 
-> `zuzozen zolazun zal vowurel. zaxar vuhohol.`
+> `zuzozen zolazun zal vowurel. zwazar vuhohol.`
 >
-> [z-Uzozen | z-Olazun | z-and] | v-walk . z-←agent.same | v-sit
+> [z-Uzozen | z-Olazun | z-and] | v-walk . z-←episode-agent.same | v-sit
 >
 > "Uzozen and Olazun walk. They sit." (both of them)
 
@@ -857,9 +857,9 @@ When a joined subject shares one thing marked [**`SAME`**](predication.md#identi
 
 For English *whoever* / *whatever*, use a bare [role compound](roles.md#role-compounds), which names anyone who does it: *whoever walks* is *everyone who walks*. Use the agent compound (**`a`**) for *whoever*, and the undergoer compound (**`u`**) for *whatever*.
 
-> `zual gaxowurel vezuyol.`
+> `zual gwazowurel vezuyol.`
 >
-> [z-everything | g-agent-x-walk] | v-sing
+> [z-everything | g-episode-agent-walk] | v-sing
 >
 > "Whoever walks sings."
 
@@ -923,11 +923,11 @@ For *everyone, no exceptions*, use `zual geyol`. As a topic, `xeyon` (*now, abou
 
 #### Every and none, by set {#kind-domains}
 
-*Everyone hates me* and *nobody ever listens* hide how far they reach. To name the set a claim covers, put a SHARED word after the join that bounds it. *Everyone we know* is the undergoer role compound of *know* with [pair scope](predication.md#scope-relative): `guxanathom blayan` is *known to the two of us*.
+*Everyone hates me* and *nobody ever listens* hide how far they reach. To name the set a claim covers, put a SHARED word after the join that bounds it. *Everyone we know* is the undergoer role compound of *know* with [pair scope](predication.md#scope-relative): `gwodanam blayan` is *known to the two of us*.
 
-> `zual guxanathom blayan vezuvol.`
+> `zual gwodanam blayan vezuvol.`
 >
-> [z-everything | [g-patient-x-knowledge-th-pair | bl-interlocutors]] | v-sleep
+> [z-everything | [g-pair-patient-knowledge | bl-interlocutors]] | v-sleep
 >
 > "Everyone we know sleeps."
 
@@ -936,12 +936,12 @@ The join does the rest, as on any SHARED word:
 | Agebon | Covers | English |
 |--------|--------|---------|
 | `zual geyol` | the people in this situation | *everyone* (here) |
-| `zual guxanathom blayan` | the people we both know | *everyone we know* |
-| `zuam guxanathom blayan` | the people we both know, exceptions left open | *everyone we know, as far as I know* |
-| `zal guxanathom blayan` | none of the people we both know | *nobody we know* |
-| `zarx guxanathom blayan` | some of the people we both know | *some people we know* |
-| `zual guxanathom blayan zul` | the people we both know, denied as a whole | *not everyone we know* |
-| `zual guxanathom bluwon` | the people I know | *everyone I know* |
+| `zual gwodanam blayan` | the people we both know | *everyone we know* |
+| `zuam gwodanam blayan` | the people we both know, exceptions left open | *everyone we know, as far as I know* |
+| `zal gwodanam blayan` | none of the people we both know | *nobody we know* |
+| `zarx gwodanam blayan` | some of the people we both know | *some people we know* |
+| `zual gwodanam blayan zul` | the people we both know, denied as a whole | *not everyone we know* |
+| `zual gwodanam bluwon` | the people I know | *everyone I know* |
 
 With `blayan`, the other party is the two of you together: people both of you know. The listener can name someone in that set, which an unbounded *everyone* never allows.
 

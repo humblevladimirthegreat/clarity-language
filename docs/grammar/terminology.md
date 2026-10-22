@@ -315,7 +315,7 @@ Set **`a`** + singular SHARED = *both/each are ADJ*.
 
 ### Domain / generic / *every K*
 
-SHARED kind plus invert / standalone joins; a SHARED word after the join can bound the set (`zual guxanathom blayan` *everyone we know*).
+SHARED kind plus invert / standalone joins; a SHARED word after the join can bound the set (`zual gwodanam blayan` *everyone we know*).
 
 [Joins](joins.md#universals-domains-generics)
 
@@ -377,11 +377,11 @@ Hosted: noun bolted onto a complex `/ɡ/`, `/h/`, or `/th/`. Unhosted: recipient
 
 ### Label scope
 
-Mid-word **`th`** plus a vowel on a content root or role compound: this episode (**`tha`**), practiced role (**`the`**), this pair (**`tho`**), type across scenes (**`thu`**), or a stacked vowel.
+Mid-word **`th`** plus a vowel on a content root, or the vowel right after **`w`** on a role word: this episode (**`tha`**), practiced role (**`the`**), this pair (**`tho`**), type across scenes (**`thu`**), or a stacked vowel.
 
 [Predication](predication.md#label-scope)
 
-**Compare with:** [restrictor](#restrictor) names the occasions, not the kind of claim. [Usual role](#usual-role) is practiced-role **`the`** on a role compound.
+**Compare with:** [restrictor](#restrictor) names the occasions, not the kind of claim. [Usual role](#usual-role) is practiced-role **`e`** on a role compound.
 
 ### Locative relation
 
@@ -703,15 +703,15 @@ Prefix-less *including / rather / instead / except*, discourse glue, extra-noun 
 ### Role compound / agent / patient / recipient
 <a id="role-compound--agent--place--patient--recipient"></a>
 
-`a/u/o x ROOT` (**`u`** is also what the event makes; **`o`** is also the other party on a relation stem).
+Role letter + **`w`** + scope vowel + part consonant + stem (`zwazuduyel`). The part consonant is the role letter the participant had in the event: **`z`** the doer (agent), **`d`** what it acts on or makes (patient), **`b`** the extra party (recipient, or the other party on a relation stem).
 
 [Role compounds](roles.md#role-compounds)
 
-**Compare with:** *a guard who sits* is this stem on `/ɡ/` with a non-resume ending, and *teacher* adds **`the`** for the usual role ([which noun, with resume and kinds](say-people-places.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the usual role.
+**Compare with:** *a guard who sits* is this stem on `/ɡ/` with a non-resume ending, and *teacher* takes scope **`e`** for the usual role ([which noun, with resume and kinds](say-people-places.md#which-noun-intermediate)). Resume **-r** is *the one teaching* (this instance), not the usual role.
 
 ### Role pointer
 
-Role letter + role vowel + **`x`** + pointer vowel + ending (`zaxar`): a participant of an earlier event (**`a`** the latest one with that role, **`o`** the other one, **`u`** the one the event left unsaid) or of this sentence (**`e`**, a reflexive). **-r** names the participant, **-l** a new one of the same kind (`zaxal`), and **-m** the participant’s part in the event (`zaxam`).
+Role letter + **`w`** + scope vowel + part consonant + pointer vowel + ending (`zwazar`): a participant of an earlier event (**`a`** the latest one with that role, **`o`** the other one, **`u`** the one the event left unsaid) or of this sentence (**`e`**, a reflexive). **-r** names the participant, **-l** a new one of the same kind (`zwazal`), and **-m** the participant’s part in the event (`zwazam`).
 
 [Pronouns](pronouns.md#role-pointers) · [Role compounds](roles.md#role-pointers-family)
 
@@ -892,9 +892,9 @@ The default word order of a body, set by its speech act: verb late in a statemen
 
 ### Usual role
 
-A role compound plus practiced-role scope **`the`** after the stem: the role as the office they inhabit (*a teacher*). A bare role compound makes no claim about how often.
+A role compound with practiced-role scope **`e`** after its **`w`** (`zwezuduyel`): the role as the office they inhabit (*a teacher*). With scope **`a`**, a role compound makes no claim about how often.
 
-[Role compounds](roles.md#usual-role)
+[Role compounds](roles.md#one-time-or-a-practice)
 
 ### Channel on a generalization
 

@@ -17,17 +17,17 @@ describe("unknownWords", () => {
   });
 
   it("does not report a role compound on a listed compound stem", () => {
-    assert.deepEqual(unknownWords(parse("zaxanalawebol varayel.")), []);
+    assert.deepEqual(unknownWords(parse("zwazanalawebol varayel.")), []);
   });
 
   it("does not report a role compound on an ordinary compound of listed roots", () => {
-    assert.deepEqual(unknownWords(parse("zaxudozoxowurel varayel.")), []);
+    assert.deepEqual(unknownWords(parse("zwazudozoxowurel varayel.")), []);
   });
 
   it("still reports a role compound on an unlisted compound stem", () => {
-    const words = unknownWords(parse("zaxezolahezal varayel."));
+    const words = unknownWords(parse("zwazezolahezal varayel."));
     assert.equal(words.length, 1);
-    assert.equal(words[0]!.raw, "zaxezolahezal");
+    assert.equal(words[0]!.raw, "zwazezolahezal");
   });
 
   it("reports a nonsense root with no split", () => {

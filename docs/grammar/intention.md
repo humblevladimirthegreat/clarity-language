@@ -251,21 +251,21 @@ For English *so can I* / *can too*, [resume](pronouns.md#resume-r) the verb and 
 #### Can be (role + ability)
 <a id="role-ability"></a>
 
-To say someone **can be** something (*can be the author*, *can be a teacher*) rather than that they can do the act, put the ability vowel on a [role compound](roles.md#role-compounds) on `/ɡ/`. Write the role compound, then **`x`** and the ability vowel, then the ending. This works only on `/ɡ/`, the same slot that says *is a teacher* ([classification](predication.md#classification)).
+To say someone **can be** something (*can be the author*, *can be a teacher*) rather than that they can do the act, put the ability vowel on a [role compound](roles.md#role-compounds) on `/ɡ/`. Write the role compound, then **`x`** and the ability vowel, then the ending. This works only on `/ɡ/`, the same slot that says *is a teacher* ([classification](predication.md#classification)). The role compound keeps its [scope](roles.md#one-time-or-a-practice) at the front, so scope and ability combine: **`a`** is the role this once (*can be the author* of this), **`e`** the role as a practice (*can be a teacher*).
 
-> `zolazun gaxarayexam.`
+> `zolazun gwazarayexam.`
 >
-> z-Olazun | g-agent-x-authorship-able
+> z-Olazun | g-episode-agent-authorship-able
 >
 > "Olazun can be the author."
 
-> `zuzozen gaxuduyexul.`
+> `zuzozen gwezuduyexul.`
 >
-> z-Uzozen | g-agent-x-teach-unable-irreversible
+> z-Uzozen | g-role-agent-teach-unable-irreversible
 >
 > "Uzozen can never be a teacher."
 
-**Compare with:** `vuduyexal` is *can teach* (the act). `gaxuduyexal` is *can be a teacher* (fit for the role).
+**Compare with:** `vuduyexal` is *can teach* (the act). `gwezuduyexal` is *can be a teacher, as a practice* (fit for the role).
 
 #### Can't (`xe` / `xo` / `xu`)
 <a id="ability-changeability"></a>
@@ -632,10 +632,10 @@ z-speaker | th-DECISION-temporary | v-tell | b-Olazun
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `zolazun gaxarayexam.`
+**1.** `zolazun gwazarayexam.`
 
 ::: details Show answer
-z-Olazun | g-agent-x-authorship-able
+z-Olazun | g-episode-agent-authorship-able
 
 *Olazun can be the author.*
 :::

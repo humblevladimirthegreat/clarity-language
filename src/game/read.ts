@@ -9,7 +9,7 @@ import type { Act, Force, NounRef } from "./types.js";
 
 const FORCES: Record<string, Force> = { a: "statement", o: "question", e: "command", u: "prohibition" };
 const POLARS: Record<string, Act["polar"]> = { ae: "yes", ue: "no", ao: "sure" };
-const POINTER_ROLES: Record<string, "agent" | "patient" | "recipient"> = { a: "agent", u: "patient", o: "recipient" };
+const POINTER_ROLES: Record<string, "agent" | "patient" | "recipient"> = { z: "agent", d: "patient", b: "recipient" };
 
 function contentRoot(word: LexWord): string | undefined {
   return word.family.kind === "content" && word.family.roots.length === 1 ? word.family.roots[0] : undefined;
@@ -20,8 +20,8 @@ function nounRef(word: LexWord, adjs: LexWord[], gaps: Set<LexWord>): NounRef | 
   if (gaps.has(word)) return { kind: "gap", word };
   if (word.plural) return `a group (${word.raw})`;
   if (word.family.kind === "x" && word.family.xFamily === "pointer") {
-    const role = POINTER_ROLES[word.family.roleVowel ?? ""];
-    if (!role || word.family.pointerVowel !== "a" || word.ending !== "r") return `this role pointer (${word.raw})`;
+    const role = POINTER_ROLES[word.family.part ?? ""];
+    if (!role || word.family.scopeVowel !== "a" || word.family.pointerVowel !== "a" || word.ending !== "r") return `this role pointer (${word.raw})`;
     return { kind: "pointer", word, role };
   }
   if (word.family.kind === "content" && word.family.roots.length > 1) return `a compound word (${word.raw})`;

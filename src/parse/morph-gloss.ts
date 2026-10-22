@@ -251,7 +251,7 @@ const ABILITY_STANCE: Record<string, string> = {
 };
 
 /** Label scope seam vowels (predication.md#label-scope). */
-const SCOPE_VOWEL: Record<string, string> = {
+export const SCOPE_VOWEL: Record<string, string> = {
   a: "episode",
   e: "role",
   o: "pair",
@@ -306,11 +306,17 @@ const GREETING_STANCE: Record<string, string> = {
   u: "passing",
 };
 
-export const ROLE_VOWEL: Record<string, string> = {
-  a: "agent",
-  u: "patient",
-  o: "recipient",
+/** Role word part consonants (roles.md#role-compounds). */
+export const ROLE_PART: Record<string, string> = {
+  z: "agent",
+  d: "patient",
+  b: "recipient",
 };
+
+/** A role word's front: its label scope, then its part (`episode-agent`; glosses.md § Round trip). */
+export function roleFront(scope: string | undefined, part: string | undefined): string {
+  return `${SCOPE_VOWEL[scope ?? ""] ?? "scope"}-${ROLE_PART[part ?? ""] ?? "role"}`;
+}
 
 /** Role pointer vowel: which event the pointer reads (pronouns.md#role-pointers). */
 /** Role pointer ending suffix: **-l** a new one, **-m** a share; **-r** is the participant itself. */
@@ -402,10 +408,6 @@ export function senseLabel(
       ? "-th-"
       : "-x-";
   let body = sensePieces(word, tables, ctx).join(hinge);
-  // Role compound + label scope: the role and stem join with `-x-`, then the scope hinge (`agent-x-teach-th-episode`).
-  if (word.family.kind === "x" && word.family.xFamily === "role" && word.family.scopeVowel) {
-    body += `-th-${SCOPE_VOWEL[word.family.scopeVowel] ?? "scope"}`;
-  }
   // **-ln**: one thing the name applies to (word-endings.md#name-instance--ln).
   if (word.ending === "ln") body += ".instance";
   if (word.plural) return body ? `${body}-x` : "-x";
@@ -723,7 +725,7 @@ export function morphRedundantWithLoose(
   return morphBody === looseNorm;
 }
 
-// The prefix before `←` is a holder host (`th-CLUES-←agent.same`) or a lateral's direction (`h-west-th-←agent.same`).
+// The prefix before `←` is a holder host (`th-CLUES-←Uzozen`) or a lateral's direction (`h-west-th-←Uzozen`).
 const MORPH_TOKEN_RE =
   /^(?:(?:th|[zdbvgwhxy])l?-)?(?:[A-Z][A-Za-z.]*-(?=←)|[a-z][A-Za-z.-]*-th-(?=←))?←*[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]*(?:-x-[A-Za-z0-9…/'’._#+∞≤≥≠@{}^|,-]+)*(?:-x)?$|^[<>^]$|^\^-start$|^\^-end$/;
 
@@ -1007,15 +1009,20 @@ function sensePieces(
     word.reading !== "ability" &&
     family.kind !== "joinMarker";
   if (resume) {
-    // A role pointer glosses its role and which event, never the referent (glosses.md § Anaphors).
+    // A role pointer glosses its scope, part, and which event, never the referent (glosses.md § Anaphors).
     if (family.kind === "x" && family.xFamily === "pointer") {
-      return [`←${ROLE_VOWEL[family.roleVowel ?? ""] ?? "role"}.${POINTER_VOWEL[family.pointerVowel ?? ""] ?? "pointer"}${POINTER_ENDING[word.ending ?? ""] ?? ""}`];
+      return [`←${roleFront(family.scopeVowel, family.part)}.${POINTER_VOWEL[family.pointerVowel ?? ""] ?? "pointer"}${POINTER_ENDING[word.ending ?? ""] ?? ""}`];
     }
     if (ctx.antecedent) {
-      // A role-compound resume keeps its role, so doer / undergoer / tool of one event stay apart (glosses.md § Round trip).
+      // A role-compound resume keeps its scope and part, so the doer and undergoer of one event stay apart (glosses.md § Round trip).
       if (family.kind === "x" && family.xFamily === "role" && !word.overlay) {
-        const role = ROLE_VOWEL[family.roleVowel ?? ""] ?? "role";
-        return [`←${role}`, senseLabel(ctx.antecedent, tables, {})];
+        // After an earlier role compound of the same event, only its stem (`←episode-agent-walk`).
+        const prior = ctx.antecedent.family;
+        const stem =
+          prior.kind === "x" && prior.xFamily === "role"
+            ? (prior.rightRoots ?? []).map((root) => rootSense(root, ctx.antecedent!.ending, tables, { pos: ctx.antecedent!.pos })).join("-x-")
+            : senseLabel(ctx.antecedent, tables, {});
+        return [`←${roleFront(family.scopeVowel, family.part)}-${stem}`];
       }
       return [`←${senseLabel(ctx.antecedent, tables, {})}`];
     }
@@ -1393,20 +1400,15 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
   if (family.kind !== "x") return [];
 
   if (family.xFamily === "role") {
-    // A closed role-compound overlay (`thuxerenel` consent) glosses as its overlay label.
-    if (word.overlay) return [overlayLabel(word.overlay)];
-    const role = ROLE_VOWEL[family.roleVowel ?? ""] ?? "role";
+    // Scope, part, then the stem; a stem compound keeps its `-x-` (`episode-agent-dog-x-walk`).
     const host = (family.rightRoots ?? []).map((root) =>
       rootSense(root, word.ending, tables, {
         named: isNameEnding(word.ending),
         pos: word.pos,
       }),
     );
-    if (family.stanceVowel) {
-      const stance = ABILITY_STANCE[family.stanceVowel] ?? family.stanceVowel;
-      return [role, ...host.slice(0, -1), `${host[host.length - 1] ?? "host"}-${stance}`];
-    }
-    return [role, ...host];
+    const ability = family.stanceVowel ? `-${ABILITY_STANCE[family.stanceVowel] ?? family.stanceVowel}` : "";
+    return [`${roleFront(family.scopeVowel, family.part)}-${host.join("-x-")}${ability}`];
   }
 
   if (family.xFamily === "sake" || family.xFamily === "ability") {
@@ -1467,9 +1469,6 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
 
   if (family.xFamily === "holder") {
     const host = tables.overlays.get(overlayKey("th", `${family.leftRoots[0]}${family.grade ?? "m"}`))?.gloss ?? family.leftRoots[0]!;
-    if (family.pointerVowel) {
-      return [host, `←${ROLE_VOWEL[family.roleVowel ?? ""] ?? "role"}.${POINTER_VOWEL[family.pointerVowel] ?? "pointer"}`];
-    }
     // Holder -r resumes the person whose view it is (knowing.md#holder).
     if (word.ending === "r") {
       const resumed: LexWord = { ...word, overlay: undefined, family: { kind: "content", roots: family.rightRoots ?? [] } };
@@ -1488,9 +1487,10 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
 
   if (family.xFamily === "lateral") {
     const dir = rootSense(family.leftRoots[0]!, "l", tables, { named: false, pos: word.pos });
-    // A role pointer as the facing anchor (`hewezathaxar`, roles.md#viewpoint-laterals).
-    if (family.pointerVowel) {
-      return [dir, `←${ROLE_VOWEL[family.roleVowel ?? ""] ?? "role"}.${POINTER_VOWEL[family.pointerVowel] ?? "pointer"}`];
+    // **-r** resumes the facing anchor (`howuhethuzozer`, roles.md#viewpoint-laterals).
+    if (word.ending === "r" && !family.landmark) {
+      const resumed: LexWord = { ...word, overlay: undefined, family: { kind: "content", roots: family.rightRoots ?? [] } };
+      return [dir, ...sensePieces(resumed, tables, { antecedent })];
     }
     const anchors = (family.rightRoots ?? []).map((root, i, all) =>
       rootSense(root, word.ending, tables, {

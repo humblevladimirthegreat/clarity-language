@@ -393,7 +393,7 @@ export type OverlayHostError = {
   reason: string;
 };
 
-const ROLE_PREFIX = /^[aeuo]x/;
+const ROLE_PREFIX = /^w[aeuo]{1,2}[zdb]/;
 
 /**
  * Hosted overlays must spell a published root (same emoji; sense_form starts with
@@ -463,7 +463,7 @@ export function validateOverlayPublishedHosts(
       continue;
     }
 
-    // A role-compound overlay (`uxerenel`) spells the root after its role vowel + `x`.
+    // A role-compound overlay (`waderenel`) spells the root after `w` + scope + part.
     if (!overlay.senseForm.replace(ROLE_PREFIX, "").startsWith(root)) {
       errors.push({
         row: rowNum,

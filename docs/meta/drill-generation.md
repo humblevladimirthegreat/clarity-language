@@ -281,7 +281,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 6 | `speech-moves.md` | **exists** | Turn start; call a person; conventional interjection; statement / question / command / prohibition; omit recoverable **`yal`** | Recycle clause bodies and house names; no hooks, polar stance, soft forms, or numbers |
 | 7 | `dependents.md` | **exists** | Two-sentence *who / that / which*; **`darl` last**; adverbial subordinators (`thahum` / `thohom` / `thehem` / `hezom` / `herem` / `harum` / `habam` / `halam` / `hovam` **`blarl`**; *despite* = **`hezom`** + `/b/` noun); `/x/` continue vs `/y/` turn; `/x/` linker may start the next written sentence after `.` | Do not use nested **`blarl`**, letter **-r** mechanism. Recycle speech-moves **`yol`/`yel`/`yul`** |
 | 13 | `relations.md` | **exists** | Hosted pair for simile **`hewom`**, exchange **`heham`**, proxy **`hanom`** | Recycle clause hosted `/b/` and hooks extra-noun. No *between*, no of-relations, no **`blarl`**. Not **`hahebam`** |
-| 8 | `pronouns.md` | **exists** | Whole-stem **-r**; role pointers (`zaxar`, `duxar`, `daxer`, `zaxor`); specials **`uwo` / `awa` / `aya` / `umo`** (when the *role* is the point); inclusive *we* **`aya`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
+| 8 | `pronouns.md` | **exists** | Whole-stem **-r**; role pointers (`zwazar`, `dwadar`, `dwazer`, `zwazor`); specials **`uwo` / `awa` / `aya` / `umo`** (when the *role* is the point); inclusive *we* **`aya`** | Do **not** test associative **-x** here (plurality Beginner). Default people still house names; specials only when testing specials |
 | 8 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aya`** as the *not this* for inclusive *we*. **`uwo`/`awa`** only on person-role items |
 | 9 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zudozol`; identity **`gorol` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`azawdavraga` / `uzuda`) OK if already taught in this stage |
 | 10 | `joins.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / single-item / standalone starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask), and **-rx** as *some of them* | No hooks, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
@@ -295,7 +295,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 16 | `sakes.md` | **exists** | Six needs; `/ɡ/` on a belonging vs `/th/` on the clause; **`tha`** met + contact **-l / -m / -r**; **`thu`** unmet changeability; unowned **`goyem`** + `/w/` need | **Not** prescription **`the`** or motive **`tho`** (Intermediate). Not ability (non-sake + `x` vowel). Not MAY. Not bare need-as-topic |
 | 16 | `intention.md` | **exists** | PLAN and host ability contrasts: **`xa`/`xe`/`xo`/`xu`**; *can’t* grains vs *won’t* | Not values (sake roots). Not role compounds (vowel *left* of `x`). Not conversation length (named citation or `/y/`) |
 | 16 | `knowing.md` | **exists** | **MAY** **`oma`** + 2a holds (**`thomam`** default; **-l** find out; **-r** who knows) | Not evidentiality / NOTIONAL (Intermediate). Not **`yom`** (core Intermediate) unless you only recycle **`yol`** from core/questions Beginner |
-| 16 | `roles.md` | **exists** | Role compounds **`a`/`e`/`u`/`o` x ROOT`** (agent / place / patient / recipient; **`o`** = reltum on a relation); endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations |
+| 16 | `roles.md` | **exists** | Role compounds **`w` + scope `a`/`e` + part `z`/`d`/`b` + ROOT**; endings on the role word | Not viewpoint laterals (Intermediate). Not values/ability (vowel *right* of `x`). Not join-relations. Not scope **`o`/`u`/pairs (predication Intermediate) |
 | 16 | `compounds.md` | **exists** | Productive **`x`** vs two words vs dictionary compound; look up listed stems (`obahoha` / `oholebora`); do not coin them. Live **`x`** from parts (not a pre-joined bank row) | Not parser-family inventory as drills; not coining new dictionary compounds. Greeting bid is Intermediate |
 | 16 | `intention.md` | **exists** | **PLAN** **`age`** map-resolution endings | Not **DECISION** (Intermediate). Not evidentiality stacked on PREDICT (Intermediate). Sibling MAY / values unused unless the page contrast needs them |
 
@@ -383,7 +383,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | Value **`tha`/`thu`** on **sake** roots | `sakes.md` Beginner |
 | Ability **`xa`/`xe`/`xo`/`xu`** on **non-need** hosts | `intention.md` Beginner |
 | **MAY** **`thomam`** | `knowing.md` Beginner |
-| Role **`ax`/`ux`/`ox` ROOT** | `roles.md` Beginner |
+| Role **`waz`/`wad`/`wab` ROOT** | `roles.md` Beginner |
 | Prescription **`the`** / motive **`tho`** (values) | `sakes.md` Intermediate |
 | Evidentiality / NOTIONAL / RESIDUE / FORMER | `knowing.md` Intermediate |
 | Viewpoint laterals | `roles.md` Intermediate |

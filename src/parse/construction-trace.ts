@@ -85,15 +85,17 @@ function featureConstructions(word: LexWord): string[] {
     }
     if (family.xFamily === "scope" && family.stanceVowel) ids.push(`scope.vowel.${family.stanceVowel}`);
     if (family.xFamily === "role") {
-      if (family.scopeVowel) ids.push(`scope.vowel.${family.scopeVowel}`);
-      if (family.roleVowel) ids.push(`role.vowel.${family.roleVowel}`);
+      if (family.scopeVowel) ids.push(`role.scope.${family.scopeVowel}`);
+      if (family.part) ids.push(`role.part.${family.part}`);
+      if (family.stanceVowel) ids.push("role.ability");
       if (word.ending === "r") ids.push("role.instance");
     }
-    if (family.pointerVowel) {
-      if (family.roleVowel) ids.push(`pointer.role.${family.roleVowel}`);
-      ids.push(`pointer.vowel.${family.pointerVowel}`);
-      if (family.xFamily === "pointer" && word.ending === "l") ids.push("pointer.new");
-      if (family.xFamily === "pointer" && word.ending === "m") ids.push("pointer.part");
+    if (family.xFamily === "pointer") {
+      if (family.scopeVowel) ids.push(`role.scope.${family.scopeVowel}`);
+      if (family.part) ids.push(`pointer.part.${family.part}`);
+      if (family.pointerVowel) ids.push(`pointer.vowel.${family.pointerVowel}`);
+      if (word.ending === "l") ids.push("pointer.new");
+      if (word.ending === "m") ids.push("pointer.share");
     }
     return ids;
   }

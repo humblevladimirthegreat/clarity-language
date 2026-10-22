@@ -102,7 +102,7 @@ describe("noteFindings", () => {
   });
 
   it("flags forms, labels, and grammar terms", () => {
-    assert.deepEqual(kinds("`zaxar` would be Olazun"), ["note-form"]);
+    assert.deepEqual(kinds("`zwazar` would be Olazun"), ["note-form"]);
     assert.deepEqual(kinds("/w/ does not retarget it"), ["note-form"]);
     assert.deepEqual(kinds("PATTERN is the baseline"), ["note-label"]);
     assert.deepEqual(kinds("mirative with an Uzozen holder"), ["note-term", "note-term"]);
@@ -124,9 +124,9 @@ describe("extractFreeEnglish", () => {
       '> "Uzozen walks." (alone)',
       "",
       "> `zuzozen vuduyel.`",
-      "> `zaxuduyer vezuvol.`",
+      "> `zwazuduyer vezuvol.`",
       ">",
-      "> z-Uzozen | v-teach . z-←agent-x-teach | v-sleep",
+      "> z-Uzozen | v-teach . z-←episode-agent-teach | v-sleep",
       ">",
       '> "Uzozen teaches. The one teaching sleeps."',
       "",
@@ -143,8 +143,8 @@ describe("extractFreeEnglish", () => {
       delimiter: '"',
       split: { sentence: "Uzozen walks.", note: "alone", parts: ["Uzozen walks."], join: "one" },
     });
-    assert.equal(lines[1]!.agebon, "zuzozen vuduyel. zaxuduyer vezuvol.");
-    assert.equal(lines[1]!.morph, "z-Uzozen | v-teach . z-←agent-x-teach | v-sleep");
+    assert.equal(lines[1]!.agebon, "zuzozen vuduyel. zwazuduyer vezuvol.");
+    assert.equal(lines[1]!.morph, "z-Uzozen | v-teach . z-←episode-agent-teach | v-sleep");
   });
 
   it("reads checkpoint prompts and answers", () => {

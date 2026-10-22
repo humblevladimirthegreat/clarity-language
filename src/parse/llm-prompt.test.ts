@@ -98,7 +98,7 @@ describe("doc examples", () => {
   it("joins a dialogue block's Agebon lines and skips spoken lines", () => {
     const md = [
       "> `zuzozen vuduyel.`",
-      "> `zaxuduyer vezuvol.`",
+      "> `zwazuduyer vezuvol.`",
       ">",
       "> 🔊 `zuzozen vuduyel.`",
       ">",
@@ -110,7 +110,7 @@ describe("doc examples", () => {
       '> "Dogs walk."',
     ].join("\n");
     assert.deepEqual(docExamples(md), [
-      { agebon: "zuzozen vuduyel. zaxuduyer vezuvol.", free: '"Uzozen teaches. The one teaching sleeps."', line: 1 },
+      { agebon: "zuzozen vuduyel. zwazuduyer vezuvol.", free: '"Uzozen teaches. The one teaching sleeps."', line: 1 },
     ]);
   });
 

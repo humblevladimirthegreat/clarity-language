@@ -366,8 +366,8 @@ describe("parse — spans", () => {
   });
 
   it("anchors a role pointer on a span like any noun (pronouns.md#role-pointers)", () => {
-    const result = parseText("zuzozen d[uzozen] vezuyel. zolazun duxar vezuyel.");
-    const pointer = result.resolve!.anaphors.find((bind) => bind.pronoun.raw === "duxar");
+    const result = parseText("zuzozen d[uzozen] vezuyel. zolazun dwadar vezuyel.");
+    const pointer = result.resolve!.anaphors.find((bind) => bind.pronoun.raw === "dwadar");
     assert.equal(pointer?.antecedent?.raw, "d[uzozen]");
   });
 });
@@ -688,7 +688,7 @@ describe("parse — comparatives.md bars", () => {
   });
 
   it("ranks a closed universal fence against the bar after it", () => {
-    for (const text of ["zuam gaxodamul thubem zel hral vabezum.", "zuan gaxodamul thubem zel hral vabezum.", "zual gagozol thubem zel guzemol."]) {
+    for (const text of ["zuam gwazodamul thubem zel hral vabezum.", "zuan gwazodamul thubem zel hral vabezum.", "zual gagozol thubem zel guzemol."]) {
       const units = parseText(text).utterances[0]!.bodies[0]!.clause.units;
       const np = units[0]!;
       assert.ok(np.kind === "np", text);
@@ -703,8 +703,8 @@ describe("parse — comparatives.md bars", () => {
   });
 
   it("reads an adjective after a bar's hosted /b/ as describing that noun, inside the fence", () => {
-    const bar = barOf("zuzozen thubem blaxeluyelx guzemol zel gezuyol.");
-    assert.equal(bar?.hosted?.bound.raw, "blaxeluyelx");
+    const bar = barOf("zuzozen thubem blwazeluyelx guzemol zel gezuyol.");
+    assert.equal(bar?.hosted?.bound.raw, "blwazeluyelx");
     assert.deepEqual(bar?.hosted?.adjs?.map((a) => a.word.raw), ["guzemol"]);
     // On the clause too, an adjective after a `/th/` host's `/b/` describes that noun (clause.md#complex-chaining).
     const units = parseText("zuzozen thebam blolazun guzemol vowurel.").utterances[0]!.bodies[0]!.clause.units;
@@ -886,7 +886,7 @@ describe("negation scope at a fence or a pole", () => {
   });
 
   it("keeps a stance join before barl in the main sentence and barl on the pole", () => {
-    const clause = parseText("zuzozen vuduyel thanam thohom thul blarl zuzozen gaxuduyethel.").utterances[0]!.bodies[0]!.clause;
+    const clause = parseText("zuzozen vuduyel thanam thohom thul blarl zuzozen gwezuduyel.").utterances[0]!.bodies[0]!.clause;
     const hs = clause.units.flatMap((u) => (u.kind === "h" ? [u.unit] : []));
     assert.deepEqual(hs.map((h) => h.word.raw), ["thanam", "thohom", "thul"]);
     assert.equal(hs[1]!.hosted?.bound.raw, "blarl");
@@ -960,7 +960,7 @@ describe("parse — one tree per sentence (syntactic-unambiguity batch 5a)", () 
     assert.equal(z.coord.parts.length, 1);
     assert.equal(z.coord.parts[0]!.items.length, 2);
     // Right after a closed `ua` fence, the bar starts a part of its own that ranks the whole fence.
-    const [fence] = units("zuam gaxodamul thubem zel hral vabezum.");
+    const [fence] = units("zuam gwazodamul thubem zel hral vabezum.");
     assert.ok(fence?.kind === "np");
     assert.deepEqual(fence.coord.parts.map((p) => p.items.map((i) => i.kind)), [[], ["bar"]]);
   });

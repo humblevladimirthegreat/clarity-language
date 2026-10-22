@@ -94,7 +94,6 @@ describe("lintAgebonToken", () => {
     assert.equal(lintAgebonToken("jal", tables)?.detail, "`j` is not a letter; write `y`");
     assert.equal(lintAgebonToken("d<sushi>", tables), null);
     assert.equal(lintAgebonToken("d[hi]", tables), null);
-    assert.equal(lintAgebonToken("xuxun", tables), null);
     assert.equal(lintAgebonToken("thegera", tables), null);
   });
 

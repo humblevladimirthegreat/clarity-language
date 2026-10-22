@@ -9,8 +9,8 @@ describe("retieSenseForm", () => {
     assert.equal(retieSenseForm("egega", "th", "egega", "ababa"), "ababa");
   });
 
-  it("keeps the role vowel of an x-compound and moves only the root", () => {
-    assert.equal(retieSenseForm("uxerenel", "th", "erene", "ababa"), "uxababal");
+  it("keeps the front of a role compound and moves only the root", () => {
+    assert.equal(retieSenseForm("wazuduyel", "g", "uduye", "ababa"), "wazababal");
   });
 
   it("leaves the form alone when the root does not move", () => {

@@ -736,17 +736,17 @@ When you are not sure, use **`theyum`**.
 
 English *it follows that*, *P, so Q* and *by deduction* claim more than good evidence: if the premises hold, the conclusion **must** hold. Put DEDUCED (**`thanam`**) on the conclusion and the premises after **`blarl`**, as in any [evidence clause](#evidence-clause). Join several premises with a [clause join](joins.md#clause-joins); a join after a stand-in stays in the dependent, so every premise is grounds. You assert the premises and the conclusion.
 
-> `zuzozen vuduyel thanam blarl zual gaxuduyethel vuduyel xam zuzozen gaxuduyethel.`
+> `zuzozen vuduyel thanam blarl zual gwezuduyel vuduyel xam zuzozen gwezuduyel.`
 >
-> z-Uzozen | v-teach | [th-DEDUCED | bl-that-clause] | [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Uzozen | g-agent-x-teach-th-role]
+> z-Uzozen | v-teach | [th-DEDUCED | bl-that-clause] | [[z-everything | g-role-agent-teach] | v-teach | x-and.open | z-Uzozen | g-role-agent-teach]
 >
 > "Uzozen teaches, since every teacher teaches and Uzozen is a teacher."
 
 To claim only that the conclusion follows, put a [pole](causation.md#only-because) between the channel and **`blarl`**. The pole is the ordinary *if*: the premises are enough for the conclusion, and you do not claim them. DEDUCED says you know that link by deduction. Now you assert nothing but the link.
 
-> `zuzozen vuduyel thanam thohom blarl zual gaxuduyethel vuduyel xam zuzozen gaxuduyethel.`
+> `zuzozen vuduyel thanam thohom blarl zual gwezuduyel vuduyel xam zuzozen gwezuduyel.`
 >
-> z-Uzozen | v-teach | th-DEDUCED | [th-if | bl-that-clause] | [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Uzozen | g-agent-x-teach-th-role]
+> z-Uzozen | v-teach | th-DEDUCED | [th-if | bl-that-clause] | [[z-everything | g-role-agent-teach] | v-teach | x-and.open | z-Uzozen | g-role-agent-teach]
 >
 > "If every teacher teaches and Uzozen is a teacher, it follows that Uzozen teaches."
 
@@ -762,17 +762,17 @@ The ending grades how far you checked the steps ([evidence strength](#evidence-s
 
 When the premises come first, open the conclusion with the linker **`xahel`** *it follows that* ([sentence linkers](dependents.md#sentence-linkers)). It reaches back to the one sentence before it, so join every premise into that sentence.
 
-> `zual gaxuduyethel vuduyel xam zuzozen gaxuduyethel. xahel zuzozen vuduyel.`
+> `zual gwezuduyel vuduyel xam zuzozen gwezuduyel. xahel zuzozen vuduyel.`
 >
-> [[z-everything | g-agent-x-teach-th-role] | v-teach | x-and.open | z-Uzozen | g-agent-x-teach-th-role] . x-it-follows | z-Uzozen | v-teach
+> [[z-everything | g-role-agent-teach] | v-teach | x-and.open | z-Uzozen | g-role-agent-teach] . x-it-follows | z-Uzozen | v-teach
 >
 > "Every teacher teaches, and Uzozen is a teacher. It follows that Uzozen teaches."
 
 A linker is not a channel, so the conclusion keeps your [frame](#carry-forward): a deduction from a report is still REPORTED. To reason from a premise you do not grant, suppose it with [NOTIONAL](#notional) **`theyur`**. The frame carries, so every step after it stays supposed. To keep what you found, state the link with its own channel, which ends the supposition:
 
-> `zuzozen theyur gaxuduyethel. xahel zuzozen vuduyel. zuzozen vuduyel thanam thohom blarl zuzozen gaxuduyethel.`
+> `zuzozen theyur gwezuduyel. xahel zuzozen vuduyel. zuzozen vuduyel thanam thohom blarl zuzozen gwezuduyel.`
 >
-> z-Uzozen | th-NOTIONAL-suppose | g-agent-x-teach-th-role . x-it-follows | z-Uzozen | v-teach . z-Uzozen | v-teach | th-DEDUCED | [th-if | bl-that-clause] | [z-Uzozen | g-agent-x-teach-th-role]
+> z-Uzozen | th-NOTIONAL-suppose | g-role-agent-teach . x-it-follows | z-Uzozen | v-teach . z-Uzozen | v-teach | th-DEDUCED | [th-if | bl-that-clause] | [z-Uzozen | g-role-agent-teach]
 >
 > "Suppose Uzozen is a teacher. Then Uzozen teaches. So if Uzozen is a teacher, it follows that Uzozen teaches."
 
@@ -887,19 +887,13 @@ A holder [carries forward](#carry-forward) like a channel. After it, your bare c
 >
 > "I gather Uzozen thinks Olazun left. Olazun is asleep." (the sleeping is Uzozen's view too)
 
-The holder word ends the way a noun for that person would. **-n** is a name. **-r** [resumes](pronouns.md#resume-r) someone already named, which is English *he* / *she* / *they*, and a [role pointer](pronouns.md#role-pointers) on **-r** works too (`theyemaxar`, *I gather the latest doer thinks*). Add [associative **-x**](plurality.md#associative) after the ending for the person and their associates. A kind of person on **-lx** is some people of that kind. A [tag](pronouns.md#tag-pronouns) never goes in the seam, since the seam letter before its `w` would end a syllable mid-word. For a holder you don't name, name the kind of person: `zolazun theyemeyol velurul.` is *I gather someone thinks Olazun left*.
+The holder word ends the way a noun for that person would. **-n** is a name. **-r** [resumes](pronouns.md#resume-r) someone already named, which is English *he* / *she* / *they*. Add [associative **-x**](plurality.md#associative) after the ending for the person and their associates. A kind of person on **-lx** is some people of that kind. A [tag](pronouns.md#tag-pronouns) never goes in the seam, since the seam letter before its `w` would end a syllable mid-word. For a holder you don't name, name the kind of person: `zolazun theyemeyol velurul.` is *I gather someone thinks Olazun left*.
 
 > `zuzozen vowurel. zolazun theyemuzozer velurul.`
 >
 > z-Uzozen | v-walk . z-Olazun | th-CLUES-←Uzozen | v-departure
 >
 > "Uzozen walks. I gather they think Olazun left."
-
-> `zuzozen vowurel. zolazun theyemaxar velurul.`
->
-> z-Uzozen | v-walk . z-Olazun | th-CLUES-←agent.same | v-departure
->
-> "Uzozen walks. I gather they think Olazun left." (the latest doer: Uzozen)
 
 > `zolazun theyemuzozenx velurul.`
 >
@@ -1381,9 +1375,9 @@ To say **how you know** the general claim, add a [channel](#evidentiality). On a
 >
 > "Uzozen always walks, from the few cases I have seen."
 
-> `zual gaxuduyethel vuduyel thanal.`
+> `zual gwezuduyel vuduyel thanal.`
 >
-> [z-everything | g-agent-x-teach-th-role] | v-teach | th-DEDUCED.strong
+> [z-everything | g-role-agent-teach] | v-teach | th-DEDUCED.strong
 >
 > "It follows that every teacher teaches." (every step could be shown)
 
@@ -1399,8 +1393,8 @@ The fence says how far the claim reaches, and the channel says what it rests on.
 |---------|---------------------|---------|---------|
 | *usually*, *as a rule* | `huam` / `zuam` | any, or none | `zuzozen huam vowurel.` |
 | *always, as far as I have checked* | `hual` / `zual` | a weak channel | `zuzozen hual vowurel thuber.` |
-| *it follows that every …* | `zual` | DEDUCED.strong `thanal` | `zual gaxuduyethel vuduyel thanal.` |
-| *by definition* | `zual` + `thehem blarl` | none | `zual geyol gaxuduyethel thehem blarl zeyor vuduyel.` |
+| *it follows that every …* | `zual` | DEDUCED.strong `thanal` | `zual gwezuduyel vuduyel thanal.` |
+| *by definition* | `zual` + `thehem blarl` | none | `zual geyol gwezuduyel thehem blarl zeyor vuduyel.` |
 | *under the rules of …* | `hal` / `hual` | REPORTED.strong with the rules in `/b/` | `zolazun hal vanuvul thebal blazunal.` |
 | *cats are sleepy* (in general) | `zuam` + kind | any, or none | `zuam gagozol guzemol thubem.` |
 
@@ -1414,9 +1408,9 @@ A [cause or condition](causation.md) on a general claim says how things work. It
 
 A **definition** works both ways: whatever has the property is that kind, and every member of the kind has it. Write it on a closed fence with **`thehem`** (*if and only if*, from [causation](causation.md#only-because)). The grounds sentence is the defining property. A definition needs no channel, because it is a decision about a word, not a report about the world.
 
-> `zual geyol gaxuduyethel thehem blarl zeyor vuduyel.`
+> `zual geyol gwezuduyel thehem blarl zeyor vuduyel.`
 >
-> [z-everything | g-person] | g-agent-x-teach-th-role | [th-iff | bl-that-clause] | z-←person | v-teach
+> [z-everything | g-person] | g-role-agent-teach | [th-iff | bl-that-clause] | z-←person | v-teach
 >
 > "By definition, a person is a teacher if and only if they teach."
 

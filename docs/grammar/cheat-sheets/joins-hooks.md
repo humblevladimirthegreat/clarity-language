@@ -87,7 +87,7 @@ A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `x
 | [The kind itself](../joins.md#kind-reference) | `zuan gagozol` | *the cat* (as a species) | I |
 | [No K](../joins.md#universals-domains-generics) | `zul gagozol` | *no cat* | I |
 | [Not every K](../joins.md#not-every) | `zual gagozol zul` | *not every cat* | I |
-| [Every, by set](../joins.md#kind-domains) | `zual guxanathom blayan` | *everyone we know* | I |
+| [Every, by set](../joins.md#kind-domains) | `zual gwodanam blayan` | *everyone we know* | I |
 | [Respectively](../joins.md#respectively) | `zuzozen zolazun zal vawebol dagozol dudozol wubam dal` | *saw a cat and a dog, respectively* | I |
 | [Deny the whole list](../joins.md#exclusivity-and-denying-a-whole-list) | `vowurel varuvel val vul` | *not both walk and run* | I |
 | [Deny each item](../joins.md#exclusivity-and-denying-a-whole-list) | `vowurel varuvel vul` | *neither walk nor run* | B |

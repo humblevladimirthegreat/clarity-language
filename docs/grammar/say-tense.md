@@ -291,7 +291,7 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 |---------|--------|
 | *capable* / *ability* / *capability* | the verb or quality with **`xa`**: `zuzozen gezuyoxal` (*able to sing*); with no single verb, **`hodaxal`** |
 | *afford* (*can pay*) | `zuzozen varaxal danal` |
-| *visible* / *invisible* | the undergoer with ability: `zudozol guxaweboxal` / `zudozol guxaweboxul` |
+| *visible* / *invisible* | the undergoer with ability: `zudozol gwadaweboxal` / `zudozol gwadaweboxul` |
 | *blind* | `zuzozen gaweboxul` (*can never see*) |
 | *possible* / *potentially* | MAY **`thomam`** |
 | *acceptable* / *privilege* | permission **`hwaval`** |
@@ -300,9 +300,9 @@ English adjectives and verbs built on *can* and *may* take the same forms as the
 | *have to* | **`hwavem`** |
 | *do* / *does* / *did* (helper: *Do you walk?*) | no word: the verb under **`yol`** |
 
-> `zudozol guxaweboxal.`
+> `zudozol gwadaweboxal.`
 >
-> z-dog | g-patient-x-eye-able
+> z-dog | g-episode-patient-eye-able
 >
 > "The dog is visible."
 
@@ -338,15 +338,15 @@ English *must* and *should* differ in what stands behind the demand. Choose the 
 >
 > "Uzozen must walk; it's the rule."
 
-> `zuzozen vezuyel thawothem blaxer.`
+> `zuzozen vezuyel thawothem blwazer.`
 >
-> z-Uzozen | v-tell | [th-relatedness-ought-offered | bl-←agent.self]
+> z-Uzozen | v-tell | [th-relatedness-ought-offered | bl-←episode-agent.self]
 >
 > "Uzozen should talk; it would help them feel connected." (unasked advice)
 
-> `zuzozen thawothem blaxer vezuyel vul.`
+> `zuzozen thawothem blwazer vezuyel vul.`
 >
-> z-Uzozen | [th-relatedness-ought-offered | bl-←agent.self] | [v-tell | v-not]
+> z-Uzozen | [th-relatedness-ought-offered | bl-←episode-agent.self] | [v-tell | v-not]
 >
 > "Uzozen shouldn't talk; it would hurt their sense of connection." (unasked advice)
 

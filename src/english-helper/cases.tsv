@@ -25,9 +25,9 @@ Uzozen is glad that it rains.	that	first:feeling-that	*that* after a feeling wor
 # Kin and people
 My sister couldn't come yesterday.	sister	link:say-people-places.md#kin-words	a kin word goes to its table
 The teacher sings.	teacher	first:role	a doer noun with no root gets a role compound
-The teacher sings.	teacher	link:roles.md#usual-role	the usual role comes with it
+The teacher sings.	teacher	link:roles.md#one-time-or-a-practice	the practiced role comes with it
 The flower sings.	flower	not:roles.md#role-compounds	a noun with a root of its own is no doer
-The flower sings.	flower	not:roles.md#usual-role	a noun with a root of its own is no doer
+The flower sings.	flower	not:roles.md#one-time-or-a-practice	a noun with a root of its own is no doer
 # Clause openers
 Uzozen tells Olazun that the dog runs.	that	first:that-clause	*that* opening a content clause
 The dog that runs is big.	that	first:relative-that	*that* after a noun opens a relative clause

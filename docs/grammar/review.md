@@ -72,7 +72,7 @@ Short drills for Beginner. Try each item before opening **Show answer**.
 
 z-Ahelan | d-guard | v-see . z-←guard | v-run
 
-**Also correct:** `zahelan dagayul vawebol. zuxar varuvel.`
+**Also correct:** `zahelan dagayul vawebol. zwadar varuvel.`
 
 **Rule:** [Resume with -r](pronouns.md#resume-r)
 :::
@@ -233,16 +233,16 @@ z-helmet | g-physical-met-lasting
 **Rule:** [Met](sakes.md#met)
 :::
 
-**7.** *Uzozen sees someone who was punched.* `zuzozen duxanuvul vawebol.` or `zuzozen daxanuvul vawebol.`
+**7.** *Uzozen sees someone who was punched.* `zuzozen dwadanuvul vawebol.` or `zuzozen dwazanuvul vawebol.`
 
 ::: details Show answer
-`zuzozen duxanuvul vawebol.`
+`zuzozen dwadanuvul vawebol.`
 
-z-Uzozen | d-patient-x-punch | v-see
+z-Uzozen | d-episode-patient-punch | v-see
 
-Role vowel **`u`** names who the punch happens to; **`a`** is who punches.
+Part **`d`** names who the punch happens to; **`z`** is who punches.
 
-**Rule:** [The undergoer](roles.md#the-undergoer-u)
+**Rule:** [The undergoer](roles.md#the-undergoer-d)
 :::
 
 **8.** *a wood basket* `zulexabowal.` or `zabowaxulel.`
@@ -569,12 +569,12 @@ z-Olazun | v-climb | [through | b-fog]
 **Rule:** [Extra noun: stacked vowels](hooks.md#extra-noun-intermediate)
 :::
 
-**7.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyel thobather blaxer.` or `zahelan vuguyel thobathor blaxer.`
+**7.** *Ahelan could try cooking, to see whether it's good for their health.* `zahelan vuguyel thobather blwazer.` or `zahelan vuguyel thobathor blwazer.`
 
 ::: details Show answer
-`zahelan vuguyel thobather blaxer.`
+`zahelan vuguyel thobather blwazer.`
 
-z-Ahelan | v-cook | [th-physical-ought-trial | bl-←agent.self]
+z-Ahelan | v-cook | [th-physical-ought-trial | bl-←episode-agent.self]
 
 **`the`** is the *ought*, and **-r** makes it a move worth trying; `thobathor` would be a motive, not advice: Ahelan cooks, serving their health right away.
 

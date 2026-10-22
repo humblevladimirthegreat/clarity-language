@@ -302,9 +302,9 @@ function eventRoots(data: HelperData, verb: string): LexiconSuggestion[] {
 }
 
 /**
- * Role compounds for a doer noun ([role compounds](roles.md#role-compounds)): the usual role
- * (`zaxedehothel` *a teacher*) and the plain doer (`zaxedehol` *someone who teaches*), and, when a
- * noun before it specifies the event, the stacked stem (`zaxodogaxowogathel` *a dog walker*).
+ * Role compounds for a doer noun ([role compounds](roles.md#role-compounds)): the practiced role
+ * (`zwezuduyel` *a teacher*) and the plain doer (`zwazuduyel` *someone who teaches*), and, when a
+ * noun before it specifies the event, the stacked stem (`zwezudozoxowurel` *a dog walker*).
  */
 function roleSuggestions(data: HelperData, t: TaggedTerm, role: string | undefined, modifier: TaggedTerm | undefined): RoleSuggestion[] {
   const verb = doerVerb(t.lemma);
@@ -317,7 +317,7 @@ function roleSuggestions(data: HelperData, t: TaggedTerm, role: string | undefin
     const stems = [...(modRoot ? [{ stem: `${modRoot.form}x${root.form}`, modifier: { english: modifier!.normal, root: modRoot.form } }] : []), { stem: root.form }];
     for (const { stem, modifier: mod } of stems) {
       for (const usual of [true, false]) {
-        const form = `${role}ax${stem}${usual ? "the" : ""}${ending}`;
+        const form = `${role}w${usual ? "e" : "a"}z${stem}${ending}`;
         if (data.wordParses && !data.wordParses(form)) continue;
         out.push({
           kind: "role",
@@ -330,7 +330,7 @@ function roleSuggestions(data: HelperData, t: TaggedTerm, role: string | undefin
           emoji: root.emoji,
           sense: root.sense,
           ...(mod ? { modifier: mod } : {}),
-          link: usual ? "roles.md#usual-role" : "roles.md#role-compounds",
+          link: usual ? "roles.md#one-time-or-a-practice" : "roles.md#role-compounds",
         });
       }
     }

@@ -1,7 +1,10 @@
 import type { OverlayKind } from "../lexicon-search.js";
 
-/** Role compound vowel (roles.md): simplex or stacked. */
-export type RoleVowel = "a" | "u" | "o";
+/**
+ * Role word part consonant (roles.md#role-compounds): the slot the participant had in the event, `z` doer, `d` undergoer,
+ * `b` the extra party.
+ */
+export type RolePart = "z" | "d" | "b";
 
 /** Role pointer vowel: `a` same, `o` other, `e` self, `u` unsaid (pronouns.md#role-pointers). */
 export type PointerVowel = "a" | "e" | "o" | "u";
@@ -76,13 +79,13 @@ export type MorphWordFamily =
       rightRoots?: string[];
       /** Viewpoint lateral `DIR th o`: the hosted `/b/` landmark's own facing (roles.md#landmark-facing). */
       landmark?: boolean;
-      /** Role vowel (role compound or role pointer). */
-      roleVowel?: RoleVowel;
+      /** Role compound or role pointer: the part consonant. */
+      part?: RolePart;
       /** Role pointer: which event (`a` same, `o` other, `e` self, `u` unsaid; pronouns.md#role-pointers). */
       pointerVowel?: PointerVowel;
-      /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`). */
+      /** Values / label-scope / ability stance vowel (also role + ability on `/ɡ/`, `gwezuduyexal`). */
       stanceVowel?: ScopeVowel;
-      /** Role compound + label scope (`gaxedehothal`): the scope vowel; predication.md#label-scope. */
+      /** Role compound or role pointer: the label scope vowel(s) after `w` (`zwezuduyel`; roles.md#scope). */
       scopeVowel?: ScopeVowel;
       /** Emotion compose: sake horizon letter moved mid-word (sakes.md#emotion-compose). */
       horizon?: "l" | "m" | "r";
@@ -436,11 +439,11 @@ export type AnaphorKind = "content" | "number" | "role" | "pointer" | "tag" | "t
 export type AnaphorBind = {
   pronoun: LexWord;
   kind: AnaphorKind;
-  /** Role compound or role pointer vowel (roles.md#role-compounds). */
-  roleVowel?: RoleVowel;
+  /** Role compound or role pointer part (roles.md#role-compounds). */
+  part?: RolePart;
   /** Role pointer: which event it reads (pronouns.md#role-pointers). */
   pointerVowel?: PointerVowel;
-  /** A self pointer (`e`) that would name its own slot (`zaxer` in `/z/`): never a sentence. */
+  /** A self pointer (`e`) that would name its own slot (`zwazer` in `/z/`): never a sentence. */
   ownSlot?: true;
   /** Absent when no prior match. */
   antecedent?: LexWord;

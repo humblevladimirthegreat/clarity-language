@@ -155,12 +155,12 @@ With a name or a resumed noun, the pair is a [property](../predication.md#existe
 
 ### How far a label reaches {#label-scope}
 
-Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, and on a [role compound](../predication.md#scope-role).
+Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`. A [role word](../predication.md#scope-role) writes the same vowels right after its **`w`**.
 
 | Vowel | Reach | Example | English | Stage |
 |-------|-------|---------|---------|-------|
 | [`tha`](../predication.md#scope-occasion) | this episode | `zuzozen valamuthal.` | *Uzozen lied this once.* | I |
-| [`the`](../predication.md#scope-occupation) | a practiced role | `zolazun gaxuduyethel.` | *Olazun is a teacher.* | I |
+| [`the`](../predication.md#scope-occupation) | a practiced role | `zuzozen valamuthel.` | *Uzozen lies as their craft.* | I |
 | [`tho`](../predication.md#scope-relative) | this pair (`/b/` follows) | `zuzozen golayothom blolazun.` | *Uzozen is a stranger to Olazun.* | I |
 | [`thu`](../predication.md#scope-type) | a type across scenes | `zolazun ganumuthul.` | *Olazun is an anxious type.* | I |
 

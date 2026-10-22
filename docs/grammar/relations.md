@@ -459,7 +459,7 @@ With no `bl-` word after a joined subject, the tie points at the other members, 
 >
 > "Uzozen and Olazun are friends."
 
-Any root whose abstract sense is a tie works this way (`gohuyam` *partner of*, `gawom` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zolazun gumayam bluzozen`, `zoxumayar` is *the other party of that friendship* (Uzozen).
+Any root whose abstract sense is a tie works this way (`gohuyam` *partner of*, `gawom` *bound to*). To name the other side of the tie without repeating anyone, use the [role compound](roles.md#role-compounds) with **`o`**: after `zolazun gumayam bluzozen`, `zwabumayar` is *the other party of that friendship* (Uzozen).
 
 <!-- cheat-sheet: linking-clauses -->
 | Agebon | Use | English | Same root as |

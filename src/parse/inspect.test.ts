@@ -140,7 +140,7 @@ describe("inspectText", () => {
     assert.equal(sake.why?.line, "sakes (sake + th)");
     assert.equal(sake.why?.href, "sakes.html");
 
-    const role = inspectText("zaxozulal", tables).tokens[0];
+    const role = inspectText("zwazozulal", tables).tokens[0];
     assert.equal(role?.kind, "word");
     if (role?.kind !== "word") return;
     assert.equal(role.why?.line, "role compound");

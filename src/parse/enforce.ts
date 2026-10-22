@@ -380,7 +380,6 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (word.pos === "th" && (stemRoot === CLOSED.green || stemRoot === CLOSED.noEntry || stemRoot === CLOSED.memo) && word.ending !== "n") {
     throw new ConstructionError("retiredDeonticRoot", word.raw);
   }
-  if (word.family.kind === "say") enforceSay(word);
   // The map and check roots are no `/h/` word: a plan or decision is in a mind, a `/th/` stance (intention.md#plan).
   if (word.pos === "h" && (stemRoot === CLOSED.map || stemRoot === CLOSED.check) && word.ending !== "n") {
     throw new ConstructionError("retiredIntentionRoot", word.raw);
@@ -429,7 +428,6 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
     if (word.ending === "n" && (family.rightRoots ?? []).some((root) => rolePronounRoots().has(root))) {
       throw new ConstructionError("roleCompoundStem", word.raw);
     }
-    if (family.scopeVowel && word.pos && !SCOPE_POS.has(word.pos)) throw new ConstructionError("labelScopeSlot", word.raw);
   }
   if (family.kind === "x" && family.xFamily === "ability" && word.reading === "ability" && word.pos) {
     const hostless = tables.hostlessAbilityRoot !== null && family.leftRoots[0] === tables.hostlessAbilityRoot;
@@ -633,11 +631,6 @@ function enforceFeelingLandmark(words: LexWord[], hosted: Hosted | undefined): v
       throw new ConstructionError("feelingLandmark", `${word.raw} ${hosted.bound.raw}`);
     }
   }
-}
-
-/** A say word fills `/h/` only: whose say it is concerns the whole clause (sakes.md#say-words). */
-function enforceSay(word: LexWord): void {
-  if (word.pos !== "h" || word.gl || word.bl) throw new ConstructionError("saySlot", word.raw);
 }
 
 /** Whose say: a `bl-` word names someone over the act (`v`), or, under pair scope `o`, the one party a participant's say is toward (sakes.md#say-words). */
@@ -985,18 +978,12 @@ function enforceGlLeans(result: ParseResult): void {
 }
 
 /**
- * Role pointers (pronouns.md#role-pointers): nouns, holders, or a lateral's facing anchor only, never their own slot,
- * never unbound; the new-one and share endings have their own limits.
+ * Role pointers (pronouns.md#role-pointers): nouns only, never their own slot, never unbound; the new-one and share
+ * endings have their own limits.
  */
 function enforcePointer(bind: AnaphorBind): void {
   const word = bind.pronoun;
-  const family = word.family;
-  // In a `th` seam: the holder slot (`thunemaxar`) or the facing anchor of a viewpoint lateral (`hewezathaxar`).
-  const seam = family.kind === "x" && (family.xFamily === "holder" || family.xFamily === "lateral");
-  const bare = family.kind === "x" && family.xFamily === "pointer" && family.leftRoots.length === 0;
-  if (!seam && !(bare && (word.pos === "z" || word.pos === "d" || word.pos === "b"))) {
-    throw new ConstructionError("pointerSlot", word.raw);
-  }
+  if (word.pos !== "z" && word.pos !== "d" && word.pos !== "b") throw new ConstructionError("pointerSlot", word.raw);
   if (word.ending === "m" && bind.pointerVowel === "e") throw new ConstructionError("pointerShareSelf", word.raw);
   if (word.ending === "m" && word.plural) throw new ConstructionError("pointerSharePlural", word.raw);
   if (word.ending === "l" && bind.pointerVowel === "u") throw new ConstructionError("pointerNewUnsaid", word.raw);

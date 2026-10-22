@@ -208,19 +208,17 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.equal(word.family.kind === "x" && word.family.xFamily, "sake");
   });
 
-  it("parses hewezathaxar as a viewpoint lateral whose anchor is a role pointer", () => {
-    const word = parseOk("hewezathaxar");
+  it("parses hewezathuzozer as a viewpoint lateral that resumes its anchor; a pointer is no anchor", () => {
+    const word = parseOk("hewezathuzozer");
     assert.deepEqual(word.family, {
       kind: "x",
       xFamily: "lateral",
       leftRoots: ["eweza"],
-      rightRoots: [],
-      roleVowel: "a",
-      pointerVowel: "a",
+      rightRoots: ["uzoze"],
     });
     assert.equal(word.ending, "r");
-    // Only a pointer on -r names someone whose facing can count.
-    assert.throws(() => parseWord("hewezathaxal"));
+    assert.throws(() => parseWord("hewezathwazar"));
+    assert.throws(() => parseWord("hewezathaxar"));
   });
 
   it("parses gewezethazawaxululon as a viewpoint lateral with a multipart anchor", () => {
@@ -260,17 +258,18 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     }
   });
 
-  it("parses gaxuwuruxam as role + ability on /ɡ/ only (intention.md § Ability)", () => {
-    const word = parseOk("gaxuwuruxam");
+  it("parses gwazuwuruxam as role + ability on /ɡ/ only (intention.md § Ability)", () => {
+    const word = parseOk("gwazuwuruxam");
     assert.deepEqual(word.family, {
       kind: "x",
       xFamily: "role",
       leftRoots: [],
-      roleVowel: "a",
+      scopeVowel: "a",
+      part: "z",
       rightRoots: ["uwuru"],
       stanceVowel: "a",
     });
-    assert.throws(() => parseWord("vaxuwuruxam"));
+    assert.throws(() => parseWord("vwazuwuruxam"));
   });
 
   it("parses stacked label-scope vowels on a content root and a role compound", () => {
@@ -280,7 +279,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
       assert.equal(word.family.xFamily, "sake");
       assert.equal(word.family.stanceVowel, "ao");
     }
-    const role = parseOk("gaxuduyethuel");
+    const role = parseOk("gwuezuduyel");
     if (role.family.kind === "x") {
       assert.equal(role.family.xFamily, "role");
       assert.equal(role.family.scopeVowel, "ue");
@@ -299,7 +298,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     for (const locus of ["a", "o", "uo", "ae"]) assert.equal((parseOk(`wuwathur${locus}r`).family as { locus?: string }).locus, locus);
   });
 
-  it("reads no stacked role vowel: the hooked parts and the result are not role compounds (roles.md)", () => {
+  it("reads no hooked-part or result role compound (roles.md)", () => {
     for (const raw of ["daoxeguyel", "daoxar", "daexarayel", "daexar", "dexezuvol", "zuexurozum", "duoxowurel"]) {
       assert.throws(() => parseWord(raw), WordParseError, raw);
     }
@@ -447,14 +446,31 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     });
   });
 
-  it("parses o x ROOT as recipient role (roles.md)", () => {
-    const word = parseOk("zoxezehel");
+  it("parses w + scope + b + ROOT as recipient role (roles.md)", () => {
+    const word = parseOk("zwabezehel");
     assert.equal(word.family.kind, "x");
     if (word.family.kind === "x") {
       assert.equal(word.family.xFamily, "role");
-      assert.equal(word.family.roleVowel, "o");
+      assert.equal(word.family.scopeVowel, "a");
+      assert.equal(word.family.part, "b");
       assert.deepEqual(word.family.rightRoots, ["ezehe"]);
     }
+  });
+
+  it("tells a pointer from a compound after the part consonant (zwazar, zwazarayel)", () => {
+    const pointer = parseOk("zwazar");
+    assert.equal(pointer.family.kind === "x" && pointer.family.xFamily, "pointer");
+    const compound = parseOk("zwazarayel");
+    assert.equal(compound.family.kind === "x" && compound.family.xFamily, "role");
+  });
+
+  it("reads the pointer shape on /h/ as a say word", () => {
+    assert.equal(parseOk("hwazam").family.kind, "say");
+    assert.equal(parseOk("zwazam").family.kind, "x");
+  });
+
+  it("rejects the old role shape and a th scope after a role stem", () => {
+    for (const raw of ["zaxar", "zaxuduyel", "zwazuduyethel", "xuxun"]) assert.throws(() => parseWord(raw), WordParseError, raw);
   });
 });
 

@@ -107,85 +107,82 @@ describe("resolve — role pointers (pronouns.md#role-pointers)", () => {
   }
 
   it("a: the latest predicate with that role filled", () => {
-    assert.deepEqual(pointers("zuzozen vowurel. zaxar vuhohol."), ["zaxar→zuzozen"]);
-    assert.deepEqual(pointers("zuzozen dolazun vawebol. zuxar varuvel."), ["zuxar→dolazun"]);
+    assert.deepEqual(pointers("zuzozen vowurel. zwazar vuhohol."), ["zwazar→zuzozen"]);
+    assert.deepEqual(pointers("zuzozen dolazun vawebol. zwadar varuvel."), ["zwadar→dolazun"]);
   });
 
   it("a on a core role skips predicates without that slot", () => {
-    assert.deepEqual(pointers("zuzozen dolazun vawebol. zuzozen vowurel. zuxar varuvel."), ["zuxar→dolazun"]);
-    assert.deepEqual(pointers("zuzozen vezuyel darl. verulal. zaxar vowurel."), ["zaxar→zuzozen"]);
+    assert.deepEqual(pointers("zuzozen dolazun vawebol. zuzozen vowurel. zwadar varuvel."), ["zwadar→dolazun"]);
+    assert.deepEqual(pointers("zuzozen vezuyel darl. verulal. zwazar vowurel."), ["zwazar→zuzozen"]);
   });
 
   it("o: the nearest earlier predicate with someone else in that role", () => {
-    assert.deepEqual(pointers("zuzozen vowurel. zolazun varuvel. zolazun vuhohol. zaxor vezuvol."), ["zaxor→zuzozen"]);
+    assert.deepEqual(pointers("zuzozen vowurel. zolazun varuvel. zolazun vuhohol. zwazor vezuvol."), ["zwazor→zuzozen"]);
   });
 
   it("o compares referents, so a resumed name is the same person", () => {
-    assert.throws(() => parseText("zuzozen vowurel. zuzozer vuhohol. zaxor vezuvol."), /needs an earlier predicate/);
+    assert.throws(() => parseText("zuzozen vowurel. zuzozer vuhohol. zwazor vezuvol."), /needs an earlier predicate/);
   });
 
   it("e: this clause's predicate", () => {
-    assert.deepEqual(pointers("zuzozen vawebol daxer."), ["daxer→zuzozen"]);
+    assert.deepEqual(pointers("zuzozen vawebol dwazer."), ["dwazer→zuzozen"]);
   });
 
   it("the extra party is a verb's unhosted /b/ or a /ɡ/ predicate's hosted /b/", () => {
-    assert.deepEqual(pointers("zuzozen bolazun vezuyel darl. zoxar varuvel."), ["zoxar→bolazun"]);
-    assert.deepEqual(pointers("zuzozen gawom blolazun. zoxar varuvel."), ["zoxar→blolazun"]);
+    assert.deepEqual(pointers("zuzozen bolazun vezuyel darl. zwabar varuvel."), ["zwabar→bolazun"]);
+    assert.deepEqual(pointers("zuzozen gawom blolazun. zwabar varuvel."), ["zwabar→blolazun"]);
   });
 
   it("a joined slot is one group", () => {
-    assert.deepEqual(pointers("zuzozen zolazun zal vowurel. zaxarx vuhohol."), ["zaxarx→zal"]);
-    assert.deepEqual(pointers("zuzozen zolazun zel gamahum. zaxarx varuvel."), ["zaxarx→zel"]);
+    assert.deepEqual(pointers("zuzozen zolazun zal vowurel. zwazarx vuhohol."), ["zwazarx→zal"]);
+    assert.deepEqual(pointers("zuzozen zolazun zel gamahum. zwazarx varuvel."), ["zwazarx→zel"]);
   });
 
   it("span interiors add no anchors", () => {
-    assert.deepEqual(pointers("zuzozen vowurel. d[zolazun varuvel] vawebol. zaxar vuhohol."), ["zaxar→zuzozen"]);
+    assert.deepEqual(pointers("zuzozen vowurel. d[zolazun varuvel] vawebol. zwazar vuhohol."), ["zwazar→zuzozen"]);
   });
 
-  it("fills the holder slot of a holder seam", () => {
-    assert.deepEqual(pointers("zuzozen vowurel. zolazun theyemaxar velurul."), ["theyemaxar→zuzozen"]);
-  });
-
-  it("is a viewpoint lateral's facing anchor (roles.md#viewpoint-laterals)", () => {
-    assert.deepEqual(pointers("zuzozen vowurel. zolazun vuhohol howuhethaxar."), ["howuhethaxar→zuzozen"]);
-    assert.deepEqual(pointers("zuzozen vowurel howuhethaxer."), ["howuhethaxer→zuzozen"]);
-    assert.throws(() => parseText("zolazun vuhohol howuhethaxar."), /earlier predicate/);
+  it("is no holder and no facing anchor: a seam resumes the person (roles.md#viewpoint-laterals)", () => {
+    assert.throws(() => parseText("zuzozen vowurel. zolazun theyemaxar velurul."));
+    assert.throws(() => parseText("zuzozen vowurel. zolazun vuhohol howuhethwazar."));
+    const lateral = resolveOf("zuzozen vowurel. zolazun vuhohol howuhethuzozer.").anaphors.find((a) => a.pronoun.raw === "howuhethuzozer");
+    assert.equal(lateral?.antecedent?.raw, "zuzozen");
   });
 
   it("-l: a new one of the participant's kind, never the same referent", () => {
-    assert.deepEqual(pointers("zuzozen dugedol vawebol. zolazun duxal vawebol."), ["duxal→dugedol"]);
-    const { anaphors } = resolveOf("zuzozen dugedol vawebol. zolazun duxal vawebol. zudozol duxar vawebol.");
-    assert.equal(anaphors.find((a) => a.pronoun.raw === "duxar")?.antecedent?.raw, "duxal");
+    assert.deepEqual(pointers("zuzozen dugedol vawebol. zolazun dwadal vawebol."), ["dwadal→dugedol"]);
+    const { anaphors } = resolveOf("zuzozen dugedol vawebol. zolazun dwadal vawebol. zudozol dwadar vawebol.");
+    assert.equal(anaphors.find((a) => a.pronoun.raw === "dwadar")?.antecedent?.raw, "dwadal");
   });
 
   it("-m: the participant's part, not the participant", () => {
-    assert.deepEqual(pointers("zuzozen dolazun vanuvul. zaxam genamum."), ["zaxam→zuzozen"]);
+    assert.deepEqual(pointers("zuzozen dolazun vanuvul. zwazam genamum."), ["zwazam→zuzozen"]);
   });
 
   it("u: the latest predicate that left that role unsaid", () => {
-    assert.deepEqual(pointers("dugedol vawebol. zaxur varuvel."), ["zaxur→vawebol"]);
-    assert.deepEqual(pointers("dugedol vawebol. zaxum genamum."), ["zaxum→vawebol"]);
-    assert.throws(() => parseText("zuzozen vowurel. zaxur vuhohol."), /earlier predicate/);
+    assert.deepEqual(pointers("dugedol vawebol. zwazur varuvel."), ["zwazur→vawebol"]);
+    assert.deepEqual(pointers("dugedol vawebol. zwazum genamum."), ["zwazum→vawebol"]);
+    assert.throws(() => parseText("zuzozen vowurel. zwazur vuhohol."), /earlier predicate/);
   });
 
   it("rejects a share with e or -x, a new one with u or on a special pronoun", () => {
-    assert.throws(() => parseText("zuzozen dolazun vanuvul. zaxem genamum."), /never takes the self vowel/);
-    assert.throws(() => parseText("zuzozen dolazun vanuvul. zaxamx genamum."), /takes no -x/);
-    assert.throws(() => parseText("dugedol vawebol. zaxul varuvel."), /unsaid pointer/);
-    assert.throws(() => parseText("zuwon vowurel. zaxal vuhohol."), /special, topic, or generic/);
+    assert.throws(() => parseText("zuzozen dolazun vanuvul. zwazem genamum."), /never takes the self vowel/);
+    assert.throws(() => parseText("zuzozen dolazun vanuvul. zwazamx genamum."), /takes no -x/);
+    assert.throws(() => parseText("dugedol vawebol. zwazul varuvel."), /unsaid pointer/);
+    assert.throws(() => parseText("zuwon vowurel. zwazal vuhohol."), /special, topic, or generic/);
   });
 
   it("rejects pointers with no referent, on the wrong slot, or e on its own slot", () => {
-    assert.throws(() => parseText("zaxar vowurel."), /needs an earlier predicate/);
-    assert.throws(() => parseText("zuzozen vowurel. vaxar."), /fills \/z\//);
-    assert.throws(() => parseText("zaxer vowurel."), /not the one it fills/);
+    assert.throws(() => parseText("zwazar vowurel."), /needs an earlier predicate/);
+    assert.throws(() => parseText("zuzozen vowurel. vwazar."), /fills \/z\//);
+    assert.throws(() => parseText("zwazer vowurel."), /not the one it fills/);
   });
 });
 
 describe("resolve — span and number anaphors", () => {
   it("has no span resume: a span is an ordinary noun for a role pointer (spans.md)", () => {
     assert.throws(() => parseText("d[hi] vawalal. d[=] vayul."));
-    const { anaphors } = resolveOf("zolazun d[hi] vezuyel. zuzozen duxar vawebol.");
+    const { anaphors } = resolveOf("zolazun d[hi] vezuyel. zuzozen dwadar vawebol.");
     const pointer = anaphors.find((a) => a.kind === "pointer");
     assert.equal(pointer?.antecedent?.raw, "d[hi]");
   });
@@ -249,7 +246,7 @@ describe("resolve — tag pronouns (pronouns.md#tag-pronouns)", () => {
   });
 
   it("tags a role pointer, which then stays put", () => {
-    assert.deepEqual(tags("zuzozen vowurel. zaxar zwal varuvel. zolazun vowurel. zwar vuhohol."), ["zwal→zaxar", "zwar→zaxar"]);
+    assert.deepEqual(tags("zuzozen vowurel. zwazar zwal varuvel. zolazun vowurel. zwar vuhohol."), ["zwal→zwazar", "zwar→zwazar"]);
   });
 
   it("recalls two tags at once with a stacked vowel, and shares their parts in one event", () => {
@@ -271,10 +268,10 @@ describe("resolve — tag pronouns (pronouns.md#tag-pronouns)", () => {
     const { anaphors } = resolveOf("zuzozen zwal dolazun vanuvul. zahelan dwam vawebol.");
     const share = anaphors.find((a) => a.pronoun.raw === "dwam");
     assert.equal(share?.antecedent?.raw, "zuzozen");
-    assert.equal(share?.roleVowel, "a");
+    assert.equal(share?.part, "z");
     const object = resolveOf("zuzozen zwal vowurel. zolazun dwar vanuvul. zahelan dwam vawebol.").anaphors.find((a) => a.pronoun.raw === "dwam");
     assert.equal(object?.antecedent?.raw, "dwar");
-    assert.equal(object?.roleVowel, "u");
+    assert.equal(object?.part, "d");
   });
 
   it("keeps a tag through a topic change, and drops it after a goodbye", () => {
@@ -307,8 +304,8 @@ describe("resolve — topic (pronouns.md#topic)", () => {
   });
 
   it("takes a role compound as the topic, and returns to it by whole stem", () => {
-    assert.deepEqual(topics("xaxuduyel zuzozen dalon vawebol. zalon varuvel."), ["dalon→xaxuduyel", "zalon→xaxuduyel"]);
-    assert.deepEqual(topics("xaxuduyel. xuzozen. xaxuduyer. zalon varuvel."), ["zalon→xaxuduyer"]);
+    assert.deepEqual(topics("xwazuduyel zuzozen dalon vawebol. zalon varuvel."), ["dalon→xwazuduyel", "zalon→xwazuduyel"]);
+    assert.deepEqual(topics("xwazuduyel. xuzozen. xwazuduyer. zalon varuvel."), ["zalon→xwazuduyer"]);
   });
 
   it("takes any compound as the topic", () => {
@@ -337,17 +334,17 @@ describe("resolve — topic (pronouns.md#topic)", () => {
   });
 
   it("restarts the role pointers at every topic change", () => {
-    assert.throws(() => parseText("zuzozen vowurel. xolazun zaxar vuhohol."), /role pointer/);
-    assert.deepEqual(pointers("zuzozen vowurel. xuzozer zolazun varuvel. zaxar vuhohol."), ["zaxar→zolazun"]);
+    assert.throws(() => parseText("zuzozen vowurel. xolazun zwazar vuhohol."), /role pointer/);
+    assert.deepEqual(pointers("zuzozen vowurel. xuzozer zolazun varuvel. zwazar vuhohol."), ["zwazar→zolazun"]);
   });
 
   it("starts a new stretch when the current topic is returned to", () => {
-    assert.throws(() => parseText("xuzozen zolazun vowurel. xuzozer zaxar vuhohol."), /role pointer/);
+    assert.throws(() => parseText("xuzozen zolazun vowurel. xuzozer zwazar vuhohol."), /role pointer/);
   });
 
   it("lets a return to a linker stand as that linker again", () => {
-    const text = "xuzozen zolazun vowurel. xahem zahelan vowurel. xaher zaxar vuhohol.";
-    assert.deepEqual(pointers(text), ["zaxar→zahelan"]);
+    const text = "xuzozen zolazun vowurel. xahem zahelan vowurel. xaher zwazar vuhohol.";
+    assert.deepEqual(pointers(text), ["zwazar→zahelan"]);
   });
 
   it("leaves a written quote's interior out of the topic and the tags", () => {
@@ -364,22 +361,22 @@ describe("resolve — topic (pronouns.md#topic)", () => {
 });
 
 describe("resolve — role anaphors (roles.md)", () => {
-  it("binds zaxozowor to the prior conflict verb", () => {
-    const { anaphors } = resolveOf("zar dugobon vozowol. zaxozowor vurunul.");
+  it("binds zwazozowor to the prior conflict verb", () => {
+    const { anaphors } = resolveOf("zar dugobon vozowol. zwazozowor vurunul.");
     const role = anaphors.find((a) => a.kind === "role");
     assert.ok(role);
-    assert.equal(role!.pronoun.raw, "zaxozowor");
-    assert.equal(role!.roleVowel, "a");
+    assert.equal(role!.pronoun.raw, "zwazozowor");
+    assert.equal(role!.part, "z");
     assert.equal(role!.antecedent?.raw, "vozowol");
   });
 
 
-  it("binds zoxezuyor as recipient of the prior tell verb", () => {
-    const { anaphors } = resolveOf("zuzozen vezuyol. zoxezuyor vurunul.");
+  it("binds zwabezuyor as recipient of the prior tell verb", () => {
+    const { anaphors } = resolveOf("zuzozen vezuyol. zwabezuyor vurunul.");
     const role = anaphors.find((a) => a.kind === "role");
     assert.ok(role);
-    assert.equal(role!.pronoun.raw, "zoxezuyor");
-    assert.equal(role!.roleVowel, "o");
+    assert.equal(role!.pronoun.raw, "zwabezuyor");
+    assert.equal(role!.part, "b");
     assert.equal(role!.antecedent?.raw, "vezuyol");
   });
 });

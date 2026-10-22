@@ -197,7 +197,7 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 | *someone, I don't know who* | **`zar`**, then `zuwon vanam vul dorl zar.` | [Unspecified member](joins.md#unspecified-member-r-phrase), [dependent clauses](dependents.md#dependent-clauses) |
 | *you know the one* / *that person* (we both know) | **-r** with nothing earlier: `zeyor` | [Resume](pronouns.md#resume-r) |
 | *everyone here* | **`zual geyol`** | [Universals](joins.md#universals-domains-generics) |
-| *everyone we know* / *nobody we know* | **`zual guxanathom blayan`** / **`zal guxanathom blayan`** | [Every and none, by set](joins.md#kind-domains) |
+| *everyone we know* / *nobody we know* | **`zual gwodanam blayan`** / **`zal gwodanam blayan`** | [Every and none, by set](joins.md#kind-domains) |
 | *everyone in the family* / *everyone from the town* | **`zual gobem blavayal`** / **`zual gaham blahaham`** | [Of relations](relations.md#of-relations) |
 | *people in general* | **`zuam geyol`**, or **`eyon`** | [People in general](joins.md#generic-neighbors) |
 | *according to someone* (a source you won't name / don't know) | **`thebam blumon`**, then `zuwon vanam dorl zar.` / `zuwon vanam vul dorl zar.` | [Source](knowing.md#source) |
@@ -242,22 +242,22 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
 | *walking* (*a walking dog*, *Uzozen is walking*) | the event root on `/ɡ/`: `dudozol gowurel` | [In progress](predication.md#in-progress) |
-| *walking* after a thing root (*a sitting guard*) | a bare role compound: `dagayul gaxuhohol` (*a guard who sits*) | [Role compounds](roles.md#role-compounds) |
-| *someone who teaches*, *whoever teaches* | a bare role compound: `zaxuduyel` | [Role compounds](roles.md#role-compounds) |
-| *a teacher*, *a fighter*, *a dog walker* (a usual role or job) | the role compound plus **`the`**: `zaxuduyethel` | [The usual role](roles.md#usual-role) |
-| *the one teaching* (this event) | the role compound on **-r**: `zaxuduyer` | [This instance](roles.md#this-instance-r) |
+| *walking* after a thing root (*a sitting guard*) | a role compound with scope **`a`**: `dagayul gwazuhohol` (*a guard who sits*) | [Role compounds](roles.md#role-compounds) |
+| *someone who teaches*, *whoever teaches* | a role compound with scope **`a`**: `zwazuduyel` | [Role compounds](roles.md#role-compounds) |
+| *a teacher*, *a fighter*, *a dog walker* (a usual role or job) | the role compound with scope **`e`**: `zwezuduyel` | [One time or a practice](roles.md#one-time-or-a-practice) |
+| *the one teaching* (this event) | the role compound on **-r**: `zwazuduyer` | [This instance](roles.md#this-instance-r) |
 | *often lies*, *usually walks* | a [restrictor](restrictors.md): `huam`, `war` | [Always](restrictors.md#always-hual) |
 | *angry this time*, *lied this once* | **`tha`** on the root: `gunemuthal` | [This episode](predication.md#scope-occasion) |
 | *a stranger to Olazun*, *lying, as far as Olazun is concerned* | **`tho`** plus `/b/`: `golayothom blolazun` | [This pair](predication.md#scope-relative) |
 | *a lying type*, *an anxious type* | **`thu`** on the root: `zuzozen valamuthul` | [Type across scenes](predication.md#scope-type) |
 | *this once, to Olazun* | **`thao`** plus `/b/`: `valamuthaol blolazun` | [Stacked scope](predication.md#scope-stacks) |
-| *becoming a teacher* | **`thoe`**: `gaxuduyethoel` | [Stacked scope](predication.md#scope-stacks) |
-| *not as a teacher* | **`thue`**: `gaxuduyethuel` | [Stacked scope](predication.md#scope-stacks) |
-| *using teacher (as a tool)* | **`thae`**: `gaxuduyethael` | [Stacked scope](predication.md#scope-stacks) |
+| *becoming a teacher* | scope **`oe`**: `gwoezuduyel` | [Scope across scenes](roles.md#scope) |
+| *not as a teacher* | scope **`ue`**: `gwuezuduyel` | [Scope across scenes](roles.md#scope) |
+| *using teacher (as a tool)* | scope **`ae`**: `gwaezuduyel` | [Scope across scenes](roles.md#scope) |
 | *a lying type, except this time* | **`thua`**: `valamuthual` | [Stacked scope](predication.md#scope-stacks) |
 | *angry as a type, except with Olazun* | **`thuo`** plus `/b/`: `gunemuthuol blolazun` | [Stacked scope](predication.md#scope-stacks) |
-| *seen*, *the one seen* | the undergoer **`u`**: `zuxawebol`, `zuxawebor` | [The undergoer](roles.md#the-undergoer-u) |
-| *visible* / *invisible* (*can be seen*) | the undergoer with ability: `zudozol guxaweboxal` | [Can be](intention.md#role-ability) |
+| *seen*, *the one seen* | the undergoer **`d`**: `zwadawebol`, `zwadawebor` | [The undergoer](roles.md#the-undergoer-d) |
+| *visible* / *invisible* (*can be seen*) | the undergoer with ability: `zudozol gwadaweboxal` | [Can be](intention.md#role-ability) |
 | *walked* (past) | no participle: pick how you know | [Tense](say-tense.md#tense-jobs) |
 | *the guard who fought (that time)* | two sentences | [Which noun](dependents.md#which-noun) |
 
@@ -273,7 +273,7 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 | *anyway, Uzozen …* (after a side topic) | **`or xuzozer …`** | [Return](pronouns.md#topic-return), [resume hooks](hooks.md#hook-resume) |
 | *what are we talking about?* | **`yol zar gahugem.`** | [Asking about the topic](pronouns.md#topic-question) |
 | *one*, generic *you*, *people* (in general) | **`eyon`** | [Generic pronoun](pronouns.md#generic-pronoun) |
-| *the latter* / *the former* (of two just named in the same role) | role pointer **`zaxar`** (*the latter*) / **`zaxor`** (*the other one*); to keep two apart for longer, tag them when you name them (`zudozol zwal`, then `zwar`) | [Role pointers](pronouns.md#role-pointers), [tag pronouns](pronouns.md#tag-pronouns) |
+| *the latter* / *the former* (of two just named in the same role) | role pointer **`zwazar`** (*the latter*) / **`zwazor`** (*the other one*); to keep two apart for longer, tag them when you name them (`zudozol zwal`, then `zwar`) | [Role pointers](pronouns.md#role-pointers), [tag pronouns](pronouns.md#tag-pronouns) |
 | *call it A*, *let A be a dog*, *suppose A tells E* | tag + **-l** after the phrase (**`zudozol zwal`**) or alone for a placeholder (**`zwal`**); then **`zwar`** | [Tag pronouns](pronouns.md#tag-pronouns) |
 
 ### Greetings {#greetings}

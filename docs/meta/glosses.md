@@ -163,7 +163,7 @@ The sentence drops these. A [note](#note-required) carries one only when it is r
 
 | Agebon distinction | The sentence does |
 |---------------------|-----------------|
-| Cast resumes and role pointers (`zuzozer`, `zaxar` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
+| Cast resumes and role pointers (`zuzozer`, `zwazar` + “(A)”) | Ordinary *I / you / he / she / they*, or a **name** once known |
 | Role metalanguage (`speaker`, `listener`, `interlocutors`) | *I / you / we* |
 | Join packaging (open `zam` vs closed `zal`, exclusive `dol`, fence shape) | Plain *and / or*; no “exactly one”, no open-list footnotes |
 | Sense-picking **-l / -m / -n** | Never (already omitted from morph when they only pick sense) |
@@ -314,8 +314,9 @@ A morph line corresponds **one-to-one** with its Agebon. From the gloss alone yo
 - **One label per form.** Each (PoS, root, ending) maps to one English label. Two roots never share an English sense: when they would, reword one row in the lexicon. `npm run lint:lexicon` checks this, and `npm test` round-trips every glossed example in `docs/grammar/`.
 - **Form suffixes** record surface choices the sense label does not: `.open` on open joins and hooks, and on number words `.about` (`~`, **-m**), `.named` (`@`, **-n**), `.again` (`=`, **-r**), and a surface mark when a number word is not in its [preferred writing](../grammar/numbers.md#writing-style-numeric-vs-spelled): `.spelled` on a spelled-out word that prefers shorthand (`grabadol` → `g-twelve.spelled`; `g+12` → `g-twelve`), `.short` on shorthand that prefers spelling — no digit or one digit (`g+3` → `g-three.short`; `gragel` → `g-three`; `g+` → `g-more-than-one.short`).
 - **Ordinals use digits** (`gredol` → `g-2nd`, `gruedol` → `g-2nd-from-end`), so they never share a label with a lexicon sense such as the time unit *second*.
-- **Role-compound resumes** keep their role: `daxarayer` → `d-←agent-x-write`, `duxarayer` → `d-←patient-x-write`. A bare `d-←write` would merge the doer, undergoer, and extra party of one event.
-- **Role pointers** gloss their role and pointer vowel, never the referent: `zaxar` → `z-←agent.same`, `duxor` → `d-←patient.other`, `daxer` → `d-←agent.self`, `zaxur` → `z-←agent.unsaid`. **-l** adds `.new` and **-m** adds `.part` (`duxal` → `d-←patient.same.new`, `zaxam` → `z-←agent.same.part`, `zoxom` → `z-←recipient.other.part`, `zaxum` → `z-←agent.unsaid.part`). The role label is the role-compound one (`recipient` for **`o`**). A pointer inside a seam keeps the seam's host: holder `theyemaxar` → `th-CLUES-←agent.same`, lateral anchor `howuhethaxar` → `h-west-th-←agent.same`.
+- **Role words** gloss the scope after **`w`**, then the part, then the stem, joined with `-`: `zwazuduyel` → `z-episode-agent-teach`, `gwezuduyel` → `g-role-agent-teach`, `dwabezuyel` → `d-episode-recipient-speech`. Scope takes the label-scope labels (`episode`, `role`, `pair`, `type`, and the stacked labels); the part is `agent` (**`z`**), `patient` (**`d`**), or `recipient` (**`b`**). A stem compound keeps its `-x-` (`zwazudozoxowurel` → `z-episode-agent-dog-x-walk`), and ability follows the stem (`gwezuduyexal` → `g-role-agent-teach-able`).
+- **Role-compound resumes** keep their scope and part: `dwazarayer` → `d-←episode-agent-write`, `dwadarayer` → `d-←episode-patient-write`. A bare `d-←write` would merge the doer, undergoer, and extra party of one event.
+- **Role pointers** gloss their scope, part, and pointer vowel, never the referent: `zwazar` → `z-←episode-agent.same`, `dwador` → `d-←episode-patient.other`, `dwazer` → `d-←episode-agent.self`, `zwazur` → `z-←episode-agent.unsaid`, `zwezar` → `z-←role-agent.same`. **-l** adds `.new` and **-m** adds `.part` (`dwadal` → `d-←episode-patient.same.new`, `zwazam` → `z-←episode-agent.same.part`, `zwabom` → `z-←episode-recipient.other.part`, `zwazum` → `z-←episode-agent.unsaid.part`).
 - **Say words** gloss scope, whose say, the answer, and the ending, joined with `-`: `hwavam` → `h-episode-event-ALLOW-said`, `hwadum` → `h-episode-patient-FORBID-said`, `hwozal` → `h-pair-agent-ALLOW-rule`. Scope takes the label-scope labels; whose say is `agent` / `patient` / `recipient` / `event`; the answer is `ALLOW` / `FORBID` / `REQUIRE` / `CHOICE`; the ending is `rule` (**-l**), `said` (**-m**), or `tacit` (**-r**).
 - **Unknown words fail.** A content word the lexicon cannot gloss has no morph line: a root missing from the lexicon, or **-m** on a root with no abstract sense (unless a closed overlay defines that **-m** form). `lint:agebon` reports it.
 - **Quoted pass-through.** Raw payloads (opaque interiors, and a resume stem with no known antecedent) go in straight double quotes: `z-OPAQUE["kimchi"]`. A `"` inside the payload is written `""`.
@@ -377,7 +378,7 @@ A [resume](../grammar/pronouns.md#resume-r) spells its antecedent's whole stem, 
 | No antecedent, stem not in the lexicon | | `z-←"…"` (the stem itself) |
 | Fill-ask / unspecified member | `zar` | `z-wh` / `z-something` (as the docs require for that form) |
 | [Tag pronoun](../grammar/pronouns.md#tag-pronouns) | `zwal` / `zwar` / `dwam` | `z-tag.A` (assign) / `z-←tag.A` (recall) / `d-←tag.A.part` (share) / `z-←tag.A.name` (**-n** recall of a name): the letter name, never the referent. An assigning tag rides in its phrase's bracket: `[z-dog \| z-tag.A]`, or after a fence's bracket for the whole group. A pair joins the letters with `+`: `z-←tag.A+E` |
-| [Role pointer](../grammar/pronouns.md#role-pointers) | `zaxar` / `zaxor` / `daxer` | `z-←agent.same` / `z-←agent.other` / `d-←agent.self` / `z-←agent.unsaid` (role and event, never the person's name); `d-←patient.same.new` (**-l**), `z-←agent.same.part` (**-m**) |
+| [Role pointer](../grammar/pronouns.md#role-pointers) | `zwazar` / `zwazor` / `dwazer` | `z-←episode-agent.same` / `z-←episode-agent.other` / `d-←episode-agent.self` / `z-←episode-agent.unsaid` (scope, part, and event, never the person's name); `d-←episode-patient.same.new` (**-l**), `z-←episode-agent.same.part` (**-m**) |
 
 Do not write `z-←microphone` for a speaker antecedent.
 
@@ -402,7 +403,7 @@ Gloss each piece by **family** ([compounds.md](../grammar/compounds.md)) — Eng
 | Ordinary (three roots) | `zugudaxududaxowulan` | `z-Uguda-x-Ududa-x-Owulan` |
 | Ability / values stance | `vowurexel` | `v-walk-unable-temporary` |
 | Values stance on need | `thuwathom` | `th-competence-motive-any-term` |
-| Role compound | `zaxavuvul` | `z-agent-x-fight` |
+| Role compound | `zwazavuvul` | `z-episode-agent-fight` ([role words](#round-trip)) |
 | Span | `th(hogowul)` | `th-ASIDE[h-quiet]` ([labeled bracket](#phrase-brackets)) |
 | Number / enumeration | `xrewul` | `x-starting-with` |
 

@@ -36,7 +36,7 @@ describe("lintPracticeItems", () => {
   });
 
   it("counts the host roots of an x-family word as content roots", () => {
-    const md = PRACTICE.replace("`zuzozen dolazun vawebol.` or `zolazun duzozen vawebol.`", "`zaxowurel vawebol.` or `zowurel vawebol.`");
+    const md = PRACTICE.replace("`zuzozen dolazun vawebol.` or `zolazun duzozen vawebol.`", "`zwazowurel vawebol.` or `zowurel vawebol.`");
     assert.doesNotMatch(lint(md).join("\n"), /different content roots|same reading/);
   });
 

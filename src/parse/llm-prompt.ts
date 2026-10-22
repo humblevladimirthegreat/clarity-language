@@ -4,7 +4,7 @@
  * doc examples picked by shared constructions, and the task. Pure: the example index and the
  * label glosses come in from llm-examples.ts.
  */
-import { MORPH_FORM_SUFFIXES, ROLE_VOWEL } from "./morph-gloss.js";
+import { MORPH_FORM_SUFFIXES, ROLE_PART } from "./morph-gloss.js";
 
 /** One doc example: its gloss, its free English split into sentence and note, and its features. */
 export type ExamplePair = {
@@ -49,17 +49,18 @@ export const GLOSS_READER = {
     x: "links this sentence to the one before (`x-however`), or names the topic",
     "": "no prefix: a hook. Between two words of the same role it relates them, and the right one is what holds: `d-tea | instead | d-coffee` = coffee instead of tea. With a `b-` noun in its bracket it is a relation (`[from | b-dog]`)",
   } as Record<string, string>,
-  /** Role names in `ROLE-x-verb` and pointers (roles.md#role-compounds). */
+  /** Part names in `SCOPE-PART-verb` and pointers (roles.md#role-compounds). */
   roles: {
     agent: "the doer",
     patient: "the one it happens to, or what it makes",
     recipient: "the extra party (the one told, given to)",
   } as Record<string, string>,
   pieces: [
-    "`-x-` inside one word joins the pieces of a compound. `ROLE-x-verb` names someone by their part in that kind of event: `z-agent-x-teach` = someone who teaches.",
+    "`-x-` inside one word joins the pieces of a compound.",
+    "`SCOPE-PART-verb` names someone by their part in that kind of event. The scope says how far the label reaches: `episode` this time (`z-episode-agent-teach` = someone who teaches, the one teaching), `role` their practiced role (`z-role-agent-teach` = a teacher), `pair` toward one `bl-` party only, `type` the kind of person they are, `outside-role` not in that capacity.",
     "A trailing `-x` adds associates: `z-Uzozen-x` = Uzozen and their people; `y-listener-x` = all of you. On a kind of thing, not a name, it is just several of that kind: `z-dog-x` = dogs (no others added). On a verb or adjective, they do it or are it as a group.",
-    "`←X` refers back to X, mentioned earlier: `z-←Uzozen` = Uzozen again (he, she, they); `z-←agent-x-teach` = the one who taught, in that earlier event.",
-    "`←ROLE.same` = whoever had that part in the latest sentence that had one (he, she, it, they). `.self` = this sentence's own ROLE (themself). `.other` = the other one, an earlier and different one. `.unsaid` = whoever it was, when that sentence left the part unsaid.",
+    "`←X` refers back to X, mentioned earlier: `z-←Uzozen` = Uzozen again (he, she, they); `z-←episode-agent-teach` = the one who taught, in that earlier event.",
+    "`←SCOPE-PART.same` = whoever had that part in the latest sentence that had one (he, she, it, they). `.self` = this sentence's own PART (themself). `.other` = the other one, an earlier and different one. `.unsaid` = whoever it was, when that sentence left the part unsaid. The scope reads as on a role word: `←role-agent.same` = they, in their practiced role.",
     "A say word reads `h-SCOPE-WHOSE-ANSWER-HOW`: whose say over the act (`event` = someone over it: the speaker, or the `bl-` person after it; `agent` = the doer's own; `patient` = the one it's done to; `recipient` = the one told or given to), the answer (`ALLOW`, `FORBID`, `REQUIRE`, `CHOICE` = up to them), and how it stands (`rule` = a rule or a binding agreement, `said` = someone said so, `tacit` = nobody said: tolerated, assumed, customary). `h-episode-event-ALLOW-said` = you may (I'm allowing it); `h-episode-patient-ALLOW-said` = they agreed; `h-episode-agent-REQUIRE-tacit` = feels they have to; `h-role-…` = standing, `h-pair-…` = toward the `bl-` party only.",
     "A dot joins the pieces of one label: words of one English phrase (`in.other.words`), or a variant of the word (`CLUES.strong`, `as-of.ledger`).",
     "A time amount in a bracket right after a stance word dates the event from now: `[th-REPORTED | [bl-hour | g-three]]` = in three hours, `g-minus-three` = three hours ago; `[bl-day | g-one]` = tomorrow. `bl-+-e-` = a moment from now (about to), `bl---e-` = a moment ago (just); with `.about`, soon / recently.",
@@ -111,8 +112,8 @@ export const GLOSS_READER = {
   ],
 };
 
-/** Role names the emitter prints (`ROLE_VOWEL`); re-exported for the coverage test. */
-export const EMITTED_ROLES: readonly string[] = [...new Set(Object.values(ROLE_VOWEL))];
+/** Part names the emitter prints (`ROLE_PART`); re-exported for the coverage test. */
+export const EMITTED_ROLES: readonly string[] = [...new Set(Object.values(ROLE_PART))];
 export const EMITTED_SUFFIXES: readonly string[] = MORPH_FORM_SUFFIXES;
 
 export function renderCore(): string {
@@ -122,7 +123,7 @@ export function renderCore(): string {
   for (const [prefix, text] of Object.entries(GLOSS_READER.prefixes)) {
     lines.push(prefix ? `- \`${prefix}-\` ${text}` : `- ${text}`);
   }
-  lines.push("", "Roles (in `ROLE-x-verb` and `←ROLE.same`):", "");
+  lines.push("", "Parts (in `SCOPE-PART-verb` and `←SCOPE-PART.same`):", "");
   lines.push(
     Object.entries(GLOSS_READER.roles)
       .map(([role, text]) => `${role} = ${text}`)

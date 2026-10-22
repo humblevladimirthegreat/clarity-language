@@ -82,7 +82,7 @@ describe("retieCore — Agebon tokens", () => {
 
   it("rewrites a role compound host", () => {
     const map = mapOf(["edege", "uzunu"]);
-    assert.equal(retieCore("gaxedegel", map), "gaxuzunul");
+    assert.equal(retieCore("gwazedegel", map), "gwazuzunul");
   });
 
   it("leaves join markers and revisers alone", () => {
@@ -226,8 +226,8 @@ describe("resume-aware markdown retie", () => {
 
   it("leaves role pointers alone", () => {
     const map = mapOf(["azawa", "ululo"]);
-    const { text } = rewriteMarkdown("`zazawan vawalal. zaxar vayul.`", map);
-    assert.equal(text, "`zululon vawalal. zaxar vayul.`");
+    const { text } = rewriteMarkdown("`zazawan vawalal. zwazar vayul.`", map);
+    assert.equal(text, "`zululon vawalal. zwazar vayul.`");
   });
 });
 
@@ -765,7 +765,7 @@ describe("retie fixes (2026-10-19 root-tails dry run)", () => {
     const source = [
       "const t = loadDefaultTables();",
       'frameOf(`zazawan vowogal uem theyemazawan ${held}.`);',
-      'assert.deepEqual(pointers("zazawan vowogal hewezathaxer."), ["hewezathaxer→zazawan"]);',
+      'assert.deepEqual(binds("zazawan vowogal hewezathazawar."), ["hewezathazawar→zazawan"]);',
       'expectLine("zuzuhexagavexedehen", "z-Uzuhe-x-Agave-x-Edehen");',
       "",
     ].join("\n");
@@ -774,7 +774,7 @@ describe("retie fixes (2026-10-19 root-tails dry run)", () => {
       [
         "const t = loadDefaultTables();",
         'frameOf(`zozozen vowogal uem theyemozozen ${held}.`);',
-        'assert.deepEqual(pointers("zozozen vowogal helegethaxer."), ["helegethaxer→zozozen"]);',
+        'assert.deepEqual(binds("zozozen vowogal helegethozozer."), ["helegethozozer→zozozen"]);',
         'expectLine("zuzudoxogudaxedadan", "z-Uzudo-x-Oguda-x-Edadan");',
         "",
       ].join("\n"),

@@ -94,7 +94,7 @@ If the reply is just the fill, not a full sentence, write it as a [citation](wor
 >
 > "Olazun."
 
-**Compare with:** pointing back at someone already named uses resume **-r** on a whole stem or a role pointer ([pronouns](pronouns.md)). A fill-ask uses only **join** **-r**. The spelling tells them apart: a resume spells a whole stem, and a role pointer has a role vowel, **`x`**, and a pointer vowel. A join word has no stem, only its role letter, its join vowel or vowels, and its ending.
+**Compare with:** pointing back at someone already named uses resume **-r** on a whole stem or a role pointer ([pronouns](pronouns.md)). A fill-ask uses only **join** **-r**. The spelling tells them apart: a resume spells a whole stem, and a role pointer has **`w`**, a scope vowel, a part consonant, and a pointer vowel. A join word has no stem, only its role letter, its join vowel or vowels, and its ending.
 
 ### Question tone (`?`) {#question-tone}
 
