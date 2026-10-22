@@ -126,7 +126,7 @@ On a noun the poles are `gerem` *during*, `gabam` *before*, `galam` *after*, `ga
 
 ## Keep the same speech move going {#continue}
 
-A **linker** is an `/x/` word that opens the next sentence under the same speech act, with no act word of its own. Linkers use the abstract **-m**. Any other `/x/` word sets the [topic](../pronouns.md#topic). A linker and a topic word do not share a sentence.
+A **linker** is an `/x/` word that opens the next sentence under the same speech act, with no act word of its own. Linkers use the abstract **-m**. Any other `/x/` word sets the [topic](../topic.md#topic). A linker and a topic word do not share a sentence.
 
 <!-- cheat-sheet: linking-clauses -->
 | English | Agebon | Stage |

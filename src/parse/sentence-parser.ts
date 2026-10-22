@@ -488,7 +488,7 @@ class AgebonSentenceParser extends CstParser {
             // A mention marker before a topic span (`glelel x[udozo] …`, spans.md#mention).
             this.OPTION4(() => this.CONSUME(GGlBefore.Linker, { LABEL: "topicMarker" }));
             this.CONSUME(Linker);
-            // A topic word, or a marked topic span, may be the whole sentence (`xazawan.`, `glelel x[udozo].`; pronouns.md#topic).
+            // A topic word, or a marked topic span, may be the whole sentence (`xazawan.`, `glelel x[udozo].`; topic.md#topic).
             this.OPTION5(() => crossOrClause(2, this.clause));
           },
         },

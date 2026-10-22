@@ -7,7 +7,7 @@ outline: false
 
 # Talking cheat sheet {#talking-cheat-sheet}
 
-A quick look at [speech moves](../speech-moves.md) and [questions](../questions.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [speech moves](../speech-moves.md), [questions](../questions.md), and [fill-ask roles](../fill-ask-roles.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## Starting a turn {#turns}
 
@@ -121,27 +121,27 @@ The reply to a fill-ask is the fill as a [citation](../word-endings.md#citation-
 
 | You want | Write | English | Stage |
 |----------|-------|---------|-------|
-| [What kind?](../questions.md#what-kind) | `yol gar zudozol.` | *What is the dog like?* | I |
-| [When?](../questions.md#when) | `yol har zahelan vowurel.` | *When does Ahelan walk?* | I |
-| [Where?](../questions.md#where) | `yol ol bar zahelan vowurel.` | *Where does Ahelan walk?* | I |
-| [Whose?](../questions.md#whose) | `yol zudozol em bar vowurel.` | *Whose dog walks?* | I |
-| [How?](../questions.md#how) | `yol hewom blar zuzozen vowurel.` | *How does Uzozen walk?* | I |
-| [Why?](../questions.md#why) | `yol thahum blar zuzozen vowurel.` | *Why does Uzozen walk?* | I |
-| [What for?](../questions.md#why) | `yol hovam blar zuzozen vowurel.` | *What does Uzozen walk for?* | I |
+| [What kind?](../fill-ask-roles.md#what-kind) | `yol gar zudozol.` | *What is the dog like?* | I |
+| [When?](../fill-ask-roles.md#when) | `yol har zahelan vowurel.` | *When does Ahelan walk?* | I |
+| [Where?](../fill-ask-roles.md#where) | `yol ol bar zahelan vowurel.` | *Where does Ahelan walk?* | I |
+| [Whose?](../fill-ask-roles.md#whose) | `yol zudozol em bar vowurel.` | *Whose dog walks?* | I |
+| [How?](../fill-ask-roles.md#how) | `yol hewom blar zuzozen vowurel.` | *How does Uzozen walk?* | I |
+| [Why?](../fill-ask-roles.md#why) | `yol thahum blar zuzozen vowurel.` | *Why does Uzozen walk?* | I |
+| [What for?](../fill-ask-roles.md#why) | `yol hovam blar zuzozen vowurel.` | *What does Uzozen walk for?* | I |
 
 <!-- cheat-sheet: talking -->
 | Blank | Means | Stage |
 |-------|-------|-------|
-| [`gar`](../questions.md#what-kind) / `gor` / `gur` | *what is it like?* / *like anything?* / *what else is it like?* | I |
-| [`ol bar`](../questions.md#where) / `al bar` / `ul bar` / `el bar` | *where (at)?* / *in what?* / *where from?* / *for what?* | I |
-| [`ol bor`](../questions.md#where) / `ol bur` | *anywhere?* / *where else?* | I |
-| [`thahum blar`](../questions.md#why) | *why?* | I |
-| [`hovam blar`](../questions.md#why) | *what for?* | I |
-| [`thohom blar`](../questions.md#why) | *under what condition?* | I |
+| [`gar`](../fill-ask-roles.md#what-kind) / `gor` / `gur` | *what is it like?* / *like anything?* / *what else is it like?* | I |
+| [`ol bar`](../fill-ask-roles.md#where) / `al bar` / `ul bar` / `el bar` | *where (at)?* / *in what?* / *where from?* / *for what?* | I |
+| [`ol bor`](../fill-ask-roles.md#where) / `ol bur` | *anywhere?* / *where else?* | I |
+| [`thahum blar`](../fill-ask-roles.md#why) | *why?* | I |
+| [`hovam blar`](../fill-ask-roles.md#why) | *what for?* | I |
+| [`thohom blar`](../fill-ask-roles.md#why) | *under what condition?* | I |
 
 ### Fill-ask by vowel and count {#arity}
 
-The blank **-r** takes a vowel; the count is how many items you listed before it ([fill-ask arity](../questions.md#fill-ask-arity)).
+The blank **-r** takes a vowel; the count is how many items you listed before it ([fill-ask arity](../fill-ask-roles.md#fill-ask-arity)).
 
 <!-- cheat-sheet: talking -->
 | Items listed | **…ar** | **…or** | **…er** | **…ur** | Stage |
@@ -161,8 +161,8 @@ The blank **-r** takes a vowel; the count is how many items you listed before it
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | [Report a question](../questions.md#embedded-whether) | `zuzozen vawebol dorl zolazun vowurel.` | *Uzozen sees whether Olazun walks.* | B |
-| [Blank belongs to *whether*](../questions.md#blank-in-dependent) | `yol zawan vanam dorl zar vowurel.` | *Do you know who walks?* | I |
-| [Blank belongs to the outer question](../questions.md#blank-in-dependent) | `yol zawan vevemol darl zar vowurel.` | *Who do you think walks?* | I |
+| [Blank belongs to *whether*](../fill-ask-roles.md#blank-in-dependent) | `yol zawan vanam dorl zar vowurel.` | *Do you know who walks?* | I |
+| [Blank belongs to the outer question](../fill-ask-roles.md#blank-in-dependent) | `yol zawan vevemol darl zar vowurel.` | *Who do you think walks?* | I |
 | [Question you don't want answered](../questions.md#rhetorical): `yal` before `yol` | `yal yol zar vegemal.` | *Who cares?* (nobody) | I |
 | [Musing](../questions.md#rhetorical) | `yam yol zar vegemal.` | *Who really cares, though?* | I |
 | [Rhetorical for now](../questions.md#rhetorical) | `yar yol` | *Surely, as things stand…?* | I |
@@ -215,4 +215,4 @@ After your sentence, write `yol` and a polar word as a turn of its own. It asks 
 | `yol` *question* ([asks](../questions.md#question)) | | `?` *unsure voice* ([only sounds unsure](../speech-moves.md#tone-marks)) |
 | `yul` *don't* ([prohibition](../speech-moves.md#speech-act-beginner)) | | `yuel` *no, false* ([answers a claim](../questions.md#polar-stance)) |
 | `yol yael.` *…, right?* ([a tag asks](../questions.md#tags)) | | `yael.` *yes* ([an answer gives](../questions.md#polar-stance)) |
-| `thahum blar` *why?* ([the cause](../questions.md#why)) | | `hewom blar` *like what?* ([a model to resemble](../questions.md#how)) |
+| `thahum blar` *why?* ([the cause](../fill-ask-roles.md#why)) | | `hewom blar` *like what?* ([a model to resemble](../fill-ask-roles.md#how)) |

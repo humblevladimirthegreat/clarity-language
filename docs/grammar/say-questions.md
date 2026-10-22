@@ -40,7 +40,7 @@ English *Really?* asks the speaker to confirm what they just said. Write the con
 
 **Needs:** [Fill-ask](questions.md#fill-ask-r) · [whether](questions.md#embedded-whether)
 
-To report a *who* / *what* question inside a claim (*Uzozen asks who walks*), put the same blank you would use in a direct question inside [**`dorl`**](questions.md#embedded-whether). To quote the question as wording, keep `yol` inside a [cite](spans.md#quote-acts). To ask someone else whether they know such an answer (*Do you know who walks?*), see [a blank inside a dependent](questions.md#blank-in-dependent).
+To report a *who* / *what* question inside a claim (*Uzozen asks who walks*), put the same blank you would use in a direct question inside [**`dorl`**](questions.md#embedded-whether). To quote the question as wording, keep `yol` inside a [cite](spans.md#quote-acts). To ask someone else whether they know such an answer (*Do you know who walks?*), see [a blank inside a dependent](fill-ask-roles.md#blank-in-dependent).
 
 > `zuzozen vezuyel dorl zar vowurel.`
 >
@@ -171,7 +171,7 @@ Under question, the rest of the single-item and standalone join map is confirm /
 
 **Not the same job as:** proper-name **-n** ([word ending](word-endings.md#proper-name--n)).
 
-**Related form:** fill-ask length uses [join **-r**](questions.md#fill-ask-arity).
+**Related form:** fill-ask length uses [join **-r**](fill-ask-roles.md#fill-ask-arity).
 
 #### Rank: single-item (under question)
 

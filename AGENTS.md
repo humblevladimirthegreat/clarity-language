@@ -19,9 +19,11 @@ Each row names what the file owns. The file is the authority; this table is only
 | `clause.md` | **Source of truth** for one-clause grammar: role letters, default order, hosting, chaining. Other docs own their subsystems. |
 | `phonology.md` | Phonology, phonotactics, letter names. |
 | `word-endings.md` | Word endings, proper names, titled phrases, citation forms, greetings. |
-| `pronouns.md` | Whole-stem resume, role pointers, tag, special, generic, and topic pronouns; the discourse topic. |
+| `pronouns.md` | Whole-stem resume, role pointers, tag, special, and generic pronouns. |
+| `topic.md` | Discourse topic, topic pronoun. |
 | `plurality.md` | Plural, associative, address sets, clusivity, collectives. |
 | `questions.md` | Yes/no and fill questions, polar stance particles. |
+| `fill-ask-roles.md` | Fill-ask roles: arity, what kind / when / where / whose / how / why, blank in a dependent. |
 | `speech-moves.md` | Turns, vocatives, interjections, speech acts, the reusable vowel series, tone marks. |
 | `dependents.md` | Next-sentence grammar: continue, stand-ins, subordinators, relative-clause equivalents, linkers. |
 | `relations.md` | Hosted relation catalog: similative, exchange, proxy, of-relations, as-of, social ties. |

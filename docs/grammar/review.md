@@ -347,6 +347,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *CLUES* | `theyem` |
 | *sing* | `vezuyol` |
 | *NOTIONAL* | `theyum` |
+| *topic* | `alon` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
@@ -442,6 +443,16 @@ z-Olazun | th-CLUES-Ahelan | v-sing
 **Rule:** [Whose view (holder)](knowing.md#holder)
 :::
 
+**10.** *Now, about Olazun: Olazun sits.*
+
+::: details Show answer
+`xolazun zalon vuhohol.`
+
+x-Olazun | z-TOPIC | v-sit
+
+**Rule:** [The topic pronoun](topic.md#topic-pronoun)
+:::
+
 #### Agebon → English {#intermediate-agebon-to-english}
 
 **1.** `zahelan dedehal vawebol. zahelan vawebor dobowal.`
@@ -494,6 +505,16 @@ SELF-minutes . Olazun-presence
 The lesser bid sets the limit, so the talk lasts a few minutes.
 
 **Rule:** [Conversation length](compounds.md#conversation-length)
+:::
+
+**6.** `yol ol bar zahelan vuhohol.`
+
+::: details Show answer
+y-question | [at | b-wh] | z-Ahelan | v-sit
+
+*Where does Ahelan sit?*
+
+**Rule:** [Where?](fill-ask-roles.md#where)
 :::
 
 #### Pick one {#intermediate-pick-one}

@@ -275,7 +275,7 @@ Outside a question, only the single-vowel **-r** cells are words. Under a questi
 | `thoer` | *What are you torn between?* |
 | `thuer` | *What's your objection?* |
 
-**Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` asks for the speaker's grounds, not what caused the event; for *Why does it happen?* use [`thahum blar`](questions.md#why).
+**Compare with:** `thul` *no judgment* withholds any stance; a *no chance* stance number is a stance that the claim is false. `thar` asks for the speaker's grounds, not what caused the event; for *Why does it happen?* use [`thahum blar`](fill-ask-roles.md#why).
 
 ### Join-act verbs {#join-act-verbs}
 

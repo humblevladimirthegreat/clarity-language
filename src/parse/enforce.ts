@@ -394,7 +394,7 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   enforceHookedJoinWord(word);
   // A holder names people, so it takes -x like any noun (`thodumazawanx`, knowing.md#holder).
   const holder = word.family.kind === "x" && word.family.xFamily === "holder";
-  // A topic word is a noun, so it takes -x like one (`xazawanx`, pronouns.md#topic-groups); a published linker does not.
+  // A topic word is a noun, so it takes -x like one (`xazawanx`, topic.md#topic-groups); a published linker does not.
   const topic = word.pos === "x" && (word.family.kind === "content" || isTopicCompound(word)) && !linkerEnglish(word);
   if (word.plural && word.pos && NO_PLURAL_POS.has(word.pos) && !holder && !topic) {
     throw new ConstructionError("pluralOnPos", word.raw);

@@ -1,7 +1,7 @@
 /**
  * The closed set of `/x/` sentence linkers ([dependents.md § Sentence linkers](../../docs/grammar/dependents.md#sentence-linkers)).
  * Keyed by root + ending: **-m** is the default link (the root's abstract sense), **-l** a firm link
- * where one is taught. Every other `/x/` content word sets the topic (pronouns.md#topic): **-l** / **-m** / **-n**
+ * where one is taught. Every other `/x/` content word sets the topic (topic.md#topic): **-l** / **-m** / **-n**
  * introduce it and **-r** returns to it, so none of those is listed.
  */
 import { CLOSED } from "../closed-roots.js";
@@ -32,10 +32,10 @@ export function linkerEnglish(word: LexWord): string | undefined {
   return LINKER_ENGLISH[word.family.roots[0]! + word.ending];
 }
 
-/** The two published linkers that clear the topic (*next*, *by the way*): each opens a new frame (pronouns.md#topic). */
+/** The two published linkers that clear the topic (*next*, *by the way*): each opens a new frame (topic.md#topic). */
 export const CLEARING_LINKERS: ReadonlySet<string> = new Set([`${CLOSED.film}m`, `${CLOSED.fries}m`]);
 
-/** What a `/x/` content word does to the topic (pronouns.md#topic); `none` for the other published linkers. */
+/** What a `/x/` content word does to the topic (topic.md#topic); `none` for the other published linkers. */
 export type TopicEffect = "introduce" | "return" | "clear" | "none";
 
 /** An `/x/` cite or opaque span as a topic word (`x@<Sam>`, `x<odoga>`, spans.md#topic-quotes). */
@@ -52,7 +52,7 @@ export function isTopicSpan(word: LexWord): boolean {
 export function topicEffect(word: LexWord): TopicEffect {
   if (word.pos !== "x") return "none";
   if (isTopicSpan(word)) return "introduce";
-  // A role compound or any other `x` compound is an ordinary noun, so it sets a topic like one (`xaxedehol`, pronouns.md#topic).
+  // A role compound or any other `x` compound is an ordinary noun, so it sets a topic like one (`xaxedehol`, topic.md#topic).
   if (isTopicCompound(word)) return word.ending === "r" ? "return" : "introduce";
   if (word.family.kind !== "content") return "none";
   const root = word.family.roots.length === 1 ? word.family.roots[0]! : undefined;

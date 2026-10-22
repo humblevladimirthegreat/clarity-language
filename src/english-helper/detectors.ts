@@ -47,13 +47,13 @@ const MODAL_LINKS: Record<string, string[]> = {
 
 const WH_LINKS: Record<string, string[]> = {
   who: ["questions.md#fill-all"],
-  what: ["questions.md#fill-all", "questions.md#what-kind"],
-  which: ["questions.md#what-kind"],
-  when: ["questions.md#when"],
-  where: ["questions.md#where"],
-  whose: ["questions.md#whose"],
-  how: ["questions.md#how"],
-  why: ["questions.md#why"],
+  what: ["questions.md#fill-all", "fill-ask-roles.md#what-kind"],
+  which: ["fill-ask-roles.md#what-kind"],
+  when: ["fill-ask-roles.md#when"],
+  where: ["fill-ask-roles.md#where"],
+  whose: ["fill-ask-roles.md#whose"],
+  how: ["fill-ask-roles.md#how"],
+  why: ["fill-ask-roles.md#why"],
 };
 
 /** The section that teaches each role letter a content word lands on. */
@@ -164,7 +164,7 @@ export const HOOK_LINKS = {
   onNoun: ["relations.md#locative-relations"],
   fromTo: ["numbers-applied.md#time", "relations.md#locative-relations"],
   resume: ["hooks.md#hook-resume"],
-  blank: ["questions.md#where", "hooks.md#place-indefinites"],
+  blank: ["fill-ask-roles.md#where", "hooks.md#place-indefinites"],
   /** *everyone at the house*: the hook bounds the join's set. */
   hookedJoin: ["hooks.md#hooked-joins"],
   /** *never since …*, *always until …*: the hook bounds a restrictor's times. */

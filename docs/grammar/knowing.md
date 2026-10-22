@@ -476,7 +476,7 @@ The frame is **yours**. It covers only your own claims, and someone else who rep
 >
 > "Olazun left, so they say. Did Olazun run? Olazun sang." (the singing is hearsay too)
 
-**What does not end it:** a new [topic](pronouns.md#topic) or a return to one, the [sentence linkers](dependents.md#sentence-linkers) (*therefore*, *however*, *meanwhile*, *next*, *but*), clause joins, asides, or MAY. A story moves from one person to the next.
+**What does not end it:** a new [topic](topic.md#topic) or a return to one, the [sentence linkers](dependents.md#sentence-linkers) (*therefore*, *however*, *meanwhile*, *next*, *but*), clause joins, asides, or MAY. A story moves from one person to the next.
 
 > `zuzozen thebam vowurel. xolazun zalon vuhohol.`
 >
@@ -611,7 +611,7 @@ The holder word ends the way a noun for that person would. **-n** is a name. **-
 >
 > "I gather some people think Olazun left."
 
-The holder may be the [topic pronoun](pronouns.md#topic-pronoun), whoever the conversation is about now, or the [generic pronoun](pronouns.md#generic-pronoun), the generic view. The generic pronoun takes no **-x**.
+The holder may be the [topic pronoun](topic.md#topic-pronoun), whoever the conversation is about now, or the [generic pronoun](pronouns.md#generic-pronoun), the generic view. The generic pronoun takes no **-x**.
 
 > `xuzozen theyemalon zolazun velurul.`
 >

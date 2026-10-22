@@ -54,7 +54,7 @@ const ROWS: Row[] = [
     valid: "zuzozen !{ hegugom zudozol gerulel } vawebol.",
   },
   { invalid: "zuzozen xezom vowurel.", rejection: "linkerMidSentence", valid: "xezom zuzozen vowurel." },
-  // Topic words (pronouns.md#topic) sit where linkers do: at the start of a sentence, never after a join or a stand-in.
+  // Topic words (topic.md#topic) sit where linkers do: at the start of a sentence, never after a join or a stand-in.
   { invalid: "zuzozen xolazun zalon vowurel.", rejection: "linkerMidSentence", valid: "xolazun zuzozen vowurel." },
   { invalid: "zuzozen vezuyel darl xolazun zalon vowurel.", rejection: "linkerMidSentence", valid: "xolazun zuzozen vezuyel darl zalon vowurel." },
   { invalid: "xahem.", rejection: "linkerAlone", valid: "xuzozen." },

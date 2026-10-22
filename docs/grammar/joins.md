@@ -926,7 +926,7 @@ English *one*, generic *you*, and *people* make a claim about people as a rule. 
 | `zual geyol` | every person, no exceptions | *everyone* |
 | `zuan geyol` | humankind as a kind | *people* (the species) |
 
-For *everyone, no exceptions*, use `zual geyol`. As a topic, `xeyon` (*now, about people in general*) makes the [topic pronoun](pronouns.md#topic-pronoun) mean *one*.
+For *everyone, no exceptions*, use `zual geyol`. As a topic, `xeyon` (*now, about people in general*) makes the [topic pronoun](topic.md#topic-pronoun) mean *one*.
 
 #### Every and none, by set {#kind-domains}
 

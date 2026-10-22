@@ -392,7 +392,7 @@ One occasion before **`huel`** is the last resort: the claim counts there, but o
 
 #### Unspecified-member (`-r`)
 
-Statement readings below. Asking *when*: [questions.md](questions.md#when).
+Statement readings below. Asking *when*: [When?](fill-ask-roles.md#when).
 
 <!-- cheat-sheet: restrictors-spans -->
 | Agebon | Use | English (with occasions) | English (bare) | Cue |
@@ -586,4 +586,4 @@ A restrictor lists occasion words; a whole sentence as the occasion takes a pole
 ## See also
 
 - Phrase lists (right-close fence): [joins.md](joins.md)
-- *When?* under question: [questions.md](questions.md#when)
+- *When?* under question: [When?](fill-ask-roles.md#when)

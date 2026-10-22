@@ -571,9 +571,9 @@ A tag with **-m** is a [share](#share): A's part in the latest earlier sentence 
 >
 > "Uzozen (A) punches Olazun. Ahelan sees what A did."
 
-Tags fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`yolazun`); to make them the topic again, name them (`xuzozer`). A word that is already a pronoun with one fixed form takes no tag: the [special pronouns](#special-pronouns), the generic and topic pronouns, and a tag itself. A resume and a role pointer do take one, because a tag keeps them fixed while they would otherwise follow the latest match. **-x** goes only on **-r** and **-n**: a share is a part, not a group of people, and to tag a group, tag its phrase (`zudozolx zwal`).
+Tags fill `/z/`, `/d/`, and `/b/` only. To call someone, use their name (`yolazun`). A word that is already a pronoun with one fixed form takes no tag: the [special pronouns](#special-pronouns), the generic pronoun, a topic pronoun, and a tag itself. A resume and a role pointer do take one, because a tag keeps them fixed while they would otherwise follow the latest match. **-x** goes only on **-r** and **-n**: a share is a part, not a group of people, and to tag a group, tag its phrase (`zudozolx zwal`).
 
-A tag lasts until it is assigned again or the conversation ends with a [goodbye](word-endings.md#greeting). A topic change leaves tags alone, so placeholder reasoning can run through a side topic and back. A tag assigned inside a [dependent](dependents.md#dependent-clauses) holds after it, because the dependent is the same talk. A quote keeps its own tags, as it keeps its own topic.
+A tag lasts until it is assigned again or the conversation ends with a [goodbye](word-endings.md#greeting). Distance does not blur it, so placeholder reasoning can run through other sentences and back. A tag assigned inside a [dependent](dependents.md#dependent-clauses) holds after it, because the dependent is the same talk. A quote keeps its own tags.
 
 #### Two tags at once {#tag-pairs}
 
@@ -598,157 +598,6 @@ Both tags must already be assigned. A pair never assigns: to tag two things, tag
 
 **Compare with:** a name already resumes from anywhere (`zuzozer`), and two people rarely share a name. Reach for a tag when the referent has no name, when its stem is a long compound, when two of the same kind are in play, or when a role pointer would pick someone newer.
 
-### Topic {#topic}
-
-English *now, about Uzozen…*, *speaking of dogs…*, and *so, back to Uzozen…* say what the talk is about from here on, and every later *he* or *it* follows. Agebon makes that overt as a **topic**. It is set only by an `/x/` word at the start of a sentence: `/x/`, then the thing the talk is about, then its ending. Nothing else sets one. Being named first, being the subject, and [*as for*](clause.md#adverbs-h) do not, so a listener or a tool can tell at every point what the topic is.
-
-<!-- cheat-sheet: people-pointing -->
-| Agebon | Use | English |
-|--------|-----|---------|
-| `xuzozen` | introduce a person | *now, about Uzozen* |
-| `xudozol` | introduce a kind | *now, about a dog* |
-| `xuzozer` | return to an earlier topic: whole stem + **-r** | *back to Uzozen* |
-| `xuvewem` / `xuvedam` | clear the topic ([linkers](dependents.md#sentence-linkers)) | *next* / *by the way* |
-
-1. **No topic at the start.** A conversation opens with none.
-2. **Introduce.** An `/x/` word on **-l**, **-m**, or **-n** that is not one of the six sentence linkers makes its noun the topic. The noun keeps its ordinary ending, so the topic need not be a person or a name (`xudozol` *now, about a dog*). Any [compound](compounds.md) works the same way: a hyphenated name (`xuzozexolazun`), a noun pair (`xubedaxuyudal` *now, about peanut butter*), or a [role compound](roles.md#role-compounds) (`xwazuduyel` *now, about people who teach*; `xwazuduyer` returns to it). It takes the same adjectives and hooks as any noun (`xudozol em buzozen` *now, about Uzozen's dog*), and it may stand alone as a whole sentence to announce a topic before saying anything about it.
-3. **Return.** `/x/` + the whole stem of an earlier word + **-r** makes that thing the topic again.
-4. **Clear.** `xuvewem` and `xuvedam` each open a new frame. After either there is no topic until the next introduce or return.
-5. **Persist.** The topic holds until rule 2, 3, or 4 changes it. Clause joins, other linkers, and agenda numbering leave it alone. A goodbye ends the conversation and clears it.
-6. **Where.** A topic word opens a sentence in your own talk, or in a quote. It never follows a clause join and never sits inside a dependent or an aside.
-
-> `xuzozen.`
->
-> x-Uzozen
->
-> "Now, about Uzozen."
-
-**Every return is explicit.** There is one topic, not a stack. Coming back from a side topic, or from a new frame, means naming the old topic again with `xuzozer`.
-
-A topic-setting `/x/` word needs no voice of its own: the `/x/` word itself tells the listener that the subject changed. The speech move is unchanged, so the listener hears a new subject, not a new act ([periods](dependents.md#orthography-and-prosody-periods)).
-
-### The topic pronoun {#topic-pronoun}
-
-The topic is referred to with one pronoun: **`alo`** *star* with **-n**, in `/z/`, `/d/`, or `/b/`. It stays the same in every role: `zalon` is the topic as subject, `dalon` as object, `balon` as extra noun. (cue: ⭐ the star of the talk, what everyone is looking at)
-
-> `xuzozen zalon dolazun vawebol. zolazur vezuyel balon. zalon varuvel.`
->
-> x-Uzozen | z-TOPIC | d-Olazun | v-see . z-←Olazun | v-tell | b-TOPIC . z-TOPIC | v-run
->
-> "Now, about Uzozen: Uzozen sees Olazun. Olazun tells Uzozen. Uzozen runs."
-
-A thing works as a topic the same way:
-
-> `xudozol zuzozen dalon vawebol. zalon varuvel. zuzozer vuhohol.`
->
-> x-dog | z-Uzozen | d-TOPIC | v-see . z-TOPIC | v-run . z-←Uzozen | v-sit
->
-> "Now, about a dog: Uzozen sees it. It runs. Uzozen sits."
-
-With Uzozen as the topic, *Uzozen sees themself* is `xuzozen zalon vawebol dalon.` (`dwazer` still works), and *Uzozen's dog walks* is `xuzozen zudozol em balon vowurel.`: *the topic's* is the same in every role.
-
-A dropped subject is never read as the topic. `xuzozen dolazun vawebol.` leaves out who sees; it does not say Uzozen sees. Write `zalon` whenever the topic is the doer (and `dalon` or `balon` in the other roles).
-
-The topic pronoun is the topic itself, so it is never a topic word or a resume: `xalon`, `xalor` and `zalor` are not sentences. To start a new stretch on the same topic, name it again with `xuzozer`.
-
-A topic pronoun with no topic set is not a sentence. **`alo`** keeps its ordinary senses on **-l** / **-m** (`zalol` *a star*, `zalom` *fame*), and **-x** adds associates (`zalonx` *the topic and associates*).
-
-*As for* frames one sentence and leaves the topic alone:
-
-> `xuzozen zalon vowurel. hahugem blolazun zudozol varuvel. zalon vuhohol.`
->
-> x-Uzozen | z-TOPIC | v-walk . [h-as-for | bl-Olazun] | z-dog | v-run . z-TOPIC | v-sit
->
-> "Now, about Uzozen: Uzozen walks. As for Olazun, a dog runs. Uzozen sits."
-
-A side topic, then an explicit return:
-
-> `xuzozen zalon vowurel. xuvedam zudozol varuvel. xuzozer zalon vuhohol.`
->
-> x-Uzozen | z-TOPIC | v-walk . x-by-the-way | z-dog | v-run . x-←Uzozen | z-TOPIC | v-sit
->
-> "Now, about Uzozen: Uzozen walks. By the way, a dog runs. Back to Uzozen: Uzozen sits."
-
-Without `xuzozer`, the last sentence would have no topic and `zalon` would not be a sentence.
-
-### What a topic change resets {#topic-resets}
-
-Introduce, return, and clear each start a new **topic stretch**.
-
-| State | Resets? | Why |
-|-------|---------|-----|
-| [Role pointer](#role-pointers) anchors | yes | `zwazar` *the latest doer* and `zwazor` *the other one* never reach into an earlier stretch. Someone from before is picked up by name or whole-stem **-r**. |
-| Whole-stem **-r** | no | It is the explicit way back (`xuzozer`), so it reaches across stretches. |
-| [Tags](#tag-pronouns) | no | A tag is assigned on purpose, so distance does not blur it, and placeholder reasoning often runs through a side topic. |
-| Agenda numbering (`x#N`, outline depth) | no | Agenda items sit above topics; one item may hold several. |
-| Speech move, line of talk | no | They track the move and the line of talk, not people. |
-
-`xuzozer` while Uzozen is already the topic is still a topic change: it starts a new stretch with the same topic. That lets you clear the role pointers' anchors (*so, Uzozen again*) without leaving the topic.
-
-### Return versus introduce {#topic-return}
-
-Both set the topic. The difference is the ordinary difference between **-r** and a first mention:
-
-<!-- cheat-sheet: people-pointing -->
-| Agebon | Topic | English |
-|--------|-------|---------|
-| `xuzozen` | Uzozen | *now, about Uzozen* (a name picks out the same person either way) |
-| `xuzozer` | Uzozen, the one mentioned before | *back to Uzozen* |
-| `xudozol` | **a** dog, new to the talk | *now, about a dog* |
-| `xudozor` | **the** dog from before | *back to the dog* |
-
-For names, the two pick the same person: choose by what the listener should hear, something new or a way back. For kinds, only the return reaches the earlier thing. A return that resumes a [sentence linker](dependents.md#sentence-linkers) (`xaher` after `xahem`) is only that linker again, and sets no topic.
-
-A return makes no claim by itself, but it does set the topic, so leaving it out changes who `zalon` is, or leaves `zalon` with no topic, which is not a sentence.
-
-> `zuzozen vowurel. zolazun varuvel. xuzozer zalon vuhohol.`
->
-> z-Uzozen | v-walk . z-Olazun | v-run . x-←Uzozen | z-TOPIC | v-sit
->
-> "Uzozen walks. Olazun runs. Back to Uzozen: Uzozen sits."
-
-### Groups as the topic {#topic-groups}
-
-**-x** goes on a topic word like on any noun: `xuzozenx` makes *Uzozen and associates* the topic, `xudozolx` makes *some dogs* the topic, and `xuzozerx` returns to the group. `zalon` then means the group. **-x** on the pronoun (`zalonx`) still adds associates to whatever the topic is.
-
-> `xudozolx zuzozen dalon vawebol.`
->
-> x-dog-x | z-Uzozen | d-TOPIC | v-see
->
-> "Now, about some dogs: Uzozen sees them."
-
-### Topic words and dependents {#topic-dependents}
-
-A [dependent](dependents.md#dependent-clauses) is the sentence after a stand-in (`darl`, `dorl`, `derl`, `durl`, `barl`), and it belongs to the outer sentence. A topic word cannot sit inside one: a topic change is something you yourself do to the conversation, but the content of a dependent is not something you assert yourself. Change the topic before the outer sentence, or frame one clause with *as for*:
-
-| Want | Use |
-|------|-----|
-| Content about X, in one sentence | `hahugem` + `/b/` *as for* inside the dependent: a frame for that clause only, no reset |
-| Change the topic, then report | the `/x/` word first: `xolazun zuzozen vezuyel darl zalon vowurel.` *Now, about Olazun: Uzozen says that Olazun walks.* |
-| Report someone's own topic change | quote their wording |
-
-Reading the topic from inside a dependent is fine: `zalon`, tags, and role pointers inside the content resolve to your current stretch. *Uzozen says that the main one runs* means your topic, not Uzozen's. A clause join is not a dependent, but it keeps the clauses in one written sentence, so a topic word cannot follow one either: change the topic after a period.
-
-### Quotes and asides {#topic-quotes}
-
-A quote is someone else's talk, so it keeps its own topic and its own tags, and neither carries over into yours. An aside uses your stretch and never changes the topic. For a real side topic, end the sentence and use `xuvedam`.
-
-### Me or you as the topic {#topic-participants}
-
-`/x/` takes the speaker, listener, interlocutors, or people in general like any noun: `xuwon` *now, about me*, `xawan` *now, about you*, `xayan` *now, about the two of us*, `xeyon` *now, about people in general*. A nonspecific `umon` cannot be a topic, because a topic is someone in particular. The topic is fixed to that person (or the address set) at the moment it is set, so after `xawan`, both speakers say `zalon` for the same person.
-
-### Asking about the topic {#topic-question}
-
-To ask what the talk is about, ask *which topic?*: the fill-ask blank `zar`, then `gahugem` *topic*. The natural answer is a lone `/x/` introduce or return, which sets the topic for both speakers.
-
-> `yol zar gahugem.`
->
-> y-question | [z-wh | g-topic]
->
-> "Which topic?" / "What are we talking about?"
-
-**Compare with:** English *topic* covers several jobs, and Agebon keeps them apart. The discourse topic is `/x/`. A sentence frame is `hahugem` *as for*. `&` contrasts one phrase ([tone marks](speech-moves.md#tone-marks)). `zal` / `zem` / `zel` rank among others. Only `/x/` sets the topic.
-
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -761,10 +610,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *harvest* | `vugelam` | 🌾 from *grain*: bringing the crop in |
 | *red* | `erulel` | 🔴 |
-| *as for* | `hahugem` | #️⃣ from *hash*: a heading mark |
-| *by the way* | `xuvedam` | 🍟 from *fries*: a side dish, not the main course |
 | *reciprocity* | `hehem` | ↔️ from *east-west*: each one to the others |
-| *topic* | `alon` | ⭐ from *star*: the star of the talk |
 
 **Review:**
 
@@ -777,8 +623,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *pour* | `vobuvul` |
 | *tomato* | `udedol` |
 | *watermelon* | `owodol` |
-| *family* | `avayal` |
-| *seedling* | `elel` |
 | *like* | `hewom` |
 | *see* | `vawebol` |
 | *scream* | `varemul` |
@@ -817,20 +661,12 @@ z-tomato | g-red . z-watermelon | g-←red
 [z-Ahelan | z-tag.A] | v-pour . [z-Olazun | z-tag.E] | v-harvest . z-←tag.A | d-←tag.E | v-see
 :::
 
-**5.** *Now, about Uzozen: Uzozen harvests. Olazun sees Uzozen.*
+**5.** *Uzozen (A) and Olazun (E) harvest. A and E scream.*
 
 ::: details Show answer
-`xuzozen zalon vugelam. zolazun dalon vawebol.`
+`zuzozen zwal zolazun zwel zam vugelam. zwaer varemul.`
 
-x-Uzozen | z-TOPIC | v-harvest . z-Olazun | d-TOPIC | v-see
-:::
-
-**6.** *As for the family, Olazun harvests.*
-
-::: details Show answer
-`hahugem blavayal zolazun vugelam.`
-
-[h-as-for | bl-family] | z-Olazun | v-harvest
+[[z-Uzozen | z-tag.A] | [z-Olazun | z-tag.E] | z-and.open] | v-harvest . z-←tag.A+E | v-scream
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}
@@ -859,28 +695,12 @@ z-listener-x | v-harvest
 *You all harvest.*
 :::
 
-**4.** `zuzozen zwal zolazun zwel zam vugelam. zwaer varemul.`
+**4.** `zuzozen varemul. zolazun varemur.`
 
 ::: details Show answer
-[[z-Uzozen | z-tag.A] | [z-Olazun | z-tag.E] | z-and.open] | v-harvest . z-←tag.A+E | v-scream
+z-Uzozen | v-scream . z-Olazun | v-←scream
 
-*Uzozen (A) and Olazun (E) harvest. A and E scream.*
-:::
-
-**5.** `xolazun zalon vobuvul. xuvedam zuzozen delel vawebol. xolazur zalon vugelam.`
-
-::: details Show answer
-x-Olazun | z-TOPIC | v-pour . x-by-the-way | z-Uzozen | d-seedling | v-see . x-←Olazun | z-TOPIC | v-harvest
-
-*Now, about Olazun: Olazun pours. By the way, Uzozen sees a seedling. Back to Olazun: Olazun harvests.*
-:::
-
-**6.** `yol zar gahugem.`
-
-::: details Show answer
-y-question | [z-wh | g-topic]
-
-*Which topic?* / *What are we talking about?*
+*Uzozen screams. Olazun does too.*
 :::
 
 #### Pick one {#intermediate-pick-one}
@@ -907,15 +727,17 @@ z-listener-x | v-scream
 
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Now, about Uzozen: Uzozen sees Olazun.* <!-- lint: error -->`xuzozen dolazun vawebol.`
+**1.** *Uzozen (A) pours. Olazun harvests. A screams.* <!-- lint: error -->`zuzozen zwal vobuvul. zolazun vugelam. zwazar varemul.`
 
 ::: details Show answer
-`xuzozen zalon dolazun vawebol.`
+`zuzozen zwal vobuvul. zolazun vugelam. zwar varemul.`
 
-x-Uzozen | z-TOPIC | d-Olazun | v-see
+[z-Uzozen | z-tag.A] | v-pour . z-Olazun | v-harvest . z-←tag.A | v-scream
 
-A dropped subject is never the topic: write **`zalon`** when the topic is the one who sees.
+A tag stays on A; **`zwazar`** is the latest doer, Olazun.
 :::
 
 ## See also
 - [plurality.md](plurality.md#clusivity): **-x**; address set vs associative
+- Topic: [topic.md](topic.md)
+

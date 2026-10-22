@@ -7,7 +7,7 @@ outline: false
 
 # People and pointing cheat sheet {#people-pointing-cheat-sheet}
 
-A quick look at [pronouns](../pronouns.md) and [plurality](../plurality.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
+A quick look at [pronouns](../pronouns.md), [topic](../topic.md), and [plurality](../plurality.md) on one page. Nothing here is new: each row links to the section that teaches it. Stage: **B** Beginner, **I** Intermediate, **A** Advanced.
 
 ## Pointing back {#pointing-back}
 
@@ -22,7 +22,7 @@ A quick look at [pronouns](../pronouns.md) and [plurality](../plurality.md) on o
 | [Their part, not them](../pronouns.md#share) | the same pointer with **-m** | `zwazam` | *what the doer did* | B |
 | [Pin one sense](../pronouns.md#resume-sense) | **-rl** concrete, **-rm** abstract | `dudozorl` | *the dog* (not the loyalty) | I |
 | [A label you chose](../pronouns.md#tag-pronouns) | role letter + `w` + tag vowel | `zwar` | *A* | I |
-| [The talk's topic](../pronouns.md#topic-pronoun) | `alo` + **-n** | `zalon` | *the topic* | I |
+| [The talk's topic](../topic.md#topic-pronoun) | `alo` + **-n** | `zalon` | *the topic* | I |
 
 A resume uses the **whole stem**: `dobahohar` is *the bedroom*, `dobahor` is *the bed*. It points at the **most recent** word with that stem.
 
@@ -43,7 +43,7 @@ Role letter for the slot now (see [role pointers](../pronouns.md#role-pointers))
 | **o** | [the nearest one other than the last](../pronouns.md#the-other-one) | `zwazor` | *the other one* | B |
 | **u** | [the latest sentence that left the part unsaid](../pronouns.md#whoever-it-was) | `zwazur` | *whoever did it* | B |
 
-Endings on a pointer: **-r** the same one, **-l** [a new one](../pronouns.md#a-new-one) (not with **u**), **-m** [their part](../pronouns.md#share) (not with **e**). A pointer never names its own slot. A topic change [ends its reach](../pronouns.md#topic-resets).
+Endings on a pointer: **-r** the same one, **-l** [a new one](../pronouns.md#a-new-one) (not with **u**), **-m** [their part](../pronouns.md#share) (not with **e**). A pointer never names its own slot. A topic change [ends its reach](../topic.md#topic-resets).
 
 ### Other ways to point {#other-pointing}
 
@@ -71,22 +71,22 @@ A [tag](../pronouns.md#tag-pronouns) is a label you choose: role letter, `w`, a 
 
 ## The topic {#topic}
 
-Only an `/x/` word at the start of a sentence sets the [topic](../pronouns.md#topic). Being first, being the subject, and *as for* do not.
+Only an `/x/` word at the start of a sentence sets the [topic](../topic.md#topic). Being first, being the subject, and *as for* do not.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
 | Introduce a person | `xuzozen` | *now, about Uzozen* | I |
 | Introduce a kind | `xudozol` | *now, about a dog* | I |
-| [Return to an earlier topic](../pronouns.md#topic-return) | `xuzozer` | *back to Uzozen* | I |
-| [Return to the kind from before](../pronouns.md#topic-return) | `xudozor` | *back to the dog* | I |
-| [Clear the topic](../pronouns.md#topic) | `xuvewem` / `xuvedam` | *next* / *by the way* | I |
-| [The topic itself, in any slot](../pronouns.md#topic-pronoun) | `zalon` / `dalon` / `balon` | *the topic* | I |
+| [Return to an earlier topic](../topic.md#topic-return) | `xuzozer` | *back to Uzozen* | I |
+| [Return to the kind from before](../topic.md#topic-return) | `xudozor` | *back to the dog* | I |
+| [Clear the topic](../topic.md#topic) | `xuvewem` / `xuvedam` | *next* / *by the way* | I |
+| [The topic itself, in any slot](../topic.md#topic-pronoun) | `zalon` / `dalon` / `balon` | *the topic* | I |
 
 The topic pronoun is never a topic word or a resume (`xalon`, `xalor`, `zalor` are not sentences). A dropped subject is never the topic: write `zalon`.
 
-| [What a topic change resets](../pronouns.md#topic-resets) | Resets? | Stage |
+| [What a topic change resets](../topic.md#topic-resets) | Resets? | Stage |
 |----------------------------|---------|-------|
-| [Role pointer anchors](../pronouns.md#topic-resets) | yes | I |
+| [Role pointer anchors](../topic.md#topic-resets) | yes | I |
 | Bare-number magnitude | yes | I |
 | Whole-stem **-r** | no | I |
 | Tags | no | I |
@@ -149,4 +149,4 @@ Who counts as an associate is [open unless you say](../plurality.md#associate-re
 | `zawan` *you* ([one listener](../pronouns.md#special-pronouns)) | | `zawanx` *you all* ([the address set](../plurality.md#person-role-x)) |
 | `zumon` *someone* ([tied to no event](../pronouns.md#special-pronouns)) | | `zwazur` *whoever did that* ([tied to one known event](../pronouns.md#whoever-it-was)) |
 | `zeyon` *one*, people at large ([generic](../pronouns.md#generic-pronoun)) | | `zawan` *you*, the listener ([just them](../pronouns.md#special-pronouns)) |
-| `xuzozen` *now, about Uzozen* ([sets the topic](../pronouns.md#topic)) | | `zalon` *the topic* ([refers to it](../pronouns.md#topic-pronoun)) |
+| `xuzozen` *now, about Uzozen* ([sets the topic](../topic.md#topic)) | | `zalon` *the topic* ([refers to it](../topic.md#topic-pronoun)) |

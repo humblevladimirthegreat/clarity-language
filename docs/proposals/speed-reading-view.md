@@ -23,7 +23,7 @@ An earlier sketch replaced every word with its root's emoji, with the part-of-sp
 
 Use pictures only where they make a passage easy to find: one per **topic stretch**.
 
-`syntax-highlighting.md` draws a left rule beside each topic stretch: the sentences from a topic-setting `/x/` word ([topic](../grammar/pronouns.md#topic)) until the topic changes or clears. This proposal puts the topic's emoji at the top of that rule. Down the left edge of a page, the reader sees a short column of pictures, one per stretch, which works like a table of contents. There are few pictures, so each one still stands out. The text itself does not change.
+`syntax-highlighting.md` draws a left rule beside each topic stretch: the sentences from a topic-setting `/x/` word ([topic](../grammar/topic.md#topic)) until the topic changes or clears. This proposal puts the topic's emoji at the top of that rule. Down the left edge of a page, the reader sees a short column of pictures, one per stretch, which works like a table of contents. There are few pictures, so each one still stands out. The text itself does not change.
 
 | Topic event | Margin |
 |-------------|--------|

@@ -275,7 +275,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🐒,monkey,emoza,creature,holds,medium,mimicry,monkey see monkey do,,copy,
 🦍,gorilla,egaze,creature,order,big,dominance,800-pound gorilla dominates,,dominate,
 🦧,orangutan,orozo,creature,one,medium,,,,,
-🐕,dog,udozo,creature,one,medium,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,questions.md#intermediate-practice
+🐕,dog,udozo,creature,one,medium,loyalty,a dog shows loyalty,v:bark,faithfully; faithful,fill-ask-roles.md#intermediate-practice
 🦮,guide-dog,egoze,creature,order,medium,reliance,a guide dog is relied on to lead; reliance is depending on something,,,
 🐺,wolf,owozu,creature,takes-away,medium,predation,wolf at the door,,,
 🦊,fox,ovozu,creature,takes-away,medium,cunning,sly as a fox,,,
@@ -462,7 +462,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🥩,steak,ozedo,food,one,small,seriousness,steak dinner is serious business,,serious,
 🥓,bacon,abede,food,order,small,indulgence,bacon is guilty indulgence,,,
 🍔,hamburger,aheda,food,holds,small,mainstream,burger is mainstream fare,,,
-🍟,fries,uveda,food,holds,small,accessory,fries are a side accessory,,supplement,pronouns.md#intermediate-practice
+🍟,fries,uveda,food,holds,small,accessory,fries are a side accessory,,supplement,topic.md#intermediate-practice
 🍕,pizza,eyoda,food,holds,medium,camaraderie,pizza night builds camaraderie,,,
 🌭,hotdog,oheda,food,holds,small,showmanship,a hotdog is flashy showmanship,,,comparatives.md#advanced-practice
 🥪,sandwich,eda,food,holds,,compromise,sandwich layers are compromise,,,plurality.md#beginner-practice
@@ -537,7 +537,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 🏺,amphora,emoda,food,holds,medium,,,,,
 🌍,earth,evala,nature,holds,big,world,the earth is the whole world we share,,,
 🌐,globe,oguga,sign,holds,none,connected,a globe links every place; connected means linked together,,global,
-🗺️,map,age,sign,order,,plan,a map charts a route; a plan charts a course,,agenda; design; project,
+🗺️,map,age,sign,order,,plan,a map charts a route; a plan charts a course,,agenda; design; project,fill-ask-roles.md#intermediate-practice
 🗾,country,aha,place,holds,,scope,a map of one country; scope is the area the picture includes,,national; region; nation; extent; regional; zone; territory; area,
 🧭,compass,ure,counting,order,,direction,a compass points the way; direction is where you're headed,,direct; guide,
 ⛰️,mountain,amahu,place,takes-away,big,challenge,mountains are hard to climb; a challenge is hard to face,,pile; heap,predication.md#beginner-practice
@@ -1098,7 +1098,7 @@ emoji,concrete,root,kind,shape,size,abstract,mnemonic,english_by_pos,english_ali
 ®️,registered,urunu,title,takes-away,none,,,,registration,
 ™️,trademark,odunu,title,takes-away,none,claim,trademark claims brand identity; claim is asserting as yours,,brand,
 🫟,splatter,ezula,nature,holds,none,disorder,splatter makes a mess; disorder is the unobservable lack of order,,mess; stain,
-#️⃣,hash,ahuge,sign,order,none,topic,hash marks a topic,m.h:as-for,issue; theme; matter; subject,pronouns.md#intermediate-practice
+#️⃣,hash,ahuge,sign,order,none,topic,hash marks a topic,m.h:as-for,issue; theme; matter; subject,topic.md#intermediate-practice
 *️⃣,asterisk,uzugu,sign,takes-away,none,wildcard,an asterisk stands in for any characters,,,
 🔠,upper-case,ewuge,sign,order,none,,,,,
 🔡,lower-case,oluge,sign,order,none,casualness,lowercase skips the formality of capitals,,,

@@ -135,7 +135,7 @@ export function answerFill(ctx: Ctx, act: Act, answerer: EntityId): Outcome {
   const id = subject?.ok ? subject.id : undefined;
   if (id) remember(ctx, [id]);
 
-  // Where? (`ol bar`, `al bar`; questions.md#where)
+  // Where? (`ol bar`, `al bar`; fill-ask-roles.md#where)
   if (act.places.some((p) => p.landmark.kind === "gap")) {
     if (!id) return cannotSay(ctx, answerer);
     const where = whereIs(world, id);
@@ -147,7 +147,7 @@ export function answerFill(ctx: Ctx, act: Act, answerer: EntityId): Outcome {
     return "ok";
   }
 
-  // What is it like? (`gar`; questions.md#what-kind)
+  // What is it like? (`gar`; fill-ask-roles.md#what-kind)
   if (act.predicate.some((w) => w.reading === "join")) {
     const prop = id ? entity(world, id).props[0] : undefined;
     if (!id || !prop) return cannotSay(ctx, answerer);

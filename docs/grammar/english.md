@@ -73,7 +73,7 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
 | regarding / as for (*about Uzozen*) | **`hahugem`** + `/b/` | [As-for](say-people-places.md#as-for) |
-| now, about (*now, about Uzozen*; *speaking of Uzozen*) | `/x/` + the noun: **`xuzozen`** | [Topic](pronouns.md#topic) |
+| now, about (*now, about Uzozen*; *speaking of Uzozen*) | `/x/` + the noun: **`xuzozen`** | [Topic](topic.md#topic) |
 | what was said (*tells that the dog runs*) | **stand-in** **`darl`** (often `/d/`) | [Dependent clauses](dependents.md#dependent-clauses) |
 | approximate amount (*about three*) | number **-m** (`~`) | [Number endings](numbers.md#number-endings) |
 | approximate clock (*around 15:30*) | clock **-m** | [Time](numbers-applied.md#time) |
@@ -319,13 +319,13 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 
 | English itch | Agebon job | Teach |
 |--------------|------------|-------|
-| *now, about Uzozen*, *speaking of Uzozen* | `/x/` + the noun: **`xuzozen`** | [Topic](pronouns.md#topic) |
-| *now, about Sam* (a foreign name) | <code>x@&lt;Sam&gt;</code> | [Topic](pronouns.md#topic), [spans](spans.md#topic-quotes) |
-| *now, about the word “udozo”* | `glegel x[udozo]` | [Topic](pronouns.md#topic), [mention](spans.md#mention) |
-| *now, about Enuron Olazun* (the work) | `x@[enuron olazun]` | [Topic](pronouns.md#topic), [cite](spans.md#writing) |
-| *back to Uzozen*, *as I was saying about Uzozen* | `/x/` + whole stem + **-r**: **`xuzozer`** | [Return](pronouns.md#topic-return) |
-| *anyway, Uzozen …* (after a side topic) | **`or xuzozer …`** | [Return](pronouns.md#topic-return), [resume hooks](hooks.md#hook-resume) |
-| *what are we talking about?* | **`yol zar gahugem.`** | [Asking about the topic](pronouns.md#topic-question) |
+| *now, about Uzozen*, *speaking of Uzozen* | `/x/` + the noun: **`xuzozen`** | [Topic](topic.md#topic) |
+| *now, about Sam* (a foreign name) | <code>x@&lt;Sam&gt;</code> | [Topic](topic.md#topic), [spans](spans.md#topic-quotes) |
+| *now, about the word “udozo”* | `glegel x[udozo]` | [Topic](topic.md#topic), [mention](spans.md#mention) |
+| *now, about Enuron Olazun* (the work) | `x@[enuron olazun]` | [Topic](topic.md#topic), [cite](spans.md#writing) |
+| *back to Uzozen*, *as I was saying about Uzozen* | `/x/` + whole stem + **-r**: **`xuzozer`** | [Return](topic.md#topic-return) |
+| *anyway, Uzozen …* (after a side topic) | **`or xuzozer …`** | [Return](topic.md#topic-return), [resume hooks](hooks.md#hook-resume) |
+| *what are we talking about?* | **`yol zar gahugem.`** | [Asking about the topic](topic.md#topic-question) |
 | *one*, generic *you*, *people* (in general) | **`eyon`** | [Generic pronoun](pronouns.md#generic-pronoun) |
 | *the latter* / *the former* (of two just named in the same role) | role pointer **`zwazar`** (*the latter*) / **`zwazor`** (*the other one*); to keep two apart for longer, tag them when you name them (`zudozol zwal`, then `zwar`) | [Role pointers](pronouns.md#role-pointers), [tag pronouns](pronouns.md#tag-pronouns) |
 | *call it A*, *let A be a dog*, *suppose A tells E* | tag + **-l** after the phrase (**`zudozol zwal`**) or alone for a placeholder (**`zwal`**); then **`zwar`** | [Tag pronouns](pronouns.md#tag-pronouns) |

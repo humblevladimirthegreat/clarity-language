@@ -1206,7 +1206,7 @@ These four are the whole set. The other two standard stacks, **r-a-o** and **r-a
 
 In careful writing, an omitted exponent means ones-place (`gragel` = 3). Prefer writing the exponent when the magnitude matters.
 
-In casual measure-heavy talk, a stretch of conversation may set an **ambient** order of magnitude (often an engineering `e3` / `e6` / …). Numbers written without an exponent are then heard at that magnitude until you cancel it. A [topic change](pronouns.md#topic-resets) starts a new stretch, so bare numbers go back to ones until an ambient decade is set again.
+In casual measure-heavy talk, a stretch of conversation may set an **ambient** order of magnitude (often an engineering `e3` / `e6` / …). Numbers written without an exponent are then heard at that magnitude until you cancel it. A [topic change](topic.md#topic-resets) starts a new stretch, so bare numbers go back to ones until an ambient decade is set again.
 
 **Writing `e0`** says *ones* outright and cancels the ambient magnitude:
 

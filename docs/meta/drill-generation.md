@@ -183,6 +183,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `relations.md` | Advanced | a records room |
 | `pronouns.md` | Beginner | a kitchen |
 | `pronouns.md` | Intermediate | a rooftop garden |
+| `topic.md` | Intermediate | a book club |
 | `say-people-places.md` | Pointing back across roles | a radio booth |
 | `plurality.md` | Beginner | a picnic |
 | `plurality.md` | Intermediate | a choir loft |
@@ -195,6 +196,7 @@ Which stages get a checkpoint at all is the [allowlist](#allowlist) (**skip** / 
 | `joins.md` | Advanced | a treaty table |
 | `questions.md` | Beginner | a lost-and-found |
 | `questions.md` | Intermediate | a detective interview |
+| `fill-ask-roles.md` | Intermediate | an information booth |
 | `say-questions.md` | Offers and confirmations | a quiz show |
 | `say-tense.md` | Tense and modals | a train station |
 | `hooks.md` | Beginner | a restaurant pass |
@@ -293,7 +295,7 @@ Status: **exists** = do not overwrite; **generate** = add if missing; **skip** =
 | 8 | `plurality.md` | **exists** | Associative **-x** (`-lx` / `-nx` / `-rx`); not agreement; person-role **-x** (address set vs name…**-x**) | **`aya`** as the *not this* for inclusive *we*. **`uwo`/`awa`** only on person-role items |
 | 9 | `predication.md` | **exists** | Classification `z… g…` vs kind *noun* `zudozol`; identity **`gorol` + `/b/`** | No general *to-be* `/v/`. Prefer house names + **SAME**; page-example roots (`azawdavraga` / `uzuda`) OK if already taught in this stage |
 | 10 | `joins.md` | **exists** | Right-close fence; set vs rank vowels; **-l** vs **-m**; list / single-item / standalone starter forms; negation **`u`**; unspecified **-r** as *something* (not fill-ask), and **-rx** as *some of them* | No hooks, no restrictor `/h/` join readings, no comparatives SHARED scale as the point (that is comparatives) |
-| 11 | `questions.md` | **exists** | **`yol`/`yom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`yael` / `yuel` / `yaol`** vs **`yul`** vs join **`zul`** | **`yom`** is taught here as soft *ask* — allowed on this page even though full speech-act twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on this page — do not use |
+| 11 | `questions.md` | **exists** | **`yol`/`yom`** yes/no vs fill-ask (join **-r**); fill-all; polar **`yael` / `yuel` / `yaol`** vs **`yul`** vs join **`zul`** | **`yom`** is taught here as soft *ask* — allowed on this page even though full speech-act twins are core Intermediate. Circumstance *when?* **`har`** is Intermediate on fill-ask-roles.md — do not use |
 | 12 | `hooks.md` | **exists** | Prefix-less **hooks** (**`al`/`am`/`ol`/`ul`/`el`**); in-clause `A HOOK B`; discourse **`al`** *additionally*; extra-noun **`al`/`ol`/`ul`/`el`** + `/b/` (**in** / **at** / **from** / **for**) | Not a join (`zam` vs `am`). Not stacked extra-noun (`aol` / `ael`). Not **`xrewul` / `xrewal`**
 | 12 | `restrictors.md` | **exists** | **`hal`/`ham`/`hual`/`huam`/`har`/`hor`/`hur`** (and `/w/` twins); *only when* vs co-manner *and*; bare *never* / *always* | Not sibling hooks. Not join **`zam`** as a restrictor |
 | 14 | `spans.md` | **exists** | Writing fences `[ ]` `( )` `< >`; **`~`/`@`**; PoS = outer slot; **aside** = `th(…)`; interior fragment or same-speech-act clause; when a span is required vs nativized word | `<>` loans **allowed** (this stage teaches them). Prefer one-token cites. The mention marker (`glegel`) is Intermediate |
@@ -323,7 +325,9 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 13 | `relations.md` | Advanced | **exists** | Hosted *as-of* **`henam` / `hunem`**; `/h/` `/ɡ/` `/w/`; resume **-r**; date in `/b/` | Recycle RESIDUE, forecast, calendar `b_#…`. Not persist hooks |
 | 4 | `word-endings.md` | Intermediate | **exists** | **-n** on any PoS (titled verb/adjective/adverb); full names (given + `/ɡ/` family **-n**) and hyphenated names `ROOTxROOT`+**-n**; [titled phrases](../grammar/word-endings.md#titled-phrases) (hook / join / span **-n**, inner **-l** / **-m**) | Not value/ability/plan ending tables |
 | 4 | `word-endings.md` | Advanced | skip | — | no Advanced stage |
-| 9 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; `/x/`…`-r` thread resume vs `/h/` aboutness; **`aya`** vs name join vs name…**-x** | |
+| 9 | `pronouns.md` | Intermediate | **exists** | English approximations of **-r**; resume one sense; cross-role recast; each other; addressing several people; tags | |
+| 9 | `topic.md` | Intermediate | **exists** | `/x/` introduce / return / clear; topic pronoun **`alon`**; what a topic change resets; groups as topic; asking about the topic | No Beginner slot. Recycle = all Beginner + pronouns Intermediate (tags, role pointers) |
+| 9 | `topic.md` | Advanced | — | no Advanced stage | |
 | 9 | `pronouns.md` | Advanced | — | no Advanced stage | |
 | 9 | `plurality.md` | Intermediate | **exists** | Associate resolution; verb collective; collective `/ɡ/`…**-x**; vocative **-x** | |
 | 9 | `plurality.md` | Advanced | — | no Advanced stage | |
@@ -331,8 +335,10 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 10 | `predication.md` | Advanced | skip | boundaries | |
 | 11 | `joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains (every and none, by set); SHARED after join; `{ }` islands; fence nesting | Sample **decisions**, not every H3 |
 | 11 | `joins.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from this stage | — |
-| 12 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; fill-ask arity; occasion **`har`**; yes/no with single-item/standalone; fill-ask answers | |
+| 12 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; yes/no with single-item/standalone; tags; rhetorical; quiz; stacked questions | |
 | 12 | `questions.md` | Advanced | — | no Advanced stage | |
+| 12 | `fill-ask-roles.md` | Intermediate | **exists** | Fill-ask arity; *what kind* / *when* / *where* / *whose* / *how* / *why*; a blank inside a dependent | No Beginner slot. Recycle = all Beginner + questions Intermediate (polar, tags, `dorl` / `darl`) |
+| 12 | `fill-ask-roles.md` | Advanced | — | no Advanced stage | |
 | 12 | `hooks.md` | Intermediate | **exists** | Ending grids; parallel chains; discourse placements; extra-noun stacks (`aol` / `oel` / `ual` / `uol` / `ael` / `uel`) and extra-noun **-m**; abstract landmarks (`ual baram`); stacked point-back (`aor` / `aer` / `uor`) | |
 | 12 | `hooks.md` | Advanced | **exists** | Extra-noun **hook compounds** (citation keeps **-l** / **-m**, then the extra-noun hook; lemma is the citation; `/d/` landmark); **hook prefixes** (hook vowels + **`x`** / **`mx`** + stem, on `/ɡ/` `/z/` `/d/` `/b/` `/h/`); **hooked joins** (hook vowels + **`x`** + a join, `bl-` landmark; `/h/` time bounds) | Recycle extra-noun grid and abstract landmarks. Not same-role *including*. Not two-word `vowurel ul …`. Hooked join vs a free hook after the verb (who counts vs where) |
 | 13 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; dependent *when* | |
@@ -384,6 +390,8 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | **SAME** `gorol` | `predication.md` Beginner |
 | Phrase joins, **`zal`/`zam`/`zel`**, negation **`u`** | `joins.md` Beginner |
 | Fill-ask join **-r** (`zar` / `var` / `xar`); polar **`yuel`/`yaol`** as the *system* | `questions.md` Beginner |
+| Fill-ask role blanks (`gar`, `har`, `ol bar`, `em bar`, `hewom blar`, `thahum blar`); blank in a dependent | `fill-ask-roles.md` Intermediate |
+| Topic pronoun **`alon`**; `/x/` introduce / return / clear | `topic.md` Intermediate |
 | Extra-noun hook compounds (`owurelul`) | `hooks.md` Advanced |
 | Hook prefixes (`guexavuvul`, `gamxohalal`) | `hooks.md` Advanced |
 | Hooked joins (`zoxual blahehal`, `huxal blenulul`) | `hooks.md` Advanced |

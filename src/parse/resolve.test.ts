@@ -335,7 +335,7 @@ describe("resolve — tag pronouns (pronouns.md#tag-pronouns)", () => {
   });
 });
 
-describe("resolve — topic (pronouns.md#topic)", () => {
+describe("resolve — topic (topic.md#topic)", () => {
   function topics(text: string): string[] {
     return resolveOf(text)
       .anaphors.filter((a) => a.kind === "topic")

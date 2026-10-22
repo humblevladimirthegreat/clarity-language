@@ -337,7 +337,7 @@ For the **address set** (`awanx`), count everyone called by name at the start of
 
 ### Groups as the topic
 
-A [topic word](pronouns.md#topic-groups) takes **-x** like any noun: `xuzozenx` makes *Uzozen and associates* the topic, `xudozolx` makes *some dogs* the topic, and `xuzozerx` returns to the group. The published [linkers](dependents.md#sentence-linkers) take no **-x**.
+A [topic word](topic.md#topic-groups) takes **-x** like any noun: `xuzozenx` makes *Uzozen and associates* the topic, `xudozolx` makes *some dogs* the topic, and `xuzozerx` returns to the group. The published [linkers](dependents.md#sentence-linkers) take no **-x**.
 
 ### Verbs (`/v/`): collective {#verbs-v}
 

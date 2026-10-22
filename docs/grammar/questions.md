@@ -595,156 +595,11 @@ When the question already contains *not* (*Didn’t Uzozen run?*), *yes* and *no
 >
 > "True, they didn’t run."
 
-### Fill-ask arity {#fill-ask-arity}
-
-Beginner already used *who/what* (**…ar**) and *what else* (**…ur**). Two more vowels (**…or**, **…er**) and the number of items listed before the blank (none, one, or several) complete the map, which matches [single-item / standalone](joins.md#single-item-phrase).
-
-<!-- cheat-sheet: talking -->
-| Items listed | **…ar** | **…or** | **…er** | **…ur** |
-|--------|---------|---------|---------|---------|
-| **0** | *Who/what?* | *Anything?* | *What’s the priority?* | *What else?* |
-| **1** | *What/which (unknown) X?* | *Any X?* | *Which X is first?* | *What else (besides X)?* |
-| **2+** | *Which of these?* | *Any of these?* | *Which ranks highest?* | *What else?* / *Other than these?* |
-
-With nothing listed, **-r** in the asked-about slot is an open *who* / *what*. Bare **`var`** / **`xar`** is *what did they do?* / *what happened?*. Bare **`har`** is *when?*.
-
-### What kind? {#what-kind}
-
-To ask what something is **like** (*What color is it?*, *What kind of dog?*), put the blank on an adjective: **`gar`**. Answer with the adjective as a [citation](word-endings.md#citation-forms).
-
-> `yol gar zudozol.`
->
-> y-question | g-wh | z-dog
->
-> "What is the dog like?"
-
-> `gelazom.`
->
-> "Big."
-
-| Agebon | English |
-<!-- cheat-sheet: talking -->
-|--------|---------|
-| **`gar`** | *What is it like?* / *What kind?* |
-| **`gor`** | *Like anything in particular?* |
-| **`gur`** | *What else is it like?* |
-
-**Compare with:** *like what?* is the similative blank, **`hewom blar`**: it asks for a model to resemble, not a property.
-
-### When? {#when}
-
-To ask *when?* / *in what case?*, put the blank **`har`** in the `/h/` slot (or **`war`** on `/w/`).
-
-> `yol har zahelan vowurel.`
->
-> y-question | h-when | z-Ahelan | v-walk
->
-> "When does Ahelan walk?"
-
-| Agebon | English (statement, bare) | English (under question, bare) |
-|--------|---------------------------|--------------------------------|
-| **`har`** / **`war`** | *sometimes* | *When?* / *In what case?* |
-
-### Where? {#where}
-
-To ask *where?*, write an [extra-noun hook](hooks.md#extra-noun) (a short word like *at*, *in*, or *from* that brings in a `/b/` noun), then the blank **`bar`** in the `/b/` slot after it. The hook picks which *where* you mean.
-
-> `yol ol bar zahelan vowurel.`
->
-> y-question | [at | b-wh] | z-Ahelan | v-walk
->
-> "Where does Ahelan walk?"
-
-> `yol al bar zudozol vezuvol.`
->
-> y-question | [in | b-wh] | z-dog | v-sleep
->
-> "What does the dog sleep in?"
-
-| Agebon | English |
-<!-- cheat-sheet: talking -->
-|--------|---------|
-| **`ol bar`** | *Where (at)?* |
-| **`al bar`** | *In what?* |
-| **`ul bar`** | *Where from?* |
-| **`el bar`** | *For what?* |
-| **`ol bor`** | *Anywhere?* |
-| **`ol bur`** | *Where else?* |
-
-Answer with the hook and the landmark, as a [citation](word-endings.md#citation-forms): `ol bahehal.` ("At the house.").
-
-**Compare with:** *when?* is **`har`** on `/h/`. Occasions are times or cases, so a place never goes there.
-
-### Whose? {#whose}
-
-To ask *whose?*, write the hook **`em`** (*used by*) after the thing, then the blank **`bar`**: the same shape as *where?*. Because **`em`** says the `/b/` noun uses the thing, the question asks *who uses it?*
-
-> `yol zudozol em bar vowurel.`
->
-> y-question | [z-dog | [used-by | b-wh]] | v-walk
->
-> "Whose dog walks?"
-
-Answer with the hook and the user, as a [citation](word-endings.md#citation-forms): `em buzozen.` ("Uzozen's."). For ownership rather than use, see [`gogunum`](joins.md#scope-fence-p-join).
-
-### How? {#how}
-
-To ask *how?*, use the same shape as *where?*: a word that says how the answer relates to the event, then the blank **`blar`**. For manner (*in what way?*), that word is [**`hewom`**](relations.md) *like*, so the question asks *like what?*
-
-> `yol hewom blar zuzozen vowurel.`
->
-> y-question | [h-like | bl-wh] | z-Uzozen | v-walk
->
-> "How does Uzozen walk?" (*like what?*)
-
-To ask about means (*with what?*), use the *using* hook with the blank.
-
-### Why? {#why}
-
-To ask *why?*, write a [condition word](causation.md) (*because*, *so that*, *in case*), then the blank **`blar`**. Pick the word for the kind of reason you want.
-
-> `yol thahum blar zuzozen vowurel.`
->
-> y-question | [th-because | bl-wh] | z-Uzozen | v-walk
->
-> "Why does Uzozen walk?" (*because of what?*)
-
-> `yol hovam blar zuzozen vowurel.`
->
-> y-question | [h-so-that | bl-wh] | z-Uzozen | v-walk
->
-> "What does Uzozen walk for?"
-
-| Agebon | English |
-<!-- cheat-sheet: talking -->
-|--------|---------|
-| **`thahum blar`** | *Why?* (*because of what?*) |
-| **`hovam blar`** | *What for?* (*for what purpose?*) |
-| **`thohom blar`** | *Under what condition?* / *In what case?* |
-
-### A blank inside a dependent {#blank-in-dependent}
-
-English puts *who* in different places in *Do you know who walks?* and *Who do you think walks?*. In the first, the inner clause asks; in the second, the main question asks. In Agebon the blank stays in the inner clause both times (it never moves to the front of the outer sentence), and the stand-in's vowel says which question it belongs to. **`dorl`** (*whether*) is itself question-like, so its blank belongs to it, and the outer **`yol`** is yes/no. **`darl`** (*that*) is statement-like and cannot ask, so its blank belongs to the outer **`yol`**.
-
-> `yol zawan vanam dorl zar vowurel.`
->
-> y-question | z-listener | v-knowledge | d-whether-clause | z-wh | v-walk
->
-> "Do you know who walks?"
-
-> `yol zawan vevemol darl zar vowurel.`
->
-> y-question | z-listener | v-think | d-that-clause | z-wh | v-walk
->
-> "Who do you think walks?"
-
-If the outer sentence has a blank of its own, that blank is the main question and the inner one stays with `dorl`: `yol zar vanam dorl zar vowurel.` is *Who knows who walks?* Under a statement, `dorl` plus a blank is a [reported question](#embedded-whether).
-
 ### Yes/no with single-item / standalone
 <a id="yes-no-single-item-standalone"></a>
 <a id="under-question"></a>
 
-A *yes/no* question can also check a **named** item: put a single-item join after it instead of a fill-ask blank. Single-item **-l** (or usual **-n**) asks the listener to confirm that this one item alone is meant (*Just Uzozen?*, *Has to be Uzozen?*). Single-item **-m** offers it (*How about Ahelan?*). **`…ul`** / **`…um`** / **`…un`** confirm or offer a denial (*Not Uzozen?*). Standalone **-l** / **-m** check emptiness (*Nothing?*, *Got nothing?*). Fill-ask still uses **…ar** / **…or** / **…er** / **…ur**.
+A *yes/no* question can also check a **named** item: put a single-item join after it instead of a fill-ask blank. Single-item **-l** (or usual **-n**) asks the listener to confirm that this one item alone is meant (*Just Uzozen?*, *Has to be Uzozen?*). Single-item **-m** offers it (*How about Ahelan?*). **`…ul`** / **`…um`** / **`…un`** confirm or offer a denial (*Not Uzozen?*). Standalone **-l** / **-m** check emptiness (*Nothing?*, *Got nothing?*). Fill-ask still uses join **-r**.
 
 > `yol zuzozen zal.`
 >
@@ -844,25 +699,16 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 |---------|--------|-----|
 | *phone* | `ovewol` | 📱 |
 | *attest* | `vugol` | 👁️‍🗨️ |
-| *dog* | `udozol` | 🐕 |
 
 **Review:**
 
 | English | Agebon |
 |---------|--------|
 | *Uzozen* | `uzozen` |
-| *Olazun* | `olazun` |
-| *Ahelan* | `ahelan` |
 | *listener* | `awan` |
-| *key* | `ogewel` |
 | *tell* | `vezuyel` |
-| *sit* | `vuhohol` |
-| *find* | `vumewol` |
-| *think* | `vevemol` |
-| *knowledge* | `vanam` |
 | *lie* | `valamul` |
-| *walk* | `vowurel` |
-| *sleep* | `vezuvol` |
+| *see* | `vawebol` |
 
 #### English → Agebon {#intermediate-english-to-agebon}
 
@@ -874,39 +720,7 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 y-question | z-Uzozen | [v-tell | v-not] . y-yes
 :::
 
-**2.** *When does Ahelan sit down?* *I'll pass for now.*
-
-::: details Show answer
-`yol har zahelan vuhohol. yoer.`
-
-y-question | h-when | z-Ahelan | v-sit . y-decline-for-now
-:::
-
-**3.** *What is the dog like?*
-
-::: details Show answer
-`yol gar zudozol.`
-
-y-question | g-wh | z-dog
-:::
-
-**4.** *Whose key does Olazun find?*
-
-::: details Show answer
-`yol dogewel em bar zolazun vumewol.`
-
-y-question | [d-key | [used-by | b-wh]] | z-Olazun | v-find
-:::
-
-**5.** *Who do you think lies?*
-
-::: details Show answer
-`yol zawan vevemol darl zar valamul.`
-
-y-question | z-listener | v-think | d-that-clause | z-wh | v-lie
-:::
-
-**6.** *Please attest, okay?*
+**2.** *Please attest, okay?*
 
 ::: details Show answer
 `yem vugol zawan. yol yaol.`
@@ -914,7 +728,7 @@ y-question | z-listener | v-think | d-that-clause | z-wh | v-lie
 y-request | v-attest | z-listener . y-question | y-sure
 :::
 
-**7.** *So who lies?* (you already know; they say it)
+**3.** *So who lies?* (you already know; they say it)
 
 ::: details Show answer
 `yol yal ? zar valamul.`
@@ -922,26 +736,33 @@ y-request | v-attest | z-listener . y-question | y-sure
 y-question | y-statement | ? | z-wh | v-lie
 :::
 
+**4.** *Just Uzozen?*
+
+::: details Show answer
+`yol zuzozen zal.`
+
+y-question | [z-Uzozen | z-and]
+:::
+
+**5.** *I'd rather not say.*
+
+::: details Show answer
+`yoem.`
+
+y-decline-soft
+:::
+
+**6.** *You're not lying, are you?* (a real question; you hope not)
+
+::: details Show answer
+`yol yul ? zawan valamul.`
+
+y-question | y-prohibition | ? | z-listener | v-lie
+:::
 
 #### Agebon → English {#intermediate-agebon-to-english}
 
-**1.** `yol thahum blar zuzozen vowurel.`
-
-::: details Show answer
-y-question | [th-because | bl-wh] | z-Uzozen | v-walk
-
-*Why does Uzozen walk?*
-:::
-
-**2.** `yol hewom blar zahelan vezuyel.`
-
-::: details Show answer
-y-question | [h-like | bl-wh] | z-Ahelan | v-tell
-
-*How does Ahelan tell it?* (like what?)
-:::
-
-**3.** `yol dovewol dor.`
+**1.** `yol dovewol dor.`
 
 ::: details Show answer
 y-question | [d-phone | d-any]
@@ -949,7 +770,7 @@ y-question | [d-phone | d-any]
 *Any phone?* (name one; any will do)
 :::
 
-**4.** `yal yol zar vugol.`
+**2.** `yal yol zar vugol.`
 
 ::: details Show answer
 y-statement | y-question | z-wh | v-attest
@@ -957,23 +778,37 @@ y-statement | y-question | z-wh | v-attest
 *Who attests?* (nobody does)
 :::
 
-
-**5.** `yol ol bur zudozol vezuvol.`
-
-::: details Show answer
-y-question | [at | b-wh-else] | z-dog | v-sleep
-
-*Where else does the dog sleep?*
-:::
-
-**6.** `yol gur zudozol.`
+**3.** `yoer.`
 
 ::: details Show answer
-y-question | g-wh-else | z-dog
+y-decline-for-now
 
-*What else is the dog like?*
+*I'll pass for now.*
 :::
 
+**4.** `zuzozen valamul. yol yuel.`
+
+::: details Show answer
+z-Uzozen | v-lie . y-question | y-no
+
+*Uzozen lied, or am I wrong?*
+:::
+
+**5.** `!!yuol.`
+
+::: details Show answer
+!!y-refuse-option
+
+*Hell no!*
+:::
+
+**6.** `yaer zuzozen vawebol.`
+
+::: details Show answer
+y-yes-for-now | z-Uzozen | v-see
+
+*All right, so Uzozen sees, for now.*
+:::
 
 #### Pick one {#intermediate-pick-one}
 
@@ -997,17 +832,16 @@ y-reject-frame
 **`yual`** rejects the question's premise; **`yuel`** would accept it and say you still lie.
 :::
 
-
 #### Fix it {#intermediate-fix-it}
 
-**1.** *Do you know who walks?* <!-- lint: error -->`yol zawan vanam darl zar vowurel.`
+**1.** *So who attests?* (you already know; they say it) <!-- lint: error -->`yal yol ? zar vugol.`
 
 ::: details Show answer
-`yol zawan vanam dorl zar vowurel.`
+`yol yal ? zar vugol.`
 
-y-question | z-listener | v-knowledge | d-whether-clause | z-wh | v-walk
+y-question | y-statement | ? | z-wh | v-attest
 
-Under **`darl`** the blank belongs to the outer question (*who do you know walks?*); **`dorl`** keeps it in the inner one.
+A quiz puts the question word first; **`yal yol`** is a rhetorical question and asks for nothing.
 :::
 
 ## See also
@@ -1017,3 +851,4 @@ Under **`darl`** the blank belongs to the outer question (*who do you know walks
 - [dependents.md](dependents.md#dependent-clauses): *that* / *whether* after **`darl` / `dorl`**
 - [joins.md](joins.md): join fences; statement readings of **-r** / single-item / standalone
 - [pronouns.md](pronouns.md): content resume **-r** (fill-ask is join **-r**)
+- Fill-ask roles: [fill-ask-roles.md](fill-ask-roles.md)

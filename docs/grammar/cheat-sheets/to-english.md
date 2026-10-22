@@ -32,7 +32,7 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 <!-- generated: closed-words -->
 | Agebon | English | Taught in | Stage |
 |--------|---------|-----------|-------|
-| `alon` | *the topic* | [The topic pronoun](../pronouns.md#topic-pronoun) | I |
+| `alon` | *the topic* | [The topic pronoun](../topic.md#topic-pronoun) | I |
 | `awan` | *you* (the listener) | [Special pronouns](../pronouns.md#special-pronouns) | B |
 | `ayan` | *we* (you and I) | [Special pronouns](../pronouns.md#special-pronouns) | B |
 | `eyon` | *one*, generic *you*, *people* | [Generic pronoun](../pronouns.md#generic-pronoun) | B |

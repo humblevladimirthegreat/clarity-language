@@ -16,7 +16,7 @@ English *as for X* or *regarding X* names who or what the sentence is about, eve
 >
 > "As for Uzozen, Olazun sees a cat."
 
-**Compare with:** *as for* frames this one sentence and leaves the talk's topic alone. English *now, about Uzozen* sets the [topic](pronouns.md#topic) from here on (`xuzozen`).
+**Compare with:** *as for* frames this one sentence and leaves the talk's topic alone. English *now, about Uzozen* sets the [topic](topic.md#topic) from here on (`xuzozen`).
 
 ### Which noun, with resume and kinds
 <a id="which-noun-intermediate"></a>
@@ -771,7 +771,7 @@ Intermediate already recast one referent into a new slot. Each table is an **ant
 | `/w/` … `-r` | degree or frame on a property of that entity | *that* degree / frame |
 | `/h/` … `-r` | occasion framed by that entity | *then* / *that way* (framed by that entity) |
 | `/y/` vocative … `-r` | address that entity | vocative |
-| `/x/` … `-r` | return: sets the [topic](pronouns.md#topic) again | *Going back to subject X* |
+| `/x/` … `-r` | return: sets the [topic](topic.md#topic) again | *Going back to subject X* |
 
 Examples:
 
@@ -1039,7 +1039,7 @@ Examples:
 | Agebon | Use | English |
 |--------|-----|---------|
 | same class (`/y/` or `/x/`) … `-r` | repeat that vocative, interjection, or linker | same call or glue again |
-| `/x/` … `-r` from a noun antecedent | return: sets the [topic](pronouns.md#topic) again | *Going back to subject X* |
+| `/x/` … `-r` from a noun antecedent | return: sets the [topic](topic.md#topic) again | *Going back to subject X* |
 | noun / verb / adjective / adverb … `-r` | recast the named formula or discourse label | ordinary referent (common for `-n` titles) |
 
 Examples:

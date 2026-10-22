@@ -505,7 +505,7 @@ With an extra-noun hook, **-m** makes a **frame extra**: the landmark is the gen
 >
 > "Uzozen walks despite the rain."
 
-To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`ael`**, the same way as [Where?](questions.md#where).
+To ask *how?* about the means (*with what?*), put the blank **`bar`** after **`ael`**, the same way as [Where?](fill-ask-roles.md#where).
 
 > `yol ael bar zuzozen danal varayel.`
 >
@@ -725,7 +725,7 @@ With an object, `vavobel` moves something else: `zuzozen vavobel duhohol.` *Uzoz
 
 In reported speech, the speaker is still whoever says the whole sentence. After *that* (`darl`, see [dependents](dependents.md#stand-in)), `om buwon` is near the person talking now. Inside a quoted [cite span](spans.md), the quoted person is the speaker, as in English direct quotes.
 
-**Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zudozor`), not a place. *Where?* is `ol bar` ([Where?](questions.md#where)).
+**Compare with:** *that dog* for a dog already named is [resume **-r**](pronouns.md#resume-r) (`zudozor`), not a place. *Where?* is `ol bar` ([Where?](fill-ask-roles.md#where)).
 
 ### Point back (`or` / `ar` / `ur` / `er`) {#hook-resume}
 
@@ -799,7 +799,7 @@ At the front of a sentence, a resume hook points back to an earlier stretch of t
 >
 > "Never mind that: Olazun sleeps."
 
-**Compare with:** `ol …` *Instead* replaces the last claim. `or …` *Anyway* leaves the side topic standing and returns to the main one; it leaves the [topic](pronouns.md#topic) alone too, so after a side topic the full return is `or xuzozer …`. To go back to a **person or thing** rather than a line of talk, return to it as the [topic](pronouns.md#topic-return) (`xuzozer`), which also makes it the topic again.
+**Compare with:** `ol …` *Instead* replaces the last claim. `or …` *Anyway* leaves the side topic standing and returns to the main one; it leaves the [topic](topic.md#topic) alone too, so after a side topic the full return is `or xuzozer …`. To go back to a **person or thing** rather than a line of talk, return to it as the [topic](topic.md#topic-return) (`xuzozer`), which also makes it the topic again.
 
 ### Parallel chains {#parallel-chains}
 

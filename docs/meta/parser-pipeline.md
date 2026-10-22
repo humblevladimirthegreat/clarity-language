@@ -270,7 +270,9 @@ The docs site bundles the parser and lexicon search through Vite (`@parse-browse
 | Joins | [joins.md](../grammar/joins.md) |
 | Spans | [spans.md](../grammar/spans.md) |
 | Pronouns / **-r** | [pronouns.md](../grammar/pronouns.md) |
+| Topic | [topic.md](../grammar/topic.md) |
 | Questions / fill-ask | [questions.md](../grammar/questions.md) |
+| Fill-ask roles | [fill-ask-roles.md](../grammar/fill-ask-roles.md) |
 | Comparatives / SHARED scale | [comparatives.md](../grammar/comparatives.md) |
 | Closed overlays | [lexicon](../grammar/lexicon.md) |
 | Hooks | [hooks.md](../grammar/hooks.md) |

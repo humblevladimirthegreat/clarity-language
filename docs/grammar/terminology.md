@@ -876,7 +876,7 @@ Single-item rank with a number = bound on a line.
 
 What the talk is about from here on, set only by an `/x/` word: introduce (`xuzozen`), return (`xuzozer`), or clear (`xuvewem` / `xuvedam`).
 
-[Pronouns](pronouns.md#topic)
+[Topic](topic.md#topic)
 
 **Compare with:** [as-for](#as-for) frames one sentence and sets no topic. A [topic stretch](#topic-stretch) restarts the role pointer anchors.
 
@@ -884,13 +884,13 @@ What the talk is about from here on, set only by an `/x/` word: introduce (`xuzo
 
 **`alon`**: the current topic, in the same form in every role (`zalon` / `dalon` / `balon`).
 
-[Pronouns](pronouns.md#topic-pronoun)
+[Topic](topic.md#topic-pronoun)
 
 ### Topic stretch
 
 The talk between two topic changes. Each starts the [role pointer](#role-pointer) anchors over; [tags](#tag-pronoun) carry across.
 
-[Pronouns](pronouns.md#topic-resets)
+[Topic](topic.md#topic-resets)
 
 ### Turn (`/y/`)
 

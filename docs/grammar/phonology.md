@@ -320,7 +320,7 @@ From smallest to largest:
 | Scope island | Break before, one tight phrase, break after | [scope islands](spans.md#scope-islands) |
 | `/x/` continue, stand-in hang | No rest: the sentence goes on | [periods](dependents.md#orthography-and-prosody-periods) |
 | Period | Rest | [periods](dependents.md#orthography-and-prosody-periods) |
-| Linker or topic word after a period | The period's rest; the `/x/` word says which | [periods](dependents.md#orthography-and-prosody-periods), [topic](pronouns.md#topic) |
+| Linker or topic word after a period | The period's rest; the `/x/` word says which | [periods](dependents.md#orthography-and-prosody-periods), [topic](topic.md#topic) |
 | New `/y/` turn | The period's rest; the `/y/` word is heard | [periods](dependents.md#orthography-and-prosody-periods) |
 
 A list needs no voice of its own, even though the join word comes last: a second word with the same role letter already tells a listener that a list is under way before the join arrives.

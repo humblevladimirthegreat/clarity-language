@@ -126,7 +126,7 @@ function closesFromTo(units: Unit[], index: number): boolean {
   return hookVowels(unit.word) === "oe" && plain(unit.word) && hookVowels(from.word) === "u" && plain(from.word) && from.job === "extraNoun" && !from.onLeft;
 }
 
-/** `afterTopic`: this clause opens right after a topic word, which is the noun a first hook describes (pronouns.md#topic). */
+/** `afterTopic`: this clause opens right after a topic word, which is the noun a first hook describes (topic.md#topic). */
 function hookJob(units: Unit[], index: number, afterJoin: boolean, afterTopic: boolean): HookJob {
   const unit = units[index];
   if (unit?.kind !== "hook") return "clause";

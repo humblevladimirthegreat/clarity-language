@@ -650,7 +650,7 @@ Translating the other way, an Agebon sentence in an unusual order (a line fitted
 | `zuzozen &dagozol vawebol.` | object contrasted | *It's a cat that Uzozen sees.* (not something else) |
 | `zuzozen dagozol &vawebol.` | act contrasted | *Uzozen sees the cat.* (rather than doing something else to it) |
 
-**Compare with:** what the whole conversation is about is the [topic](pronouns.md#topic), set only by an `/x/` word.
+**Compare with:** what the whole conversation is about is the [topic](topic.md#topic), set only by an `/x/` word.
 
 ### Starting a sentence audibly {#audible-start}
 

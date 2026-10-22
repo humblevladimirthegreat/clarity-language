@@ -50,7 +50,7 @@ type OpenClause = { anchor?: Anchor; before: number };
 /** What a tag names: the phrase it was assigned to (or the tag word itself for a new referent), its referent key, and whether the phrase is a name (**-n**), which a tag **-n** needs. */
 type TagBinding = { word: LexWord; key: string; named: boolean };
 
-/** What the talk is about now: the `/x/` word that set it, and the referent it names (pronouns.md#topic). */
+/** What the talk is about now: the `/x/` word that set it, and the referent it names (topic.md#topic). */
 type Topic = { word: LexWord; key: string };
 
 /** A landmark in play (hooks.md#hooked-joins-point-back): a hook's `/b/`, a hosted `bl-` word, or a hooked join's. */
@@ -204,7 +204,7 @@ function pronounRoot(word: LexWord): string | undefined {
   return family.kind === "x" && family.xFamily === "holder" && family.rightRoots?.length === 1 ? family.rightRoots[0] : undefined;
 }
 
-/** The topic pronoun: the star root + **-n** on `/z/` `/d/` `/b/`, or as a holder (`zozan`, pronouns.md#topic-pronoun). */
+/** The topic pronoun: the star root + **-n** on `/z/` `/d/` `/b/`, or as a holder (`zozan`, topic.md#topic-pronoun). */
 export function isTopicPronoun(word: LexWord): boolean {
   return pronounRoot(word) === CLOSED.star;
 }
@@ -289,7 +289,7 @@ function bindNumber(ctx: Ctx, pronoun: LexWord): void {
   ctx.anaphors.push({ pronoun, kind: "number", antecedent });
 }
 
-/** A new topic stretch: the role-pointer anchors start over; tags stay (pronouns.md#topic-resets). */
+/** A new topic stretch: the role-pointer anchors start over; tags stay (topic.md#topic-resets). */
 function resetStretch(ctx: Ctx): void {
   ctx.anchors.length = 0;
 }
@@ -309,7 +309,7 @@ function namesTopicReferent(word: LexWord): boolean {
 
 /**
  * A body's opening `/x/` word. Introduce and return set the topic, *next* and *by the way* clear it, and each
- * starts a new stretch (pronouns.md#topic). A return that resumes a published linker (`xodur` after `xodum`) is
+ * starts a new stretch (topic.md#topic). A return that resumes a published linker (`xodur` after `xodum`) is
  * only that linker again.
  */
 function considerLinker(ctx: Ctx, word: LexWord): void {
