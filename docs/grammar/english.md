@@ -256,6 +256,26 @@ English builds many words from a relation and a noun: *anti-war*, *indoor*, *tra
 | *-free* / *out of* in one word (*debt-free*) | hook prefix **`…uax…`**: `guaxaram` | [Hook prefixes](hooks.md#hook-prefixes) |
 | *-derived* / *-sourced* (*heritage-derived*) | hook prefix **`…ux…`**: `guxuzobam` | [Hook prefixes](hooks.md#hook-prefixes) |
 
+### *quasi-*, *proto-*, *multi-*, *tri-* words {#number-prefixes}
+
+English names many kinds with a number idea in front: *quasi-friend*, *proto-love*, *multi-faith*, *a three-part dialogue*, *a first draft*. Agebon builds them the same way, from a number body, **`x`** (or **`mx`** for *roughly* that number), and the noun's root: a [numeric prefix](numeric-derivation.md#numeric-derivation). The word is a kind of the noun, never a count of things in the sentence.
+
+| English itch | Agebon job | Teach |
+|--------------|------------|-------|
+| *quasi-* / *as-if* (*quasi-friend*, *quasi-official*) | numeric prefix **`ruwux…`**: `zruwuxahuyayol`, `gruwuxezazom` | [Quasi](numeric-derivation.md#quasi) |
+| *the essence of* / *pure* (*essence of love*) | numeric prefix **`rawax…`**: `zrawaxolamal` | [Limit / polarity / stage](numeric-derivation.md#limit-polarity-stage) |
+| *a grain of* / *a seed of* (*a grain of love*) | numeric prefix **`rawux…`**: `zrawuxolamal` | [Limit / polarity / stage](numeric-derivation.md#limit-polarity-stage) |
+| *proto-* / *in its beginning form* | numeric prefix **`rewux…`**: `zrewuxolamal` | [Limit / polarity / stage](numeric-derivation.md#limit-polarity-stage) |
+| *multi-* / *poly-* (*multi-faith*) | numeric prefix **`rax…`**: `zraxehoham` | [Limit / polarity / stage](numeric-derivation.md#limit-polarity-stage) |
+| *de-* / *un-* on a kind (*to de-tale*) | numeric prefix **`rux…`**: `vruxonem` | [Limit / polarity / stage](numeric-derivation.md#limit-polarity-stage) |
+| *uni-* / *bi-* / *tri-* / *three-part* / *mutual* | numeric prefix **`rabax…`** / **`radox…`** / **`ragex…`**: `zrabaxadowom`, `gradoxabewem`, `zragexezuyel` | [Scalar digit morphs](numeric-derivation.md#scalar-digit-morphs) |
+| *one-sided* / *non-mutual* | numeric prefix **`rudox…`**: `grudoxabewem` | [Scalar digit morphs](numeric-derivation.md#scalar-digit-morphs) |
+| *first-class* / *secondary* / *third-order* | numeric prefix **`rebax…`** / **`redox…`** / **`regex…`**: `drebaxebewem`, `gredoxamunem`, `zregexabevam` | [Ordinal digit morphs](numeric-derivation.md#ordinal-digit-morphs) |
+| *null* / *to zero out* a kind (*null the score*) | numeric prefix **`ramox…`**: `vramoxodoram` | [Null / anti-null](numeric-derivation.md#null-anti-null) |
+| *specimen #1*, *room-12* as a kind | numeric prefix **`robax…`** / **`robadox…`**: `zrobaxudewal`, `zrobadoxahehal` | [Label / code sense](numeric-derivation.md#label-code-sense) |
+| *mega-* / *a gazillion-* (*a gazillion-mess*) | numeric prefix **`rabawax…`**: `zrabawaxezulam` | [Hyperbole](numeric-derivation.md#hyperbole-sense) |
+| *roughly three-part* | **`mx`** for the seam: `dragemxezuyel` | [Numeric prefixes](numeric-derivation.md#numeric-derivation) |
+
 ### *-ing*, *-er*, and *-ed* words (*walking*, *teacher*, *seen*) {#participles}
 
 English builds several words from one verb: *walking*, *walker*, *walked*. Agebon picks the job instead: a person or thing in the middle of the act, someone who does it, someone it is their role, or someone it happens to.

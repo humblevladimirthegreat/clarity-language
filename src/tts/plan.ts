@@ -51,7 +51,7 @@ type SpeechSegment =
 
 function isNumberWord(word: MorphWord): boolean {
   const family = word.family;
-  return family.kind === "number" || (family.kind === "x" && family.xFamily === "numeric");
+  return family.kind === "number";
 }
 
 function classifyFramingRole(word: MorphWord): FramingRole {

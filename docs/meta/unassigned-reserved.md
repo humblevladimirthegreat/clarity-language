@@ -77,19 +77,27 @@ A label is a code, not an amount, so it has no magnitude for an exponent to scal
 - **open:** **`th-N`**, **`th#-N`**, and digitless non-blank **`th#`**. A minus on a likelihood (`th-30`: *30% unlikely*, or *30 points less likely*?) and an end-relative count of tellers have no guessable reading; digitless **`th#`** would say only *passed on to me*, with no depth, and no job has asked for that.
 - **open:** marker stacks **`rao`** (`+_`) and **`rae`** (`+#`). No reading composes: labels carry no sign, and a count and a rank are separate markers on separate words.
 
-## Numbers — numeric derivation
+## Numbers — numeric prefixes {#numeric-prefixes}
 
-Source: [numeric-derivation.md](../grammar/numeric-derivation.md). All **open**.
+Source: [numeric-derivation.md](../grammar/numeric-derivation.md).
+
+- **closed (D-58):** a root, then **-l** / **-m**, then a number body (`zolamalrawal`): the root-first shape. The kind goes last, as in every **`x`** compound. Parser: no word.
+- **closed (D-57):** `lx` after a number body (`zragelxezuyel`). Plain **`x`** already spells an exact number. Parser: no word.
+- **open:** `nx` / `rx` after a number body (`zragenxezuyel`, `zragerxezuyel`). A named or resumed number inside a kind has no job yet. Parser: no word.
+- **open:** a number body, **`x`** or **`mx`**, then one vowel and an ending (`zragexal`, `zragemxal`). A stem is at least three letters, so this is no numeric prefix, and no other reading is guessable. Parser: no word.
+- **open:** a numeric prefix with label scope after its stem (`zragexezuyethel`) or ability after it (`zragexezuyexal`), a numeric prefix inside a hook prefix or the other way round (`guexragexezuyel`, `zragexuexavuvul`), or as a role-compound stem (`zwazragexezuyel`). Not guessable which piece the number or the hook would cover; a separate word says it. Parser: no word.
+
+The cells below are all **open**.
 
 | Shape | Note |
 |-------|------|
-| **`ROOTl+e0`** | Kind twin of free ones-band **`g+e0`**: a kind has no ones band |
-| **`ROOTl+0e0`** | Kind twin of free **`…0e0`**: zero at any magnitude is zero |
-| **`ROOTl+Ne0`** | Kind twin of free scale-assert **`Ne0`**: a kind morph has no ambient magnitude to break out of |
-| **`ROOTl#0e0`** / free **`#0e0`** | Ordinal morph: no job |
-| **`ROOTl±0eN`** for **`N≠1`** | Only **`±0e-1`** assigned; no job for a wipe at another scale |
-| **`ROOTl-e-0`** | Two guesses compete: anti-null (**`ROOTl-0`**) and micro-residue (**`ROOTl-0e-`**) |
-| **`ROOTl-e-3`…`-e-9`** | No job: *quasi-* with a part count past two (*as-if three-part*) has not come up; bare **`ROOTl-e-`** or ordinary wording covers it |
+| **`+e0xROOT`** | Kind twin of free ones-band **`g+e0`**: a kind has no ones band |
+| **`+0e0xROOT`** | Kind twin of free **`…0e0`**: zero at any magnitude is zero |
+| **`+Ne0xROOT`** | Kind twin of free scale-assert **`Ne0`**: a numeric prefix has no ambient magnitude to break out of |
+| **`#0e0xROOT`** / free **`#0e0`** | Ordinal prefix: no job |
+| **`±0eNxROOT`** for **`N≠1`** | Only **`±0e-1`** assigned; no job for a wipe at another scale |
+| **`-e-0xROOT`** | Two guesses compete: anti-null (**`-0xROOT`**) and micro-residue (**`-0e-xROOT`**) |
+| **`-e-3xROOT`…`-e-9`** | No job: *quasi-* with a part count past two (*as-if three-part*) has not come up; bare **`-e-xROOT`** or ordinary wording covers it |
 
 ## Restrictors (`/h/` / `/w/`)
 

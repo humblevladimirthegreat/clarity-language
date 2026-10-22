@@ -44,7 +44,7 @@ export type NumberGroup = {
 };
 
 /**
- * PoS-less number stem (used inside free number words and numeric derivation).
+ * PoS-less number stem (used inside free number words and numeric prefixes).
  * Writing and speech surface forms normalize to this structure.
  */
 export type NumberStem = {
@@ -76,7 +76,7 @@ export type MorphWordFamily =
       xFamily: XFamily;
       /** Host root(s) left of the first mid-word `x`. */
       leftRoots: string[];
-      /** Roots right of `x` for compound family only. */
+      /** Roots right of the seam (a compound, prefix, or role-compound stem; a lateral or holder anchor). */
       rightRoots?: string[];
       /** Viewpoint lateral `DIR th o`: the hosted `/b/` landmark's own facing (roles.md#landmark-facing). */
       landmark?: boolean;
@@ -92,10 +92,10 @@ export type MorphWordFamily =
       horizon?: "l" | "m" | "r";
       /** Emotion compose locus: hook vowel(s) for placement or direction (sakes.md#emotion-compose). */
       locus?: "a" | "e" | "o" | "u" | "ao" | "ae" | "oe" | "ua" | "uo" | "ue";
-      /** Nested number stem (numeric derivation). */
+      /** Numeric prefix: the number body left of the seam (numeric-derivation.md). */
       numberStem?: NumberStem;
-      /** Lexical join before a numeric stem (`l` everyday host, `m` abstract). */
-      join?: "l" | "m";
+      /** Numeric prefix: the `mx` seam, approximately that number (`zragemxezuyel`). */
+      approx?: boolean;
       /** Hook prefix: the extra-noun hook it spells, **-l** for the `x` seam, **-m** for `mx` (`uel`, `uem`; hooks.md#hook-prefixes). */
       hook?: string;
       /** Hook prefix on a hook-compound citation (`guexowurelul`): the stem root's own ending and its fused hook. */

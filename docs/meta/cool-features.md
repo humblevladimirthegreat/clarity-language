@@ -301,9 +301,9 @@ The vocabulary of r/ClarityLanguage is going to be as neutral as possible. Inste
 
 ### Numeric Derivations
 
-/r/ClarityLanguage has a number system that has easy ways to indicate exponents and infinity, which creates fun ways to derive suffixes or words based on them. My favorites are:
+/r/ClarityLanguage has a number system that has easy ways to indicate exponents and infinity, which creates fun ways to derive prefixes or words based on them. My favorites are:
 
-\-lrabu  \`1/∞\` \= infinitesimal of root, e.g. grain of truth
+rawux-  \`+e-\` \= infinitesimal of root, e.g. grain of truth
 
 rebu \`\#1/∞\` \= the smallest ordinal, e.g. prototype/original
 

@@ -150,7 +150,8 @@ describe("rebuild round-trip", () => {
     const word = parseWord("zazawan");
     assert.equal(rewriteParsedWord(word, map), "zululon");
     assert.equal(rewriteParsedWord(parseWord("zuzuzuxogoven"), map), "zazazaxogoven");
-    assert.equal(rewriteParsedWord(parseWord("zolovelrawal"), map), "zelevelrawal");
+    assert.equal(rewriteParsedWord(parseWord("zrawaxolovel"), map), "zrawaxelevel");
+    assert.equal(rewriteParsedWord(parseWord("zrawaxawal"), mapOf(["awa", "ebe"])), "zrawaxebel");
     assert.equal(rewriteParsedWord(parseWord("zazawanx"), map), "zululonx");
   });
 

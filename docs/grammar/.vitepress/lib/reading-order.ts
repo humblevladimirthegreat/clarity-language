@@ -26,7 +26,7 @@ export const readingOrder = [
   { text: 'Intention', link: '/intention' },
   { text: 'Join across roles', link: '/join-across-roles' },
   { text: 'Numbers in use', link: '/numbers-applied' },
-  { text: 'Numeric derivation', link: '/numeric-derivation' },
+  { text: 'Numeric prefixes', link: '/numeric-derivation' },
 ]
 
 /**

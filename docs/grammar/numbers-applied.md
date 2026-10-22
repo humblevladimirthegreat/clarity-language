@@ -609,6 +609,6 @@ For a side branch, nest a second anchor: first step to the relative, then from t
 ## See also
 
 - Number-word anatomy (markers, endings, exponents): [numbers.md](numbers.md)
-- Kind morphs (`ROOTlNUM`): [numeric-derivation.md](numeric-derivation.md)
+- Numeric prefixes (`NUMxROOT`): [numeric-derivation.md](numeric-derivation.md)
 - Hooks behind ranges: [hooks.md](hooks.md#ranges)
 - Measured differentials on comparative scales: [comparatives.md](comparatives.md)

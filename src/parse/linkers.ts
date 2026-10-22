@@ -20,7 +20,7 @@ export const LINKER_ENGLISH: Record<string, string> = {
 };
 
 /** English tag of a published linker, or undefined when this `/x/` word is not one. */
-/** An `x` compound (role compound, ordinary compound, numeric derivation) used as a topic word. */
+/** An `x` compound (role compound, ordinary compound, numeric prefix) used as a topic word. */
 export function isTopicCompound(word: LexWord): boolean {
   const family = word.family;
   if (word.pos !== "x" || family.kind !== "x" || word.overlay) return false;

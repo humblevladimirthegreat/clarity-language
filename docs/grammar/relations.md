@@ -433,7 +433,7 @@ After a join, `gobem` and `gaham` bound the set the join covers, as SHARED words
 - Place *in* is the hook `al`; path *from* is the hook `ul` ([locative relations](#locative-relations)).
 - *A house like Uzozen’s* is [simile](#similative) (`gewom`), not *made of*. *A book for a hammer* as a swap is [exchange](#exchange) (`geham`).
 - `gobem` is a part that belongs to the thing's structure (a bone of the body); `gozowum` is a piece taken off it (a slice of bread).
-- *From* as the origin of a whole kind (`ROOTl#e-`) is [numeric derivation](numeric-derivation.md), not this *from*, which is about one particular thing.
+- *From* as the origin of a whole kind (`#e-xROOT`) is a [numeric prefix](numeric-derivation.md), not this *from*, which is about one particular thing.
 
 ### Social relations (*Uzozen's friend*, *boss*) {#social-relations}
 

@@ -57,7 +57,7 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **UNPLACED** | Emotion locus: can't place where it comes from | `wuwathuruom` | [Sakes](sakes.md#emotion-compose) |
 | **WANT** | Desire mood: lasting / unstated / passing | `thalem` | [Intention](intention.md#want) |
 
-**Compare with:** [quasi](#quasi) (`ROOTl-e-`) is not **NOTIONAL**.
+**Compare with:** [quasi](#quasi) (`-e-xROOT`) is not **NOTIONAL**.
 
 ### Join-vowel names
 
@@ -313,7 +313,7 @@ Advanced free-number specials (`+e`, `-e-`, `+0e`, …). **Just short** is free 
 
 [Numbers](numbers.md#digitless-exponents), [just short](numbers.md#just-short)
 
-**Compare with:** [quasi](#quasi) is derivation `ROOTl-e-`. **NOTIONAL** is the as-if [mood](#mood-tags), not a number.
+**Compare with:** [quasi](#quasi) is the numeric prefix `-e-xROOT`. **NOTIONAL** is the as-if [mood](#mood-tags), not a number.
 
 ### Distributive
 
@@ -480,9 +480,9 @@ Whose view a clause reports. The name is fused onto an evidential, **MAY**, or *
 
 ### Host
 
-Content root a sake `th`-stance, an ability `x`-stance, or a numeric-derivation join attaches to.
+Content root a sake `th`-stance or an ability `x`-stance attaches to.
 
-[Intention](intention.md#ability), [sakes](sakes.md), [numeric derivation](numeric-derivation.md)
+[Intention](intention.md#ability), [sakes](sakes.md)
 
 **Compare with:** a measure [unit](#measure-phrase-unit) is not a host. Classification names the classified noun, not a host.
 
@@ -596,11 +596,11 @@ Number problem / solution / goal candidates with free ordinals.
 
 **Compare with:** clause *so that* is [**`hovam`**](dependents.md#so-that), not the goal noun **`oval`**.
 
-### Numeric derivation / quasi
+### Numeric prefix
 
-`ROOT` + join (**-l** / **-m**) + `NUM`; **quasi** = `ROOTl-e-` (abstract host: `ROOTm-e-`).
+Role letter + number body + **`x`** (or **`mx`** for an approximate number) + root: a kind of the root, named by a number idea (`zrawaxolamal` *essence of love*, `zragexezuyel` *a three-part dialogue*). Like English *quasi-*, *proto-*, *multi-*, *tri-*.
 
-[Numeric derivation](numeric-derivation.md)
+[Numeric prefixes](numeric-derivation.md)
 
 ### Occasion
 
@@ -664,9 +664,9 @@ Singling out one word against others: the contrast mark `&`. Word order adds no 
 
 ### Quasi
 
-Derivation `ROOTl-e-` (and quasi-N).
+Numeric prefix `-e-xROOT` (and quasi-N): the shape of a kind, not the real thing (`zruwuxahuyayol` *a quasi-friend*).
 
-[Numeric derivation](numeric-derivation.md#quasi)
+[Numeric prefixes](numeric-derivation.md#quasi)
 
 ### Range / ray
 

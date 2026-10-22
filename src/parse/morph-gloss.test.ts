@@ -548,12 +548,10 @@ describe("compareMorphGloss", () => {
     expectLine("dwahowurel", "d-episode-manner-walk");
   });
 
-  it("quasi numeric derivation is English", () => {
-    expectLine("zahelan gahuyayolruwul", "z-Ahelan | g-friend-l-quasi");
-  });
-
-  it("abstract numeric join is -m in the gloss", () => {
-    expectLine("zolamamrawal", "z-love-m-infinity");
+  it("numeric prefix glosses the number, the seam, then the stem", () => {
+    expectLine("zahelan gruwuxahuyayol", "z-Ahelan | g-quasi-x-friend");
+    expectLine("zrawaxolamal", "z-infinity-x-love");
+    expectLine("zuzozen dragemxezuyel vawebol", "z-Uzozen | d-three.about-x-speech | v-see");
   });
 });
 

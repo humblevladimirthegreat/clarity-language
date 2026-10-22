@@ -17,7 +17,7 @@ describe("placeRoot", () => {
     assert.equal(placeRoot("P ER0 UW1"), "eberunu");
   });
 
-  it("glides between vowels and splits the numeric-derivation seam", () => {
+  it("glides between vowels and splits -l / -m + r", () => {
     assert.equal(placeRoot("T OW1 K IY0 OW2"), "odogewono");
     assert.ok(!/[lm]r/.test(placeRoot("EH0 L M AY1 R AH0")));
   });

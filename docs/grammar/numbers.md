@@ -681,7 +681,7 @@ Both writings name the **same word**. Choose the surface by one test: **how many
 | Free number with **two or more digits** | **shorthand** | `g+12`, `x#21`, `g+5.2e-4`: a value to scan and compare |
 | Free number with **one digit or none** | **spelled** | `gragel` *three*, `gredol` *second*, `gramol` *zero*, `gral` *more than one*, `drar` *how many*; reads as a word, as English writes *three* |
 | Digit-string label or code (`_`) | **shorthand** | `d_5`, `d_555,123,4567`: a code, not an amount (English *Room 5*) |
-| Numeric derivation / kind morph | **spelled** (required) | shorthand after a root does not form a word |
+| Numeric prefix | **spelled** (required) | shorthand before **`x`** and a root does not form a word |
 | Inventory tables | **shorthand** | patterns are easy to scan |
 
 **Side by side:** number words next to each other (a range, a list of values) share one writing. If any of them needs shorthand, write them all in shorthand: `z+3 al z+12`, not `zragel al z+12`.
@@ -880,7 +880,7 @@ To say *infinitely many*, *last place*, *a gazillion*, or *absolutely zero*, wri
 
 **Writing:** **`e`** = speech **`wa`**; **`e-`** = speech **`wu`**. Digitless means no power digits after that mark: `g+e` / `g+e-` in tables, spelled `grawal` / `grawul` in running text. Bare / assert **`e0`** writes power **`0`**: `grawamol`, `g+3e0` (not digitless).
 
-The marker still says amount, rank, or code. Kind compounds may use digitless **`_`** as infinite / landmark labels (`ROOTl_e`, `ROOTl_e-`, `ROOTl_1e`, …).
+The marker still says amount, rank, or code. Numeric prefixes may use digitless **`_`** as infinite / landmark labels (`_exROOT`, `_e-xROOT`, `_1exROOT`, …).
 
 #### Special values: no mantissa
 
@@ -1410,4 +1410,4 @@ In a sentence, the role letter attaches to that single number word (see [Parts o
 - Phrase fences for ranges: [joins.md](joins.md)
 - Scalar comparison / measured differentials: [comparatives.md](comparatives.md)
 - Number-word phonotactics: [phonology.md](phonology.md)
-- Kind morphs (`ROOTlNUM`): [numeric-derivation.md](numeric-derivation.md)
+- Numeric prefixes (`NUMxROOT`): [numeric-derivation.md](numeric-derivation.md)

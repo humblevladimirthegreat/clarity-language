@@ -28,6 +28,6 @@ export function contentStemRoots(word: StemWord): string[] {
   if (family.kind === "x" && family.xFamily === "compound") {
     return [...family.leftRoots, ...(family.rightRoots ?? [])];
   }
-  if (family.kind === "x" && family.xFamily === "numeric") return family.leftRoots;
+  if (family.kind === "x" && family.xFamily === "numeric") return family.rightRoots ?? [];
   return [];
 }
