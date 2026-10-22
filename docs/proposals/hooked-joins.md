@@ -115,9 +115,31 @@ This gives *never, in all the time since …* a checkable stretch the speaker na
 
 ## Compare with the hook prefix
 
-`zoxual blahehal` and `zual goxahehal` (a SHARED `/ɡ/` hook prefix, *everyone at-home*) overlap, and both are allowed. The hook prefix fuses the landmark into one word, so it names a kind of member: a standing property that can enter the dictionary. The hooked join keeps the landmark a hosted word, so it can be a name, a special pronoun (`bluwon`), a resume, a standalone join (`blual`), or a clause (`blarl`). Only the hooked join has the **-m** frames and point-back, and only it bounds a restrictor on `/h/`. Use the hook prefix for a kind of member (*the at-home people*), and the hooked join for one landmark (*everyone at that house*).
+`zoxual blahehal` and `zual goxahehal` (a SHARED `/ɡ/` hook prefix, *everyone at-home*) overlap, and both are allowed. The hook prefix fuses the landmark into one word, so it names a kind of member: a standing property that can enter the dictionary. The hooked join keeps the landmark a hosted word, so it can be a name, a special pronoun (`bluwon`), a resume, a standalone join (`blual`), or a clause (`blarl`). Both take the hook's **-m** frame with `m` before the seam (`zomxual bluwon`, `gomxahehal`). Only the hooked join has point-back, and only it bounds a restrictor on `/h/`. A hook prefix takes no `r` before the seam: its stem is the landmark, so nothing is left unsaid to point back to (`gorxahehal` has no reading). Use the hook prefix for a kind of member (*the at-home people*), and the hooked join for one landmark (*everyone at that house*).
 
 The two words read their right side differently. In a hook prefix, the stem after **`x`** is the landmark: `guexavuvul` is *anti-fighting*. In a hooked join, the join after **`x`** is the word's head, and the landmark is the `bl-` word: `zuexual bluwon` is *everyone against me*, not *against everyone*. The shape after **`x`** tells them apart: a stem is a root, and a join is only vowels and an ending.
+
+## Why only hooks
+
+Only a hook fuses with a join. [Numeric prefixes](../grammar/numeric-derivation.md) and [role compounds](../grammar/roles.md#role-compounds) do not, for two reasons.
+
+**Their free forms already bound a join.** A free hook after a join is a clause extra, so the hooked join exists to keep the bound inside the join's set. A free number or a role compound after a join is a SHARED `/ɡ/`, with one reading and no clause-extra reading to escape:
+
+| Agebon | English |
+|--------|---------|
+| `zual gwazuduyel` | *everyone who teaches* |
+| `zarx gragel` | *some three people* |
+| `zar grobal` | *someone #1* (a placeholder) |
+| `zar grebawal` | *the umpteenth someone* |
+
+**Their meanings do not carry over.** In a hooked join the hook keeps its free reading exactly: the relation to a `bl-` landmark. The other prefixes lose theirs.
+
+- **Numeric prefixes** describe the kind named by the root after **`x`**, and never count, rank, or label anything in the sentence. A join has no root, so there is no kind to describe. Each sense either has no reading on a join or becomes a free number's job, or a join ending's:
+  - Count, rank, or label: `+N` would be *all three* (`zarx gragel`), `#N` *the first one* (free `g#N`), `_N` *person #1* (`zar grobal`), `#1e` *the umpteenth one* (`zar grebawal`).
+  - Join endings: `+e` *absolutely everyone* and `+e-` *not a speck of anything* restate join **-l** (no exceptions), `-e` *void of everyone* is `zal`, and `+` *several* is **-x** (`zarx`).
+  - Quasi: `-e-` would be *as if everyone*, the shape without the reality. That is not *almost everyone*, and it would blur the hedge join **-m** makes checkable.
+  - No reading: `#e-` / `#e` (prototype, final form), `-` (undoing), the zero and residue bodies (`±0`, `±0e…`), `#0e` (disqualified), and the catalog bodies (`_e`, `_e-`).
+- **Role compounds** are not a prefix + **`x`** shape: they are **`w`** + scope vowel + part consonant + stem, with no seam, and the event stem is the head. A join after the stem would become the head, with the role restricting it, which is `zual gwazuduyel`. It would also give mid-word **`x`** a third reading on top of the two this proposal uses: a stem after **`x`** is the landmark, and a join after **`x`** is the head.
 
 ## Endings
 
@@ -236,31 +258,31 @@ Kind indefinites are already retired, and each job has a plain route. A hooked j
   - A root (vowel, consonant, vowel, …): a hook prefix, `goxahehal`.
   - Vowels, then an ending letter, then the end of the word or **-x**: a hooked join, `zoxual`, `zoxarx`.
 - **Left of `x`:** one hook vowel or one hook pair, as in a hook prefix, then optionally `m` or `r`. A vowel pair that is not a hook has no reading, as on a hook prefix. `l` or `n` before the seam has no reading.
-- **Syllables:** **`x`** opens the join's syllable (`zo-xu-al`), as in any **`x`** compound. With `m` or `r`, that letter closes the hook's syllable (`zom-xu-al`, `zor-xu-al`). `m` is already said there on a hook or numeric prefix's `mx`; `r` is a new syllable-final consonant inside a word. The clusters `mx` and `rx` are already said at the end of a word (`zarx`), so the sound is not new.
+- **Syllables:** **`x`** opens the join's syllable (`zo-xu-al`), as in any **`x`** compound. With `m` or `r`, that letter closes the hook's syllable (`zom-xu-al`, `zor-xu-al`). `m` is already said there on a hook or numeric prefix's `mx`; `r` is a new syllable-final consonant inside a word. This widens the [singability](../grammar/phonology.md#singability-constraints) exception from the `m` before **`x`** to the `m` or `r` before **`x`**. Accepted: point-back stays one short word, and `rx` is already said at the end of a word (`zarx`), so the sound is not new.
 - **Stacks:** a hook stack and a join stack can meet (`zuexuam`, `daoxar`). Each side follows the six-stack rule ([phonology](../grammar/phonology.md)).
 - **Length:** `zoxual blahehal` is two words where `zual ol bahehal` is three, with the same number of syllables.
-- **Sound-alikes:** `zorxar vowurel` (*someone there walks*) and `zorx ar vowurel` (*some people walk in there*) differ only by the word break, and [first-syllable stress](../grammar/phonology.md#rhythm-and-stress) marks it: `zorxar` takes one beat, and `zorx ar` a fresh one on `ar`. [Hook compounds](../grammar/hooks.md#hook-compounds) already rely on this (`vowurel ol` against `vowurelol`).
+- **Sound-alikes:** `zorxar vowurel` (*someone there walks*) and `zorx ar vowurel` (*some people walk in there*) differ only by the word break, and [first-syllable stress](../grammar/phonology.md#rhythm-and-stress) marks it: `zorxar` takes one beat, and `zorx ar` a fresh one on `ar`. Likewise `zarxual` (*everyone in there*) against `zarx ual …` (*some people, out of …*). [Hook compounds](../grammar/hooks.md#hook-compounds) already rely on this (`vowurel ol` against `vowurelol`).
 - **No seams:** a hooked join never sits after a `th` seam (holder, lateral). It isn't a person-naming word.
 - **Morph gloss:** the hook's label from the [extra-noun grid](../grammar/hooks.md#extra-noun-intermediate) (the frame label on hook **-m**, the hook **-r** label on hook **-r**), then **`-x-`** as in a hook prefix gloss, then the join's label, then `.open` for join **-m**. The landmark rides in the bracket: `[z-at-x-everything | bl-house]`, `[z-near-x-everything.open | bl-speaker]`, `d-for-x-wh`, `h-from-x-never.open`, `z-there-x-everything`, `d-on.it-x-something`, `z-from.there-x-someone`. On `/h/`, hook **-r** on `u` is `since.then`.
 
 ## What changes
 
-- **Grammar:**
-  - [joins.md](../grammar/joins.md): a hooked-join section, its rows in the *every and none, by set* table, and the universals paragraph pointing to it as the way to bound a set by a landmark.
-  - [questions.md](../grammar/questions.md): hooked-join blanks (`yol dexar bluwon`).
-  - [restrictors.md](../grammar/restrictors.md): `/h/` hooked joins, with the time hooks including `om`, **`blarl`**, and point-back to a time.
-  - [hooks.md](../grammar/hooks.md): place indefinites, a deixis note for `zomxual bluwon`, **`blarl`** beyond `ul`, and a compare-with between the hooked join and the hook prefix.
-  - [compounds.md](../grammar/compounds.md#families-by-shape): in the family table, the row for vowels left of **`x`** splits by what is right of it: a root is a hook prefix, a join is a hooked join.
-  - [relations.md](../grammar/relations.md): a compare line on `gobem` and `gaham` as set bounds.
-  - [phonology.md](../grammar/phonology.md): `mx` and `rx` before the seam on a hooked join in the cluster list, and `zorxar` against `zorx ar` as an example in *rhythm and stress*.
+- **Grammar:** teach it in one place. It builds on [hook prefixes](../grammar/hooks.md#hook-prefixes), in the Advanced band of hooks.md, and the forward-link lint orders by level, then by page: Joins and Questions come before Hooks, Restrictors has no Advanced band, and the Intermediate family table in Compounds comes before any Advanced band.
+  - [hooks.md](../grammar/hooks.md), Advanced, right after hook prefixes: a hooked-join section with the shape, the hook grid, the landmark (including `blual`), endings, items, point-back, the deixis forms (`zomxual bluwon`), and question blanks (`yol dexar bluwon`). A `/h/` subsection: the time hooks including `om`, **`blarl`**, and point-back to a time. The compare-with against the hook prefix, and why `a` and `u` stay spatial, with links back to [of-relations](../grammar/relations.md#of-relations), [universals](../grammar/joins.md#universals-domains-generics), and [restrictors](../grammar/restrictors.md). Practice checkpoints in its Advanced practice ([drill generation](../meta/drill-generation.md)).
+  - joins.md, questions.md, restrictors.md, relations.md, and compounds.md: no change. They come earlier on the reading path and never preview the hooked join. `zual gagozol ol bahehal` keeps its clause-extra reading there.
+  - [phonology.md](../grammar/phonology.md), Advanced: the `m` or `r` before **`x`** in *singability constraints* and the cluster list, and `zorxar` against `zorx ar` in *rhythm and stress*. Name the hooked join there without an anchor link into hooks.md, which would point forward.
+  - [review.md](../grammar/review.md), Advanced band: practice items that use hooked joins.
+  - [english.md](../grammar/english.md): recipe rows for *everyone here*, *anything for me*, *never since …*, and *always until …*.
+  - Cheat sheets: hooked-join rows on the hooks sheet (regenerate with `npm run cheat-sheet-blocks -- --write`).
   - [terminology.md](../grammar/terminology.md): add hooked join.
+  - Present the current language only: drop the role-pointer history from the slot note.
 - **Design notes:**
-  - `unassigned-reserved.md`: join **-n** and hook **-n** on a hooked join (`zoxuan`, `zonxual`), `l` before the seam, a join after the seam on `/ɡ/` and the other unlisted role letters, hook **-m** on `/h/` other than `om` (open), `/h/` with hooks that have no time reading (`ua`, `uo`, `ao`, `e`, `ae`, `ue`).
-  - `design-decisions.md`: why in-clause readings are excluded, why `a` and `u` stay spatial (membership and origin are `gobem` and `gaham`), why time readings stay on the `/h/` hooked join and off free hooks, and why the hook comes first and its **-l** goes unwritten (the hook-prefix order).
+  - `unassigned-reserved.md`: join **-n** and hook **-n** on a hooked join (`zoxuan`, `zonxual`), `l` before the seam, a join after the seam on `/ɡ/` and the other unlisted role letters, hook **-m** on `/h/` other than `om` (open), `/h/` with hooks that have no time reading (`ua`, `uo`, `ao`, `e`, `ae`, `ue`), a number body or a role-compound stem before **`x`** + join (`zragexual`, `zwazuduyexual`; closed), `r` before the seam on a hook prefix (`gorxahehal`; closed).
+  - `design-decisions.md`: why in-clause readings are excluded, why `a` and `u` stay spatial (membership and origin are `gobem` and `gaham`), why time readings stay on the `/h/` hooked join and off free hooks, why the hook comes first and its **-l** goes unwritten (the hook-prefix order), why only hooks fuse with a join ([why only hooks](#why-only-hooks)), why a hook prefix takes no point-back (its stem is the landmark), and why mid-word `r` before **`x`** is accepted against the singability rule.
   - `glosses.md`: the gloss row.
 - **Code:**
   - A hooked-join rule for role letter + hook vowels + optional `m` / `r` + **`x`** + join, beside the hook-prefix rule, which it tells apart by what follows **`x`**.
   - Allow the `bl-` landmark (enforce, hosted rules), and **`blarl`** after an `/h/` hooked join.
   - Point-back resolution in `resolve.ts`, reusing the hook **-r** logic, with time landmarks only on `/h/`.
-  - Update the morph gloss and gloss-inverse, `constructions.ts` reader notes, the LLM prompt, and the english-helper recipes.
+  - Update the morph gloss and gloss-inverse, `constructions.ts` reader notes, the LLM prompt, and the english-helper recipes. Pin the new behavior in `src/english-helper/cases.tsv` and run `npm run english-helper-recall -- --check`.
   - Then run `npm run grammar-check`.
