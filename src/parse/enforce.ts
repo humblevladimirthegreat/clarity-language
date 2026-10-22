@@ -699,9 +699,8 @@ function enforceDependentContent(clause: Clause): void {
   throw new ConstructionError("dependentStanceOnly", `${dependent.orodo.raw} ${words}`);
 }
 
-/** Checks over one unit list (a clause body or an island): hosts, stand-ins, hooks, as-of counts, edges. */
+/** Checks over one unit list (a clause body or an island): hosts, stand-ins, hooks, as-of counts. */
 function enforceUnitList(units: Unit[], tables: ClassifyTables): void {
-  enforceIslandEdges(units);
   const doubled = doubledVerbSlot(units);
   if (doubled) throw new ConstructionError("verbSharedOwn", doubled.slot === "d" ? "two objects for one verb" : "two recipients for one verb");
   enforceRespectively(units);
@@ -1040,34 +1039,6 @@ function enforceIsland(island: IslandUnit, tables: ClassifyTables): void {
   if (slots.size === 0) throw new ConstructionError("islandSlotRole", "{ … }");
   if (slots.size > 1) throw new ConstructionError("islandOneSlot", `{ … } (${[...slots].join(" + ")})`);
   enforceUnitList(island.units, tables);
-}
-
-/** A host with no `/b/` of its own, cut off by an island edge from the `/b/` on the other side. */
-function isOpenHost(unit: Unit | undefined): boolean {
-  if (unit?.kind === "predicate") return !unit.adj.hosted && unit.adj.word.family.kind !== "joinMarker";
-  if (unit?.kind === "h") return !unit.unit.hosted && unit.unit.word.family.kind !== "joinMarker";
-  // A noun's trailing adjective hosts a following `/b/` too (`zululon gonunul bazawan`).
-  if (unit?.kind === "np") {
-    const last = unit.coord.parts.at(-1);
-    const item = last && !last.join ? last.items.at(-1) : undefined;
-    const adj = item?.kind === "package" ? item.package.adjs.at(-1) : undefined;
-    return Boolean(adj && !adj.hosted && adj.word.family.kind !== "joinMarker");
-  }
-  return false;
-}
-
-function isBPhrase(unit: Unit | undefined): boolean {
-  return unit?.kind === "np" && unit.coord.level === "b";
-}
-
-/** An island edge never splits a host from its hosted `/b/` (spans.md § Scope islands). */
-function enforceIslandEdges(units: Unit[]): void {
-  units.forEach((unit, i) => {
-    if (unit.kind !== "island") return;
-    const inner = unit.island.units;
-    if (isOpenHost(units[i - 1]) && isBPhrase(inner[0])) throw new ConstructionError("islandSlotRole", "host { /b/");
-    if (isOpenHost(inner.at(-1)) && isBPhrase(units[i + 1])) throw new ConstructionError("islandSlotRole", "host { /b/");
-  });
 }
 
 /** `zuam gagadul thobam zel …`: a closed `ua` fence is the one item ranked against the bar after it (comparatives.md#stance-bars). */

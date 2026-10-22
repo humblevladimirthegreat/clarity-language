@@ -339,7 +339,7 @@ When English ties one extra thing to a noun or an action by a list move (*a cupc
 
 **For *including* as an afterthought, use:** a [hook](hooks.md) (`al`, …). `zahunam gan bluzozen` is *a team including Uzozen*; `zahunam al zuzozen` is *the team, including Uzozen*.
 
-For several members, put a [phrase join](joins.md) **inside** the `/b/` phrase (`gan blubedal blugedam bal`). For an unnamed member or none at all, use a [standalone](joins.md#standalone-phrase) `/b/` join as the only `/b/` word (`gan bar` = *including something*; `guan bal` = *excluding nothing*).
+For several members, put a [phrase join](joins.md) **inside** the `/b/` phrase (`gan blubedal blugedam bal`). For an unnamed member or none at all, use a [standalone](joins.md#standalone-phrase) `/b/` join as the only `/b/` word (`gan blar` = *including something*; `guan blal` = *excluding nothing*).
 
 | Agebon | Use | English | Cue | Example |
 |--------|-----|---------|-----|---------|

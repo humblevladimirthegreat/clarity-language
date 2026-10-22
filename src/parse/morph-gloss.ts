@@ -916,11 +916,18 @@ function standaloneJoinIndexes(words: LexWord[], parsed: ParseResult | undefined
           ? !site.coord.first && site.coord.links.length === 1 && !site.coord.links[site.index]!.clause
           : site.index === 0 && site.coord.parts[0]!.items.length === 0;
       const word = join.at === undefined ? undefined : words[join.at];
-      const closes = word && ((word.family.kind === "joinMarker" && word.reading === "join") || word.family.kind === "kindIndefinite");
-      if (standalone && closes) out.add(join.at!);
+      if (standalone && word && closesAlone(word)) out.add(join.at!);
+    },
+    // A join that is the whole hosted `/b/` (`hewom blal` *like nothing*) has no items either.
+    word(word, slot) {
+      if (slot === "bound" && word.at !== undefined && closesAlone(word)) out.add(word.at);
     },
   });
   return out;
+}
+
+function closesAlone(word: LexWord): boolean {
+  return (word.family.kind === "joinMarker" && word.reading === "join") || word.family.kind === "kindIndefinite";
 }
 
 /** Word indexes of kind-reference joins (`zuan` + kind). */

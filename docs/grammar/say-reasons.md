@@ -58,7 +58,7 @@ English adverbs like *obviously*, *apparently* and *presumably* say **how you kn
 | *by the way* / *aside* (in passing) | `th( … )` | aside fence, any place a stance word may sit |
 | *necessarily* / *it follows* / *by deduction* | `thanam` | DEDUCED |
 | *basically* / *fundamentally* | `hadelom` | manner adverb on *fundamental* |
-| *overall* / *on the whole* | `hahugem bual` | as for everything |
+| *overall* / *on the whole* | `hahugem blual` | as for everything |
 | *automatically* / *by itself* | `zanal vowurel thewem blanar.` | CAUSE, with the doer resumed as its own cause |
 | *increasingly* / *more and more* | `helam zel` + the quality | more than it used to be |
 | *unfortunately* | `thudathum` | unspecified sake, unmet, can be softened |

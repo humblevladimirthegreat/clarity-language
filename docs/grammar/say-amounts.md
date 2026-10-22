@@ -288,14 +288,14 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *never* | `hal` |
 | *never, in all the times we both know* | `hweral` |
 | *never, ever* (at any time at all) | `hwaral` |
-| *daily* | `herem bual guzurem` |
-| *weekly* | `herem bual gagorem` |
-| *monthly* | `herem bual gumalem` |
-| *annually* | `herem bual gavuvam` |
+| *daily* | `herem blual guzurem` |
+| *weekly* | `herem blual gagorem` |
+| *monthly* | `herem blual gumalem` |
+| *annually* | `herem blual gavuvam` |
 
-> `zuzozen herem bual guzurem vowurel.`
+> `zuzozen herem blual guzurem vowurel.`
 >
-> z-Uzozen | h-while | [b-everything | g-day] | v-walk
+> z-Uzozen | [h-while | [bl-everything | g-day]] | v-walk
 >
 > "Uzozen walks daily."
 

@@ -217,8 +217,9 @@ const ROWS: Row[] = [
   { invalid: "zuzozen { hegugom dudozol vawebol }.", rejection: "islandOneSlot", valid: "zuzozen { hegugom dudozol } vawebol." },
   { invalid: "{ hegugom zuzozen vowurel }.", rejection: "islandOneSlot", valid: "{ hegugom zuzozen } vowurel." },
   { invalid: "zuzozen { hegugom huhunem } vowurel.", rejection: "islandSlotRole", valid: "zuzozen { hegugom zudozol } vawebol." },
-  { invalid: "zolazun { hegugom gorol } buzozen.", rejection: "islandSlotRole", valid: "zolazun { hegugom gorol bluzozen }." },
-  { invalid: "zolazun gorol { buzozen bolazun bal }.", rejection: "islandSlotRole", valid: "zolazun gorol bluzozen." },
+  // An edge between a host and its `bl-` word leaves the `bl-` word with no host; a plain `/b/` is the recipient either side.
+  { invalid: "zolazun { hegugom gorol } bluzozen.", rejection: "blNoHost", valid: "zolazun { hegugom gorol } buzozen." },
+  { invalid: "zolazun gorol { bluzozen }.", rejection: "blNoHost", valid: "zolazun gorol { buzozen bolazun bal }." },
   { invalid: "zuzozen henam vowurel.", rejection: "asOfIntroduceBound", valid: "zuzozen henam bl_#22,7 vowurel." },
   { invalid: "zuzozen henar bl_#22,7 vowurel.", rejection: "asOfResumeBound", valid: "zuzozen henar vowurel." },
   { invalid: "zuzozen henam blrul vowurel.", rejection: "asOfOffset", valid: "zawan thenam blrul thudathem vezuyel." },

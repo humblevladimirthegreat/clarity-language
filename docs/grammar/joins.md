@@ -127,6 +127,14 @@ A standalone join fills its slot with no items. In the object slot, `dal` is *no
 >
 > "Uzozen tells nobody."
 
+Right after a word that takes a [`bl-` partner](clause.md#extra-nouns), a standalone join is that whole partner, so it takes `bl-` too. Written plain, it would be the one who receives.
+
+> `zuzozen vowurel hewom blal.`
+>
+> z-Uzozen | v-walk | [h-like | bl-none]
+>
+> "Uzozen walks like nobody."
+
 ### Negation (`u`) {#negation-u}
 
 When English would deny the listed items, use vowel **u**. One item before `zul` is *not X*. Two items before `zul` is *neither A nor B*; more items is *none of these*. The join alone (`zul` / `zum`) is *no*. (cue: **u** ≈ undo.)

@@ -193,7 +193,7 @@ English time words (*today*, *previously*, *continue*) mostly ride on the same c
 | *recently* / *recent* | a channel + **`blruwum`** (*a short while before now*; **`blruwul`** is *just now*) |
 | *forever* / *permanent* | a measure phrase with an unbounded amount: `bavuvam grawal` (for `permanent`, add **`hawum`**) |
 | *eventually* / *ultimately* | **`xrewal`** opens the last point (*Finally, …*) |
-| *whenever* | **`herem bual`** + the occasion as a quality: `herem bual gerulal` |
+| *whenever* | **`herem blual`** + the occasion as a quality: `herem blual gerulal` |
 | *currently* / *nowadays* / *at present* / *modern* / *contemporary* | LIVE **`thugom`** when it is in view; otherwise the bare verb, which reports this stretch |
 | *previously* / *formerly* / *originally* / *once* (*once walked*) | FORMER **`helam`** |
 | *past* / *in the past* | FORMER **`helam`**, or a channel with a `-` offset |

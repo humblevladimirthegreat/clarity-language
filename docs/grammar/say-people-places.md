@@ -545,14 +545,14 @@ An English noun like *case* or *board* covers several jobs, and Agebon has a dif
 | *abortion* | `zawayalogahal` | a pregnancy ended |
 | *available* | `goxewaxal` | can be the recipient of a gift |
 | *independent* | `gebom gahum blolazun gul` | does not depend on Olazun |
-| *independent* (of everyone) | `zuzozen gebom gahum bur gul.` | depends on no other |
+| *independent* (of everyone) | `zuzozen gebom gahum blur gul.` | depends on no other |
 | *straight* (direct) | `gurem` | direction |
 | *hang* | `zuzozen dolazun vawuladuhel.` | holds Olazun from above |
 | *editor* | `zaxebeweloruyol` | doer of the editing |
 | *closely* | `zuzozen vawebol hazavem hul.` | looks, not at a distance |
 | *briefly* | `zuzozen vowurel bazerem gram.` | walks for about five seconds |
 | *wherever* | `ol bual gahehal` | everywhere houses are |
-| *alone* (without company) | `zuzozen vowurel huan bur.` | walks without any other |
+| *alone* (without company) | `zuzozen vowurel huan blur.` | walks without any other |
 | *single* (unmarried) | `zuzozen guwuram gul.` | not in union |
 | *income* / *revenue* | `zaralanonal` | money incoming |
 | *definition* / *meaning* | `zezuyelomal` | the meaning |
@@ -669,7 +669,7 @@ Some English words have a second or third sense that a published root already ca
 | *experience* (skill) | `zuwam` | readiness |
 | *side* (position, location) | `zuhohom` | a position |
 | *address* (a location) | `zuhohom` | where it is |
-| *public* (open to everyone) | `zahehal gaon bual.` | a house open to all |
+| *public* (open to everyone) | `zahehal gaon blual.` | a house open to all |
 | *character* (a trait) | `zevebom` | identity, personality |
 | *special* (dear to one person) | `zuzozen golamam.` | cherished |
 | *fit* (healthy) | `zuzozen geredom.` | in health |

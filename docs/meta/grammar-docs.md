@@ -546,6 +546,8 @@ End a full example sentence with a period, so it gets the sentence check. When a
 
 A morph line is compared only after the whole example parses. If it doesn't parse, that is a finding, never a skipped comparison.
 
+An example that parses also fails when a plain `/b/` join with no items sits right after a `/ɡ/`, `/h/`, or `/th/` word (`hewom bar`, `herem bual`). It parses as the recipient, but it is nearly always meant as the host's partner, which takes `bl-` (`hewom blar`, [standalone joins](../grammar/joins.md#standalone-phrase)). An example that does mean the recipient puts it elsewhere in the clause (`yol bar zuzozen hedurem varal.`). Plain nouns there are not checked: `zuzozen hedurem bolazun varal.` is the recipient.
+
 ### HTML comments
 <a id="html-comments"></a>
 

@@ -14,7 +14,10 @@ import {
   lintAgebonMarkdown,
   lintAgebonToken,
   peelLintChunk,
+  unhostedJoins,
 } from "./agebon-docs.js";
+import { loadDefaultTables } from "../parse/index.js";
+import { parseWithTables } from "../parse/parse-core.js";
 
 function tablesOf(opts?: {
   published?: Array<{ root: string; concrete?: string; abstract?: string }>;
@@ -273,5 +276,24 @@ describe("lintBareRoots", () => {
     const unknown = ["ezuzo", "ububu", "ededu", "ogogo"].find((root) => !tables.published.has(root))!;
     const found = lintBareRoots(`Use \`${known}\`, \`tha\`, \`thogo\`, and \`${unknown}\` or \`th${unknown}\`.`, tables).map((i) => i.text);
     assert.deepEqual(found, [unknown, `th${unknown}`]);
+  });
+});
+
+describe("unhostedJoins", () => {
+  const tables = loadDefaultTables();
+  const found = (text: string) => unhostedJoins(parseWithTables(text, tables)).map(({ host, join }) => `${host.raw} ${join.raw}`);
+
+  it("flags a plain /b/ join with no items right after a host word", () => {
+    assert.deepEqual(found("yol hewom bar zuzozen vowurel."), ["hewom bar"]);
+    assert.deepEqual(found("zuzozen vowurel huan bur."), ["huan bur"]);
+    assert.deepEqual(found("yol hedurem bar zuzozen varal."), ["hedurem bar"]);
+  });
+
+  it("leaves hosted blanks, hooks, plain nouns, and joins that close items", () => {
+    assert.deepEqual(found("yol hewom blar zuzozen vowurel."), []);
+    assert.deepEqual(found("yol ol bar zuzozen vowurel."), []);
+    assert.deepEqual(found("zuzozen hedurem bolazun varal."), []);
+    assert.deepEqual(found("zuzozen vezuyel bolazun thagem bel hral."), []);
+    assert.deepEqual(found("yol bar zuzozen hedurem varal."), []);
   });
 });

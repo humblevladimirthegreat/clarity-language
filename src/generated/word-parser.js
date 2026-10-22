@@ -25,11 +25,12 @@
   }
 
   // A hosted `/b/` (`bl-`) is a complement: a content word, pronoun, pointer, tag, kind indefinite, number, span,
-  // stand-in (`blarl`), or fill-ask (`blar`). A join word (`bal`) and a hook compound take no `bl-` (clause.md#extra-nouns).
+  // stand-in (`blarl`), or a join, which is the whole complement when it has no items (`blar`, `blal`) and may take
+  // `bl-` after hosted items too. A named join (`blan`) and a hook compound take none (clause.md#extra-nouns).
   function blBodyOk(body) {
     const f = body.family;
     if (f.kind === "hookCompound") return false;
-    return f.kind !== "joinMarker" || ["r", "rl", "rm", "rn", "rth"].includes(body.ending);
+    return f.kind !== "joinMarker" || ["r", "l", "m", "rl", "rm", "rn", "rth"].includes(body.ending);
   }
 
   function contentFamily(roots) {

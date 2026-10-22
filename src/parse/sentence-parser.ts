@@ -1407,7 +1407,7 @@ class AgebonSentenceParser extends CstParser {
     this.or(k, shape === "any" ? [...alts, { ALT: open }] : alts);
   }
 
-  /** A hosted `/b/` that heads a list filling the slot (`hazam bedehal bezedel bal`), then the amount. */
+  /** A hosted `/b/` that heads a list filling the slot (`hazam bledehal blezedel bal`), then the amount. */
   private joinedHosted(k: number): void {
     this.consume(k, HostedBJoined, { LABEL: "B" });
     this.subrule(k, this.boundJoinTail);

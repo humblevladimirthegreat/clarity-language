@@ -770,7 +770,7 @@ export const REJECTIONS = {
   joinlessRun: { anchor: "joins.md#right-close", summary: "two nouns of one role side by side, or two verbs in one clause, close with a join word (`zuzozen zolazun zal`)" },
   emptyIsland: { anchor: "spans.md#scope-islands", summary: "a scope island needs words between its edges" },
   islandOneSlot: { anchor: "spans.md#scope-islands", summary: "a scope island holds at most one phrase: /z/, /d/, /b/, /v/, or a /ɡ/ stack" },
-  islandSlotRole: { anchor: "spans.md#scope-islands", summary: "a scope island needs one /z/, /d/, /b/, /v/, or /ɡ/ phrase after its binder, and never splits a host from its /b/" },
+  islandSlotRole: { anchor: "spans.md#scope-islands", summary: "a scope island needs one /z/, /d/, /b/, /v/, or /ɡ/ phrase after its binder" },
   islandBinder: { anchor: "spans.md#scope-islands", summary: "a scope island needs a binder inside: an /h/ word or a join" },
   landmarkLateralBound: { anchor: "roles.md#landmark-facing", summary: "a landmark lateral (DIR th o) needs its landmark in hosted /b/" },
   asOfIntroduceBound: { anchor: "relations.md#as-of", summary: "an as-of word introduces its bound with a /b/ word" },

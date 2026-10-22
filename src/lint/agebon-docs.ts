@@ -12,6 +12,8 @@ import { toneRunLength } from "../parse/span-scan.js";
 import { wholeStem } from "../parse/resolve.js";
 import { wordConstructions } from "../parse/construction-trace.js";
 import { parseWithTables } from "../parse/parse-core.js";
+import { visitResult } from "../parse/ast-walk.js";
+import type { LexWord, ParseResult } from "../parse/types.js";
 import { classifyTokenBranch } from "../parse/tokens.js";
 import { parseWord, WordParseError } from "../parse/word.js";
 import { traceFragment, traceTemplate } from "./template-trace.js";
@@ -278,6 +280,7 @@ export type AgebonSpanIssueKind =
   | "template"
   | "fragment"
   | "unclassified"
+  | "unhosted-join"
   | "unmarked-fence"
   | "agebon-in-text-fence"
   | "bad-marker";
@@ -338,14 +341,38 @@ export function classifyAgebonSpan(text: string): AgebonSpanClass | "unclassifie
 /** Receives each construction ID a span exercises, with the span's offset in the page. */
 export type ConstructionSink = (id: string, index: number) => void;
 
-function parseFailure(text: string, index: number, tables: ClassifyTables, used?: ConstructionSink): string | null {
+function parseSpan(text: string, index: number, tables: ClassifyTables, used?: ConstructionSink): ParseResult | string {
   try {
     const result = parseWithTables(text.trim(), tables, { constructions: used !== undefined });
     for (const id of result.constructions ?? []) used!(id, index);
-    return null;
+    return result;
   } catch (error) {
     return (error instanceof Error ? error.message : String(error)).split("\n")[0]!;
   }
+}
+
+const HOST_POS = new Set(["g", "h", "th"]);
+
+/**
+ * A plain `/b/` join with no items right after a `/ɡ/`, `/h/`, or `/th/` word (`hewom bar`). It parses as the verb's
+ * recipient, but it is nearly always a slip for the host's complement (`hewom blar`, clause.md#extra-nouns), so an
+ * example that means the recipient puts it elsewhere in the clause.
+ */
+export function unhostedJoins(result: ParseResult): { host: LexWord; join: LexWord }[] {
+  const byAt = new Map<number, LexWord>();
+  const index = (word: LexWord) => word.at !== undefined && byAt.set(word.at, word);
+  // A host can parse as a join on its own (`gan bar` read alone), so joins count as hosts too.
+  visitResult(result, { word: index, join: index });
+  const out: { host: LexWord; join: LexWord }[] = [];
+  visitResult(result, {
+    join(join, site) {
+      if (site.kind !== "np" || site.index !== 0 || site.coord.parts[0]!.items.length > 0) return;
+      if (join.pos !== "b" || join.bl || join.at === undefined) return;
+      const host = byAt.get(join.at - 1);
+      if (host?.pos && HOST_POS.has(host.pos) && !host.bl) out.push({ host, join });
+    },
+  });
+  return out;
 }
 
 function lintSpanText(
@@ -373,8 +400,19 @@ function lintSpanText(
     return;
   }
   if (cls !== "sentence" && cls !== "phrase") return;
-  const failure = parseFailure(text, index, tables, used);
-  if (failure == null) return;
+  const parsed = parseSpan(text, index, tables, used);
+  if (typeof parsed !== "string") {
+    for (const { host, join } of unhostedJoins(parsed)) {
+      issues.push({
+        text,
+        index,
+        kind: "unhosted-join",
+        detail: `\`${join.raw}\` right after \`${host.raw}\` is the recipient, not its complement; write \`bl${join.raw.slice(1)}\` to complete \`${host.raw}\`, or move a recipient elsewhere in the clause`,
+      });
+    }
+    return;
+  }
+  const failure = parsed;
   issues.push({
     text,
     index,

@@ -524,7 +524,7 @@ A [tone mark](speech-moves.md#tone-marks) written right before the opening brace
 - No role letter on the edges.
 - **At most one phrase.** After its binder, an island holds at most one phrase: a `/z/`, `/d/`, or `/b/` noun phrase, a `/v/` verb phrase, or a `/ɡ/` stack, with that phrase’s own adjectives, `/w/` detail, and join. An `/h/` word is a binder, never the phrase.
 - **It may close early.** The island can stop partway through its phrase; the pause marks where. By the end of the phrase at the latest, it has closed: a new role letter or the outer join always comes after the island.
-- **Hosts keep their `bl-` word.** A host (`/ɡ/`, `/h/`, `/th/`) and its `bl-` word are both inside the island or both outside.
+- **Hosts keep their `bl-` word.** A host (`/ɡ/`, `/h/`, `/th/`) and its `bl-` word are both inside the island or both outside. A plain `/b/` is the recipient, not a host's partner, so it may sit on either side of an edge.
 - **One island per clause.** Islands do not nest.
 - Empty `{ }` has no reading.
 - **Binder required:** at least one scope-taking `/h/` or `/th/` and/or a join particle **inside**. A [hook](hooks.md) is never a binder. A hook already reaches its whole stretch: `/w/` right before it grades the whole span, and a hook after a noun belongs to that noun.
