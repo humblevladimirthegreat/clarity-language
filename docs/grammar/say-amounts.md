@@ -481,7 +481,7 @@ Everyday measure uses the **unit metaphor** on the stock roots above (`bezerem g
 | coulomb | `alevo` *coulomb* | `balevom g+2` | `urazu` *charge* |
 | radian | `udugu` *radian* | `budugum g+1` | `aruge` *cycle* |
 
-**Related form:** general **`ROOTl+1`** (*primary / singleton of a kind*) is [numeric derivation](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
+**Related form:** general **`+1xROOT`** (*primary / singleton of a kind*) is a [numeric prefix](numeric-derivation.md#scalar-digit-morphs), not an SI alias.
 
 ### *Until tomorrow*, *by tomorrow* {#pole-from-now}
 <a id="until-tomorrow"></a>

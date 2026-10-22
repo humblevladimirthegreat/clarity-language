@@ -226,10 +226,7 @@ export function lexiconContentRoots(
     case "content":
       return family.roots;
     case "x":
-      if (family.xFamily === "numeric") {
-        return [];
-      }
-      if ((family.xFamily === "role" || family.xFamily === "hookPrefix") && family.rightRoots?.length) {
+      if ((family.xFamily === "role" || family.xFamily === "hookPrefix" || family.xFamily === "numeric") && family.rightRoots?.length) {
         return family.rightRoots;
       }
       if (family.xFamily === "compound") {

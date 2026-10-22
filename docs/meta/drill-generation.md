@@ -349,7 +349,7 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 17 | `intention.md` | Intermediate | **exists** | **DECISION** **`ogo`** changeability; forecast = evidential + `blral` vs PLAN; PLAN + DECISION stack | Recycle Beginner PLAN / PREDICT. Stack evidentiality on PREDICT only as this stage shows. Join-act **`von`** only if already taught in this stage |
 | 17 | `intention.md` | Advanced | — | no Advanced stage | |
 | 17 | `sakes.md` | Intermediate | **exists** | Emotion compose (ACT + LOCUS + a value) | Recycle values Beginner. |
-| 18 | `numeric-derivation.md` | Advanced | **exists** | `ROOT l NUM` as the stage teaches (essence / `+N` / `#N` / quasi / …) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
+| 18 | `numeric-derivation.md` | Advanced | **exists** | `NUM x ROOT` as the stage teaches (essence / `+N` / `#N` / quasi / …; `mx` approximate) — only assigned readings | No unassigned cells from [unassigned-reserved.md](unassigned-reserved.md). 4–6 items |
 
 ## Leak index
 <a id="leak-index"></a>
@@ -398,7 +398,7 @@ First-taught checkpoint for **morphology** agents leak most often. If this check
 | PLAN bar (`thagem zel`) | `comparatives.md` Intermediate |
 | Sake bars (`thudatham zoel`) | `sakes.md` Intermediate |
 | Channel, FORMER, ABIL, REQUIRE, attitude bars | `comparatives.md` Advanced |
-| `ROOT l NUM` derivation | `numeric-derivation.md` Advanced |
+| `NUM x ROOT` numeric prefix (`zrawaxolamal`, `zragexezuyel`) | `numeric-derivation.md` Advanced |
 | Channels on a generalization | `knowing.md` Advanced |
 
 **`yol`** yes/no with a house-name subject is core Beginner. **`yol zar …`** fill-ask is questions Beginner (needs joins unspecified **-r**).

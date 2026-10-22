@@ -4,7 +4,7 @@ import { toSpeechText } from "../tts/plan.js";
 
 /**
  * Pronunciation rows on the number pages (numbers.md, numbers-applied.md,
- * numeric-derivation.md — the last is spelled out, so it rarely needs rows).
+ * numeric-derivation.md — numeric prefixes are spelled out, so it rarely needs rows).
  *
  * Every Agebon example line whose speech differs from its writing (shorthand
  * number words) carries a `🔊 \`spoken\`` row directly underneath. Spoken →
@@ -31,7 +31,7 @@ const SPOKEN_COL_RE = /^(?:spoken|speech|pronunciation)$/i;
 
 function isNumberWord(word: MorphWord): boolean {
   const family = word.family;
-  return family.kind === "number" || (family.kind === "x" && family.xFamily === "numeric");
+  return family.kind === "number";
 }
 
 const BOUNDARY_TEXT: Record<string, string> = {

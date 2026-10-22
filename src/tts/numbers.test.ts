@@ -168,13 +168,9 @@ describe("digitless exponent with power digits", () => {
   });
 });
 
-describe("spelled-out stems and numeric derivation", () => {
+describe("spelled-out stems", () => {
   it("keeps mantissa digits before a digitless exponent", () => {
     assert.equal(numberWordToSpeech(parseWord("gramowal")), "gramowal");
-  });
-
-  it("keeps the lexical join on a numeric-derivation host", () => {
-    assert.equal(numberWordToSpeech(parseWord("vologolramowal")), "vologolramowal");
   });
 });
 

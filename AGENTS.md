@@ -40,7 +40,7 @@ Each row names what the file owns. The file is the authority; this table is only
 | `spans.md` | Span fences, asides, scope islands. |
 | `numbers.md` | Numerals, digitless forms, exponents, stance numbers, group separator, writing style. |
 | `numbers-applied.md` | Digit strings, time and date, ranges, measure phrases. |
-| `numeric-derivation.md` | Root + number derivation (advanced only). |
+| `numeric-derivation.md` | Numeric prefixes: number + `x` + root (advanced only). |
 | `review.md` | **Level reviews**: one `### Practice` band per level, read after every stage page; adds no forms and no words, [level reviews](docs/meta/translation-exercises.md#level-reviews). |
 | `english.md` + `say-*.md` | **Saying it in Agebon** recipe track, keyed by English job. Outside stage order; stage pages never link to it, [recipe track](docs/meta/grammar-docs.md#recipe-track). New gap resolutions that add no form go here. |
 | `claritish/` | **Claritish** on-ramp: closed Agebon words dropped into English, an intro page, ten lessons, a bonus tone-marks lesson, a closing plug, a one-page cheat sheet, and a journal editor. Adds no forms; never links into the grammar except the closing page, [Claritish track](docs/meta/grammar-docs.md#claritish-track). |

@@ -96,6 +96,18 @@ function relationWord(word: string): boolean {
   return /^[a-z]{3,}wards?$/.test(word) && !NOT_WARD.has(word);
 }
 
+/**
+ * A kind named by a number idea (*quasi-friend*, *proto-love*, *multi-faith*, *tri-dialogue*, *three-part*, *first-order*):
+ * a numeric prefix ([english.md](english.md#number-prefixes)). A prefix needs its hyphen, so *union* and *decide* stay words;
+ * the tagger keeps the hyphen only on prefixes it knows (*quasi-friend* reads `quasi friend`).
+ */
+const NUMBER_PREFIX = /^(quasi|proto|multi|poly|uni|mono|bi|tri|quad|de|null|mega)-[a-z]/;
+const NUMBER_PART = /^(one|two|three|four|five|six|seven|eight|nine)-(part|fold|sided|way|piece)$|^(first|second|third|zeroth|nth)-(order|class|rate)$/;
+function numberPrefixWord(normal: string): boolean {
+  const word = normal.replace(/ /g, "-");
+  return NUMBER_PREFIX.test(word) || NUMBER_PART.test(word);
+}
+
 export const WORD_DETECTORS: readonly WordDetector[] = [
   { id: "modal", label: (t) => `modal *${t.normal}*`, links: [], test: (t) => t.cls === "modal" && t.normal in MODAL_LINKS },
   { id: "wh", label: (t) => `question word *${t.normal}*`, links: [], test: (t) => t.cls === "question" && t.normal in WH_LINKS },
@@ -111,6 +123,7 @@ export const WORD_DETECTORS: readonly WordDetector[] = [
   { id: "proper-name", label: () => "proper name", links: ["word-endings.md#proper-name--n"], test: (t) => !!t.proper },
   { id: "plural", label: () => "plural noun", links: ["plurality.md#associative"], test: (t) => t.cls === "noun" && !!t.plural && !t.proper },
   { id: "relation-prefix", label: (t) => `*${t.normal}*: a hook prefix (the hook's vowels, \`x\` or \`mx\`, then the noun's root)`, links: ["english.md#relation-prefixes", "hooks.md#hook-prefixes"], test: (t) => relationWord(t.normal) },
+  { id: "number-prefix", label: (t) => `*${t.normal}*: a numeric prefix (the number body, \`x\` or \`mx\`, then the noun's root)`, links: ["english.md#number-prefixes", "numeric-derivation.md#numeric-derivation"], test: (t) => numberPrefixWord(t.normal) },
   { id: "participle", label: (t) => (t.shape === "er" ? "doer noun (*-er*, *-or*)" : `*-${t.shape}* word used as ${t.cls === "noun" ? "a noun" : "an adjective"}`), links: ["english.md#participles"], test: (t) => !!t.shape },
 ];
 

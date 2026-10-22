@@ -529,7 +529,7 @@ function lineIndexer(lines: readonly string[]): (index: number) => number {
 }
 
 /**
- * Lexicon roots a word spells (published or compound stems): a numeric derivation keeps its host,
+ * Lexicon roots a word spells (published or compound stems): a numeric prefix keeps its stem,
  * a viewpoint lateral its anchor, and a `[…]` / `{…}` / `(…)` span the words inside it.
  * `overlay` marks roots that only host a closed overlay here.
  */
@@ -551,7 +551,6 @@ function vocabUses(word: LexWord, tables: ClassifyTables): { root: string; overl
     return inner;
   }
   let roots = lexiconContentRoots(word);
-  if (family.kind === "x" && family.xFamily === "numeric") roots = family.leftRoots;
   if (family.kind === "x" && family.xFamily === "lateral") roots = [...family.leftRoots, ...(family.rightRoots ?? [])];
   const overlay = Boolean(word.overlay || word.hostOverlay);
   return roots

@@ -621,7 +621,7 @@ With **`thogol`**, I have decided for good to pay. With **`thogor`**, I have dec
 
 ## Advanced
 
-The Advanced review covers every Advanced section, from English emphasis to numeric derivation.
+The Advanced review covers every Advanced section, from English emphasis to numeric prefixes.
 
 ### Practice {#advanced-practice}
 
@@ -707,14 +707,14 @@ z-Ahelan | d-CITE[umbrella]# | v-write
 **Rule:** [Editorial close and close-all](spans.md#close-forms-complete-editorial-close-all)
 :::
 
-**3.** `zuzozen gogowulrawal.`
+**3.** `zuzozen grawaxogowul.`
 
 ::: details Show answer
-z-Uzozen | g-quiet-l-infinity
+z-Uzozen | g-infinity-x-quiet
 
 *Uzozen is the essence of quiet.*
 
-**Rule:** [Numeric derivation](numeric-derivation.md#numeric-derivation)
+**Rule:** [Numeric prefixes](numeric-derivation.md#numeric-derivation)
 :::
 
 #### Pick one {#advanced-pick-one}

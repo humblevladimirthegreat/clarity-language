@@ -402,11 +402,6 @@ export function senseLabel(
   tables: ClassifyTables,
   ctx: MorphGlossContext = {},
 ): string {
-  if (word.family.kind === "x" && word.family.xFamily === "numeric") {
-    const body = sensePieces(word, tables, ctx).join(`-${word.family.join ?? "l"}-`);
-    if (word.plural) return body ? `${body}-x` : "-x";
-    return body;
-  }
   if (word.family.kind === "x" && word.family.xFamily === "holder") {
     const body = sensePieces(word, tables, ctx).join("-");
     return word.plural ? `${body}-x` : body;
@@ -1483,11 +1478,12 @@ function xPieces(word: LexWord, tables: ClassifyTables, antecedent?: LexWord): s
   }
 
   if (family.xFamily === "numeric") {
-    const host = family.leftRoots.map((root) =>
+    // The number, the seam, then the stem (`infinity-x-love`, `three.about-x-speech`; numeric-derivation.md).
+    const stem = (family.rightRoots ?? []).map((root) =>
       rootSense(root, word.ending, tables, { named: isNameEnding(word.ending), pos: word.pos }),
     );
     const num = family.numberStem ? numericKindLabel(family.numberStem, word.pos) : "num";
-    return [...host, num];
+    return [`${num}${family.approx ? ".about" : ""}`, ...stem];
   }
 
   if (family.xFamily === "holder") {

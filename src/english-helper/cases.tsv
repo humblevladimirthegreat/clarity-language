@@ -53,3 +53,8 @@ Olazun is anti-war.	anti-war	has:relation-prefix	a hyphenated relation prefix is
 Uzozen walks homeward.	homeward	link:hooks.md#hook-prefixes	*-ward* on a noun is a hook prefix
 The ship is transoceanic.	transoceanic	has:relation-prefix	*trans-* + a place adjective is a hook prefix
 Uzozen walks forward.	forward	not:hooks.md#hook-prefixes	an everyday *-ward* word is not built from a noun
+# Numeric prefixes
+Ahelan is a quasi-friend.	quasi friend	link:numeric-derivation.md#limit-polarity-stage	*quasi-* on a noun is the quasi row
+Uzozen sees a three-part dialogue.	three part	link:numeric-derivation.md#scalar-digit-morphs	*three-part* names the kind by its parts
+Uzozen sees a tri-dialogue.	tri-dialogue	has:number-prefix	a hyphenated number prefix is a numeric prefix
+Uzozen sees a union.	union	not:numeric-derivation.md#numeric-derivation	a prefix needs its hyphen

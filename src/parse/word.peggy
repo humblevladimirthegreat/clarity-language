@@ -338,7 +338,7 @@ freeNumber
         family: numberFamily(stem, mark || undefined),
       });
     }
-  / role:RolePrefix mark:WritingEndingMark? stem:SpeechNumberStem ending:Ending plural:PluralSuffix? {
+  / role:RolePrefix mark:WritingEndingMark? stem:SpeechNumberStem ending:Ending plural:PluralSuffix? WordEnd {
       return makeWord(text(), {
         ...role,
         ending: endingFromWritingMark(mark, ending),
@@ -514,8 +514,8 @@ SpeechDigitlessTail
   / "wa" { return "e"; }
   / "wu" { return "e-"; }
 
-// PoS-less number stem (numeric derivation right half). Spelled CV only:
-// shorthand (`+3`, `#e`) is for free numbers, never inside a derivation.
+// PoS-less number stem (numeric prefix left half). Spelled CV only:
+// shorthand (`+3`, `#e`) is for free numbers, never inside a numeric prefix.
 PoslessNumberStem
   = "r" v:SpeechMarkerV body:SpeechDigitGroups
     &{ return body.seps.every(function (sep) { return sep === separatorVowel(v); }); }
@@ -621,7 +621,7 @@ xWord
   / ValueCompound
   / LateralCompound
   / AbilityCompound
-  / NumericDerivation
+  / NumericPrefix
   / OrdinaryCompound
 
 // Role pointer: `w` + label scope + part consonant + pointer vowel + **-r** / **-l** / **-m** (`zwazar`, `dwadal`,
@@ -749,16 +749,21 @@ CompoundHost
       return [first].concat(rest);
     }
 
-NumericDerivation
-  = host:ContentRoot join:[lm] stem:PoslessNumberStem ending:Ending plural:PluralSuffix? WordEnd {
+// Numeric prefix: number body + `x` (exact) or `mx` (approximately that number) + stem (numeric-derivation.md).
+// The body starts with `r`, which no root, hook vowel, or role marker does, and number words hold no `x`, so the
+// first `x` after the body is the seam. The stem may be an ordinary compound; its last root is the kind.
+NumericPrefix
+  = stem:PoslessNumberStem approx:"m"? "x" root:ContentRoot rest:("x" r:ContentRoot { return r; })* ending:Ending plural:PluralSuffix? WordEnd {
+      const fields = {
+        leftRoots: [],
+        rightRoots: [root, ...rest],
+        numberStem: stem,
+      };
+      if (approx) fields.approx = true;
       return {
         ending,
         plural: !!plural,
-        family: xFamily("numeric", {
-          leftRoots: [host],
-          join,
-          numberStem: stem,
-        }),
+        family: xFamily("numeric", fields),
       };
     }
 
@@ -845,7 +850,7 @@ plainContent
 // ── Citation (prefix-less root + ending) ────────────────────────────────────
 
 citation
-  = body:(HookPrefix / ValueCompound / LateralCompound / AbilityCompound / NumericDerivation / OrdinaryCompound)
+  = body:(HookPrefix / ValueCompound / LateralCompound / AbilityCompound / NumericPrefix / OrdinaryCompound)
     {
       return makeWord(text(), {
         ending: body.ending,
@@ -904,7 +909,7 @@ ContentRoot
     }
 
 // A place-name root with a consonant cluster (phonology.md#place-name-roots): a vowel first and last,
-// no vowel run, and no **-l** / **-m** + `r` (the numeric-derivation seam). Only a plain content word
+// no vowel run, and no **-l** / **-m** + `r` (the closed root-first numeric shape). Only a plain content word
 // or a citation takes one; compounds and seams take ordinary roots.
 ClusterRoot
   = root:$([aeou] (Onset+ [aeou])+) &{ return /[^aeou]{2}/.test(root) && !/[lm]r/.test(root); } {

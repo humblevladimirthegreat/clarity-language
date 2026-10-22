@@ -262,7 +262,12 @@ export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
       "`th-TAG-X` (a stance tag joined to a person X, or `←X`, one already named): the sentence gives that person's view, and the tag says how the speaker knows it. `th-CLUES-X` = I gather X thinks …; `th-MAY-X` = maybe X thinks …. Every other `th-` word in that sentence (a want, plan, decision, or feeling) is then X's, not the speaker's: `th-WANT-unstated | th-CLUES-X` = I gather X wants …; a feeling word with `th-CLUES-listener` = it sounds like you feel that.",
   },
   ability: { anchor: "compounds.md#conversation-length", summary: "ability compound" },
-  numeric: { anchor: "numeric-derivation.md#numeric-derivation", summary: "numeric derivation" },
+  numeric: {
+    anchor: "numeric-derivation.md#numeric-derivation",
+    summary: "numeric prefix",
+    reader:
+      "`NUM-x-STEM` is a numeric prefix, one word like English *quasi-*, *proto-*, *multi-*, *tri-*: the number says what kind of stem it is, and the word is a kind of the stem, never a count of things in the sentence. `z-infinity-x-love` = the essence of love; `z-grain-x-love` = a grain of love; `z-void-x-fear` = a void of fear; `z-quasi-x-friend` = a quasi-friend; `z-origin-x-love` = love in its beginning form; `z-telos-x-story` = the story's final form; `z-poly-x-faith` = multi-faith; `v-de-x-tale` = to de-tale; `z-three-x-discourse` = a three-part dialogue; `d-1st-x-pencil` = a first draft. `.about` on the number is approximate: `d-three.about-x-discourse` = a roughly three-part dialogue.",
+  },
   compound: { anchor: "compounds.md#two-roots-one-word", summary: "ordinary x compound" },
 };
 
@@ -369,7 +374,7 @@ export const TONE_CONSTRUCTIONS = {
  * Number-stem features (`number.*`), one per lesson: marker identity, digitless,
  * exponents, digitless-exponent classes, percent, decimal, groups, writing marks,
  * and the non-referential PoS a number takes. Traced on free numbers and on the
- * stem inside a numeric derivation.
+ * body of a numeric prefix.
  */
 export const NUMBER_FEATURE_CONSTRUCTIONS = {
   "marker.scalarPos": { anchor: "numbers.md#counts", summary: "+ count" },

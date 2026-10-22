@@ -10,7 +10,7 @@ import { parseWithTables } from "../parse/parse-core.js";
  *
  * Slots:
  * - `…` / `...` / an all-caps placeholder (`A`, `HOOK₁`, `BODY`) standing alone → a word or clause.
- * - `…` / a placeholder glued to letters (`…axal`, `h+…`, `…l#N`) → part of one word.
+ * - `…` / a placeholder glued to letters (`…axal`, `h+…`, `#Nx…`) → part of one word.
  * - a fragment (no slots) gets an implicit slot before and after it.
  */
 
@@ -107,10 +107,10 @@ function traceFilled(template: string, slots: Slot[], tables: ClassifyTables): s
   return shared ? [...shared].sort() : null;
 }
 
-/** `…l+0` / `…m#N`: numeric-derivation shape in shorthand (numeric-derivation.md; real words are spelled). */
-const DERIVATION_SHAPE_RE = /^…[lm]([+\-#_±~@=].*)$/;
+/** `+0x…` / `#Nmx…`: numeric-prefix shape in shorthand (numeric-derivation.md; real words are spelled). */
+const DERIVATION_SHAPE_RE = /^([+\-#_±~@=][^x]*?)m?x(?:ROOT|…)$/;
 
-/** The derivation shape exercises what the free number `g+0` does, on a numeric-derivation word. */
+/** The prefix shape exercises what the free number `g+0` does, on a numeric-prefix word. */
 function traceDerivationShape(num: string, tables: ClassifyTables): string[] | null {
   const ids = traceFilled(`g${num}`, findSlots(`g${num}`), tables);
   if (!ids) return null;

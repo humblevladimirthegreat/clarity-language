@@ -25,7 +25,7 @@ function lastVowel(s: string): string {
 
 /**
  * Shape a string of Agebon letters into a place-name root: start and end on a vowel,
- * glide a vowel run, split the numeric-derivation seam, and pad a clusterless name.
+ * glide a vowel run, split **-l** / **-m** + `r`, and pad a clusterless name.
  */
 export function finishPlaceLetters(s: string): string {
   if (s.length === 0) throw new Error("a place-name root needs letters");
@@ -37,7 +37,7 @@ export function finishPlaceLetters(s: string): string {
   if (!VOWEL.test(s.at(-1)!)) s += lastVowel(s);
   // Two vowels in a row take a glide: `w` beside `u` or `o`, `y` otherwise.
   s = s.replace(/([aeou])(?=([aeou]))/g, (_, v: string, next: string) => v + ("uo".includes(v) || "uo".includes(next) ? "w" : "y"));
-  // **-l** / **-m** + `r` is the numeric-derivation seam: split it with the vowel that follows.
+  // **-l** / **-m** + `r` is the closed root-first numeric shape: split it with the vowel that follows.
   s = s.replace(/([lm])(r)([aeou])/g, "$1$3$2$3");
   // With no cluster the root would look native: give it the place tail, `n` + its last vowel.
   if (!CLUSTER.test(s)) {

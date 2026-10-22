@@ -171,7 +171,7 @@ function endingSuffix(word: MorphWord): string {
   return out;
 }
 
-/** Full speech CV surface for a free number word or numeric-derivation host. */
+/** Full speech CV surface for a free number word. */
 export function numberWordToSpeech(word: MorphWord, table = NUMBER_SYLLABLES): string {
   return numberWordToSpeechStressed(word, table).raw;
 }
@@ -190,10 +190,6 @@ export function numberWordToSpeechStressed(word: MorphWord, table = NUMBER_SYLLA
   if (family.kind === "number") {
     head = posPrefix(word);
     stem = family.stem;
-  } else if (family.kind === "x" && family.xFamily === "numeric" && family.numberStem) {
-    stem = family.numberStem;
-    // Numeric derivation: host root + lexical join (`l` / `m`), not mid-word `x`.
-    head = posPrefix(word) + family.leftRoots.join("") + (family.join ?? "x");
   } else {
     throw new Error(`Not a number word: ${word.raw}`);
   }

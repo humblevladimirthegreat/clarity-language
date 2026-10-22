@@ -247,7 +247,7 @@ function familyChips(family: MorphWordFamily): string[] {
       if (family.part) chips.push(`part ${family.part}`);
       if (family.hook) chips.push(`hook ${family.hook}`);
       if (family.stanceVowel) chips.push(`stance ${family.stanceVowel}`);
-      if (family.numberStem) chips.push(`num ${family.numberStem.marker}`);
+      if (family.numberStem) chips.push(`num ${family.numberStem.marker}${family.approx ? " mx" : ""}`);
       return chips;
     }
     case "hook":
@@ -390,7 +390,7 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
     return { line: "span fence", href: "spans.html" };
   }
   if (family.kind === "x" && family.xFamily === "numeric") {
-    return { line: "numeric derivation", href: "numeric-derivation.html#numeric-derivation" };
+    return { line: `numeric prefix${family.approx ? " (approximate)" : ""}`, href: "numeric-derivation.html#numeric-derivation" };
   }
   if (word.hookCompound) {
     return { line: "hook compound", href: "hooks.html#hook-compounds" };

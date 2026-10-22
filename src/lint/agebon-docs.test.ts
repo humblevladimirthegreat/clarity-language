@@ -44,7 +44,7 @@ describe("isAgebonLintCandidate", () => {
     assert.equal(isAgebonLintCandidate("e"), true);
     assert.equal(isAgebonLintCandidate("z-dog"), false);
     assert.equal(isAgebonLintCandidate("z-Azawan"), false);
-    assert.equal(isAgebonLintCandidate("ROOTl-e-"), false);
+    assert.equal(isAgebonLintCandidate("-e-xROOT"), false);
     assert.equal(isAgebonLintCandidate("…axul"), false);
     assert.equal(isAgebonLintCandidate("level"), false);
     assert.equal(isAgebonLintCandidate("x"), false);
@@ -204,7 +204,8 @@ describe("lintAgebonSpans", () => {
     const hook = trace("`A am B`");
     assert.ok(hook.has("hook.am"));
     assert.ok(![...hook].some((id) => id.startsWith("hook.") && id !== "hook.am"));
-    assert.ok(trace("`…l#N`").has("word.xFamily.numeric"));
+    assert.ok(trace("`#Nx…`").has("word.xFamily.numeric"));
+    assert.ok(trace("`+e-mx…`").has("word.xFamily.numeric"));
     assert.equal(lintAgebonSpans("`d[…`", tables)[0]?.kind, "template");
     assert.equal(lintAgebonSpans("`zo zo …`", tables)[0]?.kind, "template");
     assert.equal(classifyAgebonSpan("ROOT"), "english");

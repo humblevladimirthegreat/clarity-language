@@ -202,15 +202,17 @@ function rebuildX(
   left: string[],
   right: string[] | undefined,
 ): string | null {
-  return spliceRoots(word, [...family.leftRoots, ...(family.rightRoots ?? [])], [...left, ...(right ?? [])]);
+  // A numeric prefix's body can hold a root's letters (`rawa` / `awa`): the stem starts after the first `x`.
+  const from = family.xFamily === "numeric" ? word.raw.indexOf("x", posPrefix(word).length) + 1 : 0;
+  return spliceRoots(word, [...family.leftRoots, ...(family.rightRoots ?? [])], [...left, ...(right ?? [])], from);
 }
 
 /**
  * Swap each moved root in place, in order, so everything else in the word (role / stance /
  * locus vowels, emotion horizon, landmark `o`, number stem, ending, resume sense) stays exactly as written.
  */
-function spliceRoots(word: MorphWord, oldRoots: string[], newRoots: string[]): string | null {
-  const prefix = posPrefix(word);
+function spliceRoots(word: MorphWord, oldRoots: string[], newRoots: string[], from = 0): string | null {
+  const prefix = word.raw.slice(0, Math.max(from, posPrefix(word).length));
   let rest = word.raw.slice(prefix.length);
   let out = "";
   for (let i = 0; i < oldRoots.length; i++) {

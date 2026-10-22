@@ -402,25 +402,33 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     });
   });
 
-  it("parses zolovelrawal as numeric derivation +e (numeric-derivation.md)", () => {
-    const word = parseOk("zolovelrawal");
+  it("parses zrawaxolovel as a numeric prefix +e (numeric-derivation.md)", () => {
+    const word = parseOk("zrawaxolovel");
     assert.equal(word.pos, "z");
     assert.equal(word.ending, "l");
     assert.deepEqual(word.family, {
       kind: "x",
       xFamily: "numeric",
-      leftRoots: ["olove"],
-      join: "l",
+      leftRoots: [],
+      rightRoots: ["olove"],
       numberStem: { marker: "+", groups: [], digitlessExp: "e" },
     });
   });
 
-  it("parses zolovemrawal as numeric derivation with abstract join -m", () => {
-    const word = parseOk("zolovemrawal");
-    assert.equal(word.family.kind, "x");
-    if (word.family.kind === "x") {
-      assert.equal(word.family.join, "m");
-      assert.equal(word.family.xFamily, "numeric");
+  it("parses numeric prefixes on x and mx, on a compound stem, and hosted", () => {
+    const approx = parseOk("dragemxezuyel");
+    assert.equal(approx.family.kind === "x" && approx.family.approx, true);
+    assert.equal(parseOk("zrawaxolovem").ending, "m");
+    const compound = parseOk("zragexahehaxowurel");
+    assert.deepEqual(compound.family.kind === "x" && compound.family.rightRoots, ["aheha", "owure"]);
+    assert.equal(parseOk("blragexezuyel").bl, true);
+    assert.equal(parseOk("zragexezuyelx").plural, true);
+    assert.equal(parseOk("rawaxolovel").family.kind, "x");
+  });
+
+  it("reads no numeric prefix in the root-first shape, on another seam consonant, or on a one-vowel stem", () => {
+    for (const raw of ["zolovelrawal", "zolovemrawal", "zragelxezuyel", "zragenxezuyel", "zragerxezuyel", "zragexal", "zragemxal"]) {
+      assert.throws(() => parseWord(raw), WordParseError, raw);
     }
   });
 
@@ -542,7 +550,7 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
 });
 
 describe("parseWord — illegal shapes", () => {
-  it("rejects ROOT l 1 with no number marker (numeric-derivation.md)", () => {
+  it("rejects a digit after a root (numeric-derivation.md)", () => {
     assert.throws(() => parseWord("zolovel1l"), WordParseError);
   });
   it("rejects a reversed stack (design-decisions.md#stacked-vowels)", () => {
