@@ -136,6 +136,14 @@ A role word writes its label scope right after **`w`** (`zwazuduyel`, `zwezuduye
 - **Written once.** A **`th`** scope after the stem (`zwazuduyethel`) has no reading, so a role word never carries two scopes. Ordinary roots keep the **`th`** seam, so label scope is taught in two places: after **`th`** on other words, at the front of a role word.
 - **Scope and ability combine.** With scope at the front, the ability vowel after the stem no longer competes for the same spot (`gwezuduyexal` *can be a teacher, as a practice*).
 
+### Stacked scope readings {#stacked-scope-readings}
+
+A **`u`** scope pair reads like a join's *everything but* (**`u`** every scene, the second vowel set aside), and the other pairs read like extra-noun hooks, so **`ao`** is *over*: the label belongs to the situation, not the person ([predication](../grammar/predication.md#scope-stacks)).
+
+- **`ao` is not *this time, toward this one*.** That reading was plain **`a`** + **`o`**, the only non-**`u`** pair that ignored its hook. The situation reading targets the commonest labeling bias (character blamed for what the circumstances did), which **`tha`** only limits in time. Loss: *this once, to Olazun* takes **`tha`** with a plain recipient, or two words.
+- **`ue` is off duty, not refusal.** Setting the role aside presumes it; refusing it denies it, and one spelling cannot do both. Denying a label is **`gul`** after it.
+- Rejected: **`ao`** as *on paper* / *by title* (the hook's footing reading), which reads oddly on adjectives (*officially angry*).
+
 ### Hook prefixes {#hook-prefixes}
 
 A hook prefix (`guexavuvul` *anti-fighting*, [hooks.md](../grammar/hooks.md#hook-prefixes)) takes the role letter + vowels + **`x`** shape that role compounds left when they moved to **`w`**.

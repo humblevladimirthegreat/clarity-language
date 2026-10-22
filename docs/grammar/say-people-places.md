@@ -623,7 +623,8 @@ English turns many acts into nouns (*contribution*, *acquisition*, *murder*, *co
 | *comparison* / *contrast* (setting two against each other) | `zezom` | contrast |
 | *compare A with B* | `zuzozen dolazun vezom bahelan.` | sets Olazun against Ahelan |
 | *preference* (the one preferred) | `zolamalugulel` | the one loved first |
-| *tendency* (a type across scenes) | `zalamuthul` | a lying type |
+| *tendency* (a type across scenes) | `zalamuthul` | lying as a type: a tendency to lie |
+| *a liar type* (the person) | `zwuzalamul` | someone who lies, as a type |
 | *tends to* / *often lies* | `zuzozen valamul huam.` | usually lies |
 | *a lying type* | `zuzozen valamuthul.` | the type-claim |
 | *introduction* (the act) | `zolazun veluyel duzozen thewem blahelan.` | Olazun learns Uzozen, Ahelan makes it happen |

@@ -31,7 +31,7 @@ const BAR_READER =
 
 /** Shared by every label-scope seam vowel (predication.md#label-scope). */
 const SCOPE_WORDS =
-  "`episode` this time only, `role` as their practiced role, `pair` toward one `b-` party only, `type` the kind of person they are, `on-pair` this time toward that party, `using` using the role as a tool, `toward-role` becoming one (not wanting to be), `except-episode` / `except-pair` that type except this time / with that party, `outside-role` not in that capacity";
+  "`episode` this time only, `role` as their practiced role, `pair` true in one relationship (with the `b-` party), `type` the kind of person they are, `situation` the label belongs to the circumstances, not the person (a `b-` word after it is that situation; no cause is claimed), `using` playing the role for a purpose, `toward-role` becoming one (not wanting to be), `except-episode` / `except-pair` that type except this time / with that party, `outside-role` as themselves, not in that role (never a refusal of the role)";
 
 const SCOPE_READER = `\`-th-\` plus a scope word after a label says how far the label reaches: ${SCOPE_WORDS}.`;
 

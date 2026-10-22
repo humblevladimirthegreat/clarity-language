@@ -257,7 +257,7 @@ export const SCOPE_VOWEL: Record<string, string> = {
   e: "role",
   o: "pair",
   u: "type",
-  ao: "on-pair",
+  ao: "situation",
   ae: "using",
   oe: "toward-role",
   ua: "except-episode",

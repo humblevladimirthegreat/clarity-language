@@ -374,7 +374,7 @@ A label with no scope vowel says nothing about how far it reaches. Use one when 
 |--------|-----|---------|-----|
 | **`tha`** | this episode: this stretch of doing | *angry this time*, *lied (this once)* | **a** ≈ add (one instance added) |
 | **`the`** | a practiced role: the office they inhabit | *a teacher*, *lying as their craft* | **e** ≈ order (a sequence of practice) |
-| **`tho`** | this pair: true in one relationship | *a stranger to Uzozen*, *lying, as far as Olazun is concerned* | **o** ≈ one (that extra one) |
+| **`tho`** | this pair: true in one relationship | *a stranger to Uzozen*, *lying, in dealings with Olazun* | **o** ≈ one (that extra one) |
 | **`thu`** | a type across scenes: the quality follows them | *an anxious type*, *a teacher type* | **u** ≈ undo (not only here) |
 
 Mid-word **`th`** with a scope vowel goes on `/ɡ/`, `/z/`, `/d/`, `/b/`, `/v/`, and `/h/`, on a content root. It labels a content word, so a [special pronoun](pronouns.md#special-pronouns) with **-n** takes none (its root on **-l** is an ordinary word, `zuwothal` *a microphone, this time*). The [sake](sakes.md#sake-inventory) roots use this spot for their own stances instead. A [role compound](roles.md#one-time-or-a-practice) writes the same vowels after **`w`**, not after **`th`**.
@@ -423,7 +423,7 @@ On a verb, **`the`** is that act as their practice, not one outing.
 >
 > z-Uzozen | [v-lie-th-pair | bl-Olazun]
 >
-> "As far as Olazun is concerned, Uzozen is lying."
+> "With Olazun, Uzozen lies." (in that relationship)
 
 With no `/b/`, the party is unstated: *a stranger (to someone)*.
 
@@ -451,31 +451,39 @@ These are the same vowels, written right after **`w`** on a [role compound](role
 
 A role word takes no **`th`** seam after its stem: its scope is written once, at the front. Scope on a plain verb stem (`vuduyethal`) scopes the teaching.
 
+**Compare with:** the **`th`** seam scopes the word itself (the act on a verb, the quality on an adjective, the manner on an adverb), and the verb keeps the rest of its clause: `zuzozen valamuthal bolazun.` is *Uzozen lied to Olazun, this once*. A role compound names the person by their part: `zuzozen gwezalamul.` is *Uzozen is a liar*.
+
 #### Stacked scope {#scope-stacks}
 
-The four scope vowels also combine in pairs, the same pairs that [joins](joins.md) and [hooks](hooks.md) use. A pair that starts with **`u`** sets the second vowel's reach aside (*except this episode*, *except this pair*, *not in that role*). The other pairs have fixed meanings (*on*, *using*, *toward*); do not read them as the first vowel's meaning followed by the second's.
+The four scope vowels also combine in pairs, the same pairs that [joins](joins.md#beginner) and [hooks](hooks.md#extra-noun) use. A pair that starts with **`u`** reads like a join's *everything but*: **`u`** is every scene, and the second vowel is the one set aside (*every time but this one*, *with everyone but Olazun*, *as themselves, not in the role*). The other pairs read like the extra-noun hooks: **`ao`** *over*, **`ae`** *using*, **`oe`** *toward*. Do not read them as the first vowel's meaning followed by the second's.
 
 <!-- cheat-sheet: word-shape-clause -->
 | Agebon | Use | English | Cue |
 |--------|-----|---------|-----|
-| **`thao`** | this episode **on** this pair | *teacher this time, to Olazun* | **ao** ≈ on |
-| **`thae`** | **using** the role as a means | *using teacher (as a tool)* | **ae** ≈ using |
+| **`thao`** | the **situation**, not the person | *angry, but it's the situation*; *a teacher by circumstance* | **ao** ≈ over: the label hangs over the scene |
+| **`thae`** | **using** the role for a purpose | *playing the teacher* | **ae** ≈ using |
 | **`thoe`** | **toward** the role | *becoming a teacher* | **oe** ≈ toward |
-| **`thua`** | type **except** this episode | *a teacher type, except this time* | **ua** ≈ everything but |
-| **`thuo`** | type **except** this pair | *a teacher type, except with Olazun* | **uo** ≈ anything but that one |
-| **`thue`** | **not in that capacity** | *not as a teacher* | **ue** ≈ against / outside |
+| **`thua`** | type, **except** this episode | *a teacher type, except this time* | **ua** ≈ everything but: every time but this one |
+| **`thuo`** | type, **except** this pair | *a teacher type, except with Olazun* | **uo** ≈ anything but: everyone but this one |
+| **`thue`** | as themselves, **not in that role** | *not as a teacher* (off duty) | **ue** ≈ every scene but the role |
 
-> `zuzozen valamuthaol blolazun.`
+> `zolazun gunemuthaol.`
 >
-> z-Uzozen | [v-lie-th-on-pair | bl-Olazun]
+> z-Olazun | g-angry-th-situation
 >
-> "As far as Olazun is concerned, Uzozen lied this once."
+> "Olazun is angry, but it's the situation, not Olazun."
+
+> `zolazun gunemuthaol blerulal.`
+>
+> z-Olazun | [g-angry-th-situation | bl-rain]
+>
+> "Olazun is angry, but it's the rain, not Olazun."
 
 > `zuwon gwaezuduyel.`
 >
 > z-speaker | g-using-agent-teach
 >
-> "I'm using the teacher role as a tool."
+> "I'm playing the teacher." (taking on the role for a purpose)
 
 > `zolazun gwoezuduyel.`
 >
@@ -501,11 +509,11 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > "Uzozen is not a teacher here."
 
-> `zuzozen gwaozuduyel blolazun.`
+> `zuzozen gwaozuduyel.`
 >
-> z-Uzozen | [g-on-pair-agent-teach | bl-Olazun]
+> z-Uzozen | g-situation-agent-teach
 >
-> "Uzozen is a teacher to Olazun this time."
+> "Uzozen is a teacher by circumstance." (the situation made them one)
 
 > `zwuazuduyel varuvel.`
 >
@@ -531,13 +539,13 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > "Olazun is becoming a liar."
 
-> `zuwon valamuthuel.`
+> `zuwon vezuyethuel bawan.`
 >
-> z-speaker | v-lie-th-outside-role
+> z-speaker | v-tell-th-outside-role | b-listener
 >
-> "I am not lying in that capacity."
+> "I'm telling you this as myself, not in my role."
 
-**`thao`** and **`thuo`** take `/b/` the same way **`tho`** does. **`thue`** means speaking off duty or refusing that role, not *fake teacher*. The same pairs on a role compound write the vowels after **`w`**.
+**`thuo`** takes its `bl-` party the same way **`tho`** does. On **`thao`**, a `bl-` word is the situation the label belongs to; it claims no cause, and without one the situation is the scene at hand. **`thue`** sets the role aside: it means off duty, never refusing the role or *fake teacher* (to deny the label, put [`gul`](joins.md#negation-u) after it). The same pairs on a role compound write the vowels after **`w`**.
 
 ### Practice {#intermediate-practice}
 
@@ -610,12 +618,12 @@ z-Ahelan | g-angry-th-episode
 z-Uzozen | [g-pair-agent-teach | bl-Olazun]
 :::
 
-**6.** *As far as Olazun is concerned, Ahelan lied this once.*
+**6.** *Ahelan lied, but it was the situation, not Ahelan.*
 
 ::: details Show answer
-`zahelan valamuthaol blolazun.`
+`zahelan valamuthaol.`
 
-z-Ahelan | [v-lie-th-on-pair | bl-Olazun]
+z-Ahelan | v-lie-th-situation
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}

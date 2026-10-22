@@ -538,7 +538,8 @@ describe("compareMorphGloss", () => {
     expectLine("zolazun ganumuthul", "z-Olazun | g-anxious-th-type");
     expectLine("zolazun gwezuduyel", "z-Olazun | g-role-agent-teach");
     expectLine("zuzozen valamuthol blolazun", "z-Uzozen | [v-lie-th-pair | bl-Olazun]");
-    expectLine("zuzozen valamuthaol blolazun", "z-Uzozen | [v-lie-th-on-pair | bl-Olazun]");
+    expectLine("zuzozen valamuthaol", "z-Uzozen | v-lie-th-situation");
+    expectLine("zolazun gunemuthaol blerulal", "z-Olazun | [g-angry-th-situation | bl-rain]");
     expectLine("zuzozen valamuthual", "z-Uzozen | v-lie-th-except-episode");
     expectLine("zolazun gwaezuduyel", "z-Olazun | g-using-agent-teach");
     expectLine("zolazun gwoezuduyel", "z-Olazun | g-toward-role-agent-teach");

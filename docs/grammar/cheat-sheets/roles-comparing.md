@@ -38,7 +38,7 @@ Write a thing letter (`/z/` `/d/` `/b/`), **`w`**, a scope vowel, a part consona
 | [A kind of tool, place, or time](../roles.md#places-tools-times): a compound with a head root | `darayexuwal` | *a writing tool* | I |
 | [The role you act in](../roles.md#capacity): on `/h/` | `zuzozen vezuyel hwezuduyel.` | *Uzozen speaks as a teacher.* | I |
 
-A role compound has one part consonant, right after its scope vowel. Its stem is always an event: `zwazuwon` is not a word.
+A role compound has one part consonant, right after its scope vowel. Its stem is an event or a state (`zwazunemul` *someone who is angry*); `zwazuwon` is not a word.
 
 ### Content of the event {#content}
 

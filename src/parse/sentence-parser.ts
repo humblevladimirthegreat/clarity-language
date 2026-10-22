@@ -191,7 +191,7 @@ const NP_HEAD = {
   b: { noun: B, standIn: OdoB, standInList: OdoBList, standInLone: OdoBLone, span: WritingSpanB, tag: TagB },
 } as const;
 
-/** A label-scope verb that names a pair hosts the `/b/` right after it (predication.md#scope-relative). */
+/** A label-scope verb that names a pair or a situation hosts the `/b/` right after it (predication.md#scope-relative). */
 function isScopeThoVerb(token: IToken): boolean {
   const family = (token.payload as LexWord | undefined)?.family;
   const v = family?.kind === "x" && family.xFamily === "scope" ? family.stanceVowel : undefined;

@@ -295,14 +295,15 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 | *the one teaching* (this event) | the role compound on **-r**: `zwazuduyer` | [This instance](roles.md#this-instance-r) |
 | *often lies*, *usually walks* | a [restrictor](restrictors.md): `huam`, `war` | [Always](restrictors.md#always-hual) |
 | *angry this time*, *lied this once* | **`tha`** on the root: `gunemuthal` | [This episode](predication.md#scope-occasion) |
-| *a stranger to Olazun*, *lying, as far as Olazun is concerned* | **`tho`** plus `/b/`: `golayothom blolazun` | [This pair](predication.md#scope-relative) |
+| *a stranger to Olazun*, *lying, in dealings with Olazun* | **`tho`** plus `/b/`: `golayothom blolazun` | [This pair](predication.md#scope-relative) |
 | *a lying type*, *an anxious type* | **`thu`** on the root: `zuzozen valamuthul` | [Type across scenes](predication.md#scope-type) |
-| *this once, to Olazun* | **`thao`** plus `/b/`: `valamuthaol blolazun` | [Stacked scope](predication.md#scope-stacks) |
+| *lied to Olazun, this once* | **`tha`** on the verb, recipient as usual: `valamuthal bolazun` | [This episode](predication.md#scope-occasion) |
+| *it's the situation, not them*, *a teacher by circumstance* | **`thao`**: `gunemuthaol`, `gwaozuduyel` | [Stacked scope](predication.md#scope-stacks) |
 | *becoming a teacher* | scope **`oe`**: `gwoezuduyel` | [Scope across scenes](roles.md#scope) |
 | *as a teacher, I …* | role compound on `/h/`: `hwezuduyel` | [The role you act in](roles.md#capacity) |
 | *not as a teacher* (off duty) | scope **`ue`** on `/h/`: `hwuezuduyel` | [The role you act in](roles.md#capacity) |
 | *not as a teacher* (the label) | scope **`ue`**: `gwuezuduyel` | [Scope across scenes](roles.md#scope) |
-| *using teacher (as a tool)* | scope **`ae`**: `gwaezuduyel` | [Scope across scenes](roles.md#scope) |
+| *playing the teacher* (for a purpose) | scope **`ae`**: `gwaezuduyel` | [Scope across scenes](roles.md#scope) |
 | *a lying type, except this time* | **`thua`**: `valamuthual` | [Stacked scope](predication.md#scope-stacks) |
 | *angry as a type, except with Olazun* | **`thuo`** plus `/b/`: `gunemuthuol blolazun` | [Stacked scope](predication.md#scope-stacks) |
 | *seen*, *the one seen* | the undergoer **`d`**: `zwadawebol`, `zwadawebor` | [The undergoer](roles.md#the-undergoer-d) |

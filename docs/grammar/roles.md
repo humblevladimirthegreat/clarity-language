@@ -127,7 +127,7 @@ Some stems name a **relation** (who is bound to whom), not an action. The other 
 
 A role compound fills `/z/`, `/d/`, `/b/`, or `/ɡ/`. Under `/y/` with **-n** or **-r** it calls someone (`ywezobebun` calls the doctor).
 
-Its stem is always an event. A [special pronoun](pronouns.md#special-pronouns) such as `uwon` (*the speaker*) names a person, not an event, so `zwazuwon` is not a word. The same root on **-l** is an ordinary content word with a verb sense (*perform*), so it can be a stem: `zwazuwol` is *someone who performs*.
+Its stem is an event or a state: `zwazunemul` is *someone who is angry*. A [special pronoun](pronouns.md#special-pronouns) such as `uwon` (*the speaker*) names a person, not an event, so `zwazuwon` is not a word. The same root on **-l** is an ordinary content word with a verb sense (*perform*), so it can be a stem: `zwazuwol` is *someone who performs*.
 
 With **-l**, **-m**, or **-n**, the word is **any** such participant: someone who does it, something it acts on or makes, someone told. **-r** looks back to the latest verb, event noun, or relation with that whole stem (including a stem already inside a role compound) and names **this instance**. The part consonant still picks which part you mean: doer, undergoer, or extra `/b/` party.
 
@@ -361,7 +361,7 @@ The scope slot after **`w`** takes every [label scope](predication.md#label-scop
 | **`e`** | practiced role | `zwezuduyel` | *a teacher* |
 | **`o`** | this pair: toward one party, named in a `bl-` word on `/ɡ/` | `gwozuduyel blolazun` | *is a teacher to Olazun* |
 | **`u`** | a type across scenes | `zwuzuduyel` | *a teacher type* |
-| pairs | the scope stacks: **`ao`**, **`ae`**, **`oe`**, **`ua`**, **`uo`**, **`ue`** | `gwuezuduyel` | *not in that capacity* |
+| pairs | the scope stacks: **`ao`**, **`ae`**, **`oe`**, **`ua`**, **`uo`**, **`ue`** | `gwuezuduyel`, `gwaozuduyel` | *not in that capacity*, *a teacher by circumstance* |
 
 > `zuzozen gwozuduyel blolazun.`
 >

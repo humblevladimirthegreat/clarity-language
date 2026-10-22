@@ -164,16 +164,16 @@ Root, mid-word `th`, a scope vowel, then the ending. It goes on `/ɡ/`, `/z/`, `
 | [`tho`](../predication.md#scope-relative) | this pair (`/b/` follows) | `zuzozen golayothom blolazun.` | *Uzozen is a stranger to Olazun.* | I |
 | [`thu`](../predication.md#scope-type) | a type across scenes | `zolazun ganumuthul.` | *Olazun is an anxious type.* | I |
 
-[Stacked scope](../predication.md#scope-stacks): pairs that start with **u** set the second vowel's reach aside.
+[Stacked scope](../predication.md#scope-stacks): pairs that start with **u** read like *everything but* (every scene, the second vowel set aside); the others read like hooks (*over*, *using*, *toward*).
 
 | Vowel | Reach | English | Stage |
 |-------|-------|---------|-------|
-| `thao` | this episode, on this pair | *teacher this time, to Olazun* | I |
-| `thae` | using the role as a means | *using teacher (as a tool)* | I |
+| `thao` | the situation, not the person (*over*) | *angry, but it's the situation* | I |
+| `thae` | using the role for a purpose | *playing the teacher* | I |
 | `thoe` | toward the role | *becoming a teacher* | I |
 | `thua` | type, except this episode | *a teacher type, except this time* | I |
 | `thuo` | type, except this pair | *a teacher type, except with Olazun* | I |
-| `thue` | not in that capacity | *not as a teacher* | I |
+| `thue` | as themselves, not in that role | *not as a teacher* (off duty) | I |
 
 ## Don't mix up {#dont-mix-up}
 
