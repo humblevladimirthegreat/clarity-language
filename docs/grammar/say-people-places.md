@@ -265,7 +265,7 @@ English names a person by what they usually do (*a singer*, *a manager*). Agebon
 | `zwabehal` | *customer* / *purchaser* (the other party of a trade) | `ehal` *currency-exchange* |
 | `zwabobulem` | *host* (the other party of a hospitality tie) | `obulem` *hospitality* |
 
-Rows without **`the`** name a part in one event (*winner*, *witness*, *passenger*), so the bare word is enough. The one acted on uses **`u`** instead: `zwadenamul` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zwazebalx`).
+Rows with scope **`a`** name a part in one event (*winner*, *witness*, *passenger*), so that vowel is enough. The one acted on uses part **`d`**: `zwadenamul` is *a victim* (the one harmed). A plural audience or staff takes plural **-x** (`zwazebalx`).
 
 A noun that specifies the job goes in the stem: `zwezudozoxowurel` is *a dog walker*. The noun's part in the job is as open as in English.
 

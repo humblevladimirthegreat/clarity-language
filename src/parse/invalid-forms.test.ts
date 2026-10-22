@@ -134,7 +134,7 @@ const ROWS: Row[] = [
   { invalid: "zuzozen vowurel tharl zolazun vuhohol.", rejection: "standInRole", valid: "zuzozen vowurel thahum blarl zolazun vuhohol." },
   { invalid: "zolazun velurul godamul.", rejection: "predicateAfterVerb", valid: "zolazun godamul. zalamur velurul." },
   { invalid: "vwazuduyel.", rejection: "roleCompoundSlot", valid: "zwazuduyel vowurel." },
-  { invalid: "zolazun vowurel hwazuduyel.", rejection: "roleCompoundSlot", valid: "zolazun vowurel hewom blwazuduyel." },
+  { invalid: "zolazun vowurel hwezuduyel.", rejection: "roleCompoundSlot", valid: "zolazun vowurel hewom blwezuduyel." },
   { invalid: "ywazuduyel.", rejection: "roleCompoundSlot", valid: "ywazuduyen." },
   { invalid: "zwazuwon vowurel.", rejection: "roleCompoundStem", valid: "zwazuwol vowurel." },
   { invalid: "zolazun zuwothan.", rejection: "labelScopeStem", valid: "zuwothal vowurel." },

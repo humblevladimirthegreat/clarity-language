@@ -703,8 +703,8 @@ describe("parse — comparatives.md bars", () => {
   });
 
   it("reads an adjective after a bar's hosted /b/ as describing that noun, inside the fence", () => {
-    const bar = barOf("zuzozen thubem blwazeluyelx guzemol zel gezuyol.");
-    assert.equal(bar?.hosted?.bound.raw, "blwazeluyelx");
+    const bar = barOf("zuzozen thubem blwezeluyelx guzemol zel gezuyol.");
+    assert.equal(bar?.hosted?.bound.raw, "blwezeluyelx");
     assert.deepEqual(bar?.hosted?.adjs?.map((a) => a.word.raw), ["guzemol"]);
     // On the clause too, an adjective after a `/th/` host's `/b/` describes that noun (clause.md#complex-chaining).
     const units = parseText("zuzozen thebam blolazun guzemol vowurel.").utterances[0]!.bodies[0]!.clause.units;

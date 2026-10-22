@@ -726,9 +726,9 @@ The bar's `/b/` works as it does on the clause. On REPORTED it is the source, an
 >
 > "The book is less clear than Olazun said."
 
-> `zuzozen thubem blwazeluyelx zel gezuyol.`
+> `zuzozen thubem blwezeluyelx zel gezuyol.`
 >
-> [z-Uzozen | [th-PATTERN | bl-episode-agent-learn-x] | z-rank/more | g-sing]
+> [z-Uzozen | [th-PATTERN | bl-role-agent-learn-x] | z-rank/more | g-sing]
 >
 > "Uzozen sings well for a learner."
 
@@ -736,9 +736,9 @@ On a rank join, an event root on `/ɡ/` is the scale itself: how well the act go
 
 An adjective after that `/b/` describes it, as after any [host](clause.md#complex-chaining), so it narrows the population.
 
-> `zuzozen thubem blwazeluyelx guzemol zel gezuyol.`
+> `zuzozen thubem blwezeluyelx guzemol zel gezuyol.`
 >
-> [z-Uzozen | [th-PATTERN | [bl-episode-agent-learn-x | g-sleepy]] | z-rank/more | g-sing]
+> [z-Uzozen | [th-PATTERN | [bl-role-agent-learn-x | g-sleepy]] | z-rank/more | g-sing]
 >
 > "Uzozen sings well for a sleepy learner."
 
