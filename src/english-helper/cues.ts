@@ -117,7 +117,8 @@ export type CueMatch = { start: number; end: number; key: string; jobs: GrammarJ
 
 /**
  * Cue runs in a clause, longest first, without overlap. `normals` are the words as written;
- * `lemmas` let a one-word cue match an inflected form (*dogs* → *dog*).
+ * `lemmas` let a one-word cue match an inflected form (*dogs* → *dog*). A word that is a cue of
+ * its own and inflects one (*becoming*, *become*) gets both cues' jobs, its own first.
  */
 export function matchCues(index: CueIndex, normals: readonly string[], lemmas: readonly string[]): CueMatch[] {
   const taken = new Array<boolean>(normals.length).fill(false);
@@ -125,10 +126,10 @@ export function matchCues(index: CueIndex, normals: readonly string[], lemmas: r
   for (let len = Math.min(MAX_CUE_WORDS, normals.length); len >= 1; len--) {
     for (let i = 0; i + len <= normals.length; i++) {
       if (taken.slice(i, i + len).some(Boolean)) continue;
-      const keys = [normals.slice(i, i + len).join(" "), ...(len === 1 ? [lemmas[i]!] : [])];
-      const key = keys.find((k) => index.has(k));
+      const keys = [...new Set([normals.slice(i, i + len).join(" "), ...(len === 1 ? [lemmas[i]!] : [])])].filter((k) => index.has(k));
+      const key = keys[0];
       if (!key) continue;
-      out.push({ start: i, end: i + len, key, jobs: index.get(key)! });
+      out.push({ start: i, end: i + len, key, jobs: keys.flatMap((k) => index.get(k)!) });
       for (let j = i; j < i + len; j++) taken[j] = true;
     }
   }

@@ -294,18 +294,22 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 | *a teacher*, *a fighter*, *a dog walker* (a usual role or job) | the role compound with scope **`e`**: `zwezuduyel` | [One time or a practice](roles.md#one-time-or-a-practice) |
 | *the one teaching* (this event) | the role compound on **-r**: `zwazuduyer` | [This instance](roles.md#this-instance-r) |
 | *often lies*, *usually walks* | a [restrictor](restrictors.md): `huam`, `war` | [Always](restrictors.md#always-hual) |
-| *angry this time*, *lied this once* | **`tha`** on the root: `gunemuthal` | [This episode](predication.md#scope-occasion) |
-| *a stranger to Olazun*, *lying, in dealings with Olazun* | **`tho`** plus `/b/`: `golayothom blolazun` | [This pair](predication.md#scope-relative) |
-| *a lying type*, *an anxious type* | **`thu`** on the root: `zuzozen valamuthul` | [Type across scenes](predication.md#scope-type) |
+| *this time*, *this once* (angry this time, lied this once) | **`tha`** on the root: `gunemuthal`, `valamuthal` | [This episode](predication.md#scope-occasion) |
+| *as their craft*, *as a practice* | **`the`** on the root: `valamuthel` | [Practiced role](predication.md#scope-occupation) |
+| *in dealings with*, *a stranger to Olazun* | **`tho`** plus `/b/`: `golayothom blolazun` | [This pair](predication.md#scope-relative) |
+| *type*, *kind of person* (a lying type, an anxious type) | **`thu`** on the root: `zuzozen valamuthul` | [Type across scenes](predication.md#scope-type) |
 | *lied to Olazun, this once* | **`tha`** on the verb, recipient as usual: `valamuthal bolazun` | [This episode](predication.md#scope-occasion) |
-| *it's the situation, not them*, *a teacher by circumstance* | **`thao`**: `gunemuthaol`, `gwaozuduyel` | [Stacked scope](predication.md#scope-stacks) |
+| *it's the situation*, *it was the situation*, *by circumstance* | **`thao`**: `gunemuthaol`, `gwaozuduyel` | [Stacked scope](predication.md#scope-stacks) |
 | *becoming a teacher* | scope **`oe`**: `gwoezuduyel` | [Scope across scenes](roles.md#scope) |
+| *becoming* (becoming a liar) | **`thoe`** on the root: `valamuthoel` | [Stacked scope](predication.md#scope-stacks) |
 | *as a teacher, I …* | role compound on `/h/`: `hwezuduyel` | [The role you act in](roles.md#capacity) |
 | *not as a teacher* (off duty) | scope **`ue`** on `/h/`: `hwuezuduyel` | [The role you act in](roles.md#capacity) |
 | *not as a teacher* (the label) | scope **`ue`**: `gwuezuduyel` | [Scope across scenes](roles.md#scope) |
 | *playing the teacher* (for a purpose) | scope **`ae`**: `gwaezuduyel` | [Scope across scenes](roles.md#scope) |
-| *a lying type, except this time* | **`thua`**: `valamuthual` | [Stacked scope](predication.md#scope-stacks) |
-| *angry as a type, except with Olazun* | **`thuo`** plus `/b/`: `gunemuthuol blolazun` | [Stacked scope](predication.md#scope-stacks) |
+| *as a tool*, *for a purpose* (using lying as a tool) | **`thae`** on the root: `valamuthael` | [Stacked scope](predication.md#scope-stacks) |
+| *as myself*, *not in my role*, *off duty* | **`thue`** on the verb: `vezuyethuel` | [Stacked scope](predication.md#scope-stacks) |
+| *except this time*, *except this once* | **`thua`**: `valamuthual` | [Stacked scope](predication.md#scope-stacks) |
+| *except with* (angry as a type, except with Olazun) | **`thuo`** plus `/b/`: `gunemuthuol blolazun` | [Stacked scope](predication.md#scope-stacks) |
 | *seen*, *the one seen* | the undergoer **`d`**: `zwadawebol`, `zwadawebor` | [The undergoer](roles.md#the-undergoer-d) |
 | *visible* / *invisible* (*can be seen*) | the undergoer with ability: `zudozol gwadaweboxal` | [Can be](intention.md#role-ability) |
 | *walked* (past) | no participle: pick how you know | [Tense](say-tense.md#tense-jobs) |

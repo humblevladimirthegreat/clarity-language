@@ -1,31 +1,31 @@
 {
   "sets": {
     "doc": {
-      "sentences": 1159,
-      "selfContained": 58.4,
-      "wordInPrompt": 79.4,
-      "rootTop1": 75.1,
-      "rootAnywhere": 91.1,
-      "constructionPage": 52.8,
-      "gapRate": 3.6,
-      "promptChars": 14116
+      "sentences": 1205,
+      "selfContained": 58.7,
+      "wordInPrompt": 79.5,
+      "rootTop1": 75.3,
+      "rootAnywhere": 91.3,
+      "constructionPage": 53.4,
+      "gapRate": 3.3,
+      "promptChars": 14262
     },
     "checkpoint": {
-      "sentences": 312,
-      "selfContained": 64.7,
-      "wordInPrompt": 79,
-      "rootTop1": 84.9,
-      "rootAnywhere": 94,
-      "constructionPage": 55.2,
-      "gapRate": 3.5,
-      "promptChars": 13800,
-      "verifyPrecision": 89.4,
-      "verifyRecall": 99.5
+      "sentences": 314,
+      "selfContained": 65.3,
+      "wordInPrompt": 79.2,
+      "rootTop1": 85.7,
+      "rootAnywhere": 94.8,
+      "constructionPage": 55.1,
+      "gapRate": 3.1,
+      "promptChars": 13941,
+      "verifyPrecision": 90.5,
+      "verifyRecall": 99.2
     },
     "wild": {
       "sentences": 221,
-      "gapRate": 5.2,
-      "promptChars": 14366
+      "gapRate": 5.1,
+      "promptChars": 14704
     }
   }
 }

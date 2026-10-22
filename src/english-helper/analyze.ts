@@ -53,6 +53,8 @@ export type RootSuggestion = LexiconSuggestion & {
   fromParts?: { left: string; head: string };
   /** Aliases: the word on each side of the row (`gebevol` *pray*, `gebevom` *gratitude*), since a search word fits either. */
   sideWords?: { side: "concrete" | "abstract"; sense: string; word: string }[];
+  /** Found through the verb under an *-ing* noun or adjective (*lying* → *lie*). */
+  ingOf?: string;
 };
 /** A doc example from the section a suggestion links, so the prompt shows the job in a sentence. */
 export type SectionExample = { form: string; english: string; link: string };
@@ -230,6 +232,7 @@ function asRootSuggestion(data: HelperData, s: LexiconSuggestion, role: string |
 function rootSuggestions(data: HelperData, t: TaggedTerm, role: string | undefined): RootSuggestion[] {
   const name = t.proper ? nameRoot(data, t) : undefined;
   const hits = name ? [name] : lookupLexicon(data.lexicon, [...new Set([t.lemma, t.normal])]);
+  if (!hits.length && t.verb) return lookupLexicon(data.lexicon, [t.verb]).map((s) => ({ ...asRootSuggestion(data, s, role), ingOf: t.verb! }));
   return hits.map((s) => asRootSuggestion(data, s, role, !!name));
 }
 
@@ -533,6 +536,63 @@ function spellHookPhrases(slots: readonly Slot[]): void {
   });
 }
 
+/** A label-scope seam as a row's form names it (`tha`, `thao`; predication.md#label-scope). */
+const SCOPE_SEAM = /^th(ao|ae|oe|ua|uo|ue|a|e|o|u)$/;
+const SCOPE_SECTION = /^predication\.md#scope-/;
+
+/** The seam a label-scope job or entry names, if it is one. */
+export function scopeSeam(s: Suggestion): string | undefined {
+  if ((s.kind !== "job" && s.kind !== "entry") || !SCOPE_SECTION.test(s.link)) return undefined;
+  return s.form
+    .split(" / ")
+    .map((p) => p.trim())
+    .find((p) => SCOPE_SEAM.test(p));
+}
+
+/**
+ * The slot's word with `seam` before its ending: a root's word (`gunemul` → `gunemuthal`), or the
+ * act on `/v/` for an *-ing* noun (*a lying type*) and a doer noun (*becoming a liar*), when the
+ * word parser accepts it.
+ */
+function scopedWord(data: HelperData, slot: Slot, seam: string): string | undefined {
+  for (const s of slot.suggestions) {
+    const word =
+      s.kind === "lexicon" && !s.name && s.word
+        ? s.ingOf
+          ? `v${s.form}${s.word.slice(-1)}`
+          : s.word
+        : s.kind === "role"
+          ? `v${s.root}${s.form.slice(-1)}`
+          : undefined;
+    if (!word) continue;
+    const scoped = `${word.slice(0, -1)}${seam}${word.slice(-1)}`;
+    if (!data.wordParses || data.wordParses(scoped)) return scoped;
+  }
+  return undefined;
+}
+
+/**
+ * Spell each label-scope job on the content word it scopes: the nearest one before the cue in
+ * the sentence (*lied this once*, *angry, but it's the situation*), else the nearest after
+ * (*becoming a liar*). `slots` are the whole sentence's, so a cue in a later clause reaches back.
+ */
+function spellScopes(data: HelperData, slots: readonly Slot[]): void {
+  slots.forEach((slot, n) => {
+    for (const s of slot.suggestions) {
+      const seam = scopeSeam(s);
+      if (!seam || (s.kind !== "job" && s.kind !== "entry")) continue;
+      const order = [...slots.slice(0, n).reverse(), ...slots.slice(n + 1)].filter((o) => !o.skipped && CONTENT.has(o.cls));
+      for (const other of order) {
+        const word = scopedWord(data, other, seam);
+        if (word) {
+          s.phrase = word;
+          break;
+        }
+      }
+    }
+  });
+}
+
 function readingOf(t: TaggedTerm): string | undefined {
   if (t.forced) return `forced: ${t.cls} *${t.lemma}*`;
   if (CONTENT.has(t.cls) && t.lemma !== t.normal) return `read as ${t.cls} *${t.lemma}*`;
@@ -545,6 +605,7 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
   const gaps: Gap[] = [];
   for (const sentence of tagEnglish(text)) {
     const outer: TaggedTerm[] = [];
+    const sentenceStart = clauses.length;
     for (const clause of sentence.clauses) {
       const terms = clause.terms;
       const roleOf = (k: number) => classRole(terms, k, outer);
@@ -649,6 +710,7 @@ export function analyzeEnglish(data: HelperData, text: string, options: AnalyzeO
       clauses.push({ text: clause.text, features: clause.features, detectors, slots });
       outer.push(...terms);
     }
+    spellScopes(data, clauses.slice(sentenceStart).flatMap((c) => c.slots));
   }
   return { clauses, gaps };
 }

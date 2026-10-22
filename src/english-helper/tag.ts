@@ -57,6 +57,8 @@ export type TaggedTerm = {
   tense?: "past" | "present";
   /** Verbs and adjectives used as nouns: `-ing`, `-ed` participle, or `-er` doer shape. */
   shape?: "ing" | "ed" | "er";
+  /** An *-ing* noun or adjective: the verb under it (*lying* → *lie*), when that is a known verb. */
+  verb?: string;
   /** Numbers: what this word alone counts (*three*, *3* → 3; *third* → 3 with `ordinal`). */
   value?: number;
   ordinal?: boolean;
@@ -92,11 +94,22 @@ function isVerb(word: string): boolean {
   return model.one.lexicon[word] === "Infinitive" || (model.two.switches[word] ?? "").includes("Verb");
 }
 
+/** Doer nouns with no *-er* / *-or* under them. */
+const IRREGULAR_DOERS: Readonly<Record<string, string>> = { liar: "lie", beggar: "beg" };
+
+/** *lying* → *lie*, *walking* → *walk*; undefined when no known verb is under the *-ing*. */
+function ingVerb(word: string): string | undefined {
+  if (!/..ing$/.test(word)) return undefined;
+  const verb = taggedAs(word, "Verb").verbs().toInfinitive().text().toLowerCase();
+  return verb && verb !== word && isVerb(verb) ? verb : undefined;
+}
+
 /**
  * *teacher* → *teach*, *writer* → *write*, *runner* → *run*, *actor* → *act*; undefined when
  * no verb is under the *-er* / *-or*.
  */
 export function doerVerb(noun: string): string | undefined {
+  if (IRREGULAR_DOERS[noun]) return IRREGULAR_DOERS[noun];
   if (!/[^aeiou](er|or)$/.test(noun) || noun.length < 5) return undefined;
   const base = noun.slice(0, -2);
   const candidates = [base, `${base}e`, ...(/(.)\1$/.test(base) ? [base.slice(0, -1)] : [])];
@@ -157,6 +170,8 @@ function toTerm(t: JsonTerm, input: string, initial: boolean): TaggedTerm {
   else if (t.tags.includes("PresentTense")) term.tense = "present";
   const shape = shapeOf(t, cls);
   if (shape) term.shape = shape;
+  const verb = cls === "noun" || cls === "adjective" ? ingVerb(normal) : undefined;
+  if (verb) term.verb = verb;
   if (cls === "number") {
     const value = (nlp(t.text).numbers().get() as unknown[])[0];
     if (typeof value === "number") term.value = value;

@@ -64,3 +64,11 @@ Is there something for me?	something for me	link:hooks.md#hooked-joins-endings	*
 The guard is against everyone at the school.	at	has:hooked-join	*everyone at* the school bounds who counts
 Uzozen sleeps at the house.	at	not:hooks.md#hooked-joins	a hook after a verb places the act
 You have never listened since the storm.	since	has:hooked-join-time	*never … since* bounds the times
+# Label scope: the seam spelled on the word it scopes
+Uzozen lied this once.	this once	scope:tha:lie	the cue run leaves *lied* its own slot
+Uzozen lied this once.	lied	sense:lie	*lied* is not swallowed by the cue
+Olazun is an anxious type.	type	scope:thu:anxious	the scope goes on the word before the cue
+Olazun is angry, but it is the situation, not Olazun.	it is the situation	scope:thao:angry	a cue in a later clause reaches back
+Uzozen is a lying type, except this time.	except this time	scope:thua:lie	an *-ing* noun scopes its verb
+Olazun is becoming a liar.	becoming	scope:thoe:lie	no word before: the doer noun after, as its verb
+Olazun is becoming a liar.	becoming	link:say-reasons.md#mind-verbs	*becoming* keeps the *become* row
