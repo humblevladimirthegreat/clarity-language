@@ -264,6 +264,11 @@ const SCOPE_VOWEL: Record<string, string> = {
   ue: "outside-role",
 };
 
+/** Say word parts, answers, and endings (sakes.md#say-words). */
+export const SAY_PART: Record<string, string> = { z: "agent", d: "patient", b: "recipient", v: "event" };
+export const SAY_ANSWER: Record<string, string> = { a: "ALLOW", u: "FORBID", e: "REQUIRE", o: "CHOICE" };
+export const SAY_ENDING: Record<string, string> = { l: "rule", m: "said", r: "tacit" };
+
 const SAKE_STANCE: Record<string, string> = {
   a: "met",
   e: "ought",
@@ -989,6 +994,10 @@ function sensePieces(
   if (family.kind === "tag") {
     const name = `tag.${family.vowels.map((vowel) => vowel.toUpperCase()).join("+")}`;
     return [word.ending === "l" ? name : `←${name}${word.ending === "m" ? ".part" : word.ending === "n" ? ".name" : ""}`];
+  }
+  // A say word: scope, whose say, the answer, and how it stands (`h-episode-patient-ALLOW-said`; glosses.md § Say words).
+  if (family.kind === "say") {
+    return [[SCOPE_VOWEL[family.scope] ?? "scope", SAY_PART[family.part], SAY_ANSWER[family.answer], SAY_ENDING[word.ending ?? ""] ?? "say"].join("-")];
   }
   const resume =
     (word.ending === "r" || (family.kind === "x" && family.xFamily === "pointer")) &&

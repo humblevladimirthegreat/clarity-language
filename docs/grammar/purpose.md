@@ -211,7 +211,7 @@ Wanting, needing, and being obliged blur into a bare *should*, and a plan or a p
 
 English *must*, *have to*, and *is supposed to* sound equally binding, whether a law requires something, a person demands it, or people only expect it. *May* hides the same split for permission.
 
-A [requirement](sakes.md#requirement) word says where a *must* comes from: a rule, a person who demands it, or only an unwritten expectation that nobody actually demands. A [permission](sakes.md#permission) word does the same for *may*: a rule allows it, someone said yes, or nobody objected.
+A [say word](sakes.md#say-words) says where a *must* comes from: a rule, a person who demands it, only an unwritten expectation that nobody actually demands, or you yourself. It does the same for *may*: a rule allows it, someone said yes, or nobody objected.
 
 Naming the source helps you notice when a *have to* is only an expectation, so you can decide whether to meet it.
 
@@ -269,7 +269,7 @@ An act that touches someone else's body, things, or time can go ahead on a yes n
 
 English *she's fine with it* does not say whether she signed on, said yes and can take it back, or was never asked.
 
-[Consent](sakes.md#consent) names the person the act happens to and says how binding their yes is: a binding agreement made in advance, a yes they can take back at any time, or a yes you are only assuming because nobody objected.
+A [say word](sakes.md#say-words) names whose yes it is (the one the act happens to, the one it is told or given to, or the doer) and says how binding it is: a binding agreement made in advance, a yes they can take back at any time, or a yes you are only assuming because nobody objected.
 
 Marking an assumed yes as an assumption helps you check before acting, and marking a spoken yes as revocable keeps it theirs to withdraw.
 

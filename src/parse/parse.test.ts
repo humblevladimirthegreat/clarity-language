@@ -669,7 +669,7 @@ describe("parse — comparatives.md bars", () => {
       ["zududal thudatham zoel gral.", "thudatham"],
       ["zanal thugom zuem garolom.", "thugom"],
       ["zolazun hodaxal zoel hedurem vowurel.", "hodaxal"],
-      ["zahehal thonal zoel gobobom.", "thonal"],
+      ["zahehal hwavel zoel gobobom.", "hwavel"],
       ["zanal thoguyem zel gagebom.", "thoguyem"],
       ["zuzozen thabomolazun zel guzemol.", "thabomolazun"],
     ] as const) {
@@ -800,8 +800,6 @@ describe("parse — contrary to a stance (uem + /th/)", () => {
 
   it("holds the stance as the hook's frame, not a stance on the claim", () => {
     for (const text of [
-      "zuzozen vowurel uem thegul.",
-      "zuzozen vowurel uem thonal.",
       "zuzozen vowurel uem thagem.",
       "zuzozen vowurel uem thogom.",
       "zuzozen vowurel uem thalem.",
@@ -812,6 +810,12 @@ describe("parse — contrary to a stance (uem + /th/)", () => {
       const { hook, units } = frameOf(text);
       assert.equal(hook.job, "frame", text);
       assert.equal(hook.frame?.word.pos, "th", text);
+      assert.ok(!units.some((unit) => unit.kind === "h"), text);
+    }
+    for (const text of ["zuzozen vowurel uem hwavul.", "zuzozen vowurel uem hwavel."]) {
+      const { hook, units } = frameOf(text);
+      assert.equal(hook.job, "frame", text);
+      assert.equal(hook.frame?.word.family.kind, "say", text);
       assert.ok(!units.some((unit) => unit.kind === "h"), text);
     }
   });
@@ -826,23 +830,23 @@ describe("parse — contrary to a stance (uem + /th/)", () => {
   });
 
   it("keeps the stance's hosted /b/ inside the frame", () => {
-    const { hook } = frameOf("zuzozen vezuyel uem huxegum blolazun.");
-    assert.equal(hook.frame?.word.raw, "huxegum");
+    const { hook } = frameOf("zuzozen vezuyel uem hwavem blolazun.");
+    assert.equal(hook.frame?.word.raw, "hwavem");
     assert.equal(hook.frame?.hosted?.bound.raw, "blolazun");
   });
 
   it("takes the frame at the left edge too", () => {
-    const result = parseText("uem thegul zuzozen vowurel.");
+    const result = parseText("uem hwavul zuzozen vowurel.");
     assert.equal(result.utterances[0]!.left.hook, undefined);
-    const { hook } = frameOf("uem thegul zuzozen vowurel.");
-    assert.equal(hook.frame?.word.raw, "thegul");
+    const { hook } = frameOf("uem hwavul zuzozen vowurel.");
+    assert.equal(hook.frame?.word.raw, "hwavul");
   });
 
   it("leaves a stance elsewhere in the clause on the claim", () => {
-    const { hook, units } = frameOf("zuzozen vowurel uem thegul tholem.");
-    assert.equal(hook.frame?.word.raw, "thegul");
+    const { hook, units } = frameOf("zuzozen vowurel uem hwavul hwavam.");
+    assert.equal(hook.frame?.word.raw, "hwavul");
     const claim = units.filter((unit) => unit.kind === "h");
-    assert.deepEqual(claim.map((unit) => unit.kind === "h" && unit.unit.word.raw), ["tholem"]);
+    assert.deepEqual(claim.map((unit) => unit.kind === "h" && unit.unit.word.raw), ["hwavam"]);
   });
 
   it("keeps uem + /b/ as an extra noun", () => {

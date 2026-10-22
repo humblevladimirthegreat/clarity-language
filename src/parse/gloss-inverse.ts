@@ -69,6 +69,7 @@ export function buildGlossIndex(tables: ClassifyTables, extraLines: string[] = [
   const index: GlossIndex = { forms: new Map(), roots: new Map() };
   for (const root of new Set<string>([...tables.published.keys(), ...tables.compounds.keys()])) indexRootForms(index, root, tables);
   indexSeriesForms(index, tables);
+  indexSayForms(index, tables);
   indexLineForms(index, extraLines, tables);
   return index;
 }
@@ -77,6 +78,7 @@ export function buildGlossIndex(tables: ClassifyTables, extraLines: string[] = [
 export function seriesGlossIndex(tables: ClassifyTables): GlossIndex {
   const index: GlossIndex = { forms: new Map(), roots: new Map() };
   indexSeriesForms(index, tables);
+  indexSayForms(index, tables);
   return index;
 }
 
@@ -87,6 +89,21 @@ function indexSeriesForms(index: GlossIndex, tables: ClassifyTables): void {
         const surface = `${prefix}${series}${ending}`;
         for (const ctx of CONTEXTS) {
           const gloss = glossOne(surface, tables, ctx);
+          if (gloss) add(index.forms, gloss, surface);
+        }
+      }
+    }
+  }
+}
+
+/** Say words (sakes.md#say-words): every scope × whose say × answer × ending on `/h/`. */
+function indexSayForms(index: GlossIndex, tables: ClassifyTables): void {
+  for (const scope of ["a", "e", "o", "u", "ao", "ae", "oe", "ua", "uo", "ue"]) {
+    for (const part of ["z", "d", "b", "v"]) {
+      for (const answer of ["a", "e", "o", "u"]) {
+        for (const ending of ["l", "m", "r"]) {
+          const surface = `hw${scope}${part}${answer}${ending}`;
+          const gloss = glossOne(surface, tables, {});
           if (gloss) add(index.forms, gloss, surface);
         }
       }

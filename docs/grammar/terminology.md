@@ -17,19 +17,20 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **ABIL** | Hostless *can* / *can’t* (no single verb) | `hodaxel` | [Intention](intention.md#ability-fallback) |
 | **AIMED** | Emotion locus: aimed at a target | `wawothumol` | [Sakes](sakes.md#emotion-compose) |
 | **ASIDE** | An aside span | `th(hogowul)` | [Spans](spans.md#asides) |
+| **ALLOW** | Say word answer: yes, allow (*may*, *they agreed*) | `hwavam` | [Sakes](sakes.md#say-words) |
 | **ATTEMPT** | Try mood: committed / unstated / trial run | `howam` | [Intention](intention.md#try) |
 | **AWAY** | Emotion locus: moving off from a target | `wawothumum` | [Sakes](sakes.md#emotion-compose) |
 | **CAUSE** | Mechanism-framing mood (*make X do*) | `thewem` | [Causation](causation.md#cause) |
 | **CIRCUM** | Emotion locus: the atmosphere of the situation | `wuwathuraor` | [Sakes](sakes.md#emotion-compose) |
 | **CITE** | A cite span: quoted wording | `d[uzozen]` | [Spans](spans.md#writing) |
 | **CLUES** | Evidential: reasoned from clues about this case | `theyem` | [Knowing](knowing.md#evidentiality) |
+| **CHOICE** | Say word answer: their call | `hwavom` | [Sakes](sakes.md#say-words) |
 | **COLLAPSE** | Emotion locus: out of fight, giving up | `wawothumual` | [Sakes](sakes.md#emotion-compose) |
-| **CONSENT** | Consent of the affected party | `huxolem` | [Sakes](sakes.md#consent) |
 | **DECISION** | Pick-firmness mood | `thogom` | [Intention](intention.md#decision) |
 | **DEDUCED** | Evidential: must hold if the premises hold | `thanam` | [Knowing](knowing.md#deduction) |
 | **FAWN** | Emotion locus: placating a target | `wawothumaem` | [Sakes](sakes.md#emotion-compose) |
 | **FLOWING** | Emotion motion: steady, a current you can ride | `wawothumem` | [Sakes](sakes.md#emotion-compose) |
-| **FORBID** | Permission, negative | `thegul` | [Sakes](sakes.md#permission) |
+| **FORBID** | Say word answer: no, forbid | `hwavul` | [Sakes](sakes.md#say-words) |
 | **FORMER** | Episode standing: not the climate claimed now | `helam` | [Knowing](knowing.md#residue) |
 | **INTERNAL** | Emotion locus: mine, held inside | `guwathamar` | [Sakes](sakes.md#emotion-compose) |
 | **INTUITION** | Evidential: gut sense you cannot fully spell out | `thabom` | [Knowing](knowing.md#evidentiality) |
@@ -43,10 +44,9 @@ SMALLCAPS labels as morph lines print them: psychological moods, evidentials, em
 | **ON-BEHALF** | Emotion locus: felt for someone's sake | `wawothumem` | [Sakes](sakes.md#emotion-compose) |
 | **OPAQUE** | An opaque span: foreign or raw writing | <code>d&lt;kimchi&gt;</code> | [Spans](spans.md#loans) |
 | **PATTERN** | Evidential: from regularity | `thubem` | [Knowing](knowing.md#evidentiality) |
-| **PERMIT** | Permission, positive | `tholel` | [Sakes](sakes.md#permission) |
 | **PLAN** | Intention-framing mood | `thagem` | [Intention](intention.md#plan-predict) |
 | **REPORTED** | Evidential: said or written by someone else | `thebam` | [Knowing](knowing.md#evidentiality) |
-| **REQUIRE** | Requirement (*must*) without a sake | `thonal` | [Sakes](sakes.md#requirement) |
+| **REQUIRE** | Say word answer: require, ask for (*must*) | `hwavel` | [Sakes](sakes.md#say-words) |
 | **RESIDUE** | Episode standing: outcome still on the current tally | `haram` | [Knowing](knowing.md#residue) |
 | **RESISTING** | Emotion locus: pushing against a target | `wawothumuer` | [Sakes](sakes.md#emotion-compose) |
 | **SAME** | Identity copula | `gorol` | [Predication](predication.md#identity) |

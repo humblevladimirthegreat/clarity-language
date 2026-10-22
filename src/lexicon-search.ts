@@ -63,7 +63,6 @@ export const OVERLAY_KINDS = [
   "exchange",
   "proxy",
   "stimulus",
-  "deontic",
   "mirative",
   "mention",
 ] as const;

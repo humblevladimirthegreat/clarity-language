@@ -183,21 +183,6 @@ ulem,h,🪵,of_relation,material,of-relation material (constitution),wood is the
 ulem,g,🪵,of_relation,material,of-relation material (constitution),wood is the stuff something is made of; material is the stuff in /b/,relations.md#of-relations
 aham,h,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,relations.md#of-relations
 aham,g,🗾,of_relation,origin,of-relation origin (provenance / identity source),a map of one land marks that area's identity; origin is the source in /b/,relations.md#of-relations
-olel,th,🟢,deontic,PERMIT-allowed,permission from a rule policy or formal right (no one in particular grants it),green light on a standing signal; allowed is the rule saying go,sakes.md#permission
-olem,th,🟢,deontic,PERMIT-granted,permission granted by a person (speaker by default or the /b/ grantor),green light switched on by someone; granted permission is a person saying go,sakes.md#permission
-oler,th,🟢,deontic,PERMIT-tolerated,tacit permission (no one objected; nobody granted it),green light nobody switched off; tolerated is no one saying stop,sakes.md#permission
-egul,th,⛔,deontic,FORBID-disallowed,disallowed by a rule policy or formal ban,standing no-entry sign; the rule blocks the way,sakes.md#permission
-egum,th,⛔,deontic,FORBID-forbidden,forbidden by a person (speaker by default or the /b/ forbidder),no-entry sign put up by someone; a person blocks the way,sakes.md#permission
-egur,th,⛔,deontic,FORBID-frowned-on,tacitly disapproved (no one forbade it outright),no-entry sign half-raised; nobody said no but it is not welcome,sakes.md#permission
-onal,th,📝,deontic,REQUIRE-rule,required by a rule policy or law (no one in particular demands it),memo of standing policy; a rule on paper says you must,sakes.md#requirement
-onam,th,📝,deontic,REQUIRE-demanded,required by a person (speaker by default or the /b/ who demands it),memo handed to you by someone; a person says you must,sakes.md#requirement
-onar,th,📝,deontic,REQUIRE-expected,expected by custom (no rule and no one demanding it),unwritten memo everyone knows; you are supposed to,sakes.md#requirement
-uxolel,h,🟢,deontic,CONSENT-contract,consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms,green light signed in advance by the one it happens to; they agreed on paper,sakes.md#consent
-uxolem,h,🟢,deontic,CONSENT-given,consent given outright by the affected (the /b/ or else the actor); revocable any time,green light from the one it happens to; they said yes,sakes.md#consent
-uxoler,h,🟢,deontic,CONSENT-assumed,consent assumed or inferred from the affected (the /b/ or else the actor),green light guessed from the one it happens to; I think they're OK with it,sakes.md#consent
-uxegul,h,⛔,deontic,CONSENT-opted-out,binding refusal by the affected (a settled opt-out),no-entry sign signed by the one it happens to; they opted out for good,sakes.md#consent
-uxegum,h,⛔,deontic,CONSENT-refused,consent refused outright by the affected (withdraws any earlier revocable yes),no-entry sign from the one it happens to; they said no,sakes.md#consent
-uxegur,h,⛔,deontic,CONSENT-unlikely,consent presumed absent from the affected (they probably don't want it),no-entry sign guessed from the one it happens to; they probably don't want it,sakes.md#consent
 avol,h,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
 avol,w,🐣,phasal,already.lasting,ALREADY phasal (the change has happened); -l not expected to change back,hatched chick is already out of the shell,knowing.md#phasal
 avom,h,🐣,phasal,already,ALREADY phasal (the change has happened); -m could change,hatched chick is already out of the shell,knowing.md#phasal

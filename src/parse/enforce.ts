@@ -376,6 +376,11 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   if (word.pos === "th" && (stemRoot === CLOSED.record || stemRoot === CLOSED.scroll) && word.ending !== "n") {
     throw new ConstructionError("retiredChannelRoot", word.raw);
   }
+  // The green, no-entry and memo roots are no stance: permission, a ban and a requirement are say words (sakes.md#say-words).
+  if (word.pos === "th" && (stemRoot === CLOSED.green || stemRoot === CLOSED.noEntry || stemRoot === CLOSED.memo) && word.ending !== "n") {
+    throw new ConstructionError("retiredDeonticRoot", word.raw);
+  }
+  if (word.family.kind === "say") enforceSay(word);
   // The map and check roots are no `/h/` word: a plan or decision is in a mind, a `/th/` stance (intention.md#plan).
   if (word.pos === "h" && (stemRoot === CLOSED.map || stemRoot === CLOSED.check) && word.ending !== "n") {
     throw new ConstructionError("retiredIntentionRoot", word.raw);
@@ -630,6 +635,50 @@ function enforceFeelingLandmark(words: LexWord[], hosted: Hosted | undefined): v
   }
 }
 
+/** A say word fills `/h/` only: whose say it is concerns the whole clause (sakes.md#say-words). */
+function enforceSay(word: LexWord): void {
+  if (word.pos !== "h" || word.gl || word.bl) throw new ConstructionError("saySlot", word.raw);
+}
+
+/** Whose say: a `bl-` word names someone over the act (`v`), or, under pair scope `o`, the one party a participant's say is toward (sakes.md#say-words). */
+function enforceSayHost(unit: HUnit): void {
+  const family = unit.word.family;
+  if (family.kind !== "say") return;
+  const bound = unit.hosted?.bound;
+  if (bound && family.part !== "v" && !family.scope.includes("o")) throw new ConstructionError("sayHost", `${unit.word.raw} ${bound.raw}`);
+}
+
+/**
+ * A bare `v` on **-m** is the speaker saying so, so a statement has no reading for it when the speaker is a participant:
+ * the speaker's say over their own act is their part (`hwazem`). Under a question it asks the listener (*May I sit?*).
+ */
+function enforceSaySpeaker(result: ParseResult): void {
+  for (const utterance of result.utterances) {
+    const force = utterance.left.force?.raw;
+    if (force === "yol" || force === "yom") continue;
+    for (const { clause } of utterance.bodies) {
+      if (!clause.units.some(isSpeakerParticipant)) continue;
+      for (const unit of clause.units) {
+        if (unit.kind !== "h" || unit.unit.hosted) continue;
+        const { word } = unit.unit;
+        if (word.family.kind === "say" && word.family.part === "v" && word.ending === "m") throw new ConstructionError("saySpeaker", word.raw);
+      }
+    }
+  }
+}
+
+/** A `/z/` `/d/` `/b/` phrase that holds the speaker (`uwon`, or `ayan` with the listener). */
+function isSpeakerParticipant(unit: Unit): boolean {
+  if (unit.kind !== "np") return false;
+  return unit.coord.parts.some((part) =>
+    part.items.some((item) => {
+      if (item.kind !== "package") return false;
+      const head = item.package.head;
+      return head.ending === "n" && head.family.kind === "content" && (head.family.roots[0] === CLOSED.microphone || head.family.roots[0] === CLOSED.handshake);
+    }),
+  );
+}
+
 /**
  * WANT, PLAN and DECISION host no person: with no holder they are the speaker's own, and someone else's goes through a
  * holder seam, so a `/b/` cannot slip in another person's wish, plan or choice with no grounds (intention.md#whose-intention).
@@ -709,6 +758,7 @@ function enforceUnitList(units: Unit[], tables: ClassifyTables): void {
     if (unit.kind === "h" && hosted && (isStandIn(hosted.bound) || (hosted.grounds && isStandIn(hosted.grounds)))) {
       enforceHostedStandIn(units, i, unit.unit, tables);
     }
+    if (unit.kind === "h") enforceSayHost(unit.unit);
     if (unit.kind === "h" && isAsOfOverlay(unit.unit.word)) {
       if (unit.unit.word.pos === "th") thAsOf += 1;
       else hAsOf += 1;
@@ -879,6 +929,7 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
   const places = { seen: new Set<LexWord>(), framed: new Set<LexWord>() };
   visitResult(result, structureVisitor(tables, places));
   visitResult(result, { enter: enforceTagHost });
+  enforceSaySpeaker(result);
   enforceGlLeans(result);
   for (const word of places.seen) if (!places.framed.has(word)) throw new ConstructionError("degreePlaceFrame", word.raw);
   for (const { bodies } of result.utterances) for (const body of bodies) enforceVerbPredicate(body.clause.units);

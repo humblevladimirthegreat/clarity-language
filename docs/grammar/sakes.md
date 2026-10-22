@@ -699,160 +699,163 @@ English *hopefully*, *luckily*, and *worryingly* say how **you**, the speaker, f
 
 Hope is not a way of **knowing**, so it cannot hold up a forecast by itself. To say *hopefully … will*, add a real evidence channel as well. Hope says how you feel about the claim; the channel says what backs it.
 
-### Permission (`tholel` / `tholem` / `tholer`) {#permission}
+### Say words: permission, requirement, consent {#say-words}
+<a id="permission"></a>
+<a id="requirement"></a>
+<a id="consent"></a>
 
-English *may* / *is allowed to* says a restriction is lifted. Put **`tholel`**, **`tholem`**, or **`tholer`** on the clause: stance **`th`** on the root **`ole`** (🟢 *green circle*). The ending says **where the permission comes from**: a rule, a person, or nobody. Use **-l** when a rule, policy, or formal right allows it. Use **-m** when a person grants it; that person is the speaker unless a `/b/` right after the permission word names someone else. A person who grants something does it openly, so that `/b/` is a party to the permission. Use **-r** when no one granted it but no one objected either. If you do not know, use **-m**.
+English *may*, *must*, *may not*, and *they agreed* each say that someone has a say over an act. Agebon puts that in one **say word** on `/h/`. A grant, a ban, a demand, or a yes is said openly, so a say word needs no channel; like an [intention adverb](clause.md#intention-adverbs), it covers the whole clause. Write **`h`**, **`w`**, a scope vowel, whose say it is, the answer, and an ending.
 
-> `zuzozen vowurel tholem.`
+> `zuzozen vowurel hwavam.`
 >
-> z-Uzozen | v-walk | th-PERMIT-granted
+> z-Uzozen | v-walk | h-episode-event-ALLOW-said
 >
 > "Uzozen may walk; I'm allowing it."
 
-> `zuzozen vowurel tholem blolazun.`
+| Piece | Says | In `hwavam` |
+|-------|------|-------------|
+| `w` | a closed word with no root, as on a [tag](pronouns.md#tag-pronouns) | `w` |
+| scope vowel | how far the say reaches: **`a`** this act (more below) | `a` |
+| whose say | **`v`** someone over the act and outside it; **`z`** the doer; **`d`** the one it's done to; **`b`** the recipient | `v` |
+| answer | **`a`** yes, allow (as in `yael`); **`u`** no, forbid (as in `yuel`); **`e`** require, ask for (**e** ≈ order); **`o`** their call (**o** ≈ pick) | `a` |
+| ending | **-l** a rule, or a binding agreement (≈ law); **-m** a person said so (≈ mouth); **-r** nobody said: tolerated, assumed, or customary (≈ read the room) | **-m** |
+
+If you do not know how it stands, use **-m**.
+
+#### Someone over the act (`v`)
+
+**`v`** is the say of someone outside the act: a rule, a person with the standing to decide, or custom. On **-m** that person is the speaker, unless a `bl-` word right after names someone else.
+
+> `zuzozen vowurel hwavam blolazun.`
 >
-> z-Uzozen | v-walk | [th-PERMIT-granted | bl-Olazun]
+> z-Uzozen | v-walk | [h-episode-event-ALLOW-said | bl-Olazun]
 >
 > "Olazun lets Uzozen walk."
 
-> `zahelan vuhohol tholel.`
+> `zahelan vuhohol hwaval.`
 >
-> z-Ahelan | v-sit | th-PERMIT-allowed
+> z-Ahelan | v-sit | h-episode-event-ALLOW-rule
 >
 > "The rules allow Ahelan to sit."
 
-> `zolazun vezuvol tholer.`
+> `zolazun vezuvol hwaver.`
 >
-> z-Olazun | v-sleep | th-PERMIT-tolerated
->
-> "Olazun sleeps, and no one is stopping it."
-
-The negatives use the root **`egu`** (⛔ *no entry*) with the same endings.
-
-<!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`tholel`** | a rule, policy, or formal right allows it | *is allowed to* / *has the right to* | **-l** ≈ law: the rules say go |
-| **`tholem`** | a person grants it (speaker, or the `/b/`) (default) | *may* / *I'm letting you* | **-m** ≈ mouth: someone said go |
-| **`tholer`** | tolerated: no one granted it, no one objected | *no one's stopping it* | **-r** ≈ read the room: nobody said stop |
-| **`thegul`** | a rule, policy, or formal ban forbids it | *is not allowed to* | **-l** ≈ law: the rules say no |
-| **`thegum`** | a person forbids it | *may not* / *I won't let you* | **-m** ≈ mouth: someone said no |
-| **`thegur`** | frowned on: no one forbade it, but it is not welcome | *people won't like it* | **-r** ≈ read the room: nobody said no, but it's not welcome |
-
-To **ask** for permission, put the clause under [ask](questions.md#question): `yom zuwon vuhohol tholem.` (*May I sit?*). Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
-
-**Compare with:** [prescription](#sake-force) **`the`** says the act *ought* to serve a sake; permission only says the act is *allowed*.
-
-### Requirement (`thonal` / `thonam` / `thonar`) {#requirement}
-
-English *must* / *has to* / *is supposed to* puts a demand on an act without naming a sake. Put **`thonal`**, **`thonam`**, or **`thonar`** on the clause: stance **`th`** on the root **`ona`** (📝 *memo*). The endings follow permission. Use **-l** when a rule, policy, or law requires it. Use **-m** when a person demands it; that person is the speaker unless a `/b/` right after the requirement word names someone else. Use **-r** when nothing is written and no one demands it, but people expect it. If you do not know, use **-m**.
-
-> `zuzozen vowurel thonal.`
->
-> z-Uzozen | v-walk | th-REQUIRE-rule
->
-> "The rules require Uzozen to walk."
-
-> `zahelan vuhohol thonam blolazun.`
->
-> z-Ahelan | v-sit | [th-REQUIRE-demanded | bl-Olazun]
->
-> "Olazun makes Ahelan sit."
-
-> `zolazun vezuvol thonar.`
->
-> z-Olazun | v-sleep | th-REQUIRE-expected
+> z-Olazun | v-sleep | h-episode-event-REQUIRE-tacit
 >
 > "Olazun is supposed to sleep."
 
-<!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`thonal`** | a rule, policy, or law requires it | *must* / *is required to* | **-l** ≈ law: the rules demand it |
-| **`thonam`** | a person demands it (speaker, or the `/b/`) (default) | *has to* / *I need you to* | **-m** ≈ mouth: someone demands it |
-| **`thonar`** | custom expects it; no rule, no one demanding | *is supposed to* | **-r** ≈ read the room: custom expects it |
+| Answer | **-l** the rules | **-m** a person | **-r** nobody said |
+|--------|------------------|-----------------|--------------------|
+| **`a`** | `hwaval` *the rules allow* | `hwavam` *you may* / *I'm letting you* | `hwavar` *no one's stopping it* |
+| **`u`** | `hwavul` *the rules forbid* | `hwavum` *you may not* | `hwavur` *people won't like it* |
+| **`e`** | `hwavel` *the rules require* | `hwavem` *you have to* | `hwaver` *it's customary* / *is supposed to* |
+| **`o`** | `hwavol` *the rules leave it optional* | `hwavom` *it's up to you* | `hwavor` *nobody cares either way* |
 
-**Compare with:** [prescription](#sake-force) **`the`** says the act *ought* to serve a named sake, a reason you can check. Requirement says only that a rule, a person, or custom demands it. A [command](speech-moves.md#speech-act-beginner) **`yel`** is the speaker telling the listener now; **`thonam`** reports a demand, which may be someone else's.
+When the speaker is in the clause, the speaker's own say is their part, not **`v`**, so a bare **`v`** on **-m** has no reading there. So *I have to walk* says who requires it: the rules (`zuwon vowurel hwavel.`), a person (`zuwon vowurel hwavem blolazun.`), custom (`zuwon vowurel hwaver.`), or you yourself (`zuwon vowurel hwazem.` *I'm making myself walk*). Telling an outside demand from one you put on yourself is the point of the split.
 
-### Consent (`huxolel` / `huxolem` / `huxoler`) {#consent}
+To **ask** for permission, put the clause under [ask](questions.md#question): `yom zuwon vuhohol hwavam.` (*May I sit?*). The question asks the listener, so the speaker may be in it. Grant it with [**`yaol.`**](questions.md#polar-stance) (*go ahead*).
 
-Consent is permission from **the one the act happens to**: their body, their things, their time. Put **`huxolel`**, **`huxolem`**, or **`huxoler`** on the clause: **`h`**, then role vowel **`u`** (the one it happens to), mid-word **`x`**, and the root **`ole`**. A yes is something people say or sign openly, so consent is an [intention adverb](clause.md#intention-adverbs) on `/h/`, not a stance: it covers the whole clause and needs no channel. A `/b/` right after the consent word names who consents. That slot holds one noun; when several people are affected, fill it with a [plural](plurality.md) or a [join](joins.md). The actor's own consent is always implied, so **with no `/b/` the only person affected is the actor**, and the clause reads as *letting yourself*.
+**Compare with:** [prescription](#sake-force) **`the`** says the act *ought* to serve a named sake, a reason you can check; a say word says only who allows or demands it. A [command](speech-moves.md#speech-act-beginner) **`yel`** is the speaker telling the listener now; **`hwavem`** reports a demand, which may be someone else's.
 
-The ending says **how binding the yes is**, with the same cues as [permission](#permission): **-l** ≈ law, **-m** ≈ mouth, **-r** ≈ read the room. Use **-l** for a binding agreement: they signed on in advance, and withdrawing has terms. Use **-m** when they said yes; they can take it back at any time. Use **-r** when no one said yes and it is taken as given. If you know they said yes but not how binding it is, use **-m**.
+#### Someone in the act: consent (`z` / `d` / `b`)
 
-> `zuzozen vezuyel huxolem blahelan.`
+Consent is the say of someone **in** the act: their body, their things, their time. Write the role letter that person has in the clause: **`d`** the one it's done to, **`b`** the recipient, **`z`** the doer. They are already in the clause, so the say word needs no `bl-` word.
+
+> `zuzozen vezuyel bahelan hwabam.`
 >
-> z-Uzozen | v-tell | [h-CONSENT-given | bl-Ahelan]
+> z-Uzozen | v-tell | b-Ahelan | h-episode-recipient-ALLOW-said
 >
-> "Uzozen tells, and Ahelan said yes to it."
+> "Uzozen tells Ahelan, and Ahelan said yes to it."
 
-> `zuzozen vezuyel huxolel blahelan.`
+> `zuzozen dolazun vawebol hwadam.`
 >
-> z-Uzozen | v-tell | [h-CONSENT-contract | bl-Ahelan]
+> z-Uzozen | d-Olazun | v-see | h-episode-patient-ALLOW-said
 >
-> "Uzozen tells, as Ahelan agreed to in advance."
+> "Uzozen looks at Olazun, and Olazun agreed."
 
-> `zuzozen vezuyel huxoler blahelan blolazun bal.`
+> `zuzozen vezuyel bahelan bolazun bal hwabar.`
 >
-> z-Uzozen | v-tell | [h-CONSENT-assumed | [bl-Ahelan | bl-Olazun | b-and]]
+> z-Uzozen | v-tell | [b-Ahelan | b-Olazun | b-and] | h-episode-recipient-ALLOW-tacit
 >
-> "Uzozen tells, assuming Ahelan and Olazun are OK with it."
+> "Uzozen tells Ahelan and Olazun, assuming they are OK with it."
 
-> `zolazun vezuvol huxolem.`
+> `zolazun vezuvol hwazam.`
 >
-> z-Olazun | v-sleep | h-CONSENT-given
+> z-Olazun | v-sleep | h-episode-agent-ALLOW-said
 >
 > "Olazun lets themself sleep."
 
-**-r** is allowed but visibly weaker. Choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*. On yourself, **-r** is half-hearted: `zuwon vuhohol huxoler.` is *I suppose I'm OK with sitting*. **-l** on yourself is a vow: `zuwon vuhohol huxolel.` is *I've committed myself to sitting*.
+The ending says how binding the yes is. **-l** is a binding agreement: they signed on in advance, and withdrawing has terms. **-m** is a yes they can take back at any time. **-r** is a yes nobody said, taken as given; it is allowed, but choosing it makes *I assumed* part of the sentence instead of hiding it inside *they were fine with it*.
 
-**Promise:** a vow said to someone is a promise. The listener is the one you promise by default: `zuwon vowurel huxolel.`, said to someone, is *I promise (you) to walk*. To name a different person as the one you promise, add the *for* hook ([extra noun](hooks.md#extra-noun)).
+| Answer | **`z`** the doer | **`d`** the one it's done to | **`b`** the recipient |
+|--------|------------------|------------------------------|-----------------------|
+| **`a`** | `hwazam` *lets themself* | `hwadam` *they agreed* | `hwabam` *the recipient agreed* |
+| **`u`** | `hwazum` *won't let themself* | `hwadum` *they refused* | `hwabum` *the recipient refused* |
+| **`e`** | `hwazem` *makes themself* | `hwadem` *at their request* | `hwabem` *at the recipient's request* |
+| **`o`** | `hwazom` *their own choice* | `hwadom` *it's their call* | `hwabom` *the recipient's call* |
 
-> `zuwon vowurel huxolel el bahelan.`
+| Answer | **-l** binding | **-r** assumed |
+|--------|----------------|----------------|
+| **`a`** | `hwadal` *they signed on*, `hwazal` a vow | `hwadar` *they're probably OK with it* |
+| **`e`** | `hwadel` *they're owed it*, `hwazel` *a rule they set themself* | `hwader` *they'd want it*, `hwazer` *feels they have to* |
+| **`o`** | `hwadol` *their call, by agreement* | `hwazor` *presumably their own choice* |
+
+- **`hwazer`** is the unspoken *should*: *I feel I have to* when nobody asked. Beside `hwavem blolazun` (someone asked), `hwavel` (the rules), and `hwazem` (pushing yourself), it shows where the pressure comes from.
+- **`hwazel`** is a personal rule (*I don't drink on weekdays*). Naming a rigid rule as self-set makes it something to examine.
+- **`hwader`** (*they'd want to know*) is a common excuse for acting on someone's behalf; **-r** marks it as an assumption, as `hwadar` does for consent.
+- **`o`** hands the choice to that party: neither allowed, forbidden, nor required, but up to them. `hwazom` (*chose it freely*) differs from `hwazam` (*let themself*), which suggests a reluctance overcome. *No answer yet* needs no vowel: ask it (`yom zuzozen dolazun vawebol hwadam.`).
+
+> `zolazun vezuvol hwazom.`
 >
-> z-speaker | v-walk | h-CONSENT-contract | [for | b-Ahelan]
+> z-Olazun | v-sleep | h-episode-agent-CHOICE-said
+>
+> "Olazun sleeps, by their own choice."
+
+**Promise:** a vow (`hwazal`) commits you to an act, and said to someone it is a promise to them. `zuwon vowurel hwazal.`, said to someone, is *I promise (you) to walk*. A self-set rule (`hwazel`) is a policy you hold toward yourself, not a promise. The weaker endings stay weaker on purpose: `hwazam` is *I'll do it* (you can still back out), and `hwazar` cannot pass for a promise.
+
+To check in, ask: `yom zuwon vezuyel bawan hwabam.` (*Are you still OK with me telling you?*).
+
+A say word takes no **-x**: a group's say comes from a group in the clause.
+
+#### How far the say reaches (scope) {#say-scope}
+
+The scope vowel is [label scope](predication.md#label-scope), the same vowels as after **`th`** on a label:
+
+- **`a`:** this act. `hwadam` is a yes to this act, which is why consent is asked for each time.
+- **`e`:** standing. `hwedam` is standing consent (*they're generally fine with this*), `hwevam` standing permission (*you may, any time*), `hwevem` a standing duty, and `hwezem` a discipline. Standing is not binding: `hwedam` can still be taken back, and only **-l** binds.
+- **`o`:** toward one party, named in a `bl-` word. `zuwon vowurel hwozal blahelan.` is a vow toward Ahelan: *I promise Ahelan I'll walk*. On **`v`**, the `bl-` word is still who has the say, and **`o`** limits it to their own part: `hwavam blolazun` is *Olazun lets Uzozen walk*, and `hwovam blolazun` is *fine as far as Olazun is concerned*; others may still object. Bare `hwovam` is *fine by me*, without speaking for anyone else.
+- **`u`:** a type across scenes. `hwudam` is *they're the type who's fine with it*, and `hwuvem` *their kind has to*. These are the inferences consent and fairness warn against; the form makes them visible instead of hiding them.
+- **Pairs** compose as on any label: `hwuevam` is *you may, but not in my official role*.
+
+> `zuwon vowurel hwozal blahelan.`
+>
+> z-speaker | v-walk | [h-pair-agent-ALLOW-rule | bl-Ahelan]
 >
 > "I promise Ahelan I'll walk."
 
-The weaker endings stay weaker on purpose: **-m** is *I'll do it* (you can still back out), and **-r** cannot pass for a promise.
-
-The negatives **`huxegul`** / **`huxegum`** / **`huxegur`** use the same endings. **-l** is a binding refusal: they opted out, and the matter is settled. **-m** means they said no. Any no withdraws an ordinary **-m** yes; only a **-l** agreement has terms for withdrawing. **-r** means they probably don't want it; with no `/b/`, it is *not letting yourself*.
-
-<!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English | Cue |
-|--------|-----|---------|-----|
-| **`huxolel`** | a binding agreement; withdrawing it has terms | *by agreement* / *they signed on* | **-l** ≈ law: they signed on, like a contract |
-| **`huxolem`** | the affected said yes; they can take it back (default) | *they agreed* / *I let myself* | **-m** ≈ mouth: they said yes |
-| **`huxoler`** | consent assumed or inferred | *I think they're OK with it* | **-r** ≈ read the room: you're guessing they're OK |
-| **`huxegul`** | a binding refusal | *they opted out* | **-l** ≈ law: they opted out on record |
-| **`huxegum`** | the affected said no | *they refused* | **-m** ≈ mouth: they said no |
-| **`huxegur`** | consent presumed absent | *they probably don't want it* / *I won't let myself* | **-r** ≈ read the room: they probably don't want it |
-
-To check in, ask: `yom zuzozen vezuyel huxolem.` (*Are you still OK with this?*).
-
-**Compare with:** permission **`tholem`** can come from anyone with the standing to grant it: `zuzozen vezuyel tholem blolazun.` means Olazun allowed it, which is not the same as the listener agreeing. `zuwon vuhohol tholem.` is *I'm allowed to sit* (someone let me); `zuwon vuhohol huxolem.` is *I let myself sit*.
+Only **`v`** and pair scope **`o`** take a `bl-` word.
 
 ### Contrary to a stance (`uem`) {#contrary-to-stance}
 
-English *against the rules*, *against Olazun's will*, and *contrary to the plan* say that the event happens even though a rule, a person, or a plan says otherwise. Put the hook **`uem`** *contrary to* right before a `/th/` stance word or an [intention adverb](clause.md#intention-adverbs). That word then says what the event goes against, and it no longer applies to the claim. `zuzozen vowurel thegul.` says Uzozen is not allowed to walk; `zuzozen vowurel uem thegul.` says Uzozen walks anyway. (cue: **ue** ≈ undo aimed at; **-m** the opposing frame, which the stance spells out)
+English *against the rules*, *against Olazun's will*, and *contrary to the plan* say that the event happens even though a rule, a person, or a plan says otherwise. Put the hook **`uem`** *contrary to* right before a `/th/` stance word, a [say word](#say-words), or an [intention adverb](clause.md#intention-adverbs). That word then says what the event goes against, and it no longer applies to the claim. `zuzozen vowurel hwavul.` says Uzozen is not allowed to walk; `zuzozen vowurel uem hwavul.` says Uzozen walks anyway. (cue: **ue** ≈ undo aimed at; **-m** the opposing frame, which the stance spells out)
 
-> `zuzozen vowurel uem thegul.`
+> `zuzozen vowurel uem hwavul.`
 >
-> z-Uzozen | v-walk | [contrary-to | th-FORBID-disallowed]
+> z-Uzozen | v-walk | [contrary-to | h-episode-event-FORBID-rule]
 >
 > "Uzozen walks against the rules."
 
-The stance keeps its endings and its `bl-` word. On a refusal, the `bl-` word is the person who said no, so the pair is English *against their will*:
+The stance keeps its endings and its `bl-` word. On a refusal, the pair is English *against their will*:
 
-> `zuzozen vezuyel uem huxegum blolazun.`
+> `zuzozen vezuyel bolazun uem hwabum.`
 >
-> z-Uzozen | v-tell | [contrary-to | [h-CONSENT-refused | bl-Olazun]]
+> z-Uzozen | v-tell | b-Olazun | [contrary-to | h-episode-recipient-FORBID-said]
 >
-> "Uzozen tells, against Olazun's will." (Olazun said no)
+> "Uzozen tells Olazun, against Olazun's will." (Olazun said no)
 
-> `zahelan vuhohol uem thonam blolazun.`
+> `zahelan vuhohol uem hwavem blolazun.`
 >
-> z-Ahelan | v-sit | [contrary-to | [th-REQUIRE-demanded | bl-Olazun]]
+> z-Ahelan | v-sit | [contrary-to | [h-episode-event-REQUIRE-said | bl-Olazun]]
 >
 > "Ahelan sits, against Olazun's orders."
 
@@ -872,9 +875,9 @@ A [plan](intention.md#plan) after **`uem`** is your own, like any stance. A [spe
 
 Only the stance right after **`uem`** is what the event goes against. A stance anywhere else in the clause still applies to the claim:
 
-> `zuzozen vowurel uem thegul tholem.`
+> `zuzozen vowurel uem hwavul hwavam.`
 >
-> z-Uzozen | v-walk | [contrary-to | th-FORBID-disallowed] | th-PERMIT-granted
+> z-Uzozen | v-walk | [contrary-to | h-episode-event-FORBID-rule] | h-episode-event-ALLOW-said
 >
 > "Uzozen walks against the rules, and I'm allowing it."
 
@@ -882,13 +885,13 @@ The word after **`uem`** has to say something the event can go against: a ban, a
 
 | After **`uem`** | English |
 |-----------------|---------|
-| ban **`thegul`** / **`thegum`** / **`thegur`** | *against the rules* / *though I forbade it* / *though people frown on it* |
-| requirement **`thonal`** / **`thonam`** / **`thonar`** | *contrary to regulations* / *against my orders* / *contrary to custom* |
-| refusal **`huxegul`** / **`huxegum`** / **`huxegur`** | *against their will* (they opted out / they said no / they probably don't want it) |
+| ban **`hwavul`** / **`hwavum`** / **`hwavur`** | *against the rules* / *though I forbade it* / *though people frown on it* |
+| requirement **`hwavel`** / **`hwavem`** / **`hwaver`** | *contrary to regulations* / *against my orders* / *contrary to custom* |
+| refusal **`hwadul`** / **`hwadum`** / **`hwadur`** | *against their will* (they opted out / they said no / they probably don't want it) |
 | plan **`thager`** / **`thagem`** / **`thagel`** | *contrary to my plan* |
 | speaker attitude, such as **`thoguyem`** | *against my hopes* |
 
-Permission given (**`tholem`**) only lifts a restriction, so nothing can go against it. Consent given (**`huxolel`**, **`huxolem`**, **`huxoler`**) cannot follow **`uem`** either: a listener who misses **`uem`** would hear that the person agreed. A yes that was taken back is a no, so use the refusal: `zuzozen vezuyel uem huxegum blahelan.` To say you broke a promise, give the promise its own sentence after **`hezom blarl`**: `zuwon vezuvol hezom blarl zuwon vowurel huxolel.` (*I sleep, although I promised to walk.*) Sake words cannot follow **`uem`** either: to say an act goes against someone's interest, put an [unmet](#sake-changeability) sake word on the clause (`zuzozen vowurel thudathum blolazun.` *Uzozen's walking harms Olazun's interests*).
+A yes only lifts a restriction, so no say word with answer **`a`** follows **`uem`**: not permission (`hwavam`), and not consent (`hwadam`, `hwazal`), where a listener who misses **`uem`** would hear that the person agreed. *Their call* (**`o`**) sets nothing to go against either. A yes that was taken back is a no, so use the refusal: `zuzozen vezuyel bahelan uem hwabum.` To say you broke a promise, give the promise its own sentence after **`hezom blarl`**: `zuwon vezuvol hezom blarl zuwon vowurel hwazal.` (*I sleep, although I promised to walk.*) Sake words cannot follow **`uem`** either: to say an act goes against someone's interest, put an [unmet](#sake-changeability) sake word on the clause (`zuzozen vowurel thudathum blolazun.` *Uzozen's walking harms Olazun's interests*).
 
 **Compare with:** *despite the rain* is **`uem`** or **`hezom`** with a noun in `/b/` (`zuzozen vowurel uem berulal.`). *Although Olazun said no* as a full sentence is **`hezom blarl`** plus that sentence. The sentence after **`blarl`** needs an event or a thing, so a stance word alone cannot fill it; use **`uem`** with the stance instead.
 
@@ -969,9 +972,6 @@ Short drills for Intermediate. Try each item before opening **Show answer**.
 | *candle* | `uwewel` | 🕯️ |
 | *relatedness* | `awol` | 🪢 from *knot*: ties people together |
 | *purpose* | `urel` | 🧭 from *compass*: a heading worth following |
-| *permission* | `tholem` | 🟢 from *green*: go ahead |
-| *forbidden* | `thegul` | ⛔ from *no entry* |
-| *policy* | `thonar` | 📝 from *memo* |
 
 **Review:**
 
@@ -1027,9 +1027,9 @@ th-relatedness-met-any-term
 **5.** *Ahelan lets Uzozen kneel.*
 
 ::: details Show answer
-`zuzozen vonuvol tholem blahelan.`
+`zuzozen vonuvol hwavam blahelan.`
 
-z-Uzozen | v-kneel | [th-PERMIT-granted | bl-Ahelan]
+z-Uzozen | v-kneel | [h-episode-event-ALLOW-said | bl-Ahelan]
 :::
 
 **6.** *The candle is too heavy to be safe.*
@@ -1066,26 +1066,26 @@ th-competence-unmet-passing-UNPLACED-SURGING
 *I'm sorry.* (that hurt your sense of connection)
 :::
 
-**4.** `zahelan vuhohol thonar.`
+**4.** `zahelan vuhohol hwaver.`
 
 ::: details Show answer
-z-Ahelan | v-sit | th-REQUIRE-expected
+z-Ahelan | v-sit | h-episode-event-REQUIRE-tacit
 
 *Ahelan is supposed to sit.*
 :::
 
-**5.** `zuzozen vobuyal huxoler blolazun.`
+**5.** `zuzozen vobuyal hwavar.`
 
 ::: details Show answer
-z-Uzozen | v-pray | [h-CONSENT-assumed | bl-Olazun]
+z-Uzozen | v-pray | h-episode-event-ALLOW-tacit
 
-*Uzozen prays, assuming Olazun is OK with it.*
+*Uzozen prays, and no one's stopping it.*
 :::
 
-**6.** `zolazun vezuvol uem thegul.`
+**6.** `zolazun vezuvol uem hwavul.`
 
 ::: details Show answer
-z-Olazun | v-sleep | [contrary-to | th-FORBID-disallowed]
+z-Olazun | v-sleep | [contrary-to | h-episode-event-FORBID-rule]
 
 *Olazun sleeps against the rules.*
 :::
@@ -1102,12 +1102,12 @@ z-speaker | v-kneel | th-relatedness-motive-any-term
 **`tho`** gives your reason; **`the`** would say you *ought* to kneel.
 :::
 
-**2.** *Olazun is allowed to sleep.* (the rules allow it) `zolazun vezuvol tholel.` or `zolazun vezuvol tholem.`
+**2.** *Olazun is allowed to sleep.* (the rules allow it) `zolazun vezuvol hwaval.` or `zolazun vezuvol hwavam.`
 
 ::: details Show answer
-`zolazun vezuvol tholel.`
+`zolazun vezuvol hwaval.`
 
-z-Olazun | v-sleep | th-PERMIT-allowed
+z-Olazun | v-sleep | h-episode-event-ALLOW-rule
 
 **-l** is permission from a rule; **-m** is a person granting it.
 :::

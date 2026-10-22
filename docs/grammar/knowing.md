@@ -1422,7 +1422,7 @@ A **definition** works both ways: whatever has the property is that kind, and ev
 
 The channel stays on the main sentence and covers the whole generalization. Put it before the pole, as with the [evidence clause](#evidence-clause): `zual gagozol vezuvol thubel thohom blarl …` is *going by a well-established pattern, every cat sleeps when …*.
 
-**Compare with:** a general claim you are **not** giving as today's report is [FORMER](#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is [REQUIRE](sakes.md#requirement) (`thonam`), not a law of how things work. *Maybe every cat sleeps* is [MAY](#may) on the same clause.
+**Compare with:** a general claim you are **not** giving as today's report is [FORMER](#former-climate) (`helam`). *Every cat must sleep* as a rule someone sets is a [requirement](sakes.md#say-words) (`hwavem`), not a law of how things work. *Maybe every cat sleeps* is [MAY](#may) on the same clause.
 
 ### Practice {#advanced-practice}
 

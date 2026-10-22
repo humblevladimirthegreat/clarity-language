@@ -152,12 +152,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `huvul` | NO-LONGER phasal (the state has stopped); -l not expected to change back | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `huvum` | NO-LONGER phasal (the state has stopped); -m could change | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
 | `huvur` | NO-LONGER phasal (the state has stopped); -r paused: expected to resume | [Already, still, not yet, no longer](../knowing.md#phasal) | I |
-| `huxegul` | binding refusal by the affected (a settled opt-out) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
-| `huxegum` | consent refused outright by the affected (withdraws any earlier revocable yes) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
-| `huxegur` | consent presumed absent from the affected (they probably don't want it) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
-| `huxolel` | consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
-| `huxolem` | consent given outright by the affected (the /b/ or else the actor); revocable any time | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
-| `huxoler` | consent assumed or inferred from the affected (the /b/ or else the actor) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
 <!-- /generated -->
 
 ## `/th/` words {#th-words}
@@ -184,9 +178,6 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `thebam` | reported evidential (hearsay / said or written by someone else / reportative) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `thebar` | reported evidential with weak evidence (rumor) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thebom` | ONLY-IF clause pole (necessary condition) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `thegul` | disallowed by a rule policy or formal ban | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
-| `thegum` | forbidden by a person (speaker by default or the /b/ forbidder) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
-| `thegur` | tacitly disapproved (no one forbade it outright) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
 | `thehem` | IFF clause pole (biconditional) | [Because, if, although (poles)](../dependents.md#poles) | B |
 | `themol` | mirative mood overturning a firm expectation | [Mirative (themom)](../knowing.md#mirative) | I |
 | `themom` | mirative mood (newly found out and not expected) | [Mirative (themom)](../knowing.md#mirative) | I |
@@ -207,15 +198,9 @@ The pronouns are shown without a role letter: add the one for their slot (`zuwon
 | `thogom` | decision mood modifiable changeability (open to revision; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
 | `thogor` | decision mood temporary changeability (pick for now; no time) | [Decision (revisability)](../intention.md#decision-revisability) | I |
 | `thohom` | IF clause pole (one-way conditional) | [Because, if, although (poles)](../dependents.md#poles) | B |
-| `tholel` | permission from a rule policy or formal right (no one in particular grants it) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
-| `tholem` | permission granted by a person (speaker by default or the /b/ grantor) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
-| `tholer` | tacit permission (no one objected; nobody granted it) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
 | `thomal` | may mood find-out hold (I'll / let's find out) | [Hold endings (MAY)](../knowing.md#hold-endings-may) | B |
 | `thomam` | may mood (could be; default) | [MAY](../knowing.md#may) | B |
 | `thomar` | may mood who-knows hold (leave unsettled; may never know) | [Hold endings (MAY)](../knowing.md#hold-endings-may) | B |
-| `thonal` | required by a rule policy or law (no one in particular demands it) | [Requirement (thonal / thonam / thonar)](../sakes.md#requirement) | I |
-| `thonam` | required by a person (speaker by default or the /b/ who demands it) | [Requirement (thonal / thonam / thonar)](../sakes.md#requirement) | I |
-| `thonar` | expected by custom (no rule and no one demanding it) | [Requirement (thonal / thonam / thonar)](../sakes.md#requirement) | I |
 | `thubel` | pattern evidential with strong evidence (well-established pattern) | [Evidence strength](../knowing.md#evidence-strength) | I |
 | `thubem` | pattern evidential (from trail of cases) | [Evidentiality](../knowing.md#evidentiality) | I |
 | `thuber` | pattern evidential with weak evidence (a few cases) | [Evidence strength](../knowing.md#evidence-strength) | I |

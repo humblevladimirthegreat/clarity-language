@@ -63,7 +63,7 @@ Every Agebon line below was checked with `node scripts/parse.mjs`.
 | 34 | Lovely flowers are growing everywhere. | `zuvelalx gahelam thugom velem ol bual.` | [z-flower-x \| g-beauty] \| th-LIVE \| v-growth \| [at \| b-everything] | covered |
 | 35 | We should eat more slowly. | `zayan thubem zel huzezam vagedal thudathem.` | [z-interlocutors \| th-PATTERN \| z-rank/more \| h-slow] \| v-eat \| th-sake-ought-offered | covered |
 | 36 | You have come too soon. | `zawan thudatham zuel bral vavobel oel buwon.` | [z-listener \| th-sake-met-any-term \| z-rank/less \| b-later] \| v-go \| [toward \| b-speaker] | covered |
-| 37 | You must write more neatly. | `zawan thubem zel hozebum varayel thonam.` | [z-listener \| th-PATTERN \| z-rank/more \| h-cleanliness] \| v-write \| th-REQUIRE-demanded | covered |
+| 37 | You must write more neatly. | `zawan thubem zel hozebum varayel hwavem.` | [z-listener \| th-PATTERN \| z-rank/more \| h-cleanliness] \| v-write \| h-episode-event-REQUIRE-said | covered |
 | 38 | Directly opposite stands a wonderful palace. | `honuhethayan zugahul gemom vawuvol.` | h-north-th-interlocutors \| [z-castle \| g-amazement] \| v-stand | covered |
 | 39 | Henry's dog is lost. | `zudozol gudurum em buzozen.` | [z-dog \| g-loss] \| [used-by \| b-Uzozen] | covered |
 | 40 | My cat is black. | `zagozol gubulol em buwon.` | [z-cat \| g-black] \| [used-by \| b-speaker] | covered |
@@ -259,7 +259,7 @@ Every Agebon line below was checked with `node scripts/parse.mjs`.
 - **STC-17, 26, 31, 33, *away*:** hook compound with `um` (*recede*) on the motion verb: `vowurelum`, `vavobelum`, `vewovelum`, `vumemulum`.
 - **STC-19, 21:** *came down* is *fall*; *has stopped* is *no longer* `huvum` (the rain no longer falls), so no *stop* verb is needed.
 - **STC-24, *once*:** FORMER `helam` (a past climate, not today's). *Here* is `om buwon`.
-- **STC-28, *should*:** prescription with the unnamed sake, `thudathem`. **STC-37, *must*:** `thonam`.
+- **STC-28, *should*:** prescription with the unnamed sake, `thudathem`. **STC-37, *must*:** `hwavem`.
 - **STC-29, *happy to*:** emotion compose on `/th/`: pleasure met, INTERNAL, FLOWING (`thodothamam`) — the speaker's own feeling, so no holder is needed.
 - **STC-33, *probably*:** stance number `thral` (*likely*, no figure).
 - **STC-38, *opposite*:** `honuhethayan` — in front, as the two of us face. *Directly* is dropped.

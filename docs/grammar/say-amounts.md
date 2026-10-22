@@ -229,7 +229,7 @@ English *-ly* adverbs say how an action is done. Write `/h/`, the root, and the 
 | *carefully* | `hayulem` |
 | *gently* | `hegemam` |
 | *properly* / *correctly* | `hogugol` |
-| *properly* (*up to standard*) | the doer, then `thonal zoel hogugol` (as correctly as the rules require) |
+| *properly* (*up to standard*) | the doer, then `hwavel zoel hogugol` (as correctly as the rules require) |
 | *precisely* / *accurately* | `hubugom` |
 | *neatly* / *in an orderly way* | `henodam` |
 | *seriously* | `hozedom` |
@@ -263,11 +263,11 @@ The easy / hard pair on a quality ranks effort against a bar ([vague amounts](co
 >
 > "The book is hard for Uzozen to write."
 
-*Properly* in the sense of *up to standard* names the standard as a bar ([every bar](comparatives.md#stance-bars)): REQUIRE **`thonal`** is the rule, and a tie meets it. Use **`thonar`** for what is customary.
+*Properly* in the sense of *up to standard* names the standard as a bar ([every bar](comparatives.md#stance-bars)): REQUIRE **`hwavel`** is the rule, and a tie meets it. Use **`hwaver`** for what is customary.
 
-> `zuzozen thonal zoel hogugol varayel.`
+> `zuzozen hwavel zoel hogugol varayel.`
 >
-> [z-Uzozen | th-REQUIRE-rule | z-equal-rank | h-correct] | v-write
+> [z-Uzozen | h-episode-event-REQUIRE-rule | z-equal-rank | h-correct] | v-write
 >
 > "Uzozen writes properly." (as correctly as the rules require)
 

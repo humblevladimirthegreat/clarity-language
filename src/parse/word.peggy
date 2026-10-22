@@ -570,6 +570,7 @@ prefixedWord
 
 PrefixedBody
   = tagWord
+  / sayWord
   / xWord
   / plainContent
   / hookCompound
@@ -586,6 +587,19 @@ tagWord
         ending,
         plural: !!plural,
         family: { kind: "tag", vowels: vowels.split("") },
+      };
+    }
+
+// ── Say words (sakes.md#say-words) ───────────────────────────────────────────
+
+// `w` + label scope + whose say (`z` / `d` / `b` / `v`) + answer vowel + **-l** / **-m** / **-r** (`hwavam`, `hwadum`).
+// A consonant after the scope keeps it apart from a tag (`zwar`). enforce.ts keeps it on `/h/`.
+sayWord
+  = "w" scope:SeamVowel part:[zdbv] answer:[aeou] ending:[lmr] plural:PluralSuffix? WordEnd {
+      return {
+        ending,
+        plural: !!plural,
+        family: { kind: "say", scope, part, answer },
       };
     }
 

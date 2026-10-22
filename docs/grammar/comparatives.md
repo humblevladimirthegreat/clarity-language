@@ -436,7 +436,7 @@ English *three times bigger* usually means the same ratio: use **`zoel`** with `
 
 ### Comparing against a stance (bars) {#bars}
 
-English *more than planned* and *later than planned* rank one thing against a **value a stance sets**, not against another person: the plan sets how much and when. Write that `/th/` stance word, or that [intention adverb](clause.md#intention-adverbs) on `/h/` (FORMER, ability, consent), where the second name would go, right before the rank join. That word is the **bar**. The join closes everything before it, so the bar is part of the comparison: it says what you rank against. It is not your stance on the whole sentence.
+English *more than planned* and *later than planned* rank one thing against a **value a stance sets**, not against another person: the plan sets how much and when. Write that `/th/` stance word, or that [intention adverb](clause.md#intention-adverbs) on `/h/` (FORMER, ability, a say word), where the second name would go, right before the rank join. That word is the **bar**. The join closes everything before it, so the bar is part of the comparison: it says what you rank against. It is not your stance on the whole sentence.
 
 > `zuzozen thagem zel bral vovurel.`
 >
@@ -681,9 +681,9 @@ Intermediate ranked against a plan, and [sake bars](sakes.md#sake-bars) rank aga
 | PLAN `thagem` | the plan or the schedule | *than planned* / *than scheduled* |
 | WANT `thalel` / `thalem` / `thaler` | the level wanted | *than wanted* / *than I wanted* |
 | ABIL `hodaxal` | what can be done | *as … as possible* |
-| REQUIRE `thonal` / `thonam` / `thonar` | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* |
-| PERMIT `tholel` / `tholem` / `tholer` | the rule, the grant, or what is tolerated | *over the limit* / *more than they allow* / *than tolerated* |
-| CONSENT `huxolem` | the agreed terms | *more than agreed* |
+| a requirement `hwavel` / `hwavem` / `hwaver` | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* |
+| a permission `hwaval` / `hwavam` / `hwavar` | the rule, the grant, or what is tolerated | *over the limit* / *more than they allow* / *than tolerated* |
+| consent `hwadam` | the agreed terms | *more than agreed* |
 | speaker attitude (`thoguyem`, `thewemum`) | the case you hoped for or feared | *than hoped* / *than feared* |
 
 The bar's ending keeps its own job: on a channel it is [evidence strength](knowing.md#evidence-strength) (`thubel` *than it reliably is*, `thuber` *than the few cases so far*).
@@ -718,7 +718,7 @@ The bar's ending keeps its own job: on a channel it is [evidence strength](knowi
 >
 > "The book is lighter than I wanted."
 
-The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on REQUIRE, PERMIT, and CONSENT it is the person who demands, grants, or agrees. WANT takes no `/b/`: for someone else's wants, put a [holder](knowing.md#holder) on the clause. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
+The bar's `/b/` works as it does on the clause. On REPORTED it is the source, and on a [say word](sakes.md#say-words) over the act (`hwavem`, `hwavam`) it is the person who demands or grants. WANT takes no `/b/`: for someone else's wants, put a [holder](knowing.md#holder) on the clause. On PATTERN it is **whose cases** set the pattern: the population you compare against. With no `/b/`, PATTERN is the ranked item's own usual level, or the usual case in the situation.
 
 > `zanal thebam blolazun zuel gagebom.`
 >
@@ -768,17 +768,17 @@ A CLUES or PATTERN bar can also take [`blarl`](knowing.md#evidence-clause): the 
 >
 > "Olazun walks as hastily as possible."
 
-**Rules and permission.** REQUIRE as the bar is the demand; a tie meets it. PERMIT is the limit; rank **`zel`** goes over it.
+**Rules and permission.** A requirement as the bar is the demand; a tie meets it. A permission is the limit; rank **`zel`** goes over it.
 
-> `zahehal thonal zoel gobobom.`
+> `zahehal hwavel zoel gobobom.`
 >
-> [z-house | th-REQUIRE-rule | z-equal-rank | g-strength]
+> [z-house | h-episode-event-REQUIRE-rule | z-equal-rank | g-strength]
 >
 > "The house is as strong as the rules require."
 
-> `zududal tholel zel gral.`
+> `zududal hwaval zel gral.`
 >
-> [z-tea | th-PERMIT-allowed | z-rank/more | g-amount]
+> [z-tea | h-episode-event-ALLOW-rule | z-rank/more | g-amount]
 >
 > "There is more tea than the rules allow."
 

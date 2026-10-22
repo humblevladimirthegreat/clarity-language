@@ -115,7 +115,7 @@ const ROWS: Row[] = [
   { invalid: "zuzozen thomam zel guzemol.", rejection: "barKind", valid: "zuzozen thabom zel guzemol." },
   { invalid: "zuzozen thogom zel guzemol.", rejection: "barKind", valid: "zuzozen thalem zel guzemol." },
   { invalid: "zuzozen howam zel guzemol.", rejection: "barKind", valid: "zuzozen helam zel guzemol." },
-  { invalid: "zududal thegul zel gral.", rejection: "barKind", valid: "zududal tholel zel gral." },
+  { invalid: "zududal hwavul zel gral.", rejection: "barKind", valid: "zududal hwaval zel gral." },
   { invalid: "zuzozen zolazun thubem zel guzemol.", rejection: "barCount", valid: "zuzozen zolazun zel guzemol." },
   { invalid: "zuzozen thubem thevum zel guzemol.", rejection: "barCount", valid: "zuzozen thubem zel guzemol thevum." },
   { invalid: "zuzozen thevum bluzurem grabal zel guzemol.", rejection: "channelOffsetSign", valid: "zuzozen thevum bluzurem grubal zel guzemol." },
@@ -287,8 +287,14 @@ const ROWS: Row[] = [
     valid: "zuzozen zolazun zal dagozol dudozol wubam dal vawebol.",
   },
   // `uem` + a stance: the stance must say what the event goes against (sakes.md#contrary-to-stance).
-  { invalid: "zuzozen vowurel uem tholem.", rejection: "frameKind", valid: "zuzozen vowurel uem thegum." },
-  { invalid: "zuzozen vezuyel uem huxolem blolazun.", rejection: "frameKind", valid: "zuzozen vezuyel uem huxegum blolazun." },
+  { invalid: "zuzozen vowurel uem hwavam.", rejection: "frameKind", valid: "zuzozen vowurel uem hwavum." },
+  { invalid: "zuzozen vezuyel bolazun uem hwabam.", rejection: "frameKind", valid: "zuzozen vezuyel bolazun uem hwabum." },
+  { invalid: "zuzozen vowurel uem hwavom.", rejection: "frameKind", valid: "zuzozen vowurel uem hwavem." },
+  // Say words (sakes.md#say-words): the slot, whose say a bl- word names, and the speaker's own act.
+  { invalid: "zuzozen vowurel tholem.", rejection: "retiredDeonticRoot", valid: "zuzozen vowurel hwavam." },
+  { invalid: "zuzozen gwavam.", rejection: "saySlot", valid: "zuzozen vowurel hwavam." },
+  { invalid: "zuzozen vowurel hwadam blolazun.", rejection: "sayHost", valid: "zuzozen vowurel hwodam blolazun." },
+  { invalid: "zuwon vowurel hwavam.", rejection: "saySpeaker", valid: "zuwon vowurel hwazem." },
   { invalid: "zuzozen vowurel uem thawotham.", rejection: "frameKind", valid: "zuzozen vowurel thawothum blolazun." },
   { invalid: "zuzozen vowurel uem themom.", rejection: "frameKind", valid: "zuzozen vowurel uem thabom." },
   { invalid: "zuzozen vowurel uem thomam.", rejection: "frameKind", valid: "zuzozen vowurel uem thagem." },
@@ -304,8 +310,8 @@ const ROWS: Row[] = [
   // At the front too: `barl` right after the hook makes it an extra-noun hook, not glue (hooks.md#discourse-hooks).
   { invalid: "al barl zolazun vezuvol.", rejection: "hookStandIn", valid: "ul barl zolazun vezuvol." },
   // The sentence after `barl` needs more than a stance word (dependents.md#dependent-clauses).
-  { invalid: "zuzozen vowurel hezom blarl thegul.", rejection: "dependentStanceOnly", valid: "zuzozen vowurel uem thegul." },
-  { invalid: "zuzozen vowurel hezom blarl thegul thebam.", rejection: "dependentStanceOnly", valid: "zuzozen vowurel hezom blarl thuwathuruor." },
+  { invalid: "zuzozen vowurel hezom blarl hwavul.", rejection: "dependentStanceOnly", valid: "zuzozen vowurel uem hwavul." },
+  { invalid: "zuzozen vowurel hezom blarl hwavul thebam.", rejection: "dependentStanceOnly", valid: "zuzozen vowurel hezom blarl thuwathuruor." },
   // A second turn starts only after a period; only the legal force pairs stack.
   { invalid: "yol yol vazuyul.", rejection: "forcePair", valid: "yol. yol vazuyul." },
   { invalid: "zalx vowurel.", rejection: "joinPlural", valid: "zarx vowurel." },

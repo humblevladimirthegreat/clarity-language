@@ -202,7 +202,7 @@ export const TOKEN_CONSTRUCTIONS: Record<TokenBranch, ConstructionEntry> = {
   yVocative: { anchor: "speech-moves.md#vocative", summary: "/y/ name (-n), named span, or resume (-r): a vocative" },
   yInterjection: { anchor: "speech-moves.md#interjections-reactions", summary: "/y/ word in -l / -m, or an unnamed span: an interjection" },
   linker: { anchor: "dependents.md#continue-x", summary: "/x/ content word: a sentence linker, or a topic word" },
-  clauseAdverb: { anchor: "sakes.md#consent", summary: "intention adverb on /h/ (try, ability, consent, RESIDUE, FORMER): covers the whole clause like a /th/ word" },
+  clauseAdverb: { anchor: "sakes.md#say-words", summary: "intention adverb on /h/ (try, ability, a say word, RESIDUE, FORMER): covers the whole clause like a /th/ word" },
   tagAssign: { anchor: "pronouns.md#tag-pronouns", summary: "bare tag -l: names the phrase before it, or a new referent" },
   content: { anchor: "phonology.md#word-edges", summary: "content word in its role slot" },
   citationFallback: { anchor: "phonology.md#word-edges", summary: "word with no role letter: names, filling no slot" },
@@ -220,6 +220,7 @@ export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = 
   writingSpan: { anchor: "spans.md#writing", summary: "written span" },
   foreign: { anchor: "spans.md#loans", summary: "foreign / opaque payload" },
   tag: { anchor: "pronouns.md#tag-pronouns", summary: "tag pronoun (role letter + w + tag vowel)" },
+  say: { anchor: "sakes.md#say-words", summary: "say word (h + w + scope + whose say + answer + ending): permission, a ban, a requirement, consent" },
 };
 
 export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
@@ -738,6 +739,10 @@ export const REJECTIONS = {
   retiredIntentionRoot: { anchor: "intention.md#plan", summary: "/h/ on the map or check root is not an intention: PLAN and DECISION are /th/ stances (`thagem`, `thogom`), someone else's through a holder" },
   channelOffsetSign: { anchor: "knowing.md#dated-channel", summary: "MEMORY takes only an earlier offset, LIVE none, and PLAN only a later one" },
   retiredChannelRoot: { anchor: "knowing.md#evidentiality", summary: "/th/ on the record or scroll root is not a channel: a record or document is REPORTED with the source in /b/, footage is LIVE or MEMORY with the device in /b/, a schedule is PLAN, and a tale is NOTIONAL" },
+  retiredDeonticRoot: { anchor: "sakes.md#say-words", summary: "/th/ on the green, no-entry, or memo root is no stance: permission, a ban, and a requirement are say words on /h/ (`hwavam`, `hwavul`, `hwavem`)" },
+  saySlot: { anchor: "sakes.md#say-words", summary: "a say word fills /h/ only: whose say it is concerns the whole clause" },
+  sayHost: { anchor: "sakes.md#say-words", summary: "a bl- word after a say word names someone over the act (v), or the one party under pair scope o; a participant's say needs no bl- word" },
+  saySpeaker: { anchor: "sakes.md#say-words", summary: "a bare v say word on -m is the speaker saying so, so in a statement where the speaker is a participant name whose say it is: the rules (hwavel), a person (hwavem bl-), custom (hwaver), or the speaker's own part (hwazem)" },
   poleOffsetWarrant: { anchor: "knowing.md#dated-channel", summary: "a signed offset on a time pole needs a command, request, PLAN, or channel in its clause" },
   joinDetail: { anchor: "joins.md#respectively", summary: "the only /w/ before a join word is respectively (`wubam`), and it goes only there, on a closed (-l) or open (-m) and-list" },
   respectivePartner: { anchor: "joins.md#respectively", summary: "a respectively list pairs with another and-list of the same length in its clause" },

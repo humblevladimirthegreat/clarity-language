@@ -117,7 +117,7 @@ Source: [joins.md](../grammar/joins.md), [join-across-roles.md](../grammar/join-
 
 Source: [comparatives.md](../grammar/comparatives.md#bars)
 
-- **open:** a stance that sets no value as a bar: clause poles, MAY, MIRATIVE, DECISION, ATTEMPT, RESIDUE, CAUSE, and the deontic noes (FORBID, refused consent). None sets a level to rank against: a decision or an attempt commits to an act, and a ban or a refusal only says no (the other side of PERMIT and CONSENT). *Than decided* is PLAN. Parser: `barKind`.
+- **open:** a stance that sets no value as a bar: clause poles, MAY, MIRATIVE, DECISION, ATTEMPT, RESIDUE, CAUSE, and a say word's no or *their call* (`hwavul`, `hwadum`, `hwavom`). None sets a level to rank against: a decision or an attempt commits to an act, a ban or a refusal only says no, and *their call* sets nothing. *Than decided* is PLAN. Parser: `barKind`.
 - **open:** a second comparee next to a bar (`barCount`). A bar fence ranks one item against one bar, so a second item has nothing to rank against.
 
 ## Hosted relations
@@ -135,8 +135,8 @@ Source: [hooks.md](../grammar/hooks.md#ranges), [sakes.md](../grammar/sakes.md#c
 - **open:** stacked **-r** at the front of a sentence (`aor …`, `aer …`, `uor …`). Extra-noun point-back is assigned; as sentence glue they have no guess (*For example, anyway?* *In fact, as I said?*). Parser: `hookDiscourseStack`.
 - **open:** discourse **`oel`** / **`ual`** / **`uol`** / **`uel`** (and **-m** / **-n**) at the front of a sentence. *Toward*, *out of*, *through* and *against* give no guessable sentence-to-sentence glue (guesses range from *Alternatively* to *Apart from that*). The parser rejects them.
 - **open:** a hook + `barl` other than `ul` (`hookStandIn`). Most have no guess (*in that…*, *at that…*). *Contrary to* an event is `hezom blarl`, and no job has turned up for `uem barl`.
-- **open:** `uem` before a stance with no content an event can contradict (`frameKind`): PERMIT (it only lifts a restriction), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Olazun's interest* is `thudathum blolazun`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
-- **closed (D-49):** `uem` before given CONSENT (`uem huxolem blolazun`, `uem huxolel`), on yourself or with a `/b/` (`frameKind`).
+- **open:** `uem` before a stance with no content an event can contradict (`frameKind`): a say word's *their call* (`hwavom`; it sets nothing), MIRATIVE (it already says *against expectation*), MAY, NOTIONAL (held by no one as true; use INTUITION), RESIDUE, FORMER (use a PATTERN frame for *unlike before*), sake words (*against Olazun's interest* is `thudathum blolazun`), clause poles, CAUSE, ATTEMPT, ability, and stance numbers. There is nothing for the event to go against.
+- **closed (D-49):** `uem` before a say word's yes (`uem hwavam`, `uem hwadam`, `uem hwazal`) (`frameKind`).
 
 ## Hook compounds
 
@@ -185,6 +185,17 @@ Source: none.
 
 - **open:** role letter + `w` + vowel + consonant + vowel(s) + ending (`zwuyar`, `zweyual`, `vwovar`, `hweral`, `blwoyar`). The retired kind-indefinite shape ([why](design-decisions.md#kind-indefinites)); `role-consonant-compounds.md` plans to claim it. Parser: no word.
 
+## Say words
+
+Source: [sakes.md](../grammar/sakes.md#say-words)
+
+- **closed ([D-46](design-decisions.md)):** `/th/` on the green, no-entry, or memo root, any ending but **-n** (`tholem`, `thegul`, `thonam`). Parser: `retiredDeonticRoot`.
+- **closed (D-46):** a bare **`v`** say word on **-m** in a statement whose speaker is a participant (`zuwon vowurel hwavam.`). It would be the speaker's say over their own act, which is their part (`hwazem`). Parser: `saySpeaker`.
+- **open:** **-x** on a say word (`hwavamx`). A group's say comes from a group in the clause, and no other reading is guessable. Parser: `pluralOnPos`.
+- **open:** a say word off `/h/` (`zwavam`, `gwavam`). Off `/h/` the shape is a role pointer's. Parser: `saySlot`.
+- **open:** **-n** on a say word (`hwavan`), as on other closed families. Parser: no word.
+- **open:** a `bl-` word after a participant's say (`z` / `d` / `b`) without pair scope **`o`** (`hwadam blolazun`). The participant is already in the clause. Parser: `sayHost`.
+
 ## Pronouns and plurality
 
 Source: [pronouns.md](../grammar/pronouns.md), [plurality.md](../grammar/plurality.md)
@@ -226,7 +237,7 @@ Source: [dependents.md](../grammar/dependents.md#stand-in)
 - **closed (D-32):** a stand-in on `/ɡ/` (`garl`).
 - **open:** forward, back and named stand-ins (`-rl` `-rm` `-rth` `-rn`) on `/h/` `/w/` `/th/` (`harth`, `tharn`) and on `/x/` `/y/`. Not guessable: a sentence filling an adverb slot could be its manner, its time, or its condition, and `/x/` and `/y/` words already open sentences. *Such* is whole-stem **-r** and *like that* is `hewom blarth`. Parser: `standInRole`.
 - **open:** **-x** on a stand-in. A stand-in stands for what a sentence says, which is not a group.
-- **open:** a stance-only dependent (`dependentStanceOnly`): the sentence after a stand-in needs a noun or a verb, except a lone sake word. A lone stance there adds nothing: `hezom blarl thegul` says what `uem thegul` says.
+- **open:** a stance-only dependent (`dependentStanceOnly`): the sentence after a stand-in needs a noun or a verb, except a lone sake word. A lone stance there adds nothing: `hezom blarl hwavul` says what `uem hwavul` says.
 
 ## Sentence linkers (`/x/`)
 

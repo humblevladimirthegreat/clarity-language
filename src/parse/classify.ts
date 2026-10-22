@@ -440,30 +440,33 @@ export function isGroundsChannel(word: LexWord, tables: ClassifyTables): boolean
   return row?.kind === "evidential" && GROUNDS_CHANNELS.has(row.gloss.split(".")[0]!);
 }
 
-/** Closed `/h/` kinds that cover the whole clause: tries, ability, consent, the books (clause.md#intention-adverbs). */
-const CLAUSE_ADVERB_KINDS = new Set(["attempt", "ability", "deontic", "residue", "former_climate"]);
+/** Closed `/h/` kinds that cover the whole clause: tries, ability, the books (clause.md#intention-adverbs). A say word does too. */
+const CLAUSE_ADVERB_KINDS = new Set(["attempt", "ability", "residue", "former_climate"]);
 
 /**
- * An `/h/` intention adverb (ATTEMPT, hostless ability, consent) or a books word (RESIDUE, FORMER):
+ * An `/h/` intention adverb (ATTEMPT, hostless ability, a say word) or a books word (RESIDUE, FORMER):
  * it covers the whole clause wherever it sits, and the grammar treats it like a `/th/` word (clause.md#intention-adverbs).
  */
 export function isClauseAdverb(word: LexWord): boolean {
   if (word.pos !== "h") return false;
+  if (word.family.kind === "say") return true;
   if (word.reading === "ability") return word.hostOverlay?.kind === "ability";
   return !!word.overlay && CLAUSE_ADVERB_KINDS.has(word.overlay.kind);
 }
 
 /** Closed `/th/` or clause-adverb kinds a rank fence takes as its bar: each sets a value to rank against (comparatives.md#bars). */
-const BAR_OVERLAY_KINDS = new Set(["evidential", "former_climate", "notional", "plan", "want", "ability", "deontic"]);
+const BAR_OVERLAY_KINDS = new Set(["evidential", "former_climate", "notional", "plan", "want", "ability"]);
 
 /**
  * A `/th/` word or clause adverb that can be a rank fence's bar: a met sake word, an ability word, a channel, FORMER,
- * NOTIONAL, PLAN, WANT, permission, requirement, consent, a holder on one of those, or a speaker attitude (an ordinary
- * content root on `/th/`). Poles, MAY, MIRATIVE, DECISION, ATTEMPT, and the deontic noes set no value.
+ * NOTIONAL, PLAN, WANT, a say word that allows or requires, a holder on one of those, or a speaker attitude (an ordinary
+ * content root on `/th/`). Poles, MAY, MIRATIVE, DECISION, ATTEMPT, and a say word's no or *their call* set no value.
  */
 export function isBarStance(word: LexWord, tables: ClassifyTables): boolean {
   if (word.pos !== "th" && !isClauseAdverb(word)) return false;
   const family = word.family;
+  // A say word sets a value when it allows or requires (sakes.md#say-words); a no or *their call* sets none.
+  if (family.kind === "say") return family.answer === "a" || family.answer === "e";
   if (word.reading === "sake") return family.kind === "x" && family.stanceVowel === "a" && !family.horizon;
   if (word.reading === "ability") return true;
   const row =
@@ -472,48 +475,32 @@ export function isBarStance(word: LexWord, tables: ClassifyTables): boolean {
       : word.overlay
         ? tables.overlays.get(overlayKey(word.pos!, word.overlay.senseForm))
         : undefined;
-  if (row) return BAR_OVERLAY_KINDS.has(row.kind) && !isDeonticNo(row, tables);
+  if (row) return BAR_OVERLAY_KINDS.has(row.kind);
   return word.reading === "ordinary" && family.kind === "content";
 }
 
 /** Closed `/th/` or clause-adverb kinds `uem` takes as its frame: each has content an event can go against (sakes.md#contrary-to-stance). */
-const FRAME_OVERLAY_KINDS = new Set(["evidential", "plan", "decision", "want", "deontic"]);
+const FRAME_OVERLAY_KINDS = new Set(["evidential", "plan", "decision", "want"]);
 
 /**
  * A `/th/` word or clause adverb that can be the frame of `uem` *contrary to*: a channel (or a holder on one), PLAN,
- * DECISION, WANT, a ban, a requirement, a refusal, or a speaker attitude (an ordinary content root on `/th/`). Sakes,
- * permission and consent given, poles, MAY, NOTIONAL, MIRATIVE, RESIDUE, FORMER, CAUSE, ATTEMPT, and ability say
+ * DECISION, WANT, a say word's no or requirement, or a speaker attitude (an ordinary content root on `/th/`). Sakes,
+ * a say word's yes or *their call*, poles, MAY, NOTIONAL, MIRATIVE, RESIDUE, FORMER, CAUSE, ATTEMPT, and ability say
  * nothing an event can contradict.
  */
 export function isFrameStance(word: LexWord, tables: ClassifyTables): boolean {
   if (word.pos !== "th" && !isClauseAdverb(word)) return false;
   const family = word.family;
+  // A ban or a requirement can be gone against; a yes lifts a restriction, and *their call* sets none (D-49).
+  if (family.kind === "say") return family.answer === "u" || family.answer === "e";
   const row =
     family.kind === "x" && family.xFamily === "holder"
       ? tables.overlays.get(overlayKey("th", `${family.leftRoots[0]}${family.grade}`))
       : word.overlay
         ? tables.overlays.get(overlayKey(word.pos!, word.overlay.senseForm))
         : undefined;
-  if (row) return FRAME_OVERLAY_KINDS.has(row.kind) && !isDeonticYes(row, tables);
+  if (row) return FRAME_OVERLAY_KINDS.has(row.kind);
   return word.reading === "ordinary" && family.kind === "content";
-}
-
-/** A permit or consent-given row: it shares the PERMIT rows' emoji (sakes.md#permission). */
-function isDeonticYes(row: OverlayRow, tables: ClassifyTables): boolean {
-  if (row.kind !== "deontic") return false;
-  for (const other of tables.overlays.values()) {
-    if (other.kind === "deontic" && other.gloss.startsWith("PERMIT") && other.emoji === row.emoji) return true;
-  }
-  return false;
-}
-
-/** A forbid or consent-refused row: it shares the FORBID rows' emoji (sakes.md#permission). */
-function isDeonticNo(row: OverlayRow, tables: ClassifyTables): boolean {
-  if (row.kind !== "deontic") return false;
-  for (const other of tables.overlays.values()) {
-    if (other.kind === "deontic" && other.gloss.startsWith("FORBID") && other.emoji === row.emoji) return true;
-  }
-  return false;
 }
 
 /** Arrow-rose roots (roles.md#arrow-rose-compass-vs-face); `DIR th o` on these is a landmark lateral. */

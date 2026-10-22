@@ -114,7 +114,17 @@ export type MorphWordFamily =
    * Tag pronoun: role letter + `w` + tag vowel (A, E, O, U) + ending (`zwal`, `zwar`, `zwam`; pronouns.md#tag-pronouns).
    * A stacked vowel is two tags at once (`zwaer` *A and E*), in written order.
    */
-  | { kind: "tag"; vowels: TagVowel[] };
+  | { kind: "tag"; vowels: TagVowel[] }
+  /**
+   * Say word: `h` + `w` + label scope + whose say + answer + ending (`hwavam` *you may*, `hwadum` *they refused*;
+   * sakes.md#say-words). The part is the doer `z`, the one it's done to `d`, the recipient `b`, or someone over the act `v`.
+   */
+  | { kind: "say"; scope: ScopeVowel; part: SayPart; answer: SayAnswer };
+
+/** Whose say a say word gives (sakes.md#say-words). */
+export type SayPart = "z" | "d" | "b" | "v";
+/** What they said: `a` allow, `u` forbid, `e` require, `o` their call (sakes.md#say-words). */
+export type SayAnswer = "a" | "e" | "o" | "u";
 
 /** Tag pronoun vowel, named by its letter name: A, E, O, U (pronouns.md#tag-pronouns). */
 export type TagVowel = "a" | "e" | "o" | "u";

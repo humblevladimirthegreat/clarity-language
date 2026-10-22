@@ -15,9 +15,9 @@ Time and discourse dependents use the same **`blarl`** hang as *if* / *because*.
 | *although* / *while* / *whilst* / *until* / *till* / *before* / *after* | same pole + **`blarl`** shape on adverb `/h/`, **-m** ([dependent clauses](dependents.md#dependent-clauses)): **`hezom`** / **`herem`** / **`harum`** / … |
 | *so that* / *in order to* | same shape: **`hovam`** ([so that](dependents.md#so-that)); NP intended get = **`hovam`** + `/b/` **noun** |
 | *despite* (NP) | same **`hezom`** (or **`gezom`**) + `/b/` **noun**, not a second pole |
-| *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uem`** + the stance it goes against: `uem thegul` / `uem huxegum blolazun` / `uem thagem` / `uem thogol` / `uem thebam` ([contrary to a stance](sakes.md#contrary-to-stance)) |
-| *though I promised* / *breaking my promise* | **`hezom blarl`** + the promise as its own sentence: `zuwon vezuvol hezom blarl zuwon vowurel huxolel.` (*I sleep, although I promised to walk*) ([contrary to a stance](sakes.md#contrary-to-stance)) |
-| *after they took back their yes* / *more than they agreed to* | a yes taken back is a no: **`uem huxegum blolazun`**; past the agreed terms is the consent bar **`huxolem`** ([every bar](comparatives.md#stance-bars)) |
+| *against the rules* / *against their will* / *contrary to the plan* / *against my decision* / *contrary to what I was told* | hook **`uem`** + the stance it goes against: `uem hwavul` / `uem hwadum` / `uem thagem` / `uem thogol` / `uem thebam` ([contrary to a stance](sakes.md#contrary-to-stance)) |
+| *though I promised* / *breaking my promise* | **`hezom blarl`** + the promise as its own sentence: `zuwon vezuvol hezom blarl zuwon vowurel hwazal.` (*I sleep, although I promised to walk*) ([contrary to a stance](sakes.md#contrary-to-stance)) |
+| *after they took back their yes* / *more than they agreed to* | a yes taken back is a no: **`uem hwadum`**; past the agreed terms is the consent bar **`hwadam`** ([every bar](comparatives.md#stance-bars)) |
 | *judging by* / *going by* / *given that* (grounds) | inferring or pattern channel + **`blarl`**: **`theyem blarl`** / **`thubem blarl`** ([evidence clause](knowing.md#evidence-clause)) |
 | *therefore* / *thus* / *hence* / *consequently* / *as a result* / *accordingly* (discourse) | **`xahem`** ([continue](dependents.md#continue-x)) |
 | *it follows that* / *necessarily, then* (a deduction from the last sentence) | **`xahel`** ([sentence linkers](dependents.md#sentence-linkers)) |
@@ -251,8 +251,8 @@ English turns reasons and feelings into nouns (*condition*, *motivation*, *satis
 | *condition* (*on the condition that*) | `thohom blarl` / `thebom blarl` | if / only if |
 | *factor* (one cause among several) | `thahur blarl` | a share of the fault or cause |
 | *circumstance* / *context* | a dependent after `blarl` (`herem blarl`, `thahum blarl`) | the situation as a clause |
-| *requirement* / *demand* | `thonal` / `thonam` / `thonar` | rule, person, or expectation |
-| *necessary* / *unnecessary* | `thonal` on the act; *more than needed* is the sake bar `thudatham zel` | required by a rule; past what the need asks |
+| *requirement* / *demand* | `hwavel` / `hwavem` / `hwaver` | rule, person, or expectation |
+| *necessary* / *unnecessary* | `hwavel` on the act; *more than needed* is the sake bar `thudatham zel` | required by a rule; past what the need asks |
 | *motivation* / *motive* | `zuwon vowurel thawothom.` | my reason; someone else's motive takes a [holder](knowing.md#holder) |
 | *satisfaction* / *pleasure* | `thodotham.` | pleasure, met |
 | *desire* / *wish* | `zuzozen thalem vowurel.` | I want Uzozen to walk; someone else's wish takes a [holder](knowing.md#holder) |
@@ -477,7 +477,7 @@ English *useful*, *helpful*, *important* and *benefit* judge a thing by what it 
 | *benefit* / *benefits Olazun* | `thawotham blolazun` | the act met Olazun's sake |
 | *advantage* (a lead over someone) | `zel` with the scale | rank against the other |
 | *satisfy* (you) | `thawotham blawan` | the act met your sake |
-| *satisfy* (a requirement) | `thonal zoel` + scale | tie against the rule: it meets the requirement |
+| *satisfy* (a requirement) | `hwavel zoel` + scale | tie against the rule: it meets the requirement |
 | *suitable* / *appropriate* (for a need) | `guwatham` or `thudatham zoel` | met, or enough for the need |
 | *more important than* | `zel` between the nouns, then `gurethal` | rank on the lasting met sake |
 | *upset* | `wawothumar goyem` | relatedness, unmet, held inside, surging |
@@ -560,8 +560,8 @@ English *deserve* says something is owed without saying why. Name the ground. It
 | English | Agebon | Reading |
 |---------|--------|---------|
 | *deserves* (it would be fair) | `zolazun demebel vewal buzozen halurem thudathem.` | Olazun ought to give Uzozen the medal, fairly |
-| *deserves* / *is entitled to* (a thing, by right) | `zolazun demebel vewal buzozen thonal.` | the rules require Olazun to give it |
-| *is entitled to* (an act) | `zuzozen vowurel tholel.` | the rules allow Uzozen to walk |
+| *deserves* / *is entitled to* (a thing, by right) | `zolazun demebel vewal buzozen hwavel.` | the rules require Olazun to give it |
+| *is entitled to* (an act) | `zuzozen vowurel hwaval.` | the rules allow Uzozen to walk |
 | *earned* / *merited* (by effort) | `zuzozen varuvel heham blemebel.` | ran in exchange for the medal ([earn](say-people-places.md#give-get)) |
 
 > `zolazun demebel vewal buzozen halurem thudathem.`

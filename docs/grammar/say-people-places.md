@@ -509,7 +509,7 @@ An English noun like *case* or *board* covers several jobs, and Agebon has a dif
 | *deal* / *bargain* (a swap) | `zuzozen danal heham blaral veham.` | trades a book for money |
 | *deal* (*a great deal*) | `thubem zel gral` | more than the usual amount |
 | *bid* / *offer* (a price) | `zuzozen daral vewal heham blanal.` | offers money in exchange for the book |
-| *contract* (agreement) | `huxolel` on the clause | CONSENT, binding |
+| *contract* (agreement) | `hwadal` on the clause | they signed on: a binding yes |
 | *figure out* / *find out* | `zuzozen danal vumewol.` | finds the object |
 | *figure* (shape) | `zuvogal` | a frame |
 | *object* (a thing) | `zar` | an unnamed thing |

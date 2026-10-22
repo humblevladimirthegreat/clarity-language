@@ -43,10 +43,10 @@ Each vowel always sounds the same; two vowels in a row are two beats. All other 
 
 | | **-l** by a rule | **-m** by a person | **-r** no one's word |
 |-|------------------|--------------------|----------------------|
-| allowed | `tholel` | `tholem` | `tholer` tolerated |
-| forbidden | `thegul` | `thegum` | `thegur` frowned on |
-| required | `thonal` | `thonam` | `thonar` by custom |
-| agreed (the affected person) | `huxolel` in advance | `huxolem` said yes, can take it back | `huxoler` assumed OK |
+| allowed | `hwaval` | `hwavam` | `hwavar` tolerated |
+| forbidden | `hwavul` | `hwavum` | `hwavur` frowned on |
+| required | `hwavel` | `hwavem` | `hwaver` by custom |
+| agreed (the affected person) | `hwadal` in advance | `hwadam` said yes, can take it back | `hwadar` assumed OK |
 
 ## Suffixes on English words {#suffixes}
 

@@ -199,60 +199,40 @@ Motion is how the feeling moves, not how strong it is. For strength, put a [degr
 | [A feeling about an event](../sakes.md#feeling-no-object) | `zolazun vowurel thawothamar` | *moved that Olazun walks* | I |
 | [Naming it plainly](../sakes.md#emotion-compose) | `zuwon gunemul` | *I am angry* | I |
 
-## Allowed and required {#deontic}
+## Allowed, required, agreed {#deontic}
 
-Each is a `/th/` word on the clause. The ending says where the rule comes from: **-l** a rule, **-m** a person (the speaker, or the `/b/`), **-r** custom or nobody. When unsure, use **-m**.
-
-<!-- generated: overlays kind=deontic -->
-| Agebon | English | Taught in | Stage |
-|--------|---------|-----------|-------|
-| `huxegul` | binding refusal by the affected (a settled opt-out) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
-| `huxegum` | consent refused outright by the affected (withdraws any earlier revocable yes) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
-| `huxegur` | consent presumed absent from the affected (they probably don't want it) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
-| `huxolel` | consent by binding agreement from the affected (the /b/ or else the actor); withdrawing it has terms | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
-| `huxolem` | consent given outright by the affected (the /b/ or else the actor); revocable any time | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
-| `huxoler` | consent assumed or inferred from the affected (the /b/ or else the actor) | [Consent (huxolel / huxolem / huxoler)](../sakes.md#consent) | I |
-| `thegul` | disallowed by a rule policy or formal ban | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
-| `thegum` | forbidden by a person (speaker by default or the /b/ forbidder) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
-| `thegur` | tacitly disapproved (no one forbade it outright) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
-| `tholel` | permission from a rule policy or formal right (no one in particular grants it) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
-| `tholem` | permission granted by a person (speaker by default or the /b/ grantor) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
-| `tholer` | tacit permission (no one objected; nobody granted it) | [Permission (tholel / tholem / tholer)](../sakes.md#permission) | I |
-| `thonal` | required by a rule policy or law (no one in particular demands it) | [Requirement (thonal / thonam / thonar)](../sakes.md#requirement) | I |
-| `thonam` | required by a person (speaker by default or the /b/ who demands it) | [Requirement (thonal / thonam / thonar)](../sakes.md#requirement) | I |
-| `thonar` | expected by custom (no rule and no one demanding it) | [Requirement (thonal / thonam / thonar)](../sakes.md#requirement) | I |
-<!-- /generated -->
+A [say word](../sakes.md#say-words) on `/h/`: **`h`** **`w`**, a scope vowel, whose say, the answer, and an ending. Whose say: **`v`** someone over the act (the speaker, or the `bl-` word after), **`z`** the doer, **`d`** the one it's done to, **`b`** the recipient. Answer: **`a`** allow, **`u`** forbid, **`e`** require, **`o`** their call. Ending: **-l** a rule or binding agreement, **-m** a person said so, **-r** nobody said. When unsure, use **-m**. All Intermediate.
 
 | Job | Example | English | Stage |
 |-----|---------|---------|-------|
-| [Permission, granted](../sakes.md#permission) | `zuzozen vowurel tholem.` | *Uzozen may walk; I'm allowing it.* | I |
-| [Permission, by someone](../sakes.md#permission) | `zuzozen vowurel tholem blolazun.` | *Olazun lets Uzozen walk.* | I |
-| [Permission, by rule](../sakes.md#permission) | `zahelan vuhohol tholel.` | *Ahelan is allowed to sit.* | I |
-| [Tolerated](../sakes.md#permission) | `zolazun vezuvol tholer.` | *no one is stopping it* | I |
-| [Ask permission](../sakes.md#permission) | `yom zuwon vuhohol tholem.` | *May I sit?* | I |
-| [Requirement, by rule](../sakes.md#requirement) | `zuzozen vowurel thonal.` | *The rules require Uzozen to walk.* | I |
-| [Requirement, by a person](../sakes.md#requirement) | `zahelan vuhohol thonam blolazun.` | *Olazun makes Ahelan sit.* | I |
-| [Requirement, by custom](../sakes.md#requirement) | `zolazun vezuvol thonar.` | *Olazun is supposed to sleep.* | I |
-| [Consent](../sakes.md#consent): who it happens to, in `/b/` | `zuzozen vezuyel huxolem blahelan.` | *Uzozen tells, and Ahelan said yes.* | I |
-| [Binding consent](../sakes.md#consent) | `zuzozen vezuyel huxolel blahelan.` | *as Ahelan agreed in advance* | I |
-| [Assumed consent, several people](../sakes.md#consent) | `zuzozen vezuyel huxoler blahelan blolazun bal.` | *assuming Ahelan and Olazun are OK* | I |
-| [Consent, no `/b/`](../sakes.md#consent): only the actor | `zolazun vezuvol huxolem.` | *Olazun lets themself sleep.* | I |
-| [A promise](../sakes.md#consent) | `zuwon vowurel huxolel.` | *I promise to walk.* (to you) | I |
-| [Promise to someone else](../sakes.md#consent) | `zuwon vowurel huxolel el bahelan.` | *I promise Ahelan I'll walk.* | I |
-| [Check in](../sakes.md#consent) | `yom zuzozen vezuyel huxolem.` | *Are you still OK with this?* | I |
-| [Contrary to a stance](../sakes.md#contrary-to-stance): `uem` first | `zuzozen vowurel uem thegul.` | *Uzozen walks anyway.* | I |
+| [Permission, granted](../sakes.md#say-words) | `zuzozen vowurel hwavam.` | *Uzozen may walk; I'm allowing it.* | I |
+| [Permission, by someone](../sakes.md#say-words) | `zuzozen vowurel hwavam blolazun.` | *Olazun lets Uzozen walk.* | I |
+| [Permission, by rule](../sakes.md#say-words) | `zahelan vuhohol hwaval.` | *The rules allow Ahelan to sit.* | I |
+| [Requirement, by custom](../sakes.md#say-words) | `zolazun vezuvol hwaver.` | *Olazun is supposed to sleep.* | I |
+| [Ask permission](../sakes.md#say-words) | `yom zuwon vuhohol hwavam.` | *May I sit?* | I |
+| [Your own *have to*](../sakes.md#say-words): say who requires it | `zuwon vowurel hwavel.` / `zuwon vowurel hwazem.` | *I have to walk: the rules / I'm making myself* | I |
+| [Consent, by the recipient](../sakes.md#say-words) | `zuzozen vezuyel bahelan hwabam.` | *Uzozen tells Ahelan, and Ahelan said yes.* | I |
+| [Consent, by the one it's done to](../sakes.md#say-words) | `zuzozen dolazun vawebol hwadam.` | *Uzozen looks at Olazun, and Olazun agreed.* | I |
+| [Assumed consent, several people](../sakes.md#say-words) | `zuzozen vezuyel bahelan bolazun bal hwabar.` | *assuming Ahelan and Olazun are OK* | I |
+| [Letting yourself](../sakes.md#say-words) | `zolazun vezuvol hwazam.` | *Olazun lets themself sleep.* | I |
+| [A promise](../sakes.md#say-words) | `zuwon vowurel hwazal.` | *I promise to walk.* (to you) | I |
+| [Promise to someone else](../sakes.md#say-scope): pair scope **`o`** | `zuwon vowurel hwozal blahelan.` | *I promise Ahelan I'll walk.* | I |
+| [Check in](../sakes.md#say-words) | `yom zuwon vezuyel bawan hwabam.` | *Are you still OK with me telling you?* | I |
+| [Contrary to a stance](../sakes.md#contrary-to-stance): `uem` first | `zuzozen vowurel uem hwavul.` | *Uzozen walks anyway.* | I |
 
-The negatives use the same endings: `thegul` / `thegum` / `thegur` forbid, `huxegul` / `huxegum` / `huxegur` refuse.
+| Answer | [**`v`** someone over the act](../sakes.md#say-words) | **`z`** the doer | **`d`** the one it's done to | **`b`** the recipient | Stage |
+|--------|-------------------|------------------|------------------------------|-----------------------|-------|
+| **`a`** | `hwavam` *you may* | `hwazam` *lets themself* | `hwadam` *they agreed* | `hwabam` *the recipient agreed* | I |
+| **`u`** | `hwavum` *you may not* | `hwazum` *won't let themself* | `hwadum` *they refused* | `hwabum` *the recipient refused* | I |
+| **`e`** | `hwavem` *you have to* | `hwazem` *makes themself* | `hwadem` *at their request* | `hwabem` *at the recipient's request* | I |
+| **`o`** | `hwavom` *it's up to you* | `hwazom` *their own choice* | `hwadom` *it's their call* | `hwabom` *the recipient's call* | I |
 
-<!-- cheat-sheet: why-allowed -->
-| Agebon | Use | English | Stage |
-|--------|-----|---------|-------|
-| [`huxolel`](../sakes.md#consent) | a binding agreement | *by agreement* / *they signed on* | I |
-| [`huxolem`](../sakes.md#consent) | the affected said yes; they can take it back | *they agreed* | I |
-| [`huxoler`](../sakes.md#consent) | assumed or inferred | *I think they're OK with it* | I |
-| [`huxegul`](../sakes.md#consent) | a binding refusal | *they opted out* | I |
-| [`huxegum`](../sakes.md#consent) | the affected said no | *they refused* | I |
-| [`huxegur`](../sakes.md#consent) | presumed absent | *they probably don't want it* | I |
+| [Scope](../sakes.md#say-scope) | Example | English | Stage |
+|-------|---------|---------|-------|
+| **`a`** this act | `hwadam` | *they agreed to this* | I |
+| **`e`** standing | `hwedam` / `hwevam` | *they're generally fine with it* / *you may, any time* | I |
+| **`o`** toward one party | `hwovam blolazun` | *fine as far as Olazun is concerned* | I |
+| **`u`** a type | `hwudam` | *they're the type who's fine with it* | I |
 
 ## Don't mix up {#dont-mix-up}
 
@@ -262,7 +242,8 @@ The negatives use the same endings: `thegul` / `thegum` / `thegur` forbid, `huxe
 | `thohom` *if* ([other routes remain](../causation.md#only-if)) | | `thebom` *only if* ([the outcome needs it](../causation.md#only-if)) |
 | `thahum` *because* ([a cause, no blame](../causation.md#fault)) | | `thahul` *fault* ([someone did wrong](../causation.md#fault)) |
 | `thahum` *because* ([the condition](../causation.md#cause)) | | `thewem` *mechanism* ([how it is produced](../causation.md#cause)) |
-| `tholem` *may* ([anyone with standing allows it](../sakes.md#permission)) | | `huxolem` *the affected agreed* ([their own yes](../sakes.md#consent)) |
-| `tholem` *may* ([the act is allowed](../sakes.md#permission)) | | `thonam` *has to* ([the act is demanded](../sakes.md#requirement)) |
+| `hwavam` *may* ([someone over the act allows it](../sakes.md#say-words)) | | `hwadam` *they agreed* ([the yes of the one it's done to](../sakes.md#say-words)) |
+| `hwavam` *may* ([the act is allowed](../sakes.md#say-words)) | | `hwavem` *has to* ([the act is demanded](../sakes.md#say-words)) |
+| `hwavel` *the rules require it* ([an outside demand](../sakes.md#say-words)) | | `hwazer` *I feel I have to* ([an unspoken should](../sakes.md#say-words)) |
 | `thawothem` *ought to, for relatedness* ([advice for a sake](../sakes.md#sake-force)) | | `thawothom` *for relatedness* ([why it is done](../sakes.md#sake-preference)) |
 | `thawotham` *thank you* ([my sake is met](../sakes.md#thanks-sorry)) | | `thawothum blawan` *I'm sorry* ([your sake is hurt](../sakes.md#thanks-sorry)) |

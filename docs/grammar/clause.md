@@ -96,7 +96,7 @@ A stance is yours **now**, as you speak.
 
 ### Intention adverbs {#intention-adverbs}
 
-An ability does not say the act happens: *can walk* is not *walks*. A try and a consent do say it happens.
+An ability does not say the act happens: *can walk* is not *walks*. A try and a yes do say it happens.
 
 ### Extra nouns (`/b/`) {#extra-nouns}
 

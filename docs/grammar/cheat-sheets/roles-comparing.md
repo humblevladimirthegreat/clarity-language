@@ -251,8 +251,8 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [Than I expected](../comparatives.md#stance-bars) | `zuzozen thabom zel guzemol.` | *Uzozen is sleepier than I expected.* | A |
 | [Than they used to be](../comparatives.md#stance-bars) | `zuzozen helam zel guzemol.` | *Uzozen is sleepier than they used to be.* | A |
 | [As … as possible](../comparatives.md#stance-bars) | `zolazun hodaxal zoel hedurem vowurel.` | *Olazun walks as hastily as possible.* | A |
-| [Up to code](../comparatives.md#stance-bars) | `zahehal thonal zoel gobobom.` | *The house is as strong as the rules require.* | A |
-| [More than allowed](../comparatives.md#stance-bars) | `zududal tholel zel gral.` | *There is more tea than the rules allow.* | A |
+| [Up to code](../comparatives.md#stance-bars) | `zahehal hwavel zoel gobobom.` | *The house is as strong as the rules require.* | A |
+| [More than allowed](../comparatives.md#stance-bars) | `zududal hwaval zel gral.` | *There is more tea than the rules allow.* | A |
 | [Than hoped](../comparatives.md#stance-bars) | `zanal thoguyem zel gagebom.` | *The book is clearer than I hoped.* | A |
 | [Than feared](../comparatives.md#stance-bars) | `zanal thewemum zuel gagebom.` | *The book is even less clear than I feared.* | A |
 
@@ -273,12 +273,12 @@ Put a `/th/` stance word where the second name would go, right before the rank j
 | [PLAN `thagem`](../comparatives.md#stance-bars) | the plan or the schedule | *than planned* / *than scheduled* | A |
 | [WANT `thalel` / `thalem` / `thaler`](../comparatives.md#stance-bars) | the level wanted | *than wanted* / *than I wanted* | A |
 | [ABIL `hodaxal`](../comparatives.md#stance-bars) | what can be done | *as … as possible* | A |
-| [REQUIRE `thonal` / `thonam` / `thonar`](../comparatives.md#stance-bars) | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* | A |
-| [PERMIT `tholel` / `tholem` / `tholer`](../comparatives.md#stance-bars) | the rule, the grant, or what is tolerated | *over the limit* / *than they allow* | A |
-| [CONSENT `huxolem`](../comparatives.md#stance-bars) | the agreed terms | *more than agreed* | A |
+| [a requirement `hwavel` / `hwavem` / `hwaver`](../comparatives.md#stance-bars) | the rule, the demand, or custom | *up to code* / *than demanded* / *than customary* | A |
+| [a permission `hwaval` / `hwavam` / `hwavar`](../comparatives.md#stance-bars) | the rule, the grant, or what is tolerated | *over the limit* / *than they allow* | A |
+| [consent `hwadam`](../comparatives.md#stance-bars) | the agreed terms | *more than agreed* | A |
 | [speaker attitude `thoguyem`, `thewemum`](../comparatives.md#stance-bars) | the case you hoped for or feared | *than hoped* / *than feared* | A |
 
-The bar's ending keeps its own job: on a channel it is evidence strength (`thubel`, `thuber`). The bar's `/b/` is the source (REPORTED), the holder (WANT, REQUIRE, PERMIT, CONSENT), or whose cases set the pattern (PATTERN). Only stances that set a value are bars: a pole, MAY, MIRATIVE, DECISION, and ATTEMPT are not.
+The bar's ending keeps its own job: on a channel it is evidence strength (`thubel`, `thuber`). The bar's `/b/` is the source (REPORTED), the holder (WANT, a say word over the act), or whose cases set the pattern (PATTERN). Only stances that set a value are bars: a pole, MAY, MIRATIVE, DECISION, and ATTEMPT are not.
 
 ### Vague amounts {#vague}
 

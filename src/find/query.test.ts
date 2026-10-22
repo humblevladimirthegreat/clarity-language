@@ -109,8 +109,8 @@ describe("collectExamples", () => {
 describe("learner name slot", () => {
   it("parses SELF examples with the default learner root", () => {
     assert.deepEqual(
-      collectExamples("`yom zSELFn vuhohol tholem.`", tables).map((e) => e.text),
-      ["yom zuwon vuhohol tholem."],
+      collectExamples("`yom zSELFn vuhohol hwavam.`", tables).map((e) => e.text),
+      ["yom zuwon vuhohol hwavam."],
     );
   });
 });
