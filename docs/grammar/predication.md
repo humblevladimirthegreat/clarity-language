@@ -495,11 +495,11 @@ The four scope vowels also combine in pairs, the same pairs that [joins](joins.m
 >
 > "Uzozen is an angry type, except with Olazun."
 
-> `zuwon gwuezuduyel.`
+> `zuzozen gwuezuduyel.`
 >
-> z-speaker | g-outside-role-agent-teach
+> z-Uzozen | g-outside-role-agent-teach
 >
-> "I am not speaking as a teacher."
+> "Uzozen is not a teacher here."
 
 > `zuzozen gwaozuduyel blolazun.`
 >

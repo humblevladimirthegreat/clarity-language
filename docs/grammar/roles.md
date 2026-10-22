@@ -379,6 +379,31 @@ On `/z/`, `/d/`, and `/b/`, pair scope **`o`** stands alone: the party is the on
 
 Scope works on [role pointers](pronouns.md#role-pointers) too. `zwazar` is *the latest doer*; `zwezar` is *the latest doer, in their practiced role*: after *Uzozen teaches*, `zwezar` is Uzozen as a teacher. With **-m** it gives a useful contrast: `dwazam` is *what they did (this time)*, and `dwezam` is *their practice, their craft*.
 
+### The role you act in (`/h/`) {#capacity}
+
+English *as a teacher, I …* names the role the act is done in, not a person standing in the clause. Write the same role compound, with a slot part (`z`, `d`, or `b`), on `/h/`: a person cannot be an adverb, so the word is the capacity the act is done in.
+
+> `zuzozen vezuyel hwezuduyel.`
+>
+> z-Uzozen | v-tell | h-role-agent-teach
+>
+> "Uzozen speaks as a teacher."
+
+The scope vowel does its usual work. Pair scope **`o`** takes its `bl-` party, as on `/ɡ/`.
+
+| Agebon | English |
+|--------|---------|
+| `hwazuduyel` | *as the one teaching this time* |
+| `hwezuduyel` | *as a teacher* |
+| `hwozuduyel blolazun` | *as Olazun's teacher* |
+| `hwuezuduyel` | *not as a teacher* (off duty) |
+| `hwedobebul` | *as a patient* (the one a doctor treats) |
+| `hwebezuyel` | *as a confidant* |
+
+**Compare with:** resemblance is the [similative](relations.md#similative) (`hewom blwezuduyel` *like a teacher*). An ordinary `/h/` adverb is how the event goes (`hedurem` *hastily*).
+
+**Compare with:** `zuzozen gwezuduyel.` says Uzozen **is** a teacher. `zuzozen vezuyel hwezuduyel.` says the telling is done in that role.
+
 ### Places, tools, and times {#places-tools-times}
 
 A role compound names a participant: the doer, what the event acts on or makes, or the extra `/b/` party. A place, tool, or time is a landmark, brought in with an [extra-noun hook](hooks.md#extra-noun) (`al bahehal` *in a house*, `ael banewul` *using a knife*), and it has no role compound. Name it with words you already have:
@@ -701,12 +726,12 @@ z-Uzozen | v-go | [from | b-island] . z-Olazun | v-swim | from.there
 y-command | v-walk | z-Ahelan | h-west-th-Uzozen
 :::
 
-**6.** *The boat sits west of the island.*
+**6.** *Uzozen goes as a thief.*
 
 ::: details Show answer
-`zebaval vuhohol gowuhel blelahol.`
+`zuzozen vavobel hwezurozum.`
 
-z-boat | v-sit | [g-west | bl-island]
+z-Uzozen | v-go | h-role-agent-theft
 :::
 
 #### Agebon → English {#intermediate-agebon-to-english}

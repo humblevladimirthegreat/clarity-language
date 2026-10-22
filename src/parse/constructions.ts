@@ -36,7 +36,7 @@ const SCOPE_WORDS =
 const SCOPE_READER = `\`-th-\` plus a scope word after a label says how far the label reaches: ${SCOPE_WORDS}.`;
 
 const ROLE_READER =
-  `A role word \`SCOPE-PART-verb\` names one part of the verb's event: \`agent\` the one who does it, \`patient\` what it acts on or makes, \`recipient\` the one it is given or told to, or the other party of a relation; or a quality of that event: \`manner\` how, \`state\` what it left, \`stance\` the reason or feeling, \`extent\` how much, \`move\` the remark, \`outcome\` what followed. The scope word first says how far the label reaches: ${SCOPE_WORDS}. \`z-episode-agent-teach\` = someone who teaches (this time), \`z-role-agent-teach\` = a teacher, \`g-role-agent-teach\` = is a teacher, \`d-episode-manner-walk\` = a way of walking.`;
+  `A role word \`SCOPE-PART-verb\` names one part of the verb's event: \`agent\` the one who does it, \`patient\` what it acts on or makes, \`recipient\` the one it is given or told to, or the other party of a relation; or a quality of that event: \`manner\` how, \`state\` what it left, \`stance\` the reason or feeling, \`extent\` how much, \`move\` the remark, \`outcome\` what followed. The scope word first says how far the label reaches: ${SCOPE_WORDS}. \`z-episode-agent-teach\` = someone who teaches (this time), \`z-role-agent-teach\` = a teacher, \`g-role-agent-teach\` = is a teacher, \`h-role-agent-teach\` = as a teacher (the role the act is done in), \`d-episode-manner-walk\` = a way of walking.`;
 
 /** Sentence grammar: `rule.childKey` (sub-rule, token type, or LABEL). */
 export const SENTENCE_CONSTRUCTIONS: Record<string, ConstructionEntry> = {
@@ -571,9 +571,9 @@ export const SPAN_FEATURE_CONSTRUCTIONS: Record<`mark.${"^@" | "@" | "~"}`, Cons
   "mark.~": { anchor: "spans.md#exact-paraphrase-proper", summary: "~ paraphrase span" },
 };
 
-/** Role words: the part consonant, the label scope after `w`, ability, and the -r instance (roles.md). */
+/** Role words: the part consonant, the label scope after `w`, ability, the -r instance, and capacity on `/h/` (roles.md). */
 export const ROLE_FEATURE_CONSTRUCTIONS: Record<
-  `part.${Exclude<RolePart, "v">}` | `scope.${ScopeVowel}` | "ability" | "instance",
+  `part.${Exclude<RolePart, "v">}` | `scope.${ScopeVowel}` | "ability" | "instance" | "capacity",
   ConstructionEntry
 > = {
   "part.z": { anchor: "roles.md#role-compounds", summary: "agent z" },
@@ -597,6 +597,7 @@ export const ROLE_FEATURE_CONSTRUCTIONS: Record<
   "scope.ue": { anchor: "predication.md#scope-stacks", summary: "not in that capacity ue" },
   ability: { anchor: "intention.md#can-be-role-ability", summary: "role + ability: can be that role" },
   instance: { anchor: "roles.md#this-instance-r", summary: "-r this instance" },
+  capacity: { anchor: "roles.md#capacity", summary: "slot-part role compound on /h/: the role the act is done in" },
 };
 
 /** Role pointers: which part the consonant names, and which event the pointer vowel picks (pronouns.md#role-pointers). */
@@ -688,7 +689,7 @@ export const REJECTIONS = {
   feelingLandmark: { anchor: "sakes.md#emotion-compose", summary: "an INTERNAL (a) or UNPLACED (uo) feeling takes no /b/; a landmark goes with a direction or CIRCUM locus" },
   labelScopeSlot: { anchor: "predication.md#label-scope", summary: "label scope goes on /ɡ/, /z/, /d/, /b/, /v/, or /h/ only" },
   labelScopeStem: { anchor: "predication.md#label-scope", summary: "a scope seam labels a content root, not a special pronoun" },
-  roleCompoundSlot: { anchor: "roles.md#role-compounds", summary: "a role compound goes on /z/, /d/, /b/, /ɡ/, as a topic under /x/, or as a call under /y/ (-n / -r); not on /v/, /h/, /w/, or /th/" },
+  roleCompoundSlot: { anchor: "roles.md#role-compounds", summary: "a role compound goes on /z/, /d/, /b/, /ɡ/, as a topic under /x/, as a call under /y/ (-n / -r), or as capacity under /h/ with a slot part; not on /v/, /w/, or /th/, and not a content part on /h/" },
   roleCompoundStem: { anchor: "roles.md#role-compounds", summary: "a role compound names a role of an event; a special pronoun is not an event" },
   abilitySlot: { anchor: "intention.md#ability", summary: "ability (x + vowel) goes on /v/ or /ɡ/ only; name + x + vowel + -n is a conversation-length bid only as a citation or a /y/ call" },
   labelScopeArrow: { anchor: "roles.md#landmark-facing", summary: "on a direction root the th seam takes only o (the landmark's own facing)" },

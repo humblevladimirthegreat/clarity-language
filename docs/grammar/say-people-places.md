@@ -198,7 +198,7 @@ To keep *Sam* as English spelling, write the span. To see the Agebon sound-spell
 
 ### Who does it: *student*, *singer*, *manager* {#agent-nouns}
 
-**Needs:** [Role compounds (the doer)](roles.md#role-compounds) · [One time or a practice](roles.md#one-time-or-a-practice) · [Saying someone is a teacher](roles.md#saying-someone-is-a-teacher)
+**Needs:** [Role compounds (the doer)](roles.md#role-compounds) · [One time or a practice](roles.md#one-time-or-a-practice) · [Saying someone is a teacher](roles.md#saying-someone-is-a-teacher) · [The role you act in](roles.md#capacity)
 
 English names a person by what they usually do (*a singer*, *a manager*). Agebon builds that noun from the event root: person letter, **`w`**, the practiced-role scope **`e`**, the doer **`z`**, the root, then the ending ([one time or a practice](roles.md#one-time-or-a-practice)). `zwezezuyol` is *a singer* from `ezuyol` *sing*, and on `/ɡ/` (`gwezezuyol`) it says someone is one. With scope **`a`**, `zwazezuyol` is only *someone who sings*. Only roots whose everyday sense is the event work this way, so one stem often covers several English jobs.
 
@@ -269,7 +269,9 @@ Rows with scope **`a`** name a part in one event (*winner*, *witness*, *passenge
 
 A noun that specifies the job goes in the stem: `zwezudozoxowurel` is *a dog walker*. The noun's part in the job is as open as in English.
 
-English *as a teacher, I …* has no one-word form (`/h/` already means manner). Say the role, then the claim (`zuwon gwezuduyel. zuwor vezuyel.`), or use the [similative](relations.md#similative) for *like a teacher* (`hewom blwezuduyel`).
+English *as a teacher, I …* puts the practiced-role compound on `/h/`: `hwezuduyel` is *as a teacher* ([the role you act in](roles.md#capacity)). `hwuezuduyel` is *not as a teacher*, speaking off duty.
+
+**Compare with:** *like a teacher* is the [similative](relations.md#similative) (`hewom blwezuduyel`).
 
 *Shareholder* is *owner* of a part: `zwazogunum gobem blahehal` (owner of a part of the house). *Colleague* is a worker tied to you: `zwezuzubal gohuyam bluwon`. *Relative* is a person who is part of the family: `zeyol gobem blavayal`.
 

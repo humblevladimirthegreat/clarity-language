@@ -148,8 +148,8 @@ Source: [hooks.md](../grammar/hooks.md#hook-compounds)
 
 Source: [roles.md](../grammar/roles.md), [compounds.md](../grammar/compounds.md)
 
-- **open:** a role compound on `/v/` / `/w/` / `/th/`. A role compound names a participant or a quality of an event, and these slots take none: it fills `/z/` `/d/` `/b/` `/ɡ/`, sets a topic under `/x/`, and calls under `/y/`. Parser: `roleCompoundSlot`.
-- **closed (D-34):** a role compound on `/h/` (`hwezuduyel`, `hwahowurel`).
+- **open:** a role compound on `/v/` / `/w/` / `/th/`. A role compound names a participant or a quality of an event, and these slots take none: it fills `/z/` `/d/` `/b/` `/ɡ/`, sets a topic under `/x/`, calls under `/y/`, and on `/h/` takes a slot part as [capacity](../grammar/roles.md#capacity). Parser: `roleCompoundSlot`.
+- **open:** a content-part compound on `/h/` (`hwahowurel`). The manner of an event as an adverb is the ordinary `/h/` word (`howurel`); a person-as-adverb on `/h/` is capacity, which needs a slot part. Parser: `roleCompoundSlot`.
 - **closed:** **`v`** in a role compound (`zwavowurel`). The event noun is the stem itself (`dowurel`). Parser: no word.
 - **closed ([hooked parts](design-decisions.md#hooked-parts-and-the-result)):** a role word for a hooked part (scene, instrument, goal, source, path, bearer) or a separate result. No part consonant names one. Parser: no word.
 - **open:** role letter + vowel(s) + **`x`** + a stem or a pointer vowel (`zaxuduyel`, `zaxar`, `dexar`). The retired role shape; `hook-prefixes.md` plans to claim it. Parser: no word.

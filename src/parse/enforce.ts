@@ -106,8 +106,10 @@ const NO_PLURAL_POS = new Set(["w", "h", "th", "x"]);
 const SAKE_POS = new Set(["g", "th", "w"]);
 /** Label scope goes on content slots (predication.md#label-scope). */
 const SCOPE_POS = new Set(["g", "z", "d", "b", "v", "h"]);
-/** A role compound names a participant (roles.md#role-compounds); `/y/` takes it only as a call (-n / -r). */
-const ROLE_COMPOUND_POS = new Set(["z", "d", "b", "g", "x", "y"]);
+/** Slot-rule parts: the participant that sat in that slot (roles.md#role-compounds). */
+const SLOT_PARTS = new Set(["z", "d", "b"]);
+/** A role compound names a participant or a quality of an event (roles.md#role-compounds); `/y/` takes it only as a call (-n / -r); `/h/` takes a slot part as capacity. */
+const ROLE_COMPOUND_POS = new Set(["z", "d", "b", "g", "h", "x", "y"]);
 /** Ability goes on a verb or a property (intention.md#ability). */
 const ABILITY_POS = new Set(["g", "v"]);
 
@@ -422,7 +424,11 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
   }
   if (family.kind === "x" && family.xFamily === "role" && !word.overlay) {
     const callEnding = word.ending === "n" || word.ending === "r";
-    if (word.pos && (!ROLE_COMPOUND_POS.has(word.pos) || (word.pos === "y" && !callEnding))) {
+    const capacity = word.pos === "h" && !!family.part && SLOT_PARTS.has(family.part);
+    if (
+      word.pos &&
+      (!ROLE_COMPOUND_POS.has(word.pos) || (word.pos === "y" && !callEnding) || (word.pos === "h" && !capacity))
+    ) {
       throw new ConstructionError("roleCompoundSlot", word.raw);
     }
     if (word.ending === "n" && (family.rightRoots ?? []).some((root) => rolePronounRoots().has(root))) {

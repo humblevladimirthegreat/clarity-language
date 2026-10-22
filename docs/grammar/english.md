@@ -93,6 +93,8 @@ English *by*, *for*, *to*, *about*, *as*, *since*, and *against* each cover seve
 | falls short (*not as sleepy as*) | reverse rank **`ue`** | [Reverse rank](comparatives.md#intermediate) |
 | most that can be done (*as fast as possible*, *as small as you can*) | ABIL bar **`hodaxal`** + tie **`oe`** | [Every bar](comparatives.md#stance-bars) |
 | frame one sentence (*as for Uzozen*) | **`hahugem`** + `/b/` | [As-for](say-people-places.md#as-for) |
+| role one acts in (*as a teacher, I …*) | role compound on `/h/`: `hwezuduyel` | [The role you act in](roles.md#capacity) |
+| not in that role (*not as a teacher*, off duty) | scope **`ue`** on `/h/`: `hwuezuduyel` | [The role you act in](roles.md#capacity) |
 | resemblance (*walks as / like a duck*) | **`hewom`** + `/b/` | [Simile](relations.md#similative) |
 | how close (*exactly like*, *a bit like*) | **`hewol`** for an exact match (`hewol bludozal`), or `/w/` before **`hewom`**: `wubugom hewom bludozal` (*precisely*), `wamezom hewom bludozal` (*a bit*) | [Exactly like](relations.md#exactly-like), [simile](relations.md#similative), [degree words](clause.md#degree-w) |
 | resemblance to an event (*walks the way a duck swims*, *as a hand moves through hair*) | **`hewom blarl`** + the event | [Simile](relations.md#similative) |
@@ -252,7 +254,9 @@ English builds several words from one verb: *walking*, *walker*, *walked*. Agebo
 | *a lying type*, *an anxious type* | **`thu`** on the root: `zuzozen valamuthul` | [Type across scenes](predication.md#scope-type) |
 | *this once, to Olazun* | **`thao`** plus `/b/`: `valamuthaol blolazun` | [Stacked scope](predication.md#scope-stacks) |
 | *becoming a teacher* | scope **`oe`**: `gwoezuduyel` | [Scope across scenes](roles.md#scope) |
-| *not as a teacher* | scope **`ue`**: `gwuezuduyel` | [Scope across scenes](roles.md#scope) |
+| *as a teacher, I …* | role compound on `/h/`: `hwezuduyel` | [The role you act in](roles.md#capacity) |
+| *not as a teacher* (off duty) | scope **`ue`** on `/h/`: `hwuezuduyel` | [The role you act in](roles.md#capacity) |
+| *not as a teacher* (the label) | scope **`ue`**: `gwuezuduyel` | [Scope across scenes](roles.md#scope) |
 | *using teacher (as a tool)* | scope **`ae`**: `gwaezuduyel` | [Scope across scenes](roles.md#scope) |
 | *a lying type, except this time* | **`thua`**: `valamuthual` | [Stacked scope](predication.md#scope-stacks) |
 | *angry as a type, except with Olazun* | **`thuo`** plus `/b/`: `gunemuthuol blolazun` | [Stacked scope](predication.md#scope-stacks) |
