@@ -254,8 +254,6 @@ function familyChips(family: MorphWordFamily): string[] {
       return [`hook-compound ${family.hook}`, `stem ${family.leftRoot}`];
     case "joinMarker":
       return [`join ${family.series}`];
-    case "kindIndefinite":
-      return [`knowledge ${family.knowledge}`, `kind ${family.kindLetter}`, `join ${family.series}`];
     case "writingSpan": {
       const marks = family.marks.length ? family.marks.join("") : "";
       return [`writing ${family.bracket}${marks}`];
@@ -334,10 +332,6 @@ export function morphDetails(word: LexWord): { label: string; value: string }[] 
       label: word.reading === "standIn" || word.reading === "standInNamed" ? "stand-in" : "series",
       value: family.series,
     });
-  } else if (family.kind === "kindIndefinite") {
-    rows.push({ label: "knowledge vowel", value: family.knowledge });
-    rows.push({ label: "kind letter", value: family.kindLetter });
-    rows.push({ label: "series", value: family.series });
   } else if (family.kind === "foreign") {
     rows.push({ label: "foreign", value: family.payload });
   } else if (family.kind === "writingSpan") {
@@ -387,9 +381,6 @@ export function whyFor(word: LexWord, sharedRole?: SharedRole): InspectWhy {
   }
   if (family.kind === "writingSpan") {
     return { line: "span fence", href: "spans.html" };
-  }
-  if (family.kind === "kindIndefinite") {
-    return { line: "kind indefinite", href: "joins.html#kind-indefinites" };
   }
   if (family.kind === "x" && family.xFamily === "numeric") {
     return { line: "numeric derivation", href: "numeric-derivation.html#numeric-derivation" };

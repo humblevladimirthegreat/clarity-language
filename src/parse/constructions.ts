@@ -29,10 +29,6 @@ export type ConstructionEntry = { anchor: string; summary: string; reader?: stri
 const BAR_READER =
   "A `th-` word (or an intention `h-` word) inside a ranking bracket, right before the rank word, is what the item is ranked against: `[z-X | th-plan-itinerary | z-rank/more | b-later] | v-departure` = X leaves later than planned; a pattern there = than usual (`rank/less | g-strength` = less strong than usual); a permission there = than allowed. The same word outside the bracket covers the whole sentence.";
 
-/** A kind indefinite: one word for *someone* / *nobody* / *everyone* of a kind, with who knows which (joins.md#kind-indefinites). */
-const KIND_INDEFINITE_READER =
-  "A word like `z-something.person.unknown` or `z-none.person.shared` is one word for someone / nobody / everyone of a kind. The first label reads as on a bare join word (`something`, `wh`, `none`, `everything`); the middle label is the kind (person, creature, mind, body, doing, place, nature, food, tool, sign, counting, title); the last says who knows which one. On a single one: `.unknown` = a particular one, I don't know which; `.withheld` = I know which but am not saying; `.shared` = the one we both know (from before this talk); `.unpicked` = none picked yet, any that fits. On none / everything it names the set: `.here` = among those in this situation; `.shared` = among those we both know; `.meant` = among the ones I have in mind; `.anywhere` = any at all, anywhere. `-x` = several, but on a `v-` word one act done together (`v-something.unpicked-x` = do something together, nothing picked yet). Items before it narrow it: `[z-X | z-Y | z-something.person.withheld]` = one of X and Y, I know which; `[z-X | z-and.person.shared]` = of everyone we know, just X. A `g-` form is a property of that kind (`g-wh.creature.unknown` = what kind of animal?). `v-`, `x-`, and `h-` forms carry no kind: `v-none.shared` = does nothing we both know of, `x-something.withheld` = something happened (I know what, not saying), `h-never.anywhere` = never, at any time at all; after occasion words `h-only-when.shared` = only on those occasions, among the times we both know.";
-
 /** Shared by every label-scope seam vowel (predication.md#label-scope). */
 const SCOPE_READER =
   "`-th-` plus a scope word after a label or a `ROLE-x-verb` says how far the label reaches: `-th-episode` this time only, `-th-role` as their practiced role (`g-agent-x-teach-th-role` = is a teacher), `-th-pair` toward one `b-` party only, `-th-type` the kind of person they are, `-th-on-pair` this time toward that party, `-th-using` using the role as a tool, `-th-toward-role` becoming one (not wanting to be), `-th-except-episode` / `-th-except-pair` that type except this time / with that party, `-th-outside-role` not in that capacity.";
@@ -224,11 +220,6 @@ export const WORD_FAMILY_CONSTRUCTIONS: Record<FamilyKind, ConstructionEntry> = 
   writingSpan: { anchor: "spans.md#writing", summary: "written span" },
   foreign: { anchor: "spans.md#loans", summary: "foreign / opaque payload" },
   tag: { anchor: "pronouns.md#tag-pronouns", summary: "tag pronoun (role letter + w + tag vowel)" },
-  kindIndefinite: {
-    anchor: "joins.md#kind-indefinites",
-    summary: "kind indefinite (role letter + w + knowledge vowel + kind letter + join vowel(s) + ending)",
-    reader: KIND_INDEFINITE_READER,
-  },
 };
 
 export const WORD_XFAMILY_CONSTRUCTIONS: Record<XFamily, ConstructionEntry> = {
@@ -336,12 +327,6 @@ export const READING_CONSTRUCTIONS = {
   verbFirstItem: { anchor: "join-across-roles.md#vp-clause-forms", summary: "words between the subject and the first joined verb: that verb's own" },
   verbSharedNoun: { anchor: "join-across-roles.md#vp-clause-forms", summary: "/d/ or /b/ right after a verb join: every verb's" },
   fromTo: { anchor: "numbers-applied.md#time", summary: "ul + /b/ + oel + /b/: one from … to unit" },
-  kindAsk: {
-    anchor: "questions.md#four-kinds-of-question",
-    summary: "a kind indefinite -r under yol: a real question (u), a quiz (o), remind me (e), or a choice (a)",
-    reader:
-      "Under `y-question`, a blank's last label says what kind of question it is: `wh….unknown` = a real question, the asker doesn't know; `wh….withheld` = a quiz, the asker knows and wants to see if you do; `wh….shared` = remind me (we both knew it once); `wh….unpicked` = nothing is decided yet, so you choose (*where shall we…?*). After `y-statement | y-question` (a rhetorical question), `.shared` = as if you didn't know, and `.unpicked` = the obvious answer is a choice.",
-  },
 } satisfies Record<string, ConstructionEntry>;
 
 /** Tone marks: each mark, and each scope it colors (speech-moves.md § tone marks). */
@@ -463,14 +448,6 @@ export const JOIN_SERIES_CONSTRUCTIONS: Record<JoinSeries, ConstructionEntry> = 
 /** **-x** on a join **-r**: an unspecified group (`zarx`, joins.md#unspecified-member-r-phrase). */
 export const JOIN_PLURAL_CONSTRUCTIONS = {
   plural: { anchor: "joins.md#unspecified-member-r-phrase", summary: "-x after a join -r: some ones (zarx)" },
-} satisfies Record<string, ConstructionEntry>;
-
-/** Kind indefinites on the slots that fix the kind letter (joins.md, restrictors.md). */
-export const KIND_INDEFINITE_CONSTRUCTIONS = {
-  g: { anchor: "questions.md#four-kinds-of-question", summary: "/ɡ/ kind indefinite: some property of a kind, with who knows which" },
-  v: { anchor: "joins.md#kind-indefinite-acts", summary: "/v/ kind indefinite: do something / do nothing, with who knows which" },
-  x: { anchor: "joins.md#kind-indefinite-events", summary: "/x/ kind indefinite: something happened / nothing happened, with who knows which" },
-  h: { anchor: "restrictors.md#always-and-never-h", summary: "/h/ kind indefinite: never / always / sometime, over which times" },
 } satisfies Record<string, ConstructionEntry>;
 
 /** Speech-act words: vowel, and the soft (-m) form (speech-moves.md). */
@@ -640,7 +617,6 @@ export const CONSTRUCTIONS: ReadonlyMap<string, ConstructionEntry> = new Map([
   ...prefixed("scope", SCOPE_FEATURE_CONSTRUCTIONS),
   ...prefixed("join", JOIN_SERIES_CONSTRUCTIONS),
   ...prefixed("join", JOIN_PLURAL_CONSTRUCTIONS),
-  ...prefixed("kindIndefinite", KIND_INDEFINITE_CONSTRUCTIONS),
   ...prefixed("force", FORCE_CONSTRUCTIONS),
   ...prefixed("polar", POLAR_CONSTRUCTIONS),
   ...prefixed("restrictor", RESTRICTOR_CONSTRUCTIONS),
@@ -671,7 +647,6 @@ export const REJECTIONS = {
   verbSharedOwn: { anchor: "join-across-roles.md#vp-clause-forms", summary: "a joined verb with its own object or recipient takes no shared one: say it in that verb's item, or share it and drop the item's own" },
   genitiveHost: { anchor: "hooks.md#genitive", summary: "`em` + `/b/` follows the noun B uses" },
   forcePair: { anchor: "speech-moves.md#emphatic-prohibition", summary: "only `yul yul` and `yal yol` / `yam yol` stack two act words" },
-  rhetoricalUnknownBlank: { anchor: "questions.md#rhetorical", summary: "after yal yol the speaker holds the answer, so a kind-indefinite blank never takes u (I don't know which)" },
   polarOrder: { anchor: "questions.md#polar-stance", summary: "a polar word is one answer or one tag: not two in a row, and not before an act word (an answer and then a question are two turns)" },
   tagBody: { anchor: "questions.md#tags", summary: "a tag (`yol` and a polar word) is a turn of its own: end it with a period (`zuzozen vowurel. yol yael.`)" },
   sentenceEndMark: { anchor: "speech-moves.md#tone-marks", summary: "a sentence ends in `.`; `?` / `!` are tone-mark prefixes" },
@@ -743,12 +718,8 @@ export const REJECTIONS = {
   tagPronoun: { anchor: "pronouns.md#tag-pronouns", summary: "a tag names a phrase that is not already a fixed pronoun: never a special (uwon, ewan, ayan, umon), generic, or topic pronoun, or another tag; a resume or role pointer takes one" },
   tagPairAssign: { anchor: "pronouns.md#tag-pairs", summary: "a tag pair (`zwaer`) recalls or shares two tags already assigned; assign each tag on its own (`zudozol zwal zagozol zwel zam`)" },
   tagPlural: { anchor: "pronouns.md#tag-pronouns", summary: "a tag takes -x only on -r or -n (`zwarx`, `zwanx`, A and associates); to tag a group, tag its plural phrase (`zudozolx zwal`)" },
-  kindIndefiniteSlot: { anchor: "joins.md#kind-indefinites", summary: "a kind indefinite fills /z/, /d/, /b/, /ɡ/, /v/, /x/, or /h/, never gl-: stances have no kind, a topic word ends in -r only to return to a stem, a call ends in -n, and /w/ would double the w (D-54)" },
-  kindIndefiniteLetter: { anchor: "joins.md#kind-indefinite-acts", summary: "the slot fixes the kind letter: always v on /v/ (`vwuvar`) and on a clause join /x/ (`xwovar`), and always r on /h/ (`hweral`) (D-55)" },
-  kindIndefiniteEnding: { anchor: "joins.md#kind-indefinites", summary: "a kind indefinite ends like a standalone join: -r after one vowel (…ar / …or / …er / …ur), or -l / -m; on /ɡ/ only -r; on /h/ only the bare restrictors (…al, …am, …ual, …uam, …ar, …or, …ur, …er)" },
-  kindIndefinitePlural: { anchor: "joins.md#kind-indefinites", summary: "a kind indefinite takes -x after -r on /z/ /d/ /b/ (`zwuyarx`, some people) or on /v/ (`vwavarx`, one shared act): an empty set or everyone already covers every member" },
   joinPlural: { anchor: "joins.md#unspecified-member-r-phrase", summary: "a join takes -x after -r on /z/ /d/ /b/ (`zarx`, some ones), or on /v/ for one shared act (`varx`)" },
-  holderSeamW: { anchor: "knowing.md#holder", summary: "a kind indefinite or tag is never a holder: the seam letter before `w` would end a syllable mid-word (D-56); for a holder you don't name, name the kind of person (`theyemeyol`)" },
+  holderSeamW: { anchor: "knowing.md#holder", summary: "a tag is never a holder: the seam letter before `w` would end a syllable mid-word (D-56); for a holder you don't name, name the kind of person (`theyemeyol`)" },
   numberPlural: { anchor: "numbers-applied.md#plural-labels", summary: "a number takes -x only as a plural label (z_90x)" },
   resumeUnbound: { anchor: "pronouns.md#resume-r", summary: "an -r resume spells an earlier word's whole stem, or a lexicon stem" },
   pointerSlot: { anchor: "pronouns.md#role-pointers", summary: "a role pointer fills /z/, /d/, /b/, a holder seam's holder slot, or a viewpoint lateral's facing anchor" },

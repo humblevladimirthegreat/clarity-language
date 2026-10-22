@@ -82,23 +82,6 @@ With several occasions before `huel`, the last listed is the first choice.
 
 Use a restrictor when each occasion is a word; use `blarl` when the occasion is a full clause. To ask *when?*, see [questions](../questions.md#when).
 
-### Always and never, by which times {#by-which-times}
-
-An `/h/` [kind indefinite](../restrictors.md#always-and-never-h): `w`, a knowledge vowel, `r`, then a bare restrictor. The vowel names which times count: **u** the times at hand, **e** the times we both know, **o** the times I mean, **a** any time at all.
-
-| Agebon | English | Under `yol` | Stage |
-|--------|---------|-------------|-------|
-| [`hwural`](../restrictors.md#always-and-never-h) | *never*, in the times at hand | | I |
-| [`hweral` / `hweram`](../restrictors.md#always-and-never-h) | *never*, in the times we both know (as far as I know) | | I |
-| [`hworal`](../restrictors.md#always-and-never-h) | *never*, in the times I mean | | I |
-| [`hwaral`](../restrictors.md#always-and-never-h) | *never*, at any time at all | | I |
-| [`hwerual` / `hweruam`](../restrictors.md#always-and-never-h) | *always*, in the times we both know (as far as I know) | | I |
-| [`hwaruam`](../restrictors.md#always-and-never-h) | *as a rule*, at any time | | I |
-| [`hwurar`](../restrictors.md#always-and-never-h) | *sometime*; I don't know when | *when?* | I |
-| [`hworar`](../restrictors.md#always-and-never-h) | *at a certain time* (I know when) | a quiz | I |
-| [`hwerar`](../restrictors.md#always-and-never-h) | *that time, you know when* | *when was it again?* | I |
-| [`hwarar`](../restrictors.md#always-and-never-h) | *some time, none picked yet* | *when shall we?* | I |
-
 ## Setting a chunk apart {#spans}
 
 A **span** is a role letter and a pair of brackets. The letter is the role of the whole chunk in the sentence. A span is written only: speech has no word for its edges.

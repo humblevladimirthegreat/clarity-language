@@ -416,65 +416,6 @@ Under a question, **`her`** asks which time ranks first: *When's best?* With occ
 >
 > "Uzozen is sleepy either when it rains or at night." (not both)
 
-### Always and never, by which times {#always-and-never-h}
-
-*You never listen* does not say which times it covers: today, every time we both remember, or all time. To say which, use a [kind indefinite](joins.md#kind-indefinites) on `/h/`: the restrictor (`al`, `ual`, `ar`, …) after `w`, a knowledge vowel, and `r`, the kind letter for counting and time. On `/h/` the letter is always `r`. The knowledge vowel names **which times** the claim covers.
-
-> `zawan vebal hweram.`
->
-> z-listener | v-hear | h-never.shared.open
->
-> "You never listen, any time we both know of, as far as I know."
-
-The listener can answer with a time from that shared stretch.
-
-| Vowel | Times | Cue |
-|-------|-------|-----|
-| `u` | the times this talk is about | **u** ≈ unsaid: the times at hand |
-| `e` | the times we both know of | **e** ≈ echo: what we both already hold |
-| `o` | the times I have in mind | **o** ≈ one: the ones I hold |
-| `a` | any time at all | **a** ≈ add: any time could be added |
-
-Like bare `har`, the `r` covers cases as well as times: under `yol`, `hworar` can ask *in what case? (I know)* as well as *when?*.
-
-<!-- cheat-sheet: restrictors-spans -->
-| Agebon | English | Under `yol` |
-|--------|---------|-------------|
-| `hwural` | *never*, in the times at hand | |
-| `hweral` / `hweram` | *never*, in the times we both know (as far as I know) | |
-| `hworal` | *never*, in the times I mean | |
-| `hwaral` | *never*, at any time at all | |
-| `hwerual` / `hweruam` | *always*, in the times we both know (as far as I know) | |
-| `hwaruam` | *as a rule*, at any time | |
-| `hwurar` | *sometime*; I don't know when | *when?* |
-| `hworar` | *at a certain time* (I know when) | a quiz: *when? I know* |
-| `hwerar` | *that time, you know when* | *when was it again?* |
-| `hwarar` | *some time, none picked yet* | *when shall we?* |
-
-> `yol hwerar zayan vagedal.`
->
-> y-question | h-when.shared | z-interlocutors | v-eat
->
-> "When was it we ate, again?"
-
-With `u`, `hwural`, `hwurual`, and `hwurar` say what bare `hal`, `hual`, and `har` say. The sweeping cell, `hwaral`, makes *never, ever* audible, so the listener can ask whether the speaker means it.
-
-> `zawan vebal hwaral.`
->
-> z-listener | v-hear | h-never.anywhere
->
-> "You never listen, ever."
-
-Occasion words can come before it, as before `hal`. The vowel picks the stretch of time, and the occasions pick the times inside it:
-
-> `zawan vebal herulal hweral.`
->
-> z-listener | v-hear | h-rain | h-only-when.shared
->
-> "Of all the times we both know, you only listened when it rained."
-
-On **-r** the vowel says who knows which of the listed occasions is meant (`herulal hworar` *on one of the rainy days; I know which*). Plain `herulal hal` stays the everyday *only when it rains*.
-
 ### Practice {#intermediate-practice}
 
 Short drills for Intermediate. Try each item before opening **Show answer**.
@@ -541,12 +482,12 @@ z-Ahelan | v-walk | h-ice | h-not-when
 z-Uzozen | v-climb | h-snow | h-rain | h-when-ranked
 :::
 
-**5.** *When shall we climb?* (nothing is picked yet)
+**5.** *When's best for us to climb?*
 
 ::: details Show answer
-`yol hwarar zayan vuguvel.`
+`yol her zayan vuguvel.`
 
-y-question | h-when.unpicked | z-interlocutors | v-climb
+y-question | h-when-best | z-interlocutors | v-climb
 :::
 
 **6.** *Olazun falls if Uzozen runs.*

@@ -49,8 +49,7 @@ The ending grades your evidence: **-l** you could show it, **-m** you could desc
 |-----|---------|---------|-------|
 | [Name the source](../knowing.md#source): a noun in a `bl-` word right after | `zolazun thebam bluzozen velurul.` | *Olazun left, according to Uzozen.* | I |
 | [A device as the source](../knowing.md#source) | `zolazun thugom blogewol vezuvol.` | *Olazun is asleep, going by the camera.* | I |
-| [A source you won't name](../knowing.md#source): a kind indefinite in the `bl-` word | `zolazun thebam blwoyar velurul.` | *Olazun left, according to someone I won't name.* | I |
-| [A source you lost track of](../knowing.md#source) | `zolazun thebam blwuyar velurul.` | *Olazun left, according to someone; I don't know who.* | I |
+| [A source you don't name](../knowing.md#source): `blumon`, then say whether you know who | `zolazun thebam blumon velurul. zuwon vanam dorl zar.` | *Olazun left, according to someone. I know who.* | I |
 | [How many hands](../knowing.md#hand-depth): `th#N` after a channel | `zolazun thebam thregel velurul.` | *Olazun left, so they say, third-hand.* | I |
 | [A forecast](../knowing.md#forecast): channel + `blral` | `thubem blral verulal.` | *It will rain, going by the pattern.* | I |
 | [A hunch about later](../knowing.md#forecast) | `zolazun thabor blral velurul.` | *Olazun will leave, a faint hunch.* | I |
@@ -97,6 +96,7 @@ Join the name to a channel, MAY, or NOTIONAL: keep the word's last letter and wr
 | [Holder on MAY](../knowing.md#holder) | `zolazun thomamuzozen velurul.` | *Maybe Uzozen thinks Olazun left.* | I |
 | [Holder on NOTIONAL](../knowing.md#holder) | `zolazun theyumuzozen velurul.` | *Imagine it as Uzozen sees it.* | I |
 | [Strength before the name](../knowing.md#holder) | `zolazun theyeluzozen velurul.` | *Strong clues say Uzozen thinks Olazun left.* | I |
+| [Shared history](../knowing.md#holder): MEMORY with the interlocutors | `zawan vebal hal thevumayan.` | *From what we both remember, you've never listened.* | I |
 
 ### Keeping a channel {#carry}
 

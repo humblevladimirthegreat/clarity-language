@@ -332,20 +332,19 @@ What you put in that `/b/` decides what it does. A person or other noun is the s
 
 **Compare with:** the source is where the claim came to you from; the claim is still yours to pass on. A numbered footnote source is `th_N`.
 
-When you don't name the source, a [kind indefinite](joins.md#kind-indefinites) in the `bl-` word says what you know about it: whether you are holding back who said it, or have lost track. How far to trust a report depends on that, and the channel alone does not say it.
+When you don't name the source, `blumon` (*someone*) leaves it open. Whether you are holding back who said it or have lost track changes how far to trust the report, and the channel alone does not say it. Say which in a sentence of its own:
 
 | Agebon | English |
 |--------|---------|
-| `zolazun thebam blwoyar velurul.` | *Olazun left, according to someone I won't name.* |
-| `zolazun thebam blwuyar velurul.` | *Olazun left, according to someone; I don't know who.* (a rumor) |
-| `zolazun thebam blweyar velurul.` | *Olazun left, according to that person, you know the one.* |
 | `zolazun thebam blumon velurul.` | *Olazun left, according to someone.* (says neither) |
+| `zolazun thebam blumon velurul. zuwon vanam dorl zar.` | *Olazun left, according to someone. I know who.* |
+| `zolazun thebam blumon velurul. zuwon vanam vul dorl zar.` | *Olazun left, according to someone. I don't know who.* (a rumor) |
 
-> `zolazun thebam blwoyar velurul.`
+> `zolazun thebam blumon velurul. zuwon vanam dorl zar.`
 >
-> z-Olazun | [th-REPORTED | bl-something.person.withheld] | v-departure
+> z-Olazun | [th-REPORTED | bl-someone] | v-departure . z-speaker | v-knowledge | d-whether-clause | z-something
 >
-> "Olazun left, according to someone I won't name."
+> "Olazun left, according to someone. I know who."
 
 ### Mirative (`themom`) {#mirative}
 
@@ -888,7 +887,7 @@ A holder [carries forward](#carry-forward) like a channel. After it, your bare c
 >
 > "I gather Uzozen thinks Olazun left. Olazun is asleep." (the sleeping is Uzozen's view too)
 
-The holder word ends the way a noun for that person would. **-n** is a name. **-r** [resumes](pronouns.md#resume-r) someone already named, which is English *he* / *she* / *they*, and a [role pointer](pronouns.md#role-pointers) on **-r** works too (`theyemaxar`, *I gather the latest doer thinks*). Add [associative **-x**](plurality.md#associative) after the ending for the person and their associates. A kind of person on **-lx** is some people of that kind. A [tag](pronouns.md#tag-pronouns) or a [kind indefinite](joins.md#kind-indefinites) never goes in the seam, since the seam letter before its `w` would end a syllable mid-word. For a holder you don't name, name the kind of person: `zolazun theyemeyol velurul.` is *I gather someone thinks Olazun left*.
+The holder word ends the way a noun for that person would. **-n** is a name. **-r** [resumes](pronouns.md#resume-r) someone already named, which is English *he* / *she* / *they*, and a [role pointer](pronouns.md#role-pointers) on **-r** works too (`theyemaxar`, *I gather the latest doer thinks*). Add [associative **-x**](plurality.md#associative) after the ending for the person and their associates. A kind of person on **-lx** is some people of that kind. A [tag](pronouns.md#tag-pronouns) never goes in the seam, since the seam letter before its `w` would end a syllable mid-word. For a holder you don't name, name the kind of person: `zolazun theyemeyol velurul.` is *I gather someone thinks Olazun left*.
 
 > `zuzozen vowurel. zolazun theyemuzozer velurul.`
 >
@@ -1018,7 +1017,17 @@ A [feeling with no object](sakes.md#feeling-no-object) works the same way: the h
 >
 > "I gather Olazun is anxious."
 
-Pronouns and speech moves stay yours: **`uwon`** is still you, and the sentence is still your turn. So does the knowledge vowel of a [kind indefinite](joins.md#kind-indefinites): `zwoyar` says that **you** know who and are not saying. To say that Uzozen knows who, report Uzozen's view with a holder. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thebamuzozen blral` is *I hear Uzozen expects it*. A holder is not a [source](#source): a source in `/b/` is where a claim came to you from, and the claim stays yours to pass on; a holder makes the claim the holder's view.
+With the interlocutors as holder, the view is one you both share. On MEMORY this is the history you both know, so a sweeping *never* or *always* covers only the times you both remember:
+
+> `zawan vebal hal thevumayan.`
+>
+> z-listener | v-hear | h-never | th-MEMORY-interlocutors
+>
+> "From what I remember of what we both saw, you've never listened."
+
+MEMORY says the claim rests on your memory, and the holder says the view is one you both share. You can't know the listener's memory, only claim the view is shared, and the listener can answer with a memory of their own. `ham thevumayan` adds *as far as I know*.
+
+Pronouns and speech moves stay yours: **`uwon`** is still you, and the sentence is still your turn. The holder's view is their view **now**. A channel with a holder still takes its own `/b/`, so `thebamuzozen blral` is *I hear Uzozen expects it*. A holder is not a [source](#source): a source in `/b/` is where a claim came to you from, and the claim stays yours to pass on; a holder makes the claim the holder's view.
 
 **One clause, one holder.** The holder covers its clause and any dependent sentence inside it; a new `/x/` sentence is yours again unless it has its own seam word. A dependent with its own seam word switches holder for that sentence only. That is how you take a stance on someone else's stance: your stance in the main sentence, theirs in a dependent.
 

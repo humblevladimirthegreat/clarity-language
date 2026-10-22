@@ -748,77 +748,6 @@ A *yes/no* question can also check a **named** item: put a single-item join afte
 
 **Compare with:** *who* / *which* still uses join **-r** ([fill-ask](#fill-ask-r)).
 
-### Four kinds of question {#four-kinds-of-question}
-
-English *who?* can ask four different things. You may not know the answer, or know it and want to see whether the listener does, or have known it once together and forgotten, or the answer may not exist yet because nobody has chosen. Put a [kind indefinite](joins.md#kind-indefinites) in the blank: its knowledge vowel says which of the four you are asking, and its kind letter says what kind of answer fits.
-
-> `yol zwoyar dogewel vumewol.`
->
-> y-question | z-wh.person.withheld | d-key | v-find
->
-> "Who found the key?" (I know; will you say?)
-
-| Agebon | Kind of question | English | Cue |
-|--------|------------------|---------|-----|
-| `yol ol bwuhar zuzozen vagedal.` | a real question: there is an answer, and I don't know it | *Where does Uzozen eat?* | **u** ≈ unsaid |
-| `yol ol bwohar zuzozen vagedal.` | a quiz: I know the answer; do you? | *Where does Uzozen eat?* (I know) | **o** ≈ one I hold |
-| `yol ol bwehar zayan vagedal.` | remind me: we both knew it | *Where was it we ate, again?* | **e** ≈ echo of what we both held |
-| `yol ol bwahar zayan vagedal.` | a choice: nothing is picked yet, so you choose | *Where shall we eat?* | **a** ≈ add: any that fits could be added |
-
-Asking what you already know, to catch someone out, is a common move in an argument. An `o` blank puts the asker's knowledge on the table, so the trap becomes an open quiz. Plain `yol zar` already asks a real question, so a `u` blank adds only the kind (*who?*, not *what?*).
-
-The join vowel keeps its [arity](#fill-ask-arity): `yol ol bwuhur zuzozen vagedal.` is *Where else does Uzozen eat?* **-x** after the blank asks for several, as on `zarx`.
-
-> `yol zwuyarx vowurel.`
->
-> y-question | z-wh.person.unknown-x | v-walk
->
-> "Who all walks?" (several, I expect)
-
-On `/v/` the blank asks *do what?*, and its kind letter is always `v`.
-
-> `yol vwavar zayan.`
->
-> y-question | v-wh.unpicked | z-interlocutors
->
-> "What shall we do?"
-
-On `/x/` the blank asks *what happened?*, and its kind letter is also always `v`. An `o` blank there is the quiz a parent asks on finding the mess ([what happened](joins.md#kind-indefinite-events)).
-
-> `yol xwovar.`
->
-> y-question | x-wh.withheld
->
-> "What happened here?" (I know)
-
-On `/ɡ/` the blank asks *what is it like?* or *what kind?* ([what kind?](#what-kind)), and the kind letter says which kind of answer fits: `yol zuzozen gwuzar.` is *What kind of animal is Uzozen?* Colors are the nature kind (`l`), and an `a` blank asks for a choice: `yol zahehal gwalar.` is *What color shall the house be?* (nothing picked yet).
-
-A blank can also close a list of items. Its knowledge vowel then says who knows which of them is meant: `yol zuzozen zolazun zwoyar dobogal vagowul.` is *Which of you two broke the box? (I know)* ([with items](joins.md#kind-indefinite-items)). With `a` it offers a choice: `yol dududal dugudal dwadar zawan vagedal.` is *Tea or coffee, which will you have?*
-
-Like a join word, a kind indefinite has no stem. The `w` right after the role letter shows it, and the consonant after its first vowel tells it from a [tag](pronouns.md#tag-pronouns).
-
-#### Refusing the question {#refusing-a-blank}
-
-A typed blank takes something for granted: `zwuyar` that a person did it, `bwehar` that there is a place you both know. The listener can refuse that with the same kind indefinite on **-l** or **-m**.
-
-> `yol zwuyar dogewel vumewol.`
->
-> y-question | z-wh.person.unknown | d-key | v-find
->
-> "Who found the key?"
-
-> `zwuyal.`
->
-> z-none.person.here
->
-> "No person did."
-
-> `ol bweham.`
->
-> [at | b-none.place.shared.open]
->
-> "Nowhere we both know, as far as I know." (so say which)
-
 ### Rhetorical question {#rhetorical}
 
 A **rhetorical question** is shaped like a question, but you are not waiting for a reply: you think the answer is obvious. Write statement **`yal`** right before **`yol`**. The statement word says you already hold the answer; the question word gives the body its question shape. The body is an ordinary yes/no question or fill-ask.
@@ -844,14 +773,6 @@ Soft **`yam yol`** muses rather than insists: you lean toward an answer but put 
 > "Who really cares, though?"
 
 The listener may still reply, but no reply is owed. Only **`yal`** or **`yam`** stacks before the question word **`yol`** / **`yom`** this way.
-
-A [typed blank](#four-kinds-of-question) after **`yal yol`** keeps the speaker's claim to the answer. `o` repeats that claim, `e` says the answer is one you both know, and `a` says the obvious answer is a choice. A `u` blank would say the speaker does not know which one, so it never follows **`yal yol`**.
-
-> `yal yol ol bwehar zayan vagedal.`
->
-> y-statement | y-question | [at | b-wh.place.shared] | z-interlocutors | v-eat
->
-> "Where did we eat, as if you didn't know?"
 
 **Compare with:** a [tag](#tags) after the sentence (`…. yol yael.`) asks the listener to confirm. A rhetorical question asks for nothing.
 
@@ -972,20 +893,20 @@ y-statement | y-question | z-wh | v-attest
 *Who attests?* (nobody does)
 :::
 
-**5.** `yol ol bwehar zudozol vezuvol.`
+**5.** `yol ol bur zudozol vezuvol.`
 
 ::: details Show answer
-y-question | [at | b-wh.place.shared] | z-dog | v-sleep
+y-question | [at | b-wh-else] | z-dog | v-sleep
 
-*Where does the dog sleep, again?* (we both knew)
+*Where else does the dog sleep?*
 :::
 
-**6.** `yol zuzozen gwuzar.`
+**6.** `yol gur zudozol.`
 
 ::: details Show answer
-y-question | z-Uzozen | g-wh.creature.unknown
+y-question | g-wh-else | z-dog
 
-*What kind of animal is Uzozen?*
+*What else is the dog like?*
 :::
 
 

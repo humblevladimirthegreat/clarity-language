@@ -617,18 +617,13 @@ describe("parse — stage 4 resolve", () => {
     assert.equal(result.resolve?.asks[0]?.kind, "fillAsk");
   });
 
-  it("marks a kind indefinite -r under yol as a fill-ask blank, and its -l as no blank", () => {
-    for (const text of ["yol zwoyar dobogal vagowul.", "yol ol bwehar zayan vagedal.", "yol vwavar zayan.", "yol hwerar zayan vagedal.", "yol zarx vowurel."]) {
+  it("marks a join -r under yol as a fill-ask blank, and a join -l as no blank", () => {
+    for (const text of ["yol ol bar zayan vagedal.", "yol var zayan.", "yol har zayan vagedal.", "yol zarx vowurel."]) {
       const ask = parseText(text).resolve?.asks[0];
       assert.equal(ask?.kind, "fillAsk", text);
       assert.equal(ask?.gaps.length, 1, text);
     }
-    assert.equal(parseText("yol zweyal vowurel.").resolve?.asks[0]?.kind, "yesNo");
-  });
-
-  it("leaves a kind indefinite unbound: it resumes nothing", () => {
-    const result = parseText("zwuyar vowurel. zweyar vezuvol.");
-    assert.deepEqual(result.resolve?.anaphors, []);
+    assert.equal(parseText("yol zal vowurel.").resolve?.asks[0]?.kind, "yesNo");
   });
 });
 

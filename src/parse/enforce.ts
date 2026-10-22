@@ -67,7 +67,6 @@ import {
   Z,
 } from "./tokens.js";
 import { doubledVerbSlot } from "./verb-items.js";
-import { FIXED_KIND_LETTER, H_SHAPES, KIND_INDEFINITE_POS, ONE_SERIES, type KindIndefiniteFamily } from "./kind-indefinite.js";
 import { isScaleShared, isSharedGPackage, isSharedHUnit, visitResult, visitUnit, vpUnitLists, type AstNode, type Visitor } from "./ast-walk.js";
 import { forcePairKind, KIND_SERIES, RANK_SERIES } from "./series.js";
 import type {
@@ -371,7 +370,6 @@ function enforceWord(word: LexWord, tables: ClassifyTables): void {
     throw new ConstructionError("topicOfTopic", word.raw);
   }
   if (word.family.kind === "tag") enforceTag(word);
-  if (word.family.kind === "kindIndefinite") enforceKindIndefinite(word, word.family);
   if (isHolderSeamW(word, tables)) throw new ConstructionError("holderSeamW", word.raw);
   enforceJoinPlural(word);
   // The record and scroll roots are no channel: a record is REPORTED, a tale NOTIONAL (knowing.md#evidentiality).
@@ -831,28 +829,6 @@ function enforceTag(word: LexWord): void {
 }
 
 /**
- * Kind indefinites (joins.md#kind-indefinites): `/z/` `/d/` `/b/` with any kind letter, `/ɡ/` with any kind letter on
- * **-r**, `/v/` and `/x/` with `v`, `/h/` with `r` (D-54, D-55); **-r** after one vowel or **-l** / **-m**, and on `/h/` only
- * the bare restrictors; **-x** after **-r** on a noun slot (a group), or after any ending on `/v/` (one shared act).
- */
-function enforceKindIndefinite(word: LexWord, family: KindIndefiniteFamily): void {
-  const pos = word.pos ?? "";
-  if (word.gl || !KIND_INDEFINITE_POS.has(pos)) throw new ConstructionError("kindIndefiniteSlot", word.raw);
-  const fixed = FIXED_KIND_LETTER[pos];
-  if (fixed && family.kindLetter !== fixed) throw new ConstructionError("kindIndefiniteLetter", word.raw);
-  const ending = word.ending ?? "";
-  const shaped =
-    pos === "h"
-      ? H_SHAPES.has(family.series + ending)
-      : ending === "r"
-        ? ONE_SERIES.has(family.series)
-        : pos !== "g" && (ending === "l" || ending === "m");
-  if (!shaped) throw new ConstructionError("kindIndefiniteEnding", word.raw);
-  const groups = ending === "r" && (pos === "z" || pos === "d" || pos === "b");
-  if (word.plural && !groups && pos !== "v") throw new ConstructionError("kindIndefinitePlural", word.raw);
-}
-
-/**
  * **-x** on a join: after **-r** on a noun slot, an unspecified group (`zarx`, joins.md#unspecified-member-r-phrase);
  * on a `/v/` join, one shared act, as on any verb (`zayan varx`, plurality.md#verbs-v).
  */
@@ -861,15 +837,6 @@ function enforceJoinPlural(word: LexWord): void {
   if (word.reading === "join" && word.ending === "r" && (word.pos === "z" || word.pos === "d" || word.pos === "b")) return;
   if (word.reading === "join" && word.pos === "v") return;
   throw new ConstructionError("joinPlural", word.raw);
-}
-
-/** After `yal yol` the speaker holds the answer, so no blank says *I don't know which* (questions.md#rhetorical, D-53). */
-function enforceRhetoricalBlanks(result: ParseResult): void {
-  for (const ask of result.resolve?.asks ?? []) {
-    if (ask.kind !== "rhetorical") continue;
-    const unknown = ask.gaps.find((gap) => gap.family.kind === "kindIndefinite" && gap.family.knowledge === "u");
-    if (unknown) throw new ConstructionError("rhetoricalUnknownBlank", unknown.raw);
-  }
 }
 
 /**
@@ -912,7 +879,6 @@ export function enforceResult(result: ParseResult, tables: ClassifyTables): void
   const places = { seen: new Set<LexWord>(), framed: new Set<LexWord>() };
   visitResult(result, structureVisitor(tables, places));
   visitResult(result, { enter: enforceTagHost });
-  enforceRhetoricalBlanks(result);
   enforceGlLeans(result);
   for (const word of places.seen) if (!places.framed.has(word)) throw new ConstructionError("degreePlaceFrame", word.raw);
   for (const { bodies } of result.utterances) for (const body of bodies) enforceVerbPredicate(body.clause.units);
@@ -1047,7 +1013,7 @@ function rankedUniversalFence(coord: NpCoord): boolean {
   return (
     coord.parts.length === 2 &&
     fence!.items.length === 0 &&
-    (fence!.join?.family.kind === "joinMarker" || fence!.join?.family.kind === "kindIndefinite") &&
+    fence!.join?.family.kind === "joinMarker" &&
     fence!.join.family.series === "ua" &&
     bar!.items.length > 0 &&
     bar!.items.every((item) => item.kind === "bar")
@@ -1060,7 +1026,7 @@ function deniedUniversalFence(coord: NpCoord): boolean {
   return (
     coord.parts.length === 2 &&
     fence!.items.length === 0 &&
-    (fence!.join?.family.kind === "joinMarker" || fence!.join?.family.kind === "kindIndefinite") &&
+    fence!.join?.family.kind === "joinMarker" &&
     fence!.join.family.series === "ua" &&
     denial!.items.length === 0 &&
     denial!.shared.length === 0 &&

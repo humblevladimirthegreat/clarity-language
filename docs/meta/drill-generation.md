@@ -320,13 +320,13 @@ Read **all** Beginner first, then Intermediate in the same file order, then Adva
 | 9 | `plurality.md` | Advanced | — | no Advanced stage | |
 | 10 | `predication.md` | Intermediate | **exists** | Classification packaging; **SAME** endings / open **-m** | |
 | 10 | `predication.md` | Advanced | skip | boundaries | |
-| 11 | `joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; kind indefinites (knowledge vowel, kind letter, set readings); universals/domains; SHARED after join; `{ }` islands; fence nesting | Sample **decisions**, not every H3. 6–8 items |
+| 11 | `joins.md` | Intermediate | **exists** | Full single-item/standalone; rank joins as *the* stack if not already fluent; invert **`ua`/`uo`/`ue`**; universals/domains (every and none, by set); SHARED after join; `{ }` islands; fence nesting | Sample **decisions**, not every H3. 6–8 items |
 | 11 | `joins.md` | Advanced | **exists** | Named phrase **-n**; one rare-arity or reserved contrast from this stage | 4–6 items |
-| 12 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; fill-ask arity; occasion **`har`**; yes/no with single-item/standalone; fill-ask answers; four kinds of question (typed blanks: real, quiz, remind me, choice) | |
+| 12 | `questions.md` | Intermediate | **exists** | Fuller polar inventory; confirming a negative; fill-ask arity; occasion **`har`**; yes/no with single-item/standalone; fill-ask answers | |
 | 12 | `questions.md` | Advanced | — | no Advanced stage | |
 | 12 | `hooks.md` | Intermediate | **exists** | Ending grids; parallel chains; discourse placements; extra-noun stacks (`aol` / `oel` / `ual` / `uol` / `ael` / `uel`) and extra-noun **-m**; stacked point-back (`aor` / `aer` / `uor`) | |
 | 12 | `hooks.md` | Advanced | **exists** | Extra-noun **hook compounds** (citation keeps **-l** / **-m**, then the extra-noun hook; lemma is the citation; `/d/` landmark) | Recycle extra-noun grid. Not same-role *including*. Not two-word `vowurel ul …` |
-| 13 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; dependent *when*; always and never by which times (`/h/` kind indefinites) | |
+| 13 | `restrictors.md` | Intermediate | **exists** | Defined core (full); conjuncts; dependent *when* | |
 | 13 | `restrictors.md` | Advanced | — | no Advanced stage | |
 | 14 | `spans.md` | Intermediate | **exists** | Written spans; marks; mention marker; **`{ … }`** scope islands; mention of a handle **form** vs office **-n** | |
 | 14 | `spans.md` | Advanced | **exists** | Close forms (editorial `#]` / close-all `\|]`) | 4–6 items |

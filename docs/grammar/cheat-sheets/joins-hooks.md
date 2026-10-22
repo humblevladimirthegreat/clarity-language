@@ -87,44 +87,11 @@ A clause join (`/x/`) has no one-item reading. Alone, it stands for a clause: `x
 | [The kind itself](../joins.md#kind-reference) | `zuan gagozol` | *the cat* (as a species) | I |
 | [No K](../joins.md#universals-domains-generics) | `zul gagozol` | *no cat* | I |
 | [Not every K](../joins.md#not-every) | `zual gagozol zul` | *not every cat* | I |
+| [Every, by set](../joins.md#kind-domains) | `zual guxanathom blayan` | *everyone we know* | I |
 | [Respectively](../joins.md#respectively) | `zuzozen zolazun zal vawebol dagozol dudozol wubam dal` | *saw a cat and a dog, respectively* | I |
 | [Deny the whole list](../joins.md#exclusivity-and-denying-a-whole-list) | `vowurel varuvel val vul` | *not both walk and run* | I |
 | [Deny each item](../joins.md#exclusivity-and-denying-a-whole-list) | `vowurel varuvel vul` | *neither walk nor run* | B |
 | [Named list](../joins.md#named-list) | `zebodol zuyudal zan` | *bread and butter* (the set phrase) | A |
-
-### Kind indefinites {#kind-indefinites}
-
-A [kind indefinite](../joins.md#kind-indefinites) is a standalone join with `w`, a knowledge vowel, and a kind letter after the role letter. All Intermediate.
-
-| Knowledge vowel | One (**-r**) | Set (**-l** / **-m**) | Stage |
-|-----------------|--------------|------------------------|-------|
-| [**a** ≈ add](../joins.md#kind-indefinites) | none picked yet | any at all, anywhere | I |
-| **u** ≈ unsaid | a particular one; I don't know which | the ones in this situation | I |
-| **o** ≈ one | a particular one; I know which and am not saying | the ones I have in mind | I |
-| **e** ≈ echo | a particular one we both know | the ones we both know | I |
-
-| [Kind letter](../joins.md#kind-indefinites) | Kind | Kind letter | Kind | Stage |
-|-------------|------|-------------|------|-------|
-| [**y**](../joins.md#kind-indefinites) | people | **h** | places and fixtures | I |
-| **z** | creatures | **l** | nature and raw stuff | I |
-| **m** | mind and feeling | **d** | food and drink | I |
-| **b** | body, clothes, what you carry | **w** | tools | I |
-| **v** | doing, playing, moving, vehicles | **g** | signs and marks | I |
-| **r** | counting, time, money | **n** | titles and papers | I |
-
-| Form | English | Stage |
-|------|---------|-------|
-| [`zwuyar`](../joins.md#kind-indefinites) | *someone; I don't know who* | I |
-| [`zwoyar`](../joins.md#kind-indefinites) | *a certain someone* (I know who) | I |
-| [`zweyar`](../joins.md#kind-indefinites) | *that person, you know the one* | I |
-| [`zwayar`](../joins.md#kind-indefinites) | *someone, nobody picked yet* | I |
-| [`zweyal`](../joins.md#kind-indefinites) | *nobody we know* | I |
-| [`zweyarx`](../joins.md#kind-indefinites) | *some people we both know* | I |
-| [`zweyual`](../joins.md#kind-domains) | *everyone we know* | I |
-| [`zwayual`](../joins.md#kind-domains) | *all people*, no exceptions | I |
-| [`zwayuam`](../joins.md#kind-domains) | *people in general* | I |
-| [`vweval`](../joins.md#kind-indefinite-acts) | *do nothing we both know of* | I |
-| [`vwavar`](../joins.md#kind-indefinite-acts) | *do something, nothing picked yet* | I |
 
 ## Joins across roles {#across-roles}
 
@@ -209,7 +176,6 @@ Stage: `al` `ol` `ul` `el` **-l** are Beginner; the rest of the first three colu
 | `ul barl` + clause | [*since*](../hooks.md#since) (that happened) | B |
 | `ol bar` | [*somewhere*](../hooks.md#place-indefinites); in a question, *where?* | I |
 | `ol bur` / `ol bal` / `ol bual` | [*somewhere else*](../hooks.md#place-indefinites) / *nowhere* / *everywhere* | I |
-| `ol bwehar` | [*at that place, you know the one*](../hooks.md#place-indefinites) | I |
 | `ael bar` (in a question) | [*with what?*](../hooks.md#extra-noun-intermediate) | I |
 | `om buwon` / `om bawan` | [*here*, *this*](../hooks.md#deixis) / *there by you*, *that* | I |
 | `om bayan` / `um bayan` | [*here with us*](../hooks.md#deixis) / *over there* | I |

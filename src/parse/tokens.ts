@@ -433,11 +433,6 @@ export function classifyTokenBranch(word: LexWord): { type: AgebonTokenType; bra
   if (family.kind === "joinMarker" && reading === "join" && pos && pos in JOIN_BY_POS) {
     return { type: JOIN_BY_POS[pos as keyof typeof JOIN_BY_POS], branch: "join" };
   }
-  // A kind indefinite closes its list like the standalone join it is built on (joins.md#kind-indefinites); on `/h/` it
-  // is a bare restrictor, an adverb like `hal`.
-  if (family.kind === "kindIndefinite" && pos && pos !== "h" && pos in JOIN_BY_POS) {
-    return { type: JOIN_BY_POS[pos as keyof typeof JOIN_BY_POS], branch: "join" };
-  }
 
   if (reading === "joinAct") return { type: VPlain, branch: "joinAct" };
   if (reading === "joinRelation") {

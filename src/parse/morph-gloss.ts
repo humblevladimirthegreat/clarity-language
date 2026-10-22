@@ -20,10 +20,6 @@
  * | `har` statement / fill-ask | `h-sometimes` / `h-when` | `-r` is unspecified occasion, not `hal` |
  * | `her` statement / fill-ask | `h-preferred-time` / `h-when-best` | `-r` on rank **e**: the first-ranked occasion |
  * | `hual` bare | `h-always` | |
- * | `zwuyar` / `zwoyar` statement | `z-something.person.unknown` / `z-something.person.withheld` | kind indefinite: join label + kind + knowledge |
- * | `zwoyar` fill-ask | `z-wh.person.withheld` | quiz; `.shared` remind me, `.unpicked` choice |
- * | `bweyal` / `bweyam` | `b-none.person.shared` / `b-none.person.shared.open` | set labels: `.here` `.shared` `.meant` `.anywhere` |
- * | `vwovar` / `hweral` | `v-something.withheld` / `h-never.shared` | `/v/` and `/h/` print no kind |
  * | `themabam` | `th-plan-itinerary` | overlay grain `-m` |
  * | mid-word `x` | always `-x-` segments | never a fused English name |
  * | named `-n` (house cast included) | the root capitalised + `n` | |
@@ -39,7 +35,6 @@ import { classifyAll, overlayKey, type ClassifyTables } from "./classify.js";
 import type { PublishedRow } from "../lexicon-search.js";
 import { CLOSED, closedDerived, namedEnglish, withLexiconClosedRoots } from "../closed-roots.js";
 import { linkerEnglish } from "./linkers.js";
-import { FIXED_KIND_LETTER, kindName, knowledgeLabel, type KindIndefiniteFamily } from "./kind-indefinite.js";
 import {
   buildGlossTree,
   renderGlossNodes,
@@ -885,9 +880,7 @@ function analyzeLine(
 
   // A lone join word is a form citation (`zam` = z-and.open), not a standalone join.
   const citation = words.length === 1;
-  // A lone kind indefinite is still its standalone join (`zwuyal.` *no person did*).
-  const loneKinds = words.flatMap((word, index) => (word.family.kind === "kindIndefinite" ? [index] : []));
-  const standaloneIndexes = citation ? new Set<number>(loneKinds) : standaloneJoinIndexes(words, parsed);
+  const standaloneIndexes = citation ? new Set<number>() : standaloneJoinIndexes(words, parsed);
   const kindIndexes = citation ? new Set<number>() : kindReferenceIndexes(parsed);
   const scaleWords = scaleIndexes(parsed);
   const hookJobs = parsed ? hookJobsByPosition(parsed) : new Map<number, HookJob>();
@@ -927,7 +920,7 @@ function standaloneJoinIndexes(words: LexWord[], parsed: ParseResult | undefined
 }
 
 function closesAlone(word: LexWord): boolean {
-  return (word.family.kind === "joinMarker" && word.reading === "join") || word.family.kind === "kindIndefinite";
+  return word.family.kind === "joinMarker" && word.reading === "join";
 }
 
 /** Word indexes of kind-reference joins (`zuan` + kind). */
@@ -958,7 +951,7 @@ function contextFor(
     ctx.fillAsk = isFillAsk(word, resolve.asks);
   }
   if (word.family.kind === "hook") ctx.hookJob = hookJobs.get(word.at ?? -1);
-  if (word.reading === "restrictor" || (word.family.kind === "kindIndefinite" && word.pos === "h")) {
+  if (word.reading === "restrictor") {
     const prev = words[index - 1];
     ctx.restrictorListed = Boolean(prev && (prev.pos === "h" || prev.pos === "th" || prev.pos === "w"));
   }
@@ -1004,7 +997,6 @@ function sensePieces(
     const name = `tag.${family.vowels.map((vowel) => vowel.toUpperCase()).join("+")}`;
     return [word.ending === "l" ? name : `←${name}${word.ending === "m" ? ".part" : word.ending === "n" ? ".name" : ""}`];
   }
-  if (family.kind === "kindIndefinite") return [kindIndefiniteLabel(word, family, ctx)];
   const resume =
     (word.ending === "r" || (family.kind === "x" && family.xFamily === "pointer")) &&
     // A holder or lateral keeps its host or direction; its anchor glosses inside xPieces.
@@ -1177,20 +1169,6 @@ function joinMarkerLabel(word: LexWord, ctx: MorphGlossContext): string {
   }
 
   return fenceJoinLabel(series, ending, word.pos, ctx);
-}
-
-/**
- * A kind indefinite reads as its join (or restrictor on `/h/`), then the kind where the speaker picks it, then who
- * knows which one or which set (glosses.md § Kind indefinites): `wh.person.withheld`, `none.person.shared.open`, `never.anywhere`.
- */
-function kindIndefiniteLabel(word: LexWord, family: KindIndefiniteFamily, ctx: MorphGlossContext): string {
-  const closed = word.ending === "m" ? "l" : word.ending;
-  const base =
-    word.pos === "h"
-      ? restrictorLabel(family.series, closed, ctx.restrictorListed, ctx.fillAsk)
-      : fenceJoinLabel(family.series, closed, word.pos, ctx);
-  const kind = word.pos && word.pos in FIXED_KIND_LETTER ? "" : `.${kindName(family.kindLetter)}`;
-  return `${base}${kind}.${knowledgeLabel(family.knowledge, word.ending)}${word.ending === "m" ? ".open" : ""}`;
 }
 
 function fenceJoinLabel(

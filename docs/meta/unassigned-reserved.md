@@ -110,6 +110,7 @@ Source: [joins.md](../grammar/joins.md), [join-across-roles.md](../grammar/join-
 - **open:** clause sequence **-n** beyond `xan` `xon` `xun` `xaon` `xuen` (`xuan`, `xuon`, `xen`, `xaen`, `xoen`). No reading is guessable: `xen` and `xaen` put rank or order into a sequence that is already ordered, `xoen` could be *at the same time* or *in either order*, and `xuan` / `xuon` (*everything but* / *anything but*) have no clause job. `xen` is also a departure mark after a name.
 - **closed (D-47):** a shared `/d/` or recipient `/b/` (before the subject or after the join) on a joined verb that has its own (`duredal vugudel vagedal val doledol`).
 - **closed (D-39):** a single-item clause join (`A xul` *not the case that A*, `A xal` *only A happened*).
+- **open:** **-x** on a join **-l** / **-m** / **-n** off `/v/` (`zalx`, `zanx`). On an empty set it contradicts the **-l** (*several nobodies*), and on a universal it repeats it; a named package with associates has no job yet. Parser: `joinPlural`.
 - **open:** a rank or sequence join (`e` / `ue` / `ae`) with a number as a threshold, and a SHARED continuum word. In a rank or sequence fence a number is one of the items, so a threshold reading is not guessable. Ranges use hooks and [rays](../grammar/numbers-applied.md#rays).
 
 ## Comparison bars
@@ -176,20 +177,13 @@ Source: [pronouns.md](../grammar/pronouns.md#tag-pronouns)
 - **open:** a tag on a word that is already a fixed pronoun: a special pronoun, the generic or topic pronoun, or another tag (`zuwon zwal`, `zalon zwal`, `zwar zwel`). It already has one short form, and a second label for the same pronoun would only rename it. Parser: `tagPronoun`.
 - **open:** a tag pair with **-l** (`zwael`). After a two-item list it could tag the items in order or the group as one, so neither reading is guessable; each tag is assigned on its own. Parser: `tagPairAssign`.
 - **open:** **-x** on a tag pair **-m** (`zwaemx`), as on any share.
+- **closed (D-56):** a tag in a holder seam (`theyemwar`). Parser: `holderSeamW`.
 
-## Kind indefinites
+## Role letter + `w` + vowel + consonant
 
-Source: [joins.md](../grammar/joins.md#kind-indefinites), [questions.md](../grammar/questions.md#four-kinds-of-question), [restrictors.md](../grammar/restrictors.md#always-and-never-h)
+Source: none.
 
-- **closed (D-54):** a kind indefinite on `/w/`, `/th/`, `/y/`, as a topic word, or with `gl-` (`wwuyar`, `thwuyar`, `ywuyar`, `glwuyar`). Parser: `kindIndefiniteSlot`.
-- **closed (D-55):** another kind letter on `/v/`, a clause-join `/x/`, or `/h/` (`vwuyar`, `xwuyar`, `hwuyal`). Parser: `kindIndefiniteLetter`.
-- **closed (D-56):** a kind indefinite or tag in a holder seam (`theyemwuyar`, `theyemwar`). Parser: `holderSeamW`.
-- **closed (D-53):** a `u` blank after `yal yol`. Parser: `rhetoricalUnknownBlank`.
-- **open:** **-l** / **-m** on a `/ɡ/` kind indefinite (`gwumal`). A closed or open list of properties of one kind has no guessable reading apart from the plain `/ɡ/` joins. Parser: `kindIndefiniteEnding`.
-- **open:** **-n** on a kind indefinite (`zwuyan`, `zwayuan`), and the stand-in endings (`zwuyarl`). A kind is never unknown or withheld, so only `a` could read on **-n**, and `zuan` + adjective already names the kind; a stand-in fills a clause slot, and a clause has no kind. If **-n** opens, `/y/` + **-n** is the one call with a job (`ywayan` *Somebody! Anyone who can!*), which D-54 would then need to admit. Parser: `kindIndefiniteEnding`.
-- **open:** a stacked join vowel on **-r** (`zwuyuar`), and on `/h/` any shape beyond the bare restrictors (`hwurol`). These follow the plain forms (`zuar`, `hol`): open them together. Parser: `kindIndefiniteEnding`.
-- **open:** **-x** after **-l** / **-m** off `/v/` (`zweyualx`). On an empty set it contradicts the **-l** (*several nobodies*), and on a universal it repeats it. Parser: `kindIndefinitePlural`.
-- **open:** **-x** on a plain join **-l** / **-m** / **-n** off `/v/` (`zalx`, `zanx`). The same as above; a named package with associates has no job yet. Parser: `joinPlural`.
+- **open:** role letter + `w` + vowel + consonant + vowel(s) + ending (`zwuyar`, `zweyual`, `vwovar`, `hweral`, `blwoyar`). The retired kind-indefinite shape ([why](design-decisions.md#kind-indefinites)); `role-consonant-compounds.md` plans to claim it. Parser: no word.
 
 ## Pronouns and plurality
 

@@ -412,19 +412,10 @@ describe("parseWord — x families, revisers, joins, foreign", () => {
     assert.deepEqual(word.family, { kind: "joinMarker", series: "a" });
   });
 
-  it("parses kind indefinites: w + knowledge vowel + kind letter + join vowel(s) + ending (joins.md#kind-indefinites)", () => {
-    const one = parseOk("zwuyar");
-    assert.equal(one.pos, "z");
-    assert.equal(one.ending, "r");
-    assert.deepEqual(one.family, { kind: "kindIndefinite", knowledge: "u", kindLetter: "y", series: "a" });
-    assert.deepEqual(parseOk("zweyual").family, { kind: "kindIndefinite", knowledge: "e", kindLetter: "y", series: "ua" });
-    assert.deepEqual(parseOk("hwerual").family, { kind: "kindIndefinite", knowledge: "e", kindLetter: "r", series: "ua" });
-    assert.equal(parseOk("zwuyarx").plural, true);
-    const hosted = parseOk("blwoyar");
-    assert.equal(hosted.bl, true);
-    assert.equal(hosted.family.kind, "kindIndefinite");
-    // A tag has only vowels after `w`; a consonant after the first vowel makes a kind indefinite.
+  it("reads role letter + w + vowels as a tag, and a consonant after the first vowel as no word", () => {
     assert.deepEqual(parseOk("zwuar").family, { kind: "tag", vowels: ["u", "a"] });
+    // Role letter + `w` + vowel + consonant is open (unassigned-reserved.md).
+    for (const input of ["zwuyar", "zweyual", "hweral", "blwoyar"]) assert.throws(() => parseWord(input), WordParseError, input);
   });
 
   it("parses darl / darm as stand-ins (clause.md stand-in)", () => {

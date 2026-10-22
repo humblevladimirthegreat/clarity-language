@@ -193,13 +193,17 @@ These hooks sit between two phrases in the **same role**, so the second phrase k
 | *anything* / *anyone* / *anybody* | **`zor`**; with a kind, `zeyol zor` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
 | *somehow* / *in some way* | **`hewom blor`** (*like* some unspecified one) | [Simile](relations.md#similative), [unspecified member](joins.md#unspecified-member-r-phrase) |
 | *some of them* / *some people* (more than one, unnamed) | **`zarx`**; with a kind, `zeyol zarx` | [Unspecified member](joins.md#unspecified-member-r-phrase) |
-| *a certain someone* / *someone I won't name* | **`zwoyar`** | [Kind indefinites](joins.md#kind-indefinites) |
-| *someone, I don't know who* | **`zwuyar`** | [Kind indefinites](joins.md#kind-indefinites) |
-| *you know the one* / *that person* (we both know) | **`zweyar`** | [Kind indefinites](joins.md#kind-indefinites) |
-| *anyone who fits* / *someone, nobody picked yet* | **`zwayar`** | [Kind indefinites](joins.md#kind-indefinites) |
-| *everyone we know* / *nobody we know* | **`zweyual`** / **`zweyal`** | [Every and none, by set](joins.md#kind-domains) |
-| *nobody at all, anywhere* / *all people*, as a law | **`zwayal`** / **`zwayual`** | [Every and none, by set](joins.md#kind-domains) |
-| *according to someone* (a source you won't name / don't know) | **`thebam blwoyar`** / **`thebam blwuyar`** | [Source](knowing.md#source) |
+| *a certain someone* / *someone I won't name* | **`zar`**, then *I know who*: `zuwon vanam dorl zar.` | [Unspecified member](joins.md#unspecified-member-r-phrase), [dependent clauses](dependents.md#dependent-clauses) |
+| *someone, I don't know who* | **`zar`**, then `zuwon vanam vul dorl zar.` | [Unspecified member](joins.md#unspecified-member-r-phrase), [dependent clauses](dependents.md#dependent-clauses) |
+| *you know the one* / *that person* (we both know) | **-r** with nothing earlier: `zeyor` | [Resume](pronouns.md#resume-r) |
+| *everyone here* | **`zual geyol`** | [Universals](joins.md#universals-domains-generics) |
+| *everyone we know* / *nobody we know* | **`zual guxanathom blayan`** / **`zal guxanathom blayan`** | [Every and none, by set](joins.md#kind-domains) |
+| *everyone in the family* / *everyone from the town* | **`zual gobem blavayal`** / **`zual gaham blahaham`** | [Of relations](relations.md#of-relations) |
+| *people in general* | **`zuam geyol`**, or **`eyon`** | [People in general](joins.md#generic-neighbors) |
+| *according to someone* (a source you won't name / don't know) | **`thebam blumon`**, then `zuwon vanam dorl zar.` / `zuwon vanam vul dorl zar.` | [Source](knowing.md#source) |
+| *never* / *always*, in the times we both know | **`hal thevumayan`** / **`hual thevumayan`** | [Holder](knowing.md#holder) |
+| *where was it again?* (remind me) | MEMORY on the question: `yol ol bar zayan thevum vagedal.` | [Live vs memory](knowing.md#live-vs-memory) |
+| *where shall we …?* / *what shall we do?* (a choice) | PLAN on the question: `yol ol bar zayan thagem vagedal.`, `yol var zayan thagem.` | [Plan](intention.md#plan) |
 
 ### Adjectives made from a noun (*golden*, *royal*, *solar*) {#noun-adjectives}
 

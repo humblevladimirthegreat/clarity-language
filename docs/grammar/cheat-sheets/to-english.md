@@ -21,7 +21,6 @@ Words made from an ordinary root and an ending (`zudozol` *a dog*) are not here:
 | role letter + vowel + **-rn** | [stand-in word](../dependents.md#stand-in-roles) | `darn` *a statement* | I |
 | role letter + vowel + `x` + vowel + **-r** | [role pointer](../pronouns.md#role-pointers) | `zaxar` *the latest doer* | I |
 | role letter + `w` + vowel + ending | [tag](../pronouns.md#tag-pronouns) | `zwar` *A* | I |
-| role letter + `w` + vowel + consonant + vowel(s) + ending | [kind indefinite](../joins.md#kind-indefinites) | `zwuyar` *someone; I don't know who* | I |
 | a name's root + **-r** | [resume](../pronouns.md#resume-r) | `zuzozer` *Uzozen again* | B |
 
 Every join and hook, with its English: [Joins and hooks cheat sheet](joins-hooks.md).

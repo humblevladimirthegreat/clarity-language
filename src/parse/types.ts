@@ -114,21 +114,10 @@ export type MorphWordFamily =
    * Tag pronoun: role letter + `w` + tag vowel (A, E, O, U) + ending (`zwal`, `zwar`, `zwam`; pronouns.md#tag-pronouns).
    * A stacked vowel is two tags at once (`zwaer` *A and E*), in written order.
    */
-  | { kind: "tag"; vowels: TagVowel[] }
-  /**
-   * Kind indefinite: role letter + `w` + knowledge vowel + kind letter + a standalone join's vowel(s) + ending
-   * (`zwuyar`, `zweyual`, `hweral`; joins.md#kind-indefinites). `series` is the join's vowel(s), as on a join word.
-   */
-  | { kind: "kindIndefinite"; knowledge: KnowledgeVowel; kindLetter: string; series: string };
+  | { kind: "tag"; vowels: TagVowel[] };
 
 /** Tag pronoun vowel, named by its letter name: A, E, O, U (pronouns.md#tag-pronouns). */
 export type TagVowel = "a" | "e" | "o" | "u";
-
-/**
- * Kind indefinite knowledge vowel (joins.md#kind-indefinites): on **-r**, who knows which one (`a` none picked,
- * `u` I don't know, `o` I know and don't say, `e` we both know); on **-l** / **-m**, which set.
- */
-export type KnowledgeVowel = "a" | "e" | "o" | "u";
 
 /**
  * Stage-1 morphological word (characters → structure).

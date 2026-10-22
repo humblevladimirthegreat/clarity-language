@@ -14,7 +14,6 @@ import { classify } from "./classify.js";
 import { POINTER_VOWEL, ROLE_VOWEL, morphGlossFor, morphGlossLine, morphGlossWords, normalizeMorphLine } from "./morph-gloss.js";
 import type { MorphGlossContext } from "./morph-gloss.js";
 import { parseWords } from "./word.js";
-import { KIND_LETTERS } from "../root-tails.js";
 
 const POS = ["z", "d", "b", "v", "g", "w", "h", "th", "x", "y"] as const;
 const ENDINGS = ["l", "m", "n"] as const;
@@ -70,7 +69,6 @@ export function buildGlossIndex(tables: ClassifyTables, extraLines: string[] = [
   const index: GlossIndex = { forms: new Map(), roots: new Map() };
   for (const root of new Set<string>([...tables.published.keys(), ...tables.compounds.keys()])) indexRootForms(index, root, tables);
   indexSeriesForms(index, tables);
-  indexKindIndefiniteForms(index, tables);
   indexLineForms(index, extraLines, tables);
   return index;
 }
@@ -79,7 +77,6 @@ export function buildGlossIndex(tables: ClassifyTables, extraLines: string[] = [
 export function seriesGlossIndex(tables: ClassifyTables): GlossIndex {
   const index: GlossIndex = { forms: new Map(), roots: new Map() };
   indexSeriesForms(index, tables);
-  indexKindIndefiniteForms(index, tables);
   return index;
 }
 
@@ -91,27 +88,6 @@ function indexSeriesForms(index: GlossIndex, tables: ClassifyTables): void {
         for (const ctx of CONTEXTS) {
           const gloss = glossOne(surface, tables, ctx);
           if (gloss) add(index.forms, gloss, surface);
-        }
-      }
-    }
-  }
-}
-
-/** Kind indefinites (joins.md#kind-indefinites): every knowledge vowel × kind letter × join vowel(s) × ending a slot takes. */
-function indexKindIndefiniteForms(index: GlossIndex, tables: ClassifyTables): void {
-  const kinds = [...new Set(Object.values(KIND_LETTERS))];
-  for (const prefix of ["z", "d", "b", "bl", "v", "h"]) {
-    const letters = prefix === "v" ? ["v"] : prefix === "h" ? ["r"] : kinds;
-    for (const knowledge of ["a", "e", "o", "u"]) {
-      for (const letter of letters) {
-        for (const series of SERIES) {
-          for (const ending of ["r", "l", "m"]) {
-            const surface = `${prefix}w${knowledge}${letter}${series}${ending}`;
-            for (const ctx of [{}, { fillAsk: true }]) {
-              const gloss = glossOne(surface, tables, ctx);
-              if (gloss) add(index.forms, gloss, surface);
-            }
-          }
         }
       }
     }

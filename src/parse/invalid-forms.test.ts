@@ -309,22 +309,8 @@ const ROWS: Row[] = [
   { invalid: "zuzozen vowurel hezom blarl thegul thebam.", rejection: "dependentStanceOnly", valid: "zuzozen vowurel hezom blarl thuwathuruor." },
   // A second turn starts only after a period; only the legal force pairs stack.
   { invalid: "yol yol vazuyul.", rejection: "forcePair", valid: "yol. yol vazuyul." },
-  // Kind indefinites (joins.md#kind-indefinites): the slot, its fixed letter, the ending, -x, and the holder seam.
-  { invalid: "zuzozen thwuyal.", rejection: "kindIndefiniteSlot", valid: "zuzozen gwuyar." },
-  { invalid: "ywayan.", rejection: "kindIndefiniteSlot", valid: "yolazun." },
-  { invalid: "zuzozen vwuyar.", rejection: "kindIndefiniteLetter", valid: "zuzozen vwuvar." },
-  { invalid: "yol xwoyar.", rejection: "kindIndefiniteLetter", valid: "yol xwovar." },
-  { invalid: "zawan vebal hwuyal.", rejection: "kindIndefiniteLetter", valid: "zawan vebal hwural." },
-  { invalid: "zwuyan vowurel.", rejection: "kindIndefiniteEnding", valid: "zwuyar vowurel." },
-  { invalid: "zwuyuar vowurel.", rejection: "kindIndefiniteEnding", valid: "zwuyar vowurel." },
-  { invalid: "zawan vebal hwurol.", rejection: "kindIndefiniteEnding", valid: "zawan vebal hwural." },
-  { invalid: "zuzozen gwumal.", rejection: "kindIndefiniteEnding", valid: "zuzozen gwumar." },
-  { invalid: "zweyualx vezuvol.", rejection: "kindIndefinitePlural", valid: "zweyual vezuvol." },
-  { invalid: "yol zuzozen gwuzarx.", rejection: "kindIndefinitePlural", valid: "yol zuzozen gwuzar." },
   { invalid: "zalx vowurel.", rejection: "joinPlural", valid: "zarx vowurel." },
-  { invalid: "zolazun theyemwuyar velurul.", rejection: "holderSeamW", valid: "zolazun theyemeyol velurul." },
-  // After `yal yol` the speaker holds the answer (questions.md#rhetorical).
-  { invalid: "yal yol zwuyar dobogal vagowul.", rejection: "rhetoricalUnknownBlank", valid: "yal yol zwoyar dobogal vagowul." },
+  { invalid: "zolazun theyemwar velurul.", rejection: "holderSeamW", valid: "zolazun theyemeyol velurul." },
 ];
 
 describe("invalid forms", () => {

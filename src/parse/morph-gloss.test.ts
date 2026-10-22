@@ -25,28 +25,10 @@ function expectLine(agebon: string, morph: string): void {
   assert.equal(morphGlossLine(agebon, tables), normalizeMorphLine(morph), agebon);
 }
 
-describe("morphGlossLine — kind indefinites (joins.md#kind-indefinites)", () => {
-  it("reads the join, then the kind, then who knows which one", () => {
-    expectLine("zwoyar vezuyel buwon.", "z-something.person.withheld | v-tell | b-speaker");
-    expectLine("yol zwoyar dobogal vagowul.", "y-question | z-wh.person.withheld | d-box | v-axe");
-    expectLine("yol zuzozen zolazun zwoyar dobogal vagowul.", "y-question | [z-Uzozen | z-Olazun | z-wh.person.withheld] | d-box | v-axe");
-    expectLine("zuzozen zweyal vowurel.", "[z-Uzozen | z-and.person.shared] | v-walk");
-    expectLine("zawan vebal herulal hweral.", "z-listener | v-hear | h-rain | h-only-when.shared");
-    expectLine("zayan vwavarx.", "z-interlocutors | v-something.unpicked-x");
-    expectLine("yol xwovar.", "y-question | x-wh.withheld");
-    expectLine("yol zuzozen gwuzar.", "y-question | z-Uzozen | g-wh.creature.unknown");
+describe("morphGlossLine — join blanks", () => {
+  it("glosses a hosted blank and -x after a join -r as a group", () => {
     expectLine("yol hewom blar zuzozen vowurel.", "y-question | [h-like | bl-wh] | z-Uzozen | v-walk");
-    expectLine("yol ol bwehar zayan vagedal.", "y-question | [at | b-wh.place.shared] | z-interlocutors | v-eat");
-  });
-  it("reads -l / -m over a set, and drops the kind on /v/ and /h/", () => {
-    expectLine("zuzozen vezuyel bweyam.", "z-Uzozen | v-tell | b-none.person.shared.open");
-    expectLine("zwayual vezuvol.", "z-everything.person.anywhere | v-sleep");
-    expectLine("zawan vebal hweram.", "z-listener | v-hear | h-never.shared.open");
-    expectLine("yol vwavar zayan.", "y-question | v-wh.unpicked | z-interlocutors");
-  });
-  it("glosses -x after a join -r as a group", () => {
     expectLine("zarx vowurel.", "z-something-x | v-walk");
-    expectLine("zwuyarx vowurel.", "z-something.person.unknown-x | v-walk");
   });
 });
 

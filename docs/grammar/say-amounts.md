@@ -273,7 +273,7 @@ The easy / hard pair on a quality ranks effort against a bar ([vague amounts](co
 
 ### How often {#frequency-words}
 
-**Needs:** [Always](restrictors.md#always-hual) · [Sometimes](restrictors.md#sometimes--anytime--some-other-time) · [Frequency scale](comparatives.md#frequency-scale) · [Always and never, by which times](restrictors.md#always-and-never-h)
+**Needs:** [Always](restrictors.md#always-hual) · [Sometimes](restrictors.md#sometimes--anytime--some-other-time) · [Frequency scale](comparatives.md#frequency-scale) · [Whose view](knowing.md#holder)
 
 English *always*, *usually*, *often* and *sometimes* sit on a scale from every time to some time. Agebon uses the restrictor for the ends and the frequency scale for *often*. For *every day*, hang a unit on `herem` *while* with `bual` (*everything*).
 
@@ -286,8 +286,7 @@ English *always*, *usually*, *often* and *sometimes* sit on a scale from every t
 | *sometimes* / *occasionally* | `har` |
 | *never, as far as I know* / *as a rule, never* | `ham` |
 | *never* | `hal` |
-| *never, in all the times we both know* | `hweral` |
-| *never, ever* (at any time at all) | `hwaral` |
+| *never, in all the times we both know* | `hal thevumayan` |
 | *daily* | `herem blual guzurem` |
 | *weekly* | `herem blual gagorem` |
 | *monthly* | `herem blual gumalem` |

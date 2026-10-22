@@ -19,7 +19,7 @@
     return word;
   }
 
-  // A hosted `/b/` (`bl-`) is a complement: a content word, pronoun, pointer, tag, kind indefinite, number, span,
+  // A hosted `/b/` (`bl-`) is a complement: a content word, pronoun, pointer, tag, number, span,
   // stand-in (`blarl`), or a join, which is the whole complement when it has no items (`blar`, `blal`) and may take
   // `bl-` after hosted items too. A named join (`blan`) and a hook compound take none (clause.md#extra-nouns).
   function blBodyOk(body) {
@@ -570,7 +570,6 @@ prefixedWord
 
 PrefixedBody
   = tagWord
-  / kindIndefinite
   / xWord
   / plainContent
   / hookCompound
@@ -587,20 +586,6 @@ tagWord
         ending,
         plural: !!plural,
         family: { kind: "tag", vowels: vowels.split("") },
-      };
-    }
-
-// ── Kind indefinites (joins.md#kind-indefinites) ────────────────────────────
-
-// Role letter + `w` + knowledge vowel + kind letter + a standalone join's vowel(s) + ending (`zwuyar`, `zweyual`,
-// `hweral`). The consonant after the first vowel keeps it apart from a tag (`zwuar`). enforce.ts keeps the slots,
-// letters, series and endings.
-kindIndefinite
-  = "w" knowledge:[aeou] kindLetter:[yzmbvhldwgrn] series:JoinSeries ending:Ending plural:PluralSuffix? WordEnd {
-      return {
-        ending,
-        plural: !!plural,
-        family: { kind: "kindIndefinite", knowledge, kindLetter, series },
       };
     }
 
